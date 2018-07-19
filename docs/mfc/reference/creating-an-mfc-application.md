@@ -16,20 +16,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b30b1e0f5e8031609845c78da7558e8b3207862
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d5907006fcff607ad91f9cf579e5bf022c02b8f0
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368819"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026997"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
-MFC uygulaması için Microsoft Foundation Class (MFC) kitaplık tabanlı Windows yürütülebilir bir uygulamadır. MFC Uygulama oluşturmak için en kolay yolu, MFC Uygulama Sihirbazı'nı kullanmaktır.  
+Bir MFC uygulaması, Microsoft Foundation Class (MFC) kitaplığına dayalı Windows için yürütülebilir bir uygulamadır. Bir MFC uygulaması oluşturmak için en kolay yolu MFC Uygulama Sihirbazı'nı kullanmaktır.  
   
 > [!IMPORTANT]
->  MFC projeleri, Visual Studio Express sürümlerinde desteklenmez.  
+>  MFC projeleri Visual Studio Express sürümlerinde desteklenmez.  
   
- MFC yürütülebilir dosyaları genellikle beş türlerine ayrılır: standart Windows uygulamalarını, iletişim kutuları, form tabanlı uygulamalar, Gezgin stili uygulamalar ve Web tarayıcısı stilinde uygulamaları. Daha fazla bilgi için bkz.:  
+ MFC yürütülebilir dosyaları genelde beş türe ayrılır ayrılır: standart Windows uygulamaları, iletişim kutuları, form tabanlı uygulamalar, Explorer stilinde uygulamalar ve Web tarayıcısı stilinde uygulamalar. Daha fazla bilgi için bkz.:  
   
 -   [Windows uygulamaları yazmak için sınıfları kullanma](../../mfc/using-the-classes-to-write-applications-for-windows.md)  
   
@@ -41,26 +41,26 @@ MFC uygulaması için Microsoft Foundation Class (MFC) kitaplık tabanlı Window
   
 -   [Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)  
   
- MFC Uygulama Sihirbazı'nı uygun sınıfları ve uygulamalar, sihirbazda belirttiğiniz seçeneklere bağlı olarak bu türlerinden herhangi birini dosyaları oluşturur.  
+ MFC Uygulama Sihirbazı uygun sınıf ve tüm uygulamalar, sihirbazda seçtiğiniz seçeneklere bağlı olarak bu tür dosyaları oluşturur.  
   
 ### <a name="to-create-an-mfc-application-using-the-mfc-application-wizard"></a>MFC Uygulama Sihirbazı'nı kullanarak bir MFC uygulaması oluşturmak için  
   
-1.  Yardım konusundaki yönergeleri izleyerek [proje bir Visual C++ Uygulama Sihirbazı oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md).  
+1.  Yardım konusundaki yönergeleri izleyerek [Visual C++ uygulama sihirbazıyla proje oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md).  
   
-2.  İçinde **yeni proje** iletişim kutusunda **MFC uygulaması** Sihirbazı'nı açmak için Şablonlar bölmesinde.  
+2.  İçinde **yeni proje** iletişim kutusunda **MFC uygulaması** sihirbazını açmak için şablonlar bölmesindeki.  
   
-3.  Uygulama ayarlarınızı kullanarak tanımlama [MFC Uygulama Sihirbazı'nı](../../mfc/reference/mfc-application-wizard.md).  
+3.  Kullanarak uygulama ayarlarınızı tanımlayın [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md).  
   
     > [!NOTE]
     >  Sihirbaz tutmak için bu adımı atlayın varsayılan ayarlar.  
   
-4.  Tıklatın **son** Sihirbazı kapatmak ve yeni projeniz geliştirme ortamında açın.  
+4.  Tıklayın **son** sihirbazı kapatın ve geliştirme ortamında yeni projenizi açın.  
   
- Projeniz oluşturulduktan sonra oluşturulan dosyaları görüntüleyebilirsiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için project oluşturulan dosya ReadMe.txt bakın. Dosya türleri hakkında daha fazla bilgi için bkz: [Visual C++ projeleri için oluşturulan dosya türleri](../../ide/file-types-created-for-visual-cpp-projects.md).  
+ Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../ide/file-types-created-for-visual-cpp-projects.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama hazırlığı: Visual C++ Windows uygulamaları](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)   
+ [Hata ayıklama hazırlığı: Visual C++ Windows uygulamaları](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)   
  [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Özellik sayfaları](../../ide/property-pages-visual-cpp.md)   
- [Uygulamaları dağıtma](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Uygulamaları dağıtma](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
 

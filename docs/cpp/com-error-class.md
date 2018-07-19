@@ -16,37 +16,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95550c81235db58b1f8d372bf028750c003c7a9f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0d59782b62ddfb51601505be6d12f01ce14cd4f1
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415731"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026640"
 ---
 # <a name="comerror-class"></a>_com_error Sınıfı
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- A `_com_error` nesne türü Kitaplığı'ndan oluşturulan üstbilgi dosyalarında hata işleme sarmalayıcı işlevleri veya COM desteği sınıfları biri tarafından algılanan bir özel durumu temsil eder. `_com_error` Sınıfı yalıtır `HRESULT` hata kodu ve varsa ilişkili `IErrorInfo Interface` nesnesi.  
+ A `_com_error` nesnesi, tür kitaplığından oluşturulan üstbilgi dosyalarında hata işleme sarmalayıcı işlevleri veya bir COM desteği sınıfları tarafından algılanan bir özel durum koşulunu temsil eder. `_com_error` Sınıfı Kapsüller HRESULT hata kodu ve varsa ilişkili `IErrorInfo Interface` nesne.  
   
-### <a name="construction"></a>Yapı  
+### <a name="construction"></a>Oluşturma  
   
 |||  
 |-|-|  
-|[_com_error](../cpp/com-error-com-error.md)|Oluşturan bir `_com_error` nesnesi.|  
+|[_com_error](../cpp/com-error-com-error.md)|Oluşturur bir `_com_error` nesne.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç =](../cpp/com-error-operator-equal.md)|Var olan atar `_com_error` başka bir nesne.|  
+|[işleç =](../cpp/com-error-operator-equal.md)|Mevcut bir atar `_com_error` başka bir nesne.|  
   
 ### <a name="extractor-functions"></a>Ayıklayıcısı işlevleri  
   
 |||  
 |-|-|  
-|[Hata](../cpp/com-error-error.md)|Alır `HRESULT` oluşturucuya geçirilen.|  
+|[Hata](../cpp/com-error-error.md)|Oluşturucuya geçirilen HRESULT alır.|  
 |[ErrorInfo](../cpp/com-error-errorinfo.md)|Alır `IErrorInfo` oluşturucuya nesnesi geçirildi.|  
-|[WCode](../cpp/com-error-wcode.md)|Kapsüllenmiş eşlenen 16 bit hata kodu alır `HRESULT`.|  
+|[WCode](../cpp/com-error-wcode.md)|Kapsüllenmiş HRESULT biçimine eşlenen 16-bit hata kodunu alır.|  
   
 ### <a name="ierrorinfo-functions"></a>IErrorInfo işlevleri  
   
@@ -62,22 +62,22 @@ ms.locfileid: "32415731"
   
 |||  
 |-|-|  
-|[ErrorMessage](../cpp/com-error-errormessage.md)|HRESULT depolanan dize ileti alır `_com_error` nesnesi.|  
+|[ErrorMessage](../cpp/com-error-errormessage.md)|HRESULT içinde depolanan için dize iletiyi alır `_com_error` nesne.|  
   
-### <a name="exepinfowcode-to-hresult-mappers"></a>HRESULT Mappers ExepInfo.wCode  
+### <a name="exepinfowcode-to-hresult-mappers"></a>HRESULT Azaltıcının için ExepInfo.wCode  
   
 |||  
 |-|-|  
-|[HRESULTToWCode](../cpp/com-error-hresulttowcode.md)|32-bit eşlemeleri `HRESULT` için 16 bit `wCode`.|  
-|[WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)|16 bit `wCode`'u 32 bit `HRESULT` ile eşleştirir.|  
+|[HRESULTToWCode](../cpp/com-error-hresulttowcode.md)|16 bit için 32 bitlik HRESULT eşler `wCode`.|  
+|[WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)|16-bit eşler `wCode` 32 bitlik HRESULT için.|  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<comdef.h >  
   
- `Lib:` comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
+ `Lib:` comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)   
- [IErrorInfo arabirimi](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447)
+ [IErrorInfo arabirimi](http://msdn.microsoft.com/4dda6909-2d9a-4727-ae0c-b5f90dcfa447)

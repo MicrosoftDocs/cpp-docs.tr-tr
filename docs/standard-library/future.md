@@ -14,18 +14,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37e5e2ceff83704632a77ef0fb1eedecaa9e678b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 140bdea373442e1e987ce30c2421057b9355796b
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847201"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954024"
 ---
-# <a name="ltfuturegt"></a>&lt;Gelecek&gt;
+# <a name="ltfuturegt"></a>&lt;Gelecekte&gt;
 
-Standart üstbilgisini \<gelecekteki > şablon sınıfları ve bir işlev çalıştıran basitleştirmek destekleyen şablonları tanımlamak için — büyük olasılıkla ayrı bir iş parçacığı içinde — ve sonucu alınıyor. , İşlev tarafından döndürülen değer veya işlev tarafından gösterilen ancak işlevinde yakalandı bir özel durum oluşur.
+Standart üst bilgiyi dahil \<gelecekteki > şablon sınıfları ve çalışan bir işlev basitleştiren destek şablonları tanımlamak için — ayrı bir iş parçacığı, büyük olasılıkla — ve sonucu alınıyor. , İşlev tarafından döndürülen değer veya işlev tarafından yayınlanan ancak işlev yakalanmamış özel durum oluşur.
 
-Bu üst eşzamanlılık çalışma zamanı (ConcRT) kullanır, böylece diğer ConcRT mekanizmaları ile birlikte kullanabilirsiniz. ConcRT hakkında daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
+Diğer ConcRT mekanizmaları ile birlikte kullanabilirsiniz, böylece bu başlığı eşzamanlılık çalışma zamanı (ConcRT) kullanır. ConcRT hakkında daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,21 +36,21 @@ Bu üst eşzamanlılık çalışma zamanı (ConcRT) kullanır, böylece diğer C
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Kullanarak derlenmiş kod **/CLR**, bu başlığı engellenir.
+> Derlenmiş kodda **/CLR**, bu başlığı engellenir.
 
-Bir *zaman uyumsuz sağlayıcısı* işlev çağrısının sonucunu depolar. Bir *zaman uyumsuz dönüş nesnesi* işlev çağrısının sonucunu almak için kullanılır. Bir *zaman uyumsuz durum ilişkili* zaman uyumsuz bir sağlayıcı ve bir veya daha fazla zaman uyumsuz dönüş nesneler arasında iletişimi sağlar.
+Bir *zaman uyumsuz sağlayıcıyı* işlev çağrısının sonucunu depolar. Bir *zaman uyumsuz dönüş nesnesi* işlev çağrısının sonucunu almak için kullanılır. Bir *ilişkili zaman uyumsuz durumu* bir zaman uyumsuz sağlayıcıyı ve bir veya daha fazla zaman uyumsuz dönüş nesneleri arasındaki iletişimi sağlar.
 
-Bir program herhangi bir ilişkili zaman uyumsuz durum nesne doğrudan oluşturmaz. Program bir gerekir ve değerinden sağlayıcı ile ilişkili zaman uyumsuz durumuna paylaşan bir zaman uyumsuz dönüş nesnesi oluşturur her zaman uyumsuz bir sağlayıcı oluşturur. Zaman uyumsuz sağlayıcıları ve zaman uyumsuz dönüş nesneleri kendi paylaşılan zaman uyumsuz durum ilişkili tutun nesneleri yönetin. İlişkili zaman uyumsuz durum başvuran son nesne yayımlandığında, ilişkili zaman uyumsuz durumu tutan nesnesi yok.
+Bir programı ilişkili zaman uyumsuz durum nesneleri doğrudan oluşturmaz. Program, sağlayıcı ile ilişkili zaman uyumsuz durumu paylaşan bir zaman uyumsuz dönüş nesnesi oluşturur ve ihtiyaç duyduğu her zaman uyumsuz bir sağlayıcı oluşturur. Zaman uyumsuz sağlayıcıları ve zaman uyumsuz dönüş nesneleri, paylaşılan ilişkili zaman uyumsuz durumu tutan nesneleri yönetin. İlişkili zaman uyumsuz duruma başvuran son nesnenin yayımlandığında, ilişkili zaman uyumsuz durumu tutan nesne yok edilir.
 
-Zaman uyumsuz bir sağlayıcı veya ilişkili hiçbir zaman uyumsuz durumuna sahip bir zaman uyumsuz dönüş nesne *boş*.
+Zaman uyumsuz bir sağlayıcı ya hiçbir ilişkili zaman uyumsuz duruma sahip bir zaman uyumsuz dönüş nesne *boş*.
 
-İlişkili bir zaman uyumsuz durum *hazır* zaman uyumsuz sağlayıcısını yalnızca varsa veya dönüş değeri depolanan bir özel durum depolanır.
+İlişkili bir zaman uyumsuz durumu *hazır* yalnızca zaman uyumsuz sağlayıcısını bir dönüş değeri depolanan veya bir özel durum depolanan varsa.
 
 Şablon işlevi `async` ve şablon sınıfları `promise` ve `packaged_task` zaman uyumsuz sağlayıcılarıdır. Şablon sınıfları `future` ve `shared_future` zaman uyumsuz dönüş nesneleri tanımlar.
 
-Her şablon sınıfları `promise`, `future`, ve `shared_future` türü için bir uzmanlık sahip `void` ve depolamak ve almak için kullanılan bir değer başvuruya göre bir kısmi uzmanlığı. Bu özelleştirmeleri birincil şablonda yalnızca imzalar ve döndürülen değer depolanıp işlevleri semantiği farklıdır.
+Her bir şablon sınıfı `promise`, `future`, ve `shared_future` türü için bir uzmanlığı olan **void** ve depolamak ve başvuruya göre bir değer almak için kısmi özelleştirme. Bu uzmanlıklar birincil şablonunda yalnızca imzalar ve döndürülen değer depolanıp işlevleri semantikleri farklıdır.
 
-Şablon sınıfları `future` ve `shared_future` hiçbir zaman kendi yıkıcılarda dışında geriye dönük uyumluluk için korunan bir durumda engelle: diğer vadeli aksine için bir `future`— ya da son `shared_future`— bir göreve bağlı kullanmaya `std::async`, yıkıcı blokları görevi tamamlanmadıysa; bu iş parçacığı henüz arama diğer bir deyişle, onu engeller `.get()` veya `.wait()` ve görev hala çalışıyor. Aşağıdaki kullanılabilirlik Not açıklaması için eklenen `std::async` taslak standart: "[Not: std::async alınan gelecek yerel kapsamı dışında taşınırsa, gelecek kullanan başka bir kod gelecek 's yıkıcı engelleyebilir bilmeniz gerekir Paylaşılan durum hazır hale — son Not] "diğer durumlarda `future` ve `shared_future` Yıkıcılar gereklidir ve hiçbir zaman engellemek için garanti.
+Şablon sınıfları `future` ve `shared_future` hiçbir zaman kendi yıkıcılarda dışında geriye dönük uyumluluk için korunur bir durumda engelle: diğer vadeli aksine için bir `future`— veya son `shared_future`— bir göreve ekli kullanmaya `std::async`, yok edici blokları görevi tamamlanmadıysa; bu iş parçacığı henüz arama diğer bir deyişle, bunu engeller `.get()` veya `.wait()` ve görev hala çalışıyor. Açıklaması için aşağıdaki kullanılabilirlik not eklenmiş olan `std::async` taslak standart: "[Not: yerel kapsamı dışında std::async ' elde edilen gelecek taşınırsa, gelecek kullanan diğer kod geleceğe ait yok Edicisi engelleyebilir bilmeniz gerekir Paylaşılan durum hazır olur — son Not] "diğer tüm durumlarda `future` ve `shared_future` yok ediciler gerekmez ve hiçbir zaman engellememe garanti edilir.
 
 ## <a name="members"></a>Üyeler
 
@@ -58,36 +58,36 @@ Her şablon sınıfları `promise`, `future`, ve `shared_future` türü için bi
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[future Sınıfı](../standard-library/future-class.md)|Zaman uyumsuz dönüş nesneyi açıklar.|
-|[future_error Sınıfı](../standard-library/future-error-class.md)|Yönetme türleri yöntemleri ile oluşturulan bir özel durum nesnesi tanımlar `future` nesneleri.|
-|[packaged_task Sınıfı](../standard-library/packaged-task-class.md)|Çağrı sarmalayıcı olan bir zaman uyumsuz sağlayıcısını açıklar ve, çağrı imzası `Ty(ArgTypes...)`. İlişkili zaman uyumsuz durumuna olası sonuç yanı sıra kendi aranabilir nesnesinin bir kopyasını tutar.|
+|[future Sınıfı](../standard-library/future-class.md)|Bir zaman uyumsuz dönüş nesnesi tanımlar.|
+|[future_error Sınıfı](../standard-library/future-error-class.md)|Türlerinin yönetme yöntemleri tarafından oluşturulan bir özel durum nesnesi açıklar `future` nesneleri.|
+|[packaged_task Sınıfı](../standard-library/packaged-task-class.md)|Bir zaman uyumsuz bir çağrı sarmalayıcı sağlayıcısını açıklar ve çağrı imzası `Ty(ArgTypes...)`. İlişkili zaman uyumsuz durumuna olası sonucu yanı sıra kendi çağrılabilir nesnesinin bir kopyasını tutar.|
 |[promise Sınıfı](../standard-library/promise-class.md)|Zaman uyumsuz bir sağlayıcısını açıklar.|
-|[shared_future Sınıfı](../standard-library/shared-future-class.md)|Zaman uyumsuz dönüş nesneyi açıklar. Tersine ile bir `future` nesne, zaman uyumsuz bir sağlayıcı herhangi bir sayı ile ilişkilendirilebilir `shared_future` nesneleri.|
+|[shared_future Sınıfı](../standard-library/shared-future-class.md)|Bir zaman uyumsuz dönüş nesnesi tanımlar. Tersine ile bir `future` nesnesi, zaman uyumsuz bir sağlayıcı herhangi bir sayı ile ilişkilendirilebilir `shared_future` nesneleri.|
 
 ### <a name="structures"></a>Yapılar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[is_error_code_enum Yapısı](../standard-library/is-error-code-enum-structure.md)|Belirten uzmanlık `future_errc` depolamak için uygun bir `error_code`.|
-|[uses_allocator Yapısı](../standard-library/uses-allocator-structure.md)|Uzmanlık her zaman geçerlidir.|
+|[is_error_code_enum Yapısı](../standard-library/is-error-code-enum-structure.md)|Bildiren bir uzmanlık `future_errc` depolamak için uygun bir `error_code`.|
+|[uses_allocator Yapısı](../standard-library/uses-allocator-structure.md)|Her zaman korumadıkça özelleştirmesi.|
 
 ### <a name="functions"></a>İşlevler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[async](../standard-library/future-functions.md#async)|Zaman uyumsuz bir sağlayıcısını temsil eder.|
-|[future_category](../standard-library/future-functions.md#future_category)|Bir başvuru döndürür `error_category` ilişkili hataları belirtir nesne `future` nesneleri.|
-|[make_error_code](../standard-library/future-functions.md#make_error_code)|Oluşturur bir `error_code` olan `error_category` belirtir nesne `future` hataları.|
-|[make_error_condition](../standard-library/future-functions.md#make_error_condition)|Oluşturur bir `error_condition` olan `error_category` belirtir nesne `future` hataları.|
-|[Değiştirme](../standard-library/future-functions.md#swap)|Bir ilişkili zaman uyumsuz durumu alış verişleri `promise` , başka bir nesne.|
+|[future_category](../standard-library/future-functions.md#future_category)|Bir başvuru döndürür `error_category` ilişkili hataları nesnesi `future` nesneleri.|
+|[make_error_code](../standard-library/future-functions.md#make_error_code)|Oluşturur bir `error_code` olan `error_category` nesnesi `future` hataları.|
+|[make_error_condition](../standard-library/future-functions.md#make_error_condition)|Oluşturur bir `error_condition` olan `error_category` nesnesi `future` hataları.|
+|[değiştirme](../standard-library/future-functions.md#swap)|Bir ilişkili zaman uyumsuz durumu değiştirir `promise` , başka bir nesne.|
 
 ### <a name="enumerations"></a>Numaralandırmalar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[future_errc](../standard-library/future-enums.md#future_errc)|Kaynakları tarafından bildirilen hataları için simgesel adları `future_error` sınıfı.|
-|[future_status](../standard-library/future-enums.md#future_status)|Zamanlanmış bekleme işlevi döndürebilir nedeniyle simgesel adları sağlar.|
-|[başlatma](../standard-library/future-enums.md#launch)|Şablon işlevi için olası modları tanımlayan bir bit maskesi türünü temsil eden `async`.|
+|[future_errc](../standard-library/future-enums.md#future_errc)|Tarafından bildirilen hataları için simgesel adlar sağlar `future_error` sınıfı.|
+|[future_status](../standard-library/future-enums.md#future_status)|Zamanlanmış bekleme işlevi döndürebilir nedenleri için simgesel adlar sağlar.|
+|[başlatma](../standard-library/future-enums.md#launch)|Şablon işlevi için olası modları açıklar bir bit maskesi türünü temsil eden `async`.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

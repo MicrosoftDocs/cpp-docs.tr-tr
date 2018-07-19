@@ -17,30 +17,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 797bc6353bd7396d409de073cc412480a803117f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 95e2713f3c73a3dc35c11be8d245ede94b2c3bba
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844347"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953985"
 ---
 # <a name="inputiteratortag-struct"></a>input_iterator_tag Yapısı
 
-Dönüş türü için sağlayan bir sınıf **iterator_category** giriş yineleyici temsil eden bir işlev.
+Bir dönüş türü sağlayan sınıf `iterator_category` giriş yineleyicisini temsil eden bir işlev.
 
 ## <a name="syntax"></a>Sözdizimi
 
-Yapı input_iterator_tag {};
+input_iterator_tag yapısı {};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kategori etiket sınıflarını algoritması seçimi için etiketler derleme gibi kullanılır. Derleme zamanında en verimli algoritması kullanabilmeleri en özel kategori yineleyici bağımsız değişkeninin değerini bulmak şablon işlevi gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator` >  **:: iterator_category** yineleyici'nin davranışını tanımlar en özel kategori etiketi olarak tanımlanması gerekir.
+Kategori etiketi sınıfları algoritması seçimi için etiketler derleme gibi kullanılır. Derleme zamanında en verimli algoritması kullanabilirsiniz, böylece en belirgin kategori yineleyici bağımsız değişkeninin bulmak şablon işlevi gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator` >  **:: iterator_category** yineleyicinin davranışını tanımlar en belirgin kategori etiketi olarak tanımlanması gerekir.
 
-Aynı türdür **yineleyici** \< **Iter**> **:: iterator_category** zaman **Iter** açıklayan bir Giriş yineleyici hizmet verebilir nesnesi.
+Aynı türdür **yineleyici** \< **Iter**> **:: iterator_category** olduğunda `Iter` olarak hizmet verebilen bir nesneyi tanımlayan bir Giriş yineleyici.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [iterator_traits](../standard-library/iterator-traits-struct.md) veya [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md) nasıl kullanılacağına ilişkin bir örnek **iterator_tag**s.
+Bkz: [iterator_traits](../standard-library/iterator-traits-struct.md) veya [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md) nasıl kullanılacağına ilişkin bir örnek `iterator_tag`s.
 
 ## <a name="requirements"></a>Gereksinimler
 

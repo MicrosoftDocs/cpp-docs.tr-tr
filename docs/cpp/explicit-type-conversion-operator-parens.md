@@ -18,11 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93cbd58b3259821292254d8395f5d2435ecaa365
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0f749f8cd43588eea8476c2746134b706737b6f5
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966663"
 ---
 # <a name="explicit-type-conversion-operator-"></a>Açık Tür Dönüştürme İşleci: ()
 C++, işlev çağrısı sözdizimine benzer bir sözdizimi kullanarak açık tür dönüştürme sağlar.  
@@ -34,9 +35,9 @@ simple-type-name ( expression-list )
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- A *basit tür adı* arkasından bir *ifade listesinde* parantez yapılardan belirtilen ifadeler kullanarak belirtilen türde bir nesne içine alınmalıdır. Aşağıdaki örnekte, int türüne yapılan açık tür dönüştürme gösterilmektedir:  
+ A *basit tür adı* arkasından bir *ifade listesi* parantez yapılardan içine belirtilen ifadeleri kullanarak belirtilen türde bir nesne. Aşağıdaki örnekte, int türüne yapılan açık tür dönüştürme gösterilmektedir:  
   
-```  
+```cpp 
 int i = int( d );  
 ```  
   
@@ -44,7 +45,7 @@ int i = int( d );
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_Explicit_Type_Conversion_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -90,14 +91,14 @@ int main()
   
 ## <a name="output"></a>Çıkış  
   
-```  
+```Output  
 x = 20, y = 10  
 x = 0, y = 0  
 ```  
   
  Yukarıdaki örnekte sabitler kullanılarak yapılan açık tür dönüştürme gösterilse de, aynı teknik bu dönüştürmeleri nesneler üzerinde gerçekleştirmek için de kullanılabilir. Aşağıdaki kod parçası bunu gösterir:  
   
-```  
+```cpp 
 int i = 7;  
 float d;  
   
@@ -106,13 +107,16 @@ d = float( i );
   
  Açık tür dönüştürmeleri, "atama" sözdizimi kullanılarak da belirtilebilir. Atama sözdizimi kullanılarak yeniden yazılan yukarıdaki örnek şöyle olur:  
   
-```  
+```cpp
+
 d = (float)i;  
+
 ```  
   
  Hem atama hem de işlev stili dönüştürmelerin sonuçları, tek değerlerden dönüştürme gerçekleştirilirken aynı olur. Bununla birlikte, işlev stili sözdiziminde dönüştürme için birden fazla bağımsız değişken belirtebilirsiniz. Bu fark, kullanıcı tanımlı türler için önemlidir. Bir `Point` sınıfını ve dönüştürme işlemlerini göz önünde bulundurun:  
   
-```  
+```cpp
+
 struct Point  
 {  
     Point( short x, short y ) { _x = x; _y = y; }  
@@ -121,14 +125,15 @@ struct Point
 };  
 ...  
 Point pt = Point( 3, 10 );  
-```  
+
+```
   
- İşlevi stili dönüştürme kullanır, önceki örnekte, iki değer dönüştürmek gösterilmektedir (biri *x* için bir tane *y*) için kullanıcı tanımlı tür `Point`.  
+ İşlev tarzı dönüştürme kullanan yukarıdaki örnekte, iki değerlerini dönüştürmek gösterilmektedir (biri *x* , diğeri *y*) kullanıcı tanımlı türe `Point`.  
   
 > [!CAUTION]
 >  C++ derleyicisinin yerleşik tür denetimini geçersiz kıldıkları için açık tür dönüştürmelerini dikkatlice kullanın.  
   
- [Cast](../cpp/cast-operator-parens.md) gösterimi kullanılan, olmayan türlere dönüştürme için bir *basit tür adı* (işaretçi veya başvuru türleri, örneğin). İle ifade türleri dönüştürme bir *basit tür adı* her iki biçimde yazılabilir. Bkz: [tür tanımlayıcıları](http://msdn.microsoft.com/en-us/34b6c737-0ef1-4470-9b77-b26e46c0bbd4) nelerin oluşturduğunu hakkında daha fazla bilgi için bir *basit tür adı*.  
+ [Atama](../cpp/cast-operator-parens.md) gösterimi sahip olmadığınız türlere dönüştürmeler için kullanılması gereken bir *basit tür adı* (işaretçi veya başvuru türleri gibi). İle ifade edilebilen türlere dönüşüm için bir *basit tür adı* iki biçimden biriyle yazılabilir.  
   
  Atamalar içinde tür tanımı olamaz.  
   

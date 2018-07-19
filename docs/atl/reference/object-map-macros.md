@@ -16,27 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 671fd80bc2c4ad320efb282fd659899756c2ecbc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f0e2e14309b7175b003fbab9214d9dffde63af63
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362949"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026023"
 ---
-# <a name="object-map-macros"></a>Nesne eşleme makroları
-Bu makroları nesne eşlemeleri ve girişleri tanımlayın.  
+# <a name="object-map-macros"></a>Nesne işleme makroları
+Bu makrolar, nesne eşlemeleri ve girişleri tanımlayın.  
   
 |||  
 |-|-|  
-|[DECLARE_OBJECT_DESCRIPTION](#declare_object_description)|Nesne eşlemeye girilecek bir sınıf nesnesinin metin açıklaması belirtmenize olanak tanır.|  
-|[OBJECT_ENTRY_AUTO](#object_entry_auto)|ATL nesneyi nesne eşlemeye girer, kayıt defterini güncelleştirir ve nesne örneğini oluşturur.|  
-|[OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](#object_entry_non_createable_ex_auto)|Nesne kayıtlı ve başlatılmış olduğundan belirtmenize olanak sağlar, ancak bunu dışarıdan aracılığıyla oluşturulabilmelidir değil `CoCreateInstance`.|  
+|[DECLARE_OBJECT_DESCRIPTION](#declare_object_description)|Nesne eşlemesine girilen bir sınıf nesnesinin metin açıklama belirtmenizi sağlar.|  
+|[OBJECT_ENTRY_AUTO](#object_entry_auto)|ATL nesnesi nesne eşlemesine girer, kayıt defterini güncelleştirir ve nesne örneği oluşturur.|  
+|[OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](#object_entry_non_createable_ex_auto)|Nesne kayıtlı ve başlatılmış olduğunu belirlemenizi sağlar, ancak harici olarak oluşturulabilir aracılığıyla olmamalıdır `CoCreateInstance`.|  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
    
 ##  <a name="declare_object_description"></a>  DECLARE_OBJECT_DESCRIPTION  
- Sınıf nesnesi için bir metin açıklama belirtmenize olanak tanır.  
+ Sınıf nesneniz için bir metin açıklama belirtmenizi sağlar.  
   
 ```
 DECLARE_OBJECT_DESCRIPTION( x )
@@ -44,70 +44,70 @@ DECLARE_OBJECT_DESCRIPTION( x )
   
 ### <a name="parameters"></a>Parametreler  
  *x*  
- [in] Sınıf nesnenin açıklaması.  
+ [in] Sınıfı nesne açıklaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL bu açıklama nesne eşlemesi üzerinden girer [OBJECT_ENTRY](http://msdn.microsoft.com/en-us/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) makrosu.  
+ ATL bu açıklama nesne eşlemesi üzerinden girer [OBJECT_ENTRY](http://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) makrosu.  
   
- `DECLARE_OBJECT_DESCRIPTION` arabirimini uygulayan bir `GetObjectDescription` geçersiz kılmak için kullanabileceğiniz işlevi [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) yöntemi.  
+ DECLARE_OBJECT_DESCRIPTION uygulayan bir `GetObjectDescription` geçersiz kılmak için kullanabileceğiniz işlevi [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) yöntemi.  
 
   
- `GetObjectDescription` İşlevi çağrıldığında **IComponentRegistrar::GetComponents**. **IComponentRegistrar** kaydolun ve DLL bileşenleri tek tek kaydı olanak tanıyan bir Otomasyon arabirimdir. ATL Proje Sihirbazı'yla bir bileşen Kaydedicisi nesne oluşturduğunuzda, sihirbaz otomatik olarak uygulaması **IComponentRegistrar** arabirimi. **IComponentRegistrar** genellikle Microsoft işlem sunucusu tarafından kullanılır.  
+ `GetObjectDescription` İşlevi çağrıldığında `IComponentRegistrar::GetComponents`. `IComponentRegistrar` kaydolun ve bileşenleri tek tek bir DLL kaydını olanak tanıyan bir Otomasyon arabirimidir. ATL projesi Sihirbazı'yla bir bileşeni kayıt şirketi nesnesi oluşturduğunuzda, sihirbaz otomatik olarak Uygula `IComponentRegistrar` arabirimi. `IComponentRegistrar` genellikle Microsoft işlem sunucusu tarafından kullanılır.  
   
- ATL Proje Sihirbazı hakkında daha fazla bilgi için bkz: [bir ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md).  
+ ATL projesi Sihirbazı hakkında daha fazla bilgi için bkz [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#123](../../atl/codesnippet/cpp/object-map-macros_1.h)]  
   
 ##  <a name="object_entry_auto"></a>  OBJECT_ENTRY_AUTO  
- ATL nesneyi nesne eşlemeye girer, kayıt defterini güncelleştirir ve nesne örneğini oluşturur.  
+ ATL nesnesi nesne eşlemesine girer, kayıt defterini güncelleştirir ve nesne örneği oluşturur.  
   
 ```
 OBJECT_ENTRY_AUTO( clsid, class )
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
- [in] Adlı C++ sınıfı tarafından uygulanan bir COM sınıfı CLSID `class`.  
+ *CLSID*  
+ [in] Adlı bir C++ sınıfı tarafından uygulanan bir COM sınıfı CLSID'si *sınıfı*.  
   
- `class`  
- [in] Tarafından temsil edilen COM sınıfı uygulama C++ sınıfın adını `clsid`.  
+ *class*  
+ [in] COM sınıfı tarafından temsil edilen C++ sınıfı adı *CLSID*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Nesne giriş makroları kayıt, başlatma ve bir sınıf oluşturulması için destek sağlamak için projeyi genel kapsamda yerleştirilir.  
+ Nesne giriş makroları, kayıt, başlatma ve bir sınıf oluşturulmasını desteklemek için projedeki genel kapsamda yerleştirilir.  
   
- `OBJECT_ENTRY_AUTO` işlev işaretçileri oluşturan ve sınıf üreticisi creator sınıf girer `CreateInstance` işlevleri otomatik olarak oluşturulan ATL nesne eşlemesi içine bu nesne için. Zaman [CAtlComModule::RegisterServer](catlcommodule-class.md#registerserver) olduğu adlı nesne eşlemesindeki her nesne için sistem kayıt defterini güncelleştirir.  
+ Sınıf üreteci oluşturan sınıf ve oluşturucu sınıf işlev işaretçileri OBJECT_ENTRY_AUTO girer `CreateInstance` işlevleri için bu nesnede ATL nesne otomatik üretilmiş eşlemesi. Zaman [CAtlComModule::RegisterServer](catlcommodule-class.md#registerserver) olan çağrılır, nesne eşlemesindeki her nesnenin sistem kayıt defterini güncelleştirir.  
 
   
- Aşağıdaki tabloda, bu makro ikinci parametre olarak belirtilen sınıftan nesne eşlemesine eklenen bilgiler nasıl elde açıklanmaktadır.  
+ Aşağıdaki tabloda, bu makroya ikinci parametre olarak belirtilen sınıftan nesne haritaya eklenen bilgilerin nasıl elde açıklar.  
   
 |Bilgi için|Alınan|  
 |---------------------|-------------------|  
 |COM kayıt|[Kayıt Defteri Makroları](../../atl/reference/registry-macros.md)|  
-|Sınıf fabrikası oluşturma|[Sınıf Fabrika makroları](../../atl/reference/aggregation-and-class-factory-macros.md)|  
+|Sınıf fabrikası oluşturma|[Sınıf üreticisi makroları](../../atl/reference/aggregation-and-class-factory-macros.md)|  
 |Örnek oluşturma|[Toplama makroları](../../atl/reference/aggregation-and-class-factory-macros.md)|  
 |Bileşen kategori kaydı|[Kategori Makroları](../../atl/reference/category-macros.md)|  
 |Sınıf düzeyi başlatma ve temizleme|[ObjectMain](ccomobjectrootex-class.md#objectmain)|  
 
   
 ##  <a name="object_entry_non_createable_ex_auto"></a>  OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO  
- Nesne kayıtlı ve başlatılmış olduğundan belirtmenize olanak sağlar, ancak bunu dışarıdan aracılığıyla oluşturulabilmelidir değil `CoCreateInstance`.  
+ Nesne kayıtlı ve başlatılmış olduğunu belirlemenizi sağlar, ancak harici olarak oluşturulabilir aracılığıyla olmamalıdır `CoCreateInstance`.  
   
 ```
 OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
- [in] Adlı C++ sınıfı tarafından uygulanan bir COM sınıfı CLSID `class`.  
+ *CLSID*  
+ [in] Adlı bir C++ sınıfı tarafından uygulanan bir COM sınıfı CLSID'si *sınıfı*.  
   
- `class`  
- [in] Tarafından temsil edilen COM sınıfı uygulama C++ sınıfın adını `clsid`.  
+ *class*  
+ [in] COM sınıfı tarafından temsil edilen C++ sınıfı adı *CLSID*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Nesne giriş makroları kayıt, başlatma ve bir sınıf oluşturulması için destek sağlamak için projeyi genel kapsamda yerleştirilir.  
+ Nesne giriş makroları, kayıt, başlatma ve bir sınıf oluşturulmasını desteklemek için projedeki genel kapsamda yerleştirilir.  
   
- `OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO` bir nesne kayıtlı ve başlatılmış olduğundan belirtmenizi sağlar (bkz [OBJECT_ENTRY_AUTO](#object_entry_auto) daha fazla bilgi için), ancak bunu aracılığıyla oluşturulabilmelidir değil `CoCreateInstance`.  
+ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO, bir nesne kayıtlı ve başlatılmış olduğunu belirtmenize olanak sağlar (bkz [OBJECT_ENTRY_AUTO](#object_entry_auto) daha fazla bilgi için), ancak aracılığıyla oluşturulabilir olmamalıdır `CoCreateInstance`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları](../../atl/reference/atl-macros.md)

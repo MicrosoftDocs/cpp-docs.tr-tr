@@ -18,29 +18,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c419bf65a02d13359335bc6cb527fc189d596d6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4356e15d1b74508b7fc2606b45b5fb2bc9a435eb
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966666"
 ---
 # <a name="primary-expressions"></a>Birincil İfadeler
-Birincil ifadeler daha karmaşık ifadelerin yapı taşlarıdır. Değişmez değerler, adları ve kapsam çözümü işleci tarafından nitelenmiş adlar oldukları (`::`).  Birincil bir ifade aşağıdaki biçimlerden birini içerebilir:  
+Birincil ifadeler daha karmaşık ifadelerin yapı taşlarıdır. Oldukları değişmez değerleri, adlar ve kapsam çözümleme işleci tarafından belirtilen adlardır (`::`).  Birincil bir ifade aşağıdaki biçimlerden birini içerebilir:  
   
 ```  
   
-      literal  
-      this  
-:: namename( expression )  
+literal  
+this
+name  
+::name ( expression )  
 ```  
   
- A *değişmez değer* sabit bir birincil ifadesidir. Türü kendi belirtiminin biçimine bağlıdır. Bkz: [değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md) değişmez değerleri belirtme hakkında tam bilgi için.  
+ A *değişmez değer* sabit bir birincil ifadedir. Türü kendi belirtiminin biçimine bağlıdır. Bkz: [değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md) değişmez değerleri belirtme hakkında tam bilgi için.  
   
- **Bu** bir sınıf nesnesi için bir işaretçi bir anahtardır. Statik olmayan üye işlevlerinde kullanılabilir ve işlevin çağrıldığı sınıfın örneğini gösterir. **Bu** anahtar sözcüğü bir sınıf üyesi işlevinin gövdesini dışında kullanılamaz.  
+ **Bu** anahtar sözcüğü bir sınıf nesnesine bir işaretçidir. Statik olmayan üye işlevlerinde kullanılabilir ve işlevin çağrıldığı sınıfın örneğini gösterir. **Bu** anahtar sözcüğü bir sınıf işlevi üyesinin gövdesi dışında kullanılamaz.  
   
- Türü **bu** işaretçi `type`  **\*const** (burada `type` sınıfı adı) özellikle değiştirme işlevleri içinde **bu** işaretçi. Aşağıdaki örnek üye işlev bildirimleri ve türlerini gösterir **bu**:  
+ Türünü **bu** işaretçisi `type`  **\*const** (burada `type` sınıf adıdır) özel olarak değiştirmeyen işlevler içindeki **bu** işaretçi. Aşağıdaki örnek üye işlev bildirimlerini ve türlerini gösterir **bu**:  
   
-```  
+```cpp 
 // expre_Primary_Expressions.cpp  
 // compile with: /LD  
 class Example  
@@ -52,17 +54,15 @@ public:
 };  
 ```  
   
- Bkz: [Bu işaretçinin](this-pointer.md) türünü değiştirme hakkında daha fazla bilgi için **bu** işaretçi.  
+ Bkz: [this işaretçisi](this-pointer.md) türünü değiştirme hakkında daha fazla bilgi için **bu** işaretçi.  
   
- Kapsam çözümü işleci (`::`) ve ardından birincil bir ifadenin bir ad oluşturduğunu.  Bu gibi adlar üye adları değil, genel kapsamdaki adlar olmalıdır.  Bu ifadenin türü adın bildirimi tarafından belirlenir. Bildirim adı lvalue ise, bu bir lvalue olur (diğer bir deyişle, bir atama işleci ifadesinin sol tarafında görünebilir). Söz konusu ad geçerli kapsamda gizlenmiş olsa da, kapsam çözümleme işleci başvurulacak bir genel bir ad sağlar. Bkz: [kapsam](../cpp/scope-visual-cpp.md) kapsam çözümü işleci kullanma örneği.  
+ Kapsam çözümleme işleci (`::`) arkasından bir ad birincil bir ifade oluşturur.  Bu gibi adlar üye adları değil, genel kapsamdaki adlar olmalıdır.  Bu ifadenin türü adın bildirimi tarafından belirlenir. Bildirim adı lvalue ise, bu bir lvalue olur (diğer bir deyişle, bir atama işleci ifadesinin sol tarafında görünebilir). Söz konusu ad geçerli kapsamda gizlenmiş olsa da, kapsam çözümleme işleci başvurulacak bir genel bir ad sağlar. Bkz: [kapsam](../cpp/scope-visual-cpp.md) kapsam çözümleme işleci ile kullanma örneği için.  
   
  Parantez içine alınmış bir ifade, türü ve değeri parantez içinde olmayan ifadelerle aynı olan birincil bir ifadedir. Parantez içinde olmayan bir ifade bir lvalue ise, bu bir l-value olur.  
   
- Yukarıda verilen birincil ifade sözdizimini bağlamında *adı* için açıklanan sözdiziminde herhangi bir şey anlamına gelir [adları](http://msdn.microsoft.com/en-us/1c49cc24-08d5-4884-b170-ba8ed42d80db), ancak ne zaman adları tür adından önce kapsam çözümü işleci kullanılarak yalnızca oluşabilir bir sınıf içinde izin verilmez.  Buna kullanıcı tanımlı dönüştürme işlevi ve yok edici adları da dahildir.  
-  
  Birincil ifadenin örnekleri şunlardır:  
   
-```  
+```cpp 
 100 // literal  
 'c' // literal  
 this // in a member function, a pointer to the class instance  
@@ -72,9 +72,9 @@ this // in a member function, a pointer to the class instance
 ( i + 1 ) // a parenthesized expression  
 ```  
   
- Aşağıdaki örneklerde tüm kabul edilen *adları*ve bu nedenle birincil ifadeler, çeşitli formlar:  
+ Aşağıdaki örneklerde tüm değerlendirilir *adları*ve bu nedenle birincil ifadeler çeşitli biçimlerde:  
   
-```  
+```cpp 
 MyClass // a identifier  
 MyClass::f // a qualified name  
 operator = // an operator function name  

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab4b9d6a294e509a6a197866e9ef775063e3da7b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a3d3c8f5d9f08c4dce370d49dc5a43bbc45b479e
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422787"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39025763"
 ---
 # <a name="statements-c"></a>Deyimler (C++)
 C++ deyimleri, nesnelerin nasıl ve hangi sırayla işleneceğini denetleyen program öğelerdir. Bu bölüm şunları içerir:  
@@ -32,7 +32,7 @@ C++ deyimleri, nesnelerin nasıl ve hangi sırayla işleneceğini denetleyen pro
   
     -   [İfade deyimleri](../cpp/expression-statement.md). Bu deyimler, yan etkileri ya da dönüş değerleri için bir ifade değerlendirir.  
   
-    -   [Null deyimleri](../cpp/null-statement.md). Bu deyimler, C++ sözdiziminin bir deyim gerektirdiği ancak herhangi bir işlemin yapılmayacağı durumlarda sağlanabilir.  
+    -   [Boş deyimler](../cpp/null-statement.md). Bu deyimler, C++ sözdiziminin bir deyim gerektirdiği ancak herhangi bir işlemin yapılmayacağı durumlarda sağlanabilir.  
   
     -   [Bileşik deyimler](../cpp/compound-statements-blocks.md). Bu deyimler küme ayracı ({}) içine alınmış deyim gruplarıdır. Tek bir deyimin kullanılabileceği her yerde kullanılabilirler.  
   
@@ -42,9 +42,9 @@ C++ deyimleri, nesnelerin nasıl ve hangi sırayla işleneceğini denetleyen pro
   
     -   [Atlama deyimleri](../cpp/jump-statements-cpp.md). Bu deyimler hemen işlevdeki başka bir konuma denetim aktarır ya da işlevden denetim döndürür.  
   
-    -   [Bildirim deyimleri](http://msdn.microsoft.com/en-us/14538558-356f-450e-9e1e-3cd62ba952b9). Bildirimler, bir programa bir ad tanıtır. ([Bildirimler ve tanımlar](declarations-and-definitions-cpp.md) bildirimleri ilişkin daha ayrıntılı bilgi sağlar.)  
+    -   [Bildirim deyimleri](http://msdn.microsoft.com/14538558-356f-450e-9e1e-3cd62ba952b9). Bildirimler, bir programa bir ad tanıtır. ([Bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md) bildirimleri hakkında daha ayrıntılı bilgileri sağlar.)  
   
- Özel durum işleme deyimleri hakkında bilgi için bkz: [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md).  
+ Özel durum işleme deyimleri hakkında bilgi için bkz. [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3506572586f0dc8edc3f9e97955e7612bcea46ae
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b143a37c306320223ac3abe430e41c9750c8ece9
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859192"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39025789"
 ---
 # <a name="spaceinfo-structure"></a>space_info Yapısı
 
@@ -41,9 +41,9 @@ struct space_info   {
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`unsigned long long available`|Birimdeki veriler temsil etmek kullanılabilir bayt sayısını temsil eder.|
-|`unsigned long long capacity`|Birim sunan bayt toplam sayısını temsil eder.|
-|`unsigned long long free`|Birimdeki veriler temsil etmek için kullanılan değil bayt sayısını temsil eder.|
+|`unsigned long long available`|Birimdeki verileri temsil etmek kullanılabilen bayt sayısını temsil eder.|
+|`unsigned long long capacity`|Birim temsil edebilen bayt toplam sayısını temsil eder.|
+|`unsigned long long free`|Birimdeki verileri temsil etmek için kullanılmayan bayt sayısını temsil eder.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -55,5 +55,5 @@ struct space_info   {
 
 [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
 [\<FileSystem >](../standard-library/filesystem.md)<br/>
-[Alanı](http://msdn.microsoft.com/en-us/7fce0b0e-523b-4598-b218-47245d0204ca)<br/>
+[alanı](http://msdn.microsoft.com/7fce0b0e-523b-4598-b218-47245d0204ca)<br/>
 [Dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md)<br/>

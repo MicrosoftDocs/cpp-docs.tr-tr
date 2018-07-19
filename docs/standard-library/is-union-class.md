@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 205b05b4832098bca1d97bd949137d7271f111d5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1ea1f79d9f57c34bf6deed94f04354b87759d794
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855695"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966595"
 ---
 # <a name="isunion-class"></a>is_union Sınıfı
 
-Testleri UNION türüdür.
+Bir birleşim türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_union;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` birleşim türü olduğunu veya bir `cv-qualified` form tuttuğu yanlış bir birleşim türü, aksi takdirde.
+Karşılaştırmasının bir örneği true tutan türü *Ty* bir birleşim türü veya `cv-qualified` tuttuğu yanlış bir birleşim türü, aksi takdirde biçiminin.
 
 ## <a name="example"></a>Örnek
 

@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a71b6a45dbdb882cc666c72296938f970bba52ac
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 808340df89bb548fee57604f25409c117933cc4e
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844952"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953266"
 ---
 # <a name="cachechunklist-class"></a>cache_chunklist Sınıfı
 
-Tanımlayan bir [ayırıcısı engelleme](../standard-library/allocators-header.md) ayırır ve bellek blokları tek bir boyutta kaldırır.
+Tanımlayan bir [ayırıcı block](../standard-library/allocators-header.md) ayırır ve bellek blokları tek bir boyutta ayırmayı iptal eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,13 +42,13 @@ class cache_chunklist
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Sz`|Ayrılacak dizideki öğelerin sayısı.|
+|*SZ*|Ayrılacak dizideki öğelerin sayısı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfı kullanır `operator new` öbekleri ham bellek ayrılamadı suballocating engeller gerektiğinde bir bellek bloğu için ayrılacak; her öbek için ayrı bir ücretsiz listesinde deallocated bellek blokları depolar ve kullanır `operator delete` serbest bırakma için bir bellek blokları hiçbiri kullanımda olduğunda öbek.
+Bu şablon sınıfının kullandığı **new işleci** öbekleri ham bellek ayırmak için suballocating engeller gerektiğinde bir bellek bloğu için ayrılacak; her öbek için ayrı bir ücretsiz listesinde serbest bırakılmış bellek blokları depolar ve kullanır**delete işleci** kendi bellek blokları hiçbiri kullanımda olduğunda bir öbek serbest bırakmak.
 
-Her bellek bloğu tutan `Sz` bayt kullanılabilir bellek ve ait öbek için bir işaretçi. Her bir öbeğin tutan `Nelts` bellek blokları, üç işaretçileri, int ve verileri, `operator new` ve `operator delete` gerektirir.
+Her bellek bloğu şunları tutar *Sz* bayt cinsinden kullanılabilir bellek ve ait olduğu öbek için bir işaretçi. Her bir öbeği tutan `Nelts` bellek blokları, üç işaretçileri, int ve verileri, **new işleci** ve **delete işleci** gerektirir.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -61,11 +61,11 @@ Her bellek bloğu tutan `Sz` bayt kullanılabilir bellek ve ait öbek için bir 
 |Üye işlevi|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bir bellek bloğu ayırır.|
-|[Serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|
+|[Serbest Bırak](#deallocate)|Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 
@@ -81,11 +81,11 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`count`|Ayrılacak dizideki öğelerin sayısı.|
+|*Sayısı*|Ayrılacak dizideki öğelerin sayısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış nesnesine bir işaretçi.
+Ayrılmış bir nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -101,7 +101,7 @@ cache_chunklist();
 
 ## <a name="deallocate"></a>  cache_chunklist::deallocate
 
-Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.
+Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -111,11 +111,11 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`ptr`|Depolama biriminden bırakılmasına ilk nesne için bir işaretçi.|
-|`count`|Depolama biriminden bırakılmasına nesnelerin sayısı.|
+|*ptr*|Depolama alanından serbest bırakılması ilk nesneye bir işaretçi.|
+|*Sayısı*|Depolama alanından serbest bırakılması nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

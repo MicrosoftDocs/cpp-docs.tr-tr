@@ -1,5 +1,5 @@
 ---
-title: Varsayılan ATL Proje yapılandırmaları | Microsoft Docs
+title: Varsayılan ATL projesi yapılandırmaları | Microsoft Docs
 ms.custom: ''
 ms.date: 10/20/2017
 ms.technology:
@@ -14,27 +14,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33f9f41a068605cbc73309f89c3ffb09def76750
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 52f74ec15c6bc6d58f9f092a24faf66d0cef3740
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359051"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026478"
 ---
-# <a name="default-atl-project-configurations"></a>Varsayılan ATL Proje yapılandırmaları
-ATL Proje Sihirbazı varsayılan olarak iki proje yapılandırmaları oluşturur:  
+# <a name="default-atl-project-configurations"></a>Varsayılan ATL projesi yapılandırmaları
+ATL projesi Sihirbazı, varsayılan olarak iki proje yapılandırmalarını oluşturur:  
   
-|Yapılandırma|Karakter kümesi|ATL Kullanımı|  
+|Yapılandırma|Karakter kümesi|ATL'nin kullanımı|  
 |-------------------|-------------------|----------------|  
 |Sürüm|MBCS|DLL|  
 |Hata ayıklama|MBCS|DLL|  
   
- **Karakter kümesi**, **Kullan'in ATL** ve tüm değiştirilebilir **proje ayarları** altında iletişim **genel** sekmesi. Yapılandırma Yöneticisi'ni kullanarak kendi yapılandırmaları da ekleyebilirsiniz. Ayrıntılar için bkz [yapı yapılandırmaları](/visualstudio/ide/understanding-build-configurations).  
+ **Karakter kümesi**, **kullanın, ATL** ve tüm içinde değiştirilebilen **proje ayarları** iletişim altında **genel** sekmesi. Yapılandırma Yöneticisi'ni kullanarak kendi yapılandırmaları da ekleyebilirsiniz. Ayrıntılar için bkz [derleme yapılandırmaları](/visualstudio/ide/understanding-build-configurations).  
   
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
  [Proje özellikleriyle çalışma](../../ide/working-with-project-properties.md)   
- [Yapılandırma Yöneticisi iletişim kutusu](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)   
+ [Configuration Manager iletişim kutusu](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)   
  [Derleme ve Oluşturma](/visualstudio/ide/compiling-and-building-in-visual-studio)
 

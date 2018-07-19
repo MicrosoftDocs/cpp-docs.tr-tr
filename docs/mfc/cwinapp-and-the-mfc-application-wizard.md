@@ -1,5 +1,5 @@
 ---
-title: CWinApp ve MFC Uygulama Sihirbazı'nı | Microsoft Docs
+title: CWinApp ve MFC Uygulama Sihirbazı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,27 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d40f314c7717d2e69b2b4802bf9c2c5468511db5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 702c20fc9f303670d2add4ebf840785acff7750d
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341267"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026491"
 ---
 # <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp ve MFC Uygulama Sihirbazı
-Bir uygulama sınıfı türetilen bir iskelet uygulama oluşturduğunda, MFC Uygulama Sihirbazı'nı bildirir [CWinApp](../mfc/reference/cwinapp-class.md). MFC Uygulama Sihirbazı'nı, ayrıca aşağıdaki öğeleri içeren bir uygulama dosyası oluşturur:  
+İskelet bir uygulama oluşturduğunda, MFC Uygulama Sihirbazı, bir uygulama sınıfı türetilen bildirir [CWinApp](../mfc/reference/cwinapp-class.md). MFC Uygulama Sihirbazı, aşağıdaki öğeleri içeren bir uygulama dosyasını da oluşturur:  
   
 -   Uygulama sınıfı için ileti eşlemesi.  
   
 -   Bir boş sınıf oluşturucu.  
   
--   Bir ve yalnızca nesne sınıfının bildirir değişkeni.  
+-   Değişken yalnızca sınıf nesnesi bildirir.  
   
 -   Standart bir uygulaması, `InitInstance` üye işlevi.  
   
- Uygulama sınıfı proje başlığı ve ana kaynak dosyalarında yerleştirilir. Oluşturulan dosyalar ve sınıf adları, MFC Uygulama Sihirbazı'nda sağladığınız proje adı dayanır. Bu sınıfların kodunu görüntülemek için kolay yolunu [sınıf görünümü](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
+ Proje başlığı ve ana kaynak dosyalarında uygulama sınıfı yerleştirilir. Oluşturulan dosyalar ve sınıf adları MFC Uygulama Sihirbazı'nda sağladığınız proje adı temel alır. Bu sınıfların kodunu görüntülemek için en kolay yolu aracılığıyladır [sınıf görünümü](http://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
   
- Standart uygulamaları ve sağlanan ileti eşlemesi birçok amaç için yeterli olur, ancak bunları gerektiği şekilde değiştirebilirsiniz. Bu uygulamalar en ilginç `InitInstance` üye işlevi. Genellikle, iskelet uygulaması için kod ekleyeceksiniz `InitInstance`.  
+ Standart uygulamalar ve sağlanan ileti eşlemesi birçok amaç için uygundur, ancak bunları gerektiği şekilde değiştirebilirsiniz. Bu uygulamalar en ilginç `InitInstance` üye işlevi. Genellikle, iskelet uygulanması için kod ekleyeceksiniz `InitInstance`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)   

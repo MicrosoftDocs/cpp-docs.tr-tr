@@ -22,16 +22,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d268b9cd2ba7d83f44b5e0ebd516208d17ee726
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6ea34ac38b70defc873278ce964ff10b8383dcc5
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858113"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966591"
 ---
 # <a name="ostrstream-class"></a>ostrstream Sınıfı
 
-Öğeler ekleme denetimlerini bir nesne ve kodlanmış nesneleri bir sınıf akışı arabelleğe açıklar [strstreambuf](../standard-library/strstreambuf-class.md).
+Sınıfı bir akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri açıklar [strstreambuf](../standard-library/strstreambuf-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,10 +41,10 @@ class ostrstream : public ostream
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfın bir nesnesi nesne depolar `strstreambuf`.
+Sınıfın bir nesnesi nesneyi depolar `strstreambuf`.
 
 > [!NOTE]
-> Bu sınıf kullanım dışıdır. Kullanmayı [ostringstream](../standard-library/sstream-typedefs.md#ostringstream) veya [wostringstream](../standard-library/sstream-typedefs.md#wostringstream) yerine.
+> Bu sınıf kullanımdan kaldırılmıştır. Kullanmayı [ostringstream](../standard-library/sstream-typedefs.md#ostringstream) veya [wostringstream](../standard-library/sstream-typedefs.md#wostringstream) yerine.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -56,10 +56,10 @@ Sınıfın bir nesnesi nesne depolar `strstreambuf`.
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Dondurma](#freeze)|Bir Akış Arabellek Akış Arabellek işlemleri kullanılamaz hale gelmesine neden olur.|
-|[pcount](#pcount)|Denetimli sıraya yazılan öğeleri sayısını döndürür.|
-|[rdbuf](#rdbuf)|Bir işaretçi akışa ilişkili döndürür `strstreambuf` nesnesi.|
-|[str](#str)|Çağrıları [Dondur](../standard-library/strstreambuf-class.md#freeze)ve ardından bir işaretçi denetimli sıranın başına döndürür.|
+|[Dondurma](#freeze)|Akış Arabellek işlemleri kullanılabilir olması bir akış arabelleğinin neden olur.|
+|[pcount](#pcount)|Denetlenen dizi için yazılan öğelerin sayısını döndürür.|
+|[rdbuf](#rdbuf)|Akış için bir işaretçi ilişkili döndürür `strstreambuf` nesne.|
+|[str](#str)|Çağrıları [dondurma](../standard-library/strstreambuf-class.md#freeze)ve denetlenen dizinin başlangıcı için bir işaretçi döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -69,7 +69,7 @@ Sınıfın bir nesnesi nesne depolar `strstreambuf`.
 
 ## <a name="freeze"></a>  ostrstream::Freeze
 
-Bir Akış Arabellek Akış Arabellek işlemleri kullanılamaz hale gelmesine neden olur.
+Akış Arabellek işlemleri kullanılabilir olması bir akış arabelleğinin neden olur.
 
 ```cpp
 void freeze(bool _Freezeit = true);
@@ -77,15 +77,15 @@ void freeze(bool _Freezeit = true);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Freezeit` A `bool` donabilir akış isteyip istemediğinizi belirten.
+*_Freezeit* A **bool** donabilir akış isteyip istemediğinizi belirten.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrılarını [rdbuf](#rdbuf) -> [Dondur](../standard-library/strstreambuf-class.md#freeze)(_ *Freezeit*).
+Üye işlev çağrıları [rdbuf](#rdbuf) -> [dondurma](../standard-library/strstreambuf-class.md#freeze)(_ *Freezeit*).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [strstream::freeze](../standard-library/strstreambuf-class.md#freeze) kullanan bir örnek **Dondur**.
+Bkz: [strstream::freeze](../standard-library/strstreambuf-class.md#freeze) kullanan bir örnek için `freeze`.
 
 ## <a name="ostrstream"></a>  ostrstream::ostrstream
 
@@ -101,23 +101,23 @@ ostrstream(char* ptr,
 
 ### <a name="parameters"></a>Parametreler
 
-`ptr` Arabellek.
+*PTR* arabellek.
 
-`count` Arabelleğinin bayt cinsinden boyutu.
+*sayısı* arabelleğin bayt cinsinden boyutu.
 
-`_Mode` Giriş ve çıkış modu arabellek. Bkz: [ios_base::openmode](../standard-library/ios-base-class.md#openmode) daha fazla bilgi için.
+*_Modu* arabellek giriş ve çıkış modu. Bkz: [ios_base::openmode](../standard-library/ios-base-class.md#openmode) daha fazla bilgi için.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırarak temel sınıfını hem oluşturucular başlatmak [ostream](../standard-library/ostream-typedefs.md#ostream)( **sb**), burada **sb** saklı nesne sınıfının [strstreambuf](../standard-library/strstreambuf-class.md). İlk Oluşturucu ayrıca başlatır **sb** çağırarak `strstreambuf`. İkinci Oluşturucu, temel sınıf iki yoldan biriyle başlatır:
+Her iki Oluşturucu çağırarak temel sınıf başlatmak [ostream](../standard-library/ostream-typedefs.md#ostream)(**sb**), burada `sb` depolanan nesne sınıfının [strstreambuf](../standard-library/strstreambuf-class.md). İlk Oluşturucu ayrıca başlatır `sb` çağırarak `strstreambuf`. İkinci Oluşturucu, temel sınıf iki yoldan biriyle başlatır:
 
-- Varsa `_Mode`  &  **ios_base::app**0, ardından == `ptr` dizisinin ilk öğesi belirlemelisiniz `count` öğeleri ve oluşturucu çağrıları `strstreambuf`( `ptr`, `count`, `ptr`).
+- Varsa `_Mode`  &  **ios_base::app**== 0, ardından `ptr` içeren bir dizinin ilk öğesi tanımlamalısınız `count` öğeleri ve oluşturucu çağrıları `strstreambuf`(`ptr`, `count`, `ptr`).
 
-- Aksi takdirde, `ptr` dizisinin ilk öğesi, ilk öğe olarak tasarlanmış bir C dize içeren bir sayım öğelerinin belirlemelisiniz `ptr`ve oluşturucu çağrıları `strstreambuf`( `ptr`, `count`, `ptr` + `strlen`( `ptr`) ).
+- Aksi takdirde, `ptr` ilk öğesi, ilk öğe olarak tasarlanmış bir C dizesi içeren bir dizi count öğelerini tanımlamalısınız `ptr`ve oluşturucu çağrıları `strstreambuf`(`ptr`, `count`, `ptr` + `strlen`( `ptr`) ).
 
 ## <a name="pcount"></a>  ostrstream::pcount
 
-Denetimli sıraya yazılan öğeleri sayısını döndürür.
+Denetlenen dizi için yazılan öğelerin sayısını döndürür.
 
 ```cpp
 streamsize pcount() const;
@@ -125,11 +125,11 @@ streamsize pcount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimli sıraya yazılan öğe sayısı.
+Denetlenen dizi için yazılan öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür [rdbuf](#rdbuf) -> [pcount](../standard-library/strstreambuf-class.md#pcount).
+Üye işlevinin döndürdüğü [rdbuf](#rdbuf) -> [pcount](../standard-library/strstreambuf-class.md#pcount).
 
 ### <a name="example"></a>Örnek
 
@@ -137,7 +137,7 @@ Bkz: [strstream::pcount](../standard-library/strstreambuf-class.md#pcount) kulla
 
 ## <a name="rdbuf"></a>  ostrstream::rdbuf
 
-Bir işaretçi akışın ilişkili strstreambuf nesnesi döndürür.
+Akışın ilişkili strstreambuf nesnesine bir işaretçi döndürür.
 
 ```cpp
 strstreambuf *rdbuf() const
@@ -145,11 +145,11 @@ strstreambuf *rdbuf() const
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Akış için bir işaretçi strstreambuf nesne ilişkili.
+Akış için bir işaretçi strstreambuf nesne yükleyicidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi türü saklı Akış Arabellek adresini döndürür **işaretçi** için [strstreambuf](../standard-library/strstreambuf-class.md).
+Üye işlevi türünde depolanmış bir akış arabelleğinin adresini döndürür `pointer` için [strstreambuf](../standard-library/strstreambuf-class.md).
 
 ### <a name="example"></a>Örnek
 
@@ -157,7 +157,7 @@ Bkz: [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount) ku
 
 ## <a name="str"></a>  ostrstream::Str
 
-Çağrıları [Dondur](../standard-library/strstreambuf-class.md#freeze)ve ardından bir işaretçi denetimli sıranın başına döndürür.
+Çağrıları [dondurma](../standard-library/strstreambuf-class.md#freeze)ve denetlenen dizinin başlangıcı için bir işaretçi döndürür.
 
 ```cpp
 char *str();
@@ -165,15 +165,15 @@ char *str();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimli dizisi başına bir işaretçi.
+Denetlenen dizinin başlangıcına bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür [rdbuf](#rdbuf) -> [str](../standard-library/strstreambuf-class.md#str).
+Üye işlevinin döndürdüğü [rdbuf](#rdbuf) -> [str](../standard-library/strstreambuf-class.md#str).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [strstream::str](../standard-library/strstreambuf-class.md#str) kullanan bir örnek için **str**.
+Bkz: [strstream::str](../standard-library/strstreambuf-class.md#str) kullanan bir örnek için `str`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -14,17 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086955d2d5668b447163e7b14677c265d4823190
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f22f0ab233f50a356c3a59eaf62ef8c25572233
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345508"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026857"
 ---
 # <a name="internet-information-by-task"></a>Göreve Göre Internet Bilgileri
-Bu konu başlığı altında listelenen görevleri gerçekleştirmek istediğiniz göreve göre sıralanır.  
+Bu konuda listelenen görevleri gerçekleştirmek istediğiniz göreve göre sıralanır.  
   
- Aşağıdaki kategorisinden görevleri bu konuda listelenmiştir:  
+ Bu konudaki görevleri aşağıdaki kategorileri listelenmiştir:  
   
 -   [ActiveX denetimleri, belgeler ve zaman uyumsuz ad görevleri](#_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks)  
   
@@ -38,13 +38,13 @@ Bu konu başlığı altında listelenen görevleri gerçekleştirmek istediğini
   
 -   [Zaman uyumsuz adlar hakkında bilgi edinin](../mfc/asynchronous-monikers-on-the-internet.md)  
   
--   [Internet bağlamda ActiveX denetimleri hakkında bilgi edinin](../mfc/activex-controls-on-the-internet.md)  
+-   [ActiveX denetimlerinde Internet bağlamı hakkında bilgi edinin](../mfc/activex-controls-on-the-internet.md)  
   
--   [Etkin belgeler Internet bağlamda hakkında bilgi edinin](../mfc/active-documents-on-the-internet.md)  
+-   [Etkin belgeler Internet bağlamı hakkında bilgi edinin](../mfc/active-documents-on-the-internet.md)  
   
 -   [ActiveX denetimi en iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md)  
   
--   [İmzalı CAB dosyaları MFC ve ATL denetimler için oluşturma](http://msdn.microsoft.com/en-us/14e50724-2505-4258-ae6b-326b706de409)  
+-   [MFC ve ATL denetimler için imzalı CAB dosyaları oluşturma](http://msdn.microsoft.com/14e50724-2505-4258-ae6b-326b706de409)  
   
 ###  <a name="_core_wininet_tasks"></a> WinINet görevleri  
   
@@ -58,7 +58,7 @@ Bu konu başlığı altında listelenen görevleri gerçekleştirmek istediğini
   
 -   [Bir HTTP istemci uygulaması yazma](../mfc/steps-in-a-typical-http-client-application.md)  
   
--   [Gopher istemci uygulaması yazma](../mfc/steps-in-a-typical-gopher-client-application.md)  
+-   [Bir Gopher istemci uygulaması yazma](../mfc/steps-in-a-typical-gopher-client-application.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2888f8a75e9b7addd2b8f195ffbf875c2b7ae1a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d437b70148fdaba4c8eb4d7aa855e7d75f6f2487
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422332"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953753"
 ---
 # <a name="specifiers"></a>Tanımlayıcılar
-Bu konuda açıklanmaktadır *decl tanımlayıcıları* (bildirim tanımlayıcıları) bileşeninin bir [bildirimi](declarations-and-definitions-cpp.md).  
+Bu konu başlığı altında açıklanır *belirticileri* (bildirim tanımlayıcıları) bileşeni bir [bildirimi](declarations-and-definitions-cpp.md).  
   
  Aşağıdaki yer tutucular ve dil anahtar sözcükleri bildirim tanımlayıcılarıdır:  
   
@@ -32,27 +32,25 @@ Bu konuda açıklanmaktadır *decl tanımlayıcıları* (bildirim tanımlayıcı
   
  *tür tanımlayıcısı*  
   
- *işlevi belirleyici*  
+ *işlev tanımlayıcısı*  
   
  [friend](../cpp/friend-cpp.md)  
   
- [TypeDef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1)  
-  
- [__declspec](../cpp/declspec.md) `(` *genişletilmiş-decl-değiştirici-seq* `)`  
+ [typedef] ( [typedef](http://msdn.microsod) `(` *genişletilmiş-decl-değiştirici-seq* `)`  
   
 ## <a name="remarks"></a>Açıklamalar  
- *Decl tanımlayıcıları* bir bildirimi parçası olan uzun bir dizi *decl tanımlayıcıları* işaretçinin dahil olmayan bir tür adını anlamına veya değiştiricileri başvuru alınabilmesini. Kalan bildirimiyle *bildirimcisi*, sunulan adını içerir.  
+ *Belirticileri* parçasıdır bir bildirimin en uzun dizi *belirticileri* işaretçi içermeden bir tür adını veya başvuru değiştiricilerini alınabilmesini. Bildirimin geri kalanı olan *bildirimci*, sunulan adı içeren.  
   
- Aşağıdaki tabloda dört bildirimleri listeler ve her bildirim 's listeler *decl specifers* ve *bildirimcisi* bileşen ayrı olarak.  
+ Aşağıdaki tabloda dört bildirim listelenmekte ve ardından her bildirimin listeler *decl-specifers* ve *bildirimci* bileşeni ayrı ayrı.  
   
-|Bildirim|*Decl tanımlayıcıları*|`declarator`|  
+|Bildirim|*belirticileri*|`declarator`|  
 |-----------------|------------------------|------------------|  
-|`char *lpszAppName;`|`char`|`*lpszAppName`|  
-|`typedef char * LPSTR;`|`char`|`*LPSTR`|  
-|`const int func1();`|`const int`|`func1`|  
-|`volatile void *pvvObj;`|`volatile void`|`*pvvObj`|  
+|`char *lpszAppName;`|**char**|`*lpszAppName`|  
+|`typedef char * LPSTR;`|**char**|`*LPSTR`|  
+|`const int func1();`|**const int**|`func1`|  
+|`volatile void *pvvObj;`|**geçici bir geçersiz kılma**|`*pvvObj`|  
   
- Çünkü `signed`, `unsigned`, `long`, ve `short` tüm kapsıyor `int`, `typedef` şu anahtar sözcüklerden biri gerçekleştirilecek bir üyesi olması için aşağıdaki ad *bildirimcisi listesi,* ,değil*decl tanımlayıcıları*.  
+ Çünkü **imzalı**, **işaretsiz**, **uzun**, ve **kısa** tüm yaptığından **int**,  **TypeDef** adı bu anahtar sözcüklerden biri üye olmasını alınır *bildirimci listesi* değil *belirticileri*.  
   
 > [!NOTE]
 >  Bir ad tekrar bildirilebileceğinden, yorumlanması geçerli kapsamdaki en yeni bildirime göre yapılır. Tekrar bildirme, adların (özellikle `typedef` adları) derleyici tarafından yorumlanma şeklini etkileyebilir.  

@@ -14,29 +14,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc0904c5e503b60d5d9015e5102b1155016c78a7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a053c837b0a2064a93a019d16856712553bd7a44
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422429"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026571"
 ---
 # <a name="types-of-expressions"></a>İfade Türleri
-C++ ifadeleri birkaç kategoriye ayrılır:  
+C++ deyimleri, birden fazla kategoriye ayrılır:  
   
--   [Birincil ifadeler](../cpp/primary-expressions.md). Diğer tüm ifadeler oluşturulmuş yapı taşları bunlar.  
+-   [Birincil ifadeler](../cpp/primary-expressions.md). Diğer tüm ifadeler doğru biçimlendirilmiş yapı taşları şunlardır.  
   
--   [Sonek ifadeleri](../cpp/postfix-expressions.md). Birincil ifadeler bir operatör tarafından izlenen bunlar — Örneğin, dizi alt simge veya sonek artırma işleci.  
+-   [Sonek ifadeleri](../cpp/postfix-expressions.md). Birincil ifadeler operatör tarafından izlenen bunlar — Örneğin, dizi alt simge veya sonek artırma işleci.  
   
--   [İfadeler birli işleçleri ile oluşturulmuş](../cpp/expressions-with-unary-operators.md). Birli işleçleri deyimde yalnızca bir işlenen hareket.  
+-   [İfadeler, birli işleçleri ile oluşturulmuş](../cpp/expressions-with-unary-operators.md). Birli işleçler yalnızca tek bir işlenen bir ifadede gerçekleştir.  
   
--   [İfadeler ikili işleçleri ile oluşturulmuş](../cpp/expressions-with-binary-operators.md). İkili işleçler bir ifadedeki iki işlenen üzerinde işlem yapar.  
+-   [İfadeleri ile ikili işleçler biçimlendirilmiş](../cpp/expressions-with-binary-operators.md). İkili işleçler bir ifadedeki iki işlenen üzerinde işlem yapar.  
   
--   [Koşullu işleç ifadelerle](../cpp/conditional-operator-q.md). Koşullu işleç Üçlü işlecidir — yalnızca bu tür işlecinde C++ dili — ve üç işlenen alır.  
+-   [Koşullu işleç içeren ifadeler](../cpp/conditional-operator-q.md). Koşullu işlecin bir Üçlü işleçtir — yalnızca bu tür işleci C++ dilinde — ve üç işlenen alır.  
   
--   [Sabit ifadeleri](../cpp/cpp-constant-expressions.md). Sabit ifadeleri tamamen sabit veri oluşturulur.  
+-   [Sabit ifadeler](../cpp/cpp-constant-expressions.md). Sabit ifadeler tamamen sabit veri oluşturulur.  
   
--   [Açık tür dönüşümleri ifadelerle](http://msdn.microsoft.com/en-us/060ad6b4-9592-4f3e-8509-a20ac84a85ae). Açık tür dönüşümleri ya da "atamaları," ifadelerde kullanılabilir.  
+-   [Açık tür dönüşümlü ifadeler](http://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae). Açık tür dönüştürmeleri ya da "atamaları," ifadelerde kullanılabilir.  
   
 -   [İşaretçi-üye işleçli ifadeler](../cpp/pointer-to-member-operators-dot-star-and-star.md).  
   

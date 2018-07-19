@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4179ddae0506d21ca3969559b05c618ab4d73e0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0585396d2cacc2bb41abf364e3d01ca81629146f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846551"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953560"
 ---
 # <a name="allocatorltvoidgt-class"></a>Allocator&lt;void&gt; sınıfı
 
-Türü için Şablon sınıfı ayırıcısı uzmanlaşması `void`, bu bağlamda anlamlı türleri tanımlama.
+Bir türüne şablon sınıf ayırıcı uzmanlığı **void**, bu bağlamda mantıklı türleri tanımlama.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,7 +51,7 @@ class allocator<void> {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu sınıfı açıkça uzmanlaşmış [ayırıcısı](../standard-library/allocator-class.md) türü için *void.* Oluşturucular ve atama işleci Şablon sınıfı için olduğu gibi aynı şekilde davranır, ancak yalnızca şu türleri tanımlar:
+Sınıfı bir şablon sınıfı açıkça uzmanlaşmış [ayırıcı](../standard-library/allocator-class.md) türünün **void**. Oluşturucu ve atama işleci Şablon sınıfı olduğu gibi aynı şekilde davranır, ancak yalnızca şu türleri tanımlar:
 
 - [const_pointer](../standard-library/allocator-class.md#const_pointer).
 
@@ -59,7 +59,7 @@ Sınıf şablonu sınıfı açıkça uzmanlaşmış [ayırıcısı](../standard-
 
 - [value_type](../standard-library/allocator-class.md#value_type).
 
-- [rebind](../standard-library/allocator-class.md#rebind), bir şablon sınıfı iç içe geçmiş.
+- [rebind](../standard-library/allocator-class.md#rebind), iç içe geçmiş Şablon sınıfı.
 
 ## <a name="requirements"></a>Gereksinimler
 

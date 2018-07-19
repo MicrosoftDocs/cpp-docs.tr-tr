@@ -1,5 +1,5 @@
 ---
-title: IRegistrar arabirimi | Microsoft Docs
+title: Iregistrar arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 2/1/2017
 ms.technology:
@@ -25,15 +25,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89d1e9269536ee28f2c8dd29819ff594c89c186b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b6720ef830563e24d887071e1ee1e4a8c31df05c
+ms.sourcegitcommit: bb4488366e4581c561ca1e573a2b99b71d4c6288
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363759"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993574"
 ---
-# <a name="iregistrar-interface"></a>IRegistrar arabirimi
-Bu arabirim atliface.h içinde tanımlanır ve CAtlModule üye işlevleri tarafından gibi dahili olarak kullanılır [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).   
+# <a name="iregistrar-interface"></a>Iregistrar arabirimi
+Bu arabirim atliface.h içinde tanımlanır ve CAtlModule üye işlevleri tarafından dahili olarak gibi kullanılan [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).   
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,7 +41,7 @@ Bu arabirim atliface.h içinde tanımlanır ve CAtlModule üye işlevleri taraf�
 typedef interface IRegistrar IRegistrar;
 ```  
 ## <a name="remarks"></a>Açıklamalar
-Konusuna [kullanarak değiştirilebilir parametreler (kayıt şirketinizin önişlemci)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) daha fazla ayrıntı için.  
+Konusuna [değiştirilebilir parametreler kullanma (kaydedicinin ön işlemcisi)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) daha fazla ayrıntı için.  
 
 ## <a name="members"></a>Üyeler  
   
@@ -112,7 +112,7 @@ virtual HRESULT STDMETHODCALLTYPE StringRegister(
 ```  
   
 ##  <a name="stringunregister"></a>  IRegistrar::StringUnregister
- Belirtilen dize verilerini kaydını siler.  
+ Belirtilen dize verileri kaydını siler.  
   
 ```
 virtualHRESULT STDMETHODCALLTYPE StringUnregister( 
@@ -143,6 +143,6 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
  
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Değiştirilebilir Parametreler Kullanma (Kaydedicinin Ön İşlemcisi)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Modül sınıfları](../../atl/atl-module-classes.md)   
  [Kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md)  

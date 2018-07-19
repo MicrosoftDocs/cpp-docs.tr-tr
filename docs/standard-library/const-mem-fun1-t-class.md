@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5fe5c06dd3017e867e73cf1107e619ec2c1edaf
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 059ad07e50fb6325850d1095940ce084893bf70b
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843801"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966519"
 ---
 # <a name="constmemfun1t-class"></a>const_mem_fun1_t Sınıfı
 
-Sağlayan bir bağdaştırıcı sınıfı bir **const** bir işaretçi bağımsız değişkeni ile hazırlarken ikili işlevi nesnesi olarak çağrılacak tek bir bağımsız değişken üye işlevi.
+İzin veren bir bağdaştırıcı sınıfı bir **const** bir işaretçi bağımsız değişkeni ile hazırlarken bir ikili fonksiyon nesnesi olarak çağrılan tek bir bağımsız değişken alan üye işlevi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,27 +41,27 @@ class const_mem_fun1_t
 
 ### <a name="parameters"></a>Parametreler
 
-`_Pm` Sınıfının üye işlevini gösteren bir işaretçi **türü** işlevi nesnesine dönüştürülecek.
+*_Pm* sınıfının üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
-`_Pleft` **Const** nesnesinin `_Pm` üye işlevi çağrılır.
+*_Pleft* **const** nesnesinin *_Pm* üye işlevi çağrılır.
 
-`right` İçin belirtilen bağımsız değişken `_Pm`.
+*doğru* için belirtilen bağımsız değişken *_Pm*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Uyarlanabilir bir ikili işlevi.
+Uyarlanabilir bir ikili fonksiyon.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, bir kopyasını depolar `_Pm`, sınıfının üye işlevi için bir işaretçi olmalıdır **türü**, bir özel üye nesnesinde. Üye işlevini tanımlar `operator()` döndürme olarak ( **_Pleft** -> \* * Pm) (***sağ**) **const**.
+Şablon sınıfı bir kopyasını depolar *_Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak ( **_Pleft** -> \* * Pm) (***sağ**) **const**.
 
 ## <a name="example"></a>Örnek
 
-Oluşturucusunun `const_mem_fun1_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun` üye işlevleri uyarlamak için kullanılır. Bkz: [mem_fun](../standard-library/functional-functions.md#mem_fun) üye fonksiyonu bağdaştırıcıları kullanma örneği.
+Oluşturucusuna `const_mem_fun1_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun` üye işlevleri uyum sağlamak için kullanılır. Bkz: [mem_fun](../standard-library/functional-functions.md#mem_fun) üye işlevi bağdaştırıcıları kullanmayı gösteren bir örnek.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

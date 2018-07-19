@@ -18,29 +18,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0bb0a23ca0d0c67be86db49c92b6782dd71eee1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 027eb9c91b03501560c7001a2688d7e494154bce
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355013"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953806"
 ---
-# <a name="properties-and-property-pages-classes"></a>Özellikler ve özellik sayfaları sınıfları
-Aşağıdaki sınıfları, özellikleri ve özellik sayfaları destekler:  
+# <a name="properties-and-property-pages-classes"></a>Özellikler ve özellik sayfası sınıfları
+Aşağıdaki sınıflar, özellikler ve özellik sayfaları destekler:  
   
--   [CComDispatchDriver](../atl/reference/atl-typedefs.md#ccomdispatchdriver) alır veya aracılığıyla bir nesnenin özelliklerini ayarlar bir `IDispatch` işaretçi.  
+-   [CComDispatchDriver](../atl/reference/atl-typedefs.md#ccomdispatchdriver) alır veya bir nesnenin özellikleri aracılığıyla ayarlar bir `IDispatch` işaretçi.  
   
--   [CStockPropImpl](../atl/reference/cstockpropimpl-class.md) ATL tarafından desteklenen stok özelliklerini uygular  
+-   [Cstockpropımpl](../atl/reference/cstockpropimpl-class.md) ATL tarafından desteklenen stok özellikleri uygular  
   
--   [IPerPropertyBrowsingImpl](../atl/reference/iperpropertybrowsingimpl-class.md) bir nesnenin özellik sayfaları bilgilerinde erişir.  
+-   [Iperpropertybrowsingımpl](../atl/reference/iperpropertybrowsingimpl-class.md) bilgilerin bir nesnenin özellik sayfalarındaki erişir.  
   
--   [IPersistPropertyBagImpl](../atl/reference/ipersistpropertybagimpl-class.md) bir istemci tarafından sağlanan özellik paketindeki nesnenin özelliklerini depolar.  
+-   [Ipersistpropertybagımpl](../atl/reference/ipersistpropertybagimpl-class.md) bir nesnenin özelliklerinde bir istemci tarafından sağlanan özellik paketi içinde depolar.  
   
--   [IPropertyPageImpl](../atl/reference/ipropertypageimpl-class.md) belirli bir özellik sayfasında bir özellik sayfası içinde yönetir.  
+-   [Ipropertypageımpl](../atl/reference/ipropertypageimpl-class.md) bir özellik sayfası içinde belirli bir özellik sayfası yönetir.  
   
--   [IPropertyPage2Impl](../atl/reference/ipropertypage2impl-class.md) benzer `IPropertyPageImpl`, ancak aynı zamanda bir özellik sayfasında belirli bir özellik seçmek bir istemcinin sağlar.  
+-   [Ipropertypage2ımpl](../atl/reference/ipropertypage2impl-class.md) benzer `IPropertyPageImpl`, ancak bir özellik sayfasında belirli bir özelliği seçmek bir istemci de sağlar.  
   
--   [ISpecifyPropertyPagesImpl](../atl/reference/ispecifypropertypagesimpl-class.md) bir nesne tarafından desteklenen özellik sayfaları CLSID değerleri alır.  
+-   [Ispecifypropertypagesımpl](../atl/reference/ispecifypropertypagesimpl-class.md) nesne tarafından desteklenen özellik sayfaları için CLSID alır.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
@@ -48,6 +48,6 @@ Aşağıdaki sınıfları, özellikleri ve özellik sayfaları destekler:
  [ATL COM Özellik Sayfaları](../atl/atl-com-property-pages.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)   
  [Özellik Eşleme Makroları](../atl/reference/property-map-macros.md)
 

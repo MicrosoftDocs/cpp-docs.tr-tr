@@ -14,27 +14,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ada34aae858d8e29b119fa08d363a0c26013567
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 51da4a44f99c83ba34ec035e77173946d2327fe9
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414600"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953369"
 ---
 # <a name="expressions-c"></a>İfadeler (C++)
-Bu bölümde, C++ ifadeleri açıklanmaktadır. İfadeler sıraları işleçler ve bir veya daha fazla amaçlar için kullanılan işlenenler şunlardır:  
+Bu bölümde, C++ ifadeler açıklanmaktadır. İfadeleri işleçler ve bir veya daha fazla bu amaçlar için kullanılan bir işlenen dizisi vardır:  
   
--   İşlenen arasında bir değer bilgi işlem.  
+-   İşlenen bir değerden hesaplanıyor.  
   
 -   Nesneleri veya işlevleri belirleme.  
   
--   Oluşturma "yan etkiler." (Yan etkileri olan ifade değerlendirmesi dışındaki herhangi bir eylem — Örneğin, bir nesnenin değerini değiştirme.)  
+-   "Yan etkiler" oluşturma (Yan etkisi olan ifade değerlendirmesi dışındaki tüm eylemler — Örneğin, bir nesnenin değerini değiştirme.)  
   
- C++ ' ta işleçleri aşırı ve anlamlarını kullanıcı tanımlı olabilir. Bununla birlikte, bunların önceliklerini ve aldıkları işlenenler sayısı değiştirilemez. Bu bölümde, sözdizimi ve işleçler semantiği aşırı dille verdiği açıklanmaktadır. Ek olarak [ifade türleri](../cpp/types-of-expressions.md) ve [ifade semantikleri](../cpp/semantics-of-expressions.md), aşağıdaki konular ele alınmaktadır:  
+ C++ ' ta işleçleri aşırı yüklenebilir ve bunların anlamlarını açıklayan, kullanıcı tanımlı olabilir. Ancak, öncelik ve işlenenleri yapabilecekleri sayısı değiştirilemez. Bu bölümde, sözdizimi ve semantiği işleçlerinin aşırı diliyle verdiği açıklanmaktadır. Ek olarak [türde ifadeler](../cpp/types-of-expressions.md) ve [ifade semantikleri](../cpp/semantics-of-expressions.md), aşağıdaki konular ele alınmaktadır:  
   
 -   [Birincil ifadeler](../cpp/primary-expressions.md)  
   
--   [Kapsam çözümü işleci](../cpp/scope-resolution-operator.md)  
+-   [Kapsam çözümleme işleci](../cpp/scope-resolution-operator.md)  
   
 -   [Sonek ifadeleri](../cpp/postfix-expressions.md)  
   
@@ -46,22 +46,20 @@ Bu bölümde, C++ ifadeleri açıklanmaktadır. İfadeler sıraları işleçler 
   
 -   [Sabit ifadeleri](../cpp/cpp-constant-expressions.md)  
   
--   [Açık tür dönüşümleri ifadelerle](http://msdn.microsoft.com/en-us/060ad6b4-9592-4f3e-8509-a20ac84a85ae)  
-  
 -   [Atama İşleçleri](../cpp/casting-operators.md)  
   
 -   [Çalışma zamanı türü bilgileri](../cpp/run-time-type-information.md)  
   
- Diğer bölümlerdeki işleçleri konularda:  
+ Diğer bölümlerdeki ilgili konular:  
   
 -   [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
   
 -   [Aşırı yüklenmiş işleçler](../cpp/operator-overloading.md)  
   
--   [TypeId](../windows/typeid-cpp-component-extensions.md)  
+-   [typeid](../windows/typeid-cpp-component-extensions.md)  
   
     > [!NOTE]
-    >  Yerleşik türler için işleç aşırı yüklenemez; davranışlarını önceden tanımlanmış.  
+    >  Yerleşik türler için işleçleri aşırı yüklenemez; davranışlarını önceden tanımlanmıştır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

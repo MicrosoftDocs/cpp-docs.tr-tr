@@ -1,5 +1,5 @@
 ---
-title: ATL HTTP yardımcı programı işlevleri | Microsoft Docs
+title: ATL HTTP yardımcı işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,12 +8,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 476ca29de5a44e8ebb20d53ec0b88834c7b03eea
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 36b0647863076661eb130da1cde694b128f49d47
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363790"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026094"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı işlevleri
 
@@ -21,13 +21,13 @@ Bu işlevler URL'leri işlenmesini destekler.
 
 |||  
 |-|-|  
-|[AtlCanonicalizeUrl](#atlcanonicalizeurl)|Güvenli olmayan karakter ve alanları kaçış sıraları dönüştürme içeren bir URL canonicalizes.|  
-|[AtlCombineUrl](#atlcombineurl)|Bir temel URL'yi ve göreli bir URL tek, Kurallı URL birleştirir.|  
+|[AtlCanonicalizeUrl](#atlcanonicalizeurl)|Güvenli olmayan karakterleri ve boşlukları kaçış sıralarına dönüştürme içeren bir URL canonicalizes.|  
+|[AtlCombineUrl](#atlcombineurl)|Temel URL ile göreli bir URL'yi, kurallı tek bir URL birleştirir.|  
 |[AtlEscapeUrl](#atlescapeurl)|Tüm güvenli olmayan karakterleri kaçış dizilerine dönüştürür.|  
-|[AtlGetDefaultUrlPort](#atlgetdefaulturlport)|Belirli Internet Protokolü veya düzeni ile ilişkili varsayılan bağlantı noktası numarasını alır.|  
-|[AtlIsUnsafeUrlChar](#atlisunsafeurlchar)|Bir karakterin bir URL'de kullanılacak güvenli olup olmadığını belirler.|  
-|[AtlUnescapeUrl](#atlunescapeurl)|Dönüştürür özgün değerlerine karakteri kaçış.|  
-|[RGBToHtml](#rgbtohtml)|Dönüştüren bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) bu renk değerine karşılık gelen HTML metin değeri.|
+|[AtlGetDefaultUrlPort](#atlgetdefaulturlport)|Belirli bir Internet Protokolü veya düzeni ile ilişkili varsayılan bağlantı noktası numarasını alır.|  
+|[AtlIsUnsafeUrlChar](#atlisunsafeurlchar)|Bir karakterin bir URL içinde kullanılmak üzere güvenli olup olmadığını belirler.|  
+|[AtlUnescapeUrl](#atlunescapeurl)|Özgün değerlerine karakterleri kaçış karakterleri dönüştürür.|  
+|[RGBToHtml](#rgbtohtml)|Dönüştürür bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) ilgili renk değerine karşılık gelen HTML metnine değeri.|
 |[SystemTimeToHttpDate](#systemtimetohttpdate)|Sistem saatini HTTP üstbilgileri kullanmak için uygun bir biçimde bir dizeye dönüştürmek için bu işlevi çağırın.|
 
 ## <a name="requirements"></a>Gereksinimler  
@@ -45,31 +45,31 @@ inline BOOL AtlCanonicalizeUrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szUrl`  
+ *szUrl*  
  Getirilecek URL'si.  
   
- `szCanonicalized`  
- Kurallaştırılan URL almak için arabellek çağıran tarafından ayrılmış.  
+ *szCanonicalized*  
+ Kurallaştırılan URL'sini almak için çağırıcı tarafından ayrılan arabelleği.  
   
- `pdwMaxLength`  
- Karakter cinsinden uzunluğu içeren bir değişkeni işaretçi `szCanonicalized`. İşlev başarılı olursa, değişkeni sonlandırma null karakteri de dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluğa sonlandırma null karakteri boşluk dahil olmak üzere arabelleğin bayt cinsinden alır.  
+ *pdwMaxLength*  
+ Karakter cinsinden uzunluğunu içeren bir değişken işaretçisi *szCanonicalized*. İşlev başarılı olursa değişken sondaki null karakter de dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluk alanı sondaki null karakter de dahil olmak üzere arabelleğin bayt cinsinden alır.  
   
- `dwFlags`  
- Bu işlev davranışını denetleme ATL_URL bayraklar. 
+ *CertOpenStore*  
+ Bu işlevin davranışını denetleme ATL_URL bayraklar. 
 
-- `ATL_URL_BROWSER_MODE` Değil kodlamak veya karakter kodunu çözmek sonra "#" veya "?" ve sonunda boşluk sonra kaldırmaz "?". Bu değer belirtilmezse, tüm URL kodlanmış ve sonunda boşluk kaldırılır.
-- `ATL_URL_DECODE` Tüm % XX sıralarının URL ayrıştırılır önce kaçış sıraları dahil olmak üzere karaktere dönüştürür.
-- `ATL_URL_ENCODE_PERCENT` Karşılaştı herhangi yüzde işaretleri kodlar. Varsayılan olarak, yüzde işaretleri kodlanmış değil.
-- `ATL_URL_ENCODE_SPACES_ONLY` Yalnızca boşluk kodlar.
-- `ATL_URL_ESCAPE` Tüm kaçış sıraları (% XX) kendi ilgili karakterlere dönüştürür.
-- `ATL_URL_NO_ENCODE` Güvenli olmayan karakterleri kaçış dizilerine dönüştürmez.
-- `ATL_URL_NO_META` Meta sıraları kaldırmaz (gibi "."ve"...") URL'den. 
+- ATL_URL_BROWSER_MODE desteklemiyor kodlayın veya karakter kodunu çözme sonra: "#" veya "?" ve sonra sondaki boşluk kaldırmaz "?". Bu değer belirtilmezse, URL'nin tamamını kodlanır ve boşluk kaldırılır.
+- ATL_URL_DECODE tüm % XX dizileri URL ayrıştırılmadan önce kaçış dizileri içeren karaktere dönüştürür.
+- ATL_URL_ENCODE_PERCENT kodlar herhangi bir yüzde işaretleri ile karşılaşıldı. Varsayılan olarak, yüzde işaretleri kodlanmaz.
+- ATL_URL_ENCODE_SPACES_ONLY kodlar yalnızca boşlukları.
+- ATL_URL_ESCAPE dönüştürür, karşılık gelen karakterle tüm kaçış dizilerine (% XX).
+- ATL_URL_NO_ENCODE mu güvenli olmayan karakterleri kaçış sıralarına dönüştürme yok.
+- ATL_URL_NO_META kaldırmaz meta dizileri (gibi "."ve"...") URL'sinden. 
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli sürümü gibi davranır [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342) WinINet veya Internet Explorer yüklü olmasını gerektirmez, ancak.  
+ Geçerli sürümü gibi davranır [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342) ancak WinINet veya Internet Explorer yüklenmesini gerektirmez.  
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342)
@@ -93,20 +93,20 @@ inline BOOL AtlCombineUrl(
  *szRelativeUrl*  
  Temel URL göreli URL'si.  
   
- `szBuffer`  
- Kurallaştırılan URL almak için arabellek çağıran tarafından ayrılmış.  
+ *szBuffer*  
+ Kurallaştırılan URL'sini almak için çağırıcı tarafından ayrılan arabelleği.  
   
- `pdwMaxLength`  
- Karakter cinsinden uzunluğu içeren bir değişkeni işaretçi `szBuffer`. İşlev başarılı olursa, değişkeni sonlandırma null karakteri de dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluğa sonlandırma null karakteri boşluk dahil olmak üzere arabelleğin bayt cinsinden alır.  
+ *pdwMaxLength*  
+ Karakter cinsinden uzunluğunu içeren bir değişken işaretçisi *szBuffer*. İşlev başarılı olursa değişken sondaki null karakter de dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluk alanı sondaki null karakter de dahil olmak üzere arabelleğin bayt cinsinden alır.  
   
- `dwFlags`  
- Bu işlev davranışını denetleme bayraklar. Bkz: [AtlCanonicalizeUrl](#atlcanonicalizeurl).  
+ *CertOpenStore*  
+ Bu işlevin davranışını denetleyen bayraklar. Bkz: [AtlCanonicalizeUrl](#atlcanonicalizeurl).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli sürümü gibi davranır [InternetCombineUrl](http://msdn.microsoft.com/library/windows/desktop/aa384355) WinINet veya Internet Explorer yüklü olmasını gerektirmez, ancak.  
+ Geçerli sürümü gibi davranır [InternetCombineUrl](http://msdn.microsoft.com/library/windows/desktop/aa384355) ancak WinINet veya Internet Explorer yüklenmesini gerektirmez.  
   
 ## <a name="atlescapeurl"></a> AtlEscapeUrl
  Tüm güvenli olmayan karakterleri kaçış sıralarına dönüştürmek için bu işlevi çağırın.  
@@ -128,25 +128,25 @@ inline BOOL AtlEscapeUrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszStringIn`  
+ *lpszStringIn*  
  Dönüştürülecek URL'si.  
   
- `lpszStringOut`  
- Çağıran tarafından ayrılan arabellek dönüştürülen URL yazılır.  
+ *lpszStringOut*  
+ Dönüştürülen URL yazılacağı arayana ayrılan arabelleği.  
   
- `pdwStrLen`  
- DWORD değişkeni işaretçi. İşlev başarılı olursa, `pdwStrLen` sonlandırma null karakteri de dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluğa sonlandırma null karakteri boşluk dahil olmak üzere arabelleğin bayt cinsinden alır. Bu yöntem geniş karakter sürümünü kullanırken `pdwStrLen` gereken, karakterlerin bayt sayısını değil sayısını alır.  
+ *pdwStrLen*  
+ DWORD değişken işaretçisi. İşlev başarılı olursa *pdwStrLen* sondaki null karakter de dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluk alanı sondaki null karakter de dahil olmak üzere arabelleğin bayt cinsinden alır. Bu yöntem, geniş karakter sürümünü kullanırken *pdwStrLen* karakter gereken bayt sayısını değil sayısını alır.  
   
- `dwMaxLength`  
- Arabellek boyutu `lpszStringOut`.  
+ *dwMaxLength*  
+ Arabellek boyutu *lpszStringOut*.  
   
- `dwFlags`  
- Bu işlev davranışını denetleme ATL_URL bayraklar. Bkz: [ATLCanonicalizeUrl](#atlcanonicalizeurl) olası değerler için.  
+ *CertOpenStore*  
+ Bu işlevin davranışını denetleme ATL_URL bayraklar. Bkz: [ATLCanonicalizeUrl](#atlcanonicalizeurl) için olası değerler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
-## <a name="atlgetdefaulturlport"></a> 
+## <a name="atlgetdefaulturlport"></a> AtlGetDefaultUrlPort
  Belirli bir Internet protokolü veya düzeni ile ilişkili varsayılan bağlantı noktası numarasını almak için bu işlevi çağırın.  
   
 ```  
@@ -158,7 +158,7 @@ inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();
  [ATL_URL_SCHEME](atl-url-scheme-enum.md) bağlantı noktası numarasını almak istediğiniz düzeni tanımlayan değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- [ATL_URL_PORT](atl-typedefs.md#atl_url_port) düzeni tanınmıyor belirtilen düzeni veya ATL_URL_INVALID_PORT_NUMBER ile ilişkili.  
+ [ATL_URL_PORT](atl-typedefs.md#atl_url_port) düzeni tanınmadığında ATL_URL_INVALID_PORT_NUMBER ve belirtilen şema ile ilişkili.  
 
 ## <a name="atlisunsafeurlchar"></a> AtlIsUnsafeUrlChar
  Bir karakterin URL'de kullanılmak üzere güvenli olup olmadığını öğrenmek için bu işlevi çağırın.  
@@ -168,14 +168,14 @@ inline BOOL AtlIsUnsafeUrlChar(char chIn) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `chIn`  
- Güvenliğiniz için sınanacak karakter.  
+ *şirketinden chIn*  
+ Güvenliğiniz için test edilecek karakter.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** giriş karakter güvenli, ise **FALSE** Aksi takdirde.  
+ Znak na vstupu aksi güvenli, FALSE ise TRUE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- URL'ler kullanılmamalıdır karakterleri bu işlevi kullanılarak sınanabilir ve kullanılarak dönüştürülen [AtlCanonicalizeUrl](#atlcanonicalizeurl).  
+ URL'leri kullanılmamalıdır karakter kullanarak bu işlevi test edilebilir ve kullanılarak dönüştürülüp [AtlCanonicalizeUrl](#atlcanonicalizeurl).  
   
 ## <a name="atlunescapeurl"></a> AtlUnescapeUrl
  Kaçış karakterlerini orijinal değerlerine döndürmek için bu işlevi çağırın.  
@@ -195,26 +195,26 @@ inline BOOL AtlUnescapeUrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszStringIn`  
+ *lpszStringIn*  
  Dönüştürülecek URL'si.  
   
- `lpszStringOut`  
- Çağıran tarafından ayrılan arabellek dönüştürülen URL yazılır.  
+ *lpszStringOut*  
+ Dönüştürülen URL yazılacağı arayana ayrılan arabelleği.  
   
- `pdwStrLen`  
- DWORD değişkeni işaretçi. İşlev başarılı olursa, değişkeni sonlandırma null karakteri de dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluğa sonlandırma null karakteri boşluk dahil olmak üzere arabelleğin bayt cinsinden alır.  
+ *pdwStrLen*  
+ DWORD değişken işaretçisi. İşlev başarılı olursa değişken sondaki null karakter de dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişkeni gerekli uzunluk alanı sondaki null karakter de dahil olmak üzere arabelleğin bayt cinsinden alır.  
   
- `dwMaxLength`  
- Arabellek boyutu `lpszStringOut`.  
+ *dwMaxLength*  
+ Arabellek boyutu *lpszStringOut*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından uygulanan dönüştürme işlemi ters çevirir [AtlEscapeUrl](#atlescapeurl).  
+ Tarafından uygulanan dönüştürme işlemi tersine çevirir [AtlEscapeUrl](#atlescapeurl).  
   
 ## <a name="rgbtohtml"></a> RGBToHtml
-Dönüştüren bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) bu renk değerine karşılık gelen HTML metin değeri.  
+Dönüştürür bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) ilgili renk değerine karşılık gelen HTML metnine değeri.  
   
 ```  
 bool inline RGBToHtml(  
@@ -224,20 +224,20 @@ bool inline RGBToHtml(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `color`  
- RGB renk değeri.  
+ *Renk*  
+ Bir RGB renk değeri.  
   
- `pbOut`  
- HTML renk değeri metin almak için arabellek çağıran tarafından ayrılmış. Arabellek alanı null Sonlandırıcı alanı dahil olmak üzere en az 8 karakter olmalıdır).  
+ *pbOut*  
+ HTML renk değeri metnini almak için çağırıcı tarafından ayrılan arabelleği. Arabellek alanı için null sonlandırıcıyı ortasının dahil olmak üzere en az 8 karakter olmalıdır).  
   
  *nBuffer*  
- (Null Sonlandırıcı alanı dahil) arabelleğin bayt cinsinden boyutu.  
+ (Null sonlandırıcıyı ortasının dahil) arabelleğin bayt cinsinden boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- 2 basamak her rengi kırmızı, yeşil ve mavi bileşenlerden biri kullanılarak 6 rakamlı onaltılık değeri arkasından pound işareti HTML renk değeridir (örneğin, #FFFFFF beyaz).  
+ Her bir rengin kırmızı, yeşil ve mavi bileşenlerinin için 2 basamak kullanarak 6 basamaklı bir onaltılık değer tarafından izlenen bir diyez işareti HTML renk değeridir (örneğin #FFFFFF beyaz).  
   
 ## <a name="systemtimetohttpdate"></a> SystemTimeToHttpDate
 Sistem saatini HTTP üstbilgileri kullanmak için uygun bir biçimde bir dizeye dönüştürmek için bu işlevi çağırın.  
@@ -249,11 +249,11 @@ inline void SystemTimeToHttpDate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `st`  
- Bir HTTP biçim dizesi alınabilmesi için sistem saati.  
+ *St*  
+ Bir HTTP biçim dizesi alınması için sistem saati.  
   
  *strTime*  
- RFC 2616'da tanımlanan HTTP tarih saat almak için bir dize değişkeni bir başvuru ([http://www.ietf.org/rfc/rfc2616.txt](http://www.ietf.org/rfc/rfc2616.txt)) ve RFC 1123 ([http://www.ietf.org/rfc/rfc1123.txt](http://www.ietf.org/rfc/rfc1123.txt)).  
+ RFC 2616'da tanımlanan HTTP tarih saat almak için bir dize değişkeni başvuru ([http://www.ietf.org/rfc/rfc2616.txt](http://www.ietf.org/rfc/rfc2616.txt)) ve RFC 1123 ([http://www.ietf.org/rfc/rfc1123.txt](http://www.ietf.org/rfc/rfc1123.txt)).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../../atl/active-template-library-atl-concepts.md)   

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 829b3c90acb089bd91d71c498df5906fff919f22
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6dbd9a921194146e260eb79f5266311caa3d0300
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379479"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026201"
 ---
 # <a name="windowplacement-structure"></a>WINDOWPLACEMENT Yapısı
-`WINDOWPLACEMENT` Yapısı ekranında bir pencere yerleşimi hakkında bilgi içeren **.**  
+`WINDOWPLACEMENT` Yapı ekranında bir pencere yerleşimini hakkında bilgi içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,52 +40,52 @@ typedef struct tagWINDOWPLACEMENT {     /* wndpl */
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *uzunluğu*  
- Yapısı bayt cinsinden uzunluğu belirtir **.**  
+*Uzunluğu*  
+Yapının bayt cinsinden uzunluğunu belirtir.  
   
- `flags`  
- Simge durumuna küçültülmüş pencereyi ve pencere geri yüklenen yöntemi konumunu denetlemek bayrakları belirtir. Bu üye birini veya her ikisini aşağıdaki bayraklar olabilir:  
+*bayrakları*  
+Simge durumuna küçültülmüş pencereyi ve pencereyi geri yüklendi yöntemi konumunu denetim bayrakları belirtir. Bu üye, birini veya ikisini de aşağıdaki bayraklar olabilir:  
   
-- **WPF_SETMINPOSITION** x - ve y-konumlarını simge durumuna küçültülmüş pencereyi belirtilebilir belirtir **.** Bu bayrak olmalıdır koordinatları ayarlanmış olmadığını belirtilen **ptMinPosition** üyesi.  
+ - X - ve y-konumlarını simge durumuna küçültülmüş pencereyi belirtilebilir WPF_SETMINPOSITION belirtir. Bu bayrak olmalıdır koordinatları ayarlanıp ayarlanmadığını belirtilen `ptMinPosition` üyesi.  
+      
+ - Geri yüklenen pencere, simge önce olup olmadığını, ekranı bağımsız olarak ekranı, WPF_RESTORETOMAXIMIZED belirtir. Bu ayar yalnızca pencereyi geri sonraki kez geçerli değil. Varsayılan geri yükleme davranışını değiştirmez. Bu bayrağı yalnızca sw_showmınımızed değeri için belirtildiğinde geçerlidir `showCmd` üyesi.  
   
-- **WPF_RESTORETOMAXIMIZED** geri yüklenen pencere, simge önce olup olmadığını, ekranı bağımsız olarak ekranı olduğunu belirtir. Bu ayar yalnızca pencere geri sonraki zaman geçerlidir. Varsayılan geri yükleme davranışını değiştirmez. Yalnızca geçerli olduğunda bu bayrak olan **SW_SHOWMINIMIZED** değeri için belirtilen **showCmd** üyesi.  
+*showCmd*  
+Pencerenin geçerli durumunu göster belirtir. Bu üye, aşağıdaki değerlerden biri olabilir:  
   
- *showCmd*  
- Pencerenin geçerli durumunu göster belirtir. Bu üye aşağıdaki değerlerden biri olabilir:  
+ - SW_HIDE penceresini gizler ve başka bir pencereye etkinleştirme geçirir.  
+      
+ - SW_MINIMIZE belirtilen pencereye en aza indirir ve sistemin listesinde en üst düzey penceresini etkinleştirir.  
+      
+ - SW_RESTORE etkinleştirir ve bir pencere görüntüler. Pencereyi simge durumuna küçültülmüş ya da tam ekran, Windows, onun özgün boyutunu ve konumunu (SW_SHOWNORMAL ile aynı) geri yükler.  
+      
+ - SW_SHOW bir pencereyi etkinleştirir ve geçerli boyutunu ve konumunu içinde görüntüler.  
+      
+ - Da sw_showmaxımızed bir pencereyi etkinleştirir ve kaplamış görüntüler.  
+      
+ - Sw_showmınımızed bir pencereyi etkinleştirir ve simge olarak görüntüler.  
+      
+ - SW_SHOWMINNOACTIVE simge olarak bir pencere görüntüler. Şu anda etkin olan pencerenin etkin kalır.  
+      
+ - SW_SHOWNA geçerli durumunda bir pencere görüntüler. Şu anda etkin olan pencerenin etkin kalır.  
+      
+ - SW_SHOWNOACTIVATE, en son boyut ve konum bir pencere görüntüler. Şu anda etkin olan pencerenin etkin kalır.  
+      
+ - SW_SHOWNORMAL etkinleştirir ve bir pencere görüntüler. Pencereyi simge durumuna küçültülmüş ya da tam ekran, Windows, onun özgün boyutunu ve konumunu (SW_RESTORE ile aynı) geri yükler.  
   
-- **SW_HIDE** penceresini gizler ve başka bir pencere için etkinleştirme geçirir.  
+*ptMinPosition*  
+Simge durumuna küçültülmüş pencerenin sol üst köşesinin konumunu belirtir.  
   
-- **SW_MINIMIZE** belirtilen pencere en aza indirir ve üst düzey pencere sistemin listesinde etkinleştirir.  
+*ptMaxPosition*  
+Penceresi büyütüldüğünde pencerenin sol üst köşesinin konumunu belirtir.  
   
-- **SW_RESTORE** Activates ve bir pencere görüntüler. Pencereyi simge durumuna küçültülmüş veya ekranı, Windows, özgün boyutunu ve konumunu geri yükler (aynı **SW_SHOWNORMAL**).  
-  
-- **SW_SHOW** bir pencere etkinleştirir ve onun geçerli boyutunu ve konumunu görüntüler.  
-  
-- **SW_SHOWMAXIMIZED** bir pencere etkinleştirir ve kaplamış görüntüler.  
-  
-- **SW_SHOWMINIMIZED** bir pencere etkinleştirir ve simge olarak görüntüler.  
-  
-- **SW_SHOWMINNOACTIVE** bir pencereyi simge olarak görüntüler. Şu anda etkin olan penceresi etkin kalır.  
-  
-- **SW_SHOWNA** geçerli durumunda bir pencere görüntüler. Şu anda etkin olan penceresi etkin kalır.  
-  
-- **SW_SHOWNOACTIVATE** bir pencere, en son boyutunu ve konumunu görüntüler. Şu anda etkin olan penceresi etkin kalır.  
-  
-- **SW_SHOWNORMAL** Activates ve bir pencere görüntüler. Pencereyi simge durumuna küçültülmüş veya ekranı, Windows, özgün boyutunu ve konumunu geri yükler (aynı **SW_RESTORE**).  
-  
- *ptMinPosition*  
- Simge durumuna küçültülmüş pencerenin sol üst köşesinin konumunu belirtir.  
-  
- `ptMaxPosition`  
- Pencere ekranı pencerenin sol üst köşesinin konumunu belirtir.  
-  
- *rcNormalPosition*  
- Pencereyi normal (geri yüklenen) konumda olduğunda pencerenin koordinatları belirtir.  
+*rcNormalPosition*  
+Pencereyi normal (geri) konumda olduğunda pencerenin koordinatları belirtir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winuser.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CWnd::SetWindowPlacement](../../mfc/reference/cwnd-class.md#setwindowplacement)
 

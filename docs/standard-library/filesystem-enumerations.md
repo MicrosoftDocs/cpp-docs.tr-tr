@@ -1,5 +1,5 @@
 ---
-title: '&lt;dosya sistemi&gt; numaralandırmalar | Microsoft Docs'
+title: '&lt;dosya sistemi&gt; sabit listeleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,24 +21,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d876d1005e5044a6be6511482d3e3043b580adcd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a8d933c80aa42ef9b954b6ae498632ab9835cb3d
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846330"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39025945"
 ---
-# <a name="ltfilesystemgt-enumerations"></a>&lt;dosya sistemi&gt; numaralandırmaları
+# <a name="ltfilesystemgt-enumerations"></a>&lt;dosya sistemi&gt; sabit listeleri
 
-Bu konuda dosya sistemi üstbilgi numaralandırmaları belgeler.
+Bu konuda, dosya sistemi üst bilgisindeki numaralandırmalar belgeler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<Deneysel/filesystem > **Namespace:** std::experimental::filesystem
+**Başlık:** \<Deneysel/dosya sistemi > **Namespace:** std::experimental::filesystem
 
 ## <a name="copy_options"></a>  copy_options
 
-İle birlikte kullanılan bit maskesi değerleri numaralandırması [kopya](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) ve [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) işlevleri davranışı belirtin.
+İle kullanılan bit maskesi değerlerinin numaralandırması [kopyalama](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) ve [copy_file](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) davranışını belirtmek için işlev.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -61,21 +61,21 @@ enum class copy_options {
 
 |`Name`|Açıklama|
 |------------|-----------------|
-|`none`|Varsayılan davranış için işlem gerçekleştirilemiyor.|
-|`skip_existing`|Dosya zaten mevcutsa kopyalamayın bir hata raporu gönderme.|
-|`overwrite_existing`|Zaten varsa bu dosyanın üzerine.|
-|`update_existing`|Zaten varsa ve değiştirme eski bir dosyanın üzerine yazın.|
-|`recursive`|Yinelemeli olarak dizinler ve içeriklerini kopyalayın.|
-|`copy_symlinks`|Bunların işaret dosyaları kopyalamak yerine sembolik bağlantılar olarak sembolik bağlantılar kopyalayın.|
-|`skip_symlinks`|Sembolik bağlantılar yoksay.|
-|`directories_only`|Yalnızca dizinlerini yineleme, dosyaları yoksayar.|
-|`create_symlinks`|Dosyaları kopyalamak yerine sembolik bağlantılar olun. Hedef geçerli dizin olduğu sürece bir mutlak yol kaynak yolu olarak kullanılmalıdır.|
-|`create_hard_links`|Dosyaları kopyalamak yerine sabit bağlantıları olun.|
+|`none`|Varsayılan davranışı için işlemi gerçekleştirin.|
+|`skip_existing`|Dosya zaten varsa, kopyalamayın bir hata bildirmez.|
+|`overwrite_existing`|Zaten varsa dosyasının üzerine yazın.|
+|`update_existing`|Zaten var ve değişiklik eski dosyasının üzerine yazın.|
+|`recursive`|Yinelemeli olarak alt dizinleri ve içeriklerini kopyalayın.|
+|`copy_symlinks`|Sembolik bağlantılar, bunlar üzerine gelin dosyaları kopyalamak yerine sembolik bağlantıları olarak kopyalayın.|
+|`skip_symlinks`|Sembolik bağlantıları yoksayar.|
+|`directories_only`|Yalnızca dizinleri yineleme yapma, dosyaları yoksayar.|
+|`create_symlinks`|Dosyaları kopyalamak yerine simgesel bağlantılar olun. Geçerli dizin hedef olmadığı sürece kaynak yolu mutlak bir yol kullanılması gerekir.|
+|`create_hard_links`|Dosyaları kopyalamak yerine sabit bağlantılar olun.|
 
 
 ## <a name="directory_options"></a> directory_options
 
-Dizinleri sembolik bağlantılar izleyin mi, yoksa bunları yoksaymak için belirtir.
+Sembolik bağlantılar dizinleri takip etmek veya bunların yoksayılması için belirtir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -90,12 +90,12 @@ enum class directory_options {
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`none`|Varsayılan davranış: dizinlere sembolik bağlantılar yoksay. İzin reddedildi bir hatadır.|
-|`follow_directory_symlink`|Sembolik bağlantılar dizinleri gerçek dizinleri olarak kabul eder.|
+|`none`|Varsayılan davranış: dizinleri sembolik bağlantıları yoksayar. İzin reddedildi; bir hatadır.|
+|`follow_directory_symlink`|Sembolik bağlantılar dizinleri gerçek dizin kabul eder.|
 
 ## <a name="file_type"></a>  file_type
 
-Dosya türleri için numaralandırması. Normal, dizin, not_found ve bilinmeyen değerleri desteklenir.
+Dosya türleri için bir sabit listesi. Desteklenen normal, dizin, not_found ve bilinmeyen değerlerdir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -118,20 +118,20 @@ enum class file_type {
 
 |Ad|Değer|Açıklama|
 |----------|-----------|-----------------|
-|`not_found`|-1|Var olmayan bir dosyayı temsil eder.|
-|`none`|0|Type özniteliği olan bir dosyayı temsil eder. (Desteklenmez.)|
-|`regular`|1.|Geleneksel disk dosyası temsil eder.|
+|`not_found`|-1|Mevcut bir dosyayı temsil eder.|
+|`none`|0|Hiçbir tür özniteliği olan bir dosyayı temsil eder. (Desteklenmiyor.)|
+|`regular`|1.|Geleneksel disk dosyasını temsil eder.|
 |`directory`|2|Bir dizin temsil eder.|
-|`symlink`|3|Sembolik bağlantıyı temsil eder. (Desteklenmez.)|
-|`block`|4|Bir blok özel dosyası UNIX tabanlı sistemlerde temsil eder. (Desteklenmez.)|
-|`character`|5|Bir özel karakter dosyası UNIX tabanlı sistemlerde temsil eder. (Desteklenmez.)|
-|`fifo`|6|UNIX tabanlı sistemlerde FIFO dosyayı temsil eder. (Desteklenmez.)|
-|`socket`|7|UNIX tabanlı sistemlerde yuvasını temsil eder. (Desteklenmez.)|
-|`unknown`|8|Durumu belirlenemiyor bir dosyayı temsil eder.|
+|`symlink`|3|Sembolik bağlantıyı temsil eder. (Desteklenmiyor.)|
+|`block`|4|UNIX tabanlı sistemlerde bir blok özel dosyasını temsil eder. (Desteklenmiyor.)|
+|`character`|5|UNIX tabanlı sistemlerde bir özel karakter dosyasını temsil eder. (Desteklenmiyor.)|
+|`fifo`|6|Bir FIFO dosyasını UNIX tabanlı sistemlerde temsil eder. (Desteklenmiyor.)|
+|`socket`|7|Bir yuva UNIX tabanlı sistemlerde temsil eder. (Desteklenmiyor.)|
+|`unknown`|8|Durumu belirlenemediğinden bir dosyayı temsil eder.|
 
 ## <a name="perms"></a>  izinleri
 
-Dosya izinleri bayrakları. Aslında "readonly" değerleri desteklenir ve tüm. Bir salt okunur dosya için hiçbiri * _write BITS ayarlanır. Aksi takdirde `all` bit (0x0777) ayarlanır.
+Dosya izinleri bayrakları. Desteklenen değerler şunlardır: temelde "salt okunur" ve tümü. Bir salt okunur dosya için hiçbir * _write bit ayarlanır. Aksi takdirde `all` (0x0777) bitinin ayarlanmasıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 

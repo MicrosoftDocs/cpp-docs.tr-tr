@@ -15,50 +15,47 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2fb459c10f7ead6960760c8d02b9a471a7b8f6c2
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: e53f2dfd0181b85efbc71defbc528d452d32b4dd
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255999"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953855"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM Masaüstü bileşenleri
-ATL başvurusu Etkin Şablon kitaplığı (ATL), Bileşen Nesne Modeli (COM) nesneleri programlama basitleştirmek şablona dayalı C++ sınıfları kümesi belgeler. ATL tam olarak yararlanmak için COM çalışma aşina kullanmamanız önerilir.  
+Etkin Şablon kitaplığı (ATL), Bileşen Nesne Modeli (COM) nesneleri programlamayı kolaylaştıran şablon tabanlı C++ sınıfları kümesi ATL başvuru belgeleri. ATL tam olarak yararlanmak için bir bilgiye sahip olunduğunu COM önemle tavsiye edilir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [ATL Sınıfına Genel Bakış](../atl/atl-class-overview.md)  
- Kategorilere göre düzenlenmiş ATL sınıfları kısa açıklamaları ve bağlantılar sağlar.  
+ Bağlantılar ve kısa açıklamaları kategorilere göre düzenlenmiş ATL sınıfları sağlar.  
   
  [ATL Sınıfları ve Yapıları](../atl/reference/atl-classes.md)  
- Sınıflar ve yapılar alfabetik olarak düzenlenmiş başvuru bilgileri sağlar.  
+ Sınıflar ve yapılar alfabetik olarak düzenlenmiş başvuru malzemesi sağlar.  
   
  [ATL İşlevleri](../atl/reference/atl-functions.md)  
- Başvuru malzemesinde alfabetik olarak düzenlenmiş genel işlevleri sağlar. İşlevler kategorilere göre düzenlemeye yönelik konuları içerir.  
+ Alfabetik olarak düzenlenmiş genel işlevlerde başvuru malzemesi sağlar. İşlevler kategorilere göre düzenlemeye konularını içerir.  
   
  [ATL Genel Değişkenler](../atl/reference/atl-global-variables.md)  
- Alfabetik olarak düzenlenmiş genel değişkenler hakkında başvuru bilgileri sağlar.  
+ Alfabetik olarak düzenlenmiş genel değişkenlere başvuru malzemesi sağlar.  
   
  [ATL Makroları](../atl/reference/atl-macros.md)  
- Başvuru malzemesinde alfabetik olarak düzenlenmiş makroları sağlar. Makrolar kategorilere göre düzenlemeye yönelik konuları içerir.  
+ Alfabetik olarak düzenlenmiş makroları başvuru malzemesi sağlar. Makroları kategorilere göre düzenlemeye konularını içerir.  
   
- [ATL tür tanımları](../atl/reference/atl-typedefs.md)  
- Alfabetik olarak düzenlenmiş tür tanımları başvuru bilgileri sağlar  
+ [ATL Tür tanımları](../atl/reference/atl-typedefs.md)  
+ Alfabetik olarak düzenlenmiş tür tanımları üzerinde başvuru malzemesi sağlar  
   
  [Çalışan Modeli](../atl/reference/worker-archetype.md)  
- ATL çalışan archetype bağlantılar sağlar.  
-  
- [Artık kullanılmayan ATL konuları](http://msdn.microsoft.com/en-us/7af0223d-148e-4a4c-bf9c-3e916a3b67ec)  
- Başvuru malzemesinde sınıfları, makroları ve artık kullanılmayan veya kullanım dışı bırakılan işlevler sağlar.  
+ Bir ATL çalışan modeli bağlantılar sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [ATL](../atl/active-template-library-atl-concepts.md)  
- Etkin Şablon kitaplığı (ATL) kullanarak programı konuları verilmektedir.  
+ Etkin Şablon kitaplığı (ATL) kullanarak programlama hakkında konuları sağlar.  
   
  [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
- Bir denetimin oluşturulmasını müşteri adayları ve bazı ATL temelleri işleminde gösterir.  
+ Bir denetimin oluşturulmasını müşteri adayları ve işleminde bazı ATL temelleri gösterir.  
   
  [ATL örnekleri](../visual-cpp-samples.md)  
- ATL COM nesneleri yazmak için nasıl kullanılacağını gösteren örnek kod.  
+ ATL COM nesneleri yazmak için nasıl kullanılacağını gösteren örnek kodu.  
   
  [OLE DB Şablonları](../data/oledb/ole-db-templates.md)  
- OLE DB Tüketici ve sağlayıcı şablonları için başvuru materyallerini birçok yaygın olarak kullanılan OLE DB arabirimlerini şablon sınıfları kümesi sağlar.  
+ OLE DB Tüketici ve sağlayıcı şablonları için başvuru materyalleri pek çok yaygın olarak kullanılan OLE DB arabirimi uygulayan bir şablon sınıf kümesi sağlar.  

@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1886a1da667ed038e677c6dd3395058ecd13078
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f8e45320c1dd0a3358d19bf3bd0b83a56a841723
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855298"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39027056"
 ---
 # <a name="underflowerror-class"></a>underflow_error Sınıfı
 
-Sınıfı, bir aritmetik underflow bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.
+Sınıfı, bir aritmetik taşma bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,7 +41,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tarafından döndürülen değer [ne](../standard-library/exception-class.md) bir kopyası **ileti**`.`[veri](../standard-library/basic-string-class.md#data).
+Tarafından döndürülen değer [ne](../standard-library/exception-class.md) bir kopyasıdır **ileti**`.`[veri](../standard-library/basic-string-class.md#data).
 
 ## <a name="example"></a>Örnek
 
@@ -77,6 +77,6 @@ Type: class std::underflow_error
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<stdexcept > üyeleri](http://msdn.microsoft.com/en-us/7b6b0a73-916e-44aa-9a3f-f5b6b3ce98e6)<br/>
+[\<stdexcept > üyeleri](http://msdn.microsoft.com/7b6b0a73-916e-44aa-9a3f-f5b6b3ce98e6)<br/>
 [runtime_error Sınıfı](../standard-library/runtime-error-class.md)<br/>
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

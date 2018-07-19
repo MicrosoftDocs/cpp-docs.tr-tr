@@ -17,21 +17,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f46d7297f1f66ac1eccb08fba1dff2a897d54e2b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 69caa94136268ef29258b11b324dbda86e3cf270
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355626"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953710"
 ---
 # <a name="object-safety-classes"></a>Nesne güvenliği sınıfları
 Aşağıdaki sınıftan nesne güvenliği için destek sağlar:  
   
--   [IObjectSafetyImpl](../atl/reference/iobjectsafetyimpl-class.md) başlatma için güvenli veya komut dosyası için güvenli olarak işaretlenmiş bir nesne sağlar.  
+-   [Iobjectsafetyımpl](../atl/reference/iobjectsafetyimpl-class.md) bir nesne başlatma için güvenli veya komut dosyası için güvenli olarak işaretlenmesini sağlar.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

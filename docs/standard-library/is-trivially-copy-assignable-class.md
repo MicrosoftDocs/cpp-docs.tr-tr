@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c36808d375dd774286c3663a02fdc308cc4b2790
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9f7c4c748d7328f534aebfb2133c72635bbdc36f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857512"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953972"
 ---
 # <a name="istriviallycopyassignable-class"></a>is_trivially_copy_assignable sınıfı
 
-Türü bir önemsiz copy atama işleci olup olmadığını sınar.
+Türü, Önemsiz kopya atama işlecine sahip olup olmadığını test eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,13 +36,13 @@ struct is_trivially_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` false tuttuğu bir önemsiz copy atama işleci, aksi takdirde sahip bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *T* false tuttuğu Önemsiz kopya atama işlecine, aksi takdirde sahip bir sınıftır.
 
-Bir sınıf için bir atama Oluşturucusu `T` , örtük olarak sağlanır, sınıf deyimle `T` sınıfı hiçbir sanal işleve sahip `T` hiçbir sanal temellerine sahip, sınıf türü tüm statik olmayan veri üyeleri sınıflarını Önemsiz sahip atama işleçleri ve sınıf türü dizisi tüm statik olmayan veri üyeleri sınıflarını Önemsiz atama işleçleri sahiptir.
+Bir sınıf için bir atama Oluşturucu *T* , sınıf, örtük olarak sağlanan Önemsiz olduğundan *T* sahip sanal işlev yok, sınıf *T* sahip hiçbir sanal tabanları olan sınıfları tüm statik olmayan veri üyeleri sınıf türünün basit atama işleçleri, ve önemsiz atama işleçleri dizi sınıf türünde tüm statik olmayan veri üyelerinin sınıflarını sahiptir.
 
 ## <a name="requirements"></a>Gereksinimler
 

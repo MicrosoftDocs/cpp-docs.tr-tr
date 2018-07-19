@@ -18,21 +18,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cde92ee56e51a86acbfb7e459571291bc3cae76c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b3227ebd4767bd7639bb5e5d8d5a1c73e26079dc
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356967"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953427"
 ---
 # <a name="queryinterface"></a>QueryInterface
-Tarafından bir nesne express statik olarak (Bu örneği oluşturulmadan önce) sağladığı işlevselliğe mekanizmaları olsa da, temel COM mekanizması kullanmaktır **IUnknown** adlı bir yöntem [QueryInterface ](http://msdn.microsoft.com/library/windows/desktop/ms682521).  
+Bir nesne express statik olarak (Bu örneği oluşturulmadan) sağladığı işlevsellik mekanizmaları olsa da, temel COM mekanizması kullanmaktır `IUnknown` adlı bir yöntem [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521).  
   
- Her arabirimi türetilir **IUnknown**, her arabirim uygulaması nedenle `QueryInterface`. Uygulaması bağımsız olarak, bu yöntem için arayan bir işaretçi istediği arabirimi IID kullanılarak bir nesneyi sorgular. Nesne bu arabirim destekliyorsa `QueryInterface` de çağrılırken arayüzü için bir işaretçi alır `AddRef`. Aksi takdirde, döndürür **E_NOINTERFACE** hata kodu.  
+ Her arabirimi türetilir `IUnknown`her arabirim uygulaması vardır. Bu nedenle `QueryInterface`. Uygulama ne olursa olsun, bu yöntem bir işaretçi kendisine çağıran istediği arabirimi Laboratuvardaki kullanarak nesneyi sorgular. Nesne bu arabirimi destekliyorsa `QueryInterface` arabirim işaretçisi alır. Ayrıca çağrılırken `AddRef`. Aksi takdirde e_noınterface hata kodu döndürür.  
   
- Uyma gerekir Not [başvuru sayımı](../atl/reference-counting.md) kuralları her zaman. Çağırırsanız **sürüm** başvuru sayısı sıfır düşürmek için bir arabirim işaretçisi üzerinde bu işaretçiyi yeniden kullanmamalısınız. Bazen bir nesneye zayıf bir başvuru elde etmeniz gerekebilir (diğer bir deyişle, başvuru sayımı artırmadan gösteren bir işaretçi arabirimlerinden birini elde etmek ister misiniz), ancak bunu çağırarak yapmak için kabul edilebilir değil `QueryInterface` arkasından  **Yayın**. Bu tür bir şekilde elde işaretçi geçersiz ve kullanılmamalıdır. Bu daha kolay ne zaman görünür olur [_ATL_DEBUG_INTERFACES](reference/debugging-and-error-reporting-macros.md#_atl_debug_interfaces) tanımlanır, bu makrosu tanımlama bulma başvuru sayım hataları için kullanışlı bir yol gelir.  
+ Uyma gerekir Not [başvuru sayımı](../atl/reference-counting.md) kuralları her zaman. Eğer `Release` başvuru sayısı sıfır değerine düşürmek için bir arabirim işaretçisi üzerinde Bu işaretçi yeniden kullanmamanız gerekir. Bazen bir nesnenin zayıf bir başvuru elde etmeniz gerekebilir (diğer bir deyişle, başvuru sayısını artırmadan arabirimlerinden birini bir işaretçi alma iyi olabilir), ancak bunu çağırarak yapmak için kabul edilebilir değil `QueryInterface` ardından `Release`. Böyle bir şekilde elde edilen işaretçi, geçersiz ve kullanılmamalıdır. Bu daha kolay olduğunda görünür olur [_ATL_DEBUG_INTERFACES](reference/debugging-and-error-reporting-macros.md#_atl_debug_interfaces) bu makrosu tanımlama bulma başvuru sayım hataları için kullanışlı bir yol, bu nedenle, tanımlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [COM giriş](../atl/introduction-to-com.md)   
- [QueryInterface: bir nesneyi gezinme](http://msdn.microsoft.com/library/windows/desktop/ms687230)
+ [COM'a giriş](../atl/introduction-to-com.md)   
+ [QueryInterface: bir nesne içinde gezinme](http://msdn.microsoft.com/library/windows/desktop/ms687230)
 

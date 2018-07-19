@@ -16,45 +16,46 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d71427c7176d8448d861c6dd7602b6bc91941737
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fef56154f34f645b279ffccd99915d366388cb06
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026708"
 ---
 # <a name="c-constant-expressions"></a>C++ Sabit İfadeleri
-A *sabit* değer değişmez bir olduğundan. C++, nesnenin değiştirilmesi ve o hedefi zorlamak için tasarlanmamıştır hedefi express sağlamak için iki anahtar sağlar.  
+A *sabit* değeri olan bir değişikliğe neden olmaz. C++ iki anahtar sözcüğü bir nesne değiştirilecek ve o hedefi zorlamak için tasarlanmamıştır hedefi express olanak sağlar.  
   
- C++ sabit ifadeleri gerektirir — bir sabite değerlendirmek ifadeleri — bildirimlerini için:  
+C++ sabit ifadeleri gerekir — bir sabit ifadeler — bildirimleri için:  
   
--   Dizi sınırları  
+ -   Dizi sınırları  
+      
+ -   Case deyimleri Seçici  
+      
+ -   Bit alanı uzunluğu belirtimi  
+      
+ -   Sabit listesi başlatıcıları  
   
--   Seçici içindeki case deyimleri  
+Sabit ifadelerde yasal yalnızca işlenen şunlardır:  
   
--   Bit alan uzunluğu belirtimi  
+ -   Sabit değerler  
+      
+ -   Numaralandırma sabitlerini  
+      
+ -   Değerleri, sabit ifadeler başlatılır const olarak bildirildi  
+      
+ -   **sizeof** ifadeleri  
   
--   Numaralandırma başlatıcıları  
+Nonintegral Sabitleri (açıkça veya dolaylı olarak) sabit bir ifadede meşru integral türlerine dönüştürülmesi gerekir. Bu nedenle, aşağıdaki kod geçerlidir:  
   
- Sabit ifadeler yasal yalnızca işlenenler şunlardır:  
-  
--   Sabit değerler  
-  
--   Numaralandırma sabitleri  
-  
--   Sabit ifadeler ile başlatılmış değerleri const olarak bildirilen  
-  
--   `sizeof` İfadeler  
-  
- Nonintegral Sabitleri (açık veya örtülü olarak) bir sabit ifadesine yasal olarak tam sayı türleri dönüştürülmelidir. Bu nedenle, aşağıdaki kodu uygundur:  
-  
-```  
+```cpp 
 const double Size = 11.0;  
 char chArray[(int)Size];  
 ```  
   
- Açık dönüşümler tam sayı türleri için sabit ifadeler yasal; diğer tüm türleri ve türetilmiş türler için işlenen olarak kullanılması dışında geçersiz `sizeof` işleci.  
+Açık dönüştürmeler integral türleri sabit ifadelerde geçerli; diğer tüm türleri ve türetilen türler için işlenen olarak kullanılması dışında geçersiz `sizeof` işleci.  
   
- Virgül işleci ve atama işleçleri sabit ifadelerinde kullanılamaz.  
+Virgül işleci ve atama işleçleri sabit ifadelerde kullanılamaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İfade Türleri](../cpp/types-of-expressions.md)

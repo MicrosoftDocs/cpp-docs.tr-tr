@@ -16,14 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52e3bbd026a00306fb2d8e69df94fd9c0c913039
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7676f38e52734fa2f0ce8ecbc9b268be1939f6dc
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953401"
 ---
 # <a name="goto-statement-c"></a>goto Deyimi (C++)
-`goto` Deyimi koşulsuz olarak aktarır denetimi tarafından belirtilen tanımlayıcı Etiketli ifade.  
+**Goto** deyimi koşulsuz olarak aktarır denetimi tarafından belirtilen tanımlayıcı etiketli deyim.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,18 +33,18 @@ goto identifier;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Etiketli deyim tarafından belirlenen `identifier` içinde geçerli bir işlev olmalıdır. Tüm `identifier` adları bir iç ad alanı üyesi olan ve bu nedenle diğer tanımlayıcıları ile engel olmaz.  
+ Etiketli deyim tarafından belirlenen `identifier` geçerli işlev olmalıdır. Tüm `identifier` adları bir iç ad alanının üyeleri ve diğer tanımlayıcıları ile bu nedenle müdahale etmez.  
   
- Yalnızca anlamlı deyimi etiketidir bir `goto` deyimi; Aksi takdirde deyimi etiketleri göz ardı edilir. Etiketleri yeniden bildirilen olamaz.  
+ Bir bildirim etiketi yalnızca anlamlı bir **goto** deyimi; Aksi takdirde, deyim etiketleri göz ardı edilir. Etiketleri bildirilemez.  
   
- Kullanmak için stil programlama iyi `break`, `continue`, ve `return` deyimleri yerine `goto` deyimi mümkün olduğunda. Ancak, çünkü `break` deyimi yalnızca tek bir döngü düzeyden çıkar, kullanmanız gerekebilir bir `goto` deyimi iç içe bir döngüden çıkın.  
+ İyi bir stili programlama **sonu**, **devam**, ve **dönüş** yerine deyimleri **goto** deyimi her olası. Ancak, çünkü **sonu** deyimi yalnızca bir döngü düzeyden çıkar, kullanmanız gerekebilir bir **goto** deyimi iç içe döngü çıkmak için.  
   
- Etiketler hakkında daha fazla bilgi ve `goto` deyimi, bkz: [etiketli deyimleri](../cpp/labeled-statements.md) ve [goto deyimi kullanarak etiketlerle](http://msdn.microsoft.com/en-us/6cd7c31a-9822-4241-8566-f79f51be48fe).  
+ Etiketler hakkında daha fazla bilgi ve **goto** deyimi bkz [etiketli deyimler](../cpp/labeled-statements.md).  
   
 ## <a name="example"></a>Örnek  
- Bu örnekte, bir `goto` deyimi denetim etiketli noktasına aktarır `stop` zaman `i` 3'e eşittir.  
+ Bu örnekte, bir **goto** deyime aktarır denetim noktasına etiketli `stop` olduğunda `i` 3'e eşittir.  
   
-```  
+```cpp  
 // goto_statement.cpp  
 #include <stdio.h>  
 int main()  

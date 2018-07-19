@@ -11,22 +11,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6310281aa86c48ae0a8b0fb313e79994d0b9b538
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1193e7ab65c49f0f79aeae52ca6563310296116d
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863897"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953654"
 ---
 # <a name="ltistreamgt-functions"></a>&lt;istream&gt; işlevleri
 
 |||
 |-|-|
-|[Değiştirme](#istream_swap)|[ws](#ws)|
+|[değiştirme](#istream_swap)|[ws](#ws)|
 
-## <a name="istream_swap"></a>  Değiştirme
+## <a name="istream_swap"></a>  değiştirme
 
-İki akışı nesneleri öğelerini değiş tokuş eder.
+İki akışı nesneleri öğelerini birbiriyle değiştirir.
 
 ```cpp
 template <class Elem, class Tr>
@@ -42,13 +42,13 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Bir akış.
+*Sol* bir akış.
 
-`right` Bir akış.
+*doğru* bir akış.
 
 ## <a name="ws"></a>  ws
 
-Boşluk akışında atlar.
+Boşluk stream'de atlar.
 
 ```cpp
 template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _Istr);
@@ -56,7 +56,7 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
 
 ### <a name="parameters"></a>Parametreler
 
-`_Istr` Bir akış.
+*_Istr* bir akış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -64,9 +64,9 @@ Akış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator ayıklar ve herhangi bir öğe atar `ch` kendisi için [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype** \< **Elem**>> ( [getloc](../standard-library/ios-base-class.md#getloc)). **olan**( **ctype** \< **Elem**>:: **alanı**, **ch**) geçerlidir.
+İşleyici ayıklar ve herhangi bir öğe çıkarır `ch` hangi [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype** \< **Elem**>> ( [getloc](../standard-library/ios-base-class.md#getloc)). **olan**( **ctype** \< **Elem**>:: **alanı**, **ch**) geçerlidir.
 
-İşlev çağrıları [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**) öğeleri ayıklanırken dosya sonu karşılaştığında. Döndürdüğü `_Istr`.
+İşlev çağrıları [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**) öğeleri ayıklanırken dosya sonu karşılaştığında. Döndürür *_Istr*.
 
 ### <a name="example"></a>Örnek
 

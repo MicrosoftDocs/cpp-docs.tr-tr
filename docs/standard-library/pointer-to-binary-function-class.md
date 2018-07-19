@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39549a277a203d9daa894f48437224caf50a0521
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0b632fabe8f596d46a0423d670ff57bb12de93cd
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853384"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953462"
 ---
 # <a name="pointertobinaryfunction-class"></a>pointer_to_binary_function Sınıfı
 
-Bir ikili işlev işaretçisi uyarlanabilir ikili işlevdeki dönüştürür.
+Bir ikili fonksiyon işaretçi ikili uyarlanabilir bir işleve dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,27 +44,27 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-`pfunc` Dönüştürülecek ikili işlev.
+*pfunc* dönüştürülecek ikili fonksiyon.
 
-`left` Sol nesne  *\*pfunc* üzerinde çağrılır.
+*Sol* sol nesne  *\*pfunc* üzerinde çağrılır.
 
-`right` Sağa nesne  *\*pfunc* üzerinde çağrılır.
+*doğru* sağ nesne  *\*pfunc* üzerinde çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Şablon sınıfı, bir kopyasını depolar **pfunc**. Üye işlevini tanımlar `operator()` döndürme olarak (\* **pfunc**) (_ *sol*, \_ *sağ*).
+Şablon sınıfı bir kopyasını depolar `pfunc`. Onun üye işlevini tanımlar `operator()` döndüren olarak (\* **pfunc**) (_ *sol*, \_ *sağ*).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir ikili işlev işaretçisi bir işlev nesnesi ve ikili işlevi parametre olarak bekleniyor tüm C++ Standart Kitaplığı algoritmalar için geçirilen, ancak uyarlanabilir değil. Bir değer için bağlama veya bir negator ile kullanarak gibi bir bağdaştırıcı ile kullanmak için iç içe geçmiş türler ile sağlanan **first_argument_type**, **second_argument_type**, ve **result_type**  olduğundan olun böyle bir uyarlama mümkün. Dönüştürme `pointer_to_binary_function` ikili işlev işaretçileri ile çalışmak işlevi bağdaştırıcıları sağlar.
+Bir ikili fonksiyon işaretçi bir işlev nesnesi ve ikili bir işlev bir parametre olarak bekleniyor herhangi bir C++ Standart Kitaplığı algoritma geçirilebilir, ancak uyarlanabilir değil. Bir değer için bağlama veya bir negator ile kullanarak bir bağdaştırıcı ile kullanmak için iç içe geçmiş türler ile sağlanan `first_argument_type`, `second_argument_type`, ve `result_type` oluşturan bir tür uyarlama mümkün. Dönüştürme `pointer_to_binary_function` ikili fonksiyon işaretçiler ile çalışmak işlev bağdaştırıcıları sağlar.
 
 ## <a name="example"></a>Örnek
 
-Oluşturucusunun `pointer_to_binary_function` nadiren doğrudan kullanılır. Yardımcı işlevini bkz [ptr_fun](../standard-library/functional-functions.md#ptr_fun) bildirme ve kullanma konusunda bir örnek için `pointer_to_binary_function` bağdaştırıcısı koşulu.
+Oluşturucusuna `pointer_to_binary_function` doğrudan nadiren kullanılır. Yardımcı işlevini bkz [ptr_fun](../standard-library/functional-functions.md#ptr_fun) bildirme ve kullanma konusunda bir örnek için `pointer_to_binary_function` bağdaştırıcısı koşul.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

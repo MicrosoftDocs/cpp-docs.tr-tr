@@ -1,5 +1,5 @@
 ---
-title: ATL Proje Sihirbazı | Microsoft Docs
+title: ATL projesi Sihirbazı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,48 +17,48 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f47af89297efba2501e7f548075800d93dfda296
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 80556b31650cc04e66b2ad6681d60eff2fa72d5f
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357911"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39025824"
 ---
-# <a name="atl-project-wizard"></a>ATL Proje Sihirbazı
-Etkin Şablon kitaplığı (ATL), küçük ve hızlı COM nesneleri yazma basitleştirmek şablona dayalı C++ sınıflar kümesidir. ATL Proje Sihirbazı COM nesneleri içerecek şekilde yapıları ile birlikte bir proje oluşturur.  
+# <a name="atl-project-wizard"></a>ATL projesi Sihirbazı
+Etkin Şablon kitaplığı (ATL), küçük ve hızlı COM nesneleri yazma kolaylaştıran şablon tabanlı C++ sınıfları kümesidir. ATL projesi Sihirbazı, COM nesneleri içerecek şekilde yapılarıyla bir proje oluşturur.  
   
 ## <a name="overview"></a>Genel Bakış  
- Bu sihirbaz sayfasını geçerli açıklar [ATL projesi için uygulama ayarlarını](../../atl/reference/application-settings-atl-project-wizard.md) oluşturmakta olduğunuz. Varsayılan olarak, proje aşağıdaki ayarlara sahip:  
+ Bu sihirbaz sayfasındaki geçerli açıklar [ATL projesi için uygulama ayarları](../../atl/reference/application-settings-atl-project-wizard.md) oluşturuyorsunuz. Varsayılan olarak, proje aşağıdaki ayarlara sahip:  
   
--   Dinamik bağlantı kitaplığı sunucunuzun DLL ve bu nedenle bir işlem sunucusu mu olduğunu belirtir.  
+-   Dinamik bağlantı kitaplığı sunucunuz bir DLL ve bu nedenle bir işlem sunucusu olduğunu belirtir.  
   
--   Projenizi öznitelikleri kullanan öznitelikli belirtir.  
+-   Öznitelikli belirtir, projenizin öznitelikleri kullanır.  
   
- Bu varsayılan değiştirmek için tıklatın. **uygulama ayarları** sol sütununda Sihirbazı değişiklikler ATL Proje sihirbazın bu sayfasında yapın.  
+ Bu varsayılan ayarları değiştirmek için tıklayın **uygulama ayarları** Sihirbazı ve istediğiniz değişiklikleri yapın, ATL Proje Sihirbazı sayfasında, sol sütunda.  
   
- Varsayılan proje ayarları hakkında daha fazla bilgi için bkz: karakter kümesi seçimi de dahil olmak üzere ve Varsayılanları, bağlama [varsayılan ATL Proje yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).  
+ Varsayılan proje ayarları hakkında daha fazla bilgi için bkz: karakter kümesi, tercih ettiğiniz dahil olmak üzere ve varsayılan bağlama [varsayılan ATL projesi yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).  
   
- ATL projesinde oluşturduktan sonra nesneler veya denetimleri Visual C++ kullanarak projenize ekleyebileceğiniz [kod sihirbazları](../../ide/adding-functionality-with-code-wizards-cpp.md). Kod sihirbazları kullanarak temel bir ATL Proje geliştirmeler aşağıdaki türlerini yapabilirsiniz:  
+ Bir ATL projesi oluşturduktan sonra nesneler veya denetimler Visual C++ kullanarak projenize ekleyebileceğiniz [kod sihirbazları](../../ide/adding-functionality-with-code-wizards-cpp.md). Kod sihirbazları kullanarak temel bir ATL projesi geliştirmeler aşağıdaki türde yapabilirsiniz:  
   
--   [Nesne ve denetimleri için ATL projesinde ekleme](../../atl/reference/adding-objects-and-controls-to-an-atl-project.md)  
+-   [ATL projesine nesne ve denetimleri ekleme](../../atl/reference/adding-objects-and-controls-to-an-atl-project.md)  
   
--   [Yeni bir arabirimi ATL projesinde Ekle](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)  
+-   [ATL projesine yeni arabirim ekleme](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)  
   
--   [ATL projesinde bir COM + 1.0 bileşen ekleyin](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)  
+-   [ATL projesine bir COM + 1.0 bileşeni ekleme](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)  
   
- Ayrıca, oluşturduğunuzda ve ATL projesinde geliştirmek bu görevleri göz önünde bulundurun:  
+ Ayrıca, bu görevleri oluştururken ve ATL projesi geliştirmek göz önünde bulundurun:  
   
--   [ATL nesne noncreatable olun](../../atl/reference/making-an-atl-object-noncreatable.md)  
+-   [ATL nesnesini oluşturulamaz olun](../../atl/reference/making-an-atl-object-noncreatable.md)  
   
 -   [ATL projesinde derleyici en iyi duruma getirme](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)  
   
- Proje özellikleri belirtebilirsiniz (örneğin, [mi CRT statik olarak bağlamak](../../atl/programming-with-atl-and-c-run-time-code.md)) içinde [proje özelliklerini](../../ide/general-property-page-project.md) sayfası ve ayarlayabilirsiniz [derleme yapılandırmaları](/visualstudio/ide/understanding-build-configurations) için bir ATL projesi. Bkz: [kullanarak projeleri derleme uygulamalara](http://msdn.microsoft.com/en-us/3339fa90-bac2-4b95-8361-662a2e0e7dfe) daha fazla bilgi için.  
+ Proje özellikleri belirtebilirsiniz (örneğin, [CRT için kitaplıklarla statik bağlantılar oluşturabilir verilip verilmeyeceğini](../../atl/programming-with-atl-and-c-run-time-code.md)) içinde [proje özellikleri](../../ide/general-property-page-project.md) sayfası ve ayarlayabilirsiniz [derleme yapılandırmaları](/visualstudio/ide/understanding-build-configurations) için bir ATL projesi. Bkz: [kullanarak projeleri için yapı uygulamaları](http://msdn.microsoft.com/3339fa90-bac2-4b95-8361-662a2e0e7dfe) daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ proje oluşturma ve yönetme](../../ide/creating-and-managing-visual-cpp-projects.md)   
  [Visual C++ proje türleri](../../ide/visual-cpp-project-types.md)   
  [Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
- [ATL COM nesneleri temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
+ [ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
  [ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
  [Öğretici](../../atl/active-template-library-atl-tutorial.md)
 

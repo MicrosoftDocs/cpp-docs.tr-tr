@@ -16,18 +16,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fc8fb21afe1f024e4e5418d3cc706f654946de6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e49fcc87c4c074494164a085e01581077bbfe118
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857642"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953868"
 ---
 # <a name="ltvectorgt"></a>&lt;vektör&gt;
 
-Kapsayıcı Şablon sınıfı vektör ve çeşitli destekleyici şablonları tanımlar.
+Kapsayıcı Şablon sınıfı vektör ve çeşitli destek şablonları tanımlar.
 
-`vector` Doğrusal bir sıra içinde belirli bir türde öğeleri düzenler bir kapsayıcıdır. Öğesini ve dinamik ekleme ve kaldırma işlemleri için ve serisinden hızlı rastgele erişim sağlar. `vector` Rasgele erişim performansı üst düzey olduğunda tercih edilen sıralı bir kapsayıcısıdır.
+`vector` Doğrusal bir sırada belirli bir türden öğeler düzenleyen bir kapsayıcıdır. Bu öğe ve dinamik ekleme ve çıkarma için ve serisinden hızlı rastgele erişim sağlar. `vector` Rastgele erişimli performans bir premium olduğunda tercih edilen bir dizi kapsayıcısıdır.
 
 Sınıfı hakkında daha fazla bilgi için `vector`, bkz: [vector sınıfı](../standard-library/vector-class.md). Özelleştirme hakkında bilgi için `vector<bool>`, bkz: [vektör\<bool > sınıfı](../standard-library/vector-bool-class.md).
 
@@ -83,36 +83,40 @@ void swap (
 
 ### <a name="parameters"></a>Parametreler
 
-Şablon parametresi vektörü depolanan veri türünün yazın.
+*Türü*  
+ Şablon parametresi için vektör içinde depolanan verinin türü.
 
-Bellek ayırma ve ayırmayı kaldırma sorumlu saklı ayırıcısı nesnesi için şablon parametresi ayırıcısı.
+*Ayırıcı*  
+ Şablon parametresi için bellek ayırmayı ve ayırmayı kaldırma için sorumlu saklı ayırıcı nesnesini.
 
-`left` Bir karşılaştırma işlemi ilk (soldaki) vektörü
+*Sol*  
+ Bir karşılaştırma işlemi ilk (soldaki) vektörü
 
-`right` Bir karşılaştırma işlemi ikinci (sağdaki) vektörü.
+*sağ*  
+ Bir karşılaştırma işleminde ikinci (sağdaki) vektör.
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işleci! =](../standard-library/vector-operators.md#op_neq)|Testleri işlecinin sol tarafındaki vektör nesnesi sağ tarafında vektör nesnesine eşit değil.|
-|[operator <](../standard-library/vector-operators.md#op_lt)|Vektör nesnesi işlecinin sol tarafındaki sağ tarafında vektör nesnesi küçükse testleri.|
-|[işleci\<=](../standard-library/vector-operators.md#op_gt_eq)|Vektör işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında vektör nesnesi eşit veya daha az olur.|
-|[operator==](../standard-library/vector-operators.md#op_eq_eq)|Vektör nesnesi işlecinin sol tarafındaki sağ tarafında vektör nesnesine eşitse testleri.|
-|[operator >](../standard-library/vector-operators.md#op_gt)|Testleri işlecinin sol tarafındaki vektör nesnesi sağ tarafında vektör nesnesi değerinden daha büyük.|
-|[operator>=](../standard-library/vector-operators.md#op_gt_eq)|Vektör işlecinin sol tarafındaki sağ tarafında vektör nesnesine eşit veya daha büyük bir nesneyse testleri.|
+|[işleci! =](../standard-library/vector-operators.md#op_neq)|İşlecin sol tarafındaki vektör nesnesi işlecin sağ tarafındaki vektör nesnesine eşit olup olmadığını sınar.|
+|[işleç <](../standard-library/vector-operators.md#op_lt)|İşlecin sol tarafındaki vektör nesnesi işlecin sağ tarafındaki vektör nesneden küçük olup olmadığını sınar.|
+|[İşleci\<=](../standard-library/vector-operators.md#op_gt_eq)|İşlecinin sol tarafında vektör nesnesi küçük olup olmadığını sınar vektör nesnesine eşit veya işlecin sağ tarafındaki.|
+|[operator==](../standard-library/vector-operators.md#op_eq_eq)|İşlecin sol tarafındaki vektör nesnesinin işlecin sağ tarafındaki vektör nesnesine eşit olup olmadığını sınar.|
+|[operator >](../standard-library/vector-operators.md#op_gt)|İşlecin sol tarafındaki vektör nesnesi vektör nesnesi işlecin sağ tarafındaki büyük olup olmadığını sınar.|
+|[operator>=](../standard-library/vector-operators.md#op_gt_eq)|İşlecin sol tarafındaki vektör nesnesi büyük veya işlecin sağ tarafındaki vektör nesnesine eşit olup olmadığını sınar.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[vector Sınıfı](../standard-library/vector-class.md)|Doğrusal bir düzenleme içinde belirli bir türde öğelerini düzenlemek ve herhangi bir öğeye hızlı rastgele erişim izin veren dizisi kapsayıcıların bir şablon sınıfı.|
+|[vector Sınıfı](../standard-library/vector-class.md)|Öğeleri belirli bir türden doğrusal bir düzende düzenlemek ve herhangi bir öğeye hızlı rastgele erişim izin veren bir dizi kapsayıcılarının bir şablon sınıfı.|
 
 ### <a name="specializations"></a>Uzmanlıklar
 
 |||
 |-|-|
-|[vektör\<bool > sınıfı](../standard-library/vector-bool-class.md)|Şablon sınıfı vektör türündeki öğeler için tam uzmanlaşması `bool` uzmanlık tarafından kullanılan temel alınan türü için bir ayırıcı ile.|
+|[vektör\<bool > sınıfı](../standard-library/vector-bool-class.md)|Şablon sınıfı vektör türü öğeler için tam özelleştirmesi `bool` uzmanlık tarafından kullanılan temel alınan türü için bir ayırıcı ile.|
 
 ## <a name="requirements"></a>Gereksinimler
 

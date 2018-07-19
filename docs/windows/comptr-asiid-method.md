@@ -1,7 +1,7 @@
 ---
 title: Comptr::asııd yöntemi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/11/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 26f56a9d94620067ae31f5b4984ff24fe703822e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: db5bc6b2547fb77dd887f96b6c33dee536e43f77
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870096"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39025909"
 ---
 # <a name="comptrasiid-method"></a>ComPtr::AsIID Yöntemi
-Belirtilen arabirim kimliği ile tanımlanan arabirimi temsil eden bir ComPtr nesnesi döndürür  
+Belirtilen arabirim kimliği. tarafından belirlenen arabirimi temsil eden bir ComPtr nesne döndürür  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,13 +38,13 @@ WRL_NOTHROW HRESULT AsIID(
   
 #### <a name="parameters"></a>Parametreler  
  `riid`  
- Bir arabirim kimliği  
+ Bir arabirim kimliği.  
   
  `p`  
- Destekleniyorsa, tarafından belirtilen arabirimi karakteriyle dolaylı bir işaretçi `riid` parametresi; Aksi halde, IUnknown işaretçisi.  
+ Nesne Kimliğine eşit bir arabirim varsa `riid`, karakteriyle dolaylı tarafından belirtilen arabirim işaretçisi `riid` parametre; Aksi takdirde IUnknown işaretçisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

@@ -1,5 +1,5 @@
 ---
-title: Diğer tek-bağımsız değişken çıkış akışı Manipülatörleri | Microsoft Docs
+title: Diğer-bağımsız değişkeni çıkış Stream Manipülatörleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cd9c9f643b6766dfca4f008f14c9d470a5bcc34
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 30523a7db07dba1359af59c9fcc988feb0e4ec18
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853329"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953832"
 ---
 # <a name="other-one-argument-output-stream-manipulators"></a>Diğer Tek Bağımsız Değişkenli Çıkış Akışı Manipülatörleri
 
-Aşağıdaki örnek, bir sınıf kullanır `money`, olduğu bir `long` türü. `setpic` Manipulator sınıfı aşırı yüklenmiş akış ekleme operatör tarafından kullanılan sınıf için bir biçimlendirme "resim" dizesi iliştirir `money`. Resim dize olarak statik bir değişkende depolanır `money` stream sınıfı veri üyesi olarak, bu nedenle, yeni bir çıkış akışı sınıf türetin gerekmez yerine sınıfı.
+Aşağıdaki örnek, bir sınıfı kullanır. `money`, olduğu bir **uzun** türü. `setpic` İşleyici sınıfı aşırı yüklenmiş akışı ekleme operatör tarafından kullanılabilecek sınıfına bir biçimlendirme "resmi" dizesi ekler `money`. Statik bir değişken olarak resim dizesinde depolanan `money` yerine stream sınıfı veri üyesi olarak, bu nedenle yeni bir çıkış akışı sınıf türetmek erişiminiz yok sınıfı.
 
 ## <a name="example"></a>Örnek
 

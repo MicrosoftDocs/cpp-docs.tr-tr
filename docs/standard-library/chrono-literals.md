@@ -12,16 +12,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 022f2bb5355b59ca9ee614c79fee310526e094d8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 059974efa00d384f669c88a3e2dafbc3a7bc5746
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840937"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953697"
 ---
 # <a name="chrono-literals"></a>chrono değişmez değerleri
 
-(C ++ 14) \<Chrono > Üstbilgi tanımlar 12 [kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md) saat, dakika, saniye, milisaniye, mikrosaniye ve nanosaniye temsil eden değişmez değerleri kullanarak kolaylaştırmak için. Her kullanıcı tanımlı değişmez değeri bir Entegral ve bir kayan nokta aşırı vardır. Değişmez değerler std::chrono kapsamda olduğunda bu kapsam içine otomatik olarak getirilene literals::chrono_literals satır içi ad alanında tanımlanır.
+(C ++ 14) \<Chrono > Üstbilgi tanımlar 12 [kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md) saat, dakika, saniye, milisaniye cinsinden, mikrosaniye ve nanosaniye temsil eden bir değişmez değerleri kullanarak kolaylaştırmak için. Her kullanıcı tanımlı sabit bir integral ve kayan nokta bir aşırı yüklemesi vardır. Değişmez değerler std::chrono kapsamında olduğunda, kapsamın içine otomatik olarak getirildikten literals::chrono_literals satır içi ad alanında tanımlanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,11 +70,11 @@ inline namespace literals {
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ele değişmez değerleri bir `long long` bağımsız değişkeni bir değer veya karşılık gelen türünü döndürür. Dönüş bağımsız değişkeni bir kayan ele değişmez değerleri noktası bir [süresi](../standard-library/duration-class.md).
+Alan değişmez bir **uzun uzun** bağımsız değişken bir değer ya da karşılık gelen türünü döndürür. Dönüş bağımsız değişken alan bir kayan sabit değerleri noktası bir [süresi](../standard-library/duration-class.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekler chrono değişmez değerleri kullanmak nasıl sow.
+Aşağıdaki örnekler chrono değişmez değerleri kullanmak nasıl iş.
 
 ```cpp
 constexpr auto day = 24h;
@@ -84,7 +84,7 @@ constexpr auto my_duration_unit = 108ms;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi**: \<chrono >
+**Üst bilgi**: \<chrono >
 
 **Namespace**: std::literals::chrono_literals
 

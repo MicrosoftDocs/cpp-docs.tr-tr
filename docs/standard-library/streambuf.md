@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4f2b455b362bcb170a09c89a0bfef8013286971
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 138ec5bb28e108751a7d4b03651826db38c098fa
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855272"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026938"
 ---
 # <a name="ltstreambufgt"></a>&lt;streambuf&gt;
 
-İostreams standart üstbilgisini \<streambuf > Şablon sınıfı tanımlamak için [basic_streambuf](../standard-library/basic-streambuf-class.md), iostreams sınıfları işlemi için temel olduğu. Bu üst sizin için genellikle başka iostreams üstbilgilerinin bulunur; nadiren doğrudan eklemeniz gerekir.
+İostreams standart üstbilgisini \<streambuf > şablon sınıfını tanımlamak için [basic_streambuf](../standard-library/basic-streambuf-class.md), iostreams sınıfları işlemi için temel olduğu. Bu üst bilgi, genellikle başka iostreams üst bilgi bulunur; nadiren doğrudan eklemeniz gerekir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,14 +38,14 @@ ms.locfileid: "33855272"
 
 |Tür adı|Açıklama|
 |-|-|
-|[streambuf](../standard-library/streambuf-typedefs.md#streambuf)|Bir alt uzmanlaşması `basic_streambuf` kullanan `char` şablon parametreleri olarak.|
-|[wstreambuf](../standard-library/streambuf-typedefs.md#wstreambuf)|Bir alt uzmanlaşması `basic_streambuf` kullanan `wchar_t` şablon parametreleri olarak.|
+|[streambuf](../standard-library/streambuf-typedefs.md#streambuf)|Bir alt uzmanlaşması `basic_streambuf` kullanan **char** şablon parametreleri olarak.|
+|[wstreambuf](../standard-library/streambuf-typedefs.md#wstreambuf)|Bir alt uzmanlaşması `basic_streambuf` kullanan **wchar_t** şablon parametreleri olarak.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_streambuf Sınıfı](http://msdn.microsoft.com/en-us/d9c706ba-ce01-43e0-b0b2-a558fc53ea8d)|Şablon sınıfı öğelerini bir akış belirli bir gösterimini gelen ve giden iletimini denetleyen bir Akış Arabellek türetme için Özet temel sınıf tanımlar.|
+|[basic_streambuf Sınıfı](http://msdn.microsoft.com/d9c706ba-ce01-43e0-b0b2-a558fc53ea8d)|Şablon sınıfı, belirli bir gösterimiyse bir akış, gelen ve giden öğeleri aktarımını denetleyen bir akış arabelleğinin türetmek için Özet temel sınıf tanımlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

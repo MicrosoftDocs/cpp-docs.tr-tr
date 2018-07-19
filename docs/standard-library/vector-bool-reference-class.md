@@ -1,5 +1,5 @@
 ---
-title: 'vektör&lt;bool&gt;:: sınıf başvurusu | Microsoft Docs'
+title: 'vektör&lt;bool&gt;:: reference sınıfı | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,20 +16,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 149b43f0485d3717ad2f413d2519e435f0da0562
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c87975e0b27934d091e896867620011a51b78d52
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857083"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966530"
 ---
-# <a name="vectorltboolgtreference-class"></a>vektör&lt;bool&gt;:: sınıfı başvurusu
+# <a name="vectorltboolgtreference-class"></a>vektör&lt;bool&gt;:: reference sınıfı
 
-`vector<bool>::reference` Sınıftır tarafından sağlanan bir proxy [vektör\<bool > sınıfı](../standard-library/vector-bool-class.md) benzetimini yapmak için `bool&`.
+`vector<bool>::reference` Tarafından sağlanan bir proxy sınıfı [vektör\<bool > sınıfı](../standard-library/vector-bool-class.md) benzetimini yapmak için `bool&`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ yerel olarak doğrudan başvuruların bitlere atanmasına izin vermediğinden, benzetimli bir başvuru gereklidir. `vector<bool>` Bu proxy sınıfını kullanarak başvurulabilir öğesi başına yalnızca bir bit kullanır. Bununla birlikte, belirli atamalar geçersiz olduğundan başvuru benzetimi tam değil. Örneğin, çünkü adresini `vector<bool>::reference` nesne olamaz alınması, kullandığı aşağıdaki kodu [vektör\<bool >:: işleci&#91; &#93; ](http://msdn.microsoft.com/Library/97738633-690d-4069-b2d9-8c54104fbfdd) doğru değil:
+C++ yerel olarak doğrudan başvuruların bitlere atanmasına izin vermediğinden, benzetimli bir başvuru gereklidir. `vector<bool>` Bu proxy sınıfı kullanılarak başvurulabilen öğesi başına yalnızca bir bit kullanır. Bununla birlikte, belirli atamalar geçersiz olduğundan başvuru benzetimi tam değil. Örneğin, çünkü adresini `vector<bool>::reference` nesne olamaz alınamadığından, kullandığı aşağıdaki kodu [vektör\<bool >:: operator&#91; &#93; ](http://msdn.microsoft.com/Library/97738633-690d-4069-b2d9-8c54104fbfdd) doğru değil:
 
 ```cpp
 vector<bool> vb;
@@ -42,13 +42,13 @@ bool& refb = vb[1];   // conversion error - do not use
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[ters çevirin](../standard-library/vector-bool-reference-flip.md)|Bir vektör öğesinin Boolean değerini tersine çevirir.|
-|[işleç bool değeri](../standard-library/vector-bool-reference-operator-bool.md)|Örtük bir dönüştürme sağlar `vector<bool>::reference` için `bool`.|
+|[Çevir](../standard-library/vector-bool-reference-flip.md)|Bir vektör öğesinin Boolean değerini tersine çevirir.|
+|[bool işleci](../standard-library/vector-bool-reference-operator-bool.md)|Örtük bir dönüştürme sağlar `vector<bool>::reference` için **bool**.|
 |[operator=](../standard-library/vector-bool-reference-operator-assign.md)|Bir bite bir Boolean değeri, veya başvurulan bir öğenin tuttuğu değeri atar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi**: \<vektör >
+**Üst bilgi**: \<vektör >
 
 **Namespace:** std
 

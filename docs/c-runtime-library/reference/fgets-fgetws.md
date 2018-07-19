@@ -1,7 +1,7 @@
 ---
 title: fgets, fgetws | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/11/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -39,16 +39,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e92deea033443ec942895d2aef2d1a307ac89f34
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9c155150a364c2cbbd230c56678e6e7dcb4e4fde
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402026"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39027173"
 ---
 # <a name="fgets-fgetws"></a>fgets, fgetws
 
-Bir dizeyi bir akıştan alın.
+Bir dize bir akıştan alın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,27 +68,27 @@ wchar_t *fgetws(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Verileri için depolama konumu.
+Veri için depolama konumu.
 
 *numChars*<br/>
-Okunacak karakter maksimum sayısı.
+Okunacak karakter sayısı.
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bunların her biri döndürür işlevleri *str*. **NULL** bir hata veya bir dosya sonu koşulunu belirtmek için döndürülür. Kullanım **feof** veya **ferror** bir hata oluşup oluşmadığını belirlemek için. Varsa *str* veya *akış* null işaretçinin veya *numChars* küçük veya ona eşit açıklandığı gibi bu işlevi sıfır olarak geçersiz parametre işleyicisi çağırır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**.
+Bu işlevlerin her biri döndürür *str*. **NULL** bir hata veya dosya sonu koşulu belirtmek için döndürülür. Kullanım **feof** veya **ferror** hata oluşup oluşmadığını belirlemek için. Varsa *str* veya *stream* null bir işaretçiyse veya *numChars* küçük veya ona eşit sıfır olarak açıklandığı gibi bu işlev geçersiz parametre işleyicisi çağırır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **NULL**.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fgets** işlevi okuyan bir dize girdisinden *akış* bağımsız değişkeni ve depolar *str*. **fgets** geçerli akışı konumu ve akışın sonuna için ilk yeni satır karakteri de dahil olmak üzere karakteri okur veya okunan karakter sayısı kadar eşittir *numChars* - 1, hangisi önce gelirse. Sonuç depolanan *str* bir null karakter ile eklenir. Yeni satır karakteri, okuma, dizesine eklenir.
+**Fgets** işlevi bir dize girdiden okur *stream* bağımsız değişken ve depolar *str*. **fgets** geçerli stream konuma ve akışı sonuna ilk yeni satır karakteri dahil olmak üzere karakterler okur ya da karakter sayısı okunana kadar eşittir *numChars* - 1, hangisinin önce geldiğine bağlı. Sonuç depolanan *str* null karakteri ile eklenir. Yeni satır karakteri, okuma, dizede dahildir.
 
-**fgetws** bir joker karakter sürümü **fgets**.
+**fgetws** geniş karakterli sürümüdür **fgets**.
 
-**fgetws** joker karakter bağımsız değişkeni okur *str* çok baytlı karakter dizesi veya mi göre bir joker karakter dizesi olarak *akış* metin modunda veya ikili modunda açılmış sırasıyla. Metin ve ikili modlarda Unicode ve çok baytlı akış-g/Ç kullanma hakkında daha fazla bilgi için bkz: [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [metin ve ikili modlarda Unicode akışı g/ç](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
+**fgetws** geniş karakter bağımsız değişkeni okur *str* bir çok baytlı karakter veya olup olmadığına göre bir geniş karakterli dize olarak *stream* metin modunda veya İkili modda açılmış sırasıyla. Metin ve ikili modlarda Unicode ve çok baytlı akış g/Ç kullanma hakkında daha fazla bilgi için bkz. [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [metin ve ikili modlarda Unicode Stream g/ç](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -103,15 +103,14 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |**fgets**|\<stdio.h >|
 |**fgetws**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
 ```C
 // crt_fgets.c
-// This program uses fgets to display
-// a line from a file on the screen.
-//
+// This program uses fgets to display 
+// the first line from a file.
 
 #include <stdio.h>
 
@@ -146,7 +145,7 @@ Line one.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputs, fputws](fputs-fputws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [puts, _putws](puts-putws.md)<br/>

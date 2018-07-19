@@ -1,5 +1,5 @@
 ---
-title: Görünüm, ATL Denetim Sihirbazı | Microsoft Docs
+title: Görünüm, ATL denetimi Sihirbazı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,87 +16,86 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1d27b46f529d8423bdaf733928a9f3e46b3f185
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3dd95e3e25cd015fd326c236f15a965e3fb9e801
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358608"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39025886"
 ---
-# <a name="appearance-atl-control-wizard"></a>Görünüm, ATL Denetim Sihirbazı
+# <a name="appearance-atl-control-wizard"></a>ATL denetimi Sihirbazı görünümü
 "Arama sonuçları" Özet buraya ekleyin.  
   
- Sihirbazın bu sayfası denetimi için ek kullanıcı öğesi seçeneklerini belirlemek için kullanın. Bu sayfa olarak tanımlanan denetimleri için kullanılabilir **standart denetimler** altında **denetim türü** üzerinde [seçenekleri, ATL Denetim Sihirbazı](../../atl/reference/options-atl-control-wizard.md) sayfası.  
+ Sihirbazın bu sayfası denetimi için ek kullanıcı öğesi seçeneklerini belirlemek için kullanın. Bu sayfa olarak tanımlanan denetimleri için kullanılabilir **standart denetimler** altında **denetim türü** üzerinde [ATL denetimi Sihirbazı, seçenekleri](../../atl/reference/options-atl-control-wizard.md) sayfası.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
- **Durumu görüntüle**  
- Kapsayıcı içinde denetiminin görünümünü ayarlar.  
+**Durumu görüntüle**  
+Kapsayıcı içindeki denetiminin görünümünü ayarlar.  
   
--   **Donuk**: kümeleri `VIEWSTATUS_OPAQUE` içinde bit [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) numaralandırma ve tüm denetim dikdörtgen geçirilen çizer [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) yöntemi. Denetim tamamen opak görünür ve kapsayıcı hiçbiri denetim sınırlarını gösterir.  
+ -   **Donuk**: içindeki bit VIEWSTATUS_OPAQUE ayarlar [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) numaralandırma ve geçirilen tüm denetim dikdörtgen çizer [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) yöntemi. Denetim tamamen opak görünür ve kapsayıcı hiçbiri denetim sınırlarını gösterir.      
+      
+        Bu ayar, daha hızlı bir denetim çizmek kapsayıcı sağlar. Bu seçeneği seçili değilse, Denetim saydam bölümleri içerebilir.  
+      
+        Donuk bir denetimi yalnızca düz bir arka plan olabilir.  
+      
+ -   VIEWSTATUS numaralandırmada bit VIEWSTATUS_SOLIDBKGND ayarlar. Denetimin arka plan, herhangi bir desen ile düz renk olarak görünür.  
+      
+  Bu seçenek yalnızca **donuk** seçeneği de belirlenir.  
   
-     Bu ayar denetimi daha hızlı bir şekilde çizmek kapsayıcı yardımcı olur. Bu seçenek seçilmezse, Denetim saydam bölümleri içerebilir.  
-  
-     Donuk bir denetim düz bir arka plan olabilir.  
-  
--   Ayarlar `VIEWSTATUS_SOLIDBKGND` içinde bit `VIEWSTATUS` numaralandırması. Denetimin arka planının hiçbir düzendeki düz renk olarak görünür.  
-  
-     Bu seçenek yalnızca **donuk** seçeneği de belirlenmediğinde.  
-  
- **Temel denetim ekleme**  
- Bir Windows denetim türüne ekleyerek bağlı için denetimi ayarlar bir [CContainedWindow](ccontainedwindowt-class.md) denetimi uygulama sınıfı veri üyesi. Ayrıca, ileti eşlemesi ve denetimi için Windows iletilerini işlemek için ileti işleyici işlevleri ekler. Listeden varsa oluşturmak için istediğiniz Windows denetimi türünü seçin.  
+**Temel denetim ekleme**  
+Denetim ekleyerek temel bir Windows Denetim türünde ayarlar bir [CContainedWindow](ccontainedwindowt-class.md) sınıfı denetimi uygulamak için veri üyesi. Ayrıca, ileti eşlemesi ve denetimi için Windows iletileri işlemek için ileti işleyici işlevlerini ekler. Listeden varsa oluşturmak için istediğiniz Windows Denetim türünü seçin.  
 
+ -   `Button`  
+      
+ -   `ListBox`  
+      
+ -   `SysAnimate32`  
+      
+ -   `SysListView32`  
+      
+ -   `ComboBox`  
+      
+ -   `RichEdit`  
+      
+ -   `SysDateTimePick32`  
+      
+ -   `SysMonthCal32`  
+      
+ -   `ComboBoxEx32`  
+      
+ -   `ScrollBar`  
+      
+ -   `SysHeader32`  
+      
+ -   `SysTabControl32`  
+      
+ -   `Edit`  
+      
+ -   `Static`  
+      
+ -   `SysIPAddress32`  
+      
+ -   `SysTreeView32`  
   
--   `Button`  
+**Çeşitli durumu**  
+Görünümünü ve davranışını ek seçenekler denetimi için ayarlar.  
   
--   `ListBox`  
+ -   **Çalışma zamanında görünmez**: denetimin çalışma zamanında görünmez olmasını ayarlar. Görünmez denetimler, zaman aralıklarında olayları tetikleme gibi arka plan işlemleri gerçekleştirmek için kullanabilirsiniz.  
+      
+ -   **Düğme gibi davranan**: içindeki bit OLEMISC_ACTSLIKEBUTTON ayarlar [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) yapacak bir denetimi etkinleştirmek için sabit bir düğme ister. Bu seçeneğin belirlenmesi, kapsayıcı denetimin istemci site varsayılan düğme olarak işaretledi, kendi kendini bir kalın kenarlığa sahip çizim varsayılan düğme olarak görüntülemek, düğme denetimi sağlar. Bkz: [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) daha fazla bilgi için.  
+      
+  -   **Etiket gibi davranan**: OLEMISC numaralandırmada bit OLEMISC_ACTSLIKELABEL kapsayıcının yerel etiketi değiştirmek bir denetimi etkinleştirmek için ayarlar. Kapsayıcı bu bayrağıyla yapmanız gerekenler herhangi bir şey olmadığını belirler.  
   
--   `SysAnimate32`  
+**Diğer**  
+Denetim için ek davranışı seçeneklerini ayarlar.  
   
--   `SysListView32`  
-  
--   `ComboBox`  
-  
--   `RichEdit`  
-  
--   `SysDateTimePick32`  
-  
--   `SysMonthCal32`  
-  
--   `ComboBoxEx32`  
-  
--   `ScrollBar`  
-  
--   `SysHeader32`  
-  
--   `SysTabControl32`  
-  
--   `Edit`  
-  
--   `Static`  
-  
--   `SysIPAddress32`  
-  
--   `SysTreeView32`  
-  
- **Çeşitli durumu**  
- Ek Görünüm ve davranış seçenekleri denetimi için ayarlar.  
-  
--   **Çalışma zamanında görünmez**: çalışma zamanında görünmez olmasını denetimi ayarlar. Görünmez denetimler aralıklarla olaylarını tetikleme gibi arka planda işlemlerini gerçekleştirmek için kullanabilirsiniz.  
-  
--   **Düğme gibi davranır**: kümeleri `OLEMISC_ACTSLIKEBUTTON` içinde bit [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) görev yapması denetimi etkinleştirmek için numaralandırma ister bir düğme. Kapsayıcı denetimin istemci sitesi varsayılan düğme olarak işaretledi, bu seçeneğin belirlenmesi kendisini kendisini kalın çerçeve çizerek bir varsayılan düğme olarak görüntülemek, düğme denetimi sağlar. Bkz: [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) daha fazla bilgi için.  
-  
--   **Etiket gibi davranan**: kümeleri `OLEMISC_ACTSLIKELABEL` içinde bit `OLEMISC` kapsayıcının yerel etiketi değiştirmek denetimi etkinleştirmek için numaralandırması. Kapsayıcı bu bayrağı ile Yapılacaklar herhangi bir şey belirler.  
-  
- **Diğer**  
- Denetim için ek davranışı seçeneklerini ayarlar.  
-  
--   **DC normalleştirilmiş**: denetim kendisini çizmek için çağrıldığında normalleştirilmiş cihaz bağlamı oluşturmak için ayarlar. Bu eylem denetimin görünümünü standartlaştıran ancak çizim daha az verimli kolaylaştırır.  
-  
--   **Yalnızca penceresinin**: denetiminizi penceresiz olamaz belirtir. Bu seçeneği seçmezseniz, Denetim penceresiz nesneleri destekler kapsayıcılarında otomatik olarak penceresiz ve penceresiz nesneleri desteklemezler kapsayıcılarında otomatik olarak pencereli olur. Bu seçeneğin belirlenmesi denetiminizi bile penceresiz nesneleri destekler kapsayıcılarında pencereli olmasını zorlar.  
-  
--   **Belirten gösterge**: denetiminizi görünmesini sağlamak için bu seçeneği seçin **Nesne Ekle** Word ve Excel gibi uygulamalarının iletişim kutusu. Denetim, ardından bu iletişim kutusu üzerinden katıştırılmış nesneler destekleyen herhangi bir uygulama tarafından eklenebilir.  
+ -   **DC normalleştirilmiş**: denetimin kendisini çizmek için çağrıldığında normalleştirilmiş bir cihaz bağlamı oluşturmak için ayarlar. Bu eylem denetimin görünümünü standartlaştırır ancak çizim daha az verimli kolaylaştırır.  
+      
+ -   **Sadece penceresini**: denetiminizin penceresiz olamayacağını belirtir. Bu seçeneği belirlemezseniz denetiminizdir penceresiz nesneleri destekleyen kapsayıcılarında otomatik olarak penceresiz ve penceresiz nesneleri desteklemeyen kapsayıcılarında otomatik olarak pencereli. Bu seçeneğin belirlenmesi, denetiminizin bile penceresiz nesneleri destekler kapsayıcılarda pencereli olmasını zorlar.  
+      
+ -   **Insertable**: denetiminizin görünür olması için bu seçeneği belirleyin **Nesne Ekle** Word ve Excel gibi uygulamaların iletişim kutusu. Denetim, ardından bu iletişim kutusu üzerinden katıştırılmış nesneleri destekleyen herhangi bir uygulama tarafından eklenebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL Denetim Sihirbazı](../../atl/reference/atl-control-wizard.md)   
- [Örnek SUBEDIT: Aktarılabileceği standart Windows denetimi](http://msdn.microsoft.com/en-us/30e46bdc-ed92-417c-b6b8-359017265a7b)
+ [Örnek SUBEDIT: Aktarılabileceği standart Windows denetimi](http://msdn.microsoft.com/30e46bdc-ed92-417c-b6b8-359017265a7b)
 
