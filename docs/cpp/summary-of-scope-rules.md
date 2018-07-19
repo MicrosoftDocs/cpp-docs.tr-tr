@@ -18,38 +18,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d901103f36493e74f73b2edb18faa1188e704ef
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2ce7c57688fae22c3bba844cff480ae3aec03785
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32423876"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028144"
 ---
 # <a name="summary-of-scope-rules"></a>Kapsam Kuralları Özeti
-Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı içinde benzersiz olmalıdır. Bir işlev adı gösterir işlevi sayısı ve türü parametrelerinin göre benzersiz olması gerekir. Ad anlaşılır, kalırsa [üye erişimi](../cpp/member-access-control-cpp.md) kuralları uygulanır.  
+Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı içinde benzersiz olmalıdır. Ad bir işlevi gösteriyorsa, işlev numarası ve parametre türüne göre benzersiz olmalıdır. Adı kalırsa, [üye erişimi](../cpp/member-access-control-cpp.md) kuralları uygulanır.  
   
 ## <a name="constructor-initializers"></a>Oluşturucu başlatıcıları  
- Oluşturucu başlatıcıları (açıklanan [başlatma tabanları ve üyeleri](http://msdn.microsoft.com/en-us/2f71377e-2b6b-49da-9a26-18e9b40226a1)) hangi için bunlar belirtilen Oluşturucusu dıştaki bloğunu kapsamında değerlendirilir. Bu nedenle, bunlar Oluşturucusu ait parametre adları kullanabilirsiniz.  
+ Oluşturucu başlatıcıları (açıklanan [başlatma tabanları ve üyeleri](http://msdn.microsoft.com/2f71377e-2b6b-49da-9a26-18e9b40226a1)) için bunlar belirtilir oluşturucunun en dıştaki bloğunun kapsamında değerlendirilir. Bu nedenle oluşturucunun parametre adları kullanabilirler.  
   
 ## <a name="global-names"></a>Genel adlar  
- İse veya herhangi bir işlev veya sınıf dışında sunulan genel birli kapsam işleciyle önekli bir nesne, işlev veya numaralandırıcı genel adıdır (`::`), ve bu ikili işleçler biriyle birlikte kullanılmıyorsa:  
+ Herhangi bir işlev veya sınıf dışında sunulan veya genel birli kapsam işleciyle önekli bir nesne, işlev veya numaralandırıcı adı genel ise (`::`), ve bu ikili işleçlerde biriyle birlikte kullanılmıyorsa:  
   
--   Kapsam çözümü (`::`)  
+-   Kapsam çözümleme (`::`)  
   
--   Nesneleri ve başvuruları için üye seçimi (**.**)  
+-   Nesneleri ve başvurular için üye seçimi (**.**)  
   
--   İşaretçileri için üye seçimi (**->**)  
+-   Üye seçimi işaretçileri (**->**)  
   
 ## <a name="qualified-names"></a>Nitelikli adlar  
  İkili kapsam çözümleme işleciyle kullanılan adlara (`::`) "nitelenmiş adlar" denir. İkili kapsam çözümleme işlecinden sonra belirtilen ad, işlecin solunda belirtilen sınıfın üyesi veya temel sınıfının üyesi olmalıdır.  
   
- Üye seçim işleci sonra belirtilen adları (**.** veya **->**) işlecinin sol veya onun temel sınıfları üyeleri belirtilen nesnenin sınıf türü üyeleri olmalıdır. Üye seçim işlecinin sağ tarafta belirtilen adları (**->**) nesneler de olabilir sol tarafında sağlanan başka bir sınıf türü **->** bir sınıf nesnesi ve sınıfı bir aşırı yüklenmiş üye seçimi işleç tanımlar (**->**) başka bir sınıf türü için bir işaretçi için değerlendirir. (Bu sağlama daha ayrıntılı olarak ele alınmıştır [sınıf üye erişimi](../cpp/member-access.md).)  
+ Üye seçme işlecinden sonra belirtilen adlar (**.** veya **->**) işlecinin sol veya temel sınıfının üyesi belirtilen nesnenin sınıf türünün üyeleri olmalıdır. Belirtilen üye seçme işleci sağ tarafındaki adlar (**->**) nesneleri de olabilir sol tarafında, başka bir sınıf türünde sağlanan **->** bir sınıf nesnesi ve sınıfı aşırı yüklenmiş üye seçme işleci tanımlar (**->**) olarak değerlendirilen başka bir sınıf türü işaretçisi. (Bu sağlama daha ayrıntılı olarak ele alınan [sınıfın üyesi erişimi](../cpp/member-access.md).)  
   
  Derleyici, aşağıdaki sırayı kullanarak ve ad bulunduğunda durarak adları arar:  
   
 1.  Ad bir işlev içerisinde kullanılırsa geçerli blok kapsamı; aksi takdirde, genel kapsam.  
   
-2.  (İşlev parametreleri içeren) dış işlev kapsamı dahil olmak üzere her kapsayan blok kapsamı aracılığıyla dışa.  
+2.  Aracılığıyla en dıştaki işlev kapsamı (işlev parametreleri içeren) dahil olmak üzere her kapsayan blok kapsamına dışa.  
   
 3.  Ad üye işlevinin içerisinde kullanılırsa, sınıfın kapsamında ad aranır.  
   
@@ -63,18 +63,18 @@ Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı
   
 1.  Öncesinde `::` olan adlar, aramayı genel bir kapsamdan başlamaya zorlar.  
   
-2.  Adları öncesinde tarafından **sınıfı**, `struct`, ve **UNION** anahtar sözcükler yalnızca aramak için derleyici zorla **sınıfı**, `struct`, veya **birleşimi**  adları.  
+2.  Adları öncesinde **sınıfı**, **yapı**, ve **birleşim** anahtar sözcükler, sistemi, yalnızca aramak için derleyiciyi **sınıfı**,  **Yapı**, veya **birleşim** adları.  
   
-3.  Kapsam çözümü işleci sol tarafındaki adları (`::`) yalnızca **sınıfı**, `struct`, **ad alanı**, veya **UNION** adları.  
+3.  Kapsam çözümleme işlecinin sol tarafındaki adlar (`::`) yalnızca **sınıfı**, **yapı**, **ad alanı**, veya **birleşim**adları.  
   
- Ad statik olmayan bir üyeye başvuruyor, ancak statik üye işlevinde kullanılıyorsa, bir hata iletisi oluşturulur. Adı herhangi bir statik olmayan üye kapsayan bir sınıf olarak başvuruyorsa, ekteki sınıfları kapsayan sınıfı olmadığı için benzer şekilde, bir hata iletisi oluşturulur **bu** işaretçileri.  
+ Ad statik olmayan bir üyeye başvuruyor, ancak statik üye işlevinde kullanılıyorsa, bir hata iletisi oluşturulur. Ad kapsayan sınıfta statik olmayan bir üye başvuruyorsa, kapsayan sınıflarda kapsayan sınıf olmadığı için benzer şekilde, bir hata iletisi oluşturulur **bu** işaretçileri.  
   
 ## <a name="function-parameter-names"></a>İşlev parametre adları  
- İşlev tanımları işlevi parametre adları işlevinin en dıştaki blok kapsamında olduğu kabul edilir. Bu nedenle, bunlar yerel adlardır ve işlevden çıkıldığında kapsam dışı olur.  
+ İşlev tanımlarındaki işlev parametre adları, işlevin en dıştaki bloğun kapsamında olacak şekilde değerlendirilir. Bu nedenle, bunlar yerel adlardır ve işlevden çıkıldığında kapsam dışı olur.  
   
- İşlev bildirimleri (prototipleri) işlevi parametre adları yerel bildirimi kapsamındaki ve bildirimi sonunda kapsam dışına.  
+ İşlev bildirimlerindeki (prototipler) işlev parametre adları bildirimin yerel kapsamı içinde olan ve bildirim sonunda kapsam dışına.  
   
- Varsayılan parametreler, önceki iki paragrafta açıklanan varsayılan oldukları parametre kapsamında bağlıdır. Bununla birlikte, bunlar yerel değişkenlere veya statik olmayan sınıf üyelerine erişemez. Varsayılan parametreleri noktasında işlev çağrısı değerlendirilir, ancak işlev bildirimi 's özgün kapsamında değerlendirilir. Bu nedenle, üye işlevleri için varsayılan parametreleri her zaman sınıfı kapsamında değerlendirilir.  
+ Varsayılan parametreler parametrenin varsayılan oldukları iki önceki paragrafta açıklandığı gibi kapsamındaki. Bununla birlikte, bunlar yerel değişkenlere veya statik olmayan sınıf üyelerine erişemez. Varsayılan parametreleri işlev çağrısı noktasında değerlendirilir, ancak bunlar işlev bildiriminin orijinal kapsamında değerlendirilir. Bu nedenle, üye işlevleri için varsayılan parametreleri her zaman sınıf kapsamında değerlendirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Devralma](../cpp/inheritance-cpp.md)

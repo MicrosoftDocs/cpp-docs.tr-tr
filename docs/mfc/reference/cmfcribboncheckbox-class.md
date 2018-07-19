@@ -34,15 +34,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 444d42c7273e64a07966592b315660b92ddf8ee0
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 97b143311f6326e938e9ac61175b02c82d3c8c2c
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042062"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39027186"
 ---
 # <a name="cmfcribboncheckbox-class"></a>CMFCRibbonCheckBox sınıfı
-`CMFCRibbonCheckBox` Sınıfı bir Şerit panelinde, hızlı erişim araç çubuğu veya açılan menüye ekleyebilirsiniz bir onay kutusu uygular.  
+`CMFCRibbonCheckBox` Sınıfı bir Şerit paneli, hızlı erişim araç çubuğu veya açılır menü ekleyebileceğiniz bir onay kutusu uygular.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -72,14 +72,14 @@ class CMFCRibbonCheckBox : public CMFCRibbonButton
 |[CMFCRibbonCheckBox::SetACCData](#setaccdata)|(Geçersiz kılmaları [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanılacak bir `CMFCRibbonCheckBox` uygulamanızda, kodunuzu aşağıdaki oluşturucuyu ekleyin:  
+ Kullanılacak bir `CMFCRibbonCheckBox` uygulamanızda kodunuza aşağıdaki oluşturucuyu ekleyin:  
   
 ```  
 CMFCRibbonCheckBox (UINT nID, LPCTSTR lpszText)  
 ```  
 Burada *nID* onay kutusunu komut kimliği ve *lpszText* onay kutusunun metin etiketi.  
   
- Kullanarak bir onay kutusu Şerit paneline ekleyebilir [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
+ Bir Şerit paneline bir onay kutusunu kullanarak ekleyebilirsiniz [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -94,7 +94,7 @@ Burada *nID* onay kutusunu komut kimliği ve *lpszText* onay kutusunun metin eti
  **Başlık:** afxribboncheckbox.h  
   
 ##  <a name="cmfcribboncheckbox"></a>  CMFCRibbonCheckBox::CMFCRibbonCheckBox  
- Şerit onay kutusunu nesnesinin Oluşturucusu  
+ Bir Şerit onay kutusunu nesnesinin Oluşturucusu  
   
 ```  
 CMFCRibbonCheckBox(
@@ -107,10 +107,10 @@ CMFCRibbonCheckBox(
  Komut kimliğini belirtir.  
   
  [in] *lpszText*  
- Metin etiketi belirtir.  
+ Metin etiketini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Şerit onay kutusunu nesnesi oluşturur.  
+ Bir Şerit onay kutusunu nesnesi oluşturur.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCRibbonCheckBox` sınıfı.  
@@ -126,16 +126,16 @@ virtual CSize GetCompactSize(CDC* pDC);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- İşaretçi `CDC` checkbox ile ilişkilendirilmiş.  
+ Onay kutusuyla ilişkili CDC işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür bir `CSize` onay kutusunu compact boyutunu içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçersiz kılınmazsa, onay kutusunu Ara boyutu döndürür.  
+ Kılınmazsa, onay kutusunu Ara boyutu döndürür.  
   
 ##  <a name="getintermediatesize"></a>  CMFCRibbonCheckBox::GetIntermediateSize  
- Onay kutusu Ara boyutunu alır.  
+ Onay kutusunu Ara boyutunu alır.  
   
 ```  
 virtual CSize GetIntermediateSize(CDC* pDC);
@@ -143,16 +143,16 @@ virtual CSize GetIntermediateSize(CDC* pDC);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- İşaretçi `CDC` bu onay kutusu ile ilişkilendirilmiş.  
+ Bu onay kutusu ile ilişkili CDC işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `CSize` onay kutusunu Ara boyutu içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçersiz kılınmazsa, Ara boyutu varsayılan onay kutusu boyutu olarak hesaplar ( `AFX_CHECK_BOX_DEFAULT_SIZE`) metin boyutu ve kenar boşlukları artı.  
+ Kılınmazsa, Ara boyutu olarak varsayılan onay kutusunun boyutunu hesaplar ( `AFX_CHECK_BOX_DEFAULT_SIZE`) artı metin boyutu ve kenar boşlukları.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonCheckBox::GetRegularSize  
- Onay kutusu normal boyutunu alır.  
+ Onay kutusunu normal boyutunu alır.  
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
@@ -160,28 +160,28 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- İşaretçi `CDC` bu onay kutusu ile ilişkili nesne.  
+ Bu onay kutusu ile ilişkili CDC nesne işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür bir `CSize` onay kutusunu normal boyutunu içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçersiz kılınmazsa, onay kutusunu Ara boyutu döndürür.  
+ Kılınmazsa, onay kutusunu Ara boyutu döndürür.  
   
 ##  <a name="isdrawtooltipimage"></a>  CMFCRibbonCheckBox::IsDrawTooltipImage  
- Checkbox ile ilişkilendirilmiş bir araç ipucu görüntüsü olup olmadığını gösterir.  
+ Bir araç ipucu görüntüsü onay kutusuyla ilişkili olup olmadığını belirtir.  
   
 ```  
 virtual BOOL IsDrawTooltipImage() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` checkbox ile ilişkilendirilmiş bir araç ipucu görüntüsü ise veya `FALSE` değilse.  
+ Onay kutusu ile ilişkili bir araç ipucu görüntüsü ise TRUE ya da aksi takdirde FALSE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ondraw"></a>  CMFCRibbonCheckBox::OnDraw  
- Belirtilen cihaz bağlamı kullanma onay kutusu Çiz çerçevesi tarafından çağrılır.  
+ Belirtilen bir cihaz bağlamı kullanma onay kutusunu çizmek için framework tarafından çağırılır.  
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -189,12 +189,12 @@ virtual void OnDraw(CDC* pDC);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- İşaretçi `CDC` onay kutusu Çiz edileceği.  
+ Onay kutusu Çiz edileceği CDC işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ondrawmenuimage"></a>  CMFCRibbonCheckBox::OnDrawMenuImage  
- Menü görüntüsü onay kutusu çizmek için çerçevesi tarafından çağrılır.  
+ Onay kutusu için bir menü görüntüsü çizilmesi gerektiğinde framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnDrawMenuImage(CDC*, CRect);
@@ -202,19 +202,19 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *CDC**  
- İşaretçi `CDC` checkbox ile ilişkilendirilmiş.  
+ Onay kutusuyla ilişkili CDC işaretçisi.  
   
  [in] *CRect*  
- A `CRect` menü görüntüsü çizmek için dikdörtgende belirtme nesnesi.  
+ A `CRect` nesne, menü görüntüsü çizmek dikdörtgen belirtme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` görüntü çizilmiş varsa veya `FALSE` değilse.  
+ Görüntü çizilmiş TRUE, değilse FALSE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçersiz kılınmazsa, döndürür `FALSE`.  
+ Kılınmazsa, false değerini döndürür.  
   
 ##  <a name="ondrawonlist"></a>  CMFCRibbonCheckBox::OnDrawOnList  
- Onay kutusu komutları liste kutusunda çizmek için framework tarafından çağrılır.  
+ Onay kutusunu komutlar liste kutusunda çizilmesi gerektiğinde framework tarafından çağırılır.  
   
 ```  
 virtual void OnDrawOnList(
@@ -228,22 +228,22 @@ virtual void OnDrawOnList(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- Onay kutusu çizmek cihaz bağlamı işaretçi.  
+ Onay kutusu Çiz cihaz bağlamı işaretçisi.  
   
  [in] *strText*  
- Görüntü metni.  
+ Görünen metin.  
   
  [in] *nTextOffset*  
- Liste kutusu görüntüleme metni için sol tarafındaki piksel cinsinden uzaklığı.  
+ Görüntülenecek metni liste kutusuna sol tarafındaki piksel cinsinden uzaklığı.  
   
- [in] *rect*  
- Görüntü dikdörtgen onay kutusu.  
+ [in] *dikdörtgen*  
+ Onay kutusu için görünen dikdörtgen.  
   
  [in] *bIsSelected*  
- `TRUE` onay kutusu seçili değilse veya `FALSE` değilse.  
+ Onay kutusunun seçili ya da aksi takdirde FALSE ise TRUE.  
   
  [in] *bHighlighted*  
- `TRUE` onay kutusu vurgulanmış, veya `FALSE` değilse.  
+ Onay kutusunu vurgulanan ya da aksi takdirde FALSE ise TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -258,16 +258,16 @@ virtual BOOL SetACCData(
   
 ### <a name="parameters"></a>Parametreler  
  *pParent*  
- Onay kutusu üst pencere.  
+ Onay kutusunun üst pencere.  
   
  *Veri*  
- Onay için erişilebilirlik verileri.  
+ Onay kutusu için erişilebilirlik veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Her zaman döndürür `TRUE`.  
+ Her zaman TRUE değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak bu yöntem onay kutusu ve her zaman erişilebilirlik veri döndürür ayarlar `TRUE`. Erişilebilirlik veri kümesi ve başarı veya başarısızlık belirten bir değer döndürmek için bu yöntemi geçersiz kılın.  
+ Varsayılan olarak bu yöntem, onay kutusu için erişilebilirlik veri kümeleri ve her zaman TRUE değerini döndürür. Erişilebilirlik veri kümesi ve başarı veya başarısızlık durumu gösteren bir değer döndürmek için bu yöntemi yok sayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

@@ -14,16 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad5f54bc0366b0da9286631294a10f4904b7cb30
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: af1220cbb6b872ebd0370cfa526aba47338e70e6
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028157"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>Taşıma Oluşturucuları ve Taşıma Atama İşleçleri (C++)
-Bu konuda nasıl yazılacağını açıklar bir *taşıma Oluşturucusu* ve C++ sınıf için bir taşıma atama işleci. Bir taşıma oluşturucusuna kopyalamadan bir lvalue taşınacak rvalue nesne tarafından sahip olunan kaynaklar sağlar. Taşıma semantiği hakkında daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
+Bu konu nasıl yazılacağını açıklar bir *taşıma Oluşturucu* ve bir C++ sınıfına ilişkin taşıma ataması işleci. Taşıma Oluşturucusu kopyalamadan bir lvalue taşınacak rvalue nesnesi tarafından sahip olunan kaynakları sağlar. Semantik taşıma hakkında daha fazla bilgi için bkz. [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
- Bu konuda aşağıdaki C++ sınıfı derlemeler `MemoryBlock`, bellek arabelleği yönetir.  
+ Bu konuda aşağıdaki C++ sınıfını derlemeler `MemoryBlock`, bir bellek arabelleğini yöneten.  
   
 ```cpp  
 // MemoryBlock.h  
@@ -101,11 +102,11 @@ private:
 };  
 ```  
   
- Aşağıdaki yordamlar, bir taşıma oluşturucusuna ve taşıma atama işleci C++ sınıfı örneği için yazılacak açıklar.  
+ Aşağıdaki yordamlarda, bir taşıma oluşturucusuna ve taşıma atama işleci örnek C++ sınıfı için yazılacak açıklanır.  
   
-### <a name="to-create-a-move-constructor-for-a-c-class"></a>Bir C++ sınıf için bir taşıma oluşturucusuna oluşturmak için  
+### <a name="to-create-a-move-constructor-for-a-c-class"></a>Bir C++ sınıfına ilişkin taşıma Oluşturucusu oluşturmak için  
   
-1.  Rvalue başvuru sınıf türü için kendi parametre olarak alır bir boş Oluşturucusu yöntemi, aşağıdaki örnekte gösterildiği gibi tanımlayın:  
+1.  Sınıf türü bir rvalue başvurusunu parametre olarak alan bir boş Oluşturucu yöntemi, aşağıdaki örnekte gösterildiği gibi tanımlayın:  
   
     ```cpp  
     MemoryBlock(MemoryBlock&& other)  
@@ -115,23 +116,23 @@ private:
     }  
     ```  
   
-2.  Taşıma oluşturucuda sınıf veri üyeleri kaynak nesneden oluşturulmuyor nesnesine atayın:  
+2.  Taşıma Kurucuda sınıfı veri üyelerini kaynak nesneden yapılandırılmakta olan nesneye atayın:  
   
     ```cpp  
     _data = other._data;  
     _length = other._length;  
     ```  
   
-3.  Kaynak nesne veri üyeleri için varsayılan değerler atayın. Bu, yıkıcı kaynakları (örneğin bellek) birden çok kez boşaltmasını engeller:  
+3.  Kaynak nesnesi veri üyeleri için varsayılan değerler atayın. Bu, yok edici kaynakları (bellek gibi) birden çok kez boşaltmasını engeller:  
   
     ```cpp  
     other._data = nullptr;  
     other._length = 0;  
     ```  
   
-### <a name="to-create-a-move-assignment-operator-for-a-c-class"></a>Bir C++ sınıf için bir taşıma atama işleci oluşturmak için  
+### <a name="to-create-a-move-assignment-operator-for-a-c-class"></a>Bir C++ sınıfına ilişkin taşıma ataması işleci oluşturmak için  
 
-1.  Rvalue başvuru sınıf türü, parametre olarak alıp bir başvuru sınıf türü döndüren bir boş atama işleci, aşağıdaki örnekte gösterildiği gibi tanımlayın:  
+1.  Aşağıdaki örnekte gösterildiği gibi rvalue başvurusunu parametre olarak sınıf türüne alan ve sınıf türüne bir referans döndüren boş atama işleci tanımlayın:  
   
     ```cpp  
     MemoryBlock& operator=(MemoryBlock&& other)  
@@ -139,7 +140,7 @@ private:
     }  
     ```  
   
-2.  Taşıma atama işleci nesne kendisine atamak çalışırsanız, hiçbir işlemi gerçekleştiren bir koşul deyimi ekleyin.  
+2.  Taşıma atama operatöründe, nesneyi kendisine atamaya çalıştığınızda işlem gerçekleştirmeyecek bir koşullu ifade ekleyin.  
   
     ```cpp  
     if (this != &other)  
@@ -147,16 +148,16 @@ private:
     }  
     ```  
   
-3.  Koşullu deyiminde (örneğin bellek) tüm kaynaklar için atanan bir nesneden boş.  
+3.  Koşullu deyimde, atanan nesneden tüm kaynakları (bellek gibi) boş.  
   
-     Aşağıdaki örnek boşaltır `_data` için atanan nesnesinden üye:  
+     Aşağıdaki örnek boşaltır `_data` üyesini şuna atanan nesneden:  
   
     ```cpp  
     // Free the existing resource.  
     delete[] _data;  
     ```  
   
-     Adım 2 ve 3'te veri üyeleri kaynak nesneden oluşturulmuyor nesnesine aktarmak için ilk yordamı izleyin:  
+     2. ve 3 veri üyelerini kaynak nesneden yapılandırılmakta olan nesneye aktarmak için ilk yordamdaki adımları izleyin:  
   
     ```cpp  
     // Copy the data pointer and its length from the   
@@ -170,14 +171,14 @@ private:
     other._length = 0;  
     ```  
   
-4.  Aşağıdaki örnekte gösterildiği gibi geçerli bir nesneye başvuru döndürün:  
+4.  Aşağıdaki örnekte gösterildiği gibi geçerli nesneye bir başvuru döndürür:  
   
     ```cpp  
     return *this;  
     ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, tam taşıma oluşturucusu ve taşıma atama işlecine gösterir `MemoryBlock` sınıfı:  
+ Aşağıdaki örnek, tam taşıma oluşturucu ve taşıma atama işlecine için gösterir `MemoryBlock` sınıfı:  
   
 ```cpp  
 // Move constructor.  
@@ -225,7 +226,7 @@ MemoryBlock& operator=(MemoryBlock&& other)
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl taşıma semantiği uygulamalarınızın performansını gösterir. Örnek bir vektör nesnesine iki öğe ekler ve ardından iki var olan öğeler arasında yeni bir öğe ekler. `vector` Sınıfı kullanır kopyalayarak yerine vektör öğelerini taşıyarak ekleme işlemi verimli bir şekilde gerçekleştirmek için semantiği taşıyın.  
+ Aşağıdaki örnek, taşıma semantiği, uygulamalarınızın performansını nasıl geliştireceğiniz gösterir. Bu örnek, bir vektör nesnesine iki öğe ekler ve ardından varolan iki öğe arasındaki yeni bir öğe ekler. `vector` Taşıma semantiği öğeleri vektör elementini kopyalamak yerine taşıyarak ekleme işlemini verimli bir şekilde gerçekleştirmek için sınıfı kullanır.  
   
 ```cpp  
 // rvalue-references-move-semantics.cpp  
@@ -247,7 +248,7 @@ int main()
 }  
 ```  
   
- Bu örnek şu çıkışı üretir:  
+ Bu örnek aşağıdaki çıktıyı üretir:  
   
 ```  
 In MemoryBlock(size_t). length = 25.  
@@ -270,7 +271,7 @@ In ~MemoryBlock(). length = 50. Deleting resource.
 In ~MemoryBlock(). length = 75. Deleting resource.  
 ```  
   
- Visual Studio 2010'dan önce bu örnekte aşağıdaki çıkış üretilen:  
+ Visual Studio 2010'dan önce bu örnek aşağıdaki çıktıyı üretilen:  
   
 ```  
 In MemoryBlock(size_t). length = 25.  
@@ -293,16 +294,17 @@ In ~MemoryBlock(). length = 50. Deleting resource.
 In ~MemoryBlock(). length = 75. Deleting resource.  
 ```  
   
- Sürümü kullanan semantiği taşımak bu örnek, daha az kopyalama, bellek ayırma ve bellek ayırmayı kaldırma işlemleri gerçekleştirdiğinden, taşıma semantiği kullanmayan sürümden daha verimli olur.  
+ Taşıma semantiği kullanan bu örneğinin sürümü, daha az kopyalama, bellek ayırma ve bellek birleştirme işlemi gerçekleştirdiğinden, taşıma semantiği kullanmayan sürümünden daha etkilidir.  
   
 ## <a name="robust-programming"></a>Güçlü Programlama  
- Kaynak sızıntıları önlemek için her zaman içinde taşıma atama işleci (örneğin, bellek, dosya tanıtıcıları ve yuva) kaynakları serbest.  
+ Kaynak sızıntılarını önlemek için her zaman kaynakları (örneğin, bellek, dosya tanıtıcıları ve yuvaları) taşıma ataması işlecinde serbest bırakın.  
   
- Kaynakların kurtarılamaz yok etme önlemek için düzgün şekilde taşıma atama işleci, kendi kendine atama işleyin.  
+ Kaynakların kurtarılamayacak şekilde yok edilmesini önlemek için taşıma ataması işlecinde kendi kendine atamayı düzgün bir şekilde işleyin.  
   
- Sınıfı için bir taşıma oluşturucusuna ve taşıma atama işleci sağlarsanız, taşıma atama işleci çağırmak için taşıma oluşturucusuna yazarak yedekli kod ortadan kaldırabilirsiniz. Aşağıdaki örnek taşıma atama işleci çağırır taşıma oluşturucusuna yeniden düzenlenen bir sürümünün gösterir:  
+ Sınıfınız için hem bir taşıma oluşturucusuna ve taşıma atama işleci sağlarsanız, taşıma atama işlecini çağırmak için taşıma kurucunuzu yazarak artıklı kodu çıkarabilirsiniz. Aşağıdaki örnek, taşıma atama işlecini çağıran bir taşıma Oluşturucusu düzeltilmiş bir hali gösterilmektedir:  
   
-```  
+```cpp
+  
 // Move constructor.  
 MemoryBlock(MemoryBlock&& other)  
    : _data(nullptr)  
@@ -312,8 +314,8 @@ MemoryBlock(MemoryBlock&& other)
 }  
 ```  
   
- [Std::move](../standard-library/utility-functions.md#move) işlevi korur rvalue özelliği `other` parametresi.  
+ [Std::move](../standard-library/utility-functions.md#move) işlevi rvalue özelliğini korur *diğer* parametresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md)   
- [\<yardımcı programı > taşıma](http://msdn.microsoft.com/en-us/abef7e85-9dd6-4724-85da-d7f7fe95dca9)
+ [\<yardımcı programı > Taşı](http://msdn.microsoft.com/abef7e85-9dd6-4724-85da-d7f7fe95dca9)

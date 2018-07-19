@@ -204,17 +204,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10f183ed498fde15166a6e8ee7e7d10cfe9f60d7
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: da86312e425f6b54abf6422af09a04c45aa733f2
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040941"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028388"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
- `CMFCTasksPane` Sınıfı tıklanabilir öğeleri (Görevler) listesini uygular.  
+ `CMFCTasksPane` Sınıfı (tıklanabilir öğelerin görevler) listesini uygular.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -228,15 +228,15 @@ class CMFCTasksPane : public CDockablePane
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCTasksPane::CMFCTasksPane](#cmfctaskspane)|Oluşturan bir `CMFCTasksPane` nesnesi.|  
+|[CMFCTasksPane::CMFCTasksPane](#cmfctaskspane)|Oluşturur bir `CMFCTasksPane` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCTasksPane::AddGroup](#addgroup)|Yeni bir grup görevlerin görev bölmesi denetimine ekler.|  
-|[CMFCTasksPane::AddLabel](#addlabel)|Yeni bir statik etiket belirtilen görev grubuna ekler.|  
-|[CMFCTasksPane::AddMRUFilesList](#addmrufileslist)|Bir gruba en son kullanılan (MRU) dosya listesi tarafından belirtilen görevleri ekler.|  
+|[CMFCTasksPane::AddGroup](#addgroup)|Görev bölmesi denetimi için yeni bir görev grubu ekler.|  
+|[CMFCTasksPane::AddLabel](#addlabel)|Yeni statik etiket, belirtilen görev grubuna ekler.|  
+|[CMFCTasksPane::AddMRUFilesList](#addmrufileslist)|Görevleri en son kullanılanlar (MRU) dosya listesi tarafından belirtilen bir gruba ekler.|  
 |[CMFCTasksPane::AddPage](#addpage)|Yeni bir sayfa görev bölmesine ekler.|  
 |[CMFCTasksPane::AddSeparator](#addseparator)||  
 |[CMFCTasksPane::AddTask](#addtask)|Yeni bir görev belirtilen görev grubuna ekler.|  
@@ -244,128 +244,128 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::CollapseAllGroups](#collapseallgroups)||  
 |[CMFCTasksPane::CollapseGroup](#collapsegroup)|Program aracılığıyla bir grup daraltır.|  
 |[CMFCTasksPane::CreateDefaultMiniframe](#createdefaultminiframe)|(Geçersiz kılmaları [CPane::CreateDefaultMiniframe](../../mfc/reference/cpane-class.md#createdefaultminiframe).)|  
-|[CMFCTasksPane::CreateMenu](#createmenu)|İçin bir menü oluşturmak için framework tarafından çağrılan **diğer görevleri bölmeleri** menü düğmesi.|  
-|[CMFCTasksPane::EnableAnimation](#enableanimation)|Etkinleştirir veya daraltma veya görev grupları genişletme sırasında animasyon devre dışı bırakır.|  
+|[CMFCTasksPane::CreateMenu](#createmenu)|İçin bir menü oluşturmak için framework tarafından çağırılır **diğer görevleri bölmeleri** menüsü düğmesi.|  
+|[CMFCTasksPane::EnableAnimation](#enableanimation)|Etkinleştirir veya görev grupları genişletme veya daraltma animasyon devre dışı bırakır.|  
 |[CMFCTasksPane::EnableGroupCollapse](#enablegroupcollapse)|Görev grupları daraltılmış olup olmadığını belirtir.|  
-|[CMFCTasksPane::EnableHistoryMenuButtons](#enablehistorymenubuttons)|Etkinleştirir ya da aşağı açılır menüler devre dışı bırakır **sonraki** ve **önceki** gezinti düğmeleri.|  
+|[CMFCTasksPane::EnableHistoryMenuButtons](#enablehistorymenubuttons)|Etkinleştirir ya da açılan menülerde devre dışı bırakır **sonraki** ve **önceki** gezinti düğmeleri.|  
 |[CMFCTasksPane::EnableNavigationToolbar](#enablenavigationtoolbar)|Etkinleştirir veya gezinti araç devre dışı bırakır.|  
 |[CMFCTasksPane::EnableOffsetCustomControls](#enableoffsetcustomcontrols)||  
-|[CMFCTasksPane::EnableScrollButtons](#enablescrollbuttons)|Etkinleştirir düğmeleri yerine bir kaydırma çubuğu kaydırın.|  
+|[CMFCTasksPane::EnableScrollButtons](#enablescrollbuttons)|Etkinleştirir yerine bir kaydırma çubuğu düğmelerinin kaydırın.|  
 |[CMFCTasksPane::EnableWrapLabels](#enablewraplabels)|Etkinleştirir veya etiketleri için sözcük kaydırmayı devre dışı bırakır.|  
 |[CMFCTasksPane::EnableWrapTasks](#enablewraptasks)|Etkinleştirir veya görevler için sözcük kaydırmayı devre dışı bırakır.|  
 |[CMFCTasksPane::GetActivePage](#getactivepage)|Etkin sayfa için sıfır tabanlı dizinini döndürür.|  
 |[CMFCTasksPane::GetGroupCaptionHeight](#getgroupcaptionheight)|Grup başlıkları yüksekliğini döndürür.|  
-|[CMFCTasksPane::GetGroupCaptionHorzOffset](#getgroupcaptionhorzoffset)|Görev bölmesi sol ve sağ kenarları bir Grup başlığını geçerli uzaklığını döndürür.|  
-|[CMFCTasksPane::GetGroupCaptionVertOffset](#getgroupcaptionvertoffset)|Görev bölmesi, üst ve alt kenarlarından Grup başlığını geçerli uzaklığını döndürür.|  
+|[CMFCTasksPane::GetGroupCaptionHorzOffset](#getgroupcaptionhorzoffset)|Görev bölmesi sol ve sağ kenarları geçerli bir Grup başlığını sapmasını döndürür.|  
+|[CMFCTasksPane::GetGroupCaptionVertOffset](#getgroupcaptionvertoffset)|Görev bölmesinde üst ve alt kenarları geçerli bir Grup başlığını sapmasını döndürür.|  
 |[CMFCTasksPane::GetGroupCount](#getgroupcount)|Grupları toplam sayısını döndürür.|  
-|[CMFCTasksPane::GetGroupLocation](#getgrouplocation)|Belirli bir grup için iç Grup dizinini döndürür.|  
-|[CMFCTasksPane::GetGroupVertOffset](#getgroupvertoffset)|Bir grup dikey uzaklığını döndürür.|  
-|[CMFCTasksPane::GetHorzMargin](#gethorzmargin)|Yatay boşluğu, bir görev bölmesi ve istemci alanını kenarlarına arasında döndürür.|  
+|[CMFCTasksPane::GetGroupLocation](#getgrouplocation)|Belirli bir grubu için iç Grup dizinini döndürür.|  
+|[CMFCTasksPane::GetGroupVertOffset](#getgroupvertoffset)|Bir grubun dikey uzaklığını döndürür.|  
+|[CMFCTasksPane::GetHorzMargin](#gethorzmargin)|Bir görev bölmesi ve istemci alanını kenarları yatay boşluk döndürür.|  
 |[CMFCTasksPane::GetNextPages](#getnextpages)||  
-|[CMFCTasksPane::GetPageByGroup](#getpagebygroup)|Belirtilen grup için sayfa dizini alır.|  
+|[CMFCTasksPane::GetPageByGroup](#getpagebygroup)|Belirli bir grup için sayfa dizini alır.|  
 |[CMFCTasksPane::GetPagesCount](#getpagescount)|Sayfa sayısını döndürür.|  
 |[CMFCTasksPane::GetPreviousPages](#getpreviouspages)||  
 |[CMFCTasksPane::GetScrollBarCtrl](#getscrollbarctrl)|(Geçersiz kılmaları [CWnd::GetScrollBarCtrl](../../mfc/reference/cwnd-class.md#getscrollbarctrl).)|  
 |[CMFCTasksPane::GetTask](#gettask)|Bir görev alır.|  
-|[CMFCTasksPane::GetTaskCount](#gettaskcount)|Belirtilen grubunda görev öğe sayısını döndürür.|  
+|[CMFCTasksPane::GetTaskCount](#gettaskcount)|Belirtilen bir gruba görev öğe sayısını döndürür.|  
 |[CMFCTasksPane::GetTaskGroup](#gettaskgroup)|Verilen grubu dizini için bir görev grubu döndürür.|  
-|[CMFCTasksPane::GetTaskLocation](#gettasklocation)|Grup ve belirli bir görevi dizini döndürür.|  
-|[CMFCTasksPane::GetTasksHorzOffset](#gettaskshorzoffset)|Sol ve sağ kenarları kendi üst gruplarının görevleri yatay uzaklığını döndürür.|  
+|[CMFCTasksPane::GetTaskLocation](#gettasklocation)|Grup ve dizin için belirli bir görev döndürür.|  
+|[CMFCTasksPane::GetTasksHorzOffset](#gettaskshorzoffset)|Kendi üst gruplarının sol ve sağ kenarları görevlerin yatay uzaklığını döndürür.|  
 |[CMFCTasksPane::GetTasksIconHorzOffset](#gettasksiconhorzoffset)||  
 |[CMFCTasksPane::GetTasksIconVertOffset](#gettasksiconvertoffset)||  
-|[CMFCTasksPane::GetVertMargin](#getvertmargin)|Bir görev bölmesi ve istemci alanını kenarlarına arasındaki dikey boşluğu verir.|  
+|[CMFCTasksPane::GetVertMargin](#getvertmargin)|Dikey aralığı, bir görev bölmesi ve istemci alanını kenarları döndürür.|  
 |[CMFCTasksPane::IsAccessibilityCompatible](#isaccessibilitycompatible)|(Geçersiz kılmaları `CDockablePane::IsAccessibilityCompatible`.)|  
 |[CMFCTasksPane::IsAnimationEnabled](#isanimationenabled)|Animasyon etkinleştirilip etkinleştirilmeyeceğini gösterir.|  
-|[CMFCTasksPane::IsBackButtonEnabled](#isbackbuttonenabled)|Geri düğmesini etkinleştirilip etkinleştirilmeyeceğini gösterir.|  
+|[CMFCTasksPane::IsBackButtonEnabled](#isbackbuttonenabled)|Geri düğmesi etkin olup olmadığını gösterir.|  
 |[CMFCTasksPane::IsForwardButtonEnabled](#isforwardbuttonenabled)|İlet düğmesi etkin olup olmadığını gösterir.|  
 |[CMFCTasksPane::IsGroupCollapseEnabled](#isgroupcollapseenabled)||  
-|[CMFCTasksPane::IsHistoryMenuButtonsEnabled](#ishistorymenubuttonsenabled)|Gösterir olup olmadığını **sonraki** ve **önceki** gezinti düğmeleri aşağı açılır menüler sahiptir.|  
+|[CMFCTasksPane::IsHistoryMenuButtonsEnabled](#ishistorymenubuttonsenabled)|Belirtir olup olmadığını **sonraki** ve **önceki** gezinti düğmeleri açılan menüler sahip.|  
 |[CMFCTasksPane::IsNavigationToolbarEnabled](#isnavigationtoolbarenabled)|Gezinti araç çubuğunun etkinleştirilip etkinleştirilmeyeceğini gösterir.|  
 |[CMFCTasksPane::IsToolBox](#istoolbox)||  
-|[CMFCTasksPane::IsWrapLabelsEnabled](#iswraplabelsenabled)|Görev bölmesi etiketler sözcükler kaydırılıp kaydırılmadığını gösterir.|  
-|[CMFCTasksPane::IsWrapTasksEnabled](#iswraptasksenabled)|Görev bölmesi görevlerinde sözcükler kaydırılıp kaydırılmadığını gösterir.|  
-|[CMFCTasksPane::LoadState](#loadstate)|(Geçersiz kılmaları [CDockablePane::LoadState](http://msdn.microsoft.com/en-us/96110136-4f46-4764-8a76-3b4abaf77917).)|  
+|[CMFCTasksPane::IsWrapLabelsEnabled](#iswraplabelsenabled)|Görev bölmesi etiketler sözcükleri kaydırılıp kaydırılmadığını gösterir.|  
+|[CMFCTasksPane::IsWrapTasksEnabled](#iswraptasksenabled)|Görev bölmesi görevlere sözcükleri kaydırılıp kaydırılmadığını gösterir.|  
+|[CMFCTasksPane::LoadState](#loadstate)|(Geçersiz kılmaları [CDockablePane::LoadState](http://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917).)|  
 |[CMFCTasksPane::OnCancel](#oncancel)||  
-|[CMFCTasksPane::OnClickTask](#onclicktask)|Kullanıcı görev bölmesindeki bir öğeyi tıklattığında çerçevesi tarafından çağrılır.|  
+|[CMFCTasksPane::OnClickTask](#onclicktask)|Kullanıcı görev bölmesindeki bir öğeye tıkladığında framework tarafından çağırılır.|  
 |[CMFCTasksPane::OnOK](#onok)||  
-|[CMFCTasksPane::OnPressBackButton](#onpressbackbutton)|Kullanıcı Geri düğmesini tıklattığında çerçevesi tarafından çağrılır.|  
-|[CMFCTasksPane::OnPressForwardButton](#onpressforwardbutton)|Kullanıcı İleri gezinti düğmesini tıklattığında çerçevesi tarafından çağrılır.|  
-|[CMFCTasksPane::OnPressHomeButton](#onpresshomebutton)|Kullanıcı Giriş gezinti düğmesini tıklattığında çerçevesi tarafından çağrılır|  
+|[CMFCTasksPane::OnPressBackButton](#onpressbackbutton)|Kullanıcı geri düğmesine tıkladığında framework tarafından çağırılır.|  
+|[CMFCTasksPane::OnPressForwardButton](#onpressforwardbutton)|Kullanıcı İleri gezinme düğmesine tıkladığında framework tarafından çağırılır.|  
+|[CMFCTasksPane::OnPressHomeButton](#onpresshomebutton)|Kullanıcı ana gezinti düğmesine tıkladığında framework tarafından çağırılır|  
 |[CMFCTasksPane::OnPressOtherButton](#onpressotherbutton)||  
 |[CMFCTasksPane::OnSetAccData](#onsetaccdata)|(Geçersiz kılmaları [CBasePane::OnSetAccData](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|  
-|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CDockablePane::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Geçersiz kılmaları [CDockablePane::PreTranslateMessage](http://msdn.microsoft.com/en-us/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
+|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CDockablePane::OnUpdateCmdUI](http://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
+|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Geçersiz kılmaları [CDockablePane::PreTranslateMessage](http://msdn.microsoft.com/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
 |[CMFCTasksPane::RecalcLayout](#recalclayout)|(Geçersiz kılmaları [CPane::RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).)|  
 |[CMFCTasksPane::RemoveAllGroups](#removeallgroups)|Belirtilen sayfadaki tüm grupları kaldırır.|  
-|[CMFCTasksPane::RemoveAllPages](#removeallpages)|Tüm sayfaları varsayılan (ilk) sayfası dışındaki görev bölmesinden kaldırır.|  
+|[CMFCTasksPane::RemoveAllPages](#removeallpages)|Görev bölmesinden varsayılan (ilk) sayfası dışındaki tüm sayfaları kaldırır.|  
 |[CMFCTasksPane::RemoveAllTasks](#removealltasks)|Tüm Görevler gruptan kaldırır.|  
 |[CMFCTasksPane::RemoveGroup](#removegroup)|Bir grubu kaldırır.|  
-|[CMFCTasksPane::RemovePage](#removepage)|Belirtilen sayfa görev bölmesinden kaldırır.|  
-|[CMFCTasksPane::RemoveTask](#removetask)|Bir görev, bir görev gruptan kaldırır.|  
-|[CMFCTasksPane::SaveState](#savestate)|(Geçersiz kılmaları [CDockablePane::SaveState](http://msdn.microsoft.com/en-us/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
-|[CMFCTasksPane::Serialize](#serialize)|(Geçersiz kılmaları [CDockablePane::Serialize](http://msdn.microsoft.com/en-us/09787e59-e446-4e76-894b-206d303dcfd6).)|  
+|[CMFCTasksPane::RemovePage](#removepage)|Belirtilen bir sayfa görev bölmesinden kaldırır.|  
+|[CMFCTasksPane::RemoveTask](#removetask)|Bir görev, bir görev grubundan kaldırır.|  
+|[CMFCTasksPane::SaveState](#savestate)|(Geçersiz kılmaları [CDockablePane::SaveState](http://msdn.microsoft.com/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
+|[CMFCTasksPane::Serialize](#serialize)|(Geçersiz kılmaları [CDockablePane::Serialize](http://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
 |[CMFCTasksPane::SetActivePage](#setactivepage)|Belirtilen bir sayfa görev bölmesinde etkinleştirir.|  
 |[CMFCTasksPane::SetCaption](#setcaption)|Bir görev bölmesi resim yazısı adını ayarlar.|  
-|[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|Bir Grup başlığını yüksekliğini ayarlar.|  
+|[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|Bir Grup başlığını yüksekliğini belirler.|  
 |[CMFCTasksPane::SetGroupCaptionHorzOffset](#setgroupcaptionhorzoffset)|Bir grup başlığı yatay uzaklığını belirler.|  
-|[CMFCTasksPane::SetGroupCaptionVertOffset](#setgroupcaptionvertoffset)|Bir Grup başlığını dikey uzaklığını belirler.|  
-|[CMFCTasksPane::SetGroupName](#setgroupname)|Grup adını belirler.|  
-|[CMFCTasksPane::SetGroupTextColor](#setgrouptextcolor)|Grup resim yazısı için metin rengini belirler.|  
-|[CMFCTasksPane::SetGroupVertOffset](#setgroupvertoffset)|Dikey uzaklığını bir grup için ayarlar.|  
-|[CMFCTasksPane::SetHorzMargin](#sethorzmargin)|Bir görev bölmesi ve istemci alanını kenarları arasında yatay boşluğu ayarlar.|  
-|[CMFCTasksPane::SetIconsList](#seticonslist)|Görevleri ile ilişkili resim listesi ayarlar.|  
-|[CMFCTasksPane::SetPageCaption](#setpagecaption)|Bir görev bölmesinde sayfa için açıklama metni ayarlar.|  
-|[CMFCTasksPane::SetTaskName](#settaskname)|Bir görev adını belirler.|  
+|[CMFCTasksPane::SetGroupCaptionVertOffset](#setgroupcaptionvertoffset)|Bir Grup başlığını dikey uzaklığı belirler.|  
+|[CMFCTasksPane::SetGroupName](#setgroupname)|Grup adını ayarlar.|  
+|[CMFCTasksPane::SetGroupTextColor](#setgrouptextcolor)|Bir grup başlığı metin rengini ayarlar.|  
+|[CMFCTasksPane::SetGroupVertOffset](#setgroupvertoffset)|Dikey uzaklık bir grup için ayarlar.|  
+|[CMFCTasksPane::SetHorzMargin](#sethorzmargin)|Bir görev bölmesi ve istemci alanını kenarları arasındaki yatay boşluğu ayarlar.|  
+|[CMFCTasksPane::SetIconsList](#seticonslist)|Görevleriyle ilişkili görüntü listesini ayarlar.|  
+|[CMFCTasksPane::SetPageCaption](#setpagecaption)|Açıklamalı alt yazı metni bir görev bölmesinde sayfası için ayarlar.|  
+|[CMFCTasksPane::SetTaskName](#settaskname)|Bir görev adını ayarlar.|  
 |[CMFCTasksPane::SetTasksIconHorzOffset](#settasksiconhorzoffset)||  
 |[CMFCTasksPane::SetTasksIconVertOffset](#settasksiconvertoffset)||  
 |[CMFCTasksPane::SetTaskTextColor](#settasktextcolor)|Bir görev için metin rengini belirler.|  
-|[CMFCTasksPane::SetTasksHorzOffset](#settaskshorzoffset)|Görevler yatay uzaklığını kendi üst sol ve sağ kenarları gruplarını ayarlar.|  
-|[CMFCTasksPane::SetVertMargin](#setvertmargin)|Görev bölmesi ve istemci alanını kenarlarına arasındaki dikey boşluğu ayarlar.|  
-|[CMFCTasksPane::SetWindowHeight](#setwindowheight)|Bir pencere yüksekliğini ayarlar.|  
+|[CMFCTasksPane::SetTasksHorzOffset](#settaskshorzoffset)|Yatay uzaklığını görev grupları, üst sol ve sağ kenarları ayarlar.|  
+|[CMFCTasksPane::SetVertMargin](#setvertmargin)|Bir görev bölmesi ve istemci alanını kenarları arasındaki dikey boşluğu ayarlar.|  
+|[CMFCTasksPane::SetWindowHeight](#setwindowheight)|Bir pencerenin yüksekliğini ayarlar.|  
 |[CMFCTasksPane::ShowCommandMessageString](#showcommandmessagestring)||  
-|[CMFCTasksPane::ShowTask](#showtask)|Gösterir veya gizler bir görev.|  
-|[CMFCTasksPane::ShowTaskByCmdId](#showtaskbycmdid)|Gösterir veya gizler kendi komut kimliği temel alınarak bir görevi|  
-|[CMFCTasksPane::Update](#update)|Görev bölmesine ait GUI öğeler güncelleştirir.|  
+|[CMFCTasksPane::ShowTask](#showtask)|Bir görev gizler veya gösterir.|  
+|[CMFCTasksPane::ShowTaskByCmdId](#showtaskbycmdid)|Gösterir veya gizler kendi komut kimliğini temel alarak bir görevi|  
+|[CMFCTasksPane::Update](#update)|Bir görev bölmesi için GUI öğelerin güncelleştirir.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCTasksPane::OnActivateTasksPanePage](#onactivatetaskspanepage)|Yeni bir görev bölmesi sayfa etkinleştirildiğinde çerçevesi tarafından çağrılır.|  
+|[CMFCTasksPane::OnActivateTasksPanePage](#onactivatetaskspanepage)|Yeni bir görev bölmesinde sayfası etkinleştirildiğinde framework tarafından çağırılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `CMFCTasksPane` Sınıfı aşağıdaki işlevleri gerçekleştirir:  
   
--   Öğeler gruplandırılmış ve her madde gruplamasını ilişkili bir resim yazısı olabilir.  
+-   Gruplandırılmış öğeler ve her madde gruplamasını ilişkili bir açıklamalı alt yazı olabilir.  
   
--   Öğe gruplandırmaları daraltılmış veya genişletilmiş.  
+-   Öğe gruplandırmaları genişletilebilir veya daraltılabilir.  
   
 -   Görev bölmesinde her öğe için bir simge atanabilir.  
   
--   Tek tek öğeler bir kullanıcı bir öğeyi tıklattığında yürüten bir komut kimliği ile ilişkili olabilir. Öğesini oluştuğunda `WM_COMMAND` ileti görev bölmesi denetimi sahibine gönderildi.  
+-   Bireysel öğeleri, bir kullanıcı bir öğeyi tıklattığında yürüten bir komut kimliği ile ilişkili olabilir. WM_COMMAND ileti, tıklayarak oluştuğunda görev bölmesi denetimi sahibine gönderilir.  
   
- Kullanılacak `CMFCTasksPane` denetiminde uygulamanızda, şu adımları izleyin:  
+ Kullanılacak `CMFCTasksPane` denetim uygulamanızda, aşağıdaki adımları izleyin:  
   
-1.  Embed bir `CMFCTasksPane` ana çerçeve pencere sınıfı nesnesine.  
+1.  Ekleme bir `CMFCTasksPane` ana çerçeve penceresi sınıfında nesnesine.  
   
-2.  İşleme sırasında `WM_CREATE` iletisi, çağrı `Create` yöntemi. Normal kullanabilirsiniz [CControlBar](../../mfc/reference/ccontrolbar-class.md) stilleri. Daha fazla bilgi için bkz. `CControlBar::Create`.  
+2.  WM_CREATE iletiyi işlerken çağırmak `Create` yöntemi. Normal kullanabileceğiniz [CControlBar](../../mfc/reference/ccontrolbar-class.md) stilleri. Daha fazla bilgi için bkz. `CControlBar::Create`.  
   
-3.  Çağrı [CMFCTasksPane::AddGroup](#addgroup) çeşitli gruplar eklemek için yöntem.  
+3.  Çağrı [CMFCTasksPane::AddGroup](#addgroup) çeşitli gruplar eklemek için yöntemi.  
   
-4.  Çağrı [CMFCTasksPane::AddTask](#addtask), [CMFCTasksPane::AddLabel](#addlabel) veya [CMFCTasksPane::AddMRUFilesList](#addmrufileslist) üye işlevleri yeni öğeleri (Görevler) her grubuna ekleyin.  
+4.  Çağrı [CMFCTasksPane::AddTask](#addtask), [CMFCTasksPane::AddLabel](#addlabel) veya [CMFCTasksPane::AddMRUFilesList](#addmrufileslist) yeni öğeler (Görevler) her gruba eklemek için üye işlevleri.  
   
-5.  Çağrı [CMFCTasksPane::EnableGroupCollapse](#enablegroupcollapse) öğesi gruplarını daraltabilirsiniz olup olmadığını belirtmek için.  
+5.  Çağrı [CMFCTasksPane::EnableGroupCollapse](#enablegroupcollapse) öğesi grupları daraltabilirsiniz olup olmadığını belirtmek için.  
   
- Aşağıdaki çizimde tipik görev bölmesi denetimini gösterir. İlk grup olan bir *özel* ve yazısına koyu renkli grubudur. Üçüncü Grup daraltılmıştır. Son gruptan görev bölmesinde alta hizalı ve başlığı yok ve gruptaki son görev basit bir etiketi:  
+ Tipik bir görev bölmesi denetimi aşağıda gösterilmektedir. İlk Grup bir *özel* koyu renk ve resim yazısına grubudur. Üçüncü Grup daraltılmıştır. Son grup alt kısmındaki görev bölmesinde için hizalanır ve başlığı yok ve son görev grubunda basit bir etikettir:  
   
  ![Görev bölmesi örneği](../../mfc/reference/media/nexttaskpane.png "nexttaskpane")  
   
- Çeşitli kenar boşluklarını ve uzaklıkları ayarlayarak görev bölmesinde görünümünü özelleştirebilirsiniz. Aşağıdaki çizimde, bu değişkenleri anlamını açıklar:  
+ Çeşitli kenar boşlukları ve ofsetleri ayarlayarak, görev bölmesinde görünümünü özelleştirebilirsiniz. Aşağıdaki çizim, bu değişkenler anlamını açıklar:  
   
  ![Özel görev grubu](../../mfc/reference/media/nexttaskgrpcustom.png "nexttaskgrpcustom")  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCTasksPane` nesne ve çeşitli yöntemlerle kullanma `CMFCTasksPane` sınıfı. Örnek Görev gruplarını daraltma etkinleştirmek için aşağı açılan menüler etkinleştirileceği gösterilmiştir **sonraki** ve **önceki** gezinti düğmeleri yerine bir kaydırma çubuğunun kaydırma düğmelerini etkinleştirmek için word etkinleştir Etiketler metin kaydırma, bir Grup başlığını metin rengini ayarlayın ve yatay ve dikey kenar boşluklarını ayarlama görev bölmesinde, resim yazısı adını ayarlayın.  
+ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCTasksPane` nesne ve çeşitli yöntemlerle kullanma `CMFCTasksPane` sınıfı. Örnekte, görev gruplarını daraltma etkinleştirmek için açılan menüler etkinleştirileceği gösterilmektedir **sonraki** ve **önceki** gezinti düğmeleri yerine bir kaydırma çubuğunun kaydırma düğmelerine etkinleştirmek için sözcük etkinleştir Etiketler metin kaydırma, bir grup başlığı metin rengini ayarlamak ve yatay ve dikey kenar boşluklarını ayarlama görev bölmesinde, resim yazısı adını ayarlayın.  
   
  [!code-cpp[NVC_MFC_RibbonApp#28](../../mfc/reference/codesnippet/cpp/cmfctaskspane-class_1.cpp)]  
   
@@ -380,7 +380,7 @@ class CMFCTasksPane : public CDockablePane
  **Başlık:** afxTasksPane.h  
   
 ##  <a name="addgroup"></a>  CMFCTasksPane::AddGroup  
- Yeni bir grup görevlerin görev bölmesi denetimine ekler.  
+ Görev bölmesi denetimi için yeni bir görev grubu ekler.  
   
 ```  
 int AddGroup(
@@ -403,24 +403,24 @@ int AddGroup(
  Sıfır tabanlı sayfa dizini belirtir.  
   
  [in] *lpszGroupName*  
- Grup adını belirtir.  
+ Grubun adını belirtir.  
   
  [in] *bBottomLocation*  
- `TRUE` Görev bölmesi denetimi altındaki grup oluşturmak için; Aksi takdirde `FALSE`.  
+ Görev bölmesi denetimi altındaki grup oluşturmak için TRUE; Aksi takdirde FALSE.  
   
  [in] *bÖzel*  
- `TRUE` Bu grup olarak işaretlemek için bir *özel* Grup; Aksi takdirde `FALSE`. Özel grupları hakkında daha fazla bilgi için Açıklamalar bölümüne bakın `CMFCTasksPane`.  
+ Bu grup olarak işaretlemek için doğru bir *özel* grubu; Aksi takdirde FALSE. Özel gruplar hakkında daha fazla bilgi için bkz. Açıklamalar bölümüne `CMFCTasksPane`.  
   
  [in] *hIcon*  
- Grup başlığını görüntülemek için bu simgeyi belirtir.  
+ Grup başlığı görüntülemek için bu simgeyi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İç listesinde grubunun sınıfı tutar gruplarının sıfır tabanlı dizini.  
+ Sınıf tutar grupları iç listesinde grubunun sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görevler bir grup oluşturun ve o grubun görev bölmesi denetimine eklemek için bu yöntemi çağırın.  
+ Bir görev grubu oluşturmak ve görev bölmesi denetimi için bu gruba eklemek için bu yöntemi çağırın.  
   
- Framework görev bölmesi denetiminin üst veya alt görev grupları görüntüler. Framework yalnızca bir grup alt kısmında görüntüleyebilirsiniz; Bu grubun en son eklenmesi gerekir.  
+ Framework, görev bölmesi denetimi üst veya alt görev grupları görüntüler. Framework, yalnızca bir grup alt kısmında görüntüleyebilirsiniz; Son olarak bu gruba eklenmelidir.  
   
 ##  <a name="addlabel"></a>  CMFCTasksPane::AddLabel  
  Bir etiket belirtilen görev grubuna ekler.  
@@ -434,26 +434,26 @@ int AddLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Burada etiketi eklenen Grup dizinini belirtir.  
+ [in] *Ngrup*  
+ Etiket burada eklenir grubunun dizinini belirtir.  
   
  [in] *lpszLabelName*  
  Etiketin adını belirtir.  
   
  [in] *nTaskIcon*  
- Etiketin yanında görüntülemek için bu simgeyi belirtir. Framework simgeler görüntüleri listesinde depolar. Bu parametre, o listesine bir dizin değil.  
+ Etiket yanında gösterilecek simgeyi belirtir. Framework simgeleri görüntülerin listesini depolar. Bu liste bir dizin parametredir.  
   
  [in] *bIsBold*  
- `TRUE` Etiket kalın metin olarak görüntülemek için; Aksi takdirde `FALSE`.  
+ Etiket kalın metin olarak görüntülemek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Grubun etiketi eklenen burada sıfır tabanlı dizini ya da grubu tarafından belirlediyseniz -1 *uplarını Dağıt* yok.  
+ Grubun etiketi eklenen burada sıfır tabanlı dizini ya da grubun belirtilen -1 *Ngrup* yok.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çerçeve, görevler ve etiketler farklı şekilde ele alır. Bir kullanıcı bir görevde tıkladığında framework komut yürütür. Bir kullanıcı üzerindeki bir etikette tıkladığında, hiçbir komut yürütülür. Daha fazla bilgi için bkz: [CMFCTasksPane::AddTask](#addtask).  
+ Framework farklı görevleri ve etiketlerini işler. Bir kullanıcı bir görevde tıkladığında framework komutu yürütür. Bir kullanıcı bir etikette tıkladığında, bir komut yürütülür. Daha fazla bilgi için [CMFCTasksPane::AddTask](#addtask).  
   
 ##  <a name="addmrufileslist"></a>  CMFCTasksPane::AddMRUFilesList  
- En son kullanılan (MRU) dosya listesinde bir gruba depolanan her dosya için bir görev ekler.  
+ En Son Kullanılanlar (MRU) dosya listesinde depolanan bir gruba her dosya için bir görev ekler.  
   
 ```  
 int AddMRUFilesList(
@@ -462,17 +462,17 @@ int AddMRUFilesList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Bir grup dizinini belirtir. Bu yöntem bu parametresi tarafından belirtilen grup MRU dosyaları listesi ekler.  
+ [in] *Ngrup*  
+ Bir grubu dizini belirtir. Bu yöntem MRU dosyalar listesinde bu parametre tarafından belirtilen gruba ekler.  
   
  [in] *nMaxFiles*  
- MRU dosya listesinde görüntülenecek dosyaların sayısını belirtir.  
+ MRU dosyalar listesinde görüntülenecek dosyaların sayısını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- MRU dosyalar listesinin nerede eklenen Grup sıfır tabanlı dizini ya da grubu tarafından belirlediyseniz -1 *uplarını Dağıt* yok.  
+ MRU dosyalar listesini burada eklenen grubu sıfır tabanlı dizini veya grubu tarafından belirtilmişse, -1 *Ngrup* yok.  
   
 ##  <a name="addpage"></a>  CMFCTasksPane::AddPage  
- Görev bölmesine bir sayfa ekler.  
+ Bir sayfa görev bölmesine ekler.  
   
 ```  
 int AddPage(LPCTSTR lpszPageLabel);
@@ -480,7 +480,7 @@ int AddPage(LPCTSTR lpszPageLabel);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszPageLabel*  
- Sayfa için etiket belirtir.  
+ Sayfası için etiketi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni sayfa sıfır tabanlı dizini.  
@@ -493,7 +493,7 @@ int AddSeparator(int nGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
+ [in] *Ngrup*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -512,23 +512,23 @@ int AddTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Burada görev eklenir grubu dizini belirtir.  
+ [in] *Ngrup*  
+ Burada görev eklenir grubu dizinini belirtir.  
   
  [in] *lpszTaskName*  
  Görev adını belirtir.  
   
  [in] *nTaskIcon*  
- Görev yanında görüntülemek için bu simgeyi belirtir. Framework simgeler görüntüleri listesinde depolar. Bu parametre, o listesine bir dizin değil.  
+ Görev yanında gösterilecek simgeyi belirtir. Framework simgeleri görüntülerin listesini depolar. Bu liste bir dizin parametredir.  
   
  [in] *uiCommandID*  
- Kullanıcı görevi tıklattığında yürütülecek komut komut Kimliğini belirtir. Görev, bir etiket olarak davranılır *uiCommandID* 0'dır.  
+ Kullanıcı görevi tıkladığında çalıştırılacak komutu komut Kimliğini belirtir. Görev, bir etiket olarak değerlendirilir *uiCommandID* 0'dır.  
   
  [in] *dwUserData*  
- Görev ile ilişkilendirilecek kullanıcı tanımlı veri belirtir.  
+ Görev ile ilişkili kullanıcı tanımlı veri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Görev eklenen nerede Grup sıfır tabanlı dizini ya da grubu tarafından belirlediyseniz -1 *uplarını Dağıt* yok.  
+ Görevi nerede eklenen grubu sıfır tabanlı dizini ya da grubun belirtilen -1 *Ngrup* yok.  
   
 ##  <a name="addwindow"></a>  CMFCTasksPane::AddWindow  
  Alt pencere görev bölmesine ekler.  
@@ -543,29 +543,29 @@ int AddWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Pencerenin burada eklenir grubu dizini belirtir.  
+ [in] *Ngrup*  
+ Pencerenin burada eklenir grubu dizinini belirtir.  
   
  [in] *hwndTask*  
- Eklemek için pencere tanıtıcısı belirtir.  
+ İşleyiciyi eklemek için pencerenin belirtir.  
   
  [in] *nWndHeight*  
  Pencerenin yüksekliğini belirtir.  
   
  [in] *bAutoDestroyWindow*  
- `TRUE` Görev kaldırıldığında penceresi yok etmek için; Aksi takdirde `FALSE`.  
+ Görev kaldırıldığında penceresini yok etmek için TRUE; Aksi takdirde FALSE.  
   
  [in] *dwUserData*  
  Görev ile ilişkili kullanıcı tanımlı veri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Pencerenin eklenen nerede Grup sıfır tabanlı dizini ya da grubu tarafından belirlediyseniz -1 *uplarını Dağıt* yok.  
+ Pencerenin eklenen burada grubu sıfır tabanlı dizini ya da grubun belirtilen -1 *Ngrup* yok.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görev bölmesine bir denetim eklemek için bu yöntemi çağırın. Örneğin, bir arama çubuğu gibi işlev düzenleme denetimine ekleyebilirsiniz.  
+ Bir görev bölmesi için bir denetim eklemek için bu yöntemi çağırın. Örneğin, arama çubuğu gibi çalışır bir düzenleme denetimi ekleyebilirsiniz.  
   
 ##  <a name="cmfctaskspane"></a>  CMFCTasksPane::CMFCTasksPane  
- Oluşturan bir [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) nesnesi.  
+ Oluşturur bir [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) nesne.  
   
 ```  
 CMFCTasksPane();
@@ -590,7 +590,7 @@ void CollapseAllGroups(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="collapsegroup"></a>  CMFCTasksPane::CollapseGroup  
- Daraltır veya bir grup genişletir.  
+ Bir grubu genişletir ya da daraltır.  
   
 ```  
 BOOL CollapseGroup(
@@ -605,19 +605,19 @@ BOOL CollapseGroup(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pGroup*  
- Daraltmak için grubunu belirtir.  
+ Grubu daraltmak için belirtir.  
   
  [in] *bCollapse*  
- `TRUE` grubu daraltmak için; `FALSE` grubu genişletmek için.  
+ Grubu daraltmak için TRUE; Grubu genişletmek için FALSE.  
   
- [in] *uplarını Dağıt*  
- Gruplar, iç listesinde daraltmak için Grup sıfır tabanlı dizini belirtir.  
+ [in] *Ngrup*  
+ Grupları iç listesinde daraltmak için Grup sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Grup daraltır ya da başarılı bir şekilde genişletir Aksi takdirde `FALSE`.  
+ Grup daraltır ya da başarılı bir şekilde genişletir gerekiyorsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daraltılmış grubu yalnızca Grup başlığını gösterir; Görev listesi gizlenir.  
+ Daraltılmış bir gruba yalnızca Grup başlığını gösterir. Görev listesini gizlenir.  
   
 ##  <a name="createdefaultminiframe"></a>  CMFCTasksPane::CreateDefaultMiniframe  
 
@@ -634,22 +634,22 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="createmenu"></a>  CMFCTasksPane::CreateMenu  
- Bir kullanıcı tıkladığında, görünen bir menü oluşturur **diğer görevleri bölmeleri** menü düğmesi.  
+ Kullanıcı tıkladığında görünür bir menü oluşturur **diğer görevleri bölmeleri** menüsü düğmesi.  
   
 ```  
 HMENU CreateMenu() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni menü için bir tanıtıcı.  
+ Yeni menüsüne tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir görev bölmesi menüsünü özelleştirmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Türetilen bir sınıfta bir görev bölmesi menüsünü özelleştirmek için bu yöntemi yok sayın.  
   
- Bu yöntem oluşturur açılır menü görev bölmesinde sayfaların listesini içerir. Menüde etkin sayfa yanındaki onay işareti görüntülenir.  
+ Bu yöntemin oluşturduğu açılır menüsünde, liste sayfalarının görev bölmesinde içerir. Menüde etkin sayfa yanında bir onay işareti görüntülenir.  
   
 ##  <a name="enableanimation"></a>  CMFCTasksPane::EnableAnimation  
- Etkinleştirir veya bir görev grubu genişletir veya daraltır oluşan animasyon devre dışı bırakır.  
+ Etkinleştirir veya görev grubu genişletir veya daraltır geldiğinde gerçekleşen animasyonu devre dışı bırakır.  
   
 ```  
 void EnableAnimation(BOOL bEnable = TRUE);
@@ -657,10 +657,10 @@ void EnableAnimation(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` bir görev oluşur animasyon etkinleştirmek için Grup genişletir veya daraltır; Aksi takdirde `FALSE`.  
+ Görev grubu genişletir veya daraltır geldiğinde gerçekleşen animasyonu etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bir görev grubu genişletir veya daraltır oluşan animasyon etkindir.  
+ Varsayılan olarak, bir görev grubu genişletir veya daraltır geldiğinde gerçekleşen animasyonu etkinleştirilir.  
   
 ##  <a name="enablegroupcollapse"></a>  CMFCTasksPane::EnableGroupCollapse  
  Bir kullanıcı görev grupları daraltabilirsiniz olup olmadığını belirtir.  
@@ -671,13 +671,13 @@ void EnableGroupCollapse(BOOL bEnable);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` Kullanıcıların görev grupları daraltabilirsiniz Aksi takdirde `FALSE`.  
+ Kullanıcılar, görev grupları daraltabilirsiniz TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daraltılmış bir görev grubu yalnızca Grup başlığını görüntüler; Görev listesi gizlenir.  
+ Daraltılmış bir görev grubu yalnızca Grup başlığını görüntüler. Görev listesini gizlenir.  
   
 ##  <a name="enablehistorymenubuttons"></a>  CMFCTasksPane::EnableHistoryMenuButtons  
- Aşağı açılır menüler etkinleştirir **sonraki** ve **önceki** gezinti düğmeleri.  
+ Aşağı açılan menüler etkinleştirir **sonraki** ve **önceki** gezinti düğmeleri.  
   
 ```  
 void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
@@ -685,12 +685,12 @@ void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` aşağı açılır menüler etkinleştirmek için **sonraki** ve **önceki** gezinti düğmeleri; Aksi halde, `FALSE`.  
+ Etkinleştirme açılan menülerde true **sonraki** ve **önceki** gezinti düğmeleri; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, aşağı açılan menüler **sonraki** ve **önceki** düğmeleri devre dışı bırakılır.  
+ Varsayılan olarak, açılan menülerde **sonraki** ve **önceki** düğmeleri devre dışı bırakıldı.  
   
- Menüleri kullanıcı kullanılan görevler sayfaları geçmişini içerir.  
+ Menüleri, kullanıcı kullanılan görevleri sayfaları geçmişini içerir.  
   
 ##  <a name="enablenavigationtoolbar"></a>  CMFCTasksPane::EnableNavigationToolbar  
  Etkinleştirir veya gezinti araç devre dışı bırakır.  
@@ -707,21 +707,21 @@ void EnableNavigationToolbar(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` gezinti araç çubuğunu etkinleştirmek için; Aksi takdirde `FALSE`.  
+ Gezinti araç etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
  [in] *uiToolbarBmpRes*  
- Araç çubuğunda görüntülemek için görüntüleri içeren bit eşlem kaynak Kimliğini belirtir.  
+ Araç çubuğunda görüntülenecek resimler içeren bir bit eşlemi Kaynak Kimliğini belirtir.  
   
  [in] *sizeToolbarImage*  
- Araç çubuğu görüntü boyutunu belirtir.  
+ Bir araç çubuğu görüntüsü boyutunu belirtir.  
   
  [in] *sizeToolbarButton*  
  Araç çubuğu düğmesi boyutunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Gezinti araç görev bölmesinin en üstünde framework görüntüleyen bir araç çubuğu bulunur. Gezinti araç içeren **geri**, **İleri**, ve **giriş** gezinti düğmeleri ve kullanılabilir sayfaların listesini içeren bir menü düğmesi.  
+ Gezinti araç görev bölmesinin üst kısmında framework görüntüleyen bir araç çubuğudur. Gezinti araç çubuğu içerir **geri**, **İleri**, ve **giriş** gezinti düğmeleri ve kullanılabilir sayfaların listesini içeren bir menü düğmesi.  
   
- Varsayılan olarak, gezinti araç framework görüntülemez. Gezinti araç görüntülenmiyorsa, gezinti düğmelerini takma çubuğunun açıklamalı alt yazı bulunur.  
+ Varsayılan olarak, gezinti araç framework görüntülemez. Gezinti araç görüntülenmiyorsa, gezinti düğmelerini takma çubuğu açıklamalı alt yazı yer alır.  
   
 ##  <a name="enableoffsetcustomcontrols"></a>  CMFCTasksPane::EnableOffsetCustomControls  
 
@@ -736,7 +736,7 @@ void EnableOffsetCustomControls(BOOL bEnable);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="enablescrollbuttons"></a>  CMFCTasksPane::EnableScrollButtons  
- Bir kaydırma çubuğunun yerine düğmeleri etkinleştirir kaydırın.  
+ Etkinleştirir yerine bir kaydırma çubuğu düğmelerinin kaydırın.  
   
 ```  
 void EnableScrollButtons(BOOL bEnable = TRUE);
@@ -744,13 +744,13 @@ void EnableScrollButtons(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` bir kaydırma çubuğunun yerine görev bölmesinde kaydırma düğmeleri görüntülemek için; Aksi takdirde `FALSE`.  
+ Görev bölmesi yerine bir kaydırma çubuğunun kaydırma düğmelerine görüntülemek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, framework kaydırma düğmeleri görev bölmesinde görüntüler.  
+ Varsayılan olarak, Çerçeve kaydırma düğmelerine görev bölmesinde görüntüler.  
   
 ##  <a name="enablewraplabels"></a>  CMFCTasksPane::EnableWrapLabels  
- Etkinleştirir veya etiketleri metinde için sözcük kaydırmayı devre dışı bırakır.  
+ Etkinleştirir veya etiketleri metni sözcük kaydırmayı devre dışı bırakır.  
   
 ```  
 void EnableWrapLabels(BOOL bEnable = TRUE);
@@ -758,13 +758,13 @@ void EnableWrapLabels(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` görev bölmesinde görünür etiketlerde metin kaydırma için; Aksi takdirde `FALSE`.  
+ Görev bölmesinde görüntülenen etiketlerinin metin kaydırma için true; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, framework metni etiketler kaydırma değil. Sözcük kaydırma etkin olduğunda, etiketleri metinde birden fazla çizgiyi görünebilir. Etiket satır işaretçileri gibi sonu içerebilir `\n` ve alt çizgi işaret `&`.  
+ Varsayılan olarak, çerçeve metni etiketleri Kaydır değil. Sözcük kaydırma etkin olduğunda, etiket metni birden fazla çizgiyi görünebilir. Satır işaretçileri gibi sonu etiketi içerebilir `\n` ve alt çizgi işaret `&`.  
   
 ##  <a name="enablewraptasks"></a>  CMFCTasksPane::EnableWrapTasks  
- Etkinleştirir veya görevleri metinde için sözcük kaydırmayı devre dışı bırakır.  
+ Etkinleştirir veya görevleri metin sözcük kaydırmayı devre dışı bırakır.  
   
 ```  
 void EnableWrapTasks(BOOL bEnable = TRUE);
@@ -772,7 +772,7 @@ void EnableWrapTasks(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` görevler görev bölmesinde sarmalamak için; Aksi takdirde `FALSE`.  
+ Görevler görev bölmesinde sarmalamak için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, görevler için sözcük kaydırmayı devre dışıdır.  
@@ -805,7 +805,7 @@ int GetGroupCaptionHorzOffset() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir grup başlığı yatay uzaklığını. Görev bölmesi sol veya sağ kenarından piksel cinsinden uzaklığı yatay uzaklığı.  
+ Bir grup başlığı, yatay uzaklık. Yatay uzaklık görev bölmesinin sol veya sağ kenarından piksel cinsinden uzaklığı dayalıdır.  
   
 ##  <a name="getgroupcaptionvertoffset"></a>  CMFCTasksPane::GetGroupCaptionVertOffset  
  Bir Grup başlığını dikey uzaklığını döndürür.  
@@ -815,7 +815,7 @@ int GetGroupCaptionVertOffset() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Görev bölmesi, üst ve alt kenarları gelen Grup başlığını dikey uzaklık.  
+ Bir Grup başlığını görev bölmesinin üst ve alt kenarları gelen dikey uzaklığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dikey uzaklığını için varsayılan değer 7 pikseldir.  
@@ -828,7 +828,7 @@ int GetGroupCount() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Görev bölmesinde grupları toplam sayısı.  
+ Grupları görev bölmesinde toplam sayısı.  
   
 ##  <a name="getgrouplocation"></a>  CMFCTasksPane::GetGroupLocation  
  Belirtilen grup için iç Grup dizinini döndürür.  
@@ -841,36 +841,36 @@ BOOL GetGroupLocation(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pGroup*  
- Konumu alınır görev grubunu belirtir.  
+ Konumu alınan görev grubunu belirtir.  
   
- [out] *uplarını Dağıt*  
- Görev grubu sıfır tabanlı dizini içerir.  
+ [out] *Ngrup*  
+ Görev grubu sıfır tabanlı dizinini içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Görev grubu bulunduysa; Aksi takdirde `FALSE`.  
+ Görev grubu bulunduysa TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="getgroupvertoffset"></a>  CMFCTasksPane::GetGroupVertOffset  
- Bir grup dikey uzaklığını döndürür.  
+ Bir grubun dikey uzaklığını döndürür.  
   
 ```  
 int GetGroupVertOffset() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Piksel cinsinden bir grup dikey uzaklık.  
+ Piksel cinsinden bir grubun dikey uzaklık.  
   
 ##  <a name="gethorzmargin"></a>  CMFCTasksPane::GetHorzMargin  
- Yatay boşluğu, bir görev bölmesi ve istemci alanını kenarı arasında döndürür.  
+ Bir görev bölmesi ve istemci alanını kenarı yatay boşluk döndürür.  
   
 ```  
 int GetHorzMargin() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir görev bölmesi ve istemci alanını kenarı arasında yatay boşluk.  
+ Bir görev bölmesi ve istemci alanını kenarı arasındaki yatay boşluk.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görev bölmesi ve istemci alanını kenarı arasındaki varsayılan boşluğu 12 pikseldir.  
+ Bir görev bölmesi ve istemci alanını kenarı arasındaki varsayılan aralığı 12 pikseldir.  
   
 ##  <a name="getnextpages"></a>  CMFCTasksPane::GetNextPages  
 
@@ -885,7 +885,7 @@ void GetNextPages(CStringList& lstNextPages) const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getpagebygroup"></a>  CMFCTasksPane::GetPageByGroup  
- Belirtilen grup için sayfa dizini alır.  
+ Belirli bir grup için sayfa dizini alır.  
   
 ```  
 BOOL GetPageByGroup(
@@ -894,14 +894,14 @@ BOOL GetPageByGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
+ [in] *Ngrup*  
  Görev grubu sıfır tabanlı dizini belirtir.  
   
  [out] *nPage*  
- Belirtilen grup için sayfa dizini içerir. Görev grubu yalnızca bir varsayılan sayfa içeriyorsa, döndürülen değer 0'dır.  
+ Belirtilen grup için sayfa dizini içerir. Görev grubu yalnızca bir varsayılan sayfası içeriyorsa, döndürülen değer 0'dır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` değilse grup *uplarını Dağıt* var; Aksi halde, `FALSE`.  
+ TRUE ise grup *Ngrup* var; Aksi takdirde FALSE.  
   
 ##  <a name="getpagescount"></a>  CMFCTasksPane::GetPagesCount  
  Sayfa sayısını döndürür.  
@@ -949,45 +949,45 @@ CMFCTasksPaneTask* GetTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Görev içeren grubun sıfır tabanlı dizini belirtir.  
+ [in] *Ngrup*  
+ Görevi içeren grubun sıfır tabanlı dizini belirtir.  
   
  [in] *nGörev*  
- Görev sıfır tabanlı dizini tarafından belirtilen listede belirten *uplarını Dağıt*.  
+ Tarafından belirtilen listesinde görev sıfır tabanlı dizini belirtir *Ngrup*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen dizindeki görev.  
   
 ##  <a name="gettaskcount"></a>  CMFCTasksPane::GetTaskCount  
- Belirtilen bir grupta görevlerin sayısını döndürür.  
+ Belirtilen bir gruba görevlerin sayısını döndürür.  
   
 ```  
 int GetTaskCount(int nGroup) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Görev grubu dizinini belirtir.  
+ [in] *Ngrup*  
+ Görev grubu dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen grup ya da 0 ise görev sayısı *uplarını Dağıt* geçersiz.  
+ Belirtilen grup veya 0 ise görevlerin sayısını *Ngrup* geçersiz.  
   
 ##  <a name="gettaskgroup"></a>  CMFCTasksPane::GetTaskGroup  
- Belirtilen grup dizin için bir görev grubu döndürür.  
+ Belirtilen grup dizini için bir görev grubu döndürür.  
   
 ```  
 CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Grubun almak için sıfır tabanlı dizini belirtir.  
+ [in] *Ngrup*  
+ Alınacak grubunun sıfır tabanlı dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen dizindeki görev grubu.  
   
 ##  <a name="gettasklocation"></a>  CMFCTasksPane::GetTaskLocation  
- Grup ve dizini için belirtilen bir görev döndürür.  
+ Grup ve dizin için belirtilen bir görev döndürür.  
   
 ```  
 BOOL GetTaskLocation(
@@ -1010,36 +1010,36 @@ BOOL GetTaskLocation(
  [in] *uiCommandID*  
  Bulunacak görev komut Kimliğini belirtir.  
   
- [out] *uplarını Dağıt*  
- Görevin grubu dizini içerir.  
+ [out] *Ngrup*  
+ Görev grubu dizinini içerir.  
   
  [out] *nGörev*  
  Görev grubundaki görev dizinini içerir.  
   
  [in] *hwndTask*  
- Görevle ilişkilendirilmiş penceresi belirtir.  
+ Görev ile ilişkili penceresi belirtir.  
   
  [in] *pTask*  
- Bulunacak görev belirtir.  
+ Bulma görevi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Görev konumu bulunamadı `FALSE` belirtilen görev mevcut değilse.  
+ Görev konumu bulunduysa TRUE; Belirtilen görev yoksa FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem grubu dizini ve belirtilen görev için görevi dizinini alır. Yöntem döndürüyorsa `FALSE`, *uplarını Dağıt* ve *nGörev* -1 olarak ayarlayın.  
+ Bu yöntem, belirtilen görev için görev dizini ve grubu dizini alır. Yöntem FALSE döndürürse, *Ngrup* ve *nGörev* -1 olarak ayarlanır.  
   
 ##  <a name="gettaskshorzoffset"></a>  CMFCTasksPane::GetTasksHorzOffset  
- Görevler yatay uzaklığını döndürür.  
+ Görevlerin yatay uzaklığını döndürür.  
   
 ```  
 int GetTasksHorzOffset() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sol ve sağ kenarları kendi üst gruplarının görevlerden yatay uzaklığını.  
+ Kendi üst gruplarının sol ve sağ kenarları görevini yatay uzaklık.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görevler varsayılan yatay uzaklığını 12 pikseldir.  
+ Varsayılan yatay uzaklığını görevlerin 12 pikseldir.  
   
 ##  <a name="gettasksiconhorzoffset"></a>  CMFCTasksPane::GetTasksIconHorzOffset  
 
@@ -1064,17 +1064,17 @@ int GetTasksIconVertOffset() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getvertmargin"></a>  CMFCTasksPane::GetVertMargin  
- Bir görev bölmesi ve istemci alanını kenarlarına arasındaki dikey boşluğu verir.  
+ Bir görev bölmesi ve istemci alanını kenarları dikey boşluğu verir.  
   
 ```  
 int GetVertMargin() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir görev bölmesi ve istemci alanını kenarları arasında dikey boşluğu.  
+ Bir görev bölmesi ve istemci alanını kenarları arasındaki dikey kenar boşluğu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dikey boşluğu bir görev bölmesi ve istemci alanını kenarlarına arasındaki boşluğu ' dir. Varsayılan değer dikey boşluğu olarak 12 pikseldir.  
+ Dikey boşluğu, bir görev bölmesi ve istemci alanını kenarları arasındaki alandır. 12 piksel dikey kenar boşluğu varsayılan değerdir.  
   
 ##  <a name="isaccessibilitycompatible"></a>  CMFCTasksPane::IsAccessibilityCompatible  
 
@@ -1095,23 +1095,23 @@ BOOL IsAnimationEnabled() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bir kullanıcı genişletir ya da bir grup daraltır oluşan animasyon etkinleştirilirse; Aksi takdirde `FALSE`.  
+ Bir kullanıcı genişletir veya daraltır Grup gerçekleşen animasyonu etkinse TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı [CMFCTasksPane::EnableAnimation](#enableanimation) etkinleştirme veya devre dışı animasyon.  
+ Çağrı [CMFCTasksPane::EnableAnimation](#enableanimation) etkinleştirme veya animasyon devre dışı.  
   
 ##  <a name="isbackbuttonenabled"></a>  CMFCTasksPane::IsBackButtonEnabled  
- Geri düğmesini etkinleştirilip etkinleştirilmeyeceğini gösterir.  
+ Geri düğmesi etkin olup olmadığını gösterir.  
   
 ```  
 BOOL IsBackButtonEnabled() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Geri düğmesini etkinleştirilirse; Aksi takdirde `FALSE`.  
+ Geri düğmesi etkinse TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir kullanıcı geri düğmesine tıkladığında, çerçeve önceki görev sayfasını görüntüler.  
+ Kullanıcı geri düğmesine tıkladığında framework önceki görev sayfasını görüntüler.  
   
 ##  <a name="isforwardbuttonenabled"></a>  CMFCTasksPane::IsForwardButtonEnabled  
  İlet düğmesi etkin olup olmadığını gösterir.  
@@ -1121,10 +1121,10 @@ BOOL IsForwardButtonEnabled() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` İlet düğmesi etkinleştirilir Aksi takdirde `FALSE`.  
+ İleri düğmesi etkinse TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlet düğmesi görev sayfaların geçmişinde İleri gezinti sağlar.  
+ İlet düğmesi görev sayfaların İleri Gezinme geçmişi sağlar.  
   
 ##  <a name="isgroupcollapseenabled"></a>  CMFCTasksPane::IsGroupCollapseEnabled  
 
@@ -1138,14 +1138,14 @@ BOOL IsGroupCollapseEnabled() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ishistorymenubuttonsenabled"></a>  CMFCTasksPane::IsHistoryMenuButtonsEnabled  
- Gösterir olup olmadığını **sonraki** ve **önceki** gezinti düğmeleri aşağı açılır menüler sahiptir.  
+ Belirtir olup olmadığını **sonraki** ve **önceki** gezinti düğmeleri açılan menüler sahip.  
   
 ```  
 BOOL IsHistoryMenuButtonsEnabled() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` varsa **sonraki** ve **önceki** gezinti düğmeleri aşağı açılır menüler sahiptir; Aksi halde, `FALSE`.  
+ TRUE ise **sonraki** ve **önceki** gezinti düğmeleri açılan menüler sahip; Aksi takdirde FALSE.  
   
 ##  <a name="isnavigationtoolbarenabled"></a>  CMFCTasksPane::IsNavigationToolbarEnabled  
  Gezinti araç çubuğunun etkinleştirilip etkinleştirilmeyeceğini gösterir.  
@@ -1155,7 +1155,7 @@ BOOL IsNavigationToolbarEnabled() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` gezinti araç etkinleştirilirse; Aksi takdirde `FALSE`.  
+ Gezinti araç etkinse TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="istoolbox"></a>  CMFCTasksPane::IsToolBox  
 
@@ -1169,24 +1169,24 @@ virtual BOOL IsToolBox() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="iswraplabelsenabled"></a>  CMFCTasksPane::IsWrapLabelsEnabled  
- Görev bölmesi etiketler sözcükler kaydırılıp kaydırılmadığını gösterir.  
+ Görev bölmesi etiketler sözcükleri kaydırılıp kaydırılmadığını gösterir.  
   
 ```  
 BOOL IsWrapLabelsEnabled() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Etiketlerde sözcükler kaydırılmış; Aksi takdirde `FALSE`.  
+ Etiketleri sözcükleri sarmalanmış TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="iswraptasksenabled"></a>  CMFCTasksPane::IsWrapTasksEnabled  
- Framework görev dize sarmalar olup olmadığını belirtir.  
+ Framework görev dize kaydırıp kaydırmayacağını belirler.  
   
 ```  
 BOOL IsWrapTasksEnabled() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Görev dize Sarmalanan; Aksi takdirde `FALSE`.  
+ Görev dize sarmalandıktan TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="loadstate"></a>  CMFCTasksPane::LoadState  
 
@@ -1208,14 +1208,14 @@ virtual BOOL LoadState(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onactivatetaskspanepage"></a>  CMFCTasksPane::OnActivateTasksPanePage  
- Görev bölmesi sayfası etkin yaptığında çerçevesi tarafından çağrılır.  
+ Bir görev bölmesinde sayfa etkin yaptığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnActivateTasksPanePage();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görev bölmesinde sayfa görünümünü özelleştirmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Türetilen bir sınıfta görev bölmesinde sayfasının görünümünü özelleştirmek için bu yöntemi yok sayın.  
   
 ##  <a name="oncancel"></a>  CMFCTasksPane::OnCancel  
 
@@ -1227,7 +1227,7 @@ virtual void OnCancel();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onclicktask"></a>  CMFCTasksPane::OnClickTask  
- Kullanıcı görev bölmesindeki bir öğeyi tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı görev bölmesindeki bir öğeye tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnClickTask(
@@ -1239,21 +1239,21 @@ virtual void OnClickTask(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nGroupNumber*  
- Tıklattığınız görev içeren grubun sıfır tabanlı dizini belirtir.  
+ Tıklandı görev içeren grubunu sıfır tabanlı dizini belirtir.  
   
  [in] *nTaskNumber*  
- Tıklattığınız görev sıfır tabanlı dizini belirtir.  
+ Tıklandı görev sıfır tabanlı dizini belirtir.  
   
  [in] *uiCommandID*  
  Görevle ilgili komut Kimliğini belirtir.  
   
  [in] *dwUserData*  
- Tıklattığınız görev ile ilişkili kullanıcı tanımlı veri içerir.  
+ Tıklandı görev ile ilişkili kullanıcı tanımlı veri içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir kullanıcı bir görev tıkladığında framework bu yöntemi çağırır. Varsayılan olarak, framework tıklatılan görevle ilgili komut kimliği denetler ve sıfır değilse, görev bölmesi denetimi sahibine WM_COMMAND ileti gönderir.  
+ Bir kullanıcı göreve tıkladığı zaman framework bu yöntemi çağırır. Varsayılan olarak, çerçeve tıklandı görevle ilgili komut kimliği denetler ve sıfır değilse, görev bölmesi denetimi sahibine WM_COMMAND ileti gönderir.  
   
- Bir görev tıklatıldığında özel kod yürütmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Türetilen bir sınıfta bir görev tıklandığında özel kod yürütmek için bu yöntemi yok sayın.  
   
 ##  <a name="onok"></a>  CMFCTasksPane::OnOK  
 
@@ -1265,40 +1265,40 @@ virtual void OnOK();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onpressbackbutton"></a>  CMFCTasksPane::OnPressBackButton  
- Kullanıcı Geri düğmesini tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı geri düğmesine tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnPressBackButton();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, daha önce görüntülenen sayfa framework görüntüler.  
+ Varsayılan olarak, daha önce görüntülenen sayfanın framework görüntüler.  
   
- Kullanıcı Geri düğmesini tıklattığında özel kod yürütmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Türetilen bir sınıfta kullanıcı geri düğmesine tıkladığında, özel kod yürütmek için bu yöntemi yok sayın.  
   
 ##  <a name="onpressforwardbutton"></a>  CMFCTasksPane::OnPressForwardButton  
- Kullanıcı İleri gezinti düğmesini tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı İleri gezinme düğmesine tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnPressForwardButton();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, framework tıklatmadan önce kullanıcıya görüntülenen sayfasını görüntüler **geri** düğmesi.  
+ Varsayılan olarak, çerçeve tıklamadan önce kullanıcıya görüntülenen sayfasını görüntüler **geri** düğmesi.  
   
- Kullanıcı ilet düğmesini tıklattığında özel kod yürütmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Türetilen bir sınıfta kullanıcı ilet düğmesini tıkladığında özel kod yürütmek için bu yöntemi yok sayın.  
   
 ##  <a name="onpresshomebutton"></a>  CMFCTasksPane::OnPressHomeButton  
- Kullanıcı Giriş gezinti düğmesini tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı ana gezinti düğmesine tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnPressHomeButton();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, framework görev grubu için varsayılan sayfasını görüntüler.  
+ Varsayılan olarak, görev grubunun varsayılan sayfasında framework görüntüler.  
   
- Kullanıcı Giriş gezinti düğmesini tıklattığında özel kod yürütmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Türetilen bir sınıfta kullanıcı giriş gezinti düğmesini tıkladığında özel kod yürütmek için bu yöntemi yok sayın.  
   
 ##  <a name="onpressotherbutton"></a>  CMFCTasksPane::OnPressOtherButton  
 
@@ -1379,27 +1379,27 @@ void RemoveAllGroups(int nPageIdx = 0);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nPageIdx*  
- Sayfa sıfır tabanlı dizini belirtir.  
+ Sayfasının sıfır tabanlı dizinini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İle belirtilen sayfadaki tüm grupları kaldırır *nPageIdx*, veya yalnızca bir varsayılan sayfa ise tüm gruplar.  
+ İle belirtilen sayfadaki tüm grupları kaldırır *nPageIdx*, veya yalnızca bir varsayılan sayfa varsa tüm grupları.  
   
 ##  <a name="removeallpages"></a>  CMFCTasksPane::RemoveAllPages  
- Tüm sayfaları varsayılan (ilk) sayfası dışındaki görev bölmesinden kaldırır.  
+ Görev bölmesinden varsayılan (ilk) sayfası dışındaki tüm sayfaları kaldırır.  
   
 ```  
 void RemoveAllPages();
 ```  
   
 ##  <a name="removealltasks"></a>  CMFCTasksPane::RemoveAllTasks  
- Tüm Görevler belirtilen gruptan kaldırır.  
+ Tüm görevler, belirtilen gruptan kaldırır.  
   
 ```  
 void RemoveAllTasks(int nGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
+ [in] *Ngrup*  
  Grup sıfır tabanlı dizini belirtir.  
   
 ##  <a name="removegroup"></a>  CMFCTasksPane::RemoveGroup  
@@ -1410,16 +1410,16 @@ void RemoveGroup(int nGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Kaldırmak için Grup sıfır tabanlı dizini belirtir.  
+ [in] *Ngrup*  
+ Kaldırmak için grubun sıfır tabanlı dizini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tek bir grup kaldırır. Tüm grupları kaldırmak için arama [CMFCTasksPane::RemoveAllGroups](#removeallgroups) yerine.  
+ Bu yöntem, tek bir grup kaldırır. Tüm grupları kaldırmak için çağrı [CMFCTasksPane::RemoveAllGroups](#removeallgroups) yerine.  
   
- Framework bir grup kaldırdığında, tüm görevler ve ilişkili kullanıcı windows yok olur.  
+ Framework, bir grup kaldırdığında, tüm görevleri ve onunla ilişkili kullanıcı windows edilir.  
   
 ##  <a name="removepage"></a>  CMFCTasksPane::RemovePage  
- Belirtilen sayfa görev bölmesinden kaldırır.  
+ Belirtilen bir sayfa görev bölmesinden kaldırır.  
   
 ```  
 void RemovePage(int nPageIdx);
@@ -1427,10 +1427,10 @@ void RemovePage(int nPageIdx);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nPageIdx*  
- Kaldırmak için sayfanın sıfır tabanlı dizini belirtir.  
+ Sayfasında, kaldırmak için sıfır tabanlı dizini belirtir.  
   
 ##  <a name="removetask"></a>  CMFCTasksPane::RemoveTask  
- Bir görev, bir görev gruptan kaldırır.  
+ Bir görev, bir görev grubundan kaldırır.  
   
 ```  
 BOOL RemoveTask(
@@ -1440,17 +1440,17 @@ BOOL RemoveTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Kaldırmak istediğiniz görevi içeren görev grubu sıfır tabanlı dizini belirtir.  
+ [in] *Ngrup*  
+ Görev grubunun kaldırmak için görevini içeren sıfır tabanlı dizinini belirtir.  
   
  [in] *nGörev*  
- Kaldırmak için görev sıfır tabanlı dizini belirtir.  
+ Görevi kaldırmak için sıfır tabanlı dizini belirtir.  
   
  [in] *bRedraw*  
- `TRUE` Görev bölmesi yeniden çizmek için; Aksi takdirde `FALSE`.  
+ Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` işlev başarılı olursa; `FALSE` varsa *uplarını Dağıt* veya *nGörev* geçersiz.  
+ İşlev başarılı olursa TRUE; FALSE ise *Ngrup* veya *nGörev* geçersiz.  
   
 ##  <a name="savestate"></a>  CMFCTasksPane::SaveState  
 
@@ -1484,7 +1484,7 @@ virtual void Serialize(CArchive& ar);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setactivepage"></a>  CMFCTasksPane::SetActivePage  
- Belirtilen sayfa görev bölmesinde etkin hale getirir.  
+ Belirtilen sayfaya görev bölmesinde etkin hale getirir.  
   
 ```  
 void SetActivePage(int nPageIdx);
@@ -1492,7 +1492,7 @@ void SetActivePage(int nPageIdx);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nPageIdx*  
- Görüntülenecek sıfır tabanlı dizini belirtir.  
+ Görüntülenecek sayfasının sıfır tabanlı dizinini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, onaylar *nPageIdx* geçersiz.  
@@ -1509,10 +1509,10 @@ void SetCaption(LPCTSTR lpszName);
  Resim yazısı adını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir görev bölmesi birden çok sayfa varsa, varsayılan sayfa bu işlevi kullanarak ayarlandı resim yazısı vardır.  
+ Bir görev bölmesi, birden fazla sayfa varsa, varsayılan sayfada bu işlevi kullanarak ayarlanmış başlık vardır.  
   
 ##  <a name="setgroupcaptionheight"></a>  CMFCTasksPane::SetGroupCaptionHeight  
- Bir Grup başlığını yüksekliğini ayarlar.  
+ Bir Grup başlığını yüksekliğini belirler.  
   
 ```  
 void SetGroupCaptionHeight(int n = -1);
@@ -1520,12 +1520,12 @@ void SetGroupCaptionHeight(int n = -1);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *n*  
- Resim yazısı yüksekliğini belirtir.  
+ Açıklamalı alt yazı yüksekliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görev bölmesi öğeleri kenar boşlukları özelleştirmek için bu yöntemi çağırın.  
+ Kenar boşlukları görev bölmesi öğeleri özelleştirmek için bu yöntemi çağırın.  
   
- Varsa *n* -1 ' dir visual Yöneticisi'ni kullanarak kenar boşluğu değeri framework belirler ( `CMFCVisualManager::GetTasksPaneGroupCaptionHeight`). Varsayılan başlığı yüksekliği 25 pikseldir.  
+ Varsa *n* -1 ' dir framework visual Yöneticisi'ni kullanarak kenar boşluğu değerini belirler. ( `CMFCVisualManager::GetTasksPaneGroupCaptionHeight`). Varsayılan başlığı yükseklik 25 pikseldir.  
   
 ##  <a name="setgroupcaptionhorzoffset"></a>  CMFCTasksPane::SetGroupCaptionHorzOffset  
  Bir grup başlığı yatay uzaklığını belirler.  
@@ -1536,10 +1536,10 @@ void SetGroupCaptionHorzOffset(int n = -1);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *n*  
- Grup başlığını yatay uzaklığını belirtir.  
+ Grup başlığı yatay uzaklığını belirtir.  
   
 ##  <a name="setgroupcaptionvertoffset"></a>  CMFCTasksPane::SetGroupCaptionVertOffset  
- Bir Grup başlığını dikey uzaklığını belirler.  
+ Bir Grup başlığını dikey uzaklığı belirler.  
   
 ```  
 void SetGroupCaptionVertOffset(int n = -1);
@@ -1547,10 +1547,10 @@ void SetGroupCaptionVertOffset(int n = -1);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *n*  
- Dikey uzaklığını Grup başlığını piksel cinsinden belirtir.  
+ Grup başlığını piksel cinsinden dikey uzaklığını belirtir.  
   
 ##  <a name="setgroupname"></a>  CMFCTasksPane::SetGroupName  
- Grup adını belirler.  
+ Grup adını ayarlar.  
   
 ```  
 BOOL SetGroupName(
@@ -1559,17 +1559,17 @@ BOOL SetGroupName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
+ [in] *Ngrup*  
  Grup sıfır tabanlı dizini belirtir.  
   
  [in] *lpszGroupName*  
  Grubun adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Grup adı başarıyla ayarlandı Aksi takdirde `FALSE`.  
+ Grup adı başarılı bir şekilde ayarlandıysa TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="setgrouptextcolor"></a>  CMFCTasksPane::SetGroupTextColor  
- Grup resim yazısı için metin rengini belirler.  
+ Bir grup başlığı metin rengini ayarlar.  
   
 ```  
 BOOL SetGroupTextColor(
@@ -1579,20 +1579,20 @@ BOOL SetGroupTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
+ [in] *Ngrup*  
  Grup sıfır tabanlı dizini belirtir.  
   
  [in] *rengi*  
  Metin rengini belirtir.  
   
  [in] *colorHot*  
- Vurgulanan grubu metin rengini belirtir. -1, varsayılan vurgulama renk kullanılır.  
+ Vurgulanan grubun metin rengini belirtir. -1 ise, varsayılan Vurgu rengi kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` grubun metin rengini başarıyla değiştirildi Aksi takdirde `FALSE`.  
+ Grubun metin rengini başarıyla değiştirilmişse TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="setgroupvertoffset"></a>  CMFCTasksPane::SetGroupVertOffset  
- Dikey uzaklığını bir grup için ayarlar.  
+ Dikey uzaklık bir grup için ayarlar.  
   
 ```  
 void SetGroupVertOffset(int n = -1);
@@ -1603,9 +1603,9 @@ void SetGroupVertOffset(int n = -1);
  Dikey uzaklığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir görev grubu ve görev bölmesinde kenarlığının arasındaki uzaklığı dikey uzaklığı.  
+ Dikey uzaklık bir görev grubu ve görev bölmesinde kenarlığı arasındaki uzaklığı dayalıdır.  
   
- Görev bölmesi öğeleri kenar boşlukları özelleştirmek için bu yöntemi çağırın. Varsa *n* -1 ' dir visual Yöneticisi'ni kullanarak kenar boşluğu değeri framework belirler ( `CMFCVisualManager::GetTasksPaneGroupVertOffset`). Varsayılan uzaklık 15 pikseldir.  
+ Kenar boşlukları görev bölmesi öğeleri özelleştirmek için bu yöntemi çağırın. Varsa *n* -1 ' dir framework visual Yöneticisi'ni kullanarak kenar boşluğu değerini belirler. (`CMFCVisualManager::GetTasksPaneGroupVertOffset`). Varsayılan uzaklığı 15 pikseldir.  
   
 ##  <a name="sethorzmargin"></a>  CMFCTasksPane::SetHorzMargin  
  Yatay boşluğu ayarlar.  
@@ -1616,15 +1616,15 @@ void SetHorzMargin(int n = -1);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *n*  
- Kenar boşluğunu piksel cinsinden belirtir.  
+ Kenar boşluğunun piksel cinsinden belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yatay boşluğu görev bölmesi ve istemci alanını üst veya alt köşesine arasındaki uzaklığı ' dir.  
+ Yatay boşluğu, bir görev bölmesi ve istemci alanının üst ve alt kenarları arasındaki uzaklık olur.  
   
- N -1 ise ve görsel Yöneticisi'ni kullanarak kenar boşluğu değeri framework belirler ( `CMFCVisualManager::GetTasksPaneHorzMargin`). Varsayılan yatay boşluğu 12 pikseldir.  
+ N -1 ve framework visual Yöneticisi'ni kullanarak kenar boşluğu değerini belirler. (`CMFCVisualManager::GetTasksPaneHorzMargin`). Varsayılan yatay boşluğu 12 pikseldir.  
   
 ##  <a name="seticonslist"></a>  CMFCTasksPane::SetIconsList  
- Resim listesi ayarlar.  
+ Görüntü listesi ayarlar.  
   
 ```  
 BOOL SetIconsList(
@@ -1637,10 +1637,10 @@ void SetIconsList(HIMAGELIST hIcons);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *uiImageListResID*  
- Resim listesi kaynak Kimliğini belirtir.  
+ Görüntü listesi kaynak Kimliğini belirtir.  
   
  [in] *cx*  
- Görüntü listesinde simgelerin boyutunu belirtir.  
+ Görüntü listesinden simgeler boyutunu belirtir.  
   
  [in] *clrTransparent*  
  Saydam rengini belirtir.  
@@ -1649,12 +1649,12 @@ void SetIconsList(HIMAGELIST hIcons);
  Görev bölmesi simgelerini içeren görüntü listesini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework simgeleri bir görüntü listesinde depolar. Bu listede depolanan simgeler ile ilişkili görevlerdir.  
+ Framework simgeleri bir görüntü listesinde de depolar. Görevler, bu listede depolanan simgeler ile ilişkilidir.  
   
- Bu yöntem bir resim listesi görev bölmesi denetimi ile ilişkilendirir. Bir görev simgesi çağırdığınızda ayarlamak için [CMFCTasksPane::AddTask](#addtask)ayarlayın `nTaskIcon` bu görüntü listesinde uygun sıfır tabanlı dizin.  
+ Bu yöntem, görüntü listesi görev bölmesi denetimi ile ilişkilendirir. Bir görev simgesi çağırdığınızda ayarlamak için [CMFCTasksPane::AddTask](#addtask)ayarlayın `nTaskIcon` bu görüntü listede uygun sıfır tabanlı dizin.  
   
 ##  <a name="setpagecaption"></a>  CMFCTasksPane::SetPageCaption  
- Bir görev bölmesinde sayfa için açıklama metni ayarlar.  
+ Açıklamalı alt yazı metni bir görev bölmesinde sayfası için ayarlar.  
   
 ```  
 void SetPageCaption(
@@ -1664,16 +1664,16 @@ void SetPageCaption(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nPageIdx*  
- Sayfa sıfır tabanlı dizini belirtir.  
+ Sayfasının sıfır tabanlı dizinini belirtir.  
   
  [in] *lpszName*  
- Sayfasında görüntülenecek resim yazısı metnini belirtir.  
+ Sayfada görüntülemek için açıklamalı alt yazı metni belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir görev bölmesi birden çok sayfa varsa, varsayılan sayfa bu yöntemi kullanarak ayarlandı resim yazısı vardır.  
+ Bir görev bölmesi, birden fazla sayfa varsa, varsayılan sayfada bu yöntemi kullanarak ayarlanmış başlık vardır.  
   
 ##  <a name="settaskname"></a>  CMFCTasksPane::SetTaskName  
- Bir görev adını belirler.  
+ Bir görev adını ayarlar.  
   
 ```  
 BOOL SetTaskName(
@@ -1683,20 +1683,20 @@ BOOL SetTaskName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
+ [in] *Ngrup*  
  Görev grubu sıfır tabanlı dizini belirtir.  
   
  [in] *nGörev*  
- Görev sıfır tabanlı dizini belirtir.  
+ Görevin sıfır tabanlı dizinini belirtir.  
   
  [in] *lpszTaskName*  
- Görev adı belirtir.  
+ Görev adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Görev adı başarıyla ayarlandı Aksi takdirde `FALSE`.  
+ Görev adı başarılı bir şekilde ayarlandıysa TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="settaskshorzoffset"></a>  CMFCTasksPane::SetTasksHorzOffset  
- Görevler için yatay uzaklığını belirler.  
+ Yatay uzaklığını görevler için ayarlar.  
   
 ```  
 void SetTasksHorzOffset(int n = -1);
@@ -1707,9 +1707,9 @@ void SetTasksHorzOffset(int n = -1);
  Yatay uzaklığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir grup sol ve sağ kenarlarının piksel cinsinden uzaklık yatay uzaklığı.  
+ Yatay uzaklık bir grubun sol ve sağ kenarları piksel cinsinden uzaklık dayalıdır.  
   
- Varsa *n* -1 ' dir bu yöntem tarafından döndürülen değer yatay uzaklığını ayarlar `CMFCVisualManager::GetTasksPaneTaskHorzOffset` yöntemi.  
+ Varsa *n* -1, bu yöntem tarafından döndürülen değere yatay uzaklığını ayarlar `CMFCVisualManager::GetTasksPaneTaskHorzOffset` yöntemi.  
   
  Varsayılan yatay uzaklığını 12 pikseldir.  
   
@@ -1749,20 +1749,20 @@ BOOL SetTaskTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Görevi içeren görev grubu sıfır tabanlı dizini belirtir.  
+ [in] *Ngrup*  
+ Görev grubunun görevi içeren sıfır tabanlı dizinini belirtir.  
   
  [in] *nGörev*  
- Görev sıfır tabanlı dizini belirtir.  
+ Görevin sıfır tabanlı dizinini belirtir.  
   
  [in] *rengi*  
- Görev metin rengini belirtir.  
+ Görev için metin rengini belirtir.  
   
  [in] *colorHot*  
- Vurgulanan grubu metin rengini belirtir. -1, bu yöntem varsayılan vurgulama renk kullanır.  
+ Vurgulanan grubun metin rengini belirtir. Bu yöntem-1, varsayılan Vurgu rengi kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` metin rengi görev için başarıyla ayarlandı Aksi takdirde `FALSE`.  
+ Görev için metin rengi başarılı bir şekilde ayarlandıysa TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="setvertmargin"></a>  CMFCTasksPane::SetVertMargin  
  Dikey boşluğu ayarlar.  
@@ -1773,15 +1773,15 @@ void SetVertMargin(int n = -1);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *n*  
- Ayarlamak için dikey boşluğu belirtir.  
+ Ayarlanacak dikey boşluğu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dikey boşluğu görev bölmesi ve istemci alanını dikey kenarları arasındaki uzaklığı ' dir.  
+ Bir görev bölmesi ve istemci alanını dikey kenarları arasındaki uzaklık dikey boşluğu olur.  
   
- Varsa *n* -1 ' dir visual Yöneticisi'ni kullanarak kenar boşluğu değeri framework belirler ( `CMFCVisualManager::GetTasksPaneVertMargin`). Varsayılan kenar boşluğu 12 pikseldir.  
+ Varsa *n* -1 ' dir framework visual Yöneticisi'ni kullanarak kenar boşluğu değerini belirler. (`CMFCVisualManager::GetTasksPaneVertMargin`). Varsayılan kenar boşluğu 12 pikseldir.  
   
 ##  <a name="setwindowheight"></a>  CMFCTasksPane::SetWindowHeight  
- Pencere denetim yüksekliğini ayarlar.  
+ Yükseklik bir pencere denetimi için ayarlar.  
   
 ```  
 BOOL SetWindowHeight(
@@ -1796,8 +1796,8 @@ BOOL SetWindowHeight(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
- Pencere denetim içeren grubun sıfır tabanlı dizini belirtir.  
+ [in] *Ngrup*  
+ Pencere denetim içeren grubunu sıfır tabanlı dizini belirtir.  
   
  [in] *hwndTask*  
  Pencere denetim tanıtıcısını belirtir.  
@@ -1806,7 +1806,7 @@ BOOL SetWindowHeight(
  Ayarlanacak yüksekliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Pencere denetim yüksekliğini başarıyla ayarlandı `FALSE` varsa *uplarını Dağıt* geçersiz veya *hwndTask* yok.  
+ Pencere denetimin yüksekliği başarılı bir şekilde ayarlandıysa TRUE; FALSE ise *Ngrup* geçersiz veya *hwndTask* yok.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CMFCTasksPane::AddWindow](#addwindow) Görevler penceresi denetimleri ile eklemek için.  
@@ -1824,7 +1824,7 @@ virtual void ShowCommandMessageString(UINT uiCmdId);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="showtask"></a>  CMFCTasksPane::ShowTask  
- Gösterir veya gizler bir görev.  
+ Bir görev gizler veya gösterir.  
   
 ```  
 BOOL ShowTask(
@@ -1835,26 +1835,26 @@ BOOL ShowTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uplarını Dağıt*  
+ [in] *Ngrup*  
  Grup sıfır tabanlı dizini belirtir.  
   
  [in] *nGörev*  
- Görev göstermek veya gizlemek için sıfır tabanlı dizini belirtir.  
+ Göstermek veya gizlemek için görev sıfır tabanlı dizini belirtir.  
   
  [in] *bBilgi Göster*  
- `TRUE` Görev göstermek için; `FALSE` görevi gizlemek için.  
+ Görev göstermek için TRUE; Görev gizlemek için FALSE.  
   
  [in] *bRedraw*  
- `TRUE` Görev bölmesi yeniden çizmek için; Aksi takdirde `FALSE`.  
+ Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` görev başarıyla gösterilen veya gizli; `FALSE` belirtilen grup ya da görev mevcut değilse.  
+ Görev başarıyla gösterilen veya gizli gerekiyorsa TRUE; Görev ve belirtilen grup mevcut değilse FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CMFCTasksPane::ShowTaskByCmdId](#showtaskbycmdid) göstermek veya gizlemek kendi komut kimliği temel alınarak bir görev için  
+ Kullanım [CMFCTasksPane::ShowTaskByCmdId](#showtaskbycmdid) göstermek veya gizlemek kendi komut kimliğini temel alarak bir görev için  
   
 ##  <a name="showtaskbycmdid"></a>  CMFCTasksPane::ShowTaskByCmdId  
- Gösterir veya gizler kendi komut kimliği temel alınarak bir görevi  
+ Gösterir veya gizler kendi komut kimliğini temel alarak bir görevi  
   
 ```  
 BOOL ShowTaskByCmdId(
@@ -1868,28 +1868,28 @@ BOOL ShowTaskByCmdId(
  Göstermek veya gizlemek için görev komut Kimliğini belirtir.  
   
  [in] *bBilgi Göster*  
- `TRUE` Görev göstermek için; `FALSE` görevi gizlemek için.  
+ Görev göstermek için TRUE; Görev gizlemek için FALSE.  
   
  [in] *bRedraw*  
- `TRUE` Görev bölmesi yeniden çizmek için; Aksi takdirde `FALSE`.  
+ Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` görev başarıyla gösterilen veya gizli; `FALSE` belirtilen komut kimlikli bir görev mevcut değilse.  
+ Görev başarıyla gösterilen veya gizli gerekiyorsa TRUE; YANLIŞ bir görev ile belirtilen komut kimliği yok.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CMFCTasksPane::ShowTask](#showtask) göstermek veya gizlemek kendi komut kimliği temel alınarak bir görev için  
+ Kullanım [CMFCTasksPane::ShowTask](#showtask) göstermek veya gizlemek kendi komut kimliğini temel alarak bir görev için  
   
 ##  <a name="update"></a>  CMFCTasksPane::Update  
- Tüm görev bölmesindeki denetimlere yeniler.  
+ Tüm görev bölmesinde denetimleri yeniler.  
   
 ```  
 virtual void Update();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem görev bölmesi başlığı güncelleştirir, kaydırma çubuğu ayarlar, tüm görevler yeniden konumlandırır ve tüm görev bölmesi denetimleri yeniden çizer.  
+ Bu yöntem görev bölmesi başlığı güncelleştirir, kaydırma çubuğu ayarlar, tüm görevleri yeniden konumlandırır ve tüm görev bölmesi denetimleri yeniden çizer.  
   
- Türetilen bir sınıfta framework görev bölmesinde yenilendiğinde özel kod yürütmek için bu yöntemi geçersiz kılın.  
+ Türetilen bir sınıfta framework görev bölmesinde yenilendiğinde özel kod yürütmek için bu yöntemi yok sayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

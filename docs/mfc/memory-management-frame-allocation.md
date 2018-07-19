@@ -28,25 +28,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264a3b5618b1c153219d5dee838af38bd7f49f49
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 27cde859c20f4c9cddc1ceb3e2cae568afb6e960
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931066"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39027225"
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
-Çerçevesinde ayırma "olarak ayarlanmış yığın çerçevesi" adı geçen her bir işlev çağrılır. Yığın çerçevesi tutan geçici olarak bağımsız değişkenler tanımlanan değişkenler yanı sıra işlevi işlevi için yerel bellek alanıdır. Derleyici otomatik olarak alanı kendileri için ayırdığından çerçeve değişkenleri genellikle "Otomatik" değişkenleri denir.  
+Çerçeve ayırma "olarak ayarlanmış yığın çerçevesini" adını alan her bir işlev çağrılır. Yığın çerçevesinin tutan geçici olarak bağımsız değişkenler tanımlanan tüm değişkenler yanı sıra işlev işleve yerel bellek alanıdır. Derleyicinin otomatik olarak alan için ayırdığından çerçeve değişkenleri genellikle "Otomatik" değişkenler çağrılır.  
   
- Çerçeve ayırma iki anahtar özellikleri vardır. İlk olarak, yerel bir değişken tanımladığınızda, uzun dizi veya veri yapısı olsa bile, yeterli alan tüm değişkeni tutmak için yığın çerçevesi ayrılır. İkinci olarak, kapsam dışı olduğunuzda çerçeve değişkenleri otomatik olarak silinir:  
+ Çerçeve ayırma iki anahtar özellikleri vardır. İlk olarak, yerel bir değişken tanımlayın, uzun dizi ya da veri yapısı olsa bile yeterli alan tüm değişkeni tutmak için yığın çerçevesinin ayrılır. İkinci olarak, bunlar kapsam dışına çıkmadan, çerçeve değişkenleri otomatik olarak silinir:  
   
  [!code-cpp[NVC_MFC_Utilities#10](../mfc/codesnippet/cpp/memory-management-frame-allocation_1.cpp)]  
   
- İç içe ayraçlar kullanılıyorsa bir çerçeve değişkenin kapsamını ancak işlevi çıkar işlevi küçük olabilir yerel işlevi değişkenleri için bu kapsamı geçiş olur. Bu çerçeve değişkenleri otomatik olarak silinmesini çok önemlidir. Basit ilkel türler söz konusu olduğunda (gibi **int** veya **bayt**), dizi ya da veri yapılarını otomatik silme yalnızca değişkeni tarafından kullanılan bellek geri kazanır. Değişkeni fazlası kapsam dışında olduğundan, yine de erişilemiyor. C++ nesneleri söz konusu olduğunda, ancak otomatik silme işlemi biraz daha karmaşıktır.  
+ Yerel işlev değişkenleri için iç içe ayraçları kullanılıyorsa bir çerçeve değişkenin kapsamını ancak işlev çıkar bir işlevi küçük olabilir bu kapsam geçiş olur. Bu çerçeve değişkenleri otomatik olarak silinmesini çok önemlidir. Basit ilkel türleri söz konusu olduğunda (gibi **int** veya **bayt**), dizi ya da veri yapılarını otomatik silme yalnızca değişkeni tarafından kullanılan belleği geri kazanır. Değişken kapsam dışına geçti olduğundan, yine de erişilemez. C++ nesnelerinin söz konusu olduğunda, ancak otomatik silme işlemi biraz daha karmaşık bir işlemdir.  
   
- Bir nesne bir çerçeve değişken olarak tanımlandığında, kurucusu tanımı burada karşılaştı noktada otomatik olarak çağrılır. Nesne kapsam dışına çıktığında nesnesi için bellek alınmadan önce kendi yıkıcı otomatik olarak çağrılır. Bu otomatik oluşturma ve yok etme çok kullanışlı olabilir, ancak otomatik çağrıları, özellikle yıkıcı farkında olmanız gerekir.  
+ Bir nesne bir çerçeve değişken olarak tanımlandığında, yapıcısına tanımını burada karşılaşılanaa noktada otomatik olarak çağrılır. Nesne kapsam dışına çıktığında, nesne için bellek alınmadan önce otomatik olarak, yok Edicisi çağrılır. Bu otomatik oluşturma ve yok etme çok kullanışlı olabilir, ancak yok edici için özellikle otomatik çağrıları farkında olmanız gerekir.  
   
- Çerçevede nesneleri ayırma önemli bir avantajı, bunlar otomatik olarak silinmesini ' dir. Çerçeve nesneleriniz ayırdığınızda, bellek sızıntıları neden Unutulan nesneler hakkında endişelenmenize gerek yoktur. (Bellek sızıntıları hakkında daha fazla bilgi için bkz: [MFC'de bellek sızıntılarını algılama](http://msdn.microsoft.com/en-us/29ee8909-96e9-4246-9332-d3a8aa8d4658).) Çerçeve ayırma dezavantajı, çerçeve değişkenleri kendi kapsamı dışında kullanılamaz olmasıdır. Yığın ayırma karşı çerçeve ayırma seçme başka bir etken büyük yapıları ve nesneler için genellikle yığın alanı genellikle sınırlı olduğu öbek yerine yığın depolama alanını kullanın. daha iyi olmasıdır.  
+ Çerçevede nesneleri ayırma önemli bir avantajı, otomatik olarak silinir. Çerçeve, nesneleri ayırdığınızda, bellek sızıntılarının neden Unutulan nesneleri hakkında endişelenmeniz gerekmez. (Bellek sızıntılarını hakkında daha fazla bilgi için bkz [MFC'de bellek sızıntılarını algılama](http://msdn.microsoft.com/29ee8909-96e9-4246-9332-d3a8aa8d4658).) Çerçeve ayırma bir dezavantajı, çerçeve değişkenleri kendi kapsamı dışında kullanılamaz olmasıdır. Yığın ayırma ve çerçeve ayırma seçme içinde başka bir faktör büyük yapılar ve nesneler için genellikle yığın alanı çoğunlukla sınırlı olduğundan öbek için Depolama yığını yerine kullanılması daha iyidir olmasıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bellek Yönetimi](../mfc/memory-management.md)

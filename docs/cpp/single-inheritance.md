@@ -20,11 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cab540d36f322bbe571a04046ff876d5425a317
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3b06bceadf9a274253693dc8f33f3d04e6500115
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028454"
 ---
 # <a name="single-inheritance"></a>Tek Devralma
 Sık kullanılan bir devralma biçimi olan "tek devralma"da, sınıflarda yalnızca bir temel sınıfı vardır. Aşağıdaki şekilde gösterilen ilişkiyi göz önünde bulundurun.  
@@ -36,7 +37,7 @@ Basit Tek Devralma Grafiği
   
  Şekildeki notun diğer bir öğesi: `Book` hem türetilen bir sınıf (`PrintedDocument` öğesinden) hem de temel bir sınıftır (`PaperbackBook`, `Book` öğesinden türetilir). Böyle bir sınıf hiyerarşisi olan iskelet bildirimi aşağıdaki örnekte gösterilmiştir:  
   
-```  
+```cpp 
 // deriv_SingleInheritance.cpp  
 // compile with: /LD  
 class PrintedDocument {};  
@@ -52,7 +53,7 @@ class PaperbackBook : public Book {};
   
  Her sınıfın türetildiği temel sınıf, türetilen sınıfın bildiriminden önce bildirilir. Temel sınıf için ileri başvuran bir bildirim sağlamak yeterli değildir; tam bir bildirim olması gerekir.  
   
- Önceki örnekte, bir erişim belirticisi **ortak** kullanılır. Genel, korumalı ve özel devralma anlamını açıklanan [üye erişim denetimi.](../cpp/member-access-control-cpp.md)  
+ Yukarıdaki örnekte, bir erişim belirticisi **genel** kullanılır. Genel, korumalı ve özel Devralmanın anlamı açıklanan [üye erişim denetimi.](../cpp/member-access-control-cpp.md)  
   
  Bir sınıf, aşağıdaki şekilde gösterildiği gibi birçok özel sınıf için temel sınıf olarak kullanılabilir.  
   
@@ -62,11 +63,11 @@ Yönlendirilmiş Çevrimsiz Grafik Örneği
  Yukarıda gösterilen "yönlendirilmiş çevrimsiz graf" (veya "DAG") adlı diyagramda, sınıfların bazıları birden fazla türetilmiş sınıfa yönelik temel sınıflardır. Ancak bunun tersi doğru değildir: türetilmiş herhangi bir sınıfa yönelik yalnızca bir doğrudan temel sınıf vardır. Şekildeki grafikte "tek devralma" yapısı gösterilmiştir.  
   
 > [!NOTE]
->  Yönlendirilmiş çevrimsiz grafikler, tek devralmaya özgü değildir. Birden çok devralma grafiklerini göstermek için de kullanılırlar. Bu konu içinde ele [birden çok devralma](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca).  
+>  Yönlendirilmiş çevrimsiz grafikler, tek devralmaya özgü değildir. Birden çok devralma grafiklerini göstermek için de kullanılırlar. Bu konuda ele alınmıştır [birden çok devralma](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca).  
   
  Devralma işleminde, türetilen sınıf temel sınıfın üyelerini ve eklediğiniz tüm yeni üyeleri içerir. Sonuç olarak, türetilen bir sınıf temel sınıfın üyelerine başvurabilir (bu üyeler türetilen sınıfta yeniden tanımlanmadıkça). Kapsam çözümleme işleci (`::`), bu sınıflar türetilen sınıfta yeniden tanımlandığında doğrudan veya dolaylı temel sınıfların üyelerine başvurmak için kullanılabilir. Bu örneği göz önünde bulundurun:  
   
-```  
+```cpp 
 // deriv_SingleInheritance2.cpp  
 // compile with: /EHsc /c  
 #include <iostream>  
@@ -99,7 +100,7 @@ Book::Book( char *name, long pagecount ) {
   
  `Book` oluşturucusunun (`Book::Book`) `Name` veri üyesine erişimi olduğunu unutmayın. Bir programda `Book` türündeki bir nesne oluşturulabilir ve aşağıdaki gibi kullanılabilir:  
   
-```  
+```cpp 
 //  Create a new object of type Book. This invokes the  
 //   constructor Book::Book.  
 Book LibraryBook( "Programming Windows, 2nd Ed", 944 );  
@@ -112,7 +113,7 @@ LibraryBook.PrintNameOf();
   
  Yukarıdaki örnekte de gösterildiği gibi, sınıf üyesi ve devralınan veri ve işlevler benzer şekilde kullanılır. `Book` sınıfı için uygulama `PrintNameOf` işlevinin yeniden uygulanmasını çağırırsa, `Document` sınıfına ait olan işlev yalnızca kapsam çözümleme (`::`) işleci kullanılarak çağrılabilir:  
   
-```  
+```cpp 
 // deriv_SingleInheritance3.cpp  
 // compile with: /EHsc /LD  
 #include <iostream>  
@@ -138,7 +139,7 @@ void Book::PrintNameOf() {
   
  Türetilmiş sınıfların işaretçileri ve başvuruları erişilebilir, açık bir temel sınıf varsa temel sınıflarının işaretçilerine ve başvurularına örtük olarak dönüştürülebilir. Aşağıdaki kodda, bu kavram işaretçiler kullanılarak (başvurular için de aynı ilke geçerlidir) gösterilmektedir:  
   
-```  
+```cpp 
 // deriv_SingleInheritance4.cpp  
 // compile with: /W3  
 struct Document {  
@@ -162,5 +163,5 @@ int main() {
  `Document` sınıfında `PrintNameOf` işlevi olduğu için belgenin türüne özgü bilgilerin bazılarını atlasa da (`Book` için sayfa sayısı, `HelpFile` için bayt sayısı, vb.), kitaplıktaki her kitabın adını yazdırabilir.  
   
 > [!NOTE]
->  Temel sınıfı `PrintNameOf` gibi bir işlevi uygulamaya zorlamak, genellikle iyi bir tasarım uygulaması değildir. [Sanal işlevler](../cpp/virtual-functions.md) diğer tasarım seçenekleri sunar.  
+>  Temel sınıfı `PrintNameOf` gibi bir işlevi uygulamaya zorlamak, genellikle iyi bir tasarım uygulaması değildir. [Sanal işlevler](../cpp/virtual-functions.md) başka tasarım alternatifleri sunar.  
   

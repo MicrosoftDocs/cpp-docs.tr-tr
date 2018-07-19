@@ -34,15 +34,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fec20d8bb960d48392f2d174dab9ee6497738c80
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 0d54a22bd215a80f3e7cab3770a4ba12cd7baffb
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039608"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39027448"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget sınıfı
-Bir pencere OLE kitaplıklarının arasındaki iletişim mekanizması sağlar.  
+Bir pencere ve OLE kitaplıkları arasındaki iletişim mekanizmasını sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -56,25 +56,25 @@ class COleDropTarget : public CCmdTarget
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleDropTarget::COleDropTarget](#coledroptarget)|Oluşturan bir `COleDropTarget` nesnesi.|  
+|[COleDropTarget::COleDropTarget](#coledroptarget)|Oluşturur bir `COleDropTarget` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleDropTarget::OnDragEnter](#ondragenter)|İmleç ilk penceresi girdiğinde çağrılır.|  
-|[COleDropTarget::OnDragLeave](#ondragleave)|İmleç penceresi dışında sürüklendiğinde çağrılır.|  
-|[COleDropTarget::OnDragOver](#ondragover)|Art arda imleci pencere üzerinde ne zaman sürüklenen çağrılır.|  
-|[COleDropTarget::OnDragScroll](#ondragscroll)|İmleç kaydırma bölgeye penceresinin sürüklenen olup olmadığını belirlemek için çağrılır.|  
-|[COleDropTarget::OnDrop](#ondrop)|Veri penceresinde, varsayılan işleyici kesildiğinde çağrılır.|  
-|[COleDropTarget::OnDropEx](#ondropex)|Veri penceresinde, ilk işleyici kesildiğinde çağrılır.|  
+|[COleDropTarget::OnDragEnter](#ondragenter)|İmleç ilk kez pencereye girdiğinde çağırılır.|  
+|[COleDropTarget::OnDragLeave](#ondragleave)|İmleç pencerenin dışında sürüklendiğinde çağırılır.|  
+|[COleDropTarget::OnDragOver](#ondragover)|İmleç pencerenin üstünden ne zaman sürüklediğiniz art arda çağrılır.|  
+|[COleDropTarget::OnDragScroll](#ondragscroll)|İmleç pencerenin kaydırma bölgeye sürüklediğiniz olup olmadığını belirlemek için çağrılır.|  
+|[COleDropTarget::OnDrop](#ondrop)|Pencereye, varsayılan işleyici veri kesildiğinde çağrılır.|  
+|[COleDropTarget::OnDropEx](#ondropex)|Pencereye, ilk işleyici veri kesildiğinde çağrılır.|  
 |[COleDropTarget::Register](#register)|Pencerenin geçerli bırakma hedefi olarak kaydeder.|  
-|[COleDropTarget::Revoke](#revoke)|Pencerenin geçerli bırakma hedefi olan sona neden olur.|  
+|[COleDropTarget::Revoke](#revoke)|Pencerenin geçerli bırakma hedefi olan durdurmasına neden olur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıfın bir nesnesi oluşturma OLE sürükle ve bırak mekanizma verileri kabul etmek bir pencere sağlar.  
+ Bu sınıfın bir nesnesi oluşturulurken OLE sürükle ve bırak mekanizma aracılığıyla verileri kabul etmek bir pencere sağlar.  
   
- Açılan komutları kabul etmek için bir pencere almak için önce bir nesneyi oluşturmanız gerekir `COleDropTarget` sınıfı ve ardından arama [kaydetmek](#register) gösteren bir işaretçi istenen işleviyle `CWnd` nesnesi tek parametre olarak.  
+ DROP komutu kabul etmek için bir pencere elde etmek için önce bir nesne oluşturmanız gerekir `COleDropTarget` sınıfı ve sonra çağrı [kaydetme](#register) istenen işaretçisi işleviyle `CWnd` tek parametre olarak nesne.  
   
  Sürükle ve bırak işlemleri hakkında daha fazla bilgi için OLE kullanarak makaleye bakın [sürükleme ve bırakma (OLE)](../../mfc/drag-and-drop-ole.md).  
   
@@ -96,10 +96,10 @@ COleDropTarget();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı [kaydetmek](#register) bu nesne bir pencere ile ilişkilendirmek için.  
+ Çağrı [kaydetme](#register) bu nesne bir pencere ile ilişkilendirmek için.  
   
 ##  <a name="ondragenter"></a>  COleDropTarget::OnDragEnter  
- İmleç ilk penceresine sürüklendiğinde çerçevesi tarafından çağrılır.  
+ İmleç ilk kez pencereye sürüklendiğinde framework tarafından çağırılır.  
   
 ```  
 virtual DROPEFFECT OnDragEnter(
@@ -111,37 +111,37 @@ virtual DROPEFFECT OnDragEnter(
   
 ### <a name="parameters"></a>Parametreler  
  *pWnd*  
- İmleç girme noktaları penceresine.  
+ İmleç pencerenin noktalarına girdiğinden.  
   
  *pDataObject*  
- İşaret eder bırakılabilir verileri içeren veri nesnesi.  
+ Bırakılabilir verileri içeren veri nesnesi işaret eder.  
   
  *dwKeyState*  
- Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_ MBUTTON**, ve **MK_RBUTTON**.  
+ Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.  
   
  *Noktası*  
- İstemci koordinatları imleci geçerli konumunu içerir.  
+ İstemci koordinatları imleç geçerli konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi *noktası*. Aşağıdakilerden birini veya birkaçını olabilir:  
+ Tarafından belirtilen konumda bir bırakma bulunulması durumunda ortaya çıkabilecek etkisi *noktası*. Bir veya daha fazlasını olabilir:  
   
-- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
+- DROPEFFECT_NONE bırakma izin.  
   
-- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
+- DROPEFFECT_COPY bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
+- DROPEFFECT_MOVE bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- Özgün veriler bırakılan verilerden DROPEFFECT_LINK bir bağlantı kurulabilir.  
   
-- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere olduğu veya hedef gerçekleştirilmektedir.  
+- DROPEFFECT_SCROLL bir sürükleme kaydırma işlemi gerçekleşmek üzere olduğunu veya hedef gerçekleşiyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bırakma işlemleri penceresinde oluşmasına izin vermek için bu işlevi geçersiz kılar. Varsayılan Uygulama çağrıları [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter), yalnızca döndüren `DROPEFFECT_NONE` varsayılan olarak.  
+ Bırakma işlemleri penceresinde gerçekleşecek şekilde izin vermek için bu işlevi geçersiz kılar. Varsayılan Uygulama çağrıları [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter), yalnızca döndüren DROPEFFECT_NONE varsayılan olarak.  
   
- Daha fazla bilgi için bkz: [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) Windows SDK.  
   
 ##  <a name="ondragleave"></a>  COleDropTarget::OnDragLeave  
- İmleç penceresi ayrıldığında bir sürükleme işlemi etkinken çerçevesi tarafından çağrılır.  
+ İmleç pencerenin ayrılırken bir sürükleme işlemi etkin durumdayken framework tarafından çağırılır.  
   
 ```  
 virtual void OnDragLeave(CWnd* pWnd);
@@ -149,15 +149,15 @@ virtual void OnDragLeave(CWnd* pWnd);
   
 ### <a name="parameters"></a>Parametreler  
  *pWnd*  
- İmleç bırakarak noktaları penceresine.  
+ Pencerenin işaret imleç ayrılıyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sürükleme işlemi belirtilen pencere ayrıldığında özel davranış istiyorsanız, bu işlev geçersiz kılar. Bu işlev varsayılan uygulamasını çağıran [CView::OnDragLeave](../../mfc/reference/cview-class.md#ondragleave).  
+ Sürükleme işlemi belirtilen pencere ayrıldığında özel davranış istiyorsanız bu işlev yok sayın. Bu işlev varsayılan uygulamasını çağırır [CView::OnDragLeave](../../mfc/reference/cview-class.md#ondragleave).  
   
- Daha fazla bilgi için bkz: [IDropTarget::DragLeave](http://msdn.microsoft.com/library/windows/desktop/ms680110) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IDropTarget::DragLeave](http://msdn.microsoft.com/library/windows/desktop/ms680110) Windows SDK.  
   
 ##  <a name="ondragover"></a>  COleDropTarget::OnDragOver  
- İmleç penceresi sürüklendiğinde çerçevesi tarafından çağrılır.  
+ İmleç pencerenin üstünden sürüklendiğinde framework tarafından çağırılır.  
   
 ```  
 virtual DROPEFFECT OnDragOver(
@@ -169,40 +169,40 @@ virtual DROPEFFECT OnDragOver(
   
 ### <a name="parameters"></a>Parametreler  
  *pWnd*  
- İmleç üzerinden penceresi noktalarına.  
+ İmleç üzerinden penceresi işaret eder.  
   
  *pDataObject*  
- Kesilmesini istediğiniz verileri içeren veri nesnesi noktalarına.  
+ Bırakılmasına verileri içeren veri nesneyi işaret eder.  
   
  *dwKeyState*  
- Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_ MBUTTON**, ve **MK_RBUTTON**.  
+ Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.  
   
  *Noktası*  
- İstemci koordinatları imleci geçerli konumunu içerir.  
+ İstemci koordinatları imleç geçerli konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi *noktası*. Aşağıdakilerden birini veya birkaçını olabilir:  
+ Tarafından belirtilen konumda bir bırakma bulunulması durumunda ortaya çıkabilecek etkisi *noktası*. Bir veya daha fazlasını olabilir:  
   
-- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
+- DROPEFFECT_NONE bırakma izin.  
   
-- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
+- DROPEFFECT_COPY bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
+- DROPEFFECT_MOVE bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- Özgün veriler bırakılan verilerden DROPEFFECT_LINK bir bağlantı kurulabilir.  
   
-- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
+- DROPEFFECT_SCROLL sürükleme kaydırma işlemi gerçekleşmek üzere olan veya hedef oluştuğunu gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, bırakma işlemleri penceresinde oluşmasına izin vermek için kılınmalıdır. Bu işlev varsayılan uygulamasını çağıran [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover), döndüren `DROPEFFECT_NONE` varsayılan olarak. Bu işlev bir Sürükle ve bırak işlemi sırasında sık çağrıldığı için mümkün olduğunca hale getirilmiştir.  
+ Bu işlev penceresinde gerçekleşecek şekilde bırakma işlemleri izin vermek için geçersiz. Bu işlev varsayılan uygulamasını çağırır [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover), varsayılan olarak DROPEFFECT_NONE döndürür. Bu işlev, bir Sürükle ve bırak işlemi sırasında sık çağrıldığından, mümkün olduğunca hale getirilmiştir.  
   
- Daha fazla bilgi için bkz: [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/cpp/coledroptarget-class_1.cpp)]  
   
 ##  <a name="ondragscroll"></a>  COleDropTarget::OnDragScroll  
- Çağırmadan önce framework tarafından çağrılan [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) belirlemek için olup olmadığını *noktası* kaydırma bölgede değil.  
+ Çağırmadan önce framework tarafından çağırılır [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) belirlemek için olup olmadığını *noktası* kaydırma alanında olup.  
   
 ```  
 virtual DROPEFFECT OnDragScroll(
@@ -213,32 +213,32 @@ virtual DROPEFFECT OnDragScroll(
   
 ### <a name="parameters"></a>Parametreler  
  *pWnd*  
- İmleç penceresine noktaları şu anda üzerinden.  
+ İmleç o sırada üzerinde olduğu penceresi işaret eder.  
   
  *dwKeyState*  
- Değiştirici tuşları durumunu içerir. Bu aşağıdaki herhangi bir sayıda birleşiminden oluşur: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_ MBUTTON**, ve **MK_RBUTTON**.  
+ Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.  
   
  *Noktası*  
- İmleç, piksel cinsinden ekran göreli konumunu içerir.  
+ İmleç, piksel cinsinden ekranına göre konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir açılan tarafından belirtilen konumda girişiminde bulunuldu, ortaya çıkabilecek etkisi *noktası*. Aşağıdakilerden birini veya birkaçını olabilir:  
+ Tarafından belirtilen konumda bir bırakma bulunulması durumunda ortaya çıkabilecek etkisi *noktası*. Bir veya daha fazlasını olabilir:  
   
-- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
+- DROPEFFECT_NONE bırakma izin.  
   
-- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
+- DROPEFFECT_COPY bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
+- DROPEFFECT_MOVE bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+- Özgün veriler bırakılan verilerden DROPEFFECT_LINK bir bağlantı kurulabilir.  
   
-- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
+- DROPEFFECT_SCROLL sürükleme kaydırma işlemi gerçekleşmek üzere olan veya hedef oluştuğunu gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu olay için özel davranışı sağlamak istediğinizde bu işlevi geçersiz kılar. Bu işlev varsayılan uygulamasını çağıran [CView::OnDragScroll](../../mfc/reference/cview-class.md#ondragscroll), döndüren `DROPEFFECT_NONE` ve imleci varsayılan kaydırma bölgesi iç kenarlık penceresinin içine sürüklendiğinde penceresi birlikte kayar.  
+ Bu olay için özel davranış sağlamak istediğinizde bu işlev geçersiz kılar. Bu işlev varsayılan uygulamasını çağırır [CView::OnDragScroll](../../mfc/reference/cview-class.md#ondragscroll), DROPEFFECT_NONE döndürür ve imleç varsayılan kaydırma bölgesi içinde kenarlık penceresinin içine sürüklendiğinde pencereye kaydırır.  
   
 ##  <a name="ondrop"></a>  COleDropTarget::OnDrop  
- Bırakma işlemi oluştuğu sırada çerçevesi tarafından çağrılır.  
+ Bir bırakma işlemi meydana geldiğinde framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnDrop(
@@ -249,36 +249,36 @@ virtual BOOL OnDrop(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *pWnd*  
- İmleç penceresine noktaları şu anda üzerinden.  
+*pWnd*  
+ İmleç o sırada üzerinde olduğu penceresi işaret eder.  
   
- *pDataObject*  
- Kesilmesini istediğiniz verileri içeren veri nesnesi noktalarına.  
+*pDataObject*  
+Bırakılmasına verileri içeren veri nesneyi işaret eder.  
   
- *dropEffect*  
- Bırakma işlemi için kullanıcının seçtiği etkisi. Aşağıdakilerden birini veya birkaçını olabilir:  
+*dropEffect*  
+Bırakma işlemi için kullanıcının seçtiği efekti. Bir veya daha fazlasını olabilir:  
   
-- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
+ - DROPEFFECT_COPY bir kopyalama işlemi gerçekleştirilmesi.  
+       
+ - DROPEFFECT_MOVE bir taşıma işlemi gerçekleştirilmesi.  
+      
+ - Özgün veriler bırakılan verilerden DROPEFFECT_LINK bir bağlantı kurulabilir.  
   
-- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
-  
-- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
-  
- *Noktası*  
- İmleç, piksel cinsinden ekran göreli konumunu içerir.  
+*Noktası*  
+İmleç, piksel cinsinden ekranına göre konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Açılan başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Açılan başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework ilk çağrıları [OnDropEx](#ondropex). Varsa `OnDropEx` işlevi açılır işlemiyor, framework daha sonra bu üye işlevi çağırır `OnDrop`. Genellikle, uygulama geçersiz kılmaları [OnDropEx](../../mfc/reference/cview-class.md#ondropex) sağ fare düğmesini işlemek için view sınıfı sürükle ve bırak. Genellikle, görünüm sınıfı [OnDrop](../../mfc/reference/cview-class.md#ondrop) basit sürükle ve bırak işlemek için kullanılır.  
+ Framework ilk çağrı [OnDropEx](#ondropex). Varsa `OnDropEx` işlevi açılan işlemez, framework daha sonra bu üye işlevini çağırır `OnDrop`. Genellikle, uygulama geçersiz kılmalar [OnDropEx](../../mfc/reference/cview-class.md#ondropex) sağ fare düğmesi işlemek için view sınıfı, sürükle ve bırak. Genellikle, görünüm sınıfı [OnDrop](../../mfc/reference/cview-class.md#ondrop) basit sürükle ve bırak işlemek için kullanılır.  
   
- Varsayılan uygulaması `COleDropTarget::OnDrop` çağrıları [CView::OnDrop](../../mfc/reference/cview-class.md#ondrop), yalnızca döndüren **FALSE** varsayılan olarak.  
+ Varsayılan uygulaması `COleDropTarget::OnDrop` çağrıları [CView::OnDrop](../../mfc/reference/cview-class.md#ondrop), yalnızca döndüren FALSE varsayılan olarak.  
   
- Daha fazla bilgi için bkz: [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK.  
   
 ##  <a name="ondropex"></a>  COleDropTarget::OnDropEx  
- Bırakma işlemi oluştuğu sırada çerçevesi tarafından çağrılır.  
+ Bir bırakma işlemi meydana geldiğinde framework tarafından çağırılır.  
   
 ```  
 virtual DROPEFFECT OnDropEx(
@@ -291,44 +291,44 @@ virtual DROPEFFECT OnDropEx(
   
 ### <a name="parameters"></a>Parametreler  
  *pWnd*  
- İmleç penceresine noktaları şu anda üzerinden.  
+ İmleç o sırada üzerinde olduğu penceresi işaret eder.  
   
  *pDataObject*  
- Kesilmesini istediğiniz verileri içeren veri nesnesi noktalarına.  
+ Bırakılmasına verileri içeren veri nesneyi işaret eder.  
   
  *dropDefault*  
- Geçerli anahtar durumuna göre varsayılan bırakma işlemi için kullanıcının seçtiği etkisi. Bu olabilir `DROPEFFECT_NONE`. Açılan efektler açıklamalar bölümünde ele alınmıştır.  
+ Geçerli anahtar durumunu temel alan varsayılan bırakma işlemi için kullanıcının seçtiği efekti. DROPEFFECT_NONE olabilir. Bırakma etkileri açıklamalar bölümünde ele alınmıştır.  
   
  *Listeyi*  
- Bırakma kaynağı destekleyen açılan etkilerini listesi. Bit düzeyinde OR kullanarak doğrudan etkisi değerleri birleştirilebilir ( **&#124;**) işlemi. Açılan efektler açıklamalar bölümünde ele alınmıştır.  
+ Bırakma kaynağı destekleyen bırakma etkileri listesi. Bit düzeyinde OR kullanarak doğrudan etkisi değerleri birleştirilebilir (**&#124;**) işlemi. Bırakma etkileri açıklamalar bölümünde ele alınmıştır.  
   
  *Noktası*  
- İmleç, piksel cinsinden ekran göreli konumunu içerir.  
+ İmleç, piksel cinsinden ekranına göre konumunu içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirtilen konumda bırak girişimi kullanmasından kaynaklanan açılan etkisi *noktası*. Açılan efektler açıklamalar bölümünde ele alınmıştır.  
+ Tarafından belirtilen konumda bırakma denemesi kullanmasından bırakma etkisi *noktası*. Bırakma etkileri açıklamalar bölümünde ele alınmıştır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework önce bu işlevi çağırır. Açılan işlemez, framework sonra çağırması [OnDrop](#ondrop). Genellikle, geçersiz kılar [OnDropEx](../../mfc/reference/cview-class.md#ondropex) sağ fare düğmesini desteklemek için view sınıfı sürükle ve bırak. Genellikle, görünüm sınıfı [OnDrop](../../mfc/reference/cview-class.md#ondrop) basit sürükle ve bırak desteği durumu işlemek için kullanılır.  
+ Framework, önce bu işlevi çağırır. Açılan işlemez, framework sonra çağıran [OnDrop](#ondrop). Genellikle, kılar [OnDropEx](../../mfc/reference/cview-class.md#ondropex) sağ fare düğmesi desteklemek için view sınıfı, sürükle ve bırak. Genellikle, görünüm sınıfı [OnDrop](../../mfc/reference/cview-class.md#ondrop) basit sürükle ve bırak desteği durumu işlemek için kullanılır.  
   
- Varsayılan uygulaması `COleDropTarget::OnDropEx` çağrıları [CView::OnDropEx](../../mfc/reference/cview-class.md#ondropex). Varsayılan olarak, [CView::OnDropEx](../../mfc/reference/cview-class.md#ondropex) basitçe belirtmek için bir kukla değer verir [OnDrop](#ondrop) üye işlevi çağrılabilir.  
+ Varsayılan uygulaması `COleDropTarget::OnDropEx` çağrıları [CView::OnDropEx](../../mfc/reference/cview-class.md#ondropex). Varsayılan olarak, [CView::OnDropEx](../../mfc/reference/cview-class.md#ondropex) basitçe belirtmek için bir kukla değer döndürür [OnDrop](#ondrop) üye işlevi çağrılabilir.  
   
- Açılan etkileri açılan işlemle ilişkili eylemi açıklar. Açılan etkileri aşağıdaki listeye bakın:  
+ Bir bırakma işlemi ile ilişkili eylemi açılan etkileri açıklanmaktadır. Bırakma etkileri aşağıdaki listeye bakın:  
   
-- `DROPEFFECT_NONE` Bir açılan izin verilmez.  
+ - DROPEFFECT_NONE bırakma izin.  
   
-- `DROPEFFECT_COPY` Bir kopyalama işlemi gerçekleştirilmesi.  
+ - DROPEFFECT_COPY bir kopyalama işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_MOVE` Bir taşıma işlemi gerçekleştirilmesi.  
+ - DROPEFFECT_MOVE bir taşıma işlemi gerçekleştirilmesi.  
   
-- `DROPEFFECT_LINK` Özgün veriler bırakılan verilerden bir bağlantı kurulamıyor.  
+ - Özgün veriler bırakılan verilerden DROPEFFECT_LINK bir bağlantı kurulabilir.  
   
-- `DROPEFFECT_SCROLL` Sürükleme kaydırma işlemi gerçekleşmek üzere veya hedef oluştuğunu gösterir.  
+ - DROPEFFECT_SCROLL sürükleme kaydırma işlemi gerçekleşmek üzere olan veya hedef oluştuğunu gösterir.  
   
- Daha fazla bilgi için bkz: [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK.  
   
 ##  <a name="register"></a>  COleDropTarget::Register  
- OLE DLL'ler olarak geçerli bırakma hedefi ile pencerenizi kaydettirmek için bu işlevini çağırın.  
+ OLE DLL'leri geçerli bırakma hedefi olarak pencerenizi kaydetmek için bu işlevi çağırın.  
   
 ```  
 BOOL Register(CWnd* pWnd);
@@ -336,27 +336,27 @@ BOOL Register(CWnd* pWnd);
   
 ### <a name="parameters"></a>Parametreler  
  *pWnd*  
- Bırakma hedefi olarak kaydedilmesi için pencereyi noktalarına.  
+ Bir bırakma hedefi kaydedilecek olan pencerenin işaret eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kayıt başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ Kayıt başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev bırakma işlemleri kabul edilmesi çağrılmalıdır.  
+ Bu işlev, kabul edilmesi bırakma işlemleri için çağrılmalıdır.  
   
- Daha fazla bilgi için bkz: [RegisterDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms678405) Windows SDK'sındaki.  
+ Daha fazla bilgi için [RegisterDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms678405) Windows SDK.  
   
 ##  <a name="revoke"></a>  COleDropTarget::Revoke  
- Bir çağrı aracılığıyla bir bırakma hedefi olarak kayıtlı pencere yok etme önce bu işlevi çağırmak [kaydetmek](#register) bırakma hedeflerini listesinden kaldırmak için.  
+ Bir çağrı yoluyla bir bırakma hedefi olarak kayıtlı herhangi bir pencere yok etme öncesinde bu işlevi çağırın [kaydetme](#register) bırakma hedefleri listesinden kaldırmak için.  
   
 ```  
 virtual void Revoke();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev otomatik olarak çağrılır [OnDestroy](../../mfc/reference/cwnd-class.md#ondestroy) genellikle açıkça bu işlevi çağırmak gerekli değildir, kayıtlı penceresi için işleyici.  
+ Bu işlev otomatik olarak çağrılır [OnDestroy](../../mfc/reference/cwnd-class.md#ondestroy) genellikle bu işlevi açıkça çağırmak gerekli değildir, kaydedildiği pencere işleyicisi.  
   
- Daha fazla bilgi için bkz: [RevokeDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms692643) Windows SDK'sındaki.  
+ Daha fazla bilgi için [RevokeDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms692643) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   

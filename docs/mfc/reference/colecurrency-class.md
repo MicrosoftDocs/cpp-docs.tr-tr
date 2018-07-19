@@ -32,15 +32,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0cdc5c25751da895100155571d6a24705479fd0
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 596160b94370c4cb8ccbbe7a9003f893d9513a17
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039290"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028310"
 ---
 # <a name="colecurrency-class"></a>COleCurrency sınıfı
-Yalıtan `CURRENCY` OLE Otomasyon veri türü.  
+Kapsülleyen `CURRENCY` OLE Otomasyonu nesnesi etkin veri türü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,17 +54,17 @@ class COleCurrency
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleCurrency::COleCurrency](#colecurrency)|Oluşturan bir `COleCurrency` nesnesi.|  
+|[COleCurrency::COleCurrency](#colecurrency)|Oluşturur bir `COleCurrency` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleCurrency::Format](#format)|Biçimlendirilmiş dize gösterimini oluşturur bir `COleCurrency` nesnesi.|  
-|[COleCurrency::GetStatus](#getstatus)|Bu durum (geçerlilik) alır `COleCurrency` nesnesi.|  
-|[COleCurrency::ParseCurrency](#parsecurrency)|Okuyan bir **para birimi** bir dizeden değer ve değeri ayarlar `COleCurrency`.|  
-|[COleCurrency::SetCurrency](#setcurrency)|Bu değeri ayarlar `COleCurrency` nesnesi.|  
-|[COleCurrency::SetStatus](#setstatus)|Durum (geçerlilik) Bu ayarlar `COleCurrency` nesnesi.|  
+|[COleCurrency::Format](#format)|Bir biçimlendirilmiş dize gösterimini oluşturur bir `COleCurrency` nesne.|  
+|[COleCurrency::GetStatus](#getstatus)|Bu durum (geçerlilik) alır `COleCurrency` nesne.|  
+|[COleCurrency::ParseCurrency](#parsecurrency)|Para birimi değeri bir dizeden okur ve değerini ayarlar `COleCurrency`.|  
+|[COleCurrency::SetCurrency](#setcurrency)|Bu ayarlar `COleCurrency` nesne.|  
+|[COleCurrency::SetStatus](#setstatus)|Durum (geçerlilik) Bu ayarlar `COleCurrency` nesne.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -72,27 +72,27 @@ class COleCurrency
 |----------|-----------------|  
 |[işleç =](#operator_eq)|Kopya bir `COleCurrency` değeri.|  
 |[operator +, -](#operator_plus_minus)|Ekler, çıkarır ve değişiklikleri belirtisi `COleCurrency` değerleri.|  
-|[operator +=-=](#operator_plus_minus_eq)|Ekler ve çıkarır bir `COleCurrency` bu değerden `COleCurrency` nesnesi.|  
-|[işleç * /](#operator_star)|Ölçek bir `COleCurrency` bir tamsayı değeri.|  
-|[işleç * = / =](#operator_star_div_eq)|Bu ölçeklendirir `COleCurrency` bir tamsayı değeri.|  
-|[işleç <<](#operator_stream)|Çıkış bir `COleCurrency` değeri `CArchive` veya `CDumpContext`.|  
-|[İşleç >>](#operator_stream)|Girişleri bir `COleCurrency` nesnesinin `CArchive`.|  
-|[para birimi işleci](#operator_currency)|Dönüştüren bir `COleCurrency` içine değeri bir **para birimi**.|  
-|[operator ==, <, < =, vb..](#colecurrency_relational_operators)|İki karşılaştırır `COleCurrency` değerleri.|  
+|[operator +=-=](#operator_plus_minus_eq)|Ekler ve çıkaran bir `COleCurrency` bu değerden `COleCurrency` nesne.|  
+|[operator * /](#operator_star)|Ölçekler bir `COleCurrency` değeri bir tamsayı değeri.|  
+|[operator * =, / =](#operator_star_div_eq)|Bu ölçeklendirir `COleCurrency` değeri bir tamsayı değeri.|  
+|[işleç <<](#operator_stream)|Çıkış bir `COleCurrency` değerini `CArchive` veya `CDumpContext`.|  
+|[İşleç >>](#operator_stream)|Giriş bir `COleCurrency` nesnesinden `CArchive`.|  
+|[para birimi işleci](#operator_currency)|Dönüştürür bir `COleCurrency` bir para birimi değeri.|  
+|[işleç ==, <, < =, vs.](#colecurrency_relational_operators)|İki karşılaştırır `COleCurrency` değerleri.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleCurrency::m_cur](#m_cur)|Arka plandaki içeren **para birimi** bu `COleCurrency` nesnesi.|  
-|[COleCurrency::m_status](#m_status)|Bu durumu içeren `COleCurrency` nesnesi.|  
+|[COleCurrency::m_cur](#m_cur)|Bunun için temel alınan para birimi içeren `COleCurrency` nesne.|  
+|[COleCurrency::m_status](#m_status)|Bu durumu içeren `COleCurrency` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `COleCurrency` bir taban sınıfı yok.  
+ `COleCurrency` bir temel sınıfa sahip değil.  
   
- **Para birimi** 8 bayt, 10.000 ölçeğinde ikiye tamsayı değeri olarak uygulanır. Bu seçenek, bir sabit noktalı ondalık ayırıcının sol tarafındaki 15 basamağa numarasıyla ve 4 basamak sağa sağlar. **Para birimi** veri türü olan veya tüm sabit noktalı hesaplama para içeren hesaplamalar için son derece kullanışlı doğruluğunu önemli olduğu. Olası türlerinde biridir `VARIANT` OLE Otomasyon veri türü.  
+ Para birimi, 8 byte, 10.000 ölçeğinde ikiye tamsayı değeri olarak uygulanır. Bu seçenek, sabit noktalı bir sayı Ondalık ayırıcının solundaki 15 basamakla ve 4 rakamdan sağa sağlar. Para birimi veri türüne doğruluğu önemli olduğu parayla veya herhangi bir sabit nokta hesaplaması için fazlasıyla yararlı bir özelliktir. Olası türlerinde biridir `VARIANT` OLE Otomasyonu nesnesi etkin veri türü.  
   
- `COleCurrency` Ayrıca bu sabit noktalı türü için aritmetik bazı temel işlemleri uygular. Sabit noktalı hesaplamalar sırasında ortaya yuvarlama hataları denetlemek için desteklenen işlemler seçilmedi.  
+ `COleCurrency` Ayrıca bu sabit nokta türü için bazı temel aritmetik işlemleri uygular. Desteklenen işlemler, hesaplamalardaki sırasında ortaya çıkan yuvarlama hataları denetlemek için seçilmedi.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `COleCurrency`  
@@ -101,7 +101,7 @@ class COleCurrency
  **Başlık:** afxdisp.h  
   
 ##  <a name="colecurrency"></a>  COleCurrency::COleCurrency  
- Oluşturan bir `COleCurrency` nesnesi.  
+ Oluşturur bir `COleCurrency` nesne.  
   
 ```  
 COleCurrency();  
@@ -116,35 +116,35 @@ COleCurrency(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *cySrc*  
- A **para birimi** yeni içine Kopyalanacak değer `COleCurrency` nesnesi.  
+ *cysrc &*  
+ Yeni içine kopyalanacak bir para birimi değeri `COleCurrency` nesne.  
   
  *curSrc*  
- Var olan `COleCurrency` yeni içine kopyalanacak nesne `COleCurrency` nesne.  
+ Mevcut bir `COleCurrency` yeni içine kopyalanacak nesne `COleCurrency` nesne.  
   
  *varSrc*  
- Var olan **değişken** veri yapısı (büyük olasılıkla bir `COleVariant` nesnesi) bir para birimi değeri dönüştürülecek ( `VT_CY`) ve yeni içine kopyalanan `COleCurrency` nesnesi.  
+ Mevcut bir `VARIANT` veri yapısı (büyük olasılıkla bir `COleVariant` nesnesi) bir para birimi değeri (VT_CY) dönüştürülür ve yeni kopyalanan `COleCurrency` nesne.  
   
  *nUnits*, *nFractionalUnits*  
- Birimleri ve kesirli kısmını değeri (1/10, 000's)'daki yeni içine kopyalanacak belirtmek `COleCurrency` nesnesi.  
+ Birimleri ve kesirli kısmını değeri (1/10, 000's içinde) yeni içine kopyalanacak belirtmek `COleCurrency` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm bu oluşturucular Yeni Oluştur `COleCurrency` nesneleri belirtilen değerle başlatılır. Bu oluşturucu her kısa bir açıklamasını izler. Aksi belirtilmediği sürece, yeni durumunu `COleCurrency` öğesi için geçerli ayarlanır.  
+ Tüm bu oluşturucular Yeni Oluştur `COleCurrency` nesneleri belirtilen değerle başlatılır. Bu oluşturucular her kısa bir açıklaması aşağıdadır. Aksi belirtilmediği sürece, yeni durumunu `COleCurrency` öğesi için geçerli olarak ayarlanır.  
   
-- COleCurrency() yapıları bir `COleCurrency` nesne 0 (sıfır) başlatıldı.  
+- COleCurrency() yapıları bir `COleCurrency` 0 (sıfır) olarak başlatılmış bir nesne.  
   
-- COleCurrency (`cySrc`) oluşturan bir `COleCurrency` nesnesinin bir [para birimi](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) değeri.  
+- COleCurrency (`cySrc`) oluşturan bir `COleCurrency` nesnesinden bir [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) değeri.  
   
-- COleCurrency (`curSrc`) oluşturan bir `COleCurrency` varolan bir nesne `COleCurrency` nesne. Yeni bir nesne kaynak nesne ile aynı duruma sahiptir.  
+- COleCurrency (`curSrc`) oluşturan bir `COleCurrency` mevcut bir nesne `COleCurrency` nesne. Yeni nesne kaynak nesne ile aynı duruma sahip.  
   
-- COleCurrency (`varSrc`) oluşturan bir `COleCurrency` nesnesi. Dönüştürmeye çalışır bir [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) yapısı veya `COleVariant` bir para birimi nesnesine ( `VT_CY`) değeri. Bu dönüştürme başarılı olursa, dönüştürülen değer yeni içine kopyalanır `COleCurrency` nesnesi. Değeri, değilse `COleCurrency` nesne ayarlanmış sıfır (0) ve onun durumu geçersiz.  
+- COleCurrency (`varSrc`) oluşturan bir `COleCurrency` nesne. Dönüştürmeye çalışır bir [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) yapısı veya `COleVariant` nesne bir para birimi (VT_CY) değeri. Bu dönüştürmenin başarılı olursa, dönüştürülen değer yeni kopyalanan `COleCurrency` nesne. Değerini, değilse `COleCurrency` nesne sıfır (0) ve kendi geçersiz durumuna ayarlanır.  
   
-- `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' nesnesi belirtilen sayısal bileşenlerinden. Kesirli bölümü mutlak değerini 10. 000 ' büyükse, uygun düzeltme birimlerine yapılır. Birimleri ve kesirli bölümü tarafından imzalanan uzun değerler belirtilen unutmayın.  
+- `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' belirtilen sayısal bileşenlerinden nesne. Kesirli bölümü mutlak değerini 10. 000 ' büyükse, uygun düzeltme birimleri için yapılır. Not, birimleri ve kesirli bölümü tarafından imzalanmış uzun değerler belirtilir.  
   
- Daha fazla bilgi için bkz: [para birimi](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) Windows SDK'sı giriş.  
+ Daha fazla bilgi için [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) Windows SDK'sı girdileri.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekler sıfır parametresi ve iki parametresi oluşturucular etkileri gösterir:  
+ Aşağıdaki örnekler, sıfır parametresi ve iki parametre oluşturucular etkilerini gösterir:  
   
  [!code-cpp[NVC_MFCOleContainer#10](../../mfc/codesnippet/cpp/colecurrency-class_1.cpp)]  
   
@@ -156,35 +156,35 @@ CString Format(DWORD  dwFlags = 0, LCID  lcid = LANG_USER_DEFAULT) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *dwFlags*  
- Yerel ayarlar için bayrakları belirtir. Yalnızca aşağıdaki bayrağı para birimi için geçerlidir:  
+ *CertOpenStore*  
+ Yerel ayarlar için bayrakları belirtir. Yalnızca aşağıdaki bayrağı, para birimi için geçerlidir:  
   
-- **LOCALE_NOUSEROVERRIDE** özel kullanıcı ayarları yerine sistem varsayılan yerel ayarları kullanın.  
+- LOCALE_NOUSEROVERRIDE sistem varsayılan yerel ayarları yerine özel kullanıcı ayarları kullanın.  
   
  *lcid*  
- Dönüştürme işlemi için kullanılacak yerel ayar Kimliğini gösterir.  
+ Dönüştürme için kullanılacak yerel ayar Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `CString` biçimlendirilmiş para birimi değeri içerir.  
+ A `CString` , biçimlendirilmiş para birimi değeri içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yerel dil belirtimleri (yerel ayar kimlikleri) kullanarak değeri biçimlendirir. Para birimi simgesini döndürülen değer dahil edilmez. Varsa bu durumu `COleCurrency` nesnesi null, boş bir dize dönüş değeri değil. Geçersiz durumundaysa, dönüş dizesi dize kaynak tarafından belirtilen **IDS_INVALID_CURRENCY**.  
+ Yerel dil özellikleri (yerel ayar kimlikleri) kullanarak değeri biçimlendirir. Döndürülen değer bir para birimi simgesi dahil edilmez. Varsa bu durum `COleCurrency` nesnesi null ise, dönüş değeri boş bir dizedir. Geçersiz durum ise, dize kaynağı IDS_INVALID_CURRENCY dizesini belirtilir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#11](../../mfc/codesnippet/cpp/colecurrency-class_2.cpp)]  
   
 ##  <a name="getstatus"></a>  COleCurrency::GetStatus  
- (Geçerlilik) durumunu almak için bu üye işlevini çağırın bir verilen `COleCurrency` nesnesi.  
+ (Geçerlilik) durumunu almak için bu üye işlevi çağrısı bir verilen `COleCurrency` nesne.  
   
 ```  
 CurrencyStatus GetStatus() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu durumu döndürür `COleCurrency` değeri.  
+ Bu durumunu döndüren `COleCurrency` değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dönüş değeri tarafından tanımlanan `CurrencyStatus` numaralandırılmış içinde tanımlanan türü `COleCurrency` sınıfı.  
+ Dönüş değeri tarafından tanımlanan `CurrencyStatus` listelenmiş içinde tanımlanan bir türü `COleCurrency` sınıfı.  
   
 ```  
 enum CurrencyStatus {
@@ -196,51 +196,51 @@ enum CurrencyStatus {
   
  Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:  
   
-- **COleCurrency::valid** belirtir bu `COleCurrency` nesne geçerlidir.  
+  - `COleCurrency::valid` Belirten bu `COleCurrency` nesne geçerlidir.  
   
-- **COleCurrency::invalid** belirtir bu `COleCurrency` nesnesi geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
+  - `COleCurrency::invalid` Belirten bu `COleCurrency` Nesne geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
   
-- **COleCurrency::null** belirtir bu `COleCurrency` nesnesi null, diğer bir deyişle, bu nesne için herhangi bir değer belirtildi. (Bu bir "herhangi bir değer aksine C++ kullanılmasının" veritabanı algılama "null" **NULL**.)  
+  - `COleCurrency::null` Belirten bu `COleCurrency` nesnesi, null, diğer bir deyişle, bu nesne için hiçbir değer belirtilmiş. ("Null" bir "herhangi bir değer NULL C++ aksine kullanılmasının" veritabanı anlamında budur.)  
   
- Durumunu bir `COleCurrency` nesnesi aşağıdaki durumlarda geçersiz:  
+ Durumunu bir `COleCurrency` aşağıdaki durumlarda nesne geçersiz:  
   
--   Gelen değerini ayarlarsanız bir **değişken** veya `COleVariant` bir para birimi değeri dönüştürülemedi değeri.  
+-   Bir DEĞİŞKENDEN değerini ayarlarsanız veya `COleVariant` için para birimi değeri dönüştürülemedi değeri.  
   
--   Bu nesne bir taşması veya underflow aritmetik atama işlemi sırasında örneğin karşılaştı, `+=` veya **\* =**.  
+-   Bu nesne bir taşma veya yetersiz gelme aritmetik atama işlemi sırasında örneğin karşılaştı, `+=` veya **\* =**.  
   
--   Bu nesne için geçersiz bir değer atanmışsa.  
+-   Bu nesne için geçersiz bir değere atanırsa.  
   
--   Kullanarak geçersiz bu nesnenin durumu açıkça ayarlanmış olmadığını [SetStatus](#setstatus).  
+-   Bu nesne durumunu kullanarak geçersiz açıkça ayarlandığını [SetStatus](#setstatus).  
   
- İşlemler hakkında daha fazla bilgi için aşağıdaki üye işlevlerini geçersiz bkz durumu ayarlayabilir:  
+ Geçersiz, aşağıdaki üye işlevleri için durumunu ayarlayabilir işlemleri hakkında daha fazla bilgi için:  
   
-- [COleCurrency](#colecurrency)  
+ - [COleCurrency](#colecurrency)  
   
-- [işleç =](#operator_eq)  
+ - [işleç =](#operator_eq)  
   
-- [operator + -](#operator_plus_minus)  
+ - [operator + -](#operator_plus_minus)  
   
-- [operator += ve-=](#operator_plus_minus_eq)  
+ - [operator += ve-=](#operator_plus_minus_eq)  
   
-- [işleç * /](#operator_star)  
+ - [operator * /](#operator_star)  
   
-- [işleç * = ve / =](#operator_star_div_eq)  
+ - [operator * = ve / =](#operator_star_div_eq)  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
   
 ##  <a name="m_cur"></a>  COleCurrency::m_cur  
- Arka plandaki [para birimi](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) yapısı bu `COleCurrency` nesnesi.  
+ Arka plandaki [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) yapısı bu `COleCurrency` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!CAUTION]
->  Değer değiştirme **para birimi** bu işlev tarafından döndürülen işaretçi tarafından erişilen yapısı, bu değeri değiştirir `COleCurrency` nesnesi. Bu durumu değiştirmez `COleCurrency` nesnesi.  
+>  Değer değiştirme `CURRENCY` bu işlev tarafından döndürülen işaretçi tarafından erişilen yapısı, bu değeri değişecek `COleCurrency` nesne. Bu durumu değiştirmez `COleCurrency` nesne.  
   
- Daha fazla bilgi için bkz: [para birimi](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) Windows SDK'sı giriş.  
+ Daha fazla bilgi için [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) Windows SDK'sı girişi.  
   
 ##  <a name="m_status"></a>  COleCurrency::m_status  
- Bu veri üyesi türü numaralandırılmış türüdür `CurrencyStatus`, içinde tanımlanan `COleCurrency` sınıfı.  
+ Bu veri üyesi listeden seçimli türü türüdür `CurrencyStatus`, içinde tanımlanan `COleCurrency` sınıfı.  
   
 ```  
 enum CurrencyStatus{  
@@ -251,43 +251,43 @@ enum CurrencyStatus{
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:  
+Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:  
   
-- **COleCurrency::valid** belirtir bu `COleCurrency` nesne geçerlidir.  
+ - `COleCurrency::valid` Belirten bu `COleCurrency` nesne geçerlidir.  
+      
+ - `COleCurrency::invalid` Belirten bu `COleCurrency` Nesne geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
+      
+ - `COleCurrency::null` Belirten bu `COleCurrency` nesnesi, null, diğer bir deyişle, bu nesne için hiçbir değer belirtilmiş. ("Null" bir "herhangi bir değer NULL C++ aksine kullanılmasının" veritabanı anlamında budur.)  
   
-- **COleCurrency::invalid** belirtir bu `COleCurrency` nesnesi geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
+Durumunu bir `COleCurrency` aşağıdaki durumlarda nesne geçersiz:  
   
-- **COleCurrency::null** belirtir bu `COleCurrency` nesnesi null, diğer bir deyişle, bu nesne için herhangi bir değer belirtildi. (Bu bir "herhangi bir değer aksine C++ kullanılmasının" veritabanı algılama "null" **NULL**.)  
+ - Bir DEĞİŞKENDEN değerini ayarlarsanız veya `COleVariant` için para birimi değeri dönüştürülemedi değeri.  
+      
+ - Bu nesne bir taşma veya yetersiz gelme aritmetik atama işlemi sırasında örneğin karşılaştı, `+=` veya **\* =**.  
+      
+ - Bu nesne için geçersiz bir değere atanırsa.  
+      
+ - Bu nesne durumunu kullanarak geçersiz açıkça ayarlandığını [SetStatus](#setstatus).  
   
- Durumunu bir `COleCurrency` nesnesi aşağıdaki durumlarda geçersiz:  
+Geçersiz, aşağıdaki üye işlevleri için durumunu ayarlayabilir işlemleri hakkında daha fazla bilgi için:  
   
--   Gelen değerini ayarlarsanız bir **değişken** veya `COleVariant` bir para birimi değeri dönüştürülemedi değeri.  
+ - [COleCurrency](#colecurrency)  
+      
+ - [işleç =](#operator_eq)  
+      
+ - [operator +, -](#operator_plus_minus)  
+      
+ - [operator +=-=](#operator_plus_minus_eq)  
+      
+ - [operator * /](#operator_star)  
+      
+ - [operator * =, / =](#operator_star_div_eq)  
   
--   Bu nesne bir taşması veya underflow aritmetik atama işlemi sırasında örneğin karşılaştı, `+=` veya **\* =**.  
-  
--   Bu nesne için geçersiz bir değer atanmışsa.  
-  
--   Kullanarak geçersiz bu nesnenin durumu açıkça ayarlanmış olmadığını [SetStatus](#setstatus).  
-  
- İşlemler hakkında daha fazla bilgi için aşağıdaki üye işlevlerini geçersiz bkz durumu ayarlayabilir:  
-  
-- [COleCurrency](#colecurrency)  
-  
-- [işleç =](#operator_eq)  
-  
-- [operator +, -](#operator_plus_minus)  
-  
-- [operator +=-=](#operator_plus_minus_eq)  
-  
-- [işleç * /](#operator_star)  
-  
-- [işleç * = / =](#operator_star_div_eq)  
-  
-    > [!CAUTION]
-    >  Gelişmiş programlama durumlar için bu veri üyesidir. Satır içi üye işlevleri kullanması gereken [GetStatus](#getstatus) ve [SetStatus](#setstatus). Bkz: `SetStatus` açıkça bu veri üyesi ayarlama ile ilgili daha fazla uyarılar için.  
+> [!CAUTION]
+>  Gelişmiş programlama durumlar için bu verileri üyesidir. Satır içi üye işlevleri kullanmalıdır [GetStatus](#getstatus) ve [SetStatus](#setstatus). Bkz: `SetStatus` açıkça bu veri üyesi ayarlama ile ilgili daha fazla uyarılar için.  
   
 ##  <a name="operator_eq"></a>  COleCurrency::operator =  
- Bu aşırı yüklenmiş atama işleçleri kaynak para birimi değeri bu kopyalamak `COleCurrency` nesnesi.  
+ Bu aşırı yüklenmiş atama işleçleri bu kaynak para birimi değeri kopyalayın `COleCurrency` nesne.  
   
 ```  
 const COleCurrency& operator=(CURRENCY cySrc);  
@@ -296,21 +296,21 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Her işleç kısa bir açıklamasını aşağıdaki gibidir:  
+ Her işleç kısa bir açıklaması aşağıdaki gibidir:  
   
-- **işleç = (** `cySrc` **)** `CURRENCY` değeri kopyalanır `COleCurrency` nesne ve durumu ayarlanmış için geçerli.  
+- **operator = (** `cySrc` **)** `CURRENCY` değeri kopyalanır `COleCurrency` nesne ve durumuna ayarlanır için geçerli.  
   
-- **işleç = (** `curSrc` **)** değeri ve var olan işleneni durumunu `COleCurrency` nesne bu aralığa kopyalanır `COleCurrency` nesnesi.  
+- **işleç = (** `curSrc` **)** mevcut bir işlenen, durumunu ve değer `COleCurrency` nesne bu kopyalanır `COleCurrency` nesne.  
   
-- **işleç = (** *varSrc* **)** varsa dönüştürülmesi `VARIANT` değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) bir para birimi için ( `VT_CY`) olan başarılı, dönüştürülen değer bu kopyalanır `COleCurrency` nesne ve durumu ayarlanmış için geçerli. Dönüştürme başarılı değilse değerini `COleCurrency` nesne ayarlanmış 0 ve durumu geçersiz.  
+- **işleç = (** *varSrc* **)** varsa dönüştürülmesi `VARIANT` değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) para birimine ( `VT_CY`) olan başarılı, dönüştürülen değer bu kopyalanır `COleCurrency` nesne ve durumuna ayarlanır için geçerli. Dönüştürme başarılı ise değerini `COleCurrency` nesnesi, 0'geçersiz durumu ayarlanır.  
   
- Daha fazla bilgi için bkz: [para birimi](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) Windows SDK'sı giriş.  
+ Daha fazla bilgi için [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) Windows SDK'sı girdileri.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
   
 ##  <a name="operator_plus_minus"></a>  COleCurrency::operator +, -  
- Bu işleçlere ekleme ve iki izin `COleCurrency` değerleri için ve birbirlerinden ve işaretini değiştirmek için bir `COleCurrency` değeri.  
+ Bu işleçler, ekleme ve çıkarmayı iki izin `COleCurrency` değerleri için ve birbirlerinden ve işaretini değiştirmek için bir `COleCurrency` değeri.  
   
 ```  
 COleCurrency operator+(const COleCurrency& cur) const;  
@@ -319,19 +319,19 @@ COleCurrency operator-() const;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlenen birini ise null, elde edilen durumunu `COleCurrency` değeri NULL'dur.  
+ İşlenenler biri geçerli olduğunda null, ortaya çıkan durumunu `COleCurrency` değeri NULL'dur.  
   
- Aritmetik işlemin taşar varsa, elde edilen `COleCurrency` değeri geçersiz.  
+ Aritmetik işlem taşma durumunda, ortaya çıkan `COleCurrency` değeri geçersiz.  
   
- İşlenen geçersiz ve diğer null, elde edilen durumunu ise `COleCurrency` değeri geçersiz.  
+ İşlenen geçersiz ve diğeri ise null değil ortaya çıkan durumu olan `COleCurrency` değeri geçersiz.  
   
- Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz: [m_status](#m_status) üye değişkeni.  
+ Geçerli, geçersiz ve boş durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]  
   
 ##  <a name="operator_plus_minus_eq"></a>  COleCurrency::operator +=-=  
- Ekleme ve çıkarma olanak tanıyan bir `COleCurrency` için ve bu değer `COleCurrency` nesnesi.  
+ Ekleme ve çıkarma olanak tanıyan bir `COleCurrency` için ve bu değer `COleCurrency` nesne.  
   
 ```  
 const COleCurrency& operator+=(const COleCurrency& cur);  
@@ -339,19 +339,19 @@ const COleCurrency& operator-=(const COleCurrency& cur);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlenen birini ise null, bu durumu `COleCurrency` nesne ayarlanmış null.  
+ İşlenenden ya da ise null, bu durumu `COleCurrency` kümesi nesnesi null.  
   
- Aritmetik işlemin taşar varsa, bu durumu `COleCurrency` kümesi nesnesi geçersiz.  
+ Aritmetik işlemi bu durumu taşıyor, `COleCurrency` kümesi nesnesi geçersiz.  
   
- İşlenen birini geçersiz ve diğer null değilse, bu durumu `COleCurrency` nesne ayarlanmış geçersiz.  
+ İşlenenden ya da geçersiz ve diğerini null değilse, bu durumu `COleCurrency` kümesi nesnesi geçersiz.  
   
- Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz: [m_status](#m_status) üye değişkeni.  
+ Geçerli, geçersiz ve boş durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]  
   
 ##  <a name="operator_star"></a>  COleCurrency::operator * ve /  
- Ölçeklendirmenizi izin bir `COleCurrency` değer bir tamsayı değeri.  
+ Ölçeklendirme izin bir `COleCurrency` değeri bir tamsayı değeri.  
   
 ```  
 COleCurrency operator*(long nOperand) const;  
@@ -359,19 +359,19 @@ COleCurrency operator/(long nOperand) const;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `COleCurrency` işleneni null, elde edilen durumunu `COleCurrency` değeri NULL'dur.  
+ Varsa `COleCurrency` işleneni null sonuç durumunu `COleCurrency` değeri NULL'dur.  
   
- Aritmetik işlemin taşarsa veya sayımında, elde edilen durumunu `COleCurrency` değeri geçersiz.  
+ Aritmetik işlem taşarsa veya yetersiz, ortaya çıkan durumunu `COleCurrency` değeri geçersiz.  
   
- Varsa `COleCurrency` işlenen geçersiz sonuç durumunu `COleCurrency` değeri geçersiz.  
+ Varsa `COleCurrency` işlenen geçersiz durum ortaya çıkan `COleCurrency` değeri geçersiz.  
   
- Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz: [m_status](#m_status) üye değişkeni.  
+ Geçerli, geçersiz ve boş durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]  
   
-##  <a name="operator_star_div_eq"></a>  COleCurrency::operator * = / =  
- Bu ölçeklendirmenizi izin `COleCurrency` değer bir tamsayı değeri.  
+##  <a name="operator_star_div_eq"></a>  COleCurrency::operator * =, / =  
+ Bu ölçek izin `COleCurrency` değeri bir tamsayı değeri.  
   
 ```  
 const COleCurrency& operator*=(long nOperand);  
@@ -379,19 +379,19 @@ const COleCurrency& operator/=(long nOperand);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `COleCurrency` işleneni null, bu durumu `COleCurrency` nesne ayarlanmış null.  
+ Varsa `COleCurrency` işlenen, null, bu durumu `COleCurrency` kümesi nesnesi null.  
   
- Aritmetik işlemin taşar varsa, bu durumu `COleCurrency` kümesi nesnesi geçersiz.  
+ Aritmetik işlemi bu durumu taşıyor, `COleCurrency` kümesi nesnesi geçersiz.  
   
- Varsa `COleCurrency` işlenen geçersiz bu durumu `COleCurrency` kümesi nesnesi geçersiz.  
+ `COleCurrency` İşlenen geçersiz durum bu `COleCurrency` kümesi nesnesi geçersiz.  
   
- Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz: [m_status](#m_status) üye değişkeni.  
+ Geçerli, geçersiz ve boş durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]  
   
 ##  <a name="operator_stream"></a>  COleCurrency::operator &lt; &lt;, &gt;&gt;  
- Tanılama dökme ve arşive depolama destekler.  
+ Tanılama dökme ve bir arşiv Depolama'yı destekler.  
   
 ```  
 friend CDumpContext& operator<<(
@@ -408,10 +408,10 @@ friend CArchive& operator>>(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayıklama ( **>>**) işleci bir arşiv yüklenmesini destekler.  
+ Çıkarma ( **>>**) işleci bir arşiv yüklenmesini destekler.  
   
 ##  <a name="operator_currency"></a>  COleCurrency::operator para birimi  
- Döndürür bir `CURRENCY` değeri öğesinden kopyalanır yapısı `COleCurrency` nesnesi.  
+ Döndürür bir `CURRENCY` değeri bu kopyalanır yapısı `COleCurrency` nesne.  
   
 ```  
 operator CURRENCY() const; 
@@ -434,35 +434,35 @@ throw(COleException*);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszCurrency*  
- Ayrıştırılacak olan null ile sonlandırılmış dize için bir işaretçi.  
+ Ayrıştırılacak olan boş sonlandırılmış dizeye bir işaretçi.  
   
- *dwFlags*  
- Yerel ayarları, büyük olasılıkla aşağıdaki bayrağı bayrakları gösterir:  
+ *CertOpenStore*  
+ Yerel ayarlar, büyük olasılıkla aşağıdaki bayrağı bayrakları gösterir:  
   
-- **LOCALE_NOUSEROVERRIDE** özel kullanıcı ayarları yerine sistem varsayılan yerel ayarları kullanın.  
+- LOCALE_NOUSEROVERRIDE sistem varsayılan yerel ayarları yerine özel kullanıcı ayarları kullanın.  
   
  *lcid*  
- Dönüştürme işlemi için kullanılacak yerel ayar Kimliğini gösterir.  
+ Dönüştürme için kullanılacak yerel ayar Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dize para birimi değeri için Aksi halde 0 başarıyla dönüştürüldü, sıfır olmayan.  
+ Dize, bir para birimi değeri için Aksi durumda 0 başarıyla dönüştürüldü olursa sıfır dışı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kaynak dizesi sayısal karakter anlamını için yerel dil belirtimleri (yerel ayar kimlikleri) kullanır.  
+ Yerel dil özellikleri (yerel ayar kimlikleri), sayısal karakter kaynak dizesi anlamını için kullanır.  
   
- Yerel ayar kimliği değerleri tartışma için bkz [destekleyen birden çok dil](http://msdn.microsoft.com/en-us/47dc5add-232c-4268-b977-43e12da81ede).  
+ Yerel ayar kimliği değerlerin bir açıklaması için bkz. [birden fazla dili destekleyen](http://msdn.microsoft.com/47dc5add-232c-4268-b977-43e12da81ede).  
   
- Dize bir para birimi başarıyla dönüştürüldü değeri, bu değeri `COleCurrency` nesne ayarlanmış bu değeri ve durumuna geçerli.  
+ Dize, bir para birimi başarıyla dönüştürüldü değeri, bu değeri `COleCurrency` nesne ayarlandığından bu değeri ve durumu için geçerli.  
   
- Dize bir para birimi değeri dönüştürülemedi mı yoksa bu durum bir sayısal taşması olduysa `COleCurrency` nesnesi geçersiz.  
+ Dize için para birimi değeri dönüştürülemedi veya sayısal bir taşma, bu durum ise `COleCurrency` nesnesi geçersiz.  
   
- Dize dönüştürme bellek ayırma hataları nedeniyle başarısız olursa, bu işlev oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md). Diğer hata durumu, bu işlev oluşturur bir [COleException](../../mfc/reference/coleexception-class.md).  
+ Bellek ayırma hataları nedeniyle dize dönüştürme başarısız olursa bu işlev oluşturur. bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md). Diğer hata durumu, bu işlev oluşturur bir [COleException](../../mfc/reference/coleexception-class.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#13](../../mfc/codesnippet/cpp/colecurrency-class_9.cpp)]  
   
-##  <a name="colecurrency_relational_operators"></a>  COleCurrency ilişkisel işleçler  
- İki para birimi değerleri karşılaştırmak ve koşulun doğru olması durumunda sıfır olmayan döndürür; Aksi takdirde 0.  
+##  <a name="colecurrency_relational_operators"></a>  COleCurrency ilişkisel işleçleri  
+ İki para birimi değerini karşılaştırır ve koşul true ise sıfır olmayan döndürür; Aksi durumda 0.  
   
 ```  
 BOOL operator==(const COleCurrency& cur) const;  
@@ -476,13 +476,13 @@ BOOL operator>=(const COleCurrency& cur) const;
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  Sıralama işlemleri dönüş değerini ( **<**, **\< =**, **>**, **>=**) ya da işleneni durumu null veya geçersiz ise tanımlanmadı. Eşitlik işleçleri ( `==`, `!=`) işlenenleri durumunu göz önünde bulundurun.  
+>  Sıralama işlemleri dönüş değerini ( **<**, **\< =**, **>**, **>=**) iki işlenenden durumu null veya geçersiz ise tanımsızdır. Eşitlik işleçleri ( `==`, `!=`) işlenenleri durumunu göz önünde bulundurun.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#20](../../mfc/codesnippet/cpp/colecurrency-class_10.cpp)]  
   
 ##  <a name="setcurrency"></a>  COleCurrency::SetCurrency  
- Birimleri ve kesirli kısmı ayarlamak için bu üye işlevini çağırın `COleCurrency` nesnesi.  
+ Birimleri ve kesirli kısmı ayarlamak için bu üye işlevi çağrısı `COleCurrency` nesne.  
   
 ```  
 void SetCurrency(
@@ -492,18 +492,18 @@ void SetCurrency(
   
 ### <a name="parameters"></a>Parametreler  
  *nUnits*, *nFractionalUnits*  
- Birimleri ve kesirli kısmını değeri (1/10, 000's)'daki bu kopyalanacak belirtmek `COleCurrency` nesnesi.  
+ Birimleri ve kesirli kısmını değeri (1/10, 000's içinde) bu kopyalanacak belirtmek `COleCurrency` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kesirli bölümü mutlak değerini 10. 000 ' büyükse, uygun düzeltme birimler, üçüncü aşağıdaki örneklerde gösterildiği gibi yapılır.  
+ Kesirli bölümü mutlak değerini 10. 000 ' büyükse, uygun düzeltme üçüncü aşağıdaki örneklerde gösterildiği gibi birimleri için yapılır.  
   
- Birimleri ve kesirli bölümü tarafından imzalanan uzun değerler belirtilen unutmayın. Aşağıdaki örneklerde dördüncü parametreleri işaretleri farklı olduğunda ne olacağını gösterir.  
+ Not, birimleri ve kesirli bölümü tarafından imzalanmış uzun değerler belirtilir. Aşağıdaki örneklerin dördüncü parametrelere farklı işaretlere sahipse ne olacağını gösterir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#14](../../mfc/codesnippet/cpp/colecurrency-class_11.cpp)]  
   
 ##  <a name="setstatus"></a>  COleCurrency::SetStatus  
- Bu durum (geçerlilik) ayarlamak için bu üye işlevini çağırın `COleCurrency` nesnesi.  
+ Bu durum (geçerlilik) ayarlamak için bu üye işlevi çağrısı `COleCurrency` nesne.  
   
 ```  
 void SetStatus(CurrencyStatus  status  );
@@ -511,10 +511,10 @@ void SetStatus(CurrencyStatus  status  );
   
 ### <a name="parameters"></a>Parametreler  
  *Durumu*  
- Bu yeni durum `COleCurrency` nesnesi.  
+ Bu yeni durum `COleCurrency` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- *Durum* tarafından tanımlanan parametre değeri `CurrencyStatus` numaralandırılmış içinde tanımlanan türü `COleCurrency` sınıfı.  
+ *Durumu* parametre değeri tarafından tanımlanan `CurrencyStatus` listelenmiş içinde tanımlanan bir türü `COleCurrency` sınıfı.  
   
 ```  
 enum CurrencyStatus {
@@ -526,14 +526,14 @@ enum CurrencyStatus {
   
  Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:  
   
-- **COleCurrency::valid** belirtir bu `COleCurrency` nesne geçerlidir.  
+- `COleCurrency::valid` Belirten bu `COleCurrency` nesne geçerlidir.  
   
-- **COleCurrency::invalid** belirtir bu `COleCurrency` nesnesi geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
+- `COleCurrency::invalid` Belirten bu `COleCurrency` Nesne geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
   
-- **COleCurrency::null** belirtir bu `COleCurrency` nesnesi null, diğer bir deyişle, bu nesne için herhangi bir değer belirtildi. (Bu bir "herhangi bir değer aksine C++ kullanılmasının" veritabanı algılama "null" **NULL**.)  
+- `COleCurrency::null` Belirten bu `COleCurrency` nesnesi, null, diğer bir deyişle, bu nesne için hiçbir değer belirtilmiş. ("Null" bir "herhangi bir değer NULL C++ aksine kullanılmasının" veritabanı anlamında budur.)  
   
-    > [!CAUTION]
-    >  Bu işlev, Gelişmiş programlama durumlar için kullanılır. Bu işlev, bu nesne verileri değiştirmez. Genellikle, boş veya geçersiz için durumunu ayarlamak için de kullanılır. Unutmayın atama işleci ( [işleç =](#operator_eq)) ve [SetCurrency](#setcurrency) kaynak değerler göre bir nesne durumunu ayarlayın.  
+> [!CAUTION]
+>  Bu işlev, Gelişmiş programlama durumlar için kullanılır. Bu işlev, bu nesne verileri değiştirmez. Çoğunlukla, null veya geçersiz durumu ayarlamak için de kullanılır. Unutmayın atama işleci ( [işleç =](#operator_eq)) ve [SetCurrency](#setcurrency) kaynak değerleri üzerinde temel nesnenin durumunu ayarlayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

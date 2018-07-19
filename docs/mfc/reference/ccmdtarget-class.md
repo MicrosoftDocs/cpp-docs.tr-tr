@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1dfc1c4d5cf753ae102d7656e94d63923004d2cc
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 9292e4d5ff9bf0f6f829c14dd0ee11e77a641d2d
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955667"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39027660"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 Microsoft Foundation Class Kitaplığı ileti eşleme mimarisi için temel sınıf.  
@@ -78,42 +78,42 @@ class CCmdTarget : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCmdTarget::CCmdTarget](#ccmdtarget)|Oluşturan bir `CCmdTarget` nesnesi.|  
+|[CCmdTarget::CCmdTarget](#ccmdtarget)|Oluşturur bir `CCmdTarget` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCmdTarget::BeginWaitCursor](#beginwaitcursor)|İmleç bir kum saati imleç olarak görüntüler.|  
-|[CCmdTarget::DoOleVerb](#dooleverb)|Eylemin gerçekleştirilmesi için bir OLE fiil tarafından belirtilen neden olur.|  
-|[CCmdTarget::EnableAutomation](#enableautomation)|OLE Otomasyon için verir `CCmdTarget` nesnesi.|  
-|[CCmdTarget::EnableConnections](#enableconnections)|Olay tetikleme bağlantı noktaları sağlar.|  
+|[CCmdTarget::BeginWaitCursor](#beginwaitcursor)|İmleç bir kum saati imleç görüntüler.|  
+|[CCmdTarget::DoOleVerb](#dooleverb)|Gerçekleştirilecek bir OLE fiili belirtilen eylem neden olur.|  
+|[CCmdTarget::EnableAutomation](#enableautomation)|OLE Otomasyonu için sağlar `CCmdTarget` nesne.|  
+|[CCmdTarget::EnableConnections](#enableconnections)|Olay tetikleyicisinin tetikleme bağlantı noktaları sağlar.|  
 |[CCmdTarget::EnableTypeLib](#enabletypelib)|Bir nesnenin tür kitaplığı sağlar.|  
-|[CCmdTarget::EndWaitCursor](#endwaitcursor)|Önceki imleci geri döner.|  
-|[CCmdTarget::EnumOleVerbs](#enumoleverbs)|Bir nesnenin OLE fiillerini sıralar.|  
+|[CCmdTarget::EndWaitCursor](#endwaitcursor)|İmleci önceki geri döner.|  
+|[CCmdTarget::EnumOleVerbs](#enumoleverbs)|Bir nesnenin OLE fiilleri numaralandırır.|  
 |[CCmdTarget::FromIDispatch](#fromidispatch)|Bir işaretçi döndürür `CCmdTarget` ilişkili nesne `IDispatch` işaretçi.|  
-|[CCmdTarget::GetDispatchIID](#getdispatchiid)|Birincil gönderme arabirimi kimliğini alır.|  
+|[CCmdTarget::GetDispatchIID](#getdispatchiid)|Birincil dağıtım arabirimi kimliği alır.|  
 |[CCmdTarget::GetIDispatch](#getidispatch)|Bir işaretçi döndürür `IDispatch` ilişkili nesne `CCmdTarget` nesne.|  
-|[CCmdTarget::GetTypeInfoCount](#gettypeinfocount)|Bir nesneyi sağlar türü bilgileri arabirimleri sayısını alır.|  
-|[CCmdTarget::GetTypeInfoOfGuid](#gettypeinfoofguid)|Belirtilen GUID'sine karşılık gelen tür açıklamasını alır.|  
-|[CCmdTarget::GetTypeLib](#gettypelib)|Bir işaretçi bir tür kitaplığı alır.|  
+|[CCmdTarget::GetTypeInfoCount](#gettypeinfocount)|Bir nesnenin sağladığı tür bilgisi arabirimlerinin sayısını alır.|  
+|[CCmdTarget::GetTypeInfoOfGuid](#gettypeinfoofguid)|Belirtilen GUID için karşılık gelen türü açıklaması alır.|  
+|[CCmdTarget::GetTypeLib](#gettypelib)|Bir tür kitaplığı için bir işaretçi alır.|  
 |[CCmdTarget::GetTypeLibCache](#gettypelibcache)|Tür kitaplığı önbelleğe alır.|  
-|[CCmdTarget::IsInvokeAllowed](#isinvokeallowed)|Otomasyon yöntemi çağırma sağlar.|  
-|[CCmdTarget::IsResultExpected](#isresultexpected)|Döndürür bir Otomasyon işlevi, sıfır olmayan bir değer döndürmesi.|  
-|[CCmdTarget::OnCmdMsg](#oncmdmsg)|Yönlendirir ve komut iletileri gönderir.|  
-|[CCmdTarget::OnFinalRelease](#onfinalrelease)|Son OLE başvurusu yayımlandıktan sonra temizler.|  
-|[CCmdTarget::RestoreWaitCursor](#restorewaitcursor)|Kum Saati İmleci geri yükler.|  
+|[CCmdTarget::IsInvokeAllowed](#isinvokeallowed)|Otomasyon yöntemi sağlar.|  
+|[CCmdTarget::IsResultExpected](#isresultexpected)|Döndürür bir Otomasyon işlevi ise sıfır olmayan bir değer döndürmesi gerekir.|  
+|[CCmdTarget::OnCmdMsg](#oncmdmsg)|Yönlendirir ve komut iletilerini gönderir.|  
+|[CCmdTarget::OnFinalRelease](#onfinalrelease)|Son OLE referansı kullanıma sunulduktan sonra temizler.|  
+|[CCmdTarget::RestoreWaitCursor](#restorewaitcursor)|Kum Saati imleç geri yükler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İleti eşlemesi komutları veya iletileri bunları işlemek için yazma üye işlevleri yönlendirir. (Bir menü öğesi, komut düğmesi veya kısayol tuşu iletiden komutudur.)  
+ İleti eşlemesi komutları veya iletileri işlemeye yazma üye işlevleri için yönlendirir. (Bir iletiye bir menü öğesi, komut düğmesi ya da kısayol tuşu komutudur.)  
   
- Anahtar framework sınıfları türetilen `CCmdTarget` dahil [CView](../../mfc/reference/cview-class.md), [CWinApp](../../mfc/reference/cwinapp-class.md), [CDocument](../../mfc/reference/cdocument-class.md), [CWnd](../../mfc/reference/cwnd-class.md), ve [ CFrameWnd](../../mfc/reference/cframewnd-class.md). Yeni bir sınıf iletileri işlemek istiyorsanız, bunlardan birini sınıf türetin `CCmdTarget`-türetilmiş sınıfları. Nadiren öğesinden bir sınıf türetin `CCmdTarget` doğrudan.  
+ Anahtar çerçeve sınıflarından türetilen `CCmdTarget` dahil [CView](../../mfc/reference/cview-class.md), [CWinApp](../../mfc/reference/cwinapp-class.md), [CDocument](../../mfc/reference/cdocument-class.md), [CWnd](../../mfc/reference/cwnd-class.md), ve [ CFrameWnd](../../mfc/reference/cframewnd-class.md). Yeni bir sınıf iletileri işlemek istiyorsanız, aşağıdakilerden birini sınıf türetin `CCmdTarget`-türetilmiş sınıflar. Bir sınıftan nadiren derleyeceği `CCmdTarget` doğrudan.  
   
- Komut hedefleri genel bakış ve `OnCmdMsg` yönlendirme, bkz: [komut hedefleri](../../mfc/command-targets.md), [komut yönlendirme](../../mfc/command-routing.md), ve [eşleme iletileri](../../mfc/mapping-messages.md).  
+ Komut hedefleri genel bakış ve `OnCmdMsg` yönlendirmeyi, bkz: [komut hedefleri](../../mfc/command-targets.md), [komut yönlendirme](../../mfc/command-routing.md), ve [eşleme iletileri](../../mfc/mapping-messages.md).  
   
- `CCmdTarget` bir kum saati imleci görüntü işleme üye işlevlerini içerir. Bir komut yürütmek için bir fark zaman aralığı yapılacak beklediğiniz Kum Saati İmleci görüntüler.  
+ `CCmdTarget` bir kum saati imleç görüntüsünü işlemek üye işlevleri içerir. Bir komut yürütmek için bir fark zaman aralığı gerçekleştirilecek beklediğiniz şekilde kum saati imleç görüntüleyin.  
   
- Gönderme haritalar, ileti eşlemeleri benzer, OLE Otomasyon kullanıma sunmak için kullanılan `IDispatch` işlevselliği. Bu arabirim göstererek (Visual Basic gibi) diğer uygulamalar uygulamanıza çağırabilirsiniz.  
+ OLE Otomasyonu nesnesi etkin kullanıma sunmak için kullanılan, gönderme eşlemeleri, ileti eşlemeleri benzer `IDispatch` işlevselliği. Bu arabirim göstererek, diğer uygulamalar (örneğin, Visual Basic) uygulamanıza çağırabilirsiniz.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -124,16 +124,16 @@ class CCmdTarget : public CObject
  **Başlık:** afxwin.h  
   
 ##  <a name="beginwaitcursor"></a>  CCmdTarget::BeginWaitCursor  
- Bir komut yürütmek için bir fark zaman aralığı yapılacak beklediğiniz imleci bir kum saati görüntülemek için bu işlevini çağırın.  
+ Bir komut yürütmek için bir fark zaman aralığı gerçekleştirilecek beklediğiniz imleç kum saati olarak görüntülemek için bu işlevi çağırın.  
   
 ```  
 void BeginWaitCursor();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework'te kullanıcı gibi ne zaman meşgul olduğunu göstermek için bu işlevi çağıran bir `CDocument` nesne yükler veya kendisi bir dosyaya kaydeder.  
+ Framework gibi ne zaman meşgul olduğunu kullanıcıya göstermek için bu işlevi çağıran bir `CDocument` nesne yükler veya kendisi bir dosyaya kaydeder.  
   
- Eylemleri `BeginWaitCursor` her zaman diğer eylemler olarak gibi tek bir ileti işleyicisi dışında etkin olmayan `OnSetCursor` işleme, imleci değiştirebilirsiniz.  
+ Eylemleri `BeginWaitCursor` her zaman diğer eylemler gibi bir tek ileti işleyicisi dışında etkili değildir `OnSetCursor` işleme, imleç değiştirebilirsiniz.  
   
  Çağrı `EndWaitCursor` önceki imleci geri yüklemek için.  
   
@@ -141,14 +141,14 @@ void BeginWaitCursor();
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ##  <a name="ccmdtarget"></a>  CCmdTarget::CCmdTarget  
- Oluşturan bir `CCmdTarget` nesnesi.  
+ Oluşturur bir `CCmdTarget` nesne.  
   
 ```  
 CCmdTarget();
 ```  
   
 ##  <a name="dooleverb"></a>  CCmdTarget::DoOleVerb  
- Eylemin gerçekleştirilmesi için bir OLE fiil tarafından belirtilen neden olur.  
+ Gerçekleştirilecek bir OLE fiili belirtilen eylem neden olur.  
   
 ```  
 BOOL DoOleVerb(
@@ -160,42 +160,42 @@ BOOL DoOleVerb(
   
 ### <a name="parameters"></a>Parametreler  
  *iVerb*  
- Fiilin sayısal tanımlayıcı.  
+ Fiili sayısal tanımlayıcısı.  
   
  *lpMsg*  
- İşaretçi [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) fiili çağrılan olay (örneğin, bir çift tıklatın) açıklayan yapısı.  
+ İşaretçi [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) yapısını açıklayan fiili çağrılan olay (örneğin, bir çift tıklatın).  
   
  *hWndParent*  
- Nesne içeren belge penceresine tanıtıcısı.  
+ Nesne içeren belge penceresi tanıtıcısı.  
   
  *lpRect*  
- İşaretçi [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) içeren nesneyi tanımlayan piksel cinsinden koordinatları yapısını dikdörtgende çevreleyen *hwndParent*.  
+ İşaretçi [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) içeren nesneyi tanımlayan piksel koordinatları yapısı dikdörtgende çevreleyen *hwndParent*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE başarılı, aksi takdirde FALSE.  
+ Başarılı, aksi takdirde FALSE ise TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi temelde uygulamasıdır [Rpc_e_serverfault](http://msdn.microsoft.com/library/windows/desktop/ms694508). Olası eylemler tarafından numaralandırılır [CCmdTarget::EnumOleVerbs](#enumoleverbs).  
   
 ##  <a name="enableautomation"></a>  CCmdTarget::EnableAutomation  
- OLE Otomasyon nesnesi için etkinleştirmek için bu işlevini çağırın.  
+ OLE Otomasyonu nesnesi etkin bir nesne için etkinleştirmek için bu işlevi çağırın.  
   
 ```  
 void EnableAutomation();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, genellikle nesnenizin oluşturucusundan çağrılır ve gönderme harita sınıfı için tanımlanmış ise yalnızca çağrılmalıdır. Otomasyon hakkında daha fazla bilgi için makalelerine bakın [Otomasyon istemcileri](../../mfc/automation-clients.md) ve [otomasyon sunucuları](../../mfc/automation-servers.md).  
+ Bu işlev, nesnenizin oluşturucudan tipik olarak adlandırılır ve yalnızca bir dağıtım eşlemesi için sınıf bildirilmişlerse çağrılmalıdır. Otomasyon hakkında daha fazla bilgi için makalelere göz atın [Otomasyon istemcileri](../../mfc/automation-clients.md) ve [otomasyon sunucuları](../../mfc/automation-servers.md).  
   
 ##  <a name="enableconnections"></a>  CCmdTarget::EnableConnections  
- Olay tetikleme bağlantı noktaları sağlar.  
+ Olay tetikleyicisinin tetikleme bağlantı noktaları sağlar.  
   
 ```  
 void EnableConnections();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağlantı noktaları etkinleştirmek için türetilmiş sınıf oluşturucu bu üye işlevini çağırın.  
+ Bağlantı noktaları etkinleştirmek için türetilmiş sınıfın oluşturucusunda bu üye işlevini çağırın.  
   
 ##  <a name="enabletypelib"></a>  CCmdTarget::EnableTypeLib  
  Bir nesnenin tür kitaplığı sağlar.  
@@ -205,23 +205,23 @@ void EnableTypeLib();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevini çağırın oluşturucuda, `CCmdTarget`-türü bilgileri sağlıyorsa, nesne türetilmiş. Bilgi Bankası makalesi Q185720, daha fazla bilgi için bkz: "nasıl yapılır: bir MFC Otomasyon sunucusundan tür bilgiler sağlar." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).  
+ Oluşturucusunun içinde bu üye işlevini çağırın, `CCmdTarget`-tür bilgiler sağlıyorsa, nesne türetilmiş. Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q185720, "nasıl yapılır: bir MFC Otomasyonu sunucusundan tür bilgisini sağlaması." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).  
   
 ##  <a name="endwaitcursor"></a>  CCmdTarget::EndWaitCursor  
- Adlı sonra bu işlevi çağırmak `BeginWaitCursor` önceki imleci Kum Saati İmleci döndürmek için üye işlevi.  
+ Bu işlev çağrısı yapmanız sonrasında çağrı `BeginWaitCursor` Kum Saati İmleci önceki imleci döndürülecek üye işlevi.  
   
 ```  
 void EndWaitCursor();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kum Saati İmleci çağırdı sonra framework de bu üye işlevi çağırır.  
+ Kum Saati imleç çağırdı sonra framework Ayrıca bu üye işlevini çağırır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ##  <a name="enumoleverbs"></a>  CCmdTarget::EnumOleVerbs  
- Bir nesnenin OLE fiillerini sıralar.  
+ Bir nesnenin OLE fiilleri numaralandırır.  
   
 ```  
 BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
@@ -229,16 +229,16 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
   
 ### <a name="parameters"></a>Parametreler  
  *ppenumOleVerb*  
- Bir işaretçi bir işaretçi bir [IEnumOLEVERB](http://msdn.microsoft.com/library/windows/desktop/ms695084) arabirimi.  
+ Bir işaretçi işaretçisi bir [IEnumOLEVERB](http://msdn.microsoft.com/library/windows/desktop/ms695084) arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Nesne en az bir OLE fiil destekliyorsa TRUE (Bu durumda \* *ppenumOleVerb* işaret eden bir `IEnumOLEVERB` Numaralandırıcı arabirimi), aksi takdirde FALSE.  
+ Nesnenin en az bir OLE fiili destekliyorsa TRUE (Bu durumda \* *ppenumOleVerb* işaret eden bir `IEnumOLEVERB` Numaralandırıcı arabirimi), aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi temelde uygulamasıdır [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781).  
   
 ##  <a name="fromidispatch"></a>  CCmdTarget::FromIDispatch  
- Eşlemek için bu işlevi çağırmak bir `IDispatch` içine bir sınıf üyesi işlevleri Otomasyon alınan işaretçi `CCmdTarget` arabirimleri uygulayan nesne `IDispatch` nesne.  
+ Eşlemek için bu işlevi çağırın bir `IDispatch` işaretçi, bir sınıfın üye işlevleri Otomasyon içine alınan `CCmdTarget` arabirimleri uygulayan nesne `IDispatch` nesne.  
   
 ```  
 static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
@@ -246,16 +246,16 @@ static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
   
 ### <a name="parameters"></a>Parametreler  
  *lpDispatch*  
- Bir işaretçi bir `IDispatch` nesnesi.  
+ Bir işaretçi bir `IDispatch` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `CCmdTarget` ilişkili nesne *lpDispatch*. Bu işlev, döndürür **NULL** varsa `IDispatch` nesne Microsoft Foundation Class tanınmıyor `IDispatch` nesnesi.  
+ Bir işaretçi `CCmdTarget` ilişkili nesne *lpDispatch*. Bu işlev NULL döndürür `IDispatch` nesne bir Microsoft Foundation Class tanınmıyor `IDispatch` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlevin sonucu üye işlevi çağrısı tersidir `GetIDispatch`.  
+ Bu işlevin sonucu üye işlevine bir çağrı gibidir `GetIDispatch`.  
   
 ##  <a name="getdispatchiid"></a>  CCmdTarget::GetDispatchIID  
- Birincil gönderme arabirimi kimliğini alır.  
+ Birincil dağıtım arabirimi kimliği alır.  
   
 ```  
 virtual BOOL GetDispatchIID(IID* pIID);
@@ -263,18 +263,18 @@ virtual BOOL GetDispatchIID(IID* pIID);
   
 ### <a name="parameters"></a>Parametreler  
  *pIID*  
- Bir işaretçi bir arabirim kimliği (bir [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931)).  
+ Bir arabirim kimliği için bir işaretçi (bir [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931)).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE başarılı, aksi takdirde FALSE. Başarılı olursa, \* *pIID* birincil gönderme arabirimi kimliğine ayarlayın  
+ Başarılı, aksi takdirde FALSE ise TRUE. Başarılı olursa, \* *pIID* birincil dağıtım arabirimi kimliğine ayarlayın  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türetilen sınıflar bu üye işlevi geçersiz kılma (geçersiz kılınmazsa, `GetDispatchIID` FALSE değerini döndürür). Bkz: [COleControl](../../mfc/reference/colecontrol-class.md).  
+ Türetilen sınıfların bu üye işlevini geçersiz kılmalıdır (kılınmazsa, `GetDispatchIID` false değerini döndürür). Bkz: [COleControl](../../mfc/reference/colecontrol-class.md).  
   
- Bilgi Bankası makalesi Q185720, daha fazla bilgi için bkz: "nasıl yapılır: bir MFC Otomasyon sunucusundan tür bilgiler sağlar." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).  
+ Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q185720, "nasıl yapılır: bir MFC Otomasyonu sunucusundan tür bilgisini sağlaması." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).  
   
 ##  <a name="getidispatch"></a>  CCmdTarget::GetIDispatch  
- Almak için bu üye işlevini çağırın `IDispatch` işaretçi bir Otomasyon yönteminden bu döndürür bir `IDispatch` işaretçi veya sürer bir `IDispatch` başvuruya işaretçi.  
+ Almak için bu üye işlevi çağrısı `IDispatch` işaretçisi, herhangi bir Otomasyon yönteminden döndürülüyor bir `IDispatch` işaretçi veya alır bir `IDispatch` işaretçi başvurusu tarafından.  
   
 ```  
 LPDISPATCH GetIDispatch(BOOL bAddRef);
@@ -282,31 +282,31 @@ LPDISPATCH GetIDispatch(BOOL bAddRef);
   
 ### <a name="parameters"></a>Parametreler  
  *bAddRef*  
- Nesne başvurusu sayısı artırılamıyor belirtir.  
+ Nesnenin başvuru sayısının artırılmasına belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `IDispatch` Nesnesiyle ilişkili işaretçi.  
+ `IDispatch` Nesnesiyle ilişkili bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu çağrı nesneleri için `EnableAutomation` etkinse, Otomasyon yapmadan kendi kurucularda bu işlev bir işaretçi Foundation sınıf uygulamasını döndürür `IDispatch` üzerinden iletişim kurmasına istemcileri tarafından kullanılan `IDispatch` arabirimi. Bu işlevi çağırmak, otomatik olarak ekler işaretçi başvuru yapılan bir çağrı yapmak gerekli değildir [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379).  
+ Bu çağrı nesneleri için `EnableAutomation` etkin, Otomasyon yönetilmelerini kendi oluşturucularda bu işlev Foundation sınıf uygulamasına yönelik bir işaretçi döndürür `IDispatch` üzerinden iletişim kurmasına istemciler tarafından kullanılan `IDispatch` arabirimi. Bu işlevi çağırmak, otomatik olarak ekler fare işaretçisini bir başvuru bir çağrı yapmak gerekli değildir [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379).  
   
 ##  <a name="gettypeinfocount"></a>  CCmdTarget::GetTypeInfoCount  
- Bir nesneyi sağlar türü bilgileri arabirimleri sayısını alır.  
+ Bir nesnenin sağladığı tür bilgisi arabirimlerinin sayısını alır.  
   
 ```  
 virtual UINT GetTypeInfoCount();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tür bilgileri arabirimleri sayısı.  
+ Tür bilgisi arabirimlerinin sayısını.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi temelde uygulayan [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
+ Bu üye işlevi temelde uygulayan [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
   
- Türetilen sınıflar (0 veya 1) sağlanan türü bilgileri arabirimleri sayısı döndürmek için bu işleve geçersiz kılmalısınız. Geçersiz kılınmazsa, `GetTypeInfoCount` 0 döndürür. Geçersiz kılmak için kullanın [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) de uygulayan makrosu `GetTypeLib` ve `GetTypeLibCache`.  
+ Türetilen sınıflar (0 veya 1) sağlanan türü bilgisi arabirimlerinin sayısını döndürmek için bu işlevi geçersiz kılmalıdır. Kılınmazsa, `GetTypeInfoCount` 0 döndürür. Geçersiz kılmak için kullanın [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) ayrıca uygulayan makrosu `GetTypeLib` ve `GetTypeLibCache`.  
   
 ##  <a name="gettypeinfoofguid"></a>  CCmdTarget::GetTypeInfoOfGuid  
- Belirtilen GUID'sine karşılık gelen tür açıklamasını alır.  
+ Belirtilen GUID için karşılık gelen türü açıklaması alır.  
   
 ```  
 HRESULT GetTypeInfoOfGuid(
@@ -317,19 +317,19 @@ HRESULT GetTypeInfoOfGuid(
   
 ### <a name="parameters"></a>Parametreler  
  *lcid*  
- Yerel ayar tanımlayıcısı ( `LCID`).  
+ Bir yerel ayar tanımlayıcı ( `LCID`).  
   
  *GUID*  
  [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931) türü açıklaması.  
   
  *ppTypeInfo*  
- Bir işaretçi işaretçi `ITypeInfo` arabirimi.  
+ Bir işaretçi işaretçisi `ITypeInfo` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı veya başarısızlık çağrının belirten bir HRESULT. Başarılı olursa, * *ppTypeInfo* işaret türü bilgileri arabirimi.  
+ Başarılı veya başarısız çağrının belirten bir HRESULT. Başarılı olursa, * *ppTypeInfo* işaret türü bilgileri arabirimi.  
   
 ##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
- Bir işaretçi bir tür kitaplığı alır.  
+ Bir tür kitaplığı için bir işaretçi alır.  
   
 ```  
 virtual HRESULT GetTypeLib(
@@ -339,16 +339,16 @@ virtual HRESULT GetTypeLib(
   
 ### <a name="parameters"></a>Parametreler  
  *lcid*  
- Yerel ayar tanımlayıcısı ( `LCID`).  
+ Bir yerel ayar kimliği (LCID).  
   
  *ppTypeLib*  
- Bir işaretçi bir işaretçi `ITypeLib` arabirimi.  
+ Bir işaretçi işaretçisi `ITypeLib` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı veya başarısızlık çağrının belirten bir HRESULT. Başarılı olursa, * *ppTypeLib* noktaları için tür kitaplığı arabirim.  
+ Başarılı veya başarısız çağrının belirten bir HRESULT. Başarılı olursa, * *ppTypeLib* tür kitaplığı arabirimi işaret eder.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türetilen sınıflar bu üye işlevi geçersiz kılma (geçersiz kılınmazsa, `GetTypeLib` TYPE_E_CANTLOADLIBRARY döndürür). Kullanım [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) de uygulayan makrosu `GetTypeInfoCount` ve `GetTypeLibCache`.  
+ Türetilen sınıfların bu üye işlevini geçersiz kılmalıdır (kılınmazsa, `GetTypeLib` TYPE_E_CANTLOADLIBRARY döndürür). Kullanım [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) ayrıca uygulayan makrosu `GetTypeInfoCount` ve `GetTypeLibCache`.  
   
 ##  <a name="gettypelibcache"></a>  CCmdTarget::GetTypeLibCache  
  Tür kitaplığı önbelleğe alır.  
@@ -358,13 +358,13 @@ virtual CTypeLibCache* GetTypeLibCache();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir `CTypeLibCache` nesnesi.  
+ Bir işaretçi bir `CTypeLibCache` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türetilen sınıflar bu üye işlevi geçersiz kılma (geçersiz kılınmazsa, `GetTypeLibCache` NULL döndürür). Kullanım [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) de uygulayan makrosu `GetTypeInfoCount` ve `GetTypeLib`.  
+ Türetilen sınıfların bu üye işlevini geçersiz kılmalıdır (kılınmazsa, `GetTypeLibCache` NULL döndürür). Kullanım [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) ayrıca uygulayan makrosu `GetTypeInfoCount` ve `GetTypeLib`.  
   
 ##  <a name="isinvokeallowed"></a>  CCmdTarget::IsInvokeAllowed  
- Bu işlev MFC'nin uygulaması tarafından çağrılır `IDispatch::Invoke` verilen Otomasyon yöntemi olup olmadığı belirlenemiyor (tarafından tanımlanan *DISPID*) çağrılabilir.  
+ Bu işlev MFC'nin uygulaması tarafından çağrılır `IDispatch::Invoke` belirli Otomasyon yöntemi olup olmadığını belirlemek (tarafından tanımlanan *DISPID*) çağrılabilir.  
   
 ```  
 virtual BOOL IsInvokeAllowed(DISPID dispid);
@@ -375,32 +375,32 @@ virtual BOOL IsInvokeAllowed(DISPID dispid);
  Bir dağıtım kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE yöntemi çağrılır, aksi takdirde FALSE.  
+ Bir yöntem olabilir, çağrılan, aksi durumda FALSE TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `IsInvokeAllowed` TRUE döndürür `Invoke` ; yöntemini çağırmak için geçer Aksi halde, `Invoke` , E_UNEXPECTED döndürme başarısız olur.  
+ Varsa `IsInvokeAllowed` TRUE döndürür `Invoke` ; yöntem çağırmaya devam eder. Aksi takdirde `Invoke` , E_UNEXPECTED döndürür ve başarısız olur.  
   
- Türetilen sınıflar uygun değer döndürmek için bu işlevi geçersiz kılma (geçersiz kılınmazsa, `IsInvokeAllowed` TRUE değerini döndürür). Özellikle bkz [COleControl::IsInvokeAllowed](../../mfc/reference/colecontrol-class.md#isinvokeallowed).  
+ Türetilen sınıfların uygun değer döndürmek için bu işlevi geçersiz kılma (kılınmazsa, `IsInvokeAllowed` TRUE döndürür). Özellikle bkz [COleControl::IsInvokeAllowed](../../mfc/reference/colecontrol-class.md#isinvokeallowed).  
   
 ##  <a name="isresultexpected"></a>  CCmdTarget::IsResultExpected  
- Kullanım `IsResultExpected` bir istemci kendi çağrısından bir Otomasyon işlevi için dönüş değeri bekler olup olmadığını belirlemek için.  
+ Kullanım `IsResultExpected` bir istemci bir Otomasyon işlevi için yaptığı çağrıdan dönüş değeri Bekliyor olup olmadığını belirlemek için.  
   
 ```  
 BOOL IsResultExpected();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir Otomasyon işlevi bir değer döndürmesi, sıfır olmayan; Aksi takdirde 0.  
+ Bir Otomasyon işlevi bir değer döndürmelidir olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İstemci kullanarak veya diğer bir işlev çağrısının sonucunu yoksayılıyor olup olmadığı hakkında bilgi MFC OLE arabirimi sağlar ve MFC sırayla bu bilgileri bir çağrı sonucunu belirlemek üzere kullanır `IsResultExpected`. Dönüş değeri üretimini zaman - veya -yoğun kaynak, ise dönüş değeri computing önce bu işlevini çağırarak verimliliğini artırabilir.  
+ İstemci kullanarak veya diğer bir işlev çağrısının sonucu yoksayılıyor olup olmadığı hakkında bilgi MFC OLE arabirimi sağlayan ve MFC sırayla kullanır bu bilgileri bir çağrı sonucunu belirlemek için `IsResultExpected`. Saati - veya kaynak yoğunluklu, dönüş değerinin üretim ise, dönüş değeri bilgi işlem önce bu işlevi çağrılarak verimliliği artırabilir.  
   
- Bu işlev, böylece bunları Otomasyon işlevinden, çağırırsanız diğer Otomasyon işlevlerden geçerli dönüş değerleri alırsınız istemci yalnızca çağırdı sonra 0 döndürür.  
+ Bu işlev, böylece bunları Otomasyon işlevden, Eğer diğer Otomasyon işlevlerden geçerli dönüş değerlerini alırsınız. istemci yalnızca çağırdı sonra 0 döndürür.  
   
- `IsResultExpected` bir Otomasyon işlev çağrısı ediyor olmadığında çağrıldıklarında sıfır olmayan bir değer döndürür.  
+ `IsResultExpected` bir Otomasyon işlev çağrısı sürüyor olmadığında çağrılırsa sıfır olmayan bir değer döndürür.  
   
 ##  <a name="oncmdmsg"></a>  CCmdTarget::OnCmdMsg  
- Rota ve komut iletileri gönderme ve komut kullanıcı arabirimi nesnelerini güncelleştirme işlemek için çerçevesi tarafından çağrılır.  
+ Komut kullanıcı arabirimi nesnelerini güncelleştirme işlenecek ve yönlendirmek ve komut iletilerini dağıtmak için framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnCmdMsg(
@@ -418,29 +418,29 @@ virtual BOOL OnCmdMsg(
  Komut bildirim kodu tanımlar. Bkz: **açıklamalar** değerleri hakkında daha fazla bilgi için *nCode*.  
   
  *pExtra*  
- Değeri göre kullanılan *nCode*. Bkz: **açıklamalar** hakkında daha fazla bilgi için *pExtra*.  
+ Değerini göre kullanılan *nCode*. Bkz: **açıklamalar** hakkında daha fazla bilgi için *pExtra*.  
   
  *pHandlerInfo*  
- Aksi takdirde **NULL**, `OnCmdMsg` doldurur *pTarget* ve *pmf* üyeleri *pHandlerInfo* göndermeyi yerine yapısı komutu. Genellikle, bu parametre olmalıdır **NULL**.  
+ BOŞ değilse `OnCmdMsg` doldurur *pTarget* ve *pmf* üyeleri *pHandlerInfo* yapısı yerine komut gönderme. Genellikle, bu parametre NULL olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İleti işleniyorsa sıfır olmayan; Aksi takdirde 0.  
+ İleti ele olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ana uygulama yordamı framework komut mimarisinin budur.  
   
- Çalışma zamanında `OnCmdMsg` komut diğer nesnelere dağıtır ya da kök sınıfı çağırarak komutu işlediği `CCmdTarget::OnCmdMsg`, hangi gerçek ileti eşleme arama yapar. Varsayılan komut yönlendirme tam açıklama için bkz [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md).  
+ Çalışma zamanında `OnCmdMsg` diğer nesneler için bir komut gönderir veya komutun kendisindeki kök sınıfı çağırarak işler `CCmdTarget::OnCmdMsg`, gerçek ileti eşlemesi arama yapar. Varsayılan komut yönlendirme tam açıklaması için bkz. [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md).  
   
- Framework'ün genişletmek için bu üye işlevi geçersiz kılmak isteyebilirsiniz nadir durumlarda, standart komut yönlendirme. Başvurmak [Teknik Not 21](../../mfc/tn021-command-and-message-routing.md) komut yönlendirme mimarisinin Gelişmiş Ayrıntılar için.  
+ Nadir durumlarda, framework'ün genişletmek için bu üye işlevini geçersiz kılmak isteyebilirsiniz standart komut yönlendirmeyi. Başvurmak [Teknik Not 21](../../mfc/tn021-command-and-message-routing.md) komut yönlendirme mimarisi hakkında gelişmiş Ayrıntılar için.  
   
- Geçersiz kılarsanız `OnCmdMsg`, uygun değeri sağlamalısınız *nCode*, komut bildirim kodu ve *pExtra*, bağlı olan değerine göre *nCode* . Aşağıdaki tabloda, bunlara karşılık gelen değerler listelenmektedir:  
+ Kılarsanız `OnCmdMsg`, uygun değeri sağlamalısınız *nCode*, komut bildirim kodu ve *pExtra*, bağımlı olduğu değerini temel *nCode* . Aşağıdaki tabloda, bunlara karşılık gelen değerler listelenmektedir:  
   
 |*nCode* değeri|*pExtra* değeri|  
 |-------------------|--------------------|  
 |CN_COMMAND|[Ccmduı](../../mfc/reference/ccmdui-class.md)*|  
 |CN_EVENT|AFX_EVENT *|  
 |CN_UPDATE_COMMAND_UI|Ccmduı *|  
-|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)*|  
+|CN_OLECOMMAND|[Colecmduı](../../mfc/reference/colecmdui-class.md)*|  
 |CN_OLE_UNREGISTER|NULL|  
   
 ### <a name="example"></a>Örnek  
@@ -449,17 +449,17 @@ virtual BOOL OnCmdMsg(
  [!code-cpp[NVC_MFCDocView#45](../../mfc/codesnippet/cpp/ccmdtarget-class_3.cpp)]  
   
 ##  <a name="onfinalrelease"></a>  CCmdTarget::OnFinalRelease  
- Son OLE başvurusu için veya nesnesinden yayımlandığında çerçevesi tarafından çağrılır.  
+ Ya da nesneden son OLE referansı bırakıldığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnFinalRelease();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu durumda özel işleme sağlamak için bu işlevi geçersiz kılar. Varsayılan uygulama nesneyi siler.  
+ Bu durum için özel işleme sağlamak için bu işlevi geçersiz kılar. Varsayılan Uygulama nesnesini siler.  
   
 ##  <a name="restorewaitcursor"></a>  CCmdTarget::RestoreWaitCursor  
- (Örneğin, bir ileti kutusu açtığı ya da uzun bir işlem sırasında ortasında kapalı sonra) sistem imleci değiştikten sonra uygun Kum Saati İmleci geri yüklemek için bu işlevini çağırın.  
+ (Örneğin, bir ileti kutusu açılır ve uzun bir işlemin sırada kapatılan sonra) sistemi imleci değiştirildikten sonra uygun Kum Saati İmleci geri yüklemek için bu işlevi çağırın.  
   
 ```  
 void RestoreWaitCursor();
@@ -469,7 +469,7 @@ void RestoreWaitCursor();
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC örnek ACDUAL](../../visual-cpp-samples.md)   
+ [ACDUAL örneği](../../visual-cpp-samples.md)   
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md)   

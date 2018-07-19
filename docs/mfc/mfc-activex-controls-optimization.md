@@ -24,36 +24,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c91f147637b53250f8d373af9950d6205c82d3e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4459865bc2ba374048622167fadb7bcf8fb97c99
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355317"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028180"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX Denetimleri: İyileştirme
-Bu makalede, ActiveX denetimleri daha iyi performans için en iyi duruma getirmek için kullanabileceğiniz teknikler açıklanmaktadır.  
+Bu makalede, ActiveX denetimleri daha iyi performans için en iyi duruma getirmek için kullanabileceğiniz teknikleri açıklar.  
   
- Konular [kapatma kapalı görünürken etkinleştir seçeneğini](../mfc/turning-off-the-activate-when-visible-option.md) ve [sağlama fare etkileşimi sırasında etkin olmayan](../mfc/providing-mouse-interaction-while-inactive.md) etkinleştirilinceye kadar bir pencere oluşturma denetimleri tartışın. Konu [penceresiz etkinleştirme sağlama](../mfc/providing-windowless-activation.md) bile etkin olduğunda, hiçbir zaman bir pencere oluşturma denetimleri açıklar.  
+ Konular [kapatma kapalı görünürken etkinleştir seçeneğini](../mfc/turning-off-the-activate-when-visible-option.md) ve [sağlama fare etkileşimi sırada etkin olmayan](../mfc/providing-mouse-interaction-while-inactive.md) etkinleştirilinceye kadar bir pencere oluşturma denetimleri tartışın. Konu [penceresiz etkinleştirme sağlama](../mfc/providing-windowless-activation.md) bile aktifleştirilmiş hiçbir zaman bir pencere oluşturma denetimleri açıklar.  
   
- Windows OLE nesneleri için iki ana sakıncaları vardır: Bunlar nesneleri saydam veya etkin olduğunda dikdörtgen olmayan engellemek ve büyük yükünü örnek oluşturma ve görüntüleme denetimlerinin ekleyin. Genellikle, bir pencere oluşturma bir denetimin oluşturulma zamanı yüzde 60'ını alır. Tek bir paylaşılan pencere (genellikle kapsayıcının) ve bazı dağıtırken kod, bir denetim genellikle bir performans kaybı olmadan aynı penceresi Hizmetleri alır. Bir pencere sahip nesne için çoğunlukla gereksiz ek yük istenir.  
+ Windows OLE nesneleri için iki ana dezavantajları vardır: Bunlar nesneleri saydam veya etkin olduğunda dikdörtgen olmayan engellemek ve büyük bir ek yük örnek oluşturma ve görüntüleme denetimleri ekleyin. Genellikle, bir pencere oluşturma denetimin oluşturulma zamanı yüzde 60'ını alır. Tek bir paylaşılan pencere (genellikle kapsayıcının) ve bazı dispatching kod ile denetim aynı penceresi Hizmetleri, genellikle bir performans kaybı olmadan alır. Bir pencere nesnesi için çoğunlukla gereksiz yük ise.  
   
- Denetim belirli kapsayıcılarında kullanıldığında, bazı en iyi duruma getirme mutlaka performansı değil. Örneğin, bu özellik uygulama eski kapsayıcılarında bir yararı sağlamaz şekilde 1996 öncesinde yayımlanan kapsayıcıları penceresiz etkinleştirme desteklememektedir. Ancak, neredeyse her kapsayıcı Kalıcılık, destekler, böylece denetiminizin Kalıcılık kodu en iyi duruma getirme büyük olasılıkla tüm kapsayıcı kendi performansını artırır. Denetim, özellikle kapsayıcı belirli bir tür ile kullanılacak amaçlanıyorsa, araştırmak hangisinin bu iyileştirmeler, kapsayıcı tarafından desteklenen isteyebilirsiniz. Genel olarak, Bununla birlikte, birçok büyük olasılıkla, yanı sıra denetim gerçekleştirir emin olmak için belirli denetimine geçerli olduğu gibi bu teknikler kapsayıcıları geniş bir yelpazede gibi uygulamak denemelisiniz.  
+ Denetiminiz belirli kapsayıcılarda kullanıldığında bazı iyileştirmeler mutlaka performansını değil. Örneğin, bu özelliği uygulamak eski kapsayıcılarında bir yararı sağlamaz şekilde 1996 önce yayımlanan kapsayıcıları penceresiz etkinleştirme desteklememektedir. Ancak, neredeyse tüm kapsayıcı Kalıcılık, destekler, böylece denetiminizin Kalıcılık kodu en iyi duruma getirme büyük olasılıkla tüm kapsayıcılarda performansını artırır. Denetim, özellikle kapsayıcı belirli bir tür ile kullanılacak amaçlanıyorsa, araştırmak, kapsayıcı tarafından desteklenir, bu iyileştirmeler isteyebilirsiniz. Genel olarak, ancak, çok büyük olasılıkla bunu yanı sıra denetim gerçekleştiren emin olmak için belirli denetimine geçerli olduğu gibi bu tekniklerin bir çeşit kapsayıcıları gibi uygulamak denemelisiniz.  
   
- Bu iyileştirmeler çoğunu uygulayabilirsiniz [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md), [denetim ayarlarını](../mfc/reference/control-settings-mfc-activex-control-wizard.md) sayfası.  
+ Bu iyileştirmeler sayesinde birçoğu uygulayabilirsiniz [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md), [denetim ayarları](../mfc/reference/control-settings-mfc-activex-control-wizard.md) sayfası.  
   
 ### <a name="mfc-activex-control-wizard-ole-optimization-options"></a>MFC ActiveX Denetim Sihirbazı OLE en iyi duruma getirme seçenekleri  
   
 |MFC ActiveX Denetim Sihirbazı'nda denetim ayarı|Eylem|Daha fazla bilgi|  
 |-------------------------------------------------------|------------|----------------------|  
-|**Görünür zaman etkinleştirme** onay kutusu|Temizle|[Kapatma etkinleştirin görünür seçeneği](../mfc/turning-off-the-activate-when-visible-option.md)|  
+|**Görünür olduğunda etkinleştirme** onay kutusu|Temizle|[Kapatma etkinleştirin görünür seçeneği](../mfc/turning-off-the-activate-when-visible-option.md)|  
 |**Penceresiz etkinleştirme** onay kutusu|Seçim|[Penceresiz Etkinleştirme Sağlama](../mfc/providing-windowless-activation.md)|  
-|**Kesilmemiş cihaz bağlamı** onay kutusu|Seçim|[Kesilmemiş Bir Cihaz Bağlamı Kullanma](../mfc/using-an-unclipped-device-context.md)|  
+|**Kesilmemiş bir cihaz bağlamı** onay kutusu|Seçim|[Kesilmemiş Bir Cihaz Bağlamı Kullanma](../mfc/using-an-unclipped-device-context.md)|  
 |**Titreşimsiz etkinleştirme** onay kutusu|Seçim|[Titreşimsiz Etkinleştirme Sağlama](../mfc/providing-flicker-free-activation.md)|  
-|**Fare işaretçisini bildirimleri etkin olmadığında** onay kutusu|Seçim|[Devre Dışı İken Fare Etkileşimi Sağlama](../mfc/providing-mouse-interaction-while-inactive.md)|  
-|**Kod çizim en iyi duruma getirilmiş** onay kutusu|Seçim|[Denetim Çizimini İyileştirme](../mfc/optimizing-control-drawing.md)|  
+|**İşaretçi bildirimleri etkin olmadığında fare** onay kutusu|Seçim|[Devre Dışı İken Fare Etkileşimi Sağlama](../mfc/providing-mouse-interaction-while-inactive.md)|  
+|**Kod en iyi duruma getirilmiş** onay kutusu|Seçim|[Denetim Çizimini İyileştirme](../mfc/optimizing-control-drawing.md)|  
   
- Bu iyileştirmeler uygulamak üye işlevleri hakkında ayrıntılı bilgi için bkz: [COleControl](../mfc/reference/colecontrol-class.md). Üye işlevleri gibi kullanarak, listelenen [penceresiz işlemleri](http://msdn.microsoft.com/en-us/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) ve [etkin olmayan işaretçi işleme işlevleri](http://msdn.microsoft.com/en-us/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df).  
+ Bu iyileştirmeler uygulamak üye işlevleri hakkında ayrıntılı bilgi için bkz: [COleControl](../mfc/reference/colecontrol-class.md). Üye işlevleri tarafından kullanım, gibi listelenen [penceresiz Operations](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) ve [işleme etkin olmayan işaretçi işlevleri](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df).  
   
  Daha fazla bilgi için bkz.:  
   

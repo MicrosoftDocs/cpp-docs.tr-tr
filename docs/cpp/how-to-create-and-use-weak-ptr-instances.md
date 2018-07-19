@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma | Microsoft Docs'
 ms.custom: how-to
-ms.date: 11/04/2016
+ms.date: 07/12/2018
 ms.technology:
 - cpp-language
 ms.topic: conceptual
@@ -12,28 +12,83 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8fbbf9d3b427c2451fafe0fae93a531dfd45ad8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 73b70a68226be14b7e99afe125b3dcd8b6784601
+ms.sourcegitcommit: 9ad287c88bdccee2747832659fe50c2e5d682a0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415151"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39034822"
 ---
 # <a name="how-to-create-and-use-weakptr-instances"></a>Nasıl yapılır: weak_ptr Örnekleri Oluşturma ve Kullanma
-Nesnenin temel alınan nesnenin erişmek için bir yol bazen depolamalısınız bir `shared_ptr` artırılması gereken başvuru sayısı neden olmadan. Genellikle bu durum arasında döngüsel başvurulardan olduğunda ortaya çıkar `shared_ptr` örnekleri.  
-  
- Yapabilecekleriniz her işaretçileri paylaşılan sahipliğini önlemek için en iyi tasarım gerekir. Ancak, sahipliğini Paylaşılan gruplarınız varsa `shared_ptr` örnekleri, bunlar arasında döngüsel başvurulardan kaçının. Döngüsel başvurulardan kaçınılmaz ya da hatta tercih herhangi bir nedenden dolayı olduğunda kullanın `weak_ptr` bir veya daha fazla sahipleri başka zayıf bir başvuru vermek için `shared_ptr`. Kullanarak bir `weak_ptr`, oluşturabileceğiniz bir `shared_ptr` , birleşimler ilgili örnekleri, ancak yalnızca var olan bir dizi temel alınan bellek kaynağı hala geçerli ise. A `weak_ptr` kendisini başvuru sayımı katılmak ve bu nedenle, bu başvuru sayısı sıfır olarak gitmesini engellemek olamaz. Ancak, kullanabileceğiniz bir `weak_ptr` yeni bir kopyasını elde etmek için `shared_ptr` ile hangi başlatıldı. Bellek zaten silinmiş olması durumunda bir **bad_weak_ptr** özel durumu oluşur. Bellek hala geçerliyse, yeni paylaşılan işaretçi başvuru sayısını artırır ve bellek geçerli olacağını garanti eder sürece `shared_ptr` değişkeni kapsam içinde kalır.  
-  
+Bazen bir nesne arka plandaki nesneye erişme yolunu saklaması gerekir bir `shared_ptr` arttırılacak başvuru sayısının artmasına neden olmadan. Genellikle bu durum arasında döngüsel başvurular olduğunda ortaya çıkar `shared_ptr` örnekleri.  
+
+ En iyi tasarım, olabildiğince paylaşılan işaretçi sahipliğinden kaçınmaktır. Ancak, sahipliğini Paylaşılan gruplarınız varsa `shared_ptr` örnekleri, bunlar arasında döngüsel başvurulardan kaçının. Döngüsel başvurular kaçınılmaz veya tercih herhangi bir nedenden dolayı olduğunuzda kullanın `weak_ptr` bir veya daha fazla sahipleri zayıf bir başvuru yapmasını sağlamak için `shared_ptr`. Kullanarak bir `weak_ptr`, oluşturabileceğiniz bir `shared_ptr` katılan ilgili örnekler, ancak yalnızca var olan bir dizi temel alınan bellek kaynağı hala geçerliyse. A `weak_ptr` kendisini başvuru sayımına değil ve bu nedenle, bu sıfıra gitmesi başvuru sayısı önleyemez. Ancak, kullanabileceğiniz bir `weak_ptr` yeni bir kopyasını elde etmek `shared_ptr` başlatılacağı ile. Bellek zaten silinmişse bir `bad_weak_ptr` özel durumu oluşturulur. Bellek hala geçerliyse, yeni paylaşılan işaretçi başvuru sayısını artırır ve belleğin geçerli olacağını garanti eder sürece `shared_ptr` değişkeni kapsam dahilinde kaldığı.  
+
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde bir durumu gösterir nerede `weak_ptr` döngüsel bağımlılıklar sahip nesneleri uygun silinmesini sağlamak için kullanılır. Örnek inceleyin gibi yalnızca alternatif çözümleri olarak kabul sonra oluşturulduğu varsayılmaktadır. `Controller` Nesneleri makine işlemi bazı yönlerinin temsil eder ve bağımsız olarak çalışır. Her denetleyici herhangi bir zamanda diğer denetleyicileri durumunu sorgulayabilir ve her biri özel içeren `vector<weak_ptr<Controller>>` bu amaç için. Her vektör bir döngüsel başvuru içeriyor ve bu nedenle, `weak_ptr` örnekleri yerine kullanılır `shared_ptr`.  
-  
+ Aşağıdaki kod örneği bir durumu gösterir. burada `weak_ptr` döngüsel bağımlılıkları olan nesnelerin düzgün silinmesi sağlamak için kullanılır. Örneği incelerken, yalnızca alternatif çözümler dikkate sonra oluşturulduğunu varsayın. `Controller` Nesneleri makine işleminin bazı yönlerini temsil eder ve bunlar bağımsız olarak çalışır. Her denetleyici herhangi bir zamanda diğer denetleyicilerin durumunu sorgulayabilir ve her biri bir özel içeren `vector<weak_ptr<Controller>>` bu amaç için. Her vektör bir döngüsel başvuru içerir ve bu nedenle, `weak_ptr` örneği yerine kullanılır `shared_ptr`.  
+
  [!code-cpp[stl_smart_pointers#222](../cpp/codesnippet/CPP/how-to-create-and-use-weak-ptr-instances_1.cpp)]  
-  
+
 ```Output  
-Creating Controller0Creating Controller1Creating Controller2Creating Controller3Creating Controller4push_back to v[0]: 1push_back to v[0]: 2push_back to v[0]: 3push_back to v[0]: 4push_back to v[1]: 0push_back to v[1]: 2push_back to v[1]: 3push_back to v[1]: 4push_back to v[2]: 0push_back to v[2]: 1push_back to v[2]: 3push_back to v[2]: 4push_back to v[3]: 0push_back to v[3]: 1push_back to v[3]: 2push_back to v[3]: 4push_back to v[4]: 0push_back to v[4]: 1push_back to v[4]: 2push_back to v[4]: 3use_count = 1Status of 1 = OnStatus of 2 = OnStatus of 3 = OnStatus of 4 = Onuse_count = 1Status of 0 = OnStatus of 2 = OnStatus of 3 = OnStatus of 4 = Onuse_count = 1Status of 0 = OnStatus of 1 = OnStatus of 3 = OnStatus of 4 = Onuse_count = 1Status of 0 = OnStatus of 1 = OnStatus of 2 = OnStatus of 4 = Onuse_count = 1Status of 0 = OnStatus of 1 = OnStatus of 2 = OnStatus of 3 = OnDestroying Controller0Destroying Controller1Destroying Controller2Destroying Controller3Destroying Controller4Press any key  
+Creating Controller0  
+Creating Controller1  
+Creating Controller2  
+Creating Controller3  
+Creating Controller4  
+push_back to v[0]: 1  
+push_back to v[0]: 2  
+push_back to v[0]: 3  
+push_back to v[0]: 4  
+push_back to v[1]: 0  
+push_back to v[1]: 2  
+push_back to v[1]: 3  
+push_back to v[1]: 4  
+push_back to v[2]: 0  
+push_back to v[2]: 1  
+push_back to v[2]: 3  
+push_back to v[2]: 4  
+push_back to v[3]: 0  
+push_back to v[3]: 1  
+push_back to v[3]: 2  
+push_back to v[3]: 4  
+push_back to v[4]: 0  
+push_back to v[4]: 1  
+push_back to v[4]: 2  
+push_back to v[4]: 3
+use_count = 1  
+Status of 1 = On  
+Status of 2 = On  
+Status of 3 = On  
+Status of 4 = On  
+use_count = 1  
+Status of 0 = On  
+Status of 2 = On  
+Status of 3 = On  
+Status of 4 = On  
+use_count = 1  
+Status of 0 = On  
+Status of 1 = On  
+Status of 3 = On  
+Status of 4 = On  
+use_count = 1  
+Status of 0 = O  
+nStatus of 1 = On  
+Status of 2 = On  
+Status of 4 = On  
+use_count = 1  
+Status of 0 = On  
+Status of 1 = On  
+Status of 2 = On  
+Status of 3 = On  
+Destroying Controller0  
+Destroying Controller1  
+Destroying Controller2  
+Destroying Controller3  
+Destroying Controller4  
+Press any key  
 ```  
-  
- Vektör bir deney değiştirmek `others` olacak şekilde bir `vector<shared_ptr<Controller>>`ve ardından hiçbir Yıkıcılar çağrılan çıktıda fark zaman `TestRun` döndürür.  
-  
+
+ Bir deney vektör değiştirme `others` olacak şekilde bir `vector<shared_ptr<Controller>>`ve sonra da çıktıda hiçbir yok edicinin çağrılmadığına dikkat edin, `TestRun` döndürür.  
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Akıllı işaretçiler](../cpp/smart-pointers-modern-cpp.md)

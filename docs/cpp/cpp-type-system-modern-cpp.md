@@ -12,29 +12,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82c017b7048c8b62f58068d22b8efefd72f31d4f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1c8df38f1869ab4c3b8e80101ca4dbbc27f9018e
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418516"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39027280"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
-Kavramı *türü* c++'ta çok önemlidir. Her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri; derlenebilmeleri için bir türe sahip olmalıdır. Ayrıca, her ifadeye (değişmez değerler dahil), değerlendirilmeden önce derleyicisi tarafından dolaylı olarak bir tür tanımlanır. Bazı örnekler türlerinin `int` tam sayı değerlerini depolamak için `double` kayan nokta değerlerini depolamak için (olarak da bilinen *skaler* veri türleri), veya standart kitaplığı sınıfı [std::basic_string](../standard-library/basic-string-class.md) metin depolamak için. Kendi türü tanımlayarak oluşturabileceğiniz bir `class` veya `struct`. Tür, değişken (veya ifade sonucu) için atanacak bellek miktarını, bu değişkende depolanabilecek değer türlerini, bu değerlerin (bit modelleri olarak) nasıl yorumlanacağını ve gerçekleştirilebilecek işlemleri belirtir. Bu makale, C++ tür sistemiyle ilgili önemli özellikleri basit bir şekilde inceler.  
+Kavramını *türü* C++'da çok önemlidir. Her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri; derlenebilmeleri için bir türe sahip olmalıdır. Ayrıca, her ifadeye (değişmez değerler dahil), değerlendirilmeden önce derleyicisi tarafından dolaylı olarak bir tür tanımlanır. Bazı tür örnekleri, **int** tamsayı değerlerini saklamak için **çift** kayan nokta değerini (olarak da bilinen *skaler* veri türleri), veya standart kitaplık sınıfı [std::basic_string](../standard-library/basic-string-class.md) metin depolamak için. Tanımlayarak kendi türünüzü oluşturabilirsiniz bir **sınıfı** veya **yapı**. Tür, değişken (veya ifade sonucu) için atanacak bellek miktarını, bu değişkende depolanabilecek değer türlerini, bu değerlerin (bit modelleri olarak) nasıl yorumlanacağını ve gerçekleştirilebilecek işlemleri belirtir. Bu makale, C++ tür sistemiyle ilgili önemli özellikleri basit bir şekilde inceler.  
   
 ## <a name="terminology"></a>Terminoloji  
- **Değişken**: simgesel ad başvurduğu nerede tanımlanan kapsam kodunun boyunca verilere erişmek için kullanılabilir böylece veri miktarını adı. C++ ' ta *değişkeni* diğer türleri örneklerini genellikle adlı ancak genellikle skaler veri türleri örneklerine başvurmak için kullanılan *nesneleri*.  
+ **Değişken**: sembolik adı başvurduğu için tanımlanmış olduğu yerlerde kod kapsamında verilere erişmek için kullanılabilir, böylece veri miktarını adı. C++ ' ta *değişkeni* diğer örnek türleri genellikle olarak adlandırılır genelde skalar veri türlerine örneğine başvurmak için kullanılan *nesneleri*.  
   
- **Nesne**: Basitlik ve tutarlılık için bu makalede terimini kullanır *nesne* başvurmak için herhangi bir örneği bir sınıf veya yapı ve genel anlamda kullanıldığında tüm türleri içerir bile skaler değişkenleri.  
+ **Nesne**: kolaylık ve tutarlılık için bu makalede terimi kullanılmaktadır *nesne* başvurmak için herhangi bir örneği ve bir sınıf veya yapının genel anlamda kullanıldığında tüm türleri içerir bile skalar değişkenler.  
   
- **POD türü** (düz eski verileri): skaler türleri için C++ içinde veri türlerinin resmi olmayan bu kategoriyi başvuruyor (temel türleri bölümüne bakın) veya *POD sınıfları*. POD olmayan statik veri üyeleri, kullanıcı tanımlı oluşturucular veya kullanıcı tanımlı atama işleçleri POD sınıfına dahil değildir. Ayrıca, bir POD sınıfının hiçbir sanal işlevi, hiçbir temel sınıfı ve hiçbir özel veya korumalı statik olmayan veri üyesi bulunmaz. POD türleri genellikle dış veri değişimi için örneğin, (yalnızca POD türleri olan) C dilinde yazılmış bir modül ile birlikte kullanılır.  
+ **POD türü** (düz eski veriler): C++ içindeki veri türleri için resmi olmayan bu kategori skalar türlere başvurur (temel türler bölümüne bakın) veya *POD sınıflarıdır*. POD olmayan statik veri üyeleri, kullanıcı tanımlı oluşturucular veya kullanıcı tanımlı atama işleçleri POD sınıfına dahil değildir. Ayrıca, bir POD sınıfının hiçbir sanal işlevi, hiçbir temel sınıfı ve hiçbir özel veya korumalı statik olmayan veri üyesi bulunmaz. POD türleri genellikle dış veri değişimi için örneğin, (yalnızca POD türleri olan) C dilinde yazılmış bir modül ile birlikte kullanılır.  
   
 ## <a name="specifying-variable-and-function-types"></a>Değişken ve işlev türlerini belirtme  
- C++ olan bir *kesin türü belirtilmiş* dil ve olduğunu da *statik olarak yazılan*; her nesne türüne sahip ve türü hiçbir zaman (statik veri nesneleri ile karıştırılmamalıdır) değiştirir.   
-**Bir değişken bildirme zaman** kodunuzda türünü açıkça belirtmek, veya kullanmak `auto` Başlatıcı türünden türetme görevlendirin anahtar.   
-**Bildirme ne zaman bir işlev** kodunuzda her bağımsız değişkeni ve onun dönüş değeri türünü belirtmeniz gerekir ya da `void` hiçbir değer işlev tarafından döndürülür. Rasgele türden bağımsız değişkenlere izin veren işlev şablonları kullandığınızda bu bir özel durumdur.  
+ C++; bir *kesin tür belirtilmiş* dil ve onu *türü statik belirlenmiştir*; her nesne bir türe sahiptir ve bu tür asla değişmez (statik veri nesneleriyle karıştırılmamalıdır için).   
+**Bir değişken bildirdiğinizde** kodunuzda, türünü açıkça belirtmeniz veya kullanın **otomatik** anahtar sözcüğünü kullanarak derleyicinin türü başlatıcıdan almasını.   
+**Bir işlev bildirdiğinizde** kodunuzda, her bir bağımsız değişkenin ve dönüş değerinin türünü belirtmeniz gerekir veya **void** işlevi tarafından döndürülen değer varsa. Rasgele türden bağımsız değişkenlere izin veren işlev şablonları kullandığınızda bu bir özel durumdur.  
   
- İlk kez bir değişken bildirdikten sonra belirli bir süre geçtikten sonra türünü değiştiremezsiniz. Ancak değişkenin değerini veya bir işlevin dönüş değerini başka türdeki farklı bir değişkene kopyalayabilirsiniz. Bu tür işlemler adlı *tür dönüştürmeleri*, bazen gerekli olmayan ama da olası veri kaybı veya incorrectness kaynaklardır.  
+ İlk kez bir değişken bildirdikten sonra belirli bir süre geçtikten sonra türünü değiştiremezsiniz. Ancak değişkenin değerini veya bir işlevin dönüş değerini başka türdeki farklı bir değişkene kopyalayabilirsiniz. Bu işlemler *tür dönüştürmeleri*, bazen gerekli ama aynı zamanda olası veri kaybı veya yanlışlık kaynakları olan.  
   
  POD türünde bir değişken bildirdiğinizde başlangıç değeri vermenizi öneririz. Bir değişkeni başlatana kadar o bellek konumunda daha önce mevcut olan bit değerlerini içeren "çöp" değerine sahiptir. Bu önemli bir C++ özelliğidir, özellikle başlatmayı sizin için yapan başka bir dilden geçiş yapıyorsanız. POD harici sınıf türünde bir değişken bildirirken oluşturucu başlatmayı işler.  
   
@@ -60,9 +60,9 @@ int maxValue;                // Not recommended! maxValue contains
 ```  
   
 ## <a name="fundamental-built-in-types"></a>Temel (yerleşik) türler  
- Diğer dillerden farklı olarak, C++, diğer tüm türlerin türetildiği bir evrensel temel türe sahip değildir. Birçok dil Visual C++ uygulaması içerir *temel türleri*, olarak da bilinen *yerleşik türleri*. Bu gibi sayısal türler içerir `int`, `double`, `long`, `bool`, artı `char` ve `wchar_t` ASCII ve UNICODE karakterler için sırasıyla türleri. En temel türleri (dışında `bool`, `double`, `wchar_t` ve ilgili türleri) tüm değişkeni depolayabilir değerleri aralığı değiştirme sürümlerinde imzasız. Örneğin, bir `int`, 32 bit işaretli tamsayıyı depolayan temsil edebilen bir değer -2.147.483.648 2.147.483.647 için. Bir `unsigned int`, 32-bit da depolandığı bir değeri 0'dan 4.294.967.295 depolayabilir. Her durumda olası değerlerin toplam sayısı aynıdır; yalnızca aralık farklıdır.  
+ Diğer dillerden farklı olarak, C++, diğer tüm türlerin türetildiği bir evrensel temel türe sahip değildir. Çok dil Visual C++ uygulamasını içeren *temel türler*olarak da bilinen *yerleşik türler*. Bu gibi sayısal türler içerir **int**, **çift**, **uzun**, **bool**, artı **char** ve **wchar_t** ASCII ve UNICODE karakterleri için sırayla türleri. En temel türlerin (dışında **bool**, **çift**, **wchar_t** ve ilgili türler) tüm imzalanmamış değişkenin saklayabildiği değer aralığını değiştiren sürümlere sahiptir. Örneğin, bir **int**, 32-bit işaretli tamsayı depolayan bir değeri temsil edebilir -2.147.483.648 ila 2.147.483.647 arasında. Bir **işaretsiz int**, 32-bit olarak da depolandığı 0'dan 4.294.967.295'e kadar bir değeri saklayabilir. Her durumda olası değerlerin toplam sayısı aynıdır; yalnızca aralık farklıdır.  
   
- Temel türler, üzerlerinde gerçekleştirebileceğiniz işlemleri ve bunların diğer temel türlere nasıl dönüştürülebileceğini yöneten yerleşik kurallara sahip derleyici tarafından tanınır. Yerleşik türler ve boyutu ve sayısal sınırlar tam listesi için bkz: [temel türleri](../cpp/fundamental-types-cpp.md).  
+ Temel türler, üzerlerinde gerçekleştirebileceğiniz işlemleri ve bunların diğer temel türlere nasıl dönüştürülebileceğini yöneten yerleşik kurallara sahip derleyici tarafından tanınır. Yerleşik türler ve boyutları ile sayısal sınırlarının eksiksiz listesi için bkz [temel türler](../cpp/fundamental-types-cpp.md).  
   
  Aşağıdaki çizim, yerleşik türlerin göreli boyutlarını gösterir:  
   
@@ -76,16 +76,16 @@ int maxValue;                // Not recommended! maxValue contains
 |çift|8 bayt|Kayan nokta değerleri için varsayılan seçim.|  
 |bool|1 bayt|True veya false olabilen değerleri temsil eder.|  
 |char|1 bayt|Daha eski C stili dizelerde veya std::string nesnelerde UNICODE'a dönüştürülmesi hiçbir zaman gerekmeyecek ASCII karakterler için kullanın.|  
-|wchar_t|2 bayt|UNICODE biçiminde (Windows'ta UTF-16, diğer işletim sistemlerinde değişiklik gösterebilir) kodlanmış olabilecek "geniş" karakter değerlerini temsil eder. Bu tür dizelerde kullanılan karakter türüdür `std::wstring`.|  
-|unsigned char|1 bayt|C++ sahip yerleşik bir `byte` türü.  Bayt değerini göstermek için unsigned char kullanın.|  
+|wchar_t|2 bayt|UNICODE biçiminde (Windows'ta UTF-16, diğer işletim sistemlerinde değişiklik gösterebilir) kodlanmış olabilecek "geniş" karakter değerlerini temsil eder. Bu türü dizelerde kullanılan karakter türüdür `std::wstring`.|  
+|unsigned char|1 bayt|C++ hiçbir yerleşik olan `byte` türü.  Bayt değerini göstermek için unsigned char kullanın.|  
 |unsigned int|4 bayt|Bit bayrakları için varsayılan seçimdir.|  
 |long long|8 bayt|Çok büyük tamsayı değerlerini temsil eder.|  
   
 ## <a name="the-void-type"></a>Void türü  
- `void` Türü özel bir türü; türünde bir değişken bildiremezsiniz `void`, ancak türünde bir değişken bildirebilir `void *` (işaretçi `void`), olduğu bazen gerekli ham (atanmamış) bellek ayırırken. Ancak, işaretçiler `void` tür kullanımı uyumlu olan ve genellikle kullanımlarını modern C++'da kesinlikle kaçının. İşlevi bildiriminde bir `void` dönüş değeri anlamına gelir işlevi bir değer döndürmüyor; bu bir ortak ve kabul edilebilir kullanımını `void`. While bildirmek için sıfır parametrelere sahip C gerekli dil işlevlerini `void` parametre listesinde, örneğin, `fou(void)`, bu yöntem modern C++'da önerilmez ve bildirilmelidir `fou()`. Daha fazla bilgi için bkz: [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).  
+ **Void** türü özel bir türdür; türünde bir değişken bildirimini yapamazsınız **void**, ancak türünde bir değişken bildirebilir `void *` (işaretçiye **void**), olduğu Bazen ham (türsüz) bellek atarken gereklidir. Ancak, işaretçiler **void** olan tür açısından güvenli değildir ve genelde modern C++'da kesinlikle önerilmez. Bir işlev bildiriminde bir **void** dönüş değeri işlevin bir değer döndürmeyeceği anlamına gelir; bu sık karşılaşılan ve kabul edilebilir kullanımını **void**. While bildirmek için sıfır parametreye sahip C dili işlevler **void** parametre listesinde, örneğin, `fou(void)`, bu yaklaşım modern C++ ile kullanılmamaktadır ve bildirilmelidir `fou()`. Daha fazla bilgi için [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).  
   
 ## <a name="const-type-qualifier"></a>const türü niteleyici  
- Herhangi bir yerleşik veya kullanıcı tanımlı tür, const anahtar sözcük aracılığıyla nitelendirilebilir. Ek olarak, üye işlevleri olabilir `const`-tam ve hatta `const`-aşırı yüklendi. Değeri bir `const` türü başlatıldıktan sonra değiştirilemez.  
+ Herhangi bir yerleşik veya kullanıcı tanımlı tür, const anahtar sözcük aracılığıyla nitelendirilebilir. Ayrıca, üye işlevleri olabilir **const**-tam ve hatta **const**-aşırı yüklendi. Değerini bir **const** türü başlatıldıktan sonra değiştirilemez.  
   
 ```cpp  
   
@@ -94,26 +94,26 @@ PI = .75 //Error. Cannot modify const variable.
   
 ```  
   
- `const` Niteleyicisi işlevi ve değişken bildirimleri yaygın olarak kullanılır ve "const doğruluk" c++ önemli bir kavram, temelde kullanılacak geldiğini `const` , derleme zamanında değerleri kasıtsız olarak değiştirilmez güvence altına almak için . Daha fazla bilgi için bkz: [const](../cpp/const-cpp.md).  
+ **Const** niteleyicisi işlevde ve değişken bildirimlerinde yaygın olarak kullanılır ve "const correctness" C++'da önemli bir kavramdır; temel olarak kullanmanın ne demek **const** , derleme zamanında güvence altına almak için değerleri olmadığına istemsiz. Daha fazla bilgi için [const](../cpp/const-cpp.md).  
   
- A `const` türüdür kendi const olmayan sürümünden; ayrı Örneğin, `const int` öğesinden farklı bir tür `int`. C++ kullanabilirsiniz `const_cast` gerekir kaldırdığınızda bu nadir durumlarda işlecinin *const şahit* bir değişkenin. Daha fazla bilgi için bkz: [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).  
+ A **const** türüdür, sabit olmayan sürümünden farklıdır; Örneğin, `const int` ayrı türünden **int**. C++ kullanabilirsiniz **const_cast** gerekir kaldırdığınızda bu nadir durumlarda işlecinin *const-ness* öğesini bir değişkenden. Daha fazla bilgi için [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).  
   
 ## <a name="string-types"></a>Dize türleri  
- NET olarak söylemek C++ dili yerleşik dize türü yok; `char` ve `wchar_t` tek karakter depolamak - sonlandırma null değer ekleme, bu tür bir dize yaklaşık bir dizi bildirmeniz gerekir (örneğin, ASCII `'\0'`) dizi öğesine bir son geçerli karakteri aşan (olarak da adlandırılan bir *C stili dize*). C stili dizeler çok daha fazla kodun yazılmasını veya harici dize yardımcı program kitaplığı işlevlerini gerektirmekteydi. Ancak modern C++'da standart kitaplığı türler sahibiz `std::string` (8 bit `char`-yazın karakter dizelerini) veya `std::wstring` (16 bit `wchar_t`-karakter dizelerini yazın). Hiçbir uyumlu C++ derleme ortamında dahil standart kitaplıkları parçası olduğundan bu C++ Standart Kitaplığı kapsayıcılar, yerel dize türleri olarak değerlendirilebilir. Yalnızca kullanmak `#include <string>` yapmayı yönergesi türleri programınızdaki kullanılabilir. (MFC veya ATL kullanıyorsanız, CString sınıfı da ayrıca kullanılabilir ancak C++ standardının bir parçası değildir.) Boş sonlandırılmış karakter dizilerinin kullanımı (daha önce bahsedilen C stili dizeler) modern C++ içinde önerilmez.  
+ NET olarak söylemek gerekirse, C++ dili yerleşik dize türü yok; **char** ve `wchar_t` tek karakterleri depolar - bu tür bir dize yaklaşık olarak belirlemenizi sağlayan bir dizi Sonlandırıcı null değer ekleme bildirmeniz gerekir (örneğin, ASCII `'\0'`) için dizi öğesinde son geçerli karakter (olarak da adlandırılan bir *C stili dize*). C stili dizeler çok daha fazla kodun yazılmasını veya harici dize yardımcı program kitaplığı işlevlerini gerektirmekteydi. Ancak modern C++ programlamada standart kitaplık türleri sahibiz `std::string` (8-bit **char**-türü karakter dizeleri) veya `std::wstring` (16-bit `wchar_t`-türü karakter dizeleri). Uyumlu bir C++ yapı ortamına dahil olan standart kitaplıkların parçasıdır çünkü bu C++ Standart Kitaplığı kapsayıcıları, yerel dize türleri olarak düşünülebilir. Sadece kullanın `#include <string>` yapmayı yönergesi türleri programınızdaki kullanılabilir. (MFC veya ATL kullanıyorsanız, CString sınıfı da ayrıca kullanılabilir ancak C++ standardının bir parçası değildir.) Boş sonlandırılmış karakter dizilerinin kullanımı (daha önce bahsedilen C stili dizeler) modern C++ içinde önerilmez.  
   
 ## <a name="user-defined-types"></a>Kullanıcı tanımlı türler  
- Tanımladığınızda bir `class`, `struct`, `union`, veya `enum`, temel türü değilmiş gibi kodunuzun geri kalanı bu yapı kullanılır. Bellekte bilinen bir boyuta sahiptir ve derleme zamanı denetimi için, çalışma zamanında ve programınızın kullanım süresi boyunca uygulanmak üzere nasıl kullanılacağına ilişkin belirli kuralları içerir. Temel yerleşik türler ve kullanıcı tanımlı türler arasındaki temel farklar şunlardır:  
+ Tanımladığınızda bir **sınıfı**, **yapı**, **birleşim**, veya **enum**, bu yapı temel tür gibi kodunuzun geri kalanında kullanılır . Bellekte bilinen bir boyuta sahiptir ve derleme zamanı denetimi için, çalışma zamanında ve programınızın kullanım süresi boyunca uygulanmak üzere nasıl kullanılacağına ilişkin belirli kuralları içerir. Temel yerleşik türler ve kullanıcı tanımlı türler arasındaki temel farklar şunlardır:  
   
--   Derleyici kullanıcı tanımlı türde yerleşik bilgi içermez. İlk derleme işlemi sırasında tanımı karşılaştığında türünü öğrenir.  
+-   Derleyici kullanıcı tanımlı türde yerleşik bilgi içermez. Derleme işlemi sırasında tanımla ilk karşılaştığında türü öğrenir.  
   
--   Türünüz üzerinde gerçekleştirilebilecek işlemleri ve diğer türlere nasıl dönüştürülebileceğini, ilgili operatörleri sınıf üyeleri veya üye harici işlevler olarak tanımlayarak (aşırı yükleme ile) siz belirtirsiniz. Daha fazla bilgi için bkz: [işlev aşırı yüklemesi](function-overloading.md).  
+-   Türünüz üzerinde gerçekleştirilebilecek işlemleri ve diğer türlere nasıl dönüştürülebileceğini, ilgili operatörleri sınıf üyeleri veya üye harici işlevler olarak tanımlayarak (aşırı yükleme ile) siz belirtirsiniz. Daha fazla bilgi için [işlev aşırı yüklemesi](function-overloading.md).  
   
--   Bunların statik türlü olması gerekmez (bir nesne türünün asla değişmeme kuralı). Mekanizmaları aracılığıyla *devralma* ve *çok biçimlilik*, (bir sınıfın bir nesnesi örneği olarak adlandırılır) sınıfının kullanıcı tarafından tanımlanan bir türü olarak bildirilen bir değişken farklı bir türde çalışma zamanında olması derleme zamanı. Daha fazla bilgi için bkz: [devralma](../cpp/inheritance-cpp.md).  
+-   Bunların statik türlü olması gerekmez (bir nesne türünün asla değişmeme kuralı). Sistemleri aracılığıyla *devralma* ve *çok biçimlilik*, kullanıcı tanımlı türü (sınıfın nesne örneği olarak adlandırılır) olarak bildirilen bir değişken, çalışma zamanında farklı bir tür olabilir derleme zamanı. Daha fazla bilgi için [devralma](../cpp/inheritance-cpp.md).  
   
 ## <a name="pointer-types"></a>İşaretçi türleri  
- C dili erken sürümleri için geri dating, C++ özel bildirimcisi kullanarak bir işaretçi türünde bir değişken bildirme izin verecek şekilde devam `*` (yıldız). İşaretçi türü, gerçek veri değerinin depolandığı bellekteki konumun adresini saklar. Modern C++'da, bunlar denir *ham işaretçileri*ve kodunuzda özel işleçleri aracılığıyla erişilen `*` (yıldız) veya `->` (çizgiyle büyük-daha). Bu adlı *başvurusunun kaldırılmasının*, ve kullandığınız hangisinin bağlıdır olup, skaler bir işaretçi veya bir nesne üyesi için bir işaretçi başvurusunun kaldırılmasının üzerinde. İşaretçi türleri ile çalışma, uzun süredir C ve C++ program geliştirmenin en zor ve en kafa karıştırıcı taraflarından biri olmuştur. Bu bölümde bazı bulguları ve uygulamalar için ancak bu artık gerekli (veya önerilen) modern c++ istiyorsanız ham işaretçileri kullanmaya Yardım özetlenmektedir ham işaretçileri Nesne sahipliği hiç evrimi nedeniyle kullanmak için [akıllı işaretçi](../cpp/smart-pointers-modern-cpp.md) () "daha bu bölümün sonuna açıklanmıştır). Nesneleri gözlemlemek için ham işaretçilerin kullanılması yararlıdır; ancak, bunları nesne sahipliği için kullanmanız gerekiyorsa bunu dikkatli bir şekilde yapmanız ve bunlara sahip olan nesnelerin nasıl oluşturulduğunu ve nasıl yok edildiğini dikkatle değerlendirmeniz gerekir.  
+ Geri için sürümlerinden C dilinin ilk, bir işaretçi türünün bir değişkeni özel bildirimcisini kullanarak bildirmenize olanak C++ devam `*` (yıldız işareti). İşaretçi türü, gerçek veri değerinin depolandığı bellekteki konumun adresini saklar. Modern C++'da, bunlar denir *ham işaretçiler*ve özel işleçler aracılığıyla kodunuza erişir `*` (yıldız işareti) veya `->` (çizgi büyük-daha). Bu adlandırılır *başvuruluyor*, ve hangisini kullandığınız, bir işaretçinin skalar veya bir nesne içindeki üyeye bir işaretçiye başvuruluyor üzerinde bağlıdır. İşaretçi türleri ile çalışma, uzun süredir C ve C++ program geliştirmenin en zor ve en kafa karıştırıcı taraflarından biri olmuştur. Bu bölümde bazı gerçekleri ve uygulamaları anlatır ancak modern C++'da artık gerekli (veya önerilen) istiyorsanız ham işaretçiler kullanma amacıyla özetler ham işaretçiler Nesne sahipliği için hiç gelişimi nedeniyle kullanmak için [akıllı işaretçi](../cpp/smart-pointers-modern-cpp.md) () "daha bu bölümün sonuna açıklanmıştır). Nesneleri gözlemlemek için ham işaretçilerin kullanılması yararlıdır; ancak, bunları nesne sahipliği için kullanmanız gerekiyorsa bunu dikkatli bir şekilde yapmanız ve bunlara sahip olan nesnelerin nasıl oluşturulduğunu ve nasıl yok edildiğini dikkatle değerlendirmeniz gerekir.  
   
- Bilmeniz gereken ilk şey, bir ham işaretçi değişkeni bildirmenin, yalnızca başvuru kaldırıldığında işaretçinin başvuracağı bellek konumunun adresini depolamak için gereken belleği ayıracağıdır. Veri değeri için bellek ayırma (olarak da bilinir *yedekleme deposu*) henüz ayrılmamış. Diğer bir deyişle, bir ham işaretçi değişkeni bildirerek gerçek bir veri değişkeni yerine bir bellek adresi değişkeni oluşturursunuz. Bir yedekleme belleğine geçerli bir adres içerdiğinden emin olmadan önce, bir işaretçi değişkeninin başvurusunun kaldırılması, programınızda tanımlanmamış bir davranışa (genellikle önemli bir hata) neden olabilir. Aşağıdaki örnek bu türde bir hata gösterir.  
+ Bilmeniz gereken ilk şey, bir ham işaretçi değişkeni bildirmenin, yalnızca başvuru kaldırıldığında işaretçinin başvuracağı bellek konumunun adresini depolamak için gereken belleği ayıracağıdır. Veri değerinin kendisi için bellek ayırması (olarak da adlandırılan *yedekleme deposu*) henüz yapılmamıştır. Diğer bir deyişle, bir ham işaretçi değişkeni bildirerek gerçek bir veri değişkeni yerine bir bellek adresi değişkeni oluşturursunuz. Bir yedekleme belleğine geçerli bir adres içerdiğinden emin olmadan önce, bir işaretçi değişkeninin başvurusunun kaldırılması, programınızda tanımlanmamış bir davranışa (genellikle önemli bir hata) neden olabilir. Aşağıdaki örnek bu türde bir hata gösterir.  
   
 ```cpp  
   
@@ -143,9 +143,9 @@ int* pNumber;       // Declare a pointer-to-int variable.
   
 ```  
   
- Yedekleme oluşturmak için düzeltilen kod örneği kullanan yerel yığın belleği depolamak `pNumber` işaret eder. Kolaylık olması için bir temel türü kullanıyoruz. Uygulamada, yedekleme deposu için işaretçileri olan dinamik olarak ayrılan bellek adı verilen bir alanda çoğu genellikle kullanıcı tanımlı türler *yığın* (veya *ücretsiz deposu*) kullanarak bir `new` anahtar sözcüğü ifade (C-style programlamada eski `malloc()` C çalışma zamanı kitaplığı işlevi kullanıldı). Bir sınıf tanımı üzerinde özellikle temel alıyorsa ayrılan sonra bu değişkenler genellikle nesneler olarak bilinir. İle ayrılan bellek `new` karşılık gelen tarafından silinmelidir `delete` deyimi (veya kullandıysanız `malloc()` , C çalışma zamanı işlevi ayrılacak işlevi `free()`).  
+ Deposunu oluşturmak için düzeltilen kod örneği kullanan yerel yığın belleğini `pNumber` işaret eder. Kolaylık olması için bir temel türü kullanıyoruz. Pratikte, işaretçilerin yedekleme deposu olduğu bir adlandırılan bellek alanında dinamik olarak ayrılan kullanıcı tanımlı türlerdir *yığın* (veya *ücretsiz depolama*) kullanarak bir **yeni** anahtar sözcüğü (C stili programlamada, eskiden `malloc()` C çalışma zamanı kitaplığı işlevi kullanılıyordu). Özellikle bunlar bir sınıf tanımını temel alıyorlarsa atandıktan sonra bu değişkenler genellikle nesneler olarak bilinir. Atanan bellek **yeni** karşılık gelen tarafından silinmesi gerekir **Sil** deyimi (veya kullandıysanız `malloc()` işlevi C çalışma zamanı işlevi ayrılacak `free()`).  
   
- Ancak, bir dinamik olarak ayrılan nesnesi-adlı bir kaynak hataya neden olan özellikle karmaşık kodda silmeyi unutursanız kolay bir *bellek sızıntısı*. Bu nedenle, ham işaretçilerin modern C++'ta kullanılması önerilmez. Neredeyse her zaman bir ham işaretçi sarmalamak daha iyi bir [akıllı işaretçi](../cpp/smart-pointers-modern-cpp.md), hangi otomatik olarak yayın bellek (kod akıllı işaretçi için kapsam dışına çıktığında) kendi yıkıcı çağrıldığında; akıllı işaretçiler kullanarak, neredeyse C++ programlarında hataların tam bir sınıf ortadan kaldırır. Aşağıdaki örnekte, varsayalım `MyClass` genel yöntem kullanıcı tarafından tanımlanan bir türü `DoSomeWork();`  
+ Ancak, bir dinamik olarak ayrılan bir nesneyi denen bir kaynak hatası özellikle karmaşık kodlarda silmeyi unutmak çok kolaydır bu durumda bir *bellek sızıntısı*. Bu nedenle, ham işaretçilerin modern C++'ta kullanılması önerilmez. Neredeyse her zaman bir ham işaretçi içinde sarmalamak daha iyi bir [akıllı işaretçi](../cpp/smart-pointers-modern-cpp.md), hangi otomatik olarak bellek serbest bırakılır (kod akıllı işaretçinin kapsamı dışına çıktığında) yok edici çağrıldığında; akıllı işaretçiler kullanarak, neredeyse bir tam Sınıf C++ programlarınızda hatalarını ortadan kaldırabilirsiniz. Aşağıdaki örnekte, varsayalım `MyClass` genel bir yöntemi olan bir kullanıcı tanımlı tür `DoSomeWork();`  
   
 ```cpp  
   
@@ -158,24 +158,24 @@ void someFunction() {
   
 ```  
   
- Akıllı işaretçiler hakkında daha fazla bilgi için bkz: [akıllı işaretçiler](../cpp/smart-pointers-modern-cpp.md).  
+ Akıllı işaretçiler hakkında daha fazla bilgi için bkz. [akıllı işaretçiler](../cpp/smart-pointers-modern-cpp.md).  
   
- İşaretçi dönüşümleri hakkında daha fazla bilgi için bkz: [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).  
+ İşaretçi dönüştürmeleri hakkında daha fazla bilgi için bkz. [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).  
   
  Genel olarak, işaretçiler hakkında daha fazla bilgi için bkz [işaretçileri](../cpp/pointers-cpp.md).  
   
 ## <a name="windows-data-types"></a>Windows veri türleri  
- C ve C++ için Klasik Win32 programlamada çoğu işlevleri Windows'a özgü tür tanımları kullanın ve # makroları define (tanımlanan `windef.h`) ve dönüş değerleri parametre türlerini belirtmek için. Bu Windows veri türleri genellikle C/C++ yerleşik türleri için verilen yalnızca özel (diğer adlar) adlardır. Bu tür tanımları ve önişlemci tanımları tam listesi için bkz: [Windows veri türleri](http://msdn.microsoft.com/en-us/4553cafc-450e-4493-a4d4-cb6e2f274d46). HRESULT ve LCID gibi bu tür tanımlarından bazıları kullanışlı ve açıklayıcıdır. INT gibi diğerlerinin özel bir anlamı yoktur ve bunlar yalnızca temel C++ türlerinin diğer adlarıdır. Diğer Windows veri türleri C programlama ve 16-bit işlemci günlerinden kalma adlara sahiptir ve bu adların modern donanım veya işletim sistemlerinde herhangi bir amacı ya da anlamı yoktur. Ayrıca özel veri türleri olarak listelenen Windows çalışma zamanı kitaplığı ile ilişkili olan [Windows çalışma zamanı temel veri türlerini](http://msdn.microsoft.com/en-us/b5735851-ec07-48c1-92b4-ca9f768096f6). Modern C++ programlamada, Windows türü değerin nasıl yorumlanacağına ilişkin ek anlamlar iletmedikçe C++ temel türlerinin tercih edilmesi genel bir yönergedir.  
+ C ve C++ için Klasik Win32 programlamada çoğu işlev Windows özgü tür tanımlarını kullanın ve #define makroları (tanımlanan `windef.h`) dönüş değerleri ve parametre türlerini belirtmek için. Bu Windows veri türleri, genellikle C/C++ yerleşik türlerine verilmiş olan özel adlardır (takma adlardır) var. Bu tür tanımlarının ve önişlemci tanımlarının eksiksiz listesi için bkz [Windows veri türleri](http://msdn.microsoft.com/4553cafc-450e-4493-a4d4-cb6e2f274d46). HRESULT ve LCID gibi bu tür tanımlarından bazıları kullanışlı ve açıklayıcıdır. INT gibi diğerlerinin özel bir anlamı yoktur ve bunlar yalnızca temel C++ türlerinin diğer adlarıdır. Diğer Windows veri türleri C programlama ve 16-bit işlemci günlerinden kalma adlara sahiptir ve bu adların modern donanım veya işletim sistemlerinde herhangi bir amacı ya da anlamı yoktur. Olarak listelenen Windows Runtime library ile ilişkilendirilmiş özel veri türleri de vardır [Windows çalışma zamanı temel veri türlerini](http://msdn.microsoft.com/b5735851-ec07-48c1-92b4-ca9f768096f6). Modern C++ programlamada, Windows türü değerin nasıl yorumlanacağına ilişkin ek anlamlar iletmedikçe C++ temel türlerinin tercih edilmesi genel bir yönergedir.  
   
 ## <a name="more-information"></a>Daha fazla bilgi  
  C++ tür sistemi hakkında daha fazla bilgi için aşağıdaki konulara bakın.  
   
 |||  
 |-|-|  
-|[Değer Türleri](../cpp/value-types-modern-cpp.md)|Açıklar *değer türleri* bunların kullanılması ile ilgili sorunları.|  
+|[Değer Türleri](../cpp/value-types-modern-cpp.md)|Açıklar *değer türleri* kullanımlarıyla bağlantılı sorunlarla birlikte.|  
 |[Tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md)|Ortak tür dönüştürme sorunlarını açıklar ve bunları nasıl engelleyeceğinizi gösterir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ için yeniden Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
+ [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

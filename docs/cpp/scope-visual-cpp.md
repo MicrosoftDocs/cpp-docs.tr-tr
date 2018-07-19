@@ -20,40 +20,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e79ae7f861553ce2bcd7bee6cbb14a3c2965d4ce
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: e8af021120c06465d0fd79ead79e2a18cb593803
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238769"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39027615"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 
-Sınıfı, işlev veya değişken gibi bir program öğesi bildirirken adını yalnızca "görülen" ve programınız belirli bölümlerinde kullanılır. Bir ad olduğu görünür bağlam adlı kendi *kapsam*. Örneğin, bir değişken bildirirseniz `x` bir işlevin içindeki `x` yalnızca o işlev gövdesi içinde görünür durumdadır. Bunun *yerel kapsam*. Programınızın diğer değişkenleri tarafından aynı ada sahip olamaz; farklı kapsamlarda oldukları sürece, bir tanım kuralını ihlal değil ve hiçbir hata oluşur.
+Bir program öğesi gibi bir sınıf, işlev veya değişkeni bildirdiğinizde, onun adı yalnızca "görülen" ve programınızın belirli bölümlerinde kullanılan. Bir ad olduğu görünür bağlam adı verilen kendi *kapsam*. Örneğin, bir değişken bildirirseniz `x` bir işlev içinde `x` yalnızca bu işlev gövdesi içinde görünür olur. Sahip *yerel kapsama*. Programınızda başka değişkenler tarafından aynı ada sahip olabilir; farklı kapsamlarda oldukları sürece tek tanım kuralı ihlal değildir ve herhangi bir hata ortaya çıkar.
 
-Otomatik statik olmayan değişkenleri, kapsamı olduğunda bunlar oluşturulur ve program bellekte yok belirler. 
+Otomatik statik olmayan değişkenler, kapsam, bunlar oluşturulur ve programı belleğe yok belirler. 
 
 Kapsam altı tür vardır:
 
-- **Genel kapsamlı** genel herhangi sınıfı, işlev veya ad alanı dışında bildirilmiş bir addır. Ancak, c++'ta bile bu adları örtük bir genel ad alanı mevcut. Global adlar kapsamını bildirimi noktasından bildirilen dosyanın sonuna genişletir. Global adlar için görünürlük ayrıca kurallarıyla yönetilir [bağlantı](program-and-linkage-cpp.md) adı diğer program dosyalarında görünür olup olmadığını belirleyin.
+- **Genel kapsam** genel bir sınıf, işlev veya ad alanı dışında bildirilen bir addır. Ancak c++'ta bile bu adlar örtük genel ad alanı ile mevcut. Global adlar kapsamını bildirim noktasından bildirilmiş olan dosyanın sonuna kadar genişletir. Genel adlar için görünürlük kuralları tarafından da yönetilen [bağlantı](program-and-linkage-cpp.md) adı programdaki diğer dosyalardaki görünür olup olmadığını belirler.
 
-- **Namespace kapsam** içinde bildirilen bir adı bir [ad alanı](namespaces-cpp.md), herhangi bir sınıf ya da enum tanımının veya işlevi blok dışında kendi bildirimi noktasından ad alanı sonuna görülebilir. Bir ad alanı birden çok bloklarında farklı dosyalardaki tanımlanabilir.
+- **Namespace kapsam** içinde bildirilen bir adı bir [ad alanı](namespaces-cpp.md), herhangi bir sınıf veya numaralandırma tanımı veya işlev bloğu dışında bildirim noktasında ad alanı sonuna görülebilir. Bir ad alanı birden çok bloklarında farklı dosyalardaki tanımlanabilir.
 
-- **Yerel kapsam** bir işlevi veya parametre adları dahil olmak üzere lambda içinde bildirilen bir ada sahip yerel kapsamı. Çoğunlukla "yerel" da adlandırılır. Bunlar yalnızca kendi bildirimi noktalarından işlevi veya lambda gövde sonuna görülebilir. Yerel kapsamı, bu makalenin sonraki bölümlerinde açıklanan blok kapsamı türüdür.
+- **Yerel kapsama** bir işlev veya parametre adları da dahil olmak üzere, lambda içinde bildirilen bir ada sahip yerel kapsamı. Genellikle "yerel" da adlandırılır. Bunlar yalnızca bildirimin kendi noktalarından işlevi veya lambda gövdesi sonuna görülebilir. Yerel kapsama bir blok kapsamı, bu makalenin sonraki bölümlerinde ele alınan türüdür.
 
-- **Sınıf kapsamı** sınıf üyeleri adlara sahip bildirim noktası bakılmaksızın sınıf tanımını boyunca genişletir sınıf kapsamı. Sınıf üyesi erişilebilirlik olan diğer denetlediği **ortak**, **özel**, ve **korumalı** anahtar sözcükler. Genel veya korumalı üyeleri yalnızca üye seçim işleçleri kullanarak erişilebilir (**.** veya **->**) veya işaretçi-üye işleçleri (**.\***  veya **-> \***).
+- **Sınıf kapsamında** adlarında sınıfı üyeleri sınıf tanımının bildirim noktasından bakılmaksızın boyunca genişleten sınıf kapsamı. Sınıf üyesi erişilebilirliği olan tarafından denetlenen yapılacaktır **genel**, **özel**, ve **korumalı** anahtar sözcükleri. Ortak veya korumalı üyeler, yalnızca üye seçim işleçleri kullanarak erişilebilir (**.** veya **->**) veya işaretçi-üye işleçleri (**.\***  veya **-> \***).
 
-- **Deyimi kapsam** adları içinde bildirilen bir **için**, **varsa**, **sırada**, veya **geçiş** deyimi görünür sonuna kadar bir ifade bloğu.
+- **Deyimi kapsamı** bildirilen adlar bir **için**, **varsa**, **sırada**, veya **geçiş** deyimi görünür sonuna kadar deyim bloğu.
 
-- **İşlev kapsamı** A [etiket](labeled-statements.md) işlev gövdesi bildirim kendi noktası önce bile boyunca görünür öyledir işlevi kapsama sahip. İşlev kapsamı deyimleri ister yazma olanaklı kılar `goto cleanup` önce `cleanup` etiket bildirildi.
+- **İşlev kapsamı** A [etiket](labeled-statements.md) genelinde bir işlev gövdesinin önce bildirim noktasında görülebilir olduğu anlamına gelir, işlev kapsamına sahiptir. İşlev kapsamında ister ifadeleri yazmak mümkün kılar `goto cleanup` önce `cleanup` etiket bildirilir.
 
 ## <a name="hiding-names"></a>Adları Gizleme
 
-Kapalı bir bloğunda bildirerek, bir ad gizleyebilirsiniz. Aşağıdaki şekilde `i` böylece ilişkili değişkeni gizleme iç bloğu içinde yeniden bildirilen `i` dış blok kapsamında.
+Kapalı bir bloğunda bildirerek adları gizleyebilirsiniz. Aşağıdaki şekilde, `i` böylece ile ilişkili bir değişkeni gizleme iç bloğu içinde yeniden tanımlanıyor `i` Dıştaki bloğun kapsamında.
 
- ![Blok&#45;kapsam adı gizleme](../cpp/media/vc38sf1.png "vc38SF1") blok kapsamı ve ad gizleme
+ ![Blok&#45;kapsam ad gizleme](../cpp/media/vc38sf1.png "vc38SF1") blok kapsamı ve ad gizleme
 
- Çizimde gösterilen program çıktısı şöyledir:
+ Şekilde gösterildiği programının çıktısı şöyledir:
 
 ```cpp
 i = 0
@@ -63,11 +63,11 @@ i = 0
 ```
 
 > [!NOTE]
-> Bağımsız değişken `szWhat` işlevi kapsamında olarak değerlendirilir. Bu nedenle, sanki işlevi en dıştaki bloğunda bildirilmiş değerlendirilir.
+> Bağımsız değişken `szWhat` işlev kapsamında olduğu kabul edilir. Bu nedenle, işlevin en dıştaki bloğunun içinde bildirilmiş yokmuş gibi değerlendirilir.
 
-## <a name="hiding-class-names"></a>Sınıf adları gizleme
+## <a name="hiding-class-names"></a>Sınıf adlarını gizleme
 
- Sınıf adları işlevi, nesne veya değişken veya aynı kapsamda Numaralandırıcı bildirerek gizleyebilirsiniz. Ancak, sınıf adı hala anahtar sözcüğüyle önekli olduğunda erişilip **sınıfı**.
+ İşlev, nesne veya değişken veya aynı kapsamda Numaralandırıcı bildirerek sınıf adları gizleyebilirsiniz. Ancak, sınıf adı hala anahtar sözcüğü öneki erişilebilir **sınıfı**.
 
 ```cpp
 // hiding_class_names.cpp
@@ -101,24 +101,24 @@ int main()
 ```
 
 > [!NOTE]
-> Herhangi bir sınıf adı yerleştirin (`Account`) anahtar sözcüğü sınıfı genel kapsamlı değişken hesabından ayırt etmek için kullanılması gereken için çağrılır. Kapsam çözümü işleci (:) sol tarafta sınıf adı ortaya çıktığında bu kuralın geçerli değildir. Kapsam çözümü işleci sol tarafındaki adları her zaman sınıf adları olarak kabul edilir.
+> Herhangi bir sınıf adı yerleştirin (`Account`) anahtar sözcüğü sınıfı kapsamlı genel değişken hesaptan ayırmak için kullanılması gereken için çağrılır. Sınıf adı kapsam çözümleme işleci (:) sol tarafında oluştuğunda, bu kuralı uygulanmaz. Kapsam çözümleme işlecinin sol tarafındaki adlar her zaman sınıf adları olarak kabul edilir.
 
- Aşağıdaki örnek, bir nesne türü için bir işaretçi bildirmek gösterilmiştir `Account` kullanarak **sınıfı** anahtar sözcüğü:
+ Aşağıdaki örnek, bir işaretçi bir nesne türü bildirmek gösterilmiştir `Account` kullanarak **sınıfı** anahtar sözcüğü:
 
 ```cpp
 class Account *Checking = new class Account( Account );
 ```
 
- `Account` Başlatıcı (parantez içinde) önceki deyiminde içinde genel kapsama sahip; türü **çift**.
+ `Account` Önceki deyim (parantez) başlatıcısında genel kapsam vardır; türünde, **çift**.
 
 > [!NOTE]
-> Bu örnekte gösterildiği gibi tanımlayıcı adları kullanılmasını zayıf programlama stili olarak kabul edilir.
+> Bu örnekte gösterildiği gibi tanımlayıcı adları yeniden kötü programlama stil olarak kabul edilir.
 
- İşaretçiler hakkında daha fazla bilgi için bkz: [türetilmiş türler](http://msdn.microsoft.com/en-us/aa14183c-02fe-4d81-95fe-beddb0c01c7c). Bildirim ve başlatma sınıfı nesneleri hakkında daha fazla bilgi için bkz: [sınıflar, yapılar ve birleşimleri](../cpp/classes-and-structs-cpp.md). Kullanma hakkında bilgi için **yeni** ve **silmek** serbest deposu işleçleri, bkz: [yeni ve delete işleçleri](new-and-delete-operators.md).
+ İşaretçiler hakkında daha fazla bilgi için bkz. [türetilen türler](http://msdn.microsoft.com/aa14183c-02fe-4d81-95fe-beddb0c01c7c). Bildirim ve sınıf nesnelerin başlatılması hakkında daha fazla bilgi için bkz. [sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md). Kullanma hakkında bilgi için **yeni** ve **Sil** ücretsiz depolama işleçleri, bkz: [yeni ve delete işleçleri](new-and-delete-operators.md).
 
 ## <a name="hiding-names-with-global-scope"></a>Genel kapsamlı adları gizleme
 
- Blok kapsamında aynı adı açıkça bildirerek, genel kapsam adlarıyla gizleyebilirsiniz. Ancak, genel kapsam adları kapsam çözümü işleci kullanılarak erişilebilir (`::`).
+ Blok kapsamında aynı adı açıkça bildirerek genel kapsamı ile adları gizleyebilirsiniz. Ancak, genel kapsam adlarına kapsam çözümleme işleci kullanılarak erişilebilir (`::`).
 
 ```cpp
 #include <iostream>
