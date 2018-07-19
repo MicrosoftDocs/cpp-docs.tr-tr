@@ -15,24 +15,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0db5a79f187cb0fe320bf67aace751a5d4c537d3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b7becd9e27294c81ce6144d08c79cfac52636fbf
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359320"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848271"
 ---
 # <a name="interfaces-atl"></a>Arabirimler (ATL)
-Arabirim bir nesne dış dünyaya işlevselliği kullanıma sunan yoludur. COM'da, bir nesne tarafından uygulanan işlev işaretçileri (C++ vtable gibi) bir tablonun arabirimdir. Tablo arabirimi temsil eder ve işaret ettiği işlevleri arabirimi yöntemleridir. Bir nesne seçtiği gibi sayıda arabirimleri getirebilir.  
+Bir arabirim bir nesne dış dünya için işlevselliği kullanıma sunan bir yoludur. COM, bir arabirim işaretçileri nesne tarafından uygulanan işlevleri (örneğin, bir C++ vtable) bir tablodur. Tablo arabirimi temsil eder ve işaret ettiği işlevleri o arabirimin yöntemlerdir. Bir nesneyi seçer gibi çok arabirimleri kullanıma sunabilirsiniz.  
   
- Her arabirimin temel COM arabirimi tabanlı [IUnknown](../atl/iunknown.md). Yöntemlerinin **IUnknown** Gezinti nesne tarafından kullanıma sunulan diğer arabirimlerine izin verin.  
+ Her arabirim temel COM arabirimi dayanır [IUnknown](../atl/iunknown.md). Yöntemlerinin `IUnknown` Gezinti nesne tarafından sunulan diğer arabirimler için izin verin.  
   
- Ayrıca, her bir arabirime benzersiz arabirimi Kimliği'ni (IID) sağlanır. Bu benzersizlik arabirimi sürüm desteklemeyi kolaylaştırır. Arabirim yeni bir sürümü yalnızca bir yeni, yeni IID ile arabirimidir.  
+ Ayrıca, her bir arabirime benzersiz bir arabirim Kimliğini (IID) verilir. Bu benzersizlik arabirimi sürüm oluşturma desteği kolaylaştırır. Bir arabirim yeni bir sürümü yalnızca bir yeni, yeni bir IID ile arabirimidir.  
   
 > [!NOTE]
 >  Standart COM ve OLE arabirimleri için IID'leri önceden tanımlanmıştır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [COM giriş](../atl/introduction-to-com.md)   
- [COM nesneleri ve arabirimleri](http://msdn.microsoft.com/library/windows/desktop/ms690343)
+ [COM'a giriş](../atl/introduction-to-com.md)   
+ [COM nesneleri ve arabirimler](http://msdn.microsoft.com/library/windows/desktop/ms690343)
 

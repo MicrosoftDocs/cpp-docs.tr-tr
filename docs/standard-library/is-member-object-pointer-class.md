@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89dd2c01b4eea80fcd284a6eed44383c3eec9c5b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7a045abd8bb6a41e96febf972d21bae80b9b4f7a
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845485"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955422"
 ---
 # <a name="ismemberobjectpointer-class"></a>is_member_object_pointer Sınıfı
 
-Üye nesnesi için bir işaretçi türü ise testleri.
+Üye nesnesine bir işaretçi türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_member_object_pointer;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` gösteren bir işaretçidir üye nesnesini veya bir `cv-qualified` false tuttuğu üye nesnesine işaretçi, aksi takdirde. Unutmayın `is_member_object_pointer` ayrı tutma false ise `Ty` üye işlevi bir işaretçidir.
+Karşılaştırmasının bir örneği true tutan türü *Ty* üye nesne işaretçisidir veya `cv-qualified` false tuttuğu üye nesne işaretçisi, aksi takdirde. Unutmayın `is_member_object_pointer` ayrı tutma false ise *Ty* üye işlevi bir işaretçisidir.
 
 ## <a name="example"></a>Örnek
 

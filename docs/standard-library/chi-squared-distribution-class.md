@@ -33,16 +33,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 562e522d695b20795d59f90dc1f166b4dfe44874
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5092107cc1af6327c5ab7d6e08f373f88dd56711
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846070"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959251"
 ---
 # <a name="chisquareddistribution-class"></a>chi_squared_distribution Sınıfı
 
-Bir kikare dağılımı oluşturur.
+Bir kikare dağılımı üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,32 +76,32 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* Tekdüzen rastgele sayı oluşturucu altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG* Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kayan nokta değerleri, bir kullanıcı tarafından belirtilen üreten bir dağıtım şablonu sınıf tanımlar türü veya türü `double` göre Chi-Squared dağıtım sağlanırsa, dağıtılmış. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı tanımlar kayan nokta değerleri, kullanıcı tarafından belirtilen üreten bir dağıtım türü veya tür **çift** göre Chi-Squared dağıtım belirtilmezse, dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|
 |`chi_squared_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `n()` depolanan dağıtım parametresinin değeri döndürür `n`.
+Özellik işlevi `n()` saklı dağıtım parametresinin değeri döndürür `n`.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
 
-`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
 
-`operator()` Üye işlevleri URNG motoru, geçerli parametre paket veya belirtilen parametre paket göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Kikare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [Chi-Squared dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400528).
+Kikare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [Chi-Squared dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400528).
 
 ## <a name="example"></a>Örnek
 
@@ -157,7 +157,7 @@ int main()
 }
 ```
 
-İlk çalıştırın:
+İlk çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -180,7 +180,7 @@ Distribution for 10 samples:
     10: 1.5429743723
 ```
 
-İkinci çalıştırın:
+İkinci olarak çalıştırın:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -234,7 +234,7 @@ Distribution for 10 samples:
 
 ## <a name="chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit chi_squared_distribution(result_type n = 1.0);
@@ -245,19 +245,19 @@ explicit chi_squared_distribution(const param_type& parm);
 
 *n* `n` dağıtım parametresi.
 
-*parametre* dağıtım oluşturmak için kullanılan parametre yapısı.
+*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < n`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `n` değeri tutan değeri *n*.
+İlk Oluşturucu bir nesne oluşturur, saklı `n` değerine değeri *n*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  chi_squared_distribution::param_type
 
-Dağıtım parametreleri depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -274,13 +274,13 @@ struct param_type {
 
 *n* `n` dağıtım parametresi.
 
-*sağ* `param_type` için karşılaştırılacak nesne.
+*doğru* `param_type` için karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < n`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

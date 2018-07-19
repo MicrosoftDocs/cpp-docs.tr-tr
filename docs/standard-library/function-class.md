@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26164c391689c8fb7f24f49464e141f74a3058ee
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4ca8621067c851b5a1e107eb16800d546562fbb6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847848"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959943"
 ---
 # <a name="function-class"></a>function Sınıfı
 
@@ -89,66 +89,66 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-`Fty` Sarmalamak için işlev türü.
+*Fty* sarmalamak için işlev türü.
 
-`Ax` Ayırıcı işlevi.
+*AX* ayırıcı işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağrı imzası çağrısı sarmalayıcı şablon sınıfıdır `Ret(T1, T2, ..., TN)`. Bir Tekdüzen sarmalayıcı çeşitli aranabilir nesneleri kapsamak için kullanın.
+Şablon sınıfı, çağrı imzası olan bir çağrı sarmalayıcıdır `Ret(T1, T2, ..., TN)`. Tekdüzen bir kapsayıcı içinde çeşitli çağrılabilir nesneleri kapsamak için kullanın.
 
-Bazı üye işlevleri istenen hedef nesne adları bir işlenen alır. Bu tür işleneni çeşitli yollarla belirtebilirsiniz:
+Bazı üye işlevleri, istenen hedef nesne adları bir bir işlenen alır. Böyle bir işlenen birkaç şekilde belirtebilirsiniz:
 
-`fn` --aranabilir nesne `fn`; çağrısından sonra `function` nesnesi bir kopyasını tutar `fn`
+`fn` --çağrılabilir nesne `fn`; çağrısından sonra `function` nesnesi bir kopyasını tutar `fn`
 
-`fnref` --tarafından adlı aranabilir nesne `fnref.get()`; çağrısından sonra `function` nesnesi bir başvuru tutar `fnref.get()`
+`fnref` --tarafından adlandırılan çağrılabilir nesne `fnref.get()`; çağrısından sonra `function` nesnesi bir başvuru tutar `fnref.get()`
 
-`right` --aranabilir nesne varsa, tutulan `function` nesnesi `right`
+`right` --tarafından varsa aranabilir nesne tutulan `function` nesnesi `right`
 
-`npc` --bir null işaretçinin; çağrısından sonra `function` nesnesidir boş
+`npc` --bir null işaretçi; çağrısından sonra `function` nesnedir boş
 
-Tüm durumlarda `INVOKE(f, t1, t2, ..., tN)`, burada `f` aranabilir nesnedir ve `t1, t2, ..., tN` lvalues türleri olan `T1, T2, ..., TN` sırasıyla, doğru biçimlendirilmiş olması gerekir ve `Ret` void, dönüştürülebilir değil `Ret`.
+Tüm durumlarda `INVOKE(f, t1, t2, ..., tN)`burada `f` çağrılabilir nesne ve `t1, t2, ..., tN` türlerinin lvalues `T1, T2, ..., TN` sırasıyla iyi biçimlendirilmiş olmalıdır ve `Ret` void, dönüştürülebilir değil `Ret`.
 
-Boş bir `function` nesnesi değil tutun aranabilir bir nesne ya da aranabilir bir nesneye başvuru.
+Boş bir `function` nesne değil basılı çağrılabilir bir nesne ya da çağrılabilir nesnesine bir başvuru.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[İşlevi](#function)|Boş veya sabit bir imza ile rastgele tür aranabilir bir nesne depolar bir sarmalayıcı oluşturur.|
+|[İşlevi](#function)|Rastgele tür sabit bir imza ile çağrılabilen bir nesne depolar veya boş bir sarmalayıcı oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[result_type](#result_type)|Saklanan aranabilir nesne dönüş türü.|
+|[result_type](#result_type)|Saklı çağrılabilir nesnenin dönüş türü.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Ata](#assign)|Aranabilir nesne bu işlev nesnesi atar.|
-|[Değiştirme](#swap)|İki aranabilir nesneleri değiştirme.|
-|[Hedef](#target)|Aranabilir nesne depoladıysanız testleri belirtildiği şekilde çağrılabilir.|
-|[target_type](#target_type)|Alır aranabilir nesnede bilgileri yazın.|
+|[Ata](#assign)|Bu işlev nesnesi için çağrılabilen bir nesnesi atar.|
+|[değiştirme](#swap)|İki çağrılabilir nesneleri değiştirme.|
+|[Hedef](#target)|Çağrılabilir nesne depolanan olup olmadığını test eder belirtildiği şekilde çağrılabilir.|
+|[target_type](#target_type)|Çağrılabilir nesne türü bilgileri alır.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[function::operator belirtilmemiş](#op_unspecified)|Aranabilir nesne depoladıysanız testleri bulunmaktadır.|
-|[function::operator()](#op_call)|Aranabilir nesnesi çağırır.|
-|[function::operator=](#op_eq)|Depolanan aranabilir nesnesini değiştirir.|
+|[function::operator belirtilmemiş](#op_unspecified)|Depolanan çağrılabilir nesne varolup olmadığını test eder.|
+|[function::operator()](#op_call)|Aranabilir bir nesne çağırır.|
+|[function::operator=](#op_eq)|Saklı çağrılabilir nesnenin yerini alır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 
 ## <a name="assign"></a>  Function::Assign
 
-Aranabilir nesne bu işlev nesnesi atar.
+Bu işlev nesnesi için çağrılabilen bir nesnesi atar.
 
 ```cpp
 template <class Fx, class Alloc>
@@ -164,19 +164,19 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>Parametreler
 
-`_Func` Aranabilir bir nesne.
+*_Func* çağrılabilir bir nesne.
 
-`_Fnref` Aranabilir bir nesne içeren bir başvuru sarmalayıcı.
+*_Fnref* çağrılabilir nesnesi içeren reference sarmalayıcı.
 
-`Ax` Bir ayırıcı nesne.
+*AX* ayırıcı nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her Değiştir üye işlevlerini `callable object` tutulan `*this` olarak geçirilen aranabilir nesnesi ile `operand`. Her ikisi de ayırıcısı nesnesiyle depolama alanı Ayır `Ax`.
+Her Değiştir üye işlevleri `callable object` tutulan `*this` olarak geçirilen çağrılabilir nesnesi ile `operand`. Her ikisi de ayırıcı nesnesi ile depolama tahsis *Ax*.
 
 ## <a name="function"></a>  Function::Function
 
-Boş veya sabit bir imza ile rastgele tür aranabilir bir nesne depolar bir sarmalayıcı oluşturur.
+Rastgele tür sabit bir imza ile çağrılabilen bir nesne depolar veya boş bir sarmalayıcı oluşturur.
 
 ```cpp
 function();
@@ -199,21 +199,21 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Kopyalamak için işlev nesnesi.
+*doğru* kopyalamak için işlev nesnesi.
 
-`Fx` Aranabilir nesnenin türü.
+*FX* çağrılabilir nesnenin türü.
 
-`_Func` Sarılacak aranabilir nesne.
+*_Func* sarmalamak için çağrılabilir nesne.
 
-`Alloc` Ayırıcı türü.
+*Ayırma* ayırıcı türü.
 
-`Ax` Ayırıcı.
+*AX* ayırıcı.
 
-`_Fnref` Sarılacak aranabilir nesne başvurusu.
+*_Fnref* sarmalamak için çağrılabilir nesne başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boş bir ilk iki oluşturucular oluşturmak `function` nesnesi. Sonraki üç oluşturucular oluşturmak bir `function` aranabilir nesnesi tutar nesnesi işleneni olarak geçirildi. Son iki oluşturucular depolama Ax ayırıcısı nesnesi ile ayırın.
+İlk iki Oluşturucu boş bir oluşturmak `function` nesne. Sonraki üç oluşturucular oluşturmak bir `function` çağrılabilir nesne tutan nesne işlenen olarak geçirildi. Son iki oluşturucular ayırıcı nesnesi Ax depolamayla ayırın.
 
 ### <a name="example"></a>Örnek
 
@@ -287,7 +287,7 @@ g is empty (correct).
 
 ## <a name="op_unspecified"></a>  function::operator belirtilmemiş
 
-Aranabilir nesne depoladıysanız testleri bulunmaktadır.
+Depolanan çağrılabilir nesne varolup olmadığını test eder.
 
 ```cpp
 operator unspecified();
@@ -295,7 +295,7 @@ operator unspecified();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç parametresinin bir değer döndürür `bool` yalnızca nesne boş değilse true değerine sahip. Nesne boş olup olmadığını sınamak için kullanın.
+İşleç dönüştürülebilen bir değer döndürür **bool** yalnızca nesne boş değilse true değerine sahip. Nesne boş olup olmadığını sınamak için kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -329,7 +329,7 @@ not empty == true
 
 ## <a name="op_call"></a>  işlev:: operator()
 
-Aranabilir nesnesi çağırır.
+Aranabilir bir nesne çağırır.
 
 ```cpp
 result_type operator()(
@@ -340,13 +340,13 @@ result_type operator()(
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` N. tür bağımsız değişkeni çağırın.
+*TN* n. çağrı bağımsız değişken türü.
 
-`tN` Nth çağrı bağımsız değişken.
+*tN* n. çağrı bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `INVOKE(fn, t1, t2, ..., tN, Ret)`, burada `fn` depolanan hedef nesnesi `*this`. Sarmalanan aranabilir nesne çağırmak için kullanın.
+Üye işlevinin döndürdüğü `INVOKE(fn, t1, t2, ..., tN, Ret)`burada `fn` depolanan hedef nesnesi `*this`. Sarmalanan çağrılabilir nesne çağırmak için kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -378,7 +378,7 @@ val == -3
 
 ## <a name="op_eq"></a>  Function::operator =
 
-Depolanan aranabilir nesnesini değiştirir.
+Saklı çağrılabilir nesnenin yerini alır.
 
 ```cpp
 function& operator=(null_ptr_type npc);
@@ -391,17 +391,17 @@ template <class Fty>
 
 ### <a name="parameters"></a>Parametreler
 
-`npc` Bir null işaretçinin sabiti.
+*npc* boş işaretçi sabiti.
 
-`right` Kopyalamak için işlev nesnesi.
+*doğru* kopyalamak için işlev nesnesi.
 
-`fn` Sarılacak aranabilir nesne.
+*fn* sarmalamak için çağrılabilir nesne.
 
-`fnref` Sarılacak aranabilir nesne başvurusu.
+*fnref* sarmalamak için çağrılabilir nesne başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her işleçleri tarafından tutulan aranabilir nesneyi değiştirmek `*this` aranabilir nesnesiyle işleneni olarak geçirildi.
+Her işleçleri çağrılabilir nesne tarafından tutulan değiştirin `*this` çağrılabilir nesnesiyle işlenen olarak geçirildi.
 
 ### <a name="example"></a>Örnek
 
@@ -456,7 +456,7 @@ val == -3
 
 ## <a name="result_type"></a>  Function::result_type
 
-Saklanan aranabilir nesne dönüş türü.
+Saklı çağrılabilir nesnenin dönüş türü.
 
 ```cpp
 typedef Ret result_type;
@@ -464,7 +464,7 @@ typedef Ret result_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef türü için eş anlamlı olduğundan `Ret` şablonun çağrısı imzada. Sarmalanan aranabilir nesne dönüş türünü belirlemek için kullanın.
+Typedef türü eşanlamlıdır `Ret` şablonun çağrı imzası. Sarmalanan çağrılabilir nesnenin dönüş türünü belirlemek için kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -498,7 +498,7 @@ val == -3
 
 ## <a name="swap"></a>  Function::Swap
 
-İki aranabilir nesneleri değiştirme.
+İki çağrılabilir nesneleri değiştirme.
 
 ```cpp
 void swap(function& right);
@@ -506,11 +506,11 @@ void swap(function& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` İle değiştirme işlev nesnesi.
+*doğru* ile takas için işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini hedef nesneler arasında değiştirir `*this` ve `right`. Bunu Sabit sürede yapar ve hiçbir özel durum oluşturur.
+Üye işlevi hedef nesneler arasında değiştirir `*this` ve *doğru*. Bu sabit sürede yazılabilmesine ve hiçbir özel durum oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -556,7 +556,7 @@ val == -3
 
 ## <a name="target"></a>  Function::target
 
-Aranabilir nesne depoladıysanız testleri belirtildiği şekilde çağrılabilir.
+Çağrılabilir nesne depolanan olup olmadığını test eder belirtildiği şekilde çağrılabilir.
 
 ```cpp
 template <class Fty2>
@@ -567,13 +567,13 @@ template <class Fty2>
 
 ### <a name="parameters"></a>Parametreler
 
-`Fty2` Test etmek için hedef aranabilir nesne türü.
+*Fty2* test etmek için hedef çağrılabilir nesne türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü `Fty2` için bağımsız değişken türleri aranabilir olmalıdır `T1, T2, ..., TN` ve dönüş türü `Ret`. Varsa `target_type() == typeid(Fty2)`, hedef nesnenin adresi üye şablon fonksiyonunu döndürür; Aksi halde 0 döndürür.
+Türü *Fty2* bağımsız değişken türleri için çağrılabilir olmalıdır `T1, T2, ..., TN` ve dönüş türü `Ret`. Varsa `target_type() == typeid(Fty2)`, üye şablon işlevi hedef nesnenin adresini döndürür; Aksi takdirde 0 değerini döndürür.
 
-Bir tür `Fty2` için bağımsız değişken türleri aranabilir olan `T1, T2, ..., TN` ve dönüş türü `Ret` örneğin lvalues `fn, t1, t2, ..., tN` türlerinin `Fty2, T1, T2, ..., TN`, sırasıyla `INVOKE(fn, t1, t2, ..., tN)` doğru biçimlendirildiğinden ve `Ret` değil `void`, dönüştürülebilir `Ret`.
+Bir tür *Fty2* bağımsız değişken türleri için çağrılabilir `T1, T2, ..., TN` ve dönüş türü `Ret` örneğin lvalues `fn, t1, t2, ..., tN` türlerinin `Fty2, T1, T2, ..., TN`sırasıyla `INVOKE(fn, t1, t2, ..., tN)` iyi biçimlendirilmemiş ve `Ret`değil **void**, dönüştürülebilir `Ret`.
 
 ### <a name="example"></a>Örnek
 
@@ -617,7 +617,7 @@ no target == true
 
 ## <a name="target_type"></a>  Function::target_type
 
-Alır aranabilir nesnede bilgileri yazın.
+Çağrılabilir nesne türü bilgileri alır.
 
 ```cpp
 const std::type_info& target_type() const;
@@ -625,7 +625,7 @@ const std::type_info& target_type() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `typeid(void)` varsa `*this` Aksi takdirde döndürür boş olduğundan `typeid(T)`, burada `T` hedef nesne türü.
+Üye işlevinin döndürdüğü `typeid(void)` varsa `*this` olan boş, aksi halde döndürür `typeid(T)`burada `T` hedef nesne türü.
 
 ### <a name="example"></a>Örnek
 

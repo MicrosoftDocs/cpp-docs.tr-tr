@@ -1,5 +1,5 @@
 ---
-title: Uygulama ikili arabirimi (ATL) | Microsoft Docs
+title: Çift arabirim (ATL) uygulama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,42 +15,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34cc55e4466dba094bf70e734340b40237207f3c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bb28b1ce6d98ffd030bbeeca746847b57ed59bc9
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356738"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957603"
 ---
 # <a name="implementing-a-dual-interface"></a>Çift arabirim uygulama
-Çift arabirimini kullanarak uygulayabileceğiniz [IDispatchImpl](../atl/reference/idispatchimpl-class.md) bir varsayılan uygulamayı sağlar sınıfı `IDispatch` çift arabirim yöntemleri. Daha fazla bilgi için bkz: [IDispatch arabirimi uygulama](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+Kullanan bir dual arabirimi uygulayabilir [Idispatchımpl](../atl/reference/idispatchimpl-class.md) bir varsayılan uygulamayı sağlar sınıfını `IDispatch` çift arabirim yöntemleri. Daha fazla bilgi için [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).  
   
  Bu sınıf kullanmak için:  
   
--   Çift arabirim bir tür kitaplığı tanımlayın.  
+-   Bir tür kitaplığı, çift arabirim tanımlayın.  
   
--   Uzmanlaşması, sınıf türetin `IDispatchImpl` (şablon bağımsız değişken olarak arabirimi ve tür kitaplığı hakkında bilgi aktarmak).  
+-   Sınıfınıza özelleştirmesi türetilen `IDispatchImpl` (şablon bağımsız değişken olarak arabirimi ve tür kitaplığı hakkında bilgi geçirmek).  
   
--   COM eşlemesi çift arabirimi aracılığıyla kullanıma sunmak için bir giriş (veya girişleri) eklemek `QueryInterface`.  
+-   Bir giriş (veya girişleri) çift arabirim yoluyla genele COM eşlemesi eklemek `QueryInterface`.  
   
--   Arabirim vtable parçası sınıfınızda uygulayın.  
+-   Vtable arabiriminin bir parçası sınıfınızda uygulayın.  
   
--   Çalışma zamanında arabirim tanımı içeren tür kitaplığı nesneleriniz için kullanılabilir olduğundan emin olun.  
+-   Çalışma zamanında arabirim tanımı içeren tür kitaplığı nesnelerinizi kullanılabilir olduğundan emin olun.  
   
 ## <a name="atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı  
- Yeni bir arabirimi ve uygulamak için yeni bir sınıf oluşturmak istiyorsanız, kullanabileceğiniz [ATL Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md)ve ardından [ATL Basit Nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md).  
+ Yeni bir arabirim ve uygulamak için yeni bir sınıf oluşturmak istiyorsanız, kullanabileceğiniz [ATL Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md), ardından [ATL Basit Nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md).  
   
 ## <a name="implement-interface-wizard"></a>Arabirim Uygulama Sihirbazı  
- Varolan arabirimi varsa, kullanabileceğiniz [arabirim Uygulama Sihirbazı](../atl/reference/adding-a-new-interface-in-an-atl-project.md) gerekli temel sınıfı, COM eşleme girdilerini ve iskelet yöntemi uygulamaları varolan bir sınıfa eklemek için.  
+ Varolan arabirimi varsa, kullanabileceğiniz [arabirim Uygulama Sihirbazı](../atl/reference/adding-a-new-interface-in-an-atl-project.md) gerekli temel sınıf, COM eşleme girişleri ve iskelet yöntem uygulamaları için varolan bir sınıf eklemek için.  
   
 > [!NOTE]
->  Tür kitaplığı birincil ve ikincil sürüm numaralarını şablon bağımsız değişken olarak geçirilen böylece oluşturulan taban sınıf ayarlamanız gerekebilir, `IDispatchImpl` temel sınıfı. Arabirim Uygulama Sihirbazı sizin için tür kitaplığı sürüm numarası denetlemez.  
+>  Tür kitaplığının birincil ve ikincil sürüm numaralarını, şablon bağımsız değişkenleri olarak geçirilir, böylece, oluşturulan taban sınıf ayarlamanız gerekebilir, `IDispatchImpl` temel sınıfı. Arabirim Uygulama Sihirbazı, tür kitaplığı sürüm numarasını denetlemez.  
   
 ## <a name="implementing-idispatch"></a>IDispatch uygulama  
- Kullanabileceğiniz bir `IDispatchImpl` temel COM eşleminde yalnızca uygun girdiyi belirterek bir görüntüleme arabirimi uygulaması sağlamak için sınıfı (kullanarak [COM_INTERFACE_ENTRY2](reference/com-interface-entry-macros.md#com_interface_entry2) veya [COM_INTERFACE_ENTRY_IID](reference/com-interface-entry-macros.md#com_interface_entry_iid) makrosu) karşılık gelen bir çift arabirim açıklayan bir tür kitaplığı olduğu sürece. Uygulamak için oldukça yaygındır `IDispatch` bu şekilde, örneğin arabirim. ATL Basit Nesne Sihirbazı'nı ve uygulama arabirimi hem de varsayılmaktadır uygulamak istediğiniz Sihirbazı'nı `IDispatch` bu şekilde, bu nedenle bunlar eklemek uygun girdiyi eşlenir.  
+ Kullanabileceğiniz bir `IDispatchImpl` temel sınıf içindeki COM eşlemesine yalnızca uygun giriş belirterek bir dispinterface bir uygulamasını sağlamak üzere (kullanarak [COM_INTERFACE_ENTRY2](reference/com-interface-entry-macros.md#com_interface_entry2) veya [COM_INTERFACE_ENTRY_IID](reference/com-interface-entry-macros.md#com_interface_entry_iid) makrosu) karşılık gelen bir çift arabirim açıklayan bir tür kitaplığı olduğu sürece. Uygulamak için oldukça yaygındır `IDispatch` bu şekilde, örneğin arabirim. ATL Basit Nesne Sihirbazı ve uygulama arabirimi hem de varsayılmaktadır uygulamak istediğiniz Sihirbazı'nı `IDispatch` bu şekilde, bu nedenle bunlar ekleyecek uygun giriş eşlenir.  
   
 > [!NOTE]
->  ATL sunar [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ve [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) uyumlu bir çift arabirim tanımını içeren bir tür kitaplığı gerek kalmadan dispinterfaces uygulamanıza yardımcı olmak için sınıflar.  
+>  ATL sunar [Idispeventımpl](../atl/reference/idispeventimpl-class.md) ve [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md) uyumlu çift arabirim tanımını içeren bir tür kitaplığı gerek kalmadan, görüntü arabirimlerinde yardımcı sınıfları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çift Arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)

@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ca4d5a88b14f32064e473bd129fcd0f8ddd7898
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 0519373a46e1c25feda7a3130b420c565a96eece
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040619"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339549"
 ---
 # <a name="chtmleditview-class"></a>CHtmlEditView sınıfı
-MFC'nin belge/görünüm mimarisinin bağlamında WebBrowser düzenleme platform işlevselliğini sağlar.  
+MFC'nin belge/görünüm mimarisi bağlamında WebBrowser düzenleme platformu işlevlerini sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,14 +46,14 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CHtmlEditView::CHtmlEditView](#chtmleditview)|Oluşturan bir `CHtmlEditView` nesnesi.|  
+|[CHtmlEditView::CHtmlEditView](#chtmleditview)|Oluşturur bir `CHtmlEditView` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CHtmlEditView::Create](#create)|Yeni bir pencere nesnesi oluşturur.|  
-|[CHtmlEditView::GetDHtmlDocument](#getdhtmldocument)|Döndürür **Ihtmldocument2** geçerli belge arabirimi.|  
+|[CHtmlEditView::GetDHtmlDocument](#getdhtmldocument)|Döndürür `IHTMLDocument2` geçerli belge arabirimi.|  
 |[CHtmlEditView::GetStartDocument](#getstartdocument)|Bu görünüm için varsayılan belge adını alır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -67,7 +67,7 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
   
  [CScrollView](../../mfc/reference/cscrollview-class.md)  
   
- [Cformview'yu](../../mfc/reference/cformview-class.md)  
+ [CFormView](../../mfc/reference/cformview-class.md)  
   
  [CHtmlEditCtrlBase](../../mfc/reference/chtmleditctrlbase-class.md)  
   
@@ -79,7 +79,7 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
  **Başlık:** afxhtml.h  
   
 ##  <a name="chtmleditview"></a>  CHtmlEditView::CHtmlEditView  
- Oluşturan bir `CHtmlEditView` nesnesi.  
+ Oluşturur bir `CHtmlEditView` nesne.  
   
 ```  
 CHtmlEditView();
@@ -101,31 +101,31 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszClassName*  
- Windows sınıfı adları null olarak sonlandırılan bir karakter dizesine noktaları. Sınıf adı kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işlevi veya **RegisterClass** Windows işlevi. Varsa **NULL**, önceden tanımlanmış varsayılan kullanır [CFrameWnd](../../mfc/reference/cframewnd-class.md) öznitelikleri.  
+ Windows sınıf adları null ile sonlandırılmış dizeye işaret eder. Sınıf adı ile kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işlev veya `RegisterClass` Windows işlevi. NULL ise, önceden tanımlanmış varsayılan kullanan [CFrameWnd](../../mfc/reference/cframewnd-class.md) öznitelikleri.  
   
  *lpszWindowName*  
- Pencere adı temsil eden bir null olarak sonlandırılan bir karakter dizesi noktalarına.  
+ Pencere adının temsil eden bir boş sonlandırılmış karakter dizesi işaret eder.  
   
  *dwStyle*  
- Pencere stili özniteliklerini belirtir. Varsayılan olarak, **ws_vısıble** ve **WS_CHILD** Windows stilleri ayarlanır.  
+ Pencere stili özniteliklerini belirtir. Ws_vısıble ve WS_CHILD Windows stilleri varsayılan olarak ayarlanır.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve pencere konumunu belirtme yapısı. *RectDefault* değeri boyutunu ve yeni pencere konumunu belirtmek Windows sağlar.  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı pencerenin konumunu ve boyutunu belirtme. *RectDefault* değer, yeni pencerenin konumunu ve boyutunu belirtmek Windows sağlar.  
   
  *pParentWnd*  
- Denetimin üst pencere için bir işaretçi.  
+ Denetiminin üst penceresine bir işaretçi.  
   
  *nID*  
- Görünüm kimliği sayısı. Varsayılan olarak, kümesine **AFX_IDW_PANE_FIRST**.  
+ Görünüm kimliği sayısı. Varsayılan olarak, AFX_IDW_PANE_FIRST için ayarlayın.  
   
  *pContext*  
- Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). **NULL** varsayılan olarak.  
+ Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). Varsayılan olarak null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem de kapsanan WebBrowser's çağıracaktır **Bul** varsayılan bir belge yüklemek için yöntemi (bkz [CHtmlEditView::GetStartDocument](#getstartdocument)).  
+ Bu yöntem ayrıca kapsanan WebBrowser's göndereceği `Navigate` varsayılan bir belge yüklemek için gereken yöntemini (bkz [CHtmlEditView::GetStartDocument](#getstartdocument)).  
   
 ##  <a name="getdhtmldocument"></a>  CHtmlEditView::GetDHtmlDocument  
- Döndürür **Ihtmldocument2** geçerli belge arabirimi.  
+ Döndürür `IHTMLDocument2` geçerli belge arabirimi.  
   
 ```  
 BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;  

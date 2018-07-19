@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0580d6e2128a75f7457541cc82caf2fece958b81
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cfc3f744da2deb804f1a3e3445fbed3da3fac0b5
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844581"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955792"
 ---
 # <a name="divides-struct"></a>divides Yapısı
 
-Bölme işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi ( `operator/`) bağımsız değişkenlerini üzerinde.
+Bölme işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (`operator/`) üzerinde bağımsız değişkenleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,15 +49,15 @@ struct divides<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Destekleyen bir türü bir `operator/` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* destekleyen bir türü bir `operator/` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Bölme işlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* bölme işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Bölme işlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* bölme işleminin sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left / Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator/`.
+Sonucu `Left / Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator/`.
 
 ## <a name="example"></a>Örnek
 
@@ -117,7 +117,7 @@ The element-wise quotients are: ( 0 1.75 2.33333 2.625 2.8 2.91667 )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

@@ -44,15 +44,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff998b8be93d1248775d49bcef7680f4c9777fd4
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 3b7f82988e8756a6894464c9d95ae47fe6baf922
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36953681"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336819"
 ---
 # <a name="cfontdialog-class"></a>CFontDialog sınıfı
-Bir yazı tipi seçimi iletişim kutusu uygulamanıza eklemenizi sağlar.  
+Bir yazı tipi seçimi iletişim kutusunu uygulamanıza eklemenize olanak sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -66,47 +66,47 @@ class CFontDialog : public CCommonDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFontDialog::CFontDialog](#cfontdialog)|Oluşturan bir `CFontDialog` nesnesi.|  
+|[CFontDialog::CFontDialog](#cfontdialog)|Oluşturur bir `CFontDialog` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFontDialog::DoModal](#domodal)|İletişim kutusu görüntüler ve bir seçim yapmasına olanak tanır.|  
+|[CFontDialog::DoModal](#domodal)|İletişim kutusunu görüntüler ve kullanıcının seçim yapmanıza izin verir.|  
 |[CFontDialog::GetCharFormat](#getcharformat)|Karakter biçimlendirme seçili yazı tipini alır.|  
-|[CFontDialog::GetColor](#getcolor)|Seçili yazı tipi rengini döndürür.|  
-|[CFontDialog::GetCurrentFont](#getcurrentfont)|Şu anda seçili font özelliklerini atar bir `LOGFONT` yapısı.|  
-|[CFontDialog::GetFaceName](#getfacename)|Seçili yazı tipi yüz adını döndürür.|  
+|[CFontDialog::GetColor](#getcolor)|Seçili yazı tipinin rengini döndürür.|  
+|[CFontDialog::GetCurrentFont](#getcurrentfont)|Şu anda seçili yazı tipinin özelliklerini atar bir `LOGFONT` yapısı.|  
+|[CFontDialog::GetFaceName](#getfacename)|Seçili yazı tipinin yüz adını döndürür.|  
 |[CFontDialog::GetSize](#getsize)|Seçili yazı tipinin punto boyutunu döndürür.|  
-|[CFontDialog::GetStyleName](#getstylename)|Seçili yazı tipi stili adını döndürür.|  
-|[CFontDialog::GetWeight](#getweight)|Seçilen yazı tipini döndüren.|  
-|[CFontDialog::IsBold](#isbold)|Yazı tipi kalın olup olmadığını belirler.|  
-|[CFontDialog::IsItalic](#isitalic)|Yazı tipi italik olup olmadığını belirler.|  
-|[CFontDialog::IsStrikeOut](#isstrikeout)|Yazı tipi çizili ile görüntülenip görüntülenmeyeceğini belirler.|  
-|[CFontDialog::IsUnderline](#isunderline)|Yazı tipinin altı çizili olup olmadığını belirler.|  
+|[CFontDialog::GetStyleName](#getstylename)|Seçili yazı stili adını döndürür.|  
+|[CFontDialog::GetWeight](#getweight)|Seçili yazı tipinin kalınlığı döndürür.|  
+|[CFontDialog::IsBold](#isbold)|Kalın yazı tipi olup olmadığını belirler.|  
+|[CFontDialog::IsItalic](#isitalic)|İtalik yazı tipi olup olmadığını belirler.|  
+|[CFontDialog::IsStrikeOut](#isstrikeout)|Yazı tipi üstü çizili ile görüntülenip görüntülenmeyeceğini belirler.|  
+|[CFontDialog::IsUnderline](#isunderline)|Yazı tipi altı çizili olup olmadığını belirler.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFontDialog::m_cf](#m_cf)|Özelleştirmek için kullanılan bir yapı bir `CFontDialog` nesnesi.|  
+|[CFontDialog::m_cf](#m_cf)|Özelleştirmek için kullanılan bir yapının bir `CFontDialog` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- A `CFontDialog` nesne sistemde yüklü yazı tiplerini listesini içeren bir iletişim kutusu değil. Kullanıcı belirli bir yazı tipi listeden seçebilir ve bu seçimi daha sonra geri uygulamaya bildirilir.  
+ A `CFontDialog` nesnedir, sistemde yüklenmiş olan yazı tiplerinin bir listesini içeren bir iletişim kutusu. Kullanıcı belirli bir yazı tipi listeden seçebilirsiniz ve bu seçimi daha sonra geri uygulamaya bildirilir.  
   
- Oluşturmak için bir `CFontDialog` nesnesi, sağlanan bir oluşturucu kullanın veya yeni bir alt sınıf türetin ve kendi özel Oluşturucu kullanın.  
+ Oluşturmak için bir `CFontDialog` nesne, sağlanan bir oluşturucu kullanın veya yeni bir alt sınıf türetin ve kendi özel Oluşturucu kullanın.  
   
- Bir kez bir `CFontDialog` nesne oluşturulan, kullanabileceğiniz `m_cf` yapısı değerleri veya iletişim kutusu denetimleri durumlarını başlatılamadı. [M_cf](#m_cf) yapısıdır türü [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Bir kez bir `CFontDialog` nesne oluşturulur, kullanabileceğiniz `m_cf` yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. [M_cf](#m_cf) yapısıdır türünü [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
- İletişim nesnenin denetimleri başlatma sonra çağrı `DoModal` üye işlevi iletişim kutusunu görüntülemek ve kullanıcının bir yazı tipi seçmesine izin vermek için. `DoModal` Kullanıcı Tamam seçili olup olmadığını döndürür ( **IDOK**) veya iptal ( **IDCANCEL**) düğmesi.  
+ İletişim nesnenin denetimleri başlatılıyor sonra çağrı `DoModal` üye işlevi iletişim kutusunu görüntülemek ve bir yazı tipi Seç izin verin. `DoModal` Kullanıcı Tamam (IDOK) veya iptal edin (IDCANCEL) düğmesi seçili olup olmadığını döndürür.  
   
- Varsa `DoModal` döndürür **IDOK**, aşağıdakilerden birini kullanabilirsiniz `CFontDialog`ait kullanıcı tarafından giriş bilgilerini almak için üye işlevleri.  
+ Varsa `DoModal` IDOK, döndürür birini kullanabilirsiniz `CFontDialog`ait üye işlevleri tarafından kullanıcı giriş bilgileri alınamıyor.  
   
- Windows kullanabilirsiniz [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) işlevi iletişim kutusunu başlatma sırasında bir hata olup olmadığını belirlemek ve hata hakkında daha fazla bilgi için. Bu işlev hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Windows kullanabileceğiniz [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) işlevi bir hata iletişim kutusunun başlatma sırasında oluşup oluşmadığını belirleyin ve hata hakkında daha fazla bilgi edinin. Bu işlev hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
  `CFontDialog` üzerinde COMMDLG kullanır. Windows 3.1 ve sonraki sürümleri ile birlikte gelen DLL dosyası.  
   
- Özelleştir iletişim kutusu için bir sınıf türetin `CFontDialog`, özel iletişim şablonu sağlayın ve genişletilmiş denetimlerden bildirim iletilerini işlemek için bir ileti eşlemesi ekleyin. İşlenmemiş tüm iletiler için temel sınıf geçirilmesi gerekir.  
+ Özelleştir iletişim kutusu için öğesinden bir sınıf türetin `CFontDialog`, bir özel iletişim şablonu sağlar ve genişletilmiş denetimlerden bildirim iletileri işlemek üzere bir ileti eşlemesi ekleyin. İşlenmemiş tüm iletiler için temel sınıf geçirilmelidir.  
   
  Kanca işlevini özelleştirme gerekli değildir.  
   
@@ -129,7 +129,7 @@ class CFontDialog : public CCommonDialog
  **Başlık:** afxdlgs.h  
   
 ##  <a name="cfontdialog"></a>  CFontDialog::CFontDialog  
- Oluşturan bir `CFontDialog` nesnesi.  
+ Oluşturur bir `CFontDialog` nesne.  
   
 ```  
 CFontDialog(
@@ -147,45 +147,45 @@ CFontDialog(
   
 ### <a name="parameters"></a>Parametreler  
  *plfInitial*  
- Bir işaretçi bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) bazı yazı tipinin özelliklerini ayarlamanıza olanak tanır veri yapısı.  
+ Bir işaretçi bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) veri yapısı, bazı yazı tipinin özelliklerini ayarlamanıza olanak tanır.  
   
  *charFormat*  
- Bir işaretçi bir [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) bazı yazı tipinin özellikleri zengin bir ayarlamanıza olanak tanır veri yapısı düzenleme denetimi.  
+ Bir işaretçi bir [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) düzenleme denetimi veri yapısı, bazı yazı tipinin özelliklerine zengin içinde ayarlamanıza olanak tanır.  
   
- *dwFlags*  
- Bir veya daha fazla seçin yazı tipi bayraklarını belirtir. Bir veya daha fazla hazır değer bit düzeyinde OR işleci kullanılarak birleştirilebilir. Değiştirirseniz `m_cf.Flag`s yapısı üye, varsayılan davranışı korumanız için değişikliklerinizi bit düzeyinde OR işleci kullandığınızdan emin olun. Bu bayrakların her hakkında daha fazla bilgi için açıklamasına bakın [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832) Windows SDK'sındaki yapısı.  
+ *CertOpenStore*  
+ Bir veya daha fazla seçin-yazı tipi bayrakları belirtir. Bir veya daha fazla hazır değer Bitsel OR operatörü kullanılarak birleştirilebilir. Değiştirirseniz `m_cf.Flag`s yapı üyesi, varsayılan davranışı korumak için değişikliklerinizi bir bit düzeyinde OR işleci kullandığınızdan emin olun. Bu bayrakların her hakkında daha fazla bilgi için açıklamasına bakın [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832) Windows SDK'sı yapısında.  
   
  *pdcPrinter*  
- Bir yazıcı cihaz bağlamı için bir işaretçi. Belirttiğinizde, bu parametre seçilmesi olduğu yazı tiplerini yazıcı için bir yazıcı cihaz bağlamı işaret eder.  
+ Bir yazıcı cihaz bağlamı için bir işaretçi. Bu parametre belirtilirse, seçilmesi olan yazı tiplerinin yazıcı için bir yazıcı cihaz bağlamı gösteriyor.  
   
  *pParentWnd*  
- Yazı tipi iletişim kutusunun üst veya sahibi penceresi için bir işaretçi.  
+ Yazı tipi iletişim kutusunun üst veya sahip penceresine bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturucusu üyeleri içinde otomatik olarak doldurur Not `CHOOSEFONT` yapısı. Varsayılandan farklı bir yazı tipi iletişim kutusu istiyorsanız yalnızca bunlar değiştirmeniz gerekir.  
+ Oluşturucu içinde üyelerini otomatik olarak doldurur. Not `CHOOSEFONT` yapısı. Bunlar yalnızca varsayılandan farklı bir yazı tipi iletişim kutusu isterseniz değiştirmelisiniz.  
   
 > [!NOTE]
->  Denetim desteği yok zengin düzenleme olduğunda bu işlev ilk sürümü yalnızca mevcut.  
+>  Hiçbir zengin düzenleme denetimi desteği olduğunda bu işlev ilk sürümü yalnızca bulunmaktadır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#78](../../mfc/codesnippet/cpp/cfontdialog-class_1.cpp)]  
   
 ##  <a name="domodal"></a>  CFontDialog::DoModal  
- Windows ortak yazı tipi iletişim kutusu görüntülemek ve bir yazı tipi seçmesine izin vermek için bu işlevini çağırın.  
+ Windows ortak yazı tipi iletişim kutusu görüntülemek ve bir yazı tipi seçmesine izin vermek için bu işlevi çağırın.  
   
 ```  
 virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **IDOK** veya **IDCANCEL**. Varsa **IDCANCEL** olan döndürülen Windows çağrısı [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) işlevi bir hata oluşup oluşmadığını belirleyin.  
+ IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) hata oluşup oluşmadığını belirlemek için işlevi.  
   
- **IDOK** ve **IDCANCEL** kullanıcı Tamam'ı veya iptal düğmesine seçili olmadığını gösterecek sabittir.  
+ IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üyeleri ayarlayarak çeşitli yazı tipi iletişim kutusu denetimleri başlatmak istiyorsanız [m_cf](#m_cf) yapısı, bu çağırmadan önce yapmanız gerektiğini `DoModal`, ancak iletişim nesnesi oluşturulur.  
+ Üyeleri ayarlayarak farklı yazı tipi iletişim kutusu denetimleri başlatmak istiyorsanız [m_cf](#m_cf) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
   
- Varsa `DoModal` döndürür **IDOK**, diğer üye ayarları veya kullanıcı tarafından bilgi giriş iletişim kutusuna almak için işlevleri çağırabilir.  
+ Varsa `DoModal` döndürür IDOK, diğer üye işlevleri, kullanıcı giriş bilgileri ve Ayarları iletişim kutusuna alınacak çağırabilirsiniz.  
   
 ### <a name="example"></a>Örnek  
   Örnekler için bkz: [CFontDialog::CFontDialog](#cfontdialog) ve [CFontDialog::GetColor](#getcolor).  
@@ -199,10 +199,10 @@ void GetCharFormat(CHARFORMAT& cf) const;
   
 ### <a name="parameters"></a>Parametreler  
  *cf*  
- A [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) seçili yazı tipini karakter biçimlendirme hakkında bilgi içeren yapısı.  
+ A [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) karakter seçili yazı tipini biçimlendirme hakkında bilgi içeren yapıya.  
   
 ##  <a name="getcolor"></a>  CFontDialog::GetColor  
- Seçili yazı tipi rengini almak için bu işlevini çağırın.  
+ Seçili yazı tipi rengini almak için bu işlevi çağırın.  
   
 ```  
 COLORREF GetColor() const;  
@@ -215,7 +215,7 @@ COLORREF GetColor() const;
  [!code-cpp[NVC_MFCDocView#79](../../mfc/codesnippet/cpp/cfontdialog-class_2.cpp)]  
   
 ##  <a name="getcurrentfont"></a>  CFontDialog::GetCurrentFont  
- Şu anda seçili yazı tipi özelliklerini üyelerine atamak için bu işlevi çağırmak bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
+ Şu anda seçili yazı tipinin özellikleri üyelerine atamak için bu işlevi çağırın bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
   
 ```  
 void GetCurrentFont(LPLOGFONT lplf);
@@ -228,39 +228,39 @@ void GetCurrentFont(LPLOGFONT lplf);
 ### <a name="remarks"></a>Açıklamalar  
  Diğer `CFontDialog` üye işlevleri, geçerli yazı tipi tek tek özelliklere erişmek için sağlanır.  
   
- Bu işlev çağrısı sırasında çağrılırsa [DoModal](#domodal), geçerli seçim zaman döndürür (hangi kullanıcı görür veya sahip iletişim kutusunda değiştirildi). Bu işlev çağrısı yapıldıktan sonra çağrılırsa `DoModal` (yalnızca `DoModal` döndürür **IDOK**), aslında seçili kullanıcı döndürür.  
+ Bu işlev çağrısı sırasında çağrılırsa [DoModal](#domodal), seçilen zaman döndürür (hangi kullanıcı görür veya sahip iletişim kutusunda değiştirildi). Bu işlev çağrısı yapıldıktan sonra çağrılırsa `DoModal` (yalnızca `DoModal` IDOK döndürür), aslında seçili kullanıcı döndürür.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#80](../../mfc/codesnippet/cpp/cfontdialog-class_3.cpp)]  
   
 ##  <a name="getfacename"></a>  CFontDialog::GetFaceName  
- Seçili yazı tipinin yüz adını almak için bu işlevini çağırın.  
+ Seçili yazı tipinin yüz adını almak için bu işlevi çağırın.  
   
 ```  
 CString GetFaceName() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçili yazı tipinin yüz adını `CFontDialog` iletişim kutusu.  
+ Seçili yazı tipinin yüz adı `CFontDialog` iletişim kutusu.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#81](../../mfc/codesnippet/cpp/cfontdialog-class_4.cpp)]  
   
 ##  <a name="getsize"></a>  CFontDialog::GetSize  
- Seçili yazı tipi boyutunu almak için bu işlevini çağırın.  
+ Seçili yazı tipinin boyutunu almak için bu işlevi çağırın.  
   
 ```  
 int GetSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Onda noktasının yazı tipinin boyutu.  
+ Bir noktanın onda yazı tipinin boyutu.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#82](../../mfc/codesnippet/cpp/cfontdialog-class_5.cpp)]  
   
 ##  <a name="getstylename"></a>  CFontDialog::GetStyleName  
- Seçili yazı tipi stili adını almak için bu işlevini çağırın.  
+ Seçili yazı stili adını almak için bu işlevi çağırın.  
   
 ```  
 CString GetStyleName() const;  
@@ -273,82 +273,82 @@ CString GetStyleName() const;
  [!code-cpp[NVC_MFCDocView#83](../../mfc/codesnippet/cpp/cfontdialog-class_6.cpp)]  
   
 ##  <a name="getweight"></a>  CFontDialog::GetWeight  
- Seçili yazı tipinin kalınlığı almak için bu işlevini çağırın.  
+ Seçili yazı tipinin kalınlığı almak için bu işlevi çağırın.  
   
 ```  
 int GetWeight() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçili yazı tipi ağırlığı.  
+ Seçili yazı tipinin kalınlığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir yazı tipi ağırlığı hakkında daha fazla bilgi için bkz: [CFont::CreateFont](../../mfc/reference/cfont-class.md#createfont).  
+ Bir yazı tipi ağırlığı hakkında daha fazla bilgi için bkz. [CFont::CreateFont](../../mfc/reference/cfont-class.md#createfont).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#84](../../mfc/codesnippet/cpp/cfontdialog-class_7.cpp)]  
   
 ##  <a name="isbold"></a>  CFontDialog::IsBold  
- Seçili yazı tipi kalın olup olmadığını belirlemek için bu işlevini çağırın.  
+ Seçili yazı tipinin kalın olup olmadığını belirlemek için bu işlevi çağırın.  
   
 ```  
 BOOL IsBold() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçili yazı tipi etkin kalın karakteristiğini varsa sıfır olmayan; Aksi takdirde 0.  
+ Seçili yazı tipinin kalın özelliği etkin olan olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#85](../../mfc/codesnippet/cpp/cfontdialog-class_8.cpp)]  
   
 ##  <a name="isitalic"></a>  CFontDialog::IsItalic  
- Seçilen yazı tipini italik olup olmadığını belirlemek için bu işlevini çağırın.  
+ Seçili yazı italik olup olmadığını belirlemek için bu işlevi çağırın.  
   
 ```  
 BOOL IsItalic() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçili yazı tipi etkin italik karakteristiğini varsa sıfır olmayan; Aksi takdirde 0.  
+ Seçili yazı italik özelliği etkin olan olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#86](../../mfc/codesnippet/cpp/cfontdialog-class_9.cpp)]  
   
 ##  <a name="isstrikeout"></a>  CFontDialog::IsStrikeOut  
- Seçili yazı tipi ile üstü çizili görüntüleniyorsa belirlemek için bu işlevini çağırın.  
+ Seçili yazı üstü çizili ile gösterilip gösterilmediğini belirlemek için bu işlevi çağırın.  
   
 ```  
 BOOL IsStrikeOut() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçili yazı tipi etkin çizili karakteristiğini varsa sıfır olmayan; Aksi takdirde 0.  
+ Seçili yazı üstü çizili özelliği etkin olan olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#87](../../mfc/codesnippet/cpp/cfontdialog-class_10.cpp)]  
   
 ##  <a name="isunderline"></a>  CFontDialog::IsUnderline  
- Seçili yazı tipi çizilir belirlemek için bu işlevini çağırın.  
+ Seçili yazı altı çizili olup olmadığını belirlemek için bu işlevi çağırın.  
   
 ```  
 BOOL IsUnderline() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçili yazı tipi etkin altı çizili karakteristiğini varsa sıfır olmayan; Aksi takdirde 0.  
+ Seçili yazı altı çizili özelliği etkin olan olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#88](../../mfc/codesnippet/cpp/cfontdialog-class_11.cpp)]  
   
 ##  <a name="m_cf"></a>  CFontDialog::m_cf  
- Üyeleri iletişim nesnesinin özelliklerini depolamak yapısı.  
+ Üyeleri iletişim nesnesinin özelliklerini depolamak için bir yapı.  
   
 ```  
 CHOOSEFONT m_cf;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma sonrasında bir `CFontDialog` nesne kullanabileceğiniz `m_cf` çağırmadan önce iletişim kutusu çeşitli yönlerini değiştirmek için `DoModal` üye işlevi. Bu yapı hakkında daha fazla bilgi için bkz: [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832) Windows SDK'sındaki.  
+ Oluşturma sonrasında bir `CFontDialog` nesne kullanabileceğiniz `m_cf` çağırmadan önce iletişim kutusu çeşitli yönlerini değiştirmek için `DoModal` üye işlevi. Bu yapı hakkında daha fazla bilgi için bkz. [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#89](../../mfc/codesnippet/cpp/cfontdialog-class_12.cpp)]  

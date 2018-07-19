@@ -26,16 +26,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ccf17eb39d71d444db9154fb06991be42c34a70
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f6bd4a7827ec5223297f3ec3195724b62d4dc72c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857382"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955312"
 ---
 # <a name="subtractwithcarryengine-class"></a>subtract_with_carry_engine Sınıfı
 
-Rastgele bir dizi çıkarma-ile-taşıyan (lagged Fibonacci) algoritması tarafından oluşturur.
+Rastgele bir sıra çıkarma-ile-taşıma (geciktirmiştir Fibonacci) algoritması tarafından üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,13 +46,17 @@ class subtract_with_carry_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-`UIntType` İşaretsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*UIntType*  
+ İşeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-`W` **Word boyutu**. Her sözcüğün durumu dizisi bit cinsinden boyutu. **Önkoşul**: `0 < W ≤ numeric_limits<UIntType>::digits`
+*W*  
+ **Word boyutu**. Her sözcüğün bitlerini durum sırası boyutu. **Önkoşul**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-`S` **Kısa gecikme**. Tamsayı değerleri sayısı. **Önkoşul**: `0 < S < R`
+*S*  
+ **Kısa bir gecikme**. Tamsayı değerleri sayısı. **Önkoşul**: `0 < S < R`
 
-`R` **Uzun öteleme**. Oluşturulan serideki yinelenme belirler.
+*R*  
+ **Uzun lag**. Yinelenme oluşturulan serisindeki belirler.
 
 ## <a name="members"></a>Üyeler
 
@@ -60,27 +64,27 @@ class subtract_with_carry_engine;
 |-|-|-|
 |`subtract_with_carry_engine::subtract_with_carry_engine`|`subtract_with_carry_engine::min`|`subtract_with_carry_engine::discard`|
 |`subtract_with_carry_engine::operator()`|`subtract_with_carry_engine::max`|`subtract_with_carry_engine::seed`|
-|`default_seed` üye sabit, tanımlanmış olarak `19780503u`, varsayılan parametre değeri olarak kullanılan `subtract_with_carry_engine::seed` ve tek değer Oluşturucusu.|||
+|`default_seed` üye sabit, olarak tanımlı `19780503u`için varsayılan parametre değeri olarak kullanılır `subtract_with_carry_engine::seed` ve tek değer Oluşturucusu.|||
 
-Altyapısı üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Altyapısı üyeleri hakkında daha fazla bilgi için bkz. [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-`substract_with_carry_engine` Şablon sınıfıdır bir geliştirme üzerinden [linear_congruential_engine](../standard-library/linear-congruential-engine-class.md). Bu altyapılar için ne kadar hızlı mi yüksek kaliteli sonuçları [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
+`substract_with_carry_engine` Şablon sınıfı, bir geliştirme üzerinden [linear_congruential_engine](../standard-library/linear-congruential-engine-class.md). Bu altyapılar için ne kadar hızlı mi yüksek kaliteli sonuçlar olarak [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
 
-Bu altyapı türünün değerlerini yinelenme ilişkisini kullanarak bir kullanıcı tarafından belirtilen imzasız tam sayı oluşturur ( *süresi*) `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M`, burada `cy(i)` değerine sahip `1` varsa `x(i - S) - x(i - R) - cy(i - 1) < 0`, aksi takdirde `0`, ve `M` değerine sahip `2` <sup>W</sup>. Bir taşıma altyapının durumudur göstergesi artı `R` değerleri. Bu değerleri son oluşur `R` değerleri döndürülen IF `operator()` en az adlı `R` zaman, aksi takdirde `N` verilinceye değerleri ve son `R - N` çekirdek değerleri.
+Yinelenme ilişkisini kullanarak bir kullanıcı tarafından belirtilen işaretsiz tamsayı türü değerleri bu altyapısı üretir ( *süresi*) `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M`burada `cy(i)` değerine sahip `1` varsa `x(i - S) - x(i - R) - cy(i - 1) < 0`, aksi takdirde `0`, ve `M` değerine sahip `2` <sup>W</sup>. Altyapının durumu olan bir taşıma göstergesi artı *R* değerleri. Bu değerler son oluşur *R* değerleri döndürülen if `operator()` en az adlı *R* zaman, aksi takdirde `N` geri dönmüş olan değerleri ve son `R - N` Çekirdek değerleri.
 
-Şablon bağımsız değişken `UIntType` değerleri kadar tutmaya yetecek büyüklükte olmalıdır `M - 1`.
+Şablon bağımsız değişkeni `UIntType` değerleri içerebilecek kadar büyük olmalıdır `M - 1`.
 
-Bu altyapısından bir oluşturucuyu doğrudan oluşturabileceğiniz karşın, bu önceden tanımlanmış tür tanımları birini de kullanabilirsiniz:
+Doğrudan bu altyapısından bir oluşturucuyu oluşturmak olsa da, önceden tanımlanmış bu tür tanımlarından birini de kullanabilirsiniz:
 
-`ranlux24_base`: İçin temel olarak kullanılan `ranlux24`.
+`ranlux24_base`: Bir temeli olarak kullanılan `ranlux24`.
 `typedef subtract_with_carry_engine<unsigned int, 24, 10, 24> ranlux24_base;`
 
-`ranlux48_base`: İçin temel olarak kullanılan `ranlux48`.
+`ranlux48_base`: Bir temeli olarak kullanılan `ranlux48`.
 `typedef subtract_with_carry_engine<unsigned long long, 48, 5, 12> ranlux48_base;`
 
-Wikipedia makaleyi taşıyan altyapısı algoritmayla subract hakkında ayrıntılı bilgi için bkz: [Lagged Fibonacci Oluşturucu](http://go.microsoft.com/fwlink/p/?linkid=402445).
+Wikipedia makalesinin carry altyapısı algoritmayla subract hakkında ayrıntılı bilgi için bkz. [Geciktirmiştir Fibonacci Oluşturucu](http://go.microsoft.com/fwlink/p/?linkid=402445).
 
 ## <a name="requirements"></a>Gereksinimler
 

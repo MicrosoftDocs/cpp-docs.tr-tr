@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fbc0003db72d6a72e31a7d79de786476c946188
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 350fd6007ab6b89064ed6d0a7070a21e57427018
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845420"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956328"
 ---
 # <a name="isconvertible-class"></a>is_convertible Sınıfı
 
-Bir tür diğerine dönüştürülebilir ise testleri.
+Bir türden diğerine dönüştürülebilir olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,13 +37,13 @@ struct is_convertible;
 
 ### <a name="parameters"></a>Parametreler
 
-`From` Dönüştür türü.
+*Gelen* dönüştürmek için yazın.
 
-`Ty` Dönüştürme türü.
+*Ty* dönüştürme türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan ifade `To to = from;`, burada `from` türünde bir nesne `From`, doğru oluşturulmamış.
+Karşılaştırmasının bir örneği true tutan ifade `To to = from;`burada `from` türünde bir nesnedir `From`, doğru oluşturulmamış.
 
 ## <a name="example"></a>Örnek
 

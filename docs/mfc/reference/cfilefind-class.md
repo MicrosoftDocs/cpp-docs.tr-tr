@@ -66,15 +66,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de63a53e23f4ea22a6fe8df7ab55bfc57d409779
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 82639ff7d4c4f6c6e33778b47509a2744cb12f13
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955082"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37337401"
 ---
 # <a name="cfilefind-class"></a>CFileFind sınıfı
-Yerel dosya aramaları gerçekleştirir ve temel sınıfı olan [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) ve [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md), Internet dosya aramaları gerçekleştirin.  
+Yerel dosya aramaları gerçekleştirir ve temel sınıfı olan [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) ve [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md), Internet dosyalarında gerçekleştirin.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -88,59 +88,59 @@ class CFileFind : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFileFind::CFileFind](#cfilefind)|Oluşturan bir `CFileFind` nesnesi.|  
+|[CFileFind::CFileFind](#cfilefind)|Oluşturur bir `CFileFind` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFileFind::Close](#close)|Arama isteği kapatır.|  
-|[CFileFind::FindFile](#findfile)|Belirtilen dosya adı için bir dizin arar.|  
-|[CFileFind::FindNextFile](#findnextfile)|Dosya arama önceki çağrısından devam [FindFile](#findfile).|  
+|[CFileFind::Close](#close)|Arama isteği kapatılır.|  
+|[CFileFind::FindFile](#findfile)|Belirtilen dosya adı için bir dizini arar.|  
+|[CFileFind::FindNextFile](#findnextfile)|Bir önceki çağrıya bir dosya aramaya devam [FindFile](#findfile).|  
 |[CFileFind::GetCreationTime](#getcreationtime)|Dosyanın oluşturulduğu saati alır.|  
-|[CFileFind::GetFileName](#getfilename)|Bulunan dosya uzantısı dahil adını alır|  
-|[CFileFind::GetFilePath](#getfilepath)|Bulunan dosyanın tam yolunu alır.|  
-|[CFileFind::GetFileTitle](#getfiletitle)|Bulunan dosya başlığını alır. Başlık uzantısı içermez.|  
-|[CFileFind::GetFileURL](#getfileurl)|Bulunan dosyasının dosya yolunda dahil olmak üzere URL'yi alır.|  
-|[CFileFind::GetLastAccessTime](#getlastaccesstime)|Dosyaya son erişilen zaman alır.|  
-|[CFileFind::GetLastWriteTime](#getlastwritetime)|Dosyanın en son değiştirilen ve kaydedilen zaman alır.|  
-|[CFileFind::GetLength](#getlength)|Bulunan dosyanın bayt cinsinden uzunluğunu alır.|  
+|[CFileFind::GetFileName](#getfilename)|Bulunan dosyanın uzantısı dahil adını alır|  
+|[CFileFind::GetFilePath](#getfilepath)|Bulunan dosyasının tam yolunu alır.|  
+|[CFileFind::GetFileTitle](#getfiletitle)|Bulunan dosyayı başlığını alır. Başlık uzantısı içermez.|  
+|[CFileFind::GetFileURL](#getfileurl)|Dosya yolu, bulunan dosyanın dahil olmak üzere URL'yi alır.|  
+|[CFileFind::GetLastAccessTime](#getlastaccesstime)|Dosyanın son erişilme zamanı alır.|  
+|[CFileFind::GetLastWriteTime](#getlastwritetime)|Dosyanın en son değiştirildi ve kaydedilen zaman alır.|  
+|[CFileFind::GetLength](#getlength)|Bulunan dosyasının bayt cinsinden uzunluğunu alır.|  
 |[CFileFind::GetRoot](#getroot)|Kök dizininde bulunan dosyayı alır.|  
-|[CFileFind::IsArchived](#isarchived)|Bulunan dosya arşivlendi varsa belirler.|  
+|[CFileFind::IsArchived](#isarchived)|Bulunan dosyayı arşivlenir belirler.|  
 |[CFileFind::IsCompressed](#iscompressed)|Bulunan dosyayı sıkıştırılmış olup olmadığını belirler.|  
-|[CFileFind::IsDirectory](#isdirectory)|Bulunan dosyanın bir dizin olup olmadığını belirler.|  
-|[CFileFind::IsDots](#isdots)|Bulunan dosyanın adını adı olup olmadığını belirler "."veya"..", aslında bir dizin belirten.|  
-|[CFileFind::IsHidden](#ishidden)|Bulunan dosyanın gizli olduğunu belirler.|  
-|[CFileFind::IsNormal](#isnormal)|Bulunan dosyanın normal olup olmadığını belirler (diğer bir deyişle, diğer öznitelikleri yok).|  
-|[CFileFind::IsReadOnly](#isreadonly)|Bulunan dosyanın salt okunur olup olmadığını belirler.|  
-|[CFileFind::IsSystem](#issystem)|Bulunan dosyanın bir sistem dosyası olup olmadığını belirler.|  
-|[CFileFind::IsTemporary](#istemporary)|Bulunan dosyanın geçici olup olmadığını belirler.|  
-|[CFileFind::MatchesMask](#matchesmask)|İstenen dosya öznitelikleri bulunacak gösterir.|  
+|[CFileFind::IsDirectory](#isdirectory)|Dosyayı bir dizin olup olmadığını belirler.|  
+|[CFileFind::IsDots](#isdots)|Bulunan dosya adını adına sahip olup olmadığını belirler "."veya"...", aslında bir dizin olduğunu gösteren.|  
+|[CFileFind::IsHidden](#ishidden)|Bulunan dosyayı gizli olduğunu belirler.|  
+|[CFileFind::IsNormal](#isnormal)|Bulunan dosyayı normal olup olmadığını belirler (diğer bir deyişle, diğer özniteliklere sahip değildir).|  
+|[CFileFind::IsReadOnly](#isreadonly)|Bulunan dosya salt okunur olup olmadığını belirler.|  
+|[CFileFind::IsSystem](#issystem)|Dosyayı bir sistem dosyası olup olmadığını belirler.|  
+|[CFileFind::IsTemporary](#istemporary)|Bulunan dosyayı geçici olup olmadığını belirler.|  
+|[CFileFind::MatchesMask](#matchesmask)|Dosyanın bulunması istenen dosya özniteliklerini gösterir.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFileFind::CloseContext](#closecontext)|Geçerli arama tanıtıcı tarafından belirtilen dosya kapatır.|  
+|[CFileFind::CloseContext](#closecontext)|Geçerli arama tanıtıcı tarafından belirtilen dosyayı kapatır.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFileFind::m_pTM](#m_ptm)|İşaretçi bir `CAtlTransactionManager` nesnesi.|  
+|[CFileFind::m_pTM](#m_ptm)|İşaretçi bir `CAtlTransactionManager` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CFileFind` bir arama başlatır, bir dosyayı bulmak ve iade başlık, adı veya dosyasının yolunu üye işlevlerini içerir. Internet aramalarda üye fonksiyonu [GetFileURL](#getfileurl) dosyanın URL'sini döndürür.  
+ `CFileFind` bir arama başlatır, bir dosyayı bulun ve başlık, ad veya dosyanın yolunu döndürür üye işlevleri içerir. Internet aramalar, üye işlevi için [GetFileURL](#getfileurl) dosyanın URL'sini döndürür.  
   
- `CFileFind` diğer iki MFC sınıfları için temel sınıfı belirli bir sunucu türlerini aramak için tasarlanmıştır: `CGopherFileFind` özellikle gopher sunucularıyla çalışır ve `CFtpFileFind` özellikle FTP sunucularıyla çalışır. Birlikte, bu üç sınıfları istemcinin dosyaları, sunucu protokolü, dosya türü veya konumu, bağımsız olarak yerel makine ya da uzak bir sunucuya bulmak sorunsuz bir mekanizma sağlar.  
+ `CFileFind` diğer iki MFC sınıfları için temel sınıfı, belirli sunucu türleri aramak için tasarlanmıştır: `CGopherFileFind` özellikle gopher sunucularıyla çalışır ve `CFtpFileFind` özellikle FTP sunucuları ile çalışır. Birlikte, bu üç sınıflar istemcinin dosyaları, sunucu protokolü, dosya türü veya konum bağımsız olarak yerel makine veya uzak bir sunucuya bulmak sorunsuz bir mekanizma sağlar.  
   
- Aşağıdaki kodu her dosyanın adını yazdırma geçerli dizindeki tüm dosyaları numaralandırma:  
+ Aşağıdaki kod her dosyanın adı yazdırma geçerli dizindeki tüm dosyaları numaralandırır:  
   
  [!code-cpp[NVC_MFCFiles#31](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_1.cpp)]  
   
- Bu kod örneği basit tutmak için C++ Standart kitaplığı kullanır `cout` sınıfı. `cout` Satır yerini çağrısıyla `CListBox::AddString`, örneğin, bir grafik kullanıcı arabirimi ile bir programda.  
+ Bu kod örneği basit tutmak için C++ Standart Kitaplığı kullanan `cout` sınıfı. `cout` Satır yerine bir çağrı `CListBox::AddString`, örneğin, bir grafik kullanıcı arabirimi ile bir programda.  
   
- Nasıl kullanılacağı hakkında daha fazla bilgi için `CFileFind` ve diğer WinINet sınıfları başlıklı makaleye bakın [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md).  
+ Nasıl kullanılacağı hakkında daha fazla bilgi için `CFileFind` ve diğer WinINet sınıfları başlıklı makaleye bakın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -160,10 +160,10 @@ CFileFind(CAtlTransactionManager* pTM);
   
 ### <a name="parameters"></a>Parametreler  
  *pTM*  
- CAtlTransactionManager nesnesine işaretçi  
+ CAtlTransactionManager nesne işaretçisi  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetFileName](#getfilename).  
+  Örneğin bakın [CFileFind::GetFileName](#getfilename).  
   
 ##  <a name="close"></a>  CFileFind::Close  
  Aramayı sonlandırmak, bağlam Sıfırla ve tüm kaynakları serbest bırakmak için bu üye işlevini çağırın.  
@@ -173,25 +173,25 @@ void Close();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırdıktan sonra **Kapat**, yeni bir gerekmez `CFileFind` örneği çağırmadan önce [FindFile](#findfile) yeni bir arama başlatmak için.  
+ Arama sonra `Close`, yeni bir oluşturmak zorunda değilsiniz `CFileFind` örneği çağırmadan önce [FindFile](#findfile) yeni aramaya başlamak için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetFileName](#getfilename).  
+  Örneğin bakın [CFileFind::GetFileName](#getfilename).  
   
 ##  <a name="closecontext"></a>  CFileFind::CloseContext  
- Geçerli arama tanıtıcı tarafından belirtilen dosya kapatır.  
+ Geçerli arama tanıtıcı tarafından belirtilen dosyayı kapatır.  
   
 ```  
 virtual void CloseContext();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Arama tanıtıcısı geçerli değeri tarafından belirtilen dosya kapatır. Bu işlev varsayılan davranışı değiştirmek için geçersiz kılar.  
+ Arama tanıtıcısı geçerli değeri tarafından belirtilen dosyayı kapatır. Bu işlev varsayılan davranışı değiştirmek için geçersiz kılın.  
   
- Çağırmalısınız [FindFile](#findfile) veya ['larını](#findnextfile) geçerli arama tanıtıcısı almak için en az bir kez işlevleri. `FindFile` Ve `FindNextFile` işlevleri bir verilen adıyla eşleşen adlara sahip dosyaları bulmak için arama tanıtıcısı kullanın.  
+ Çağırmalısınız [FindFile](#findfile) veya ['larını](#findnextfile) geçerli arama tanıtıcısını almak için en az bir kez işlevleri. `FindFile` Ve `FindNextFile` işlevleri belirtilen adla eşleşen adlara sahip dosyaları bulmak için arama tanıtıcı kullanın.  
   
 ##  <a name="findfile"></a>  CFileFind::FindFile  
- Bir dosya aramayı açmak için bu üye işlevini çağırın.  
+ Dosya arama açmak için bu üye işlevini çağırın.  
   
 ```  
 virtual BOOL FindFile(
@@ -201,16 +201,16 @@ virtual BOOL FindFile(
   
 ### <a name="parameters"></a>Parametreler  
  *pstrName*  
- Bulunacak dosyasının adı içeren bir dize için bir işaretçi. Geçirirseniz **NULL** için *pstrName*, **FindFile** bir joker karakter mu (*.\*) arama.  
+ Bulmak için dosya adını içeren bir dize işaretçisi. NULL geçirirseniz verilen *pstrName*, `FindFile` mu bir joker karakter (*.\*) arama.  
   
  *dwUnused*  
- Yapmak için ayrılmış `FindFile` türetilen sınıflar ile çok biçimli. 0 olmalıdır.  
+ Yapmak için ayrılmış `FindFile` türetilen sınıflarla polimorfik. 0 olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0. Genişletilmiş hata bilgilerini için Win32 işlevini çağırın [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırdıktan sonra `FindFile` dosya aramaya başlamak için çağrı ['larını](#findnextfile) sonraki dosyaları alınamadı. Çağırmalısınız `FindNextFile` aşağıdaki öznitelik hiçbirini üye işlevleri çağırmadan önce en az bir kez:  
+ Arama sonra `FindFile` dosya aramaya başlamak için çağrı ['larını](#findnextfile) sonraki dosyaları almak için. Çağırmalısınız `FindNextFile` üye işlevleri aşağıdaki öznitelik birini çağırmadan önce en az bir kez:  
   
 - [GetCreationTime](#getcreationtime)  
   
@@ -251,20 +251,20 @@ virtual BOOL FindFile(
 - [MatchesMask](#matchesmask)  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::IsDirectory](#isdirectory).  
+  Örneğin bakın [CFileFind::IsDirectory](#isdirectory).  
   
 ##  <a name="findnextfile"></a>  CFileFind::FindNextFile  
- Önceki çağrısından dosya aramaya devam etmek için bu üye işlevini çağırın [FindFile](#findfile).  
+ Bir önceki çağrıya bir dosya aramaya devam etmek için bu üye işlevi çağrısı [FindFile](#findfile).  
   
 ```  
 virtual BOOL FindNextFile();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Daha fazla dosya varsa sıfır olmayan; sıfır bulunan dosya sonuncu dizininde olması veya bir hata oluştu. Genişletilmiş hata bilgilerini için Win32 işlevini çağırın [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360). Son dosya dizininde bulunan dosya ise veya eşleşme varsa dosyaları bulunabilir, `GetLastError` işlevi ERROR_NO_MORE_FILES döndürür.  
+ Daha fazla dosya yoksa sıfır; sıfır. dosya bulundu sonuncu dizininde olması veya bir hata oluştu. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360). Son dosya dizininde dosyası bulunamadı veya hiçbir eşleşen dosyaları bulunabilir, `GetLastError` ERROR_NO_MORE_FILES işlevi döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırmalısınız `FindNextFile` aşağıdaki öznitelik hiçbirini üye işlevleri çağırmadan önce en az bir kez:  
+ Çağırmalısınız `FindNextFile` üye işlevleri aşağıdaki öznitelik birini çağırmadan önce en az bir kez:  
   
 - [GetCreationTime](#getcreationtime)  
   
@@ -304,10 +304,10 @@ virtual BOOL FindNextFile();
   
 - [MatchesMask](#matchesmask)  
   
- `FindNextFile` Win32 işlevi sarmalar ['larını](http://msdn.microsoft.com/library/windows/desktop/aa364428).  
+ `FindNextFile` Win32 işlevini sarmalayan ['larını](http://msdn.microsoft.com/library/windows/desktop/aa364428).  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::IsDirectory](#isdirectory).  
+  Örneğin bakın [CFileFind::IsDirectory](#isdirectory).  
   
 ##  <a name="getcreationtime"></a>  CFileFind::GetCreationTime  
  Belirtilen dosyanın oluşturulduğu zaman almak için bu üye işlevini çağırın.  
@@ -319,43 +319,43 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
   
 ### <a name="parameters"></a>Parametreler  
  *pTimeStamp*  
- Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosyanın oluşturulduğu zaman içeren yapısı.  
+ Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı içeren dosyanın oluşturulduğu zaman.  
   
  *refTime*  
- Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
+ Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; işlem başarısız olursa 0. `GetCreationTime` yalnızca 0 döndürür ['larını](#findnextfile) bu bilgisayarda hiç çağrıldı `CFileFind` nesnesi.  
+ Başarılı olursa sıfır dışı; işlem başarısız olursa 0. `GetCreationTime` yalnızca 0 döndürür ['larını](#findnextfile) hiçbir zaman bu çağrıldıktan `CFileFind` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetCreationTime`.  
   
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğini kullanır. Bu işlev temel alınan dosya sistemi veya sunucunun saat özniteliği tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değeri döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işlemi sistemlerinde döndürülen bölge yerel makineye olan dosyasının bulunduğu süresi içinde'dır. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) daha fazla bilgi için API.  
+>  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işletim Sistemleri'nde döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API daha fazla bilgi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="getfilename"></a>  CFileFind::GetFileName  
- Bulunan dosyanın adını almak için bu üye işlevini çağırın.  
+ Bulunan dosya adını almak için bu üye işlevini çağırın.  
   
 ```  
 virtual CString GetFileName() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- En son bulunan dosya adı.  
+ Kısa bir süre önce bulunan dosya adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) GetFileName çağırmadan önce en az bir kez.  
   
- `GetFileName` üç biri `CFileFind` bazı dönüş dosya adının üye işlevleri. Aşağıdaki listede, üç ve bunların nasıl değişiklik açıklanmaktadır:  
+ `GetFileName` üç biri `CFileFind` üye işlevleri, dosya adının biçimi döndürür. Aşağıdaki liste, üç ve nasıl farklılık açıklanmaktadır:  
   
-- `GetFileName` Dosya adı uzantısı dahil, döndürür. Örneğin, arama `GetFileName` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya adı döndürür `myfile.txt`.  
+- `GetFileName` Dosya adı uzantısı dahil olmak üzere, döndürür. Örneğin, çağırma `GetFileName` dosyası hakkında bir kullanıcı iletisini oluşturmak için *c:\myhtml\myfile.txt* dosya adını döndürür *myfile.txt*.  
   
-- [GetFilePath](#getfilepath) dosyasının tam yolu döndürür. Örneğin, arama `GetFilePath` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya yolunu döndürür `c:\myhtml\myfile.txt`.  
+- [GetFilePath](#getfilepath) tüm dosya yolunu döndürür. Örneğin, çağırma `GetFilePath` dosyası hakkında bir kullanıcı iletisini oluşturmak için *c:\myhtml\myfile.txt* dosya yolunu döndürür *c:\myhtml\myfile.txt*.  
   
-- [GetFileTitle](#getfiletitle) dosya uzantısı hariç dosya adını döndürür. Örneğin, arama `GetFileTitle` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya başlığı döndürür `myfile`.  
+- [GetFileTitle](#getfiletitle) dosya uzantısı hariç dosya adını döndürür. Örneğin, çağırma `GetFileTitle` dosyası hakkında bir kullanıcı iletisini oluşturmak için *c:\myhtml\myfile.txt* dosyanın başlığı döndürür *myfile*.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#32](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_2.cpp)]  
@@ -373,40 +373,40 @@ virtual CString GetFilePath() const;
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetFilePath`.  
   
- `GetFilePath` üç biri `CFileFind` bazı dönüş dosya adının üye işlevleri. Aşağıdaki listede, üç ve bunların nasıl değişiklik açıklanmaktadır:  
+ `GetFilePath` üç biri `CFileFind` üye işlevleri, dosya adının biçimi döndürür. Aşağıdaki liste, üç ve nasıl farklılık açıklanmaktadır:  
   
-- [GetFileName](#getfilename) uzantısı dahil dosya adını döndürür. Örneğin, arama `GetFileName` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya adı döndürür `myfile.txt`.  
+- [GetFileName](#getfilename) uzantısı dahil olmak üzere dosya adını döndürür. Örneğin, çağırma `GetFileName` dosyası hakkında bir kullanıcı iletisini oluşturmak için *c:\myhtml\myfile.txt* dosya adını döndürür *myfile.txt*.  
   
-- `GetFilePath` dosyanın tüm yolunu döndürür. Örneğin, arama `GetFilePath` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya yolunu döndürür `c:\myhtml\myfile.txt`.  
+- `GetFilePath` Tüm dosya yolunu döndürür. Örneğin, çağırma `GetFilePath` dosyası hakkında bir kullanıcı iletisini oluşturmak için `c:\myhtml\myfile.txt` dosya yolunu döndürür `c:\myhtml\myfile.txt`.  
   
-- [GetFileTitle](#getfiletitle) dosya uzantısı hariç dosya adını döndürür. Örneğin, arama `GetFileTitle` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya başlığı döndürür `myfile`.  
+- [GetFileTitle](#getfiletitle) dosya uzantısı hariç dosya adını döndürür. Örneğin, çağırma `GetFileTitle` dosyası hakkında bir kullanıcı iletisini oluşturmak için *c:\myhtml\myfile.txt* dosyanın başlığı döndürür *myfile*.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetFileName](#getfilename).  
+  Örneğin bakın [CFileFind::GetFileName](#getfilename).  
   
 ##  <a name="getfiletitle"></a>  CFileFind::GetFileTitle  
- Bulunan dosya başlığı almak için bu üye işlevini çağırın.  
+ Bulunan dosyayı başlığını almak için bu üye işlevini çağırın.  
   
 ```  
 virtual CString GetFileTitle() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dosya başlığı.  
+ Dosyanın başlığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetFileTitle`.  
   
- `GetFileTitle` üç biri `CFileFind` bazı dönüş dosya adının üye işlevleri. Aşağıdaki listede, üç ve bunların nasıl değişiklik açıklanmaktadır:  
+ `GetFileTitle` üç biri `CFileFind` üye işlevleri, dosya adının biçimi döndürür. Aşağıdaki liste, üç ve nasıl farklılık açıklanmaktadır:  
   
-- [GetFileName](#getfilename) uzantısı dahil dosya adını döndürür. Örneğin, arama `GetFileName` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya adı döndürür `myfile.txt`.  
+- [GetFileName](#getfilename) uzantısı dahil olmak üzere dosya adını döndürür. Örneğin, çağırma `GetFileName` dosyası hakkında bir kullanıcı iletisini oluşturmak için *c:\myhtml\myfile.txt* dosya adını döndürür *myfile.txt*.  
   
-- [GetFilePath](#getfilepath) dosyasının tam yolu döndürür. Örneğin, arama `GetFilePath` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya yolunu döndürür `c:\myhtml\myfile.txt`.  
+- [GetFilePath](#getfilepath) tüm dosya yolunu döndürür. Örneğin, çağırma `GetFilePath` dosyası hakkında bir kullanıcı iletisini oluşturmak için *c:\myhtml\myfile.txt* dosya yolunu döndürür *c:\myhtml\myfile.txt*.  
   
-- `GetFileTitle` Dosya uzantısı hariç dosya adını döndürür. Örneğin, arama `GetFileTitle` dosyasını ilgili kullanıcı iletisi oluşturmak için `c:\myhtml\myfile.txt` dosya başlığı döndürür `myfile`.  
+- `GetFileTitle` Dosya uzantısı hariç dosya adını döndürür. Örneğin, çağırma `GetFileTitle` dosyası hakkında bir kullanıcı iletisini oluşturmak için *c:\myhtml\myfile.txt* dosyanın başlığı döndürür *myfile*.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetFileName](#getfilename).  
+  Örneğin bakın [CFileFind::GetFileName](#getfilename).  
   
 ##  <a name="getfileurl"></a>  CFileFind::GetFileURL  
  Belirtilen URL almak için bu üye işlevini çağırın.  
@@ -421,10 +421,10 @@ virtual CString GetFileURL() const;
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetFileURL`.  
   
- `GetFileURL` üye işlevine benzer [GetFilePath](#getfilepath), URL biçiminde döndürür dışında `file://path`. Örneğin, arama `GetFileURL` tam URL'sini almak için `myfile.txt` URL'yi döndürür `file://c:\myhtml\myfile.txt`.  
+ `GetFileURL` üye işlevine benzer [GetFilePath](#getfilepath)formda URL'yi döndürür, dışında `file://path`. Örneğin, çağırma `GetFileURL` tam URL'sini almak için *myfile.txt* URL'yi döndürür `file://c:\myhtml\myfile.txt`.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetFileName](#getfilename).  
+  Örneğin bakın [CFileFind::GetFileName](#getfilename).  
   
 ##  <a name="getlastaccesstime"></a>  CFileFind::GetLastAccessTime  
  Belirtilen dosya son erişilme zamanı almak için bu üye işlevini çağırın.  
@@ -436,25 +436,25 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
   
 ### <a name="parameters"></a>Parametreler  
  *refTime*  
- Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
+ Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.  
   
  *pTimeStamp*  
- Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosyaya son erişim saati içeren yapısı.  
+ Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) içeren dosyanın son erişildi zaman yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; işlem başarısız olursa 0. `GetLastAccessTime` yalnızca 0 döndürür ['larını](#findnextfile) bu bilgisayarda hiç çağrıldı `CFileFind` nesnesi.  
+ Başarılı olursa sıfır dışı; işlem başarısız olursa 0. `GetLastAccessTime` yalnızca 0 döndürür ['larını](#findnextfile) hiçbir zaman bu çağrıldıktan `CFileFind` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetLastAccessTime`.  
   
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğini kullanır. Bu işlev temel alınan dosya sistemi veya sunucunun saat özniteliği tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değeri döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işlemi sistemlerinde döndürülen bölge yerel makineye olan dosyasının bulunduğu süresi içinde'dır. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) daha fazla bilgi için API.  
+>  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işletim Sistemleri'nde döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API daha fazla bilgi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="getlastwritetime"></a>  CFileFind::GetLastWriteTime  
- Dosya değiştirildi en son ne zaman almak için bu üye işlevini çağırın.  
+ Dosya değiştirildi son zamanı almak için bu üye işlevini çağırın.  
   
 ```  
 virtual BOOL GetLastWriteTime(FILETIME* pTimeStamp) const;  
@@ -463,46 +463,46 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
   
 ### <a name="parameters"></a>Parametreler  
  *pTimeStamp*  
- Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) dosya için en son yazıldı saati içeren yapısı.  
+ Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) içeren dosyanın son kaydedilmişti zaman yapısı.  
   
  *refTime*  
- Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.  
+ Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; işlem başarısız olursa 0. `GetLastWriteTime` yalnızca 0 döndürür ['larını](#findnextfile) bu bilgisayarda hiç çağrıldı `CFileFind` nesnesi.  
+ Başarılı olursa sıfır dışı; işlem başarısız olursa 0. `GetLastWriteTime` yalnızca 0 döndürür ['larını](#findnextfile) hiçbir zaman bu çağrıldıktan `CFileFind` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetLastWriteTime`.  
   
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğini kullanır. Bu işlev temel alınan dosya sistemi veya sunucunun saat özniteliği tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değeri döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işlemi sistemlerinde döndürülen bölge yerel makineye olan dosyasının bulunduğu süresi içinde'dır. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) daha fazla bilgi için API.  
+>  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işletim Sistemleri'nde döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API daha fazla bilgi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="getlength"></a>  CFileFind::GetLength  
- Bulunan dosyanın bayt cinsinden uzunluğu almak için bu üye işlevini çağırın.  
+ Bulunan dosyasının bayt cinsinden uzunluğunu almak için bu üye işlevini çağırın.  
   
 ```  
 ULONGLONG GetLength() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bulunan dosyanın bayt cinsinden uzunluğu.  
+ Bulunan dosyasının bayt cinsinden uzunluğu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetLength`.  
   
- `GetLength` Win32 yapısı kullanır [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) almak ve bayt olarak dosya boyutu değerini döndürür.  
+ `GetLength` Win32 yapısını kullanır [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) alın ve bayt cinsinden boyutunu değerini döndürür.  
   
 > [!NOTE]
->  MFC 7.0 itibariyle `GetLength` 64-bit tamsayı türlerini destekler. Daha önce bu kitaplığı daha yeni sürümü ile oluşturulmuş var olan kodu kesilmesi uyarılarla neden olabilir.  
+>  MFC 7.0 itibarıyla `GetLength` 64-bit tamsayı türlerini destekler. Daha önce bu kitaplığı daha yeni sürümü ile oluşturulmuş var olan kod kesme uyarıların sonuçlanabilir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#33](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_3.cpp)]  
   
 ##  <a name="getroot"></a>  CFileFind::GetRoot  
- Kök dizininde bulunan dosya almak için bu üye işlevini çağırın.  
+ Bulunan dosyasının kök almak için bu üye işlevini çağırın.  
   
 ```  
 virtual CString GetRoot() const;  
@@ -514,30 +514,30 @@ virtual CString GetRoot() const;
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetRoot`.  
   
- Bu üye işlevi bir aramayı başlatmak için kullanılan yolu adı ve sürücü belirleyici döndürür. Örneğin, arama [FindFile](#findfile) ile `*.dat` sonuçlanır `GetRoot` boş bir dize döndürüyor. Bir yol gibi geçirme `c:\windows\system\*.dll`, **FindFile** sonuçları `GetRoot` döndüren `c:\windows\system\`.  
+ Bu üye işlevi, bir aramayı başlatmak için kullanılan yol adı ve sürücü tanımlayıcısı döndürür. Örneğin, çağırma [FindFile](#findfile) ile `*.dat` sonuçlanır `GetRoot` boş bir dizeyi döndürür. Bir yol gibi geçirme `c:\windows\system\*.dll`, `FindFile` sonuçları `GetRoot` döndüren `c:\windows\system\`.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetFileName](#getfilename).  
+  Örneğin bakın [CFileFind::GetFileName](#getfilename).  
   
 ##  <a name="isarchived"></a>  CFileFind::IsArchived  
- Bulunan dosya arşivlendi varsa belirlemek için bu üye işlevini çağırın.  
+ Bulunan dosyayı arşivlenir belirlemek için bu üye işlevini çağırın.  
   
 ```  
 BOOL IsArchived() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulamaların yedeklenmesini veya kaldırılan FILE_ATTRIBUTE_ARCHIVE, tanımlanan dosya özniteliği ile bir arşiv dosyasına işaretlemek [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı.  
+ Uygulamaların yedeklenmesini ya da FILE_ATTRIBUTE_ARCHIVE, tanımlanan dosya özniteliği kaldırılmış olan bir arşiv dosyasını işaretlemek [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı.  
   
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsArchived`.  
   
- Üye işlevine bakın [MatchesMask](#matchesmask) dosya öznitelikleri tam bir listesi.  
+ Üye işlevi görmek [MatchesMask](#matchesmask) dosya öznitelikleri tam listesi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="iscompressed"></a>  CFileFind::IsCompressed  
  Bulunan dosyayı sıkıştırılmış olup olmadığını belirlemek için bu üye işlevini çağırın.  
@@ -547,158 +547,158 @@ BOOL IsCompressed() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sıkıştırılmış bir dosya FILE_ATTRIBUTE_COMPRESSED ile işaretlendiğinden, dosya özniteliği tanımlanan [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Bir dosya için bu öznitelik, sıkıştırılmış dosyasındaki verilerin tümü gösterir. Bir dizin için bu öznitelik, sıkıştırma yeni oluşturulan dosya ve alt dizinler için varsayılan değer gösterir.  
+ Sıkıştırılmış bir dosya FILE_ATTRIBUTE_COMPRESSED ile işaretlenmiş, tanımlanan dosya özniteliği [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Bir dosya için bu öznitelik, sıkıştırılmış dosyasındaki verilerin tümünü gösterir. Bir dizin için bu öznitelik, sıkıştırma yeni oluşturulan dosyalar ve alt dizinler için varsayılan olduğunu gösterir.  
   
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsCompressed`.  
   
- Üye işlevine bakın [MatchesMask](#matchesmask) dosya öznitelikleri tam bir listesi.  
+ Üye işlevi görmek [MatchesMask](#matchesmask) dosya öznitelikleri tam listesi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="isdirectory"></a>  CFileFind::IsDirectory  
- Bulunan dosyanın bir dizin olup olmadığını belirlemek için bu üye işlevini çağırın.  
+ Dosyayı bir dizin olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
 BOOL IsDirectory() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dizini olan bir dosyayı dosya özniteliği tanımlanan FILE_ATTRIBUTE_DIRECTORY işaretlenmiş [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı.  
+ Bir dizine bir dosya FILE_ATTRIBUTE_DIRECTORY tanımlanan dosya özniteliği olarak ile işaretlenen [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı.  
   
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsDirectory`.  
   
- Üye işlevine bakın [MatchesMask](#matchesmask) dosya öznitelikleri tam bir listesi.  
+ Üye işlevi görmek [MatchesMask](#matchesmask) dosya öznitelikleri tam listesi için.  
   
 ### <a name="example"></a>Örnek  
- Bu küçük bir program C:\ sürücüsündeki her dizini recurses ve dizin adı yazdırır.  
+ Bu küçük bir program recurses C:\ sürücüsüne her dizin ve dizin adı yazdırır.  
   
  [!code-cpp[NVC_MFCFiles#34](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_4.cpp)]  
   
 ##  <a name="isdots"></a>  CFileFind::IsDots  
- Dosyalar ile yineleme sırasında için geçerli dizin ve üst dizin işaretçileri test etmek için bu üye işlevini çağırın.  
+ Geçerli dizin ve üst dizini işaretçileri için dosyaları aracılığıyla yineleme sırasında test etmek için bu üye işlevini çağırın.  
   
 ```  
 virtual BOOL IsDots() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bulunan dosyanın adı varsa, sıfır olmayan "."veya"..", bulunan dosyanın gerçekten bir dizin olduğunu gösterir. Aksi takdirde 0.  
+ Sıfır dışında bulunan dosya adı varsa "."veya"...", bulunan dosyanın aslında bir dizin olduğunu gösterir. Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsDots`.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::IsDirectory](#isdirectory).  
+  Örneğin bakın [CFileFind::IsDirectory](#isdirectory).  
   
 ##  <a name="ishidden"></a>  CFileFind::IsHidden  
- Bulunan dosyanın gizli olduğunu belirlemek için bu üye işlevini çağırın.  
+ Bulunan dosyayı gizli olduğunu belirlemek için bu üye işlevini çağırın.  
   
 ```  
 BOOL IsHidden() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dosya özniteliği ile FILE_ATTRIBUTE_HIDDEN işaretlenir, gizli dosya tanımlanan içinde [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Gizli bir dosya bir sıradan dizin listesinde yer almaz.  
+ Dosya özniteliği FILE_ATTRIBUTE_HIDDEN ile işaretlenmiş olduğundan, gizli dosyaları tanımlanan içinde [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Gizli bir dosya bir sıradan dizin listesinde bulunmaz.  
   
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsHidden`.  
   
- Üye işlevine bakın [MatchesMask](#matchesmask) dosya öznitelikleri tam bir listesi.  
+ Üye işlevi görmek [MatchesMask](#matchesmask) dosya öznitelikleri tam listesi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="isnormal"></a>  CFileFind::IsNormal  
- Bulunan dosyanın normal bir dosya olup olmadığını belirlemek için bu üye işlevini çağırın.  
+ Bulunan dosyayı normal bir dosya olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
 BOOL IsNormal() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dosya özniteliği FILE_ATTRIBUTE_NORMAL ile işaretlenmiş dosyaları tanımlanan içinde [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Normal bir dosya Ayarla özniteliğe sahip değildir. Diğer tüm dosya öznitelikleri bu özniteliği geçersiz kılar.  
+ FILE_ATTRIBUTE_NORMAL ile işaretlenmiş dosyaları, dosya özniteliği içinde tanımlanan [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Normal bir dosya kümesi özniteliklere sahip değildir. Diğer tüm dosya öznitelikleri, bu özniteliği geçersiz kılar.  
   
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsNormal`.  
   
- Üye işlevine bakın [MatchesMask](#matchesmask) dosya öznitelikleri tam bir listesi.  
+ Üye işlevi görmek [MatchesMask](#matchesmask) dosya öznitelikleri tam listesi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="isreadonly"></a>  CFileFind::IsReadOnly  
- Bulunan dosyanın salt okunur olup olmadığını belirlemek için bu üye işlevini çağırın.  
+ Bulunan dosya salt okunur olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
 BOOL IsReadOnly() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Salt okunur bir dosya FILE_ATTRIBUTE_READONLY ile işaretlendiğinden, dosya özniteliği tanımlanan [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Uygulamalar bu tür bir dosyayı okuyabilir, ancak yazma veya silin.  
+ Salt okunur bir dosya FILE_ATTRIBUTE_READONLY ile işaretlenmiş, tanımlanan dosya özniteliği [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Uygulama böyle bir dosya okuyabilir, ancak yazma veya silin.  
   
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsReadOnly`.  
   
- Üye işlevine bakın [MatchesMask](#matchesmask) dosya öznitelikleri tam bir listesi.  
+ Üye işlevi görmek [MatchesMask](#matchesmask) dosya öznitelikleri tam listesi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="issystem"></a>  CFileFind::IsSystem  
- Bulunan dosya bir sistem dosyası olup olmadığını belirlemek için bu üye işlevini çağırın.  
+ Dosyayı bir sistem dosyası olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
 BOOL IsSystem() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir sistem dosyası FILE_ATTRIBUTE_SYSTEM ile işaretlendiğinden, dosya özniteliği tanımlanan [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Bir sistem dosyasının parçası olan veya yalnızca işletim sistemi tarafından kullanılır.  
+ Bir sistem dosyası FILE_ATTRIBUTE_SYSTEM ile işaretlenmiş, tanımlanan dosya özniteliği [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Bir sistem dosyası parçası olan veya yalnızca işletim sistemi tarafından kullanılır.  
   
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsSystem`.  
   
- Üye işlevine bakın [MatchesMask](#matchesmask) dosya öznitelikleri tam bir listesi.  
+ Üye işlevi görmek [MatchesMask](#matchesmask) dosya öznitelikleri tam listesi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="istemporary"></a>  CFileFind::IsTemporary  
- Bulunan dosyanın geçici bir dosya olup olmadığını belirlemek için bu üye işlevini çağırın.  
+ Bulunan dosyayı geçici bir dosya olup olmadığını belirlemek için bu üye işlevini çağırın.  
   
 ```  
 BOOL IsTemporary() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçici bir dosya FILE_ATTRIBUTE_TEMPORARY ile işaretlendiğinden, dosya özniteliği tanımlanan [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Geçici bir dosya geçici depolama için kullanılır. Uygulamalar, yalnızca kesinlikle gerekli olduğunda veya dosyaya yazmak. Dosyanın verilerin çoğu dosya hemen silinecek medyaya temizlendi nedeni olmadan bellekte kalır.  
+ Geçici bir dosya FILE_ATTRIBUTE_TEMPORARY ile işaretlenmiş, tanımlanan dosya özniteliği [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı. Geçici bir dosya geçici depolaması için kullanılır. Uygulamalar, yalnızca kesinlikle gerekli olduğunda dosyaya yazmanız gerekir. Dosyanın verilerden en iyi şekilde dosyayı yakında silinecek ortam temizlendi nedeni olmadan bellekte kalır.  
   
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsTemporary`.  
   
- Üye işlevine bakın [MatchesMask](#matchesmask) dosya öznitelikleri tam bir listesi.  
+ Üye işlevi görmek [MatchesMask](#matchesmask) dosya öznitelikleri tam listesi için.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CFileFind::GetLength](#getlength).  
+  Örneğin bakın [CFileFind::GetLength](#getlength).  
   
 ##  <a name="m_ptm"></a>  CFileFind::m_pTM  
- İşaretçi bir `CAtlTransactionManager` nesnesi.  
+ İşaretçi bir `CAtlTransactionManager` nesne.  
   
 ```  
 CAtlTransactionManager* m_pTM;  
@@ -707,7 +707,7 @@ CAtlTransactionManager* m_pTM;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="matchesmask"></a>  CFileFind::MatchesMask  
- Dosya öznitelikleri bulunan dosyada test etmek için bu üye işlevini çağırın.  
+ Dosya öznitelikleri bulunan dosya çubuğunda test etmek için bu üye işlevini çağırın.  
   
 ```  
 virtual BOOL MatchesMask(DWORD dwMask) const;  
@@ -715,26 +715,26 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
   
 ### <a name="parameters"></a>Parametreler  
  *dwMask*  
- Tanımlanan bir veya daha fazla dosya özniteliklerini belirtir [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) bulunan dosya yapısı. Birden çok öznitelik aramak için Bitsel veya kullanın (&#124;) işleci. Aşağıdaki öznitelikler herhangi bir bileşimini kabul edilebilir:  
+ Tanımlanan bir veya daha fazla dosya özniteliklerini belirtir [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı, bulunan dosyanın. Birden çok özniteliklerini aramak için bit düzeyinde OR kullanın (&#124;) işleci. Aşağıdaki özniteliklerden herhangi bir birleşimini kabul edilebilir:  
   
--   FILE_ATTRIBUTE_ARCHIVE dosyayı bir arşiv dosyasıdır. Uygulamalar bu öznitelik yedekleme veya kaldırma için dosyaları için kullanın.  
+-   FILE_ATTRIBUTE_ARCHIVE dosyanın bir arşiv dosyasıdır. Uygulama, yedekleme veya kaldırma için dosyaları işaretlemek için bu öznitelik kullanın.  
   
--   Dosya veya dizin FILE_ATTRIBUTE_COMPRESSED sıkıştırılır. Bir dosya için bu sıkıştırılmış dosyasındaki verilerin tümü anlamına gelir. Bir dizin için bu sıkıştırma yeni oluşturulan dosya ve alt dizinler için varsayılan değer anlamına gelir.  
+-   Dosya veya dizin FILE_ATTRIBUTE_COMPRESSED sıkıştırılır. Bir dosya için bu sıkıştırılmış dosyasındaki verilerin tümünü anlamına gelir. Bir dizin için bu sıkıştırma yeni oluşturulan dosyalar ve alt dizinler için varsayılan anlamına gelir.  
   
--   FILE_ATTRIBUTE_DIRECTORY dosyayı bir dizindir.  
+-   FILE_ATTRIBUTE_DIRECTORY dosyanın bir dizindir.  
   
--   FILE_ATTRIBUTE_NORMAL dosya Ayarla özniteliğe sahip değildir. Bu öznitelik, yalnızca tek başına kullanıldığında geçerlidir. Diğer tüm dosya öznitelikleri bu özniteliği geçersiz kılar.  
+-   FILE_ATTRIBUTE_NORMAL dosya kümesi özniteliklere sahip değildir. Bu öznitelik, yalnızca tek başına kullanıldığında geçerlidir. Diğer tüm dosya öznitelikleri, bu özniteliği geçersiz kılar.  
   
--   Dosya gizli FILE_ATTRIBUTE_HIDDEN. Bu bir sıradan dizin listesinde değil eklenir.  
+-   Soubor je skrytý FILE_ATTRIBUTE_HIDDEN. Bir sıradan bir dizin listesindeki dahil edilmemesi aittir.  
   
--   FILE_ATTRIBUTE_READONLY dosya salt okunur. Uygulamaların dosyayı okuma ancak olamaz yazma veya silin.  
+-   FILE_ATTRIBUTE_READONLY dosyanın salt okunur. Uygulamaların dosya okuyabilen ancak olamaz yazma veya silin.  
   
--   Dosya parçası olan veya yalnızca işletim sistemi tarafından kullanılan FILE_ATTRIBUTE_SYSTEM.  
+-   FILE_ATTRIBUTE_SYSTEM dosya parçası veya özel olarak işletim sistemi tarafından kullanılır.  
   
--   Dosya geçici depolama için kullanılan FILE_ATTRIBUTE_TEMPORARY. Uygulamalar, yalnızca kesinlikle gerekli olduğunda veya dosyaya yazmak. Dosyanın verilerin çoğu dosya hemen silinecek medyaya temizlendi nedeni olmadan bellekte kalır.  
+-   FILE_ATTRIBUTE_TEMPORARY dosyayı geçici depolama için kullanılır. Uygulamalar, yalnızca kesinlikle gerekli olduğunda dosyaya yazmanız gerekir. Dosyanın verilerden en iyi şekilde dosyayı yakında silinecek ortam temizlendi nedeni olmadan bellekte kalır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0. Genişletilmiş hata bilgilerini için Win32 işlevini çağırın [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `MatchesMask`.  
@@ -747,6 +747,6 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CFtpFileFind sınıfı](../../mfc/reference/cftpfilefind-class.md)   
  [CGopherFileFind sınıfı](../../mfc/reference/cgopherfilefind-class.md)   
- [CInternetFile sınıfı](../../mfc/reference/cinternetfile-class.md)   
+ [Cınternetfile sınıfı](../../mfc/reference/cinternetfile-class.md)   
  [CGopherFile sınıfı](../../mfc/reference/cgopherfile-class.md)   
  [CHttpFile Sınıfı](../../mfc/reference/chttpfile-class.md)

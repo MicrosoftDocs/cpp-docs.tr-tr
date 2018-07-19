@@ -17,16 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d48c373f0753a787aa8e59c7ead5a8f94bfc7846
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 813c90db941f2eb760c4e3a36d15eca64a293bec
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955471"
 ---
 # <a name="multiple-base-classes"></a>Birden Çok Taban Sınıfı
-Bölümünde açıklandığı gibi [birden çok devralma](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), bir sınıfın birden fazla temel sınıfından türetilmiş olmalıdır. (Burada türetilmiş sınıfları birden fazla temel sınıfından) birden çok devralmayı modelinde, temel sınıfları kullanılarak belirtilir *ana listesi* dilbilgisi öğesi. Örneğin, sınıf bildirimi `CollectionOfBook`, türetilmiş `Collection` ve `Book`, belirtilebilir:  
+Birden fazla temel sınıftan türetilmiş bir sınıf. (Burada sınıflar türetilen birden fazla temel sınıftan) bir birden çok devralma modeli temel sınıflar kullanılarak belirtilen *temel-liste* dilbilgisi öğesi. Örneğin, sınıf bildirimi `CollectionOfBook`, türetilmiş `Collection` ve `Book`, belirtilebilir:  
   
-```  
+```cpp 
 // deriv_MultipleBaseClasses.cpp  
 // compile with: /LD  
 class Collection {  
@@ -37,16 +38,16 @@ class CollectionOfBook : public Book, public Collection {
 };  
 ```  
   
- Temel sınıflar belirtilen sırada Kurucular ve Yıkıcılar burada çağrılan belirli durumlarda dışındaki önemli değildir. Bu durumlarda, temel sınıflar belirtilen sırada aşağıdakiler etkiler:  
+ Temel sınıflar belirtildiği sırayı burada oluşturucular ve Yıkıcılar çağrılmadan belirli durumlarda dışındaki önemli değil. Bu durumlarda, temel sınıflar belirtildiği sırayı aşağıdakiler etkiler:  
   
--   Hangi başlatma Oluşturucusu gerçekleşmesi tarafından sırayla. Kodunuzu kullanır, `Book` kısmı `CollectionOfBook` önce başlatılması için `Collection` belirtimi sırasını bölümüdür önemli. Başlatma sınıfları belirtilen sırada kurulur *ana listesi*.  
+-   Oluşturucu gerçekleştiğinde tarafından hangi başlatma sırası. Kodunuzu dayanıyorsa `Book` kısmı `CollectionOfBook` önce başlatılması için `Collection` bölümü belirtimi sırası önemlidir. Başlatma sınıfları, belirtilen sırada gerçekleşir *temel-liste*.  
   
--   Temizleme Yıkıcılar çağrılan sırası. Yeniden, belirli bir sınıfın "bölümünü" diğer bölümü bozulduğunda mevcut olması gerekir, sıra önemlidir. Yıkıcılar adında ters sırada belirtilen sınıfların *ana listesi*.  
+-   Temizleme yok edicinin çağrılmadığına sırası. Yine, belirli bir sınıfın "bölümüne" diğer bölümü yok ediliyorken mevcut olması gerekir, bu sıra önemlidir. Belirtilen sınıfların ters sırada yok ediciler çağrılır *temel-liste*.  
   
     > [!NOTE]
-    >  Temel sınıflar belirtimi sırasını sınıfı bellek düzenini etkileyebilir. Temel üyeler bellekte terabayt temel programlama karar yapmayın.  
+    >  Temel sınıfların belirtimi sırası sınıfının bellek düzeni etkileyebilir. Bellekte temel üye bazında tabanlı bir programlama kararlar vermeyin.  
   
- Belirtirken *ana listesi*, aynı sınıf adı birden çok kez belirtilemez. Ancak, bir sınıf türetilmiş bir sınıf dolaylı bir tabanına birden çok kez olması mümkündür.  
+ Belirtirken *temel-liste*, aynı sınıf adı birden çok kez belirtilemez. Ancak, bir sınıf birden çok kez dolaylı bir temel türetilmiş bir sınıf olması mümkündür.  
   
 ## <a name="virtual-base-classes"></a>Sanal temel sınıflar  
  Bir sınıf türetilmiş bir sınıfın bir kereden fazla dolaylı temel sınıfı olabileceği için C++ bu temel sınıfların çalışma biçimini iyileştiren bir yöntem sağlar. Sanal temel sınıflar, alandan kazanmak ve birden fazla devralma kullanan sınıf hiyerarşilerinde belirsizliklerden kaçınmak için bir yol sunar.  
@@ -55,21 +56,21 @@ class CollectionOfBook : public Book, public Collection {
   
  Temel sınıf sanal bir temel olarak belirtildiğinde, veri üyeleri çoğaltılmadan bir kereden fazla dolaylı temel olarak görev alabilir. Veri üyelerinin tek bir kopyası, onu sanal temel olarak kullanan tüm temel sınıflar tarafından paylaşılır.  
   
- Sanal bir temel sınıf bildirirken **sanal** anahtar sözcüğü türetilmiş sınıflar temel listelerinde görünür.  
+ Sanal bir temel sınıf bildirilirken **sanal** anahtar sözcüğü türetilmiş sınıfların temel listelerinde görünür.  
   
  Sınıf hiyerarşisini, sanal bir öğle yemeği çizgi grafiğini gösteren aşağıdaki şekilde görebilirsiniz.  
   
- ![Benzetimli Yemeği Çizgi grafiği](../cpp/media/vc38xp1.gif "vc38XP1")  
+ ![Sanal öğle yemeği çizgi grafiği](../cpp/media/vc38xp1.gif "vc38XP1")  
 Sanal Öğle Yemeği Çizgi Grafiği  
   
  Şekilde, `Queue` hem `CashierQueue` hem de `LunchQueue` için temel sınıftır. Ancak, iki sınıf da `LunchCashierQueue` oluşturacak şekilde birleştirildiğinde, aşağıdaki sorun ortaya çıkar: yeni sınıf biri `Queue` öğesinden, diğeri `CashierQueue` öğesinden alınan `LunchQueue` türünde iki alt nesne içerir. Aşağıdaki şekilde, kavramsal bellek düzeni (gerçek bellek düzeni iyileştirilebilir) gösterilmektedir.  
   
- ![Benzetimli Yemeği&#45;çizgi nesnesi](../cpp/media/vc38xp2.gif "vc38XP2")  
+ ![Sanal öğle yemeği&#45;çizgi grafiği nesnesi](../cpp/media/vc38xp2.gif "vc38XP2")  
 Sanal Öğle Yemeği Çizgi Grafiği Nesnesi  
   
  `Queue` nesnesinde iki `LunchCashierQueue` alt nesnesi olduğuna dikkat edin. Aşağıdaki kod, `Queue` öğesinin sanal bir temel sınıf olduğunu bildirir:  
   
-```  
+```cpp 
 // deriv_VirtualBaseClasses.cpp  
 // compile with: /LD  
 class Queue {};  
@@ -78,19 +79,19 @@ class LunchQueue : virtual public Queue {};
 class LunchCashierQueue : public LunchQueue, public CashierQueue {};  
 ```  
   
- `virtual` anahtar sözcüğü, `Queue` alt nesnesinin yalnızca bir kopyasının dahil edilmesini sağlar (bkz. aşağıdaki şekil).  
+ **Sanal** anahtar sözcüğü, yalnızca bir alt nesneye kopyasını sağlar `Queue` dahildir (Aşağıdaki şekle bakın).  
   
- ![Benzetimli Yemeği&#45;çizgi nesnesi, sanal taban sınıflar](../cpp/media/vc38xp3.gif "vc38XP3")  
+ ![Sanal öğle yemeği&#45;çizgi grafiği nesnesi, sanal temel sınıflar](../cpp/media/vc38xp3.gif "vc38XP3")  
 Sanal Temel Sınıflarla Sanal Öğle Yemeği Çizgi Grafiği Nesnesi  
   
  Bir sınıfta, belirli bir türden sanal bileşen ve sanal olmayan bileşen olabilir. Bu, aşağıdaki şekilde gösterilen koşullarda ortaya çıkar.  
   
- ![Bir sınıf sanal ve sanal olmayan bileşenlerinin](../cpp/media/vc38xp4.gif "vc38XP4")  
+ ![Bir sınıfın sanal ve sanal olmayan bileşenleri](../cpp/media/vc38xp4.gif "vc38XP4")  
 Aynı Sınıfın Sanal ve Sanal Olmayan Bileşenleri  
   
  Şekilde, `CashierQueue` ve `LunchQueue` sanal temel sınıf olarak `Queue` kullanmaktadır. Ancak `TakeoutQueue`, sanal temel sınıf olarak değil, temel sınıf olarak `Queue` belirtir. Bu nedenle, `LunchTakeoutCashierQueue``Queue` türünden iki alt nesneye sahiptir: biri `LunchCashierQueue` içeren devralma yolundan, diğeri ise `TakeoutQueue` içeren yoldan alınmıştır. Bu, aşağıdaki şekilde gösterilmiştir:  
   
- ![Nesne düzeni'nde sanal olan ve olmayan Devralmanın](../cpp/media/vc38xp5.gif "vc38XP5")  
+ ![Nesne düzeni sanal ve sanal olmayan devralma](../cpp/media/vc38xp5.gif "vc38XP5")  
 Sanal ve Sanal Olmayan Devralma ile Nesne Düzeni  
   
 > [!NOTE]
@@ -98,20 +99,20 @@ Sanal ve Sanal Olmayan Devralma ile Nesne Düzeni
   
  Türetilmiş bir sınıf sanal bir temel sınıftan devraldığı sanal bir işlemi geçersiz kılırsa ve türetilmiş temel sınıfın oluşturucusu veya yıkıcısı sanal temel sınıfa yönelik bir işaretçiyi kullanarak bu işlevi çağırırsa, derleyici sanal temellere sahip sınıflara ek gizli "vtordisk" alanları sunabilir. /vd0 derleyici seçeneği, gizli vtordisp oluşturucu/yıkıcı yer değiştirme üyesinin eklenmesini engeller. Varsayılan olan /vd1 derleyici seçeneği, gerekli olduğunda bunları etkinleştirir. Yalnızca tüm sınıf oluşturucularının ve yıkıcılarının sanal olarak sanal işlevleri çağırdığından eminseniz vtordisps'i kapatın.  
   
- /vd derleyici seçeneği, tüm derleme modülünü etkiler. Kullanım **vtordisp** pragma bastırmak ve sınıfı tarafından sınıfı temelinde vtordisp alanları yeniden etkinleştirmek için:  
+ /vd derleyici seçeneği, tüm derleme modülünü etkiler. Kullanım **vtordisp** pragma engellemek ve ardından vtordisp alanlarını sınıf sınıf olarak yeniden etkinleştirmek için:  
   
-```  
+```cpp 
 #pragma vtordisp( off )  
 class GetReal : virtual public { ... };  
-#pragma vtordisp( on )  
+\#pragma vtordisp( on )  
 ```  
   
 ## <a name="name-ambiguities"></a>Ad belirsizlikleri  
- Birden çok devralma olasılığı birden fazla yol boyunca devralınan adları için tanıtır. Bu yollar boyunca sınıf üyesi adlarının benzersiz olması gerekmeyen. Bu ad çakışmalarını "belirsizlikleri." olarak adlandırılır  
+ Birden çok devralma birden fazla yol boyunca devralınacak adları için olasılık sunar. Sınıf üyesi adları bu yolları boyunca mutlaka özgü değildir. Bu ad çakışmalarını "belirsizlikleri." olarak adlandırılır  
   
- Sınıf üyesine başvuruyor herhangi bir ifade anlaşılır bir başvuru yapmanız gerekir. Aşağıdaki örnek, nasıl belirsizlikleri geliştirmek gösterir:  
+ Bir sınıf üyesine başvuran herhangi bir ifade, belirsiz bir başvuru yapmanız gerekir. Aşağıdaki örnek nasıl belirsizlikleri geliştirme gösterir:  
   
-```  
+```cpp 
 // deriv_NameAmbiguities.cpp  
 // compile with: /LD  
 // Declare two base classes, A and B.  
@@ -132,41 +133,41 @@ public:
 class C : public A, public B {};  
 ```  
   
- Belirsiz olduğundan aşağıdaki belirsiz gibi önceki sınıf bildirimleri verildiğinde, kod olup olmadığını `b` başvurduğu `b` içinde `A` veya `B`:  
+ Belirsiz olduğundan aşağıdaki belirsiz olduğu gibi önceki sınıf bildirimleri verildiğinde, kod olup olmadığını `b` başvurduğu `b` içinde `A` veya `B`:  
   
-```  
+```cpp 
 C *pc = new C;  
   
 pc->b();  
 ```  
   
- Önceki örneği göz önünde bulundurun. Çünkü adı `a` iki sınıf üyesi `A` ve sınıf `B`, derleyici, keşfedilir `a` çağrılacak işlev belirler. Üye erişimi olan birden fazla işlevi, nesne, türü veya numaralandırıcı başvurduğundan belirsiz.  
+ Yukarıdaki örnekte göz önünde bulundurun. Çünkü adı `a` iki sınıf üyesi `A` ve sınıf `B`, derleyicinin hangi ayrım `a` çağrılacak işlev belirler. Birden fazla işlev, nesne, türü veya numaralandırıcı başvuruda bulunuyorsa, üye erişimi belirsiz.  
   
  Derleyici, bu sırada testleri gerçekleştirerek belirsizlikleri algılar:  
   
-1.  Adı (yalnızca açıklandığı gibi) belirsiz ise, bir hata iletisi oluşturulur.  
+1.  Adına erişim (yalnızca açıklandığı gibi) belirsiz ise, bir hata iletisi oluşturulur.  
   
-2.  Aşırı yüklenen işlevler anlaşılır olması durumunda, bunlar çözümlenir.
+2.  Bunlar, aşırı yüklenmiş işlevler belirsiz ise çözümlenir.
   
-3.  Üye erişimi izni adına erişimi ihlal edilirse, bir hata iletisi oluşturulur. (Daha fazla bilgi için bkz: [üye erişim denetimi](../cpp/member-access-control-cpp.md).)  
+3.  Üye erişim izni adına erişim ihlal edilirse, bir hata iletisi oluşturulur. (Daha fazla bilgi için [üye erişim denetimi](../cpp/member-access-control-cpp.md).)  
   
- Bir ifadenin bir belirsizlik devralma yoluyla vermediğinde adıyla söz konusu sınıf adını niteleme tarafından el ile çözebilirsiniz. Önceki örnekte düzgün hiçbir belirsizlikleri ile derleme yapmak için kod gibi kullanın:  
+ Bir ifade bir belirsizlik devralma yoluyla vermediğinde adıyla söz konusu sınıfın adını nitelendirme tarafından el ile çözebilirsiniz. Önceki örnekte hiçbir belirsizlikleri ile düzgün şekilde derleme yapmak için kodu gibi kullanın:  
   
-```  
+```cpp 
 C *pc = new C;  
   
 pc->B::a();  
 ```  
   
 > [!NOTE]
->  Zaman `C` bildirilmiş hatalara neden olanağına sahip olduğunda `B` kapsamında başvurulan `C`. Hata, ancak, nitelenmemiş referansı kadar verilmez `B` gerçekten yapılır `C`kullanıcının kapsam.  
+>  Zaman `C` bildirildiğinde, hatalara neden olanağına sahip olduğunda `B` kapsamı içinde başvurulan `C`. Hata, Bununla birlikte, nitelenmemiş bir başvuru kadar verilen `B` gerçekten gerçekleştirilir `C`kullanıcının kapsam.  
   
 ### <a name="dominance"></a>Baskınlık  
  Devralma grafiğiyle birden fazla ada (işlev, nesne veya numaralandırma) ulaşılabilir. Bu gibi durumlar, sanal olmayan temel sınıflarla belirsiz olarak kabul edilir. Adlardan biri diğerinden "baskın olmadığı" sürece sanal temel sınıflarla da belirsiz olurlar.  
   
  Bir ad, iki sınıfta da tanımlanırsa ve bir sınıf diğerinden türetilirse diğer addan baskın olur. Baskın ad türetilmiş sınıftaki addır; bu ad aşağıdaki örnekte gösterildiği gibi bir belirsizliğin ortaya çıkabileceği durumlarda kullanılır:  
   
-```  
+```cpp 
 // deriv_Dominance.cpp  
 // compile with: /LD  
 class A {  
@@ -188,20 +189,20 @@ public:
 ```  
   
 ### <a name="ambiguous-conversions"></a>Belirsiz dönüşümler  
- Açık ve kapalı dönüşümleri işaretçileri veya sınıf türleri başvurular belirsizliğe neden olabilir. Sonraki şekilde, temel sınıf olarak belirsiz dönüştürme işaretçileri aşağıda gösterilmiştir:  
+ Açık ve örtük dönüştürmelerine işaretçileri veya başvuruları sınıf türleri için belirsizliğe neden olabilir. Sonraki şekilde, temel sınıflar, belirsiz dönüştürme işaretçileri aşağıda gösterilmiştir:  
   
--   Bir nesne türü bildirimi `D`.  
+-   Bir nesne türü bildirimini `D`.  
   
--   Address-of işleci uygulama etkisini (**&**), bu nesneye. Address-of işleci her zaman nesnenin temel adres sağlayan unutmayın.  
+-   Address-of işlecini etkisi (**&**), bu nesneye. Address-of işleci nesnenin temel adresi her zaman kaynakları unutmayın.  
   
--   Address-of işleci temel sınıf türü kullanılarak edinilen işaretçi açıkça dönüştürme etkisini `A`. Bu nesne türü için adres coercing Not `A*` her zaman derleyici yeterli bilgileri türü ile hangi alt nesne sağlamaz `A` seçmek için; bu durumda, iki alt nesnelerinin mevcut.  
+-   Açıkça temel sınıf türüne address-of işleci kullanılarak elde edilen işaretçi dönüştürme etkisini `A`. Coercing türüne nesnenin adresini Not `A*` her zaman derleyici yetecek kadar bilgi türü için hangi alt nesneye sağlamaz `A` seçmek için; bu durumda, iki alt nesne yok.  
   
- ![Temel sınıflar için işaretçileri belirsiz dönüştürülmesi](../cpp/media/vc38xt1.gif "vc38XT1")  
-Belirsiz işaretçileri dönüştürmeye temel sınıflar  
+ ![Temel sınıflar için işaretçiler belirsiz dönüştürme](../cpp/media/vc38xt1.gif "vc38XT1")  
+Temel sınıflar için işaretçiler belirsiz dönüştürme  
   
- Türüne dönüştürme `A*` (işaretçi `A`) hangi alt nesne türü keşfedilir şekilde olduğundan belirsiz `A` doğru olduğundan. Belirsizliği açıkça şu şekilde kullanmak için ortalama hangi alt nesne belirterek önleyebilirsiniz dikkat edin:  
+ Türüne dönüştürme `A*` (işaretçiye `A`) türünde hangi alt nesneye ayrım mümkün değildir çünkü belirsiz `A` doğru olduğundan. Not: şu şekilde kullanmak için ortalama hangi alt nesneye açıkça belirterek belirsizlik kaçınabilirsiniz  
   
-```  
+```cpp 
 (A *)(B *)&d       // Use B subobject.  
 (A *)(C *)&d       // Use C subobject.  
 ```  
@@ -211,8 +212,8 @@ Belirsiz işaretçileri dönüştürmeye temel sınıflar
   
  Aşağıdaki şekilde, nesnelerin sanal ve sanal olmayan devralma ile nasıl oluşturulduğu gösterilmektedir.  
   
- ![Sanal türetme ve olmayan türetme](../cpp/media/vc38xr1.gif "vc38XR1")  
-Sanal vs. Olmayan türetme  
+ ![Sanal türetme ve sanal olmayan türetme](../cpp/media/vc38xr1.gif "vc38XR1")  
+Sanal vs. Sanal olmayan türetme  
   
  Şekilde, sanal olmayan temel sınıflar yoluyla `A` sınıfının her hangi bir üyesine erişmek belirsizliğe neden olur; derleyicide, `B` ile ilişkili alt nesnenin mi yoksa `C` ile ilişkili alt nesnenin mi kullanılacağını açıklayan herhangi bir bilgi yoktur. Ancak, bir sanal temel sınıf olarak `A` belirtildiğinde, hangi alt nesneye erişildiği sorun olmaz.  
   

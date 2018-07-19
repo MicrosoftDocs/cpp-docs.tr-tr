@@ -1,5 +1,5 @@
 ---
-title: NOKTASI Structure1 | Microsoft Docs
+title: POINT yapısı1 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a31af23b336e5a911b62d23d0cce2795aa66f0f9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: de172814db04ab8d057f84a29ce505896f89adc9
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371911"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37335340"
 ---
-# <a name="point-structure1"></a>NOKTASI Structure1
-**Noktası** yapısını tanımlar x*-* noktasının y koordinatları.  
+# <a name="point-structure1"></a>POINT yapısı1
+`POINT` Yapısını tanımlayan x*-* ve bir noktanın y koordinatları.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,7 +42,7 @@ typedef struct tagPOINT {
  Bir noktasının x koordinatını belirtir.  
   
  *Y*  
- Bir noktasının y koordinatını belirtir.  
+ Bir noktanın y koordinatını belirtir.  
   
 ## <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#37](../../mfc/codesnippet/cpp/point-structure1_1.cpp)]  
@@ -51,5 +51,5 @@ typedef struct tagPOINT {
  **Başlık:** windef.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CPoint Sınıfı](../../atl-mfc-shared/reference/cpoint-class.md)

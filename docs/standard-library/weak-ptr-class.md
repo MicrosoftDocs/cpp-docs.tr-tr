@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03cd10d3efac16521cf826f3d9081ec533b9abec
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5817d44657fa429bdce19f8641255d7db630eac7
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861785"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954870"
 ---
 # <a name="weakptr-class"></a>weak_ptr Sınıfı
 
@@ -77,17 +77,18 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Zayıf işaretçiyi tarafından denetlenen türü.
+*Ty*  
+ Zayıf işaretçiyle kontrol edilen tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir veya daha fazla yönetilen bir kaynağa işaret eden bir nesne şablonu sınıf tanımlar [shared_ptr sınıfı](../standard-library/shared-ptr-class.md) nesneleri. `weak_ptr` Bir kaynak noktasına nesneleri kaynağın başvuru sayısı etkilemez. Bu nedenle, son `shared_ptr` bu kaynağı yöneten nesnesi yok kaynak olsa bile serbest `weak_ptr` o kaynağa işaret eden nesneler. Bu, veri yapılarını Döngülerde kaçınmak için önemlidir.
+Şablon sınıfı bir veya daha fazla yönetilen bir kaynağa işaret eden bir nesneyi tanımlayan [shared_ptr sınıfı](../standard-library/shared-ptr-class.md) nesneleri. `weak_ptr` Kaynağa işaret eden nesneler kaynağın başvuru sayısını etkilemez. Bu nedenle, son `shared_ptr` yönetir, kaynak nesnesi yok edildiğinde olsa bile kaynak boşaltılacak `weak_ptr` o kaynağa işaret eden nesneleri. Bu, veri yapılarını Döngülerde kaçınmak için gereklidir.
 
-A `weak_ptr` nesne bu olacak oluşturulan varsa bir kaynağa işaret eden bir `shared_ptr` onu olacak oluşturulan varsa, o kaynağına sahip nesne bir `weak_ptr` bu kaynağa işaret nesnesi ya da bu kaynak için ile atanmışsa [ operator =](#op_eq). A `weak_ptr` nesne işaret kaynak doğrudan erişim sağlamaz. Kaynak kullanması gereken kodu yapar böylece aracılığıyla bir `shared_ptr` üye işlevini çağırarak oluşturulan, kaynağın sahibi nesne [kilit](#lock). A `weak_ptr` nesne sona erdi işaret kaynak çünkü serbest bırakılmış olduğunda tüm `shared_ptr` kaynak sahibi nesneler yok. Çağırma `lock` üzerinde bir `weak_ptr` süresi doldu nesnesi boş shared_ptr nesnesi oluşturur.
+A `weak_ptr` nesne öğesinden oluşturulmuşsa bir kaynağa işaret eden bir `shared_ptr` öğesinden oluşturulmuşsa, o kaynağına sahip olan bir nesne bir `weak_ptr` konusu kaynağı işaret eden bir nesne veya bunu bu kaynağa atanmışsa [ İşleç =](#op_eq). A `weak_ptr` nesneyi işaret kaynağa doğrudan erişim sağlamaz. Kaynak kullanması gereken kod vermez böylece aracılığıyla bir `shared_ptr` üye işlevini çağırarak oluşturulan, bu kaynağa sahip nesne [kilit](#lock). A `weak_ptr` nesneyi işaret kaynak çünkü serbest bırakılmış olduğunda doldu tüm `shared_ptr` kaynağa sahip nesneler yok. Çağırma `lock` üzerinde bir `weak_ptr` doldu nesnesi boş shared_ptr nesneyi oluşturur.
 
-Boş weak_ptr nesne için herhangi bir kaynağa işaret etmiyor ve hiçbir denetim bloğu sahiptir. Üye işlevini `lock` boş shared_ptr nesneyi döndürür.
+Boş weak_ptr nesnenin herhangi bir kaynakta işaret etmiyor ve denetim bloğu yoktur. Onun üye işlevini `lock` boş shared_ptr nesneyi döndürür.
 
-İki veya daha fazla kaynak tarafından denetlenen bir döngü oluşur `shared_ptr` nesneleri tutun birbirini başvuran `shared_ptr` nesneleri. Örneğin, döngüsel bir bağlantılı listesi üç öğeye sahip bir baş düğüm içeriyor `N0`; bu düğüme tutan bir `shared_ptr` bir sonraki düğüme sahip nesnesine `N1`; bu düğüme tutan bir `shared_ptr` bir sonraki düğüme sahip nesne `N2`; bu düğüm, kapatma, ayrı tutma bir `shared_ptr` baş düğümüne sahip nesnesine `N0`, döngü kapatma. Bu durumda, başvuru sayıları hiçbiri hiç sıfır olur ve döngüsü düğümlerin serbest. Son düğümü döngüsü ortadan kaldırmak için `N2` tutun bir `weak_ptr` gösteren nesne `N0` yerine bir `shared_ptr` nesnesi. Bu yana `weak_ptr` nesne kendi değil `N0` bu etkilemez `N0`'s başvuru sayısı ve programın son başvuru baş düğümüne bozulduğunda düğümleri listesinde de yok edilir.
+İki veya daha fazla kaynak tarafından denetlenen bir döngü gerçekleşir `shared_ptr` nesneleri depolamak birbirini başvuran `shared_ptr` nesneleri. Örneğin, üç öğelerle döngüsel bir bağlantılı liste bir baş düğüm vardır `N0`; düğüm tutan bir `shared_ptr` sonraki bir düğümün sahip olduğu nesne `N1`; düğüm tutan bir `shared_ptr` sonraki bir düğümün sahip olduğu nesne `N2`; düğüm, kapatma, ayrı tutma bir `shared_ptr` , baş düğümün sahip olduğu nesne `N0`, kapatma döngüsü. Bu durumda, başvuru sayılarını hiçbiri hiç olmadığı kadar sıfır olur ve düğümleri döngüsünde açılmayacaktır. Döngü, son düğümünü kaldırmak için `N2` tutmak zorunda bir `weak_ptr` işaret eden bir nesne `N0` yerine bir `shared_ptr` nesne. Bu yana `weak_ptr` nesnenin sahibi olmadığı `N0` bu etkilemez `N0`ait başvuru sayısı ve baş düğüme programın son başvuru kaldırıldığında listedeki düğümleri de edileceği.
 
 ## <a name="members"></a>Üyeler
 
@@ -95,25 +96,25 @@ Boş weak_ptr nesne için herhangi bir kaynağa işaret etmiyor ve hiçbir denet
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[weak_ptr](#weak_ptr)|Oluşturan bir `weak_ptr`.|
+|[weak_ptr](#weak_ptr)|Oluşturur bir `weak_ptr`.|
 
 ### <a name="methods"></a>Yöntemler
 
 |||
 |-|-|
 |[element_type](#element_type)|Öğe türü.|
-|[Süresi dolmuş](#expired)|Testleri sahipliği sona erdi.|
-|[lock](#lock)|Özel bir kaynak sahipliğini alır.|
-|[owner_before](#owner_before)|Döndürür `true` bu `weak_ptr` önce sıralanır (veya küçüktür) sağlanan işaretçi.|
-|[Sıfırla](#reset)|Sürümler kaynak sahibi.|
-|[Değiştirme](#swap)|İki değiştirir `weak_ptr` nesneleri.|
-|[use_count](#use_count)|Sayıları sayısı atanan `shared_ptr` nesneleri.|
+|[Süresi doldu](#expired)|Test sahipliği süresi doldu.|
+|[lock](#lock)|Özel bir kaynağın sahipliğini alır.|
+|[owner_before](#owner_before)|Döndürür **true** bu `weak_ptr` önceyse (veya küçüktür) sağlanan işaretçi.|
+|[Sıfırlama](#reset)|Yayınları kaynak sahibi.|
+|[değiştirme](#swap)|İki değiştirir `weak_ptr` nesneleri.|
+|[use_count](#use_count)|Sayıları sayısı belirtilen `shared_ptr` nesneleri.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|Değiştirir kaynak sahibi.|
+|[operator=](#op_eq)|Sahip olunan kaynağın yerini alır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -131,7 +132,7 @@ typedef Ty element_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür `Ty`.
+Şablon parametresi için bir eşanlamlı türüdür `Ty`.
 
 ### <a name="example"></a>Örnek
 
@@ -158,9 +159,9 @@ int main()
 *wp0.lock() == 5
 ```
 
-## <a name="expired"></a>  Süresi dolmuş
+## <a name="expired"></a>  Süresi doldu
 
-Testleri sahipliği sona erdi.
+Test sahipliği süresi doldu.
 
 ```cpp
 bool expired() const;
@@ -168,7 +169,7 @@ bool expired() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `true` varsa `*this` , aksi takdirde süresi doldu `false`.
+Üye işlevinin döndürdüğü **true** varsa `*this` , aksi takdirde doldu **false**.
 
 ### <a name="example"></a>Örnek
 
@@ -216,9 +217,9 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="lock"></a>  kilitleme
+## <a name="lock"></a>  Kilit
 
-Özel bir kaynak sahipliğini alır.
+Özel bir kaynağın sahipliğini alır.
 
 ```cpp
 shared_ptr<Ty> lock() const;
@@ -226,7 +227,7 @@ shared_ptr<Ty> lock() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş shared_ptr nesneyi döndürür `*this` süresi doldu; Aksi takdirde döndürür bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md)\<Ty > kaynağına sahip nesne `*this` işaret eder.
+Üye işlevi boş shared_ptr nesneyi döndürür `*this` sona erdi; Aksi halde döndürür bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md)\<Ty > kaynağa sahip olan nesne `*this` işaret eder.
 
 ### <a name="example"></a>Örnek
 
@@ -275,7 +276,7 @@ wp.expired() == true
 
 ## <a name="op_eq"></a>  işleç =
 
-Değiştirir kaynak sahibi.
+Sahip olunan kaynağın yerini alır.
 
 ```cpp
 weak_ptr& operator=(const weak_ptr& wp);
@@ -289,15 +290,18 @@ weak_ptr& operator=(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` Bağımsız değişken paylaşılan zayıf işaretçiyi tarafından denetlenen türü.
+*Diğer*  
+ Bağımsız değişken paylaşılan zayıf işaretçiyle kontrol edilen tür.
 
-`wp` Kopyalamak için zayıf işaretçi.
+*WP*  
+ Kopyalamak için zayıf işaretçi.
 
-`sp` Kopyalamak için paylaşılan işaretçi.
+*SP*  
+ Kopyalamak için paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda işaret kaynak tüm işleçleri yayın `*this` ve işlenen sırası tarafından adlı kaynağı sahipliğini Ata `*this`. İsteğe bağlı olarak bir işleç bırakır başarısız olursa `*this` değişmez.
+Kaynak şu anda işaret ettiği tüm işleçleri yayın `*this` ve işlenen dizinin tarafından adlı kaynağın sahipliğini Ata `*this`. İsteğe bağlı olarak bir işleç leaves başarısız olursa `*this` değişmez.
 
 ### <a name="example"></a>Örnek
 
@@ -333,7 +337,7 @@ int main()
 
 ## <a name="owner_before"></a>  owner_before
 
-Döndürür `true` bu `weak_ptr` önce sıralanır (veya küçüktür) sağlanan işaretçi.
+Döndürür **true** bu `weak_ptr` önceyse (veya küçüktür) sağlanan işaretçi.
 
 ```cpp
 template <class Other>
@@ -345,15 +349,16 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 ### <a name="parameters"></a>Parametreler
 
-`ptr` Bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
+*ptr*  
+ Bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon üye işlevinin döndürdüğü `true` varsa `*this` olan `ordered before` `ptr`.
+Şablon üye işlevinin döndürdüğü **true** varsa `*this` olduğu `ordered before` `ptr`.
 
-## <a name="reset"></a>  Sıfırla
+## <a name="reset"></a>  Sıfırlama
 
-Sürümler kaynak sahibi.
+Yayınları kaynak sahibi.
 
 ```cpp
 void reset();
@@ -361,7 +366,7 @@ void reset();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini gösterdiği kaynak serbest `*this` ve dönüştürür `*this` boş weak_ptr nesneye.
+Üye işlevi tarafından işaret kaynak sürümleri `*this` ve dönüştüren `*this` boş weak_ptr nesneye.
 
 ### <a name="example"></a>Örnek
 
@@ -394,7 +399,7 @@ wp.expired() == false
 wp.expired() == true
 ```
 
-## <a name="swap"></a>  Değiştirme
+## <a name="swap"></a>  değiştirme
 
 İki değiştirir `weak_ptr` nesneleri.
 
@@ -404,11 +409,12 @@ void swap(weak_ptr& wp);
 
 ### <a name="parameters"></a>Parametreler
 
-`wp` Zayıf işaretçisi ile değiştirilecek.
+*WP*  
+ İle takas için zayıf işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk olarak gösterdiği kaynak üye fonksiyonu bırakır `*this` sonradan gösterdiği `wp`ve başlangıçta gösterdiği kaynak `wp` sonradan gösterdiği `*this`. İşlev iki kaynaklar için başvuru sayıları değiştirmez ve özel durumlar oluşturmadığını.
+İlk olarak işaret ettiği kaynak üye işlevi bırakır `*this` sonradan işaret ettiği *wp*ve ilk olarak işaret ettiği kaynak *wp* sonradan tarafındanişaretedilen`*this`. İşlev iki kaynaklar için başvuru sayılarını değiştirmez ve özel durumlar oluşturmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -466,7 +472,7 @@ int main()
 
 ## <a name="use_count"></a>  use_count
 
-Sayıları sayısı atanan `shared_ptr` nesneleri.
+Sayıları sayısı belirtilen `shared_ptr` nesneleri.
 
 ```cpp
 long use_count() const;
@@ -474,7 +480,7 @@ long use_count() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini sayısını döndürür `shared_ptr` tarafından için kaynak sahibi nesneleri işaret `*this`.
+Üye işlevi döndürür `shared_ptr` kaynağa sahip nesneler tarafından işaret edilen `*this`.
 
 ### <a name="example"></a>Örnek
 
@@ -507,7 +513,7 @@ wp.use_count() == 2
 
 ## <a name="weak_ptr"></a>  weak_ptr
 
-Oluşturan bir `weak_ptr`.
+Oluşturur bir `weak_ptr`.
 
 ```cpp
 weak_ptr();
@@ -523,15 +529,18 @@ weak_ptr(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` Bağımsız değişken paylaşılan zayıf işaretçiyi tarafından denetlenen türü.
+*Diğer*  
+ Bağımsız değişken paylaşılan zayıf işaretçiyle kontrol edilen tür.
 
-`wp` Kopyalamak için zayıf işaretçi.
+*WP*  
+ Kopyalamak için zayıf işaretçi.
 
-`sp` Kopyalamak için paylaşılan işaretçi.
+*SP*  
+ Kopyalamak için paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her oluşturucular tarafından işlenen dizisi adlı kaynağa işaret eden bir nesne oluşturur.
+Her oluşturucular tarafından işlenen dizisi adlı kaynağı işaret eden bir nesne oluşturur.
 
 ### <a name="example"></a>Örnek
 

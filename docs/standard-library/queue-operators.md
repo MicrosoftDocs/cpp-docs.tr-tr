@@ -1,5 +1,5 @@
 ---
-title: '&lt;sıra&gt; işleçleri | Microsoft Docs'
+title: '&lt;Kuyruk&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,23 +20,23 @@ helpviewer_keywords:
 - std::operator&lt; (queue)
 - std::operator&lt;= (queue)
 - std::operator== (queue)
-ms.openlocfilehash: ddcc5ab787e4eba060960207a5260a571a64ff4d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 138eddc6704b5e12798ccceacc5b3f37b3df1d96
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859455"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958298"
 ---
-# <a name="ltqueuegt-operators"></a>&lt;sıra&gt; işleçleri
+# <a name="ltqueuegt-operators"></a>&lt;Kuyruk&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi eşit değilse, testleri.
+Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
@@ -44,17 +44,17 @@ bool operator!=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **sıra**.
+*Sol* türünde bir nesne `queue`.
 
-`right` Türünde bir nesne **sıra**.
+*doğru* türünde bir nesne `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sıraları eşit; değilse **false** sıraları eşit olması durumunda.
+**doğru** kuyrukları eşit; değilse, **false** kuyrukları eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki sıraları aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Queue nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki kuyrukları, bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerleri eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -99,9 +99,9 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi küçükse testleri.
+Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki küçüktür olup olmadığını sınar.
 
 ```cpp
 bool operator<(const queue <Type, Container>& left, const queue <Type, Container>& right,);
@@ -109,17 +109,17 @@ bool operator<(const queue <Type, Container>& left, const queue <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **sıra**.
+*Sol* türünde bir nesne `queue`.
 
-`right` Türünde bir nesne **sıra**.
+*doğru* türünde bir nesne `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sıranın işlecinin sol tarafındaki ve değil sıranın işlecinin sağ tarafında eşit; Aksi takdirde düşükse **false**.
+**doğru** sıranın işlecinin sol tarafındaki daha ve değil sıranın işlecin sağ tarafındaki eşit Aksi takdirde küçükse **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Küçüktür-iki sıra nesneleri arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını dayalı daha.
+Queue nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Daha az-iki queue nesneleri arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
 
 ### <a name="example"></a>Örnek
 
@@ -160,9 +160,9 @@ The queue q1 is less than the queue q2.
 The queue q1 is not less than the queue q3.
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Sıranın işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında sıra nesnesinin eşit veya daha az olur.
+Sıranın işlecinin sol tarafında nesne olup olmadığını test eder küçüktür veya eşittir sıra nesnesinin işlecin sağ tarafındaki.
 
 ```cpp
 bool operator<=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
@@ -170,17 +170,17 @@ bool operator<=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **sıra**.
+*Sol* türünde bir nesne `queue`.
 
-`right` Türünde bir nesne **sıra**.
+*doğru* türünde bir nesne `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sıranın işlecinin sol tarafındaki sıranın; işlecinin sağ tarafında kesinlikle değerinden ise, aksi takdirde **false**.
+**doğru** sıranın işlecinin sol tarafındaki sıranın; işlecin sağ tarafındaki değerinden kesinlikle küçük ise, aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Küçük veya eşittir iki sıra nesneleri arasındaki ilişki için ilk çiftlerini eşit olmayan bir karşılaştırmasını temel alır.
+Queue nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki queue nesneleri arasındaki ilişki için daha az veya eşit ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
 
 ### <a name="example"></a>Örnek
 
@@ -223,9 +223,9 @@ The queue q1 is greater than the queue q2.
 The queue q1 is less than or equal to the queue q3.
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Sıra nesnesinin sağ taraftaki işlecinin sol tarafındaki sıra nesnesi eşitse testleri.
+İşlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki sıra nesnesinin eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const queue <Type, Container>& left, const queue <Type, Container>& right,);
@@ -233,17 +233,17 @@ bool operator==(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **sıra**.
+*Sol* türünde bir nesne `queue`.
 
-`right` Türünde bir nesne **sıra**.
+*doğru* türünde bir nesne `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sıraları eşit; değilse **false** sıraları eşit olması durumunda.
+**doğru** kuyrukları eşit; değilse, **false** kuyrukları eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki sıraları aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Queue nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki kuyrukları, bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerleri eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -287,9 +287,9 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
-Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi büyükse testleri.
+Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
 ```cpp
 bool operator>(const queue <Type, Container>& left, const queue <Type, Container>& right,);
@@ -297,17 +297,17 @@ bool operator>(const queue <Type, Container>& left, const queue <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **sıra**.
+*Sol* türünde bir nesne `queue`.
 
-`right` Türünde bir nesne **sıra**.
+*doğru* türünde bir nesne `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sıranın işlecinin sol tarafındaki sıranın; işlecinin sağ tarafında kesinlikle değerinden ise, aksi takdirde **false**.
+**doğru** sıranın işlecinin sol tarafındaki sıranın; işlecin sağ tarafındaki değerinden kesinlikle küçük ise, aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Büyük-iki sıra nesneleri arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını dayalı daha.
+Queue nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyük-iki queue nesneleri arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
 
 ### <a name="example"></a>Örnek
 
@@ -351,9 +351,9 @@ The queue q1 is not greater than the queue q2.
 The queue q1 is greater than the queue q3.
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi eşit veya daha büyük ise testleri.
+İşlecin sol tarafındaki sıra nesnesinin değerinden büyük veya eşittir sıra nesnesinin işlecin sağ tarafındaki olup olmadığını sınar.
 
 ```cpp
 bool operator>=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
@@ -361,17 +361,17 @@ bool operator>=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **sıra**.
+*Sol* türünde bir nesne `queue`.
 
-`right` Türünde bir nesne **sıra**.
+*doğru* türünde bir nesne `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sıranın işlecinin sol tarafındaki sıranın; işlecinin sağ tarafında kesinlikle değerinden ise, aksi takdirde **false**.
+**doğru** sıranın işlecinin sol tarafındaki sıranın; işlecin sağ tarafındaki değerinden kesinlikle küçük ise, aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki sıraları aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Queue nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki kuyrukları, bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerleri eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -416,4 +416,4 @@ The queue q1 is greater than or equal to the queue q3.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<sıra >](../standard-library/queue.md)<br/>
+[\<Kuyruk >](../standard-library/queue.md)<br/>

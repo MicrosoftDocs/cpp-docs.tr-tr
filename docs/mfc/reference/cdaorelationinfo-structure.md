@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8887c9735b91c43e9dc43140df792841eecef5ed
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 0fedf6ad90af670a462b0ccac23cc599a1a13e26
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122614"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336364"
 ---
 # <a name="cdaorelationinfo-structure"></a>CDaoRelationInfo Yapısı
-`CDaoRelationInfo` Yapısı alanları iki tablo arasında tanımlanmış bir ilişkisi hakkında bilgi içeren bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesi.  
+`CDaoRelationInfo` Yapısı iki tablo alanlar arasında tanımlanmış bir ilişkisi hakkında bilgi içeren bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,43 +46,43 @@ struct CDaoRelationInfo
   
 #### <a name="parameters"></a>Parametreler  
 *m_strName*  
- İlişki nesnesi adlandıran. Daha fazla bilgi için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
+ İlişki nesnesi benzersiz olarak adlandırır. Daha fazla bilgi için "Name özelliği" DAO Yardım konusuna bakın.  
   
  *m_strTable*  
- İlişkinin birincil tabloda adları.  
+ İçindeki birincil tablo adları.  
   
  *m_strForeignTable*  
- İlişki yabancı tablosunda adları. Bir yabancı tablo yabancı anahtarlar kapsamak için kullanılmış bir tablodur. Genellikle, yabancı tablo oluşturmak veya bilgi tutarlılığı zorlamak için kullanın. Yabancı tablo genellikle bir-çok ilişkisi birçok tarafında olur. American durumları veya Kanada il ya da müşteri siparişleri kodları içeren tablolar yabancı tablolar örneklerindendir.  
+ İlişki yabancı tabloda adları. Bir dış tablo, yabancı anahtarlar kapsamak için kullanılmış bir tablodur. Genellikle, bir dış tablo oluşturmak veya bilgi tutarlılığını zorlamak için kullanın. Yabancı genellikle birçok bire çok ilişkisi tarafında tablosudur. Dış tablolar örnekleri Amerikan durumlarını veya Kanada il veya müşteri siparişleri için kodları barındıran tablolar içerir.  
   
  *m_lAttributes*  
- İlişki türü hakkında bilgi içerir. Bu üye değeri aşağıdakilerden biri olabilir:  
+ İlişki türü hakkında bilgi içerir. Bu üyenin değeri aşağıdakilerden biri olabilir:  
   
-- **dbRelationUnique** birebir ilişki.  
+- `dbRelationUnique` Bire bir ilişkidir.  
   
-- **dbRelationDontEforce'a** ilişkisi değil (hiçbir başvuru bütünlüğü) uygulanmaz.  
+- `dbRelationDontEnforce` İlişki (hiçbir bilgi tutarlılığı) zorunlu tutulur.  
   
-- **dbRelationInherited** ilişkisi, iki bağlı tabloları içeren noncurrent bir veritabanında yok.  
+- `dbRelationInherited` İlişki, iki bağlı tabloları içeren çerçevesidir bir veritabanında zaten var.  
   
-- **dbRelationLeft** sol birleştirme ilişkidir. Sol dış birleşim ilk kayıtların tümünü içerir (sol) iki tablonun ikinci (sağdaki) tablonun kayıtları için eşleşen değer yoksa olsa bile.  
+- `dbRelationLeft` Sol birleştirme ilişkidir. Sol dış birleşim ilk kayıtlarını içerir (soldaki) iki tablonun ikinci (sağdaki) tablodaki kayıtların eşleşen değer yoksa olsa bile.  
   
-- **dbRelationRight** sağ birleşim ilişkidir. Sağ dış birleştirme ikinci kayıtların tümünü içerir (sağdaki) iki tablonun ilk (sol) tablonun kayıtları için eşleşen değer yoksa olsa bile.  
+- `dbRelationRight` Sağ birleştirme ilişkidir. Sağ dış birleşim tüm ikinci kayıtlarını içerir (sağdaki) iki tablonun ilk (soldaki) bir tablodaki kayıtları için eşleşen değer yoksa olsa bile.  
   
-- **dbRelationUpdateCascade** güncelleştirmeleri basamaklı.  
+- `dbRelationUpdateCascade` Güncelleştirmeleri basamaklı.  
   
-- **dbRelationDeleteCascade** silme işlemleri basamaklı.  
+- `dbRelationDeleteCascade` Silme işlemleri basamaklı.  
   
 *m_pFieldInfos*  
- Bir dizi için bir işaretçi [Cdaorelationfieldınfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) yapıları. Dizi ilişkisi içindeki her alan için bir nesne içeriyor. `m_nFields` Veri üyesi dizi öğelerinin sayısını verir.  
+ Bir dizi işaretçi [Cdaorelationfieldınfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) yapıları. Dizi içindeki her bir alan için bir nesne içerir. `m_nFields` Veri üyesi, dizi öğelerinin sayısını verir.  
   
 *M_nFields*  
- Sayısı `CDaoRelationFieldInfo` nesnelerini `m_pFieldInfos` veri üyesi.  
+ Sayısını `CDaoRelationFieldInfo` nesneler `m_pFieldInfos` veri üyesi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birincil ve ikincil yukarıdaki başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) üye işlevi sınıfında `CDaoDatabase`.  
+ Birincil ve ikincil yukarıdaki başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) sınıf üyesi işlevinde `CDaoDatabase`.  
   
- İlişki nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, bir MFC nesnesinin temelindeki DAO nesne `CDaoDatabase` sınıfı ilişkisi nesneler koleksiyonunu korur: `CDaoDatabase` ilişkisi bilgileri ya da, bazı tek tek öğelere erişmek için kaynakları üye işlevleri erişebilmeniz tümünü bir defada bir ile`CDaoRelationInfo` çağırarak nesne `GetRelationInfo` içeren veritabanı nesnesinin üye işlevi.  
+ İlişki nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, bir MFC nesnesinin temelindeki DAO nesne `CDaoDatabase` sınıfı ilişkisi nesnelerinin koleksiyonunu tutar: `CDaoDatabase` ilişkisi bilgilerini veya bazı tek tek öğelere erişmek için üye işlevleri kaynakları erişebileceği tek seferde bir ile`CDaoRelationInfo` çağırarak `GetRelationInfo` içeren veritabanı nesnesinin üye işlevi.  
   
- Tarafından alınan bilgileri [CDaoDatabase::GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) üye işlevi depolanır bir `CDaoRelationInfo` yapısı. `CDaoRelationInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoRelationInfo` nesnesi.  
+ Tarafından alınan bilgileri [CDaoDatabase::GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) üye işlevi depolanan bir `CDaoRelationInfo` yapısı. `CDaoRelationInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoRelationInfo` nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdao.h  

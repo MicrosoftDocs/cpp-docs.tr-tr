@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f19ab7e05b4e27a3b00576339d0b60b37bdba4a7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 53601afdd562f29ccd4bce9db76811e610940b7a
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374350"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339377"
 ---
 # <a name="linger-structure"></a>LINGER Yapısı
-`LINGER` Yapısını işlemek için kullanılan **SO_LINGER** ve **SO_DONTLINGER** seçeneklerini `CAsyncSocket::GetSockOpt`.  
+`LINGER` Yapısı SO_LINGER ve SO_DONTLINGER seçenekleri işlemek için kullanılan `CAsyncSocket::GetSockOpt`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,13 +36,13 @@ struct linger {
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ayarı **SO_DONTLINGER** seçeneği engeller üye işlevini engelleme **Kapat** gönderilecek gönderilmemiş verileri beklenirken. Bu seçeneğin ayarlanması eşdeğerdir ayarına **SO_LINGER** ile **l_onoff** 0 olarak ayarlayın.  
+ SO_DONTLINGER seçeneği ayarlama engeller üye işlevini engelleme `Close` gönderilecek gönderilmemiş verileri beklenirken. Bu ayar ile SO_LINGER ayarını eşdeğer `l_onoff` 0 olarak ayarlayın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winsock2.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CAsyncSocket::GetSockOpt](../../mfc/reference/casyncsocket-class.md#getsockopt)   
  [CAsyncSocket::SetSockOpt](../../mfc/reference/casyncsocket-class.md#setsockopt)
 

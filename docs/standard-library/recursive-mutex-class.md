@@ -24,16 +24,16 @@ helpviewer_keywords:
 - std::recursive_mutex [C++], unlock
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89c39f006cee8c62c22f3caf7e2c10ee9a0c1d03
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a0c137183e396255d0a9f9d3c304273eda320c72
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864941"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955900"
 ---
 # <a name="recursivemutex-class"></a>recursive_mutex Sınıfı
 
-Temsil eden bir *mutex türü*. Tersine için [mutex](../standard-library/mutex-class-stl.md), zaten kilitli olan nesneler için kilitleme yöntemlerine çağrılarının iyi tanımlanmış bir davranıştır.
+Temsil eden bir *mutex türünü*. Tersine [mutex](../standard-library/mutex-class-stl.md), zaten kilitli olan nesneler için kilitleme yöntemlere yapılan çağrılar, davranışı iyi tanımlanmış olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,16 +47,16 @@ class recursive_mutex;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[recursive_mutex](#recursive_mutex)|Oluşturan bir `recursive_mutex` nesnesi.|
-|[~recursive_mutex Destructor](#dtorrecursive_mutex_destructor)|Tarafından kullanılan tüm kaynakları serbest `recursive_mutex` nesnesi.|
+|[recursive_mutex](#recursive_mutex)|Oluşturur bir `recursive_mutex` nesne.|
+|[~recursive_mutex Destructor](#dtorrecursive_mutex_destructor)|Tarafından kullanılan kaynakları serbest `recursive_mutex` nesne.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[lock](#lock)|İş parçacığı mutex sahipliğini alıncaya kadar çağıran iş parçacığı engeller.|
-|[try_lock](#try_lock)|Engellenmeden mutex sahipliğini almaya çalışır.|
-|[kilidini aç](#unlock)|Mutex sahipliğini serbest bırakır.|
+|[lock](#lock)|İş parçacığı mutex sahipliğini alana kadar çağıran iş parçacığını engeller.|
+|[try_lock](#try_lock)|Engelleme olmadan mutex sahipliğini almayı dener.|
+|[Kilit açma](#unlock)|Mutex sahipliğini serbest bırakır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -64,9 +64,9 @@ class recursive_mutex;
 
 **Namespace:** std
 
-## <a name="lock"></a>  kilitleme
+## <a name="lock"></a>  Kilit
 
-İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.
+İş parçacığı sahipliğini alana kadar çağıran iş parçacığını engeller `mutex`.
 
 ```cpp
 void lock();
@@ -74,11 +74,11 @@ void lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`yöntemi hemen döndürür ve önceki kilit yürürlükte kalır.
+Çağıran iş parçacığı zaten sahipse `mutex`, yöntem hemen döner ve önceki kilidi yürürlükte kalır.
 
 ## <a name="recursive_mutex"></a>  recursive_mutex
 
-Oluşturan bir `recursive_mutex` nesnesi kilitli değil.
+Oluşturur bir `recursive_mutex` kilitli olmayan bir nesne.
 
 ```cpp
 recursive_mutex();
@@ -94,11 +94,11 @@ Nesne tarafından kullanılan tüm kaynakları serbest bırakır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yok Edicisi çalıştığında nesne kilitliyse tanımlanmamış bir davranıştır.
+Yıkıcı çalıştığında nesne kilitli değilse davranış tanımlanmamıştır.
 
 ## <a name="try_lock"></a>  try_lock
 
-Sahipliğini almayı denediğinde `mutex` engelleme olmadan.
+Sahipliğini almayı dener `mutex` engelleme olmadan.
 
 ```cpp
 bool try_lock() noexcept;
@@ -106,13 +106,13 @@ bool try_lock() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Yöntem başarıyla sahipliğini elde ederse `mutex` veya çağıran iş parçacığı zaten sahipse `mutex`; Aksi halde, `false`.
+**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex` veya çağıran iş parçacığı zaten sahipse `mutex**; otherwise, **false`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, işlevi hemen döndürür `true`, ve önceki kilit yürürlükte kalır.
+Çağıran iş parçacığı zaten sahipse `mutex`, işlevi hemen döndürür **true**, ve önceki kilidi yürürlükte kalır.
 
-## <a name="unlock"></a>  kilidini aç
+## <a name="unlock"></a>  Kilit açma
 
 Mutex sahipliğini serbest bırakır.
 
@@ -122,9 +122,9 @@ void unlock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem sahipliğini serbest `mutex` yalnızca olarak gibi birçok kez çağrıldıktan sonra [kilit](#lock) ve [try_lock](#try_lock) üzerinde başarıyla çağrılmış `recursive_mutex` nesnesi.
+Bu yöntem sahipliğini serbest `mutex` yalnızca olarak sayıda çağrıldıktan sonra [kilit](#lock) ve [try_lock](#try_lock) üzerinde başarıyla çağrılmışsa `recursive_mutex` nesne.
 
-Çağıran iş parçacığı kendi değil, `mutex`, tanımlanmamış bir davranıştır.
+Çağıran iş parçacığına ait olmayan, `mutex`, davranış tanımlanmamıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

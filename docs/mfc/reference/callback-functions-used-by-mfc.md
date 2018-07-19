@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 114411d0f8c7084e26f36f0ffc05e60a32407c44
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 96db2ea0c28e14f7a8e614d94e18cd3fad3cda53
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956840"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339016"
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC Tarafından Kullanılan Geri Çağırma İşlevleri
-Üç geri arama işlevleri Microsoft Foundation Class Kitaplığı'nda görünür. Bu geri çağırma işlevleri geçirilecek [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), ve [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Tüm geri arama işlevleri MFC Windows için geri çağırma sınırlarında durumlar olamaz bu yana döndürmeden önce yakalamak gerekir olduğunu unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz: [özel durumları](../../mfc/exception-handling-in-mfc.md).  
+Üç geri çağırma işlevleri, Microsoft Foundation Class Kitaplığı ' görünür. Bu geri arama işlevlerine geçirilen [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), ve [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Windows için özel durumlar, geri çağırma sınırlarında atılamıyor beri döndürmeden önce MFC özel durumları tüm geri çağırma işlevleri tuzak, gerekir unutmayın. Özel durumları hakkında daha fazla bilgi için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).  
 
 |Ad||  
 |----------|-----------------|  
@@ -57,10 +57,10 @@ int CALLBACK EXPORT ObjectFunc(
  Uygulama tarafından sağlanan veri noktalarına geçirilen `EnumObjects` işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geri çağırma işlevi döndüren bir **int**. Bu dönüş değeri, kullanıcı tanımlı ' dir. Geri çağırma işlevi 0, döndürürse `EnumObjects` erken numaralandırması durdurur.  
+ Geri çağırma işlevi bir **int**. Bu dönüş değeri, kullanıcı tanımlı. Geri çağırma işlevi, 0, döndürürse `EnumObjects` erken numaralandırma durdurur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Gerçek ad verilmelidir.  
+ Gerçek adı verilmesi gerekir.  
   
 ## <a name="graystring"></a>  CDC::GrayString için geri çağırma işlevi
 *OutputFunc* uygulama tarafından sağlanan geri çağırma işlevi adı için bir yer tutucudur.  
@@ -76,19 +76,19 @@ BOOL CALLBACK EXPORT OutputFunc(
   
 ### <a name="parameters"></a>Parametreler  
  *hDC*  
- Bir bit eşlem en az ile bellek cihaz bağlamı tanımlar genişlik ve yükseklik tarafından belirtilen *nWidth* ve *nHeight* için `GrayString`.  
+ Bir bellek cihaz bağlamı ile en az bir bit eşlem tanımlar genişlik ve yükseklik tarafından belirtilen `nWidth` ve `nHeight` için `GrayString`.  
   
  *lpData*  
  Çizilecek karakter dizesine işaret eder.  
   
  *nCount*  
- Çıktı için karakter sayısını belirtir.  
+ Çıktı olarak karakter sayısını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geri çağırma işlevinin dönüş değeri olmalıdır **TRUE** başarı; belirtmek için Aksi takdirde değer **FALSE**.  
+ Geri çağırma işlevinin dönüş değeri başarılı olduğunu belirtmek için TRUE olmalıdır; Aksi takdirde yanlış olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geri çağırma işlevi (*OutputFunc*) (0,0) koordinatlara göre resim çizme gerekir yerine (*x*, *y*).  
+ Geri çağırma işlevi (*OutputFunc*) (0,0) koordinatlarına göre bir görüntü çizin gerekir yerine (*x*, *y*).  
 
 ## <a name="setabortproc"></a>  CDC::SetAbortProc için geri çağırma işlevi
 Adı *AbortFunc* uygulama tarafından sağlanan işlev adı için bir yer tutucudur.  
@@ -106,15 +106,15 @@ BOOL CALLBACK EXPORT AbortFunc(
  Cihaz bağlamı tanımlar.  
   
  *Kod*  
- Bir hata oluştu olup olmadığını belirtir. Herhangi bir hata oluştuysa, 0'dır. Bu **SP_OUTOFDISK** Yazdırma Yöneticisi'ni şu anda disk alanı yetersiz ise ve daha fazla disk alanı uygulama bekliyorsa kullanılabilir hale gelecektir. Varsa *kod* olan **SP_OUTOFDISK**, yazdırma işi iptal etmek uygulama yok. Mevcut değilse, Yazdırma Yöneticisi çağırarak verim gerekir `PeekMessage` veya `GetMessage` Windows işlevi.  
+ Bir hata oluşup oluşmadığını belirtir. Herhangi bir hata oluştuysa, 0'dır. Uygulamayı bekliyorsa daha fazla disk alanını kullanılabilir hale gelir ve Yazdırma Yöneticisi'ni şu anda disk alanı yetersiz olduğu SP_OUTOFDISK olduğu. Varsa *kod* olduğu SP_OUTOFDISK, yazdırma işi iptal etmek uygulama yok. Kullanmıyorsa, onu Yazdırma Yöneticisi çağırarak yield gerekir `PeekMessage` veya `GetMessage` Windows işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Abort işleyici işlevinin dönüş değeri yazdırma işi devam etmek için ise sıfır dışında 0 ise bu iptal edildiyse.  
+ Yazdırma işi devam etmek için ise sıfır olmayan ve 0 iptal işleyicisi işlevin dönüş değeri, iptal edilirse.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Gerçek adı, açıklamalar bölümünde açıklandığı gibi dışarı aktarılmalıdır [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc).  
+ Gerçek adı, açıklamalar bölümünde anlatıldığı gibi dışarı aktarılmalıdır [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc).  
  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](structures-styles-callbacks-and-message-maps.md) [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects) [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc) [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring)
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](structures-styles-callbacks-and-message-maps.md) [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects) [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc) [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring)
 

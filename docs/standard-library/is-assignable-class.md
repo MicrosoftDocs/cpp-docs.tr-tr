@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd8b757ab46d462bd5d6a596f7dbbfdd18061a8d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d5666aca2d6a855b64af26d38a1ae834fecec5d6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843005"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958471"
 ---
 # <a name="isassignable-class"></a>is_assignable sınıfı
 
-Bir değeri olup olmadığını sınar `From` türü atanabilen bir `To` türü.
+Bir değeri olup olmadığını test `From` türüne atanabilen bir `To` türü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,13 +36,13 @@ struct is_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-Atamayı alan nesnesi türü için.
+Atamayı alan nesne türü için.
 
-Nesne türünden değer sağlar.
+Değer sağlayan bir nesne türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değerlendirilmeyecek ifade `declval<To>() = declval<From>()` doğru biçimlendirilmiş olması gerekir. Her ikisi de `From` ve `To` tam tür `void`, veya bilinmeyen bağlı dizileri.
+Değerlendirilmemiş ifade `declval<To>() = declval<From>()` iyi biçimlendirilmiş olmalıdır. Her ikisi de `From` ve `To` tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
 
 ## <a name="requirements"></a>Gereksinimler
 

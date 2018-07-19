@@ -118,32 +118,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 818d6fad62ec4d506215a82f2faa1e3aa58d1654
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: aec1d5291526360157b4e1a0b5b4eff9ae9fd454
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849047"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956469"
 ---
 # <a name="iosbase-class"></a>ios_base Sınıfı
 
-Şablon parametreleri dayanmayan ortak giriş ve çıkış akışları üye işlevleri ve depolama sınıfı açıklanmaktadır. (Şablon sınıfı [basic_ios](../standard-library/basic-ios-class.md) ne yaygındır ve şablonun parametrelere bağlı olduğu açıklanmaktadır.)
+Depolama sınıfı açıklar ve üye işlevleri, şablon parametrelerine bağlı olmayan giriş ve çıkış yaygın olarak kullanılan akış. (Şablon sınıfı [basic_ios](../standard-library/basic-ios-class.md) ne için ortaktır ve şablon parametrelerine bağlı olduğu açıklanmaktadır.)
 
-Bir nesne sınıfı ios_base oluşan biçimlendirme bilgileri depolar:
+İos_base sınıfı bir nesnenin oluşan biçimlendirme bilgileri depolar:
 
-- Biçimlendirme türünde bir nesne bayrakları [fmtflags](#fmtflags).
+- Biçim bayrakları türünde bir nesne [fmtflags](#fmtflags).
 
-- Türünde bir nesne bir özel durum maskesinde [iostate](#iostate).
+- Bir özel durum maskesi türünde bir nesne [iostate](#iostate).
 
-- Türünde bir nesne bir alan genişliği `int`.
+- Türünde bir nesne bir alan genişliği **int**.
 
-- Türünde bir nesne bir görüntü kesinlik `int`.
+- Türünde bir nesne içinde görünen kesinliği **int**.
 
-- Bir yerel ayar nesnesi türünde bir nesne içinde **yerel ayar**.
+- Bir yerel ayar nesnesi türünde bir nesne içinde `locale`.
 
-- Türündeki öğeler ile iki Genişletilebilir dizisi **uzun** ve `void` işaretçi.
+- Türünde öğelere sahip iki Genişletilebilir diziler **uzun** ve **void** işaretçi.
 
-Bir nesne sınıfı ios_base akış durum bilgilerini türünde bir nesne de depolar. [iostate](#iostate)ve bir geri çağırma yığını.
+İos_base sınıfı bir nesne türünde bir nesne akışa durum bilgilerini de depolar. [iostate](#iostate)ve bir geri çağırma yığını.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -156,10 +156,10 @@ Bir nesne sınıfı ios_base akış durum bilgilerini türünde bir nesne de dep
 |Tür adı|Açıklama|
 |-|-|
 |[event_callback](#event_callback)|Geçirilen bir işlev açıklar [register_call](#register_callback).|
-|[fmtflags](#fmtflags)|Çıktı görünümünü belirtmek için sabitleri.|
-|[iostate](#iostate)|Bir akış durumunu açıklayan sabitleri tanımlar.|
-|[AçmaModu](#openmode)|Bir akış ile etkileşim açıklar.|
-|[seekdir](#seekdir)|Uzaklık işlemleri için başlangıç noktası belirtir.|
+|[fmtflags](#fmtflags)|Çıkış görünümünü belirtmek için sabitler.|
+|[iostate](#iostate)|Bir akış durumunu açıklayan sabit değerleri tanımlar.|
+|[AçmaModu](#openmode)|Bir akış ile etkileşim kurmak açıklar.|
+|[seekdir](#seekdir)|İşlemleri için başlangıç noktası belirtir.|
 
 ### <a name="enums"></a>Numaralandırmalar
 
@@ -172,55 +172,55 @@ Bir nesne sınıfı ios_base akış durum bilgilerini türünde bir nesne de dep
 |||
 |-|-|
 |[adjustfield](#fmtflags)|Tanımlanan bir bit maskesi `internal` &#124; `left` &#124; `right`.|
-|[Uygulama](#openmode)|Her ekleme önce akışın sonuna isteyen belirtir.|
-|[Tarih](#openmode)|Denetleme nesnesi ilk oluşturulduğunda bir akışın sonuna aramayı belirtir.|
-|[badbit](#iostate)|Akışı arabelleğe bütünlüğünü kaybı kaydeder.|
+|[Uygulama](#openmode)|Her ekleme önce bir akışın sonuna isteyen belirtir.|
+|[Oluştur](#openmode)|Denetleme, nesne ilk oluşturulduğunda bir akış sonuna arayan belirtir.|
+|[badbit](#iostate)|Akış arabelleğinin bütünlüğünü kaybı kaydeder.|
 |[basefield](#fmtflags)|Tanımlanan bir bit maskesi `dec` &#124; `hex` &#124; `oct`.|
-|[beg](#seekdir)|Bir dizi başına göreli aramayı belirtir.|
-|[İkili](#openmode)|Bir dosyayı bir metin akışı olarak değil, ikili akış olarak okunmalıdır belirtir.|
-|[boolalpha](#fmtflags)|Ekleme veya çıkarma nesne türü belirtir `bool` adları olarak (gibi `true` ve `false`) yerine sayısal değer olarak.|
-|[Geçerli](#seekdir)|Bir dizi içindeki geçerli konumu göre aramayı belirtir.|
+|[beg](#seekdir)|Bir dizi başlangıcına göre arama belirtir.|
+|[İkili](#openmode)|Metin akışına olarak değil, ikili akış olarak bir dosya okunmalıdır belirtir.|
+|[boolalpha](#fmtflags)|Ekleme veya çıkarma nesne türü belirtir **bool** adları olarak (gibi **true** ve **false**) olarak sayısal değerlerin değil.|
+|[Yinele](#seekdir)|Bir dizi içinde geçerli konumuna göre arama belirtir.|
 |[Ara](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri ondalık biçiminde belirtir.|
-|[Bitiş](#seekdir)|Bir dizinin sonuna göre aramayı belirtir.|
-|[eofbit](#iostate)|Kayıtları son bir akıştan ayıklanıyor sırasında dosya.|
-|[failbit](#iostate)|Geçerli bir alan bir akıştan ayıklamak için bir hata kaydeder.|
-|[Sabit](#fmtflags)|Kayan nokta değerlerinin ekleme sabit noktalı biçimiyle (üstel alan yok) belirtir.|
+|[Son](#seekdir)|Bir dizinin sonuna göreli arayan belirtir.|
+|[eofbit](#iostate)|Kayıt-bir akıştan ayıklanıyor sırasında dosya sonu.|
+|[failbit](#iostate)|Geçerli bir alan bir akışından ayıklanacak bir hata kaydeder.|
+|[düzeltildi](#fmtflags)|Kayan nokta değerlerinin ekleme (ile üs alan yok) sabit noktalı biçim belirtir.|
 |[floatfield](#fmtflags)|Tanımlanan bir bit maskesi `fixed`&#124; `scientific`|
 |[goodbit](#iostate)|Tüm durum bitleri temizleyin.|
-|[Onaltılık](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri onaltılık biçimde belirtir.|
-|[in](#openmode)|Akıştan ayıklama belirtir.|
-|[internal](#fmtflags)|Klavye takımı ekleyerek bir alan genişliği için oluşturulan bir sayısal alana iç bir noktada karakterler doldurur.|
-|[Sol](#fmtflags)|Sola yaslamayı belirtir.|
-|[Eki](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri sekizli biçiminde belirtir.|
-|[out](#openmode)|Akış ekleme belirtir.|
-|[Sağ](#fmtflags)|Sağa yaslamayı belirtir.|
-|[Bilimsel](#fmtflags)|Kayan nokta değerlerinin ekleme bilimsel biçimiyle (üstel alanı) belirtir.|
-|[showbase](#fmtflags)|Oluşturulan tamsayı alan tabanı ortaya çıkarır bir önek ekleme belirtir.|
-|[showpoint](#fmtflags)|Ondalık noktasının koşulsuz ekleme oluşturulan bir kayan nokta alanını belirtir.|
-|[showpos](#fmtflags)|Artı işareti ekleme negatif olmayan bir oluşturulmuş sayısal alana belirtir.|
-|[skipws](#fmtflags)|Belirli ayıklamaları önce başında boşluk atlanıyor belirtir.|
-|[trunc](#openmode)|Denetleme nesnesi oluşturulduğunda silme Varolan bir dosyanın içeriğini belirtir.|
-|[unitbuf](#fmtflags)|Çıkış sonra her ekleme kopyalanması için neden olur.|
-|[büyük harf](#fmtflags)|Küçük harfler, büyük harf eşdeğerleri ekleme belirli eklemeleri belirtir.|
+|[onaltılık](#fmtflags)|Onaltılık biçimde ekleme veya çıkarma tamsayı değerleri belirtir.|
+|[in](#openmode)|Bir akıştan ayıklama belirtir.|
+|[internal](#fmtflags)|Bölmeleri ekleyerek bir alan genişliği için oluşturulan bir sayısal alan iç bir noktada karakter girin.|
+|[Sol](#fmtflags)|Sol gerekçe belirtir.|
+|[Eki](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri sekizlik biçiminde belirtir.|
+|[out](#openmode)|Bir akışa ekleme belirtir.|
+|[sağ](#fmtflags)|Doğru gerekçe belirtir.|
+|[Bilimsel](#fmtflags)|Kayan nokta değerlerinin ekleme biçiminde bilimsel (üstel bir alan) belirtir.|
+|[showbase](#fmtflags)|Gösteren temel bir oluşturulmuş bir tamsayı alan bir ön ek ekleme belirtir.|
+|[showpoint](#fmtflags)|Bir ondalık noktasının koşulsuz ekleme oluşturulan bir kayan nokta alanını belirtir.|
+|[showpos](#fmtflags)|Artı işareti ekleme, negatif olmayan bir oluşturulmuş sayısal alan belirtir.|
+|[skipws](#fmtflags)|Baştaki boşluk önce belirli ayıklamalar atlanıyor belirtir.|
+|[trunc](#openmode)|Kendi kontrol eden bir nesne oluşturulduğunda silme Varolan bir dosyanın içeriğini belirtir.|
+|[unitbuf](#fmtflags)|Çıkış sonra her bir ekleme kopyalanması için neden olur.|
+|[büyük harf](#fmtflags)|Küçük harfler, büyük harf eşdeğeri ekleme bazı eklemeler belirtir.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Hata](#failure)|Üye işlevi tarafından oluşturulan tüm özel durumlar için temel sınıf üye sınıfı gören [temizleyin](../standard-library/basic-ios-class.md#clear) şablonu sınıfında [basic_ios](../standard-library/basic-ios-class.md).|
-|[Bayrakları](#flags)|Geçerli bayrağı ayarları döndürür veya ayarlar.|
+|[hata](#failure)|Üye sınıfı üye işlevi tarafından oluşturulan tüm özel durumlar için temel sınıf olarak hizmet veren [Temizle](../standard-library/basic-ios-class.md#clear) şablon sınıfında [basic_ios](../standard-library/basic-ios-class.md).|
+|[bayrakları](#flags)|Geçerli bayrak ayarlarını döndürür veya ayarlar.|
 |[getloc](#getloc)|Depolanan yerel ayar nesnesi döndürür.|
-|[imbue](#imbue)|Yerel olarak değiştirir.|
+|[imbue](#imbue)|Yerel ayar değiştirir.|
 |[Init](#init)|Oluşturulan standart iostream nesneleri oluşturur.|
-|[iword](#iword)|Olarak depolanması için bir değer atayan bir `iword`.|
-|[Duyarlılık](#precision)|Bir kayan noktalı sayı görüntülenecek basamak sayısını belirtir.|
-|[pword](#pword)|Olarak depolanması için bir değer atayan bir `pword`.|
-|[register_callback](#register_callback)|Bir geri çağırma işlevini belirtir.|
-|[setf](#setf)|Belirtilen bayrakları ayarlar.|
-|[sync_with_stdio](#sync_with_stdio)|İostream ve C çalışma zamanı kitaplığı operations kaynak kodunda göründükleri sırada gerçekleşmesini sağlar.|
-|[unsetf](#unsetf)|Belirtilen bayrakları kapalı olması neden olur.|
-|[Genişlik](#width)|Çıkış akışı uzunluğunu belirler.|
-|[xalloc](#xalloc)|Bir değişken akış parçası tutulamaz belirtir.|
+|[iword](#iword)|Olarak depolanacak değer atayan bir `iword`.|
+|[Duyarlık](#precision)|Bir kayan noktalı sayı görüntülenecek basamak sayısını belirtir.|
+|[pword](#pword)|Olarak depolanacak değer atayan bir `pword`.|
+|[register_callback](#register_callback)|Bir geri çağırma işlevi belirtir.|
+|[setf](#setf)|Belirtilen bayraklar ayarlar.|
+|[sync_with_stdio](#sync_with_stdio)|İostream ve C çalışma zamanı kitaplığı işlemleri kaynak kodunda göründükleri sırayla gerçekleşmemesini sağlar.|
+|[unsetf](#unsetf)|Belirtilen bayraklar kapalı olması neden olur.|
+|[Genişlik](#width)|Çıkış akışına uzunluğunu ayarlar.|
+|[xalloc](#xalloc)|Bir değişken akışın bir parçası olacaktır belirtir.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -247,17 +247,17 @@ enum event {
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıtlı bir işleve bağımsız değişken olarak kullanılan geri çağırma olay depolayan bir nesneyi tanımlayan bir enum türü türüdür [register_callback](#register_callback). Farklı olay değerler şunlardır:
+Kayıtlı bir işleve bağımsız değişken olarak kullanılan geri çağırma olay depolayan bir nesne tanımlayan bir listeden seçimli türü türüdür [register_callback](#register_callback). Farklı olay değerler şunlardır:
 
-- **copyfmt_event**çağrısı sonunu yakın oluşan bir geri çağırma tanımlamak için [copyfmt](../standard-library/basic-ios-class.md#copyfmt), hemen önce [özel durum maskesi](../standard-library/ios-base-class.md) kopyalanır.
+- `copyfmt_event`, bir çağrı sonuna yakın oluşan bir geri çağırma tanımlamak için [copyfmt](../standard-library/basic-ios-class.md#copyfmt), hemen önce [özel durum maskesini](../standard-library/ios-base-class.md) kopyalanır.
 
-- **erase_event**, çağrı başına oluşan bir geri çağırma tanımlamak için [copyfmt](../standard-library/basic-ios-class.md#copyfmt), veya yıkıcı için yapılan bir çağrı başına  **\*bu**.
+- `erase_event`, çağrı başına oluşan bir geri çağırma tanımlamak için [copyfmt](../standard-library/basic-ios-class.md#copyfmt), ya da yok edici için yapılan bir çağrının başında  **\*bu**.
 
-- **imbue_event**çağrısı sonunu oluşursa bir geri çağırma tanımlamak için [imbue](#imbue)önce yalnızca işlevi döndürür.
+- `imbue_event`, bir çağrı, sonunda oluşan bir geri çağırma tanımlamak için [imbue](#imbue)önce yalnızca işlev döndürür.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [register_callback](#register_callback) bir örnek.
+Bkz: [register_callback](#register_callback) örneği.
 
 ## <a name="event_callback"></a>  ios_base::event_callback
 
@@ -272,23 +272,23 @@ typedef void (__cdecl *event_callback)(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sp_cycle_errorlog* [olay](#event).
+*_E* [olay](#event).
 
-`_Base` Olay çağrıldı akış.
+*_Temel* akış olayı çağrıldı.
 
 *_Lisans* kullanıcı tanımlı bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle kayıtlı bir işlev işaretçisi türü tanımlayan [register_callback](#register_callback). İşlevi bu tür bir özel durum değil.
+Türü ile kayıtlı bir işleve işaretçi tanımlayan [register_callback](#register_callback). Bu tür bir işlev bir özel durum oluşturmamalıdır.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [register_call](#register_callback) kullanan bir örnek `event_callback`.
+Bkz: [register_call](#register_callback) kullanan bir örnek için `event_callback`.
 
 ## <a name="failure"></a>  ios_base::failure
 
-Sınıf `failure` özel durumlar olarak işlevler tarafından oluşturulan tüm nesne türleri için temel sınıf tanımlar `iostreams` kitaplığa rapor hata akışı arabellek işlemleri sırasında algılandı.
+Sınıf `failure` işlevleri tarafından özel durumlar, tüm nesne türleri için temel sınıf tanımlar `iostreams` kitaplığına Akış Arabellek işlemleri sırasında algılanan hataları bildir.
 
 ```cpp
 namespace std {
@@ -307,7 +307,7 @@ namespace std {
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından döndürülen değer `what()` bir kopyası `_Message`, büyük olasılıkla genişletilmiş dayalı bir test ile `_Code`. Varsa `_Code` belirtilmezse, varsayılan değer `make_error_code(io_errc::stream)`.
+Tarafından döndürülen değer `what()` bir kopyasıdır `_Message`, temel bir test ile büyük olasılıkla Genişletilmiş `_Code`. Varsa `_Code` belirtilmezse, varsayılan değer `make_error_code(io_errc::stream)`.
 
 ### <a name="example"></a>Örnek
 
@@ -340,7 +340,7 @@ Caught an exception: ios_base::failbit set
 
 ## <a name="flags"></a>  ios_base::Flags
 
-Geçerli bayrağı ayarları döndürür veya ayarlar.
+Geçerli bayrak ayarlarını döndürür veya ayarlar.
 
 ```cpp
 fmtflags flags() const;
@@ -349,7 +349,7 @@ fmtflags flags(fmtflags fmtfl);
 
 ### <a name="parameters"></a>Parametreler
 
-`fmtfl` Yeni `fmtflags` ayarı.
+*fmtfl* yeni `fmtflags` ayarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -357,9 +357,9 @@ fmtflags flags(fmtflags fmtfl);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ios_base::fmtflags](#fmtflags) bayrakları listesi.
+Bkz: [ios_base::fmtflags](#fmtflags) bayrakların listesi için.
 
-İlk üye işlevi saklı biçimi bayrakları döndürür. İkinci üye fonksiyonu depoları `fmtfl` biçimi bayrakları döndürür, önceki değeri depolanır.
+İlk üye işlevi, depolanan biçim bayrakları döndürür. İkinci üye işlevi depoları *fmtfl* biçim bayrakları döndürür, önceki değeri depolanır.
 
 ### <a name="example"></a>Örnek
 
@@ -385,7 +385,7 @@ int main ( )
 
 ## <a name="fmtflags"></a>  ios_base::fmtflags
 
-Çıktı görünümünü belirtmek için sabitleri.
+Çıkış görünümünü belirtmek için sabitler.
 
 ```cpp
 class ios_base {
@@ -415,47 +415,47 @@ public:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipülatörleri destekleyen [ios](../standard-library/ios.md).
+İçinde manipülatörleri destekler [ios](../standard-library/ios.md).
 
-Biçim bayrakları depolayan bir nesneyi tanımlayan bir bit maskesi türü türüdür. (Öğeleri) ayrı bayrak değerleri şunlardır:
+Biçim bayrakları depolayan bir nesneyi tanımlayan bir bit maskesi türü türüdür. (Öğeleri) ayrı bayrağı değerler şunlardır:
 
-- `dec`, veya ondalık biçiminde tamsayı değerlerini ayıklayın.
+- `dec`, eklemek veya ondalık biçiminde tamsayı değerlerini ayıklamak için.
 
-- `hex`, eklemek veya tamsayı değerleri onaltılık biçimde ayıklamak için.
+- `hex`, eklemek veya onaltılık biçiminde tamsayı değerlerini ayıklamak için.
 
-- `oct`, veya sekizli biçiminde tamsayı değerlerini ayıklayın.
+- `oct`, eklemek veya tamsayı değerleri, sekizli biçimdedir ve ayıklamak için.
 
-- `showbase`, oluşturulmuş bir tamsayı alan tabanı ortaya çıkarır bir önek eklemek için.
+- `showbase`, temel bir oluşturulmuş bir tamsayı alan gösteren bir önek eklenecek.
 
-- `internal`, bir alan genişliği oluşturulan bir sayısal alana iç bir noktada dolgu karakterleri ekleyerek gerektiğinde doldurulacak. (Alan genişliği ayarlama hakkında daha fazla bilgi için bkz: [setw](../standard-library/iomanip-functions.md#setw)).
+- `internal`, bir alan genişliği için oluşturulan bir sayısal alan iç bir noktada doldurma karakterleri ekleyerek gerektiğinde doldurulacak. (Alan genişliği ayarlama hakkında daha fazla bilgi için bkz. [setw](../standard-library/iomanip-functions.md#setw)).
 
-- `left`, bir alan genişliği için oluşturulan alana (sola yaslamayı) sonunda dolgu karakterleri ekleyerek gerektiğinde doldurulacak.
+- `left`, bir alan genişliği için oluşturulan alana (sol gerekçe) sonunda doldurma karakterleri ekleyerek gerektiğinde doldurulacak.
 
-- `right`, bir alan genişliği oluşturulan alanın (sağa yaslamayı) başında dolgu karakterleri ekleyerek gerektiğinde doldurulacak.
+- `right`, bir alan genişliği için oluşturulan alana (doğru gerekçe) başında doldurma karakterleri ekleyerek gerektiğinde doldurulacak.
 
-- `boolalpha`, eklemek veya türündeki nesneleri ayıklamak için `bool` adları olarak (gibi `true` ve `false`) yerine sayısal değer olarak.
+- `boolalpha`, ekleme veya türünden nesnelerin ayıklama **bool** adları olarak (gibi **true** ve **false**) olarak sayısal değerlerin değil.
 
-- `fixed`, kayan nokta değerlerine sabit noktalı biçimiyle (üstel alan yok) eklemek için.
+- `fixed`, kayan nokta değerini sabit noktalı biçim (ile üs alan yok) eklemek için.
 
-- `scientific`, kayan nokta değerlerine bilimsel biçimiyle (üstel alanı) eklemek için.
+- `scientific`, kayan nokta değerleri biçiminde bilimsel (üstel bir alan) eklemek için.
 
-- `showpoint`, ondalık ayırıcıdan koşulsuz olarak oluşturulan bir kayan nokta alanına eklemek için.
+- `showpoint`, bir ondalık noktası koşulsuz olarak oluşturulan bir kayan nokta alanına eklemek için.
 
 - `showpos`, negatif olmayan bir oluşturulmuş sayısal alana bir artı işareti eklemek için.
 
-- `skipws`, başında boşluk belirli ayıklamaları önce atlanacak.
+- `skipws`, baştaki boşluk belirli ayıklamalar önce atlanacak.
 
-- `unitbuf`, sonra her ekleme çıkış temizlemek için.
+- `unitbuf`, her eklemeden sonra çıktı temizleyemedi.
 
-- `uppercase`, küçük harfler, büyük harf eşdeğerleri belirli eklemeleri eklemek için.
+- `uppercase`, bazı eklemeler küçük harfler, büyük harf eşdeğeri eklenecek.
 
-Ayrıca, çeşitli yararlı değerler şunlardır:
+Ayrıca, birçok yararlı değerler şunlardır:
 
 - `adjustfield`, olarak tanımlanan bir bit maskesi `internal` &#124; `left`&#124; `right`
 
-- `basefield`, olarak tanımlanan `dec` &#124; `hex`&#124; `oct`
+- `basefield`, tanımlanan `dec` &#124; `hex`&#124; `oct`
 
-- `floatfield`, olarak tanımlanan `fixed`&#124; `scientific`
+- `floatfield`, tanımlanan `fixed`&#124; `scientific`
 
 Bu değişiklik işlevleri örnekleri bayrakları biçimlendirmek için bkz: [ \<iomanip >](../standard-library/iomanip.md).
 
@@ -491,7 +491,7 @@ C
 
 ## <a name="imbue"></a>  ios_base::imbue
 
-Yerel olarak değiştirir.
+Yerel ayar değiştirir.
 
 ```cpp
 locale imbue(const locale& _Loc);
@@ -499,7 +499,7 @@ locale imbue(const locale& _Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Loc` Yeni yerel ayarı.
+*_Loc* yeni yerel ayarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -507,11 +507,11 @@ locale imbue(const locale& _Loc);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi depoları `_Loc` yerel ayar nesnesindeki ve daha sonra geri çağırma olay raporlar ve `imbue_event`. Önceki depolanan değeri döndürür.
+Üye işlevi depoları *_Loc* yerel ayar nesnesi içinde ve daha sonra geri çağırma olay raporlar ve `imbue_event`. Önceki depolanan değeri döndürür.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue) bir örnek için.
+Bkz: [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue) örneği.
 
 ## <a name="init"></a>  ios_base::Init
 
@@ -523,7 +523,7 @@ class Init { };
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç içe geçmiş sınıf standart iostreams nesneleri düzgün, rasgele bir statik nesne için bir oluşturucu yürütülmesi daha önce oluşturulan emin olan yapım sağlar nesneyi açıklar.
+İç içe geçmiş sınıf, standart iostreams nesnelerin düzgün, rastgele bir statik nesne için bir oluşturucu yürütülmesini önce oluşturulan emin olan yapı sağlar. bir nesneyi tanımlar.
 
 ## <a name="ios_base"></a>  ios_base::ios_base
 
@@ -535,11 +535,11 @@ ios_base();
 
 ### <a name="remarks"></a>Açıklamalar
 
-(Korumalı) Oluşturucu hiçbir şey yapmaz. Sonraki çağrı **basic_ios::**[init](../standard-library/basic-ios-class.md#init) güvenle yok önce nesne başlatması gerekir. Bu nedenle, yalnızca güvenli sınıfı ios_base Şablon sınıfı için temel sınıf olarak amaçlıdır [basic_ios](../standard-library/basic-ios-class.md).
+(Korumalı) Oluşturucu hiçbir şey yapmaz. Bir sonraki çağrı **basic_ios::**[init](../standard-library/basic-ios-class.md#init) güvenli bir şekilde edilebilir önce nesneyi başlatmak gerekir. Bu nedenle, yalnızca güvenli ios_base sınıfı için Şablon sınıfı için temel sınıf olarak kullanımda [basic_ios](../standard-library/basic-ios-class.md).
 
 ## <a name="iostate"></a>  ios_base::iostate
 
-Bir akış durumunu açıklayan sabitleri türü.
+Bir akış durumunu açıklayan sabit türü.
 
 ```cpp
 class ios_base {
@@ -555,19 +555,19 @@ public:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Akış durum bilgilerini depolayan bir nesneyi tanımlayan bir bit maskesi türü türüdür. (Öğeleri) ayrı bayrak değerleri şunlardır:
+Akışa durum bilgilerini depolayan bir nesne tanımlayan bir bit maskesi türünde türüdür. (Öğeleri) ayrı bayrağı değerler şunlardır:
 
-- `badbit`, Akış Arabellek bütünlüğünü kaybı kaydetmek için.
+- `badbit`, bir akış arabelleğinin bütünlüğünü kaybı kaydetmek için.
 
-- `eofbit`, kayıt son bir akıştan ayıklanıyor sırasında dosya için.
+- `eofbit`, kayıt-bir akıştan ayıklanıyor sırasında dosya sonu için.
 
-- `failbit`, geçerli bir alan bir akıştan ayıklamak için bir hata kaydetmek için.
+- `failbit`, geçerli bir alan bir akıştan ayıklamak için hata kaydetmek için.
 
-Ayrıca, yararlı bir değer olan `goodbit`, yukarıda açıklanan BITS hiçbiri nerede ayarlanır ( `goodbit` sıfır olması garanti).
+Ayrıca, kullanışlı bir değerdir `goodbit`, ayarladığınız yerdir yukarıda açıklanan BITS hiçbiri (`goodbit` sıfır olması sağlanır).
 
 ## <a name="iword"></a>  ios_base::iword
 
-Olarak depolanması için bir değer atayan bir `iword`.
+Olarak depolanacak değer atayan bir `iword`.
 
 ```cpp
 long& iword(int idx);
@@ -575,23 +575,23 @@ long& iword(int idx);
 
 ### <a name="parameters"></a>Parametreler
 
-`idx` Dizini olarak depolamak için bir `iword`.
+*IDX* dizin değeri olarak depolamak için bir `iword`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini öğesine bir başvuru döndürür `idx` türündeki öğeler ile Genişletilebilir dizinin **uzun**. Tüm öğeleri etkili bir şekilde varsa ve başlangıçta sıfır değerini depolar. Sonraki çağrısından sonra döndürülen başvuru geçersiz `iword` nesne için bir çağrı tarafından değiştirilmiş sonra nesnesi için **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt), veya nesne yok.
+Üye işlevi öğeye bir başvuru döndürür *IDX* Genişletilebilir dizinin öğelerini türle **uzun**. Tüm öğeleri etkili bir şekilde varsa ve ilk başta sıfır değeri depolar. Sonraki çağrısından sonra döndürülen başvuru geçersiz `iword` nesne için bir çağrı tarafından değiştirilen sonra nesne **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt), veya nesnesi yok edildikten sonra.
 
-Varsa `idx` negatif veya öğesi için benzersiz depolama kullanılamıyorsa, işlev çağrıları [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** ve benzersiz olmayabilir bir başvuru döndürür.
+Varsa *IDX* negatif veya öğesi için benzersiz bir depolama alanı kullanılamıyorsa, işlev çağrıları [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** ve benzersiz olmayabilir bir başvuru döndürür.
 
-Türündeki tüm nesneler üzerinde kullanım için benzersiz bir dizin almak için `ios_base`, çağrı [xalloc](#xalloc).
+Türdeki tüm nesneler üzerinde kullanım için benzersiz bir dizinini elde etmek için `ios_base`, çağrı [xalloc](#xalloc).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [xalloc](#xalloc) nasıl kullanılacağına ilişkin bir örnek için `iword`.
+Bkz: [xalloc](#xalloc) nasıl kullanılacağını gösteren bir örnek `iword`.
 
 ## <a name="openmode"></a>  ios_base::Openmode
 
-Bir akış ile etkileşim açıklar.
+Bir akış ile etkileşim kurmak açıklar.
 
 ```cpp
 class ios_base {
@@ -607,19 +607,19 @@ public:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür bir `bitmask type` birkaç iostreams nesneleri için açılış modu depolayabilir nesneyi açıklar. (Öğeleri) ayrı bayrak değerleri şunlardır:
+Türü bir `bitmask type` birkaç iostreams nesneler için açılış modu depolayan nesneyi tanımlar. (Öğeleri) ayrı bayrağı değerler şunlardır:
 
-- **Uygulama**, her ekleme önce akışın sonuna aranacağını.
+- `app`, her ekleme önce bir akışın sonuna aranacak.
 
-- **Tarih**, kendi denetleme nesnesi ilk oluşturulduğunda bir akışın sonuna arama.
+- `ate`, denetleme, nesne ilk oluşturulduğunda bir akış sonuna aranacak.
 
-- **ikili**, bir dosyayı bir metin akışı olarak değil, ikili akış olarak okunamıyor.
+- `binary`, bir dosyayı bir metin akışına olarak değil, ikili akış olarak okumak için.
 
-- **içinde**, ayıklama akıştan izin vermek için.
+- `in`, ayıklama akıştan izin vermek için.
 
-- **out**, bir akışa ekleme izin vermek için.
+- `out`, bir akışa ekleme izin vermek için.
 
-- **trunc**, kendi kontrol eden bir nesne oluşturulduğunda, varolan bir dosyanın içeriğini silmek için.
+- `trunc`, kendi kontrol eden bir nesne oluşturulduğunda, varolan bir dosyanın içeriğini silmek için.
 
 ### <a name="example"></a>Örnek
 
@@ -641,7 +641,7 @@ int main ( )
 
 ## <a name="op_eq"></a>  ios_base::operator =
 
-İos_base nesneleri atama işleci.
+İos_base nesneler için atama işleci.
 
 ```cpp
 ios_base& operator=(const ios_base& right);
@@ -649,15 +649,15 @@ ios_base& operator=(const ios_base& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Türünde bir nesne `ios_base`.
+*doğru* türünde bir nesne `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Atanmasına nesnesi.
+Atanan nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleci, Genişletilebilir bir dizi yeni bir kopyasını oluşturma saklı biçimlendirme bilgileri kopyalar. Daha sonra döndürür  **\*bu**. Geri Çağırma yığını kopyalanmaz unutmayın.
+İşleci, Genişletilebilir bir dizi yeni kopyalayarak saklı biçimlendirme bilgileri kopyalar. Ardından döndürür  **\*bu**. Geri çağırma yığınını kopyalanmaz unutmayın.
 
 Bu işleç yalnızca türetilmiş sınıfları tarafından kullanılan `ios_base`.
 
@@ -672,15 +672,15 @@ streamsize precision(streamsize _Prec);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Prec` Görüntülenecek basamak sayısı veya sabit gösteriminde ondalık basamak sayısı.
+*_Prec* görüntülemek için anlamlı basamak sayısı veya sabit gösterimde ondalık basamak sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlevi saklı döndürür [görüntü duyarlılığı](../standard-library/ios-base-class.md). İkinci üye fonksiyonu depoları `_Prec` görüntü duyarlık döndürür, önceki değeri depolanır.
+İlk üye işlevi saklı döndürür [görüntü duyarlılığı](../standard-library/ios-base-class.md). İkinci üye işlevi depoları *_Prec* görüntüleme duyarlılığına döndürür, önceki değeri depolanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayan nokta sayıları ile sabit gösteriminde görüntülenir [sabit](../standard-library/ios-functions.md#fixed).
+Kayan nokta sayıları ile sabit gösterimi görüntülenir [sabit](../standard-library/ios-functions.md#fixed).
 
 ### <a name="example"></a>Örnek
 
@@ -708,7 +708,7 @@ int main( )
 
 ## <a name="pword"></a>  ios_base::pword
 
-Olarak depolanması için bir değer atayan bir `pword`.
+Olarak depolanacak değer atayan bir `pword`.
 
 ```cpp
 void *& pword(int _Idx);
@@ -716,15 +716,15 @@ void *& pword(int _Idx);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Idx` Dizini olarak depolamak için bir `pword`.
+*_Idx* dizin değeri olarak depolamak için bir `pword`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini öğesi _ bir başvuru döndürür *IDX* türündeki öğeler ile Genişletilebilir dizinin `void` işaretçi. Tüm öğeleri etkili bir şekilde yok ve null işaretçinin başlangıçta saklayın. Sonraki çağrısından sonra döndürülen başvuru geçersiz `pword` nesne için bir çağrı tarafından değiştirilmiş sonra nesnesi için **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt), veya nesne yok.
+Üye işlevi öğesi _ bir başvuru döndürür *IDX* Genişletilebilir dizinin öğelerini türle **void** işaretçi. Tüm öğeleri etkili bir şekilde varsa ve başlangıçta boş işaretçi depolar. Sonraki çağrısından sonra döndürülen başvuru geçersiz `pword` nesne için bir çağrı tarafından değiştirilen sonra nesne **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt), veya nesnesi yok edildikten sonra.
 
-Varsa _ *IDX* negatif veya öğesi için benzersiz depolama kullanılamıyorsa, işlevi çağıran [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** ve benzersiz olmayabilir bir başvuru döndürür.
+_ *IDX* negatif veya öğe için benzersiz bir depolama alanı kullanılamıyorsa, işlev çağıran [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** ve benzersiz olmayabilir bir başvuru döndürür.
 
-Türündeki tüm nesneler üzerinde kullanım için benzersiz bir dizin almak için `ios_base`, çağrı [xalloc](#xalloc).
+Türdeki tüm nesneler üzerinde kullanım için benzersiz bir dizinini elde etmek için `ios_base`, çağrı [xalloc](#xalloc).
 
 ### <a name="example"></a>Örnek
 
@@ -732,7 +732,7 @@ Bkz: [xalloc](#xalloc) kullanma örneği için `pword`.
 
 ## <a name="register_callback"></a>  ios_base::register_callback
 
-Bir geri çağırma işlevini belirtir.
+Bir geri çağırma işlevi belirtir.
 
 ```cpp
 void register_callback(
@@ -741,13 +741,13 @@ void register_callback(
 
 ### <a name="parameters"></a>Parametreler
 
-`pfn` Geri çağırma işlevi işaretçisi.
+*pfn* geri çağırma işlevi işaretçisi.
 
-`idx` Kullanıcı tanımlı bir sayı.
+*IDX* kullanıcı tanımlı bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini çifti iter `{pfn, idx}` saklı geri çağırma yığına [geri çağırma yığını](../standard-library/ios-base-class.md). Bir geri çağırma olay **ev** bildirilir işlevleri çağrılır, kayıt, ters sırada ifadeyle `(*pfn)(ev, *this, idx)`.
+Üye işlevi çifti gönderim `{pfn, idx}` saklı geri çağırma yığına [geri çağırma yığınını](../standard-library/ios-base-class.md). Bir geri çağırma olay **ev** bildirilir işlevleri çağrılır, kayıt, ters sırada ifadeyle `(*pfn)(ev, *this, idx)`.
 
 ### <a name="example"></a>Örnek
 
@@ -838,7 +838,7 @@ an erase event
 
 ## <a name="seekdir"></a> ios_base::seekdir
 
-Uzaklık işlemleri için başlangıç noktası belirtir.
+İşlemleri için başlangıç noktası belirtir.
 
 ```cpp
 namespace std {
@@ -855,13 +855,13 @@ namespace std {
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevlerini birkaç iostream sınıfları için bağımsız değişken olarak kullanılan arama modu depolayabilir bir nesneyi tanımlayan bir numaralandırılmış türü türüdür. Ayrı bayrak değerleri şunlardır:
+Birkaç iostream sınıflarının üye işlevleri bağımsız değişken olarak kullanılan arama modunda depolayan bir nesne tanımlayan bir listeden seçimli türü türüdür. Farklı bayrak değerleri şunlardır:
 
-- **beg**, arama (geçerli okuma alter veya konumu yazma) bir dizi (array, akış veya dosya) başına göre.
+- `beg`, aranacak (alter geçerli okuma veya yazma konumunu) bir sıra (array, akış veya dosya) başlangıcına göre.
 
-- **Geçerli**, bir dizi içindeki geçerli konumu göre arama.
+- `cur`, bir dizi içinde geçerli konumuna göre arama.
 
-- **Son**, bir dizinin sonuna göre arama.
+- `end`, bir dizinin sonuna göreli aranacak.
 
 ### <a name="example"></a>Örnek
 
@@ -887,7 +887,7 @@ int main ( )
 
 ## <a name="setf"></a> ios_base::setf
 
-Belirtilen bayrakları ayarlar.
+Belirtilen bayraklar ayarlar.
 
 ```cpp
 fmtflags setf(
@@ -901,7 +901,7 @@ fmtflags setf(
 
 ### <a name="parameters"></a>Parametreler
 
-`_Mask` Açmak için işaretler.
+*_Maskesi* açmak için bayrakları.
 
 *_Unset* devre dışı bırakmak için bayrak.
 
@@ -939,7 +939,7 @@ int main( )
 
 ## <a name="sync_with_stdio"></a> ios_base::sync_with_stdio
 
-İostream ve C çalışma zamanı kitaplığı operations kaynak kodunda göründükleri sırada gerçekleşmesini sağlar.
+İostream ve C çalışma zamanı kitaplığı işlemleri kaynak kodunda göründükleri sırayla gerçekleşmemesini sağlar.
 
 ```cpp
 static bool sync_with_stdio(
@@ -949,7 +949,7 @@ static bool sync_with_stdio(
 
 ### <a name="parameters"></a>Parametreler
 
-`_Sync` Tüm akışları ile eşitlenmiş olup **stdio**.
+*_Sync* tüm akışları ile eşitleme halindeki `stdio`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -957,11 +957,11 @@ static bool sync_with_stdio(
 
 ### <a name="remarks"></a>Açıklamalar
 
-    The static member function stores a **stdio** sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores `_Sync` in the **stdio** sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
+    The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
 
 ## <a name="unsetf"></a> ios_base::unsetf
 
-Belirtilen bayrakları kapalı olması neden olur.
+Belirtilen bayraklar kapalı olması neden olur.
 
 ```cpp
 void unsetf(
@@ -971,7 +971,7 @@ void unsetf(
 
 ### <a name="parameters"></a>Parametreler
 
-`_Mask` Kapatmak istediğiniz bayraklar.
+*_Maskesi* kapatmak istediğiniz bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -983,7 +983,7 @@ void unsetf(
 
 ## <a name="width"></a> ios_base::width
 
-Çıkış akışı uzunluğunu belirler.
+Çıkış akışına uzunluğunu ayarlar.
 
 ```cpp
 streamsize width( ) const;
@@ -994,7 +994,7 @@ streamsize width(
 
 ### <a name="parameters"></a>Parametreler
 
-`_Wide` Çıkış akışı istenen boyutu.
+*_Wide* çıkış akışı istenen boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1002,7 +1002,7 @@ streamsize width(
 
 ### <a name="remarks"></a>Açıklamalar
 
-    The first member function returns the stored field width. The second member function stores `_Wide` in the field width and returns its previous stored value.
+    The first member function returns the stored field width. The second member function stores *_Wide* in the field width and returns its previous stored value.
 
 ### <a name="example"></a>Örnek
 

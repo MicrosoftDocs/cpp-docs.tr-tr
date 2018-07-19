@@ -1,5 +1,5 @@
 ---
-title: '&lt;Yeni&gt; işleçleri | Microsoft Docs'
+title: '&lt;Yeni&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +7,12 @@ f1_keywords:
 - new/std::operator delete
 - new/std::operator new
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
-ms.openlocfilehash: 0520b2f45f9f87009b61ded8a5c420c837d1333d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5f21ec03bd36d889c6fbd8d24a2726fb7f18024f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861378"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956120"
 ---
 # <a name="ltnewgt-operators"></a>&lt;Yeni&gt; işleçleri
 
@@ -23,7 +23,7 @@ ms.locfileid: "33861378"
 
 ## <a name="op_delete"></a>  delete işleci
 
-Tek tek nesnelerin için depolama alanı ayırması için bir silme ifadesi tarafından çağrılan işlev.
+Tek nesne için depolama ayırması için ifadeyi silmenin tarafından çağrılan işlev.
 
 ```cpp
 void operator delete(void* ptr) throw();
@@ -37,25 +37,25 @@ void operator delete(void* ptr,
 
 ### <a name="parameters"></a>Parametreler
 
-`ptr` Silme işlemi tarafından geçersiz işlenmek üzere, değeri olan işaretçi.
+*PTR* değeri olan silme işleminden geçersiz işlenmek üzere bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev değerini işlemek için bir silme ifadesi tarafından çağrılır `ptr` geçersiz. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası işleviyle tanımlayabilirsiniz. Değerini kabul etmek için gerekli davranıştır `ptr` yani null ya da, önceki bir çağrı tarafından döndürülen [new işleci](../standard-library/new-operators.md#op_new)( **size_t**).
+İlk işlev değerini işlemek için bir silme ifadesi tarafından çağrılır *ptr* geçersiz. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Bir değeri kabul etmek için gerekli davranıştır *ptr* diğer bir deyişle null ya da daha önceki bir çağrı tarafından döndürülen [new işleci](../standard-library/new-operators.md#op_new)(**size_t**).
 
-Null değeri için varsayılan davranış `ptr` hiçbir şey yapma sağlamaktır. Başka bir değer, `ptr` önceki daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Bu tür bir NULL olmayan değer için varsayılan davranış `ptr` önceki çağrı tarafından ayrılan depolama alanını geri kazanmak için. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını reclaimed gibi depolama belirtilmeyen `operator new`( **size_t**), ya da herhangi bir `calloc`( **size_t**), `malloc`( **size_t**), veya `realloc`( **void\***, **size_t**).
+Null değeri için varsayılan davranış *ptr* hiçbir şey yapma sağlamaktır. Diğer herhangi bir değerini *ptr* daha önce daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Varsayılan davranışı NULL olmayan değer *ptr* önceki çağrı tarafından ayrılan depolamayı geri alma sağlamaktır. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını geri kazanılan gibi depolama belirtilmeyen `operator new`(**size_t**), veya herhangi bir `calloc`( **size_t**), `malloc`( **size_t**), veya `realloc`( **void\***, **size_t**).
 
-İkinci işlev formun yeni bir ifadeye karşılık gelen bir yerleştirme delete ifadesi tarafından çağrılan **yeni**( **std::size_t**). Hiçbir şey yapmaz.
+İkinci işlev formun yeni bir ifadeye karşılık gelen bir yerleştirme delete ifadesi tarafından çağrılır **yeni**( **std::size_t**). Hiçbir şey yapmaz.
 
-Üçüncü işlev formun yeni bir ifadeye karşılık gelen bir yerleştirme delete ifadesi tarafından çağrılan **yeni**( **std::size_t**, **conststd::nothrow_t &**). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası işleviyle tanımlayabilirsiniz. Değerini kabul etmek için gerekli davranıştır `ptr` yani null ya da, önceki bir çağrı tarafından döndürülen `operator new`( **size_t**). Değerlendirmek için varsayılan davranıştır **silmek**( `ptr`).
+Üçüncü işlev, formun yeni bir ifadeye karşılık gelen bir yerleştirme delete ifadesi tarafından çağrılır **yeni**( **std::size_t**, **conststd::nothrow_t &**). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Bir değeri kabul etmek için gerekli davranıştır `ptr` diğer bir deyişle null ya da daha önceki bir çağrı tarafından döndürülen `operator new`( **size_t**). Değerlendirmek için varsayılan davranıştır **Sil**(`ptr`).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [new işleci](../standard-library/new-operators.md#op_new) kullanan bir örnek `operator delete`.
+Bkz: [new işleci](../standard-library/new-operators.md#op_new) kullanan bir örnek **delete işleci**.
 
 ## <a name="op_delete_arr"></a>  delete [] işleci
 
-Nesne dizisi için depolama alanı ayırması için bir silme ifadesi tarafından çağrılan işlev.
+Bir nesne dizisi için depolama ayırması için ifadeyi silmenin tarafından çağrılan işlev.
 
 ```cpp
 void operator delete[](void* ptr) throw();
@@ -69,23 +69,23 @@ void operator delete[](void* ptr,
 
 ### <a name="parameters"></a>Parametreler
 
-`ptr` Silme işlemi tarafından geçersiz işlenmek üzere, değeri olan işaretçi.
+*PTR* değeri olan silme işleminden geçersiz işlenmek üzere bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev tarafından çağrılır bir `delete[]` değerini işlemek için ifade `ptr` geçersiz. İşlev değiştirebilen çünkü programın işlevi C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası ile tanımlayabilirsiniz. Değerini kabul etmek için gerekli davranıştır `ptr` yani null ya da, önceki bir çağrı tarafından döndürülen [new işleci&#91;&#93;](../standard-library/new-operators.md#op_new_arr)( **size_t**). Null değeri için varsayılan davranış `ptr` hiçbir şey yapma sağlamaktır. Başka bir değer, `ptr` önceki daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Bu tür bir NULL olmayan değer için varsayılan davranış `ptr` önceki çağrı tarafından ayrılan depolama alanını geri kazanmak için. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını reclaimed gibi depolama belirtilmeyen [new işleci](../standard-library/new-operators.md#op_new)( **size_t**), ya da herhangi bir `calloc`( **size_t**), `malloc`( **size_t**), veya `realloc`( **void\***, **size_t**).
+İlk işlev çağıran bir `delete[]` değerini işlemek için ifade *ptr* geçersiz. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir fonksiyon tanımlayın çünkü değiştirilebilir bir işlevdir. Bir değeri kabul etmek için gerekli davranıştır *ptr* diğer bir deyişle null ya da daha önceki bir çağrı tarafından döndürülen [new işleci&#91;&#93;](../standard-library/new-operators.md#op_new_arr)(**size_t**). Null değeri için varsayılan davranış *ptr* hiçbir şey yapma sağlamaktır. Diğer herhangi bir değerini *ptr* daha önce daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Varsayılan davranışı NULL olmayan değer *ptr* önceki çağrı tarafından ayrılan depolamayı geri alma sağlamaktır. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını geri kazanılan gibi depolama belirtilmeyen [new işleci](../standard-library/new-operators.md#op_new)(**size_t**), veya herhangi bir `calloc`(**size_t**), `malloc`(**size_t**), veya `realloc`( **void\***, **size_t**).
 
-İkinci işlev yerleştirme tarafından çağrılır `delete[]` ifade ile eşleşen bir `new[]` biçiminde ifade `new[]`( **std::size_t**). Hiçbir şey yapmaz.
+İkinci işlevi tarafından bir yerleştirme denir `delete[]` ifade karşılık gelen bir `new[]` biçiminde ifade `new[]`(**std::size_t**). Hiçbir şey yapmaz.
 
-Üçüncü işlevi bir yerleştirme delete ifade ile eşleşen tarafından çağrılır bir `new[]` biçiminde ifade `new[]`( **std::size_t**, **const std::nothrow_t &**). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası işleviyle tanımlayabilirsiniz. Değerini kabul etmek için gerekli davranıştır `ptr` yani null ya da işleç için önceki bir çağrı tarafından döndürülen `new[]`( **size_t**). Değerlendirmek için varsayılan davranıştır `delete[]`( `ptr`).
+Üçüncü işlevi bir yerleştirme delete deyimi karşılık gelen tarafından adlandırılan bir `new[]` biçiminde ifade `new[]`( **std::size_t**, **const std::nothrow_t &**). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Bir değeri kabul etmek için gerekli davranıştır *ptr* diğer bir deyişle null ya da işleç önceki bir çağrı tarafından döndürülen `new[]`(**size_t**). Değerlendirmek için varsayılan davranıştır `delete[]`( `ptr`).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [new işleci&#91; &#93; ](../standard-library/new-operators.md#op_new_arr) kullanımını örnekleri için `operator delete[]`.
+Bkz: [new işleci&#91; &#93; ](../standard-library/new-operators.md#op_new_arr) kullanımı örnekleri için `operator delete[]`.
 
 ## <a name="op_new"></a>  new işleci
 
-Yeni-ayrı ayrı nesneleri için depolama alanı ayırmak için ifadesi tarafından çağrılan işlev.
+Yeni-tek tek nesneler için ayrılacak ifadesi tarafından çağrılan işlev.
 
 ```cpp
 void* operator new(std::size_t count) throw(bad_alloc);
@@ -99,43 +99,43 @@ void* operator new(std::size_t count,
 
 ### <a name="parameters"></a>Parametreler
 
-`count` Ayrılacak Depolama bayt sayısı.
+*sayısı* depolama ayrılacak bayt sayısı.
 
-`ptr` Döndürülecek işaretçi.
+*PTR* döndürülmesi için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılmış depolama en düşük bayt adresini gösteren bir işaretçi. Veya `ptr.`
+Düşük bayt adresi yeni ayrılan depolama alanı için bir işaretçi. Veya *ptr*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev ayırmak için yeni bir ifade tarafından çağrılır `count` uygun depolama bayt hizalı bu boyut herhangi bir nesne temsil etmek için. Program bir alternatif işlevi C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir ve bu nedenle değiştirebilen bu işlev imzası ile tanımlayabilirsiniz.
+İlk işlev ayırmak için yeni bir ifade tarafından çağrılır `count` depolama baytı uygun şekilde hizalanmış, boyutta herhangi bir nesne temsil etmek için. Program, alternatif bir işlev C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir ve bu nedenle değiştirilebilir, bu işlev imzası ile tanımlayabilirsiniz.
 
-Gerekli istendiği gibi depolama yalnızca ayrılabilen ise NULL olmayan bir işaretçi döndürülecek davranıştır. Her tür ayırma bir işaretçi diğer ayrılmış depolama alanından depolama ayrık verir. Art arda gelen çağrıları tarafından ayrılmış depolama contiguity ve sırası belirtilmemiş. İlk depolanan değer belirtilmedi. Döndürülen işaretçi noktaları ayrılan depolama alanı başlatma (en düşük bayt adresi). Sayısı sıfır ise, döndürülen değer işlev tarafından döndürülen değer eşit karşılaştırın değil.
+Gerekli depolama istendiği yalnızca ayrılabilen ise NULL olmayan bir işaretçi döndürülecek davranıştır. Her tür ayırma bir işaretçi diğer ayrılmış depolama alanından depolama ayrık verir. Contiguity birbirini izleyen çağrılar tarafından ayrılmış depolama ve sırası belirtilmez. İlk depolanan değeri belirtilmemiş. Ayrılan depolama alanını başlatma (en düşük bayt adresi) döndürülen işaretçi işaret eder. Döndürülen değer sayısı sıfır ise, işlev tarafından döndürülen değere eşit karşılaştırmaz.
 
-Döngü yürütmek için varsayılan davranıştır. Döngü içinde işlevi ilk istenen depolama alanı ayırmaya çalışır. Girişimini yapılan bir çağrı içerir olup olmadığını `malloc`( **size_t**) belirtilmedi. Deneme başarılı olursa, işlevi ayrılan depolama alanı için bir işaretçi döndürür. Aksi takdirde işlevi belirlenen çağırır [yeni işleyicisi](../standard-library/new-typedefs.md#new_handler). Çağrılan işlev durumunda döndürür, döngü tekrarlar. Döngü istenen depolama ayırma denemesi başarılı olduğunda veya çağrılan işlev döndürmez sonlandırır.
+Bir döngü yürütmek için varsayılan davranıştır. Döngü içinde işlev ilk istenen depolama ayırmaya çalışır. Girişimini bir çağrı içerir olmadığını `malloc`( **size_t**) belirtilmedi. Girişim başarılı olursa, işlev için ayrılan depolama alanını bir işaretçi döndürür. Aksi halde, işlev belirlenmiş çağırır [yeni işleyici](../standard-library/new-typedefs.md#new_handler). Çağrılan işlev döndürürse, döngü tekrarlanır. İstenen depolama alanı Ayır girişimi başarılı olduğunda veya çağrılan bir işlev değil döndüğünüzde döngüyü sonlandırır.
 
-Yeni bir işleyici gerekli davranışını aşağıdaki işlemlerden birini gerçekleştirmektir:
+Aşağıdaki işlemlerden birini gerçekleştirmek için gerekli yeni bir işleyici davranışını verilmiştir:
 
-- Daha fazla depolama alanı ayırma için kullanılabilir hale getirmek ve ardından döndürür.
+- Daha fazla depolama alanı ayırma için kullanılabilir hale getirmek ve dönün.
 
-- Ya da çağrısı **abort** veya **çıkmak**( `int`).
+- Çağırın ya da **iptal** veya **çıkmak**(`int`).
 
-- Nesne türüne throw **bad_alloc.**
+- Türünde bir nesne **bad_alloc.**
 
-Varsayılan davranışının bir [yeni işleyicisi](../standard-library/new-typedefs.md#new_handler) nesne türüne throw için `bad_alloc`. Null işaretçinin varsayılan yeni işleyicisi belirler.
+Varsayılan davranışını bir [yeni işleyici](../standard-library/new-typedefs.md#new_handler) türünde bir nesne için `bad_alloc`. Bir null işaretçiyse, varsayılan yeni işleyici belirler.
 
-Sırasını ve art arda gelen çağrıları tarafından ayrılmış depolama contiguity `operator new`( **size_t**) depolanan ilk değerleri olarak belirtilmedi.
+Contiguity art arda çağrılar tarafından ayrılmış depolama ve sırası `operator new`(**size_t**) depolanan bir başlangıç değerleri olarak belirtilmemiş.
 
-İkinci işlev ayırmak için bir yerleştirme yeni ifadesi tarafından çağrılır `count` uygun depolama bayt hizalı bu boyut herhangi bir nesne temsil etmek için. Program bir alternatif işlevi C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir ve bu nedenle değiştirebilen bu işlev imzası ile tanımlayabilirsiniz.
+İkinci işlev ayrılacak yerleştirme yeni ifadesi tarafından çağrılır `count` depolama baytı uygun şekilde hizalanmış, boyutta herhangi bir nesne temsil etmek için. Program, alternatif bir işlev C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir ve bu nedenle değiştirilebilir, bu işlev imzası ile tanımlayabilirsiniz.
 
-Döndürülecek varsayılan davranıştır `operator new`( `count`) Bu işlev başarılı olursa. Aksi takdirde null işaretçi döndürür.
+Döndürülecek varsayılan davranıştır `operator new`(`count`), işlev başarılı olursa. Aksi takdirde null bir işaretçi döndürür.
 
-Üçüncü işlev yerleştirme tarafından çağrılır **yeni** biçiminde ifade **yeni** ( *args*) t Burada, *args* bir tek nesne işaretçisi oluşur. Bu, bilinen bir adreste bir nesne oluşturmak için yararlı olabilir. İşlevi döndürür *ptr*.
+Üçüncü işlev tarafından bir yerleştirme denir **yeni** biçiminde ifade **yeni** ( *args*) t Burada, *args* tek nesne işaretçisinin oluşur. Bu bilinen bir adresteki bir nesneye oluşturmak için yararlı olabilir. İşlev döndürür *ptr*.
 
-Tarafından ayrılan depolama alanını boşaltmak için `operator new`, çağrı [delete işleci](../standard-library/new-operators.md#op_delete).
+Ayrılan depolama alanı boşaltmak için **new işleci**, çağrı [delete işleci](../standard-library/new-operators.md#op_delete).
 
-Atma hakkında bilgi için veya yeni, bkz: nonthrowing davranışını [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).
+Oluşturma hakkında bilgi için veya yeni, bkz: nonthrowing davranışını [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).
 
 ### <a name="example"></a>Örnek
 
@@ -182,7 +182,7 @@ int main( )
 
 ## <a name="op_new_arr"></a>  new [] işleci
 
-Ayırma işlevi nesnelerinin bir dizisi için depolama alanı ayırmak için yeni bir ifade tarafından çağrılır.
+Ayırma, bir nesne dizisi için ayrılacak yeni bir ifade tarafından çağrılan işlev.
 
 ```cpp
 void* operator new[](std::size_t count) throw(std::bad_alloc);
@@ -196,25 +196,25 @@ void* operator new[](std::size_t count,
 
 ### <a name="parameters"></a>Parametreler
 
-`count` Dizi nesnesi için ayrılacak depolama bayt sayısı.
+*sayısı* depolama dizi nesnesi için ayrılacak bayt sayısı.
 
-`ptr` Döndürülecek işaretçi.
+*PTR* döndürülmesi için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılmış depolama en düşük bayt adresini gösteren bir işaretçi. Veya `ptr.`
+Düşük bayt adresi yeni ayrılan depolama alanı için bir işaretçi. Veya *ptr*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev tarafından çağrılır bir `new[]` ayırmak için ifade `count` bayt depolama uygun o boyuttaki tüm dizi nesnesini temsil eden hizalanmış ya da daha küçük. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası işleviyle tanımlayabilirsiniz. Gerekli aynı davranıştır [new işleci](../standard-library/new-operators.md#op_new)( **size_t**). Döndürülecek varsayılan davranıştır `operator new`( `count`).
+İlk işlev çağıran bir `new[]` ayrılacak ifade `count` bayt olarak depolama uygun şekilde hizalanmış, boyutta herhangi bir dizi nesne temsil etmek için ya da daha küçük. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Gerekli aynı davranıştır [new işleci](../standard-library/new-operators.md#op_new)(**size_t**). Döndürülecek varsayılan davranıştır `operator new`( `count`).
 
-İkinci işlev yerleştirme tarafından çağrılır `new[]` ayırmak için ifade `count` uygun depolama bayt hizalı bu boyut herhangi bir dizi nesne temsil etmek için. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası işleviyle tanımlayabilirsiniz. Döndürülecek varsayılan davranıştır **operatornew**( `count`) Bu işlev başarılı olursa. Aksi takdirde null işaretçi döndürür.
+İkinci işlevi tarafından bir yerleştirme denir `new[]` ayrılacak ifade `count` depolama baytı uygun şekilde hizalanmış, boyutta herhangi bir dizi nesne temsil etmek için. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Döndürülecek varsayılan davranıştır **operatornew**(`count`), işlev başarılı olursa. Aksi takdirde null bir işaretçi döndürür.
 
-Üçüncü işlev yerleştirme tarafından çağrılır `new[]` biçiminde ifade **yeni** ( *args*) **T**[ **N**]. Burada, *args* bir tek nesne işaretçisi oluşur. İşlevi döndürür `ptr`.
+Üçüncü işlev tarafından bir yerleştirme denir `new[]` biçiminde ifade **yeni** ( *args*) **T**[ **N**]. Burada, *args* tek nesne işaretçisinin oluşur. İşlev döndürür `ptr`.
 
-Tarafından ayrılan depolama alanını boşaltmak için `operator new[]`, çağrı [delete işleci&#91;&#93;](../standard-library/new-operators.md#op_delete_arr).
+Ayrılan depolama alanı boşaltmak için `operator new[]`, çağrı [delete işleci&#91;&#93;](../standard-library/new-operators.md#op_delete_arr).
 
-Atma hakkında bilgi için veya yeni, bkz: nonthrowing davranışını [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).
+Oluşturma hakkında bilgi için veya yeni, bkz: nonthrowing davranışını [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).
 
 ### <a name="example"></a>Örnek
 

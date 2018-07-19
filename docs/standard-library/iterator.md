@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5066e793c58dca9ccc12ccc159a010654df3efbc
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 68d2ca3de8e6e3c05095580ce63a5bac253548c0
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860677"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955458"
 ---
 # <a name="ltiteratorgt"></a>&lt;Yineleyici&gt;
 
@@ -51,26 +51,26 @@ Yineleyiciler, C++ programının tek düzenli olarak farklı veri yapılarıyla 
 
 Daha az gereksinime sahip yineleyiciler yerine daha çok gereksinimi olan ve öğelere çok daha güçlü erişim sağlayan sahip yineleyiciler kullanılabilir. Örneğin, bir ileri yineleyici çağrılır, ardından bunun yerine bir rastgele erişim yineleyici kullanılabilir.
 
-Visual Studio, denetlenmiş ve denetlenmemiş yineleyiciler için bir hata ayıklama modu çeşitliliğini desteklemek amacıyla Standart C++ Kitaplığı yineleyicilerine uzantılar eklemiştir. Daha fazla bilgi için bkz: [güvenli kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md).
+Visual Studio, denetlenmiş ve denetlenmemiş yineleyiciler için bir hata ayıklama modu çeşitliliğini desteklemek amacıyla Standart C++ Kitaplığı yineleyicilerine uzantılar eklemiştir. Daha fazla bilgi için [güvenli kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md).
 
 ### <a name="functions"></a>İşlevler
 
 |İşlev|Açıklama|
 |-|-|
-|[Gelişmiş](../standard-library/iterator-functions.md#advance)|Belirtilen bir konum sayısıyla yineleyiciyi artırır.|
+|[İlerlet](../standard-library/iterator-functions.md#advance)|Belirtilen bir konum sayısıyla yineleyiciyi artırır.|
 |[back_inserter](../standard-library/iterator-functions.md#back_inserter)|Belirtilen kapsayıcının arkasında öğeler ekleyebilen bir yineleyici oluşturur.|
-|[Başlangıç](../standard-library/iterator-functions.md#begin)|Belirtilen bir kapsayıcıdaki ilk öğe için bir yineleyici alır.|
+|[başlayın](../standard-library/iterator-functions.md#begin)|Belirtilen bir kapsayıcıdaki ilk öğe için bir yineleyici alır.|
 |[cbegin](../standard-library/iterator-functions.md#cbegin)|Belirtilen bir kapsayıcıdaki ilk öğe için sabit bir yineleyici alır.|
 |[cend](../standard-library/iterator-functions.md#cend)|Belirtilen kapsayıcıdaki son öğeyi izleyen öğe için sabit bir yineleyici alır.|
 |[uzaklık](../standard-library/iterator-functions.md#distance)|İki yineleyici tarafından ele alınan konumlar arasındaki artış sayısını belirler.|
-|[Bitiş](../standard-library/iterator-functions.md#end)|Belirtilen kapsayıcıdaki son öğeyi izleyen öğeye bir yineleyici alır.|
+|[Son](../standard-library/iterator-functions.md#end)|Belirtilen kapsayıcıdaki son öğeyi izleyen öğeye bir yineleyici alır.|
 |[front_inserter](../standard-library/iterator-functions.md#front_inserter)|Belirtilen kapsayıcının önünde öğeler ekleyebilen bir yineleyici oluşturur.|
 |[inserter](../standard-library/iterator-functions.md#inserter)|Bir kapsayıcıya belirli bir ekleme noktasında yeni bir öğe ekleyen bir yineleyici bağdaştırıcısı.|
-|[make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator)|Oluşturur bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) diğer algoritmalar tarafından kullanılabilir. **Not:** bu işlev bir C++ Standart Kitaplığı Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.|
+|[make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator)|Oluşturur bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) diğer algoritmalarda kullanılabilen. **Not:** bu işlev bir C++ Standart Kitaplığı Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.|
 |[make_move_iterator](../standard-library/iterator-functions.md#make_move_iterator)|Sağlanan yineleyiciyi depolanmış temel yineleyicisi olarak içeren bir taşıma yineleyicisi döndürür.|
-|[make_unchecked_array_iterator](../standard-library/iterator-functions.md#make_unchecked_array_iterator)|Oluşturur bir [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) diğer algoritmalar tarafından kullanılabilir. **Not:** bu işlev bir C++ Standart Kitaplığı Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.|
+|[make_unchecked_array_iterator](../standard-library/iterator-functions.md#make_unchecked_array_iterator)|Oluşturur bir [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) diğer algoritmalarda kullanılabilen. **Not:** bu işlev bir C++ Standart Kitaplığı Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.|
 |[Sonraki](../standard-library/iterator-functions.md#next)|Belirtilen sayıda yineler ve yeni yineleyici konumunu döndürür.|
-|[Önceki](../standard-library/iterator-functions.md#prev)|Belirtilen sayıda geri yineler ve yeni yineleyici konumunu döndürür.|
+|[önceki](../standard-library/iterator-functions.md#prev)|Belirtilen sayıda geri yineler ve yeni yineleyici konumunu döndürür.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -78,33 +78,33 @@ Visual Studio, denetlenmiş ve denetlenmemiş yineleyiciler için bir hata ayık
 |-|-|
 |[operator!=](../standard-library/iterator-operators.md#op_neq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.|
 |[operator==](../standard-library/iterator-operators.md#op_eq_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit olup olmadığını sınar.|
-|[operator <](../standard-library/iterator-operators.md#op_lt)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden küçük olup olmadığını sınar.|
-|[işleci\<=](../standard-library/iterator-operators.md#op_gt_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan küçük olup olmadığını sınar.|
+|[işleç <](../standard-library/iterator-operators.md#op_lt)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden küçük olup olmadığını sınar.|
+|[İşleci\<=](../standard-library/iterator-operators.md#op_gt_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan küçük olup olmadığını sınar.|
 |[operator >](../standard-library/iterator-operators.md#op_gt)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden büyük olup olmadığını sınar.|
 |[operator>=](../standard-library/iterator-operators.md#op_gt_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan büyük olup olmadığını sınar.|
-|[operator +](../standard-library/iterator-operators.md#op_add)|Yineleyici için uzaklık ekler ve yeni döndürür `reverse_iterator` yeni uzaklık konumunda eklenen öğesi adresleme.|
+|[operator +](../standard-library/iterator-operators.md#op_add)|Yineleyiciye bir uzaklık ekler ve yeni döndürür `reverse_iterator` eklenen öğeyi yeni uzaklık konumunda ele alan.|
 |[operator-](../standard-library/iterator-operators.md#operator-)|Bir yineleyiciyi bir başkasından çıkarır ve farkı döndürür.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[back_insert_iterator](../standard-library/back-insert-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Türünde bir kapsayıcıya öğeleri ekler **kapsayıcı**, hangi korumalı erişen **işaretçi** depoladığı nesnesi kapsayıcı olarak adlandırılır.|
-|[bidirectional_iterator_tag](../standard-library/bidirectional-iterator-tag-struct.md)|Dönüş türü için sağlayan bir sınıf bir **iterator_category** çift yönlü yineleyici temsil eden bir işlev.|
+|[back_insert_iterator](../standard-library/back-insert-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Türündeki bir kapsayıcıya öğe ekler; `Container`, korumalı erişir `pointer` bilinen depolandığı kapsayıcı.|
+|[bidirectional_iterator_tag](../standard-library/bidirectional-iterator-tag-struct.md)|Bir dönüş türü sağlayan sınıf bir `iterator_category` çift yönlü yineleyiciyi temsil eden bir işlev.|
 |[checked_array_iterator](../standard-library/checked-array-iterator-class.md)|Bir rastgele erişim, denetlenmiş yineleyici kullanarak bir diziye erişen sınıf. **Not:** Bu sınıf bir C++ Standart Kitaplığı Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.|
-|[forward_iterator_tag](../standard-library/forward-iterator-tag-struct.md)|Dönüş türü için sağlayan bir sınıf bir **iterator_category** iletme yineleyici gösteren işlev.|
-|[front_insert_iterator](../standard-library/front-insert-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Türünde bir kapsayıcıya öğeleri ekler **kapsayıcı**, hangi korumalı erişen **işaretçi** depoladığı nesnesi kapsayıcı olarak adlandırılır.|
-|[input_iterator_tag](../standard-library/input-iterator-tag-struct.md)|Dönüş türü için sağlayan bir sınıf bir **iterator_category** giriş yineleyici temsil eden bir işlev.|
-|[insert_iterator](../standard-library/insert-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Türünde bir kapsayıcıya öğeleri ekler **kapsayıcı**, hangi korumalı erişen **işaretçi** depoladığı nesnesi kapsayıcı olarak adlandırılır. Ayrıca korumalı depolar **yineleyici** sınıfın bir nesnesi **Container::iterator**adlı **iter**.|
-|[istream_iterator](../standard-library/istream-iterator-class.md)|Şablon sınıfı, bir giriş yineleyici nesnesini açıklar. Sınıfın nesnelerini ayıklar **Ty** depoladığı, türü işaretçinin nesnesi aracılığıyla erişen bir giriş akışından `basic_istream` \< **Elem**, **Tr**>.|
-|[istreambuf_iterator](../standard-library/istreambuf-iterator-class.md)|Şablon sınıfı, bir giriş yineleyici nesnesini açıklar. Sınıfının öğeleri ekler **Elem** bir çıkış akışı arabelleğe hangi BT bir nesne türü depoları eriştiği **işaretçi** için `basic_streambuf` \< **Elem**, **Tr**>.|
+|[forward_iterator_tag](../standard-library/forward-iterator-tag-struct.md)|Bir dönüş türü sağlayan sınıf bir `iterator_category` ileriye doğru yineleyiciyi temsil eden bir işlev.|
+|[front_insert_iterator](../standard-library/front-insert-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Türündeki bir kapsayıcıya öğe ekler; `Container`, korumalı erişir `pointer` bilinen depolandığı kapsayıcı.|
+|[input_iterator_tag](../standard-library/input-iterator-tag-struct.md)|Bir dönüş türü sağlayan sınıf bir `iterator_category` giriş yineleyicisini temsil eden bir işlev.|
+|[insert_iterator](../standard-library/insert-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Türündeki bir kapsayıcıya öğe ekler; `Container`, korumalı erişir `pointer` bilinen depolandığı kapsayıcı. Ayrıca korumalı depolar `iterator` sınıfın bir nesnesi `Container::iterator`adlı `iter`.|
+|[istream_iterator](../standard-library/istream-iterator-class.md)|Şablon sınıfı, bir giriş yineleyici nesnesini açıklar. Sınıfın nesneleri ayıklar `Ty` , işaretçi türüne depoladığı nesneyle erişir bir giriş akışından `basic_istream` \< **Elem**, **Tr**>.|
+|[istreambuf_iterator](../standard-library/istreambuf-iterator-class.md)|Şablon sınıfı, bir giriş yineleyici nesnesini açıklar. Sınıfın öğelerine ekler `Elem` çıktı akış arabelleğine hangi BT nesneyle depoladığı türü erişir `pointer` için `basic_streambuf` \< **Elem**, **Tr** >.|
 |[Yineleyici](../standard-library/iterator-struct.md)|Şablon sınıfı, tüm yineleyiciler için bir taban türü olarak kullanılır.|
 |[iterator_traits](../standard-library/iterator-traits-struct.md)|Aynı şekilde başvurulabilsinler diye farklı yineleyici türleriyle ilişkilendirilen kritik türleri sağlayan şablon yardımcı sınıfı.|
-|[move_iterator](../standard-library/move-iterator-class.md)|A `move_iterator` nesne türünde rasgele erişim yineleyici depolar `RandomIterator`. Başvurunun kaldırıldığı durum dışında, rastgele erişimli yineleyici gibi davranır. Sonucu `operator*` için örtük olarak cast `value_type&&:` yapmak için bir `rvalue reference`.|
-|[ostream_iterator](../standard-library/ostream-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Sınıfının nesneleri ekler **türü** bir çıkış akışı hangi BT bir nesne türü depoları eriştiği **işaretçi** için `basic_ostream` \< **Elem** , **Tr**>.|
-|[ostreambuf_iterator Sınıfı](../standard-library/ostreambuf-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Sınıfının öğeleri ekler **Elem** depoladığı, türü işaretçinin nesnesi aracılığıyla erişen bir çıkış akışı arabellek içine `basic_streambuf` \< **Elem**, **Tr**>.|
-|[output_iterator_tag](../standard-library/output-iterator-tag-struct.md)|Dönüş türü için sağlayan bir sınıf **iterator_category** çıkış yineleyici temsil eden bir işlev.|
-|[random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md)|Dönüş türü için sağlayan bir sınıf **iterator_category** rasgele erişim yineleyici temsil eden bir işlev.|
+|[move_iterator](../standard-library/move-iterator-class.md)|A `move_iterator` nesne türünün rastgele erişim yineleyicisini depolar `RandomIterator`. Başvurunun kaldırıldığı durum dışında, rastgele erişimli yineleyici gibi davranır. Sonucu `operator*` için örtük dönüştürme `value_type&&:` yapmak için bir `rvalue reference`.|
+|[ostream_iterator](../standard-library/ostream-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Sınıfın nesneleri ekler `Type` bir çıkış akışına, BT nesneyle depoladığı türü erişir `pointer` için `basic_ostream` \< **Elem**, **Tr**>.|
+|[ostreambuf_iterator Sınıfı](../standard-library/ostreambuf-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Sınıfın öğelerine ekler `Elem` , işaretçi türüne depoladığı nesneyle erişir çıktı akış arabelleğine `basic_streambuf` \< **Elem**, **Tr**>.|
+|[output_iterator_tag](../standard-library/output-iterator-tag-struct.md)|Bir dönüş türü sağlayan sınıf `iterator_category` çıktı yineleyicisini temsil eden bir işlev.|
+|[random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md)|Bir dönüş türü sağlayan sınıf `iterator_category` bir rastgele erişim yineleyicisini temsil eden bir işlev.|
 |[reverse_iterator](../standard-library/reverse-iterator-class.md)|Şablon sınıfı, rastgele erişim yineleyici olarak davranan bir nesneyi yalnızca tersten açıklar.|
 |[unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md)|Bir rastgele erişim, denetlenmemiş yineleyici kullanarak bir diziye erişen sınıf. **Not:** Bu sınıf bir C++ Standart Kitaplığı Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.|
 

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Tuple&gt; işleçleri | Microsoft Docs'
+title: '&lt;Tanımlama grubu&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,23 +13,23 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
-ms.openlocfilehash: c3e5c1e82e98379ff2cefae48f8af89f8fc0b698
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ce4c1a0b7fa1771cf80437d27ed9dd89baa5f220
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859078"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956969"
 ---
-# <a name="lttuplegt-operators"></a>&lt;Tuple&gt; işleçleri
+# <a name="lttuplegt-operators"></a>&lt;Tanımlama grubu&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Karşılaştırma `tuple` eşitsizlik nesneleri.
+Karşılaştırma `tuple` nesneleri için eşitsizlik.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -40,11 +40,12 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` Nth dizi öğesinin türü.
+*TN*  
+ Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev false döndürdüğü `N` 0, aksi takdirde, `get<0>(tpl1) != get<0>(tpl2) || get<1>(tpl1) != get<1>(tpl2) || ... || get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
+İşlev false döndürdüğü `N` Aksi durumda 0 ' dır `get<0>(tpl1) != get<0>(tpl2) || get<1>(tpl1) != get<1>(tpl2) || ... || get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
 
 ### <a name="example"></a>Örnek
 
@@ -91,9 +92,9 @@ false
 true
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Karşılaştırma `tuple` nesneleri daha az.
+Karşılaştırma `tuple` daha az nesne.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -104,11 +105,12 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` Nth dizi öğesinin türü.
+*TN*  
+ Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi ne zaman true değerini döndürür `N` 0 ve ilk farklı değeri büyüktür `tpl1` karşılaştırır karşılık gelen değerden daha az `tpl2`, aksi takdirde false döndürür.
+İşlev true döndürdüğü `N` 0 ve ilk farklı değer Şundan Büyük: `tpl1` karşılık gelen değerden karşılaştırır `tpl2`, aksi takdirde false döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -155,9 +157,9 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Karşılaştırma `tuple` nesneleri daha az veya buna eşit.
+Karşılaştırma `tuple` nesneleri daha az veya eşit.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -168,11 +170,12 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` Nth dizi öğesinin türü.
+*TN*  
+ Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi döndürür `!(tpl2 < tpl1)`.
+İşlev döndürür `!(tpl2 < tpl1)`.
 
 ### <a name="example"></a>Örnek
 
@@ -219,9 +222,9 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Karşılaştırma `tuple` nesneleri eşitlik için.
+Karşılaştırma `tuple` eşitlik için nesneleri.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -232,11 +235,12 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` Nth dizi öğesinin türü.
+*TN*  
+ Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi ne zaman true değerini döndürür `N` 0, aksi takdirde, `get<0>(tpl1) == get<0>(tpl2) && get<1>(tpl1) == get<1>(tpl2) && ... && get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
+İşlev true döndürdüğü `N` Aksi durumda 0 ' dır `get<0>(tpl1) == get<0>(tpl2) && get<1>(tpl1) == get<1>(tpl2) && ... && get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
 
 ### <a name="example"></a>Örnek
 
@@ -283,7 +287,7 @@ true
 false
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
 Karşılaştırma `tuple` için nesneleri büyük.
 
@@ -296,11 +300,12 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` Nth dizi öğesinin türü.
+*TN*  
+ Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi döndürür `tpl2 < tpl1`.
+İşlev döndürür `tpl2 < tpl1`.
 
 ### <a name="example"></a>Örnek
 
@@ -347,7 +352,7 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
 Karşılaştırma `tuple` nesneleri büyük veya eşit.
 
@@ -360,11 +365,12 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` Nth dizi öğesinin türü.
+*TN*  
+ Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi döndürür `!(tpl1 < tpl2)`.
+İşlev döndürür `!(tpl1 < tpl2)`.
 
 ### <a name="example"></a>Örnek
 
@@ -413,4 +419,4 @@ false
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Tuple >](../standard-library/tuple.md)<br/>
+[\<Tanımlama grubu >](../standard-library/tuple.md)<br/>

@@ -48,15 +48,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c477ee69b8bc8e824aae6df1f74ba97d2825524f
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: ebfacd93c8a346c2303e80ded4e28f3314ed10bb
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039166"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339175"
 ---
 # <a name="cmap-class"></a>CMap sınıfı
-Benzersiz anahtar değerlerine eşlemeleri sözlüğü collection sınıfı.  
+Benzersiz anahtarlar ve değerleri eşleyen sözlük koleksiyon sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -66,16 +66,16 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
   
 #### <a name="parameters"></a>Parametreler  
  *KEY*  
- Eşleme için anahtar olarak kullanılan nesne sınıfı.  
+ Harita anahtarı olarak kullanılan nesne sınıfı.  
   
  *ARG_KEY*  
- Veri türü için kullanılan *anahtar* bağımsız değişkenleri; genellikle başvuru *anahtar*.  
+ Veri türü için kullanılan *anahtarı* bağımsız değişkenler; genellikle bir başvuru *anahtar*.  
   
  *DEĞER*  
- Eşlemesinde depolanan nesne sınıfı.  
+ Eşlem içinde depolan bir nesne sınıfı.  
   
  *ARG_VALUE*  
- Veri türü için kullanılan *değeri* bağımsız değişkenleri; genellikle başvuru *değeri*.  
+ Veri türü için kullanılan *değer* bağımsız değişkenler; genellikle bir başvuru *değer*.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -83,53 +83,53 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMap::CPair](#cpair)|Bir anahtar değeri ve ilişkili nesnenin değerini içeren bir iç içe geçmiş yapısı.|  
+|[CMap::CPair](#cpair)|Bir anahtar değeri ve ilişkili nesne değeri içeren bir iç içe geçmiş yapısı.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMap::CMap](#cmap)|Anahtarlarını değerine eşleyen bir koleksiyon oluşturur.|  
+|[CMap::CMap](#cmap)|Anahtarlar ve değerleri eşleyen bir koleksiyon oluşturur.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMap::GetCount](#getcount)|Bu haritada öğe sayısını döndürür.|  
-|[CMap::GetHashTableSize](#gethashtablesize)|Karma tablosunda öğe sayısını döndürür.|  
+|[CMap::GetCount](#getcount)|Bu haritada öğelerin sayısını döndürür.|  
+|[CMap::GetHashTableSize](#gethashtablesize)|Karma tablodaki öğelerin sayısını döndürür.|  
 |[CMap::GetNextAssoc](#getnextassoc)|Yineleme için sonraki öğeyi alır.|  
-|[CMap::GetSize](#getsize)|Bu haritada öğe sayısını döndürür.|  
-|[CMap::GetStartPosition](#getstartposition)|İlk öğe konumunu döndürür.|  
+|[CMap::GetSize](#getsize)|Bu haritada öğelerin sayısını döndürür.|  
+|[CMap::GetStartPosition](#getstartposition)|İlk öğenin konumunu döndürür.|  
 |[CMap::InitHashTable](#inithashtable)|Karma tablo başlatır ve boyutunu belirtir.|  
-|[CMap::IsEmpty](#isempty)|Testleri boş eşleme koşul (öğe yok).|  
-|[CMap::Lookup](#lookup)|Verilen bir anahtar ile eşlenen değer arar.|  
-|[CMap::PGetFirstAssoc](#pgetfirstassoc)|Bir işaretçi ilk öğeye döndürür.|  
-|[CMap::PGetNextAssoc](#pgetnextassoc)|Bir işaretçi yineleme için sonraki öğeye alır.|  
-|[CMap::PLookup](#plookup)|Bir işaretçi değeri belirtilen değerle eşleşen bir anahtara döndürür.|  
-|[CMap::RemoveAll](#removeall)|Bu eşlemesinden tüm öğeleri kaldırır.|  
+|[CMap::IsEmpty](#isempty)|(Öğe yok) boş-map koşulu sınar.|  
+|[CMap::Lookup](#lookup)|Belirli bir anahtar ile eşlenen değeri arar.|  
+|[CMap::PGetFirstAssoc](#pgetfirstassoc)|İlk öğeye bir işaretçi döndürür.|  
+|[CMap::PGetNextAssoc](#pgetnextassoc)|Bir işaretçi, yineleme için sonraki öğeyi alır.|  
+|[CMap::PLookup](#plookup)|Değeri belirtilen değerle eşleşen bir anahtara bir işaretçi döndürür.|  
+|[CMap::RemoveAll](#removeall)|Tüm öğeleri bu eşlemden kaldırır.|  
 |[CMap::RemoveKey](#removekey)|Bir anahtar tarafından belirtilen bir öğeyi kaldırır.|  
-|[CMap::SetAt](#setat)|Bir öğenin eşlemeye ekler; eşleşen bir anahtarı bulunursa, var olan öğenin yerini alır.|  
+|[CMap::SetAt](#setat)|Haritayı bir öğe ekler; eşleşen bir anahtar bulunursa, var olan öğenin yerini alır.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMap::operator]](#operator_at)|Bir öğenin eşlemeye ekler — işleci değiştirme `SetAt`.|  
+|[CMap::operator]](#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir anahtar-değer çifti (öğesi) eşlemeye ekledikten sonra verimli bir şekilde almak veya erişmek için anahtar kullanılarak çifti silin. Haritanın tüm öğeler üzerinde yineleyebilirsiniz.  
+ Haritayı bir anahtar-değer çifti (öğesi) ekledikten sonra verimli bir şekilde alın veya erişim anahtarı kullanılarak çifti silin. Eşlem içindeki tüm öğeleri üzerinde yineleyebilirsiniz.  
   
- Türünde bir değişken **konumu** alternatif erişim girişleri için kullanılır. Kullanabileceğiniz bir **konumu** "bir giriş anımsaması" ve eşlemesi üzerinden yineleme. Bu yineleme anahtar değere göre sıralı olduğunu düşünebilirsiniz; değil. Alınan öğeler belirsiz dizisidir.  
+ KONUM türünde bir değişken, girişler için alternatif erişim için kullanılır. Bir konum "unutmayın bir giriş için" ve eşlemesi üzerinden yineleme yapmak için kullanabilirsiniz. Bu yineleme anahtar değere göre sıralı olduğunu düşünebilirsiniz; Bu değil. Alınan öğe dizisi belirsiz.  
   
- Genel yardımcı işlevleri sınıfı çağrısı belirli üye işlevleri için çoğu kullanımlarını özelleştirilmelidir `CMap` sınıfı. Bkz: [koleksiyon sınıfı Yardımcıları](../../mfc/reference/collection-class-helpers.md) makroları ve genel öğeleri bölümünde `MFC Reference`.  
+ Bu sınıf, genel yardımcı işlevleri çağrının belirli üye işlevleri, çoğu kullanım için özelleştirilmelidir `CMap` sınıfı. Bkz: [koleksiyon sınıfı Yardımcıları](../../mfc/reference/collection-class-helpers.md) makroları ve genel öğeleri bölümünde **MFC başvurusu**.  
   
- `CMap` geçersiz kılmaları [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) seri hale getirme ve alt öğeleri dökme desteklemek için. Bir harita bir arşiv kullanarak depolanıyorsa `Serialize`, her map öğesi sırayla serileştirilir. Varsayılan uygulaması `SerializeElements` yardımcı işlevini Bitsel yazma yapar. İşaretçi koleksiyonu öğelerinin seri hale getirme hakkında bilgi türetildiği için `CObject` veya diğer kullanıcı tanımlı türler bkz [nasıl yapılır: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md).  
+ `CMap` geçersiz kılmalar [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) seri hale getirme ve alt öğeleri dökme desteklemek için. Bir arşiv kullanarak bir harita depolanıyorsa `Serialize`, her harita öğesini sırayla serileştirilir. Varsayılan uygulaması `SerializeElements` yardımcı işlevi, bit düzeyinde bir yazma yapar. Türetilen seri hale getirme işaretçi koleksiyonu öğelerinin hakkında bilgi için `CObject` veya diğer kullanıcı tanımlı türleri [nasıl yapılır: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md).  
   
- Ayrı ayrı öğeler (anahtarlar ve değerler) eşlemesindeki bir tanılama dökümü gerekiyorsa, 1 veya daha büyük döküm bağlam derinliği ayarlamanız gerekir.  
+ Bir tanılama dökümü (anahtarlar ve değerler) map tek tek öğelerin gerekiyorsa, 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir.  
   
- Zaman bir `CMap` Nesne silindiğinden veya öğeleri kaldırıldığında, anahtarları ve değerleri kaldırılır.  
+ Olduğunda bir `CMap` nesnesi silindiğinde veya anahtarları ve değerleri öğelerine kaldırıldığında kaldırılır.  
   
- Eşleme sınıf türetme listesi türetme benzer. Makalesine bakın [koleksiyonları](../../mfc/collections.md) özel amaçlı listesi sınıfının türetme bir çizimi için.  
+ Map sınıfı türetme için liste türetme benzerdir. Makaleye göz atın [koleksiyonları](../../mfc/collections.md) özel amaçlı listesi sınıfının türetme bir gösterim.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -151,30 +151,30 @@ CMap(INT_PTR nBlockSize = 10);
  Harita genişletmek için bellek ayırma ayrıntı düzeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Harita büyüdükçe, bellek, biriminde ayrılır *nBlockSize* girişleri.  
+ Harita büyüdükçe, birimleri cinsinden ayrılan bellek *nBlockSize* girdileri.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#56](../../mfc/codesnippet/cpp/cmap-class_1.cpp)]  
   
 ##  <a name="cpair"></a>  CMap::CPair  
- Bir anahtar değeri ve ilişkili nesnenin değerini içerir.  
+ Bir anahtar değeri ve ilişkili nesne değeri içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu bir sınıf içinde iç içe geçmiş yapısıdır [CMap](../../mfc/reference/cmap-class.md).  
   
  Yapısı iki alandan oluşur:  
   
-- **anahtar** anahtar türü gerçek değeri.  
+- `key` Anahtar türü gerçek değeri.  
   
-- **değer** ilişkili nesnenin değeri.  
+- `value` İlişkili nesne değeri.  
   
  Dönüş değerleri depolamak için kullanılan [CMap::PLookup](#plookup), [CMap::PGetFirstAssoc](#pgetfirstassoc), ve [CMap::PGetNextAssoc](#pgetnextassoc).  
   
 ### <a name="example"></a>Örnek  
- Örneğin bir kullanım örnek için bkz [CMap::PLookup](#plookup).  
+ Kullanım örneği için örneğin bakın [CMap::PLookup](#plookup).  
   
 ##  <a name="getcount"></a>  CMap::GetCount  
- Haritadaki öğe sayısını alır.  
+ Eşlem içindeki öğelerin sayısını alır.  
   
 ```  
 INT_PTR GetCount() const;  
@@ -184,10 +184,10 @@ INT_PTR GetCount() const;
  Öğe sayısı.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMap::Lookup](#lookup).  
+ Örneğin bakın [CMap::Lookup](#lookup).  
   
 ##  <a name="gethashtablesize"></a>  CMap::GetHashTableSize  
- Harita karma tablodaki öğeler sayısını belirler.  
+ Harita karma tablosundaki öğelerin sayısını belirler.  
   
 ```  
 UINT GetHashTableSize() const;  
@@ -200,7 +200,7 @@ UINT GetHashTableSize() const;
  [!code-cpp[NVC_MFCCollections#57](../../mfc/codesnippet/cpp/cmap-class_2.cpp)]  
   
 ##  <a name="getnextassoc"></a>  CMap::GetNextAssoc  
- Harita öğesi alır `rNextPosition`, ardından güncelleştirmeleri `rNextPosition` harita sonraki öğe başvurmak için.  
+ Harita öğe alır `rNextPosition`, ardından güncelleştirmeleri `rNextPosition` haritadaki sonraki öğeye başvurmak için.  
   
 ```  
 void GetNextAssoc(
@@ -211,59 +211,59 @@ void GetNextAssoc(
   
 ### <a name="parameters"></a>Parametreler  
  *rNextPosition*  
- Bir başvuru belirtir bir **konumu** önceki tarafından döndürülen değer `GetNextAssoc` veya `GetStartPosition` çağırın.  
+ Bir önceki tarafından döndürülen bir konum değeri bir başvuru belirtir `GetNextAssoc` veya `GetStartPosition` çağırın.  
   
  *KEY*  
- Haritanın anahtarın türünü belirten bir şablon parametre.  
+ Haritanın anahtar türünü belirten bir şablon parametre.  
   
  *rKey*  
- Alınan öğenin döndürülen anahtarı belirtir.  
+ Alınan öğenin döndürülen anahtarını belirtir.  
   
  *DEĞER*  
  Haritanın değerin türünü belirten bir şablon parametre.  
   
  *rValue*  
- Alınan öğenin döndürülen değerini belirtir.  
+ Alınan öğenin döndürülen değeri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev eşlemesi tüm öğeler üzerinden yineleme için kullanışlıdır. Konum sırası mutlaka anahtar değeri dizisi ile aynı olduğunu unutmayın.  
+ Bu işlev bir eşlem içindeki tüm öğeleri arasında yineleme için kullanışlıdır. Konumu sıranın mutlaka anahtar değeri serisi ile aynı olmadığını unutmayın.  
   
- Alınan öğe Haritası son sonra yeni değeri ise *rNextPosition* ayarlanır **NULL**.  
+ Alınan öğe eşlem içindeki son öğesinin yeni değeri ise *rNextPosition* NULL olarak ayarlandı.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMap::SetAt](#setat).  
+ Örneğin bakın [CMap::SetAt](#setat).  
   
 ##  <a name="getsize"></a>  CMap::GetSize  
- Harita öğe sayısını döndürür.  
+ Harita öğelerin sayısını döndürür.  
   
 ```  
 INT_PTR GetSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Harita öğelerin sayısı.  
+ Eşlem içindeki öğelerin sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Harita öğelerin sayısını almak için bu yöntemi çağırın.  
+ Eşlem içindeki öğelerin sayısını almak için bu yöntemi çağırın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]  
   
 ##  <a name="getstartposition"></a>  CMap::GetStartPosition  
- Harita yineleme döndürerek başlatır bir **konumu** için geçirilen değer bir `GetNextAssoc` çağırın.  
+ Harita yineleme, geçirilebilir bir konum değeri döndürerek başlar bir `GetNextAssoc` çağırın.  
   
 ```  
 POSITION GetStartPosition() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A **konumu** ; harita yineleme için bir başlangıç konumunu belirten değer veya **NULL** harita boşsa.  
+ Harita yineleme için bir başlangıç konumunu belirten bir konum değeri; ya da bir eşlem boşsa, NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yineleme sırası tahmin edilebilir değil; Bu nedenle, "ilk öğenin" eşlemesindeki özel bir önemi yoktur.  
+ Yineleme sırası tahmin edilebilir değil; Bu nedenle, "eşlem içindeki ilk öğeyi" özel bir önemi yoktur.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMap::SetAt](#setat).  
+ Örneğin bakın [CMap::SetAt](#setat).  
   
 ##  <a name="inithashtable"></a>  CMap::InitHashTable  
  Karma tablo başlatır.  
@@ -274,16 +274,16 @@ void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  *hashSize*  
- Karma tablosunda giriş sayısı.  
+ Girdi karma tablosunda sayısı.  
   
  *bAllocNow*  
- Varsa **doğru**, karma tablosu başlatma; bağlı ayırır tablo gerektiğinde aksi ayrılır.  
+ TRUE ise başlatma sırasında karma tablo ayırır; Aksi takdirde tablo gerektiğinde ayrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- En iyi performans için karma tablo boyutu asal sayı olmalıdır. Çakışmaları en aza indirmek için boyutu yaklaşık yüzde 20'den büyük beklenen veri kümesi daha büyük olmalıdır.  
+ En iyi performans için bir karma tablo boyutu olmalıdır. Çakışmaları en aza indirmek için boyutu yaklaşık yüzde 20 oranında daha büyük beklenen veri kümesi daha büyük olmalıdır.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMap::Lookup](#lookup).  
+ Örneğin bakın [CMap::Lookup](#lookup).  
   
 ##  <a name="isempty"></a>  CMap::IsEmpty  
  Harita boş olup olmadığını belirler.  
@@ -293,13 +293,13 @@ BOOL IsEmpty() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu haritada öğe içeriyorsa, sıfır olmayan; Aksi takdirde 0.  
+ Bu harita hiçbir öğe içeren olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMap::RemoveAll](#removeall).  
+ Örneğin bakın [CMap::RemoveAll](#removeall).  
   
 ##  <a name="lookup"></a>  CMap::Lookup  
- Verilen bir anahtar ile eşlenen değer arar.  
+ Belirli bir anahtar ile eşlenen değeri arar.  
   
 ```  
 BOOL Lookup(ARG_KEY key, VALUE& rValue) const;  
@@ -307,10 +307,10 @@ BOOL Lookup(ARG_KEY key, VALUE& rValue) const;
   
 ### <a name="parameters"></a>Parametreler  
  *ARG_KEY*  
- Şablon parametresi türünü belirleyen *anahtar* değeri.  
+ Şablon parametresinin türünü belirleyen *anahtar* değeri.  
   
  *Anahtarı*  
- Bakılacak öğesi tanımlayan anahtarını belirtir.  
+ Bakılacak öğeyi tanımlayan anahtar belirtir.  
   
  *DEĞER*  
  Bakılacak değerin türünü belirtir.  
@@ -319,10 +319,10 @@ BOOL Lookup(ARG_KEY key, VALUE& rValue) const;
  Aranan yukarı değerini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğesi bulunmazsa sıfır olmayan; Aksi takdirde 0.  
+ Öğesi bulundu; olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Lookup` map öğesi verilen anahtar ile tam olarak bir anahtarla hızla bulmak için bir karma algoritması kullanır.  
+ `Lookup` eşleme öğesi tam olarak belirtilen anahtarla eşleşen bir anahtar ile hızla bulmak için bir karma algoritma kullanır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]  
@@ -345,15 +345,15 @@ VALUE& operator[](arg_key key);
  Haritadaki değerini almak için kullanılan anahtar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu nedenle yalnızca (bir l-değeri) atama ifadesinin sol tarafta kullanılabilir. Belirtilen anahtarı içeren herhangi bir harita öğe varsa, yeni bir öğe oluşturulur.  
+ Bu nedenle yalnızca (lvalue) atama deyiminin sol tarafında kullanılabilir. Ardından, belirtilen anahtara sahip herhangi bir harita öğe varsa, yeni bir öğe oluşturulur.  
   
- Yoktur yok "sağ tarafında" (r) bu işleci için eşdeğer bir anahtar eşlemesinde bulunamayabilir olasılığı olduğundan. Kullanım `Lookup` öğesi alma için üye işlevi.  
+ Yoktur yok "sağ tarafında" (r) bu operatörü için eşdeğeri anahtar haritada bulunamamış olabilir bir olasılık olduğundan. Kullanım `Lookup` öğesi alma için üye işlevi.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMap::Lookup](#lookup).  
+ Örneğin bakın [CMap::Lookup](#lookup).  
   
 ##  <a name="pgetfirstassoc"></a>  CMap::PGetFirstAssoc  
- İlk Giriş eşleme nesnesinin döndürür.  
+ Eşlem nesnesine ilk girişinin döndürür.  
   
 ```  
 const CPair* PGetFirstAssoc() const; 
@@ -361,16 +361,16 @@ CPair* PGetFirstAssoc();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Harita ilk giriş için bir işaretçi; bkz: [CMap::CPair](#cpair). Harita hiçbir giriş içeriyorsa, değerdir **NULL**.  
+ Eşlem içindeki ilk giriş işaretçisi; bkz: [CMap::CPair](#cpair). Eşleme girdisi yok içeriyorsa değer NULL olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi ilk öğe harita nesnesinde döndürmek için bu işlevini çağırın.  
+ Bir işaretçi ilk öğeyi harita nesneyi döndürmek için bu işlevi çağırın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#59](../../mfc/codesnippet/cpp/cmap-class_4.cpp)]  
   
 ##  <a name="pgetnextassoc"></a>  CMap::PGetNextAssoc  
- Gösterdiği map öğesi alır *pAssocRec*.  
+ İşaret ettiği harita öğesini alır. *pAssocRec*.  
   
 ```  
 const CPair *PGetNextAssoc(const CPair* pAssocRet) const;  
@@ -380,19 +380,19 @@ CPair *PGetNextAssoc(const CPair* pAssocRet);
   
 ### <a name="parameters"></a>Parametreler  
  *pAssocRet*  
- Önceki tarafından döndürülen bir eşleme girişi işaret [PGetNextAssoc](#pgetnextassoc) veya [CMap::PGetFirstAssoc](#pgetfirstassoc) çağırın.  
+ Bir önceki tarafından döndürülen bir eşleme girişi işaret [PGetNextAssoc](#pgetnextassoc) veya [CMap::PGetFirstAssoc](#pgetfirstassoc) çağırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Harita sonraki girişi için bir işaretçi; bkz: [CMap::CPair](#cpair). Öğe harita son değer ise, **NULL**.  
+ Eşlem içindeki sonraki giriş işaretçisi; bkz: [CMap::CPair](#cpair). Eşlem içindeki son öğesi ise değer NULL olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Haritanın tüm öğeler yinelemek için bu yöntemi çağırın. İlk öğe çağrısıyla almak `PGetFirstAssoc` ve ardından eşleme için sonraki çağrılarla yinelemek `PGetNextAssoc`.  
+ Eşlem içindeki tüm öğeleri arasında yineleme yapmak için bu yöntemi çağırın. İlk öğe ile bir çağrı almak `PGetFirstAssoc` ve art arda çağrılar haritayla yinelemek `PGetNextAssoc`.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMap::PGetFirstAssoc](#pgetfirstassoc).  
+ Örneğin bakın [CMap::PGetFirstAssoc](#pgetfirstassoc).  
   
 ##  <a name="plookup"></a>  CMap::PLookup  
- Verilen bir anahtar ile eşlenen değeri bulur.  
+ Belirli bir anahtar ile eşlenen değeri bulur.  
   
 ```  
 const CPair* PLookup(ARG_KEY key) const;
@@ -401,32 +401,32 @@ CPair* PLookup(ARG_KEY key);
   
 ### <a name="parameters"></a>Parametreler  
  *Anahtarı*  
- Aranacak öğe anahtarı.  
+ Aranacak öğenin anahtarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir anahtar yapısına yönelik işaretçinin; bkz: [CMap::CPair](#cpair). Eşleşme bulunamazsa, `CMap::PLookup` döndürür `NULL`.  
+ Bir anahtar yapıya bir işaretçi; bkz: [CMap::CPair](#cpair). Eşleşme bulunursa `CMap::PLookup` NULL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Verilen anahtar tam olarak eşleşen bir anahtara bir harita öğesi için aramak için bu yöntemi çağırın.  
+ Verilen anahtara tam olarak eşleşen bir anahtara bir eşleme öğeyi aramak için bu yöntemi çağırın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#60](../../mfc/codesnippet/cpp/cmap-class_5.cpp)]  
   
 ##  <a name="removeall"></a>  CMap::RemoveAll  
- Genel yardımcı işlevini çağırarak tüm değerleri bu eşlemesinden kaldırır **DestructElements**.  
+ Tüm değerlerin genel yardımcı işlevini çağırarak bu eşlemden kaldırır. `DestructElements`.  
   
 ```  
 void RemoveAll();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Harita zaten boşsa, işlev düzgün çalışır.  
+ Eşleme zaten boşsa, işlev düzgün çalışır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#61](../../mfc/codesnippet/cpp/cmap-class_6.cpp)]  
   
 ##  <a name="removekey"></a>  CMap::RemoveKey  
- Sağlanan anahtarına karşılık gelen eşleme girişi arar; Ardından, anahtar bulunursa, giriş kaldırır.  
+ Sağlanan anahtara karşılık gelen eşleme girişi arar; Ardından, anahtar bulunursa, giriş kaldırır.  
   
 ```  
 BOOL RemoveKey(ARG_KEY key);
@@ -434,22 +434,22 @@ BOOL RemoveKey(ARG_KEY key);
   
 ### <a name="parameters"></a>Parametreler  
  *ARG_KEY*  
- Anahtar türü belirten bir şablon parametre.  
+ Anahtar türünü belirten bir şablon parametre.  
   
  *Anahtarı*  
  Kaldırılacak öğenin anahtarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Giriş bulundu ve başarıyla kaldırıldı, sıfır olmayan; Aksi takdirde 0.  
+ Giriş bulundu ve başarıyla kaldırıldı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **DestructElements** yardımcı işlevi, giriş kaldırmak için kullanılır.  
+ `DestructElements` Yardımcı işlevini girdisini kaldırmak için kullanılır.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMap::SetAt](#setat).  
+ Örneğin bakın [CMap::SetAt](#setat).  
   
 ##  <a name="setat"></a>  CMap::SetAt  
- Birincil bir eşleminde bir öğe eklemek anlamına gelir.  
+ Bir eşlem içinde bir öğe eklemek birincil anlamına gelir.  
   
 ```  
 void SetAt(ARG_KEY key, ARG_VALUE newValue);
@@ -457,19 +457,19 @@ void SetAt(ARG_KEY key, ARG_VALUE newValue);
   
 ### <a name="parameters"></a>Parametreler  
  *ARG_KEY*  
- Şablon parametresi türünü belirleyen *anahtar* parametresi.  
+ Şablon parametresinin türünü belirleyen *anahtar* parametresi.  
   
  *Anahtarı*  
- Yeni öğe anahtarı belirtir.  
+ Yeni öğenin anahtarını belirtir.  
   
  *ARG_VALUE*  
- Şablon parametresi türünü belirleyen *newValue* parametresi.  
+ Şablon parametresinin türünü belirleyen *newValue* parametresi.  
   
  *newValue*  
- Yeni öğe değerini belirtir.  
+ Yeni öğenin değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk olarak, anahtar aranır. Anahtar bulunursa, karşılık gelen değeri değiştikten sonra; Aksi takdirde, yeni bir anahtar-değer çifti oluşturulur.  
+ İlk olarak, anahtar aranır. Anahtar bulunursa, karşılık gelen değeri değiştirildikten sonra; Aksi takdirde, yeni bir anahtar-değer çifti oluşturulur.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#62](../../mfc/codesnippet/cpp/cmap-class_7.cpp)]  

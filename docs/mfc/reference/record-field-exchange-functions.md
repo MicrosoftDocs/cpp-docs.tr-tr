@@ -55,36 +55,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 564d797a30e4b2d8518c73c5f7589aae205b6907
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 442c7f3cc3c171d6bf6511881460febddc60d031
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33378975"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37337599"
 ---
 # <a name="record-field-exchange-functions"></a>Kayıt Alanı Değişim İşlevleri
-Bu konu kayıt alanı değişimi (RFX, toplu RFX ve DFX) listeler bir kayıt kümesi nesnesi ve veri kaynağı arasındaki veri aktarımını otomatikleştirmek ve veriler üzerinde başka işlemler gerçekleştirmek için kullanılan işlevleri.  
+Bu konu kayıt alanı değişimi (RFX, toplu RFX ve DFX) listeler kendi veri kaynağı ile bir kayıt kümesi nesnesi arasındaki veri aktarımını otomatik hale getirmek ve diğer veriler üzerinde işlemler gerçekleştirmek için kullanılan işlevleri.  
   
- ODBC tabanlı sınıflar kullanıyorsanız ve toplu satır getirme uyguladıysanız, el ile geçersiz kılmanız gerekir `DoBulkFieldExchange` üye işlevini `CRecordset` bir veri kaynağı sütununa karşılık gelen her veri üyesi için Toplu RFX işlevleri çağırarak.  
+ ODBC tabanlı sınıflar kullanıyorsanız ve toplu satır getirme uyguladıysanız, el ile tanımlamalısınız `DoBulkFieldExchange` üye işlevinin `CRecordset` bir veri kaynağı sütununa karşılık gelen her veri üyesi için Toplu RFX işlevleri çağırarak.  
   
- Toplu satır ODBC tabanlı sınıflarda getirme uygulanmadı ya da DAO tabanlı sınıflar kullanıyorsanız, ardından ClassWizard geçersiz kılar `DoFieldExchange` üye işlevini `CRecordset` veya `CDaoRecordset` RFX işlevleri (ODBC sınıfları için çağırarak ) veya kümenizde her alan veri üyesi için DFX işlevleri (için DAO sınıfları).  
+ Toplu satır ODBC tabanlı sınıflarda getirme uygulanmadı ya da ClassWizard DAO dayalı sınıflar kullanıyorsanız, ardından kılar `DoFieldExchange` üye işlevinin `CRecordset` veya `CDaoRecordset` RFX işlevleri (ODBC sınıfları için çağırarak ) veya kümenizde her alanın veri üyesi için DFX işlevleri (için DAO sınıfları).  
   
- Kayıt alanı değişim işlevleri framework çağırması her zaman veri aktarımı `DoFieldExchange` veya `DoBulkFieldExchange`. Her işlev belirli bir veri türüne aktarır.  
+ Kayıt alanı değişim işlevleri her zaman çerçevesi çağıran veri aktarımı `DoFieldExchange` veya `DoBulkFieldExchange`. Her işlev bir özel veri türü aktarır.  
   
- Bu işlevlerin nasıl kullanıldığı konusunda daha fazla bilgi için makalelerine bakın [kayıt alanı değişimi: nasıl RFX çalışır (ODBC)](../../data/odbc/record-field-exchange-how-rfx-works.md). Toplu satır getirme hakkında daha fazla bilgi için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
+ Bu işlevlerin nasıl kullanıldığı hakkında daha fazla bilgi için makalelere göz atın [kayıt alanı değişimi: nasıl RFX çalışır (ODBC)](../../data/odbc/record-field-exchange-how-rfx-works.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- Dinamik olarak bağlama verileri sütunlar için ayrıca RFX ya da DFX işlevleri kendiniz makalelerinde açıklandığı gibi çağırabilirsiniz [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md). Ayrıca, Teknik Not açıklandığı gibi kendi özel RFX ya da DFX yordamları yazabilirsiniz [43](../../mfc/tn043-rfx-routines.md) (ODBC için) ve Teknik Not [53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) (için DAO).  
+ Dinamik olarak bağlama veri sütunlar için de RFX veya DFX işlevleri kendiniz makalelerinde açıklandığı gibi çağırabilirsiniz [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md). Ayrıca, Teknik Not açıklandığı gibi kendi özel RFX veya DFX rutinleri yazabilirsiniz [43](../../mfc/tn043-rfx-routines.md) (ODBC için) ve Teknik Not [53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) (DAO için).  
   
- RFX ve toplu RFX örneği için işlev içinde göründükleri gibi `DoFieldExchange` ve `DoBulkFieldExchange` İşlevler, bkz: [RFX_Text](#rfx_text) ve [RFX_Text_Bulk] #rfx_text_bulk). DFX işlevleri RFX işlevleri çok benzer.  
+ RFX ve toplu RFX örneği için işlevleri gibi görünürler `DoFieldExchange` ve `DoBulkFieldExchange` işlevleri, [RFX_Text](#rfx_text) ve #rfx_text_bulk [RFX_Text_Bulk]). DFX işlevleri RFX işlevleri için oldukça benzerdir.  
   
 ### <a name="rfx-functions-odbc"></a>RFX işlevleri (ODBC)  
   
 |||  
 |-|-|  
-|[RFX_Binary](#rfx_binary)|Tür bayt dizileri aktarır [CLongBinary](cbytearray-class.md).|  
+|[RFX_Binary](#rfx_binary)|Türünde bayt dizilerini aktarır [CByteArray](cbytearray-class.md).|  
 |[RFX_Bool](#rfx_bool)|Boole veri aktarır.|  
 |[RFX_Byte](#rfx_byte)|Tek bir bayt veri aktarır.|  
-|[RFX_Date](#rfx_date)|Saat ve tarih veri kullanarak aktarır [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya **TIMESTAMP_STRUCT**.|  
+|[RFX_Date](#rfx_date)|Aktarımı saat ve tarih verilerini kullanan [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya TIMESTAMP_STRUCT.|  
 |[RFX_Double](#rfx_double)|Çift duyarlıklı kayan veri aktarır.|  
 |[Rfx_ınt](#rfx_int)|Tamsayı veri aktarır.|  
 |[RFX_Long](#rfx_long)|Tamsayı veri aktarımları uzun.|  
@@ -96,25 +96,25 @@ Bu konu kayıt alanı değişimi (RFX, toplu RFX ve DFX) listeler bir kayıt kü
   
 |||  
 |-|-|  
-|[RFX_Binary_Bulk](#rfx_binary_bulk)|Bayt veri dizileri aktarır.|  
+|[RFX_Binary_Bulk](#rfx_binary_bulk)|Dizileri bayt veri aktarır.|  
 |[RFX_Bool_Bulk](#rfx_bool_bulk)|Boole veri dizileri aktarır.|  
-|[RFX_Byte_Bulk](#rfx_byte_bulk)|Tek Bayt dizileri aktarır.|  
-|[RFX_Date_Bulk](#rfx_date_bulk)|Veri türü dizileri aktarır **TIMESTAMP_STRUCT**.|  
-|[RFX_Double_Bulk](#rfx_double_bulk)|Çift duyarlıklı kayan nokta verisi dizileri aktarır.|  
+|[RFX_Byte_Bulk](#rfx_byte_bulk)|Tek bayt dizilerini aktarır.|  
+|[RFX_Date_Bulk](#rfx_date_bulk)|Veri türü TIMESTAMP_STRUCT dizileri aktarır.|  
+|[RFX_Double_Bulk](#rfx_double_bulk)|Çift duyarlıklı, kayan nokta veri dizileri aktarır.|  
 |[Rfx_ınt_bulk](#rfx_int_bulk)|Tamsayı veri dizileri aktarır.|  
-|[RFX_Long_Bulk](#rfx_long_bulk)|Diziler uzun tamsayı veri aktarır.|  
+|[RFX_Long_Bulk](#rfx_long_bulk)|Uzun tamsayı veri dizileri aktarır.|  
 |[RFX_Single_Bulk](#rfx_single_bulk)|Kayan nokta veri dizileri aktarır.|  
-|[RFX_Text_Bulk](#rfx_text_bulk)|Veri türü dizileri aktarır **LPSTR**.|  
+|[RFX_Text_Bulk](#rfx_text_bulk)|Veri türü LPSTR dizileri aktarır.|  
   
 ### <a name="dfx-functions-dao"></a>DFX işlevleri (DAO)  
   
 |||
 |-|-|  
-|[DFX_Binary](#dfx_binary)|Tür bayt dizileri aktarır [CLongBinary](cbytearray-class.md).|  
+|[DFX_Binary](#dfx_binary)|Türünde bayt dizilerini aktarır [CByteArray](cbytearray-class.md).|  
 |[DFX_Bool](#dfx_bool)|Boole veri aktarır.|  
 |[DFX_Byte](#dfx_byte)|Tek bir bayt veri aktarır.|  
-|[DFX_Currency](#dfx_currency)|Para birimi veri türünde aktarır [COleCurrency](colecurrency-class.md).|  
-|[DFX_DateTime](#dfx_datetime)|Saat ve tarih veri türü aktarır [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md).|  
+|[DFX_Currency](#dfx_currency)|Tür, para birimi veri aktarımları [COleCurrency](colecurrency-class.md).|  
+|[DFX_DateTime](#dfx_datetime)|Tür, saat ve tarih veri aktarımları [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md).|  
 |[DFX_Double](#dfx_double)|Çift duyarlıklı kayan veri aktarır.|  
 |[DFX_Long](#dfx_long)|Tamsayı veri aktarımları uzun.|  
 |[DFX_LongBinary](#dfx_longbinary)|Bir nesne ile ikili büyük nesne (BLOB) veri aktarımı `CLongBinary` sınıfı. DAO için kullanmanız önerilir [DFX_Binary](#dfx_binary) yerine.|  
@@ -125,7 +125,7 @@ Bu konu kayıt alanı değişimi (RFX, toplu RFX ve DFX) listeler bir kayıt kü
  =============================================
 
 ## <a name="rfx_binary"></a>  RFX_Binary
-Bayt dizileri alan veri üyeleri arasında aktarır bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **uzun SQL_BINARY**, **SQL_VARBINARY**, veya **SQL_ LONGVARBINARY**.  
+Alan veri üyeleri arasında bayt dizilerini aktaran bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları uzun SQL_BINARY, SQL_VARBINARY veya SQL_LONGVARBINARY yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -138,20 +138,20 @@ void RFX_Binary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı [CLongBinary](cbytearray-class.md), belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için [CByteArray](cbytearray-class.md), belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `nMaxLength`  
- Dize veya dizinin aktarılan uzunluğu izin verilen en fazla. Varsayılan değer olan `nMaxLength` 255'tir. Geçerli değerler 1 `INT_MAX`. Bu alan miktarını framework verileri ayırır. En iyi performans için beklediğiniz en büyük veri öğesi uyabilecek kadar büyük bir değer geçirin.  
+ *nMaxLength*  
+ Aktarılan dizi ve dize uzunluğu izin verilen en fazla. Varsayılan değer olan *nMaxLength* 255'tir. INT_MAX 1 yasal değerlerdir. Framework bu alanı miktarı, verileri ayırır. En iyi performans için en büyük veri öğesi beklediğiniz tutabilecek kadar büyük bir değer geçirin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu tür veri kaynağındaki türü gelen ve giden eşlendiği `CByteArray` kümesinde.  
+ Bu tür veri kaynağındaki türü gelen ve giden eşlenen `CByteArray` kümesinde.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -160,7 +160,7 @@ void RFX_Binary(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_bool"></a>  RFX_Bool
-Alan veri üyeleri arasında Boole veri aktaran bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_BIT**.  
+Alan veri üyeleri arasında Boole veri aktaran bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_BIT yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -172,14 +172,14 @@ void RFX_Bool(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **BOOL**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir aktarımı için kayıt kümesi veri kaynağına, BOOL, türü değeri, belirtilen veri üyesi alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -188,7 +188,7 @@ void RFX_Bool(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_byte"></a>  RFX_Byte
-Aktarımları tek bayt alan veri üyeleri arasında bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_TINYINT**.  
+Bayt alan veri üyeleri arasındaki aktarımları tek bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_TINYINT yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -200,14 +200,14 @@ void RFX_Byte(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **bayt**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir aktarımı için kayıt kümesi veri kaynağına, belirtilen veri üyesi tür bayt değeri alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -216,7 +216,7 @@ void RFX_Byte(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_date"></a>  RFX_Date
-Aktarımları `CTime` veya **TIMESTAMP_STRUCT** alan veri üyeleri arasında veri bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_DATE**, **SQL_TIME**, veya **SQL_TIMESTAMP**.  
+Aktarımları `CTime` veya TIMESTAMP_STRUCT veri alan veri üyeleri arasında bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_DATE, SQL_TIME veya SQL_TIMESTAMP yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -238,21 +238,21 @@ void RFX_Date(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri; Transfer edilecek değer. Çeşitli sürümleri işlevi farklı veri türleri için değer alın:  
+ Belirtilen veri üyesi içinde depolanan değeri; Transfer edilecek değer. İşlevin çeşitli sürümleri, farklı veri türleri için değer uygulayın:  
   
- İşlev'in ilk sürüm bir başvuru alır bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi. Bir aktarımı için kayıt kümesi veri kaynağına, bu değeri belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ İlk sürüm işlevin bir başvuru alır bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne. Bir aktarımı için kayıt kümesi veri kaynağına, bu değer, belirtilen veri üyesi alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- İşlevin ikinci sürüm bir başvuru alır bir **TIMESTAMP_STRUCT** yapısı. Bu yapı kendiniz çağrısından önce ayarlamanız gerekir. Hiçbiri iletişim kutusu veri değişimi (DDX) desteği veya kod Sihirbazı desteği bu sürümü için kullanılabilir değil. İşlevin üçüncü sürüm çalıştığını benzer şekilde ilk sürüm için bir başvuru alır dışında bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi.  
+ İşlevin ikinci sürüm bir başvuru alır bir `TIMESTAMP_STRUCT` yapısı. Bu yapısına çağrısından önce kendiniz ayarlamalısınız. Her iki iletişim kutusu veri değişimi (DDX) desteği ve kod Sihirbazı desteği bu sürümü için kullanılabilir. İşlevin üçüncü sürümünü çalıştığını benzer şekilde ilk sürümü için bir başvuru alır dışında bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CTime` İşlevi sürümü bazı Ara işleme yükü getirir ve biraz kısıtlıdır aralığındadır. Ya da çok sınırlama faktörlerin bulursanız, işlevi ikinci sürümünü kullanın. Ancak, kod Sihirbazı'nı ve DDX destek yapınızı kendiniz oluşturmanız gereksinim eksikliği unutmayın.  
+ `CTime` İşlevin sürümünü bazı Ara işleme yükü uygular ve biraz sınırlı aralığa sahip. Bu faktörlerin çok sınırlama bulursanız, işlevin ikinci sürümünü kullanın. Ancak, kod Sihirbazı'nı ve DDX destek yapıyı kendiniz ayarlamak gereksinim eksikliği unutmayın.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -261,7 +261,7 @@ void RFX_Date(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_double"></a>  RFX_Double
-Aktarımları **double float** alan veri üyeleri arasında veri bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_DOUBLE**.  
+Aktarımları **double float** veri alan veri üyeleri arasında bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_DOUBLE yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -273,14 +273,14 @@ void RFX_Double(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **çift**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **çift**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -289,7 +289,7 @@ void RFX_Double(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_int"></a>  Rfx_ınt
-Alan veri üyeleri arasında tamsayı veri aktaran bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_SMALLINT**.  
+Alan veri üyeleri arasında tamsayı veri aktaran bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_SMALLINT yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -301,14 +301,14 @@ void RFX_Int(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı `int`, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **int**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -317,7 +317,7 @@ void RFX_Int(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_long"></a>  RFX_Long
-Alan veri üyeleri arasında uzun tamsayı veri aktaran bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_INTEGER**.  
+Alan veri üyeleri arasında uzun tamsayı veri aktaran bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_INTEGER yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -330,14 +330,14 @@ value );
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **uzun**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **uzun**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -346,7 +346,7 @@ value );
  **Başlık:** afxdb.h  
   
 ## <a name="rfx_longbinary"></a>  RFX_LongBinary
-Sınıfını kullanarak ikili büyük nesne (BLOB) veri aktarımları [CLongBinary](clongbinary-class.md) alan veri üyeleri arasında bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_LONGVARBINARY**veya **SQL_LONGVARCHAR**.  
+Sınıfını kullanarak ikili büyük nesne (BLOB) veri aktarımı [CLongBinary](clongbinary-class.md) alan veri üyeleri arasında bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_LONGVARBINARY veya SQL_LONGVARCHAR yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -358,14 +358,14 @@ void RFX_LongBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı `CLongBinary`, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için `CLongBinary`, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -374,7 +374,7 @@ void RFX_LongBinary(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_single"></a>  RFX_Single
-Alan veri üyeleri arasında kayan nokta veri aktaran bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_REAL**.  
+Kayan nokta veri alan veri üyeleri aktarımları bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_REAL yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -386,14 +386,14 @@ void RFX_Single(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **float**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **float**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -403,7 +403,7 @@ void RFX_Single(
   
 
 ## <a name="rfx_text"></a>  RFX_Text
-Aktarımları `CString` alan veri üyeleri arasında veri bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_LONGVARCHAR**, **SQL_CHAR**, **SQL_ VARCHAR**, **SQL_DECIMAL**, veya **SQL_NUMERIC**.  
+Aktarımları `CString` veri alan veri üyeleri arasında bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL veya SQL_NUMERIC yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -418,29 +418,29 @@ void RFX_Text(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi `CFieldExchange`. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi `CFieldExchange`. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı `CString`, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için `CString`, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `nMaxLength`  
- Dize veya dizinin aktarılan uzunluğu izin verilen en fazla. Varsayılan değer olan `nMaxLength` 255'tir. Geçerli değerler 1 `INT_MAX`). Bu alan miktarını framework verileri ayırır. En iyi performans için beklediğiniz en büyük veri öğesi uyabilecek kadar büyük bir değer geçirin.  
+ *nMaxLength*  
+ Aktarılan dizi ve dize uzunluğu izin verilen en fazla. Varsayılan değer olan *nMaxLength* 255'tir. Yasal INT_MAX 1 değerler). Framework bu alanı miktarı, verileri ayırır. En iyi performans için en büyük veri öğesi beklediğiniz tutabilecek kadar büyük bir değer geçirin.  
   
  *nColumnType*  
  Çoğunlukla parametreleri için kullanılır. Parametrenin veri türünü belirten bir tamsayı. Bir ODBC veri türü formun türüdür **SQL_XXX**.  
   
- `nScale`  
- ODBC türü değerleri için ölçek belirtir **SQL_DECIMAL** veya **SQL_NUMERIC**. `nScale` yalnızca parametre değerleri ayarlanıyor durumlarda faydalıdır. Daha fazla bilgi için "Duyarlık, Ölçek, uzunluğu ve görüntüleme boyutu" Ek D içinde konusuna *ODBC SDK Programcının Başvurusu*.  
+ *nScale*  
+ Ölçek SQL_DECIMAL veya SQL_NUMERIC ODBC türündeki değerlerin belirtir. *nScale* yalnızca da parametre değerlerini belirlerken yararlı olur. Daha fazla bilgi için "Duyarlığı, Ölçek, uzunluğu ve görüntüleme boyutu" Ek D'ye konusuna *ODBC SDK Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu türdeki tüm veri kaynağındaki ve ondan eşlendiği `CString` kümesinde.  
+ Tüm bu türler, veri kaynağındaki ve ondan eşlenen `CString` kümesinde.  
   
 ### <a name="example"></a>Örnek  
- Bu örnek, çeşitli çağrıları gösterir `RFX_Text`. Ayrıca iki çağrıları fark `CFieldExchange::SetFieldType`. Parametrelerini çağrısı yazmalısınız `SetFieldType` ve kendi RFX çağrısı. Çıkış sütunu çağrısı ve onun ilişkili RFX çağrıları normalde bir kod Sihirbazı tarafından yazılır.  
+ Bu örnek, çeşitli çağrıları gösterir `RFX_Text`. Ayrıca iki çağrıları fark `CFieldExchange::SetFieldType`. Parametreler için çağrı yazmanız gereken `SetFieldType` ve kendi RFX çağrısı. Normalde, çıkış sütunu çağrı ve onun ilişkili RFX çağrıları kod Sihirbazı tarafından yazılır.  
   
 ```cpp  
 void CCustomer::DoFieldExchange(CFieldExchange* pFX)
@@ -465,7 +465,7 @@ void CCustomer::DoFieldExchange(CFieldExchange* pFX)
 
 
 ## <a name="rfx_binary_bulk"></a>  RFX_Binary_Bulk
-ODBC veri kaynağını sütundan karşılık gelen bir dizideki birden çok sayıda bayt veri aktarır bir `CRecordset`-türetilmiş bir nesne içermelidir.  
+ODBC veri kaynağında bir sütundan karşılık gelen bir dizi içinde birden çok sayıda bayt veri aktarır bir `CRecordset`-türetilmiş bir nesneye.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -479,28 +479,28 @@ void RFX_Binary_Bulk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesnesi. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. Daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
- `prgByteVals`  
- Bir dizi için bir işaretçi **bayt** değerleri. Bu dizi kayıt kümesine veri kaynağından aktarılacak veri depolar.  
+ *prgByteVals*  
+ BAYT değerleri dizisi için bir işaretçi. Bu dizi için kayıt veri kaynağından aktarılacak veri depolar.  
   
- `prgLengths`  
- Uzun dizisi için bir işaretçi. Bu dizi gösterdiği dizisindeki her bir değerin bayt cinsinden uzunluğu depolayacak `prgByteVals`. Unutmayın değeri **SQL_NULL_DATA** karşılık gelen veri öğesi bir Null değer içeriyorsa depolanır. Daha fazla ayrıntı için bkz: ODBC API işlevi **SQLBindCol** içinde *ODBC SDK Programcının Başvurusu*.  
+ *prgLengths*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi işaret ettiği dizideki her bir değerin bayt cinsinden uzunluğu depolayacak *prgByteVals*. Karşılık gelen veri öğesi Null bir değer içeriyorsa, ' % s'değeri SQL_NULL_DATA depolanır unutmayın. Daha fazla ayrıntı için bkz: ODBC API işlevini `SQLBindCol` içinde *ODBC SDK Programcının Başvurusu*.  
   
- `nMaxLength`  
- İzin verilen en fazla uzunluğu gösterdiği dizisinde depolanan değerlerin `prgByteVals`. Veri değil kesilecek emin olmak için beklediğiniz en büyük veri öğesi uyabilecek kadar büyük bir değer geçirin.  
+ *nMaxLength*  
+ İzin verilen maksimum uzunluğu işaret ettiği dizisinde depolanan değerlerin *prgByteVals*. Veri yok kesilecek emin olmak için büyük veri öğesi beklediğiniz tutabilecek kadar büyük bir değer geçirin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kaynağı sütun bir ODBC türünde olabilir **uzun SQL_BINARY**, **SQL_VARBINARY**, veya **SQL_LONGVARBINARY**. Kayıt kümesi türü işaretçisi bir alan veri üyesi tanımlamalısınız **bayt**.  
+ Veri kaynak sütunu uzun SQL_BINARY, SQL_VARBINARY veya SQL_LONGVARBINARY bir ODBC türlerine sahip olabilir. Kayıt türü işaretçi alan veri üyesi BAYTA tanımlamanız gerekir.  
   
- Başlatır, `prgByteVals` ve `prgLengths` için **NULL**, sonra da işaret edecek şekilde diziler satır kümesi boyutuna eşit boyutlarıyla otomatik olarak ayrılır.  
+ Başlatın, *prgByteVals* ve *prgLengths* null, ardından bunların işaret dizileri otomatik olarak satır kümesi boyutuna eşit boyutları ile ayrılır.  
   
 > [!NOTE]
->  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından kayıt kümesi nesnesine aktarır. Kümenizin güncelleştirilebilir duruma getirmek için ODBC API işlevini kullanmak **SQLSetPos**.  
+>  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir kolaylaştırmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.  
   
  Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -511,7 +511,7 @@ void RFX_Binary_Bulk(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_bool_bulk"></a>  RFX_Bool_Bulk
-Boole veri birden çok satır karşılık gelen bir dizide bir ODBC veri kaynağını sütundan aktarır bir `CRecordset`-türetilmiş bir nesne içermelidir.  
+ODBC veri kaynağında bir sütundan karşılık gelen bir dizi içinde birden çok satır Boolean veri aktarır bir `CRecordset`-türetilmiş bir nesneye.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -524,25 +524,25 @@ void RFX_Bool_Bulk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesnesi. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. Daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
- `prgBoolVals`  
- Bir dizi için bir işaretçi **BOOL** değerleri. Bu dizi kayıt kümesine veri kaynağından aktarılacak veri depolar.  
+ *prgBoolVals*  
+ BOOL değerleri dizisi için bir işaretçi. Bu dizi için kayıt veri kaynağından aktarılacak veri depolar.  
   
- `prgLengths`  
- Uzun dizisi için bir işaretçi. Bu dizi gösterdiği dizisindeki her bir değerin bayt cinsinden uzunluğu depolayacak `prgBoolVals`. Unutmayın değeri **SQL_NULL_DATA** karşılık gelen veri öğesi bir Null değer içeriyorsa depolanır. Daha fazla ayrıntı için bkz: ODBC API işlevi **SQLBindCol** içinde *ODBC SDK Programcının Başvurusu*.  
+ *prgLengths*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi işaret ettiği dizideki her bir değerin bayt cinsinden uzunluğu depolayacak *prgBoolVals*. Karşılık gelen veri öğesi Null bir değer içeriyorsa, ' % s'değeri SQL_NULL_DATA depolanır unutmayın. Daha fazla ayrıntı için bkz: ODBC API işlevini `SQLBindCol` içinde *ODBC SDK Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kaynağı sütun bir ODBC türünde olmalıdır **SQL_BIT**. Kayıt kümesi türü işaretçisi bir alan veri üyesi tanımlamalısınız **BOOL**.  
+ Veri kaynak sütunu SQL_BIT bir ODBC türünde olması gerekir. Kayıt türü işaretçi alan veri üyesi BOOL değerine tanımlamanız gerekir.  
   
- Başlatır, `prgBoolVals` ve `prgLengths` için **NULL**, sonra da işaret edecek şekilde diziler satır kümesi boyutuna eşit boyutlarıyla otomatik olarak ayrılır.  
+ Başlatın, *prgBoolVals* ve *prgLengths* null, ardından bunların işaret dizileri otomatik olarak satır kümesi boyutuna eşit boyutları ile ayrılır.  
   
 > [!NOTE]
->  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından kayıt kümesi nesnesine aktarır. Kümenizin güncelleştirilebilir duruma getirmek için ODBC API işlevini kullanmak **SQLSetPos**.  
+>  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.  
   
  Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -553,7 +553,7 @@ void RFX_Bool_Bulk(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_byte_bulk"></a>  RFX_Byte_Bulk
-ODBC veri kaynağını sütundan tek bayt birden çok satır karşılık gelen bir dizide aktarır bir `CRecordset`-türetilmiş bir nesne içermelidir.  
+Birden çok satır tek baytlık bir ODBC veri kaynağını sütundan karşılık gelen bir dizide aktarır bir `CRecordset`-türetilmiş bir nesneye.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -566,25 +566,25 @@ void RFX_Byte_Bulk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesnesi. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. Daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
- `prgByteVals`  
- Bir dizi için bir işaretçi **bayt** değerleri. Bu dizi kayıt kümesine veri kaynağından aktarılacak veri depolar.  
+ *prgByteVals*  
+ BAYT değerleri dizisi için bir işaretçi. Bu dizi için kayıt veri kaynağından aktarılacak veri depolar.  
   
- `prgLengths`  
- Uzun dizisi için bir işaretçi. Bu dizi gösterdiği dizisindeki her bir değerin bayt cinsinden uzunluğu depolayacak `prgByteVals`. Unutmayın değeri **SQL_NULL_DATA** karşılık gelen veri öğesi bir Null değer içeriyorsa depolanır. Daha fazla ayrıntı için bkz: ODBC API işlevi **SQLBindCol** içinde *ODBC SDK Programcının Başvurusu*.  
+ *prgLengths*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi işaret ettiği dizideki her bir değerin bayt cinsinden uzunluğu depolayacak *prgByteVals*. Karşılık gelen veri öğesi Null bir değer içeriyorsa, ' % s'değeri SQL_NULL_DATA depolanır unutmayın. Daha fazla ayrıntı için bkz: ODBC API işlevini `SQLBindCol` içinde *ODBC SDK Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kaynağı sütun bir ODBC türünde olmalıdır **SQL_TINYINT**. Kayıt kümesi türü işaretçisi bir alan veri üyesi tanımlamalısınız **bayt**.  
+ Veri kaynak sütunu SQL_TINYINT bir ODBC türünde olması gerekir. Kayıt türü işaretçi alan veri üyesi BAYTA tanımlamanız gerekir.  
   
- Başlatır, `prgByteVals` ve `prgLengths` için **NULL**, sonra da işaret edecek şekilde diziler satır kümesi boyutuna eşit boyutlarıyla otomatik olarak ayrılır.  
+ Başlatın, *prgByteVals* ve *prgLengths* null, ardından bunların işaret dizileri otomatik olarak satır kümesi boyutuna eşit boyutları ile ayrılır.  
   
 > [!NOTE]
->  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından kayıt kümesi nesnesine aktarır. Kümenizin güncelleştirilebilir duruma getirmek için ODBC API işlevini kullanmak **SQLSetPos**.  
+>  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.  
   
  Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -595,7 +595,7 @@ void RFX_Byte_Bulk(
  **Başlık:** afxdb.h  
   
 ## <a name="rfx_date_bulk"></a>  RFX_Date_Bulk
-Birden çok satır aktarır **TIMESTAMP_STRUCT** karşılık gelen bir dizide bir ODBC veri kaynağını bir sütundan verileri bir `CRecordset`-türetilmiş bir nesne içermelidir.  
+ODBC veri kaynağında bir sütundan karşılık gelen bir dizi içinde birden çok satır TIMESTAMP_STRUCT veri aktarır bir `CRecordset`-türetilmiş bir nesneye.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -608,25 +608,25 @@ void RFX_Date_Bulk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesnesi. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. Daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
- `prgTSVals`  
- Bir dizi için bir işaretçi **TIMESTAMP_STRUCT** değerleri. Bu dizi kayıt kümesine veri kaynağından aktarılacak veri depolar. Hakkında daha fazla bilgi için **TIMESTAMP_STRUCT** veri türü, ek D içinde "C veri türleri" konusuna bakın *ODBC SDK Programcının Başvurusu*.  
+ *prgTSVals*  
+ Bir dizi TIMESTAMP_STRUCT değere bir işaretçi. Bu dizi için kayıt veri kaynağından aktarılacak veri depolar. TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için ek D içinde "C veri türleri" konusuna bakın. *ODBC SDK Programcının Başvurusu*.  
   
- `prgLengths`  
- Uzun dizisi için bir işaretçi. Bu dizi gösterdiği dizisindeki her bir değerin bayt cinsinden uzunluğu depolayacak `prgTSVals`. Unutmayın değeri **SQL_NULL_DATA** karşılık gelen veri öğesi bir Null değer içeriyorsa depolanır. Daha fazla ayrıntı için bkz: ODBC API işlevi **SQLBindCol** içinde *ODBC SDK Programcının Başvurusu*.  
+ *prgLengths*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi işaret ettiği dizideki her bir değerin bayt cinsinden uzunluğu depolayacak *prgTSVals*. Karşılık gelen veri öğesi Null bir değer içeriyorsa, ' % s'değeri SQL_NULL_DATA depolanır unutmayın. Daha fazla ayrıntı için bkz: ODBC API işlevini `SQLBindCol` içinde *ODBC SDK Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kaynağı sütun bir ODBC türünde olabilir **SQL_DATE**, **SQL_TIME**, veya **SQL_TIMESTAMP**. Kayıt kümesi türü işaretçisi bir alan veri üyesi tanımlamalısınız **TIMESTAMP_STRUCT**.  
+ Veri kaynak sütunu SQL_DATE, SQL_TIME veya SQL_TIMESTAMP bir ODBC türlerine sahip olabilir. Kayıt türü işaretçi alan veri üyesi için TIMESTAMP_STRUCT tanımlamanız gerekir.  
   
- Başlatır, `prgTSVals` ve `prgLengths` için **NULL**, sonra da işaret edecek şekilde diziler satır kümesi boyutuna eşit boyutlarıyla otomatik olarak ayrılır.  
+ Başlatın, *prgTSVals* ve *prgLengths* null, ardından bunların işaret dizileri otomatik olarak satır kümesi boyutuna eşit boyutları ile ayrılır.  
   
 > [!NOTE]
->  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından kayıt kümesi nesnesine aktarır. Kümenizin güncelleştirilebilir duruma getirmek için ODBC API işlevini kullanmak **SQLSetPos**.  
+>  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.  
   
  Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -637,7 +637,7 @@ void RFX_Date_Bulk(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_double_bulk"></a>  RFX_Double_Bulk
-ODBC veri kaynağını sütundan karşılık gelen bir dizide birden çok sayıda çift duyarlıklı, kayan nokta veri aktarır bir `CRecordset`-türetilmiş bir nesne içermelidir.  
+ODBC veri kaynağında bir sütundan karşılık gelen bir dizi içinde birden çok sayıda çift duyarlıklı, kayan nokta veri aktarır bir `CRecordset`-türetilmiş bir nesneye.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -650,25 +650,25 @@ void RFX_Double_Bulk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesnesi. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. Daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
- `prgDblVals`  
- Bir dizi için bir işaretçi **çift** değerleri. Bu dizi kayıt kümesine veri kaynağından aktarılacak veri depolar.  
+ *prgDblVals*  
+ Bir dizi işaretçi **çift** değerleri. Bu dizi için kayıt veri kaynağından aktarılacak veri depolar.  
   
- `prgLengths`  
- Uzun dizisi için bir işaretçi. Bu dizi gösterdiği dizisindeki her bir değerin bayt cinsinden uzunluğu depolayacak `prgDblVals`. Unutmayın değeri **SQL_NULL_DATA** karşılık gelen veri öğesi bir Null değer içeriyorsa depolanır. Daha fazla ayrıntı için bkz: ODBC API işlevi **SQLBindCol** içinde *ODBC SDK Programcının Başvurusu*.  
+ *prgLengths*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi işaret ettiği dizideki her bir değerin bayt cinsinden uzunluğu depolayacak *prgDblVals*. Karşılık gelen veri öğesi Null bir değer içeriyorsa, ' % s'değeri SQL_NULL_DATA depolanır unutmayın. Daha fazla ayrıntı için bkz: ODBC API işlevini `SQLBindCol` içinde *ODBC SDK Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kaynağı sütun bir ODBC türünde olmalıdır **SQL_DOUBLE**. Kayıt kümesi türü işaretçisi bir alan veri üyesi tanımlamalısınız **çift**.  
+ Veri kaynak sütunu SQL_DOUBLE bir ODBC türünde olması gerekir. Kayıt kümesi işaretçi türüne bir alan veri üyesi tanımlamalıdır **çift**.  
   
- Başlatır, `prgDblVals` ve `prgLengths` için **NULL**, sonra da işaret edecek şekilde diziler satır kümesi boyutuna eşit boyutlarıyla otomatik olarak ayrılır.  
+ Başlatın, *prgDblVals* ve *prgLengths* null, ardından bunların işaret dizileri otomatik olarak satır kümesi boyutuna eşit boyutları ile ayrılır.  
   
 > [!NOTE]
->  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından kayıt kümesi nesnesine aktarır. Kümenizin güncelleştirilebilir duruma getirmek için ODBC API işlevini kullanmak **SQLSetPos**.  
+>  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.  
   
  Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -679,7 +679,7 @@ void RFX_Double_Bulk(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_int_bulk"></a>  Rfx_ınt_bulk
-Alan veri üyeleri arasında tamsayı veri aktaran bir `CRecordset` nesne ve ODBC türü veri kaynağında bir kayıt sütunlarının **SQL_SMALLINT**.  
+Alan veri üyeleri arasında tamsayı veri aktaran bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_SMALLINT yazın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -691,14 +691,14 @@ void RFX_Int(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye bakın [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı `int`, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **int**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [RFX_Text](#rfx_text).  
@@ -707,7 +707,7 @@ void RFX_Int(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_long_bulk"></a>  RFX_Long_Bulk
-ODBC veri kaynağını sütundan karşılık gelen bir dizideki birden çok sayıda uzun tamsayı veri aktarır bir `CRecordset`-türetilmiş bir nesne içermelidir.  
+ODBC veri kaynağında bir sütundan karşılık gelen bir dizi içinde birden çok sayıda uzun tamsayı veri aktarır bir `CRecordset`-türetilmiş bir nesneye.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -720,25 +720,25 @@ void RFX_Long_Bulk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesnesi. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. Daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
- `prgLongVals`  
- Uzun dizisi için bir işaretçi. Bu dizi kayıt kümesine veri kaynağından aktarılacak veri depolar.  
+ *prgLongVals*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi için kayıt veri kaynağından aktarılacak veri depolar.  
   
- `prgLengths`  
- Uzun dizisi için bir işaretçi. Bu dizi gösterdiği dizisindeki her bir değerin bayt cinsinden uzunluğu depolayacak `prgLongVals`. Unutmayın değeri **SQL_NULL_DATA** karşılık gelen veri öğesi bir Null değer içeriyorsa depolanır. Daha fazla ayrıntı için bkz: ODBC API işlevi **SQLBindCol** içinde *ODBC SDK Programcının Başvurusu*.  
+ *prgLengths*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi işaret ettiği dizideki her bir değerin bayt cinsinden uzunluğu depolayacak *prgLongVals*. Karşılık gelen veri öğesi Null bir değer içeriyorsa, ' % s'değeri SQL_NULL_DATA depolanır unutmayın. Daha fazla ayrıntı için bkz: ODBC API işlevini `SQLBindCol` içinde *ODBC SDK Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kaynağı sütun bir ODBC türünde olmalıdır **SQL_INTEGER**. Kayıt kümesi türü işaretçisi bir alan veri üyesi tanımlamalısınız **uzun**.  
+ Veri kaynak sütunu SQL_INTEGER bir ODBC türünde olması gerekir. Kayıt kümesi işaretçi türüne bir alan veri üyesi tanımlamalıdır **uzun**.  
   
- Başlatır, `prgLongVals` ve `prgLengths` için **NULL**, sonra da işaret edecek şekilde diziler satır kümesi boyutuna eşit boyutlarıyla otomatik olarak ayrılır.  
+ Başlatın, *prgLongVals* ve *prgLengths* null, ardından bunların işaret dizileri otomatik olarak satır kümesi boyutuna eşit boyutları ile ayrılır.  
   
 > [!NOTE]
->  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından kayıt kümesi nesnesine aktarır. Kümenizin güncelleştirilebilir duruma getirmek için ODBC API işlevini kullanmak **SQLSetPos**.  
+>  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.  
   
  Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -749,7 +749,7 @@ void RFX_Long_Bulk(
  **Başlık:** afxdb.h  
 
 ## <a name="rfx_single_bulk"></a>  RFX_Single_Bulk
-Kayan nokta veri birden çok satır karşılık gelen bir dizide bir ODBC veri kaynağını sütundan aktarır bir `CRecordset`-türetilmiş bir nesne içermelidir.  
+ODBC veri kaynağında bir sütundan karşılık gelen bir dizi içinde birden çok satır kayan nokta veri aktarır bir `CRecordset`-türetilmiş bir nesneye.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -762,25 +762,25 @@ void RFX_Single_Bulk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesnesi. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. Daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
- `prgFltVals`  
- Bir dizi için bir işaretçi **float** değerleri. Bu dizi kayıt kümesine veri kaynağından aktarılacak veri depolar.  
+ *prgFltVals*  
+ Bir dizi işaretçi **float** değerleri. Bu dizi için kayıt veri kaynağından aktarılacak veri depolar.  
   
- `prgLengths`  
- Uzun dizisi için bir işaretçi. Bu dizi gösterdiği dizisindeki her bir değerin bayt cinsinden uzunluğu depolayacak `prgFltVals`. Unutmayın değeri **SQL_NULL_DATA** karşılık gelen veri öğesi bir Null değer içeriyorsa depolanır. Daha fazla ayrıntı için bkz: ODBC API işlevi **SQLBindCol** içinde *ODBC SDK Programcının Başvurusu*.  
+ *prgLengths*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi işaret ettiği dizideki her bir değerin bayt cinsinden uzunluğu depolayacak *prgFltVals*. Karşılık gelen veri öğesi Null bir değer içeriyorsa, ' % s'değeri SQL_NULL_DATA depolanır unutmayın. Daha fazla ayrıntı için bkz: ODBC API işlevini `SQLBindCol` içinde *ODBC SDK Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kaynağı sütun bir ODBC türünde olmalıdır **SQL_REAL**. Kayıt kümesi türü işaretçisi bir alan veri üyesi tanımlamalısınız **float**.  
+ Veri kaynak sütunu SQL_REAL bir ODBC türünde olması gerekir. Kayıt kümesi işaretçi türüne bir alan veri üyesi tanımlamalıdır **float**.  
   
- Başlatır, `prgFltVals` ve `prgLengths` için **NULL**, sonra da işaret edecek şekilde diziler satır kümesi boyutuna eşit boyutlarıyla otomatik olarak ayrılır.  
+ Başlatın, *prgFltVals* ve *prgLengths* null, ardından bunların işaret dizileri otomatik olarak satır kümesi boyutuna eşit boyutları ile ayrılır.  
   
 > [!NOTE]
->  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından kayıt kümesi nesnesine aktarır. Kümenizin güncelleştirilebilir duruma getirmek için ODBC API işlevini kullanmak **SQLSetPos**.  
+>  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.  
   
  Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
@@ -792,7 +792,7 @@ void RFX_Single_Bulk(
   
 
 ## <a name="rfx_text_bulk"></a>  RFX_Text_Bulk
-ODBC veri kaynağını sütundan karşılık gelen bir dizideki birden çok sayıda karakter veri aktarır bir `CRecordset`-türetilmiş bir nesne içermelidir.  
+Karakter verilerinin birden çok satır karşılık gelen bir dizide bir ODBC veri kaynağını sütundan aktarır bir `CRecordset`-türetilmiş bir nesneye.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -806,33 +806,33 @@ void RFX_Text_Bulk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesnesi. Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir. Daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX nasıl çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md).  
+ *pFX*  
+ Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
- `prgStrVals`  
- Bir dizi için bir işaretçi **LPSTR** değerleri. Bu dizi kayıt kümesine veri kaynağından aktarılacak veri depolar. ODBC geçerli sürümü ile bu değerleri Unicode olamayacağını unutmayın.  
+ *prgStrVals*  
+ Bir dizi LPSTR değere bir işaretçi. Bu dizi için kayıt veri kaynağından aktarılacak veri depolar. ODBC geçerli sürümü ile bu değerleri Unicode olamayacağını unutmayın.  
   
- `prgLengths`  
- Uzun dizisi için bir işaretçi. Bu dizi gösterdiği dizisindeki her bir değerin bayt cinsinden uzunluğu depolayacak `prgStrVals`. Bu süre null sonlandırma karakter dışlar. Unutmayın değeri **SQL_NULL_DATA** karşılık gelen veri öğesi bir Null değer içeriyorsa depolanır. Daha fazla ayrıntı için bkz: ODBC API işlevi **SQLBindCol** içinde *ODBC SDK Programcının Başvurusu*.  
+ *prgLengths*  
+ Uzun tamsayı dizisi için bir işaretçi. Bu dizi işaret ettiği dizideki her bir değerin bayt cinsinden uzunluğu depolayacak *prgStrVals*. Bu süre sonlandırma boş karakteri içermez. Karşılık gelen veri öğesi Null bir değer içeriyorsa, ' % s'değeri SQL_NULL_DATA depolanır unutmayın. Daha fazla ayrıntı için bkz: ODBC API işlevini `SQLBindCol` içinde *ODBC SDK Programcının Başvurusu*.  
   
- `nMaxLength`  
- İzin verilen en fazla uzunluğu gösterdiği dizisinde depolanan değerlerin `prgStrVals`, null sonlandırma karakter dahil olmak üzere. Veri değil kesilecek emin olmak için beklediğiniz en büyük veri öğesi uyabilecek kadar büyük bir değer geçirin.  
+ *nMaxLength*  
+ İzin verilen maksimum uzunluğu işaret ettiği dizisinde depolanan değerlerin *prgStrVals*, sonlandırma boş karakteri dahil. Veri yok kesilecek emin olmak için büyük veri öğesi beklediğiniz tutabilecek kadar büyük bir değer geçirin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kaynağı sütun bir ODBC türünde olabilir **SQL_LONGVARCHAR**, **SQL_CHAR**, **SQL_VARCHAR**, **SQL_DECIMAL**, veya **SQL_NUMERIC**. Kayıt türünün bir alan veri üyesi tanımlamalısınız **LPSTR**.  
+ Veri kaynak sütunu SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL veya SQL_NUMERIC bir ODBC türlerine sahip olabilir. Kayıt türünün LPSTR alan veri üyesi tanımlamanız gerekir.  
   
- Başlatır, `prgStrVals` ve `prgLengths` için **NULL**, sonra da işaret edecek şekilde diziler satır kümesi boyutuna eşit boyutlarıyla otomatik olarak ayrılır.  
+ Başlatın, *prgStrVals* ve *prgLengths* null, ardından bunların işaret dizileri otomatik olarak satır kümesi boyutuna eşit boyutları ile ayrılır.  
   
 > [!NOTE]
->  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından kayıt kümesi nesnesine aktarır. Kümenizin güncelleştirilebilir duruma getirmek için ODBC API işlevini kullanmak **SQLSetPos**.  
+>  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.  
   
  Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
 ### <a name="example"></a>Örnek  
- Çağrıları el ile yazmanız gerekir, `DoBulkFieldExchange` geçersiz kılar. Bu örnek bir çağrı gösterilmektedir `RFX_Text_Bulk`, çağrı yanı sıra `RFX_Long_Bulk`, veri aktarımı için. Bu çağrı için yapılan bir çağrı tarafından öncesinde [CFieldExchange::SetFieldType](CFieldExchange::SetFieldType.md). Parametreleri için Toplu RFX işlevleri yerine RFX işlevleri çağırmalıdır unutmayın.  
+ Çağrıları el ile yazmanız gereken, `DoBulkFieldExchange` geçersiz kılar. Bu örnek, bir çağrı gösterir `RFX_Text_Bulk`, çağrı yanı sıra `RFX_Long_Bulk`, veri aktarımı için. Bu çağrılar için yapılan bir çağrı tarafından öncelenen [CFieldExchange::SetFieldType](CFieldExchange::SetFieldType.md). Parametreler için Toplu RFX işlevlerini yerine RFX işlevleri çağırmalıdır unutmayın.  
   
 ```cpp  
 void CMultiCustomer::DoBulkFieldExchange(CFieldExchange* pFX)
@@ -853,7 +853,7 @@ void CMultiCustomer::DoBulkFieldExchange(CFieldExchange* pFX)
  **Başlık:** afxdb.h  
 
 ## <a name="dfx_binary"></a>  DFX_Binary
-Bayt dizileri alan veri üyeleri arasında aktarır bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Alan veri üyeleri arasında bayt dizilerini aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -867,26 +867,26 @@ void AFXAPI DFX_Binary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı [CLongBinary](cbytearray-class.md), belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için [CByteArray](cbytearray-class.md), belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `nPreAllocSize`  
- Bu bellek miktarını framework preallocates. Verilerinizi daha büyükse, gerektiği gibi daha fazla alan ayrılmış framework olur. Daha iyi performans için bu boyut adetle sınırla önlemek için büyük bir değere ayarlayın. Varsayılan boyut AFXDAO tanımlanır. H dosyası olarak **AFX_DAO_BINARY_DEFAULT_SIZE**.  
+ *nPreAllocSize*  
+ Bu bellek miktarını framework preallocates. Verilerinizi daha büyükse framework ayrılmış gerektiğinde daha fazla alanı olur. Daha iyi performans için bu boyut yapıcıların önlemek için büyük bir değere ayarlayın. Varsayılan boyut AFXDAO içinde tanımlanır. H dosyası AFX_DAO_BINARY_DEFAULT_SIZE olarak.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_DISABLE_FIELD_CACHE`olmayan kullanım iki kez arabelleğe alma yapar ve çağırmalısınız [SetFieldDirty](cdaorecordset-class.md#setfielddirty) ve [SetFieldNull](cdaorecordset-class.md#setfieldnull) kendiniz. Diğer olası değer `AFX_DAO_ENABLE_FIELD_CACHE`, kullanan iki kez arabelleğe alma ve sahip alanları işaretlemek için ek iş yapmak kirli veya Null. İkili verilerinizi görece küçük gerekmedikçe performans ve bellek nedeniyle, bu değer kaçının.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_DISABLE_FIELD_CACHE, iki kez arabelleğe alma kullanmaz ve çağırmalısınız [SetFieldDirty](cdaorecordset-class.md#setfielddirty) ve [SetFieldNull](cdaorecordset-class.md#setfieldnull) kendiniz. Diğer olası değerini AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır ve alanlar işaretlemek için ek iş yapması gerekmez kirli veya Null. İkili veri miktarının daha az olmadığı sürece bu değeri performans ve bellek nedenleriyle kaçının.  
   
 > [!NOTE]
->  Tüm alanlar için varsayılan olarak ayarlayarak arabelleğe veri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Tüm alanlar için varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_BYTES** DAO ve türü [CLongBinary](cbytearray-class.md) kümesinde.  
+ Veri türü ve tür DAO_BYTES DAO içinde arasında eşlenen [CByteArray](cbytearray-class.md) kümesinde.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -896,7 +896,7 @@ void AFXAPI DFX_Binary(
   
 
 ## <a name="dfx_bool"></a>  DFX_Bool
-Alan veri üyeleri arasında Boole veri aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Alan veri üyeleri arasında Boole veri aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -909,23 +909,23 @@ void AFXAPI DFX_Bool(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **BOOL**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir aktarımı için kayıt kümesi veri kaynağına, BOOL, türü değeri, belirtilen veri üyesi alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_BOOL** DAO ve türü **BOOL** kümesinde.  
+ Veri türü DAO içinde DAO_BOOL kümesinde BOOL türü arasındaki eşlenir.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -934,7 +934,7 @@ void AFXAPI DFX_Bool(
  **Başlık:** afxdao.h  
 
 ## <a name="dfx_byte"></a>  DFX_Byte
-Aktarımları tek bayt alan veri üyeleri arasında bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Bayt alan veri üyeleri arasındaki aktarımları tek bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -947,23 +947,23 @@ void AFXAPI DFX_Byte(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **bayt**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir aktarımı için kayıt kümesi veri kaynağına, belirtilen veri üyesi tür bayt değeri alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_BYTES** DAO ve türü **bayt** kümesinde.  
+ Veri türü DAO_BYTES DAO içinde tür bayt kümesinde arasındaki eşlenir.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -972,7 +972,7 @@ void AFXAPI DFX_Byte(
  **Başlık:** afxdao.h  
 
 ## <a name="dfx_currency"></a>  DFX_Currency
-Alan veri üyeleri arasında para birimi veri aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Para birimi veri alan veri üyeleri aktarımları bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -985,23 +985,23 @@ void AFXAPI DFX_Currency(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Bir aktarımı için kayıt kümesi veri kaynağına, bu değer türü belirtilen veri üyeden alınır [COleCurrency](colecurrency-class.md). Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir aktarımı için kayıt kümesi veri kaynağına, bu değer türü belirtilen veri üyeden alınır [COleCurrency](colecurrency-class.md). Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_CURRENCY** DAO ve türü [COleCurrency](colecurrency-class.md) kümesinde.  
+ Veri türü ve tür DAO_CURRENCY DAO içinde arasında eşlenen [COleCurrency](colecurrency-class.md) kümesinde.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -1010,7 +1010,7 @@ void AFXAPI DFX_Currency(
  **Başlık:** afxdao.h  
 
 ## <a name="dfx_datetime"></a>  DFX_DateTime
-Alan veri üyeleri arasında saat ve tarih veri aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Alan veri üyeleri arasında saat ve tarih veri aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -1023,26 +1023,26 @@ void AFXAPI DFX_DateTime(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. İşlev bir başvuru alır bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi. Bir aktarımı için kayıt kümesi veri kaynağına, bu değeri belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. İşlevi bir başvuru alır bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesne. Bir aktarımı için kayıt kümesi veri kaynağına, bu değer, belirtilen veri üyesi alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_DATE** DAO ve türü [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) kümesinde.  
+ Veri türü ve tür DAO_DATE DAO içinde arasında eşlenen [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) kümesinde.  
   
 > [!NOTE]
->  `COleDateTime` değiştirir [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve **TIMESTAMP_STRUCT** bu amaçla DAO sınıfları'nda. `CTime` ve **TIMESTAMP_STRUCT** olan hala ODBC tabanlı veri erişim sınıfları için kullanılır.  
+>  `COleDateTime` değiştirir [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve DAO sınıfları bu amaçla TIMESTAMP_STRUCT. `CTime` ve TIMESTAMP_STRUCT ODBC tabanlı veri erişim sınıfları için kullanılır.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -1051,7 +1051,7 @@ void AFXAPI DFX_DateTime(
  **Başlık:** afxdao.h  
 
 ## <a name="dfx_double"></a>  DFX_Double
-Aktarımları **double float** alan veri üyeleri arasında veri bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Aktarımları **double float** veri alan veri üyeleri arasında bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -1064,23 +1064,23 @@ void AFXAPI DFX_Double(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **çift**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **çift**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_R8** DAO ve türü **double float** kümesinde.  
+ Veri türü ve DAO DAO_R8 türünde arasında eşlenen **double float** kümesinde.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -1089,7 +1089,7 @@ void AFXAPI DFX_Double(
  **Başlık:** afxdao.h  
 
 ## <a name="dfx_long"></a>  DFX_Long
-Alan veri üyeleri arasında uzun tamsayı veri aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Alan veri üyeleri arasında uzun tamsayı veri aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -1102,23 +1102,23 @@ void AFXAPI DFX_Long(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **uzun**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **uzun**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_I4** DAO ve türü **uzun** kümesinde.  
+ Veri türü ve DAO DAO_I4 türünde arasında eşlenen **uzun** kümesinde.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -1128,7 +1128,7 @@ void AFXAPI DFX_Long(
   
 
 ## <a name="dfx_longbinary"></a>  DFX_LongBinary
-**Önemli** kullanmanız önerilir [DFX_Binary](#dfx_binary) yerine bu işlev.  
+**Önemli** kullanmanız önerilir [DFX_Binary](#dfx_binary) bu işlevi yerine.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -1142,26 +1142,26 @@ void AFXAPI DFX_LongBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı [CLongBinary](clongbinary-class.md), belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için [CLongBinary](clongbinary-class.md), belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
  *dwPreAllocSize*  
- Bu bellek miktarını framework preallocates. Verilerinizi daha büyükse, gerektiği gibi daha fazla alan ayrılmış framework olur. Daha iyi performans için bu boyut adetle sınırla önlemek için büyük bir değere ayarlayın.  
+ Bu bellek miktarını framework preallocates. Verilerinizi daha büyükse framework ayrılmış gerektiğinde daha fazla alanı olur. Daha iyi performans için bu boyut yapıcıların önlemek için büyük bir değere ayarlayın.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, **AFX_DISABLE_FIELD_CACHE**, iki kez arabelleğe alma kullanmaz. Olası bir değer `AFX_DAO_ENABLE_FIELD_CACHE`. Kullanan iki kez arabelleğe alma ve sahip alanları işaretlemek için ek iş yapmak kirli veya Null. İkili verilerinizi görece küçük gerekmedikçe performans ve bellek nedeniyle, bu değer kaçının.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DISABLE_FIELD_CACHE, iki kez arabelleğe alma kullanmaz. Başka bir olası değer AFX_DAO_ENABLE_FIELD_CACHE değeridir. Kullanan iki kez arabelleğe alma ve sahip alanları işaretlemek için ek iş yapması kirli veya Null. İkili veri miktarının daha az olmadığı sürece bu değeri performans ve bellek nedenleriyle kaçının.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- `DFX_LongBinary` MFC ODBC sınıfları ile uyumluluk için sağlanır. `DFX_LongBinary` İşlevi sınıfını kullanarak ikili büyük nesne (BLOB) veri aktarımları `CLongBinary` alan veri üyeleri arasında bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının. Veri türü arasında eşlenen **DAO_BYTES** DAO ve türü [CLongBinary](clongbinary-class.md) kümesinde.  
+ `DFX_LongBinary` MFC ODBC sınıfları ile uyumluluk için sağlanır. `DFX_LongBinary` İşlevi sınıfını kullanarak ikili büyük nesne (BLOB) veri aktarımı `CLongBinary` alan veri üyeleri arasında bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun. Veri türü ve tür DAO_BYTES DAO içinde arasında eşlenen [CLongBinary](clongbinary-class.md) kümesinde.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -1170,7 +1170,7 @@ void AFXAPI DFX_LongBinary(
  **Başlık:** afxdao.h  
 
 ## <a name="dfx_short"></a>  DFX_Short
-Alan veri üyeleri arasında tamsayı veri aktarımları kısa bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Alan veri üyeleri arasında tamsayı veri aktarımları kısa bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -1183,26 +1183,26 @@ void AFXAPI DFX_Short(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **kısa**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **kısa**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_I2** DAO ve türü **kısa** kümesinde.  
+ Veri türü ve DAO DAO_I2 türünde arasında eşlenen **kısa** kümesinde.  
   
 > [!NOTE]
->  `DFX_Short` eşdeğer olan [rfx_ınt](#rfx_int) ODBC tabanlı sınıflar için.  
+>  `DFX_Short` eşdeğerdir [rfx_ınt](#rfx_int) ODBC tabanlı sınıflar için.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -1212,7 +1212,7 @@ void AFXAPI DFX_Short(
   
 
 ## <a name="dfx_single"></a>  DFX_Single
-Alan veri üyeleri arasında kayan nokta veri aktaran bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Kayan nokta veri alan veri üyeleri aktarımları bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -1225,23 +1225,23 @@ void AFXAPI DFX_Single(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **float**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için **float**, belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız `SetFieldDirty` ve `SetFieldNull` kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_R4** DAO ve türü **float** kümesinde.  
+ Veri türü ve DAO DAO_R4 türünde arasında eşlenen **float** kümesinde.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [DFX_Text](#dfx_text).  
@@ -1250,7 +1250,7 @@ void AFXAPI DFX_Single(
  **Başlık:** afxdao.h  
 
 ## <a name="dfx_text"></a>  DFX_Text
-Aktarımları `CString` alan veri üyeleri arasında veri bir [CDaoRecordset](cdaorecordset-class.md) nesne ve bir kayıt veri kaynağında sütunlarının.  
+Aktarımları `CString` veri alan veri üyeleri arasında bir [CDaoRecordset](cdaorecordset-class.md) nesnesi ve veri kaynağındaki bir kaydın sütun.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -1264,29 +1264,29 @@ void AFXAPI DFX_Text(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFX`  
- Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne bağlamı her işlev çağrısı için tanımlamak için bilgileri içerir.  
+ *pFX*  
+ Sınıfın bir nesnesi için bir işaretçi [CDaoFieldExchange](cdaofieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir.  
   
- `szName`  
+ *szName*  
  Bir veri sütununun adı.  
   
  *value*  
- Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı [CString](../../atl-mfc-shared/reference/cstringt-class.md), belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
+ Belirtilen veri üyesi içinde depolanan değeri — transfer edilecek değer. Bir kayıt kümesi aktarımı, veri kaynağına türünün değeri için [CString](../../atl-mfc-shared/reference/cstringt-class.md), belirtilen veri üyesinden alınır. Bir aktarım için veri kaynağı kayıt kümesine, belirtilen veri üye değeri depolanır.  
   
- `nPreAllocSize`  
- Bu bellek miktarını framework preallocates. Verilerinizi daha büyükse, gerektiği gibi daha fazla alan ayrılmış framework olur. Daha iyi performans için bu boyut adetle sınırla önlemek için büyük bir değere ayarlayın.  
+ *nPreAllocSize*  
+ Bu bellek miktarını framework preallocates. Verilerinizi daha büyükse framework ayrılmış gerektiğinde daha fazla alanı olur. Daha iyi performans için bu boyut yapıcıların önlemek için büyük bir değere ayarlayın.  
   
- `dwBindOptions`  
- Değiştirilmiş kayıt kümesi alanları algılamak MFC'nin çift arabelleğe alma mekanizması yararlanmak olanak sağlayan bir seçenek. Varsayılan olarak, `AFX_DAO_ENABLE_FIELD_CACHE`, iki kez arabelleğe alma kullanır. Olası bir değer `AFX_DAO_DISABLE_FIELD_CACHE`. Bu değer belirtirseniz, MFC hiçbir bu alanı denetimi yapar. Çağırmalısınız [SetFieldDirty](cdaorecordset-class.md#setfielddirty) ve [SetFieldNull](cdaorecordset-class.md#setfieldnull) kendiniz.  
+ *dwBindOptions*  
+ Bir seçenek, değiştirilmiş kayıt alanları saptamak için MFC'nin çift arabelleğe alma mekanizması avantajlarından yararlanmanıza imkan sağlar. Varsayılan olarak, AFX_DAO_ENABLE_FIELD_CACHE, iki kez arabelleğe alma kullanır. Başka bir olası değer AFX_DAO_DISABLE_FIELD_CACHE değeridir. Bu değeri belirtirseniz, bu alana hiçbir denetim MFC yapar. Çağırmalısınız [SetFieldDirty](cdaorecordset-class.md#setfielddirty) ve [SetFieldNull](cdaorecordset-class.md#setfieldnull) kendiniz.  
   
 > [!NOTE]
->  Varsayılan olarak ayarlayarak arabelleğe alınan verilerin çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
+>  Varsayılan olarak ayarlayarak arabelleğe alınan verileri çift olup olmadığını kontrol edebilirsiniz [CDaoRecordset::m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri türü arasında eşlenen **DAO_CHAR** DAO içinde (veya simgenin **_UNICODE** tanımlanan **DAO_WCHAR**) ve türü [CString](../../atl-mfc-shared/reference/cstringt-class.md) içinde kayıt kümesi.  n
+ Veri türü DAO içinde DAO_CHAR arasında eşlenir (veya _UNICODE tanımlanmış olması durumunda, DAO_WCHAR) ve türü [CString](../../atl-mfc-shared/reference/cstringt-class.md) kümesinde.  n
   
 ### <a name="example"></a>Örnek  
- Bu örnek, çeşitli çağrıları gösterir `DFX_Text`. Ayrıca iki çağrıları fark [CDaoFieldExchange::SetFieldType](cdaofieldexchange-class.md#setfieldtype). İlk çağrıda yazmalısınız `SetFieldType` ve kendi **DFX** çağırın. İkinci çağrı ve onun ilişkili **DFX** çağrıları normalde sınıfı oluşturulan kod sihirbaz tarafından yazılmış.  
+ Bu örnek, çeşitli çağrıları gösterir `DFX_Text`. Ayrıca iki çağrıları fark [CDaoFieldExchange::SetFieldType](cdaofieldexchange-class.md#setfieldtype). İlk çağrıda yazmanız gereken `SetFieldType` ve kendi **DFX** çağırın. İkinci çağrı ve onun ilişkili **DFX** çağrıları kod Sihirbazı tarafından oluşturulan sınıf normal olarak yazılır.  
   
 ```cpp  
 void CCustSet::DoFieldExchange(CDaoFieldExchange* pFX)

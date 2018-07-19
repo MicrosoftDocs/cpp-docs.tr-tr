@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e71cdbfad883d1d9560ee88fde0338958240bd19
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3ae46a78484a2ee2737f3d949e525ce89d8401cd
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855831"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959075"
 ---
 # <a name="tupleelement-class"></a>tuple_element Sınıfı
 
-Saran bir `tuple` öğesi. Özelleştirmeleri kaydırma `array` öğeleri ve `pair` öğeleri.
+Saran bir `tuple` öğesi. Uzmanlıkları kaydırma `array` öğeleri ve `pair` öğeleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,29 +66,35 @@ template <class T1, class T2>
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin* belirtilen öğenin dizini.
+*Index*  
+Belirtilen öğenin dizini.
 
-*Tuple* kayıt türü.
+*Tanımlama grubu*  
+Demet türü.
 
-*Elem* dizi öğenin türü.
+*Elem*  
+Bir dizi öğe türü.
 
-*Boyutu* dizinin boyutu.
+*Boyutu*  
+Dizinin boyutu.
 
-*T1* çifti ilk öğe türü.
+*T1*  
+Bir çift ilk öğenin türü.
 
-*T2* çifti ikinci öğe türü.
+*T2*  
+Bir çift ikinci öğe türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı `tuple_element` iç içe geçmiş typedef sahip `type` eşanlamlısı dizinindeki türü için başka bir deyişle `Index` türünün `Tuple`.
+Şablon sınıfı `tuple_element` sahip iç içe geçmiş bir tür tanımı `type` diğer bir deyişle dizinindeki bir türe ilişkin bir eşanlam *dizin* türünün *demet*.
 
-Typedef `tuple_element_t` için kullanışlı bir diğer adı olan `tuple_element<Index, Tuple>::type`.
+Typedef `tuple_element_t` için kullanışlı bir diğer addır `tuple_element<Index, Tuple>::type`.
 
-Diziler için Şablon sınıfı özelleştirmesi için bir arabirim sunan bir `array` tanımlama grubu olarak `Size` öğeleri, her biri aynı türe sahip. Bir iç içe geçmiş typedef her uzmanlık sahip `type` eşanlamlısı türü için başka bir deyişle `Index` öğesinin `array`, korunan tüm const geçici nitelikleri ile.
+Şablon sınıfı bir özelleştirmeye diziler için bir arabirim sağlar. bir `array` tanımlama grubu `Size` öğeleri, her biri aynı türe sahip. İç içe geçmiş bir tür tanımı her uzmanlığı olan `type` diğer bir deyişle türe ilişkin bir eşanlam *dizin* öğesinin `array`, korunur herhangi bir const-volatile niteliklere sahip.
 
-Şablon özelleştirmeleri için `pair` türleri her sağlayan bir tek üye typedef `type`, çifti korunarak const ve/veya volatile nitelikleri ile belirtilen konumda öğesinin türü eşanlamlısı olduğu. Typedef `tuple_element_t` için kullanışlı bir diğer adı olan `tuple_element<N, pair<T1, T2>>::type`.
+Şablon uzmanlıkları için `pair` türleri her sağlayan bir tek üyeye typedef `type`, belirli bir konumda korunmuş const ve/veya volatile niteliklere sahip çiftindeki öğesinin türü için bir eşanlamlı olduğu. Typedef `tuple_element_t` için kullanışlı bir diğer addır `tuple_element<N, pair<T1, T2>>::type`.
 
-Kullanım [get işlevi &lt;yardımcı programı&gt; ](../standard-library/utility-functions.md#get) öğe belirtilen konuma veya belirtilen bir türün dönün.
+Kullanım [get işlevi &lt;yardımcı programı&gt; ](../standard-library/utility-functions.md#get) belirtilen konumda ya da belirtilen bir türün öğesi döndürülecek.
 
 ## <a name="example"></a>Örnek
 
@@ -178,7 +184,7 @@ int main() {
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<tanımlama grubu > **üstbilgisi:** \<dizi > (için dizi uzmanlık) **üstbilgisi:** \<yardımcı programı > (için çifti özelleştirmeleri)  **Namespace:** std
+**Başlık:** \<tanımlama grubu > **üst bilgi:** \<dizi > (için dizi özelleştirme) **üst bilgi:** \<yardımcı programı > (çifti uzmanlıkları için)  **Namespace:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

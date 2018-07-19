@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e911d91e987bb5172d9681161dcd87a287201b4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7323c7dc104d8fbf54292fb7f1ca455b5e1a92f6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853784"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957379"
 ---
 # <a name="randomaccessiteratortag-struct"></a>random_access_iterator_tag Yapısı
 
-Dönüş türü için sağlayan bir sınıf **iterator_category** rasgele erişim yineleyici temsil eden bir işlev.
+Bir dönüş türü sağlayan sınıf `iterator_category` bir rastgele erişim yineleyicisini temsil eden bir işlev.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,9 +36,9 @@ struct random_access_iterator_tag    : public bidirectional_iterator_tag {};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kategori etiket sınıflarını algoritması seçimi için etiketler derleme gibi kullanılır. Derleme zamanında en verimli algoritması kullanabilmeleri en özel kategori yineleyici bağımsız değişkeninin değerini bulmak şablon işlevi gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator` >  **:: iterator_category** yineleyici'nin davranışını tanımlar en özel kategori etiketi olarak tanımlanması gerekir.
+Kategori etiketi sınıfları algoritması seçimi için etiketler derleme gibi kullanılır. Derleme zamanında en verimli algoritması kullanabilirsiniz, böylece en belirgin kategori yineleyici bağımsız değişkeninin bulmak şablon işlevi gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator` >  **:: iterator_category** yineleyicinin davranışını tanımlar en belirgin kategori etiketi olarak tanımlanması gerekir.
 
-Aynı türdür **yineleyici** \< **Iter**> **:: iterator_category** zaman **Iter** açıklayan bir rasgele erişim yineleyici hizmet verebilir nesnesi.
+Aynı türdür **yineleyici** \< **Iter**> **:: iterator_category** olduğunda `Iter` olarak hizmet verebilen bir nesneyi tanımlayan bir rasgele erişim yineleyicisi.
 
 ## <a name="example"></a>Örnek
 
@@ -91,7 +91,7 @@ int main( )
 
 ## <a name="sample-output"></a>Örnek Çıktı
 
-Aşağıdaki çıkış x86 için alınır.
+X86 için aşağıdaki çıkış alınır.
 
 ```Output
 The type of iterator for vector<int> is identified by the tag:

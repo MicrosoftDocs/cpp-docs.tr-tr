@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61348578018a5bbddcaff293fa3ed76575eb16de
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 88836d93d6ce3ba4dff817c7b470e87f48f61b14
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413251"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954183"
 ---
 # <a name="classes-and-structs-c"></a>Sınıflar ve Yapılar (C++)
-Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan özel iken yapılar için varsayılan erişilebilirlik ortak olması dışında iki yapıları C++ ile aynıdır.  
+Bu bölüm, C++ sınıfları ve yapıları tanıtır. İki yapıları, sınıflarda varsayılan özel iken yapılar için varsayılan erişilebilirlik genel dışında C++ ile aynıdır.  
   
- Sınıflar ve yapılar kendi türlerinizi tanımlama yapabildiği yapıları var. Sınıflar ve yapılar hem de veri üyeleri ve tür durumunu ve davranışını tanımlamak etkinleştirmeniz üye işlevleri içerebilir.  
+ Sınıflar ve yapılar kendi türlerinizi yapabildiği tanımladığınız yapılarıdır. Sınıflar ve yapılar hem de veri üyeleri ve türün durumunu ve davranışını açıklamak etkinleştirdiğiniz üye işlevlerini içerebilir.  
   
  Aşağıdaki konular bulunur:  
   
@@ -58,17 +58,17 @@ Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan �
   
 -   [C++ Bit Alanları](../cpp/cpp-bit-fields.md)  
   
- Üç sınıf yapısı, sınıf ve birleşim türleridir. Kullanılarak bildirilir [yapısı](../cpp/struct-cpp.md), [sınıfı](../cpp/class-cpp.md), ve [UNION](../cpp/unions.md) anahtar sözcükler (bkz [sınıf türleri tanımlama](http://msdn.microsoft.com/en-us/e8c65425-0f3a-4dca-afc2-418c3b1e57da)). Aşağıdaki tabloda, üç sınıf türleri arasındaki farklar gösterilmektedir.  
+ Üç sınıf yapısı, sınıf ve union türleridir. Kullanılarak bildirilirler [yapı](../cpp/struct-cpp.md), [sınıfı](../cpp/class-cpp.md), ve [birleşim](../cpp/unions.md) anahtar sözcükleri. Aşağıdaki tabloda, üç sınıf türleri arasındaki farklar gösterilmektedir.  
   
- Birleşimler hakkında daha fazla bilgi için bkz: [birleşimler](../cpp/unions.md). Yönetilen sınıflar ve yapılar hakkında daha fazla bilgi için bkz: [sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md).  
+ Birleşimler hakkında daha fazla bilgi için bkz. [birleşimler](../cpp/unions.md). Yönetilen sınıflar ve yapı birimleri hakkında daha fazla bilgi için bkz: [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).  
   
-### <a name="access-control-and-constraints-of-structures-classes-and-unions"></a>Erişim denetimi ve kısıtlamaları yapılar, sınıflar ve birleşimler  
+### <a name="access-control-and-constraints-of-structures-classes-and-unions"></a>Erişim denetimi ve kısıtlamalar yapıları, sınıflar ve birleşimler  
   
 |Yapılar|Sınıflar|Birleşimler|  
 |----------------|-------------|------------|  
-|sınıf anahtarı `struct`|sınıf anahtarı **sınıfı**|sınıf anahtarı **birleşimi**|  
-|Varsayılan erişim ortak|Varsayılan erişim özeldir|Varsayılan erişim ortak|  
-|Hiçbir kullanım kısıtlamaları|Hiçbir kullanım kısıtlamaları|Aynı anda yalnızca bir üye kullanın|  
+|sınıf anahtarı **yapısı**|sınıf anahtarı **sınıfı**|sınıf anahtarı **birleşim**|  
+|Varsayılan erişimi geneldir|Özel varsayılan erişim|Varsayılan erişimi geneldir|  
+|Hiçbir kullanım kısıtlamaları|Hiçbir kullanım kısıtlamaları|Bir kerede yalnızca bir üyesini kullanın|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

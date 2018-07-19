@@ -28,15 +28,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80795131915da89928afc883fec0985087c4f38f
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: d80ed097056c9d52f5f9d98ab8e3f80fae431d98
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955449"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336351"
 ---
 # <a name="cdumpcontext-class"></a>CDumpContext sınıfı
-Okunabilir metin biçiminde tanılama çıktıları akış odaklı destekler.  
+Tanı çıktısını insanlar tarafından okunabilen metin biçiminde akış temelli destekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,46 +50,46 @@ class CDumpContext
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDumpContext::CDumpContext](#cdumpcontext)|Oluşturan bir `CDumpContext` nesnesi.|  
+|[CDumpContext::CDumpContext](#cdumpcontext)|Oluşturur bir `CDumpContext` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDumpContext::DumpAsHex](#dumpashex)|Belirtilen öğe onaltılık biçimde dökümünü yapar.|  
-|[CDumpContext::Flush](#flush)|Döküm bağlamı arabelleğine herhangi bir veri aktarır.|  
-|[CDumpContext::GetDepth](#getdepth)|Döküm derinliği karşılık gelen bir tamsayı alır.|  
-|[CDumpContext::HexDump](#hexdump)|Bir dizi onaltılık biçimde bulunan bayt dökümünü yapar.|  
+|[CDumpContext::DumpAsHex](#dumpashex)|Belirtilen öğe on altılık biçimde dökümlerini.|  
+|[CDumpContext::Flush](#flush)|Döküm bağlamı arabelleğinde tüm verileri temizler.|  
+|[CDumpContext::GetDepth](#getdepth)|Döküm derinliğini karşılık gelen bir tamsayı olarak alır.|  
+|[CDumpContext::HexDump](#hexdump)|Onaltılık biçimde bir dizi içindeki bayt dökümünü yapar.|  
 |[CDumpContext::SetDepth](#setdepth)|Döküm derinliğini ayarlar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDumpContext::operator &lt;&lt;](#operator_lt_lt)|Değişkenleri ve nesneleri döküm bağlamına ekler.|  
+|[CDumpContext::operator &lt;&lt;](#operator_lt_lt)|Değişkenler ve nesneler döküm bağlamına ekler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CDumpContext` bir taban sınıfı yok.  
+ `CDumpContext` bir temel sınıfa sahip değil.  
   
- Kullanabileceğiniz [afxDump](diagnostic-services.md#afxdump), bir predeclared `CDumpContext` , dökme çoğu için nesnesi. `afxDump` Nesne yalnızca Microsoft Foundation Class Kitaplığı hata ayıklama sürümü kullanılabilir.  
+ Kullanabileceğiniz [afxDump](diagnostic-services.md#afxdump), bir önceden bildirilen `CDumpContext` dökme, çoğu için bir nesne. `afxDump` Nesne yalnızca Microsoft Foundation Class Kitaplığı hata ayıklama sürümü kullanılabilir.  
   
- Birkaç bellek [tanılama Hizmetleri](../../mfc/reference/diagnostic-services.md) kullanmak `afxDump` çıktılarını için.  
+ Bazı bellek [tanı Hizmetleri](../../mfc/reference/diagnostic-services.md) kullanın `afxDump` çıktılarını için.  
   
- Windows ortamı, önceden tanımlanmış çıkışı altında `afxDump` nesnesi, kavramsal olarak benzer şekilde `cerr` akışı, hata ayıklayıcı Windows işlevi aracılığıyla yönlendirilir **OutputDebugString**.  
+ Önceden tanımlanmış çıktısı Windows ortamını altında `afxDump` nesne, kavramsal olarak benzer şekilde `cerr` akışı, hata ayıklayıcı Windows işlev aracılığıyla yönlendirilir `OutputDebugString`.  
   
- `CDumpContext` Sınıfına sahip aşırı yüklenmiş ekleme ( **<<**) işleci için `CObject` nesnenin veri dökümleri işaretçileri. Türetilen bir nesne için bir özel döküm biçimi gerekiyorsa, geçersiz kılma [CObject::Dump](../../mfc/reference/cobject-class.md#dump). Çoğu Microsoft Foundation sınıf geçersiz kılınan bir uygulama `Dump` üye işlevi.  
+ `CDumpContext` Sınıfında aşırı yüklenmiş bir ekleme ( **<<**) için işleç `CObject` işaretçileri, nesne verilerinin dökümünü yapar. Türetilen bir nesne için bir özel döküm biçiminde gerekiyorsa, geçersiz kılma [CObject::Dump](../../mfc/reference/cobject-class.md#dump). Çoğu Microsoft Foundation sınıfları geçersiz kılınan bir uygulama `Dump` üye işlevi.  
   
- Öğesinden türetilmemiş sınıfları `CObject`, gibi `CString`, `CTime`, ve `CTimeSpan`, kendi aşırı yüklenmiş olan `CDumpContext` gibi sık kullanılan yapıları olarak ekleme işleçlerini `CFileStatus`, `CPoint`, ve `CRect`.  
+ Türetilmiş değil sınıfları `CObject`, gibi `CString`, `CTime`, ve `CTimeSpan`, kendi aşırı yüklenmiş olan `CDumpContext` gibi sık kullanılan yapıları olarak ekleme işleçlerini `CFileStatus`, `CPoint`, ve `CRect`.  
   
- Kullanırsanız [ımplement_dynamıc](../../mfc/reference/run-time-object-model-services.md#implement_dynamic) veya [ımplement_serıal](../../mfc/reference/run-time-object-model-services.md#implement_serial) sonra uygulamasında sınıfınızın makrosu `CObject::Dump` adını yazdırılır, `CObject`-türetilmiş sınıf. Aksi takdirde yazdırılır `CObject`.  
+ Kullanırsanız [ımplement_dynamıc](../../mfc/reference/run-time-object-model-services.md#implement_dynamic) veya [ımplement_serıal](../../mfc/reference/run-time-object-model-services.md#implement_serial) ardından uygulamasında sınıfınızın makrosu `CObject::Dump` adını yazdırılır, `CObject`-türetilmiş sınıf. Aksi takdirde, yazdırılacağı `CObject`.  
   
- `CDumpContext` Sınıf kitaplığı hata ayıklama ve yayın sürümleri ile kullanılabilir ancak `Dump` üye işlevi yalnızca hata ayıklama sürümü tanımlanır. Kullanım **#ifdef _DEBUG**  /  `#endif` özel dahil olmak üzere kodunuzu tanılama köşeli ayraç deyimleri `Dump` üye işlevleri.  
+ `CDumpContext` Sınıf kitaplığı hata ayıklama ve yayın sürümleri ile kullanılabilir ancak `Dump` üye işlevi, yalnızca hata ayıklama sürümünde tanımlanır. Kullanım **#ifdef _DEBUG**  /  `#endif` deyimlerini içeren kendi özel kodunuzu tanılama köşeli ayraç `Dump` üye işlevleri.  
   
  Kendi oluşturmadan önce `CDumpContext` nesnesi oluşturmanız gerekir bir `CFile` döküm hedef olarak hizmet veren nesne.  
   
  Daha fazla bilgi için `CDumpContext`, bkz: [hata ayıklama MFC uygulamaları](/visualstudio/debugger/mfc-debugging-techniques).  
   
- **# _DEBUG define**  
+ **#define _DEBUG**  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CDumpContext`  
@@ -111,13 +111,13 @@ CDumpContext(CFile* pFile = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  `afxDump` Nesne otomatik olarak oluşturulur.  
   
- Arka plandaki için yazma `CFile` döküm bağlam olmakla birlikte etkin; Aksi takdirde, döküm ile çalışmasını engeller. Windows ortamı altında çıkış hata ayıklayıcı Windows işlevi aracılığıyla yönlendirilir **OutputDebugString**.  
+ Temel alınan yazma `CFile` döküm içeriği olmakla birlikte etkin; Aksi takdirde, döküm ile çalışmasını engeller. Windows ortamı çıkış hata ayıklayıcı Windows işlev aracılığıyla yönlendirilir `OutputDebugString`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#12](../../mfc/codesnippet/cpp/cdumpcontext-class_1.cpp)]  
   
 ##  <a name="dumpashex"></a>  CDumpContext::DumpAsHex  
- Onaltılık sayı olarak biçimlendirilmiş belirtilen tür dökümünü yapar.  
+ Belirtilen tür onaltılık sayı olarak biçimlendirilmiş dökümünü yapar.  
   
 ```  
 CDumpContext& DumpAsHex(BYTE b);  
@@ -131,16 +131,16 @@ CDumpContext& DumpAsHex(WORD w);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir başvuru bir `CDumpContext` nesnesi.  
+ Bir başvuru bir `CDumpContext` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Öğesi belirtilen türde bir onaltılık sayı olarak dökümü bu üye işlevini çağırın. Bir dizi dökümü çağrısı [CDumpContext::HexDump](#hexdump).  
+ Öğesi belirtilen türde bir onaltılık sayı olarak dökümünü almak için bu üye işlevini çağırın. Bir dizi dökümünü almak için çağrı [CDumpContext::HexDump](#hexdump).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#13](../../mfc/codesnippet/cpp/cdumpcontext-class_2.cpp)]  
   
 ##  <a name="flush"></a>  CDumpContext::Flush  
- Zorlar dosyasına yazılacak arabellekleri kalan herhangi bir veri dökümü bağlamına bağlı.  
+ Zorlar dosyaya yazılacak arabellek içinde kalan herhangi bir veri döküm bağlamına iliştirilemez.  
   
 ```  
 void Flush();
@@ -150,17 +150,17 @@ void Flush();
  [!code-cpp[NVC_MFC_Utilities#14](../../mfc/codesnippet/cpp/cdumpcontext-class_3.cpp)]  
   
 ##  <a name="getdepth"></a>  CDumpContext::GetDepth  
- Derin veya basit bir döküm işleminde olup olmadığını belirler.  
+ Derin veya yüzeysel bir döküm işleminde olup olmadığını belirler.  
   
 ```  
 int GetDepth() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirlenen döküm derinliği `SetDepth`.  
+ Döküm tarafından belirlenen derinliğini `SetDepth`.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [SetDepth](#setdepth).  
+  Örneğin bakın [SetDepth](#setdepth).  
   
 ##  <a name="hexdump"></a>  CDumpContext::HexDump  
  Onaltılık sayı olarak biçimlendirilmiş bir bayt dizisi dökümünü yapar.  
@@ -175,25 +175,25 @@ void HexDump(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszLine*  
- Yeni bir satır başlangıcında çıktısını almak için bir dize.  
+ Yeni bir satır başında çıktısını almak için bir dize.  
   
  *pby*  
- Döküm baytları içeren bir arabellek için bir işaretçi.  
+ Döküm baytları içeren arabellek için işaretçi.  
   
  *nBytes*  
- Döküm bayt sayısı.  
+ Dökümü alınacak bayt sayısı.  
   
  *nWidth*  
- En fazla bayt sayısı (çıktı çizginin genişliğini değil) satır yazılan.  
+ En büyük bayt sayısını (çıkış çizginin genişliğini değil) satır yazılan.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir tek, belirli öğesi türü bir onaltılık sayı olarak dökümü çağrısı [CDumpContext::DumpAsHex](#dumpashex).  
+ Bir tek, belirli bir öğe türü bir onaltılık sayı olarak dökümünü almak için çağrı [CDumpContext::DumpAsHex](#dumpashex).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/cpp/cdumpcontext-class_4.cpp)]  
   
 ##  <a name="operator_lt_lt"></a>  CDumpContext::operator &lt;&lt;  
- Döküm bağlamı için belirtilen veri çıkarır.  
+ Döküm bağlam belirtilen verileri çıkarır.  
   
 ```  
 CDumpContext& operator<<(const CObject* pOb);  
@@ -220,18 +220,18 @@ CDumpContext& operator<<(HFONT h);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `CDumpContext` başvuru. Dönüş değerini kullanarak, kaynak kodu tek bir satıra birden çok eklemeleri yazabilirsiniz.  
+ A `CDumpContext` başvuru. Dönüş değeri kullanarak, kaynak kodunu tek bir satıra birden çok eklemeler yazabilirsiniz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin ekleme işleci aşırı `CObject` en basit türler için de işaretçileri. Bir işaretçi bir döküm sonuçlanır karakter dizesi İçindekiler; bir işaretçi **void** sonuçları adresi yalnızca içinde bir onaltılık dökümü. A **LONGLONG** sonuçları bir 64-bit işaretli tamsayıyı; bir dökümünü A **ULONGLONG** bir 64-bit işaretsiz tamsayıyı bir dökümünü neden olur.  
+ Ekleme işleci için aşırı yüklenmiş `CObject` işaretçileri de en temel türlerin sunamıyoruz. Dize içeriklerini dökümü içinde karaktere bir işaretçi sonuçlanır; bir işaretçi **void** adresinin yalnızca onaltılık bir döküm sonuçlanır. Bir 64-bit imzalı bir tamsayı dökümü içinde bir LONGLONG sonuçlanır; Bir 64-bit işaretsiz tamsayıyı dökümü içinde bir ULONGLONG sonuçlanır.  
   
- Kullanırsanız `IMPLEMENT_DYNAMIC` veya `IMPLEMENT_SERIAL` makrosu sınıfınız, daha sonra ekleme işleci uygulamasında aracılığıyla `CObject::Dump`, adını yazdırılır, `CObject`-türetilmiş sınıf. Aksi takdirde yazdırılır `CObject`. Geçersiz kılarsanız `Dump` sınıfı, daha sonra işlev, nesnenin içeriğini bir onaltılık dökümü yerine daha anlamlı çıktısını sağlayabilir.  
+ Sınıfınız, daha sonra ekleme işleci, uygulamada ımplement_dynamıc veya ımplement_serıal makrosu aracılığıyla kullanırsanız `CObject::Dump`, adı yazdırır, `CObject`-türetilmiş sınıf. Aksi takdirde, yazdırılacağı `CObject`. Kılarsanız `Dump` sınıfı, daha sonra işlev nesnesinin içindekiler onaltılık bir döküm yerine daha anlamlı bir çıkış sağlayabilir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#17](../../mfc/codesnippet/cpp/cdumpcontext-class_5.cpp)]  
   
 ##  <a name="setdepth"></a>  CDumpContext::SetDepth  
- Döküm derinliği ayarlar.  
+ Derinlik döküm için ayarlar.  
   
 ```  
 void SetDepth(int nNewDepth);
@@ -242,10 +242,10 @@ void SetDepth(int nNewDepth);
  Yeni derinliği değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlkel tür veya basit dökme durumunda `CObject` diğer nesnelere hiçbir işaretçileri içeren sonra 0 değeri yeterlidir. 0 tüm nesneler olduğu derin bir döküm belirtilenden daha büyük bir değer yinelemeli olarak yazılan. Örneğin, bir koleksiyon, derin bir dökümü koleksiyonunun tüm öğeleri döküm. Türetilmiş sınıflarda diğer belirli derinliği değerleri kullanabilirsiniz.  
+ Bir basit tür veya basit dökme varsa `CObject` hiçbir diğer nesnelerine işaretçiler içeren, ardından 0 değerini yeterlidir. 0 tüm nesneler olduğu ayrıntılı bir dökümü belirtilenden daha büyük bir değere yinelemeli olarak yazılan. Örneğin, bir koleksiyonun ayrıntılı bir dökümü tüm koleksiyon öğelerini döküm. Diğer belirli derinliği değerleri, türetilmiş sınıflarda kullanabilir.  
   
 > [!NOTE]
->  Döngüsel başvuru içinde derin dökümleri algılanmaz ve sonsuz Döngülerde neden olabilir.  
+>  Döngüsel başvurular derin dökümlerde algılanmayan ve sonsuz döngüler neden olabilir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#16](../../mfc/codesnippet/cpp/cdumpcontext-class_6.cpp)]  

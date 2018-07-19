@@ -1,5 +1,5 @@
 ---
-title: Yapı eksi | Microsoft Docs
+title: minus yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10145e52931fc9ef993108c2373bf3d0fbf0519e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6fdbcc396b77c6e0eb13262b80ca30df704f0c62
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858087"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959111"
 ---
 # <a name="minus-struct"></a>minus Yapısı
 
-Çıkarma işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi (ikili `operator-`) bağımsız değişkenlerini üzerinde.
+Çıkarma işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (ikili `operator-`) üzerinde bağımsız değişkenleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,15 +49,15 @@ struct minus<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Bir ikili destekleyen bir türü `operator-` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* bir ikili destekleyen bir türü `operator-` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` İşlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` İşlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left - Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator-`.
+Sonucu `Left - Right`. Özelleşmiş şablon türü tarafından döndürülen sonuç iletilmesini mükemmel `operator-`.
 
 ## <a name="example"></a>Örnek
 
@@ -116,7 +116,7 @@ The element-wise differences between v1 and v2 are: ( 2 3 4 5 6 7 )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

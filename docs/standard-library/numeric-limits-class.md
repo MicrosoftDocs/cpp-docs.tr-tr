@@ -80,16 +80,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73c8d98157e81f087bf382c3733a2ade909349a6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a14d5012e1db8dec0f1aa6c39d8764232169dec2
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862786"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954883"
 ---
 # <a name="numericlimits-class"></a>numeric_limits Sınıfı
 
-Şablon sınıfı yerleşik sayısal türler aritmetik özelliklerini açıklar.
+Şablon sınıfı, yerleşik sayısal türler aritmetik özelliklerini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -100,50 +100,50 @@ class numeric_limits
 
 ### <a name="parameters"></a>Parametreler
 
-`Type` Temel öğesi veri türü özellikleri olan test veya sorgulanan.
+*Tür* özelliklerini güncellenmekte temel öğe veri türü test veya sorgulanabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Üst bilgi türleri için açık özelleştirmeleri tanımlar `wchar_t`, `bool`, `char`, `signed char`, `unsigned char`, `short`, `unsigned short`, `int`, `unsigned int`, `long`, `unsigned long`, `float`, `double`, `long double` **,** `long long`, `unsigned long long`, `char16_t`, ve `char32_t`. Bu açık özelleştirmeleri üye için [numeric_limits::is_specialized](#is_specialized) olan `true`, ve tüm ilgili üyeleri anlamlı değerlere sahip. Program ek açık özelleştirmeleri sağlayabilir. Çoğu üye işlevleri sınıfının açıklamak veya olası uygulamaları test `float`.
+Üst bilgi türleri için açık uzmanlık tanımlar **wchar_t**, **bool**, **char**, **signed char**, **işaretsiz char**, **kısa**, **işaretsiz**, **int**, **işaretsiz int**, **uzun**, **işaretsiz uzun**, **float**, **çift**, **uzun çift ***** **uzunuzun**, **işaretsiz long long**, `char16_t`, ve `char32_t`. Bu bir açık uzmanlık, üye için [numeric_limits::is_specialized](#is_specialized) olduğu **true**, ve tüm ilgili üyeleri anlamlı değerlere sahiptir. Program ek açık uzmanlık sağlayabilirsiniz. Çoğu sınıf üye işlevleri tanımlamak veya olası uygulamalarını test **float**.
 
-Rastgele bir uzmanlık için hiçbir üye anlamlı değerlere sahiptir. Anlamlı bir değere sahip olmayan bir üye nesnesini sıfır depolar (veya `false`) ve anlamlı bir değer döndürmeyen bir üye işlevinin döndürdüğü `Type(0)`.
+Rastgele bir uzmanlık için hiçbir üye anlamlı değerlere sahip. Sıfır anlamlı bir değer olmayan bir üye nesnesini depolar (veya **false**) ve anlamlı bir değer döndürmeyen bir üye işlevinin döndürdüğü `Type(0)`.
 
 ### <a name="static-functions-and-constants"></a>Statik işlevler ve sabitleri
 
 |||
 |-|-|
-|[denorm_min](#denorm_min)|En küçük sıfır olmayan döndürür değeri normal dışı.|
-|[basamak](#digits)|Türü duyarlık kaybı olmadan gösterebilir taban basamak sayısını döndürür.|
-|[digits10](#digits10)|Türü duyarlık kaybı olmadan gösterebilir ondalık basamak sayısını döndürür.|
-|[Epsilon](#epsilon)|1 ve en küçük değeri arasındaki farkı veri türünü temsil eden 1'den büyük döndürür.|
-|[has_denorm](#has_denorm)|Testleri bir türü izin verip değerleri normal dışı.|
-|[has_denorm_loss](#has_denorm_loss)|Doğruluk kaybı denormalization kaybı olarak yerine kesin olmayan bir sonucu olarak algılanır olup olmadığını sınar.|
-|[has_infinity](#has_infinity)|Pozitif sonsuzluk temsili bir türe sahip olup olmadığını sınar.|
+|[denorm_min](#denorm_min)|En küçük sıfır döndürür değeri normalleştirilmişlikten çıkarılır.|
+|[basamak](#digits)|Duyarlık kaybı yaşanmadan türü temsil edebilen taban basamak sayısını döndürür.|
+|[digits10](#digits10)|Duyarlık kaybı yaşanmadan türü temsil edebilen bir ondalık basamak sayısını döndürür.|
+|[Epsilon](#epsilon)|Veri türü temsil edebilen 1'den büyük en küçük değeri ile 1 arasındaki farkı döndürür.|
+|[has_denorm](#has_denorm)|Testleri izin verip bir tür değerleri normalleştirilmişlikten çıkarılır.|
+|[has_denorm_loss](#has_denorm_loss)|Doğruluk kaybı normalleştirilmişlikten çıkarma kayıp yerine kesin olmayan bir sonucu olarak algılanan olup olmadığını sınar.|
+|[has_infinity](#has_infinity)|Pozitif sonsuz temsili bir türe sahip olup olmadığını sınar.|
 |[has_quiet_NaN](#has_quiet_nan)|Nonsignaling olan bir sayı değil (NAN) bir sessiz temsili bir türe sahip olup olmadığını sınar.|
-|[has_signaling_NaN](#has_signaling_nan)|Sayı olmayan (NAN) sinyal temsili bir türe sahip olup olmadığını sınar.|
-|[Sonsuz](#infinity)|Varsa bir tür için pozitif sonsuzluk gösterimi.|
-|[is_bounded](#is_bounded)|Testleri bir türü temsil değerleri kümesi sınırlıdır.|
-|[is_exact](#is_exact)|Bir tür üzerinde yapılan hesaplamaları olduğunda yuvarlama hatalarının testleri boş.|
-|[is_iec559](#is_iec559)|Bir tür IEC 559 standartlara uygun sağlayıp sağlamadığını test.|
-|[is_integer](#is_integer)|Testleri bir tamsayı temsili bir türe sahip.|
-|[is_modulo](#is_modulo)|Bir türü varsa testleri bir gösterimi modül.|
-|[is_signed](#is_signed)|Testleri imzalı temsili bir türe sahip.|
-|[is_specialized](#is_specialized)|Bir şablon sınıfında tanımlanan bir açık uzmanlık türündeyse testleri `numeric_limits`.|
+|[has_signaling_NaN](#has_signaling_nan)|Bir tür sinyal sayı olmayan (NAN) bir gösterimi olup olmadığını test eder.|
+|[sonsuz](#infinity)|Pozitif sonsuz varsa türünün temsili.|
+|[is_bounded](#is_bounded)|Bir tür olarak temsil değerleri kümesi sınırlı olup olmadığını sınar.|
+|[is_exact](#is_exact)|Test türü üzerinde yapılan hesaplamaları yuvarlama hataları ücretsizdir.|
+|[is_iec559](#is_iec559)|Bir tür IEC 559 standartlara uygun olmadığını sınar.|
+|[is_integer](#is_integer)|Bir tamsayı temsili bir türe sahip olmadığını sınar.|
+|[is_modulo](#is_modulo)|Bir tür sahipse, testleri bir modül gösterimi.|
+|[is_signed](#is_signed)|İmzalı bir gösterimi bir türe sahip olmadığını sınar.|
+|[is_specialized](#is_specialized)|Şablon sınıfı içinde tanımlanan bir açık özelleştirme bir türe sahip olmadığını test eder `numeric_limits`.|
 |[En düşük](#lowest)|En negatif sonlu değeri döndürür.|
-|[max](#max)|Bir türe ilişkin maksimum sınırlı değeri döndürür.|
-|[max_digits10](#max_digits10)|İki ayrı türü değerleri ayrı ondalık Beyanları olmasını sağlamak için gereken ondalık basamak sayısını döndürür.|
-|[max_exponent](#max_exponent)|Sayı tabanını tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir en büyük pozitif tam sayı üs döndürür.|
-|[max_exponent10](#max_exponent10)|On tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir en büyük pozitif tam sayı üs döndürür.|
-|[Min](#min)|Bir türe ilişkin minimum normalleştirilmiş değeri döndürür.|
-|[min_exponent](#min_exponent)|Sayı tabanını tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir maksimum negatif tam sayı üs döndürür.|
-|[min_exponent10](#min_exponent10)|On tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir maksimum negatif tam sayı üs döndürür.|
-|[quiet_NaN](#quiet_nan)|Bir sessiz gösterimini sayı olmayan (NAN) türü döndürür.|
+|[en fazla](#max)|Bir tür için maksimum sonlu değeri döndürür.|
+|[max_digits10](#max_digits10)|İki ayrı türü değerleri farklı ondalık gösterimlerini sağlamak için gerekli ondalık basamak sayısını döndürür.|
+|[max_exponent](#max_exponent)|Taban sınıfın, gücünü ortaya çıktığında, kayan nokta türü sınırlı bir değeri temsil edebilir en fazla pozitif tam sayı üssü döndürür.|
+|[max_exponent10](#max_exponent10)|Bir taban on gücü için harekete geçirildiğinde, kayan nokta türü sınırlı bir değeri temsil edebilir en fazla pozitif tam sayı üssü döndürür.|
+|[Min](#min)|Bir tür için en düşük normalleştirilmiş değerini döndürür.|
+|[min_exponent](#min_exponent)|Taban sınıfın, gücünü ortaya çıktığında, kayan nokta türü sınırlı bir değeri temsil edebilir en büyük negatif tam sayı üs döndürür.|
+|[min_exponent10](#min_exponent10)|On sınıfın gücü için oluştuğunda, kayan nokta türü sınırlı bir değeri temsil edebilir en büyük negatif tam sayı üs döndürür.|
+|[quiet_NaN](#quiet_nan)|Sessiz bir gösterimi türü için sayı olmayan (NAN) döndürür.|
 |[radix](#radix)|İntegral taban döndürür taban bir türü gösterimi için kullanılan, olarak adlandırılır.|
 |[round_error](#round_error)|Hata türü için izin verilecek en fazla döndürür.|
-|[round_style](#round_style)|Kayan nokta değer bir tamsayı değerine yuvarlama uygulaması seçebileceğiniz çeşitli yöntemleri açıklayan bir değer döndürür.|
-|[signaling_NaN](#signaling_nan)|Sayı olmayan (NAN) sinyal temsilini türü döndürür.|
-|[tinyness_before](#tinyness_before)|Bir tür değeri yuvarlama önce normalleştirilmiş değeri olarak göstermek için çok küçük olduğunu anlayabilirsiniz olup olmadığını sınar.|
-|[Tuzaklar](#traps)|Testleri olup, yakalama aritmetik özel durumları raporları için bir tür uygulanır.|
+|[round_style](#round_style)|Bir kayan nokta değeri tamsayıya yuvarlama uygulaması seçim yapabileceği çeşitli yöntemleri tanımlayan bir değer döndürür.|
+|[signaling_NaN](#signaling_nan)|Bir sayı değil (NAN) sinyal temsilini türünü döndürür.|
+|[tinyness_before](#tinyness_before)|Bir tür değeri normalleştirilmiş bir değer olarak yuvarlama önce temsil etmek için çok küçük olduğunu anlayabilirsiniz olup olmadığını sınar.|
+|[Tuzaklar](#traps)|Test türü için aritmetik özel durumları yakalama, raporlar uygulanır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -153,7 +153,7 @@ Rastgele bir uzmanlık için hiçbir üye anlamlı değerlere sahiptir. Anlamlı
 
 ## <a name="denorm_min"></a>  numeric_limits::denorm_min
 
-En küçük sıfır olmayan döndürür değeri normal dışı.
+En küçük sıfır döndürür değeri normalleştirilmişlikten çıkarılır.
 
 ```cpp
 static Type denorm_min() throw();
@@ -161,13 +161,13 @@ static Type denorm_min() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En küçük sıfır olmayan Normalleştirilmemiş değeri.
+En küçük sıfır olmayan normalleştirilmişlikten çıkarılmış değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`long double` aynı **çift** C++ derleyicisi'ne yönelik.
+**uzun çift** aynı **çift** C++ derleyicisi için.
 
-Aynı tür için en düşük değer işlevi döndürür olarak [min](#min) varsa [has_denorm](#has_denorm) eşit değil **denorm_present**.
+İşlevi aynı türü için en düşük değerini döndürür olarak [min](#min) varsa [has_denorm](#has_denorm) eşit değildir `denorm_present`.
 
 ### <a name="example"></a>Örnek
 
@@ -212,7 +212,7 @@ The smallest nonzero denormalized value
 
 ## <a name="digits"></a>  numeric_limits::Digits
 
-Türü duyarlık kaybı olmadan gösterebilir taban basamak sayısını döndürür.
+Duyarlık kaybı yaşanmadan türü temsil edebilen taban basamak sayısını döndürür.
 
 ```cpp
 static const int digits = 0;
@@ -220,11 +220,11 @@ static const int digits = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türü duyarlık kaybı olmadan gösterebilir taban basamak sayısı.
+Duyarlık kaybı yaşanmadan türü temsil edebilen taban basamak sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye türü önceden tanımlanmış tamsayı türü için hiçbir oturum bit dışında BITS sayısı olan değişiklik gösterebilir taban basamak sayısı veya önceden tanımlanmış bir kayan nokta türü için Mantis basamak sayısı depolar.
+Üye türü önceden tanımlanmış tamsayı türünün herhangi bir imza biti dışında bit sayısı kadar olan değişiklik temsil edebilen taban basamak sayısı veya önceden tanımlanmış bir kayan nokta türü için Mantis basamak sayısını depolar.
 
 ### <a name="example"></a>Örnek
 
@@ -256,7 +256,7 @@ int main( )
 
 ## <a name="digits10"></a>  numeric_limits::digits10
 
-Türü duyarlık kaybı olmadan gösterebilir ondalık basamak sayısını döndürür.
+Duyarlık kaybı yaşanmadan türü temsil edebilen bir ondalık basamak sayısını döndürür.
 
 ```cpp
 static const int digits10 = 0;
@@ -264,7 +264,7 @@ static const int digits10 = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türü duyarlık kaybı olmadan gösterebilir ondalık basamak sayısı.
+Duyarlık kaybı yaşanmadan türü temsil edebilen bir ondalık basamak sayısı.
 
 ### <a name="example"></a>Örnek
 
@@ -300,7 +300,7 @@ The float is; 100000000
 
 ## <a name="epsilon"></a>  numeric_limits::Epsilon
 
-İşlevi 1 ve en küçük değeri arasındaki farkı veri türü için gösterilebilir 1'den büyük olarak döndürür.
+İşlevi 1 ve en küçük değeri arasındaki fark için veri türünü gösterilebilir 1'den büyük olarak döndürür.
 
 ```cpp
 static Type epsilon() throw();
@@ -308,11 +308,11 @@ static Type epsilon() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-1 ve veri türü için gösterilebilir 1'den büyük en küçük değeri arasındaki fark.
+Veri türü gösterilebilir 1'den büyük en küçük değeri ile 1 arasındaki fark.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değer türü için flt_epsılon **float**. `epsilon` en küçük pozitif kayan noktalı sayı türüdür için *N* şekilde *N* + `epsilon` + *N* gösterilebilir değil.
+Değer flt_epsılon türüdür **float**. `epsilon` bir tür için en küçük pozitif kayan noktalı sayı *N* şekilde *N* + `epsilon` + *N* gösterilebilir olduğu.
 
 ### <a name="example"></a>Örnek
 
@@ -352,7 +352,7 @@ The difference between 1 and the smallest value greater than 1
 
 ## <a name="has_denorm"></a>  numeric_limits::has_denorm
 
-Testleri bir türü izin verip değerleri normal dışı.
+Testleri izin verip bir tür değerleri normalleştirilmişlikten çıkarılır.
 
 ```cpp
 static const float_denorm_style has_denorm = denorm_absent;
@@ -360,11 +360,11 @@ static const float_denorm_style has_denorm = denorm_absent;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir numaralandırma değeri türü **const**`float_denorm_style`, belirten olup türü Normalleştirilmemiş değerlere izin verir.
+Bir sabit listesi değeri türü **const**`float_denorm_style`gösteren olup türü normalleştirilmişlikten çıkarılmış değerlere izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye depoları **denorm_present** normal dışı bir kayan nokta türü değerleri için etkili bir şekilde üs BITS değişken sayısı.
+Üye depoları `denorm_present` normal dışı bir kayan nokta türü değerleri için etkili bir şekilde üs bit değişken bir sayı.
 
 ### <a name="example"></a>Örnek
 
@@ -398,7 +398,7 @@ Whether long int objects allow denormalized values: 0
 
 ## <a name="has_denorm_loss"></a>  numeric_limits::has_denorm_loss
 
-Doğruluk kaybı denormalization kaybı olarak yerine kesin olmayan bir sonucu olarak algılanır olup olmadığını sınar.
+Doğruluk kaybı normalleştirilmişlikten çıkarma kayıp yerine kesin olmayan bir sonucu olarak algılanan olup olmadığını sınar.
 
 ```cpp
 static const bool has_denorm_loss = false;
@@ -406,11 +406,11 @@ static const bool has_denorm_loss = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** doğruluğu kaybı denormalization kaybedilmiş; algılanırsa, **false** değilse.
+**doğru** doğruluk kaybı normalleştirilmişlikten çıkarma zarar; algılanırsa **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-True değeri doğruluğu Normalleştirilmemiş bir sonucu olarak (çok normalleştirilmiş değeri olarak göstermek için küçük) teslim edilir veya kesin olmayan nedeniyle kesildi olup olmadığını belirleyen bir tür için üye depolar (aynı sonucunda üs sınırlamaları edilmez Aralık ve kesinliği) bazı sonuçlarını etkileyebilecek IEC 559 kayan nokta temsili bir seçenek.
+True değeri normalleştirilmişlikten çıkarılmış bir sonucu olarak (çok normalleştirilmiş bir değer olarak temsil etmek için küçük) teslim edilir çünkü bölümünü kesin değilse veya doğruluğu kaybetti olup olmadığını belirleyen bir tür için üye depolar (aynı sonucunda üs sınırlamaları için konu yok Aralık ve duyarlık) bazı sonuçlarını etkileyebilecek IEC 559 kayan nokta ifadeleri bir seçenek.
 
 ### <a name="example"></a>Örnek
 
@@ -444,7 +444,7 @@ Whether long int objects can detect denormalized loss: 0
 
 ## <a name="has_infinity"></a>  numeric_limits::has_infinity
 
-Pozitif sonsuzluk temsili bir türe sahip olup olmadığını sınar.
+Pozitif sonsuz temsili bir türe sahip olup olmadığını sınar.
 
 ```cpp
 static const bool has_infinity = false;
@@ -452,11 +452,11 @@ static const bool has_infinity = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** pozitif sonsuzluk; temsili türündeyse **false** değilse.
+**doğru** türü, Pozitif sonsuz; temsili varsa **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye döndürür **true** varsa [is_iec559](#is_iec559) olan **doğru**.
+Üyeyi döndürür **true** varsa [is_iec559](#is_iec559) olduğu **true**.
 
 ### <a name="example"></a>Örnek
 
@@ -498,11 +498,11 @@ static const bool has_quiet_NaN = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa **türü** sessiz NAN; temsili sahip **false** değilse.
+**doğru** varsa **türü** sessiz bir NAN için; bir gösterimi içeriyor **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sessiz NAN bir deyimde varlığını işaret etmiyor olmayan bir sayı kodlama ' dir. Dönüş değeri **true** varsa [is_iec559](#is_iec559) doğrudur.
+Sessiz bir NAN değil, bir ifadede varlığını işaret etmiyor numarası, kodlama ' dir. Dönüş değeri **true** varsa [is_iec559](#is_iec559) geçerlidir.
 
 ### <a name="example"></a>Örnek
 
@@ -536,7 +536,7 @@ Whether long int objects have quiet_NaN: 0
 
 ## <a name="has_signaling_nan"></a>  numeric_limits::has_signaling_NaN
 
-Sayı olmayan (NAN) sinyal temsili bir türe sahip olup olmadığını sınar.
+Bir tür sinyal sayı olmayan (NAN) bir gösterimi olup olmadığını test eder.
 
 ```cpp
 static const bool has_signaling_NaN = false;
@@ -544,11 +544,11 @@ static const bool has_signaling_NaN = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sinyal NAN; temsili türündeyse **false** değilse.
+**doğru** türü; bir sinyal NAN temsili varsa **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sinyal NAN bir deyimde varlığını sinyalleri olmayan bir sayı kodlama ' dir. Dönüş değeri **true** varsa [is_iec559](#is_iec559) doğrudur.
+Bir sinyal NAN bir bildiren bir ifadede varlığını sayı değil, kodlama ' dir. Dönüş değeri **true** varsa [is_iec559](#is_iec559) geçerlidir.
 
 ### <a name="example"></a>Örnek
 
@@ -582,7 +582,7 @@ Whether long int objects have a signaling_NaN: 0
 
 ## <a name="infinity"></a>  numeric_limits::infinity
 
-Varsa bir tür için pozitif sonsuzluk gösterimi.
+Pozitif sonsuz varsa türünün temsili.
 
 ```cpp
 static Type infinity() throw();
@@ -590,11 +590,11 @@ static Type infinity() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsa bir tür için pozitif sonsuzluk gösterimi.
+Pozitif sonsuz varsa türünün temsili.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri anlamlıdır yalnızca [has_infinity](#has_infinity) olan **doğru**.
+Dönüş değeri anlamlı yalnızca [has_infinity](#has_infinity) olduğu **true**.
 
 ### <a name="example"></a>Örnek
 
@@ -636,7 +636,7 @@ The representation of infinity for type long double is: inf
 
 ## <a name="is_bounded"></a>  numeric_limits::is_bounded
 
-Testleri bir türü temsil değerleri kümesi sınırlıdır.
+Bir tür olarak temsil değerleri kümesi sınırlı olup olmadığını sınar.
 
 ```cpp
 static const bool is_bounded = false;
@@ -644,11 +644,11 @@ static const bool is_bounded = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** gösterilebilir değerleri; sınırlanmış bir dizi türündeyse **false** değilse.
+**doğru** türünün temsil edilebilir değerler; sınırlanmış bir dizi varsa **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Önceden tanımlanmış tüm türleri gösterilebilir değerleri sınırlanmış bir dizi ve dönmek **doğru**.
+Önceden tanımlanmış tüm türleri temsil edilebilir değerler sınırlanmış bir dizi ve dönüş **true**.
 
 ### <a name="example"></a>Örnek
 
@@ -690,7 +690,7 @@ Whether unsigned char objects have bounded set of representable values: 1
 
 ## <a name="is_exact"></a>  numeric_limits::is_exact
 
-Bir tür üzerinde yapılan hesaplamaları olduğunda yuvarlama hatalarının testleri boş.
+Test türü üzerinde yapılan hesaplamaları yuvarlama hataları ücretsizdir.
 
 ```cpp
 static const bool is_exact = false;
@@ -698,11 +698,11 @@ static const bool is_exact = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hesaplamaları hataları; yuvarlama boş olması durumunda **false** değilse.
+**doğru** hesaplamaları yuvarlama hataları; biri boş ise **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm önceden tanımlanmış tamsayı türleri değerleri için tam Beyanları ve dönüş **false**. Sabit noktalı veya rasyonel gösterimi de tam olarak kabul edilir, ancak bir kayan nokta temsili değildir.
+Tüm önceden tanımlanmış bir tam sayı türleri tam temsiller için değerleri ve dönüş **false**. Sabit nokta veya rasyonel gösterimi de tam olarak kabul edilir, ancak bir kayan nokta gösterimi değil.
 
 ### <a name="example"></a>Örnek
 
@@ -744,7 +744,7 @@ Whether unsigned char objects have calculations free of rounding errors: 1
 
 ## <a name="is_iec559"></a>  numeric_limits::is_iec559
 
-Bir tür IEC 559 standartlara uygun sağlayıp sağlamadığını test.
+Bir tür IEC 559 standartlara uygun olmadığını sınar.
 
 ```cpp
 static const bool is_iec559 = false;
@@ -752,11 +752,11 @@ static const bool is_iec559 = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** türü IEC 559 standartlarına; uyuyorsa **false** değilse.
+**doğru** türü IEC 559 standartlarına; uyuyorsa **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-IEC 559 kayan nokta değerlerini temsil eden bir uluslararası standart ve olarak da bilinen IEEE 754 ABD.
+IEC 559 uluslararası bir standart kayan nokta değerlerini temsil eden ve olarak da bilinen IEEE 754 ABD.
 
 ### <a name="example"></a>Örnek
 
@@ -794,7 +794,7 @@ Whether unsigned char objects conform to iec559 standards: 0
 
 ## <a name="is_integer"></a>  numeric_limits::is_integer
 
-Testleri bir tamsayı temsili bir türe sahip.
+Bir tamsayı temsili bir türe sahip olmadığını sınar.
 
 ```cpp
 static const bool is_integer = false;
@@ -802,11 +802,11 @@ static const bool is_integer = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** bir tamsayı temsili; türündeyse **false** değilse.
+**doğru** türü bir tamsayı gösterimi; varsa **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm önceden tanımlanmış tamsayı türleri bir tamsayı temsili sahip.
+Tüm önceden tanımlanmış tamsayı türlerinin bir tamsayı gösterimi yoktur.
 
 ### <a name="example"></a>Örnek
 
@@ -844,7 +844,7 @@ Whether unsigned char objects have an integral representation: 1
 
 ## <a name="is_modulo"></a>  numeric_limits::is_modulo
 
-Testleri bir **türü** sahip bir modül gösterimi.
+Olmadığını test eder bir **türü** sahip bir modül gösterimi.
 
 ```cpp
 static const bool is_modulo = false;
@@ -852,11 +852,11 @@ static const bool is_modulo = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** türündeyse bir gösterimi; modül **false** değilse.
+**doğru** türündeyse bir gösterimi; modül **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gösterimi modulo açık bir gösterimi tüm sonuçları bazı değeri burada azaltılır. Tüm önceden tanımlanmış işaretsiz tamsayı türlerine sahip bir modül gösterimi.
+Bir gösterimi modül tüm sonuçları bir değer azalır burada bir gösterimi olan. Tüm önceden tanımlanmış bir işaretsiz tamsayı türlerine sahip bir modül gösterimi.
 
 ### <a name="example"></a>Örnek
 
@@ -894,7 +894,7 @@ Whether unsigned char objects have a modulo representation: 1
 
 ## <a name="is_signed"></a>  numeric_limits::is_signed
 
-Testleri imzalı temsili bir türe sahip.
+İmzalı bir gösterimi bir türe sahip olmadığını sınar.
 
 ```cpp
 static const bool is_signed = false;
@@ -902,11 +902,11 @@ static const bool is_signed = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** imzalı gösterimi; türündeyse **false** değilse.
+**doğru** imzalı bir gösterimi; türündeyse **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye tüm önceden tanımlanmış kayan nokta ve imzalı tamsayı türleri için geçerli bir imzalı gösterimi olan bir türü için true depolar.
+Bu durum önceden tanımlanmış tüm kayan nokta ve imzalı tamsayı türleri için imzalı bir gösterimi olan bir türü için true üye depolar.
 
 ### <a name="example"></a>Örnek
 
@@ -944,7 +944,7 @@ Whether unsigned char objects have a signed representation: 0
 
 ## <a name="is_specialized"></a>  numeric_limits::is_specialized
 
-Bir şablon sınıfında tanımlanan bir açık uzmanlık türündeyse testleri `numeric_limits`.
+Şablon sınıfı içinde tanımlanan bir açık özelleştirme bir türe sahip olmadığını test eder `numeric_limits`.
 
 ```cpp
 static const bool is_specialized = false;
@@ -952,11 +952,11 @@ static const bool is_specialized = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** şablonu sınıfında; tanımlanmış bir açık uzmanlık türündeyse **false** değilse.
+**true** bir açık özelleştirme; Şablon sınıfı içinde tanımlanan tür sahipse, **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için tanımlanmış bir açık uzmanlık işaretçileri dışındaki tüm skaler türlerine sahip `numeric_limits`.
+Şablon sınıfı için tanımlanmış bir açık özelleştirme işaretçileri dışındaki tüm skaler türleri sahip `numeric_limits`.
 
 ### <a name="example"></a>Örnek
 
@@ -1010,11 +1010,11 @@ En negatif sonlu değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü için en negatif sınırlı değeri döndürür (normalde `min()` tamsayı türleri ve `-max()` kayan nokta türleri için). Dönüş değeri anlamlıdır varsa `is_bounded` olan `true`.
+Türü için en negatif sonlu değeri döndürür (genelde `min()` tamsayı türleri için ve `-max()` kayan nokta türleri için). Dönüş değeri anlamlı varsa `is_bounded` olduğu **true**.
 
 ## <a name="max"></a>  numeric_limits::Max
 
-Bir türe ilişkin maksimum sınırlı değeri döndürür.
+Bir tür için maksimum sonlu değeri döndürür.
 
 ```cpp
 static Type max() throw();
@@ -1022,11 +1022,11 @@ static Type max() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir türe ilişkin maksimum sınırlı değeri.
+Bir tür için maksimum sınırlı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-En büyük sınırlı değer INT_MAX türüdür `int` ve FLT_MAX türü için **float**. Dönüş değeri anlamlıdır varsa [is_bounded](#is_bounded) olan **doğru**.
+Maksimum sonlu değeri INT_MAX için türdür **int** ve türünün FLT_MAX **float**. Dönüş değeri anlamlı varsa [is_bounded](#is_bounded) olduğu **true**.
 
 ### <a name="example"></a>Örnek
 
@@ -1056,7 +1056,7 @@ int main() {
 
 ## <a name="max_digits10"></a>  numeric_limits::max_digits10
 
-Türünde iki farklı değerler ayrı ondalık Beyanları sahip olduğunuzdan emin olmak için gerekli ondalık basamak sayısını döndürür.
+İki ayrı türü değerleri farklı ondalık gösterimleri sahip olduğunuzdan emin olmak için gerekli ondalık basamak sayısını döndürür.
 
 ```cpp
 static int max_digits10 = 0;
@@ -1064,15 +1064,15 @@ static int max_digits10 = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki ayrı türü değerleri ayrı ondalık Beyanları olduğundan emin olmak için gerekli olan ondalık basamak sayısını döndürür.
+İki ayrı türü değerleri farklı ondalık gösterimleri olduğundan emin olmak için gerekli olan ondalık basamak sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye türü iki farklı değerleri ayrı ondalık Beyanları sahip olduğunuzdan emin olmak için gerekli ondalık basamak sayısı depolar.
+Üye türü iki farklı değerleri farklı ondalık gösterimleri sahip olduğunuzdan emin olmak için gerekli ondalık basamak sayısı yer depolar.
 
 ## <a name="max_exponent"></a>  numeric_limits::max_exponent
 
-Sayı tabanını tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir en büyük pozitif tam sayı üs döndürür.
+Taban sınıfın, gücünü ortaya çıktığında, kayan nokta türü sınırlı bir değeri temsil edebilir en fazla pozitif tam sayı üssü döndürür.
 
 ```cpp
 static const int max_exponent = 0;
@@ -1080,11 +1080,11 @@ static const int max_exponent = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En büyük tam sayı taban tabanlı üs gösterilebilir türüne göre.
+En fazla integral taban tabanlı üs gösterilebilir türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi dönüş yalnızca kayan nokta türleri için anlamlıdır. `max_exponent` FLT_MAX_EXP türüyle ilgili değer **float**.
+Kayan nokta türleri için anlamlı dönüş üye işlevi. `max_exponent` Türü için değer FLT_MAX_EXP **float**.
 
 ### <a name="example"></a>Örnek
 
@@ -1118,7 +1118,7 @@ The maximum radix-based exponent for type long double is:  1024
 
 ## <a name="max_exponent10"></a>  numeric_limits::max_exponent10
 
-On tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir en büyük pozitif tam sayı üs döndürür.
+Bir taban on gücü için harekete geçirildiğinde, kayan nokta türü sınırlı bir değeri temsil edebilir en fazla pozitif tam sayı üssü döndürür.
 
 ```cpp
 static const int max_exponent10 = 0;
@@ -1126,11 +1126,11 @@ static const int max_exponent10 = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En büyük tam sayı temel 10 üs gösterilebilir türüne göre.
+En fazla integral taban 10 üs gösterilebilir türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi dönüş yalnızca kayan nokta türleri için anlamlıdır. `max_exponent` FLT_MAX_10 türüyle ilgili değer **float**.
+Kayan nokta türleri için anlamlı dönüş üye işlevi. `max_exponent` Türü için değer FLT_MAX_10 **float**.
 
 ### <a name="example"></a>Örnek
 
@@ -1164,7 +1164,7 @@ The maximum base 10 exponent for type long double is:  308
 
 ## <a name="min"></a>  numeric_limits::Min
 
-Bir türe ilişkin minimum normalleştirilmiş değeri döndürür.
+Bir tür için en düşük normalleştirilmiş değerini döndürür.
 
 ```cpp
 static Type min() throw();
@@ -1176,7 +1176,7 @@ Türü için en düşük normalleştirilmiş değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Minimum normalleştirilmiş değeri ınt_mın türüdür `int` ve flt_mın türü için `float`. Dönüş değeri anlamlıdır varsa [is_bounded](#is_bounded) olan `true` veya [is_signed](#is_signed) olan `false`.
+En düşük normalleştirilmiş değeri ınt_mın için türüdür **int** ve türünün flt_mın **float**. Dönüş değeri anlamlı varsa [is_bounded](#is_bounded) olduğu **true** veya [is_signed](#is_signed) olduğu **false**.
 
 ### <a name="example"></a>Örnek
 
@@ -1214,7 +1214,7 @@ The minimum value for type short int is:  -32768
 
 ## <a name="min_exponent"></a>  numeric_limits::min_exponent
 
-Sayı tabanını tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir maksimum negatif tam sayı üs döndürür.
+Taban sınıfın, gücünü ortaya çıktığında, kayan nokta türü sınırlı bir değeri temsil edebilir en büyük negatif tam sayı üs döndürür.
 
 ```cpp
 static const int min_exponent = 0;
@@ -1222,11 +1222,11 @@ static const int min_exponent = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Minimum integral taban tabanlı üs gösterilebilir türüne göre.
+En düşük integral taban tabanlı üs gösterilebilir türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yalnızca kayan nokta türleri için anlamlıdır. `min_exponent` Flt_mın_exp türüyle ilgili değer **float**.
+Kayan nokta türleri için anlamlı üye işlevidir. `min_exponent` Türü için değer flt_mın_exp **float**.
 
 ### <a name="example"></a>Örnek
 
@@ -1260,7 +1260,7 @@ The minimum radix-based exponent for type long double is:  -1021
 
 ## <a name="min_exponent10"></a>  numeric_limits::min_exponent10
 
-On tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir maksimum negatif tam sayı üs döndürür.
+On sınıfın gücü için oluştuğunda, kayan nokta türü sınırlı bir değeri temsil edebilir en büyük negatif tam sayı üs döndürür.
 
 ```cpp
 static const int min_exponent10 = 0;
@@ -1268,11 +1268,11 @@ static const int min_exponent10 = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En küçük tamsayı temel 10 üs gösterilebilir türüne göre.
+En az integral taban 10 üs gösterilebilir türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yalnızca kayan nokta türleri için anlamlıdır. `min_exponent10` Flt_mın_10_exp türüyle ilgili değer **float**.
+Kayan nokta türleri için anlamlı üye işlevidir. `min_exponent10` Türü için değer flt_mın_10_exp **float**.
 
 ### <a name="example"></a>Örnek
 
@@ -1306,7 +1306,7 @@ The minimum base 10 exponent for type long double is:  -307
 
 ## <a name="quiet_nan"></a>  numeric_limits::quiet_NaN
 
-Bir sessiz gösterimini sayı olmayan (NAN) türü döndürür.
+Sessiz bir gösterimi türü için sayı olmayan (NAN) döndürür.
 
 ```cpp
 static Type quiet_NaN() throw();
@@ -1314,11 +1314,11 @@ static Type quiet_NaN() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türü için sessiz NAN gösterimi.
+Sessiz bir NAN türünün temsili.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri anlamlıdır yalnızca [has_quiet_NaN](#has_quiet_nan) olan **doğru**.
+Dönüş değeri anlamlı yalnızca [has_quiet_NaN](#has_quiet_nan) olduğu **true**.
 
 ### <a name="example"></a>Örnek
 
@@ -1360,11 +1360,11 @@ static const int radix = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tam sayı tabanı türü gösterimi için kullanılır.
+Türünün temsili için tam sayı tabanı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Önceden tanımlanmış kayan nokta türleri için önceden tanımlanmış tamsayı türleri ve üs yükseltildiği temel veya flt_radıx, 2 tabanıdır.
+Önceden tanımlanmış bir kayan nokta türleri için önceden tanımlanmış tamsayı türleri ve yükseltildiği üs temel veya flt_radıx, 2 tabanıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1440,7 +1440,7 @@ The maximum rounding error for type long double is:  0.5
 
 ## <a name="round_style"></a>  numeric_limits::round_style
 
-Kayan nokta değer bir tamsayı değerine yuvarlama uygulaması seçebileceğiniz çeşitli yöntemleri açıklayan bir değer döndürür.
+Bir kayan nokta değeri tamsayıya yuvarlama uygulaması seçim yapabileceği çeşitli yöntemleri tanımlayan bir değer döndürür.
 
 ```cpp
 static const float_round_style round_style = round_toward_zero;
@@ -1448,11 +1448,11 @@ static const float_round_style round_style = round_toward_zero;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arasında bir değer `float_round_style` yuvarlama açıklar numaralandırma stili.
+Bir değer `float_round_style` stil yuvarlama açıklayan sabit listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye bir tamsayı değeri kayan noktalı bir sayıyı yuvarlama uygulaması seçebileceğiniz çeşitli yöntemleri açıklayan bir değerini depolar.
+Üye bir kayan nokta değeri tamsayıya yuvarlama uygulaması seçim yapabileceği çeşitli yöntemleri tanımlayan bir değeri depolar.
 
 Yuvarlak stili, bu uygulama, bu nedenle bile programın farklı bir yuvarlama modu ile başlar, bu değer değişmez kodlanmış zordur.
 
@@ -1487,7 +1487,7 @@ The rounding style for an int type is: 0
 
 ## <a name="signaling_nan"></a>  numeric_limits::signaling_NaN
 
-Sayı olmayan (NAN) sinyal temsilini türü döndürür.
+Bir sayı değil (NAN) sinyal temsilini türünü döndürür.
 
 ```cpp
 static Type signaling_NaN() throw();
@@ -1495,11 +1495,11 @@ static Type signaling_NaN() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türü için sinyal NAN gösterimi.
+Bir sinyal NAN türünün temsili.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri anlamlıdır yalnızca [has_signaling_NaN](#has_signaling_nan) olan **doğru**.
+Dönüş değeri anlamlı yalnızca [has_signaling_NaN](#has_signaling_nan) olduğu **true**.
 
 ### <a name="example"></a>Örnek
 
@@ -1527,7 +1527,7 @@ int main( )
 
 ## <a name="tinyness_before"></a>  numeric_limits::tinyness_before
 
-Bir tür değeri yuvarlama önce normalleştirilmiş değeri olarak göstermek için çok küçük olduğunu anlayabilirsiniz olup olmadığını sınar.
+Bir tür değeri normalleştirilmiş bir değer olarak yuvarlama önce temsil etmek için çok küçük olduğunu anlayabilirsiniz olup olmadığını sınar.
 
 ```cpp
 static const bool tinyness_before = false;
@@ -1535,11 +1535,11 @@ static const bool tinyness_before = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Yuvarlama önce küçük değerleri türü tespit edebilirsiniz `false` başaramazsa.
+**doğru** tür yuvarlama önce; küçük değerleri algılayabiliyorsa **false** erişilemiyorsa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tinyness algılayabilir türleri IEC 559 kayan nokta temsili bir seçenek olarak dahil ve kendi uygulama bazı sonuçları etkileyebilir.
+Tinyness algılayabilir türleri IEC 559 kayan nokta ifadeleri ile bir seçenek olarak dahil edilen ve uygulanması bazı sonuçları etkileyebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1577,7 +1577,7 @@ Whether unsigned char types can detect tinyness before rounding: 0
 
 ## <a name="traps"></a>  numeric_limits::traps
 
-Testleri olup, yakalama aritmetik özel durumları raporları için bir tür uygulanır.
+Test türü için aritmetik özel durumları yakalama, raporlar uygulanır.
 
 ```cpp
 static const bool traps = false;
@@ -1585,7 +1585,7 @@ static const bool traps = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yakalama türü; uygulanırsa **false** değilse.
+**doğru** türü; yakalama uygulanmışsa **false** değilse.
 
 ### <a name="example"></a>Örnek
 

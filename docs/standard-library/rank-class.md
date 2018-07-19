@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be250d2908522ac85902563d64bf57ca7cde88a0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 615da57a092a9cbdc1933ed57adbbaed6afdcf65
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853160"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38960609"
 ---
 # <a name="rank-class"></a>rank Sınıfı
 
-Dizinin boyut sayısını alır.
+Dizi boyut sayısını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct rank;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dizi türü boyut sayısını değeri türü bir sorgu tutan `Ty`, veya 0 ise `Ty` bir dizi türü değil.
+Türü bir sorgu dizi türünde boyutların sayısı değerini tutan *Ty*, veya 0 ise *Ty* bir dizi türü değil.
 
 ## <a name="example"></a>Örnek
 

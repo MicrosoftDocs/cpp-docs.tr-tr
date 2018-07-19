@@ -21,26 +21,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9153d5e85540c50e11e096c33c474f1344d3ad2f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 237ce1e956cd05f21a34d0b2b159ba104167ca37
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846213"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959598"
 ---
 # <a name="debug-iterator-support"></a>Hata Ayıklama Yineleyicisi Desteği
 
-Visual C++ çalışma zamanı kitaplığı yanlış yineleyici kullanım algılar ve onaylar ve çalışma zamanında bir iletişim kutusu görüntüler. Hata ayıklama yineleyici desteği etkinleştirmek için program derlemek için hata ayıklama sürümleri C++ Standart Kitaplığı ve C çalışma zamanı kitaplığı kullanmanız gerekir. Daha fazla bilgi için bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md). İşaretli yineleyiciler kullanma hakkında daha fazla bilgi için bkz: [işaretli yineleyiciler](../standard-library/checked-iterators.md).
+Visual C++ çalışma zamanı kitaplığı, yanlış yineleyici kullanımını algılar ve onaylar ve çalışma zamanında bir iletişim kutusu görüntüler. Hata ayıklama yineleyici desteği etkinleştirmek için programınızı derlemek için C çalışma zamanı kitaplığı ve standart C++ Kitaplığı hata ayıklama sürümleri kullanmanız gerekir. Daha fazla bilgi için [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md). İşaretli yineleyiciler kullanma hakkında daha fazla bilgi için bkz: [Checked Iterators](../standard-library/checked-iterators.md).
 
-Standart C++ üye işlevlerini geçersiz hale yineleyiciler bir kapsayıcıya nasıl neden olabilecek açıklar. İki örnek verilmiştir:
+Standart C++ üye işlevleri geçersiz olmasına Yineleyicilerin bir kapsayıcıya nasıl neden olabilecek açıklar. İki örnek verilmiştir:
 
-- Bir kapsayıcı bir öğeyi silme yineleyiciler öğesine geçersiz hale gelmesine neden olur.
+- Bir kapsayıcı bir öğeyi silme yineleyicileriyle öğesi geçersiz olmasına neden olur.
 
-- Boyutunu artırma bir [vektör](../standard-library/vector.md) kullanarak anında iletme veya nedenler yineleyiciler içine INSERT `vector` geçersiz olacak.
+- Artırıldığında bir [vektör](../standard-library/vector.md) kullanarak anında iletme veya nedenler yineleyiciler içine Ekle `vector` geçersiz olacak.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek program hata ayıklama modunda derleme değilse, çalışma zamanında onaylar ve sonlandırır.
+Bu örnek program hata ayıklama modunda derlemek, çalışma zamanında onaylar ve sonlandırır.
 
 ```cpp
 // iterator_debugging_0.cpp
@@ -71,7 +71,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Önişlemci makrosu kullanabilirsiniz [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) hata ayıklama derlemesi özelliğinde hata ayıklama yineleyici devre dışı bırakmak için. Bu program assert değil, ancak hala tanımsız davranışı tetikler.
+Önişlemci makrosu kullanabileceğiniz [_ıterator_debug_level](../standard-library/iterator-debug-level.md) özellik hata ayıklama derlemesinde hata ayıklama yineleyici devre dışı bırakmak için. Bu program assert değil, ancak yine de tanımsız davranış tetikler.
 
 ```cpp
 // iterator_debugging_1.cpp
@@ -108,7 +108,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Assert başlatılmadan, aşağıda gösterildiği gibi yineleyici kullanmayı denerseniz, ayrıca oluşur:
+Assert da başlatılmadan önce aşağıda gösterildiği gibi bir yineleyici kullanmayı denerseniz oluşur:
 
 ```cpp
 // iterator_debugging_2.cpp
@@ -125,7 +125,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneğinde bir onaylama neden olur iki yineleyiciler [for_each](../standard-library/algorithm-functions.md#for_each) algoritması uyumsuz. Kendilerine sağlanan yineleyiciler aynı kapsayıcı başvuru olup olmadığını belirlemek için algoritmaları denetleyin.
+Aşağıdaki kod örneği bir onaylama işlemi olduğundan neden için iki yineleyici [for_each](../standard-library/algorithm-functions.md#for_each) algoritması uyumsuz. Aynı kapsayıcı için sağlanan yineleyiciler anılıp anılmadığını algoritmaları denetleyin.
 
 ```cpp
 // iterator_debugging_3.cpp
@@ -151,11 +151,11 @@ int main()
 }
 ```
 
-Bu örnek lambda ifadesi kullanır bildirimi `[] (int& elem) { elem *= 2; }` bir functor yerine. Bu seçenek şifrelemeyle assert Kuramama olsa — benzer functor aynı başarısız olmasına neden — Lambda'lar olan compact işlevi nesne görevleri gerçekleştirmek için çok kullanışlı bir yol. Lambda ifadeleri hakkında daha fazla bilgi için bkz: [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
+Bu örnek, lambda ifadesi kullanır bildirimi `[] (int& elem) { elem *= 2; }` bir functor yerine. Bu seçenek onay hatası ilgisi yoktur ancak — benzer bir işlev ise aynı hataya neden — lambdalar compact işlev nesnesi görevleri gerçekleştirmek için çok kullanışlı bir yol olan. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
 
 ## <a name="example"></a>Örnek
 
-Hata ayıklama yineleyici denetimleri de içinde bildirilen bir yineleyici değişkeni neden bir `for` döngü dışında olması için ne zaman kapsam `for` kapsam uçları döngü.
+Hata ayıklama yineleyici denetimleri de içinde bildirilen bir yineleyici değişken neden bir **için** tanesi olmasını döngü ne zaman kapsam **için** kapsamı sona erene döngü.
 
 ```cpp
 // iterator_debugging_4.cpp
@@ -177,7 +177,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Hata ayıklama yineleyiciler Önemsiz olmayan Yıkıcılar sahip. Bir yıkıcı, herhangi bir nedenle çalışmaz erişim ihlalleri ve veri bozulması meydana gelebilir. Bu örneği göz önünde bulundurun:
+Hata ayıklama yineleyiciler Önemsiz yok ediciler sahip. Bir yok edici çalışmazsa herhangi bir nedenle, erişim ihlallerine ve veri bozulması oluşabilir. Bu örneği göz önünde bulundurun:
 
 ```cpp
 // iterator_debugging_5.cpp

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 560c496ac01dc09f4e49100eceea0b9f7af14d68
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: d0c3792ec315f21298cffa166777af61750fbd06
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950529"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37335847"
 ---
 # <a name="cd2dsizeu-class"></a>CD2DSizeU sınıfı
 D2D1_SIZE_U için sarmalayıcı.  
@@ -42,19 +42,19 @@ class CD2DSizeU : public D2D1_SIZE_U;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CD2DSizeU::CD2DSizeU](#cd2dsizeu)|Fazla Yüklendi. Oluşturan bir `CD2DSizeU` nesnesini `D2D1_SIZE_U` nesne.|  
+|[CD2DSizeU::CD2DSizeU](#cd2dsizeu)|Fazla Yüklendi. Oluşturur bir `CD2DSizeU` nesnesinden `D2D1_SIZE_U` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CD2DSizeU::IsNull](#isnull)|Döndürür bir **boolean** bir ifade geçerli bir veri içerip içermediğini gösteren değeri ( **null**).|  
+|[CD2DSizeU::IsNull](#isnull)|Döndürür bir **Boole** bir ifade (NULL) geçerli olmayan veri içerip içermediğini gösteren bir değer.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CD2DSizeU::operator CSize](#operator_csize)|Dönüştürür `CD2DSizeU` için `CSize` nesnesi.|  
+|[CD2DSizeU::operator CSize](#operator_csize)|Dönüştürür `CD2DSizeU` için `CSize` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `D2D1_SIZE_U`  
@@ -65,7 +65,7 @@ class CD2DSizeU : public D2D1_SIZE_U;
  **Başlık:** afxrendertarget.h  
   
 ##  <a name="cd2dsizeu"></a>  CD2DSizeU::CD2DSizeU  
- CSize nesnesinden CD2DSizeU nesnesi oluşturur.  
+ CSize nesnesinden CD2DSizeU bir nesne oluşturur.  
   
 ```  
 CD2DSizeU(const CSize& size);  
@@ -86,17 +86,17 @@ CD2DSizeU(
  Kaynak genişliği  
   
  *CY*  
- Kaynak yüksekliği  
+ Kaynak yükseklik  
   
 ##  <a name="isnull"></a>  CD2DSizeU::IsNull  
- Bir ifade (boş) geçerli veri içerip içermediğini gösteren bir Boole değeri döndürür.  
+ Bir ifade (Null) geçerli olmayan veri içerip içermediğini gösteren bir Boole değeri döndürür.  
   
 ```  
 BOOL IsNull() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Genişlik ve yükseklik boş ise TRUE; Aksi takdirde FALSE.  
+ Genişlik ve yükseklik boş ise TRUE; Aksi durumda FALSE.  
   
 ##  <a name="operator_csize"></a>  CD2DSizeU::operator CSize  
  CD2DSizeU CSize nesnesine dönüştürür.  

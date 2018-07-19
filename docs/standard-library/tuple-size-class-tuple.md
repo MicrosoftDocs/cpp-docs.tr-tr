@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7249aad5e130e805aae73bdbfba7f9c4f78ad4fe
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0c03c47502fdd9309b3d6553c3f46f9685d4eaa9
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853989"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958272"
 ---
 # <a name="tuplesize-class"></a>tuple_size sınıfı;
 
-Öğe sayısını raporları, bir `tuple` içerir.
+Öğe sayısı raporları, bir `tuple` içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,25 +66,31 @@ template <class Tuple>
 
 ### <a name="parameters"></a>Parametreler
 
-*Tuple* kayıt türü.
+*Tanımlama grubu*  
+Demet türü.
 
-*Elem* dizi öğelerin türü.
+*Elem*  
+Dizi öğelerinin türü.
 
-*Boyutu* dizinin boyutu.
+*Boyutu*  
+Dizinin boyutu.
 
-*T1* çiftinin ilk üye türü.
+*T1*  
+Çiftin ilk üye türü.
 
-*T2* çiftinin ikinci üye türü.
+*T2*  
+Çiftin ikinci üyenin türü.
 
-*Türleri* başlığın öğeleri türleri.
+*Türler*  
+Tanımlama grubu öğelerinin türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir üyenin `value` değeri olan tanımlama grubu türü kapsamını diğer bir deyişle bir tam sayı sabit ifade `Tuple`.
+Şablon sınıfı üyesinin `value` diğer bir deyişle, değeri olan tanımlama grubu türüyle kapsamını integral sabit ifadesi *demet*.
 
-Diziler için şablon özelleştirmesi bir üyenin `value` değeri olan bir tam sayı sabit ifade `Size`, dizinin boyutunu olduğu.
+Şablon uzmanlığı diziler için bir üyenin `value` değeri olan diğer bir deyişle bir integral sabit ifadesi *boyutu*, dizinin boyutunu olduğu.
 
-Şablon uzmanlık çifti için bir üyenin `value` değeri 2 olan başka bir deyişle bir tam sayı sabit ifade.
+Şablon uzmanlığı çifti için bir üyenin `value` değeri 2 olan diğer bir deyişle bir integral sabit ifadesi.
 
 ## <a name="example"></a>Örnek
 
@@ -116,12 +122,12 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<tanımlama grubu > **üstbilgisi:** \<dizi > (için dizi uzmanlık) **üstbilgisi:** \<yardımcı programı > (için çifti uzmanlık)
+**Üst bilgi:** \<tanımlama grubu > **başlığı:** \<dizi > (için dizi özelleştirme) **başlığı:** \<yardımcı programı > (için çifti özelleştirme)
 
 **Namespace:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Tuple >](../standard-library/tuple.md)<br/>
+[\<Tanımlama grubu >](../standard-library/tuple.md)<br/>
 [Tanımlama grubu](../standard-library/tuple-class.md)<br/>
 [tuple_element sınıfı](../standard-library/tuple-element-class-tuple.md)<br/>

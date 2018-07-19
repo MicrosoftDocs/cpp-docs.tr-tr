@@ -36,15 +36,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba6e85500f87c1ea88c46418d1f6b698a2d10976
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 3c110c0addfe14ed8ba9018345eb1f4e61fd5182
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954123"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338626"
 ---
 # <a name="cfontholder-class"></a>CFontHolder sınıfı
-Stok Font özelliği uygular ve bir Windows yazı tipi nesnesi işlevselliği kapsar ve `IFont` arabirimi.  
+Stok yazı tipi özelliğini uygular ve bir Windows yazı tipi nesnesinin işlevselliğini kapsüller ve `IFont` arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -58,20 +58,20 @@ class CFontHolder
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFontHolder::CFontHolder](#cfontholder)|Oluşturan bir `CFontHolder` nesnesi.|  
+|[CFontHolder::CFontHolder](#cfontholder)|Oluşturur bir `CFontHolder` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFontHolder::GetDisplayString](#getdisplaystring)|Bir kapsayıcının özelliği tarayıcıda görüntülenen dizesini alır.|  
+|[CFontHolder::GetDisplayString](#getdisplaystring)|Bir kapsayıcının özelliği tarayıcıda görüntülenen dizeyi alır.|  
 |[CFontHolder::GetFontDispatch](#getfontdispatch)|Yazı tipinin döndürür `IDispatch` arabirimi.|  
-|[CFontHolder::GetFontHandle](#getfonthandle)|Bir Windows yazı tipi için bir işleyici döner.|  
-|[CFontHolder::InitializeFont](#initializefont)|Başlatır bir `CFontHolder` nesnesi.|  
-|[CFontHolder::QueryTextMetrics](#querytextmetrics)|İlgili yazı tipi için bilgi alır.|  
-|[CFontHolder::ReleaseFont](#releasefont)|Keser `CFontHolder` nesnesinin `IFont` ve `IFontNotification` arabirimleri.|  
-|[CFontHolder::Select](#select)|Yazı tipi kaynak bir cihaz bağlamına seçer.|  
-|[CFontHolder::SetFont](#setfont)|Bağlanan `CFontHolder` nesnesine bir `IFont` arabirimi.|  
+|[CFontHolder::GetFontHandle](#getfonthandle)|Bir Windows yazı tipi için bir tanıtıcı döndürür.|  
+|[CFontHolder::InitializeFont](#initializefont)|Başlatan bir `CFontHolder` nesne.|  
+|[CFontHolder::QueryTextMetrics](#querytextmetrics)|İlgili yazı tipi için bilgileri alır.|  
+|[CFontHolder::ReleaseFont](#releasefont)|Keser `CFontHolder` nesnesinden `IFont` ve `IFontNotification` arabirimleri.|  
+|[CFontHolder::Select](#select)|Bir yazı tipi kaynak cihaz bağlamına seçer.|  
+|[CFontHolder::SetFont](#setfont)|Bağlanan `CFontHolder` nesnesini bir `IFont` arabirimi.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
@@ -80,9 +80,9 @@ class CFontHolder
 |[CFontHolder::m_pFont](#m_pfont)|Bir işaretçi `CFontHolder` nesnenin `IFont` arabirimi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CFontHolder` bir taban sınıfı yok.  
+ `CFontHolder` bir temel sınıfa sahip değil.  
   
- Özel yazı tipi özelliklerini denetlemek için uygulamak için bu sınıf kullanın. Makaleyi gibi özellikleri oluşturma hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: yazı tiplerini kullanarak](../../mfc/mfc-activex-controls-using-fonts.md).  
+ Bu sınıf, özel yazı tipi özellikleri denetlemek için uygulamak için kullanın. Tür özellikleri oluşturma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: yazı tiplerini kullanarak](../../mfc/mfc-activex-controls-using-fonts.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CFontHolder`  
@@ -91,7 +91,7 @@ class CFontHolder
  **Başlık:** afxctl.h  
   
 ##  <a name="cfontholder"></a>  CFontHolder::CFontHolder  
- Oluşturan bir `CFontHolder` nesnesi.  
+ Oluşturur bir `CFontHolder` nesne.  
   
 ```  
 explicit CFontHolder(LPPROPERTYNOTIFYSINK pNotify);
@@ -99,10 +99,10 @@ explicit CFontHolder(LPPROPERTYNOTIFYSINK pNotify);
   
 ### <a name="parameters"></a>Parametreler  
  *pNotify*  
- Yazı tipinin işaretçi `IPropertyNotifySink` arabirimi.  
+ Yazı tipinin işaretçisine `IPropertyNotifySink` arabirimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırmalısınız `InitializeFont` kullanmadan önce sonuç nesnesi başlatılamadı.  
+ Çağırmalısınız `InitializeFont` kullanmadan önce elde edilen nesnenin başlatılamadı.  
   
 ##  <a name="getdisplaystring"></a>  CFontHolder::GetDisplayString  
  Bir kapsayıcının özelliği tarayıcıda görüntülenen bir dize alır.  
@@ -113,26 +113,26 @@ BOOL GetDisplayString(CString& strValue);
   
 ### <a name="parameters"></a>Parametreler  
  *strValue*  
- Başvuru [CString](../../atl-mfc-shared/reference/cstringt-class.md) diğer bir deyişle görüntü dizesini tutun.  
+ Başvuru [CString](../../atl-mfc-shared/reference/cstringt-class.md) görüntü dizesini tutacak olmasıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dize başarıyla alınırsa sıfır olmayan; Aksi takdirde 0.  
+ Dize başarıyla aldı olursa sıfır dışı; Aksi durumda 0.  
   
 ##  <a name="getfontdispatch"></a>  CFontHolder::GetFontDispatch  
- Yazı tipinin dağıtma arabirimi bir işaretçi almak için bu işlevini çağırın.  
+ Bir işaretçi yazıtipinin gönderme arabirimi almak için bu işlevi çağırın.  
   
 ```  
 LPFONTDISP GetFontDispatch();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `CFontHolder` nesnenin `IFontDisp` arabirimi. İşlev çağrıları Not `GetFontDispatch` çağırmalıdır `IUnknown::Release` ile işiniz bittiğinde bu arabirim işaretçisi üzerinde.  
+ Bir işaretçi `CFontHolder` nesnenin `IFontDisp` arabirimi. İşlev çağrılarının Not `GetFontDispatch` çağırmalıdır `IUnknown::Release` üzerinde ile işiniz bittiğinde bu arabirim işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı `InitializeFont` çağırmadan önce `GetFontDispatch`.  
   
 ##  <a name="getfonthandle"></a>  CFontHolder::GetFontHandle  
- Bir Windows yazı tipi için bir tanıtıcı almak için bu işlevini çağırın.  
+ Bir Windows yazı tipi için bir tanıtıcı almak için bu işlevi çağırın.  
   
 ```  
 HFONT GetFontHandle();
@@ -145,23 +145,23 @@ HFONT GetFontHandle(
   
 ### <a name="parameters"></a>Parametreler  
  *cyLogical*  
- Denetim çizilen dikdörtgenin mantıksal birimler cinsinden yüksekliği.  
+ Mantıksal birimi, denetimin çizilen dikdörtgenin yüksekliği.  
   
  *cyHimetric*  
- Yükseklik içinde `MM_HIMETRIC` denetiminin birimleri.  
+ MM_HIMETRIC birimi, denetimin yüksekliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yazı tipi nesnesi için bir tanıtıcı; Aksi takdirde **NULL**.  
+ Yazı tipi nesnesi için bir tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oranını *cyLogical* ve *cyHimetric* yazı tipinin punto boyutunu ifade için doğru görüntüleme boyutu mantıksal birimler hesaplamak için kullanılan `MM_HIMETRIC` birimleri:  
+ Oranını *cyLogical* ve *cyHimetric* MM_HIMETRIC birimleri ifade fontun punto boyutu için mantıksal birimler cinsinden uygun görüntü boyutunu hesaplamak için kullanılır:  
   
- Görüntü boyutu = ( *cyLogical* / *cyHimetric*) yazı tipi boyutu X  
+ Görüntü boyutu = ( *cyLogical* / *cyHimetric*) X yazı tipi boyutu  
   
- Hiçbir parametre sürüm ekran için doğru boyutta bir yazı tipi için bir tanıtıcı döndürür.  
+ Sürüm parametresi olmayan ekran için doğru boyutta bir yazı tipi için bir tanıtıcı döndürür.  
   
 ##  <a name="initializefont"></a>  CFontHolder::InitializeFont  
- Başlatır bir `CFontHolder` nesnesi.  
+ Başlatan bir `CFontHolder` nesne.  
   
 ```  
 void InitializeFont(
@@ -171,17 +171,17 @@ void InitializeFont(
   
 ### <a name="parameters"></a>Parametreler  
  *pFontDesc*  
- Yazı tipi açıklama yapısına yönelik işaretçinin ( [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782)) yazı tipinin özelliklerini belirtir.  
+ Bir yazı tipi açıklama yapıya yönelik işaretçi ( [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782)) yazı tipinin özelliklerini belirtir.  
   
  *pFontDispAmbient*  
- Kapsayıcının ortam Font özelliği işaretçi.  
+ Kapsayıcının ortam yazı tipi özelliğini işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *pFontDispAmbient* değil **NULL**, `CFontHolder` nesne için bir kopyasını bağlı `IFont` kapsayıcının ortam Font özelliği tarafından kullanılan arabirim.  
+ Varsa *pFontDispAmbient* NULL değil `CFontHolder` nesne için bir kopyasını bağlı `IFont` kapsayıcının ortam yazı tipi özelliği tarafından kullanılan arabirim.  
   
- Varsa *pFontDispAmbient* olan **NULL**, yeni bir yazı tipi nesnesi gösterdiği yazı tipi açıklamasından ya da oluşturulan *pFontDesc* veya *pFontDesc*olan **NULL**, varsayılan açıklamasından.  
+ Varsa *pFontDispAmbient* NULL, yeni bir yazı nesnesine oluşturulduğu ya da işaret ettiği yazı tipi açıklamasından *pFontDesc* veya *pFontDesc* bir varsayılan NULL ise açıklaması.  
   
- Oluşturduktan sonra bu işlev çağrısı bir `CFontHolder` nesnesi.  
+ Oluşturduktan sonra bu işlevi çağırın bir `CFontHolder` nesne.  
   
 ##  <a name="m_pfont"></a>  CFontHolder::m_pFont  
  Bir işaretçi `CFontHolder` nesnenin `IFont` arabirimi.  
@@ -191,7 +191,7 @@ LPFONT m_pFont;
 ```  
   
 ##  <a name="querytextmetrics"></a>  CFontHolder::QueryTextMetrics  
- Tarafından temsil edilen fiziksel yazı tipi hakkında bilgi alır `CFontHolder` nesnesi.  
+ Tarafından temsil edilen fiziksel yazı tipi hakkında bilgi alır `CFontHolder` nesne.  
   
 ```  
 void QueryTextMetrics(LPTEXTMETRIC lptm);
@@ -202,14 +202,14 @@ void QueryTextMetrics(LPTEXTMETRIC lptm);
  Bir işaretçi bir [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) bilgi alacak yapısı.  
   
 ##  <a name="releasefont"></a>  CFontHolder::ReleaseFont  
- Bu işlev bağlantısını keser `CFontHolder` nesnesinin kendi `IFont` arabirimi.  
+ Bu işlev bağlantısı kesildiğinde `CFontHolder` nesnesinin kendi `IFont` arabirimi.  
   
 ```  
 void ReleaseFont();
 ```  
   
 ##  <a name="select"></a>  CFontHolder::Select  
- Belirtilen cihaz bağlamına denetiminizin yazı tipi seçmek için bu işlevini çağırın.  
+ Belirtilen bir cihaz bağlamına denetiminizin yazı tipi seçmek için bu işlevi çağırın.  
   
 ```  
 CFont* Select(
@@ -220,22 +220,22 @@ CFont* Select(
   
 ### <a name="parameters"></a>Parametreler  
  *pDC*  
- Cihaz bağlamı içine yazı tipi seçilir.  
+ Cihaz bağlamı içine yazı seçilir.  
   
  *cyLogical*  
- Denetim çizilen dikdörtgenin mantıksal birimler cinsinden yüksekliği.  
+ Mantıksal birimi, denetimin çizilen dikdörtgenin yüksekliği.  
   
  *cyHimetric*  
- Yükseklik içinde `MM_HIMETRIC` denetiminin birimleri.  
+ MM_HIMETRIC birimi, denetimin yüksekliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Değiştirilen yazı tipi için bir işaretçi.  
+ Değiştirilmekte olan yazı tipi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [GetFontHandle](#getfonthandle) bir irdelemesi *cyLogical* ve *cyHimetric* parametreleri.  
   
 ##  <a name="setfont"></a>  CFontHolder::SetFont  
- Varolan bir yazı tipi serbest bırakır ve bağlayan `CFontHolder` nesnesine bir `IFont` arabirimi.  
+ Mevcut bir yazı tipi serbest bırakır ve bağlanan `CFontHolder` nesnesini bir `IFont` arabirimi.  
   
 ```  
 void SetFont(LPFONT pNewFont);

@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 108397f6c3c3c088839230f2b48b505300149345
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a04265a68a03edc9f957161991d2ddd91a8e6096
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844399"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958185"
 ---
 # <a name="bidirectionaliteratortag-struct"></a>bidirectional_iterator_tag Yapısı
 
-Dönüş türü için sağlayan bir sınıf **iterator_category** çift yönlü yineleyici temsil eden bir işlev.
+Bir dönüş türü sağlayan sınıf `iterator_category` çift yönlü yineleyiciyi temsil eden bir işlev.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,9 +36,9 @@ struct bidirectional_iterator_tag    : public forward_iterator_tag {};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kategori etiket sınıflarını algoritması seçimi için etiketler derleme gibi kullanılır. Derleme zamanında en verimli algoritması kullanabilmeleri şablon işlevi yineleyici bağımsız değişkeni, en belirgin kategorisini bulması gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator`>:: **iterator_category** yineleyici'nin davranışını tanımlar en özel kategori etiketi olarak tanımlanması gerekir.
+Kategori etiketi sınıfları algoritması seçimi için etiketler derleme gibi kullanılır. Derleme zamanında en verimli algoritması kullanabilirsiniz, böylece şablon işlevi, yineleyici bağımsız en belirgin kategorisini bulması gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator`>:: **iterator_category** yineleyicinin davranışını tanımlar en belirgin kategori etiketi olarak tanımlanması gerekir.
 
-Aynı türdür **yineleyici** \< **Iter**>:: **iterator_category** zaman **Iter** için bir nesne açıklar çift yönlü yineleyici görev yapar.
+Aynı türdür **yineleyici** \< **Iter**>:: **iterator_category** olduğunda `Iter` bir çift yönlü hizmet verebilen bir nesneyi tanımlar Yineleyici.
 
 ## <a name="example"></a>Örnek
 

@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d442e6b62a7e18a3b6025633ae5f12dde7915f3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 72f7b6e352240498f921c9aa5c3d1a990da34813
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844731"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955435"
 ---
 # <a name="complexltdoublegt"></a>karmaşık&lt;çift&gt;
 
-Her iki türdeki nesneleri sıralı bir çiftinden depolayan bir nesneyi tanımlayan **çift **** ilk karmaşık sayı ve ikinci gerçek parçası temsil eden sanal bölümü temsil eden.
+Her iki türdeki nesneleri sıralı bir çift depolayan bir nesneyi tanımlayan **çift **** ilk karmaşık sayıyı ve ikinci gerçek bölümünü temsil eden sanal bölümü temsil eden.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,21 +46,21 @@ constexpr explicit complex(const complex<long double>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`RealVal` Türü değeri **çift** için yapılandırılan bir karmaşık sayı gerçek parçası.
+*RealVal* türünün değerini **çift** için yapılandırılan karmaşık sayıyı gerçek bir parçası.
 
-`ImagVal` Türü değeri **çift** yapılandırılan karmaşık sayı sanal kısmı için.
+*ImagVal* türünün değerini **çift** yapılandırılmakta karmaşık sayıyı sanal bölümü için.
 
-`complexNum` Karmaşık sayı türü **float** veya türünde `long double` , gerçek ve sanal bölümleri türü bir karmaşık sayı başlatmak için kullanılan **çift** yapılandırılan.
+*complexNum* tür karmaşık sayısı **float** veya türü **uzun çift** olan reel ve sanal parça türü karmaşık bir sayıyı başlatmak için kullanılan **çift**oluşturuluyor.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Türü bir karmaşık sayı **çift**.
+Türü karmaşık bir sayıyı **çift**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı türü karmaşık bir sınıfa karmaşık açık alt uzmanlaşması **çift** tanımladığı oluşturucular şablon sınıfında farklıdır. Dönüştürme işlemi **float** için **çift** dolaylı olarak izin verilir ancak dönüştürme işlemini `long double` için **çift** olması gereken **açık** . Kullanımını **açık** başlatma ile atama sözdizimini kullanarak tür dönüştürme kuralları.
+Karmaşık türü karmaşık bir sınıfa şablon sınıfının açık uzmanlığı **çift** Şablon sınıfı yalnızca tanımladığı Yapıcılardaki farklıdır. Dönüştürme **float** için **çift** örtük, izin verilen ancak dönüştürme **uzun çift** için **çift** olması gerekir **açık**. Kullanımını **açık** başlatma ile atama sözdizimi kullanılarak tür dönüştürme kuralları.
 
-Şablon sınıfı hakkında daha fazla bilgi için `complex`, bkz: [karmaşık sınıfı](../standard-library/complex-class.md). Şablon sınıfının üye listesi `complex`, bkz.
+Şablon sınıfı hakkında daha fazla bilgi için `complex`, bkz: [complex sınıfı](../standard-library/complex-class.md). Şablon sınıfının üye listesini `complex`, bkz.
 
 ## <a name="example"></a>Örnek
 
@@ -119,7 +119,7 @@ Argument of c3 is recovered from c3 using:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi**: \<karmaşık >
+**Üst bilgi**: \<karmaşık >
 
 **Namespace:** std
 

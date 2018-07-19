@@ -1,5 +1,5 @@
 ---
-title: IUnknown uygulaması sınıfları (ATL) | Microsoft Docs
+title: Bilinmeyen uygulama sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,44 +16,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d67b2a7b9769acd7d6e596e4fcdf1aec30bbf74
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b4cd2f2473249271285d6b8812dac1b924e5a172
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357222"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848542"
 ---
-# <a name="iunknown-implementation-classes"></a>IUnknown uygulaması sınıfları
-Aşağıdaki sınıflar uygulama **IUnknown** ve ilgili yöntemler:  
+# <a name="iunknown-implementation-classes"></a>Bilinmeyen uygulama sınıfları
+Aşağıdaki sınıflar uygulama `IUnknown` ve ilgili yöntemler:  
   
--   [İn uygulamasına](../atl/reference/ccomobjectrootex-class.md) başvuru toplanmış ve toplanmayan nesneler için sayım yönetir. İş parçacığı modelini belirtmenize olanak tanır.  
+-   [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) başvuru sayımı toplanmış ve toplanmayan nesnelerini yönetir. Bir iş parçacığı modeli belirtmenizi sağlar.  
   
--   [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) başvuru toplanmış ve toplanmayan nesneler için sayım yönetir. İş parçacığı modeli sunucusunun varsayılan kullanır.  
+-   [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) başvuru sayımı toplanmış ve toplanmayan nesnelerini yönetir. İş parçacığı modeli sunucusunun varsayılan kullanır.  
   
--   [CComAggObject](../atl/reference/ccomaggobject-class.md) uygulayan **IUnknown** toplanmış bir nesne için.  
+-   [CComAggObject](../atl/reference/ccomaggobject-class.md) uygular `IUnknown` toplanan nesne için.  
   
--   [CComObject](../atl/reference/ccomobject-class.md) uygulayan **IUnknown** toplanmayan bir nesne.  
+-   [CComObject](../atl/reference/ccomobject-class.md) uygular `IUnknown` toplanmayan bir nesne.  
   
--   [CComPolyObject](../atl/reference/ccompolyobject-class.md) uygulayan **IUnknown** toplanmış ve toplanmayan nesneler için. Kullanarak `CComPolyObject` her ikisi de belirlemeyi önler `CComAggObject` ve `CComObject` , modülü. Tek bir `CComPolyObject` nesne toplanmış ve toplanmayan durumları işler.  
+-   [CComPolyObject](../atl/reference/ccompolyobject-class.md) uygular `IUnknown` toplanmış ve toplanmayan nesneler için. Kullanarak `CComPolyObject` hem zorunluluğunu ortadan `CComAggObject` ve `CComObject` , modüldeki. Tek bir `CComPolyObject` nesne toplanmış ve toplanmayan durumları işler.  
   
--   [CComObjectNoLock](../atl/reference/ccomobjectnolock-class.md) uygulayan **IUnknown** modül kilit sayısı değiştirmeden toplanmayan bir nesne.  
+-   [CComObjectNoLock](../atl/reference/ccomobjectnolock-class.md) uygular `IUnknown` modülün kilit sayacını değiştirmeden toplanmayan bir nesne için.  
   
--   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) uygulayan **IUnknown** etiketleri arabirimi için.  
+-   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) uygular `IUnknown` bölünmüş arabirim.  
   
--   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) uygulayan **IUnknown** "önbelleğe alınan" etiketleri arabirimi için.  
+-   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) uygular `IUnknown` "önbelleğe alınan" bir bölünmüş arabirim.  
   
--   [CComContainedObject](../atl/reference/ccomcontainedobject-class.md) uygulayan **IUnknown** iç nesne bir toplama veya etiketleri arabirimi.  
+-   [CComContainedObject](../atl/reference/ccomcontainedobject-class.md) uygular `IUnknown` bir toplama veya bir bölünmüş arabirim iç nesne.  
   
--   [CComObjectGlobal](../atl/reference/ccomobjectglobal-class.md) başvuru sayısı nesnenizin emin olmak için modül olmaz silinmesi yönetir.  
+-   [CComObjectGlobal](../atl/reference/ccomobjectglobal-class.md) modülü nesnenizin emin olmak için bir başvuru sayısını olmaz silinmesi yönetir.  
   
--   [CComObjectStack](../atl/reference/ccomobjectstack-class.md) iskelet uyarlamasını kullanarak geçici bir COM nesnesi oluşturur **IUnknown**.  
+-   [CComObjectStack](../atl/reference/ccomobjectstack-class.md) bir iskelet uygulamasını kullanarak geçici bir COM nesnesi oluşturur `IUnknown`.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)   
- [Toplama ve sınıf Fabrika makroları](../atl/reference/aggregation-and-class-factory-macros.md)   
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)   
+ [Toplama ve sınıf üreticisi makroları](../atl/reference/aggregation-and-class-factory-macros.md)   
  [COM eşleme makroları](../atl/reference/com-map-macros.md)   
  [COM Eşlemesi Genel İşlevleri](../atl/reference/com-map-global-functions.md)
 

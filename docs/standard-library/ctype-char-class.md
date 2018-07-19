@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edbc96419e68cf584222e4008f58fd96169b2fb9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 47ac9fa5431b5edfb4885dfdbf39be6c6b89cee6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846005"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38960667"
 ---
 # <a name="ctypeltchargt-class"></a>CType&lt;char&gt; sınıfı
 
-Bir şablon sınıfı açık alt uzmanlaşması sınıftır **ctype\<CharType**> yazmak için `char`, çeşitli özelliklerini bir karakter türü nitelemek için yerel ayar model hizmet verebilir nesneyi açıklayan `char`.
+Şablon sınıfının açık uzmanlığı sınıftır `ctype\<CharType>` türüne **char**, türü bir karakterin çeşitli özelliklerini karakterize etmek için bir yerel ayar modeli hizmet verebilen bir nesneyi tanımlayan **char**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -130,21 +130,21 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı çeşitli şekillerde açık uzmanlık farklıdır:
+Açık özelleştirme, Şablon sınıfı, çeşitli şekillerde farklıdır:
 
-- Bir nesne sınıfı ctype < `char`> ctype maskesini ilk öğesi, bir dizi UCHAR_MAX + 1 öğe türü için bir işaretçi depolar **ctype_base::mask**. Ayrıca bir dizinin silinmesi gerekip gerekmediğini gösteren bir Boole nesnesi depolar (kullanarak `operator delete[]`) olduğunda ctype\< **Elem**> Nesne yok.
+- Bir nesne sınıfı ctype < `char`> ctype maskesini ilk öğesi, bir dizi UCHAR_MAX + 1 öğesi türü için bir işaretçi depolayan `ctype_base::mask`. Ayrıca bir dizinin silinmesi gerekip gerekmediğini belirten bir Boolean nesnesi depolar (kullanarak `operator delete[]`) olduğunda ctype\< **Elem**> nesnesi yok edildiğinde.
 
-- Tek genel kurucusu belirtmenize olanak sağlar. **sekmesini**, ctype maskesini ve **del**, dizi gerekiyorsa true Boolean nesnesi ne zaman silinmiş ctype < `char`> nesnesi yok , başvuru sayısı parametre refs yanı sıra.
+- Tek bir Genel oluşturucu belirtmenize olanak tanır `tab`, ctype maskesini ve `del`, dizi olması gerekiyorsa true olan Boolean nesnesi ne zaman silinmiş ctype < `char`> nesnesi yok edildiğinde, başvuru sayısının yanı sıra parametre refs.
 
-- Korumalı üye fonksiyonu **tablo** saklı ctype maskesi tablo döndürür.
+- Korumalı üye işlevi `table` saklı ctype maskesi tablosunu döndürür.
 
-- Statik üye nesne **table_size** ctype maskesi tablosunda en az öğe sayısını belirtir.
+- Statik üye nesne `table_size` ctype maskesi tabloda öğeleri en az sayısını belirtir.
 
-- Korumalı statik üye fonksiyonu **classic_table**(ctype maskesi tablo uygun "C" yerel olarak döndürür.
+- Korumalı statik üye işlevi `classic_table`("C" yerel ayarına uygun olarak ctype maskesi tablosunu döndürür.
 
-- Korumalı sanal üye işlevleri vardır [do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is), veya [do_scan_not](../standard-library/ctype-class.md#do_scan_not). Karşılık gelen ortak üye işlevleri eşdeğer işlemleri gerçekleştirir.
+- Korumalı sanal üye işlev yok [do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is), veya [do_scan_not](../standard-library/ctype-class.md#do_scan_not). Karşılık gelen ortak üye işlevleri eşdeğer işlemleri gerçekleştirin.
 
-Üye işlevleri [do_narrow](../standard-library/ctype-class.md#do_narrow) ve [do_widen](../standard-library/ctype-class.md#do_widen) değiştirilmemiş öğeleri kopyalayın.
+Üye işlevleri [do_narrow](../standard-library/ctype-class.md#do_narrow) ve [do_widen](../standard-library/ctype-class.md#do_widen) değiştirilmeden öğeleri kopyalama.
 
 ## <a name="requirements"></a>Gereksinimler
 

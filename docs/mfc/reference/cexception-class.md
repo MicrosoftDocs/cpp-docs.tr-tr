@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d145129d8f9e640da9040c8c70a92cedcf3565d9
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: e9bf8348adbe3e3547dddf0eda86e65486addf87
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36951715"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338515"
 ---
 # <a name="cexception-class"></a>CException sınıfı
 Microsoft Foundation Class Kitaplığı'ndaki tüm özel durumlar için temel sınıf.  
@@ -44,43 +44,43 @@ class AFX_NOVTABLE CException : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CException::CException](#cexception)|Oluşturan bir `CException` nesnesi.|  
+|[CException::CException](#cexception)|Oluşturur bir `CException` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CException::Delete](#delete)|Siler bir `CException` nesnesi.|  
-|[CException::ReportError](#reporterror)|Hata iletisinde bir ileti kutusu kullanıcıya bildirir.|  
+|[CException::Delete](#delete)|Siler bir `CException` nesne.|  
+|[CException::ReportError](#reporterror)|Bir ileti kutusunda bir hata iletisi, kullanıcıya bildirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çünkü `CException` , oluşturamıyor bir Özet temel sınıf `CException` nesneleri doğrudan; türetilen sınıfların nesnelerini oluşturmanız gerekir. Kendi oluşturmanız gerekiyorsa `CException`-stil sınıf, model olarak yukarıda listelenen türetilmiş sınıflarından birini kullanın. Türetilmiş sınıf ayrıca kullandığından emin olun `IMPLEMENT_DYNAMIC`.  
+ Çünkü `CException` oluşturamazsınız soyut bir temel sınıf `CException` nesneleri doğrudan; türetilen sınıfların nesneleri oluşturmanız gerekir. Kendi oluşturmanız gerekiyorsa `CException`-stil sınıf, model olarak yukarıda listelenen türetilmiş sınıflardan birini kullanın. Türetilmiş sınıfınızın ayrıca kullandığından emin olun `IMPLEMENT_DYNAMIC`.  
   
- Türetilen sınıflar ve onların açıklamaları aşağıda listelenmiştir:  
+ Türetilmiş sınıfları ve açıklamaları aşağıda listelenmiştir:  
   
 |||  
 |-|-|  
-|[CSimpleException](../../mfc/reference/csimpleexception-class.md)|Kaynak kritik MFC özel durumlar için temel sınıf|  
-|[CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md)|Geçersiz bağımsız değişken özel durumu|  
+|[CSimpleException](../../mfc/reference/csimpleexception-class.md)|Kaynak kritik MFC özel durumları için temel sınıf|  
+|[Cınvalidargexception](../../mfc/reference/cinvalidargexception-class.md)|Geçersiz bağımsız değişken özel durum koşulunu|  
 |[CMemoryException](../../mfc/reference/cmemoryexception-class.md)|Bellek yetersiz özel durumu|  
-|[CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)|İstek desteklenmeyen bir işlem için|  
+|[CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)|Desteklenmeyen bir işlem iste|  
 |[CArchiveException](../../mfc/reference/carchiveexception-class.md)|Arşiv özel durum|  
-|[CFileException](../../mfc/reference/cfileexception-class.md)|Dosya özgü özel durumu|  
-|[CResourceException](../../mfc/reference/cresourceexception-class.md)|Windows kaynak bulunamadı veya yok creatable|  
+|[CFileException](../../mfc/reference/cfileexception-class.md)|Dosya özgü özel durum|  
+|[CResourceException](../../mfc/reference/cresourceexception-class.md)|Windows kaynak bulunamadı veya değil|  
 |[COleException](../../mfc/reference/coleexception-class.md)|OLE özel durumu|  
-|[CDBException](../../mfc/reference/cdbexception-class.md)|Veritabanı özel durumu (açık veritabanı bağlantısı üzerinde tabanlı MFC veritabanı sınıfları için doğan diğer bir deyişle, özel durumları)|  
-|[COleDispatchException](../../mfc/reference/coledispatchexception-class.md)|OLE gönderme (Otomasyonu) özel durumu|  
-|[CUserException](../../mfc/reference/cuserexception-class.md)|Bir kaynak bulunamadı gösteren özel durumu|  
-|[CDaoException](../../mfc/reference/cdaoexception-class.md)|Veri erişim nesnesi özel durumu (DAO sınıfları için doğan diğer bir deyişle, özel durumları)|  
-|[CInternetException](../../mfc/reference/cinternetexception-class.md)|Internet özel durumu (Internet sınıfları için doğan diğer bir deyişle, özel durumları).|  
+|[CDBException](../../mfc/reference/cdbexception-class.md)|Veritabanı özel durumu (açık veritabanı bağlantısı üzerinde göre MFC veritabanı sınıfları için ortaya çıkan diğer bir deyişle, özel durum koşulları)|  
+|[COleDispatchException](../../mfc/reference/coledispatchexception-class.md)|OLE gönderme (Otomasyon) özel durumu|  
+|[CUserException](../../mfc/reference/cuserexception-class.md)|Bir kaynak bulunamadı gösteren durum|  
+|[CDaoException](../../mfc/reference/cdaoexception-class.md)|Veri erişim nesnesi özel durumu (DAO sınıfları için ortaya çıkan diğer bir deyişle, özel durum koşulları)|  
+|[Cınternetexception](../../mfc/reference/cinternetexception-class.md)|İnternet'e özel durum (Internet sınıfları için ortaya çıkan diğer bir deyişle, özel durum koşulları).|  
   
- Bu özel durumları ile kullanılmak üzere tasarlanmıştır [THROW](exception-processing.md#throw), [THROW_LAST](exception-processing.md#throw_last), [deneyin](exception-processing.md#try), [catch](exception-processing.md#catch), [and_catch](exception-processing.md#and_catch), ve [end_catch](exception-processing.md#end_catch) makroları. Özel durumlar hakkında daha fazla bilgi için bkz: [özel durum işleme](exception-processing.md), veya makalesine bakın [özel durum işleme (MFC)](../exception-handling-in-mfc.md).  
+ Bu özel durumları ile kullanılmak üzere tasarlanmıştır [THROW](exception-processing.md#throw), [THROW_LAST](exception-processing.md#throw_last), [deneyin](exception-processing.md#try), [catch](exception-processing.md#catch), [and_catch](exception-processing.md#and_catch), ve [end_catch](exception-processing.md#end_catch) makroları. Özel durumları hakkında daha fazla bilgi için bkz. [özel durum işleme](exception-processing.md), veya makaleye göz atın [özel durum işleme (MFC)](../exception-handling-in-mfc.md).  
   
- Belirli bir özel durum yakalamak için uygun türetilen sınıfı kullanın. Özel durumları yakalama tüm türleri için kullanmak `CException`ve ardından [CObject::IsKindOf](cobject-class.md#iskindof) arasında ayırt etmek için `CException`-türetilmiş sınıfları. Unutmayın `CObject::IsKindOf` yalnızca sınıfları çalışır bildirilen ile [ımplement_dynamıc](run-time-object-model-services.md#implement_dynamic) dinamik tür denetlemesi avantajlarından yararlanmak için makrosu. Tüm `CException`-oluşturduğunuz türetilmiş bir sınıf kullanması gereken `IMPLEMENT_DYNAMIC` makro çok.  
+ Belirli bir özel durum yakalamak için uygun türetilen sınıfı kullanın. Özel durumları yakalama tüm türleri için kullanın `CException`ve ardından [CObject::IsKindOf](cobject-class.md#iskindof) arasında ayırt etmek için `CException`-türetilmiş sınıflar. Unutmayın `CObject::IsKindOf` sınıfları yalnızca çalışır bildirilen ile [ımplement_dynamıc](run-time-object-model-services.md#implement_dynamic) dinamik tür denetimi avantajlarından yararlanmak için makro. Tüm `CException`-oluşturduğunuz türetilmiş bir sınıf kullanması gereken `IMPLEMENT_DYNAMIC` makro çok.  
   
- Çağırarak kullanıcıya özel durumlar hakkında ayrıntılar raporlayabilirsiniz [GetErrorMessage](cfileexception-class.md#geterrormessage) veya [ReportError](#reporterror), iki üye işlevlerini herhangi biri ile çalışan `CException`türetilmiş sınıfları.  
+ Çağırarak kullanıcıya özel durumları hakkında ayrıntılar bildirebilirsiniz [GetErrorMessage](cfileexception-class.md#geterrormessage) veya [ReportError](#reporterror), iki üye işlevleri herhangi biri ile çalışan `CException`türetilmiş sınıflar.  
   
- Bir özel durum makroları biri tarafından yakalanmışsa `CException` nesne otomatik olarak silinir; kendiniz silmeyin. Kullanarak bir özel durum yakalandı varsa bir **catch** anahtar sözcüğü, otomatik olarak silinmez. Makalesine bakın [özel durum işleme (MFC)](../exception-handling-in-mfc.md) ne zaman bir exeption nesnesini silme hakkında daha fazla bilgi için.  
+ Bir özel durum makroları biri tarafından yakalandığında `CException` nesne otomatik olarak silinir; kendiniz silmeyin. Kullanarak bir özel durum yakalandığında bir **catch** anahtar sözcüğü, otomatik olarak silinmez. Makaleye göz atın [özel durum işleme (MFC)](../exception-handling-in-mfc.md) ne zaman bir özel durum nesnesini silme hakkında daha fazla bilgi.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](cobject-class.md)  
@@ -91,7 +91,7 @@ class AFX_NOVTABLE CException : public CObject
  **Başlık:** afx.h  
   
 ##  <a name="cexception"></a>  CException::CException  
- Bu üye işlevi oluşturan bir `CException` nesnesi.  
+ Bu üye işlevi oluşturan bir `CException` nesne.  
   
 ```  
 explicit CException(BOOL bAutoDelete);
@@ -99,24 +99,24 @@ explicit CException(BOOL bAutoDelete);
   
 ### <a name="parameters"></a>Parametreler  
  *b_AutoDelete*  
- Belirtin **TRUE** varsa için bellek `CException` nesne öbek üzerinde ayrıldı. Bu neden olacak `CException` zaman silinecek nesne `Delete` üye işlevi, özel durum silmek için çağrılır. Belirtin **FALSE** varsa `CException` nesne yığında veya genel bir nesnedir. Bu durumda, `CException` nesne olmayacak ne zaman silinmiş `Delete` üye işlevi çağrılır.  
+ TRUE ise belirtmek için bellek `CException` nesneyi yığında ayrılmış. Bu neden `CException` ne zaman Silinmiş nesne `Delete` üye işlevi, özel durum silmek için çağrılır. FALSE belirtin `CException` nesne yığında veya genel bir nesnedir. Bu durumda, `CException` nesne olmayacak ne zaman silinmiş `Delete` üye işlevi çağrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Normalde hiçbir zaman bu oluşturucu doğrudan çağırmanız gerekir. Bir özel durum oluşturur işlevi bir örneğini oluşturmanız gerekir bir `CException`-türetilmiş sınıf ve MFC'nin kullanım throw işlevleri gibi kurucusu veya çağrı [AfxThrowFileException](exception-processing.md#afxthrowfileexception), önceden tanımlanmış bir türü atmak için. Bu belge, yalnızca bütünlük açısından sağlanır.  
+ Bu oluşturucu doğrudan çağırmak hiçbir zaman normalde gerekir. Özel durum oluşturan bir işlev bir örneğini oluşturmanız gerekir bir `CException`-türetilmiş sınıf ve MFC'nin kullanımı throw işlevleri gibi oluşturucu veya çağrı [AfxThrowFileException](exception-processing.md#afxthrowfileexception), önceden tanımlanmış bir tür oluşturmak için. Bu belge, bütünlük açısından sağlanır.  
   
 ##  <a name="delete"></a>  CException::Delete  
- Bu işlev olup olmadığını denetler. `CException` nesne öbek üzerinde oluşturuldu ve bu durumda, çağırır **silmek** nesne üzerinde işleci.  
+ Bu işlev olup olmadığını denetler. `CException` nesneyi yığında oluşturuldu ve bu durumda, çağrı **Sil** işlecinin nesne.  
   
 ```  
 void Delete();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Silerken bir `CException` nesne, kullanın `Delete` özel silmek için üye işlevi. Kullanmayın **silmek** doğrudan işleci çünkü `CException` nesne yığında oluşturulan veya genel bir nesne olabilir.  
+ Silerken bir `CException` nesnesi `Delete` üye işlevi, özel durumu silinemedi. Kullanmayın **Sil** işleci doğrudan, çünkü `CException` nesne yığın üzerinde oluşturulan veya genel bir nesne olabilir.  
   
- Nesne nesnesi oluşturulduğunda silineceğini belirtebilirsiniz. Daha fazla bilgi için bkz: [CException::CException](#cexception).  
+ Nesne oluşturulduğunda, nesne silinmiş olup olmadığını belirtebilirsiniz. Daha fazla bilgi için [CException::CException](#cexception).  
   
- Yalnızca çağırmanız gerekir `Delete` C++ kullanıyorsanız **deneyin**- **catch** mekanizması. MFC makroları kullanıyorsanız **deneyin** ve **CATCH**, sonra da bu makroları otomatik olarak bu işlevi çağırır.  
+ Yalnızca çağırmanız gerekir `Delete` C++ kullanıyorsanız **deneyin**- **catch** mekanizması. MFC makroları kullanıyorsanız **deneyin** ve **CATCH**, sonra da bu makrolar otomatik olarak bu işlevi çağırır.  
   
 ### <a name="example"></a>Örnek  
  ```cpp  
@@ -179,16 +179,16 @@ virtual int ReportError(
   
 ### <a name="parameters"></a>Parametreler  
  *nTür*  
- İleti kutusu stilini belirtir. Herhangi bir bileşimini uygulamak [ileti kutusu stilleri](styles-used-by-mfc.md#message-box-styles) kutusuna. Bu parametre belirtmezseniz, varsayılan değer **MB_OK**.  
+ İleti kutusu stilini belirtir. Herhangi bir birleşimini uygulamak [ileti kutusu stilleri](styles-used-by-mfc.md#message-box-styles) kutusu. Bu parametreyi belirtmezseniz MB_OK varsayılandır.  
   
  *nMessageID*  
- Özel durum nesnesi bir hata mesajı yoksa, görüntülenecek bir ileti kaynak kimliği (dizesi tablo girişi) belirtir. 0 ise iletisi "hata iletisi yok" görüntülenir.  
+ Özel durum nesnesi bir hata mesajı yoksa, görüntülenecek bir ileti (dize girişi) kaynak Kimliğini belirtir. 0 ise iletisi "hata iletisi yok" görüntülenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir `AfxMessageBox` değeri; Aksi takdirde 0 ileti kutusu görüntülemek için yeterli bellek varsa. Bkz: [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox) olası dönüş değerleri.  
+ Bir `AfxMessageBox` değeri; ileti kutusu görüntülemek için yeterli bellek yoksa, aksi durumda 0. Bkz: [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox) olası dönüş değerleri için.  
   
 ### <a name="example"></a>Örnek  
- Kullanım örneği `CException::ReportError`. Örneğin başka bir örnek için bkz [CATCH](exception-processing.md#catch).  
+ İşte bir örnek kullanımını `CException::ReportError`. Başka bir örnek için örneğin bakın [CATCH](exception-processing.md#catch).  
   
 ```cpp  
 CFile fileInput;
@@ -226,6 +226,6 @@ else
  [CObject sınıfı](cobject-class.md)   
  [Hiyerarşi grafiği](../hierarchy-chart.md)   
  [Özel durum işleme](exception-processing.md)   
- [I: kendi özel durum sınıfları nasıl oluşturulur](http://go.microsoft.com/fwlink/p/?linkid=128045)
+ [Nasıl yapılır: verilerimi kendi özel durum sınıfları oluşturma](http://go.microsoft.com/fwlink/p/?linkid=128045)
 
 

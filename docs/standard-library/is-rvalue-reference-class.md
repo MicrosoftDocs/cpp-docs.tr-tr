@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b8645e9ac8a8d3e8f40590105df234b4ef55bac
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: acba0f78df8cc537aecd5d2fc33380e4674e5721
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857070"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956927"
 ---
 # <a name="isrvaluereference-class"></a>is_rvalue_reference Sınıfı
 
-Testleri bir rvalue başvuru türüdür.
+Rvalue başvuru türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_rvalue_reference;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu türü koşulu örneği doğru tutan türü `Ty` olan bir [rvalue başvuru](../cpp/rvalue-reference-declarator-amp-amp.md).
+Bu tür koşulu örneği true tutan türü *Ty* olduğu bir [rvalue başvuru](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

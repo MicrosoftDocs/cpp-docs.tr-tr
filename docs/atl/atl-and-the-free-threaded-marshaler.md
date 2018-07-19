@@ -18,26 +18,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1716985adf65b714a418f20d3873f45c32d368b4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 015b07e5870aa6269dc76af8610d42fb469a6d33
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355832"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848356"
 ---
 # <a name="atl-and-the-free-threaded-marshaler"></a>ATL ve Ücretsiz İş Parçacıklı Sıralayıcı
-ATL Basit Nesne sihirbazın öznitelikleri sayfasında sınıfınızı ücretsiz iş parçacıklı sıralayıcı (FTM) toplamak izin veren bir seçenek sağlar.  
+ATL Basit Nesne Sihirbazı'nın öznitelikler sayfasını ücretsiz iş parçacıklı sıralayıcı (FTM) toplamak kendi sınıfınızı izin veren bir seçenek sunar.  
   
- Sihirbaz ücretsiz iş parçacıklı Sıralayıcı örneğini oluşturmak için kod oluşturur `FinalConstruct` ve bu örneğinde yayın `FinalRelease`. A `COM_INTERFACE_ENTRY_AGGREGATE` makrosu emin olmak için COM eşlemesi otomatik olarak eklenen `QueryInterface` için istekleri [IMarshal](http://msdn.microsoft.com/library/windows/desktop/dd542707) ücretsiz iş parçacıklı sıralayıcı tarafından işlenir.  
+ Sihirbaz ücretsiz iş parçacıklı Sıralayıcı bir örneğini oluşturmak için kod oluşturur `FinalConstruct` ve bu örnekte sürüm `FinalRelease`. COM_INTERFACE_ENTRY_AGGREGATE makrosu COM eşlemesine emin olmak için otomatik olarak eklenen `QueryInterface` için istekleri [IMarshal](http://msdn.microsoft.com/library/windows/desktop/dd542707) ücretsiz iş parçacıklı sıralayıcı tarafından işlenir.  
   
- Ücretsiz iş parçacıklı Sıralayıcı doğrudan erişim nesnenizin arabirimlere aynı işlemde herhangi bir iş parçacığı arası grup aramaları hızlandırma izin verir. Bu seçenek her iki iş parçacığı modelini kullanan sınıflar için tasarlanmıştır.  
+ Ücretsiz iş parçacıklı Sıralayıcı doğrudan erişim arabirimlerine nesneniz üzerinde herhangi bir iş parçacığı aynı işlemde, çapraz-grup aramaları hızlandırma izin verir. Bu seçenek her iki iş parçacığı modeli kullandığınız sınıflar için tasarlanmıştır.  
   
- Bu seçenek kullanıldığında sınıfları verilerini iş parçacığı güvenliği sorumluluğunu almanız gerekir. Ayrıca, ücretsiz iş parçacıklı Sıralayıcı toplamak ve diğer nesneleri elde arabirim işaretçileri kullanmak gereken nesneleri arabirimler doğru şekilde sıralanmış emin olmak için ek adımlar atmanız gerekir. Genellikle bu arabirim işaretçileri genel arabirim tablosu (GIT) depolamak ve işaretçiyi GIT her kullanılışında alma içerir. ATL sağlar sınıfı [CComGITPtr](../atl/reference/ccomgitptr-class.md) GIT içinde depolanan arabirim işaretçileri kullanmanıza yardımcı olacak.  
+ Bu seçenek kullanıldığında, sınıf verilerini iş parçacığı güvenliği için sorumluluğunu üstlenmelidir. Ayrıca, ücretsiz iş parçacıklı Sıralayıcı toplama ve diğer nesnelerden elde edilen arabirim işaretçilerini kullanması gereken nesneleri, arabirimler doğru sıralanmış emin olmak için ek adımlar atmanız gerekir. Genellikle bu arabirim işaretçilerini genel arabirim tablosu (GIT) depolama ve işaretçiyi GİT'ten her kullanılışında alma içerir. ATL sağlar sınıfını [Ccomgıtptr](../atl/reference/ccomgitptr-class.md) git'te arabirim işaretçilerini kullanmanıza yardımcı olacak.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../atl/active-template-library-atl-concepts.md)   
  [CoCreateFreeThreadedMarshaler](http://msdn.microsoft.com/library/windows/desktop/ms694500)   
  [IMarshal](http://msdn.microsoft.com/library/windows/desktop/dd542707)   
  [Genel arabirim tablosu kullanma zamanı](http://msdn.microsoft.com/library/windows/desktop/ms693729)   
- [İşlemdeki sunucu iş parçacığı oluşturma sorunları](http://msdn.microsoft.com/library/windows/desktop/ms687205)
+ [İşlem sunucusu iş parçacığı oluşturma sorunları](http://msdn.microsoft.com/library/windows/desktop/ms687205)
 

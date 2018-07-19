@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfeddfd1ebf0c5c2247b27a0c69a8a6ef33e7766
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 75a3db6c6beb18afe2303b464fcab290b2e132fc
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370444"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338216"
 ---
 # <a name="paintstruct-structure"></a>PAINTSTRUCT Yapısı
-`PAINTSTRUCT` Yapısı penceresinin istemci alanını boyamak için kullanılan bilgileri içerir.  
+`PAINTSTRUCT` Yapısı pencerenin istemci alanını boyamak için kullanılan bilgileri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,27 +41,27 @@ typedef struct tagPAINTSTRUCT {
   
 #### <a name="parameters"></a>Parametreler  
  *hdc*  
- Boyama için kullanılacak görüntüleme bağlamı tanımlar.  
+ Boyama için kullanılacak görünen bağlamı tanımlar.  
   
  *fErase*  
- Arka plan çizilmesi gerekip gerekmediğini belirtir. Bu uygulama arka yeniden boyutlandırmaya yoksa 0. Uygulama bir Windows pencere sınıfı bir arka plan Fırçası oluşturulursa, arka plan çizim için sorumludur (açıklamasına bakın **hbrBackground** üyesi [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı Windows SDK).  
+ Arka plan çizilmesini gerekip gerekmediğini belirtir. Bu uygulamanın arka plan yeniden çizmeniz gerekir 0. Uygulamanın bir arkaplan Fırçası bir Windows pencere sınıfı oluşturduysanız, arka plan çizmek için sorumlu olduğu (açıklamasına bakın `hbrBackground` üyesi [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK'sındaki yapısı).  
   
  *rcPaint*  
- Boyama istenen dikdörtgen sağ köşelerinde alt ve sol üst belirtir.  
+ Sol üst belirtir ve doğru boyama istendiği dikdörtgenin köşelerini düşürün.  
   
  *fRestore*  
- Ayrılmış üyesi. Ayrıca, Windows tarafından dahili olarak kullanılır.  
+ Ayrılmış üye. Ayrıca, Windows tarafından dahili olarak kullanılır.  
   
  *fIncUpdate*  
- Ayrılmış üyesi. Ayrıca, Windows tarafından dahili olarak kullanılır.  
+ Ayrılmış üye. Ayrıca, Windows tarafından dahili olarak kullanılır.  
   
  *rgbReserved [16]*  
- Ayrılmış üyesi. Ayrılmış bir Windows tarafından dahili olarak kullanılan bellek bloğu.  
+ Ayrılmış üye. Windows tarafından dahili olarak kullanılan bellek ayrılmış bir blok.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winuser.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CPaintDC::m_ps](../../mfc/reference/cpaintdc-class.md#m_ps)
 

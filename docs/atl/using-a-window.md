@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f946f99fd198db281418e2a471489b2236972435
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 44b9988c0ecde4d0aee917fea686ec6511473318
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358400"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847930"
 ---
-# <a name="using-a-window"></a>Bir penceresini kullanma
-Sınıf [CWindow](../atl/reference/cwindow-class.md) bir pencere kullanmanıza olanak sağlar. Bir pencere ekleme sonra bir `CWindow` nesnesi, ardından çağırabilir `CWindow` pencereyi denetlemek için yöntemler. `CWindow` Ayrıca içeren bir `HWND` dönüştürmek için işleci bir `CWindow` nesnesine bir `HWND`. Bu nedenle geçirebilirsiniz bir `CWindow` nesnesine bir pencere için bir tanıtıcı gerektiren herhangi bir işlev. Kolayca karıştırabilirsiniz `CWindow` yöntem çağrılarını ve geçici nesneleri oluşturmadan Win32 işlev çağrıları.  
+# <a name="using-a-window"></a>Pencere kullanma
+Sınıf [CWindow](../atl/reference/cwindow-class.md) pencere kullanmanıza olanak tanır. Bir pencereye eklediğiniz sonra bir `CWindow` nesnesi, ardından çağırabilirsiniz `CWindow` penceresi işlemek için yöntemler. `CWindow` Ayrıca dönüştürmek için bir HWND işleci içeren bir `CWindow` HWND için nesne. Bu nedenle geçirebilirsiniz bir `CWindow` bir pencere için işleme gerektiren herhangi bir işlev nesnesi. Kolayca karıştırabilirsiniz `CWindow` yöntem çağrıları ve herhangi bir geçici nesne oluşturmadan Win32 işlev çağrıları.  
   
- Çünkü `CWindow` onu değil zorunlu tuttukları kodunuzu bir iş yükünü yalnızca iki veri üyesi (bir pencere tanıtıcının ve varsayılan boyutları) sahiptir. Ayrıca, birçok `CWindow` yöntemleri yalnızca karşılık gelen Win32 API işlevleri sarmalayın. Kullanarak `CWindow`, `HWND` üye Win32 işlev için otomatik olarak geçirilir.  
+ Çünkü `CWindow` bunu değil zorunlu tuttukları kodunuzu bir iş yükünü yalnızca iki veri üyesi (bir pencere tutucu ve varsayılan boyutları) sahiptir. Ayrıca, birçok `CWindow` yöntemleri karşılık gelen Win32 API işlevleri yalnızca kaydır. Kullanarak `CWindow`, HWND üye otomatik olarak Win32 işleve geçirilir.  
   
- Kullanmanın yanı sıra `CWindow` doğrudan, ayrıca, verileri veya kod sınıfınıza eklemek için türetilen. ATL kendisini türetilen üç sınıflardan `CWindow`: [CWindowImpl](../atl/implementing-a-window.md), [Cdialogımpl](../atl/implementing-a-dialog-box.md), ve [CContainedWindowT](../atl/using-contained-windows.md).  
+ Kullanmanın yanı sıra `CWindow` doğrudan da veriler veya kod sınıfı eklemek için türetebilirsiniz. ATL kendisini üç sınıflarından türetilen `CWindow`: [Cwindowımpl](../atl/implementing-a-window.md), [Cdialogımpl](../atl/implementing-a-dialog-box.md), ve [CContainedWindowT](../atl/using-contained-windows.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Pencere sınıfları](../atl/atl-window-classes.md)

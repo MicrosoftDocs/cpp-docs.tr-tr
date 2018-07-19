@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b9aaae690acd372e8482ac8a0e33a14e030e4b3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3c0eaf8eeab1c5d9c024baa85af025f2294956e8
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855337"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959290"
 ---
 # <a name="removeconst-class"></a>remove_const Sınıfı
 
@@ -42,11 +42,11 @@ using remove_const_t = typename remove_const<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Değişiklik türü.
+*T* değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneği `remove_const<T>` bir değişiklik-türü tutan `T1` zaman `T` biçimidir `const T1`, aksi takdirde `T`.
+Örneği `remove_const<T>` bir değişiklik-tür tutar `T1` olduğunda *T* biçimindedir `const T1`, aksi takdirde *T*.
 
 ## <a name="example"></a>Örnek
 

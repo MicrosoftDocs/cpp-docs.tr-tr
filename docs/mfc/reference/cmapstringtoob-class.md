@@ -44,15 +44,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e4ea4ea24dfae26b1b43fe6480cac7f7a480fa4
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 6cbeecff722ba25d28ba38a60d3b577ce108b61d
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042254"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37337362"
 ---
 # <a name="cmapstringtoob-class"></a>CMapStringToOb sınıfı
-Benzersiz eşleyen bir sözlük koleksiyon sınıfı `CString` nesneleri `CObject` işaretçileri.  
+Benzersiz eşleyen sözlük koleksiyon sınıfı `CString` nesneleri için `CObject` işaretçileri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -72,38 +72,38 @@ class CMapStringToOb : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMapStringToOb::GetCount](#getcount)|Bu haritada öğe sayısını döndürür.|  
-|[CMapStringToOb::GetHashTableSize](#gethashtablesize)|Karma tablodaki öğeler geçerli sayısını belirler.|  
+|[CMapStringToOb::GetCount](#getcount)|Bu haritada öğelerin sayısını döndürür.|  
+|[CMapStringToOb::GetHashTableSize](#gethashtablesize)|Geçerli bir karma tablo içindeki öğelerin sayısını belirler.|  
 |[CMapStringToOb::GetNextAssoc](#getnextassoc)|Yineleme için sonraki öğeyi alır.|  
-|[CMapStringToOb::GetSize](#getsize)|Bu haritada öğe sayısını döndürür.|  
-|[CMapStringToOb::GetStartPosition](#getstartposition)|İlk öğe konumunu döndürür.|  
-|[CMapStringToOb::HashKey](#hashkey)|Belirtilen anahtar karma değerini hesaplar.|  
+|[CMapStringToOb::GetSize](#getsize)|Bu haritada öğelerin sayısını döndürür.|  
+|[CMapStringToOb::GetStartPosition](#getstartposition)|İlk öğenin konumunu döndürür.|  
+|[CMapStringToOb::HashKey](#hashkey)|Belirtilen bir anahtarı karma değerini hesaplar.|  
 |[CMapStringToOb::InitHashTable](#inithashtable)|Karma tablo başlatır.|  
-|[CMapStringToOb::IsEmpty](#isempty)|Testleri boş eşleme koşul (öğe yok).|  
-|[CMapStringToOb::Lookup](#lookup)|Void işaretçi anahtarına göre void işaretçi arar. İşaretçi değeri değil, işaret varlık anahtar karşılaştırma için kullanılır.|  
+|[CMapStringToOb::IsEmpty](#isempty)|(Öğe yok) boş-map koşulu sınar.|  
+|[CMapStringToOb::Lookup](#lookup)|Void bir işaretçi void işaretçisine anahtara göre arar. İşaretçi değeri değil, işaret varlık anahtar karşılaştırma için kullanılır.|  
 |[CMapStringToOb::LookupKey](#lookupkey)|Belirtilen anahtar değeriyle ilişkili anahtar için bir başvuru döndürür.|  
-|[CMapStringToOb::RemoveAll](#removeall)|Bu eşlemesinden tüm öğeleri kaldırır.|  
+|[CMapStringToOb::RemoveAll](#removeall)|Tüm öğeleri bu eşlemden kaldırır.|  
 |[CMapStringToOb::RemoveKey](#removekey)|Bir anahtar tarafından belirtilen bir öğeyi kaldırır.|  
-|[CMapStringToOb::SetAt](#setat)|Bir öğenin eşlemeye ekler; eşleşen bir anahtarı bulunursa, var olan öğenin yerini alır.|  
+|[CMapStringToOb::SetAt](#setat)|Haritayı bir öğe ekler; eşleşen bir anahtar bulunursa, var olan öğenin yerini alır.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMapStringToOb::operator [ ]](#operator_at)|Bir öğenin eşlemeye ekler — işleci değiştirme `SetAt`.|  
+|[CMapStringToOb::operator [ ]](#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ekledikten sonra bir `CString` -  `CObject*` çifti (öğesi) eşlemeye verimli bir şekilde alabileceğiniz veya hatalı bir dize kullanarak çifti silin veya `CString` bir anahtar değeri. Haritanın tüm öğeler üzerinde yineleyebilirsiniz.  
+ Siz ekledikten sonra bir `CString` -  `CObject*` çifti (öğesi) eşlemeye verimli bir şekilde alabileceğiniz veya bir dize kullanarak çifti silmek veya `CString` bir anahtar değeri. Eşlem içindeki tüm öğeleri üzerinde yineleyebilirsiniz.  
   
- Türünde bir değişken **konumu** tüm harita Çeşitlemeler alternatif giriş erişmek için kullanılır. Kullanabileceğiniz bir **konumu** "bir giriş anımsaması" ve eşlemesi üzerinden yineleme. Bu yineleme anahtar değere göre sıralı olduğunu düşünebilirsiniz; değil. Alınan öğeler belirsiz dizisidir.  
+ KONUM türünde bir değişken, tüm harita çeşitlemeleri alternatif giriş erişmek için kullanılır. Bir konum "unutmayın bir giriş için" ve eşlemesi üzerinden yineleme yapmak için kullanabilirsiniz. Bu yineleme anahtar değere göre sıralı olduğunu düşünebilirsiniz; Bu değil. Alınan öğe dizisi belirsiz.  
   
- `CMapStringToOb` bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir arşiv, aşırı yüklenmiş ekleme ile ya da bir harita depolanıyorsa her öğenin sırayla sıralandığı ( **<<**) işleci veya ile `Serialize` üye işlevi.  
+ `CMapStringToOb` içerir `IMPLEMENT_SERIAL` seri hale getirme ve alt öğeleri dökme desteklemek için makrosu. Bir eşleme bir arşiv, aşırı yüklenmiş ekleme ile depolanıyorsa her öğesi sırayla seri ( **<<**) işleci veya `Serialize` üye işlevi.  
   
- Haritadaki ayrı ayrı öğeler, bir tanı dökümü ihtiyacınız varsa ( `CString` değeri ve `CObject` içeriği), 1 veya daha büyük döküm bağlam derinliği ayarlamanız gerekir.  
+ Bir eşlem içindeki tek tek öğelerine tanılama dökümü ihtiyacınız varsa ( `CString` değeri ve `CObject` içeriği), 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir.  
   
- Zaman bir `CMapStringToOb` Nesne silindiğinden veya ne zaman öğeleri kaldırılır, `CString` nesneleri ve `CObject` işaretçileri kaldırılır. Tarafından başvurulan nesneler `CObject` işaretçileri yok yok.  
+ Olduğunda bir `CMapStringToOb` nesnesi silindiğinde veya ne zaman öğeleri kaldırılır, `CString` nesneleri ve `CObject` işaretçileri kaldırılır. Tarafından başvurulan nesneleri `CObject` işaretçileri yok edilmez.  
   
- Eşleme sınıf türetme listesi türetme benzer. Makalesine bakın [koleksiyonları](../../mfc/collections.md) özel amaçlı listesi sınıfının türetme bir çizimi için.  
+ Map sınıfı türetme için liste türetme benzerdir. Makaleye göz atın [koleksiyonları](../../mfc/collections.md) özel amaçlı listesi sınıfının türetme bir gösterim.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -125,9 +125,9 @@ CMapStringToOb(INT_PTR nBlockSize = 10);
  Harita genişletmek için bellek ayırma ayrıntı düzeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Harita büyüdükçe, bellek, biriminde ayrılır *nBlockSize* girişleri.  
+ Harita büyüdükçe, birimleri cinsinden ayrılan bellek *nBlockSize* girdileri.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir **CMapStringToOb:: CMapStringToOb**.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb:: CMapStringToOb`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -141,20 +141,20 @@ CMapStringToOb(INT_PTR nBlockSize = 10);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#63](../../mfc/codesnippet/cpp/cmapstringtoob-class_1.cpp)]  
   
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
 ##  <a name="getcount"></a>  CMapStringToOb::GetCount  
- Haritada kaç öğeleridir belirler.  
+ Haritada kaç öğenin olduğunu belirler.  
   
 ```  
 INT_PTR GetCount() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu haritada öğe sayısı.  
+ Bu eşlem içindeki öğelerin sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::GetCount`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::GetCount`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -166,22 +166,22 @@ INT_PTR GetCount() const;
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**INT_PTR GetCount () const;**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#64](../../mfc/codesnippet/cpp/cmapstringtoob-class_2.cpp)]  
   
 ##  <a name="gethashtablesize"></a>  CMapStringToOb::GetHashTableSize  
- Karma tablodaki öğeler geçerli sayısını belirler.  
+ Geçerli bir karma tablo içindeki öğelerin sayısını belirler.  
   
 ```  
 UINT GetHashTableSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Karma tablosunda öğe sayısını döndürür.  
+ Karma tablodaki öğelerin sayısını döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::GetHashTableSize`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::GetHashTableSize`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -193,7 +193,7 @@ UINT GetHashTableSize() const;
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**UINT GetHashTableSize () const;**|  
   
 ##  <a name="getnextassoc"></a>  CMapStringToOb::GetNextAssoc  
- Harita öğesi alır *rNextPosition*, ardından güncelleştirmeleri *rNextPosition* harita sonraki öğe başvurmak için.  
+ Harita öğe alır *rNextPosition*, ardından güncelleştirmeleri *rNextPosition* haritadaki sonraki öğeye başvurmak için.  
   
 ```  
 void GetNextAssoc(
@@ -204,42 +204,42 @@ void GetNextAssoc(
   
 ### <a name="parameters"></a>Parametreler  
  *rNextPosition*  
- Bir başvuru belirtir bir **konumu** önceki tarafından döndürülen değer **GetNextAssoc** veya **GetStartPosition** çağırın.  
+ Bir önceki tarafından döndürülen bir konum değeri bir başvuru belirtir `GetNextAssoc` veya `GetStartPosition` çağırın.  
   
  *rKey*  
- Alınan öğe (dize) döndürülen anahtarı belirtir.  
+ Alınan öğenin (dize) döndürülen anahtarını belirtir.  
   
  *rValue*  
- Alınan öğenin döndürülen değeri belirtir (bir **CObject** işaretçisi). Açıklamalar, bu parametre hakkında daha fazla bilgi için bkz.  
+ Alınan öğenin döndürülen değeri belirtir (bir `CObject` işaretçisi). Açıklamalar Bu parametre hakkında daha fazla bilgi için bkz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev eşlemesi tüm öğeler üzerinden yineleme için kullanışlıdır. Konum sırası mutlaka anahtar değeri dizisi ile aynı olduğunu unutmayın.  
+ Bu işlev bir eşlem içindeki tüm öğeleri arasında yineleme için kullanışlıdır. Konumu sıranın mutlaka anahtar değeri serisi ile aynı olmadığını unutmayın.  
   
- Alınan öğe Haritası son sonra yeni değeri ise *rNextPosition* ayarlanır **NULL**.  
+ Alınan öğe eşlem içindeki son öğesinin yeni değeri ise *rNextPosition* NULL olarak ayarlandı.  
   
- İçin *rValue* parametresi, nesne türüne dönüştürmek mutlaka **CObject\*&**, olduğu ne derleyici gerektirir, aşağıdaki örnekte gösterildiği gibi:  
+ İçin *rValue* parametresi, nesne türüne mutlaka **CObject\*&**, olduğu ne derleyicisi gerektirir, aşağıdaki örnekte gösterildiği gibi:  
   
  [!code-cpp[NVC_MFCCollections#65](../../mfc/codesnippet/cpp/cmapstringtoob-class_3.cpp)]  
   
- Bu doğru değildir **GetNextAssoc** şablonlar temelinde eşlemeleri.  
+ Bu doğru değildir `GetNextAssoc` şablonları temel alan eşlemeleri.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir **CMapStringToOb::GetNextAssoc**.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::GetNextAssoc`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
 |[CMapPtrToPtr](../../mfc/reference/cmapptrtoptr-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, void\* &**  *rKey* **, void\* &**  *rValue* **) const;**|  
-|[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, void\* &**  *rKey* **, WORD &** *rValue* **) const;**|  
+|[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, void\* &**  *rKey* **, WORD ve** *rValue* **) const;**|  
 |[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, CString &** *rKey* **, void\* &**  *rValue* **) const;**|  
 |[CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, CString &** *rKey* **, CString &** *rValue* **) const;**|  
-|[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, WORD &** *rKey* **, CObject\* &**  *rValue* **) const;**|  
-|[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, WORD &** *rKey* **, void\* &**  *rValue* **) const;**|  
+|[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, sözcük &** *rKey* **, CObject\* &**  *rValue* **) const;**|  
+|[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void GetNextAssoc (konum &** *rNextPosition* **, sözcük &** *rKey* **, void\* &**  *rValue* **) const;**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#66](../../mfc/codesnippet/cpp/cmapstringtoob-class_4.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `Lisa : a CAge at $4724 11`  
   
@@ -250,19 +250,19 @@ void GetNextAssoc(
  `Bart : a CAge at $45D4 13`  
   
 ##  <a name="getsize"></a>  CMapStringToOb::GetSize  
- Harita öğe sayısını döndürür.  
+ Harita öğelerin sayısını döndürür.  
   
 ```  
 INT_PTR GetSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Harita öğelerin sayısı.  
+ Eşlem içindeki öğelerin sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Harita öğelerin sayısını almak için bu yöntemi çağırın.  
+ Eşlem içindeki öğelerin sayısını almak için bu yöntemi çağırın.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::GetSize`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::GetSize`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -277,34 +277,34 @@ INT_PTR GetSize() const;
  [!code-cpp[NVC_MFCCollections#67](../../mfc/codesnippet/cpp/cmapstringtoob-class_5.cpp)]  
   
 ##  <a name="getstartposition"></a>  CMapStringToOb::GetStartPosition  
- Harita yineleme döndürerek başlatır bir **konumu** için geçirilen değer bir `GetNextAssoc` çağırın.  
+ Harita yineleme, geçirilebilir bir konum değeri döndürerek başlar bir `GetNextAssoc` çağırın.  
   
 ```  
 POSITION GetStartPosition() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A **konumu** ; harita yineleme için bir başlangıç konumunu belirten değer veya **NULL** harita boşsa.  
+ Harita yineleme için bir başlangıç konumunu belirten bir konum değeri; ya da bir eşlem boşsa, NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yineleme sırası tahmin edilebilir değil; Bu nedenle, "ilk öğenin" eşlemesindeki özel bir önemi yoktur.  
+ Yineleme sırası tahmin edilebilir değil; Bu nedenle, "eşlem içindeki ilk öğeyi" özel bir önemi yoktur.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::GetStartPosition`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::GetStartPosition`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CMapPtrToPtr](../../mfc/reference/cmapptrtoptr-class.md)|**Konum GetStartPosition () const;**|  
-|[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**Konum GetStartPosition () const;**|  
-|[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**Konum GetStartPosition () const;**|  
-|[CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)|**Konum GetStartPosition () const;**|  
-|[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**Konum GetStartPosition () const;**|  
-|[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**Konum GetStartPosition () const;**|  
+|[CMapPtrToPtr](../../mfc/reference/cmapptrtoptr-class.md)|**GetStartPosition (const) getirin;**|  
+|[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**GetStartPosition (const) getirin;**|  
+|[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**GetStartPosition (const) getirin;**|  
+|[CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)|**GetStartPosition (const) getirin;**|  
+|[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**GetStartPosition (const) getirin;**|  
+|[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**GetStartPosition (const) getirin;**|  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [CMapStringToOb::GetNextAssoc](#getnextassoc).  
+ Örneğin bakın [CMapStringToOb::GetNextAssoc](#getnextassoc).  
   
 ##  <a name="hashkey"></a>  CMapStringToOb::HashKey  
- Belirtilen anahtar karma değerini hesaplar.  
+ Belirtilen bir anahtarı karma değerini hesaplar.  
   
 ```  
 UINT HashKey(LPCTSTR key) const;  
@@ -318,7 +318,7 @@ UINT HashKey(LPCTSTR key) const;
  Anahtarın karma değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::HashKey`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::HashKey`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -340,15 +340,15 @@ void InitHashTable(
   
 ### <a name="parameters"></a>Parametreler  
  *hashSize*  
- Karma tablosunda giriş sayısı.  
+ Girdi karma tablosunda sayısı.  
   
  *bAllocNow*  
- Varsa **doğru**, karma tablosu başlatma; bağlı ayırır tablo gerektiğinde aksi ayrılır.  
+ TRUE ise başlatma sırasında karma tablo ayırır; Aksi takdirde tablo gerektiğinde ayrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- En iyi performans için karma tablo boyutu asal sayı olmalıdır. Çakışmaları en aza indirmek için boyutu yaklaşık yüzde 20'den büyük beklenen veri kümesi daha büyük olmalıdır.  
+ En iyi performans için bir karma tablo boyutu olmalıdır. Çakışmaları en aza indirmek için boyutu yaklaşık yüzde 20 oranında daha büyük beklenen veri kümesi daha büyük olmalıdır.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::InitHashTable`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::InitHashTable`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -367,13 +367,13 @@ BOOL IsEmpty() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu haritada öğe içeriyorsa, sıfır olmayan; Aksi takdirde 0.  
+ Bu harita hiçbir öğe içeren olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [RemoveAll](#removeall).  
+ Örneğin bakın [RemoveAll](#removeall).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir **CMapStringToOb:: IsEmpty**.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir **CMapStringToOb:: IsEmpty**.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -385,7 +385,7 @@ BOOL IsEmpty() const;
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**BOOL IsEmpty () const;**|  
   
 ##  <a name="lookup"></a>  CMapStringToOb::Lookup  
- Döndürür bir `CObject` işaretçi temel alarak bir `CString` değeri.  
+ Döndürür bir `CObject` işaretçi temel alan bir `CString` değeri.  
   
 ```  
 BOOL Lookup(
@@ -395,30 +395,30 @@ BOOL Lookup(
   
 ### <a name="parameters"></a>Parametreler  
  *Anahtarı*  
- Bakılacak öğesi tanımlayan dize anahtarını belirtir.  
+ Bakılacak öğeyi tanımlayan dize anahtar belirtir.  
   
  *rValue*  
  Aranan yukarı öğesinden döndürülen değeri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğesi bulunmazsa sıfır olmayan; Aksi takdirde 0.  
+ Öğesi bulundu; olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Lookup` map öğesi tam olarak eşleşen bir anahtara hızla bulmak için bir karma algoritması kullanır ( `CString` değeri).  
+ `Lookup` eşleme öğesi tam olarak eşleşen bir anahtar ile hızla bulmak için bir karma algoritma kullanır ( `CString` değeri).  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::LookUp`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::LookUp`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
 |[CMapPtrToPtr](../../mfc/reference/cmapptrtoptr-class.md)|**BOOL arama (void\***  `key` **, void\* &**  `rValue` **) const;**|  
-|[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**BOOL arama (void\***  `key` **, WORD &** `rValue` **) const;**|  
+|[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**BOOL arama (void\***  `key` **, sözcük &** `rValue` **) const;**|  
 |[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**BOOL arama (LPCTSTR** `key` **, void\* &**  `rValue` **) const;**|  
 |[CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)|**BOOL arama (LPCTSTR** `key` **, CString &** `rValue` **) const;**|  
 |[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**BOOL arama (WORD** `key` **, CObject\* &**  `rValue` **) const;**|  
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**BOOL arama (WORD** `key` **, void\* &**  `rValue` **) const;**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#68](../../mfc/codesnippet/cpp/cmapstringtoob-class_6.cpp)]  
   
@@ -433,18 +433,18 @@ BOOL LookupKey(
   
 ### <a name="parameters"></a>Parametreler  
  *Anahtarı*  
- Bakılacak öğesi tanımlayan dize anahtarını belirtir.  
+ Bakılacak öğeyi tanımlayan dize anahtar belirtir.  
   
  *rKey*  
- İlişkili anahtar referansı.  
+ Başvuru ilişkili anahtar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Anahtar bulunduysa sıfır olmayan; Aksi takdirde 0.  
+ Anahtar bulunduysa sıfır; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir anahtar için bir başvuru kullanarak ilişkili öğesi eşlemesinden kaldırıldıktan sonra kullandıysanız veya eşleme yok sonra güvenli değildir.  
+ Bir anahtara bir başvuru kullanarak ilişkili öğeyi bir eşlemden kaldırıldıktan sonra kullandıysanız veya eşleme yok edildi sonra güvenli değildir.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir **CMapStringToOb:: LookupKey**.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb:: LookupKey`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -459,30 +459,30 @@ CObject*& operator[ ](lpctstr key);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi başvuru bir `CObject` nesne; veya **NULL** harita boşsa veya *anahtar* aralık dışında.  
+ Bir işaretçiye başvuru bir `CObject` nesne; veya bir eşlem boşsa, boş veya *anahtar* je mimo rozsah.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu nedenle yalnızca (bir l-değeri) atama ifadesinin sol tarafta kullanılabilir. Belirtilen anahtarı içeren herhangi bir harita öğe varsa, yeni bir öğe oluşturulur.  
+ Bu nedenle yalnızca (lvalue) atama deyiminin sol tarafında kullanılabilir. Ardından, belirtilen anahtara sahip herhangi bir harita öğe varsa, yeni bir öğe oluşturulur.  
   
- Yoktur yok "sağ tarafında" (r) bu işleci için eşdeğer bir anahtar eşlemesinde bulunamayabilir olasılığı olduğundan. Kullanım `Lookup` öğesi alma için üye işlevi.  
+ Yoktur yok "sağ tarafında" (r) bu operatörü için eşdeğeri anahtar haritada bulunamamış olabilir bir olasılık olduğundan. Kullanım `Lookup` öğesi alma için üye işlevi.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir **CMapStringToOb::operator []**.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::operator []`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CMapPtrToPtr](../../mfc/reference/cmapptrtoptr-class.md)|**void\*& [] işleci (void\***  `key`  **\);**|  
-|[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**WORD & işleci [] (void\***  `key`  **\);**|  
-|[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**void\*& [] işleci (lpctstr** `key`  **\);**|  
+|[CMapPtrToPtr](../../mfc/reference/cmapptrtoptr-class.md)|**void\*& operator [] (void\***  `key`  **\);**|  
+|[CMapPtrToWord](../../mfc/reference/cmapptrtoword-class.md)|**SÖZCÜK & işleci [] (void\***  `key`  **\);**|  
+|[CMapStringToPtr](../../mfc/reference/cmapstringtoptr-class.md)|**void\*& operator [] (lpctstr** `key`  **\);**|  
 |[CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)|**CString & işleci [] (lpctstr** `key`  **\);**|  
-|[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**CObject\*& [] işleci (word** `key`  **\);**|  
-|[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void\*& [] işleci (word** `key`  **\);**|  
+|[CMapWordToOb](../../mfc/reference/cmapwordtoob-class.md)|**CObject\*& operator [] (word** `key`  **\);**|  
+|[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void\*& operator [] (word** `key`  **\);**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#72](../../mfc/codesnippet/cpp/cmapstringtoob-class_7.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `Operator [] example: A CMapStringToOb with 2 elements`  
   
@@ -491,18 +491,18 @@ CObject*& operator[ ](lpctstr key);
  `[Bart] = a CAge at $497E 13`  
   
 ##  <a name="removeall"></a>  CMapStringToOb::RemoveAll  
- Bu eşlemesinden tüm öğeleri kaldırır ve bozar `CString` anahtar nesneleri.  
+ Tüm öğeleri bu eşlemden kaldırır ve yok eder `CString` anahtar nesneleri.  
   
 ```  
 void RemoveAll();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CObject` Her anahtar tarafından başvurulan nesneler değil yok. `RemoveAll` İşlevi başvurulan emin değil, bellek sızıntıları neden olabilecek `CObject` nesneler yok.  
+ `CObject` Her anahtar tarafından başvurulan nesneler yok edilmez. `RemoveAll` İşlevi, bellek sızıntıları açabilir, başvurulan emin değil, `CObject` nesneler yok edilir.  
   
- Harita zaten boşsa, işlev düzgün çalışır.  
+ Eşleme zaten boşsa, işlev düzgün çalışır.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::RemoveAll`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::RemoveAll`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -514,12 +514,12 @@ void RemoveAll();
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void RemoveAll( );**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#69](../../mfc/codesnippet/cpp/cmapstringtoob-class_8.cpp)]  
   
 ##  <a name="removekey"></a>  CMapStringToOb::RemoveKey  
- Sağlanan anahtarına karşılık gelen eşleme girişi arar; Ardından, anahtar bulunursa, giriş kaldırır.  
+ Sağlanan anahtara karşılık gelen eşleme girişi arar; Ardından, anahtar bulunursa, giriş kaldırır.  
   
 ```  
 BOOL RemoveKey(LPCTSTR key);
@@ -530,12 +530,12 @@ BOOL RemoveKey(LPCTSTR key);
  Harita araması için kullanılan dizeyi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Giriş bulundu ve başarıyla kaldırıldı, sıfır olmayan; Aksi takdirde 0.  
+ Giriş bulundu ve başarıyla kaldırıldı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu bellek sızıntıları sunabilir `CObject` nesne başka bir yerde silinmez.  
+ Bu, bellek sızıntılarının neden olabilir `CObject` nesne başka bir yerde silinmez.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::RemoveKey`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::RemoveKey`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -547,11 +547,11 @@ BOOL RemoveKey(LPCTSTR key);
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**BOOL RemoveKey (WORD** `key` **);**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#70](../../mfc/codesnippet/cpp/cmapstringtoob-class_9.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `RemoveKey example: A CMapStringToOb with 3 elements`  
   
@@ -562,7 +562,7 @@ BOOL RemoveKey(LPCTSTR key);
  `[Bart] = a CAge at $4634 13`  
   
 ##  <a name="setat"></a>  CMapStringToOb::SetAt  
- Birincil bir eşleminde bir öğe eklemek anlamına gelir.  
+ Bir eşlem içinde bir öğe eklemek birincil anlamına gelir.  
   
 ```  
 void SetAt(
@@ -572,15 +572,15 @@ void SetAt(
   
 ### <a name="parameters"></a>Parametreler  
  *Anahtarı*  
- Yeni öğe anahtarı dizeyi belirtir.  
+ Yeni öğenin anahtarı dize belirtir.  
   
  *newValue*  
- Belirtir `CObject` yeni öğe değeri işaretçi.  
+ Belirtir `CObject` , yeni öğenin değerini işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk olarak, anahtar aranır. Anahtar bulunursa, karşılık gelen değeri değiştikten sonra; Aksi takdirde, yeni bir anahtar-değer öğesi oluşturulur.  
+ İlk olarak, anahtar aranır. Anahtar bulunursa, karşılık gelen değeri değiştirildikten sonra; Aksi takdirde, yeni bir anahtar-değer öğesi oluşturulur.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CMapStringToOb::SetAt`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CMapStringToOb::SetAt`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
@@ -592,11 +592,11 @@ void SetAt(
 |[CMapWordToPtr](../../mfc/reference/cmapwordtoptr-class.md)|**void SetAt (WORD** `key` **, void\***  `newValue` **);**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#71](../../mfc/codesnippet/cpp/cmapstringtoob-class_10.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `before Lisa's birthday: A CMapStringToOb with 2 elements`  
   

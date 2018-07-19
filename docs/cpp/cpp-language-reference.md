@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25315121d3004601914c5b8872b496e57acec99f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0c3886e710d0262068848304d9f2419c835b67c2
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417210"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954199"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
-Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş dayanır *C++ başvuru elle açıklama* Mine Ellis ve çalışan Bjarne Stroustrup tarafından ve ANSI/ISO C++ uluslararası standart (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.  
+Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş *Annotated C++ Reference Manual* Margaret Ellis ve Bjarne Stroustrup tarafından ve ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.  
 
-Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz geri c++](welcome-back-to-cpp-modern-cpp.md).
+Modern C++ programlama uygulamalarını genel bakış için bkz. [Hoş Geldiniz geri c++](welcome-back-to-cpp-modern-cpp.md).
   
  Hızlıca bir anahtar sözcük veya işleç bulmak için aşağıdaki tablolara bakın:  
   
@@ -46,7 +46,7 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  [Standart Dönüştürmeler](../cpp/standard-conversions.md)  
  Yerleşik veya "temel" türler arasında tür dönüştürmeleri. Ayrıca, aritmetik dönüştürmeler ve işaretçi, başvuru ve işaretçiden üyeye türleri arasında dönüştürmeler.  
   
- [İşleçler, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
+ [İşleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
  C++'daki işleçler.  
   
  [İfadeler](../cpp/expressions-cpp.md)  
@@ -61,14 +61,11 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  [Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)  
  Depolama sınıfı belirleyicileri, işlev tanımları, başlatmalar, numaralandırmalar, sınıf, yapı ve birleşim bildirimleri ve typedef bildirimleri. Ayrıca, satır içi işlevler, sabit anahtar sözcük, ad alanları.  
   
- [Bildirimciler](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)  
- Bir nesne, tür veya işlevi adlandıran bir bildirim deyiminin bölümü. Soyut bildirimciler, tür adları, başlatıcılar, işlev bildirimleri ve tanımları, diziler, başvurular.  
-  
- [Sınıflar, yapılar ve birleşimleri](../cpp/classes-and-structs-cpp.md)  
+ [Sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md)  
  Sınıflara, yapılara ve birleşimlere giriş. Ayrıca, üye işlevleri, özel üye işlevleri, veri üyeleri, bit alanları, bu işaretçi, iç içe geçmiş sınıflar.  
   
  [Türetilen sınıflar](../cpp/inheritance-cpp.md)  
- Tek ve birden çok devralma, sanal işlevler, birden fazla temel sınıf, soyut sınıflar, kapsam kuralları. Ayrıca, __super ve \__interface anahtar sözcükler.  
+ Tek ve birden çok devralma, sanal işlevler, birden fazla temel sınıf, soyut sınıflar, kapsam kuralları. Ayrıca, __super ve \__arabirim anahtar sözcükleri.  
   
  [Üye erişim denetimi](../cpp/member-access-control-cpp.md)  
  Sınıf üyeleri için erişim denetleme: genel, özel ve korumalı anahtar sözcükler. Arkadaş işlevleri ve sınıfları.  
@@ -80,7 +77,7 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  C++ özel durum işleme, yapılandırılmış özel durum işleme (SEH), özel durum işleme deyimleri yazılırken kullanılan anahtar sözcükler.  
   
  [Onaylama işlemi ve Kullanıcı Tarafından Sağlanan İletiler](../cpp/assertion-and-user-supplied-messages-cpp.md)  
- `#error` yönerge `static_assert` anahtar sözcüğü, `assert` makrosu.  
+ `#error` yönergesi, **static_assert** anahtar sözcüğü, `assert` makrosu.  
   
  [Şablonlar](../cpp/templates-cpp.md)  
  Şablon belirtimleri, işlev şablonları, sınıf şablonları, tür adı anahtar sözcüğü, şablonlara karşı makrolar, şablonlar ve akıllı işaretçiler.  
@@ -89,7 +86,7 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  Olayları ve olay işleyicileri bildirme.  
   
  [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)  
- Microsoft C++'ya özgü değiştiriciler. Çağırma kuralları, naked işlevleri, genişletilmiş depolama sınıfı öznitelikler (__declspec) adresleme bellek \__w64.  
+ Microsoft C++'ya özgü değiştiriciler. Bellek adresleme, çağırma kuralları, naked işlevleri, genişletilmiş depolama sınıfı öznitelikleri (__declspec) \__w64.  
   
  [Satır İçi Assembler](../assembler/inline/inline-assembler.md)  
  __asm bloklarında derleme dili ve C++ kullanılıyor.  
@@ -101,9 +98,9 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  C++ için Microsoft uzantıları.  
   
  [Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)  
- Visual C++ derleyicisi standart olmayan davranış hakkında bilgi.  
+ Visual C++ derleyicisi standart dışı davranış hakkında bilgiler.  
 
- [Yeniden Hoş Geldiniz C++](welcome-back-to-cpp-modern-cpp.md) modern C++ programlama genel bir bakış yöntemler güvenli, doğru ve verimli programları yazmak için.
+ [Yeniden Hoş Geldiniz C++](welcome-back-to-cpp-modern-cpp.md) modern C++ programlama hakkında genel bakış yöntemler güvenli, doğru ve verimli programları yazmak için.
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)  

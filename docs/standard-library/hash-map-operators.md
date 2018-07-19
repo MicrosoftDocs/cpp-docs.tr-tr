@@ -1,5 +1,5 @@
 ---
-title: '&lt;hash_map&gt; işleçleri | Microsoft Docs'
+title: '&lt;hash_map&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,26 +9,26 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-ms.openlocfilehash: aa5c2a662fb5e827978a7c00aa3035dcc6cc97f2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 135922bb88b02c00849a577fb8d8457b6fb21989
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847305"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958243"
 ---
 # <a name="lthashmapgt-operators"></a>&lt;hash_map&gt; işleçleri
 
 |||
 |-|-|
-|[operator!=](#op_neq)|[operator! = (multimap)](#op_neq_mm)|
-|[operator==](#op_eq_eq)|[operator == (multimap)](#op_eq_eq_mm)|
+|[operator!=](#op_neq)|[işleç! = (multimap)](#op_neq_mm)|
+|[operator==](#op_eq_eq)|[işleç == (multimap)](#op_eq_eq_mm)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](unordered-map-class.md).
 
-Hash_map nesne işlecinin sol tarafındaki sağ tarafında hash_map nesnesine eşit değilse testleri.
+İşlecin sol tarafındaki hash_map nesne işlecin sağ tarafındaki hash_map nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_map <Key, Type, Traits, Allocator>& right);
@@ -36,19 +36,19 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `hash_map`.
+*Sol* türünde bir nesne `hash_map`.
 
-`right` Türünde bir nesne `hash_map`.
+*doğru* türünde bir nesne `hash_map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_maps eşit; değilse **false** hash_maps eşit olması durumunda.
+**doğru** hash_maps eşit; değilse, **false** hash_maps eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_map nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki hash_maps aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Hash_map nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki hash_maps eşit olur. Aksi takdirde, eşit oldukları.
 
-Üyeleri [< hash_map >](hash-map.md) ve [< hash_set >](hash-set.md) başlık dosyaları [ stdext Namespace](stdext-namespace.md).
+Üyeleri [< hash_map >](hash-map.md) ve [< hash_set >](hash-set.md) üstbilgi dosyalarını [ stdext Namespace](stdext-namespace.md).
 
 ### <a name="example"></a>Örnek
 
@@ -90,12 +90,12 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](unordered-map-class.md).
 
-Hash_map nesne işlecinin sol tarafındaki sağ tarafında hash_map nesnesine eşitse testleri.
+İşlecin sol tarafındaki hash_map nesnesinin işlecin sağ tarafındaki hash_map nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_map <Key, Type, Traits, Allocator>& right);
@@ -103,17 +103,17 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `hash_map`.
+*Sol* türünde bir nesne `hash_map`.
 
-`right` Türünde bir nesne `hash_map`.
+*doğru* türünde bir nesne `hash_map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_map işlecinin sol tarafındaki işlecinin sağ tarafında hash_map eşit; tersi durumda ise **false**.
+**doğru** hash_map işlecinin sol tarafındaki ise, aksi takdirde işlecin sağ tarafındaki hash_map eşit **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_map nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki hash_maps aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Hash_map nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki hash_maps eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -155,12 +155,12 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.
 ```
 
-## <a name="op_neq_mm"></a>  operator! = (hash_multimap)
+## <a name="op_neq_mm"></a>  işleç! = (hash_multimap)
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](unordered-multimap-class.md).
 
-Testleri işlecinin sol tarafındaki hash_multimap nesnesi sağ tarafında hash_multimap nesnesine eşit değil.
+İşlecin sol tarafındaki hash_multimap nesne işlecin sağ tarafındaki hash_multimap nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const hash_multimap <Key, Type, Traits, Allocator>& right);
@@ -168,17 +168,17 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `hash_multimap`.
+*Sol* türünde bir nesne `hash_multimap`.
 
-`right` Türünde bir nesne `hash_multimap`.
+*doğru* türünde bir nesne `hash_multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_multimaps eşit; değilse **false** hash_multimaps eşit olması durumunda.
+**doğru** hash_multimaps eşit; değilse, **false** hash_multimaps eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_multimap nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki hash_multimaps aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Hash_multimap nesneler arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki hash_multimaps eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -220,12 +220,12 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.
 ```
 
-## <a name="op_eq_eq_mm"></a>  operator == (hash_multimap)
+## <a name="op_eq_eq_mm"></a>  işleç == (hash_multimap)
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](unordered-multimap-class.md).
 
-Hash_multimap nesne işlecinin sol tarafındaki sağ tarafında hash_multimap nesnesine eşitse testleri.
+İşlecin sol tarafındaki hash_multimap nesnesinin işlecin sağ tarafındaki hash_multimap nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const hash_multimap <Key, Type, Traits, Allocator>& right);
@@ -233,17 +233,17 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `hash_multimap`.
+*Sol* türünde bir nesne `hash_multimap`.
 
-`right` Türünde bir nesne `hash_multimap`.
+*doğru* türünde bir nesne `hash_multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_multimap işlecinin sol tarafındaki işlecinin sağ tarafında hash_multimap eşit; tersi durumda ise **false**.
+**doğru** hash_multimap işlecinin sol tarafındaki ise, aksi takdirde işlecin sağ tarafındaki hash_multimap eşit **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_multimap nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki hash_multimaps aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Hash_multimap nesneler arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki hash_multimaps eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 

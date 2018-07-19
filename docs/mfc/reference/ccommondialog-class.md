@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53f53bdb19c6f40d73179b600051ecfaf6b69c94
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: d6821b7a33339b2a143778172caa7a4a22cb101e
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950641"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37335921"
 ---
 # <a name="ccommondialog-class"></a>CCommonDialog sınıfı
-Windows ortak iletişim kutuları işlevselliğini kapsülleyen sınıflar için temel sınıf.  
+Windows ortak iletişim kutularının işlevlerini kapsayan sınıflar için taban sınıf.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ class CCommonDialog : public CDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCommonDialog::CCommonDialog](#ccommondialog)|Oluşturan bir `CCommonDialog` nesnesi.|  
+|[CCommonDialog::CCommonDialog](#ccommondialog)|Oluşturur bir `CCommonDialog` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Aşağıdaki sınıflar Windows ortak iletişim kutuları işlevselliğini kapsülleyen:  
+ Aşağıdaki sınıflar Windows ortak iletişim kutularının işlevi kapsülleyen:  
   
 - [CFileDialog](../../mfc/reference/cfiledialog-class.md)  
   
@@ -76,7 +76,7 @@ class CCommonDialog : public CDialog
  **Başlık:** afxdlgs.h  
   
 ##  <a name="ccommondialog"></a>  CCommonDialog::CCommonDialog  
- Oluşturan bir `CCommonDialog` nesnesi.  
+ Oluşturur bir `CCommonDialog` nesne.  
   
 ```  
 explicit CCommonDialog(CWnd* pParentWnd);
@@ -84,10 +84,10 @@ explicit CCommonDialog(CWnd* pParentWnd);
   
 ### <a name="parameters"></a>Parametreler  
  *pParentWnd*  
- İşaret üst veya sahibi pencere nesnesi için (tür [CWnd](../../mfc/reference/cwnd-class.md)) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim nesnenin üst pencere ana uygulama penceresine ayarlanır.  
+ Üst veya sahibi pencere nesnesi için işaret (tür [CWnd](../../mfc/reference/cwnd-class.md)) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim nesnenin üst penceresine ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) tam bilgi için.  
+ Bkz: [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) eksiksiz bilgi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDialog sınıfı](../../mfc/reference/cdialog-class.md)   

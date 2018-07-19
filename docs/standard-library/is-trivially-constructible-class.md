@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 757a5eb526bc8d4294a64cbdc9645e72285162ce
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f73559503ad427c9b7eb513d4164d3348c652948
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857265"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954753"
 ---
 # <a name="istriviallyconstructible-class"></a>is_trivially_constructible sınıfı
 
-Belirtilen bağımsız değişken türleri kullanıldığında bir türü trivially oluşturulabilir olup olmadığını test eder.
+Belirtilen bağımsız değişken türler kullanıldığında bir türü basit bir şekilde atmamalıdır olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,13 +37,13 @@ struct is_trivially_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
-`Args` Bir oluşturucuda eşleştirmek için bağımsız değişken türleri `T`.
+*Args* bir oluşturucuda eşleştirmek için bağımsız değişken türleri *T*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` bağımsız değişken türleri trivially oluşturulabilir kullanmaktır `Args`, aksi takdirde false tutar. Tür `T` trivially oluşturulabilir olduğundan, değişken tanımını `T t(std::declval<Args>()...);` doğru biçimlendirildiğinden ve önemsiz olmayan bir işlem çağırmak için bilinen. Her ikisi de `T` ve içindeki tüm türler `Args` tam tür `void`, veya bilinmeyen bağlı dizileri.
+Karşılaştırmasının bir örneği true tutan türü *T* bağımsız değişken türleri kullanarak basit bir şekilde atmamalıdır olduğu *Args*, aksi takdirde false tutar. Tür *T* basit bir şekilde atmamalıdır olduğundan, değişken tanımını `T t(std::declval<Args>()...);` iyi biçimlendirilmemiş ve önemsiz olmayan bir işlem çağırmak için bilinen. Her ikisi de *T* içindeki tüm türler *Args* tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
 
 ## <a name="requirements"></a>Gereksinimler
 

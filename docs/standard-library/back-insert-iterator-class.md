@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efd633fb4617a5058afd9bd55b40ccb4fbcee06e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6830baf3d474b80f2e7906a7aadd27d2eee27f9a
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847692"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958626"
 ---
 # <a name="backinsertiterator-class"></a>back_insert_iterator Sınıfı
 
-Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin arka ucunun üzerine yazar ve bu nedenle C++ dizi kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. `back_insert_iterator` Sınıfı şablonlaştırılmış kapsayıcı türü.
+Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin arka ucunun üzerine yazar ve bu nedenle C++ dizi kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. `back_insert_iterator` Sınıfı kapsayıcının türü üzerinde şablonlaştırılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,42 +40,42 @@ class back_insert_iterator;
 
 ### <a name="parameters"></a>Parametreler
 
-`Container` Kapsayıcı hangi öğelerin geri türlerinin tarafından eklenecek bir `back_insert_iterator`.
+*Kapsayıcı* hangi öğelerin geri kapsayıcı türü olan tarafından ekleneceği bir `back_insert_iterator`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsayıcının itfa edilecek sabit sürede dizininin sonuna öğe eklemenin mümkün olduğu geri ekleme dizisinin gereksinimlerini karşılaması gerekir. C++ Standart Kitaplığı dizisi kapsayıcıları tarafından tanımlanan [deque sınıfı](../standard-library/deque-class.md), [sınıf listesi](../standard-library/list-class.md) ve [vector sınıfı](../standard-library/vector-class.md) gerekli sağlamak `push_back` üye işlevini ve Bu gereksinimleri karşılamak. Bu üç kapsayıcı yanı sıra dizeleri her ile kullanmak için uyarlanmış olabilir `back_insert_iterator`s. A `back_insert_iterator` her zaman kapsayıcısı ile başlatılması gerekir.
+Kapsayıcının itfa edilecek sabit sürede dizininin sonuna öğe eklemenin mümkün olduğu geri ekleme dizisinin gereksinimlerini karşılaması gerekir. C++ Standart Kitaplığı dizisi kapsayıcıları tarafından tanımlanan [deque sınıfı](../standard-library/deque-class.md), [list sınıfı](../standard-library/list-class.md) ve [vector sınıfı](../standard-library/vector-class.md) gerekli `push_back` üye işlevi ve Bu gereksinimleri karşılar. Bu üç kapsayıcının yanı sıra dizelerin her ile kullanılacak şekilde uyarlanabilir olabilir `back_insert_iterator`s. A `back_insert_iterator` her zaman kapsayıcısıyla birlikte başlatılmalıdır.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[back_insert_iterator](#back_insert_iterator)|Oluşturan bir `back_insert_iterator` bir kapsayıcıda son öğesinden sonra öğeleri ekler.|
+|[back_insert_iterator](#back_insert_iterator)|Oluşturur bir `back_insert_iterator` bir kapsayıcıdaki son öğeden sonra öğe ekler.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[container_type](#container_type)|İçin bir kapsayıcı sağlayan bir türü `back_insert_iterator`.|
-|[Başvuru](#reference)|İçin bir başvuru sağlayan bir türü `back_insert_iterator`.|
+|[container_type](#container_type)|İçin bir kapsayıcı sağlayan bir tür `back_insert_iterator`.|
+|[Başvuru](#reference)|İçin bir başvuru sağlayan bir tür `back_insert_iterator`.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç *](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `i`  =  `x` geri eklemek için.|
-|[operator ++](#op_add_add)|Artışlarla `back_insert_iterator` içine bir değer depolanmış sonraki konuma.|
-|[operator=](#op_eq)|Çıktı yineleyici ifade uygulamak için kullanılan atama işleci * `i`  =  `x` geri eklemek için.|
+|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma * `i`  =  `x` bir geri ekleme.|
+|[operator ++](#op_add_add)|Artışlarla `back_insert_iterator` sonraki konuma içine bir değer depolanabilir.|
+|[operator=](#op_eq)|Çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci * `i`  =  `x` bir geri ekleme.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi**: \<yineleyici >
+**Üst bilgi**: \<yineleyici >
 
 **Namespace:** std
 
 ## <a name="back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator
 
-Oluşturan bir `back_insert_iterator` bir kapsayıcıda son öğesinden sonra öğeleri ekler.
+Oluşturur bir `back_insert_iterator` bir kapsayıcıdaki son öğeden sonra öğe ekler.
 
 ```cpp
 explicit back_insert_iterator(Container& _Cont);
@@ -83,7 +83,7 @@ explicit back_insert_iterator(Container& _Cont);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Cont` Kapsayıcı, `back_insert_iterator` bir öğeye eklemektir.
+*_Cont* kapsayıcı, `back_insert_iterator` bir öğe eklemektir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -139,7 +139,7 @@ After the insertions, the vector vec is: ( 1 2 3 40 50 600 700 ).
 
 ## <a name="container_type"></a>  back_insert_iterator::container_type
 
-İçin bir kapsayıcı sağlayan bir türü `back_insert_iterator`.
+İçin bir kapsayıcı sağlayan bir tür `back_insert_iterator`.
 
 ```cpp
 typedef Container
@@ -148,7 +148,7 @@ container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür **kapsayıcı**.
+Şablon parametresi için bir eşanlamlı türüdür **kapsayıcı**.
 
 ### <a name="example"></a>Örnek
 
@@ -193,7 +193,7 @@ After the insertion, the vector is: ( 1 2 3 40 ).
 
 ## <a name="op_star"></a>  back_insert_iterator::operator*
 
-Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci \* *ı* = *x*.
+Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* *miyim* = *x*.
 
 ```cpp
 back_insert_iterator<Container>& operator*();
@@ -201,11 +201,11 @@ back_insert_iterator<Container>& operator*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcı arkasındaki eklenen öğesine başvuru.
+Kapsayıcı arkasına eklenen öğeye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıktı yineleyici ifade uygulamak için kullanılan  **\*Iter** = **değeri**. Varsa **Iter** öğenin bir sırada sonra adresleri yineleyici olan  **\*Iter** = **değeri** , öğenin değeri ile değiştirir ve desteklemez Dizideki öğelerin toplam sayısını değiştirin.
+Çıkış yineleyici ifadesini uygulamak için kullanılan  **\*Iter** = **değer**. Varsa **Iter** sonra bir dizisi içindeki bir öğeyi adresleyen bir yineleyici olduğunu  **\*Iter** = **değer** bu öğenin değeri ile değiştirir ve mevcut Dizideki öğelerin toplam sayısını değiştirin.
 
 ### <a name="example"></a>Örnek
 
@@ -253,7 +253,7 @@ After the insertions, the vector vec becomes: ( 1 2 3 10 20 ).
 
 ## <a name="op_add_add"></a>  back_insert_iterator::operator++
 
-Artışlarla `back_insert_iterator` içine bir değer depolanmış sonraki konuma.
+Artışlarla `back_insert_iterator` sonraki konuma içine bir değer depolanabilir.
 
 ```cpp
 back_insert_iterator<Container>& operator++();
@@ -262,11 +262,11 @@ back_insert_iterator<Container> operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `back_insert_iterator` içine bir değer depolanmış sonraki konumu adresleme.
+A `back_insert_iterator` içine bir değer depolanabilir sonraki konumu ele alan.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Preincrementation ve postincrementation işleçleri aynı sonucu döndürür.
+Preincrementation hem postincrementation işleçler aynı sonucu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -314,7 +314,7 @@ After the insertions, the vector vec becomes: ( 10 20 30 40 ).
 
 ## <a name="op_eq"></a>  back_insert_iterator::operator=
 
-Ekler veya arka uç kapsayıcı üzerine bir değer iter.
+Ekler veya bir kapsayıcının arka uç üzerine bir değer gönderir.
 
 ```cpp
 back_insert_iterator<Container>& operator=(typename Container::const_reference val);
@@ -323,21 +323,21 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 
 ### <a name="parameters"></a>Parametreler
 
-`val` Kapsayıcıya eklenecek değer.
+*VAL* kapsayıcıya sokulmasına değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcı arkasındaki eklenen son öğe başvuru.
+Kapsayıcı arkasına eklenen son öğeye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İlk üye işleci değerlendirir `Container.push_back( val)`,
 
-ardından döndürür `*this`. İkinci üye işleci değerlendirir
+Ardından döndürür `*this`. İkinci üye işleci değerlendirir
 
 `container->push_back((typename Container::value_type&&)val)`,
 
-ardından döndürür `*this`.
+Ardından döndürür `*this`.
 
 ### <a name="example"></a>Örnek
 
@@ -380,7 +380,7 @@ int main( )
 
 ## <a name="reference"></a>  back_insert_iterator::reference
 
-İçin bir başvuru sağlayan bir türü `back_insert_iterator`.
+İçin bir başvuru sağlayan bir tür `back_insert_iterator`.
 
 ```cpp
 typedef typename Container::reference reference;
@@ -388,7 +388,7 @@ typedef typename Container::reference reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili kapsayıcı tarafından denetlenen dizi bir öğe için bir başvuru türü açıklanmaktadır.
+İlişkili kapsayıcı tarafından denetlenen dizinin bir öğesine bir başvuru türü açıklar.
 
 ### <a name="example"></a>Örnek
 

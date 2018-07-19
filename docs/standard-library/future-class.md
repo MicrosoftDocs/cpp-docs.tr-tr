@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::future [C++], wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31490578b1f1d9b6028b3fa2cdcc5769d3a53935
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 77b3c96d2c579b9fa3081ad7223ac254a727a88b
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847565"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956644"
 ---
 # <a name="future-class"></a>future Sınıfı
 
@@ -50,7 +50,7 @@ class future;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her standart *zaman uyumsuz sağlayıcısı* türü olan bir örnek oluşturma bu şablonu bir nesne döndürür. A `future` nesne ile ilişkili zaman uyumsuz sağlayıcısına yalnızca erişim sağlar. Aynı zaman uyumsuz sağlayıcı ile ilişkili birden çok zaman uyumsuz dönüş nesneleri ihtiyacınız varsa, kopyalama `future` nesnesine bir [shared_future](../standard-library/shared-future-class.md) nesnesi.
+Her standart *zaman uyumsuz sağlayıcıyı* Bu şablon örneği türü olan bir nesne döndürür. A `future` nesnesi ile ilişkili zaman uyumsuz sağlayıcıyı tek erişim sağlar. Aynı zaman uyumsuz sağlayıcı ile ilişkili birden çok zaman uyumsuz dönüş nesneleri gerekiyorsa, kopyalama `future` nesnesini bir [shared_future](../standard-library/shared-future-class.md) nesne.
 
 ## <a name="members"></a>Üyeler
 
@@ -58,34 +58,34 @@ Her standart *zaman uyumsuz sağlayıcısı* türü olan bir örnek oluşturma b
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Gelecek](#future)|Oluşturan bir `future` nesnesi.|
+|[Gelecekte](#future)|Oluşturur bir `future` nesne.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get](#get)|İlişkili zaman uyumsuz durumunda depolanan sonucu alır.|
-|[Paylaş](#share)|Nesnesine dönüştürür bir `shared_future`.|
+|[get](#get)|İlişkili zaman uyumsuz durumu içerisinde saklanan sonucu alır.|
+|[Paylaş](#share)|Bir nesneye dönüştürür bir `shared_future`.|
 |[valid](#valid)|Nesne boş değil olup olmadığını belirtir.|
-|[bekleme](#wait)|Zaman uyumsuz işlemin ilişkili durumu hazır olana kadar geçerli iş parçacığının engeller.|
-|[wait_for](#wait_for)|İlişkili zaman uyumsuz durum kadar blokları hazır veya belirtilen zamana kadar geçen.|
-|[wait_until](#wait_until)|Blokları ilişkili zaman uyumsuz durum kadar sürede hazır veya belirli bir noktaya kadar olur.|
+|[bekleme](#wait)|İlişkili zaman uyumsuz durum hazır olana kadar geçerli iş parçacığını engeller.|
+|[wait_for](#wait_for)|Blokları kadar ilişkili zaman uyumsuz durum hazır olana veya belirtilen zamana kadar geçen.|
+|[wait_until](#wait_until)|Hazır veya belirli bir noktaya kadar zamanında ilişkili zaman uyumsuz duruma kadar engeller.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Future::operator =](#op_eq)|Zaman uyumsuz işlemin ilişkili durumu belirtilen bir nesneden aktarır.|
+|[Future::operator =](#op_eq)|İlişkili zaman uyumsuz duruma, belirtilen bir nesneden aktarır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<gelecekteki >
+**Başlık:** \<gelecek >
 
 **Namespace:** std
 
 ## <a name="future"></a>  Future::Future Oluşturucusu
 
-Oluşturan bir `future` nesnesi.
+Oluşturur bir `future` nesne.
 
 ```cpp
 future() noexcept;
@@ -94,17 +94,17 @@ future(future&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` A `future` nesnesi.
+*Diğer* A `future` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucusu yapıları bir `future` zaman uyumsuz durum ilişkili hiç nesnesi.
+İlk Oluşturucu yapıları bir `future` ilişkilendirilmiş zaman uyumsuz duruma sahip olmayan bir nesne.
 
-İkinci oluşturucu yapıları bir `future` nesne ve ilişkili zaman uyumsuz durumundan aktarımı `Other`. `Other` artık ilişkili bir zaman uyumsuz durum yok.
+İkinci oluşturucu yapıları bir `future` nesnesini ve ilişkili zaman uyumsuz durumu aktarır *diğer*. *Diğer* artık bir ilişkili zaman uyumsuz duruma sahip değil.
 
 ## <a name="get"></a>  Future::get
 
-İlişkili zaman uyumsuz durumunda depolanan sonucu alır.
+İlişkili zaman uyumsuz durumu içerisinde saklanan sonucu alır.
 
 ```cpp
 Ty get();
@@ -112,21 +112,21 @@ Ty get();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonuç bir özel durum ise, yöntem, yeniden oluşturur. Aksi takdirde, sonuç döndürülür.
+Sonuç bir özel durum ise, yöntem, yeniden oluşturur. Aksi halde, sonuç döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonuç almadan önce ilişkili zaman uyumsuz durumu hazır olana kadar bu yöntem geçerli iş parçacığının engeller.
+Sonuç almadan önce ilişkili zaman uyumsuz durum hazır olana kadar bu yöntem geçerli iş parçacığını engeller.
 
-Kısmi uzmanlığı için `future<Ty&>`, saklı etkili bir şekilde dönüş değeri olarak zaman uyumsuz sağlayıcısına geçirilen nesneye bir başvurusu değerdir.
+Kısmi özelleştirmesi için `future<Ty&>`, saklanan değer etkili bir şekilde bir dönüş değeri olarak zaman uyumsuz sağlayıcısına geçirilen nesne başvurudur.
 
-Özelleştirme için depolanan değer var olduğundan `future<void>`, yöntem `void`.
+Özelleştirme için kayıtlı hiçbir değer var olduğundan `future<void>`, yöntem döndürür **void**.
 
-Diğer özelleştirmeleri, yöntemin dönüş değeri saklı değerinden taşır. Bu nedenle, bu yöntemi yalnızca bir kez çağırın.
+Diğer uzmanlıkları içinde yöntemin dönüş değeri depolanan değerden taşır. Bu nedenle, yalnızca bir kez bu yöntemi çağırın.
 
 ## <a name="op_eq"></a>  Future::operator =
 
-İlişkili bir zaman uyumsuz durumu belirtilen bir nesneden aktarır.
+Belirtilen bir nesneden bir ilişkili zaman uyumsuz durumu aktarır.
 
 ```cpp
 future& operator=(future&& Right) noexcept;
@@ -134,7 +134,7 @@ future& operator=(future&& Right) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Right` A `future` nesnesi.
+*Sağ* A `future` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -142,11 +142,11 @@ future& operator=(future&& Right) noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aktarım sonra `Right` ilişkili bir zaman uyumsuz durum artık sahip değil.
+Aktarım sonra *sağ* artık bir ilişkili zaman uyumsuz duruma sahip değil.
 
 ## <a name="share"></a>  Future::share
 
-Nesnesine dönüştürür bir [shared_future](../standard-library/shared-future-class.md) nesnesi.
+Bir nesneye dönüştürür bir [shared_future](../standard-library/shared-future-class.md) nesne.
 
 ```cpp
 shared_future<Ty> share();
@@ -158,7 +158,7 @@ shared_future<Ty> share();
 
 ## <a name="valid"></a>  Future::valid
 
-Nesnenin ilişkili bir zaman uyumsuz durum olup olmadığını belirtir.
+Nesnenin ilişkili bir zaman uyumsuz duruma sahip olup olmadığını belirtir.
 
 ```cpp
 bool valid() noexcept;
@@ -166,11 +166,11 @@ bool valid() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` nesnenin ilişkili bir zaman uyumsuz durum varsa; Aksi takdirde `false`.
+**doğru** ilişkili zaman uyumsuz durumu; nesne varsa, aksi takdirde, **false**.
 
 ## <a name="wait"></a>  Future::wait
 
-İlişkili zaman uyumsuz durum olana kadar geçerli iş parçacığının engeller *hazır*.
+İlişkili zaman uyumsuz duruma gelene kadar geçerli iş parçacığını engeller *hazır*.
 
 ```cpp
 void wait() const;
@@ -178,11 +178,11 @@ void wait() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili bir zaman uyumsuz durum *hazır* zaman uyumsuz sağlayıcısını yalnızca varsa veya dönüş değeri depolanan bir özel durum depolanır.
+İlişkili bir zaman uyumsuz durumu *hazır* yalnızca zaman uyumsuz sağlayıcısını bir dönüş değeri depolanan veya bir özel durum depolanan varsa.
 
 ## <a name="wait_for"></a>  Future::wait_for
 
-İlişkili zaman uyumsuz durum olana kadar geçerli iş parçacığının engeller *hazır* veya belirli bir zaman aralığı sona ermeden.
+İlişkili zaman uyumsuz duruma gelene kadar geçerli iş parçacığını engeller *hazır* veya belirtilen zaman aralığı sona ermeden.
 
 ```cpp
 template <class Rep, class Period>
@@ -191,19 +191,19 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`Rel_time` A [chrono::duration](../standard-library/duration-class.md) en büyük zaman aralığını belirtir nesnesi, iş parçacığı engeller.
+*Rel_time* A [chrono::duration](../standard-library/duration-class.md) maksimum zaman aralığını belirten bir nesne, iş parçacığını engeller.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [future_status](../standard-library/future-enums.md#future_status) döndürmek için nedenini gösterir.
+A [future_status](../standard-library/future-enums.md#future_status) döndüren nedenini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman uyumsuz sağlayıcısını yalnızca varsa veya dönüş değeri depolanan bir özel durum depolanan ilişkili bir zaman uyumsuz durum hazırdır.
+Zaman uyumsuz sağlayıcısını yalnızca varsa veya dönüş değeri depolanan bir özel durum depolanan bir ilişkili zaman uyumsuz durum hazır olur.
 
 ## <a name="wait_until"></a>  Future::wait_until
 
-İlişkili zaman uyumsuz durum olana kadar geçerli iş parçacığının engeller *hazır* veya belirtilen zaman noktası kadar sonra.
+İlişkili zaman uyumsuz duruma gelene kadar geçerli iş parçacığını engeller *hazır* veya belirtilen zaman noktası kadar sonra.
 
 ```cpp
 template <class Clock, class Duration>
@@ -212,17 +212,17 @@ future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) co
 
 ### <a name="parameters"></a>Parametreler
 
-`Abs_time` A [chrono::time_point](../standard-library/time-point-class.md) nesne geçmesi iş parçacığı engellemesini süreyi belirtir.
+*Abs_time* A [chrono::time_point](../standard-library/time-point-class.md) nesnesini geçmesi iş parçacığını engellemesini bir süreyi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [future_status](../standard-library/future-enums.md#future_status) döndürmek için nedenini gösterir.
+A [future_status](../standard-library/future-enums.md#future_status) döndüren nedenini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili bir zaman uyumsuz durum *hazır* zaman uyumsuz sağlayıcısını yalnızca varsa veya dönüş değeri depolanan bir özel durum depolanır.
+İlişkili bir zaman uyumsuz durumu *hazır* yalnızca zaman uyumsuz sağlayıcısını bir dönüş değeri depolanan veya bir özel durum depolanan varsa.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<sonraki >](../standard-library/future.md)<br/>
+[\<gelecek >](../standard-library/future.md)<br/>

@@ -30,15 +30,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9b1728958d8560362f9b330c3ba570e933d824d
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 164e54ccbd9365e7e4fb2c1989f84891e5813c2f
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040814"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849179"
 ---
 # <a name="cmfcpropertygridcolorproperty-class"></a>CMFCPropertyGridColorProperty sınıfı
-`CMFCPropertyGridColorProperty` Sınıfı, bir renk seçimi iletişim kutusunu açar bir özelliği liste denetim öğesi destekler.  
+`CMFCPropertyGridColorProperty` Sınıfı, bir renk seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,31 +52,31 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty](#cmfcpropertygridcolorproperty)|Oluşturan bir `CMFCPropertyGridColorProperty` nesnesi.|  
-|`CMFCPropertyGridColorProperty::~CMFCPropertyGridColorProperty`|Yok Edicisi.|  
+|[CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty](#cmfcpropertygridcolorproperty)|Oluşturur bir `CMFCPropertyGridColorProperty` nesne.|  
+|`CMFCPropertyGridColorProperty::~CMFCPropertyGridColorProperty`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPropertyGridColorProperty::EnableAutomaticButton](#enableautomaticbutton)|Etkinleştirir *otomatik* renk seçimi iletişim kutusunu düğmesinde. (Standart otomatik düğme etiketli **otomatik**.)|  
-|[CMFCPropertyGridColorProperty::EnableOtherButton](#enableotherbutton)|Etkinleştirir *diğer* renk seçimi iletişim kutusunu düğmesinde. (Standart diğer düğme etiketini **daha renkleri**.)|  
-|`CMFCPropertyGridColorProperty::FormatProperty`|Bir özellik değeri metin gösterimini biçimlendirir. (Geçersiz kılmaları [CMFCPropertyGridProperty::FormatProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#formatproperty).)|  
-|[CMFCPropertyGridColorProperty::GetColor](#getcolor)|Özelliği geçerli rengi alır.|  
-|`CMFCPropertyGridColorProperty::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
-|`CMFCPropertyGridColorProperty::OnClickButton`|Kullanıcı bir özelliğinde yer alan bir düğmesini tıklattığında çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|  
-|`CMFCPropertyGridColorProperty::OnDrawValue`|Özellik değerini görüntülemek için çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnDrawValue](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawvalue).)|  
-|`CMFCPropertyGridColorProperty::OnEdit`|Kullanıcı hakkında bir özellik değerini değiştirmek için olduğunda çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnEdit](../../mfc/reference/cmfcpropertygridproperty-class.md#onedit).)|  
-|`CMFCPropertyGridColorProperty::OnUpdateValue`|Düzenlenebilir bir özellik değeri değiştiğinde çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnUpdateValue](../../mfc/reference/cmfcpropertygridproperty-class.md#onupdatevalue).)|  
-|[CMFCPropertyGridColorProperty::SetColor](#setcolor)|Özelliği için yeni bir renk ayarlar.|  
-|[CMFCPropertyGridColorProperty::SetColumnsNumber](#setcolumnsnumber)|Sütun sayısı geçerli renk özellik kılavuzunda belirtir.|  
-|[CMFCPropertyGridColorProperty::SetOriginalValue](#setoriginalvalue)|Düzenlenebilir bir özelliğinin özgün değeri ayarlar.|  
+|[CMFCPropertyGridColorProperty::EnableAutomaticButton](#enableautomaticbutton)|Sağlar *otomatik* renk seçimi iletişim kutusunu düğmesi. (Standart otomatik düğme **otomatik**.)|  
+|[CMFCPropertyGridColorProperty::EnableOtherButton](#enableotherbutton)|Sağlar *diğer* renk seçimi iletişim kutusunu düğmesi. (Standart diğer düğme **daha fazla renk**.)|  
+|`CMFCPropertyGridColorProperty::FormatProperty`|Özellik değerinin metin temsilini biçimlendirir. (Geçersiz kılmaları [CMFCPropertyGridProperty::FormatProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#formatproperty).)|  
+|[CMFCPropertyGridColorProperty::GetColor](#getcolor)|Geçerli özelliğin rengini alır.|  
+|`CMFCPropertyGridColorProperty::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
+|`CMFCPropertyGridColorProperty::OnClickButton`|Kullanıcı bir özelliğinde bulunan bir düğmeye tıkladığında framework tarafından çağırılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|  
+|`CMFCPropertyGridColorProperty::OnDrawValue`|Özellik değeri görüntülemek için framework tarafından çağırılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnDrawValue](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawvalue).)|  
+|`CMFCPropertyGridColorProperty::OnEdit`|Kullanıcı yaklaşık bir özellik değerini değiştirmek için çerçeve tarafından çağrılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnEdit](../../mfc/reference/cmfcpropertygridproperty-class.md#onedit).)|  
+|`CMFCPropertyGridColorProperty::OnUpdateValue`|Düzenlenebilir bir özellik değeri değiştiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnUpdateValue](../../mfc/reference/cmfcpropertygridproperty-class.md#onupdatevalue).)|  
+|[CMFCPropertyGridColorProperty::SetColor](#setcolor)|Yeni bir özelliğin rengini ayarlar.|  
+|[CMFCPropertyGridColorProperty::SetColumnsNumber](#setcolumnsnumber)|Geçerli renk özellik kılavuzunda sütun sayısını belirtir.|  
+|[CMFCPropertyGridColorProperty::SetOriginalValue](#setoriginalvalue)|Özgün düzenlenebilir bir özelliğin değerini ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CMFCPropertyGridColorProperty` Sınıfı, bir özellik listesi denetimine eklenebilir bir renk özelliğini destekler. Daha fazla bilgi için bkz: [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md).  
+ `CMFCPropertyGridColorProperty` Sınıfı için bir özellik liste denetiminin eklenebilir bir renk özelliğini destekler. Daha fazla bilgi için [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCPropertyGridColorProperty` sınıfı ve çeşitli yöntemleri kullanarak bu nesneyi yapılandırma `CMFCPropertyGridColorProperty` sınıfı. Kodu otomatik ve diğer düğmeleri etkinleştirme ve rengi ve sütun numarası nasıl ayarlanacağı açıklanmaktadır. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCPropertyGridColorProperty` sınıfı ve çeşitli yöntemleri kullanarak bu nesneyi yapılandırma `CMFCPropertyGridColorProperty` sınıfı. Kod, otomatik ve diğer düğmeleri etkinleştirme ve renk ve sütun sayısını nasıl ayarlanacağı açıklanmaktadır. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#13](../../mfc/reference/codesnippet/cpp/cmfcpropertygridcolorproperty-class_1.cpp)]  
   
@@ -91,7 +91,7 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
  **Başlık:** afxpropertygridctrl.h  
   
 ##  <a name="cmfcpropertygridcolorproperty"></a>  CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty  
- Oluşturan bir `CMFCPropertyGridColorProperty` nesnesi.  
+ Oluşturur bir `CMFCPropertyGridColorProperty` nesne.  
   
 ```  
 CMFCPropertyGridColorProperty(
@@ -110,16 +110,16 @@ CMFCPropertyGridColorProperty(
  Özelliğin renk değeri.  
   
  [in] *pPalette*  
- Renk paletini işaretçi. Varsayılan değer `NULL` şeklindedir.  
+ Renk paleti işaretçisi. Varsayılan değer NULL olur.  
   
  [in] *lpszDescr*  
- Özellik açıklaması. Varsayılan değer `NULL` şeklindedir.  
+ Özellik açıklaması. Varsayılan değer NULL olur.  
   
  [in] *dwData*  
- Bir tamsayı ya da özelliği ile ilişkili diğer veri için bir işaretçi gibi uygulamaya özgü verileri. Varsayılan değer 0’dır.  
+ Uygulamaya özgü verileri, bir tamsayı ya da özellikle ilişkili diğer veri işaretçisi gibi. Varsayılan değer 0’dır.  
   
 ##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton  
- Etkinleştirir *otomatik* renk seçimi iletişim kutusunu düğmesinde. (Standart otomatik düğme etiketli **otomatik**.)  
+ Sağlar *otomatik* renk seçimi iletişim kutusunu düğmesi. (Standart otomatik düğme **otomatik**.)  
   
 ```  
 void EnableAutomaticButton(
@@ -130,18 +130,18 @@ void EnableAutomaticButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszLabel*  
- Otomatik düğmesinin etiket metni.  
+ Otomatik düğmenin etiket metni.  
   
  [in] *colorAutomatic*  
  Otomatik (varsayılan) renk RGB renk değeri.  
   
  [in] *bSistemlerde*  
- `TRUE` Otomatik düğmesini etkinleştirmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ Otomatik düğmenin etkinleştirmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="enableotherbutton"></a>  CMFCPropertyGridColorProperty::EnableOtherButton  
- Etkinleştirir *diğer* renk seçimi iletişim kutusunu düğmesinde. (Standart diğer düğme etiketini **daha renkleri**.)  
+ Sağlar *diğer* renk seçimi iletişim kutusunu düğmesi. (Standart diğer düğme **daha fazla renk**.)  
   
 ```  
 void EnableOtherButton(
@@ -152,30 +152,30 @@ void EnableOtherButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszLabel*  
- Diğer düğmesinin etiket metni.  
+ Diğer düğmenin etiket metni.  
   
  [in] *bAltColorDlg*  
- `TRUE` Görüntülenecek `CMFCColorDialog` iletişim kutusu; `FALSE` standart renk seçimi iletişim kutusunu görüntüleyin. Varsayılan değer `TRUE` şeklindedir.  
+ Görüntülemek true `CMFCColorDialog` ; iletişim kutusu Standart renk seçimi iletişim kutusunu görüntülemek için FALSE. Varsayılan değer True'dur.  
   
  [in] *bSistemlerde*  
- `TRUE` diğer düğmesini görüntülemek için; Aksi takdirde `FALSE`.  Varsayılan değer `TRUE` şeklindedir.  
+ Bir düğme görüntülemek için TRUE; Aksi takdirde FALSE.  Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getcolor"></a>  CMFCPropertyGridColorProperty::GetColor  
- Özelliği geçerli rengi alır.  
+ Geçerli özelliğin rengini alır.  
   
 ```  
 COLORREF GetColor() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- RGB renk değeri.  
+ Bir RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setcolor"></a>  CMFCPropertyGridColorProperty::SetColor  
- Özelliği için yeni bir renk ayarlar.  
+ Yeni bir özelliğin rengini ayarlar.  
   
 ```  
 void SetColor(COLORREF color);
@@ -183,12 +183,12 @@ void SetColor(COLORREF color);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *rengi*  
- RGB renk değeri.  
+ Bir RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setcolumnsnumber"></a>  CMFCPropertyGridColorProperty::SetColumnsNumber  
- Sütun sayısı geçerli renk özellik kılavuzunda belirtir.  
+ Geçerli renk özellik kılavuzunda sütun sayısını belirtir.  
   
 ```  
 void SetColumnsNumber(int nColumnsNumber);
@@ -196,13 +196,13 @@ void SetColumnsNumber(int nColumnsNumber);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nColumnsNumber*  
- Renk özellik kılavuzunda sütun tercih edilen sayısı.  
+ Tercih edilen renk özellik kılavuzunda sütun sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem değerini ayarlar `m_nColumnsNumber` veri üyesi korumalı.  
   
 ##  <a name="setoriginalvalue"></a>  CMFCPropertyGridColorProperty::SetOriginalValue  
- Düzenlenebilir bir özelliğinin özgün değeri ayarlar.  
+ Özgün düzenlenebilir bir özelliğin değerini ayarlar.  
   
 ```  
 virtual void SetOriginalValue(const COleVariant& varValue);
@@ -213,7 +213,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
  Bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CMFCPropertyGridProperty::ResetOriginalValue](../../mfc/reference/cmfcpropertygridproperty-class.md#resetoriginalvalue) düzenlenen özelliğinin özgün değeri sıfırlama yöntemi.  
+ Kullanım [CMFCPropertyGridProperty::ResetOriginalValue](../../mfc/reference/cmfcpropertygridproperty-class.md#resetoriginalvalue) düzenlenmiş bir özelliğin özgün değeri sıfırlamak için yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

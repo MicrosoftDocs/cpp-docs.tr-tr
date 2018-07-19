@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eab07f19f9d5025eba1ffe82c7e23066683b6267
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1de239e408adf4f66e7868ce9b91d7da574fffde
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852985"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958041"
 ---
 # <a name="messagesbyname-class"></a>messages_byname Sınıfı
 
-Türetilen Şablon sınıfı yerelleştirilmiş iletileri alma etkinleştirme belirli bir yerel bir ileti modeli kullanılabileceği bir nesne tanımlar.
+Türetilmiş bir şablon sınıfı yerelleştirilmiş iletilerin alınmasını sağlayan verili bir yerel ayar, bir ileti modeli olarak hizmet verebilen bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,13 +49,13 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-`_Locname` Adlandırılmış bir yerel ayar.
+*_Locname* adlandırılmış bir yerel ayar.
 
-`_Refs` Bir başlangıç başvuru sayısı.
+*_Refs* ilk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışını adlandırılmış bölgeye göre belirlenir `_Locname`. Her oluşturucu temel nesnesiyle başlatır [iletileri](../standard-library/messages-class.md#messages)\<CharType > ( `_Refs`).
+Davranışını adlandırılmış yerel ayar tarafından belirlenir *_Locname*. Her Oluşturucu, temel nesnesiyle başlatır [iletileri](../standard-library/messages-class.md#messages)\<CharType > ( `_Refs`).
 
 ## <a name="requirements"></a>Gereksinimler
 

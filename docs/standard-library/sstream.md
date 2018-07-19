@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ee9beb54dd241c6987b79db238f033f3d169497
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8801c41b23ab2c33e4c4e2df9cde8155c1eefafb
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861681"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957774"
 ---
 # <a name="ltsstreamgt"></a>&lt;sstream&gt;
 
-Ayrılmış bir dizi nesnesi içinde depolanan sıraları iostreams işlemlerini destekleyen birkaç şablon sınıfları tanımlar. Bu tür dizileri şablon sınıfın nesnelerini gelen ve giden kolayca dönüştürülür [basic_string](../standard-library/basic-string-class.md).
+Ayrılan dizi nesnesinde depolanan dizileri iostreams işlemleri destekleyen çeşitli şablon sınıfları tanımlar. Tür dizilerini kolayca şablon sınıfının nesneleri gelen ve giden dönüştürülür [basic_string](../standard-library/basic-string-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,40 +82,40 @@ void swap (
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`left`|Başvuru bir `sstream` nesnesi.|
-|`right`|Başvuru bir `sstream` nesnesi.|
+|*Sol*|Başvuru bir `sstream` nesne.|
+|*sağ*|Başvuru bir `sstream` nesne.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne türü `char *` işlevleri kullanabilirsiniz [ \<strstream >](../standard-library/strstream.md) akış. Ancak, \<strstream > kullanım dışıdır ve kullanılmasını \<sstream > önerilir.
+Türündeki nesneler `char *` işlevleri kullanabilirsiniz [ \<strstream >](../standard-library/strstream.md) akış. Ancak, \<strstream > kullanım dışıdır ve kullanımını \<sstream > önerilir.
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Bir türü oluşturur `basic_istringstream` üzerinde özel bir `char` şablon parametresi.|
-|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Bir türü oluşturur `basic_ostringstream` üzerinde özel bir `char` şablon parametresi.|
-|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Bir türü oluşturur `basic_stringbuf` üzerinde özel bir `char` şablon parametresi.|
-|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Bir türü oluşturur `basic_stringstream` üzerinde özel bir `char` şablon parametresi.|
-|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Bir türü oluşturur `basic_istringstream` üzerinde özel bir `wchar_t` şablon parametresi.|
-|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Bir türü oluşturur `basic_ostringstream` üzerinde özel bir `wchar_t` şablon parametresi.|
-|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Bir türü oluşturur `basic_stringbuf` üzerinde özel bir `wchar_t` şablon parametresi.|
-|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Bir türü oluşturur `basic_stringstream` üzerinde özel bir `wchar_t` şablon parametresi.|
+|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Bir türü oluşturur `basic_istringstream` üzerinde özel bir **char** şablon parametresi.|
+|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Bir türü oluşturur `basic_ostringstream` üzerinde özel bir **char** şablon parametresi.|
+|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Bir türü oluşturur `basic_stringbuf` üzerinde özel bir **char** şablon parametresi.|
+|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Bir türü oluşturur `basic_stringstream` üzerinde özel bir **char** şablon parametresi.|
+|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Bir türü oluşturur `basic_istringstream` üzerinde özel bir **wchar_t** şablon parametresi.|
+|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Bir türü oluşturur `basic_ostringstream` üzerinde özel bir **wchar_t** şablon parametresi.|
+|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Bir türü oluşturur `basic_stringbuf` üzerinde özel bir **wchar_t** şablon parametresi.|
+|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Bir türü oluşturur `basic_stringstream` üzerinde özel bir **wchar_t** şablon parametresi.|
 
 ### <a name="manipulators"></a>Manipülatörleri
 
 |||
 |-|-|
-|[Değiştirme](../standard-library/sstream-functions.md#sstream_swap)|İkisi arasındaki değerleri alış verişleri `sstream` nesneleri.|
+|[değiştirme](../standard-library/sstream-functions.md#sstream_swap)|İki değeri birbiriyle değiştirir `sstream` nesneleri.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|Türündeki öğeler iletimini denetleyen bir Akış Arabellek açıklar **Elem**, olan karakter nitelikler sınıfı tarafından belirlenir **Tr**, gelen ve giden bir dizi nesnesi içinde depolanan öğeleri dizisi.|
-|[basic_istringstream](../standard-library/basic-istringstream-class.md)|Ayıklama öğelerinin denetleyen bir nesne ve akış arabellek sınıfının kodlanmış nesnelerden açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türündeki öğeler ile **Elem**, olan karakter nitelikler sınıfı tarafından belirlenir **Tr**, ve öğeleri sınıfı bir ayırıcı tarafından ayrılan `Alloc`.|
-|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|Öğeler ekleme denetimlerini bir nesne ve kodlanmış nesneleri bir sınıf akışı arabelleğe açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türündeki öğeler ile **Elem**, olan karakter nitelikler sınıfı tarafından belirlenir **Tr**, ve öğeleri sınıfı bir ayırıcı tarafından ayrılan `Alloc`.|
-|[basic_stringstream](../standard-library/basic-stringstream-class.md)|Ekleme ve çıkarma öğelerinin denetleyen bir nesne sınıfının bir Akış Arabellek kullanarak ve kodlanmış nesneleri açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türündeki öğeler ile **Elem**, olan karakter nitelikler sınıfı tarafından belirlenir **Tr**, ve öğeleri bir sınıf ayırıcıtarafındanayrılan`Alloc`.|
+|[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|Türünde öğeler aktarımını denetleyen bir akış arabelleğinin açıklar `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, için ve bir dizi nesnesinde saklanan öğe dizisi.|
+|[basic_istringstream](../standard-library/basic-istringstream-class.md)|Öğelerin ayıklama denetleyen bir nesne ve bir akış arabelleğinin sınıfın kodlanmış nesnelerden açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, ve öğeleri bir sınıf ayırıcısı tarafından ayrılan `Alloc`.|
+|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|Sınıfı bir akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, ve öğeleri bir sınıf ayırıcısı tarafından ayrılan `Alloc`.|
+|[basic_stringstream](../standard-library/basic-stringstream-class.md)|Ekleme ve çıkarma öğelerin denetleyen bir nesne ve bir akış arabelleğinin sınıfı kullanarak kodlanmış nesne açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, ve öğeleri bir sınıf ayırıcısı tarafından ayrılan `Alloc`.|
 
 ## <a name="requirements"></a>Gereksinimler
 

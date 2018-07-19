@@ -16,25 +16,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d59d0bfc75f654cd9f8f15ff851ad42a619e271f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bf76d8f7bb86bf3325a072df80a45e2f0a3ad985
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370102"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338904"
 ---
 # <a name="how-to-use-the-message-map-cross-reference"></a>Nasıl yapılır: İleti Eşleme Çapraz Başvurusunu Kullanma
-Etiketli girdileri \<memberFxn >, kendi üye işlevi türetilmiş için yazma [CWnd](../../mfc/reference/cwnd-class.md) sınıfı. İşlevinizi istediğiniz herhangi bir ad verin. Gibi diğer işlevleri `OnActivate`, sınıfının üye işlevleri `CWnd`. Çağırdıysanız, iletiyi geçirirler `DefWindowProc` Windows işlevi. Windows bildirim iletilerini işlemek için karşılık gelen geçersiz kılma `CWnd` türetilmiş sınıfınızda işlevi. İşlevinizi temel sınıfı izin vermek için taban sınıf içinde geçersiz kılınan işlevi çağırmalıdır ve Windows iletisine yanıt.  
+Etiketli girdileri \<memberFxn >, kendi üye işlevi için türetilmiş yazma [CWnd](../../mfc/reference/cwnd-class.md) sınıfı. İşlevinizi istediğiniz herhangi bir ad verin. Gibi diğer işlevleri `OnActivate`, sınıfın üye işlevleri `CWnd`. Çağrılırsa, bunlar iletiye geçirmek `DefWindowProc` Windows işlevi. Windows bildirim iletilerini işlemek için karşılık gelen geçersiz kılma `CWnd` türetilmiş sınıfınızın bir işlevde. İşlevinizi geçersiz kılınmış işlev temel sınıf izin vermek için temel sınıfta çağırmalıdır ve Windows iletiye yanıt vermek.  
   
- Her durumda, işlev prototipi koyun `CWnd`-türetilmiş sınıf üstbilgi ve kod gösterildiği gibi ileti eşleme girişi.  
+ Her durumda, işlev prototipi koymak `CWnd`-türetilmiş sınıf üstbilgi ve kod gösterildiği ileti eşleme girişi.  
   
  Aşağıdaki terimler kullanılır:  
   
 |Terim|Tanım|  
 |----------|----------------|  
-|kimlik|Herhangi bir kullanıcı tarafından tanımlanan menü öğesi kimliği (**WM_COMMAND** iletileri) veya Kimliğine (alt pencere bildirim iletilerini) denetim.|  
-|"iletisi" ve "wNotifyCode"|Windows, WINDOWS tanımlanan kimlikleri iletisi. H.|  
-|nMessageVariable|Dönüş değerini içeren bir değişkeni adını **RegisterWindowMessage** Windows işlevi.|  
+|kimlik|Tüm kullanıcı tanımlı bir menü öğesi kimliği (WM_COMMAND iletileri) veya denetim kimliği (alt pencere bildirim iletisi).|  
+|"ileti" ve "wNotifyCode"|Windows, WİNDOWS'da tanımlandığı gibi kimlikleri ileti. H|  
+|nMessageVariable|Dönüş değeri içeren değişkenin adını `RegisterWindowMessage` Windows işlevi.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)

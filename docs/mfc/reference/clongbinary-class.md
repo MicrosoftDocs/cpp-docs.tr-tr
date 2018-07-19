@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7030fdcb59166c0e70a7b2c2471273c913fe459
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b75016c6c783ae19d8e0f6739adaa34b8da977db
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368026"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338443"
 ---
 # <a name="clongbinary-class"></a>CLongBinary sınıfı
-Bir veritabanındaki (genellikle BLOB veya "ikili büyük nesneler" olarak adlandırılır) çok büyük ikili veri nesneleri ile çalışma basitleştirir.  
+Veritabanındaki (genellikle BLOB veya "büyük ikili nesneler" olarak adlandırılır) çok büyük ikili veri nesnelerle çalışmayı kolaylaştırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,26 +42,26 @@ class CLongBinary : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CLongBinary::CLongBinary](#clongbinary)|Oluşturan bir `CLongBinary` nesnesi.|  
+|[CLongBinary::CLongBinary](#clongbinary)|Oluşturur bir `CLongBinary` nesne.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CLongBinary::m_dwDataLength](#m_dwdatalength)|Gerçek boyut, tanıtıcı depolanır veri nesnesinin bayt içeren `m_hData`.|  
-|[CLongBinary::m_hData](#m_hdata)|Bir Windows içeren `HGLOBAL` işlemek için gerçek Resim nesnesi.|  
+|[CLongBinary::m_dwDataLength](#m_dwdatalength)|Gerçek boyut, tanıtıcı depolanan veri nesnesinin bayt cinsinden içeren `m_hData`.|  
+|[CLongBinary::m_hData](#m_hdata)|Gerçek görüntü nesnesi için bir Windows HGLOBAL tanıtıcı içerir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Örneğin, bir SQL tablosuna bir kayıt alanda bir resmi temsil eden bir bit eşlem içerebilir. A `CLongBinary` nesne böyle bir nesnenin depolar ve boyutuna izler.  
+ Örneğin, bir SQL tablosuna bir kayıt alan bir resmi temsil eden bir bit eşlem içerebilir. A `CLongBinary` nesne, böyle bir nesne depolar ve boyutunu izler.  
   
 > [!NOTE]
->  Genel olarak, bunu kullanmak için daha iyi şimdi uygulamadır [CLongBinary](../../mfc/reference/cbytearray-class.md) birlikte [DFX_Binary](record-field-exchange-functions.md#dfx_binary) işlevi. Kullanmaya devam edebilirsiniz `CLongBinary`, ancak genel olarak `CByteArray` olduğundan artık 16 bit ile karşılaştı boyutu sınırlaması Win32 altında daha fazla işlevsellik sağlayan `CByteArray`. Bu öneri, açık veritabanı bağlantısı (ODBC) yanı sıra veri erişim nesneleri (DAO) ile programlama için geçerlidir.  
+>  Genel olarak, bunu kullanmak için daha iyi artık uygulamadır [CByteArray](../../mfc/reference/cbytearray-class.md) birlikte [DFX_Binary](record-field-exchange-functions.md#dfx_binary) işlevi. Kullanmaya devam edebilirsiniz `CLongBinary`, ancak genel `CByteArray` olduğundan artık, 16-bit ile karşılaştı boyutuna sınırlama Win32 altında daha fazla işlevsellik sağlayan `CByteArray`. Bu öneri, programlama açık veritabanı bağlantısı (ODBC) yanı sıra veri erişim nesneleri (DAO) için geçerlidir.  
   
- Kullanılacak bir `CLongBinary` nesne türünün bir alan veri üyesi bildirme `CLongBinary` kayıt kümesi sınıfınızda. Bu üye, kayıt kümesi sınıfı katıştırılmış bir üyesi olur ve kayıt oluşturulduğunda oluşturulur. Sonra `CLongBinary` nesne yapılandırılmıştır, kayıt alanı değişimi (RFX) mekanizması geçerli kayıt veri kaynağında bir alandan veri nesnesi yükler ve kayıt güncelleştirildiğinde geri kayda depolar. RFX ikili büyük nesne boyutunu ayırır için depolama birimi için veri kaynağını sorgular (aracılığıyla `CLongBinary` nesnenin `m_hData` veri üyesi) ve depolayan bir `HGLOBAL` işlemek verilerde `m_hData`. RFX veri nesnesinde gerçek boyutuna da depolar `m_dwDataLength` veri üyesi. İş nesnesi aracılığıyla verilerle `m_hData`, normalde kullandığınız Windows depolanan verileri işlemek için aynı teknikleri kullanarak `HGLOBAL` işler.  
+ Kullanılacak bir `CLongBinary` nesnesi alan veri üyesi türünün bildirmek `CLongBinary` kayıt kümesi sınıfınızda. Bu üye, gömülü bir kayıt kümesi sınıfının üyesi olacak ve kayıt oluşturulduğunda oluşturulur. Sonra `CLongBinary` nesnesi oluşturulduğunda, kayıt alanı değişimi (RFX) mekanizması bir alandaki geçerli kayıt veri kaynağı için veri nesnesi yükler ve kayıt güncelleştirildiğinde kayda depolar. RFX ikili büyük nesne boyutu ayırdığı için depolama için veri kaynağını sorgular (aracılığıyla `CLongBinary` nesnenin `m_hData` veri üyesi) ve depolayan bir `HGLOBAL` verileri tanıtıcı `m_hData`. RFX veri nesnesinde gerçek boyutuna da depolar `m_dwDataLength` veri üyesi. İş nesnesi üzerinden verilerle `m_hData`, normalde kullandığınız bir Windows içinde depolanan verileri işlemek için aynı teknikleri kullanarak `HGLOBAL` tanıtıcı.  
   
- Destroy zaman kümenizin, katıştırılmış `CLongBinary` nesne ayrıca yok ve onun yıkıcı kaldırır `HGLOBAL` veri işleyici.  
+ Yok, kayıt, katıştırılmış `CLongBinary` nesne de yok edilir ve yok edici kaldırır `HGLOBAL` veri işleyici.  
   
- Büyük nesneler ve kullanımı hakkında daha fazla bilgi için `CLongBinary`, makalelerine bakın [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md) ve [kayıt kümesi: büyük veri öğeleri (ODBC) ile çalışmaya](../../data/odbc/recordset-working-with-large-data-items-odbc.md).  
+ Büyük nesneler ve kullanımı hakkında daha fazla bilgi için `CLongBinary`, makalelere göz atın [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md) ve [kayıt kümesi: büyük veri öğeleri (ODBC) ile çalışmaya](../../data/odbc/recordset-working-with-large-data-items-odbc.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -72,24 +72,24 @@ class CLongBinary : public CObject
  **Başlık:** afxdb_.h  
   
 ##  <a name="clongbinary"></a>  CLongBinary::CLongBinary  
- Oluşturan bir `CLongBinary` nesnesi.  
+ Oluşturur bir `CLongBinary` nesne.  
   
 ```  
 CLongBinary();
 ```  
   
 ##  <a name="m_dwdatalength"></a>  CLongBinary::m_dwDataLength  
- Gerçek boyutu bayt depolanan veri depolar `HGLOBAL` içinde işlemek `m_hData`.  
+ Gerçek Boyut HGLOBAL tutamacın depolanan verileri baytlık depolar `m_hData`.  
   
 ```  
 SQLULEN m_dwDataLength;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu boyut veri için ayrılan bellek bloğu boyutundan küçük olabilir. Win32 çağrısı [GLobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593) ayrılmış boyutu almak için işlevi.  
+ Bu büyüklükteki veriler için ayrılan bellek blok boyutundan daha küçük olabilir. Win32 çağrı [GLobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593) ayrılmış boyutunu almak için işlevi.  
   
 ##  <a name="m_hdata"></a>  CLongBinary::m_hData  
- Bir Windows depolar `HGLOBAL` işlemek için gerçek ikili büyük nesne veri.  
+ Windows HGLOBAL işleyici gerçek ikili büyük nesne verilerini depolar.  
   
 ```  
 HGLOBAL m_hData;  

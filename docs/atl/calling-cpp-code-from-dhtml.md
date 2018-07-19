@@ -1,5 +1,5 @@
 ---
-title: DHTML arama C++ kodunu | Microsoft Docs
+title: DHTML arama C++ kodundan | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,39 +14,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9e369396c68a041dc5fe027802859c6071e50e8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f24c7c1e3cd6cd1b24d74fcc1eee3209562a138a
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355467"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848970"
 ---
-# <a name="calling-c-code-from-dhtml"></a>DHTML C++ kodu çağırma
-DHTML denetimi Test kapsayıcısı veya Internet Explorer gibi bir kapsayıcıda barındırılabilir. Bkz: [test özellikleri ve olayları Test kapsayıcısı ile](../mfc/testing-properties-and-events-with-test-container.md) Test kapsayıcısı erişim hakkında bilgi için.  
+# <a name="calling-c-code-from-dhtml"></a>DHTML'den C++ kodu çağırma
+DHTML denetimi Test kapsayıcısı veya Internet Explorer gibi bir kapsayıcıda barındırılabilir. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) Test kapsayıcısı erişim hakkında daha fazla bilgi için.  
   
- Denetimi barındırma kapsayıcı normal denetimi arabirimleri kullanarak denetimi ile iletişim kurar. DHTML "C++ kodunuzu ve HTML kaynağınız ile iletişim kurmak için kullanıcı Arabirimi" ile biten gönderme arabirimini kullanır. İçinde [ATL DHTML denetimi değiştirme](../atl/modifying-the-atl-dhtml-control.md), bu farklı arabirimleri tarafından çağrılacak yöntemler ekleme alıştırma yapabilirsiniz.  
+ Kapsayıcı denetim barındırma normal denetim arabirimleri kullanarak denetimi ile iletişim kurar. DHTML "C++ kodunuzu ve HTML kaynağınız ile iletişim kurmak için kullanıcı Arabirimi" ile biten gönderme arabirim kullanır. İçinde [ATL DHTML denetimini değiştirme](../atl/modifying-the-atl-dhtml-control.md), bu farklı arabirimleri tarafından çağrılan yöntemler ekleme alıştırma yapabilirsiniz.  
   
- DHTML C++ kodu çağırma bir örnek görmek için [DHTML denetimi oluşturma](../atl/creating-an-atl-dhtml-control.md) ATL Denetim Sihirbazı'nı kullanarak ve üstbilgi dosyası ve HTML dosyası kodu inceleyin.  
+ DHTML'den C++ kodu çağırma örneği görmek için [DHTML denetimi oluşturma](../atl/creating-an-atl-dhtml-control.md) ATL denetimi Sihirbazı'nı kullanarak ve üstbilgi dosyası ve HTML dosyasındaki kodu inceleyin.  
   
-## <a name="declaring-webbrowser-methods-in-the-header-file"></a>Üst bilgi dosyasını WebBrowser yöntemleri bildirme  
- DHTML UI C++ yöntemleri çağırmak için denetiminizin UI arabirim yöntemleri eklemeniz gerekir. Örneğin, C++ yöntemi ATL Denetim Sihirbazı tarafından oluşturulan üst bilgi dosyasını içeren `OnClick`, sihirbaz tarafından oluşturulan denetim UI arabiriminin üyesi olduğu.  
+## <a name="declaring-webbrowser-methods-in-the-header-file"></a>WebBrowser yöntemleri üstbilgi dosyasında bildirme  
+ DHTML arabiriminden C++ yöntemlerini çağırmak için yöntem denetiminizin UI arabirimine eklemeniz gerekir. Örneğin, C++ yöntemi ATL denetimi Sihirbazı tarafından oluşturulan üstbilgi dosyasını içeren `OnClick`, sihirbaz tarafından oluşturulan denetim UI arabiriminin üyesi olduğu.  
   
- İncelemek `OnClick` denetimin .h dosyasında:  
+ İnceleme `OnClick` içinde denetim .h dosyası:  
   
  [!code-cpp[NVC_ATL_COM#4](../atl/codesnippet/cpp/calling-cpp-code-from-dhtml_1.h)]  
   
- İlk parametre `pdispBody`, gövde nesnesinin dağıtma arabirimi bir işaretçidir. İkinci parametre `varColor`, denetimine uygulamak için rengi tanımlar.  
+ İlk parametre *pdispBody*, gövde nesnenin gönderme arabirimi işaretçisidir. İkinci parametre *varColor*, denetime uygulamak için renk tanımlar.  
   
 ## <a name="calling-c-code-in-the-html-file"></a>HTML dosyasında C++ kodu çağırma  
- Üstbilgi dosyası WebBrowser yöntemlerinde bildirdikten sonra yöntemleri HTML dosyasından çağırabilirsiniz. HTML dosyasındaki ATL Denetim Sihirbazı'nı üç Windows gönderme yöntemlerini ekler dikkat edin: üç `OnClick` denetim arka plan rengini değiştirmek için iletileri gönderme yöntemleri.  
+ Üstbilgi dosyasında WebBrowser yöntemleri bildirdikten sonra HTML dosyasından yöntemlerini çağırabilirsiniz. ATL Denetim Sihirbazı'nı üç Windows Dağıtım yöntemleri ekler olduğuna dikkat edin HTML dosyası: üç `OnClick` denetimin arka plan rengini değiştirmek için iletileri gönderme yöntemleri.  
   
  HTML dosyasındaki yöntemlerden birini inceleyin:  
   
  `<BUTTON onclick='window.external.OnClick(theBody, "red");'>Red</BUTTON>`  
   
- Yukarıdaki penceresi dış yöntem, HTML kodunda `OnClick`, düğmesi etiketi bir parçası olarak adlandırılır. Yöntemi iki parametreye sahiptir: `theBody`, HTML belgenin gövdesi başvuruyor ve `"red"`, düğmesine tıklandığında denetimin arka plan rengi kırmızı değiştirilecek gösterir. `Red` Etiketi aşağıdaki olduğu düğmenin etiketi.  
+ HTML kod penceresi dış yöntem yukarıda `OnClick`, düğmesi etiketinin bir parçası olarak çağırılır. Yöntemi iki parametreye sahiptir: `theBody`, HTML belge gövdesinin başvuruyor ve `"red"`, düğme tıklandığında denetimin arka plan rengi kırmızı değiştirilecek gösterir. `Red` Etiketi aşağıdaki olan düğmenin etiket.  
   
- Bkz: [ATL DHTML denetimi değiştirme](../atl/modifying-the-atl-dhtml-control.md) kendi yöntemleri sağlama hakkında daha fazla bilgi için. Bkz: [DHTML denetimi proje öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md) HTML dosyası hakkında daha fazla bilgi.  
+ Bkz: [ATL DHTML denetimini değiştirme](../atl/modifying-the-atl-dhtml-control.md) kendi yöntemleri sağlama hakkında daha fazla bilgi için. Bkz: [DHTML denetim projesinin öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md) HTML dosyası hakkında daha fazla bilgi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DHTML denetimi için destek](../atl/atl-support-for-dhtml-controls.md)

@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7766b56e75edefda4f40194a5ce18572c8d6d78d
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 3e45a5c97f0f25ed0bcb704b584de645bce18cb9
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952254"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338618"
 ---
 # <a name="cdbexception-class"></a>CDBException sınıfı
-Veritabanı sınıflardan doğan bir özel durumu temsil eder.  
+Veritabanı sınıflarından kaynaklanan bir özel durum koşulunu temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,21 +44,21 @@ class CDBException : public CException
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDBException::m_nRetCode](#m_nretcode)|Türünün bir açık veritabanı bağlantısı (ODBC) dönüş kodunu içerir **RETCODE**.|  
-|[CDBException::m_strError](#m_strerror)|Alfasayısal koşullarını hatayı açıklayan bir dize içeriyor.|  
-|[CDBException::m_strStateNativeOrigin](#m_strstatenativeorigin)|ODBC tarafından döndürülen hata kodlarını bakımından hatayı açıklayan bir dize içeriyor.|  
+|[CDBException::m_nRetCode](#m_nretcode)|RETCODE türünün bir açık veritabanı bağlantısı (ODBC) dönüş kodunu içerir.|  
+|[CDBException::m_strError](#m_strerror)|Alfasayısal koşullarını hatayı açıklayan bir dize içerir.|  
+|[CDBException::m_strStateNativeOrigin](#m_strstatenativeorigin)|ODBC tarafından döndürülen hata kodlarını açısından hatayı açıklayan bir dize içerir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıfı özel durumu açıklayan bir metin iletisi görüntülenecek veya özel durum nedenini belirlemek için kullanabileceğiniz iki genel veri üyelerini içerir. `CDBException` nesneleri oluşturulan ve veritabanı sınıfları üye işlevleri tarafından oluşturulur.  
+ Sınıfı özel durumun nedenini belirlemek için ya da özel durumu açıklayan bir mesaj görüntülemek için kullanabileceğiniz iki genel veri üyelerini içerir. `CDBException` nesneleri oluşturulur ve veritabanı sınıfları üye işlevleri tarafından oluşturulur.  
   
 > [!NOTE]
->  Bu sınıf MFC'ın açık veritabanı bağlantısı (ODBC) sınıfları biridir. Bunun yerine daha yeni veri erişim nesneleri (DAO) sınıfları'ı kullanıyorsanız, [CDaoException](../../mfc/reference/cdaoexception-class.md) yerine. Tüm DAO sınıf adları "CDao" önek olarak vardır. Daha fazla bilgi için bkz: [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).  
+>  Bu sınıf, açık veritabanı bağlantısı (ODBC) sınıfları MFC'nin biridir. Bunun yerine daha yeni bir veri erişim nesneleri (DAO) sınıfları'ı kullanıyorsanız, [CDaoException](../../mfc/reference/cdaoexception-class.md) yerine. Tüm DAO sınıf adları "CDao" ön eki olarak vardır. Daha fazla bilgi için bkz [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).  
   
- Özel durumlar programın denetimi veri kaynağı gibi dışındaki koşullar ile ilgili olağan dışı yürütme örneklerini ya da ağ g/ç hatası. Programınızı yürütmenin normal seyrinde görmeyi bekleyebilirsiniz hatalar genellikle özel durumları kabul edilmez.  
+ Özel durumlar durumlarda veri kaynağı gibi programın denetimin dışında kalan koşullar ile ilgili olağan dışı yürütme veya ağ g/ç hataları. Genellikle, program yürütmenin normal kursun görmeyi beklediğiniz hataları özel durumları dikkate alınmaz.  
   
- Bu nesneler kapsamında erişim bir **CATCH** ifade. Ayrıca throw `CDBException` kendi koduyla nesnelerden `AfxThrowDBException` genel işlevi.  
+ Bu nesneler kapsamında erişebileceğiniz bir **CATCH** ifade. Ayrıca oluşturabilecek `CDBException` kendi kodunuzla nesnelerden `AfxThrowDBException` genel işlev.  
   
- Özel durum genel veya hakkında işleme hakkında daha fazla bilgi için `CDBException` nesneleri, makalelere bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).  
+ Özel durum genel veya hakkında işleme hakkında daha fazla bilgi için `CDBException` nesneleri makalelere bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -71,83 +71,83 @@ class CDBException : public CException
  **Başlık:** afxdb.h  
   
 ##  <a name="m_nretcode"></a>  CDBException::m_nRetCode  
- Türünün bir ODBC hata kodunu içerir **RETCODE** bir ODBC uygulama programlama arabirimi (API) işlevi tarafından döndürülen.  
+ Bir ODBC hata kodu türünde bir ODBC uygulama programlama arabiriminin (API) işlevi tarafından döndürülen RETCODE içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu tür ODBC tarafından tanımlanan SQL önekli kodları ve veritabanı sınıfları tarafından tanımlanan AFX_SQL önekli kodları içerir. İçin bir `CDBException`, bu üye aşağıdaki değerlerden birini içerir:  
   
-- **AFX_SQL_ERROR_API_CONFORMANCE** sürücü için bir `CDatabase::OpenEx` veya `CDatabase::Open` çağrısı gerekli ODBC API Uyumluluk Düzeyi 1 uymuyor ( **SQL_OAC_LEVEL1**).  
+- AFX_SQL_ERROR_API_CONFORMANCE sürücü için bir `CDatabase::OpenEx` veya `CDatabase::Open` çağrısı gerekli ODBC API Uyumluluk Düzeyi 1 (SQL_OAC_LEVEL1) ile uyumlu değil.  
   
-- **AFX_SQL_ERROR_CONNECT_FAIL** veri kaynağı bağlantısı başarısız oldu. Geçirilen bir **NULL** `CDatabase` kayıt kümesi oluşturucusu ve bir bağlantı oluşturmak için sonraki deneme işaretçi temel alarak `GetDefaultConnect` başarısız oldu.  
+- Veri kaynağı AFX_SQL_ERROR_CONNECT_FAIL bağlantısı başarısız oldu. Bir NULL geçirilen`CDatabase` işaretçisi, kayıt kümesi oluşturucu ve bir bağlantı oluşturmak için sonraki deneme temel alarak `GetDefaultConnect` başarısız oldu.  
   
-- **AFX_SQL_ERROR_DATA_TRUNCATED** depolama için sağlanan daha fazla veri istedi. Sağlanan veri depolama için artırma hakkında daha fazla bilgi için `CString` veya `CByteArray` veri türlerini görmek `nMaxLength` bağımsız değişkeni için [RFX_Text](record-field-exchange-functions.md#rfx_text) ve [RFX_Binary](record-field-exchange-functions.md#rfx_binary) altında "makroları ve Globals."  
+- AFX_SQL_ERROR_DATA_TRUNCATED, sağladığınız depolama için daha fazla veri istedi. Sağlanan veri depolama için artırma hakkında daha fazla bilgi için `CString` veya `CByteArray` veri türlerini görmek `nMaxLength` için bağımsız değişken [RFX_Text](record-field-exchange-functions.md#rfx_text) ve [RFX_Binary](record-field-exchange-functions.md#rfx_binary) altında "makroları ve Globals."  
   
-- **AFX_SQL_ERROR_DYNASET_NOT_SUPPORTED** yapılan bir çağrı `CRecordset::Open` bir dynaset isteyen başarısız oldu. Dinamik kümeler sürücüsü tarafından desteklenmez.  
+- AFX_SQL_ERROR_DYNASET_NOT_SUPPORTED bir çağrı `CRecordset::Open` isteyen bir dinamik başarısız oldu. Dynaset'ler sürücü tarafından desteklenmez.  
   
-- **AFX_SQL_ERROR_EMPTY_COLUMN_LIST** tablo açılmaya çalışıldı (veya ne verdiğiniz bir yordam çağrısı tanımlanamadı veya **seçin** deyimi) vardır ancak kayıt alanı değişimi (RFX) tanımlanan bir sütun yok işlev çağrıları, `DoFieldExchange` geçersiz kılar.  
+- AFX_SQL_ERROR_EMPTY_COLUMN_LIST çalıştığınız bir tabloyu (veya size verdiği bir yordam çağrısı tanımlanamıyor veya **seçin** deyimi) vardır ancak kayıt alanı değişimi (RFX) işlev çağrılarında tanımlanan bir sütun yok `DoFieldExchange` geçersiz kılar.  
   
-- **AFX_SQL_ERROR_FIELD_SCHEMA_MISMATCH** bir RFX işlevi türü, `DoFieldExchange` geçersiz kılma kümesinde sütunun veri türüyle uyumlu değil.  
+- RFX türünü AFX_SQL_ERROR_FIELD_SCHEMA_MISMATCH işlevi içinde `DoFieldExchange` geçersiz kılma kayıt sütunu veri türü ile uyumlu değil.  
   
-- **AFX_SQL_ERROR_ILLEGAL_MODE** , adlı `CRecordset::Update` önceden çağırma olmadan `CRecordset::AddNew` veya `CRecordset::Edit`.  
+- AFX_SQL_ERROR_ILLEGAL_MODE çağrılır, `CRecordset::Update` önceden çağırma olmadan `CRecordset::AddNew` veya `CRecordset::Edit`.  
   
-- **AFX_SQL_ERROR_LOCK_MODE_NOT_SUPPORTED** ODBC sürücüsü kilitleme desteklemediğinden güncelleştirmesi kayıtları kilitleme isteğinizi yerine getirilemedi.  
+- ODBC sürücünüz kilitleme desteklemediğinden AFX_SQL_ERROR_LOCK_MODE_NOT_SUPPORTED güncelleştirme için kayıtları kilitleme isteğinizi yerine getirilemedi.  
   
-- **AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED** , adlı `CRecordset::Update` veya `Delete` benzersiz bir anahtar içeren bir tablo için ve birden çok kayıt değiştirildi.  
+- AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED çağrılır, `CRecordset::Update` veya `Delete` benzersiz anahtar içeren bir tablo için ve birden çok kayıt değiştirildi.  
   
-- **AFX_SQL_ERROR_NO_CURRENT_RECORD** düzenlemek veya önceden silinmiş kayıt silme girişiminde bulunuldu. Yeni bir geçerli kayda silindikten sonra kaydırma gerekir.  
+- AFX_SQL_ERROR_NO_CURRENT_RECORD, düzenlemek veya daha önce silinmiş bir kaydı silmek çalıştı. Yeni bir geçerli kaydı silindikten sonra kaydırma gerekir.  
   
-- **AFX_SQL_ERROR_NO_POSITIONED_UPDATES** ODBC sürücüsü desteklemediğinden bir dynaset doldurulmayacak için isteğiniz güncelleştirmeler konumlandırıldı.  
+- ODBC sürücünüz desteklemediğinden bir dinamik isteğinizi yerine getirilemedi AFX_SQL_ERROR_NO_POSITIONED_UPDATES güncelleştirmeler konumlandırıldı.  
   
-- **AFX_SQL_ERROR_NO_ROWS_AFFECTED** , adlı `CRecordset::Update` veya `Delete`, ancak işlemi başladığında, artık kaydı bulunamadı.  
+- AFX_SQL_ERROR_NO_ROWS_AFFECTED çağrılır, `CRecordset::Update` veya `Delete`, ancak işlemi başladığında, artık kayıt bulunamadı.  
   
-- **AFX_SQL_ERROR_ODBC_LOAD_FAILED** ODBC yükleme girişimi. DLL başarısız oldu; Windows bulunamadı veya bu DLL yüklenemedi. Bu önemli bir hatadır.  
+- ODBC yükleme denemesi AFX_SQL_ERROR_ODBC_LOAD_FAILED. DLL başarısız oldu; Windows, bulunamadı veya bu DLL yüklenemedi. Bu önemli bir hatadır.  
   
-- **AFX_SQL_ERROR_ODBC_V2_REQUIRED** Düzey 2 uyumlu bir ODBC sürücü gerekli olmadığından, dinamik küme isteğinizi yerine getirilemedi.  
+- AFX_SQL_ERROR_ODBC_V2_REQUIRED Düzey 2 ile uyumlu bir ODBC sürücüsünü gerektiğinden bir dinamik isteğinizi yerine getirilemedi.  
   
-- **AFX_SQL_ERROR_RECORDSET_FORWARD_ONLY** veri kaynağına geri kaydırma desteklemediğinden kaydırma denemesi başarılı olmadı.  
+- Veri kaynağına geri kaydırma desteklemediğinden AFX_SQL_ERROR_RECORDSET_FORWARD_ONLY kaydırma girişimi başarısız oldu.  
   
-- **AFX_SQL_ERROR_SNAPSHOT_NOT_SUPPORTED** yapılan bir çağrı `CRecordset::Open` bir anlık görüntü isteyen başarısız oldu. Anlık görüntü sürücüsü tarafından desteklenmez. (Bu yalnızca gerçekleşeceğini zaman ODBC imleç kitaplığı ODBCCURS. DLL mevcut değil.)  
+- AFX_SQL_ERROR_SNAPSHOT_NOT_SUPPORTED bir çağrı `CRecordset::Open` isteyen bir anlık görüntü işlemi başarısız oldu. Anlık görüntüleri, sürücü tarafından desteklenmez. (Bu yalnızca gerçekleşmelidir olduğunda ODBCCURS ODBC imleç kitaplığı. DLL mevcut değil.)  
   
-- **AFX_SQL_ERROR_SQL_CONFORMANCE** sürücü için bir `CDatabase::OpenEx` veya `CDatabase::Open` çağrısı "Minimum" gerekli ODBC SQL Uyumluluk düzeyini uymuyor ( **SQL_OSC_MINIMUM**).  
+- AFX_SQL_ERROR_SQL_CONFORMANCE sürücü için bir `CDatabase::OpenEx` veya `CDatabase::Open` çağrısı "Minimum" (SQL_OSC_MINIMUM) gerekli ODBC SQL uyumluluk düzeyi ile uyumlu değil.  
   
-- **AFX_SQL_ERROR_SQL_NO_TOTAL** toplam boyutunu belirtmek ODBC sürücü açamadı bir `CLongBinary` veri değeri. Bir genel bellek bloğu değil önceden ayrılmış işlemi büyük olasılıkla başarısız oldu.  
+- Toplam boyutunu belirtmek AFX_SQL_ERROR_SQL_NO_TOTAL ODBC sürücüsü alamadı bir `CLongBinary` veri değeri. Genel bellek bloğu değil önceden ayrılmış çünkü büyük olasılıkla işlemi başarısız oldu.  
   
-- **AFX_SQL_ERROR_RECORDSET_READONLY** salt okunur kayıt güncelleştirmeyi denedi ya da veri kaynağı salt okunur durumdadır. Kayıt kümesi ile hiçbir güncelleştirme işlemleri gerçekleştirilebilir veya `CDatabase` ilişkili olduğu nesne.  
+- AFX_SQL_ERROR_RECORDSET_READONLY, salt okunur bir kayıt kümesi güncelleştirmeyi denedi ya da salt okunur veri kaynağıdır. Kayıt kümesi ile hiçbir güncelleştirme işlemleri gerçekleştirilebilir veya `CDatabase` ilişkili olduğu nesne.  
   
-- **SQL_ERROR hatası** işlevi başarısız oldu. ODBC işlevi tarafından döndürülen hata iletisi `SQLError` depolanan **m_strError** veri üyesi.  
+- SQL_ERROR hatası işlevi başarısız oldu. ODBC işlevi tarafından döndürülen hata iletisi `SQLError` depolanan `m_strError` veri üyesi.  
   
-- **SQL_INVALID_HANDLE** işlevi geçersiz ortam işleyici, bağlantı tanıtıcısı veya deyim tanıtıcısı nedeniyle başarısız oldu. Bu bir programlama hatası gösterir. Ek bilgi yok ODBC işlevinden kullanılabilir **SQLError**.  
+- SQL_INVALID_HANDLE işlevi geçersiz ortam tanıtıcısı, bağlantı tanıtıcısı veya deyim tanıtıcısı nedeniyle başarısız oldu. Bu, bir programlama hatası gösterir. ODBC işlevden kullanılabilir ek bilgi `SQLError`.  
   
- SQL önekli kodları ODBC tarafından tanımlanır. AFX önekli kodları AFXDB içinde tanımlanmıştır. H, MFC\INCLUDE içinde bulunamadı.  
+ SQL önekli kodları ODBC tarafından tanımlanır. AFX önekli kodları AFXDB içinde tanımlanır. H, MFC\INCLUDE içinde bulunamadı.  
   
 ##  <a name="m_strerror"></a>  CDBException::m_strError  
- Özel duruma neden olan hatayı açıklayan bir dize içeriyor.  
+ Özel duruma neden olan hatayı açıklayan bir dize içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dize alfasayısal koşullarında hata açıklanır. Daha ayrıntılı bilgi ve örnek için bkz: **m_strStateNativeOrigin**.  
+ Dize, alfasayısal koşullarında hata açıklar. Daha ayrıntılı bilgi ve örnek için bkz. `m_strStateNativeOrigin`.  
   
 ##  <a name="m_strstatenativeorigin"></a>  CDBException::m_strStateNativeOrigin  
- Özel duruma neden olan hatayı açıklayan bir dize içeriyor.  
+ Özel duruma neden olan hatayı açıklayan bir dize içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dize biçimi kodları, sırasıyla açıklayan değerleri nerede değiştirilir form "durumu: % s, yerel: % ld kaynağı: % s", şöyledir:  
+ Dize biçimi kodları sırayla açıklayan değerler tarafından değiştirildiği desene form "durumu: % s, yerel: % ld kaynağı: % s'ın" şöyledir:  
   
--   **SQLSTATE**, döndürülen beş karakterli hata kodu içeren bir null ile sonlandırılmış dize *szSqlState* ODBC işlevinin parametresi `SQLError`. **SQLSTATE** değerleri ek A, listelenen [ODBC hata kodları](https://msdn.microsoft.com/library/ms714687.aspx), *ODBC Programcının Başvurusu*. Örnek: "S0022".  
+-   Beş karakterli hata kodu içeren null ile sonlandırılmış bir dize döndürdü SQLSTATE *szSqlState* ODBC işlevinin parametresi `SQLError`. SQLSTATE değerleri Ek A'da listelenen [ODBC hata kodları](https://msdn.microsoft.com/library/ms714687.aspx), *ODBC Programcının Başvurusu*. Örnek: "S0022".  
   
--   Veri kaynağına belirli yerel hata kodunu döndürdü *pfNativeError* parametresinin `SQLError` işlevi. Örnek: 207.  
+-   Veri kaynağı için özel yerel hata kodunu döndürdü *pfNativeError* parametresinin `SQLError` işlevi. Örnek: 207'de.  
   
--   Döndürülen hata iletisi metni *szErrorMsg* parametresinin `SQLError` işlevi. Bu ileti birkaç köşeli parantez içindeki adlarını oluşur. Bir hata kullanıcıya kaynağından geçirilen gibi her ODBC bileşeni (veri kaynağı, sürücüsü, Sürücü Yöneticisi) kendi adını ekler. Bu bilgiler hata kökenini belirlemenize yardımcı olur. Örnek: [Microsoft] [ODBC SQL Server sürücüsü] [SQL Server]  
+-   Döndürülen hata iletisi metni *szErrorMsg* parametresinin `SQLError` işlevi. Bu ileti, birden fazla parantezli adlarını oluşur. Kullanıcıya bir hata kaynağından geçirilen gibi kendi adına her bir ODBC bileşeni (veri kaynağı, sürücüsü, Sürücü Yöneticisi) ekler. Bu bilgiler hata kökenini belirlemenize yardımcı olur. Örnek: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server]  
   
- Framework hata dizesi yorumlar ve bileşenlerinin içine yerleştirir **m_strStateNativeOrigin**if **m_strStateNativeOrigin** bilgileri içeren birden fazla hata için hataları ile ayrılmıştır satır başı. Alfasayısal hata metne framework koyar **m_strError**.  
+ Framework hata dizesi yorumlar ve bileşenlerine koyar `m_strStateNativeOrigin`if `m_strStateNativeOrigin` bilgilerini içeren karakterleriyle ayrılan birden fazla hata için hataları. Framework alfasayısal hata metne koyar `m_strError`.  
   
- Bu dize yapmak için kullanılan kodları hakkında ek bilgi için bkz: [SQLError](https://msdn.microsoft.com/library/ms716312.aspx) işlevi *ODBC Programcının Başvurusu*.  
+ Bu dize yapmak için kullanılan kodları hakkında ek bilgi için bkz. [SQLError](https://msdn.microsoft.com/library/ms716312.aspx) işlevi *ODBC Programcının Başvurusu*.  
   
 ### <a name="example"></a>Örnek  
-  ODBC'den: "Durum: S0022, yerel: 207, kaynak: [Microsoft] [ODBC SQL Server sürücüsü] [SQL Server] Geçersiz sütun adı 'ColName'"  
+  ODBC'den: "Durumu: S0022, yerel: 207'de, kaynağı: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server] Geçersiz sütun adı 'ColName'"  
   
- İçinde **m_strStateNativeOrigin**: "Durum: S0022, yerel: 207, kaynak: [Microsoft] [ODBC SQL Server sürücüsü] [SQL Server]"  
+ İçinde `m_strStateNativeOrigin`: "durumu: S0022, yerel: 207'de, kaynağı: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server]"  
   
- İçinde **m_strError**: "geçersiz sütun adı 'ColName'"  
+ İçinde `m_strError`: "geçersiz sütun adı 'ColName'"  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CException sınıfı](../../mfc/reference/cexception-class.md)   

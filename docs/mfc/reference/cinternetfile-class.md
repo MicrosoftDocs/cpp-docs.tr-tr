@@ -1,5 +1,5 @@
 ---
-title: CInternetFile sınıfı | Microsoft Docs
+title: Cınternetfile sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -42,15 +42,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c60027195024a9abb1af5ce5ec47dc6f6a6bfbf8
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: e16aa9377676e415f416dc4f7dae9cb9f2a40dab
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37038991"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336572"
 ---
-# <a name="cinternetfile-class"></a>CInternetFile sınıfı
-Internet protokolleri kullanır uzak sistemlere dosyalara erişim sağlar.  
+# <a name="cinternetfile-class"></a>Cınternetfile sınıfı
+Internet protokolleri kullanan uzak sistemlerdeki dosyalara erişimi sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -64,42 +64,42 @@ class CInternetFile : public CStdioFile
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CInternetFile::CInternetFile](#cinternetfile)|Oluşturan bir `CInternetFile` nesnesi.|  
+|[CInternetFile::CInternetFile](#cinternetfile)|Oluşturur bir `CInternetFile` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CInternetFile::Abort](#abort)|Tüm uyarıları ve hataları yoksayma dosyanın kapatır.|  
+|[CInternetFile::Abort](#abort)|Tüm uyarıları ve hataları yoksayma dosyayı kapatır.|  
 |[CInternetFile::Close](#close)|Kapatan bir `CInternetFile` ve kaynaklarını serbest bırakır.|  
-|[CInternetFile::Flush](#flush)|Yazma arabelleğini içeriği aktarır ve bellek verileri hedef makineye yazılır emin olur.|  
+|[CInternetFile::Flush](#flush)|Yazma arabelleğini içeriğini temizler ve bellek verileri hedef makineye yazılır emin olur.|  
 |[CInternetFile::GetLength](#getlength)|Dosyanın boyutu döndürür.|  
 |[CInternetFile::Read](#read)|Belirtilen bayt sayısını okur.|  
-|[CInternetFile::ReadString](#readstring)|Karakter akışı okur.|  
-|[CInternetFile::Seek](#seek)|İşaretçi açık bir dosyayı yeniden konumlandırır.|  
-|[CInternetFile::SetReadBufferSize](#setreadbuffersize)|Arabellek boyutu, veri okuma burada ayarlar.|  
-|[CInternetFile::SetWriteBufferSize](#setwritebuffersize)|Arabellek boyutu, veri yazılacağı ayarlar.|  
-|[CInternetFile::Write](#write)|Belirtilen bayt sayısı yazar.|  
-|[CInternetFile::WriteString](#writestring)|Sonlandırılmış bir dize bir dosyaya yazar.|  
+|[CInternetFile::ReadString](#readstring)|Bir karakter akışı okur.|  
+|[CInternetFile::Seek](#seek)|İşaretçi de açık bir dosyayı yeniden konumlandırır.|  
+|[CInternetFile::SetReadBufferSize](#setreadbuffersize)|Verilerin okunacağı arabellek boyutunu ayarlar.|  
+|[CInternetFile::SetWriteBufferSize](#setwritebuffersize)|Verilerin yazılacağı arabellek boyutunu ayarlar.|  
+|[CInternetFile::Write](#write)|Belirtilen bayt yazar.|  
+|[CInternetFile::WriteString](#writestring)|Null ile sonlandırılmış bir dize bir dosyaya yazar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CInternetFile::operator HINTERNET](#operator_hinternet)|Bir Internet işlemesi için bir atama işleci.|  
+|[CInternetFile::operator HINTERNET](#operator_hinternet)|Atama işleci için bir Internet tanıtıcısı.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CInternetFile::m_hFile](#m_hfile)|Bir dosya için bir tanıtıcı.|  
+|[CInternetFile::m_hFile](#m_hfile)|Bir dosyaya tanıtıcı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İçin temel sınıf sağlar [CHttpFile](../../mfc/reference/chttpfile-class.md) ve [CGopherFile](../../mfc/reference/cgopherfile-class.md) dosya sınıfları. Hiçbir zaman oluşturduğunuz bir `CInternetFile` doğrudan nesne. Bunun yerine, çağırarak türetilmiş sınıflarından biri bir nesne oluşturma [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) veya [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest). Ayrıca bir `CInternetFile` çağırarak nesne [CFtpConnection::OpenFile](../../mfc/reference/cftpconnection-class.md#openfile).  
+ İçin bir temel sınıf sağlar [CHttpFile](../../mfc/reference/chttpfile-class.md) ve [CGopherFile](../../mfc/reference/cgopherfile-class.md) dosya sınıfları. Asla oluşturma bir `CInternetFile` doğrudan nesne. Bunun yerine, çağırarak türetilmiş sınıflarının biri bir nesne oluşturma [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) veya [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest). Ayrıca oluşturabileceğiniz bir `CInternetFile` çağırarak [CFtpConnection::OpenFile](../../mfc/reference/cftpconnection-class.md#openfile).  
   
- `CInternetFile` Üye işlevleri `Open`, `LockRange`, `UnlockRange`, ve `Duplicate` için uygulanmadı `CInternetFile`. Bu işlevler çağırırsanız bir `CInternetFile` nesne alırsınız bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
+ `CInternetFile` Üye işlevleri `Open`, `LockRange`, `UnlockRange`, ve `Duplicate` için uygulanmadı `CInternetFile`. Bu işlevler çağırırsanız bir `CInternetFile` nesnesi elde edersiniz bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
- Hakkında daha fazla bilgi için `CInternetFile` diğer MFC Internet sınıfları ile works başlıklı makaleye bakın [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md).  
+ Hakkında daha fazla bilgi edinmek için `CInternetFile` diğer Internet MFC sınıfları ile çalışır, başlıklı makaleye bakın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -114,16 +114,16 @@ class CInternetFile : public CStdioFile
  **Başlık:** afxinet.h  
   
 ##  <a name="abort"></a>  CInternetFile::Abort  
- Bu nesneyle ilişkili dosyayı kapatır ve dosyayı okuma veya yazma için kullanılabilir hale getirir.  
+ Bu nesneyle ilişkili dosyayı kapatır ve dosyanın okuma veya yazma için kullanılabilir hale getirir.  
   
 ```  
 virtual void Abort();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dosya nesnesi yok etme önce kapatılmamış, yıkıcı sizin için kapatılır.  
+ Dosya nesne yok etme öncesinde kapatılmamış, yok edici sizin için kapatılır.  
   
- Özel durumlar, işlerken `Abort` farklıdır [Kapat](#close) iki önemli şekilde. İlk olarak, `Abort` işlevi değil throw bir özel durum hatalarında hataları yoksayar çünkü. İkinci, `Abort` yok **ASSERT** dosya açılmamış olan veya daha önce kapatıldı.  
+ Özel durumlar, işlerken `Abort` farklıdır [Kapat](#close) iki önemli şekilde. İlk olarak, `Abort` işlevi değil bir özel durum oluşturur hataları nedeniyle, hataları yoksayar. İkinci olarak, `Abort` yok **ASSERT** dosya açılmamış olan ya da daha önce kapatıldı.  
   
 ##  <a name="cinternetfile"></a>  CInternetFile::CInternetFile  
  Bu üye işlevi aldığında çağrılan bir `CInternetFile` nesnesi oluşturulur.  
@@ -147,13 +147,13 @@ CInternetFile(
   
 ### <a name="parameters"></a>Parametreler  
  *Hfıle*  
- Internet dosyası için bir tanıtıcı.  
+ Bir Internet dosyaya tanıtıcı.  
   
  *pstrFileName*  
- Dosya adı içeren bir dize için bir işaretçi.  
+ Dosya adını içeren bir dize işaretçisi.  
   
  *pConnection*  
- Bir işaretçi bir [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) nesnesi.  
+ Bir işaretçi bir [Cınternetconnection](../../mfc/reference/cinternetconnection-class.md) nesne.  
   
  *bReadMode*  
  Dosyanın salt okunur olup olmadığını gösterir.  
@@ -162,13 +162,13 @@ CInternetFile(
  Bir Internet oturumu için bir tanıtıcı.  
   
  *pstrServer*  
- Sunucu adını içeren bir dize için bir işaretçi.  
+ Sunucu adını içeren bir dize işaretçisi.  
   
  *dwContext*  
- İçerik tanımlayıcısını `CInternetFile` nesnesi. Bkz: [WinINet Temelleri](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
+ İçerik tanımlayıcısı `CInternetFile` nesne. Bkz: [WinINet Temelleri](../../mfc/wininet-basics.md) bağlam tanımlayıcısı hakkında daha fazla bilgi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hiçbir zaman oluşturduğunuz bir `CInternetFile` doğrudan nesne. Bunun yerine, çağırarak türetilmiş sınıflarından biri bir nesne oluşturma [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) veya [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest). Ayrıca bir `CInternetFile` çağırarak nesne [CFtpConnection::OpenFile](../../mfc/reference/cftpconnection-class.md#openfile).  
+ Asla oluşturma bir `CInternetFile` doğrudan nesne. Bunun yerine, çağırarak türetilmiş sınıflarının biri bir nesne oluşturma [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) veya [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest). Ayrıca oluşturabileceğiniz bir `CInternetFile` çağırarak [CFtpConnection::OpenFile](../../mfc/reference/cftpconnection-class.md#openfile).  
   
 ##  <a name="close"></a>  CInternetFile::Close  
  Kapatan bir `CInternetFile` ve tüm kaynaklarını serbest bırakır.  
@@ -178,7 +178,7 @@ virtual void Close();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dosya yazma için açılmış, bir örtük çağrısına yoktur [Flush](#flush) tüm veri arabelleğe güvence altına almak için ana bilgisayara yazılır. Çağırmalısınız **Kapat** bir dosyayı kullanarak bittiğinde.  
+ Dosya yazma için açılmış, örtük çağrıyla yoktur [Temizleme](#flush) tüm veri arabelleğe güvence altına almak için ana bilgisayara yazılır. Çağırmalısınız `Close` dosya kullanmayı bitirdiğinizde.  
   
 ##  <a name="flush"></a>  CInternetFile::Flush  
  Yazma arabelleğini içeriğini temizlemek için bu üye işlevini çağırın.  
@@ -188,7 +188,7 @@ virtual void Flush();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `Flush` bellekteki tüm verileri gerçekten yazıldı, hedef makine güvence altına almak için ve işleminizin ana makineyle tamamlanmış güvence altına almak için. `Flush` Yalnızca üzerinde etkili olan `CInternetFile` nesneleri yazma için açılmış.  
+ Kullanım `Flush` bellekteki tüm verileri gerçekte yazıldı, hedef makineye güvence altına alır ve ana makine ile işlem tamamlanmış güvence altına almak için. `Flush` Yalnızca üzerinde etkili olan `CInternetFile` nesneleri, yazma için açılmış.  
   
 ##  <a name="getlength"></a>  CInternetFile::GetLength  
  Dosyanın boyutu döndürür.  
@@ -198,21 +198,21 @@ virtual ULONGLONG GetLength() const;
 ```  
   
 ##  <a name="m_hfile"></a>  CInternetFile::m_hFile  
- Bu nesneyle ilişkili dosya için bir tanıtıcı.  
+ Bu nesneyle ilişkili dosyaya tanıtıcı.  
   
 ```  
 HINTERNET m_hFile;  
 ```  
   
 ##  <a name="operator_hinternet"></a>  CInternetFile::operator HINTERNET  
- Windows tanıtıcı geçerli Internet oturumu için almak için bu işleci kullanın.  
+ Windows tanıtıcı için geçerli Internet oturumu almak için bu işleci kullanın.  
   
 ```  
 operator HINTERNET() const;  
 ```  
   
 ##  <a name="read"></a>  CInternetFile::Read  
- Verilen belleğe başlayarak okumak için bu üye işlev çağrısı *lpvBuf*, bayt sayısı belirtilen *nCount*.  
+ Verilen belleğe başlayarak okumak için bu üye işlevi çağrısı *lpvBuf*, bayt sayısı belirtilen *nCount*.  
   
 ```  
 virtual UINT Read(
@@ -222,21 +222,21 @@ virtual UINT Read(
   
 ### <a name="parameters"></a>Parametreler  
  *lpBuf*  
- Hangi dosya veri okunurken bir bellek adresi için bir işaretçi.  
+ Hangi dosyaya veriler okunur bir bellek adresi için bir işaretçi.  
   
  *nCount*  
  Yazılacak bayt sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Arabelleğe aktarılan toplam bayt sayısı. Dönüş değeri olabilir değerinden *nCount* varsa dosya sonuna ulaşıldı.  
+ Arabelleğe aktarılan bayt sayısı. Dönüş değeri olabilir küçüktür *nCount* , dosya sonuna ulaşıldı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlevi gerçekte okunan bayt sayısını verir — olabilir bir sayı değerinden *nCount* dosya biterse. Dosyası okunurken bir hata meydana gelirse, işlev oluşturur bir [CInternetException](../../mfc/reference/cinternetexception-class.md) hatayı açıklayan nesne. Okuma dosyanın sonunu aşan bir hata olarak kabul edilmez ve hiçbir özel durum unutmayın.  
+ İşlevi gerçekten okunan bayt sayısını döndürür; olabilecek birtakım küçüktür *nCount* dosya sona ererse. Dosya okunurken bir hata meydana gelirse, işlev oluşturur. bir [Cınternetexception](../../mfc/reference/cinternetexception-class.md) hatayı tanımlayan nesne. Dosyanın sonundan okunurken bir hata olarak kabul edilmez ve hiçbir özel durum unutmayın.  
   
- Tüm verileri alındığından emin olmak için bir uygulama çağırmak devam etmeniz gerekir **CInternetFile::Read** yöntemi sıfır dönene kadar yöntemi.  
+ Tüm veriler alınır emin olmak için uygulamanın çağırmaya devam gerekir `CInternetFile::Read` sıfır yöntemi dönene kadar yöntemi.  
   
 ##  <a name="readstring"></a>  CInternetFile::ReadString  
- Yeni satır karakteri bulana kadar karakter akışı okumak için bu üye işlevini çağırın.  
+ Yeni satır karakteri bulana kadar karakterleri bir akışını okumak için bu üye işlevini çağırın.  
   
 ```  
 virtual BOOL ReadString(CString& rString);
@@ -249,7 +249,7 @@ virtual LPTSTR ReadString(
   
 ### <a name="parameters"></a>Parametreler  
  *pstr*  
- Okunan satır alacak bir dize için bir işaretçi.  
+ Okunan satır alacak bir dizeye bir işaretçi.  
   
  *nMax*  
  Okunacak karakter sayısı.  
@@ -258,17 +258,17 @@ virtual LPTSTR ReadString(
  Bir başvuru [CString](../../atl-mfc-shared/reference/cstringt-class.md) okuma satırın alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi hizmetinden alınan düz verileri içeren arabellek [CInternetFile](../../mfc/reference/cinternetfile-class.md) nesnesi. Bu yönteme geçirilen arabellek veri türü, bağımsız olarak, tüm işlemeleri verileri (örneğin, Unicode dönüştürme) gerçekleştirmez, döndürülen veri yapısına eşlemeniz gerekir böylece beklediğiniz gibi **void\***  bir tür döndürdü.  
+ Arabelleğe alınan düz veriler içeren bir işaretçi [Cınternetfile](../../mfc/reference/cinternetfile-class.md) nesne. Bu yönteme geçirilen arabellek veri türünden bağımsız olarak, tüm işlemeleri (örneğin, Unicode dönüştürme) veri çubuğunda gerçekleştirmez, döndürülen veri yapısına eşlemeniz gerekir böylece beklediğiniz gibi **void\***  türü döndürüldü.  
   
- **NULL** dosya sonu herhangi bir veri; okumadan ulaştıysanız veya boolean ise, **FALSE** dosya sonu herhangi bir veri okumadan ulaştıysanız.  
+ Dosya sonu herhangi bir veri okumadan ulaştıysanız NULL; veya, boolean, dosya sonu ise FALSE herhangi bir veri okumadan ulaşıldı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sonuçta elde edilen satır işlevi tarafından başvurulan bellek yerleştirir *pstr* parametresi. Karakterleri okuma durdurur tarafından belirtilen karakter üst sınırını ulaştığında *nMax*. Arabellek her zaman bir sonlandırma null karakteri alır.  
+ Sonuçta elde edilen satırı işlevi tarafından başvurulan belleği yerleştirir *pstr* parametresi. Karakterleri okuma durdurur tarafından belirtilen karakter sayısı ulaştığında *nMax*. Arabellek her zaman Sonlandırıcı null karakterini alır.  
   
- Çağırırsanız `ReadString` ilk çağırmadan [SetReadBufferSize](#setreadbuffersize), 4096 bayt arabellek alırsınız.  
+ Eğer `ReadString` ilk çağırmadan [SetReadBufferSize](#setreadbuffersize), 4096 baytlık bir arabellek alırsınız.  
   
 ##  <a name="seek"></a>  CInternetFile::Seek  
- İşaretçinin daha önce açılmış bir dosyada yeniden konumlandırmak için bu üye işlevini çağırın.  
+ İşaretçi önceden açılmış bir dosyaya yeniden konumlandırmak için bu üye işlevini çağırın.  
   
 ```  
 virtual ULONGLONG Seek(
@@ -278,35 +278,35 @@ virtual ULONGLONG Seek(
   
 ### <a name="parameters"></a>Parametreler  
  *lOffset*  
- Dosya okuma/yazma işaretçiyi taşımak için bayt cinsinden uzaklık.  
+ Dosyada okuma/yazma işaretçiyi için bayt cinsinden uzaklığı.  
   
  *nFrom*  
- Uzaklık göreli referansı. Aşağıdaki değerlerden biri olmalıdır:  
+ Göreli başvuru için uzaklık. Aşağıdaki değerlerden biri olmalıdır:  
   
-- **CFile::begin** dosya işaretçisini *lOff* bayt iletmek dosya baştan.  
+- `CFile::begin` Dosya işaretçiyi *lOff* dosyanın başından itibaren bayt iletin.  
   
-- **CFile::current** dosya işaretçisini *lOff* dosyayı geçerli konumundan bayt.  
+- `CFile::current` Dosya işaretçiyi *lOff* dosyasındaki geçerli konumdan bayt.  
   
-- **CFile::end** dosya işaretçisini *lOff* dosyasının sonuna baytlar. *lOff* gerekir olması mevcut arama negatif dosya; değerleri arama için dosya sonunun pozitif.  
+- `CFile::end` Dosya işaretçiyi *lOff* dosyasının sonuna gelen baytlar. *lOff* gerekir olması negatif mevcut aranacak dosya; pozitif değerleri, dosyanın sonundan arama.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İstenen konumu yasal ise dosya başından uzaklık yeni bayt; Aksi takdirde, değerler tanımsızdır ve [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesi oluşturulur.  
+ Yeni bayt; istenen konumu yasal ise dosyanın başından uzaklığı Aksi takdirde, değeri tanımsızdır ve [Cınternetexception](../../mfc/reference/cinternetexception-class.md) nesnesi oluşturulur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Seek` İşlevi izin verir. bir dosyanın içeriğini için rasgele erişim işaretçiyi taşıyarak belirtilen tutarı, mutlak veya göreli olarak. Hiçbir veri gerçekte arama sırasında okuyun.  
+ `Seek` İşlevi erişme izni verir rastgele bir dosyanın içeriğini hareket ettirerek işaretçinin belirtilen bir miktarı mutlak veya göreceli olarak. Veri yok, arama sırasında gerçekten okuyun.  
   
- Şu anda bu üye işlevine bir çağrı yalnızca ilişkilendirilmiş verileri için desteklenen `CHttpFile` nesneleri. FTP veya gopher istekleri için desteklenmez. Çağırırsanız `Seek` desteklenmeyen Bu hizmetlerden biri için geri, Win32 hata kodu geçer **ERROR_INTERNET_INVALID_OPERATION**.  
+ Şu anda bu üye işlevine bir çağrı yalnızca ilişkili verileri desteklenir `CHttpFile` nesneleri. FTP veya gopher istekler için desteklenmiyor. Eğer `Seek` desteklenmeyen Bu hizmetlerden biri için geri, Win32 hata kodu ERROR_INTERNET_INVALID_OPERATION geçer.  
   
- Bir dosya açıldığında dosya işaretçisini uzaklığı 0, dosyasının başında ' dir.  
+ Bir dosya açıldığında, dosyanın konumu 0 ' dosyasının başında işaretçisidir.  
   
 > [!NOTE]
->  Kullanarak `Seek` örtük bir çağrı neden olabilecek [Flush](#flush).  
+>  Kullanarak `Seek` örtük çağrıyla neden [Temizleme](#flush).  
   
 ### <a name="example"></a>Örnek  
-  Taban sınıfı uygulama örneğin bakın ( [CFile::Seek](../../mfc/reference/cfile-class.md#seek)).  
+  Temel sınıf uygulamasına için örneğe bakın ( [CFile::Seek](../../mfc/reference/cfile-class.md#seek)).  
   
 ##  <a name="setreadbuffersize"></a>  CInternetFile::SetReadBufferSize  
- Tarafından kullanılan geçici okuma arabelleğinin boyutunu ayarlamak için bu üye işlevini çağırın bir `CInternetFile`-türetilmiş bir nesne içermelidir.  
+ Tarafından kullanılan geçici okuma arabelleğinin boyutunu ayarlamak için bu üye işlevi çağrısı bir `CInternetFile`-türetilmiş bir nesneye.  
   
 ```  
 BOOL SetReadBufferSize(UINT nReadSize);
@@ -314,20 +314,20 @@ BOOL SetReadBufferSize(UINT nReadSize);
   
 ### <a name="parameters"></a>Parametreler  
  *nReadSize*  
- Bayt cinsinden istenen arabellek boyutu.  
+ İstenen arabellek boyutu bayt cinsinden.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Temel alınan WinINet API'leri değil arabelleğe alma gerçekleştirmek, bu nedenle verileri okumak için veri miktarını bağımsız olarak verimli bir şekilde okumak uygulamanızı sağlayan bir arabellek boyutu seçin. Her için çağırırsanız [okuma](#read) normalde büyük aount içerir (örneğin, dört veya daha fazla kilobayt) verileri bir arabellek gerekmemelidir. Ancak, çağırırsanız `Read` küçük parçalara veri almak için veya kullanıyorsanız [ReadString'i](#readstring) Okuma arabelleği uygulama performansını artıran sonra tek tek satırların aynı anda okunamıyor.  
+ Temel alınan WinINet API'leri değil arabelleğe alma gerçekleştirin, böylece verileri verimli bir şekilde okunması gereken veri miktarı bağımsız olarak okumak için uygulamanıza izin veren bir arabellek boyutu seçin. Her çağırırsanız [okuma](#read) normalde büyük aount içerir verilerinin (örneğin, dört veya daha fazla kilobayt), bir arabellek yapmanız gerekmez. Ancak, çağırırsanız `Read` verileri küçük öbeklere almak veya kullanıyorsanız [ReadString'i](#readstring) Okuma arabelleği uygulama performansını artıran sonra bir defada tek satır okumak için.  
   
- Varsayılan olarak, bir `CInternetFile` nesne için Okuma arabelleği sağlamaz. Bu üye işlevini çağırırsanız, dosya için okuma erişimi açılmış emin olmalısınız.  
+ Varsayılan olarak, bir `CInternetFile` nesne için Okuma arabelleği sağlamaz. Bu üye işlevini çağırın, dosya için okuma erişimi açılmış emin olmanız gerekir.  
   
- Herhangi bir zamanda arabellek boyutunu artırabilir, ancak arabellek küçültme hiçbir etkisi olmaz. Çağırırsanız [ReadString'i](#readstring) ilk çağırmadan `SetReadBufferSize`, 4096 bayt arabellek alırsınız.  
+ Herhangi bir zamanda arabellek boyutunu artırabilir, ancak arabellek küçültme hiçbir etkisi olmaz. Eğer [ReadString'i](#readstring) ilk çağırmadan `SetReadBufferSize`, 4096 baytlık bir arabellek alırsınız.  
   
 ##  <a name="setwritebuffersize"></a>  CInternetFile::SetWriteBufferSize  
- Tarafından kullanılan geçici yazma arabelleği boyutunu ayarlamak için bu üye işlevini çağırın bir `CInternetFile`-türetilmiş bir nesne içermelidir.  
+ Tarafından kullanılan geçici yazma arabellek boyutunu ayarlamak için bu üye işlevi çağrısı bir `CInternetFile`-türetilmiş bir nesneye.  
   
 ```  
 BOOL SetWriteBufferSize(UINT nWriteSize);
@@ -335,18 +335,18 @@ BOOL SetWriteBufferSize(UINT nWriteSize);
   
 ### <a name="parameters"></a>Parametreler  
  *nWriteSize*  
- Arabelleğinin bayt cinsinden boyutu.  
+ Arabelleğin bayt cinsinden boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- WinINet API'leri yok gerçekleştirmek arabelleğe alma, arka plandaki verimli bir şekilde yazılacak veri miktarını bağımsız olarak veri yazmak uygulamanızı sağlayan bir arabellek boyutu için seçin. Her için çağırırsanız [yazma](#write) normalde büyük bir miktarını içerir (örneğin, dört veya daha fazla kilobayt birer birer) verileri bir arabellek gerekmemelidir. Ancak, çağırırsanız [yazma](#write) küçük parçalara veri yazmak için bir yazma arabelleği, uygulamanızın performansını artırır.  
+ WinINet API'leri yok gerçekleştirmek arabelleğe alma, temel alınan verimli bir şekilde yazılacak veri miktarından bağımsız olarak veri yazmak uygulamanızın izin veren bir arabellek boyutu için seçin. Her çağırırsanız [yazma](#write) genellikle büyük bir miktarını içerir verilerinin (örneğin, dört veya daha fazla kilobayt teker teker), bir arabellek yapmanız gerekmez. Ancak, eğer [yazma](#write) küçük öbekler halinde veri yazmak için bir yazma arabelleği uygulamanızın performansını artırır.  
   
- Varsayılan olarak, bir `CInternetFile` nesne yazmak için arabelleğe sağlamaz. Bu üye işlevini çağırırsanız, dosya yazma erişimi için açıldı emin olmalısınız. Yazma arabelleği boyutu dilediğiniz zaman değiştirebilirsiniz, ancak bunun nedenle örtük bir çağrı neden olur [Flush](#flush).  
+ Varsayılan olarak, bir `CInternetFile` nesne yazmak için arabelleğe sağlamaz. Bu üye işlevini çağırın, dosya yazma erişimi için açılmış emin olmanız gerekir. Yazma arabellek boyutu dilediğiniz zaman değiştirebilirsiniz, ancak bunu yapmanız bu nedenle örtük çağrıyla neden [Temizleme](#flush).  
   
 ##  <a name="write"></a>  CInternetFile::Write  
- Verilen belleğe yazmak için bu üye işlevini çağırın *lpvBuf*, bayt sayısı belirtilen *nCount*.  
+ Verilen belleğe yazmak için bu üye işlevi çağrısı *lpvBuf*, bayt sayısı belirtilen *nCount*.  
   
 ```  
 virtual void Write(
@@ -356,16 +356,16 @@ virtual void Write(
   
 ### <a name="parameters"></a>Parametreler  
  *lpBuf*  
- Bir işaretçi yazılması için ilk bayta.  
+ Yazılacak ilk baytına bir işaretçi.  
   
  *nCount*  
  Yazılacak bayt sayısını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veriler yazılırken herhangi bir hata meydana gelirse, işlev oluşturur bir [CInternetException](../../mfc/reference/cinternetexception-class.md) hatayı açıklayan nesne.  
+ Veriler yazılırken bir hata meydana gelirse, işlev oluşturur. bir [Cınternetexception](../../mfc/reference/cinternetexception-class.md) hatayı tanımlayan nesne.  
   
 ##  <a name="writestring"></a>  CInternetFile::WriteString  
- Bu işlev null ile sonlandırılmış bir dize ilişkili dosyasına yazar.  
+ Bu işlev için ilişkili dosya null ile sonlandırılmış bir dize yazar.  
   
 ```  
 virtual void WriteString(LPCTSTR pstr);
@@ -373,10 +373,10 @@ virtual void WriteString(LPCTSTR pstr);
   
 ### <a name="parameters"></a>Parametreler  
  *pstr*  
- Yazılacak içeriği içeren bir dize için bir işaretçi.  
+ Yazılacak içeriği içeren bir dize işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veriler yazılırken herhangi bir hata meydana gelirse, işlev oluşturur bir [CInternetException](../../mfc/reference/cinternetexception-class.md) hatayı açıklayan nesne.  
+ Veriler yazılırken bir hata meydana gelirse, işlev oluşturur. bir [Cınternetexception](../../mfc/reference/cinternetexception-class.md) hatayı tanımlayan nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CStdioFile sınıfı](../../mfc/reference/cstdiofile-class.md)   

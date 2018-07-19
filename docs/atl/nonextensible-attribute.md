@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40b4b79701862ca07e704aca098419479923ef1a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1112f533e2e38dd90b1693e8bd31e5896ebca5e7
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355639"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848443"
 ---
 # <a name="nonextensible-attribute"></a>nonextensible özniteliği
-Çift arabirim çalışma zamanında uzatılır değil, (diğer bir deyişle, yöntemleri veya özellikleri aracılığıyla sağlamayacak **IDispatch::Invoke** vtable kullanılabilir olmayan), uygulamanız gerekir **nonextensible** Arabirim tanımınızı öznitelik. Bu öznitelik derleme zamanında tam kod doğrulamayı etkinleştirmek için kullanılan istemci dillerini (Visual Basic gibi) bilgileri sağlar. Bu öznitelik sağlanmazsa, hataların çalışma zamanına kadar istemci kodu gizli kalabilir.  
+Çift arabirim çalışma zamanında genişletilir değil, (diğer bir deyişle, yöntemler veya özellikleri aracılığıyla sağlamayacak `IDispatch::Invoke` vtable kullanılabilir değildir), uygulamanız gerekir **nonextensible** arabiriminize özniteliği tanımı. Bu öznitelik (örneğin, Visual Basic) derleme zamanında tam kod doğrulamayı etkinleştirmek için kullanılan istemci dillerini bilgileri sağlar. Bu öznitelik sağlanmazsa, hataların çalışma zamanına kadar gizli istemci kodu kalabilir.  
   
  Daha fazla bilgi için **nonextensible** özniteliğini ve bir örnek görmek, [nonextensible](../windows/nonextensible.md).  
   

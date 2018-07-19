@@ -38,15 +38,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9407c98183fa923a58ca2939e8c534cd56dc8ef7
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 4f2bf81c2e69290feb9f9afd054286c10e42d0be
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954627"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338759"
 ---
 # <a name="ccontextmenumanager-class"></a>CContextMenuManager sınıfı
-`CContextMenuManager` Nesnesi olarak da bilinen bağlam menülerini kısayol menüleri yönetir.  
+`CContextMenuManager` Nesnesi bağlam menüleri olarak da bilinen kısayol menülerini yönetir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -60,35 +60,35 @@ class CContextMenuManager : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CContextMenuManager::CContextMenuManager](#ccontextmenumanager)|Oluşturan bir `CContextMenuManager` nesnesi.|  
-|`CContextMenuManager::~CContextMenuManager`|Yok Edicisi.|  
+|[CContextMenuManager::CContextMenuManager](#ccontextmenumanager)|Oluşturur bir `CContextMenuManager` nesne.|  
+|`CContextMenuManager::~CContextMenuManager`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CContextMenuManager::AddMenu](#addmenu)|Yeni bir kısayol menü ekler.|  
-|[CContextMenuManager::GetMenuById](#getmenubyid)|Sağlanan kaynak kimliği ile ilişkili menüsüne bir işleyici döner|  
-|[CContextMenuManager::GetMenuByName](#getmenubyname)|Bir tanıtıcı sağlanan menü adıyla eşleşen menüsüne döndürür.|  
+|[CContextMenuManager::AddMenu](#addmenu)|Yeni bir kısayol menüsü ekler.|  
+|[CContextMenuManager::GetMenuById](#getmenubyid)|Sağlanan kaynak kimliği ile ilişkili menüsüne bir tanıtıcı döndürür.|  
+|[CContextMenuManager::GetMenuByName](#getmenubyname)|Sağlanan menü adıyla eşleşen menüsüne bir tanıtıcı döndürür.|  
 |[CContextMenuManager::GetMenuNames](#getmenunames)|Menü adları listesini döndürür.|  
-|[CContextMenuManager::LoadState](#loadstate)|Kısayol menüleri Windows kayıt defterinde depolanan yükler.|  
+|[CContextMenuManager::LoadState](#loadstate)|Windows kayıt defterinde depolanan kısayol menüleri yükler.|  
 |[CContextMenuManager::ResetState](#resetstate)|Kısayol menüleri bağlam menüsü Yöneticisi'nden temizler.|  
 |[CContextMenuManager::SaveState](#savestate)|Kısayol menüleri Windows kayıt defterine kaydeder.|  
-|[CContextMenuManager::SetDontCloseActiveMenu](#setdontcloseactivemenu)|Denetimleri olup olmadığını `CContextMenuManager` yeni bir kısayol menü göstermediğinde etkin kısayol menüsünü kapatır.|  
+|[CContextMenuManager::SetDontCloseActiveMenu](#setdontcloseactivemenu)|Denetimleri olmadığını `CContextMenuManager` etkin kısayol menüsünü kapatır, yeni bir kısayol menüsünü gösterir.|  
 |[CContextMenuManager::ShowPopupMenu](#showpopupmenu)|Belirtilen kısayol menüsünü görüntüler.|  
-|[CContextMenuManager::TrackPopupMenu](#trackpopupmenu)|Belirtilen kısayol menüsünü görüntüler. Seçili menü komutu dizinini döndürür.|  
+|[CContextMenuManager::TrackPopupMenu](#trackpopupmenu)|Belirtilen kısayol menüsünü görüntüler. Seçili bir menü komutunu dizinini döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CContextMenuManager` kısayol menüleri yönetir ve tutarlı bir görünüm sahip olmanızı sağlar.  
+ `CContextMenuManager` kısayol menülerini yönetir ve bunların tutarlı bir görünüm sahip olduğunuzdan emin olun.  
   
- Değil oluşturmalısınız bir `CContextMenuManager` el ile nesne. Uygulamanızı çerçevesini oluşturur `CContextMenuManager` nesnesi. Ancak, çağırmalıdır [CWinAppEx::InitContextMenuManager](../../mfc/reference/cwinappex-class.md#initcontextmenumanager) uygulamanızı ne zaman başlatılır. Bağlam Yöneticisi başlatma sonrasında yöntemi kullanın [CWinAppEx::GetContextMenuManager](../../mfc/reference/cwinappex-class.md#getcontextmenumanager) uygulamanız için İçerik Yöneticisi bir işaretçi elde edilir.  
+ Oluşturacağınız değil bir `CContextMenuManager` el ile nesne. Uygulama Framework'ü oluşturur `CContextMenuManager` nesne. Ancak, çağırmalıdır [CWinAppEx::InitContextMenuManager](../../mfc/reference/cwinappex-class.md#initcontextmenumanager) uygulamanızın ne zaman başlatılır. Bağlam Yöneticisi başlatma sonrasında yöntemi kullanmak [CWinAppEx::GetContextMenuManager](../../mfc/reference/cwinappex-class.md#getcontextmenumanager) uygulamanız için İçerik Yöneticisi'ni işaretçisi elde edilir.  
   
- Kısayol menüleri çalışma zamanında çağırarak oluşturabileceğiniz `AddMenu`. İlk alıcı kullanıcı girişi olmadan menüsünü göster istiyorsanız, çağrı `ShowPopupMenu`. `TrackPopupMenu` bir menüsü oluşturabilir ve kullanıcı girişi için bekleyin istediğinizde kullanılır. `TrackPopupMenu` Kullanıcı hiçbir şey seçmeden çıkıldı seçili komutu ya da 0 dizinini döndürür.  
+ Çalışma zamanında kısayol menüleri çağırarak oluşturabilirsiniz `AddMenu`. Alan ilk kullanıcı girişi olmadan menü göstermek istiyorsanız, çağrı `ShowPopupMenu`. `TrackPopupMenu` menü oluşturmak ve kullanıcı girişini bekleme istediğinizde kullanılır. `TrackPopupMenu` Kullanıcı hiçbir şey seçmeden çıkıldı seçili komutu ya da 0 dizinini döndürür.  
   
- `CContextMenuManager` Kaydedebilir ve durumuna Windows kayıt defterini geri yükleyin.  
+ `CContextMenuManager` Kaydedebilir ve durumunu Windows kayıt defterine yükleyin.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir menüye eklemek gösterilmiştir bir `CContextMenuManager` nesne ve etkin açılır menü değil nasıl kapatılacağını zaman `CContextMenuManager` nesne yeni bir açılır menü görüntüler. Bu kod parçacığını parçası olan [özel sayfaları örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir menü eklemek gösterilmiştir bir `CContextMenuManager` nesne ve nasıl etkin açılır menüyü Kapat değil, `CContextMenuManager` nesne yeni bir açılır menü görüntüler. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_CustomPages#4](../../mfc/reference/codesnippet/cpp/ccontextmenumanager-class_1.cpp)]  
   
@@ -101,7 +101,7 @@ class CContextMenuManager : public CObject
  **Başlık:** afxcontextmenumanager.h  
   
 ##  <a name="addmenu"></a>  CContextMenuManager::AddMenu  
- Yeni bir kısayol menüsü ekler [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).  
+ Yeni bir kısayol menüsüne ekler [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).  
   
 ```  
 BOOL AddMenu(
@@ -122,26 +122,26 @@ BOOL AddMenu(
  Menü kaynak kimliği  
   
  [in] *lpszName*  
- Yeni menü adını içeren dize.  
+ Yeni menü adını içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa sıfır olmayan; yöntem başarısız olursa 0.  
+ Yöntem başarılı olursa sıfır dışı; yöntem başarısız olursa 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem başarısız olursa *uiMenuResId* geçersiz veya aynı ada sahip başka bir menü zaten kullanılmadığını `CContextMenuManager`.  
+ Bu yöntem, başarısız *uiMenuResId* geçersiz veya aynı ada sahip başka bir menü zaten yer alıyorsa `CContextMenuManager`.  
   
 ##  <a name="ccontextmenumanager"></a>  CContextMenuManager::CContextMenuManager  
- Oluşturan bir [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) nesnesi.  
+ Oluşturur bir [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) nesne.  
   
 ```  
 CContextMenuManager();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çoğu durumda, değil oluşturmalısınız bir `CContextMenuManager` el ile. Uygulamanızı çerçevesini oluşturur `CContextMenuManager` nesnesi. Çağırmalısınız [CWinAppEx::InitContextMenuManager](../../mfc/reference/cwinappex-class.md#initcontextmenumanager) , uygulamanızın başlatma sırasında. İçerik Yöneticisi bir işaretçi almak için arama [CWinAppEx::GetContextMenuManager](../../mfc/reference/cwinappex-class.md#getcontextmenumanager).  
+ Çoğu durumda, değil oluşturmalısınız bir `CContextMenuManager` el ile. Uygulama Framework'ü oluşturur `CContextMenuManager` nesne. Çağırmalısınız [CWinAppEx::InitContextMenuManager](../../mfc/reference/cwinappex-class.md#initcontextmenumanager) , uygulamanızın başlatma sırasında. Bağlam Yöneticisi için bir işaretçi alma çağrısı [CWinAppEx::GetContextMenuManager](../../mfc/reference/cwinappex-class.md#getcontextmenumanager).  
   
 ##  <a name="getmenubyid"></a>  CContextMenuManager::GetMenuById  
- Belirtilen kaynak kimliği ile ilişkili menüsüne bir işleyici döner  
+ Belirtilen kaynak kimliği ile ilişkili menüsüne bir tanıtıcı döndürür.  
   
 ```  
 HMENU GetMenuById(UINT nMenuResId) const;  
@@ -152,10 +152,10 @@ HMENU GetMenuById(UINT nMenuResId) const;
  Menü kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlişkili menü için bir tanıtıcı veya `NULL` menü bulunmazsa.  
+ İlişkili menüsüne bir tanıtıcı veya `NULL` menü bulunamaması durumunda.  
   
 ##  <a name="getmenubyname"></a>  CContextMenuManager::GetMenuByName  
- Belirli bir menüsüne bir işleyici döner.  
+ Belirli bir menüsüne bir tanıtıcı döndürür.  
   
 ```  
 HMENU GetMenuByName(
@@ -165,16 +165,16 @@ HMENU GetMenuByName(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszName*  
- Almak üzere menü adını içeren dize.  
+ Alınacak menünün adını içeren bir dize.  
   
  [out] *puiOrigResID*  
- Bir işaretçi bir `UINT`. Bu parametre, belirtilen menü kaynak Kimliğini içerir bulundu.  
+ Bir birim için bir işaretçi. Bu parametre, belirtilen menüsünde, kaynak Kimliğini içerir bulunamadı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir tanıtıcı tarafından belirtilen adla eşleşen menüsüne *lpszName*. `NULL` adlı hiçbir menüsü olup olmadığını *lpszName*.  
+ Bir tanıtıcı tarafından belirtilen adla eşleşen menüsüne *lpszName*. Menü yok adlı yoksa NULL *lpszName*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem eşleşen bir menü bulursa *lpszName*, `GetMenuByName` parametresinde menüsü kaynak kimliği depolar *puiOrigResID*.  
+ Bu yöntem eşleşen bir menü bulursa *lpszName*, `GetMenuByName` parametreyi menüsü kaynak Kimliğini depolar *puiOrigResID*.  
   
 ##  <a name="getmenunames"></a>  CContextMenuManager::GetMenuNames  
  Eklenen menü adları listesini döndürür [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md).  
@@ -196,31 +196,31 @@ virtual BOOL LoadState(LPCTSTR lpszProfileName = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszProfileName*  
- Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
+ Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa sıfır olmayan; Aksi takdirde 0.  
+ Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- *LpszProfileName* parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) ve [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) sırasıyla.  
+ *LpszProfileName* parametresi bir kayıt defteri girdisi için mutlak yol değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen bir göreli yoludur. Alma veya varsayılan kayıt defteri anahtarı ayarlama için yöntemleri kullanın. [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) ve [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) sırasıyla.  
   
- Yöntem kullanmak [CContextMenuManager::SaveState](#savestate) kısayol menülerini kayıt defterine kaydetmek için.  
+ Bu yöntemi kullanmak [CContextMenuManager::SaveState](#savestate) kısayol menülerini kayıt defterine kaydetmek için.  
   
 ##  <a name="resetstate"></a>  CContextMenuManager::ResetState  
- Kısayol menüleri ile ilişkili tüm öğeleri temizler [CContextMenuManager sınıfı](../../mfc/reference/ccontextmenumanager-class.md).  
+ Tüm öğeleri ile ilişkili kısayol menülerinde temizler [CContextMenuManager sınıfı](../../mfc/reference/ccontextmenumanager-class.md).  
   
 ```  
 virtual BOOL ResetState();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem başarılı olursa; `FALSE` bir hata oluşursa.  
+ Yöntem başarılı olursa TRUE; Bir hata oluştuğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem açılır menüler temizler ve bunları kaldırır `CContextMenuManager`.  
+ Bu yöntem, açılır menüler temizler ve bunları kaldırır `CContextMenuManager`.  
   
 ##  <a name="savestate"></a>  CContextMenuManager::SaveState  
- İle ilişkili bilgileri kaydeder [CContextMenuManager sınıfı](../../mfc/reference/ccontextmenumanager-class.md) Windows kayıt.  
+ İle ilişkili bilgileri kaydeder [CContextMenuManager sınıfı](../../mfc/reference/ccontextmenumanager-class.md) Windows kayıt defterine.  
   
 ```  
 virtual BOOL SaveState(LPCTSTR lpszProfileName = NULL);
@@ -228,18 +228,18 @@ virtual BOOL SaveState(LPCTSTR lpszProfileName = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszProfileName*  
- Bir kayıt defteri anahtarı göreli yolunu içeren bir dize.  
+ Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa sıfır olmayan; Aksi takdirde 0.  
+ Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- *LpszProfileName* parametresi bir kayıt defteri girdisi mutlak yolu değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen göreli bir yol değil. Almak veya varsayılan kayıt defteri anahtarını ayarlamak için yöntemleri kullanın [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) ve [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) sırasıyla.  
+ *LpszProfileName* parametresi bir kayıt defteri girdisi için mutlak yol değil. Uygulamanız için varsayılan kayıt defteri anahtarı sonuna eklenen bir göreli yoludur. Alma veya varsayılan kayıt defteri anahtarı ayarlama için yöntemleri kullanın. [CWinAppEx::GetRegistryBase](../../mfc/reference/cwinappex-class.md#getregistrybase) ve [CWinAppEx::SetRegistryBase](../../mfc/reference/cwinappex-class.md#setregistrybase) sırasıyla.  
   
- Yöntem kullanmak [CContextMenuManager::LoadState](#loadstate) kayıt defterinden kısayol menülerini yüklenemiyor.  
+ Bu yöntemi kullanmak [CContextMenuManager::LoadState](#loadstate) kısayol menülerini kayıt defterinden yüklenemedi.  
   
 ##  <a name="setdontcloseactivemenu"></a>  CContextMenuManager::SetDontCloseActiveMenu  
- Denetimleri olup olmadığını [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) yeni bir açılır menü görüntülediğinde etkin açılır menü kapatır.  
+ Denetimleri olmadığını [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) etkin açılır menüsünden Yeni bir açılır menü görüntülendiğinde kapatır.  
   
 ```  
 void SetDontCloseActiveMenu (BOOL bSet = TRUE);
@@ -247,7 +247,7 @@ void SetDontCloseActiveMenu (BOOL bSet = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bInternet*  
- Etkin açılır menü kapatmak sorulmayacağını denetler Boole parametresi. Değerini `TRUE` etkin açılır menü kapalı gösterir. `FALSE` Etkin açılır menü kapalı olduğunu gösterir.  
+ Etkin açılır menüyü Kapat verilip verilmeyeceğini denetler bir Boole parametresi. Etkin açılır menü kapalı TRUE değerini gösterir. FALSE, etkin bir açılan menü kapalı olduğunu gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, `CContextMenuManager` etkin açılır menü kapatır.  
@@ -283,30 +283,30 @@ virtual CMFCPopupMenu* ShowPopupMenu(
  İstemci koordinatları kısayol menüsünde için uzaklık yatay.  
   
  [in] *y*  
- İstemci koordinatları kısayol menüsünde için dikey uzaklık  
+ İstemci koordinatları kısayol menüsünde dikey kaydırma uzaklığı  
   
  [in] *pWndOwner*  
- Kısayol menüsünün üst pencere için bir işaretçi.  
+ Kısayol menüsünün üst penceresine bir işaretçi.  
   
  [in] *bOwnMessage*  
- İletilerin nasıl yönlendirileceğini gösterir Boole parametresi. Varsa *bOwnMessage* olan `FALSE`, standart MFC yönlendirme kullanılır. Aksi takdirde, *pWndOwner* iletilerini alır.  
+ İletilerin nasıl yönlendirileceğini gösteren bir Boole parametresi. Varsa *bOwnMessage* FALSE, standart MFC olan Yönlendirme kullanılır. Aksi takdirde, *pWndOwner* iletileri alır.  
   
  [in] *hmenuPopup*  
- Bu yöntem görüntüler menü işleci.  
+ Bu yöntem görüntülenecek menü tanıtıcısı.  
   
  [in] *bAutoDestroy*  
- Menü otomatik olarak yok olup olmadığını gösteren bir Boolean parametresiyle.  
+ Menü otomatik olarak edileceği olup olmadığını gösteren bir Boole parametresi.  
   
  [in] *bRightAlign*  
- Menü öğeleri nasıl hizalandığını belirten bir Boolean parametresiyle. Varsa *bRightAlign* olan `TRUE`, sağa hizalı sağdan sola okuma sırası için menü kalır.  
+ Menü öğelerinin nasıl hizalandığını gösteren bir Boole parametresi. Varsa *bRightAlign* TRUE ise sağa hizalı sağdan sola okuma düzeni için menü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk yöntemi aşırı yüklemesini yöntemi menü başarıyla gösteriyorsa sıfır olmayan döndürür; Aksi takdirde 0. İkinci yöntemi aşırı yüklemesini gösteren bir işaretçi döndürür [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) kısayol menüsünü görüntüler varsa doğru; tersi durumda `NULL`.  
+ İlk yöntem aşırı yükleme yöntemi başarıyla menü gösterir, sıfır döndürür; Aksi durumda 0. İkinci yöntem aşırı yüklemesi için bir işaretçi döndürür [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) kısayol menü görüntüler doğru; Aksi takdirde NULL varsa.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem yöntemi benzer [CContextMenuManager::TrackPopupMenu](#trackpopupmenu) içeren bir kısayol menüsünü yöntemlerin her ikisi de görüntüler. Ancak, `TrackPopupMenu` seçili menü komutu dizinini döndürür.  
+ Bu yöntem, yöntem benzer [CContextMenuManager::TrackPopupMenu](#trackpopupmenu) içeren iki yöntem de bir kısayol menüsünü görüntüleme. Ancak, `TrackPopupMenu` seçili menü komutunu dizinini döndürür.  
   
- Varsa parametresi *bAutoDestroy* olan `FALSE`, el ile devralınan çağırmalısınız `DestroyMenu` bellek kaynakları serbest bırakmak için yöntemi. Varsayılan uygulaması `ShowPopupMenu` parametresi kullanmaz *bAutoDestroy*. Gelecekte kullanım için veya türetilmiş özel sınıflar için sağlanan `CContextMenuManager` sınıfı.  
+ Parametre *bAutoDestroy* yanlış, el ile devralınan çağırmalıdır `DestroyMenu` bellek kaynakları serbest bırakmak için yöntemi. Varsayılan uygulaması `ShowPopupMenu` parametresini kullanmıyor *bAutoDestroy*. Öğesinden türetilen özel sınıflar veya gelecekte kullanım için sağlanan `CContextMenuManager` sınıfı.  
   
 ##  <a name="trackpopupmenu"></a>  CContextMenuManager::TrackPopupMenu  
  Belirtilen kısayol menüsünü görüntüler ve seçili kısayol menü komutu dizinini döndürür.  
@@ -322,25 +322,25 @@ virtual UINT TrackPopupMenu(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *hmenuPopup*  
- Bu yöntem görüntüler kısayol menüsü işleyicisi.  
+ Bu yöntem görüntüler kısayol menüsünü tanıtıcısı.  
   
  [in] *x*  
  İstemci koordinatları kısayol menüsünde için uzaklık yatay.  
   
  [in] *y*  
- İstemci koordinatları kısayol menüsünde için uzaklık dikey.  
+ Dikey istemci koordinatları kısayol menüsünde için uzaklık.  
   
  [in] *pWndOwner*  
- Kısayol menüsünün üst pencere için bir işaretçi.  
+ Kısayol menüsünün üst penceresine bir işaretçi.  
   
  [in] *bRightAlign*  
- Menü öğeleri nasıl hizalandığını belirten bir Boolean parametresiyle. Varsa *bRightAlign* olan `TRUE`, sağa hizalı sağdan sola okuma sırası için menü kalır. Varsa *bRightAlign* olan `FALSE`, sola hizalı soldan sağa okuma sırası için menü kalır.  
+ Menü öğelerinin nasıl hizalandığını gösteren bir Boole parametresi. Varsa *bRightAlign* TRUE ise sağa hizalı sağdan sola okuma düzeni için menü. Varsa *bRightAlign* yanlış, sağdan sola okuma düzeni için sola hizalanmış menüsü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kullanıcının seçtiği komut menü komut kimliği; Kullanıcı kısayol menüsünü menü komutu seçmeden kapatırsa 0.  
+ Kullanıcı komut menü komut kimliği; 0 kullanıcı kısayol menüsünü menü komutunu seçmeden kapatır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir kısayol menüsünü görüntülemek için kalıcı bir çağrı işlev görür. Kullanıcı kısayol menüsünü kapatır veya bir komut seçer kadar uygulama kodu aşağıdaki satırda olmaya devam etmez. Bir kısayol menüsü görüntülemek için kullanabileceğiniz alternatif bir yöntem [CContextMenuManager::ShowPopupMenu](#showpopupmenu). Bu yöntem, kalıcı bir çağrı değil ve seçili komut Kimliğini döndürmez.  
+ Bu yöntem, bir kısayol menüsünü görüntülemek için kalıcı bir çağrı işlev görür. Kullanıcı kısayol menüsünü kapatır veya komut seçtiğinde kadar uygulama aşağıdaki kod satırında devam etmeyecek. Bir kısayol menüsünü görüntülemek için kullanabileceğiniz alternatif bir yöntem [CContextMenuManager::ShowPopupMenu](#showpopupmenu). Bu yöntem, kalıcı bir çağrı değildir ve seçili komut Kimliğini döndürmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

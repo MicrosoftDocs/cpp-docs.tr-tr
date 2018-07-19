@@ -1,5 +1,5 @@
 ---
-title: Numaralandırmalar ve koleksiyon sınıfları (ATL) | Microsoft Docs
+title: Numaralandırıcı ve koleksiyon sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,29 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbe8dfb4610b88b9a53e90b7af5f52b4d1c2807f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 62729df015e214f37acdda7d5cb2ef710dce6cb9
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355652"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847888"
 ---
-# <a name="enumerators-and-collections-classes"></a>Numaralandırmalar ve koleksiyon sınıfları
-Aşağıdaki sınıflar, COM koleksiyonlar ve numaralandırmalar için destek sağlar:  
+# <a name="enumerators-and-collections-classes"></a>Numaralandırıcı ve koleksiyon sınıfları
+Aşağıdaki sınıfları, COM koleksiyonları ve numaralandırmalar için destek sağlar:  
   
--   [CComEnum](../atl/reference/ccomenum-class.md) tanımlar bir COM Numaralandırıcı nesne tabanlı bir dizi.  
+-   [CComEnum](../atl/reference/ccomenum-class.md) tanımlar bir COM Numaralandırıcı nesnesi üzerinde dizisine dayalı.  
   
--   [CComEnumImpl](../atl/reference/ccomenumimpl-class.md) bir dizide numaralandırılan öğeleri depolandığı COM Numaralandırıcı arabirimi uygulamasını sağlar.  
+-   [Ccomenumımpl](../atl/reference/ccomenumimpl-class.md) numaralandırılan öğeleri bir dizi içinde depolandığı bir COM Numaralandırıcı arabirim uygulamasını sağlar.  
   
--   [CComEnumOnSTL](../atl/reference/ccomenumonstl-class.md) tanımlar bir COM Numaralandırıcı nesnesi temel bir C++ Standart Kitaplığı koleksiyonu.  
+-   [CComEnumOnSTL](../atl/reference/ccomenumonstl-class.md) tanımlar bir COM Numaralandırıcı nesnesi bir C++ Standart Kitaplığı koleksiyonu üzerinde temel.  
   
--   [IEnumOnSTLImpl](../atl/reference/ienumonstlimpl-class.md) C++ Standart kitaplığı ile uyumlu kapsayıcısında numaralandırılan öğeleri depolandığı COM Numaralandırıcı arabirimi uygulamasını sağlar.  
+-   [Ienumonstlımpl](../atl/reference/ienumonstlimpl-class.md) numaralandırılan öğeleri bir C++ Standart kitaplığı ile uyumlu kapsayıcıda depolandığı bir COM Numaralandırıcı arabirim uygulamasını sağlar.  
   
--   [ICollectionOnSTLImpl](../atl/reference/icollectiononstlimpl-class.md) uygulamasını sağlar **sayısı**, **öğesi**, ve `_NewEnum` koleksiyonu arabirimi özelliklerini.  
+-   [Icollectiononstlımpl](../atl/reference/icollectiononstlimpl-class.md) uygulamasını sağlar `Count`, `Item`, ve `_NewEnum` koleksiyon arabirimi özellikleri.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL Koleksiyonları ve Numaralandırıcıları](../atl/atl-collections-and-enumerators.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

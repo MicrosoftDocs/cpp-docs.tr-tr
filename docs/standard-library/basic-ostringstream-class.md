@@ -22,16 +22,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce6e3a51cb63a448568f3cf31525f6f153637ec7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1fb0027ba6afbceed8cc5f1daafef8cb183759ce
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847123"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955240"
 ---
 # <a name="basicostringstream-class"></a>basic_ostringstream Sınıfı
 
-Öğeler ekleme denetimlerini bir nesne ve kodlanmış nesneleri bir sınıf akışı arabelleğe açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
+Sınıfı bir akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,15 +42,15 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-`Alloc` Allocator sınıfı.
+*Ayırma* ayırıcı sınıf.
 
-`Elem` Dizenin temel öğe türü.
+*Elem* dizenin temel öğe türü.
 
-*Tr* karakter nitelikler dize temel öğede özelleştirilmiş.
+*Tr* karakter nitelikleri dizenin temel öğe üzerinde özelleştirilmiş.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf türündeki öğeler ile Akış Arabellek içine ekleme öğelerinin denetleyen bir nesne ve kodlanmış nesneleri açıklar **Elem**, olan karakter nitelikler sınıfı tarafından belirlenir **Tr**ve, öğeleri bir sınıf ayırıcı tarafından ayrılan `Alloc`. Nesne sınıfı basic_stringbuf bir nesne depolar < **Elem**, **Tr**, `Alloc`>.
+Sınıf türünde öğelere sahip bir akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri açıklar `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, ve öğeleri bir ayırıcı tarafından ayrılır sınıf `Alloc`. Basic_stringbuf sınıfı bir nesnenin nesneyi depolar < **Elem**, **Tr**, `Alloc`>.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -62,14 +62,14 @@ Sınıf türündeki öğeler ile Akış Arabellek içine ekleme öğelerinin den
 
 |Tür adı|Açıklama|
 |-|-|
-|[allocator_type](#allocator_type)|Şablon parametresi için bir eş anlamlı türüdür `Alloc`.|
+|[allocator_type](#allocator_type)|Şablon parametresi için bir eşanlamlı türüdür *ayırma*.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[rdbuf](#rdbuf)|Tür saklı Akış Arabellek adresini döndürür `pointer` için [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>.|
-|[str](#str)|Yazma konumunu değiştirmeden dize arabellekte metni alır veya ayarlar.|
+|[rdbuf](#rdbuf)|Türünde depolanmış bir akış arabelleğinin adresini döndürür `pointer` için [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>.|
+|[str](#str)|Yazma konumunu değiştirmeden dize arabellekteki metni alır veya ayarlar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -79,7 +79,7 @@ Sınıf türündeki öğeler ile Akış Arabellek içine ekleme öğelerinin den
 
 ## <a name="allocator_type"></a>  basic_ostringstream::allocator_type
 
-Şablon parametresi için bir eş anlamlı türüdür `Alloc`.
+Şablon parametresi için bir eşanlamlı türüdür *ayırma*.
 
 ```cpp
 typedef Alloc allocator_type;
@@ -87,7 +87,7 @@ typedef Alloc allocator_type;
 
 ## <a name="basic_ostringstream"></a>  basic_ostringstream::basic_ostringstream
 
-Bir nesne türü basic_ostringstream oluşturur.
+Basic_ostringstream türü bir nesne oluşturur.
 
 ```cpp
 explicit basic_ostringstream(ios_base::openmode _Mode = ios_base::out);
@@ -97,19 +97,19 @@ explicit basic_ostringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base:
 
 ### <a name="parameters"></a>Parametreler
 
-`_Mode` Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Modu* numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-`str` Türünde bir nesne `basic_string`.
+*str* türünde bir nesne `basic_string`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu çağırarak temel sınıfı başlatır [basic_ostream](../standard-library/basic-ostream-class.md)( **sb**), burada **sb** saklı nesne sınıfının [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **Elem**, **Tr**, `Alloc`>. Ayrıca başlatır **sb** arama basic_stringbuf tarafından < **Elem**, **Tr**, `Alloc`> ( `_Mode` &#124; `ios_base::out`).
+İlk Oluşturucu çağırarak temel sınıfı başlatır [basic_ostream](../standard-library/basic-ostream-class.md)( **sb**), burada `sb` depolanan nesne sınıfının [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **Elem**, **Tr**, `Alloc`>. Ayrıca başlatır **sb** çağıran basic_stringbuf tarafından < **Elem**, **Tr**, `Alloc`> ( `_Mode` &#124; `ios_base::out`).
 
-İkinci Oluşturucu, arama basic_ostream tarafından temel sınıfı başlatır ( **sb**). Ayrıca başlatır **sb** arama basic_stringbuf tarafından < **Elem**, **Tr**, `Alloc`> (_ *Str*, `_Mode` &#124; `ios_base::out`).
+İkinci Oluşturucu tarafından çağıran basic_ostream temel sınıfı başlatır ( **sb**). Ayrıca başlatır `sb` çağıran basic_stringbuf tarafından < **Elem**, **Tr**, `Alloc`> (_ *Str*, `_Mode` &#124; `ios_base::out`).
 
 ## <a name="rdbuf"></a>  basic_ostringstream::rdbuf
 
-Tür saklı Akış Arabellek adresini döndürür **işaretçi** için [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
+Türünde depolanmış bir akış arabelleğinin adresini döndürür `pointer` için [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
 
 ```cpp
 basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
@@ -117,19 +117,19 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Adres türü saklı Akış Arabellek **işaretçi** basic_stringbuf için < **Elem**, **Tr**, `Alloc`>.
+Saklı akış arabelleğini türündeki adresi `pointer` basic_stringbuf için < **Elem**, **Tr**, `Alloc`>.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi türü saklı Akış Arabellek adresini döndürür **işaretçi** basic_stringbuf için < **Elem**, **Tr**, `Alloc`>.
+Üye işlevi türünde depolanmış bir akış arabelleğinin adresini döndürür `pointer` basic_stringbuf için < **Elem**, **Tr**, `Alloc`>.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) kullanan bir örnek `rdbuf`.
+Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) kullanan bir örnek için `rdbuf`.
 
 ## <a name="str"></a>  basic_ostringstream::Str
 
-Yazma konumunu değiştirmeden dize arabellekte metni alır veya ayarlar.
+Yazma konumunu değiştirmeden dize arabellekteki metni alır veya ayarlar.
 
 ```cpp
 basic_string<Elem, Tr, Alloc> str() const;
@@ -141,19 +141,19 @@ void str(
 
 ### <a name="parameters"></a>Parametreler
 
-`_Newstr` Yeni bir dize.
+*_Newstr* yeni bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sınıfın bir nesnesi döndüren [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, yalnızca denetlenen sırasıdır denetlediği dizisinin bir kopyasını oluşturur  **\*bu**.
+Sınıfın bir nesnesi döndürür [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, denetlenen sırasıdır tarafından denetlenen dizinin bir kopyasını  **\*bu**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevinin döndürdüğü [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). İkinci üye işlev çağrılarını `rdbuf`  ->  **str**( `_Newstr`).
+İlk üye işlevi döndürür [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). İkinci üye işlev çağrıları `rdbuf`  ->  **str**( `_Newstr`).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#str) kullanan bir örnek **str**.
+Bkz: [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#str) kullanan bir örnek için `str`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

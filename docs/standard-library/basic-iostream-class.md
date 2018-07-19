@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de2f28feb775cd6e37116ea7c27691397d2dfce4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 662c4915753cc49534fa9f489eb61504907744c4
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844282"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954714"
 ---
 # <a name="basiciostream-class"></a>basic_iostream Sınıfı
 
-Hem giriş ve çıkış yapmak için bir akış sınıfı.
+Hem giriş ve çıkış yapabileceği bir akışı sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,35 +45,35 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı devralınabilir. taban sınıf üzerinden eklenenler denetleyen bir nesneyi tanımlayan [basic_ostream](../standard-library/basic-ostream-class.md)< `Elem`, `Tr`> ve temel sınıfı aracılığıyla ayıklamaları [basic_ istream](../standard-library/basic-istream-class.md)< `Elem`, `Tr`>. İki nesne genel sanal temel sınıfı paylaşmak [basic_ios](../standard-library/basic-ios-class.md)< `Elem`, `Tr`>. Ayrıca türündeki öğeler ile ortak Akış Arabellek yönettikleri `Elem`, olan karakter nitelikler sınıfı tarafından belirlenir `Tr`. Oluşturucu, taban sınıflarından aracılığıyla başlatır `basic_istream`( **strbuf**) ve `basic_ostream`( **strbuf**).
+Şablon sınıfı, temel sınıfı aracılığıyla eklemeler denetleyen bir nesneyi tanımlayan [basic_ostream](../standard-library/basic-ostream-class.md)< `Elem`, `Tr`> ve temel sınıfı aracılığıyla ayıklama [basic_ istream](../standard-library/basic-istream-class.md)< `Elem`, `Tr`>. İki nesnenin ortak bir sanal temel sınıf paylaşma [basic_ios](../standard-library/basic-ios-class.md)< `Elem`, `Tr`>. Ayrıca türünde öğelere sahip ortak bir akış arabelleğinin yönettikleri `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`. Oluşturucusu aracılığıyla temel sınıflarını başlatır `basic_istream`( **strbuf**) ve `basic_ostream`( **strbuf**).
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[basic_iostream](#basic_iostream)|Oluşturma bir `basic_iostream` nesnesi.|
+|[basic_iostream](#basic_iostream)|Oluşturma bir `basic_iostream` nesne.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Değiştirme](#swap)|Sağlanan içeriğini alış verişleri `basic_iostream` bu nesnenin içeriği için nesne.|
+|[değiştirme](#swap)|Sağlanan içeriğini birbiriyle değiştirir `basic_iostream` bu nesnenin içeriği için nesne.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|Belirtilen bir değeri atar `basic_iostream` bu nesnesini. Bu taşıma atama ilgili olan bir `rvalue` , değil ardınızda bir kopyası.|
+|[operator=](#op_eq)|Belirtilen bir değeri atar `basic_iostream` bu nesne için nesne. Bu, bir taşıma ataması ilgili bir `rvalue` , olmayan bir kopyasını gerisine bırakmak.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<IStream >
+**Başlık:** \<istream >
 
 **Namespace:** std
 
 ## <a name="basic_iostream"></a>  basic_iostream::basic_iostream
 
-Oluşturma bir `basic_iostream` nesnesi.
+Oluşturma bir `basic_iostream` nesne.
 
 ```cpp
 explicit basic_iostream(basic_streambuf<Elem, Tr>* strbuf);
@@ -85,19 +85,19 @@ basic_iostream();
 
 ### <a name="parameters"></a>Parametreler
 
-`strbuf` Varolan bir `basic_streambuf` nesnesi.
+*strbuf* varolan `basic_streambuf` nesne.
 
-`right` Var olan `basic_iostream` yeni oluşturmak için kullanılan nesne `basic_iostream`.
+*doğru* varolan `basic_iostream` yeni oluşturmak için kullanılan nesne `basic_iostream`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu temel nesnelerin tarafından yolu başlatır `basic_istream(strbuf)` ve `basic_ostream(strbuf)`.
+İlk Oluşturucu sunar temel nesnelere başlatır `basic_istream(strbuf)` ve `basic_ostream(strbuf)`.
 
 İkinci oluşturucu çağırarak temel nesnelere başlatır `move(right)`.
 
 ## <a name="op_eq"></a>  basic_iostream::operator =
 
-Belirtilen bir değeri atamak `basic_iostream` bu nesnesini. Bir kopyasını bırakmaz arkasındaki bir rvalue içeren bir taşıma atama budur.
+Belirli bir değer atamak `basic_iostream` bu nesne için nesne. Bir kopya bırakmaz arkasındaki bir rvalue içeren bir taşıma ataması budur.
 
 ```cpp
 basic_iostream& operator=(basic_iostream&& right);
@@ -105,7 +105,7 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Bir `rvalue` başvuru bir `basic_iostream` nesne atayın.
+*doğru* bir `rvalue` başvurusu bir `basic_iostream` nesnesine atayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -113,7 +113,7 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ## <a name="swap"></a>  basic_iostream::Swap
 
-Sağlanan içeriğini alış verişleri `basic_iostream` bu nesnenin içeriği için nesne.
+Sağlanan içeriğini birbiriyle değiştirir `basic_iostream` bu nesnenin içeriği için nesne.
 
 ```cpp
 void swap(basic_iostream& right);
@@ -121,11 +121,11 @@ void swap(basic_iostream& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` `basic_iostream` Değiştirilecek nesne.
+*doğru* `basic_iostream` değiştirilecek nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrılarını `swap(right)`.
+Üye işlev çağrıları `swap(right)`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

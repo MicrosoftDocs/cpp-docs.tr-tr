@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b123144643fd50b019853d21e4140ba2d931f7c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a14b2fe5a14eaf264377a1f818227d73e134b030
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844991"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957973"
 ---
 # <a name="isliteraltype-class"></a>is_literal_type sınıfı
 
-Bir tür olarak kullanılabilir olup olmadığını sınar bir `constexpr` değişkeni veya oluşturulan, tarafından kullanılan veya döndürülen `constexpr` işlevleri.
+Bir tür olarak kullanılabilir olup olmadığını test bir `constexpr` değişkeni veya oluşturulan, tarafından kullanılan veya döndürüldüğü `constexpr` işlevleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_literal_type;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` olan bir *değişmez değer türü*, aksi takdirde false tutar. Değişmez değer türü olan `void`, skaler bir tür, bir başvuru türü, bir dizi değişmez değer türü veya bir değişmez değer sınıfı türü. Değişmez değer sınıf türü Önemsiz yıkıcı sahip bir sınıf türü, bir toplama türü veya en az bir olmayan-move, copy olmayan sahip `constexpr` oluşturucu ve tüm temel sınıflar ve statik olmayan veri üyeleri olan geçici olmayan değişmez değer türleri. Değişmez değer türü değişmez değer türü her zaman olsa da, değişmez değer türü kavramı derleyici olarak değerlendirilmesi için herhangi bir şey içeren bir `constexpr` derleme zamanında.
+Karşılaştırmasının bir örneği true tutan türü *T* olduğu bir *değişmez değer türü*, aksi takdirde false tutar. Değişmez değer türü geçerli **void**, skaler bir tür, bir başvuru türü, bir dizi değişmez değer türü veya sınıf değişmez değer türü. Bir değişmez değer sınıfı türü önemsiz bir yok Edicisi olan bir sınıf türü, bir toplama türü veya en az bir olmayan-taşıma, kopyalama olmayan sahip `constexpr` oluşturucusu ve tüm temel sınıflar ve statik olmayan veri üyesi geçici olmayan sabit değer türleri olan. Bir sabit değer türü sabit değer türündeki her zaman olsa da, derleyici olarak değerlendirilmesi için herhangi bir şey değişmez değer türü kavramını içerir bir `constexpr` derleme zamanında.
 
 ## <a name="requirements"></a>Gereksinimler
 

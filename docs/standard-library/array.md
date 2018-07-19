@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2bf0a2dc049e2c3ac236af3591fddce82704b0b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9dcf61895e884eeb16a6461e91675a3f1688d91d
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849853"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955955"
 ---
 # <a name="ltarraygt"></a>&lt;Dizi&gt;
 
-Kapsayıcı Şablon sınıfı tanımlayan `array` ve çeşitli destekleyici şablonlar.
+Kapsayıcı Şablon sınıfı tanımlar **dizi** ve çeşitli destek şablonları.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,29 +37,29 @@ Kapsayıcı Şablon sınıfı tanımlayan `array` ve çeşitli destekleyici şab
 
 |örneği|Açıklama|
 |-|-|
-|[Dizi](../standard-library/array-class-stl.md)|Öğe sabit uzunluk dizisi depolar.|
-|[tuple_element](../standard-library/tuple-element-class-tuple.md)|Dizi öğesi türü sarmalar.|
+|[Dizi](../standard-library/array-class-stl.md)|Sabit uzunluklu dizi öğe depolar.|
+|[tuple_element](../standard-library/tuple-element-class-tuple.md)|Türü bir dizi öğesine sarmalar.|
 |[tuple_size](../standard-library/tuple-size-class-tuple.md)|Bir dizi öğesine boyutunu sarmalar.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator==](../standard-library/array-operators.md#op_eq_eq)|dizi karşılaştırma, eşit|
-|[operator!=](../standard-library/array-operators.md#op_neq)|dizi karşılaştırma, eşit değil|
-|[işleci\<](../standard-library/array-operators.md#op_lt)|dizi karşılaştırma, küçüktür|
-|[operator>=](../standard-library/array-operators.md#op_gt_eq)|dizi karşılaştırma, büyüktür veya eşittir|
-|[operator >](../standard-library/array-operators.md#op_gt)|dizi karşılaştırma, daha büyük|
-|[operator < =](../standard-library/array-operators.md#op_lt_eq)|dizi karşılaştırma küçüktür veya eşittir|
+|[operator==](../standard-library/array-operators.md#op_eq_eq)|dizi karşılaştırma veya eşit|
+|[operator!=](../standard-library/array-operators.md#op_neq)|dizi karşılaştırması, eşit değil|
+|[İşleci\<](../standard-library/array-operators.md#op_lt)|dizi karşılaştırması, küçüktür|
+|[operator>=](../standard-library/array-operators.md#op_gt_eq)|dizi karşılaştırması, büyüktür veya eşittir|
+|[operator >](../standard-library/array-operators.md#op_gt)|dizi karşılaştırması, büyüktür|
+|[operator < =](../standard-library/array-operators.md#op_lt_eq)|dizi karşılaştırması, küçüktür veya eşittir|
 
 ### <a name="functions"></a>İşlevler
 
 |İşlev|Açıklama|
 |-|-|
 |[get](../standard-library/array-functions.md#get)|Belirtilen dizi öğesi alın.|
-|[Değiştirme](../standard-library/array-functions.md#swap)|Bir dizinin içeriğini başka bir dizinin içeriğini değiş tokuş eder.|
+|[değiştirme](../standard-library/array-functions.md#swap)|Bir dizinin içeriğini başka bir dizinin içeriğini birbiriyle değiştirir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Tuple >](../standard-library/tuple.md)<br/>
+[\<Tanımlama grubu >](../standard-library/tuple.md)<br/>
 [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>

@@ -21,30 +21,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ac45a6edbe606ba445ed3ae58cfde348f83e4de
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c3b1f8a0cf466e5364907dd87eefe8bbdc0a003d
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356347"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848369"
 ---
 # <a name="implementing-ccomobject-ccomaggobject-and-ccompolyobject"></a>CComObject, CComAggObject ve CComPolyObject uygulama
-Şablon sınıfları [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), ve [CComPolyObject](../atl/reference/ccompolyobject-class.md) her zaman en çok türetilen devralma zincirinde sınıflarıdır. Tüm yöntemlere işlemeye sorumluluğu olan **IUnknown**: `QueryInterface`, `AddRef`, ve **sürüm**. Ayrıca, `CComAggObject` ve `CComPolyObject` (toplanmış nesneler için kullanıldığında) özel başvuru sayımı sağlamak ve `QueryInterface` semantiği iç bilinmeyen için gereklidir.  
+Şablon sınıfları [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), ve [CComPolyObject](../atl/reference/ccompolyobject-class.md) devralma zincirini en çok türetilen sınıflarda her zaman denetlersiniz. Tüm yöntemlere sorumluluğu olan `IUnknown`: `QueryInterface`, `AddRef`, ve `Release`. Ayrıca, `CComAggObject` ve `CComPolyObject` (toplanmış nesneler için kullanıldığında) özel başvuru sayımı sağlar ve `QueryInterface` semantiği iç bilinmeyen için gereklidir.  
   
- Olup olmadığını `CComObject`, `CComAggObject`, veya `CComPolyObject` kullanılan olup aşağıdaki makroları bir (veya hiçbiri) bildirdiğiniz üzerinde bağlıdır:  
+ Olmadığını `CComObject`, `CComAggObject`, veya `CComPolyObject` kullanılır olup aşağıdaki makroları bir (veya hiçbiri) bildirdiğiniz üzerinde bağlıdır:  
   
 |Makrosu|Efekt|  
 |-----------|------------|  
-|`DECLARE_NOT_AGGREGATABLE`|Her zaman kullanır `CComObject`.|  
-|`DECLARE_AGGREGATABLE`|Kullanan `CComAggObject` nesne toplanır varsa ve `CComObject` değilse. `CComCoClass` Bu makrosu içeren bunu hiçbiri **DECLARE_\*_AGGREGATABLE** makroları bildirildiğinden sınıfınızda, bu varsayılan olur.|  
-|`DECLARE_ONLY_AGGREGATABLE`|Her zaman kullanır `CComAggObject`. Nesne olmayan toplanır durumunda bir hata döndürür.|  
-|`DECLARE_POLY_AGGREGATABLE`|ATL bir örneğini oluşturur **CComPolyObject\<CYourClass >** zaman **IClassFactory::CreateInstance** olarak adlandırılır. Oluşturma sırasında dış bilinmeyen değerini denetlenir. Eğer öyleyse **NULL**, **IUnknown** toplanmayan bir nesne için uygulanır. Dış bilinmeyen değilse **NULL**, **IUnknown** toplanmış olan bir nesne için uygulanır.|  
+|DECLARE_NOT_AGGREGATABLE|Her zaman kullanan `CComObject`.|  
+|DECLARE_AGGREGATABLE|Kullanan `CComAggObject` nesne toplanırsa ve `CComObject` değilse. `CComCoClass` Bu makro içeren bunu DECLARE_ hiçbiri * _AGGREGATABLE makroları, bu varsayılan olur Sınıfınız içinde bildirilir.|  
+|DECLARE_ONLY_AGGREGATABLE|Her zaman kullanan `CComAggObject`. Nesne değil toplanırsa, bir hata döndürür.|  
+|DECLARE_POLY_AGGREGATABLE|ATL bir örneğini oluşturur **CComPolyObject\<CYourClass >** olduğunda `IClassFactory::CreateInstance` çağrılır. Oluşturma sırasında dış bilinmeyen değerini denetlenir. NULL ise `IUnknown` toplanmayan bir nesne için uygulanır. Dış bilinmeyen NULL değilse `IUnknown` toplanan nesne için uygulanır.|  
   
- Kullanmanın avantajı `CComAggObject` ve `CComObject` , uygulamasıdır **IUnknown** oluşturulan nesne türü için optimize edilmiştir. Örneği için hem iç bilinmeyen için bir başvuru sayımı hem de dış bilinmeyen bir işaretçi bir toplanmış nesnenin gerekiyor ancak toplanmayan bir nesnenin yalnızca bir başvuru sayısı gerekiyor.  
+ Kullanmanın avantajı `CComAggObject` ve `CComObject` uygulaması olan `IUnknown` oluşturulan nesne türü için optimize edilmiştir. Örneği için hem iç bilinmeyen başvuru sayısını hem de dış bilinmeyen bir işaretçiye toplanan nesne gereksinimlerini toplanmayan bir nesnenin yalnızca bir başvuru sayısı gerekiyor.  
   
- Kullanmanın avantajı `CComPolyObject` her ikisi de zorunda kalmamak olan `CComAggObject` ve `CComObject` toplanmış ve toplanmayan durumlarında, modüldeki. Tek bir `CComPolyObject` nesnesini işleme her iki durumda. Bu, yalnızca bir kopyasını vtable ve işlevlerin bir kopya, modülünde mevcut anlamına gelir. Vtable büyükse, bu modül boyutu önemli ölçüde düşürebilir. Ancak, vtable küçükse kullanarak `CComPolyObject` bir toplanmış veya toplanmayan nesne için iyileştirilmediğinden biraz daha büyük bir modül boyutu sonuçlanabilir olarak `CComAggObject` ve `CComObject`.  
+ Kullanmanın avantajı `CComPolyObject` ikisinin önlemek olan `CComAggObject` ve `CComObject` toplanmış ve toplanmayan durumlarında, modüldeki. Tek bir `CComPolyObject` nesnesi, her iki durumda işler. Bu işlevler bir kopyasını ve yalnızca bir kopyasını vtable modülünüzde mevcut anlamına gelir. Vtable büyükse, bu, modül boyutu önemli ölçüde düşürebilir. Ancak, vtable küçükse kullanarak `CComPolyObject` bir toplanmış veya toplanmayan nesnesi için iyileştirilmediğinden biraz daha büyük bir modül boyutu sonuçlanabilir olarak `CComAggObject` ve `CComObject`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL COM nesneleri temelleri](../atl/fundamentals-of-atl-com-objects.md)   
+ [ATL COM nesnelerinin temelleri](../atl/fundamentals-of-atl-com-objects.md)   
  [Toplama ve Sınıf Üreticisi Makroları](../atl/reference/aggregation-and-class-factory-macros.md)
 

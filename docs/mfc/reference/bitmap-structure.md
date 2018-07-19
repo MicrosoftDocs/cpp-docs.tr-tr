@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a60e4af31ba5da23f399f86175ed4fcf1e4ec14
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: ddc4868d7cc3c094ad2bb81b5d9706a2b749553d
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950310"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339353"
 ---
 # <a name="bitmap-structure"></a>BITMAP Yapısı
-**Bit eşlem** yapısını tanımlar yüksekliğini, genişlik, renk biçimi ve mantıksal bir bit eşlem bit değerleri **.**  
+**Bit eşlem** yapısını tanımlayan yükseklik, genişlik, renk biçimi ve mantıksal bir bit eşlem bit değerleri **.**  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,30 +42,30 @@ typedef struct tagBITMAP {  /* bm */
   
 #### <a name="parameters"></a>Parametreler  
  *bmType*  
- Bit eşlem türünü belirtir. Mantıksal bit eşlemler için bu üye 0 olmalıdır.  
+ Bit eşlem türünü belirtir. Bu üye, mantıksal bit eşlemler için 0 olmalıdır.  
   
  *bmWidth*  
- Bit eşlem genişliğini piksel cinsinden belirtir. Genişlik 0'dan büyük olmalıdır.  
+ Bit eşlem genişliğini piksel cinsinden belirtir. Genişliği 0'dan büyük olmalıdır.  
   
  *bmHeight*  
- Izgara satırlarında bit eşlem yüksekliğini belirtir. Yüksekliği 0'dan büyük olmalıdır.  
+ Izgara satır bit eşlem yüksekliğini belirtir. Yüksekliği 0'dan büyük olmalıdır.  
   
  *bmWidthBytes*  
- Her ızgara satır bayt sayısını belirtir. Grafik cihaz arabirimi (GDI) bir bit eşlem bit değerleri tamsayı (2-bayt) değerleri dizisi form varsayar olduğundan bu değer bir çift sayı olmalıdır. Diğer bir deyişle, *bmWidthBytes* \* 8 16 ne zaman elde değerine eşit veya daha büyük bir sonraki katları olmalıdır *bmWidth* üye çarpılarak *bmBitsPixel*  üyesi.  
+ Her bir ızgara satırda bulunan bayt sayısını belirtir. Bu değer, grafik cihaz arabirimi (GDI) bit eşlem bit değerleri tamsayı (2 baytlık) değerler dizisi form varsaydığından bir çift sayı olmalıdır. Diğer bir deyişle, *bmWidthBytes* \* 8, 16 ne zaman elde değerine eşit veya değerinden sonraki katları olmalıdır *bmWidth* üye çarpılarak *bmBitsPixel*  üyesi.  
   
  *bmPlanes*  
- Renk düzlemi sayısı eşleminde belirtir.  
+ Renk düzlemi sayısı bit eşleminde belirtir.  
   
  *bmBitsPixel*  
- Bir piksel tanımlamak için gerekli her düzlemi bitişik renk bit sayısını belirtir.  
+ Bir pikselin tanımlamak için gerekli her gezmeyi bitişik renk bit sayısını belirtir.  
   
  *bmBits*  
- Bit eşlem bit değerleri konumunu işaret. *BmBits* üye 1 bayt değerleri dizisi için uzun bir işaretçi olması gerekir.  
+ Bit eşlem bit değerleri konumunu işaret eder. *BmBits* üye 1-bayt değerleri dizisi uzun bir işaretçi olması gerekir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Şu anda kullanılan bit eşlem biçimler şunlardır: tek renkli ve rengi. Tek renkli bitmap 1-bit, 1-düzlemi biçimi kullanır. Her tarama 16 bit katı.  
+ Şu anda kullanılan bit eşlem biçimler şunlardır: tek renkli ve rengi. Bit eşlemi renkliye dönüştürmesi gerekirse bir 1 bit, 1-düzlemi biçimini kullanır. Her tarama 16 bit sayısının katı değil.  
   
- Taramaları şu şekilde bir tek renkli yükseklik bit eşlem için düzenlenmiş *n*:  
+ Taramaları gibi bir tek renkli yükseklik bit eşlem için düzenlenmiş *n*:  
   
  `Scan 0`  
   
@@ -81,15 +81,15 @@ typedef struct tagBITMAP {  /* bm */
   
  `Scan n-1`  
   
- Her iki siyah pikseldir tek renkli bir cihazda veya beyaz. Bit eşlem karşılık gelen bit 1 ise, piksel (beyaz) üzerinde çevrilir. Bit eşlem karşılık gelen bit 0 ise, piksel (siyah) çevrilir.  
+ Her iki siyah pikseldir tek renkli bir cihazda veya beyaz. Karşılık gelen bit eşlemde 1 ise, piksel (beyaz) üzerinde etkinleştirilir. Karşılık gelen bit eşlemde 0 ise, piksel (siyah) devre dışı etkinleştirilir.  
   
- Tüm cihazlar sahip bit eşlemler Destek **RC_BITBLT** bit kümesinde **RASTERCAPS** dizini [CDC::GetDeviceCaps](../../mfc/reference/cdc-class.md#getdevicecaps) üye işlevi.  
+ İçinde RASTERCAPS dizinini bit RC_BITBLT kümeniz bit eşlemler tüm cihazları destekleyin [CDC::GetDeviceCaps](../../mfc/reference/cdc-class.md#getdevicecaps) üye işlevi.  
   
- Her aygıt, kendi benzersiz renk biçime sahip. Bir bit eşlem bir aygıttan başka bir bilgisayara aktarmak için kullanılması [GetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd144879) ve [SetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd162973) Windows çalışır.  
+ Her bir cihaz kendi benzersiz renk biçimi vardır. Bir CİHAZDAN bir bit eşlem aktarmak için kullanılması [GetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd144879) ve [SetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd162973) Windows işlevleri.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** wingdi.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CBitmap::CreateBitmapIndirect](../../mfc/reference/cbitmap-class.md#createbitmapindirect)

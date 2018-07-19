@@ -36,16 +36,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f46e2d7f6fd7337965d0b5dcf5b5cfe8d7a53688
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0266c33731bdbd70fe9c9fb26a33878fc5d1c495
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846317"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957691"
 ---
 # <a name="binomialdistribution-class"></a>binomial_distribution Sınıfı
 
-Terimli dağıtım oluşturur.
+Bir binom açılımı üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,32 +81,32 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*İnt'i* tamsayı sonuç türü varsayılan olarak `int`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*İnt'i* tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* Tekdüzen rastgele sayı oluşturucu altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG* Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcı tarafından belirtilen integral değerleri üreten bir dağıtım şablonu sınıf tanımlar türü veya türü `int` göre terimli dağıtım ayrık olasılık işlevi sağlanırsa, dağıtılmış. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı tanımlar kullanıcı tanımlı bir integral değerini üreten bir dağıtım türü veya tür **int** göre binom açılımı ayrık olasılık işlevi sağlanmazsa, dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[binomial_distribution](#binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|
 |`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#param_type)|
 
-Özellik üyelerini `t()` ve `p()` şu anda depolanan dağıtım dönüş parametre değerleri `t` ve `p` sırasıyla.
+Özellik üyelerini `t()` ve `p()` şuan depolanan dağıtım parametre değerlerini döndürmek *t* ve *p* sırasıyla.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
 
-`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
 
-`operator()` Üye işlevleri URNG motoru, geçerli parametre paket veya belirtilen parametre paket göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Wolfram MathWorld makaleyi terimli dağıtım ayrık olasılık işlevi hakkında ayrıntılı bilgi için bkz: [terimli dağıtım](http://go.microsoft.com/fwlink/p/?linkid=398469).
+İki terimli dağıtım ayrık olasılık işlevi hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [binom açılımı](http://go.microsoft.com/fwlink/p/?linkid=398469).
 
 ## <a name="example"></a>Örnek
 
@@ -163,7 +163,7 @@ int main()
 }
 ```
 
-İlk çalıştırın:
+İlk çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -187,7 +187,7 @@ Histogram for 100 samples:
     12 :
 ```
 
-İkinci çalıştırın:
+İkinci olarak çalıştırın:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -241,7 +241,7 @@ Histogram for 100 samples:
 
 ## <a name="binomial_distribution"></a>  binomial_distribution::binomial_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit binomial_distribution(result_type t = 1, double p = 0.5);
@@ -254,19 +254,19 @@ explicit binomial_distribution(const param_type& parm);
 
 *p* `p` dağıtım parametresi.
 
-*parametre* `param_type` dağıtım oluşturmak için kullanılan yapısı.
+*parametre* `param_type` dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0 ≤ t` ve `0.0 ≤ p ≤ 1.0`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `p` değeri tutan değeri *p* ve, depolanan `t` değeri tutan değeri *t*.
+İlk Oluşturucu bir nesne oluşturur, saklı *p* değerine değeri *p* ve saklı *t* değerine değeri *t*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  binomial_distribution::param_type
 
-Dağıtım tüm parametreleri depolar.
+Dağıtım, tüm parametreleri depolar.
 
 ```cpp
 struct param_type {
@@ -286,13 +286,13 @@ struct param_type {
 
 *p* `p` dağıtım parametresi.
 
-*sağ* `param_type` için karşılaştırılacak nesne.
+*doğru* `param_type` için karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0 ≤ t` ve `0.0 ≤ p ≤ 1.0`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

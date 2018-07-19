@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a31928bc98b8b2fd403f1db40c040357c388b104
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 6fe098472eb31f0bd9b185adfa6793f7061a35ac
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952293"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338740"
 ---
 # <a name="cdaoquerydefinfo-structure"></a>CDaoQueryDefInfo Yapısı
 `CDaoQueryDefInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan QueryDefs hakkında bilgiler içerir.  
@@ -46,72 +46,72 @@ struct CDaoQueryDefInfo
   
 #### <a name="parameters"></a>Parametreler  
  *m_strName*  
- QueryDefs adlandıran. Daha fazla bilgi için DAO Yardımı'ndaki "Name özelliği" konusuna bakın. Çağrı [CDaoQueryDef::GetName](../../mfc/reference/cdaoquerydef-class.md#getname) doğrudan bu özelliği alınamadı.  
+ QueryDefs adlandıran. Daha fazla bilgi için "Name özelliği" DAO Yardım konusuna bakın. Çağrı [CDaoQueryDef::GetName](../../mfc/reference/cdaoquerydef-class.md#getname) doğrudan bu özelliği alınamadı.  
   
  *m_nType*  
  QueryDefs işletimsel türünü belirten bir değer. Değerin aşağıdakilerden biri olabilir:  
   
-- **dbQSelect** seçin — sorgu kayıtları seçer.  
+- `dbQSelect` Seçin — sorgu kayıtları seçer.  
   
-- **dbQAction** eylem — sorgu taşır veya veriler değiştiğinde, ancak kayıt döndürmez.  
+- `dbQAction` Eylem — sorgu taşır veya veriler değiştiğinde, ancak kayıt döndürmez.  
   
-- **dbQCrosstab** çapraz — sorgu bir elektronik tablo benzeri biçiminde verileri döndürür.  
+- `dbQCrosstab` Çapraz — sorgu bir elektronik tablo benzer biçimde veri döndürür.  
   
-- **dbQDelete** silmek — sorgu belirtilen satır kümesini siler.  
+- `dbQDelete` Sil: Belirtilen satır kümesi sorgu siler.  
   
-- **dbQUpdate** güncelleştirme — sorgu bir kayıt kümesini değiştirir.  
+- `dbQUpdate` Güncelleştirme — sorgu kayıt kümesini değiştirir.  
   
-- **dbQAppend** Append — sorguyu yeni kayıtlar tabloyu veya sorguyu sonuna ekler.  
+- `dbQAppend` Ekleme — sorgu yeni kayıtlar tabloyu veya sorguyu sonuna ekler.  
   
-- **dbQMakeTable** tablo oluşturma — sorgu kayıt kümesinden yeni bir tablo oluşturur.  
+- `dbQMakeTable` Tablo oluşturma — sorgu kayıt kümesinden yeni bir tablo oluşturur.  
   
-- **dbQDDL** veri tanımı — tablolar ya da kendi bölümleri yapısını sorgu etkiler.  
+- `dbQDDL` Veri tanımı — sorgu tablolar veya kendi bölümleri yapısını etkiler.  
   
-- **dbQSQLPassThrough** doğrudan — SQL deyimini doğrudan Ara işleme olmadan veritabanı arka ucu geçirilir.  
+- `dbQSQLPassThrough` Doğrudan — SQL deyimini doğrudan Ara işlem veritabanı arka ucu geçirilir.  
   
-- **dbQSetOperation** birleşim — sorgu belirtilen tüm kayıtların iki veri içeren bir anlık görüntü türündeki kayıt kümesi oluşturur veya daha fazla yinelenen kayıtları tablolarla kaldırılamaz. Yinelemeleri dahil etmek için anahtar sözcüğünü ekleyin **tüm** querydef's SQL deyiminde.  
+- `dbQSetOperation` Birleşim — sorgu belirtilen tüm kayıtlarda bulunan iki veri içeren bir anlık görüntü türü kayıt kümesi nesnesi oluşturur. veya daha fazla yinelenen kayıtları tablolarla kaldırıldı. Yinelemeleri dahil etmek için anahtar sözcüğü ekleme **tüm** querydef'ın SQL deyiminde.  
   
-- **dbQSPTBulk** ile kullanılan **dbQSQLPassThrough** kayıtları döndürmeyen bir sorgu belirtmek için.  
+- `dbQSPTBulk` İle kullanılan `dbQSQLPassThrough` kayıtları döndürmeyen bir sorgu belirtmek için.  
   
 > [!NOTE]
->  SQL doğrudan sorgu oluşturmak için ayarlamayın **dbQSQLPassThrough** sabit. QueryDefs oluşturmak ve Connect özelliğini ayarladığınızda, bu Microsoft Jet veritabanı altyapısı tarafından otomatik olarak ayarlanır.  
+>  SQL doğrudan sorgu oluşturmak için ayarlamayın `dbQSQLPassThrough` sabit. QueryDefs oluştururken ve Connect özelliğini ayarlayın. Bu Microsoft Jet veritabanı altyapısı tarafından otomatik olarak ayarlanır.  
   
- Daha fazla bilgi için DAO Yardımı'ndaki "Type özelliği" konusuna bakın.  
+ Daha fazla bilgi için DAO Yardımı'nda "Type özelliği" konusuna bakın.  
   
  *m_dateCreated*  
- Tarih ve saat querydef oluşturuldu. Doğrudan querydef oluşturulduğu tarihi almak için arama [GetDateCreated](../../mfc/reference/cdaotabledef-class.md#getdatecreated) üye işlevini `CDaoTableDef` tabloyla ilişkili nesne. Açıklamalar aşağıda daha fazla bilgi için bkz. Ayrıca "Notes, LastUpdated özellikleri" DAO Yardım konusuna bakın.  
+ Tarih ve saat querydef oluşturuldu. Doğrudan querydef oluşturulduğu tarih almak için arama [GetDateCreated](../../mfc/reference/cdaotabledef-class.md#getdatecreated) üye işlevinin `CDaoTableDef` tabloyla ilişkili nesne. Açıklamaları aşağıda daha fazla bilgi için bkz. Ayrıca DAO Yardımı'ndaki "Notes LastUpdated Özellikler" bölümüne bakın.  
   
  *m_dateLastUpdated*  
- Tarih ve saat için querydef yapılan en son değişikliğin. Tablonun son güncelleştirilen tarih doğrudan almak için arama [GetDateLastUpdated](../../mfc/reference/cdaoquerydef-class.md#getdatelastupdated) querydef üye işlevini. Açıklamalar aşağıda daha fazla bilgi için bkz. Ve DAO Yardımı'ndaki "Notes, LastUpdated özellikleri" konusuna bakın.  
+ Tarih ve saat querydef yapılan en son değişikliği. Doğrudan tablonun son güncelleme tarihi almak için arama [GetDateLastUpdated](../../mfc/reference/cdaoquerydef-class.md#getdatelastupdated) querydef üye işlevi. Açıklamaları aşağıda daha fazla bilgi için bkz. Ve DAO Yardımı'ndaki "Notes LastUpdated Özellikler" bölümüne bakın.  
   
  *m_bUpdatable*  
- Değişiklikleri querydef nesneye yapılan olup olmadığını gösterir. Bu özellik ise **TRUE**querydef güncelleştirilebilir; Aksi takdirde, bu değildir. Güncelleştirilebilir querydef nesnesinin sorgu tanımı değiştirilebilir anlamına gelir. QueryDefs güncelleştirilebilir özellik kümesine **TRUE** elde edilen kayıt kümesi güncelleştirilebilir değilse bile sorgu tanımı, güncelleştirilebilir değilse. Bu özellik doğrudan almak için querydef's çağrısı [CanUpdate](../../mfc/reference/cdaoquerydef-class.md#canupdate) üye işlevi. Daha fazla bilgi için DAO Yardımı'ndaki "güncelleştirilebilir özellik" konusuna bakın.  
+ QueryDefs için değişiklik yapılamaz olup olmadığını gösterir. Bu özellik TRUE ise, querydef güncelleştirilebilir; Aksi takdirde, bu değildir. Güncelleştirilebilir querydef nesnesinin sorgu tanımı değiştirilebilir anlamına gelir. Sorgu tanımı güncelleştirilebilir, sonuçta elde edilen kayıt güncelleştirilebilir olmasa bile QueryDefs güncelleştirilebilir özelliği TRUE olarak ayarlandığında. Bu özellik doğrudan almak için querydef ait arama [CanUpdate](../../mfc/reference/cdaoquerydef-class.md#canupdate) üye işlevi. Daha fazla bilgi için DAO Yardımı'nda "güncelleştirilebilir özelliği" konusuna bakın.  
   
  *m_bReturnsRecords*  
- Dış veritabanı için SQL doğrudan sorgu kayıt döndürüp döndürmediğini gösterir. Bu özellik ise **doğru**, sorgu kayıtları döndürür. Bu özellik doğrudan almak için arama [CDaoQueryDef::GetReturnsRecords](../../mfc/reference/cdaoquerydef-class.md#getreturnsrecords). Tüm SQL doğrudan sorguları dış veritabanlarına kayıtları döndürür. Örneğin, bir SQL **güncelleştirme** deyimi, bir SQL durumdayken kayıt dönmeden kayıtları güncelleştirmeleri **seçin** deyimi kayıtları döndürür. Daha fazla bilgi için DAO Yardımı'ndaki "ReturnsRecords özelliğini" konusuna bakın.  
+ Harici bir veritabanına doğrudan geçirilen bir SQL sorgu kayıt döndürüp döndürmediğini gösterir. Bu özellik TRUE ise, sorgu kayıtları döndürür. Bu özellik doğrudan almak için arama [CDaoQueryDef::GetReturnsRecords](../../mfc/reference/cdaoquerydef-class.md#getreturnsrecords). Dış veritabanları için tüm SQL geçiş sorguları, kayıtları döndürür. Örneğin, bir SQL **güncelleştirme** deyimi, kayıt sırasında bir SQL dönmeden kayıtları güncelleştirir **seçin** deyimi kayıtları döndürür. Daha fazla bilgi için DAO Yardımı'nda "ReturnsRecords özelliğini" konusuna bakın.  
   
  *m_strSQL*  
- Querydef nesnesi tarafından çalıştırılan sorguyu tanımlayan SQL deyimi. SQL özellik sorgu yürütülürken nasıl kayıtları, gruplandırılmış ve sıralı seçileceğini belirleyen SQL deyimi içerir. Dynaset veya anlık görüntü türü kayıt kümesi nesnesinde içermek üzere kayıtları seçmek için sorgu kullanabilirsiniz. Veri kayıtları dönmeden değiştirmek için Toplu sorguları da tanımlayabilirsiniz. Doğrudan querydef's çağırarak bu özelliğin değerini alabilir [GetSQL](../../mfc/reference/cdaoquerydef-class.md#getsql) üye işlevi.  
+ QueryDefs tarafından çalıştırılan bir sorguyu tanımlayan bir SQL deyimi. Sorgu yürütülürken nasıl kayıtları, gruplandırılmış ve sıralı seçileceğini belirleyen SQL deyimi SQL özelliğini içerir. Sorgu, bir dinamik veya anlık görüntü türü kayıt kümesi nesnesi eklemek için kayıtları seçmek için kullanabilirsiniz. Toplu sorgular kayıt döndürdüğünü olmadan verileri değiştirmek için de tanımlayabilirsiniz. Doğrudan querydef's çağırarak bu özelliğin değerini alabilir [GetSQL](../../mfc/reference/cdaoquerydef-class.md#getsql) üye işlevi.  
   
  *m_strConnect*  
- Geçiş sorguda kullanılan bir veritabanı kaynak hakkında bilgi sağlar. Bu bilgiler bir bağlantı dizesi biçimi alır. Daha fazla bilgi için ilgili bağlantı dizesi ve bu özelliğin değerini doğrudan alma hakkında daha fazla bilgi için bkz: [CDaoDatabase::GetConnect](../../mfc/reference/cdaodatabase-class.md#getconnect) üye işlevi.  
+ Doğrudan bir sorguda kullanılan bir veritabanının kaynak hakkında bilgi sağlar. Bu bilgiler bir bağlantı dizesi alır. Daha fazla bilgi için ilgili bağlantı dizesi ve doğrudan bu özelliğin değerini alma hakkında daha fazla bilgi için bkz: [CDaoDatabase::GetConnect](../../mfc/reference/cdaodatabase-class.md#getconnect) üye işlevi.  
   
  *m_nODBCTimeout*  
- Microsoft Jet veritabanı altyapısı bir zaman aşımı hatası önce bekleyeceği saniye sayısını bir ODBC veritabanı sorgusu oluşur. Microsoft SQL Server gibi bir ODBC veritabanı kullanılırken ağ trafiği veya ODBC sunucusunun kullanımını nedeniyle gecikmeler olabilir. Sonsuza kadar beklemek yerine, bir hata üretir önce Microsoft Jet altyapısı ne kadar bekleyeceğini belirtebilirsiniz. Varsayılan zaman aşımı değeri 60 saniyedir. Doğrudan querydef's çağırarak bu özelliğin değerini alabilir [GetODBCTimeout](../../mfc/reference/cdaoquerydef-class.md#getodbctimeout) üye işlevi. Daha fazla bilgi için DAO Yardımı'ndaki "ODBCTimeout özelliği" konusuna bakın.  
+ Microsoft Jet veritabanı altyapısı bir zaman aşımı hatası önce bekleyeceği saniye sayısını bir ODBC veritabanı üzerinde bir sorgu çalıştırıldığında gerçekleşir. Microsoft SQL Server gibi bir ODBC veritabanı kullanılırken ağ trafiği veya ODBC sunucu kullanımının nedeniyle gecikmeler olabilir. Sonsuza kadar beklemek yerine, bir hata oluşturur önce Microsoft Jet motoru bekleyeceği süreyi belirtebilirsiniz. Varsayılan zaman aşımı değer 60 saniyedir. Doğrudan querydef's çağırarak bu özelliğin değerini alabilir [GetODBCTimeout](../../mfc/reference/cdaoquerydef-class.md#getodbctimeout) üye işlevi. Daha fazla bilgi için DAO Yardımı'nda "ODBCTimeout özelliği" konusuna bakın.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıfın bir nesnesi querydef olan [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). Birincil, ikincil ve yukarıdaki tüm başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) üye işlevi sınıfında `CDaoDatabase`.  
+ Sınıfın bir nesnesi querydef olan [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). Birincil, ikincil ve yukarıdaki tüm başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) sınıf üyesi işlevinde `CDaoDatabase`.  
   
- Tarafından alınan bilgileri [CDaoDatabase::GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) üye işlevi depolanır bir `CDaoQueryDefInfo` yapısı. Çağrı `GetQueryDefInfo` veritabanı nesnesinin olan QueryDefs koleksiyonu QueryDefs depolanır. `CDaoQueryDefInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoQueryDefInfo` nesnesi. Sınıfı `CDaoDatabase` de doğrudan döndürülen özelliklerin tümünü erişmek için üye işlevleri sağlayan bir `CDaoQueryDefInfo` büyük olasılıkla nadiren çağırmanız gerekir böylece nesne `GetQueryDefInfo`.  
+ Tarafından alınan bilgileri [CDaoDatabase::GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) üye işlevi depolanan bir `CDaoQueryDefInfo` yapısı. Çağrı `GetQueryDefInfo` QueryDefs olan QueryDefs koleksiyonu içinde depolanan veritabanı nesnesi için. `CDaoQueryDefInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoQueryDefInfo` nesne. Sınıf `CDaoDatabase` döndürülen tüm özellikler doğrudan erişmek için üye işlevlerini de sağlayan bir `CDaoQueryDefInfo` nesne muhtemelen seyrek çağırmak ihtiyacınız olacak şekilde `GetQueryDefInfo`.  
   
- QueryDefs alanları veya parametre koleksiyonu yeni bir alan veya parametre nesnesi ekleme, temel alınan veritabanı yeni nesne için belirtilen veri türü desteklemiyorsa özel durum oluşur.  
+ QueryDefs alanlar veya parametre koleksiyonuna yeni bir alan veya parametre nesne ekleme, temel alınan veritabanına yeni nesne için belirtilen veri türü desteklemiyorsa bir özel durum oluşturulur.  
   
- Tarih ve saat ayarları üzerinde querydef oluşturulmuş veya son güncelleştirme bilgisayardan türetilir. Çok kullanıcılı bir ortamda kullanıcıların bu ayarları doğrudan kullanarak dosya sunucusu gelen almalısınız **net zaman** Notes ve LastUpdated özelliği ayarlarında Tutarsızlıklardan kaçınmak için komutu.  
+ Tarih ve saat ayarları üzerinde querydef oluşturulduğu veya en son güncelleştirilen bilgisayardan türetilir. Çok kullanıcılı bir ortamda kullanıcılar bu ayarları dosya sunucusu kullanarak doğrudan gelen almalısınız **net zaman** Notes ve LastUpdated özelliği ayarlarında Tutarsızlıklardan kaçınmak için komutu.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdao.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CDaoQueryDef sınıfı](../../mfc/reference/cdaoquerydef-class.md)   
  [CDaoDatabase Sınıfı](../../mfc/reference/cdaodatabase-class.md)

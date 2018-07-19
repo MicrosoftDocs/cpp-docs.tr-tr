@@ -1,5 +1,5 @@
 ---
-title: CCommandLineInfo sınıfı | Microsoft Docs
+title: Ccommandlineınfo sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -38,15 +38,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d292c3f48f0a375fbd914cf287f1e8d2cef5c6c3
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 0b0f48f1b845f84804a3d9f14992fa61a46de12b
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952391"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336315"
 ---
-# <a name="ccommandlineinfo-class"></a>CCommandLineInfo sınıfı
-Uygulama başlangıç komut satırında Ayrıştırma sırasında yardımları.  
+# <a name="ccommandlineinfo-class"></a>Ccommandlineınfo sınıfı
+Uygulama başlangıcında komut satırını ayrıştırma Yardımcıları.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -60,46 +60,46 @@ class CCommandLineInfo : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCommandLineInfo::CCommandLineInfo](#ccommandlineinfo)|Varsayılan yapıları `CCommandLineInfo` nesnesi.|  
+|[CCommandLineInfo::CCommandLineInfo](#ccommandlineinfo)|Varsayılan yapıları `CCommandLineInfo` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCommandLineInfo::ParseParam](#parseparam)|Bu geri çağırma bağımsız parametreleri ayrıştırmak için geçersiz kılar.|  
+|[CCommandLineInfo::ParseParam](#parseparam)|Bu geri çağırma bağımsız parametreleri ayrıştırmak için geçersiz kılın.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCommandLineInfo::m_bRunAutomated](#m_brunautomated)|Komut satırı gösterir `/Automation` seçeneği bulundu.|  
-|[CCommandLineInfo::m_bRunEmbedded](#m_brunembedded)|Komut satırı gösterir `/Embedding` seçeneği bulundu.|  
-|[CCommandLineInfo::m_bShowSplash](#m_bshowsplash)|Karşılama ekranı gösterilmesi gerekip gerekmediğini gösterir.|  
-|[CCommandLineInfo::m_nShellCommand](#m_nshellcommand)|İşlenmek üzere Kabuk komut gösterir.|  
-|[CCommandLineInfo::m_strDriverName](#m_strdrivername)|Sürücü gösterir Kabuk komut yazdırma; istiyorsanız adı Aksi takdirde boş.|  
-|[CCommandLineInfo::m_strFileName](#m_strfilename)|Açılacak veya yazdırılan dosya adını gösterir; Kabuk komutu yeni veya DDE ise boş.|  
-|[CCommandLineInfo::m_strPortName](#m_strportname)|Bağlantı noktası belirten Kabuk komut yazdırma; istiyorsanız adı Aksi takdirde boş.|  
-|[CCommandLineInfo::m_strPrinterName](#m_strprintername)|Yazıcı gösterir Kabuk komut yazdırma; istiyorsanız adı Aksi takdirde boş.|  
-|[CCommandLineInfo::m_strRestartIdentifier](#m_strrestartidentifier)|Uygulama yeniden başlatma Yöneticisi'ni yeniden, benzersiz yeniden tanımlayıcısı için yeniden başlatma Yöneticisi'ni belirtir.|  
+|[CCommandLineInfo::m_bRunAutomated](#m_brunautomated)|Komut satırı belirtir `/Automation` seçeneği bulunamadı.|  
+|[CCommandLineInfo::m_bRunEmbedded](#m_brunembedded)|Komut satırı belirtir `/Embedding` seçeneği bulunamadı.|  
+|[CCommandLineInfo::m_bShowSplash](#m_bshowsplash)|Giriş ekranı gösterilmesi gerekip gerekmediğini gösterir.|  
+|[CCommandLineInfo::m_nShellCommand](#m_nshellcommand)|İşlenecek Kabuk komutu belirtir.|  
+|[CCommandLineInfo::m_strDriverName](#m_strdrivername)|Sürücüyü belirten Kabuk komutu Yazdır; ise adı Aksi takdirde boş.|  
+|[CCommandLineInfo::m_strFileName](#m_strfilename)|Açılan kopyalanamayacağı veya dosya adını gösterir. Kabuk komutu yeni veya DDE ise boş.|  
+|[CCommandLineInfo::m_strPortName](#m_strportname)|Bağlantı noktasını belirten Kabuk komutu Yazdır; ise adı Aksi takdirde boş.|  
+|[CCommandLineInfo::m_strPrinterName](#m_strprintername)|Yazıcı gösterir Kabuk komutu Yazdır; ise adı Aksi takdirde boş.|  
+|[CCommandLineInfo::m_strRestartIdentifier](#m_strrestartidentifier)|Uygulama yeniden başlatma Yöneticisi'ni yeniden için yeniden başlatma Yöneticisi yeniden benzersiz tanımlayıcısını belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- MFC uygulaması genellikle bu sınıfta yerel bir örneğini oluşturacak [InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) , uygulama nesnesinin işlevi. Bu nesne sonra geçirilir [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline), art arda çağıran [ParseParam](#parseparam) doldurmak için `CCommandLineInfo` nesnesi. `CCommandLineInfo` Nesne için geçirilen sonra [CWinApp::ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand) bayrakları ve komut satırı bağımsız değişkenleri işlemek için.  
+ Bir MFC uygulaması genellikle bu sınıfta yerel bir örneğini oluşturur [InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) işlevi, uygulama nesnesi. Bu nesne için geçirilir [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline), sürekli olarak çağıran [ParseParam](#parseparam) doldurmak için `CCommandLineInfo` nesne. `CCommandLineInfo` Nesne için geçirilen ardından [CWinApp::ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand) bayrakları ve komut satırı bağımsız değişkenleri işlemek için.  
   
- Aşağıdaki komut satırı seçenekleri ve parametreleri kapsüllemek için bu nesneyi kullanabilirsiniz:  
+ Bu nesne, aşağıdaki komut satırı seçeneklerini ve parametrelerini yalıtılacak kullanabilirsiniz:  
   
-|Komut satırı bağımsız değişkeni|Yürütülen komut|  
+|komut satırı bağımsız değişkeni|Yürütülen komut|  
 |----------------------------|----------------------|  
 |*Uygulama*|Yeni dosya.|  
 |*Uygulama* dosya adı|Dosya Aç.|  
-|*Uygulama* `/p` dosya adı|Dosyayı varsayılan yazıcıya yazdırın.|  
-|*Uygulama* `/pt` filename yazıcı sürücüsü bağlantı noktası|Belirtilen yazıcı dosyaya yazdırın.|  
-|*Uygulama* `/dde`|Başlatma ve DDE komutu bekler.|  
-|*Uygulama* `/Automation`|OLE Otomasyon sunucusu olarak başlat.|  
-|*Uygulama* `/Embedding`|Katıştırılmış OLE öğeyi düzenlemek başlatma.|  
-|*Uygulama* `/Register`<br /><br /> *Uygulama* `/Regserver`|Herhangi bir kayıt görevi gerçekleştirmek için uygulama bildirir.|  
+|*Uygulama* `/p` dosya adı|Varsayılan yazıcı dosyaya yazdırır.|  
+|*Uygulama* `/pt` filename yazıcı sürücüsü bağlantı noktası|Dosya belirtilen yazıcıya yazdırın.|  
+|*Uygulama* `/dde`|Başlatma ve await DDE komutu.|  
+|*Uygulama* `/Automation`|OLE Otomasyon sunucusu Başlat.|  
+|*Uygulama* `/Embedding`|Katıştırılmış OLE öğesini düzenlemek Başlat.|  
+|*Uygulama* `/Register`<br /><br /> *Uygulama* `/Regserver`|Herhangi bir kayıt görevlerini gerçekleştirmek için uygulama bildirir.|  
 |*Uygulama* `/Unregister`<br /><br /> *Uygulama* `/Unregserver`|Herhangi bir kayıt silme görevi gerçekleştirmek için uygulama bildirir.|  
   
- Öğesinden yeni bir sınıf türetin `CCommandLineInfo` diğer bayrakları ve parametre değerlerini işlemek için. Geçersiz kılma [ParseParam](#parseparam) yeni bayrakları işlemek için.  
+ Öğesinden yeni bir sınıf türetin `CCommandLineInfo` diğer bayraklar ve parametre değerlerini işlemek için. Geçersiz kılma [ParseParam](#parseparam) yeni bayrakları işlemek için.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -110,59 +110,59 @@ class CCommandLineInfo : public CObject
  **Başlık:** afxwin.h  
   
 ##  <a name="ccommandlineinfo"></a>  CCommandLineInfo::CCommandLineInfo  
- Bu oluşturucu oluşturur bir `CCommandLineInfo` varsayılan değerleri içeren nesne.  
+ Bu oluşturucu bir `CCommandLineInfo` varsayılan değerleri olan nesne.  
   
 ```  
 CCommandLineInfo();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Giriş ekranı göstermek için varsayılan değer ( `m_bShowSplash=TRUE`) ve Dosya menüsünde Yeni komutu yürütülemedi ( `m_nShellCommand` **NewFile =**).  
+ Giriş ekranı göstermek için varsayılan değer ( `m_bShowSplash=TRUE`) ve Dosya menüsünden Yeni bir komut yürütmek için ( `m_nShellCommand` **NewFile =**).  
   
- Uygulama framework çağrıları [ParseParam](#parseparam) bu nesnenin veri üyeleri doldurmak için.  
+ Uygulama framework çağrıları [ParseParam](#parseparam) veri üyeleri, bu nesnenin doldurmak için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#54](../../mfc/codesnippet/cpp/ccommandlineinfo-class_1.cpp)]  
   
 ##  <a name="m_brunautomated"></a>  CCommandLineInfo::m_bRunAutomated  
- Belirten `/Automation` bayrağı, komut satırında bulundu.  
+ Bildiren `/Automation` bayrağı, komut satırında bulundu.  
   
 ```  
 BOOL m_bRunAutomated;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `TRUE`, bu OLE Otomasyon sunucusu olarak başlatma anlamına gelir.  
+ TRUE ise bu OLE Otomasyon sunucusu başlatılması anlamına gelir.  
   
 ##  <a name="m_brunembedded"></a>  CCommandLineInfo::m_bRunEmbedded  
- Belirten `/Embedding` bayrağı, komut satırında bulundu.  
+ Bildiren `/Embedding` bayrağı, komut satırında bulundu.  
   
 ```  
 BOOL m_bRunEmbedded;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `TRUE`, bu katıştırılmış OLE öğeyi düzenleme için başlatma anlamına gelir.  
+ TRUE ise bu katıştırılmış bir OLE öğesini düzenleme için başlatılması anlamına gelir.  
   
 ##  <a name="m_bshowsplash"></a>  CCommandLineInfo::m_bShowSplash  
- Giriş ekranı görüntüleneceğini gösterir.  
+ Karşılama ekranında görüntülenmesi gerektiğini gösterir.  
   
 ```  
 BOOL m_bShowSplash;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `TRUE`, bu uygulama başlatma sırasında görüntülenmesi için bu ekranı anlamına gelir. Varsayılan uygulaması [ParseParam](#parseparam) bu veri üyesi ayarlar `TRUE` varsa [m_nShellCommand](#m_nshellcommand) eşittir `CCommandLineInfo::FileNew`.  
+ TRUE ise bu, bu uygulama için giriş ekranı başlatma sırasında gösterilecek anlamına gelir. Varsayılan uygulaması [ParseParam](#parseparam) bu veri üyesi gerekirse TRUE ayarlar [m_nShellCommand](#m_nshellcommand) eşittir `CCommandLineInfo::FileNew`.  
   
 ##  <a name="m_nshellcommand"></a>  CCommandLineInfo::m_nShellCommand  
- Bu örnek uygulama için kabuk komut gösterir.  
+ Uygulamanın bu örneği için kabuk komutu belirtir.  
   
 ```  
 m_nShellCommand;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türü bu veri üyesi için tanımlanan aşağıdaki numaralandırılmış türü olan `CCommandLineInfo` sınıfı.  
+ Bu veri üyesi için tanımlanan aşağıdaki numaralandırılmış türü türüdür `CCommandLineInfo` sınıfı.  
   
 ```  
 enum {  
@@ -180,23 +180,23 @@ enum {
   
  Bu değerleri kısa bir açıklaması için aşağıdaki listeye bakın.  
   
-- `CCommandLineInfo::FileNew` Hiçbir dosya adı komut satırında bulundu gösterir.  
+- `CCommandLineInfo::FileNew` Dosya adı, komut satırında bulunamadığını gösterir.  
   
-- `CCommandLineInfo::FileOpen` Komut satırında bir dosya adı bulundu ve aşağıdaki bayraklar hiçbiri komut satırında bulundu gösterir: `/p`, `/pt`, `/dde`.  
+- `CCommandLineInfo::FileOpen` Bir dosya adı komut satırında bulundu ve komut satırında aşağıdaki bayraklar hiçbiri bulunamadı gösterir: `/p`, `/pt`, `/dde`.  
   
-- `CCommandLineInfo::FilePrint` Belirten `/p` bayrağı, komut satırında bulundu.  
+- `CCommandLineInfo::FilePrint` Bildiren `/p` bayrağı, komut satırında bulundu.  
   
-- `CCommandLineInfo::FilePrintTo` Belirten `/pt` bayrağı, komut satırında bulundu.  
+- `CCommandLineInfo::FilePrintTo` Bildiren `/pt` bayrağı, komut satırında bulundu.  
   
-- `CCommandLineInfo::FileDDE` Belirten `/dde` bayrağı, komut satırında bulundu.  
+- `CCommandLineInfo::FileDDE` Bildiren `/dde` bayrağı, komut satırında bulundu.  
   
-- `CCommandLineInfo::AppRegister` Belirten `/Register` veya `/Regserver` bayrağı, komut satırında bulundu ve uygulama kaydetmeniz istenir.  
+- `CCommandLineInfo::AppRegister` Bildiren `/Register` veya `/Regserver` bayrağı, komut satırında bulundu ve uygulamayı kaydetmek için istendi.  
   
-- `CCommandLineInfo::AppUnregister` Belirten `/Unregister` veya `/Unregserver` uygulama sorulan kaydı silinemedi.  
+- `CCommandLineInfo::AppUnregister` Bildiren `/Unregister` veya `/Unregserver` uygulama sorulan kaydını kaldırmak için.  
   
-- `CCommandLineInfo::RestartByRestartManager` Uygulama yeniden başlatma Yöneticisi tarafından başlatıldı gösterir.  
+- `CCommandLineInfo::RestartByRestartManager` Uygulama yeniden başlatma Yöneticisi tarafından yeniden başlatıldı gösterir.  
   
-- `CCommandLineInfo::FileNothing` Başlangıçta yeni bir MDI alt pencere görüntülemeyi devre dışı bırakır. Tasarım gereği, Uygulama Sihirbazı tarafından oluşturulan MDI uygulamaları başlatma sırasında yeni bir alt pencere görüntüler. Bu özelliği devre dışı bırakmak için bir uygulamanın kullanabileceği `CCommandLineInfo::FileNothing` çağırdığında Kabuk komut olarak [ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand). `ProcessShellCommand` tarafından çağrılır `InitInstance( )` tüm `CWinApp` türetilmiş sınıfları.  
+- `CCommandLineInfo::FileNothing` Başlangıçta yeni bir MDI alt penceresinin görüntülenmesini devre dışı bırakır. Tasarım gereği, Uygulama Sihirbazı tarafından oluşturulan MDI uygulamaları başlangıçta yeni bir alt pencere görüntüler. Bu özelliği devre dışı bırakmak için bir uygulama kullanabilirsiniz `CCommandLineInfo::FileNothing` çağırdığında Kabuk komutu olarak [ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand). `ProcessShellCommand` çağıran `InitInstance( )` tüm `CWinApp` türetilmiş sınıflar.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#55](../../mfc/codesnippet/cpp/ccommandlineinfo-class_2.cpp)]  
@@ -209,7 +209,7 @@ CString m_strDriverName;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu parametre genellikle yazıcı sürücüsü için bir yazdırma için kabuk komut adıdır. Varsayılan uygulaması [ParseParam](#parseparam) bu veri üye yalnızca, ayarlar `/pt` bayrağı, komut satırında bulundu.  
+ Bu parametre genellikle yazıcı sürücüsü yazdırma için kabuk komut adıdır. Varsayılan uygulaması [ParseParam](#parseparam) bu veri üyesi yalnızca, ayarlar `/pt` bayrağı, komut satırında bulundu.  
   
 ##  <a name="m_strfilename"></a>  CCommandLineInfo::m_strFileName  
  Komut satırında ilk bayrağı olmayan parametresinin değerini depolar.  
@@ -229,7 +229,7 @@ CString m_strPortName;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu parametre genellikle yazıcı bağlantı noktasının bir yazdırma için kabuk komut adıdır. Varsayılan uygulaması [ParseParam](#parseparam) bu veri üye yalnızca, ayarlar `/pt` bayrağı, komut satırında bulundu.  
+ Bu parametre genellikle yazıcı bağlantı noktasını yazdırma için kabuk komut adıdır. Varsayılan uygulaması [ParseParam](#parseparam) bu veri üyesi yalnızca, ayarlar `/pt` bayrağı, komut satırında bulundu.  
   
 ##  <a name="m_strprintername"></a>  CCommandLineInfo::m_strPrinterName  
  Komut satırında ikinci bayrağı olmayan parametresinin değerini depolar.  
@@ -239,7 +239,7 @@ CString m_strPrinterName;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu parametre genellikle yazıcının yazdırma için kabuk komut adıdır. Varsayılan uygulaması [ParseParam](#parseparam) bu veri üye yalnızca, ayarlar `/pt` bayrağı, komut satırında bulundu.  
+ Bu parametre genellikle yazıcıya yazdırma için kabuk komut adıdır. Varsayılan uygulaması [ParseParam](#parseparam) bu veri üyesi yalnızca, ayarlar `/pt` bayrağı, komut satırında bulundu.  
   
 ##  <a name="m_strrestartidentifier"></a>  CCommandLineInfo::m_strRestartIdentifier  
  Benzersiz tanımlayıcı komut satırında yeniden başlatın.  
@@ -249,12 +249,12 @@ CString m_strRestartIdentifier;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeniden başlatma tanımlayıcısı, uygulamayı her örneği için benzersiz değil.  
+ Yeniden başlatma olarak uygulamanın her örneği için benzersiz tanımlayıcısıdır.  
   
- Yeniden başlatma Yöneticisi uygulamadan çıkar ve yeniden başlatmak için yapılandırılmışsa, yeniden başlatma Yöneticisi uygulama yeniden başlatma tanımlayıcıyla komut satırından isteğe bağlı bir parametre yürütür. Yeniden başlatma Yöneticisi'ni yeniden tanımlayıcı kullandığında, uygulama önceden açık belgeleri yeniden açın ve otomatik olarak kaydedilmiş dosyalarını kurtarın.  
+ Yeniden başlatma Yöneticisi uygulama kapanır ve yeniden başlatmak için yapılandırılmışsa, yeniden başlatma Yöneticisi uygulama yeniden başlatma tanımlayıcısı ile komut satırından isteğe bağlı bir parametre olarak yürütür. Yeniden başlatma Yöneticisi'ni yeniden tanımlayıcısı kullandığında, uygulama daha önce açık belgeleri yeniden Aç ve otomatik kaydedilmiş dosyalarını kurtarın.  
   
 ##  <a name="parseparam"></a>  CCommandLineInfo::ParseParam  
- Framework komut satırından bağımsız parametreleri ayrıştırma/yorumlamak için bu işlevi çağırır. İkinci sürümü birinciden farklı yalnızca Unicode projelerinde.  
+ Framework komut satırından bağımsız parametreleri ayrıştırma/yorumlamak için bu işlevi çağırır. Dosyanın ikinci sürümü ilkinden yalnızca Unicode projelerinde.  
   
 ```  
 virtual void ParseParam(
@@ -271,36 +271,36 @@ virtual void ParseParam(
   
 ### <a name="parameters"></a>Parametreler  
  *pszParam*  
- Bir parametre veya bayrak.  
+ Parametresi veya bayrak.  
   
  *bFlag*  
- Gösterir olup olmadığını *pszParam* bir parametre veya bir bayrak.  
+ Belirtir olup olmadığını *pszParam* bir parametre veya bir bayrak.  
   
- *Topluca*  
- Bu son parametresi komut satırında bayrağı olup olmadığını gösterir.  
+ *Ölçekteydi*  
+ Bu son parametresi veya komut satırı bayrağı olup olmadığını gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) çağrıları `ParseParam` kez her bir parametre veya komut satırında bayrak için bağımsız değişken geçirme *pszParam*. İlk karakter parametresinin ise bir ' **-**'veya' **/**', sonra kaldırılmadan ve *bFlag* ayarlanır `TRUE`. Son parametre ayrıştırılırken *topluca* ayarlanır `TRUE`.  
+ [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) çağrıları `ParseParam` kez her parametre veya komut satırı bayrağı için bağımsız değişken geçirme *pszParam*. İlk karakter parametresinin değeri ise bir ' **-**'veya' **/**', kaldırılmadan sonra ve *bFlag* TRUE olarak ayarlayın. Son parametre ayrıştırılırken *Ölçekteydi* TRUE olarak ayarlayın.  
   
- Bu işlev varsayılan uygulaması aşağıdaki bayraklar tanır: `/p`, `/pt`, `/dde`, `/Automation`, ve `/Embedding`aşağıdaki tabloda gösterildiği gibi:  
+ Bu işlev varsayılan uygulamasını aşağıdaki bayraklar tanır: `/p`, `/pt`, `/dde`, `/Automation`, ve `/Embedding`aşağıdaki tabloda gösterildiği gibi:  
   
-|Komut satırı bağımsız değişkeni|Yürütülen komut|  
+|komut satırı bağımsız değişkeni|Yürütülen komut|  
 |----------------------------|----------------------|  
 |*Uygulama*|Yeni dosya.|  
 |*Uygulama* dosya adı|Dosya Aç.|  
-|*Uygulama* `/p` dosya adı|Dosyayı varsayılan yazıcıya yazdırın.|  
-|*Uygulama* `/pt` filename yazıcı sürücüsü bağlantı noktası|Belirtilen yazıcı dosyaya yazdırın.|  
-|*Uygulama* `/dde`|Başlatma ve DDE komutu bekler.|  
-|*Uygulama* `/Automation`|OLE Otomasyon sunucusu olarak başlat.|  
-|*Uygulama* `/Embedding`|Katıştırılmış OLE öğeyi düzenlemek başlatma.|  
-|*Uygulama* `/Register`<br /><br /> *Uygulama* `/Regserver`|Herhangi bir kayıt görevi gerçekleştirmek için uygulama bildirir.|  
+|*Uygulama* `/p` dosya adı|Varsayılan yazıcı dosyaya yazdırır.|  
+|*Uygulama* `/pt` filename yazıcı sürücüsü bağlantı noktası|Dosya belirtilen yazıcıya yazdırın.|  
+|*Uygulama* `/dde`|Başlatma ve await DDE komutu.|  
+|*Uygulama* `/Automation`|OLE Otomasyon sunucusu Başlat.|  
+|*Uygulama* `/Embedding`|Katıştırılmış OLE öğesini düzenlemek Başlat.|  
+|*Uygulama* `/Register`<br /><br /> *Uygulama* `/Regserver`|Herhangi bir kayıt görevlerini gerçekleştirmek için uygulama bildirir.|  
 |*Uygulama* `/Unregister`<br /><br /> *Uygulama* `/Unregserver`|Herhangi bir kayıt silme görevi gerçekleştirmek için uygulama bildirir.|  
   
- Bu bilgiler depolanır [m_bRunAutomated](#m_brunautomated), [m_bRunEmbedded](#m_brunembedded), ve [m_nShellCommand](#m_nshellcommand). Bayrakları ya da bir eğik işaretlenir ' **/**'veya tire' **-**'.  
+ Bu bilgiler saklanır [m_bRunAutomated](#m_brunautomated), [m_bRunEmbedded](#m_brunembedded), ve [m_nShellCommand](#m_nshellcommand). Bayrakları ya da bir eğik işaretlenir ' **/**'veya kısa çizgi' **-**'.  
   
- Varsayılan Uygulama ilk bayrağı olmayan parametre içine yerleştirir [m_strFileName](#m_strfilename). Durumunda `/pt` bayrak varsayılan uygulama koyar ikinci üçüncü ve dördüncü bayrağı olmayan parametreleri [m_strPrinterName](#m_strprintername), [m_strDriverName](#m_strdrivername), ve [m_ strPortName](#m_strportname)sırasıyla.  
+ Varsayılan Uygulama ilk bayrağı olmayan parametrede koyar [m_strFileName](#m_strfilename). Durumunda, `/pt` bayrağı, varsayılan uygulama koyar, ikinci üçüncü ve dördüncü bayrağı olmayan parametreleri [m_strPrinterName](#m_strprintername), [m_strDriverName](#m_strdrivername), ve [m_ strPortName](#m_strportname)sırasıyla.  
   
- Varsayılan uygulama ayrıca ayarlar [m_bShowSplash](#m_bshowsplash) için `TRUE` yalnızca söz konusu olduğunda yeni bir dosya. Yeni bir dosya söz konusu olduğunda, kullanıcının uygulamanın kendisinin içeren eylem duruma getirdi. Kabuğu'nu kullanarak var olan dosyaları açma dahil olmak üzere diğer herhangi bir durumda da, bir kullanıcı eylemi doğrudan dosyası içerir. Bir belge merkezli bakış açısına giriş ekranı başlamasını uygulama Duyurusu gerekmez.  
+ Varsayılan uygulama ayrıca ayarlar [m_bShowSplash](#m_bshowsplash) yalnızca yeni bir dosya olması durumunda true. Yeni bir dosya söz konusu olduğunda, kullanıcı uygulamayı içeren eylem duruma getirdi. Kabuk kullanarak mevcut dosyaları açma dahil olmak üzere diğer herhangi bir durumda da, bir kullanıcı eylemi dosyayı doğrudan ilgilidir. Bir belge odaklı bakış açısına giriş ekranı başlatılıyor uygulama duyurmaktan gerekmez.  
   
  Bu işlev diğer bayrağı ve parametre değerlerini işlemek için türetilmiş sınıf içinde geçersiz kılar.  
   

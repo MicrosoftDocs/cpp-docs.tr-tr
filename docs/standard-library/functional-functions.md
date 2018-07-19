@@ -1,5 +1,5 @@
 ---
-title: '&lt;işlev&gt; işlevleri | Microsoft Docs'
+title: '&lt;işlevsel&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -38,27 +38,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14e656d77247984ba3306d6efff78e6cca713cb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9033ba128714edde2593a09fbfb46f9f65d195ae
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33848381"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957457"
 ---
-# <a name="ltfunctionalgt-functions"></a>&lt;işlev&gt; işlevleri
+# <a name="ltfunctionalgt-functions"></a>&lt;işlevsel&gt; işlevleri
 
 ||||
 |-|-|-|
-|[Bağlama](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|
+|[bağlama](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|
 |[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|
 |[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|
 |[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[Not1](#not1)|
 |[not2](#not2)|[ptr_fun](#ptr_fun)|[ref](#ref)|
-|[Değiştirme](#swap)|
+|[değiştirme](#swap)|
 
-## <a name="bind"></a>  Bağlama
+## <a name="bind"></a>  bağlama
 
-Bağımsız değişkenler aranabilir nesnesine bağlar.
+Bağımsız değişkenler çağrılabilir nesnesine bağlar.
 
 ```cpp
 template <class Fty, class T1, class T2, ..., class TN>
@@ -70,37 +70,37 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
 
 ### <a name="parameters"></a>Parametreler
 
-`Fty` Çağrılacak nesnesinin türü.
+*Fty* çağırmak için nesnenin türü.
 
-`TN` N. tür bağımsız değişkeni çağırın.
+*TN* n. çağrı bağımsız değişken türü.
 
-`fn` Çağrı yapılacak nesne.
+*fn* aranacak nesne.
 
-`tN` Nth çağrı bağımsız değişken.
+*tN* n. çağrı bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türleri `Fty, T1, T2, ..., TN` kopya oluşturulabilir, olmalıdır ve `INVOKE(fn, t1, ..., tN)` bazı değerler için geçerli bir ifade olmalıdır `w1, w2, ..., wN`.
+Türleri `Fty, T1, T2, ..., TN` kopyalama atmamalıdır, ve `INVOKE(fn, t1, ..., tN)` bazı değerler için geçerli bir ifade olmalıdır `w1, w2, ..., wN`.
 
-İlk şablon işlevi bir iletme çağrı döndürür sarmalayıcı `g` zayıf sonuç türüne sahip. Etkisini `g(u1, u2, ..., uM)` olan `INVOKE(f, v1, v2, ..., vN, ` [result_of](../standard-library/result-of-class.md)`<Fty cv (V1, V2, ..., VN)>::type)`, burada `cv` , MS niteleyicileri olan `g` ve değerleri ve ilişkili bağımsız değişkenlerinin türlerini `v1, v2, ..., vN` olarak belirlenir Aşağıda belirtilen. Bağımsız değişkenler uyarlanmış bağımsız değişken listesi aranabilir nesnesiyle yapmak için çağrılabilir bir nesneyi bağlamak için kullanın.
+Bir iletme çağrı ilk şablon işlevinin döndürdüğü sarmalayıcı `g` zayıf sonuç türü. Etkisini `g(u1, u2, ..., uM)` olduğu `INVOKE(f, v1, v2, ..., vN, ` [result_of](../standard-library/result-of-class.md)`<Fty cv (V1, V2, ..., VN)>::type)`burada `cv` , cv niteleyicileri olan `g` ve değerleri ve de ilişkili bağımsız değişken türlerinin `v1, v2, ..., vN` olarak belirlenir Aşağıda belirtilen. Bir özel olarak uyarlanmış bir bağımsız değişken listesi ile çağrılabilir bir nesne haline getirmek için çağrılabilen bir nesne bağımsız değişkenleri bağlamak için kullanın.
 
-İkinci şablon işlevi bir iletme çağrı döndürür sarmalayıcı `g` iç içe geçmiş tür ile `result_type` diğer bir deyişle eşanlamlısı `Ret`. Etkisini `g(u1, u2, ..., uM)` olan `INVOKE(f, v1, v2, ..., vN, Ret)`, burada `cv` , MS niteleyicileri olan `g` ve değerleri ve ilişkili bağımsız değişkenlerinin türlerini `v1, v2, ..., vN` aşağıda belirtildiği belirlendikten. Bağımsız değişkenler bir aranabilir aranabilir bir nesneyi belirtilen dönüş türüne sahip bir uyarlanmış bağımsız değişken listesi ile nesnesine bağlamak için kullanın.
+Bir iletme çağrı ikinci şablon işlevinin döndürdüğü sarmalayıcı `g` iç içe geçmiş bir tür ile `result_type` diğer bir deyişle ilişkin bir eşanlam `Ret`. Etkisini `g(u1, u2, ..., uM)` olduğu `INVOKE(f, v1, v2, ..., vN, Ret)`burada `cv` , cv niteleyicileri olan `g` ve değerleri ve de ilişkili bağımsız değişken türlerinin `v1, v2, ..., vN` aşağıda belirtildiği gibi belirlendikten. Belirtilen dönüş türüne sahip bir özel olarak uyarlanmış bir bağımsız değişken listesi ile çağrılabilir bir nesne haline getirmek için çağrılabilen bir nesne bağımsız değişkenleri bağlamak için kullanın.
 
-İlişkili bağımsız değişkenlerinin değerlerini `v1, v2, ..., vN` ve bunların karşılık gelen türlerine `V1, V2, ..., VN` ilgili bağımsız değişken türü'ne bağlı `ti` türü `Ti` çağrısında `bind` ve MS-niteleyicileri `cv` , sarmalayıcı çağrı `g` gibi:
+İlişkili bağımsız değişkenler değerlerini `v1, v2, ..., vN` ve bunların karşılık gelen türlerine `V1, V2, ..., VN` karşılık gelen bağımsız değişkenin türüne bağlıdır `ti` türü `Ti` çağrısında `bind` ve cv niteleyicileri `cv` , sarmalayıcı çağrı `g` gibi:
 
-varsa `ti` türü `reference_wrapper<T>` bağımsız değişkeni `vi` olan `ti.get()` ve türünü `Vi` olan `T&`;
+varsa `ti` türünde `reference_wrapper<T>` bağımsız değişken `vi` olduğu `ti.get()` türünü `Vi` olduğu `T&`;
 
-varsa değerini `std::is_bind_expression<Ti>::value` olan `true` bağımsız değişkeni `vi` olan `ti(u1, u2, ..., uM)` ve türünü `Vi` olan `result_of<Ti` `cv` `(U1&, U2&, ..., UN&>::type`;
+varsa değerini `std::is_bind_expression<Ti>::value` olduğu **true** bağımsız değişken `vi` olduğu `ti(u1, u2, ..., uM)` türünü `Vi` olduğu `result_of<Ti` `cv` `(U1&, U2&, ..., UN&>::type`;
 
-varsa değeri `j` , `std::is_placeholder<Ti>::value` bağımsız değişkeni sıfır değil olan `vi` olan `uj` ve türünü `Vi` olan `Uj&`;
+varsa değeri `j` , `std::is_placeholder<Ti>::value` bağımsız değişken sıfır değil ise `vi` olduğu `uj` türünü `Vi` olduğu `Uj&`;
 
-Aksi takdirde bağımsız değişkeni `vi` olan `ti` ve türünü `Vi` olan `Ti` `cv` `&`.
+Aksi takdirde bağımsız değişken `vi` olduğu `ti` türünü `Vi` olduğu `Ti` `cv` `&`.
 
-Örneğin, bir işlev verilen `f(int, int)` ifade `bind(f, _1, 0)` iletme döndürür çağrı sarmalayıcı `cw` şekilde `cw(x)` çağrıları `f(x, 0)`. İfade `bind(f, 0, _1)` iletme döndürür çağrı sarmalayıcı `cw` şekilde `cw(x)` çağrıları `f(0, x)`.
+Örneğin, bir işlev belirtilen `f(int, int)` ifade `bind(f, _1, 0)` iletme döndürür çağrı sarmalayıcı `cw` şekilde `cw(x)` çağrıları `f(x, 0)`. İfade `bind(f, 0, _1)` iletme döndürür çağrı sarmalayıcı `cw` şekilde `cw(x)` çağrıları `f(0, x)`.
 
-Çağrıda bağımsız değişken sayısı `bind` bağımsız değişkeni yanı sıra `fn` aranabilir nesnesine geçirilen bağımsız değişken sayısı eşit olmalı `fn`. Bu nedenle, `bind(cos, 1.0)` doğru olduğundan ve her ikisi de `bind(cos)` ve `bind(cos, _1, 0.0)` yanlış.
+Bir çağrıda bağımsız değişken sayısı `bind` ek bağımsız değişken olarak `fn` çağrılabilir nesnesine geçirilen bağımsız değişkenlerin sayısı eşit olmalıdır `fn`. Bu nedenle, `bind(cos, 1.0)` doğru olduğundan ve her ikisi de `bind(cos)` ve `bind(cos, _1, 0.0)` yanlış.
 
-İşlevinde bağımsız değişken sayısı çağrı tarafından döndürülen arama sarmalayıcı `bind` en az yüksek numaralı değeri olarak büyüklüğünde olmalıdır `is_placeholder<PH>::value` tüm çağrısında yer tutucu bağımsız değişkenleri için `bind`. Bu nedenle, `bind(cos, _2)(0.0, 1.0)` doğru (ve döndürür `cos(1.0)`), ve `bind(cos, _2)(0.0)` yanlış.
+İşlev bağımsız değişken sayısı çağrı tarafından döndürülen çağrı sarmalayıcı `bind` yüksek numaralı değeri olarak en az olmalıdır `is_placeholder<PH>::value` tüm çağrısında yer tutucu bağımsız değişkenleri için `bind`. Bu nedenle, `bind(cos, _2)(0.0, 1.0)` doğru (ve döndürür `cos(1.0)`), ve `bind(cos, _2)(0.0)` yanlış.
 
 ### <a name="example"></a>Örnek
 
@@ -156,7 +156,7 @@ int main()
 
 ## <a name="bind1st"></a>  bind1st
 
-İkili işlevinin ilk bağımsız değişken belirtilen değere bağlama tarafından ikili işlev nesnesi bir birli işlevi nesnesine dönüştürmek için bir bağdaştırıcı oluşturur Yardımcısı şablon işlevi.
+Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürmek için bir bağdaştırıcı oluşturan yardımcı şablonu işlev.
 
 ```cpp
 template <class Operation, class Type>
@@ -165,19 +165,19 @@ binder1st <Operation> bind1st (const Operation& func, const Type& left);
 
 ### <a name="parameters"></a>Parametreler
 
-`func` Birli işlevi nesnesine dönüştürülecek ikili işlev nesnesi.
+*FUNC* birli işlev nesnesi için dönüştürülecek ikili fonksiyon nesnesi.
 
-`left` İlk bağımsız değişken ikili işlev nesnesinin bağlanacak olduğu değeri.
+*Sol* bağlanacak ikili fonksiyon nesnesi ilk bağımsız değişkeni için olan değerdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değerine ilk bağımsız değişken ikili işlev nesnesinin bağlama sonuçları birli işlev nesnesi `left`.
+İkili fonksiyon nesnesi öğesinin ilk bağımsız değişkeninin değeri bağlama gelen sonuçları birli işlev nesnesi *sol*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi bağlayıcıları işlevi bağdaştırıcısı tür ve, çünkü işlev nesneleri geri belirli türde bir işlev oluşturma daha karmaşık ve güçlü ifadeleri oluşturmak için kullanılabilir.
+İşlev bağlayıcıları işlevi bağdaştırıcı türü olan ve daha karmaşık ve güçlü ifadelerini oluşturmak için işlev nesneleri döndürmeleri çünkü belirli işlev bileşimi türlerinde kullanılabilir.
 
-Varsa `func` türünde bir nesne `Operation` ve `c` bir sabit ise `bind1st` ( `func`, `c`) eşdeğerdir [binder1st](../standard-library/binder1st-class.md) sınıfı oluşturucusu `binder1st` <  `Operation`> ( `func`, `c`) ve daha kolaydır.
+Varsa *func* türünde bir nesnedir `Operation` ve `c` bir sabit ise `bind1st` ( `func`, `c`) değerine eşdeğer olan [binder1st](../standard-library/binder1st-class.md) sınıf oluşturucusu `binder1st` <  `Operation`> ( `func`, `c`) ve daha uygundur.
 
 ### <a name="example"></a>Örnek
 
@@ -248,7 +248,7 @@ The number of elements in v1 less than 10 is: 2.
 
 ## <a name="bind2nd"></a>  bind2nd
 
-İkili işlevinin ikinci bağımsız değişkeni belirtilen değere bağlama tarafından ikili işlev nesnesi bir birli işlevi nesnesine dönüştürmek için bir bağdaştırıcı oluşturur Yardımcısı şablon işlevi.
+Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ikinci bağımsız değişkeni bağlayarak birli nesnesine dönüştürmek için bir bağdaştırıcı oluşturan yardımcı şablonu işlev.
 
 ```cpp
 template <class Operation, class Type>
@@ -257,19 +257,19 @@ binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`func` Birli işlevi nesnesine dönüştürülecek ikili işlev nesnesi.
+*FUNC* birli işlev nesnesi için dönüştürülecek ikili fonksiyon nesnesi.
 
-`right` İkinci bağımsız değişken ikili işlev nesnesinin bağlanacak olduğu değeri.
+*doğru* bağlanacak ikili fonksiyon nesnesi ikinci bağımsız değişkeni için olan değerdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değerine ikinci bağımsız değişken ikili işlev nesnesinin bağlama sonuçları birli işlev nesnesi `right`.
+İkili fonksiyon nesnesi ikinci bağımsız değişkeni değere bağlama gelen sonuçları birli işlev nesnesi *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi bağlayıcıları işlevi bağdaştırıcısı tür ve, çünkü işlev nesneleri geri belirli türde bir işlev oluşturma daha karmaşık ve güçlü ifadeleri oluşturmak için kullanılabilir.
+İşlev bağlayıcıları işlevi bağdaştırıcı türü olan ve daha karmaşık ve güçlü ifadelerini oluşturmak için işlev nesneleri döndürmeleri çünkü belirli işlev bileşimi türlerinde kullanılabilir.
 
-Varsa `func` türünde bir nesne **işlemi** ve `c` bir sabit ise `bind2nd` ( `func`, `c` ) eşdeğerdir [binder2nd](../standard-library/binder2nd-class.md) sınıfı Oluşturucu **binder2nd\<işlemi >** ( `func`, `c` ) ve daha kullanışlıdır.
+Varsa *func* türünde bir nesnedir `Operation` ve `c` bir sabit ise `bind2nd` ( `func`, `c` ) değerine eşdeğer olan [binder2nd](../standard-library/binder2nd-class.md) sınıf oluşturucusu **binder2nd\<işlemi >** ( `func`, `c` ) ve daha kolay.
 
 ### <a name="example"></a>Örnek
 
@@ -340,7 +340,7 @@ The number of elements in v1 less than 10 is: 2.
 
 ## <a name="bit_and"></a>  bit_and
 
-Bit düzeyinde AND işlemi gerçekleştiren bir önceden tanımlanmış işlev nesnesi (ikili `operator&`) bağımsız değişkenlerini üzerinde.
+Bit düzeyinde AND işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (ikili `operator&`) üzerinde bağımsız değişkenleri.
 
 ```cpp
 template <class Type = void>
@@ -362,23 +362,23 @@ struct bit_and<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Destekleyen herhangi bir türü bir `operator&` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator&` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Bit düzeyinde AND işlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* sol işleneni, bit düzeyinde AND işlemi. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Bit düzeyinde AND işlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* bit düzeyinde AND işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left & Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator&`.
+Sonucu `Left & Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator&`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`bit_and` Functor temel veri türleri için tam sayı türleri için kısıtlanmış, ya da bu uygulama ikili dosya türleri için kullanıcı tanımlı `operator&`.
+`bit_and` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya bu uygulama ikili türleri için kullanıcı tanımlı `operator&`.
 
 ## <a name="bit_not"></a>  bit_not
 
-Bit düzeyinde tamamlama (değil) işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi (birli `operator~`) bağımsız değişkeni üzerinde.
+Bit düzeyinde tamamlayıcı (değil) işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (birli `operator~`) bağımsız değişken üzerinde.
 
 ```cpp
 template <class Type = void>
@@ -398,21 +398,21 @@ struct bit_not<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type` Bir tekli destekleyen bir türü `operator~`.
+*Tür* bir birli destekleyen bir türü `operator~`.
 
-`Right` Bit düzeyinde tamamlama işlemi işlenen. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue veya rvalue başvuru türünde bir bağımsız değişken oluşturulursa iletilmesini mükemmel `Type`.
+*Sağ* işleneni, bit düzeyinde tamamlayıcı işlemi. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue veya rvalue başvuru türünde bir bağımsız değişken çıkarsanan iletilmesini mükemmel *türü*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `~ Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator~`.
+Sonucu `~ Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator~`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`bit_not` Functor temel veri türleri için tam sayı türleri için kısıtlanmış, ya da bu uygulama ikili dosya türleri için kullanıcı tanımlı `operator~`.
+`bit_not` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya bu uygulama ikili türleri için kullanıcı tanımlı `operator~`.
 
 ## <a name="bit_or"></a>  bit_or
 
-Bit düzeyinde OR işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi ( `operator|`) bağımsız değişkenlerini üzerinde.
+Bit düzeyinde OR işlem gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (`operator|`) üzerinde bağımsız değişkenleri.
 
 ```cpp
 template <class Type = void>
@@ -434,23 +434,23 @@ struct bit_or<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Destekleyen herhangi bir türü bir `operator|` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator|` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Bit düzeyinde OR işlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* bit düzeyinde OR işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Bit düzeyinde OR işlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* bit düzeyinde OR işleminde sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left | Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator|`.
+Sonucu `Left | Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator|`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`bit_or` Functor temel veri türleri için tam sayı türleri için sınırlı veya çok kullanıcı tarafından tanımlanan uygulayan türleri `operator|`.
+`bit_or` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya uygulayan türler için kullanıcı tanımlı `operator|`.
 
 ## <a name="bit_xor"></a>  bit_xor
 
-Bit düzeyinde XOR işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi (ikili `operator^`) bağımsız değişkenlerini üzerinde.
+Bit düzeyinde XOR işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (ikili `operator^`) üzerinde bağımsız değişkenleri.
 
 ```cpp
 template <class Type = void>
@@ -472,23 +472,23 @@ struct bit_xor<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Destekleyen herhangi bir türü bir `operator^` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator^` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Bit düzeyinde XOR işlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* bit düzeyinde XOR işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Bit düzeyinde XOR işlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* bit düzeyinde XOR işlem sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left ^ Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator^`.
+Sonucu `Left ^ Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator^`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`bit_xor` Functor temel veri türleri için tam sayı türleri için kısıtlanmış, ya da bu uygulama ikili dosya türleri için kullanıcı tanımlı `operator^`.
+`bit_xor` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya bu uygulama ikili türleri için kullanıcı tanımlı `operator^`.
 
 ## <a name="cref"></a>  cref
 
-Bir const yapıları `reference_wrapper` gelen bir bağımsız değişken.
+Bir const yapıları `reference_wrapper` bir bağımsız.
 
 ```cpp
 template <class Ty>
@@ -500,13 +500,13 @@ reference_wrapper<const Ty> cref(const reference_wrapper<Ty>& arg);
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sarmalamak için bağımsız değişken türü.
+*Ty* sarmalamak için bağımsız değişken türü.
 
-`arg` Sarmalamak için bağımsız değişken.
+*arg* sarmalamak için bağımsız değişken.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlevi döndürür `reference_wrapper<const Ty>(arg.get())`. Const referans kaydırma için kullanın. İkinci işlevi döndürür `reference_wrapper<const Ty>(arg)`. Sarmalanan bir başvuru const başvuru olarak yeniden kaydırması için kullanın.
+İşlev `reference_wrapper<const Ty>(arg.get())`. Const başvuru sarmalamak için kullanın. İkinci işlevi döndürür `reference_wrapper<const Ty>(arg)`. Sarmalanan bir başvurusu const başvuru olarak yeniden sarmalamanız kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -543,7 +543,7 @@ cref(neg)(i) = -1
 
 ## <a name="mem_fn"></a>  mem_fn
 
-Basit Arama sarmalayıcı oluşturur.
+Basit Arama bir sarmalayıcı oluşturur.
 
 ```cpp
 template <class Ret, class Ty>
@@ -552,17 +552,17 @@ unspecified mem_fn(Ret Ty::*pm);
 
 ### <a name="parameters"></a>Parametreler
 
-`Ret` Sarmalanmış işlev dönüş türü.
+*Ret* sarılan işlevin dönüş türü.
 
-`Ty` Üye işlev işaretçisi türü.
+*Ty* üye işlev işaretçisi türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Basit Arama sarmalayıcı şablon işlevi döndürür `cw`, zayıf bir sonuç türü olan şekilde ifade `cw(t, a2, ..., aN)` eşdeğerdir `INVOKE(pm, t, a2, ..., aN)`. Özel durumlar oluşturmadığını.
+Basit çağrısı sarmalayıcı şablon işlevinin döndürdüğü `cw`, bir zayıf sonuç türü, gibi ifade `cw(t, a2, ..., aN)` eşdeğerdir `INVOKE(pm, t, a2, ..., aN)`. Özel durumlar oluşturmaz.
 
-Döndürülen arama sarmalayıcı türetilir `std::unary_function<cv Ty*, Ret>` (Bu nedenle iç içe geçmiş tür tanımlama `result_type` eşanlamlısı olarak `Ret` ve iç içe geçmiş tür `argument_type` eşanlamlısı olarak `cv Ty*`) yalnızca türü `Ty` gösteren bir işaretçidir üyesi MS-niteleyici işleviyle `cv` bağımsız değişken almayan.
+Döndürülen arama sarmalayıcı türetilir `std::unary_function<cv Ty*, Ret>` (Bu nedenle iç içe geçmiş tür tanımlama `result_type` eşanlamlısı olarak *Ret* ve iç içe türün `argument_type` eşanlamlısı olarak `cv Ty*`) yalnızca türü  *Ty* cv niteleyicisi olan üye işlevi işaretçisi olan `cv` , hiçbir bağımsız değişkeni alır.
 
-Döndürülen arama sarmalayıcı türetilir `std::binary_function<cv Ty*, T2, Ret>` (Bu nedenle iç içe geçmiş tür tanımlama `result_type` eşanlamlısı olarak `Ret`, iç içe türü `first argument_type` eşanlamlısı olarak `cv Ty*`ve iç içe geçmiş tür `second argument_type` eşanlamlısıolarak`T2`) yalnızca türü `Ty` gösteren bir işaretçidir MS niteleyicisi üye işleviyle `cv` türünde bir bağımsız değişken alan `T2`.
+Döndürülen arama sarmalayıcı türetilir `std::binary_function<cv Ty*, T2, Ret>` (Bu nedenle iç içe geçmiş tür tanımlama `result_type` eşanlamlısı olarak *Ret*, iç içe türü `first argument_type` eşanlamlısı olarak `cv Ty*`ve iç içe geçmiş tür `second argument_type`eşanlamlısı olarak `T2`) yalnızca türü *Ty* cv niteleyicisi olan üye işlevi işaretçisi olan `cv` türünde bir bağımsız değişken almayan `T2`.
 
 ### <a name="example"></a>Örnek
 
@@ -605,7 +605,7 @@ int main()
 
 ## <a name="mem_fun"></a>  mem_fun
 
-İşlev nesnesi bağdaştırıcıları işaretçi bağımsız değişkenlerle hazırlarken üye işlevleri için oluşturmak için kullanılan yardımcı şablon işlevleri.
+İşaretçi bağımsız değişkenler ile hazırlarken üye işlevler için işlev nesnesi bağdaştırıcıları oluşturmak için kullanılan yardımcı şablon işlevleri.
 
 ```cpp
 template <class Result, class Type>
@@ -623,11 +623,11 @@ const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pmem)(Arg) const);
 
 ### <a name="parameters"></a>Parametreler
 
-`pmem` Sınıfının üye işlevini gösteren bir işaretçi **türü** işlevi nesnesine dönüştürülecek.
+*pmem* sınıfının üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A **const** veya **non_const** işlevi nesne türü `mem_fun_t` veya `mem_fun1_t`.
+A **const** veya **non_const** türünün işlev nesnesini `mem_fun_t` veya `mem_fun1_t`.
 
 ### <a name="example"></a>Örnek
 
@@ -691,7 +691,7 @@ int main( )
 
 ## <a name="mem_fun_ref"></a>  mem_fun_ref
 
-İşlev nesnesi bağdaştırıcıları başvuru bağımsız değişkenler kullanarak hazırlarken üye işlevleri için oluşturmak için kullanılan yardımcı şablon işlevleri.
+İşlev nesnesi bağdaştırıcılarını başvuru bağımsız değişkenleri kullanılarak başlatılan, üye işlevleri oluşturmak için kullanılan yardımcı şablon işlevleri.
 
 ```cpp
 template <class Result, class Type>
@@ -709,11 +709,11 @@ const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* pmem)(Arg) cons
 
 ### <a name="parameters"></a>Parametreler
 
-`pmem` Sınıfının üye işlevini gösteren bir işaretçi `Type` işlevi nesnesine dönüştürülecek.
+*pmem* sınıfının üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `const` veya `non_const` işlevi nesne türü `mem_fun_ref_t` veya `mem_fun1_ref_t`.
+A **const** veya `non_const` türünün işlev nesnesini `mem_fun_ref_t` veya `mem_fun1_ref_t`.
 
 ### <a name="example"></a>Örnek
 
@@ -795,7 +795,7 @@ With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13
 
 ## <a name="not1"></a>  Not1
 
-Birli koşul tamamlama döndürür.
+Birli koşulu tümleme döndürür.
 
 ```cpp
 template <class UnaryPredicate>
@@ -804,15 +804,15 @@ unary_negate<UnaryPredicate> not1(const UnaryPredicate& pred);
 
 ### <a name="parameters"></a>Parametreler
 
-`pred` Tasarruflarını için birli koşul.
+*Pred* negatif için birli koşulu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değiştirilen birli koşul değilleme işlemi birli koşul.
+Değişiklik birli koşul değilleme işlemi, birli koşulu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa bir `unary_negate` birli koşul oluşturulan **Pred**( *x*), onu döndürür sonra **! Pred**( *x*).
+Varsa bir `unary_negate` birli koşulu oluşturulur **Pred**( *x*), sonra da döndürür **! Pred**( *x*).
 
 ### <a name="example"></a>Örnek
 
@@ -866,7 +866,7 @@ The number of elements in v1 not greater than 10 is: 3.
 
 ## <a name="not2"></a>  not2
 
-İkili karşılaştırma tamamlama döndürür.
+Bir ikili koşula tümleme döndürür.
 
 ```cpp
 template <class BinaryPredicate>
@@ -875,15 +875,15 @@ binary_negate<BinaryPredicate> not2(const BinaryPredicate& func);
 
 ### <a name="parameters"></a>Parametreler
 
-`func` Tasarruflarını için ikili koşulu.
+*FUNC* negatif için ikili koşul.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İkili karşılaştırma değilleme işlemi ikili bir koşulu değiştirdi.
+İkili koşul, değilleme işlemi, bir ikili koşula değiştirildi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa bir `binary_negate` ikili bir koşul oluşturulan **BinPred**( *x*, *y*), onu verir! **BinPred**( *x*, *y*).
+Varsa bir `binary_negate` bir ikili koşul oluşturulur **BinPred**( *x*, *y*), bunu verir! **BinPred**( *x*, *y*).
 
 ### <a name="example"></a>Örnek
 
@@ -941,7 +941,7 @@ Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
 
 ## <a name="ptr_fun"></a>  ptr_fun
 
-Birli ve ikili işlev işaretçileri birli ve ikili uyarlanabilir işlevleri sırasıyla dönüştürmek için kullanılan yardımcı şablon işlevleri.
+Tekli veya ikili fonksiyon işaretçileri, tekli veya ikili uyarlanabilir işlevleri sırasıyla dönüştürmek için kullanılan yardımcı şablon işlevleri.
 
 ```cpp
 template <class Arg, class Result>
@@ -953,25 +953,25 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 
 ### <a name="parameters"></a>Parametreler
 
-`pfunc` Uyarlanabilir bir işleve dönüştürülecek birli ya da ikili işlev işaretçisi.
+*pfunc* uyarlanabilir bir işleve dönüştürülecek birli veya ikili işlev işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk şablon işlevi birli işlevi döndürür [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) < `Arg`, **sonuç**> (* `pfunc`).
+Birli işlevi ilk şablon işlevinin döndürdüğü [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) < `Arg`, **sonucu**> (* `pfunc`).
 
-İkinci şablon işlevi ikili işlevi döndürür [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \< **Arg1**, **Arg2**, **sonuç**> (* `pfunc`).
+İkili fonksiyon ikinci şablon işlevinin döndürdüğü [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \< **Arg1**, **Arg2**, **sonucu**> (* `pfunc`).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işlev işaretçisi bir işlev nesnesidir ve bir parametre olarak bir işlev bekleniyor tüm C++ Standart Kitaplığı algoritmalar için geçirilen, ancak uyarlanabilir değil. Bir değer için bağlama veya bir negator ile kullanarak gibi bir bağdaştırıcı ile kullanmak için bu tür bir uyarlama gerçekleştirilmesine iç içe geçmiş türler ile sağlanmalıdır. Birli ve ikili işlev işaretçileri dönüştürme `ptr_fun` yardımcı işlevini birli ve ikili işlev işaretçileri ile çalışmak işlevi bağdaştırıcıları sağlar.
+Bir işlev işaretçisi işlev nesnesi ve bir işlev bir parametre olarak bekleniyor herhangi bir C++ Standart Kitaplığı algoritma geçirilebilir, ancak uyarlanabilir değil. Bir değer için bağlama veya bir negator ile kullanarak bir bağdaştırıcı ile kullanmak için bu tür bir uyarlama mümkün kılan iç içe geçmiş türler ile sağlanmalıdır. Tekli veya ikili işlev işaretçilerine dönüştürme `ptr_fun` tekli veya ikili işlev işaretçileri ile çalışmak işlev bağdaştırıcıları yardımcı işlevini sağlar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[functional_ptr_fun#1](../standard-library/codesnippet/CPP/functional-functions_1.cpp)]
 
-## <a name="ref"></a>  Ref
+## <a name="ref"></a>  başvuru
 
-Oluşturan bir `reference_wrapper` gelen bir bağımsız değişken.
+Oluşturur bir `reference_wrapper` bir bağımsız.
 
 ```cpp
 template <class Ty>
@@ -983,11 +983,11 @@ reference_wrapper<Ty> ref(reference_wrapper<Ty>& arg);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru `arg`; özellikle, `reference_wrapper<Ty>(arg)`.
+Bir başvuru `arg`; özellikle `reference_wrapper<Ty>(arg)`.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, iki işlevleri tanımlar: biri bağlı bir dize değişkeni için bir çağrı tarafından bir dize değişkeni bir başvuru bağlanan hesaplanan `ref`. Değişkenin değeri olarak değiştiğinde ilk işlev eski değer kullanmaya devam eder ve yeni değer ikinci işlevini kullanır.
+Aşağıdaki örnek iki işlevleri tanımlar: bir bağlı bir dize değişkeni için olan bir sınır dize değişkeninin bir başvuru için bir çağrı tarafından hesaplanan `ref`. Değişkenin değerini değiştiğinde, ilk işlev eski değeri kullanmaya devam eder ve yeni değer ikinci işlevi kullanır.
 
 ```cpp
 #include <algorithm>
@@ -1061,7 +1061,7 @@ tiger lion cougar
 tiger cougar
 ```
 
-## <a name="swap"></a>  Değiştirme
+## <a name="swap"></a>  değiştirme
 
 İki değiştirir `function` nesneleri.
 
@@ -1072,15 +1072,15 @@ void swap(function<Fty>& f1, function<Fty>& f2);
 
 ### <a name="parameters"></a>Parametreler
 
-`Fty` İşlev nesneleri tarafından denetlenen türü.
+*Fty* işlev nesneleri tarafından kontrol edilen tür.
 
-`f1` İlk işlev nesnesi.
+*F1* ilk işlev nesnesi.
 
-`f2` İkinci işlev nesnesi.
+*F2* ikinci bir işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi döndürür `f1.swap(f2)`.
+İşlev döndürür `f1.swap(f2)`.
 
 ### <a name="example"></a>Örnek
 

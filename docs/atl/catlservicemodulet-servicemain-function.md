@@ -18,23 +18,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9936090793890b1e33f0d5e29787d65f378afa84
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9dff3fa3f3ed20406955570f2ad72531f4e44f11
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355580"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848127"
 ---
 # <a name="catlservicemoduletservicemain-function"></a>CAtlServiceModuleT::ServiceMain işlevi
-Hizmet Denetimi Yöneticisi (SCM) çağırır `ServiceMain` Hizmetleri Denetim Masası uygulaması açtığınızda, hizmeti seçin ve'ı tıklatın **Başlat**.  
+Hizmet Denetimi Yöneticisi (SCM) çağıran `ServiceMain` Hizmetler Denetim Masası uygulamasına açtığınızda, hizmeti seçin ve tıklayın **Başlat**.  
   
- SCM sonra çağırır `ServiceMain`, bir hizmet SCM bir işleyici işlevi vermeniz gerekir. Bu işlev hizmetin durumunu elde edilir ve (örneğin, duraklatmak veya durduruluyor) yönelik özel yönergeler geçirmek SCM sağlar. Hizmet başarılı olduğunda bu işlev SCM alır **_Handler** Win32 API işlevi [RegisterServiceCtrlHandler](http://msdn.microsoft.com/library/windows/desktop/ms685054). (**_Handler** statik olmayan üye işlevi çağıran bir statik üye işlevi [işleyici](../atl/reference/catlservicemodulet-class.md#handler).)  
+ SCM sonra çağıran `ServiceMain`, hizmet bir işleyici işlevi SCM vermeniz gerekir. Bu işlev, hizmetin durum elde edilir ve özel yönergeler (örneğin, duraklatmak veya durdurma) geçirmeniz SCM sağlar. Hizmet başarılı olduğunda bu işlev SCM alır `_Handler` Win32 API işlevi [RegisterServiceCtrlHandler](http://msdn.microsoft.com/library/windows/desktop/ms685054). (`_Handler` statik olmayan üye işlevi çağıran bir statik üye işlevi olan [işleyici](../atl/reference/catlservicemodulet-class.md#handler).)  
   
- Başlangıçta, bir hizmet ayrıca geçerli durumunu SCM bildirin. Bunu geçirerek yapar **SERVICE_START_PENDING** Win32 API işlevi [artırılmış](http://msdn.microsoft.com/library/windows/desktop/ms686241).  
+ Başlangıçta, bir hizmet de geçerli durumunu SCM bilgilendirmek. Bunu SERVICE_START_PENDING Win32 API işleve geçirerek yapar [artırılmış](http://msdn.microsoft.com/library/windows/desktop/ms686241).  
   
- `ServiceMain` Daha sonra çağırır `CAtlExeModuleT::InitializeCom`, Win32 API işlev çağrılarını [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279). Varsayılan olarak, `InitializeCom` geçirir **COINIT_MULTITHREADED** işlevi için bayrak. Bu bayrak program bir ücretsiz iş parçacıklı sunucusu olarak gösterir.  
+ `ServiceMain` Daha sonra çağırır `CAtlExeModuleT::InitializeCom`, Win32 API işlevi çağırır [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279). Varsayılan olarak, `InitializeCom` COINIT_MULTITHREADED bayrağı işleve geçirir. Bu bayrak, program ücretsiz iş parçacıklı bir sunucu olduğunu gösterir.  
   
- Şimdi, `CAtlServiceModuleT::Run` ana iş hizmetinin gerçekleştirmek üzere çağırılır. **Çalıştırma** Hizmet durduruluncaya kadar yürütmeye devam eder.  
+ Şimdi, `CAtlServiceModuleT::Run` hizmet ana iş gerçekleştirmek üzere çağırılır. `Run` Hizmet durduruluncaya kadar yürütmeye devam eder.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hizmetleri](../atl/atl-services.md)   

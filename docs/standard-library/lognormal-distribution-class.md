@@ -36,16 +36,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72b42546f140dfd150676c8bc21b4b651815281f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1c2f2351d55a4b4f868021bd0c44a0b942633c68
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864170"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958536"
 ---
 # <a name="lognormaldistribution-class"></a>lognormal_distribution Sınıfı
 
-Günlük normal dağıtım oluşturur.
+Bir log-normal dağılımı üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,30 +78,30 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcı tarafından belirtilen integral değerleri üreten bir dağıtım şablonu sınıf tanımlar türü veya türü `double` sağlanırsa, günlük Normal dağıtım göre dağıtılmış. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı tanımlar kullanıcı tanımlı bir integral değerini üreten bir dağıtım türü veya tür **çift** belirtilmezse, günlük Normal dağıtım göre dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[lognormal_distribution](#lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|
 |`lognormal_distribution::operator()`|`lognormal_distribution::s`|[param_type](#param_type)|
 
-Özellik işlevleri `m()` ve `s()` dönüş depolanan dağıtım parametreleri için değerleri *m* ve *s*sırasıyla.
+Özellik işlevleri `m()` ve `s()` saklı dağıtım parametre değerlerini döndürmek *m* ve *s*sırasıyla.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
 
-`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
 
-`operator()` Üye işlevleri URNG motoru, geçerli parametre paket veya belirtilen parametre paket göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Wolfram MathWorld makaleyi LogNormal dağılımı hakkında ayrıntılı bilgi için bkz: [LogNormal dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400917).
+LogNormal dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [LogNormal dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400917).
 
 ## <a name="example"></a>Örnek
 
@@ -195,7 +195,7 @@ Distribution for 10 samples:
 
 ## <a name="lognormal_distribution"></a>  lognormal_distribution::lognormal_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit lognormal_distribution(RealType m = 0.0, RealType s = 1.0);
@@ -208,19 +208,19 @@ explicit lognormal_distribution(const param_type& parm);
 
 *s* `s` dağıtım parametresi.
 
-*parametre* `param_type` dağıtım oluşturmak için kullanılan yapısı.
+*parametre* `param_type` dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < s`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `m` değeri tutan değeri *m* ve, depolanan `s` değeri tutan değeri *s*.
+İlk Oluşturucu bir nesne oluşturur, saklı `m` değerine değeri *m* ve saklı `s` değerine değeri *s*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  lognormal_distribution::param_type
 
-Dağıtım parametreleri depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -240,13 +240,13 @@ struct param_type {
 
 *s* `s` dağıtım parametresi.
 
-*sağ* `param_type` karşılaştırmak için kullanılan yapısı.
+*doğru* `param_type` karşılaştırmak için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < s`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

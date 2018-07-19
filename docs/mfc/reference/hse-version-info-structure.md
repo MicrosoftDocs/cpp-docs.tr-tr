@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acdf63e062aab1407daee461e22f00f5d3c59cee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: daf1565c2fe2d7a4620f83b765671fea80502102
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369892"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37335821"
 ---
 # <a name="hseversioninfo-structure"></a>HSE_VERSION_INFO Yapısı
-Bu yapı işaret ediyor `pVer` parametresinde `CHttpServer::GetExtensionVersion` üye işlevi. ISA sürüm numarasını ve ISA metin açıklamasını sağlar  
+Bu yapı tarafından işaret edilen *pVer* parametresinde `CHttpServer::GetExtensionVersion` üye işlevi. ISA sürüm numarasını ve ISA metin açıklamasını sağlar  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ typedef struct _HSE_VERSION_INFO {
  ISA sürüm numarası  
   
  *lpszExtensionDesc*  
- ISA metin açıklaması Varsayılan uygulama yer tutucu metin sağlar; geçersiz kılma `CHttpServer::GetExtensionVersion` kendi açıklamanızı sağlamak için.  
+ ISA açıklama metni Varsayılan uygulama, yer tutucu metni sağlar. geçersiz kılma `CHttpServer::GetExtensionVersion` kendi açıklama.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** httpext.h  

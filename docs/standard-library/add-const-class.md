@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e79c06c49c8245da4911e8b72020537aa2e7bb45
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: eff64a70b2a666a6df081601c0e2a24f04563317
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850684"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954073"
 ---
 # <a name="addconst-class"></a>add_const Sınıfı
 
-Const türü türünden yapar.
+Const tür yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct add_const;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Değişiklik türü.
+*Ty* değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir değişiklik-türü tür değiştiricisi örneğini tutan `Ty` varsa `Ty` başvuru, bir işlev veya bir const nitelenmiş tür Aksi takdirde değer `const Ty`.
+Tür değiştiricinin bir örneği bir değişiklik-tür tutar *Ty* varsa *Ty* bir başvuru, bir işlev veya bir const nitelenmiş türde olduğundan, aksi takdirde `const Ty`.
 
 ## <a name="example"></a>Örnek
 

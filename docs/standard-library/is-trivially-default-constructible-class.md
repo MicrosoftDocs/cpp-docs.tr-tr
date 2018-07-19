@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f2bd65fa7145325fd4c5c2f1a2483851d0738b7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: aa7b831790804005f0649dbae0dbb98df5121106
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852142"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954740"
 ---
 # <a name="istriviallydefaultconstructible-class"></a>is_trivially_default_constructible Sınıfı
 
-Testleri Önemsiz varsayılan oluşturucu türüne sahip.
+Önemsiz bir varsayılan oluşturucu türüne sahip olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,25 +36,25 @@ struct is_trivially_default_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bir önemsiz oluşturucusu, aksi durumda olan bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu Önemsiz Oluşturucu, aksi takdirde sahip bir sınıftır.
 
-Bir sınıf için varsayılan bir oluşturucu `Ty` deyimle varsa:
+Bir sınıf için bir varsayılan oluşturucu *Ty* gereksizse, varsa:
 
-- örtük olarak bildirilen varsayılan bir oluşturucu olduğu
+- örtük olarak bildirilmiş bir varsayılan oluşturucusu olan
 
-- sınıf `Ty` hiçbir sanal işleve sahip
+- sınıf *Ty* sahip sanal işlev yok
 
-- sınıf `Ty` hiçbir sanal temellerine sahip
+- sınıf *Ty* hiçbir sanal temellere sahip
 
-- tüm doğrudan taban sınıfının `Ty` Önemsiz oluşturucular sahip
+- tüm doğrudan tabanları sınıfının *Ty* Önemsiz oluşturuculara sahip
 
-- sınıf türü tüm statik olmayan veri üyeleri sınıflarını Önemsiz oluşturucular sahip
+- tüm statik olmayan veri üyeleri sınıf türünün sınıflarını Önemsiz oluşturuculara sahip
 
-- sınıf türü dizisi tüm statik olmayan veri üyeleri sınıflarını Önemsiz oluşturucular sahip
+- dizi sınıf türünde tüm statik olmayan veri üyelerinin sınıflarını Önemsiz oluşturuculara sahip
 
 ## <a name="requirements"></a>Gereksinimler
 

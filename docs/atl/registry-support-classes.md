@@ -18,22 +18,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78d032bd6de104808600de97d20d2727f896e8e2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7acfbfc29be7a2f6a091291e05fa55b49a5e112c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361583"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38960410"
 ---
 # <a name="registry-support-classes"></a>Kayıt defteri destek sınıfları
 Aşağıdaki sınıf kayıt defteri destek sağlar:  
   
--   [CRegKey](../atl/reference/cregkey-class.md) sistem kayıt defteri değerlerini işlemek için kullanılan yöntemler içerir.  
+-   [CRegKey](../atl/reference/cregkey-class.md) sistem kayıt defteri değerlerini yönlendirmeye yönelik yöntemleri içerir.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL kayıt defteri bileşeni (Kaydedici)](../atl/atl-registry-component-registrar.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)   
  [Kayıt Defteri Makroları](../atl/reference/registry-macros.md)
 

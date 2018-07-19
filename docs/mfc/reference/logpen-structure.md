@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c0e07ce3a38eaca54e860ebe821924c0f564c69
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c677f86a44d24e0d0d2742d47ee1534532001528
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374156"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338538"
 ---
 # <a name="logpen-structure"></a>LOGPEN Yapısı
-`LOGPEN` Yapısı stili, genişlik ve bir kalemin rengini tanımlar, satırları ve Kenarlıkları çizmek için kullanılan bir çizim nesnesi. [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#createpenindirect) işlev kullandığı `LOGPEN` yapısı.  
+`LOGPEN` Yapısı, stil, genişliğini ve bir kalemin rengini tanımlar, çizmek için kullanılan Titizlik satırları ve kenarlıklar. [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#createpenindirect) işlevini kullanan `LOGPEN` yapısı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,39 +38,39 @@ typedef struct tagLOGPEN {  /* lgpn */
   
 #### <a name="parameters"></a>Parametreler  
  *lopnStyle*  
- Kalem türünü belirtir. Bu üye aşağıdaki değerlerden biri olabilir:  
+ Kalem türünü belirtir. Bu üye, aşağıdaki değerlerden biri olabilir:  
   
-- **PS_SOLID** düz kalem oluşturur.  
+- Düz kalem PS_SOLID oluşturur.  
   
-- **PS_DASH** kesikli kalem oluşturur. (Yalnızca kalem genişliği 1 olduğunda geçerlidir.)  
+- PS_DASH kesikli kalem oluşturur. (Yalnızca kalem genişliği 1 olduğunda geçerlidir.)  
   
-- **PS_DOT** noktalı kalem oluşturur. (Yalnızca kalem genişliği 1 olduğunda geçerlidir.)  
+- PS_DOT noktalı kalem oluşturur. (Yalnızca kalem genişliği 1 olduğunda geçerlidir.)  
   
-- **PS_DASHDOT** değişen kısa çizgi ve nokta ile kalem oluşturur. (Yalnızca kalem genişliği 1 olduğunda geçerlidir.)  
+- Kalem değişen ile çizgi ve nokta PS_DASHDOT oluşturur. (Yalnızca kalem genişliği 1 olduğunda geçerlidir.)  
   
-- **PS_DASHDOTDOT** değişen kısa çizgi ve çift nokta kalem oluşturur. (Yalnızca kalem genişliği 1 olduğunda geçerlidir.)  
+- PS_DASHDOTDOT kalem ile çizgi ve çift nokta değişen bir oluşturur. (Yalnızca kalem genişliği 1 olduğunda geçerlidir.)  
   
-- **PS_NULL** null kalem oluşturur.  
+- PS_NULL null kalem oluşturur.  
   
-- **PS_INSIDEFRAME** sınırlayıcı dikdörtgenini belirtin GDI çıkış işlevleri tarafından üretilen kapalı şekiller çerçeve içine bir satır çizer kalem oluşturur (örneğin, **elips**, **dikdörtgen**, `RoundRect`, `Pie`, ve `Chord` üye işlevleri). Bu stili GDI ile kullanıldığında çıktı sınırlayıcı dikdörtgenini belirtmeyin işlevleri (örneğin, `LineTo` üye işlevi), kalem çizim alanının çerçevesi tarafından sınırlı değildir.  
+- PS_INSIDEFRAME GDI oluşturduğu kapalı şekiller çerçevenin içine bir çizgi çizer bir kalem üretilen çıkış sınırlayıcı bir dikdörtgen belirtin işlevleri (örneğin, `Ellipse`, `Rectangle`, `RoundRect`, `Pie`, ve `Chord` üyesi İşlevler). Bu stil GDI ile kullanıldığında çıktı sınırlayıcı bir dikdörtgen belirtmeyin işlevleri (örneğin, `LineTo` üye işlevi), çerçeve tarafından kalemi çizim alanının sınırlı değildir.  
   
-     Kalem varsa **PS_INSIDEFRAME** stili ve bir renk mantıksal renk tablosundaki eşleşmeyen bir renk kalem Titremeli renk ile çizilir. **PS_SOLID** kalem stilini kalem Titremeli renk ile oluşturmak için kullanılamaz. **PS_INSIDEFRAME** stili aynıdır **PS_SOLID** kalem genişliği 1 küçük veya buna eşit olması durumunda.  
+     Kalem PS_INSIDEFRAME stili ve mantıksal bir renk tablosundaki bir renk eşleşmeyen bir renk varsa, kalem bir Titremeli renk ile çizilir. PS_SOLID kalem stili bir Titremeli renk ile bir kalem oluşturmak için kullanılamaz. Kalem genişliği 1'e eşit veya küçükse PS_INSIDEFRAME stili PS_SOLID için aynıdır.  
   
-     Zaman **PS_INSIDEFRAME** stili dışındaki işlevler tarafından üretilen GDI nesneleri ile kullanılan **elips**, **dikdörtgen**, ve `RoundRect`, satır tamamen olmayabilir Belirtilen çerçeve içine.  
+     GDI nesneleri ile PS_INSIDEFRAME stili kullanıldığında üretilen işlevleri tarafından dışında `Ellipse`, `Rectangle`, ve `RoundRect`, satır içinde belirtilen çerçeve tamamen olmayabilir.  
   
  *lopnWidth*  
- Kalem genişliği mantıksal birimler cinsinden belirtir. Varsa **lopnWidth** üye 0, 1 piksel genişliğinde geçerli eşleme modu bakılmaksızın ızgara cihazlarda kalem değil.  
+ Kalem genişliği mantıksal birimler cinsinden belirtir. Varsa `lopnWidth` üye 0, 1 piksel genişliğinde geçerli eşleme modunu bakılmaksızın ızgara cihazlarda kalem değil.  
   
  *lopnColor*  
- Kalem rengini belirtir.  
+ Kalem rengi belirtir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **y** değeri [noktası](../../mfc/reference/point-structure1.md) için yapı **lopnWidth** üye kullanılmıyor.  
+ `y` Değerini [noktası](../../mfc/reference/point-structure1.md) için yapı `lopnWidth` üye kullanılmaz.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** wingdi.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#createpenindirect)
 

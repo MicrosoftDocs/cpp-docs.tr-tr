@@ -36,16 +36,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc71c01d7527655771e3529311dc32fb4edbc525
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ec80db9282bc51106c6beedd42dd05a1ba636c74
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846837"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958025"
 ---
 # <a name="extremevaluedistribution-class"></a>extreme_value_distribution Sınıfı
 
-Extreme değer dağıtımı oluşturur.
+Aşırı değer dağılımı üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,24 +81,24 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* rastgele sayı oluşturucu altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG* rasgele sayı üreteci altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kayan nokta değerleri, bir kullanıcı tarafından belirtilen üreten bir dağıtım şablonu sınıf tanımlar türü veya türü `double` sağlanırsa, aşırı değeri dağıtım göre dağıtılmış. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı tanımlar kayan nokta değerleri, kullanıcı tarafından belirtilen üreten bir dağıtım türü veya tür **çift** sağlanmazsa, aşırı değer dağılımı göre dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[extreme_value_distribution](#extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|
 |`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#param_type)|
 
-Özellik işlevleri `a()` ve `b()` ilgili değerlerine depolanan dağıtım parametreleri için iade `a` ve `b`.
+Özellik işlevleri `a()` ve `b()` ilgili saklı dağıtım parametre değerlerini döndürmek `a` ve `b`.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Extreme değer dağıtımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [aşırı değeri dağıtım](http://go.microsoft.com/fwlink/p/?linkid=401110).
+Aşırı değer dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [aşırı değer dağılımı](http://go.microsoft.com/fwlink/p/?linkid=401110).
 
 ## <a name="example"></a>Örnek
 
@@ -191,7 +191,7 @@ Distribution for 10 samples:
 
 ## <a name="extreme_value_distribution"></a>  extreme_value_distribution::extreme_value_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit extreme_value_distribution(result_type a_value = 0.0, result_type b_value = 1.0);
@@ -204,19 +204,19 @@ explicit extreme_value_distribution(const param_type& parm);
 
 *b_value* `b` dağıtım parametresi.
 
-*parametre* `param_type` dağıtım oluşturmak için kullanılan yapısı.
+*parametre* `param_type` dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < b`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `a` değeri tutan değeri *a_value* ve, depolanan `b` değeri tutan değeri *b_value*.
+İlk Oluşturucu bir nesne oluşturur, saklı `a` değerine değeri *a_value* ve saklı `b` değerine değeri *b_value*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  extreme_value_distribution::param_type
 
-Dağıtım parametreleri depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -236,13 +236,13 @@ struct param_type {
 
 *b_value* `b` dağıtım parametresi.
 
-*sağ* `param_type` için karşılaştırılacak nesne.
+*doğru* `param_type` için karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < b`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

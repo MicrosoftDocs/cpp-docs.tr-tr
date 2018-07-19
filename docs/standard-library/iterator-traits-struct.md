@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57387af452ff4a127eec6b669cec6e02863b8fd3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e0b4221e32b6e85df0b559b1d6d4ecda381d8e3d
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856628"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959644"
 ---
 # <a name="iteratortraits-struct"></a>iterator_traits Yapısı
 
-Şablon yardımcı yapı yineleyici olması gereken tüm kritik tür tanımları belirtmek için kullanılır.
+Bir yineleyici olması gereken tüm kritik tür tanımlarını belirtmek için kullanılan bir şablon Yardımcısı yapı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,23 +43,23 @@ struct iterator_traits {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapısı üye türleri tanımlar
+Şablon yapı üye türleri tanımlar.
 
-- **iterator_category**: eşanlamlısı **Iterator::iterator_category**.
+- `iterator_category`: bir eşanlamlısı `Iterator::iterator_category`.
 
-- `value_type`: eşanlamlısı **Iterator::value_type**.
+- `value_type`: bir eşanlamlısı `Iterator::value_type`.
 
-- `difference_type`: eşanlamlısı **Iterator::difference_type**.
+- `difference_type`: bir eşanlamlısı `Iterator::difference_type`.
 
-- `distance_type`: eşanlamlısı **Iterator::difference_type.**
+- `distance_type`: bir eşanlamlısı `Iterator::difference_type.`
 
-- **İşaretçi**: eşanlamlısı **Iterator::pointer**.
+- `pointer`: bir eşanlamlısı `Iterator::pointer`.
 
-- **başvuru**: eşanlamlısı **Iterator::reference**.
+- `reference`: bir eşanlamlısı `Iterator::reference`.
 
-Kısmi özelleştirmeleri türü bir nesne işaretçisi ile ilişkilendirilmiş kritik türleri belirlemek **türü \***  veya const **türü \*** .
+Bir nesne işaretçisi türü ile ilişkili kritik türler kısmi uzmanlıklar belirlemek **türü \***  veya const **türü \*** .
 
-Aynı zamanda bu uygulamasında hale birkaç şablon işlevleri kısmi uzmanlığı kullanın:
+Ayrıca bu uygulamada, kısmi alt uzmanlaşması haline getirmez birkaç şablon işlevleri kullanın:
 
 ```cpp
 template <class Category, class Type, class Diff>
@@ -81,7 +81,7 @@ template <class Ty>
 ptrdiff_t *_Dist_type(const Ty *);
 ```
 
-hangi birkaç aynı türdeki daha dolaylı olarak belirleyin. Bu işlevler işlevi çağrısında bağımsız değişkenleri olarak kullanın. Çağrılan işlev için yararlı Şablon sınıfı parametresi sağlamak için bunların tek amacı olan.
+hangi birkaç aynı tür daha dolaylı olarak belirleyin. Bu işlevler bir işlev çağrısında bağımsız değişkenleri olarak kullanın. Kullanıcıların tek amacı çağrılan işlev için kullanışlı bir şablon sınıfı parametresi sağlayın sağlamaktır.
 
 ## <a name="example"></a>Örnek
 

@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9888b847c3e52cd8b6a034e95e35ca73933acd3f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2b7cd9a949fef63e742d75bc01b199871d4950cc
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861837"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956482"
 ---
 # <a name="uniquelock-class"></a>unique_lock Sınıfı
 
-Kilitleme ve, kilidini açma yönetmek nesneleri oluşturmak için örneği bir şablon temsil eden bir `mutex`.
+Kilitleme ve, kilidini açma yönetme nesneleri oluşturmak için örneği bir şablonunu temsil eden bir `mutex`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,45 +34,45 @@ class unique_lock;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon bağımsız değişken `Mutex` adı olmalıdır bir *mutex türü*.
+Şablon bağımsız değişkeni `Mutex` adlandırmalısınız bir *mutex türünü*.
 
-Dahili olarak, bir `unique_lock` ilişkili bir işaretçi depolar `mutex` nesne ve `bool` belirten geçerli iş parçacığına sahip olup olmadığını `mutex`.
+Dahili olarak, bir `unique_lock` ilişkili bir yönelik bir işaretçi depolayan `mutex` nesnesi ve bir **bool** geçerli iş parçacığının sahip olup olmadığını bildiren `mutex`.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel tür tanımları
+### <a name="public-typedefs"></a>Genel Typedefler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`mutex_type`|Şablon bağımsız değişken için eş anlamlı `Mutex`.|
+|`mutex_type`|Şablon bağımsız değişkeni için eş anlamlı `Mutex`.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[unique_lock](#unique_lock)|Oluşturan bir `unique_lock` nesnesi.|
-|[~ unique_lock yıkıcısı](#dtorunique_lock_destructor)|İle ilişkili tüm kaynakları serbest `unique_lock` nesnesi.|
+|[unique_lock](#unique_lock)|Oluşturur bir `unique_lock` nesne.|
+|[~ unique_lock yıkıcısı](#dtorunique_lock_destructor)|İle ilişkili tüm kaynakları serbest bırakır `unique_lock` nesne.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[lock](#lock)|İş parçacığı ilişkili sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.|
-|[Mutex](#mutex)|İlişkili saklı işaretçisine alır `mutex`.|
-|[owns_lock](#owns_lock)|Çağıran iş parçacığı ilişkili sahip olup olmadığını belirtir `mutex`.|
-|[Sürüm](#release)|Keser `unique_lock` ilişkili nesnesinden `mutex` nesnesi.|
-|[Değiştirme](#swap)|İlişkili değiştirir `mutex` ve sahipliği durumu ile belirtilen bir nesne.|
-|[try_lock](#try_lock)|İlişkili sahipliğini almaya çalıştığında `mutex` engelleme olmadan.|
-|[try_lock_for](#try_lock_for)|İlişkili sahipliğini almaya çalıştığında `mutex` engelleme olmadan.|
-|[try_lock_until](#try_lock_until)|İlişkili sahipliğini almaya çalıştığında `mutex` engelleme olmadan.|
-|[kilidini aç](#unlock)|İlişkili sahipliğini serbest `mutex`.|
+|[lock](#lock)|İş parçacığı ilişkili sahipliğini alana kadar çağıran iş parçacığını engeller `mutex`.|
+|[Mutex](#mutex)|İlişkili depolanan işaretçide alır `mutex`.|
+|[owns_lock](#owns_lock)|Çağıran iş parçacığını ilişkili sahip olup olmadığını belirtir `mutex`.|
+|[Yayın](#release)|Ayırır `unique_lock` ilişkili nesneden `mutex` nesne.|
+|[değiştirme](#swap)|İlişkili değiştirir `mutex` ve sahiplik durumunu, belirtilen bir nesnenin sahip.|
+|[try_lock](#try_lock)|İlişkili sahipliğini almayı dener `mutex` engelleme olmadan.|
+|[try_lock_for](#try_lock_for)|İlişkili sahipliğini almayı dener `mutex` engelleme olmadan.|
+|[try_lock_until](#try_lock_until)|İlişkili sahipliğini almayı dener `mutex` engelleme olmadan.|
+|[Kilit açma](#unlock)|İlişkili in sahipliğini bırakır `mutex`.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[işleç bool değeri](#op_bool)|Çağıran iş parçacığı sahipliğini ilişkili olup olmadığını belirtir `mutex`.|
-|[operator=](#op_eq)|Saklı kopyalar `mutex` işaretçi ve belirtilen bir nesneden ilişkili olma durumu.|
+|[bool işleci](#op_bool)|Çağıran iş parçacığını sahipliğini ilişkili olup olmadığını belirtir `mutex`.|
+|[operator=](#op_eq)|Depolanan kopyalar `mutex` işaretçi ve ilişkili sahiplik durumunu belirtilen bir nesne.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -84,9 +84,9 @@ Dahili olarak, bir `unique_lock` ilişkili bir işaretçi depolar `mutex` nesne 
 
 **Namespace:** std
 
-## <a name="lock"></a>  kilitleme
+## <a name="lock"></a>  Kilit
 
-İş parçacığı ilişkili sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.
+İş parçacığı ilişkili sahipliğini alana kadar çağıran iş parçacığını engeller `mutex`.
 
 ```cpp
 void lock();
@@ -94,23 +94,23 @@ void lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Durumunda depolanan `mutex` işaretçi `null`, bu yöntem oluşturulur bir [system_error](../standard-library/system-error-class.md) hata kodunu olan `operation_not_permitted`.
+Depolanan `mutex` NULL bir işaretçiyse, bu yöntem bir [system_error](../standard-library/system-error-class.md) bir hata koduna sahip `operation_not_permitted`.
 
-Çağıran iş parçacığı zaten ilişkili sahipse `mutex`, bu yöntem oluşturulur bir `system_error` hata kodunu olan `resource_deadlock_would_occur`.
+Çağıran iş parçacığı zaten ilişkili sahipse `mutex`, bu yöntem bir `system_error` bir hata koduna sahip `resource_deadlock_would_occur`.
 
-Aksi takdirde, bu yöntemi çağırır `lock` ilişkili üzerinde `mutex` ve iç iş parçacığı sahipliği bayrağını ayarlar `true`.
+Aksi takdirde, bu yöntemin çağırdığı `lock` ilişkili `mutex` ve dahili iş parçacığı sahipliği bayrağı ayarlar **true**.
 
 ## <a name="mutex"></a>  Mutex
 
-İlişkili saklı işaretçisine alır `mutex`.
+İlişkili depolanan işaretçide alır `mutex`.
 
 ```cpp
 mutex_type *mutex() const noexcept;
 ```
 
-## <a name="op_bool"></a>  işleç bool değeri
+## <a name="op_bool"></a>  bool işleci
 
-Çağıran iş parçacığı ilişkili mutex sahipliğini sahip olup olmadığını belirtir.
+Çağıran iş parçacığını ilişkili mutex sahipliğini olup olmadığını belirtir.
 
 ```cpp
 explicit operator bool() noexcept
@@ -118,11 +118,11 @@ explicit operator bool() noexcept
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iş parçacığı mutex sahipse; Aksi takdirde `false`.
+**doğru** iş parçacığı; mutex sahipse aksi **false**.
 
 ## <a name="op_eq"></a>  işleç =
 
-Saklı kopyalar `mutex` işaretçi ve belirtilen bir nesneden ilişkili olma durumu.
+Depolanan kopyalar `mutex` işaretçi ve ilişkili sahiplik durumunu belirtilen bir nesne.
 
 ```cpp
 unique_lock& operator=(unique_lock&& Other) noexcept;
@@ -130,7 +130,8 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` A `unique_lock` nesnesi.
+*Diğer*  
+ A `unique_lock` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -138,13 +139,13 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı daha önce ilişkili sahipse `mutex`, bu yöntemi çağırmadan önce `unlock` üzerinde `mutex`, yeni değerleri atar.
+Çağıran iş parçacığının daha önce ilişkili sahipse `mutex`, bu yöntemi çağırmadan önce `unlock` üzerinde `mutex`, yeni değerleri atar.
 
-Bu yöntem sonra kopyalama, ayarlar `Other` varsayılan oluşturulan bir duruma.
+Kopyalamadan sonra bu yöntem ayarlar *diğer* varsayılan olarak oluşturulmuş bir duruma.
 
 ## <a name="owns_lock"></a>  owns_lock
 
-Çağıran iş parçacığı ilişkili sahip olup olmadığını belirtir `mutex`.
+Çağıran iş parçacığını ilişkili sahip olup olmadığını belirtir `mutex`.
 
 ```cpp
 bool owns_lock() const noexcept;
@@ -152,11 +153,11 @@ bool owns_lock() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iş parçacığı sahipse `mutex`; Aksi halde, `false`.
+**doğru** iş parçacığı sahipse `mutex`; Aksi takdirde **false**.
 
-## <a name="release"></a>  Sürüm
+## <a name="release"></a>  Yayın
 
-Keser `unique_lock` ilişkili nesnesinden `mutex` nesnesi.
+Ayırır `unique_lock` ilişkili nesneden `mutex` nesne.
 
 ```cpp
 mutex_type *release() noexcept;
@@ -164,15 +165,15 @@ mutex_type *release() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki değeri saklı `mutex` işaretçi.
+Önceki değeri depolanan `mutex` işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem saklı değerini ayarlar `mutex` 0 ve kümelerini iç işaretçi `mutex` sahipliği bayrak `false`.
+Bu yöntem depolanmış değerini ayarlar `mutex` 0 ile kümeleri iç işaretçiye `mutex` sahipliği bayrak **false**.
 
-## <a name="swap"></a>  Değiştirme
+## <a name="swap"></a>  değiştirme
 
-İlişkili değiştirir `mutex` ve sahipliği durumu ile belirtilen bir nesne.
+İlişkili değiştirir `mutex` ve sahiplik durumunu, belirtilen bir nesnenin sahip.
 
 ```cpp
 void swap(unique_lock& Other) noexcept;
@@ -180,11 +181,12 @@ void swap(unique_lock& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` A `unique_lock` nesnesi.
+*Diğer*  
+ A `unique_lock` nesne.
 
 ## <a name="try_lock"></a>  try_lock
 
-İlişkili sahipliğini almaya çalıştığında `mutex` engelleme olmadan.
+İlişkili sahipliğini almayı dener `mutex` engelleme olmadan.
 
 ```cpp
 bool try_lock() noexcept;
@@ -192,17 +194,17 @@ bool try_lock() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Yöntem başarıyla sahipliğini elde ederse `mutex`; Aksi halde, `false`.
+**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex`; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa saklı `mutex` işaretçi `null`, yöntem oluşturulur bir [system_error](../standard-library/system-error-class.md) hata kodunu olan `operation_not_permitted`.
+Depolanan `mutex` NULL bir işaretçiyse, çağırılıyorsa yöntem bir [system_error](../standard-library/system-error-class.md) bir hata koduna sahip `operation_not_permitted`.
 
-Çağıran iş parçacığı zaten sahipse `mutex`, yöntem oluşturulur bir `system_error` hata kodunu olan `resource_deadlock_would_occur`.
+Çağıran iş parçacığı zaten sahipse `mutex`, çağırılıyorsa yöntem bir `system_error` bir hata koduna sahip `resource_deadlock_would_occur`.
 
 ## <a name="try_lock_for"></a>  try_lock_for
 
-İlişkili sahipliğini almaya çalıştığında `mutex` engelleme olmadan.
+İlişkili sahipliğini almayı dener `mutex` engelleme olmadan.
 
 ```cpp
 template <class Rep, class Period>
@@ -212,21 +214,22 @@ bool try_lock_for(
 
 ### <a name="parameters"></a>Parametreler
 
-`Rel_time` A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı denediğinde en uzun süreyi belirtir nesne `mutex`.
+*Rel_time*  
+ A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı dener en uzun süreyi belirten nesne `mutex`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Yöntem başarıyla sahipliğini elde ederse `mutex`; Aksi halde, `false`.
+**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex`; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa saklı `mutex` işaretçi `null`, yöntem oluşturulur bir [system_error](../standard-library/system-error-class.md) hata kodunu olan `operation_not_permitted`.
+Depolanan `mutex` NULL bir işaretçiyse, çağırılıyorsa yöntem bir [system_error](../standard-library/system-error-class.md) bir hata koduna sahip `operation_not_permitted`.
 
-Çağıran iş parçacığı zaten sahipse `mutex`, yöntem oluşturulur bir `system_error` hata kodunu olan `resource_deadlock_would_occur`.
+Çağıran iş parçacığı zaten sahipse `mutex`, çağırılıyorsa yöntem bir `system_error` bir hata koduna sahip `resource_deadlock_would_occur`.
 
 ## <a name="try_lock_until"></a>  try_lock_until
 
-İlişkili sahipliğini almaya çalıştığında `mutex` engelleme olmadan.
+İlişkili sahipliğini almayı dener `mutex` engelleme olmadan.
 
 ```cpp
 template <class Clock, class Duration>
@@ -237,21 +240,22 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### <a name="parameters"></a>Parametreler
 
-`Abs_time` Daha sonra yöntemi artık çalışır sahipliğini almak eşik belirtir zaman içinde nokta `mutex`.
+*Abs_time*  
+ Sonra yöntemi artık girişimlerini sahipliğini almayı eşiği belirten zaman içinde nokta `mutex`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Yöntem başarıyla sahipliğini elde ederse `mutex`; Aksi halde, `false`.
+**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex`; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa saklı `mutex` işaretçi `null`, yöntem oluşturulur bir [system_error](../standard-library/system-error-class.md) hata kodunu olan `operation_not_permitted`.
+Depolanan `mutex` NULL bir işaretçiyse, çağırılıyorsa yöntem bir [system_error](../standard-library/system-error-class.md) bir hata koduna sahip `operation_not_permitted`.
 
-Çağıran iş parçacığı zaten sahipse `mutex`, yöntem oluşturulur bir `system_error` hata kodunu olan `resource_deadlock_would_occur`.
+Çağıran iş parçacığı zaten sahipse `mutex`, çağırılıyorsa yöntem bir `system_error` bir hata koduna sahip `resource_deadlock_would_occur`.
 
 ## <a name="unique_lock"></a>  unique_lock Oluşturucusu
 
-Oluşturan bir `unique_lock` nesnesi.
+Oluşturur bir `unique_lock` nesne.
 
 ```cpp
 unique_lock() noexcept;
@@ -279,34 +283,38 @@ unique_lock(mutex_type& Mtx,
 
 ### <a name="parameters"></a>Parametreler
 
-`Mtx` Mutex türü nesnesi.
+*Mtx*  
+ Mutex nesnesi türü.
 
-`Rel_time` A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı denediğinde en uzun süreyi belirtir nesne `mutex`.
+*Rel_time*  
+ A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı dener en uzun süreyi belirten nesne `mutex`.
 
-`Abs_time` Daha sonra yöntemi artık çalışır sahipliğini almak eşik belirtir zaman içinde nokta `mutex`.
+*Abs_time*  
+ Sonra yöntemi artık girişimlerini sahipliğini almayı eşiği belirten zaman içinde nokta `mutex`.
 
-`Other` A `unique_lock` nesnesi.
+*Diğer*  
+ A `unique_lock` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucusu bir ilişkili mutex işaretçi değeri 0 olan bir nesne oluşturur.
+İlk Oluşturucu, bir ilişkili mutex işaretçi değeri 0 olan bir nesne oluşturur.
 
-İkinci oluşturucu ilişkili mutex durumundan taşır `Other`. Taşıma sonrasında `Other` artık mutex ile ilişkili değil.
+İkinci oluşturucu ilişkili mutex durumundan taşır *diğer*. Taşıma sonrasında *diğer* artık bir mutex ile ilişkili değil.
 
-Kalan oluşturucular deposu & `Mtx` saklanan `mutex` işaretçi. Sahipliğini `mutex` varsa ikinci bağımsız değişkeni tarafından belirlenir.
+Kalan oluşturucular deponun & *Mtx* saklanan `mutex` işaretçi. Sahipliğini `mutex` varsa ikinci bağımsız değişkeni tarafından belirlenir.
 
 |||
 |-|-|
-|`No argument`|Sahipliği çağırarak elde edilir `lock` yöntemi ilişkili `mutex` nesnesi.|
-|`Adopt`|Sahipliği varsayılır. `Mtx` Oluşturucu çağrıldığında kilitlenmiş olması gerekir.|
-|`Defer`|Çağıran iş parçacığı için kendi varsayılır `mutex` nesnesi. `Mtx` Oluşturucu çağrıldığında kilitlenmesi gerekir değil.|
-|`Try`|Sahipliği çağırarak belirlenir `try_lock` ilişkili üzerinde `mutex` nesnesi. Oluşturucusu hiçbir şey oluşturur.|
+|`No argument`|Sahipliği çağırarak elde `lock` ilişkili yöntemi `mutex` nesne.|
+|`Adopt`|Sahipliği varsayılır. `Mtx` Oluşturucu çağrıldığında kilitlenmelidir.|
+|`Defer`|Çağıran iş parçacığı için kendi varsayılır `mutex` nesne. `Mtx` Oluşturucu çağrıldığında kilitlenip değil.|
+|`Try`|Sahipliği çağırarak belirlenir `try_lock` ilişkili `mutex` nesne. Oluşturucu hiçbir şey oluşturur.|
 |`Rel_time`|Sahipliği çağırarak belirlenir `try_lock_for(Rel_time)`.|
 |`Abs_time`|Sahipliği çağırarak belirlenir `try_lock_until(Abs_time)`.|
 
 ## <a name="dtorunique_lock_destructor"></a>  ~ unique_lock yıkıcısı
 
-İle ilişkili tüm kaynakları serbest `unique_lock` nesnesi.
+İle ilişkili tüm kaynakları serbest bırakır `unique_lock` nesne.
 
 ```cpp
 ~unique_lock() noexcept;
@@ -314,11 +322,11 @@ Kalan oluşturucular deposu & `Mtx` saklanan `mutex` işaretçi. Sahipliğini `m
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı ilişkili sahipse `mutex`, çağırarak yıkıcı sürümleri sahipliği kilidini `mutex` nesnesi.
+Çağıran iş parçacığını ilişkili sahipse `mutex`, çağırarak yok Edicisi yayınlar sahipliği kilidini üzerinde `mutex` nesne.
 
-## <a name="unlock"></a>  kilidini aç
+## <a name="unlock"></a>  Kilit açma
 
-İlişkili sahipliğini serbest `mutex`.
+İlişkili in sahipliğini bırakır `mutex`.
 
 ```cpp
 void unlock();
@@ -326,9 +334,9 @@ void unlock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı ilişkili olmayan sahipseniz `mutex`, bu yöntem oluşturulur bir [system_error](../standard-library/system-error-class.md) hata kodunu olan `operation_not_permitted`.
+Çağıran iş parçacığını ilişkili olmayan sahipseniz `mutex`, bu yöntem bir [system_error](../standard-library/system-error-class.md) bir hata koduna sahip `operation_not_permitted`.
 
-Aksi takdirde, bu yöntemi çağırır `unlock` ilişkili üzerinde `mutex` ve iç iş parçacığı sahipliği bayrağını ayarlar `false`.
+Aksi takdirde, bu yöntemin çağırdığı `unlock` ilişkili `mutex` ve dahili iş parçacığı sahipliği bayrağı ayarlar **false**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

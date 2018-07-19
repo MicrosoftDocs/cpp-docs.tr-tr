@@ -44,27 +44,27 @@ helpviewer_keywords:
 - std::sqrt [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: 040104eeb43ccfe6225821b7318346bc1fe60f92
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6fd1712cb5d6c565b5ccea90050d2d4be6a1f7b0
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33848615"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959998"
 ---
 # <a name="ltcomplexgt-functions"></a>&lt;karmaşık&gt; işlevleri
 
 ||||
 |-|-|-|
-|[Abs](#abs)|[Arg](#arg)|[conj](#conj)|
+|[Abs](#abs)|[bağımsız değişken](#arg)|[conj](#conj)|
 |[cos](#cos)|[COSH](#cosh)|[exp](#exp)|
 |[imag](#imag)|[log](#log)|[log10](#log10)|
-|[Norm](#norm)|[Kutupsal](#polar)|[POW](#pow)|
+|[Norm](#norm)|[Yuvarlak](#polar)|[POW](#pow)|
 |[Gerçek](#real)|[sin](#sin)|[SİNH](#sinh)|
 |[sqrt](#sqrt)|[tan](#tan)|[TANH](#tanh)|
 
 ## <a name="abs"></a>  Abs
 
-Karmaşık bir sayının modulus hesaplar.
+Karmaşık bir sayıyı modüllerini hesaplar.
 
 ```cpp
 template <class Type>
@@ -73,15 +73,15 @@ Type abs(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık, modül belirlenecek numarası.
+*complexNum* karmaşık olan mod olduğu belirlenecek bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık sayıyı mod.
+Karmaşık bir sayıyı modüllerini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Modulus* karmaşık sayıyı temsil eden vektör uzunluğu ölçüsü, karmaşık sayısıdır. Karmaşık bir sayının modulus bir + BI sqrt (bir<sup>2</sup> + b<sup>2</sup>) yazılı &#124;+ bi&#124;. *Norm* karmaşık bir sayının bir + BI (bir<sup>2</sup> + b<sup>2</sup>) mod karmaşık bir sayının karekökünü kendi norm gelir.
+*Modulus* karmaşık bir sayıyı temsil eden karmaşık sayıyı vektör uzunluğu ölçüsüdür. Karmaşık bir sayıyı modüllerini bir + BI sqrt (bir<sup>2</sup> + b<sup>2</sup>) yazılı &#124;+ BI&#124;. *Norm* karmaşık bir + BI (bir<sup>2</sup> + b<sup>2</sup>), karmaşık bir sayıyı modüllerini kendi norm kare kökünü olacak şekilde.
 
 ### <a name="example"></a>Örnek
 
@@ -148,9 +148,9 @@ Argument of c2 is recovered from c2 using:
 The complex numbers c2 & c3 have the same principal arguments.
 ```
 
-## <a name="arg"></a>  Arg
+## <a name="arg"></a>  bağımsız değişken
 
-Bağımsız değişkeni bir karmaşık numarasından ayıklar.
+Bağımsız değişken, bir karmaşık numarasından ayıklar.
 
 ```cpp
 template <class Type>
@@ -159,7 +159,7 @@ Type arg(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık, bağımsız değişken belirlenecek numarası.
+*complexNum* karmaşık, bağımsız değişken olduğu belirlenecek bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -167,7 +167,7 @@ Karmaşık sayıyı bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Bağımsız değişkeni* karmaşık düzlemi pozitif gerçek ekseniyle karmaşık vektör yapar açı. Karmaşık sayıyı için *+ bi*, bağımsız değişkeni için arctan eşittir (*b / a*). Açı yönünün pozitif gerçek ekseninin ölçülen pozitif bir algılama ve yönünde içinde ölçülen negatif bir fikir vardır. Asıl daha - pi ve daha az büyük değerler daha ya da eşit + pi.
+*Bağımsız değişken* karmaşık masasında gerçek pozitif ekseniyle karmaşık vektör yapan açıdır. Karmaşık bir sayıyı için *+ BI*, bağımsız değişken arctan için eşittir (*b / a*). Açı yönünün gerçek pozitif Eksenden ölçülen olumlu anlamda ve negatif bir fikir yönünde içinde ölçülen sahiptir. Asıl daha - pi ve daha büyük değerler daha veya ona eşit + pi.
 
 ### <a name="example"></a>Örnek
 
@@ -245,15 +245,15 @@ complex<Type> conj(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık, karmaşık çiftini döndürülen sayı.
+*complexNum* karmaşık olan karmaşık çiftini döndürülür sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş karmaşık sayının karmaşık çiftini.
+Karmaşık çiftini giriş karmaşık sayının.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık bir sayının karmaşık çiftini *+ bi* olan *BI*. Karmaşık bir sayıya ve onun çiftini sayının norm ürünüdür *bir*2 + *b*2.
+Karmaşık bir sayının karmaşık çiftini *+ BI* olduğu *BI*. Karmaşık bir sayıyı ve kendi çiftini numarasının norm ürünüdür *bir*2 + *b*2.
 
 ### <a name="example"></a>Örnek
 
@@ -308,7 +308,7 @@ The imaginary part of c2 is imag ( c2 ) = -3.
 The norm of (c1 * conj (c1) ) is c1 * c2 = 25
 ```
 
-## <a name="cos"></a>  cos
+## <a name="cos"></a>  Cos
 
 Karmaşık bir sayının kosinüsünü döndürür.
 
@@ -319,7 +319,7 @@ complex<Type> cos(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Kosinüsü belirlenen karmaşık sayı.
+*complexNum* karmaşık kosinüsü belirlenir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -327,7 +327,7 @@ Karmaşık giriş karmaşık sayının kosinüsünü numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık Kosinüs kuralı tanımlama kimlikleri:
+Karmaşık Kosinüs kuralı tanımlayan kimlikleri:
 
 cos ( *z*) (1/2) =\*(exp ( *IZ*) + exp (- *IZ*))
 
@@ -409,7 +409,7 @@ complex<Type> cosh(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık sayı, hiperbolik kosinüsü belirlenir.
+*complexNum* karmaşık hiperbolik kosinüsü belirlenir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -417,11 +417,11 @@ Karmaşık giriş karmaşık sayının hiperbolik kosinüsü sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık hiperbolik Kosinüs kuralı tanımlama kimlikleri:
+Karmaşık hiperbolik Kosinüs kuralı tanımlayan kimlikleri:
 
 cos ( *z*) (1/2) =\*(exp ( *z*) + exp (- *z*))
 
-cos ( *z*) cosh = ( *+ bi*) cosh = ( *bir*) cos ( *b*) + isinh ( *bir*) sin ( *b*)
+cos ( *z*) = cosh ( *+ BI*) = cosh ( *bir*) cos ( *b*) + isinh ( *bir*) sin ( *b*)
 
 ### <a name="example"></a>Örnek
 
@@ -490,7 +490,7 @@ The complex components cosh (vci), where abs (vci) = 1
 
 ## <a name="exp"></a>  exp
 
-Karmaşık bir sayının üstel işlevi döndürür.
+Karmaşık bir sayıyı üstel işlevi döndürür.
 
 ```cpp
 template <class Type>
@@ -499,11 +499,11 @@ complex<Type> exp(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık numara üstel belirleniyor.
+*complexNum* karmaşık numara üstel belirleniyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık üstel giriş karmaşık sayının numarası.
+Karmaşık giriş karmaşık sayının üssünü numarası.
 
 ### <a name="example"></a>Örnek
 
@@ -560,7 +560,7 @@ int main() {
 
 ## <a name="imag"></a>  imag
 
-Karmaşık bir sayının sanal bileşeni ayıklar.
+Karmaşık bir sayıyı sanal bileşeninin ayıklar.
 
 ```cpp
 template <class Type>
@@ -569,15 +569,15 @@ Type imag(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık, gerçek bölüm ayıklanacak numarası.
+*complexNum* karmaşık, gerçek bir parçası olduğu ayıklanacak bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık sayıyı genel bir işlevi olarak sanal parçası.
+Karmaşık sayıyı genel bir işlev olarak sanal parçası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık sayıyı gerçek bölümünü değiştirmek için bu şablonu işlevi kullanılamaz. Gerçek bölümünü değiştirmek için yeni bir karmaşık sayı bileşen değer atanmalıdır.
+Bu şablon işlevi, karmaşık sayıyı gerçek kısmını değiştirmek için kullanılamaz. Gerçek bölümünü değiştirmek için yeni karmaşık bir sayıyı bileşen değer atanmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -620,7 +620,7 @@ complex<Type> log(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Doğal logaritmasını belirlenen karmaşık sayı.
+*complexNum* karmaşık doğal logaritmasını belirlenir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -628,7 +628,7 @@ Karmaşık giriş karmaşık sayının doğal logaritmasını numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dal keser negatif gerçek ekseni boyunca ' dir.
+Dal keser negatif gerçek eksende var.
 
 ### <a name="example"></a>Örnek
 
@@ -680,7 +680,7 @@ int main() {
 
 ## <a name="log10"></a>  log10
 
-Karmaşık bir sayının 10 tabanında logaritmasını döndürür.
+Karmaşık bir sayının 10 tabanındaki logaritmasını döndürür.
 
 ```cpp
 template <class Type>
@@ -689,15 +689,15 @@ complex<Type> log10(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Temel 10 logaritmasını belirlenen karmaşık sayı.
+*complexNum* karmaşık olan 10 tabanındaki logaritmasını belirlenir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık giriş karmaşık sayının 10 tabanında logaritmasını numarası.
+Karmaşık giriş karmaşık sayının 10 tabanındaki logaritmasını numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dal keser negatif gerçek ekseni boyunca ' dir.
+Dal keser negatif gerçek eksende var.
 
 ### <a name="example"></a>Örnek
 
@@ -749,7 +749,7 @@ int main() {
 
 ## <a name="norm"></a>  Norm
 
-Karmaşık bir sayının norm ayıklar.
+Karmaşık bir sayıyı normalini ayıklar.
 
 ```cpp
 template <class Type>
@@ -758,15 +758,15 @@ Type norm(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık olan norm belirlenecek numarası.
+*complexNum* karmaşık olan norm olduğu belirlenecek bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık sayıyı norm.
+Karmaşık bir sayıyı normalini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık bir sayının norm *+ bi* olan *(bir*<sup>2</sup> *+ b*<sup>2</sup>*).* Karmaşık bir sayının norm kendi modulus kare olur. Modulus karmaşık bir sayının karmaşık sayıyı temsil eden vektör uzunluğu ölçüsüdür. Karmaşık bir sayının modulus *+ bi* olan `sqrt` *(bir*<sup>2</sup> *+ b*<sup>2</sup> *),* yazılmış  *&#124;+ bi&#124;.*
+Karmaşık bir sayıyı normalini *+ BI* olduğu *(bir*<sup>2</sup> *+ b*<sup>2</sup>*).* Karmaşık bir sayıyı normalini kendi modül karesini ' dir. Karmaşık bir sayıyı modüllerini karmaşık sayıyı temsil eden bir vektörün uzunluğunun ölçümüdür. Karmaşık bir sayıyı modüllerini *+ BI* olduğu `sqrt` *(bir*<sup>2</sup> *+ b*<sup>2</sup> *),* yazılan  *&#124;+ BI&#124;.*
 
 ### <a name="example"></a>Örnek
 
@@ -829,9 +829,9 @@ The norm of c2 given by: norm ( c2 ) = 25
 The modulus of c2 is the square root of the norm: sqrt ( normc2 ) = 5.
 ```
 
-## <a name="polar"></a>  Kutupsal
+## <a name="polar"></a>  Yuvarlak
 
-Belirtilen modül ve bağımsız değişken için karşılık gelen, karmaşık sayı Kartezyen biçiminde döndürür.
+Belirtilen modül ve bağımsız değişken için karşılık gelen, karmaşık sayıyı Kartezyen biçiminde döndürür.
 
 ```cpp
 template <class Type>
@@ -840,17 +840,17 @@ complex<Type> polar(const Type& _Modulus, const Type& _Argument = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Modulus* giriş karmaşık sayı mod.
+*_Modulus* modüllerini karmaşık giriş sayı.
 
-*_Argument* giriş karmaşık sayı bağımsız değişkeni.
+*_Argument* karmaşık giriş sayı bağımsız değişkeni.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kutupsal formunda belirtilen karmaşık sayı Kartezyen biçimidir.
+Kartezyen karmaşık polar formunda belirtilen sayı biçimi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Modulus Kutupsal formun karmaşık bir sayının sağlar *r* ve bağımsız değişkeni *p*, bu parametreler için gerçek ve sanal Kartezyen bileşenleri burada ilişkili *bir* ve *b* denklemini tarafından *bir* r = \* cos *p* ve *b* = *r* \* sin *p*.
+Modulus karmaşık bir sayıyı polar biçiminde sağlar *r* ve bağımsız değişken *p*, bu parametreleri reel ve sanal Kartezyen bileşenleri burada ilişkili *bir* ve *b* denklemler tarafından *bir* r = \* cos *p* ve *b* = *r* \* sin *p*.
 
 ### <a name="example"></a>Örnek
 
@@ -906,7 +906,7 @@ Argument of c2 is recovered from c2 using:
 
 ## <a name="pow"></a>  POW
 
-Karmaşık sayıyı diğer bir karmaşık sayının kuvvetine bir tabanı yükselterek elde karmaşık sayı değerlendirir.
+Başka bir karmaşık sayı değerini karmaşık bir sayıyı bir tabanı oluşturularak elde edilen karmaşık sayıyı değerlendirir.
 
 ```cpp
 template <class Type>
@@ -924,19 +924,19 @@ complex<Type> pow(const Type& _Base, const complex<Type>& _Power);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Base` Karmaşık sayı veya üye işlevi tarafından üssü için temel karmaşık numarası için parametre türü numarası.
+*_Temel* karmaşık bir sayıyı veya bir üye işlevi tarafından üssü için temel karmaşık numarası için parametre türü olan sayı.
 
-*_Güç* tamsayı veya karmaşık sayı veya üye işlevi tarafından çıkarılmasına tabanıdır güç karmaşık sayıyı için parametre türü numarası.
+*Orta_mın gücünü* tamsayı veya karmaşık bir sayıyı veya üye işlevi tarafından oluşturulması için temel olan güç karmaşık sayıyı için parametre türü olan sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen güç belirtilen tabanda yükselterek elde karmaşık sayı.
+Belirtilen güç belirtilen tabanda oluşturularak elde edilen karmaşık sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevleri her etkili bir şekilde her iki işlenen dönüş türüne dönüştürme ve dönüştürülen dönmek **sol** gücüne **sağ**.
+İşlevleri her iki işlenen de dönüş türü için etkili bir şekilde dönüştürmek ve ardından dönüştürülmüş dönün **sol** gücüne **doğru**.
 
-Dal kesme negatif gerçek ekseni boyunca ' dir.
+Dal Kes negatif gerçek eksende var.
 
 ### <a name="example"></a>Örnek
 
@@ -1049,7 +1049,7 @@ The argument of ce4 is: -1.14473 radians, which is -65.5882 degrees.
 
 ## <a name="real"></a>  Gerçek
 
-Karmaşık bir sayının gerçek bileşen ayıklar.
+Gerçek ve karmaşık bir sayıyı bileşenini ayıklar.
 
 ```cpp
 template <class Type>
@@ -1058,15 +1058,15 @@ Type real(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık, gerçek bölüm ayıklanacak numarası.
+*complexNum* karmaşık, gerçek bir parçası olduğu ayıklanacak bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık sayıyı genel bir işlevi olarak gerçek parçası.
+Karmaşık sayıyı genel bir işlev olarak gerçek parçası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık sayıyı gerçek bölümünü değiştirmek için bu şablonu işlevi kullanılamaz. Gerçek bölümünü değiştirmek için yeni bir karmaşık sayı bileşen değer atanmalıdır.
+Bu şablon işlevi, karmaşık sayıyı gerçek kısmını değiştirmek için kullanılamaz. Gerçek bölümünü değiştirmek için yeni karmaşık bir sayıyı bileşen değer atanmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1098,7 +1098,7 @@ The real part of c1 is real ( c1 ) = 4.
 The imaginary part of c1 is imag ( c1 ) = 3.
 ```
 
-## <a name="sin"></a>  sin
+## <a name="sin"></a>  Sin
 
 Karmaşık bir sayının sinüsünü döndürür.
 
@@ -1109,7 +1109,7 @@ complex<Type> sin(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık sayıyı sinüsü belirlenir.
+*complexNum* karmaşık sinüsü belirlenir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1119,7 +1119,7 @@ Karmaşık giriş karmaşık sayının sinüsünü numarası.
 
 Karmaşık sinüsü tanımlama kimlikleri:
 
-sin ( *z*) = (1/2 *ı*)\*(exp ( *IZ*)-exp (- *IZ*))
+sin ( *z*) = (1/2 *miyim*)\*(exp ( *IZ*)-exp (- *IZ*))
 
 sin ( *z*) = sin ( *a + bi*) = sin ( *a*) cosh ( *b*) + icos ( *a*) sinh ( *b*)
 
@@ -1199,7 +1199,7 @@ complex<Type> sinh(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Hiperbolik sinüsü belirlenen karmaşık sayı.
+*complexNum* karmaşık hiperbolik sinüsü belirlenir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1207,11 +1207,11 @@ Karmaşık giriş karmaşık sayının hiperbolik sinüsü sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık hiperbolik sinüsü tanımlama kimlikleri:
+Karmaşık hiperbolik sinüs kuralını tanımlama kimlikleri:
 
 SİNH ( *z*) (1/2) =\*(exp ( *z*)-exp (- *z*))
 
-SİNH ( *z*) sinh = ( *+ bi*) sinh = ( *bir*) cos ( *b*) + *ı*cosh ( *bir*) sin ( *b*)
+SİNH ( *z*) sinh = ( *+ BI*) sinh = ( *bir*) cos ( *b*) + *miyim*cosh ( *bir*) sin ( *b*)
 
 ### <a name="example"></a>Örnek
 
@@ -1289,19 +1289,19 @@ complex<Type> sqrt(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık kare kökünü bulunacak numarası.
+*complexNum* karmaşık kare kökünü olan bulunacak sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık bir sayının kare kökünü.
+Karmaşık bir sayıyı kare kökü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kare kökünü aşaması açı yarı açık aralığa sahip olur (-pi/2, pi/2].
+Kare kökünü yarı açık aralığında bir aşama açısı olacaktır (-pi/2, pi/2].
 
-Karmaşık düzlem olarak şube keser negatif gerçek ekseni boyunca ' dir.
+Dal keser karmaşık masasında negatif gerçek eksende var.
 
-Karmaşık bir sayının kare kökünü girdi sayısı ve elipsin giriş numarası olan bir bağımsız değişken'in kare kökü olan bir modül sahip olur.
+Karmaşık bir sayının karekökünü karekökünü giriş sayısını ve yarısı giriş numarasının olan bir bağımsız değişken olan basamağına sahip olur.
 
 ### <a name="example"></a>Örnek
 
@@ -1365,7 +1365,7 @@ complex<Type> tan(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık sayıyı tanjantı belirlenir.
+*complexNum* karmaşık tanjantı belirlenir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1373,7 +1373,7 @@ Karmaşık giriş karmaşık sayının tanjantını numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık Kotanjant tanımlama kimlikleri:
+Karmaşık kotanjantını tanımlama kimlikleri:
 
 tan ( *z*) sin = ( *z*) / cos ( *z*) = (exp ( *IZ*)-exp (- *IZ*)) / *i*(exp ( *IZ*) + exp (- *IZ*))
 
@@ -1453,7 +1453,7 @@ complex<Type> tanh(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-`complexNum` Karmaşık sayıyı, hiperbolik tanjantı belirlenir.
+*complexNum* karmaşık hiperbolik tanjantı belirlenir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

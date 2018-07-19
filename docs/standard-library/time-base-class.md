@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c13cd76f5d353cf91997406c8e7f74b5383cf8e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6e1111ede44edc36e5399d82b3c4e088b20cc1c9
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854504"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957304"
 ---
 # <a name="timebase-class"></a>time_base Sınıfı
 
-Sınıf şablonu sınıfı time_get yalnızca numaralandırılmış türünü tanımlamak, modelleri için temel bir sınıf olarak hizmet veren **dateorder** ve bu tür birkaç sabitleri.
+Sınıfı yalnızca bir listeden seçimli türü tanımlayan Şablon sınıfı time_get modelleri için temel bir sınıf olarak hizmet verir `dateorder` ve bu türdeki çeşitli sabit.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,17 +46,17 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her sabit bir tarih bileşenlerinin sıralamak için farklı bir şekilde belirtir. Sabitler şunlardır:
+Her sabit tarih bileşenlerinin sıralamak için farklı bir şekilde çalışmayan belirtir. Sabittir:
 
-- **no_order** belirli bir sırada belirtir.
+- `no_order` belirli bir sırada belirtir.
 
-- **GAY** sipariş gün, ay ve yıl, 2 aralık 1979 olduğu gibi belirtir.
+- `dmy` sipariş günü, ay ve yıl, 2 aralık 1979 olduğu gibi belirtir.
 
-- **AGY** sipariş ay, gün sonra 2 aralık 1979 olduğu gibi yıl belirtir.
+- `mdy` sıra ay, gün ve yıl, 2 aralık 1979 olduğu gibi belirtir.
 
-- **YAG'dir** sipariş yıl, ay, ardından 1979/12/2 gibi gün belirtir.
+- `ymd` Sipariş yılı, ayı ve ardından 1979/12/2 olduğu gibi günlük belirtir.
 
-- **ydm** sipariş yıl, gün, ay, 1979:2 Ara olduğu gibi belirtir.
+- `ydm` Sipariş yılı, gün, ay, 1979:2 Ara olduğu gibi belirtir.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -1,5 +1,5 @@
 ---
-title: Denetim kapsama sınıfları (ATL) | Microsoft Docs
+title: Denetim kapsamı sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,27 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 353b4a1a9acaeccd64d99e8ee18914681353ca86
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2a54da05cb71114f455b24d18004049b2fa91b2a
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356797"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959345"
 ---
-# <a name="control-containment-classes"></a>Denetim kapsama sınıfları
-Aşağıdaki sınıflar denetimleri barındırma için kapsama destek sağlar:  
+# <a name="control-containment-classes"></a>Denetim kapsamı sınıfları
+Aşağıdaki sınıflar, denetimleri barındırma için kapsama destek sağlar:  
   
--   [CAxWindow](../atl/reference/caxwindow-class.md) bir ActiveX denetimini barındıran bir pencere düzenleme için yöntemler sağlar.  
+-   [CAxWindow](../atl/reference/caxwindow-class.md) , bir ActiveX denetimi barındıran bir pencere düzenleme yöntemlerini sağlar.  
   
--   [CAxWindow2T](../atl/reference/caxwindow2t-class.md) bir ActiveX denetimini barındırır ve ayrıca Lisanslı ActiveX denetimlerini barındırma desteği olan bir pencere düzenleme için yöntemler sağlar.  
+-   [CAxWindow2T](../atl/reference/caxwindow2t-class.md) bir ActiveX denetimini barındırır ve ayrıca lisanslı bir ActiveX denetimlerini barındırma desteği olan bir pencere düzenleme yöntemlerini sağlar.  
   
--   [IAxWinAmbientDispatch](../atl/reference/iaxwinambientdispatch-interface.md) barındırılan denetime kullanılabilir ortam özelliklerine ayarlamak için bu arabirimde yöntemlerini çağırın.  
+-   [Iaxwinambientdispatch](../atl/reference/iaxwinambientdispatch-interface.md) barındırılan bir denetim için kullanılabilir ortam özelliklerini ayarlamak için bu arabirimdeki yöntemleri çağırın.  
   
--   [IAxWinHostWindow](../atl/reference/iaxwinhostwindow-interface.md) oluşturma ve/veya bir ana bilgisayar nesnesine bir denetim eklemek için ya da bir arabirim barındırılan denetimden almak için bu arabirimdeki yöntemlerini çağırın.  
+-   [Iaxwinhostwindow](../atl/reference/iaxwinhostwindow-interface.md) oluşturun ve/veya bir konak nesnesi için bir denetim eklemek için veya bir arabirim barındırılan denetiminden almak için bu arabirimdeki yöntemleri çağırın.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL Denetim Kapsamı SSS](../atl/atl-control-containment-faq.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

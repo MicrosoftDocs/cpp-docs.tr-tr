@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4144eed22a3a16615d7fa79ecd4828835c6ebe0b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 73a051eadaf06950e606f475b2bb418425e1b19f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846486"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958880"
 ---
 # <a name="alignedstorage-class"></a>aligned_storage Sınıfı
 
@@ -40,13 +40,13 @@ using aligned_storage_t = typename aligned_storage<Len, Align>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-`Len` Nesnenin boyutu.
+*Len* nesne boyutu.
 
-`Align` Nesne hizalaması.
+*Hizalama* hizalanacak nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon üye typedef `type` hizalama POD türüyle eşanlamlısı olan `Align` ve boyutu `Len`. `Align` eşit olmalı `alignment_of<T>::value` bazı türü için `T`, veya varsayılan konumu.
+Şablon üye typedef `type` hizalama bir POD türüyle eşanlamlıdır *Hizala* ve boyutunu *Len*. *Hizalama* eşit olmalı `alignment_of<T>::value` bazı `T`, ya da varsayılan hizalama.
 
 ## <a name="example"></a>Örnek
 

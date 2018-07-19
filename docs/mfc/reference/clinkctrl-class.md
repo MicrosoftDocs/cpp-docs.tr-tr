@@ -44,15 +44,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47cd25a92e572d02996008de9fc5265138d4ecb6
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: bf1c64aa2139764bcb26782c344a90379bafda23
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042384"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336780"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl sınıfı
-Windows ortak SysLink denetimi işlevselliğini sağlar.  
+Windows SysLink denetimi işlevlerini sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -66,32 +66,32 @@ class CLinkCtrl : public CWnd
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CLinkCtrl::CLinkCtrl](#clinkctrl)|Oluşturan bir `CLinkCtrl` nesnesi.|  
+|[CLinkCtrl::CLinkCtrl](#clinkctrl)|Oluşturur bir `CLinkCtrl` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CLinkCtrl::Create](#create)|Bir bağlantı denetimi oluşturur ve ona ekler bir `CLinkCtrl` nesnesi.|  
-|[CLinkCtrl::CreateEx](#createex)|Genişletilmiş stilleri ile bir bağlantı denetimi oluşturur ve ekler bir `CLinkCtrl` nesnesi.|  
+|[CLinkCtrl::Create](#create)|Bir bağlantı denetimi oluşturur ve ona bağlanan bir `CLinkCtrl` nesne.|  
+|[CLinkCtrl::CreateEx](#createex)|Genişletilmiş stilleriyle bir bağlantı denetimi oluşturur ve ona ekler bir `CLinkCtrl` nesne.|  
 |[CLinkCtrl::GetIdealHeight](#getidealheight)|Bağlantı denetimi ideal yüksekliğini alır.|  
-|[CLinkCtrl::GetIdealSize](#getidealsize)|Bağlantı metni bağlantının belirtilen genişlik bağlı olarak geçerli bağlantı denetimi için tercih edilen yüksekliğini hesaplar.|  
-|[CLinkCtrl::GetItem](#getitem)|Durumları ve bir bağlantı denetimi öğesi özniteliklerini alır.|  
-|[CLinkCtrl::GetItemID](#getitemid)|Bir bağlantı denetimi öğesi Kimliğini alır.|  
+|[CLinkCtrl::GetIdealSize](#getidealsize)|Bağlantı metni belirtilen genişlik bağlantının bağlı olarak geçerli bağlantı denetimi için tercih edilen yüksekliğini hesaplar.|  
+|[CLinkCtrl::GetItem](#getitem)|Durumları ve bir bağlantı denetim öğesi özniteliklerini alır.|  
+|[CLinkCtrl::GetItemID](#getitemid)|Bir bağlantı denetim öğesi Kimliğini alır.|  
 |[CLinkCtrl::GetItemState](#getitemstate)|Bağlantı Denetim öğesi durumunu alır.|  
-|[CLinkCtrl::GetItemUrl](#getitemurl)|Bağlantı denetimi öğesi tarafından temsil edilen URL'sini alır.|  
-|[CLinkCtrl::HitTest](#hittest)|Kullanıcı belirtilen bağlantı tıklatıldığında olup olmadığını belirler.|  
-|[CLinkCtrl::SetItem](#setitem)|Bir bağlantı denetimi öğesi özniteliklerini ve durumlarını ayarlar.|  
-|[CLinkCtrl::SetItemID](#setitemid)|Bir bağlantı denetimi öğesi Kimliğini ayarlar.|  
+|[CLinkCtrl::GetItemUrl](#getitemurl)|Bağlantı Denetim öğesi tarafından temsil edilen URL'sini alır.|  
+|[CLinkCtrl::HitTest](#hittest)|Kullanıcının belirtilen bağlantıya tıkladığını olup olmadığını belirler.|  
+|[CLinkCtrl::SetItem](#setitem)|Bir bağlantı denetim öğesi özniteliklerini ve durumlarını ayarlar.|  
+|[CLinkCtrl::SetItemID](#setitemid)|Bir bağlantı denetim öğesi Kimliğini ayarlar.|  
 |[CLinkCtrl::SetItemState](#setitemstate)|Bağlantı Denetim öğesi durumunu ayarlar.|  
-|[CLinkCtrl::SetItemUrl](#setitemurl)|Bağlantı denetimi öğesi tarafından temsil edilen URL'sini ayarlar.|  
+|[CLinkCtrl::SetItemUrl](#setitemurl)|Bağlantı Denetim öğesi tarafından temsil edilen URL'sini ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir "bağlantı denetimi" Köprü metin bağlantılarından bir pencerede katıştırmak için kolay bir yol sağlar. Gerçek denetim işaretlenmiş metin oluşturur ve kullanıcının katıştırılmış bir bağlantıyı tıklattığında uygun uygulamaları başlatma bir penceredir. Birden çok bağlantı içinde bir denetim desteklenir ve sıfır tabanlı dizini tarafından erişilebilir.  
+ Bir "bağlantı denetimi" bir pencere içinde köprü metin bağlantılarından katıştırmak için kullanışlı bir yol sağlar. Gerçek denetim işaretlenmiş metin işler ve kullanıcı bir katıştırılmış bağlantısına tıkladığında ilgili uygulamaları başlatan bir penceredir. Birden çok bağlantı ve sıfır tabanlı bir dizin tarafından erişilebilen bir denetim içinde desteklenir.  
   
- Bu denetim (ve bu nedenle `CLinkCtrl` sınıfı) yalnızca Windows XP altında ve sonraki sürümlerde çalışan programlar için kullanılabilir.  
+ Bu denetimi (ve bu nedenle `CLinkCtrl` sınıfı) yalnızca Windows XP ve sonraki sürümlerde çalışan programlar kullanılabilir.  
   
- Daha fazla bilgi için bkz: [SysLink denetim](http://msdn.microsoft.com/library/windows/desktop/bb760706) Windows SDK.  
+ Daha fazla bilgi için [SysLink denetimi](http://msdn.microsoft.com/library/windows/desktop/bb760706) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -106,14 +106,14 @@ class CLinkCtrl : public CWnd
  **Başlık:** afxcmn.h  
   
 ##  <a name="clinkctrl"></a>  CLinkCtrl::CLinkCtrl  
- Oluşturan bir `CLinkCtrl` nesnesi.  
+ Oluşturur bir `CLinkCtrl` nesne.  
   
 ```  
 CLinkCtrl();
 ```  
   
 ##  <a name="create"></a>  CLinkCtrl::Create  
- Bir bağlantı denetimi oluşturur ve ona ekler bir `CLinkCtrl` nesnesi.  
+ Bir bağlantı denetimi oluşturur ve ona bağlanan bir `CLinkCtrl` nesne.  
   
 ```  
 virtual BOOL Create(
@@ -132,27 +132,27 @@ virtual BOOL Create(DWORD dwStyle,
   
 ### <a name="parameters"></a>Parametreler  
  *lpszLinkMarkup*  
- İşaretli görüntülenecek metni içeren sıfır ile sonlandırılan bir dize işaretçi. Daha fazla bilgi için konusundaki "Biçimlendirme ve bağlantı erişim" bölümüne bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
+ İşaretli görüntülenecek metni içeren sıfır ile sonlandırılmış bir dize işaretçisi. Daha fazla bilgi için ' % s'bölümüne "Biçimlendirme ve bağlantı erişim" konusunda bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
   
  *dwStyle*  
- Bağlantı denetimin stilini belirtir. Herhangi bir bileşimini denetim stilleri uygulayın. Bkz: [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) içinde `Windows SDK` daha fazla bilgi için.  
+ Bağlantı denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Bkz: [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) içinde `Windows SDK` daha fazla bilgi için.  
   
  *Rect*  
- Bağlantı denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
+ Bağlantı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
   
  *pParentWnd*  
- Bağlantı denetimin üst penceresi belirtir. Değil olmalıdır `NULL`.  
+ Bağlantı denetiminin üst penceresine belirtir. NULL olmamalıdır.  
   
  *nID*  
  Bağlantı denetimin kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` başlatma başarılı olduysa; Aksi takdirde `false`.  
+ Başlatma başarılı olduysa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CLinkCtrl` iki adımda nesne. İlk olarak, Oluşturucusu arayın ve ardından arama `Create`, hangi bağlantı denetimi oluşturur ve ona ekler `CLinkCtrl` nesnesi. Genişletilmiş windows stilleri denetimi ile kullanmak istiyorsanız, çağrı [CLinkCtrl::CreateEx](#createex) yerine `Create`.  
+ Oluşturmak bir `CLinkCtrl` iki adımda nesne. İlk olarak, oluşturucusunu çağırın ve ardından arama `Create`, bağlantı denetimi oluşturur ve ona ekler `CLinkCtrl` nesne. Genişletilmiş windows stilleri ile denetiminizi kullanmak istiyorsanız, çağrı [CLinkCtrl::CreateEx](#createex) yerine `Create`.  
   
- İkinci biçiminde `Create` yöntemi kullanım dışıdır. Belirtir ilk formu kullanın *lpszLinkMarkup* parametresi.  
+ İkinci form, `Create` metodu kullanım dışı bırakılmıştır. Belirten ilk formu *lpszLinkMarkup* parametresi.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneğinde adlı iki değişken tanımlar `m_Link1` ve `m_Link2`, iki bağlantı denetimlerini erişmek için kullanılır.  
@@ -160,12 +160,12 @@ virtual BOOL Create(DWORD dwStyle,
  [!code-cpp[NVC_MFC_CLinkCtrl_s1#2](../../mfc/reference/codesnippet/cpp/clinkctrl-class_1.h)]  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneği başka bir bağlantı denetimi konumunu temelinde bir bağlantı denetimi oluşturur. Uygulamanız başladığında kaynak yükleyicisi ilk bağlantı denetimi oluşturur. Uygulamanızı OnInitDialog yöntemi girdiğinde, ilk bağlantı denetimi konumunu göre ikinci bağlantı denetimi oluşturun. Ardından görüntülediği metnin sığması için ikinci bağlantı denetimi yeniden boyutlandırın.  
+ Aşağıdaki kod örneği, başka bir bağlantı denetimi konumunu temel alarak bir bağlantı denetimi oluşturur. Uygulama başlatıldığında ilk bağlantı denetimi kaynak yükleyicisi oluşturur. Uygulamanızı OnInitDialog yöntemi girdiğinde, ikinci bir bağlantı denetimi ilk bağlantı denetimi konumuna göre oluşturun. Ardından görüntüler metin sığdırmak için ikinci bağlantı denetimi yeniden boyutlandırın.  
   
  [!code-cpp[NVC_MFC_CLinkCtrl_s1#1](../../mfc/reference/codesnippet/cpp/clinkctrl-class_2.cpp)]  
   
 ##  <a name="createex"></a>  CLinkCtrl::CreateEx  
- Genişletilmiş stilleri ile bir bağlantı denetimi oluşturur ve ekler bir `CLinkCtrl` nesnesi.  
+ Genişletilmiş stilleriyle bir bağlantı denetimi oluşturur ve ona ekler bir `CLinkCtrl` nesne.  
   
 ```  
 virtual BOOL CreateEx(
@@ -186,30 +186,30 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
   
 ### <a name="parameters"></a>Parametreler  
  *lpszLinkMarkup*  
- İşaretli görüntülenecek metni içeren sıfır ile sonlandırılan bir dize işaretçi. Daha fazla bilgi için konusundaki "Biçimlendirme ve bağlantı erişim" bölümüne bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
+ İşaretli görüntülenecek metni içeren sıfır ile sonlandırılmış bir dize işaretçisi. Daha fazla bilgi için ' % s'bölümüne "Biçimlendirme ve bağlantı erişim" konusunda bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
   
  *dwExStyle*  
- Bağlantı denetimi genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ Genişletilmiş bağlantı denetiminin stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- Bağlantı denetimin stilini belirtir. Herhangi bir bileşimini denetim stilleri uygulayın. Daha fazla bilgi için bkz: [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK.  
+ Bağlantı denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Daha fazla bilgi için [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK.  
   
  *Rect*  
- Bağlantı denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
+ Bağlantı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
   
  *pParentWnd*  
- Bağlantı denetimin üst penceresi belirtir. Değil olmalıdır `NULL`.  
+ Bağlantı denetiminin üst penceresine belirtir. NULL olmamalıdır.  
   
  *nID*  
  Bağlantı denetimin kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` başlatma başarılı olduysa; Aksi takdirde `false`.  
+ Başlatma başarılı olduysa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `CreateEx` yerine [oluşturma](#create) genişletilmiş Windows stili sabitleri uygulamak için.  
+ Kullanım `CreateEx` yerine [Oluştur](#create) genişletilmiş Windows stili sabitleri uygulamak için.  
   
- İkinci biçiminde `CreateEx` yöntemi kullanım dışıdır. Belirtir ilk formu kullanın *lpszLinkMarkup* parametresi.  
+ İkinci form, `CreateEx` metodu kullanım dışı bırakılmıştır. Belirten ilk formu *lpszLinkMarkup* parametresi.  
   
 ##  <a name="getidealheight"></a>  CLinkCtrl::GetIdealHeight  
  Bağlantı denetimi ideal yüksekliğini alır.  
@@ -222,10 +222,10 @@ int GetIdealHeight() const;
  Denetimin piksel cinsinden ideal yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [LM_GETIDEALHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb760716), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [LM_GETIDEALHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb760716)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="getidealsize"></a>  CLinkCtrl::GetIdealSize  
- Bağlantı metni bağlantının belirtilen genişlik bağlı olarak geçerli bağlantı denetimi için tercih edilen yüksekliğini hesaplar.  
+ Bağlantı metni belirtilen genişlik bağlantının bağlı olarak geçerli bağlantı denetimi için tercih edilen yüksekliğini hesaplar.  
   
 ```  
 int GetIdealSize(
@@ -237,19 +237,19 @@ int GetIdealSize(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *cxMaxWidth*|En büyük genişliği. piksel cinsinden bağlantı.|  
-|[Çıkış] * *pSize*|Windows için bir işaretçi [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı. Bu yöntem döndürüldüğünde, *cy* üyesi `SIZE` yapısı içeren tarafından belirtilen bağlantı metni genişliği için ideal bağlantı metin yükseklik *cxMaxWidth*. *Cx* yapısı üyesi için gerekli olan bağlantı metin genişliği içerir.|  
+|[in] *cxMaxWidth*|Maksimum genişliğini piksel cinsinden bağlantı.|  
+|[out] * *pSize*|Bir Windows işaretçisi [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı. Bu yöntem döndürüldüğünde, *cy* üyesi `SIZE` yapısı tarafından belirtilen bağlantı metni genişliği için ideal bağlantı metni yükseklik içeren *cxMaxWidth*. *Cx* yapı üyesi için gerekli olan bağlantı metni genişliği içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tercih edilen bağlantı metnini, piksel cinsinden yüksekliği. Dönüş değeri değeri ile aynıdır *cy* üyesi `SIZE` yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir örnek için `GetIdealSize` yöntemi, örnekte bkz [CLinkCtrl::Create](#create).  
+ Bir örneği `GetIdealSize` yöntemi, örneğe bakın [CLinkCtrl::Create](#create).  
   
- Bu yöntem gönderir [LM_GETIDEALSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760718) Windows SDK'ın açıklanan ileti.  
+ Bu yöntem gönderir [LM_GETIDEALSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760718) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getitem"></a>  CLinkCtrl::GetItem  
- Durumları ve bir bağlantı denetimi öğesi özniteliklerini alır.  
+ Durumları ve bir bağlantı denetim öğesi özniteliklerini alır.  
   
 ```  
 BOOL GetItem(PLITEM pItem) const;  
@@ -257,16 +257,16 @@ BOOL GetItem(PLITEM pItem) const;
   
 ### <a name="parameters"></a>Parametreler  
  *pItem*  
- Bir işaretçi bir [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) öğesi bilgi almak için yapısı.  
+ Bir işaretçi bir [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) öğesi bilgilerini almak için yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="getitemid"></a>  CLinkCtrl::GetItemID  
- Bir bağlantı denetimi öğesi Kimliğini alır.  
+ Bir bağlantı denetim öğesi Kimliğini alır.  
   
 ```  
 BOOL GetItemID(
@@ -281,25 +281,25 @@ BOOL GetItemID(
   
 ### <a name="parameters"></a>Parametreler  
  *İ.Link*  
- Bir bağlantı denetimi öğesi dizini.  
+ Bir bağlantı denetim öğesi dizini.  
   
  *strID*  
- A [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) belirtilen öğeyi Kimliğini içeren nesne.  
+ A [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) belirtilen öğenin Kimliğini içeren nesne.  
   
  *szID*  
- Belirtilen öğe Kimliğini içeren null ile sonlandırılmış bir dize.  
+ Belirtilen öğenin Kimliğini içeren null ile sonlandırılmış bir dize.  
   
  *cchID*  
  Karakter cinsinden boyutu *szID* arabellek.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 > [!NOTE]
->  Bu işlev, aynı zamanda döndürür **FALSE** varsa arabelleğin *szID veya strID* değerinden küçük **MAX_LINKID_TEXT**.  
+>  Bu işlev ayrıca değilse false değerini döndürür, arabellek *szID veya strID* MAX_LINKID_TEXT küçüktür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirli bağlantı denetimi öğesi Kimliğini alır. Daha fazla bilgi için bkz: Win32 ileti [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) Windows SDK'sındaki.  
+ Belirli bir bağlantı denetimi öğesinin Kimliğini alır. Daha fazla bilgi için bkz: Win32 ileti [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) Windows SDK.  
   
 ##  <a name="getitemstate"></a>  CLinkCtrl::GetItemState  
  Bağlantı Denetim öğesi durumunu alır.  
@@ -313,22 +313,22 @@ BOOL GetItemState(
   
 ### <a name="parameters"></a>Parametreler  
  *İ.Link*  
- Bir bağlantı denetimi öğesi dizini.  
+ Bir bağlantı denetim öğesi dizini.  
   
  *pnState*  
  Belirtilen durum öğesinin değeri.  
   
  *stateMask*  
- Almak için hangi durumu öğesi açıklayan bayrakları birleşimi. Açıklamasını değerlerinin listesi için bkz: **durumu** üye [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) yapısı. Bu izin için izin verilen öğeleri aynıdır **durumu**.  
+ Almak için hangi durumu öğesini açıklayan bayrakları birleşimi. Değerler listesi için açıklamasına bakın `state` üye [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) yapısı. Bu izin verilen öğeler aynıdır `state`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirli bağlantı denetimi öğesinin belirtilen durum öğenin değerini alır. Daha fazla bilgi için bkz: Win32 ileti [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) Windows SDK'sındaki.  
+ Belirli bir bağlantı denetim öğesi belirtilen durum öğenin değerini alır. Daha fazla bilgi için bkz: Win32 ileti [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) Windows SDK.  
   
 ##  <a name="getitemurl"></a>  CLinkCtrl::GetItemUrl  
- Bağlantı denetimi öğesi tarafından temsil edilen URL'sini alır.  
+ Bağlantı Denetim öğesi tarafından temsil edilen URL'sini alır.  
   
 ```  
 BOOL GetItemUrl(
@@ -343,28 +343,28 @@ BOOL GetItemUrl(
   
 ### <a name="parameters"></a>Parametreler  
  *İ.Link*  
- Bir bağlantı denetimi öğesi dizini.  
+ Bir bağlantı denetim öğesi dizini.  
   
  *strUrl*  
- A [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) tarafından belirtilen öğeyi temsil URL içeren bir nesne  
+ A [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) belirtilen öğe tarafından temsil edilen URL'sini içeren bir nesne  
   
  *szUrl*  
- Belirtilen öğe tarafından temsil edilen URL'sini içeren null sonlandırılmış bir dize  
+ Belirtilen öğe tarafından temsil edilen URL'sini içeren null ile sonlandırılmış bir dize  
   
  *cchUrl*  
  Karakter cinsinden boyutu *szURL* arabellek.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 > [!NOTE]
->  Bu işlev, aynı zamanda döndürür **FALSE** varsa arabelleğin *szUrl veya strUrl* değerinden küçük **MAX_LINKID_TEXT**.  
+>  Bu işlev ayrıca değilse false değerini döndürür, arabellek *szUrl veya strUrl* MAX_LINKID_TEXT küçüktür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen bağlantı denetimi öğesi tarafından temsil edilen URL'sini alır. Daha fazla bilgi için bkz: Win32 ileti [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) Windows SDK'sındaki.  
+ Belirtilen bağlantı denetim öğesi tarafından temsil edilen URL'sini alır. Daha fazla bilgi için bkz: Win32 ileti [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) Windows SDK.  
   
 ##  <a name="hittest"></a>  CLinkCtrl::HitTest  
- Kullanıcı belirtilen bağlantıyı tıklattığında, belirler.  
+ Kullanıcı belirtilen bağlantı tıkladı olmadığını belirler.  
   
 ```  
 BOOL HitTest(PLHITTESTINFO phti) const;  
@@ -372,16 +372,16 @@ BOOL HitTest(PLHITTESTINFO phti) const;
   
 ### <a name="parameters"></a>Parametreler  
  *phti*  
- İşaretçi bir **LHITTESTINFO** kullanıcı tıkladığınız bağlantı hakkındaki tüm bilgileri içeren yapısı.  
+ İşaretçi bir `LHITTESTINFO` kullanıcı tıkladı bağlantısıyla ilgili tüm bilgileri içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [LM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb760722), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [LM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb760722)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="setitem"></a>  CLinkCtrl::SetItem  
- Bir bağlantı denetimi öğesi özniteliklerini ve durumlarını ayarlar.  
+ Bir bağlantı denetim öğesi özniteliklerini ve durumlarını ayarlar.  
   
 ```  
 BOOL SetItem(PLITEM pItem);
@@ -389,16 +389,16 @@ BOOL SetItem(PLITEM pItem);
   
 ### <a name="parameters"></a>Parametreler  
  *pItem*  
- Bir işaretçi bir [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) ayarlamak için bilgileri içeren yapısı.  
+ Bir işaretçi bir [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) ayarlamak için bilgi içeren yapıya.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="setitemid"></a>  CLinkCtrl::SetItemID  
- Bir bağlantı denetimi öğesi Kimliğini alır.  
+ Bir bağlantı denetim öğesi Kimliğini alır.  
   
 ```  
 BOOL SetItemID(
@@ -408,16 +408,16 @@ BOOL SetItemID(
   
 ### <a name="parameters"></a>Parametreler  
  *İ.Link*  
- Bir bağlantı denetimi öğesi dizini.  
+ Bir bağlantı denetim öğesi dizini.  
   
  *szID*  
- Belirtilen öğe Kimliğini içeren null ile sonlandırılmış bir dize.  
+ Belirtilen öğenin Kimliğini içeren null ile sonlandırılmış bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirli bağlantı denetimi öğesi Kimliğini ayarlar. Daha fazla bilgi için bkz: Win32 ileti [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) Windows SDK'sındaki.  
+ Belirli bir bağlantı denetim öğesi Kimliğini ayarlar. Daha fazla bilgi için bkz: Win32 ileti [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) Windows SDK.  
   
 ##  <a name="setitemstate"></a>  CLinkCtrl::SetItemState  
  Bağlantı Denetim öğesi durumunu alır.  
@@ -431,22 +431,22 @@ BOOL SetItemState(
   
 ### <a name="parameters"></a>Parametreler  
  *İ.Link*  
- Bir bağlantı denetimi öğesi dizini.  
+ Bir bağlantı denetim öğesi dizini.  
   
  *pnState*  
  Ayarlanan belirli durumda öğesinin değeri.  
   
  *stateMask*  
- Ayarlanan durumu öğesi açıklayan bayrakları birleşimi. Açıklamasını değerlerinin listesi için bkz: **durumu** üye [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) yapısı. Bu izin için izin verilen öğeleri aynıdır **durumu**.  
+ Ayarlanan durumu öğesini açıklayan bayrakları birleşimi. Değerler listesi için açıklamasına bakın `state` üye [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) yapısı. Bu izin verilen öğeler aynıdır `state`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen durum öğesi'nin belirli bağlantı denetimi öğesi değerini ayarlar. Daha fazla bilgi için bkz: Win32 ileti [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) Windows SDK'sındaki.  
+ Belirli bir bağlantı denetim öğesi belirtilen durum öğenin değerini ayarlar. Daha fazla bilgi için bkz: Win32 ileti [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) Windows SDK.  
   
 ##  <a name="setitemurl"></a>  CLinkCtrl::SetItemUrl  
- Bağlantı denetimi öğesi tarafından temsil edilen URL'sini ayarlar.  
+ Bağlantı Denetim öğesi tarafından temsil edilen URL'sini ayarlar.  
   
 ```  
 BOOL SetItemUrl(
@@ -456,16 +456,16 @@ BOOL SetItemUrl(
   
 ### <a name="parameters"></a>Parametreler  
  *İ.Link*  
- Bir bağlantı denetimi öğesi dizini.  
+ Bir bağlantı denetim öğesi dizini.  
   
  *szUrl*  
- Belirtilen öğe tarafından temsil edilen URL'sini içeren null sonlandırılmış bir dize  
+ Belirtilen öğe tarafından temsil edilen URL'sini içeren null ile sonlandırılmış bir dize  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen bağlantı denetimi öğesi tarafından temsil edilen URL'sini ayarlar. Daha fazla bilgi için bkz: Win32 ileti [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) Windows SDK'sındaki.  
+ Belirtilen bağlantı denetim öğesi tarafından temsil edilen URL'sini ayarlar. Daha fazla bilgi için bkz: Win32 ileti [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

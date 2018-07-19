@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d48bd8dce38a5042c01b56f40cebb2e030be6f4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 70ffecdfdf661e7423a4db0898b05dfa2f5ce832
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858792"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954649"
 ---
 # <a name="referencewrapper-class"></a>reference_wrapper Sınıfı
 
@@ -63,9 +63,9 @@ private:
 
 ## <a name="remarks"></a>Açıklamalar
 
-A `reference_wrapper<Ty>` bir kopya oluşturulabilir ve bir nesne ya da bir işlev türü başvuru geçici kopya atanabilir sarmalayıcı `Ty`, bu tür bir nesneye işaret eden bir işaretçi sahiptir. A `reference_wrapper` başvuru tarafından standart kapsayıcılarında başvurularını depolamak ve nesneleri geçirmek için kullanılabilir `std::bind`.
+A `reference_wrapper<Ty>` atmamalıdır kopyalama ve kopyalama atanabilir sarmalayıcı geçici bir nesne veya bir işlev türü başvuru `Ty`ve bu türdeki bir nesneye işaret eden bir işaretçi tutar. A `reference_wrapper` depolama başvurularının standart kapsayıcıları ve nesneleri geçirmek için başvuru tarafından kullanılabilir `std::bind`.
 
-Tür `Ty` bir nesne türü veya bir işlev türü ya da derleme zamanında statik assert başarısız olması gerekir.
+Türü `Ty` bir nesne türü veya bir işlev türü veya derleme zamanında bir statik onay başarısız olması gerekir.
 
 Yardımcı işlevleri [std::ref](functional-functions.md#ref) ve [std::cref](functional-functions.md#cref) oluşturmak için kullanılan `reference_wrapper` nesneleri.
 
@@ -73,36 +73,36 @@ Yardımcı işlevleri [std::ref](functional-functions.md#ref) ve [std::cref](fun
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[reference_wrapper](#reference_wrapper)|Oluşturan bir `reference_wrapper`.|
+|[reference_wrapper](#reference_wrapper)|Oluşturur bir `reference_wrapper`.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
 |[result_type](#result_type)|Sarmalanan başvuru zayıf sonuç türü.|
-|[Türü](#type)|Sarmalanan başvuru türü.|
+|[Türü](#type)|Sarmalanan bir başvuru türü.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[get](#get)|Sarmalanan başvuru edinir.|
+|[get](#get)|Sarmalanan bir başvuru edinir.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[reference_wrapper::operator Ty&amp;](#op_ty_amp)|Bir işaretçi Sarmalanan başvuruyu alır.|
+|[reference_wrapper::operator Ty&amp;](#op_ty_amp)|Sarmalanan başvurusu bir işaretçi alır.|
 |[reference_wrapper::operator()](#op_call)|Sarmalanan başvuru çağırır.|
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 
 ## <a name="get"></a>  reference_wrapper::get
 
-Sarmalanan başvuru edinir.
+Sarmalanan bir başvuru edinir.
 
 ```cpp
 Ty& get() const noexcept;
@@ -110,7 +110,7 @@ Ty& get() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini Sarmalanan başvuru döndürür.
+Üye işlevi, sarmalanmış bir başvuru döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -186,9 +186,9 @@ auto operator()(Types&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-`Types` Bağımsız değişken listesi türleri.
+*Türleri* bağımsız değişken listesi türleri.
 
-`args` Bağımsız değişken listesi.
+*args* bağımsız değişken listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -221,7 +221,7 @@ rwi(3) = -3
 
 ## <a name="reference_wrapper"></a>  reference_wrapper::reference_wrapper
 
-Oluşturan bir `reference_wrapper`.
+Oluşturur bir `reference_wrapper`.
 
 ```cpp
 reference_wrapper(Ty& val) noexcept;
@@ -229,13 +229,13 @@ reference_wrapper(Ty& val) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Kaydırma türü.
+*Ty* sarmalamak için türü.
 
-`val` Sarım değeri.
+*VAL* Sarım değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Depolanan değer Oluşturucusu ayarlar `ptr` için `&val`.
+Oluşturucu depolanan değeri ayarlar `ptr` için `&val`.
 
 ### <a name="example"></a>Örnek
 
@@ -278,7 +278,7 @@ typedef R result_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`result_type` Typedef olan bir eş anlamlı sarmalanmış işlev zayıf sonuç türü için. Bu typedef yalnızca işlev türleri için anlamlıdır.
+`result_type` Typedef olan Sarmalanan işlevinin zayıf sonucu türe ilişkin bir eşanlam. Bu tür tanımı, yalnızca işlev türleri için anlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -309,7 +309,7 @@ val = -3
 
 ## <a name="type"></a>  reference_wrapper::type
 
-Sarmalanan başvuru türü.
+Sarmalanan bir başvuru türü.
 
 ```cpp
 typedef Ty type;
@@ -317,7 +317,7 @@ typedef Ty type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon bağımsız değişken eşanlamlısı typedef olduğu `Ty`.
+Typedef şablon bağımsız değişkeni eşanlamlıdır `Ty`.
 
 ### <a name="example"></a>Örnek
 

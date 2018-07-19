@@ -30,16 +30,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e72f9c584f818de69b0c341ff8dba66892816d8a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f4dfbd3bc6a020dba4b6e5eb868e21ec37fcc1ab
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862000"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955253"
 ---
 # <a name="moveiterator-class"></a>move_iterator Sınıfı
 
-Sınıf şablonu `move_iterator` yineleyici için sarmalayıcı değil. Move_iterator yineleyicinin onu sarmaladığıyla (depoladığı) aynı davranışı sağlar, yalnız bu öğe bir kopyayı taşıma durumuna çevirerek depolanan yineleyicinin başvuru kaldırma işlecini bir rvalue başvurusuna çevirir. Rvalues hakkında daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Sınıf şablonu `move_iterator` bir yineleyici için bir sarmalayıcıdır. Move_iterator yineleyicinin onu sarmaladığıyla (depoladığı) aynı davranışı sağlar, yalnız bu öğe bir kopyayı taşıma durumuna çevirerek depolanan yineleyicinin başvuru kaldırma işlecini bir rvalue başvurusuna çevirir. Rvalues hakkında daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,32 +49,32 @@ class move_iterator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, başvuru kaldırılması dışında bir yineleyici gibi davranan bir nesneyi tanımlar. Rasgele erişim yineleyici türü depolar `Iterator`, üye fonksiyonu aracılığıyla erişilen `base()`. Tüm işlemler bir `move_iterator` doğrudan saklı yineleyici üzerinde gerçekleştirilen dışında sonucu `operator*` için örtük olarak cast `value_type&&` rvalue başvuru yapma.
+Şablon sınıfı, başvuru kaldırılması dışında bir yineleyici gibi davranan bir nesneyi tanımlar. Türünün rastgele erişim yineleyicisini depolar `Iterator`üye işlevi yoluyla erişilebilen `base()`. Tüm işlemler bir `move_iterator` doğrudan depolanmış yineleyiciyi üzerinde gerçekleştirilen dışında sonucunu `operator*` için örtük dönüştürme `value_type&&` bir rvalue başvurusu yapmak.
 
-A `move_iterator` tarafından Sarmalanan yineleyici tanımlı değil işlemlerinin yeteneğine sahip olabilir. Bu işlemler kullanılmamalıdır.
+A `move_iterator` Sarmalanan yineleyici tarafından tanımlanmayan işlemler özelliğine sahip olabilir. Bu işlemler kullanılmamalıdır.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[move_iterator](#move_iterator)|Nesne türü Oluşturucusu `move_iterator`.|
+|[move_iterator](#move_iterator)|Türündeki nesneler için oluşturucu `move_iterator`.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[iterator_type](#iterator_type)|Şablon parametresi için bir eş anlamlı `RandomIterator`.|
-|[iterator_category](#iterator_category)|Bir uzun bir eş anlamlı `typename` ifadesi aynı ada sahip `iterator_category` yineleyici genel yeteneklerini tanımlar.|
-|[value_type](#value_type)|Bir eş anlamlı daha uzun bir süre `typename` ifadesi aynı ada sahip `value_type` öğeler yineleyici ne tür açıklar.|
-|[difference_type](#difference_type)|Bir uzun bir eş anlamlı `typename` ifadesi aynı ada sahip `difference_type` öğeler arasında hızlı fark değerleri için gerekli olan tam sayı türü açıklanmaktadır.|
-|[İşaretçi](#pointer)|Şablon parametresi için bir eş anlamlı `RandomIterator`.|
-|[Başvuru](#reference)|Eşanlamlısı `rvalue` başvuru `value_type&&`.|
+|[iterator_type](#iterator_type)|Şablon parametresi için bir eşanlamlı `RandomIterator`.|
+|[iterator_category](#iterator_category)|Uzun ilişkin bir eşanlam **typename** aynı adlı ifade `iterator_category` yineleyicinin genel yeteneklerini tanımlar.|
+|[value_type](#value_type)|Uzun ilişkin bir eşanlam **typename** aynı adlı ifade `value_type` ne yineleyici öğelerinin türünü tanımlar.|
+|[difference_type](#difference_type)|Uzun ilişkin bir eşanlam **typename** aynı adlı ifade `difference_type` öğeler arasındaki fark değerlerini için gereken integral türünü tanımlar.|
+|[İşaretçi](#pointer)|Şablon parametresi için bir eşanlamlı `RandomIterator`.|
+|[Başvuru](#reference)|İçin bir eşanlamlı `rvalue` başvuru `value_type&&`.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[base](#base)|Üye işlevi bu tarafından Sarmalanan saklı yineleyici döndürür `move_iterator`.|
+|[base](#base)|Üye işlevi bu tarafından Sarmalanan depolanmış yineleyiciyi döndürür `move_iterator`.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -84,11 +84,11 @@ A `move_iterator` tarafından Sarmalanan yineleyici tanımlı değil işlemlerin
 |[move_iterator::operator++](#op_add_add)|Depolanmış yineleyiciyi artırır. Tam davranış artırma öncesi mi artırma sonrası mı olduğuna bağlıdır.|
 |[move_iterator::operator--](#operator--)|Depolanan yineleyiciyi azaltır. Tam davranış azaltma öncesi mi azaltma sonrası mı olduğuna bağlıdır.|
 |[move_iterator::operator-&gt;](#op_arrow)|Döndürür `&**this`.|
-|[move_iterator::operator-](#operator-)|Döndürür `move_iterator(*this) -=` geçerli konumdan sağ değeri tarafından ilk çıkararak.|
+|[move_iterator::operator-](#operator-)|Döndürür `move_iterator(*this) -=` geçerli konumdaki sağ değeri ilk önce çıkararak çıkarma.|
 |[move_iterator::operator[]](#op_at)|Döndürür `(reference)*(*this + off)`. Bu konumdaki değeri elde etmek için geçerli temel bir uzaklık belirtmenizi sağlar.|
 |[move_iterator::operator+](#op_add)|Döndürür `move_iterator(*this) +=` değeri. Bu konumdaki değeri elde etmek için geçerli temele bir uzaklık eklemenizi sağlar.|
-|[move_iterator::operator+=](#op_add_eq)|Sağ taraftaki değeri saklı yineleyici ekler ve döndürür `*this`.|
-|[move_iterator::operator-=](#operator-_eq)|Saklı yineleyici sağ değerinden çıkarır ve döndürür `*this`.|
+|[move_iterator::operator+=](#op_add_eq)|Sağdaki değerin saklı yineleyiciye ekler ve döndürür `*this`.|
+|[move_iterator::operator-=](#operator-_eq)|Depolanmış yineleyiciyi sağ değeri çıkarır ve döndürür `*this`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -98,7 +98,7 @@ A `move_iterator` tarafından Sarmalanan yineleyici tanımlı değil işlemlerin
 
 ## <a name="base"></a>  move_iterator::Base
 
-Bu saklı yineleyici döndürür `move_iterator`.
+Bunun için depolanmış yineleyiciyi döndürür `move_iterator`.
 
 ```cpp
 RandomIterator base() const;
@@ -106,11 +106,11 @@ RandomIterator base() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini saklı yineleyici döndürür.
+Üye işlevi, depolanmış yineleyiciyi döndürür.
 
 ## <a name="difference_type"></a>  move_iterator::difference_type
 
-Türü `difference_type` olan bir `move_iterator` `typedef` yineleyici ayırdedici nitelik üzerinde temel `difference_type`ve onunla birbirinin yerine kullanılabilir.
+Türü `difference_type` olduğu bir `move_iterator` `typedef` üzerinde yineleyici niteliğine göre `difference_type`ve onunla birbirlerinin yerine kullanılabilir.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::difference_type difference_type;
@@ -118,11 +118,11 @@ typedef typename iterator_traits<RandomIterator>::difference_type difference_typ
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyici ayırdedici nitelik eşanlamlısı türüdür `typename iterator_traits<RandomIterator>::pointer`.
+Türü yineleyici nitelik eşanlamlıdır `typename iterator_traits<RandomIterator>::pointer`.
 
 ## <a name="iterator_category"></a>  move_iterator::iterator_category
 
-Türü `iterator_category` olan bir `move_iterator` `typedef` yineleyici ayırdedici nitelik üzerinde temel `iterator_category`ve onunla birbirinin yerine kullanılabilir.
+Türü `iterator_category` olduğu bir `move_iterator` `typedef` üzerinde yineleyici niteliğine göre `iterator_category`ve onunla birbirlerinin yerine kullanılabilir.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_category;
@@ -130,11 +130,11 @@ typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_ca
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyici ayırdedici nitelik eşanlamlısı türüdür `typename iterator_traits<RandomIterator>::iterator_category`.
+Türü yineleyici nitelik eşanlamlıdır `typename iterator_traits<RandomIterator>::iterator_category`.
 
 ## <a name="iterator_type"></a>  move_iterator::iterator_type
 
-Türü `iterator_type` şablon parametresi temelinde `RandomIterator` sınıfı şablonu için `move_iterator`ve onun yerine birbirinin yerine kullanılabilir.
+Türü `iterator_type` şablon parametresini temel alan `RandomIterator` sınıf şablonunun `move_iterator`ve onun yerine birbirlerinin yerine kullanılabilir.
 
 ```cpp
 typedef RandomIterator iterator_type;
@@ -142,11 +142,11 @@ typedef RandomIterator iterator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür `RandomIterator`.
+Şablon parametresi için bir eşanlamlı türüdür `RandomIterator`.
 
 ## <a name="move_iterator"></a>  move_iterator::move_iterator
 
-Bir taşıma yineleyici oluşturur. Parametre depolanan yineleyici kullanır.
+Bir taşıma yineleyicisi oluşturur. Parametre depolanmış yineleyiciyi kullanır.
 
 ```cpp
 move_iterator();
@@ -157,15 +157,15 @@ move_iterator(const move_iterator<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Saklı yineleyici kullanılacak yineleyici.
+*doğru* yineleyiciyi depolanmış yineleyiciyi kullanın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu saklı yineleyici kendi varsayılan oluşturucu ile başlatır. Kalan oluşturucular ile saklı yineleyici başlatma `base.base()`.
+İlk Oluşturucu depolanmış yineleyiciyi ile kendi varsayılan oluşturucusunu başlatır. Kalan oluşturucular ile depolanmış yineleyiciyi başlatmak `base.base()`.
 
 ## <a name="op_add_eq"></a>  move_iterator::operator +=
 
-Saklı yineleyici yeni geçerli konumda öğesine işaret eden bir uzaklık saklı yineleyici için ekler. İşleci, ardından yeni bir geçerli öğesi taşır.
+Depolanmış yineleyiciyi öğeye yeni geçerli konumda göstermeyecek şekilde depolanmış yineleyiciyi için bir uzaklık ekler. İşleci, ardından yeni geçerli öğe taşır.
 
 ```cpp
 move_iterator& operator+=(difference_type _Off);
@@ -173,19 +173,19 @@ move_iterator& operator+=(difference_type _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Off` Yeni geçerli konumunu belirlemek için geçerli konumu eklemek için bir uzaklık.
+*_Off* yeni geçerli konumunu belirlemek için geçerli konumun eklemek için bir uzaklık.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bir geçerli öğesi döndürür.
+Yeni geçerli öğeyi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç ekler `_Off` saklı yineleyici için. ardından döndürür `*this`.
+İşleç ekler *_Off* depolanmış yineleyiciyi için. Ardından döndürür `*this`.
 
 ## <a name="move_iterator__operator-_eq"></a>  move_iterator::operator-=
 
-Belirtilen sayıda önceki öğeyi arasında taşır. Bu işleç saklı yineleyici uzaklık çıkarır.
+Belirtilen sayıda önceki öğeler arasında taşır. Bu işleç, depolanmış yineleyiciyi bir uzaklık çıkarır.
 
 ```cpp
 move_iterator& operator-=(difference_type _Off);
@@ -195,11 +195,11 @@ move_iterator& operator-=(difference_type _Off);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç değerlendirir `*this += -_Off`. ardından döndürür `*this`.
+İşleç değerlendirir `*this += -_Off`. Ardından döndürür `*this`.
 
 ## <a name="op_add_add"></a>  move_iterator::operator++
 
-Bunun için ait olduğu saklı yineleyici artırır `move_iterator.` geçerli öğe postincrement operatör tarafından erişilir. Sonraki öğeye preincrement operatör tarafından erişilir.
+Şuna ait olan depolanmış yineleyiciyi artırır `move_iterator.` geçerli öğe postincrement işleci tarafından erişilir. Sonraki öğeye preincrement işleci tarafından erişilir.
 
 ```cpp
 move_iterator& operator++();
@@ -210,9 +210,9 @@ move_iterator operator++(int);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk (preincrement) işleci saklı yineleyici artırır. ardından döndürür `*this`.
+İlk (artırma) işleci, depolanmış yineleyiciyi artırır. Ardından döndürür `*this`.
 
-İkinci (postincrement) işleci bir kopyasını oluşturur `*this`, hesaplar `++*this`. Ardından kopya döndürür.
+İkinci işleç (artırma sonrası) bir kopyasını oluşturur `*this`, değerlendirir `++*this`. Daha sonra kopyayı döndürür.
 
 ## <a name="op_add"></a>  move_iterator::operator+
 
@@ -244,7 +244,7 @@ reference operator[](difference_type _Off) const;
 
 ## <a name="move_iterator__operator--"></a>  move_iterator::operator--
 
-Ön ve postdecrement üye işleçleri bir azaltma saklı yineleyici üzerinde gerçekleştirin.
+Öncesi ve postdecrement üye işleçleri bir azaltma depolanmış yineleyiciyi üzerinde gerçekleştirin.
 
 ```cpp
 move_iterator& operator--();
@@ -255,13 +255,13 @@ move_iterator operator--();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işleci (predecrement) azaltır saklı yineleyici. ardından döndürür `*this`.
+İlk üye işleci (azaltma) azaltır depolanmış yineleyiciyi. Ardından döndürür `*this`.
 
-İkinci (postdecrement) işleci bir kopyasını oluşturur `*this`, hesaplar `--*this`. Ardından kopya döndürür.
+İkinci işleç (azaltma sonrası) bir kopyasını oluşturur `*this`, değerlendirir `--*this`. Daha sonra kopyayı döndürür.
 
 ## <a name="move_iterator__operator-"></a>  move_iterator::operator-
 
-Azaltır saklı Yineleyici ve belirtilen değeri döndürür.
+Azaltır depolanmış yineleyiciyi ve belirtilen değeri döndürür.
 
 ```cpp
 move_iterator operator-(difference_type _Off) const;
@@ -275,7 +275,7 @@ move_iterator operator-(difference_type _Off) const;
 
 ## <a name="op_star"></a>  move_iterator::operator*
 
-Saklı yineleyici dereferences ve değeri döndürür. Bu gibi davranır bir `rvalue reference` ve taşıma atama gerçekleştirir. İşleç geçerli öğe temel yineleyici dışında aktarır. Aşağıdaki öğe yeni geçerli öğe haline gelir.
+Depolanmış yineleyiciyi başvurusunu kaldırır ve değeri döndürür. Bu gibi davranan bir `rvalue reference` ve taşıma ataması gerçekleştirir. İşleci, geçerli öğe temel yineleyicisi dışında aktarır. Yeni geçerli öğeyi izleyen öğe olur.
 
 ```cpp
 reference operator*() const;
@@ -299,7 +299,7 @@ pointer operator->() const;
 
 ## <a name="pointer"></a>  move_iterator::pointer
 
-Türü `pointer` olan bir `typedef` rastgele yineleyici üzerinde temel `RandomIterator` için `move_iterator`ve birbirlerinin yerine kullanılabilir.
+Türü `pointer` olduğu bir **typedef** üzerinde rastgele yineleyicinin tabanlı `RandomIterator` için `move_iterator`ve birbirlerinin yerine kullanılabilir.
 
 ```cpp
 typedef RandomIterator  pointer;
@@ -307,11 +307,11 @@ typedef RandomIterator  pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşanlamlısı türüdür `RandomIterator`.
+Türü eşanlamlıdır `RandomIterator`.
 
 ## <a name="reference"></a>  move_iterator::Reference
 
-Türü `reference` olan bir `typedef` göre `value_type&&` için `move_iterator`ve birbirlerinin yerine kullanılabilir `value_type&&`.
+Türü `reference` olduğu bir **typedef** göre `value_type&&` için `move_iterator`ve birbirlerinin yerine kullanılabilir `value_type&&`.
 
 ```cpp
 typedef value_type&& reference;
@@ -319,11 +319,11 @@ typedef value_type&& reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşanlamlısı türüdür `value_type&&`, rvalue başvuru olduğu.
+Türü eşanlamlıdır `value_type&&`, bir rvalue başvurusu olduğu.
 
 ## <a name="value_type"></a>  move_iterator::value_type
 
-Türü `value_type` olan bir `move_iterator` `typedef` yineleyici ayırdedici nitelik üzerinde temel `value_type`ve onunla birbirinin yerine kullanılabilir.
+Türü `value_type` olduğu bir `move_iterator` `typedef` üzerinde yineleyici niteliğine göre `value_type`ve onunla birbirlerinin yerine kullanılabilir.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::value_type   value_type;
@@ -331,7 +331,7 @@ typedef typename iterator_traits<RandomIterator>::value_type   value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyici ayırdedici nitelik eşanlamlısı türüdür `typename iterator_traits<RandomIterator>::value_type`.
+Türü yineleyici nitelik eşanlamlıdır `typename iterator_traits<RandomIterator>::value_type`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -17,21 +17,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8541d0732813ebd2b86e9a1941dc262b0ba1c20e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fcbc0820f98052ee29c489ca9cb556e1c913d07c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358944"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958578"
 ---
-# <a name="running-objects-classes"></a>Çalışan nesne sınıfları
+# <a name="running-objects-classes"></a>Nesne sınıflarını çalıştırma
 Aşağıdaki sınıftan nesneleri çalıştırmak için destek sağlar:  
   
--   [IRunnableObjectImpl](../atl/reference/irunnableobjectimpl-class.md) belirler nesneyi çalışıyorsa, zorlar çalıştırmak için veya çalışan bir duruma kilitler.  
+-   [Irunnableobjectımpl](../atl/reference/irunnableobjectimpl-class.md) belirler nesneyi çalışıyorsa zorlar çalıştırmak için veya çalışır duruma geçirmek kilitler.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

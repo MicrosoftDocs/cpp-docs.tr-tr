@@ -17,20 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c35ea26bc5dda6c0dce27217cc75784034a77554
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 73c1d560f0e2adfbecb72fe9df96d981d0bb93af
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705367"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957954"
 ---
 # <a name="abstract-classes-c"></a>Soyut Sınıflar (C++)
 
-Soyut sınıflar daha belirli sınıfları türetilebilir genel kavramlar ifadeleri olarak davranır. Bir Özet sınıf türünde bir nesne oluşturulamıyor; Ancak, soyut sınıf türleri için işaretçiler ve başvurular kullanabilirsiniz.
+Soyut sınıflar, daha özel sınıfların türetilebileceği genel kavramları ifade davranır. Bir soyut sınıf türünde bir nesne oluşturamazsınız; Ancak, soyut sınıf türleri için işaretçiler ve başvurular kullanabilirsiniz.
 
-En az bir saf sanal işlev içeren bir sınıf, soyut bir sınıf olarak kabul edilir. Soyut sınıftan türetilen sınıflara saf sanal işlev uygulamalıdır ya da, çok, soyut sınıflar.
+En az bir saf sanal işlev içeren bir sınıf, soyut bir sınıf olarak kabul edilir. Soyut sınıftan türetilmiş sınıflar saf sanal işlev uygulamanız gerekir veya onlar da soyut sınıflardır.
 
-Kullanarak bir sanal işlev "saf" olarak bildirilmiş *belirticisi saf* sözdizimi (açıklanan [sınıfı protokol uygulanması](http://msdn.microsoft.com/en-us/a319f1b3-05e8-400e-950a-1ca6eb105ab5)). İçinde sunulan örneği göz önünde bulundurun [sanal işlevler](../cpp/virtual-functions.md). Sınıf amacı `Account` genel işlevi, ancak nesne türü sağlamaktır `Account` kullanışlı olması için genel niteliktedir. Bu nedenle, `Account` bir Özet sınıf için iyi bir adaydır:
+İçinde sunulan örneği değerlendirin [sanal işlevler](../cpp/virtual-functions.md). Sınıfının amacı `Account` genel işlevleri, ancak nesne türü sağlamaktır `Account` kullanışlı olması için fazla geneldir. Bu nedenle, `Account` bir Özet sınıf için iyi bir adaydır:
 
 ```cpp
 // deriv_AbstractClasses.cpp
@@ -45,9 +45,9 @@ private:
 };
 ```
 
-Bu bildirim ve önceki arasındaki tek fark `PrintBalance` saf tanımlayıcısı ile bildirilmiş (`= 0`).
+Bu bildirim ve bir önceki arasındaki tek fark `PrintBalance` öğesinin saf belirticiyle bildirilen (`= 0`).
 
-## <a name="restrictions-on-abstract-classes"></a>Soyut sınıflar kısıtlamalar
+## <a name="restrictions-on-abstract-classes"></a>Soyut sınıflar kısıtlamaları
 
 Soyut sınıflar şunlar için kullanılamaz:
 
@@ -63,7 +63,7 @@ Başka bir kısıtlama da soyut bir sınıfa yönelik bir oluşturucu doğrudan 
 
 Saf sanal işlevler soyut sınıflar için tanımlanabilir, ancak doğrudan yalnızca şu sözdizimi kullanılarak çağrılabilir:
 
-*soyut sınıf adı*::*işlev adı*)
+*soyut sınıf adı*::*işlevi adı*)
 
 Bu, temel sınıf yıkıcıları her zaman bir nesne yıkılırken çağrıldığı için temel sınıfları saf sanal yıkıcılar içeren sınıf hiyerarşilerinin tasarlanmasına yardımcı olur. Aşağıdaki örnek göz önünde bulundurun:
 

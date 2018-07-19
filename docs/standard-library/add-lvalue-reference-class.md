@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4d91cfdafcbe81d568bdfffa5ee1b7c99d6bf8d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 710d7c154477320f7fb65f52f430f4c0666762c2
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839489"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956953"
 ---
 # <a name="addlvaluereference-class"></a>add_lvalue_reference sınıfı
 
-Türünden yazmak için yaptığı başvuru.
+Yaptığı türünden başvurusu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,11 +39,11 @@ using add_lvalue_reference_t = typename add_lvalue_reference<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Değişiklik türü.
+*T* değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir değişiklik-türü tür değiştiricisi örneğini tutan `T` varsa `T` lvalue başvuru Aksi takdirde değer `T&`.
+Tür değiştiricinin bir örneği bir değişiklik-tür tutar *T* varsa *T* bir lvalue başvurusuna, aksi halde kalır `T&`.
 
 ## <a name="example"></a>Örnek
 

@@ -50,16 +50,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65dc91bebf55c617d5c18d86d308558e57cbd3c3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b9ea6f4a5770163ddaa34478f6630ed2a24ffbd6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33848872"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954974"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf Sınıfı
 
-Türündeki öğeler iletimini denetleyen bir Akış Arabellek açıklar `Elem`, olan karakter nitelikler sınıfı tarafından belirlenir `Tr`, gelen ve giden bir dış dosyasında depolanan öğeleri dizisi.
+Türünde öğeler aktarımını denetleyen bir akış arabelleğinin açıklar *Elem*, olan karakter nitelikleri sınıfı tarafından belirlenen *Tr*, için ve bir dış dosya içinde depolanan öğeleri dizisi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,18 +70,18 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-`Elem` Dosya arabellek temel öğesidir.
+*Elem* dosya arabelleğinin temel öğe.
 
-`Tr` Dosya arabellek temel öğesi olarak nitelikler (genellikle `char_traits` <  `Elem`>).
+*Tr* temel öğesinin dosya arabelleğinin nitelikler (genellikle `char_traits` <  `Elem`>).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı türündeki öğeler iletimini denetleyen bir Akış Arabellek açıklar `Elem`, olan karakter nitelikler sınıfı tarafından belirlenir `Tr`, gelen ve giden bir dış dosyasında depolanan öğeleri dizisi.
+Şablon sınıfı türü öğeler aktarımını denetleyen bir akış arabelleğinin tanımlar *Elem*, olan karakter nitelikleri sınıfı tarafından belirlenir *Tr*, için ve depolanan öğelerin bir dizisi dış dosya.
 
 > [!NOTE]
-> Nesne türü `basic_filebuf` türü ile bir iç arabellek oluşturulan `char *` açmamasından `char_type` tür parametresi tarafından belirtilen `Elem`. Bu bir UNICODE dizesi anlamına gelir (içeren `wchar_t` karakter) bir ANSI dizeye dönüştürülür (içeren `char` karakter), iç arabellek yazılmadan önce. Arabellekte Unicode dizeleri depolamak için yeni bir arabellek türü oluşturma `wchar_t` ve kullanarak ayarlayın [basic_streambuf::pubsetbuf](../standard-library/basic-streambuf-class.md#pubsetbuf) `()` yöntemi. Bu davranış gösteren bir örnek görmek için aşağıya bakın.
+> Türündeki nesneler `basic_filebuf` türü ile bir iç arabellek oluşturulur `char *` bakılmaksızın `char_type` türü parametresi tarafından belirtilen *Elem*. Bir Unicode dize buna (içeren **wchar_t** karakter) bir ANSI dizesine dönüştürülür (içeren **char** karakterler), dahili arabelleğe yazılmadan önce. Arabellekteki Unicode dizeleri depolamak için yeni bir arabellek türü oluşturma **wchar_t** kullanarak ayarlayın [basic_streambuf::pubsetbuf](../standard-library/basic-streambuf-class.md#pubsetbuf) `()` yöntemi. Bu davranış gösteren bir örnek görmek için aşağıya bakın.
 
-Sınıfın bir nesnesi `basic_filebuf` <  `Elem`, `Tr`> atayan bir dosya işaretçisini depolar `FILE` açık bir dosyayla ilişkili akışı denetimleri nesne. Ayrıca korumalı üye işlevleri tarafından kullanım için iki dosya dönüştürme modelleri işaretçiler depolar [taşma](#overflow) ve [underflow](#underflow). Daha fazla bilgi için bkz: [basic_filebuf::open](#open).
+Sınıfın bir nesnesi `basic_filebuf` <  `Elem`, `Tr`> atayan bir dosya işaretçisini depolar `FILE` bir açık dosya ile ilişkilendirilmiş akış denetleyen nesne. Ayrıca korumalı üye işlevleri tarafından kullanım için iki dosya dönüştürme modelleri işaretçileri depolar [taşma](#overflow) ve [underflow](#underflow). Daha fazla bilgi için [basic_filebuf::open](#open).
 
 ## <a name="example"></a>Örnek
 
@@ -213,9 +213,9 @@ Hex Dump of wwHello.txt - note that output is wchar_t chars:
 |Tür adı|Açıklama|
 |-|-|
 |[char_type](#char_type)|Bir tür adıyla ilişkilendirir `Elem` şablon parametresi.|
-|[int_type](#int_type)|İçinde bu tür yapar `basic_filebuf`'s kapsam aynı adı türü eşdeğer `Tr` kapsam.|
-|[off_type](#off_type)|İçinde bu tür yapar `basic_filebuf`'s kapsam aynı adı türü eşdeğer `Tr` kapsam.|
-|[pos_type](#pos_type)|İçinde bu tür yapar `basic_filebuf`'s kapsam aynı adı türü eşdeğer `Tr` kapsam.|
+|[int_type](#int_type)|İçinde bu tür yapar `basic_filebuf`'s kapsamı aynı ada türüne eşdeğer `Tr` kapsam.|
+|[off_type](#off_type)|İçinde bu tür yapar `basic_filebuf`'s kapsamı aynı ada türüne eşdeğer `Tr` kapsam.|
+|[pos_type](#pos_type)|İçinde bu tür yapar `basic_filebuf`'s kapsamı aynı ada türüne eşdeğer `Tr` kapsam.|
 |[traits_type](#traits_type)|Bir tür adıyla ilişkilendirir `Tr` şablon parametresi.|
 
 ### <a name="member-functions"></a>Üye işlevleri
@@ -223,17 +223,17 @@ Hex Dump of wwHello.txt - note that output is wchar_t chars:
 |Üye işlevi|Açıklama|
 |-|-|
 |[close](#close)|Bir dosyayı kapatır.|
-|[is_open](#is_open)|Bir dosyanın açık olup olmadığını gösterir.|
-|[open](#open)|Bir dosyayı açar.|
-|[Taşma](#overflow)|Yeni bir karakter tam arabelleğine takıldığında çağrılabilir korumalı sanal işlev.|
-|[pbackfail](#pbackfail)|Korumalı sanal üye fonksiyonu geri öğenin Giriş akışı yerleştirin ve ardından (tarafından sonraki işaretçisi işaret) geçerli öğe olun dener.|
-|[seekoff](#seekoff)|Korumalı sanal üye fonksiyonu geçerli konumlar denetimli akışlar için alter dener.|
-|[seekpos](#seekpos)|Korumalı sanal üye fonksiyonu geçerli konumlar denetimli akışlar için alter dener.|
-|[setbuf](#setbuf)|Korumalı sanal üye fonksiyonu her türetilmiş Akış Arabellek bir işlemi belirli gerçekleştirir.|
-|[Değiştirme](#swap)|Bu içeriği alış verişleri `basic_filebuf` sağlanan içeriğinin `basic_filebuf` parametresi.|
-|[Eşitleme](#sync)|Denetimli akışları ile ilişkili tüm dış akışları eşitlemek korumalı, sanal işlev çalışır.|
-|[uflow](../standard-library/basic-streambuf-class.md#uflow)|Korumalı, geçerli öğe giriş akışından ayıklamak için sanal işlev.|
-|[underflow](#underflow)|Korumalı, geçerli öğe giriş akışından ayıklamak için sanal işlev.|
+|[is_open](#is_open)|Bir dosya açık olup olmadığını gösterir.|
+|[open](#open)|Bir dosya açar.|
+|[taşma](#overflow)|Yeni bir karakteri tam bir arabelleğe eklendiğinde çağrılabilir korumalı sanal işlev.|
+|[pbackfail](#pbackfail)|Korumalı sanal üye işlevi, bir öğe giriş akışa geri yerleştirin ve ardından (sonraki işaretçisi tarafından işaret edilen) geçerli öğe olun dener.|
+|[seekoff](#seekoff)|Korumalı sanal üye işlevi, geçerli konumlar denetimli akışları için alter dener.|
+|[seekpos](#seekpos)|Korumalı sanal üye işlevi, geçerli konumlar denetimli akışları için alter dener.|
+|[setbuf](#setbuf)|Korumalı sanal üye işlevi her türetilmiş akış arabelleği için bir işlemi belirli gerçekleştirir.|
+|[değiştirme](#swap)|Bu içeriği birbiriyle değiştirir `basic_filebuf` içeriği sağlanan `basic_filebuf` parametresi.|
+|[Eşitleme](#sync)|Korumalı, sanal işlev ilişkili herhangi bir dış akışlarla denetimli akışları eşitlemeye çalışır.|
+|[uflow](../standard-library/basic-streambuf-class.md#uflow)|Korumalı, geçerli öğe girdi akışından ayıklanacak sanal işlev.|
+|[yetersiz kalması](#underflow)|Korumalı, geçerli öğe girdi akışından ayıklanacak sanal işlev.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -253,13 +253,13 @@ basic_filebuf(basic_filebuf&& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucusu null işaretçi giriş arabelleği ve çıkış arabelleği denetleme tüm işaretçiler içinde depolar. Ayrıca bir null işaretçinin dosya işaretçisini depolar.
+İlk Oluşturucu giriş arabelleği ve çıkış arabelleği denetleme tüm işaretçilerin null bir işaretçi depolar. Ayrıca dosya işaretçisini null bir işaretçi depolar.
 
-İkinci oluşturucu içeriğini nesnesiyle başlatır `right`, rvalue başvuru olarak işlem görür.
+İkinci oluşturucu içeriğini nesnesiyle başlatır `right`, bir rvalue başvurusu olarak kabul edilir.
 
 ## <a name="char_type"></a>  basic_filebuf::char_type
 
-Bir tür adıyla ilişkilendirir **Elem** şablon parametresi.
+Bir tür adıyla ilişkilendirir `Elem` şablon parametresi.
 
 ```cpp
 typedef Elem char_type;
@@ -275,17 +275,17 @@ basic_filebuf<Elem, Tr> *close();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisini null işaretçi ise üye işlevi null işaretçi döndürür.
+Dosya işaretçisini bir null işaretçi ise üye işlevi bir null işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Kapat** çağrıları `fclose`( **fp**). Bu işlevi sıfır olmayan bir değer döndürürse, bir null işaretçinin işlevi döndürür. Aksi takdirde, döndürür **bu** dosya başarılı bir şekilde kapatıldı belirtmek için.
+`close` çağrıları `fclose`( **fp**). Bu işlev, sıfır olmayan bir değer döndürürse, işlev bir null işaretçi döndürür. Aksi halde **bu** dosya başarıyla kapatıldı belirtmek için.
 
-Akış açıldıktan sonra tüm eklemeleri oluşmuş, geniş bir akış için ya da son çağrısından sonra `streampos`, işlev çağrıları [taşma](#overflow). Ayrıca dosya dönüştürme modeli kullanarak ilk dönüştürme durumu geri yüklemek için gerekli dizisi ekler **fac** çağırmak için **fac.unshift** gerektiğinde. Her öğe **bayt** türü `char` böylece üretilen dosya işaretçisini tarafından belirlenen ilişkili akışa yazılan **fp** olarak art arda gelen çağrıları formun durumunda da `fputc`( **bayt**, **fp**). Varsa çağrısı **fac.unshift** veya herhangi başarısız yazma, işlevi başarılı olmaz.
+Akış açıldıktan sonra tüm eklemeleri oluşmadıysa geniş bir akış için ya da son çağrısından sonra `streampos`, işlev çağrıları [taşma](#overflow). Ayrıca ilk dönüştürme durumunu dosya dönüştürme modeli kullanarak geri yüklemek için gerekli herhangi bir dizisi ekler `fac` çağrılacak `fac.unshift` gerektiğinde. Her öğe `byte` türü **char** böylece üretilen dosya işaretçisi tarafından belirlenen ilişkili akışına yazılan `fp` art arda gelen çağrıları biçiminde, olduğu gibi `fputc`( **bayt**, **fp**). Çağrı `fac.unshift` veya herhangi bir yazma başarısız olursa, işlev başarısız olur.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek iki dosya geçerli dizinde varsayar: basic_filebuf_close.txt (içeriği "test") ve iotest.txt ("ssss" içeriği'dir).
+Aşağıdaki örnek iki dosya geçerli dizinde varsayar: basic_filebuf_close.txt (içeriği "test") ve iotest.txt (içeriği olan "ssss").
 
 ```cpp
 // basic_filebuf_close.cpp
@@ -334,7 +334,7 @@ s
 
 ## <a name="int_type"></a>  basic_filebuf::int_type
 
-Bu tür basic_filebuf'ın kapsamında aynı adı türü eşdeğer yapar **Tr** kapsam.
+Bu tür basic_filebuf'ın kapsamında aynı adı türü için eşdeğer yapar `Tr` kapsam.
 
 ```cpp
 typedef typename traits_type::int_type int_type;
@@ -342,7 +342,7 @@ typedef typename traits_type::int_type int_type;
 
 ## <a name="is_open"></a>  basic_filebuf::is_open
 
-Bir dosyanın açık olup olmadığını gösterir.
+Bir dosya açık olup olmadığını gösterir.
 
 ```cpp
 bool is_open() const;
@@ -350,7 +350,7 @@ bool is_open() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** dosya işaretçisi null işaretçi değilse.
+**doğru** dosya işaretçisi null bir işaretçi değilse.
 
 ### <a name="example"></a>Örnek
 
@@ -378,7 +378,7 @@ true
 
 ## <a name="off_type"></a>  basic_filebuf::off_type
 
-Bu tür basic_filebuf'ın kapsamında aynı adı türü eşdeğer yapar **Tr** kapsam.
+Bu tür basic_filebuf'ın kapsamında aynı adı türü için eşdeğer yapar `Tr` kapsam.
 
 ```cpp
 typedef typename traits_type::off_type off_type;
@@ -386,7 +386,7 @@ typedef typename traits_type::off_type off_type;
 
 ## <a name="open"></a>  basic_filebuf::Open
 
-Bir dosyayı açar.
+Bir dosya açar.
 
 ```cpp
 basic_filebuf<Elem, Tr> *open(
@@ -410,45 +410,45 @@ basic_filebuf<Elem, Tr> *open(
 
 ### <a name="parameters"></a>Parametreler
 
-`_Filename` Açılacak dosyanın adı.
+*Bilgisi _dosya adını* açmak için dosyanın adı.
 
-`_Mode` Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Modu* numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-`_Prot` Koruma, eşdeğer açma varsayılan dosya `shflag` parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot* varsayılan dosyanın koruması, eşdeğer açma *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisini null işaretçi ise, bir null işaretçinin işlevi döndürür. Aksi takdirde, döndürür **bu**.
+Dosya işaretçisini bir null işaretçi ise, işlev bir null işaretçi döndürür. Aksi halde **bu**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini dosya adıyla açılır *filename*, çağırarak [fopen](../c-runtime-library/reference/fopen-wfopen.md)( *filename*, **strmode**). **strmode** gelen belirlenir **modu &**~ ( [tarih](../standard-library/ios-base-class.md#openmode) & &#124; [ikili](../standard-library/ios-base-class.md#openmode)):
+Üye işlevi dosya adıyla açılır *filename*, çağırarak [fopen](../c-runtime-library/reference/fopen-wfopen.md)( *filename*, **strmode**). `strmode` gelen belirlenir **modu &**~ ( [tarih](../standard-library/ios-base-class.md#openmode) & &#124; [ikili](../standard-library/ios-base-class.md#openmode)):
 
-- **ios_base::in** hale **"r"** (okumak için mevcut dosyasını açın).
+- `ios_base::in` olur **"r"** (okuma için mevcut dosyasını açın).
 
-- [ios_base::out](../standard-library/ios-base-class.md#fmtflags) veya **ios_base::out &#124; ios_base::trunc** hale **"w"** (varolan dosyasını kesmek veya yazma işlemi için oluşturun).
+- [ios_base::out](../standard-library/ios-base-class.md#fmtflags) veya **ios_base::out &#124; ios_base::trunc** olur **"w"** (mevcut dosyasını kesmek veya yazma için oluşturun).
 
-- **ios_base::out &#124; uygulama** hale **"a"** (tüm yazma işlemlerini ekleme için var olan dosyayı Aç).
+- **ios_base::out &#124; uygulama** olur **"a"** (tüm yazma işlemlerini ekleme için mevcut Dosya Aç).
 
-- **ios_base::in &#124; ios_base::out** hale **"r +"** (okuma ve yazma için mevcut dosyasını açın).
+- **ios_base::in &#124; ios_base::out** olur **"r +"** (okuma ve yazma için mevcut dosyasını açın).
 
-- **ios_base::in &#124; ios_base::out &#124; ios_base::trunc** hale **"w +"** (varolan dosyasını kesmek veya okuma ve yazma için oluşturun).
+- **ios_base::in &#124; ios_base::out &#124; ios_base::trunc** olur **"w +"** (mevcut dosyasını kesmek veya okuma ve yazma için oluşturun).
 
-- **ios_base::in &#124; ios_base::out &#124; ios_base::app** hale **"bir +"** (açık varolan dosyası okuma için ve tüm yazma işlemlerini ekleme için).
+- **ios_base::in &#124; ios_base::out &#124; ios_base::app** olur **"a +"** (açık mevcut dosyası okuma için ve tüm yazma işlemlerini ekleme için).
 
-Varsa **modu & ios_base::binary** olan sıfır olmayan, işlevi ekler **b** için **strmode** bir metin akış yerine ikili akış açmak için. Ardından tarafından döndürülen değer depolayan `fopen` dosya işaretçisini içinde **fp**. Varsa **modu & ios_base::ate** sıfır olmayan olduğundan ve dosya işaretçisi null işaretçi, işlev çağrıları değil `fseek`( **fp**, 0, `SEEK_END`) dosya sonunda akış konumlandırmak için. Konumlandırma bu işlem başarısız olursa, işlev çağrıları [kapatmak](#close)( **fp**) ve bir null işaretçinin dosya işaretçisini depolar.
+Varsa **modu & ios_base::binary** olan sıfır değilse, işlev ekler `b` için `strmode` metin akışına yerine ikili akışa açmak için. Ardından tarafından döndürülen değeri depolar `fopen` dosya işaretçisini içinde `fp`. Varsa **modu & ios_base::ate** sıfır dışında olan ve dosya işaretçisi, null işaretçisiyse, işlev çağrıları değil `fseek`( **fp**, 0, `SEEK_END`) dosya sonunda akış yerleştirmek için. Yerleştirme işlemi başarısız olursa, işlev çağrıları [kapatmak](#close)( `fp`) ve dosya işaretçisi null bir işaretçi depolar.
 
-Dosya işaretçisini null işaretçi değilse, dosya dönüştürme modeli işlevi belirler: `use_facet` <  `codecvt` <  **Elem**, `char`, **traits_type::** [ state_type](../standard-library/char-traits-struct.md#state_type)>> ( [getloc](../standard-library/basic-streambuf-class.md#getloc)), tarafından kullanılmak üzere [underflow](#underflow) ve [taşma](#overflow).
+Dosya işaretçisi, null bir işaretçi değil ise, işlev dosya dönüştürme modeli belirler: `use_facet` <  `codecvt` <  **Elem**, `char`, **traits_type::** [ state_type](../standard-library/char-traits-struct.md#state_type)>> ( [getloc](../standard-library/basic-streambuf-class.md#getloc)), tarafından kullanılmak üzere [underflow](#underflow) ve [taşma](#overflow).
 
-Dosya işaretçisini null işaretçi ise, bir null işaretçinin işlevi döndürür. Aksi takdirde, döndürür **bu**.
+Dosya işaretçisini bir null işaretçi ise, işlev bir null işaretçi döndürür. Aksi halde **bu**.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [basic_filebuf::close](#close) kullanan bir örnek **açmak**.
+Bkz: [basic_filebuf::close](#close) kullanan bir örnek için `open`.
 
 ## <a name="op_eq"></a>  basic_filebuf::operator =
 
-Bu akış arabellek nesne içeriğini atayın. Bir kopyasını bırakmaz arkasındaki bir rvalue içeren bir taşıma atama budur.
+Bu akış arabelleği nesnenin içeriğini atayın. Bir kopya bırakmaz arkasındaki bir rvalue içeren bir taşıma ataması budur.
 
 ```cpp
 basic_filebuf& operator=(basic_filebuf&& right);
@@ -456,7 +456,7 @@ basic_filebuf& operator=(basic_filebuf&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Rvalue başvuru için bir [basic_filebuf](../standard-library/basic-filebuf-class.md) nesnesi.
+*doğru* rvalue başvurusuna bir [basic_filebuf](../standard-library/basic-filebuf-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -464,11 +464,11 @@ Döndürür * bu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci içeriğini kullanarak nesne içeriğini değiştirir `right`, rvalue başvuru olarak işlem görür. Daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+İçeriğini kullanarak üye işleci nesnenin içeriğini değiştirir *doğru*, bir rvalue başvurusu olarak kabul edilir. Daha fazla bilgi için [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="overflow"></a>  basic_filebuf::Overflow
 
-Yeni bir karakter tam arabelleğine takıldığında çağrılır.
+Yeni bir karakteri tam bir arabelleğe eklendiğinde çağrılır.
 
 ```cpp
 virtual int_type overflow(int_type _Meta = traits_type::eof);
@@ -476,25 +476,25 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Meta` Arabelleğe eklemek için karakter veya **traits_type::eof**.
+*_Meta* karakter arabelleğine ekleme veya `traits_type::eof`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarısız olması durumunda, döndürür **traits_type::eof**. Aksi takdirde, döndürür **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+İşlev başarılı olursa, döndürür `traits_type::eof`. Aksi halde **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa _ * Meta ***! traits_type =::**[eof](../standard-library/char-traits-struct.md#eof), korumalı sanal üye fonksiyonu endeavors öğesi eklemek **ch traits_type =::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type) (\_ *Meta*) çıkış arabelleği içine. Bunu çeşitli yöntemlerle yapabilirsiniz:
+_ * Meta ***! traits_type =::**[eof](../standard-library/char-traits-struct.md#eof), korumalı sanal üye işlevi endeavors öğe eklemek **ch traits_type =::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type) (\_ *Meta*) çıktı arabelleğine. Bunu çeşitli yöntemlerle yapabilirsiniz:
 
-- Yazma konumunu varsa, bu öğenin yazma konumunu depolamak ve çıkış arabelleği için sonraki işaretçisi Artır.
+- Yazma konumunu varsa, bu öğe yazma konumuna depolayabilir ve çıkış arabelleği için sonraki işaretçisine artırılacak.
 
-- Çıkış arabelleği için yeni veya ek depolama alanı ayırarak, yazma konumunu kullanılabilir hale getirebilirsiniz.
+- Çıkış arabelleği için yeni veya ek depolama alanı ayırarak bunu yazma konumunu kullanılabilir duruma getirebilirsiniz.
 
-- Ardından çıktı arabelleğine bekleyen herhangi bir çıktı dönüştürebilirsiniz **ch**, dosya dönüştürme modeli kullanarak **fac** çağırmak için **fac.out** gerektiğinde. Her öğe `ch` türü *char* böylece üretilen dosya işaretçisini tarafından belirlenen ilişkili akışa yazılan **fp** olarak art arda gelen çağrıları formun durumunda da `fputc`( **ch**, **fp**). Herhangi bir dönüştürme veya yazma başarısız olursa, işlevi başarılı olmaz.
+- Ardından, çıkış arabelleği bekleyen herhangi bir çıktı dönüştürebilirsiniz `ch`, dosya dönüştürme modeli kullanarak `fac` çağırmak için `fac.out` gerektiğinde. Her öğe `ch` türü *char* böylece üretilen dosya işaretçisi tarafından belirlenen ilişkili akışına yazılan `fp` art arda gelen çağrıları biçiminde, olduğu gibi `fputc`( **ch**, **fp**). Herhangi bir dönüştürme veya yazma başarısız olursa, işlev başarılı olmaz.
 
 ## <a name="pbackfail"></a>  basic_filebuf::pbackfail
 
-Bir öğenin Giriş akışı geri koymak sonra (tarafından sonraki işaretçisi işaret) geçerli öğe olun dener.
+Bir öğe giriş akışa geri yerleştirin ve ardından (sonraki işaretçisi tarafından işaret edilen) geçerli öğe olun dener.
 
 ```cpp
 virtual int_type pbackfail(int_type _Meta = traits_type::eof);
@@ -502,25 +502,25 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Meta` Arabelleğe eklemek için karakter veya **traits_type::eof**.
+*_Meta* karakter arabelleğine ekleme veya `traits_type::eof`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarısız olması durumunda, döndürür **traits_type::eof**. Aksi takdirde, döndürür **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+İşlev başarılı olursa, döndürür `traits_type::eof`. Aksi halde **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye fonksiyonu geri öğenin giriş arabelleğe alır ve (tarafından sonraki işaretçisi işaret) geçerli öğe hale getirir. Varsa _ *Meta* **traits_type ==::**[eof](../standard-library/char-traits-struct.md#eof), geri göndermek için etkili bir şekilde akış geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğenin değiştirilmiştir **ch traits_type =::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*). İşlev, çeşitli yollarla bir öğe geri koyabilirsiniz:
+Korumalı sanal üye işlevi bir öğe giriş belleğe geri alır ve ardından (sonraki işaretçisi tarafından işaret edilen) geçerli öğe yapar. _ *Meta* **traits_type ==::**[eof](../standard-library/char-traits-struct.md#eof), geri göndermek için etkili bir şekilde akış önce geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğe tarafından değiştirilir **ch traits_type =::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*). İşlevi, öğenin çeşitli yollarla geri koyabilirsiniz:
 
-- Putback konumu varsa ve depolanan öğesi eşit karşılaştırır **ch**, giriş arabelleği için sonraki işaretçisi azaltma.
+- Putback konum kullanılabilir ve burada depolanan öğenin eşit karşılaştırır `ch`, sonraki işaretçisi giriş arabelleği için azaltma.
 
-- İşlev yapabiliyorsanız bir `putback` getirin ve depolayan konumu, bunu yapmak, sonraki işaretçisi işaret Ayarla kullanılabilir **ch** konumda.
+- İşlev geçerliyse bir `putback` getirin ve depolayan konumu Bunu yapmak, sonraki işaretçisi işaret için ayarlanmış kullanılabilir `ch` konumda.
 
-- İşlev Giriş akışı geri öğenin gönderebilir, bunu gibi çağırarak bunu yapabilirsiniz `ungetc` türünde bir öğe için `char`.
+- İşlev giriş akışa geri bir öğe gönderebilir, bunu, gibi çağırarak yapabilirsiniz `ungetc` türünde bir öğe için **char**.
 
 ## <a name="pos_type"></a>  basic_filebuf::pos_type
 
-Bu tür basic_filebuf'ın kapsamında aynı adı türü eşdeğer yapar **Tr** kapsam.
+Bu tür basic_filebuf'ın kapsamında aynı adı türü için eşdeğer yapar `Tr` kapsam.
 
 ```cpp
 typedef typename traits_type::pos_type pos_type;
@@ -528,7 +528,7 @@ typedef typename traits_type::pos_type pos_type;
 
 ## <a name="seekoff"></a>  basic_filebuf::seekoff
 
-Geçerli konumlar denetimli akışlar için alter dener.
+Denetlenen akışlar için geçerli konumları alter dener.
 
 ```cpp
 virtual pos_type seekoff(off_type _Off,
@@ -538,27 +538,27 @@ virtual pos_type seekoff(off_type _Off,
 
 ### <a name="parameters"></a>Parametreler
 
-`_Off` Göreli olarak için arama konumunu `_Way`.
+*_Off* göreli arama konumu *_Way*.
 
-`_Way` Uzaklık işlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) olası değerler için.
+*_Way* işlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
 
-`_Which` İşaretçi konumunun modunu belirtir. Varsayılan konumlar yazma ve okuma değiştirmek izin vermektir.
+*_Which* işaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bir konuma veya geçersiz akış konumunu döndürür.
+Yeni bir konuma veya geçersiz akış konumu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimli akışlar için geçerli konumlarını değiştirmek korumalı sanal üye fonksiyonu endeavors. Sınıfın bir nesnesi için [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, bir akışı konumu türünde bir nesne tarafından temsil edilebilir `fpos_t`, bir uzaklık depolar ve herhangi bir durum bilgi gerekiyor geniş bir akış ayrıştırılamıyor. Uzaklık sıfır akış ilk öğesi belirler. (Bir nesne türü [pos_type](../standard-library/basic-streambuf-class.md#pos_type) en az bir depolar `fpos_t` nesnesi.)
+Denetlenen akışlar için geçerli konumları değiştirmek korumalı sanal üye işlevi endeavors. Sınıfın bir nesnesi için [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, bir akış konumu türünde bir nesne tarafından temsil edilebilir `fpos_t`, bir uzaklık depolar ve herhangi bir durum bilgi gerekiyor geniş bir akışı ayrıştıramadı. Uzaklık sıfır akışın ilk öğeyi belirtir. (Bir nesne türü [pos_type](../standard-library/basic-streambuf-class.md#pos_type) en az bir depolar `fpos_t` nesne.)
 
-Okuma ve yazma için açılmış olan bir dosya için giriş ve çıkış akışları dağıtımınızla konumlandırılır. Ekleme ve çıkarma arasında geçiş yapmak için ya da çağırmalıdır [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff) veya [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos). Çağrılar `pubseekoff` (ve dolayısıyla için `seekoff`) için çeşitli sınırlamaları vardır [metin akışları](../c-runtime-library/text-and-binary-streams.md), [ikili akışlar](../c-runtime-library/text-and-binary-streams.md), ve [geniş akışlar](../c-runtime-library/byte-and-wide-streams.md).
+Hem okuma hem de yazma için açılmış bir dosya için girdi ve çıktı akışları dağıtımınızla yerleştirilir. Ekleme ve ayıklama arasında geçiş yapmak için ya da çağırmalıdır [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff) veya [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos). Çağrılar `pubseekoff` (ve dolayısıyla için `seekoff`) çeşitli sınırlamaları sahip [metin akışları](../c-runtime-library/text-and-binary-streams.md), [ikili akışlar](../c-runtime-library/text-and-binary-streams.md), ve [geniş akışlar](../c-runtime-library/byte-and-wide-streams.md).
 
-Varsa dosya işaretçisini **fp** null işaretçi, işlev başarısız olur. Aksi takdirde çağırarak akışı konumu değiştirmek endeavors `fseek`( **fp**, `_Off`, `_Way`). Bu işlev başarılı olursa ve sonuçta elde edilen konumu **fposn** çağrılarak belirlenen `fgetpos`( **fp**, **& fposn**), işlevi başarılı olur. İşlev başarılı olursa, türünde bir değer döndürür **pos_type** içeren **fposn**. Aksi halde, bir geçersiz akış konumunu döndürür.
+Dosya işaretçisini `fp` null işaretçisiyse, işlev başarısız olur. Aksi takdirde, çağrı yaparak akış konumu değiştirmek endeavors `fseek`( **fp**, `_Off`, `_Way`). Bu işlev başarılı olursa ve konumu `fposn` çağırarak belirlenebilir `fgetpos`( **fp**, **& fposn**), işlev başarılı. İşlev başarılı olursa, türünde bir değer döndürür. `pos_type` içeren `fposn`. Aksi takdirde geçersiz akış konumu döndürür.
 
 ## <a name="seekpos"></a>  basic_filebuf::seekpos
 
-Geçerli konumlar denetimli akışlar için alter dener.
+Denetlenen akışlar için geçerli konumları alter dener.
 
 ```cpp
 virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios_base::out);
@@ -566,25 +566,25 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### <a name="parameters"></a>Parametreler
 
-`_Sp` Arama konumu.
+*_Sp* için arama konumu.
 
-`_Which` İşaretçi konumunun modunu belirtir. Varsayılan konumlar yazma ve okuma değiştirmek izin vermektir.
+*_Which* işaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsa dosya işaretçisini **fp** null işaretçi, işlev başarısız olur. Aksi takdirde çağırarak akışı konumu değiştirmek endeavors `fsetpos`( **fp**, **& fposn**), burada **fposn** olan `fpos_t` içindedepolanannesnesi`pos`. Bu işlev başarılı olursa, işlevi döndürür `pos`. Aksi halde, bir geçersiz akış konumunu döndürür. Akışı konumu geçersiz olup olmadığını belirlemek için dönüş değeri ile karşılaştırın `pos_type(off_type(-1))`.
+Dosya işaretçisini `fp` null işaretçisiyse, işlev başarısız olur. Aksi takdirde, çağrı yaparak akış konumu değiştirmek endeavors `fsetpos`( **fp**, **& fposn**), burada `fposn` olduğu `fpos_t` depolanan nesne `pos`. İşlev başarılı olursa bu işlev, döndürür `pos`. Aksi takdirde geçersiz akış konumu döndürür. Akış konumu geçersiz olup olmadığını belirlemek için dönüş değeri ile karşılaştırmak `pos_type(off_type(-1))`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimli akışlar için geçerli konumlarını değiştirmek korumalı sanal üye fonksiyonu endeavors. Sınıfın bir nesnesi için [basic_filebuf](../standard-library/basic-filebuf-class.md) \< **Elem**, **Tr**>, bir akışı konumu türünde bir nesne tarafından temsil edilebilir `fpos_t`, depolayan bir uzaklık ve geniş bir akış ayrıştırmak için gerekli tüm durum bilgileri. Uzaklık sıfır akış ilk öğesi belirler. (Bir nesne türü `pos_type` en az bir depolar `fpos_t` nesnesi.)
+Denetlenen akışlar için geçerli konumları değiştirmek korumalı sanal üye işlevi endeavors. Sınıfın bir nesnesi için [basic_filebuf](../standard-library/basic-filebuf-class.md) \< **Elem**, **Tr**>, bir akış konumu türünde bir nesne tarafından temsil edilebilir `fpos_t`, hangi depoları bir uzaklık ve geniş bir akışı ayrıştırmak için gerekli tüm durum bilgileri. Uzaklık sıfır akışın ilk öğeyi belirtir. (Bir nesne türü `pos_type` en az bir depolar `fpos_t` nesne.)
 
-Okuma ve yazma için açılmış olan bir dosya için giriş ve çıkış akışları dağıtımınızla konumlandırılır. Ekleme ve çıkarma arasında geçiş yapmak için ya da çağırmalıdır [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff) veya [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos). Çağrılar `pubseekoff` (ve dolayısıyla için `seekoff`) metin akışları, ikili akışlar ve geniş akışlar için çeşitli sınırlamaları vardır.
+Hem okuma hem de yazma için açılmış bir dosya için girdi ve çıktı akışları dağıtımınızla yerleştirilir. Ekleme ve ayıklama arasında geçiş yapmak için ya da çağırmalıdır [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff) veya [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos). Çağrılar `pubseekoff` (ve dolayısıyla için `seekoff`) metin akışları, ikili akışlar ve geniş akışlar için çeşitli sınırlamaları vardır.
 
-Akış açıldıktan sonra tüm eklemeleri oluşmuş, geniş bir akış için ya da son çağrısından sonra `streampos`, işlev çağrıları [taşma](#overflow). Ayrıca dosya dönüştürme modeli kullanarak ilk dönüştürme durumu geri yüklemek için gerekli dizisi ekler **fac** çağırmak için **fac** `.unshift` gerektiğinde. Her öğe **bayt** türü `char` böylece üretilen dosya işaretçisini tarafından belirlenen ilişkili akışa yazılan **fp** olarak art arda gelen çağrıları formun durumunda da `fputc`( **bayt**, **fp**). Varsa çağrısı **fac.unshift** veya herhangi başarısız yazma, işlevi başarılı olmaz.
+Akış açıldıktan sonra tüm eklemeleri oluşmadıysa geniş bir akış için ya da son çağrısından sonra `streampos`, işlev çağrıları [taşma](#overflow). Ayrıca ilk dönüştürme durumunu dosya dönüştürme modeli kullanarak geri yüklemek için gerekli herhangi bir dizisi ekler `fac` çağrılacak **fac** `.unshift` gerektiğinde. Her öğe `byte` türü **char** böylece üretilen dosya işaretçisi tarafından belirlenen ilişkili akışına yazılan `fp` art arda gelen çağrıları biçiminde, olduğu gibi `fputc`( **bayt**, **fp**). Çağrı `fac.unshift` veya herhangi bir yazma başarısız olursa, işlev başarısız olur.
 
 ## <a name="setbuf"></a>  basic_filebuf::setbuf
 
-Her türetilmiş Akış Arabellek bir işlemi belirli gerçekleştirir.
+Her türetilmiş akış arabelleği için bir işlemi belirli gerçekleştirir.
 
 ```cpp
 virtual basic_streambuf<Elem, Tr> *setbuf(
@@ -594,21 +594,21 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-`_Buffer` Arabellek için işaretçi.
+*_Buffer* arabellek için işaretçi.
 
-`count` Arabellek boyutu.
+*sayısı* arabellek boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Korumalı üye işlevi sıfır dosya işaretçisini döndürür `fp` null işaretçi.
+Korumalı üye işlevi, dosya işaretçisini sıfır döndürür `fp` bir null işaretçidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`setbuf` çağrıları `setvbuf`( **fp**, ( `char` \*) `_Buffer`, `_IOFBF`, `count` \* `sizeof` ( **Elem**)) dizi sunmak için `count` başlangıcı sırasında _ öğeleri *arabellek* akış için arabellek olarak. Bu işlevi sıfır olmayan bir değer döndürürse, bir null işaretçinin işlevi döndürür. Aksi takdirde, döndürür **bu** sinyal başarılı.
+`setbuf` çağrıları `setvbuf`( **fp**, ( `char` \*) `_Buffer`, `_IOFBF`, `count` \* `sizeof` ( **Elem**)) sunan için ' ın `count` _ başlayan öğeleri *arabellek* akış için bir arabellek. Bu işlev, sıfır olmayan bir değer döndürürse, işlev bir null işaretçi döndürür. Aksi halde **bu** sinyal başarılı.
 
 ## <a name="swap"></a>  basic_filebuf::Swap
 
-Bu içeriği alış verişleri `basic_filebuf` sağlanan içeriklerinin `basic_filebuf`.
+Bu içeriğini birbiriyle değiştirir `basic_filebuf` sağlanan içeriklerinin `basic_filebuf`.
 
 ```cpp
 void swap(basic_filebuf& right);
@@ -616,11 +616,11 @@ void swap(basic_filebuf& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Bir `lvalue` başka bir başvuru `basic_filebuf`.
+*doğru* bir `lvalue` başka bir başvuru `basic_filebuf`.
 
 ## <a name="sync"></a>  basic_filebuf::Sync
 
-Denetimli akışları ile ilişkili tüm dış akışları eşitlemeye çalışır.
+Denetlenen akışları ilişkili herhangi bir dış akışlarla eşitlemeye çalışır.
 
 ```cpp
 virtual int sync();
@@ -628,11 +628,11 @@ virtual int sync();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisini sıfır verir **fp** null işaretçi. Aksi takdirde, yalnızca sıfır olursa çağırır iki döndürür [taşma](#overflow) ve `fflush`( **fp**) bekleyen herhangi bir çıktı akışına temizleme içinde başarılı.
+Dosya işaretçisini sıfır döndürür `fp` bir null işaretçidir. Aksi takdirde, yalnızca sıfır ise çağıran her iki döndürür [taşma](#overflow) ve `fflush`( **fp**) bekleyen herhangi bir çıktı akışına boşaltma başarılı.
 
 ## <a name="traits_type"></a>  basic_filebuf::traits_type
 
-Bir tür adıyla ilişkilendirir **Tr** şablon parametresi.
+Bir tür adıyla ilişkilendirir `Tr` şablon parametresi.
 
 ```cpp
 typedef Tr traits_type;
@@ -640,7 +640,7 @@ typedef Tr traits_type;
 
 ## <a name="underflow"></a>  basic_filebuf::underflow
 
-Geçerli öğe giriş akışından ayıklar.
+Geçerli öğe girdi akışından ayıklar.
 
 ```cpp
 virtual int_type underflow();
@@ -648,15 +648,15 @@ virtual int_type underflow();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarısız olması durumunda, döndürür **traits_type::**[eof](../standard-library/char-traits-struct.md#eof). Aksi takdirde, döndürür **ch**, açıklamalar bölümünde açıklandığı şekilde dönüştürülmüş.
+İşlev başarılı olursa, döndürür **traits_type::**[eof](../standard-library/char-traits-struct.md#eof). Aksi halde `ch`, açıklamalar bölümünde açıklanan şekilde dönüştürülmüş.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye fonksiyonu endeavors geçerli öğe ayıklamak **ch** girdisinden akış ve öğesi olarak dönmek **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)() **ch**). Bunu çeşitli yöntemlerle yapabilirsiniz:
+Korumalı sanal üye işlevi endeavors geçerli öğe ayıklanacak `ch` girdisinden akışla aktarma ve öğenin iade **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)(`ch`). Bunu çeşitli yöntemlerle yapabilirsiniz:
 
-- Okuma konumu varsa, sürdüğünü **ch** öğe okuma konumunda depolanan ve giriş arabelleği için sonraki işaretçisi ilerler.
+- Okuma konumuna kullanılabilir haldeyse, sürdüğünü `ch` öğesi salt okunur bir konumda depolanan ve giriş arabelleği için sonraki işaretçisi ilerler.
 
-- Bir veya daha fazla öğe türü okuyabilirsiniz `char`, art arda gelen çağrıları formun gibi tarafından `fgetc`(**fp**) ve bunları bir öğeye Dönüştür **ch** türü **Elem**çağırmak için dosya dönüştürme modeli fac kullanarak **fac.in** gerektiğinde. Herhangi bir okuma veya dönüştürme başarısız olursa, işlevi başarılı olmaz.
+- Türünde öğeler bir veya daha fazla bilgi edinebilirsiniz **char**, birbirini izleyen çağrılar form gibi tarafından `fgetc`(**fp**) ve bunları bir öğeye Dönüştür **ch** türü `Elem`çağırmak için dosya dönüştürme modeli fac kullanarak `fac.in` gerektiğinde. Herhangi bir okuma veya dönüştürme başarısız olursa, işlev başarılı olmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

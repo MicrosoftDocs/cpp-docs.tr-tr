@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32aceae204f50d98e84f1286042854e725917623
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 27182d6c1b2f3c37353f653235449982e921d692
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852552"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956394"
 ---
 # <a name="memfunt-class"></a>mem_fun_t Sınıfı
 
-Sağlayan bir bağdaştırıcı sınıfı bir **non_const** bir işaretçi bağımsız değişkeni ile hazırlarken birli işlevi nesnesi olarak çağrılacak bağımsız değişken almayan üye işlevi.
+İzin veren bir bağdaştırıcı sınıfı bir `non_const` hiçbir bağımsız değişken bir işaretçi bağımsız değişkeni ile hazırlarken bir birli işlev nesnesi olarak çağrılacak üye işlevi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,9 +41,9 @@ class mem_fun_t : public unary_function<Type *, Result> {
 
 ### <a name="parameters"></a>Parametreler
 
-`_Pm` Sınıfının üye işlevini gösteren bir işaretçi **türü** işlevi nesnesine dönüştürülecek.
+*_Pm* sınıfının üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
-`_Pleft` Nesne, `_Pm` üye işlevi çağrılır.
+*_Pleft* nesne, *_Pm* üye işlevi çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -51,15 +51,15 @@ Bir uyarlanabilir birli işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, bir kopyasını depolar `_Pm`, sınıfının üye işlevi için bir işaretçi olmalıdır **türü**, bir özel üye nesnesinde. Üye işlevini tanımlar `operator()` döndürme olarak ( `_Pleft` ->*  `_Pm`) ().
+Şablon sınıfı bir kopyasını depolar *_Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak ( `_Pleft` ->*  `_Pm`) ().
 
 ## <a name="example"></a>Örnek
 
-Oluşturucusunun `mem_fun_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun` üye işlevleri uyarlamak için kullanılır. Bkz: [mem_fun](../standard-library/functional-functions.md#mem_fun) üye fonksiyonu bağdaştırıcıları kullanma örneği.
+Oluşturucusuna `mem_fun_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun` üye işlevleri uyum sağlamak için kullanılır. Bkz: [mem_fun](../standard-library/functional-functions.md#mem_fun) üye işlevi bağdaştırıcıları kullanmayı gösteren bir örnek.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

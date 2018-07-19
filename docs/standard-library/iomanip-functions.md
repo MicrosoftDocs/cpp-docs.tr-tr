@@ -28,25 +28,25 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: 12840a7b48be897573e2041aa06fc7fdc8d15297
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 34089ec501934f5d6aa8408acded821a67f67502
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451998"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958484"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanip&gt; işlevleri
 
 ||||
 |-|-|-|
 |[get_money](#iomanip_get_money)|[get_time](#iomanip_get_time)|[put_money](#iomanip_put_money)|
-|[put_time](#iomanip_put_time)|[tırnak içine alınmış](#quoted)|[resetiosflags](#resetiosflags)|
+|[put_time](#iomanip_put_time)|[Teklif](#quoted)|[resetiosflags](#resetiosflags)|
 |[setbase](#setbase)|[setfill](#setfill)|[setiosflags](#setiosflags)|
 |[setprecision](#setprecision)|[setw](#setw)|
 
 ## <a name="iomanip_get_money"></a>  get_money
 
-Bir para değeri istenen biçimi kullanarak bir akıştan ayıklar ve bir parametre değeri döndürür.
+Parasal bir değeri istediğiniz biçimi kullanarak bir akıştan ayıklar ve parametre değeri döndürür.
 
 ```cpp
 template <class Money>
@@ -55,19 +55,19 @@ T7 get_money(Money& _Amount, bool _Intl);
 
 ### <a name="parameters"></a>Parametreler
 
-_Amount ayıklanan para değeri.
+*_Amount* ayıklanan parasal değer.
 
-_Intl varsa `true`, uluslararası biçimini kullanın. Varsayılan değer `false` şeklindedir.
+*_Intl* varsa **true**, uluslararası biçimini kullanın. Varsayılan değer **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator bir nesne, akıştan ayıklandığında döndüren `str`, olarak davranan bir `formatted input function` üye işlevi çağırır `get` yerel ayar modelinin `money_get` ile ilişkili `str`kullanarak `_Intl` için Uluslararası biçim belirtin. Başarılı, çağrı depolar, `_Amount` ayıklanan para değeri. Manipulator sonra döndürür `str`.
+İşleyici bir nesne, akıştan ayıklanan döndürür `str`, olarak davranan bir `formatted input function` üye işlevini çağırır `get` için yerel ayar modeli `money_get` ilişkili `str`kullanarak *_ Uluslararası* uluslararası biçimi belirtmek için. Başarılı çağrı depolar, *_Amount* ayıklanan parasal değer. Ardından işleyici döndürür `str`.
 
-`Money` türünde olmalıdır `long double` veya bir örnek oluşturma, `basic_string` aynı öğe ve nitelikler parametreleri ile `str`.
+`Money` türünde olmalıdır `long double` veya örneklemesi `basic_string` aynı öğe ve nitelikler parametreleri ile `str`.
 
 ## <a name="iomanip_get_time"></a>  get_time
 
-Bir saat değeri istenen biçimi kullanarak bir akıştan ayıklar. Değer bir parametre bir zaman yapısı döndürür.
+Bir zaman değeri istediğiniz biçimi kullanarak bir akıştan ayıklar. Değer bir parametre bir zaman yapısı döndürür.
 
 ```cpp
 template <class Elem>
@@ -76,17 +76,17 @@ T10 put_time(struct tm *_Tptr, const Elem *_Fmt);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Tptr` Zaman yapısı form süre.
+*_Tptr* zaman yapısı biçiminde saat.
 
-`_Fmt` Saat değeri elde etmek için kullanılacak istenen biçimi.
+*_Fmt* saat değeri elde etmek için kullanmak istediğiniz biçimi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator bir nesne, akıştan ayıklandığında döndüren `str`, olarak davranan bir `formatted input function` üye işlevi çağırır `get` yerel ayar modelinin `time_get` ile ilişkili `str`kullanarak `tptr` için zaman yapısı belirtmek ve `fmt` null ile sonlandırılmış biçim dizesi başlangıcını belirtmek için. Başarılı olursa, çağrı süresi yapısında herhangi ayıklanan zaman alanlarla ilişkili değerleri depolar. Manipulator sonra döndürür `str`.
+İşleyici bir nesne, akıştan ayıklanan döndürür `str`, olarak davranan bir `formatted input function` üye işlevini çağırır `get` için yerel ayar modeli `time_get` ilişkili `str`kullanarak `tptr` için zaman yapısı belirtmek ve `fmt` null ile sonlandırılmış bir biçim dizesi belirtmek için. Başarılı olursa çağrı herhangi ayıklanan saat alanları ile ilişkili değerler zaman yapıda depolar. Ardından işleyici döndürür `str`.
 
 ## <a name="iomanip_put_money"></a>  put_money
 
-Bir akışa istenen biçimini kullanarak parasal tutar ekler.
+Bir akışa istediğiniz biçimi kullanarak bir para miktarına ekler.
 
 ```cpp
 template <class Money>
@@ -95,9 +95,9 @@ T8 put_money(const Money& _Amount, bool _Intl);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Amount` Akışa eklemek için parasal tutar.
+*_Amount* akımına eklenecek parasal tutar.
 
-`_Intl` Kümesine `true` manipulator uluslararası biçimini kullanması gerekiyorsa `false` olmaması gerektiği durumunda.
+*_Intl* kümesine **true** işleyici Uluslararası biçim kullanması gerekiyorsa **false** gerektiğini değil ise.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -105,13 +105,13 @@ Döndürür `str`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator nesneyi akışa eklendiğinde döner `str`, üye işlevi çağıran bir biçimlendirilmiş çıkışı işlev davranır `put` yerel ayar modelinin `money_put` ile ilişkili `str`. Başarılı, çağrı ekler, `amount` düzgün biçimlendirilmiş, kullanarak `_Intl` uluslararası biçimini belirtmek için ve `str.fill()`, dolgu öğesi olarak. Manipulator sonra döndürür `str`.
+İşleyici nesneyi akışa eklendiğinde döner `str`, üye işlevi çağıran bir biçimlendirilmiş çıktı işlevi davranır `put` için yerel ayar modeli `money_put` ilişkili `str`. Başarılı çağrı ekler, `amount` uygun şekilde biçimlendirilmiş, kullanarak * _Intl` to indicate international format and `str.fill()`, as the fill element. The manipulator then returns `str'.
 
-`Money` türünde olmalıdır `long double` veya bir örnek oluşturma, `basic_string` aynı öğe ve nitelikler parametreleri ile `str`.
+`Money` türünde olmalıdır `long double` veya örneklemesi `basic_string` aynı öğe ve nitelikler parametreleri ile `str`.
 
 ## <a name="iomanip_put_time"></a>  put_time
 
-Bir saat değeri belirtilen biçimi kullanarak bir zaman yapısından bir akışa yazar.
+Bir zaman değeri zaman yapısından, belirtilen biçimi kullanarak bir akışa yazar.
 
 ```cpp
 template <class Elem>
@@ -120,17 +120,17 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Tptr` Zaman yapısı içinde sağlanan akış yazmak için zaman değeri.
+*_Tptr* zaman yapısı içinde sağlanan akış yazmak için zaman değeri.
 
-`_Fmt` Saat değeri yazmak için istenen biçimi.
+*_Fmt* zaman değeri yazmak için istediğiniz biçimi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator nesneyi akışa eklendiğinde döner `str`, olarak davranan bir `formatted output function`. Çıktı işlevi üye işlevini çağırır `put` yerel ayar modelinin `time_put` ile ilişkili `str`. Çıktı işlevini kullanıyor `_Tptr` zaman yapısı göstermek için ve `_Fmt` null ile sonlandırılmış biçim dizesi başlangıcını belirtmek için. Başarılı olursa, arama metin zaman yapısı dönüştürülmüş değerleri ve biçim dizesi ekler. Manipulator sonra döndürür `str`.
+İşleyici nesneyi akışa eklendiğinde döner `str`, olarak davranan bir `formatted output function`. Çıkış işlevi üye işlevini çağırır `put` için yerel ayar modeli `time_put` ilişkili `str`. Çıkış işlevi kullanır *_Tptr* zaman yapısını belirtmek için ve *_Fmt* null ile sonlandırılmış bir biçim dizesi belirtmek için. Başarılı olursa, arama metin zaman yapısından dönüştürülen değerler ve biçim dizesi ekler. Ardından işleyici döndürür `str`.
 
-## <a name="quoted"></a>  tırnak içine alınmış
+## <a name="quoted"></a>  Teklif
 
-**(Yeni C ++ 14 inç)**  Uygun gidiş dizeleri içine ve işyeri dışında sağlayan bir iostream manipulator akışları kullanarak >> ve << işleçler.
+**(Yeni C ++ 14)**  Kullanışlı gidiş dönüşü engelleyebilecek dizeleri küme içi ve dışı sağlayan bir iostream işleyici akışları kullanarak >> ve << işleçleri.
 
 ```cpp
 quoted(std::string str) // or wstring
@@ -141,11 +141,11 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 
 ### <a name="parameters"></a>Parametreler
 
-`str` Bir std::string, char *, dize sabit değeri veya ham dize sabit değeri veya bunları herhangi biri geniş bir sürümünü (ör. std::wstring, wchar_t\*).
+*str* bir std::string, char *, dize sabit değeri veya ham dize sabit değeri veya bunlardan birine geniş bir sürümünü (örneğin, std::wstring, wchar_t\*).
 
-`delimiter` Bir kullanıcı tarafından belirtilen karakter veya başlangıç ve bitiş dizesi için ayırıcı olarak kullanmak üzere geniş karakter.
+*sınırlayıcı* bir kullanıcı tarafından belirtilen karakter veya geniş karakter başlangıç ve bitiş dizesi için ayırıcı olarak kullanılacak.
 
-`escape` Bir kullanıcı tarafından belirtilen karakter veya dizedeki kaçış sıraları kaçış karakteri olarak kullanılmak üzere geniş karakter.
+*kaçış* bir kullanıcı tarafından belirtilen karakter veya kaçış dizileri dizenin içinde kaçış karakteri olarak kullanılmak üzere, geniş karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -153,7 +153,7 @@ Bkz: [ekleme işleçlerini kullanma ve biçimi denetleme](../standard-library/us
 
 ### <a name="example"></a>Örnek
 
-Bu örnek nasıl kullanılacağını gösterir `quoted` varsayılan sınırlayıcı ve kaçış karakteri kullanarak dizeleri daraltın. Geniş dizeleri eşit olarak desteklenir.
+Bu örnek nasıl kullanılacağını gösterir `quoted` varsayılan ayırıcı ve çıkış karakterini kullanma dizeleri daraltın. Çok geniş dizelerdir eşit olarak desteklenir.
 
 ```cpp
 #include <iostream>
@@ -295,7 +295,7 @@ Press Enter to exit
 
 ## <a name="resetiosflags"></a>  resetiosflags
 
-Belirtilen bayrakları temizler.
+Belirtilen bayraklar temizler.
 
 ```cpp
 T1 resetiosflags(ios_base::fmtflags Mask);
@@ -303,11 +303,11 @@ T1 resetiosflags(ios_base::fmtflags Mask);
 
 ### <a name="parameters"></a>Parametreler
 
-`Mask` Temizlemek için işaretler.
+*Maske* temizlemek için bayrakları.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Manipulator bir nesne, ayıklanan veya akışa eklenen döndüren **str**, çağrıları **str**. [setf](../standard-library/ios-base-class.md#setf)( `ios_base::` [fmtflags](../standard-library/ios-base-class.md#fmtflags), _ *maskesi*) ve ardından döndürür **str**.
+İşleyici bir nesne, ayıklanan veya akışa eklenen döner `str`, çağrıları **str**. [setf](../standard-library/ios-base-class.md#setf)( `ios_base::` [fmtflags](../standard-library/ios-base-class.md#fmtflags), _ *maskesi*) ve sonra `str`.
 
 ### <a name="example"></a>Örnek
 
@@ -315,7 +315,7 @@ Bkz: [setw](../standard-library/iomanip-functions.md#setw) kullanma örneği iç
 
 ## <a name="setbase"></a>  setbase
 
-Tamsayıları için temel olarak ayarlayın.
+Tamsayılar için temel olarak ayarlayın.
 
 ```cpp
 T3 setbase(int _Base);
@@ -323,19 +323,19 @@ T3 setbase(int _Base);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Base` Temel sayı.
+*_Temel* sayı tabanı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Manipulator bir nesne, ayıklanan veya akışa eklenen döndüren **str**, çağrıları **str**. `setf`( **maskesi**, [ios_base::basefield](../standard-library/ios-base-class.md#fmtflags)) ve ardından döndürür **str**. Burada, **maskesi** şu şekilde belirlenir:
+İşleyici bir nesne, ayıklanan veya akışa eklenen döner `str`, çağrıları **str**. `setf`( **maskesi**, [ios_base::basefield](../standard-library/ios-base-class.md#fmtflags)) ve sonra `str`. Burada, `mask` şu şekilde belirlenir:
 
-- Varsa _ *temel* 8 ise **maskesi** olan `ios_base::` [Eki](../standard-library/ios-functions.md#oct).
+- _ *Temel* 8 ise `mask` olduğu `ios_base::` [Eki](../standard-library/ios-functions.md#oct).
 
-- Varsa _ *temel* 10'dur ve ardından maskesidir `ios_base::` [Ara](../standard-library/ios-functions.md#dec).
+- _ *Temel* 10'dur ve maskesi `ios_base::` [Ara](../standard-library/ios-functions.md#dec).
 
-- Varsa _ *temel* 16, ise **maskesi** olan `ios_base::` [onaltılık](../standard-library/ios-functions.md#hex).
+- _ *Temel* 16 ise `mask` olduğu `ios_base::` [onaltılık](../standard-library/ios-functions.md#hex).
 
-- Varsa _ *temel* maskesidir diğer herhangi bir değer olduğundan `ios_base::` [fmtflags](../standard-library/ios-base-class.md#fmtflags)(0).
+- _ *Temel* maskesi sonra başka bir değer olan `ios_base::` [fmtflags](../standard-library/ios-base-class.md#fmtflags)(0).
 
 ### <a name="example"></a>Örnek
 
@@ -343,7 +343,7 @@ Bkz: [setw](../standard-library/iomanip-functions.md#setw) kullanma örneği iç
 
 ## <a name="setfill"></a>  setfill
 
-Sağa hizalı görüntü alanları doldurmak için kullanılan karakter ayarlar.
+Sağa yaslanmış görüntüsündeki alanları doldurmak için kullanılan karakter ayarlar.
 
 ```cpp
 template <class Elem>
@@ -352,11 +352,11 @@ T4 setfill(Elem Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-`Ch` Sağa hizalı görüntü alanları doldurmak için kullanılan karakter.
+*CH* sağa yaslanmış görüntüsündeki alanları doldurmak için kullanılan karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablon manipulator bir nesne, ayıklanan veya akışa eklenen döndüren **str**, çağrıları **str**. [Dolgu](../standard-library/basic-ios-class.md#fill)( `Ch`) ve ardından döndürür **str**. Türü **Elem** akışın öğe türü ile aynı olmalıdır **str**.
+Şablonu işleyici bir nesne, ayıklanan veya akışa eklenen döner `str`, çağrıları **str**. [Dolgu](../standard-library/basic-ios-class.md#fill)(`Ch`) ve sonra `str`. Türü `Elem` akış için öğe türü ile aynı olmalıdır `str`.
 
 ### <a name="example"></a>Örnek
 
@@ -364,7 +364,7 @@ Bkz: [setw](../standard-library/iomanip-functions.md#setw) kullanma örneği iç
 
 ## <a name="setiosflags"></a>  setiosflags
 
-Belirtilen bayrakları ayarlar.
+Belirtilen bayraklar ayarlar.
 
 ```cpp
 T2 setiosflags(ios_base::fmtflags Mask);
@@ -372,11 +372,11 @@ T2 setiosflags(ios_base::fmtflags Mask);
 
 ### <a name="parameters"></a>Parametreler
 
-`Mask` Ayarlamak için işaretler.
+*Maske* ayarlamak için bayrakları.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Manipulator bir nesne, ayıklanan veya akışa eklenen döndüren **str**, çağrıları **str**. [setf](../standard-library/ios-base-class.md#setf)(_ *maskesi*) ve ardından döndürür **str**.
+İşleyici bir nesne, ayıklanan veya akışa eklenen döner `str`, çağrıları **str**. [setf](../standard-library/ios-base-class.md#setf)(_ *maskesi*) ve sonra `str`.
 
 ### <a name="example"></a>Örnek
 
@@ -384,7 +384,7 @@ Bkz: [setw](../standard-library/iomanip-functions.md#setw) kullanma örneği iç
 
 ## <a name="setprecision"></a>  setprecision
 
-Kayan nokta değerlerinin duyarlık ayarlar.
+Duyarlık kayan nokta değerleri için ayarlar.
 
 ```cpp
 T5 setprecision(streamsize Prec);
@@ -392,11 +392,11 @@ T5 setprecision(streamsize Prec);
 
 ### <a name="parameters"></a>Parametreler
 
-`Prec` Kayan nokta değerlerinin duyarlık.
+*Prec* duyarlık kayan nokta değerleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Manipulator bir nesne, ayıklanan veya akışa eklenen döndüren **str**, çağrıları **str**. [Duyarlık](../standard-library/ios-base-class.md#precision)( `Prec`) ve ardından döndürür **str**.
+İşleyici bir nesne, ayıklanan veya akışa eklenen döner `str`, çağrıları **str**. [Duyarlık](../standard-library/ios-base-class.md#precision)(`Prec`) ve sonra `str`.
 
 ### <a name="example"></a>Örnek
 
@@ -404,7 +404,7 @@ Bkz: [setw](../standard-library/iomanip-functions.md#setw) kullanma örneği iç
 
 ## <a name="setw"></a>  setw
 
-Akışta sonraki öğeye görüntü alanın genişliğini belirtir.
+Akıştaki sonraki öğe için görüntüleme alanının genişliğini belirtir.
 
 ```cpp
 T6 setw(streamsize Wide);
@@ -412,15 +412,15 @@ T6 setw(streamsize Wide);
 
 ### <a name="parameters"></a>Parametreler
 
-`Wide` Görüntü alanı genişliği.
+*Geniş* görüntü alanının genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Manipulator bir nesne, ayıklanan veya akışa eklenen döndüren **str**, çağrıları **str**. [Genişlik](../standard-library/ios-base-class.md#width)(_ *geniş*), ardından döndürür **str**.
+İşleyici bir nesne, ayıklanan veya akışa eklenen döner `str`, çağrıları **str**. [Genişlik](../standard-library/ios-base-class.md#width)(_ *geniş*), ardından döndürür `str`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-setw genişliğini yalnızca sonraki öğeye akışta ayarlar ve genişliği belirtmek istediğiniz her öğenin önce eklenmesi gerekir.
+setw, genişliği yalnızca sonraki öğe için stream'de ayarlar ve genişliğini belirtmek istediğiniz her öğeden önce eklenmesi gerekir.
 
 ### <a name="example"></a>Örnek
 

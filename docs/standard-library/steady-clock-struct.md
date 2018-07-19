@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5445379597c4fefcd657303a05c33b6509d54d2e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 53f4deb0bfe9439011f75cd22d0d52b74dae9c1f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34569904"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959731"
 ---
 # <a name="steadyclock-struct"></a>steady_clock yapısı
 
-Temsil eden bir *sürekli* saat.
+Temsil eden bir *sürekli* saati.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,32 +33,32 @@ struct steady_clock;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Windows, `steady_clock` sarmalar `QueryPerformanceCounter` işlevi.
+Windows, şirket `steady_clock` sarmalar `QueryPerformanceCounter` işlevi.
 
-Bir saattir *monoton* durumunda ilk çağrı tarafından döndürülen değer `now` her zaman bir sonraki çağrı tarafından döndürülen değer küçük veya buna eşit olan `now`. Bir saattir *sürekli* , *monoton* ve saat saat dilimleri arasında sabit ise.
+Bir saat *monoton* varsa bir ilk çağrı tarafından döndürülen değer `now` her zaman sonraki çağrı tarafından döndürülen değer küçük veya ona eşit olduğundan `now`. Bir saat *sürekli* ise *monoton* ve saatin tik takları arasındaki zaman sabittir.
 
-`high_resolution_clock` typedef için olan `steady_clock`.
+`high_resolution_clock` için bir TypeDef `steady_clock`.
 
-### <a name="public-typedefs"></a>Genel tür tanımları
+### <a name="public-typedefs"></a>Genel typedefler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`steady_clock::duration`|Eşanlamlısı `nanoseconds`, içinde tanımlı \<chrono >.|
-|`steady_clock::period`|Eşanlamlısı `nano`, içinde tanımlı \<oranı >.|
-|`steady_clock::rep`|Eşanlamlısı **uzun** **uzun**, kaç saat tık kapsanan örneği oluşturulmasını içinde temsil etmek için kullanılan türü `duration`.|
-|`steady_clock::time_point`|Eşanlamlısı `chrono::time_point<steady_clock>`.|
+|`steady_clock::duration`|İçin bir eşanlamlı `nanoseconds`içinde tanımlanmış \<chrono >.|
+|`steady_clock::period`|İçin bir eşanlamlı `nano`içinde tanımlanmış \<oranı >.|
+|`steady_clock::rep`|İçin bir eşanlamlı **uzun** **uzun**, içinde içerilen saat tik taklarının sayısını belirtmek için kullanılan tür `duration`.|
+|`steady_clock::time_point`|İçin bir eşanlamlı `chrono::time_point<steady_clock>`.|
 
-## <a name="public-functions"></a>Genel işlevler
+## <a name="public-functions"></a>Genel işlevleri
 
 |İşlev|Açıklama|
 |--------------|-----------------|
-|`now`|Geçerli saat olarak döndürür bir `time_point` değeri.|
+|`now`|Olarak geçerli saati döndürür bir `time_point` değeri.|
 
 ## <a name="public-constants"></a>Genel sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`steady_clock::is_steady`|Tutan `true`. A `steady_clock` olan *sürekli*.|
+|`steady_clock::is_steady`|Tutan **true**. A `steady_clock` olduğu *sürekli*.|
 
 ## <a name="requirements"></a>Gereksinimler
 

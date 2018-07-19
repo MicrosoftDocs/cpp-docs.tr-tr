@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63129ad04e2e74cdae9c590c76e1910e95117431
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 52bc5ff0fe53dc89f932bf62dc98f7c8a03a725f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844438"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957011"
 ---
 # <a name="isfloatingpoint-class"></a>is_floating_point Sınıfı
 
-Türü kayan nokta sağlayıp sağlamadığını test.
+Test türü kayan nokta.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,13 +37,13 @@ struct is_floating_point;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` bir kayan noktası türü veya `cv-qualified` kayan nokta biçiminde yazın, aksi takdirde false tutar.
+Karşılaştırmasının bir örneği true tutan türü *Ty* bir kayan noktalı nokta türüne veya `cv-qualified` kayan nokta biçiminde yazın, aksi takdirde false tutar.
 
-Bir kayan nokta türünü biridir `float`, `double`, veya `long double`.
+Bir kayan nokta türü biridir **float**, **çift**, veya **uzun çift**.
 
 ## <a name="example"></a>Örnek
 

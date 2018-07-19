@@ -14,19 +14,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a4927657bd0a4944e62493134c041011c142051
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 919d62d967df4e41b5a25e953202352305b50d02
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841467"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958172"
 ---
 # <a name="container-classvaluetype"></a>Kapsayıcı Sınıfı::value_type
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Şablon parametresi için bir eş anlamlı davranır **Ty**.
+Şablon parametresi için bir eşanlamlı davranır *Ty*.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,7 +37,7 @@ typedef T4 value_type;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bunu açıklanan burada belirtilmemiş türler eşanlamlısı olarak **T4** (genellikle **Alloc::value_type**).
+Açıklanmıştır belirtilmeyen türünün eşanlamlısı olarak burada `T4` (genellikle `Alloc::value_type`).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

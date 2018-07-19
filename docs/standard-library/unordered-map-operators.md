@@ -1,5 +1,5 @@
 ---
-title: '&lt;unordered_map&gt; işleçleri | Microsoft Docs'
+title: '&lt;unordered_map&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
-ms.openlocfilehash: 69a53ae6b54248f5b9938e2c9137a24f441c061d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a43528b270571a9994187711e2a21ca5a0e1f096
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859358"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958909"
 ---
 # <a name="ltunorderedmapgt-operators"></a>&lt;unordered_map&gt; işleçleri
 
@@ -22,9 +22,9 @@ ms.locfileid: "33859358"
 |-|-|-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|[operator!=](#op_neq_multimap)|[operator==](#op_eq_eq_multimap)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Testleri olup olmadığını [unordered_map](../standard-library/unordered-map-class.md) nesne işlecinin sol tarafındaki sağ tarafında unordered_map nesnesine eşit değil.
+Testleri olmadığını [unordered_map](../standard-library/unordered-map-class.md) işlecinin sol tarafındaki nesne unordered_map nesnesinin işlecin sağ tarafındaki eşit değil.
 
 ```cpp
 bool operator!=(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, const unordered_map <Key, Type, Hash, Pred, Allocator>& right);
@@ -32,17 +32,19 @@ bool operator!=(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `unordered_map`.
+*Sol*  
+ Bir nesne türü `unordered_map`.
 
-`right` Türünde bir nesne `unordered_map`.
+*sağ*  
+ Bir nesne türü `unordered_map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` unordered_maps eşit değilse; `false` eşit olup olmadıkları.
+**doğru** unordered_maps eşit; değilse, **false** eşit olmaları durumunda.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Unordered_map nesneleri arasındaki karşılaştırma öğelerini depoladıkları rastgele sıralama ölçütü etkilenmez. İki unordered_maps aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri sıralamaya öğeleridir bir kapsayıcıdaki eşit. Aksi takdirde, bunlar eşit.
+Unordered_map nesneler arasında karşılaştırma öğeleri depoladıkları rastgele sıralama etkilenmez. Bunlar aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri bir sıralamaya öğeler bir kapsayıcıdaki iki unordered_maps eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -77,7 +79,7 @@ int main( )
 
 ```
 
-**Çıktı:**
+**Çıkış:**
 
 `um1 != um2: true`
 
@@ -85,9 +87,9 @@ int main( )
 
 `um2 != um3: true`
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Testleri olup olmadığını [unordered_map](../standard-library/unordered-map-class.md) nesne işlecinin sol tarafındaki sağ tarafında unordered_map nesnesine eşit değil.
+Testleri olmadığını [unordered_map](../standard-library/unordered-map-class.md) işlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki unordered_map nesneye eşit olup.
 
 ```cpp
 bool operator==(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, const unordered_map <Key, Type, Hash, Pred, Allocator>& right);
@@ -95,17 +97,19 @@ bool operator==(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `unordered_map`.
+*Sol*  
+ Bir nesne türü `unordered_map`.
 
-`right` Türünde bir nesne `unordered_map`.
+*sağ*  
+ Bir nesne türü `unordered_map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` unordered_maps eşitse; `false` eşit değillerse.
+**doğru** unordered_maps eşitse; **false** eşit değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Unordered_map nesneleri arasındaki karşılaştırma öğelerini depoladıkları rastgele sıralama ölçütü etkilenmez. İki unordered_maps aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri sıralamaya öğeleridir bir kapsayıcıdaki eşit. Aksi takdirde, bunlar eşit.
+Unordered_map nesneler arasında karşılaştırma öğeleri depoladıkları rastgele sıralama etkilenmez. Bunlar aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri bir sıralamaya öğeler bir kapsayıcıdaki iki unordered_maps eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -140,7 +144,7 @@ int main( )
 
 ```
 
-**Çıktı:**
+**Çıkış:**
 
 `um1 == um2: false`
 
@@ -148,9 +152,9 @@ int main( )
 
 `um2 == um3: false`
 
-## <a name="op_neq_multimap"></a>  operator! =
+## <a name="op_neq_multimap"></a>  işleç! =
 
-Testleri olup olmadığını [unordered_multimap](../standard-library/unordered-multimap-class.md) nesne işlecinin sol tarafındaki sağ tarafında unordered_multimap nesnesine eşit değil.
+Testleri olmadığını [unordered_multimap](../standard-library/unordered-multimap-class.md) işlecinin sol tarafındaki nesne unordered_multimap nesnesinin işlecin sağ tarafındaki eşit değil.
 
 ```cpp
 bool operator!=(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& left, const unordered_multimap <Key, Type, Hash, Pred, Allocator>& right);
@@ -158,17 +162,19 @@ bool operator!=(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `unordered_multimap`.
+*Sol*  
+ Bir nesne türü `unordered_multimap`.
 
-`right` Türünde bir nesne `unordered_multimap`.
+*sağ*  
+ Bir nesne türü `unordered_multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` unordered_multimaps eşit değilse; `false` eşit olup olmadıkları.
+**doğru** unordered_multimaps eşit; değilse, **false** eşit olmaları durumunda.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Unordered_multimap nesneleri arasındaki karşılaştırma öğelerini depoladıkları rastgele sıralama ölçütü etkilenmez. İki unordered_multimaps aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri sıralamaya öğeleridir bir kapsayıcıdaki eşit. Aksi takdirde, bunlar eşit değildir.
+Unordered_multimap nesneler arasında karşılaştırma öğeleri depoladıkları rastgele sıralama etkilenmez. Bunlar aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri bir sıralamaya öğeler bir kapsayıcıdaki iki unordered_multimaps eşit olur. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -204,7 +210,7 @@ int main( )
 
 ```
 
-**Çıktı:**
+**Çıkış:**
 
 `um1 != um2: true`
 
@@ -212,9 +218,9 @@ int main( )
 
 `um2 != um3: true`
 
-## <a name="op_eq_eq_multimap"></a>  operator ==
+## <a name="op_eq_eq_multimap"></a>  işleç ==
 
-Testleri olup olmadığını [unordered_multimap](../standard-library/unordered-multimap-class.md) nesne işlecinin sol tarafındaki sağ tarafında unordered_multimap nesnesine eşit değil.
+Testleri olmadığını [unordered_multimap](../standard-library/unordered-multimap-class.md) işlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki unordered_multimap nesneye eşit olup.
 
 ```cpp
 bool operator==(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& left, const unordered_multimap <Key, Type, Hash, Pred, Allocator>& right);
@@ -222,17 +228,19 @@ bool operator==(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `unordered_multimap`.
+*Sol*  
+ Bir nesne türü `unordered_multimap`.
 
-`right` Türünde bir nesne `unordered_multimap`.
+*sağ*  
+ Bir nesne türü `unordered_multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` unordered_multimaps eşitse; `false` eşit değillerse.
+**doğru** unordered_multimaps eşitse; **false** eşit değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Unordered_multimap nesneleri arasındaki karşılaştırma öğelerini depoladıkları rastgele sıralama ölçütü etkilenmez. İki unordered_multimaps aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri sıralamaya öğeleridir bir kapsayıcıdaki eşit. Aksi takdirde, bunlar eşit.
+Unordered_multimap nesneler arasında karşılaştırma öğeleri depoladıkları rastgele sıralama etkilenmez. Bunlar aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri bir sıralamaya öğeler bir kapsayıcıdaki iki unordered_multimaps eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -268,7 +276,7 @@ int main( )
 
 ```
 
-**Çıktı:**
+**Çıkış:**
 
 `um1 == um2: false`
 

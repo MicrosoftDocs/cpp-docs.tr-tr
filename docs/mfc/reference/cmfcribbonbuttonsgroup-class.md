@@ -40,15 +40,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23f3672a3b78b1bf86c481b6991c003267e6b0bf
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 855bc48da10e8ca4dd83cf091e155746450a33f1
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37037440"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848525"
 ---
 # <a name="cmfcribbonbuttonsgroup-class"></a>CMFCRibbonButtonsGroup sınıfı
-`CMFCRibbonButtonsGroup` Sınıfı, bir grup olarak bir dizi Şerit düğmesi düzenlemenizi sağlar. Gruptaki tüm düğmeleri yatay olarak birbirleriyle doğrudan bitişik ve bir kenarlığı içine alınmalıdır.  
+`CMFCRibbonButtonsGroup` Sınıfı, bir grup olarak Şerit düğme kümesi düzenlemenizi sağlar. Gruptaki tüm düğmeler yatay olarak doğrudan yaratır ve bir kenarlık içine alınmıştır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -62,29 +62,29 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup](#cmfcribbonbuttonsgroup)|Oluşturan bir `CMFCRibbonButtonsGroup` nesnesi.|  
+|[CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup](#cmfcribbonbuttonsgroup)|Oluşturur bir `CMFCRibbonButtonsGroup` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonButtonsGroup::AddButton](#addbutton)|Bir düğme bir gruba ekler.|  
+|[CMFCRibbonButtonsGroup::AddButton](#addbutton)|Bir düğmeyi bir gruba ekler.|  
 |[CMFCRibbonButtonsGroup::AddButtons](#addbuttons)|Düğmelerin listesini bir gruba ekler.|  
-|[CMFCRibbonButtonsGroup::GetButton](#getbutton)|Belirtilen bir dizinde bulunan düğmesine bir işaretçi döndürür.|  
-|[CMFCRibbonButtonsGroup::GetCount](#getcount)|Düğme sayısını grubunda döndürür.|  
-|[CMFCRibbonButtonsGroup::GetImageSize](#getimagesize)|Şerit grubunda normal görüntülerinin görüntü boyutunu döndürür (geçersiz kılmaları [CMFCRibbonBaseElement::GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|  
-|[CMFCRibbonButtonsGroup::GetRegularSize](#getregularsize)|Şerit öğesi normal boyutu döndüren (geçersiz kılmaları [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|  
-|[CMFCRibbonButtonsGroup::HasImages](#hasimages)|Raporlar olup olmadığını `CMFCRibbonButtonsGroup` nesne araç görüntülerini içerir.|  
-|[CMFCRibbonButtonsGroup::OnDrawImage](#ondrawimage)|Belirtilen bir düğmesi için düğme normal, vurgulanan veya devre dışı olup olmamasına bağlı olarak, uygun resim çizer.|  
-|[CMFCRibbonButtonsGroup::RemoveAll](#removeall)|Tüm düğmelerden kaldırır `CMFCRibbonButtonsGroup` nesnesi.|  
-|[CMFCRibbonButtonsGroup::SetImages](#setimages)|Görüntüleri grubuna atar.|  
-|[CMFCRibbonButtonsGroup::SetParentCategory](#setparentcategory)|Üst ayarlar `CMFCRibbonCategory` , `CMFCRibbonButtonsGroup` nesne ve içindeki tüm düğmeleri (geçersiz kılmaları [CMFCRibbonBaseElement::SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory).)|  
+|[CMFCRibbonButtonsGroup::GetButton](#getbutton)|Belirtilen dizinde bulunan bir düğme için bir işaretçi döndürür.|  
+|[CMFCRibbonButtonsGroup::GetCount](#getcount)|Grup içinde düğmeleri sayısını döndürür.|  
+|[CMFCRibbonButtonsGroup::GetImageSize](#getimagesize)|Şerit grubundaki normal görüntüleri görüntü boyutunu döndürür (geçersiz kılmaları [CMFCRibbonBaseElement::GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|  
+|[CMFCRibbonButtonsGroup::GetRegularSize](#getregularsize)|Şerit öğesi normal boyutunu döndürür (geçersiz kılmaları [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|  
+|[CMFCRibbonButtonsGroup::HasImages](#hasimages)|Raporlar olup olmadığını `CMFCRibbonButtonsGroup` nesne araç çubuğu görüntülerini içerir.|  
+|[CMFCRibbonButtonsGroup::OnDrawImage](#ondrawimage)|Düğme normal, vurgulanan veya devre dışı olup olmamasına bağlı olarak belirtilen bir düğme için uygun resim çizer.|  
+|[CMFCRibbonButtonsGroup::RemoveAll](#removeall)|Tüm düğmelerden kaldırır `CMFCRibbonButtonsGroup` nesne.|  
+|[CMFCRibbonButtonsGroup::SetImages](#setimages)|Görüntüleri gruba atar.|  
+|[CMFCRibbonButtonsGroup::SetParentCategory](#setparentcategory)|Üst ayarlar `CMFCRibbonCategory` , `CMFCRibbonButtonsGroup` nesne ve içindeki tüm düğmeler (geçersiz kılmaları [CMFCRibbonBaseElement::SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Grup türetilir [CMFCBaseRibbonElement](../../mfc/reference/cmfcribbonbaseelement-class.md) ve tek bir varlık olarak yönetilebilir. Grup hiçbir panelinde ya da açılır menüde yerleştirebilirsiniz.  
+ Grup türetilir [CMFCBaseRibbonElement](../../mfc/reference/cmfcribbonbaseelement-class.md) ve tek bir varlık olarak yönetilebilir. Hiçbir panel ya da açılan menüde grubu konumlandırabilirsiniz.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek çeşitli yöntemlerle kullanımı gösterilmiştir `CMFCRibbonButtonsGroup` sınıfı. Örnek nasıl oluşturulacağını gösteren bir `CMFCRibbonButtonsGroup` nesnesi, görüntüleri Şerit düğmeleri grubuna atayın ve bir düğme Şerit düğmeleri grubuna ekleyin. Bu kod parçacığını parçası olan [çizin istemci örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonButtonsGroup` sınıfı. Bu örnek nasıl oluşturulacağını gösterir. bir `CMFCRibbonButtonsGroup` nesne, görüntüleri Şerit düğme grubuna atayın ve Şerit düğmeleri gruba bir düğme ekleyin. Bu kod parçacığı parçasıdır [çizmek istemci örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DrawClient#2](../../mfc/reference/codesnippet/cpp/cmfcribbonbuttonsgroup-class_1.cpp)]  
   
@@ -99,7 +99,7 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
  **Başlık:** afxribbonbuttonsgroup.h  
   
 ##  <a name="addbutton"></a>  CMFCRibbonButtonsGroup::AddButton  
- Bir düğme bir gruba ekler.  
+ Bir düğmeyi bir gruba ekler.  
   
 ```  
 void AddButton(CMFCRibbonBaseElement* pButton);
@@ -107,7 +107,7 @@ void AddButton(CMFCRibbonBaseElement* pButton);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pButton*  
- Bir işaretçi eklemek için bir düğme.  
+ Bir düğme eklemek için bir işaretçi.  
   
 ##  <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons  
  Düğmelerin listesini bir gruba ekler.  
@@ -119,10 +119,10 @@ void AddButtons(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lstButtons*  
- Eklemek istediğiniz düğmelerini işaretçileri listesi.  
+ Eklemek istediğiniz düğme için işaretçiler listesi.  
   
 ##  <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup  
- Oluşturan bir `CMFCRibbonButtonsGroup` nesnesi.  
+ Oluşturur bir `CMFCRibbonButtonsGroup` nesne.  
   
 ```  
 CMFCRibbonButtonsGroup();
@@ -131,30 +131,30 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pButton*  
- Yeni oluşturulan eklemek için bir düğmeye belirtir `CMFCRibbonButtonsGroup` nesnesi.  
+ Yeni oluşturulan eklemeye yönelik bir düğmeyi belirtir `CMFCRibbonButtonsGroup` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getbutton"></a>  CMFCRibbonButtonsGroup::GetButton  
- Belirtilen bir dizinde bulunan düğmesine bir işaretçi döndürür.  
+ Belirtilen dizinde bulunan bir düğme için bir işaretçi döndürür.  
   
 ```  
 CMFCRibbonBaseElement* GetButton(int i) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *t*  
- Döndürülecek bir düğme sıfır tabanlı dizini.  
+ [in] *ediyorum*  
+ Bir düğme döndürülecek bir sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen dizinde bulunan düğmesini gösteren bir işaretçi. `NULL` Belirtilen dizin aralık dışında olması durumunda.  
+ Belirtilen dizinde bulunan bir düğme için bir işaretçi. Belirtilen dizin aralık dışında ise NULL değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getcount"></a>  CMFCRibbonButtonsGroup::GetCount  
- Düğme sayısını grubunda döndürür.  
+ Grup içinde düğmeleri sayısını döndürür.  
   
 ```  
 int GetCount() const;  
@@ -164,19 +164,19 @@ int GetCount() const;
  Gruptaki düğmeleri sayısı.  
   
 ##  <a name="getimagesize"></a>  CMFCRibbonButtonsGroup::GetImageSize  
- Korumalı kaynak görüntü boyutu alır `CMFCToolBarImages` üye `m_Images`.  
+ Kaynak görüntü boyutu korumalı alır `CMFCToolBarImages` üye `m_Images`.  
   
 ```  
 const CSize GetImageSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Varsa veya bir araç görüntülerinin kaynak görüntü boyutu döndüren `CSize` sıfır değilse.  
+ Varsa veya bir araç çubuğu görüntülerini kaynak görüntü boyutunu döndürür `CSize` sıfır değilse.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonButtonsGroup::GetRegularSize  
- Şerit Grup öğesi olası en büyük boyutunu alır.  
+ Şerit grubu öğesi olası en büyük boyutunu alır.  
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
@@ -184,26 +184,26 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- Şerit grubunun cihaz bağlamı işaretçi.  
+ Cihaz bağlamı Şerit grubunun işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="hasimages"></a>  CMFCRibbonButtonsGroup::HasImages  
- Raporlar olup olmadığını `CMFCRibbonButtonsGroup` nesne araç görüntülerini içerir.  
+ Raporlar olup olmadığını `CMFCRibbonButtonsGroup` nesne araç çubuğu görüntülerini içerir.  
   
 ```  
 BOOL HasImages() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE değeri döndürür, korumalı `CMFCToolBarImages` üye `m_Images` tüm görüntüleri ya da FALSE ise içermez.  
+ Gerekirse TRUE döndürür korumalı `CMFCToolBarImages` üye `m_Images` tüm görüntüler veya FALSE ise içermez.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ondrawimage"></a>  CMFCRibbonButtonsGroup::OnDrawImage  
- Belirtilen bir düğmesi için düğme normal, vurgulanan veya devre dışı olup olmamasına bağlı olarak, uygun resim çizer.  
+ Düğme normal, vurgulanan veya devre dışı olup olmamasına bağlı olarak belirtilen bir düğme için uygun resim çizer.  
   
 ```  
 virtual void OnDrawImage(
@@ -215,21 +215,21 @@ virtual void OnDrawImage(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- Cihaz bağlamında işaretçi `CMFCRibbonButtonsGroup` nesnesi.  
+ Cihaz bağlamı işaretçisine `CMFCRibbonButtonsGroup` nesne.  
   
  [in] *rectImage*  
- Dikdörtgen resim çizmek için içinde.  
+ Dikdörtgen içinde bir görüntü çizin.  
   
  [in] *pButton*  
- Düğme için resim çizmek için.  
+ Görüntü çizme istediğiniz düğme.  
   
  [in] *nImageIndex*  
- (Birinde normal, vurgulanan veya devre dışı düğmelerinin üç resim Diziler) düğmesine çizmek için resmin dizini.  
+ Resmi düğmesine (normal, vurgulanan veya devre dışı düğmelerinin üç görüntü diziler biri) çizilecek dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="removeall"></a>  CMFCRibbonButtonsGroup::RemoveAll  
- Tüm düğmelerden kaldırır `CMFCRibbonButtonsGroup` nesnesi.  
+ Tüm düğmelerden kaldırır `CMFCRibbonButtonsGroup` nesne.  
   
 ```  
 void RemoveAll();
@@ -238,7 +238,7 @@ void RemoveAll();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setimages"></a>  CMFCRibbonButtonsGroup::SetImages  
- Görüntüleri Şerit düğmeleri grubuna atar.  
+ Görüntüleri Şerit düğme grubuna atar.  
   
 ```  
 void SetImages(
@@ -252,16 +252,16 @@ void SetImages(
  Normal görüntüler.  
   
  [in] *pHotImages*  
- Sık kullanılan görüntüler.  
+ Sık erişimli görüntüler.  
   
  [in] *pDisabledImages*  
  Devre dışı görüntüler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı `SetImages` bir gruba düğmeleri eklemeden önce. Görüntü sayısı sıfırdan büyük veya gruba eklenecek düğmeleri sayısına eşit olmalıdır.  
+ Çağrı `SetImages` düğmeleri grubuna eklemeden önce. Görüntü sayısı, gruba eklenecek düğmeleri sayısına eşit veya büyük olması gerekir.  
   
 > [!NOTE]
->  Sık kullanılan görüntüleri kullanıcı düğmesinin üzerine geldiğinde görüntülenen görüntüleri bağımsızdır. Devre dışı görüntüleri düğmesi devre dışı bırakıldığında görüntülenen görüntüleri bağımsızdır.  
+>  Sık erişimli görüntüleri kullanıcı düğmenin üzerine geldiğinde görüntülenen görüntüleridir. Düğmeyi devre dışı bırakıldığında görüntülenen görüntüleri devre dışı görüntüleridir.  
   
 ##  <a name="setparentcategory"></a>  CMFCRibbonButtonsGroup::SetParentCategory  
  Üst ayarlar `CMFCRibbonCategory` , `CMFCRibbonButtonsGroup` nesne ve içindeki tüm düğmeler.  
@@ -272,7 +272,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pCategory*  
- Ayarlamak için üst kategori işaretçisine (Şerit denetimleri sekmeli gruplarında kategoriler olarak adlandırılır).  
+ Ayarlanacak üst kategori işaretçisine (Şerit denetimleri sekmeli gruplarında kategoriler olarak adlandırılır).  
   
 ### <a name="remarks"></a>Açıklamalar  
   

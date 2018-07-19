@@ -1,5 +1,5 @@
 ---
-title: COM modülleri sınıfları (ATL) | Microsoft Docs
+title: COM modülü sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abf5449135bd0220f82400aed5e1c0aba0b90591
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8485f9565c75796cdb7a10f303469c1393b9f55f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354987"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958224"
 ---
-# <a name="com-modules-classes"></a>COM modülleri sınıfları
-Aşağıdaki sınıflar bir COM modülü için destek sağlar:  
+# <a name="com-modules-classes"></a>COM modülü sınıfları
+Aşağıdaki sınıflar, bir COM modülü için destek sağlar:  
   
--   [CAtlBaseModule](../atl/reference/catlbasemodule-class.md) her ATL projede bu sınıfının örneği.  
+-   [CAtlBaseModule](../atl/reference/catlbasemodule-class.md) her ATL projesinde bu sınıfının örneği.  
   
--   [CAtlComModule](../atl/reference/catlcommodule-class.md) Bu sınıf bir COM sunucusu modülü uygular.  
+-   [CAtlComModule](../atl/reference/catlcommodule-class.md) bu sınıfı bir COM sunucusu modülü uygular.  
   
 -   [CAtlModule](../atl/reference/catlmodule-class.md) bu sınıfın birkaç ATL modül sınıfları tarafından kullanılan yöntemleri sağlar.  
   
@@ -36,18 +36,18 @@ Aşağıdaki sınıflar bir COM modülü için destek sağlar:
   
 -   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) Bu sınıf, bir uygulama için modülü temsil eder.  
   
--   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) Bu sınıf bir hizmet uygular.  
+-   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) bu sınıfı bir hizmet uygular.  
   
 -   [CAtlWinModule](../atl/reference/catlwinmodule-class.md) Bu sınıf, ATL Pencereleme bileşenleri için destek sağlar.  
   
 -   [CComModule](../atl/reference/ccommodule-class.md) Bu sınıf bir DLL veya EXE modül uygular. ATL 7.0 Kullanımdan kalktı.  
   
--   [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) Bu sınıf bir EXE modülüyle birden çok iş parçacığı havuza grupların için destek uygular. ATL 7.0 Kullanımdan kalktı.  
+-   [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) bu sınıfı, birden çok iş parçacığı havuza apartmanlar desteğiyle bir EXE modülü uygular. ATL 7.0 Kullanımdan kalktı.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL Modül Sınıfları](../atl/atl-module-classes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)   
  [Modül sınıfları](../atl/atl-module-classes.md)
 

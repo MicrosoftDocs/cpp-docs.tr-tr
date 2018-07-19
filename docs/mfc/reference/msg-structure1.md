@@ -1,5 +1,5 @@
 ---
-title: MSG Structure1 | Microsoft Docs
+title: MSG yapısı1 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41dbbcdd3404705a9ac7c6c7969a9ebeeb0238f8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5fe629c2f279b6b258f4824229490f7b72b4ce4d
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372263"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338818"
 ---
-# <a name="msg-structure1"></a>MSG Structure1
-`MSG` Yapısı bir iş parçacığının ileti kuyruğundan ileti bilgilerini içerir.  
+# <a name="msg-structure1"></a>MSG yapısı1
+`MSG` Yapısı, bir iş parçacığının ileti kuyruğundan ileti bilgileri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,22 +41,22 @@ typedef struct tagMSG {     // msg
   
 #### <a name="parameters"></a>Parametreler  
  *HWND*  
- İleti, pencere yordamı alır penceresi tanımlar.  
+ Pencere yordamı olan iletiyi alır penceresi tanımlar.  
   
- `message`  
+ *message*  
  İleti sayısını belirtir.  
   
- `wParam`  
- İletiyle ilgili ayrıntılı bilgileri belirtir. Tam anlamını değerine bağlıdır **ileti** üyesi.  
+ *wParam*  
+ İleti hakkında ek bilgi belirtir. Tam anlamı değerine bağlıdır `message` üyesi.  
   
- `lParam`  
- İletiyle ilgili ayrıntılı bilgileri belirtir. Tam anlamını değerine bağlıdır **ileti** üyesi.  
+ *lParam*  
+ İleti hakkında ek bilgi belirtir. Tam anlamı değerine bağlıdır `message` üyesi.  
   
- `time`  
- Hangi ileti deftere süreyi belirtir.  
+ *saat*  
+ Başlangıçtan iletinin gönderildiği saati belirtir.  
   
- `pt`  
- İleti amaçlı ekran koordinatları, imleç konumu belirtir.  
+ *PT*  
+ İletinin gönderildiği sırada ekran koordinatlarında imleç konumu belirtir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winuser.h  

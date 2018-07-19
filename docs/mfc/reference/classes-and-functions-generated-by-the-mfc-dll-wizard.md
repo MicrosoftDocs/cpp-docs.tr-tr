@@ -1,5 +1,5 @@
 ---
-title: Sınıfları ve işlevleri MFC DLL Sihirbazı tarafından oluşturulan | Microsoft Docs
+title: MFC DLL Sihirbazı tarafından üretilen sınıfları ve İşlevler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,23 +19,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bda791b5b064ff40e0df0a411e0a4e90e7e2c91a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd1b1d65148a951ba78e0408ab590a2c979648f7
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366131"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339585"
 ---
 # <a name="classes-and-functions-generated-by-the-mfc-dll-wizard"></a>MFC DLL Sihirbazı Tarafından Üretilen Sınıfları ve İşlevler
-MFC DLL Sihirbazı'nın oluşturduğu Kodu Oluşturmakta olduğunuz DLL ve seçtiğiniz seçenekleri türüne bağlıdır. MFC DLL Sihirbazı'nın hem Normal MFC DLL'leri formlar için aynı kodu oluşturur.  
+MFC DLL Sihirbazı'nın ürettiği kod oluşturmakta olduğunuz DLL ve seçtiğiniz seçenekler türüne bağlıdır. MFC DLL Sihirbazı, hem Normal MFC DLL'leri formlar için aynı kodu oluşturur.  
   
-|Tür DLL|Seçenek|Sınıflar|İşlevler|  
+|DLL türü|Seçenek|Sınıflar|İşlevler|  
 |-----------------|------------|-------------|---------------|  
 |[Uzantı](../../build/extension-dlls-overview.md)|Yok.|Yok.|`DllMain`|  
-|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Yok.|Öğesinden türetilen uygulama sınıfı `CWinApp`|Yok.|  
-|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Otomatikleştirme|Öğesinden türetilen uygulama sınıfı `CWinApp`|**DllGetClassObjectDllCanUnloadNowDllRegisterServer**|  
-|[Uzantı](../../build/extension-dlls-overview.md)|Pencere yuvaları|Yok.|`DllMain`|  
-|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Pencere yuvaları|Öğesinden türetilen uygulama sınıfı `CWinApp`|`InitInstance` çağrı içerir `AfxSocketInit`|  
+|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Yok.|Türetilen uygulama sınıfı `CWinApp`|Yok.|  
+|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Otomatikleştirme|Türetilen uygulama sınıfı `CWinApp`|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|  
+|[Uzantı](../../build/extension-dlls-overview.md)|Pencere yuva|Yok.|`DllMain`|  
+|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Pencere yuva|Türetilen uygulama sınıfı `CWinApp`|`InitInstance` Çağrı içeriyor `AfxSocketInit`|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC DLL Sihirbazı](../../mfc/reference/mfc-dll-wizard.md)

@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1226f99d01d933e1754d301756aee6a12620e6a
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 4cc8cdc389edc8abbc424ec8277f759e7f3d81bb
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040148"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338574"
 ---
 # <a name="chtmleditctrl-class"></a>CHtmlEditCtrl sınıfı
-Bir MFC penceresinde WebBrowser ActiveX denetiminin işlevsellik sağlar.  
+Bir MFC penceresindeki WebBrowser ActiveX denetimi işlevlerini sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,18 +47,18 @@ class CHtmlEditCtrl: public CWnd,
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CHtmlEditCtrl::CHtmlEditCtrl](#chtmleditctrl)|Oluşturan bir `CHtmlEditCtrl` nesnesi.|  
+|[CHtmlEditCtrl::CHtmlEditCtrl](#chtmleditctrl)|Oluşturur bir `CHtmlEditCtrl` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CHtmlEditCtrl::Create](#create)|WebBrowser ActiveX denetimi oluşturur ve ona ekler `CHtmlEditCtrl` nesnesi. Bu işlev, otomatik olarak WebBrowser ActiveX denetimini düzenleme moduna geçirir.|  
-|[CHtmlEditCtrl::GetDHtmlDocument](#getdhtmldocument)|Alır [Ihtmldocument2](https://msdn.microsoft.com/library/aa752574.aspx) belge arabirimde, içerilen WebBrowser denetimi şu anda yüklü.|  
+|[CHtmlEditCtrl::Create](#create)|WebBrowser ActiveX denetimi oluşturur ve ona ekler `CHtmlEditCtrl` nesne. Bu işlev, WebBrowser ActiveX denetimi otomatik olarak düzenleme moduna geçirir.|  
+|[CHtmlEditCtrl::GetDHtmlDocument](#getdhtmldocument)|Alır [Ihtmldocument2](https://msdn.microsoft.com/library/aa752574.aspx) belge arabirimde kapsanan WebBrowser denetimi şu anda yüklü.|  
 |[CHtmlEditCtrl::GetStartDocument](#getstartdocument)|Kapsanan WebBrowser denetimi yüklemek için varsayılan bir belge için URL alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Oluşturulduktan sonra barındırılan WebBrowser denetimi otomatik olarak içine konur düzenleme modunda.  
+ Oluşturulduktan sonra denetimi otomatik olarak yerleştirerek barındırılan WebBrowser düzenleme modunda.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -75,14 +75,14 @@ class CHtmlEditCtrl: public CWnd,
  **Başlık:** afxhtml.h  
   
 ##  <a name="chtmleditctrl"></a>  CHtmlEditCtrl::CHtmlEditCtrl  
- Oluşturan bir `CHtmlEditCtrl` nesnesi.  
+ Oluşturur bir `CHtmlEditCtrl` nesne.  
   
 ```  
 CHtmlEditCtrl();
 ```  
   
 ##  <a name="create"></a>  CHtmlEditCtrl::Create  
- WebBrowser ActiveX denetimi oluşturur ve ona ekler `CHtmlEditCtrl` nesnesi. Bu işlev tarafından WebBrowser denetimi otomatik olarak bir varsayılan belge gider ve ardından yerleştirilir ActiveX düzenleme modunda.  
+ WebBrowser ActiveX denetimi oluşturur ve ona ekler `CHtmlEditCtrl` nesne. Bu işlev tarafından düzenleme modunda WebBrowser ActiveX denetimi için varsayılan bir belge otomatik olarak gider ve sonra yerleştirilir.  
   
 ```  
 virtual BOOL Create(
@@ -96,28 +96,28 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszWindowName*  
- Bu parametre kullanılmıyor.  
+ Bu parametre kullanılmaz.  
   
  *dwStyle*  
- Bu parametre kullanılmıyor.  
+ Bu parametre kullanılmaz.  
   
  *Rect*  
  Denetimin boyutunu ve konumunu belirtir.  
   
  *pParentWnd*  
- Denetimin üst penceresi belirtir. Değil olmalıdır **NULL**.  
+ Denetiminin üst penceresine belirtir. NULL olmamalıdır.  
   
  *nID*  
  Denetimin kimliğini belirtir.  
   
  *pContext*  
- Bu parametre kullanılmıyor.  
+ Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ##  <a name="getdhtmldocument"></a>  CHtmlEditCtrl::GetDHtmlDocument  
- Alır [Ihtmldocument2](https://msdn.microsoft.com/library/aa752574.aspx) arabirimi belge üzerinde şu anda yüklü, içerilen WebBrowser denetimi  
+ Alır [Ihtmldocument2](https://msdn.microsoft.com/library/aa752574.aspx) belge arabirimi yüklü kapsanan WebBrowser denetimi  
   
 ```  
 BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;  

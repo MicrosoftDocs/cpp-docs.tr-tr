@@ -16,26 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08f4c55eef55cb1258932f5e503c82c1ee824246
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5eeb3ee5b458ea65628e7f1c86c87dcad42f6fd2
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371924"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338616"
 ---
 # <a name="handlers-for-wm-messages"></a>WM_ İletileri için İşleyiciler
-Aşağıdaki konular eşleme girdilerini karşılık gelir.  
+Aşağıdaki konular için eşleme girişleri karşılık gelir.  
   
-|Konu|Harita girişleri|  
+|Konu|Eşleme girişleri|  
 |-----------|-----------------|  
-|[A - C](../../mfc/reference/wm-message-handlers-a-c.md)|**ON_WM_ACTIVATE** aracılığıyla **ON_WM_CTLCOLOR**|  
-|[D - E](../../mfc/reference/wm-message-handlers-d-e.md)|**ON_WM_DEADCHAR** aracılığıyla **ON_WM_ERASEBKGND**|  
-|[F - K](../../mfc/reference/wm-message-handlers-f-k.md)|**ON_WM_FONTCHANGE** aracılığıyla **ON_WM_KILLFOCUS**|  
-|[M - M](../../mfc/reference/wm-message-handlers-l-m.md)|**ON_WM_LBUTTONDBLCLK** aracılığıyla **ON_WM_MOVING**|  
-|[N - O](../../mfc/reference/wm-message-handlers-n-o.md)|**ON_WM_NCACTIVATE** aracılığıyla **ON_WM_NCRBUTTONUP**|  
-|[P - R](../../mfc/reference/wm-messages-p-r.md)|**ON_WM_PAINT** aracılığıyla **ON_WM_RENDERFORMAT**|  
-|[S](../../mfc/reference/wm-messages-s.md)|**ON_WM_SETCURSOR** aracılığıyla **ON_WM_SYSKEYUP**|  
-|[T - Z](../../mfc/reference/wm-messages-t-z.md)|**ON_WM_TIMECHANGE** aracılığıyla **ON_WM_WININICHANGE**|  
+|[A - C](../../mfc/reference/wm-message-handlers-a-c.md)|ON_WM_ACTIVATE ON_WM_CTLCOLOR aracılığıyla|  
+|[D - E](../../mfc/reference/wm-message-handlers-d-e.md)|ON_WM_DEADCHAR ON_WM_ERASEBKGND aracılığıyla|  
+|[F - K](../../mfc/reference/wm-message-handlers-f-k.md)|ON_WM_FONTCHANGE ON_WM_KILLFOCUS aracılığıyla|  
+|[M - M](../../mfc/reference/wm-message-handlers-l-m.md)|ON_WM_LBUTTONDBLCLK ON_WM_MOVING aracılığıyla|  
+|[N - O](../../mfc/reference/wm-message-handlers-n-o.md)|ON_WM_NCACTIVATE ON_WM_NCRBUTTONUP aracılığıyla|  
+|[P - R](../../mfc/reference/wm-messages-p-r.md)|ON_WM_PAINT ON_WM_RENDERFORMAT aracılığıyla|  
+|[S](../../mfc/reference/wm-messages-s.md)|ON_WM_SETCURSOR ON_WM_SYSKEYUP aracılığıyla|  
+|[T - Z](../../mfc/reference/wm-messages-t-z.md)|ON_WM_TIMECHANGE ON_WM_WININICHANGE aracılığıyla|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)

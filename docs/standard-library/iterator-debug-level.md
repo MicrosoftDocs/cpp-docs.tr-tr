@@ -16,54 +16,54 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7219ed039e77d0857151c54e73a03a0d1f6a3f5e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4163542d0ba741e6f0a123cbdcdc44dbbec470d1
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864144"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957797"
 ---
 # <a name="iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL
 
-`_ITERATOR_DEBUG_LEVEL` Makrosu denetimleri olup olmadığını [işaretli yineleyiciler](../standard-library/checked-iterators.md) ve [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md) etkinleştirilir. Bu makrosu yerini alır ve eski birleştirir `_SECURE_SCL` ve `_HAS_ITERATOR_DEBUGGING` makroları.
+_Iterator_debug_level makro denetimleri olmadığını [işaretli yineleyiciler](../standard-library/checked-iterators.md) ve [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md) etkinleştirilir. Bu makronun yerini alır ve eski _SECURE_SCL ve _HAS_ITERATOR_DEBUGGING makroları işlevselliğini bir araya getirir.
 
 ## <a name="macro-values"></a>Makro değerleri
 
-İçin olası değerler aşağıdaki tabloda özetlenmiştir `_ITERATOR_DEBUG_LEVEL` makrosu.
+_Iterator_debug_level makro için olası değerler aşağıdaki tabloda özetlenmiştir.
 
 |Derleme modu|Makro değeri|Açıklama|
 |----------------------|----------------|-----------------|
 |**Hata ayıklama**|||
 ||0|İşaretli yineleyiciler devre dışı bırakır ve hata ayıklama yineleyici devre dışı bırakır.|
-||1.|İşaretli yineleyiciler etkinleştirir ve hata ayıklama yineleyici devre dışı bırakır.|
+||1.|İşaretli yineleyiciler sağlar ve hata ayıklama yineleyici devre dışı bırakır.|
 ||2 (varsayılan)|Hata ayıklama yineleyici sağlar; işaretli yineleyiciler ilgili değildir.|
 |**Sürüm**|||
-||0 (varsayılan)|Devre dışı bırakır işaretli yineleyiciler.|
+||0 (varsayılan)|Yineleyiciler işaretli devre dışı bırakır.|
 ||1.|Etkinleştirir işaretli yineleyiciler; hata ayıklama yineleyici ilgili değildir.|
 
-Belirtirseniz yayın modunda derleyici bir hata oluşturur. `_ITERATOR_DEBUG_LEVEL` 2 olarak.
+2 olarak _ıterator_debug_level belirtirseniz yayın modunda, derleyici bir hata oluşturur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_ITERATOR_DEBUG_LEVEL` Makrosu denetimleri olup olmadığını [işaretli yineleyiciler](../standard-library/checked-iterators.md) olan etkinleştirilebilir ve hata ayıklama modunda olsun [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md) etkinleştirilir. Varsa `_ITERATOR_DEBUG_LEVEL` kapsayıcılarınızı sınırları geçersiz kılınmaz 1 veya 2, işaretli yineleyiciler emin olarak tanımlanır. Varsa `_ITERATOR_DEBUG_LEVEL` 0'dır, Yineleyiciler işaretlenmemiş. Zaman `_ITERATOR_DEBUG_LEVEL` bir çalışma zamanı hatası ve program sonlandırıldığında herhangi güvensiz yineleyici kullanım nedenler 1 tanımlanır. Zaman `_ITERATOR_DEBUG_LEVEL` assert ve olanak sağlayan bir çalışma zamanı hata iletişim kutusu Böl ayıklayıcıya 2, güvenli olmayan yineleyici kullanma nedenleri olarak tanımlanır.
+_Iterator_debug_level makro denetimleri olmadığını [işaretli yineleyiciler](../standard-library/checked-iterators.md) etkinleştirilebilir ve hata ayıklama modunda olan, ister [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md) etkinleştirilir. _Iterator_debug_level 1 veya 2 tanımlanmışsa, işaretli yineleyiciler kapsayıcılarınızı sınırlarının geçersiz kılınmamasını emin olun. Yineleyiciler _ıterator_debug_level 0 ise, denetlenmez. _Iterator_debug_level 1 tanımlandığında, güvenli olmayan yineleyici kullanım bir çalışma zamanı hatasına neden olur ve program sonlandırılır. _Iterator_debug_level 2 olarak tanımlandığında, güvenli olmayan yineleyici assert ve olanak sağlayan bir çalışma zamanı hata iletişim kutusu, hata ayıklayıcıya girdikten nedenleri kullanın.
 
-Çünkü `_ITERATOR_DEBUG_LEVEL` makrosu destekleyen benzer işlevsellik `_SECURE_SCL` ve `_HAS_ITERATOR_DEBUGGING` makroları, belirli bir durumda kullanmak için hangi makrosu ve makrosu değeri belirsiz olabilir. Karışıklığı önlemek için yalnızca kullanmanızı öneririz `_ITERATOR_DEBUG_LEVEL` makrosu. Bu tablo eşdeğer açıklar `_ITERATOR_DEBUG_LEVEL` çeşitli değerleri için kullanmak üzere makrosu değeri `_SECURE_SCL` ve `_HAS_ITERATOR_DEBUGGING` var olan kodu.
+_Iterator_debug_level makrosu _SECURE_SCL ve _HAS_ITERATOR_DEBUGGING makroları benzer bir işlevsellik desteklediğinden, hangi makrosu ve makrosu belirli bir durum değeri belirsiz olabilir. Karışıklığı önlemek için yalnızca _ıterator_debug_level makrosu kullanmanızı öneririz. Bu tablo _SECURE_SCL ve varolan kodda _HAS_ITERATOR_DEBUGGING çeşitli değerler için kullanılacak eşdeğer _ıterator_debug_level makrosu değeri açıklar.
 
 |**_ITERATOR_DEBUG_LEVEL** |**_SECURE_SCL** |**_HAS_ITERATOR_DEBUGGING**|
 |---|---|---|
-|0 (yayın varsayılan)|0 (devre dışı)|0 (devre dışı)|
+|0 (varsayılan sürüm)|0 (devre dışı)|0 (devre dışı)|
 |1.|1 (etkin)|0 (devre dışı)|
 |2 (hata ayıklama varsayılan)|(ilgili olmayan)|1 (hata ayıklama modunda etkin)|
 
-İşaretli yineleyiciler ilgili uyarılar devre dışı bırakma hakkında daha fazla bilgi için bkz: [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md).
+Denetlenen yineleyiciler hakkında uyarılar devre dışı bırakma hakkında daha fazla bilgi için bkz: [_scl_secure_no_warnıngs](../standard-library/scl-secure-no-warnings.md).
 
 ### <a name="example"></a>Örnek
 
-İçin bir değer belirtmek için `_ITERATOR_DEBUG_LEVEL` makrosu, kullanım bir [/D](../build/reference/d-preprocessor-definitions.md) komut satırında tanımlayın veya kullanmak için derleyici seçeneği `#define` önce C++ Standart Kitaplığı üstbilgi Kaynak dosyalarınız dahil edilir. Örneğin, komut satırında derlemek için *sample.cpp* hata ayıklama modunda ve hata ayıklama yineleyici desteği kullanmak üzere belirtebilirsiniz `_ITERATOR_DEBUG_LEVEL` makro tanımı:
+_Iterator_debug_level makro için bir değer belirtmek için kullanın bir [/D](../build/reference/d-preprocessor-definitions.md) komut satırında tanımlayın veya kullanmak için derleyici seçeneği `#define` önce C++ Standart Kitaplığı üstbilgileri, kaynak dosyaları eklenir. Örneğin, komut satırında derlemek için *sample.cpp* hata ayıklama modunda ve hata ayıklama yineleyici desteği _ıterator_debug_level Makro tanımında belirtebilirsiniz:
 
 `cl /EHsc /Zi /MDd /D_ITERATOR_DEBUG_LEVEL=1 sample.cpp`
 
-Bir kaynak dosyasında yineleyiciler tanımlamak tüm standart kitaplık üstbilgi önce makrosu belirtin.
+Bir kaynak dosyasında yineleyiciler tanımlayan standart kitaplığı üst bilgileri önce makro belirtin.
 
 ```cpp
 // sample.cpp

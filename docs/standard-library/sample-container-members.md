@@ -14,17 +14,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c844416151874714aa86a2ffe9762949c6a62a3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 33a251b2b9bf9b010367a88a4c9f566a73acb544
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856104"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956787"
 ---
 # <a name="sample-container-members"></a>Örnek Kapsayıcı Üyeleri
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
 ## <a name="reference"></a>Başvuru
 
@@ -32,27 +32,27 @@ ms.locfileid: "33856104"
 
 |||
 |-|-|
-|[const_iterator](../standard-library/container-class-const-iterator.md)|Denetimli sırası için sabit bir yineleyici olarak hizmet verebilir nesneyi açıklar.|
-|[const_reference](../standard-library/container-class-const-reference.md)|Öğenin denetimli dizisi sabit bir başvuru olarak hizmet verebilir nesneyi açıklar.|
-|[const_reverse_iterator](../standard-library/container-class-const-reverse-iterator.md)|Denetimli sırası için sabit bir ters yineleyici olarak hizmet verebilir nesneyi açıklar.|
-|[difference_type](../standard-library/container-class-difference-type.md)|Denetlenen sıradaki herhangi iki öğe adreslerini arasındaki farkı temsil eden bir nesne açıklar.|
-|[Yineleyici](../standard-library/container-class-iterator.md)|Yineleyici denetimindeki sırası için olarak hizmet verebilir nesneyi açıklar.|
-|[Başvuru](../standard-library/container-class-reference.md)|Öğenin denetimli sırasının bir başvuru olarak hizmet verebilir nesneyi açıklar.|
-|[reverse_iterator](../standard-library/container-class-reverse-iterator.md)|Denetimli sırası için ters yineleyici olarak hizmet verebilir nesneyi açıklar.|
-|[size_type](../standard-library/container-class-size-type.md)|Denetlenen herhangi sırası uzunluğu temsil eden bir nesne açıklar.|
-|[value_type](../standard-library/container-class-value-type.md)|Şablon parametresi için bir eş anlamlı davranır **Ty**.|
+|[const_iterator](../standard-library/container-class-const-iterator.md)|Denetlenen dizi için sabit bir yineleyici olarak hizmet verebilen bir nesneyi tanımlar.|
+|[const_reference](../standard-library/container-class-const-reference.md)|Denetlenen dizinin bir öğe için sabit bir başvuru olarak hizmet verebilen bir nesneyi tanımlar.|
+|[const_reverse_iterator](../standard-library/container-class-const-reverse-iterator.md)|Denetlenen dizi için bir sabit ters yineleyici olarak hizmet verebilen bir nesneyi tanımlar.|
+|[difference_type](../standard-library/container-class-difference-type.md)|adresleri denetlenen dizideki herhangi iki öğe arasındaki farkı temsil edebilen bir nesneyi tanımlar.|
+|[Yineleyici](../standard-library/container-class-iterator.md)|Denetlenen dizi için bir yineleyici olarak hizmet verebilen bir nesneyi tanımlar.|
+|[Başvuru](../standard-library/container-class-reference.md)|Denetlenen dizinin bir öğesine bir başvuru olarak hizmet verebilen bir nesneyi tanımlar.|
+|[reverse_iterator](../standard-library/container-class-reverse-iterator.md)|Denetlenen dizi için bir ters yineleyici olarak hizmet verebilen bir nesneyi tanımlar.|
+|[size_type](../standard-library/container-class-size-type.md)|Denetlenen bir dizi uzunluğunu temsil edebilen bir nesneyi tanımlar.|
+|[value_type](../standard-library/container-class-value-type.md)|Şablon parametresi için bir eşanlamlı davranır `Ty`.|
 
 ## <a name="member-functions"></a>Üye İşlevleri
 
 |||
 |-|-|
-|[Başlangıç](../standard-library/container-class-begin.md)|Yineleyici bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi ötesinde) döndürür.|
+|[başlayın](../standard-library/container-class-begin.md)|Bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi bitiminin ötesinde) bir yineleyici döndürür.|
 |[Temizle](../standard-library/container-class-clear.md)|Çağrıları [silme](../standard-library/container-class-erase.md)( [başlamak](../standard-library/container-class-begin.md), [son](../standard-library/container-class-end.md)).|
-|[boş](../standard-library/container-class-empty.md)|Döndürür **true** boş denetimli dizisi için.|
-|[Bitiş](../standard-library/container-class-end.md)|Yineleyici dizisi yalnızca ötesinde işaret döndürür.|
+|[boş](../standard-library/container-class-empty.md)|Döndürür **true** için boş bir denetlenmiş dizi.|
+|[Son](../standard-library/container-class-end.md)|Son sırasının hemen ötesine işaret eden bir yineleyici döndürür.|
 |[silme](../standard-library/container-class-erase.md)|Bir öğeyi siler.|
-|[max_size](../standard-library/container-class-max-size.md)|Nesne denetimli sırası uzunluğu bakılmaksızın sabit zaman denetleyebilirsiniz uzun sırası uzunluğunu döndürür.|
-|[rbegin](../standard-library/container-class-rbegin.md)|Ters sırada başlangıcı belirleme yalnızca denetimli dizisi sonunu aşan işaret eden bir ters yineleyici döndürür.|
-|[rend](../standard-library/container-class-rend.md)|Üye işlevini ters yineleyici bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi ötesinde) döndürür. ters bitişinde belirleme.|
-|[Boyutu](../standard-library/container-class-size.md)|Denetimli sırası uzunluğu bakılmaksızın sabit zaman denetimli sırası uzunluğunu döndürür.|
-|[Değiştirme](../standard-library/container-class-swap.md)
+|[max_size](../standard-library/container-class-max-size.md)|Denetlenen dizinin uzunluğundan bağımsız olarak sabit zamanlı nesne denetleyebilirsiniz kastetmek uzunluğunu döndürür.|
+|[rbegin](../standard-library/container-class-rbegin.md)|Ters dizisi başına belirleme denetlenen dizinin sonunu yalnızca bir ters yineleyici döndürür.|
+|[rend](../standard-library/container-class-rend.md)|Üye işlevi bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi bitiminin ötesinde), ters yineleyici döndürür. ters sıra sonuna belirleme.|
+|[Boyutu](../standard-library/container-class-size.md)|Denetlenen dizinin uzunluğundan bağımsız olarak sabit zamanlı denetlenen dizinin uzunluğunu döndürür.|
+|[değiştirme](../standard-library/container-class-swap.md)

@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 531ee45aed64daa19f818bc5c8480a9c1b032d30
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 58f3245e430ba1c74ea88f6262f14a4d38c1ca2c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844139"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954037"
 ---
 # <a name="isintegral-class"></a>is_integral Sınıfı
 
-Tür tam sayı ise testleri.
+İntegral türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,13 +37,13 @@ struct is_integral;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` tam sayı türlerinden biridir veya `cv-qualified` form false tuttuğu tam sayı türlerinden birinin, aksi takdirde.
+Karşılaştırmasının bir örneği true tutan türü *Ty* integral türlerinden biri veya `cv-qualified` false tuttuğu integral türlerinden birini, aksi takdirde biçiminin.
 
-Tamsayı türü biri `bool`, `char`, `unsigned char`, `signed char`, `wchar_t`, `short`, `unsigned short`, `int`, `unsigned int`, `long`, ve `unsigned long`. Ayrıca, sağlayacağını derleyicileri ile tamsayı türü biri olabilir `long long`, `unsigned long long`, `__int64`, ve `unsigned __int64`.
+Bir tamsayı türü biridir **bool**, **char**, **imzasız char**, **signed char**, **wchar_t**, **kısa**, **işaretsiz**, **int**, **işaretsiz int**, **uzun**ve **işaretsiz uzun**. Ayrıca, sağlayacağını derleyicilerle bir tamsayı türü olabilir **uzun uzun**, **işaretsiz long long**, **__int64**, ve **unsigned __int64**.
 
 ## <a name="example"></a>Örnek
 

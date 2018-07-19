@@ -96,17 +96,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb5745d5c4ccc495cd508df10f0d36e3729ecf13
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 4a47efc1018f42cbd9f421f1d53566aa134addd6
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952564"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336845"
 ---
 # <a name="cdocksite-class"></a>CDockSite sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
- Türetilmiş bölmeleri düzenleme için işlevsellik sağlar [CPane sınıfı](../../mfc/reference/cpane-class.md) satır kümeleri içine.  
+ Öğesinden türetilen bölmeleri düzenlemek için işlevsellik sağlar [CPane sınıfı](../../mfc/reference/cpane-class.md) satır kümelerine.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -146,10 +146,10 @@ class CDockSite: public CBasePane
 |[CDockSite::OnSetWindowPos](#onsetwindowpos)||  
 |[CDockSite::OnShowRow](#onshowrow)||  
 |[CDockSite::OnSizeParent](#onsizeparent)||  
-|[CDockSite::PaneFromPoint](#panefrompoint)|Verilen parametresi tarafından belirtilen bir noktada yerleştirme sitedeki yerleşik bir bölme döndürür.|  
-|[CDockSite::DockPaneLeftOf](#dockpaneleftof)|Bir bölme başka bir bölme soluna docks.|  
-|[CDockSite::FindPaneByID](#findpanebyid)|Verilen kimliğe tarafından tanımlanan bölmesinde döndürür|  
-|[CDockSite::GetPaneList](#getpanelist)|Yerleştirme sitede yerleşik bölmeler listesini döndürür.|  
+|[CDockSite::PaneFromPoint](#panefrompoint)|Belirtilen parametre tarafından belirtilen bir noktada dock sitesiyle yerleştirildiğini bölme döndürür.|  
+|[CDockSite::DockPaneLeftOf](#dockpaneleftof)|Bir bölme, başka bir bölmesinin solunda docks.|  
+|[CDockSite::FindPaneByID](#findpanebyid)|Verilen kimliğe göre tanımlanan bölmesinde döndürür|  
+|[CDockSite::GetPaneList](#getpanelist)|Dock sitede yerleşik bölmeler listesini döndürür.|  
 |[CDockSite::RectSideFromPoint](#rectsidefrompoint)||  
 |[CDockSite::RemovePane](#removepane)||  
 |[CDockSite::RemoveRow](#removerow)||  
@@ -157,17 +157,17 @@ class CDockSite: public CBasePane
 |[CDockSite::RepositionPanes](#repositionpanes)||  
 |[CDockSite::ResizeDockSite](#resizedocksite)||  
 |[CDockSite::ResizeRow](#resizerow)||  
-|[CDockSite::ShowPane](#showpane)|Bölmesinde gösterilir.|  
+|[CDockSite::ShowPane](#showpane)|Bölmesi gösterir.|  
 |[CDockSite::ShowRow](#showrow)||  
 |[CDockSite::SwapRows](#swaprows)||  
   
 ## <a name="remarks"></a>Açıklamalar  
- Framework oluşturur `CDockSite` çağırdığınızda otomatik olarak nesneleri [CFrameWndEx::EnableDocking](../../mfc/reference/cframewndex-class.md#enabledocking). Yerleştirme site windows ana çerçeve penceresi istemci alanına kenarında konumlandırılır.  
+ Framework oluşturur `CDockSite` otomatik olarak çağırdığınızda nesneleri [CFrameWndEx::EnableDocking](../../mfc/reference/cframewndex-class.md#enabledocking). Dock sitesine windows ana çerçeve penceresinin istemci alanına kenarında yerleştirilir.  
   
- Genellikle çünkü yuva site tarafından sağlanan hizmetlerin çağrı gerekmez [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md) hizmetlerin işler.  
+ Genellikle çünkü dock site tarafından sağlanan hizmetleri çağıran gerekmez [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md) hizmetlerin işler.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CDockSite` sınıfı.  
+ Aşağıdaki örnek, bir nesnenin oluşturulacağı gösterilmektedir `CDockSite` sınıfı.  
   
  [!code-cpp[NVC_MFC_RibbonApp#27](../../mfc/reference/codesnippet/cpp/cdocksite-class_1.cpp)]  
   
@@ -278,7 +278,7 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler  
  [in] *dwStyleEx*  
  [in] *dwStyle*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pParentWnd*  
  [in] *dwControlBarStyle*  
  [in] *pContext*  
@@ -324,7 +324,7 @@ virtual void DockPane(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="dockpaneleftof"></a>  CDockSite::DockPaneLeftOf  
- Bir bölme başka bir bölme soluna docks.  
+ Bir bölme, başka bir bölmesinin solunda docks.  
   
 ```  
 virtual BOOL DockPaneLeftOf(
@@ -334,13 +334,13 @@ virtual BOOL DockPaneLeftOf(
   
 ### <a name="parameters"></a>Parametreler  
  [in] [out] *pBarToDock*  
- Bir işaretçi solunda yerleşik bölmesine *pTargetBar*.  
+ Bir işaretçi solunda yerleştirilemediğinde bölmesine *pTargetBar*.  
   
  [in] [out] *pTargetBar*  
  Hedef bölmesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bölmesinde başarıyla; yerleştirilmişse Aksi takdirde `FALSE`.  
+ Bölmesinde başarıyla yerleştirildiğini TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -356,7 +356,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="findpanebyid"></a>  CDockSite::FindPaneByID  
- Verilen kimliğe bölmesiyle döndürür  
+ Belirtilen kimliğe sahip bölmesinde döndürür  
   
 ```  
 CPane* FindPaneByID(UINT nID);
@@ -364,10 +364,10 @@ CPane* FindPaneByID(UINT nID);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nID*  
- Komut Kimliği bulunamadı bölmesinin.  
+ Bulunacak komut kimliği bölmesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen komut kimliği bölmesiyle gösteren bir işaretçi veya `NULL` bölmesinde bulunmazsa.  
+ Belirtilen komut kimliği ya da bölmesinde bulunamazsa NULL içeren bölme için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -417,14 +417,14 @@ const CObList& GetDockSiteRowsList() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getpanelist"></a>  CDockSite::GetPaneList  
- Yerleştirme sitede yerleşik bölmeler listesini döndürür.  
+ Bir dock sitesine yerleştirilebilen bölmeleri listesini döndürür.  
   
 ```  
 const CObList& GetPaneList() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Salt okunur başvuru bölmeleri listesi için şu anda takma çubuğunda yerleştirildi.  
+ Salt okunur başvuru bölmeleri listesine şu anda yerleştirme çubuğunda yerleştirilmiş.  
   
 ##  <a name="isaccessibilitycompatible"></a>  CDockSite::IsAccessibilityCompatible  
 
@@ -472,7 +472,7 @@ BOOL IsRectWithinDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *ptDelta*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -607,7 +607,7 @@ virtual void OnShowRow(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="panefrompoint"></a>  CDockSite::PaneFromPoint  
- Verilen parametresi tarafından belirtilen bir noktada yerleştirme sitedeki yerleşik bir bölme döndürür.  
+ Belirtilen parametre tarafından belirtilen bir noktada dock sitesiyle yerleştirildiğini bölme döndürür.  
   
 ```  
 virtual CPane* PaneFromPoint(CPoint pt);
@@ -615,10 +615,10 @@ virtual CPane* PaneFromPoint(CPoint pt);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pt*  
- Alınacak bölmesinin ekran koordinatları bir nokta.  
+ Ekran koordinatlarında alınacak bölmesi için bir nokta.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bölmesine bulunan belirli bir noktada veya `NULL` hiçbir bölmesinde belirtilen noktada mevcut olduğunda.  
+ Belirtilen adreste bulunan bölmesinde bir işaretçiye işaret veya hiçbir bölmesi belirli bir noktada mevcut değilse NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -632,7 +632,7 @@ static int __stdcall RectSideFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *noktası*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -730,7 +730,7 @@ int ResizeRow(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="showpane"></a>  CDockSite::ShowPane  
- Bölmesinde gösterilir.  
+ Bölmesi gösterir.  
   
 ```  
 virtual BOOL ShowPane(
@@ -742,22 +742,22 @@ virtual BOOL ShowPane(
   
 ### <a name="parameters"></a>Parametreler  
  [in] [out] *pBar*  
- Bir işaretçi gösterileceğini veya gizleneceğini için bölmesine.  
+ Bölmesinde gösterilen veya gizli bir işaretçi.  
   
  [in] *bBilgi Göster*  
- `TRUE` bölmesinde gösterilecek olduğunu belirtmek için; `FALSE` bölmesinde gizlenecek olduğunu belirtmek için.  
+ Gösterilecek bölme olduğunu belirtmek için TRUE; Bölmenin gizli olduğunu belirtmek için FALSE.  
   
  [in] *bDelay*  
- `TRUE` bölmesinde düzenini kadar bölmesinde sonra Gecikmeli belirtmek için gösterilir; Aksi takdirde `FALSE`.  
+ Bölmesinde gösterilen sonra kadar bölmesinde düzenini geciktirileceğini belirtmek için TRUE; Aksi takdirde FALSE.  
   
  [in] *bActivate*  
  Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bölmesinde gösterilen veya başarıyla gizli. `FALSE` Belirtilen bölmesinde bu dock siteye ait değilse.  
+ Bölmesinde gösterilen veya gizli başarıyla gerekiyorsa TRUE. Belirtilen bölmesinde bu dock sitesine ait değilse FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yerleşik bölmeleri göstermek veya gizlemek için bu yöntemi çağırın. Normalde, çağrı gerekmez `CDockSite::ShowPane` doğrudan üst çerçeve penceresi veya temel bölmesinde tarafından çağrıldığı için.  
+ Yerleşik bölmeleri göstermek veya gizlemek için bu yöntemi çağırın. Normalde, çağrı gerekmez `CDockSite::ShowPane` doğrudan temel bölmesinde veya ana çerçeve penceresi tarafından çağrıldığından.  
   
 ##  <a name="showrow"></a>  CDockSite::ShowRow  
 

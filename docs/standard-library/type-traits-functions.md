@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: ff6d6066d90fe5049b89586ce657e62860c12f9f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3754af9a32ab1beeb4f3b9a783547bd081d57a46
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861100"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955844"
 ---
 # <a name="lttypetraitsgt-functions"></a>&lt;type_traits&gt; işlevleri
 
@@ -44,7 +44,7 @@ ms.locfileid: "33861100"
 
 ## <a name="is_assignable"></a>  is_assignable
 
-Bir değeri olup olmadığını sınar `From` türü atanabilen bir `To` türü.
+Bir değeri olup olmadığını test *gelen* türüne atanabilen bir *için* türü.
 
 ```cpp
 template <class To, class From>
@@ -53,13 +53,15 @@ struct is_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-Atamayı alan nesnesi türü için.
+*Hedef*  
+ Atamayı alan nesnenin türü.
 
-Nesne türünden değer sağlar.
+*Kaynak*  
+ Değer sağlayan bir nesne türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değerlendirilmeyecek ifade `declval<To>() = declval<From>()` doğru biçimlendirilmiş olması gerekir. Her ikisi de `From` ve `To` tam tür `void`, veya bilinmeyen bağlı dizileri.
+Değerlendirilmemiş ifade `declval<To>() = declval<From>()` iyi biçimlendirilmiş olmalıdır. Her ikisi de *gelen* ve *için* tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
 
 ## <a name="is_copy_assignable"></a>  is_copy_assignable
 
@@ -72,15 +74,16 @@ struct is_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty*  
+ Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bir kopya atama işleci, aksi takdirde sahip bir sınıftır. İs_assignable eşdeğer\<Ty &, const Ty & >.
+Karşılaştırmasının bir örneği true tutan türü *Ty* tuttuğu yanlış bir kopya atama işleci, aksi takdirde sahip bir sınıftır. İs_assignable eşdeğer\<Ty &, const Ty & >.
 
 ## <a name="is_copy_constructible"></a>  is_copy_constructible
 
-Kopya Oluşturucu türündeyse testleri.
+Kopya Oluşturucu türüne sahip olmadığını sınar.
 
 ```cpp
 template <class Ty>
@@ -89,11 +92,12 @@ struct is_copy_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty*  
+ Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu kopya Oluşturucu, aksi takdirde sahip bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* tuttuğu yanlış bir kopya Oluşturucu, aksi takdirde sahip bir sınıftır.
 
 ### <a name="example"></a>Örnek
 
@@ -132,7 +136,7 @@ is_copy_constructible<NotCopyable > == false
 
 ## <a name="is_default_constructible"></a>  is_default_constructible
 
-Bir türü varsayılan bir oluşturucu varsa testleri.
+Bir türe varsayılan bir oluşturucuya sahip olmadığını sınar.
 
 ```cpp
 template <class Ty>
@@ -141,11 +145,12 @@ struct is_default_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T*  
+ Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` false tuttuğu varsayılan bir oluşturucu, aksi takdirde sahip bir sınıf türü. Bu koşulu eşdeğerdir `is_constructible<T>`. Tür `T` tam bir tür olmalıdır `void`, veya bilinmeyen bağlı bir dizi.
+Karşılaştırmasının bir örneği true tutan türü *T* false tuttuğu varsayılan bir oluşturucu, aksi durumda olan bir sınıf türüdür. Bu koşulu eşdeğerdir `is_constructible<T>`. Tür *T* tam bir tür olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
 
 ### <a name="example"></a>Örnek
 
@@ -184,7 +189,7 @@ is_default_constructible<Simple2> == false
 
 ## <a name="is_move_assignable"></a>  is_move_assignable
 
-Türü olabiliyorsa, testleri atanan taşıyın.
+Atanan türü olabilir, testleri taşıyın.
 
 ```cpp
 template <class T>
@@ -193,15 +198,16 @@ struct is_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T*  
+ Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir türü taşıma atanabilir ise rvalue başvuru türüne bir başvuru türüne atanabilir. Türü koşulu eşdeğerdir `is_assignable<T&, T&&>`. Atanabilir türleri önerilebilir skaler türler ve taşıma atama işleçleri derleyicinin ürettiği veya kullanıcı tanımlı olan sınıf türünü taşıyın.
+Bir türü taşıma atanabilir ise bir başvuru türü bir rvalue başvuru türüne atanabilir. Tür koşulu eşdeğerdir `is_assignable<T&, T&&>`. Atanabilir türleri başvurulabilir skaler türler ve taşıma atama işleçleri derleyici tarafından oluşturulan veya kullanıcı tanımlı olan sınıf türleri taşıyın.
 
 ## <a name="is_move_constructible"></a>  is_move_constructible
 
-Bir taşıma oluşturucusuna türüne sahip olup olmadığını sınar.
+Türü bir taşıma oluşturucusuna sahip olup olmadığını test eder.
 
 ```cpp
 template <class T>
@@ -210,15 +216,16 @@ struct is_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-Değerlendirilecek T türü
+*T*  
+ Değerlendirilecek tür
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü ise true olarak değerlendirilir türü koşulu `T` bir taşıma işlemi kullanılarak oluşturulabilir. Bu koşul eşdeğerdir `is_constructible<T, T&&>`.
+Gerekirse true değerlendirir türü bir tür koşulu *T* taşıma işlemi kullanılarak oluşturulabilir. Bu koşulu eşdeğerdir `is_constructible<T, T&&>`.
 
 ## <a name="is_nothrow_move_assignable"></a>  is_nothrow_move_assignable
 
-Türüne sahip olup olmadığını sınar bir **nothrow** atama işleci taşıyın.
+Türüne sahip olup olmadığını test bir **nothrow** atama işleçlerini taşıyın.
 
 ```cpp
 template <class Ty>
@@ -227,15 +234,16 @@ struct is_nothrow_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty*  
+ Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bir nothrow taşıma atama işleci, aksi takdirde sahiptir.
+Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu nothrow taşıma atama işleci, aksi takdirde sahiptir.
 
 ## <a name="is_trivially_copy_assignable"></a>  is_trivially_copy_assignable
 
-Türü bir önemsiz copy atama işleci olup olmadığını sınar.
+Türü, Önemsiz kopya atama işlecine sahip olup olmadığını test eder.
 
 ```cpp
 template <class Ty>
@@ -244,17 +252,18 @@ struct is_trivially_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T*  
+ Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` false tuttuğu bir önemsiz copy atama işleci, aksi takdirde sahip bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *T* false tuttuğu Önemsiz kopya atama işlecine, aksi takdirde sahip bir sınıftır.
 
-Bir sınıf için bir atama Oluşturucusu `T` , örtük olarak sağlanır, sınıf deyimle `T` sınıfı hiçbir sanal işleve sahip `T` hiçbir sanal temellerine sahip, sınıf türü tüm statik olmayan veri üyeleri sınıflarını Önemsiz sahip atama işleçleri ve sınıf türü dizisi tüm statik olmayan veri üyeleri sınıflarını Önemsiz atama işleçleri sahiptir.
+Bir sınıf için bir atama Oluşturucu *T* , sınıf, örtük olarak sağlanan Önemsiz olduğundan *T* sahip sanal işlev yok, sınıf *T* sahip hiçbir sanal tabanları olan sınıfları tüm statik olmayan veri üyeleri sınıf türünün basit atama işleçleri, ve önemsiz atama işleçleri dizi sınıf türünde tüm statik olmayan veri üyelerinin sınıflarını sahiptir.
 
 ## <a name="is_trivially_move_assignable"></a>  is_trivially_move_assignable
 
-Önemsiz taşıma atama işleci türüne sahip olup olmadığını sınar.
+Önemsiz taşıma atama işleci türünde olup olmadığını sınar.
 
 ```cpp
 template <class Ty>
@@ -263,27 +272,28 @@ struct is_trivially_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty*  
+ Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bir önemsiz taşıma atama işleci, aksi takdirde sahip bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu Önemsiz taşıma atama işleci, aksi takdirde sahip bir sınıftır.
 
-Bir sınıf için bir taşıma atama işleci `Ty` deyimle varsa:
+Bir sınıf için bir taşıma atama işlecini *Ty* gereksizse, varsa:
 
-örtük olarak sağlanır
+örtük olarak sağlanan
 
-sınıf `Ty` hiçbir sanal işleve sahip
+sınıf *Ty* sahip sanal işlev yok
 
-sınıf `Ty` hiçbir sanal temellerine sahip
+sınıf *Ty* hiçbir sanal temellere sahip
 
-sınıf türü tüm statik olmayan veri üyeleri sınıflarını Önemsiz taşıma atama işleçleri sahip
+tüm statik olmayan veri üyeleri sınıf türünün sınıflarını sahip Önemsiz taşıma atama işleçleri
 
-sınıf türü dizisi tüm statik olmayan veri üyeleri sınıflarını Önemsiz taşıma atama işleçleri sahip
+Önemsiz taşıma atama işleçleri dizi sınıf türünde tüm statik olmayan veri üyelerinin sınıflarını sahip
 
 ## <a name="is_trivially_move_constructible"></a>  is_trivially_move_constructible
 
-Önemsiz türündeyse testleri Oluşturucusu taşıyın.
+Taşıma Oluşturucu türü, Önemsiz varsa testleri.
 
 ```cpp
 template <class Ty>
@@ -292,29 +302,30 @@ struct is_trivially_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty*  
+ Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bir önemsiz taşıma oluşturucusu, aksi durumda olan bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu Önemsiz taşıma oluşturucusu, aksi takdirde sahip bir sınıftır.
 
-Bir sınıf için bir taşıma oluşturucusuna `Ty` deyimle varsa:
+Bir sınıf için bir taşıma Oluşturucusu *Ty* gereksizse, varsa:
 
-örtülü olarak bildirilen
+örtük olarak bildirilen
 
-parametre türleri örtük bir bildirimi gereksinimlerine eşdeğer
+Bu örtük bir bildirimi eşdeğer parametre türleri
 
-sınıf `Ty` hiçbir sanal işleve sahip
+sınıf *Ty* sahip sanal işlev yok
 
-sınıf `Ty` hiçbir sanal temellerine sahip
+sınıf *Ty* hiçbir sanal temellere sahip
 
-sınıfta hiç geçici olmayan statik veri üyeleri yok
+Geçici statik olmayan veri üyeleri sınıf yoktur
 
-tüm doğrudan taban sınıfının `Ty` Önemsiz taşıma oluşturucuları sahip
+tüm doğrudan tabanları sınıfının *Ty* Önemsiz taşıma oluşturucuları sahip
 
-sınıf türü tüm statik olmayan veri üyeleri sınıflarını Önemsiz taşıma oluşturucuları sahip
+Önemsiz taşıma oluşturucuları sınıfları sınıf türünün tüm statik olmayan veri üyelerinin olması
 
-sınıf türü dizisi tüm statik olmayan veri üyeleri sınıflarını Önemsiz taşıma oluşturucuları sahip
+Önemsiz taşıma oluşturucuları sınıflarını dizi sınıf türünde tüm statik olmayan veri üyelerine sahip
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

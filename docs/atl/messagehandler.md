@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec0fd88def88f7d31fce078fec0c860f4f21f51c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dcd02396fa76e9e68fce628783fb17bc6adab36e
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356373"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848408"
 ---
 # <a name="messagehandler"></a>MessageHandler
-**MessageHandler** öğesinin ikinci parametresi, tarafından tanımlanan işlevi adı `MESSAGE_HANDLER` makro ileti eşlemesi içinde.  
+`MessageHandler` ikinci parametresi, ileti eşlemesi MESSAGE_HANDLER makro ile tanımlanan işlev adıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,26 +40,26 @@ ms.locfileid: "32356373"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `uMsg`  
+ *uMsg*  
  İletiyi belirtir.  
   
- `wParam`  
- Ek ileti özgü bilgiler.  
+ *wParam*  
+ İletiye özgü ek bilgiler.  
   
- `lParam`  
- Ek ileti özgü bilgiler.  
+ *lParam*  
+ İletiye özgü ek bilgiler.  
   
- `bHandled`  
- İleti eşleme kümeleri `bHandled` için **TRUE** önce `MessageHandler` olarak adlandırılır. Varsa `MessageHandler` tam ileti işlemiyor ayarlamanız gerekir `bHandled` için **FALSE** ileti gereken başka bir işleme belirtmek için.  
+ *bHandled*  
+ İleti eşleme kümeleri *bHandled* önce true `MessageHandler` çağrılır. Varsa `MessageHandler` tam iletiyi işlemez ayarlamanız gerekir *bHandled* ihtiyaç daha fazla işleme belirtmek için false.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İleti işleme sonucu. başarılı olursa 0.  
+ İleti işleme sonucu. başarılıysa 0.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu ileti işleyicisi bir ileti eşlemesi kullanarak bir örnek için bkz: [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler).  
+ Bu ileti işleyicisi bir ileti eşlemede kullanma örneği için bkz: [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir pencere uygulama](../atl/implementing-a-window.md)   
+ [Pencere uygulama](../atl/implementing-a-window.md)   
  [İleti eşlemeleri](../atl/message-maps-atl.md)   
  [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
 

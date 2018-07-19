@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d335c684ab46846e9d3c49ef45522cf7288d916a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e341b15baa54b57148582c92beb9d231da8c96bb
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861870"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954577"
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 
-Kapsayıcı Şablon sınıfı tanımlayan `basic_string` ve çeşitli destekleyici şablonları.
+Kapsayıcı Şablon sınıfı tanımlar `basic_string` ve çeşitli destek şablonları.
 
 Hakkında daha fazla bilgi için `basic_string`, bkz: [basic_string sınıfı](../standard-library/basic-string-class.md)
 
@@ -38,75 +38,75 @@ Hakkında daha fazla bilgi için `basic_string`, bkz: [basic_string sınıfı](.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ dili ve C++ Standart Kitaplığı iki tür dizeleri destekler:
+C++ dili ve C++ Standart Kitaplığı dizeleri iki türünü destekler:
 
-- Null olarak sonlandırılan bir karakter dizileri genellikle C dize olarak adlandırılır.
+- Null ile sonlandırılmış karakter dizileri genellikle C dize olarak adlandırılır.
 
-- Tür Şablon sınıfı nesneleri `basic_string`, tüm işleyen `char`-bağımsız şablon ister.
+- Şablon sınıfı, türünden nesnelerin `basic_string`, tüm işleyen **char**-şablon bağımsız değişkenleri ister.
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[string](../standard-library/string-typedefs.md#string)|Şablon sınıfı uzmanlaşması açıklayan türü `basic_string` türündeki öğeler ile `char` olarak bir `string`.|
-|[wstring](../standard-library/string-typedefs.md#wstring)|Şablon sınıfı uzmanlaşması açıklayan türü `basic_string` türündeki öğeler ile `wchar_t` olarak bir `wstring`.|
-|[u16string](../standard-library/string-typedefs.md#u16string)|Şablon sınıfı uzmanlaşması açıklayan türü `basic_string` türü öğelere dayanmaktadır `char16_t`.|
-|[u32string](../standard-library/string-typedefs.md#u32string)|Şablon sınıfı uzmanlaşması açıklayan türü `basic_string` türü öğelere dayanmaktadır `char32_t`.|
+|[string](../standard-library/string-typedefs.md#string)|Şablon sınıfı bir alt uzmanlaşması tanımlayan tür `basic_string` öğelerini türle **char** olarak bir `string`.|
+|[wstring](../standard-library/string-typedefs.md#wstring)|Şablon sınıfı bir alt uzmanlaşması tanımlayan tür `basic_string` öğelerini türle **wchar_t** olarak bir `wstring`.|
+|[u16string](../standard-library/string-typedefs.md#u16string)|Şablon sınıfı bir alt uzmanlaşması tanımlayan tür `basic_string` türünde öğeler `char16_t`.|
+|[u32string](../standard-library/string-typedefs.md#u32string)|Şablon sınıfı bir alt uzmanlaşması tanımlayan tür `basic_string` türünde öğeler `char32_t`.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator +](../standard-library/string-operators.md#op_add)|İki dize nesnelerini art arda ekler.|
-|[operator!=](../standard-library/string-operators.md#op_neq)|Dize nesnesi işlecinin sol tarafındaki sağ tarafında dize nesnesi eşit değilse, testleri.|
-|[operator==](../standard-library/string-operators.md#op_eq_eq)|Dize nesnesi sağ tarafında işlecinin sol tarafındaki dize nesnesi eşitse testleri.|
-|[operator <](../standard-library/string-operators.md#op_lt)|Dize nesnesi işlecinin sol tarafındaki çok kısa ise test sağ tarafında dize nesnesi.|
-|[operator < =](../standard-library/string-operators.md#op_lt_eq)|Dize işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında dize nesnesine eşit veya daha az olur.|
-|[operator <\<](../standard-library/string-operators.md#op_lt_lt)|Çıkış akışı bir dize ekler şablon işlevi.|
-|[operator >](../standard-library/string-operators.md#op_gt)|Dize nesnesi işlecinin sol tarafındaki dize nesnesine sağ tarafında büyükse testleri.|
-|[operator>=](../standard-library/string-operators.md#op_gt_eq)|Dize nesnesi işlecinin sol tarafındaki büyük veya ona eşit dize nesnesine sağ tarafında ise testleri.|
-|[İşleç >>](../standard-library/string-operators.md#op_gt_gt)|Giriş akışından bir dize ayıklar şablon işlevi.|
+|[operator +](../standard-library/string-operators.md#op_add)|İki dize nesnelerinin art arda ekler.|
+|[operator!=](../standard-library/string-operators.md#op_neq)|İşlecin sol tarafındaki dize nesnesine sağ tarafındaki dize nesnesine eşit olup olmadığını sınar.|
+|[operator==](../standard-library/string-operators.md#op_eq_eq)|İşlecin sol tarafındaki dize nesnesinin işlecin sağ tarafındaki dize nesnesine eşit olup olmadığını sınar.|
+|[işleç <](../standard-library/string-operators.md#op_lt)|Dize nesnesinin işlecin sol tarafındaki küçüktür için olup olmadığını sınar işlecin sağ tarafındaki dize nesnesi.|
+|[operator < =](../standard-library/string-operators.md#op_lt_eq)|Dize nesnesi işlecinin sol tarafında küçük olup olmadığını sınar veya dize nesnesine eşit işlecin sağ tarafındaki.|
+|[işleç <\<](../standard-library/string-operators.md#op_lt_lt)|Bir dize ekler çıkış akışına bir şablon işlevi.|
+|[operator >](../standard-library/string-operators.md#op_gt)|İşlecin sol tarafındaki dize nesnesi dize nesnesine sağ tarafındaki büyük olup olmadığını sınar.|
+|[operator>=](../standard-library/string-operators.md#op_gt_eq)|İşlecin sol tarafındaki dize nesnesinin değerinden büyük veya işlecin sağ tarafındaki dize nesnesine eşit olup olmadığını sınar.|
+|[İşleç >>](../standard-library/string-operators.md#op_gt_gt)|Bir dize girdi akışından ayıklar şablon işlevi.|
 
 ### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri
 
 |||
 |-|-|
-|[Değiştirme](../standard-library/string-functions.md#swap)|İki dizeyi karakter dizilerine değiş tokuş eder.|
-|[stod](../standard-library/string-functions.md#stod)|Bir karakter dizisi dönüştüren bir `double.`|
-|[stof](../standard-library/string-functions.md#stof)|Bir karakter dizisi dönüştüren bir `float`.|
-|[stoi](../standard-library/string-functions.md#stoi)|Bir karakter dizisi bir tamsayıya dönüştürür.|
-|[stold](../standard-library/string-functions.md#stold)|Bir karakter dizisi dönüştüren bir `long double`.|
-|[stoll](../standard-library/string-functions.md#stoll)|Bir karakter dizisi dönüştüren bir `long long`.|
-|[stoul](../standard-library/string-functions.md#stoul)|Bir karakter dizisi dönüştüren bir `unsigned long`.|
-|[stoull](../standard-library/string-functions.md#stoull)|Bir karakter dizisi dönüştüren bir `unsigned long long`.|
-|[to_string](../standard-library/string-functions.md#to_string)|Bir değerine dönüştürür bir `string`.|
-|[to_wstring](../standard-library/string-functions.md#to_wstring)|Bir geniş bir değeri dönüştürür `string`.|
+|[değiştirme](../standard-library/string-functions.md#swap)|İki dizenin karakter dizileri birbiriyle değiştirir.|
+|[stod](../standard-library/string-functions.md#stod)|Bir karakter dizisine dönüştürür bir **çift**.|
+|[stof](../standard-library/string-functions.md#stof)|Bir karakter dizisine dönüştürür bir **float**.|
+|[stoi](../standard-library/string-functions.md#stoi)|Bir karakter dizisine bir tamsayıya dönüştürür.|
+|[stold](../standard-library/string-functions.md#stold)|Bir karakter dizisine dönüştürür bir **uzun çift**.|
+|[stoll](../standard-library/string-functions.md#stoll)|Bir karakter dizisine dönüştürür bir **uzun uzun**.|
+|[stoul](../standard-library/string-functions.md#stoul)|Bir karakter dizisine dönüştürür bir **işaretsiz uzun**.|
+|[stoull](../standard-library/string-functions.md#stoull)|Bir karakter dizisine dönüştürür bir **işaretsiz long long**.|
+|[to_string](../standard-library/string-functions.md#to_string)|Bir değere dönüştürür bir `string`.|
+|[to_wstring](../standard-library/string-functions.md#to_wstring)|Bir değer için bir geniş dönüştürür `string`.|
 
 ### <a name="functions"></a>İşlevler
 
 |İşlev|Açıklama|
 |-|-|
-|[getline şablonu](../standard-library/string-functions.md#getline)|Dizeleri giriş akışından satır ayıklayın.|
+|[getline şablonu](../standard-library/string-functions.md#getline)|Dizeleri, giriş akışından satır ayıklayın.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_string Sınıfı](../standard-library/basic-string-class.md)|Rasgele karakter benzeri nesneler dizisi depolayabilir açıklayan bir şablon sınıfı nesneleri.|
-|[char_traits Yapısı](../standard-library/char-traits-struct.md)|Bir tür CharType karakteri ile ilişkili öznitelikleri açıklanmaktadır bir şablon sınıfı|
+|[basic_string Sınıfı](../standard-library/basic-string-class.md)|Tanımlayan bir şablon sınıfı, rastgele bir karakter benzeri nesnelerinin bir dizisi depolayabilirsiniz nesneleri.|
+|[char_traits Yapısı](../standard-library/char-traits-struct.md)|CharType türünde bir karakteri ile ilişkili özniteliklerini tanımlayan bir şablon sınıfı|
 
 ### <a name="specializations"></a>Uzmanlıklar
 
 |||
 |-|-|
-|[char_traits\<char > yapısı](../standard-library/char-traits-char-struct.md)|Şablon yapısı uzmanlığı olan yapı `char_traits` \<CharType > türünde bir öğe için `char`.|
-|[char_traits<wchar_t> Yapısı](../standard-library/char-traits-wchar-t-struct.md)|Şablon yapısı uzmanlığı olan yapı `char_traits` \<CharType > türünde bir öğe için `wchar_t`.|
-|[char_traits<char16_t> Yapısı](../standard-library/char-traits-char16-t-struct.md)|Şablon yapısı uzmanlığı olan yapı `char_traits` \<CharType > türünde bir öğe için `char16_t`.|
-|[char_traits<char32_t> Yapısı](../standard-library/char-traits-char32-t-struct.md)|Şablon yapısı uzmanlığı olan yapı `char_traits` \<CharType > türünde bir öğe için `char32_t`.|
+|[char_traits\<char > yapısı](../standard-library/char-traits-char-struct.md)|Şablon yapı özelleştirmesi olan yapı `char_traits` \<CharType > türünde bir öğe için `char`.|
+|[char_traits<wchar_t> Yapısı](../standard-library/char-traits-wchar-t-struct.md)|Şablon yapı özelleştirmesi olan yapı `char_traits` \<CharType > türünde bir öğe için `wchar_t`.|
+|[char_traits<char16_t> Yapısı](../standard-library/char-traits-char16-t-struct.md)|Şablon yapı özelleştirmesi olan yapı `char_traits` \<CharType > türünde bir öğe için `char16_t`.|
+|[char_traits<char32_t> Yapısı](../standard-library/char-traits-char32-t-struct.md)|Şablon yapı özelleştirmesi olan yapı `char_traits` \<CharType > türünde bir öğe için `char32_t`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-- **Başlık:** \<dize >
+- **Başlık:** \<dizesi >
 
 - **Namespace:** std
 

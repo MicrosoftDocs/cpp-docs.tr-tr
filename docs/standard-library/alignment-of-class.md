@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7d9ba59d7f1539f690d7b04c70139c263490368
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8b679d4c8807a19c977cd7e59481dc1d78e67ba1
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850697"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956524"
 ---
 # <a name="alignmentof-class"></a>alignment_of Sınıfı
 
-Belirtilen tür hizalamasını alır. Bu yapı cinsinden uygulanan [alignof](../cpp/alignof-and-alignas-cpp.md). Kullanım `alignof` doğrudan yalnızca gerektiğinde bir hizalama değeri sorgulanamıyor. Etiket gönderme yaparken örneğin bir tamsayı sabiti gerektiğinde alignment_of kullanın.
+Belirtilen tür hizalamasını alır. Bu struct açısından uygulanan [alignof](../cpp/alignof-and-alignas-cpp.md). Kullanım `alignof` doğrudan yalnızca gerektiğinde bir hizalama değeri sorgulanamıyor. Etiket dağıtım yaparken örneği için bir tamsayı sabiti gerektiğinde alignment_of kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct alignment_of;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü bir sorgu değerini tutan türü hizalamasını `Ty`.
+Türü bir sorgu değerini tutan türü hizalamasını *Ty*.
 
 ## <a name="requirements"></a>Gereksinimler
 

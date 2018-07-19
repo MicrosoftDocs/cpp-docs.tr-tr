@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fac4528c976e99a77ceec8bc170323846a0e3a28
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7c146862a18d4292dd6c375dda83063bbcf4dee4
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858922"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954361"
 ---
 # <a name="less-struct"></a>less Yapısı
 
-Daha az gerçekleştirir ikili bir koşulu-işlemine kıyasla ( `operator<`) bağımsız değişkenlerini üzerinde.
+Daha az gerçekleştiren bir ikili koşula-işlemi daha (`operator<`) üzerinde bağımsız değişkenleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,19 +49,19 @@ struct less<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Destekleyen herhangi bir türü bir `operator<` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator<` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Daha az sol işleneni-işlemi daha. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* sol işleneni, daha az-işlemi daha. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Sağ işleneni küçüktür,-işlemi daha. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* küçüktür sağ işleneninin-işlemi daha. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left < Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator<`.
+Sonucu `Left < Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator<`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkili karşılaştırma `less` <  `Type`> katı bir zayıf türü öğesi değerleri kümesi sıralama sağlar `Type` eşdeğer sınıfları içinde bu tür için standart matematiksel gereksinimleri karşılıyor ve yalnızca, Bu nedenle sipariş. Tüm öğeleri farklı değerleri birbirine göre sıralanmış, herhangi bir işaretçi türü için özelleştirmeleri toplam, öğelerin sıralaması verim.
+İkili koşul `less` <  `Type`> katı bir zayıf türünün öğe değerlerini bir dizi sıralama sağlar *türü* denk sınıfların içinde bu tür standart matematiksel karşılar ve yalnızca, Bu nedenle sıralanan gereksinimleri. Farklı değerlerin tüm öğelerin birbirine göre sıralanır, toplam, öğelerin sıralaması uzmanlıkları herhangi bir işaretçi türü için yield.
 
 ## <a name="example"></a>Örnek
 
@@ -117,7 +117,7 @@ Sorted vector v1 = (41 6334 11478 15724 18467 19169 26500)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

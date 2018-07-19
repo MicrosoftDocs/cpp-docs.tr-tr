@@ -1,5 +1,5 @@
 ---
-title: '&lt;yığın&gt; işleçleri | Microsoft Docs'
+title: '&lt;yığın&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,23 +20,23 @@ helpviewer_keywords:
 - std::operator&lt; (stack)
 - std::operator&lt;= (stack)
 - std::operator== (stack)
-ms.openlocfilehash: 5d3bafd2d3112a2f4155f55a554b6c9c2e351b1f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5c4e2f6b0b86e7b13c917eaf50d7f7dd0a55d9d6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861652"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955767"
 ---
 # <a name="ltstackgt-operators"></a>&lt;yığın&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Stack nesnesi işlecinin sol tarafındaki yığın eşit değilse testleri sağ tarafta nesne.
+İşlecin sol tarafındaki yığın nesnesi yığın eşit olup olmadığını sınar sağ tarafta nesne.
 
 ```cpp
 bool operator!=(const stack <Type, Container>& left, const stack <Type, Container>& right,);
@@ -44,17 +44,17 @@ bool operator!=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **yığını**.
+*Sol* türünde bir nesne `stack`.
 
-`right` Türünde bir nesne **yığını**.
+*doğru* türünde bir nesne `stack`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yığınları veya yığınları eşit; değilse **false** yığınları veya yığınları eşit olması durumunda.
+**doğru** yığını veya yığınları eşit; değilse, **false** yığını veya yığınları eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığınları nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki yığınları aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Yığın nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki yığınları eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -97,9 +97,9 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Stack nesnesi işlecinin sol tarafındaki sağ tarafında stack nesnesi küçükse testleri.
+İşlecin sol tarafındaki yığın nesnesinin yığın nesnesinin işlecin sağ tarafındaki küçüktür olup olmadığını sınar.
 
 ```cpp
 bool operator<(const stack <Type, Container>& left, const stack <Type, Container>& right);
@@ -107,17 +107,17 @@ bool operator<(const stack <Type, Container>& left, const stack <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **yığını**.
+*Sol* türünde bir nesne `stack`.
 
-`right` Türünde bir nesne **yığını**.
+*doğru* türünde bir nesne `stack`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki yığını ve değil işlecinin sağ tarafında yığını eşit; Aksi takdirde düşükse **false**.
+**doğru** işlecin sol tarafındaki yığında daha ve değil işlecin sağ tarafındaki yığında eşittir; Aksi takdirde küçükse **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Stack nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Küçüktür-iki stack nesneleri arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını dayalı daha.
+Stack nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Daha az-iki yığın nesneleri arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
 
 ### <a name="example"></a>Örnek
 
@@ -179,9 +179,9 @@ The stack s1 is greater than or equal to the stack s3.
 The stack s1 from the top down is: ( 8 6 4 2 ).
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Yığın işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında stack nesnesi eşit veya daha az olur.
+İşlecinin sol tarafında yığın nesnesi küçük olup olmadığını sınar veya yığın nesneye eşitse işlecin sağ tarafındaki.
 
 ```cpp
 bool operator<=(const stack <Type, Container>& left, const stack <Type, Container>& right);
@@ -189,17 +189,17 @@ bool operator<=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **yığını**.
+*Sol* türünde bir nesne `stack`.
 
-`right` Türünde bir nesne **yığını**.
+*doğru* türünde bir nesne `stack`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki yığın veya yığın işlecinin sağ tarafında eşit; Aksi takdirde düşükse **false**.
+**doğru** işlecin sol tarafındaki yığında daha veya işlecin sağ tarafındaki yığında eşittir; Aksi takdirde küçükse **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Stack nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki yığını nesneler arasındaki küçük veya eşittir ilişkiye ilk çiftlerini eşit olmayan bir karşılaştırmasını temel alır.
+Stack nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Küçük veya eşittir ilişki için iki yığın nesneleri arasında eşit olmayan öğelerin ilk çiftinin bir karşılaştırmayı temel alır.
 
 ### <a name="example"></a>Örnek
 
@@ -244,9 +244,9 @@ The stack s1 is greater than the stack s2.
 The stack s1 is less than or equal to the stack s3.
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Stack nesnesi işlecinin sol tarafındaki yığın eşitse testleri sağ tarafta nesne.
+İşlecin sol tarafındaki yığın nesnesinin yığın nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const stack <Type, Container>& left, const stack <Type, Container>& right);
@@ -254,17 +254,17 @@ bool operator==(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **yığını**.
+*Sol* türünde bir nesne `stack`.
 
-`right` Türünde bir nesne **yığını**.
+*doğru* türünde bir nesne `stack`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yığınları veya yığınları; eşitse **false** yığınları veya yığınları eşit değilse.
+**doğru** yığını veya yığınları; eşitse **false** yığını veya yığınları eşit değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Stack nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki yığınları aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Stack nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki yığınları eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -307,9 +307,9 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
-Testleri işlecinin sol tarafındaki stack nesnesi sağ tarafında stack nesnesi değerinden daha büyük.
+İşlecin sol tarafındaki yığın nesnesinin yığın nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
 ```cpp
 bool operator>(const stack <Type, Container>& left, const stack <Type, Container>& right);
@@ -317,17 +317,17 @@ bool operator>(const stack <Type, Container>& left, const stack <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **yığını**.
+*Sol* türünde bir nesne `stack`.
 
-`right` Türünde bir nesne **yığını**.
+*doğru* türünde bir nesne `stack`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki yığını eşitse büyük ve değil işlecinin sağ tarafında yığınına aksi **false**.
+**doğru** işlecin sol tarafındaki yığında büyüktür ve değil işlecin sağ tarafındaki yığında eşittir; tersi durumda ise **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Stack nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Büyük-iki stack nesneleri arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını dayalı daha.
+Stack nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyük-iki yığın nesneleri arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
 
 ### <a name="example"></a>Örnek
 
@@ -374,9 +374,9 @@ The stack s1 is not greater than the stack s2.
 The stack s1 is greater than the stack s3.
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Yığın işlecinin sol tarafındaki sağ tarafında yığını nesnesine eşit veya daha büyük bir nesneyse testleri.
+İşlecin sol tarafındaki yığın nesnesinin değerinden büyük veya eşittir yığın nesnesinin işlecin sağ tarafındaki olup olmadığını sınar.
 
 ```cpp
 bool operator>=(const stack <Type, Container>& left, const stack <Type, Container>& right);
@@ -384,17 +384,17 @@ bool operator>=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **yığını**.
+*Sol* türünde bir nesne `stack`.
 
-`right` Türünde bir nesne **yığını**.
+*doğru* türünde bir nesne `stack`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki yığın; işlecinin sağ tarafında yığını kesinlikle değerinden ise, aksi takdirde **false**.
+**doğru** işlecin sol tarafındaki yığında; işlecin sağ tarafındaki yığında değerinden kesinlikle küçük ise, aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Stack nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Büyük veya ona eşit iki stack nesneleri arasındaki ilişki için ilk çiftlerini eşit olmayan bir karşılaştırmasını temel alır.
+Stack nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyüktür veya eşittir iki yığın nesneleri arasındaki ilişki için ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
 
 ### <a name="example"></a>Örnek
 

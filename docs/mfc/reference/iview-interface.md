@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a06243af3de7a2f4b32aa9a9ae492dfe3b2d3b64
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: acf1ba02e9bbf6afd14e41be7dda406d257cb681
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370965"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339767"
 ---
 # <a name="iview-interface"></a>IView arabirimi
-Birkaç yöntemlerini uygular, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) için yönetilen bir denetimin görünüm bildirimleri göndermek için kullanır.  
+Çeşitli yöntemler uygular, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) yönetilen bir denetim için görünüm bildirimlerini göndermek için kullanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,43 +44,43 @@ interface class IView
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IView::OnActivateView](#onactivateview)|Bir görünüm etkinleştirilmiş veya devre dışı olduğunda MFC tarafından çağrılır.|  
-|[IView::OnInitialUpdate](#oninitialupdate)|Görünüm ilk belgeye eklendikten sonra ancak görünümü başlangıçta görüntülenmeden önce çerçevesi tarafından çağrılır.|  
-|[IView::OnUpdate](#onupdate)|Görünümün belge değiştirildikten sonra MFC tarafından çağrılır; Bu işlev görünümünü değişiklikleri yansıtacak şekilde güncelleştirmek görünümü sağlar.|  
+|[IView::OnActivateView](#onactivateview)|Bir görünümü etkinleştirmek veya MFC tarafından çağrılır.|  
+|[IView::OnInitialUpdate](#oninitialupdate)|Görünüm ilk belgeye eklendikten sonra ancak görünüm başlangıçta görüntülenmeden önce framework tarafından çağırılır.|  
+|[IView::OnUpdate](#onupdate)|Görünümün belge değiştirildikten sonra MFC tarafından çağrılır; Bu işlev görünümünü değişiklikleri yansıtacak şekilde güncelleştirilecek görünümü sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IView` birkaç yöntemlerini uygular, `CWinFormsView` yönetilen bir barındırılan denetime genel görünümü bildirimleri kullanır. Bunlar [OnInitialUpdate](#oninitialupdate), [in](#onupdate) ve [OnActivateView](#onactivateview).  
+ `IView` çeşitli yöntemler uygular, `CWinFormsView` barındırılan ve yönetilen bir denetime genel görünümü bildirimleri iletecek şekilde kullanır. Bunlar [OnInitialUpdate](#oninitialupdate), [OnUpdate](#onupdate) ve [OnActivateView](#onactivateview).  
   
- `IView` benzer [CView](../../mfc/reference/cview-class.md), ancak yalnızca yönetilen görünümler ve denetimleri ile kullanılır.  
+ `IView` benzer [CView](../../mfc/reference/cview-class.md), ancak yalnızca yönetilen görünümleri ve denetimleri ile kullanılır.  
   
- Windows Forms kullanma hakkında daha fazla bilgi için bkz: [MFC içinde Windows formu kullanıcı denetimi kullanarak](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
+ Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
   
 
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll tanımlanan)  
+ Başlık: afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)  
 
 ## <a name="onactivateview"></a> IView::OnActivateView  
-Bir görünüm etkinleştirilmiş veya devre dışı olduğunda MFC tarafından çağrılır.
+Bir görünümü etkinleştirmek veya MFC tarafından çağrılır.
 ```
 void OnActivateView(bool activate);
 ```
 ## <a name="parameters"></a>Parametreler
-`activate`  
+*Etkinleştirme*  
 Görünüm belirtir etkin veya devre dışı.  
 
 ## <a name="oninitialupdate"></a> IView::OnInitialUpdate
-Görünüm ilk belgeye eklendikten sonra ancak görünümü başlangıçta görüntülenmeden önce çerçevesi tarafından çağrılır.
+Görünüm ilk belgeye eklendikten sonra ancak görünüm başlangıçta görüntülenmeden önce framework tarafından çağırılır.
 ```
 void OnInitialUpdate();
 ```
 
 ## <a name="onupdate"></a> IView::OnUpdate 
-MFC tarafından görünümün belge değiştirildikten sonra çağrılır.  
+MFC tarafından görünümün belge değiştirildikten sonra çağırılır.  
 ```
 void OnUpdate();
 ```
 ## <a name="remarks"></a>Açıklamalar  
-Bu işlev görünümünü değişiklikleri yansıtacak şekilde güncelleştirmek görünümü sağlar.
+Bu işlev görünümünü değişiklikleri yansıtacak şekilde güncelleştirilecek görünümü sağlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md)   

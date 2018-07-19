@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e210af223ffe6d3b8e0766adaaf539f0bb97f73
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 63b2c11b7a5a8d48e3fe068807b641489c6aa323
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844373"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957366"
 ---
 # <a name="isfundamental-class"></a>is_fundamental Sınıfı
 
-Test türü, void veya aritmetik ise.
+Void veya aritmetik türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_fundamental;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` bir temel türü diğer bir deyişle, olup `void`, bir kayan bir tam sayı türü noktası türü, veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimidir.
+Karşılaştırmasının bir örneği true tutan türü *Ty* diğer bir deyişle, bir temel türü olan **void**, kayan bir integral türü işaret türü veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimi.
 
 ## <a name="example"></a>Örnek
 

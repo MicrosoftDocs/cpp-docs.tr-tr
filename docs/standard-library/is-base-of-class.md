@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed73314d5cef6849c84a8e1019e1fd2d6c8ead86
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 43f4aec5796db6a277b6bfb1edecdcd2e7f5c455
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845394"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954623"
 ---
 # <a name="isbaseof-class"></a>is_base_of Sınıfı
 
-Tür başka bir temel olup olmadığını sınar.
+Başka birine temel bir tür olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,13 +37,13 @@ struct is_base_of;
 
 ### <a name="parameters"></a>Parametreler
 
-`Base` Sınamak için temel sınıf.
+*Temel* test etmek için temel sınıf.
 
-`Derived` Sınamak için türetilen tür.
+*Türetilmiş* sınamak için türetilmiş bir tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Base` bir taban sınıf türü `Derived`, aksi takdirde false tutar.
+Karşılaştırmasının bir örneği true tutan türü *temel* bir temel sınıf türünün *türetilmiş*, aksi takdirde false tutar.
 
 ## <a name="example"></a>Örnek
 

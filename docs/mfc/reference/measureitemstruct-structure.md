@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff015fdaf9e37d919459cadc8e4c35c4b795b3f8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bcf4bd41d00f6999b4158f0884c39e7a16d10bcc
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372276"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336965"
 ---
 # <a name="measureitemstruct-structure"></a>MEASUREITEMSTRUCT Yapısı
-`MEASUREITEMSTRUCT` Yapısına sahip tarafından çizilmiş bir denetim veya menü öğesini boyutlarının Windows bildirir.  
+`MEASUREITEMSTRUCT` Yapısı Windows özelleştirilmiş olarak çizilen bir denetimi ya da menü öğesi boyutlarının bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,29 +40,29 @@ typedef struct tagMEASUREITEMSTRUCT {
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `CtlType`  
- Denetim türü içerir. Denetim türleri için değerleri aşağıdaki gibidir:  
+ *CtlType*  
+ Denetim türünü içerir. Denetim tipleri için değerler aşağıdaki gibidir:  
   
-- **ODT_COMBOBOX** sahip çizim birleşik giriş kutusu  
+- ODT_COMBOBOX özelleştirilmiş çizimli birleşik giriş kutusu  
   
-- **ODT_LISTBOX** sahip çizim liste kutusu  
+- ODT_LISTBOX sahip çizim liste kutusu  
   
-- **ODT_MENU** sahibi Çiz Menüsü  
+- ODT_MENU sahip çizim menüsü  
   
- `CtlID`  
- Birleşik giriş kutusu, liste kutusu veya düğmesi denetim Kimliğini içerir. Bu üye için bir menü kullanılmaz.  
+ *CtlID*  
+ Birleşik giriş kutusu, liste kutusu ve düğme denetim Kimliğini içerir. Bu üye için bir menü kullanılmaz.  
   
- `itemID`  
- Bir menüyü menü öğesi kimliği veya değişken yükseklikli birleşik giriş kutusu veya liste kutusu liste kutusu öğesi Kimliğini içerir. Bu üye için sabit yükseklik birleşik giriş kutusu veya liste kutusu ya da bir düğme için kullanılmaz.  
+ *öğe kimliği*  
+ Bir menü menü öğesi kimliği veya liste kutusu ya da değişken birleşik giriş kutusu liste kutusu öğesi kimliği içerir. Bu üye için sabit yükseklik birleşik giriş kutusu ya da liste kutusu ya da bir düğme için kullanılmaz.  
   
  *itemWidth*  
- Menü öğesi genişliğini belirtir. Gelen iletiyi döndürmeden önce sahip çizim menü öğesi sahibi bu üye doldurmanız gerekir.  
+ Bir menü öğesinin genişliğini belirtir. Sahip çizim menüsü öğenin sahibi, ileti döndürülmeden önce bu üye doldurmanız gerekir.  
   
  *itemHeight*  
- Liste kutusu veya menü ayrı bir öğe yüksekliğini belirtir. İleti, sahibi tarafından çizilen birleşik giriş kutusu sahibi döndürmeden önce liste kutusu veya menü öğesi bu üye doldurmanız gerekir. Liste kutusu öğesi en fazla yüksekliği 255'tir.  
+ Liste kutusu veya menü ayrı bir öğe yüksekliğini belirtir. İleti, özelleştirilmiş çizimli birleşik giriş kutusu sahibi döndürmeden önce liste kutusu veya menü öğesi bu üye doldurmanız gerekir. Bir liste kutusu öğesinin yükseklik en fazla 255'tir.  
   
- `itemData`  
- Birleşik giriş kutusu veya liste kutusu için bu üye için liste kutusu aşağıdakilerden biri tarafından geçirilen değer içeriyor:  
+ *ItemData*  
+ Birleşik giriş kutusu veya liste kutusunda, bu üye liste kutusuna aşağıdakilerden biri tarafından geçirilen değeri içerir:  
   
 - [CComboBox::AddString](../../mfc/reference/ccombobox-class.md#addstring)  
   
@@ -72,7 +72,7 @@ typedef struct tagMEASUREITEMSTRUCT {
   
 - [CListBox::InsertString](../../mfc/reference/clistbox-class.md#insertstring)  
   
- Bir menüyü bu üye menüsüne aşağıdakilerden biri tarafından geçirilen değer içeriyor:  
+ Bir menü için bu üye menüsüne aşağıdakilerden biri tarafından geçirilen değeri içerir:  
   
 - [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu)  
   
@@ -80,12 +80,12 @@ typedef struct tagMEASUREITEMSTRUCT {
   
 - [CMenu::ModifyMenu](../../mfc/reference/cmenu-class.md#modifymenu)  
   
- Bu, kullanıcı etkileşimi denetimi ile düzgün şekilde Windows sağlar. Uygun üyeleri doldurmak için hata `MEASUREITEMSTRUCT` yapısı, denetimin yanlış işlemi neden olur.  
+ Bu, kullanıcı etkileşimi denetimi ile doğru şekilde işlemek Windows sağlar. Uygun üyeleri doldurmak için hata `MEASUREITEMSTRUCT` yapısı, denetimin yanlış işlemi neden olur.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winuser.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem)
 

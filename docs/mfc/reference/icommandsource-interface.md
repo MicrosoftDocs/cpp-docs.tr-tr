@@ -27,15 +27,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ff57ec9deea4ff8b39e572d720ad7e0fdaa15dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 375d4135e4042abbd6aee6fc547640d78a33ce0d
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373921"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37335779"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource arabirimi
-Bir kullanıcı denetimi için bir komut kaynak nesneden gönderilen komutları yönetir.  
+Bir kullanıcı denetimine komut kaynak nesneden gönderilen komutları yönetir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,29 +49,29 @@ interface class ICommandSource
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ICommandSource::AddCommandHandler](#addcommandhandler)|Bir komut işleyici için bir komut kaynak nesnesi ekler.|  
-|[ICommandSource::AddCommandRangeHandler](#addcommandrangehandler)|Komut işleyicileri bir grup için bir komut kaynak nesnesi ekler.|  
-|[ICommandSource::AddCommandRangeUIHandler](#addcommandrangeuihandler)|Kullanıcı arabirimi komutu ileti işleyicileri bir grup için bir komut kaynak nesnesi ekler.|  
-|[ICommandSource::AddCommandUIHandler](#addcommandrangeuihandler)|Bir kullanıcı arabirimi komutu ileti işleyicisi için bir komut kaynak nesnesi ekler.|  
-|[ICommandSource::PostCommand](#postcommand)|Bu işlenmeyi bekleyen olmadan bir ileti gönderir.|  
-|[ICommandSource::RemoveCommandHandler](#removecommandhandler)|Bir komut işleyici komutu kaynak nesnesinden kaldırır.|  
-|[ICommandSource::RemoveCommandRangeHandler](#removecommandrangehandler)|Komut işleyicileri bir grup komutu kaynak nesnesinden kaldırır.|  
-|[ICommandSource::RemoveCommandRangeUIHandler](#removecommandrangeuihandler)|Bir grup kullanıcı arabirimi komutu ileti işleyicileri komutu kaynak nesnesinden kaldırır.|  
-|[ICommandSource::RemoveCommandUIHandler](#removecommandrangeuihandler)|Bir kullanıcı arabirimi komutu ileti işleyicisi komutu kaynak nesnesinden kaldırır.|  
+|[ICommandSource::AddCommandHandler](#addcommandhandler)|Bir komut işleyici, bir komut kaynak nesnesine ekler.|  
+|[ICommandSource::AddCommandRangeHandler](#addcommandrangehandler)|Komut işleyicileri grubu, bir komut kaynak nesnesine ekler.|  
+|[ICommandSource::AddCommandRangeUIHandler](#addcommandrangeuihandler)|Bir grup kullanıcı arabirimi komut ileti işleyicileri, bir komut kaynak nesnesine ekler.|  
+|[ICommandSource::AddCommandUIHandler](#addcommandrangeuihandler)|Bir kullanıcı arabirimi komut ileti işleyicisi komut kaynak nesnesine ekler.|  
+|[ICommandSource::PostCommand](#postcommand)|İşlenmesi için beklemenize gerek kalmadan bir ileti gönderir.|  
+|[ICommandSource::RemoveCommandHandler](#removecommandhandler)|Bir komut işleyici, bir komut kaynak nesneden kaldırır.|  
+|[ICommandSource::RemoveCommandRangeHandler](#removecommandrangehandler)|Bir grup komut işleyicileri komut kaynak nesnesinden kaldırır.|  
+|[ICommandSource::RemoveCommandRangeUIHandler](#removecommandrangeuihandler)|Bir grup kullanıcı arabirimi komut ileti işleyicileri komut kaynak nesnesinden kaldırır.|  
+|[ICommandSource::RemoveCommandUIHandler](#removecommandrangeuihandler)|Bir kullanıcı arabirimi komut ileti işleyicisi komut kaynak nesnesinden kaldırır.|  
 |[ICommandSource::SendCommand](#sendcommand)|Bir ileti gönderir ve döndürmeden önce işlenecek bekler.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- MFC görünümü, bir kullanıcı denetimi barındırdığınızda [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md) yollar komutlar ve güncelleştirme komut MFC komutlarını (örneğin, çerçeve menü öğeleri ve araç çubuğu düğmeleri) işlemeye izin vermek için kullanıcı denetimi UI iletileri. Uygulama tarafından [ICommandTarget arabirimi](../../mfc/reference/icommandtarget-interface.md), başvuru kullanıcı denetime `ICommandSource` nesnesi.  
+ MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi için. Uygulayarak [ICommandTarget arabirimi](../../mfc/reference/icommandtarget-interface.md), kullanıcı denetimine bir başvuru size `ICommandSource` nesne.  
   
- Bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme eklemek](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.  
+ Bkz [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.  
   
- Windows Forms kullanma hakkında daha fazla bilgi için bkz: [MFC içinde Windows formu kullanıcı denetimi kullanarak](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
+ Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll tanımlanan)  
+ **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)  
   
 ## <a name="addcommandhandler"></a>  ICommandSource::AddCommandHandler
-Bir komut işleyici için bir komut kaynak nesnesi ekler.
+Bir komut işleyici, bir komut kaynak nesnesine ekler.
 ```
 void AddCommandHandler(
     unsigned int cmdID,
@@ -79,18 +79,18 @@ void AddCommandHandler(
 ```
 
 ### <a name="parameters"></a>Parametreler  
-`cmdID`  
+*cmdID*  
 Komut kimliği.  
-`cmdHandler`  
-Komut işleyici yöntemi için bir tanıtıcı.
+*cmdHandler*  
+Komut işleyicisi yöntemi için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem, komut işleyici cmdHandler komut kaynak nesnesi ekler ve cmdID için işleyici eşlemeleri.
-Bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme eklemek](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) AddCommandHandler kullanma örneği.
+Bu yöntem, komut işleyicisi cmdHandler komut kaynak nesnesine ekler ve işleyici için cmdID eşler.
+Bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) AddCommandHandler kullanma örneği için.
 
 ## <a name="addcommandrangehandler"></a> ICommandSource::AddCommandRangeHandler
 
-Komut işleyicileri bir grup için bir komut kaynak nesnesi ekler.
+Komut işleyicileri grubu, bir komut kaynak nesnesine ekler.
 ```
 void AddCommandRangeHandler(
     unsigned int cmdIDMin,
@@ -98,17 +98,17 @@ void AddCommandRangeHandler(
     CommandHandler^ cmdHandler);
 ```
 ### <a name="parameters"></a>Parametreler  
-`cmdIDMin`  
+*cmdIDMin*  
 Komut Kimliği aralığın başlangıç dizini.
-`cmdIDMax`  
+*cmdIDMax*  
 Komut Kimliği aralığı bitiş dizini.
-`cmdHandler`  
-Komutları eşlenmiş ileti işleyicisi yöntemi için bir tanıtıcı.
+*cmdHandler*  
+Komutlar eşlenmiş ileti işleyicisi yöntemi için bir tanıtıcı.
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem için tek bir ileti işleyicisi komut kimlikleri bitişik bir dizi eşler ve komut kaynak nesnesi ekler. Bu, bir yöntemle ilgili düğmesi grubu işlemek için kullanılır.
+Bu yöntem, bir tek ileti işleyici komut kimlikleri bir aralıkta eşler ve komut kaynak nesnesine ekler. Bu, bir yöntemle ilgili düğmesi grubu işlemek için kullanılır.
 
 ## <a name="addcommandrangeuihandler"></a> ICommandSource::AddCommandRangeUIHandler
-Kullanıcı arabirimi komutu ileti işleyicileri bir grup için bir komut kaynak nesnesi ekler.
+Bir grup kullanıcı arabirimi komut ileti işleyicileri, bir komut kaynak nesnesine ekler.
 ```
 void AddCommandRangeUIHandler(
     unsigned int cmdIDMin, 
@@ -116,96 +116,96 @@ void AddCommandRangeUIHandler(
     CommandUIHandler^ cmdUIHandler);
 ```
 ### <a name="parameters"></a>Parametreler  
-`cmdIDMin`  
+*cmdIDMin*  
 Komut Kimliği aralığın başlangıç dizini.
-`cmdIDMax`  
+*cmdIDMax*  
 Komut Kimliği aralığı bitiş dizini.
-`cmdHandler`  
-Komutları eşlenmiş ileti işleyicisi yöntemi için bir tanıtıcı.
+*cmdHandler*  
+Komutlar eşlenmiş ileti işleyicisi yöntemi için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem için tek bir kullanıcı arabirimi komutu ileti işleyicisi komut kimlikleri bitişik bir dizi eşler ve komut kaynak nesnesi ekler. Bu, bir yöntemle ilgili düğmesi grubu işlemek için kullanılır.
+Bu yöntem, bir tek bir kullanıcı arabirimi komut ileti işleyicisi komut kimlikleri bir aralıkta eşler ve komut kaynak nesnesine ekler. Bu, bir yöntemle ilgili düğmesi grubu işlemek için kullanılır.
 
 ## <a name="addcommanduihandler"></a> ICommandSource::AddCommandUIHandler
-Bir kullanıcı arabirimi komutu ileti işleyicisi için bir komut kaynak nesnesi ekler.
+Bir kullanıcı arabirimi komut ileti işleyicisi komut kaynak nesnesine ekler.
 ```
 void AddCommandUIHandler(
     unsigned int cmdID, 
     CommandUIHandler^ cmdUIHandler);
 ```
 ### <a name="parameters"></a>Parametreler
-`cmdID`  
+*cmdID*  
 Komut kimliği.  
-`cmdUIHandler`  
-Kullanıcı arabirimi komutu ileti işleyicisi yöntemi için bir tanıtıcı.
+*cmdUIHandler*  
+Kullanıcı arabirimi komut ileti işleyicisi yöntemi için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem, kullanıcı arabirimi komutu ileti işleyicisi cmdHandler komut kaynak nesnesi ekler ve cmdID için işleyici eşlemeleri.
+Bu yöntem, kullanıcı arabirimi komut ileti işleyicisi cmdHandler komut kaynak nesnesine ekler ve işleyici için cmdID eşler.
 
 ## <a name="postcommand"></a> ICommandSource::PostCommand
-Bu işlenmeyi bekleyen olmadan bir ileti gönderir.
+İşlenmesi için beklemenize gerek kalmadan bir ileti gönderir.
 ```
 void PostCommand(unsigned int command);
 ```
 ### <a name="parameters"></a>Parametreler
-`command`  
-İletinin postalama komut kimliği.
+*Komutu*  
+Yayımlanacak ileti komut kimliği.
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem komutu tarafından belirtilen kimliği eşlenmiş iletisini zaman uyumsuz olarak gönderir. Pencere iletisi sıraya ileti yerleştirmek için CWnd::PostMessage çağırır ve iletiyi işlemek karşılık gelen pencerenin beklemeden döndürür.
+Bu yöntem, zaman uyumsuz olarak komutu tarafından belirtilen kimliği eşlenen bir ileti gönderir. Bu pencerenin ileti kuyrukta bir ileti yerleştirmek için CWnd::PostMessage çağıracak ve sonra iletiyi işlemek karşılık gelen penceresi için beklemenize gerek kalmadan.
 
 
 ## <a name="removecommandhandler"></a> ICommandSource::RemoveCommandHandler
-Bir komut işleyici komutu kaynak nesnesinden kaldırır.
+Bir komut işleyici, bir komut kaynak nesneden kaldırır.
 ```
 void RemoveCommandHandler(unsigned int cmdID);
 ```
 ### <a name="parameters"></a>Parametreler
-`cmdID`  
+*cmdID*  
 Komut kimliği.
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem için cmdID komutu kaynak nesneden eşlenen komut işleyici kaldırır.
+Bu yöntem komut kaynak nesneden cmdID için eşlenmiş komut işleyici kaldırır.
 
 
 ## <a name="removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler 
-Komut işleyicileri bir grup komutu kaynak nesnesinden kaldırır.
+Bir grup komut işleyicileri komut kaynak nesnesinden kaldırır.
 ```
 void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMin,
     unsigned int cmdIDMax);
 ```
 ### <a name="parameters"></a>Parametreler
-`cmdIDMin`  
+*cmdIDMin*  
 Komut Kimliği aralığın başlangıç dizini.
-`cmdIDMax`  
+*cmdIDMax*  
 Komut Kimliği aralığı bitiş dizini.
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem, bir grup için komut kimlikleri belirtilen komutu kaynak nesneden cmdIDMin ve cmdIDMax, tarafından eşlenen ileti işleyicileri kaldırır.
+Bu yöntem, bir grup için komut kimlikleri belirtilen komut kaynak nesneden cmdIDMax, cmdIDMin ile eşlenmiş ileti işleyicilerini kaldırır.
 
 ## <a name="removecommandrangeuihandler"></a> ICommandSource::RemoveCommandRangeUIHandler 
-Bir grup kullanıcı arabirimi komutu ileti işleyicileri komutu kaynak nesnesinden kaldırır.
+Bir grup kullanıcı arabirimi komut ileti işleyicileri komut kaynak nesnesinden kaldırır.
 ```
 void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMin,
     unsigned int cmdIDMax);
 ```
 ### <a name="parameters"></a>Parametreler
-`cmdIDMin`  
+*cmdIDMin*  
 Komut Kimliği aralığın başlangıç dizini.
-`cmdIDMax`  
+*cmdIDMax*  
 Komut Kimliği aralığı bitiş dizini.
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem için komut kimlikleri belirtilen komutu kaynak nesneden cmdIDMin ve cmdIDMax, tarafından eşlenen kullanıcı arabirimi komutu ileti işleyicileri, bir grup kaldırır.
+Bu yöntem, bir grup için komut kimlikleri belirtilen komut kaynak nesneden cmdIDMin ve cmdIDMax, eşlenen kullanıcı arabirimi komut ileti işleyicilerini kaldırır.
 
 ## <a name="removecommanduihandler"></a> ICommandSource::RemoveCommandUIHandler 
-Bir kullanıcı arabirimi komutu ileti işleyicisi komutu kaynak nesnesinden kaldırır.
+Bir kullanıcı arabirimi komut ileti işleyicisi komut kaynak nesnesinden kaldırır.
 ```
 void RemoveCommandUIHandler(unsigned int cmdID);
 ```
 ### <a name="parameters"></a>Parametreler
-`cmdID`  
+*cmdID*  
 Komut kimliği.
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem için cmdID komutu kaynak nesneden eşlenen kullanıcı arabirimi komutu ileti işleyicisi kaldırır.
+Bu yöntem, komut kaynak nesneden cmdID için eşlenen kullanıcı arabirimi komut ileti işleyicisini kaldırır.
 
 ## <a name="sendcommand"></a> ICommandSource::SendCommand 
 Bir ileti gönderir ve döndürmeden önce işlenecek bekler.
@@ -213,10 +213,10 @@ Bir ileti gönderir ve döndürmeden önce işlenecek bekler.
 void SendCommand(unsigned int command);
 ```
 ### <a name="parameters"></a>Parametreler
-`command`  
-Gönderilecek ileti komut kimliği.
+*Komutu*  
+Gönderilecek iletinin komut kimliği.
 ### <a name="remarks"></a>Açıklamalar
-Bu yöntem, zaman uyumlu olarak komutu tarafından belirtilen kimliği eşlenmiş iletisi gönderir. Pencere iletisi sıraya ileti yerleştirmek için CWnd::SendMessage çağırır ve bu pencere yordamı döndürmeden önce iletiyi işleyene kadar bekler.
+Bu yöntem, zaman uyumlu olarak komutu tarafından belirtilen kimliği eşlenen bir ileti gönderir. Bu pencerenin ileti kuyrukta bir ileti yerleştirmek için CWnd::SendMessage çağırır ve bu pencere yordamını döndürmeden önce iletiyi işleyene kadar bekler.
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: komut ekleme yönlendirme Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)   
+ [Nasıl yapılır: komut ekleme yönlendirme için bir Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)   
  [ICommandTarget Arabirimi](../../mfc/reference/icommandtarget-interface.md)

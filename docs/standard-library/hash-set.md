@@ -17,19 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dccf608b9949ad9e1502b489a237adf60a4d50a6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f163ef7d0e5ec05dd0f41c11ea77c558cfef4919
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845745"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955712"
 ---
 # <a name="lthashsetgt"></a>&lt;hash_set&gt;
 
 > [!NOTE]
-> Bu üst kullanılmıyor. Alternatif [< unordered_set >](../standard-library/unordered-set.md).
+> Bu üst bilgi kullanılmıyor. Alternatif [< unordered_set >](../standard-library/unordered-set.md).
 
-Kapsayıcı şablon sınıfları hash_set ve hash_multiset ve bunların destekleyen şablonları tanımlar.
+Kapsayıcı şablon sınıfları hash_set ve hash_multiset ve kendi destek şablonları tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,24 +42,24 @@ Kapsayıcı şablon sınıfları hash_set ve hash_multiset ve bunların destekle
 
 ### <a name="operators"></a>İşleçler
 
-|Hash_set sürüm|Hash_multiset sürüm|Açıklama|
+|Hash_set sürümü|Hash_multiset sürümü|Açıklama|
 |-----------------------|----------------------------|-----------------|
-|[operator! = (hash_set)](../standard-library/hash-set-operators.md#op_neq)|[operator! = (hash_multiset)](../standard-library/hash-set-operators.md#op_neq)|Testleri işlecinin sol tarafındaki hash_set veya hash_multiset nesnesi sağ tarafında hash_set veya hash_multiset nesnesine eşit değil.|
-|[operator == (hash_set)](../standard-library/hash-set-operators.md#op_eq_eq)|[operator == (hash_multiset)](../standard-library/hash-set-operators.md#op_eq_eq)|Hash_set veya hash_multiset nesne işlecinin sol tarafındaki sağ tarafında hash_set veya hash_multiset nesnesine eşitse testleri.|
+|[işleç! = (hash_set)](../standard-library/hash-set-operators.md#op_neq)|[işleç! = (hash_multiset)](../standard-library/hash-set-operators.md#op_neq)|İşlecin sol tarafındaki hash_set veya hash_multiset nesne işlecin sağ tarafındaki hash_set veya hash_multiset nesneye eşit olup olmadığını sınar.|
+|[işleç == (hash_set)](../standard-library/hash-set-operators.md#op_eq_eq)|[işleç == (hash_multiset)](../standard-library/hash-set-operators.md#op_eq_eq)|İşlecin sol tarafındaki hash_set veya hash_multiset nesnesinin işlecin sağ tarafındaki hash_set veya hash_multiset nesneye eşit olup olmadığını sınar.|
 
 ### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri
 
-|Hash_set sürüm|Hash_multiset sürüm|Açıklama|
+|Hash_set sürümü|Hash_multiset sürümü|Açıklama|
 |-----------------------|----------------------------|-----------------|
-|[Swap (hash_set)](../standard-library/hash-set-functions.md#swap)|[Swap (hash_multiset)](../standard-library/hash-set-functions.md#swap_hash_multiset)|İki hash_sets veya hash_multisets öğelerini değiş tokuş eder.|
+|[Swap (hash_set)](../standard-library/hash-set-functions.md#swap)|[Swap (hash_multiset)](../standard-library/hash-set-functions.md#swap_hash_multiset)|İki hash_sets veya hash_multisets öğelerini birbiriyle değiştirir.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[hash_compare Sınıfı](../standard-library/hash-compare-class.md)|Herhangi bir karma ilişkilendirilebilir kapsayıcıları tarafından kullanılan bir nesneyi tanımlayan — hash_map, hash_multimap, hash_set, veya hash_multiset — varsayılan olarak **nitelikler** sıralamak ve içerdikleri öğeleri karma parametre nesnesi.|
-|[hash_set Sınıfı](../standard-library/hash-set-class.md)|Hızlı alınması bulunan öğeleri değerlerini benzersiz ve anahtar değerleri olarak hizmet veren bir koleksiyon verileri ve depolama için kullanılır.|
-|[hash_multiset Sınıfı](../standard-library/hash-multiset-class.md)|Hızlı alınması bulunan öğeleri değerlerini benzersiz ve anahtar değerleri olarak hizmet veren bir koleksiyon verileri ve depolama için kullanılır.|
+|[hash_compare Sınıfı](../standard-library/hash-compare-class.md)|Herhangi bir karma ilişkilendirilebilir kapsayıcılar tarafından kullanılabilen bir nesne tanımlayan — hash_map, hash_multimap, hash_set, veya hash_multiset — varsayılan olarak `Traits` sipariş ve içerdikleri öğelerin karma parametre nesnesi.|
+|[hash_set Sınıfı](../standard-library/hash-set-class.md)|Hızlı, içerdiği öğelerin değerlerinin benzersiz olduğu ve anahtar değerler olarak hizmet verdikleri bir koleksiyondan verilerin alınmasını ve depolama için kullanılır.|
+|[hash_multiset Sınıfı](../standard-library/hash-multiset-class.md)|Hızlı, içerdiği öğelerin değerlerinin benzersiz olduğu ve anahtar değerler olarak hizmet verdikleri bir koleksiyondan verilerin alınmasını ve depolama için kullanılır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,26 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f1d24fb90b99d7b757f628be4b39d42f0c0051f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 676cc8ea493d113e9ef8a6f85108fdf3bad6ce5f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845771"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959513"
 ---
 # <a name="indirectarray-class"></a>indirect_array Sınıfı
 
-Bir alt kümesini üst valarray dizinlerini belirterek alt diziler arasındaki işlemleri sağlayarak valarrays kümeleridir destekler nesneleri tanımlanmış bir yardımcı, iç Şablon sınıfı.
+Bir alt dizin üst valarray birini belirterek valarrays alt diziler arasındaki işlemleri sağlayarak kümeleridir destekler nesneleri tanımlanmış bir yardımcı, iç Şablon sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf bir nesneye başvuru depolayan bir nesne tanımlar **va** sınıfının [valarray](../standard-library/valarray-class.md)**\<türü >**, bir nesne ile birlikte **xa**  sınıfının **valarray < size_t >**, aralarından seçim yapabileceğiniz öğe dizisi açıklayan **valarray\<türü >** nesnesi.
+Sınıfı bir nesneye bir başvuru depolayan nesneyi tanımlar `va` sınıfın [valarray](../standard-library/valarray-class.md)**\<türü >**, nesneyle birlikte `xa` sınıfın `valarray<size_t>`, seçim yapılacak öğe dizisi açıklayan `valarray<Type>` nesne.
 
-Oluşturmak bir **indirect_array\<türü >** biçiminde bir ifade yazarak yalnızca nesne **va [xa]**. Karşılık gelen işlevi imzalar için tanımlanan gibi sınıfı indirect_array üye işlevlerini sonra davranır **valarray\<türü >**, yalnızca seçilen öğelerin sırasını etkilenen dışında.
+Oluşturmak bir `indirect_array<Type>` biçiminde bir ifade yazarak yalnızca nesne `va[xa]`. İndirect_array sınıfı üye işlevleri sonra karşılık gelen işlev imzası için tanımlanan gibi davranmasını `valarray<Type>`dışında yalnızca seçilen öğelerin sırası etkilenmez.
 
-Sıra oluşan **xa.** [boyutu](../standard-library/valarray-class.md#size) öğeleri, burada öğesi `I` dizin haline **xa**[ `I`] içinde **va**.
+Dizisi oluşan **xa.** [boyutu](../standard-library/valarray-class.md#size) öğeleri nerede öğesi `I` dizin haline **xa**[ `I`] içinde `va`.
 
 ## <a name="example"></a>Örnek:
 

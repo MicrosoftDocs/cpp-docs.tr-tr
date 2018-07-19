@@ -14,19 +14,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb5e2511dadb9b9003dc760b9edc89dd2a95996
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 104ac3531d371eb1a4e35905fa974a381b6f8334
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843502"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955754"
 ---
 # <a name="container-classconstiterator"></a>Kapsayıcı Sınıfı::const_iterator
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Denetimli sırası için sabit bir yineleyici olarak hizmet verebilir nesneyi açıklar.
+Denetlenen dizi için sabit bir yineleyici olarak hizmet verebilen bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,7 +37,7 @@ typedef T6 const_iterator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bunu açıklanan burada belirtilmemiş türler eşanlamlısı olarak **T6**.
+Açıklanmıştır belirtilmeyen türünün eşanlamlısı olarak burada `T6`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

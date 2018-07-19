@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66128074d7beb52ab73f2e6b48371999d38e83a5
-ms.sourcegitcommit: 96cdc2da0d8c3783cc2ce03bd280a5430e1ac01d
+ms.openlocfilehash: f6ef4f70807e753c24d3a3595ab3665b45fdbe42
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33954057"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955715"
 ---
 # <a name="isunsigned-class"></a>is_unsigned Sınıfı
 
-Test türü işaretsiz tamsayıdır.
+İşaretsiz tamsayı türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_unsigned;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` imzasız tam sayı türü veya `cv-qualified` false tuttuğu tam sayı türü, aksi takdirde imzalanmamış.
+Karşılaştırmasının bir örneği true tutan türü *Ty* işaretsiz bir tamsayı türüdür veya `cv-qualified` işaretsiz false tuttuğu integral türü, aksi takdirde.
 
 ## <a name="example"></a>Örnek
 

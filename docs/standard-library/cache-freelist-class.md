@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8478490914a6f9049cd54ec78c8de8a1e519f36f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c3d3902d900e0dad5ec3e335e9c3424d58ee2674
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845680"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38960423"
 ---
 # <a name="cachefreelist-class"></a>cache_freelist Sınıfı
 
-Tanımlayan bir [ayırıcısı engelleme](../standard-library/allocators-header.md) ayırır ve bellek blokları tek bir boyutta kaldırır.
+Tanımlayan bir [ayırıcı block](../standard-library/allocators-header.md) ayırır ve bellek blokları tek bir boyutta ayırmayı iptal eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,14 +42,14 @@ class cache_freelist
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Sz`|Ayrılacak dizideki öğelerin sayısı.|
-|`Max`|Boş listenin en büyük boyutunu temsil eden max sınıfı. Bu, [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), veya [max_variable_size](../standard-library/max-variable-size-class.md).|
+|*SZ*|Ayrılacak dizideki öğelerin sayısı.|
+|*en fazla*|Boş listenin en büyük boyutunu temsil eden en fazla sınıf. Bu, [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), veya [max_variable_size](../standard-library/max-variable-size-class.md).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Cache_freelist Şablon sınıfı bellek blok boyutu, boş bir listesini tutar `Sz`. Boş liste dolu olduğunda kullanan `operator delete` bellek ayırması için engeller. Boş liste boş olduğunda kullanan `operator new` yeni bellek bloğu ayrılamadı. Boş listenin en büyük boyutu en fazla sınıf geçirilen sınıfı tarafından belirlenen `Max` parametresi.
+Cache_freelist Şablon sınıfı bellek blok boyutu, ücretsiz bir listesini tutar *Sz*. Boş liste dolu olduğunda kullandığı **delete işleci** bellek ayırması engeller. Boş liste boş olduğunda kullandığı **new işleci** yeni bellek bloklarını ayrılamıyor. Boş listenin en büyük boyutu en fazla sınıf geçirilen sınıf tarafından belirlenir *Max* parametresi.
 
-Her bellek bloğu tutan `Sz` bayt kullanılabilir bellek ve verileri, `operator new` ve `operator delete` gerektirir.
+Her bellek bloğu şunları tutar *Sz* kullanılabilir bellek ve verileri baytlık, **new işleci** ve **delete işleci** gerektirir.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -62,11 +62,11 @@ Her bellek bloğu tutan `Sz` bayt kullanılabilir bellek ve verileri, `operator 
 |Üye işlevi|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bir bellek bloğu ayırır.|
-|[Serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|
+|[Serbest Bırak](#deallocate)|Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 
@@ -82,11 +82,11 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`count`|Ayrılacak dizideki öğelerin sayısı.|
+|*Sayısı*|Ayrılacak dizideki öğelerin sayısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış nesnesine bir işaretçi.
+Ayrılmış bir nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -102,7 +102,7 @@ cache_freelist();
 
 ## <a name="deallocate"></a>  cache_freelist::deallocate
 
-Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.
+Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -112,11 +112,11 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`ptr`|Depolama biriminden bırakılmasına ilk nesne için bir işaretçi.|
-|`count`|Depolama biriminden bırakılmasına nesnelerin sayısı.|
+|*ptr*|Depolama alanından serbest bırakılması ilk nesneye bir işaretçi.|
+|*Sayısı*|Depolama alanından serbest bırakılması nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

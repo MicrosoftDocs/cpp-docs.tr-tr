@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b58c31c7f4180f9c65b04bbb852bf15c7315c35d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7fe6eb3ffa83316071de2ba26cf80e6e6cbd5245
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859374"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957353"
 ---
 # <a name="makesigned-class"></a>make_signed Sınıfı
 
-Yapar yazın veya en küçük imzalı büyük yazın veya yazın boyutunda eşit.
+Yapar yazın veya en küçük imzalı büyüktür yazın veya boyutu türü için eşittir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,11 +40,11 @@ using make_signed_t = typename make_signed<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Değişiklik türü.
+*T* değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir değişiklik-türü tür değiştiricisi örneğini tutan `T` varsa `is_signed<T>` geçerlidir. Aksi takdirde en küçük imzasız türü olan `UT` kendisi için `sizeof (T) <= sizeof (UT)`.
+Tür değiştiricinin bir örneği bir değişiklik-tür tutar *T* varsa `is_signed<T>` geçerlidir. Aksi takdirde, en küçük işaretsiz türe olan `UT` hangi `sizeof (T) <= sizeof (UT)`.
 
 ## <a name="requirements"></a>Gereksinimler
 

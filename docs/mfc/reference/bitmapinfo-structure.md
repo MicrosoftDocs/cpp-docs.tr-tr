@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea99cfb77f295530f65b3d3b07888b0735fc0b6a
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: a9b1bd896157d7f11792a5a6514e30ecd3d46a19
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950509"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336263"
 ---
 # <a name="bitmapinfo-structure"></a>BITMAPINFO Yapısı
-`BITMAPINFO` Yapısı boyutları ve bir Windows aygıt bağımsız bit eşlem (DIB) için renk bilgilerini tanımlar.  
+`BITMAPINFO` Boyutları ve bir Windows CİHAZDAN bağımsız bit eşlem (DIB) için renk bilgisi yapısını tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,17 +37,17 @@ typedef struct tagBITMAPINFO {
   
 #### <a name="parameters"></a>Parametreler  
  *bmiHeader*  
- Belirten bir [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) boyutları ve bir CİHAZDAN bağımsız bit eşlem renk biçimi hakkında bilgi içeren yapısı.  
+ Belirtir bir [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) boyutları ve CİHAZDAN bağımsız bit eşlem renk biçimi hakkında bilgi içeren yapısı.  
   
  *bmiColors*  
- Bir dizi belirtir [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938) veya `DWORD` eşleminde renkleri tanımlamak veri türleri.  
+ Bir dizi belirtir [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938) ya da bit eşlem içinde Renk Tanımla DWORD veri türleri.  
   
 ## <a name="remarks"></a>Açıklamalar  
- CİHAZDAN bağımsız bit eşlem iki farklı bölümden oluşur: bir `BITMAPINFO` boyutları ve bit eşlem renklerini ve eşleminde piksel belirten bir bayt dizisi açıklar yapısı. Dizi bitleri birlikte paketlenmiş, ancak her tarama satırının bitiş sıfırlarla doldurulan gerekir bir `LONG` sınır. Yüksekliği pozitif, bit eşlem kökeni sol alt köşesinde ise. Yüksekliği negatif başlangıcı sol üst köşesindeki ise.  
+ CİHAZDAN bağımsız bit eşlem iki farklı bölümden oluşur: bir `BITMAPINFO` renkleri bit eşlemin ve bit eşlemin piksel belirten bir bayt dizisi ve boyutları açıklar yapısı. Dizideki BITS birlikte paketlenmiş, ancak her bir tarama satır bitiş sıfırlarla sıfır olmalıdır bir **uzun** sınır. Yüksekliği pozitif ise, bit eşlem kaynağı sol alt köşesinde ' dir. Yüksekliği negatif ise, kaynak üst sol löşede ' dir.  
   
- A *paketlenmiş bit eşlem* burada bayt dizisi hemen izleyen bir bit eşlem ise `BITMAPINFO` yapısı. Paketlenmiş bit eşlemler, tek bir işaretçi tarafından başvurulur.  
+ A *paketlenmiş bir bit eşlem* yeri bayt dizisinin hemen izleyen bir bit eşlem ise `BITMAPINFO` yapısı. Paketlenmiş bit eşlemler, tek bir işaretçi tarafından başvurulur.  
   
- Hakkında daha fazla bilgi için `BITMAPINFO` yapısı ve üyeleri için değerlerin uygun `BITMAPINFOHEADER` ve `RGBQUAD` yapıları, Windows SDK belgelerinde aşağıdaki konulara bakın.  
+ Hakkında daha fazla bilgi için `BITMAPINFO` yapısı ve üyeleri için uygun değerleri `BITMAPINFOHEADER` ve `RGBQUAD` yapıları, Windows SDK belgelerinde aşağıdaki konulara bakın.  
   
 - [BITMAPINFO yapısı](http://msdn.microsoft.com/library/windows/desktop/dd183375)  
   
@@ -59,7 +59,7 @@ typedef struct tagBITMAPINFO {
  **Başlık:** wingdi.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CBrush::CreateDIBPatternBrush](../../mfc/reference/cbrush-class.md#createdibpatternbrush)   
  [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376)   
  [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938)

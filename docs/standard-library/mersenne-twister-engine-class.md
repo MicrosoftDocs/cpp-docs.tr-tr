@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 504d561dd0d7fbc640c898aa8aa70a70337accb8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bb03b35ed792bda7c506fd06d6102dda83c768e6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860651"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959277"
 ---
 # <a name="mersennetwisterengine-class"></a>mersenne_twister_engine Sınıfı
 
-Mersenne twister algoritmadan yola çıkılarak tamsayılar yüksek kaliteli rastgele dizisini oluşturur.
+Mersenne bükücü algoritmasına göre tamsayı yüksek kaliteli rastgele bir sıra üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,23 +39,23 @@ class mersenne_twister_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-`UIntType` İşaretsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*UIntType* işeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-`W` **Word boyutu**. Her sözcüğün durumu dizisi bit cinsinden boyutu. **Önkoşul**: `2u < W ≤ numeric_limits<UIntType>::digits`
+*W* **Word boyutu**. Her sözcüğün bitlerini durum sırası boyutu. **Önkoşul**: `2u < W ≤ numeric_limits<UIntType>::digits`
 
-`N` **Durum boyutu**. Durum dizisi (değerler) öğe sayısı.
+*N* **durum boyutu**. (Değerler) durumu dizideki öğelerin sayısı.
 
-`M` **Kaydırma boyutu**. Her geçiş sırasında atlamak için öğe sayısı. **Önkoşul**: `0 < M ≤ N`
+*M* **kaydırma boyutu**. Her geçiş sırasında atlanacak öğe sayısı. **Önkoşul**: `0 < M ≤ N`
 
-`R` **Bit maskesi**. **Önkoşul**: `R ≤ W`
+*R* **bit maskesi**. **Önkoşul**: `R ≤ W`
 
-`A` **XOR maskesi**. **Önkoşul**: `A ≤ (1u<<W) - 1u`
+*A* **XOR maskesi**. **Önkoşul**: `A ≤ (1u<<W) - 1u`
 
-`U`, `S`, `T`, `L` **Tempering shift parametreleri**. Shift değerleri olarak (tempering) karıştırma sırasında kullanılır. Önkoşul: `U,S,T,L ≤ W`
+*U*, *S*, *T*, *L* **Tempering shift parametreleri**. Shift değerleri olarak (tempering) karıştırma sırasında kullanılır. Önkoşul: `U,S,T,L ≤ W`
 
-`D`, `B`, `C` **Tempering bit maskesi parametreleri**. Bit maskesi değerleri (tempering) karıştırma sırasında kullanılır. Önkoşul: `D,B,C ≤ (1u<<W) - 1u`
+*D*, *B*, *C* **Tempering bit maskesi parametreleri**. Bit maskesi değerleri (tempering) karıştırma sırasında kullanılır. Önkoşul: `D,B,C ≤ (1u<<W) - 1u`
 
-`F` **Başlatma çarpanı**. İle dizisi başlatma yardımcı olmak için kullanılır. Önkoşul: `F ≤ (1u<<W) - 1u`
+*F* **başlatma çarpan**. Başlatma sırası ile yardımcı olmak için kullanılır. Önkoşul: `F ≤ (1u<<W) - 1u`
 
 ## <a name="members"></a>Üyeler
 
@@ -64,21 +64,21 @@ class mersenne_twister_engine;
 |`mersenne_twister_engine::mersenne_twister_engine`|`mersenne_twister_engine::min`|`mersenne_twister_engine::discard`|
 |`mersenne_twister_engine::operator()`|`mersenne_twister_engine::max`|`mersenne_twister_engine::seed`|
 
-`default_seed` üye sabit, tanımlanmış olarak `5489u`, varsayılan parametre değeri olarak kullanılan `mersenne_twister_engine::seed` ve tek değer Oluşturucusu.
+`default_seed` üye sabit, olarak tanımlı `5489u`için varsayılan parametre değeri olarak kullanılır `mersenne_twister_engine::seed` ve tek değer Oluşturucusu.
 
-Altyapısı üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Altyapısı üyeleri hakkında daha fazla bilgi için bkz. [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfı kapalı aralıkta değerler döndüren bir rastgele bir sayı altyapısı açıklar [ `0`, `2` <sup>W</sup> - `1`]. Büyük tam sayı değerine sahip tutan `W * (N - 1) + R` BITS. Ayıklar `W` birer birer bu büyük değer ve tüm BITS kullandığında BITS kaydırma ve BITS ayıklamak için yeni bir dizi sahip olması BITS karıştırma büyük değer twists onu. Son altyapının durumunda `N` `W`-bit, kullanılan değerler `operator()` en az adlı `N` zaman, aksi takdirde `M` `W`-bit kullanılmış değerleri ve son `N - M` değerleri Çekirdek.
+Bu şablon sınıfı kapalı aralıkta değerler döndüren bir rastgele sayı altyapısı tanımlar [ `0`, `2` <sup>W</sup> - `1`]. Büyük bir dahili değer saklar `W * (N - 1) + R` bitleri. Ayıklar *W* bitleri teker teker bu büyük bir değer ve tüm bitleri kullandığında kaydırarak ve ayıklamak için BITS yeni bir dizi sahip olacak şekilde karıştırarak büyük bir değer büker bu. Son altyapının durumunda `N` `W`-bit değerleri kullanılıyorsa `operator()` en az adlı *N* zaman, aksi takdirde `M` `W`-bit kullanılmış olan değerleri ve son `N - M` çekirdek değerleri.
 
-Oluşturucunun shift değerleri tarafından tanımlanan bir bükümlü genelleştirilmiş geri bildirim shift kayıt kullanarak tutan büyük değer twists `N` ve `M`, bir geçiş değer `R`ve bir koşullu XOR maskesi `A`. BITS ham shift kaydının (değerleri tarafından tanımlanan bir bit karıştırma matris göre tempered) ek olarak, karıştırılmış `U`, `D`, `S`, `B`, `T`, `C`, ve `L`.
+Oluşturucu shift değerler tarafından tanımlanan bir bükümlü genelleştirilmiş geri bildirim shift kayıt kullanarak tutan büyük değeri büker *N* ve *M*, bir sürpriz değer *R*ve Koşullu XOR maskesi *A*. BITS ham shift kaydının (değerleri tarafından tanımlanan bir bit karıştırma matris göre geliştirildiğinde) ek olarak, karıştırılmış *U*, *D*, *S*, *B* , *T*, *C*, ve *L*.
 
-Şablon bağımsız değişken `UIntType` değerleri kadar tutmaya yetecek büyüklükte olmalıdır `2` <sup>W</sup> - `1`. , Başka bir şablon bağımsız değişken değerlerini aşağıdaki gereksinimleri karşılaması gerekir: `2u < W, 0 < M, M ≤ N, R ≤ W, U ≤ W, S ≤ W, T ≤ W, L ≤ W, W ≤ numeric_limits<UIntType>::digits, A ≤ (1u<<W) - 1u, B ≤ (1u<<W) - 1u, C ≤ (1u<<W) - 1u, D ≤ (1u<<W) - 1u, and F ≤ (1u<<W) - 1u`.
+Şablon bağımsız değişkeni `UIntType` değerleri içerebilecek kadar büyük olmalıdır `2` <sup>W</sup> - `1`. Bir şablon bağımsız değişkenlerinin değerleri aşağıdaki gereksinimleri karşılaması gerekir: `2u < W, 0 < M, M ≤ N, R ≤ W, U ≤ W, S ≤ W, T ≤ W, L ≤ W, W ≤ numeric_limits<UIntType>::digits, A ≤ (1u<<W) - 1u, B ≤ (1u<<W) - 1u, C ≤ (1u<<W) - 1u, D ≤ (1u<<W) - 1u, and F ≤ (1u<<W) - 1u`.
 
-Bu altyapısından bir oluşturucuyu doğrudan oluşturabileceğiniz rağmen önceden tanımlanmış bu tür tanımları birini kullanmanız önerilir:
+Doğrudan bu altyapısından bir oluşturucuyu oluşturmak olsa da, önceden tanımlanmış bu tür tanımlarından birini kullanmanız önerilir:
 
-`mt19937`: 32-bit Mersenne twister altyapısı (Matsumoto ve Nishimura, 1998).
+`mt19937`: 32-bit Mersenne bükücü altyapısı (Matsumoto ve Nishimura, 1998).
 
 ```cpp
 typedef mersenne_twister_engine<unsigned int, 32, 624, 397,
@@ -89,7 +89,7 @@ typedef mersenne_twister_engine<unsigned int, 32, 624, 397,
     18, 1812433253> mt19937;
 ```
 
-`mt19937_64`: 64-bit Mersenne twister altyapısı (Matsumoto ve Nishimura, 2000).
+`mt19937_64`: 64 bit Mersenne bükücü altyapısı (Matsumoto ve Nishimura, 2000).
 
 ```cpp
 typedef mersenne_twister_engine<unsigned long long, 64, 312, 156,
@@ -100,7 +100,7 @@ typedef mersenne_twister_engine<unsigned long long, 64, 312, 156,
     43, 6364136223846793005ULL> mt19937_64;
 ```
 
-Wikipedia makaleyi Mersenne twister algoritması hakkında ayrıntılı bilgi için bkz: [Mersenne twister](http://go.microsoft.com/fwlink/p/?linkid=402356).
+Mersenne bükücü algoritmasına hakkında ayrıntılı bilgi için bkz. Wikipedia makalesi [Mersenne bükücü](http://go.microsoft.com/fwlink/p/?linkid=402356).
 
 ## <a name="example"></a>Örnek
 

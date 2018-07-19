@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1cd2b4882c4b5e62a2f6574b3011b74747e412b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e9a46294156c1f7beffecb997569221a388b3394
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858506"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957317"
 ---
 # <a name="removevolatile-class"></a>remove_volatile Sınıfı
 
@@ -40,11 +40,11 @@ using remove_volatile_t = typename remove_volatile<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Değişiklik türü.
+*T* değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneği `remove_volatile<T>` bir değişiklik-türü tutan `T1` zaman `T` biçimidir `volatile T1`, aksi takdirde `T`.
+Örneği `remove_volatile<T>` bir değişiklik-tür tutar `T1` olduğunda *T* biçimindedir `volatile T1`, aksi takdirde *T*.
 
 ## <a name="example"></a>Örnek
 

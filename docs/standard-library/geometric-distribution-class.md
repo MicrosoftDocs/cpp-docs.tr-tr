@@ -33,16 +33,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8d68723573d3a11565ae32f07bf8899661097c4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8468cb290b6845050943159aaa69b9cd000d2bc7
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846876"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38960300"
 ---
 # <a name="geometricdistribution-class"></a>geometric_distribution Sınıfı
 
-Geometrik dağıtım oluşturur.
+Bir geometrik dağılım üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,32 +76,32 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*İnt'i* tamsayı sonuç türü varsayılan olarak `int`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*İnt'i* tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* Tekdüzen rastgele sayı oluşturucu altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG* Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı türünde, bir kullanıcı tarafından belirtilen tam sayı geometrik dağıtım değerleri üreten bir dağıtım açıklar. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı, bir kullanıcı tarafından belirtilen integral türünden bir geometrik dağılım değerleri üreten bir dağıtım açıklar. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[geometric_distribution](#geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|
 |`geometric_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `p()` depolanan dağıtım parametresinin değeri döndürür `p`.
+Özellik işlevi `p()` saklı dağıtım parametresinin değeri döndürür `p`.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
 
-`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
 
-`operator()` Üye işlevleri URNG motoru, geçerli parametre paket veya belirtilen parametre paket göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Kikare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [geometrik dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400529).
+Kikare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [geometrik dağılım](http://go.microsoft.com/fwlink/p/?linkid=400529).
 
 ## <a name="example"></a>Örnek
 
@@ -156,7 +156,7 @@ int main()
 }
 ```
 
-İlk testi:
+İlk test:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -175,7 +175,7 @@ Distribution for 100 samples:
     5 :
 ```
 
-İkinci test edin:
+İkinci test:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -219,7 +219,7 @@ Distribution for 100 samples:
 
 ## <a name="geometric_distribution"></a>  geometric_distribution::geometric_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit geometric_distribution(double p = 0.5);
@@ -230,19 +230,19 @@ explicit geometric_distribution(const param_type& parm);
 
 *p* `p` dağıtım parametresi.
 
-*parametre* dağıtım oluşturmak için kullanılan parametre yapısı.
+*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < p && p < 1.0`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `p` değeri tutan değeri *p*.
+İlk Oluşturucu bir nesne oluşturur, saklı `p` değerine değeri *p*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  geometric_distribution::param_type
 
-Dağıtım parametreleri depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -259,13 +259,13 @@ struct param_type {
 
 *p* `p` dağıtım parametresi.
 
-*sağ* `param_type` için karşılaştırılacak örnek.
+*doğru* `param_type` karşılaştırmak için bu örneği.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < p && p < 1.0`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 759f8e6f9349fdcac61f6aca81d311e3bbc39e1d
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 37149e2a4a2780c97cc7c2774c64e9a6037d37a7
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957051"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37337885"
 ---
 # <a name="cdaoindexfieldinfo-structure"></a>CDaoIndexFieldInfo Yapısı
-`CDaoIndexFieldInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir dizin alan nesne hakkında bilgiler içerir.  
+`CDaoIndexFieldInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanmış bir dizin alan nesne hakkında bilgiler içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,23 +39,23 @@ struct CDaoIndexFieldInfo
   
 #### <a name="parameters"></a>Parametreler  
  *m_strName*  
- Dizin alanı nesneyi benzersiz olarak adlandırır. Ayrıntılar için DAO Yardımı'ndaki "Name özelliği" konusuna bakın.  
+ Benzersiz dizin alanı nesnesini adlandırır. Ayrıntılar için "Name özelliği" DAO Yardım konusuna bakın.  
   
  *m_bDescending*  
- Dizin nesnesi tarafından tanımlanan dizin sıralama gösterir. **DOĞRU** azalan durumunda.  
+ Dizin nesnesi tarafından tanımlanan sıralamaya dizini belirtir. Azalan TRUE.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir dizin nesnesi üzerinde bir tabledef (veya bir tabloya dayalı bir kayıt kümesi) dizine hangi alanların gösteren alanları, bir dizi sahip olabilir. Bilgilerin nasıl döndürülür birincil yukarıdaki başvuruları belirtmek `m_pFieldInfos` üyesi bir [Cdaoındexınfo](../../mfc/reference/cdaoindexinfo-structure.md) çağırılarak alınır nesne `GetIndexInfo` sınıfının üye işlevini [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo).  
+ Dizin nesnesi, alanlarının üzerinde değer özelliği (veya bir tabloyu temel alan bir kayıt kümesi) dizine hangi alanları gösteren bir sayı olabilir. Bilgileri nasıl döndürülür birincil yukarıdaki başvuruları göstermek `m_pFieldInfos` üyesi bir [Cdaoındexınfo](../../mfc/reference/cdaoindexinfo-structure.md) çağırılarak nesne `GetIndexInfo` sınıfının üye işlevinde [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo).  
   
- Dizin ve dizin alanı nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, DAO temel MFC sınıfının nesneleri [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) dizinler koleksiyonu adlı dizin nesnelerinin bir koleksiyonu içerir. Her dizin nesnesi, buna karşılık, alan nesneler koleksiyonunu içerir. Bu sınıfların dizin bilgilerinin tek tek öğelere erişmek için üye işlevleri sağlamak ya da bunları tamamını tek seferde erişebilirsiniz bir `CDaoIndexInfo` çağırarak nesne `GetIndexInfo` kapsayan nesnenin üye işlevi. `CDaoIndexInfo` Nesnesi, daha sonra bir veri üyeye sahip `m_pFieldInfos`, işaret eden bir dizi için `CDaoIndexFieldInfo` nesneleri.  
+ Dizin nesneleri ve dizin alanı nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, DAO temel alınan MFC sınıfın nesneleri [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) dizinler koleksiyonu adlı dizin nesnelerinin bir koleksiyonu içerir. Her dizin nesnesi, alan nesnelerinin bir koleksiyonunu içerir. Bu sınıfların tek tek öğelerine dizin bilgilerinin erişmek için üye işlevleri, veya bunları tamamını tek seferde erişim bir `CDaoIndexInfo` çağırarak `GetIndexInfo` kapsayan nesnenin üye işlevi. `CDaoIndexInfo` Nesnesi daha sonra veri üyesi vardır `m_pFieldInfos`, işaret eden bir dizisi olarak `CDaoIndexFieldInfo` nesneleri.  
   
- Çağrı `GetIndexInfo` dizinleri içinde koleksiyonu içeren tabledef veya kayıt kümesi nesnesi üye işlevini depolanan ilgilendiğiniz dizin nesnesi. Sonra erişim `m_pFieldInfos` üyesi [Cdaoındexınfo](../../mfc/reference/cdaoindexinfo-structure.md) nesnesi. Uzunluğu `m_pFieldInfos` dizi depolanır `m_nFields`. `CDaoIndexFieldInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümü bir `CDaoIndexFieldInfo` nesnesi.  
+ Çağrı `GetIndexInfo` üye işlevi dizinleri koleksiyondur kapsayan nesnenin tabledef ya da kayıt depolanan ilgilendiğiniz dizin nesnesi. Ardından erişim `m_pFieldInfos` üyesi [Cdaoındexınfo](../../mfc/reference/cdaoindexinfo-structure.md) nesne. Uzunluğunu `m_pFieldInfos` dizi depolanan `m_nFields`. `CDaoIndexFieldInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoIndexFieldInfo` nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdao.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CDaoTableDef::GetIndexInfo](../../mfc/reference/cdaotabledef-class.md#getindexinfo)   
  [CDaoRecordset::GetIndexInfo](../../mfc/reference/cdaorecordset-class.md#getindexinfo)
 

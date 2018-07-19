@@ -50,15 +50,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f53d96c6b4c30b79d9724421debd7ccc989b64f8
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 91f9dfd76348859513875c2dfca98d5fd11c96d2
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955710"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37338704"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
-Bir tarih ve Saat Seçici denetimini işlevselliği kapsar.  
+Bir tarih ve Saat Seçici denetiminin işlevselliğini kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -72,35 +72,35 @@ class CDateTimeCtrl : public CWnd
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDateTimeCtrl::CDateTimeCtrl](#cdatetimectrl)|Oluşturan bir `CDateTimeCtrl` nesnesi.|  
+|[CDateTimeCtrl::CDateTimeCtrl](#cdatetimectrl)|Oluşturur bir `CDateTimeCtrl` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CDateTimeCtrl::CloseMonthCal](#closemonthcal)|Geçerli tarih ve Saat Seçici denetimini kapatır.|  
-|[CDateTimeCtrl::Create](#create)|Tarih ve Saat Seçici denetimini oluşturur ve ona ekler `CDateTimeCtrl` nesnesi.|  
-|[CDateTimeCtrl::GetDateTimePickerInfo](#getdatetimepickerinfo)|Geçerli tarih ve Saat Seçici denetimini ilgili bilgileri alır.|  
-|[CDateTimeCtrl::GetIdealSize](#getidealsize)|Geçerli tarih ve saati görüntülemek için gereken tarih ve Saat Seçici denetimini ideal boyutu döndürür.|  
-|[CDateTimeCtrl::GetMonthCalColor](#getmonthcalcolor)|Ay takvim tarih ve Saat Seçici denetimini içinde belirli bir kısmı için renk alır.|  
-|[CDateTimeCtrl::GetMonthCalCtrl](#getmonthcalctrl)|Alır `CMonthCalCtrl` tarih ve saat seçici denetimi ile ilişkilendirilmiş nesne.|  
-|[CDateTimeCtrl::GetMonthCalFont](#getmonthcalfont)|Tarih ve Saat Seçici denetimin alt aylık takvim denetiminin tarafından şu anda kullanılan yazı tipini alır.|  
-|[CDateTimeCtrl::GetMonthCalStyle](#getmonthcalstyle)|Geçerli tarih ve Saat Seçici denetimini stilini alır.|  
-|[CDateTimeCtrl::GetRange](#getrange)|Minimum ve maksimum geçerli bir tarih ve Saat Seçici denetimini sistem saatleri izin alır.|  
-|[CDateTimeCtrl::GetTime](#gettime)|Tarih ve Saat Seçici denetimden şu anda seçili zaman alır ve belirtilen yerleştirir `SYSTEMTIME` yapısı.|  
-|[CDateTimeCtrl::SetFormat](#setformat)|Belirtilen biçim dizesi uygun bir tarih ve Saat Seçici denetim görüntüsünü ayarlar.|  
-|[CDateTimeCtrl::SetMonthCalColor](#setmonthcalcolor)|Ay takvim tarih ve Saat Seçici denetimini içinde belirli bir kısmı rengini belirler.|  
-|[CDateTimeCtrl::SetMonthCalFont](#setmonthcalfont)|Tarih ve Saat Seçici denetimin alt aylık takvim denetiminin kullanacağı yazı tipini belirler.|  
-|[CDateTimeCtrl::SetMonthCalStyle](#setmonthcalstyle)|Geçerli tarih ve Saat Seçici denetimini stilini ayarlar.|  
-|[CDateTimeCtrl::SetRange](#setrange)|Minimum ve maksimum izin verilen sistem saatleri tarih ve saat seçici denetimi için ayarlar.|  
+|[CDateTimeCtrl::Create](#create)|Tarih ve saat seçici denetimi oluşturur ve ona ekler `CDateTimeCtrl` nesne.|  
+|[CDateTimeCtrl::GetDateTimePickerInfo](#getdatetimepickerinfo)|Geçerli tarih ve saat seçici denetimi ile ilgili bilgileri alır.|  
+|[CDateTimeCtrl::GetIdealSize](#getidealsize)|İdeal boyutu geçerli tarih ve saati görüntülemek için gerekli olan tarih ve saat seçici denetimi değerini döndürür.|  
+|[CDateTimeCtrl::GetMonthCalColor](#getmonthcalcolor)|Ay takvim tarih ve Saat Seçici denetiminde belirli bir kısmı için renk alır.|  
+|[CDateTimeCtrl::GetMonthCalCtrl](#getmonthcalctrl)|Alır `CMonthCalCtrl` tarih ve Saat Seçici denetiminin ilişkili nesne.|  
+|[CDateTimeCtrl::GetMonthCalFont](#getmonthcalfont)|Tarih ve Saat Seçici denetiminin alt ay takvimi tarafından şu anda kullanılan yazı tipini alır.|  
+|[CDateTimeCtrl::GetMonthCalStyle](#getmonthcalstyle)|Geçerli tarih ve Saat Seçici denetiminin stilini alır.|  
+|[CDateTimeCtrl::GetRange](#getrange)|Sistem saatleri bir tarih ve saat seçici denetimi için izin verilen minimum ve maksimum geçerli alır.|  
+|[CDateTimeCtrl::GetTime](#gettime)|Bir tarih ve saat seçici denetimi seçili zaman alır ve belirtilen koyar `SYSTEMTIME` yapısı.|  
+|[CDateTimeCtrl::SetFormat](#setformat)|Görüntü verilen biçim dizesi uygun olarak bir tarih ve saat seçici denetimi değerini ayarlar.|  
+|[CDateTimeCtrl::SetMonthCalColor](#setmonthcalcolor)|Ay takvim içinden bir tarih ve Saat Seçici denetimini belirli bir kısmı rengini belirler.|  
+|[CDateTimeCtrl::SetMonthCalFont](#setmonthcalfont)|Tarih ve Saat Seçici denetiminin alt aylık takvim denetiminin kullanacağı yazı tipini ayarlar.|  
+|[CDateTimeCtrl::SetMonthCalStyle](#setmonthcalstyle)|Geçerli tarih ve Saat Seçici denetiminin stilini ayarlar.|  
+|[CDateTimeCtrl::SetRange](#setrange)|Bir tarih ve saat seçici denetimi için minimum ve maksimum izin verilen sistem saatleri ayarlar.|  
 |[CDateTimeCtrl::SetTime](#settime)|Bir tarih ve Saat Seçici denetiminde süreyi ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tarih ve Saat Seçici denetimini (DTP denetimi) bir kullanıcıyla tarih ve saat bilgilerini değiştirmek için basit bir arabirim sağlar. Bu arabirim her biri bir parçası denetiminde tutulan tarih ve saat bilgilerini görüntüleyen alanları içerir. Kullanıcının belirli bir alandaki dize içeriğini değiştirerek denetiminde depolanan bilgileri değiştirebilirsiniz. Kullanıcı, fare veya klavye alan alanını kullanarak taşıyabilirsiniz.  
+ Tarih ve Saat Seçici denetimini (DTP denetiminde) bir tarih ve saat bilgilerini değiştirmek için basit bir arabirim sağlar. Bu arabirim, her biri bir bölümü denetiminde depolanmış tarih ve saat bilgilerini görüntüler. alanları içerir. Kullanıcı denetimi dizesini verilen bir alanda içeriğini değiştirerek depolanan bilgileri değiştirebilirsiniz. Kullanıcı, klavye veya fare alan alanını kullanarak taşıyabilirsiniz.  
   
- Tarih ve Saat Seçici denetimini oluşturduğunuz nesneye çeşitli stiller uygulayarak özelleştirebilirsiniz. Bkz: [tarih ve Saat Seçici denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761728) tarih ve Saat Seçici denetimine özgü stiller hakkında daha fazla bilgi için Windows SDK'sındaki. Biçim stilleri kullanarak DTP denetimi görüntüleme biçimi ayarlayabilirsiniz. Bu biçim stiller Windows SDK konuda "Biçimi stiller" altında açıklanan [tarih ve Saat Seçici denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761728).  
+ Oluşturduğunuz nesneye çeşitli stilleri uygulayarak, tarih ve Saat Seçici denetimini özelleştirebilirsiniz. Bkz: [tarih ve Saat Seçici denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761728) tarih ve Saat Seçici denetimine belirli stilleri hakkında daha fazla bilgi için Windows SDK. Biçim stilleri kullanarak DTP denetiminde görüntüleme biçimini ayarlayabilirsiniz. Bu biçim stilleri Windows SDK'sı konuda "Biçim stiller" altında açıklanan [tarih ve Saat Seçici denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761728).  
   
- Tarih ve Saat Seçici denetim bildirimleri ve açıklanan geri aramalar kullanan [kullanarak CDateTimeCtrl](../../mfc/using-cdatetimectrl.md).  
+ Tarih ve Saat Seçici denetimini bildirimleri ve şurada açıklanan geri çağırmaları kullanan [kullanarak CDateTimeCtrl](../../mfc/using-cdatetimectrl.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -115,7 +115,7 @@ class CDateTimeCtrl : public CWnd
  **Başlık:** afxdtctl.h  
   
 ##  <a name="cdatetimectrl"></a>  CDateTimeCtrl::CDateTimeCtrl  
- Oluşturan bir `CDateTimeCtrl` nesnesi.  
+ Oluşturur bir `CDateTimeCtrl` nesne.  
   
 ```  
 CDateTimeCtrl();
@@ -129,20 +129,20 @@ void CloseMonthCal() const;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [DTM_CLOSEMONTHCAL](http://msdn.microsoft.com/library/windows/desktop/bb761753) Windows SDK'ın açıklanan ileti.  
+ Bu yöntem gönderir [DTM_CLOSEMONTHCAL](http://msdn.microsoft.com/library/windows/desktop/bb761753) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde değişkeni tanımlar *m_dateTimeCtrl*, yani tarih ve Saat Seçici denetimine programlı olarak erişmek için kullanılır. Bu değişken, sonraki örnekte kullanılır.  
+ Aşağıdaki kod örneği değişkeni tanımlar *m_dateTimeCtrl*diğer bir deyişle, tarih ve Saat Seçici denetimini programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde geçerli tarih ve Saat Seçici denetimini açılan Takvim kapatır.  
+ Aşağıdaki kod örneği, geçerli tarih ve saat seçici denetimi için açılan takvimin kapatır.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_2.cpp)]  
   
 ##  <a name="create"></a>  CDateTimeCtrl::Create  
- Tarih ve Saat Seçici denetimini oluşturur ve ona ekler `CDateTimeCtrl` nesnesi.  
+ Tarih ve saat seçici denetimi oluşturur ve ona ekler `CDateTimeCtrl` nesne.  
   
 ```  
 virtual BOOL Create(
@@ -154,35 +154,35 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- Tarih Saat Denetim stilleri bileşimini belirtir. Bkz: [tarih ve Saat Seçici denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761728) tarih ve Saat Seçici stilleri hakkında daha fazla bilgi için Windows SDK'sındaki.  
+ Tarih Saat Denetim stilleri bileşimini belirtir. Bkz: [tarih ve Saat Seçici denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761728) tarih ve Saat Seçici stilleri hakkında daha fazla bilgi için Windows SDK.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) konum ve boyutlarının tarih ve Saat Seçici denetimini yapısı.  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) tarih ve Saat Seçici denetiminin boyutunu ve konumunu olan yapısı.  
   
  *pParentWnd*  
- Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) tarih ve Saat Seçici denetimini üst pencere nesnesi. Değil olmalıdır **NULL**.  
+ Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) tarih ve Saat Seçici denetiminin üst penceresine olan nesne. NULL olmamalıdır.  
   
  *nID*  
- Tarih ve Saat Seçici denetimin denetim kimliğini belirtir.  
+ Tarih ve Saat Seçici denetiminin denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Oluşturma başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ Oluşturma başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##### <a name="to-create-a-date-and-time-picker-control"></a>Bir tarih ve Saat Seçici denetimini oluşturmak için  
+##### <a name="to-create-a-date-and-time-picker-control"></a>Bir tarih ve Saat Seçici denetimini oluşturma  
   
-1.  Çağrı [CDateTimeCtrl](#cdatetimectrl) oluşturmak için bir `CDateTimeCtrl` nesnesi.  
+1.  Çağrı [CDateTimeCtrl](#cdatetimectrl) oluşturmak için bir `CDateTimeCtrl` nesne.  
   
-2.  Windows tarih ve Saat Seçici denetimini oluşturup ekleninceye bu üye işlevini çağırın `CDateTimeCtrl` nesnesi.  
+2.  Windows tarih ve Saat Seçici denetimini oluşturan ve ekler bu üye işlevi çağrısı `CDateTimeCtrl` nesne.  
   
- Çağırdığınızda **oluşturma**, ortak denetimleri başlatılır.  
+ Çağırdığınızda `Create`, ortak denetimleri yeniden başlatılır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_3.cpp)]  
   
 ##  <a name="getdatetimepickerinfo"></a>  CDateTimeCtrl::GetDateTimePickerInfo  
- Geçerli tarih ve Saat Seçici denetimini ilgili bilgileri alır.  
+ Geçerli tarih ve saat seçici denetimi ile ilgili bilgileri alır.  
   
 ```   
 BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;  
@@ -192,26 +192,26 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pDateTimePickerInfo*|Bir işaretçi bir [DATETIMEPICKERINFO](http://msdn.microsoft.com/library/windows/desktop/bb761729) yapısı geçerli tarih ve Saat Seçici denetimini açıklamasını alır.<br /><br /> Bu yapı ayırma için çağıran sorumludur. Ancak, bu yöntem başlatır *cbSize* yapısı üyesi.|  
+|[out] *pDateTimePickerInfo*|Bir işaretçi bir [DATETIMEPICKERINFO](http://msdn.microsoft.com/library/windows/desktop/bb761729) yapısı geçerli tarih ve Saat Seçici denetiminin açıklamasını alır.<br /><br /> Bu yapı ayırma için çağıran sorumludur. Ancak, bu yöntem başlatır *cbSize* yapı üyesi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [DTM_GETDATETIMEPICKERINFO](http://msdn.microsoft.com/library/windows/desktop/bb761755) Windows SDK'ın açıklanan ileti.  
+ Bu yöntem gönderir [DTM_GETDATETIMEPICKERINFO](http://msdn.microsoft.com/library/windows/desktop/bb761755) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde değişkeni tanımlar *m_dateTimeCtrl*, yani tarih ve Saat Seçici denetimine programlı olarak erişmek için kullanılır. Bu değişken, sonraki örnekte kullanılır.  
+ Aşağıdaki kod örneği değişkeni tanımlar *m_dateTimeCtrl*diğer bir deyişle, tarih ve Saat Seçici denetimini programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneği, geçerli tarih ve saat seçici denetimi hakkındaki bilgiler başarıyla alır olup olmadığını gösterir.  
+ Aşağıdaki kod örneği, geçerli tarih ve saat seçici denetimi ile ilgili bilgileri başarıyla alır olup olmadığını gösterir.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_4.cpp)]  
   
 ##  <a name="getmonthcalcolor"></a>  CDateTimeCtrl::GetMonthCalColor  
- Ay takvim tarih ve Saat Seçici denetimini içinde belirli bir kısmı için renk alır.  
+ Ay takvim tarih ve Saat Seçici denetiminde belirli bir kısmı için renk alır.  
   
 ```  
 COLORREF GetMonthCalColor(int iColor) const;  
@@ -219,61 +219,61 @@ COLORREF GetMonthCalColor(int iColor) const;
   
 ### <a name="parameters"></a>Parametreler  
  *iColor*  
- Bir **int** almak için ay Takvim rengi alanı belirten değer. Değerlerinin listesi için bkz: *iColor* parametresi için [SetMonthCalColor](#setmonthcalcolor).  
+ Bir **int** almak için aylık takvim renk alanı belirten değer. Değerler listesi için bkz. *iColor* parametresi için [SetMonthCalColor](#setmonthcalcolor).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A **COLORREF** başarılı olursa aylık takvim denetiminin belirtilen bölümü için renk ayarı gösteren bir değer. İşlem başarısız olursa, işlevi -1 döndürür.  
+ Ay takvim denetimi başarılı olursa belirtilen kısmı için renk ayarları temsil eden bir COLORREF değeri. İşlem başarısız olursa, işlev -1 döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [DTM_GETMCCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761759), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_GETMCCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761759)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_5.cpp)]  
   
 ##  <a name="getmonthcalctrl"></a>  CDateTimeCtrl::GetMonthCalCtrl  
- Alır `CMonthCalCtrl` tarih ve saat seçici denetimi ile ilişkilendirilmiş nesne.  
+ Alır `CMonthCalCtrl` tarih ve Saat Seçici denetiminin ilişkili nesne.  
   
 ```  
 CMonthCalCtrl* GetMonthCalCtrl() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md) nesnesi veya **NULL** başarısız olursa veya pencere görünür değilse.  
+ Bir işaretçi bir [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md) nesne veya başarısız olursa veya pencerede görünür değilse NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı aşağı açılan okunu tıklattığında tarih ve Saat Seçici denetimleri alt aylık takvim denetiminin oluşturun. Zaman `CMonthCalCtrl` nesne artık gerekli, uygulamanızın tarih saat Seçici denetimin alt Ay takvim temsil eden nesne depolama kalmamanız gerekir böylece bu yok edilir.  
+ Kullanıcı aşağı açılan okunu tıkladığında bir alt aylık takvim denetiminin tarih ve Saat Seçici denetimleri oluşturun. Zaman `CMonthCalCtrl` nesne artık gerekli, böylece uygulamanız tarih saat Seçici denetiminin alt ay takvimi temsil eden bir nesneyi depolamak üzerinde durumda değil, yok edilir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_6.cpp)]  
   
 ##  <a name="getmonthcalfont"></a>  CDateTimeCtrl::GetMonthCalFont  
- Tarih ve Saat Seçici denetimin aylık takvim denetiminin tarafından şu anda kullanılan yazı tipini alır.  
+ Tarih ve Saat Seçici denetiminin ay takvimi tarafından şu anda kullanılan yazı tipini alır.  
   
 ```  
 CFont* GetMonthCalFont() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir [CFont](../../mfc/reference/cfont-class.md) nesnesi veya **NULL** başarısız olursa.  
+ Bir işaretçi bir [CFont](../../mfc/reference/cfont-class.md) nesne veya başarısız olursa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CFont` Dönüş değeri tarafından işaret nesnesi geçici bir nesne ve sonraki boşta kalma işleme süresinde yok.  
+ `CFont` Dönüş değeri tarafından işaret edilen nesne geçici bir nesne ve sonraki boşta işleme sırada yok edilir.  
   
 ##  <a name="getmonthcalstyle"></a>  CDateTimeCtrl::GetMonthCalStyle  
- Geçerli tarih ve Saat Seçici denetimle ilişkili açılan aylık takvim denetiminin stilini alır.  
+ Geçerli tarih ve saat seçici denetimi ile ilişkili açılan aylık takvim denetiminin stilini alır.  
   
 ```  
 DWORD GetMonthCalStyle() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarih ve Saat Seçici denetim stilleri (veya) Bitsel bir birleşimi aşağı açılan aylık takvim denetiminin stili. Daha fazla bilgi için bkz: [ay Takvim denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760919).  
+ Tarih ve Saat Seçici denetim stilleri (veya) karşılaştırmaya aşağı açılan aylık takvim denetiminin stili. Daha fazla bilgi için [aylık takvim denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760919).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [DTM_GETMCSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb761763) Windows SDK'ın açıklanan ileti.  
+ Bu yöntem gönderir [DTM_GETMCSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb761763) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getrange"></a>  CDateTimeCtrl::GetRange  
- Minimum ve maksimum geçerli bir tarih ve Saat Seçici denetimini sistem saatleri izin alır.  
+ Sistem saatleri bir tarih ve saat seçici denetimi için izin verilen minimum ve maksimum geçerli alır.  
   
 ```  
 DWORD GetRange(
@@ -287,30 +287,30 @@ DWORD GetRange(
   
 ### <a name="parameters"></a>Parametreler  
  *pMinRange*  
- Bir işaretçi bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi veya bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) izin verilen en erken zaman içeren bir nesne `CDateTimeCtrl` nesne.  
+ Bir işaretçi bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi veya bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) izin verilen en erken zamanı içeren bir nesne `CDateTimeCtrl` nesne.  
   
  *pMaxRange*  
- Bir işaretçi bir `COleDateTime` nesnesi veya bir `CTime` izin verilen en geç saati içeren bir nesne `CDateTimeCtrl` nesne.  
+ Bir işaretçi bir `COleDateTime` nesnesi veya bir `CTime` içinde izin verilen en son süreyi içeren nesne `CDateTimeCtrl` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `DWORD` hangi aralıkları ayarlama belirten bayrakları içeren değeri. Eğer  
+ Hangi aralıkları ayarlama belirten bayrakları içeren bir DWORD değeri. Eğer  
   
  `return value & GDTR_MAX` == 0  
   
- ardından ikinci parametre geçerli değil. Benzer şekilde, varsa  
+ ardından ikinci parametresi geçerli değil. Benzer şekilde, varsa  
   
  `return value & GDTR_MIN` == 0  
   
  ardından ilk parametresi geçerli değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [DTM_GETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761767), Windows SDK'ın açıklandığı gibi. MFC'nin uygulamasında ya da belirtebilirsiniz `COleDateTime` veya `CTime` kullanımları.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_GETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761767)Windows SDK içinde açıklandığı gibi. MFC'nin uygulamasında belirtebilirsiniz `COleDateTime` veya `CTime` kullanımları.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_7.cpp)]  
   
 ##  <a name="gettime"></a>  CDateTimeCtrl::GetTime  
- Tarih ve Saat Seçici denetimden şu anda seçili zaman alır ve belirtilen yerleştirir `SYSTEMTIME` yapısı.  
+ Bir tarih ve saat seçici denetimi seçili zaman alır ve belirtilen koyar `SYSTEMTIME` yapısı.  
   
 ```  
 BOOL GetTime(COleDateTime& timeDest) const;  
@@ -320,24 +320,24 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
   
 ### <a name="parameters"></a>Parametreler  
  *timeDest*  
- İlk sürümünde, bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) sistem zamanı bilgileri alacak nesnesi. İkinci sürümünde, bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem zamanı bilgileri alacak nesnesi.  
+ İlk sürümünde, bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. Dosyanın ikinci sürümü, bir başvuru olarak bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.  
   
  *pTimeDest*  
- Bir işaretçi [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) sistem zamanı bilgileri almak için yapısı. Olmamalıdır **NULL**.  
+ Bir işaretçi [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk sürümünde, zaman başarıyla yazılır, sıfır olmayan `COleDateTime` nesnesi; Aksi takdirde 0. İkinci ve üçüncü sürümlerinde, bir `DWORD` değerine eşit bir değer *dwFlag* üye kümesinde [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) yapısı. Bkz: **açıklamalar** daha fazla bilgi için bölüm aşağıda.  
+ İlk sürümünde, zaman başarıyla yazılır, sıfır olmayan `COleDateTime` nesne; Aksi durumda 0. İkinci ve üçüncü sürümlerinde, bir DWORD değeri eşittir *dwFlag* üye kümesinde [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) yapısı. Bkz: **açıklamalar** bölümünde daha fazla bilgi için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [DTM_GETSYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/bb761769), Windows SDK'ın açıklandığı gibi. MFC uygulamasında `GetTime`, kullanabileceğiniz `COleDateTime` veya `CTime` sınıfları veya kullanabilirsiniz bir `SYSTEMTIME` zaman bilgilerini depolamak için yapısı.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_GETSYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/bb761769)Windows SDK içinde açıklandığı gibi. MFC uygulamasında `GetTime`, kullanabilirsiniz `COleDateTime` veya `CTime` sınıfları veya kullanabileceğiniz bir `SYSTEMTIME` yapısı, saat bilgilerini depolamak için.  
   
- Dönüş değeri `DWORD` ikinci ve üçüncü sürümlerde, yukarıdaki tarih ve Saat Seçici denetimini "tarih" durumuna ayarlanmış olup olmadığını de belirtildiği gibi gösterir [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) yapısı üye  *dwFlags*. Değer eşittir döndürülürse **GDT_NONE**, denetimi "tarih" durumuna ayarlanır ve kullandığı **DTS_SHOWNONE** stili. Değer eşittir döndürülürse **GDT_VALID**, sistem saatini başarıyla hedef konumda depolanır.  
+ Dönüş değeri DWORD ikinci ve üçüncü sürümlerinde, yukarıdaki tarih ve Saat Seçici denetimini "tarih" durumuna ayarlanmış olup olmadığını, gösterildiği gibi gösterir [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) yapı üyesinin *CertOpenStore* . Döndürülen değer GDT_NONE eşitse, denetimi "tarih" durumuna ayarlanır ve DTS_SHOWNONE stili kullanır. Döndürülen değer GDT_VALID eşitse, sistem saati başarıyla hedef konumda depolanır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_8.cpp)]  
   
 ##  <a name="getidealsize"></a>  CDateTimeCtrl::GetIdealSize  
- Geçerli tarih ve saati görüntülemek için gereken tarih ve Saat Seçici denetimini ideal boyutu döndürür.  
+ İdeal boyutu geçerli tarih ve saati görüntülemek için gerekli olan tarih ve saat seçici denetimi değerini döndürür.  
   
 ```  
 BOOL GetIdealSize(LPSIZE psize) const;  
@@ -350,13 +350,13 @@ BOOL GetIdealSize(LPSIZE psize) const;
 |[out] *psize*|İşaretçi bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) denetimi için ideal boyutu içeren yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dönüş değeri her zaman olduğu `true`.  
+ Dönüş değeri her zaman doğrudur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [DTM_GETIDEALSIZE](http://msdn.microsoft.com/library/windows/desktop/bb761757) Windows SDK'ın açıklanan ileti.  
+ Bu yöntem gönderir [DTM_GETIDEALSIZE](http://msdn.microsoft.com/library/windows/desktop/bb761757) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde değişkeni tanımlar *m_dateTimeCtrl*, yani tarih ve Saat Seçici denetimine programlı olarak erişmek için kullanılır. Bu değişken, sonraki örnekte kullanılır.  
+ Aşağıdaki kod örneği değişkeni tanımlar *m_dateTimeCtrl*diğer bir deyişle, tarih ve Saat Seçici denetimini programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]  
   
@@ -366,7 +366,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_9.cpp)]  
   
 ##  <a name="setformat"></a>  CDateTimeCtrl::SetFormat  
- Belirtilen biçim dizesi uygun bir tarih ve Saat Seçici denetim görüntüsünü ayarlar.  
+ Görüntü verilen biçim dizesi uygun olarak bir tarih ve saat seçici denetimi değerini ayarlar.  
   
 ```  
 BOOL SetFormat(LPCTSTR pstrFormat);
@@ -374,22 +374,22 @@ BOOL SetFormat(LPCTSTR pstrFormat);
   
 ### <a name="parameters"></a>Parametreler  
  *pstrFormat*  
- İstediğiniz görüntüleme tanımlayan sıfır sonlandırılan biçim dizesi için bir işaretçi. Bu parametre ayarını **NULL** denetimi geçerli stil için varsayılan biçim dizesini sıfırlar.  
+ İstediğiniz görüntüyü tanımlayan biçimi Sıfırla sonlandırılmış dizeye bir işaretçi. Bu parametre NULL olarak ayarlamak denetimi geçerli stili için varsayılan biçim dizesini sıfırlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 > [!NOTE]
->  Kullanıcı girişi bu çağrı için başarı veya başarısızlık belirlemez.  
+>  Kullanıcı girişi, bu çağrı için başarı veya başarısızlık belirlemez.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [DTM_SETFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb761771), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_SETFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb761771)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#6](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_10.cpp)]  
   
 ##  <a name="setmonthcalcolor"></a>  CDateTimeCtrl::SetMonthCalColor  
- Ay takvim tarih ve Saat Seçici denetimini içinde belirli bir kısmı rengini belirler.  
+ Ay takvim içinden bir tarih ve Saat Seçici denetimini belirli bir kısmı rengini belirler.  
   
 ```  
 COLORREF SetMonthCalColor(
@@ -403,27 +403,27 @@ COLORREF SetMonthCalColor(
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|MCSC_BACKGROUND|Ay arasında görüntülenen arka plan rengini ayarlayın.|  
+|MCSC_BACKGROUND|Arasındaki ay görüntülenen arka plan rengini ayarlayın.|  
 |MCSC_MONTHBK|Bir ay içinde görüntülenen arka plan rengini ayarlayın.|  
-|MCSC_TEXT|Metin bir ay içinde görüntülemek için kullanılan rengi ayarlayın.|  
-|MCSC_TITLEBK|Takvim başlığında görüntülenen arka plan rengini ayarlayın.|  
-|MCSC_TITLETEXT|Takvim başlık içindeki metnin görüntülemek için kullanılan rengi ayarlayın.|  
-|MCSC_TRAILINGTEXT|Üstbilgi ve sondaki gün metnini görüntülemek için kullanılan rengi ayarlayın. Üstbilgi ve sondaki gün geçerli takvimde görünen önceki ve sonraki aylarda günlük olur.|  
+|MCSC_TEXT|Bir ay içinde metin görüntülemek için kullanılan rengi ayarlayın.|  
+|MCSC_TITLEBK|Takvimin başlığı görüntülenen arka plan rengini ayarlayın.|  
+|MCSC_TITLETEXT|Takvimin başlığı içindeki metni görüntülemek için kullanılan rengi ayarlayın.|  
+|MCSC_TRAILINGTEXT|Üst bilgi ve sondaki günlük metni görüntülemek için kullanılan rengi ayarlayın. Üst bilgi ve sondaki gün geçerli Takvim üzerinde görünen önceki ve sonraki aya ait günler geride kaldı.|  
   
  *ref*  
- A **COLORREF** ay Takvim belirtilen alan için ayarlanacak rengi temsil eden değer.  
+ Ay takvim belirtilen alan için ayarlanacak rengi temsil eden bir COLORREF değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A **COLORREF** başarılı olursa aylık takvim denetiminin belirtilen bölümü için önceki renk ayarı gösteren bir değer. Aksi takdirde, message -1 döndürür.  
+ Ay takvim denetimi başarılı olursa belirtilen kısmı için önceki renk ayarları temsil eden bir COLORREF değeri. Aksi takdirde, iletinin -1 döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [DTM_SETMCCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761773), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_SETMCCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761773)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CDateTimeCtrl::GetMonthCalColor](#getmonthcalcolor).  
+  Örneğin bakın [CDateTimeCtrl::GetMonthCalColor](#getmonthcalcolor).  
   
 ##  <a name="setmonthcalfont"></a>  CDateTimeCtrl::SetMonthCalFont  
- Tarih ve Saat Seçici denetimin alt aylık takvim denetiminin kullanacağı yazı tipini belirler.  
+ Tarih ve Saat Seçici denetiminin alt aylık takvim denetiminin kullanacağı yazı tipini ayarlar.  
   
 ```  
 void SetMonthCalFont(
@@ -433,22 +433,22 @@ void SetMonthCalFont(
   
 ### <a name="parameters"></a>Parametreler  
  *hFont*  
- Ayarlanacak yazı tipi işleyin.  
+ Ayarlanacak yazı tipinin işleyin.  
   
  *bRedraw*  
- Denetim hemen yazı tipini ayarlama üzerine gizlenmesinin olup olmadığını belirtir. Bu parametre ayarını **TRUE** kendisini yeniden çizmek denetimi neden olur.  
+ Denetim hemen yazı ayarını üzerine yeniden çizilmesi olup olmadığını belirtir. Bu parametre TRUE olarak ayarlandığında denetimin çizilmeyi neden olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [DTM_SETMCFONT](http://msdn.microsoft.com/library/windows/desktop/bb761775), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_SETMCFONT](http://msdn.microsoft.com/library/windows/desktop/bb761775)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#7](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_11.cpp)]  
   
 > [!NOTE]
->  Bu kod kullanırsanız, üyesi olmak istersiniz, `CDialog`-türetilmiş sınıf adlı *m_MonthFont* türü `CFont`.  
+>  Bu kodu kullanırsanız, üyesi yapmak istersiniz, `CDialog`-türetilmiş sınıf adlı *m_MonthFont* türü `CFont`.  
   
 ##  <a name="setmonthcalstyle"></a>  CDateTimeCtrl::SetMonthCalStyle  
- Geçerli tarih ve Saat Seçici denetimle ilişkili açılan aylık takvim denetiminin stilini ayarlar.  
+ Geçerli tarih ve saat seçici denetimi ile ilişkili açılan aylık takvim denetiminin stilini ayarlar.  
   
 ```  
 DWORD SetMonthCalStyle(DWORD dwStyle);
@@ -458,26 +458,26 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwStyle*|Ay takvim denetimi stilleri Bitsel bir birleşimi (veya) olan yeni ay Takvim denetimi stili. Daha fazla bilgi için bkz: [ay Takvim denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760919).|  
+|[in] *dwStyle*|Ay takvim denetimi stilleri bit düzeyinde birleşimi (veya) olan yeni aylık takvim denetimi stili. Daha fazla bilgi için [aylık takvim denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760919).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Aşağı açılan aylık takvim denetiminin önceki stili.  
+ Açılan ay Takvim denetimi önceki stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [DTM_SETMCSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb761778) Windows SDK'ın açıklanan ileti.  
+ Bu yöntem gönderir [DTM_SETMCSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb761778) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde değişkeni tanımlar *m_dateTimeCtrl*, yani tarih ve Saat Seçici denetimine programlı olarak erişmek için kullanılır. Bu değişken, sonraki örnekte kullanılır.  
+ Aşağıdaki kod örneği değişkeni tanımlar *m_dateTimeCtrl*diğer bir deyişle, tarih ve Saat Seçici denetimini programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde hafta sayıları, haftanın günü ve bugün gösterge gün kısaltılmış adlarını görüntülemek için tarih ve Saat Seçici denetimini ayarlar.  
+ Aşağıdaki kod örneği, hafta sayıları, kısaltılmış gün haftanın günü ve bugün gösterge görüntülemek için tarih ve Saat Seçici denetimini ayarlar.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_12.cpp)]  
   
 ##  <a name="setrange"></a>  CDateTimeCtrl::SetRange  
- Minimum ve maksimum izin verilen sistem saatleri tarih ve saat seçici denetimi için ayarlar.  
+ Bir tarih ve saat seçici denetimi için minimum ve maksimum izin verilen sistem saatleri ayarlar.  
   
 ```  
 BOOL SetRange(
@@ -492,19 +492,19 @@ BOOL SetRange(
   
 ### <a name="parameters"></a>Parametreler  
  *pMinRange*  
- Bir işaretçi bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi veya bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) izin verilen en erken zaman içeren bir nesne `CDateTimeCtrl` nesne.  
+ Bir işaretçi bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi veya bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) izin verilen en erken zamanı içeren bir nesne `CDateTimeCtrl` nesne.  
   
  *pMaxRange*  
- Bir işaretçi bir `COleDateTime` nesnesi veya bir `CTime` izin verilen en geç saati içeren bir nesne `CDateTimeCtrl` nesne.  
+ Bir işaretçi bir `COleDateTime` nesnesi veya bir `CTime` içinde izin verilen en son süreyi içeren nesne `CDateTimeCtrl` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [DTM_SETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761780), Windows SDK'ın açıklandığı gibi. MFC'nin uygulamasında ya da belirtebilirsiniz `COleDateTime` veya `CTime` kullanımları. Varsa `COleDateTime` nesnesi bir **NULL** durumu, aralığın kaldırılacak. Varsa `CTime` işaretçi veya `COleDateTime` işaretçi **NULL**, aralığın kaldırılacak.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_SETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761780)Windows SDK içinde açıklandığı gibi. MFC'nin uygulamasında belirtebilirsiniz `COleDateTime` veya `CTime` kullanımları. Varsa `COleDateTime` nesnesi NULL durumuna sahiptir, aralığın kaldırılacak. Varsa `CTime` işaretçi veya `COleDateTime` NULL bir işaretçiyse, aralığın kaldırılacak.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CDateTimeCtrl::GetRange](#getrange).  
+  Örneğin bakın [CDateTimeCtrl::GetRange](#getrange).  
   
 ##  <a name="settime"></a>  CDateTimeCtrl::SetTime  
  Bir tarih ve Saat Seçici denetiminde süreyi ayarlar.  
@@ -517,16 +517,16 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  *timeNew*  
- Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesini içeren denetimi ayarlanacak için.  
+ Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesini içeren için Denetim ayarlanır.  
   
  *pTimeNew*  
- İkinci sürümünde yukarıdaki gösteren bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetimi ayarlanacak saati içeren bir nesne. Yukarıdaki gösteren bir işaretçi üçüncü sürümündeki bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) olduğu denetimi ayarlanacak saati içeren yapısı.  
+ İkinci Sürüm yukarıda, işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak saati içeren bir nesne. Bir işaretçi yukarıdaki üçüncü sürümünde bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zaman içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışını uygulayan [DTM_SETSYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/bb761782), Windows SDK'ın açıklandığı gibi. MFC uygulamasında `SetTime`, kullanabileceğiniz `COleDateTime` veya `CTime` sınıfları veya kullanabilirsiniz bir `SYSTEMTIME` saat bilgisi ayarlamak için yapısı.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_SETSYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/bb761782)Windows SDK içinde açıklandığı gibi. MFC uygulamasında `SetTime`, kullanabilirsiniz `COleDateTime` veya `CTime` sınıfları veya kullanabileceğiniz bir `SYSTEMTIME` saat bilgisi ayarlamak için yapı.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#8](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_13.cpp)]  

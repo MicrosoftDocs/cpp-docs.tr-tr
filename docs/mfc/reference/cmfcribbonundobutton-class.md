@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcddf0f1848bdd75714bd5b931dcf8520e68cf8c
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 11c83332c12daa6753add0618367b90f8c759532
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041254"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848774"
 ---
 # <a name="cmfcribbonundobutton-class"></a>CMFCRibbonUndoButton sınıfı
-`CMFCRibbonUndoButton` Sınıfı en son kullanıcı komutlarını içeren bir açılan liste düğmesi uygular. Kullanıcılar, bir veya daha fazla en son komut Yinele ya da bunları geri almak için aşağı açılan listeden seçebilirsiniz.  
+`CMFCRibbonUndoButton` Sınıfı en son kullanıcı komutları içeren bir açılan liste düğmesi uygular. Kullanıcılar, bir veya daha fazla en son komutları Yinele veya geri almak için aşağı açılan listeden seçebilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,22 +48,22 @@ class CMFCRibbonUndoButton : public CMFCRibbonGallery
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonUndoButton::CMFCRibbonUndoButton](#cmfcribbonundobutton)|Yeni bir oluşturur `CMFCRibbonUndoButton` belirttiğiniz komut kimliği, metin etiketi ve üst nesne görüntü listesinden görüntü kullanarak nesne.|  
+|[CMFCRibbonUndoButton::CMFCRibbonUndoButton](#cmfcribbonundobutton)|Yeni bir oluşturur `CMFCRibbonUndoButton` , belirttiğiniz komut kimliği, metin etiketi ve üst nesne görüntü listesinden görüntü kullanarak bir nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonUndoButton::AddUndoAction](#addundoaction)|Yeni bir eylem Eylemler listesine ekler.|  
-|[CMFCRibbonUndoButton::CleanUpUndoList](#cleanupundolist)|Aşağı açılan listesi olan eylem listesini temizler.|  
+|[CMFCRibbonUndoButton::AddUndoAction](#addundoaction)|Yeni bir eylem eylemleri listesine ekler.|  
+|[CMFCRibbonUndoButton::CleanUpUndoList](#cleanupundolist)|Aşağı açılan liste eylem listesini temizler.|  
 |[CMFCRibbonUndoButton::GetActionNumber](#getactionnumber)|Aşağı açılan listeden bir kullanıcı seçili öğe sayısını belirler.|  
 |[CMFCRibbonUndoButton::HasMenu](#hasmenu)|Nesne bir menü içerip içermediğini belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CMFCRibbonUndoButton` Sınıfı aşağı açılan liste temsil edecek bir yığın kullanır.  
+ `CMFCRibbonUndoButton` Sınıfı yanıdaki açılan listeyi temsil etmek için bir yığın kullanır.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCRibbonUndoButton` sınıfı ve yeni bir eylem Eylemler listesine ekleyin. Bu kod parçacığını parçası olan [Şerit araçları örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCRibbonUndoButton` sınıfı ve Eylemler listesine yeni bir eylem ekleyin. Bu kod parçacığı parçasıdır [Şerit araçları örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_RibbonGadgets#2](../../mfc/reference/codesnippet/cpp/cmfcribbonundobutton-class_1.cpp)]  
   
@@ -82,7 +82,7 @@ class CMFCRibbonUndoButton : public CMFCRibbonGallery
  **Başlık:** afxribbonundobutton.h  
   
 ##  <a name="addundoaction"></a>  CMFCRibbonUndoButton::AddUndoAction  
- Yeni bir eylem Eylemler listesine ekler.  
+ Yeni bir eylem eylemleri listesine ekler.  
   
 ```  
 void AddUndoAction(LPCTSTR lpszLabel);
@@ -90,17 +90,17 @@ void AddUndoAction(LPCTSTR lpszLabel);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszLabel*  
- Aşağı açılan liste görünümünde görüntülenen eylem etiketi.  
+ Aşağı açılan listeden görüntülenen eylem etiketi.  
   
 ##  <a name="cleanupundolist"></a>  CMFCRibbonUndoButton::CleanUpUndoList  
- Aşağı açılan listesi olan eylem listesini temizler.  
+ Aşağı açılan liste eylem listesini temizler.  
   
 ```  
 void CleanUpUndoList();
 ```  
   
 ##  <a name="cmfcribbonundobutton"></a>  CMFCRibbonUndoButton::CMFCRibbonUndoButton  
- Yeni bir oluşturur `CMFCRibbonUndoButton` belirttiğiniz komut kimliği, metin etiketi ve üst nesne görüntü listesinden görüntü kullanarak nesne.  
+ Yeni bir oluşturur `CMFCRibbonUndoButton` , belirttiğiniz komut kimliği, metin etiketi ve üst nesne görüntü listesinden görüntü kullanarak bir nesne.  
   
 ```  
 CMFCRibbonUndoButton(
@@ -121,16 +121,16 @@ CMFCRibbonUndoButton(
  Komut tanımlayıcısını belirtir.  
   
  [in] *lpszText*  
- Düğme metni etiketini belirtir.  
+ Düğmenin metin etiketini belirtir.  
   
  [in] *nSmallImageIndex*  
- Üst nesne düğmenin küçük görüntü için görüntü listesi içindeki sıfır tabanlı dizin.  
+ Üst nesne düğmenin küçük resmi için resim listesi içindeki sıfır tabanlı dizin.  
   
  [in] *nLargeImageIndex*  
- Üst nesne için görüntü listesi içindeki sıfır tabanlı dizin düğmenin büyük görüntünün.  
+ Görüntü listesi için üst nesnenin içindeki sıfır tabanlı dizin düğmenin büyük görüntünün.  
   
  [in] *hIcon*  
- Düğmenin resim olarak kullanabileceğiniz bir simge için bir tanıtıcı.  
+ Bir düğmenin resim olarak kullanabileceğiniz bir simge tanıtıcı.  
   
 ##  <a name="getactionnumber"></a>  CMFCRibbonUndoButton::GetActionNumber  
  Aşağı açılan listeden bir kullanıcı seçili öğe sayısını belirler.  
@@ -150,7 +150,7 @@ virtual BOOL HasMenu() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Her zaman döndürür `TRUE`.  
+ Her zaman TRUE değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

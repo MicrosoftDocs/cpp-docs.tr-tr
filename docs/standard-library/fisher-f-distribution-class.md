@@ -36,16 +36,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79ddd6ad1d27f1479bb653373517f7d8c1f1d3bc
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8ab5c5c790813f57da483878cb6a86fcf2ab0f04
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847357"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959657"
 ---
 # <a name="fisherfdistribution-class"></a>fisher_f_distribution Sınıfı
 
-Fisher F dağıtım oluşturur.
+Bir Fisher F dağılımı üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,32 +79,32 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* Tekdüzen rastgele sayı oluşturucu altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG* Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kayan nokta değerleri, bir kullanıcı tarafından belirtilen üreten bir dağıtım şablonu sınıf tanımlar türü veya türü `double` sağlanırsa, Fisher'ın F-dağıtım göre dağıtılmış. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı tanımlar kayan nokta değerleri, kullanıcı tarafından belirtilen üreten bir dağıtım türü veya tür **çift** Fisher'ın F-dağıtım göre belirtilmezse, dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[fisher_f_distribution](#fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|
 |`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#param_type)|
 
-Özellik işlevleri `m()` ve `n()` dönüş depolanan dağıtım parametreleri için değerleri `m` ve `n` sırasıyla.
+Özellik işlevleri `m()` ve `n()` saklı dağıtım parametre değerlerini döndürmek `m` ve `n` sırasıyla.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
 
-`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
 
-`operator()` Üye işlevleri URNG motoru, geçerli parametre paket veya belirtilen parametre paket göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-F-dağıtım hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [F-dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400899).
+F dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [F dağılımı](http://go.microsoft.com/fwlink/p/?linkid=400899).
 
 ## <a name="example"></a>Örnek
 
@@ -168,7 +168,7 @@ int main()
 
 ## <a name="output"></a>Çıkış
 
-İlk çalıştırın:
+İlk çalıştırma:
 
 ```Output
 Enter a floating point value for the 'm' distribution parameter (must be greater than zero): 1
@@ -192,7 +192,7 @@ Distribution for 10 samples:
     10: 3.4320929653
 ```
 
-İkinci çalıştırın:
+İkinci olarak çalıştırın:
 
 ```Output
 Enter a floating point value for the 'm' distribution parameter (must be greater than zero): 1
@@ -248,7 +248,7 @@ Distribution for 10 samples:
 
 ## <a name="fisher_f_distribution"></a>  fisher_f_distribution::fisher_f_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit fisher_f_distribution(result_type m = 1.0, result_type n = 1.0);
@@ -261,19 +261,19 @@ explicit fisher_f_distribution(const param_type& parm);
 
 *n* `n` dağıtım parametresi.
 
-*parametre* `param_type` dağıtım oluşturmak için kullanılan yapısı.
+*parametre* `param_type` dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < m` ve `0.0 < n`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `m` değeri tutan değeri *m* ve, depolanan `n` değeri tutan değeri *n*.
+İlk Oluşturucu bir nesne oluşturur, saklı `m` değerine değeri *m* ve saklı `n` değerine değeri *n*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  fisher_f_distribution::param_type
 
-Dağıtım parametreleri depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -293,13 +293,13 @@ struct param_type {
 
 *n* `n` dağıtım parametresi.
 
-*sağ* `param_type` için karşılaştırılacak nesne.
+*doğru* `param_type` için karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < m` ve `0.0 < n`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

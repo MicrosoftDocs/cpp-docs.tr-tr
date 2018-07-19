@@ -22,16 +22,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f8bd1ec1436b960a0637a79cb04982a953636a6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c4bff519ea12646e94e92cde219fa38e4009a767
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856306"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956465"
 ---
 # <a name="rtsalloc-class"></a>rts_alloc Sınıfı
 
-Rts_alloc Şablon sınıfı açıklayan bir [filtre](../standard-library/allocators-header.md) tutan bir dizi önbelleği örnekleri ve ayırma ve ayırmayı kaldırma yerine çalışma zamanında derleme zamanında kullanmak için hangi örneğinin belirler.
+Rts_alloc Şablon sınıfı tanımlar bir [filtre](../standard-library/allocators-header.md) tutan bir dizi önbellek örnekleri ve ayırmayı ve ayırmayı kaldırma yerine çalışma zamanında derleme zamanında kullanılmak üzere hangi örneğinin belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,23 +44,23 @@ class rts_alloc
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Cache`|Önbelleği örnekleri dizisi içinde yer alan türü. Bu, [cache_chunklist sınıfı](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md), veya [cache_suballoc](../standard-library/cache-suballoc-class.md).|
+|*Önbellek*|Önbellek örnekleri dizisi içinde yer alan türü. Bu, [cache_chunklist sınıfı](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md), veya [cache_suballoc](../standard-library/cache-suballoc-class.md).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfı ayırıcısı örnekleri birden çok blok tutar ve ayırma veya derleme zamanında ayırmayı kaldırma yerine çalışma zamanında kullanılacak hangi örneği belirler. Yeniden bağlamasını derlenemiyor derleyicileri ile kullanılır.
+Bu şablon sınıfı, birden fazla blok ayırıcı örnekleri tutan ve ayırma ya da ayırmayı kaldırma yerine çalışma zamanında derleme zamanında kullanılmak üzere hangi örneğinin belirler. Yeniden bağlamasını derlenemez derleyicilerle birlikte kullanılır.
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bir bellek bloğu ayırır.|
-|[Serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|
-|[equals](#equals)|Eşitlik için iki önbellekleri karşılaştırır.|
+|[Serbest Bırak](#deallocate)|Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.|
+|[equals](#equals)|Eşitlik için iki önbellekler karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 
@@ -76,19 +76,19 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`count`|Ayrılacak dizideki öğelerin sayısı.|
+|*Sayısı*|Ayrılacak dizideki öğelerin sayısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış nesnesine bir işaretçi.
+Ayrılmış bir nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `caches[_IDX].allocate(count)`, burada dizini `_IDX` istenen blok boyutu tarafından belirlenir `count`, veya `count` döndürdüğü çok büyük olduğundan `operator new(count)`. `cache`, önbellek nesnesini temsil eder.
+Üye işlevinin döndürdüğü `caches[_IDX].allocate(count)`burada dizin `_IDX` istenen blok boyutu tarafından belirlenir *sayısı*, veya *sayısı* döndürür, çok büyük olduğundan `operator new(count)`. `cache`, önbellek nesnesini temsil eder.
 
 ## <a name="deallocate"></a>  rts_alloc::deallocate
 
-Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.
+Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -98,16 +98,16 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`ptr`|Depolama biriminden bırakılmasına ilk nesne için bir işaretçi.|
-|`count`|Depolama biriminden bırakılmasına nesnelerin sayısı.|
+|*ptr*|Depolama alanından serbest bırakılması ilk nesneye bir işaretçi.|
+|*Sayısı*|Depolama alanından serbest bırakılması nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrılarını `caches[_IDX].deallocate(ptr, count)`, burada dizini `_IDX` istenen blok boyutu tarafından belirlenir `count`, veya `count` döndürdüğü çok büyük olduğundan `operator delete(ptr)`.
+Üye işlev çağrıları `caches[_IDX].deallocate(ptr, count)`burada dizin `_IDX` istenen blok boyutu tarafından belirlenir *sayısı*, veya *sayısı* döndürür, çok büyük olduğundan `operator delete(ptr)`.
 
 ## <a name="equals"></a>  rts_alloc::Equals
 
-Eşitlik için iki önbellekleri karşılaştırır.
+Eşitlik için iki önbellekler karşılaştırır.
 
 ```cpp
 bool equals(const sync<_Cache>& _Other) const;
@@ -117,14 +117,14 @@ bool equals(const sync<_Cache>& _Other) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`_Cache`|Filtreyle ilişkili önbellek nesnesi.|
-|`_Other`|Eşitlik için karşılaştırmak için önbellek nesnesi.|
+|*_Cache*|Filtreyle ilişkili önbellek nesnesi.|
+|*_Diğer*|Eşitlik için karşılaştırma için önbellek nesnesi.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`true` varsa sonucu `caches[0].equals(other.caches[0])`; Aksi halde, `false`. `caches` Önbellek nesnelerinin dizisini temsil eder.
+**doğru** varsa sonucunu `caches[0].equals(other.caches[0])`; Aksi takdirde **false**. `caches` önbelleğe nesneler dizisi temsil eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)<br/>
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

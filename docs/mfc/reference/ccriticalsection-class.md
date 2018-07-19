@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6aba8c9ebe1eee6ca80d17fdff20c7d3dc30e2ae
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 1ae8582147d6ad50731c457f7996b4ee6ed36324
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956870"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37335636"
 ---
 # <a name="ccriticalsection-class"></a>CCriticalSection sınıfı
-"Kritik bölüm" temsil eder — bir kaynak veya kod bölümüne erişmek için aynı anda tek bir iş parçacığı izin veren bir eşitleme nesnesi.  
+"Kritik bölüm" temsil eder; bir kaynağa veya kod bölümüne erişmek için bir seferde bir iş parçacığına izin veren bir eşitleme nesnesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,42 +46,42 @@ class CCriticalSection : public CSyncObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCriticalSection::CCriticalSection](#ccriticalsection)|Oluşturan bir `CCriticalSection` nesnesi.|  
+|[CCriticalSection::CCriticalSection](#ccriticalsection)|Oluşturur bir `CCriticalSection` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCriticalSection::Lock](#lock)|Erişim kazanmak için `CCriticalSection` nesnesi.|  
-|[CCriticalSection::Unlock](#unlock)|Sürümler `CCriticalSection` nesnesi.|  
+|[CCriticalSection::Lock](#lock)|Erişim elde etmek için kullanmak `CCriticalSection` nesne.|  
+|[CCriticalSection::Unlock](#unlock)|Yayınları `CCriticalSection` nesne.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCriticalSection::operator CRITICAL_SECTION *](#operator_critical_section_star)|Dahili bir işaretçi alır **CRITICAL_SECTION** nesnesi.|  
+|[CCriticalSection::operator CRITICAL_SECTION *](#operator_critical_section_star)|İç CRITICAL_SECTION nesneye bir işaretçi alır.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCriticalSection::m_sect](#m_sect)|A **CRITICAL_SECTION** nesnesi.|  
+|[CCriticalSection::m_sect](#m_sect)|Bir CRITICAL_SECTION nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kritik bölümler, veri veya başka bir denetimli kaynak değiştirmek için aynı anda yalnızca bir iş parçacığı izin olduğunda yararlıdır. Örneğin, düğümleri bağlantılı bir listesine ekleyerek bir iş parçacığı tarafından aynı anda yalnızca izin verilecek bir işlemdir. Kullanarak bir `CCriticalSection` aynı anda tek bir iş parçacığı listesine erişebilir yalnızca bağlantılı liste denetlemek için nesne.  
+ Kritik bölümler, veri veya denetlenen başka bir kaynak değiştirmek için aynı anda yalnızca tek bir iş parçacığı izin verildiğinde kullanışlıdır. Örneğin, bağlı bir liste düğüm ekleme, yalnızca tek bir iş parçacığı tarafından aynı anda izin verilmesi, bir işlemdir. Kullanarak bir `CCriticalSection` öbekleri bağlantılı listede aynı anda tek bir iş parçacığı listesine ulaşmak yalnızca denetlemek için nesne.  
   
 > [!NOTE]
->  İşlevselliğini `CCriticalSection` sınıfı gerçek bir Win32 tarafından sağlanan **CRITICAL_SECTION** nesnesi.  
+>  İşlevselliğini `CCriticalSection` sınıfı gerçek Win32 CRITICAL_SECTION nesne tarafından sağlanır.  
   
- Kritik bölümler zaman uyumu sağlayıcılar yerine kullanılır (bkz [CMutex](../../mfc/reference/cmutex-class.md)) ne zaman hızıdır kritik ve kaynak işlemi sınırlarında kullanılmaz.  
+ Kritik bölümler, mutex'leri yerine kullanılır (bkz [CMutex](../../mfc/reference/cmutex-class.md)) olduğunda hızı kritik ve kaynak arasında işlem sınırları kullanılmayacak.  
   
- Kullanmak için iki yöntem vardır bir `CCriticalSection` nesnesi: tek başına ve katıştırılmış bir sınıf.  
+ Kullanmak için iki farklı yöntemle bir `CCriticalSection` nesne: tek başına ve katıştırılmış bir sınıf.  
   
--   Tek başına kullanmak için tek başına yöntem `CCriticalSection` nesne, oluşturmak `CCriticalSection` nesne gerektiğinde. Sonra başarılı bir dönüş oluşturucusundan açıkça çağrısıyla nesneyi kilitlemek [kilit](#lock). Çağrı [Unlock](#unlock) işiniz bittiğinde kritik bölüm erişme. Bu, daha anlaşılır birisi, kaynak kodu okuma sırasında kilitlemek ve kritik bölüm önce ve sonra erişim kilidini açmak unutmamalısınız gibi daha fazla hataya yöntemidir.  
+-   Tek başına kullanılan tek başına yöntem `CCriticalSection` nesne, oluşturmak `CCriticalSection` gerektiğinde nesne. Sonra başarılı bir dönüş oluşturucudan açıkça çağrısıyla nesneyi kilitlemek [kilit](#lock). Çağrı [kilidini](#unlock) işiniz bittiğinde kritik bölüm erişme. Bu, kaynak kodunuzu okuyan kişi daha anlaşılır sırasında kilitlemek ve kritik bölüm önce ve sonra erişim kilidini açmak hatırlamalısınız gibi daha fazla hataya yöntemidir.  
   
-     Daha fazla tercih edilen bir yöntem kullanmaktır [CSingleLock](../../mfc/reference/csinglelock-class.md) sınıfı. Ayrıca sahip bir `Lock` ve `Unlock` yöntemi, ancak bir özel durum oluşursa, kaynağın kilidini açma hakkında endişelenmeniz zorunda değilsiniz.  
+     Daha fazla tercih edilen bir yöntem kullanmaktır [CSingleLock](../../mfc/reference/csinglelock-class.md) sınıfı. Ayrıca bir `Lock` ve `Unlock` yöntemi, ancak bir özel durum oluşursa, kaynağın kilidini açma hakkında endişe etmeniz gerekmez.  
   
--   Ayrıca paylaşabilirsiniz bir sınıfın birden çok iş parçacığı ile ekleyerek yöntemi katıştırılmış bir `CCriticalSection`-türü veri üyesini sınıfı ve gerektiğinde veri üyesi kilitleme.  
+-   Yöntemi de paylaşabilirsiniz bir sınıf ile birden çok iş parçacığı ekleyerek katıştırılmış bir `CCriticalSection`-türü veri üyesi sınıfı ve gerektiğinde veri üyesi kilitleme.  
   
  Kullanma hakkında daha fazla bilgi için `CCriticalSection` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).  
   
@@ -96,22 +96,22 @@ class CCriticalSection : public CSyncObject
  **Başlık:** afxmt.h  
   
 ##  <a name="ccriticalsection"></a>  CCriticalSection::CCriticalSection  
- Oluşturan bir `CCriticalSection` nesnesi.  
+ Oluşturur bir `CCriticalSection` nesne.  
   
 ```  
 CCriticalSection();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Erişim veya serbest bir `CCriticalSection` nesne, oluşturma bir [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne ve çağrı kendi [kilit](../../mfc/reference/csinglelock-class.md#lock) ve [Unlock](../../mfc/reference/csinglelock-class.md#unlock) üye işlevleri. Varsa `CCriticalSection` nesne kullanılan tek başına, çağrı kendi [Unlock](#unlock) üye işlevi bırakın.  
+ Erişim veya yayın için bir `CCriticalSection` nesne, oluşturun bir [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne ve çağrı kendi [kilit](../../mfc/reference/csinglelock-class.md#lock) ve [kilidini](../../mfc/reference/csinglelock-class.md#unlock) üye işlevleri. Varsa `CCriticalSection` nesne kullanılan tek başına, çağrı kendi [kilidini](#unlock) bunu serbest bırakmak için üye işlevi.  
   
- Gerekli sistem belleği, bellek özel durumunu ayırmaya Oluşturucusu başarısız olursa (tür [CMemoryException](../../mfc/reference/cmemoryexception-class.md)) otomatik olarak oluşturulur.  
+ Oluşturucu bir yetersiz bellek özel gerekli sistem bellek ayırma başarısız olursa (tür [CMemoryException](../../mfc/reference/cmemoryexception-class.md)) otomatik olarak oluşturulur.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CCriticalSection::Lock](#lock).  
+  Örneğin bakın [CCriticalSection::Lock](#lock).  
   
 ##  <a name="lock"></a>  CCriticalSection::Lock  
- Kritik bölüm nesnesine erişim kazanmak için bu üye işlevini çağırın.  
+ Kritik bölüm nesneye erişmek için bu üye işlevini çağırın.  
   
 ```  
 BOOL Lock();  
@@ -120,55 +120,55 @@ BOOL Lock(DWORD dwTimeout);
   
 ### <a name="parameters"></a>Parametreler  
  *dwTimeout*  
- `Lock` Bu parametre değeri yok sayar.  
+ `Lock` Bu parametreyi yok sayar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ İşlev başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Lock` kritik bölüm nesne işaret kadar döndürmeyecektir engelleyen bir çağrısıdır (kullanılabilir olur).  
+ `Lock` kritik bölüm nesnesi sinyal kadar döndürmez engelleyici bir çağrıdır (kullanılabilir olur).  
   
- Zamanlanmış bekler gerekliyse, kullanabileceğiniz bir [CMutex](../../mfc/reference/cmutex-class.md) yerine Nesne bir `CCriticalSection` nesnesi.  
+ Zamanlanmış bekler gerekliyse, kullanabileceğiniz bir [CMutex](../../mfc/reference/cmutex-class.md) yerine Nesne bir `CCriticalSection` nesne.  
   
- Varsa `Lock` gerekli sistem belleği, bellek özel durumunu ayırmaya başarısız (tür [CMemoryException](../../mfc/reference/cmemoryexception-class.md)) otomatik olarak oluşturulur.  
+ Varsa `Lock` gerekli sistem bellek, bellek özel durumu başarısız (tür [CMemoryException](../../mfc/reference/cmemoryexception-class.md)) otomatik olarak oluşturulur.  
   
 ### <a name="example"></a>Örnek  
- Bu örnek, bir paylaşılan kaynağa erişim denetleyerek iç içe geçmiş kritik bölüm yaklaşım gösterir (statik `_strShared` nesnesi) paylaşılan kullanarak `CCriticalSection` nesnesi. `SomeMethod` İşlevi gösteren bir paylaşılan kaynak güvenli bir şekilde güncelleştirme.  
+ Bu örnek, paylaşılan bir kaynağa erişimi denetleyerek iç içe geçmiş kritik bölüm yaklaşımı gösterir (statik `_strShared` nesnesi) paylaşılan kullanarak `CCriticalSection` nesne. `SomeMethod` İşlevi gösterir güvenli bir şekilde paylaşılan bir kaynağa güncelleştiriliyor.  
   
  [!code-cpp[NVC_MFC_Utilities#11](../../mfc/codesnippet/cpp/ccriticalsection-class_1.h)]  
   
 ##  <a name="m_sect"></a>  CCriticalSection::m_sect  
- Tüm tarafından kullanılan bir kritik bölüm nesnesi içeren `CCriticalSection` yöntemleri.  
+ Tüm tarafından kullanılan kritik bölüm nesnesi içeren `CCriticalSection` yöntemleri.  
   
 ```  
 CRITICAL_SECTION m_sect;  
 ```  
   
 ##  <a name="operator_critical_section_star"></a>  CCriticalSection::operator CRITICAL_SECTION *  
- Alır bir **CRITICAL_SECTION** nesnesi.  
+ CRITICAL_SECTION nesnesi alır.  
   
 ```  
 operator CRITICAL_SECTION*();
 ```   
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi iç almak için bu işlevi çağırmak **CRITICAL_SECTION** nesnesi.  
+ İç CRITICAL_SECTION nesnenin işaretçisini almak için bu işlevi çağırın.  
   
 ##  <a name="unlock"></a>  CCriticalSection::Unlock  
- Sürümler `CCriticalSection` nesne başka bir iş parçacığı tarafından kullanım için.  
+ Yayınları `CCriticalSection` başka bir iş parçacığı tarafından kullanılacak nesne.  
   
 ```  
 BOOL Unlock();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sıfır olmayan IF `CCriticalSection` nesnenin iş parçacığı tarafından sahibi ve yayın başarılı; Aksi halde 0.  
+ Gösterimiyse `CCriticalSection` nesne iş parçacığı tarafından ait ve yayın başarılı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `CCriticalSection` tek başına kullanılan `Unlock` kritik bölümü tarafından denetlenen kaynak kullanımını tamamlandıktan hemen sonra çağrılmalıdır. Varsa bir [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne kullanılıyor, `CCriticalSection::Unlock` kilit nesnenin tarafından çağrılacak `Unlock` üye işlevi.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CCriticalSection::Lock](#lock).  
+  Örneğin bakın [CCriticalSection::Lock](#lock).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSyncObject sınıfı](../../mfc/reference/csyncobject-class.md)   

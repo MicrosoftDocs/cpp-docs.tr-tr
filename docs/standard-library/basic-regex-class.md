@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec5ca351f6ac96fd8420ee921ca95b78ee2f487d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2f13dfb45073a1a21e8d6a7b4585f0dfc5c71b8e
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33848316"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959754"
 ---
 # <a name="basicregex-class"></a>basic_regex Sınıfı
 
@@ -84,29 +84,29 @@ class basic_regex {
 
 ### <a name="parameters"></a>Parametreler
 
-`Elem` Eşleşen öğelerin türü.
+*Elem* eşleşecek öğelerin türü.
 
-`RXtraits` Öğeleri için nitelikler sınıfı.
+*RXtraits* öğeler için nitelikler sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, normal bir ifade tutan bir nesneyi tanımlar. Bu şablon sınıfının nesneleri için şablon işlevleri geçirilebilir [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), ve [regex_replace](../standard-library/regex-functions.md#regex_replace), uygun metin dizesi bağımsız değişkenleri, birlikte normal ifadeyle eşleşen metni aramak için. Tür tanımları ile bu şablonu sınıfın iki özelleştirmeleri vardır [regex](../standard-library/regex-typedefs.md#regex) türündeki öğeler için `char`, ve [wregex](../standard-library/regex-typedefs.md#wregex) türündeki öğeler için `wchar_t`.
+Şablon sınıfı, normal bir ifade tutan bir nesneyi tanımlar. Bu şablon sınıfının nesneleri şablon işlevlerine geçirilebilir [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), ve [regex_replace](../standard-library/regex-functions.md#regex_replace), birlikte uygun metin dizesi bağımsız değişkenleri normal ifadeyle eşleşen metni aramak için kullanılır. Tür tanımları içeren bu şablon sınıfının iki uzmanlıklar vardır [regex](../standard-library/regex-typedefs.md#regex) türü öğeler için **char**, ve [wchar_t](../standard-library/regex-typedefs.md#wregex) türü öğeler için  **wchar_t**.
 
-Şablon bağımsız değişken `RXtraits` Şablon sınıfı destekleyen normal ifadenin sözdizimi çeşitli önemli özelliklerini açıklar. Bu normal ifade nitelikler belirten bir sınıf şablonu sınıfın bir nesnesi olarak aynı dış arabirimi olmalıdır [regex_traits sınıfı](../standard-library/regex-traits-class.md).
+Şablon bağımsız değişkeni *RXtraits* şablon sınıfını destekleyen normal ifadelerin söz diziminin çeşitli önemli özelliklerini açıklar. Bu normal ifade niteliklerini belirten bir sınıfın şablon sınıfının bir nesnesiyle aynı dış arayüze sahip olması gerekir [regex_traits sınıfı](../standard-library/regex-traits-class.md).
 
 Bazı işlevler, normal bir ifade tanımlayan bir bir işlenen dizisi alır. Böyle bir işleç sırasını birkaç şekilde belirtebilirsiniz:
 
-`ptr` --bir null ile sonlandırılmış dizisi (C dize gibi için `Elem` türü `char`) Başlangıç `ptr` (olduğu bir null işaretçinin olmamalıdır), sonlandırma öğesi değeri olduğu `value_type()` ve işlenen dizisinin bir parçası değil
+`ptr` --null ile sonlandırılmış bir sıra (C dizesi gibi için *Elem* türü **char**) konumunda başlayan `ptr` (olduğu bir null işaretçi olmamalıdır), burada sonlandıran öğe, değer `value_type()` ve işlenen sırasının parçası değildir
 
-`ptr`, `count` --bir dizi `count` Başlangıç öğeleri `ptr` (hangi olmamalıdır null işaretçi)
+`ptr`, `count` --bir dizi `count` konumunda başlayan öğeleri `ptr` (olmamalıdır bir null işaretçi)
 
-`str` --tarafından belirtilen sıra `basic_string` nesnesi `str`
+`str` --tarafından belirtilen dizi `basic_string` nesnesi `str`
 
-`first`, `last` --öğeleri yineleyiciler tarafından ayrılmış bir dizi `first` ve `last`, aralığında `[first, last)`
+`first`, `last` --yineleyicileri tarafından sınırlanan öğelerin bir dizisi `first` ve `last`, aralıktaki `[first, last)`
 
 `right` -- `basic_regex` nesnesi `right`
 
-Bu üye işlevleri de bir bağımsız değişken alıp `flags` tarafından açıklanan ek olarak normal ifade yorumu için çeşitli seçenekler belirtir `RXtraits` türü.
+Bu üye işlevleri bağımsız değişken da göz önüne `flags` tarafından tanımlananlara ek olarak normal ifadenin yorumu için çeşitli seçenekler belirten *RXtraits* türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -116,7 +116,7 @@ Bu üye işlevleri de bir bağımsız değişken alıp `flags` tarafından açı
 
 ## <a name="assign"></a>  basic_regex::Assign
 
-Bir değer normal expressoin nesneye atar.
+Bir değeri normal expressoin nesnesine atar.
 
 ```cpp
 basic_regex& assign(
@@ -148,31 +148,31 @@ basic_regex& assign(
 
 ### <a name="parameters"></a>Parametreler
 
-`STtraits` Bir dize kaynağı için nitelikler sınıfı.
+*STtraits* bir dize kaynağı için nitelikler sınıfı.
 
-`STalloc` Allocator sınıfı bir dize kaynağı.
+*STalloc* bir dize kaynağı için ayırıcı sınıf.
 
-`InIt` Yineleyici türü için bir aralığı kaynağı girin.
+*InIt* giriş için bir aralık kaynak yineleyici türü.
 
-`right` Kopyalamak için Regex kaynağı.
+*doğru* kopyalamak için Regex kaynak.
 
-`ptr` Kopyalamak için dizisi başlangıcını işaretçi.
+*PTR* dizisi başına kopyalamak için işaretçi.
 
-`flags` Kopyalanırken eklemek için seçenek bayraklarını sözdizimi.
+*bayrakları* kopyalanırken eklemek için söz dizimi seçeneği bayrakları.
 
-`len/TD>` Kopyalamak için sırası uzunluğu.
+*Len/TD >* kopyalanacağı dizinin uzunluğu.
 
-`str` Kopyalamak için dize.
+*str* dizesini kopyalayın.
 
-`first` Kopyalamak için bir dizi başlangıcı.
+*İlk* kopyalamak için bir dizi başlangıcı.
 
-`last` Kopyalamak için dizisi sonu.
+*Son* kopyalamak için son sırasının.
 
-`IList` Kopyalamak için initializer_list.
+*IList* kopyalanacağı initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her üye işlevleri tarafından tutulan normal ifade Değiştir `*this` işlenen sırası tarafından tanımlanan normal ifadeyle uyumlu sonra geri dönüp `*this`.
+Her üye işlevleri tarafından tutulan bir normal ifade değiştirin `*this` ve işlenen sırasının tarafından tanımlanan normal ifade ile çıkacak `*this`.
 
 ### <a name="example"></a>Örnek
 
@@ -293,35 +293,35 @@ explicit basic_regex(
 
 ### <a name="parameters"></a>Parametreler
 
-`STtraits` Bir dize kaynağı için nitelikler sınıfı.
+*STtraits* bir dize kaynağı için nitelikler sınıfı.
 
-`STalloc` Allocator sınıfı bir dize kaynağı.
+*STalloc* bir dize kaynağı için ayırıcı sınıf.
 
-`InIt` Yineleyici türü için bir aralığı kaynağı girin.
+*InIt* giriş için bir aralık kaynak yineleyici türü.
 
-`right` Kopyalamak için Regex kaynağı.
+*doğru* kopyalamak için Regex kaynak.
 
-`ptr` Kopyalamak için dizisi başlangıcını işaretçi.
+*PTR* dizisi başına kopyalamak için işaretçi.
 
-`flags` Kopyalanırken eklemek için seçenek bayraklarını sözdizimi.
+*bayrakları* kopyalanırken eklemek için söz dizimi seçeneği bayrakları.
 
-`len/TD>` Kopyalamak için sırası uzunluğu.
+*Len/TD >* kopyalanacağı dizinin uzunluğu.
 
-`str` Kopyalamak için dize.
+*str* dizesini kopyalayın.
 
-`first` Kopyalamak için bir dizi başlangıcı.
+*İlk* kopyalamak için bir dizi başlangıcı.
 
-`last` Kopyalamak için dizisi sonu.
+*Son* kopyalamak için son sırasının.
 
-`IList` Kopyalamak için initializer_list.
+*IList* kopyalanacağı initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak oluşturulan bir nesne türü tüm oluşturucular depolamak `RXtraits`.
+Varsayılan olarak oluşturulmuş bir nesne türünün tüm oluşturucular depolamak `RXtraits`.
 
-Boş bir ilk Oluşturucusu oluşturur `basic_regex` nesnesi. Diğer oluşturucular oluşturmak bir `basic_regex` işlenen sırası tarafından tanımlanan normal ifade tutan nesne.
+İlk Oluşturucu boş bir yapıları `basic_regex` nesne. Diğer oluşturucular oluşturmak bir `basic_regex` ve işlenen sırasının tarafından açıklanan normal bir ifade tutan nesne.
 
-Boş bir `basic_regex` nesne için geçirildiğinde bir karakter dizisi eşleşmiyor [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), veya [regex_replace](../standard-library/regex-functions.md#regex_replace).
+Boş bir `basic_regex` nesne için geçirildiğinde karakter dizisi eşleşmiyor [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), veya [regex_replace](../standard-library/regex-functions.md#regex_replace).
 
 ### <a name="example"></a>Örnek
 
@@ -407,7 +407,7 @@ match("abc", "") == falsematch("abc", "abcd") == falsematch("abc", "abc") == tru
 
 ## <a name="flag_type"></a>  basic_regex::flag_type
 
-Sözdizimi seçeneği bayrakları türü.
+Söz dizimi seçeneği bayrakları türü.
 
 ```cpp
 typedef regex_constants::syntax_option_type flag_type;
@@ -415,7 +415,7 @@ typedef regex_constants::syntax_option_type flag_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşanlamlısı türüdür [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type).
+Türü eşanlamlıdır [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type).
 
 ### <a name="example"></a>Örnek
 
@@ -504,7 +504,7 @@ getloc == imbued == true
 
 ## <a name="flags"></a>  basic_regex::Flags
 
-Sözdizimi seçeneği bayrakları döndürür.
+Söz dizimi seçeneği bayrakları döndürür.
 
 ```cpp
 flag_type flags() const;
@@ -512,7 +512,7 @@ flag_type flags() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini değerini döndürür `flag_type` bağımsız değişken geçirildi birini en son çağrısına [basic_regex::assign](#assign) üye işlevleri veya böyle bir çağrı yaptıysanız oluşturucuya geçirilen değer.
+Üye işlevi değerini döndürür `flag_type` birine en son çağrısına geçirilen bağımsız değişken [basic_regex::assign](#assign) üye işlevleri veya böyle bir çağrı yapıldı, oluşturucuya geçirilen değer.
 
 ### <a name="example"></a>Örnek
 
@@ -609,7 +609,7 @@ locale_type getloc() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `traits.` [regex_traits::getloc](../standard-library/regex-traits-class.md#getloc)`()`.
+Üye işlevinin döndürdüğü `traits.` [regex_traits::getloc](../standard-library/regex-traits-class.md#getloc)`()`.
 
 ### <a name="example"></a>Örnek
 
@@ -706,11 +706,11 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>Parametreler
 
-`loc` Depolamak için yerel ayar nesnesi.
+*loc* saklamak için yerel ayar nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini boşaltır `*this` ve döndürür `traits.` [regex_traits::imbue](../standard-library/regex-traits-class.md#imbue)`(loc)`.
+Üye işlevi boşaltır `*this` ve döndürür `traits.` [regex_traits::imbue](../standard-library/regex-traits-class.md#imbue)`(loc)`.
 
 ### <a name="example"></a>Örnek
 
@@ -799,7 +799,7 @@ getloc == imbued == true
 
 ## <a name="locale_type"></a>  basic_regex::locale_type
 
-Depolanan yerel nesne türü.
+Depolanan yerel ayar nesnesi türü.
 
 ```cpp
 typedef typename RXtraits::locale_type locale_type;
@@ -807,7 +807,7 @@ typedef typename RXtraits::locale_type locale_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşanlamlısı türüdür [regex_traits::locale_type](../standard-library/regex-traits-class.md#locale_type).
+Türü eşanlamlıdır [regex_traits::locale_type](../standard-library/regex-traits-class.md#locale_type).
 
 ### <a name="example"></a>Örnek
 
@@ -896,7 +896,7 @@ getloc == imbued == true
 
 ## <a name="mark_count"></a>  basic_regex::mark_count
 
-Eşleşen alt ifadelerin sayısını döndürür.
+Eşleşen alt ifadeler sayısını döndürür.
 
 ```cpp
 unsigned mark_count() const;
@@ -904,7 +904,7 @@ unsigned mark_count() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini yakalama grupların sayısı normal ifadede döndürür.
+Üye işlevi içindeki bir normal ifade yakalama gruplarının sayısını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -993,7 +993,7 @@ getloc == imbued == true
 
 ## <a name="op_eq"></a>  basic_regex::operator =
 
-Bir değeri normal ifade nesnesi atar.
+Bir değeri normal ifade nesnesine atar.
 
 ```cpp
 basic_regex& operator=(const basic_regex& right);
@@ -1006,17 +1006,17 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 
 ### <a name="parameters"></a>Parametreler
 
-`STtraits` Bir dize kaynağı için nitelikler sınıfı.
+*STtraits* bir dize kaynağı için nitelikler sınıfı.
 
-`STalloc` Allocator sınıfı bir dize kaynağı.
+*STalloc* bir dize kaynağı için ayırıcı sınıf.
 
-`right` Kopyalamak için Regex kaynağı.
+*doğru* kopyalamak için Regex kaynak.
 
-`str` Kopyalamak için dize.
+*str* dizesini kopyalayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her işleçleri tarafından tutulan normal ifade Değiştir `*this` işlenen sırası tarafından tanımlanan normal ifadeyle uyumlu sonra geri dönüp `*this`.
+Her işleçleri tarafından tutulan bir normal ifade değiştirin `*this` ve işlenen sırasının tarafından tanımlanan normal ifade ile çıkacak `*this`.
 
 ### <a name="example"></a>Örnek
 
@@ -1105,7 +1105,7 @@ getloc == imbued == true
 
 ## <a name="swap"></a>  basic_regex::Swap
 
-İki normal ifade nesnesi değiştirir.
+İki normal ifade nesneleri değiştirir.
 
 ```cpp
 void swap(basic_regex& right) throw();
@@ -1113,11 +1113,11 @@ void swap(basic_regex& right) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-`right` İle değiştirme için normal ifade nesnesi.
+*doğru* ile takas için normal ifade nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normal ifadeler arasında üye fonksiyonu değiştirir `*this` ve `right`. Bunu Sabit sürede yapar ve hiçbir özel durum oluşturur.
+Normal ifadeler arasındaki üye işlevi değiştirir `*this` ve *doğru*. Bu sabit sürede yazılabilmesine ve hiçbir özel durum oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -1214,7 +1214,7 @@ typedef Elem value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür `Elem`.
+Şablon parametresi için bir eşanlamlı türüdür *Elem*.
 
 ### <a name="example"></a>Örnek
 
@@ -1307,6 +1307,6 @@ getloc == imbued == true
 [regex_match](../standard-library/regex-functions.md#regex_match)<br/>
 [regex_search](../standard-library/regex-functions.md#regex_search)<br/>
 [regex_replace](../standard-library/regex-functions.md#regex_replace)<br/>
-[Regex](../standard-library/regex-typedefs.md#regex)<br/>
-[wregex](../standard-library/regex-typedefs.md#wregex)<br/>
+[Normal ifade](../standard-library/regex-typedefs.md#regex)<br/>
+[wchar_t](../standard-library/regex-typedefs.md#wregex)<br/>
 [regex_traits Sınıfı](../standard-library/regex-traits-class.md)<br/>

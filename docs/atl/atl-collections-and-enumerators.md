@@ -1,5 +1,5 @@
 ---
-title: ATL koleksiyonları ve numaralandırmalar | Microsoft Docs
+title: ATL koleksiyonları ve numaralandırıcıları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,38 +17,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 537d7e8b7264beddc68805ab8b8dec2ce7883859
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9837b42148062bdd2c44855c129f085ca47cdec0
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356784"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848800"
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL Koleksiyonları ve Numaralandırmalar
-A `collection` veri öğelerinin (Ham verileri veya diğer nesnelerin) grubuna erişim sağlayan bir arabirim sağlayan bir COM nesnesidir. Bir grup erişimi sağlama olarak bilinen için standartlarını takip eden bir arabirim bir *koleksiyonu arabirimi*.  
+A `collection` veri öğelerinin (Ham verileri veya diğer nesneleri) bir gruba erişim sağlayan bir arabirim sunan bir COM nesnesi olması. Bir grup nesne erişimi sağlama olarak da bilinen için standartlarını takip eden bir arabirim bir *koleksiyon arabirimi*.  
   
- En azından, koleksiyon arabirimleri sağlamalısınız bir **sayısı** koleksiyondaki öğe sayısını döndürür özelliği bir **öğesi** dayalı bir dizin, koleksiyondaki bir öğe döndüren özelliği ve `_NewEnum` özellik koleksiyonu için bir numaralandırıcı döndürür. İsteğe bağlı olarak, koleksiyon arabirimleri sağlayabilir **Ekle** ve **kaldırmak** eklenen veya koleksiyondan silinen öğeleri izin veren yöntemleri ve **Temizle** kaldırmak için yöntemi tüm öğeler.  
+ En azından, koleksiyon arabirimleri sağlamalısınız bir `Count` koleksiyondaki öğe sayısını döndüren özellik bir `Item` bir dizinini temel alarak koleksiyondan bir öğe döndüren özellik ve `_NewEnum` döndüren özellik bir koleksiyon için Numaralandırıcı. İsteğe bağlı olarak, koleksiyon arabirimleri sağlayabilir `Add` ve `Remove` eklenen veya koleksiyondan silinen öğeleri izin veren yöntemleri ve `Clear` tüm öğeleri kaldırmak için yöntemi.  
   
- Bir `enumerator` bir koleksiyondaki öğelerin üzerinden yineleme için bir arabirim sağlayan bir COM nesnesidir. Numaralandırıcı arabirimleri dört gerekli yöntem aracılığıyla bir koleksiyonun öğelerini seri erişim sağlar: `Next`, **atla**, **sıfırlama**, ve `Clone`.  
+ Bir `enumerator` bir koleksiyondaki öğelerin üzerinden yineleme için bir arabirim sunan bir COM nesnesi. Numaralandırıcı arabirimleri dört gerekli yöntemleri aracılığıyla bir koleksiyonun öğeleri seri erişim sağlar: `Next`, `Skip`, `Reset`, ve `Clone`.  
   
- Okumayı archetypal (ancak tamamen sanal) tarafından Numaralandırıcı arabirimleri hakkında daha fazla bilgiyi [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx) arabirimi.  
+ Numaralandırıcı arabirimleri hakkında daha fazla bilgi okumayı archetypal (ancak tamamen sanal) tarafından edinebilirsiniz [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx) arabirimi.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [ATL Koleksiyonu ve Numaralandırıcısı Sınıfları](../atl/atl-collection-and-enumerator-classes.md)  
- Kısaca açıklayan ve Koleksiyonlar ve numaralandırmalar yardımcı olacak ATL sınıfları bağlantılar uygulamak sağlar.  
+ Kısaca açıklayan ve koleksiyonları ve numaralandırıcıları yardımcı olacak ATL sınıfları için bağlantıları uygulama sağlar.  
   
  [Koleksiyon ve Numaralandırıcı Arabirimleri için Tasarım İlkeleri](../atl/design-principles-for-collection-and-enumerator-interfaces.md)  
- Her tür arabirimi arkasında farklı tasarım ilkeleri açıklanır.  
+ Her tür arabirimin arkasına farklı tasarım ilkelerini ele alınmaktadır.  
   
  [C++ Standart Kitaplığı Temelli Koleksiyon Uygulama](../atl/implementing-an-stl-based-collection.md)  
- C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama anlatan genişletilmiş örneği.  
+ Bir C++ Standart Kitaplığı temelli koleksiyon uygulama size genişletilmiş bir örnek.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [ATL](../atl/active-template-library-atl-concepts.md)  
- Etkin Şablon Kütüphanesi kullanarak programı kavramsal konulara bağlantılar verilmektedir.  
+ Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.  
   
  [ATLCollections örnek](../visual-cpp-samples.md)  
- Kullanımını gösteren bir örnek `ICollectionOnSTLImpl` ve `CComEnumOnSTL`ve özel kopyalama İlkesi sınıfları uygulamasıdır.  
+ Kullanımını gösteren bir örnek `ICollectionOnSTLImpl` ve `CComEnumOnSTL`ve özel kopyalama İlkesi sınıfları uygulamasını.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../atl/active-template-library-atl-concepts.md)

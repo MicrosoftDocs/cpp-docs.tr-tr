@@ -1,5 +1,5 @@
 ---
-title: char_traits&lt;char&gt; yapısı | Microsoft Docs
+title: char_traits&lt;char&gt; yapı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a20e9c1df241feb8dd7f16891f1e2a67068f772
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1150de3c94f8a656d46d54b673cb2d08dc05a7be
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840400"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959332"
 ---
 # <a name="chartraitsltchargt-struct"></a>char_traits&lt;char&gt; yapısı
 
-Şablon yapısı uzmanlığı olan yapı **char_traits\<CharType >** türünde bir öğe için `char`.
+Şablon yapı özelleştirmesi olan yapı **char_traits\<CharType >** türünde bir öğe için **char**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,8 +37,8 @@ struct char_traits<char>;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uzmanlık izin verir, bu tür nesneler işlemek kitaplık işlevleri yararlanmak yapı `char`.
+Bu tür nesneler düzenleme kitaplığı işlevleri yararlanmak yapı özelleştirmesi sağlar **char**.
 
 ## <a name="example"></a>Örnek
 
-Şablon sınıfının tür tanımları ve üye işlevleri bkz [char_traits sınıfı](../standard-library/char-traits-struct.md)
+Tür tanımları ve üye işlevleri şablon sınıfının [char_traits sınıfı](../standard-library/char-traits-struct.md)

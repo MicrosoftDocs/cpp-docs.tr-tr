@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eff0c41993a450e74b468b747776368bae6ad848
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9192f52b35ec50c7acb1672e03ea248d140c7f71
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862880"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957528"
 ---
 # <a name="sharedptr-class"></a>shared_ptr Sınıfı
 
@@ -61,13 +61,13 @@ class shared_ptr;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Shared_ptr sınıfı başvuru kaynakları yönetmek için sayım kullanan bir nesneyi tanımlar. A `shared_ptr` nesnesi sahibi veya bir null işaretçinin tutan kaynak için etkili bir şekilde bir işaretçi tutar. Bir kaynak birden fazla tarafından ait olabilir `shared_ptr` nesne; zaman son `shared_ptr` belirli bir kaynak sahibi nesnesi yok, kaynak serbest bırakılır.
+Shared_ptr sınıfı, kaynakları yönetmek için referans sayımı kullanan bir nesneyi tanımlar. A `shared_ptr` nesne kaynak sahibi veya bir null işaretçiyi tuttuğu için etkili bir şekilde bir işaretçi tutar. Kaynak birden fazla tarafından sahiplenilebilir `shared_ptr` nesne; olduğunda son `shared_ptr` belirli bir kaynağa sahip nesnesi yok edildiğinde, kaynak serbest bırakılır.
 
-A `shared_ptr` yeniden atandığında veya sıfırlandığında kaynak sahibi olan durdurur.
+A `shared_ptr` yeniden atandığında veya sıfırlandığında kaynağa sahip olmayı durdurur.
 
-Şablon bağımsız değişken `T` dışında tamamlanmamış bir türü belirli üye işlevleri belirtildiği gibi olabilir.
+Şablon bağımsız değişkeni `T` belirli üye işlevleri belirtilenler dışında bir eksik tür olabilir.
 
-Zaman bir `shared_ptr<T>` nesne türü kaynak işaretçi oluşturulan `G*` veya bir `shared_ptr<G>`, işaretçi türü `G*` dönüştürülebilir olmalıdır `T*`. Değilse, kod derlenmez. Örneğin:
+Olduğunda bir `shared_ptr<T>` nesnesi, bir kaynak türü işaretçisinden oluşturulduğunda `G*` veya bir `shared_ptr<G>`, işaretçi türünün `G*` dönüştürülebilmelidir `T*`. Yüklü değilse, kod derlemeyecektir. Örneğin:
 
 ```cpp
 #include <memory>
@@ -85,55 +85,55 @@ shared_ptr<int> sp5(new G); // error, G* not convertible to int*
 shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared_ptr<F>
 ```
 
-A `shared_ptr` nesneye sahip olan bir kaynak:
+A `shared_ptr` nesnesi bir kaynağa sahiptir:
 
-- Bu kaynak için bir işaretçi ile oluşturulan
+- Bu kaynağa bir işaretçi ile oluşturulmuşsa,
 
-- Bunu olacak oluşturulan varsa bir `shared_ptr` , kaynağın sahibi nesnesi
+- öğesinden oluşturulmuşsa bir `shared_ptr` bu kaynağa sahip nesne
 
-- Bunu olacak oluşturulan varsa bir [weak_ptr sınıfı](../standard-library/weak-ptr-class.md) bu kaynağa işaret nesnesi veya
+- öğesinden oluşturulmuşsa bir [weak_ptr sınıfı](../standard-library/weak-ptr-class.md) konusu kaynağı işaret eden bir nesne veya
 
-- Bu kaynak sahipliğini ona biriyle atanmışsa [shared_ptr::operator =](#op_eq) veya üye işlevini çağırarak [shared_ptr::reset](#reset).
+- Bu kaynağın sahipliği ona ile atanmışsa [shared_ptr::operator =](#op_eq) veya üye işlevini çağırarak [shared_ptr::reset](#reset).
 
-`shared_ptr` Bir kaynağa sahip nesneleri bir denetim bloğu paylaşır. Denetim bloğu tutar:
+`shared_ptr` Bir kaynağa sahip nesneleri bir denetim bloğunu paylaşır. Denetim bloğu şunları tutar:
 
-- sayısı `shared_ptr` kaynağa sahip nesneleri
+- sayısını `shared_ptr` kaynağa sahip nesneleri
 
-- sayısı `weak_ptr` kaynak noktasına nesneleri
+- sayısını `weak_ptr` kaynağa işaret nesneleri
 
-- Silici varsa, bu kaynak için
+- varsa, o kaynak için Silici,
 
-- varsa, denetim bloğu için özel ayırıcı.
+- varsa, Denetim bloğunun özel bellek ayırıcısı.
 
-A `shared_ptr` null işaretçi kullanarak başlatılır nesne denetim bloğu var ve boş değil. Sonra bir `shared_ptr` nesne serbest kaynak, artık bu kaynağına sahip. Sonra bir `weak_ptr` nesne serbest kaynak, artık bu kaynağa işaret eder.
+A `shared_ptr` bir null işaretçi kullanılarak başlatılan bir nesne bir denetim bloğu yoktur ve boş değil. Sonra bir `shared_ptr` nesnesi bir kaynağı serbest bıraktıktan, artık bu kaynağa sahip değildir. Sonra bir `weak_ptr` nesnesi bir kaynağı serbest bıraktıktan, artık o kaynağa işaret eder.
 
-Zaman sayısını `shared_ptr` nesneleri kendi kaynak sıfır olur, silmek veya kaynak sahipliğini başlangıçta nasıl oluşturulduğuna bağlı olarak bir Silici adresini geçirilmesi kaynak bırakıldığını. Zaman sayısını `shared_ptr` bir kaynağa sahip nesneleri, sıfır ve sayısı `weak_ptr` işaret kaynak sıfırsa, denetim bloğu varsa, özel ayırıcı denetim bloğu kullanarak serbest bırakılır nesneleri.
+Zaman sayısını `shared_ptr` kendi kaynak sıfır olduğunda, kaynak, silmek ya da adresini kaynağının sahipliğinin orijinal olarak nasıl oluşturulduğuna bağlı olarak bir Silici geçirerek serbest nesneleri. Zaman sayısını `shared_ptr` bir kaynağa sahip nesneleri, sıfır ve sayısını, `weak_ptr` nesneleri işaret kaynak sıfırsa, denetim bloğu, varsa, denetim bloğu özel ayırıcı kullanılarak serbest bırakılır.
 
-Boş bir `shared_ptr` nesne herhangi bir kaynağa sahip değil ve hiçbir denetim bloğu sahiptir.
+Boş bir `shared_ptr` nesnesi bir kaynağı bulunmaz ve denetim bloğu yoktur.
 
-Bir Silici üye işlevine sahip bir işlev nesnesidir `operator()`. Türü kopya oluşturulabilir olmalıdır ve kopya oluşturucu ve yıkıcı özel durumlar oluşturma gerekir değil. Bu, bir parametre, Silinecek nesnenin kabul eder.
+Silici üye işleve sahip bir işlev nesnesidir `operator()`. Türü kopya atmamalıdır olmalıdır ve kopya oluşturucusu ve yıkıcısı özel durum oluşturmamalıdır. Bu, bir parametre, silinecek nesneyi kabul eder.
 
-Bazı işlevler elde edilen özelliklerini tanımlayan bir bağımsız değişken listesi ele `shared_ptr<T>` veya `weak_ptr<T>` nesnesi. Bu tür bir bağımsız değişken listesi çeşitli yollarla belirtebilirsiniz:
+Bazı işlevler ortaya çıkan özelliklerini tanımlayan bir bağımsız değişken listesi alır `shared_ptr<T>` veya `weak_ptr<T>` nesne. Böyle bir bağımsız değişken listesini birkaç şekilde belirtebilirsiniz:
 
-bağımsız değişkenler--elde edilen nesnenin boş olduğundan `shared_ptr` nesne ya da boş bir `weak_ptr` nesnesi.
+bağımsız değişken yok--sonuç nesnesi boş bir `shared_ptr` nesnesidir veya boş bir `weak_ptr` nesne.
 
-`ptr` --bir işaretçi türü `Other*` yönetilecek kaynağa. `T` tam bir tür olması gerekir. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa ifadeyi hesaplar `delete ptr`.
+`ptr` --türünde bir işaretçi `Other*` yönetilecek kaynağa. `T` tam bir tür olmalıdır. (Denetim bloğu ayrılamadığından), işlev başarısız olursa ifadesini değerlendirir `delete ptr`.
 
-`ptr, dtor` --bir işaretçi türü `Other*` yönetilmek üzere kaynak ve bu kaynak için bir Silici. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa, çağıran `dtor(ptr)`, hangi olmalıdır iyi tanımlanmış.
+`ptr, dtor` --türünde bir işaretçi `Other*` kaynağın yönetilmesini ve bu kaynak için Silici. (Denetim bloğu ayrılamadığından), işlev başarısız olursa çağrı `dtor(ptr)`, iyi tanımlanmış olmalıdır.
 
-`ptr, dtor, alloc` --bir işaretçi türü `Other*` yönetilecek olan kaynak, bir Silici ayrılmış ve serbest gereken herhangi bir depolama alanı yönetmek için bir ayırıcı ve bu kaynak için. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa çağırır `dtor(ptr)`, hangi olmalıdır iyi tanımlanmış.
+`ptr, dtor, alloc` --türünde bir işaretçi `Other*` yönetilecek kaynağın, ayrılan ve serbest gereken herhangi bir depolama alanı yönetmek için ayırıcı yanı sıra bu kaynak için Silici. (Denetim bloğu ayrılamadığından), işlev başarısız olursa çağrı `dtor(ptr)`, iyi tanımlanmış olmalıdır.
 
-`sp` --bir `shared_ptr<Other>` yönetilecek kaynağına sahip bir nesne.
+`sp` --bir `shared_ptr<Other>` yönetilecek kaynağın sahibi nesne.
 
-`wp` --bir `weak_ptr<Other>` yönetilecek kaynağa işaret eden nesne.
+`wp` --bir `weak_ptr<Other>` yönetilecek kaynağı işaret eden bir nesne.
 
-`ap` --bir `auto_ptr<Other>` yönetilecek kaynak için bir işaretçi tutan nesne. İşlev çağrıları başarılı olursa `ap.release()`; Aksi halde bırakır `ap` değişmez.
+`ap` --bir `auto_ptr<Other>` yönetilecek kaynağa bir işaretçi tutan nesne. İsteğe bağlı olarak işlev çağrıları başarılı olursa `ap.release()`; Aksi halde bırakır `ap` değişmez.
 
-Tüm durumlarda işaretçi türü `Other*` dönüştürülebilir olmalıdır `T*`.
+Tüm durumlarda, işaretçi türünün `Other*` dönüştürülebilmelidir `T*`.
 
 ## <a name="thread-safety"></a>İş Parçacığı Güvenliği
 
-Birden çok iş parçacığı okuma ve farklı yazma `shared_ptr` nesnelerin sahipliği paylaşmak kopyaları olduğunda bile aynı anda nesneleri.
+Birden çok iş parçacığı okuma ve yazma farklı `shared_ptr` nesneler bu paylaşım sahipliğinin kopyası bile aynı anda nesneleri.
 
 ## <a name="members"></a>Üyeler
 
@@ -141,8 +141,8 @@ Birden çok iş parçacığı okuma ve farklı yazma `shared_ptr` nesnelerin sah
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[shared_ptr](#shared_ptr)|Oluşturan bir `shared_ptr`.|
-|[shared_ptr:: ~ shared_ptr](#dtorshared_ptr)|Bozar bir `shared_ptr`.|
+|[shared_ptr](#shared_ptr)|Oluşturur bir `shared_ptr`.|
+|[shared_ptr:: ~ shared_ptr](#dtorshared_ptr)|Yok eder bir `shared_ptr`.|
 
 ### <a name="types"></a>Türler
 
@@ -154,21 +154,21 @@ Birden çok iş parçacığı okuma ve farklı yazma `shared_ptr` nesnelerin sah
 
 |İşlev|Açıklama|
 |-|-|
-|[get](#get)|Ait kaynak adresi alır.|
-|[owner_before](#owner_before)|Bu, true döndürür `shared_ptr` önce sıralanır (veya küçüktür) sağlanan işaretçi.|
-|[Sıfırla](#reset)|Ait kaynak değiştirin.|
-|[Değiştirme](#swap)|İki değiştirir `shared_ptr` nesneleri.|
-|[Benzersiz](#unique)|Kaynak sahibi testleri benzersizdir.|
-|[use_count](#use_count)|Kaynak sahiplerine sayısını sayar.|
+|[get](#get)|Sahip olunan kaynağının adresini alır.|
+|[owner_before](#owner_before)|Bu, true döndürür `shared_ptr` önceyse (veya küçüktür) sağlanan işaretçi.|
+|[Sıfırlama](#reset)|Sahip olunan Kaynağı Değiştir.|
+|[değiştirme](#swap)|İki değiştirir `shared_ptr` nesneleri.|
+|[benzersiz](#unique)|Sahip olunan kaynağın benzersiz olup olmadığını sınar.|
+|[use_count](#use_count)|Kaynak sahiplerinin sayısını sayar.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[shared_ptr::operator bool](#op_bool)|Testleri ait kaynak varsa.|
-|[shared_ptr::operator *](#op_star)|Belirlenen değer alır.|
-|[shared_ptr::operator=](#op_eq)|Ait kaynak yerini alır.|
-|[shared_ptr::operator-&gt;](#op_arrow)|Bir işaretçi için belirlenen değer alır.|
+|[shared_ptr::operator bool](#op_bool)|Sahip olunan bir kaynağın varolup olmadığını test eder.|
+|[shared_ptr::operator *](#op_star)|Belirtilen değeri alır.|
+|[shared_ptr::operator=](#op_eq)|Sahip olunan kaynağı değiştirir.|
+|[shared_ptr::operator-&gt;](#op_arrow)|Belirtilen değer için bir işaretçi alır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -186,7 +186,7 @@ typedef T element_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür `T`.
+Şablon parametresi için bir eşanlamlı türüdür `T`.
 
 ### <a name="example"></a>Örnek
 
@@ -214,7 +214,7 @@ int main()
 
 ## <a name="get"></a>  shared_ptr::get
 
-Ait kaynak adresi alır.
+Sahip olunan kaynağının adresini alır.
 
 ```cpp
 T *get() const;
@@ -222,7 +222,7 @@ T *get() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini ait kaynak adresini döndürür. Nesne bir kaynağın sahibi değil ise 0 döndürür.
+Üye işlevi, sahip olunan kaynağının adresini döndürür. Nesnesi bir kaynağa sahip değilse, 0 döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -253,7 +253,7 @@ sp0.get() == 0 == true
 
 ## <a name="op_bool"></a>  shared_ptr::operator bool
 
-Testleri ait kaynak varsa.
+Sahip olunan bir kaynağın varolup olmadığını test eder.
 
 ```cpp
 explicit operator bool() const noexcept;
@@ -261,7 +261,7 @@ explicit operator bool() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç değerini döndürür `true` zaman `get() != nullptr`, aksi takdirde `false`.
+İşleç değerini döndürür **true** olduğunda `get() != nullptr`, aksi takdirde **false**.
 
 ### <a name="example"></a>Örnek
 
@@ -293,7 +293,7 @@ int main()
 
 ## <a name="op_star"></a>  shared_ptr::operator *
 
-Belirlenen değer alır.
+Belirtilen değeri alır.
 
 ```cpp
 T& operator*() const;
@@ -301,7 +301,7 @@ T& operator*() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İndirection işleci döndürür `*get()`. Bu nedenle, depolanan işaretçisi null olmamalıdır.
+Yöneltme işleci döndürür `*get()`. Bu nedenle, depolanmış işaretçiyi null olmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -328,7 +328,7 @@ int main()
 
 ## <a name="op_eq"></a>  shared_ptr::operator =
 
-Ait kaynak yerini alır.
+Sahip olunan kaynağı değiştirir.
 
 ```cpp
 shared_ptr& operator=(const shared_ptr& sp);
@@ -351,13 +351,13 @@ shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
 
 ### <a name="parameters"></a>Parametreler
 
-`sp` Kopyalamak için paylaşılan işaretçi.
+*SP* kopyalamak için paylaşılan işaretçi.
 
-`ap` Kopyalamak için otomatik işaretçi.
+*AP* kopyalamak için otomatik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda sahibi kaynak için başvuru sayısı azaltma işleçleri tüm `*this` ve işlenen sırası tarafından adlı kaynağı sahipliğini Ata `*this`. Başvuru sayısı sıfıra düşerse, kaynak yayımlanır. İsteğe bağlı olarak bir işleç bırakır başarısız olursa `*this` değişmez.
+Tüm işleçleri tarafından sahip olunan kaynağı için başvuru sayısını azaltma `*this` ve işlenen dizinin tarafından adlı kaynağın sahipliğini Ata `*this`. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır. İsteğe bağlı olarak bir işleç leaves başarısız olursa `*this` değişmez.
 
 ### <a name="example"></a>Örnek
 
@@ -391,7 +391,7 @@ int main()
 
 ## <a name="op_arrow"></a>  shared_ptr::operator-&gt;
 
-Bir işaretçi için belirlenen değer alır.
+Belirtilen değer için bir işaretçi alır.
 
 ```cpp
 T * operator->() const;
@@ -399,7 +399,7 @@ T * operator->() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Seçim operatörü döndürür `get()`, böylece ifade `sp->member` aynı şekilde davranır `(sp.get())->member` nerede `sp` sınıfın bir nesnesi olup `shared_ptr<T>`. Bu nedenle, depolanan işaretçisi null olmamalıdır ve `T` sınıf, yapı veya birleşim türü bir üyeyle olmalıdır `member`.
+Seçim operatörü döndürür `get()`, böylece ifade `sp->member` gibi davranır `(sp.get())->member` burada `sp` sınıfın bir nesnesi `shared_ptr<T>`. Bu nedenle, depolanmış işaretçiyi null olmamalıdır ve `T` sınıf, yapı veya birleşim türü bir üyeyle olmalıdır `member`.
 
 ### <a name="example"></a>Örnek
 
@@ -429,7 +429,7 @@ sp0->second == 2
 
 ## <a name="owner_before"></a>  shared_ptr::owner_before
 
-Bu, true döndürür `shared_ptr` önce sıralanır (veya küçüktür) sağlanan işaretçi.
+Bu, true döndürür `shared_ptr` önceyse (veya küçüktür) sağlanan işaretçi.
 
 ```cpp
 template <class Other>
@@ -441,15 +441,15 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 ### <a name="parameters"></a>Parametreler
 
-`ptr` Bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
+*PTR* bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon üye işlevi varsa true değerini döndürür `*this` olan `ordered before` `ptr`.
+Şablon üye işlev true döndürür `*this` olduğu `ordered before` `ptr`.
 
 ## <a name="reset"></a>  shared_ptr::reset
 
-Ait kaynak değiştirin.
+Sahip olunan Kaynağı Değiştir.
 
 ```cpp
 void reset();
@@ -466,21 +466,21 @@ void reset(Other *ptr, D dtor, A alloc);
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` Bağımsız değişken işaretçiyi tarafından denetlenen türü.
+*Diğer* bağımsız değişken işaretçiyle kontrol edilen tür.
 
-`D` Silici türü.
+*D* Silici türü.
 
-`ptr` Kopyalamak için işaretçi.
+*PTR* kopya işaretçisi.
 
-`dtor` Kopyalamak için Silici.
+*dtor* kopyalamak için Silici.
 
-`A` Ayırıcı türü.
+*A* ayırıcı türü.
 
-`alloc` Kopyalamak için ayırıcısı.
+*ayırma* kopyalamak için ayırıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda sahibi kaynak için başvuru sayısı azaltma işleçleri tüm `*this` ve işlenen sırası tarafından adlı kaynağı sahipliğini Ata `*this`. Başvuru sayısı sıfıra düşerse, kaynak yayımlanır. İsteğe bağlı olarak bir işleç bırakır başarısız olursa `*this` değişmez.
+Tüm işleçleri tarafından sahip olunan kaynağı için başvuru sayısını azaltma `*this` ve işlenen dizinin tarafından adlı kaynağın sahipliğini Ata `*this`. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır. İsteğe bağlı olarak bir işleç leaves başarısız olursa `*this` değişmez.
 
 ### <a name="example"></a>Örnek
 
@@ -531,7 +531,7 @@ int main()
 
 ## <a name="shared_ptr"></a>  shared_ptr::shared_ptr
 
-Oluşturan bir `shared_ptr`.
+Oluşturur bir `shared_ptr`.
 
 ```cpp
 shared_ptr();
@@ -581,27 +581,27 @@ shared_ptr(const unique_ptr<Other, D>& up) = delete;
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` Bağımsız değişken işaretçiyi tarafından denetlenen türü.
+*Diğer* bağımsız değişken işaretçiyle kontrol edilen tür.
 
-`ptr` Kopyalamak için işaretçi.
+*PTR* kopya işaretçisi.
 
-`D` Silici türü.
+*D* Silici türü.
 
-`A` Ayırıcı türü.
+*A* ayırıcı türü.
 
-`dtor` Silici.
+*dtor* Silici.
 
-`ator` Ayırıcı.
+*etmeni* ayırıcı.
 
-`sp` Kopyalamak için akıllı işaretçi.
+*SP* kopyalamak için akıllı işaretçi.
 
-`wp` Zayıf işaretçi.
+*WP* zayıf işaretçi.
 
-`ap` Kopyalamak için otomatik işaretçi.
+*AP* kopyalamak için otomatik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her oluşturucular tarafından işlenen dizisi adlı kaynağına sahip bir nesne oluşturur. Oluşturucusu `shared_ptr(const weak_ptr<Other>& wp)` türünde bir özel durum nesnesi oluşturur [bad_weak_ptr sınıfı](../standard-library/bad-weak-ptr-class.md) varsa `wp.expired()`.
+Her oluşturucular tarafından işlenen dizisi adlı kaynağına sahip olan bir nesne oluşturur. Oluşturucu `shared_ptr(const weak_ptr<Other>& wp)` türünde bir özel durum nesnesi oluşturur [bad_weak_ptr sınıfı](../standard-library/bad-weak-ptr-class.md) varsa `wp.expired()`.
 
 ### <a name="example"></a>Örnek
 
@@ -658,7 +658,7 @@ int main()
 
 ## <a name="dtorshared_ptr"></a>  shared_ptr:: ~ shared_ptr
 
-Bozar bir `shared_ptr`.
+Yok eder bir `shared_ptr`.
 
 ```cpp
 ~shared_ptr();
@@ -666,7 +666,7 @@ Bozar bir `shared_ptr`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yok Edicisi azaltır sahibi şu anda kaynak için başvuru sayısı `*this`. Başvuru sayısı sıfıra düşerse, kaynak yayımlanır.
+Yıkıcı azaltır sahibi şu anda kaynak başvuru sayımını `*this`. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır.
 
 ### <a name="example"></a>Örnek
 
@@ -722,11 +722,11 @@ void swap(shared_ptr& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-`sp` Paylaşılan işaretçisi ile değiştirilecek.
+*SP* paylaşılan işaretçi ile değiştirilecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye fonksiyonu tarafından başlangıçta ait kaynak bırakır `*this` sonradan sahibi `sp`ve başlangıçta ait kaynak `sp` sonradan sahibi `*this`. İşlev iki kaynaklar için başvuru sayıları değiştirmez ve özel durumlar oluşturmadığını.
+Üye işlevi başlangıçta tarafından sahip olunan kaynağı bırakır `*this` sonradan tarafından sahip olunan *sp*ve başlangıçta tarafından sahip olunan kaynağı *sp* sonradan tarafından sahip olunan `*this`. İşlev iki kaynaklar için başvuru sayılarını değiştirmez ve özel durumlar oluşturmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -784,7 +784,7 @@ int main()
 
 ## <a name="unique"></a>  shared_ptr::Unique
 
-Kaynak sahibi testleri benzersizdir.
+Sahip olunan kaynağın benzersiz olup olmadığını sınar.
 
 ```cpp
 bool unique() const;
@@ -792,7 +792,7 @@ bool unique() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `true` Hayır başka `shared_ptr` nesnenin sahibi tarafından ait kaynak `*this`, aksi takdirde `false`.
+Üye işlevinin döndürdüğü **true** başka hiçbir varsa `shared_ptr` nesnenin sahibi tarafından sahip olunan kaynağı `*this`, aksi takdirde **false**.
 
 ### <a name="example"></a>Örnek
 
@@ -832,7 +832,7 @@ sp1.unique() == false
 
 ## <a name="use_count"></a>  shared_ptr::use_count
 
-Kaynak sahiplerine sayısını sayar.
+Kaynak sahiplerinin sayısını sayar.
 
 ```cpp
 long use_count() const;
@@ -840,7 +840,7 @@ long use_count() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini sayısını döndürür `shared_ptr` tarafından ait kaynak sahibi nesneleri `*this`.
+Üye işlevi döndürür `shared_ptr` tarafından sahip olunan bir kaynağa sahip nesneleri `*this`.
 
 ### <a name="example"></a>Örnek
 

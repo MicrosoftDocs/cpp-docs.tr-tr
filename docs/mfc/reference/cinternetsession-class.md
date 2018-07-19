@@ -1,5 +1,5 @@
 ---
-title: CInternetSession sınıfı | Microsoft Docs
+title: Cınternetsession sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 06/20/2018
 ms.technology:
@@ -42,16 +42,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 648d295af6ca767eb0291f1eb8f0cd172d0717cc
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: d8eb030bb6827fd8df5a7f4826c4c1e4b3b47b5a
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041116"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37337176"
 ---
-# <a name="cinternetsession-class"></a>CInternetSession sınıfı
+# <a name="cinternetsession-class"></a>Cınternetsession sınıfı
 
-Oluşturur ve tek bir veya birkaç eşzamanlı Internet oturum başlatır ve gerekiyorsa, proxy sunucusuna bağlantınız açıklar.
+Oluşturur ve tek bir veya birden çok eşzamanlı Internet oturumu başlatır ve gerekirse bağlantınızı bir ara sunucuya tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,22 +65,22 @@ class CInternetSession : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CInternetSession::CInternetSession](#cinternetsession)|Oluşturan bir `CInternetSession` nesnesi.|
+|[CInternetSession::CInternetSession](#cinternetsession)|Oluşturur bir `CInternetSession` nesne.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[CInternetSession::Close](#close)|Internet oturumu sonlandırıldığında Internet bağlantıyı kapatır.|
-|[CInternetSession::EnableStatusCallback](#enablestatuscallback)|Durum geri arama yordamı oluşturur.|
+|[CInternetSession::EnableStatusCallback](#enablestatuscallback)|Durumu geri çağırma yordamı oluşturur.|
 |[CInternetSession::GetContext](#getcontext)|Internet oturumu sonlandırıldığında Internet bağlantıyı kapatır.|
 |[CInternetSession::GetCookie](#getcookie)|Tanımlama bilgileri, belirtilen URL'yi ve tüm üst için URL'leri döndürür.|
-|[CInternetSession::GetCookieLength](#getcookielength)|Arabellekte depolanan tanımlama bilgisi uzunluğu belirtme değişkeni alır.|
-|[CInternetSession::GetFtpConnection](#getftpconnection)|Bir FTP oturumunun bir sunucu ile açılır. Kullanıcıya günlüğe kaydeder.|
-|[CInternetSession::GetGopherConnection](#getgopherconnection)|Bir bağlantı açmak için çalışan bir uygulama için bir gopher sunucusu açar.|
-|[CInternetSession::GetHttpConnection](#gethttpconnection)|Bir bağlantı açmak için çalışan bir uygulama için bir HTTP sunucusu açar.|
-|[CInternetSession::OnStatusCallback](#onstatuscallback)|Durum geri araması etkinleştirildiğinde, bir işlemin durumunu güncelleştirir.|
-|[CInternetSession::OpenURL](#openurl)|Ayrıştırır ve bir URL açar.|
+|[CInternetSession::GetCookieLength](#getcookielength)|Arabellekteki depolanan bir tanımlama bilgisi uzunluğunu belirten değişken alır.|
+|[CInternetSession::GetFtpConnection](#getftpconnection)|Sunucusu ile FTP oturumu açılır. Kullanıcı günlüğe kaydeder.|
+|[CInternetSession::GetGopherConnection](#getgopherconnection)|Bir bağlantı açmaya çalışırken bir uygulama için bir gopher sunucusu açılır.|
+|[CInternetSession::GetHttpConnection](#gethttpconnection)|Bir bağlantı açmaya çalışırken bir uygulama için bir HTTP sunucusu açılır.|
+|[CInternetSession::OnStatusCallback](#onstatuscallback)|Durum geri çağırması etkin olduğunda, bir işlemin durumunu güncelleştirir.|
+|[CInternetSession::OpenURL](#openurl)|Ayrıştırır ve bir URL açılır.|
 |[CInternetSession::SetCookie](#setcookie)|Belirtilen URL için bir tanımlama bilgisi ayarlar.|
 |[CInternetSession::SetOption](#setoption)|Seçenekler Internet oturumu için ayarlar.|
 
@@ -92,26 +92,26 @@ class CInternetSession : public CObject
 
 ## <a name="remarks"></a>Açıklamalar
 
-Internet bağlantınız için bir uygulama süresi korunmalıdır, oluşturabileceğiniz bir `CInternetSession` sınıf üyesi [CWinApp](../../mfc/reference/cwinapp-class.md).
+Bir uygulama süresi boyunca Internet bağlantınızın tutulması gereken, oluşturabileceğiniz bir `CInternetSession` sınıfının üyesi [CWinApp](../../mfc/reference/cwinapp-class.md).
 
-Bir Internet oturumu kurduktan sonra çağırabilirsiniz [OpenURL](#openurl). `CInternetSession` ardından URL sizin için genel işlevini çağırarak ayrıştırır [AfxParseURL](internet-url-parsing-globals.md#afxparseurl). Kendi protokol türü ne olursa olsun `CInternetSession` URL yorumlar ve sizin için yönetir. URL kaynak "file://" tanımlanan yerel dosyaları için istekleri işleyebilir. `OpenURL` bir işaretçi döndürülecek bir [CStdioFile](../../mfc/reference/cstdiofile-class.md) adı geçirdiğiniz nesne yerel bir dosyasıdır.
+Bir Internet oturumu kurduktan sonra çağırabilirsiniz [OpenURL](#openurl). `CInternetSession` ardından URL'yi sizin için genel bir işlev çağırarak ayrıştırır [AfxParseURL](internet-url-parsing-globals.md#afxparseurl). Kendi protokol türü ne olursa olsun `CInternetSession` URL yorumlar ve sizin yerinize yönetir. Bu URL kaynağının "file://" ile tanımlanan yerel dosyalarla ilgili istekleri işleyebilir. `OpenURL` bir işaretçi döndürür bir [CStdioFile](../../mfc/reference/cstdiofile-class.md) adı geçirdiğiniz nesne yerel bir dosyasıdır.
 
-Kullanarak bir Internet sunucusu üzerinde bir URL açarsanız `OpenURL`, site veritabanından bilgi edinebilirsiniz. Bir sunucuda bulunan dosyaları (örneğin, HTTP, FTP veya gopher için) hizmete özgü eylemleri gerçekleştirmek istiyorsanız, o sunucuda uygun bir bağlantı oluşturmanız gerekir. Doğrudan belirli bir hizmet bağlantı belirli bir tür açmak için aşağıdaki üye işlevleri birini kullanın:
+Bir URL kullanarak bir Internet sunucusu üzerinde açarsanız `OpenURL`, site veritabanından bilgi edinebilirsiniz. Bir sunucuda bulunan dosya çubuğunda (örneğin, HTTP, FTP veya gopher için) hizmete özgü eylemleri gerçekleştirmek istiyorsanız, o sunucuda uygun bir bağlantı oluşturmanız gerekir. Belirli bir doğrudan belirli bir hizmet bağlantı türünü açmak için aşağıdaki üye işlevleri birini kullanın:
 
-- [GetGopherConnection](#getgopherconnection) gopher hizmetine bir bağlantı açmak için.
+- [GetGopherConnection](#getgopherconnection) bir gopher hizmetine bir bağlantı açmak için.
 
-- [GetHttpConnection](#gethttpconnection) bir HTTP hizmetine bir bağlantı açmak için.
+- [GetHttpConnection](#gethttpconnection) HTTP hizmetine bir bağlantı açmak için.
 
-- [GetFtpConnection](#getftpconnection) bir FTP hizmetine bir bağlantı açmak için.
+- [GetFtpConnection](#getftpconnection) FTP hizmetine bir bağlantı açmak için.
 
-[SetOption](#setoption) zaman aşımı değerlerini, yeniden deneme sayısı, gibi oturumunuz sorgu seçenekleri ayarlama ve benzeri olanak tanır.
+[SetOption](#setoption) sayıda yeniden deneme zaman aşımı değerlerini gibi oturumunuz sorgu seçenekleri ayarlama ve benzeri olanak tanır.
 
-`CInternetSession` üye işlevleri [SetCookie](#setcookie), [GetCookie](#getcookie), ve [GetCookieLength](#getcookielength) üzerinden sunucuları ve komut dosyaları korumak Win32 tanımlama bilgisi veritabanını yönetmek için bir yol sağlar istemci iş istasyonunun hakkında durum bilgisi.
+`CInternetSession` üye işlevleri [SetCookie](#setcookie), [GetCookie](#getcookie), ve [GetCookieLength](#getcookielength) , sunucuları ve betikleri bakımını bir Win32 tanımlama bilgisi veritabanını yönetmek için bir yöntem sağlar istemci iş istasyonu ile ilgili durum bilgisini.
 
-Temel Internet programlama görevleri hakkında daha fazla bilgi için bkz: [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md). MFC WinINet sınıfları kullanma hakkında genel bilgi için bkz: [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md).
+Temel Internet programlama görevleri hakkında daha fazla bilgi için bkz [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md). MFC WinINet sınıfları kullanarak hakkında genel bilgi için bkz [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md).
 
 > [!NOTE]
-> `CInternetSession` özel durum oluşturacak bir [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception) desteklenmeyen hizmet türleri için. Yalnızca aşağıdaki hizmet türleri şu anda desteklenen: FTP, HTTP, gopher ve dosya.
+> `CInternetSession` oluşturur bir [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception) desteklenmeyen hizmet türleri için. Yalnızca şu hizmet türleri şu anda desteklenen: FTP, HTTP, gopher ve dosya.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -139,48 +139,48 @@ CInternetSession(
 ### <a name="parameters"></a>Parametreler
 
 *pstrAgent*  
-Uygulama veya Internet işlevleri (örneğin, "Microsoft Internet tarayıcısı") çağırma varlık adını tanımlayan bir dize için bir işaretçi. Varsa *pstrAgent* olan **NULL** (varsayılan), framework genel işlevini çağırması [AfxGetAppName](application-information-and-management.md#afxgetappname), bir uygulamanın içeren null ile sonlandırılmış bir dize döndürür adı. Bazı protokoller, uygulamanızı sunucuya tanımlamak için bu dizeyi kullanın.
+Uygulama veya Internet işlevleri (örneğin, "Microsoft Internet tarayıcısı") çağırma varlık adını tanımlayan bir dize işaretçisi. Varsa *pstrAgent* (varsayılan), framework çağrıları genel işlev null [AfxGetAppName](application-information-and-management.md#afxgetappname), bir uygulamanın adını içeren null ile sonlandırılmış bir dize döndürür. Bazı protokoller, uygulamanızı sunucuya tanımlamak için şu dizeyi kullanın.
 
 *dwContext*  
-İşlem bağlamı tanımlayıcısı. *dwContext* tarafından döndürülen işlem durumu bilgileri tanımlayan [CInternetSession::OnStatusCallback](#onstatuscallback). Varsayılan değer 1 olarak ayarlanır; Ancak, belirli bir bağlam kimliği işlemi için açıkça atayabilirsiniz. Nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek
+İşlem bağlamı tanımlayıcısı. *dwContext* tarafından döndürülen işlem durumu bilgilerini tanımlayan [CInternetSession::OnStatusCallback](#onstatuscallback). Varsayılan değer 1 olarak ayarlanır; Ancak, belirli bir bağlam kimliği işlemi için açıkça atayabilirsiniz. Nesne ve mevcut herhangi bir iş, bir bağlam kimliği ile ilişkilendirilecek
 
 *dwAccessType*  
-Gerekli erişim türü. Tam olarak biri sağlanacak geçerli değerler şunlardır:
+Gerekli erişim türü. Bunlardan biri sağlanacak geçerli değerler şunlardır:
 
-- `INTERNET_OPEN_TYPE_PRECONFIG` Önceden yapılandırılmış ayarları kayıt defterine kullanarak bağlanır. Bu erişim türü varsayılan olarak ayarlanır. TIS proxy üzerinden bağlanmak için *dwAccessType* bu değerine; ardından kayıt defteri uygun şekilde ayarlayın.
+- INTERNET_OPEN_TYPE_PRECONFIG Connect kullanarak kayıt defteri ayarları önceden yapılandırılmış. Bu erişim türü varsayılan olarak ayarlanır. TIS proxy üzerinden bağlanması ayarı *dwAccessType* bu değere; ardından kayıt defteri uygun şekilde ayarlayın.
 
-- `INTERNET_OPEN_TYPE_DIRECT` Doğrudan Internet'e bağlanın.
+- INTERNET_OPEN_TYPE_DIRECT doğrudan Internet'e bağlanın.
 
-- `INTERNET_OPEN_TYPE_PROXY` CERN proxy üzerinden bağlanır.
+- INTERNET_OPEN_TYPE_PROXY CERN proxy'si aracılığıyla bağlanın.
 
-Farklı proxy ile bağlanma hakkında daha fazla bilgi için bkz: [tipik bir FTP istemci uygulamasında adımları](../../mfc/steps-in-a-typical-ftp-client-application.md).
+Farklı türde proxy ile bağlanma hakkında daha fazla bilgi için bkz. [tipik bir FTP istemci uygulamasında adımları](../../mfc/steps-in-a-typical-ftp-client-application.md).
 
 *pstrProxyName*  
-Tercih edilen CERN proxy adını, *dwAccessType* olarak ayarlanmış olan `INTERNET_OPEN_TYPE_PROXY`. Varsayılan değer **NULL**.
+Tercih edilen CERN proxy adını, *dwAccessType* INTERNET_OPEN_TYPE_PROXY ayarlanır. Varsayılan NULL olur.
 
 *pstrProxyBypass*  
-İsteğe bağlı bir sunucu adresleri listesi içeren bir dize için bir işaretçi. Bu adresleri proxy erişimi kullanırken atlanmasına. Varsa bir **NULL** sağlanan değeri, atlama listesi kayıt defterinden okunacak. Bu parametre anlamlıdır yalnızca *dwAccessType* ayarlanır `INTERNET_OPEN_TYPE_PROXY`.
+İsteğe bağlı bir sunucu adresleri listesi içeren bir dize işaretçisi. Proxy erişimi kullanırken bu adresleri atlanmasına. Bir NULL değer sağlanmazsa, atlama listesi kayıt defterinden okunacak. Bu parametre anlamlı yalnızca *dwAccessType* INTERNET_OPEN_TYPE_PROXY için ayarlanır.
 
-*dwFlags*  
+*CertOpenStore*  
 Çeşitli önbellek seçeneklerini gösterir. Varsayılan değer 0 olarak ayarlanır. Olası değerler şunlardır:
 
-- `INTERNET_FLAG_DONT_CACHE` Verileri yerel olarak veya herhangi bir ağ geçidi sunucu önbelleğe almaz.
+- INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi sunucusu.
 
-- `INTERNET_FLAG_OFFLINE` Karşıdan yükleme işlemleri yalnızca kalıcı önbellek aracılığıyla memnunsunuz. Öğe önbellekte yok uygun hata kodu döndürülür. Bu bayrak Bitsel ile birleştirilebilir `OR` ( **&#124;**) işleci.
+- INTERNET_FLAG_OFFLINE indirme işlemleri yalnızca kalıcı önbellek aracılığıyla karşılanır. Öğeyi önbellekte mevcut değilse, uygun hata kodu döndürülür. Bu bayrak bit düzeyinde ile birleştirilebilir **veya** ( **&#124;**) işleci.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CInternetSession` ilk Internet işlevi bir uygulama tarafından çağrılır. İç veri yapılarını başlatır ve uygulamasından sonraki çağrılar için hazırlar.
+`CInternetSession` ilk Internet işlevi, bir uygulama tarafından çağrılır. İç veri yapılarını başlatır ve uygulamasından sonraki çağrılarda hazırlar.
 
-Internet bağlantısı yok açılabiliyorsa `CInternetSession` oluşturur bir [Afxthrowınternetexception](internet-url-parsing-globals.md#afxthrowinternetexception).
+Internet bağlantısı yok açmış olsaydık `CInternetSession` oluşturur bir [Afxthrowınternetexception](internet-url-parsing-globals.md#afxthrowinternetexception).
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
+Örneğin bakın [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
 
 ## <a name="close"></a>  CInternetSession::Close
 
-Uygulamanızı kullanarak tamamladığınızda bu üye işlevini çağırın `CInternetSession` nesnesi.
+Uygulamanızı kullanarak tamamladığınızda bu üye işlevi çağrısı `CInternetSession` nesne.
 
 ```cpp
 virtual void Close();
@@ -188,11 +188,11 @@ virtual void Close();
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
+Örneğin bakın [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
 
 ## <a name="enablestatuscallback"></a>  CInternetSession::EnableStatusCallback
 
-Durum geri çağırma etkinleştirmek için bu üye işlevini çağırın.
+Durum geri çağırması etkinleştirmek için bu üye işlevini çağırın.
 
 ```cpp
 BOOL EnableStatusCallback(BOOL bEnable = TRUE);
@@ -201,25 +201,25 @@ BOOL EnableStatusCallback(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bSistemlerde*  
-Geri çağırma etkin mi yoksa devre dışı mı olduğunu belirtir. Varsayılan değer **doğru**.
+Geri çağırma etkin mi yoksa devre dışı mı olduğunu belirtir. Varsayılan değer True'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, atılmış inceleyerek hatanın nedenini belirleyin [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesi.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Oluşturulan inceleyerek çağrı başarısız olursa hatanın nedenini belirlemek [Cınternetexception](../../mfc/reference/cinternetexception-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Durum geri araması işleme, uygulama durum çubuğunda (örneğin, ad çözümleme, sunucu ve benzeri) işlemi ilerleme durumu hakkında durum sağlayabilir. İşlem durumunu görüntüleme uzun vadeli bir işlemi sırasında özellikle önerilir.
+Durum geri çağırması işlenirken, uygulama durum çubuğunda (örneğin, ad çözümleme, bağlama sunucu ve benzeri) işleminin ilerleme durumunu sağlayabilirsiniz. İşlem durumunu görüntüleme uzun süreli bir işlemi sırasında özellikle önerilir.
 
-Geri aramalar isteğin işlenirken meydana geldiği için uygulama ağa veri sn'ye düşüşünü önlemek üzere geri arama olabildiğince en az süre beklemesini. Örneğin, bir geri çağırma iletişim kutusunda koyma, sunucunun isteği sonlandırır gibi uzun bir işlem olabilir.
+Uygulama, geri çağırmaları isteğin işleme süresince ortaya çıkan çünkü geri çağırma ağ veri aktarım hızı performansında önlemek için mümkün olduğunca en az zaman ayırın. Örneğin, bir geri çağırma iletişim kutusunda'kurmak koyarak sunucu isteği sonlandırır gibi uzun bir işlem olabilir.
 
-Tüm geri çağırmaları bekleyen sürece durum geri çağırma kaldırılamaz.
+Durum geri çağırması bekleyen herhangi bir geri çağırmaları sürece kaldırılamaz.
 
-Herhangi bir işlem zaman uyumsuz olarak işlemek için kendi iş parçacığı oluşturma veya MFC olmadan WinINet işlevlerini kullanın.
+Herhangi bir işlem zaman uyumsuz olarak işlemek için kendi iş parçacığı oluşturma veya MFC olmadan WinINet işlevler gerekir.
 
 ## <a name="getcontext"></a>  CInternetSession::GetContext
 
-Belirli bir uygulamayı oturum açmak için içerik değeri almak için bu üye işlevini çağırın.
+Belirli uygulama oturumu için bağlam değeri almak için bu üye işlevini çağırın.
 
 ```cpp
 DWORD_PTR GetContext() const;
@@ -227,17 +227,17 @@ DWORD_PTR GetContext() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygulama tanımlı bağlam tanımlayıcısı.
+Uygulama tanımlı içerik tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[OnStatusCallback](#onstatuscallback) tarafından döndürülen bağlam Kimliğini kullanır `GetContext` belirli bir uygulamanın durumunu bildirmek için. Örneğin, bir kullanıcı durumu bilgilerini döndürme içerir bir Internet isteği etkinleştirdiğinde, durum geri çağırma durumu raporlamak context ID belirli bu isteği kullanır. İki ayrı kullanıcı etkinleştirir, Internet istekleri hem de ilgili durum bilgilerini döndürme `OnStatusCallback` bunların karşılık gelen istekler hakkında durumuna döndürmek için içerik tanımlayıcıları kullanır. Sonuç olarak, bağlam tanımlayıcı tüm durum geri çağırma işlemleri için kullanılır ve oturum sona kadar oturum ile ilişkilendirilir.
+[OnStatusCallback](#onstatuscallback) tarafından döndürülen bağlam Kimliğini kullanan `GetContext` belirli bir uygulama durumunu bildirmek için. Örneğin, kullanıcı durum bilgilerini döndürmek içeren bir Internet isteği etkinleştirirken, durum geri çağırması belirli bu isteği için durumu rapor edebilmiş bağlam Kimliğini kullanır. İki ayrı kullanıcı etkinleştirir, Internet isteklerini hem de ilgili durum bilgilerini döndürmek `OnStatusCallback` karşılık gelen isteklerin durumunu döndürmek için bağlam tanımlayıcıları kullanır. Sonuç olarak, bağlam tanımlayıcı tüm durumu geri çağırma işlemleri için kullanılır ve oturumu sonlanana oturumu ile ilişkilidir.
 
-Zaman uyumsuz işlemleri hakkında daha fazla bilgi için bkz: [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md).
+Zaman uyumsuz işlemler hakkında daha fazla bilgi için bkz [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md).
 
 ## <a name="getcookie"></a>  CInternetSession::GetCookie
 
-Bu üye işlevi Win32 işlevi davranışını uygulayan [InternetGetCookie](http://msdn.microsoft.com/library/windows/desktop/aa384710), Windows SDK'ın açıklandığı gibi.
+Bu üye işlevi Win32 işlevinin davranışı uygulayan [InternetGetCookie](http://msdn.microsoft.com/library/windows/desktop/aa384710)Windows SDK içinde açıklandığı gibi.
 
 ```cpp
 static BOOL GetCookie(
@@ -256,32 +256,32 @@ static BOOL GetCookie(
 ### <a name="parameters"></a>Parametreler
 
 *pstrUrl*  
-URL içeren bir dize için bir işaretçi.
+URL içeren bir dize işaretçisi.
 
 *pstrCookieName*  
-Belirtilen URL'ye almak için tanımlama bilgisinin adını içeren bir dize için bir işaretçi.
+Belirtilen URL'ye almak için tanımlama bilgisi adını içeren bir dize işaretçisi.
 
 *pstrCookieData*  
-İlk aşırı, tanımlama bilgisi verileri alan arabellek adresini içeren bir dize için bir işaretçi. Bu değer **NULL**. Bir başvuru ikinci aşırı yüklemesi içinde bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) tanımlama bilgisi verileri almak için nesne.
+İlk aşırı, tanımlama bilgisi verileri alan arabellek adresi içeren bir dize işaretçisi. Bu değer NULL olabilir. İkinci aşırı yükleme, bir başvuru olarak bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) tanımlama bilgisi verisi almak için nesne.
 
 *dwBufLen*  
-Boyutunu belirtme değişkeni *pstrCookieData* arabellek. İşlev başarılı olursa, arabellek kopyalanmasını veri miktarını alır *pstrCookieData* arabellek. Varsa *pstrCookieData* olan **NULL**, bu parametre tanımlama bilgisi verileri kopyalamak gerekli arabellek boyutunu belirleyen bir değer alır.
+Boyutun belirtmek değişkeni *pstrCookieData* arabellek. İşlev başarılı olursa, arabellek kopyalanan verileri miktarını alır *pstrCookieData* arabellek. Varsa *pstrCookieData* NULL ise bu parametre tanımlama bilgisi verileri kopyalamak gerekli arabellek boyutunu belirten bir değeri alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür **TRUE** başarılı olursa ya da **FALSE** Aksi takdirde. Çağrı başarısız olursa, Win32 işlevi çağrısı [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için. Aşağıdaki hata değerler geçerlidir:
+Başarılı olursa TRUE veya FALSE döndürür. Çağrı başarısız olursa Win32 işlevini çağırmak [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için. Aşağıdaki hata değerler geçerlidir:
 
-- `ERROR_NO_MORE_ITEMS` Belirtilen URL için tanımlama bilgisi ve tüm üst öğelerinden yoktur.
+- ERROR_NO_MORE_ITEMS belirtilen URL için tanımlama bilgisi ve tüm üst öğelerinden yoktur.
 
-- `ERROR_INSUFFICIENT_BUFFER` Geçirilen değer *dwBufLen* tüm tanımlama bilgisi verileri kopyalamak için yeterli değil. Döndürülen değerin *dwBufLen* arabellek boyutu tüm verileri almak gereklidir.
+- Geçirilen değere ERROR_INSUFFICIENT_BUFFER *dwBufLen* tüm tanımlama bilgisi verileri kopyalamak için yeterli değil. Döndürülen değer *dwBufLen* arabellek boyutu, tüm verileri almak gereklidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci aşırı yüklemesi MFC tanımlama bilgisi verileri sağlanan alır `CString` nesnesi.
+İkinci aşırı yükleme MFC tanımlama bilgisi verisi sağlanan alır `CString` nesne.
 
 ## <a name="getcookielength"></a>  CInternetSession::GetCookieLength
 
-Arabellekte depolanan tanımlama bilgisi uzunluğu almak için bu üye işlevini çağırın.
+Arabellekteki depolanan bir tanımlama bilgisi uzunluğunu almak için bu üye işlevini çağırın.
 
 ```cpp
 static DWORD GetCookieLength(
@@ -292,14 +292,14 @@ static DWORD GetCookieLength(
 ### <a name="parameters"></a>Parametreler
 
 *pstrUrl*  
-URL içeren bir dize için bir işaretçi
+URL içeren bir dize işaretçisi
 
 *pstrCookieName*  
-Tanımlama bilgisinin adını içeren bir dize için bir işaretçi.
+Tanımlama bilgisinin adını içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `DWORD` arabellekte depolanan tanımlama bilgisi uzunluğu belirten değer. Belirtilen ada sahip tanımlama bilgisi varsa sıfır *pstrCookieName* bulunmaktadır.
+Tanımlama bilgisi uzunluğunu belirten bir DWORD değeri arabellekteki depolanır. Tarafından belirtilen ada sahip tanımlama bilgisi varsa sıfır *pstrCookieName* bulunmaktadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -307,7 +307,7 @@ Bu değer tarafından kullanılan [GetCookie](#getcookie).
 
 ## <a name="getftpconnection"></a>  CInternetSession::GetFtpConnection
 
-Bir FTP bağlantısı kurmak ve bir işaretçi almak için bu üye işlevini çağırın bir `CFtpConnection` nesnesi.
+FTP bağlantısı kurmak ve işaretçi almak için bu üye işlevi çağrısı bir `CFtpConnection` nesne.
 
 ```cpp
 CFtpConnection* GetFtpConnection(
@@ -321,42 +321,42 @@ CFtpConnection* GetFtpConnection(
 ### <a name="parameters"></a>Parametreler
 
 *pstrServer*  
-FTP sunucusu adını içeren bir dize için bir işaretçi.
+FTP sunucusu adını içeren bir dize işaretçisi.
 
 *pstrUserName*  
-İşaretçi null ile sonlandırılmış dizeye oturum açmak için kullanıcı adını belirtir. Varsa **NULL**, anonim varsayılandır.
+Oturum açmak için kullanıcı adını belirten bir null ile sonlandırılmış dize işaretçisi. NULL ise, anonim bir varsayılandır.
 
 *pstrPassword*  
-Oturum açmak için kullanılacak parolayı belirten null ile sonlandırılmış bir dize için bir işaretçi. Her iki *pstrPassword* ve *pstrUserName* olan **NULL**, varsayılan anonim parola kullanıcının e-posta adıdır. Varsa *pstrPassword* olan **NULL** (veya boş bir dize) ancak *pstrUserName* değil **NULL**, boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklanmaktadır *pstrUserName* ve *pstrPassword*:
+Oturum açmak için kullanılacak parolayı belirten bir boş sonlandırılmış dizeye bir işaretçi. Her iki *pstrPassword* ve *pstrUserName* NULL, varsayılan anonim kullanıcı e-posta adını paroladır. Varsa *pstrPassword* boş (veya boş bir dize) ancak *pstrUserName* NULL değil boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklar *pstrUserName* ve *pstrPassword*:
 
 |*pstrUserName*|*pstrPassword*|FTP sunucusuna gönderilen kullanıcı adı|FTP sunucusuna gönderilen parola|
 |--------------------|--------------------|---------------------------------|---------------------------------|
-|**NULL** veya ""|**NULL** veya ""|"anonim"|Kullanıcının e-posta adı|
-|Olmayan-**NULL** dize|**NULL** veya ""|*pstrUserName*|" "|
-|**NULL**|Olmayan-**NULL** dize|**HATA**|**HATA**||
-|Olmayan-**NULL** dize|Olmayan-**NULL** dize|*pstrUserName*|*pstrPassword*|
+|NULL veya ""|NULL veya ""|"anonim"|Kullanıcının e-posta adı|
+|BOŞ olmayan bir dize|NULL veya ""|*pstrUserName*|" "|
+|NULL|BOŞ olmayan bir dize|HATA|HATA||
+|BOŞ olmayan bir dize|BOŞ olmayan bir dize|*pstrUserName*|*pstrPassword*|
 
 *nbağlantı noktası*  
-Sunucuda kullanmak için TCP/IP bağlantı noktası tanımlayan bir sayı.
+Sunucu üzerinde kullanılacak TCP/IP bağlantı noktasını tanımlayan bir sayı.
 
 *bPassive*  
-Bu FTP oturumu için etkin veya Pasif modu belirtir. Varsa kümesine **TRUE**, Win32 API ayarlar `dwFlag` için `INTERNET_FLAG_PASSIVE`.
+Bu FTP oturumu için pasif veya etkin modunu belirtir. TRUE olarak ayarlanırsa, Win32 API kümelerini `dwFlag` INTERNET_FLAG_PASSIVE için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CFtpConnection](../../mfc/reference/cftpconnection-class.md) nesnesi. Çağrı başarısız olursa, atılmış inceleyerek hatanın nedenini belirleyin [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesi.
+Bir işaretçi bir [CFtpConnection](../../mfc/reference/cftpconnection-class.md) nesne. Oluşturulan inceleyerek çağrı başarısız olursa hatanın nedenini belirlemek [Cınternetexception](../../mfc/reference/cinternetexception-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetFtpConnection` bir FTP sunucusuna bağlanır ve oluşturur ve bir işaretçi döndüren bir `CFTPConnection` nesnesi. Sunucu üzerindeki herhangi bir özel işlem gerçekleştirmez. Örneğin, okumak veya dosyaya yazmak istiyorsanız, o işlemler ayrı adımları gerçekleştirmeniz gerekir. Sınıfları görmek [CFtpConnection](../../mfc/reference/cftpconnection-class.md) ve [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) dosya arama hakkında daha fazla bilgi için dosyaları açma ve okuma ya da dosyalara yazma. Makalesine bakın [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md) ortak FTP bağlantı görevleri gerçekleştirme adımları için.
+`GetFtpConnection` bir FTP sunucusuna bağlanır ve oluşturur ve bir işaretçi döndüren bir `CFTPConnection` nesne. Sunucudaki belirli herhangi bir işlem gerçekleştirmez. Örneğin, okumak veya dosyalara yazmak istiyorsanız, bu işlemleri ayrı adımları gerçekleştirmeniz gerekir. Sınıfları görmek [CFtpConnection](../../mfc/reference/cftpconnection-class.md) ve [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) dosyalarını aramaya hakkında daha fazla bilgi için dosyaları açma ve okuma ya da dosyalara yazma. Makaleye göz atın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md) ortak FTP bağlantı görevleri gerçekleştirme adımları için.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
+Örneğin bakın [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).
 
 ## <a name="getgopherconnection"></a>  CInternetSession::GetGopherConnection
 
-Yeni bir gopher bağlantı kurmak ve bir işaretçi almak için bu üye işlevini çağırın bir `CGopherConnection` nesnesi.
+Yeni bir gopher bağlantı kurmak ve işaretçi almak için bu üye işlevi çağrısı bir `CGopherConnection` nesne.
 
 ```cpp
 CGopherConnection* GetGopherConnection(
@@ -369,28 +369,28 @@ CGopherConnection* GetGopherConnection(
 ### <a name="parameters"></a>Parametreler
 
 *pstrServer*  
-Gopher sunucu adını içeren bir dize için bir işaretçi.
+Gopher sunucu adını içeren bir dize işaretçisi.
 
 *pstrUserName*  
-Kullanıcı adını içeren bir dize için bir işaretçi.
+Kullanıcı adını içeren bir dize işaretçisi.
 
 *pstrPassword*  
-Erişim parolasını içeren bir dize için bir işaretçi.
+Erişim parola içeren bir dize işaretçisi.
 
 *nbağlantı noktası*  
-Sunucuda kullanmak için TCP/IP bağlantı noktası tanımlayan bir sayı.
+Sunucu üzerinde kullanılacak TCP/IP bağlantı noktasını tanımlayan bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) nesnesi. Çağrı başarısız olursa, atılmış inceleyerek hatanın nedenini belirleyin [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesi.
+Bir işaretçi bir [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) nesne. Oluşturulan inceleyerek çağrı başarısız olursa hatanın nedenini belirlemek [Cınternetexception](../../mfc/reference/cinternetexception-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetGopherConnection` gopher sunucusuna bağlanır ve oluşturur ve bir işaretçi döndüren bir `CGopherConnection` nesnesi. Sunucu üzerindeki herhangi bir özel işlem gerçekleştirmez. Örneğin, veri okumaya veya yazmaya yapmak istiyorsanız, o işlemler ayrı adımları gerçekleştirmeniz gerekir. Sınıfları görmek [CGopherConnection](../../mfc/reference/cgopherconnection-class.md), [CGopherFile](../../mfc/reference/cgopherfile-class.md), ve [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) dosya arama hakkında daha fazla bilgi için dosyaları açma ve okuma ya da dosyalara yazma. Üye işlevi bir FTP sitesi gözatma hakkında daha fazla bilgi için bkz [OpenURL](#openurl). Makalesine bakın [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md) ortak gopher bağlantı görevleri gerçekleştirme adımları için.
+`GetGopherConnection` bir gopher sunucusuna bağlanır ve oluşturur ve bir işaretçi döndüren bir `CGopherConnection` nesne. Sunucudaki belirli herhangi bir işlem gerçekleştirmez. Örneğin, verileri okuma veya yazma yapmak istiyorsanız, bu işlemleri ayrı adımları gerçekleştirmeniz gerekir. Sınıfları görmek [CGopherConnection](../../mfc/reference/cgopherconnection-class.md), [CGopherFile](../../mfc/reference/cgopherfile-class.md), ve [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) dosyalarını aramaya hakkında daha fazla bilgi için dosyaları açma ve okuma ya da dosyalara yazma. Üye işlevi bir FTP sitesi gözatma hakkında daha fazla bilgi için bkz. [OpenURL](#openurl). Makaleye göz atın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md) ortak gopher bağlantı görevleri gerçekleştirme adımları için.
 
 ## <a name="gethttpconnection"></a>  CInternetSession::GetHttpConnection
 
-Bir işaretçi almak ve bir HTTP bağlantısı kurmak için bu üye işlevini çağırın bir `CHttpConnection` nesnesi.
+Bir HTTP bağlantısı kurmak ve işaretçi almak için bu üye işlevi çağrısı bir `CHttpConnection` nesne.
 
 ```cpp
 CHttpConnection* GetHttpConnection(
@@ -410,31 +410,31 @@ CHttpConnection* GetHttpConnection(
 ### <a name="parameters"></a>Parametreler
 
 *pstrServer*  
-HTTP sunucusu adını içeren bir dize için bir işaretçi.
+HTTP sunucu adını içeren bir dize işaretçisi.
 
 *nbağlantı noktası*  
-Sunucuda kullanmak için TCP/IP bağlantı noktası tanımlayan bir sayı.
+Sunucu üzerinde kullanılacak TCP/IP bağlantı noktasını tanımlayan bir sayı.
 
 *pstrUserName*  
-Kullanıcı adını içeren bir dize için bir işaretçi.
+Kullanıcı adını içeren bir dize işaretçisi.
 
 *pstrPassword*  
-Erişim parolasını içeren bir dize için bir işaretçi.
+Erişim parola içeren bir dize işaretçisi.
 
-*dwflags*  
-Herhangi bir bileşimini `INTERNET_FLAG_*` bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) bir açıklaması için *dwFlags* değerleri.
+*CertOpenStore*  
+Herhangi bir birleşimini `INTERNET_FLAG_*` bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) açıklamasını *CertOpenStore* değerleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CHttpConnection](../../mfc/reference/chttpconnection-class.md) nesnesi. Çağrı başarısız olursa, atılmış inceleyerek hatanın nedenini belirleyin [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesi.
+Bir işaretçi bir [CHttpConnection](../../mfc/reference/chttpconnection-class.md) nesne. Oluşturulan inceleyerek çağrı başarısız olursa hatanın nedenini belirlemek [Cınternetexception](../../mfc/reference/cinternetexception-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetHttpConnection` bir HTTP sunucusuna bağlanır ve oluşturur ve bir işaretçi döndürür bir `CHttpConnection` nesnesi. Sunucu üzerindeki herhangi bir özel işlem gerçekleştirmez. Örneğin, bir HTTP üstbilgisi sorgulamak istiyorsanız, ayrı bir adım olarak bu işlemi gerçekleştirmeniz gerekir. Sınıfları görmek [CHttpConnection](../../mfc/reference/chttpconnection-class.md) ve [CHttpFile](../../mfc/reference/chttpfile-class.md) işlemleri hakkında bilgi için bir HTTP sunucusuna bir bağlantı kullanarak gerçekleştirebilirsiniz. Üye işlevi bir HTTP site gözatma hakkında daha fazla bilgi için bkz [OpenURL](#openurl). Makalesine bakın [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md) ortak HTTP bağlantı görevleri gerçekleştirme adımları için.
+`GetHttpConnection` bir HTTP sunucusuna bağlanır ve oluşturur ve bir işaretçi döndüren bir `CHttpConnection` nesne. Sunucudaki belirli herhangi bir işlem gerçekleştirmez. Örneğin, bir HTTP üst bilgisi sorgulamak istiyorsanız, bu işlemi ayrı bir adım gerçekleştirmeniz gerekir. Sınıfları görmek [CHttpConnection](../../mfc/reference/chttpconnection-class.md) ve [CHttpFile](../../mfc/reference/chttpfile-class.md) HTTP sunucusuyla bir bağlantı kullanarak gerçekleştirebileceğiniz işlemleri hakkında bilgi için. Üye işlevi bir HTTP site gözatma hakkında daha fazla bilgi için bkz. [OpenURL](#openurl). Makaleye göz atın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md) ortak HTTP bağlantı görevleri gerçekleştirme adımları için.
 
 ## <a name="onstatuscallback"></a>  CInternetSession::OnStatusCallback
 
-Bu üye işlev durumu geri çağırma etkin olduğunda ve bir işlemi bekliyor durumunu güncelleştirmek için çerçevesi tarafından çağrılır.
+Bu üye işlevi durum geri çağırması etkin olduğunda ve bir işlem beklemede durumu güncelleştirmek için framework tarafından çağırılır.
 
 ```cpp
 virtual void OnStatusCallback(
@@ -450,47 +450,47 @@ virtual void OnStatusCallback(
 Uygulama tarafından sağlanan içerik değeri.
 
 *dwInternetStatus*  
-Geri çağırma neden yapılıyor gösteren bir durum kodu. Bkz: **açıklamalar** için olası değerler tablosu.
+Geri çağırma neden yapıldığı gösteren bir durum kodu. Bkz: **açıklamalar** için olası değerler tablosu.
 
 *lpvStatusInformation*  
-Bu geri çağırma ilgili bilgileri içeren bir arabellek için bir işaretçi.
+Bu geri çağırma için testlerinizle ilgili olabilecek bilgilere içeren arabellek için işaretçi.
 
 *dwStatusInformationLength*  
-Boyutunu *lpvStatusInformation*.
+Boyutu *lpvStatusInformation*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk çağırmalısınız [EnableStatusCallback](#enablestatuscallback) durum geri çağırma yararlanmak için.
+İlk çağırmalıdır [EnableStatusCallback](#enablestatuscallback) durum geri çağırması yararlanmak için.
 
-*DwInternetStatus* parametresi gerçekleştirilmekte olan işlemin gösterir ve hangi içeriğini belirler *lpvStatusInformation* olacaktır. *dwStatusInformationLength* dahil veri uzunluğunu gösterir *lpvStatusInformation*. Aşağıdaki durum değerleri *dwInternetStatus* şu şekilde tanımlanır:
+*DwInternetStatus* parametresi gerçekleştirilmekte olan işlemin gösterir ve hangi içeriğini belirleyen *lpvStatusInformation* olacaktır. *dwStatusInformationLength* dahil veri uzunluğunu gösterir *lpvStatusInformation*. Aşağıdaki durum değerleri *dwInternetStatus* şu şekilde tanımlanır:
 
 |Değer|Açıklama|
 |-----------|-------------|
-|`INTERNET_STATUS_RESOLVING_NAME`|İçinde yer alan adının IP adresini bakarak *lpvStatusInformation*.|
-|`INTERNET_STATUS_NAME_RESOLVED`|İçinde yer alan adı, IP adresi başarıyla bulunmadı *lpvStatusInformation*.|
-|`INTERNET_STATUS_CONNECTING_TO_SERVER`|Yuva adresine bağlanan ([SOCKADDR](../../mfc/reference/sockaddr-structure.md)) gösterdiği *lpvStatusInformation*.|
-|`INTERNET_STATUS_CONNECTED_TO_SERVER`|Yuva adresine başarıyla bağlandı (`SOCKADDR`) gösterdiği *lpvStatusInformation*.|
-|`INTERNET_STATUS_SENDING_REQUEST`|Sunucuya bilgi isteği gönderiliyor. *LpvStatusInformation* parametresi **NULL**.|
-|`INTERNET_STATUS_ REQUEST_SENT`|Sunucuya bilgi isteği gönderildi. *LpvStatusInformation* parametresi **NULL**.|
-|`INTERNET_STATUS_RECEIVING_RESPONSE`|Sunucunun bir isteğine yanıt vermesi bekleniyor. *LpvStatusInformation* parametresi **NULL**.|
-|`INTERNET_STATUS_RESPONSE_RECEIVED`|Başarıyla sunucusundan bir yanıt aldı. *LpvStatusInformation* parametresi **NULL**.|
-|`INTERNET_STATUS_CLOSING_CONNECTION`|Sunucuya bağlantı kesiliyor. *LpvStatusInformation* parametresi **NULL**.|
-|`INTERNET_STATUS_CONNECTION_CLOSED`|Sunucu bağlantısı başarıyla kapatıldı. *LpvStatusInformation* parametresi **NULL**.|
-|`INTERNET_STATUS_HANDLE_CREATED`|Win32 API işlevi tarafından kullanılan [InternetConnect](http://msdn.microsoft.com/library/windows/desktop/aa384363) yeni tutamacı oluşturdu belirtmek için. Bu uygulama çağrısı Win32 işlevi sağlar [InternetCloseHandle](http://msdn.microsoft.com/library/windows/desktop/aa384350) Bağlan çok uzun sürüyorsa, başka bir iş parçacığından. Windows SDKfor bu işlevler hakkında daha fazla bilgi bakın.|
-|`INTERNET_STATUS_HANDLE_CLOSING`|Bu işleyici değer başarıyla sonlandırıldı.|
+|INTERNET_STATUS_RESOLVING_NAME|IP adresi yer alan adının bakarak *lpvStatusInformation*.|
+|INTERNET_STATUS_NAME_RESOLVED|Yer alan adı, IP adresi başarıyla bulundu *lpvStatusInformation*.|
+|INTERNET_STATUS_CONNECTING_TO_SERVER|Yuva adresine bağlanan ([SOCKADDR](../../mfc/reference/sockaddr-structure.md)) işaret ettiği *lpvStatusInformation*.|
+|INTERNET_STATUS_CONNECTED_TO_SERVER|İşaret ettiği yuva adresine (SOCKADDR) başarıyla bağlandı *lpvStatusInformation*.|
+|INTERNET_STATUS_SENDING_REQUEST|Bilgi isteği sunucuya gönderiliyor. *LpvStatusInformation* parametredir NULL.|
+|INTERNET_STATUS_ REQUEST_SENT|Sunucuya bilgi isteği gönderildi. *LpvStatusInformation* parametredir NULL.|
+|INTERNET_STATUS_RECEIVING_RESPONSE|Sunucunun bir istek için yanıt vermesi bekleniyor. *LpvStatusInformation* parametredir NULL.|
+|INTERNET_STATUS_RESPONSE_RECEIVED|Başarıyla sunucusundan bir yanıt aldı. *LpvStatusInformation* parametredir NULL.|
+|INTERNET_STATUS_CLOSING_CONNECTION|Sunucuya bağlantı kesiliyor. *LpvStatusInformation* parametredir NULL.|
+|INTERNET_STATUS_CONNECTION_CLOSED|Sunucu bağlantısı başarıyla kapatıldı. *LpvStatusInformation* parametredir NULL.|
+|INTERNET_STATUS_HANDLE_CREATED|Win32 API işlev tarafından kullanılan [InternetConnect](http://msdn.microsoft.com/library/windows/desktop/aa384363) yeni işleyici oluşturduğunu göstermek için. Bu uygulama arama Win32 işlevini sağlar [InternetCloseHandle](http://msdn.microsoft.com/library/windows/desktop/aa384350) Bağlan çok uzun sürüyorsa, başka bir iş parçacığından. Windows SDKfor, bu işlevler hakkında daha fazla bilgi.|
+|INTERNET_STATUS_HANDLE_CLOSING|Bu işleyici değeri başarıyla sonlandırıldı.|
 
-Durum geri arama yordamı gerçekleştirilmeden önce bazı eylemleri gerektirecek şekilde bu üye işlevi geçersiz kılar.
+Durumu geri çağırma yordamı gerçekleştirilmeden önce bazı eylemler zorunlu tutmak için bu üye işlevini geçersiz kılar.
 
 > [!NOTE]
-> Durum geri aramalar iş parçacığı durumu koruması gerekir. MFC paylaşılan bir kitaplık kullanıyorsanız, aşağıdaki satırı geçersiz kılma başlangıcına ekleyin:
+> Durum geri çağırmaları iş parçacığı durumu koruması gerekir. MFC içinde paylaşılan bir kitaplık kullanıyorsanız, geçersiz kılma başlangıcına aşağıdaki satırı ekleyin:
 
  [!code-cpp[NVC_MFCHtmlHttp#8](../../mfc/reference/codesnippet/cpp/cinternetsession-class_1.cpp)]
 
-Zaman uyumsuz işlemleri hakkında daha fazla bilgi için bkz: [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md).
+Zaman uyumsuz işlemler hakkında daha fazla bilgi için bkz [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md).
 
 ## <a name="openurl"></a>  CInternetSession::OpenURL
 
-Bu üye, belirtilen İstek HTTP sunucusuna göndermek ve ek RFC822 belirtmek istemcinin izin MIME işlevini veya istekle birlikte göndermek için HTTP üstbilgileri çağırın.
+Bu üye işlevi, belirtilen istek için HTTP sunucusu gönderip ek RFC822 belirtmek istemci izin MIME veya birlikte bir istek göndermek için HTTP üst bilgilerini çağırın.
 
 ```cpp
 CStdioFile* OpenURL(
@@ -504,39 +504,39 @@ CStdioFile* OpenURL(
 ### <a name="parameters"></a>Parametreler
 
 *pstrURL*  
-Okumanın başlatılacağı URL adı için bir işaretçi. Yalnızca URL'leri dosya ile başlayan:, ftp:, gopher:, veya http: desteklenir. Varsa onaylar *pstrURL* olan **NULL**.
+Okumanın başlatılacağı URL adı için bir işaretçi. Yalnızca URL'lere dosya ile başlayan:, ftp:, gopher:, veya http: desteklenir. Varsa onaylar *pstrURL* null.
 
 *dwContext*  
-Geri döndürülen işleyiciyi ile uygulama tanımlı bir değer geçirildi.
+Geri döndürülen tutamacın ile uygulama tanımlı bir değer geçirildi.
 
-*dwFlags*  
-Bu bağlantı ne yapılacağını açıklayan bayrakları. Bkz: **açıklamalar** geçerli bayrakları hakkında daha fazla bilgi. Geçerli bayraklar şunlardır:
+*CertOpenStore*  
+Bu bağlantı ne yapılacağını tanımlayan bayraklar. Bkz: **açıklamalar** geçerli bayrakları hakkında daha fazla bilgi. Geçerli bayraklar:
 
-- `INTERNET_FLAG_TRANSFER_ASCII` Varsayılan. Dosya ASCII metni olarak aktarın.
+- Varsayılan INTERNET_FLAG_TRANSFER_ASCII. Dosya ASCII metni olarak aktarın.
 
-- `INTERNET_FLAG_TRANSFER_BINARY` Dosya bir ikili dosya olarak aktarın.
+- INTERNET_FLAG_TRANSFER_BINARY aktarım dosyası bir ikili dosya olarak.
 
-- `INTERNET_FLAG_RELOAD` Yerel olarak önbelleğe olsa bile hattan verileri alın.
+- INTERNET_FLAG_RELOAD veri alma hattan bile yerel olarak önbelleğe alınır.
 
-- `INTERNET_FLAG_DONT_CACHE` Verileri yerel olarak veya herhangi bir ağ geçidi önbelleğe almaz.
+- INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi.
 
-- `INTERNET_FLAG_SECURE` Bu bayrak, yalnızca HTTP istekleri için geçerlidir. Güvenli Yuva Katmanı veya yüzdesi hattaki güvenli işlemler istekleri
+- INTERNET_FLAG_SECURE bu bayrağı yalnızca HTTP istekleri için geçerlidir. Güvenli Yuva Katmanı veya yüzdesi Tel üzerinde güvenli işlemler istekleri
 
-- `INTERNET_OPEN_FLAG_USE_EXISTING_CONNECT` Mümkünse, sunucu tarafından oluşturulan yeni istekler için var olan bağlantılara yeniden `OpenUrl` her bağlantı isteği için yeni bir oturumu oluşturmak yerine.
+- Sunucu tarafından oluşturulan yeni istekler için var olan bağlantıları INTERNET_OPEN_FLAG_USE_EXISTING_CONNECT gerçekleştirilemiyorsa yeniden `OpenUrl` her bağlantı isteği için yeni bir oturumu oluşturmak yerine.
 
-- `INTERNET_FLAG_PASSIVE` Bir FTP sitesi için kullanılır. Edilgen FTP semantiğini kullanır. İle kullanılan [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) , `OpenURL`.
+- INTERNET_FLAG_PASSIVE bir FTP sitesi için kullanılır. Pasif FTP semantiğini kullanıyor. İle kullanılan [Cınternetconnection](../../mfc/reference/cinternetconnection-class.md) , `OpenURL`.
 
 *pstrHeaders*  
-HTTP sunucusu gönderilmesi gereken üstbilgileri içeren bir dize için bir işaretçi.
+HTTP sunucusuna gönderilmesi gereken üstbilgileri içeren bir dize işaretçisi.
 
 *dwHeadersLength*  
-Ek üstbilgilerinin karakter cinsinden uzunluğu. Bu-1 M ise ve *pstrHeaders* olan olmayan**NULL**, ardından *pstrHeaders* sıfır olacak şekilde sonlandı ve uzunluğu hesaplanması varsayılır.
+Ek üst karakter cinsinden uzunluğu. Bu,-1 L ise ve *pstrHeaders* NULL olmayan, ise *pstrHeaders* sona sıfır olmalıdır ve uzunluğu hesaplanan kabul edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yalnızca FTP, GOPHER, HTTP ve dosya türünü Internet Hizmetleri için bir dosya tanıtıcısı döndürür. Döndürür **NULL** ayrıştırma başarısız olursa.
+FTP, GOPHER, HTTP ve dosya türü Internet Hizmetleri için bir dosya tanıtıcısını döndürür. Ayrıştırma işlemi başarısız olursa NULL döndürür.
 
-İşaretçinin, `OpenURL` döndürür bağımlı *pstrURL*'s hizmetin türü. Aşağıdaki tabloda olası işaretçileri gösterilmiştir `OpenURL` geri dönebilirsiniz.
+İşaretçiyi, `OpenURL` döndürür bağlıdır *pstrURL*ın hizmetin türü. Aşağıdaki tabloda olası işaretçileri gösterilmiştir `OpenURL` döndürebilir.
 
 |URL türü|Döndürür|
 |--------------|-------------|
@@ -547,15 +547,15 @@ Yalnızca FTP, GOPHER, HTTP ve dosya türünü Internet Hizmetleri için bir dos
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre *dwFlags* ya da içermelidir `INTERNET_FLAG_TRANSFER_ASCII` veya `INTERNET_FLAG_TRANSFER_BINARY`, ancak ikisini birden değil. Kalan bayrakları Bitsel ile birleştirilebilir `OR` işleci ( **&#124;**).
+Parametre *CertOpenStore* INTERNET_FLAG_TRANSFER_ASCII veya INTERNET_FLAG_TRANSFER_BINARY ancak ikisini birden içermelidir. Kalan bayrak bit düzeyinde ile birleştirilebilir **veya** işleci ( **&#124;**).
 
-`OpenURL`, Win32 işlevi sarmalar `InternetOpenURL`, yalnızca yükleme, alma ve Internet sunucusundan verileri okuma sağlar. `OpenURL` Hayır gerektiren hiçbir dosya işleme uzak bir konumdaki sağladığından [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) nesnesi.
+`OpenURL`, Win32 işlevini sarmalayan `InternetOpenURL`, yalnızca indiriliyor, alma ve bir Internet sunucusundan verileri okumasını sağlar. `OpenURL` Hayır gerektirir böylece uzak bir konumdaki hiçbir dosya işlenmesine izin verir. [Cınternetconnection](../../mfc/reference/cinternetconnection-class.md) nesne.
 
-Bağlantıya özgü kullanmak için (diğer bir deyişle, protokole özgü) işlevleri, bir dosyaya yazmak gibi gerekir bir oturumu açın, sonra belirli bir bağlantı türünü açın, ardından istenen modda bir dosyayı açmak için bu bağlantıyı kullanın. Bkz: `CInternetConnection` bağlantıya özgü işlevleri hakkında daha fazla bilgi için.
+Bağlantıya özgü kullanmak için (diğer bir deyişle, protokole özgü) işlevleri, bir dosyaya yazmak gibi oturum açın, ardından belirli bir bağlantı türünü açın, ardından gerekir istenen modda bir dosyayı açmak için bu bağlantıyı kullanın. Bkz: `CInternetConnection` bağlantıya özgü işlevleri hakkında daha fazla bilgi.
 
 ## <a name="operator_hinternet"></a>  CInternetSession::operator HINTERNET
 
-Windows tanıtıcı geçerli Internet oturumu için almak için bu işleci kullanın.
+Windows tanıtıcı için geçerli Internet oturumu almak için bu işleci kullanın.
 
 ```cpp
 operator HINTERNET() const;
@@ -575,21 +575,21 @@ static BOOL SetCookie(
 ### <a name="parameters"></a>Parametreler
 
 *pstrUrl*  
-Tanımlama bilgisinin ayarlanmalıdır URL'sini belirten null ile sonlandırılmış bir dize için bir işaretçi.
+Tanımlama bilgisi ayarlanmalıdır URL'sini belirtir bir null ile sonlandırılmış dizeye bir işaretçi.
 
 *pstrCookieName*  
-Tanımlama bilgisinin adını içeren bir dize için bir işaretçi.
+Tanımlama bilgisinin adını içeren bir dize işaretçisi.
 
 *pstrCookieData*  
-URL ile ilişkilendirmek için gerçek dize verilerini içeren bir dize için bir işaretçi.
+URL ile ilişkilendirilecek gerçek dize verileri içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür **TRUE** başarılı olursa ya da **FALSE** Aksi takdirde. Özel hata kodu almak için arama **GetLastError.**
+Başarılı olursa TRUE veya FALSE döndürür. Söz konusu hata kodunu almak için çağırın `GetLastError.`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi Win32 ileti davranışını uygulayan [InternetSetCookie](http://msdn.microsoft.com/library/windows/desktop/aa385107), Windows SDK'ın açıklandığı gibi.
+Bu üye işlevi Win32 ileti davranışı uygulayan [InternetSetCookie](http://msdn.microsoft.com/library/windows/desktop/aa385107)Windows SDK içinde açıklandığı gibi.
 
 ## <a name="setoption"></a>  CInternetSession::SetOption
 
@@ -612,27 +612,27 @@ BOOL SetOption(
 ### <a name="parameters"></a>Parametreler
 
 *dwOption*  
-Ayarlamak için Internet seçeneği. Bkz: [seçeneği bayrakları](http://msdn.microsoft.com/library/windows/desktop/aa385328) Windows SDKfor olası seçeneklerin bir listesini içinde.
+Ayarlanacak Internet seçeneği. Bkz: [seçeneği bayrakları](http://msdn.microsoft.com/library/windows/desktop/aa385328) içinde Windows SDKfor olası seçeneklerin bir listesi.
 
 *lpBuffer*  
-Seçenek ayarı içeren bir arabellek.
+Seçenek ayarı içeren bir arabelleği.
 
 *dwBufferLength*  
-Uzunluğu *lpBuffer* veya sütunların boyutunu *dwValue*.
+Uzunluğunu *lpBuffer* veya boyutunu *dwValue*.
 
 *dwValue*  
-A `DWORD` seçeneği ayarı içerir.
+Seçenek ayarları içeren bir DWORD.
 
-*dwFlags*  
+*CertOpenStore*  
 Çeşitli önbellek seçeneklerini gösterir. Varsayılan değer 0 olarak ayarlanır. Olası değerler şunlardır:
 
-- `INTERNET_FLAG_DONT_CACHE` Verileri yerel olarak veya herhangi bir ağ geçidi sunucu önbelleğe almaz.
+- INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi sunucusu.
 
-- `INTERNET_FLAG_OFFLINE` Karşıdan yükleme işlemleri yalnızca kalıcı önbellek aracılığıyla memnunsunuz. Öğe önbellekte yok uygun hata kodu döndürülür. Bu bayrak Bitsel ile birleştirilebilir `OR` ( **&#124;**) işleci.
+- INTERNET_FLAG_OFFLINE indirme işlemleri yalnızca kalıcı önbellek aracılığıyla karşılanır. Öğeyi önbellekte mevcut değilse, uygun hata kodu döndürülür. Bu bayrak bit düzeyinde ile birleştirilebilir **veya** ( **&#124;**) işleci.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa değerini **TRUE** döndürülür. Bir hata oluştuysa, değerini **FALSE** döndürülür. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+İşlem başarılı olursa TRUE değeri döndürülür. Bir hata oluştu, FALSE değeri döndürülür. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

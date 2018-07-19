@@ -1,5 +1,5 @@
 ---
-title: Bağlantı noktaları sınıfları (ATL) | Microsoft Docs
+title: Bağlantı noktası sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,31 +17,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c0d75c101bb23b3e7b788e607e325c18d729c81
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6d458fb5805b99c8dcc5cc25abc9f85f88f08e92
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355085"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957665"
 ---
-# <a name="connection-points-classes"></a>Bağlantı noktaları sınıfları
-Aşağıdaki sınıflar bağlantı noktaları için destek sağlar:  
+# <a name="connection-points-classes"></a>Bağlantı noktası sınıfları
+Aşağıdaki sınıflar, bağlantı noktaları için destek sağlar:  
   
--   [IConnectionPointContainerImpl](../atl/reference/iconnectionpointcontainerimpl-class.md) bir bağlantı noktası kapsayıcı uygular.  
+-   [Iconnectionpointcontainerımpl](../atl/reference/iconnectionpointcontainerimpl-class.md) bir bağlantı noktası kapsayıcısını uygular.  
   
--   [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) bir bağlantı noktası uygular.  
+-   [Iconnectionpointımpl](../atl/reference/iconnectionpointimpl-class.md) bir bağlantı noktası uygular.  
   
--   [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) uygulayan bir bağlantı noktası temsil eden [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) arabirimi.  
+-   [Ipropertynotifysinkcp](../atl/reference/ipropertynotifysinkcp-class.md) uygulayan bir bağlantı noktasını temsil eden [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) arabirimi.  
   
--   [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) sınırsız arasında bir bağlantı noktası ve onun havuzlarını yönetir.  
+-   [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) sınırsız bir bağlantı noktası ve onun havuzlar arasında yönetir.  
   
--   [CComUnkArray](../atl/reference/ccomunkarray-class.md) bir bağlantı noktası ve onun havuzlarını arasındaki bağlantıları sabit sayıda yönetir.  
+-   [CComUnkArray](../atl/reference/ccomunkarray-class.md) bir bağlantı noktası ve onun havuzlar arasında bağlantılar sabit sayıda yönetir.  
   
--   [CFirePropNotifyEvent](../atl/reference/cfirepropnotifyevent-class.md) bir nesnenin özellik değiştirildi veya değiştirilmek bir istemcinin havuz bildirir.  
+-   [CFirePropNotifyEvent](../atl/reference/cfirepropnotifyevent-class.md) , bir nesnenin özelliği değiştirildi veya değiştirilmek istemcinin havuzu bildirir.  
   
--   [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ATL COM nesne için bağlantı noktaları için destek sağlar. Bu bağlantı noktaları, COM nesnesi tarafından sağlanan bir olay havuz eşlemesi ile eşlenir.  
+-   [Idispeventımpl](../atl/reference/idispeventimpl-class.md) ATL COM nesnesi için bağlantı noktaları için destek sağlar. Bu bağlantı noktaları, COM nesnesi tarafından sağlanan bir olay havuzu Haritası ile eşlenir.  
   
--   [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) olay havuzu ile birlikte çalışır eşleme uygun işleyiciyi işlevi için rota olayları sınıfınızda.  
+-   [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md) çalışır ve olay havuzu ile birlikte harita sınıfınızdaki rota olayları için uygun tanıtıcının işlevi.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [Bağlantı Noktaları](../atl/atl-connection-points.md)  
@@ -49,7 +49,7 @@ Aşağıdaki sınıflar bağlantı noktaları için destek sağlar:
  [Olay İşleme ve ATL](../atl/event-handling-and-atl.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)   
  [Bağlantı noktası makroları](../atl/reference/connection-point-macros.md)   
  [Bağlantı Noktası Genel İşlevleri](../atl/reference/connection-point-global-functions.md)
 

@@ -52,15 +52,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43c9fdc667f5bd40b6c683f6e48753a084266847
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 613e49478349779709571927ee38b0903f141730
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37037654"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336247"
 ---
 # <a name="cmapstringtostring-class"></a>CMapStringToString sınıfı
-Haritaları destekleyen `CString` tarafından Anahtarlanan nesneleri `CString` nesneleri.  
+Haritalarını destekler `CString` Anahtarlanan `CString` nesneleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -69,11 +69,11 @@ class CMapStringToString : public CObject
 ```  
   
 ## <a name="members"></a>Üyeler  
- Üye işlevlerini `CMapStringToString` sınıfının üye fonksiyonları benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullandığınız `CMapStringToOb` başvuru belgelerini üye fonksiyonu özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir dönüş değeri veya "çıktı" parametresi, işlev gibi alternatif bir işaretçi **char**. Gördüğünüz yerde bir `CObject` işaretçi "Giriş" işlevi parametre olarak değiştirmek için bir işaretçi **char**.  
+ Üye işlevlerinin `CMapStringToString` sınıfın üye işlevleri için benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CMapStringToOb` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi parametresi, dönüş değeri veya "çıkış" işlevi olarak alternatif bir işaretçiye **char**. Gördüğünüz yerde bir `CObject` işaretçi bir "Giriş" işlevi parametre olarak bir işaretçiye yerine **char**.  
   
  `BOOL CMapStringToOb::Lookup(const char*<key>, CObject*&<rValue>) const;`  
   
- Örneğin, çevrilir  
+ Örneğin, için çevirir  
   
  `BOOL CMapStringToString::Lookup(LPCTSTR<key>, CString&<rValue>) const;`  
   
@@ -93,37 +93,37 @@ class CMapStringToString : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMapStringToOb::GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Bu haritada öğe sayısını döndürür.|  
-|[CMapStringToOb::GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Karma tablodaki öğeler geçerli sayısını belirler.|  
+|[CMapStringToOb::GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Bu haritada öğelerin sayısını döndürür.|  
+|[CMapStringToOb::GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Geçerli bir karma tablo içindeki öğelerin sayısını belirler.|  
 |[CMapStringToOb::GetNextAssoc](../../mfc/reference/cmapstringtoob-class.md#getnextassoc)|Yineleme için sonraki öğeyi alır.|  
-|[CMapStringToOb::GetSize](../../mfc/reference/cmapstringtoob-class.md#getsize)|Bu haritada öğe sayısını döndürür.|  
-|[CMapStringToOb::GetStartPosition](../../mfc/reference/cmapstringtoob-class.md#getstartposition)|İlk öğe konumunu döndürür.|  
-|[CMapStringToOb::HashKey](../../mfc/reference/cmapstringtoob-class.md#hashkey)|Belirtilen anahtar karma değerini hesaplar.|  
+|[CMapStringToOb::GetSize](../../mfc/reference/cmapstringtoob-class.md#getsize)|Bu haritada öğelerin sayısını döndürür.|  
+|[CMapStringToOb::GetStartPosition](../../mfc/reference/cmapstringtoob-class.md#getstartposition)|İlk öğenin konumunu döndürür.|  
+|[CMapStringToOb::HashKey](../../mfc/reference/cmapstringtoob-class.md#hashkey)|Belirtilen bir anahtarı karma değerini hesaplar.|  
 |[CMapStringToOb::InitHashTable](../../mfc/reference/cmapstringtoob-class.md#inithashtable)|Karma tablo başlatır.|  
-|[CMapStringToOb::IsEmpty](../../mfc/reference/cmapstringtoob-class.md#isempty)|Testleri boş eşleme koşul (öğe yok).|  
-|[CMapStringToOb::Lookup](../../mfc/reference/cmapstringtoob-class.md#lookup)|Void işaretçi anahtarına göre void işaretçi arar. İşaretçi değeri değil, işaret varlık anahtar karşılaştırma için kullanılır.|  
+|[CMapStringToOb::IsEmpty](../../mfc/reference/cmapstringtoob-class.md#isempty)|(Öğe yok) boş-map koşulu sınar.|  
+|[CMapStringToOb::Lookup](../../mfc/reference/cmapstringtoob-class.md#lookup)|Void bir işaretçi void işaretçisine anahtara göre arar. İşaretçi değeri değil, işaret varlık anahtar karşılaştırma için kullanılır.|  
 |[CMapStringToOb::LookupKey](../../mfc/reference/cmapstringtoob-class.md#lookupkey)|Belirtilen anahtar değeriyle ilişkili anahtar için bir başvuru döndürür.|  
-|[CMapStringToString::PGetFirstAssoc](#pgetfirstassoc)|Bir işaretçi ilk alır `CString` eşlemesindeki.|  
-|[CMapStringToString::PGetNextAssoc](#pgetnextassoc)|Bir işaretçi sonraki alır `CString` yineleme için.|  
-|[CMapStringToString::PLookup](#plookup)|Bir işaretçi döndüren bir `CString` değeri belirtilen değerle eşleşir.|  
-|[CMapStringToOb::RemoveAll](../../mfc/reference/cmapstringtoob-class.md#removeall)|Bu eşlemesinden tüm öğeleri kaldırır.|  
+|[CMapStringToString::PGetFirstAssoc](#pgetfirstassoc)|Öncelikle bir işaretçi alır `CString` haritadaki.|  
+|[CMapStringToString::PGetNextAssoc](#pgetnextassoc)|Sonraki bir işaretçi alır `CString` yineleme.|  
+|[CMapStringToString::PLookup](#plookup)|Bir işaretçi döndüren bir `CString` değeri belirtilen değerle eşleşmektedir.|  
+|[CMapStringToOb::RemoveAll](../../mfc/reference/cmapstringtoob-class.md#removeall)|Tüm öğeleri bu eşlemden kaldırır.|  
 |[CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey)|Bir anahtar tarafından belirtilen bir öğeyi kaldırır.|  
-|[CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)|Bir öğenin eşlemeye ekler; eşleşen bir anahtarı bulunursa, var olan öğenin yerini alır.|  
+|[CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)|Haritayı bir öğe ekler; eşleşen bir anahtar bulunursa, var olan öğenin yerini alır.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMapStringToOb::operator [ ]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Bir öğenin eşlemeye ekler — işleci değiştirme `SetAt`.|  
+|[CMapStringToOb::operator [ ]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CMapStringToString` bir araya getirir `IMPLEMENT_SERIAL` makrosu seri hale getirme ve alt öğeleri dökme desteklemek için. Bir arşiv, aşırı yüklenmiş ekleme ile ya da bir harita depolanıyorsa her öğenin sırayla sıralandığı ( **<<**) işleci veya ile `Serialize` üye işlevi.  
+ `CMapStringToString` içerir `IMPLEMENT_SERIAL` seri hale getirme ve alt öğeleri dökme desteklemek için makrosu. Bir eşleme bir arşiv, aşırı yüklenmiş ekleme ile depolanıyorsa her öğesi sırayla seri ( **<<**) işleci veya `Serialize` üye işlevi.  
   
- Tek bir dökümü gerekiyorsa `CString` -  `CString` öğeleri ayarlamalısınız döküm içerik derinliği 1 veya daha büyük.  
+ Tek bir dökümü gerekiyorsa `CString` -  `CString` öğeleri ayarlamanız gerekir döküm bağlam derinliğini 1 veya daha büyük.  
   
- Zaman bir `CMapStringToString` Nesne silindiğinden veya ne zaman öğeleri kaldırılır, `CString` nesneleri uygun şekilde kaldırılır.  
+ Olduğunda bir `CMapStringToString` nesnesi silindiğinde veya ne zaman öğeleri kaldırılır, `CString` nesneleri uygun şekilde kaldırılır.  
   
- Daha fazla bilgi için `CMapStringToString`, makaleye bakın [koleksiyonları](../../mfc/collections.md).  
+ Daha fazla bilgi için `CMapStringToString`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -141,17 +141,17 @@ class CMapStringToString : public CObject
   
  Yapısı iki alandan oluşur:  
   
-- **anahtar** anahtar türü gerçek değeri.  
+- `key` Anahtar türü gerçek değeri.  
   
-- **değer** ilişkili nesnenin değeri.  
+- `value` İlişkili nesne değeri.  
   
  Dönüş değerleri depolamak için kullanılan [CMapStringToString::PLookup](#plookup), [CMapStringToString::PGetFirstAssoc](#pgetfirstassoc), ve [CMapStringToString::PGetNextAssoc](#pgetnextassoc).  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bir kullanım örnek için bkz [CMapStringToString::PLookup](#plookup).  
+  Kullanım örneği için örneğin bakın [CMapStringToString::PLookup](#plookup).  
   
 ##  <a name="pgetfirstassoc"></a>  CMapStringToString::PGetFirstAssoc  
- İlk Giriş eşleme nesnesinin döndürür.  
+ Eşlem nesnesine ilk girişinin döndürür.  
   
 ```  
 const CPair* PGetFirstAssoc() const;
@@ -160,16 +160,16 @@ CPair* PGetFirstAssoc();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Harita ilk giriş için bir işaretçi; bkz: [CMapStringToString::CPair](#cpair). Harita boş değer ise, `NULL`.  
+ Eşlem içindeki ilk giriş işaretçisi; bkz: [CMapStringToString::CPair](#cpair). Eşlem boşsa, değer NULL olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi ilk öğe harita nesnesinde döndürmek için bu işlevini çağırın.  
+ Bir işaretçi ilk öğeyi harita nesneyi döndürmek için bu işlevi çağırın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#73](../../mfc/codesnippet/cpp/cmapstringtostring-class_1.cpp)]  
   
 ##  <a name="pgetnextassoc"></a>  CMapStringToString::PGetNextAssoc  
- Gösterdiği map öğesi alır *pAssocRec*.  
+ İşaret ettiği harita öğesini alır. *pAssocRec*.  
   
 ```  
 const CPair *PGetNextAssoc(const CPair* pAssoc) const;  
@@ -179,19 +179,19 @@ CPair *PGetNextAssoc(const CPair* pAssoc);
   
 ### <a name="parameters"></a>Parametreler  
  *pAssoc*  
- Önceki tarafından döndürülen bir eşleme girişi işaret [PGetNextAssoc](#pgetnextassoc) veya [PGetFirstAssoc](#pgetfirstassoc) çağırın.  
+ Bir önceki tarafından döndürülen bir eşleme girişi işaret [PGetNextAssoc](#pgetnextassoc) veya [PGetFirstAssoc](#pgetfirstassoc) çağırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Harita sonraki girişi için bir işaretçi; bkz: [CMapStringToString::CPair](#cpair). Öğe harita son değer ise, **NULL**.  
+ Eşlem içindeki sonraki giriş işaretçisi; bkz: [CMapStringToString::CPair](#cpair). Eşlem içindeki son öğesi ise değer NULL olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Haritanın tüm öğeler yinelemek için bu yöntemi çağırın. İlk öğe çağrısıyla almak `PGetFirstAssoc` ve ardından eşleme için sonraki çağrılarla yinelemek `PGetNextAssoc`.  
+ Eşlem içindeki tüm öğeleri arasında yineleme yapmak için bu yöntemi çağırın. İlk öğe ile bir çağrı almak `PGetFirstAssoc` ve art arda çağrılar haritayla yinelemek `PGetNextAssoc`.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CMapStringToString::PGetFirstAssoc](#pgetfirstassoc).  
+  Örneğin bakın [CMapStringToString::PGetFirstAssoc](#pgetfirstassoc).  
   
 ##  <a name="plookup"></a>  CMapStringToString::PLookup  
- Verilen bir anahtar ile eşlenen değer arar.  
+ Belirli bir anahtar ile eşlenen değeri arar.  
   
 ```  
 const CPair* PLookup(LPCTSTR key) const;
@@ -201,13 +201,13 @@ CPair* PLookup(LPCTSTR key);
   
 ### <a name="parameters"></a>Parametreler  
  *Anahtarı*  
- Aranacak öğe için anahtar için bir işaretçi.  
+ Aranacak öğe anahtarı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen anahtar için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Verilen anahtar tam olarak eşleşen bir anahtara bir harita öğesi için aramak için bu yöntemi çağırın.  
+ Verilen anahtara tam olarak eşleşen bir anahtara bir eşleme öğeyi aramak için bu yöntemi çağırın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#74](../../mfc/codesnippet/cpp/cmapstringtostring-class_2.cpp)]  

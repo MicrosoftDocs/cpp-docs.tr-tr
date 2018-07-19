@@ -18,11 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df243cac3b48a120345760f814a97b77667c770f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 144e770a90427d12d79a18c346d74140d07c5c5c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958591"
 ---
 # <a name="address-of-operator-amp"></a>Address-of işleci: &amp;
 ## <a name="syntax"></a>Sözdizimi  
@@ -32,20 +33,20 @@ ms.lasthandoff: 05/03/2018
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Address-of birli işleci (**&**), işlenen adresini alır. Address-of işleci işleneni işlevi Belirleyicisi ya da bir bit alan değil bir nesne atayan bir l-değeri olabilir.  
+ Birli adres işleci (**&**), işlenenin adresini alır. Adres işlecinin işleneni, bir işlev göstergesi veya bit alanı olmayan bir nesneyi gösteren bir l-değeri olabilir.  
   
- Address-of işleci yalnızca temel, yapısı, sınıf, değişkenlerle uygulanabilir veya dizi başvuruları dosya kapsam düzeyinde veya çok bildirilen birleşim türlerini alt indisli bir dizi. Bu ifadelerde address-of işleci içermeyen bir sabit ifadesine eklenecek veya adres, ifadesinden çıkarılır.  
+ Address-of işleci yalnızca temel, yapı, sınıf, değişkenleri uygulanabilir veya alt simgeli dizi başvurularına dosya kapsamı düzeyinde, bildirilen değişkenlere veya birleşim türleri. Bu ifadelerde adres işlecini içermeyen sabit bir ifade eklenecek veya adres ifadeden çıkarılabilir.  
   
- Uygulandığında işlevler veya l değerleri, ifadenin sonucu için bir işaretçi türü (r) işleneni türünden türetilir. Örneğin, işlenen türü ise `char`, ifade türü işaretçinin sonucudur `char`. Uygulanan address-of işleci, **const** veya `volatile` nesneleri, değerlendiren **const** `type` **\*** veya `volatile` `type` **\***, burada `type` özgün nesne türüdür.  
+ Bir işaretçi türü (r), işlenenin türü uygulandığında işlevler veya l-değeri, ifadenin sonucu elde edilir. Örneğin, işlenenin türü ise **char**, işaretçi türüne ifadenin sonucu olan **char**. Uygulanan address-of işlecini, **const** veya **geçici** nesneleri, değerlendiren **const türünde \***  veya **sabit/geçici tür \*** burada **türü** özgün nesnenin türü.  
   
- Ne zaman address-of işleci uygulanan bir [tam adı](http://msdn.microsoft.com/en-us/3fefb16d-8120-4627-8b3f-3d90fbdcd1df), sonuç bağlıdır *tam adının* statik bir üyenin belirtir. Bu durumda, üye bildiriminde belirtilen tür için bir işaretçi sonucudur. Üye statik değilse sonucu gösteren bir işaretçidir üye *adı* tarafından gösterilen sınıfının *tam-sınıfı-adının*. (Bkz [birincil ifadeler](../cpp/primary-expressions.md) hakkında daha fazla bilgi için *tam-sınıfı-adının*.) Aşağıdaki kod parçası, nasıl sonucu, üye statik olmasına bağlı olarak farklılık gösterir:  
+ Address-of işlecini bir tam adı için uygulandığında, sonuç bağlıdır *tam ad* statik bir üyeye belirtir. Bu durumda, sonuç üye bildiriminde belirtilen türe işaretçisidir. Üye statik değilse, üye işaretçisi sonucudur *adı* tarafından belirtilen sınıf *tam sınıf adının*. (Bkz [birincil ifadeler](../cpp/primary-expressions.md) hakkında daha fazla bilgi için *tam sınıf adının*.) Aşağıdaki kod parçası, nasıl sonucu, üye statik olup bağlı olarak farklılık gösterir:  
   
-```  
+```cpp 
 // expre_Address_Of_Operator.cpp  
 // C2440 expected  
 class PTM {  
 public:  
-           int   iValue;  
+    int iValue;  
     static float fValue;  
 };  
   
@@ -56,15 +57,15 @@ int main() {
 }  
 ```  
   
- Bu örnekte, ifade `&PTM::fValue` verir türü `float *` türü yerine `float PTM::*` çünkü `fValue` statik bir üyesidir.  
+ Bu örnekte, ifade `&PTM::fValue` verir türü `float *` tür yerine `float PTM::*` çünkü `fValue` statik bir üyedir.  
   
- Yalnızca işlevi'nın hangi sürümü başvurulan açık olduğunda, aşırı yüklenen bir işlevin adresini alınabilir. Bkz: [işlev aşırı yüklemesi](function-overloading.md) belirli bir adresi elde etme hakkında bilgi için işlev aşırı yüklendi.  
+ Yalnızca işlevin hangi sürümünü başvurulan açık olduğunda, aşırı yüklenmiş bir işlevin adresini alınabilir. Bkz: [işlev aşırı yüklemesi](function-overloading.md) belirli bir adresi elde etme hakkında bilgi için aşırı yüklenmiş işlev.  
   
- Address-of işleci için bir başvuru türü uygulama işleç başvurusu bağlandığı nesnesine uygulama aynı sonucu verir. Örneğin:  
+ Address-of işleci bir başvuru türü için uygulama işleci, başvuru bağlı olduğu nesneye uygulama aynı sonucu verir. Örneğin:  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_Address_Of_Operator2.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -85,9 +86,9 @@ int main() {
 &d equals &rd  
 ```  
   
- Aşağıdaki örnek, bir işlev işaretçisi bağımsız değişken geçirmek için address-of işleci kullanır:  
+ Aşağıdaki örnek, bir işaretçi bağımsız değişkeni bir işleve geçirilecek address-of işlecini kullanır:  
   
-```  
+```cpp 
 // expre_Address_Of_Operator3.cpp  
 // compile with: /EHsc  
 // Demonstrate address-of operator &  
@@ -114,6 +115,6 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md)   
  [İşleçlerin Yöneltmesi ve Adresi](../c-language/indirection-and-address-of-operators.md)

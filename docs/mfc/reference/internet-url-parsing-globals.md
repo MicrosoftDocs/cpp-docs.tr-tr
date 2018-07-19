@@ -17,27 +17,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02b7ea1a6d22d3e16230acafa25c53f8748a825a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 839e07db88edf8b1bb007a6aedfe90c94732c784
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33374808"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37335737"
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>Internet URL Ayrıştırma genel öğeleri ve Yardımcıları
-Bir istemci Internet sunucusuna bir sorgu gönderdiğinde, URL Ayrıştırma genel öğeleri birini istemcisi hakkında bilgi ayıklamak için kullanabilirsiniz. Yardımcı işlevleri diğer Internet işlevsellik sağlar.
+Bir istemci Internet sunucusuna bir sorgu gönderdiğinde, bu URL Ayrıştırma genel öğeleri birini istemcisi hakkında bilgi ayıklamak için kullanabilirsiniz. Yardımcı işlevleri diğer internet işlevselliği sağlar.
   
 ## <a name="internet-url-parsing-globals"></a>Internet URL Ayrıştırma Genel Öğeleri  
   
 |||  
 |-|-|  
-|[AfxParseURL](#afxparseurl)|URL dizesi ayrıştırır ve hizmet ve bileşenlerinin türünü döndürür.|  
-|[AfxParseURLEx](#afxparseurlex)|URL dizesi ayrıştırır ve hizmet ve bileşenlerinin, yanı sıra kullanıcı adını ve parolasını sağlayarak türünü döndürür.|  
+|[AfxParseURL](#afxparseurl)|Bir URL dizeyi ayrıştırır ve hizmet ve bileşenlerinin türünü döndürür.|  
+|[AfxParseURLEx](#afxparseurlex)|Bir URL dizeyi ayrıştırır ve hizmet ve bileşenlerinin yanı kullanıcı adı ve parola sağlama türünü döndürür.|  
 
 ## <a name="other-internet-helpers"></a>Diğer Internet Yardımcıları
 |||
 |-|-|
-|[Afxthrowınternetexception](#afxthrowinternetexception)|İnternet bağlantısı ile ilgili bir özel durum oluşturur.|
+|[Afxthrowınternetexception](#afxthrowinternetexception)|İnternet bağlantısı ilgili özel durum oluşturur.|
 |[Afxgetınternethandletype](#afxgetinternethandletype)|Bir Internet tanıtıcısı türünü belirler.|
   
 ##  <a name="afxparseurl"></a>  AfxParseURL  
@@ -54,9 +54,9 @@ BOOL AFXAPI AfxParseURL(
   
 ### <a name="parameters"></a>Parametreler  
  *pstrURL*  
- Ayrıştırılacak URL'sini içeren bir dize için bir işaretçi.  
+ Ayrıştırılacak URL'sini içeren bir dize işaretçisi.  
   
- `dwServiceType`  
+ *dwServiceType*  
  Internet hizmet türünü belirtir. Olası değerler aşağıdaki gibidir:  
   
 -   AFX_INET_SERVICE_FTP  
@@ -89,39 +89,39 @@ BOOL AFXAPI AfxParseURL(
   
 -   AFX_INET_SERVICE_UNK  
   
- `strServer`  
- Hizmet türü aşağıdaki URL ilk kesimi.  
+ *strServer*  
+ İlk hizmet türü aşağıdaki URL kesimi.  
   
- `strObject`  
- URL başvurduğu bir nesne (boş olabilir).  
+ *strObject*  
+ URL başvurduğu nesneyi (boş olabilir).  
   
- `nPort`  
- Ya da varsa sunucu veya nesne URL bölümlerinden belirledi.  
+ *nbağlantı noktası*  
+ Ya da varsa URL'yi sunucu veya nesne bölümlerinden belirledi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- URL başarıyla ayrıştırıldığında, sıfır olmayan; Aksi takdirde, 0 boşsa veya bilinen Internet hizmet türü içermiyor.  
+ URL başarıyla ayrıştırıldı olursa sıfır dışı; Aksi halde ise 0 boş veya bilinen bir Internet hizmet türü içermiyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- URL dizesi ayrıştırır ve hizmet ve bileşenlerinin türünü döndürür.  
+ Bu, bir URL dizeyi ayrıştırır ve hizmet ve bileşenlerinin türünü döndürür.  
   
- Örneğin, `AfxParseURL` formun URL'lerini ayrıştırır **service://server/dir/dir/object.ext:port** ve aşağıdaki gibi depolanan bileşenlerinden döndürür:  
+ Örneğin, `AfxParseURL` biçimindeki URL'ler ayrıştırır *service://server/dir/dir/object.ext:port* ve şu şekilde depolanan bileşenleri döndürür:  
   
- `strServer` "server" ==  
+ *strServer* "server" ==  
   
- `strObject` == "/ dir/dir/object/object.ext"  
+ *strObject* == "/ dir/dir/object/object.ext"  
   
- `nPort` #port ==  
+ *nbağlantı noktası* #port ==  
   
- `dwServiceType` #service ==  
+ *dwServiceType* #service ==  
   
 > [!NOTE]
->  Bu işlevi çağırmak için projenizi AFXINET eklemeniz gerekir. H.  
+>  Bu işlevi çağırmak için projenizi AFXINET içermelidir. H  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxinet.h  
+  **Üst bilgi** afxinet.h  
   
 ##  <a name="afxparseurlex"></a>  AfxParseURLEx  
- Bu genel işlevi, genişletilmiş sürümüdür [AfxParseURL](#afxparseurl) ve kullanılan [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
+ Bu genel işlev genişletilmiş sürümüdür [AfxParseURL](#afxparseurl) ve kullanılan [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
   
 ```   
 BOOL AFXAPI AfxParseURLEx(
@@ -137,9 +137,9 @@ BOOL AFXAPI AfxParseURLEx(
   
 ### <a name="parameters"></a>Parametreler  
  *pstrURL*  
- Ayrıştırılacak URL'sini içeren bir dize için bir işaretçi.  
+ Ayrıştırılacak URL'sini içeren bir dize işaretçisi.  
   
- `dwServiceType`  
+ *dwServiceType*  
  Internet hizmet türünü belirtir. Olası değerler aşağıdaki gibidir:  
   
 -   AFX_INET_SERVICE_FTP  
@@ -172,62 +172,62 @@ BOOL AFXAPI AfxParseURLEx(
   
 -   AFX_INET_SERVICE_UNK  
   
- `strServer`  
- Hizmet türü aşağıdaki URL ilk kesimi.  
+ *strServer*  
+ İlk hizmet türü aşağıdaki URL kesimi.  
   
- `strObject`  
- URL başvurduğu bir nesne (boş olabilir).  
+ *strObject*  
+ URL başvurduğu nesneyi (boş olabilir).  
   
- `nPort`  
- Ya da varsa sunucu veya nesne URL bölümlerinden belirledi.  
+ *nbağlantı noktası*  
+ Ya da varsa URL'yi sunucu veya nesne bölümlerinden belirledi.  
   
  *strUsername*  
  Bir başvuru bir `CString` kullanıcı adını içeren bir nesne.  
   
- `strPassword`  
- Bir başvuru bir `CString` kullanıcının parolasını içeren bir nesne.  
+ *strPassword*  
+ Bir başvuru bir `CString` kullanıcının parolasını içeren nesne.  
   
- `dwFlags`  
- URL ayrıştırmayı denetleme bayraklar. Aşağıdaki değerlerden bir bileşimi olabilir:  
+ *CertOpenStore*  
+ URL ayrıştırmayı denetleme bayraklar. Aşağıdaki değerlerin bir birleşimi olabilir:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|**ICU_DECODE**|% XX kaçış sıraları karakterlerine dönüştürmek.|  
-|**ICU_NO_ENCODE**|Çıkış sırası için güvenli olmayan karakterler dönüştürmez.|  
-|**ICU_NO_META**|Meta dizilerini (örneğin, "\" kaldırma ve "\..") URL.|  
-|**ICU_ENCODE_SPACES_ONLY**|Yalnızca boşluk kodlayın.|  
-|**ICU_BROWSER_MODE**|Etmeyin kodlamak veya karakter kod çözme '# 'karakterinden sonra veya '' ve sonunda boşluk sonra kaldırmayın ''. Bu değer belirtilmezse, tüm URL kodlanmış ve sonunda boşluk kaldırılır.|  
+|ICU_DECODE|% XX kaçış dizileri karakterlere dönüştürür.|  
+|ICU_NO_ENCODE|Güvenli olmayan karakterleri kaçış sırası dönüştürmez.|  
+|ICU_NO_META|Meta dizilerini (örneğin, "\." kaldırma ve "\..") URL.|  
+|ICU_ENCODE_SPACES_ONLY|Yalnızca boşluk kodlayın.|  
+|ICU_BROWSER_MODE|Değil kodlayın veya karakterler, '# 'karakterinden sonra kod çözme veya '' ve sonra sondaki boşluk kaldırmayın ''. Bu değer belirtilmezse, URL'nin tamamını kodlanır ve boşluk kaldırılır.|  
   
- Hiçbir bayrakları MFC varsayılan kullanırsanız, tüm güvenli olmayan karakter ve meta sıraları işlevi dönüştürür (gibi \\., \.., ve \\...) kaçınmak için serileri.  
+ Bayrak MFC varsayılanını kullanırsanız, tüm güvenli olmayan karakterleri ve meta dizileri işlevi dönüştürür (gibi \\., \.., ve \\...) kaçış dizileri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- URL başarıyla ayrıştırıldığında, sıfır olmayan; Aksi takdirde, 0 boşsa veya bilinen Internet hizmet türü içermiyor.  
+ URL başarıyla ayrıştırıldı olursa sıfır dışı; Aksi halde ise 0 boş veya bilinen bir Internet hizmet türü içermiyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- URL dizesi ayrıştırır ve hizmet ve bileşenlerinin yanı kullanıcının adı ve parola sağlama türünü döndürür. Bayrakları nasıl güvenli olmayan karakterleri belirtmek işlenir.  
+ Bu, bir URL dizeyi ayrıştırır ve hizmet ve bileşenlerinin yanı kullanıcı adı ve parola sağlama türünü döndürür. Bayrakları nasıl güvenli olmayan karakterleri gösterir işlenir.  
   
 > [!NOTE]
->  Bu işlevi çağırmak için projenizi AFXINET eklemeniz gerekir. H.  
+>  Bu işlevi çağırmak için projenizi AFXINET içermelidir. H  
 
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxinet.h  
+  **Üst bilgi** afxinet.h  
     
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
  
 ## <a name="afxgetinternethandletype"></a>  Afxgetınternethandletype
-Bu genel işlevi, bir Internet tanıtıcısı türünü belirlemek için kullanın.  
+Bu genel işlev, bir Internet tanıtıcı türü belirlemek için kullanın.  
    
 ### <a name="syntax"></a>Sözdizimi  
   ```
 DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );  
 ```
 ### <a name="parameters"></a>Parametreler  
- `hQuery`  
+ *hQuery*  
  Bir Internet sorgu için bir tanıtıcı.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
- Herhangi bir WİNINET tarafından tanımlanan Internet hizmet türü. H. Internet hizmetlerin listesini için Açıklamalar bölümüne bakın. Tanıtıcı NULL ya da tanınmayan ise işlevi AFX_INET_SERVICE_UNK döndürür.  
+ Herhangi bir WİNINET tarafından tanımlanan Internet hizmet türü. H Bu Internet hizmetlerin listesi için Açıklamalar bölümüne bakın. Tanıtıcı boş veya tanınmıyor, işlev AFX_INET_SERVICE_UNK döndürür.  
    
 ### <a name="remarks"></a>Açıklamalar  
  Aşağıdaki liste, olası Internet türleri tarafından döndürülen içermektedir `AfxGetInternetHandleType`.  
@@ -259,7 +259,7 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 -   INTERNET_HANDLE_TYPE_HTTP_REQUEST  
   
 > [!NOTE]
->  Bu işlevi çağırmak için projenize AFXINET eklemeniz gerekir. H.  
+>  Bu işlevi çağırmak için projenizin AFXINET içermelidir. H  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxinet.h  
@@ -276,24 +276,24 @@ Bir Internet özel durum oluşturur.
    void AFXAPI AfxThrowInternetException(  DWORD dwContext,  DWORD dwError = 0 );  
 ```
 ### <a name="parameters"></a>Parametreler  
- `dwContext`  
- Hatanın nedeni işlemi bağlam tanımlayıcısı. Varsayılan değer olan `dwContext` başlangıçta belirtilen [CInternetSession](cinternetsession-class.md) ve geçirilir [CInternetConnection](cinternetconnection-class.md)- ve [CInternetFile](cinternetfile-class.md)-türetilmiş sınıfları. Bir bağlantı veya bir dosya üzerinde gerçekleştirilen belirli işlemler için genellikle varsayılan geçersiz kılma bir `dwContext` kendi. Bu değer daha sonra döndürülen [CInternetSession::OnStatusCallback](cinternetsession-class.md#onstatuscallback) belirli işlemin durumunu belirlemek için. 
+ *dwContext*  
+ Hataya neden olan işlem bağlam tanımlayıcısı. Varsayılan değer olan *dwContext* başlangıçta belirtilen [Cınternetsession](cinternetsession-class.md) ve geçirilen [Cınternetconnection](cinternetconnection-class.md)- ve [Cınternetfile](cinternetfile-class.md)-türetilmiş sınıflar. Bir bağlantı veya bir dosya üzerinde gerçekleştirilen belirli işlemler için genellikle varsayılan geçersiz bir *dwContext* kendi. Bu değer daha sonra döndürülen [CInternetSession::OnStatusCallback](cinternetsession-class.md#onstatuscallback) belirli işlemin durumunu belirlemek için. 
   
- `dwError`  
+ *dwError*  
  Özel duruma neden hata.  
    
 ### <a name="remarks"></a>Açıklamalar  
- İşletim sistemi hata koduna göre nedenini belirlemek için sorumlu.  
+ İşletim sistemi hata koduna göre nedenini belirlemek için sorumlu olursunuz.  
   
 > [!NOTE]
->  Bu işlevi çağırmak için projenizi AFXINET eklemeniz gerekir. H.  
+>  Bu işlevi çağırmak için projenizi AFXINET içermelidir. H  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxinet.h  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
- [CInternetException sınıfı](cinternetexception-class.md)   
+ [Cınternetexception sınıfı](cinternetexception-class.md)   
  [THROW](#throw)
  
 

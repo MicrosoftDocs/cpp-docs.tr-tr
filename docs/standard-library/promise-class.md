@@ -30,16 +30,16 @@ helpviewer_keywords:
 - std::promise [C++], swap
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac8508cab7afc7e6614c29b64d78849383f5bc2d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8a1ddfd30a1e061426f0a19ac1118aa5ade1de17
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861052"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958570"
 ---
 # <a name="promise-class"></a>promise Sınıfı
 
-Açıklayan bir *zaman uyumsuz sağlayıcısı*.
+Açıklayan bir *zaman uyumsuz sağlayıcıyı*.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,24 +54,24 @@ class promise;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Promise](#promise)|Oluşturan bir `promise` nesnesi.|
+|[Promise](#promise)|Oluşturur bir `promise` nesne.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get_future](#get_future)|Döndürür bir [gelecekteki](../standard-library/future-class.md) bu promise ile ilişkilendirilmiş.|
-|[set_exception](#set_exception)|Otomatik olarak bir özel durum belirtmek için bu promise sonucunu ayarlar.|
-|[set_exception_at_thread_exit](#set_exception_at_thread_exit)|Otomatik olarak bir özel durum belirtmek için bu promise sonuç kümeleri ve tüm iş parçacığı yerel nesneler yalnızca geçerli iş parçacığı içinde (genellikle iş parçacığı Çıkışta) yok edildi bildirim sunar.|
-|[set_value](#set_value)|Otomatik olarak bir değer belirtmek için bu promise sonucunu ayarlar.|
-|[set_value_at_thread_exit](#set_value_at_thread_exit)|Otomatik olarak bir değer belirtmek için bu promise sonuç kümeleri ve tüm iş parçacığı yerel nesneler yalnızca geçerli iş parçacığı içinde (genellikle iş parçacığı Çıkışta) yok edildi bildirim sunar.|
-|[Değiştirme](#swap)|Alışverişleri *zaman uyumsuz durum ilişkili* , bu promise değeriyle belirtilen promise nesnesi.|
+|[get_future](#get_future)|Döndürür bir [gelecekteki](../standard-library/future-class.md) bu taahhüt ile ilişkili.|
+|[set_exception](#set_exception)|Bir özel durumu belirtmek için bu Sözün sonucunu atomik olarak belirler.|
+|[set_exception_at_thread_exit](#set_exception_at_thread_exit)|Atomik olarak bir özel durumu belirtmek için bu Sözün sonucunu ayarlar ve (genellikle iş parçacığı çıkışında) yalnızca geçerli iş parçacığındaki tüm iş parçacığı-yerel nesneleri yok olana bildirimi teslim eder.|
+|[set_value](#set_value)|Bir değer belirtmek için bu Sözün sonucunu atomik olarak belirler.|
+|[set_value_at_thread_exit](#set_value_at_thread_exit)|Atomik olarak bir değer belirtmek için bu Sözün sonucunu ayarlar ve (genellikle iş parçacığı çıkışında) yalnızca geçerli iş parçacığındaki tüm iş parçacığı-yerel nesneleri yok olana bildirimi teslim eder.|
+|[değiştirme](#swap)|Değişimleri *ilişkili zaman uyumsuz durumu* , belirtilen bir nesneninkiyle bu Sözün.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Promise::operator =](#op_eq)|Bu promise nesnesi paylaşılan durumu atama.|
+|[Promise::operator =](#op_eq)|Bu söz nesnesinin paylaşılan durumunun ataması.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -79,13 +79,13 @@ class promise;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<gelecekteki >
+**Başlık:** \<gelecek >
 
 **Namespace:** std
 
 ## <a name="get_future"></a>  Promise::get_future
 
-Döndürür bir [gelecekteki](../standard-library/future-class.md) aynı olan nesneyi *zaman uyumsuz durum ilişkili* bu promise olarak.
+Döndürür bir [gelecekteki](../standard-library/future-class.md) aynı nesne *ilişkili zaman uyumsuz durumu* bu taahhüt.
 
 ```cpp
 future<Ty> get_future();
@@ -93,13 +93,13 @@ future<Ty> get_future();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Promise nesnesi boş ise, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) olan bir [error_code](../standard-library/error-code-class.md) , `no_state`.
+Taahhüt nesnesi boşsa, bu yöntemin oluşturduğu bir [future_error](../standard-library/future-error-class.md) olan bir [error_code](../standard-library/error-code-class.md) , `no_state`.
 
-Bu yöntem için aynı ilişkili zaman uyumsuz durumuna sahip bir promise nesnesi adında, yöntemi döndürürse bir `future_error` olan bir `error_code` , `future_already_retrieved`.
+Bu yöntem aynı ilişkili zaman uyumsuz duruma sahip bir promise nesnesi için zaten çağırmışsa çağırılıyorsa yöntem bir `future_error` olan bir `error_code` , `future_already_retrieved`.
 
 ## <a name="op_eq"></a>  Promise::operator =
 
-Aktarımları *zaman uyumsuz durum ilişkili* belirtilen bir gelen `promise` nesnesi.
+Aktarımları *ilişkili zaman uyumsuz durumu* belirtilen bir `promise` nesne.
 
 ```cpp
 promise& operator=(promise&& Other) noexcept;
@@ -107,7 +107,7 @@ promise& operator=(promise&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` A `promise` nesnesi.
+*Diğer* A `promise` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -115,11 +115,11 @@ promise& operator=(promise&& Other) noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç ilişkili zaman uyumsuz durumundan aktarır `Other`. Aktarım sonra `Other` olan *boş*.
+Bu işleç, ilişkili zaman uyumsuz durumu aktarır *diğer*. Aktarım sonra *diğer* olduğu *boş*.
 
 ## <a name="promise"></a>  Promise::Promise Oluşturucusu
 
-Oluşturan bir `promise` nesnesi.
+Oluşturur bir `promise` nesne.
 
 ```cpp
 promise();
@@ -130,21 +130,21 @@ promise(promise&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Al` Bellek ayırıcısında. Bkz: [ \<allocators >](../standard-library/allocators-header.md) daha fazla bilgi için.
+*Al* bellek ayırıcı. Bkz: [ \<ayırıcılar >](../standard-library/allocators-header.md) daha fazla bilgi için.
 
-`Other` A `promise` nesnesi.
+*Diğer* A `promise` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucusu yapıları bir *boş* `promise` nesnesi.
+İlk Oluşturucu yapıları bir *boş* `promise` nesne.
 
-Boş bir ikinci oluşturucu oluşturur `promise` nesne ve kullandığı `Al` bellek ayırma için.
+İkinci oluşturucu boş bir yapıları `promise` nesne ve kullandığı *Al* bellek ayırma için.
 
-Üçüncü Oluşturucusu yapıları bir `promise` nesne ve ilişkili zaman uyumsuz durumundan aktarımı `Other`ve bırakır `Other` boş.
+Üçüncü Oluşturucu yapıları bir `promise` nesnesini ve ilişkili zaman uyumsuz durumu aktarır *diğer*ve çıktığında *diğer* boş.
 
 ## <a name="set_exception"></a>  Promise::set_exception
 
-Otomatik olarak bir özel durum Bunun sonucu olarak depolar `promise` nesne ve ayarlar *zaman uyumsuz durum ilişkili* için *hazır*.
+Bir özel durum bu sonucu atomik olarak depolar `promise` nesne ve ayarlar *ilişkili zaman uyumsuz durumu* için *hazır*.
 
 ```cpp
 void set_exception(exception_ptr Exc);
@@ -152,19 +152,19 @@ void set_exception(exception_ptr Exc);
 
 ### <a name="parameters"></a>Parametreler
 
-`Exc` Bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) depolanan bu yöntem tarafından özel durum sonucu olarak.
+*Hariç tutulan* bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) depolanan bu yöntem tarafından özel durum sonucu olarak.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `promise` nesnesi ilişkili hiçbir zaman uyumsuz durumuna sahiptir, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) hata kodunu olan `no_state`.
+Varsa `promise` nesnesinde ilişkili zaman uyumsuz durumu olmadan, bu yöntem bir [future_error](../standard-library/future-error-class.md) bir hata koduna sahip `no_state`.
 
-Varsa `set_exception`, [set_exception_at_thread_exit](#set_exception_at_thread_exit), [set_value](#set_value), veya [set_value_at_thread_exit](#set_value_at_thread_exit) için zaten çağrılmış bir `promise` nesnesinin sahip aynı zaman uyumsuz durum ilişkilendirilmiş, bu yöntem oluşturulur bir `future_error` hata kodunu olan `promise_already_satisfied`.
+Varsa `set_exception`, [set_exception_at_thread_exit](#set_exception_at_thread_exit), [set_value](#set_value), veya [set_value_at_thread_exit](#set_value_at_thread_exit) için zaten çağrılmış bir `promise` nesnesinin sahip aynı ilişkili zaman uyumsuz durumu, bu yöntem bir `future_error` bir hata koduna sahip `promise_already_satisfied`.
 
-Bu yöntem sonucunda ilişkili zaman uyumsuz durumunu engellenmiş iş parçacığı sayısı engeli haline gelir.
+Bu yöntemin sonucu olarak ilişkili zaman uyumsuz durumda engellenen iş parçacıklarının engeli kaldırılır.
 
 ## <a name="set_exception_at_thread_exit"></a>  Promise::set_exception_at_thread_exit
 
-Bunun sonucunda, otomatik olarak ayarlar `promise` bir özel durum belirtmek için bildirim yalnızca tüm iş parçacığı yerel nesneleri geçerli iş parçacığında teslim edildi (genellikle iş parçacığı Çıkışta).
+Bu sonucu atomik olarak belirler `promise` bir özel durumu belirtmek için bildirim yalnızca tüm iş parçacığı-yerel nesneleri geçerli iş parçacığında teslim yok edildikten sonra (genellikle iş parçacığı çıkışında).
 
 ```cpp
 void set_exception_at_thread_exit(exception_ptr Exc);
@@ -172,19 +172,19 @@ void set_exception_at_thread_exit(exception_ptr Exc);
 
 ### <a name="parameters"></a>Parametreler
 
-`Exc` Bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) depolanan bu yöntem tarafından özel durum sonucu olarak.
+*Hariç tutulan* bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) depolanan bu yöntem tarafından özel durum sonucu olarak.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Promise nesnesi yok varsa *zaman uyumsuz durum ilişkili*, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) hata kodunu olan `no_state`.
+Promise nesnesi Hayır varsa *ilişkili zaman uyumsuz durumu*, bu yöntem bir [future_error](../standard-library/future-error-class.md) bir hata koduna sahip `no_state`.
 
-Varsa [set_exception](#set_exception), `set_exception_at_thread_exit`, [set_value](#set_value), veya [set_value_at_thread_exit](#set_value_at_thread_exit) için zaten çağrılmış bir `promise` aynı olan nesneyi ilişkili zaman uyumsuz durum, bu yöntem oluşturur bir `future_error` hata kodunu olan `promise_already_satisfied`.
+Varsa [set_exception](#set_exception), `set_exception_at_thread_exit`, [set_value](#set_value), veya [set_value_at_thread_exit](#set_value_at_thread_exit) için zaten çağrılmış bir `promise` aynı nesne ilişkili zaman uyumsuz durum, bu yöntem oluşturur bir `future_error` bir hata koduna sahip `promise_already_satisfied`.
 
-Tersine için [set_exception](#set_exception), bu yöntem, geçerli iş parçacığının tüm iş parçacığı yerel nesneleri yok kadar hazır ilişkili zaman uyumsuz durum ayarlı değil. Genellikle, geçerli iş parçacığının çıkar kadar ilişkili zaman uyumsuz durumunu engellenmiş iş parçacıklarının engeli değildir.
+Tersine [set_exception](#set_exception), bu yöntem, geçerli iş parçacığındaki tüm iş parçacığı-yerel nesneleri yok olana kadar hazır olmak için ilişkili zaman uyumsuz durumu ayarlamaz. Genellikle, geçerli iş parçacığı çıkana kadar ilişkili zaman uyumsuz durumda engellenen iş parçacıklarının engeli değildir.
 
 ## <a name="set_value"></a>  Promise::set_value
 
-Otomatik olarak bir değer Bunun sonucu olarak depolar `promise` nesne ve ayarlar *zaman uyumsuz durum ilişkili* için *hazır*.
+Bir değeri bu sonucu atomik olarak depolar `promise` nesne ve ayarlar *ilişkili zaman uyumsuz durumu* için *hazır*.
 
 ```cpp
 void promise::set_value(const Ty& Val);
@@ -195,27 +195,27 @@ void promise<void>::set_value();
 
 ### <a name="parameters"></a>Parametreler
 
-`Val` Sonuç olarak depolanması için değer.
+*VAL* sonuç olarak depolanacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `promise` nesnesi ilişkili hiçbir zaman uyumsuz durumuna sahiptir, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) hata kodunu olan `no_state`.
+Varsa `promise` nesnesinde ilişkili zaman uyumsuz durumu olmadan, bu yöntem bir [future_error](../standard-library/future-error-class.md) bir hata koduna sahip `no_state`.
 
-Varsa [set_exception](#set_exception), [set_exception_at_thread_exit](#set_exception_at_thread_exit), `set_value`, veya [set_value_at_thread_exit](#set_value_at_thread_exit) için zaten çağrılmış bir `promise` nesnesi aynı ilişkili zaman uyumsuz duruma sahip, bu yöntem oluşturulur bir `future_error` hata kodunu olan `promise_already_satisfied`.
+Varsa [set_exception](#set_exception), [set_exception_at_thread_exit](#set_exception_at_thread_exit), `set_value`, veya [set_value_at_thread_exit](#set_value_at_thread_exit) için zaten çağrılmış bir `promise` nesnesi aynı ilişkili zaman uyumsuz duruma sahip, bu yöntem bir `future_error` bir hata koduna sahip `promise_already_satisfied`.
 
-Bu yöntem sonucunda ilişkili zaman uyumsuz durumunu engellenmiş iş parçacığı sayısı engeli haline gelir.
+Bu yöntemin sonucu olarak ilişkili zaman uyumsuz durumda engellenen iş parçacıklarının engeli kaldırılır.
 
-İlk yöntem de ne zaman oluşturulur herhangi bir durum oluşturduğunda `Val` ilişkili zaman uyumsuz bir duruma kopyalanır. Bu durumda, ilişkili zaman uyumsuz durumu ayarlanmamış için hazır.
+İlk yöntem ayrıca oluşan herhangi bir özel durum oluşturduğunda *Val* ilgili zaman uyumsuz duruma kopyalanır. Bu durumda, ilişkili zaman uyumsuz durumu ayarlanmamış için hazır.
 
-İkinci yöntem de ne zaman oluşturulur herhangi bir durum oluşturduğunda `Val` ilişkili zaman uyumsuz duruma taşındığında. Bu durumda, ilişkili zaman uyumsuz durumu ayarlanmamış için hazır.
+İkinci yöntem aynı zamanda oluşan herhangi bir özel durumu oluşturur *Val* ilişkili zaman uyumsuz duruma taşındığında. Bu durumda, ilişkili zaman uyumsuz durumu ayarlanmamış için hazır.
 
-Kısmi uzmanlığı için `promise<Ty&>`, depolanmış geçerli bir başvuru değerdir `Val`.
+Kısmi özelleştirmesi için `promise<Ty&>`, saklanan değer etkili bir başvurudur *Val*.
 
-Özelleştirme için `promise<void>`, depolanan bir değeri yok.
+Özelleştirmesi için `promise<void>`, kayıtlı hiçbir değer yok.
 
 ## <a name="set_value_at_thread_exit"></a>  Promise::set_value_at_thread_exit
 
-Otomatik olarak bir değer Bunun sonucu olarak depolar `promise` nesnesi.
+Bir değeri bu sonucu atomik olarak depolar `promise` nesne.
 
 ```cpp
 void promise::set_value_at_thread_exit(const Ty& Val);
@@ -226,27 +226,27 @@ void promise<void>::set_value_at_thread_exit();
 
 ### <a name="parameters"></a>Parametreler
 
-`Val` Sonuç olarak depolanması için değer.
+*VAL* sonuç olarak depolanacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Promise nesnesi yok varsa *zaman uyumsuz durum ilişkili*, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) hata kodunu olan `no_state`.
+Promise nesnesi Hayır varsa *ilişkili zaman uyumsuz durumu*, bu yöntem bir [future_error](../standard-library/future-error-class.md) bir hata koduna sahip `no_state`.
 
-Varsa [set_exception](#set_exception), [set_exception_at_thread_exit](#set_exception_at_thread_exit), [set_value](#set_value), veya `set_value_at_thread_exit` için zaten çağrılmış bir `promise` aynı olan nesneyi ilişkili zaman uyumsuz durum, bu yöntem oluşturur bir `future_error` hata kodunu olan `promise_already_satisfied`.
+Varsa [set_exception](#set_exception), [set_exception_at_thread_exit](#set_exception_at_thread_exit), [set_value](#set_value), veya `set_value_at_thread_exit` için zaten çağrılmış bir `promise` aynı nesne ilişkili zaman uyumsuz durum, bu yöntem oluşturur bir `future_error` bir hata koduna sahip `promise_already_satisfied`.
 
-Tersine için `set_value`, ilişkili zaman uyumsuz durum geçerli iş parçacığının tüm iş parçacığı yerel nesneleri yok kadar hazır ayarlı değil. Genellikle, geçerli iş parçacığının çıkar kadar ilişkili zaman uyumsuz durumunu engellenmiş iş parçacıklarının engeli değildir.
+Tersine `set_value`, geçerli iş parçacığındaki tüm iş parçacığı-yerel nesneleri yok olana kadar hazır olmak için ilişkili zaman uyumsuz durumu ayarlanmamış. Genellikle, geçerli iş parçacığı çıkana kadar ilişkili zaman uyumsuz durumda engellenen iş parçacıklarının engeli değildir.
 
-İlk yöntem de ne zaman oluşturulur herhangi bir durum oluşturduğunda `Val` ilişkili zaman uyumsuz bir duruma kopyalanır.
+İlk yöntem ayrıca oluşan herhangi bir özel durum oluşturduğunda *Val* ilgili zaman uyumsuz duruma kopyalanır.
 
-İkinci yöntem de ne zaman oluşturulur herhangi bir durum oluşturduğunda `Val` ilişkili zaman uyumsuz duruma taşındığında.
+İkinci yöntem aynı zamanda oluşan herhangi bir özel durumu oluşturur *Val* ilişkili zaman uyumsuz duruma taşındığında.
 
-Kısmi uzmanlığı için `promise<Ty&>`, depolanan değerin etkili bir şekilde başvurusudur `Val`.
+Kısmi özelleştirmesi için `promise<Ty&>`, saklanan değer etkili bir şekilde bir başvurudur *Val*.
 
-Özelleştirme için `promise<void>`, depolanan bir değeri yok.
+Özelleştirmesi için `promise<void>`, kayıtlı hiçbir değer yok.
 
 ## <a name="swap"></a>  Promise::Swap
 
-Alışverişleri *zaman uyumsuz durum ilişkili* , belirtilen bir nesne ile bu promise nesnesi.
+Değişimleri *ilişkili zaman uyumsuz durumu* ile belirtilen bir nesnenin bu söz nesnesinin.
 
 ```cpp
 void swap(promise& Other) noexcept;
@@ -254,7 +254,7 @@ void swap(promise& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Other` A `promise` nesnesi.
+*Diğer* A `promise` nesne.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

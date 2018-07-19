@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e9a8bf702f4373040a6f7255d67f551b5dbfa60
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 05354361bd460f64daced16684e9f8b70de94898
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846967"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954118"
 ---
 # <a name="freelist-class"></a>freelist Sınıfı
 
-Bellek blokları bir listesini yönetir.
+Bellek bloklarını listesini yönetir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,12 +43,12 @@ class freelist
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Sz`|Ayrılacak dizideki öğelerin sayısı.|
-|`Max`|Boş listede depolanması öğelerinin üst limiti temsil eden max sınıfı. Max sınıf olabilir [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md), veya [max_variable_size](../standard-library/max-variable-size-class.md).|
+|*SZ*|Ayrılacak dizideki öğelerin sayısı.|
+|*en fazla*|Öğeleri boş listeden depolanacak en fazla sayısını temsil eden en fazla sınıf. Max sınıfı olabilir [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md), veya [max_variable_size](../standard-library/max-variable-size-class.md).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfı bellek blok boyutu bir listesini yönetir `Sz` geçirilen max sınıfı tarafından belirlenen listesinin en büyük uzunluğa sahip `Max`.
+Bu şablon sınıfının bellek blok boyutu listesini yönetir *Sz* geçirilen max sınıfı tarafından belirlenen listenin maksimum uzunluğunu ile *Max*.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -61,11 +61,11 @@ Bu şablon sınıfı bellek blok boyutu bir listesini yönetir `Sz` geçirilen m
 |Üye işlevi|Açıklama|
 |-|-|
 |[POP](#pop)|İlk bellek bloğu boş listeden kaldırır.|
-|[push](#push)|Bir bellek bloğu listesine ekler.|
+|[push](#push)|Bir bellek bloğunu listesine ekler.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 
@@ -93,11 +93,11 @@ Listeden kaldırılan bellek bloğu için bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `NULL` liste boşsa. Aksi durumda, ilk bellek bloğu listeden kaldırır.
+Liste boşsa, üye işlev NULL döndürür. Aksi takdirde, ilk bellek bloğu listeden kaldırır.
 
 ## <a name="push"></a>  FreeList::push
 
-Bir bellek bloğu listesine ekler.
+Bir bellek bloğunu listesine ekler.
 
 ```cpp
 bool push(void* ptr);
@@ -107,16 +107,16 @@ bool push(void* ptr);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`ptr`|Ücretsiz listeye eklenecek bellek bloğu için bir işaretçi.|
+|*ptr*|Ücretsiz listeye eklenecek bellek bloğu için bir işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa `full` max sınıfının işlevi döndürür `false`; Aksi halde, `push` işlev döndürür `false`.
+**doğru** varsa `full` max sınıfının işlevi döndürür **false**; Aksi takdirde `push` işlevinin döndürdükleriyle **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `full` max sınıfının işlevi döndürür `false`, bu üye fonksiyonu gösterdiği bellek bloğu ekler `ptr` listenin başındaki için.
+Varsa `full` max sınıfının işlevi döndürür **false**, bu üye işlevi tarafından işaret edilen bellek bloğu ekler *ptr* listesinin karşılaştırması.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

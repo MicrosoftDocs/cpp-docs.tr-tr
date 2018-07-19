@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b814f64f340577508add6bf3c0f85ffac0786db7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1b65cfbe156ba462af9e87abf82d63023cfdc44b
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843476"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957444"
 ---
 # <a name="discardblockengine-class"></a>discard_block_engine Sınıfı
 
-Kendi temel altyapı tarafından döndürülen değer atarak rastgele bir sıra oluşturur.
+Değerleri kendi temel altyapısıyla döndürülen atarak rastgele bir sıra üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +36,11 @@ class discard_block_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-`Engine` Temel altyapısı türü.
+*Altyapısı* temel altyapısı türü.
 
-`P` **Bloğu boyutunu**. Her bloğundaki değerlerinin sayısı.
+*P* **bloğu boyutunu**. Değerleri blokların sayısı.
 
-`R` **Kullanılan blok**. Kullanılan değerleri her bloğundaki sayısı. Rest atılır ( `P`  -  `R`). **Önkoşul**: `0 < R ≤ P`
+*R* **kullanılan blok**. Her bir blok içinde kullanılan değerleri sayısı. Rest atılır (`P` - `R`). **Önkoşul**: `0 < R ≤ P`
 
 ## <a name="members"></a>Üyeler
 
@@ -49,11 +49,11 @@ class discard_block_engine;
 |`discard_block_engine::discard_block_engine`|`discard_block_engine::base`|`discard_block_engine::discard`|
 |`discard_block_engine::operator()`|`discard_block_engine::base_type`|`discard_block_engine::seed`|
 
-Altyapısı üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Altyapısı üyeleri hakkında daha fazla bilgi için bkz. [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıf kendi temel altyapı tarafından döndürülen değerlerin bazılarını atarak değerleri üreten bir motoru bağdaştırıcı açıklar.
+Bu şablon sınıfı, değerleri kendi temel altyapısıyla döndürülen değerlerden bazıları atarak üreten bir altyapısı bağdaştırıcısını açıklar.
 
 ## <a name="requirements"></a>Gereksinimler
 

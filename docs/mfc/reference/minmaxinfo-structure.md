@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12161938f96e5044ae48f9eb5cf380fbc3840d3f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cf9a6e6a1397b9361df5372af09be8e61d997e62
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369524"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37337820"
 ---
 # <a name="minmaxinfo-structure"></a>MINMAXINFO Yapısı
-`MINMAXINFO` Yapısı bir pencere ekranı kaplamış boyutunu ve konumunu ve minimum ve maksimum izleme boyutuna hakkındaki bilgileri içerir.  
+`MINMAXINFO` Yapısı bir pencerenin tam ekran boyutu ve konumu ve izleme minimum ve maksimum boyutunu hakkındaki bilgileri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,21 +43,21 @@ typedef struct tagMINMAXINFO {
  İç kullanım için ayrılmıştır.  
   
  *ptMaxSize*  
- Tam ekran genişliği (point.x) ve penceresinin ekranı kaplamış yüksekliğini (point.y) belirtir.  
+ Tam ekran genişliği (point.x) ve ekranı kaplamış (point.y) pencerenin yüksekliğini belirtir.  
   
- `ptMaxPosition`  
- Kaplamış (point.x) sol tarafındaki konumunu ve kaplamış (point.y) üst konumunu belirtir.  
+ *ptMaxPosition*  
+ Kaplamış (point.x) sol tarafındaki konumunu ve ekranı kaplamış penceresinin (point.y) üst konumunu belirtir.  
   
  *ptMinTrackSize*  
- Genişlik (point.x) izleme en düşük ve yükseklik (point.y) penceresinin izleme en düşük belirtir.  
+ En düşük Genişlik (point.x) izleme ve izleme pencerenin yüksekliğini (point.y) en düşük belirtir.  
   
  *ptMaxTrackSize*  
- En büyük genişliği (point.x) izleme ve maksimum penceresinin (point.y) yüksekliğini izleme belirtir.  
+ Maksimum genişliği (point.x) izleme ve pencerenin yüksekliğini (point.y) izleme üst sınırı belirtir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winuser.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CWnd::OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo)
 

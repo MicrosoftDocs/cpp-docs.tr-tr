@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0108b8d02c275cb4e498cd3e9df00b87b7cae28f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 321737f62d0e2506ef6582f80bed7f398ad5977b
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840504"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959918"
 ---
 # <a name="allocatorunbounded-class"></a>allocator_unbounded Sınıfı
 
-Depolama ayırma ve serbest bırakma türündeki nesneler için yöneten bir nesneyi tanımlayan `Type` bir önbellek türü kullanarak [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunluğa sahip [max_unbounded](../standard-library/max-unbounded-class.md).
+Depolama ayırmayı ve boşaltmayı türü nesneler için yöneten bir nesneyi tanımlayan *türü* kullanarak bir önbellek türü [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunlukta [max_unbounded](../standard-library/max-unbounded-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,18 +39,18 @@ class allocator_unbounded;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Type`|Ayırıcı tarafından ayrılan öğelerin türü.|
+|*Türü*|Ayırıcı tarafından ayrılan öğelerin türü.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) makrosu geçirir bu sınıfı olarak `name` aşağıdaki ifadeyi parametresinde: `ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_unbounded), SYNC_DEFAULT, allocator_unbounded);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) makrosu bu sınıfı olarak geçirir *adı* aşağıdaki deyim parametresi: `ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_unbounded), SYNC_DEFAULT, allocator_unbounded);`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

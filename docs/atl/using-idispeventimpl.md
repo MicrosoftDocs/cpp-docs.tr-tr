@@ -1,5 +1,5 @@
 ---
-title: IDispEventImpl (ATL) kullanarak | Microsoft Docs
+title: Idispeventımpl (ATL) kullanarak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,30 +16,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 520d1129234a26ff6eb4c402154969ad7e166211
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 38ac64a99c3523f174c62c9788aeab867aa8758b
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361157"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848934"
 ---
-# <a name="using-idispeventimpl"></a>IDispEventImpl kullanma
+# <a name="using-idispeventimpl"></a>Idispeventımpl kullanma
 Kullanırken `IDispEventImpl` olayları işlemek için yapmanız gerekir:  
   
--   Sınıfından türetilen [IDispEventImpl](../atl/reference/idispeventimpl-class.md).  
+-   Öğesinden, bir sınıf türetin [Idispeventımpl](../atl/reference/idispeventimpl-class.md).  
   
--   Bir olay havuz eşlemesi sınıfınıza ekleyin.  
+-   Bir olay havuzu eşlemesi sınıfınıza ekleyin.  
   
--   Olay iç havuz kullanarak eşleme girişleri eklemek [SINK_ENTRY](reference/composite-control-macros.md#sink_entry) veya [SINK_ENTRY_EX](reference/composite-control-macros.md#sink_entry_ex) makrosu.  
+-   Olay havuzu kullanarak eşleme girişleri ekleyin [SINK_ENTRY](reference/composite-control-macros.md#sink_entry) veya [SINK_ENTRY_EX](reference/composite-control-macros.md#sink_entry_ex) makrosu.  
   
--   İşlemede ilgilenen yöntemleri uygulayın.  
+-   İşlemede ilginizi çeken yöntemleri uygulayın.  
   
--   Öneri ve olay kaynağı unadvise.  
+-   Öneri ve olay kaynağı eşlemesindeki.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl işleneceğini gösterir **DocumentChange** olay harekete Word tarafından **uygulama** nesnesi. Bu olay bir yöntem olarak tanımlanan **ApplicationEvents** görüntüleme arabirimi.  
+ Aşağıdaki örnekte nasıl işleneceğini gösterir `DocumentChange` olay harekete Word tarafından **uygulama** nesne. Bu olay üzerinde bir yöntemi olarak tanımlanan `ApplicationEvents` dispinterface.  
   
- Örnek kaynaklı [ATLEventHandling örnek](../visual-cpp-samples.md).  
+ Örnek dandır [ATLEventHandling örnek](../visual-cpp-samples.md).  
   
  `[`  
   
@@ -69,11 +69,11 @@ Kullanırken `IDispEventImpl` olayları işlemek için yapmanız gerekir:
   
  `};`  
   
- Örnek kullanır `#import` Word tür kitaplığından gereken üstbilgi dosyaları oluşturmak için. Word'ün diğer sürümleri bu örneği kullanmak istiyorsanız, doğru mso dll dosyası belirtmeniz gerekir. Örneğin, Office 2000 mso9.dll ve mso.dll OfficeXP sağlar. Bu kod stdafx.h basitleştirilir:  
+ Örnekte `#import` Word'ün tür kitaplığından gereken üst bilgi dosyaları oluşturmak için. Word'ün diğer sürümleri bu örneği kullanmak istiyorsanız, doğru mso dll dosyası belirtmeniz gerekir. Örneğin, Office 2000 mso9.dll ve OfficeXP mso.dll sağlar. Bu kod, stdafx.h basitleştirilir:  
   
  [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventimpl_1.h)]  
   
- Aşağıdaki kod NotSoSimple.h içinde görüntülenir. İlgili kodu açıklamaları tarafından belirtilir:  
+ Aşağıdaki kod NotSoSimple.h içinde görünür. İlgili kod açıklamaları tarafından belirtilir:  
   
  [!code-cpp[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/cpp/using-idispeventimpl_2.h)]  
   

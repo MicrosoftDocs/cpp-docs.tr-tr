@@ -18,22 +18,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb5a43ef9b35d47749ba2c62fa785dc3d910bcd5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70254f05dc871a8073d82f1870b30f178e0f7276
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361560"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959010"
 ---
 # <a name="thread-pooling-classes"></a>İş parçacığı havuzu sınıfları
 Aşağıdaki sınıflar, iş parçacığı havuzu destekler:  
   
--   [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) birden çok iş parçacığı havuza grupların desteğiyle bir EXE modül uygular.  
+-   [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) birden çok iş parçacığı havuza apartmanlar desteğiyle bir EXE modül uygular.  
   
 -   [CComApartment](../atl/reference/ccomapartment-class.md) bir iş parçacığı havuza EXE modülü bir grupta yönetir.  
   
--   [CComSimpleThreadAllocator](../atl/reference/ccomsimplethreadallocator-class.md) bir EXE modülü için iş parçacığı seçimi yönetir.  
+-   [CComSimpleThreadAllocator](../atl/reference/ccomsimplethreadallocator-class.md) EXE modülü için iş parçacığı seçimi yönetir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

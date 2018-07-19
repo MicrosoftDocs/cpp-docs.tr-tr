@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ea2a1047864c19be3f5bbd6c303b4b00fb132dc
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 1acc2d5918bea040e1f004e8a1d11ceee3146f89
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37078775"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848625"
 ---
 # <a name="crebar-class"></a>CReBar sınıfı
-Denetim çubuğu düzeni, sürdürme ve rebar denetimleri için durum bilgilerini sağlar.  
+Düzen, süreklilik ve çubuk barınağı denetimleri için durum bilgileri sağlayan denetim çubuğu.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,22 +44,22 @@ class CReBar : public CControlBar
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CReBar::AddBar](#addbar)|Bir bandı bir rebar ekler.|  
-|[CReBar::Create](#create)|Rebar denetimi oluşturur ve ona ekler `CReBar` nesnesi.|  
-|[CReBar::GetReBarCtrl](#getrebarctrl)|Temel alınan ortak denetimi doğrudan erişim sağlar.|  
+|[CReBar::AddBar](#addbar)|Bir bant için bir çubuk barınağı ekler.|  
+|[CReBar::Create](#create)|Çubuk barınağı denetimi oluşturur ve ona ekler `CReBar` nesne.|  
+|[CReBar::GetReBarCtrl](#getrebarctrl)|Temel alınan bir ortak denetimi doğrudan erişim sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir rebar nesnesi alt öğe pencerelerini, Düzen kutuları, araç çubukları ve liste kutuları dahil genellikle diğer denetimler çeşitli içerebilir. Bir rebar nesnesi, alt öğe pencerelerini belirtilen bir bit eşlem görüntüleyebilirsiniz. Uygulamanızı rebar otomatik olarak yeniden boyutlandırın veya tıklatarak ya da Mandal çubuğunu sürükleyerek kullanıcı el ile rebar genişletebilir.  
+ Bir rebar nesnesi çeşitli alt pencereleri düzenleme kutuları, araç çubukları ve liste kutuları gibi genellikle diğer denetimleri içerebilir. Bir rebar nesneyi kendi alt pencereleri belirtilen bir bit eşlem görüntüleyebilirsiniz. Uygulamanızı çubuk barınağı otomatik olarak yeniden boyutlandırmak veya tıklayarak veya kavrayıcı çubuğunu sürüklerken kullanıcı el ile çubuk barınağı boyutlandırabilirsiniz.  
   
  ![RebarMenu örneği](../../mfc/reference/media/vc4sc61.gif "vc4sc61")  
   
 ## <a name="rebar-control"></a>Rebar denetimi  
- Bir rebar nesnesi bir araç nesnesine benzer şekilde davranır. Bir rebar kendi bantları yeniden boyutlandırmak için tıklatın ve sürükleyin mekanizması kullanır. Rebar denetimiyle Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir bileşimini sahip her bant ile bir veya daha fazla bantları içerebilir. Ancak, bantlar birden fazla alt pencere içeremez.  
+ Bir rebar nesnesi bir araç çubuğu nesnesi için benzer şekilde davranır. Bir rebar kendi bantları yeniden boyutlandırmak için tıklatın ve sürükleyin mekanizması kullanır. Rebar denetimiyle, her bant bir Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir birleşimini sahip olan bir veya daha fazla bant içerebilir. Ancak, bantlar birden fazla alt penceresi içeremez.  
   
- `CReBar` kullanan [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) kendi uygulama sunmak amacıyla sınıfı. Rebar denetimi aracılığıyla erişebilirsiniz [GetReBarCtrl](#getrebarctrl) denetimin özelleştirme seçenekleri yararlanmak için. Rebar denetimleri hakkında daha fazla bilgi için bkz: `CReBarCtrl`. Rebar denetimleri kullanma hakkında daha fazla bilgi için bkz: [kullanarak CReBarCtrl](../../mfc/using-crebarctrl.md).  
+ `CReBar` kullanan [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) sınıfı, bir uygulama sağlamak için. Çubuk barınağı denetim aracılığıyla erişebileceğiniz [GetReBarCtrl](#getrebarctrl) denetimin özelleştirme seçenekleri yararlanmak için. Çubuk barınağı denetimleri hakkında daha fazla bilgi için bkz: `CReBarCtrl`. Çubuk barınağı denetimleri kullanma hakkında daha fazla bilgi için bkz. [kullanarak CReBarCtrl](../../mfc/using-crebarctrl.md).  
   
 > [!CAUTION]
->  Rebar ve rebar denetimi nesneleri yerleştirme çubuğu MFC denetim desteklemez. Varsa `CRebar::EnableDocking` , uygulamanızın assert denir.  
+>  Çubuk barınağı ve çubuk barınağı denetimi nesnelerini MFC denetim çubuğu yerleştirme desteklemez. Varsa `CRebar::EnableDocking` , uygulamanızın iddia çağrılır.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -76,7 +76,7 @@ class CReBar : public CControlBar
  **Başlık:** afxext.h  
   
 ##  <a name="addbar"></a>  CReBar::AddBar  
- Rebar bir bant eklemek için bu üye işlevini çağırın.  
+ Çubuk barınağı için bir bant eklemek için bu üye işlevini çağırın.  
   
 ```  
 BOOL AddBar(
@@ -96,25 +96,25 @@ BOOL AddBar(
   
 ### <a name="parameters"></a>Parametreler  
  *pBar*  
- Bir işaretçi bir `CWnd` rebar eklenecek alt pencere nesnesi. Başvurulan nesne olmalıdır bir **WS_CHILD**.  
+ Bir işaretçi bir `CWnd` alt pencerenin çubuk barınağı eklenecek nesne. Başvurulan nesnenin bir WS_CHILD olması gerekir.  
   
  *lpszText*  
- Rebar üzerinde görüntülenecek metni içeren bir dize için bir işaretçi. **NULL** varsayılan olarak. Bulunan metin *lpszText* alt pencere; parçası olmayan rebar üzerinde değil.  
+ Çubuk barınağı görüntülenecek metni içeren bir dize işaretçisi. Varsayılan olarak null değerini DÖNDÜRÜR. Bulunan metin *lpszText* alt penceresi; bir parçası değil rebar üzerinde olduğu.  
   
  *pbmp*  
- Bir işaretçi bir `CBitmap` rebar arka planda görüntülenecek nesne. **NULL** varsayılan olarak.  
+ Bir işaretçi bir `CBitmap` çubuk barınağı arka plan üzerinde görüntülenecek nesne. Varsayılan olarak null değerini DÖNDÜRÜR.  
   
  *dwStyle*  
- A `DWORD` rebar uygulamak için stili içeren. Bkz **fStyle** işlev Win32 yapısı açıklamasında [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) bant stilleri tam bir listesi.  
+ Çubuk barınağı için uygulanacak içeren stil DWORD. Bkz: `fStyle` işlev açıklama Win32 yapısında [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) bant stilleri tam listesi için.  
   
  *clrFore*  
- A **COLORREF** rebar ön plan rengini gösteren bir değer.  
+ Çubuk barınağı ön plan rengi temsil eden bir COLORREF değer.  
   
  *clrBack*  
- A **COLORREF** rebar arka plan rengi temsil eden bir değer.  
+ Çubuk barınağı arka plan rengi temsil eden bir COLORREF değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CReBarCtrl#1](../../mfc/reference/codesnippet/cpp/crebar-class_1.cpp)]  
@@ -135,34 +135,34 @@ virtual BOOL Create(
  İşaretçi `CWnd` olan Windows penceresi durum çubuğunun üst nesne. Normalde, çerçeve penceresi.  
   
  *dwCtrlStyle*  
- Rebar denetimi stili. Varsayılan olarak, **RBS_BANDBORDERS**, hangi görüntüler rebar denetimi içinde bitişik bantları ayırmak için satırları daraltın. Bkz: [Rebar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) stilleri listesi için Windows SDK.  
+ Çubuk barınağı denetim stili. Varsayılan olarak, bitişik bantları çubuk barınağı denetimi içinde ayrı çizgilerle görüntüleyen RBS_BANDBORDERS. Bkz: [Rebar denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) stilleri bir listesi için Windows SDK.  
   
  *dwStyle*  
- Rebar pencere stilleri.  
+ Çubuk barınağı pencere stilleri.  
   
  *nID*  
- Rebar ait alt pencere kimliği  
+ Barınağının alt penceresi kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CReBar::AddBar](#addbar).  
+  Örneğin bakın [CReBar::AddBar](#addbar).  
   
 ##  <a name="getrebarctrl"></a>  CReBar::GetReBarCtrl  
- Bu üye işlevi temel ortak denetimi doğrudan erişim sağlar.  
+ Bu üye işlevi, temel alınan bir ortak denetimi doğrudan erişim sağlar.  
   
 ```  
 CReBarCtrl& GetReBarCtrl() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir başvuru bir [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) nesnesi.  
+ Bir başvuru bir [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Rebar özelleştirme Windows rebar ortak kontrol işlevsellikten yararlanmak için bu üye işlevini çağırın. Çağırdığınızda `GetReBarCtrl`, bir başvuru nesnesi döndüren `CReBarCtrl` ya da kümesi üye işlevlerini kullanabilmeniz için nesne.  
+ Çubuk barınağı özelleştirmede Windows çubuk barınağı ortak denetimi işlevlerini yararlanmak için bu üye işlevini çağırın. Çağırdığınızda `GetReBarCtrl`, bir başvuru nesneye döndürür `CReBarCtrl` ayarlayın ya da üye işlevleri kullanabilmeniz için nesne.  
   
- Kullanma hakkında daha fazla bilgi için `CReBarCtrl` , rebar özelleştirmek için bkz: [kullanarak CReBarCtrl](../../mfc/using-crebarctrl.md).  
+ Kullanma hakkında daha fazla bilgi için `CReBarCtrl` , çubuk barınağı özelleştirmek için bkz: [kullanarak CReBarCtrl](../../mfc/using-crebarctrl.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CReBarCtrl#2](../../mfc/reference/codesnippet/cpp/crebar-class_2.cpp)]  

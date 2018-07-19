@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bc34a0a176e39a30e6cdb5d4c2cdeeebc94b5b1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 46e5b0b0c55c5a5dd0a48d2437fc83fa43226f5a
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845758"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956152"
 ---
 # <a name="enablesharedfromthis-class"></a>enable_shared_from_this Sınıfı
 
-Oluştur yardımcı olan bir `shared_ptr`.
+Üretmeye yardımcı olur bir `shared_ptr`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,13 +46,13 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Paylaşılan işaretçiyi tarafından denetlenen türü.
+*Ty* paylaşılan işaretçiyle kontrol edilen tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesneleri türetilen `enable_shared_from_this` kullanabilirsiniz `shared_from_this` oluşturmak için üye işlevleri yöntemleri [shared_ptr](../standard-library/shared-ptr-class.md) var olan sahipliği paylaşan sahipleri örneğinin `shared_ptr` sahipleri. Aksi takdirde, yeni bir oluşturursanız `shared_ptr` kullanarak `this`, mevcut farklıdır `shared_ptr` başvuru geçersiz veya birden çok kez Silinecek nesnenin neden açabilir sahipleri.
+Türetilmiş nesneler `enable_shared_from_this` kullanabilirsiniz `shared_from_this` üye işlevleri oluşturmak için yöntemleri [shared_ptr](../standard-library/shared-ptr-class.md) bu paylaşım sahipliğinin var olan örneğinin sahipleri `shared_ptr` sahipler. Aksi takdirde, yeni bir oluşturursanız `shared_ptr` kullanarak **bu**, varolan farklıdır `shared_ptr` sahiplerinin, başvuru geçersiz veya birden çok kez silinmesine neden neden olabilir.
 
-Oluşturucular, yıkıcı ve atama işleci yanlışlıkla kötüye kullanımı önlemek için korunur. Şablon bağımsız değişken türü `Ty` türetilmiş sınıf türünde olmalıdır.
+Oluşturucular, yok edici ve atama işleci, yanlışlıkla kötüye kullanımı önlemek için korunur. Şablon bağımsız değişken türü *Ty* türetilmiş sınıf türünde olmalıdır.
 
 Kullanım örneği için bkz: [enable_shared_from_this::shared_from_this](#shared_from_this).
 
@@ -64,7 +64,7 @@ Kullanım örneği için bkz: [enable_shared_from_this::shared_from_this](#share
 
 ## <a name="shared_from_this"></a>  enable_shared_from_this::shared_from_this
 
-Oluşturan bir `shared_ptr` , var olan örnek sahipliğini paylaşır `shared_ptr` sahipleri.
+Oluşturur bir `shared_ptr` , var olan örneğinin sahipliği paylaşır `shared_ptr` sahipler.
 
 ```cpp
 shared_ptr<T> shared_from_this();
@@ -73,7 +73,7 @@ shared_ptr<const T> shared_from_this() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilen zaman nesnelerden `enable_shared_from_this` temel sınıfı, `shared_from_this` şablonu üye işlevlerini return bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md) var olan bu örneğinin sahipliğini paylaşır nesne `shared_ptr` sahipleri. Aksi takdirde, yeni bir oluşturursanız `shared_ptr` gelen `this`, mevcut farklıdır `shared_ptr` başvuru geçersiz veya birden çok kez Silinecek nesnenin neden açabilir sahipleri. Çağırırsanız davranış tanımsızdır `shared_from_this` zaten tarafından sahiplenilmedi bir örneğinde bir `shared_ptr` nesnesi.
+Nesnelerden türetilmesi zaman `enable_shared_from_this` temel sınıfı, `shared_from_this` şablon üye işlev dönüş bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md) var olan bu örneği sahipliğini paylaşan nesne `shared_ptr` sahipler. Aksi takdirde, yeni bir oluşturursanız `shared_ptr` gelen **bu**, varolan farklıdır `shared_ptr` sahiplerinin, başvuru geçersiz veya birden çok kez silinmesine neden neden olabilir. Çağırırsanız davranış tanımlanmamıştır `shared_from_this` zaten sahibi olmayan bir örneği üzerinde bir `shared_ptr` nesne.
 
 ### <a name="example"></a>Örnek
 

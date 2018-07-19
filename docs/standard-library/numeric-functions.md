@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::inner_product [C++]
 - std::iota [C++]
 - std::partial_sum [C++]
-ms.openlocfilehash: d5504ed83ce41f38dc69f3fb612438800285d905
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 47ac885152b0fdfbb9ce1ab77f6597db00c5bc07
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862588"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38960258"
 ---
 # <a name="ltnumericgt-functions"></a>&lt;Sayısal&gt; işlevleri
 
@@ -32,7 +32,7 @@ ms.locfileid: "33862588"
 
 ## <a name="accumulate"></a>  accumulate
 
-Tüm öğelerin toplamı, art arda kısmi toplamlarını bilgi işlem tarafından bazı başlangıç değeri de dahil olmak üzere belirli bir aralık içinde hesaplar veya benzer şekilde toplam dışında belirtilen bir ikili işlem kullanılarak elde edilen art arda kısmi sonuçlar sonucunu hesaplar.
+Art arda gelen kısmi toplamları tarafından bazı başlangıç değerleri de dahil olmak üzere, belirtilen bir aralıktaki tüm öğelerin toplamını hesaplar veya benzer şekilde bir belirtilen ikili işlem toplamı dışında kullanımından elde edilen art arda gelen kısmi sonuçların sonucunu hesaplar.
 
 ```cpp
 template <class InputIterator, class Type>
@@ -48,21 +48,21 @@ Type accumulate(
 
 ### <a name="parameters"></a>Parametreler
 
-`first` Toplamı veya belirtilen bir ikili işlem göre birleştirilmiş aralığın ilk öğe adresleme giriş yineleyici.
+*İlk* yapılacak veya belirtilen bir ikili işleme göre birleştirilen aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
 
-`last` Toplamı veya bir konumdur gerçekten tekrarlayan Birikme dahil son öğenin ötesinde belirtilen bir ikili işlem göre birleştirilmiş aralığın son öğesi adresleme giriş yineleyici.
+*Son* yapılacak veya gerçekten tekrarlayan birikime dahil son öğenin ötesinde bir konum olduğu belirtilen bir ikili işleme göre birleştirilen aralıktaki son öğeyi ele alan bir giriş yineleyici.
 
-`val` İçin her öğe sırayla eklendiğinde veya belirtilen bir ikili işlem göre birlikte bir başlangıç değeri.
+*VAL* olduğu her öğe sırayla eklendiğinde veya belirtilen bir ikili işleme göre birlikte bir başlangıç değeri.
 
-`binary_op` Belirtilen aralığı ve önceki uygulamaları sonucunu her öğeye uygulanacak olan ikili işlemi.
+*binary_op* belirtilen aralık ve sonucu önceki uygulamaların içindeki her öğeye uygulanacak olan ikili işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Toplamını `val` ve belirtilen aralıktaki ilk şablon işlevi veya, ikinci şablon işlevi ikili, toplam işlemi yerine, belirtilen işlem uygulanıyor sonucunu için tüm öğeleri ( *PartialResult, \* Iter*), burada *PartialResult* önceki uygulamaları işleminin sonucu ve `Iter` olduğu aralığında bir öğesine işaret eden bir yineleyici.
+Toplamını *val* ve ilk şablon işlevi veya, ikinci şablon işlevi, toplama işlemi yerine belirtilen ikili işlem sonucu için belirtilen aralıktaki tüm öğeleri (  *PartialResult, \*Iter*), burada *PartialResult* önceki uygulama işleminin sonucu ve `Iter` olan aralıktaki bir öğeyi gösteren bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başlangıç değeri olacağını iyi tanımlanmış bir sonuç aralığı; bu durumda boş olduğunda yöntem başlanmasını sağlar `val` döndürülür. İkili işlem ilişkilendirilebilir veya yer değiştirebilme olması gerekmez. Sonuç ilk değerine başlatılmadan `val` ve ardından *sonuç*  =  `binary_op` ( *sonuç*, **\*** `Iter`) aralık boyunca tekrarlayarak hesaplanan nerede `Iter` olan aralığında art arda öğesine işaret eden bir yineleyici. Aralığı geçerli olmalıdır ve karmaşıklığını aralığı boyutuyla doğrusal. Dönüş türü, ikili işleç dönüştürülebilir **türü** kapatma sırasında yineleme emin olmak için.
+Başlangıç değeri olacağını iyi tanımlanmış bir sonuç aralığı, bu durumda boş olduğunda oluşturmasını sağlar. *val* döndürülür. İkili işlem ilişkilendirilebilir veya değiştirebilir olması gerekmez. Sonuç başlangıç değerine başlatılır *val* ve ardından *sonucu*  =  `binary_op` ( *sonucu*, **\*** `Iter`) çalıştırmalarınızı değerler ile hesaplanır burada `Iter` olan aralıktaki art arda gelen öğeyi gösteren bir yineleyici. Aralık geçerli olmalı ve karmaşıklık aralığı boyutu ile doğrusaldır. Dönüş türü, ikili işleç dönüştürülebilir olmalıdır **türü** kapanış yineleme sırasında emin olmak için.
 
 ### <a name="example"></a>Örnek
 
@@ -184,27 +184,27 @@ OutputIterator adjacent_difference(
 
 ### <a name="parameters"></a>Parametreler
 
-`first` İlk öğe ile ilgili kendi öncellerine differenced için öğeleri olan veya değer çifti üzerinde bir başkası tarafından işletilen olduğu giriş aralığındaki adresleme giriş yineleyici ikili işlem belirtildi.
+*İlk* belirtilen ikili işlemde çalıştırılacağı öğeleri ile ilgili kendi Öncüller differenced için veya değer çiftinin üzerinde bir başkası tarafından yapılacak olan giriş aralığındaki ilk öğeyi ele alan giriş yineleyici.
 
-`last` Öğeleri ile ilgili kendi öncellerine differenced için olan veya değer çifti üzerinde bir başkası tarafından işletilen olduğu giriş aralığın son öğesi adresleme giriş yineleyici ikili işlem belirtildi.
+*Son* belirtilen ikili işlemde çalıştırılacağı öğeleri ile ilgili kendi Öncüller differenced için veya değer çiftinin üzerinde bir başkası tarafından yapılacak olan giriş aralığındaki son öğeyi ele alan giriş yineleyici.
 
-`result` İlk öğe farklılıkları veya belirtilen işlem sonuçlarını dizi depolanması olduğu hedef aralık adresleme çıkış yineleyici.
+*Sonuç* olduğu fark dizilerinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış yineleyici.
 
-`binary_op` Fark kayıt yordamdaki çıkarma işlemi değiştirme genelleştirilmiş işlemine uygulanacak olan ikili işlemi.
+*binary_op* fark kayıt yordamındaki çıkarma işleminin yerini alan genelleştirilmiş işlemde uygulanacak olan ikili işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hedef aralık sonu adresleme çıkış yineleyici: `result` + ( `last`  -  `first`).
+Hedef aralığın sonunu ele alan çıkış yineleyici: `result` + ( `last`  -  `first`).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıktı yineleyici _ *sonuç* giriş yineleyici olarak aynı yineleyici olmasına izin * ilk * böylece `adjacent_difference`s yerinde hesaplanır.
+Çıkış yineleyici _ *sonucu* aynı yineleyici giriş yineleyicisiyle * ilk * böylece `adjacent_difference`yineleyicisiyle yerinde.
 
-Değerleri dizisi için *bir*1, *bir*2, *bir*bir giriş aralığındaki ilk şablon işlevi 3 ardışık depolar **partial_difference**s *bir*1, *bir*2 - *bir*1, a3 - *bir*2, hedef aralık.
+Değerler için *bir*1 *bir*2 *bir*art arda 3, bir giriş aralığındaki ilk şablon işlevi depolar `partial_difference`s *bir*1 , *bir*2 - *bir*1, a3 - *bir*hedef aralıktaki 2.
 
-Değerleri dizisi için *bir*1, *bir*2, *bir*bir giriş aralığındaki ikinci şablon işlevi 3 ardışık depolar **partial_difference**s *bir*1, *bir*2 `binary_op` *bir*1, *bir*3 `binary_op` *bir*2, Hedef aralık.
+Değerler için *bir*1 *bir*2 *bir*art arda 3, bir giriş aralığında, ikinci şablon işlevi depolar `partial_difference`s *bir* 1, *bir*2 `binary_op` *bir*1 *bir*3 `binary_op` *bir*hedef aralıktaki 2.
 
-İkili işlem `binary_op` ilişkilendirilebilir veya yer değiştirebilme olması gerekli değildir, işlem sırası uygulandığından tamamen belirtilir.
+İkili işlem `binary_op` ilişkilendirilebilir veya değiştirebilir olması gerekli değildir, çünkü uygulanan işlemlerin sırası tamamıyla belirtilmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -269,7 +269,7 @@ int main( )
 
 ## <a name="inner_product"></a>  inner_product
 
-İki aralıklarının element-wise ürün toplamını hesaplar ve belirtilen ilk değerine ekler veya sum ve ürün ikili işlemleri tarafından belirtilen diğer ikili işlemlerin burada değiştirilir genelleştirilmiş bir yordamın sonuç hesaplar.
+İki aralığın öğe düzeyinde çarpımının ürün toplamını hesaplar ve belirtilen bir başlangıç değerine ekler veya toplamın ve ürün ikili işlemler başka bir belirtilen ikili işlem tarafından değiştirildiği desene genelleştirilmiş bir yordamının sonucunu hesaplar.
 
 ```cpp
 template <class InputIterator1, class InputIterator2, class Type>
@@ -291,35 +291,35 @@ Type inner_product(
 
 ### <a name="parameters"></a>Parametreler
 
-`first1` Hesaplanan değer, iç ürün veya ikinci aralığı genelleştirilmiş iç ürünle olan ilk aralıktaki ilk öğe adresleme giriş yineleyici.
+*first1* olan iç ürün veya ikinci aralıkla genelleştirilmiş iç ürün hesaplanmasını ilk aralıktaki ilk öğeyi ele alan giriş yineleyici.
 
-`last1` Son öğesi olmalı, iç ürün veya ikinci aralığı genelleştirilmiş iç ürünle hesaplanacak ilk aralığı adresleme giriş yineleyici.
+*last1* olan iç ürün veya ikinci aralıkla genelleştirilmiş iç ürün hesaplanmasını ilk aralıktaki son öğeyi ele alan giriş yineleyici.
 
-`first2` Hesaplanacak olan iç ürün veya ilk aralığına sahip genelleştirilmiş iç ürün olan ikinci aralığı ilk öğe adresleme giriş yineleyici.
+*first2* ikinci ilk öğeyi ele alan giriş yineleyici aralığı olan dahili ürün ya da ilk aralıkla genelleştirilmiş iç ürün hesaplanan değer.
 
-`val` İç ürün veya aralıklar arasında genelleştirilmiş iç ürün eklenecek sahip olduğu ilk değeri.
+*VAL* iç ürün veya aralıklar arasında genelleştirilmiş iç ürün olduğu eklenmesi için bir başlangıç değeri.
 
-*binary_op1* ikili işleminin iç ürün Genelleştirme element-wise ürünlerinde uygulanan Sum iç ürün işlemi yerini alır.
+*binary_op1* iç ürünün Genelleştirme aralığın öğe düzeyinde çarpımının ürünleri uygulanan toplam iç ürün işleyişini değiştirir ikili işlem.
 
-*binary_op2* ikili işleminin iç ürün element-wise işleminde, Çarp iç ürün Genelleştirme yerini alır.
+*binary_op2* iç ürün aralığın öğe düzeyinde çarpımının çalışmasını birden çok kez içinde iç ürünün Genelleştirme değiştirir ikili işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlevi element-wise ürünleri toplamını döndürür ve belirtilen ilk değer ekler. Değerlerin aralıkları için bunu *bir*t ve *b*i döndürür:
+İlk üye işlevi ürünleri aralığın öğe düzeyinde çarpımının toplamını döndürür ve belirtilen başlangıç değerine ekler. Değer aralıkları için bunu *bir*miyim ve *b*i döndürür:
 
 `val` + ( *a*1 \* *b*1 ) + ( *a*2 \* *b*2 ) + ... + ( *a*n \* *b*n )
 
-yinelemeli olarak değiştirerek `val` ile `val` + ( *bir*ı \* *b*t).
+yinelemeli olarak değiştirerek *val* ile `val` + ( *bir*miyim \* *b*miyim).
 
 İkinci üye işlevi döndürür:
 
 `val` *binary_op1* ( *bir*1 *binary_op2* *b*1) *binary_op1* ( *bir*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* ( *bir*n *binary_op2* *b*n)
 
-yinelemeli olarak değiştirerek `val` ile `val` *binary_op1* ( *bir*ı *binary_op2* *b*t).
+yinelemeli olarak değiştirerek *val* ile `val` *binary_op1* ( *bir*miyim *binary_op2* *b* i).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başlangıç değeri olacağını iyi tanımlanmış bir sonuç aralığı; bu durumda boş olduğunda sağlar `val` döndürülür. İkili işlemlerin ilişkilendirilebilir veya yer değiştirebilme olması gerekmez. Aralığı geçerli olmalıdır ve karmaşıklığını aralığı boyutuyla doğrusal. Dönüş türü, ikili işleç dönüştürülebilir **türü** kapatma sırasında yineleme emin olmak için.
+Başlangıç değeri olacağını iyi tanımlanmış bir sonuç aralığı, bu durumda boş olduğunda sağlar *val* döndürülür. İkili işlemler ilişkilendirilebilir veya değiştirebilir olması gerekmez. Aralık geçerli olmalı ve karmaşıklık aralığı boyutu ile doğrusaldır. Dönüş türü, ikili işleç dönüştürülebilir olmalıdır **türü** kapanış yineleme sırasında emin olmak için.
 
 ### <a name="example"></a>Örnek
 
@@ -413,7 +413,7 @@ int main()
 
 ## <a name="iota"></a>  iota
 
-Başlangıç değeri ilk öğe ile başlayan ve bu değeri art arda artışlarla ile doldurma depolar ( ` value++`) her zaman aralığını öğeleri `[ first,  last)`.
+İlk öğe ile başlayan ve değeri art arda gelen artışlarla doldurarak bir başlangıç değeri depolar (` value++`) aralığındaki öğelerin her `[ first,  last)`.
 
 ```cpp
 template <class ForwardIterator, class Type>
@@ -422,11 +422,11 @@ void iota(ForwardIterator first, ForwardIterator last, Type value);
 
 ### <a name="parameters"></a>Parametreler
 
-`first` Doldurulacak aralığın ilk öğe adresleri giriş yineleyici.
+*İlk* doldurulması için aralıktaki ilk öğeyi ele alan giriş yineleyici.
 
-`last` Doldurulacak aralığın son öğesi adresleri giriş yineleyici.
+*Son* doldurulacak aralıktaki son öğeyi ele alan giriş yineleyici.
 
-`value` İlk öğe ve sırayla sonraki öğeleri için artırma depolamak için başlangıç değeri.
+*değer* ilk öğeyi ve sırayla sonraki öğeleri için artırma depolamak için başlangıç değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -474,7 +474,7 @@ int main(void)
 
 ## <a name="partial_sum"></a>  partial_sum
 
-SUM'ları ilk öğe ile bir giriş aralığında bir dizi hesaplar *ı*th öğesi ve her tür toplamda sonucunu depolar *ı*th öğesi bir hedef aralığının veya sonucu hesaplar bir Genelleştirilmiş yordam toplamı işlemi tarafından belirtilen bir ikili işlem nerede değiştirilir.
+Bir öğeyi kullanarak ilk öğedeki bir giriş aralığında hesaplar *miyim*öğedeki ve böyle her bir toplamın sonucunu depolar *miyim*bir hedef aralığına öğedeki ya da sonucunu hesaplar bir toplama işleminin belirtilen başka bir ikili işlem tarafından değiştirildiği desene genelleştirilmiş bir yordamın.
 
 ```cpp
 template <class InputIterator, class OutIt>
@@ -493,27 +493,27 @@ OutputIterator partial_sum(
 
 ### <a name="parameters"></a>Parametreler
 
-`first` Kısmen toplanan veya belirtilen bir ikili işlem göre birleşik için aralıktaki ilk öğe adresleme giriş yineleyici.
+*İlk* kısmen toplanan veya belirtilen bir ikili işleme göre birleştirilen aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
 
-`last` Olmasını aralığın son öğesi adresleme giriş yineleyici kısmen toplamı veya belirtilen bir ikili işlem göre birleştirilmiş bir konum içinde tekrarlayan Birikme gerçekte dahil son öğenin ötesinde olmasıdır.
+*Son* kısmen toplanan veya gerçekten tekrarlayan birikime dahil son öğenin ötesinde bir konum olduğu belirtilen bir ikili işleme göre birleştirilen aralıktaki son öğeyi ele alan bir giriş yineleyici.
 
-`result` İlk öğe kısmi SUM'ları veya belirtilen işlem sonuçlarını dizi depolanması olduğu hedef aralık adresleme çıkış yineleyici.
+*Sonuç* nerede dizi kısmı toplamların veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış yineleyici.
 
-`binary_op` Kısmi toplamı yordamı toplamda işlemi değiştirme genelleştirilmiş işlemine uygulanacak olan ikili işlemi.
+*binary_op* kısmi toplam yordamındaki toplama işleminin yerini alan genelleştirilmiş işlemde uygulanacak olan ikili işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hedef aralık sonu adresleme çıkış yineleyici: `result` + ( `last`  -  `first`),
+Hedef aralığın sonunu ele alan çıkış yineleyici: `result` + (`last` - `first`),
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıktı yineleyici `result` giriş yineleyici olarak aynı yineleyici olmasına izin `first`, böylece kısmi SUM'ları yerinde hesaplanabilir.
+Çıkış yineleyici *sonucu* aynı yineleyici giriş yineleyicisiyle *ilk*, böylece kısmi toplamlar yerinde hesaplanabilir.
 
-Değerleri dizisi için *bir*1, *bir*2, *bir*3, bir giriş aralığındaki ilk şablon işlevi depolayan hedef aralığı art arda kısmi toplamların nerede *ı*th öğesi tarafından verilen ((( *bir*1 + *bir*2) + *bir*3) *bir*t).
+Değerler için *bir*1 *bir*2 *bir*3, bir giriş aralığında, ilk şablon işlevi hedef aralıktaki art arda gelen kısmi toplamları depolar burada *miyim*öğedeki tarafından verilmiştir ((( *bir*1 + *bir*2) + *bir*3) *bir*miyim).
 
-Değerleri dizisi için *bir*1, *bir*2, *bir*3, bir giriş aralığındaki ikinci şablon işlevi depolar art arda kısmi SUM'ları burada i öğesi, hedef aralığında tarafından verilen ((( *bir*1 `binary_op` *bir*2) `binary_op` *bir*3) *bir*t).
+Değerler için *bir*1 *bir*2 *bir*3, bir giriş aralığında, ikinci şablon işlevi depolar i. öğesi olduğu hedef aralıktaki art arda gelen kısmi toplamları tarafından verilen ((( *bir*1 `binary_op` *bir*2) `binary_op` *bir*3) *bir*miyim).
 
-İkili işlem `binary_op` ilişkilendirilebilir veya yer değiştirebilme olması gerekli değildir, işlem sırası uygulandığından tamamen belirtilir.
+İkili işlem *binary_op* ilişkilendirilebilir veya değiştirebilir olması gerekli değildir, çünkü uygulanan işlemlerin sırası tamamıyla belirtilmiştir.
 
 ### <a name="example"></a>Örnek
 

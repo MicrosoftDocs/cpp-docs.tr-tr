@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 161551747455bae1347e5059ec3afffd2649294c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e5f7a4d5ad1d7991e69a5092333974ec3a8ade07
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845303"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956628"
 ---
 # <a name="isarithmetic-class"></a>is_arithmetic Sınıfı
 
-Tür aritmetik ise testleri.
+Aritmetik türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_arithmetic;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` olan diğer bir deyişle, bir tam sayı türü veya bir kayan bir aritmetik türe işaret türü veya `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimidir.
+Karşılaştırmasının bir örneği true tutan türü *Ty* olduğu bir aritmetik tür, diğer bir deyişle, bir tamsayı türü veya bir kayan nokta türüne, veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimi.
 
 ## <a name="example"></a>Örnek
 

@@ -46,15 +46,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74dc76f0e638cb335c8ee762908aed36a41230eb
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: ca12ba74df7099aa137e5e7dc9c1b8b75131ab66
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952355"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336624"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx sınıfı
-Birleşik giriş kutusu denetimi resim listeleri için destek sağlayarak genişletir.  
+Birleşik giriş kutusu denetim görüntü listeleri için destek sağlayarak genişletir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -68,50 +68,50 @@ class CComboBoxEx : public CComboBox
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComboBoxEx::CComboBoxEx](#ccomboboxex)|Oluşturan bir `CComboBoxEx` nesnesi.|  
+|[CComboBoxEx::CComboBoxEx](#ccomboboxex)|Oluşturur bir `CComboBoxEx` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComboBoxEx::Create](#create)|Birleşik giriş kutusu oluşturur ve ona ekler `CComboBoxEx` nesnesi.|  
-|[CComboBoxEx::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleri birleşik giriş kutusu oluşturur ve ekler bir **ComboBoxEx** nesnesi.|  
-|[CComboBoxEx::DeleteItem](#deleteitem)|Bir öğeden kaldırır bir **ComboBoxEx** denetim.|  
+|[CComboBoxEx::Create](#create)|Birleşik giriş kutusu oluşturur ve ona ekler `CComboBoxEx` nesne.|  
+|[CComboBoxEx::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir birleşik giriş kutusu oluşturur ve ona ekler bir `ComboBoxEx` nesne.|  
+|[CComboBoxEx::DeleteItem](#deleteitem)|Bir öğe kaldırır bir `ComboBoxEx` denetimi.|  
 |[CComboBoxEx::GetComboBoxCtrl](#getcomboboxctrl)|Alt birleşik giriş kutusu denetimi için bir işaretçi alır.|  
-|[CComboBoxEx::GetEditCtrl](#geteditctrl)|Düzenle denetim kısmı tanıtıcısını alır bir **ComboBoxEx** denetim.|  
-|[CComboBoxEx::GetExtendedStyle](#getextendedstyle)|İçin kullanılmakta olan Genişletilmiş stili alır bir **ComboBoxEx** denetim.|  
-|[CComboBoxEx::GetImageList](#getimagelist)|Atanan resim listesi için bir işaretçi alır bir **ComboBoxEx** denetim.|  
-|[CComboBoxEx::GetItem](#getitem)|Alır öğesi için bilgi bir verilen **ComboBoxEx** öğesi.|  
-|[CComboBoxEx::HasEditChanged](#haseditchanged)|Kullanıcı içeriğini değişip değişmediğini belirleyen **ComboBoxEx** yazarak denetim düzenleyin.|  
-|[CComboBoxEx::InsertItem](#insertitem)|Yeni bir öğe ekler bir **ComboBoxEx** denetim.|  
-|[CComboBoxEx::SetExtendedStyle](#setextendedstyle)|İçinde genişletilmiş stillerini ayarlar bir **ComboBoxEx** denetim.|  
-|[CComboBoxEx::SetImageList](#setimagelist)|Görüntü listesi için ayarlar bir **ComboBoxEx** denetim.|  
-|[CComboBoxEx::SetItem](#setitem)|Bir öğeyi özniteliklerini ayarlar bir **ComboBoxEx** denetim.|  
-|[CComboBoxEx::SetWindowTheme](#setwindowtheme)|Görsel stilini Genişletilmiş Birleşik giriş kutusu denetimi ayarlar.|  
+|[CComboBoxEx::GetEditCtrl](#geteditctrl)|Düzenle denetim kısmı tanıtıcısını alır bir `ComboBoxEx` denetimi.|  
+|[CComboBoxEx::GetExtendedStyle](#getextendedstyle)|İçin kullanılan genişletilmiş stiller alır bir `ComboBoxEx` denetimi.|  
+|[CComboBoxEx::GetImageList](#getimagelist)|Atanan görüntü listesine bir işaretçi alır bir `ComboBoxEx` denetimi.|  
+|[CComboBoxEx::GetItem](#getitem)|Öğesi için bilgi alır bir verilen `ComboBoxEx` öğesi.|  
+|[CComboBoxEx::HasEditChanged](#haseditchanged)|Kullanıcı içeriğini değişip değişmediğini belirleyen `ComboBoxEx` yazarak düzenleme denetimi.|  
+|[CComboBoxEx::InsertItem](#insertitem)|İçinde yeni bir öğe ekler bir `ComboBoxEx` denetimi.|  
+|[CComboBoxEx::SetExtendedStyle](#setextendedstyle)|Genişletilmiş stiller içinde ayarlar bir `ComboBoxEx` denetimi.|  
+|[CComboBoxEx::SetImageList](#setimagelist)|Görüntü listesi için ayarlar bir `ComboBoxEx` denetimi.|  
+|[CComboBoxEx::SetItem](#setitem)|Öznitelikleri bir öğe için ayarlar bir `ComboBoxEx` denetimi.|  
+|[CComboBoxEx::SetWindowTheme](#setwindowtheme)|Görsel stili, Genişletilmiş Birleşik giriş kutusu denetimi ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanarak `CComboBoxEx` birleşik giriş kutusu denetimleri oluşturmak için artık kod çizim kendi görüntünüzü yapması gerekir. Bunun yerine, kullanın `CComboBoxEx` resim listesi erişim görüntülerden için.  
+ Kullanarak `CComboBoxEx` birleşik giriş kutusu denetimleri oluşturma için artık kod çizim kendi görüntünüzü uygulamak gerekir. Bunun yerine, `CComboBoxEx` bir görüntü listesinden görüntü erişim için.  
   
-## <a name="image-list-support"></a>Resim listesi desteği  
- Bir standart birleşik giriş kutusu sahip çizim denetimi olarak birleşik giriş kutusu oluşturarak resim çizim için birleşik giriş kutusu sahibi sorumludur. Kullandığınızda `CComboBoxEx`, çizim stilleri ayarlama gerekmez **cbs_ownerdrawfıxed** ve **cbs_hasstrıngs** kapsanan çünkü. Aksi takdirde, çizim işlemleri gerçekleştirmek için kod yazmanız gerekir. A `CComboBoxEx` denetimi öğesi başına en fazla üç görüntüleri destekler: seçilen bir durumu, seçili durumu için diğeri için katmana görüntü için bir tane.  
+## <a name="image-list-support"></a>Görüntü listesi desteği  
+ Standart açılan kutuda, sahip çizim denetimi olarak birleşik giriş kutusu oluşturarak görüntü çizmek için birleşik giriş kutusu sahibi sorumludur. Kullanırken `CComboBoxEx`, çünkü bunlar kapsanan cbs_ownerdrawfıxed ve cbs_hasstrıngs çizim stilleri ayarlama gerekmez. Aksi takdirde, çizim işlemlerini gerçekleştirmek için kod yazmanız gerekir. A `CComboBoxEx` denetim öğesi başına en fazla üç görüntüleri destekler: seçili durumda, seçili olmayan bir durum için diğeri için katmana görüntü için bir tane.  
   
 ## <a name="styles"></a>Stilleri  
- `CComboBoxEx` stillerini destekler **cbs_sımple**, **CBS_DROPDOWN**, **cbs_dropdownlıst**, ve **WS_CHILD**. Pencerenin oluşturduğunuzda, geçirilen tüm stilleri denetim tarafından göz ardı edilir. Pencerenin oluşturulduktan sonra diğer birleşik giriş kutusu stilleri çağırarak sağlayabilirsiniz `CComboBoxEx` üye işlevi [SetExtendedStyle](#setextendedstyle). Bu stiller ile şunları yapabilirsiniz:  
+ `CComboBoxEx` cbs_sımple, CBS_DROPDOWN cbs_dropdownlıst ve WS_CHILD stillerini destekler. Pencere oluşturulurken geçirilen diğer tüm stiller, denetim tarafından göz ardı edilir. Pencerenin oluşturulduktan sonra diğer birleşik giriş kutusu stilleri çağırarak sağlayabilirsiniz `CComboBoxEx` üye işlevi [SetExtendedStyle](#setextendedstyle). Bu stiller ile şunları yapabilirsiniz:  
   
 -   Büyük küçük harfe duyarlı olması için listedeki kümesi dize arar.  
   
--   Oluşturma ('/'), eğik çizgi kullanan bir birleşik giriş kutusu denetimi ters eğik çizgi ('\\') ve süresi ('. ') karakter word ayırıcısı olarak. Bu gelen word Word'ün, CTRL + ok klavye kısayolunu kullanarak atlamak kullanıcılara izin verin.  
+-   Oluşturma ('/'), eğik kullanan bir birleşik giriş kutusu denetimi ters eğik çizgi ('\\') ve nokta ('. ') karakter Sözcük ayırıcılar olarak. Bu kullanıcıların gelen word Word'ün, CTRL + ok klavye kısayolunu kullanarak atlama olanak tanır.  
   
--   Birleşik giriş kutusu denetimi görüntülemek veya bir görüntü görüntülememek için ayarlayın. Birleşik giriş kutusu hiçbir resim görüntüleniyorsa, görüntüyü düzenler metin girinti kaldırabilirsiniz.  
+-   Birleşik giriş kutusu denetimi görüntülemek veya görüntülememek görüntü ayarlayın. Hiçbir görüntü gösterilirse, birleşik giriş kutusu görüntü gönderme metin girinti kaldırabilirsiniz.  
   
--   İçerdiği genişleterek açılan kutu kırpar şekilde boyutlandırma dahil olmak üzere bir dar birleşik giriş kutusu denetimi oluşturun.  
+-   İçerdiği geniş birleşik giriş kutusu küçük şekilde boyutlandırdıktan dahil olmak üzere bir dar birleşik giriş kutusu denetimi oluşturun.  
   
- Bu stili bayrakları daha ayrıntılı açıklanır [kullanarak CComboBoxEx](../../mfc/using-ccomboboxex.md).  
+ Bu stil daha ayrıntılı açıklanır bayraklar [CComboBoxEx kullanma](../../mfc/using-ccomboboxex.md).  
   
-## <a name="item-retention-and-callback-item-attributes"></a>Bekletme ve geri arama öğesi öznitelikleri öğesi  
- Gibi öğeleri ve görüntüleri, girinti değerleri ve metin dizelerini için dizin öğesi bilgileri Win32 yapısında depolanmış [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746), Windows SDK'ın açıklandığı gibi. Yapı geri çağırma bayrakları karşılık üyeleri de içerir.  
+## <a name="item-retention-and-callback-item-attributes"></a>Bekletme ve geri çağırma öğesi öznitelikleri öğesi  
+ Gibi öğeleri ve görüntü, girinti değerleri ve metin dizelerini için dizinleri öğesi bilgilerini Win32 yapısında depolanmış [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746)Windows SDK içinde açıklandığı gibi. Yapısı, geri çağırma bayrakları için karşılık gelen üyeleri de içerir.  
   
- Ayrıntılı, kavramsal tartışma için bkz: [kullanarak CComboBoxEx](../../mfc/using-ccomboboxex.md).  
+ Ayrıntılı, kavramsal tartışma için bkz [CComboBoxEx kullanma](../../mfc/using-ccomboboxex.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -128,14 +128,14 @@ class CComboBoxEx : public CComboBox
  **Başlık:** afxcmn.h  
   
 ##  <a name="ccomboboxex"></a>  CComboBoxEx::CComboBoxEx  
- Oluşturmak için bu üye işlevini çağırın bir `CComboBoxEx` nesnesi.  
+ Bu üye işlevi çağrısı bir `CComboBoxEx` nesne.  
   
 ```  
 CComboBoxEx();
 ```  
   
 ##  <a name="create"></a>  CComboBoxEx::Create  
- Birleşik giriş kutusu oluşturur ve ona ekler `CComboBoxEx` nesnesi.  
+ Birleşik giriş kutusu oluşturur ve ona ekler `CComboBoxEx` nesne.  
   
 ```  
 virtual BOOL Create(
@@ -147,47 +147,47 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- Birleşik giriş kutusu stilleri açılan kutu uygulanan bileşimini belirtir. Bkz: **açıklamalar** aşağıda stilleri hakkında daha fazla bilgi için.  
+ Açılan kutu uygulanan birleşik giriş kutusu stilleri bileşimini belirtir. Bkz: **açıklamalar** aşağıda stilleri hakkında daha fazla bilgi.  
   
  *Rect*  
- Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) konum ve boyutlarının birleşik giriş kutusu yapısı.  
+ Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) birleşik giriş kutusunun boyutunu ve konumunu olan yapısı.  
   
  *pParentWnd*  
- Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) açılan kutunun üst pencere nesnesi (genellikle bir `CDialog`). Değil olmalıdır **NULL**.  
+ Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) birleşik giriş kutusunun üst pencere nesnesini (genellikle bir `CDialog`). NULL olmamalıdır.  
   
  *nID*  
  Açılan kutunun denetim kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Nesne başarıyla oluşturuldu, sıfır olmayan; Aksi takdirde 0.  
+ Nesne başarıyla oluşturuldu olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturma bir `CComboBoxEx` iki adımda nesnesi:  
   
-1.  Çağrı [CComboBoxEx](#ccomboboxex) oluşturmak için bir `CComboBoxEx` nesnesi.  
+1.  Çağrı [CComboBoxEx](#ccomboboxex) oluşturmak için bir `CComboBoxEx` nesne.  
   
-2.  Genişletilmiş Windows birleşik giriş kutusu oluşturur ve ekler bu üye işlevini çağırın `CComboBoxEx` nesnesi.  
+2.  Genişletilmiş Windows birleşik giriş kutusu oluşturur ve ona ekler, bu üye işlevi çağrısı `CComboBoxEx` nesne.  
   
  Çağırdığınızda `Create`, MFC ortak denetimler başlatır.  
   
  Birleşik giriş kutusu oluşturduğunuzda, aşağıdaki birleşik giriş kutusu stilleri bir bölümünü veya tamamını belirtebilirsiniz:  
   
-- **CBS_SIMPLE**  
+- CBS_SIMPLE  
   
-- **CBS_DROPDOWN**  
+- CBS_DROPDOWN  
   
-- **CBS_DROPDOWNLIST**  
+- CBS_DROPDOWNLIST  
   
-- **CBS_AUTOHSCROLL**  
+- CBS_AUTOHSCROLL  
   
-- **WS_CHILD**  
+- WS_CHILD  
   
- Pencerenin oluşturduğunuzda, geçirilen tüm stilleri göz ardı edilir. **ComboBoxEx** denetimi de ek özellikler sağlamak genişletilmiş stillerini destekler. Bu stiller açıklanan [ComboBoxEx kontrol genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775742), Windows SDK'sındaki. Bu stiller aranarak [SetExtendedStyle](#setextendedstyle).  
+ Pencere oluşturulurken geçirilen diğer tüm stiller göz ardı edilir. `ComboBoxEx` Denetimi, ek özellikler sağlamak genişletilmiş stiller de destekler. Bu stiller açıklanan [ComboBoxEx denetim genişletilmiş stiller](http://msdn.microsoft.com/library/windows/desktop/bb775742), Windows SDK. Çağırarak bu stilleri ayarlama [SetExtendedStyle](#setextendedstyle).  
   
- Genişletilmiş windows stilleri denetimi ile kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine `Create`.  
+ Genişletilmiş windows stilleri ile denetiminizi kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine `Create`.  
   
 ##  <a name="createex"></a>  CComboBoxEx::CreateEx  
- Genişletilmiş Birleşik giriş kutusu denetimi (alt pencere) oluşturun ve bunu ile ilişkilendirmek için bu işlevi çağırmak `CComboBoxEx` nesnesi.  
+ Genişletilmiş Birleşik giriş kutusu denetimi (alt pencere) oluşturun ve ilişkilendirmek için bu işlevi çağırın `CComboBoxEx` nesne.  
   
 ```  
 virtual BOOL CreateEx(
@@ -200,30 +200,30 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- Birleşik giriş kutusu denetiminin stili. Bkz: [oluşturma](#create) stilleri listesi.  
+ Birleşik giriş kutusu denetiminin stili. Bkz: [Oluştur](#create) stilleri listesi.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
+ Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
   
  *pParentWnd*  
- Denetimin üst penceresi için bir işaretçi.  
+ Denetimin ana penceresine bir işaretçi.  
   
  *nID*  
- Denetimin alt pencere kimliği  
+ Denetimin alt penceresi kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `CreateEx` yerine `Create` Windows genişletilmiş stili önsöz tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için **WS_EX_**.  
+ Kullanım `CreateEx` yerine `Create` Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_**.  
   
- `CreateEx` Denetim tarafından belirtilen Genişletilmiş Windows stillerini oluşturur *dwExStyle*. Genişletilmiş stilleri belirli bir Genişletilmiş Birleşik giriş kutusunu kullanarak denetim ayarlamalısınız [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri olarak ayarlamak için **WS_EX_CONTEXTHELP**, ancak `SetExtendedStyle` böyle stilleri olarak ayarlamak için **CBES_EX_CASESENSITIVE**. Daha fazla bilgi için bkz. konu başlığı altında açıklanan stilleri [ComboBoxEx denetim genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775742) Windows SDK.  
+ `CreateEx` tarafından belirtilen Genişletilmiş Windows stillerle denetimi oluşturur *dwExStyle*. Genişletilmiş stiller belirli bir Genişletilmiş Birleşik giriş kutusunu kullanarak denetim ayarlamalısınız [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri WS_EX_CONTEXTHELP ayarlandı, ancak kullanmak için `SetExtendedStyle` böyle stilleri CBES_EX_CASESENSITIVE ayarlanacak. Daha fazla bilgi için bkz. Bu konu başlığı altında açıklanan stilleri [ComboBoxEx denetimin Genişletilmiş Stil](http://msdn.microsoft.com/library/windows/desktop/bb775742) Windows SDK.  
   
 ##  <a name="deleteitem"></a>  CComboBoxEx::DeleteItem  
- Bir öğeden kaldırır bir **ComboBoxEx** denetim.  
+ Bir öğe kaldırır bir `ComboBoxEx` denetimi.  
   
 ```  
 int DeleteItem(int iIndex);
@@ -234,69 +234,69 @@ int DeleteItem(int iIndex);
  Kaldırılacak öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Denetim içinde kalan öğe sayısı. Varsa *İIndex* işlevi döndürür, geçersiz **CB_ERR**.  
+ Kalan denetiminde öğe sayısı. Varsa *İIndex* olan geçersiz işlev CB_ERR döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi ileti işlevselliğini uygulayan [CBEM_DELETEITEM](http://msdn.microsoft.com/library/windows/desktop/bb775768), Windows SDK'ın açıklandığı gibi. DeleteItem, çağırdığınızda bir [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) ile ileti **CBEN_DELETEITEM** üst penceresine bildirim gönderilir.  
+ Bu üye işlevi ileti işlevselliğini uygular [CBEM_DELETEITEM](http://msdn.microsoft.com/library/windows/desktop/bb775768)Windows SDK içinde açıklandığı gibi. DeleteItem, çağırdığınızda bir [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) CBEN_DELETEITEM bildirim iletisi üst pencereye gönderilir.  
   
 ##  <a name="getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl  
- Birleşik giriş kutusu denetimi içinde bir işaretçi almak için bu üye işlevini çağırın bir `CComboBoxEx` nesnesi.  
+ Birleşik giriş kutusu denetimi içinde bir işaretçi almak için bu üye işlevi çağrısı bir `CComboBoxEx` nesne.  
   
 ```  
 CComboBox* GetComboBoxCtrl();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir `CComboBox` nesnesi.  
+ Bir işaretçi bir `CComboBox` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CComboBoxEx` Denetimi oluşur yalıtan bir üst pencere bir `CComboBox`.  
+ `CComboBoxEx` Denetimini kapsülleyen bir üst penceresine oluşan bir `CComboBox`.  
   
- `CComboBox` Dönüş değeri tarafından işaret nesnesi geçici bir nesne ve sonraki boşta kalma işleme süresinde yok.  
+ `CComboBox` Dönüş değeri tarafından işaret edilen nesne geçici bir nesne ve sonraki boşta işleme sırada yok edilir.  
   
 ##  <a name="geteditctrl"></a>  CComboBoxEx::GetEditCtrl  
- Bir işaretçi bir birleşik giriş kutusu düzenleme denetimi almak için bu üye işlevini çağırın.  
+ Bir işaretçi için birleşik giriş kutusu düzenleme denetimine almak için bu üye işlevini çağırın.  
   
 ```  
 CEdit* GetEditCtrl();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir [CEdit](../../mfc/reference/cedit-class.md) nesnesi.  
+ Bir işaretçi bir [CEdit](../../mfc/reference/cedit-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- A `CComboBoxEx` denetimi kullanan bir düzenleme kutusu ile oluşturulduğunda **CBS_DROPDOWN** stili.  
+ A `CComboBoxEx` CBS_DROPDOWN stiliyle oluşturulduğunda bir düzenleme kutusu denetimi kullanır.  
   
- `CEdit` Dönüş değeri tarafından işaret nesnesi geçici bir nesne ve sonraki boşta kalma işleme süresinde yok.  
+ `CEdit` Dönüş değeri tarafından işaret edilen nesne geçici bir nesne ve sonraki boşta işleme sırada yok edilir.  
   
 ##  <a name="getextendedstyle"></a>  CComboBoxEx::GetExtendedStyle  
- İçin kullanılan genişletilmiş stilleri almak için bu üye işlevini çağırın bir `CComboBoxEx` denetim.  
+ Çağırmak için kullanılan genişletilmiş stiller almak için bu üye işlevi bir `CComboBoxEx` denetimi.  
   
 ```  
 DWORD GetExtendedStyle() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `DWORD` Birleşik giriş kutusu denetimi için kullanılan genişletilmiş stilleri içeren değer.  
+ Birleşik giriş kutusu denetimi için kullanılan genişletilmiş stiller içeren DWORD değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ComboBoxEx denetim genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775742) bu stiller hakkında daha fazla bilgi için Windows SDK'sındaki.  
+ Bkz: [ComboBoxEx denetimin Genişletilmiş Stil](http://msdn.microsoft.com/library/windows/desktop/bb775742) bu stilleri hakkında daha fazla bilgi için Windows SDK.  
   
 ##  <a name="getimagelist"></a>  CComboBoxEx::GetImageList  
- Tarafından kullanılan resim listesi için bir işaretçi almak için bu üye işlevini çağırın bir `CComboBoxEx` denetim.  
+ Bir işaretçi tarafından kullanılan görüntü listesini almak için bu üye işlevi çağrısı bir `CComboBoxEx` denetimi.  
   
 ```  
 CImageList* GetImageList() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) nesnesi. Bu başarısız olursa, bu üye işlevinin döndürdüğü **NULL**.  
+ Bir işaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) nesne. Başarısız olursa, bu üye işlev NULL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CImageList` Dönüş değeri tarafından işaret nesnesi geçici bir nesne ve sonraki boşta kalma işleme süresinde yok.  
+ `CImageList` Dönüş değeri tarafından işaret edilen nesne geçici bir nesne ve sonraki boşta işleme sırada yok edilir.  
   
 ##  <a name="getitem"></a>  CComboBoxEx::GetItem  
- Alır öğesi için bilgi bir verilen **ComboBoxEx** öğesi.  
+ Öğesi için bilgi alır bir verilen `ComboBoxEx` öğesi.  
   
 ```  
 BOOL GetItem(COMBOBOXEXITEM* pCBItem);
@@ -304,29 +304,29 @@ BOOL GetItem(COMBOBOXEXITEM* pCBItem);
   
 ### <a name="parameters"></a>Parametreler  
  *pCBItem*  
- Bir işaretçi bir [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) madde bilgilerini alacak yapısı.  
+ Bir işaretçi bir [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) öğesi bilgilerini alacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlem başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ İşlem başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi ileti işlevselliğini uygulayan [CBEM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775779), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi ileti işlevselliğini uygular [CBEM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775779)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="haseditchanged"></a>  CComboBoxEx::HasEditChanged  
- Kullanıcı içeriğini değişip değişmediğini belirleyen **ComboBoxEx** yazarak denetim düzenleyin.  
+ Kullanıcı içeriğini değişip değişmediğini belirleyen `ComboBoxEx` yazarak düzenleme denetimi.  
   
 ```  
 BOOL HasEditChanged();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kullanıcı denetiminin düzenleme kutusuna yazdıysanız sıfır olmayan; Aksi takdirde 0.  
+ Kullanıcının denetimin düzenleme kutusuna yazdığını olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi ileti işlevselliğini uygulayan [CBEM_HASEDITCHANGED](http://msdn.microsoft.com/library/windows/desktop/bb775782), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi ileti işlevselliğini uygular [CBEM_HASEDITCHANGED](http://msdn.microsoft.com/library/windows/desktop/bb775782)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="insertitem"></a>  CComboBoxEx::InsertItem  
- Yeni bir öğe ekler bir **ComboBoxEx** denetim.  
+ İçinde yeni bir öğe ekler bir `ComboBoxEx` denetimi.  
   
 ```  
 int InsertItem(const COMBOBOXEXITEM* pCBItem);
@@ -334,16 +334,16 @@ int InsertItem(const COMBOBOXEXITEM* pCBItem);
   
 ### <a name="parameters"></a>Parametreler  
  *pCBItem*  
- Bir işaretçi bir [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) madde bilgilerini alacak yapısı. Bu yapı öğesi için geri çağırma bayrak değeri içerir.  
+ Bir işaretçi bir [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) öğesi bilgilerini alacak yapısı. Bu yapı öğesi için geri çağırma bayrağı değerler içeriyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, yeni öğe eklendi dizin; Aksi takdirde-1.  
+ Dizin; başarılı olursa, yeni öğe eklendi Aksi takdirde-1.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırdığınızda `InsertItem`, [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) ile ileti [CBEN_INSERTITEM](http://msdn.microsoft.com/library/windows/desktop/bb775764) üst penceresine bildirim gönderilir.  
+ Çağırdığınızda `InsertItem`, [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) ile ileti [CBEN_INSERTITEM](http://msdn.microsoft.com/library/windows/desktop/bb775764) bildirim üst pencereye gönderilir.  
   
 ##  <a name="setextendedstyle"></a>  CComboBoxEx::SetExtendedStyle  
- Denetim Genişletilmiş Birleşik giriş kutusu için kullanılan genişletilmiş stilleri ayarlamak için bu üye işlevini çağırın.  
+ Denetimin Genişletilmiş Birleşik giriş kutusu için kullanıldı genişletilmiş stiller ayarlamak için bu üye işlevini çağırın.  
   
 ```  
 DWORD SetExtendedStyle(
@@ -353,21 +353,21 @@ DWORD SetExtendedStyle(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExMask*  
- A `DWORD` hangi stillerde gösteren değer *dwExStyles* etkilenecek üzeresiniz. Yalnızca genişletilmiş stillerde *dwExMask* değiştirilecek. Diğer tüm stilleri olarak korunur. Bu parametre sıfır sonra tüm stillerde ise *dwExStyles* etkilenecek.  
+ Hangi stillerde gösteren bir DWORD değeri *dwExStyles* etkilenecek olan. Yalnızca genişletilmiş stilleri *dwExMask* değiştirilecek. Diğer tüm stiller olarak korunur. Bu parametre sıfır, ardından tüm stilleri ise *dwExStyles* etkilenecek.  
   
  *dwExStyles*  
- A `DWORD` birleşik giriş kutusu içeren değerini denetlemek için Denetim ayarlamak için genişletilmiş stili.  
+ Genişletilmiş denetim için ayarlanacak stiller birleşik giriş kutusu denetimi içeren bir DWORD değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `DWORD` denetim için daha önce kullanılan genişletilmiş stilleri içeren değer.  
+ Denetim için daha önce kullanılan genişletilmiş stiller içeren bir DWORD değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ComboBoxEx denetim genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775742) bu stiller hakkında daha fazla bilgi için Windows SDK'sındaki.  
+ Bkz: [ComboBoxEx denetimin Genişletilmiş Stil](http://msdn.microsoft.com/library/windows/desktop/bb775742) bu stilleri hakkında daha fazla bilgi için Windows SDK.  
   
- Genişletilmiş windows stilleri denetimiyle Genişletilmiş Birleşik giriş kutusu oluşturmak için kullanın [CreateEx](#createex).  
+ Denetimin genişletilmiş windows stillerle Genişletilmiş Birleşik giriş kutusu oluşturmak için kullanın [CreateEx](#createex).  
   
 ##  <a name="setimagelist"></a>  CComboBoxEx::SetImageList  
- Görüntü listesi için ayarlar bir **ComboBoxEx** denetim.  
+ Görüntü listesi için ayarlar bir `ComboBoxEx` denetimi.  
   
 ```  
 CImageList* SetImageList(CImageList* pImageList);
@@ -375,18 +375,18 @@ CImageList* SetImageList(CImageList* pImageList);
   
 ### <a name="parameters"></a>Parametreler  
  *pImageList*  
- Bir işaretçi bir `CImageList` ile kullanılacak görüntüleri içeren bir nesne `CComboBoxEx` denetim.  
+ Bir işaretçi bir `CImageList` ile kullanmak üzere istediğiniz görüntüyü içeren nesne `CComboBoxEx` denetimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) tarafından daha önce kullanılan görüntüleri içeren bir nesne `CComboBoxEx` denetim. **NULL** hiçbir resim listesi daha önce ayarlandıysa.  
+ Bir işaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) tarafından daha önce kullanılan görüntülerin içeren nesne `CComboBoxEx` denetimi. Hiçbir görüntü listesi önceden ayarlanan yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi ileti işlevselliğini uygulayan [CBEM_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775787), Windows SDK'ın açıklandığı gibi. Varsayılan düzenleme denetimi yüksekliğini değiştirirseniz, Win32 işlevi çağrısı [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) çağırdıktan sonra denetiminizi yeniden boyutlandırmak için `SetImageList`, ya da düzgün görüntülenmez.  
+ Bu üye işlevi ileti işlevselliğini uygular [CBEM_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775787)Windows SDK içinde açıklandığı gibi. Varsayılan düzenleme denetiminin yüksekliğini değiştirirseniz, Win32 işlevini çağırmak [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) çağırdıktan sonra denetiminizi yeniden boyutlandırmak için `SetImageList`, ya da düzgün görüntülenmez.  
   
- `CImageList` Dönüş değeri tarafından işaret nesnesi geçici bir nesne ve sonraki boşta kalma işleme süresinde yok.  
+ `CImageList` Dönüş değeri tarafından işaret edilen nesne geçici bir nesne ve sonraki boşta işleme sırada yok edilir.  
   
 ##  <a name="setitem"></a>  CComboBoxEx::SetItem  
- Bir öğeyi özniteliklerini ayarlar bir **ComboBoxEx** denetim.  
+ Öznitelikleri bir öğe için ayarlar bir `ComboBoxEx` denetimi.  
   
 ```  
 BOOL SetItem(const COMBOBOXEXITEM* pCBItem);
@@ -394,16 +394,16 @@ BOOL SetItem(const COMBOBOXEXITEM* pCBItem);
   
 ### <a name="parameters"></a>Parametreler  
  *pCBItem*  
- Bir işaretçi bir [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) madde bilgilerini alacak yapısı.  
+ Bir işaretçi bir [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746) öğesi bilgilerini alacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlem başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ İşlem başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi ileti işlevselliğini uygulayan [CBEM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775788), Windows SDK'ın açıklandığı gibi.  
+ Bu üye işlevi ileti işlevselliğini uygular [CBEM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775788)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="setwindowtheme"></a>  CComboBoxEx::SetWindowTheme  
- Görsel stilini Genişletilmiş Birleşik giriş kutusu denetimi ayarlar.  
+ Görsel stili, Genişletilmiş Birleşik giriş kutusu denetimi ayarlar.  
   
 ```  
 HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
@@ -411,13 +411,13 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
   
 ### <a name="parameters"></a>Parametreler  
  *pszSubAppName*  
- Ayarlamak için Genişletilmiş Birleşik giriş kutusu görsel stil içeren bir Unicode dize için bir işaretçi.  
+ Ayarlanacak Genişletilmiş Birleşik giriş kutusu görsel stil içeren bir Unicode dize işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dönüş değeri kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi işlevselliğini öykünen [CBEM_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb775790) , Windows SDK'ın açıklandığı gibi ileti.  
+ Bu üye işlevi işlevselliğine öykünür [CBEM_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb775790) Windows SDK içinde açıklandığı gibi ileti.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek MFCIE](../../visual-cpp-samples.md)   

@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf7b8bf3015879643728358258cfe4a67536b3ea
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 94c84a8fd6b3aacbedf9d624fc750f98da4531e9
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863793"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957941"
 ---
 # <a name="ltostreamgt"></a>&lt;ostream&gt;
 
-Şablon sınıfı tanımlayan [basic_ostream](../standard-library/basic-ostream-class.md), iostreams eklemeler aracılık. Üstbilgi ayrıca çeşitli ilgili manipülatörleri tanımlar. (Bu başlığı, genellikle başka iostreams üstbilgilerinin eklenmiştir. Nadiren doğrudan içermesi gerekir.)
+Şablon sınıfı tanımlar [basic_ostream](../standard-library/basic-ostream-class.md), iostreams eklemeler aracılık. Üst bilgi, ayrıca birçok ilgili manipülatörleri tanımlar. (Bu başlığı, genellikle başka iostreams üst bilgi bulunur. Nadiren doğrudan dahil etmek ihtiyacınız.)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,29 +40,29 @@ ms.locfileid: "33863793"
 
 |Tür adı|Açıklama|
 |-|-|
-|[ostream](../standard-library/ostream-typedefs.md#ostream)|Bir türden oluşturur `basic_ostream` üzerinde özelleştirilmiş `char` ve `char_traits` üzerinde özel `char`.|
-|[wostream](../standard-library/ostream-typedefs.md#wostream)|Bir türden oluşturur `basic_ostream` üzerinde özelleştirilmiş `wchar_t` ve `char_traits` üzerinde özel `wchar_t`.|
+|[ostream](../standard-library/ostream-typedefs.md#ostream)|Bir türden oluşturur `basic_ostream` üzerinde özelleştirilmiş **char** ve `char_traits` üzerinde özelleştirilmiş **char**.|
+|[wostream](../standard-library/ostream-typedefs.md#wostream)|Bir türden oluşturur `basic_ostream` üzerinde özelleştirilmiş **wchar_t** ve `char_traits` üzerinde özelleştirilmiş **wchar_t**.|
 
 ### <a name="manipulators"></a>Manipülatörleri
 
 |||
 |-|-|
-|[endl](../standard-library/ostream-functions.md#endl)|Bir satır sonlandırır ve arabelleği temizler.|
+|[endl](../standard-library/ostream-functions.md#endl)|Bir satır sonlandırır ve arabelleğini aktarır.|
 |[sona erer](../standard-library/ostream-functions.md#ends)|Bir dize sonlandırır.|
 |[Temizleme](../standard-library/ostream-functions.md#flush)|Arabelleği temizler.|
-|[Değiştirme](../standard-library/ostream-functions.md#swap)|Sol değerlerini alış verişleri `basic_ostream` parametresi bu hakkı nesne `basic_ostream` parametre nesnesi.|
+|[değiştirme](../standard-library/ostream-functions.md#swap)|Sol değerlerini birbiriyle değiştirir `basic_ostream` parametresi bu hakkı nesne `basic_ostream` parametresi nesne.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç <<](../standard-library/ostream-operators.md#op_lt_lt)|Çeşitli türleri akışa yazar.|
+|[işleç <<](../standard-library/ostream-operators.md#op_lt_lt)|Çeşitli türleri, akışa yazar.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_ostream](../standard-library/basic-ostream-class.md)|Şablon sınıfı öğelerinin ekleme denetimlerini bir nesne ve kodlanmış nesneleri akışı arabelleğe açıklar.|
+|[basic_ostream](../standard-library/basic-ostream-class.md)|Şablon sınıfı, bir akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri tanımlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

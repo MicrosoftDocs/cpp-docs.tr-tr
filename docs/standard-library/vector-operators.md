@@ -1,5 +1,5 @@
 ---
-title: '&lt;vektör&gt; işleçleri | Microsoft Docs'
+title: '&lt;vektör&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,23 +20,23 @@ helpviewer_keywords:
 - std::operator&lt; (vector)
 - std::operator&lt;= (vector)
 - std::operator== (vector)
-ms.openlocfilehash: 779fe61bec63f55d7f3b8b3bb7f2e0d084fbab5b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4dac24b73e2b0a228f712453b124ff01e5c13c46
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863962"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959689"
 ---
 # <a name="ltvectorgt-operators"></a>&lt;vektör&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Testleri işlecinin sol tarafındaki nesnesi sağ tarafında nesnede eşit değil.
+İşlecin sol tarafındaki nesne işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const vector<Type, Allocator>& left, const vector<Type, Allocator>& right);
@@ -44,17 +44,17 @@ bool operator!=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **vektör**.
+*Sol* türünde bir nesne `vector`.
 
-`right` Türünde bir nesne **vektör**.
+*doğru* türünde bir nesne `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** vektörlerinin eşit; değilse **false** vektörlerinin eşit olması durumunda.
+**doğru** vektörler eşit; değilse, **false** vektörler eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki vektör aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki vektör eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -83,9 +83,9 @@ int main( )
 Vectors not equal.
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Nesne işlecinin sol tarafındaki sağ tarafında nesnede küçükse testleri.
+İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneden küçük olup olmadığını sınar.
 
 ```cpp
 bool operator<(const vector<Type, Allocator>& left, const vector<Type, Allocator>& right);
@@ -93,13 +93,15 @@ bool operator<(const vector<Type, Allocator>& left, const vector<Type, Allocator
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **vektör**.
+*Sol*  
+ Bir nesne türü `vector`.
 
-`right` Türünde bir nesne **vektör**.
+*sağ*  
+ Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki vektör; işlecinin sağ tarafında vektör küçükse aksi **false**.
+**doğru** işlecinin sol tarafındaki vektör; işlecin sağ tarafındaki vektör altındaysa Aksi takdirde **false**.
 
 ### <a name="example"></a>Örnek
 
@@ -132,9 +134,9 @@ int main( )
 Vector v1 is less than vector v2.
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Testleri işlecinin sol tarafındaki küçük veya eşit nesneye sağ tarafında nesnesidir.
+Nesnesinin işlecin sol tarafındaki küçüktür veya eşittir nesnesinin işlecin sağ tarafındaki olup olmadığını sınar.
 
 ```cpp
 bool operator<=(const vector<Type, Allocator>& left, const vector<Type, Allocator>& right);
@@ -142,13 +144,15 @@ bool operator<=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **vektör**.
+*Sol*  
+ Bir nesne türü `vector`.
 
-`right` Türünde bir nesne **vektör**.
+*sağ*  
+ Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki vektör veya işlecinin sağ tarafında vektör eşit; Aksi takdirde düşükse **false**.
+**doğru** işlecinin sol tarafındaki vektör daha veya işlecin sağ tarafındaki vektör eşit; Aksi takdirde küçükse **false**.
 
 ### <a name="example"></a>Örnek
 
@@ -181,9 +185,9 @@ int main( )
 Vector v1 is less than or equal to vector v2.
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Nesne işlecinin sol tarafındaki sağ tarafında nesnesine eşitse testleri.
+İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const vector<Type, Allocator>& left, const vector<Type, Allocator>& right);
@@ -191,17 +195,19 @@ bool operator==(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **vektör**.
+*Sol*  
+ Bir nesne türü `vector`.
 
-`right` Türünde bir nesne **vektör**.
+*sağ*  
+ Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki vektör eşitse işlecinin sağ tarafında vektör aksi **false**.
+**doğru** vektör işlecinin sol tarafındaki ise, aksi takdirde işlecin sağ tarafındaki vektör eşit **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki vektör aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki vektör eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -230,9 +236,9 @@ int main( )
 Vectors equal.
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
-Testleri işlecinin sol tarafındaki nesneyi sağ tarafında nesnede değerinden daha büyük.
+İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneden büyük olup olmadığını sınar.
 
 ```cpp
 bool operator>(const vector<Type, Allocator>& left, const vector<Type, Allocator>& right);
@@ -240,13 +246,15 @@ bool operator>(const vector<Type, Allocator>& left, const vector<Type, Allocator
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **vektör**.
+*Sol*  
+ Bir nesne türü `vector`.
 
-`right` Türünde bir nesne **vektör**.
+*sağ*  
+ Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki vektör işlecinin sağ tarafında vektör büyük; tersi durumda ise **false**.
+**doğru** işlecinin sol tarafındaki vektör ise, aksi takdirde vektör işlecin sağ tarafındaki büyük **false**.
 
 ### <a name="example"></a>Örnek
 
@@ -280,9 +288,9 @@ int main( )
 Vector v1 is greater than vector v2.
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Büyük veya ona eşit nesnesine sağ tarafında işlecinin sol tarafındaki nesnedir sağlayıp sağlamadığını test.
+İşlecin sol tarafındaki nesnesinin değerinden büyük veya işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator>=(const vector<Type, Allocator>& left, const vector<Type, Allocator>& right);
@@ -290,13 +298,15 @@ bool operator>=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **vektör**.
+*Sol*  
+ Bir nesne türü `vector`.
 
-`right` Türünde bir nesne **vektör**.
+*sağ*  
+ Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki vektör eşitse büyüktür veya vektör sağ tarafındaki vektör aksi **false**.
+**doğru** vektör işlecinin sol tarafındaki büyük veya eşit vektör sağ tarafında vektör; tersi durumda ise **false**.
 
 ### <a name="example"></a>Örnek
 

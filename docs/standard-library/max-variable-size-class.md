@@ -26,16 +26,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce8b4fde6668fe7901ecf75c153765302c6d770e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 974cee757708b9f7b1e48ea3bec3c4af98ced558
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854804"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957663"
 ---
 # <a name="maxvariablesize-class"></a>max_variable_size Sınıfı
 
-Açıklayan bir [max sınıfı](../standard-library/allocators-header.md) sınırlar nesnesi bir [freelist](../standard-library/freelist-class.md) nesne sayısı için kabaca orantılıdır bir maksimum uzunluğu için ayrılan bellek blokları.
+Açıklar bir [sınıfı en fazla](../standard-library/allocators-header.md) sınırlayan nesne bir [freelist](../standard-library/freelist-class.md) ayrılan bellek blokları nesne sayısı için kabaca orantılı en büyük uzunluğu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,21 +53,21 @@ class max_variable_size
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Ayrılmış](#allocated)|Ayrılmış bellek blokları sayısını artırır.|
-|[Serbest bırakıldı](#deallocated)|Azaltır sayısı bellek blokları ayrılmış.|
-|[tam](#full)|Daha fazla bellek blokları ücretsiz listesine eklenmesi gerekip gerekmediğini belirten bir değer döndürür.|
-|[Yayımlanma tarihi](#released)|Boş listede bellek sayısı engeller azaltır.|
-|[kaydedildi](#saved)|Bellek blokları ücretsiz listesinde sayısını artırır.|
+|[ayrılmış](#allocated)|Ayrılmış bellek bloğu sayısını artırır.|
+|[Serbest bırakıldı](#deallocated)|Azaltır, bellek bloğu sayısı tahsis edilir.|
+|[Tam](#full)|Daha fazla bellek blokları serbest listeye eklenmesi gerekip gerekmediğini belirten bir değeri döndürür.|
+|[Yayımlanan](#released)|Boş liste bellek sayısı engeller azaltır.|
+|[kaydedildi](#saved)|Boş listede bellek bloğu sayısını artırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 
 ## <a name="allocated"></a>  max_variable_size::allocated
 
-Ayrılmış bellek blokları sayısını artırır.
+Ayrılmış bellek bloğu sayısını artırır.
 
 ```cpp
 void allocated(std::size_t _Nx = 1);
@@ -77,15 +77,15 @@ void allocated(std::size_t _Nx = 1);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`_Nx`|Artış değeri.|
+|*_Nx*|Artış değeri.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye fonksiyonu ekler `_Nx` için depolanan değere `_Nallocs`. Bu üye işlev her başarılı çağrısı tarafından sonra çağrılır `cache_freelist::allocate` işleci `new`. Bağımsız değişken `_Nx` operatör tarafından ayrılan Öbek bellek bloğu sayısıdır `new`.
+Bu üye işlevi ekler *_Nx* depolanmış değere `_Nallocs`. Her başarılı çağrı tarafından sonra bu üye işlevi çağrılan `cache_freelist::allocate` işleci **yeni**. Bağımsız değişken *_Nx* öbek işleci tarafından ayrılan bellek bloğu sayısı **yeni**.
 
 ## <a name="deallocated"></a>  max_variable_size::deallocated
 
-Azaltır sayısı bellek blokları ayrılmış.
+Azaltır, bellek bloğu sayısı tahsis edilir.
 
 ```cpp
 void deallocated(std::size_t _Nx = 1);
@@ -95,15 +95,15 @@ void deallocated(std::size_t _Nx = 1);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`_Nx`|Artış değeri.|
+|*_Nx*|Artış değeri.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini çıkarır `_Nx` saklı değerinden `_Nallocs`. Her çağırdıktan sonra bu üye işlev çağrılır `cache_freelist::deallocate` işleci `delete`. Bağımsız değişken `_Nx` işleciyle serbest Öbek bellek bloğu sayısıdır `delete`.
+Üye işlevi çıkarır *_Nx* depolanmış değerden `_Nallocs`. Bu üye işlevi, her bir çağrı tarafından sonra çağrılan `cache_freelist::deallocate` işleci **Sil**. Bağımsız değişken *_Nx* işleci ile serbest Öbek bellek bloğu sayısı **Sil**.
 
 ## <a name="full"></a>  max_variable_size::Full
 
-Daha fazla bellek blokları ücretsiz listesine eklenmesi gerekip gerekmediğini belirten bir değer döndürür.
+Daha fazla bellek blokları serbest listeye eklenmesi gerekip gerekmediğini belirten bir değeri döndürür.
 
 ```cpp
 bool full();
@@ -111,11 +111,11 @@ bool full();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa `_Nallocs / 16 + 16 <= _Nblocks`.
+**doğru** varsa `_Nallocs / 16 + 16 <= _Nblocks`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye fonksiyonu tarafından çağrılır `cache_freelist::deallocate`. Çağrı döndürmesi durumunda `true`, `deallocate` false değerini döndürürse, bellek bloğu boş liste; koyar `deallocate` çağrıları işleci `delete` ayırması için blok.
+Bu üye işlevi çağıran `cache_freelist::deallocate`. Çağrısında **true**, `deallocate` false döndürürse, bellek bloğu boş liste; koyar `deallocate` çağrıları işleci **Sil** ayırması için blok.
 
 ## <a name="max_variable_size"></a>  max_variable_size::max_variable_size
 
@@ -127,11 +127,11 @@ max_variable_size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu depolanan değerlerin başlatır `_Nblocks` ve `_Nallocs` sıfır.
+Oluşturucu depolanmış değerleri başlatır `_Nblocks` ve `_Nallocs` sıfır.
 
 ## <a name="released"></a>  max_variable_size::RELEASED
 
-Boş listede bellek sayısı engeller azaltır.
+Boş liste bellek sayısı engeller azaltır.
 
 ```cpp
 void released();
@@ -139,11 +139,11 @@ void released();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev azaltır depolanan değer `_Nblocks`. `released` Geçerli max sınıfının üye işlevi tarafından çağrılır `cache_freelist::allocate` olduğunda, bir bellek bloğu boş listeden kaldırır.
+Bu üye, depolanan değeri azaltır işlev `_Nblocks`. `released` Geçerli max sınıfının üye işlevi çağrıldığında `cache_freelist::allocate` olduğunda, bir bellek bloğu boş listeden kaldırır.
 
 ## <a name="saved"></a>  max_variable_size::Saved
 
-Bellek blokları ücretsiz listesinde sayısını artırır.
+Boş listede bellek bloğu sayısını artırır.
 
 ```cpp
 void saved();
@@ -151,8 +151,8 @@ void saved();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi depolanan değer artırır `_Nblocks`. Bu üye fonksiyonu tarafından çağrılır `cache_freelist::deallocate` zaman onu koyar bir bellek bloğu boş liste.
+Bu üye işlevi depolanan değeri artırır `_Nblocks`. Bu üye işlevi çağıran `cache_freelist::deallocate` zaman bunu koyar bir bellek bloğu boş liste.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

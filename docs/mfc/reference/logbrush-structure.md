@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e02c156619e4ca36d268870c70ba783c41a352d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 15b904a07eb668a59a269741973424aa30e15877
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375216"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336412"
 ---
 # <a name="logbrush-structure"></a>LOGBRUSH Yapısı
-`LOGBRUSH` Stili, renk ve fiziksel fırça desenini yapısını tanımlar. Windows tarafından kullanılan [CreateBrushIndirect](http://msdn.microsoft.com/library/windows/desktop/dd183487) ve [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705) işlevleri.  
+`LOGBRUSH` Yapısı, stil, rengini ve fiziksel bir fırça deseni tanımlar. Windows tarafından kullanılan [CreateBrushIndirect](http://msdn.microsoft.com/library/windows/desktop/dd183487) ve [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705) işlevleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,54 +37,54 @@ typedef struct tag LOGBRUSH { /* lb */
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `lbStyle`  
- Fırça stilini belirtir. `lbStyle` Üye aşağıdaki stiller biri olmalıdır:  
+ *lbStyle*  
+ Fırça stilini belirtir. `lbStyle` Üye aşağıdaki stilleri biri olmalıdır:  
   
-- **BS_DIBPATTERN** bir CİHAZDAN bağımsız bit eşlem (DIB) belirtim tarafından tanımlanan bir desen Fırçası. Varsa `lbStyle` olan **BS_DIBPATTERN**, **lbHatch** üyeyi içeren bir paket DIB için tanıtıcı.  
+- BS_DIBPATTERN bir desen Fırçası tarafından bir CİHAZDAN bağımsız bit eşlem (DIB) belirtimi tanımlanır. Varsa *lbStyle* BS_DIBPATTERN, olan `lbHatch` üyeyi içeren bir paket DIB işleyici.  
   
-- **BS_DIBPATTERNPT** bir CİHAZDAN bağımsız bit eşlem (DIB) belirtim tarafından tanımlanan bir desen Fırçası. Varsa `lbStyle` olan **BS_DIBPATTERNPT**, **lbHatch** üye paketlenmiş DIB gösteren bir işaretçi içeriyor.  
+- BS_DIBPATTERNPT bir desen Fırçası tarafından bir CİHAZDAN bağımsız bit eşlem (DIB) belirtimi tanımlanır. Varsa *lbStyle* BS_DIBPATTERNPT, olan `lbHatch` üyeyi içeren bir paket DIB işaretçisi.  
   
-- **BS_HATCHED** fırça çizgili.  
+- Fırça BS_HATCHED çizgili.  
   
-- **BS_HOLLOW** fırça içi boş.  
+- Fırça BS_HOLLOW boş.  
   
-- **BS_NULL** aynı **BS_HOLLOW**.  
+- BS_NULL BS_HOLLOW aynıdır.  
   
-- **BS_PATTERN** bellek bit eşlem tarafından tanımlanan fırça desen.  
+- Bir bellek bit eşlem tarafından tanımlanan BS_PATTERN Desen fırçası.  
   
-- **BS_SOLID** düz fırça.  
+- BS_SOLID düz fırça.  
   
- `lbColor`  
- Fırça çizilecek olduğu rengini belirtir. Varsa `lbStyle` olan **BS_HOLLOW** veya **BS_PATTERN** stili **lbColor** göz ardı edilir. Varsa `lbStyle` olan **BS_DIBPATTERN** veya **BS_DIBPATTERNBT**, düşük düzey sözcüğün **lbColor** belirtir olup olmadığını **bmiColors**üyeleri [BITMAPINFO](../../mfc/reference/bitmapinfo-structure.md) yapısı, şu anda gerçekleşen mantıksal palet açık kırmızı, yeşil, mavi (RGB) değerleri veya dizinleri içerir. **LbColor** üye aşağıdaki değerlerden biri olmalıdır:  
+ *lbColor*  
+ Fırça çizilecek olduğu rengini belirtir. Varsa *lbStyle* BS_HOLLOW veya BS_PATTERN stili *lbColor* göz ardı edilir. Varsa *lbStyle* BS_DIBPATTERN veya BS_DIBPATTERNBT, düşük düzey sözcüğün *lbColor* belirtir olup olmadığını `bmiColors` üyeleri [BITMAPINFO](../../mfc/reference/bitmapinfo-structure.md) yapısı Açık kırmızı, yeşil, mavi (RGB) değeri veya dizinleri şu anda gerçekleşen mantıksal paletini içerir. `lbColor` Üyesi şu değerlerden biri olmalıdır:  
   
-- **DIB_PAL_COLORS** renk tablosu 16 bit dizinlerini dizisi şu anda gerçekleşen mantıksal palet oluşur.  
+- Renk tablosunu DIB_PAL_COLORS 16-bit dizinlerini dizisi şu anda gerçekleşen mantıksal paletini oluşur.  
   
-- **DIB_RGB_COLORS** renk tablosu değişmez değer RGB değerleri içerir.  
+- Renk tablosunu DIB_RGB_COLORS değişmez değer RGB değerleri içerir.  
   
  *lbHatch*  
- Bir tarama stilini belirtir. Tarafından tanımlanan fırça stili anlamı bağlıdır `lbStyle`. Varsa `lbStyle` olan **BS_DIBPATTERN**, **lbHatch** üyeyi içeren bir paket DIB için tanıtıcı. Varsa `lbStyle` olan **BS_DIBPATTERNPT**, **lbHatch** üye paketlenmiş DIB gösteren bir işaretçi içeriyor. Varsa `lbStyle` olan **BS_HATCHED**, **lbHatch** üye tarama oluşturmak için kullanılan satırları yönünü belirtir. Aşağıdaki değerlerden biri olabilir:  
+ Bir tarama stilini belirtir. Tarafından tanımlanan fırça stili anlamı bağımlı *lbStyle*. Varsa *lbStyle* BS_DIBPATTERN, olan `lbHatch` üyeyi içeren bir paket DIB işleyici. Varsa *lbStyle* BS_DIBPATTERNPT, olan `lbHatch` üyeyi içeren bir paket DIB işaretçisi. Varsa *lbStyle* BS_HATCHED, olan `lbHatch` üye tarama oluşturmak için kullanılan satırları yönünü belirtir. Aşağıdaki değerlerden biri olabilir:  
   
-- `HS_BDIAGONAL` 45 derece yukarı, soldan sağa tarama  
+- Yukarı, soldan sağa HS_BDIAGONAL A 45 derece tarama  
   
-- `HS_CROSS` Yatay ve dikey bir çapraz tarama  
+- HS_CROSS yatay ve dikey çapraz tarama  
   
-- `HS_DIAGCROSS` 45 derecelik çapraz tarama  
+- HS_DIAGCROSS 45 derece çapraz tarama  
   
-- `HS_FDIAGONAL` 45 derecelik aşağı, soldan sağa tarama  
+- Aşağıya, soldan sağa HS_FDIAGONAL A 45 derece tarama  
   
-- `HS_HORIZONTAL` Yatay tarama  
+- HS_HORIZONTAL yatay tarama  
   
-- `HS_VERTICAL` Dikey tarama  
+- HS_VERTICAL dikey tarama  
   
- Varsa `lbStyle` olan **BS_PATTERN**, **lbHatch** deseni tanımlayan bit eşlem işleyicisidir. Varsa `lbStyle` olan **BS_SOLID** veya **BS_HOLLOW**, **lbHatch** göz ardı edilir.  
+ Varsa *lbStyle* BS_PATTERN, olan *lbHatch* deseni tanımlayan bir bit eşlem işleyicisidir. Varsa *lbStyle* BS_SOLID veya BS_HOLLOW, *lbHatch* göz ardı edilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ancak **lbColor** bir tarama fırça ön plan rengini denetimleri [CDC::SetBkMode](../../mfc/reference/cdc-class.md#setbkmode) ve [CDC::SetBkColor](../../mfc/reference/cdc-class.md#setbkcolor) işlevleri denetim arka plan rengi.  
+ Ancak *lbColor* tarama fırça ön plan rengini denetler [CDC::SetBkMode](../../mfc/reference/cdc-class.md#setbkmode) ve [CDC::SetBkColor](../../mfc/reference/cdc-class.md#setbkcolor) işlevleri denetim arka plan rengi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** wingdi.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#getcharabcwidths)
 

@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9825b690336acc8e93b0d404cc8335e5b27404b3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8b138424f3394c940307b422f590648c661d037d
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840595"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958149"
 ---
 # <a name="addcv-class"></a>add_cv Sınıfı
 
-Const volatile türü türünden yapar.
+Yapar **const volatile** türünden türü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,13 +40,13 @@ using add_cv_t = typename add_cv<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* değiştirmek için türü.
+*T* değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değiştirilen türünün bir örneği `add_cv<T>` sahip bir `type` üye typedef eşdeğer *T* her ikisi için de değiştiren [add_volatile](../standard-library/add-volatile-class.md) ve [add_const](../standard-library/add-const-class.md)sürece *T* zaten MS niteleyicileri, başvuru, ya da bir işlevdir.
+Değiştirilen türün bir örneğini `add_cv<T>` sahip bir `type` üye **typedef** eşdeğer *T* tarafından ikisi de değiştirlildi [add_volatile](../standard-library/add-volatile-class.md) ve [ add_const](../standard-library/add-const-class.md)sürece *T* zaten cv niteleyicileri olan, bir başvuru veya bir işlevdir.
 
-`add_cv_t<T>` Yardımcı türüdür erişmek için bir kısayol `add_cv<T>` üye typedef `type`.
+`add_cv_t<T>` Yardımcısı türüdür erişmek için bir kısayol `add_cv<T>` üye typedef `type`.
 
 ## <a name="example"></a>Örnek
 

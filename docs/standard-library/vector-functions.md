@@ -8,19 +8,19 @@ f1_keywords:
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords:
 - std::swap [vector]
-ms.openlocfilehash: dbcb2524736bcb99693f3a4b27790c3447d58fe3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 29b23ec4afe32d1aa383afd4fdaf3ca280d49161
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856182"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955267"
 ---
 # <a name="ltvectorgt-functions"></a>&lt;vektör&gt; işlevleri
 
 
-## <a name="swap"></a>  Değiştirme
+## <a name="swap"></a>  değiştirme
 
-İki vektör öğelerini değiş tokuş eder.
+İki vektör öğelerini birbiriyle değiştirir.
 
 ```cpp
 template <class Type, class Allocator>
@@ -29,17 +29,19 @@ void swap(vector<Type, Allocator>& left, vector<Type, Allocator>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Öğeleri takas için sağlama vektör veya öğeleri olan vektör olanlar değiştirilebilmesi için vektör `left`.
+*sağ*  
+ Değiştirilecek öğeleri sağlayan vektör veya öğeleri vektör öğelerle ilişkili vektör *sol*.
 
-`left` Öğeleri olan vektör olanlar değiştirilebilmesi için vektör `right`.
+*Sol*  
+ Öğeleri vektör öğelerle ilişkili vektör *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini yürütmek için kapsayıcı sınıfı vektör özelleştirilmiş bir algoritma şablon işlevi olan `left`. [Vector::Swap](../standard-library/vector-class.md) *(sağ*). İşlev şablonlarının kısmi derleyici tarafından sıralaması örneğine bunlar. Şablon işlevleri işlev çağrısı şablonla eşleşmesi benzersiz değil şekilde aşırı zaman derleyici şablon işlevi en özelleştirilmiş sürümünü seçin. Genel bir şablon işlevi sürümü **şablonu** \< **sınıfı T**> **void takas**( **T &**, **T &**), algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özel sürüm kapsayıcı sınıfı iç gösterimi ile çalışabilirsiniz gibi daha hızlıdır.
+Özel üye işlevini yürütmek için kapsayıcı sınıfı vektör bir algoritma şablon işlevi olan `left`. [Vector::Swap](../standard-library/vector-class.md) *(doğru*). İşlev şablonlarının kısmi derleyici tarafından sıralanması, örnekleri şunlardır. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Şablon işlevinin genel sürüm **şablon** \< **sınıfı T**> **void takas**( **T &**, **T &**), algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
-Üye işlevini kod örneğine bakın [vector::swap](../standard-library/vector-class.md) şablonu sürümünü kullanan bir örnek `swap`.
+Üye işlevi kod örneğine bakın [vector::swap](../standard-library/vector-class.md) şablon sürümünü kullanan bir örnek için `swap`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: '&lt;bitset&gt; işleçleri | Microsoft Docs'
+title: '&lt;bitset&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,23 +20,23 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (bitset)
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3056546e5a543c0058f789e293e0a63a3d53283a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7d01a9ad5ef0b5cc3198231ae2b361e04856449f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850404"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955026"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; işleçleri
 
 ||||
 |-|-|-|
-|[işleci&amp;](#op_amp)|[işleci&gt;&gt;](#op_gt_gt)|[işleci&lt;&lt;](#op_lt_lt)|
+|[İşleci&amp;](#op_amp)|[İşleci&gt;&gt;](#op_gt_gt)|[İşleci&lt;&lt;](#op_lt_lt)|
 |[operator ^](#op_xor)|[işleci|](#op_or)|
 
-## <a name="op_amp"></a>  işleci&amp;
+## <a name="op_amp"></a>  İşleci&amp;
 
-Bit tabanlı gerçekleştirir `AND` iki bit kümeleri arasında.
+Bit düzeyinde gerçekleştirir `AND` iki bitsets arasında.
 
 ```cpp
 template <size_t size>
@@ -48,13 +48,13 @@ operator&(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` İlgili öğeleri olan Bitsel ile birleştirilecek iki bit kümeleri ilk `AND`.
+*Sol* ilgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `AND`.
 
-`right` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ikinci `AND`.
+*doğru* iki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `AND`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri olan sonucunu bitset `AND` karşılık gelen öğelerini işlemi `left` ve `right`.
+Öğeleri olan sonucunu bir bitset `AND` karşılık gelen öğeleri üzerinde işlem *sol* ve *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -84,9 +84,9 @@ bitset 2: 0011
 bitset 3: 0001
 ```
 
-## <a name="op_lt_lt"></a>  işleci&lt;&lt;
+## <a name="op_lt_lt"></a>  İşleci&lt;&lt;
 
-Bit sırası metin gösterimini çıkış akışına ekler.
+Bit sırayı bir metin temsili çıkış akışına ekler.
 
 ```
 
@@ -98,17 +98,17 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Türünde bir nesne **bitset\<N >** olan bir dize olarak çıktısı akışa eklenecek.
+*doğru* türünde bir nesne **bitset\<N >** olan dize olarak çıkış akışına içine eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bit sırayla metin gösterimini **ostr**.
+Bit sırayı bir metin temsili `ostr`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlev aşırı yüklemelerinin **işleci <<**, ilk dizeye dönüştürmeden yazılmalıdır bitset izin verme. Şablon işlevi etkin şekilde şunları yürütür:
+Şablonu işlev aşırı yüklemelerinin `operator<<`, ilk dizeye değiştirmeden yazılmalıdır bir bitset izin verme. Şablon işlevi etkin şekilde şunları yürütür:
 
-**ostr** << _ *sağ*. [to_string](bitset-class.md) < **CharType**, **nitelikler**, **ayırıcısı** \< **CharType**>>)
+**ostr** << _ *sağ*. [to_string](bitset-class.md) < **CharType**, **nitelikler**, **ayırıcı** \< **CharType**>>)
 
 ### <a name="example"></a>Örnek
 
@@ -141,9 +141,9 @@ int main( )
 }
 ```
 
-## <a name="op_gt_gt"></a>  işleci&gt;&gt;
+## <a name="op_gt_gt"></a>  İşleci&gt;&gt;
 
-Bit karakter dizesi bitset okur.
+Bir bitset bir bit karakter dizesini okur.
 
 ```
 
@@ -157,25 +157,25 @@ _Istr,
 
 ### <a name="parameters"></a>Parametreler
 
-`_Istr` Bitset eklenecek Giriş akışı girilir dize.
+*_Istr* bitset eklenecek Giriş akışı tarafları olan dize.
 
-`right` BITS giriş akışından alıyor bitset.
+*doğru* BITS girdi akışından alıyor bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablon işlevi dizesini döndürür `_Istr`.
+Dize şablon işlevinin döndürdüğü *_Istr*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlev aşırı yüklemelerinin **işleci >>** depolamak için bitset _ *sağ* değeri bitset ( `str`), burada `str` türünde bir nesne [basic_string ](basic-string-class.md)  <  **CharType**, **nitelikler**, **ayırıcısı** \< **CharType**> > **&** ayıklanan `_Istr`.
+Şablonu işlev aşırı yüklemelerinin `operator>>` depolamak için bitset _ *sağ* değer bitset (`str`), burada `str` türünde bir nesnedir [basic_string](basic-string-class.md)  <  **CharType**, **nitelikler**, **ayırıcı** \< **CharType**>> **&** ayıklanan *_Istr*.
 
-Şablon işlevi öğeleri ayıklar `_Istr` ve bunları kadar bitset ekler:
+Şablon işlevi öğeleri ayıklar *_Istr* ve bunları kadar bitset ekler:
 
-- Tüm bit öğeleri giriş akışından ayıklanan ve bitset depolanır.
+- Tüm bit öğeleri girdi akışından ayıklanır ve bitset içinde depolanır.
 
-- Bitset Giriş akışı bitten ile doldurulur.
+- Bitset giriş akışından BITS ile doldurulur.
 
-- Bir input öğesi türünün 0 veya 1 olan karşılaşıldı.
+- Bir input öğesi 0 ya da 1 olan karşılaşıldı.
 
 ### <a name="example"></a>Örnek
 
@@ -228,7 +228,7 @@ int main()
 
 ## <a name="op_xor"></a>  operator ^
 
-Bit tabanlı gerçekleştirir `EXCLUSIVE-OR` iki bit kümeleri arasında.
+Bit düzeyinde gerçekleştirir `EXCLUSIVE-OR` iki bitsets arasında.
 
 ```cpp
 template <size_t size>
@@ -240,13 +240,13 @@ operator^(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` İlgili öğeleri olan Bitsel ile birleştirilecek iki bit kümeleri ilk `EXCLUSIVE-OR`.
+*Sol* ilgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `EXCLUSIVE-OR`.
 
-`right` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ikinci `EXCLUSIVE-OR`.
+*doğru* iki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `EXCLUSIVE-OR`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri olan sonucunu bitset `EXCLUSIVE-OR` karşılık gelen öğelerini işlemi `left` ve `right`.
+Öğeleri olan sonucunu bir bitset `EXCLUSIVE-OR` karşılık gelen öğeleri üzerinde işlem *sol* ve *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -278,7 +278,7 @@ bitset 3: 0110
 
 ## <a name="op_or"></a>  operator |
 
-Bit tabanlı gerçekleştirir `OR` iki bit kümeleri arasında.
+Bit düzeyinde gerçekleştirir `OR` iki bitsets arasında.
 
 ```cpp
 template <size_t size>
@@ -290,13 +290,13 @@ operator|(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` İlgili öğeleri olan Bitsel ile birleştirilecek iki bit kümeleri ilk `OR`.
+*Sol* ilgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `OR`.
 
-`right` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ikinci `OR`.
+*doğru* iki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `OR`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri olan sonucunu bitset `OR` karşılık gelen öğelerini işlemi `left` ve `right`.
+Öğeleri olan sonucunu bir bitset `OR` karşılık gelen öğeleri üzerinde işlem *sol* ve *doğru*.
 
 ### <a name="example"></a>Örnek
 

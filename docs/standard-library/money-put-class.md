@@ -26,16 +26,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df8b872d9aeb718c1e86d460d8ef60beac8f3632
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: de84f708957074878fba84ebfe3db600a1b6ed86
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862448"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38954818"
 ---
 # <a name="moneyput-class"></a>money_put Sınıfı
 
-Şablon sınıfı parasal değerleri denetim dönüşümleri dizilerini türü için bir yerel ayar model olarak hizmet verebilir bir nesneyi tanımlayan `CharType`.
+Şablon sınıfı türü dizilerin parasal değerlere denetim dönüştürme bir yerel ayar modeli olarak hizmet verebilen bir nesneyi tanımlayan `CharType`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,19 +47,19 @@ class money_put : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-`CharType` Yerel karakter kodlamak için bir program içinde kullanılan türü.
+*CharType* bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
-`OutputIterator` Para işlevleri çıktılarını yazma yineleyici türü.
+*Outputıterator* kendi çıktılarının yazılacağı yineleyici için parasal yerleştirme işlevleri türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Benzersiz bir pozitif değer saklı değerini erişmek için ilk deneme depolar **kimliği.**
+Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim içinde benzersiz bir pozitif değer depolar **kimliği.**
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[money_put](#money_put)|Nesne türü Oluşturucusu `money_put`.|
+|[money_put](#money_put)|Türündeki nesneler için oluşturucu `money_put`.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -67,14 +67,14 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 |-|-|
 |[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|
 |[iter_type](#iter_type)|Bir çıkış yineleyiciyi açıklayan tür.|
-|[STRING_TYPE](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|
+|[string_type](#string_type)|Türü karakterler içeren dizeyi tanımlayan tür `CharType`.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
 |[do_put](#do_put)|Bir sayı ya da dizeyi parasal bir değeri temsil eden bir karakter dizisine dönüştürmek için çağrılan bir sanal işlev.|
-|[PUT](#put)|Bir sayı ya da dizeyi parasal bir değeri temsil eden bir karakter dizisine dönüştürür.|
+|[yerleştirme](#put)|Bir sayı ya da dizeyi parasal bir değeri temsil eden bir karakter dizisine dönüştürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -92,7 +92,7 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür **CharType**.
+Şablon parametresi için bir eşanlamlı türüdür **CharType**.
 
 ## <a name="do_put"></a>  money_put::do_put
 
@@ -117,61 +117,61 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>Parametreler
 
-`next` Eklenen dizenin ilk öğe adresleme yineleyici.
+*sonraki* eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
 
-`_Intl` Para birimi simgesini sırayla beklenen türünü gösteren bir Boole değeri: **true** uluslararası, **false** yurtiçi durumunda.
+*_Intl* beklendiği sırayla para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
 
-`_Iosbase` Bir biçim hangi bayrak kümesi para birimi simgesini isteğe bağlıdır; olduğunu gösterdiğinde Aksi takdirde gereklidir
+*_Iosbase* bir biçimi olan bayrak kümesi para birimi simgesi isteğe bağlı olduğunu gösterir; Aksi takdirde, gerekli değildir
 
-`_Fill` Aralığı için kullanılan bir karakter.
+*_Fill* aralığı için kullanılan bir karakteri.
 
-`val` Dönüştürülecek bir dize nesnesi.
+*VAL* dönüştürülecek bir dize nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıktı yineleyici adresleri son öğenin ötesinde konumu bir üretilen.
+Çıkış yineleyici son öğenin ötesinde konumu bir adresleri üretilen.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sanal korumalı üye fonksiyonu başlangıç sıralı öğeleri oluşturur `next` para çıkış alandan üretmek için [STRING_TYPE](#string_type) nesne `val`. Tarafından denetlenen dizisi `val` isteğe bağlı olarak bir eksi miktarını temsil eden işareti (-), öncesinde bir veya daha fazla ondalık basamak ile başlamalıdır. Oluşturulan para çıktı alanı ötesinde ilk öğe belirleme yineleyici işlevi döndürür.
+Konumunda başlayan ardışık öğeleri ilk korumalı sanal üye işlevi oluşturur *sonraki* bir parasal çıkış alanını üretmek için [string_type](#string_type) nesne *val*. Tarafından denetlenen dizinin *val* bir eksi miktarını temsil eden işareti (-), isteğe bağlı olarak önünde bir veya daha fazla ondalık basamak ile başlamalıdır. İşlev oluşturulan parasal çıkış alanını ötesindeki ilk öğeyi gösteren bir yineleyici döndürür.
 
-İkinci sanal korumalı üye fonksiyonu, birinci ile aynı şekilde davranır hariç, BT'nin etkili bir şekilde ilk dönüştürür `val` isteğe bağlı olarak bir eksi işaretiyle öncesinde ondalık basamak dizisi sonra o sırada yukarıdaki dönüştürür.
+İkinci korumalı sanal üye işlevi, ilk olarak davranır dışındaki olan etkili bir şekilde ilk dönüştürür *val* eksi işareti, isteğe bağlı olarak önünde bir ondalık basamak dizisi sonra o sırada yukarıdaki dönüştürür.
 
-Para çıktı alanı biçimi tarafından belirlenen [yerel model](../standard-library/locale-class.md#facet_class) (etkin) çağrı tarafından döndürülen fac [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md) \< **CharType**, **uluslararası**>> ( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
+Parasal çıkış alanını biçimi tarafından belirlenen [yerel ayar modeli](../standard-library/locale-class.md#facet_class) (etkin) çağrı tarafından döndürülen fac [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md) \< **CharType**, **INTL**>> ( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
 
 Özellikle:
 
-- **Fac**. [pos_format](../standard-library/moneypunct-class.md#pos_format) alanının bileşenleri için negatif olmayan bir değer oluşturulur sırasını belirler.
+- **Fac**. [pos_format](../standard-library/moneypunct-class.md#pos_format) alan bileşenleri için negatif olmayan bir değer üretilir sırasını belirler.
 
-- **Fac**. [neg_format](../standard-library/moneypunct-class.md#neg_format) alanının bileşenleri için negatif bir değer oluşturulur sırasını belirler.
+- **Fac**. [neg_format](../standard-library/moneypunct-class.md#neg_format) alan bileşenleri için negatif bir değer üretilir sırasını belirler.
 
-- **Fac**. [curr_symbol](../standard-library/moneypunct-class.md#curr_symbol) bir para birimi simgesi oluşturmak için öğelerin sırasını belirler.
+- **Fac**. [curr_symbol](../standard-library/moneypunct-class.md#curr_symbol) bir para birimi sembolünün oluşturmak için öğelerin sırasını belirler.
 
-- **Fac**. [positive_sign](../standard-library/moneypunct-class.md#positive_sign) için pozitif bir oturum oluşturmak için öğeleri sırasını belirler.
+- **Fac**. [positive_sign](../standard-library/moneypunct-class.md#positive_sign) için bir artı işareti oluşturmak için öğelerin sırasını belirler.
 
-- **Fac**. [negative_sign](../standard-library/moneypunct-class.md#negative_sign) negatif bir oturum oluşturmak için öğelerin sırasını belirler.
+- **Fac**. [negative_sign](../standard-library/moneypunct-class.md#negative_sign) bir eksi işareti için oluşturmak için öğelerin sırasını belirler.
 
-- **Fac**. [Gruplandırma](../standard-library/moneypunct-class.md#grouping) basamak herhangi Ondalık ayırıcının solundaki nasıl gruplandırılacağını belirler.
+- **Fac**. [Gruplandırma](../standard-library/moneypunct-class.md#grouping) basamakların herhangi bir ondalık noktasının solunda nasıl gruplandığını belirler.
 
-- **Fac**. [thousands_sep](../standard-library/moneypunct-class.md#thousands_sep) herhangi Ondalık ayırıcının sol tarafındaki basamak grupları ayıran öğesi belirler.
+- **Fac**. [thousands_sep](../standard-library/moneypunct-class.md#thousands_sep) herhangi bir ondalık noktasının solunda rakamlar grupları ayıran belirler.
 
-- **Fac**. [decimal_point](../standard-library/moneypunct-class.md#decimal_point) tamsayı basamak herhangi kesir rakamları ayıran öğesi belirler.
+- **Fac**. [decimal_point](../standard-library/moneypunct-class.md#decimal_point) herhangi kesir basamaklardan tamsayı basamakları ayıran öğeyi belirler.
 
-- **Fac**. [frac_digits](../standard-library/moneypunct-class.md#frac_digits) herhangi bir ondalık ayırıcısı sağındaki önemli kesir basamak sayısını belirler.
+- **Fac**. [frac_digits](../standard-library/moneypunct-class.md#frac_digits) önemli basamağını herhangi bir ondalık noktasının sağındaki basamak sayısını belirler.
 
-Varsa oturum dize ( **fac**. `negative_sign` veya **fac**. `positive_sign`) sahip birden fazla öğesi, yalnızca ilk öğesi oluşturulduğu eşit öğesi **money_base::sign** biçimi desende görüntülenir ( **fac**. `neg_format` veya **fac**. `pos_format`). Kalan öğeler para çıktı alanı sonunda üretilir.
+Varsa oturum dize ( **fac**. `negative_sign` veya **fac**. `positive_sign`) sahip birden fazla öğesi, yalnızca ilk öğesi oluşturulduğu eşit öğesi **money_base::sign** biçim deseni görünür ( **fac**. `neg_format` veya **fac**. `pos_format`). Kalan öğeler parasal çıkış alanını sonunda oluşturulur.
 
-Varsa **iosbase**. [bayrakları](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase) sıfır olmayan, olan dize **fac**. `curr_symbol` oluşturulduğu eşit öğesi **money_base::symbol** biçimi desende görüntülenir. Aksi takdirde, para birimi simgesini oluşturulur.
+Varsa **iosbase**. [bayrakları](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase) sıfır değilse, dize **fac**. `curr_symbol` oluşturulduğu eşit öğesi **money_base::symbol** biçim deseni görünür. Aksi takdirde, hiçbir para birimi simgesi oluşturulur.
 
-Hiçbir gruplandırma kısıtlamaları tarafından uygulanan varsa **fac**. **Gruplandırma** (ilk öğe CHAR_MAX değeri varsa), ardından hiçbir örneği **fac**. `thousands_sep` para çıktı alanı değeri bölümünde oluşturulan (burada eşit öğesi **money_base::value** biçimi desende görünür). Varsa **fac**. `frac_digits` sıfır, sonra hiçbir örneğinin **fac**. `decimal_point` ondalık basamak oluşturulur. Aksi takdirde, sonuçta elde edilen para çıktı alanı düşük düzey yerleştirir **fac**. `frac_digits` ondalık konumun sağında ondalık basamağa.
+Gruplandırma kısıtlamalar tarafından uygulanan varsa **fac**. **Gruplandırma** (ilk öğesi CHAR_MAX değer varsa), ardından hiçbir örneklerini **fac**. `thousands_sep` parasal çıkış alanını değer kısmı oluşturulur (burada eşit öğesi **money_base::value** biçim deseni görünür). Varsa **fac**. `frac_digits` sıfır, ardından hiçbir örneği **fac**. `decimal_point` ondalık basamak oluşturulur. Aksi halde, sonuç parasal çıkış alanını düşük düzey yerleştirir **fac**. `frac_digits` Ondalık ayırıcının sağında ondalık basamaklar.
 
-Doldurma oluşur olması durumunda dışında herhangi bir sayısal çıktı alan ettirilmesi **iosbase**. **bayrakları** & **iosbase**. [iç](../standard-library/ios-functions.md#internal) sıfır dışında her iç doldurma olduğu oluşturulduğu eşit öğesi **money_base::space** görünüyorsa biçimi desende görüntülenir. Aksi halde, iç doldurma önce oluşturulan sıralı oluşur. Doldurma karakteri **dolgu**.
+Doldurma gerçekleşir olması durumunda dışında herhangi bir sayısal çıkış alan sunamıyoruz **iosbase**. **bayrakları** & **iosbase**. [iç](../standard-library/ios-functions.md#internal) sıfır olmayan, her iç doldurma olan oluşturulduğu eşit öğesi **money_base::space** görünüyorsa biçim deseni görünür. Aksi takdirde, oluşturulan sıralı önce iç doldurma gerçekleşir. Doldurma karakteri **dolgu**.
 
 İşlev çağrıları **iosbase**. **Genişlik**alan genişliği sıfırlamak için (0).
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [put](#put), sanal üye fonksiyonu tarafından çağrılır burada **put**.
+İçin örneğe bakın [put](#put), sanal üye işlevi çağıran burada **put**.
 
 ## <a name="iter_type"></a>  money_put::iter_type
 
@@ -183,11 +183,11 @@ typedef OutputIterator iter_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür **OutputIterator.**
+Şablon parametresi için bir eşanlamlı türüdür **Outputıterator.**
 
 ## <a name="money_put"></a>  money_put::money_put
 
-Nesne türü Oluşturucusu `money_put`.
+Türündeki nesneler için oluşturucu `money_put`.
 
 ```cpp
 explicit money_put(size_t _Refs = 0);
@@ -195,21 +195,21 @@ explicit money_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Refs` Bellek yönetimi nesnesinin türünü belirtmek için kullanılan tamsayı değeri.
+*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olası değerler için `_Refs` parametre ve bunların anlamlı:
+Olası değerler için *_Refs* parametresi ve bunların önemi:
 
-- 0: nesne ömrü onu içeren yerel ayarları tarafından yönetilir.
+- 0: nesne ömrü onu içeren yerel ayarlar tarafından yönetilir.
 
 - 1: nesne ömrü el ile yönetilmesi gerekir.
 
-- \> 1: Bu değerleri tanımlanmamış.
+- \> 1: Bu değerler tanımlanmadı.
 
-Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.
+Yok edici korumalı olduğundan doğrudan örnek mümkündür.
 
-Oluşturucu temel nesnesiyle başlatır **locale::**[modeli](../standard-library/locale-class.md#facet_class)( `_Refs`).
+Oluşturucu, temel nesnesiyle başlatır **yerel::**[modeli](../standard-library/locale-class.md#facet_class)( `_Refs`).
 
 ## <a name="put"></a>  money_put::Put
 
@@ -234,23 +234,23 @@ iter_type put(
 
 ### <a name="parameters"></a>Parametreler
 
-`next` Eklenen dizenin ilk öğe adresleme yineleyici.
+*sonraki* eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
 
-`_Intl` Para birimi simgesini sırayla beklenen türünü gösteren bir Boole değeri: **true** uluslararası, **false** yurtiçi durumunda.
+*_Intl* beklendiği sırayla para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
 
-`_Iosbase` Bir biçim hangi bayrak kümesi para birimi simgesini isteğe bağlıdır; olduğunu gösterdiğinde Aksi takdirde gereklidir
+*_Iosbase* bir biçimi olan bayrak kümesi para birimi simgesi isteğe bağlı olduğunu gösterir; Aksi takdirde, gerekli değildir
 
-`_Fill` Aralığı için kullanılan bir karakter.
+*_Fill* aralığı için kullanılan bir karakteri.
 
-`val` Dönüştürülecek bir dize nesnesi.
+*VAL* dönüştürülecek bir dize nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıktı yineleyici adresleri son öğenin ötesinde konumu bir üretilen.
+Çıkış yineleyici son öğenin ötesinde konumu bir adresleri üretilen.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki üye işlevleri dönmek [do_put](#do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).
+Her iki üye işlev dönüş [do_put](#do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).
 
 ### <a name="example"></a>Örnek
 
@@ -286,7 +286,7 @@ money_put( ) = "CAD1,000.12"
 
 ## <a name="string_type"></a>  money_put::string_type
 
-Tür karakterleri içeren bir dize açıklayan türü **CharType**.
+Türü karakterler içeren dizeyi tanımlayan tür `CharType`.
 
 ```cpp
 typedef basic_string<CharType, Traits, Allocator> string_type;
@@ -294,7 +294,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı uzmanlaşması türünü açıklayan [basic_string](../standard-library/basic-string-class.md) olan nesneleri kaynak serisinden öğelerin sıralarının depolayabilirsiniz.
+Türü tanımlayan Şablon sınıfı bir alt uzmanlaşması [basic_string](../standard-library/basic-string-class.md) kaynak dizisindeki öğelerin sıralarının, nesneleri depolayabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

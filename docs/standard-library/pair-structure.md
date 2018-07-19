@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef0be002676860acb4f55d989416114ec23ce809
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4ad86773fdc78f3cb8d5219ce14919a035755f3b
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854437"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955338"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 
-İki nesne tek bir nesne olarak davran olanağı sağlayan bir yapı.
+İki nesne tek bir nesne olarak değerlendir olanağı sağlayan bir yapı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,25 +54,25 @@ struct pair
 
 ### <a name="parameters"></a>Parametreler
 
-`Val1` İlk öğesi başlatma değeri `pair`.
+*Val1* ilk öğesi başlatma değeri `pair`.
 
-`Val2` İkinci öğe olarak başlatılıyor değeri `pair`.
+*Val2* ikinci öğesini başlatma değeri `pair`.
 
-`Right` Başka bir çifti öğelerini başlatmak için kullanılacak değerleri olan çifti.
+*Sağ* değerleri olan başka bir çifti öğelerini başlatmak için kullanılacak bir çifti.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İlk (varsayılan) Oluşturucu ilk öğe türü için varsayılan çiftinin başlatır **T1** ve ikinci öğe türü varsayılan **T2**.
+İlk Oluşturucu (varsayılan) ilk öğe türünün varsayılan çiftinin başlatır `T1` ve ikinci öğe türünün varsayılan `T2`.
 
-İkinci oluşturucu çiftine ilk öğesi başlatır `Val1` ve için ikinci *değer2.*
+İkinci oluşturucu çifti için ilk öğesini başlatan *Val1* ve için ikinci *Val2.*
 
-Üçüncü (şablonu) Oluşturucu çiftine ilk öğesi başlatır `Right`. **İlk** ve için ikinci `Right`. **İkinci**.
+Üçüncü (şablon) Oluşturucu çifti için ilk öğesini başlatan `Right`. **İlk** ve için ikinci `Right`. **İkinci**.
 
-Dördüncü Oluşturucu çiftine ilk öğesi başlatır `Val1` ve için ikinci *değer2* kullanarak [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Dördüncü Oluşturucu çifti için ilk öğesini başlatan *Val1* ve için ikinci *Val2* kullanarak [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapısı türündeki nesneleri çifti depolar **T1** ve **T2**sırasıyla. Türü **first_type** şablon parametresi aynı **T1** ve türü **second_type** şablon parametresi aynı **T2** . **T1** ve **T2** her yalnızca varsayılan bir oluşturucu, tek bağımsız değişkenli yapıcı ve bir yıkıcı sağlamanız. Türdeki tüm üyelerin `pair` türü olarak bildirilmiş için ortaktır bir `struct` yerine bir **sınıfı**. Bir çift iki en yaygın kullanımları olarak dönüş iki değer döndüren işlevler için ve ilişkilendirilebilir kapsayıcı sınıfları için öğeleri olarak türleridir [map sınıfı](../standard-library/map-class.md) ve [multimap sınıfı](../standard-library/multimap-class.md) hem bir anahtara sahip ve bir her öğeyle ilişkili değer türü. İkinci bir çifti ilişkilendirilebilir kapsayıcı gereksinimlerini karşılayan ve form değer türüne sahip `pair` <  **const**`key_type`, `mapped_type`>.
+Şablon yapı türündeki nesnelerin bir çift depolar `T1` ve `T2`sırasıyla. Türü `first_type` şablon parametresi ile aynı `T1` türü `second_type` şablon parametresi ile aynı `T2`. `T1` ve `T2` her yalnızca bir varsayılan oluşturucu, bir tek bağımsız değişkenli oluşturucu ve yıkıcı sağlamanız. Türün tüm üyeleri `pair` türü olarak bildirildiği için ortak olan bir `struct` yerine bir **sınıfı**. İki en yaygın kullanım için bir çift ilişkilendirilebilir bir kapsayıcı sınıfları için öğeleri olarak ve iki değer döndüren işlevleri için olarak dönüş türleri olan [map sınıfı](../standard-library/map-class.md) ve [multimap sınıfı](../standard-library/multimap-class.md) hem bir anahtar olması ve Her bir öğeyle ilişkili değer türü. İkinci bir çift ilişkilendirilebilir kapsayıcıdır gereksinimlerini karşılayan ve biçiminde bir değer türünde `pair` <  **const**`key_type`, `mapped_type`>.
 
 ## <a name="example"></a>Örnek
 

@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d4368fa2b88d22f0b07bc10bba4769d05375041
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 316ffdee4905ff8a35baef7137ff7f28a2846786
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859257"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38958198"
 ---
 # <a name="istriviallymoveconstructible-class"></a>is_trivially_move_constructible sınıfı
 
-Önemsiz türündeyse testleri Oluşturucusu taşıyın.
+Taşıma Oluşturucu türü, Önemsiz varsa testleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,29 +36,29 @@ struct is_trivially_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bir önemsiz taşıma oluşturucusu, aksi durumda olan bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu Önemsiz taşıma oluşturucusu, aksi takdirde sahip bir sınıftır.
 
-Bir sınıf için bir taşıma oluşturucusuna `Ty` deyimle varsa:
+Bir sınıf için bir taşıma Oluşturucusu *Ty* gereksizse, varsa:
 
-örtülü olarak bildirilen
+örtük olarak bildirilen
 
-parametre türleri örtük bir bildirimi gereksinimlerine eşdeğer
+Bu örtük bir bildirimi eşdeğer parametre türleri
 
-sınıf `Ty` hiçbir sanal işleve sahip
+sınıf *Ty* sahip sanal işlev yok
 
-sınıf `Ty` hiçbir sanal temellerine sahip
+sınıf *Ty* hiçbir sanal temellere sahip
 
-sınıfta hiç geçici olmayan statik veri üyeleri yok
+Geçici statik olmayan veri üyeleri sınıf yoktur
 
-tüm doğrudan taban sınıfının `Ty` Önemsiz taşıma oluşturucuları sahip
+tüm doğrudan tabanları sınıfının *Ty* Önemsiz taşıma oluşturucuları sahip
 
-sınıf türü tüm statik olmayan veri üyeleri sınıflarını Önemsiz taşıma oluşturucuları sahip
+Önemsiz taşıma oluşturucuları sınıfları sınıf türünün tüm statik olmayan veri üyelerinin olması
 
-sınıf türü dizisi tüm statik olmayan veri üyeleri sınıflarını Önemsiz taşıma oluşturucuları sahip
+Önemsiz taşıma oluşturucuları sınıflarını dizi sınıf türünde tüm statik olmayan veri üyelerine sahip
 
 ## <a name="requirements"></a>Gereksinimler
 

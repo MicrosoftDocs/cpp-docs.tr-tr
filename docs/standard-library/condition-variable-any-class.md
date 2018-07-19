@@ -28,16 +28,16 @@ helpviewer_keywords:
 - std::condition_variable_any::wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0fe38031dc215f537d82fe6e06f68acf6db8e0f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 56082c63ccc64e117d9962ff35dddc01969f403b
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847136"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38959238"
 ---
 # <a name="conditionvariableany-class"></a>condition_variable_any Sınıfı
 
-Bir sınıf kullanma `condition_variable_any` içeren bir olay için beklemeye `mutex` türü.
+Bir sınıf kullanma `condition_variable_any` içeren bir olay beklemek için `mutex` türü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,17 +51,17 @@ class condition_variable_any;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[condition_variable_any](#condition_variable_any)|Oluşturan bir `condition_variable_any` nesnesi.|
+|[condition_variable_any](#condition_variable_any)|Oluşturur bir `condition_variable_any` nesne.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[notify_all](#notify_all)|Bekleyen tüm iş parçacıklarının engelini kaldırır `condition_variable_any` nesnesi.|
-|[notify_one](#notify_one)|Bekleyen iş parçacıklarının birini engelini kaldırır `condition_variable_any` nesnesi.|
-|[bekleme](#wait)|Bir iş parçacığı engeller.|
-|[wait_for](#wait_for)|Bir iş parçacığı engeller ve daha sonra iş parçacığı engelini kaldırır bir zaman aralığı ayarlar.|
-|[wait_until](#wait_until)|Bir iş parçacığı engeller ve hangi iş parçacığı engelini kaldırır zamanında maksimum noktasını ayarlar.|
+|[notify_all](#notify_all)|İçin bekleyen tüm iş parçacıklarının engellemesinin kaldırıldığı `condition_variable_any` nesne.|
+|[notify_one](#notify_one)|İçin bekleyen iş parçacıklarının birinin engellemesini kaldırır `condition_variable_any` nesne.|
+|[bekleme](#wait)|Bir iş parçacığını engeller.|
+|[wait_for](#wait_for)|Bir iş parçacığını engeller ve sonrasında iş parçacığı engellemesinin kaldırıldığı bir zaman aralığı ayarlar.|
+|[wait_until](#wait_until)|Bir iş parçacığını engeller ve hangi iş parçacığı engellemesinin kaldırıldığı zaman maksimum noktası ayarlar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -71,7 +71,7 @@ class condition_variable_any;
 
 ## <a name="condition_variable_any"></a>  condition_variable_any::condition_variable_any Oluşturucusu
 
-Oluşturan bir `condition_variable_any` nesnesi.
+Oluşturur bir `condition_variable_any` nesne.
 
 ```cpp
 condition_variable_any();
@@ -79,11 +79,11 @@ condition_variable_any();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeterli bellek varsa, Oluşturucusu oluşturur bir [system_error](../standard-library/system-error-class.md) olan nesneyi bir `not_enough_memory` hata kodu. Başka bir kaynak kullanılabilir olmadığından nesne oluşturulamıyor, Oluşturucusu döndürürse bir `system_error` olan nesneyi bir `resource_unavailable_try_again` hata kodu.
+Yeterli bellek yoksa, oluşturucu oluşturur bir [system_error](../standard-library/system-error-class.md) nesnesi bir `not_enough_memory` hata kodu. Başka bir kaynak kullanılamadığından nesne oluşturulamıyorsa, oluşturucu oluşturur bir `system_error` nesnesi bir `resource_unavailable_try_again` hata kodu.
 
 ## <a name="notify_all"></a>  condition_variable_any::notify_all
 
-Bekleyen tüm iş parçacıklarının engelini kaldırır `condition_variable_any` nesnesi.
+İçin bekleyen tüm iş parçacıklarının engellemesinin kaldırıldığı `condition_variable_any` nesne.
 
 ```cpp
 void notify_all() noexcept;
@@ -91,7 +91,7 @@ void notify_all() noexcept;
 
 ## <a name="notify_one"></a>  condition_variable_any::notify_one
 
-Üzerinde bekleyen iş parçacığı birini engelini kaldırır `condition_variable_any` nesnesi.
+Bekleyen iş parçacıklarının birinin engellemesini kaldırır `condition_variable_any` nesne.
 
 ```cpp
 void notify_one() noexcept;
@@ -99,7 +99,7 @@ void notify_one() noexcept;
 
 ## <a name="wait"></a>  condition_variable_any::wait
 
-Bir iş parçacığı engeller.
+Bir iş parçacığını engeller.
 
 ```cpp
 template <class Lock>
@@ -111,15 +111,15 @@ void wait(Lock& Lck, Predicate Pred);
 
 ### <a name="parameters"></a>Parametreler
 
-`Lck` A `mutex` herhangi türde nesne.
+*Lck* A `mutex` herhangi bir türde nesne.
 
-`Pred` Döndüren herhangi bir ifade `true` veya `false`.
+*Pred* döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk yöntem engeller kadar `condition_variable_any` nesne için bir çağrı tarafından durdurulma [notify_one](../standard-library/condition-variable-class.md#notify_one) veya [notify_all](../standard-library/condition-variable-class.md#notify_all). Bu ayrıca spuriously uyandırmak.
+İlk yöntem engeller `condition_variable_any` nesnesine sinyal yollanana kadar [notify_one](../standard-library/condition-variable-class.md#notify_one) veya [notify_all](../standard-library/condition-variable-class.md#notify_all). Bu ayrıca uyanabilir.
 
-İkinci yöntem, aşağıdaki kodu yürürlükte yürütür.
+İkinci yöntem aşağıdaki kodu aslında çalıştırır.
 
 ```cpp
 while (!Pred())
@@ -128,7 +128,7 @@ while (!Pred())
 
 ## <a name="wait_for"></a>  condition_variable_any::wait_for
 
-Bir iş parçacığı engeller ve daha sonra iş parçacığı engelini kaldırır bir zaman aralığı ayarlar.
+Bir iş parçacığını engeller ve sonrasında iş parçacığı engellemesinin kaldırıldığı bir zaman aralığı ayarlar.
 
 ```cpp
 template <class Lock, class Rep, class Period>
@@ -140,23 +140,23 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 ### <a name="parameters"></a>Parametreler
 
-`Lck` A `mutex` herhangi türde nesne.
+*Lck* A `mutex` herhangi bir türde nesne.
 
-`Rel_time` A `chrono::duration` iş parçacığı önce geçen süreyi belirtir nesne uyanır.
+*Rel_time* A `chrono::duration` iş parçacığı süre miktarını belirten nesne uyanır.
 
-`Pred` Döndüren herhangi bir ifade `true` veya `false`.
+*Pred* döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk yöntem döndürür `cv_status::timeout` bekleme ne zaman sona ererse `Rel_time` geçti. Aksi durumda, yöntem döndürür `cv_status::no_timeout`.
+İlk yöntem döndürür `cv_status::timeout` bekleme *Rel_time* geçti. Aksi takdirde yöntem döndürür `cv_status::no_timeout`.
 
-İkinci yöntem değerini döndürür `Pred`.
+İkinci yöntem değerini döndürür *Pred*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk yöntem engeller kadar `condition_variable_any` nesne için bir çağrı tarafından durdurulma [notify_one](../standard-library/condition-variable-class.md#notify_one) veya [notify_all](../standard-library/condition-variable-class.md#notify_all), veya zaman aralığı kadar `Rel_time` geçti. Bu ayrıca spuriously uyandırmak.
+İlk yöntem engeller `condition_variable_any` nesnesine sinyal yollanana kadar [notify_one](../standard-library/condition-variable-class.md#notify_one) veya [notify_all](../standard-library/condition-variable-class.md#notify_all), veya zaman aralığı kadar *Rel_time* geçti. Bu ayrıca uyanabilir.
 
-İkinci yöntem, aşağıdaki kodu yürürlükte yürütür.
+İkinci yöntem aşağıdaki kodu aslında çalıştırır.
 
 ```cpp
 while(!Pred())
@@ -168,7 +168,7 @@ return true;
 
 ## <a name="wait_until"></a>  condition_variable_any::wait_until
 
-Bir iş parçacığı engeller ve hangi iş parçacığı engelini kaldırır zamanında maksimum noktasını ayarlar.
+Bir iş parçacığını engeller ve hangi iş parçacığı engellemesinin kaldırıldığı zaman maksimum noktası ayarlar.
 
 ```cpp
 template <class Lock, class Clock, class Duration>
@@ -192,23 +192,23 @@ void wait_until(
 
 ### <a name="parameters"></a>Parametreler
 
-`Lck` Mutex nesnesi.
+*Lck* mutex nesnesi.
 
-`Abs_time` A [chrono::time_point](../standard-library/time-point-class.md) nesnesi.
+*Abs_time* A [chrono::time_point](../standard-library/time-point-class.md) nesne.
 
-`Pred` Döndüren herhangi bir ifade `true` veya `false`.
+*Pred* döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndüren yöntemler bir `cv_status` yazın return `cv_status::timeout` bekleme ne zaman sona ererse `Abs_time` sona erdiğinde. Aksi takdirde, yöntemleri döndürür `cv_status::no_timeout`.
+Döndüren yöntemler bir `cv_status` türünü `cv_status::timeout` bekleme *Abs_time* geçen. Aksi takdirde, yöntemlerin dönüş `cv_status::no_timeout`.
 
-Döndüren yöntemler bir `bool` değeri döndürmesi `Pred`.
+Döndüren yöntemler bir `bool` dönüş değeri *Pred*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk yöntem engeller kadar `condition_variable` nesne için bir çağrı tarafından durdurulma [notify_one](../standard-library/condition-variable-class.md#notify_one) veya [notify_all](../standard-library/condition-variable-class.md#notify_all), veya kadar `Abs_time`. Bu ayrıca spuriously uyandırmak.
+İlk yöntem engeller `condition_variable` nesnesine sinyal yollanana kadar [notify_one](../standard-library/condition-variable-class.md#notify_one) veya [notify_all](../standard-library/condition-variable-class.md#notify_all), veya kadar *Abs_time*. Bu ayrıca uyanabilir.
 
-İkinci yöntem, aşağıdaki kodu yürürlükte yürütür.
+İkinci yöntem aşağıdaki kodu aslında çalıştırır.
 
 ```cpp
 while(!Pred())
@@ -218,7 +218,7 @@ while(!Pred())
 return true;
 ```
 
-Bir nesne türü için bir işaretçi üçüncü ve dördüncü yöntemleri kullanın `xtime` değiştirmek için `chrono::time_point` nesnesi. `xtime` Nesnesini bir sinyal için beklenecek en uzun süreyi belirtir.
+Üçüncü ve dördüncü yöntemler türünde bir nesne için bir işaretçi kullanın `xtime` değiştirilecek `chrono::time_point` nesne. `xtime` Nesnesini bir sinyal için beklenecek en uzun süreyi belirtir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

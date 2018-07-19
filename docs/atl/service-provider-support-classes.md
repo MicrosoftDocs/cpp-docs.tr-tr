@@ -16,18 +16,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19dc0b9b22c35f29da43d17ecd3d6e53d23e562f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c1bb3d3436e9e5b1ad20c314817372ab632581f3
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361609"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38957897"
 ---
 # <a name="service-provider-support-classes"></a>Hizmet sağlayıcısı destek sınıfları
-Aşağıdaki sınıf hizmeti sağlayıcıları için destek sağlar:  
+Aşağıdaki sınıf hizmet sağlayıcıları için destek sağlar:  
   
--   [IServiceProviderImpl](../atl/reference/iserviceproviderimpl-class.md) GUID'sine tarafından belirtilen bir hizmeti bulur ve istenen arabirimi arabirim işaretçisi hizmette döndürür.  
+-   [Iserviceproviderımpl](../atl/reference/iserviceproviderimpl-class.md) GUID'sine tarafından belirtilen bir hizmet bulur ve hizmette istenen arabirim için arabirim işaretçisini döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

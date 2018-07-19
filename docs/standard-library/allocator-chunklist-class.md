@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aaa7b01fe4008089cb8a773fc866d62a269ae717
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 20e601608b1a6b0f076040c10e027f7dc78db17a
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850515"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955364"
 ---
 # <a name="allocatorchunklist-class"></a>allocator_chunklist Sınıfı
 
-Depolama ayırma ve için bir önbellek türü kullanarak nesneleri serbest bırakma yöneten bir nesneyi tanımlayan [cache_chunklist](../standard-library/cache-chunklist-class.md).
+Depolama ayırmayı ve boşaltmayı kullanarak bir önbellek türü nesneler için yöneten bir nesneyi tanımlayan [cache_chunklist](../standard-library/cache-chunklist-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,18 +40,18 @@ class allocator_chunklist;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Type`|Ayırıcı tarafından ayrılan öğelerin türü.|
+|*Türü*|Ayırıcı tarafından ayrılan öğelerin türü.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) makrosu geçirir bu sınıfı olarak `name` aşağıdaki ifadeyi parametresinde: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) makrosu bu sınıfı olarak geçirir *adı* aşağıdaki deyim parametresi: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

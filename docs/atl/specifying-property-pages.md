@@ -17,31 +17,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8d4cbeaa8ea9a57f9287f2d2fe78c61884ba4a3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7119dca24a6b6ec5b66e52d7e2c01cd66985e764
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358931"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37848382"
 ---
 # <a name="specifying-property-pages"></a>Özellik sayfaları belirtme
-ActiveX denetimi oluşturduğunuzda, genellikle denetim özelliklerini ayarlamak için kullanılan özellik sayfaları ile ilişkilendirmek isteyeceksiniz. Denetim kapsayıcıları kullanma **ISpecifyPropertyPages** hangi özellik sayfaları denetiminizin özelliklerini ayarlamak için kullanılabilir çıkışı bulmak için arabirim. Denetiminizde bu arabirimini uygulaması gerekir.  
+ActiveX denetimi oluşturduğunuzda, genellikle, denetimin özelliklerini ayarlamak için kullanılan özellik sayfaları ile ilişkilendirilecek isteyeceksiniz. Denetim kapsayıcılar kullanım `ISpecifyPropertyPages` hangi özellik sayfaları denetimin özelliklerini ayarlamak için kullanılan çıkış bulmak için arabirim. Denetiminizi bu arabirimi uygulayan gerekecektir.  
   
- Uygulanacak **ISpecifyPropertyPages** ATL, kullanarak aşağıdaki adımları gerçekleştirin:  
+ Uygulamak için `ISpecifyPropertyPages` ATL, kullanarak aşağıdaki adımları atın:  
   
-1.  Sınıfından türetilen [ISpecifyPropertyPagesImpl](../atl/reference/ispecifypropertypagesimpl-class.md).  
+1.  Öğesinden, bir sınıf türetin [Ispecifypropertypagesımpl](../atl/reference/ispecifypropertypagesimpl-class.md).  
   
-2.  İçin bir giriş eklemek **ISpecifyPropertyPages** sınıfınızın COM eşlemesi için.  
+2.  Bir girdi ekleyin `ISpecifyPropertyPages` sınıfınızın COM eşlemesine.  
   
-3.  Ekleme bir [PROP_PAGE](reference/property-map-macros.md#prop_page) denetimi ile ilişkilendirilmiş her bir sayfa için özellik eşlemesi girişe.  
+3.  Ekleme bir [PROP_PAGE](reference/property-map-macros.md#prop_page) , denetimle ilişkili her sayfa için özellik eşleme girişi.  
   
 > [!NOTE]
->  Standart denetimini kullanarak oluştururken [ATL Denetim Sihirbazı](../atl/reference/atl-control-wizard.md), yalnızca eklemeniz gerekecektir `PROP_PAGE` özellik eşlemesi girişlere. Sihirbazın diğer adımlar için gerekli kod oluşturur.  
+>  Kullanarak bir standart denetim oluştururken [ATL denetimi Sihirbazı](../atl/reference/atl-control-wizard.md), yalnızca PROP_PAGE girişleri için özellik eşlemesi eklemeniz gerekir. Sihirbazın diğer adımlar için gerekli kodu oluşturur.  
   
- Uyum gösteren kapsayıcıları görüntüler belirtilen özellik sayfaları aynı sırada `PROP_PAGE` girişleri özellik eşlemesi. Böylece kullanıcılar ilk denetiminize belirli sayfalara bakın genel olarak, standart özellik sayfası girişleri sonra girişleri özel sayfalarınızda özellik eşlemesi için moduna geçirmelisiniz.  
+ Uyum gösteren kapsayıcıları aynı sırada özellik eşlemesi PROP_PAGE girişleri olarak belirtilen özellik sayfalarını görüntüler. Böylece kullanıcı denetiminiz için belirli sayfalara ilk bakın genellikle, standart özellik sayfa girdileri girişleri sonra özel sayfalarınızı özellik eşlemesi için koymanız gerekir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki sınıf bir takvim için kullandığı kontrol **ISpecifyPropertyPages** arabirimi özelliklerini özel tarih sayfası ve stok renk sayfası kullanılarak ayarlanabilir kapsayıcıları söyleyin.  
+ Şu sınıf için bir Takvim denetimi kullanan `ISpecifyPropertyPages` özelliklerini, özel tarih sayfası ve rengi stok sayfası kullanılarak ayarlanabilir kapsayıcıları bildirmek için arabirim.  
   
  [!code-cpp[NVC_ATL_Windowing#72](../atl/codesnippet/cpp/specifying-property-pages_1.h)]  
   

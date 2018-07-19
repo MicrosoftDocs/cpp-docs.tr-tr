@@ -14,19 +14,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 935898197455715160e463d1b272e55ab368eab1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cabc805f826c0e4d89fc9506e6a019632bdcd8c8
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841519"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956252"
 ---
 # <a name="container-classconstreference"></a>Kapsayıcı Sınıfı::const_reference
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Öğenin denetimli dizisi sabit bir başvuru olarak hizmet verebilir nesneyi açıklar.
+Denetlenen dizinin bir öğe için sabit bir başvuru olarak hizmet verebilen bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,7 +37,7 @@ typedef T3 const_reference;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bunu açıklanan burada belirtilmemiş türler eşanlamlısı olarak **T3** (genellikle **Alloc::const_reference**).
+Açıklanmıştır belirtilmeyen türünün eşanlamlısı olarak burada `T3` (genellikle `Alloc::const_reference`).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

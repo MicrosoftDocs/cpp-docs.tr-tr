@@ -1,5 +1,5 @@
 ---
-title: '&lt;deque&gt; işleçleri | Microsoft Docs'
+title: '&lt;deque&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,23 +20,23 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: d4dfa6963e9c8194bd4ee589a1a0adced1f05d0d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 21fdf5e624634a29d8ed32e004e7fb0d653b86f1
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846850"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38955221"
 ---
 # <a name="ltdequegt-operators"></a>&lt;deque&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Deque nesne işlecinin sol tarafındaki sağ tarafında deque nesnesine eşit değilse testleri.
+İşlecin sol tarafındaki deque nesne işlecin sağ tarafındaki deque nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>& right);
@@ -44,17 +44,17 @@ bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `deque`.
+*Sol* türünde bir nesne `deque`.
 
-`right` Türünde bir nesne `deque`.
+*doğru* türünde bir nesne `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** deque nesneleri eşit; değilse **false** deque nesneleri eşit olması durumunda.
+**doğru** deque nesneleri eşit; değilse, **false** deque nesneler eşit ise.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Deque nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki deque nesneleri aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Deque nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki deque nesneleri, bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerleri eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -82,9 +82,9 @@ The deques are not equal.
 *\
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Deque nesne işlecinin sol tarafındaki sağ tarafında deque nesne küçükse testleri.
+İşlecin sol tarafındaki deque nesnesinin işlecin sağ tarafındaki deque nesneden küçük olup olmadığını sınar.
 
 ```cpp
 bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>& right);
@@ -92,17 +92,17 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `deque`.
+*Sol* türünde bir nesne `deque`.
 
-`right` Türünde bir nesne `deque`.
+*doğru* türünde bir nesne `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki deque ve değil işlecinin sağ tarafında deque eşit; Aksi takdirde düşükse **false**.
+**doğru** işlecinin sol tarafındaki deque daha ve değil işlecin sağ tarafındaki deque eşit Aksi takdirde küçükse **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Deque nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Küçüktür-iki nesne arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını alan daha.
+Deque nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Daha az-iki nesne arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
 
 ### <a name="example"></a>Örnek
 
@@ -134,9 +134,9 @@ Deque c1 is less than deque c2.
 *\
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Deque işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında deque nesnesine eşit veya daha az olur.
+Deque işlecinin sol tarafında nesne küçük olup olmadığını sınar deque nesnesine eşit veya işlecin sağ tarafındaki.
 
 ```cpp
 bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>& right);
@@ -144,17 +144,17 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `deque`.
+*Sol* türünde bir nesne `deque`.
 
-`right` Türünde bir nesne `deque`.
+*doğru* türünde bir nesne `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki deque veya deque işlecinin sağ tarafında eşit; Aksi takdirde düşükse **false**.
+**doğru** işlecinin sol tarafındaki deque daha veya işlecin sağ tarafındaki deque eşittir; Aksi takdirde küçükse **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Deque nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki nesne arasındaki ilişki için küçük veya eşittir ilk çiftlerini eşit olmayan bir karşılaştırmasını temel alır.
+Deque nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki nesne arasındaki ilişki için daha az veya eşit ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
 
 ### <a name="example"></a>Örnek
 
@@ -187,9 +187,9 @@ Deque c1 is less than or equal to deque c2.
 
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Deque nesne işlecinin sol tarafındaki sağ tarafında deque nesnesine eşitse testleri.
+İşlecin sol tarafındaki deque nesnesinin işlecin sağ tarafındaki deque nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>& right);
@@ -197,17 +197,17 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `deque`.
+*Sol* türünde bir nesne `deque`.
 
-`right` Türünde bir nesne `deque`.
+*doğru* türünde bir nesne `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** deque işlecinin sol tarafındaki işlecinin sağ tarafında deque eşit; tersi durumda ise **false**.
+**doğru** deque işlecinin sol tarafındaki ise, aksi takdirde işlecin sağ tarafındaki deque eşit **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Deque nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki deques aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+Deque nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki deques eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -243,9 +243,9 @@ The deques are not equal.
 
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
-Deque nesne işlecinin sol tarafındaki sağ tarafında deque nesne büyükse testleri.
+İşlecin sol tarafındaki deque nesnesinin işlecin sağ tarafındaki deque nesneden büyük olup olmadığını sınar.
 
 ```cpp
 bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>& right);
@@ -253,17 +253,17 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `deque`.
+*Sol* türünde bir nesne `deque`.
 
-`right` Türünde bir nesne `deque`.
+*doğru* türünde bir nesne `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** deque işlecinin sol tarafındaki işlecinin sağ tarafında deque büyük; tersi durumda ise **false**.
+**doğru** işlecinin sol tarafındaki deque ise, aksi takdirde deque işlecin sağ tarafındaki büyük **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Deque nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Büyük-iki nesne arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını alan daha.
+Deque nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyük-iki nesne arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
 
 ### <a name="example"></a>Örnek
 
@@ -297,9 +297,9 @@ Deque c1 is greater than deque c2.
 
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Deque işlecinin sol tarafındaki sağ tarafında deque nesnesine eşit veya daha büyük bir nesneyse testleri.
+İşlecin sol tarafındaki deque nesnesinin değerinden büyük veya işlecin sağ tarafındaki deque nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>& right);
@@ -307,17 +307,17 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `deque`.
+*Sol* türünde bir nesne `deque`.
 
-`right` Türünde bir nesne `deque`.
+*doğru* türünde bir nesne `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki deque daha büyük veya eşit işlecinin sağ tarafında deque; tersi durumda ise **false**.
+**doğru** işlecinin sol tarafındaki deque büyüktür veya eşittir işlecin sağ tarafındaki deque; tersi durumda ise **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Deque nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Büyük veya ona eşit iki nesne arasındaki ilişki için ilk çiftlerini eşit olmayan bir karşılaştırmasını temel alır.
+Deque nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyüktür veya eşittir iki nesne arasındaki ilişki için ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
 
 ### <a name="example"></a>Örnek
 

@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1151464d4f2d863f8cdc30191199c0606d58b8f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 58599777f3e680b7ea124d9e9dfa427fd55b4051
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852396"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38956940"
 ---
 # <a name="negate-struct"></a>negate Yapısı
 
-Aritmetik değilleme işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi (birli `operator-`) bağımsız değişkeni üzerinde.
+Aritmetik olumsuzlama işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (birli `operator-`) bağımsız değişken üzerinde.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,13 +49,13 @@ struct negate<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type` Destekleyen herhangi bir türü bir `operator-` belirtilen veya çıkarsanan türünde işleneni alır.
+*Tür* destekleyen herhangi bir türü bir `operator-` belirtilen veya çıkarsanan türünde bir işlenen alan.
 
-`Left` Tasarruflarını için işlenen. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `Type`.
+*Sol* işlenen negatif. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *türü*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `-Left.` özelleşmiş şablon birli tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator-`.
+Sonucu `-Left.` özelleşmiş şablon birli tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator-`.
 
 ## <a name="example"></a>Örnek
 
@@ -101,7 +101,7 @@ The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

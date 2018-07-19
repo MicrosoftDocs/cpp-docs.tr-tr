@@ -15,21 +15,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 760a595274ba7a1901138cc0cceceddf97122725
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2457d6e94677c43985cadf8ca49a176a82566b6a
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353969"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847875"
 ---
 # <a name="aggregation"></a>Toplama
-Ne zaman nesnenin uygulayıcıya başka önceden oluşturulmuş nesnesi tarafından sunulan hizmetler yararlanmak istersiniz zamanlar vardır. Ayrıca, bu ikinci nesnenin ilk doğal bir parçası olarak görünmesini ister. COM başarır hem de bu hedeflerinden kapsama ve toplama.  
+Bir nesnenin uygulamacının başka bir, önceden oluşturulmuş bir nesne tarafından sunulan hizmetler yararlanmak için ne zaman istediğiniz zamanlar vardır. Ayrıca, bu ikinci nesne ilk doğal bir parçası olarak görünmesini istediğiniz. COM, her ikisi de elde eder, bu hedefleri kapsama ve toplama.  
   
- Toplama içeren (Dış) nesne kapsanan (iç), oluşturma işleminin bir parçası olarak oluşturur ve iç nesneyi arabirimleri dış tarafından sunulan anlamına gelir. Bir nesne veya toplanabilir olması kendisine sağlar. İse, toplama düzgün çalışması için belirli kurallar izlemelisiniz.  
+ Toplama içeren (Dış) nesnenin içerdiği (iç), oluşturma işleminin bir parçası olarak oluşturur ve arabirimler iç nesne dış tarafından sunulan anlamına gelir. Bir nesne kendisine veya bir araya toplanabilir olmasını sağlar. İse, düzgün çalışması Toplama için belirli kuralları izlemelidir.  
   
- Öncelikle, tüm **IUnknown** kapsanan nesne yöntemi çağrılarını içeren nesneye temsilci gerekir.  
+ Öncelikle, tüm `IUnknown` kapsanan nesne üzerinde yöntem çağrılarını içeren nesneye temsilci gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [COM giriş](../atl/introduction-to-com.md)   
+ [COM'a giriş](../atl/introduction-to-com.md)   
  [Nesneleri yeniden kullanma](http://msdn.microsoft.com/library/windows/desktop/ms678443)
 

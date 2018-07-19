@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06b2f8338756b24971fcdf9a89b055272ee261bd
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 80e89573e67113900db7b35ffe3f1189de1c524a
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955527"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336338"
 ---
 # <a name="cctrlview-class"></a>CCtrlView sınıfı
-Windows 98 ve Windows NT tarafından 3.51 ve sonraki sürümlerde desteklenen ortak denetimleri için belge görünüm mimarisi uyum sağlar.  
+Belge / görünüm mimarisi için Windows 98 ve Windows NT tarafından 3.51 sürümü ve sonraki sürümlerde desteklenen ortak denetimlere uyum sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,24 +48,24 @@ class CCtrlView : public CView
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCtrlView::CCtrlView](#cctrlview)|Oluşturan bir `CCtrlView` nesnesi.|  
+|[CCtrlView::CCtrlView](#cctrlview)|Oluşturur bir `CCtrlView` nesne.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCtrlView::OnDraw](#ondraw)|Belirtilen cihaz bağlamı kullanma çizmek için çerçevesi tarafından çağrılır.|  
-|[CCtrlView::PreCreateWindow](#precreatewindow)|Bu bağlı Windows penceresi oluşturulmasını önce adlı `CCtrlView` nesnesi.|  
+|[CCtrlView::OnDraw](#ondraw)|Belirtilen bir cihaz bağlamı kullanma çizmek için framework tarafından çağırılır.|  
+|[CCtrlView::PreCreateWindow](#precreatewindow)|Şuna bağlı Windows penceresi oluşturulmasını önce çağırılır `CCtrlView` nesne.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCtrlView::m_dwDefaultStyle](#m_dwdefaultstyle)|View sınıfı için varsayılan stili içerir.|  
-|[CCtrlView::m_strClass](#m_strclass)|View sınıfı Windows sınıf adı içeriyor.|  
+|[CCtrlView::m_dwDefaultStyle](#m_dwdefaultstyle)|Görünüm sınıfı için varsayılan stili içerir.|  
+|[CCtrlView::m_strClass](#m_strclass)|Görünüm sınıfını Windows sınıf adı içeriyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıf `CCtrlView` ve türevleri, [CEditView](../../mfc/reference/ceditview-class.md), [CListView](../../mfc/reference/clistview-class.md), [CTreeView](../../mfc/reference/ctreeview-class.md), ve [CRichEditView](../../mfc/reference/cricheditview-class.md), uyarlama Belge görünüm mimarisi yeni ortak denetimleri için Windows 95/98 ve Windows NT 3.51 ve sonraki sürümlerde desteklenir. Belge görünüm mimarisi hakkında daha fazla bilgi için bkz: [belge/görünüm mimarisinin](../../mfc/document-view-architecture.md).  
+ Sınıf `CCtrlView` ve kendi türevleri [CEditView](../../mfc/reference/ceditview-class.md), [CListView](../../mfc/reference/clistview-class.md), [CTreeView](../../mfc/reference/ctreeview-class.md), ve [CRichEditView](../../mfc/reference/cricheditview-class.md), uyum Belge / görünüm mimarisi yeni ortak denetimleri için Windows 95/98 ve Windows NT 3.51 sürümü ve sonraki sürümlerde desteklenir. Belge / görünüm mimarisi hakkında daha fazla bilgi için bkz. [belge/görünüm mimarisi](../../mfc/document-view-architecture.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -82,7 +82,7 @@ class CCtrlView : public CView
  **Başlık:** afxwin.h  
   
 ##  <a name="cctrlview"></a>  CCtrlView::CCtrlView  
- Oluşturan bir `CCtrlView` nesnesi.  
+ Oluşturur bir `CCtrlView` nesne.  
   
 ```  
 CCtrlView(
@@ -92,33 +92,33 @@ CCtrlView(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszClass*  
- View sınıfı Windows sınıfı adı.  
+ Windows sınıf adı görünüm sınıfı.  
   
  *dwStyle*  
- View sınıfı stili.  
+ Görünüm sınıfını stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeni bir çerçeve penceresi oluşturulduğunda veya bir pencereyi bölmek framework Oluşturucusu çağırır. Geçersiz kılma [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) belge eklendikten sonra Görünüm başlatılamadı. Çağrı [CWnd::Create](../../mfc/reference/cwnd-class.md#create) veya [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) Windows nesnesi oluşturulamıyor.  
+ Framework, yeni bir çerçeve penceresi oluşturulduğunda veya bir pencereyi bölme oluşturucuyu çağırır. Geçersiz kılma [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) belgeye eklendikten sonra Görünüm başlatılamadı. Çağrı [CWnd::Create](../../mfc/reference/cwnd-class.md#create) veya [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) Windows nesneyi oluşturmak için.  
   
 ##  <a name="m_strclass"></a>  CCtrlView::m_strClass  
- View sınıfı Windows sınıf adı içeriyor.  
+ Görünüm sınıfını Windows sınıf adı içeriyor.  
   
 ```  
 CString m_strClass;  
 ```  
   
 ##  <a name="m_dwdefaultstyle"></a>  CCtrlView::m_dwDefaultStyle  
- View sınıfı için varsayılan stili içerir.  
+ Görünüm sınıfı için varsayılan stili içerir.  
   
 ```  
 DWORD m_dwDefaultStyle;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir pencere oluşturulduğunda bu stili uygulanır.  
+ Bir pencere oluşturulduğunda bu stil uygulanır.  
   
 ##  <a name="ondraw"></a>  CCtrlView::OnDraw  
- İçeriğini çizmek için çerçevesi tarafından çağrılır `CCtrlView` belirtilen cihaz bağlamı kullanma nesne.  
+ İçeriği çizmek için framework tarafından çağırılır `CCtrlView` belirtilen bir cihaz bağlamı kullanma nesne.  
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -129,10 +129,10 @@ virtual void OnDraw(CDC* pDC);
  Çizim oluştuğu cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnDraw` ekran görüntüsü, tarafından belirtilen bir ekran cihaz bağlamı geçirme için genellikle adlı *pDC*.  
+ `OnDraw` ekran görüntüsü, ekran, tarafından belirtilen bir cihaz bağlamı geçirme için genellikle adlı *pDC*.  
   
 ##  <a name="precreatewindow"></a>  CCtrlView::PreCreateWindow  
- Bu bağlı Windows penceresi oluşturulmasını önce adlı `CWnd` nesnesi.  
+ Şuna bağlı Windows penceresi oluşturulmasını önce çağırılır `CWnd` nesne.  
   
 ```  
 virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
@@ -143,16 +143,16 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
  A [CREATESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632603) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Pencere oluşturma devam etmesi gerekiyorsa sıfır olmayan; oluşturma hatası göstermek için 0'ı tıklatın.  
+ Pencere oluşturma devam etmelidir olursa sıfır dışı; oluşturma hatası göstermek için 0'ı tıklatın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hiçbir zaman doğrudan bu işlevini çağırın.  
+ Hiçbir zaman doğrudan bu işlevi çağırın.  
   
- Bu işlev varsayılan uygulaması denetler bir **NULL** pencere sınıfı adı ve uygun bir varsayılan değiştirir. Bu üye işlevini değiştirmek için geçersiz kılma `CREATESTRUCT` penceresi oluşturulmadan önce yapılandırın.  
+ Bu işlev varsayılan uygulaması için bir NULL pencere sınıf adı denetler ve uygun bir varsayılan yerini alır. Değiştirmek için bu üye işlevi geçersiz kılma `CREATESTRUCT` pencere oluşturulmadan önce yapılandırın.  
   
- Her sınıf türetilmiş `CCtrlView` , geçersiz kılma için kendi işlevsellik ekler `PreCreateWindow`. Tasarıma göre bu türetme, `PreCreateWindow` belirtilmeyen. Her sınıf ve stilleri birbirine uygun stilleri belirlemek için uygulamanızın taban sınıfı için MFC kaynak kodu inceleyebilirsiniz. Geçersiz kılmayı seçerseniz `PreCreateWindow`, uygulamanızın taban sınıf içinde kullanılan stiller MFC kaynak kodundan topladığınız bilgileri kullanarak gereksinim duyduğunuz işlevselliği sağlamak olup olmadığını belirleyebilirsiniz.  
+ Her sınıf için türetilen `CCtrlView` kendi işlevi için geçersiz kılma ekler `PreCreateWindow`. Tasarıma göre bu türetme, `PreCreateWindow` belirtilmeyen. Her bir sınıf ve stilleri birbirine uygun stilleri belirlemek için uygulamanızın temel sınıf için MFC kaynak kodu inceleyebilirsiniz. Geçersiz kılmayı seçerseniz `PreCreateWindow`, uygulamanızın temel sınıfta kullanılan stilleri MFC kaynak kodundan topladığınız bilgileri kullanarak gereksinim duyduğunuz işlevselliğini sağlamak olup olmadığını belirleyebilirsiniz.  
   
- Pencere stilleri değiştirme hakkında daha fazla bilgi için bkz: [miktar MFC tarafından oluşturulan bir pencere stillerini değiştirme](../../mfc/changing-the-styles-of-a-window-created-by-mfc.md).  
+ Pencere stilleri değiştirme hakkında daha fazla bilgi için bkz. [penceresinde oluşturulan MFC tarafından stillerini değiştirme](../../mfc/changing-the-styles-of-a-window-created-by-mfc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CView sınıfı](../../mfc/reference/cview-class.md)   
