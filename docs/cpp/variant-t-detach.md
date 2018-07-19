@@ -19,17 +19,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b53d6dc51117ffe9b82511c6084e36bc49873b88
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f71257b369e7833f279c0f68ce33e0ec925ebf6b
+ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421958"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39026266"
 ---
 # <a name="varianttdetach"></a>_variant_t::Detach
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Kapsüllenmiş ayırır **değişken** bu nesneden `_variant_t` nesnesi.  
+ Kapsüllenmiş ayırır `VARIANT` bu nesneden `_variant_t` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,12 +40,12 @@ VARIANT Detach( );
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Kapsüllenmiş **değişken**.  
+ Kapsüllenmiş `VARIANT`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ayıklar ve kapsüllenmiş döndürür **değişken**, bu temizler `_variant_t` onu yok etme olmadan nesnesi. Bu üye işlevi kaldırır **değişken** kapsülleme ve ayarlar **VARTYPE** bu `_variant_t` nesnesine `VT_EMPTY`. Döndürülen yayın size olan **değişken** çağırarak [VariantClear](http://msdn.microsoft.com/en-us/28741d81-8404-4f85-95d3-5c209ec13835) işlevi.  
+ Ayıklar ve döndürür kapsüllenmiş `VARIANT`, bu temizler `_variant_t` yok olmadan nesne. Bu üye işlevi kaldırır `VARIANT` kapsülleme ve kümeleri `VARTYPE` bu `_variant_t` VT_EMPTY nesnesine. Döndürülen yayın size olan `VARIANT` çağırarak [VariantClear](http://msdn.microsoft.com/28741d81-8404-4f85-95d3-5c209ec13835) işlevi.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)
