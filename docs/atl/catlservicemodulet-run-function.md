@@ -18,26 +18,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a07ad6b09fa10a81b500625531226dc18fc6281a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e509ad88a744f6ebaaca41ecd0d6455d68c2585c
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355131"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37850660"
 ---
 # <a name="catlservicemoduletrun-function"></a>CAtlServiceModuleT::Run işlevi
-**Çalıştırma** çağrıları içeren `PreMessageLoop`, `RunMessageLoop`, ve `PostMessageLoop`. Çağrılan sonra `PreMessageLoop` ilk hizmetin iş parçacığı kimliği depolar Hizmetin kendisi göndererek kapatmak için bu kimliği kullanacağı bir **WM_QUIT** Win32 API işlevini kullanarak ileti [PostThreadMessage](http://msdn.microsoft.com/library/windows/desktop/ms644946).  
+`Run` yönelik çağrılar bulunur `PreMessageLoop`, `RunMessageLoop`, ve `PostMessageLoop`. Çağrılan sonra `PreMessageLoop` ilk hizmetin iş parçacığı kimliğini depolar. Hizmetinin kendisi Win32 API işlevini kullanarak bir WM_QUIT iletisi göndererek kapatmak için bu kimliği kullanacağı [PostThreadMessage](http://msdn.microsoft.com/library/windows/desktop/ms644946).  
   
- `PreMessageLoop` Daha sonra çağırır `InitializeSecurity`. Varsayılan olarak, `InitializeSecurity` çağrıları [CoInitializeSecurity](http://msdn.microsoft.com/library/windows/desktop/ms693736) herhangi bir kullanıcı, nesne erişimi olduğunu gelir güvenlik tanımlayıcısı NULL olarak ayarlayın.  
+ `PreMessageLoop` Daha sonra çağırır `InitializeSecurity`. Varsayılan olarak, `InitializeSecurity` çağrıları [CoInitializeSecurity](http://msdn.microsoft.com/library/windows/desktop/ms693736) güvenlik tanımlayıcısı NULL olarak ayarlamak, yani herhangi bir kullanıcı, nesneyi erişimi olduğunu.  
   
- Kendi güvenlik belirtmek için hizmet istemiyorsanız, geçersiz kılma `PreMessageLoop` ve çağrısı yok `InitializeSecurity`, ve COM ardından kayıt defteri güvenlik ayarlarını belirleyin. Kayıt defteri ayarlarını yapılandırmak için kolay bir yol olduğu [DCOMCNFG](../atl/dcomcnfg.md) daha sonra bu bölümde açıklanan yardımcı programı.  
+ Kendi güvenlik belirtmek için hizmet istemiyorsanız, geçersiz kılma `PreMessageLoop` ve Remove() çağırmayın `InitializeSecurity`, ve COM ardından kayıt defteri güvenlik ayarlarını belirleyin. Kayıt defteri ayarlarını yapılandırmak için kullanışlı bir yöntem, [DCOMCNFG](../atl/dcomcnfg.md) daha sonra bu bölümde açıklanan yardımcı programı.  
   
- Güvenlik belirlendikten sonra yeni istemciler için program bağlanabilmesi nesne COM ile kaydedilir. Son olarak, program çalıştığı ve program ileti bir döngüye girer Hizmet Denetim Yöneticisi (SCM) söyler. Hizmet kapatma sırasında çıkma bir ileti gönderir kadar program çalışmaya devam eder.  
+ Güvenlik belirlendikten sonra yeni istemcilerin programa bağlanabilmesi nesne COM ile kaydedilir. Son olarak, program çalıştığı ve programın bir ileti döngüsü girer Hizmet Denetimi Yöneticisi (SCM) bildirir. Bir hizmet kapanması bağlı çıkış iletisi gönderir kadar program çalışan kalır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hizmetleri](../atl/atl-services.md)   
  [CSecurityDesc sınıfı](../atl/reference/csecuritydesc-class.md)   
- [CSID sınıfı](../atl/reference/csid-class.md)   
+ [CSid sınıfı](../atl/reference/csid-class.md)   
  [CDacl sınıfı](../atl/reference/cdacl-class.md)   
  [CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#run)
 

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a54b4f4749e7865d793559a9cb5f475c1d57898
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 6c42f356cb323bb7690b6c39b1fc7bd9ce0485f3
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37078264"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37850595"
 ---
 # <a name="compareitemstruct-structure"></a>COMPAREITEMSTRUCT Yapısı
-`COMPAREITEMSTRUCT` Tanımlayıcıları ve bir sıralanmış, sahip tarafından çizilmiş liste kutusu veya açılan kutu iki öğe için uygulama tarafından sağlanan veri yapısı sağlar.  
+`COMPAREITEMSTRUCT` Tanımlayıcıları ve iki sıralanmış, özelleştirilmiş olarak çizilen bir liste kutusu veya birleşik giriş kutusu öğeleri için uygulama tarafından sağlanan veri yapısı sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,33 +42,33 @@ typedef struct tagCOMPAREITEMSTRUCT {
   
 #### <a name="parameters"></a>Parametreler  
  *CtlType*  
- **ODT_LISTBOX** (sahip çizim liste kutusu belirtir) veya **ODT_COMBOBOX** (sahip çizim birleşik giriş kutusu belirtir).  
+ (Bu bir sahip çizim liste kutusu belirtir) ODT_LISTBOX veya ODT_COMBOBOX (Bu bir özelleştirilmiş çizimli birleşik giriş kutusu belirtir).  
   
  *CtlID*  
- Liste kutusu veya birleşik giriş kutusu denetimi kimliği.  
+ Birleşik giriş kutusu ve liste kutusu denetimi kimliği.  
   
  *hwndItem*  
  Denetimin pencere tanıtıcısı.  
   
  *itemID1*  
- Liste kutusu veya birleşik giriş kutusu karşılaştırılan ilk öğenin dizini.  
+ Karşılaştırılan birleşik giriş kutusu ve liste kutusu ilk öğenin dizini.  
   
  *itemData1*  
- Karşılaştırılan ilk öğe için uygulama tarafından sağlanan verileri. Bu değer açılan veya liste kutusunu eklenen öğe çağrısı geçirildi.  
+ Karşılaştırılan ilk öğe için uygulama tarafından sağlanan verileri. Bu değer birleşik veya liste kutusuna eklenen öğe çağrı geçirildi.  
   
  *itemID2*  
- Liste kutusu veya açılan kutu karşılaştırılan ikinci öğenin dizini.  
+ Liste kutusu veya açılan kutusu karşılaştırılan ikinci öğenin dizini.  
   
  *itemData2*  
- Karşılaştırılan ikinci öğe için uygulama tarafından sağlanan verileri. Bu değer açılan veya liste kutusunu eklenen öğe çağrısı geçirildi.  
+ Karşılaştırılan ikinci öğe için uygulama tarafından sağlanan verileri. Bu değer birleşik veya liste kutusuna eklenen öğe çağrı geçirildi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Her bir uygulama bir sahip tarafından çizilmiş liste kutusu için yeni bir öğe ekler veya birleşik giriş kutusu oluşturulan ile **CBS_SORT** veya **LBS_SORT** stili Windows sahibi WM_COMPAREITEM ileti gönderir. *LParam* iletinin parametre içeren uzun bir işaretçi bir `COMPAREITEMSTRUCT` yapısı. İletiyi alır almaz, sahibi iki öğeyi karşılaştırır ve hangi öğesinin önce diğer sıralar belirten bir değer döndürür.  
+ Bir uygulama, bir sahip tarafından çizilmiş liste kutusu ya da birleşik giriş kutusu CBS_SORT veya LBS_SORT stil ile oluşturulan yeni bir öğe ekler. her Windows sahibi WM_COMPAREITEM ileti gönderir. *LParam* iletinin parametresi uzun bir işaretçi içeren bir `COMPAREITEMSTRUCT` yapısı. İletiyi alır almaz, sahibi iki öğeyi karşılaştıran ve hangi öğe diğerinden önce sıralar gösteren bir değer döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winuser.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CWnd::OnCompareItem](../../mfc/reference/cwnd-class.md#oncompareitem)
 

@@ -42,15 +42,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f59822504e317ee43ad7fb84345fa616fe72fae
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 2e42eceabcbe4e67e393b52b9dc3ab8e9ca7b280
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37038438"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853855"
 ---
 # <a name="cmfcribbonstatusbarpane-class"></a>CMFCRibbonStatusBarPane sınıfı
-`CMFCRibbonStatusBarPane` Sınıfı için Şerit durum çubuğu ekleyebileceğiniz bir Şerit öğesi uygular.  
+`CMFCRibbonStatusBarPane` Sınıfı bir Şerit durum çubuğuna ekleyebileceğiniz bir Şerit öğesi uygular.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -64,19 +64,19 @@ class CMFCRibbonStatusBarPane : public CMFCRibbonButton
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane](#cmfcribbonstatusbarpane)|Oluşturur ve başlatır bir `CMFCRibbonStatusBarPane` nesnesi.|  
+|[CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane](#cmfcribbonstatusbarpane)|Oluşturur ve başlatır bir `CMFCRibbonStatusBarPane` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonStatusBarPane::GetAlmostLargeText](#getalmostlargetext)|Kesmeden bölmesinde görüntülenen uzun metin dizesi tanımlayan bir dize döndürür.|  
+|[CMFCRibbonStatusBarPane::GetAlmostLargeText](#getalmostlargetext)|Kesmeden bölmesinde görüntülenen en uzun metin dizesi tanımlayan dizeyi döndürür.|  
 |[CMFCRibbonStatusBarPane::GetTextAlign](#gettextalign)|Metin hizalama geçerli ayarını döndürür.|  
-|[CMFCRibbonStatusBarPane::IsAnimation](#isanimation)|Animasyonun ediyor olup olmadığını belirler.|  
-|[CMFCRibbonStatusBarPane::IsExtended](#isextended)|Bölmesini Şerit durum çubuğu genişletilmiş alanında bulunup bulunmadığını belirler.|  
+|[CMFCRibbonStatusBarPane::IsAnimation](#isanimation)|Animasyon ediyor olup olmadığını belirler.|  
+|[CMFCRibbonStatusBarPane::IsExtended](#isextended)|Bölmesini Şerit durum çubuğuna genişletilmiş bölümünde bulunup bulunmadığını belirler.|  
 |[CMFCRibbonStatusBarPane::OnDrawBorder](#ondrawborder)|(Geçersiz kılmaları [CMFCRibbonButton::OnDrawBorder](../../mfc/reference/cmfcribbonbutton-class.md#ondrawborder).)|  
 |[CMFCRibbonStatusBarPane::OnFillBackground](#onfillbackground)|(Geçersiz kılmaları [CMFCRibbonButton::OnFillBackground](../../mfc/reference/cmfcribbonbutton-class.md#onfillbackground).)|  
-|[CMFCRibbonStatusBarPane::SetAlmostLargeText](#setalmostlargetext)|Kesmeden bölmesinde görüntülenen uzun metin dizesini tanımlar.|  
+|[CMFCRibbonStatusBarPane::SetAlmostLargeText](#setalmostlargetext)|Kesmeden bölmesinde görüntülenebilen en uzun metin dizesini tanımlar.|  
 |[CMFCRibbonStatusBarPane::SetAnimationList](#setanimationlist)|Animasyon için kullanılabilecek bir görüntü listesi bölmesine atar.|  
 |[CMFCRibbonStatusBarPane::SetTextAlign](#settextalign)|Metin hizalamasını ayarlar.|  
 |[CMFCRibbonStatusBarPane::StartAnimation](#startanimation)|Bölmesine atanan animasyonu başlatır.|  
@@ -86,10 +86,10 @@ class CMFCRibbonStatusBarPane : public CMFCRibbonButton
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonStatusBarPane::OnFinishAnimation](#onfinishanimation)|Bölmesine atanan animasyon durduğunda çerçevesi tarafından çağrılır.|  
+|[CMFCRibbonStatusBarPane::OnFinishAnimation](#onfinishanimation)|Bölmesine atanan animasyon durduğunda framework tarafından çağırılır.|  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek çeşitli yöntemleri kullanımı gösterilmiştir `CMFCRibbonStatusBarPane` sınıfı. Örnek nasıl oluşturulacağını gösteren bir `CMFCRibbonStatusBarPane` nesne, durum çubuğu bölmesinin etiketinin metin hizalamasını ayarlama, kesmeden durum çubuğu bölmesinde görüntülenen, durum çubuğu bölmesine eklemek için kullanılan bir görüntü listesi uzun metin tanımlayan bir Meti ve başlangıç animasyon.  
+ Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonStatusBarPane` sınıfı. Bu örnek nasıl oluşturulacağını gösterir. bir `CMFCRibbonStatusBarPane` nesne, durum çubuğu bölmesinin etiketin metin hizalamayı ayarlama, kesmeden durum çubuğu bölmesinde görüntülenen, durum çubuğu bölmesine eklemek için kullanılabilecek bir görüntü listesi en uzun metin tanımlayan bir Meti ve animasyon başlangıç.  
   
  [!code-cpp[NVC_MFC_RibbonApp#2](../../mfc/reference/codesnippet/cpp/cmfcribbonstatusbarpane-class_1.cpp)]  
   
@@ -106,7 +106,7 @@ class CMFCRibbonStatusBarPane : public CMFCRibbonButton
  **Başlık:** afxribbonstatusbarpane.h  
   
 ##  <a name="cmfcribbonstatusbarpane"></a>  CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane  
- Durum çubuğu bölmesinin nesnesinde oluşturun.  
+ Durum çubuğunda bir bölmesi nesnesi oluşturur.  
   
 ```  
 CMFCRibbonStatusBarPane(
@@ -137,25 +137,25 @@ CMFCRibbonStatusBarPane(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nCmdID*  
- Bölmesinde komut Kimliğini belirtir.  
+ Bölmenin komut Kimliğini belirtir.  
   
  [in] *lpszText*  
- Bölmesinde görüntülenecek metin dizesini belirtir.  
+ Bölmesinde görüntülenecek metin dizesi belirtir.  
   
  [in] *bIsStatic*  
- Varsa `TRUE`, durum bölmesi vurgulanmış veya tıklayarak seçilmedi.  
+ TRUE ise, durumu bölmesinde vurgulanmış veya olamaz tıklayarak seçili.  
   
  [in] *hIcon*  
- Bölmede gösterilecek bir simge için tanıtıcı belirtir.  
+ Bölmesinde görüntülenecek bir simge için bir tanıtıcı belirtir.  
   
  [in] *lpszAlmostLargeText*  
- Bölmede görüntülenen uzun metin dizesini belirtir.  
+ Bölmede görüntülenen en uzun metin dizesi belirtir.  
   
  [in] *hBmpAnimationList*  
  Animasyon için kullanılan bir görüntü listesi için bir tanıtıcı belirtir.  
   
  [in] *cxAnimation*  
- Animasyon için kullanılan görüntü listesinde simgesinin piksel cinsinden genişliğini belirtir.  
+ Piksel cinsinden görüntü listesinde animasyon için kullanılan simge genişliğini belirtir.  
   
  [in] *clrTrnsp*  
  Animasyon için kullanılan görüntü listesinde görüntüleri saydam rengini belirtir.  
@@ -164,24 +164,24 @@ CMFCRibbonStatusBarPane(
  Animasyon için kullanılan bir görüntü listesi kaynak Kimliğini belirtir.  
   
 ##  <a name="getalmostlargetext"></a>  CMFCRibbonStatusBarPane::GetAlmostLargeText  
- Durum çubuğu bölmesinin görüntüleyebilirsiniz uzun metin dizesini alır.  
+ Durum çubuğu bölmesini görüntülemek en uzun metin dizesi alır.  
   
 ```  
 LPCTSTR GetAlmostLargeText() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Durum çubuğu bölmesinin görüntüleyebilirsiniz uzun metin dizesi.  
+ Durum çubuğu bölmesini görüntülemek en uzun metin dizesi.  
   
 ##  <a name="gettextalign"></a>  CMFCRibbonStatusBarPane::GetTextAlign  
- Durum çubuğu bölmesinin etiketinin metin hizalaması geçerli ayarını alır.  
+ Durum çubuğu bölmesinin etiketin metin hizalamasını geçerli ayarını alır.  
   
 ```  
 int GetTextAlign() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Şunlardan biri olabilir geçerli metni hizalama:  
+ Aşağıdakilerden herhangi birini geçerli metin hizalama:  
   
 -   TA_LEFT  
   
@@ -190,24 +190,24 @@ int GetTextAlign() const;
 -   TA_RIGHT.  
   
 ##  <a name="isanimation"></a>  CMFCRibbonStatusBarPane::IsAnimation  
- Animasyonun ediyor olup olmadığını belirler.  
+ Animasyon ediyor olup olmadığını belirler.  
   
 ```  
 BOOL IsAnimation() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` animasyon devam ediyor `FALSE` Aksi takdirde.  
+ Animasyon sürüyorsa TRUE; FALSE Aksi takdirde.  
   
 ##  <a name="isextended"></a>  CMFCRibbonStatusBarPane::IsExtended  
- Bölmesini Şerit durum çubuğu genişletilmiş alanında bulunup bulunmadığını belirler.  
+ Bölmesini Şerit durum çubuğuna genişletilmiş bölümünde bulunup bulunmadığını belirler.  
   
 ```  
 BOOL IsExtended() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Durum çubuğu genişletilmiş alanı bölmesinde ise. `FALSE` Aksi takdirde.  
+ Durum çubuğu genişletilmiş alan bölmesi ise TRUE. FALSE Aksi takdirde.  
   
 ##  <a name="ondrawborder"></a>  CMFCRibbonStatusBarPane::OnDrawBorder  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -236,17 +236,17 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onfinishanimation"></a>  CMFCRibbonStatusBarPane::OnFinishAnimation  
- Bölmesine atanan animasyon sona erdiğinde framework bu yöntemi çağırır.  
+ Bölmesine atanan animasyonu bittiğinde framework bu yöntemi çağırır.  
   
 ```  
 virtual void OnFinishAnimation();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `StopAnimation` Yöntem çağrıları `OnFinishAnimation` animasyon sona erdiğinde verileri temizleme için kullanabileceğiniz yöntemi.  
+ `StopAnimation` Yöntem çağrıları `OnFinishAnimation` animasyonu bittiğinde verileri temizlemek için kullanabileceğiniz yöntemi.  
   
 ##  <a name="setalmostlargetext"></a>  CMFCRibbonStatusBarPane::SetAlmostLargeText  
- Kesmeden durum çubuğu bölmesinde görüntülenen uzun metin tanımlayın.  
+ Kesilme olmadan durum çubuğu bölmesinde görüntülenebilen en uzun metin tanımlayın.  
   
 ```  
 void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
@@ -254,13 +254,13 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszAlmostLargeText*  
- Durum çubuğu bölmesinin kesmeden gösterilebilir uzun dizeyi belirtir.  
+ Durum çubuğu bölmesi kesmeden gösterilebilir en uzun dizeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Metin boyutu kitaplığı hesaplar, *lpszAlmostLargeText* belirtir ve bölmesinde buna göre yeniden boyutlandırır. Bölmesinde hala sığmadığı metin kesilir.  
+ Kitaplığı metin boyutunu hesaplar, *lpszAlmostLargeText* belirtir ve bölmesinde buna göre yeniden boyutlandırır. Bunu hala bölmesinde uygun değilse, metin kesilecek.  
   
 ##  <a name="setanimationlist"></a>  CMFCRibbonStatusBarPane::SetAnimationList  
- Durum çubuğu bölmesine animasyon için kullanılabilecek bir görüntü listesi ekler.  
+ Animasyon için kullanılabilecek bir görüntü listesi durum çubuğu bölmesine ekler.  
   
 ```  
 void SetAnimationList(
@@ -279,19 +279,19 @@ BOOL SetAnimationList(
  Görüntü listesi için bir tanıtıcı belirtir.  
   
  [in] *cxAnimation*  
- Piksel cinsinden görüntü listesi çerçevede genişliğini belirtir.  
+ Görüntü listesi çerçevede piksel cinsinden genişliğini belirtir.  
   
  [in] *clrTransp*  
- Resim listesi saydam rengini belirtir.  
+ Görüntü listesi saydam rengini belirtir.  
   
  [in] *uiAnimationListResID*  
- Resim listesi kaynak Kimliğini belirtir.  
+ Görüntü listesi kaynak Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Resim listesi başarıyla durum çubuğu bölmesine bağlıysa; `FALSE` Aksi takdirde.  
+ Görüntü listesi durum çubuğu bölmesine başarıyla eklenirse TRUE; FALSE Aksi takdirde.  
   
 ##  <a name="settextalign"></a>  CMFCRibbonStatusBarPane::SetTextAlign  
- Durum çubuğu bölmesinin etiketinin metin hizalaması ayarlar.  
+ Durum çubuğu bölmesinin etiketin metin hizalamasını ayarlar.  
   
 ```  
 void SetTextAlign(int nAlign);
@@ -302,13 +302,13 @@ void SetTextAlign(int nAlign);
  Metin hizalamasını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- *nAlign* şu değerlerden biri olabilir:  
+ *nAlign* aşağıdaki değerlerden biri olabilir:  
   
-- `TA_LEFT`: hizalama sol  
+- TA_LEFT: sola hizalama  
   
-- `TA_CENTER:` Ortala  
+- TA_CENTER: Ortala  
   
-- `TA_RIGHT:` sağa hizalama  
+- TA_RIGHT: sağa hizalama  
   
 ##  <a name="startanimation"></a>  CMFCRibbonStatusBarPane::StartAnimation  
  Bölmesine atadığınız animasyonu başlatır.  
@@ -324,10 +324,10 @@ void StartAnimation(
  Animasyon kare hızı, milisaniye cinsinden belirtir.  
   
  [in] *nDuration*  
- Animasyon, milisaniye cinsinden yürütmek için ne kadar süreyle belirtir. -1 için sonsuz bir döngüde kullanın.  
+ Ne kadar süre, milisaniye cinsinden, animasyonun çalmaya belirtir. Sonsuz bir döngü için-1 değerini kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Arama yapmadan önce bir resim listesi için bir tanıtıcı belirtmelisiniz `StartAnimation` kullanarak `SetAnimationList`.  
+ Çağırmadan önce resim listesi için bir tanıtıcı belirtmelisiniz `StartAnimation` kullanarak `SetAnimationList`.  
   
 ##  <a name="stopanimation"></a>  CMFCRibbonStatusBarPane::StopAnimation  
  Durum çubuğu bölmesine atanan animasyon durdurur.  

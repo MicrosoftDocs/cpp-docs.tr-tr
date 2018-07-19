@@ -42,15 +42,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d078900c3436c2205905b92d651bab86e94db246
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 26837b4eda881bdf83e2f34f0c81a1b0e7034ffe
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039017"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851502"
 ---
 # <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl sınıfı
-Konumlandırılmış bir köprü Şerit'te uygular. Tıklattığınızda köprü bir Web sayfası açılır.  
+Şerit üzerinde konumlandırılmış bir köprü uygular. Düğmeyi tıklattığınızda köprüyü bir Web sayfası açılır.  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -65,7 +65,7 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl](#cmfcribbonlinkctrl)|Oluşturur ve başlatır bir `CMFCRibbonLinkCtrl` nesnesi.|  
+|[CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl](#cmfcribbonlinkctrl)|Oluşturur ve başlatır bir `CMFCRibbonLinkCtrl` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -73,7 +73,7 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
 |----------|-----------------|  
 |[CMFCRibbonLinkCtrl::CopyFrom](#copyfrom)|(Geçersiz kılmaları `CMFCRibbonButton::CopyFrom`.)|  
 |[CMFCRibbonLinkCtrl::GetCompactSize](#getcompactsize)|(Geçersiz kılmaları [CMFCRibbonButton::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).)|  
-|[CMFCRibbonLinkCtrl::GetLink](#getlink)|Köprü değerini döndürür.|  
+|[CMFCRibbonLinkCtrl::GetLink](#getlink)|Köprüyü değerini döndürür.|  
 |[CMFCRibbonLinkCtrl::GetRegularSize](#getregularsize)|(Geçersiz kılmaları [CMFCRibbonButton::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).)|  
 |[CMFCRibbonLinkCtrl::GetToolTipText](#gettooltiptext)|(Geçersiz kılmaları [CMFCRibbonButton::GetToolTipText](../../mfc/reference/cmfcribbonbutton-class.md#gettooltiptext).)|  
 |[CMFCRibbonLinkCtrl::IsDrawTooltipImage](#isdrawtooltipimage)|(Geçersiz kılmaları `CMFCRibbonButton::IsDrawTooltipImage`.)|  
@@ -82,10 +82,10 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
 |[CMFCRibbonLinkCtrl::OnMouseMove](#onmousemove)|(Geçersiz kılmaları `CMFCRibbonButton::OnMouseMove`.)|  
 |[CMFCRibbonLinkCtrl::OnSetIcon](#onseticon)||  
 |[CMFCRibbonLinkCtrl::OpenLink](#openlink)|Köprü belirtilen Web sayfasını açar.|  
-|[CMFCRibbonLinkCtrl::SetLink](#setlink)|Köprü değerini ayarlar.|  
+|[CMFCRibbonLinkCtrl::SetLink](#setlink)|Köprüyü değerini ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Köprü oluşturduktan sonra çağırarak bir paneline ekleme [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
+ Köprü oluşturduktan sonra çağırarak bir paneline Ekle [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md) [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)  
@@ -96,7 +96,7 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
  **Başlık:** afxRibbonLinkCtrl.h  
   
 ##  <a name="cmfcribbonlinkctrl"></a>  CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl  
- Oluşturur ve başlatır bir [CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md) nesnesi.  
+ Oluşturur ve başlatır bir [CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md) nesne.  
   
 ```  
 CMFCRibbonLinkCtrl(
@@ -107,16 +107,16 @@ CMFCRibbonLinkCtrl(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nID*  
- Bağlantı denetimi tıklatıldığında yürütür komutu komut Kimliğini belirtir.  
+ Bağlantı denetimi tıklandığında yürüten komutu komut Kimliğini belirtir.  
   
  [in] *lpszText*  
- Bağlantı denetimi görüntülenecek etiket belirtir.  
+ Bağlantı Denetimde görüntülenecek etiketi belirtir.  
   
  [in] *lpszLink*  
- Bağlantı denetimi ile ilişkilendirilmiş köprü belirtir.  
+ Bağlantı denetimi ile ilişkili köprü belirtir.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnek oluşturucusunun kullanımı gösterilmiştir `CMFCRibbonLinkCtrl` sınıfı. Bu kod parçacığını parçası olan [Şerit araçları örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek oluşturucusuna kullanımı gösterilmiştir `CMFCRibbonLinkCtrl` sınıfı. Bu kod parçacığı parçasıdır [Şerit araçları örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/cpp/cmfcribbonlinkctrl-class_1.cpp)]  
   
@@ -147,7 +147,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getlink"></a>  CMFCRibbonLinkCtrl::GetLink  
- Köprü değerini döndürür.  
+ Köprüyü değerini döndürür.  
   
 ```  
 LPCTSTR GetLink() const;  
@@ -250,13 +250,13 @@ BOOL OpenLink();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` ilişkili Web sayfasını başarıyla açıldı Aksi takdirde `FALSE`.  
+ İlişkili Web sayfasının başarıyla açıldı TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İle ilişkili köprü kullanarak bir web sayfası açılır `CMFCRibbonLinkCtrl` nesnesi.  
+ İle ilişkili köprü kullanarak bir Web sayfası açılır `CMFCRibbonLinkCtrl` nesne.  
   
 ##  <a name="setlink"></a>  CMFCRibbonLinkCtrl::SetLink  
- Köprü değerini ayarlar.  
+ Köprüyü değerini ayarlar.  
   
 ```  
 void SetLink(LPCTSTR lpszLink);

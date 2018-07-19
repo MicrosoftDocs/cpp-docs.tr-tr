@@ -15,59 +15,59 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c5e63e884a44b310330c05fc4a77e3e7f37bec5
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: bbd6e799998abcac650ee32dd86739c157f1035d
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34257106"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879478"
 ---
 # <a name="atl-functions"></a>ATL işlevleri
 
 
-ATL işlevi kategoriye göre bulmak için aşağıdaki konulara bakın.  
+Bir ATL işlevi kategoriye göre bulmak için aşağıdaki konulara bakın.  
   
  [ATL Yol İşlevleri](../../atl/reference/com-map-global-functions.md)  
  Dosya yolları işlemek için destek sağlar.
  
  [COM Eşlemesi Genel İşlevleri](../../atl/reference/com-map-global-functions.md)  
- COM eşlemesi için destek sağlayan **IUnknown** uygulamaları.  
+ COM eşlemesi için destek sağlamak `IUnknown` uygulamaları.  
   
  [Bileşik Denetim Genel İşlevleri](../../atl/reference/composite-control-global-functions.md)  
  İletişim kutuları oluşturma ve oluşturma, barındırma ve ActiveX denetimlerini lisanslama için destek sağlar.  
   
  [Bağlantı Noktası Genel İşlevleri](../../atl/reference/connection-point-global-functions.md)  
- İç Havuz eşlemeleri ve bağlantı noktaları için destek sağlar.  
+ Bağlantı noktaları için destek sağlar ve iç havuz eşlemeleri.  
   
  [Hata Ayıklama ve Hata Raporlama Genel İşlevleri](../../atl/reference/debugging-and-error-reporting-global-functions.md)  
- Yararlı hata ayıklama ve izleme olanakları sağlar.  
+ Yararlı hata ayıklama ve izleme olanakları sağlayın.  
   
  [Cihaz Bağlamı Genel İşlevleri](../../atl/reference/device-context-global-functions.md)  
- Belirli bir aygıt için bir cihaz bağlamı oluşturur.  
+ Belirli bir cihaz için bir cihaz bağlamı oluşturur.  
   
  [Olay İşleme Genel İşlevleri](../../atl/reference/event-handling-global-functions.md)  
  Bir olay işleyicisi sağlar.  
   
  [Hazırlama Genel İşlevleri](../../atl/reference/marshaling-global-functions.md)  
- Hazırlama ve verileri arabirim İşaretçileri hazırlama dönüştürme için destek sağlar.  
+ Hazırlama ve arabirim işaretçilerini veri hazırlama dönüştürme için destek sağlar.  
   
- [Piksel/HIMETRIC dönüştürme genel işlevler](../../atl/reference/pixel-himetric-conversion-global-functions.md)  
- Piksel gelen ve HIMETRIC birimleri dönüştürmek için destek sağlar.  
+ [Piksel/HIMETRIC dönüştürme genel işlevleri](../../atl/reference/pixel-himetric-conversion-global-functions.md)  
+ Gelen ve piksel hımetrıc dönüştürme için destek sağlar.  
   
  [Kayıt Defteri ve TypeLib Genel İşlevleri](../../atl/reference/registry-and-typelib-global-functions.md)  
- Yükleme ve bir tür kitaplığı kaydı için destek sağlar.  
+ Yükleme ve bir tür kitaplığı kaydı için destek sağlıyor.  
   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)  
  SID ve ACL nesneleri değiştirmek için destek sağlar.  
   
  [Güvenlik Tanımlayıcısı Genel İşlevleri](../../atl/reference/security-identifier-global-functions.md)  
- Ortak iyi bilinen SID nesneleri döndürür.  
+ Nesneleri ortak iyi bilinen SID döndürür.  
   
  [Sunucu Kaydı Genel İşlevleri](../../atl/reference/server-registration-global-functions.md)  
- Kaydetme ve sunucu nesneleri nesneyi eşlemesindeki kaydını kaldırmak için destek sağlar.  
+ Kaydetme ve sunucu nesneleri nesne eşlemesindeki kaydını kaldırmak için destek sağlar.  
   
  [WinModule Genel İşlevleri](../../atl/reference/winmodule-global-functions.md)  
- İçin destek sağlayan `_AtlCreateWndData` yapısı işlemleri.  
+ İçin destek sağlayan `_AtlCreateWndData` yapı işlemleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
     

@@ -32,15 +32,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 358798e3945378d0fa43fa6e2fa91d686212efab
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 5c32aed9d50e0575893c99a9552c74e6e491ecb9
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040187"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853026"
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog sınıfı
-Windows ortak OLE nesne özellikleri iletişim kutusu yalıtır.  
+Windows ortak OLE nesne özelliği iletişim kutusunu kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,33 +54,33 @@ class COlePropertiesDialog : public COleDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COlePropertiesDialog::COlePropertiesDialog](#colepropertiesdialog)|Oluşturan bir `COlePropertiesDialog` nesnesi.|  
+|[COlePropertiesDialog::COlePropertiesDialog](#colepropertiesdialog)|Oluşturur bir `COlePropertiesDialog` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COlePropertiesDialog::DoModal](#domodal)|İletişim kutusu görüntüler ve bir seçim yapmasına olanak tanır.|  
-|[COlePropertiesDialog::OnApplyScale](#onapplyscale)|Belge öğesi'nin ölçeklendirme değiştiğinde çerçevesi tarafından çağrılır.|  
+|[COlePropertiesDialog::DoModal](#domodal)|İletişim kutusunu görüntüler ve kullanıcının seçim yapmanıza izin verir.|  
+|[COlePropertiesDialog::OnApplyScale](#onapplyscale)|Belge öğesi ölçeklendirme değiştiğinde framework tarafından çağırılır.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COlePropertiesDialog::m_gp](#m_gp)|"Genel" sayfasını başlatmak için kullanılan bir yapı bir `COlePropertiesDialog` nesnesi.|  
-|[COlePropertiesDialog::m_lp](#m_lp)|"Bağlantı" sayfasında başlatmak için kullanılan bir yapı bir `COlePropertiesDialog` nesnesi.|  
-|[COlePropertiesDialog::m_op](#m_op)|Başlatmak için kullanılan bir yapı `COlePropertiesDialog` nesnesi.|  
-|[COlePropertiesDialog::m_psh](#m_psh)|Ek özel özellik sayfaları eklemek için kullanılan yapısı.|  
-|[COlePropertiesDialog::m_vp](#m_vp)|"Görünüm" sayfasında özelleştirmek için kullanılan bir yapı bir `COlePropertiesDialog` nesnesi.|  
+|[COlePropertiesDialog::m_gp](#m_gp)|"Genel" sayfasını başlatmak için kullanılan bir yapının bir `COlePropertiesDialog` nesne.|  
+|[COlePropertiesDialog::m_lp](#m_lp)|"Bağlantı" sayfasının başlatmak için kullanılan bir yapının bir `COlePropertiesDialog` nesne.|  
+|[COlePropertiesDialog::m_op](#m_op)|Başlatmak için kullanılan bir yapının `COlePropertiesDialog` nesne.|  
+|[COlePropertiesDialog::m_psh](#m_psh)|Ek özel özellik sayfaları eklemek için kullanılan bir yapının.|  
+|[COlePropertiesDialog::m_vp](#m_vp)|"View" sayfasının özelleştirmek için kullanılan bir yapının bir `COlePropertiesDialog` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ortak OLE nesne özellikleri iletişim kutusu görüntülemek ve OLE belge öğeyi Windows standartları ile tutarlı şekilde özelliklerini değiştirmek için kolay bir yol sağlar. Bu özellikler, diğerleriyle birlikte (öğesi bağlıysa) simgesine ve resim ölçekleme ve bilgi öğesi'nin bağlantıyı görüntülemek için seçenekler belge öğesi tarafından temsil edilen dosyası hakkında bilgi içerir.  
+ Ortak OLE nesne özelliği iletişim kutusu görüntülemek ve bir OLE belge öğesi Windows standartları ile tutarlı şekilde özelliklerini değiştirmek için kolay bir yol sağlar. Bu özellikler, diğerleriyle birlikte, belge öğesi, (öğe bağlı değilse) simgesini ve görüntü ölçeklendirme ve bilgilerini öğenin bağlantısında görüntüleme seçenekleri tarafından temsil edilen dosyası hakkında bilgi içerir.  
   
- Kullanılacak bir `COlePropertiesDialog` nesne, öncelikle nesnesini kullanarak oluşturmanız `COlePropertiesDialog` Oluşturucusu. İletişim kutusu oluşturulan sonra çağrı `DoModal` üye işlevi iletişim kutusunu görüntülemek ve hiçbir öğe özelliklerini değiştirmek kullanıcı izin vermek için. `DoModal` Kullanıcı Tamam seçili olup olmadığını döndürür ( **IDOK**) veya İptal'i ( **IDCANCEL**) düğmesi. Tamam ve İptal düğmeleri yanı sıra bir Uygula düğmesi yoktur. Kullanıcı Uygula seçtiğinde, belge öğesi özelliklerine yapılan değişiklikler öğesine uygulanır ve görüntüsünü otomatik olarak güncelleştirilir, ancak etkin kalır.  
+ Kullanılacak bir `COlePropertiesDialog` nesne, ilk nesnesini kullanarak oluşturun `COlePropertiesDialog` Oluşturucusu. İletişim kutusu oluşturulmuş sonra çağırma `DoModal` iletişim kutusunu görüntülemek ve kullanıcının herhangi bir öğenin özelliklerini değiştirmek izin vermek için üye işlevi. `DoModal` Kullanıcı (IDOK) Tamam veya iptal edin (IDCANCEL) düğmesini seçip seçmediğini döndürür. Tamam ve İptal düğmeleri ek olarak, bir Uygula düğmesi yoktur. Kullanıcı Uygula seçtiğinde belge öğeyi özelliklerine yapılan değişiklikler öğesine uygulanır ve görüntüsünü otomatik olarak güncelleştirilir ancak etkin kalır.  
   
- [M_psh](#m_psh) veri üyesi olan bir işaretçi bir **PROPSHEETHEADER** yapısını ve çoğu durumda değil gerekir açıkça erişim. Varsayılan Genel, Görünüm ve bağlantı sayfaları ötesinde ek özellik sayfaları gerektiğinde bir istisnadır. Bu durumda, değiştirebileceğiniz `m_psh` özel sayfalarınızın çağırmadan önce eklenecek veri üyesi `DoModal` üye işlevi.  
+ [M_psh](#m_psh) veri üyesi olan bir işaretçi bir `PROPSHEETHEADER` yapısı ve çoğu durumda, zorunda kalmadan açıkça erişim. Varsayılan Genel Görünüm ve bağlantı sayfaları ötesinde ek özellik sayfaları gerektiğinde bir özel durumdur. Bu durumda, değiştirebileceğiniz `m_psh` özel sayfalarınızı çağırmadan önce içerecek şekilde veri üyesi `DoModal` üye işlevi.  
   
- OLE iletişim kutuları hakkında daha fazla bilgi için bkz: [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
+ OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -101,7 +101,7 @@ class COlePropertiesDialog : public COleDialog
  **Başlık:** afxodlgs.h  
   
 ##  <a name="colepropertiesdialog"></a>  COlePropertiesDialog::COlePropertiesDialog  
- Oluşturur bir `COlePropertiesDialog` nesnesi.  
+ Oluşturur bir `COlePropertiesDialog` nesne.  
   
 ```  
 COlePropertiesDialog(
@@ -113,112 +113,112 @@ COlePropertiesDialog(
   
 ### <a name="parameters"></a>Parametreler  
  *pItem*  
- Özellikleri erişilen belge öğesi işaretçisi.  
+ Özellikleri erişilen bir belge öğesinin işaretçisi.  
   
  *nScaleMin*  
- Belge öğesi görüntüsü yüzdesi ölçekleme en az.  
+ En az yüzde belge öğesi resmi için ölçeklendirme.  
   
  *nScaleMax*  
- Ölçeklendirme yüzdesini belge öğesi görüntüsü için üst sınırı.  
+ En fazla belge öğesi resmi yüzdesi ölçeklendirme.  
   
  *pParentWnd*  
- İletişim kutusunun üst veya sahibi işaretçi.  
+ İletişim kutusunun üst veya sahibi işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ortak OLE nesne özellikleri iletişim kutusu sınıfından türetilen `COlePropertiesDialog` belge öğelerinizi ölçeklendirme uygulamak için. Bu sınıfın bir örneği tarafından uygulanan herhangi bir iletişim kutusu belge öğesi'nin ölçeklendirme desteklemez.  
+ Ortak OLE nesne özelliği iletişim sınıfından türetilir `COlePropertiesDialog` belge öğelerinizi ölçeklendirme uygulamak için. Bu sınıfın bir örneği tarafından uygulanan herhangi bir iletişim kutusu belge öğesi ölçeklendirme desteklemez.  
   
- Varsayılan olarak, üç varsayılan sayfa ortak OLE nesne özellikleri iletişim kutusu vardır:  
+ Varsayılan olarak, ortak bir OLE nesne özelliği iletişim kutusu, üç varsayılan sayfası vardır:  
   
 -   Genel  
   
-     Bu sayfa seçilen belge öğesi tarafından temsil edilen dosyasının sistem bilgilerini içerir. Bu sayfadan kullanıcı seçili öğe başka bir türüne dönüştürülemiyor.  
+     Bu sayfa seçilen belge öğesi tarafından temsil edilen dosya sistem bilgilerini içerir. Bu sayfadan kullanıcı seçili öğe başka bir türe dönüştürme yapabilirsiniz.  
   
 -   Görüntüle  
   
-     Bu sayfa öğeyi görüntülemek, simgeyi değiştirme ve görüntüsü ölçeklendirmesinin değişmesi seçenekleri içerir.  
+     Bu sayfa görüntüsü ölçeklendirmesinin değişmesi öğesi görüntüleme ve simgesini değiştirme seçenekleri içerir.  
   
 -   Bağlantı  
   
-     Bu sayfa bağlantılı öğesi konumunu değiştirme ve bağlantılı öğesi güncelleştirme için seçenekleri içerir. Bu sayfadan kullanıcı seçilen öğenin bağlantısını kesebilirsiniz.  
+     Bu sayfa, bağlantılı öğe konumunu değiştirme ve bağlantılı öğeyi güncelleştirmek için seçenekleri içerir. Bu sayfadan kullanıcı seçili öğenin bağlantısını kesebilirsiniz.  
   
- Varsayılan olarak sağlanan ötesinde sayfaları eklemek, değiştirmek [m_psh](#m_psh) oluşturucusunun çıkmadan önce üye değişkeni, `COlePropertiesDialog`-türetilmiş sınıf. Bu gelişmiş uygulamasıdır `COlePropertiesDialog` Oluşturucusu.  
+ Varsayılan olarak sağlananların sayfalar eklemek için değiştirme [m_psh](#m_psh) oluşturucusunun çıkmadan önce üye değişkeni, `COlePropertiesDialog`-türetilmiş sınıf. Bu gelişmiş uygulamasıdır `COlePropertiesDialog` Oluşturucusu.  
   
 ##  <a name="domodal"></a>  COlePropertiesDialog::DoModal  
- Windows ortak OLE nesne özellikleri iletişim kutusunu görüntüleyin ve görüntülemek ve/veya belge öğesi çeşitli özelliklerini değiştirmek kullanıcı izin vermek için bu üye işlevini çağırın.  
+ Windows ortak OLE nesne özelliği iletişim kutusu görüntüler ve kullanıcının görüntülemek ve/veya belge öğesi çeşitli özelliklerini değiştirmek izin vermek için bu üye işlevini çağırın.  
   
 ```  
 virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **IDOK** veya **IDCANCEL** başarılı; Aksi halde 0 ise. **IDOK** ve **IDCANCEL** kullanıcı Tamam'ı veya iptal düğmesine seçili olmadığını gösterecek sabittir.  
+ IDOK veya IDCANCEL başarılıysa; Aksi durumda 0. IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.  
   
- Varsa **IDCANCEL** döndürülür Windows çağırabilir [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) işlevi bir hata oluşup oluşmadığını belirleyin.  
+ IDCANCEL döndürülürse, Windows çağırabilirsiniz [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) hata oluşup oluşmadığını belirlemek için işlevi.  
   
 ##  <a name="m_gp"></a>  COlePropertiesDialog::m_gp  
- Türü yapısını [OLEUIGNRLPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687297), OLE nesne özellikleri iletişim kutusu, genel sayfayı başlatmak için kullanılan.  
+ Türünden bir yapıyı [OLEUIGNRLPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687297)OLE nesne özelliği iletişim kutusu, genel sayfayı başlatmak için kullanılır.  
   
 ```  
 OLEUIGNRLPROPS m_gp;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu sayfa bir katıştırma boyutunu ve türünü gösterir ve Dönüştür iletişim kutusu için kullanıcı erişimi sağlar. Bu sayfa ayrıca bağlantı hedef nesne bir bağlantı olup olmadığını gösterir.  
+ Bu sayfada gömme boyutunu ve türünü gösterir ve Dönüştürme iletişim kutusu kullanıcının erişmesini sağlar. Bu sayfa ayrıca bağlantı hedef nesnenin bir bağlantı olup olmadığını gösterir.  
   
- Daha fazla bilgi için **OLEUIGNRLPROPS** yapısı, Windows SDK konusuna bakın.  
+ Daha fazla bilgi için `OLEUIGNRLPROPS` yapısı, Windows SDK'sı bakın.  
   
 ##  <a name="m_lp"></a>  COlePropertiesDialog::m_lp  
- Türü yapısını [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735), OLE nesne özellikleri iletişim kutusunun bağlantı sayfası başlatmak için kullanılan.  
+ Türünden bir yapıyı [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735)OLE nesne özelliği iletişim kutusunun bağlantı sayfayı başlatmak için kullanılır.  
   
 ```  
 OLEUILINKPROPS m_lp;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu sayfa bağlantılı öğesi konumunu gösterir ve güncelleştirme ya da öğesine bağlantıyı kes olanak tanır.  
+ Bu sayfa, bağlantılı öğe konumunu gösterir ve güncelleştirme veya öğenin bağlantısını kesen izin verir.  
   
- Daha fazla bilgi için **OLEUILINKPROPS** yapısı, Windows SDK konusuna bakın.  
+ Daha fazla bilgi için `OLEUILINKPROPS` yapısı, Windows SDK'sı bakın.  
   
 ##  <a name="m_op"></a>  COlePropertiesDialog::m_op  
- Türü yapısını [OLEUIOBJECTPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687199), kullanılan ortak bir OLE nesne özellikleri iletişim kutusu başlatılamadı.  
+ Türünden bir yapıyı [OLEUIOBJECTPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687199)ortak OLE nesne özelliği iletişim kutusunu başlatmak için kullanılır.  
   
 ```  
 OLEUIOBJECTPROPS m_op;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yapı genel, bağlantı ve görünüm sayfalarını başlatmak için kullanılan üyeler içerir.  
+ Bu yapı, genel, bağlantı ve görünüm sayfa başlatmak için kullanılan üyeler içerir.  
   
- Daha fazla bilgi için bkz: **OLEUIOBJECTPROPS** ve [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) Windows SDK'sı yapılarda.  
+ Daha fazla bilgi için bkz: OLEUIOBJECTPROPS ve [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) yapıları, Windows SDK'sı.  
   
 ##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh  
- Türü yapısını [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546), iletişim nesnesinin özelliklerini üyeleri depolar.  
+ Türünden bir yapıyı [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546), üyeleri iletişim nesnesinin özelliklerini depolayın.  
   
 ```  
 PROPSHEETHEADER m_psh;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma sonrasında bir `COlePropertiesDialog` nesne kullanabileceğiniz `m_psh` çağırmadan önce iletişim kutusu çeşitli yönlerini ayarlamak için `DoModal` üye işlevi.  
+ Oluşturma sonrasında bir `COlePropertiesDialog` nesne kullanabileceğiniz `m_psh` çeşitli yönlerini çağırmadan önce iletişim kutusunda ayarlanacak `DoModal` üye işlevi.  
   
- Değiştirirseniz `m_psh` veri üyesi doğrudan herhangi varsayılan davranışı geçersiz kılar.  
+ Değiştirirseniz `m_psh` veri üyesi doğrudan, hiçbir varsayılan davranışı geçersiz kılar.  
   
- Daha fazla bilgi için **PROPSHEETHEADER** yapısı, Windows SDK konusuna bakın.  
+ Daha fazla bilgi için `PROPSHEETHEADER` yapısı, Windows SDK'sı bakın.  
   
 ##  <a name="m_vp"></a>  COlePropertiesDialog::m_vp  
- Türü yapısını [OLEUIVIEWPROPS](http://msdn.microsoft.com/library/windows/desktop/ms693751), OLE nesne özellikleri iletişim kutusunun görünümü sayfası başlatmak için kullanılan.  
+ Türünden bir yapıyı [OLEUIVIEWPROPS](http://msdn.microsoft.com/library/windows/desktop/ms693751)OLE nesne özelliği iletişim kutusunun görünümü sayfayı başlatmak için kullanılır.  
   
 ```  
 OLEUIVIEWPROPS m_vp;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu sayfa "içerik" ve "simge" görünümlerini nesne arasında geçiş yapma ve kapsayıcı içinde ölçeklendirme değiştirmek kullanıcı sağlar. Nesne simge olarak gösterildiğinde de Simge Değiştir iletişim kutusu için kullanıcı erişimi sağlar.  
+ Bu sayfa, "içerik" ve nesnenin "icon" görünümler arasında geçiş yapma ve kapsayıcı içinde ölçeklendirme değiştirmek kullanıcı sağlar. Nesne simge olarak görüntülendiğinde de Change Icon iletişim kutusu için kullanıcı erişim sağlar.  
   
- Daha fazla bilgi için **OLEUIVIEWPROPS** yapısı, Windows SDK konusuna bakın.  
+ Daha fazla bilgi için `OLEUIVIEWPROPS` yapısı, Windows SDK'sı bakın.  
   
 ##  <a name="onapplyscale"></a>  COlePropertiesDialog::OnApplyScale  
- Ölçeklendirme değeri değiştirildi ve Tamam'ı veya Uygula seçilmiş çerçevesi tarafından çağrılır.  
+ Ölçeklendirme değeri değiştirildi ve Tamam'ı veya Uygula seçilmiş framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnApplyScale(
@@ -229,22 +229,22 @@ virtual BOOL OnApplyScale(
   
 ### <a name="parameters"></a>Parametreler  
  *pItem*  
- Özellikleri erişilen belge öğesi işaretçisi.  
+ Özellikleri erişilen bir belge öğesinin işaretçisi.  
   
  *nCurrentScale*  
- İletişim ölçek sayısal değer.  
+ İletişim ölçeğin sayısal değer.  
   
  *bRelativeToOrig*  
- Ölçeklendirme belge öğenin özgün boyutu için geçerli olup olmadığını gösterir.  
+ Ölçeklendirme belge öğesi özgün boyutu için geçerli olup olmadığını gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşleniyorsa sıfır olmayan; Aksi takdirde 0.  
+ İşlenen olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama hiçbir şey yapmaz. Ölçeklendirme denetimlerini etkinleştirmek için bu işlevi geçersiz kılmanız gerekir.  
+ Varsayılan uygulama, hiçbir şey yapmaz. Ölçeklendirme denetimlerini etkinleştirmek için bu işlevi geçersiz kılmanız gerekir.  
   
 > [!NOTE]
->  Ortak OLE nesne özellikleri iletişim kutusu görüntülenmeden önce framework ile bu işlevi çağıran bir **NULL** için *pItem* için 1 *nCurrentScale*. Bu, ölçekleme denetimleri etkin olmadığını belirlemek için gerçekleştirilir.  
+>  Ortak OLE nesne özelliği iletişim kutusu görüntülenmeden önce bu işlev için NULL ile framework çağırır *pItem* için - 1 *nCurrentScale*. Bu, ölçeklendirme denetimler etkin olmadığını belirlemek için gerçekleştirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek DAİ](../../visual-cpp-samples.md)   

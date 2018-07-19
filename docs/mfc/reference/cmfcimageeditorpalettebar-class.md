@@ -1,5 +1,5 @@
 ---
-title: CMFCImageEditorPaletteBar sınıfı | Microsoft Docs
+title: Cmfcımageeditorpalettebar sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e377a465dd55d8940e74617130216220d03f1218
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e3b10e18e12b5a2f27c0b83562ef16321da67422
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370048"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851463"
 ---
-# <a name="cmfcimageeditorpalettebar-class"></a>CMFCImageEditorPaletteBar sınıfı
-Görüntü Düzenleyicisi iletişim kutusu palet çubuğu işlevsellik sağlar.  
+# <a name="cmfcimageeditorpalettebar-class"></a>Cmfcımageeditorpalettebar sınıfı
+Bir Resim Düzenleyicisi iletişim kutusu için palet çubuğu işlevlerini sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,12 +44,12 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
 |-|-|  
 |Ad|Açıklama|  
 |[CMFCImageEditorPaletteBar::GetRowHeight](#getrowheight)|Araç çubuğu düğmeleri yüksekliğini döndürür. (Geçersiz kılmaları [CMFCToolBar::GetRowHeight](../../mfc/reference/cmfctoolbar-class.md#getrowheight).)|  
-|[CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable](#isbuttonextrasizeavailable)|Araç çubuğu kenarlık genişletilmiş düğmeleri görüntülemek olup olmadığını belirler. (Geçersiz kılmaları [CMFCToolBar::IsButtonExtraSizeAvailable](../../mfc/reference/cmfctoolbar-class.md#isbuttonextrasizeavailable).)|  
+|[CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable](#isbuttonextrasizeavailable)|Araç çubuğu kenarlık genişletilmiş düğmeleri görüntüleyip görüntülemeyeceğini belirler. (Geçersiz kılmaları [CMFCToolBar::IsButtonExtraSizeAvailable](../../mfc/reference/cmfctoolbar-class.md#isbuttonextrasizeavailable).)|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu sınıf doğrudan kodunuzdan kullanılmaya yönelik değildir.  
+ Bu sınıf doğrudan sizin kodunuzdan kullanılmak üzere tasarlanmamıştır.  
   
- Çerçeve bir görüntü Düzenleyicisi iletişim kutusunda bir palet çubuğu görüntülemek için bu sınıfı kullanır. Görüntü Düzenleyicisi iletişim kutusu hakkında daha fazla bilgi için bkz: [CMFCImageEditorDialog sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md).  
+ Framework, bir Resim Düzenleyicisi iletişim kutusunda bir palet çubuğunu görüntülemek için bu sınıfı kullanır. Resim Düzenleyicisi iletişim kutusu hakkında daha fazla bilgi için bkz. [CMFCImageEditorDialog sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -66,7 +66,7 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
   
  [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md)  
   
- [CMFCImageEditorPaletteBar](../../mfc/reference/cmfcimageeditorpalettebar-class.md)  
+ [Cmfcımageeditorpalettebar](../../mfc/reference/cmfcimageeditorpalettebar-class.md)  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afximageeditordialog.h  
@@ -82,14 +82,14 @@ virtual int GetRowHeight() const;
  Her araç çubuğunda yüksekliği.  
   
 ##  <a name="isbuttonextrasizeavailable"></a>  CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable  
- Araç çubuğu kenarlık genişletilmiş düğmeleri görüntülemek olup olmadığını belirler.  
+ Araç çubuğu kenarlık genişletilmiş düğmeleri görüntüleyip görüntülemeyeceğini belirler.  
   
 ```  
 virtual BOOL IsButtonExtraSizeAvailable() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem `FALSE`.  
+ Bu yöntem FALSE döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

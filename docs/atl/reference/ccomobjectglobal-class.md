@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3614962d3bebada0c63b7fe804b52efaa965c6a9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5d96af29f03da472c8e9cc829c89b60d0eaa591c
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362449"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880641"
 ---
 # <a name="ccomobjectglobal-class"></a>CComObjectGlobal sınıfı
-Bu sınıf modül bulunduğu bir başvuru sayısı yönetir, `Base` nesnesi.  
+Bu sınıf modül bulunduğu bir başvuru sayısını yönetir, `Base` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,8 +40,8 @@ class CComObjectGlobal : public Base
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `Base`  
- Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [in uygulamasına](../../atl/reference/ccomobjectrootex-class.md)nesnede desteklemek istediğiniz iyi herhangi diğer arabirimi uğradıysa gibi.  
+ *temel*  
+ Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer bir arabirim uğradıysa nesnede desteklemek istediğiniz gibi.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -50,26 +50,26 @@ class CComObjectGlobal : public Base
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComObjectGlobal::CComObjectGlobal](#ccomobjectglobal)|Oluşturucu.|  
-|[CComObjectGlobal:: ~ CComObjectGlobal](#dtor)|Yok Edicisi.|  
+|[CComObjectGlobal:: ~ CComObjectGlobal](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComObjectGlobal::AddRef](#addref)|Bir genel uygulayan `AddRef`.|  
-|[CComObjectGlobal::QueryInterface](#queryinterface)|Bir genel uygulayan `QueryInterface`.|  
-|[CComObjectGlobal::Release](#release)|Bir genel uygulayan **sürüm**.|  
+|[CComObjectGlobal::AddRef](#addref)|Genel bir uygulayan `AddRef`.|  
+|[CComObjectGlobal::QueryInterface](#queryinterface)|Genel bir uygulayan `QueryInterface`.|  
+|[CComObjectGlobal::Release](#release)|Genel bir uygulayan `Release`.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComObjectGlobal::m_hResFinalConstruct](#m_hresfinalconstruct)|İçeren **HRESULT** yapımı sırasında döndürülen `CComObjectGlobal` nesnesi.|  
+|[CComObjectGlobal::m_hResFinalConstruct](#m_hresfinalconstruct)|Oluşumu sırasında döndürülen HRESULT içeren `CComObjectGlobal` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComObjectGlobal` Modül çağırılarak bir başvuru sayısı yönetir, `Base` nesnesi. `CComObjectGlobal` Modül bırakılmamışsa sürece nesnenizin silinmez sağlar. Tüm modül başvurusu sayısı sıfıra gittiğinde nesneniz yalnızca kaldırılır.  
+ `CComObjectGlobal` içeren modül üzerinde bir başvuru sayısını yönetir, `Base` nesne. `CComObjectGlobal` Modül serbest bırakılmaz sürece, nesne silinmeyecek sağlar. Tüm modül başvuru sayısı sıfıra gittiğinde nesnenizin yalnızca kaldırılacak.  
   
- Örneğin, kullanarak `CComObjectGlobal`, bir sınıf üreticisi, tüm istemciler tarafından paylaşılan ortak bir genel nesne tutabilir.  
+ Örneğin, kullanarak `CComObjectGlobal`, bir sınıf üreteci, tüm istemciler tarafından paylaşılan ortak bir genel nesne içerebilir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Base`  
@@ -80,7 +80,7 @@ class CComObjectGlobal : public Base
  **Başlık:** atlcom.h  
   
 ##  <a name="addref"></a>  CComObjectGlobal::AddRef  
- Nesne başvuru sayısı 1 ile artırır.  
+ Nesnenin başvuru sayısının 1 artar.  
   
 ```
 STDMETHOD_(ULONG, AddRef)();
@@ -90,7 +90,7 @@ STDMETHOD_(ULONG, AddRef)();
  Tanılama için kullanışlı ve test olabilir bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, `AddRef` çağrıları **_Module::Lock**, burada **_Module** genel örneğinin [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.  
+ Varsayılan olarak, `AddRef` çağrıları `_Module::Lock`burada `_Module` genel örneğinin [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.  
   
 ##  <a name="ccomobjectglobal"></a>  CComObjectGlobal::CComObjectGlobal  
  Oluşturucu. Çağrıları `FinalConstruct` ve ardından ayarlar [m_hResFinalConstruct](#m_hresfinalconstruct) için `HRESULT` tarafından döndürülen `FinalConstruct`.  
@@ -100,60 +100,60 @@ CComObjectGlobal(void* = NULL));
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Taban sınıfından türetilmemiş varsa [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), kendi sağlamalısınız `FinalConstruct` yöntemi. Yıkıcı çağrıları `FinalRelease`.  
+ Varsa, temel sınıftan türetilmemiş [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), kendi sağlamalısınız `FinalConstruct` yöntemi. Yıkıcı çağrıları `FinalRelease`.  
   
 ##  <a name="dtor"></a>  CComObjectGlobal:: ~ CComObjectGlobal  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 CComObjectGlobal();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayrılan tüm kaynakları ve çağrıları boşaltır [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
+ Ayrılan tüm kaynakları ve aramalar boşaltır [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
   
 ##  <a name="m_hresfinalconstruct"></a>  CComObjectGlobal::m_hResFinalConstruct  
- İçeren `HRESULT` arama gelen `FinalConstruct` oluşturma işlemi sırasında `CComObjectGlobal` nesnesi.  
+ Arama HRESULT içeren `FinalConstruct` yapımı sırasında `CComObjectGlobal` nesne.  
   
 ```
 HRESULT m_hResFinalConstruct;
 ```  
   
 ##  <a name="queryinterface"></a>  CComObjectGlobal::QueryInterface  
- İstenen arabirim işaretçisi gösteren bir işaretçi alır.  
+ İstenen arabirim işaretçisi için bir işaretçi alır.  
   
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iid`  
- [in] İstenen arabirimi GUID.  
+ *IID*  
+ [in] İstenen arabiriminin GUID'si.  
   
- `ppvObject`  
- [out] Arabirim işaretçisi IID tarafından tanımlanan bir işaretçi veya **NULL** arabirimi bulunmazsa.  
+ *ppvObject*  
+ [out] IID veya NULL arabirimi bulunamazsa, belirtilen arabirim işaretçisini bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryInterface` Yalnızca COM eşleme tablosu arabirimlerde işler.  
+ `QueryInterface` yalnızca COM eşleme tablosunda arabirimleri işler.  
   
 ##  <a name="release"></a>  CComObjectGlobal::Release  
- Başvuru sayım nesnesinin 1 ile azaltır.  
+ Başvuru tarafından 1 nesne sayısını azaltır.  
   
 ```
 STDMETHOD_(ULONG, Release)();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Hata ayıklama derlemelerinde, **sürüm** tanılama için kullanışlı ve test olabilir bir değer döndürür. Olmayan hata ayıklama derlemelerinde, **sürüm** her zaman 0 döndürür.  
+ Hata ayıklama yapılarında `Release` tanılama için kullanışlı ve test olabilecek bir değer döndürür. Hata ayıklama olmayan yapılarında `Release` her zaman 0 değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, **sürüm** çağrıları **_Module::Unlock**, burada **_Module** genel örneğinin [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.  
+ Varsayılan olarak, `Release` çağrıları `_Module::Unlock`burada `_Module` genel örneğinin [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComObjectStack sınıfı](../../atl/reference/ccomobjectstack-class.md)   
  [CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)   
  [CComObject sınıfı](../../atl/reference/ccomobject-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

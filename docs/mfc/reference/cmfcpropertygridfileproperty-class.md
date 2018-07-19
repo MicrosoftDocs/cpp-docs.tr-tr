@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c1ba2bb78260ade8dc95685789ec6af7e0ff58a
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 0dd70e67769d35bf50e52b7be4b2c8848c089cb0
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37038919"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851608"
 ---
 # <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty sınıfı
-`CMFCPropertyGridFileProperty` Sınıfı, bir dosya seçimi iletişim kutusunu açar bir özelliği liste denetim öğesi destekler.  
+`CMFCPropertyGridFileProperty` Sınıfı, bir dosya seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,14 +40,14 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty)|Oluşturan bir `CMFCPropertyGridFileProperty` nesnesi.|  
-|`CMFCPropertyGridFileProperty::~CMFCPropertyGridFileProperty`|Yok Edicisi.|  
+|[CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty)|Oluşturur bir `CMFCPropertyGridFileProperty` nesne.|  
+|`CMFCPropertyGridFileProperty::~CMFCPropertyGridFileProperty`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`CMFCPropertyGridFileProperty::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
+|`CMFCPropertyGridFileProperty::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
 |`CMFCPropertyGridFileProperty::OnClickButton`|(Geçersiz kılmaları [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -63,7 +63,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
  **Başlık:** afxpropertygridctrl.h  
   
 ##  <a name="cmfcpropertygridfileproperty"></a>  CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty  
- Oluşturan bir `CMFCPropertyGridFileProperty` nesnesi.  
+ Oluşturur bir `CMFCPropertyGridFileProperty` nesne.  
   
 ```  
 CMFCPropertyGridFileProperty(
@@ -82,33 +82,33 @@ CMFCPropertyGridFileProperty(
  Özellik adı.  
   
  [in] *bOpenFileDialog*  
- `TRUE` açmak için bir **Dosya Aç** iletişim kutusu; `FALSE` açmak için bir **dosyayı Kaydet** iletişim kutusu.  
+ Açık true bir **Dosya Aç** ; iletişim kutusu Açmak için yanlış bir **dosyayı Kaydet** iletişim kutusu.  
   
  [in] *strFileName*  
  İlk dosya adı.  
   
  [in] *lpszDefExt*  
- Bir veya daha fazla dosya adı uzantılarını dizesi. Varsayılan değer `NULL` şeklindedir.  
+ Bir veya daha fazla dosya adı uzantıları bir dize. Varsayılan değer NULL olur.  
   
- [in] *dwFlags*  
- İletişim kutusu bayraklar. Bit düzeyinde bileşimini (veya) varsayılan değerdir `OFN_HIDEREADONLY` ve `OFN_OVERWRITEPROMPT`.  
+ [in] *CertOpenStore*  
+ İletişim kutusu bayraklar. Bitsel bir birleşimi (veya) OFN_HIDEREADONLY ve OFN_OVERWRITEPROMPT varsayılan değerdir.  
   
  [in] *lpszFilter*  
- Bir veya daha fazla dosya filtreleri dizesi. Varsayılan değer `NULL` şeklindedir.  
+ Bir veya daha fazla dosya filtreleri dizesi. Varsayılan değer NULL olur.  
   
  [in] *lpszDescr*  
- Özellik öğesi açıklaması. Varsayılan değer `NULL` şeklindedir.  
+ Özellik öğesi açıklaması. Varsayılan değer NULL olur.  
   
  [in] *dwData*  
- Özellik öğesi ile ilişkilendirilen uygulamaya özgü verileri. Örneğin, bir 32 bit tamsayı veya diğer veri için bir işaretçi. Varsayılan değer 0’dır.  
+ Özellik öğesi ile ilişkilendirilen uygulamaya özgü verileri. Örneğin, 32-bit tamsayı veya diğer veri işaretçisi. Varsayılan değer 0’dır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılabilir bayrakları tam bir listesi için bkz: [AÇIKDOSYAADI yapısı](https://msdn.microsoft.com/library/ms646839.aspx).  
+ Kullanılabilir bayrakları tam bir listesi için bkz. [LPSTRFİLE yapısı](https://msdn.microsoft.com/library/ms646839.aspx).  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnek, oluşturucusunun kullanan bir nesne oluşturmak gösterilmiştir `CMFCPropertyGridFileProperty` sınıfı. Bu örneğin parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek Oluşturucusu kullanarak bir nesne oluşturma işlemini gösterir `CMFCPropertyGridFileProperty` sınıfı. Bu örneğin parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#22](../../mfc/codesnippet/cpp/cmfcpropertygridfileproperty-class_1.cpp)]  
   

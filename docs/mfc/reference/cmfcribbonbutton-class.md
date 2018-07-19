@@ -124,15 +124,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8dc6e780ece78bca59a95f8050a36a77656f0ad6
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: d1da517ef952dd3fcdb0772feedb8e576be9502b
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040044"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37850026"
 ---
 # <a name="cmfcribbonbutton-class"></a>CMFCRibbonButton sınıfı
-`CMFCRibbonButton` Sınıfı paneller, hızlı erişim araç çubukları ve açılır menüler gibi Şerit çubuğu öğelerde yerleştirebilir düğmeleri uygular.  
+`CMFCRibbonButton` Sınıfı, paneller, hızlı erişim araç çubukları ve açılır menüler gibi Şerit çubuğu öğeleri üzerine yerleştirebilir düğmeler uygular.  
 
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
@@ -148,41 +148,41 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonButton::CMFCRibbonButton](#cmfcribbonbutton)|Şerit düğmesi nesnesi oluşturur.|  
+|[CMFCRibbonButton::CMFCRibbonButton](#cmfcribbonbutton)|Bir Şerit düğme nesnesi oluşturur.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonButton::AddSubItem](#addsubitem)|Menü öğesi düğmesi ile ilişkili açılır menü ekler.|  
+|[CMFCRibbonButton::AddSubItem](#addsubitem)|Düğme ile ilişkili olan açılır menüsüne bir menü öğesi ekler.|  
 |[CMFCRibbonButton::CanBeStretched](#canbestretched)|(Geçersiz kılmaları [CMFCRibbonBaseElement::CanBeStretched](../../mfc/reference/cmfcribbonbaseelement-class.md#canbestretched).)|  
 |[CMFCRibbonButton::CleanUpSizes](#cleanupsizes)|(Geçersiz kılmaları [CMFCRibbonBaseElement::CleanUpSizes](../../mfc/reference/cmfcribbonbaseelement-class.md#cleanupsizes).)|  
 |[CMFCRibbonButton::ClosePopupMenu](#closepopupmenu)|(Geçersiz kılmaları [CMFCRibbonBaseElement::ClosePopupMenu](../../mfc/reference/cmfcribbonbaseelement-class.md#closepopupmenu).)|  
 |[CMFCRibbonButton::DrawBottomText](#drawbottomtext)||  
 |[CMFCRibbonButton::DrawImage](#drawimage)|(Geçersiz kılmaları [CMFCRibbonBaseElement::DrawImage](../../mfc/reference/cmfcribbonbaseelement-class.md#drawimage).)|  
 |[CMFCRibbonButton::DrawRibbonText](#drawribbontext)||  
-|[CMFCRibbonButton::FindSubItemIndexByID](#findsubitemindexbyid)|Belirtilen komut kimliğiyle ilişkili bir açılır menü öğesini dizinini döndürür|  
+|[CMFCRibbonButton::FindSubItemIndexByID](#findsubitemindexbyid)|Belirtilen komut kimliğiyle ilişkili bir açılır menü öğesinin dizinini döndürür|  
 |[CMFCRibbonButton::GetCommandRect](#getcommandrect)||  
-|[CMFCRibbonButton::GetCompactSize](#getcompactsize)|Şerit öğesi compact boyutu döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetCompactSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getcompactsize).)|  
+|[CMFCRibbonButton::GetCompactSize](#getcompactsize)|Şerit öğesi compact boyutunu döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetCompactSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getcompactsize).)|  
 |[CMFCRibbonButton::GetIcon](#geticon)||  
-|[CMFCRibbonButton::GetImageIndex](#getimageindex)|Düğmesi ile ilişkili resim dizinini döndürür.|  
-|[CMFCRibbonButton::GetImageSize](#getimagesize)|Görüntü boyutu Şerit öğesi döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|  
-|[CMFCRibbonButton::GetIntermediateSize](#getintermediatesize)|Şerit öğesi boyutunu Ara durumuna döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetIntermediateSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getintermediatesize).)|  
-|[CMFCRibbonButton::GetMenu](#getmenu)|Şerit düğmesi atanmış bir Windows menüsü için bir işleyici döner.|  
+|[CMFCRibbonButton::GetImageIndex](#getimageindex)|Düğme ile ilişkili görüntünün dizinini döndürür.|  
+|[CMFCRibbonButton::GetImageSize](#getimagesize)|Şerit öğesi resim boyutunu döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|  
+|[CMFCRibbonButton::GetIntermediateSize](#getintermediatesize)|Şerit öğesi boyutu, Ara durumunda döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetIntermediateSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getintermediatesize).)|  
+|[CMFCRibbonButton::GetMenu](#getmenu)|Şerit düğmesi için atanmış bir Windows menüsüne bir tanıtıcı döndürür.|  
 |[CMFCRibbonButton::GetMenuRect](#getmenurect)||  
-|[CMFCRibbonButton::GetRegularSize](#getregularsize)|Şerit öğesi normal boyutu döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|  
+|[CMFCRibbonButton::GetRegularSize](#getregularsize)|Şerit öğesi normal boyutunu döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|  
 |[CMFCRibbonButton::GetSubItems](#getsubitems)||  
 |[CMFCRibbonButton::GetTextRowHeight](#gettextrowheight)||  
-|[CMFCRibbonButton::GetToolTipText](#gettooltiptext)|Şerit öğenin araç ipucu metni döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetToolTipText](../../mfc/reference/cmfcribbonbaseelement-class.md#gettooltiptext).)|  
-|[CMFCRibbonButton::HasCompactMode](#hascompactmode)|Şerit öğesi compact modunda olup olmadığını belirtir. (Geçersiz kılmaları [CMFCRibbonBaseElement::HasCompactMode](../../mfc/reference/cmfcribbonbaseelement-class.md#hascompactmode).)|  
-|[CMFCRibbonButton::HasIntermediateMode](#hasintermediatemode)|Şerit öğesi Ara modunda olup olmadığını belirtir. (Geçersiz kılmaları [CMFCRibbonBaseElement::HasIntermediateMode](../../mfc/reference/cmfcribbonbaseelement-class.md#hasintermediatemode).)|  
-|[CMFCRibbonButton::HasLargeMode](#haslargemode)|Şerit öğesi büyük modunda olup olmadığını belirler. (Geçersiz kılmaları [CMFCRibbonBaseElement::HasLargeMode](../../mfc/reference/cmfcribbonbaseelement-class.md#haslargemode).)|  
+|[CMFCRibbonButton::GetToolTipText](#gettooltiptext)|Şerit öğesinin araç ipucu metni döndürür. (Geçersiz kılmaları [CMFCRibbonBaseElement::GetToolTipText](../../mfc/reference/cmfcribbonbaseelement-class.md#gettooltiptext).)|  
+|[CMFCRibbonButton::HasCompactMode](#hascompactmode)|Şerit öğesi Sıkıştırılmış mod olup olmadığını belirtir. (Geçersiz kılmaları [CMFCRibbonBaseElement::HasCompactMode](../../mfc/reference/cmfcribbonbaseelement-class.md#hascompactmode).)|  
+|[CMFCRibbonButton::HasIntermediateMode](#hasintermediatemode)|Şerit öğesi bir ara modu olup olmadığını belirtir. (Geçersiz kılmaları [CMFCRibbonBaseElement::HasIntermediateMode](../../mfc/reference/cmfcribbonbaseelement-class.md#hasintermediatemode).)|  
+|[CMFCRibbonButton::HasLargeMode](#haslargemode)|Şerit öğesi büyük modda olup olmadığını belirler. (Geçersiz kılmaları [CMFCRibbonBaseElement::HasLargeMode](../../mfc/reference/cmfcribbonbaseelement-class.md#haslargemode).)|  
 |[CMFCRibbonButton::HasMenu](#hasmenu)|(Geçersiz kılmaları [CMFCRibbonBaseElement::HasMenu](../../mfc/reference/cmfcribbonbaseelement-class.md#hasmenu).)|  
 |[CMFCRibbonButton::IsAlwaysDrawBorder](#isalwaysdrawborder)||  
 |[CMFCRibbonButton::IsAlwaysLargeImage](#isalwayslargeimage)|(Geçersiz kılmaları [CMFCRibbonBaseElement::IsAlwaysLargeImage](../../mfc/reference/cmfcribbonbaseelement-class.md#isalwayslargeimage).)|  
 |[CMFCRibbonButton::IsApplicationButton](#isapplicationbutton)||  
 |[CMFCRibbonButton::IsCommandAreaHighlighted](#iscommandareahighlighted)||  
-|[CMFCRibbonButton::IsDefaultCommand](#isdefaultcommand)|Şerit düğmesi için varsayılan komut etkin olup olmadığını belirler.|  
+|[CMFCRibbonButton::IsDefaultCommand](#isdefaultcommand)|Bir Şerit düğmesi için varsayılan komut etkin olup olmadığını belirler.|  
 |[CMFCRibbonButton::IsDefaultPanelButton](#isdefaultpanelbutton)||  
 |[CMFCRibbonButton::IsDrawTooltipImage](#isdrawtooltipimage)||  
 |[CMFCRibbonButton::IsLargeImage](#islargeimage)||  
@@ -193,33 +193,33 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 |[CMFCRibbonButton::IsSingleLineText](#issinglelinetext)||  
 |[CMFCRibbonButton::OnCalcTextSize](#oncalctextsize)|(Geçersiz kılmaları [CMFCRibbonBaseElement::OnCalcTextSize](../../mfc/reference/cmfcribbonbaseelement-class.md#oncalctextsize).)|  
 |[CMFCRibbonButton::OnDrawBorder](#ondrawborder)||  
-|[CMFCRibbonButton::OnDraw](#ondraw)|Şerit öğesi çizmek için çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCRibbonBaseElement::OnDraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|  
+|[CMFCRibbonButton::OnDraw](#ondraw)|Şerit öğesi çizmek için framework tarafından çağırılır. (Geçersiz kılmaları [CMFCRibbonBaseElement::OnDraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|  
 |[CMFCRibbonButton::OnFillBackground](#onfillbackground)||  
 |[CMFCRibbonButton::RemoveAllSubItems](#removeallsubitems)|Tüm menü öğelerinin açılan menüden kaldırır.|  
-|[CMFCRibbonButton::RemoveSubItem](#removesubitem)|Menü öğesi açılır menüsünden kaldırır.|  
+|[CMFCRibbonButton::RemoveSubItem](#removesubitem)|Açılır menüden bir menü öğesini kaldırır.|  
 |[CMFCRibbonButton::SetACCData](#setaccdata)|(Geçersiz kılmaları [CMFCRibbonBaseElement::SetACCData](../../mfc/reference/cmfcribbonbaseelement-class.md#setaccdata).)|  
-|[CMFCRibbonButton::SetAlwaysLargeImage](#setalwayslargeimage)|Kullanıcı düğmesi daraltıldığında düğme büyük görüntülenir veya küçük bir görüntü belirtir.|  
-|[CMFCRibbonButton::SetDefaultCommand](#setdefaultcommand)|Şerit düğmesi için varsayılan komut sağlar.|  
-|[CMFCRibbonButton::SetDescription](#setdescription)|Şerit öğesi açıklamasını ayarlar. (Geçersiz kılmaları [CMFCRibbonBaseElement::SetDescription](../../mfc/reference/cmfcribbonbaseelement-class.md#setdescription).)|  
-|[CMFCRibbonButton::SetImageIndex](#setimageindex)|Bir dizin düğme görüntüsü atar.|  
+|[CMFCRibbonButton::SetAlwaysLargeImage](#setalwayslargeimage)|Kullanıcı düğmeyi daraltıldığında düğmesi büyük görüntüler veya küçük bir resmi belirtir.|  
+|[CMFCRibbonButton::SetDefaultCommand](#setdefaultcommand)|Şerit düğmesi için varsayılan komut etkinleştirir.|  
+|[CMFCRibbonButton::SetDescription](#setdescription)|Şerit öğesi açıklaması ayarlar. (Geçersiz kılmaları [CMFCRibbonBaseElement::SetDescription](../../mfc/reference/cmfcribbonbaseelement-class.md#setdescription).)|  
+|[CMFCRibbonButton::SetImageIndex](#setimageindex)|Düğme görüntüsü için dizin atar.|  
 |[CMFCRibbonButton::SetMenu](#setmenu)|Açılır menü için Şerit düğmesi atar.|  
 |[CMFCRibbonButton::SetParentCategory](#setparentcategory)|(Geçersiz kılmaları [CMFCRibbonBaseElement::SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory).)|  
-|[CMFCRibbonButton::SetRightAlignMenu](#setrightalignmenu)|Açılır menü düğmesinin sağındaki hizalar.|  
+|[CMFCRibbonButton::SetRightAlignMenu](#setrightalignmenu)|Düğmenin sağındaki menüye hizalar.|  
 |[CMFCRibbonButton::SetText](#settext)|Şerit öğesi için metin ayarlar. (Geçersiz kılmaları [CMFCRibbonBaseElement::SetText](../../mfc/reference/cmfcribbonbaseelement-class.md#settext).)|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonButton::OnClick](#onclick)|Kullanıcı düğmesini tıklattığında çerçevesi tarafından çağrılır.|  
+|[CMFCRibbonButton::OnClick](#onclick)|Kullanıcı düğmeye tıkladığında framework tarafından çağırılır.|  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek çeşitli yöntemleri kullanımı gösterilmiştir `CMFCRibbonButton` sınıfı. Örnek bir nesne oluşturmak nasıl gösterir `CMFCRibbonButton` sınıfı, bir açılır menü Şerit düğmesi atayabilir, düğmesinin tanımını ayarlayın, açılır menüden bir menü öğesini kaldırmak ve açılır menü düğmesinin kenara Sağa Hizala.  
+ Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonButton` sınıfı. Örneğin, bir nesne oluşturmak gösterilmektedir `CMFCRibbonButton` sınıfı, Şerit düğmesi için açılır menü atamak, düğmenin açıklaması, açılır menüden bir menü öğesini kaldırmak ve açılır menü düğmesinin kenara Sağa Hizala.  
   
  [!code-cpp[NVC_MFC_RibbonApp#7](../../mfc/reference/codesnippet/cpp/cmfcribbonbutton-class_1.cpp)]  
   
 ## <a name="remarks"></a>Açıklamalar  
- Şerit düğmesi bir uygulamada kullanmak için düğme nesnesi oluşturun ve uygun Şerit ekleme [Masası](../../mfc/reference/cmfcribbonpanel-class.md).  
+ Bir Şerit düğmesi uygulamayı kullanmak için düğme nesnesi oluşturun ve uygun Şerit ekleme [paneli](../../mfc/reference/cmfcribbonpanel-class.md).  
   
 ```  
 CMFCRibbonPanel* pPanel = pCategory->AddPanel (
@@ -252,7 +252,7 @@ pPanel->Add (new CMFCRibbonButton (ID_EDIT_PAINT, _T("Paint"), 9));
  **Başlık:** afxribbonbutton.h  
   
 ##  <a name="addsubitem"></a>  CMFCRibbonButton::AddSubItem  
- Menü öğesi düğmesi ile ilişkili açılır menü ekler.  
+ Düğme ile ilişkili olan açılır menüsüne bir menü öğesi ekler.  
   
 ```  
 void AddSubItem(
@@ -265,7 +265,7 @@ void AddSubItem(
  Yeni öğe eklemek için bir işaretçi belirtir.  
   
  [in] *nIndex*  
- Menü öğeleri düğmesinin dizi öğesi eklemek dizin belirtir; menü öğeleri dizisi sonunda öğesi eklemek için -1.  
+ Düğmenin menü öğelerinin diziye öğe eklemek dizin belirtir; menü öğeleri dizi sonuna öğe eklemek için -1.  
   
 ##  <a name="canbestretched"></a>  CMFCRibbonButton::CanBeStretched  
 
@@ -297,7 +297,7 @@ virtual void ClosePopupMenu();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="cmfcribbonbutton"></a>  CMFCRibbonButton::CMFCRibbonButton  
- Şerit düğmesi nesnesi oluşturur.  
+ Bir Şerit düğme nesnesi oluşturur.  
   
 ```  
 CMFCRibbonButton(
@@ -322,19 +322,19 @@ CMFCRibbonButton(
  Düğme komut Kimliğini belirtir.  
   
  [in] *lpszText*  
- Düğme metni etiketini belirtir.  
+ Düğmenin metin etiketini belirtir.  
   
  [in] *nSmallImageIndex*  
- Düğmenin küçük resim sıfır tabanlı bir dizini üst kategori görüntü listesini belirtir.  
+ Bir düğmenin küçük resmi sıfır tabanlı dizini üst kategori görüntü listesini belirtir.  
   
  [in] *nLargeImageIndex*  
- Düğmenin büyük görüntü sıfır tabanlı bir dizini üst kategori görüntü listesini belirtir.  
+ Bir düğmenin büyük görüntü sıfır tabanlı dizini üst kategori görüntü listesini belirtir.  
   
  [in] *hIcon*  
- Düğmenin resim olarak uygulamanın kullandığı simgesi için bir tanıtıcı belirtir.  
+ Düğmenin resim olarak uygulamanın kullandığı simge için bir tanıtıcı belirtir.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCRibbonButton` nesnesi.  
+ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCRibbonButton` nesne.  
   
  [!code-cpp[NVC_MFC_RibbonApp#6](../../mfc/reference/codesnippet/cpp/cmfcribbonbutton-class_2.cpp)]  
   
@@ -396,7 +396,7 @@ virtual int DrawRibbonText(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="findsubitemindexbyid"></a>  CMFCRibbonButton::FindSubItemIndexByID  
- Belirtilen komut kimliğiyle ilişkili bir açılır menü öğesini dizinini döndürür  
+ Belirtilen komut kimliğiyle ilişkili bir açılır menü öğesinin dizinini döndürür  
   
 ```  
 int FindSubItemIndexByID(UINT uiID) const;  
@@ -404,10 +404,10 @@ int FindSubItemIndexByID(UINT uiID) const;
   
 ### <a name="parameters"></a>Parametreler  
  [in] *uiID*  
- Açılır menü öğesi komut Kimliğini belirtir.  
+ Açılır menü öğesinin komut Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İle ilişkili alt öğenin sıfır tabanlı dizini *uiID*. Bu tür bir alt öğe ise -1.  
+ İlişkili olduğu alt öğenin sıfır tabanlı dizini *uiID*. Böyle bir alt öğe yoksa -1.  
   
 ##  <a name="getcommandrect"></a>  CMFCRibbonButton::GetCommandRect  
 
@@ -449,7 +449,7 @@ HICON GetIcon(BOOL bLargeIcon = TRUE) const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getimageindex"></a>  CMFCRibbonButton::GetImageIndex  
- Düğmesi ile ilişkili resim dizinini döndürür.  
+ Düğme ile ilişkili görüntünün dizinini döndürür.  
   
 ```  
 int GetImageIndex(BOOL bLargeImage) const;  
@@ -457,7 +457,7 @@ int GetImageIndex(BOOL bLargeImage) const;
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bLargeImage*  
- Varsa `TRUE`, büyük görüntüleri içeren; Aksi takdirde, küçük resimleri içeren görüntü listesinde resim dizinini döndürür resim listesi resim dizinini döndürür.  
+ TRUE ise büyük resimler içeren görüntü listesinden görüntü dizini döndürür; Aksi takdirde, küçük resimler içeren görüntü listesinden görüntü dizini döndürür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlişkili görüntü listesinde düğmenin resim dizini.  
@@ -491,14 +491,14 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getmenu"></a>  CMFCRibbonButton::GetMenu  
- Şerit düğmesi atanmış bir Windows menüsü için bir işleyici döner.  
+ Şerit düğmesi için atanmış bir Windows menüsüne bir tanıtıcı döndürür.  
   
 ```  
 HMENU GetMenu() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Düğmeye atanmış bir Windows menüsü için bir tanıtıcı; `NULL` menüsü atandı olup olmadığını.  
+ Düğmeye atanan bir Windows menüsüne bir tanıtıcı; Atanmış bir menü yok yoksa NULL.  
   
 ##  <a name="getmenurect"></a>  CMFCRibbonButton::GetMenuRect  
 
@@ -647,14 +647,14 @@ virtual BOOL IsCommandAreaHighlighted() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isdefaultcommand"></a>  CMFCRibbonButton::IsDefaultCommand  
- Şerit düğmesi için varsayılan komut etkinleştirilip etkinleştirilmeyeceğini belirtir.  
+ Bir Şerit düğmesi için varsayılan komut etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
 ```  
 BOOL IsDefaultCommand() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Şerit düğmesi için varsayılan komut etkinleştirilirse; `FALSE` Aksi takdirde.  
+ Bir Şerit düğmesi için varsayılan komut etkinleştirilirse TRUE; FALSE Aksi takdirde.  
   
 ##  <a name="isdefaultpanelbutton"></a>  CMFCRibbonButton::IsDefaultPanelButton  
 
@@ -730,7 +730,7 @@ BOOL IsRightAlignMenu() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Menü sağa hizalı ise; Aksi takdirde `FALSE`.  
+ Menü sağa hizalı ise TRUE; Aksi durumda FALSE.  
   
 ##  <a name="issinglelinetext"></a>  CMFCRibbonButton::IsSingleLineText  
 
@@ -756,7 +756,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onclick"></a>  CMFCRibbonButton::OnClick  
- Kullanıcı düğmesini tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı düğmeye tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnClick(CPoint point);
@@ -764,10 +764,10 @@ virtual void OnClick(CPoint point);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *noktası*  
- Fare tıklatma konumunu belirtir.  
+ Fare tıklatın konumunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu olayı işlemek istiyorsanız, bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Bu olayı işlemek isterseniz türetilen bir sınıfta bu yöntemi yok sayın.  
   
 ##  <a name="ondraw"></a>  CMFCRibbonButton::OnDraw  
 
@@ -815,7 +815,7 @@ void RemoveAllSubItems();
 ```  
   
 ##  <a name="removesubitem"></a>  CMFCRibbonButton::RemoveSubItem  
- Menü öğesi açılır menüsünden kaldırır.  
+ Açılır menüden bir menü öğesini kaldırır.  
   
 ```  
 BOOL RemoveSubItem(int nIndex);
@@ -823,10 +823,10 @@ BOOL RemoveSubItem(int nIndex);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nIndex*  
- Kaldırmak istediğiniz menü öğesi sıfır tabanlı dizini belirtir.  
+ Kaldırmak istediğiniz menü öğesinin sıfır tabanlı dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Belirtilen öğe başarıyla kaldırıldıysa; Aksi takdirde `FALSE` varsa *nIndex* negatif veya açılır menüde menü öğelerinin sayısını aşıyor.  
+ Belirtilen öğe başarıyla kaldırıldıysa TRUE; Aksi takdirde FALSE ise *nIndex* negatif veya açılır menüsündeki menü öğelerinin sayısını aşıyor.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonButton::SetACCData  
  Şerit düğmesi için erişilebilirlik verilerini ayarlar.  
@@ -845,12 +845,12 @@ virtual BOOL SetACCData(
  Şerit öğesi için erişilebilirlik verileri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` başarılı; Aksi takdirde FALSE.  
+ Başarılı olursa sahipse TRUE değerini döndürür; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setalwayslargeimage"></a>  CMFCRibbonButton::SetAlwaysLargeImage  
- Kullanıcı düğmesi daraltıldığında düğme büyük görüntülenir veya küçük bir görüntü belirtir.  
+ Kullanıcı düğmeyi daraltıldığında düğmesi büyük görüntüler veya küçük bir resmi belirtir.  
   
 ```  
 void SetAlwaysLargeImage(BOOL bSet=TRUE);
@@ -858,10 +858,10 @@ void SetAlwaysLargeImage(BOOL bSet=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bInternet*  
- Varsa `TRUE`, büyük bir görüntü düğme görüntülenir. Aksi takdirde, küçük bir görüntü düğme görüntülenir.  
+ TRUE ise, büyük bir görüntü düğme görüntülenir. Aksi takdirde, bir küçük resim düğme görüntülenir.  
   
 ##  <a name="setdefaultcommand"></a>  CMFCRibbonButton::SetDefaultCommand  
- Şerit düğmesi için varsayılan komut sağlar.  
+ Şerit düğmesi için varsayılan komut etkinleştirir.  
   
 ```  
 void SetDefaultCommand(BOOL bSet=TRUE);
@@ -869,10 +869,10 @@ void SetDefaultCommand(BOOL bSet=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bInternet*  
- Varsa `TRUE`, kendi varsayılan komut düğmesi yürütebilir. Varsa `FALSE`, düğme kendi varsayılan komutu yürütülemiyor.  
+ TRUE ise, kendi varsayılan komut düğmesi yürütebilir. FALSE ise, düğmeyi kendi varsayılan komutu yürütülemiyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- *bInternet* yalnızca düğmesi menü olduğunda geçerlidir. Varsa *bInternet* olan `TRUE`, kendi varsayılan komut düğmesi yürütebilir ve atanan açılır menü yalnızca bir kullanıcı ok düğmesine sağ ucundaki tıkladığında görüntülenir. Aksi takdirde, düğme kendi varsayılan komutu yürütülemiyor ve açılır menü düğmesi alanı bağımsız olarak kullanıcı görünür.  
+ *bInternet* yalnızca düğme menü olduğunda geçerlidir. Varsa *bInternet* TRUE ise, kendi varsayılan komut düğmesi yürütebilir ve yalnızca bir kullanıcı düğmeye sağ tarafındaki oka tıkladığında atanmış açılır menü görünür. Aksi takdirde, düğmeyi kendi varsayılan komutu yürütülemiyor ve düğmeyi alanı bağımsız olarak kullanıcı tıkladığında açılan menü görüntülenir.  
   
 ##  <a name="setdescription"></a>  CMFCRibbonButton::SetDescription  
 
@@ -887,7 +887,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setimageindex"></a>  CMFCRibbonButton::SetImageIndex  
- Bir dizin düğme görüntüsü atar.  
+ Düğme görüntüsü için dizin atar.  
   
 ```  
 void SetImageIndex(
@@ -900,7 +900,7 @@ void SetImageIndex(
  Görüntü dizini belirtir.  
   
  [in] *bLargeImage*  
- Varsa `TRUE`, belirtilen dizinde büyük görüntüleri işaret eder. Aksi takdirde dizin küçük resimleri listesine ifade eder.  
+ TRUE ise belirtilen dizinde büyük resimler listesine ifade eder. Aksi takdirde, küçük resimler listesine dizini ifade eder.  
   
 ##  <a name="setmenu"></a>  CMFCRibbonButton::SetMenu  
  Açılır menü için Şerit düğmesi atar.  
@@ -919,19 +919,19 @@ void SetMenu(
   
 ### <a name="parameters"></a>Parametreler  
  *hMenu*  
- Windows menüsü için bir tanıtıcı.  
+ Windows menüsü tanıtıcı.  
   
  *bIsDefaultCommand*  
- Varsa `TRUE`, kendi varsayılan komut düğmesi yürütebilir; Aksi halde, bir açılır menü düğmesi görüntüler.  
+ TRUE ise, kendi varsayılan komut düğmesi yürütebilir; Aksi halde düğme, açılır menü görüntüler.  
   
  *bRightAlign*  
- Varsa `TRUE`, sağa hizalı menüsü. Aksi takdirde, menü sola hizalı olur.  
+ TRUE ise, menü sağa hizalanır. Aksi halde menü sola hizalanır.  
   
  *uiMenuResID*  
  Bir menü kaynak kimliği  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulama düğme menü atarken düğmesi, sağ tarafta bir ok görüntüler. Varsa *bIsDefaultCommand* olan `TRUE`, yalnızca kullanıcı oku tıkladığında menüsü görüntülenir. Kullanıcı düğmesine tıklarsa, kendi varsayılan komutu yürütülür. Varsa *bIsDefaultCommand* olan `FALSE`, herhangi bir yere düğmesini tıklatarak menüsü görüntülenir.  
+ Uygulama menü düğmesine atar, düğmenin sağ tarafında bir ok görüntüler. Varsa *bIsDefaultCommand* doğru ise, yalnızca kullanıcı oka tıkladığında menü görünür. Kullanıcı düğmeyi tıklarsa, kendi varsayılan komut yürütülür. Varsa *bIsDefaultCommand* yanlış, herhangi bir düğmeye tıklayarak menü görünür.  
   
 ##  <a name="setparentcategory"></a>  CMFCRibbonButton::SetParentCategory  
 
@@ -946,7 +946,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setrightalignmenu"></a>  CMFCRibbonButton::SetRightAlignMenu  
- Açılır menü düğmesi köşesine hizalar.  
+ Açılır menü düğmesine köşesine hizalar.  
   
 ```  
 void SetRightAlignMenu(BOOL bSet=TRUE);
@@ -954,7 +954,7 @@ void SetRightAlignMenu(BOOL bSet=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bInternet*  
- Varsa `TRUE`, sağa hizalı menüsü. Aksi halde menü sola hizalı  
+ TRUE ise, menü sağa hizalanır. Aksi takdirde, sola hizalanmış menüsü  
   
 ##  <a name="settext"></a>  CMFCRibbonButton::SetText  
 

@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4bcc39645c079ef9a0b61a4e12782223dd19a92
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 17ec3560e7faf8c49f410437c79609bfb871a9c9
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042228"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849955"
 ---
 # <a name="cmfcvisualmanagerwindows7-class"></a>CMFCVisualManagerWindows7 sınıfı
-`CMFCVisualManagerWindows7` Uygulamanın görünümünü sunan bir [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama.  
+`CMFCVisualManagerWindows7` Uygulamaya görünümünü verir bir [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,63 +49,63 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`CMFCVisualManagerWindows7::CleanStyle`|Geçerli görsel stil temizler ve varsayılan görsel stil sıfırlar.|  
-|`CMFCVisualManagerWindows7::CleanUp`|Kullanıcı arabiriminde nesnelerin tümünü temizler ve menüleri sıfırlar.|  
-|`CMFCVisualManagerWindows7::DrawNcBtn`|Bir düğme çerçevesi istemci olmayan alanında çizer. Framework kullandığı çizmek için bu yöntem simge durumuna küçült, en üst düzeye çıkarmak, kapatın ve pencere çerçevesi sağ üst köşesindeki düğmeleri geri yükleyin. Program Aero olmayan bir tema kullandığında bu yöntem çağrılmaz.|  
-|`CMFCVisualManagerWindows7::DrawNcText`|Metin çerçevesi istemci olmayan alanında çizer. Çerçeve çerçeve pencerenin üstündeki başlık çubuğunda uygulama başlığı çizmek için bu yöntemi kullanır.|  
+|`CMFCVisualManagerWindows7::CleanStyle`|Geçerli görsel stil temizler ve varsayılan görsel stili sıfırlar.|  
+|`CMFCVisualManagerWindows7::CleanUp`|Tüm kullanıcı arabirimindeki nesnelerin temizler ve menüler sıfırlar.|  
+|`CMFCVisualManagerWindows7::DrawNcBtn`|Bir düğme istemci olmayan alanda karesinde çizer. Framework kullandığı çizmek için bu yöntem en aza indirmek, en üst düzeye çıkarmak kapatın ve düğmeleri pencere çerçevesi sağ üst köşesindeki geri yükleyin. Bu yöntem, program Aero olmayan bir tema kullandığında çağrılmaz.|  
+|`CMFCVisualManagerWindows7::DrawNcText`|Metin istemci olmayan alanda karesinde çizer. Çerçeve çerçeve penceresinin üst kısmındaki başlık çubuğunda uygulama başlığı çizmek için bu yöntemi kullanır.|  
 |`CMFCVisualManagerWindows7::DrawSeparator`|Ayırıcı çizer [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md).|  
-|`CMFCVisualManagerWindows7::GetRibbonBar`|Alır [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md) kullanıcı arabirimiyle ilişkilendirilmiş.|  
-|[CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor](#getribboneditbackgroundcolor)|Şerit düzenleme kutusuna arka plan rengi alır.|  
-|`CMFCVisualManagerWindows7::GetRibbonPopupBorderSize`|Geçersiz kılmaları [CMFCVisualManager::GetRibbonPopupBorderSize](../../mfc/reference/cmfcvisualmanager-class.md#getribbonpopupbordersize)|  
-|`CMFCVisualManagerWindows7::GetRibbonQuickAccessToolBarChevronOffset`|Geçersiz kılmaları [CMFCVisualManager::GetRibbonQuickAccessToolBarChevronOffset](../../mfc/reference/cmfcvisualmanager-class.md#getribbonquickaccesstoolbarchevronoffset)|  
-|`CMFCVisualManagerWindows7::GetRibbonQuickAccessToolBarRightMargin`|Geçersiz kılmaları [CMFCVisualManager::GetRibbonQuickAccessToolBarRightMargin](../../mfc/reference/cmfcvisualmanager-class.md#getribbonquickaccesstoolbarrightmargin)|  
-|`CMFCVisualManagerWindows7::IsHighlightWholeMenuItem`|Geçersiz kılmaları [CMFCVisualManagerWindows::IsHighlightWholeMenuItem](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ishighlightwholemenuitem)|  
-|`CMFCVisualManagerWindows7::IsOwnerDrawMenuCheck`|Geçersiz kılmaları [CMFCVisualManager::IsOwnerDrawMenuCheck](../../mfc/reference/cmfcvisualmanager-class.md#isownerdrawmenucheck)|  
-|`CMFCVisualManagerWindows7::IsRibbonPresent`|Belirler olup bir `CMFCRibbonBar` mevcut ve görünür durumda.|  
-|`CMFCVisualManagerWindows7::OnDrawButtonBorder`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnDrawButtonBorder](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawbuttonborder)|  
-|`CMFCVisualManagerWindows7::OnDrawCheckBoxEx`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnDrawCheckBoxEx](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawcheckboxex)|  
-|`CMFCVisualManagerWindows7::OnDrawComboDropButton`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnDrawComboDropButton](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawcombodropbutton)|  
-|`CMFCVisualManagerWindows7::OnDrawDefaultRibbonImage`|Geçersiz kılmaları [CMFCVisualManager::OnDrawDefaultRibbonImage](../../mfc/reference/cmfcvisualmanager-class.md#ondrawdefaultribbonimage)|  
-|`CMFCVisualManagerWindows7::OnDrawMenuBorder`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnDrawMenuBorder](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawmenuborder)|  
-|`CMFCVisualManagerWindows7::OnDrawMenuCheck`|Geçersiz kılmaları [CMFCVisualManager::OnDrawMenuCheck](../../mfc/reference/cmfcvisualmanager-class.md#ondrawmenucheck)|  
-|`CMFCVisualManagerWindows7::OnDrawMenuLabel`|Geçersiz kılmaları [CMFCVisualManager::OnDrawMenuLabel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawmenulabel)|  
+|`CMFCVisualManagerWindows7::GetRibbonBar`|Alır [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md) kullanıcı arabirimi ile ilişkilendirilmiş.|  
+|[CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor](#getribboneditbackgroundcolor)|Bir Şerit düzenleme kutusunun arka plan rengini alır.|  
+|`CMFCVisualManagerWindows7::GetRibbonPopupBorderSize`|Geçersiz kılmalar [CMFCVisualManager::GetRibbonPopupBorderSize](../../mfc/reference/cmfcvisualmanager-class.md#getribbonpopupbordersize)|  
+|`CMFCVisualManagerWindows7::GetRibbonQuickAccessToolBarChevronOffset`|Geçersiz kılmalar [CMFCVisualManager::GetRibbonQuickAccessToolBarChevronOffset](../../mfc/reference/cmfcvisualmanager-class.md#getribbonquickaccesstoolbarchevronoffset)|  
+|`CMFCVisualManagerWindows7::GetRibbonQuickAccessToolBarRightMargin`|Geçersiz kılmalar [CMFCVisualManager::GetRibbonQuickAccessToolBarRightMargin](../../mfc/reference/cmfcvisualmanager-class.md#getribbonquickaccesstoolbarrightmargin)|  
+|`CMFCVisualManagerWindows7::IsHighlightWholeMenuItem`|Geçersiz kılmalar [CMFCVisualManagerWindows::IsHighlightWholeMenuItem](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ishighlightwholemenuitem)|  
+|`CMFCVisualManagerWindows7::IsOwnerDrawMenuCheck`|Geçersiz kılmalar [CMFCVisualManager::IsOwnerDrawMenuCheck](../../mfc/reference/cmfcvisualmanager-class.md#isownerdrawmenucheck)|  
+|`CMFCVisualManagerWindows7::IsRibbonPresent`|Belirler olup olmadığını bir `CMFCRibbonBar` mevcut ve görünür.|  
+|`CMFCVisualManagerWindows7::OnDrawButtonBorder`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnDrawButtonBorder](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawbuttonborder)|  
+|`CMFCVisualManagerWindows7::OnDrawCheckBoxEx`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnDrawCheckBoxEx](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawcheckboxex)|  
+|`CMFCVisualManagerWindows7::OnDrawComboDropButton`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnDrawComboDropButton](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawcombodropbutton)|  
+|`CMFCVisualManagerWindows7::OnDrawDefaultRibbonImage`|Geçersiz kılmalar [CMFCVisualManager::OnDrawDefaultRibbonImage](../../mfc/reference/cmfcvisualmanager-class.md#ondrawdefaultribbonimage)|  
+|`CMFCVisualManagerWindows7::OnDrawMenuBorder`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnDrawMenuBorder](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawmenuborder)|  
+|`CMFCVisualManagerWindows7::OnDrawMenuCheck`|Geçersiz kılmalar [CMFCVisualManager::OnDrawMenuCheck](../../mfc/reference/cmfcvisualmanager-class.md#ondrawmenucheck)|  
+|`CMFCVisualManagerWindows7::OnDrawMenuLabel`|Geçersiz kılmalar [CMFCVisualManager::OnDrawMenuLabel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawmenulabel)|  
 |`CMFCVisualManagerWindows7::OnDrawRadioButton`|Geçersiz kılmaları `CMFCVisualManager::OnDrawRadioButton`|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonApplicationButton`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonApplicationButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonapplicationbutton)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonButtonBorder`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonbuttonborder)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonCaption`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonCaption](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncaption)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonCaptionButton`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonCaptionButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncaptionbutton)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonCategory`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonCategory](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncategory)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonCategoryTab`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonCategoryTab](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncategorytab)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonDefaultPaneButton`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonDefaultPaneButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbondefaultpanebutton)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonGalleryButton`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonGalleryButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbongallerybutton)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonApplicationButton`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonApplicationButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonapplicationbutton)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonButtonBorder`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonbuttonborder)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonCaption`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonCaption](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncaption)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonCaptionButton`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonCaptionButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncaptionbutton)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonCategory`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonCategory](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncategory)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonCategoryTab`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonCategoryTab](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncategorytab)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonDefaultPaneButton`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonDefaultPaneButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbondefaultpanebutton)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonGalleryButton`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonGalleryButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbongallerybutton)|  
 |`CMFCVisualManagerWindows7::OnDrawRibbonLaunchButton`|Geçersiz kılmaları `CMFCVisualManager::OnDrawRibbonLaunchButton`|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonMenuCheckFrame`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonMenuCheckFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonmenucheckframe)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonPanel`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonPanel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonpanel)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonPanelCaption`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonPanelCaption](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonpanelcaption)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonProgressBar`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonProgressBar](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonprogressbar)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonRecentFilesFrame`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonRecentFilesFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonrecentfilesframe)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonSliderChannel`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonSliderChannel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderchannel)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonSliderThumb`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonSliderThumb](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderthumb)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonSliderZoomButton`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonSliderZoomButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderzoombutton)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonStatusBarPane`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonStatusBarPane](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonstatusbarpane)|  
-|`CMFCVisualManagerWindows7::OnDrawRibbonTabsFrame`|Geçersiz kılmaları [CMFCVisualManager::OnDrawRibbonTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbontabsframe)|  
-|`CMFCVisualManagerWindows7::OnDrawStatusBarSizeBox`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawstatusbarsizebox)|  
-|`CMFCVisualManagerWindows7::OnFillBarBackground`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnFillBarBackground](../../mfc/reference/cmfcvisualmanagerwindows-class.md#onfillbarbackground)|  
-|`CMFCVisualManagerWindows7::OnFillButtonInterior`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnFillButtonInterior](../../mfc/reference/cmfcvisualmanagerwindows-class.md#onfillbuttoninterior)|  
-|[CMFCVisualManagerWindows7::OnFillMenuImageRect](#onfillmenuimagerect)|Menü öğesi görüntüleri etrafına doldurduğunda framework bu yöntemi çağırır.|  
-|`CMFCVisualManagerWindows7::OnFillRibbonButton`|Geçersiz kılmaları [CMFCVisualManager::OnFillRibbonButton](../../mfc/reference/cmfcvisualmanager-class.md#onfillribbonbutton)|  
-|`CMFCVisualManagerWindows7::OnFillRibbonQuickAccessToolBarPopup`|Geçersiz kılmaları [CMFCVisualManager::OnFillRibbonQuickAccessToolBarPopup](../../mfc/reference/cmfcvisualmanager-class.md#onfillribbonquickaccesstoolbarpopup)|  
-|`CMFCVisualManagerWindows7::OnHighlightMenuItem`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnHighlightMenuItem](../../mfc/reference/cmfcvisualmanagerwindows-class.md#onhighlightmenuitem)|  
-|`CMFCVisualManagerWindows7::OnNcActivate`|Geçersiz kılmaları [CMFCVisualManager::OnNcActivate](../../mfc/reference/cmfcvisualmanager-class.md#onncactivate)|  
-|`CMFCVisualManagerWindows7::OnNcPaint`|Geçersiz kılmaları [CMFCVisualManager::OnNcPaint](../../mfc/reference/cmfcvisualmanager-class.md#onncpaint)|  
-|`CMFCVisualManagerWindows7::OnUpdateSystemColors`|Geçersiz kılmaları [CMFCVisualManagerWindows::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanagerwindows-class.md#onupdatesystemcolors)|  
-|`CMFCVisualManagerWindows7::SetResourceHandle`|Görsel Yöneticisi özniteliklerini açıklayan kaynağı tanıtıcısı ayarlar.|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonMenuCheckFrame`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonMenuCheckFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonmenucheckframe)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonPanel`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonPanel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonpanel)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonPanelCaption`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonPanelCaption](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonpanelcaption)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonProgressBar`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonProgressBar](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonprogressbar)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonRecentFilesFrame`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonRecentFilesFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonrecentfilesframe)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonSliderChannel`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonSliderChannel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderchannel)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonSliderThumb`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonSliderThumb](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderthumb)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonSliderZoomButton`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonSliderZoomButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderzoombutton)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonStatusBarPane`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonStatusBarPane](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonstatusbarpane)|  
+|`CMFCVisualManagerWindows7::OnDrawRibbonTabsFrame`|Geçersiz kılmalar [CMFCVisualManager::OnDrawRibbonTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbontabsframe)|  
+|`CMFCVisualManagerWindows7::OnDrawStatusBarSizeBox`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ondrawstatusbarsizebox)|  
+|`CMFCVisualManagerWindows7::OnFillBarBackground`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnFillBarBackground](../../mfc/reference/cmfcvisualmanagerwindows-class.md#onfillbarbackground)|  
+|`CMFCVisualManagerWindows7::OnFillButtonInterior`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnFillButtonInterior](../../mfc/reference/cmfcvisualmanagerwindows-class.md#onfillbuttoninterior)|  
+|[CMFCVisualManagerWindows7::OnFillMenuImageRect](#onfillmenuimagerect)|Menü öğesi resimlerinin etrafına doldururken framework bu yöntemi çağırır.|  
+|`CMFCVisualManagerWindows7::OnFillRibbonButton`|Geçersiz kılmalar [CMFCVisualManager::OnFillRibbonButton](../../mfc/reference/cmfcvisualmanager-class.md#onfillribbonbutton)|  
+|`CMFCVisualManagerWindows7::OnFillRibbonQuickAccessToolBarPopup`|Geçersiz kılmalar [CMFCVisualManager::OnFillRibbonQuickAccessToolBarPopup](../../mfc/reference/cmfcvisualmanager-class.md#onfillribbonquickaccesstoolbarpopup)|  
+|`CMFCVisualManagerWindows7::OnHighlightMenuItem`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnHighlightMenuItem](../../mfc/reference/cmfcvisualmanagerwindows-class.md#onhighlightmenuitem)|  
+|`CMFCVisualManagerWindows7::OnNcActivate`|Geçersiz kılmalar [CMFCVisualManager::OnNcActivate](../../mfc/reference/cmfcvisualmanager-class.md#onncactivate)|  
+|`CMFCVisualManagerWindows7::OnNcPaint`|Geçersiz kılmalar [CMFCVisualManager::OnNcPaint](../../mfc/reference/cmfcvisualmanager-class.md#onncpaint)|  
+|`CMFCVisualManagerWindows7::OnUpdateSystemColors`|Geçersiz kılmalar [CMFCVisualManagerWindows::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanagerwindows-class.md#onupdatesystemcolors)|  
+|`CMFCVisualManagerWindows7::SetResourceHandle`|Görsel yöneticiyi özniteliklerini açıklayan kaynağı tanıtıcısı ayarlar.|  
 |`CMFCVisualManagerWindows7::SetStyle`|Renk düzenini ayarlar `CMFCVisualManagerWindows7` GUI.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım `CMFCVisualManagerWindows7` varsayılan taklit etmek için uygulamanızın görünümünü değiştirmek için sınıf [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama. Bu sınıf, uygulamanızın bir Windows sürümünde çalışıyorsa, geçerli olmayabilir öncesi [!INCLUDE[win7](../../build/includes/win7_md.md)]. Bu senaryoda, uygulama içinde tanımlanan varsayılan visual Yöneticisi kullanır [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
+ Kullanım `CMFCVisualManagerWindows7` varsayılan taklit etmek için uygulamanın görünümünü değiştirmek için sınıf [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama. Bu sınıf, uygulamanızın bir Windows sürümünde çalışıyorsa geçerli olmayabilir öncesi [!INCLUDE[win7](../../build/includes/win7_md.md)]. Bu senaryoda uygulamanın tanımlanan varsayılan görsel yöneticiyi kullandığı [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
   
- Birden çok yöntem hem de CMFCVisualManagerWindows7 devralır [CMFCVisualManagerWindows sınıfı](../../mfc/reference/cmfcvisualmanagerwindows-class.md) ve `CMFCVisualManager` sınıfı. Önceki bölümde listelenen yöntemleri için yeni yöntemler şunlardır `CMFCVisualManagerWindows7` sınıfı.  
+ CMFCVisualManagerWindows7 birden çok yöntem hem de devralan [CMFCVisualManagerWindows sınıfı](../../mfc/reference/cmfcvisualmanagerwindows-class.md) ve `CMFCVisualManager` sınıfı. Önceki bölümde listelenen yöntemlerden istediğinizi yeni yöntemlerdir `CMFCVisualManagerWindows7` sınıfı.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -138,7 +138,7 @@ CMFCVisualManagerWindows7();
 ```  
   
 ##  <a name="getribboneditbackgroundcolor"></a>  CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor  
- Şerit düzenleme kutusu arka plan rengini alır.  
+ Bir Şerit düzenleme kutusunun arka plan rengini alır.  
   
 ```  
 virtual COLORREF GetRibbonEditBackgroundColor (
@@ -150,24 +150,24 @@ virtual COLORREF GetRibbonEditBackgroundColor (
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pEdit*  
- Düzenleme denetimine işaretçi. Bu değer olamaz `NULL`.  
+ Düzenleme denetimine yönelik işaretçi. Bu değer NULL olamaz.  
   
  [out] *bIsHighlighted*  
- Şerit kutusunu vurgulanmış olup olmadığını döndürür.  
+ Şerit kutusunda vurgulanan olup olmadığını döndürür.  
   
  [out] *bIsPaneHighlighted*  
- Döndürür `TRUE` Şerit panel varsa *pEdit* vurgulanır.  
+ Döndürür TRUE, Şerit paneli içerir *pEdit* vurgulanır.  
   
  [out] *bIsDisabled*  
- Döndürür olup olmadığını *pEdit* devre dışı bırakılır.  
+ Döndürür olmadığını *pEdit* devre dışı bırakıldı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Düzenleme kutusuna arka plan rengini *pEdit*.  
+ Düzenleme kutusunun arka plan rengini *pEdit*.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onfillmenuimagerect"></a>  CMFCVisualManagerWindows7::OnFillMenuImageRect  
- Menü öğesi görüntüsü etrafına doldurduğunda framework bu yöntemi çağırır.  
+ Bir menü öğesi görüntüsünü etrafına doldururken framework bu yöntemi çağırır.  
   
 ```  
 virtual void OnFillMenuImageRect(
@@ -179,13 +179,13 @@ virtual void OnFillMenuImageRect(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- Menü düğmesinin cihaz bağlamı için bir işaretçi.  
+ Bir menü düğmesinin cihaz bağlamı için bir işaretçi.  
   
  [in] *pButton*  
- Bir işaretçi bir `CMFCToolBarButton`. Bu düğme için arka plan framework doldurur.  
+ Bir işaretçi bir `CMFCToolBarButton`. Çerçeve arka plan için bu düğmeyi doldurur.  
   
- [in] *rect*  
- Menü düğmesine görüntü alanını sınırlarının belirtir dikdörtgen.  
+ [in] *dikdörtgen*  
+ Menü düğmesine görüntü alanını sınırlarını belirten bir dikdörtgen.  
   
  [in] *durumu*  
  Düğme durumu.  

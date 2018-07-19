@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3e578d3aece15f191bfad858923470d09bede74
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: a098f275ec0c7b553d7ac192d7b588ffa6dcfa1b
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039813"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849879"
 ---
 # <a name="cmultilock-class"></a>CMultiLock sınıfı
-Birden çok iş parçacıklı programda kaynaklara erişimi denetlemek kullanılan erişim denetim mekanizmasını temsil eder.  
+Çoklu iş parçacığı kullanan programda kaynaklara erişimi denetlemek için kullanılan erişim denetim mekanizmasını temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,24 +46,24 @@ class CMultiLock
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMultiLock::CMultiLock](#cmultilock)|Oluşturan bir `CMultiLock` nesnesi.|  
+|[CMultiLock::CMultiLock](#cmultilock)|Oluşturur bir `CMultiLock` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMultiLock::IsLocked](#islocked)|Dizideki belirli eşitleme nesnesi kilitliyse belirler.|  
-|[CMultiLock::Lock](#lock)|Eşitleme nesneler dizisi bekler.|  
-|[CMultiLock::Unlock](#unlock)|Tüm ait eşitleme nesneleri serbest bırakır.|  
+|[CMultiLock::IsLocked](#islocked)|Bir dizideki belirli bir eşitleme nesnesi kilitli olduğunu belirler.|  
+|[CMultiLock::Lock](#lock)|Eşitleme nesneleri dizisi bekler.|  
+|[CMultiLock::Unlock](#unlock)|Sahip olunan eşitleme nesneleri serbest bırakır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CMultiLock` bir taban sınıfı yok.  
+ `CMultiLock` bir temel sınıfa sahip değil.  
   
- Eşitleme sınıflarını kullanma [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), ve [CEvent](../../mfc/reference/cevent-class.md), ya da oluşturabileceğiniz bir `CMultiLock` veya [CSingleLock](../../mfc/reference/csinglelock-class.md)nesne beklemesi ve eşitleme nesnesi serbest bırakın. Kullanmak `CMultiLock` belirli bir zamanda kullanabileceğinizi birden fazla nesne olduğunda. Kullanım `CSingleLock` yalnızca gerektiğinde bir nesne üzerinde aynı anda beklenecek.  
+ Eşitleme sınıflarını kullanma [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), ve [CEvent](../../mfc/reference/cevent-class.md), ya da oluşturabileceğiniz bir `CMultiLock` veya [CSingleLock](../../mfc/reference/csinglelock-class.md)eşitleme nesneyi serbest nesnesini bekleyebilir. Kullanma `CMultiLock` kullanabileceğinizi belirli bir zamanda birden fazla nesne olduğunda. Kullanım `CSingleLock` yalnızca gerektiğinde bir kerede bir nesne üzerinde bekleyin.  
   
- Kullanılacak bir `CMultiLock` nesne, önce beklemesi istediğiniz eşitleme nesnelerinin bir dizisi oluşturun. Ardından, çağrı `CMultiLock` denetimli kaynağın sınıfında üye işlevi içinde nesnenin oluşturucusu. ' I çağırın [kilit](#lock) bir kaynak olup olmadığını belirlemek için üye işlevi (işaret). İse, üye işlevini geri kalanı ile devam edin. Bir kaynak olup olmadığını zaman serbest bırakılacak bir kaynak için belirtilen miktarı bekleyin ya da hata döndürür. Bir kaynak kullanımını tamamlandıktan sonra ya da çağrısı [Unlock](#unlock) , işlev `CMultiLock` nesnesidir izin ver veya yeniden kullanılmak üzere `CMultiLock` yok edilmesi için nesne.  
+ Kullanılacak bir `CMultiLock` nesne, ilk beklemesi istediğiniz eşitleme nesneleri içeren bir dizi oluşturun. Ardından, arama `CMultiLock` denetimli kaynak sınıfının üye işlevinde içinde nesnesinin Oluşturucusu. Ardından çağırın [kilit](#lock) üye işlevi bir kaynak olup olmadığını belirlemek için (işareti). İse, üye işlevi geri kalanı ile devam edin. Hiçbir kaynak kullanılabilir haldeyse, zaman yayımlanması bir kaynak için belirli bir süre bekleyin veya hata döndürür. Bir kaynak kullanımını tamamlandıktan sonra ya da çağrı [kilidini](#unlock) işlevinin `CMultiLock` nesnedir izin ver veya yeniden kullanılmak üzere `CMultiLock` yok edilecek nesne.  
   
- `CMultiLock` bir iş parçacığı çok sayıda olduğunda nesneleri en yararlı `CEvent` nesneleri yanıt vermesi için. Tümünü içeren bir dizi oluşturmak `CEvent` işaretçiler ve çağrı `Lock`. Bu, iş parçacığı olaylardan biri işaret kadar beklemeniz neden olur.  
+ `CMultiLock` çok sayıda iş parçacığı sahip olduğunda nesneleri faydalı `CEvent` nesneleri için yanıtlayabilir. Tümünü içeren bir dizi oluşturmak `CEvent` işaretçiler ve çağrı `Lock`. Bu olaylardan biri sinyal kadar beklenecek iş parçacığının neden olur.  
   
  Nasıl kullanılacağı hakkında daha fazla bilgi için `CMultiLock` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).  
   
@@ -74,7 +74,7 @@ class CMultiLock
  **Başlık:** afxmt.h  
   
 ##  <a name="cmultilock"></a>  CMultiLock::CMultiLock  
- Oluşturan bir `CMultiLock` nesnesi.  
+ Oluşturur bir `CMultiLock` nesne.  
   
 ```  
 CMultiLock(
@@ -85,19 +85,19 @@ CMultiLock(
   
 ### <a name="parameters"></a>Parametreler  
  *ppObjects*  
- Beklenen için eşitleme nesnelerine işaretçiler dizisi. Olamaz **NULL**.  
+ Beklenen için eşitleme nesneleri için işaretçiler dizisi. NULL olamaz.  
   
  *dwCount*  
- Nesnelerin sayısı *ppObjects*. 0'dan büyük olmalıdır.  
+ Nesne sayısı *ppObjects*. 0'dan büyük olmalıdır.  
   
  *bInitialLock*  
  Başlangıçta sağlanan nesnelerden herhangi birini erişme girişimi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, beklenen için eşitleme nesneler dizisi oluşturduktan sonra çağrılır. Bu genellikle bir kullanılabilir hale gelmesi eşitleme nesneleri için beklemesi gereken iş parçacığı içinde çağrılır.  
+ Bu işlev, beklenen için eşitleme nesneleri dizisi oluşturduktan sonra çağrılır. Bu genellikle bir eşitleme nesneleri kullanılabilir hale gelmesi için beklemesi gereken iş parçacığı içinden çağrılır.  
   
 ##  <a name="islocked"></a>  CMultiLock::IsLocked  
- Belirtilen nesne nonsignaled olup olmadığını belirler (kullanılamaz).  
+ Belirtilen nesnenin nonsignaled olup olmadığını belirler (kullanılamıyor).  
   
 ```  
 BOOL IsLocked(DWORD dwItem);
@@ -105,13 +105,13 @@ BOOL IsLocked(DWORD dwItem);
   
 ### <a name="parameters"></a>Parametreler  
  *dwItem*  
- Durumu sorgulanan nesnesine karşılık gelen nesnelerin dizisindeki dizini.  
+ Dizin durumu sorgulanan nesnesine karşılık gelen nesneleri dizisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen nesne kilitliyse sıfır olmayan; Aksi takdirde 0.  
+ Belirtilen nesnenin kilitli olursa sıfır dışı; Aksi durumda 0.  
   
 ##  <a name="lock"></a>  CMultiLock::Lock  
- Bir veya daha fazla için sağlanan eşitleme nesneleri tarafından denetlenen kaynaklara erişmek için bu işlevi çağırmak `CMultiLock` Oluşturucusu.  
+ Bir veya daha fazla sağlanan eşitleme nesneleri tarafından denetlenen kaynakları erişim kazanmak için bu işlevi çağırın `CMultiLock` Oluşturucusu.  
   
 ```  
 DWORD Lock(
@@ -122,40 +122,40 @@ DWORD Lock(
   
 ### <a name="parameters"></a>Parametreler  
  *dwTimeOut*  
- Eşitleme nesnenin kullanılabilir olması için beklenecek süreyi belirtir (işaret). Varsa **SONSUZ**, `Lock` nesne döndürmeden önce işaret kadar bekler.  
+ Eşitleme nesnesi kullanılabilir olması beklenecek süreyi belirtir (işareti). SONSUZ ise `Lock` döndürmeden önce nesne sinyal kadar bekler.  
   
  *bWaitForAll*  
- Beklenen tüm nesneler, aynı anda dönmeden önce işaret hale olup olmadığını belirtir. Varsa **FALSE**, `Lock` beklenen nesnelerin herhangi biri işaret zaman döndürür.  
+ Tüm nesneler beklenen döndürmeden önce aynı anda sinyalli hale dönüşmesi olup olmadığını belirtir. FALSE ise `Lock` beklenen nesnelerin herhangi biri sinyal zaman döndürür.  
   
  *dwWakeMask*  
- Beklemeyi iptal etmek için kullanılabilir diğer koşulları belirtir. Bu parametre için kullanılabilir seçenekleri tam bir listesi için bkz: [MsgWaitForMultipleObjects](http://msdn.microsoft.com/library/windows/desktop/ms684242) Windows SDK'sındaki.  
+ Beklemeyi iptal etmek için izin verilen diğer koşulları belirtir. Bu parametre için kullanılabilir seçenekler tam bir listesi için bkz. [MsgWaitForMultipleObjects](http://msdn.microsoft.com/library/windows/desktop/ms684242) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Varsa `Lock` döndürdüğü - 1 başarısız olur. Başarılı olursa, aşağıdaki değerlerden birini döndürür:  
+ Varsa `Lock` döndürür - 1 başarısız olur. Başarılı olursa, aşağıdaki değerlerden birini döndürür:  
   
--   Arasında **WAIT_OBJECT_0** ve **WAIT_OBJECT_0** + (nesne - 1 sayısı)  
+-   Arasında WAIT_OBJECT_0 ve WAIT_OBJECT_0 + (nesneler - 1 sayısı)  
   
-     Varsa *bWaitForAll* olan **doğru**, tüm nesneler (kullanılabilir) sinyal. Varsa *bWaitForAll* olan **FALSE**, dönüş değeri - **WAIT_OBJECT_0** işareti nesnenin nesneler dizisi dizininde () kullanılabilir.  
+     Varsa *bWaitForAll* doğru ise, tüm nesneleri (kullanılabilir) sinyal. Varsa *bWaitForAll* yanlış, dönüş değeri - WAIT_OBJECT_0 olduğu dizin (kullanılabilir) işareti verilen nesnenin nesneler dizisi.  
   
-- **WAIT_OBJECT_0** + (nesne sayısı)  
+- WAIT_OBJECT_0 + (nesnelerin sayısı)  
   
-     Belirtilen bir olay *dwWakeMask* iş parçacığının giriş sırada kullanılabilir.  
+     Belirtilen olaya *dwWakeMask* iş parçacığının giriş sırada kullanılabilir.  
   
--   Arasında **WAIT_ABANDONED_0** ve **WAIT_ABANDONED_0** + (nesne - 1 sayısı)  
+-   Arasında WAIT_ABANDONED_0 ve WAIT_ABANDONED_0 + (nesneler - 1 sayısı)  
   
-     Varsa *bWaitForAll* olan **doğru**, tüm nesneleri işaret ve nesneleri en az biri olan bir bırakılan mutex nesne. Varsa *bWaitForAll* olan **FALSE**, dönüş değeri - **WAIT_ABANDONED_0** bekleme memnun bırakılan mutex nesnesinin nesnelerin dizisindeki dizini.  
+     Varsa *bWaitForAll* TRUE ise, tüm nesneleri sinyal ve nesnelerin en az biri olan bırakılan mutex nesnesi. Varsa *bWaitForAll* yanlış, dönüş değeri - WAIT_ABANDONED_0 olduğu dizin bekleme memnun bırakılan mutex nesnesi nesnelerin dizisi.  
   
-- **WAIT_TIMEOUT**  
+- WAIT_TIMEOUT  
   
-     Belirtilen zaman aşımı aralığı *dwTimeOut* olmadan başarılı bekleme süresi.  
+     Belirtilen zaman aşımı aralığı *dwTimeOut* olmadan başarılı bekleme süresi doldu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *bWaitForAll* olan **TRUE**, `Lock` tüm eşitleme nesneleri aynı anda işaret hale hemen başarıyla döndürür. Varsa *bWaitForAll* olan **FALSE**, `Lock` bir veya daha fazla eşitleme nesneleri işaret hale hemen döndürür.  
+ Varsa *bWaitForAll* TRUE ise `Lock` tüm eşitleme nesneleri aynı anda sinyal haline hemen sonra başarıyla döndürür. Varsa *bWaitForAll* false değerine `Lock` bir veya daha fazla eşitleme nesneleri sinyal haline gelir olarak döndürür.  
   
- Varsa `Lock` hemen belirtilen milisaniye sayısı en çok için bekleyeceği iade edilemiyor *dwTimeOut* dönmeden önce parametresi. Varsa *dwTimeOut* olan **SONSUZ**, `Lock` bir nesneye erişimi kazanılan veya bir koşul içinde belirtilen kadar döndürmeyecektir *dwWakeMask* aşıldığı. Aksi halde, eğer `Lock` edildi mümkün eşitleme nesnesi edinmek, onu başarıyla döndürür; Aksi takdirde, bu hata döndürür.  
+ Varsa `Lock` belirtilen milisaniye sayısı en fazla için bekleyeceği hemen döndürülecek kuramıyor *dwTimeOut* döndürmeden önce parametresi. Varsa *dwTimeOut* sonsuzdur, `Lock` bir nesneye erişimi elde veya bir koşul içinde belirtilen kadar döndürmez *dwWakeMask* aşıldığı. Aksi takdirde `Lock` olan bir eşitleme nesnesi almak mümkün başarıyla döndürür; Aksi takdirde, bu hata döndürür.  
   
 ##  <a name="unlock"></a>  CMultiLock::Unlock  
- Sahibi eşitleme nesnesi serbest `CMultiLock`.  
+ Eşitleme nesnesi tarafından sahip olunan serbest `CMultiLock`.  
   
 ```  
 BOOL Unlock();
@@ -168,18 +168,18 @@ BOOL Unlock(
   
 ### <a name="parameters"></a>Parametreler  
  *lCount*  
- Serbest bırakmak için başvuru sayısını sayar. 0'dan büyük olmalıdır. Belirtilen süre nesnenin sayısı maksimum değerini aşmasına neden olur, count değiştirilmez ve işlevi döndürür **FALSE**.  
+ Serbest bırakmak için başvuru sayısını sayar. 0'dan büyük olmalıdır. Belirtilen nesnenin sayısı, en yüksek süreyi aşmasına yol açıyorsa sayısı değiştirilmez ve işlev false değerini döndürür.  
   
  *lPrevCount*  
- Eşitleme nesnesi için önceki sayıyı almak için bir değişken noktalarına. Varsa **NULL**, önceki sayısı alınmadı.  
+ Eşitleme nesnesi için önceki sayıyı almak için bir değişkene işaret eder. NULL ise, önceki sayısı döndürülmez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ İşlev başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev tarafından çağrılır `CMultiLock`'s yıkıcı.  
+ Bu işlevi çağıran `CMultiLock`'s yıkıcı.  
   
- İlk biçimini `Unlock` tarafından yönetilen eşitleme nesnenin kilidini açma girişiminde `CMultiLock`. İkinci biçiminde `Unlock` kilidini açma girişiminde `CSemaphore` tarafından sahip olunan nesneler `CMultiLock`. Varsa `CMultiLock` herhangi kendisine değil kilitli `CSemaphore` nesnesi, işlevi döndürür **FALSE**; Aksi takdirde döndürdüğü **TRUE**. *lCount* ve *lpPrevCount* parametrelerinin tam olarak aynıdır [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). İkinci biçiminde `Unlock` nadiren multilock durumlar için geçerlidir.  
+ İlk formu `Unlock` tarafından yönetilen nesne eşitleme kilidini açmak çalışır `CMultiLock`. İkinci form, `Unlock` kilidini açmak çalışır `CSemaphore` tarafından sahip olunan nesneler `CMultiLock`. Varsa `CMultiLock` herhangi bulunmaz kilitli `CSemaphore` işlevi nesnesini döndürür FALSE; Aksi takdirde, TRUE döndürür. *lCount* ve *lpPrevCount* parametrelerinin tam olarak aynıdır [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). İkinci form, `Unlock` nadiren multilock durumlar için geçerlidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

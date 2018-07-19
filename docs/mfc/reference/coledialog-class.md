@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c13b5d0a3bb30e08eaaeb0250da7deef692a66d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a41aa479fd87c76dbf167d728ad2dbb830f6a24b
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368666"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853627"
 ---
 # <a name="coledialog-class"></a>COleDialog sınıfı
-İletişim kutularına ortak işlevsellik için OLE sağlar.  
+OLE iletişim kutularındaki ortak işlevselliği sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,9 +43,9 @@ class COleDialog : public CCommonDialog
 |[COleDialog::GetLastError](#getlasterror)|İletişim kutusu tarafından döndürülen hata kodu alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Microsoft Foundation Class Kitaplığı türetilmiş çeşitli sınıflar sağlar `COleDialog`:  
+ Microsoft Foundation Class Kitaplığı ile türetilmiş birkaç sınıflarını sağlar `COleDialog`:  
   
-- [COleInsertDialog](../../mfc/reference/coleinsertdialog-class.md)  
+- [Coleınsertdialog](../../mfc/reference/coleinsertdialog-class.md)  
   
 - [COleConvertDialog](../../mfc/reference/coleconvertdialog-class.md)  
   
@@ -63,7 +63,7 @@ class COleDialog : public CCommonDialog
   
 - [COleChangeSourceDialog](../../mfc/reference/colechangesourcedialog-class.md)  
   
- OLE özel iletişim kutuları hakkında daha fazla bilgi için bkz: [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
+ Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -82,7 +82,7 @@ class COleDialog : public CCommonDialog
  **Başlık:** afxodlgs.h  
   
 ##  <a name="getlasterror"></a>  COleDialog::GetLastError  
- Çağrı `GetLastError` ek hata bilgileri almak için üye işlevini zaman `DoModal` döndürür **IDABORT**.  
+ Çağrı `GetLastError` ek hata bilgileri almak için üye işlevi, `DoModal` IDABORT döndürür.  
   
 ```  
 UINT GetLastError() const;  
@@ -92,7 +92,7 @@ UINT GetLastError() const;
  Tarafından döndürülen hata kodlarını `GetLastError` belirli iletişim kutusunda görüntülenen bağlıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: `DoModal` özel hata iletileri hakkında bilgi için türetilmiş sınıflardaki üye işlevi.  
+ Bkz: `DoModal` belirli hata iletileri hakkında bilgi için türetilmiş sınıflarda üye işlevi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CCommonDialog sınıfı](../../mfc/reference/ccommondialog-class.md)   

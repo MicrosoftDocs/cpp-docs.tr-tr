@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 843c79d9b3c7ffeb0ceef7338132048ac51d52ef
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 9116f736e0bf15ff5ea0594e09b2c044a87c9b78
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039979"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849359"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc sınıfı
-Katıştırılmış öğelerine bağlama desteği OLE kapsayıcı belgeler için temel sınıfı içerir.  
+İçerdikleri katıştırılmış öğelere bağlamayı destekleyen OLE kapsayıcı belgeleri için taban sınıf.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,30 +48,30 @@ class COleLinkingDoc : public COleDocument
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleLinkingDoc::COleLinkingDoc](#colelinkingdoc)|Oluşturan bir `COleLinkingDoc` nesnesi.|  
+|[COleLinkingDoc::COleLinkingDoc](#colelinkingdoc)|Oluşturur bir `COleLinkingDoc` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleLinkingDoc::Register](#register)|Belge OLE sistem DLL'leri ile kaydeder.|  
-|[COleLinkingDoc::Revoke](#revoke)|Belgenin kaydını iptal eder.|  
+|[COleLinkingDoc::Register](#register)|Belge OLE sistem DLL'lerini kaydeder.|  
+|[COleLinkingDoc::Revoke](#revoke)|Belgenin kaydı iptal eder.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleLinkingDoc::OnFindEmbeddedItem](#onfindembeddeditem)|Belirtilen katıştırılmış öğeyi bulur.|  
-|[COleLinkingDoc::OnGetLinkedItem](#ongetlinkeditem)|Belirtilen bağlantılı öğeyi bulur.|  
+|[COleLinkingDoc::OnFindEmbeddedItem](#onfindembeddeditem)|Belirtilen gömülü bir öğe bulur.|  
+|[COleLinkingDoc::OnGetLinkedItem](#ongetlinkeditem)|Belirtilen bağlantılı öğe bulur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Katıştırılmış öğelerine bağlama destekleyen bir kapsayıcı uygulaması bir "bağlantı kapsayıcı." olarak adlandırılır [OCLIENT](../../visual-cpp-samples.md) örnek uygulama bir bağlantı kapsayıcı örneğidir.  
+ Katıştırılmış öğelere bağlamayı destekleyen bir kapsayıcı uygulama "bağlantı kapsayıcı." adı verilir [OCLIENT](../../visual-cpp-samples.md) örnek uygulamanın bir bağlantı kapsayıcı örneği verilmiştir.  
   
- Bağlantılı bir öğenin kaynak katıştırılmış bir öğe başka bir belgede olduğunda içeren belge katıştırılmış öğenin düzenlenmesi sırayla yüklenmesi gerekir. Bu nedenle, bir bağlantı kapsayıcı bağlantılı bir öğe kaynağını düzenlemek kullanıcının istediği zaman başka bir kapsayıcı uygulama tarafından başlatılan kurabilmesi gerekir. Uygulamanız da kullanmalıdır [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) başlatıldığında program aracılığıyla belgeleri oluşturabilmesi için sınıf.  
+ Bir bağlantılı öğenin kaynak başka bir belgede gömülü bir öğe olduğunda, gömülü öğenin düzenlenmesi sırayla içeren belge yüklenmesi gerekir. Bu nedenle, bir bağlantı kapsayıcı bir bağlantılı öğenin kaynağını düzenlemek kullanıcı istediği zaman başka bir kapsayıcı uygulama tarafından başlatılması mümkün olması gerekir. Uygulamanızı de kullanmanız gerekir [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) başlatıldığında program aracılığıyla belgeleri oluşturabilmesi sınıfı.  
   
- Bir bağlantı kapsayıcı, kapsayıcı yapmak için belge sınıfından türetilen `COleLinkingDoc` yerine [COleDocument](../../mfc/reference/coledocument-class.md). Tüm diğer OLE kapsayıcısı ile gibi uygulamanın yerel veri yanı sıra katıştırılmış veya bağlantılı öğeler depolamak için sınıfınız tasarlamanız gerekir. Ayrıca, yerel verilerinizi depolamak için veri yapıları tasarlamanız gerekir. Tanımlarsanız bir `CDocItem`-uygulamanızı yerel için türetilmiş sınıf verileri tarafından tanımlanan arabirimi kullanabilir `COleDocument` OLE verilerinizi yanı sıra yerel verilerinizi depolamak için.  
+ Kapsayıcı bağlantı kapsayıcı yapmak için belge sınıfından türetilen `COleLinkingDoc` yerine [COleDocument](../../mfc/reference/coledocument-class.md). Herhangi diğer OLE kapsayıcısı ile gibi uygulamanın yerel veri yanı sıra gömülü veya bağlantılı öğeleri depolamak için kendi sınıfınızı tasarlamanız gerekir. Ayrıca, yerel verilerinizi depolamak için veri yapıları tasarlamanız gerekir. Tanımlarsanız bir `CDocItem`-türetilmiş sınıf için uygulamanızı yerel veri tarafından tanımlanan arabirimi kullanabilir `COleDocument` OLE verilerinizi yanı sıra yerel verilerinizi depolamak için.  
   
- Program aracılığıyla başka bir kapsayıcı tarafından başlatılan uygulamanıza izin vermek için bildirme bir `COleTemplateServer` nesnesi, uygulamanızın bir üyesi olarak `CWinApp`-türetilmiş sınıf:  
+ Uygulamanızın, program aracılığıyla başka bir kapsayıcı tarafından başlatılması için bildirin bir `COleTemplateServer` nesnesi, uygulamanızın bir üyesi olarak `CWinApp`-türetilmiş sınıf:  
   
  [!code-cpp[NVC_MFCOleContainer#23](../../mfc/codesnippet/cpp/colelinkingdoc-class_1.h)]  
   
@@ -79,13 +79,13 @@ class COleLinkingDoc : public COleDocument
   
  [!code-cpp[NVC_MFCOleContainer#24](../../mfc/codesnippet/cpp/colelinkingdoc-class_2.cpp)]  
   
- Bağlanma, `COleTemplateServer` nesnenin çağırarak belge şablonlarınızı nesnesine `ConnectTemplate` üye işlevini ve tüm sınıf çağırarak OLE sistemiyle nesneleri kaydetme `COleTemplateServer::RegisterAll`:  
+ Bağlanma, `COleTemplateServer` nesnenin çağırarak belge şablonlarınızı nesnesine `ConnectTemplate` üye işlevine ve tüm sınıfı nesnelerini OLE sistemiyle çağırarak kayıt `COleTemplateServer::RegisterAll`:  
   
  [!code-cpp[NVC_MFCOleContainer#25](../../mfc/codesnippet/cpp/colelinkingdoc-class_3.cpp)]  
   
  Bir örnek için `CWinApp`-türetilmiş sınıf tanımı ve `InitInstance` işlev, OCLIENT bakın. H ve OCLIENT. MFC örnekteki CPP [OCLIENT](../../visual-cpp-samples.md).  
   
- Kullanma hakkında daha fazla bilgi için `COleLinkingDoc`, makalelerine bakın [kapsayıcıları: bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md) ve [kapsayıcılar: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md).  
+ Kullanma hakkında daha fazla bilgi için `COleLinkingDoc`, makalelere göz atın [kapsayıcıları: bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md) ve [kapsayıcılar: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -102,7 +102,7 @@ class COleLinkingDoc : public COleDocument
  **Başlık:** afxole.h  
   
 ##  <a name="colelinkingdoc"></a>  COleLinkingDoc::COleLinkingDoc  
- Oluşturan bir `COleLinkingDoc` OLE sistem DLL'leri ile iletişim başlayan olmadan nesnesi.  
+ Oluşturur bir `COleLinkingDoc` iletişimleri OLE sistem DLL'lerini ile başlayan olmadan nesne.  
   
 ```  
 COleLinkingDoc();
@@ -112,7 +112,7 @@ COleLinkingDoc();
  Çağırmalısınız `Register` OLE belge açık olduğunu bildirmek için üye işlevi.  
   
 ##  <a name="onfindembeddeditem"></a>  COleLinkingDoc::OnFindEmbeddedItem  
- Belge belirtilen ada sahip bir katıştırılmış OLE öğe içerip içermediğini belirlemek için çerçevesi tarafından çağrılır.  
+ Belgenin belirtilen ada sahip katıştırılmış bir OLE öğesini içerip içermediğini belirlemek için framework tarafından çağırılır.  
   
 ```  
 virtual COleClientItem* OnFindEmbeddedItem(LPCTSTR lpszItemName);
@@ -120,16 +120,16 @@ virtual COleClientItem* OnFindEmbeddedItem(LPCTSTR lpszItemName);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszItemName*  
- Katıştırılmış OLE öğesi istenen adını işaretçi.  
+ Öğe istenen katıştırılmış OLE adına yönelik işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen öğe için bir işaretçi; **NULL** öğenin bulunamaması durumunda.  
+ Belirtilen öğe için bir işaretçi; Öğe bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama (adı karşılaştırma büyük küçük harfe duyarlı) belirtilen ada sahip bir öğe için katıştırılmış öğeleri listesi arar. Depolama veya katıştırılmış OLE öğeleri adlandırma kendi yöntemi varsa, bu işlev geçersiz kılar.  
+ Varsayılan uygulama (adı karşılaştırma büyük/küçük harfe duyarlı) belirtilen ada sahip bir öğe için katıştırılmış öğeleri listesini arar. Depolama veya katıştırılmış OLE öğeleri adlandırma kendi yöntemi varsa, bu işlev geçersiz kılar.  
   
 ##  <a name="ongetlinkeditem"></a>  COleLinkingDoc::OnGetLinkedItem  
- Belgenin belirtilen ada sahip bir bağlantılı sunucu öğesi içerip içermediğini denetlemek için çerçevesi tarafından çağrılır.  
+ Belgenin belirtilen ada sahip bir bağlantılı sunucu öğe içerip içermediğini denetlemek için framework tarafından çağırılır.  
   
 ```  
 virtual COleServerItem* OnGetLinkedItem(LPCTSTR lpszItemName);
@@ -137,16 +137,16 @@ virtual COleServerItem* OnGetLinkedItem(LPCTSTR lpszItemName);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszItemName*  
- İstenen öğe bağlantılı OLE adını işaretçi.  
+ Öğe istenen bağlı OLE adına yönelik işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen öğe için bir işaretçi; **NULL** öğenin bulunamaması durumunda.  
+ Belirtilen öğe için bir işaretçi; Öğe bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan `COleLinkingDoc` uygulama her zaman döndürür **NULL**. Bu işlev geçersiz kılınmadı türetilmiş sınıfında `COleServerDoc` (adı karşılaştırma büyük küçük harfe duyarlı) belirtilen ad ile bağlantılı bir öğe için OLE sunucusu öğeleri listesi aramak için. Depolama veya bağlantılı sunucu öğeleri alınıyor kendi yönteminizi uyguladıysanız bu işlev geçersiz kılar.  
+ Varsayılan `COleLinkingDoc` uygulama her zaman NULL döndürür. Bu işlev, türetilmiş sınıf içinde geçersiz kılınmış `COleServerDoc` (adı karşılaştırma büyük/küçük harfe duyarlı) belirtilen ada sahip bir bağlantılı öğe için OLE sunucu öğeleri listesi aramak için. Bu işlev, depolama veya bağlantılı sunucu öğeleri alınıyor kendi yönteminizi uyguladıysanız geçersiz kılar.  
   
 ##  <a name="register"></a>  COleLinkingDoc::Register  
- OLE sistem DLL'leri belgenin açık olduğunu bildirir.  
+ OLE sistem DLL'lerini belge açık olduğunu bildirir.  
   
 ```  
 BOOL Register(
@@ -156,30 +156,30 @@ BOOL Register(
   
 ### <a name="parameters"></a>Parametreler  
  *pFactory*  
- OLE üretecini işaretçisine (olabilir **NULL**).  
+ (NULL olabilir) bir OLE Fabrika nesnesine işaretçi.  
   
  *lpszPathName*  
- İşaretçi kapsayıcı belge tam yolu.  
+ Kapsayıcı belgesinin tam yolunun işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belge başarıyla kaydedildi, sıfır olmayan; Aksi takdirde 0.  
+ Belge başarıyla kaydettirildi olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma veya belge OLE sistem DLL'leri ile kaydetmek için bir adlandırılmış dosya açılırken bu işlevini çağırın. Belge katıştırılmış bir öğeyi temsil eder, bu işlevi çağırmak için gerek yoktur.  
+ Oluştururken ya da OLE sistem DLL'lerini belgeyi kaydetmek için adlandırılmış bir dosyayı açmayı bu işlevi çağırın. Gömülü bir öğe belgeyi temsil ediyorsa, bu işlevi çağırmak için gerek yoktur.  
   
- Kullanıyorsanız `COleTemplateServer` , uygulamanızda `Register` tarafından sizin için adlı `COleLinkingDoc`'s uyarlamasını `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
+ Kullanıyorsanız `COleTemplateServer` , uygulamanızda `Register` sizin tarafınızdan için adlı `COleLinkingDoc`'s uygulaması `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
   
 ##  <a name="revoke"></a>  COleLinkingDoc::Revoke  
- OLE sistem DLL'leri belgeyi artık açık olduğunu bildirir.  
+ OLE sistem DLL'lerini belge artık açık olduğunu bildirir.  
   
 ```  
 void Revoke();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- OLE sistem DLL'leri belgenin kaydı iptal etmek için bu işlevini çağırın.  
+ OLE sistem DLL'lerini belgenin kaydı iptal etmek için bu işlevi çağırın.  
   
- Bu işlev bir adlandırılmış dosya kapatılırken çağırmanız gerekir, ancak genellikle doğrudan çağırmanız gerekmez. `Revoke` tarafından sizin için adlı `COleLinkingDoc`'s uyarlamasını `OnCloseDocument`, `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
+ Adlandırılmış dosya kapatıldığında bu işlevi çağırmanız gerekir, ancak genellikle doğrudan çağırmanız gerekmez. `Revoke` sizin tarafınızdan için adlı `COleLinkingDoc`'s uygulaması `OnCloseDocument`, `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek OCLIENT](../../visual-cpp-samples.md)   

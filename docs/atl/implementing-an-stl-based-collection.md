@@ -1,5 +1,5 @@
 ---
-title: C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama | Microsoft Docs
+title: Bir C++ Standart Kitaplığı temelli koleksiyon uygulama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,92 +14,92 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14a09f54598b525346a65b56a335711f114878cb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5163e05004d6376ab37023c71ae668ec9f367c10
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359681"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852568"
 ---
-# <a name="implementing-a-c-standard-library-based-collection"></a>C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama
-ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon arabirimleri nesneleriniz hızlıca uygulamak etkinleştirmek için arabirim. Bu sınıf nasıl çalıştığını anlamak için Otomasyon istemcilerinde amaçlayan bir salt okunur koleksiyonun uygulamak için bu sınıf kullanan basit bir örnek (aşağıda) üzerinden çalışır.  
+# <a name="implementing-a-c-standard-library-based-collection"></a>Bir C++ Standart Kitaplığı temelli koleksiyon uygulama
+ATL sağlar `ICollectionOnSTLImpl` hızla, nesneler üzerinde arabirimlerini C++ Standart Kitaplığı temelli koleksiyon uygulama sağlamak için arabirim. Bu sınıf nasıl çalıştığını anlamak için Otomasyon istemcileri amaçlayan bir salt okunur koleksiyon uygulamak için bu sınıfı kullanan basit bir örnek (aşağıda) üzerinden çalışır.  
   
- Örnek kod arasındadır [ATLCollections örnek](../visual-cpp-samples.md).  
+ Örnek kod dandır [ATLCollections örnek](../visual-cpp-samples.md).  
   
  Bu yordamı tamamlamak için şunları yapacaksınız:  
   
--   [Yeni Basit bir nesne oluştur](#vccongenerating_an_object).  
+-   [Yeni, basit bir nesne oluşturmak](#vccongenerating_an_object).  
   
--   [IDL dosyasını düzenleyin](#vcconedit_the_idl) oluşturulan arabirimi.  
+-   [IDL dosyası Düzenle](#vcconedit_the_idl) oluşturulan arabirimi.  
   
--   [Beş tür tanımları oluşturma](#vcconstorage_and_exposure_typedefs) koleksiyon öğeleri nasıl depolanır ve nasıl bunlar COM arabirimleri aracılığıyla istemcilere sunulur açıklayan.  
+-   [Beş tür tanımları oluşturma](#vcconstorage_and_exposure_typedefs) koleksiyon öğelerini nasıl depolandığını ve nasıl bunlar istemcilere COM arabirimleri aracılığıyla sunulur.  
   
--   [Kopyalama için iki tür tanımları İlkesi sınıfları oluşturmak](#vcconcopy_classes).  
+-   [İki tür tanımları kopyalama İlkesi sınıfları oluşturma](#vcconcopy_classes).  
   
 -   [Numaralandırıcı ve koleksiyon uygulamaları için tür tanımları oluşturma](#vcconenumeration_and_collection).  
   
 -   [Koleksiyon typedef kullanmak için sihirbaz tarafından oluşturulan C++ kodu düzenleme](#vcconedit_the_generated_code).  
   
--   [Koleksiyon doldurmak için kodu ekleyin](#vcconpopulate_the_collection).  
+-   [Koleksiyonu doldurmak için kod ekleme](#vcconpopulate_the_collection).  
   
-##  <a name="vccongenerating_an_object"></a> Yeni Basit bir nesne oluşturma  
- Uygulama ayarları öznitelikleri kutusunun temizlenmiş olduğundan emin olduktan yeni bir proje oluşturun. ATL Sınıf Ekle iletişim kutusunu kullanın ve ekleme Basit Nesne basit bir nesne oluşturmak için Sihirbazı adlı `Words`. Çift arabirim adlı emin olun `IWords` oluşturulur. Oluşturulan sınıfın nesnelerini sözcükler (dize) koleksiyonunu temsil etmek için kullanılır.  
+##  <a name="vccongenerating_an_object"></a> Yeni, basit bir nesne oluşturma  
+ Uygulama ayarları öznitelikleri kutusunun temizlenmiş olduğundan emin olduktan yeni bir proje oluşturun. ATL Sınıf Ekle iletişim kutusunu kullanın ve ekleme Basit Nesne basit bir nesne oluşturmak için Sihirbazı adlı `Words`. Çift arabirim adlı emin `IWords` oluşturulur. Oluşturulan sınıfın nesneleri bir sözcük (diğer bir deyişle, diziler) koleksiyonunu temsil etmek için kullanılır.  
   
-##  <a name="vcconedit_the_idl"></a> IDL dosya düzenleme  
- Şimdi, IDL dosyasını açın ve etkinleştirmek için gereken üç özellik eklemek `IWords` aşağıda gösterildiği gibi bir salt okunur koleksiyonun arabirimi içine:  
+##  <a name="vcconedit_the_idl"></a> IDL dosyası düzenleme  
+ Şimdi, IDL dosyasını açın ve etkinleştirmek için gereken üç özellik Ekle `IWords` aşağıda gösterildiği gibi bir salt okunur koleksiyon arabirim uygulamasına:  
   
  [!code-cpp[NVC_ATL_COM#24](../atl/codesnippet/cpp/implementing-an-stl-based-collection_1.idl)]  
   
- Bu Otomasyon istemcileri aklınızda tasarlanan bir salt okunur koleksiyonun arabiriminin standart formdur. Bu arabirim tanımı numaralı açıklamaları aşağıdaki açıklamaları karşılık gelir:  
+ Otomasyon istemcileri düşünülerek tasarlanan bir salt okunur koleksiyon arabirimi için standart biçimidir. Bu arabirim tanımı numaralı açıklamaları aşağıdaki açıklamalar karşılık gelir:  
   
-1.  Otomasyon istemcileri eriştiği için koleksiyon arabirimleri genellikle çift `_NewEnum` özelliği aracılığıyla **IDispatch::Invoke**. Ancak, çift arabirimler dispinterfaces için tercih edilir şekilde Otomasyon istemcileri kalan yöntemleri vtable aracılığıyla erişebilirsiniz.  
+1.  Otomasyon istemcilerine erişir çünkü koleksiyon arabirimleri genellikle çift `_NewEnum` özelliği aracılığıyla `IDispatch::Invoke`. Ancak, ikili arabirimler görüntüleme için tercih edilir, böylece Otomasyon istemcileri kalan yöntemler vtable aracılığıyla erişebilirsiniz.  
   
-2.  Bir çift arabirim veya görüntüleme arabirimi çalışma zamanında genişletilmiş değil, (diğer bir deyişle, ek yöntemleri veya özellikleri aracılığıyla sağlamayacak **IDispatch::Invoke**), uygulamanız gerekir **nonextensible** özniteliğini tanımınızı. Bu öznitelik, derleme zamanında tam kod doğrulama gerçekleştirmek Otomasyonu istemcilerin sağlar. Bu durumda, genişletilmiş arabirimi değil.  
+2.  Çift arabirim veya dispinterface çalışma zamanında genişletilmiş değil, (diğer bir deyişle, ek yöntemleri veya özellikleri aracılığıyla sağlamayacak `IDispatch::Invoke`), uygulamanız gerekir **nonextensible** tanımınıza özniteliği. Bu öznitelik, derleme zamanında tam kod doğrulama gerçekleştirmek Otomasyon istemcileri sağlar. Bu durumda, genişletilmiş arabirimi değil.  
   
-3.  Otomasyon istemcilerin bu özelliği kullanmak istiyorsanız, doğru DISPID önemlidir. (Yalnızca bir alt çizgi, olduğuna dikkat edin **DISPID_NEWENUM**.)  
+3.  Bu özelliği kullanabilmek için Otomasyon istemcileri istiyorsanız doğru DISPID önemlidir. (DISPID_NEWENUM içinde yalnızca bir alt çizgi olduğuna dikkat edin.)  
   
-4.  Herhangi bir değer DISPID sağlayabilir **öğesi** özelliği. Ancak, **öğesi** genellikle kullandığı **DISPID_VALUE** koleksiyonun varsayılan özelliği yapma. Bu, açıkça adlandırma olmadan özelliğine başvurmak Otomasyon istemcileri sağlar.  
+4.  Herhangi bir değer DISPID sağlayabilirsiniz `Item` özelliği. Ancak, `Item` koleksiyon öğesinin varsayılan özelliği yapmak için genellikle DISPID_VALUE kullanır. Bu açıkça adlandırma olmadan özelliğine başvurmak Otomasyon istemcileri sağlar.  
   
-5.  Dönüş değeri için kullanılan veri türünü **öğesi** COM istemcileri endişe kadar bir koleksiyonda depolanan öğesi türü bir özelliktir. Standart COM dize türü kullanması gereken şekilde arabirimi dizeler, döndürüyor `BSTR`. Kısa süre içinde anlatıldığı gibi verileri farklı bir biçimde dahili olarak depolayabilirsiniz.  
+5.  Dönüş değeri için kullanılan veri türünü `Item` COM istemcileri endişe kadar bir koleksiyonda depolanan öğenin türünü bir özelliktir. BSTR standart COM dize türü kullanması gereken şekilde arabirimi dizeyi döndürür. Kısa bir süre içinde anlatıldığı gibi verileri farklı bir biçimde dahili olarak depolayabilirsiniz.  
   
-6.  DISPID için kullanılan değer **sayısı** özelliği tamamen rastgele. Bu özellik için standart hiçbir DISPID yoktur.  
+6.  DISPID için kullanılan değer `Count` özelliği tamamen isteğe bağlı. Bu özellik için standart hiçbir DISPID yoktur.  
   
 ##  <a name="vcconstorage_and_exposure_typedefs"></a> Depolama ve Etkilenme için tür tanımları oluşturma  
- Koleksiyon arabirimi tanımlandıktan sonra veriler nasıl depolanır ve nasıl veri Numaralandırıcı sunulur karar vermeniz gerekir.  
+ Koleksiyon arabirimi tanımlandıktan sonra veriler nasıl depolanır ve veriler Numaralandırıcı nasıl sunulur karar vermeniz gerekir.  
   
- Bu sorulara verdiğiniz yanıtlar, yeni oluşturulan sınıfınız için üstbilgi dosyanın en üstüne ekleyebilmeniz için tür tanımları sayısı biçiminde sağlanabilir:  
+ Bu soruların yanıtlarını tür tanımları, yeni oluşturulan sınıfı için üst bilgi dosyasının en üstüne ekleyebileceğiniz bir dizi biçiminde sağlanabilir:  
   
  [!code-cpp[NVC_ATL_COM#25](../atl/codesnippet/cpp/implementing-an-stl-based-collection_2.h)]  
   
- Bu durumda, verileri olarak depolayacak bir **std::vector** , **std::string**s. **Std::Vector** yönetilen bir dizi gibi davranan bir C++ Standart Kitaplığı kapsayıcı sınıftır. **Std::String** C++ Standart Kitaplığı'nın dize sınıfıdır. Bu sınıfların dizeleri koleksiyonu ile çalışmak kolaylaştırır.  
+ Bu durumda, verileri depolayacak bir **std::vector** , **std::string**s. **Std::Vector** yönetilen bir dizi gibi davranır bir C++ Standart Kitaplığı kapsayıcı sınıfıdır. **Std::String** C++ Standart Kitaplığı'nın dize sınıfıdır. Bu sınıfların dizelerden oluşan bir koleksiyon ile çalışmak kolaylaştırır.  
   
- Visual Basic desteği bu arabirim başarısı için önemli olduğundan, numaralandırıcı tarafından döndürülen `_NewEnum` özelliği desteklemelidir **IEnumVARIANT** arabirimi. Bu, Visual Basic tarafından anlaşılan yalnızca Numaralandırıcı arabirimidir.  
+ Visual Basic desteği bu arabirimin başarısı için önemli olduğundan, numaralandırıcı tarafından döndürülen `_NewEnum` özelliği desteklemelidir `IEnumVARIANT` arabirimi. Bu, Visual Basic tarafından anlaşılan tek Numaralandırıcı arabirimidir.  
   
-##  <a name="vcconcopy_classes"></a> Kopya İlkesi sınıflar için tür tanımları oluşturma  
- Şu ana kadar oluşturduğunuz tür tanımları daha Numaralandırıcı ve koleksiyon tarafından kullanılacak kopyalama sınıfları için tür tanımları oluşturmak gereken tüm bilgileri sağlayın:  
+##  <a name="vcconcopy_classes"></a> Kopyalama İlkesi sınıfları için tür tanımları oluşturma  
+ Şu ana kadar oluşturulmuş tür tanımları, daha fazla koleksiyon ve Numaralandırıcı kullanılacak kopyalama sınıflar için tür tanımları oluşturmak gereken tüm bilgileri sağlayın:  
   
  [!code-cpp[NVC_ATL_COM#26](../atl/codesnippet/cpp/implementing-an-stl-based-collection_3.h)]  
   
- Bu örnekte, özel kullanabilirsiniz `GenericCopy` VCUE_Copy.h ve VCUE_CopyString.h gelen tanımlanmış sınıf [ATLCollections](../visual-cpp-samples.md) örnek. Bu sınıf diğer kodda kullanabilirsiniz, ancak daha fazla özelleştirmeleri, tanımlamanız gerekebilir `GenericCopy` kendi koleksiyonlarınızı kullanılan veri türlerini desteklemek için. Daha fazla bilgi için bkz: [ATL kopyalama İlkesi sınıfları](../atl/atl-copy-policy-classes.md).  
+ Bu örnekte, özel kullanabileceğiniz `GenericCopy` VCUE_Copy.h ve gelen VCUE_CopyString.h tanımlanmış sınıf [ATLCollections](../visual-cpp-samples.md) örnek. Bu sınıf diğer kodda kullanabilirsiniz, ancak daha da uzmanlıkları da tanımlamanız gerekebilir `GenericCopy` kendi koleksiyonlarında kullanılan veri türlerini desteklemek için. Daha fazla bilgi için [ATL kopyalama İlkesi sınıfları](../atl/atl-copy-policy-classes.md).  
   
-##  <a name="vcconenumeration_and_collection"></a> Numaralandırma ve koleksiyon için tür tanımları oluşturma  
- Şimdi tüm şablon parametreleri özelleştirmek üzere gerekli `CComEnumOnSTL` ve `ICollectionOnSTLImpl` sınıflar bu durum için tür tanımları formunda sağlandı. Özelleştirmeleri kullanımını kolaylaştırmak için aşağıda gösterildiği gibi iki daha fazla tür tanımları oluşturun:  
+##  <a name="vcconenumeration_and_collection"></a> Sabit listesi ve koleksiyon için tür tanımları oluşturma  
+ Artık tüm şablon parametreleri özelleştirmek üzere gerekli `CComEnumOnSTL` ve `ICollectionOnSTLImpl` sınıflar bu durum için tür tanımları biçiminde sağlanmıştır. Uzmanlıkları kullanımını kolaylaştırmak için aşağıda gösterildiği gibi iki daha fazla tür tanımları oluşturun:  
   
  [!code-cpp[NVC_ATL_COM#27](../atl/codesnippet/cpp/implementing-an-stl-based-collection_4.h)]  
   
- Şimdi `CollectionType` bir alt uzmanlaşması eşanlamlısı olan `ICollectionOnSTLImpl` uygulayan `IWords` arabirimi, daha önce tanımlanan ve destekleyen bir numaralandırıcı sağlar **IEnumVARIANT**.  
+ Artık `CollectionType` özelleştirmesi eşanlamlıdır `ICollectionOnSTLImpl` uygulayan `IWords` arabirimi daha önce tanımlanan ve destekleyen bir numaralandırıcı sağlar `IEnumVARIANT`.  
   
-##  <a name="vcconedit_the_generated_code"></a> Sihirbaz tarafından oluşturulan kod düzenleme  
- Türetilmesi gerekir artık `CWords` tarafından temsil edilen arabirimi uygulamadan `CollectionType` typedef yerine `IWords`, aşağıda gösterildiği gibi:  
+##  <a name="vcconedit_the_generated_code"></a> Sihirbazın ürettiği kod düzenleme  
+ Türetilmesi gerekir artık `CWords` tarafından temsil edilen arabirimi uygulamasından `CollectionType` typedef yerine `IWords`, aşağıda gösterildiği gibi:  
   
  [!code-cpp[NVC_ATL_COM#28](../atl/codesnippet/cpp/implementing-an-stl-based-collection_5.h)]  
   
-##  <a name="vcconpopulate_the_collection"></a> Koleksiyon doldurmak için kod ekleme  
- Vektör verilerle doldurmak için kalan tek şey. Bu basit örnekte koleksiyonuna sınıfa ilişkin oluşturucuda birkaç sözcük ekleyebilirsiniz:  
+##  <a name="vcconpopulate_the_collection"></a> Koleksiyonu doldurmak için kod ekleme  
+ Vektör verilerle doldurmak için kalan gereken tek şey var. Bu basit örnekte, sınıf için oluşturucu koleksiyona birkaç sözcük ekleyebilirsiniz:  
   
  [!code-cpp[NVC_ATL_COM#29](../atl/codesnippet/cpp/implementing-an-stl-based-collection_6.h)]  
   
- Şimdi, tercih ettiğiniz istemcisiyle sınayabilirsiniz.  
+ Artık, seçtiğiniz istemci ile kodu test edebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Koleksiyonlar ve numaralandırmalar](../atl/atl-collections-and-enumerators.md)   

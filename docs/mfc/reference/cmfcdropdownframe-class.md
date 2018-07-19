@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c7264273f3db1dab1e6cab72333c0629a802e28
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 600bdb29a06d9aef84f2f4d914a458f9a4090c4a
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042000"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849454"
 ---
 # <a name="cmfcdropdownframe-class"></a>CMFCDropDownFrame sınıfı
-Aşağı açılan araç çubukları ve aşağı açılır düğmeler aşağı açılan çerçeve penceresi işlevsellik sağlar.  
+Aşağı açılan araç çubukları ve açılır araç çubuğu düğmeleri için açılır çerçeve penceresi işlevlerini sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,28 +50,28 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 |-|-|  
 |Ad|Açıklama|  
 |`CMFCDropDownFrame::CMFCDropDownFrame`|Varsayılan Oluşturucu.|  
-|`CMFCDropDownFrame::~CMFCDropDownFrame`|Yok Edicisi.|  
+|`CMFCDropDownFrame::~CMFCDropDownFrame`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |||  
 |-|-|  
 |Ad|Açıklama|  
-|[CMFCDropDownFrame::Create](#create)|Oluşturur bir `CMFCDropDownFrame` nesnesi.|  
-|`CMFCDropDownFrame::CreateObject`|Bu sınıf türü dinamik bir örneğini oluşturmak için framework tarafından kullanıldı.|  
-|[CMFCDropDownFrame::GetParentMenuBar](#getparentmenubar)|Ana menü çubuğu açılır çerçevesinin alır.|  
-|[CMFCDropDownFrame::GetParentPopupMenu](#getparentpopupmenu)|Üst açılır menüyü aşağı açılan çerçevesinin alır.|  
-|`CMFCDropDownFrame::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
+|[CMFCDropDownFrame::Create](#create)|Oluşturur bir `CMFCDropDownFrame` nesne.|  
+|`CMFCDropDownFrame::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|  
+|[CMFCDropDownFrame::GetParentMenuBar](#getparentmenubar)|Aşağı açılan çerçevenin üst menü çubuğu alır.|  
+|[CMFCDropDownFrame::GetParentPopupMenu](#getparentpopupmenu)|Aşağı açılan çerçevenin üst açılır menü alır.|  
+|`CMFCDropDownFrame::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
 |[CMFCDropDownFrame::RecalcLayout](#recalclayout)|Aşağı açılan çerçeve yeniden konumlandırır.|  
-|[CMFCDropDownFrame::SetAutoDestroy](#setautodestroy)|Alt açılan araç penceresi otomatik olarak yok olup olmadığını belirler.|  
+|[CMFCDropDownFrame::SetAutoDestroy](#setautodestroy)|Alt açılan araç penceresi otomatik olarak edildiğinde olup olmadığını belirler.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu sınıf doğrudan kodunuzdan kullanılmaya yönelik değildir.  
+ Bu sınıf doğrudan sizin kodunuzdan kullanılmak üzere tasarlanmamıştır.  
   
- Çerçeve davranışı sağlamak için bu sınıf çerçevesi kullanır `CMFCDropDownToolbar` ve `CMFCDropDownToolbarButton` sınıfları. Bu sınıfları hakkında daha fazla bilgi için bkz: [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md) ve [CMFCDropDownToolbarButton sınıfı](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md).  
+ Framework için çerçeve davranışı sağlamak için bu sınıfın kullandığı `CMFCDropDownToolbar` ve `CMFCDropDownToolbarButton` sınıfları. Bu sınıflar hakkında daha fazla bilgi için bkz. [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md) ve [CMFCDropDownToolbarButton sınıfı](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir işaretçi almak gösterilmiştir bir `CMFCDropDownFrame` nesnesinin bir `CFrameWnd` sınıfı ve alt açılan araç penceresi otomatik olarak yok edilmesi için ayarlama.  
+ Aşağıdaki örnek, bir işaretçi almak gösterilmiştir bir `CMFCDropDownFrame` nesnesinden bir `CFrameWnd` sınıfı ve alt otomatik olarak yok edilecek açılan araç penceresi ayarlama.  
   
  [!code-cpp[NVC_MFC_RibbonApp#36](../../mfc/reference/codesnippet/cpp/cmfcdropdownframe-class_1.cpp)]  
   
@@ -92,7 +92,7 @@ class CMFCDropDownFrame : public CMiniFrameWnd
  **Başlık:** afxdropdowntoolbar.h  
   
 ##  <a name="create"></a>  CMFCDropDownFrame::Create  
- Oluşturur bir `CMFCDropDownFrame` nesnesi.  
+ Oluşturur bir `CMFCDropDownFrame` nesne.  
   
 ```  
 virtual BOOL Create(
@@ -107,44 +107,44 @@ virtual BOOL Create(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pWndParent*|Aşağı açılan çerçeve üst pencere.|  
+|[in] *pWndParent*|Aşağı açılan çerçevenin üst pencere.|  
 |[in] *x*|Açılır çerçeve konumunu yatay Ekran koordinatı.|  
 |[in] *y*|Açılır çerçeve konumunu dikey Ekran koordinatı.|  
-|[in] *pWndOriginToolbar*|Bu yöntem yeni açılan çerçeve nesnesi doldurmak için kullanır aşağı açılır düğmeler sahip araç çubuğu.|  
+|[in] *pWndOriginToolbar*|Yeni açılan çerçeve nesnesi doldurmak için bu yöntemi kullanır açılır düğmeler olan araç çubuğu.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` aşağı açılan çerçeve başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
+ Aşağı açılan çerçeve başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Temel bu yöntemi çağırır [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) ile açılan çerçeve penceresi oluşturmak için yöntemi `WS_POPUP` stili. Belirtilen ekran koordinatlarda aşağı açılan çerçeve penceresi görüntülenir. Bu yöntem başarısız olursa [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) yöntemi döndürür `FALSE`.  
+ Bu yöntemin çağırdığı temel [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) WS_POPUP stili açılan çerçeve penceresi oluşturmak için yöntemi. Belirtilen ekran koordinatlarda açılır çerçeve penceresinde görünür. Bu yöntem, başarısız [CMiniFrameWnd::CreateEx](../../mfc/reference/cminiframewnd-class.md#createex) yöntem FALSE döndürür.  
   
- `CMFCDropDownFrame` Sınıfı oluşturur sağlanan bir kopyasını `CMFCDropDownToolBar` parametresi. Bu yöntem düğme resimlerini ve düğmesi durumlar kopyalar `pWndOriginToolbar` parametresi `m_pWndOriginToolbar` veri üyesi.  
+ `CMFCDropDownFrame` Sınıf dosyasının bir kopyasını oluşturur `CMFCDropDownToolBar` parametresi. Bu yöntem, düğmeyi görüntüler ve düğme durumları kopyalar `pWndOriginToolbar` parametresi `m_pWndOriginToolbar` veri üyesi.  
   
 ##  <a name="getparentmenubar"></a>  CMFCDropDownFrame::GetParentMenuBar  
- Ana menü çubuğu açılır çerçevesinin alır.  
+ Aşağı açılan çerçevenin üst menü çubuğu alır.  
   
 ```  
 CMFCMenuBar* GetParentMenuBar() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ana menü çubuğu açılır çerçevenin gösteren bir işaretçi veya `NULL` çerçeve üst öğeye sahipse.  
+ Üst menü çubuğu açılır çerçeve veya çerçeveyi üstü yoksa NULL bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem üst düğmesinden üst menü çubuğu alır. Bu yöntem `NULL` açılan çerçeve üst düğmesi ya hiç üst menü çubuğu üst düğmesi bulunur.  
+ Bu yöntem, üst menü çubuğunun üst düğmesinden alır. Aşağı açılan çerçevenin üst düğmesi yok veya üst düğme hiçbir üst menü çubuğu bu yöntem NULL döndürür.  
   
 ##  <a name="getparentpopupmenu"></a>  CMFCDropDownFrame::GetParentPopupMenu  
- Üst açılır menüyü aşağı açılan çerçevesinin alır.  
+ Aşağı açılan çerçevenin üst açılır menü alır.  
   
 ```  
 CMFCDropDownFrame* GetParentPopupMenu() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Üst açılır menü açılan çerçeve işaretçisi veya `NULL` çerçeve üst öğeye sahipse.  
+ Üst açılan menüsünün çerçevenin üst öğe yoksa null değeri veya açılır çerçeve işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem üst düğmesinden üst menü alır. Bu yöntem `NULL` açılan çerçeve üst düğmesi ya hiç üst menüsünde üst düğmesi vardır.  
+ Bu yöntem, üst menü üst düğmesinden alır. Aşağı açılan çerçevenin üst düğmesi yok veya üst düğme üst menü yok, bu yöntem NULL döndürür.  
   
 ##  <a name="recalclayout"></a>  CMFCDropDownFrame::RecalcLayout  
  Aşağı açılan çerçeve yeniden konumlandırır.  
@@ -161,10 +161,10 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 |[in] *bNotify*|Kullanılmayan.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework açılan çerçeve oluşturulduğunda veya üst pencere boyutlandırılır bu yöntemi çağırır. Bu yöntem, üst pencere boyutunu ve konumunu kullanarak açılan çerçevesinin boyutunu ve konumunu hesaplar.  
+ Aşağı açılan çerçeve oluşturulduğunda veya üst pencere yeniden boyutlandırıldı, framework bu yöntemi çağırır. Bu yöntem, üst pencere boyutunu ve konumunu kullanarak açılır çerçeve boyutunu ve konumunu hesaplar.  
   
 ##  <a name="setautodestroy"></a>  CMFCDropDownFrame::SetAutoDestroy  
- Alt açılan araç penceresi otomatik olarak yok olup olmadığını belirler.  
+ Alt açılan araç penceresi otomatik olarak edildiğinde olup olmadığını belirler.  
   
 ```  
 void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
@@ -172,10 +172,10 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bAutoDestroy*  
- `TRUE` otomatik olarak ilişkili açılan araç penceresi yok etmek için; Aksi takdirde `FALSE`.  
+ Otomatik olarak ilişkili açılan araç penceresini yok etmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *bAutoDestroy* olan `TRUE`, sonra `CMFCDropDownFrame` yıkıcı ilişkili açılan araç penceresi yok eder. Varsayılan değer `TRUE` şeklindedir.  
+ Varsa *bAutoDestroy* doğru ise, ardından `CMFCDropDownFrame` yok Edicisi ilişkili açılan araç penceresini yok eder. Varsayılan değer True'dur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

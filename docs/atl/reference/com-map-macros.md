@@ -17,26 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74f8903d81a126a6647bc43018f8422296ddf970
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 00c15bf8567456254c8a338ed395a726fcbe8c9b
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358429"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879315"
 ---
 # <a name="com-map-macros"></a>COM eşleme makroları
-Bu makroları COM arabirimi eşlemeleri tanımlayın.  
+Bu makrolar COM arabirim eşlemeleri tanımlayın.  
   
 |||  
 |-|-|  
-|[BEGIN_COM_MAP](#begin_com_map)|COM arabirimi eşleme girdilerini başlangıcını işaretler.|  
-|[END_COM_MAP](#end_com_map)|COM arabirimi eşleme girdilerini sonunu işaretler.|  
+|[BEGIN_COM_MAP](#begin_com_map)|COM arabirim eşleme girişleri başlangıcını işaretler.|  
+|[END_COM_MAP](#end_com_map)|COM arabirim eşleme girişleri sonunu işaretler.|  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
    
 ##  <a name="begin_com_map"></a>  BEGIN_COM_MAP  
- COM eşlemesi üzerinden bir istemciye bir nesne üzerinde arabirimlerini sunan mekanizmasıdır `QueryInterface`.  
+ COM eşlemesi üzerinden bir istemciye bir nesne üzerinde arabirimleri kullanıma açıp mekanizmadır `QueryInterface`.  
   
 ```
 BEGIN_COM_MAP(x)
@@ -44,10 +44,10 @@ BEGIN_COM_MAP(x)
   
 ### <a name="parameters"></a>Parametreler  
  *x*  
- [in] Üzerinde arabirimleri gösterme sınıfı nesnesinin adı.  
+ [in] Üzerinde arabirimleri kullanıma sunma sınıfı nesnesinin adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CComObjectRootEx::InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) arabirimleri işaretçileri COM eşleminde yalnızca döndürür. Arabirim haritanızı Başlat `BEGIN_COM_MAP` makrosu, her ile arabirimlerinizin girişleri eklemek [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) makrosu veya türevleri, biri ve Haritası tamamlamak [END_COM_MAP](#end_com_map) Makro.  
+ [CComObjectRootEx::InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) yalnızca arabirim işaretçilerini içindeki COM eşlemesine döndürür. Arabirim eşlemenize BEGIN_COM_MAP makrosu ile Başlat, ile arabirimlerinizin her biri için girişler ekleyin [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) makrosu veya türevleri, biri ve haritayla tamamlamak [END_COM_MAP](#end_com_map) Makro.  
 
   
 ### <a name="example"></a>Örnek  
@@ -58,7 +58,7 @@ BEGIN_COM_MAP(x)
 
   
 ##  <a name="end_com_map"></a>  END_COM_MAP  
- COM arabirimi haritanızı tanımını sona erer.  
+ COM arabirim eşlemenize tanımını sonlandırır.  
   
 ```
 END_COM_MAP()

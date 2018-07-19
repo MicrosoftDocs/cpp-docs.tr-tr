@@ -28,15 +28,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17337239a3a58a0283fc96eadcd4417c3d5c69b0
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 132936805d948257f8d6579f0f840aaf2fd15a0d
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079596"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849664"
 ---
 # <a name="cpen-class"></a>CPen sınıfı
-Windows grafik cihaz arabirimi (GDI) kalem yalıtır.  
+Bir Windows grafik cihaz arabirimi (GDI) kalemi kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,15 +50,15 @@ class CPen : public CGdiObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPen::CPen](#cpen)|Oluşturan bir `CPen` nesnesi.|  
+|[CPen::CPen](#cpen)|Oluşturur bir `CPen` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPen::CreatePen](#createpen)|Belirtilen stilini, genişlik ve fırça özniteliklerini mantıksal yüzeysel veya geometrik kalem oluşturur ve ona iliştirir `CPen` nesnesi.|  
-|[CPen::CreatePenIndirect](#createpenindirect)|Kalem stili, genişlik ve verilen renk oluşturur bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı ve ekleninceye `CPen` nesnesi.|  
-|[CPen::FromHandle](#fromhandle)|Bir işaretçi döndüren bir `CPen` nesnesi Windows verildiğinde `HPEN`.|  
+|[CPen::CreatePen](#createpen)|Mantıksal yüzeysel veya geometrik kalem belirtilen stili, genişliğini ve fırça öznitelikleri oluşturur ve ona ekler `CPen` nesne.|  
+|[CPen::CreatePenIndirect](#createpenindirect)|Kalem stili, genişliği ve belirtilen rengi oluşturur bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı ve ekler `CPen` nesne.|  
+|[CPen::FromHandle](#fromhandle)|Bir işaretçi döndüren bir `CPen` Windows HPEN verildiğinde nesne.|  
 |[CPen::GetExtLogPen](#getextlogpen)|Alır bir [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) yapısı temel.|  
 |[CPen::GetLogPen](#getlogpen)|Alır bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı temel.|  
   
@@ -66,7 +66,7 @@ class CPen : public CGdiObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPen::operator HPEN](#operator_hpen)|Bağlı Windows işleyici döner `CPen` nesnesi.|  
+|[HPEN CPen::operator](#operator_hpen)|Bağlı Windows tanıtıcısını döndürür `CPen` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Kullanma hakkında daha fazla bilgi için `CPen`, bkz: [grafik nesneleri](../../mfc/graphic-objects.md).  
@@ -82,7 +82,7 @@ class CPen : public CGdiObject
  **Başlık:** afxwin.h  
   
 ##  <a name="cpen"></a>  CPen::CPen  
- Oluşturan bir `CPen` nesnesi.  
+ Oluşturur bir `CPen` nesne.  
   
 ```  
 CPen();
@@ -104,79 +104,79 @@ CPen(
   
 ### <a name="parameters"></a>Parametreler  
  *nPenStyle*  
- Kalem stilini belirtir. Bu parametre Oluşturucusu ilk sürümünde aşağıdaki değerlerden biri olabilir:  
+ Kalem stilini belirtir. Oluşturucu'nün ilk sürümündeki Bu parametre aşağıdaki değerlerden biri olabilir:  
   
-- **PS_SOLID** düz kalem oluşturur.  
+- Düz kalem PS_SOLID oluşturur.  
   
-- **PS_DASH** kesikli kalem oluşturur. Yalnızca kalem genişliği 1 veya daha az, cihaz birimleri olduğunda geçerlidir.  
+- PS_DASH kesikli kalem oluşturur. Kalem genişliği 1 veya daha az, cihaz birimleri olduğunda geçerlidir.  
   
-- **PS_DOT** noktalı kalem oluşturur. Yalnızca kalem genişliği 1 veya daha az, cihaz birimleri olduğunda geçerlidir.  
+- PS_DOT noktalı kalem oluşturur. Kalem genişliği 1 veya daha az, cihaz birimleri olduğunda geçerlidir.  
   
-- **PS_DASHDOT** değişen kısa çizgi ve nokta ile kalem oluşturur. Yalnızca kalem genişliği 1 veya daha az, cihaz birimleri olduğunda geçerlidir.  
+- Kalem değişen ile çizgi ve nokta PS_DASHDOT oluşturur. Kalem genişliği 1 veya daha az, cihaz birimleri olduğunda geçerlidir.  
   
-- **PS_DASHDOTDOT** değişen kısa çizgi ve çift nokta kalem oluşturur. Yalnızca kalem genişliği 1 veya daha az, cihaz birimleri olduğunda geçerlidir.  
+- PS_DASHDOTDOT kalem ile çizgi ve çift nokta değişen bir oluşturur. Kalem genişliği 1 veya daha az, cihaz birimleri olduğunda geçerlidir.  
   
-- **PS_NULL** null kalem oluşturur.  
+- PS_NULL null kalem oluşturur.  
   
-- **PS_INSIDEFRAME** sınırlayıcı dikdörtgenini belirtin Windows GDI çıkış işlevleri tarafından üretilen kapalı şekiller çerçeve içine bir satır çizer kalem oluşturur (örneğin, `Ellipse`, `Rectangle`, `RoundRect`, `Pie`, ve `Chord` üye işlevleri). Bu stili sınırlayıcı dikdörtgenini belirtmeyin Windows GDI çıkış işlevleri ile kullanıldığında (örneğin, `LineTo` üye işlevi), kalem çizim alanının çerçevesi tarafından sınırlı değildir.  
+- PS_INSIDEFRAME Windows GDI oluşturduğu kapalı şekiller çerçevenin içine bir çizgi çizer bir kalem üretilen çıkış sınırlayıcı bir dikdörtgen belirtin işlevleri (örneğin, `Ellipse`, `Rectangle`, `RoundRect`, `Pie`ve `Chord`üye işlevleri). Bu stil sınırlayıcı bir dikdörtgen belirtmeyin Windows GDI çıkış işlevleri ile kullanıldığında (örneğin, `LineTo` üye işlevi), çerçeve tarafından kalemi çizim alanının sınırlı değildir.  
   
- İkinci sürümü `CPen` Oluşturucusu türü, stil, son harf ve birleştirme öznitelikleri bileşimini belirtir. Bit düzeyinde OR işleci kullanarak her kategori değerleri birleştirilmelidir (&#124;). Kalem türü aşağıdaki değerlerden biri olabilir:  
+ Dosyanın ikinci sürümü, `CPen` Oluşturucu türü, stil, bitiş ucu ve birleştirme öznitelikleri belirtir. Her kategori değerleri bit düzeyinde OR işleci kullanılarak birleştirilmelidir (&#124;). Kalem türü aşağıdaki değerlerden biri olabilir:  
   
-- **PS_GEOMETRIC** geometrik kalem oluşturur.  
+- Geometrik kalem PS_GEOMETRIC oluşturur.  
   
-- **PS_COSMETIC** yüzeysel kalem oluşturur.  
+- Yüzeysel kalem PS_COSMETIC oluşturur.  
   
-     İkinci sürümü `CPen` Oluşturucusu ekler için aşağıdaki kalem stiller *nPenStyle*:  
+     Dosyanın ikinci sürümü, `CPen` Oluşturucu ekler için aşağıdaki kalem stilleri *nPenStyle*:  
   
-- **PS_ALTERNATE** her bir piksel ayarlar kalem oluşturur. (Bu stili yalnızca yüzeysel kalemler için geçerlidir.)  
+- Her bir piksel ayarlayan kalem PS_ALTERNATE oluşturur. (Bu yalnızca yüzeysel kalemler için geçerlidir.)  
   
-- **PS_USERSTYLE** kullanıcı tarafından sağlanan bir stil dizisi kullanan kalem oluşturur.  
+- Bir stil dizisi kullanan bir kalem PS_USERSTYLE oluşturur Kullanıcı tarafından sağlandı.  
   
-     Son uç aşağıdaki değerlerden biri olabilir:  
+     Bitiş ucu aşağıdaki değerlerden biri olabilir:  
   
-- **PS_ENDCAP_ROUND** uç başlıkları YUVARLA.  
+- PS_ENDCAP_ROUND uç başlıkları YUVARLA.  
   
-- **PS_ENDCAP_SQUARE** uç başlıkları kare.  
+- Kare PS_ENDCAP_SQUARE uç başlıkları.  
   
-- **PS_ENDCAP_FLAT** uç başlıkları düz.  
+- Düz PS_ENDCAP_FLAT uç başlıkları.  
   
-     Birleştirme, aşağıdaki değerlerden biri olabilir:  
+     Birleştirme aşağıdaki değerlerden biri olabilir:  
   
-- **PS_JOIN_BEVEL** birleştirmeler Eğimli.  
+- PS_JOIN_BEVEL birleşimler Eğimli.  
   
-- **PS_JOIN_MITER** birleştirmeler gönye tarafından belirlenen geçerli sınırı içinde olduğunda [SetMiterLimit](http://msdn.microsoft.com/library/windows/desktop/dd145076) işlevi. Birleşim bu sınırı aşarsa, Eğimli.  
+- PS_JOIN_MITER birleşimler gönye belirlenen geçerli sınırı içinde olduğunda [SetMiterLimit](http://msdn.microsoft.com/library/windows/desktop/dd145076) işlevi. Birleşim bu sınırı aşarsa Eğimli.  
   
-- **PS_JOIN_ROUND** birleştirmeler YUVARLA.  
+- Birleşimler PS_JOIN_ROUND yuvarlatılmış.  
   
  *nWidth*  
  Kalem genişliğini belirtir.  
   
--   Bu değer 0 ise ilk Oluşturucu için aygıt birimleri genişliği her zaman eşleme Modu bağımsız olarak 1 piksel sürümüdür.  
+-   Bu değer 0 ise ilk oluşturucusu için cihaz birimlerindeki genişliğini her zaman eşleme modunu bağımsız olarak 1 piksel artımlı sürümüdür.  
   
--   Oluşturucusu ikinci sürümü için ise *nPenStyle* olan **PS_GEOMETRIC**, mantıksal birimler cinsinden genişliği verilir. Varsa *nPenStyle* olan **PS_COSMETIC**, genişlik 1 olarak ayarlanması gerekir.  
+-   İkinci oluşturucu sürümü için ise *nPenStyle* PS_GEOMETRIC, olan mantıksal birimler cinsinden genişliğini verilir. Varsa *nPenStyle* PS_COSMETIC, olan genişliği 1 olarak ayarlanması gerekir.  
   
  *crColor*  
- Kalem bir RGB rengi içerir.  
+ Bir RGB rengi kalemin içerir.  
   
  *pLogBrush*  
- İşaret eden bir `LOGBRUSH` yapısı. Varsa *nPenStyle* olan **PS_COSMETIC**, *lbColor* üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve *lbStyle*üyesi `LOGBRUSH` yapısı ayarlanmalıdır **BS_SOLID**. Varsa *nPenStyle* olan **PS_GEOMETRIC**, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılması gerekir.  
+ İşaret eden bir `LOGBRUSH` yapısı. Varsa *nPenStyle* PS_COSMETIC, olan *lbColor* üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve *lbStyle* üyesi `LOGBRUSH` Yapı için BS_SOLID ayarlamanız gerekir. Varsa *nPenStyle* PS_GEOMETRIC, olan tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılmalıdır.  
   
  *nStyleCount*  
- Doubleword birimlerindeki uzunluğu belirtir *lpStyle* dizi. Bu değer sıfır olmalıdır *nPenStyle* değil **PS_USERSTYLE**.  
+ Doubleword birimindeki uzunluğu belirtir *lpStyle* dizisi. Bu değerin sıfır olması *nPenStyle* PS_USERSTYLE değil.  
   
  *lpStyle*  
- Bir dizi noktalarına doubleword değerleri. İlk değer, kullanıcı tanımlı bir stil ilk tire uzunluğunu belirtir, ikinci değer ilk alanı vb. uzunluğunu belirtir. Bu işaretçinin olmalıdır **NULL** varsa *nPenStyle* değil **PS_USERSTYLE**.  
+ Bir dizi noktalarını doubleword değerleri. İlk değer, kullanıcı tanımlı bir stilde ilk dash uzunluğunu belirtir, ikinci değer ilk alanı vb. uzunluğunu belirtir. This işaretçisi, NULL olmalı *nPenStyle* PS_USERSTYLE değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağımsız değişkenler olmadan Oluşturucusu kullanırsanız, sonuç başlatmalıdır `CPen` nesnesi ile `CreatePen`, `CreatePenIndirect`, veya `CreateStockObject` üye işlevleri.  
+ Oluşturucu bağımsız değişken olmadan kullanırsanız, sonuç başlatmalıdır `CPen` nesnesi ile `CreatePen`, `CreatePenIndirect`, veya `CreateStockObject` üye işlevleri.  
   
- Bağımsız değişken alan oluşturucu kullanırsanız, başka hiçbir başlatma gereklidir. Bağımsız değişken içermeyen Oluşturucusu her zaman başarılı olur ancak, bir hatayla karşılaşılmazsa bağımsız değişkenlerle Oluşturucusu bir özel durum.  
+ Bağımsız değişken alan oluşturucu kullanırsanız, başka hiçbir başlatma gereklidir. Oluşturucu bağımsız değişken olmadan her zaman başarılı olur ancak, bir hatayla karşılaşılmazsa oluşturucu bağımsız değişkenleri olan bir özel durum.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#99](../../mfc/codesnippet/cpp/cpen-class_1.cpp)]  
   
 ##  <a name="createpen"></a>  CPen::CreatePen  
- Belirtilen stilini, genişlik ve fırça özniteliklerini mantıksal yüzeysel veya geometrik kalem oluşturur ve ona iliştirir `CPen` nesnesi.  
+ Mantıksal yüzeysel veya geometrik kalem belirtilen stili, genişliğini ve fırça öznitelikleri oluşturur ve ona ekler `CPen` nesne.  
   
 ```  
 BOOL CreatePen(
@@ -195,52 +195,52 @@ BOOL CreatePen(
   
 ### <a name="parameters"></a>Parametreler  
  *nPenStyle*  
- Kalem stilini belirtir. Olası değerler listesi için bkz: *nPenStyle* parametresinde [CPen](#cpen) Oluşturucusu.  
+ Kalem stilini belirtir. Olası değerler listesi için bkz. *nPenStyle* parametresinde [CPen](#cpen) Oluşturucusu.  
   
  *nWidth*  
  Kalem genişliğini belirtir.  
   
--   İlk sürümü için `CreatePen`, bu değer 0 ise, cihaz birimleri genişliği her zaman eşleme Modu bağımsız olarak 1 piksel olur.  
+-   İlk sürümü için `CreatePen`, bu değer 0 ise, cihaz birimlerindeki genişliğini her zaman eşleme modunu bağımsız olarak 1 piksel artımlı olur.  
   
--   İkinci sürümü için `CreatePen`, *nPenStyle* olan **PS_GEOMETRIC**, mantıksal birimler cinsinden genişliği verilir. Varsa *nPenStyle* olan **PS_COSMETIC**, genişlik 1 olarak ayarlanması gerekir.  
+-   İkinci sürümü için `CreatePen`, *nPenStyle* PS_GEOMETRIC, olan mantıksal birimler cinsinden genişliğini verilir. Varsa *nPenStyle* PS_COSMETIC, olan genişliği 1 olarak ayarlanması gerekir.  
   
  *crColor*  
- Kalem bir RGB rengi içerir.  
+ Bir RGB rengi kalemin içerir.  
   
  *pLogBrush*  
- İşaret eden bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı. Varsa *nPenStyle* olan **PS_COSMETIC**, **lbColor** üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve *lbStyle*üyesi `LOGBRUSH` yapısı ayarlanmalıdır **BS_SOLID**. Varsa **nPenStyle** olan **PS_GEOMETRIC**, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılması gerekir.  
+ İşaret eden bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı. Varsa *nPenStyle* PS_COSMETIC, olan `lbColor` üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve *lbStyle* üyesi `LOGBRUSH` yapısı, BS_ için ayarlanmış olması gerekir DOLU. NPenStyle PS_GEOMETRIC ise, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılmalıdır.  
   
  *nStyleCount*  
- Doubleword birimlerindeki uzunluğu belirtir *lpStyle* dizi. Bu değer sıfır olmalıdır *nPenStyle* değil **PS_USERSTYLE**.  
+ Doubleword birimindeki uzunluğu belirtir *lpStyle* dizisi. Bu değerin sıfır olması *nPenStyle* PS_USERSTYLE değil.  
   
  *lpStyle*  
- Bir dizi noktalarına doubleword değerleri. İlk değer, kullanıcı tanımlı bir stil ilk tire uzunluğunu belirtir, ikinci değer ilk alanı vb. uzunluğunu belirtir. Bu işaretçinin olmalıdır **NULL** varsa *nPenStyle* değil **PS_USERSTYLE**.  
+ Bir dizi noktalarını doubleword değerleri. İlk değer, kullanıcı tanımlı bir stilde ilk dash uzunluğunu belirtir, ikinci değer ilk alanı vb. uzunluğunu belirtir. This işaretçisi, NULL olmalı *nPenStyle* PS_USERSTYLE değil.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, sıfır olmayan veya yöntem başarısız olursa sıfır.  
+ Başarılı olursa sıfır dışı veya yöntem başarısız olursa sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk sürümü `CreatePen` kalem belirtilen stili, genişlik ve renk ile başlatır. Kalem daha sonra herhangi bir cihaz bağlamı için geçerli kalem olarak seçilebilir.  
+ Ürününün ilk sürümünü `CreatePen` kalem belirtilen stili, genişliği ve rengi ile başlatır. Kalem, daha sonra herhangi bir cihaz bağlamı için geçerli kalem olarak seçilebilir.  
   
- 1 piksel ya da her zaman gerekir büyük genişliği sahip kalemler **PS_NULL**, **PS_SOLID**, veya **PS_INSIDEFRAME** stili.  
+ 1 piksel artımlı büyük bir genişliğe sahiptir kalemler, her zaman PS_NULL, PS_SOLID veya PS_INSIDEFRAME stil olması gerekir.  
   
- Kalem varsa **PS_INSIDEFRAME** stili ve bir renk mantıksal renk tablosundaki eşleşmeyen bir renk kalem Titremeli renk ile çizilir. **PS_SOLID** kalem stilini kalem Titremeli renk ile oluşturmak için kullanılamaz. Stil **PS_INSIDEFRAME** aynıdır **PS_SOLID** kalem genişliği 1 küçük veya buna eşit olması durumunda.  
+ Kalem PS_INSIDEFRAME stili ve mantıksal bir renk tablosundaki bir renk eşleşmeyen bir renk varsa, kalem bir Titremeli renk ile çizilir. PS_SOLID kalem stili bir Titremeli renk ile bir kalem oluşturmak için kullanılamaz. Kalem genişliği 1'e eşit veya küçükse PS_INSIDEFRAME stili PS_SOLID için aynıdır.  
   
- İkinci sürümü `CreatePen` belirtilen stili, genişliğini ve fırça öznitelikleri sahip mantıksal bir yüzeysel veya geometrik kalem başlatır. Yüzeysel kalem genişliği her zaman 1'dir; Geometrik kalem genişliği her zaman world birimler cinsinden belirtilir. Bir uygulamanın mantıksal kalem oluşturduktan sonra o kalem bir cihaz bağlamına çağırarak seçebilirsiniz [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) işlevi. Kalem bir cihaz bağlamına seçtikten sonra çizgiler ve eğrilerle çizmek için kullanılabilir.  
+ Dosyanın ikinci sürümü, `CreatePen` stili, genişliğini ve öznitelikleri fırça belirtilen sahip mantıksal yüzeysel veya geometrik kalem başlatır. Yüzeysel kalem genişliği her zaman 1'dir; Geometrik kalem genişliği her zaman dünya birimleri cinsinden belirtilir. Bir uygulamanın mantıksal kalem oluşturduktan sonra kalem bir cihaz bağlamına çağırarak seçebilirsiniz [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) işlevi. Bir cihaz bağlamına kalem seçtikten sonra çizgiler ve eğrilerle çizmek için kullanılabilir.  
   
--   Varsa *nPenStyle* olan **PS_COSMETIC** ve **PS_USERSTYLE**, girdileri *lpStyle* dizi uzunlukları çizgi ve boşluk belirtin Stil birimler. Stil birim bir çizgi çizmek için Kalem kullanıldığı aygıt tarafından tanımlanır.  
+-   Varsa *nPenStyle* PS_COSMETIC ve PS_USERSTYLE, girişleri *lpStyle* dizi çizgi ve boşluk uzunlukları stili birimleri cinsinden belirtin. Bir stil birim bir çizgi çizmek için Kalem kullanıldığı cihaz tarafından tanımlanır.  
   
--   Varsa *nPenStyle* olan **PS_GEOMETRIC** ve **PS_USERSTYLE**, girdileri *lpStyle* dizi uzunlukları çizgi ve boşluk belirtin mantıksal birimler.  
+-   Varsa *nPenStyle* PS_GEOMETRIC ve PS_USERSTYLE, girişleri *lpStyle* dizisi uzunluklarının çizgi ve boşluk mantıksal birimler cinsinden belirtin.  
   
--   Varsa *nPenStyle* olan **PS_ALTERNATE**, stil birim göz ardı edilir ve her bir piksel ayarlayın.  
+-   Varsa *nPenStyle* PS_ALTERNATE, stil birim göz ardı edilir ve her bir piksel ayarlanır.  
   
- Bir uygulama artık verilen kalem gerektirdiğinde çağırmalıdır [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlev veya destroy `CPen` kaynak artık kullanımda şekilde nesne. Cihaz bağlamında kalem seçildiğinde bir uygulama kalem silmemelisiniz.  
+ Artık bir uygulama belirli bir kalem gerektirdiğinde çağırmalıdır [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) üye işlev veya yok etme `CPen` kaynak artık kullanımda olduğundan nesne. Kalem cihaz bağlamında seçili olduğunda, bir uygulama bir kalem silmemelisiniz.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/cpp/cpen-class_2.cpp)]  
   
 ##  <a name="createpenindirect"></a>  CPen::CreatePenIndirect  
- Stil, genişlik ve gösterdiği yapısı verilen renk sahip kalem başlatır *lpLogPen*.  
+ Bir stil, genişliği ve rengine işaret ettiği yapısı verilen sahip bir kalem başlatır *lpLogPen*.  
   
 ```  
 BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
@@ -248,21 +248,21 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
   
 ### <a name="parameters"></a>Parametreler  
  *lpLogPen*  
- İşaret Windows [LOGPEN](../../mfc/reference/logpen-structure.md) kalem hakkında bilgi içeren yapısı.  
+ Windows için işaret [LOGPEN](../../mfc/reference/logpen-structure.md) kalem hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- 1 piksel ya da her zaman gerekir büyük genişliği sahip kalemler **PS_NULL**, **PS_SOLID**, veya **PS_INSIDEFRAME** stili.  
+ 1 piksel artımlı büyük bir genişliğe sahiptir kalemler, her zaman PS_NULL, PS_SOLID veya PS_INSIDEFRAME stil olması gerekir.  
   
- Kalem varsa **PS_INSIDEFRAME** stili ve bir renk mantıksal renk tablosundaki eşleşmeyen bir renk kalem Titremeli renk ile çizilir. **PS_INSIDEFRAME** stili aynıdır **PS_SOLID** kalem genişliği 1 küçük veya buna eşit olması durumunda.  
+ Kalem PS_INSIDEFRAME stili ve mantıksal bir renk tablosundaki bir renk eşleşmeyen bir renk varsa, kalem bir Titremeli renk ile çizilir. Kalem genişliği 1'e eşit veya küçükse PS_INSIDEFRAME stili PS_SOLID için aynıdır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#101](../../mfc/codesnippet/cpp/cpen-class_3.cpp)]  
   
 ##  <a name="fromhandle"></a>  CPen::FromHandle  
- Bir işaretçi döndüren bir `CPen` Windows GDI kalem nesnesi için bir tanıtıcı verilen nesnesi.  
+ Bir işaretçi döndüren bir `CPen` bir Windows GDI pen nesnesi için bir tanıtıcı verilen nesne.  
   
 ```  
 static CPen* PASCAL FromHandle(HPEN hPen);
@@ -270,19 +270,19 @@ static CPen* PASCAL FromHandle(HPEN hPen);
   
 ### <a name="parameters"></a>Parametreler  
  *hPen*  
- `HPEN` Windows GDI kalem işleyin.  
+ `HPEN` Windows GDI kaleme işleyin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir `CPen` nesne başarılı; Aksi takdirde **NULL**.  
+ Bir işaretçi bir `CPen` nesne başarılı; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa bir `CPen` nesne tanıtıcısını, geçici bir iliştirilmemiş `CPen` nesnesi oluşturulur ve bağlı. Bu geçici `CPen` nesnesi, hangi tüm geçici grafiği zaman durdurulacağını sonraki açışınızda uygulama boşta kalma süresi, olay döngüde olana kadar nesneler silinir yalnızca geçerli. Diğer bir deyişle, geçici nesne yalnızca bir pencere ileti işleme sırasında geçerli değil.  
+ Varsa bir `CPen` nesne tanıtıcısını, geçici bir iliştirilmemiş `CPen` nesnesi oluşturulur ve bağlı. Bu geçici `CPen` tüm geçici grafik, zaman sonraki açışınızda uygulama boşta kalma süresi kendi olay döngüsü olana kadar nesneler silinir yalnızca nesne geçerlidir. Diğer bir deyişle, geçici nesne yalnızca bir pencere ileti işlenmesi sırasında geçerli değil.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#105](../../mfc/codesnippet/cpp/cpen-class_4.cpp)]  
   
 ##  <a name="getextlogpen"></a>  CPen::GetExtLogPen  
- Alır bir **EXTLOGPEN** yapısı temel.  
+ Alır bir `EXTLOGPEN` yapısı temel.  
   
 ```  
 int GetExtLogPen(EXTLOGPEN* pLogPen);
@@ -293,12 +293,12 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
  İşaret eden bir [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) kalem hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **EXTLOGPEN** stili, genişlik ve Kalem fırça özniteliklerini yapısını tanımlar. Örneğin, arama `GetExtLogPen` kalem belirli stilini eşleşecek şekilde.  
+ `EXTLOGPEN` Yapısı, stil, genişliğini ve Kalem fırça özniteliklerini tanımlar. Örneğin, çağrı `GetExtLogPen` kalem belirli stilini eşleştirilecek.  
   
- Kalem öznitelikleri hakkında bilgi için Windows SDK'nda aşağıdaki konulara bakın:  
+ Windows SDK'sındaki kalem öznitelikleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
 - [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
   
@@ -309,7 +309,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
 - [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705)  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde arama gösterilmektedir `GetExtLogPen` bir kalem öznitelikleri almak ve yeni, yüzeysel kalem aynı renkle oluşturmak için.  
+ Aşağıdaki kod örneği arama gösterir `GetExtLogPen` bir kalem öznitelikleri almak ve sonra yeni, yüzeysel bir kalem ile aynı renge oluşturun.  
   
  [!code-cpp[NVC_MFCDocView#102](../../mfc/codesnippet/cpp/cpen-class_5.cpp)]  
   
@@ -322,41 +322,41 @@ int GetLogPen(LOGPEN* pLogPen);
   
 ### <a name="parameters"></a>Parametreler  
  *pLogPen*  
- İşaret eden bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı kalem hakkında bilgiler içerir.  
+ İşaret eden bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı kalem hakkındaki bilgileri içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `LOGPEN` Stili, renk ve Kalem desenini yapısını tanımlar.  
+ `LOGPEN` Yapısı, stil, rengini ve Kalem desenini tanımlar.  
   
- Örneğin, arama `GetLogPen` kalem belirli stilini eşleşecek şekilde.  
+ Örneğin, çağrı `GetLogPen` kalem belirli stilini eşleştirilecek.  
   
- Kalem öznitelikleri hakkında bilgi için Windows SDK'nda aşağıdaki konulara bakın:  
+ Windows SDK'sındaki kalem öznitelikleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
 - [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
   
 - [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041)  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde arama gösterilmektedir `GetLogPen` kalem karakter almak ve yeni, düz kalem aynı renkle oluşturmak için.  
+ Aşağıdaki kod örneği arama gösterir `GetLogPen` kalem karakter alıp sonra yeni, düz bir kalem ile aynı renge oluşturun.  
   
  [!code-cpp[NVC_MFCDocView#103](../../mfc/codesnippet/cpp/cpen-class_6.cpp)]  
   
-##  <a name="operator_hpen"></a>  CPen::operator HPEN  
- Ekli Windows GDI işleyicisini alır `CPen` nesnesi.  
+##  <a name="operator_hpen"></a>  HPEN CPen::operator  
+ Ekli Windows GDI tanıtıcısını alır `CPen` nesne.  
   
 ```  
 operator HPEN() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı, Windows GDI nesnesi için bir tanıtıcı tarafından temsil edilen varsa `CPen` nesne; Aksi halde **NULL**.  
+ Başarılı, Windows GDI nesnesi için bir tanıtıcı tarafından temsil edilen varsa `CPen` nesne; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleç doğrudan kullanımını destekleyen bir atama işleci olan bir `HPEN` nesnesi.  
+ HPEN nesne doğrudan kullanımını destekleyen bir yayım işleciyle işlecidir.  
   
- Grafik nesneleri kullanma hakkında daha fazla bilgi için bkz: [grafik nesneleri](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK.  
+ Grafik nesneler kullanma hakkında daha fazla bilgi için bkz [grafik nesneleri](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]  

@@ -1,5 +1,5 @@
 ---
-title: CRichEditCntrItem sınıfı | Microsoft Docs
+title: Cricheditcntrıtem sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0b4c038389810fcc6a847cdbf7837568b3007b6
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 2a0566ef5eead5950f2b4de1f6e1a220f79bcfbe
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37078614"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849333"
 ---
-# <a name="cricheditcntritem-class"></a>CRichEditCntrItem sınıfı
-İle [CRichEditView](../../mfc/reference/cricheditview-class.md) ve [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), zengin düzenleme denetimine MFC'nin belge görünüm mimarisi bağlamında işlevselliğini sağlar.  
+# <a name="cricheditcntritem-class"></a>Cricheditcntrıtem sınıfı
+İle [CRichEditView](../../mfc/reference/cricheditview-class.md) ve [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), MFC'nin belge görüntüleme mimarisi bağlamında zengin düzenleme denetimi işlevlerini sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,7 +42,7 @@ class CRichEditCntrItem : public COleClientItem
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CRichEditCntrItem::CRichEditCntrItem](#cricheditcntritem)|Oluşturan bir `CRichEditCntrItem` nesnesi.|  
+|[CRichEditCntrItem::CRichEditCntrItem](#cricheditcntritem)|Oluşturur bir `CRichEditCntrItem` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -51,22 +51,22 @@ class CRichEditCntrItem : public COleClientItem
 |[CRichEditCntrItem::SyncToRichEditObject](#synctoricheditobject)|Öğe, başka bir tür olarak etkinleştirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- "Zengin düzenleme denetimi" kullanıcı girin ve metin düzenleme bir penceredir. Metin karakter ve paragraf biçimlendirmesini atanabilir ve katıştırılmış OLE nesnelerine içerebilir. Zengin düzenleme denetimlerinde metin biçimlendirme için bir programlama arabirimi sağlar. Ancak, bir uygulamanın tüm biçimlendirme işlemlerini kullanıcı için kullanılabilir hale getirmek için gerekli olan kullanıcı arabirimi bileşenlerini uygulamalıdır.  
+ "Zengin düzenleme denetimi" kullanıcı girin ve metin düzenleme bir penceredir. Metnin karakteri ve paragraf biçimlendirme atanabilir ve katıştırılmış OLE nesnelerine içerebilir. Zengin düzenleme denetimleri, metin biçimlendirmesi için bir programlama arabirimi sağlar. Ancak, bir uygulamanın tüm biçimlendirme işlemlerini kullanıcı tarafından kullanılabilir hale getirmek için gerekli olan kullanıcı arabirimi bileşenleri uygulamalıdır.  
   
- `CRichEditView` metin ve biçimlendirme karakteristiğini metin, tutar. `CRichEditDoc` OLE istemci görünümünde olan bir öğe listesini tutar. `CRichEditCntrItem` OLE istemci öğesi kapsayıcı tarafı erişim sağlar.  
+ `CRichEditView` metin biçimlendirme özelliği ve metin tutar. `CRichEditDoc` OLE istemci Görünümü'nde olan öğelerin listesini tutar. `CRichEditCntrItem` bir OLE istemci öğesi kapsayıcı tarafı erişim sağlar.  
   
- Bu Windows yaygın bir denetim (ve bu nedenle [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) yalnızca Windows 95/98 ve Windows NT sürümler 3.51 altında çalışan programları için kullanılabilir ve üzerinde desteklenir.  
+ Bu Windows ortak denetimi (ve bu nedenle [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) ve üzeri yalnızca Windows 95/98 ve Windows NT sürümler 3.51 altında çalışan programlar için kullanılabilir.  
   
- Zengin düzenleme kapsayıcı öğeler bir MFC uygulamasında kullanarak bir örnek için bkz: [WORDPAD](../../visual-cpp-samples.md) örnek uygulama.  
+ Zengin düzenleme kapsayıcı öğeleri bir MFC uygulamasında kullanma örneği için bkz: [WORDPAD](../../visual-cpp-samples.md) örnek uygulama.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
   
  [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
   
- [CDocItem](../../mfc/reference/cdocitem-class.md)  
+ [Cdocıtem](../../mfc/reference/cdocitem-class.md)  
   
- [COleClientItem](../../mfc/reference/coleclientitem-class.md)  
+ [Coleclientıtem](../../mfc/reference/coleclientitem-class.md)  
   
  `CRichEditCntrItem`  
   
@@ -74,7 +74,7 @@ class CRichEditCntrItem : public COleClientItem
  **Başlık:** afxrich.h  
   
 ##  <a name="cricheditcntritem"></a>  CRichEditCntrItem::CRichEditCntrItem  
- Oluşturmak için bu işlevi çağırmak bir `CRichEditCntrItem` nesne ve kapsayıcı belgeye ekleyin.  
+ Oluşturmak için bu işlevi çağırın bir `CRichEditCntrItem` nesne ve kapsayıcının belgeye ekleyin.  
   
 ```  
 CRichEditCntrItem(
@@ -84,18 +84,18 @@ CRichEditCntrItem(
   
 ### <a name="parameters"></a>Parametreler  
  *preo*  
- İşaretçi bir [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE öğeyi tanımlayan yapısı. Yeni `CRichEditCntrItem` nesnesi, bu OLE öğenin etrafında yapılandırılmıştır. Varsa *preo* olan **NULL**, istemci öğesi boş.  
+ İşaretçi bir [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE öğesini tanımlayan yapısı. Yeni `CRichEditCntrItem` nesne bu OLE öğesini yapılandırılmıştır. Varsa *preo* NULL ise istemci öğesi boş.  
   
- *pContainer*  
- Bu öğeyi içerecek kapsayıcı belge işaretçi. Varsa *pContainer* olan **NULL**, açıkça çağırmalısınız [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) bir belgeye bu istemci öğesi eklemek için.  
+ *Implement_serıalıze*  
+ Bu öğeyi içeren kapsayıcı belge işaretçisi. Varsa *Implement_serıalıze* null, açıkça çağırmalıdır [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) belge bu istemci öğesi eklemek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, tüm OLE başlatma işlemini gerçekleştirir.  
+ Bu işlev, tüm OLE başlatma gerçekleştirmez.  
   
- Daha fazla bilgi için bkz: [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) Windows SDK'sındaki yapısı.  
   
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject  
- Cihaz en boy eşitlemek için bu işlevi çağırmak [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318), bu `CRichEditCntrltem` tarafından belirtilen için *yeniden a*.  
+ Cihaz yönü eşitlemek için bu işlevi çağırın [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318), bu `CRichEditCntrltem` tarafından belirtilen için *yeniden a*.  
   
 ```  
 void SyncToRichEditObject(REOBJECT& reo);
@@ -103,14 +103,14 @@ void SyncToRichEditObject(REOBJECT& reo);
   
 ### <a name="parameters"></a>Parametreler  
  *yeniden a*  
- Başvuru bir [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE öğeyi tanımlayan yapısı.  
+ Başvuru bir [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE öğesini tanımlayan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) Windows SDK'sındaki.  
+ Daha fazla bilgi için [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek WORDPAD](../../visual-cpp-samples.md)   
- [COleClientItem sınıfı](../../mfc/reference/coleclientitem-class.md)   
+ [Coleclientıtem sınıfı](../../mfc/reference/coleclientitem-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CRichEditDoc sınıfı](../../mfc/reference/cricheditdoc-class.md)   
  [CRichEditView Sınıfı](../../mfc/reference/cricheditview-class.md)

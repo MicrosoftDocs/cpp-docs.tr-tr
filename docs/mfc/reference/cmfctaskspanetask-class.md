@@ -40,15 +40,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c16644a90bb349a78cac43867fdc648e9c01223d
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 041a207af69ac65646e1b30672250b84aa3a5d36
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040707"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853975"
 ---
 # <a name="cmfctaskspanetask-class"></a>CMFCTasksPaneTask sınıfı
-`CMFCTasksPaneTask` Sınıftır görev bölmesi denetimi için görevleri temsil eden bir yardımcı sınıfı ( [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md)). Görev nesnesini görev grubundaki bir öğeyi temsil eder ( [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md)). Her görev, bir kullanıcı görev ve görev adı solunda görüntülenen simge tıkladığında framework yürüten bir komutu olabilir.  
+`CMFCTasksPaneTask` Görev bölmesi denetimi için görevleri temsil eden bir yardımcı sınıfı ( [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md)). Görev nesnesi görev grubundaki bir öğeyi temsil eder ( [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md)). Her görev bir kullanıcı görevi ve görev adının solunda görüntülenen simge tıkladığında framework yürüten bir komut içerebilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -62,8 +62,8 @@ class CMFCTasksPaneTask : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCTasksPaneTask::CMFCTasksPaneTask](#cmfctaskspanetask)|Oluşturur ve başlatır bir `CMFCTasksPaneTask` nesnesi.|  
-|`CMFCTasksPaneTask::~CMFCTasksPaneTask`|Yok Edicisi.|  
+|[CMFCTasksPaneTask::CMFCTasksPaneTask](#cmfctaskspanetask)|Oluşturur ve başlatır bir `CMFCTasksPaneTask` nesne.|  
+|`CMFCTasksPaneTask::~CMFCTasksPaneTask`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -75,24 +75,24 @@ class CMFCTasksPaneTask : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCTasksPaneTask::m_bAutoDestroyWindow](#m_bautodestroywindow)|Görev penceresi otomatik olarak yok olup olmadığını belirler.|  
+|[CMFCTasksPaneTask::m_bAutoDestroyWindow](#m_bautodestroywindow)|Görev penceresi otomatik olarak edildiğinde olup olmadığını belirler.|  
 |[CMFCTasksPaneTask::m_bIsBold](#m_bisbold)|Framework kalın metin olarak görev etiketi çizer olup olmadığını belirler.|  
-|[CMFCTasksPaneTask::m_dwUserData](#m_dwuserdata)|Çerçeve olan görev ilişkilendirir kullanıcı tanımlı veri içerir. Görev ilişkili veri varsa sıfır olarak ayarlayın.|  
+|[CMFCTasksPaneTask::m_dwUserData](#m_dwuserdata)|Framework görev ile ilişkilendirir ve kullanıcı tanımlı veri içerir. Görevin ilişkili veri yoksa sıfır olarak ayarlayın.|  
 |[CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)|Görev penceresi için bir tanıtıcı.|  
-|[CMFCTasksPaneTask::m_nIcon](#m_nicon)|Görev yanındaki framework görüntüler görüntünün görüntü listesinde dizini.|  
-|[CMFCTasksPaneTask::m_nWindowHeight](#m_nwindowheight)|Görev penceresi yüksekliği. Görev görev pencere varsa, bu değer sıfır olur.|  
+|[CMFCTasksPaneTask::m_nIcon](#m_nicon)|Görüntü listesi framework yanındaki görev görüntüler görüntünün dizin.|  
+|[CMFCTasksPaneTask::m_nWindowHeight](#m_nwindowheight)|Görev penceresi yüksekliği. Görev hiçbir görev penceresi varsa, bu değeri sıfırdır.|  
 |[CMFCTasksPaneTask::m_pGroup](#m_pgroup)|Bir işaretçi `CMFCTasksPaneTaskGroup` bu görevin ait olduğu.|  
-|[CMFCTasksPaneTask::m_rect](#m_rect)|Görevin sınırlayıcı dikdörtgenini belirtir.|  
+|[CMFCTasksPaneTask::m_rect](#m_rect)|Görev sınırlayıcı dikdörtgenini belirtir.|  
 |[CMFCTasksPaneTask::m_strName](#m_strname)|Görev adı.|  
-|[CMFCTasksPaneTask::m_uiCommandID](#m_uicommandid)|Kullanıcı görevi tıklattığında framework yürütür komutu komut Kimliğini belirtir. Bu değer geçerli bir komut kimliği değilse, görev basit bir etiket olarak kabul edilir.|  
+|[CMFCTasksPaneTask::m_uiCommandID](#m_uicommandid)|Kullanıcı görevi tıkladığında framework yürütür komutu komut Kimliğini belirtir. Bu değer, geçerli komut kimliği değil, görev basit bir etiket olarak kabul edilir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Aşağıdaki çizim üç görevler içeren bir görev grubu gösterir:  
+ Aşağıdaki çizim üç görev içeren bir görev grubunu gösterir:  
   
  ![Görev grubu, Genişletilmiş](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")  
   
 > [!NOTE]
->  Bir görev geçerli bir komut kimliği sahip değilse basit bir etiket olarak kabul edilir.  
+>  Bir görev geçerli komut kimliği yoksa, basit bir etiket olarak kabul edilir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -103,7 +103,7 @@ class CMFCTasksPaneTask : public CObject
  **Başlık:** afxTasksPane.h  
   
 ##  <a name="cmfctaskspanetask"></a>  CMFCTasksPaneTask::CMFCTasksPaneTask  
- Oluşturur ve başlatır bir `CMFCTasksPaneTask` nesnesi.  
+ Oluşturur ve başlatır bir `CMFCTasksPaneTask` nesne.  
   
 ```  
 CMFCTasksPaneTask(
@@ -125,34 +125,34 @@ CMFCTasksPaneTask(
  Görev adını belirtir.  
   
  *nIcon*  
- Görüntü listesinde görevin görüntünün dizinini belirtir.  
+ Görüntü listesinden görevin görüntünün dizinini belirtir.  
   
  *uiCommandID*  
- Görev tıklatıldığında çalıştırılan komut komut Kimliğini belirtir.  
+ Görev tıklandığında çalıştırılan komut komut Kimliğini belirtir.  
   
  *dwUserData*  
  Kullanıcı tanımlı veri.  
   
  *hwndTask*  
- Görev penceresi tanıtıcısını belirtir.  
+ Görev penceresi için bir tanıtıcı belirtir.  
   
  *bAutoDestroyWindow*  
- Varsa `TRUE`, görev penceresi otomatik olarak yok.  
+ TRUE ise görev penceresi otomatik olarak yok edilir.  
   
  *nWindowHeight*  
- Görev penceresinin yüksekliğini belirtir.  
+ Görev pencerenin yüksekliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_bautodestroywindow"></a>  CMFCTasksPaneTask::m_bAutoDestroyWindow  
- Görev penceresi otomatik olarak yok olup olmadığını belirler.  
+ Görev penceresi otomatik olarak edildiğinde olup olmadığını belirler.  
   
 ```  
 BOOL m_bAutoDestroyWindow;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kümesine `TRUE` belirtmek için görev penceresi ( [CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) yok edilmesi otomatik olarak; tersi durumda, `FALSE`.  
+ Görev penceresi belirtmek için TRUE olarak ayarlayın ( [CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) yok otomatik olarak; Aksi takdirde FALSE.  
   
 ##  <a name="m_bisbold"></a>  CMFCTasksPaneTask::m_bIsBold  
  Bir görev etiketi kalın metin olarak çizilip çizilmeyeceğini belirler.  
@@ -162,10 +162,10 @@ BOOL m_bIsBold;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye kümesine `TRUE` kalın metin görev etiketi için görüntülenecek.  
+ Görev etiket metnini görüntüle true kalın bu üyeyi ayarlayın.  
   
 ##  <a name="m_dwuserdata"></a>  CMFCTasksPaneTask::m_dwUserData  
- Görev ile ilişkili kullanıcı tanımlı veri içerir. Hiçbir veri görev ile ilişkili ise sıfır olarak ayarlayın.  
+ Görev ile ilişkili kullanıcı tanımlı veri içerir. Veri görev ile ilişkili ise sıfır olarak ayarlayın.  
   
 ```  
 DWORD m_dwUserData;  
@@ -181,22 +181,22 @@ HWND m_hwndTask;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir görev pencere eklemek için arama [CMFCTasksPane::AddWindow](../../mfc/reference/cmfctaskspane-class.md#addwindow).  
+ Bir görev penceresi eklemek için arama [CMFCTasksPane::AddWindow](../../mfc/reference/cmfctaskspane-class.md#addwindow).  
   
 ##  <a name="m_nicon"></a>  CMFCTasksPaneTask::m_nIcon  
- Belirtilen görev yanında görüntülenen görüntünün tanımlayan bir resim listesi dizin konumu.  
+ Belirtilen görev yanında görüntülenen görüntüyü tanımlayan bir görüntü listesi dizin konumu.  
   
 ```  
 int m_nIcon;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Resim listesi belirlediği [CMFCTasksPane::SetIconsList](../../mfc/reference/cmfctaskspane-class.md#seticonslist).  
+ Görüntü listesi belirlediği [CMFCTasksPane::SetIconsList](../../mfc/reference/cmfctaskspane-class.md#seticonslist).  
   
- Ayarlama `m_nIcon` görüntü olmadan görevi görüntülemek istiyorsanız,-1.  
+ Ayarlama `m_nIcon` görevi görüntü olmadan görüntülemek istiyorsanız,-1.  
   
 ##  <a name="m_nwindowheight"></a>  CMFCTasksPaneTask::m_nWindowHeight  
- Görev penceresi yüksekliği. Görev görev pencere varsa, bu değer sıfır olur.  
+ Görev penceresi yüksekliği. Görev hiçbir görev penceresi varsa, bu değeri sıfırdır.  
   
 ```  
 int m_nWindowHeight;  
@@ -212,17 +212,17 @@ CMFCTasksPaneTaskGroup* m_pGroup;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Her görev, bir üst grubu olmalıdır. Çağırarak grupları için bir görev bölmesi ekleme [CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#addgroup).  
+ Her görev, bir üst grubu olmalıdır. Çağırarak grup için bir görev bölmesi ekleme [CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#addgroup).  
   
 ##  <a name="m_rect"></a>  CMFCTasksPaneTask::m_rect  
- Görevin sınırlayıcı dikdörtgenini belirtir.  
+ Görev sınırlayıcı dikdörtgenini belirtir.  
   
 ```  
 CRect m_rect;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu değer, görev çizildiğinde çerçevesi tarafından hesaplanır.  
+ Bu değer, görev çizildiğinde framework tarafından hesaplanır.  
   
 ##  <a name="m_strname"></a>  CMFCTasksPaneTask::m_strName  
  Görev adı.  
@@ -234,7 +234,7 @@ CString m_strName;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_uicommandid"></a>  CMFCTasksPaneTask::m_uiCommandID  
- Kullanıcı görevi tıklattığında çalıştırılan komut komut Kimliğini belirtir. Bu değer geçerli bir komut kimliği değilse, görev basit bir etiket olarak kabul edilir.  
+ Kullanıcı görevi tıkladığında çalıştırılan komut komut Kimliğini belirtir. Bu değer, geçerli komut kimliği değil, görev basit bir etiket olarak kabul edilir.  
   
 ```  
 UINT m_uiCommandID;  
@@ -253,13 +253,13 @@ virtual BOOL SetACCData(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pParent*  
- Geçerli görevin üst pencere temsil eder.  
+ Geçerli görevin ana pencereyi temsil eder.  
   
  [out] *veri*  
- Türünde bir nesne `CAccessibilityData` geçerli görev erişilebilirlik verilerle doldurulur.  
+ Bir nesne türü `CAccessibilityData` geçerli görev erişilebilirlik verilerle doldurulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` varsa *veri* parametresi başarıyla geçerli görevin erişilebilirlik verilerle doldurulan; Aksi takdirde `FALSE`.  
+ TRUE ise *veri* parametre başarıyla geçerli görevin erişilebilirlik verilerle doldurulmuş; Aksi takdirde FALSE.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

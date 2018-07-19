@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a0b9f3945d9bcfa0c77855c94ec7247cb9804cb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b70ae03c15fcdee4510e25815e516c3e17eb1a2a
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359600"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879428"
 ---
 # <a name="celementtraitsbase-class"></a>CElementTraitsBase sınıfı
-Bu sınıf, varsayılan copy sağlar ve koleksiyon sınıfı yöntemleri taşıyın.  
+Bu sınıf, varsayılan copy sağlar ve bir koleksiyon sınıfı yöntemleri taşıyın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,35 +39,35 @@ class CElementTraitsBase
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Bir koleksiyonda depolanan verilerin türü.  
+ *T*  
+ Koleksiyonda depolanacak veri türü.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CElementTraitsBase::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.|  
-|[CElementTraitsBase::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.|  
+|[CElementTraitsBase::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|  
+|[CElementTraitsBase::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CElementTraitsBase::CopyElements](#copyelements)|Bir koleksiyon sınıfı nesnesinde depolanan öğeleri kopyalamak için bu yöntemi çağırın.|  
-|[CElementTraitsBase::RelocateElements](#relocateelements)|Bir koleksiyon sınıfı nesnesinde depolanan öğeler konumunu değiştirmek için bu yöntemi çağırın.|  
+|[CElementTraitsBase::CopyElements](#copyelements)|Bir koleksiyon sınıfı nesnesinde saklanan öğe kopyalamak için bu yöntemi çağırın.|  
+|[CElementTraitsBase::RelocateElements](#relocateelements)|Bir koleksiyon sınıfı nesnesinde saklanan öğe konumunu değiştirmek için bu yöntemi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Taban sınıfı kopyalama ve koleksiyon sınıfı öğelerini yeniden konumlandırma için yöntemleri tanımlar. Sınıfları tarafından kullanılan [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md), [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md), ve [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md).  
+ Bu temel sınıfı, bir koleksiyon sınıfı öğelerini yeniden konumlandırma ve kopyalama için yöntemleri tanımlar. Sınıflar tarafından kullanıldığı [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md), [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md), ve [Cstringelementtraitsı](../../atl/reference/cstringelementtraitsi-class.md).  
   
- Daha fazla bilgi için bkz: [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
+ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
 ##  <a name="copyelements"></a>  CElementTraitsBase::CopyElements  
- Bir koleksiyon sınıfı nesnesinde depolanan öğeleri kopyalamak için bu yöntemi çağırın.  
+ Bir koleksiyon sınıfı nesnesinde saklanan öğe kopyalamak için bu yöntemi çağırın.  
   
 ```
 static void CopyElements(
@@ -77,20 +77,20 @@ static void CopyElements(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDest`  
- Kopyalanan veriler alacak ilk öğe işaretçi.  
+ *pDest*  
+ Kopyalanan veriler alacak ilk öğesinin işaretçisi.  
   
- `pSrc`  
- Kopyalamak için ilk öğe işaretçi.  
+ *pSrc*  
+ Kopyalamak için ilk öğesinin işaretçisi.  
   
- `nElements`  
+ *nElements*  
  Kopyalanacak öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kaynak ve hedef öğeleri çakışmaması gerekir.  
+ Kaynak ve hedef öğeleri çakışmaması.  
   
 ##  <a name="inargtype"></a>  CElementTraitsBase::INARGTYPE  
- Koleksiyona öğe eklemek için kullanılacak veri türü.  
+ Öğeleri bir koleksiyona eklemek için kullanılacak veri türü.  
   
 ```
 typedef const T& INARGTYPE;
@@ -104,7 +104,7 @@ typedef T& OUTARGTYPE;
 ```  
   
 ##  <a name="relocateelements"></a>  CElementTraitsBase::RelocateElements  
- Bir koleksiyon sınıfı nesnesinde depolanan öğeler konumunu değiştirmek için bu yöntemi çağırın.  
+ Bir koleksiyon sınıfı nesnesinde saklanan öğe konumunu değiştirmek için bu yöntemi çağırın.  
   
 ```
 static void RelocateElements(
@@ -114,17 +114,17 @@ static void RelocateElements(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDest`  
- Yeniden konumlandırılan veri alacak ilk öğe işaretçi.  
+ *pDest*  
+ Veriler yeni yerlerine alacak ilk öğesinin işaretçisi.  
   
- `pSrc`  
- İşaretçi ilk öğesine taşıyabilir.  
+ *pSrc*  
+ Dışında yeniden konumlandırmakta ilk öğesinin işaretçisi.  
   
- `nElements`  
- Taşıyabilir öğe sayısı.  
+ *nElements*  
+ Dışında yeniden konumlandırmakta öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırır [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), çoğu veri türleri için yeterli olduğu. Taşınan nesne kendi üye işaretçileri içeriyorsa, bu yöntem geçersiz kılınabilir gerekecektir.  
+ Bu yöntemin çağırdığı [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), çoğu veri türleri için yeterli olduğu. Taşınan nesnelerin kendi üye işaretçileri içeriyorsa, bu yöntemi geçersiz kılınması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -40,15 +40,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd96f0240f8dd97fdda54fd2d00231db14ae3d47
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 220a4fc1b97c30be28554faf68d5338b2a8e4ea8
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079189"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849987"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
-Ayar ve boşluklarının değiştirme için ek destek ile Windows ortak OLE Sayfa Yapısı iletişim kutusu tarafından sağlanan hizmetlerin yalıtır.  
+Ayar ve yazdırma kenar boşluklarını değiştirmek için ek destek içeren Windows ortak OLE sayfa düzeni iletişim kutusu tarafından sağlanan hizmetleri kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -62,40 +62,40 @@ class CPageSetupDialog : public CCommonDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog)|Oluşturan bir `CPageSetupDialog` nesnesi.|  
+|[CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog)|Oluşturur bir `CPageSetupDialog` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPageSetupDialog::CreatePrinterDC](#createprinterdc)|Yazdırma için cihaz bağlamı oluşturur.|  
-|[CPageSetupDialog::DoModal](#domodal)|İletişim kutusu görüntüler ve kullanıcı yapma seçimi sağlar.|  
-|[CPageSetupDialog::GetDeviceName](#getdevicename)|Yazıcı aygıt adını döndürür.|  
-|[CPageSetupDialog::GetDevMode](#getdevmode)|Geçerli döndürür `DEVMODE` yazıcı.|  
+|[CPageSetupDialog::CreatePrinterDC](#createprinterdc)|Yazdırma için bir cihaz bağlamı oluşturur.|  
+|[CPageSetupDialog::DoModal](#domodal)|İletişim kutusunda görüntülenir ve kullanıcı oluşturma seçimi sağlar.|  
+|[CPageSetupDialog::GetDeviceName](#getdevicename)|Yazıcı cihaz adını döndürür.|  
+|[CPageSetupDialog::GetDevMode](#getdevmode)|Geçerli DEVMODE yazıcının döndürür.|  
 |[CPageSetupDialog::GetDriverName](#getdrivername)|Yazıcı tarafından kullanılan sürücü döndürür.|  
 |[CPageSetupDialog::GetMargins](#getmargins)|Yazıcı geçerli kenar boşluğu ayarlarını döndürür.|  
-|[CPageSetupDialog::GetPaperSize](#getpapersize)|Yazıcı kağıt boyutu döndürür.|  
+|[CPageSetupDialog::GetPaperSize](#getpapersize)|Yazıcı kağıdı boyutunu döndürür.|  
 |[CPageSetupDialog::GetPortName](#getportname)|Çıkış bağlantı noktası adını döndürür.|  
-|[CPageSetupDialog::OnDrawPage](#ondrawpage)|Yazdırılan sayfasının ekran görüntüsü oluşturmak için çerçevesi tarafından çağrılır.|  
-|[CPageSetupDialog::PreDrawPage](#predrawpage)|Yazdırılan sayfasının ekran görüntüsü işlemeden önce çerçevesi tarafından çağrılır.|  
+|[CPageSetupDialog::OnDrawPage](#ondrawpage)|Yazdırılan sayfaya bir ekran görüntüsünü işlemek için framework tarafından çağırılır.|  
+|[CPageSetupDialog::PreDrawPage](#predrawpage)|Yazdırılan sayfanın ekran görüntüsünü işlemeden önce framework tarafından çağırılır.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPageSetupDialog::m_psd](#m_psd)|Özelleştirmek için kullanılan bir yapı bir `CPageSetupDialog` nesnesi.|  
+|[CPageSetupDialog::m_psd](#m_psd)|Özelleştirmek için kullanılan bir yapının bir `CPageSetupDialog` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, Sayfa Yapısı iletişim kutusu gerçekleşmesi için tasarlanmıştır.  
+ Bu sınıf, Sayfa Yapısı iletişim kutusunun gerçekleşmesi için tasarlanmıştır.  
   
- Kullanılacak bir `CPageSetupDialog` nesne, öncelikle nesnesini kullanarak oluşturmanız `CPageSetupDialog` Oluşturucusu. İletişim kutusu oluşturulan sonra ayarlamak veya herhangi bir değer değiştirmek `m_psd` , iletişim kutusunun denetimlerinin değerlerini başlatmak için veri üyesi. [M_psd](#m_psd) yapısıdır türü **PAGESETUPDLG**.  
+ Kullanılacak bir `CPageSetupDialog` nesne, ilk nesnesini kullanarak oluşturun `CPageSetupDialog` Oluşturucusu. İletişim kutusu oluşturulmuş bir kez ayarlayabilir veya herhangi bir değer değiştirme `m_psd` iletişim kutusunun denetimleri değerlerini başlatmak için veri üyesi. [M_psd](#m_psd) türü PAGESETUPDLG yapısıdır.  
   
- İletişim kutusu denetimleri başlatılıyor sonra çağrı `DoModal` üye işlevi iletişim kutusunu görüntülemek ve yazdırma seçeneklerini seçmek kullanıcı izin vermek için. `DoModal` Kullanıcı Tamam seçili olup olmadığını döndürür ( **IDOK**) veya iptal ( **IDCANCEL**) düğmesi.  
+ İletişim kutusu denetimleri başlatılıyor sonra çağrı `DoModal` iletişim kutusunu görüntülemek ve yazdırma seçeneklerini seçmesini sağlamak için üye işlevi. `DoModal` Kullanıcı Tamam (IDOK) veya iptal edin (IDCANCEL) düğmesi seçili olup olmadığını döndürür.  
   
- Varsa `DoModal` döndürür **IDOK**, birkaç kullanabilirsiniz `CPageSetupDialog`'s üye işlevleri veya erişim `m_psd` kullanıcı tarafından bilgi girişlerini almak için veri üyesi.  
+ Varsa `DoModal` IDOK, döndürür birkaç kullanabileceğiniz `CPageSetupDialog`ait üye işlevleri veya erişim `m_psd` veri üyesi, kullanıcı giriş bilgileri almak için.  
   
 > [!NOTE]
->  Ortak bir OLE Sayfa Yapısı iletişim kutusu kapatıldıktan sonra çerçevesi tarafından kullanıcı tarafından yapılan değişiklikler kaydedilmeyecek. Bu iletişim kutusundan tüm değerleri uygulamanın belge veya uygulama sınıfı üyesi gibi kalıcı bir konuma kaydetmek için uygulamanın kendisinin kadar olur.  
+>  Ortak OLE Sayfa Yapısı iletişim kutusu kapatıldıktan sonra framework tarafından kullanıcı tarafından yapılan değişiklikler kaydedilmeyecek. Bu iletişim kutusundaki tüm değerleri uygulamanın belge veya uygulama sınıfı üyesi gibi kalıcı bir konuma kaydetmek için uygulamanın kendisi kadar olan.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -114,7 +114,7 @@ class CPageSetupDialog : public CCommonDialog
  **Başlık:** afxdlgs.h  
   
 ##  <a name="cpagesetupdialog"></a>  CPageSetupDialog::CPageSetupDialog  
- Oluşturmak için bu işlevi çağırmak bir `CPageSetupDialog` nesnesi.  
+ Oluşturmak için bu işlevi çağırın bir `CPageSetupDialog` nesne.  
   
 ```  
 CPageSetupDialog(
@@ -123,110 +123,110 @@ CPageSetupDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *dwFlags*  
- İletişim kutusu ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Değerlerin Bitsel veya işleci kullanılarak birleştirilebilir. Bu değerleri şu anlama gelir:  
+ *CertOpenStore*  
+ İletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Değerleri, bit düzeyinde OR işleci kullanılarak birleştirilebilir. Bu değerler, aşağıdaki anlamlara sahip:  
   
-- **PSD_DEFAULTMINMARGINS** yazıcının zamanlayıcısındaki aynı olacak şekilde sayfa kenar boşlukları için izin verilen en düşük genişlikleri ayarlar. Bu bayrak yoksayılır **PSD_MARGINS** ve **PSD_MINMARGINS** bayrakları da belirtilmiş.  
+- Yazıcının alt sınır aynı olacak şekilde kenar izin verilen en düşük genişlik PSD_DEFAULTMINMARGINS ayarlar. Bu bayrak PSD_MARGINS ve PSD_MINMARGINS bayrakları ayrıca belirtilmişse göz ardı edilir.  
   
-- **PSD_INWININIINTLMEASURE** uygulanmadı.  
+- Uygulanan PSD_INWININIINTLMEASURE değil.  
   
-- **PSD_MINMARGINS** belirtilen değerleri kullanmak sistem neden **rtMinMargin** üye sol, üst, sağ ve alt kenar boşlukları için izin verilen en düşük genişlikleri olarak. Sistem, kullanıcının belirtilen minimum'dan küçük bir genişliğe geçmesini engeller. Varsa **PSD_MINMARGINS** belirtilmezse, sistem yazıcı tarafından izin verdiği en az izin verilen genişliğini ayarlar.  
+- PSD_MINMARGINS neden olur, belirtilen değerler kullanılacak sistem `rtMinMargin` üyesi olarak sol, üst, sağ ve alt kenar boşlukları izin verilen en düşük genişlik. Sistem, kullanıcının belirtilen en düşük'dan küçük bir genişliğe girmesini engeller. PSD_MINMARGINS belirtilmezse bu yazıcı tarafından izin verilen minimum izin verilen genişlikleri ayarlar.  
   
-- **PSD_MARGINS** kenar boşluğu denetim alanı etkinleştirir.  
+- Kenar boşluğu denetim alanı PSD_MARGINS etkinleştirir.  
   
-- **PSD_INTHOUSANDTHSOFINCHES** inç 1/1000 aralığında ölçülecek birimleri iletişim kutusunun neden olur.  
+- PSD_INTHOUSANDTHSOFINCHES inç 1/1000 ile Karşılaştırılacak iletişim kutusu birimleri neden olur.  
   
-- **PSD_INHUNDREDTHSOFMILLIMETERS** 1/100 bir milimetrenin ölçülecek birimleri iletişim kutusunun neden olur.  
+- PSD_INHUNDREDTHSOFMILLIMETERS 1/100 biri ölçülecek iletişim kutusu birimleri neden olur.  
   
-- **PSD_DISABLEMARGINS** kenar boşluğu iletişim kutusu denetimleri devre dışı bırakır.  
+- PSD_DISABLEMARGINS kenar boşluğu iletişim kutusu denetimleri devre dışı bırakır.  
   
-- **PSD_DISABLEPRINTER** yazıcı düğmesini devre dışı bırakır.  
+- PSD_DISABLEPRINTER yazıcı düğmesini devre dışı bırakır.  
   
-- **PSD_NOWARNING** uyarı iletisi hiçbir varsayılan yazıcı olduğunda görüntülenmesini engeller.  
+- PSD_NOWARNING uyarı iletisi hiçbir varsayılan yazıcı olduğunda görüntülenmesini engeller.  
   
-- **PSD_DISABLEORIENTATION** sayfa yönlendirmesini iletişim denetimini devre dışı bırakır.  
+- PSD_DISABLEORIENTATION sayfa yönünü iletişim denetimini devre dışı bırakır.  
   
-- **PSD_RETURNDEFAULT** neden `CPageSetupDialog` döndürülecek [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) sistem varsayılan yazıcı için bir iletişim kutusu görüntülenmeden başlatılır yapıları. Her iki varsayılır **hDevNames** ve **hDevMode** olan **NULL**; Aksi halde, işlev hata döndürür. Bir eski yazıcı sürücüsü tarafından ('den önceki Windows sürüm 3.0), sistem varsayılan yazıcı destekleniyorsa yalnızca **hDevNames** döndürülür; **hDevMode** olan **NULL**.  
+- PSD_RETURNDEFAULT neden `CPageSetupDialog` döndürülecek [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları sistem varsayılan yazıcı için bir iletişim kutusu görüntülenmeden başlatılır. Her iki varsayılır `hDevNames` ve `hDevMode` NULL; Aksi halde, işlev hata döndürür. Bir eski yazıcı sürücüsü tarafından (öncesindeki Windows sürüm 3.0), sistem varsayılan yazıcı destekleniyorsa yalnızca `hDevNames` döndürülür; `hDevMode` null.  
   
-- **PSD_DISABLEPAPER** kağıt seçim denetimi devre dışı bırakır.  
+- PSD_DISABLEPAPER kağıt seçim denetimi devre dışı bırakır.  
   
-- **PSD_SHOWHELP** Yardım düğmesini göstermek iletişim kutusunun neden olur. **HwndOwner** üye olmamalıdır **NULL** Bu bayrak belirtilmezse.  
+- PSD_SHOWHELP Yardım düğmesini göstermek iletişim kutusu neden olur. `hwndOwner` Bu bayrak belirtilmezse üyesi NULL olmamalıdır.  
   
-- **PSD_ENABLEPAGESETUPHOOK** belirtilen kanca işlevini etkinleştirir **lpfnSetupHook**.  
+- Kanca işlevini belirtilen PSD_ENABLEPAGESETUPHOOK sağlayan `lpfnSetupHook`.  
   
-- **PSD_ENABLEPAGESETUPTEMPLATE** Oluştur iletişim kutusu tarafından tanımlanan iletişim şablonu kutusunu kullanarak işletim sisteminin neden **HINSTANCE** ve **lpSetupTemplateName**.  
+- PSD_ENABLEPAGESETUPTEMPLATE Oluştur iletişim kutusu tarafından tanımlanan iletişim şablonu kutusunu kullanarak işletim sisteminin neden `hInstance` ve `lpSetupTemplateName`.  
   
-- **PSD_ENABLEPAGESETUPTEMPLATEHANDLE** belirten **HINSTANCE** önceden iletişim kutusu şablonu içeren bir veri bloğunun tanımlar. Sistem yoksayar **lpSetupTemplateName** Bu bayrak belirtilmezse.  
+- PSD_ENABLEPAGESETUPTEMPLATEHANDLE gösterir `hInstance` önceden yüklenmiş iletişim kutusunda şablon içeren veri bloğu tanımlar. Yoksayar `lpSetupTemplateName` Bu bayrak belirtilmezse.  
   
-- **PSD_ENABLEPAGEPAINTHOOK** belirtilen kanca işlevini etkinleştirir **lpfnPagePaintHook**.  
+- Kanca işlevini belirtilen PSD_ENABLEPAGEPAINTHOOK sağlayan `lpfnPagePaintHook`.  
   
-- **PSD_DISABLEPAGEPAINTING** iletişim kutusunun çizim alanı devre dışı bırakır.  
+- Çizim alanı iletişim kutusunun PSD_DISABLEPAGEPAINTING devre dışı bırakır.  
   
  *pParentWnd*  
- İletişim kutusunun üst veya sahibi işaretçi.  
+ İletişim kutusunun üst veya sahibi işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [DoModal](../../mfc/reference/cdialog-class.md#domodal) işlevi iletişim kutusunu görüntüleyin.  
+ Kullanım [DoModal](../../mfc/reference/cdialog-class.md#domodal) iletişim kutusunu görüntülemek için işlev.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/cpp/cpagesetupdialog-class_1.cpp)]  
   
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC  
- Bir yazıcı cihaz bağlamı oluşturur [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
+ Bir yazıcı cihaz bağlamında oluşturur [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
   
 ```  
 HDC CreatePrinterDC();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni oluşturulan yazıcı cihaz bağlamı (DC) işler.  
+ Yeni oluşturulan yazıcı cihaz bağlamına (DC) işler.  
   
 ##  <a name="domodal"></a>  CPageSetupDialog::DoModal  
- Windows ortak OLE Sayfa Yapısı iletişim kutusu görüntüler ve yazdırma kenar boşlukları, boyutuna ve yönüne kağıt ve hedef yazıcı gibi çeşitli yazdırma Kur seçeneklerini seçmek kullanıcı izin vermek için bu işlevini çağırın.  
+ Windows ortak OLE sayfa düzeni iletişim kutusunu görüntülemek ve yazdırma kenar boşluklarını, boyutunu ve yönünü kağıt ve hedef yazıcı gibi çeşitli yazdırma Kur seçeneklerini seçmek kullanıcı izin vermek için bu işlevi çağırın.  
   
 ```  
 virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **IDOK** veya **IDCANCEL**. Varsa **IDCANCEL** olan döndürülen Windows çağrısı [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) işlevi bir hata oluşup oluşmadığını belirleyin.  
+ IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) hata oluşup oluşmadığını belirlemek için işlevi.  
   
- **IDOK** ve **IDCANCEL** kullanıcı Tamam'ı veya iptal düğmesine seçili olmadığını gösterecek sabittir.  
+ IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayrıca, kullanıcı yazıcı kurulum seçenekleri ağ konumu ve seçili yazıcıya özgü özellikleri gibi erişebilirsiniz.  
+ Ayrıca, kullanıcı yazıcı ayarları ağ konumu ve seçili yazıcıya özgü özellikleri gibi erişebilirsiniz.  
   
- Üyeleri ayarlayarak çeşitli Sayfa Yapısı iletişim kutusu seçenekleri başlatmak istiyorsanız `m_psd` yapısı, bunu çağırmadan önce yapmanız gereken `DoModal`, ve sonra iletişim nesnesi oluşturulur. Çağırdıktan sonra `DoModal`, diğer üye işlevlerini ayarları veya kullanıcı tarafından bilgi giriş iletişim kutusuna almak için çağırın.  
+ Çeşitli Sayfa Yapısı iletişim kutusu seçenekleri üyeleri ayarlayarak başlatmak istiyorsanız `m_psd` yapısını çağırmadan önce yapmalısınız `DoModal`, ve sonra iletişim nesnesi oluşturulur. Arama sonra `DoModal`, diğer üye işlevlerini kullanıcı giriş bilgileri ve Ayarları iletişim kutusuna alınacak çağırın.  
   
- Kullanıcı tarafından girilen geçerli ayarları yaymak istiyorsanız, çağırmaya [CWinApp::SelectPrinter](../../mfc/reference/cwinapp-class.md#selectprinter). Bu işlev bilgileri alır `CPageSetupDialog` nesnesini başlatır ve uygun özniteliklere sahip yeni bir yazıcı DC seçer.  
+ Kullanıcı tarafından girilen geçerli ayarları yayılması istiyorsanız, çağrı yapmak [CWinApp::SelectPrinter](../../mfc/reference/cwinapp-class.md#selectprinter). Bu işlev bilgileri alır `CPageSetupDialog` nesnesini başlatır ve uygun özniteliklerle yeni bir yazıcı DC seçer.  
   
  [!code-cpp[NVC_MFCDocView#95](../../mfc/codesnippet/cpp/cpagesetupdialog-class_2.cpp)]  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
+  Örneğin bakın [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
   
 ##  <a name="getdevicename"></a>  CPageSetupDialog::GetDeviceName  
- Sonra bu işlevi çağırmak `DoModal` şu anda seçili yazıcının adını almak için.  
+ Sonra bu işlevi çağırın `DoModal` Seçili yazıcının adını almak için.  
   
 ```  
 CString GetDeviceName() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından kullanılan aygıt adı `CPageSetupDialog` nesnesi.  
+ Tarafından kullanılan cihaz adı `CPageSetupDialog` nesne.  
   
 ##  <a name="getdevmode"></a>  CPageSetupDialog::GetDevMode  
- Bu işlev çağrısı çağrıldıktan sonra `DoModal` yazıcı cihaz bağlamı hakkında bilgi almak için `CPageSetupDialog` nesnesi.  
+ Çağırdıktan sonra bu işlevi çağırın `DoModal` yazıcı cihaz bağlamı hakkında bilgi almak için `CPageSetupDialog` nesne.  
   
 ```  
 LPDEVMODE GetDevMode() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- [Aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) aygıt başlatma ve bir yazıcı sürücüsü ortamı hakkında bilgi içeren veri yapısı. Bu yapı Windows tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows SDK'ın açıklanan işlevi.  
+ [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) cihaz başlatma ve yazdırma sürücüsü ortamı hakkında bilgi içeren veri yapısı. Windows ile bu yapı tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows SDK'da açıklanan işlevi.  
   
 ##  <a name="getdrivername"></a>  CPageSetupDialog::GetDriverName  
- Bu işlev çağrısı çağrıldıktan sonra [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) sistem tarafından tanımlanan yazıcı aygıt sürücüsünün adını almak için.  
+ Çağırdıktan sonra bu işlevi çağırın [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) sistem tarafından tanımlanan yazıcı aygıt sürücüsünün adını alamadı.  
   
 ```  
 CString GetDriverName() const;  
@@ -236,10 +236,10 @@ CString GetDriverName() const;
  A `CString` sistem tarafından tanımlanan sürücü adı belirtme.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi kullanmak `CString` tarafından döndürülen nesne `GetDriverName` değeri olarak `lpszDriverName` çağrıda [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).  
+ Bir işaretçi kullanın `CString` tarafından döndürülen nesne `GetDriverName` değeri olarak `lpszDriverName` çağrıda [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).  
   
 ##  <a name="getmargins"></a>  CPageSetupDialog::GetMargins  
- Çağrı sonra bu işlevi çağırmak `DoModal` yazıcı aygıt sürücüsü kenar boşlukları alınamadı.  
+ Çağrısı yapıldıktan sonra bu işlevi çağırın `DoModal` yazıcı cihaz sürücüsü kenar boşlukları alınacak.  
   
 ```  
 void GetMargins(
@@ -249,49 +249,49 @@ void GetMargins(
   
 ### <a name="parameters"></a>Parametreler  
  *lpRectMargins*  
- İşaretçi bir [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) (1/1000 inç veya 1/100 mm) şu anda seçili yazıcı yazdırma kenar boşluklarını tanımlayan nesne. Geçirmek **NULL** bu dikdörtgenin içindeki ilgilenen değilseniz, bu parametre için.  
+ İşaretçi bir [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) (1/1000 inç veya 1/100 mm) şu anda seçili yazıcıya yazdırma kenar boşluklarını tanımlayan nesne. Bu dikdörtgenin içindeki ilgilenmiyorsanız Bu parametre için NULL geçirin.  
   
  *lpRectMinMargins*  
- İşaretçi bir `RECT` yapısı veya `CRect` (1/1000 inç veya 1/100 mm) şu anda seçili yazıcı minimum yazdırma kenar boşluklarını tanımlayan nesne. Geçirmek **NULL** bu dikdörtgenin içindeki ilgilenen değilseniz, bu parametre için.  
+ İşaretçi bir `RECT` yapısı veya `CRect` (1/1000 inç veya 1/100 mm) şu anda seçili yazıcı minimum yazdırma kenar boşluklarını tanımlayan nesne. Bu dikdörtgenin içindeki ilgilenmiyorsanız Bu parametre için NULL geçirin.  
   
 ##  <a name="getpapersize"></a>  CPageSetupDialog::GetPaperSize  
- Yazdırma için seçtiğiniz kağıt boyutunu almak için bu işlevini çağırın.  
+ Yazdırma için seçili boyutunu almak için bu işlevi çağırın.  
   
 ```  
 CSize GetPaperSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [CSize](../../atl-mfc-shared/reference/csize-class.md) yazdırma için seçtiğiniz kağıt boyutuna (1/1000 inç veya 1/100 mm) içeren bir nesne.  
+ A [CSize](../../atl-mfc-shared/reference/csize-class.md) yazdırma için seçili kağıt (1/1000 inç veya 1/100 mm) boyutunu içeren nesne.  
   
 ##  <a name="getportname"></a>  CPageSetupDialog::GetPortName  
- Bu işlev çağrısı çağrıldıktan sonra `DoModal` şu anda seçili yazıcı bağlantı noktası adı alınamadı.  
+ Çağırdıktan sonra bu işlevi çağırın `DoModal` seçili yazıcı bağlantı noktasını adını almak için.  
   
 ```  
 CString GetPortName() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Şu anda seçili yazıcı bağlantı noktası adı.  
+ Şu anda seçili yazıcı bağlantı noktasını adı.  
   
 ##  <a name="m_psd"></a>  CPageSetupDialog::m_psd  
- Türü yapısını **PAGESETUPDLG**, iletişim nesnesinin özelliklerini üyeleri depolar.  
+ Yapı üyeleri iletişim nesnesinin özelliklerini depolamak PAGESETUPDLG, türünü.  
   
 ```  
 PAGESETUPDLG m_psd;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma sonrasında bir `CPageSetupDialog` nesne kullanabileceğiniz `m_psd` çağırmadan önce iletişim kutusu çeşitli yönlerini ayarlamak için `DoModal` üye işlevi.  
+ Oluşturma sonrasında bir `CPageSetupDialog` nesne kullanabileceğiniz `m_psd` çeşitli yönlerini çağırmadan önce iletişim kutusunda ayarlanacak `DoModal` üye işlevi.  
   
- Değiştirirseniz `m_psd` veri üyesi doğrudan herhangi varsayılan davranışı geçersiz kılar.  
+ Değiştirirseniz `m_psd` veri üyesi doğrudan, hiçbir varsayılan davranışı geçersiz kılar.  
   
- Daha fazla bilgi için [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842) yapısı, Windows SDK konusuna bakın.  
+ Daha fazla bilgi için [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842) yapısı, Windows SDK'sı bakın.  
   
- Örneğin bkz [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
+ Örneğin bakın [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
   
 ##  <a name="ondrawpage"></a>  CPageSetupDialog::OnDrawPage  
- Yazdırılan sayfasının ekran görüntüsü çizmek için çerçevesi tarafından çağrılır.  
+ Yazdırılan sayfanın ekran görüntüsünü çizmek için framework tarafından çağırılır.  
   
 ```  
 virtual UINT OnDrawPage(
@@ -302,40 +302,40 @@ virtual UINT OnDrawPage(
   
 ### <a name="parameters"></a>Parametreler  
  *pDC*  
- Yazıcı cihaz bağlamı işaretçi.  
+ Yazıcı cihaz bağlamı işaretçisi.  
   
  *nİleti*  
  Şu anda çizilen sayfa alanı belirten bir ileti belirtir. Aşağıdakilerden biri olabilir:  
   
-- **WM_PSD_FULLPAGERECT** tüm sayfa alanı.  
+- WM_PSD_FULLPAGERECT sayfanın tamamını alan.  
   
-- **WM_PSD_MINMARGINRECT** geçerli en düşük kenar boşlukları.  
+- WM_PSD_MINMARGINRECT geçerli en düşük kenar boşlukları.  
   
-- **WM_PSD_MARGINRECT** geçerli kenar boşlukları.  
+- Kenar boşlukları WM_PSD_MARGINRECT geçerli.  
   
-- **WM_PSD_GREEKTEXTRECT** sayfasının içeriği.  
+- Sayfa içeriğini WM_PSD_GREEKTEXTRECT.  
   
-- **WM_PSD_ENVSTAMPRECT** posta damga temsili ayrılmış alanı.  
+- WM_PSD_ENVSTAMPRECT pulu gösterimi için ayrılmış alan.  
   
-- **WM_PSD_YAFULLPAGERECT** alan için bir dönüş adresi gösterimi. Bu alan örnek sayfa alanın kenarlarına genişletir.  
+- WM_PSD_YAFULLPAGERECT alanı için bir dönüş adresi gösterimi. Bu alan örnek sayfası alanın kenarlarına genişletir.  
   
  *lpRect*  
  İşaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) çizim alanının koordinatları içeren nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşleniyorsa sıfır olmayan bir değer; Aksi takdirde 0.  
+ İşlenen belirtilmişse sıfır dışı değer; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu görüntü sonra ortak OLE Sayfa Yapısı iletişim kutusunun bir parçası görüntülenir. Varsayılan uygulama metin sayfasının bir resim çizer.  
+ Bu görüntü daha sonra ortak OLE sayfa düzeni iletişim kutusunun bir parçası olarak görüntülenir. Varsayılan uygulama görüntüyü bir sayfanın metin çizer.  
   
- Resim veya görüntünün tamamını belirli bir alana çizim özelleştirmek için bu işlevi geçersiz kılar. Kullanarak bunu yapabilirsiniz bir **geçiş** deyimiyle **durum** değerini denetimi deyimleri *nİleti*. Örneğin, sayfa görüntüsü içeriğini çizmeye özelleştirmek için aşağıdaki kod örneği kullanabilirsiniz:  
+ Bu işlev, belirli bir görüntünün veya görüntü alanının çiziminin özelleştirmek için geçersiz kılın. Kullanarak bunu yapabilirsiniz bir **geçiş** deyimiyle **çalışması** değerini kontrol deyimleri *nİleti*. Örneğin, sayfa görüntüsü içeriğini işlenmesi özelleştirmek için aşağıdaki kod örneği kullanabilirsiniz:  
   
  [!code-cpp[NVC_MFCDocView#96](../../mfc/codesnippet/cpp/cpagesetupdialog-class_3.cpp)]  
   
- Her durumunun işlemek gerekmez Not *nİleti*. Görüntü veya tüm alanının çeşitli bileşenleri görüntünün bir bileşen işlemek seçebilirsiniz.  
+ Unutmayın, her bir durumu işlemek gerekmez *nİleti*. Görüntünün görüntü ya da tüm alanı çeşitli bileşenlerinin bir bileşen işlemek seçebilirsiniz.  
   
 ##  <a name="predrawpage"></a>  CPageSetupDialog::PreDrawPage  
- Yazdırılan sayfasının ekran görüntüsü çizmeden önce çerçevesi tarafından çağrılır.  
+ Yazdırılan sayfanın ekran görüntüsünü çizmeden önce framework tarafından çağırılır.  
   
 ```  
 virtual UINT PreDrawPage(
@@ -346,35 +346,35 @@ virtual UINT PreDrawPage(
   
 ### <a name="parameters"></a>Parametreler  
  *wPaper*  
- Kağıt boyutunu belirten bir değer belirtir. Bu değer şunlardan biri olabilir **DMPAPER_** değerleri listelenen açıklamasındaki [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) yapısı.  
+ Sayfa boyutunu belirten bir değer belirtir. Bu değer şunlardan biri olabilir **DMPAPER_** değerleri açıklamasında listelenen [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) yapısı.  
   
  *wFlags*  
- Kağıt veya Zarf yönünü belirtir ve yazıcı iğneli veya HPPCL (Hewlett Packard Yazıcı Denetim Dili) aygıtı olup. Bu parametre aşağıdaki değerlerden biri olabilir:  
+ Kağıt veya Zarf yönünü belirtir ve yazıcı iğneli veya HPPCL (Hewlett Packard Yazıcı Denetim Dili) cihazı olup olmadığı. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
--   Yatay modu (iğneli) 0x001 kağıt  
+-   0x001 (nokta vuruşlu) yatay modda kağıt  
   
--   Yatay modu (HPPCL) 0x003 kağıt  
+-   0x003 (HPPCL) yatay modda kağıt  
   
--   dikey moda (iğneli) 0x005 kağıt  
+-   0x005 (nokta vuruşlu) dikey modda kağıt  
   
--   dikey moda (HPPCL) 0x007 kağıt  
+-   0x007 (HPPCL) dikey modda kağıt  
   
--   0x00b Zarf yatay modunda (HPPCL)  
+-   0x00b (HPPCL) yatay modda zarfa koy  
   
--   0x00d Zarf dikey modunda (iğneli)  
+-   0x00d (nokta vuruşlu) dikey modda zarfa koy  
   
--   0x019 Zarf yatay modunda (iğneli)  
+-   0x019 (nokta vuruşlu) yatay modda zarfa koy  
   
--   0x01f Zarf dikey modunda (iğneli)  
+-   0x01f (nokta vuruşlu) dikey modda zarfa koy  
   
  *pPSD*  
- İşaretçi bir **PAGESETUPDLG** yapısı. Daha fazla bilgi için [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), Windows SDK konusuna bakın.  
+ İşaretçi bir `PAGESETUPDLG` yapısı. Daha fazla bilgi için [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), Windows SDK'sı bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşleniyorsa sıfır olmayan bir değer; Aksi takdirde 0.  
+ İşlenen belirtilmişse sıfır dışı değer; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Resim çizim özelleştirmek için bu işlevi geçersiz kılar. Bu işlev geçersiz kılar ve dönüş **doğru**, görüntünün tamamını çizin. Bu işlev geçersiz kılar ve dönüş **yanlış**, tüm varsayılan görüntü çerçevesi tarafından çizilir.  
+ Resmin çizim özelleştirmek için bu işlevi geçersiz kılar. Bu işlev geçersiz kılma ve TRUE döndürün, görüntünün çizin gerekir. Bu işlev geçersiz kılma ve false değerini döndürür, tüm varsayılan görüntü framework tarafından çekilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek WORDPAD](../../visual-cpp-samples.md)   

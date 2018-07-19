@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8b0a512d0969f88d270ab7373be4807b1c55914
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 13f411f9f50b1a498dba718b41245f8fbb7c6e79
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37038360"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851593"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl sınıfı
-`CMFCLinkCtrl` Sınıfı düğmesine tıklandığında bağlantının hedef çağırır ve bir düğme köprü olarak görüntüler.  
+`CMFCLinkCtrl` Sınıfı bir düğmeyi köprü olarak görüntüler ve düğme tıklandığında bağlantı hedefini çağırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,21 +46,21 @@ class CMFCLinkCtrl : public CMFCButton
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCLinkCtrl::SetURL](#seturl)|Belirtilen URL düğme metni görüntüler.|  
+|[CMFCLinkCtrl::SetURL](#seturl)|Belirtilen URL düğme metnini görüntüler.|  
 |[CMFCLinkCtrl::SetURLPrefix](#seturlprefix)|Örtük Protokolü ayarlar (örneğin, "http:") URL'si.|  
-|[CMFCLinkCtrl::SizeToContent](#sizetocontent)|Düğme metni veya bit eşlem içeren için düğmesini yeniden boyutlandırır.|  
+|[CMFCLinkCtrl::SizeToContent](#sizetocontent)|Düğme metni ya da bit eşlem içerecek şekilde düğmeyi yeniden boyutlandırır.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCLinkCtrl::OnDrawFocusRect](#ondrawfocusrect)|Düğmenin odak dikdörtgeni çizilmeden önce çerçevesi tarafından çağrılır.|  
+|[CMFCLinkCtrl::OnDrawFocusRect](#ondrawfocusrect)|Düğme odak dikdörtgenini çizilmeden önce framework tarafından çağırılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Türetilmiş bir düğmeyi tıkladığınızda `CMFCLinkCtrl` sınıfı, framework geçirir düğmesi URL'sini parametre olarak `ShellExecute` yöntemi. Ardından `ShellExecute` yöntemi açılır URL hedefi.  
+ Türetilen bir düğmeye tıkladığınızda `CMFCLinkCtrl` sınıfı framework geçirir düğmenin URL parametresi olarak `ShellExecute` yöntemi. Ardından `ShellExecute` yöntemi URL hedefi açılır.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek boyutunu ayarlamak nasıl gösteren bir `CMFCLinkCtrl` nesne ve bir url ve bir araç ipucunda nasıl ayarlanacağını bir `CMFCLinkCtrl` nesnesi. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek boyutunu ayarlama yapmayı gösteren bir `CMFCLinkCtrl` nesnesi ve bir url ve bir araç ipucunda nasıl ayarlanacağını bir `CMFCLinkCtrl` nesne. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#9](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_1.h)]  
 [!code-cpp[NVC_MFC_NewControls#10](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_2.cpp)]  
@@ -82,7 +82,7 @@ class CMFCLinkCtrl : public CMFCButton
  **Başlık:** afxlinkctrl.h  
   
 ##  <a name="ondrawfocusrect"></a>  CMFCLinkCtrl::OnDrawFocusRect  
- Düğmenin odak dikdörtgeni çizilmeden önce çerçevesi tarafından çağrılır.  
+ Düğme odak dikdörtgenini çizilmeden önce framework tarafından çağırılır.  
   
 ```  
 virtual void OnDrawFocusRect(
@@ -95,13 +95,13 @@ virtual void OnDrawFocusRect(
  Bir cihaz bağlamı için bir işaretçi.  
   
  [in] *rectClient*  
- Bağlantı denetimi bounds dikdörtgen.  
+ Bağlantı denetimi sınırların bir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Düğmenin odak dikdörtgen çizmek için kendi kodunuzu kullanmak istediğinizde bu yöntemi geçersiz kılın.  
+ Düğme odak dikdörtgenini çizmek için kendi kodunuzu kullanmak istediğinizde bu yöntemi yok sayın.  
   
 ##  <a name="seturl"></a>  CMFCLinkCtrl::SetURL  
- Belirtilen URL düğme metni görüntüler.  
+ Belirtilen URL düğme metnini görüntüler.  
   
 ```  
 void SetURL(LPCTSTR lpszURL);
@@ -125,10 +125,10 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
  URL protokolü öneki.  
   
 ### <a name="remarks"></a>Açıklamalar  
- URL öneki ayarlamak için bu yöntemi kullanın. Önek düğme yüzü üzerinde görüntülenmez, ancak URL'nin hedefe Gözat yardımcı olması için kullanın.  
+ URL öneki ayarlamak için bu yöntemi kullanın. Önek düğmenin yüzüne görüntülenmez, ancak URL'nin hedefine Gözat yardımcı olması için kullanın.  
   
 ##  <a name="sizetocontent"></a>  CMFCLinkCtrl::SizeToContent  
- Düğme metni veya bit eşlem içeren için düğmesini yeniden boyutlandırır.  
+ Düğme metni ya da bit eşlem içerecek şekilde düğmeyi yeniden boyutlandırır.  
   
 ```  
 virtual CSize SizeToContent(
@@ -138,13 +138,13 @@ virtual CSize SizeToContent(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bVCenter*  
- `TRUE` Düğme metni ve dikey olarak üst ve alt bağlantı denetimi arasında bit eşlem center için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
+ Düğme metni ve dikey olarak üst ve alt bağlantı denetimi arasındaki bit eşlem merkezi için TRUE; Aksi takdirde FALSE. Varsayılan değer FALSE olur.  
   
  [in] *bHCenter*  
- `TRUE` Düğme metni ve bit eşlem yatay sol ve sağ kenarlarının bağlantı denetimi arasında center için; Aksi takdirde `FALSE`. Varsayılan değer `FALSE` şeklindedir.  
+ Düğme metni ve bit eşlem ve bağlantı denetimin sol tarafında arasındaki yatay olarak ortalamak için TRUE; Aksi takdirde FALSE. Varsayılan değer FALSE olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [CSize](../../atl-mfc-shared/reference/csize-class.md) bağlantı denetimi yeni boyutunu içeren nesne.  
+ A [CSize](../../atl-mfc-shared/reference/csize-class.md) yeni bağlantı denetiminin boyutunu içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

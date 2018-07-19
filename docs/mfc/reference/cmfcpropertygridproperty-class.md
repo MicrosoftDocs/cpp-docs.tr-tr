@@ -176,15 +176,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c218f38b76d70ef20fed46a502a7cc15041aa8c5
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 5879f4f81a847b21a0ab8d126a4a51bc0ee826e1
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039187"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37850267"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty sınıfı
-A `CMFCPropertyGridProperty` nesnesi özelliği liste denetimi bir liste öğesini temsil eder.  
+A `CMFCPropertyGridProperty` nesnesi bir özellik liste denetiminin bir liste öğesini temsil eder.  
   
    [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
    
@@ -200,111 +200,111 @@ class CMFCPropertyGridProperty : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPropertyGridProperty::CMFCPropertyGridProperty](#cmfcpropertygridproperty)|Oluşturan bir `CMFCPropertyGridProperty` nesnesi.|  
-|`CMFCPropertyGridProperty::~CMFCPropertyGridProperty`|Yok Edicisi.|  
+|[CMFCPropertyGridProperty::CMFCPropertyGridProperty](#cmfcpropertygridproperty)|Oluşturur bir `CMFCPropertyGridProperty` nesne.|  
+|`CMFCPropertyGridProperty::~CMFCPropertyGridProperty`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPropertyGridProperty::AddOption](#addoption)|Yeni bir liste öğesi bir özellik listesi denetimine ekler.|  
+|[CMFCPropertyGridProperty::AddOption](#addoption)|Yeni bir liste öğesi için bir özellik listesi denetimi ekler.|  
 |[CMFCPropertyGridProperty::AddSubItem](#addsubitem)|Bir alt öğesi için bir özellik ekler.|  
-|[CMFCPropertyGridProperty::AdjustButtonRect](#adjustbuttonrect)|Katıştırılmış düğmesinin sınırlayıcı dikdörtgenini yeniden boyutlandırmak için bir özellik bildirmek için üst özelliği liste denetimi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::AdjustInPlaceEditRect](#adjustinplaceeditrect)|Bir özellik değerini ayarlamak için kullanılan metin kutusu ve isteğe bağlı değer değiştirme düğmesi denetimi sınırlarına alır.|  
-|[CMFCPropertyGridProperty::AllowEdit](#allowedit)|Bir özellik düzenlenebilir ya da salt okunur hale getirir.|  
-|[CMFCPropertyGridProperty::CreateInPlaceEdit](#createinplaceedit)|Bir özellik için düzenlenebilir bir denetim oluşturmak için çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::CreateSpinControl](#createspincontrol)|Düzenlenebilir değer değiştirme düğmesi denetimi oluşturmak için çerçevesi tarafından çağrılır.|  
+|[CMFCPropertyGridProperty::AdjustButtonRect](#adjustbuttonrect)|Katıştırılmış bir düğme sınırlayıcı dikdörtgenini yeniden boyutlandırmak üzere bir özelliğe bildirmek için üst özellik liste denetimi tarafından çağrılır.|  
+|[CMFCPropertyGridProperty::AdjustInPlaceEditRect](#adjustinplaceeditrect)|Bir özellik değerini ayarlamak için kullanılan metin kutusu ve isteğe bağlı bir değer değiştirme düğmesi denetimi sınırları alır.|  
+|[CMFCPropertyGridProperty::AllowEdit](#allowedit)|Düzenlenebilir veya salt okunur bir özellik sağlar.|  
+|[CMFCPropertyGridProperty::CreateInPlaceEdit](#createinplaceedit)|Bir özellik için düzenlenebilir bir denetim oluşturmak için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::CreateSpinControl](#createspincontrol)|Bir düzenlenebilir değer değiştirme düğmesi denetimi oluşturmak için framework tarafından çağırılır.|  
 |[CMFCPropertyGridProperty::Enable](#enable)|Etkinleştirir veya bir özelliği devre dışı bırakır.|  
 |[CMFCPropertyGridProperty::EnableSpinControl](#enablespincontrol)|Etkinleştirir veya bir özellik değerini değiştirmek için kullanılan bir değer değiştirme düğmesi denetimi devre dışı bırakır.|  
-|[CMFCPropertyGridProperty::Expand](#expand)|Genişletir veya alt özelliklerini içeren bir özelliği daraltır.|  
-|[CMFCPropertyGridProperty::FormatProperty](#formatproperty)|Bir özellik değeri metin gösterimini biçimlendirir.|  
-|[CMFCPropertyGridProperty::GetData](#getdata)|Alır bir `DWORD` özelliği ile ilişkili değer.|  
-|[CMFCPropertyGridProperty::GetDescription](#getdescription)|Description özelliği alır.|  
-|[CMFCPropertyGridProperty::GetExpandedSubItems](#getexpandedsubitems)|Genişletilmiş alt öğe sayısını alır.|  
+|[CMFCPropertyGridProperty::Expand](#expand)|Genişletir veya daraltır alt özellikleri içeren bir özellik.|  
+|[CMFCPropertyGridProperty::FormatProperty](#formatproperty)|Özellik değerinin metin temsilini biçimlendirir.|  
+|[CMFCPropertyGridProperty::GetData](#getdata)|Bir özellik ile ilişkilendirilen bir DWORD değeri alır.|  
+|[CMFCPropertyGridProperty::GetDescription](#getdescription)|Özellik açıklamasını alır.|  
+|[CMFCPropertyGridProperty::GetExpandedSubItems](#getexpandedsubitems)|Genişletilmiş bir alt öğe sayısını alır.|  
 |[CMFCPropertyGridProperty::GetHierarchyLevel](#gethierarchylevel)|Özelliğin hiyerarşi düzeyi sıfır tabanlı dizinini alır.|  
 |[CMFCPropertyGridProperty::GetName](#getname)|Özelliğin adını alır.|  
-|[CMFCPropertyGridProperty::GetNameTooltip](#getnametooltip)|Bir araç ipucunda özelliğinin adını görüntülemek için framework tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::GetOption](#getoption)|Bir dizini tarafından belirtilen seçeneği metni alır.|  
+|[CMFCPropertyGridProperty::GetNameTooltip](#getnametooltip)|Bir araç ipucunda özelliğin adını göstermek için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::GetOption](#getoption)|Bir dizin tarafından belirtilen seçeneği metnini alır.|  
 |[CMFCPropertyGridProperty::GetOptionCount](#getoptioncount)|Bir özelliğe ait seçenekleri sayısını alır.|  
 |[CMFCPropertyGridProperty::GetOriginalValue](#getoriginalvalue)|Geçerli özelliği ilk değerini alır.|  
-|[CMFCPropertyGridProperty::GetParent](#getparent)|Bir üst özelliği için bir işaretçi alır.|  
-|[CMFCPropertyGridProperty::GetRect](#getrect)|Bir özelliğin sınırlayıcı dikdörtgenini alır.|  
-|[CMFCPropertyGridProperty::GetSubItem](#getsubitem)|Sıfır tabanlı dizini tarafından tanımlanan alt bir özelliğini alır.|  
+|[CMFCPropertyGridProperty::GetParent](#getparent)|Üst özellik için bir işaretçi alır.|  
+|[CMFCPropertyGridProperty::GetRect](#getrect)|Bir özelliğin sınırlayıcı dikdörtgeni alır.|  
+|[CMFCPropertyGridProperty::GetSubItem](#getsubitem)|Sıfır tabanlı bir dizin tarafından tanımlanan bir alt özelliği alır.|  
 |[CMFCPropertyGridProperty::GetSubItemsCount](#getsubitemscount)|Alt öğe sayısını alır.|  
-|`CMFCPropertyGridProperty::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
+|`CMFCPropertyGridProperty::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
 |[CMFCPropertyGridProperty::GetValue](#getvalue)|Bir özellik değeri alır.|  
-|[CMFCPropertyGridProperty::GetValueTooltip](#getvaluetooltip)|Bir araç ipucunda sonra görüntülenen özellik değeri metin gösterimini almak için framework tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::HitTest](#hittest)|Bir noktaya karşılık gelen özellik liste öğesine karşılık gelen özellik nesnesi noktalarına.|  
+|[CMFCPropertyGridProperty::GetValueTooltip](#getvaluetooltip)|Ardından bir araç ipucunda görüntülenen özellik değerinin metin gösterimi almak için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::HitTest](#hittest)|Bir noktasına karşılık gelen özellik listesi öğesini karşılık gelen özellik nesneyi işaret eder.|  
 |[CMFCPropertyGridProperty::IsAllowEdit](#isallowedit)|Bir özelliğin düzenlenebilir olup olmadığını gösterir.|  
-|[CMFCPropertyGridProperty::IsEnabled](#isenabled)|Bir özelliğin etkin mi yoksa devre dışı mı olduğunu gösterir.|  
-|[CMFCPropertyGridProperty::IsExpanded](#isexpanded)|Bir özellik genişletilmiş mi, yoksa daraltılmış mı olduğunu gösterir.|  
-|[CMFCPropertyGridProperty::IsGroup](#isgroup)|Geçerli özellik bir grubu temsil edip etmediğini gösterir.|  
-|[CMFCPropertyGridProperty::IsInPlaceEditing](#isinplaceediting)|Geçerli özellik düzenlenebilir olup olmadığını gösterir.|  
-|[CMFCPropertyGridProperty::IsModified](#ismodified)|Geçerli özellik değiştirilip gösterir.|  
-|[CMFCPropertyGridProperty::IsParentExpanded](#isparentexpanded)|Geçerli özellik üst genişletilmiş olup olmadığını gösterir.|  
+|[CMFCPropertyGridProperty::IsEnabled](#isenabled)|Bir özellik etkin mi yoksa devre dışı mı olduğunu gösterir.|  
+|[CMFCPropertyGridProperty::IsExpanded](#isexpanded)|Bir özellik genişletilmiş veya daraltılmış olup olmadığını gösterir.|  
+|[CMFCPropertyGridProperty::IsGroup](#isgroup)|Geçerli özellik bir grubu temsil edip etmediğini belirtir.|  
+|[CMFCPropertyGridProperty::IsInPlaceEditing](#isinplaceediting)|Geçerli özellik düzenlenebilir olup olmadığını belirtir.|  
+|[CMFCPropertyGridProperty::IsModified](#ismodified)|Geçerli özellik değişiklik olup olmadığını gösterir.|  
+|[CMFCPropertyGridProperty::IsParentExpanded](#isparentexpanded)|Geçerli özellik üst öğelerinin genişletilmiş olup olmadığını gösterir.|  
 |[CMFCPropertyGridProperty::IsSelected](#isselected)|Geçerli özellik seçili olup olmadığını gösterir.|  
-|[CMFCPropertyGridProperty::IsVisible](#isvisible)|Geçerli özellik görünür olup olmadığını gösterir.|  
-|[CMFCPropertyGridProperty::OnClickButton](#onclickbutton)|Kullanıcı bir özelliğinde yer alan bir düğmesini tıklattığında çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnClickName](#onclickname)|Bir kullanıcı bir özelliğin ad alanı tıkladığında üst özelliği liste denetimi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnClickValue](#onclickvalue)|Bir kullanıcı bir özelliğin değeri alanı tıkladığında üst özelliği liste denetimi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnCloseCombo](#onclosecombo)|Özelliğinde yer alan bir birleşik giriş kutusu kapatıldığında çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnDblClk](#ondblclk)|Kullanıcı çift özellik tıklattığında çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnDrawButton](#ondrawbutton)|Özelliğinde yer alan bir düğme çizmek için çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnDrawDescription](#ondrawdescription)|Description özelliği görüntülemek için çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnDrawExpandBox](#ondrawexpandbox)|Alt özelliklerini içeren bir özelliği yakın genişletme kutusu denetimi çizmek için çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnDrawName](#ondrawname)|Özellik adı görüntülenecek çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnDrawValue](#ondrawvalue)|Özellik değerini görüntülemek için çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnEdit](#onedit)|Kullanıcı hakkında bir özellik değerini değiştirmek için olduğunda çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnEndEdit](#onendedit)|Kullanıcı tamamlandığında çerçevesi tarafından çağrılır özellik değerini değiştirme.|  
+|[CMFCPropertyGridProperty::IsVisible](#isvisible)|Geçerli özellik görülüp görülemeyeceğini gösterir.|  
+|[CMFCPropertyGridProperty::OnClickButton](#onclickbutton)|Kullanıcı bir özelliğinde bulunan bir düğmeye tıkladığında framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnClickName](#onclickname)|Üst özellik liste denetimi tarafından bir kullanıcı bir özellik adı alanına tıkladığında çağrılır.|  
+|[CMFCPropertyGridProperty::OnClickValue](#onclickvalue)|Üst özellik liste denetimi tarafından bir kullanıcı bir özelliğin değeri alanına tıkladığında çağrılır.|  
+|[CMFCPropertyGridProperty::OnCloseCombo](#onclosecombo)|Bir özelliğinde bulunan bir birleşik giriş kutusu kapatıldığında framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnDblClk](#ondblclk)|Kullanıcı çift özellik tıkladığında framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnDrawButton](#ondrawbutton)|Bir özellik içinde yer alan bir düğme çizmek için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnDrawDescription](#ondrawdescription)|Description özelliği göstermek için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnDrawExpandBox](#ondrawexpandbox)|Alt özellikleri içeren bir özellik yakın genişletme kutusu denetimi çizmek için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnDrawName](#ondrawname)|Özellik adını göstermek için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnDrawValue](#ondrawvalue)|Özellik değeri görüntülemek için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnEdit](#onedit)|Kullanıcı yaklaşık bir özellik değerini değiştirmek için çerçeve tarafından çağrılır.|  
+|[CMFCPropertyGridProperty::OnEndEdit](#onendedit)|Kullanıcı tamamlandığında framework tarafından çağırılır. özellik değerini değiştirme.|  
 |[CMFCPropertyGridProperty::OnKillSelection](#onkillselection)||  
 |[CMFCPropertyGridProperty::OnPosSizeChanged](#onpossizechanged)||  
-|[CMFCPropertyGridProperty::OnRClickName](#onrclickname)|Kullanıcı özellik adı alanında sağ fare düğmesini tıklattığında çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnRClickValue](#onrclickvalue)|Kullanıcı özellik değeri alanında sağ fare düğmesini tıklattığında çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnSelectCombo](#onselectcombo)|Kullanıcı düzenlenebilir açılan kutusundan bir öğe seçtiğinde çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnSetCursor](#onsetcursor)|Fare işaretçisi bir özellik öğesine taşındığında çerçevesi tarafından çağrılır.|  
+|[CMFCPropertyGridProperty::OnRClickName](#onrclickname)|Kullanıcı özellik adı alanında sağ fare düğmesine tıkladığında framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnRClickValue](#onrclickvalue)|Kullanıcı özellik değeri alanında sağ fare düğmesine tıkladığında framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnSelectCombo](#onselectcombo)|Kullanıcı tarafından düzenlenebilir birleşik giriş kutusundan bir öğe seçtiğinde framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnSetCursor](#onsetcursor)|Bir özellik öğesi için fare işaretçisi hareket ettirildiğinde framework tarafından çağırılır.|  
 |[CMFCPropertyGridProperty::OnSetSelection](#onsetselection)||  
-|[CMFCPropertyGridProperty::OnUpdateValue](#onupdatevalue)|Düzenlenebilir bir özellik değeri değiştiğinde çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::PushChar](#pushchar)|Özellik listesi denetiminden özelliği seçildiğinde ve yeni bir karakter kullanıcının girdiği çağrılır.|  
+|[CMFCPropertyGridProperty::OnUpdateValue](#onupdatevalue)|Düzenlenebilir bir özellik değeri değiştiğinde framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::PushChar](#pushchar)|Özellik listesi denetim özelliği seçildiğinde ve yeni bir karakter kullanıcının girdiği çağrılır.|  
 |[CMFCPropertyGridProperty::Redraw](#redraw)|Özelliği yeniden çizer.|  
-|[CMFCPropertyGridProperty::RemoveAllOptions](#removealloptions)|Tüm seçenekleri (öğeleri) bir özellikten kaldırır.|  
+|[CMFCPropertyGridProperty::RemoveAllOptions](#removealloptions)|Bir özelliği tüm seçenekler (öğeleri) kaldırır.|  
 |[CMFCPropertyGridProperty::RemoveSubItem](#removesubitem)|Belirtilen alt öğeyi kaldırır.|  
-|[CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue)|Düzenlenen özelliğinin özgün değeri döndürür.|  
-|[CMFCPropertyGridProperty::SetData](#setdata)|İlişkilendiren bir `DWORD` bir özellik değeri.|  
-|[CMFCPropertyGridProperty::SetDescription](#setdescription)|Geçerli özellik açıklayan metin belirtir.|  
+|[CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue)|Düzenlenen bir özelliğin özgün değeri geri yükler.|  
+|[CMFCPropertyGridProperty::SetData](#setdata)|Bir DWORD değeri bir özelliğiyle ilişkilendirir.|  
+|[CMFCPropertyGridProperty::SetDescription](#setdescription)|Geçerli özellik açıklayan metni belirtir.|  
 |[CMFCPropertyGridProperty::SetName](#setname)|Bir özelliğin adını ayarlar.|  
-|[CMFCPropertyGridProperty::SetOriginalValue](#setoriginalvalue)|Düzenlenebilir bir özelliğinin özgün değeri ayarlar.|  
-|[CMFCPropertyGridProperty::SetValue](#setvalue)|Bir özellik kılavuz özelliğin değerini ayarlar.|  
-|[CMFCPropertyGridProperty::Show](#show)|Gösterir veya gizler bir özellik.|  
+|[CMFCPropertyGridProperty::SetOriginalValue](#setoriginalvalue)|Özgün düzenlenebilir bir özelliğin değerini ayarlar.|  
+|[CMFCPropertyGridProperty::SetValue](#setvalue)|Bir özellik Kılavuzu özelliğin değerini ayarlar.|  
+|[CMFCPropertyGridProperty::Show](#show)|Bir özellik gizler veya gösterir.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPropertyGridProperty::CreateCombo](#createcombo)|Birleşik giriş kutusu özellik eklemek için çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::HasButton](#hasbutton)|Bir özelliği bir düğme içerip içermediğini belirtir.|  
-|[CMFCPropertyGridProperty::Init](#init)|Bir özellik nesneyi başlatmak için çerçevesi tarafından çağrılır.|  
+|[CMFCPropertyGridProperty::CreateCombo](#createcombo)|Özellik birleşik giriş kutusu eklemek için framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::HasButton](#hasbutton)|Bir özellik bir düğme içerip içermediğini belirtir.|  
+|[CMFCPropertyGridProperty::Init](#init)|Bir özellik nesnesini başlatmak için framework tarafından çağırılır.|  
 |[CMFCPropertyGridProperty::IsSubItem](#issubitem)|Belirtilen özelliği bir alt öğe geçerli özelliğinin olup olmadığını gösterir.|  
-|[CMFCPropertyGridProperty::IsValueChanged](#isvaluechanged)|Geçerli özelliğinin değeri değişip değişmediğini gösterir.|  
-|[CMFCPropertyGridProperty::OnCtlColor](#onctlcolor)|Bir özellik arka plan rengini doldurmak için fırça almasının gerektiği zaman çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnDestroyWindow](#ondestroywindow)|Bir özellik yok veya düzenleme tamamlandığında çerçevesi tarafından çağrılır.|  
-|[CMFCPropertyGridProperty::OnKillFocus](#onkillfocus)|Özellik giriş odağı kaybettiğinde çerçevesi tarafından çağrılır.|  
+|[CMFCPropertyGridProperty::IsValueChanged](#isvaluechanged)|Geçerli özelliğin değerini değişip değişmediğini gösterir.|  
+|[CMFCPropertyGridProperty::OnCtlColor](#onctlcolor)|Bir özelliğin arka plan rengi ile doldurmak için fırça alması gerekir framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnDestroyWindow](#ondestroywindow)|Bir özelliği kaldırıldığında ya da düzenlemeyi bitirdikten sonra framework tarafından çağırılır.|  
+|[CMFCPropertyGridProperty::OnKillFocus](#onkillfocus)|Özelliği, giriş odağı kaybettiğinde framework tarafından çağırılır.|  
   
 ### <a name="data-members"></a>Veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPropertyGridProperty::m_strFormatDouble](#m_strformatdouble)|Çift türünde bir değer için biçim dizesi.|  
+|[CMFCPropertyGridProperty::m_strFormatDouble](#m_strformatdouble)|Double türündeki bir değerin dize biçimi.|  
 |[CMFCPropertyGridProperty::m_strFormatFloat](#m_strformatfloat)|Tür float değeri için biçim dizesi.|  
-|[CMFCPropertyGridProperty::m_strFormatLong](#m_strformatlong)|Dize türünde bir değer için uzun biçimlendirin.|  
-|[CMFCPropertyGridProperty::m_strFormatShort](#m_strformatshort)|Kısa türünde bir değer için biçim dizesi.|  
+|[CMFCPropertyGridProperty::m_strFormatLong](#m_strformatlong)|Türündeki bir değerin dize uzun biçimi.|  
+|[CMFCPropertyGridProperty::m_strFormatShort](#m_strformatshort)|Biçim dizesi için kısa türünde bir değer.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım bir `CMFCPropertyGridProperty` sonra bir özellik listesi denetimine ekleme bir özelliği temsil eden nesne. Daha fazla bilgi için bkz: [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md).  
+ Kullanım bir `CMFCPropertyGridProperty` bir özellik liste denetimi eklersiniz bir özelliği temsil eden nesne. Daha fazla bilgi için [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md).  
   
- Bir özellik nesnesi dizeler, tarihler ve Boole veya tamsayı değerleri gibi veri türlerini temsil edebilir. Birleşik giriş kutusu gibi bir denetim veya bir düğme denetimi içerebilir veya alt özellikleri içerebilir.  
+ Bir özellik nesnesi, dizeler, tarihler ve Boole veya tamsayı değerleri gibi veri türlerini temsil edebilir. Alt özellikler içerebilen veya birleşik giriş kutusu gibi bir denetim veya düğme denetimi içerebilir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCPropertyGridProperty` nesnesi. Bu örnek ayrıca çeşitli yöntemlerle kullanımı gösterilmiştir `CMFCPropertyGridProperty` bir seçenek ekleyin, bir alt öğe ekleyin, bir özelliğini etkinleştirmek ve bir özelliği görüntülemek için sınıf. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCPropertyGridProperty` nesne. Bu örnek ayrıca çeşitli yöntemlerle nasıl yapılacağı açıklanır `CMFCPropertyGridProperty` bir seçenek ekleyin, bir alt öğe eklemek, bir özelliğini etkinleştirmek ve bir özelliği görüntülemek için sınıf. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#27](../../mfc/reference/codesnippet/cpp/cmfcpropertygridproperty-class_1.cpp)]  
   
@@ -317,7 +317,7 @@ class CMFCPropertyGridProperty : public CObject
  **Başlık:** afxpropertygridctrl.h  
   
 ##  <a name="addoption"></a>  CMFCPropertyGridProperty::AddOption  
- Yeni bir liste öğesi bir özellik listesi denetimine ekler.  
+ Yeni bir liste öğesi için bir özellik listesi denetimi ekler.  
   
 ```  
 BOOL AddOption(
@@ -327,13 +327,13 @@ BOOL AddOption(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszOption*  
- Liste öğesi eklemek için (seçeneği).  
+ Liste öğesi eklemek için (seçenek).  
   
  [in] *bInsertUnique*  
- `TRUE` Listeye eklemek için yalnızca bu zaten mevcut değilse; öğesi Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ Listeye eklemek için TRUE yalnızca, zaten mevcut değilse; öğesi Aksi takdirde FALSE. Varsayılan değer True'dur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`, liste öğesi eklendiğinde anlamına gelir. Aksi takdirde, `FALSE`, liste öğesi olmayan anlamına gelir, çünkü eklenen *bInsertUnique* parametresi `TRUE` ve öğesi tarafından belirtilen liste *lpszOption* zaten parametresi mevcut.  
+ TRUE, liste öğesi eklendiğinde anlamına gelir. Aksi takdirde yanlış liste öğesi olmadığı anlamına gelir eklenen çünkü *bInsertUnique* parametredir TRUE ve liste öğesi tarafından belirtilen *lpszOption* parametresi zaten mevcut.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -346,16 +346,16 @@ BOOL AddSubItem(CMFCPropertyGridProperty* pProp);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pProp*  
- Eklemek üzere bir özelliğe yönelik işaretçi.  
+ Bir özellik eklemek için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Belirtilen özellik başarıyla alt özelliği olarak eklendiyse. `FALSE` üst özelliğinde oluştuğundan özelliği eklenmediğinde.  
+ Alt özellik olarak belirtilen özellik başarıyla eklenirse TRUE. Üst özellik oluştuğundan özelliği eklenmediğinde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özellikler üst ve alt hiyerarşik listesini oluşturmak için bu yöntemi kullanın. Bir alt öğeden sonra özellik eklenir, üst özelliği otomatik olarak bir artı işareti (+) tarafından belirlenen bir genişletme kutusu denetimini görüntüler. Kullanıcı artı tıkladığında, üst özelliği genişletir ve tüm alt özellik öğeleri görüntüler.  
+ Özellikleri üst ve alt hiyerarşik listesini oluşturmak için bu yöntemi kullanın. Sonra bir alt özellik eklenir, üst özellik bir artı işareti (+) tarafından belirlenen bir genişletme kutusu denetimini otomatik olarak görüntüler. Kullanıcı artı işaretine tıkladığında, üst özellik genişletir ve tüm alt özellik öğeleri görüntüler.  
   
 ##  <a name="adjustbuttonrect"></a>  CMFCPropertyGridProperty::AdjustButtonRect  
- Katıştırılmış düğmesinin sınırlayıcı dikdörtgenini yeniden boyutlandırmak için bir özellik bildirmek için üst özelliği liste denetimi tarafından çağrılır.  
+ Katıştırılmış bir düğme sınırlayıcı dikdörtgenini yeniden boyutlandırmak üzere bir özelliğe bildirmek için üst özellik liste denetimi tarafından çağrılır.  
   
 ```  
 virtual void AdjustButtonRect();
@@ -364,14 +364,14 @@ virtual void AdjustButtonRect();
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu yöntem:  
   
--   Düğme yüksekliğini düğmesi eşit genişliğini artı 3 piksel ayarlar.  
+-   Düğmenin yüksekliğini düğmesi eşit genişliğini artı 3 piksel ayarlar.  
   
--   Düğmenin sınırlayıcı dikdörtgenini özelliği sağ kenarı taşır  
+-   Düğme sınırlayıcı dikdörtgenini özelliğinin sağ kenarına taşır.  
   
--   Özelliği üst ucunun düğmesi 1 piksel kaydırır.  
+-   Düğme 1 piksel özelliği üst ucunun altına geçirir.  
   
 ##  <a name="adjustinplaceeditrect"></a>  CMFCPropertyGridProperty::AdjustInPlaceEditRect  
- Bir özellik değerini ayarlamak için kullanılan metin kutusu ve isteğe bağlı değer değiştirme düğmesi denetimi sınırlarına alır.  
+ Bir özellik değerini ayarlamak için kullanılan metin kutusu ve isteğe bağlı bir değer değiştirme düğmesi denetimi sınırları alır.  
   
 ```  
 virtual void AdjustInPlaceEditRect(
@@ -381,16 +381,16 @@ virtual void AdjustInPlaceEditRect(
   
 ### <a name="parameters"></a>Parametreler  
  [out] *rectEdit*  
- Bu yöntem döndürdüğünde dikdörtgene özellik değeri için metin kutusunun sınırlarını belirtir.  
+ Bu yöntem döndürdüğünde, özellik değeri için metin kutusunun sınırlarını belirten bir dikdörtgen.  
   
  [out] *rectSpin*  
- Bu yöntem döndürdüğünde dikdörtgene özellik değeri için değer değiştirme düğmesi denetimi sınırlarını belirtir. Veya özellik boş bir dikdörtgen bir değer değiştirme düğmesi desteklemiyorsa.  
+ Bu yöntem döndürdüğünde, özellik değeri için değer değiştirme düğmesi denetimi sınırlarını belirten bir dikdörtgen. Ya da boş bir dikdörtgen bir değer değiştirme düğmesi özelliğini desteklemiyorsa.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir özelliğin değerini alan bir metin kutusunun ve büyük olasılıkla oluşan bir *seçenek düğmesi*, değer değiştirme düğmesi denetimi gibi. Bu yöntem metin kutusu ve seçenek düğmesi boyutlarını hesaplar ve ardından bu değerleri belirtilen parametrelerinde döndürür.  
+ Bir özelliğin değerini alan bir metin kutusu ve büyük olasılıkla oluşan bir *seçenek düğmesini*, bir değer değiştirme düğmesi denetimi gibi. Bu yöntem, metin kutusu ve seçenek düğmesi boyutlarını hesaplar ve belirtilen parametrelerle bu değerleri döndürür.  
   
 ##  <a name="allowedit"></a>  CMFCPropertyGridProperty::AllowEdit  
- Bir özellik düzenlenebilir ya da salt okunur hale getirir.  
+ Düzenlenebilir veya salt okunur bir özellik sağlar.  
   
 ```  
 void AllowEdit(BOOL bAllow=TRUE);
@@ -398,12 +398,12 @@ void AllowEdit(BOOL bAllow=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bÜst*  
- `TRUE` özellik düzenlenebilir olmasını sağlamak için; `FALSE` özelliği salt okunur yapma. Varsayılan değer `TRUE` şeklindedir.  
+ Özellik düzenlenebilir olmasını sağlamak için TRUE; Özelliği salt okunur yapmak için FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="cmfcpropertygridproperty"></a>  CMFCPropertyGridProperty::CMFCPropertyGridProperty  
- Oluşturan bir `CMFCPropertyGridProperty` nesnesi.  
+ Oluşturur bir `CMFCPropertyGridProperty` nesne.  
   
 ```  
 CMFCPropertyGridProperty(
@@ -424,10 +424,10 @@ CMFCPropertyGridProperty(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *strGroupName*  
- Grup adı. A *grup* özelliği kılavuz denetimindeki ilgili özellikleri koleksiyonudur. Denetim hiyerarşik olarak görüntüleniyorsa, *grup adı* grubun üstündeki satıra bir kategori başlık olarak görüntülenir.  
+ Grup adı. A *grubu* ilgili bir özellik Kılavuzu denetimini özelliklerinde oluşan bir koleksiyondur. Denetim hiyerarşik olarak gösterilirse *grup adı* grubun üstündeki satıra bir kategori başlığı olarak görüntülenir.  
   
  [in] *dwData*  
- Bir tamsayı ya da özelliği ile ilişkili diğer veri için bir işaretçi gibi uygulamaya özgü verileri. Varsayılan değer 0’dır.  
+ Uygulamaya özgü verileri, bir tamsayı ya da özellikle ilişkili diğer veri işaretçisi gibi. Varsayılan değer 0’dır.  
   
  [in] *strName*  
  Özelliğin adı.  
@@ -436,24 +436,24 @@ CMFCPropertyGridProperty(
  Özellik değeri.  
   
  [in] *lpszDescr*  
- Özellik açıklaması. Varsayılan değer `NULL` şeklindedir.  
+ Özellik açıklaması. Varsayılan değer NULL olur.  
   
  [in] *lpszEditMask*  
- Özellik maskeli düzenleme denetimi ise düzenleme maskesi. Varsayılan değer `NULL` şeklindedir.  
+ Maskeli düzen denetimi özellik ise düzenleme maskesi. Varsayılan değer NULL olur.  
   
  [in] *lpszEditTemplate*  
- Özellik maskeli düzenleme denetimi ise Düzen şablonu. Varsayılan değer `NULL` şeklindedir.  
+ Maskeli düzen denetimi özellik ise düzenleme şablonu. Varsayılan değer NULL olur.  
   
  [in] *lpszValidChars*  
- Özellik maskeli düzenleme denetimi ise geçerli karakterler listesi. Varsayılan değer `NULL` şeklindedir.  
+ Bir liste özelliği maskeli düzen denetimi ise geçerli karakter. Varsayılan değer NULL olur.  
   
  [in] *bIsValueList*  
- `TRUE` özellik değerlerinin listesini temsil eder `FALSE` tek bir değer özelliği temsil ediyorsa. Varsayılan değer `FALSE` şeklindedir.  
+ Özellik değerlerinin temsil ediyorsa TRUE; Özelliği temsil eden tek bir değer FALSE. Varsayılan değer FALSE olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="createcombo"></a>  CMFCPropertyGridProperty::CreateCombo  
- Birleşik giriş kutusu özellik eklemek için çerçevesi tarafından çağrılır.  
+ Özellik birleşik giriş kutusu eklemek için framework tarafından çağırılır.  
   
 ```  
 virtual CComboBox* CreateCombo(
@@ -463,18 +463,18 @@ virtual CComboBox* CreateCombo(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pWndParent*  
- Açılan kutunun üst pencere işaretçi.  
+ Birleşik giriş kutusunun ana pencere işaretçisi.  
   
- [in] *rect*  
+ [in] *dikdörtgen*  
  Birleşik giriş kutusu sınırlayıcı dikdörtgenini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni bir işaretçi [CComboBox](../../mfc/reference/ccombobox-class.md) nesnesi.  
+ Yeni bir işaretçi [CComboBox](../../mfc/reference/ccombobox-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="createinplaceedit"></a>  CMFCPropertyGridProperty::CreateInPlaceEdit  
- Bir özellik için düzenlenebilir bir denetim oluşturmak için çerçevesi tarafından çağrılır.  
+ Bir özellik için düzenlenebilir bir denetim oluşturmak için framework tarafından çağırılır.  
   
 ```  
 virtual CWnd* CreateInPlaceEdit(
@@ -484,21 +484,21 @@ virtual CWnd* CreateInPlaceEdit(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *rectEdit*  
- Sınırlayıcı dikdörtgenini düzenlenebilir denetimi.  
+ Dikdörtgen düzenlenebilir denetimi.  
   
  [in] *bDefaultFormat*  
- `TRUE` düzenlenebilir denetimin metni ayarlamak için varsayılan özellik biçimi kullanmak için; Aksi takdirde `FALSE`.  
+ Düzenlenebilir denetimin metnini ayarlamak için varsayılan özelliği biçimi kullanmak için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem başarılı olursa düzenlenebilir denetim için bir işaretçi; Aksi takdirde `NULL`.  
+ Bu yöntem başarılı olursa düzenlenebilir denetlemek için bir işaretçi; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem değerlerini kullanır *varValue*, *lpszEditMask*, *lpszEditTemplate*, ve *lpszValidChars* Parametreler Belirtilen [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) sınıfı oluşturucusu. Varsayılan olarak, bu yöntem destekler *varValue* değişken türleri. Bu içerir `VT_BSTR`, `VT_R4`, `VT_R8`, `VT_UI1`, `VT_I2`, `VT_INT`, `VT_UINT`, `VT_I4`, `VT_UI2`, `VT_UI4`, ve `VT_BOOL`.  
+ Bu yöntemde değerlerini *varValue*, *lpszEditMask*, *lpszEditTemplate*, ve *lpszValidChars* Parametreler Belirtilen [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) sınıf oluşturucusu. Varsayılan olarak, bu yöntem destekler *varValue* değişken türleri. Bu, VT_BSTR, VT_R4, VT_R8, VT_UI1, VT_I2, VT_INT, VT_UINT, VT_I4, VT_UI2, VT_UI4 ve VT_BOOL içerir.  
   
- Bu yöntem oluşturur bir [CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md) biri veya birkaçı kontrol *lpszEditMask*, *lpszEditTemplate*, veya *lpszValidChars* parametreler belirtildi; Aksi takdirde oluşturduğu bir [CEdit](../../mfc/reference/cedit-class.md) denetim.  
+ Bu yöntem, oluşturur bir [CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md) bir veya daha fazla kontrol *lpszEditMask*, *lpszEditTemplate*, veya *lpszValidChars* Belirtilen parametreler; Aksi takdirde, oluşturur bir [CEdit](../../mfc/reference/cedit-class.md) denetimi.  
   
 ##  <a name="createspincontrol"></a>  CMFCPropertyGridProperty::CreateSpinControl  
- Düzenlenebilir değer değiştirme düğmesi denetimi oluşturmak için çerçevesi tarafından çağrılır.  
+ Bir düzenlenebilir değer değiştirme düğmesi denetimi oluşturmak için framework tarafından çağırılır.  
   
 ```  
 virtual CSpinButtonCtrl* CreateSpinControl(CRect rectSpin);
@@ -509,10 +509,10 @@ virtual CSpinButtonCtrl* CreateSpinControl(CRect rectSpin);
  Düzenlenebilir değer değiştirme düğmesi denetimi oluşturulduğu tanımlayan bir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni bir işaretçi [CMFCSpinButtonCtrl](../../mfc/reference/cmfcspinbuttonctrl-class.md) gösteren bir işaretçi olarak cast nesnesi bir [CSpinButtonCtrl](../../mfc/reference/cspinbuttonctrl-class.md) nesnesi.  
+ Yeni bir işaretçi [CMFCSpinButtonCtrl](../../mfc/reference/cmfcspinbuttonctrl-class.md) işaretçisi olarak cast nesne bir [CSpinButtonCtrl](../../mfc/reference/cspinbuttonctrl-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı [CMFCPropertyGridProperty::EnableSpinControl](#enablespincontrol) düzenlenebilir değer değiştirme düğmesi denetimi özelliği sağ sınırında görüntülenecek yöntemi.  
+ Çağrı [CMFCPropertyGridProperty::EnableSpinControl](#enablespincontrol) bir düzenlenebilir değer değiştirme düğmesi denetimi özelliğinin sağ kenarda görüntülemek için yöntemi.  
   
 ##  <a name="enable"></a>  CMFCPropertyGridProperty::Enable  
  Etkinleştirir veya bir özelliği devre dışı bırakır.  
@@ -523,7 +523,7 @@ void Enable(BOOL bEnable=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` özelliği etkinleştirmek için; `FALSE` özelliği devre dışı bırakmak için. Devre dışı bırakılan özellikler fare veya klavye girdisi yanıt vermez. Varsayılan değer `TRUE` şeklindedir.  
+ Özelliği etkinleştirmek için TRUE; Özelliği devre dışı bırakmak için FALSE. Devre dışı bırakılan özellikler, klavye veya fare yanıtlamayın. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -539,21 +539,21 @@ void EnableSpinControl(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` değer değiştirme düğmesi denetimi etkinleştirmek için; `FALSE` değer değiştirme düğmesi denetimi devre dışı bırakmak için. Varsayılan değer `TRUE` şeklindedir.  
+ Değer değiştirme düğmesi denetimi etkinleştirmek için TRUE; Değer değiştirme düğmesi denetimi devre dışı bırakmak için FALSE. Varsayılan değer True'dur.  
   
  [in] *nMin*  
- Değer değiştirme düğmesi denetimi en küçük değeri. Varsayılan değer 0’dır.  
+ Değer değiştirme düğmesi denetimi minimum değer. Varsayılan değer 0’dır.  
   
  [in] *nMax*  
  Değer değiştirme düğmesi denetimi maksimum değeri. Varsayılan değer 0’dır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir özellik hakkında düzenlenmesi olduğunda framework değer değiştirme düğmesi denetimi otomatik olarak oluşturur.  
+ Bir özellik hakkında düzenlenecek olduğunda framework değer değiştirme düğmesi denetimi otomatik olarak oluşturur.  
   
- Tarafından belirtilen özellik türü *varValue* parametresinin [CMFCPropertyGridProperty::CMFCPropertyGridProperty](#cmfcpropertygridproperty) oluşturucusu, desteklenen bir değişken türü olması gerekir. Aksi takdirde, bu yöntem, hata ayıklama modunda onaylar. Desteklenen türler `VT_INT`, `VT_UINT`, `VT_I2`, `VT_I4`, `VT_UI2`, ve `VT_UI4`.  
+ Tarafından belirtilen özellik türü *varValue* parametresinin [CMFCPropertyGridProperty::CMFCPropertyGridProperty](#cmfcpropertygridproperty) oluşturucusu, desteklenen bir değişken türünde olması gerekir. Aksi takdirde, bu yöntem, hata ayıklama modunda onaylar. Desteklenen türler VT_INT, VT_UINT, VT_I2, VT_I4, VT_UI2 ve VT_UI4 içerir.  
   
 ##  <a name="expand"></a>  CMFCPropertyGridProperty::Expand  
- Genişletir veya alt özelliklerini içeren bir özelliği daraltır.  
+ Genişletir veya daraltır alt özellikleri içeren bir özellik.  
   
 ```  
 void Expand(BOOL bExpand=TRUE);
@@ -561,38 +561,38 @@ void Expand(BOOL bExpand=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bExpand*  
- `TRUE` özellik genişletmek için; Özellik daraltmak için FALSE. Varsayılan değer `TRUE` şeklindedir.  
+ Özellik genişletmek için TRUE; Özellik daraltmak için FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="formatproperty"></a>  CMFCPropertyGridProperty::FormatProperty  
- Bir özellik değeri metin gösterimini biçimlendirir.  
+ Özellik değerinin metin temsilini biçimlendirir.  
   
 ```  
 virtual CString FormatProperty();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Özellik değeri metin gösterimi.  
+ Özellik değerinin metin gösterimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, özellik değerinin görüntülenmeden önce çerçevesi tarafından çağrılır.  
+ Bu yöntem, özellik değerinin görüntülenmeden önce framework tarafından çağrılır.  
   
 ##  <a name="getdata"></a>  CMFCPropertyGridProperty::GetData  
- Alır bir `DWORD` özelliği ile ilişkili değer.  
+ Bir özellik ile ilişkilendirilen bir DWORD değeri alır.  
   
 ```  
 DWORD_PTR GetData() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `DWORD` değeri.  
+ Bir DWORD değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Döndürülen veriler bir sayı veya diğer veri için bir işaretçi gibi bir uygulamaya özgü değeridir. Veri değeri özellik oluşturmak veya çağırdığınızda belirtin [CMFCPropertyGridProperty::SetData](#setdata) yöntemi.  
+ Döndürülen verileri bir sayı veya diğer verileri için bir işaretçi gibi bir uygulamaya özgü değerdir. Veri değeri özelliği oluştururken veya çağırdığınızda belirtin [CMFCPropertyGridProperty::SetData](#setdata) yöntemi.  
   
 ##  <a name="getdescription"></a>  CMFCPropertyGridProperty::GetDescription  
- Description özelliği alır.  
+ Özellik açıklamasını alır.  
   
 ```  
 const CString& GetDescription() const;  
@@ -602,10 +602,10 @@ const CString& GetDescription() const;
  Description özelliği içeren bir metin dizesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özellik listesi denetimi bu yöntem özelliğin açıklamasını görüntülemek için de kullanır.  
+ Özellik liste denetiminin de özelliğin açıklamasını görüntülemek için bu yöntemi kullanır.  
   
 ##  <a name="getexpandedsubitems"></a>  CMFCPropertyGridProperty::GetExpandedSubItems  
- Genişletilmiş alt öğe sayısını alır.  
+ Genişletilmiş bir alt öğe sayısını alır.  
   
 ```  
 int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;  
@@ -615,10 +615,10 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *bIncludeHidden*|`TRUE` Gizli alt öğeleri sayı içerecek şekilde; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.|  
+|[in] *bIncludeHidden*|Gizli alt öğe sayısına dahil edilmesi için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Genişletilmiş alt öğe sayısı.  
+ Genişletilmiş bir alt öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -642,24 +642,24 @@ LPCTSTR GetName() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Özelliğin adını içeren bir dize işaretçi.  
+ Özelliğin adını içeren bir dize işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getnametooltip"></a>  CMFCPropertyGridProperty::GetNameTooltip  
- Bir araç ipucunda özelliğinin adını görüntülemek için framework tarafından çağrılır.  
+ Bir araç ipucunda özelliğin adını göstermek için framework tarafından çağırılır.  
   
 ```  
 virtual CString GetNameTooltip();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Özellik adını içeren dize. Varsayılan olarak, dönüş değeri boş dize ' dir.  
+ Özellik adını içeren bir dize. Varsayılan olarak, dönüş değeri boş dizedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getoption"></a>  CMFCPropertyGridProperty::GetOption  
- Bir dizini tarafından belirtilen seçeneği metni alır.  
+ Bir dizin tarafından belirtilen seçeneği metnini alır.  
   
 ```  
 LPCTSTR GetOption(int nIndex) const;  
@@ -667,10 +667,10 @@ LPCTSTR GetOption(int nIndex) const;
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Almak için (seçenek) özelliği liste öğesinin sıfır tabanlı dizini.  
+ Özellik listesi öğesini almak için (seçeneği) sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçenek metin içeren bir dize işaretçi.  
+ Seçeneği metni içeren bir dize işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -685,7 +685,7 @@ int GetOptionCount() const;
  Özellik denetiminde bulunan özellik listesi öğeleri (Seçenekler) sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı [CMFCPropertyGridProperty::AddOption](#addoption) özellik listesine öğe eklemek için yöntem. Çağrı [CMFCPropertyGridProperty::RemoveAllOptions](#removealloptions) tüm öğeleri kaldırmak için yöntem.  
+ Çağrı [CMFCPropertyGridProperty::AddOption](#addoption) özelliği listeye öğe eklemek için yöntemi. Çağrı [CMFCPropertyGridProperty::RemoveAllOptions](#removealloptions) tüm öğeleri kaldırmak için yöntemi.  
   
 ##  <a name="getoriginalvalue"></a>  CMFCPropertyGridProperty::GetOriginalValue  
  Geçerli özelliği ilk değerini alır.  
@@ -695,39 +695,39 @@ const COleVariant& GetOriginalValue() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli özelliğinin özgün değeri.  
+ Geçerli özellikle özgün değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli özellik değerini değiştiren bir düzenleme işlemi etkisini geri almak için bu yöntemi kullanın.  
+ Geçerli özelliğin değerini değiştiren bir düzenleme işlemi etkisini geri almak için bu yöntemi kullanın.  
   
- Geçerli özelliğinin özgün değeri belirlediği [CMFCPropertyGridProperty::CMFCPropertyGridProperty](#cmfcpropertygridproperty) değiştiren Oluşturucusu [CMFCPropertyGridProperty::SetOriginalValue](#setoriginalvalue) yöntemi ve tarafından sıfırlama [CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue) yöntemi.  
+ Geçerli özelliğinin özgün değeri belirlediği [CMFCPropertyGridProperty::CMFCPropertyGridProperty](#cmfcpropertygridproperty) oluşturucusu, değiştiren [CMFCPropertyGridProperty::SetOriginalValue](#setoriginalvalue) yöntemi ve tarafından sıfırlandı [CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue) yöntemi.  
   
 ##  <a name="getparent"></a>  CMFCPropertyGridProperty::GetParent  
- Bir üst özelliği için bir işaretçi alır.  
+ Üst özellik için bir işaretçi alır.  
   
 ```  
 CMFCPropertyGridProperty* GetParent() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir üst özelliği nesne için bir işaretçi veya `NULL` en üst düzey bir özellik için.  
+ Üst düzey bir özellik için bir işaretçi bir nesne özelliğini ya da NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getrect"></a>  CMFCPropertyGridProperty::GetRect  
- Bir özelliğin sınırlayıcı dikdörtgenini alır.  
+ Bir özelliğin sınırlayıcı dikdörtgeni alır.  
   
 ```  
 CRect GetRect() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [CRect](../../atl-mfc-shared/reference/crect-class.md) sınırlayıcı dikdörtgenini tanımlayan nesne.  
+ A [CRect](../../atl-mfc-shared/reference/crect-class.md) dikdörtgen tanımlayan nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getsubitem"></a>  CMFCPropertyGridProperty::GetSubItem  
- Sıfır tabanlı dizini tarafından tanımlanan alt bir özelliğini alır.  
+ Sıfır tabanlı bir dizin tarafından tanımlanan bir alt özelliği alır.  
   
 ```  
 CMFCPropertyGridProperty* GetSubItem(int nIndex) const;  
@@ -735,14 +735,14 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nIndex*  
- Alınacak özelliğin sıfır tabanlı dizini. Bu parametre, onu küçükse sıfır geçersiz ya da sıfırdan büyük veya alt özellikleri sayısına eşit değil.  
+ Alınacak özelliğin sıfır tabanlı dizini. Bu parametre, küçükse sıfırdan geçersiz veya büyüktür ya da alt özellikleri sayısına eşit olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu özellik bir alt öğesi olan bir özellik nesne için bir işaretçi.  
+ Bu özelliğin bir alt öğesi olan bir özellik nesne işaretçisi.  
   
  veya  
   
- Perakende modunda `NULL` varsa *nIndex* parametresi geçersiz. Hata ayıklama modunda bu yöntem onaylar.  
+ Perakende modunda yoksa NULL *nIndex* parametresi geçersiz. Hata ayıklama modunda, bu yöntem onaylar.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -771,31 +771,31 @@ virtual const _variant_t& GetValue() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getvaluetooltip"></a>  CMFCPropertyGridProperty::GetValueTooltip  
- Bir araç ipucunda sonra görüntülenen özellik değeri metin gösterimini almak için framework tarafından çağrılır.  
+ Ardından bir araç ipucunda görüntülenen özellik değerinin metin gösterimi almak için framework tarafından çağırılır.  
   
 ```  
 virtual CString GetValueTooltip();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `CString` özelliği değerinin metinsel gösterimini içeren bir nesne. Varsayılan olarak, bu değer boş dize olur.  
+ A `CString` özellik değerinin metinsel gösterimini içeren nesne. Varsayılan olarak, bu değer boş dizedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="hasbutton"></a>  CMFCPropertyGridProperty::HasButton  
- Bir özelliği bir düğme içerip içermediğini belirtir.  
+ Bir özellik bir düğme içerip içermediğini belirtir.  
   
 ```  
 virtual BOOL HasButton() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bir özellik bir düğme (veya özellik listesi); içeriyorsa Aksi takdirde `FALSE`.  
+ Bir düğme (veya özellik listesi); bir özellik varsa TRUE içerir Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="hittest"></a>  CMFCPropertyGridProperty::HitTest  
- Bir noktaya karşılık gelen özellik liste öğesine karşılık gelen özellik nesnesi noktalarına.  
+ Bir noktasına karşılık gelen özellik listesi öğesini karşılık gelen özellik nesneyi işaret eder.  
   
 ```  
 CMFCPropertyGridProperty* HitTest(
@@ -811,33 +811,33 @@ CMFCPropertyGridProperty* HitTest(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *noktası*  
- İstemci koordinatları sınanacak noktası. Bu parametre genellikle geçerli fare işaretçisini konumdur.  
+ İstemci koordinatları olarak sınanacak noktası. Bu parametre, genellikle geçerli fare işaretçisi konumunu içindir.  
   
  [in] *pt*  
- İstemci koordinatları sınanacak noktası.  
+ İstemci koordinatları olarak sınanacak noktası.  
   
  [out] *pnArea*  
- Bu yöntem döndürüldüğünde, belirtilen noktası içeren alanını gösterir. Daha fazla bilgi için açıklamalar bakın. Varsayılan değer `NULL` şeklindedir.  
+ Bu yöntem döndürüldüğünde, belirtilen nokta içeren alanını gösterir. Daha fazla bilgi için açıklamalara bakın. Varsayılan değer NULL olur.  
   
  [in] *bPropsOnly*  
- `TRUE` herhangi bir alan özelliği denetiminde test etmek için; `FALSE` yalnızca açıklama alanı test etmek için. Varsayılan değer `FALSE` şeklindedir.  
+ Herhangi bir alan özelliği denetiminde test etmek için TRUE; Açıklama alanını test etmek için FALSE. Varsayılan değer FALSE olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir özellik nesnesi için bir işaretçi veya `NULL`.  
+ Bir özellik nesnesi veya NULL bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen nokta herhangi bir özellik öğelerinin içinde bulunamazsa varsayılan olarak, bu yöntem özellik alt öğelerinin sınar.  
+ Belirtilen nokta herhangi bir özellik öğelerinin içinde bulunmazsa varsayılan olarak, bu yöntem özelliği alt öğeleri test eder.  
   
- Aşağıdaki tablo için döndürülen değerlerini listeler *pnArea* parametresi.  
+ İçin döndürülen değerleri aşağıdaki tabloda *pnArea* parametresi.  
   
 |Alan|Açıklama|  
 |----------|-----------------|  
-|`ClickArea::ClickExpandBox`|Bir artı işareti (+) tarafından belirlenen genişletme kutusu denetimi.|  
+|`ClickArea::ClickExpandBox`|Artı işareti (+) tarafından belirlenmiş genişletme kutusu denetimi.|  
 |`ClickArea::ClickName`|Özellik adı.|  
 |`ClickArea::ClickValue`|Özellik değeri.|  
   
 ##  <a name="init"></a>  CMFCPropertyGridProperty::Init  
- Bir özellik nesneyi başlatmak için çerçevesi tarafından çağrılır.  
+ Bir özellik nesnesini başlatmak için framework tarafından çağırılır.  
   
 ```  
 void Init();
@@ -853,81 +853,81 @@ BOOL IsAllowEdit() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` özellik düzenlenebilir ise; Aksi takdirde `FALSE`.  
+ Özellik düzenlenebilir ise TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isenabled"></a>  CMFCPropertyGridProperty::IsEnabled  
- Bir özelliğin etkin mi yoksa devre dışı mı olduğunu gösterir.  
+ Bir özellik etkin mi yoksa devre dışı mı olduğunu gösterir.  
   
 ```  
 BOOL IsEnabled() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` özelliği etkinse, `FALSE` özelliği devre dışı.  
+ Özelliği etkinse TRUE; Özelliği devre dışı bırakılırsa FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir özelliğin etkin mi yoksa devre dışı mı olduğunu bildirir.  
+ Bir özellik etkin mi yoksa devre dışı mı olduğunu bildirir.  
   
 ##  <a name="isexpanded"></a>  CMFCPropertyGridProperty::IsExpanded  
- Bir özellik genişletilmiş mi, yoksa daraltılmış mı olduğunu gösterir.  
+ Bir özellik genişletilmiş veya daraltılmış olup olmadığını gösterir.  
   
 ```  
 BOOL IsExpanded() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` özellik genişlettiyseniz; `FALSE` özelliği daraltılmışsa.  
+ Özellik genişletilmiş TRUE; Özellik daraltılmışsa FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isgroup"></a>  CMFCPropertyGridProperty::IsGroup  
- Geçerli özellik bir grubu temsil edip etmediğini gösterir.  
+ Geçerli özellik bir grubu temsil edip etmediğini belirtir.  
   
 ```  
 BOOL IsGroup() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` geçerli özellik nesnesi bir grubu temsil ediyorsa; `FALSE` özelliği bir değeri temsil ediyorsa.  
+ Geçerli özellik nesnesi bir grubu temsil ediyorsa TRUE; Özelliği temsil eden bir değer FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- A *grup* özelliği kılavuz denetimindeki ilgili özellikleri koleksiyonudur. Denetim hiyerarşik olarak görüntüleniyorsa, *grup adı* grubun üstündeki satıra bir kategori başlık olarak görüntülenir.  
+ A *grubu* ilgili bir özellik Kılavuzu denetimini özelliklerinde oluşan bir koleksiyondur. Denetim hiyerarşik olarak gösterilirse *grup adı* grubun üstündeki satıra bir kategori başlığı olarak görüntülenir.  
   
 ##  <a name="isinplaceediting"></a>  CMFCPropertyGridProperty::IsInPlaceEditing  
- Geçerli özellik düzenlenebilir olup olmadığını gösterir.  
+ Geçerli özellik düzenlenebilir olup olmadığını belirtir.  
   
 ```  
 BOOL IsInPlaceEditing() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` geçerli özellik düzenlenebilir ise; Aksi takdirde `FALSE`.  
+ Geçerli özellik düzenlenebilir ise TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ismodified"></a>  CMFCPropertyGridProperty::IsModified  
- Geçerli özellik değiştirilip gösterir.  
+ Geçerli özellik değişiklik olup olmadığını gösterir.  
   
 ```  
 BOOL IsModified() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` özellik değiştirilirse; Aksi takdirde `FALSE`.  
+ Özellik değiştirilirse TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isparentexpanded"></a>  CMFCPropertyGridProperty::IsParentExpanded  
- Geçerli özellik üst genişletilmiş olup olmadığını gösterir.  
+ Geçerli özellik üst öğelerinin genişletilmiş olup olmadığını gösterir.  
   
 ```  
 BOOL IsParentExpanded() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` tüm üst geçerli özelliğinin genişlettiyseniz; `FALSE` üst özellikleri daraltılmışsa.  
+ Geçerli özelliği tüm üst öğelerinin genişletilmiş ise TRUE; Üst özellikleri daraltılmışsa FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -939,7 +939,7 @@ virtual BOOL IsSelected() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` geçerli özellik seçtiyseniz; Aksi takdirde `FALSE`.  
+ Geçerli özellik seçiliyse TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -955,34 +955,34 @@ BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
  Bir özellik için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Belirtilen özellik geçerli özelliğinin bir alt öğe varsa; Aksi takdirde `FALSE`.  
+ Belirtilen özellik geçerli özelliğinin bir alt öğe ise TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="isvaluechanged"></a>  CMFCPropertyGridProperty::IsValueChanged  
- Geçerli özelliğinin değeri değişip değişmediğini gösterir.  
+ Geçerli özelliğin değerini değişip değişmediğini gösterir.  
   
 ```  
 virtual BOOL IsValueChanged() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` geçerli özellik değerinin değiştirilmesi durumunda; Aksi takdirde `FALSE`.  
+ Geçerli özellik değeri değiştiyse TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isvisible"></a>  CMFCPropertyGridProperty::IsVisible  
- Geçerli özellik görünür olup olmadığını gösterir.  
+ Geçerli özellik görülüp görülemeyeceğini gösterir.  
   
 ```  
 BOOL IsVisible() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` geçerli özellik görünür durumdaysa; Aksi takdirde; `FALSE`.  
+ Geçerli özellik görünür ise TRUE; Aksi durumda; FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_strformatdouble"></a>  CMFCPropertyGridProperty::m_strFormatDouble  
- Türünde bir değer için bir biçim dizesi çift tutar.  
+ Bir biçim dizesi türündeki bir değerin çift tutar.  
   
 ```  
 static CString m_strFormatDouble;  
@@ -991,7 +991,7 @@ static CString m_strFormatDouble;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_strformatfloat"></a>  CMFCPropertyGridProperty::m_strFormatFloat  
- Tür float değeri için bir biçim dizesi tutar.  
+ Tür float değeri için bir biçim dizesi içerir.  
   
 ```  
 static CString m_strFormatFloat;  
@@ -1000,7 +1000,7 @@ static CString m_strFormatFloat;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_strformatlong"></a>  CMFCPropertyGridProperty::m_strFormatLong  
- Uzun türünde bir değer için bir biçim dizesi tutar.  
+ Uzun türünde bir değer için bir biçim dizesi içerir.  
   
 ```  
 static CString m_strFormatLong;  
@@ -1009,7 +1009,7 @@ static CString m_strFormatLong;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_strformatshort"></a>  CMFCPropertyGridProperty::m_strFormatShort  
- Kısa türünde bir değer için bir biçim dizesi tutar.  
+ Bir biçim dizesi için bir değer türünün kısa tutar.  
   
 ```  
 static CString m_strFormatShort;  
@@ -1018,7 +1018,7 @@ static CString m_strFormatShort;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onclickbutton"></a>  CMFCPropertyGridProperty::OnClickButton  
- Kullanıcı bir özelliğinde yer alan bir düğmesini tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı bir özelliğinde bulunan bir düğmeye tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnClickButton(CPoint point);
@@ -1029,10 +1029,10 @@ virtual void OnClickButton(CPoint point);
  İstemci koordinatları bir nokta.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem hiçbir şey yapmaz.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz.  
   
 ##  <a name="onclickname"></a>  CMFCPropertyGridProperty::OnClickName  
- Bir kullanıcı bir özelliğin ad alanı tıkladığında üst özelliği liste denetimi tarafından çağrılır.  
+ Üst özellik liste denetimi tarafından bir kullanıcı bir özellik adı alanına tıkladığında çağrılır.  
   
 ```  
 virtual void OnClickName(CPoint C);
@@ -1045,10 +1045,10 @@ virtual void OnClickName(CPoint C);
 |[in] *C*|İstemci koordinatları bir nokta.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem hiçbir şey yapmaz.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz.  
   
 ##  <a name="onclickvalue"></a>  CMFCPropertyGridProperty::OnClickValue  
- Bir kullanıcı bir özelliğin değeri alanı tıkladığında üst özelliği liste denetimi tarafından çağrılır.  
+ Üst özellik liste denetimi tarafından bir kullanıcı bir özelliğin değeri alanına tıkladığında çağrılır.  
   
 ```  
 virtual BOOL OnClickValue(
@@ -1058,19 +1058,19 @@ virtual BOOL OnClickValue(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *uiMsg*  
- Fare ileti.  
+ Bir fare mesajı.  
   
  [in] *noktası*  
  İstemci koordinatları bir nokta.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Belirtilen fare ileti bu yöntem tarafından işlenir Aksi takdirde `FALSE`.  
+ Bu yöntem tarafından belirtilen bir fare mesajı işlenirse TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem `FALSE` geçerli özelliği düzenlenebilir değilse. Aksi takdirde düzenleme veya bu özelliği ile ilişkili döndürme denetimi belirtilen fare iletisini işler ve bu yöntemi döndürür `TRUE`.  
+ Geçerli özellik düzenlenebilir değilse, varsayılan olarak, bu yöntem FALSE döndürür. Aksi takdirde, düzenleme veya döndürme denetimi, bu özellikle ilişkili belirtilen bir fare mesajı işler ve ardından bu yöntem, TRUE döndürür.  
   
 ##  <a name="onclosecombo"></a>  CMFCPropertyGridProperty::OnCloseCombo  
- Özelliğinde yer alan bir birleşik giriş kutusu kapatıldığında çerçevesi tarafından çağrılır.  
+ Bir özelliğinde bulunan bir birleşik giriş kutusu kapatıldığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnCloseCombo();
@@ -1079,7 +1079,7 @@ virtual void OnCloseCombo();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onctlcolor"></a>  CMFCPropertyGridProperty::OnCtlColor  
- Bir özellik arka plan rengini doldurmak için fırça almasının gerektiği zaman çerçevesi tarafından çağrılır.  
+ Bir özelliğin arka plan rengi ile doldurmak için fırça alması gerekir framework tarafından çağırılır.  
   
 ```  
 virtual HBRUSH OnCtlColor(
@@ -1089,18 +1089,18 @@ virtual HBRUSH OnCtlColor(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- Bir cihaz bağlamı işaretçi.  
+ Bir cihaz bağlamı işaretçisi.  
   
  [in] *nCtlColor*  
  (Bu parametre kullanılmaz.)  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem başarılı olursa fırça tanıtıcısını; Aksi takdirde `NULL`.  
+ Bu yöntem başarılı olursa fırça tanıtıcısını; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ondblclk"></a>  CMFCPropertyGridProperty::OnDblClk  
- Kullanıcı çift özellik tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı çift özellik tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnDblClk(CPoint point);
@@ -1111,13 +1111,13 @@ virtual BOOL OnDblClk(CPoint point);
  İstemci koordinatları bir nokta.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem, özellik listesi denetimi sonraki özelliği öğeyi seçer.  
+ Varsayılan olarak, bu yöntem, özellik listesi denetimi sonraki özellik öğeyi seçer.  
   
 ##  <a name="ondestroywindow"></a>  CMFCPropertyGridProperty::OnDestroyWindow  
- Bir özellik yok veya düzenleme tamamlandığında çerçevesi tarafından çağrılır.  
+ Bir özelliği kaldırıldığında ya da düzenlemeyi bitirdikten sonra framework tarafından çağırılır.  
   
 ```  
 virtual void OnDestroyWindow();
@@ -1126,7 +1126,7 @@ virtual void OnDestroyWindow();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ondrawbutton"></a>  CMFCPropertyGridProperty::OnDrawButton  
- Özelliğinde yer alan bir düğme çizmek için çerçevesi tarafından çağrılır.  
+ Bir özellik içinde yer alan bir düğme çizmek için framework tarafından çağırılır.  
   
 ```  
 virtual void OnDrawButton(
@@ -1139,12 +1139,12 @@ virtual void OnDrawButton(
  Bir cihaz bağlamı için bir işaretçi.  
   
  [in] *rectButton*  
- Bir düğme çizmek konumu belirtir sınırlayıcı dikdörtgenini.  
+ Bir düğme çizmek konumu belirtir sınırlayıcı bir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ondrawdescription"></a>  CMFCPropertyGridProperty::OnDrawDescription  
- Description özelliği çizmek için çerçevesi tarafından çağrılır.  
+ Description özelliği çizmek için framework tarafından çağırılır.  
   
 ```  
 virtual void OnDrawDescription(
@@ -1156,14 +1156,14 @@ virtual void OnDrawDescription(
  [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *rect*  
- Description özelliği çizmek konumu belirtir sınırlayıcı dikdörtgenini.  
+ [in] *dikdörtgen*  
+ Description özelliği nerede belirtir sınırlayıcı bir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem, üst özelliği liste denetimi tarafından kullanılan yazı tipi özellik adı ve açıklamayı çizer. Description özelliği Normal stilde çizilir ve özellik adını kalın stilde çizilir.  
+ Varsayılan olarak, bu yöntem, üst özellik liste denetimi tarafından kullanılan yazı tipinde özellik adı ve açıklaması çizer. Description özelliği Normal stili çizilmeden ve özellik adı kalın yazı stili çizilir.  
   
 ##  <a name="ondrawexpandbox"></a>  CMFCPropertyGridProperty::OnDrawExpandBox  
- Alt özelliklerini içeren bir özelliği yakın genişletme kutusu denetimi çizmek için çerçevesi tarafından çağrılır.  
+ Alt özellikleri içeren bir özellik yakın genişletme kutusu denetimi çizmek için framework tarafından çağırılır.  
   
 ```  
 virtual void OnDrawExpandBox(
@@ -1176,13 +1176,13 @@ virtual void OnDrawExpandBox(
  Bir cihaz bağlamı için bir işaretçi.  
   
  [in] *rectExpand*  
- Bir sınırlayıcı dikdörtgenini genişletme kutusu denetimi çizmek konumu belirtir.  
+ Genişletme kutusu denetimi çizmek konumu belirtir sınırlayıcı bir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Genişletme kutusu denetimi genişletmek veya alt özelliklerin listesini daraltmak için tıklatın. Genişletme kutusu denetimi artı içeren kare tarafından atanmış (+) veya eksi işareti (-). Özelliğin alt özellikleri listesi göstermek için genişletilebilir bir artı işareti gösterir. Eksi işareti listesi yalnızca özelliği göstermek için daraltılabilen gösterir.  
+ Genişletme kutusu denetimini genişletin veya alt özellikler listesini daraltmak için tıklatın. Genişletme kutusu denetimi içeren bir artı bir kare tarafından atanmış (+) veya eksi işareti (-). Özelliğin alt özellikleri listesini göstermek için genişletilebilir bir artı işareti gösterir. Bir eksi işareti, yalnızca özelliği görüntülemek için liste daratılmadan gösterir.  
   
 ##  <a name="ondrawname"></a>  CMFCPropertyGridProperty::OnDrawName  
- Özellik adı görüntülenecek çerçevesi tarafından çağrılır.  
+ Özellik adını göstermek için framework tarafından çağırılır.  
   
 ```  
 virtual void OnDrawName(
@@ -1194,13 +1194,13 @@ virtual void OnDrawName(
  [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *rect*  
- Özellik adı çizmek konumu belirtir sınırlayıcı dikdörtgenini.  
+ [in] *dikdörtgen*  
+ Özellik adı nerede belirtir sınırlayıcı bir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ondrawvalue"></a>  CMFCPropertyGridProperty::OnDrawValue  
- Özellik değerini görüntülemek için çerçevesi tarafından çağrılır.  
+ Özellik değeri görüntülemek için framework tarafından çağırılır.  
   
 ```  
 virtual void OnDrawValue(
@@ -1212,13 +1212,13 @@ virtual void OnDrawValue(
  [in] *pDC*  
  Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *rect*  
- Özellik değeri çizmek konumu belirtir sınırlayıcı dikdörtgenini.  
+ [in] *dikdörtgen*  
+ Özellik değeri nerede belirtir sınırlayıcı bir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onedit"></a>  CMFCPropertyGridProperty::OnEdit  
- Kullanıcı hakkında bir özellik değerini değiştirmek için olduğunda çerçevesi tarafından çağrılır.  
+ Kullanıcı yaklaşık bir özellik değerini değiştirmek için çerçeve tarafından çağrılır.  
   
 ```  
 virtual BOOL OnEdit(LPPOINT lptClick);
@@ -1226,29 +1226,29 @@ virtual BOOL OnEdit(LPPOINT lptClick);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lptClick*  
- (Bu parametre kullanılmaz.) Bir işaretçi bir noktasına istemci koordinatları.  
+ (Bu parametre kullanılmaz.) İstemci koordinatları bir nokta için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` düzenleme işlemi başarıyla başlatılırsa; Aksi takdirde `FALSE`.  
+ Düzenleme işlemi başarıyla başlatılırsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı hakkında bir özellik değerini değiştirmek için olduğunda bu işlev çerçevesi tarafından çağrılır. Varsayılan olarak, bu yöntem bir birleşik giriş kutusu denetimi veya döndürme denetimi için uygun olan düzenleyici başlatır.  
+ Kullanıcı yaklaşık bir özellik değerini değiştirmek için olduğunda bu işlev çerçeve tarafından çağrılır. Varsayılan olarak, bu yöntem bir birleşik giriş kutusu denetimi veya döndürme denetimi için uygun Düzenleyici başlatılır.  
   
 ##  <a name="onendedit"></a>  CMFCPropertyGridProperty::OnEndEdit  
- Kullanıcı tamamlandığında çerçevesi tarafından çağrılır özellik değerini değiştirme.  
+ Kullanıcı tamamlandığında framework tarafından çağırılır. özellik değerini değiştirme.  
   
 ```  
 virtual BOOL OnEndEdit();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem her zaman `TRUE`.  
+ Bu yöntem, her zaman TRUE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem geçerli düzenleme denetimini bozar'ı ve ardından döndürür `TRUE`.  
+ Varsayılan olarak, bu yöntem geçerli düzenleme denetimi yok eder ve sonra TRUE değerini döndürür.  
   
 ##  <a name="onkillfocus"></a>  CMFCPropertyGridProperty::OnKillFocus  
- Özellik giriş odağı kaybettiğinde çerçevesi tarafından çağrılır.  
+ Özelliği, giriş odağı kaybettiğinde framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnKillFocus(CWnd*);
@@ -1258,13 +1258,13 @@ virtual BOOL OnKillFocus(CWnd*);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *CWnd*|(Kullanılmaz.) Bir pencere için işaretçi.|  
+|[in] *CWnd*|(Kullanılmıyor.) Bir pencere işaretçisi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem her zaman `TRUE`.  
+ Bu yöntem, her zaman TRUE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem hiçbir şey ve ardından döndürür yapar `TRUE`. Bu yöntemi geçersiz kılarsanız, dönüş `TRUE` özelliği giriş odağı kaybettiğinde framework düzenleme işlemi sonlandırabilir.  
+ Varsayılan olarak, bu yöntem, hiçbir şey yapmaz ve TRUE döndürür. Bu yöntemi geçersiz kılarsanız, özellik, giriş odağı kaybettiğinde framework düzenleme işlemi sonlandırabilirsiniz TRUE döndürün.  
   
 ##  <a name="onkillselection"></a>  CMFCPropertyGridProperty::OnKillSelection  
 
@@ -1277,7 +1277,7 @@ virtual void OnKillSelection(CMFCPropertyGridProperty*);
  [in] *CMFCPropertyGridProperty**  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem hiçbir şey yapmaz.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz.  
   
 ##  <a name="onpossizechanged"></a>  CMFCPropertyGridProperty::OnPosSizeChanged  
 
@@ -1290,10 +1290,10 @@ virtual void OnPosSizeChanged(CRect);
  [in] *CRect*  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem hiçbir şey yapmaz.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz.  
   
 ##  <a name="onrclickname"></a>  CMFCPropertyGridProperty::OnRClickName  
- Kullanıcı özellik adı alanında sağ fare düğmesini tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı özellik adı alanında sağ fare düğmesine tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnRClickName(CPoint C);
@@ -1306,10 +1306,10 @@ virtual void OnRClickName(CPoint C);
 |[in] *C*|İstemci koordinatları bir nokta.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem hiçbir şey yapmaz.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz.  
   
 ##  <a name="onrclickvalue"></a>  CMFCPropertyGridProperty::OnRClickValue  
- Kullanıcı özellik değeri alanında sağ fare düğmesini tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı özellik değeri alanında sağ fare düğmesine tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnRClickValue(
@@ -1325,30 +1325,30 @@ virtual void OnRClickValue(
 |[in] *B*|Bir Boole değeri.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem hiçbir şey yapmaz ve *B* parametresi önceden tanımlanmış herhangi bir amacı vardır.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz ve *B* parametresi önceden tanımlanmış herhangi bir amacı vardır.  
   
 ##  <a name="onselectcombo"></a>  CMFCPropertyGridProperty::OnSelectCombo  
- Kullanıcı düzenlenebilir açılan kutusundan bir öğe seçtiğinde çerçevesi tarafından çağrılır.  
+ Kullanıcı tarafından düzenlenebilir birleşik giriş kutusundan bir öğe seçtiğinde framework tarafından çağırılır.  
   
 ```  
 virtual void OnSelectCombo();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem, özellik değeri güncelleştirmek için seçilen öğenin metnini kullanır.  
+ Varsayılan olarak, bu yöntem, özellik değerini güncelleştirmek için seçilen öğenin metnini kullanır.  
   
 ##  <a name="onsetcursor"></a>  CMFCPropertyGridProperty::OnSetCursor  
- Fare işaretçisi bir özellik öğesine taşındığında çerçevesi tarafından çağrılır.  
+ Bir özellik öğesi için fare işaretçisi hareket ettirildiğinde framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnSetCursor() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Geçerli bir değişken türü veya değerler listesini özelliğidir ve bu yöntem başarılı bir şekilde ekleme noktası (ı ışını) fare imleci yükler Aksi takdirde `FALSE`.  
+ Geçerli özellik değişken türde veya değerlerin bir listesini ve bu yöntem ekleme noktası (uçlu) fare imleci başarıyla yükleyen gerekiyorsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem aşağıdaki değişken türlerini destekler: `VT_INT`, `VT_I2`, `VT_I4`, `VT_UINT`, `VT_UI1`, `VT_UI2`, `VT_UI4`, `VT_R4`, `VT_R8`, ve `VT_BSTR`.  
+ Bu yöntem, aşağıdaki değişken türlerini destekler: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8 ve VT_BSTR.  
   
 ##  <a name="onsetselection"></a>  CMFCPropertyGridProperty::OnSetSelection  
 
@@ -1361,22 +1361,22 @@ virtual void OnSetSelection(CMFCPropertyGridProperty*);
  [in] *CMFCPropertyGridProperty**  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem hiçbir şey yapmaz.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz.  
   
 ##  <a name="onupdatevalue"></a>  CMFCPropertyGridProperty::OnUpdateValue  
- Düzenlenebilir bir özellik değeri değiştiğinde çerçevesi tarafından çağrılır.  
+ Düzenlenebilir bir özellik değeri değiştiğinde framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnUpdateValue();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="pushchar"></a>  CMFCPropertyGridProperty::PushChar  
- Özellik listesi denetiminden özelliği seçildiğinde ve yeni bir karakter kullanıcının girdiği çağrılır.  
+ Özellik listesi denetim özelliği seçildiğinde ve yeni bir karakter kullanıcının girdiği çağrılır.  
   
 ```  
 virtual BOOL PushChar(UINT nChar);
@@ -1384,13 +1384,13 @@ virtual BOOL PushChar(UINT nChar);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nChar*  
- Karakter.  
+ Bir karakter.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` düzenleme işlemi devam ediyor Aksi takdirde `FALSE`.  
+ Düzenleme işlemi devam ediyor durumunda TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem değerler listesini ya da aşağıdaki değişken türlerinden biri olan bir özelliğin destekler: `VT_INT`, `VT_I2`, `VT_I4`, `VT_UINT`, `VT_UI1`, `VT_UI2`, `VT_UI4`, `VT_R4`, `VT_R8` , ve `VT_BSTR`.  
+ Bu yöntem, değerlerin bir listesini ya da değişken şu türlerden biri bir özelliği destekler: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8 ve VT_BSTR.  
   
 ##  <a name="redraw"></a>  CMFCPropertyGridProperty::Redraw  
  Özelliği yeniden çizer.  
@@ -1402,14 +1402,14 @@ void Redraw();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="removealloptions"></a>  CMFCPropertyGridProperty::RemoveAllOptions  
- Tüm seçenekleri (öğeleri) bir özellikten kaldırır.  
+ Bir özelliği tüm seçenekler (öğeleri) kaldırır.  
   
 ```  
 void RemoveAllOptions();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Olarak da bilinen bir özellik listesi denetimi liste öğelerinin seçeneklerdir.  
+ Olarak da bilinen bir özellik liste denetiminin liste öğelerinin seçeneklerdir.  
   
 ##  <a name="removesubitem"></a>  CMFCPropertyGridProperty::RemoveSubItem  
  Belirtilen alt öğeyi kaldırır.  
@@ -1425,15 +1425,15 @@ BOOL RemoveSubItem(
  Bir özellik alt öğesi işaretçisi.  
   
  [in] *bSil*  
- `TRUE` tarafından belirtilen özellik nesnesini silmek için *pProp* parametresi; Aksi halde, `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ Tarafından belirtilen özellik nesnesi silme true *pProp* parametre; Aksi takdirde FALSE. Varsayılan değer True'dur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtin `FALSE` için *bSil* belirtilen alt öğe taşımak; diğer bir deyişle, alt öğeyi kaldırın ve başka bir yerde eklemek istiyorsanız, parametre.  
+ YANLIŞ belirtme *bSil* belirtilen alt öğeyi Taşı; diğer bir deyişle, alt öğeyi kaldırın ve başka bir yerde eklemek istiyorsanız, bir parametre.  
   
 ##  <a name="resetoriginalvalue"></a>  CMFCPropertyGridProperty::ResetOriginalValue  
- Düzenlenen özelliğinin özgün değeri döndürür.  
+ Düzenlenen bir özelliğin özgün değeri geri yükler.  
   
 ```  
 virtual void ResetOriginalValue();
@@ -1442,7 +1442,7 @@ virtual void ResetOriginalValue();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setdata"></a>  CMFCPropertyGridProperty::SetData  
- İlişkilendiren bir `DWORD` bir özellik değeri.  
+ Bir DWORD değeri bir özelliğiyle ilişkilendirir.  
   
 ```  
 void SetData(DWORD_PTR dwData);
@@ -1450,13 +1450,13 @@ void SetData(DWORD_PTR dwData);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *dwData*  
- Bir tamsayı ya da diğer veriler için bir işaretçi gibi bir uygulamaya özgü 32-bit değeri.  
+ Bir tamsayı veya diğer verileri için bir işaretçi gibi bir uygulamaya özgü 32-bit değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CMFCPropertyGridProperty::GetData](#getdata) almak için yöntemini `DWORD` değeri. Kullanım [CMFCPropertyGridCtrl::FindItemByData](../../mfc/reference/cmfcpropertygridctrl-class.md#finditembydata) belirtilen ile ilişkili özelliği liste öğesi bulmaya yöntemi `DWORD` değeri.  
+ Kullanım [CMFCPropertyGridProperty::GetData](#getdata) DWORD değerini almak için yöntemi. Kullanım [CMFCPropertyGridCtrl::FindItemByData](../../mfc/reference/cmfcpropertygridctrl-class.md#finditembydata) belirtilen DWORD değeri ile ilişkili özellik listesi öğesini bulmak için yöntemi.  
   
 ##  <a name="setdescription"></a>  CMFCPropertyGridProperty::SetDescription  
- Geçerli özellik açıklayan metin belirtir.  
+ Geçerli özellik açıklayan metni belirtir.  
   
 ```  
 void SetDescription(const CString& strDescr);
@@ -1482,12 +1482,12 @@ void SetName(
  Özellik adı.  
   
  [in] *bRedraw*  
- `TRUE` özellik hemen yeniden çizmek için; Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
+ Özellik hemen yeniden çizmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setoriginalvalue"></a>  CMFCPropertyGridProperty::SetOriginalValue  
- Düzenlenebilir bir özelliğinin özgün değeri ayarlar.  
+ Özgün düzenlenebilir bir özelliğin değerini ayarlar.  
   
 ```  
 virtual void SetOriginalValue(const COleVariant& varValue);
@@ -1498,10 +1498,10 @@ virtual void SetOriginalValue(const COleVariant& varValue);
  Bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue) düzenlenen özelliğinin özgün değeri sıfırlama yöntemi.  
+ Kullanım [CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue) düzenlenmiş bir özelliğin özgün değeri sıfırlamak için yöntemi.  
   
 ##  <a name="setvalue"></a>  CMFCPropertyGridProperty::SetValue  
- Bir özellik kılavuz özelliğin değerini ayarlar.  
+ Bir özellik Kılavuzu özelliğin değerini ayarlar.  
   
 ```  
 virtual void SetValue(const _variant_t& varValue);
@@ -1509,12 +1509,12 @@ virtual void SetValue(const _variant_t& varValue);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *varValue*  
- Bir değer referansı.  
+ Bir değere bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="show"></a>  CMFCPropertyGridProperty::Show  
- Gösterir veya gizler bir özellik.  
+ Bir özellik gizler veya gösterir.  
   
 ```  
 void Show(
@@ -1524,10 +1524,10 @@ void Show(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bBilgi Göster*  
- `TRUE` geçerli özellik ve onun alt öğelerini görüntülemek için; `FALSE` geçerli özellik ve onun alt öğelerini gizlemek için. Varsayılan değer `TRUE` şeklindedir.  
+ Geçerli özellik ve onun alt öğelerini görüntülemek için TRUE; Geçerli özellik ve onun alt öğelerini gizlemek için FALSE. Varsayılan değer True'dur.  
   
- [in] `bAdjustLayout`  
- `TRUE` bir özelliğin değerini ve etiket çizmek ve özellik çizmek nasıl yeniden hesaplamak için; `FALSE` varolan hesaplamalar özelliği çizmek için kullanılacak. Varsayılan değer `TRUE` şeklindedir.  
+ [in] *bAdjustLayout*  
+ Bir özelliğin değerini ve etiket çizmek ve sonra özellik çizin nasıl yeniden hesaplamak için TRUE; Özellik çizmek için var olan hesaplamalar kullanmak için FALSE. Varsayılan değer True'dur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

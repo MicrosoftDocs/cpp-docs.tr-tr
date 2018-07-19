@@ -38,15 +38,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1052c7197d8679272cc917402a8936983649acb
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 0752d278f0459c3558021d02fbcddb6ba234df53
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079244"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852392"
 ---
 # <a name="cshellmanager-class"></a>CShellManager sınıfı
-Tanımlayıcı listeleri (PIDLs) işaretçilerle çalışmanıza olanak sağlayan birkaç yöntemler uygular.  
+Tanımlayıcı listeleri (Pıdl'ler) için işaretçilerle çalışmanıza olanak tanıyan çeşitli yöntemler uygular.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -60,27 +60,27 @@ class CShellManager : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CShellManager::CShellManager](#cshellmanager)|Oluşturan bir `CShellManager` nesnesi.|  
+|[CShellManager::CShellManager](#cshellmanager)|Oluşturur bir `CShellManager` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CShellManager::BrowseForFolder](#browseforfolder)|Kullanıcının Kabuk klasörünün seçmesine olanak sağlayan bir iletişim kutusu görüntüler.|  
-|[CShellManager::ConcatenateItem](#concatenateitem)|İki PIDLs art arda ekler.|  
-|[CShellManager::CopyItem](#copyitem)|Yeni bir PIDL işaretçisiyle birlikte oluşturur ve sağlanan PIDL işaretçisiyle birlikte kopyalar.|  
-|[CShellManager::CreateItem](#createitem)|Belirtilen boyut yeni PIDL işaretçisiyle birlikte oluşturur.|  
+|[CShellManager::BrowseForFolder](#browseforfolder)|Bir kabuk klasörünün seçmesini sağlayan bir iletişim kutusu görüntüler.|  
+|[CShellManager::ConcatenateItem](#concatenateitem)|İki Pıdl'ler art arda ekler.|  
+|[CShellManager::CopyItem](#copyitem)|Yeni bir PIDL işaretçisiyle birlikte oluşturur ve sağlanan PIDL işaretçisiyle birlikte buna kopyalar.|  
+|[CShellManager::CreateItem](#createitem)|Belirtilen boyutta yeni bir PIDL işaretçisiyle birlikte oluşturur.|  
 |[CShellManager::FreeItem](#freeitem)|Sağlanan PIDL işaretçisiyle birlikte siler.|  
 |[CShellManager::GetItemCount](#getitemcount)|Sağlanan PIDL işaretçisiyle birlikte öğe sayısını döndürür.|  
-|[CShellManager::GetItemSize](#getitemsize)|Sağlanan PIDL işaretçisiyle birlikte boyutu döndürür.|  
-|[CShellManager::GetNextItem](#getnextitem)|PIDL işaretçisiyle birlikte sonraki öğeye döndürür.|  
-|[CShellManager::GetParentItem](#getparentitem)|Sağlanan öğesinin üst öğesi alır.|  
+|[CShellManager::GetItemSize](#getitemsize)|Sağlanan PIDL işaretçisiyle birlikte boyutunu döndürür.|  
+|[CShellManager::GetNextItem](#getnextitem)|PIDL işaretçisiyle birlikte sonraki öğeyi döndürür.|  
+|[CShellManager::GetParentItem](#getparentitem)|Sağlanan öğe üst öğesini alır.|  
 |[CShellManager::ItemFromPath](#itemfrompath)|Sağlanan yol tarafından tanımlanan öğe için PIDL işaretçisiyle birlikte alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yöntemlerinin `CShellManager` PIDLs ile tüm anlaşma sınıfı. Bir PIDL işaretçisiyle birlikte bir kabuk nesnesi için benzersiz bir tanımlayıcı değil.  
+ Yöntemlerinin `CShellManager` Pıdl'ler tüm ilgilenme sınıfı. Bir PIDL işaretçisiyle birlikte bir kabuk nesnesi için benzersiz bir tanımlayıcıdır.  
   
- Değil oluşturmalısınız bir `CShellManager` el ile nesne. Uygulamanızı çerçevesi tarafından otomatik olarak yeniden oluşturulur. Ancak, çağırmalıdır [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#initshellmanager) , uygulamanızın başlatma işlemi sırasında. Uygulamanız için kabuk Yöneticisi bir işaretçi almak için arama [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#getshellmanager).  
+ Oluşturacağınız değil bir `CShellManager` el ile nesne. Uygulamanızın framework tarafından otomatik olarak yeniden oluşturulur. Ancak, çağırmalıdır [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#initshellmanager) , uygulamanızın başlatma işlemi sırasında. Bir işaretçi, uygulamanız için kabuk Manager'a almak için arama [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#getshellmanager).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -91,7 +91,7 @@ class CShellManager : public CObject
  **Başlık:** afxshellmanager.h  
   
 ##  <a name="browseforfolder"></a>  CShellManager::BrowseForFolder  
- Kullanıcının Kabuk klasörünün seçmesine olanak sağlayan bir iletişim kutusu görüntüler.  
+ Bir kabuk klasörünün seçmesini sağlayan bir iletişim kutusu görüntüler.  
   
 ```  
 BOOL BrowseForFolder(
@@ -105,36 +105,36 @@ BOOL BrowseForFolder(
   
 ### <a name="parameters"></a>Parametreler  
  [out] *strOutFolder*  
- Seçilen klasör yolu depolamak için yöntemi tarafından kullanılan dize.  
+ Yöntem tarafından seçilen klasör yolu depolamak için kullanılan dize.  
   
  [in] *pWndParent*  
- Üst pencere için bir işaretçi.  
+ Üst penceresine bir işaretçi.  
   
  [in] *lplszInitialFolder*  
- İletişim kutusu görüntülendiğinde, varsayılan olarak seçili klasörü içeren bir dize.  
+ İletişim kutusu görüntülendiğinde, varsayılan olarak seçilen klasörü içeren bir dize.  
   
  [in] *lpszTitle*  
- İletişim kutusu başlığı.  
+ İletişim kutusunun başlığı.  
   
  [in] *ulFlags*  
- Seçenekler iletişim kutusu için belirterek bayraklar. Bkz: [BROWSEINFO](http://msdn.microsoft.com/library/windows/desktop/bb773205) ayrıntılı açıklaması.  
+ İletişim kutusu için seçenekleri belirten bayraklar. Bkz: [BROWSEINFO](http://msdn.microsoft.com/library/windows/desktop/bb773205) ayrıntılı bir açıklaması için.  
   
  [out] *piFolderImage*  
- Yöntemi seçilen klasörün görüntü dizini nereye yazdığını tamsayı değeri için bir işaretçi.  
+ Yöntem seçili klasör görüntü dizini nereye yazdığını tamsayı değerini bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kullanıcı iletişim kutusundan bir klasör seçerse sıfır olmayan; Aksi takdirde 0.  
+ İletişim kutusundan bir klasör kullanıcının seçtiği olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırdığınızda, uygulama oluşturur ve bir klasör seçmek kullanıcının sağlayan bir iletişim kutusu gösterir. Yöntem klasöre yolunu yazacak *strOutFolder* parametresi.  
+ Bu yöntemi çağırdığınızda, bir uygulama oluşturur ve bir klasör seçmek kullanıcının sağlayan bir iletişim kutusu gösterir. Yöntem klasöre yolunu yazacak *strOutFolder* parametresi.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte bir başvuru almak nasıl gösteren bir `CShellManager` kullanarak nesne `CWinAppEx::GetShellManager` yöntemi ve nasıl kullanılacağını `BrowseForFolder` yöntemi. Bu kod parçacığını parçası olan [Gezgini örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir başvuru almak gösterilmiştir bir `CShellManager` kullanarak nesne `CWinAppEx::GetShellManager` yöntemi ve nasıl kullanılacağını `BrowseForFolder` yöntemi. Bu kod parçacığı parçasıdır [Gezgini örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_Explorer#6](../../mfc/reference/codesnippet/cpp/cshellmanager-class_1.cpp)]  
   
 ##  <a name="concatenateitem"></a>  CShellManager::ConcatenateItem  
- İki PIDLs içeren yeni bir liste oluşturur.  
+ İki Pıdl'ler içeren yeni bir liste oluşturur.  
   
 ```  
 LPITEMIDLIST ConcatenateItem(
@@ -150,10 +150,10 @@ LPITEMIDLIST ConcatenateItem(
  İkinci öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi işlevi başarılı, aksi takdirde, yeni bir öğe listesi `NULL`.  
+ İşlev başarılı olursa, yeni bir öğe listesine bir işaretçi bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem yeni bir oluşturur [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) büyüklükte her ikisi de içerecek şekilde *pidl1* ve *pidl2*. Ardından kopyalar *pidl1* ve *pidl2* yeni listesine.  
+ Bu yöntem yeni bir oluşturur [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) hem de içerecek yeteri kadar büyük *pidl1* ve *pidl2*. Ardından kopyalar *pidl1* ve *pidl2* yeni listesi.  
   
 ##  <a name="copyitem"></a>  CShellManager::CopyItem  
  Bir öğe listesi kopyalar.  
@@ -164,13 +164,13 @@ LPITEMIDLIST CopyItem(LPCITEMIDLIST pidlSource);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pidlSource*  
- Özgün öğe listesi.  
+ Orijinal öğe listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni oluşturulan öğeyi listenin başarılı olursa bir işaretçi; Aksi takdirde `NULL`.  
+ Başarılı olursa yeni oluşturulan öğeyi listesine bir işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeni oluşturulan öğeyi listenin boyutu ile aynı kaynak öğe listesi vardır.  
+ Kaynak öğe listesi olarak aynı boyutta yeni oluşturulan bir öğe listesine sahiptir.  
   
 ##  <a name="createitem"></a>  CShellManager::CreateItem  
  Yeni bir PIDL işaretçisiyle birlikte oluşturur.  
@@ -181,20 +181,20 @@ LPITEMIDLIST CreateItem(UINT cbSize);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *cbSize*  
- Öğe listesi boyutu.  
+ Öğesi listenin boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa oluşturulan öğe listesinden bir işaretçi; Aksi takdirde `NULL`.  
+ Başarılı olursa oluşturulan öğeyi listesine bir işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ##  <a name="cshellmanager"></a>  CShellManager::CShellManager  
- Oluşturan bir `CShellManager` nesnesi.  
+ Oluşturur bir `CShellManager` nesne.  
   
 ```  
 CShellManager();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çoğu durumda, oluşturmanız gerekmez bir `CShellManager` doğrudan. Varsayılan olarak, sizin için bir çerçeve oluşturur. Bir işaretçi almak için `CShellManager`, çağrı [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#getshellmanager). Oluşturursanız, bir `CShellManager` el ile yöntemiyle başlatmalıdır [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#initshellmanager).  
+ Çoğu durumda, oluşturma gerekmez bir `CShellManager` doğrudan. Varsayılan olarak, framework sizin için oluşturur. Bir işaretçi almaya `CShellManager`, çağrı [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#getshellmanager). Oluşturursanız, bir `CShellManager` el yöntemi ile başlatmalısınız [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#initshellmanager).  
   
 ##  <a name="freeitem"></a>  CShellManager::FreeItem  
  Bir öğe listesi siler.  
@@ -216,13 +216,13 @@ UINT GetItemCount(LPCITEMIDLIST pidl);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *PIDL işaretçisiyle birlikte*  
- Bir işaretçi bir öğe listesi.  
+ Bir öğe listesine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğe listesindeki öğe sayısı.  
   
 ##  <a name="getitemsize"></a>  CShellManager::GetItemSize  
- Bir öğe listesi boyutu döndürür.  
+ Bir öğe listesi boyutunu döndürür.  
   
 ```  
 UINT GetItemSize(LPCITEMIDLIST pidl);
@@ -230,13 +230,13 @@ UINT GetItemSize(LPCITEMIDLIST pidl);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *PIDL işaretçisiyle birlikte*  
- Bir işaretçi bir öğe listesi.  
+ Bir öğe listesine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğe listesi boyutu.  
+ Öğesi listenin boyutu.  
   
 ##  <a name="getnextitem"></a>  CShellManager::GetNextItem  
- Sonraki öğe arasında bir işaretçi bir öğe tanımlayıcı listesi (PIDL işaretçisiyle birlikte) alır.  
+ Sonraki öğeyi bir öğe tanımlayıcı listesi (PIDL işaretçisiyle birlikte) arasında bir işaretçi alır.  
   
 ```  
 LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
@@ -247,13 +247,13 @@ LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
  Yinelemek için öğeleri listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Listedeki bir sonraki öğe için bir işaretçi.  
+ Listede bir sonraki öğeye bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa daha fazla öğe listede yok, bu yöntem `NULL`.  
+ Listede daha fazla öğe varsa, bu yöntem NULL döndürür.  
   
 ##  <a name="getparentitem"></a>  CShellManager::GetParentItem  
- Bir öğe tanımlayıcı listesi (PIDL işaretçisiyle birlikte) gösteren bir işaretçi üst alır.  
+ Üst öğe tanımlayıcı listesi (PIDL işaretçisiyle birlikte) için bir işaretçi alır.  
   
 ```  
 int GetParentItem(
@@ -263,19 +263,19 @@ int GetParentItem(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpidl*  
- Olan üst alınan bir PIDL işaretçisiyle birlikte.  
+ Ana alınan bir PIDL işaretçisiyle birlikte.  
   
  [out] *lpidlParent*  
- Yöntem sonuç depolayacağınız bir PIDL işaretçisiyle birlikte referansı.  
+ Yöntemin sonucu depolayacağınız PIDL işaretçisiyle birlikte bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  PIDL işaretçisiyle birlikte üst düzeyi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Masaüstü göreli bir PIDL işaretçisiyle birlikte düzeyidir. Masaüstü PIDL işaretçisiyle birlikte 0 düzeyine sahip kabul edilir.  
+ Masaüstü göreli bir PIDL işaretçisiyle birlikte düzeyidir. Masaüstü PIDL işaretçisiyle birlikte bir düzeyde 0 olduğu kabul edilir.  
   
 ##  <a name="itemfrompath"></a>  CShellManager::ItemFromPath  
- İşaretçinin bir öğe tanımlayıcı listesi (PIDL işaretçisiyle birlikte) bir dize yol tarafından tanımlanan öğesi alır.  
+ İşaretçiyi bir dize yolu tarafından belirtilen öğe bir öğe tanımlayıcı listesi (PIDL işaretçisiyle birlikte) alır.  
   
 ```  
 HRESULT ItemFromPath(
@@ -288,10 +288,10 @@ HRESULT ItemFromPath(
  Öğesinin yolu belirten bir dize.  
   
  [out] *PIDL işaretçisiyle birlikte*  
- Bir PIDL işaretçisiyle birlikte referansı. Yöntemi, dönüş değeri işaretçisine depolamak için bu PIDL işaretçisiyle birlikte kullanır.  
+ Bir PIDL işaretçisiyle birlikte bir başvuru. Yöntemi, işaretçi dönüş değerini depolamak için bu PIDL işaretçisiyle birlikte kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `NOERROR` başarılıysa; OLE tanımlı hata değeri.  
+ Başarılıysa; NOERROR döndürür bir OLE tanımlı hata değeri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

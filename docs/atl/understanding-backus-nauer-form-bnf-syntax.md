@@ -15,39 +15,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4137dd94886456d5813076f3cb328bac5ecf5c03
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bf1033007a02ea21e7625068bc23d762c103aa41
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37854145"
 ---
-# <a name="understanding-backus-nauer-form-bnf-syntax"></a>Backus Nauer Form (BNF) sözdizimi anlama
-ATL Kaydedicisi tarafından kullanılan komut aşağıdaki tabloda gösterilen gösterimi kullanan BNF sözdizimini kullanarak bu konuda açıklanmaktadır.  
+# <a name="understanding-backus-nauer-form-bnf-syntax"></a>Backus Nauer Form (BNF) söz dizimini anlama
+ATL kayıt şirketi tarafından kullanılan betikler aşağıdaki tabloda gösterilen gösterimi kullanan BNF söz dizimini kullanarak bu konuda açıklanmıştır.  
   
-|Kuralı/simgesi|Açıklama|  
+|Kuralı/sembol|Açıklama|  
 |------------------------|-------------|  
-|`::=`|Eşdeğer|  
-|`&#124;`|VEYA|  
-|`X+`|Bir veya daha fazla `X`s.|  
-|`[X]`|`X` isteğe bağlıdır. İsteğe bağlı ayırıcısı tarafından gösterilen `[]`.|  
+|::=|Eşdeğer|  
+|&#124;|VEYA|  
+|X +|Bir veya daha fazla Xs.|  
+|[X]|X isteğe bağlıdır. İsteğe bağlı ayırıcılar tarafından gösterilen \[].|  
 |Tüm **kalın** metin|Bir dize sabit değeri.|  
-|Tüm *italik* metin|Dize sabit değeri oluşturma.|  
+|Tüm *italik* metin|Dize sabit değeri oluşturmak nasıl.|  
   
- Önceki tabloda belirtildiği gibi Kaydedici betikleri dize değişmez değerleri kullanın. Bu komut dosyanıza görünmesi gereken gerçek metin değerleridir. ATL Kaydedicisi komut dosyasında kullanılan dize değişmez değerleri aşağıdaki tabloda açıklanmaktadır.  
+ Kaydedici betikleri, yukarıdaki tabloda gösterildiği gibi dize sabit değerleri kullanın. Bu değerler betiğinizde görünmesi gereken gerçek metin. Bir ATL Kaydedicisi betiğinde kullanılan dize değişmez değerleri aşağıdaki tabloda açıklanmaktadır.  
   
-|Dize değişmez değeri|Eylem|  
+|Dize sabit değeri|Eylem|  
 |--------------------|------------|  
-|**ForceRemove**|(Varsa) sonraki anahtarı tamamen kaldırır ve yeniden oluşturur.|  
+|**ForceRemove**|Sonraki anahtarı (varsa) tamamen kaldırır ve yeniden oluşturur.|  
 |**NoRemove**|Sonraki anahtarı sırasında Unregister kaldırmaz.|  
-|**VAL**|Belirleyen `<Key Name>` gerçekten adlandırılmış bir değer.|  
-|**Sil**|Sonraki anahtarı kayıt sırasında siler.|  
-|**s**|Sonraki değeri bir dize olduğunu belirtir (**REG_SZ**).|  
-|**d**|Sonraki değer olduğunu belirten bir **DWORD** (**REG_DWORD**).|  
-|**m**|Sonraki değeri bir multistring olduğunu belirtir (**REG_MULTI_SZ**).|  
-|**b**|Sonraki değeri bir ikili değer olduğunu belirtir (**REG_BINARY**).|  
+|**VAL**|Belirten `<Key Name>` aslında bir adlandırılmış değerdir.|  
+|**Sil**|Sonraki anahtarı, kayıt sırasında siler.|  
+|**s**|Sonraki değeri (REG_SZ) bir dize belirtir.|  
+|**d**|Sonraki değeri bir DWORD (REG_DWORD) olduğunu belirtir.|  
+|**m**|Sonraki değeri bir multistring (REG_MULTI_SZ) olduğunu belirtir.|  
+|**b**|Sonraki değeri bir ikili değeri (REG_BINARY) olduğunu belirtir.|  
   
 ## <a name="bnf-syntax-examples"></a>BNF sözdizimi örnekleri  
- ATL Kaydedicisi komut dosyasında gösterimi ve dize değişmez değerleri nasıl çalıştığını anlamanıza yardımcı olması için birkaç sözdizimi örnekleri aşağıda verilmiştir.  
+ Gösterim ve dize değişmez değerleri bir ATL Kaydedicisi betikte nasıl çalıştığını anlamanıza yardımcı olması için birkaç söz dizimi örnekleri aşağıda verilmiştir.  
   
 ### <a name="syntax-example-1"></a>Sözdizimi örneği 1  
   
@@ -55,7 +56,7 @@ ATL Kaydedicisi tarafından kullanılan komut aşağıdaki tabloda gösterilen g
 <registry expression> ::= <Add Key>  
 ```  
   
- belirleyen `registry expression` eşdeğerdir `Add Key`.  
+ belirten `registry expression` eşdeğerdir `Add Key`.  
   
 ### <a name="syntax-example-2"></a>Sözdizimi örneği 2  
   
@@ -63,7 +64,7 @@ ATL Kaydedicisi tarafından kullanılan komut aşağıdaki tabloda gösterilen g
 <registry expression> ::= <Add Key> | <Delete Key>  
 ```  
   
- belirleyen `registry expression` ya da eşdeğer bir gruba `Add Key` veya `Delete Key`.  
+ belirten `registry expression` ya da eşdeğerine `Add Key` veya `Delete Key`.  
   
 ### <a name="syntax-example-3"></a>Sözdizimi örneği 3  
   
@@ -71,39 +72,39 @@ ATL Kaydedicisi tarafından kullanılan komut aşağıdaki tabloda gösterilen g
 <Key Name> ::= '<AlphaNumeric>+'  
 ```  
   
- belirleyen `Key Name` bir veya daha fazla eşdeğerdir `AlphaNumerics`.  
+ belirten `Key Name` bir veya daha fazla eşdeğerdir `AlphaNumerics`.  
   
-### <a name="syntax-example-4"></a>Sözdizimi örneği 4  
+### <a name="syntax-example-4"></a>4 sözdizimi örneği  
   
 ```  
 <Add Key> ::= [ForceRemove | NoRemove | val]<Key Name>  
 ```  
   
- belirleyen `Add Key` eşdeğerdir `Key Name`ve dize değişmez değerleri `ForceRemove`, `NoRemove`, ve `val`, isteğe bağlıdır.  
+ belirten `Add Key` eşdeğerdir `Key Name`ve dize değişmez değerleri, `ForceRemove`, `NoRemove`, ve `val`, isteğe bağlıdır.  
   
-### <a name="syntax-example-5"></a>Sözdizimi örneği 5  
+### <a name="syntax-example-5"></a>5 sözdizimi örneği  
   
 ```  
 <AlphaNumeric> ::= any character not NULL, that is, ASCII 0  
 ```  
   
- belirleyen `AlphaNumeric` herhangi Değersiz olmayan tüm karakterler için eşdeğerdir.  
+ belirten `AlphaNumeric` herhangi NULL karakter olmayan için eşdeğerdir.  
   
-### <a name="syntax-example-6"></a>Sözdizimi örneği 6  
+### <a name="syntax-example-6"></a>6 sözdizimi örneği  
   
 ```  
 val 'testmulti' = m 'String 1\0String 2\0'  
 ```  
   
- belirleyen anahtar adı `testmulti` bir çok dizeli değer oluşan `String 1` ve `String 2`.  
+ belirten anahtar adı `testmulti` oluşan bir çok dizeli değer `String 1` ve `String 2`.  
   
-### <a name="syntax-example-7"></a>Sözdizimi örneği 7  
+### <a name="syntax-example-7"></a>7 sözdizimi örneği  
   
 ```  
 val 'testhex' = d '&H55'  
 ```  
   
- belirleyen anahtar adı `testhex` olan bir **DWORD** değerini onaltılık 55 (ondalık 85) ayarlayın. Bu biçim aynılarını için Not **& H** gösterimi olarak Visual Basic belirtiminde bulundu.  
+ belirten anahtar adı `testhex` bir DWORD değeri, onaltılık 55 (ondalık 85) ayarlanır. Bu biçim aynılarını için Not **& H** gösterimi olarak Visual Basic belirtiminde bulunamadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaydedici Betikleri Oluşturma](../atl/creating-registrar-scripts.md)

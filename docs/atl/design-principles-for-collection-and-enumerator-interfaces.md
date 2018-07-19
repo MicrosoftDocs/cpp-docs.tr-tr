@@ -15,21 +15,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05649cce0e80af6f54327545cef7b663d69babf9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ab8b42804ca892c80971928b869e09ccdf479d68
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354925"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851333"
 ---
-# <a name="design-principles-for-collection-and-enumerator-interfaces"></a>Tasarım ilkeleri toplama ve Numaralandırıcı arabirimleri
-Her tür arabirimi arkasında farklı tasarım ilkeleri vardır:  
+# <a name="design-principles-for-collection-and-enumerator-interfaces"></a>Koleksiyon ve Numaralandırıcı arabirimleri için tasarım ilkeleri
+Her tür arabirimin arkasına farklı tasarım ilkeleri vardır:  
   
--   Bir koleksiyon arabirim sağlayan *rastgele* erişim bir *tek* koleksiyondaki öğe **öğesi** yöntemi, koleksiyondaki öğe sayısını olduğunu öğrenmek istemcileri sağlar aracılığıyla **sayısı** özelliği ve genellikle istemcilerin öğeleri eklemek ve kaldırmak olanak sağlar.  
+-   Bir koleksiyon arabirimidir *rastgele* erişimi bir *tek* koleksiyondaki öğe `Item` yöntemi koleksiyondaki öğe sayısını olduğunu öğrenmek istemciler sağlar `Count` özellik ve genellikle öğeleri eklemek ve kaldırmak etmesine olanak tanır.  
   
--   Bir numaralandırıcı arabirim sağlar *seri* erişim *birden çok* bir koleksiyondaki öğelerin (Numaralandırıcı döndürme durdurur kadar kaç öğe koleksiyonda yer alan keşfetmek istemci izin vermez öğeleri) ve öğe ekleme veya kaldırma, herhangi bir şekilde sağlamaz.  
+-   Numaralandırıcı arabirimi sağlayan *seri* erişim *birden çok* bir koleksiyondaki öğelerin, istemci (numaralandırıcıyı döndürmek durdurur kadar kaç öğe koleksiyonda yer alan bulmak izin vermez öğeleri) ve öğe ekleme veya kaldırma, herhangi bir şekilde sağlamaz.  
   
- Her tür arabiriminin bir koleksiyondaki öğelerin erişim sağlayan, farklı bir rol oynar.  
+ Her arabirimin türü bir koleksiyondaki öğelere erişim sağlayan bir farklı rol oynar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Koleksiyonlar ve numaralandırmalar](../atl/atl-collections-and-enumerators.md)

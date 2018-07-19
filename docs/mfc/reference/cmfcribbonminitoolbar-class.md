@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07b20d43c53fc0f485d33f71805e73f885c1200a
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: d97e3e993571392893533be220e243b045b81e30
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041756"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852893"
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar sınıfı
-Bağlamsal açılan araç uygular.  
+Bağlamsal açılan araç çubuğu uygular.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,24 +49,24 @@ class CMFCRibbonMiniToolBar : public CMFCRibbonPanelMenu
 |Ad|Açıklama|  
 |----------|-----------------|  
 |`CMFCRibbonMiniToolBar::CMFCRibbonMiniToolBar`|Varsayılan Oluşturucu.|  
-|`CMFCRibbonMiniToolBar::~CMFCRibbonMiniToolBar`|Yok Edicisi.|  
+|`CMFCRibbonMiniToolBar::~CMFCRibbonMiniToolBar`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`CMFCRibbonMiniToolBar::CreateObject`|Bu sınıf türü dinamik bir örneğini oluşturmak için framework tarafından kullanıldı.|  
-|`CMFCRibbonMiniToolBar::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
+|`CMFCRibbonMiniToolBar::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|  
+|`CMFCRibbonMiniToolBar::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
 |[CMFCRibbonMiniToolBar::IsContextMenuMode](#iscontextmenumode)||  
 |[CMFCRibbonMiniToolBar::IsRibbonMiniToolBar](#isribbonminitoolbar)|(Geçersiz kılmaları `CMFCPopupMenu::IsRibbonMiniToolBar`.)|  
 |[CMFCRibbonMiniToolBar::SetCommands](#setcommands)|Araç çubuğunda görüntülenecek komutların listesini ayarlar.|  
-|[CMFCRibbonMiniToolBar::Show](#show)|Mini araç belirtilen ekran koordinatlarda görüntüler.|  
+|[CMFCRibbonMiniToolBar::Show](#show)|Mini araç, belirtilen ekran koordinatlarda görüntüler.|  
 |[CMFCRibbonMiniToolBar::ShowWithContextMenu](#showwithcontextmenu)|Mini araç bir bağlam menüsü ile birlikte görüntüler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanıcı bir belgedeki nesneyi seçtikten sonra mini araç genellikle görüntülenir. Örneğin, kullanıcı bir sözcük program işleme metin bloğunu seçtikten sonra uygulama metin biçimlendirme komutları içeren mini araç çubuğu görüntüler.  
+ Kullanıcı, nesneyi bir belgede seçtikten sonra mini araç genellikle görüntülenir. Örneğin, kullanıcı programı bir sözcük işleme metin bloğu seçtikten sonra uygulama metin biçimlendirme komutları içeren bir mini araç çubuğu görüntüler.  
   
- Fare işaretçisini mini araç sınırların dışında olduğunda mini araç saydam olur.  
+ Fare işaretçisi mini araç sınırların dışında olduğunda mini araç saydam bir hal alır.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -99,21 +99,21 @@ void SetCommands(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pRibbonBar*  
- Mini araç çubuğu düğmeleri görüntülemek arar Şerit çubuk.  
+ Şerit çubuğunun mini araç çubuğu düğmeleri görüntülemek arar.  
   
  [in] *lstCommands*  
- Mini araç çubuğunda görüntülenecek komutları listesi. Tüm Şerit kategorileri ilişkili düğmeleri bulmak için arama yapılır.  
+ Mini araç çubuğunda görüntülenecek komutları listesi. Tüm Şerit kategorisi ilişkili düğmeleri bulmak için arama yapılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Mini araç çubuğunda görüntülenecek komutların listesini ayarlamak için bu işlevi kullanın.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl kullanılacağı ortaya `SetCommands` yöntemi `CMFCRibbonMiniToolBar` sınıfı. Bu kod parçacığını parçası olan [MS Office 2007 Demo örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek nasıl kullanılacağını gösterir `SetCommands` yöntemi `CMFCRibbonMiniToolBar` sınıfı. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/cpp/cmfcribbonminitoolbar-class_1.cpp)]  
   
 ##  <a name="show"></a>  CMFCRibbonMiniToolBar::Show  
- Mini araç belirtilen ekran koordinatlarda görüntüler.  
+ Mini araç, belirtilen ekran koordinatlarda görüntüler.  
   
 ```  
 BOOL Show(
@@ -123,13 +123,13 @@ BOOL Show(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *x*  
- Ekran koordinatları olarak mini araç yatay konumunu belirtir.  
+ Ekran koordinatlarında mini araç yatay konumu belirtir.  
   
  [in] *y*  
- Ekran koordinatları olarak mini araç dikey konumu belirtir.  
+ Ekran koordinatlarında mini araç dikey konumu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` mini araç başarıyla görüntülendiyse; Aksi takdirde `FALSE`.  
+ Mini araç başarıyla görüntüleniyorsa TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="showwithcontextmenu"></a>  CMFCRibbonMiniToolBar::ShowWithContextMenu  
  Mini araç bir bağlam menüsü ile birlikte görüntüler.  
@@ -144,22 +144,22 @@ BOOL ShowWithContextMenu(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *x*  
- Yatay Konum bağlam menüsünün ekran koordinatları olarak belirtir.  
+ Bağlam menüsünün yatay konum ekran koordinatlarında belirtir.  
   
  [in] *y*  
- Ekran koordinatları olarak bağlam menüsü dikey konumu belirtir.  
+ Ekran koordinatlarında bağlam menüsü dikey konumu belirtir.  
   
  [in] *uiMenuResID*  
- Görüntülenecek bağlam menüsü kaynak Kimliğini belirtir.  
+ Bağlam menüsünü görüntülemek için kaynak Kimliğini belirtir.  
   
  [in] *pWndOwner*  
- Bağlam menüsünden iletileri alan penceresi tanımlar.  
+ Bağlam menüsünden iletileri alan penceresini tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bağlam menüsü başarıyla görüntülendiyse; Aksi takdirde `FALSE`.  
+ Bağlam menüsü başarıyla görüntüleniyorsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir bağlam menüsü sahip mini bir araç çubuğu görüntülemek için bu işlevi kullanın. Bağlam menüsü konumlandırılmış 15 mini araç çubuğunun altında pikseldir.  
+ Bir bağlam menüsü olan bir mini araç çubuğunu görüntülemek için bu işlevi kullanın. Bağlam menüsü konumlandırılmış 15 mini araç çubuğunun altındaki pikseldir.  
   
 ##  <a name="iscontextmenumode"></a>  CMFCRibbonMiniToolBar::IsContextMenuMode  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

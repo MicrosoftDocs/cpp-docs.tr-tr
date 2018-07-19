@@ -52,15 +52,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41165f177671379eecbc700df016cd19aea69962
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: c1c29a317ff2d4d8e40d6aca0d6b46ee3ba2fd88
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040213"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853842"
 ---
 # <a name="cobarray-class"></a>CObArray sınıfı
-Dizileri destekler `CObject` işaretçileri.  
+Dizilerini destekler `CObject` işaretçileri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -80,23 +80,23 @@ class CObArray : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CObArray::Add](#add)|Bir öğeyi dizinin sonuna ekler; dizi gerekirse artar.|  
-|[CObArray::Append](#append)|Başka bir dizi diziye ekler; dizi gerekirse artar.|  
-|[CObArray::Copy](#copy)|Başka bir dizi diziye kopyalar; dizi gerekirse artar.|  
-|[CObArray::ElementAt](#elementat)|Dizi öğesi işaretçinin geçici bir başvuru döndürür.|  
-|[CObArray::FreeExtra](#freeextra)|Geçerli bir üst sınır yukarıdaki tüm kullanılmayan belleği serbest bırakır.|  
+|[CObArray::Add](#add)|Dizinin sonuna bir öğe ekler; dizi gerekirse büyür.|  
+|[CObArray::Append](#append)|Diziyi başka diziye ekler; dizi gerekirse büyür.|  
+|[CObArray::Copy](#copy)|Diziyi başka diziye kopyalar; dizi gerekirse büyür.|  
+|[CObArray::ElementAt](#elementat)|Dizi içinde öğe işaretçisi için geçici bir başvuru döndürür.|  
+|[CObArray::FreeExtra](#freeextra)|Geçerli üst sınır yukarıdaki tüm kullanılmayan belleği serbest bırakır.|  
 |[CObArray::GetAt](#getat)|Belirtilen dizindeki değeri döndürür.|  
-|[CObArray::GetCount](#getcount)|Bu dizide öğe sayısını alır.|  
-|[CObArray::GetData](#getdata)|Dizideki öğelere erişim sağlar. Olabilir **NULL**.|  
-|[CObArray::GetSize](#getsize)|Bu dizide öğe sayısını alır.|  
+|[CObArray::GetCount](#getcount)|Bu dizinin içinde öğe sayısını alır.|  
+|[CObArray::GetData](#getdata)|Dizide öğelere erişim sağlar. NULL olabilir.|  
+|[CObArray::GetSize](#getsize)|Bu dizinin içinde öğe sayısını alır.|  
 |[CObArray::GetUpperBound](#getupperbound)|En büyük geçerli dizinini döndürür.|  
-|[CObArray::InsertAt](#insertat)|Bir öğenin (veya başka bir dizinin tüm öğeleri) belirtilen bir dizinde ekler.|  
+|[CObArray::InsertAt](#insertat)|Belirtilen dizindeki öğenin (veya başka bir dizideki tüm öğeler) ekler.|  
 |[CObArray::IsEmpty](#isempty)|Dizi boş olup olmadığını belirler.|  
 |[CObArray::RemoveAll](#removeall)|Bu dizisinden tüm öğeleri kaldırır.|  
-|[CObArray::RemoveAt](#removeat)|Belirli bir dizinindeki bir öğeyi kaldırır.|  
-|[CObArray::SetAt](#setat)|Belirli bir dizine için değeri ayarlar; dizi büyümeye izin verilmiyor.|  
-|[CObArray::SetAtGrow](#setatgrow)|Belirli bir dizine için değeri ayarlar; dizi gerekirse artar.|  
-|[CObArray::SetSize](#setsize)|Bu dizide dahil edilmek üzere öğe sayısını ayarlar.|  
+|[CObArray::RemoveAt](#removeat)|Belirli bir dizindeki öğeyi kaldırır.|  
+|[CObArray::SetAt](#setat)|Belirtilen dizin için değeri ayarlar; dizi büyümesine izin verilmiyor.|  
+|[CObArray::SetAtGrow](#setatgrow)|Belirtilen dizin için değeri ayarlar; dizi gerekirse büyür.|  
+|[CObArray::SetSize](#setsize)|Bu dizinin içinde yer alması için öğe sayısını ayarlar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -105,27 +105,27 @@ class CObArray : public CObject
 |[CObArray::operator]](#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu nesne dizileri C diziler için benzer ancak dinamik olarak küçültmek ve gerektikçe büyütün.  
+ Bu nesne dizileri için C dizilerine benzer, ancak dinamik olarak daraltmak ve gerektikçe büyütün.  
   
- Dizi dizinleri her zaman 0 konumunda başlatın. Üst sınır düzeltin veya dizi öğeleri geçerli sınır geçmiş eklediğinizde genişletmek izin vermek karar verebilirsiniz. Bazı öğeler null olsa bile bellek üst sınırı için bitişik ayrılır.  
+ Dizi dizinleri her zaman 0 konumunda başlar. Üst sınır düzeltin veya dizi geçerli sınır geçmiş öğeler eklediğinizde, genişletmek izin vermek karar verebilirsiniz. Bazı öğeler null olsa bile, bellek için üst sınır, bitişik ayrılır.  
   
  Win32, boyutu altında bir `CObArray` nesne yalnızca kullanılabilir bellek sınırlıdır.  
   
- Bir C dizi için erişim süresi ile bir `CObArray` dizinli öğe sabit öğesidir ve dizi boyutundan bağımsızdır.  
+ Bir C dizi için erişim zamanı olduğu gibi bir `CObArray` dizinlenmiş öğeye sabittir ve dizi boyutu bağımsızdır.  
   
- `CObArray` ımplement_serıal makrosu seri hale getirme ve alt öğeleri dökme desteklemek için bir araya getirir. Bir dizi varsa `CObject` işaretçileri aşırı yüklenmiş ekleme işleciyle veya ile bir arşivde saklanır `Serialize` her üye işlev `CObject` öğesi buna karşılık, seri hale getirilmiş yanı sıra, dizi dizini.  
+ `CObArray` Serileştirme ve alt öğeleri dökme desteklemek için ımplement_serıal makrosu içerir. Bir dizi varsa `CObject` işaretçiler veya aşırı yüklenmiş bir ekleme operatörü ile birlikte bir arşivden depolandığı `Serialize` üye işlev, her `CObject` öğesi sırasıyla serileştirildiği yanı sıra, dizi dizini.  
   
- Tek bir dökümü gerekiyorsa `CObject` bir dizideki öğeler, derinliğini ayarlamanız gerekir `CDumpContext` nesnesine 1 veya daha büyük.  
+ Tek bir dökümü gerekiyorsa `CObject` bir dizideki öğelerin, derinliğini ayarlamalısınız `CDumpContext` 1 veya daha büyük bir nesneye.  
   
- Zaman bir `CObArray` Nesne silindiğinden veya ne zaman öğeleri kaldırılır, yalnızca `CObject` işaretçileri kaldırılır, nesneleri başvuruyor.  
-  
-> [!NOTE]
->  Bir dizi kullanmadan önce kullanın `SetSize` boyutuna kurmak ve bunun için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, dizinizi için öğe eklemek görüntülenmesine neden olur sık bırakılan ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara.  
-  
- Array sınıfı türetme listesi türetme benzer. Özel amaçlı listesi sınıfı türetme hakkında daha fazla bilgi için bkz: [koleksiyonları](../../mfc/collections.md).  
+ Olduğunda bir `CObArray` nesnesi silindiğinde veya ne zaman öğeleri kaldırılır, yalnızca `CObject` işaretçileri kaldırılır, nesneleri başvuruyor.  
   
 > [!NOTE]
->  Dizi seri hale getirmek istiyorsanız, türetilmiş sınıf uygulamasında ımplement_serıal makrosu kullanmanız gerekir.  
+>  Bir dizi kullanmadan önce kullanmayı `SetSize` boyutuna kurmak ve kendisi için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, diziniz için öğeleri ekleme, oluyor, sık sık yeniden ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçası.  
+  
+ Array sınıfı türetme için liste türetme benzerdir. Özel amaçlı listesi sınıfının türetme hakkında daha fazla bilgi için bkz [koleksiyonları](../../mfc/collections.md).  
+  
+> [!NOTE]
+>  Dizisi seri hale getirmek istiyorsanız, türetilmiş sınıfınızın uygulamasında ımplement_serıal makrosu kullanmanız gerekir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -150,25 +150,25 @@ INT_PTR Add(CObject* newElement);
  Eklenen öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa [SetSize](#setsize) ile kullanılan bir *nGrowBy* 1 sonra ek bellek büyük bir değer ayrılamadı. Ancak, üst sınır tarafından yalnızca 1 artacaktır.  
+ Varsa [SetSize](#setsize) ile kullanılan bir *nGrowBy* değeri 1 ve ardından ek bellek büyük ayrılan. Bununla birlikte, üst sınırı yalnızca 1 artar.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::Add`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::Add`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**INT_PTR ekleyin (bayt** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR ekleyin (bayt** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR ekleyin (DWORD** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR ekleyin (void\***  `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR ekleme (LPCTSTR** `newElement` **); throw (CMemoryException\* );**<br /><br /> **INT_PTR Add(const CString&** `newElement` **);**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR ekleyin (UINT** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR ekleme (WORD** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR ekleyin (LPCTSTR** `newElement` **); throw (CMemoryException\* );**<br /><br /> **INT_PTR Add(const CString&** `newElement` **);**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**INT_PTR ekleyin (UINT** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR ekleyin (WORD** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
   
 ### <a name="example"></a>Örnek  
-  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#75](../../mfc/codesnippet/cpp/cobarray-class_1.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `Add example: A CObArray with 2 elements`  
   
@@ -177,7 +177,7 @@ INT_PTR Add(CObject* newElement);
  `[1] = a CAge at $4468 40`  
   
 ##  <a name="append"></a>  CObArray::Append  
- Başka bir dizinin içeriğini verilen dizi sonuna eklemek için bu üye işlevini çağırın.  
+ Başka bir dizinin içeriğini belirtilen dizinin sonuna eklemek için bu üye işlevini çağırın.  
   
 ```  
 INT_PTR Append(const CObArray& src);
@@ -185,34 +185,34 @@ INT_PTR Append(const CObArray& src);
   
 ### <a name="parameters"></a>Parametreler  
  *src*  
- Kaynak dizisine eklenecek öğe.  
+ Diziye eklenecek öğeleri kaynağı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk eklenmiş öğenin dizini.  
+ Eklenen ilk öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Diziler, aynı türde olmalıdır.  
   
- Gerekirse, `Append` diziye eklenen öğeleri yerleştirmek için ek bellek ayırabilir.  
+ Gerekirse, `Append` diziye eklenen öğeleri uyum sağlamak için ek bellek ayırabilirsiniz.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::Append`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::Append`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**INT_PTR ekleme (const CLongBinary &** *src* **);**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR ekleme (const CByteArray &** *src* **);**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR ekleme (const CDWordArray &** *src* **);**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR ekleme (const CPtrArray &** *src* **);**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR ekleme (const CStringArray &** *src* **);**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR ekleme (const CUIntArray &** *src* **);**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**INT_PTR ekleme (const Cuıntarray &** *src* **);**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR ekleme (const CWordArray &** *src* **);**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#76](../../mfc/codesnippet/cpp/cobarray-class_2.cpp)]  
   
 ##  <a name="copy"></a>  CObArray::Copy  
- Verilen dizi öğeleri aynı türde başka bir dizinin öğeleri üzerine yazmak için bu üye işlevini çağırın.  
+ Belirtilen dizinin öğeleri aynı türde başka bir dizinin öğeleri ile üzerine yazmak için bu üye işlevini çağırın.  
   
 ```  
 void Copy(const CObArray& src);
@@ -220,53 +220,53 @@ void Copy(const CObArray& src);
   
 ### <a name="parameters"></a>Parametreler  
  *src*  
- Kaynak diziye kopyalanacak öğe.  
+ Diziye kopyalanacak öğe kaynağı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Copy` belleği serbest değil; Ancak, gerekirse, `Copy` diziye kopyalanan öğelerin uyum sağlamak için ek bellek ayırabilir.  
+ `Copy` belleği boşaltmak değil; Ancak, gerekirse `Copy` diziye kopyalanan öğelerin uyum sağlamak için ek bellek ayırabilirsiniz.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::Copy`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::Copy`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**Geçersiz kopya (const CLongBinary &** *src* **);**|  
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**Geçersiz kopya (const CDWordArray &** *src* **);**|  
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**Geçersiz kopya (const CPtrArray &** *src* **);**|  
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**Geçersiz kopya (const CStringArray &** *src* **);**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**Geçersiz kopya (const CUIntArray &** *src* **);**|  
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**Geçersiz kopya (const CWordArray &** *src* **);**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void kopyalama (const CByteArray &** *src* **);**|  
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void kopyalama (const CDWordArray &** *src* **);**|  
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void kopyalama (const CPtrArray &** *src* **);**|  
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void kopyalama (const CStringArray &** *src* **);**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**void kopyalama (const Cuıntarray &** *src* **);**|  
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void kopyalama (const CWordArray &** *src* **);**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#77](../../mfc/codesnippet/cpp/cobarray-class_3.cpp)]  
   
 ##  <a name="cobarray"></a>  CObArray::CObArray  
- Boş bir yapıları `CObject` işaretçi dizi.  
+ Boş bir yapıları `CObject` işaretçi dizisi.  
   
 ```  
 CObArray();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dizi bir öğe aynı anda artar.  
+ Diziye bir öğe aynı anda büyür.  
   
- Aşağıdaki tabloda benzer diğer oluşturucular gösterilmektedir `CObArray::CObArray`.  
+ Aşağıdaki tabloda, benzer diğer oluşturucular gösterilmektedir `CObArray::CObArray`.  
   
 |örneği|Oluşturucu|  
 |-----------|-----------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**CLongBinary ();**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**CByteArray ();**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**CDWordArray ();**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**CPtrArray ();**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**CStringArray ();**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**CUIntArray ();**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**Cuıntarray ();**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**CWordArray ();**|  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCollections#78](../../mfc/codesnippet/cpp/cobarray-class_4.cpp)]  
   
 ##  <a name="elementat"></a>  CObArray::ElementAt  
- Dizi öğesi işaretçinin geçici bir başvuru döndürür.  
+ Dizi içinde öğe işaretçisi için geçici bir başvuru döndürür.  
   
 ```  
 CObject*& ElementAt(INT_PTR nIndex);
@@ -274,54 +274,54 @@ CObject*& ElementAt(INT_PTR nIndex);
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Büyük veya 0 değerine eşit bir tamsayı dizini ve tarafından döndürülen değer eşit veya daha az `GetUpperBound`.  
+ Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir `GetUpperBound`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir başvuru bir `CObject` işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Diziler için sol taraftaki atama işleci uygulamak için kullanılır. Bu yalnızca özel dizi işleçler için kullanılması gereken gelişmiş bir işlevi olduğunu unutmayın.  
+ Diziler için sol taraftaki atama işleci uygulamak için kullanılır. Yalnızca özel bir dizi işleçler için kullanılması gereken gelişmiş bir işlevi olduğunu unutmayın.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::ElementAt`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::ElementAt`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**BAYT & ElementAt (INT_PTR** `nIndex` **);**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**BAYT & ElementAt (INT_PTR** `nIndex` **);**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD & ElementAt (INT_PTR** `nIndex` **);**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& ElementAt (INT_PTR** `nIndex` **);**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString & ElementAt (INT_PTR** `nIndex` **);**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT & ElementAt (INT_PTR** `nIndex` **);**|  
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD & ElementAt (INT_PTR** `nIndex` **);**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**UINT & ElementAt (INT_PTR** `nIndex` **);**|  
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**SÖZCÜK & ElementAt (INT_PTR** `nIndex` **);**|  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CObArray::GetSize](#getsize).  
+  Örneğin bakın [CObArray::GetSize](#getsize).  
   
 ##  <a name="freeextra"></a>  CObArray::FreeExtra  
- Dizi büyütülen sırada ayrılmış ek bellek boşaltır.  
+ Dizi büyütmüş sırada ayrılmış ek bellek kazandırır.  
   
 ```  
 void FreeExtra();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev boyutunu veya dizi üst sınırının üzerinde etkisi yoktur.  
+ Bu işlev boyutu veya dizi üst sınırı üzerinde etkisi yoktur.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::FreeExtra`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::FreeExtra`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**void FreeExtra ();**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void FreeExtra ();**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void FreeExtra ();**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void FreeExtra ();**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void FreeExtra ();**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void FreeExtra ();**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**void FreeExtra ();**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void FreeExtra ();**|  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CObArray::GetData](#getdata).  
+  Örneğin bakın [CObArray::GetData](#getdata).  
   
 ##  <a name="getat"></a>  CObArray::GetAt  
- Belirtilen dizindeki dizi öğesi döndürür.  
+ Dizi belirtilen dizindeki öğeyi döndürür.  
   
 ```  
 CObject* GetAt(INT_PTR nIndex) const;  
@@ -329,34 +329,34 @@ CObject* GetAt(INT_PTR nIndex) const;
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Büyük veya 0 değerine eşit bir tamsayı dizini ve tarafından döndürülen değer eşit veya daha az `GetUpperBound`.  
+ Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir `GetUpperBound`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `CObject` Şu anda bu dizinindeki işaretçi öğe.  
+ `CObject` Şu anda bu dizindeki işaretçi öğe.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  Negatif bir değer veya bir değer tarafından döndürülen değeri büyük geçirme `GetUpperBound` içinde başarısız onaylama neden olur.  
+>  Negatif bir değer veya bir değer döndürdüğü değerden geçirme `GetUpperBound` başarısız bir onaylama işlemi neden olur.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::GetAt`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::GetAt`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**BAYT GetAt (INT_PTR** `nIndex` **) const;**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**BAYT GetAt (INT_PTR** `nIndex` **) const;**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD GetAt (INT_PTR** `nIndex` **) const;**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\* GetAt (INT_PTR** `nIndex` **) const;**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString GetAt (INT_PTR** `nIndex` **) const;**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT GetAt (INT_PTR** `nIndex` **) const;**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**UINT GetAt (INT_PTR** `nIndex` **) const;**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD GetAt (INT_PTR** `nIndex` **) const;**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#79](../../mfc/codesnippet/cpp/cobarray-class_5.cpp)]  
   
 ##  <a name="getcount"></a>  CObArray::GetCount  
- Dizi öğe sayısını döndürür.  
+ Dizi öğelerinin sayısını döndürür.  
   
 ```  
 INT_PTR GetCount() const;  
@@ -366,26 +366,26 @@ INT_PTR GetCount() const;
  Dizideki öğelerin sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dizideki öğelerin sayısını almak için bu yöntemi çağırın. Dizinleri sıfır tabanlı olduğundan, 1'den büyük dizin büyük boyutudur.  
+ Dizideki öğelerin sayısını almak için bu yöntemi çağırın. Dizinler sıfır tabanlı olduğundan, boyutu en büyük dizinden daha büyük olan 1 ' dir.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::GetCount`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::GetCount`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**INT_PTR GetCount () const;**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR GetCount () const;**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR GetCount () const;**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR GetCount () const;**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR GetCount () const;**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR GetCount () const;**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**INT_PTR GetCount () const;**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR GetCount () const;**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#80](../../mfc/codesnippet/cpp/cobarray-class_6.cpp)]  
   
 ##  <a name="getdata"></a>  CObArray::GetData  
- Dizideki öğeler doğrudan erişmek için bu üye işlevini kullanın.  
+ Dizideki öğelerin doğrudan erişim elde etmek için bu üye işlevini kullanın.  
   
 ```  
 const CObject** GetData() const;  
@@ -394,88 +394,88 @@ CObject** GetData();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizi için bir işaretçi `CObject` işaretçileri.  
+ Bir işaretçi dizisinin işaretçisi `CObject` işaretçileri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Öğe varsa, `GetData` null değeri döndürür.  
+ Hiçbir öğe varsa `GetData` bir null değer döndürür.  
   
- Dizi öğelerini doğrudan erişim daha hızlı çalışmanıza yardımcı olabilir, ancak çağrılırken dikkatli `GetData`; doğrudan yaptığınız herhangi bir hata dizinizi öğelerini etkiler.  
+ Bir dizinin öğeleri doğrudan erişim daha hızlı çalışmanıza yardımcı olabilir, ancak çağırırken dikkatli `GetData`; doğrudan yaptığınız herhangi bir hata, dizinin öğeleri etkiler.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::GetData`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::GetData`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**const bayt\* GetData () const; BAYT\* GetData ();**|  
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**const DWORD\* GetData const (); DWORD\* GetData ();**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**const bayt\* const; GetData) BAYT\* GetData ();**|  
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**const DWORD\* GetData (const); DWORD\* GetData ();**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**const void\* \* GetData () const; void\* \* GetData ();**|  
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**const CString\* GetData () const; CString\* GetData ();**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**const UINT\* GetData () const; UINT\* GetData ();**|  
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**const WORD\* GetData () const; WORD\* GetData ();**|  
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**const CString\* const; GetData) CString\* GetData ();**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**const UINT\* const; GetData) UINT\* GetData ();**|  
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**const WORD\* const; GetData) WORD\* GetData ();**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#81](../../mfc/codesnippet/cpp/cobarray-class_7.cpp)]  
   
 ##  <a name="getsize"></a>  CObArray::GetSize  
- Dizinin boyutu döndürür.  
+ Dizinin boyutunu döndürür.  
   
 ```  
 INT_PTR GetSize() const;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dizinleri sıfır tabanlı olduğundan, 1'den büyük dizin büyük boyutudur.  
+ Dizinler sıfır tabanlı olduğundan, boyutu en büyük dizinden daha büyük olan 1 ' dir.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::GetSize`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::GetSize`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**INT_PTR GetSize () const;**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR GetSize () const;**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR GetSize () const;**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR GetSize () const;**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR GetSize () const;**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR GetSize () const;**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**INT_PTR GetSize () const;**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR GetSize () const;**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#82](../../mfc/codesnippet/cpp/cobarray-class_8.cpp)]  
   
 ##  <a name="getupperbound"></a>  CObArray::GetUpperBound  
- Bu dizinin geçerli üst sınırının döndürür.  
+ Bu dizinin geçerli üst sınırını döndürür.  
   
 ```  
 INT_PTR GetUpperBound() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Üst sınır (sıfır tabanlı) dizini.  
+ Üst dizinini (sıfır tabanlı) bağlı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dizi dizinleri sıfır tabanlı olduğundan, bu işlev, 1 değerini döndürür. değerinden `GetSize`.  
+ Dizi dizinleri sıfır tabanlı olduğundan, bu işlev, 1 değerini döndürür. kısa `GetSize`.  
   
- Koşul **GetUpperBound ()** = -1 gösterir dizi öğe içeriyor.  
+ Koşul `GetUpperBound( )` = -1, dizi hiç öğe içerdiğini gösterir.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::GetUpperBound`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::GetUpperBound`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**INT_PTR GetUpperBound () const;**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR GetUpperBound () const;**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR GetUpperBound () const;**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR GetUpperBound () const;**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR GetUpperBound () const;**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR GetUpperBound () const;**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**INT_PTR GetUpperBound () const;**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR GetUpperBound () const;**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#83](../../mfc/codesnippet/cpp/cobarray-class_9.cpp)]  
   
 ##  <a name="insertat"></a>  CObArray::InsertAt  
- Bir öğenin (veya başka bir dizinin tüm öğeleri) belirtilen bir dizinde ekler.  
+ Belirtilen dizindeki öğenin (veya başka bir dizideki tüm öğeler) ekler.  
   
 ```  
 void InsertAt(
@@ -494,10 +494,10 @@ void InsertAt(
  Tarafından döndürülen değeri,'den büyük bir tamsayı dizini `GetUpperBound`.  
   
  *newElement*  
- `CObject` Bu dizide yerleştirilecek işaretçi. A *newElement* değerinin **NULL** izin verilir.  
+ `CObject` Bu dizinin içinde yer yönelik işaretçi. A *newElement* NULL değerine izin verilir.  
   
  *nCount*  
- Bu öğe olmalıdır sayısı (varsayılan 1) ekledi.  
+ Bu öğe olmalıdır sayısı (varsayılan 1) eklenir.  
   
  *nStartIndex*  
  Tarafından döndürülen değeri,'den büyük bir tamsayı dizini `GetUpperBound`.  
@@ -506,29 +506,29 @@ void InsertAt(
  Bu diziye eklenecek öğeleri içeren başka bir dizi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk sürümü `InsertAt` bir öğenin (veya birden çok kopya, bir öğenin) bir dizi belirtilen dizinde ekler. İşlem sırasında yapılandırmasına kayar (dizini artırılarak) ve bu dizin mevcut öğede üzerindeki tüm öğeleri yukarı kaydırır.  
+ Ürününün ilk sürümünü `InsertAt` belirli bir dizinden bir dizideki bir öğe (veya birden çok kopyasını bir öğe) ekler. İşlem sırasında yukarı kaydırır (dizin artırılarak) ve bu dizin mevcut öğe üzerindeki tüm öğeleri yukarı kaydırır.  
   
- İkinci Sürüm tüm öğeleri diğerinden ekler `CObArray` başlayarak koleksiyon *nStartIndex* konumu.  
+ Dosyanın ikinci sürümü tüm öğeleri bir diğerinden ekler `CObArray` başlayarak koleksiyon *nStartIndex* konumu.  
   
- `SetAt` İşlevi, buna karşılık, bir belirtilen dizi öğesi değiştirir ve herhangi bir öğe shift değil.  
+ `SetAt` İşlevi, buna karşılık, bir belirtilen dizi öğesi değiştirir ve tüm öğeleri kaydırmak değil.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::InsertAt`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::InsertAt`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**void InsertAt (INT_PTR** `nIndex` **, bayt** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **void InsertAt (INT_PTR** `nStartIndex` **, CLongBinary\***  `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void InsertAt (INT_PTR** `nIndex` **, bayt** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **void InsertAt (INT_PTR** `nStartIndex` **, CByteArray\***  `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void InsertAt (INT_PTR** `nIndex` **, DWORD** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **void InsertAt (INT_PTR** `nStartIndex` **, CDWordArray\***  `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void InsertAt (INT_PTR** `nIndex` **, void\***  `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **void InsertAt (INT_PTR** `nStartIndex` **, CPtrArray\***  `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void InsertAt (INT_PTR** `nIndex` **, LPCTSTR** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **void InsertAt (INT_PTR** `nStartIndex` **, CStringArray\***  `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void InsertAt (INT_PTR** `nIndex` **, UINT** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **void InsertAt (INT_PTR** `nStartIndex` **, CUIntArray\***  `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**void InsertAt (INT_PTR** `nIndex` **, UINT** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **void InsertAt (INT_PTR** `nStartIndex` **, Cuıntarray\***  `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void InsertAt (INT_PTR** `nIndex` **, WORD** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **void InsertAt (INT_PTR** `nStartIndex` **, CWordArray\***  `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|  
   
 ### <a name="example"></a>Örnek  
-  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#84](../../mfc/codesnippet/cpp/cobarray-class_10.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `InsertAt example: A CObArray with 3 elements`  
   
@@ -546,10 +546,10 @@ BOOL IsEmpty() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizi boş ise sıfır olmayan; Aksi takdirde 0.  
+ Dizi boş ise sıfır olmayan; Aksi durumda 0.  
   
 ##  <a name="operator_at"></a>  CObArray::operator]  
- Bu alt simge işleçlerini için uygun bir alternatif olan `SetAt` ve `GetAt` işlevleri.  
+ Bu alt simge işleçlerini için kullanışlı bir alternatif olan `SetAt` ve `GetAt` işlevleri.  
   
 ```  
 CObject*& operator[](int_ptr nindex);  
@@ -557,56 +557,56 @@ CObject* operator[](int_ptr nindex) const;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk işleci adlı olmayan diziler için **const**, sağ (r) veya Atama ifadesinin sol (l-değeri) üzerinde kullanılabilir. İkinci olarak adlandırılan için **const** dizileri, yalnızca sağ tarafta kullanılır.  
+ İlk işleç değil diziler için çağrılır **const**, sağ (r) veya Atama ifadesinin solunda (lvalue) üzerinde kullanılabilir. İkinci adında için **const** diziler, yalnızca sağ tarafta kullanılır.  
   
- Alt simge (ya da sol veya sağ tarafında Atama ifadesinin) sınırların dışında olup olmadığını kitaplığının hata ayıklama sürümü onaylar.  
+ Kitaplığı hata ayıklama sürümünü (veya sol veya sağ tarafında bir atama ifadesi) alt simge sınırların dışında olup olmadığını onaylar.  
   
- Aşağıdaki tabloda benzer diğer işleçleri gösterilmektedir **CObArray::operator []**.  
+ Benzer diğer işleçleri aşağıdaki tabloda gösterilmektedir `CObArray::operator []`.  
   
 |örneği|İşleç|  
 |-----------|--------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**BAYT & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **BYTE [] işleci (int_ptr** `nindex`  **\) const;**|  
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **DWORD [] işleci (int_ptr** `nindex`  **\) const;**|  
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& [] işleci (int_ptr** `nindex`  **\);**<br /><br /> **void\* [] işleci (int_ptr** `nindex`  **\) const;**|  
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **CString [] işleci (int_ptr** `nindex`  **\) const;**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **UINT [] işleci (int_ptr** `nindex`  **\) const;**|  
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **WORD [] işleci (int_ptr** `nindex`  **\) const;**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**BAYT & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **BAYT [] işleci (int_ptr** `nindex`  **\) const;**|  
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **DWORD operator [] (int_ptr** `nindex`  **\) const;**|  
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& operator [] (int_ptr** `nindex`  **\);**<br /><br /> **void\* operator [] (int_ptr** `nindex`  **\) const;**|  
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **CString operator [] (int_ptr** `nindex`  **\) const;**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**UINT & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **UINT operator [] (int_ptr** `nindex`  **\) const;**|  
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**SÖZCÜK & işleci [] (int_ptr** `nindex`  **\);**<br /><br /> **WORD operator [] (int_ptr** `nindex`  **\) const;**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#88](../../mfc/codesnippet/cpp/cobarray-class_11.cpp)]  
   
 ##  <a name="removeall"></a>  CObArray::RemoveAll  
- Bu dizisinden tüm işaretçiler kaldırır, ancak gerçekte silmediği `CObject` nesneleri.  
+ Bu dizisinden tüm işaretçiler kaldırır ancak aslında silmediği `CObject` nesneleri.  
   
 ```  
 void RemoveAll();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dizi zaten boşsa, işlev hala çalışmaktadır.  
+ Dizi zaten boşsa, işlev hala çalışır.  
   
- `RemoveAll` İşlevi işaretçisi depolama için kullanılan tüm belleği serbest bırakır.  
+ `RemoveAll` İşlevi işaretçisi depolaması için kullanılan tüm belleği serbest bırakır.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::RemoveAll`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::RemoveAll`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**void RemoveAll( );**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void RemoveAll( );**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void RemoveAll( );**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void RemoveAll( );**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void RemoveAll( );**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void RemoveAll( );**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**void RemoveAll( );**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void RemoveAll( );**|  
   
 ### <a name="example"></a>Örnek  
- Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#85](../../mfc/codesnippet/cpp/cobarray-class_12.cpp)]  
   
 ##  <a name="removeat"></a>  CObArray::RemoveAt  
- Dizideki belirli bir dizinden başlayarak bir veya daha fazla öğeleri kaldırır.  
+ Bir dizideki belirli bir dizinden başlayarak bir veya daha fazla öğeleri kaldırır.  
   
 ```  
 void RemoveAt(
@@ -616,42 +616,42 @@ void RemoveAt(
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Büyük veya 0 değerine eşit bir tamsayı dizini ve tarafından döndürülen değer eşit veya daha az `GetUpperBound`.  
+ Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir `GetUpperBound`.  
   
  *nCount*  
  Kaldırılacak öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlem sırasında kaldırılan öğe yukarıdaki tüm öğeleri aşağı kaydırır. Bu üst dizisi bağlı ancak belleği serbest değil azaltır.  
+ İşlem sırasında kaldırılan öğeyi/öğeleri yukarıdaki tüm öğeleri aşağı kaydırır. Bu üst dizisi bağlı, ancak bellek serbest değil azaltır.  
   
- Dizideki kaldırma noktası yukarıda yer alan çok daha fazla öğe kaldırmayı deneyin, hata ayıklama sürümü kitaplığının onaylar.  
+ Dizideki kaldırma noktası yukarıda yer alan çok daha fazla öğe ekleyip denerseniz, ardından kitaplığı hata ayıklama sürümünü onaylar.  
   
- `RemoveAt` İşlev kaldırır `CObject` dizi, ancak işaretçi nesnenin kendisini silmez.  
+ `RemoveAt` İşlev kaldırır `CObject` işaretçisinden bir dizi, ancak nesnenin kendisi silinmez.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::RemoveAt`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::RemoveAt`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**void RemoveAt (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void RemoveAt (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void RemoveAt (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void RemoveAt (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void RemoveAt (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void RemoveAt (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**void RemoveAt (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void RemoveAt (INT_PTR** `nIndex` **, INT_PTR** *nCount* **= 1);**|  
   
 ### <a name="example"></a>Örnek  
-  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#112](../../mfc/codesnippet/cpp/cobarray-class_13.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `RemoveAt example: A CObArray with 1 elements`  
   
  `[0] = a CAge at $4606 40`  
   
 ##  <a name="setat"></a>  CObArray::SetAt  
- Dizi öğesi belirtilen dizindeki ayarlar.  
+ Belirtilen dizindeki dizi öğesini ayarlar.  
   
 ```  
 void SetAt(
@@ -661,33 +661,33 @@ void SetAt(
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Büyük veya 0 değerine eşit bir tamsayı dizini ve tarafından döndürülen değer eşit veya daha az `GetUpperBound`.  
+ Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir `GetUpperBound`.  
   
  *newElement*  
- Bu dizide eklenecek nesne işaretçisi. A **NULL** değerine izin verilir.  
+ Bu dizinin içinde eklenecek nesne işaretçisi. NULL değerine izin verilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SetAt` dizi büyümesine neden. Kullanım `SetAtGrow` otomatik olarak büyümeye dizi istiyorsanız.  
+ `SetAt` dizi büyümesine neden. Kullanım `SetAtGrow` otomatik olarak büyütmeyi dizi istiyorsanız.  
   
- Dizin değeri geçerli bir konum dizideki temsil ettiğini emin olmalısınız. Sınırların dışında olması durumunda kitaplığının hata ayıklama sürümü onaylar.  
+ Dizin değerinizi dizisindeki geçerli bir konum temsil eder emin olmanız gerekir. Sınırların dışında ise, ardından kitaplığı hata ayıklama sürümünü onaylar.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::SetAt`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::SetAt`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**void SetAt (INT_PTR** `nIndex` **, bayt** `newElement` **);**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetAt (INT_PTR** `nIndex` **, bayt** `newElement` **);**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetAt (INT_PTR** `nIndex` **, DWORD** `newElement` **);**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAt (INT_PTR** `nIndex` **, void\***  `newElement` **);**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetAt (INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetAt (INT_PTR** `nIndex` **, UINT** `newElement` **);**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**void SetAt (INT_PTR** `nIndex` **, UINT** `newElement` **);**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAt (INT_PTR** `nIndex` **, WORD** `newElement` **);**|  
   
 ### <a name="example"></a>Örnek  
-  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#86](../../mfc/codesnippet/cpp/cobarray-class_14.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `SetAt example: A CObArray with 2 elements`  
   
@@ -696,7 +696,7 @@ void SetAt(
  `[1] = a CAge at $47A0 40`  
   
 ##  <a name="setatgrow"></a>  CObArray::SetAtGrow  
- Dizi öğesi belirtilen dizindeki ayarlar.  
+ Belirtilen dizindeki dizi öğesini ayarlar.  
   
 ```  
 void SetAtGrow(
@@ -706,31 +706,31 @@ void SetAtGrow(
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Büyük veya 0 değerine eşit bir tamsayı dizini.  
+ Büyük veya 0'a eşit bir tamsayı dizini.  
   
  *newElement*  
- Bu diziye eklenecek nesne işaretçisi. A **NULL** değerine izin verilir.  
+ Bu diziye eklenecek nesne işaretçisi. NULL değerine izin verilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Gerekirse, dizi büyür (diğer bir deyişle, üst sınır yeni öğe uyum sağlayacak şekilde ayarlanır).  
+ Gerekirse, dizi otomatik olarak artar (diğer bir deyişle, üst sınırı yeni öğeye uyum sağlamak için ayarlanır).  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::SetAtGrow`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::SetAtGrow`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**void SetAtGrow (INT_PTR** `nIndex` **, bayt** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetAtGrow (INT_PTR** `nIndex` **, bayt** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetAtGrow (INT_PTR** `nIndex` **, DWORD** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAtGrow (INT_PTR** `nIndex` **, void\***  `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetAtGrow (INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetAtGrow (INT_PTR** `nIndex` **, UINT** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**void SetAtGrow (INT_PTR** `nIndex` **, UINT** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAtGrow (INT_PTR** `nIndex` **, WORD** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|  
   
 ### <a name="example"></a>Örnek  
-  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) listesini `CAge` tüm koleksiyon örneklerde kullanılan bir sınıftır.  
+  Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listesi için `CAge` tüm koleksiyon örneklerde kullanılan sınıf.  
   
  [!code-cpp[NVC_MFCCollections#87](../../mfc/codesnippet/cpp/cobarray-class_15.cpp)]  
   
- Bu program sonuçlarından aşağıdaki gibidir:  
+ Bu program sonuçları aşağıdaki gibidir:  
   
  `SetAtGrow example: A CObArray with 4 elements`  
   
@@ -743,7 +743,7 @@ void SetAtGrow(
  `[3] = a CAge at $4840 65`  
   
 ##  <a name="setsize"></a>  CObArray::SetSize  
- Boş veya varolan bir dizide boyutunu belirler; Gerekirse, bellek ayırır.  
+ Boş veya varolan bir dizinin boyutunu belirler; Gerekirse, bellek ayırır.  
   
 ```  
 void SetSize(
@@ -753,37 +753,37 @@ void SetSize(
   
 ### <a name="parameters"></a>Parametreler  
  *nNewSize*  
- Yeni dizi boyutu (öğelerin sayısı). Büyük veya 0 değerine eşit olmalıdır.  
+ Yeni dizi boyutu (öğe sayısı). Büyük veya 0'a eşit olmalıdır.  
   
  *nGrowBy*  
- Öğe yuva boyutu artışı gerekliyse ayırmak için minimum sayısı.  
+ Öğe yuvaları boyutu artışı gerekliyse ayrılacak en küçük sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeni boyutu eski boyutundan daha küçükse, dizi kesilir ve tüm kullanılmayan belleği serbest bırakılır. Verimlilik için arama `SetSize` kullanmadan önce dizinin boyutunu ayarlamak için. Bu yeniden ayırın ve dizi bir öğe eklendiğinde kopyalamak için gereken önler.  
+ Yeni boyut eski boyuttan daha küçükse, dizi kesilmiş ve tüm kullanılmayan belleği serbest kalır. Verimlilik için çağrı `SetSize` kullanmadan önce dizinin boyutunu ayarlamak için. Bu yeniden ayırın ve her zaman bir öğe eklendiğinde dizisine kopyalamak için gereken engeller.  
   
- *NGrowBy* parametre dizisi artan sırada iç bellek ayırma etkiler. Kullanımı hiçbir zaman tarafından bildirilen dizi boyutu etkiler `GetSize` ve `GetUpperBound`.  
+ *NGrowBy* parametre dizi artan sırada iç bellek ayırma etkiler. Kullanımı hiçbir zaman tarafından raporlandığı şekilde dizi boyutu etkiler `GetSize` ve `GetUpperBound`.  
   
- Dizinin boyutunu büyümüştür varsa, tüm yeni ayrılmış **CObject \***  işaretçileri NULL olarak ayarlanır.  
+ Dizinin boyutunu büyüdü, tüm yeni ayrılan **CObject \***  işaretçisi, NULL olarak ayarlanır.  
   
- Aşağıdaki tabloda, benzer işlevler diğer üye gösterilmektedir `CObArray::SetSize`.  
+ Aşağıdaki tablo diğer üye benzer işlevleri gösterir `CObArray::SetSize`.  
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CLongBinary](../../mfc/reference/cbytearray-class.md)|**void SetSize (INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1);**<br /><br /> **throw (CMemoryException\* );**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetSize (INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetSize (INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetSize (INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetSize (INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1);**<br /><br /> **throw (CMemoryException\* );**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetSize (INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1);**<br /><br /> **throw (CMemoryException\* );**|  
+|[Cuıntarray](../../mfc/reference/cuintarray-class.md)|**void SetSize (INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1);**<br /><br /> **throw (CMemoryException\* );**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetSize (INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1);**<br /><br /> **throw (CMemoryException\* );**|  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CObArray::GetData](#getdata).  
+  Örneğin bakın [CObArray::GetData](#getdata).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CStringArray sınıfı](../../mfc/reference/cstringarray-class.md)   
  [CPtrArray sınıfı](../../mfc/reference/cptrarray-class.md)   
- [CLongBinary sınıfı](../../mfc/reference/cbytearray-class.md)   
+ [CByteArray sınıfı](../../mfc/reference/cbytearray-class.md)   
  [CWordArray sınıfı](../../mfc/reference/cwordarray-class.md)   
  [CDWordArray Sınıfı](../../mfc/reference/cdwordarray-class.md)

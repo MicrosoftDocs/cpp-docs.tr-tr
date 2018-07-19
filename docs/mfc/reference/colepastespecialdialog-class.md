@@ -38,15 +38,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1be5cdc05ab387000828ce6424aed1fcc253d6c2
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 42f4a45dc2b49b784f74175203e892c253ea1f5e
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039173"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851439"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog sınıfı
-OLE Özel Yapıştır iletişim kutusu için kullanılır.  
+OLE Paste Special iletişim kutusu için kullanıldı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -60,34 +60,34 @@ class COlePasteSpecialDialog : public COleDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COlePasteSpecialDialog::COlePasteSpecialDialog](#colepastespecialdialog)|Oluşturan bir `COlePasteSpecialDialog` nesnesi.|  
+|[COlePasteSpecialDialog::COlePasteSpecialDialog](#colepastespecialdialog)|Oluşturur bir `COlePasteSpecialDialog` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[COlePasteSpecialDialog::AddFormat](#addformat)|Özel biçimler uygulamanızı yapıştırabilirsiniz biçimleri listesine ekler.|  
-|[COlePasteSpecialDialog::AddLinkEntry](#addlinkentry)|Yeni bir giriş desteklenen Pano biçimleri listesine ekler.|  
-|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|Ekler **CF_BITMAP**, **CF_DIB**, **CF_METAFILEPICT**ve isteğe bağlı olarak **CF_LINKSOURCE** biçimlerinin listesi için uygulamanızın yapıştırabilirsiniz .|  
-|[COlePasteSpecialDialog::CreateItem](#createitem)|Öğe kapsayıcı belgenin belirtilen biçimi kullanarak oluşturur.|  
-|[COlePasteSpecialDialog::DoModal](#domodal)|OLE Özel Yapıştır iletişim kutusunu görüntüler.|  
-|[COlePasteSpecialDialog::GetDrawAspect](#getdrawaspect)|Veya öğeyi simge olarak çizileceğini belirtir.|  
-|[COlePasteSpecialDialog::GetIconicMetafile](#geticonicmetafile)|Bu öğe simge formla ilişkili meta dosyası için bir tanıtıcı alır.|  
-|[COlePasteSpecialDialog::GetPasteIndex](#getpasteindex)|Kullanıcı tarafından seçilen kullanılabilir yapıştırma seçenekleri dizinini alır.|  
+|[COlePasteSpecialDialog::AddLinkEntry](#addlinkentry)|Yeni bir giriş, desteklenen Pano biçimlerini listesine ekler.|  
+|[COlePasteSpecialDialog::AddStandardFormats](#addstandardformats)|CF_BITMAP, CF_DIB, CF_METAFILEPICT ekler ve isteğe bağlı olarak, uygulamanızı biçimlerde listesine CF_LINKSOURCE yapıştırabilirsiniz.|  
+|[COlePasteSpecialDialog::CreateItem](#createitem)|Öğesi belirtilen biçimi kullanarak kapsayıcı belgede oluşturur.|  
+|[COlePasteSpecialDialog::DoModal](#domodal)|OLE Paste Special iletişim kutusu görüntüler.|  
+|[COlePasteSpecialDialog::GetDrawAspect](#getdrawaspect)|Öğeyi bir simge olarak veya çizmek bu seçeneği bildirir.|  
+|[COlePasteSpecialDialog::GetIconicMetafile](#geticonicmetafile)|Bu öğenin icon formla ilişkili meta dosyası için bir tanıtıcı alır.|  
+|[COlePasteSpecialDialog::GetPasteIndex](#getpasteindex)|Kullanıcı tarafından seçilen kullanılabilir yapıştırma seçenekleri indisini alır.|  
 |[COlePasteSpecialDialog::GetSelectionType](#getselectiontype)|Seçilen seçim türünü alır.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COlePasteSpecialDialog::m_ps](#m_ps)|Türü yapısını **OLEUIPASTESPECIAL** iletişim kutusunun işlevi denetler.|  
+|[COlePasteSpecialDialog::m_ps](#m_ps)|İletişim kutusunun denetimlerinin OLEUIPASTESPECIAL türünden bir yapıyı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıfın bir nesnesi oluşturma `COlePasteSpecialDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COlePasteSpecialDialog` nesne oluşturulan, kullanabileceğiniz [AddFormat](#addformat) ve [AddStandardFormats](#addstandardformats) Pano biçimleri Ekle iletişim kutusu için üye işlevleri. Aynı zamanda [m_ps](#m_ps) yapısı değerleri veya iletişim kutusu denetimleri durumlarını başlatılamadı. `m_ps` Yapısıdır türü **OLEUIPASTESPECIAL**.  
+ Sınıfın bir nesnesi oluşturma `COlePasteSpecialDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COlePasteSpecialDialog` nesne oluşturulur, kullanabileceğiniz [AddFormat](#addformat) ve [AddStandardFormats](#addstandardformats) Pano biçimleri ekleme iletişim kutusuna üye işlevleri. Ayrıca [m_ps](#m_ps) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_ps` OLEUIPASTESPECIAL türünü yapısıdır.  
   
- Daha fazla bilgi için bkz: [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) Windows SDK'sındaki yapısı.  
   
- OLE özel iletişim kutuları hakkında daha fazla bilgi için bkz: [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
+ Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -108,7 +108,7 @@ class COlePasteSpecialDialog : public COleDialog
  **Başlık:** afxodlgs.h  
   
 ##  <a name="addformat"></a>  COlePasteSpecialDialog::AddFormat  
- Uygulamanızı bir Özel Yapıştır işleminde destekleyebilir biçimlerinin listesini yeni biçimleri eklemek için bu işlevini çağırın.  
+ Uygulamanızı bir Özel Yapıştır işlemi destekleyebilir biçimlerinin listesini yeni biçimleri eklemek için bu işlevi çağırın.  
   
 ```  
 void AddFormat(
@@ -128,41 +128,41 @@ void AddFormat(
   
 ### <a name="parameters"></a>Parametreler  
  *FMT*  
- Eklemek için veri türü referansı.  
+ Başvuru eklemek için veri türü.  
   
  *lpszFormat*  
- Kullanıcı biçimine açıklayan dize.  
+ Kullanıcıya biçimini tanımlayan bir dize.  
   
  *lpszResult*  
  Bu biçim iletişim kutusunda seçilirse sonucu açıklayan dize.  
   
  *bayrakları*  
- Farklı bağlama ve katıştırma seçeneklerini Bu biçim için kullanılabilir. Bu bayrak bir veya daha fazla farklı değerlerin Bitsel bir birleşimi olan **OLEUIPASTEFLAG** numaralandırılmış türü.  
+ Farklı bağlama ve ekleme seçenekleri için bu biçimi kullanılabilir. Bu bayrak bit düzeyinde birinin oluşur veya daha fazla farklı değerler OLEUIPASTEFLAG listelenmiş türü.  
   
  *cf*  
  Eklemek için Pano biçimi.  
   
  *ortam türü*  
- Bu biçimde kullanılabilen medya türleri. Bir veya daha fazla değerlerin Bitsel bir birleşimi budur **ortam türü** numaralandırılmış türü.  
+ Bu biçimde kullanılabilir medya türü. Bu karşılaştırmaya bir veya daha fazla ortam türü değerleri listelenmiş türü.  
   
  *nFormatID*  
- Bu biçim tanımlayan dize kimliği. Bu dize bir '\n' karakteriyle ayrılmış iki ayrı dizeleri biçimidir. İlk olarak aktarılabilecek aynı dizedir *lpstrFormat* parametresi, ikincisi ise aynı *lpstrResult* parametresi.  
+ Bu biçim tanımlayan dize kimliği. Bu dize bir '\n' karakteriyle ayrılmış iki ayrı dizeleri biçimidir. İlk olarak geçirilir aynı dizedir *lpstrFormat* parametre ve ikinci ile aynıdır *lpstrResult* parametresi.  
   
  *bEnableIcon*  
  Bu biçim liste kutusunda seçildiğinde simge olarak görüntüle onay kutusunun etkinleştirilip etkinleştirilmediğini belirleyen bayrak.  
   
  *bLink*  
- Bu biçim liste kutusunda seçildiğinde Bağlantı Yapıştır radyo düğmesi etkin olup olmadığını belirleyen bayrak.  
+ Bu biçim liste kutusunda seçildiğinde Yapıştır radyo düğmesini etkinleştirilip etkinleştirilmediğini belirleyen bayrak.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev ya da standart biçimleri gibi eklemek için çağrılabilir **CF_TEXT** veya **CF_TIFF** ya da uygulamanızı sistemle kayıtlı olan özel biçimleri. Uygulamanıza veri nesneleri yapıştırma hakkında daha fazla bilgi için bkz: [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).  
+ Bu işlev, standart biçim CF_TEXT veya CF_TIFF gibi veya özel biçimlerini uygulamanızı sistemi ile kayıtlı olan eklemek için çağrılabilir. Uygulamanıza veri nesnelerini yapıştırma hakkında daha fazla bilgi için bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- Daha fazla bilgi için bkz: [ortam türü](http://msdn.microsoft.com/library/windows/desktop/ms691227) numaralandırma türü ve [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [ortam türü](http://msdn.microsoft.com/library/windows/desktop/ms691227) numaralandırma türü ve [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki yapısı.  
   
- Daha fazla bilgi için bkz: [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) numaralandırılmış Windows SDK'sındaki türü.  
+ Daha fazla bilgi için [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) listelenmiş Windows SDK'sındaki türü.  
   
 ##  <a name="addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry  
- Yeni bir giriş desteklenen Pano biçimleri listesine ekler.  
+ Yeni bir giriş, desteklenen Pano biçimlerini listesine ekler.  
   
 ```  
 OLEUIPASTEFLAG AddLinkEntry(UINT cf);
@@ -173,10 +173,10 @@ OLEUIPASTEFLAG AddLinkEntry(UINT cf);
  Eklemek için Pano biçimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) yeni bağlantı giriş bilgilerini içeren yapısı.  
+ Bir [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) yeni bağlantı girdinin bilgilerini içeren yapısı.  
   
 ##  <a name="addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats  
- Uygulamanızı bir Özel Yapıştır işleminde destekleyebilir biçimlerinin listesini aşağıdaki Pano biçimlerini eklemek için bu işlevini çağırın:  
+ Uygulamanızı bir Özel Yapıştır işlemi destekleyebilir biçimlerinin listesini aşağıdaki Pano biçimlerini eklemek için bu işlevi çağırın:  
   
 ```  
 void AddStandardFormats(BOOL bEnableLink = TRUE);
@@ -184,24 +184,24 @@ void AddStandardFormats(BOOL bEnableLink = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  *bEnableLink*  
- Eklenip eklenmeyeceğini belirleyen bayrak `CF_LINKSOURCE` biçimlerinin listesi için uygulamanızın yapıştırabilirsiniz.  
+ Uygulamanızı CF_LINKSOURCE biçimlerde listesine eklemek etkinleştirilip etkinleştirilmeyeceğini belirleyen bayrak yapıştırabilirsiniz.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-- **CF_BITMAP**  
+- CF_BITMAP  
   
-- **CF_DIB**  
+- CF_DIB  
   
-- **CF_METAFILEPICT**  
+- CF_METAFILEPICT  
   
 - **"Katıştırılmış nesne"**  
   
--   (isteğe bağlı) **"Bağlantı kaynak"**  
+-   (isteğe bağlı) **"Kaynak bağlantı"**  
   
- Bu biçimler katıştırma ve bağlama desteklemek için kullanılır.  
+ Bu biçimler, bağlama ve katıştırma desteklemek için kullanılır.  
   
 ##  <a name="colepastespecialdialog"></a>  COlePasteSpecialDialog::COlePasteSpecialDialog  
- Oluşturan bir `COlePasteSpecialDialog` nesnesi.  
+ Oluşturur bir `COlePasteSpecialDialog` nesne.  
   
 ```  
 COlePasteSpecialDialog(
@@ -211,30 +211,30 @@ COlePasteSpecialDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *dwFlags*  
- Bit düzeyinde OR işleci kullanılarak birleştirilen aşağıdaki bayraklar herhangi bir sayıda oluşturma bayrağı içerir:  
+ *CertOpenStore*  
+ Oluşturma bayrak bit düzeyinde OR işleci kullanılarak birleştirilen aşağıdaki bayrakları herhangi bir sayıda içerir:  
   
-- `PSF_SELECTPASTE` İletişim kutusu çağrıldığında, Yapıştır radyo düğmesi'nin başlangıçta kontrol edileceği belirtir. İle birlikte kullanılamaz `PSF_SELECTPASTELINK`. Bu varsayılandır.  
+- Yapıştır radyo düğmesini olacak PSF_SELECTPASTE belirtir, başlangıçta iletişim kutusunu ne zaman çağrıldığını işaretli. PSF_SELECTPASTELINK ile birlikte kullanılamaz. Bu varsayılandır.  
   
-- `PSF_SELECTPASTELINK` İletişim kutusu ne zaman çağrıldığını radyo düğmesi olacaktır Yapıştır başlangıçta işaretli belirtir. İle birlikte kullanılamaz `PSF_SELECTPASTE`.  
+- Yapıştır radyo düğmesini olacak PSF_SELECTPASTELINK belirtir, başlangıçta iletişim kutusunu ne zaman çağrıldığını işaretli. PSF_SELECTPASTE ile birlikte kullanılamaz.  
   
-- `PSF_CHECKDISPLAYASICON` İletişim kutusu çağrıldığında, simge olarak görüntüle onay kutusunun'in başlangıçta kontrol edileceği belirtir.  
+- Simge olarak görüntüle onay kutusunun olacak PSF_CHECKDISPLAYASICON belirtir, başlangıçta iletişim kutusunu ne zaman çağrıldığını işaretli.  
   
-- `PSF_SHOWHELP` İletişim kutusu çağrıldığında Yardım düğmesi görüntülenir belirtir.  
+- PSF_SHOWHELP iletişim kutusu çağrıldığında Yardım düğmesini gösterileceğini belirtir.  
   
  *pDataObject*  
- İşaret [COleDataObject](../../mfc/reference/coledataobject-class.md) yapıştırma. Bu değer ise **NULL**, alır `COleDataObject` panodan.  
+ İşaret [COleDataObject](../../mfc/reference/coledataobject-class.md) yapıştırma. Bu değer NULL ise, bunu alır `COleDataObject` panodan.  
   
  *pParentWnd*  
- İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim kutusunun üst pencere ana uygulama penceresine ayarlanır.  
+ Üst veya sahibi pencere nesnesi için işaret (tür `CWnd`) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim kutusunun üst pencere ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca oluşturan bir `COlePasteSpecialDialog` nesnesi. İletişim kutusunu görüntülemek için arama [DoModal](#domodal) işlevi.  
+ Bu işlev yalnızca oluşturan bir `COlePasteSpecialDialog` nesne. İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal) işlevi.  
   
- Daha fazla bilgi için bkz: [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) numaralandırılmış Windows SDK'sındaki türü.  
+ Daha fazla bilgi için [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) listelenmiş Windows SDK'sındaki türü.  
   
 ##  <a name="createitem"></a>  COlePasteSpecialDialog::CreateItem  
- Özel Yapıştır iletişim kutusunda seçildi yeni öğesi oluşturur.  
+ Paste Special iletişim kutusunda seçilen adla yeni bir öğe oluşturur.  
   
 ```  
 BOOL CreateItem(COleClientItem* pNewItem);
@@ -242,16 +242,16 @@ BOOL CreateItem(COleClientItem* pNewItem);
   
 ### <a name="parameters"></a>Parametreler  
  *pNewItem*  
- İşaret eden bir `COleClientItem` örneği. Olamaz **NULL**.  
+ İşaret eden bir `COleClientItem` örneği. NULL olamaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğe başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
+ Öğesi başarıyla oluşturuldu olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca sonra çağrılmalıdır [DoModal](#domodal) döndürür **IDOK**.  
+ Bu işlev yalnızca sonra çağrılmalıdır [DoModal](#domodal) IDOK döndürür.  
   
 ##  <a name="domodal"></a>  COlePasteSpecialDialog::DoModal  
- OLE Özel Yapıştır iletişim kutusunu görüntüler.  
+ OLE Paste Special iletişim kutusu görüntüler.  
   
 ```  
 virtual INT_PTR DoModal();
@@ -260,71 +260,71 @@ virtual INT_PTR DoModal();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tamamlanma durumu iletişim kutusu için. Aşağıdaki değerlerden biri:  
   
-- **IDOK** iletişim kutusu başarıyla görüntüleniyorsa.  
+- İletişim kutusu başarıyla görüntülendiyse IDOK.  
   
-- **IDCANCEL** kullanıcı iletişim kutusunu iptal ederseniz.  
+- Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.  
   
-- **IDABORT** durumunda bir hata oluştu. Varsa **IDABORT** olan döndürülen arama `COleDialog::GetLastError` oluştu hata türü hakkında daha fazla bilgi almak için üye işlevi. Olası hatalar listesi için bkz: [OleUIPasteSpecial](http://msdn.microsoft.com/library/windows/desktop/ms694512) Windows SDK'sındaki işlevi.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIPasteSpecial](http://msdn.microsoft.com/library/windows/desktop/ms694512) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üyeleri ayarlayarak çeşitli iletişim kutusu denetimleri başlatmak istiyorsanız [m_ps](#m_ps) yapısı, bu çağırmadan önce yapmanız gerektiğini `DoModal`, ancak iletişim nesnesi oluşturulur.  
+ Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_ps](#m_ps) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
   
- Varsa `DoModal` döndürür **IDOK**, diğer üye ayarları veya kullanıcı tarafından bilgi giriş iletişim kutusuna almak için işlevleri çağırabilir.  
+ Varsa `DoModal` döndürür IDOK, diğer üye işlevleri, kullanıcı giriş bilgileri ve Ayarları iletişim kutusuna alınacak çağırabilirsiniz.  
   
 ##  <a name="getdrawaspect"></a>  COlePasteSpecialDialog::GetDrawAspect  
- Seçilen öğe bir simge olarak görüntülemek kullanıcı seçerseniz belirler.  
+ Simge olarak seçilen öğeyi görüntülemek bir kullanıcı seçerseniz belirler.  
   
 ```  
 DVASPECT GetDrawAspect() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Nesneyi işlemek için gerekli yöntemi.  
+ Nesneyi işlemek için gereken yöntem.  
   
-- `DVASPECT_CONTENT` İletişim kutusu kapatıldığında simge olarak görüntüle onay kutusunun işaretli değil, döndürdü.  
+- Simge olarak görüntüle onay kutusunun olmadıysa DVASPECT_ICON döndürülen iletişim kutusunu ne zaman sonlandırıldı teslim.  
   
-- `DVASPECT_ICON` İletişim kutusu kapatıldığında simge olarak göster onay kutusu işaretli değilse döndürdü.  
+- Simge olarak görüntüle onay kutusunun iletişim kutusu kapatıldığında işaretlediyseniz DVASPECT_ICON döndürdü.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yalnızca sonra bu işlevi çağırmak [DoModal](#domodal) döndürür **IDOK**.  
+ Sonra bu işlev yalnızca çağırma [DoModal](#domodal) IDOK döndürür.  
   
  En boy çizim daha fazla bilgi için bkz: [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki yapısı.  
   
 ##  <a name="geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile  
- Kullanıcı tarafından seçilen öğeyle ilişkili meta dosyası alır.  
+ Kullanıcı tarafından seçilen öğe ile ilişkili meta dosyası alır.  
   
 ```  
 HGLOBAL GetIconicMetafile() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçilen öğenin simge en boy simge olarak göster onay kutusunu seçerek iletişim kutusu kapatıldığında seçtiyseniz içeren meta dosyası tanıtıcısını **Tamam**; Aksi halde **NULL**.  
+ Simge olarak görüntüle onay kutusunu seçerek iletişim kutusu kapatıldığında seçtiyseniz seçili öğeyi icon yönüyle içeren meta tanıtıcısını **Tamam**; Aksi takdirde NULL.  
   
 ##  <a name="getpasteindex"></a>  COlePasteSpecialDialog::GetPasteIndex  
- Alır dizin değeri seçili kullanıcı girişiyle ilişkili.  
+ Alır dizin değeri, seçilen kullanıcı girişiyle ilişkili.  
   
 ```  
 int GetPasteIndex() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizi dizine **OLEUIPASTEENTRY** kullanıcı tarafından seçilen yapıları. Seçili dizine karşılık gelen biçimi yapıştırma işlemi gerçekleştirirken kullanılmalıdır.  
+ Bir dizi dizine `OLEUIPASTEENTRY` kullanıcı tarafından seçilen yapılar. Yapıştırma işlemi gerçekleştirirken, seçili dizine karşılık gelen biçimde kullanılmalıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [OLEUIPASTEENTRY](http://msdn.microsoft.com/library/windows/desktop/ms690165) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIPASTEENTRY](http://msdn.microsoft.com/library/windows/desktop/ms690165) Windows SDK'sındaki yapısı.  
   
 ##  <a name="getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType  
- Kullanıcı yapılan seçim türünü belirler.  
+ Kullanıcının yapılan seçim türünü belirler.  
   
 ```  
 UINT GetSelectionType() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yapılan seçim türünü döndürür.  
+ Yapılan seçim türü döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından belirtilen dönüş türü değerleri **seçimi** numaralandırma türü içinde bildirilen `COlePasteSpecialDialog` sınıfı.  
+ Dönüş türü değerleri tarafından belirtilen `Selection` numaralandırma türü içinde bildirilen `COlePasteSpecialDialog` sınıfı.  
   
 ```  
 enum Selection {
@@ -335,27 +335,27 @@ enum Selection {
     };  
 ```  
   
- Bu değerlerin kısa desccriptions izleyin:  
+ Bu değerleri kısa desccriptions izleyin:  
   
-- **COlePasteSpecialDialog::pasteLink** Bağlantı Yapıştır radyo düğmesi işaretlendiğinde ve seçilen biçimi standart bir OLE biçim olduğundan.  
+- `COlePasteSpecialDialog::pasteLink` Yapıştır radyo düğmesini denetlendi ve standart bir OLE biçimine seçili biçim idi.  
   
-- **COlePasteSpecialDialog::pasteNormal** Yapıştır radyo düğmesi işaretlendiğinde ve seçilen biçimi standart bir OLE biçim oluştu.  
+- `COlePasteSpecialDialog::pasteNormal` Yapıştır radyo düğmesini denetlendi ve standart bir OLE biçimine seçili biçim idi.  
   
-- **COlePasteSpecialDialog::pasteOther** seçilen biçiminde standart OLE biçiminde değil.  
+- `COlePasteSpecialDialog::pasteOther` Seçili biçim, standart bir OLE biçiminde değil.  
   
-- **COlePasteSpecialDialog::pasteStatic** seçilen biçimi meta dosyası oluştu.  
+- `COlePasteSpecialDialog::pasteStatic` Seçili biçim meta dosyası oluştu.  
   
 ##  <a name="m_ps"></a>  COlePasteSpecialDialog::m_ps  
- Türü yapısını **OLEUIPASTESPECIAL** Özel Yapıştır iletişim kutusu davranışını denetlemek için kullanılır.  
+ Yapı türünü OLEUIPASTESPECIAL Paste Special iletişim kutusu davranışını denetlemek için kullanılır.  
   
 ```  
 OLEUIPASTESPECIAL m_ps;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yapı üyeleri, doğrudan veya üye işlevleri aracılığıyla değiştirilebilir.  
+ Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.  
   
- Daha fazla bilgi için bkz: [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) Windows SDK'sındaki yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek OCLIENT](../../visual-cpp-samples.md)   

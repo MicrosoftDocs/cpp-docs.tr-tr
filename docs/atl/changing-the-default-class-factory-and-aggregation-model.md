@@ -1,5 +1,5 @@
 ---
-title: Varsayılan üreteci ve toplama modeli değiştirme | Microsoft Docs
+title: Varsayılan sınıf üreteci ve toplama modelini değiştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,29 +22,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce64f2162aa0d5cdf5bcf5e16b56b6989fcaf1ee
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: db2e684565589eb736b135db3460ed8b83d382b1
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355245"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37850884"
 ---
-# <a name="changing-the-default-class-factory-and-aggregation-model"></a>Varsayılan üreteci ve toplama modelini değiştirme
-ATL kullanan [CComCoClass](../atl/reference/ccomcoclass-class.md) , nesne için varsayılan sınıf Fabrika ve toplama modeli tanımlamak için. `CComCoClass` Aşağıdaki iki makroları belirtir:  
+# <a name="changing-the-default-class-factory-and-aggregation-model"></a>Varsayılan sınıf üreteci ve toplama modelini değiştirme
+ATL kullanan [CComCoClass](../atl/reference/ccomcoclass-class.md) nesneniz için varsayılan sınıf üreteci ve toplama modelini tanımlamak için. `CComCoClass` Aşağıdaki iki makro belirtir:  
   
--   [DECLARE_CLASSFACTORY](reference/aggregation-and-class-factory-macros.md#declare_classfactory) olmasını üreteci bildirir [CComClassFactory](../atl/reference/ccomclassfactory-class.md).  
+-   [DECLARE_CLASSFACTORY](reference/aggregation-and-class-factory-macros.md#declare_classfactory) olmasını sınıf üreteci bildirir [CComClassFactory](../atl/reference/ccomclassfactory-class.md).  
   
--   [DECLARE_AGGREGATABLE](reference/aggregation-and-class-factory-macros.md#declare_aggregatable) nesnenizin kümelenebilir bildirir.  
+-   [DECLARE_AGGREGATABLE](reference/aggregation-and-class-factory-macros.md#declare_aggregatable) nesnenizin toplanabilir bildirir.  
   
- Bu varsayılan birini Sınıf tanımınız içinde başka bir makrosu belirterek geçersiz kılabilirsiniz. Örneğin, kullanılacak [CComClassFactory2](../atl/reference/ccomclassfactory2-class.md) yerine `CComClassFactory`, belirtin [DECLARE_CLASSFACTORY2](reference/aggregation-and-class-factory-macros.md#declare_classfactory2) makrosu:  
+ Başka bir makro, sınıf tanımında belirterek ya da bu varsayılan geçersiz kılabilirsiniz. Örneğin, kullanılacak [CComClassFactory2](../atl/reference/ccomclassfactory2-class.md) yerine `CComClassFactory`, belirtin [DECLARE_CLASSFACTORY2](reference/aggregation-and-class-factory-macros.md#declare_classfactory2) makrosu:  
   
  [!code-cpp[NVC_ATL_COM#2](../atl/codesnippet/cpp/changing-the-default-class-factory-and-aggregation-model_1.h)]  
   
- Bir sınıf fabrikası tanımlayın iki makroların [DECLARE_CLASSFACTORY_AUTO_THREAD](reference/aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) ve [DECLARE_CLASSFACTORY_SINGLETON](reference/aggregation-and-class-factory-macros.md#declare_classfactory_singleton).  
+ Bir sınıf üreteci tanımlayan iki diğer makroların [DECLARE_CLASSFACTORY_AUTO_THREAD](reference/aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) ve [DECLARE_CLASSFACTORY_SINGLETON](reference/aggregation-and-class-factory-macros.md#declare_classfactory_singleton).  
   
- ATL de kullanır `typedef` varsayılan davranışı uygulamak için bir mekanizma. Örneğin, `DECLARE_AGGREGATABLE` makrosu kullanan `typedef` adlı tür tanımlamak için **_CreatorClass**, hangi sonra başvurulmaktadır ATL Türetilen bir sınıfta unutmayın bir `typedef` temel sınıfın aynı adı kullanarak `typedef` tanımınızı kullanarak ve varsayılan davranışı geçersiz kılma ATL neden olur.  
+ ATL ayrıca kullanan **typedef** varsayılan davranışı uygulamak mekanizması. Örneğin, DECLARE_AGGREGATABLE makro kullanır **typedef** adlı bir tür tanımlamak için `_CreatorClass`, hangi ardından başvuruluyor ATL Türetilen bir sınıfta unutmayın bir **typedef** temel sınıfın aynı adı kullanarak **typedef** tanımınızı kullanan ve varsayılan davranışı geçersiz kılma ATL sonuçlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL COM nesneleri temelleri](../atl/fundamentals-of-atl-com-objects.md)   
+ [ATL COM nesnelerinin temelleri](../atl/fundamentals-of-atl-com-objects.md)   
  [Toplama ve Sınıf Üreticisi Makroları](../atl/reference/aggregation-and-class-factory-macros.md)
 

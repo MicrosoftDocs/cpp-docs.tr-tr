@@ -1,5 +1,5 @@
 ---
-title: IOleControlImpl sınıfı | Microsoft Docs
+title: Iolecontrolımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,18 +21,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a54067f53e83d78f063ae5f3694460452e24b26
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 34bdb0af5965b300e77a02858af3708c90fa63d0
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361804"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879289"
 ---
-# <a name="iolecontrolimpl-class"></a>IOleControlImpl sınıfı
-Bu sınıf, bir varsayılan uygulamasını sağlar **IOleControl** arabirimi ve uygulayan **IUnknown**.  
+# <a name="iolecontrolimpl-class"></a>Iolecontrolımpl sınıfı
+Bu sınıfın bir varsayılan uygulamayı sağlar `IOleControl` uygular ve arabirimi `IUnknown`.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,7 +42,7 @@ class IOleControlImpl
 ```   
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IOleControlImpl`.  
   
 ## <a name="members"></a>Üyeler  
@@ -52,14 +52,14 @@ class IOleControlImpl
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[IOleControlImpl::FreezeEvents](#freezeevents)|Kapsayıcı yoksayar veya denetim olayları kabul olup olmadığını gösterir.|  
-|[IOleControlImpl::GetControlInfo](#getcontrolinfo)|Denetimin klavye davranışı hakkında bilgi doldurur. ATL uygulamasını döndürür **E_NOTIMPL**.|  
-|[IOleControlImpl::OnAmbientPropertyChange](#onambientpropertychange)|Bir denetim, bir veya daha fazla kapsayıcının ortam özelliklerine değiştiğini bildirir. ATL uygulamasını döndürür `S_OK`.|  
-|[IOleControlImpl::OnMnemonic](#onmnemonic)|Denetimi, bir kullanıcının belirtilen bir tuş vuruşu bastığı bildirir. ATL uygulamasını döndürür **E_NOTIMPL**.|  
+|[IOleControlImpl::GetControlInfo](#getcontrolinfo)|Denetimin klavye davranışı hakkında bilgi doldurur. ATL uygulamasını E_NOTIMPL döndürür.|  
+|[IOleControlImpl::OnAmbientPropertyChange](#onambientpropertychange)|Bir denetimi bir veya daha fazla kapsayıcının ortam özellikleri değiştiğini bildirir. ATL uygulamasını S_OK döndürür.|  
+|[IOleControlImpl::OnMnemonic](#onmnemonic)|Denetim, bir kullanıcının belirtilen bir tuş vuruşu bastığına bildirir. ATL uygulamasını E_NOTIMPL döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıf `IOleControlImpl` bir varsayılan uygulamayı sağlar [IOleControl](http://msdn.microsoft.com/library/windows/desktop/ms694320) arabirimi ve uygulayan **IUnknown** aygıt hata ayıklama dökümü bilgileri göndererek oluşturur.  
+ Sınıf `IOleControlImpl` bir varsayılan uygulamayı sağlar [IOleControl](http://msdn.microsoft.com/library/windows/desktop/ms694320) arabirimi ve uygular `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
- **İlgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [bir ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
+ **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IOleControl`  
@@ -70,16 +70,16 @@ class IOleControlImpl
  **Başlık:** atlctl.h  
   
 ##  <a name="freezeevents"></a>  IOleControlImpl::FreezeEvents  
- ATL'ın uygulamasında `FreezeEvents` denetim sınıfının artırır `m_nFreezeEvents` veri üyesi ise `bFreeze` olan **TRUE**ve azaltır `m_nFreezeEvents` varsa `bFreeze` olan **yanlış**.  
+ ATL'nin uygulamasında `FreezeEvents` denetim sınıfın artırır `m_nFreezeEvents` veri üyesi değilse `bFreeze` TRUE ve azaltır `m_nFreezeEvents` varsa `bFreeze` yanlış.  
   
 ```
 HRESULT FreezeEvents(BOOL bFreeze);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `FreezeEvents` ardından döndürür `S_OK`.  
+ `FreezeEvents` ardından S_OK döndürür.  
   
- Bkz: [IOleControl::FreezeEvents](http://msdn.microsoft.com/library/windows/desktop/ms678482) Windows SDK.  
+ Bkz: [Iolecontrol::freezeevents](http://msdn.microsoft.com/library/windows/desktop/ms678482) Windows SDK içinde.  
   
 ##  <a name="getcontrolinfo"></a>  IOleControlImpl::GetControlInfo  
  Denetimin klavye davranışı hakkında bilgi doldurur.  
@@ -89,38 +89,38 @@ HRESULT GetControlInfo(LPCONTROLINFO pCI);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleControl:GetControlInfo](http://msdn.microsoft.com/library/windows/desktop/ms693730) Windows SDK.  
+ Bkz: [IOleControl:GetControlInfo](http://msdn.microsoft.com/library/windows/desktop/ms693730) Windows SDK içinde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **E_NOTIMPL**.  
+ E_NOTIMPL döndürür.  
   
 ##  <a name="onambientpropertychange"></a>  IOleControlImpl::OnAmbientPropertyChange  
- Bir denetim, bir veya daha fazla kapsayıcının ortam özelliklerine değiştiğini bildirir.  
+ Bir denetimi bir veya daha fazla kapsayıcının ortam özellikleri değiştiğini bildirir.  
   
 ```
 HRESULT OnAmbientPropertyChange(DISPID dispid);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK`.  
+ Başarılıysa S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleControl::OnAmbientPropertyChange](http://msdn.microsoft.com/library/windows/desktop/ms690175) Windows SDK.  
+ Bkz: [IOleControl::OnAmbientPropertyChange](http://msdn.microsoft.com/library/windows/desktop/ms690175) Windows SDK içinde.  
   
 ##  <a name="onmnemonic"></a>  IOleControlImpl::OnMnemonic  
- Denetimi, bir kullanıcının belirtilen bir tuş vuruşu bastığı bildirir.  
+ Denetim, bir kullanıcının belirtilen bir tuş vuruşu bastığına bildirir.  
   
 ```
 HRESULT OnMnemonic(LPMSG pMsg);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **E_NOTIMPL**.  
+ E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleControl::OnMnemonic](http://msdn.microsoft.com/library/windows/desktop/ms680699) Windows SDK.  
+ Bkz: [IOleControl::OnMnemonic](http://msdn.microsoft.com/library/windows/desktop/ms680699) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IOleObjectImpl sınıfı](../../atl/reference/ioleobjectimpl-class.md)   
+ [Ioleobjectımpl sınıfı](../../atl/reference/ioleobjectimpl-class.md)   
  [Arabirimleri ActiveX denetimleri](http://msdn.microsoft.com/library/windows/desktop/ms692724)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 7dae7288-8066-4a3e-85e0-78d28bfc6bc8
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 65e969607e4017191539a0b0301b0c27ccb9f1ae
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 3d9b418e5f8aafc4199712063e137aadc9df04f3
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37078990"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852457"
 ---
 # <a name="csinglelock-class"></a>CSingleLock sınıfı
-Birden çok iş parçacıklı programda bir kaynağa erişimi denetlemek kullanılan erişim denetim mekanizmasını temsil eder.  
+Çoklu iş parçacığı kullanan programda bir kaynağa erişimi denetlemek için kullanılan erişim denetim mekanizmasını temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,24 +44,24 @@ class CSingleLock
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSingleLock::CSingleLock](#csinglelock)|Oluşturan bir `CSingleLock` nesnesi.|  
+|[CSingleLock::CSingleLock](#csinglelock)|Oluşturur bir `CSingleLock` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CSingleLock::IsLocked](#islocked)|Nesne kilitli olduğunu belirler.|  
-|[CSingleLock::Lock](#lock)|Eşitleme nesnesi üzerinde bekler.|  
-|[CSingleLock::Unlock](#unlock)|Eşitleme nesnesi serbest bırakır.|  
+|[CSingleLock::Lock](#lock)|Bir eşitleme nesnesi üzerinde bekler.|  
+|[CSingleLock::Unlock](#unlock)|Bir eşitleme nesnesi serbest bırakır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CSingleLock` bir taban sınıfı yok.  
+ `CSingleLock` bir temel sınıfa sahip değil.  
   
- Eşitleme sınıfları kullanmak için [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), ve [CEvent](../../mfc/reference/cevent-class.md), ya da oluşturmalısınız bir `CSingleLock` veya [CMultiLock](../../mfc/reference/cmultilock-class.md) nesne beklemesi ve eşitleme nesnesi serbest bırakın. Kullanım `CSingleLock` yalnızca gerektiğinde bir nesne üzerinde aynı anda beklenecek. Kullanmak `CMultiLock` belirli bir zamanda kullanabileceğinizi birden fazla nesne olduğunda.  
+ Eşitleme sınıfları kullanmak için [CSemaphore](../../mfc/reference/csemaphore-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), ve [CEvent](../../mfc/reference/cevent-class.md), ya da oluşturmalısınız bir `CSingleLock` veya [CMultiLock](../../mfc/reference/cmultilock-class.md) eşitleme nesneyi serbest nesnesini bekleyebilir. Kullanım `CSingleLock` yalnızca gerektiğinde bir kerede bir nesne üzerinde bekleyin. Kullanma `CMultiLock` kullanabileceğinizi belirli bir zamanda birden fazla nesne olduğunda.  
   
- Kullanılacak bir `CSingleLock` nesne, denetlenen kaynağın sınıfında kurucusu üye fonksiyonu içinde çağırın. ' I çağırın [IsLocked](#islocked) kaynak olup olmadığını belirlemek için üye işlevi. İse, üye işlevini geri kalanı ile devam edin. Kaynak kullanılamıyorsa, zaman yayımlanacak kaynak için belirtilen miktarı bekleyin ya da hata döndürür. Kaynak kullanımını tamamlandıktan sonra ya da çağrısı [Unlock](#unlock) , işlev `CSingleLock` nesnesidir izin ver veya yeniden kullanılmak üzere `CSingleLock` yok edilmesi için nesne.  
+ Kullanılacak bir `CSingleLock` nesne, denetimli kaynak sınıfının oluşturucusuna bir üye işlevin içindeki çağırın. Ardından çağırın [IsLocked](#islocked) kaynak kullanılabilir olup olmadığını belirlemek için üye işlevi. İse, üye işlevi geri kalanı ile devam edin. Kaynak kullanılamıyorsa, zaman yayımlanacak kaynak için belirli bir süre bekleyin veya hata döndürür. Kaynak kullanımını tamamlandıktan sonra ya da çağrı [kilidini](#unlock) işlevinin `CSingleLock` nesnedir izin ver veya yeniden kullanılmak üzere `CSingleLock` nesne yok.  
   
- `CSingleLock` türetilen bir nesne varlığını gerektiren nesneleri [CSyncObject](../../mfc/reference/csyncobject-class.md). Bu genellikle bir veri denetimli kaynağın sınıfı üyesidir. Nasıl kullanılacağı hakkında daha fazla bilgi için `CSingleLock` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).  
+ `CSingleLock` nesneleri gerektiren türetilmiş bir nesnenin durum [CSyncObject](../../mfc/reference/csyncobject-class.md). Denetimli kaynak sınıfının veri üyesi genellikle budur. Nasıl kullanılacağı hakkında daha fazla bilgi için `CSingleLock` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CSingleLock`  
@@ -70,7 +70,7 @@ class CSingleLock
  **Başlık:** afxmt.h  
   
 ##  <a name="csinglelock"></a>  CSingleLock::CSingleLock  
- Oluşturan bir `CSingleLock` nesnesi.  
+ Oluşturur bir `CSingleLock` nesne.  
   
 ```  
 explicit CSingleLock(
@@ -80,10 +80,10 @@ explicit CSingleLock(
   
 ### <a name="parameters"></a>Parametreler  
  *pObject*  
- Erişilecek eşitleme nesnesi noktalarına. Olamaz **NULL**.  
+ Erişilecek eşitleme nesnesi işaret eder. NULL olamaz.  
   
  *bInitialLock*  
- Başlangıçta belirtilen nesnenin erişme girişimi belirtir.  
+ Başlangıçta sağlanan nesneye erişme girişimi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev genellikle denetimli kaynak içinde bir erişim üye işlevi çağrılır.  
@@ -92,20 +92,20 @@ explicit CSingleLock(
  [!code-cpp[NVC_MFC_Utilities#19](../../mfc/codesnippet/cpp/csinglelock-class_1.h)]  
   
 ##  <a name="islocked"></a>  CSingleLock::IsLocked  
- Nesne ile ilişkili ise belirler `CSingleLock` nesnesidir nonsignaled (kullanılamaz).  
+ Nesne ile ilişkili değilse belirler `CSingleLock` nesnedir nonsignaled (kullanılamıyor).  
   
 ```  
 BOOL IsLocked();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Nesne kilitliyse sıfır olmayan; Aksi takdirde 0.  
+ Nesnenin kilitli olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#20](../../mfc/codesnippet/cpp/csinglelock-class_2.h)]  
   
 ##  <a name="lock"></a>  CSingleLock::Lock  
- İçin sağlanan eşitleme nesnesi tarafından denetlenen kaynak erişim kazanmak için bu işlevi çağırmak `CSingleLock` Oluşturucusu.  
+ Sağlanan eşitleme nesnesi tarafından denetlenen bir kaynağa erişmek için bu işlevi çağırın `CSingleLock` Oluşturucusu.  
   
 ```  
 BOOL Lock(DWORD dwTimeOut = INFINITE);
@@ -113,19 +113,19 @@ BOOL Lock(DWORD dwTimeOut = INFINITE);
   
 ### <a name="parameters"></a>Parametreler  
  *dwTimeOut*  
- Eşitleme nesnenin kullanılabilir olması için beklenecek süreyi belirtir (işaret). Varsa **SONSUZ**, `Lock` nesne döndürmeden önce işaret kadar bekler.  
+ Eşitleme nesnesi kullanılabilir olması beklenecek süreyi belirtir (işareti). SONSUZ ise `Lock` döndürmeden önce nesne sinyal kadar bekler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ İşlev başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eşitleme nesnesi işaret edildiyse `Lock` başarıyla döndürür ve iş parçacığı şimdi nesnenin sahibi. Eşitleme nesnesi nonsignaled ise (kullanılamaz), `Lock` eşitleme nesne belirtilen milisaniye sayısı kadar işaret hale bekleyecek *dwTimeOut* parametresi. Eşitleme nesnesi belirtilen sürede, işaret hale değil, `Lock` hatasını döndürür.  
+ Eşitleme nesnesi sinyal vermediyse, `Lock` başarıyla döndürür ve iş parçacığı nesneye artık sahip. Eşitleme nesnesi nonsignaled ise (kullanılamıyor) `Lock` belirtilen milisaniye sayısı kadar sinyal haline eşitleme nesnesi için bekleyeceği *dwTimeOut* parametresi. Eşitleme nesnesi belirtilen sürede, sinyal haline değil, `Lock` hatası döndürür.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]  
   
 ##  <a name="unlock"></a>  CSingleLock::Unlock  
- Sahibi eşitleme nesnesi serbest `CSingleLock`.  
+ Eşitleme nesnesi tarafından sahip olunan serbest `CSingleLock`.  
   
 ```  
 BOOL Unlock();
@@ -138,18 +138,18 @@ BOOL Unlock(
   
 ### <a name="parameters"></a>Parametreler  
  *lCount*  
- Serbest bırakmak için sağlanan erişim sayısı. 0'dan büyük olmalıdır. Belirtilen süre nesnenin sayısı maksimum değerini aşmasına neden olur, count değiştirilmez ve işlevi döndürür **FALSE**.  
+ Serbest bırakmak için erişim sayısı. 0'dan büyük olmalıdır. Belirtilen nesnenin sayısı, en yüksek süreyi aşmasına yol açıyorsa sayısı değiştirilmez ve işlev false değerini döndürür.  
   
  *lPrevCount*  
- Eşitleme nesnesi önceki sayısı almak için bir değişken noktalarına. Varsa **NULL**, önceki sayısı alınmadı.  
+ Önceki eşitleme nesnesi sayısını almak için bir değişkene işaret eder. NULL ise, önceki sayısı döndürülmez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ İşlev başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev tarafından çağrılır `CSingleLock`'s yıkıcı.  
+ Bu işlevi çağıran `CSingleLock`'s yıkıcı.  
   
- Semafor birden fazla erişim sayısı yayın ihtiyacınız varsa, ikinci biçiminde kullanmak `Unlock` ve serbest bırakmak için sağlanan erişim sayısı belirtin.  
+ Semafor birden fazla erişim sayısı serbest bırakmak gerekiyorsa ikinci biçimi kullanmak `Unlock` ve serbest bırakmak için erişimleri sayısını belirtin.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]  

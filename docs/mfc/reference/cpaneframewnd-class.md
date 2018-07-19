@@ -142,17 +142,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c17c81fb39d4397c58b4baba7124de2bda646db7
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 3e25fda2f6d30ea13882ae3b40875fb3d4ec61c7
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079700"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37854128"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
- Bir bölme içeren bir kısa çerçeve penceresi uygular. Bölmesinde penceresinin istemci alanını doldurur.  
+ Bir bölme içeren bir mini çerçeve uygular. Bölme pencerenin istemci alanını doldurur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -168,64 +168,64 @@ class CPaneFrameWnd : public CWnd
 |----------|-----------------|  
 |[CPaneFrameWnd::AddPane](#addpane)|Bir bölme ekler.|  
 |[CPaneFrameWnd::AddRemovePaneFromGlobalList](#addremovepanefromgloballist)|Ekler veya bir bölme Genel listeden kaldırır.|  
-|[CPaneFrameWnd::AdjustLayout](#adjustlayout)|Kısa çerçeve pencere düzenini ayarlar.|  
+|[CPaneFrameWnd::AdjustLayout](#adjustlayout)|Mini çerçeve düzenini ayarlar.|  
 |[CPaneFrameWnd::AdjustPaneFrames](#adjustpaneframes)||  
-|[CPaneFrameWnd::CalcBorderSize](#calcbordersize)|Kenarlıklar bir kısa çerçeve penceresi boyutunu hesaplar.|  
-|[CPaneFrameWnd::CalcExpectedDockedRect](#calcexpecteddockedrect)|Yerleşik pencerenin beklenen dikdörtgen hesaplayın.|  
-|[CPaneFrameWnd::CanBeAttached](#canbeattached)|Başka bir bölme veya çerçeveye penceresine geçerli bölmesini yerleştirilmiş olup olmadığını belirler.|  
-|[CPaneFrameWnd::CanBeDockedToPane](#canbedockedtopane)|Kısa çerçeve penceresi bir bölmesine yerleştirilmiş olup olmadığını belirler.|  
+|[CPaneFrameWnd::CalcBorderSize](#calcbordersize)|Mini çerçeve pencere kenarlıklarını boyutunu hesaplar.|  
+|[CPaneFrameWnd::CalcExpectedDockedRect](#calcexpecteddockedrect)|Yerleşik pencere beklenen dikdörtgen hesaplayın.|  
+|[CPaneFrameWnd::CanBeAttached](#canbeattached)|Başka bir bölüm ya da çerçeve penceresi geçerli bölmesini yerleştirilmiş olup olmadığını belirler.|  
+|[CPaneFrameWnd::CanBeDockedToPane](#canbedockedtopane)|Bir bölmesine Mini çerçeve penceresinin yerleştirilmiş olup olmadığını belirler.|  
 |[CPaneFrameWnd::CheckGripperVisibility](#checkgrippervisibility)||  
-|[CPaneFrameWnd::ConvertToTabbedDocument](#converttotabbeddocument)|Bölmesinde bir sekmeli belge dönüştürür.|  
-|[CPaneFrameWnd::Create](#create)|Bir kısa çerçeve penceresi oluşturur ve ona ekler `CPaneFrameWnd` nesnesi.|  
-|[CPaneFrameWnd::CreateEx](#createex)|Bir kısa çerçeve penceresi oluşturur ve ona ekler `CPaneFrameWnd` nesnesi.|  
+|[CPaneFrameWnd::ConvertToTabbedDocument](#converttotabbeddocument)|Bölmesinde sekmeli belgeye dönüştürür.|  
+|[CPaneFrameWnd::Create](#create)|Bir mini çerçeve penceresi oluşturur ve ona ekler `CPaneFrameWnd` nesne.|  
+|[CPaneFrameWnd::CreateEx](#createex)|Bir mini çerçeve penceresi oluşturur ve ona ekler `CPaneFrameWnd` nesne.|  
 |[CPaneFrameWnd::DockPane](#dockpane)|Bölmesinde docks.|  
-|[CPaneFrameWnd::FindFloatingPaneByID](#findfloatingpanebyid)|Belirtilen denetim kimliği bölmesiyle kayan bölmeleri genel listede bulur.|  
-|[CPaneFrameWnd::FrameFromPoint](#framefrompoint)|Bir kullanıcı tarafından sağlanan noktası içeren kısa çerçeve penceresi bulur.|  
-|[CPaneFrameWnd::GetCaptionHeight](#getcaptionheight)|Kısa çerçeve penceresi yazısı yüksekliğini döndürür.|  
-|[CPaneFrameWnd::GetCaptionRect](#getcaptionrect)|Bir kısa çerçeve penceresi başlığı sınırlayıcı dikdörtgenini hesaplar.|  
-|[CPaneFrameWnd::GetCaptionText](#getcaptiontext)|Başlık metni döndürür.|  
+|[CPaneFrameWnd::FindFloatingPaneByID](#findfloatingpanebyid)|Belirtilen denetim kimliği içeren bölme kayan bölmeleri genel listesinde bulur.|  
+|[CPaneFrameWnd::FrameFromPoint](#framefrompoint)|Kullanıcı tarafından sağlanan bir noktayı içeren Mini çerçeve bulur.|  
+|[CPaneFrameWnd::GetCaptionHeight](#getcaptionheight)|Mini çerçeve pencere başlığı yüksekliğini döndürür.|  
+|[CPaneFrameWnd::GetCaptionRect](#getcaptionrect)|Bir mini çerçeve pencere başlığı sınırlayıcı dikdörtgenini hesaplar.|  
+|[CPaneFrameWnd::GetCaptionText](#getcaptiontext)|Açıklamalı alt yazı metni döndürür.|  
 |[CPaneFrameWnd::GetDockingManager](#getdockingmanager)||  
 |[CPaneFrameWnd::GetDockingMode](#getdockingmode)|Yerleştirme modunu döndürür.|  
-|[CPaneFrameWnd::GetFirstVisiblePane](#getfirstvisiblepane)|Bir kısa çerçeve penceresinde bulunan ilk görünür bölmesine döndürür.|  
+|[CPaneFrameWnd::GetFirstVisiblePane](#getfirstvisiblepane)|Bir mini çerçeve penceresinde yer alan ilk görünür bölmesine döndürür.|  
 |[CPaneFrameWnd::GetHotPoint](#gethotpoint)||  
-|[CPaneFrameWnd::GetPane](#getpane)|Kısa çerçeve penceresinde bulunan bir bölme döndürür.|  
-|[CPaneFrameWnd::GetPaneCount](#getpanecount)|Bir kısa çerçeve penceresinde bulunan bölmeleri sayısını döndürür.|  
+|[CPaneFrameWnd::GetPane](#getpane)|Mini çerçeve penceresinde yer alan bir bölme döndürür.|  
+|[CPaneFrameWnd::GetPaneCount](#getpanecount)|Bir mini çerçeve penceresinde bulunan bölmeleri sayısını döndürür.|  
 |[CPaneFrameWnd::GetParent](#getparent)||  
 |[CPaneFrameWnd::GetPinState](#getpinstate)||  
 |[CPaneFrameWnd::GetRecentFloatingRect](#getrecentfloatingrect)||  
-|[CPaneFrameWnd::GetVisiblePaneCount](#getvisiblepanecount)|Bir kısa çerçeve penceresinde bulunan görünür bölmeleri sayısını döndürür.|  
-|[CPaneFrameWnd::HitTest](#hittest)|Belirli bir anda bir kısa çerçeve penceresi hangi kısmının olduğunu belirler.|  
+|[CPaneFrameWnd::GetVisiblePaneCount](#getvisiblepanecount)|Bir mini çerçeve penceresinde bulunan görünür bölmeleri sayısını döndürür.|  
+|[CPaneFrameWnd::HitTest](#hittest)|Belirli bir anda hangi Mini çerçevenin parçası olduğunu belirler.|  
 |[CPaneFrameWnd::IsCaptured](#iscaptured)||  
 |[CPaneFrameWnd::IsDelayShow](#isdelayshow)||  
-|[CPaneFrameWnd::IsRollDown](#isrolldown)|Bir kısa çerçeve penceresi aşağı alındı olup olmadığını belirler.|  
-|[CPaneFrameWnd::IsRollUp](#isrollup)|Bir kısa çerçeve penceresi toplanan olup olmadığını belirler.|  
-|[CPaneFrameWnd::KillDockingTimer](#killdockingtimer)|Yerleştirme Zamanlayıcı durdurur.|  
-|[CPaneFrameWnd::LoadState](#loadstate)|Kayıt defterinden Bölmesi'nin durumu yükler.|  
+|[CPaneFrameWnd::IsRollDown](#isrolldown)|Bir mini çerçeve aşağı toplu olup olmadığını belirler.|  
+|[CPaneFrameWnd::IsRollUp](#isrollup)|Bir mini çerçeve toplanan olup olmadığını belirler.|  
+|[CPaneFrameWnd::KillDockingTimer](#killdockingtimer)|Yerleştirme Zamanlayıcıyı durdurur.|  
+|[CPaneFrameWnd::LoadState](#loadstate)|Kayıt defterinden bölmedeki durumunu yükler.|  
 |[CPaneFrameWnd::OnBeforeDock](#onbeforedock)|Yerleştirme mümkün olup olmadığını belirler.|  
-|[CPaneFrameWnd::OnDockToRecentPos](#ondocktorecentpos)|Kısa çerçeve penceresi, en son konumundaki docks.|  
-|[CPaneFrameWnd::OnKillRollUpTimer](#onkillrolluptimer)|Toplama süreölçerini durdurur.|  
-|[CPaneFrameWnd::OnMovePane](#onmovepane)|Kısa çerçeve penceresi tarafından belirtilen kayma taşır.|  
-|[CPaneFrameWnd::OnPaneRecalcLayout](#onpanerecalclayout)|Kapsanan bölmesinde düzenini ayarlar.|  
-|[CPaneFrameWnd::OnSetRollUpTimer](#onsetrolluptimer)|Toplama süreölçerini ayarlar.|  
-|[CPaneFrameWnd::OnShowPane](#onshowpane)|Kısa çerçeve penceresi bölmesinde gizli ya da görüntülenen çerçevesi tarafından çağrılır.|  
-|[CPaneFrameWnd::PaneFromPoint](#panefrompoint)|Bir kullanıcı tarafından sağlanan noktası bir kısa çerçeve penceresi içinde içeriyorsa, bir bölme döndürür.|  
+|[CPaneFrameWnd::OnDockToRecentPos](#ondocktorecentpos)|En son konumunu Mini çerçeve penceresinin docks.|  
+|[CPaneFrameWnd::OnKillRollUpTimer](#onkillrolluptimer)|Toplama Zamanlayıcıyı durdurur.|  
+|[CPaneFrameWnd::OnMovePane](#onmovepane)|Mini çerçeve penceresi tarafından belirtilen bir uzaklık taşır.|  
+|[CPaneFrameWnd::OnPaneRecalcLayout](#onpanerecalclayout)|Kapsanan bir bölme düzenini ayarlar.|  
+|[CPaneFrameWnd::OnSetRollUpTimer](#onsetrolluptimer)|Toplama Zamanlayıcıyı ayarlar.|  
+|[CPaneFrameWnd::OnShowPane](#onshowpane)|Bir mini çerçeve bölmesinde gizli veya gösterilen framework tarafından çağırılır.|  
+|[CPaneFrameWnd::PaneFromPoint](#panefrompoint)|Bir mini çerçeve penceresi içinde bir kullanıcı tarafından sağlanan noktası içeriyorsa bir bölme döndürür.|  
 |[CPaneFrameWnd::Pin](#pin)||  
-|`CPaneFrameWnd::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için gönderilen önce pencere iletileri çevirmek için [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows çalışır.|  
-|[CPaneFrameWnd::RedrawAll](#redrawall)|Tüm kısa çerçeve pencereleri yeniden çizer.|  
-|[CPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Geçerli olmayan bölmeleri kaldırmak için çerçevesi tarafından çağrılır.|  
-|[CPaneFrameWnd::RemovePane](#removepane)|Bir bölme kısa çerçeve penceresinden kaldırır.|  
+|`CPaneFrameWnd::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri.|  
+|[CPaneFrameWnd::RedrawAll](#redrawall)|Tüm Mini çerçeve pencereleri yeniden çizer.|  
+|[CPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Geçerli olmayan bölmeleri kaldırmak için framework tarafından çağırılır.|  
+|[CPaneFrameWnd::RemovePane](#removepane)|Bir bölme Mini çerçeve penceresinde kaldırır.|  
 |[CPaneFrameWnd::ReplacePane](#replacepane)|Bir bölme birbiriyle değiştirir.|  
-|[CPaneFrameWnd::SaveState](#savestate)|Kayıt defterine Bölmesi'nin durumunu kaydeder.|  
-|`CPaneFrameWnd::Serialize`|Okur veya bir arşiv değiştirilmesine veya bu nesneyi yazar.|  
-|[CPaneFrameWnd::SetCaptionButtons](#setcaptionbuttons)|Ayarlar düğmeleri resim yazısı.|  
+|[CPaneFrameWnd::SaveState](#savestate)|Bölmedeki durumu kayıt defterine kaydeder.|  
+|`CPaneFrameWnd::Serialize`|Okur veya ya da bir arşivden bu nesneyi yazar.|  
+|[CPaneFrameWnd::SetCaptionButtons](#setcaptionbuttons)|Kümeleri düğmeleri açıklamalı alt yazı.|  
 |[CPaneFrameWnd::SetDelayShow](#setdelayshow)||  
 |[CPaneFrameWnd::SetDockingManager](#setdockingmanager)||  
-|[CPaneFrameWnd::SetDockingTimer](#setdockingtimer)|Yerleştirme Zamanlayıcı ayarlar.|  
-|[CPaneFrameWnd::SetDockState](#setdockstate)|Takma durumunu ayarlar.|  
+|[CPaneFrameWnd::SetDockingTimer](#setdockingtimer)|Yerleştirme Zamanlayıcıyı ayarlar.|  
+|[CPaneFrameWnd::SetDockState](#setdockstate)|Yerleştirme durumunu ayarlar.|  
 |[CPaneFrameWnd::SetHotPoint](#sethotpoint)||  
-|[CPaneFrameWnd::SetPreDockState](#setpredockstate)|Predocking durumunu ayarlamaya çerçevesi tarafından çağrılır.|  
-|[CPaneFrameWnd::SizeToContent](#sizetocontent)|Böylece bir kapsanan bölmesine boyutu eşdeğer bir kısa çerçeve pencere boyutunu ayarlar.|  
-|[CPaneFrameWnd::StartTearOff](#starttearoff)|Tears menü kapalı.|  
+|[CPaneFrameWnd::SetPreDockState](#setpredockstate)|Predocking durumu ayarlamak için framework tarafından çağırılır.|  
+|[CPaneFrameWnd::SizeToContent](#sizetocontent)|Bir kapsanan bölmesine boyutu eşdeğer olan bir mini çerçeve penceresinin boyutunu ayarlar.|  
+|[CPaneFrameWnd::StartTearOff](#starttearoff)|Bir menü tears.|  
 |[CPaneFrameWnd::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||  
 |[CPaneFrameWnd::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)||  
   
@@ -233,23 +233,23 @@ class CPaneFrameWnd : public CWnd
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPaneFrameWnd::OnCheckRollState](#oncheckrollstate)|Bir kısa çerçeve penceresi yukarı veya aşağı alınması olup olmadığını belirler.|  
-|[CPaneFrameWnd::OnDrawBorder](#ondrawborder)|Bir kısa çerçeve penceresi Kenarlıklar çizer.|  
+|[CPaneFrameWnd::OnCheckRollState](#oncheckrollstate)|Bir mini çerçeve yukarı veya aşağı aylarına olup olmadığını belirler.|  
+|[CPaneFrameWnd::OnDrawBorder](#ondrawborder)|Bir mini çerçeve pencere kenarlıklarını çizer.|  
   
 ### <a name="data-members"></a>Veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPaneFrameWnd::m_bUseSaveBits](#m_busesavebits)|Pencere sınıfı ile kaydetmek belirtir `CS_SAVEBITS` sınıf stili.|  
+|[CPaneFrameWnd::m_bUseSaveBits](#m_busesavebits)|Pencere sınıfı CS_SAVEBITS sınıfı stiliyle kaydetmek belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Framework otomatik olarak oluşturur bir `CPaneFrameWnd` bir bölme bir kayan durumuna dayalı bir durumdan geçildiğinde nesne.  
+ Framework otomatik olarak oluşturur bir `CPaneFrameWnd` bir bölme bir kayan duruma dayalı bir durumdan geçildiğinde nesne.  
   
- Bir kısa çerçeve penceresi birlikte içeriğiyle sürüklenebilir görünür (hemen yerleştirme) ya da sürükle dikdörtgene (standart yerleştirme) kullanarak. Mini çerçeve kapsayıcı bölmenin yerleştirme modu mini çerçeve davranışı sürükleyerek kullanıcının belirler. Daha fazla bilgi için bkz: [CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).  
+ Bir mini çerçeve penceresinin içeriğini ile sürüklenebilir görünür (hemen yerleştirme) veya bir sürükleme dikdörtgenini (standart yerleştirme) kullanıyor. Mini çerçeve davranış sürükleyerek kullanıcının mini çerçevenin kapsayıcı bölmenin yerleştirme modu belirler. Daha fazla bilgi için [CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).  
   
- Bir kısa çerçeve penceresi düğmeleri resim yazısı kapsanan bölmesinde stili göre görüntüler. Bölme kapatılabilir, ( [CBasePane::CanBeClosed](../../mfc/reference/cbasepane-class.md#canbeclosed)), Kapat düğmesini görüntüler. Bölmesinde varsa `AFX_CBRS_AUTO_ROLLUP` stili, PIN görüntüler.  
+ Bir mini çerçeve penceresi düğmeleri kapsanan bölmesinde stili uygun olarak açıklamalı alt yazı görüntüler. Bölme kapatılabilir, ( [CBasePane::CanBeClosed](../../mfc/reference/cbasepane-class.md#canbeclosed)), bir Kapat düğmesi görüntüler. Bölmesinde AFX_CBRS_AUTO_ROLLUP stile sahipse, PIN görüntüler.  
   
- Öğesinden bir sınıf türetirseniz `CPaneFrameWnd`, oluşturmak nasıl framework bildirmeniz gerekir. Ya da geçersiz kılarak sınıfı oluşturmak [CPane::CreateDefaultMiniframe](../../mfc/reference/cpane-class.md#createdefaultminiframe), veya `CPane::m_pMiniFrameRTC` sınıfınız için çalışma zamanı sınıf bilgileri onun işaret için üye.  
+ Öğesinden bir sınıf türetirseniz `CPaneFrameWnd`, nasıl oluşturulduğu framework söylemeniz gerekir. Ya da geçersiz kılarak sınıfı oluşturmak [CPane::CreateDefaultMiniframe](../../mfc/reference/cpane-class.md#createdefaultminiframe), veya `CPane::m_pMiniFrameRTC` BT'nin sınıfınız için çalışma zamanı sınıf bilgileri işaret şekilde üyesi.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -288,13 +288,13 @@ static BOOL __stdcall AddRemovePaneFromGlobalList(
  Eklemek veya kaldırmak için bölme.  
   
  [in] *bekle*  
- Sıfır olmayan bölmesi ekleyin. 0 ise bölmesini kaldırın.  
+ Sıfır olmayan, bölmesi ekleme. 0 ise, bölmesini kaldırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa sıfır olmayan; Aksi takdirde 0.  
+ Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ##  <a name="adjustlayout"></a>  CPaneFrameWnd::AdjustLayout  
- Kısa çerçeve pencere düzenini ayarlar.  
+ Mini çerçeve düzenini ayarlar.  
   
 ```  
 virtual void AdjustLayout();
@@ -310,7 +310,7 @@ virtual void AdjustPaneFrames();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="calcbordersize"></a>  CPaneFrameWnd::CalcBorderSize  
- Kenarlıklar miniframe penceresi boyutunu hesaplar.  
+ Bir mini çerçeve gizlenmek kenarlıklarını boyutunu hesaplar.  
   
 ```  
 virtual void CalcBorderSize(CRect& rectBorderSize) const;  
@@ -318,13 +318,13 @@ virtual void CalcBorderSize(CRect& rectBorderSize) const;
   
 ### <a name="parameters"></a>Parametreler  
  [out] *rectBorderSize*  
- Miniframe penceresinin kenarlığının piksel cinsinden boyutu içerir.  
+ Mini çerçeve gizlenmek kenarlığının piksel cinsinden boyutunu içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir miniframe pencere kenarlık boyutunu hesaplamak için çerçevesi tarafından çağrılır. Araç çubuğu miniframe penceresi içerip içermediğini veya döndürülen boyutu bağlıdır [CDockablePane](../../mfc/reference/cdockablepane-class.md).  
+ Bu yöntem bir mini çerçeve gizlenmek kenarlığını boyutunu hesaplamak için framework tarafından çağırılır. Bir mini çerçeve gizlenmek bir araç çubuğu içerip içermediğini veya döndürülen boyutuna bağlıdır [CDockablePane](../../mfc/reference/cdockablepane-class.md).  
   
 ##  <a name="calcexpecteddockedrect"></a>  CPaneFrameWnd::CalcExpectedDockedRect  
- Yerleşik pencerenin beklenen dikdörtgen hesaplayın.  
+ Yerleşik pencere beklenen dikdörtgen hesaplayın.  
   
 ```  
 virtual void CalcExpectedDockedRect(
@@ -346,26 +346,26 @@ virtual void CalcExpectedDockedRect(
  Hesaplanan dikdörtgen.  
   
  [out] *bDrawTab*  
- Varsa `TRUE`, sekme çizin. Varsa `FALSE`, sekme çekmek değil.  
+ TRUE ise bir sekme çizin. FALSE ise bir sekme çekmek değil.  
   
  [out] *ppTargetBar*  
  Hedef bölmesi için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir kullanıcı tarafından belirtilen noktasına penceresi Sürüklediyseniz, bir pencere kaplar dikdörtgen hesaplar *ptMouse* ve var. yerleştirildi.  
+ Bu yöntem, bir kullanıcı tarafından belirtilen noktasına penceresi Sürüklediyseniz, bir pencere kaplayabilir dikdörtgen hesaplar *ptMouse* ve yerleştirilmiş vardır.  
   
 ##  <a name="canbeattached"></a>  CPaneFrameWnd::CanBeAttached  
- Başka bir bölme veya çerçeveye penceresine geçerli bölmesini yerleştirilmiş olup olmadığını belirler.  
+ Başka bir bölüm ya da çerçeve penceresi geçerli bölmesini yerleştirilmiş olup olmadığını belirler.  
   
 ```  
 virtual BOOL CanBeAttached() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bölmesinde başka bir bölme veya çerçeveye penceresine; yerleşik, Aksi takdirde `FALSE`.  
+ Başka bir bölüm ya da çerçeve penceresi bölmesi yuvalanabilir TRUE; Aksi durumda FALSE.  
   
 ##  <a name="canbedockedtopane"></a>  CPaneFrameWnd::CanBeDockedToPane  
- Kısa çerçeve penceresi bir bölmesine yerleştirilmiş olup olmadığını belirler.  
+ Bir bölmesine Mini çerçeve penceresinin yerleştirilmiş olup olmadığını belirler.  
   
 ```  
 virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;  
@@ -376,7 +376,7 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
  Bir bölme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kısa çerçeve yerleştirilmiş, sıfır olmayan *pDockingBar*; Aksi halde 0.  
+ Mini çerçeve için sabitlenebilir olursa sıfır dışı *pDockingBar*; Aksi durumda 0.  
   
 ##  <a name="checkgrippervisibility"></a>  CPaneFrameWnd::CheckGripperVisibility  
 
@@ -388,14 +388,14 @@ virtual void CheckGripperVisibility();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="converttotabbeddocument"></a>  CPaneFrameWnd::ConvertToTabbedDocument  
- Bölmesinde bir sekmeli belge dönüştürür.  
+ Bölmesinde sekmeli belgeye dönüştürür.  
   
 ```  
 virtual void ConvertToTabbedDocument();
 ```  
   
 ##  <a name="create"></a>  CPaneFrameWnd::Create  
- Miniframe pencere oluşturur ve ona ekler [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) nesnesi.  
+ Bir mini çerçeve gizlenmek oluşturur ve ona ekler [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) nesne.  
   
 ```  
 virtual BOOL Create(
@@ -411,25 +411,25 @@ virtual BOOL Create(
  Miniframe penceresinde görüntülenecek metni belirtir.  
   
  [in] *dwStyle*  
- Pencere stili belirtir. Daha fazla bilgi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+ Pencere stilini belirtir. Daha fazla bilgi için [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *rect*  
- İlk boyutunu ve konumunu miniframe penceresinin belirtir.  
+ [in] *dikdörtgen*  
+ Başlangıç boyutu ve Mini çerçeve gizlenmek konumunu belirtir.  
   
  [in] [out] *pParentWnd*  
- Miniframe penceresinin üst çerçeve belirtir. Bu değer olmamalıdır `NULL`.  
+ Mini çerçeve gizlenmek üst çerçevenin belirtir. Bu değer NULL olmamalıdır.  
   
  [in] [out] *pContext*  
- Kullanıcı tanımlı içerik belirtir.  
+ Kullanıcı tanımlı bağlam belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` pencerenin başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
+ Pencerenin başarıyla oluşturulursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir miniframe penceresi iki adımda oluşturulur. İlk olarak, framework oluşturur bir `CPaneFrameWnd` nesnesi. İkinci olarak, çağıran `Create` Windows miniframe penceresi oluşturmak ve ona eklemek için `CPaneFrameWnd` nesnesi.  
+ Bir mini çerçeve gizlenmek iki adımda oluşturulur. İlk olarak, çerçeve oluşturur bir `CPaneFrameWnd` nesne. İkinci olarak, çağıran `Create` Windows mini çerçeve gizlenmek oluşturup buna eklemek için `CPaneFrameWnd` nesne.  
   
 ##  <a name="createex"></a>  CPaneFrameWnd::CreateEx  
- Miniframe pencere oluşturur ve ona ekler [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) nesnesi.  
+ Bir mini çerçeve gizlenmek oluşturur ve ona ekler [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) nesne.  
   
 ```  
 virtual BOOL CreateEx(
@@ -443,28 +443,28 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *dwStyleEx*  
- Genişletilmiş pencere stilini belirtir. Daha fazla bilgi için bkz: [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
+ Genişletilmiş pencere stilini belirtir. Daha fazla bilgi için [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
  [in] *lpszWindowName*  
  Miniframe penceresinde görüntülenecek metni belirtir.  
   
  [in] *dwStyle*  
- Pencere stili belirtir. Daha fazla bilgi için bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+ Pencere stilini belirtir. Daha fazla bilgi için [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *rect*  
- İlk boyutunu ve konumunu miniframe penceresinin belirtir.  
+ [in] *dikdörtgen*  
+ Başlangıç boyutu ve Mini çerçeve gizlenmek konumunu belirtir.  
   
  [in] [out] *pParentWnd*  
- Miniframe penceresinin üst çerçeve belirtir. Bu değer olmamalıdır `NULL`.  
+ Mini çerçeve gizlenmek üst çerçevenin belirtir. Bu değer NULL olmamalıdır.  
   
  [in] [out] *pContext*  
- Kullanıcı tanımlı içerik belirtir.  
+ Kullanıcı tanımlı bağlam belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` pencerenin başarıyla oluşturulduysa; Aksi takdirde `FALSE`.  
+ Pencerenin başarıyla oluşturulursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir miniframe penceresi iki adımda oluşturulur. İlk olarak, framework oluşturur bir `CPaneFrameWnd` nesnesi. İkinci olarak, çağıran `Create` Windows miniframe penceresi oluşturmak ve ona eklemek için `CPaneFrameWnd` nesnesi.  
+ Bir mini çerçeve gizlenmek iki adımda oluşturulur. İlk olarak, çerçeve oluşturur bir `CPaneFrameWnd` nesne. İkinci olarak, çağıran `Create` Windows mini çerçeve gizlenmek oluşturup buna eklemek için `CPaneFrameWnd` nesne.  
   
 ##  <a name="dockpane"></a>  CPaneFrameWnd::DockPane  
  Bölmesinde docks.  
@@ -475,13 +475,13 @@ virtual CDockablePane* DockPane(BOOL& bWasDocked);
   
 ### <a name="parameters"></a>Parametreler  
  [out] *bWasDocked*  
- `TRUE` bölmesinde zaten sabitlenmiş; Aksi takdirde `FALSE`.  
+ Bölmesinde zaten sabitlenmiş TRUE; Aksi durumda FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlem başarılı olursa `CDockablePane` bölmesi yuvalanmış olduğunu; tersi durumda `NULL`.  
+ İşlem başarılı olursa `CDockablePane` bölmenin yerleştirilmiş için; Aksi takdirde NULL.  
   
 ##  <a name="findfloatingpanebyid"></a>  CPaneFrameWnd::FindFloatingPaneByID  
- Belirtilen denetim kimliği bölmesiyle kayan bölmeleri genel listede bulur.  
+ Belirtilen denetim kimliği içeren bölme kayan bölmeleri genel listesinde bulur.  
   
 ```  
 static CBasePane* FindFloatingPaneByID(UINT nID);
@@ -492,10 +492,10 @@ static CBasePane* FindFloatingPaneByID(UINT nID);
  Bulunacak bölmesinde denetim Kimliğini temsil eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen denetim kimliği bölmesiyle; Aksi takdirde, `NULL`, hiçbir bölmesinde belirtilen denetim kimliği.  
+ Belirtilen denetim kimliği bölmesiyle; hiçbir bölmesinde belirtilen denetim kimliği varsa, aksi takdirde, NULL  
   
 ##  <a name="framefrompoint"></a>  CPaneFrameWnd::FrameFromPoint  
- Belirtilen noktası içeren bir kısa çerçeve pencere bulur.  
+ Belirtilen nokta içeren bir mini çerçeve pencere bulur.  
   
 ```  
 static CPaneFrameWnd* __stdcall FrameFromPoint(
@@ -510,32 +510,32 @@ static CPaneFrameWnd* __stdcall FrameFromPoint(
  Ekran koordinatları noktası.  
   
  [in] *nSensitivity*  
- Kısa çerçeve penceresi arama alanı bu boyutunu artırabilirsiniz. Belirtilen noktasını artan alanında düşerse bir kısa çerçeve pencere arama ölçütleri karşılar.  
+ Mini çerçeve arama alanının bu boyutunu artırabilirsiniz. Belirtilen noktasını artan alanında düşerse bir mini çerçeve arama ölçütleri karşılar.  
   
  [in] *pFrameToExclude*  
- Arama dışlamak için bir kısa çerçeve penceresi belirtir.  
+ Arama hariç tutmak için bir mini çerçeve penceresi belirtir.  
   
  [in] *bFloatMultiOnly*  
- Varsa `TRUE`, yalnızca sahip kısa çerçeve pencereleri arama `CBRS_FLOAT_MULTI` stili. Varsa `FALSE`, tüm kısa çerçeve pencereleri arayın.  
+ TRUE ise yalnızca CBRS_FLOAT_MULTI stil Mini çerçeve pencereleri arayın. FALSE ise, tüm Mini çerçeve pencereleri arayın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi içeren bir kısa çerçeve pencere *pt*; Aksi halde `NULL`.  
+ Bir işaretçi içeren bir mini çerçeve pencere *pt*; Aksi takdirde NULL.  
   
 ##  <a name="getcaptionheight"></a>  CPaneFrameWnd::GetCaptionHeight  
- Kısa çerçeve penceresi yazısı yüksekliğini döndürür.  
+ Mini çerçeve pencere başlığı yüksekliğini döndürür.  
   
 ```  
 virtual int GetCaptionHeight() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kısa çerçeve penceresi piksel cinsinden yüksekliği.  
+ Mini çerçeve penceresinin piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir kısa çerçeve penceresi yüksekliğini belirlemek için bu yöntemi çağırın. Varsayılan olarak, yükseklik ayarlamak `SM_CYSMCAPTION`. Daha fazla bilgi için bkz: [GetSystemMetrics işlevi](http://msdn.microsoft.com/library/windows/desktop/ms724385).  
+ Bir mini çerçeve yüksekliğini belirlemek için bu yöntemi çağırın. Varsayılan olarak, yükseklik SM_CYSMCAPTION için ayarlanır. Daha fazla bilgi için [GetSystemMetrics işlevi](http://msdn.microsoft.com/library/windows/desktop/ms724385).  
   
 ##  <a name="getcaptionrect"></a>  CPaneFrameWnd::GetCaptionRect  
- Bir kısa çerçeve penceresi başlığı sınırlayıcı dikdörtgenini hesaplar.  
+ Bir mini çerçeve pencere başlığı sınırlayıcı dikdörtgenini hesaplar.  
   
 ```  
 virtual void GetCaptionRect(CRect& rectCaption) const;  
@@ -543,23 +543,23 @@ virtual void GetCaptionRect(CRect& rectCaption) const;
   
 ### <a name="parameters"></a>Parametreler  
  [out] *rectCaption*  
- Ekran koordinatları kısa çerçeve pencere başlığında, konumu ve boyutu içerir.  
+ Ekran koordinatları Mini çerçeve pencere başlığı konumunu ve boyutunu içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir kısa çerçeve penceresi başlığı sınırlayıcı dikdörtgenini hesaplamak için çerçevesi tarafından çağrılır.  
+ Bu yöntem bir mini çerçeve pencere başlığı sınırlayıcı dikdörtgenini hesaplamak için framework tarafından çağırılır.  
   
 ##  <a name="getcaptiontext"></a>  CPaneFrameWnd::GetCaptionText  
- Başlık metni döndürür.  
+ Açıklamalı alt yazı metni döndürür.  
   
 ```  
 virtual CString GetCaptionText();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kısa çerçeve penceresi başlık metni.  
+ Mini çerçevenin başlık metni.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Başlık metni görüntülediğinde, bu yöntem çerçevesi tarafından çağrılır.  
+ Bu yöntem açıklamalı alt yazı metni görüntüler çerçevesi tarafından çağrılır.  
   
 ##  <a name="getdockingmanager"></a>  CPaneFrameWnd::GetDockingManager  
 
@@ -582,21 +582,21 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerleştirme modu. Aşağıdaki değerlerden biri:  
   
-- `DT_STANDARD`  
+- DT_STANDARD  
   
-- `DT_IMMEDIATE`  
+- DT_IMMEDIATE  
   
-- `DT_SMART`  
+- DT_SMART  
   
 ##  <a name="getfirstvisiblepane"></a>  CPaneFrameWnd::GetFirstVisiblePane  
- Bir kısa çerçeve penceresinde bulunan ilk görünür bölmesine döndürür.  
+ Bir mini çerçeve penceresinde yer alan ilk görünür bölmesine döndürür.  
   
 ```  
 virtual CWnd* GetFirstVisiblePane() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kısa çerçeve penceresi ilk bölmesinde veya `NULL` kısa çerçeve penceresi yok bölmeleri içeriyorsa.  
+ İlk bölme Mini çerçeve veya mini çerçevenin hiçbir bölmeleri içeriyorsa NULL.  
   
 ##  <a name="gethotpoint"></a>  CPaneFrameWnd::GetHotPoint  
 
@@ -610,26 +610,26 @@ CPoint GetHotPoint() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getpane"></a>  CPaneFrameWnd::GetPane  
- Kısa çerçeve penceresinde bulunan bir bölme döndürür.  
+ Mini çerçeve penceresinde yer alan bir bölme döndürür.  
   
 ```  
 virtual CWnd* GetPane() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Mini çerçevenin içerdiği bölmesinde veya `NULL` kısa çerçeve penceresi yok bölmeleri içeriyorsa.  
+ Mini çerçeve penceresi yok bölmeleri içeriyorsa, Mini çerçeve veya NULL içerdiği bölme.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getpanecount"></a>  CPaneFrameWnd::GetPaneCount  
- Bir kısa çerçeve penceresinde bulunan bölmeleri sayısını döndürür.  
+ Bir mini çerçeve penceresinde bulunan bölmeleri sayısını döndürür.  
   
 ```  
 virtual int GetPaneCount() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kısa çerçeve penceresi bölmelerinde sayısı. Bu değer sıfır olabilir.  
+ Mini çerçeve pencere bölmelerinde sayısı. Bu değer sıfır olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -667,7 +667,7 @@ CRect GetRecentFloatingRect() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getvisiblepanecount"></a>  CPaneFrameWnd::GetVisiblePaneCount  
- Bir kısa çerçeve penceresinde bulunan görünür bölmeleri sayısını döndürür.  
+ Bir mini çerçeve penceresinde bulunan görünür bölmeleri sayısını döndürür.  
   
 ```  
 virtual int GetVisiblePaneCount() const;  
@@ -679,7 +679,7 @@ virtual int GetVisiblePaneCount() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="hittest"></a>  CPaneFrameWnd::HitTest  
- Belirli bir anda bir kısa çerçeve penceresi hangi kısmının olduğunu belirler.  
+ Belirli bir anda hangi Mini çerçevenin parçası olduğunu belirler.  
   
 ```  
 virtual LRESULT HitTest(
@@ -692,24 +692,24 @@ virtual LRESULT HitTest(
  Test noktası.  
   
  [in] *bDetectCaption*  
- Varsa `TRUE`, resim yazısını karşı noktası denetleyin. Varsa `FALSE`, resim yazısını yoksay.  
+ TRUE ise caption karşı noktası denetleyin. FALSE ise caption yoksayın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden biri:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|`HTNOWHERE`|Kısa çerçeve penceresi dışında noktasıdır.|  
-|`HTCLIENT`|İstemci alanında noktasıdır.|  
-|`HTCAPTION`|Resim yazısını noktasıdır.|  
-|`HTTOP`|En üstte noktasıdır.|  
-|`HTTOPLEFT`|Sol üst kısmında noktasıdır.|  
-|`HTTOPRIGHT`|Sağ üst kısmında noktasıdır.|  
-|`HTLEFT`|Solda noktasıdır.|  
-|`HTRIGHT`|Sağ taraftaki noktasıdır.|  
-|`HTBOTTOM`|Pencerenin alt noktasıdır.|  
-|`HTBOTTOMLEFT`|Sol alt kısmındaki noktasıdır.|  
-|`HTBOTTOMRIGHT`|Pencerenin sağ alt noktasıdır.|  
+|HTNOWHERE|Mini çerçeve penceresi dışında noktasıdır.|  
+|HTCLIENT|İstemci alanında noktasıdır.|  
+|HTCAPTION|Resim yazısını noktasıdır.|  
+|HTTOP|En üstünde noktasıdır.|  
+|HTTOPLEFT|Sol üst köşede noktasıdır.|  
+|HTTOPRIGHT|Sağ üst kısımdaki noktasıdır.|  
+|HTLEFT|Solda noktasıdır.|  
+|HTRIGHT|Sağ taraftaki noktasıdır.|  
+|HTBOTTOM|Alttaki noktasıdır.|  
+|HTBOTTOMLEFT|Sol alt kısmında noktasıdır.|  
+|HTBOTTOMRIGHT|Alt sağ noktasıdır.|  
   
 ##  <a name="iscaptured"></a>  CPaneFrameWnd::IsCaptured  
 
@@ -734,44 +734,44 @@ BOOL IsDelayShow() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isrolldown"></a>  CPaneFrameWnd::IsRollDown  
- Bir kısa çerçeve penceresi aşağı alındı olup olmadığını belirler.  
+ Bir mini çerçeve aşağı toplu olup olmadığını belirler.  
   
 ```  
 virtual BOOL IsRollDown() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` kısa çerçeve penceresi aşağı geri alınması gerekir Aksi takdirde `FALSE`.  
+ Mini çerçeve aşağı alınması gerekiyorsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir kısa çerçeve penceresi aşağı alındı olup olmadığını belirlemek için çerçevesi tarafından çağrılır. Sahip en az bir bölmesinde içeriyorsa toplaması/rolldown özelliği için bir kısa çerçeve penceresi etkinleştirilmişse `AFX_CBRS_AUTO_ROLLUP` bayrağı. Bir bölme oluşturduğunuzda bu bayrağı ayarlanır. Daha fazla bilgi için bkz: [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
+ Bu yöntem bir mini çerçeve aşağı toplu olup olmadığını belirlemek için framework tarafından çağırılır. AFX_CBRS_AUTO_ROLLUP bayrağına sahip en az bir bölmesinde içeriyorsa, toplama/rolldown özelliği bir mini çerçeve için etkin. Bir bölme oluşturulduğunda bu bayrağı ayarlanır. Daha fazla bilgi için [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
- Varsayılan olarak, framework fare işaretçisini penceresini aşağı geri alınması olup olmadığını belirlemek için kısa çerçeve penceresi sınırlayıcı dikdörtgenini içinde olup olmadığını denetler. Bir türetilmiş sınıfta bu davranışı geçersiz kılabilirsiniz.  
+ Varsayılan olarak, çerçeve, fare işaretçisini penceresini aşağı alınması gerekip gerekmediğini belirlemek için Mini çerçeve penceresi dikdörtgen içinde olup olmadığını denetler. Türetilen bir sınıfta bu davranışı geçersiz kılabilirsiniz.  
   
 ##  <a name="isrollup"></a>  CPaneFrameWnd::IsRollUp  
- Bir kısa çerçeve penceresi toplanan olup olmadığını belirler.  
+ Bir mini çerçeve toplanan olup olmadığını belirler.  
   
 ```  
 virtual BOOL IsRollUp() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` kısa çerçeve penceresi döküm sunulur Aksi takdirde `FALSE`.  
+ Mini çerçeve sağlık dökümü TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir kısa çerçeve penceresi toplanan olup olmadığını belirlemek için çerçevesi tarafından çağrılır. Sahip en az bir bölmesinde içeriyorsa toplaması/rolldown özelliği için bir kısa çerçeve penceresi etkinleştirilmişse `AFX_CBRS_AUTO_ROLLUP` bayrağı. Bir bölme oluşturduğunuzda bu bayrağı ayarlanır. Daha fazla bilgi için bkz: [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
+ Bu yöntem bir mini çerçeve toplanan olup olmadığını belirlemek için framework tarafından çağırılır. AFX_CBRS_AUTO_ROLLUP bayrağına sahip en az bir bölmesinde içeriyorsa, toplama/rolldown özelliği bir mini çerçeve için etkin. Bir bölme oluşturulduğunda bu bayrağı ayarlanır. Daha fazla bilgi için [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).  
   
- Varsayılan olarak, framework fare işaretçisini penceresi geri alınması olup olmadığını belirlemek için kısa çerçeve penceresi sınırlayıcı dikdörtgenini içinde olup olmadığını denetler. Bir türetilmiş sınıfta bu davranışı geçersiz kılabilirsiniz.  
+ Varsayılan olarak, çerçeve, fare işaretçisini pencereyi geri alınması gerekip gerekmediğini belirlemek için Mini çerçeve penceresi dikdörtgen içinde olup olmadığını denetler. Türetilen bir sınıfta bu davranışı geçersiz kılabilirsiniz.  
   
 ##  <a name="killdockingtimer"></a>  CPaneFrameWnd::KillDockingTimer  
- Yerleştirme Zamanlayıcı durdurur.  
+ Yerleştirme Zamanlayıcıyı durdurur.  
   
 ```  
 void KillDockingTimer();
 ```  
   
 ##  <a name="loadstate"></a>  CPaneFrameWnd::LoadState  
- Kayıt defterinden Bölmesi'nin durumu yükler.  
+ Kayıt defterinden bölmedeki durumunu yükler.  
   
 ```  
 virtual BOOL LoadState(
@@ -787,17 +787,17 @@ virtual BOOL LoadState(
  Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bölmesinde durumu başarıyla yüklendiyse; Aksi takdirde `FALSE`.  
+ Bölmesinde durumu başarıyla yüklendi TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_busesavebits"></a>  CPaneFrameWnd::m_bUseSaveBits  
- Sahip pencere sınıfı kaydı belirtir `CS_SAVEBITS` sınıf stili.  
+ CS_SAVEBITS sınıfı stilde pencere sınıfını belirtir.  
   
 ```  
 AFX_IMPORT_DATA static BOOL m_bUseSaveBits;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu statik üye kümesine `TRUE` sahip kısa çerçeve penceresi sınıfını `CS_SAVEBITS` stili. Bu, bir kullanıcının kısa çerçeve penceresi sürüklendiğinde titremeyi azaltmaya yardımcı.  
+ Bu statik üyeye CS_SAVEBITS stilde Mini çerçeve pencere sınıfı kaydı için true olarak ayarlayın. Bu, bir kullanıcı Mini çerçeve sürüklediğinde titremeyi azaltmaya yardımcı olabilir.  
   
 ##  <a name="onbeforedock"></a>  CPaneFrameWnd::OnBeforeDock  
  Yerleştirme mümkün olup olmadığını belirler.  
@@ -807,29 +807,29 @@ virtual BOOL OnBeforeDock();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yerleştirme mümkünse; Aksi takdirde `FALSE`.  
+ Yerleştirme mümkün ise TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="oncheckrollstate"></a>  CPaneFrameWnd::OnCheckRollState  
- Bir kısa çerçeve penceresi yukarı veya aşağı alınması olup olmadığını belirler.  
+ Bir mini çerçeve yukarı veya aşağı aylarına olup olmadığını belirler.  
   
 ```  
 virtual void OnCheckRollState();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir kısa çerçeve penceresi yukarı veya aşağı alınması olup olmadığını belirlemek için çerçevesi tarafından çağrılır.  
+ Bu yöntem bir mini çerçeve yukarı veya aşağı aylarına olup olmadığını belirlemek için framework tarafından çağırılır.  
   
- Varsayılan olarak, framework çağırması [CPaneFrameWnd::IsRollUp](#isrollup) ve [CPaneFrameWnd::IsRollDown](#isrolldown) ve yalnızca uzatır veya kısa çerçeve penceresi geri yükler. Farklı bir görsel efekti kullanmak için bir türetilmiş sınıfta bu yöntemin üzerine yazabilir.  
+ Varsayılan olarak, çerçeve çağrı [CPaneFrameWnd::IsRollUp](#isrollup) ve [CPaneFrameWnd::IsRollDown](#isrolldown) yalnızca uzatır veya mini çerçevenin geri yükler. Türetilen bir sınıfta farklı bir görsel efekt kullanmak için bu yöntemi geçersiz kılabilirsiniz.  
   
 ##  <a name="ondocktorecentpos"></a>  CPaneFrameWnd::OnDockToRecentPos  
- Kısa çerçeve penceresi, en son konumundaki docks.  
+ En son konumunu Mini çerçeve penceresinin docks.  
   
 ```  
 virtual void OnDockToRecentPos();
 ```  
   
 ##  <a name="ondrawborder"></a>  CPaneFrameWnd::OnDrawBorder  
- Bir kısa çerçeve penceresi Kenarlıklar çizer.  
+ Bir mini çerçeve pencere kenarlıklarını çizer.  
   
 ```  
 virtual void OnDrawBorder(CDC* pDC);
@@ -840,17 +840,17 @@ virtual void OnDrawBorder(CDC* pDC);
  Kenarlık çizmek için kullanılan cihaz bağlamı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem kısa çerçeve penceresi Kenarlıkları çizmek için çerçevesi tarafından çağrılır.  
+ Bu yöntem Mini çerçeve penceresinin Kenarlıkları çizmek için framework tarafından çağırılır.  
   
 ##  <a name="onkillrolluptimer"></a>  CPaneFrameWnd::OnKillRollUpTimer  
- Toplama süreölçerini durdurur.  
+ Toplama Zamanlayıcıyı durdurur.  
   
 ```  
 virtual void OnKillRollUpTimer();
 ```  
   
 ##  <a name="onmovepane"></a>  CPaneFrameWnd::OnMovePane  
- Kısa çerçeve penceresi tarafından belirtilen kayma taşır.  
+ Mini çerçeve penceresi tarafından belirtilen bir uzaklık taşır.  
   
 ```  
 virtual void OnMovePane(
@@ -860,32 +860,32 @@ virtual void OnMovePane(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pBar*  
- Bir bölme (göz ardı) için bir işaretçi.  
+ Bir bölme (yoksayıldı) için bir işaretçi.  
   
  [in] *ptOffset*  
- Bölmesinde taşımak üzere uzaklığı.  
+ Bölmesinde taşımak, uzaklığı.  
   
 ##  <a name="onpanerecalclayout"></a>  CPaneFrameWnd::OnPaneRecalcLayout  
- Bir bölme bir kısa çerçeve penceresi içinde düzenini ayarlar.  
+ Bir mini çerçeve penceresi içinde bir bölme düzenini ayarlar.  
   
 ```  
 virtual void OnPaneRecalcLayout();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework bölmesindeki Mini çerçeve penceresi içinde düzenini ayarlamanız gerekir, bu yöntemi çağırır.  
+ Framework bu yöntemi çağırır Mini çerçeve penceresi içinde bir bölme düzenini ayarlamanız gerekir.  
   
- Varsayılan olarak, kısa çerçeve penceresi tam istemci alanını kaplamak için bölmesinde konumlandırıldı.  
+ Varsayılan olarak, Mini çerçeve penceresi tüm istemci alanını kaplayacak şekilde bölmesinde yer alır.  
   
 ##  <a name="onsetrolluptimer"></a>  CPaneFrameWnd::OnSetRollUpTimer  
- Toplama süreölçerini ayarlar.  
+ Toplama Zamanlayıcıyı ayarlar.  
   
 ```  
 virtual void OnSetRollUpTimer();
 ```  
   
 ##  <a name="onshowpane"></a>  CPaneFrameWnd::OnShowPane  
- Kısa çerçeve penceresi bölmesinde gizli ya da görüntülenen çerçevesi tarafından çağrılır.  
+ Bir mini çerçeve bölmesinde gizli veya gösterilen framework tarafından çağırılır.  
   
 ```  
 virtual void OnShowPane(
@@ -898,10 +898,10 @@ virtual void OnShowPane(
  Yüklenmekte olan bölmesinde gösterilen veya gizli.  
   
  [in] *bBilgi Göster*  
- `TRUE` bölmesinde gösterilir `FALSE` bölmesinde gizli değilse.  
+ Bölmesinde gösterilen TRUE; Bölmenin gizli değilse FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kısa çerçeve penceresi bölmesinde gösterileceğini veya gizleneceğini çerçevesi tarafından çağrılır. Varsayılan uygulama hiçbir şey yapmaz.  
+ Bir mini çerçeve bölmesinde gösterilen veya gizli framework tarafından çağırılır. Varsayılan uygulama, hiçbir şey yapmaz.  
   
 ##  <a name="pin"></a>  CPaneFrameWnd::Pin  
 
@@ -916,7 +916,7 @@ void Pin(BOOL bPin = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="panefrompoint"></a>  CPaneFrameWnd::PaneFromPoint  
- Bir kullanıcı tarafından sağlanan noktası bir kısa çerçeve penceresi içinde içeriyorsa, bir bölme döndürür.  
+ Bir mini çerçeve penceresi içinde bir kullanıcı tarafından sağlanan noktası içeriyorsa bir bölme döndürür.  
   
 ```  
 virtual CBasePane* PaneFromPoint(
@@ -927,39 +927,39 @@ virtual CBasePane* PaneFromPoint(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *noktası*  
- Noktayı, kullanıcı, ekran koordinatları olarak tıklattınız.  
+ Noktayı, kullanıcı, ekran koordinatlarında tıkladı.  
   
  [in] *nSensitivity*  
  Bu parametre kullanılmaz.  
   
  [in] *bCheckVisibility*  
- `TRUE` Yalnızca görünür bölmeleri döndürülmesi gerektiğini belirtmek için; Aksi takdirde `FALSE`.  
+ Yalnızca görünür bölmeleri döndürülmesi gerektiğini belirtmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kullanıcı tıklandığında, bölme veya `NULL` hiçbir bölmesinde o konumda varsa.  
+ Kullanıcı tıkladı bölmesinde veya hiçbir bölmesinde o konumda yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Belirtilen noktasını içeren bir bölme elde etmek için bu yöntemi çağırın.  
   
 ##  <a name="redrawall"></a>  CPaneFrameWnd::RedrawAll  
- Tüm kısa çerçeve pencereleri yeniden çizer.  
+ Tüm Mini çerçeve pencereleri yeniden çizer.  
   
 ```  
 static void RedrawAll();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem çağırarak tüm kısa çerçeve pencereleri güncelleştirmeleri [CWnd::RedrawWindow](../../mfc/reference/cwnd-class.md#redrawwindow) her penceresi.  
+ Bu yöntemi çağırarak tüm Mini çerçeve pencereleri güncelleştirmeleri [CWnd::RedrawWindow](../../mfc/reference/cwnd-class.md#redrawwindow) her penceresi için.  
   
 ##  <a name="removenonvalidpanes"></a>  CPaneFrameWnd::RemoveNonValidPanes  
- Geçerli olmayan bölmeleri kaldırmak için çerçevesi tarafından çağrılır.  
+ Geçerli olmayan bölmeleri kaldırmak için framework tarafından çağırılır.  
   
 ```  
 virtual void RemoveNonValidPanes();
 ```  
   
 ##  <a name="removepane"></a>  CPaneFrameWnd::RemovePane  
- Bir bölme kısa çerçeve penceresinden kaldırır.  
+ Bir bölme Mini çerçeve penceresinde kaldırır.  
   
 ```  
 virtual void RemovePane(
@@ -970,16 +970,16 @@ virtual void RemovePane(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pWnd*  
- Bir işaretçi bölmesine kaldırmak için.  
+ Bölmesinde, kaldırmak için bir işaretçi.  
   
  [in] *bDestroy*  
- Kısa çerçeve penceresi ne olacağını belirtir. Varsa *bDestroy* olan `TRUE`, hemen Mini çerçeve penceresi bu yöntemi yok eder. Eğer öyleyse `FALSE`, bu yöntem, belirli bir gecikmeden sonra kısa çerçeve penceresi yok eder.  
+ Mini çerçeve ne olacağını belirtir. Varsa *bDestroy* doğru ise, bu yöntem hemen Mini çerçeve penceresini yok eder. FALSE ise, bu yöntem belirli bir gecikmeden sonra Mini çerçeve penceresini yok eder.  
   
  [in] *bNoDelayedDestroy*  
- Varsa `TRUE`, Gecikmeli yok etme devre dışıdır. Varsa `FALSE`, Gecikmeli yok etme etkindir.  
+ TRUE ise Gecikmeli yok etme devre dışı bırakıldı. FALSE ise Gecikmeli yok etme etkinleştirilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework hemen veya belirli bir gecikmeden sonra kısa çerçeve pencerelerini yok edebilir. Kısa çerçeve pencerelerini yok etme gecikme istiyorsanız, geçirmek `FALSE` içinde *bNoDelayedDestroy* parametresi. Gecikmeli yok etme oluşur framework işlerken `AFX_WM_CHECKEMPTYMINIFRAME` ileti.  
+ Framework, hemen veya belirli bir gecikmeden sonra Mini çerçeve pencerelerini yok edebilirsiniz. Mini çerçeve pencerelerini yok edilmesini geciktirmek istiyorsanız FALSE geçirin *bNoDelayedDestroy* parametresi. Gecikmeli yok etme framework AFX_WM_CHECKEMPTYMINIFRAME ileti işlediğinde oluşur.  
   
 ##  <a name="replacepane"></a>  CPaneFrameWnd::ReplacePane  
  Bir bölme birbiriyle değiştirir.  
@@ -995,10 +995,10 @@ virtual void ReplacePane(
  Özgün bölmesi için bir işaretçi.  
   
  [in] *pBarReplaceWith*  
- Bir işaretçi bölmesine özgün bölmesinde yerini alır.  
+ Özgün bölmesinde değiştirir bölmesi için bir işaretçi.  
   
 ##  <a name="savestate"></a>  CPaneFrameWnd::SaveState  
- Kayıt defterine Bölmesi'nin durumunu kaydeder.  
+ Bölmedeki durumu kayıt defterine kaydeder.  
   
 ```  
 virtual BOOL SaveState(
@@ -1014,10 +1014,10 @@ virtual BOOL SaveState(
  Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` bölmesinde durumu başarıyla kaydedildi Aksi takdirde `FALSE`.  
+ Bölmesinde durumu başarıyla kaydedildi TRUE; Aksi durumda FALSE.  
   
 ##  <a name="setcaptionbuttons"></a>  CPaneFrameWnd::SetCaptionButtons  
- Ayarlar düğmeleri resim yazısı.  
+ Kümeleri düğmeleri açıklamalı alt yazı.  
   
 ```  
 virtual void SetCaptionButtons(DWORD dwButtons);
@@ -1025,15 +1025,15 @@ virtual void SetCaptionButtons(DWORD dwButtons);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *dwButtons*  
- Aşağıdaki değerlerin Bitsel veya birleşimi:  
+ Bit düzeyinde OR birleşimi aşağıdaki değerlerden biri:  
   
-- `AFX_CAPTION_BTN_CLOSE`  
+- AFX_CAPTION_BTN_CLOSE  
   
-- `AFX_CAPTION_BTN_PIN`  
+- AFX_CAPTION_BTN_PIN  
   
-- `AFX_CAPTION_BTN_MENU`  
+- AFX_CAPTION_BTN_MENU  
   
-- `AFX_CAPTION_BTN_CUSTOMIZE`  
+- AFX_CAPTION_BTN_CUSTOMIZE  
   
 ##  <a name="setdelayshow"></a>  CPaneFrameWnd::SetDelayShow  
 
@@ -1060,7 +1060,7 @@ void SetDockingManager(CDockingManager* pManager);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setdockingtimer"></a>  CPaneFrameWnd::SetDockingTimer  
- Yerleştirme Zamanlayıcı ayarlar.  
+ Yerleştirme Zamanlayıcıyı ayarlar.  
   
 ```  
 void SetDockingTimer(UINT nTimeOut);
@@ -1071,7 +1071,7 @@ void SetDockingTimer(UINT nTimeOut);
  Zaman aşımı değerini milisaniye cinsinden.  
   
 ##  <a name="setdockstate"></a>  CPaneFrameWnd::SetDockState  
- Takma durumunu ayarlar.  
+ Yerleştirme durumunu ayarlar.  
   
 ```  
 virtual void SetDockState(CDockingManager* pDockManager);
@@ -1094,7 +1094,7 @@ void SetHotPoint(CPoint& ptNew);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setpredockstate"></a>  CPaneFrameWnd::SetPreDockState  
- Predocking durumunu ayarlamaya çerçevesi tarafından çağrılır.  
+ Predocking durumu ayarlamak için framework tarafından çağırılır.  
   
 ```  
 virtual BOOL SetPreDockState(
@@ -1107,33 +1107,33 @@ virtual BOOL SetPreDockState(
  [in] *preDockState*  
  Olası değerler:  
   
-- `PDS_NOTHING`,  
+- PDS_NOTHING,  
   
-- `PDS_DOCK_REGULAR`,  
+- PDS_DOCK_REGULAR,  
   
-- `PDS_DOCK_TO_TAB`  
+- PDS_DOCK_TO_TAB  
   
  [in] *pBarToDock*  
- Yerleştirme için bölmesinde bir işaretçi.  
+ Yerleştirme bölmesine bir işaretçi.  
   
  [in] *dockMethod*  
  Yerleştirme yöntemi. (Bu parametre yoksayılır.)  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` kısa çerçeve penceresi kilitli ise; `FALSE` yerleştirilmiş olup olmadığını.  
+ Mini çerçeve penceresi yerleştirilmemiş ise TRUE; Sabitlenmişken FALSE.  
   
 ##  <a name="sizetocontent"></a>  CPaneFrameWnd::SizeToContent  
- Böylece bir kapsanan bölmesine eşdeğer bir kısa çerçeve pencere boyutunu ayarlar.  
+ Kapsanan bölmesine eşdeğer olan bir mini çerçeve penceresinin boyutunu ayarlar.  
   
 ```  
 virtual void SizeToContent();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kapsanan bölmesinin boyutunu kısa çerçeve pencere boyutunu ayarlamak için bu yöntemi çağırın.  
+ Bir mini çerçeve penceresinin içerdiği bir bölme boyutunu boyutunu ayarlamak için bu yöntemi çağırın.  
   
 ##  <a name="starttearoff"></a>  CPaneFrameWnd::StartTearOff  
- Tears menü kapalı.  
+ Bir menü tears.  
   
 ```  
 BOOL StartTearOff(CMFCPopu* pMenu);
@@ -1141,10 +1141,10 @@ BOOL StartTearOff(CMFCPopu* pMenu);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pMenu*  
- Bir menüye işaretçi.  
+ Bir menü işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Yöntem başarılı olduysa TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneFrameWnd::StoreRecentDockSiteInfo  
 

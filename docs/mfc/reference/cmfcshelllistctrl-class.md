@@ -52,15 +52,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6862803540a87aed129ace3a05d4e41e9e1ba90
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 939adc0507eee61be432ba8e8f582cfc53005aa0
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040827"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37854001"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
-`CMFCShellListCtrl` Sınıf Windows listesi denetim işlevselliği sunar ve Kabuk öğelerinin bir listesini görüntülemek için özelliği ekleyerek genişletir.  
+`CMFCShellListCtrl` Sınıf Windows liste denetleme işlevlerini sağlar ve bir kabuk öğeleri listesi görüntüleme özelliğini ekleyerek bunu genişletir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -74,32 +74,32 @@ class CMFCShellListCtrl : public CMFCListCtrl
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCShellListCtrl::DisplayFolder](#displayfolder)|Sağlanan bir klasörde yer alan öğeleri listesini görüntüler.|  
-|[CMFCShellListCtrl::DisplayParentFolder](#displayparentfolder)|Şu anda görüntülenen klasörü üst klasörde yer alan öğeleri listesini görüntüler.|  
-|[CMFCShellListCtrl::EnableShellContextMenu](#enableshellcontextmenu)|Etkinleştirir veya kısayol menüsünü devre dışı bırakır.|  
+|[CMFCShellListCtrl::DisplayFolder](#displayfolder)|Belirtilen klasörde bulunan öğeleri listesini görüntüler.|  
+|[CMFCShellListCtrl::DisplayParentFolder](#displayparentfolder)|Şu anda görüntülenen klasörün üst klasörde bulunan öğeleri listesini görüntüler.|  
+|[CMFCShellListCtrl::EnableShellContextMenu](#enableshellcontextmenu)|Etkinleştirir veya kısayol menüsünden devre dışı bırakır.|  
 |[CMFCShellListCtrl::GetCurrentFolder](#getcurrentfolder)|Geçerli klasör yolunu alır.|  
 |[CMFCShellListCtrl::GetCurrentFolderName](#getcurrentfoldername)|Geçerli klasör adını alır.|  
 |[CMFCShellListCtrl::GetCurrentItemIdList](#getcurrentitemidlist)|Geçerli liste denetim öğesi PIDL işaretçisiyle birlikte döndürür.|  
-|[CMFCShellListCtrl::GetCurrentShellFolder](#getcurrentshellfolder)|Bir işaretçi geçerli kabuk klasörünün döndürür.|  
-|[CMFCShellListCtrl::GetItemPath](#getitempath)|Bir öğenin metin yolunu döndürür.|  
+|[CMFCShellListCtrl::GetCurrentShellFolder](#getcurrentshellfolder)|Geçerli kabuk klasörü için bir işaretçi döndürür.|  
+|[CMFCShellListCtrl::GetItemPath](#getitempath)|Bir öğe metinsel yolunu döndürür.|  
 |[CMFCShellListCtrl::GetItemTypes](#getitemtypes)|Liste denetimi tarafından görüntülenen Kabuk öğesi türlerini döndürür.|  
-|[CMFCShellListCtrl::IsDesktop](#isdesktop)|Seçili klasörü Masaüstü klasöründe olup olmadığını denetler.|  
-|[CMFCShellListCtrl::OnCompareItems](#oncompareitems)|İki öğeyi karşılaştırır zaman çerçevesi bu yöntemi çağırır. (Geçersiz kılmaları [CMFCListCtrl::OnCompareItems](../../mfc/reference/cmfclistctrl-class.md#oncompareitems).)|  
-|[CMFCShellListCtrl::OnFormatFileDate](#onformatfiledate)|Liste denetimi tarafından görüntülenen dosya tarihi framework aldığında çağrılır.|  
+|[CMFCShellListCtrl::IsDesktop](#isdesktop)|Şu anda seçili klasör Masaüstü klasöründe olup olmadığını denetler.|  
+|[CMFCShellListCtrl::OnCompareItems](#oncompareitems)|İki öğeleri karşılaştırırken framework bu yöntemi çağırır. (Geçersiz kılmaları [CMFCListCtrl::OnCompareItems](../../mfc/reference/cmfclistctrl-class.md#oncompareitems).)|  
+|[CMFCShellListCtrl::OnFormatFileDate](#onformatfiledate)|Çerçeve listesi denetimi tarafından görüntülenen dosya tarih aldığında çağrılır.|  
 |[CMFCShellListCtrl::OnFormatFileSize](#onformatfilesize)|Liste denetimi dosya boyutunu framework dönüştürür çağrılır.|  
-|[CMFCShellListCtrl::OnGetItemIcon](#ongetitemicon)|Çerçeve bir liste denetim öğesi simgesini aldığında çağrılır.|  
-|[CMFCShellListCtrl::OnGetItemText](#ongetitemtext)|Liste Denetim öğesi metni framework dönüştürür çağrılır.|  
-|[CMFCShellListCtrl::OnSetColumns](#onsetcolumns)|Sütun adlarını ayarlar çerçevesi tarafından çağrılır.|  
-|[CMFCShellListCtrl::Refresh](#refresh)|Yeniler ve liste denetimi şekilde yeniden boyar.|  
+|[CMFCShellListCtrl::OnGetItemIcon](#ongetitemicon)|Çerçeve listesi denetim öğesini simgesini aldığında çağrılır.|  
+|[CMFCShellListCtrl::OnGetItemText](#ongetitemtext)|Çerçeve listesi denetim öğesini metnini dönüştürür çağrılır.|  
+|[CMFCShellListCtrl::OnSetColumns](#onsetcolumns)|Sütun adlarını ayarlar framework tarafından çağırılır.|  
+|[CMFCShellListCtrl::Refresh](#refresh)|Yenilenir ve liste denetimi halinde yeniden boyar.|  
 |[CMFCShellListCtrl::SetItemTypes](#setitemtypes)|Liste denetimi tarafından görüntülenen öğelerin türünü ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CMFCShellListCtrl` Sınıfını genişleten işlevselliğini [CMFCListCtrl sınıfı](../../mfc/reference/cmfclistctrl-class.md) Windows Kabuk öğeleri listelemek, program etkinleştirerek. Bir liste görünümü Gezgini penceresi için kullanılan görüntü biçimi gibidir.  
+ `CMFCShellListCtrl` Sınıf işlevselliğini genişleten [CMFCListCtrl sınıfı](../../mfc/reference/cmfclistctrl-class.md) etkinleştirerek programınızın Windows Kabuk öğeleri listesi. Bir liste görünümünün bir Gezgin penceresi için kullanılan görüntü biçimi gibidir.  
   
- A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) nesne ilişkilendirilebilir bir `CMFCShellListCtrl` tam Gezgini penceresi oluşturulacak nesne. Ardından, bir öğeyi seçerek `CMFCShellTreeCtrl` neden olacak `CMFCShellListCtrl` seçili öğenin içeriğini listelemek için nesne.  
+ A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) nesne ilişkili bir `CMFCShellListCtrl` eksiksiz bir Gezgini penceresi oluşturulacak nesne. Ardından, bir öğeyi seçerek `CMFCShellTreeCtrl` açacak `CMFCShellListCtrl` seçilen öğenin içeriğini listelemek için nesne.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCShellListCtrl` sınıf ve o anda görüntülenen klasörün üst klasörünü görüntüleme. Bu kod parçacığını parçası olan [Gezgini örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir nesnenin oluşturulacağı gösterilmektedir `CMFCShellListCtrl` sınıfı ve şu anda görüntülenen klasörün üst klasörü görüntüleme. Bu kod parçacığı parçasıdır [Gezgini örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_Explorer#1](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_1.h)]  
 [!code-cpp[NVC_MFC_Explorer#2](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_2.cpp)]  
@@ -122,7 +122,7 @@ class CMFCShellListCtrl : public CMFCListCtrl
  **Başlık:** afxshelllistCtrl.h  
   
 ##  <a name="displayfolder"></a>  CMFCShellListCtrl::DisplayFolder  
- Sağlanan klasörde yer alan öğeleri listesini görüntüler.  
+ Belirtilen klasörde bulunan öğeleri listesini görüntüler.  
   
 ```  
 virtual HRESULT DisplayFolder(LPCTSTR lpszPath);
@@ -134,20 +134,20 @@ virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
  Bir klasörün yolunu içeren bir dize.  
   
  [in] *lpItemInfo*  
- Bir işaretçi bir `LPAFX_SHELLITEMINFO` görüntülemek için bir klasör açıklar yapısı.  
+ Bir işaretçi bir `LPAFX_SHELLITEMINFO` açıklayan görüntülemek için bir klasör yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK` başarılı olursa; `E_FAIL` Aksi takdirde.  
+ Başarılıysa S_OK; E_FAIL Aksi takdirde.  
   
 ##  <a name="displayparentfolder"></a>  CMFCShellListCtrl::DisplayParentFolder  
- Güncelleştirmeleri [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) şu anda görüntülenen klasörün üst klasörünü görüntülenecek nesne.  
+ Güncelleştirmeleri [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) şu anda görüntülenen klasörün üst klasörü görüntülemek için nesne.  
   
 ```  
 virtual HRESULT DisplayParentFolder();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK` başarılı olursa; `E_FAIL` Aksi takdirde.  
+ Başarılıysa S_OK; E_FAIL Aksi takdirde.  
   
 ##  <a name="enableshellcontextmenu"></a>  CMFCShellListCtrl::EnableShellContextMenu  
  Kısayol menüsünü etkinleştirir.  
@@ -161,7 +161,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
  Framework kısayol menüsünü etkinleştirir olup olmadığını belirten bir Boole değeri.  
   
 ##  <a name="getcurrentfolder"></a>  CMFCShellListCtrl::GetCurrentFolder  
- Şu anda seçili olan klasörün yolunu alır [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
+ Şu anda seçili olan klasörün yolunu alır [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesne.  
   
 ```  
 BOOL GetCurrentFolder(CString& strPath) const;  
@@ -169,16 +169,16 @@ BOOL GetCurrentFolder(CString& strPath) const;
   
 ### <a name="parameters"></a>Parametreler  
  [out] *strPath*  
- Yolun yöntemi nereye yazdığını bir dize parametresi referansı.  
+ Bir dize parametresi, yöntemin yol nereye yazdığını başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Seçilen klasör varsa bu yöntem başarısız `CMFCShellListCtrl`.  
+ Seçili klasör varsa, bu yöntem başarısız `CMFCShellListCtrl`.  
   
 ##  <a name="getcurrentfoldername"></a>  CMFCShellListCtrl::GetCurrentFolderName  
- Şu anda seçili olan klasörün adını alır [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
+ Şu anda seçili klasörde bulunan adını alır [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesne.  
   
 ```  
 BOOL GetCurrentFolderName(CString& strName) const;  
@@ -186,13 +186,13 @@ BOOL GetCurrentFolderName(CString& strName) const;
   
 ### <a name="parameters"></a>Parametreler  
  [out] *strName*  
- Yöntem adı nereye yazdığını bir dize parametresi referansı.  
+ Yöntem adı nereye yazdığını bir dize parametresi bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Seçilen klasör varsa bu yöntem başarısız `CMFCShellListCtrl`.  
+ Seçili klasör varsa, bu yöntem başarısız `CMFCShellListCtrl`.  
   
 ##  <a name="getcurrentitemidlist"></a>  CMFCShellListCtrl::GetCurrentItemIdList  
  Seçili öğenin PIDL işaretçisiyle birlikte döndürür.  
@@ -202,10 +202,10 @@ LPITEMIDLIST GetCurrentItemIdList() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli öğeye PIDL işaretçisiyle birlikte.  
+ Geçerli öğenin PIDL işaretçisiyle birlikte.  
   
 ##  <a name="getcurrentshellfolder"></a>  CMFCShellListCtrl::GetCurrentShellFolder  
- Seçili öğe için bir işaretçi alır [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
+ Şu anda seçili öğeye bir işaretçi alır [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesne.  
   
 ```  
 const IShellFolder* GetCurrentShellFolder() const;  
@@ -215,10 +215,10 @@ const IShellFolder* GetCurrentShellFolder() const;
  Bir işaretçi [IShellFolder arabirimi](http://msdn.microsoft.com/library/windows/desktop/bb775075) seçili nesne için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem `NULL` hiçbir nesne şu anda seçili değilse.  
+ Şu anda hiçbir nesne seçili değilse bu yöntem NULL döndürür.  
   
 ##  <a name="getitempath"></a>  CMFCShellListCtrl::GetItemPath  
- Öğenin yolunu alır.  
+ Bir öğenin yolunu alır.  
   
 ```  
 BOOL GetItemPath(
@@ -234,13 +234,13 @@ BOOL GetItemPath(
  Liste öğesi dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` başarılı olursa; `FALSE` Aksi takdirde.  
+ Başarılı olursa TRUE; FALSE Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından sağlanan dizin *iItem* tarafından şu anda görüntülenen öğelerin dayalı [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
+ Tarafından sağlanan dizin *iItem* tarafından şu anda görüntülenen öğeler dayalı [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesne.  
   
 ##  <a name="getitemtypes"></a>  CMFCShellListCtrl::GetItemTypes  
- Tarafından görüntülenen öğelerin türünü döndürür [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
+ Tarafından görüntülenen öğelerin türünü döndürür [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesne.  
   
 ```  
 SHCONTF GetItemTypes() const;  
@@ -253,14 +253,14 @@ SHCONTF GetItemTypes() const;
  Listelenen öğelerin türünü ayarlamak için bir `CMFCShellListCtrl`, çağrı [CMFCShellListCtrl::SetItemTypes](#setitemtypes).  
   
 ##  <a name="isdesktop"></a>  CMFCShellListCtrl::IsDesktop  
- Klasörü, olup olmadığını belirler görüntülenen [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesne Masaüstü klasördür.  
+ Klasör, olup olmadığını belirler. görüntülenen [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) Masaüstü klasöründe nesnedir.  
   
 ```  
 BOOL IsDesktop() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Görüntülenen klasör Masaüstü klasörse; `FALSE` Aksi takdirde.  
+ Görüntülenen klasörü Masaüstü klasöründe ise TRUE; FALSE Aksi takdirde.  
   
 ##  <a name="oncompareitems"></a>  CMFCShellListCtrl::OnCompareItems  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -282,7 +282,7 @@ virtual int OnCompareItems(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="onformatfiledate"></a>  CMFCShellListCtrl::OnFormatFileDate  
- Çerçeve bir dizeye bir nesneyle ilişkili tarih dönüştürmeniz gerekir, bu yöntemi çağırır.  
+ Framework bu yöntemi çağırır tarihi bir dizeye bir nesneyle ilişkilendirilmiş dönüştürmeniz gerekir.  
   
 ```  
 virtual void OnFormatFileDate(
@@ -292,16 +292,16 @@ virtual void OnFormatFileDate(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *tmFile*  
- Bir dosyayla ilişkili tarih.  
+ Bir dosya ile ilişkilendirilmiş tarih.  
   
  [out] *str*  
- Biçimlendirilmiş dosyası tarih içeren bir dize.  
+ Bir dosya tarih içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman bir [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesne bir dosyayla ilişkili tarihi görüntüler, bunu, tarihin dize biçimine dönüştürmeniz gerekir. `CMFCShellListCtrl` Bu dönüştürme yapmak için bu yöntemi kullanır. Varsayılan olarak, bu yöntem tarih biçiminde bir dizeye için geçerli yerel ayarı kullanır.  
+ Olduğunda bir [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi bir dosya ile ilişkilendirilmiş tarihi görüntüler, onu o tarih dize biçimine dönüştürmeniz gerekir. `CMFCShellListCtrl` Bu dönüştürme yapmak için bu yöntemi kullanır. Varsayılan olarak, bu yöntem bir dize olarak tarihi biçimlendirmek için geçerli yerel ayarı kullanır.  
   
 ##  <a name="onformatfilesize"></a>  CMFCShellListCtrl::OnFormatFileSize  
- Bir dizeyi bir nesnenin boyutu dönüştürdüğünde framework bu yöntemi çağırır.  
+ Framework bu yöntemi çağırır, bir nesnenin boyutunu bir dizeye dönüştürür.  
   
 ```  
 virtual void OnFormatFileSize(
@@ -311,16 +311,16 @@ virtual void OnFormatFileSize(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lFileSize*  
- Framework görüntüler dosya boyutu.  
+ Framework görüntüleyecek dosyasının boyutu.  
   
  [out] *str*  
- Biçimlendirilmiş dosya boyutu içeren bir dize.  
+ Biçimlendirilmiş dosya boyutunu içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman bir [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesne gereken bir dosyanın boyutunu görüntülemek, dosya boyutu bir dize biçimine dönüştürmeniz gerekir. `CMFCShellListCtrl` Bu dönüştürme yapmak için bu yöntemi kullanır. Varsayılan olarak, bu yöntem dosya boyutunu bayt, kaynağı için kilobayt dönüştürür ve boyutu dizeye biçimlendirmek için geçerli yerel ayarı kullanır.  
+ Olduğunda bir [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesne gereken bir dosyanın boyutunu görüntülemek, dosya boyutu bir dize biçimine dönüştürmeniz gerekir. `CMFCShellListCtrl` Bu dönüştürme yapmak için bu yöntemi kullanır. Varsayılan olarak, bu yöntem, dosya boyutunu bayt için kilobayt dönüştürür ve ardından boyutu dize olarak biçimlendirmek için geçerli yerel ayarı kullanır.  
   
 ##  <a name="ongetitemicon"></a>  CMFCShellListCtrl::OnGetItemIcon  
- Çerçeve bir kabuk listesi öğesiyle ilişkili simgeyi almak için bu yöntemi çağırır.  
+ Framework bir kabuk liste öğesi ile ilişkilendirilen simgesini almak için bu yöntemi çağırır.  
   
 ```  
 virtual int OnGetItemIcon(
@@ -333,18 +333,18 @@ virtual int OnGetItemIcon(
  Öğe dizini.  
   
  [in] *pItem*  
- A `LPAFX_SHELLITEMINFO` öğeyi açıklayan parametre.  
+ Öğenin açıkladığı LPAFX_SHELLITEMINFO parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa simge görüntüsünün dizinini; işlev başarısız olursa -1.  
+ Başarılı olursa simge görüntüsü dizini; işlev başarısız olursa -1.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Simge görüntüsü dizini sistem görüntüsü listede temel alır.  
+ Simge görüntü dizini, sistem görüntüsü listede temel alır.  
   
- Varsayılan olarak, bu yöntem dayanan *pItem* parametresi. Değeri *iItem* varsayılan uygulamasında kullanılmaz. Kullanabileceğiniz *iItem* özel davranışı uygulamak için.  
+ Varsayılan olarak, bu yöntem dayanan *pItem* parametresi. Değerini *iItem* varsayılan uygulamasında kullanılmaz. Kullanabileceğiniz *iItem* özel davranışı uygulamak.  
   
 ##  <a name="ongetitemtext"></a>  CMFCShellListCtrl::OnGetItemText  
- Kabuk öğenin metnini almasının gerektiği zaman çerçevesi bu yöntemi çağırır.  
+ Framework bu yöntemi çağırır Kabuk öğenin metnini almanız gerekir.  
   
 ```  
 virtual CString OnGetItemText(
@@ -358,18 +358,18 @@ virtual CString OnGetItemText(
  Öğe dizini.  
   
  [in] *iColumn*  
- İlgilenilen sütun.  
+ İlgilendiğiniz sütun.  
   
  [in] *pItem*  
- A `LPAFX_SHELLITEMINFO` öğeyi açıklayan parametre.  
+ Öğenin açıkladığı LPAFX_SHELLITEMINFO parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `CString` öğeyle ilişkili metni içerir.  
+ A `CString` öğesiyle ilişkili metin içeriyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Her öğe `CMFCShellListCtrl` nesnesi bir veya daha fazla sütun metin sahip olabilir. Bu yöntem framework çağırır onu ilgilendiği sütun belirtir. Bu işlev el ile çağırırsanız, ilgilendiğiniz sütun belirtmeniz gerekir.  
+ Her öğe `CMFCShellListCtrl` nesnesi, bir veya daha fazla sütun metin olabilir. Framework bu yöntemi çağırdığında, ilgileniyor sütunu belirtir. Bu işlev bir el ile çağırırsanız, ilgilendiğiniz sütun de belirtmeniz gerekir.  
   
- Varsayılan olarak, bu yöntem dayanan *pItem* olduğu için işlem öğesi belirlemek için parametre. Değeri *iItem* varsayılan uygulamasında kullanılmaz.  
+ Varsayılan olarak, bu yöntem dayanan *pItem* , işlenecek öğe belirlemek için parametre. Değerini *iItem* varsayılan uygulamasında kullanılmaz.  
   
 ##  <a name="onsetcolumns"></a>  CMFCShellListCtrl::OnSetColumns  
  Sütun adlarını ayarladığında framework bu yöntemi çağırır.  
@@ -379,23 +379,23 @@ virtual void OnSetColumns();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, dört sütun framework oluşturur bir `CMFCShellListCtrl` nesnesi. Bu sütun adlarının `Name`, `Size`, `Type`, ve `Modified`. Sütunları ve adlarını sayısını özelleştirmek için bu yöntemin üzerine yazabilir.  
+ Varsayılan olarak, çerçeve dört sütun oluşturur. bir `CMFCShellListCtrl` nesne. Bu sütunların adları **adı**, **boyutu**, **türü**, ve **değiştirilen**. Sütunları ve adları sayısını özelleştirmek için bu yöntemi geçersiz kılabilirsiniz.  
   
 ##  <a name="refresh"></a>  CMFCShellListCtrl::Refresh  
- Yeniler ve şekilde yeniden boyar [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
+ Yenilenir ve halinde yeniden boyar [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesne.  
   
 ```  
 virtual HRESULT Refresh();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK` başarılı olursa; Aksi takdirde bir hata değeri.  
+ `S_OK` başarılıysa; Aksi takdirde bir hata değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından görüntülenen öğelerin listesini yenilemek için bu yöntemi çağırabilmeniz `CMFCShellListCtrl` nesnesi.  
+ Tarafından görüntülenen öğelerin listesini yenilemek için bu yöntemi çağırın `CMFCShellListCtrl` nesne.  
   
 ##  <a name="setitemtypes"></a>  CMFCShellListCtrl::SetItemTypes  
- Listelenen öğelerin türünü ayarlar [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi.  
+ Listelenen öğelerin türünü ayarlar [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesne.  
   
 ```  
 void SetItemTypes(SHCONTF nTypes);
@@ -403,10 +403,10 @@ void SetItemTypes(SHCONTF nTypes);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nTypes*  
- Öğe listesi türleri `CMFCShellListCtrl` nesne destekler.  
+ Bir liste öğesi türlerinden `CMFCShellListCtrl` nesne destekler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Öğe türleri listesi hakkında daha fazla bilgi için bkz: [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539).  
+ Öğe türleri listesi hakkında daha fazla bilgi için bkz. [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

@@ -1,5 +1,5 @@
 ---
-title: Temel CString Operations | Microsoft Docs
+title: Temel CString işlemleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,19 +19,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b66b6fc5578960e4b6ec9b392622256b66db9cfa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ccda8d6a1abd51f3463630435a14096edc30439d
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359100"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879926"
 ---
 # <a name="basic-cstring-operations"></a>Temel CString işlemleri
-Bu konuda aşağıdaki temel açıklanmaktadır [CString](../atl-mfc-shared/reference/cstringt-class.md) işlemleri:  
+Bu konu, aşağıdaki temel açıklar [CString](../atl-mfc-shared/reference/cstringt-class.md) işlemleri:  
   
-- [CString nesneleri standart C değişmez değer dizeleri oluşturma](#_core_creating_cstring_objects_from_standard_c_literal_strings)  
+- [Standart C değişmez değer dizeleri CString nesneleri oluşturma](#_core_creating_cstring_objects_from_standard_c_literal_strings)  
   
-- [Bir CString tek tek karakter erişme](#_core_accessing_individual_characters_in_a_cstring)  
+- [Tek bir CString karakterler erişme](#_core_accessing_individual_characters_in_a_cstring)  
   
 - [Birleştirme iki CString nesneleri](#_core_concatenating_two_cstring_objects)  
   
@@ -39,42 +39,42 @@ Bu konuda aşağıdaki temel açıklanmaktadır [CString](../atl-mfc-shared/refe
   
 - [CString nesneleri dönüştürme](#_core_converting_cstring_objects)  
   
- `Class CString` sınıf şablonunu temel alarak [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md). `CString` olan bir `typedef` , `CStringT`. Daha kesin olarak `CString` olan bir `typedef` , bir *açık uzmanlık* , `CStringT`, bir sınıf tanımlamak için bir sınıf şablonu kullanmak için yaygın bir yolu değil. Benzer şekilde tanımlanan sınıflar `CStringA` ve `CStringW`.  
+ `Class CString` sınıf şablonu temel alan [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md). `CString` olan bir **typedef** , `CStringT`. Daha fazla tam olarak `CString` olduğu bir **typedef** , bir *açık özelleştirme* , `CStringT`, bir sınıf tanımlamak için bir sınıf şablonu kullanmak için yaygın bir yolu olan. Benzer şekilde tanımlanan sınıflar `CStringA` ve `CStringW`.  
   
- `CString`, `CStringA`, ve `CStringW` atlstr.h tanımlanır. `CStringT` cstringt.h içinde tanımlanmıştır.  
+ `CString`, `CStringA`, ve `CStringW` yönelik baskılamayı kaldırma içinde tanımlanır. `CStringT` cstringt.h içinde tanımlanır.  
   
- `CString`, `CStringA`, ve `CStringW` bir dizi yöntem ve işleçler tarafından tanımlanan her alma `CStringT` destekledikleri dize verilerini ile kullanım için. Yinelenen ve bazı durumlarda, yöntemlerin bazıları C çalışma zamanı kitaplıkları dize hizmetlerini aşan.  
+ `CString`, `CStringA`, ve `CStringW` bir dizi yöntem ve işleçleri tarafından tanımlanan her alma `CStringT` destekledikleri dize verileri ile kullanmak için. Bazı yöntemlere yinelenen ve bazı durumlarda, C çalışma zamanı kitaplıklarının dize Hizmetleri aşan.  
   
- Not: `CString` yerel bir sınıftır. C + kullanmak için bir dize sınıfı için +/ CLI yönetilen proje, kullanım `System.String`.  
+ Not: `CString` yerel bir sınıftır. C + kullanım için bir dize sınıfı için +/ CLI yönetilen proje, kullanım `System.String`.  
   
-##  <a name="_core_creating_cstring_objects_from_standard_c_literal_strings"></a> CString nesneleri standart C değişmez değer dizeleri oluşturma  
- C türü değişmez değer dizeleri atayabilirsiniz bir `CString` atayabilirsiniz gibi `CString` başka bir nesne.  
+##  <a name="_core_creating_cstring_objects_from_standard_c_literal_strings"></a> Standart C değişmez değer dizeleri CString nesneleri oluşturma  
+ C stili değişmez değer dizeleri için atayabileceğiniz bir `CString` atayabilirsiniz gibi `CString` başka bir nesne.  
   
--   Bir C değişmez değer dize değerini atayın bir `CString` nesnesi.  
+-   Bir C değişmez değer dize değerini atayın bir `CString` nesne.  
   
  [!code-cpp[NVC_ATLMFC_Utilities#183](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_1.cpp)]  
   
--   Bir değer atamak `CString` başka bir `CString` nesnesi.  
+-   Bir değer atamak `CString` diğerine `CString` nesne.  
   
  [!code-cpp[NVC_ATLMFC_Utilities#184](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_2.cpp)]  
   
-     İçeriği bir `CString` bir nesne kopyalanır `CString` nesne diğerine atanır. Bu nedenle, iki dizeyi dizesi hale karakterlerini başvuru paylaşmayın. Nasıl kullanılacağı hakkında daha fazla bilgi için `CString` nesneleri değerleri olarak bkz [CString semantiği](../atl-mfc-shared/cstring-semantics.md).  
+     İçeriği bir `CString` bir nesne kopyalanır `CString` nesne diğerine atanır. Bu nedenle, iki dizeyi dizesini oluşturan gerçek karakterleri başvuru paylaşmayın. Nasıl kullanılacağı hakkında daha fazla bilgi için `CString` değerleri olarak bkz [CString semantiği](../atl-mfc-shared/cstring-semantics.md).  
   
     > [!NOTE]
-    >  ANSI veya Unicode için derlenebilir böylece uygulamanız yazmak için değişmez değer dizeleri _T makrosu kullanarak kodlayın. Daha fazla bilgi için bkz: [Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).  
+    >  Böylece ANSI veya Unicode için derlenebilir uygulamanızı yazmak için değişmez değer dizeleri _T makrosu kullanarak kod. Daha fazla bilgi için [Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).  
   
-##  <a name="_core_accessing_individual_characters_in_a_cstring"></a> Bir CString tek tek karakter erişme  
- Tek tek karakter erişebileceği bir `CString` kullanarak nesne `GetAt` ve `SetAt` yöntemleri. Dizi öğesi veya alt simge, işleci ([]) yerine kullanabilirsiniz `GetAt` tek tek karakterleri almak için. (Bu erişilirken dizi öğeleri standart C stilinde dizeleri olduğu dizine göre benzer.) Dizin için değerleri `CString` karakterlerdir sıfır tabanlı.  
+##  <a name="_core_accessing_individual_characters_in_a_cstring"></a> Tek bir CString karakterler erişme  
+ Tek karakterler erişebileceğiniz bir `CString` kullanarak nesne `GetAt` ve `SetAt` yöntemleri. Dizi öğesi veya alt simge işleci ([]) yerine kullanabilirsiniz `GetAt` karakterlerin tek tek almak için. (Bu erişimi dizi öğeleri, standart C stili dizeler olduğu gibi bir dizine göre benzer.) Dizin değerlerini `CString` sıfır tabanlı karakter.  
   
 ##  <a name="_core_concatenating_two_cstring_objects"></a> Birleştirme iki CString nesneleri  
- İki birleştirmek için `CString` nesneleri, birleştirme işleçleri kullanın (+ veya +=) gibi.  
+ İki birleştirmek için `CString` nesneleri, birleştirme işleçleri kullanın (+ veya +=) aşağıdaki gibi.  
   
  [!code-cpp[NVC_ATLMFC_Utilities#185](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_3.cpp)]  
   
- Birleştirme işleçleri için en az bir değişken (+ veya +=) olmalıdır bir `CString` nesnesi, ancak bir sabit karakter dizesi kullanabilirsiniz (örneğin, `"big"`) veya bir `char` (örneğin, ' x') diğer bağımsız değişkeni.  
+ Birleştirme işleçleri için en az bir bağımsız değişken (+ veya +=) olmalıdır bir `CString` nesne, ancak bir sabit karakter dizesi kullanabilirsiniz (örneğin, `"big"`) veya bir **char** (örneğin, ' x'), diğer bağımsız değişkeni.  
   
 ##  <a name="_core_comparing_cstring_objects"></a> CString nesneleri karşılaştırma  
- `Compare` Yöntemi ve == işleci için `CString` eşdeğerdir. `Compare`, `operator==`, ve `CompareNoCase` MBCS ve Unicode farkında; olduğundan `CompareNoCase` ayrıca büyük küçük harfe duyarlıdır. `Collate` Yöntemi `CString` yerel ayara duyarlı ve genellikle daha yavaş `Compare`. Kullanım `Collate` yalnızca burada, sıralayarak uymanız gerekir kuralları belirtildiği şekilde geçerli bölgeye göre.  
+ `Compare` Yöntemi ve == işleci için `CString` eşdeğerdir. `Compare`, **işleç ==**, ve `CompareNoCase` MBCS ve Unicode; farkında `CompareNoCase` ayrıca büyük küçük harfe duyarlıdır. `Collate` Yöntemi `CString` yerel ayar duyarlı ve genellikle daha yavaş ise `Compare`. Kullanım `Collate` yalnızca burada, sıralama uymanız gerekir kuralları belirtildiği gibi geçerli yerel ayar tarafından.  
   
  Aşağıdaki tabloda kullanılabilir gösterilmektedir [CString](../atl-mfc-shared/reference/cstringt-class.md) karşılaştırma işlevleri ve eşdeğer MBCS/Unicode-taşınabilir işlevlerini C Çalışma Zamanı Kitaplığı'nda.  
   
@@ -84,15 +84,15 @@ Bu konuda aşağıdaki temel açıklanmaktadır [CString](../atl-mfc-shared/refe
 |`CompareNoCase`|`_mbsicmp`|`_wcsicmp`|  
 |`Collate`|`_mbscoll`|`wcscoll`|  
   
- `CStringT` Sınıfı şablonu tanımlar ilişkisel işleçleri (<, \<=, > =, >, ==, ve! =), tarafından kullanım için kullanılabilir olan `CString`. İki karşılaştırabilirsiniz `CStrings` aşağıdaki örnekte gösterildiği gibi bu işleçleri kullanarak.  
+ `CStringT` Sınıf şablonu ilişkisel işleçlerini tanımlar (<, \<=, > =, >, ==, ve! =), tarafından kullanılmak üzere sağlanan `CString`. İki karşılaştırabilirsiniz `CStrings` aşağıdaki örnekte gösterildiği gibi bu işleçleri kullanarak.  
   
  [!code-cpp[NVC_ATLMFC_Utilities#186](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_4.cpp)]  
   
 ##  <a name="_core_converting_cstring_objects"></a> CString nesneleri dönüştürme  
- CString nesneleri için diğer dize türlerini dönüştürme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Dönüştür arasında çeşitli dize türleri](../text/how-to-convert-between-various-string-types.md).  
+ CString nesneleri diğer dize türlerine dönüştürme hakkında daha fazla bilgi için bkz: [nasıl yapılır: dönüştürme arasında çeşitli dize türleri](../text/how-to-convert-between-various-string-types.md).  
   
-## <a name="using-cstring-with-wcout"></a>CString wcout ile kullanma  
- CString ile kullanmak için `wcout` nesnesine açıkça atamalısınız bir `const wchar_t*` aşağıdaki örnekte gösterildiği gibi:  
+## <a name="using-cstring-with-wcout"></a>Wcout ile CString kullanma  
+ Bir CString ile kullanılacak `wcout` nesneyi açıkça dönüştürmelisiniz bir `const wchar_t*` aşağıdaki örnekte gösterildiği gibi:  
   
 ```  
 CString cs("meow");
@@ -101,11 +101,11 @@ CString cs("meow");
  
 ```  
   
- Cast olmadan `cs` olarak işlem görür bir `void*` ve `wcout` nesnenin adresi yazdırır. Bu davranış C++ standart ile doğru kendileri şablon bağımsız değişken kesintisi ve aşırı çözümlemesi uyumluluğunu arasındaki Zarif etkileşimler kaynaklanır.  
+ Tür dönüştürme olmadan `cs` olarak kabul bir `void*` ve `wcout` nesnenin adresi yazdırır. Bu davranış, C++ standardı ile doğru kendileri şablon bağımsız değişkeni kesintisi ve aşırı yükleme çözümlemesi uyumlu arasındaki Zarif etkileşimler kaynaklanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
  [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md)   
- [Şablonu özelleştirme](../cpp/template-specialization-cpp.md)   
+ [Şablon uzmanlığı](../cpp/template-specialization-cpp.md)   
  [Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma](../text/how-to-convert-between-various-string-types.md)
 

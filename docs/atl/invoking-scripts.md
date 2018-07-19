@@ -1,5 +1,5 @@
 ---
-title: Komut dosyaları (ATL) çağırma | Microsoft Docs
+title: Betikleri (ATL) çağırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,30 +17,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91d11b86b2b7cf17ef90ab701b06c6f31b272691
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2e5bc5572a88f3df94811c3628333c8697a539b2
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362277"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849375"
 ---
-# <a name="invoking-scripts"></a>Komut dosyaları çağırma
-[Değiştirilebilir parametreler (kayıt şirketinizin önişlemci) kullanarak](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) değiştirme eşlemeleri açıklanır ve kayıt yöntemi değinmektedir **AddReplacement**. Sekiz diğer yöntemleri komut belirli kayıt şirketi var ve tüm aşağıdaki tabloda açıklanmıştır.  
+# <a name="invoking-scripts"></a>Betikleri çağırma
+[Değiştirilebilir parametreler (kaydedicinin ön işlemcisi) kullanarak](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) değiştirme haritalar açıklanır ve kayıt şirketi yöntemi bahsetmeleri **AddReplacement**. Kayıt şirketi sekiz komut belirli bir yöntemi diğer sahiptir ve tüm aşağıdaki tabloda açıklanmıştır.  
   
-|Yöntem|Sözdizimi/açıklama|  
+|Yöntem|Söz dizimi/açıklaması|  
 |------------|-------------------------|  
-|**ResourceRegister**|**HRESULT ResourceRegister (LPCOLESTR***resFileName* **, UINT** `nID` **, LPCOLESTR** `szType` **);** <br /><br /> Bir modülün kaynağında bulunan komut dosyası kaydeder. *resFileName* modülü UNC yolunu gösterir. `nID` ve `szType` kaynağın kimliği ve türü, sırasıyla içerir.|  
-|**ResourceUnregister**|**HRESULT ResourceUnregister (LPCOLESTR***resFileName* **, UINT** `nID` **, LPCOLESTR** `szType` **);** <br /><br /> Bir modülün kaynağında bulunan betik kaydını siler. *resFileName* modülü UNC yolunu gösterir. `nID` ve `szType` kaynağın kimliği ve türü, sırasıyla içerir.|  
-|**ResourceRegisterSz**|**HRESULT ResourceRegisterSz (LPCOLESTR***resFileName* **, LPCOLESTR***szID* **, LPCOLESTR** `szType` **);** <br /><br /> Bir modülün kaynağında bulunan komut dosyası kaydeder. *resFileName* modülü UNC yolunu gösterir. *szID* ve `szType` kaynağın dize tanımlayıcı ve türü, sırasıyla içerir.|  
-|**ResourceUnregisterSz**|**HRESULT ResourceUnregisterSz (LPCOLESTR***resFileName* **, LPCOLESTR***szID* **, LPCOLESTR** `szType` **);** <br /><br /> Bir modülün kaynağında bulunan betik kaydını siler. *resFileName* modülü UNC yolunu gösterir. *szID* ve `szType` kaynağın dize tanımlayıcı ve türü, sırasıyla içerir.|  
-|**FileRegister**|**HRESULT FileRegister (LPCOLESTR***fileName***);** <br /><br /> Komut dosyasını bir dosyaya kaydeder. *fileName* içeriyor (veya) kaynak komut dosyası bir dosya bir UNC yoludur.|  
-|**FileUnregister**|**HRESULT FileUnregister (LPCOLESTR***fileName***);** <br /><br /> Komut dosyasında kaydını siler. *fileName* içeriyor (veya) kaynak komut dosyası bir dosya bir UNC yoludur.|  
-|**StringRegister**|**HRESULT StringRegister (LPCOLESTR***veri***);** <br /><br /> Kodun bir dize kaydeder. *veri* komut dosyasının kendisini içerir.|  
-|**StringUnregister**|**HRESULT StringUnregister (LPCOLESTR***veri***);** <br /><br /> Bir dize betik kaydını siler. *veri* komut dosyasının kendisini içerir.|  
+|**ResourceRegister**|**HRESULT ResourceRegister (LPCOLESTR***resFileName* **, UINT** `nID` **, LPCOLESTR** `szType` **);** <br /><br /> Bir modülün kaynakta yer alan komut dosyası kaydeder. *resFileName* modülü UNC yolunu gösterir. *nID* ve *szType* kaynak kimliği ve türü içerir.|  
+|**ResourceUnregister**|**HRESULT ResourceUnregister (LPCOLESTR***resFileName* **, UINT** `nID` **, LPCOLESTR** `szType` **);** <br /><br /> Bir modülün kaynakta yer alan komut kaydını siler. *resFileName* modülü UNC yolunu gösterir. *nID* ve *szType* kaynak kimliği ve türü içerir.|  
+|**ResourceRegisterSz**|**HRESULT ResourceRegisterSz (LPCOLESTR***resFileName* **, LPCOLESTR***szID* **, LPCOLESTR** `szType` **);** <br /><br /> Bir modülün kaynakta yer alan komut dosyası kaydeder. *resFileName* modülü UNC yolunu gösterir. *szID* ve *szType* kaynağın dize tanımlayıcı ve türü içerir.|  
+|**ResourceUnregisterSz**|**HRESULT ResourceUnregisterSz (LPCOLESTR***resFileName* **, LPCOLESTR***szID* **, LPCOLESTR** `szType` **);** <br /><br /> Bir modülün kaynakta yer alan komut kaydını siler. *resFileName* modülü UNC yolunu gösterir. *szID* ve *szType* kaynağın dize tanımlayıcı ve türü içerir.|  
+|**FileRegister**|**HRESULT FileRegister (LPCOLESTR***fileName***);** <br /><br /> Betik bir dosyaya kaydeder. *fileName* kaynak betiği içeren (veya olan) bir dosya bir UNC yoludur.|  
+|**FileUnregister**|**HRESULT FileUnregister (LPCOLESTR***fileName***);** <br /><br /> Bir dosyadaki betik kaydını siler. *fileName* kaynak betiği içeren (veya olan) bir dosya bir UNC yoludur.|  
+|**StringRegister**|**HRESULT StringRegister (LPCOLESTR***veri***);** <br /><br /> Betik, bir dize kaydeder. *veri* betiği içerir.|  
+|**StringUnregister**|**HRESULT StringUnregister (LPCOLESTR***veri***);** <br /><br /> Bir dizedeki betik kaydını siler. *veri* betiği içerir.|  
   
- **ResourceRegisterSz** ve **ResourceUnregisterSz**, benzer **ResourceRegister** ve **ResourceUnregister**, ancak bir dize belirtmenizi sağlar tanımlayıcı.  
+ **ResourceRegisterSz** ve **ResourceUnregisterSz**, benzer **ResourceRegister** ve **ResourceUnregister**, ancak bir dize belirtmenizi sağlar tanımlayıcısı.  
   
- Yöntemleri **FileRegister** ve **FileUnregister** bir kaynak betik istemiyorsanız veya kendi dosyasındaki komut dosyasının çalışmasını istiyorsanız kullanışlıdır. Yöntemleri **StringRegister** ve **StringUnregister** dinamik olarak ayrılan dizesinde depolanması .rgs dosya izin verin.  
+ Yöntemleri **FileRegister** ve **FileUnregister** komut bir kaynak dosyasında istemiyorsanız veya kendi dosyasında betik istiyorsanız kullanışlıdır. Yöntemleri **StringRegister** ve **StringUnregister** dinamik olarak ayrılan bir dizede depolanacak .rgs dosya izin verin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaydedici Betikleri Oluşturma](../atl/creating-registrar-scripts.md)

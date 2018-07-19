@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f224def5d91d47cad0cb61938f1ce9a538109014
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 3ea43fefabe43bec8a5bf9b00404491a405e5416
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039055"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852987"
 ---
 # <a name="cmfcpropertygridfontproperty-class"></a>CMFCPropertyGridFontProperty sınıfı
-`CMFCPropertyGridFileProperty` Sınıfı, yazı tipi seçimi iletişim kutusunu açan özelliği liste denetim öğesi destekler.  
+`CMFCPropertyGridFileProperty` Sınıfı, bir yazı tipi seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,18 +44,18 @@ class CMFCPropertyGridFontProperty : public CMFCPropertyGridProperty
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty](#cmfcpropertygridfontproperty)|Oluşturan bir `CMFCPropertyGridFontProperty` nesnesi.|  
-|`CMFCPropertyGridFontProperty::~CMFCPropertyGridFontProperty`|Yok Edicisi.|  
+|[CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty](#cmfcpropertygridfontproperty)|Oluşturur bir `CMFCPropertyGridFontProperty` nesne.|  
+|`CMFCPropertyGridFontProperty::~CMFCPropertyGridFontProperty`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`CMFCPropertyGridFontProperty::FormatProperty`|Bir özellik değeri metin gösterimini biçimlendirir. (Geçersiz kılmaları [CMFCPropertyGridProperty::FormatProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#formatproperty).)|  
-|[CMFCPropertyGridFontProperty::GetColor](#getcolor)|Yazı tipi iletişim kutusu kullanıcının seçtiği yazı tipi rengi alır.|  
-|[CMFCPropertyGridFontProperty::GetLogFont](#getlogfont)|Yazı tipi iletişim kutusu kullanıcının seçtiği yazı tipini alır.|  
-|`CMFCPropertyGridFontProperty::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
-|`CMFCPropertyGridFontProperty::OnClickButton`|Kullanıcı bir özelliğinde yer alan bir düğmesini tıklattığında çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|  
+|`CMFCPropertyGridFontProperty::FormatProperty`|Özellik değerinin metin temsilini biçimlendirir. (Geçersiz kılmaları [CMFCPropertyGridProperty::FormatProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#formatproperty).)|  
+|[CMFCPropertyGridFontProperty::GetColor](#getcolor)|Yazı tipi iletişim kutusundan kullanıcının seçtiği yazı tipi rengini alır.|  
+|[CMFCPropertyGridFontProperty::GetLogFont](#getlogfont)|Yazı tipi iletişim kutusundan kullanıcının seçtiği yazı tipini alır.|  
+|`CMFCPropertyGridFontProperty::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
+|`CMFCPropertyGridFontProperty::OnClickButton`|Kullanıcı bir özelliğinde bulunan bir düğmeye tıkladığında framework tarafından çağırılır. (Geçersiz kılmaları [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -70,7 +70,7 @@ class CMFCPropertyGridFontProperty : public CMFCPropertyGridProperty
  **Başlık:** afxpropertygridctrl.h  
   
 ##  <a name="cmfcpropertygridfontproperty"></a>  CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty  
- Oluşturan bir `CMFCPropertyGridFontProperty` nesnesi.  
+ Oluşturur bir `CMFCPropertyGridFontProperty` nesne.  
   
 ```  
 CMFCPropertyGridFontProperty(
@@ -90,27 +90,27 @@ CMFCPropertyGridFontProperty(
  Yazı tipi özniteliklerini belirtir mantıksal yazı tipi yapısı.  
   
  [in] *dwFontDialogFlags*  
- Özellik değeri açılan düğmesine tıkladığınızda görüntülenen yazı tipi iletişim kutusu uygulanan stil. Varsayılan değer Bitsel (veya) CF_EFFECTS ve CF_SCREENFONTS birleşimidir. Daha fazla bilgi için bkz: *bayrakları* parametresinin [CHOOSEFONT yapısı](http://msdn.microsoft.com/library/windows/desktop/ms646832).  
+ Özellik değeri açılan Düğmeye tıkladığınızda görüntülenen yazı tipi iletişim kutusu için uygulanan stiller. Bit düzeyinde birleşimi (veya) CF_EFFECTS ve CF_SCREENFONTS varsayılan değerdir. Daha fazla bilgi için *bayrakları* parametresinin [CHOOSEFONT yapısı](http://msdn.microsoft.com/library/windows/desktop/ms646832).  
   
  [in] *lpszDescr*  
- Font özelliği açıklaması. Varsayılan değer `NULL` şeklindedir.  
+ Yazı tipi özellik açıklaması. Varsayılan değer NULL olur.  
   
  [in] *dwData*  
- Bir tamsayı ya da özelliği ile ilişkili diğer veri için bir işaretçi gibi uygulamaya özgü verileri. Varsayılan değer 0’dır.  
+ Uygulamaya özgü verileri, bir tamsayı ya da özellikle ilişkili diğer veri işaretçisi gibi. Varsayılan değer 0’dır.  
   
  [in] *rengi*  
- Yazı tipi rengi. Varsayılan rengini varsayılan değerdir.  
+ Yazı tipi rengi. Varsayılan renk varsayılan değerdir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- A `CMFCPropertyGridFontProperty` nesnesi özelliği kılavuz yazı tipi denetiminde font özelliği temsil eder.  
+ A `CMFCPropertyGridFontProperty` nesnesi bir yazı tipi özelliği bir özellik Kılavuzu yazı tipi denetimini temsil eder.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterilmiştir nasıl bir nesne oluşturun `CMFCPropertyGridFontProperty` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, gösterir nasıl bir nesne oluşturun `CMFCPropertyGridFontProperty` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_NewControls#26](../../mfc/reference/codesnippet/cpp/cmfcpropertygridfontproperty-class_1.cpp)]  
   
 ##  <a name="getcolor"></a>  CMFCPropertyGridFontProperty::GetColor  
- Yazı tipi iletişim kutusu kullanıcının seçtiği yazı tipi rengi alır.  
+ Yazı tipi iletişim kutusundan kullanıcının seçtiği yazı tipi rengini alır.  
   
 ```  
 COLORREF GetColor() const;  
@@ -122,14 +122,14 @@ COLORREF GetColor() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getlogfont"></a>  CMFCPropertyGridFontProperty::GetLogFont  
- Yazı tipi iletişim kutusu kullanıcının seçtiği yazı tipini alır.  
+ Yazı tipi iletişim kutusundan kullanıcının seçtiği yazı tipini alır.  
   
 ```  
 LPLOGFONT GetLogFont();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) seçili yazı tipi tanımlar yapısı.  
+ Bir işaretçi bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) seçili yazı tipini açıklayan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

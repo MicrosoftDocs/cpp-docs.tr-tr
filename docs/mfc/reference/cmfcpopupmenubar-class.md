@@ -56,15 +56,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aede6e3224149bd237ca2bb830370718105e1f83
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: b9dc88b6b4488115390f4e6be57fbba2caadcc01
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37037767"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853640"
 ---
 # <a name="cmfcpopupmenubar-class"></a>CMFCPopupMenuBar sınıfı
-Menü çubuğu açılır menü katıştırılır.  
+Bir menü çubuğu açılır menüde gömülü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -79,36 +79,36 @@ class CMFCPopupMenuBar : public CMFCToolBar
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CMFCPopupMenuBar::AdjustSizeImmediate](#adjustsizeimmediate)|Hemen bir bölme düzenini yeniden hesaplar. (Geçersiz kılmaları [CPane::AdjustSizeImmediate](../../mfc/reference/cpane-class.md#adjustsizeimmediate).)|  
-|[CMFCPopupMenuBar::BuildOrigItems](#buildorigitems)|Açılan menü öğelerini belirtilen menü kaynaktan yükler.|  
-|[CMFCPopupMenuBar::CloseDelayedSubMenu](#closedelayedsubmenu)|Gecikmeli açılan menü düğmesi kapatır.|  
-|[CMFCPopupMenuBar::ExportToMenu](#exporttomenu)|Açılan menü düğmelerini menüsünden oluşturur.|  
-|[CMFCPopupMenuBar::FindDestintationToolBar](#finddestintationtoolbar)|Araç, burada belirtilen bir nokta arasındadır bulur.|  
-|[CMFCPopupMenuBar::GetCurrentMenuImageSize](#getcurrentmenuimagesize)|Menü düğmesine görüntülerinin boyutunu belirtir.|  
+|[CMFCPopupMenuBar::BuildOrigItems](#buildorigitems)|Açılan menü öğelerinin belirtilen menü kaynağı yükler.|  
+|[CMFCPopupMenuBar::CloseDelayedSubMenu](#closedelayedsubmenu)|Gecikmeli açılan menü düğmesine kapatır.|  
+|[CMFCPopupMenuBar::ExportToMenu](#exporttomenu)|Bir menü açılır menü düğmelerle oluşturur.|  
+|[CMFCPopupMenuBar::FindDestintationToolBar](#finddestintationtoolbar)|Araç, belirli bir noktaya nereden kaynaklandığını bulur.|  
+|[CMFCPopupMenuBar::GetCurrentMenuImageSize](#getcurrentmenuimagesize)|Menü düğmesine resimlerin boyutunu gösterir.|  
 |[CMFCPopupMenuBar::GetDefaultMenuId](#getdefaultmenuid)|Varsayılan menü öğesi tanımlayıcısını döndürür.|  
-|[CMFCPopupMenuBar::GetLastCommandIndex](#getlastcommandindex)|En son çağırılan menü komutu dizinini alır.|  
-|[CMFCPopupMenuBar::GetOffset](#getoffset)|Açılan menü çubuğu satır uzaklığını alır.|  
-|[CMFCPopupMenuBar::ImportFromMenu](#importfrommenu)|Açılan menü düğmesi belirtilen menüden alır.|  
-|[CMFCPopupMenuBar::IsDropDownListMode](#isdropdownlistmode)|Açılan menü çubuğundaki açılan aşağı liste modunda olup olmadığını gösterir.|  
-|[CMFCPopupMenuBar::IsPaletteMode](#ispalettemode)|Açılan menü çubuğu palet modunda olup olmadığını gösterir.|  
-|[CMFCPopupMenuBar::IsRibbonPanel](#isribbonpanel)|Bu bir Şerit panel olup olmadığını gösterir ( `FALSE` varsayılan olarak).|  
-|[CMFCPopupMenuBar::IsRibbonPanelInRegularMode](#isribbonpanelinregularmode)|Bu normal modda bir Şerit panel olup olmadığını gösterir ( `FALSE` varsayılan olarak).|  
-|[CMFCPopupMenuBar::LoadFromHash](#loadfromhash)|Arşivlenen menü yükler.|  
-|[CMFCPopupMenuBar::RestoreDelayedSubMenu](#restoredelayedsubmenu)|Açılan menü çubuğu kapatma Gecikmeli menü düğmesi geri yükler.|  
-|[CMFCPopupMenuBar::SetButtonStyle](#setbuttonstyle)|Verilen dizinde araç çubuğu düğmesi stilini ayarlar. (Geçersiz kılmaları [CMFCToolBar::SetButtonStyle](../../mfc/reference/cmfctoolbar-class.md#setbuttonstyle).)|  
-|[CMFCPopupMenuBar::SetOffset](#setoffset)|Açılan menü çubuğu satır uzaklığı ayarlar.|  
+|[CMFCPopupMenuBar::GetLastCommandIndex](#getlastcommandindex)|En son çağırılan menü komutunu dizinini alır.|  
+|[CMFCPopupMenuBar::GetOffset](#getoffset)|Açılan menü çubuğunun satır uzaklığı alır.|  
+|[CMFCPopupMenuBar::ImportFromMenu](#importfrommenu)|Açılan menü düğmesi belirtilen menüsünden içeri aktarır.|  
+|[CMFCPopupMenuBar::IsDropDownListMode](#isdropdownlistmode)|Açılan menü çubuğu aşağı açılan liste modunda olup olmadığını belirtir.|  
+|[CMFCPopupMenuBar::IsPaletteMode](#ispalettemode)|Açılan menü çubuğu paletinden modunda olup olmadığını gösterir.|  
+|[CMFCPopupMenuBar::IsRibbonPanel](#isribbonpanel)|Bu Şerit paneline (varsayılan olarak FALSE) olup olmadığını gösterir.|  
+|[CMFCPopupMenuBar::IsRibbonPanelInRegularMode](#isribbonpanelinregularmode)|Bu Şerit paneline normal modunda (varsayılan olarak FALSE) olup olmadığını gösterir.|  
+|[CMFCPopupMenuBar::LoadFromHash](#loadfromhash)|Arşivlenen bir menü yükler.|  
+|[CMFCPopupMenuBar::RestoreDelayedSubMenu](#restoredelayedsubmenu)|Açılan menü çubuğu kapatma Gecikmeli menü düğmesine geri yükler.|  
+|[CMFCPopupMenuBar::SetButtonStyle](#setbuttonstyle)|Belirtilen dizindeki araç çubuğu düğmesini stilini ayarlar. (Geçersiz kılmaları [CMFCToolBar::SetButtonStyle](../../mfc/reference/cmfctoolbar-class.md#setbuttonstyle).)|  
+|[CMFCPopupMenuBar::SetOffset](#setoffset)|Açılan menü çubuğunun satır uzaklığı ayarlar.|  
 |[CMFCPopupMenuBar::StartPopupMenuTimer](#startpopupmenutimer)|Belirtilen Gecikmeli açılan menü düğmesi süreölçer başlatır.|  
   
 ### <a name="data-members"></a>Veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPopupMenuBar::m_bDisableSideBarInXPMode](#m_bdisablesidebarinxpmode)|Uygulama bir Windows XP görünümü olduğunda gri kenar görüntülenip görüntülenmeyeceğini belirtir.|  
+|[CMFCPopupMenuBar::m_bDisableSideBarInXPMode](#m_bdisablesidebarinxpmode)|Uygulamayı bir Windows XP görünümü olduğunda gri kenar görüntülenip görüntülenmeyeceğini belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CMFCPopupMenuBar` Aynı zamanda oluşturulan bir [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) ve onun içindeki katıştırılmış. `CMFCPopupMenuBar` Tüm istemci alanını kapsayan `CMFCPopupMenu` nesnesi. Klavye ve fare girişi destekler. Bu ayrıca, giriş iletişim kurar `CMFCPopupMenu` ve en üst düzey çerçeve penceresi.  
+ `CMFCPopupMenuBar` Aynı zamanda oluşturulmuş bir [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) ve içine katıştırılmış. `CMFCPopupMenuBar` Tüm istemci alanını kapsayan `CMFCPopupMenu` nesne. Bu, klavye ve fare girişi destekler. Ayrıca, giriş iletişim `CMFCPopupMenu` ve üst düzey bir çerçeve penceresi.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl başlatılacağını gösteren bir `CMFCPopupMenuBar` nesnesinin bir `CMFCPopupMenu` nesnesi. Bu kod parçacığını parçası olan [çizin istemci örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek nasıl başlatılacağını gösterir. bir `CMFCPopupMenuBar` nesnesinden bir `CMFCPopupMenu` nesne. Bu kod parçacığı parçasıdır [çizmek istemci örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DrawClient#7](../../mfc/reference/codesnippet/cpp/cmfcpopupmenubar-class_1.cpp)]  
   
@@ -141,12 +141,12 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bRecalcLayout*  
- `TRUE` otomatik olarak açılan menü çubuğu bölmesinin düzenini yeniden hesapla için; Aksi takdirde `FALSE`.  
+ Otomatik olarak açılan menü çubuğu bölmesinin düzenini yeniden hesapla için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="buildorigitems"></a>  CMFCPopupMenuBar::BuildOrigItems  
- Açılan menü öğelerini belirtilen menü kaynaktan yükler.  
+ Açılan menü öğelerinin belirtilen menü kaynağı yükler.  
   
 ```  
 BOOL BuildOrigItems(UINT uiMenuResID);
@@ -157,12 +157,12 @@ BOOL BuildOrigItems(UINT uiMenuResID);
  Yüklemek için menü kaynağı menü Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` başarılı olursa ya da `FALSE` değilse.  
+ Başarılı olursa TRUE ya da aksi takdirde FALSE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="closedelayedsubmenu"></a>  CMFCPopupMenuBar::CloseDelayedSubMenu  
- Ertelendi bir açılır menü düğmesi kapatır.  
+ Ertelendi bir açılan menü düğmesi kapatır.  
   
 ```  
 virtual void CloseDelayedSubMenu();
@@ -171,19 +171,19 @@ virtual void CloseDelayedSubMenu();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="exporttomenu"></a>  CMFCPopupMenuBar::ExportToMenu  
- Açılan menü düğmelerini menüsünden oluşturur.  
+ Bir menü açılır menü düğmelerle oluşturur.  
   
 ```  
 virtual HMENU ExportToMenu() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni menüsüne bir işleyici döner.  
+ Yeni menüsüne bir tanıtıcı döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="finddestintationtoolbar"></a>  CMFCPopupMenuBar::FindDestintationToolBar  
- Araç, burada belirtilen bir nokta arasındadır bulur.  
+ Araç, belirli bir noktaya nereden kaynaklandığını bulur.  
   
 ```  
 CMFCToolBar* FindDestintationToolBar(CPoint point);
@@ -191,22 +191,22 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *noktası*  
- Ekran noktasında.  
+ Ekranda bir nokta.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Therei, ise bir tanıtıcı araç çubuğuna burada noktası arasındadır, döndürür veya `NULL` değilse.  
+ Varsa bir tanıtıcı araç çubuğuna burada noktası olduğunda, döndürür veya yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getcurrentmenuimagesize"></a>  CMFCPopupMenuBar::GetCurrentMenuImageSize  
- Menü düğmesine görüntülerinin boyutunu belirtir.  
+ Menü düğmesine resimlerin boyutunu gösterir.  
   
 ```  
 virtual CSize GetCurrentMenuImageSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Menü düğmesine görüntülerinin boyutunu araç çubuğunda döndürür.  
+ Araç çubuğundaki menü düğmesine resimlerin boyutunu döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -218,37 +218,37 @@ UINT GetDefaultMenuId() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Açılan menü çubuğunda varsayılan menü öğesi tanımlayıcısını döndürür.  
+ Açılan menü çubuğundaki varsayılan menü öğesi tanımlayıcısını döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getlastcommandindex"></a>  CMFCPopupMenuBar::GetLastCommandIndex  
- En son çağırılan menü komutu dizinini alır.  
+ En son çağırılan menü komutunu dizinini alır.  
   
 ```  
 static int __stdcall GetLastCommandIndex();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Çağrılmış son menü komutu dizinini döndürür.  
+ Çağrıldıktan son menü komutunu dizinini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getoffset"></a>  CMFCPopupMenuBar::GetOffset  
- Açılan menü çubuğu satır uzaklığını alır.  
+ Açılan menü çubuğunun satır uzaklığı alır.  
   
 ```  
 int GetOffset() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Açılan menü çubuğu satır uzaklığını döndürür.  
+ Açılan menü çubuğunun satır uzaklığı döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu değer kullanılarak ayarlanan [CMFCPopupMenuBar::SetOffset](#setoffset).  
   
 ##  <a name="importfrommenu"></a>  CMFCPopupMenuBar::ImportFromMenu  
- Açılan menü düğmesi belirtilen menüden alır.  
+ Açılan menü düğmesi belirtilen menüsünden içeri aktarır.  
   
 ```  
 virtual BOOL ImportFromMenu(
@@ -258,67 +258,67 @@ virtual BOOL ImportFromMenu(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *hMenu*  
- Menü açılan menü düğmelerini içeri aktarılacak.  
+ Açılan menü düğmeleri alınacağı menüsü.  
   
  [in] *bShowAllCommands*  
- `TRUE` İçeri aktarılacak menüsünde tüm komutları olup olmadığını veya `FALSE` ender kullanılan olanları gizli.  
+ İçeri aktarılan veya yanlış nadiren kullanılan olanları gizlenebilir menüsünde TRUE tüm komutları olacak.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` menü düğmelerini menüsünden başarıyla içeri aktarıldı olsaydı veya `FALSE` değilse.  
+ Menü veya FALSE ise düğmeleri başarıyla alınamadı, TRUE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isdropdownlistmode"></a>  CMFCPopupMenuBar::IsDropDownListMode  
- Açılan menü çubuğundaki açılan aşağı liste modunda olup olmadığını gösterir.  
+ Açılan menü çubuğu aşağı açılan liste modunda olup olmadığını belirtir.  
   
 ```  
 BOOL IsDropDownListMode() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` açılır menü çubuğu açılan aşağı liste modunda değilse veya `FALSE` değilse.  
+ Açılan menü çubuğu aşağı açılan liste modu veya FALSE ise değilse true değer döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="ispalettemode"></a>  CMFCPopupMenuBar::IsPaletteMode  
- Açılan menü çubuğu palet modunda olup olmadığını gösterir.  
+ Açılan menü çubuğu paletinden modunda olup olmadığını gösterir.  
   
 ```  
 BOOL IsPaletteMode() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` palet modu etkinleştirildiğinde veya `FALSE` değilse.  
+ Palet modu etkinse TRUE, değilse FALSE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Menü çubuğu palet moda ayarlandığında, menü öğeleri birden çok sütun ve satırlar, sınırlı sayıda görünür.  
+ Menü çubuğu paletinden moduna ayarlandığında menü öğeleri birden çok sütun ve sınırlı sayıda satır görüntülenir.  
   
 ##  <a name="isribbonpanel"></a>  CMFCPopupMenuBar::IsRibbonPanel  
- Bu bir Şerit panel olup olmadığını gösterir ( `FALSE` varsayılan olarak).  
+ Bu Şerit paneline (varsayılan olarak FALSE) olup olmadığını gösterir.  
   
 ```  
 virtual BOOL IsRibbonPanel() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `FALSE` bunun bir Şerit panel olmadığını belirten varsayılan.  
+ Bunun bir Şerit paneli olmadığını belirten, varsayılan olarak false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isribbonpanelinregularmode"></a>  CMFCPopupMenuBar::IsRibbonPanelInRegularMode  
- Bu normal modda bir Şerit panel olup olmadığını gösterir ( `FALSE` varsayılan olarak).  
+ Bu Şerit paneline normal modunda (varsayılan olarak FALSE) olup olmadığını gösterir.  
   
 ```  
 virtual BOOL IsRibbonPanelInRegularMode() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `FALSE` varsayılan olarak bu bir Şerit panel normal modda olduğunu gösteren.  
+ Bu Şerit paneline normal modda olduğunu belirten, varsayılan olarak false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="loadfromhash"></a>  CMFCPopupMenuBar::LoadFromHash  
- Arşivlenen menü yükler.  
+ Arşivlenen bir menü yükler.  
   
 ```  
 BOOL LoadFromHash(HMENU hMenu);
@@ -326,27 +326,27 @@ BOOL LoadFromHash(HMENU hMenu);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *hMenu*  
- Yükleme için arşivlenmiş menüsüne işleci.  
+ Arşivlenen menüsüne yüklemek için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE` menü başarıyla yüklüyse veya `FALSE` değilse.  
+ Menü başarıyla yüklendi ya da aksi takdirde FALSE ise true değeri döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_bdisablesidebarinxpmode"></a>  CMFCPopupMenuBar::m_bDisableSideBarInXPMode  
- Bir Windows XP görünümü sahip olduğunda, uygulamanızın gri kenar olup olmadığını belirten bir Boole parametresi.  
+ Bir Windows XP görünümü sahip olduğunda, uygulamanızın gri kenar çubuğu olup olmadığını belirten bir Boole parametresi.  
   
 ```  
 BOOL m_bDisableSideBarInXPMode;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye değişkeni ayarlanmışsa `FALSE` ve uygulamanızı bir Windows XP görünümü sahipse, uygulamanızda gri kenar framework çizer.  
+ Bu üye değişkeni FALSE olarak ayarlanır ve bir Windows XP görünümü uygulamanız varsa, framework uygulamanızda gri kenar çizer.  
   
- Varsayılan değer `FALSE` şeklindedir.  
+ Varsayılan değer FALSE olur.  
   
 ##  <a name="restoredelayedsubmenu"></a>  CMFCPopupMenuBar::RestoreDelayedSubMenu  
- Açılan menü çubuğu kapatma Gecikmeli menü düğmesi geri yükler.  
+ Açılan menü çubuğu kapatma Gecikmeli menü düğmesine geri yükler.  
   
 ```  
 virtual void RestoreDelayedSubMenu();
@@ -355,7 +355,7 @@ virtual void RestoreDelayedSubMenu();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setbuttonstyle"></a>  CMFCPopupMenuBar::SetButtonStyle  
- Verilen dizinde araç çubuğu düğmesi stilini ayarlar. (Geçersiz kılmaları [CMFCToolBar::SetButtonStyle](../../mfc/reference/cmfctoolbar-class.md#setbuttonstyle).)  
+ Belirtilen dizindeki araç çubuğu düğmesini stilini ayarlar. (Geçersiz kılmaları [CMFCToolBar::SetButtonStyle](../../mfc/reference/cmfctoolbar-class.md#setbuttonstyle).)  
   
 ```  
 virtual void SetButtonStyle(
@@ -365,15 +365,15 @@ virtual void SetButtonStyle(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nIndex*  
- Ayarlanacak stilini iş araç çubuğu düğmesi sıfır tabanlı dizini.  
+ Ayarlanacak stilini olan araç çubuğu düğmesini sıfır tabanlı dizini.  
   
  [in] *nStyle*  
- Düğmesinin stili. Bkz: [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md) kullanılabilir araç çubuğu düğmesi stilleri listesi.  
+ Düğmenin stili. Bkz: [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md) kullanılabilir araç çubuğu düğmesi stilleri listesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setoffset"></a>  CMFCPopupMenuBar::SetOffset  
- Açılan menü çubuğu satır uzaklığı ayarlar.  
+ Açılan menü çubuğunun satır uzaklığı ayarlar.  
   
 ```  
 void SetOffset(int iOffset);
@@ -396,10 +396,10 @@ void StartPopupMenuTimer(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pMenuButton*  
- Gecikme Zamanlayıcı ayarlanacak menü düğmesi işaretçi.  
+ Menü düğmesine gecikme Zamanlayıcı ayarlanacak işaretçisi.  
   
  [in] *nDelayFactor*  
- Bir gecikme faktörü, en az biri, standart menü gecikme süresini (genellikle bir yarım saniye arasında beş saniye) tarafından çarpılacağı eşittir.  
+ Bir gecikme faktörü, en az bir standart menü gecikme süresini (genellikle yarım saniye arasında arama ve beş saniye) tarafından çarpmak için eşittir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

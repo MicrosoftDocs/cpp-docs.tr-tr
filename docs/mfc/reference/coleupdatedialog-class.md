@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0208a24b69c1884d72c0ae525ce95b3d3258271
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: fc5d51bfeb18b51be5a54c51046e3cd420fb1cb8
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079980"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852113"
 ---
 # <a name="coleupdatedialog-class"></a>COleUpdateDialog sınıfı
-Kullanılması gereken OLE bağlantıları Düzenle iletişim kutusu için bir özel durum kullanılan, bağlantılı yalnızca var olan güncelleştirme gerektiğinde veya bir belgede katıştırılmış nesneler.  
+Kullanılması gereken OLE Edit Links iletişim kutusu için bir özel durum kullanılan yalnızca mevcut güncelleştirme gerektiğinde, bağlantılı veya katıştırılmış bir belgede nesneleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,16 +42,16 @@ class COleUpdateDialog : public COleLinksDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleUpdateDialog::COleUpdateDialog](#coleupdatedialog)|Oluşturan bir `COleUpdateDialog` nesnesi.|  
+|[COleUpdateDialog::COleUpdateDialog](#coleupdatedialog)|Oluşturur bir `COleUpdateDialog` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleUpdateDialog::DoModal](#domodal)|Görüntüler **Bağlantıları Düzenle** iletişim kutusu, bir güncelleştirme modunda.|  
+|[COleUpdateDialog::DoModal](#domodal)|Görüntüler **Edit Links** güncelleştirme modunda iletişim kutusu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- OLE özel iletişim kutuları hakkında daha fazla bilgi için bkz: [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
+ Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -74,7 +74,7 @@ class COleUpdateDialog : public COleLinksDialog
  **Başlık:** afxodlgs.h  
   
 ##  <a name="coleupdatedialog"></a>  COleUpdateDialog::COleUpdateDialog  
- Oluşturan bir `COleUpdateDialog` nesnesi.  
+ Oluşturur bir `COleUpdateDialog` nesne.  
   
 ```  
 explicit COleUpdateDialog(
@@ -86,22 +86,22 @@ explicit COleUpdateDialog(
   
 ### <a name="parameters"></a>Parametreler  
  *pDoc*  
- Güncelleştirilmesi gereken bağlantılar içeren belge noktalarına.  
+ Güncelleştirilmesi gereken bağlantıları içeren belge işaret eder.  
   
  *bUpdateLinks*  
- Bağlantılı nesneler güncelleştirilmesi olup olmadığını belirleyen bayrak.  
+ Bağlantılı nesneleri güncelleştirilecek olup olmadığını belirleyen bayrak.  
   
  *bUpdateEmbeddings*  
- Katıştırılmış nesneler güncelleştirilmesi olup olmadığını belirleyen bayrak.  
+ Katıştırılmış nesneler güncelleştirilecek olup olmadığını belirleyen bayrak.  
   
  *pParentWnd*  
- İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim kutusunun üst pencere ana uygulama penceresine ayarlanır.  
+ Üst veya sahibi pencere nesnesi için işaret (tür `CWnd`) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim kutusunun üst pencere ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca oluşturan bir `COleUpdateDialog` nesnesi. İletişim kutusunu görüntülemek için arama [DoModal](../../mfc/reference/colelinksdialog-class.md#domodal). Bu sınıf yerine kullanılmalıdır `COleLinksDialog` yalnızca varolan güncelleştirmek istediğiniz zaman veya bağlı öğeleri katıştırılmış.  
+ Bu işlev yalnızca oluşturan bir `COleUpdateDialog` nesne. İletişim kutusunu görüntülemek için çağrı [DoModal](../../mfc/reference/colelinksdialog-class.md#domodal). Bu sınıf yerine kullanılması gereken `COleLinksDialog` yalnızca mevcut güncelleştirmek istediğiniz zaman bağlantılı veya katıştırılmış öğeler.  
   
 ##  <a name="domodal"></a>  COleUpdateDialog::DoModal  
- Güncelleştirme modu Bağlantıları Düzenle iletişim kutusu görüntüler.  
+ Güncelleştirme modu Edit Links iletişim kutusu görüntüler.  
   
 ```  
 virtual INT_PTR DoModal();
@@ -110,14 +110,14 @@ virtual INT_PTR DoModal();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tamamlanma durumu iletişim kutusu için. Aşağıdaki değerlerden biri:  
   
-- **IDOK** iletişim kutusu başarıyla döndürülürse.  
+- İletişim kutusu başarıyla döndürdüyse IDOK.  
   
-- **IDCANCEL** geçerli belgede bağlantılı veya katıştırılmış öğelerin hiçbiri güncelleştirme gerekip gerekmediğini.  
+- Geçerli belgedeki bağlantılı veya katıştırılmış öğeler hiçbiri IDCANCEL güncelleştirilmesi gerekir.  
   
-- **IDABORT** durumunda bir hata oluştu. Varsa **IDABORT** olan döndürülen arama [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) oluştu hata türü hakkında daha fazla bilgi almak için üye işlevi. Olası hatalar listesi için bkz: [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) Windows SDK'sındaki işlevi.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İptal düğmesi kullanıcının seçtiği sürece tüm bağlantılar ve/veya eklerinin güncelleştirilir.  
+ İptal düğmesi kullanıcının seçtiği sürece tüm bağlantılar ve/veya Gömmeleri güncelleştirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek OCLIENT](../../visual-cpp-samples.md)   

@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46f554e375e8c0185e8c2b75c81eeae5ee615c51
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 731ec7b359995fc8ecbfdeae89595442d8186eeb
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370477"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851398"
 ---
 # <a name="coleexception-class"></a>COleException sınıfı
-Bir OLE işlemle ilişkili bir özel durumu temsil eder.  
+Bir OLE işlemiyle ilgili bir özel durum koşulunu temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,20 +42,20 @@ class COleException : public CException
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleException::Process](#process)|Yakalanan bir özel durum OLE dönüş koda çevirir.|  
+|[COleException::Process](#process)|OLE dönüş koda yakalanan bir özel durumu çevirir.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleException::m_sc](#m_sc)|Özel durumun nedeni gösteren durum kodunu içerir.|  
+|[COleException::m_sc](#m_sc)|Özel durumun nedenini gösteren durum kodu içerir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `COleException` Sınıfı, özel durumun nedeni gösteren durum kodu tutan bir genel veri üyesi içerir.  
+ `COleException` Sınıfı özel durumun nedenini gösteren durum kodunu içeren bir genel veri üyesi içerir.  
   
- Genel olarak, size oluşturma bir `COleException` çağrı doğrudan; bunun yerine, nesne [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
+ Genel olarak, değil oluşturacağınız bir `COleException` doğrudan; bunun yerine, çağırmalıdır nesne [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
   
- Özel durumlar hakkında daha fazla bilgi için makalelerine bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: OLE özel durumları](../../mfc/exceptions-ole-exceptions.md).  
+ Özel durumları hakkında daha fazla bilgi için bkz: makaleleri [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: OLE özel durumları](../../mfc/exceptions-ole-exceptions.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -68,22 +68,22 @@ class COleException : public CException
  **Başlık:** afxdisp.h  
   
 ##  <a name="m_sc"></a>  COleException::m_sc  
- Bu veri üyesi özel durumun nedeni gösterir OLE durum kodunu içerir.  
+ Bu veri üyesi, özel durumun nedenini gösteren OLE durum kodu içerir.  
   
 ```  
 SCODE m_sc;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu değişkenin değerini ayarlamak [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
+ Bu değişkenin değeri ayarlanır [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
   
- Daha fazla bilgi için `SCODE`, bkz: [COM hata kodları yapısı](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK'sındaki.  
+ SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]  
   
 ##  <a name="process"></a>  COleException::Process  
- Çağrı **işlem** üye işlevi bir OLE durum kodu içine yakalanan bir özel durum çevir.  
+ Çağrı **işlem** yakalanan bir özel durumu bir OLE durumu koda çevirmek için üye işlevi.  
   
 ```  
 static SCODE PASCAL Process(const CException* pAnyException);
@@ -91,7 +91,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
   
 ### <a name="parameters"></a>Parametreler  
  *pAnyException*  
- Yakalanan özel durum işaretçi.  
+ Özel durum yakalandı işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  OLE durum kodu.  
@@ -99,12 +99,12 @@ static SCODE PASCAL Process(const CException* pAnyException);
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  Bu işlev **statik**.  
+>  Bu işlev, **statik**.  
   
- Daha fazla bilgi için `SCODE`, bkz: [COM hata kodları yapısı](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK'sındaki.  
+ SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).  
+  Örneğin bakın [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek CALCDRIV](../../visual-cpp-samples.md)   

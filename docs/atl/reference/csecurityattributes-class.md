@@ -19,18 +19,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03bda174fb85fa6857e22b851b93bcf1b3192716
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4bc37dd8025009e4f904373fc8aa106c93dc8210
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357512"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879353"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes sınıfı
-Güvenlik öznitelikleri yapısı için ince sarmalayıcı sınıftır.  
+Güvenlik öznitelikleri yapısı için basit bir sarmalayıcı sınıftır.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,12 +50,12 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSecurityAttributes::Set](#set)|Öznitelikleri ayarlamak için bu yöntemi çağırın `CSecurityAttributes` nesnesi.|  
+|[CSecurityAttributes::Set](#set)|Öznitelikleri ayarlamak için bu yöntemi çağırın `CSecurityAttributes` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- **SECURITY_ATTRIBUTES** yapısının bir [güvenlik tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/aa379561) bir nesne oluşturmak için kullanılan ve bu yapı belirterek alınan tanıtıcı devralınabilir olup olmadığını belirtir.  
+ `SECURITY_ATTRIBUTES` Yapısının bir [güvenlik tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/aa379561) bir nesne oluşturmak için kullanılan ve bu yapı belirterek alınan tanıtıcı devralınabilir olup olmadığını belirtir.  
   
- Erişim denetimi modeli Windows giriş için bkz: [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK'sındaki.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `SECURITY_ATTRIBUTES`  
@@ -74,32 +74,32 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rSecurityDescriptor`  
- Güvenlik tanımlayıcısı başvuru.  
+ *rSecurityDescriptor*  
+ Bir güvenlik tanımlayıcısının başvuru.  
   
- `bInheritsHandle`  
- Yeni bir işlem oluşturulduğunda döndürülen tanıtıcı devralınan olup olmadığını belirtir. Bu üye true ise, yeni işlem tanıtıcısı devralır.  
+ *bInheritsHandle*  
+ Yeni bir işlem oluşturulurken döndürülen tanıtıcının devralınan olup olmadığını belirtir. Bu üye true ise, yeni işlem tanıtıcısı devralır.  
   
 ##  <a name="set"></a>  CSecurityAttributes::Set  
- Öznitelikleri ayarlamak için bu yöntemi çağırın `CSecurityAttributes` nesnesi.  
+ Öznitelikleri ayarlamak için bu yöntemi çağırın `CSecurityAttributes` nesne.  
   
 ```
 void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) throw(...);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rSecurityDescriptor`  
- Güvenlik tanımlayıcısı başvuru.  
+ *rSecurityDescriptor*  
+ Bir güvenlik tanımlayıcısının başvuru.  
   
- `bInheritHandle`  
- Yeni bir işlem oluşturulduğunda döndürülen tanıtıcı devralınan olup olmadığını belirtir. Bu üye true ise, yeni işlem tanıtıcısı devralır.  
+ *bInheritHandle*  
+ Yeni bir işlem oluşturulurken döndürülen tanıtıcının devralınan olup olmadığını belirtir. Bu üye true ise, yeni işlem tanıtıcısı devralır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından Oluşturucusu başlatmak için kullanılan `CSecurityAttributes` nesnesi.  
+ Bu yöntem başlatmak için oluşturucu tarafından kullanılan `CSecurityAttributes` nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenliği örneği](../../visual-cpp-samples.md)   
  [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560)   
  [Güvenlik tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

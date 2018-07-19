@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49142f4ad7ea9793bbe533be6430bce929adf9cc
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 24fee4d4a73fb2933b00160879be130f4c33083b
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039200"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37854063"
 ---
 # <a name="cmfctoolbarcomboboxbutton-class"></a>CMFCToolBarComboBoxButton sınıfı
 Birleşik giriş kutusu denetimi içeren bir araç çubuğu düğmesi ( [CComboBox sınıfı](../../mfc/reference/ccombobox-class.md)).  
@@ -96,54 +96,54 @@ class CMFCToolBarComboBoxButton : public CMFCToolBarButton
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton](#cmfctoolbarcomboboxbutton)|Oluşturan bir `CMFCToolBarComboBoxButton`.|  
+|[CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton](#cmfctoolbarcomboboxbutton)|Oluşturur bir `CMFCToolBarComboBoxButton`.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CMFCToolBarComboBoxButton::AddItem](#additem)|Açılan kutu listesi sonuna bir öğe ekler.|  
-|[CMFCToolBarComboBoxButton::AddSortedItem](#addsorteditem)|Birleşik giriş kutusu listesine bir öğe ekler. Listesindeki öğelerin sırasını tarafından belirtilen `Compare`.|  
-|[CMFCToolBarComboBoxButton::Compare](#compare)|İki öğeyi karşılaştırır. Adlı sıralamak için bu öğeler `AddSortedItems` birleşik giriş kutusu listesine ekler.|  
-|[CMFCToolBarComboBoxButton::CreateEdit](#createedit)|Birleşik giriş kutusu düğmesi için yeni bir düzenleme denetimi oluşturur.|  
-|[CMFCToolBarComboBoxButton::DeleteItem](#deleteitem)|Birleşik giriş kutusu listesinden bir öğeyi siler.|  
+|[CMFCToolBarComboBoxButton::AddSortedItem](#addsorteditem)|Birleşik giriş kutusu listesine bir öğe ekler. Listedeki öğeler tarafından belirtilen `Compare`.|  
+|[CMFCToolBarComboBoxButton::Compare](#compare)|İki öğe karşılaştırır. Adlı sıralamak için bu öğeler `AddSortedItems` birleşik giriş kutusu listesine ekler.|  
+|[CMFCToolBarComboBoxButton::CreateEdit](#createedit)|Yeni bir düzenleme denetimi için birleşik giriş kutusu düğmesi oluşturur.|  
+|[CMFCToolBarComboBoxButton::DeleteItem](#deleteitem)|Birleşik giriş kutusu listeden bir öğeyi siler.|  
 |[CMFCToolBarComboBoxButton::FindItem](#finditem)|Belirtilen dizeyi içeren öğenin dizinini döndürür.|  
-|[CMFCToolBarComboBoxButton::GetByCmd](#getbycmd)|Birleşik giriş kutusu düğmesi belirtilen komut kimliği ile bir işaretçi döndürür|  
-|[CMFCToolBarComboBoxButton::GetComboBox](#getcombobox)|Birleşik giriş kutusu düğmesini katıştırılmış birleşik giriş kutusu denetimine işaretçi döndürür.|  
-|[CMFCToolBarComboBoxButton::GetCount](#getcount)|Öğe sayısı açılan kutu listesi döndürür.|  
-|[CMFCToolBarComboBoxButton::GetCountAll](#getcountall)|Belirtilen komut kimliğe sahip kutusu düğmesi açılan bulur Öğe sayısı açılan bu düğme kutusunu listesini döndürür.|  
-|[CMFCToolBarComboBoxButton::GetCurSel](#getcursel)|Seçili öğenin dizini açılan kutu listesi döndürür.|  
-|[CMFCToolBarComboBoxButton::GetCurSelAll](#getcurselall)|Birleşik giriş belirtilen komut Kimliğine sahip ve seçilen öğenin dizini açılan kutu listesi o düğmesinin döndürür kutusu düğmesi bulur.|  
-|[CMFCToolBarComboBoxButton::GetEditCtrl](#geteditctrl)|Birleşik giriş kutusu düğmesini katıştırılmış düzenleme denetimine işaretçi döndürür.|  
-|[CMFCToolBarComboBoxButton::GetItem](#getitem)|Birleşik giriş belirtilen dizinde ile ilişkili dize kutu listesi döndürür.|  
-|[CMFCToolBarComboBoxButton::GetItemAll](#getitemall)|Birleşik giriş belirtilen komut Kimliğine sahip ve bu düğme, birleşik giriş kutusu listede bir dizinden ile ilişkili bir dize döndürür kutusu düğmesi bulur.|  
-|[CMFCToolBarComboBoxButton::GetItemData](#getitemdata)|Birleşik giriş belirtilen dizinde ilişkilendirilmiş 32-bit değeri kutu listesi döndürür.|  
-|[CMFCToolBarComboBoxButton::GetItemDataAll](#getitemdataall)|Birleşik giriş belirtilen komut Kimliğine sahip ve bu düğme, birleşik giriş kutusu listede bir dizinden ilişkilendirilmiş 32-bit değeri döndüren kutusu düğmesi bulur.|  
-|[CMFCToolBarComboBoxButton::GetItemDataPtrAll](#getitemdataptrall)|Belirtilen komut kimliğe sahip kutusu düğmesi açılan bulur Alır 32-bit değeri bu düğmesi ve 32-bit bir işaretçi olarak değeri döndürür birleşik giriş kutusu listede bir dizinden ilişkilendirilmiş.|  
+|[CMFCToolBarComboBoxButton::GetByCmd](#getbycmd)|Belirtilen komut kimliği ile birleşik giriş kutusu düğmesi için bir işaretçi döndürür.|  
+|[CMFCToolBarComboBoxButton::GetComboBox](#getcombobox)|Birleşik giriş kutusu düğmesi içinde gömülü birleşik giriş kutusu denetimi için bir işaretçi döndürür.|  
+|[CMFCToolBarComboBoxButton::GetCount](#getcount)|Öğe sayısı birleşik giriş kutusu liste döndürür.|  
+|[CMFCToolBarComboBoxButton::GetCountAll](#getcountall)|Birleşik giriş kutusu düğmesi, belirtilen komut kimliğe sahip bulur Öğe sayısı birleşik giriş kutusu liste söz konusu düğmenin döndürür.|  
+|[CMFCToolBarComboBoxButton::GetCurSel](#getcursel)|Seçili öğenin dizinini birleşik giriş kutusu liste döndürür.|  
+|[CMFCToolBarComboBoxButton::GetCurSelAll](#getcurselall)|Birleşik giriş, belirtilen komut kimliği olan ve seçilen öğenin dizini içinde açılan kutusu listesi söz konusu düğmenin döndürür kutusu düğmesi bulur.|  
+|[CMFCToolBarComboBoxButton::GetEditCtrl](#geteditctrl)|Birleşik giriş kutusu düğmesi içinde gömülü düzenleme denetimi için bir işaretçi döndürür.|  
+|[CMFCToolBarComboBoxButton::GetItem](#getitem)|Belirtilen bir birleşik giriş dizini ile ilişkili dizeyi kutusu listesi döndürür.|  
+|[CMFCToolBarComboBoxButton::GetItemAll](#getitemall)|Birleşik giriş belirtilen komut kimliği ve söz konusu düğmenin açılan kutu listesi dizini ile ilişkili dizeyi döndüren kutusu düğmesi bulur.|  
+|[CMFCToolBarComboBoxButton::GetItemData](#getitemdata)|Belirtilen bir birleşik giriş dizini ile ilişkili 32-bit değeri kutusu listesi döndürür.|  
+|[CMFCToolBarComboBoxButton::GetItemDataAll](#getitemdataall)|Birleşik giriş belirtilen komut kimliği vardır ve bu düğmeyi birleşik giriş kutusu listesinde bir dizini ile ilişkili 32-bit değeri döndüren kutusu düğmesi bulur.|  
+|[CMFCToolBarComboBoxButton::GetItemDataPtrAll](#getitemdataptrall)|Birleşik giriş kutusu düğmesi, belirtilen komut kimliğe sahip bulur Alır 32-bit değeri açılan kutu listesi bu düğme ve 32-bit değeri bir işaretçi döndürür bir dizinde ilişkili.|  
 |[CMFCToolBarComboBoxButton::GetText](#gettext)|Birleşik giriş kutusu düzenleme denetiminden metni döndürür.|  
-|[CMFCToolBarComboBoxButton::GetTextAll](#gettextall)|Birleşik giriş belirtilen komut Kimliğine sahip ve bu düğme düzenleme denetiminden metni döndüren kutusu düğmesi bulur.|  
-|[CMFCToolBarComboBoxButton::IsCenterVert](#iscentervert)|Birleşik giriş kutusu düğmeleri uygulama ortalanmış veya araç çubuğunun üstündeki hizalı olup olmadığını belirler.|  
-|[CMFCToolBarComboBoxButton::IsFlatMode](#isflatmode)|Birleşik giriş kutusu düğmeleri uygulama düz bir görünümü sahip olup olmadığını belirler.|  
-|[CMFCToolBarComboBoxButton::RemoveAllItems](#removeallitems)|Listeden tüm öğeler kutusuna ve birleşik giriş kutusu denetimi Düzenle kaldırır.|  
-|[CMFCToolBarComboBoxButton::SelectItem](#selectitem)|Birleşik giriş kutusu dizini, 32-bit değeri veya dize göre bir öğeyi seçer ve birleşik giriş kutusu denetimi seçimi hakkında bilgilendirir.|  
-|[CMFCToolBarComboBoxButton::SelectItemAll](#selectitemall)|Belirtilen komut kimliğe sahip kutusu düğmesi açılan bulur Çağrıları `SelectItem` dize, dizin veya 32-bit değeri göre bu düğmesinin açılan kutusunda bir öğe seçin.|  
-|[CMFCToolBarComboBoxButton::SetCenterVert](#setcentervert)|Birleşik giriş kutusu düğmeleri uygulama dikey ortalanmış veya araç çubuğunun üstündeki hizalanacağını belirtir.|  
-|[CMFCToolBarComboBoxButton::SetDropDownHeight](#setdropdownheight)|Aşağı açılan liste kutusunu yüksekliğini ayarlar.|  
-|[CMFCToolBarComboBoxButton::SetFlatMode](#setflatmode)|Birleşik giriş kutusu düğmeleri uygulama düz bir görünümü sahip olup olmadığını belirtir.|  
+|[CMFCToolBarComboBoxButton::GetTextAll](#gettextall)|Birleşik giriş belirtilen komut kimliği ve söz konusu düğmenin düzenleme denetiminden metni döndüren kutusu düğmesi bulur.|  
+|[CMFCToolBarComboBoxButton::IsCenterVert](#iscentervert)|Birleşik giriş kutusu düğmeleri uygulama ortalanmış veya araç üstüne hizalanmış belirler.|  
+|[CMFCToolBarComboBoxButton::IsFlatMode](#isflatmode)|Birleşik giriş kutusu düğmeleri uygulama düz görünüm sahip olup olmadığını belirler.|  
+|[CMFCToolBarComboBoxButton::RemoveAllItems](#removeallitems)|Listeden tüm öğeler kutu ve birleşik giriş kutusu denetimi Düzenle kaldırır.|  
+|[CMFCToolBarComboBoxButton::SelectItem](#selectitem)|Birleşik giriş kutusunda, dizin, 32-bit değeri veya dize göre bir öğe seçer ve Kombo kutusu denetiminin seçim hakkında bilgilendirir.|  
+|[CMFCToolBarComboBoxButton::SelectItemAll](#selectitemall)|Birleşik giriş kutusu düğmesi, belirtilen komut kimliğe sahip bulur Çağrıları `SelectItem` birleşik giriş kutusundaki söz konusu düğmenin kendi dize, dizin veya 32-bit değere göre bir öğe seçin.|  
+|[CMFCToolBarComboBoxButton::SetCenterVert](#setcentervert)|Birleşik giriş kutusu düğmeleri uygulama dikey ortalanmış veya araç üstüne hizalanmış belirtir.|  
+|[CMFCToolBarComboBoxButton::SetDropDownHeight](#setdropdownheight)|Aşağı açılan liste kutusunun yüksekliğini belirler.|  
+|[CMFCToolBarComboBoxButton::SetFlatMode](#setflatmode)|Birleşik giriş kutusu düğmeleri uygulama düz görünüm sahip olup olmadığını belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birleşik giriş kutusu düğmesi bir araç çubuğuna eklemek için aşağıdaki adımları izleyin:  
+ Birleşik giriş kutusu düğmesi için araç çubuğu eklemek için bu adımları izleyin:  
   
- 1. Bir kukla kaynağı kimliği üst araç çubuğu kaynak düğmesi için ayrılmış.  
+ 1. Üst araç çubuğunda kaynağında düğme için bir işlevsiz kaynak kimliği saklı tutarız.  
   
- 2. Oluşturmak bir `CMFCToolBarComboBoxButton` nesnesi.  
+ 2. Oluşturmak bir `CMFCToolBarComboBoxButton` nesne.  
   
- 3. AFX_WM_RESETTOOLBAR iletisini işler ileti işleyicisi kukla düğmesini kullanarak yeni birleşik giriş kutusu düğmesi ile değiştirin [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
+ 3. AFX_WM_RESETTOOLBAR iletiyi işleyen ileti işleyicisi işlevsiz düğmesini kullanarak yeni bir birleşik giriş kutusu düğmesi ile değiştirin [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).  
   
- Daha fazla bilgi için bkz: [izlenecek yol: üzerinde denetimler koyma araç'çubukları](../../mfc/walkthrough-putting-controls-on-toolbars.md). Birleşik giriş kutusu araç çubuğu düğmesi bir örneği için örnek proje VisualStudioDemo bakın.  
+ Daha fazla bilgi için [izlenecek yol: temel denetimler koyma araç'çubukları](../../mfc/walkthrough-putting-controls-on-toolbars.md). Örneği bir birleşik giriş kutusu araç çubuğu düğmesi için örnek proje VisualStudioDemo bakın.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek çeşitli yöntemlerle kullanımı gösterilmiştir `CMFCToolBarComboBoxButton` sınıfı. Örnek düzenleme ve birleşik giriş kutularını etkinleştirmek için uygulamada kutusunu düğmeleri açılan dikey konumu ayarlayın, onu bırakıldığında liste kutusu yüksekliğini ayarlayın, uygulamada birleşik giriş kutusu düğmeleri düz stil görünümünü ayarlamak nasıl gösterir ve metin kutusunda düğme açılan düzenleme kutusuna ayarlayın. Bu kod parçacığını parçası olan [Visual Studio gösterim örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCToolBarComboBoxButton` sınıfı. Örnek düzenleme ve birleşik giriş kutularını etkinleştirmek, dikey konumu birleşik giriş kutusu düğmeleri uygulamada ayarlayın, bırakıldığında, liste kutusunun yüksekliğini ayarlama, birleşik giriş kutusu düğmeleri düz stil görünümünü uygulamada ayarlamak nasıl gösterir , metin düzenleme kutusuna birleşik giriş kutusu düğmesi ayarlayın. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#36](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_1.cpp)]  
 [!code-cpp[NVC_MFC_VisualStudioDemo#37](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_2.cpp)]  
@@ -159,7 +159,7 @@ class CMFCToolBarComboBoxButton : public CMFCToolBarButton
  **Başlık:** afxtoolbarcomboboxbutton.h  
   
 ##  <a name="additem"></a>  CMFCToolBarComboBoxButton::AddItem  
- Liste kutusu için benzersiz bir öğe ekler.  
+ Liste kutusuna benzersiz bir öğe ekler.  
   
 ```  
 virtual INT_PTR AddItem(
@@ -169,21 +169,21 @@ virtual INT_PTR AddItem(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszItem*  
- Liste kutusu eklemek için öğenin metni.  
+ Liste kutusuna eklenecek öğe metni.  
   
  [in] *dwData*  
- Liste kutusu eklenecek öğe ile ilişkili veriler.  
+ Liste kutusuna eklenecek öğe ile ilişkili veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Liste kutusu son öğenin dizini.  
+ Liste kutusunda son öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, liste kutusunu stili sıralandığında kullanmayın.  
+ Liste kutusu stili sıralandığında, bu yöntemi kullanmayın.  
   
- Öğe metnini liste kutusunda ise, yeni verileri var olan öğe depolanır. Öğesi için arama büyük küçük harfe duyarlıdır.  
+ Öğe metin liste kutusunda ise, yeni verileri var olan öğeyle depolanır. Öğe için arama büyük/küçük harfe duyarlıdır.  
   
 ##  <a name="addsorteditem"></a>  CMFCToolBarComboBoxButton::AddSortedItem  
- Liste kutusu tarafından tanımlanan sırada bir öğe ekler [karşılaştırmak](#compare) yöntemi.  
+ Bir öğe tarafından tanımlanan sırayla liste kutusuna ekler [karşılaştırma](#compare) yöntemi.  
   
 ```  
 virtual INT_PTR AddSortedItem(
@@ -193,29 +193,29 @@ virtual INT_PTR AddSortedItem(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszItem*  
- Liste kutusu eklemek için öğenin metni.  
+ Liste kutusuna eklenecek öğe metni.  
   
  [in] *dwData*  
- Liste kutusu eklenecek öğe ile ilişkili veriler.  
+ Liste kutusuna eklenecek öğe ile ilişkili veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Liste kutusu eklendi öğenin dizini.  
+ Liste kutusuna eklenen öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirli bir sırada liste kutusunda öğeler eklemek için bu işlevi kullanın.  
+ Belirli bir sırayla liste kutusu öğeleri eklemek için bu işlevi kullanın.  
   
 ##  <a name="canbestretched"></a>  CMFCToolBarComboBoxButton::CanBeStretched  
- Birleşik giriş kutusu düğme boyutu değişip değişemeyeceğini gösterir.  
+ Birleşik giriş kutusu düğme boyutu değiştirip değiştiremeyeceğini belirtir.  
   
 ```  
 virtual BOOL CanBeStretched() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `TRUE`.  
+ TRUE değerini döndürür.  
   
 ##  <a name="cmfctoolbarcomboboxbutton"></a>  CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton  
- Oluşturan bir [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) nesnesi.  
+ Oluşturur bir [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) nesne.  
   
 ```  
 CMFCToolBarComboBoxButton(
@@ -230,28 +230,28 @@ CMFCToolBarComboBoxButton(
  Yeni düğmesini komut kimliği.  
   
  [in] *iImage*  
- Yeni düğmesi ile ilişkilendirilmiş görüntüsü görüntü dizini.  
+ Yeni düğmesi ile ilişkili görüntünün görüntü dizini.  
   
  [in] *dwStyle*  
  Yeni düğmesini stili.  
   
  [in] *iWidth*  
- Yeni düğmesinin piksel cinsinden genişliği.  
+ Yeni düğmesini piksel cinsinden genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan genişliğini 150 pikseldir.  
   
- Araç çubuğu düğmesi stilleri listesi için bkz: [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md)  
+ Araç çubuğu düğmesi stilleri bir listesi için bkz. [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md)  
   
 ##  <a name="cleardata"></a>  CMFCToolBarComboBoxButton::ClearData  
- Kullanıcı tanımlı siler veri.  
+ Verileri kullanıcı tanımlı siler.  
   
 ```  
 virtual void ClearData();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak bu yöntem hiçbir şey yapmaz. Herhangi bir kullanıcı tarafından tanımlanan veri silmek istiyorsanız bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz. Kullanıcı tanımlı tüm verileri silmek isterseniz türetilen bir sınıfta bu yöntemi yok sayın.  
   
 ##  <a name="compare"></a>  CMFCToolBarComboBoxButton::Compare  
  İki dizeyi karşılaştırır.  
@@ -270,16 +270,16 @@ virtual int Compare(
  Karşılaştırılacak ikinci dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizeleri büyük küçük harfe duyarlı lexicographic ilişkisi belirten bir değer. Olası değerler aşağıdaki tabloda listelenmektedir:  
+ Dizeler büyük/küçük harfe lexicographic ilişkisi belirten bir değer. Olası değerler aşağıdaki tabloda listelenmektedir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|\<0|İlk dizesi küçük ikinciden.|  
-|0|İlk dizesi ikinci eşittir.|  
-|>0|İlk dizesi saniyeden daha büyük.|  
+|\<0|İlk dize küçük ikinciden.|  
+|0|Birinci dize ikinci eşittir.|  
+|>0|İlk dize ikinciden büyükse.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Öğeleri liste kutusunda nasıl sıralanacağını değiştirmek için bu yöntemi geçersiz kılın.  
+ Öğeleri liste kutusunda nasıl sıralanacağını değiştirmek için bu yöntemi yok sayın.  
   
  Karşılaştırma büyük/küçük harf duyarlıdır.  
   
@@ -293,8 +293,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `src`  
- Kaynak `CMFCToolBarComboBoxButton` nesnesi.  
+ [in] *src*  
+ Kaynak `CMFCToolBarComboBoxButton` nesne.  
   
 ##  <a name="createcombo"></a>  CMFCToolBarComboBoxButton::CreateCombo  
  Birleşik giriş kutusu düğmesi için yeni bir birleşik giriş kutusu oluşturur.  
@@ -307,16 +307,16 @@ virtual CComboBox* CreateCombo(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pWndParent*  
- Düğmenin üst pencere için bir işaretçi.  
+ Düğmenin üst penceresine bir işaretçi.  
   
- [in] *rect*  
+ [in] *dikdörtgen*  
  Birleşik giriş kutusu sınırlayıcı dikdörtgenini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa yeni bir birleşik giriş kutusu için bir işaretçi; Aksi takdirde `NULL`.  
+ Yöntem başarılı olursa yeni bir birleşik giriş kutusu için bir işaretçi; Aksi takdirde NULL.  
   
 ##  <a name="createedit"></a>  CMFCToolBarComboBoxButton::CreateEdit  
- Birleşik giriş kutusu düğmesi için yeni bir düzenleme kutusu oluşturur.  
+ Yeni bir düzenleme kutusu için birleşik giriş kutusu düğmesi oluşturur.  
   
 ```  
 virtual CMFCToolBarComboBoxEdit* CreateEdit(
@@ -327,19 +327,19 @@ virtual CMFCToolBarComboBoxEdit* CreateEdit(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pWndParent*  
- Düğmenin üst pencere için bir işaretçi.  
+ Düğmenin üst penceresine bir işaretçi.  
   
- [in] *rect*  
+ [in] *dikdörtgen*  
  Yeni düzenleme kutusu sınırlayıcı dikdörtgenini.  
   
  [in] *dwEditStyle*  
- Yeni düzenleme kutusuna denetim stili.  
+ Yeni düzenleme kutusu denetim stili.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa yeni düzenleme kutusu için bir işaretçi; Aksi takdirde `NULL`.  
+ Yöntem başarılı olursa yeni bir düzenleme kutusu için bir işaretçi; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Birleşik giriş kutusu düğmesi için yeni bir düzenleme kutusu oluşturduğunda framework bu yöntemi çağırır. Değiştirmek için bu yöntemi geçersiz kılın nasıl [CMFCToolBarComboBoxEdit](../../mfc/reference/cmfctoolbarcomboboxedit-class.md) oluşturulur.  
+ Birleşik giriş kutusu düğmesi için yeni bir düzenleme kutusuna oluşturduğunda framework bu yöntemi çağırır. Değiştirmek için bu yöntemi yok sayın nasıl [CMFCToolBarComboBoxEdit](../../mfc/reference/cmfctoolbarcomboboxedit-class.md) oluşturulur.  
   
 ##  <a name="deleteitem"></a>  CMFCToolBarComboBoxButton::DeleteItem  
  Belirtilen öğe liste kutusundan siler.  
@@ -358,10 +358,10 @@ BOOL DeleteItem(DWORD_PTR dwData);
  Silinecek öğe ile ilişkili veriler.  
   
  [in] *lpszText*  
- Silinecek öğe metin. Aynı metnin ile birden çok öğe varsa, ilk öğe silindi.  
+ Silinecek öğenin metni. Aynı metni birden çok öğe varsa, ilk öğe silindi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` öğe bulunan ve başarıyla silindi Aksi takdirde `FALSE`.  
+ Öğe bulunan ve başarıyla silindi gerekiyorsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -373,7 +373,7 @@ virtual void DuplicateData();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak bu yöntem hiçbir şey yapmaz. Herhangi bir kullanıcı tarafından tanımlanan veri kopyalamak istiyorsanız, bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
+ Varsayılan olarak, bu yöntemi hiçbir şey yapmaz. Herhangi bir kullanıcı tanımlı veri kopyalamak isterseniz türetilen bir sınıfta bu yöntemi yok sayın.  
   
 ##  <a name="enablewindow"></a>  CMFCToolBarComboBoxButton::EnableWindow  
  Etkinleştirir veya düzenleme ve birleşik giriş kutuları devre dışı bırakır.  
@@ -384,13 +384,13 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` Düzenle ve birleşik giriş kutuları etkinleştirmek için; `FALSE` düzenleme ve birleşik giriş kutuları devre dışı bırakmak için.  
+ Düzenle ve birleşik giriş kutularını etkinleştirmek için TRUE; Düzenle ve birleşik giriş kutuları devre dışı bırakmak için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Devre dışı bırakıldığında, denetimleri etkin olamaz ve kullanıcı girişi kabul edemez.  
+ Devre dışı bırakıldığında denetimler etkin olamaz ve kullanıcı girişi kabul edemez.  
   
 ##  <a name="exporttomenubutton"></a>  CMFCToolBarComboBoxButton::ExportToMenuButton  
- Birleşik giriş kutusu düğmesi komutunu kullanarak belirtilen menü uygulama dize tablosundan dizeye kopya kimliği  
+ Kopya uygulama dize tablosunda bir dizeden belirtilen menüsüne komut birleşik giriş kutusu düğmesini kullanarak kimliği  
   
 ```  
 virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;  
@@ -398,10 +398,10 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
   
 ### <a name="parameters"></a>Parametreler  
  [out] *menuButton*  
- Menü düğmesi başvuru.  
+ Menü düğmesine başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Her zaman `TRUE`.  
+ Her zaman TRUE.  
   
 ##  <a name="finditem"></a>  CMFCToolBarComboBoxButton::FindItem  
  Belirtilen dizeyi içeren liste kutusunda ilk öğenin dizinini döndürür.  
@@ -412,15 +412,15 @@ int FindItem(LPCTSTR lpszText) const;
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszText*  
- Liste kutusunda Aranacak metin.  
+ Liste kutusunda aramak istediğiniz metin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğenin dizini; veya `CB_ERR` öğenin bulunamaması durumunda.  
+ Öğenin dizini; veya öğenin bulunamaması durumunda CB_ERR.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getbycmd"></a>  CMFCToolBarComboBoxButton::GetByCmd  
- Belirtilen komut kimliğe sahip birleşik giriş kutusu düğmesini gösteren bir işaretçi alır  
+ Belirtilen komut kimliği olan birleşik giriş kutusu düğmesi için bir işaretçi alır  
   
 ```  
 static CMFCToolBarComboBoxButton* GetByCmd(
@@ -433,10 +433,10 @@ static CMFCToolBarComboBoxButton* GetByCmd(
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
  [in] *bIsFocus*  
- `TRUE` Yalnızca arama için düğmeler odaklanmış; `FALSE` tüm düğmeleri aramak için.  
+ Yalnızca arama için true, düğmeler odaklanmış; Tüm düğmeleri aramak için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Birleşik giriş kutusu düğmesini gösteren bir işaretçi; veya `NULL` düğmesi bulunmazsa.  
+ Birleşik giriş kutusu düğmesi için bir işaretçi; ya da düğme bulunamazsa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -448,22 +448,22 @@ CComboBox* GetComboBox() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi [CComboBox sınıfı](../../mfc/reference/ccombobox-class.md) yöntemi, varsa başarılıysa nesne `NULL`.  
+ Bir işaretçi [CComboBox sınıfı](../../mfc/reference/ccombobox-class.md) yöntemi başarılı olup olmadığını nesne; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getcontextmenuid"></a>  CMFCToolBarComboBoxButton::GetContextMenuID  
- Birleşik giriş kutusu düğmesi için kısayol menüsü kaynak kimliği alır.  
+ Birleşik giriş kutusu düğmesi için kısayol menüsü kaynak Kimliğini alır.  
   
 ```  
 UINT GetContextMenuID();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kısayol menüsü kaynak kimliği  
+ Kısayol menüsünde kaynak kimliği  
   
 ##  <a name="getcount"></a>  CMFCToolBarComboBoxButton::GetCount  
- Liste kutusunda öğe sayısını döndürür.  
+ Liste kutusundan öğe sayısını döndürür.  
   
 ```  
 INT_PTR GetCount() const;  
@@ -486,7 +486,7 @@ static int GetCountAll(UINT uiCmd);
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Liste kutusu öğelerin sayısı; Aksi takdirde `CB_ERR` birleşik giriş kutusu düğmesi bulunmazsa.  
+ Liste kutusunda öğe sayısı; Aksi halde düğme birleşik giriş kutusu CB_ERR bulunamadı.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -498,13 +498,13 @@ int GetCurSel() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Liste kutusunda seçili öğenin dizini; veya `CB_ERR` öğe seçili değilse.  
+ Liste kutusunda seçili öğenin dizinini; veya hiçbir öğe seçili değilse CB_ERR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Liste kutusu sıfır tabanlı dizinidir.  
+ Liste kutusu dizin sıfır tabanlıdır.  
   
 ##  <a name="getcurselall"></a>  CMFCToolBarComboBoxButton::GetCurSelAll  
- Belirtilen komut kimliğe sahip kutusu düğmesi bir açılan liste kutusunda seçili öğenin dizinini döndürür  
+ Seçili öğenin dizinini bir açılan liste kutusunda belirtilen komut kimliği olan kutusu düğmesi döndürür.  
   
 ```  
 static int GetCurSelAll(UINT uiCmd);
@@ -515,35 +515,35 @@ static int GetCurSelAll(UINT uiCmd);
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Liste kutusunda seçili öğenin dizini; Aksi takdirde, `CB_ERR` seçili öğe yok veya birleşik giriş kutusu düğmesi bulunamadı.  
+ Liste kutusunda seçili öğenin dizinini; Aksi takdirde, hiçbir öğe seçili değilse CB_ERR veya birleşik giriş kutusu düğmesi bulunamadı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Liste kutusu sıfır tabanlı dizinidir.  
+ Liste kutusu dizin sıfır tabanlıdır.  
   
 ##  <a name="geteditctrl"></a>  CMFCToolBarComboBoxButton::GetEditCtrl  
- Bir işaretçi düzenleme kutusu içinde birleşik giriş kutusu düğmesi döndürür.  
+ Bir işaretçi için düzenleme kutusu içinde birleşik giriş kutusu düğmesi döndürür.  
   
 ```  
 virtual CEdit* GetEditCtrl();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Düzenleme kutusuna yöntemi başarılı olup olmadığını gösteren bir işaretçi; Aksi takdirde `NULL`.  
+ Yöntem başarılı olursa düzenleme kutusu için bir işaretçi; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="gethwnd"></a>  CMFCToolBarComboBoxButton::GetHwnd  
- Birleşik giriş kutusu için Pencere işleyicisini döndürür.  
+ Birleşik giriş kutusu için Pencere işleyicisi döndürür.  
   
 ```  
 virtual HWND GetHwnd();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir pencere tanıtıcının veya `NULL` birleşik giriş kutusu pencere nesnesi ile ilişkili değilse.  
+ Pencere tanıtıcısı veya birleşik giriş kutusu bir pencere nesnesi ile ilişkili değilse NULL.  
   
 ##  <a name="getitem"></a>  CMFCToolBarComboBoxButton::GetItem  
- Liste kutusunda belirtilen dizindeki bir öğesiyle ilişkili dizeyi döndürür.  
+ Belirtilen bir dizinden liste kutusunda bir öğe ile ilişkili dizeyi döndürür.  
   
 ```  
 LPCTSTR GetItem(int iIndex=-1) const;  
@@ -551,16 +551,16 @@ LPCTSTR GetItem(int iIndex=-1) const;
   
 ### <a name="parameters"></a>Parametreler  
  [in] *İIndex*  
- Liste kutusunda öğenin sıfır tabanlı dizini.  
+ Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğeyle ilişkili dize için bir işaretçi; Aksi takdirde `NULL` dizin parametresi geçersiz olması veya dizin parametresi -1'dir ve açılan kutuda seçili öğe yok.  
+ Öğesiyle ilişkili dize için bir işaretçi; Aksi takdirde dizin parametresi geçersiz olduğunda ya da dizin parametresi -1'dir ve birleşik giriş kutusunda seçili öğe yok yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dizin parametresi-1, geçerli olarak seçili öğenin dize döndürür.  
+ Şu anda seçili olan öğenin dize dizin parametresi-1 döndürür.  
   
 ##  <a name="getitemall"></a>  CMFCToolBarComboBoxButton::GetItemAll  
- Belirtilen komut kimliğe sahip bir birleşik giriş kutusu düğmesi, liste kutusunda belirtilen dizindeki bir öğesiyle ilişkili dizeyi döndürür  
+ Belirtilen komut kimliğe sahip bir birleşik giriş kutusu düğmesi, liste kutusunda belirtilen bir dizinden bir öğe ile ilişkili dizeyi döndürür  
   
 ```  
 static LPCTSTR GetItemAll(
@@ -573,16 +573,16 @@ static LPCTSTR GetItemAll(
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
  [in] *İIndex*  
- Liste kutusunda öğenin sıfır tabanlı dizini.  
+ Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa öğesi'nin dize için bir işaretçi; Aksi takdirde `NULL` dizin geçersiz olduğu, birleşik giriş kutusu düğmesi değilse bulunan veya dizin ise -1 ve açılan kutuda seçili öğe yok.  
+ Yöntem başarılı olursa, öğenin dizeye bir işaretçi; Aksi takdirde NULL dizini geçersiz bir birleşik giriş kutusu düğmesi bulunamadı, ya da dizin -1 ve birleşik giriş kutusunda seçili öğe yok.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dizin değeri-1, geçerli olarak seçili öğenin dize döndürür.  
+ Şu anda seçili olan öğe dizisi bir dizin değeri-1 döndürür.  
   
 ##  <a name="getitemdata"></a>  CMFCToolBarComboBoxButton::GetItemData  
- Liste kutusunda belirli bir dizindeki bir öğesiyle ilişkili verileri döndürür.  
+ Belirli bir dizinini liste kutusunda bir öğe ile ilişkili verilerini döndürür.  
   
 ```  
 DWORD_PTR GetItemData(int iIndex=-1) const;  
@@ -590,16 +590,16 @@ DWORD_PTR GetItemData(int iIndex=-1) const;
   
 ### <a name="parameters"></a>Parametreler  
  [in] *İIndex*  
- Liste kutusunda öğenin sıfır tabanlı dizini.  
+ Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu öğeyle ilişkili veri; veya öğe yoksa 0.  
+ Öğeyle ilişkili verileri; ya da öğe yoksa 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dizin parametresi-1 şu anda seçili öğe ile ilişkilendirilen veri döndürür.  
+ Şu anda seçili öğeyle ilişkili verileri dizin parametresi-1 döndürür.  
   
 ##  <a name="getitemdataall"></a>  CMFCToolBarComboBoxButton::GetItemDataAll  
- Belirli bir dizine belirli komut kimliğe sahip bir birleşik giriş kutusu düğmesi, liste kutusunda bir öğesiyle ilişkili verileri döndürür  
+ Belirli bir dizinin belirli komut kimliğe sahip bir birleşik giriş kutusu düğmesi, liste kutusunda bir öğe ile ilişkili verileri döndürür  
   
 ```  
 static DWORD_PTR GetItemDataAll(
@@ -612,16 +612,16 @@ static DWORD_PTR GetItemDataAll(
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
  [in] *İIndex*  
- Liste kutusunda öğenin sıfır tabanlı dizini.  
+ Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa öğe ile ilişkilendirilen veri; Aksi halde, belirtilen dizin geçerli değilse, 0 veya birleşik giriş kutusu düğmesi CB_ERR bulunamadı.  
+ Yöntem başarılı olursa öğeye ilişkilendirilmiş veri; Aksi takdirde, belirtilen dizinde geçerli değilse, 0 veya birleşik giriş kutusu düğmesi CB_ERR bulunamadı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dizin parametresi-1 şu anda seçili öğe ile ilişkilendirilen veri döndürür.  
+ Şu anda seçili öğeyle ilişkili verileri dizin parametresi-1 döndürür.  
   
 ##  <a name="getitemdataptrall"></a>  CMFCToolBarComboBoxButton::GetItemDataPtrAll  
- Belirli bir dizine belirli komut kimliğe sahip bir birleşik giriş kutusu düğmesi, liste kutusunda bir öğesiyle ilişkili verileri döndürür Bu veriler bir işaretçi olarak döndürülür.  
+ Belirli bir dizinin belirli komut kimliğe sahip bir birleşik giriş kutusu düğmesi, liste kutusunda bir öğe ile ilişkili verileri döndürür Bu veriler, bir işaretçi olarak döndürülür.  
   
 ```  
 static void* GetItemDataPtrAll(
@@ -634,10 +634,10 @@ static void* GetItemDataPtrAll(
  Birleşik giriş kutusu düğmesi komut kimliği.  
   
  [in] *İIndex*  
- Liste kutusunda öğenin sıfır tabanlı dizini.  
+ Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa öğe ile ilişkilendirilen bir işaretçi; bir hata oluşursa, aksi takdirde, -1 veya `NULL` birleşik giriş kutusu düğmesi bulunmazsa.  
+ Yöntem başarılı olursa öğeye ilişkilendirilmiş bir işaretçi; Aksi takdirde,-1 ise bir hata oluşur ya da düğme birleşik giriş kutusu yoksa NULL bulunamadı.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -652,7 +652,7 @@ virtual CString GetPrompt() const;
  İstem dizesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu metot şu anda uygulanmadı.  
+ Bu yöntem henüz uygulanmadı.  
   
 ##  <a name="gettext"></a>  CMFCToolBarComboBoxButton::GetText  
  Metin düzenleme kutusu içinde alır.  
@@ -667,7 +667,7 @@ LPCTSTR GetText() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="gettextall"></a>  CMFCToolBarComboBoxButton::GetTextAll  
- Belirtilen komut kimliğe sahip bir birleşik giriş kutusu düğmesi düzenleme kutusuna metni alır  
+ Belirtilen komut kimliğe sahip bir birleşik giriş kutusu düğmesi düzenleme kutusuna metin alır  
   
 ```  
 static LPCTSTR GetTextAll(UINT uiCmd);
@@ -675,10 +675,10 @@ static LPCTSTR GetTextAll(UINT uiCmd);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *uiCmd*  
- Belirli birleşik giriş kutusu düğmesi komut kimliği.  
+ Belirli bir birleşik giriş kutusu düğmesi komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa düzenleme kutusuna metinde; Aksi takdirde `NULL`.  
+ Yöntem başarılı olursa düzenleme kutusuna metin; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -690,38 +690,38 @@ virtual BOOL HasFocus() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Birleşik giriş kutusu odağa sahip Aksi takdirde `FALSE`.  
+ Birleşik giriş kutusu şu anda odağı varsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem aynı zamanda `TRUE` tüm alt pencere açılan kutunun odağa sahip değilse.  
+ Birleşik giriş kutusunun herhangi bir alt pencere odağı varsa, bu yöntem ayrıca TRUE döndürür.  
   
 ##  <a name="iscentervert"></a>  CMFCToolBarComboBoxButton::IsCenterVert  
- Birleşik giriş kutusu düğmelerini dikey konumu uygulamada döndürür.  
+ Birleşik giriş kutusu düğmeleri dikey konumu uygulamaya döndürür.  
   
 ```  
 static BOOL IsCenterVert();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` düğmeleri ortalanır; `FALSE` düğmeleri en üstünde hizalanır durumunda.  
+ Düğmeleri ortalanır TRUE; Düğmeleri üstünde hizalanır FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isflatmode"></a>  CMFCToolBarComboBoxButton::IsFlatMode  
- Birleşik giriş kutusu düğmelerin düz stil görünümünü uygulamada döndürür.  
+ Birleşik giriş kutusu düğmeleri düz stil görünümünü uygulamada döndürür.  
   
 ```  
 static BOOL IsFlatMode();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` düğmeleri düz bir stil varsa; Aksi takdirde `FALSE`.  
+ Düğmeleri düz bir stil varsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Birleşik giriş kutusu düğmeleri için varsayılan düz stili `FALSE.`  
+ Birleşik giriş kutusu düğmeleri varsayılan düz stilini FALSE olur.  
   
 ##  <a name="isownerof"></a>  CMFCToolBarComboBoxButton::IsOwnerOf  
- Belirtilen tanıtıcı birleşik giriş kutusu düğmesini veya alt öğelerinden ile ilişkili olup olmadığını gösterir.  
+ Belirtilen tutamaç birleşik giriş kutusu düğmesi veya alt öğelerinden biri ile ilişkili olup olmadığını belirtir.  
   
 ```  
 virtual BOOL IsOwnerOf(HWND hwnd);
@@ -729,23 +729,23 @@ virtual BOOL IsOwnerOf(HWND hwnd);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *hwnd*  
- Bir pencere işleci.  
+ Bir pencere tutucu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Birleşik giriş kutusu düğmesini veya alt öğelerinden assocated işleyicisidir Aksi takdirde `FALSE`.  
+ Tutamaç birleşik giriş kutusu düğmesi veya alt öğelerinden birine assocated ise TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="isribbonbutton"></a>  CMFCToolBarComboBoxButton::IsRibbonButton  
- Birleşik giriş kutusu düğmesi Şerit panelde bulunduğunu gösterir.  
+ Bir Şerit panel üzerine birleşik giriş kutusu düğmesi bulunduğunu gösterir.  
   
 ```  
 BOOL IsRibbonButton() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Her zaman `FALSE`.  
+ Her zaman FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem her zaman döndürür `FALSE`, birleşik giriş kutusu düğmesi başka bir deyişle, hiçbir zaman bir Şerit panelde görüntülenir.  
+ Varsayılan olarak, bu yöntem her zaman yanlış, yani bir Şerit panel üzerine birleşik giriş kutusu düğmesi hiçbir zaman görüntülenen döndürür.  
   
 ##  <a name="iswindowvisible"></a>  CMFCToolBarComboBoxButton::IsWindowVisible  
  Görünürlük durumu birleşik giriş kutusu düğmesi döndürür.  
@@ -758,7 +758,7 @@ virtual BOOL IsWindowVisible();
  Birleşik giriş kutusu düğmesi görünürlük durumu.  
   
 ##  <a name="notifycommand"></a>  CMFCToolBarComboBoxButton::NotifyCommand  
- Birleşik giriş kutusu düğmesi iletisini işler olup olmadığını gösterir.  
+ Birleşik giriş kutusu düğmesi iletiyi işler olup olmadığını gösterir.  
   
 ```  
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -766,20 +766,20 @@ virtual BOOL NotifyCommand(int iNotifyCode);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *iNotifyCode*  
- Komutu ile ilişkili bildirim iletisi.  
+ Komutu ile ilişkili bir uyarı iletisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Birleşik giriş kutusu düğmesi olup iletisini işler.  
+ Olup birleşik giriş kutusu düğmesi iletiyi işler.  
   
 ##  <a name="onaddtocustomizepage"></a>  CMFCToolBarComboBoxButton::OnAddToCustomizePage  
- Düğme eklendiğinde çerçevesi tarafından çağrılır **Özelleştir** iletişim kutusu.  
+ Framework tarafından düğmenin eklendiğinde çağırılır **Özelleştir** iletişim kutusu.  
   
 ```  
 virtual void OnAddToCustomizePage();
 ```  
   
 ##  <a name="oncalculatesize"></a>  CMFCToolBarComboBoxButton::OnCalculateSize  
- Düğmenin boyutunu hesaplamak için çerçevesi tarafından çağrılır.  
+ Düğmenin boyutunu hesaplamak için framework tarafından çağırılır.  
   
 ```  
 virtual SIZE OnCalculateSize(
@@ -796,13 +796,13 @@ virtual SIZE OnCalculateSize(
  Birleşik giriş kutusu düğmesi varsayılan boyutu.  
   
  [in] *bHorz*  
- Üst araç çubuğu yerleştirme durumu. `TRUE` ne zaman araç yerleştirilmiştir yatay ve `FALSE` zaman araç yerleştirilmiştir dikey olarak.  
+ Üst araç çubuğu yerleştirme durumu. Araç dikey yerleştirildiğinde araç yatay ve yanlış yerleştirildiğini olduğunda TRUE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `SIZE` birleşik giriş kutusu düğmesi piksel boyutlarını içeren yapısı.  
+ A `SIZE` birleşik giriş kutusu düğmesi piksel cinsinden boyutunu içeren yapısı.  
   
 ##  <a name="onchangeparentwnd"></a>  CMFCToolBarComboBoxButton::OnChangeParentWnd  
- Birleşik giriş kutusu düğmesi yeni bir araç çubuğu takıldığında çerçevesi tarafından çağrılır.  
+ Birleşik giriş kutusu düğmesi, yeni bir araç çubuğuna eklendiğinde, framework tarafından çağırılır.  
   
 ```  
 virtual void OnChangeParentWnd(CWnd* pWndParent);
@@ -810,10 +810,10 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pWndParent*  
- Yeni üst araç işaretçi.  
+ Yeni üst araç işaretçisi.  
   
 ##  <a name="onclick"></a>  CMFCToolBarComboBoxButton::OnClick  
- Kullanıcı birleşik giriş kutusu düğmesini tıklattığında çerçevesi tarafından çağrılır.  
+ Kullanıcı birleşik giriş kutusu düğmesine tıkladığında framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnClick(
@@ -823,16 +823,16 @@ virtual BOOL OnClick(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pWnd*  
- Birleşik giriş kutusu düğmesinin üst pencere işaretçi.  
+ Birleşik giriş kutusu düğmesi ana pencerenin işaretçisi.  
   
  [in] *bDelay*  
- Bir türetilmiş sınıfta kullanılmak üzere ayrılmıştır.  
+ Türetilen bir sınıfta kullanılmak üzere ayrılmıştır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem; olay işliyorsa Aksi takdirde `FALSE`.  
+ Yöntem olayı işleyen TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="onctlcolor"></a>  CMFCToolBarComboBoxButton::OnCtlColor  
- Kullanıcı birleşik giriş kutusu düğmesi rengini ayarlamak için üst araç renk değiştirdiğinde çerçevesi tarafından çağrılır.  
+ Kullanıcı birleşik giriş kutusu düğme rengi ayarlamak için üst araç çubuğu rengi değiştiğinde framework tarafından çağırılır.  
   
 ```  
 virtual HBRUSH OnCtlColor(
@@ -848,13 +848,13 @@ virtual HBRUSH OnCtlColor(
  Kullanılmayan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Birleşik giriş kutusu düğmesi arka boyamak için çerçevesi kullanır fırça işleyin.  
+ Birleşik giriş kutusu düğmenin arka plan boyama için framework kullanan fırçaya işleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem aynı zamanda birleşik giriş kutusu düğmesi metin rengini belirler.  
+ Bu yöntem ayrıca Birleşik giriş kutusu düğmesi metnin rengini ayarlar.  
   
 ##  <a name="ondraw"></a>  CMFCToolBarComboBoxButton::OnDraw  
- Birleşik giriş kutusu düğmesi belirtilen stilleri ve seçenekleri kullanarak çizmek için çerçevesi tarafından çağrılır.  
+ Birleşik giriş kutusu düğmesi belirtilen stillerini ve seçeneklerini kullanarak çizilmesi gerektiğinde framework tarafından çağırılır.  
   
 ```  
 virtual void OnDraw(
@@ -872,29 +872,29 @@ virtual void OnDraw(
  [in] *Pdc*  
  Düğme görüntüler cihaz bağlamı.  
   
- [in] *rect*  
- Düğmenin sınırlayıcı dikdörtgenini.  
+ [in] *dikdörtgen*  
+ Dikdörtgen düğmesi.  
   
  [in] *pImages*  
- Görüntüleri düğmesi ile ilişkili koleksiyonu.  
+ Görüntüleri düğmesi ile ilişkili olan koleksiyonu.  
   
  [in] *bHorz*  
- Üst araç çubuğu yerleştirme durumu. `TRUE` ne zaman araç yerleştirilmiştir yatay ve `FALSE` zaman araç yerleştirilmiştir dikey olarak.  
+ Üst araç çubuğu yerleştirme durumu. Araç dikey yerleştirildiğinde araç yatay ve yanlış yerleştirildiğini olduğunda TRUE.  
   
  [in] *bCustomizeMode*  
- Uygulama özelleştirme modunda olup olmadığı.  
+ Uygulamayı özelleştirme modunda olup olmadığı.  
   
  [in] *bHighlight*  
- Birleşik giriş kutusu düğmesi vurgulanmış çizin görüntülenmeyeceğini belirtir.  
+ Birleşik giriş kutusu düğmesi çizileceğini belirtir.  
   
  [in] *bDrawBorder*  
- Birleşik giriş kutusu düğmesi kenarlık ile çizme görüntülenmeyeceğini belirtir.  
+ Birleşik giriş kutusu düğmesi ile kenarlık çizmek belirtir.  
   
  [in] *bGrayDisabledButtons*  
- `TRUE` Gölgeli devre dışı düğmeleri çizmek için; `FALSE` devre dışı kullanmak için koleksiyon görüntüler.  
+ Çizim true devre dışı düğmeleri gölgeli; Devre dışı görüntüleri koleksiyon kullanmak için FALSE.  
   
 ##  <a name="ondrawoncustomizelist"></a>  CMFCToolBarComboBoxButton::OnDrawOnCustomizeList  
- Birleşik giriş kutusu düğmesi çizmek için framework tarafından çağrılan **komutları** bölmesinde **Özelleştir** iletişim kutusu.  
+ Birleşik giriş kutusu düğmesi çizim için framework tarafından çağırılır **komutları** bölmesinde **Özelleştir** iletişim kutusu.  
   
 ```  
 virtual int OnDrawOnCustomizeList(
@@ -907,31 +907,31 @@ virtual int OnDrawOnCustomizeList(
  [in] *pDC*  
  Birleşik giriş kutusu düğmesi görüntüler cihaz bağlamı.  
   
- [in] *rect*  
+ [in] *dikdörtgen*  
  Birleşik giriş kutusu düğmesi sınırlayıcı dikdörtgenini.  
   
  [in] *bSelected*  
- `TRUE` Birleşik giriş kutusu düğmesi seçilirse; Aksi takdirde `FALSE`.  
+ Birleşik giriş kutusu düğmesi seçili ise TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Birleşik giriş kutusu düğmesinin piksel cinsinden genişliği.  
+ Birleşik giriş kutusu düğmesi piksel cinsinden genişliği.  
   
 ##  <a name="onglobalfontschanged"></a>  CMFCToolBarComboBoxButton::OnGlobalFontsChanged  
- Uygulama yazı tipi değiştiğinde birleşik giriş kutusu düğmesi yazı tipi ayarlamak için çerçevesi tarafından çağrılır.  
+ Uygulama yazı tipi değiştiğinde birleşik giriş kutusu düğmesi yazı tipi ayarlamak için framework tarafından çağırılır.  
   
 ```  
 virtual void OnGlobalFontsChanged();
 ```  
   
 ##  <a name="onmove"></a>  CMFCToolBarComboBoxButton::OnMove  
- Üst araç taşındığında birleşik giriş kutusu düğmesi konumunu değiştirmek için çerçevesi tarafından çağrılır.  
+ Üst araç çubuğunda hareket ettiğinde birleşik giriş kutusu düğmesi konumunu değiştirmek için framework tarafından çağırılır.  
   
 ```  
 virtual void OnMove();
 ```  
   
 ##  <a name="onshow"></a>  CMFCToolBarComboBoxButton::OnShow  
- Birleşik giriş kutusu düğmesi gizli ya da görüntülenen çerçevesi tarafından çağrılır.  
+ Birleşik giriş kutusu düğmesi gizli veya gösterilen framework tarafından çağırılır.  
   
 ```  
 virtual void OnShow(BOOL bShow);
@@ -939,10 +939,10 @@ virtual void OnShow(BOOL bShow);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bBilgi Göster*  
- Birleşik giriş kutusu düğmesi görüntülemek veya gizlemek kullanılıp belirtir.  
+ Birleşik giriş kutusu düğmesi görüntülemek veya gizlemek belirtir.  
   
 ##  <a name="onsize"></a>  CMFCToolBarComboBoxButton::OnSize  
- Üst araç boyutu değiştiğinde birleşik giriş kutusu düğmesi boyutunu değiştirmek için çerçevesi tarafından çağrılır.  
+ Üst araç çubuğunda boyutu değiştiğinde birleşik giriş kutusu düğmesi boyutunu değiştirmek için framework tarafından çağırılır.  
   
 ```  
 virtual void OnSize(int iSize);
@@ -953,7 +953,7 @@ virtual void OnSize(int iSize);
  Birleşik giriş kutusu düğmesi yeni genişliği.  
   
 ##  <a name="onupdatetooltip"></a>  CMFCToolBarComboBoxButton::OnUpdateToolTip  
- Kullanıcı birleşik giriş kutusu düğmesi için araç ipucu değiştirdiğinde çerçevesi tarafından çağrılır.  
+ Kullanıcı birleşik giriş kutusu düğmesi için araç ipucu değiştiğinde framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnUpdateToolTip(
@@ -965,7 +965,7 @@ virtual BOOL OnUpdateToolTip(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pWndParent*  
- Birleşik giriş kutusu düğmesi için üst pencere işaretçi.  
+ Birleşik giriş kutusu düğmesi için ana pencere işaretçisi.  
   
  [in] *iButtonIndex*  
  Birleşik giriş kutusu düğmesi kimliği.  
@@ -977,10 +977,10 @@ virtual BOOL OnUpdateToolTip(
  Araç İpucu metni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem; olay işliyorsa Aksi takdirde `FALSE`.  
+ Yöntem olayı işleyen TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="removeallitems"></a>  CMFCToolBarComboBoxButton::RemoveAllItems  
- Tüm öğeleri listesi ve düzenleme kutularından siler.  
+ Liste ve Düzenle kutularında tüm öğelerini siler.  
   
 ```  
 void RemoveAllItems();
@@ -990,7 +990,7 @@ void RemoveAllItems();
  Listeden tüm öğeler kutu ve bir birleşik giriş kutusu denetimi Düzenle kaldırır.  
   
 ##  <a name="selectitem"></a>  CMFCToolBarComboBoxButton::SelectItem  
- Bir öğeyi liste kutusunda seçer.  
+ Liste kutusunda bir öğe seçer.  
   
 ```  
 BOOL SelectItem(
@@ -1003,19 +1003,19 @@ BOOL SelectItem(LPCTSTR lpszText);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *İIndex*  
- Liste kutusunda öğenin sıfır tabanlı dizini.  
+ Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
  [in] *bNotify*  
- `TRUE` Birleşik giriş kutusu düğmesi seçimin bildirmek için; Aksi takdirde `FALSE`.  
+ Birleşik giriş kutusu düğmesi seçimin bildirmek için TRUE; Aksi durumda FALSE.  
   
  [in] *dwData*  
- Liste kutusunda bir öğesiyle ilişkili veriler.  
+ Liste kutusunda bir öğe ile ilişkili veriler.  
   
  [in] *lpszText*  
  Liste kutusunda bir öğenin metni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1040,10 +1040,10 @@ static BOOL SelectItemAll(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *uiCmd*  
- Liste kutusu içeren birleşik giriş kutusu düğmesi komut kimliği.  
+ Liste kutusunu içeren birleşik giriş kutusu düğmesi komut kimliği.  
   
  [in] *İIndex*  
- Liste kutusunda öğenin sıfır tabanlı dizini. -1 değeri liste kutusunda herhangi bir geçerli seçimi kaldırır ve düzenleme kutusuna temizler.  
+ Liste kutusunda öğenin sıfır tabanlı dizini. -1 değeri, geçerli herhangi bir seçimi liste kutusundan kaldırır ve düzenleme kutusuna temizler.  
   
  [in] *dwData*  
  Liste kutusunda bir öğe verileri.  
@@ -1052,26 +1052,26 @@ static BOOL SelectItemAll(
  Liste kutusunda bir öğenin metni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="serialize"></a>  CMFCToolBarComboBoxButton::Serialize  
- Bu nesne arşivden okur veya arşive yazar.  
+ Bu nesne bir arşivden okur veya arşive yazar.  
   
 ```  
 virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] *ar*  
- `CArchive` Nesne seri hale getirilemedi.  
+ [out içinde] *ar*  
+ `CArchive` Nesneyi serileştirmek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayarlarında `CArchive` nesne belirlemek bu yöntem okur veya arşive yazar.  
+ Ayarlarında `CArchive` nesne, bu yöntem okur veya yazar arşive belirleyin.  
   
 ##  <a name="setaccdata"></a>  CMFCToolBarComboBoxButton::SetACCData  
- Belirtilen doldurur `CAccessibilityData` erişilebilirlik verileri birleşik giriş kutusu düğmesini kullanarak nesne.  
+ Belirtilen doldurur `CAccessibilityData` erişilebilirlik verileri birleşik giriş kutusu düğmesi kullanarak nesne.  
   
 ```  
 virtual BOOL SetACCData(
@@ -1081,16 +1081,16 @@ virtual BOOL SetACCData(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pParent*  
- Birleşik giriş kutusu düğmesi üst pencere.  
+ Birleşik giriş kutusu düğmenin üst pencere.  
   
  [out] *veri*  
- A `CAccessibilityData` erişilebilirlik verileri birleşik giriş kutusu düğmesinden alan nesne.  
+ A `CAccessibilityData` birleşik giriş kutusu düğmesinden erişilebilirlik veri alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
   
 ##  <a name="setcentervert"></a>  CMFCToolBarComboBoxButton::SetCenterVert  
- Birleşik giriş kutusu düğmelerini dikey konumunu uygulamada ayarlar.  
+ Birleşik giriş kutusu düğmeleri dikey konumu, uygulamanın ayarlar.  
   
 ```  
 static void SetCenterVert(BOOL bCenterVert=TRUE);
@@ -1098,13 +1098,13 @@ static void SetCenterVert(BOOL bCenterVert=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bCenterVert*  
- `TRUE` Birleşik giriş kutusu düğmesi araç çubuğunda merkezine; `FALSE` birleşik giriş kutusu düğmesi araç üstüne hizalamak için.  
+ Araç çubuğunda birleşik giriş kutusu düğmesi ortalamak için TRUE; Birleşik giriş kutusu düğmesi araç çubuğunun üst hizalamak için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, birleşik giriş kutusu düğmeleri dön hizalanır.  
   
 ##  <a name="setcontextmenuid"></a>  CMFCToolBarComboBoxButton::SetContextMenuID  
- Kısayol menüsü kaynak kimliği birleşik giriş kutusu düğmesi ayarlar.  
+ Kısayol menüsünde kaynak kimliği için birleşik giriş kutusu düğmesi ayarlar.  
   
 ```  
 void SetContextMenuID(UINT uiResID);
@@ -1112,10 +1112,10 @@ void SetContextMenuID(UINT uiResID);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *uiResID*  
- Kısayol menüsü kaynak kimliği  
+ Kısayol menüsünde kaynak kimliği  
   
 ##  <a name="setdropdownheight"></a>  CMFCToolBarComboBoxButton::SetDropDownHeight  
- Bu bırakıldığında liste kutusu yüksekliğini ayarlar.  
+ Liste kutusunun yüksekliğini, bırakılan ayarlar.  
   
 ```  
 void SetDropDownHeight(int nHeight);
@@ -1129,7 +1129,7 @@ void SetDropDownHeight(int nHeight);
  Varsayılan yükseklik 150 pikseldir.  
   
 ##  <a name="setflatmode"></a>  CMFCToolBarComboBoxButton::SetFlatMode  
- Birleşik giriş kutusu düğmelerin düz stil görünümünü uygulamada ayarlar.  
+ Birleşik giriş kutusu düğmeleri düz stil görünümünü uygulamada ayarlar.  
   
 ```  
 static void SetFlatMode(BOOL bFlat=TRUE);
@@ -1137,13 +1137,13 @@ static void SetFlatMode(BOOL bFlat=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bFlat*  
- `TRUE` düz stil görünümü için; Aksi takdirde `FALSE`.  
+ Düz stil görünümü için TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Birleşik giriş kutusu düğmeleri için varsayılan düz stili `FALSE`.  
+ Birleşik giriş kutusu düğmeleri varsayılan düz stilini FALSE olur.  
   
 ##  <a name="setstyle"></a>  CMFCToolBarComboBoxButton::SetStyle  
- Belirtilen stili birleşik giriş kutusu düğmesi ayarlar ve değil devre dışıysa denetimi yeniden çizer.  
+ Belirtilen stili birleşik giriş kutusu düğmesi ayarlar ve devre dışı değildir, bu denetimi yeniden çizer.  
   
 ```  
 virtual void SetStyle(UINT nStyle);
@@ -1151,13 +1151,13 @@ virtual void SetStyle(UINT nStyle);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nStyle*  
- Bitsel bir birleşimi (veya) araç çubuğu stilleri.  
+ Bitsel bir birleşimi (veya) toolbar stilleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Araç çubuğu düğmesi stilleri listesi için bkz: [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md)  
+ Araç çubuğu düğmesi stilleri bir listesi için bkz. [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md)  
   
 ##  <a name="settext"></a>  CMFCToolBarComboBoxButton::SetText  
- Metin kutusu düğmesi açılan düzenleme kutusuna ayarlar.  
+ Metin düzenleme kutusuna birleşik giriş kutusu düğmesi ayarlar.  
   
 ```  
 void SetText(LPCTSTR lpszText);
@@ -1165,7 +1165,7 @@ void SetText(LPCTSTR lpszText);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszText*  
- Metin düzenleme kutusu içeren bir dize işaretçi.  
+ Düzenleme kutusu metni içeren bir dize işaretçisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

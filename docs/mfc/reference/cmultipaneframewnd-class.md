@@ -90,15 +90,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c95fbe88f91f3eaf0787fa9762d507a49f231c4
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 544b6ef8887ab9d6f5e5063fcee435c64e355645
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039212"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852355"
 ---
 # <a name="cmultipaneframewnd-class"></a>CMultiPaneFrameWnd sınıfı
-`CMultiPaneFrameWnd` Sınıfını genişleten [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md). Birden çok bölme destekleyebilir. Denetim çubuğu için tek bir katıştırılmış tanıtıcı yerine `CMultiPaneFrameWnd` içeren bir [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) bir sabitlemek kullanıcının sağlayan nesne `CMultiPaneFrameWnd` diğerine ve dinamik olarak birden fazla kayan oluşturmak, sekmeli Windows.  
+`CMultiPaneFrameWnd` Sınıfını genişleten [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md). Bu, birden çok bölmeyi destekleyebilir. Bir denetim çubuğuna tek bir gömülü tanıtıcı yerine `CMultiPaneFrameWnd` içeren bir [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) bir kullanıcının sağlayan nesne `CMultiPaneFrameWnd` diğerine ve dinamik olarak birden fazla kayan oluşturmak, sekmeli Windows.  
 
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
@@ -116,53 +116,53 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
 |----------|-----------------|  
 |[CMultiPaneFrameWnd::AddPane](#addpane)|Bir bölme ekler. (Geçersiz kılmaları [CPaneFrameWnd::AddPane](../../mfc/reference/cpaneframewnd-class.md#addpane).)|  
 |[CMultiPaneFrameWnd::AddRecentPane](#addrecentpane)||  
-|[CMultiPaneFrameWnd::AdjustLayout](#adjustlayout)|Kısa çerçeve pencere düzenini ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::AdjustLayout](../../mfc/reference/cpaneframewnd-class.md#adjustlayout).)|  
+|[CMultiPaneFrameWnd::AdjustLayout](#adjustlayout)|Mini çerçeve düzenini ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::AdjustLayout](../../mfc/reference/cpaneframewnd-class.md#adjustlayout).)|  
 |[CMultiPaneFrameWnd::AdjustPaneFrames](#adjustpaneframes)|(Geçersiz kılmaları [CPaneFrameWnd::AdjustPaneFrames](../../mfc/reference/cpaneframewnd-class.md#adjustpaneframes).)|  
-|[CMultiPaneFrameWnd::CalcExpectedDockedRect](#calcexpecteddockedrect)|Yerleşik pencerenin beklenen dikdörtgen hesaplar. (Geçersiz kılmaları [CPaneFrameWnd::CalcExpectedDockedRect](../../mfc/reference/cpaneframewnd-class.md#calcexpecteddockedrect).)|  
-|[CMultiPaneFrameWnd::CanBeAttached](#canbeattached)|Geçerli bölmesini başka bir bölme veya çerçeveye pencereye sabitleyebilirsiniz olup olmadığını belirler. (Geçersiz kılmaları [CPaneFrameWnd::CanBeAttached](../../mfc/reference/cpaneframewnd-class.md#canbeattached).)|  
-|[CMultiPaneFrameWnd::CanBeDockedToPane](#canbedockedtopane)|Kısa çerçeve penceresi bir bölmesine yerleştirme olup olmadığını belirler. (Geçersiz kılmaları [CPaneFrameWnd::CanBeDockedToPane](../../mfc/reference/cpaneframewnd-class.md#canbedockedtopane).)|  
+|[CMultiPaneFrameWnd::CalcExpectedDockedRect](#calcexpecteddockedrect)|Yerleşik pencere beklenen dikdörtgen hesaplar. (Geçersiz kılmaları [CPaneFrameWnd::CalcExpectedDockedRect](../../mfc/reference/cpaneframewnd-class.md#calcexpecteddockedrect).)|  
+|[CMultiPaneFrameWnd::CanBeAttached](#canbeattached)|Geçerli bölmesini başka bir bölüm ya da çerçeve penceresine sabitlemek olup olmadığını belirler. (Geçersiz kılmaları [CPaneFrameWnd::CanBeAttached](../../mfc/reference/cpaneframewnd-class.md#canbeattached).)|  
+|[CMultiPaneFrameWnd::CanBeDockedToPane](#canbedockedtopane)|Mini çerçeve penceresi bir bölmesine sabitleyebilirsiniz olup olmadığını belirler. (Geçersiz kılmaları [CPaneFrameWnd::CanBeDockedToPane](../../mfc/reference/cpaneframewnd-class.md#canbedockedtopane).)|  
 |[CMultiPaneFrameWnd::CheckGripperVisibility](#checkgrippervisibility)|(Geçersiz kılmaları [CPaneFrameWnd::CheckGripperVisibility](../../mfc/reference/cpaneframewnd-class.md#checkgrippervisibility).)|  
 |[CMultiPaneFrameWnd::CloseMiniFrame](#closeminiframe)|(Geçersiz kılmaları `CPaneFrameWnd::CloseMiniFrame`.)|  
-|[CMultiPaneFrameWnd::ConvertToTabbedDocument](#converttotabbeddocument)|Bölmesinde bir sekmeli belge dönüştürür. (Geçersiz kılmaları [CPaneFrameWnd::ConvertToTabbedDocument](../../mfc/reference/cpaneframewnd-class.md#converttotabbeddocument).)|  
+|[CMultiPaneFrameWnd::ConvertToTabbedDocument](#converttotabbeddocument)|Bölmesinde sekmeli belgeye dönüştürür. (Geçersiz kılmaları [CPaneFrameWnd::ConvertToTabbedDocument](../../mfc/reference/cpaneframewnd-class.md#converttotabbeddocument).)|  
 |[CMultiPaneFrameWnd::DockFrame](#dockframe)||  
 |[CMultiPaneFrameWnd::DockPane](#dockpane)|Bölmesinde docks. (Geçersiz kılmaları [CPaneFrameWnd::DockPane](../../mfc/reference/cpaneframewnd-class.md#dockpane).)|  
 |[CMultiPaneFrameWnd::DockRecentPaneToMainFrame](#dockrecentpanetomainframe)||  
-|[CMultiPaneFrameWnd::GetCaptionText](#getcaptiontext)|Başlık metni döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetCaptionText](../../mfc/reference/cpaneframewnd-class.md#getcaptiontext).)|  
-|[CMultiPaneFrameWnd::GetPaneContainerManager](#getpanecontainermanager)|İç kapsayıcı Yöneticisi nesnesine bir başvuru döndürür.|  
-|[CMultiPaneFrameWnd::GetFirstVisiblePane](#getfirstvisiblepane)|Bir kısa çerçeve penceresinde bulunan ilk görünür bölmesine döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetFirstVisiblePane](../../mfc/reference/cpaneframewnd-class.md#getfirstvisiblepane).)|  
-|[CMultiPaneFrameWnd::GetPane](#getpane)|Kısa çerçeve penceresinde bulunan bir bölme döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetPane](../../mfc/reference/cpaneframewnd-class.md#getpane).)|  
-|[CMultiPaneFrameWnd::GetPaneCount](#getpanecount)|Bir kısa çerçeve penceresinde bulunan bölmeleri sayısını döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetPaneCount](../../mfc/reference/cpaneframewnd-class.md#getpanecount).)|  
-|[CMultiPaneFrameWnd::GetVisiblePaneCount](#getvisiblepanecount)|Bir kısa çerçeve penceresinde bulunan görünür bölmeleri sayısını döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetVisiblePaneCount](../../mfc/reference/cpaneframewnd-class.md#getvisiblepanecount).)|  
+|[CMultiPaneFrameWnd::GetCaptionText](#getcaptiontext)|Açıklamalı alt yazı metni döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetCaptionText](../../mfc/reference/cpaneframewnd-class.md#getcaptiontext).)|  
+|[CMultiPaneFrameWnd::GetPaneContainerManager](#getpanecontainermanager)|İç kapsayıcı manager nesnesine bir başvuru döndürür.|  
+|[CMultiPaneFrameWnd::GetFirstVisiblePane](#getfirstvisiblepane)|Bir mini çerçeve penceresinde yer alan ilk görünür bölmesine döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetFirstVisiblePane](../../mfc/reference/cpaneframewnd-class.md#getfirstvisiblepane).)|  
+|[CMultiPaneFrameWnd::GetPane](#getpane)|Mini çerçeve penceresinde yer alan bir bölme döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetPane](../../mfc/reference/cpaneframewnd-class.md#getpane).)|  
+|[CMultiPaneFrameWnd::GetPaneCount](#getpanecount)|Bir mini çerçeve penceresinde bulunan bölmeleri sayısını döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetPaneCount](../../mfc/reference/cpaneframewnd-class.md#getpanecount).)|  
+|[CMultiPaneFrameWnd::GetVisiblePaneCount](#getvisiblepanecount)|Bir mini çerçeve penceresinde bulunan görünür bölmeleri sayısını döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetVisiblePaneCount](../../mfc/reference/cpaneframewnd-class.md#getvisiblepanecount).)|  
 |[CMultiPaneFrameWnd::InsertPane](#insertpane)||  
-|[CMultiPaneFrameWnd::LoadState](#loadstate)|Kayıt defterinden Bölmesi'nin durumu yükler. (Geçersiz kılmaları [CPaneFrameWnd::LoadState](../../mfc/reference/cpaneframewnd-class.md#loadstate).)|  
-|[CMultiPaneFrameWnd::OnDockToRecentPos](#ondocktorecentpos)|Kısa çerçeve penceresi, en son konumundaki docks. (Geçersiz kılmaları [CPaneFrameWnd::OnDockToRecentPos](../../mfc/reference/cpaneframewnd-class.md#ondocktorecentpos).)|  
-|[CMultiPaneFrameWnd::OnKillRollUpTimer](#onkillrolluptimer)|Toplama süreölçerini durdurur. (Geçersiz kılmaları [CPaneFrameWnd::OnKillRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onkillrolluptimer).)|  
-|[CMultiPaneFrameWnd::OnPaneRecalcLayout](#onpanerecalclayout)|Bir bölme bir kısa çerçeve penceresi içinde düzenini ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::OnPaneRecalcLayout](../../mfc/reference/cpaneframewnd-class.md#onpanerecalclayout).)|  
-|[CMultiPaneFrameWnd::OnSetRollUpTimer](#onsetrolluptimer)|Toplama süreölçerini ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::OnSetRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onsetrolluptimer).)|  
-|[CMultiPaneFrameWnd::OnShowPane](#onshowpane)|Kısa çerçeve penceresi bölmesinde gizli ya da görüntülenen çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CPaneFrameWnd::OnShowPane](../../mfc/reference/cpaneframewnd-class.md#onshowpane).)|  
-|[CMultiPaneFrameWnd::PaneFromPoint](#panefrompoint)|Bir kullanıcı tarafından sağlanan noktası bir kısa çerçeve penceresi içinde içeriyorsa, bir bölme döndürür. (Geçersiz kılmaları [CPaneFrameWnd::PaneFromPoint](../../mfc/reference/cpaneframewnd-class.md#panefrompoint).)|  
-|[CMultiPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Geçerli olmayan bölmeleri kaldırmak için çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CPaneFrameWnd::RemoveNonValidPanes](../../mfc/reference/cpaneframewnd-class.md#removenonvalidpanes).)|  
-|[CMultiPaneFrameWnd::RemovePane](#removepane)|Bir bölme kısa çerçeve penceresinden kaldırır. (Geçersiz kılmaları [CPaneFrameWnd::RemovePane](../../mfc/reference/cpaneframewnd-class.md#removepane).)|  
+|[CMultiPaneFrameWnd::LoadState](#loadstate)|Kayıt defterinden bölmedeki durumunu yükler. (Geçersiz kılmaları [CPaneFrameWnd::LoadState](../../mfc/reference/cpaneframewnd-class.md#loadstate).)|  
+|[CMultiPaneFrameWnd::OnDockToRecentPos](#ondocktorecentpos)|En son konumunu Mini çerçeve penceresinin docks. (Geçersiz kılmaları [CPaneFrameWnd::OnDockToRecentPos](../../mfc/reference/cpaneframewnd-class.md#ondocktorecentpos).)|  
+|[CMultiPaneFrameWnd::OnKillRollUpTimer](#onkillrolluptimer)|Toplama Zamanlayıcıyı durdurur. (Geçersiz kılmaları [CPaneFrameWnd::OnKillRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onkillrolluptimer).)|  
+|[CMultiPaneFrameWnd::OnPaneRecalcLayout](#onpanerecalclayout)|Bir mini çerçeve penceresi içinde bir bölme düzenini ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::OnPaneRecalcLayout](../../mfc/reference/cpaneframewnd-class.md#onpanerecalclayout).)|  
+|[CMultiPaneFrameWnd::OnSetRollUpTimer](#onsetrolluptimer)|Toplama Zamanlayıcıyı ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::OnSetRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onsetrolluptimer).)|  
+|[CMultiPaneFrameWnd::OnShowPane](#onshowpane)|Bir mini çerçeve bölmesinde gizli veya gösterilen framework tarafından çağırılır. (Geçersiz kılmaları [CPaneFrameWnd::OnShowPane](../../mfc/reference/cpaneframewnd-class.md#onshowpane).)|  
+|[CMultiPaneFrameWnd::PaneFromPoint](#panefrompoint)|Bir mini çerçeve penceresi içinde bir kullanıcı tarafından sağlanan noktası içeriyorsa bir bölme döndürür. (Geçersiz kılmaları [CPaneFrameWnd::PaneFromPoint](../../mfc/reference/cpaneframewnd-class.md#panefrompoint).)|  
+|[CMultiPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Geçerli olmayan bölmeleri kaldırmak için framework tarafından çağırılır. (Geçersiz kılmaları [CPaneFrameWnd::RemoveNonValidPanes](../../mfc/reference/cpaneframewnd-class.md#removenonvalidpanes).)|  
+|[CMultiPaneFrameWnd::RemovePane](#removepane)|Bir bölme Mini çerçeve penceresinde kaldırır. (Geçersiz kılmaları [CPaneFrameWnd::RemovePane](../../mfc/reference/cpaneframewnd-class.md#removepane).)|  
 |[CMultiPaneFrameWnd::ReplacePane](#replacepane)|Bir bölme birbiriyle değiştirir. (Geçersiz kılmaları [CPaneFrameWnd::ReplacePane](../../mfc/reference/cpaneframewnd-class.md#replacepane).)|  
-|[CMultiPaneFrameWnd::SaveState](#savestate)|Kayıt defterine Bölmesi'nin durumunu kaydeder. (Geçersiz kılmaları [CPaneFrameWnd::SaveState](../../mfc/reference/cpaneframewnd-class.md#savestate).)|  
+|[CMultiPaneFrameWnd::SaveState](#savestate)|Bölmedeki durumu kayıt defterine kaydeder. (Geçersiz kılmaları [CPaneFrameWnd::SaveState](../../mfc/reference/cpaneframewnd-class.md#savestate).)|  
 |[CMultiPaneFrameWnd::Serialize](#serialize)|(Geçersiz kılmaları `CPaneFrameWnd::Serialize`.)|  
-|[CMultiPaneFrameWnd::SetDockState](#setdockstate)|Takma durumunu ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::SetDockState](../../mfc/reference/cpaneframewnd-class.md#setdockstate).)|  
+|[CMultiPaneFrameWnd::SetDockState](#setdockstate)|Yerleştirme durumunu ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::SetDockState](../../mfc/reference/cpaneframewnd-class.md#setdockstate).)|  
 |[CMultiPaneFrameWnd::SetLastFocusedPane](#setlastfocusedpane)||  
 |[CMultiPaneFrameWnd::SetPreDockState](#setpredockstate)|Predocking durumunu ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::SetPreDockState](../../mfc/reference/cpaneframewnd-class.md#setpredockstate).)|  
 |[CMultiPaneFrameWnd::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)|(Geçersiz kılmaları [CPaneFrameWnd::StoreRecentDockSiteInfo](../../mfc/reference/cpaneframewnd-class.md#storerecentdocksiteinfo).)|  
 |[CMultiPaneFrameWnd::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)|(Geçersiz kılmaları [CPaneFrameWnd::StoreRecentTabRelatedInfo](../../mfc/reference/cpaneframewnd-class.md#storerecenttabrelatedinfo).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıftaki yöntemlerin çoğunu yöntemleri geçersiz kılmak [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md) sınıfı.  
+ Bu sınıftaki yöntemlerin çoğunun geçersiz kılma yöntemleri [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md) sınıfı.  
   
- Bir bölme kullanıyorsa `AFX_CBRS_AUTO_ROLLUP` stili ve kullanıcı çok bölmesi çerçeve pencere bölmeye docks, kullanıcı bir yerleşik bölmeler stil ayarlarını bağımsız olarak penceresini geri alabilirsiniz.  
+ Bir bölme AFX_CBRS_AUTO_ROLLUP stili kullanıyorsa ve kullanıcı bu bölme çok bölme çerçevesindeki penceresine docks kullanıcı penceresini yerleştirilmiş bir bölme stili ayarlarından bağımsız olarak geri alabilirsiniz.  
   
- Framework otomatik olarak oluşturur bir `CMultiPaneFrameWnd` kullanan bir bölme kullanıcı gezinen zaman nesne `CBRS_FLOAT_MULTI` stili.  
+ Framework otomatik olarak oluşturur bir `CMultiPaneFrameWnd` kullanıcı CBRS_FLOAT_MULTI stili kullanan bir bölme gezinen olduğunda nesne.  
   
- Öğesinden bir sınıf türetme hakkında bilgi için `CPaneFrameWnd` sınıfı ve dinamik olarak oluşturma, [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md).  
+ Bir sınıftan türetme hakkında bilgi için `CPaneFrameWnd` sınıfı ve dinamik olarak oluşturmak, bkz [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte bir işaretçi almak nasıl gösteren bir `CMultiPaneFrameWnd` nesnesi. Bu kod parçacığını parçası olan [bölmesinin boyutunu Ayarla örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir işaretçi almak gösterilmiştir bir `CMultiPaneFrameWnd` nesne. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_SetPaneSize#4](../../mfc/reference/codesnippet/cpp/cmultipaneframewnd-class_1.cpp)]  
   
@@ -374,17 +374,17 @@ virtual CWnd* GetPane() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getpanecontainermanager"></a>  CMultiPaneFrameWnd::GetPaneContainerManager  
- İç kapsayıcı Yöneticisi nesnesine bir başvuru döndürür.  
+ İç kapsayıcı manager nesnesine bir başvuru döndürür.  
   
 ```  
 CPaneContainerManager& GetPaneContainerManager();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İç kapsayıcı Yöneticisi nesnesi referansı.  
+ İç kapsayıcı manager nesnesine bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem iç erişmek için kullanılan [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) nesnesi.  
+ Bu yöntem iç erişmek için kullanılan [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) nesne.  
   
 ##  <a name="getpanecount"></a>  CMultiPaneFrameWnd::GetPaneCount  
 

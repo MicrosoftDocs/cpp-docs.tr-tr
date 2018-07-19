@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb24b73ba23b430e29ed9144e51372eefdb673a3
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 5dd17c0541b573cba40146c55b46d14143209c87
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042540"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853884"
 ---
 # <a name="colelinksdialog-class"></a>COleLinksDialog sınıfı
-OLE bağlantıları Düzenle iletişim kutusu için kullanılır.  
+OLE Edit Links iletişim kutusu için kullanıldı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,29 +44,29 @@ class COleLinksDialog : public COleDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleLinksDialog::COleLinksDialog](#colelinksdialog)|Oluşturan bir `COleLinksDialog` nesnesi.|  
+|[COleLinksDialog::COleLinksDialog](#colelinksdialog)|Oluşturur bir `COleLinksDialog` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleLinksDialog::DoModal](#domodal)|OLE bağlantıları Düzenle iletişim kutusu görüntüler.|  
+|[COleLinksDialog::DoModal](#domodal)|OLE Edit Links iletişim kutusu görüntüler.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleLinksDialog::m_el](#m_el)|Türü yapısını **OLEUIEDITLINKS** iletişim kutusu davranışını denetler.|  
+|[COleLinksDialog::m_el](#m_el)|İletişim kutusunun davranışını kontrol eden OLEUIEDITLINKS türünden bir yapıyı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıfın bir nesnesi oluşturma `COleLinksDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COleLinksDialog` nesne oluşturulan, kullanabileceğiniz [m_el](#m_el) yapısı değerleri veya iletişim kutusu denetimleri durumlarını başlatılamadı. `m_el` Yapısıdır türü **OLEUIEDITLINKS**. Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz: [DoModal](#domodal) üye işlevi.  
+ Sınıfın bir nesnesi oluşturma `COleLinksDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COleLinksDialog` nesne oluşturulur, kullanabileceğiniz [m_el](#m_el) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_el` OLEUIEDITLINKS türünü yapısıdır. Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.  
   
 > [!NOTE]
 >  Uygulama Sihirbazı tarafından oluşturulan kapsayıcı kodu bu sınıfı kullanır.  
   
- Daha fazla bilgi için bkz: [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) Windows SDK'sındaki yapısı.  
   
- OLE özel iletişim kutuları hakkında daha fazla bilgi için bkz: [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
+ Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -87,7 +87,7 @@ class COleLinksDialog : public COleDialog
  **Başlık:** afxodlgs.h  
   
 ##  <a name="domodal"></a>  COleLinksDialog::DoModal  
- OLE bağlantıları Düzenle iletişim kutusu görüntüler.  
+ OLE Edit Links iletişim kutusu görüntüler.  
   
 ```  
 virtual INT_PTR DoModal();
@@ -96,17 +96,17 @@ virtual INT_PTR DoModal();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tamamlanma durumu iletişim kutusu için. Aşağıdaki değerlerden biri:  
   
-- **IDOK** iletişim kutusu başarıyla görüntüleniyorsa.  
+- İletişim kutusu başarıyla görüntülendiyse IDOK.  
   
-- **IDCANCEL** kullanıcı iletişim kutusunu iptal ederseniz.  
+- Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.  
   
-- **IDABORT** durumunda bir hata oluştu. Varsa **IDABORT** olan döndürülen arama `COleDialog::GetLastError` oluştu hata türü hakkında daha fazla bilgi almak için üye işlevi. Olası hatalar listesi için bkz: [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) Windows SDK'sındaki işlevi.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üyeleri ayarlayarak çeşitli iletişim kutusu denetimleri başlatmak istiyorsanız [m_el](#m_el) yapısı, size bunu çağırmadan önce `DoModal`, ancak iletişim nesnesi oluşturulur.  
+ Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_el](#m_el) yapısı, size bunu çağırmadan önce `DoModal`, ancak iletişim nesnesi oluşturulur.  
   
 ##  <a name="colelinksdialog"></a>  COleLinksDialog::COleLinksDialog  
- Oluşturan bir `COleLinksDialog` nesnesi.  
+ Oluşturur bir `COleLinksDialog` nesne.  
   
 ```  
 COleLinksDialog (
@@ -118,31 +118,31 @@ COleLinksDialog (
   
 ### <a name="parameters"></a>Parametreler  
  *pDoc*  
- Düzenlenecek bağlantıları içeren OLE belge noktalarına.  
+ Düzenlenecek bağlantıları içeren OLE belge işaret eder.  
   
  *pView*  
- Geçerli Görünüm işaret *pDoc*.  
+ Geçerli görünüme işaret *pDoc*.  
   
- *dwFlags*  
- Ya da 0 içeren oluşturma bayrağı veya **ELF_SHOWHELP** iletişim kutusu görüntülendiğinde Yardım düğmesini görüntülenip görüntülenmeyeceğini belirtmek için.  
+ *CertOpenStore*  
+ Oluşturma bayrağı 0 veya iletişim kutusu görüntülendiğinde Yardım düğmesini görüntülenip görüntülenmeyeceğini belirtmek için ELF_SHOWHELP içerir.  
   
  *pParentWnd*  
- İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim kutusunun üst pencere ana uygulama penceresine ayarlanır.  
+ Üst veya sahibi pencere nesnesi için işaret (tür `CWnd`) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim kutusunun üst pencere ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca oluşturan bir `COleLinksDialog` nesnesi. İletişim kutusunu görüntülemek için arama [DoModal](#domodal) işlevi.  
+ Bu işlev yalnızca oluşturan bir `COleLinksDialog` nesne. İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal) işlevi.  
   
 ##  <a name="m_el"></a>  COleLinksDialog::m_el  
- Türü yapısını **OLEUIEDITLINKS** Bağlantıları Düzenle iletişim kutusu davranışını denetlemek için kullanılır.  
+ Yapı türünü OLEUIEDITLINKS Edit Links iletişim kutusu davranışını denetlemek için kullanılır.  
   
 ```  
 OLEUIEDITLINKS m_el;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yapı üyeleri, doğrudan ya da üye işlevleri üzerinden değiştirilebilir.  
+ Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.  
   
- Daha fazla bilgi için bkz: [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) Windows SDK'sındaki yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)   

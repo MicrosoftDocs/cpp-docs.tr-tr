@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be5d27adabe8b271e2f8f3ed338e63e18d2432fc
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 109801ff1dc974488abdc61e6b6fb4af4fafb1bd
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37078242"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853039"
 ---
 # <a name="csimpleexception-class"></a>CSimpleException sınıfı
-Bu sınıf, kaynak kritik MFC özel durumlar için temel bir sınıftır.  
+Bu sınıf, kaynak kritik MFC özel durumları için temel sınıftır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,22 +48,22 @@ class AFX_NOVTABLE CSimpleException : public CException
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSimpleException::GetErrorMessage](#geterrormessage)|Gerçekleşen hata ile ilgili metin sağlar.|  
+|[CSimpleException::GetErrorMessage](#geterrormessage)|Gerçekleşen bir hata hakkında daha fazla metin sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CSimpleException` Kaynak kritik MFC özel durumlar için temel sınıfı olan ve bir hata iletisi, başlatma ve sahipliği işler. Aşağıdaki sınıflar kullanım `CSimpleException` temel sınıf olarak:  
+ `CSimpleException` Kaynak kritik MFC özel durumları için temel sınıf ve sahiplik ve bir hata iletisinin başlatma işler. Aşağıdaki sınıflar kullanım `CSimpleException` kendi temel sınıf olarak:  
   
 |||  
 |-|-|  
 |[CMemoryException Sınıfı](../../mfc/reference/cmemoryexception-class.md)|Bellek yetersiz özel durumu|  
-|[CNotSupportedException Sınıfı](../../mfc/reference/cnotsupportedexception-class.md)|Desteklenmeyen bir işlem için istekleri|  
-|[CResourceException Sınıfı](../../mfc/reference/cresourceexception-class.md)|Windows kaynak bulunamadı veya yok creatable|  
-|[CUserException Sınıfı](../../mfc/reference/cuserexception-class.md)|Bir kaynak gösteren özel durumu bulunamadı.|  
-|[CInvalidArgException Sınıfı](../../mfc/reference/cinvalidargexception-class.md)|Geçersiz bağımsız değişken gösteren özel durumu|  
+|[CNotSupportedException Sınıfı](../../mfc/reference/cnotsupportedexception-class.md)|Desteklenmeyen bir işlem istekleri|  
+|[CResourceException Sınıfı](../../mfc/reference/cresourceexception-class.md)|Windows kaynak bulunamadı veya değil|  
+|[CUserException Sınıfı](../../mfc/reference/cuserexception-class.md)|Bir kaynağı gösteren özel durum bulunamadı|  
+|[CInvalidArgException Sınıfı](../../mfc/reference/cinvalidargexception-class.md)|Geçersiz bağımsız değişken gösteren durum|  
   
- Çünkü `CSimpleException` , bildiremezsiniz bir Özet temel sınıf olan bir `CSimpleException` doğrudan nesne. Bunun yerine, önceki tabloda bulunanlar gibi türetilen nesneleri bildirmeniz gerekir. Kendi türetilmiş bir sınıf bildirme, önceki sınıfları model olarak kullanın.  
+ Çünkü `CSimpleException` bildirip soyut bir temel sınıf olan bir `CSimpleException` doğrudan nesne. Bunun yerine, önceki tabloda bulunanlar gibi türetilmiş nesneler bildirmeniz gerekir. Türetilmiş sınıfınızın bildiriliyorsa önceki sınıflarını model olarak kullanın.  
   
- Daha fazla bilgi için bkz: [CException sınıfı](../../mfc/reference/cexception-class.md) konu ve [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).  
+ Daha fazla bilgi için [CException sınıfı](../../mfc/reference/cexception-class.md) konu ve [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -85,13 +85,13 @@ explicit CSimpleException(BOOL bAutoDelete);
   
 ### <a name="parameters"></a>Parametreler  
  *bAutoDelete*  
- Belirtin **TRUE** varsa için bellek `CSimpleException` nesne öbek üzerinde ayrıldı. Bu neden olacak `CSimpleException` zaman silinecek nesne `Delete` üye işlevi, özel durum silmek için çağrılır. Belirtin **FALSE** varsa `CSimpleException` nesne yığında veya genel bir nesnedir. Bu durumda, `CSimpleException` nesne olmayacak ne zaman silinmiş `Delete` üye işlevi çağrılır.  
+ TRUE ise belirtmek için bellek `CSimpleException` nesneyi yığında ayrılmış. Bu neden `CSimpleException` ne zaman Silinmiş nesne `Delete` üye işlevi, özel durum silmek için çağrılır. FALSE belirtin `CSimpleException` nesne yığında veya genel bir nesnedir. Bu durumda, `CSimpleException` nesne olmayacak ne zaman silinmiş `Delete` üye işlevi çağrılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Normalde hiçbir zaman bu oluşturucu doğrudan çağırmanız gerekir. Bir özel durum oluşturur işlevi bir örneğini oluşturmanız gerekir bir `CException`-türetilmiş sınıf ve MFC'nin kullanım throw işlevleri gibi kurucusu veya çağrı [AfxThrowFileException](exception-processing.md#afxthrowfileexception), önceden tanımlanmış bir türü atmak için.  
+ Bu oluşturucu doğrudan çağırmak hiçbir zaman normalde gerekir. Özel durum oluşturan bir işlev bir örneğini oluşturmanız gerekir bir `CException`-türetilmiş sınıf ve MFC'nin kullanımı throw işlevleri gibi oluşturucu veya çağrı [AfxThrowFileException](exception-processing.md#afxthrowfileexception), önceden tanımlanmış bir tür oluşturmak için.  
   
 ##  <a name="geterrormessage"></a>  CSimpleException::GetErrorMessage  
- Gerçekleşen hata ile ilgili metin sağlamak için bu üye işlevini çağırın.  
+ Metin gerçekleşen bir hata hakkında sağlamaya bu üye işlevini çağırın.  
   
 ```  
 virtual BOOL GetErrorMessage(
@@ -102,19 +102,19 @@ virtual BOOL GetErrorMessage(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszError*  
- Bir hata iletisi alırsınız bir arabellek için bir işaretçi.  
+ Bir ileti alacak arabellek için işaretçi.  
   
  *nMaxError*  
- En fazla arabellek tut dahil olmak üzere karakter sayısını **NULL** Sonlandırıcı.  
+ Arabellek tutabilir, NULL sonlandırıcıyı da dahil olmak üzere karakter sayısı.  
   
  *pnHelpContext*  
- Adresini bir **UINT** Yardım bağlam kimliğini alacaksınız Varsa **NULL**, kimliği yok döndürülür.  
+ Yardım içeriği kimliği alacak bir UINT adresi NULL ise, hiçbir kimliği döndürülür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılıysa sıfır olmayan; Aksi takdirde metin hata iletisini yoksa 0 kullanılabilir.  
+ İşlev başarılı olursa sıfır dışı; Aksi takdirde hata iletisi 0 kullanılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [CException::GetErrorMessage](../../mfc/reference/cfileexception-class.md#geterrormessage).  
+ Daha fazla bilgi için [CException::GetErrorMessage](../../mfc/reference/cfileexception-class.md#geterrormessage).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

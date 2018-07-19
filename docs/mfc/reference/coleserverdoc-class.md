@@ -92,15 +92,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7df4ea13313758c517188e1c4ce0441618a99b4
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 67920590979c4b9bf3099e8c64c142aeb813b1ce
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039075"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851664"
 ---
 # <a name="coleserverdoc-class"></a>COleServerDoc sınıfı
-OLE sunucu belgeleri için temel sınıf.  
+OLE sunucu belgeleri için taban sınıf.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -114,69 +114,69 @@ class AFX_NOVTABLE COleServerDoc : public COleLinkingDoc
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleServerDoc::COleServerDoc](#coleserverdoc)|Oluşturan bir `COleServerDoc` nesnesi.|  
+|[COleServerDoc::COleServerDoc](#coleserverdoc)|Oluşturur bir `COleServerDoc` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[COleServerDoc::ActivateDocObject](#activatedocobject)|İlişkili DocObject belge etkinleştirir.|  
-|[COleServerDoc::ActivateInPlace](#activateinplace)|Belgesini yerinde düzenleme için etkinleştirir.|  
+|[COleServerDoc::ActivateInPlace](#activateinplace)|Yerinde düzenleme için belgenin etkinleştirir.|  
 |[COleServerDoc::DeactivateAndUndo](#deactivateandundo)|Sunucunun kullanıcı arabirimini devre dışı bırakır.|  
-|[COleServerDoc::DiscardUndoState](#discardundostate)|Geri alma işlemi durum bilgilerini atar.|  
-|[COleServerDoc::GetClientSite](#getclientsite)|Arka plandaki bir işaretçi alır `IOleClientSite` arabirimi.|  
-|[COleServerDoc::GetEmbeddedItem](#getembeddeditem)|Bir işaretçi tüm belgeyi temsil eden bir öğeyi döndürür.|  
-|[COleServerDoc::GetItemClipRect](#getitemcliprect)|Yerinde düzenlemek için geçerli kırpma dikdörtgen döndürür.|  
-|[COleServerDoc::GetItemPosition](#getitemposition)|Geçerli konumu dikdörtgen, yerinde düzenlemek için kapsayıcı uygulamanın istemci alanını göre döndürür.|  
+|[COleServerDoc::DiscardUndoState](#discardundostate)|Geri alma durumunu bilgilerini atar.|  
+|[COleServerDoc::GetClientSite](#getclientsite)|Bağlantılı bir işaretçi alır `IOleClientSite` arabirimi.|  
+|[COleServerDoc::GetEmbeddedItem](#getembeddeditem)|Tüm belgeyi temsil eden bir öğeye bir işaretçi döndürür.|  
+|[COleServerDoc::GetItemClipRect](#getitemcliprect)|Yerinde düzenleme için geçerli kırpma dikdörtgenini döndürür.|  
+|[COleServerDoc::GetItemPosition](#getitemposition)|Yerinde düzenleme için kapsayıcı uygulamasının istemci alanına göre geçerli konumu dikdörtgen döndürür.|  
 |[COleServerDoc::GetZoomFactor](#getzoomfactor)|Yakınlaştırma faktörünü piksel cinsinden döndürür.|  
 |[COleServerDoc::IsDocObject](#isdocobject)|Belge DocObject olup olmadığını belirler.|  
-|[COleServerDoc::IsEmbedded](#isembedded)|Belge kapsayıcı belgedeki katıştırılmış veya çalışan tek başına olup olmadığını gösterir.|  
-|[COleServerDoc::IsInPlaceActive](#isinplaceactive)|Döndürür `TRUE` öğe şu anda yerinde etkinleştirilmişse.|  
-|[COleServerDoc::NotifyChanged](#notifychanged)|Kullanıcı belge değişti kapsayıcıları bildirir.|  
-|[COleServerDoc::NotifyClosed](#notifyclosed)|Kullanıcının belgeyi kapattığı kapsayıcıları bildirir.|  
-|[COleServerDoc::NotifyRename](#notifyrename)|Kullanıcının belgeyi yeniden adlandırılamaz kapsayıcıları bildirir.|  
-|[COleServerDoc::NotifySaved](#notifysaved)|Kullanıcının belgeyi kaydetti kapsayıcıları bildirir.|  
-|[COleServerDoc::OnDeactivate](#ondeactivate)|Yerinde etkinleştirildiği bir öğe kullanıcı devre dışı bırakır çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnDeactivateUI](#ondeactivateui)|Denetimleri ve yerinde etkinleştirme için oluşturulan diğer kullanıcı arabirimi öğeleri yok etmek için çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnDocWindowActivate](#ondocwindowactivate)|Kapsayıcının belge çerçeve penceresi etkin veya devre dışı bırakıldığında çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnResizeBorder](#onresizeborder)|Kapsayıcı uygulamanın çerçeve penceresi veya belge penceresine boyutlandırıldığında çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnShowControlBars](#onshowcontrolbars)|Yerinde düzenlemek için Denetim çubuklarını gösterme veya gizleme için çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnUpdateDocument](#onupdatedocument)|Katıştırılmış bir öğe bir sunucu Belge kaydedildiğinde öğenin kapsayıcının kopyasını güncelleştirme çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::RequestPositionChange](#requestpositionchange)|Yerinde düzenleme çerçeve konumunu değiştirir.|  
-|[COleServerDoc::SaveEmbedding](#saveembedding)|Belgeyi kaydetmek için kapsayıcı uygulama söyler.|  
-|[COleServerDoc::ScrollContainerBy](#scrollcontainerby)|Kapsayıcı belge kayar.|  
-|[COleServerDoc::UpdateAllItems](#updateallitems)|Kullanıcı belge değişti kapsayıcıları bildirir.|  
+|[COleServerDoc::IsEmbedded](#isembedded)|Belge kapsayıcısı belgeye katıştırılmış veya tek başına çalışan olup olmadığını belirtir.|  
+|[COleServerDoc::IsInPlaceActive](#isinplaceactive)|Öğe şu anda yerinde etkinleştirilmişse, TRUE döndürür.|  
+|[COleServerDoc::NotifyChanged](#notifychanged)|Kapsayıcılar, kullanıcı belgenin değiştiğini bildirir.|  
+|[COleServerDoc::NotifyClosed](#notifyclosed)|Kapsayıcılar, kullanıcı belgenin kapattı bildirir.|  
+|[COleServerDoc::NotifyRename](#notifyrename)|Kapsayıcılar, kullanıcının belgeyi yeniden adlandırılmış bildirir.|  
+|[COleServerDoc::NotifySaved](#notifysaved)|Kapsayıcılar, kullanıcı belgenin kaydetti bildirir.|  
+|[COleServerDoc::OnDeactivate](#ondeactivate)|Kullanıcı yerinde etkin bir öğe bıraktığında framework tarafından çağırılır.|  
+|[COleServerDoc::OnDeactivateUI](#ondeactivateui)|Denetimleri ve yerinde etkinleştirme için oluşturulan diğer kullanıcı arabirimi öğelerini yok etmek için framework tarafından çağırılır.|  
+|[COleServerDoc::OnDocWindowActivate](#ondocwindowactivate)|Kapsayıcının belge çerçeve penceresini etkinleştirmek veya framework tarafından çağırılır.|  
+|[COleServerDoc::OnResizeBorder](#onresizeborder)|Kapsayıcı uygulamasının çerçeve penceresini ya da belge penceresini yeniden boyutlandırıldığında framework tarafından çağırılır.|  
+|[COleServerDoc::OnShowControlBars](#onshowcontrolbars)|Yerinde düzenleme için Denetim çubukları gizlemek veya göstermek için framework tarafından çağırılır.|  
+|[COleServerDoc::OnUpdateDocument](#onupdatedocument)|Gömülü bir öğe olan bir sunucu Belge kaydedildiğinde kapsayıcının öğenin kopyasını güncelleştirme framework tarafından çağırılır.|  
+|[COleServerDoc::RequestPositionChange](#requestpositionchange)|Yerinde düzenleme çerçevesinin konumunu değiştirir.|  
+|[COleServerDoc::SaveEmbedding](#saveembedding)|Belgeyi kaydetmek için kapsayıcı uygulaması gösterir.|  
+|[COleServerDoc::ScrollContainerBy](#scrollcontainerby)|Kapsayıcı belge kaydırır.|  
+|[COleServerDoc::UpdateAllItems](#updateallitems)|Kapsayıcılar, kullanıcı belgenin değiştiğini bildirir.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleServerDoc::CreateInPlaceFrame](#createinplaceframe)|Yerinde düzenlemek için bir çerçeve penceresinde oluşturmak için çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::DestroyInPlaceFrame](#destroyinplaceframe)|Yerinde düzenlemek için bir çerçeve pencere yok etme çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::GetDocObjectServer](#getdocobjectserver)|Yeni bir oluşturmak için bu işlevi geçersiz `CDocObjectServer` nesne ve bu belgenin DocObject kapsayıcı olduğunu gösteriyor.|  
-|[COleServerDoc::OnClose](#onclose)|Belge kapatmak için bir kapsayıcı istediğinde, çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnExecOleCmd](#onexecolecmd)|Belirtilen komut yürütür veya komutu için yardımı görüntüler.|  
-|[COleServerDoc::OnFrameWindowActivate](#onframewindowactivate)|Kapsayıcının çerçeve penceresi etkin veya devre dışı olduğunda çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnGetEmbeddedItem](#ongetembeddeditem)|Alınacak adlı bir `COleServerItem` , tüm belgeyi temsil eder; katıştırılmış öğeyi almak için kullanılır. Gerekli uygulama.|  
-|[COleServerDoc::OnReactivateAndUndo](#onreactivateandundo)|Yerinde düzenleme sırasında yapılan değişiklikleri geri alma çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnSetHostNames](#onsethostnames)|Pencere Başlığı katıştırılmış nesne için bir kapsayıcı ayarlar çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnSetItemRects](#onsetitemrects)|Kapsayıcı uygulamanın pencereye yerinde düzenleme çerçeve pencere konumunu çerçevesi tarafından çağrılır.|  
-|[COleServerDoc::OnShowDocument](#onshowdocument)|Görüntülemek veya belgenin gizlemek için çerçevesi tarafından çağrılır.|  
+|[COleServerDoc::CreateInPlaceFrame](#createinplaceframe)|Yerinde düzenleme için bir çerçeve penceresi oluşturmak için framework tarafından çağırılır.|  
+|[COleServerDoc::DestroyInPlaceFrame](#destroyinplaceframe)|Yerinde düzenleme için bir çerçeve penceresini yok etmek için framework tarafından çağırılır.|  
+|[COleServerDoc::GetDocObjectServer](#getdocobjectserver)|Bu işlev, yeni bir geçersiz kılma `CDocObjectServer` nesne ve bu belgenin DocObject kapsayıcı olduğunu gösterir.|  
+|[COleServerDoc::OnClose](#onclose)|Bir kapsayıcı belgeyi kapatmaya istediğinde framework tarafından çağırılır.|  
+|[COleServerDoc::OnExecOleCmd](#onexecolecmd)|Belirtilen komutu yürütür ya da komut için yardımı görüntüler.|  
+|[COleServerDoc::OnFrameWindowActivate](#onframewindowactivate)|Kapsayıcının çerçeve penceresini etkinleştirmek veya framework tarafından çağırılır.|  
+|[COleServerDoc::OnGetEmbeddedItem](#ongetembeddeditem)|Almak için çağrılan bir `COleServerItem` , tüm belgeyi temsil eder; gömülü bir öğe almak için kullanılır. Gerekli uygulama.|  
+|[COleServerDoc::OnReactivateAndUndo](#onreactivateandundo)|Yerinde düzenleme sırasında yapılan değişiklikleri geri almak için framework tarafından çağırılır.|  
+|[COleServerDoc::OnSetHostNames](#onsethostnames)|Pencere Başlığı katıştırılmış nesne için bir kapsayıcı kümeleri kullanırken framework tarafından çağırılır.|  
+|[COleServerDoc::OnSetItemRects](#onsetitemrects)|Kapsayıcı uygulamasının penceresinde yerinde düzenleme çerçeve penceresi konumlandırmak için framework tarafından çağırılır.|  
+|[COleServerDoc::OnShowDocument](#onshowdocument)|Belge gizlemek veya göstermek için framework tarafından çağırılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir sunucu belge içerebilir [COleServerItem](../../mfc/reference/coleserveritem-class.md) sunucu arabirimi katıştırılmış veya bağlı öğeleri temsil eden nesne. Bir sunucu uygulaması katıştırılmış bir öğeyi düzenlemek için bir kapsayıcı başlatıldığında, öğesi, kendi sunucu belgesi olarak yüklenir; `COleServerDoc` nesnesini içeren tek `COleServerItem` tüm belgenin oluşan nesne. Bağlantılı bir öğe düzenlemek için bir kapsayıcı tarafından bir sunucu uygulaması başlatıldığında, var olan bir belgeyi diskten yüklenir; bir belge içeriğini kısmı bağlantılı öğesi belirtmek için vurgulanır.  
+ Sunucu belgesinin içerebilir [Coleserverıtem](../../mfc/reference/coleserveritem-class.md) sunucu arabirimi gömülü veya bağlantılı öğeleri temsil eden nesneleri. Sunucu uygulaması gömülü bir öğe düzenlemek için bir kapsayıcı tarafından başlatıldığında, öğenin kendi sunucu belgesi olarak yüklenir; `COleServerDoc` nesnesini içeren tek `COleServerItem` tüm belgenin oluşan nesnesi. Bağlantılı bir öğeyi düzenlemek için bir kapsayıcı tarafından bir sunucu uygulaması başlatıldığında, var olan bir belgeyi diskten yüklenir; Belge içeriğini bir kısmı, bağlantılı öğe belirtmek için vurgulanır.  
   
- `COleServerDoc` nesneleri ayrıca öğeleri içeren [COleClientItem](../../mfc/reference/coleclientitem-class.md) sınıfı. Bu kapsayıcı sunuculu uygulamalar oluşturmanıza olanak sağlar. Çerçeve düzgün bir şekilde depolamak için işlevleri sağlar `COleClientItem` bakım sırasında öğeleri `COleServerItem` nesneleri.  
+ `COleServerDoc` nesneleri ayrıca öğeleri içeren [Coleclientıtem](../../mfc/reference/coleclientitem-class.md) sınıfı. Bu, kapsayıcı-sunucu uygulamaları oluşturmanıza olanak sağlar. Framework düzgün bir şekilde depolamak için işlevler sağlayan `COleClientItem` bakım öğeyi `COleServerItem` nesneleri.  
   
- Sunucu uygulamanızı bağlantılar desteklemiyorsa, server belge her zaman bir belge olarak tüm katıştırılmış nesneyi temsil eden yalnızca bir sunucu öğesini içerir. Sunucu uygulamanızı bağlantılar destekliyorsa, seçim panoya kopyalandı her zaman bir sunucu öğesi oluşturmanız gerekir.  
+ Sunucu uygulamasının bağlantıları desteklemiyorsa, sunucu belgesi her zaman bir belge olarak tüm katıştırılmış nesneyi temsil eden tek bir sunucu öğesi içerir. Sunucu uygulamasının bağlantıları destekliyorsanız, bu seçim panoya kopyalandı her zaman bir sunucu öğesi oluşturmanız gerekir.  
   
- Kullanılacak `COleServerDoc`, buradan bir sınıf türetin ve uygulama [OnGetEmbeddedItem](#ongetembeddeditem) sunucunuzun katıştırılmış öğeleri desteklemesi için sağlayan üye işlevi. Öğesinden bir sınıf türetin `COleServerItem` öğeleri belgelerinizde uygulamak ve bu sınıftan nesneleri döndürmek için `OnGetEmbeddedItem`.  
+ Kullanılacak `COleServerDoc`, bir sınıf türetmeniz ve uygulama [OnGetEmbeddedItem](#ongetembeddeditem) katıştırılmış öğeler desteklemek üzere sunucunuzu sağlayan üye işlevi. Öğesinden bir sınıf türetin `COleServerItem` öğeleri belgelerinize uygulamak ve bu sınıfın nesneleri döndürmek için `OnGetEmbeddedItem`.  
   
- Bağlantılı öğeler desteklemek için `COleServerDoc` sağlar [OnGetLinkedItem](../../mfc/reference/colelinkingdoc-class.md#ongetlinkeditem) üye işlevi. Varsayılan uygulama veya belge öğeleri yönetme kendi yolu varsa geçersiz kılma kullanabilirsiniz.  
+ Bağlantılı öğeler desteklemek için `COleServerDoc` sağlar [OnGetLinkedItem](../../mfc/reference/colelinkingdoc-class.md#ongetlinkeditem) üye işlevi. Varsayılan uygulama veya belge öğeleri yönetme kendi yolu varsa bunu geçersiz kılmasına kullanabilirsiniz.  
   
- Bir gereksinim `COleServerDoc`-her sunucu türü belge için uygulamanızın desteklediği türetilmiş sınıf. Çalışma sayfaları ve grafikler sunucu uygulamanız destekliyorsa, örneğin, iki gereksinim duyduğunuz `COleServerDoc`-türetilmiş sınıfları.  
+ Bir gereksinim duyduğunuz `COleServerDoc`-uygulamanızın desteklediği her sunucu türünü belge için türetilmiş sınıf. Sunucu uygulamanızı çalışma sayfaları ve grafikleri destekler, örneğin, iki gerekiyorsa, `COleServerDoc`-türetilmiş sınıflar.  
   
- Makaleyi sunucuları hakkında daha fazla bilgi için bkz: [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).  
+ Sunucuları hakkında daha fazla bilgi için bkz [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -202,35 +202,35 @@ void ActivateDocObject();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, `COleServerDoc` (DocObjects da bilinir) etkin belgeler desteklemiyor. Bu desteğini etkinleştirmek için bkz: [GetDocObjectServer](#getdocobjectserver) ve sınıf [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md).  
+ Varsayılan olarak, `COleServerDoc` etkin belgeler (DocObjects da bilinir) desteklemez. Bu desteğini etkinleştirmek için bkz: [GetDocObjectServer](#getdocobjectserver) ve sınıf [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md).  
   
 ##  <a name="activateinplace"></a>  COleServerDoc::ActivateInPlace  
- Öğeyi yerinde düzenleme için etkinleştirir.  
+ Yerinde düzenleme için öğenin etkinleştirir.  
   
 ```  
 BOOL ActivateInPlace();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi halde 0, öğesi tam olarak açık olduğunu gösterir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0, öğesi tam olarak açık olduğunu gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yerinde etkinleştirme için gerekli tüm işlemleri gerçekleştirir. Yerinde çerçeve penceresi oluşturur, etkinleştirir ve öğesine boyutları, paylaşılan menüleri ve diğer denetimlerin ayarlar, görünüme öğesi gelene ve yerinde çerçeve penceresi odağı ayarlar.  
+ Bu işlev, yerinde etkinleştirme için gerekli tüm işlemleri gerçekleştirir. Yerinde çerçeve penceresi oluşturur, etkinleştirir ve öğesine boyutları, paylaşılan menüleri ve diğer denetimleri ayarlar, görünüme öğesi gelene ve yerinde çerçeve penceresine odak noktası ayarlar.  
   
- Bu işlev varsayılan uygulaması tarafından çağrılır [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow). Uygulamanız (örneğin, yürütme) yerinde etkinleştirme için başka bir fiil destekliyorsa bu işlevini çağırın.  
+ Bu işlev varsayılan uygulaması tarafından çağrılır [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow). Yerinde etkinleştirme (örneğin, yürütme) için başka bir eylem uygulamanız destekliyorsa, bu işlevi çağırın.  
   
 ##  <a name="coleserverdoc"></a>  COleServerDoc::COleServerDoc  
- Oluşturan bir `COleServerDoc` OLE sistem DLL'leri bağlanmadan nesnesi.  
+ Oluşturur bir `COleServerDoc` OLE sistem DLL'lerini bağlanmadan nesne.  
   
 ```  
 COleServerDoc();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırmalısınız [COleLinkingDoc::Register](../../mfc/reference/colelinkingdoc-class.md#register) iletişimleri OLE ile açın. Kullanıyorsanız [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) , uygulamanızda `COleLinkingDoc::Register` tarafından sizin için adlı `COleLinkingDoc`'s uyarlamasını `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
+ Çağırmalısınız [COleLinkingDoc::Register](../../mfc/reference/colelinkingdoc-class.md#register) iletişimleri OLE ile açın. Kullanıyorsanız [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) uygulamanızın `COleLinkingDoc::Register` sizin tarafınızdan için çağrılır `COleLinkingDoc`'s uygulaması `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.  
   
 ##  <a name="createinplaceframe"></a>  COleServerDoc::CreateInPlaceFrame  
- Framework yerinde düzenlemek için bir çerçeve penceresinde oluşturmak için bu işlevi çağırır.  
+ Framework, yerinde düzenleme için bir çerçeve penceresi oluşturmak için bu işlevi çağırır.  
   
 ```  
 virtual COleIPFrameWnd* CreateInPlaceFrame(CWnd* pParentWnd);
@@ -238,31 +238,31 @@ virtual COleIPFrameWnd* CreateInPlaceFrame(CWnd* pParentWnd);
   
 ### <a name="parameters"></a>Parametreler  
  *pParentWnd*  
- Kapsayıcı uygulamanın ana pencereyi işaretçi.  
+ Kapsayıcı uygulamanın ana pencere işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yerinde çerçeve penceresi için bir işaretçi veya **NULL** başarısız olursa.  
+ Yerinde çerçeve penceresini ya da başarısız olursa NULL bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama çerçevesi oluşturmak için belge şablonda belirtilen bilgileri kullanır. Kullanılan görünümü ve belge için oluşturulan ilk görünümdür. Bu görünüm geçici olarak özgün çerçevesinden ayrılmış ve yeni oluşturulan çerçeve bağlı.  
+ Varsayılan uygulama belge şablonunda belirtilen bilgileri kare oluşturmak için kullanır. Kullanılan görünüm, belge için oluşturulan ilk görünümdür. Bu görünüm geçici olarak özgün çerçevesinden kullanımdan çıkarıldı ve yeni oluşturulan çerçeveye bağlı.  
   
- Gelişmiş budur geçersiz kılınabilir.  
+ Bu gelişmiş bir, geçersiz kılınabilir.  
   
 ##  <a name="deactivateandundo"></a>  COleServerDoc::DeactivateAndUndo  
- Bu işlev, uygulamanızın desteklediği geri ve geri alma öğeyi etkinleştirdikten sonra ancak düzenlemeden önce kullanıcının seçtiği çağırın.  
+ Uygulamanızın desteklediği Geri Al ve kullanıcı bir öğeyi etkinleştirdikten sonra ancak düzenlemeden önce geri alma seçer, bu işlevi çağırın.  
   
 ```  
 BOOL DeactivateAndUndo();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı sıfır olmayan; Aksi takdirde 0.  
+ Başarılıysa sıfır; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, bu işlev çağırma neden [COleClientItem::OnDeactivateAndUndo](../../mfc/reference/coleclientitem-class.md#ondeactivateandundo) çağrılacak, sunucunun kullanıcı arabirimini bırakır.  
+ Kapsayıcı uygulamasını Microsoft Foundation Class Kitaplığı kullanılarak yazılmış, bu işlev çağrılırken neden [COleClientItem::OnDeactivateAndUndo](../../mfc/reference/coleclientitem-class.md#ondeactivateandundo) çağrılacak, sunucunun kullanıcı arabirimini bırakır.  
   
 ##  <a name="destroyinplaceframe"></a>  COleServerDoc::DestroyInPlaceFrame  
- Çerçeve bir yerinde çerçeve penceresi yok ve sunucu durumuna yerinde etkinleştirme önce uygulamanın belge penceresine dönmek için bu işlevi çağırır.  
+ Framework, bir yerinde çerçeve penceresini yok etmek ve sunucu durumuna yerinde etkinleştirme önce uygulamanın belge penceresine dönmek için bu işlevi çağırır.  
   
 ```  
 virtual void DestroyInPlaceFrame(COleIPFrameWnd* pFrameWnd);
@@ -270,36 +270,36 @@ virtual void DestroyInPlaceFrame(COleIPFrameWnd* pFrameWnd);
   
 ### <a name="parameters"></a>Parametreler  
  *pFrameWnd*  
- Yerinde çerçeve penceresi yok edilmesi için işaretçi.  
+ Yok edilecek yerinde çerçeve işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Gelişmiş budur geçersiz kılınabilir.  
+ Bu gelişmiş bir, geçersiz kılınabilir.  
   
 ##  <a name="discardundostate"></a>  COleServerDoc::DiscardUndoState  
- Kullanıcı geri alınamaz bir düzenleme işlemi gerçekleştirirse, geri alma işlemi durum bilgilerini atmak için kapsayıcı uygulama zorlamak için bu işlevini çağırın.  
+ Kullanıcı geri alınamaz bir düzenleme işlemi gerçekleştirdiğinde, geri alma-durum bilgilerini atmak kapsayıcı uygulaması zorlamak için bu işlevi çağırın.  
   
 ```  
 BOOL DiscardUndoState();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı sıfır olmayan; Aksi takdirde 0.  
+ Başarılıysa sıfır; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, böylece Geri Al'ı destekleyen sunucular kullanılamaz geri alma işlemi durum bilgilerini tarafından tüketilen kaynakları boşaltabilirsiniz sağlanır.  
+ Bu işlev, böylece Geri Al'ı destekleyen sunucular ücretsiz kullanılamaz geri alma durumunu bilgi tarafından tüketilen kaynaklar sağlanır.  
   
 ##  <a name="getclientsite"></a>  COleServerDoc::GetClientSite  
- Arka plandaki bir işaretçi alır `IOleClientSite` arabirimi.  
+ Bağlantılı bir işaretçi alır `IOleClientSite` arabirimi.  
   
 ```  
 LPOLECLIENTSITE GetClientSite() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Arka plandaki bir işaretçi alır [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706) arabirimi.  
+ Bağlantılı bir işaretçi alır [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706) arabirimi.  
   
 ##  <a name="getdocobjectserver"></a>  COleServerDoc::GetDocObjectServer  
- Yeni bir oluşturmak için bu işlevi geçersiz `CDocObjectServer` öğesi ve bir işaretçi döndürün.  
+ Bu işlev, yeni bir geçersiz kılma `CDocObjectServer` öğesini ve ona bir işaretçi döndürür.  
   
 ```  
 virtual CDocObjectServer* GetDocObjectServer(LPOLEDOCUMENTSITE pDocSite);
@@ -307,33 +307,33 @@ virtual CDocObjectServer* GetDocObjectServer(LPOLEDOCUMENTSITE pDocSite);
   
 ### <a name="parameters"></a>Parametreler  
  *pDocSite*  
- İşaretçi `IOleDocumentSite` bu belgeyi sunucuya bağlanır arabirimi.  
+ İşaretçi `IOleDocumentSite` arabirimi bu belge, sunucuya bağlanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir `CDocObjectServer`; **NULL** işlemi başarısız olursa.  
+ Bir işaretçi bir `CDocObjectServer`; İşlem başarısız olursa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir DocObject sunucusu etkinleştirildiğinde, olmayan bir dönüşünü **NULL** işaretçi gösterir istemci DocObjects destekleyebilir. Varsayılan uygulama döndürür **NULL**.  
+ DocObject sunucusuna etkinleştirildiğinde, bir NULL olmayan işaretçi dönüş istemci DocObjects destekleyebildiğini gösterir. Varsayılan uygulama, NULL döndürür.  
   
- DocObjects destekleyen bir belge için tipik bir uygulama yalnızca yeni bir ayırır `CDocObjectServer` nesne ve çağırana döndürür. Örneğin:  
+ Tipik bir uygulaması DocObjects destekleyen bir belge için yalnızca yeni bir tahsis `CDocObjectServer` çağırana döndürmesi ve nesne. Örneğin:  
   
  [!code-cpp[NVC_MFCOleServer#3](../../mfc/codesnippet/cpp/coleserverdoc-class_1.cpp)]  
   
 ##  <a name="getembeddeditem"></a>  COleServerDoc::GetEmbeddedItem  
- Tüm belgeyi temsil eden bir öğe için bir işaretçi almak için bu işlevini çağırın.  
+ Tüm belgeyi temsil eden bir öğeye bir işaretçi almak için bu işlevi çağırın.  
   
 ```  
 COleServerItem* GetEmbeddedItem();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tüm belgeyi temsil eden bir öğe için bir işaretçi; **NULL** işlemi başarısız olursa.  
+ Tüm belgeyi temsil eden bir öğe için bir işaretçi; İşlem başarısız olursa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırır [COleServerDoc::OnGetEmbeddedItem](#ongetembeddeditem), bir sanal işleve hiçbir varsayılan uygulaması.  
+ Çağrı [COleServerDoc::OnGetEmbeddedItem](#ongetembeddeditem), varsayılan uygulama içermeyen bir sanal işlev.  
   
 ##  <a name="getitemcliprect"></a>  COleServerDoc::GetItemClipRect  
- Çağrı `GetItemClipRect` yerinde düzenlenmekte olan öğe kırpması dikdörtgen koordinatlarını alma üye işlevi.  
+ Çağrı `GetItemClipRect` yerinde düzenlenmekte olan öğe dikdörtgen kırpımını koordinatlarını almak için üye işlevi.  
   
 ```  
 void GetItemClipRect(LPRECT lpClipRect) const;  
@@ -341,15 +341,15 @@ void GetItemClipRect(LPRECT lpClipRect) const;
   
 ### <a name="parameters"></a>Parametreler  
  *lpClipRect*  
- İşaretçi bir `RECT` yapısı veya `CRect` öğe kırpması dikdörtgen koordinatlarını almak için nesne.  
+ İşaretçi bir `RECT` yapısı veya `CRect` öğe dikdörtgen kırpımını koordinatlarını almak için nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Piksel cinsinden kapsayıcı uygulama penceresinin istemci alanına göre koordinatlar belirlenir.  
+ Piksel kapsayıcı uygulama penceresinin istemci alanına göre koordinatlar belirlenir.  
   
- Çizim dışında dikdörtgen kırpma oluşmamalıdır. Genellikle, çizim otomatik olarak sınırlandırılır. Kullanıcının belgeyi görünen dilimini dışında kaydırılan olup olmadığını belirlemek için bu işlevi kullanın; Öyleyse, kapsayıcı belge için bir çağrı yoluyla gerektiği şekilde kaydırın [ScrollContainerBy](#scrollcontainerby).  
+ Çizim dışında dikdörtgen kırpımını oluşmamalıdır. Genellikle, çizim otomatik olarak sınırlıdır. Kullanıcı belgeyi görünür bölümünün dışında kaydırılan olup olmadığını belirlemek için bu işlevi kullanın. Bu durumda, kapsayıcı belgeyi bir çağrı yoluyla gerektiği şekilde Kaydır [ScrollContainerBy](#scrollcontainerby).  
   
 ##  <a name="getitemposition"></a>  COleServerDoc::GetItemPosition  
- Çağrı `GetItemPosition` yerinde düzenlenmekte öğesi koordinatlarını alma üye işlevi.  
+ Çağrı `GetItemPosition` yerinde düzenlenmekte olan öğenin koordinatlarını almak için üye işlevi.  
   
 ```  
 void GetItemPosition(LPRECT lpPosRect) const;  
@@ -357,15 +357,15 @@ void GetItemPosition(LPRECT lpPosRect) const;
   
 ### <a name="parameters"></a>Parametreler  
  *lpPosRect*  
- İşaretçi bir `RECT` yapısı veya `CRect` öğesi koordinatlarını almak için nesne.  
+ İşaretçi bir `RECT` yapısı veya `CRect` öğenin koordinatlarını almak için nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Piksel cinsinden kapsayıcı uygulama penceresinin istemci alanına göre koordinatlar belirlenir.  
+ Piksel kapsayıcı uygulama penceresinin istemci alanına göre koordinatlar belirlenir.  
   
- Öğe olduğu görünür (veya görünür) hasarın belirlemek için geçerli kırpma dikdörtgen öğesi'nin konumu karşılaştırılabilir ekranında.  
+ Öğenin konumunu öğesi olduğu görünür (veya görünmez) kapsam belirlemek için geçerli dikdörtgen kırpımını ile karşılaştırılabilir ekranında.  
   
 ##  <a name="getzoomfactor"></a>  COleServerDoc::GetZoomFactor  
- `GetZoomFactor` Üye fonksiyonu "yakınlaştırma faktörünü" yerinde düzenleme için etkinleştirilmiş bir öğenin belirler.  
+ `GetZoomFactor` Üye işlevi, bir öğenin yerinde düzenleme için etkinleştirildi "yakınlaştırma faktörünü" belirler.  
   
 ```  
 BOOL GetZoomFactor(
@@ -376,21 +376,21 @@ BOOL GetZoomFactor(
   
 ### <a name="parameters"></a>Parametreler  
  *lpSizeNum*  
- Sınıfın bir nesnesi için işaretçi `CSize` yakınlaştırma faktörünü 's pay tutun. Olabilir **NULL**.  
+ Sınıfın bir nesnesi için işaretçi `CSize` yakınlaştırma faktörünün pay tutun. NULL olabilir.  
   
  *lpSizeDenom*  
- Sınıfın bir nesnesi için işaretçi `CSize` yakınlaştırma faktörünü 's payda tutun. Olabilir **NULL**.  
+ Sınıfın bir nesnesi için işaretçi `CSize` yakınlaştırma faktörünün paydası tutun. NULL olabilir.  
   
  *lpPosRect*  
- Sınıfın bir nesnesi için işaretçi `CRect` öğesi'nin yeni konumu açıklar. Bu bağımsız değişken ise **NULL**, işlevi öğesi'nin geçerli konumunu kullanır.  
+ Sınıfın bir nesnesi için işaretçi `CRect` öğenin yeni konuma, yani açıklar. Bu bağımsız değişken NULL ise, işlev öğenin geçerli konumu kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Madde yerinde için etkinleştirildiğinde sıfır olmayan düzenleme ve yakınlaştırma faktörünü olduğunu (1:1); % 100 dışında Aksi takdirde 0.  
+ Öğe yerinde için etkinleştirilmişse sıfır olmayan düzenleme ve kendi yakınlaştırma faktörünü olduğunu (1:1); %100 dışında Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yakınlaştırma faktörünü piksel cinsinden geçerli uzantı öğesi'nin boyutuna oranı ' dir. Kapsayıcı uygulama öğesi'nin ölçüde, kendi doğal ölçüde ayarlı değil ise (tarafından belirlenen [COleServerItem::OnGetExtent](../../mfc/reference/coleserveritem-class.md#ongetextent)) kullanılır.  
+ Yakınlaştırma faktörünü piksel cinsinden geçerli kapsamı öğenin boyutuna oranı ' dir. Kapsayıcı uygulamasını öğesinin içeriği, doğal kapsamı ayarlı değil durumunda (tarafından belirlenen şekilde [COleServerItem::OnGetExtent](../../mfc/reference/coleserveritem-class.md#ongetextent)) kullanılır.  
   
- İşlev, ilk iki bağımsız değişkenlerinin pay ve payda öğesi'nin "yakınlaştırma faktörü." ayarlar Öğe yerinde düzenlenmekte olan değil, işlevi bu bağımsız değişkenler % 100'den (ya da 1:1) varsayılan değerine ayarlar ve sıfır döndürür. Teknik Not 40, daha fazla bilgi için bkz: [MFC/OLE yerinde yeniden boyutlandırma ve yakınlaştırma](../../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md).  
+ Pay ve paydası öğenin "yakınlaştırma faktörünü.", işlev ilk iki bağımsız değişkenlerinden ayarlar Öğe yerinde düzenlenmekte olan değil, işlev bu bağımsız değişkenler % 100 (veya 1:1) varsayılan değerine ayarlar ve sıfır döndürür. Daha fazla bilgi için bkz. Teknik Not 40 [MFC/OLE yerinde yeniden boyutlandırma ve yakınlaştırma](../../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md).  
   
 ##  <a name="isdocobject"></a>  COleServerDoc::IsDocObject  
  Belge DocObject olup olmadığını belirler.  
@@ -400,7 +400,7 @@ BOOL IsDocObject() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **DOĞRU** belge DocObject; ise aksi **FALSE**.  
+ Belge DocObject ise TRUE; Aksi durumda FALSE.  
   
 ##  <a name="isembedded"></a>  COleServerDoc::IsEmbedded  
  Çağrı `IsEmbedded` belgenin bir kapsayıcıda katıştırılmış bir nesneyi temsil edip etmediğini belirlemek için üye işlevi.  
@@ -410,10 +410,10 @@ BOOL IsEmbedded() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sıfır olmayan IF `COleServerDoc` nesnesi olan bir nesneyi temsil eden bir belge katıştırılmış bir kapsayıcıda; Aksi halde 0.  
+ Gösterimiyse `COleServerDoc` nesnesi olan bir nesneyi temsil eden bir belge katıştırılmış bir kapsayıcıda; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir bağlantı olarak bir kapsayıcı uygulama tarafından yönetilen ancak bir dosyasından yüklenen bir belge katıştırılmış değil. Katıştırılmış bir kapsayıcı belge içine katıştırılmış bir belge olarak kabul edilir.  
+ Bir bağlantı olarak bir kapsayıcı uygulama tarafından yönetilen ancak bir dosyasından yüklenen belge ekli değil. Gömülü olması için bir kapsayıcı belgeye gömülü bir belge olarak kabul edilir.  
   
 ##  <a name="isinplaceactive"></a>  COleServerDoc::IsInPlaceActive  
  Çağrı `IsInPlaceActive` öğe şu anda yerinde etkin durumda olup olmadığını belirlemek için üye işlevi.  
@@ -423,33 +423,33 @@ BOOL IsInPlaceActive() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sıfır olmayan IF `COleServerDoc` nesnesidir yerinde active; Aksi halde 0.  
+ Gösterimiyse `COleServerDoc` nesnedir yerinde etkin; Aksi durumda 0.  
   
 ##  <a name="notifychanged"></a>  COleServerDoc::NotifyChanged  
- Belge değişti belgeye bağlı tüm bağlantılı öğeler bildirmek için bu işlevini çağırın.  
+ Belge değişti belgeye bağlı tüm bağlantılı öğeler bildirmek için bu işlevi çağırın.  
   
 ```  
 void NotifyChanged();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Genellikle, sunucu belgesinin boyutları gibi bazı genel öznitelik kullanıcı değiştirdikten sonra bu işlevini çağırın. OLE öğesi belgeye otomatik bir bağlantıyla bağlı ise, öğenin değişiklikleri yansıtacak şekilde güncelleştirilir. Microsoft Foundation Class Kitaplığı ile yazılmış kapsayıcı uygulamalarında [değiştiğinde](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevini `COleClientItem` olarak adlandırılır.  
+ Genellikle, kullanıcı sunucu belgesinin boyutları gibi bazı genel öznitelik değiştirdikten sonra bu işlevi çağırın. OLE öğesini belgeye otomatik bir bağlantıyla bağlıysa, öğe değişiklikleri yansıtacak şekilde güncelleştirilir. Microsoft Foundation Class Kitaplığı ile kapsayıcı uygulamalarında [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevinin `COleClientItem` çağrılır.  
   
 > [!NOTE]
->  Bu işlev OLE 1 ile uyumluluk için dahil edilmiştir. Yeni uygulamalar kullanması gereken [UpdateAllItems](#updateallitems).  
+>  Bu işlev, OLE 1 ile uyumluluk için dahildir. Yeni uygulamalar kullanması gereken [UpdateAllItems](#updateallitems).  
   
 ##  <a name="notifyclosed"></a>  COleServerDoc::NotifyClosed  
- Belge kapalı kaldırıldığından bildirmek için bu işlevini çağırın.  
+ Belge kapatıldı kapsayıcılarda bildirmek için bu işlevi çağırın.  
   
 ```  
 void NotifyClosed();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı Dosya menüsünden Kapat komutunu seçtiğinde `NotifyClosed` tarafından çağrılır `COleServerDoc`'s uyarlamasını [OnCloseDocument](../../mfc/reference/cdocument-class.md#onclosedocument) üye işlevi. Microsoft Foundation Class Kitaplığı ile yazılmış kapsayıcı uygulamalarında [değiştiğinde](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevini `COleClientItem` olarak adlandırılır.  
+ Kullanıcı Dosya menüsünden Kapat komutunu seçtiğinde `NotifyClosed` tarafından çağrılır `COleServerDoc`'s uygulaması [OnCloseDocument](../../mfc/reference/cdocument-class.md#onclosedocument) üye işlevi. Microsoft Foundation Class Kitaplığı ile kapsayıcı uygulamalarında [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevinin `COleClientItem` çağrılır.  
   
 ##  <a name="notifyrename"></a>  COleServerDoc::NotifyRename  
- Sunucu belgesinin kullanıcının yeniden adlandırır sonra bu işlevini çağırın.  
+ Sunucu belgesinin kullanıcı yeniden adlandırır sonra bu işlevi çağırın.  
   
 ```  
 void NotifyRename(LPCTSTR lpszNewName);
@@ -457,23 +457,23 @@ void NotifyRename(LPCTSTR lpszNewName);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszNewName*  
- Sunucu belgesinin yeni adını belirten bir dize işaretçi; Bu, genellikle tam nitelenmiş bir yol olur.  
+ Sunucu belgesinin yeni adını belirten bir dize işaretçisi; Bu genellikle tam nitelikli bir yoludur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı Dosya menüsünden Kaydet komutunu seçtiğinde `NotifyRename` tarafından çağrılır `COleServerDoc`'s uyarlamasını [OnSaveDocument](../../mfc/reference/cdocument-class.md#onsavedocument) üye işlevi. Bu işlev OLE sistemi sırayla kapsayıcıları bildir DLL'leri bildirir. Microsoft Foundation Class Kitaplığı ile yazılmış kapsayıcı uygulamalarında [değiştiğinde](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevini `COleClientItem` olarak adlandırılır.  
+ Kullanıcı Dosya menüsünden Kaydet komutunu seçtiğinde `NotifyRename` tarafından çağrılır `COleServerDoc`'s uygulaması [OnSaveDocument](../../mfc/reference/cdocument-class.md#onsavedocument) üye işlevi. Bu işlev, OLE sistemi sırayla kapsayıcıları bildir DLL'leri bildirir. Microsoft Foundation Class Kitaplığı ile kapsayıcı uygulamalarında [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevinin `COleClientItem` çağrılır.  
   
 ##  <a name="notifysaved"></a>  COleServerDoc::NotifySaved  
- Sunucu belgesinin kullanıcı kaydettikten sonra bu işlevini çağırın.  
+ Sunucu belgesinin kullanıcı kaydettikten sonra bu işlevi çağırın.  
   
 ```  
 void NotifySaved();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı Dosya menüsünden Kaydet komutunu seçtiğinde `NotifySaved` tarafından sizin için adlı `COleServerDoc`'s uyarlamasını [OnSaveDocument](../../mfc/reference/cdocument-class.md#onsavedocument). Bu işlev OLE sistemi sırayla kapsayıcıları bildir DLL'leri bildirir. Microsoft Foundation Class Kitaplığı ile yazılmış kapsayıcı uygulamalarında [değiştiğinde](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevini `COleClientItem` olarak adlandırılır.  
+ Kullanıcı Dosya menüsünden Kaydet komutunu seçtiğinde `NotifySaved` sizin tarafınızdan için adlı `COleServerDoc`'s uygulaması [OnSaveDocument](../../mfc/reference/cdocument-class.md#onsavedocument). Bu işlev, OLE sistemi sırayla kapsayıcıları bildir DLL'leri bildirir. Microsoft Foundation Class Kitaplığı ile kapsayıcı uygulamalarında [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevinin `COleClientItem` çağrılır.  
   
 ##  <a name="onclose"></a>  COleServerDoc::OnClose  
- Bir kapsayıcı sunucu belgesinin kapatılması istediğinde çerçevesi tarafından çağrılır.  
+ Bir kapsayıcı sunucu belgesinin kapatılması istediğinde framework tarafından çağırılır.  
   
 ```  
 virtual void OnClose(OLECLOSE dwCloseOption);
@@ -481,35 +481,35 @@ virtual void OnClose(OLECLOSE dwCloseOption);
   
 ### <a name="parameters"></a>Parametreler  
  *dwCloseOption*  
- Numaralandırma arasında bir değer `OLECLOSE`. Bu parametre aşağıdaki değerlerden biri olabilir:  
+ OLECLOSE sabit bir değer. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
-- `OLECLOSE_SAVEIFDIRTY` Bunu güncellendiyse dosya kaydedilmiş kalır.  
+- OLECLOSE_SAVEIFDIRTY değiştirildi dosyanın kaydedilir.  
   
-- `OLECLOSE_NOSAVE` Dosya kaydedildi olmadan kapalı.  
+- Kaydedilen olmadan OLECLOSE_NOSAVE dosya kapatılır.  
   
-- `OLECLOSE_PROMPTSAVE` Dosya değiştirilirse kaydetme hakkında kullanıcıya sorulur.  
+- OLECLOSE_PROMPTSAVE varsa dosya değiştirildi, kullanıcı kaydetme hakkında istenir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan Uygulama çağrıları `CDocument::OnCloseDocument`.  
   
- Daha fazla bilgi ve ek değerler için bkz: [OLECLOSE](http://msdn.microsoft.com/library/windows/desktop/ms680623) Windows SDK'sındaki.  
+ Daha fazla bilgi ve ek değerler için bkz. [OLECLOSE](http://msdn.microsoft.com/library/windows/desktop/ms680623) Windows SDK.  
   
 ##  <a name="ondeactivate"></a>  COleServerDoc::OnDeactivate  
- Kullanıcı şu anda yerinde etkin olduğu bir katıştırılmış veya bağlantılı bir öğe devre dışı bırakır çerçevesi tarafından çağrılır.  
+ Kullanıcı şu anda yerinde etkin bir gömülü veya bağlantılı bir öğe bıraktığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnDeactivate();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, kapsayıcı uygulamanın kullanıcı arabirimi özgün durumuna geri yükler ve tüm menüleri ve yerinde etkinleştirme için oluşturulmuş olan diğer denetimleri yok eder.  
+ Bu işlev, kapsayıcı uygulamasının kullanıcı arabirimini özgün durumuna geri yükler ve menüler ve yerinde etkinleştirme için oluşturulan diğer denetimleri yok eder.  
   
- Geri alma işlemi durum bilgilerini koşulsuz olarak bu noktada yayımlanması.  
+ Geri alma durumu bilgilerini koşulsuz olarak bu noktada yayımlanması.  
   
- Daha fazla bilgi için bkz: [etkinleştirme](../../mfc/activation-cpp.md)...  
+ Daha fazla bilgi için bkz [etkinleştirme](../../mfc/activation-cpp.md)...  
   
 ##  <a name="ondeactivateui"></a>  COleServerDoc::OnDeactivateUI  
- Yerinde etkinleştirildiği bir öğe kullanıcı devre dışı bırakır çağrılır.  
+ Kullanıcı yerinde etkin bir öğe bıraktığında çağrılır.  
   
 ```  
 virtual void OnDeactivateUI(BOOL bUndoable);
@@ -517,15 +517,15 @@ virtual void OnDeactivateUI(BOOL bUndoable);
   
 ### <a name="parameters"></a>Parametreler  
  *bUndoable*  
- Düzenleme değişiklikleri alınabilecek olup olmadığını belirtir.  
+ Düzenleme değişiklikleri geri yüklenemeyeceğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev kapsayıcı uygulamanın kullanıcı arabirimi menüler ve yerinde etkinleştirme için oluşturulmuş olan diğer denetimleri gizleme özgün durumuna geri yükler.  
+ Bu işlev kapsayıcı uygulamasının kullanıcı arabirimi, menüler ve yerinde etkinleştirme için oluşturulan diğer denetimleri gizleme özgün durumuna geri yükler.  
   
- Her zaman framework ayarlar *bUndoable* için **FALSE**. Sunucunun geri alma destekliyorsa ve alınabilecek bir işlem, bir taban sınıfı uygulama ile çağrı *bUndoable* kümesine **doğru**.  
+ Her zaman çerçevesi ayarlar *bUndoable* false. Sunucunun geri destekliyorsa ve Al. geri alınabilecek bir işlem yoktur, bir taban sınıfı uygulama ile çağrı *bUndoable* TRUE olarak ayarlayın.  
   
 ##  <a name="ondocwindowactivate"></a>  COleServerDoc::OnDocWindowActivate  
- Framework etkinleştirme veya devre dışı yerinde düzenlemek için bir belge penceresi için bu işlevi çağırır.  
+ Framework etkinleştirme veya devre dışı yerinde düzenleme için bir belge penceresi için bu işlevi çağırır.  
   
 ```  
 virtual void OnDocWindowActivate(BOOL bActivate);
@@ -533,15 +533,15 @@ virtual void OnDocWindowActivate(BOOL bActivate);
   
 ### <a name="parameters"></a>Parametreler  
  *bActivate*  
- Belge penceresine etkinleştirilmiş veya devre dışı olup olmadığını belirtir.  
+ Belge penceresinde etkin veya devre dışı bırakılması olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama çerçeve düzeyi kullanıcı arabirimi öğeleri uygun şekilde ekler veya kaldırır. Öğenizi içeren belge etkinleştirilmiş veya devre dışı olduğunda ek eylemleri gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar.  
+ Varsayılan Uygulama Çerçevesi düzeyinde kullanıcı arabirimi öğeleri uygun şekilde ekler veya kaldırır. Öğenizi içeren belge etkin veya devre dışı olduğunda ek eylemleri gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar.  
   
- Daha fazla bilgi için bkz: [etkinleştirme](../../mfc/activation-cpp.md)...  
+ Daha fazla bilgi için bkz [etkinleştirme](../../mfc/activation-cpp.md)...  
   
 ##  <a name="onexecolecmd"></a>  COleServerDoc::OnExecOleCmd  
- Framework belirtilen komut yürütme ya da komut için Yardım görüntülemek için bu işlevi çağırır.  
+ Framework, belirtilen bir komutu çalıştırmak ya da komut için Yardım görüntülemek için bu işlevi çağırır.  
   
 ```  
 virtual HRESULT OnExecOleCmd(
@@ -554,55 +554,55 @@ virtual HRESULT OnExecOleCmd(
   
 ### <a name="parameters"></a>Parametreler  
  *pguidCmdGroup*  
- Bir işaretçi komutları kümesini tanımlayan bir GUID. Olabilir **NULL** varsayılan komut grubu belirtmek için.  
+ Bir komut kümesini tanımlayan bir GUID için bir işaretçi. Varsayılan komut grubu belirtmek için boş olabilir.  
   
  *nCmdID*  
  Yürütülecek komut. Tarafından tanımlanan grubunda olmalıdır *pguidCmdGroup*.  
   
  *nCmdExecOut*  
- Yol nesne komutu, bir veya daha fazla aşağıdaki değerlerden birini yürütülecek **OLECMDEXECOPT** numaralandırma:  
+ Nesne yolu komutu, bir veya daha fazla aşağıdaki değerleri OLECMDEXECOPT sabit listesinden alınmış getirmesi gerekir:  
   
- **OLECMDEXECOPT_DODEFAULT**  
+ OLECMDEXECOPT_DODEFAULT  
   
- **OLECMDEXECOPT_PROMPTUSER**  
+ OLECMDEXECOPT_PROMPTUSER  
   
- **OLECMDEXECOPT_DONTPROMPTUSER**  
+ OLECMDEXECOPT_DONTPROMPTUSER  
   
- **OLECMDEXECOPT_SHOWHELP**  
+ OLECMDEXECOPT_SHOWHELP  
   
  *pvarargIn*  
- İşaretçi bir **VARIANTARG** komut için giriş bağımsız değişkeni içeren. Olabilir **NULL**.  
+ Komut için giriş bağımsız değişkenleri içeren bir VARIANTARG işaretçisi. NULL olabilir.  
   
  *pvarargOut*  
- İşaretçi bir **VARIANTARG** komuttan çıkış dönüş değerleri almak için. Olabilir **NULL**.  
+ Komuttan çıkış almak için bir VARIANTARG işaretçi dönüş değerleri. NULL olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarılı; Aksi takdirde aşağıdaki hata kodları:  
+ Başarılıysa; başarılıysa S_OK döndürür Aksi takdirde biri, aşağıdaki hata kodları:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|**E_UNEXPECTED**|Beklenmeyen bir hata oluştu|  
-|**E_FAIL**|Bir hata oluştu|  
-|**E_NOTIMPL**|MFC gösterir kendisini çevirin ve komut gönderme girişiminde|  
-|**OLECMDERR_E_UNKNOWNGROUP**|*pguidCmdGroup* olan olmayan **NULL** tanınan komut grubu belirtmiyor ancak|  
-|**OLECMDERR_E_NOTSUPPORTED**|*nCmdID* grubunda geçerli bir komut olarak tanınmıyor *pguidCmdGroup*|  
-|**OLECMDERR_DISABLED**|Tarafından tanımlanan komutu *nCmdID* devre dışı bırakılır ve yürütülemez|  
-|**OLECMDERR_NOHELP**|Çağıran tarafından tanımlanan komutu hakkında Yardım için sorulan *nCmdID* ancak Yardım yok|  
-|**OLECMDERR_CANCELED**|Kullanıcı yürütme iptal edildi|  
+|E_UNEXPECTED|Beklenmeyen bir hata oluştu|  
+|E_FAIL|Hata oluştu|  
+|E_NOTIMPL|MFC gösterir kendisini çevirin ve komut gönderme denemelidir|  
+|OLECMDERR_E_UNKNOWNGROUP|*pguidCmdGroup* NULL değil ancak bir tanınan bir komut grubuyla belirtmiyor|  
+|OLECMDERR_E_NOTSUPPORTED|*nCmdID* grubundaki geçerli bir komut olarak tanınmıyor *pguidCmdGroup*|  
+|OLECMDERR_DISABLED|Tarafından tanımlanan komutu *nCmdID* devre dışı bırakıldı ve yürütülemez|  
+|OLECMDERR_NOHELP|Çağıran tarafından tanımlanan komutu hakkında Yardım için sorulan *nCmdID* ancak Yardım yok|  
+|OLECMDERR_CANCELED|Kullanıcı yürütme iptal edildi|  
   
 ### <a name="remarks"></a>Açıklamalar  
- `COleCmdUI` etkinleştirme, güncelleştirme ve diğer DocObject kullanıcı arabirimi komutları özelliklerini ayarlamak için kullanılabilir. Komutları başlatıldıktan sonra yürütebilir `OnExecOleCmd`.  
+ `COleCmdUI` etkinleştirme, güncelleştirme ve DocObject kullanıcı arabirimi komutları diğer özelliklerini ayarlamak için kullanılabilir. Komutlar başlatıldıktan sonra yürütebilir `OnExecOleCmd`.  
   
- Framework çevirin ve OLE belge komut gönderme girişiminde bulunmadan önce işlevi çağırır. Standart OLE belge komutları işlemek için bu işlev geçersiz kılmak gerekli değildir, ancak kendi özel komutları işleyebilir veya parametreleri kabul veya sonuçları döndüren komutları işlemek istiyorsanız, bu işlev bir geçersiz kılma sağlamanız gerekir.  
+ Framework çevirin ve bir OLE belge komut gönderme çalışmadan önce işlevini çağırır. Standart OLE belge komutları işlemek için bu işlevi geçersiz kılma gerekmez, ancak kendi özel komutları işleyebilir veya parametre kabul eden ya da sonuçları döndürmek komutları işlemek istiyorsanız, bu işlev için bir geçersiz kılma sağlamalısınız.  
   
- Komutların çoğu olmayan bağımsız değişkenler almayan veya dönüş değerleri. Komutların çoğu için arayan geçirebilirsiniz **NULL**s için *pvarargIn* ve *pvarargOut*. Giriş değerleri beklediğini komutları çağıran bildirme başlatmak ve bir **VARIANTARG** değişkeni değişken bir işaretçi geçirin *pvarargIn*. Tek bir değer gerektiren komutlar için bağımsız değişken doğrudan depolanabilir **VARIANTARG** ve işleve. İçinde birden fazla bağımsız değişkenini paketlenmesi **VARIANTARG** desteklenen türlerden birini kullanarak (gibi `IDispatch` ve **SAFEARRAY** ).  
+ Komutların çoğu olmayan bir bağımsız değişken almaz veya dönüş değerleri. Komutların çoğu için çağıranın null değerlere geçirebileceğiniz *pvarargIn* ve *pvarargOut*. Giriş değerleri beklediğini komutlar çağırana bildirebilir ve VARIANTARG değişkeni başlatmak ve bir işaretçi değişkeninde geçirmek *pvarargIn*. Tek bir değer gerektiren komutlar bağımsız değişken VARIANTARG doğrudan depolanan ve işleve geçirilen. Birden çok bağımsız değişkeni desteklenen türlerden birini kullanarak VARIANTARG içinde paketlenmesi gerekir (gibi `IDispatch` ve SAFEARRAY'i).  
   
- Bir komut bağımsız değişkenleri çağıran döndürürse benzer şekilde, bildirmek için beklenen bir **VARIANTARG**, kendisine başlatma `VT_EMPTY`ve kendi adres geçirin *pvarargOut*. Bir komut tek bir değer döndürürse, nesne doğrudan bu değeri saklayabilir *pvarargOut*. Birden çok çıktı değerleri için uygun şekilde paketlenmesi **VARIANTARG**.  
+ Benzer şekilde, bir komutu çağıran bir VARIANTARG bildirmek için beklenmektedir bağımsız değişkenleri döndürürse, için VT_EMPTY başlatın ve adresini de geçirmeniz *pvarargOut*. Bir komutun tek bir değer döndürürse, nesne doğrudan bu değer depolayabilir *pvarargOut*. Birden çok çıkış değerleri VARIANTARG için uygun şekilde paketlenmesi gerekir.  
   
- Bu işlevin temel sınıf uygulamasını yükselteceğinizi **OLE_COMMAND_MAP** uygun bir işleyici komutuna gönderileceği deneyin ve komut hedefi ile ilişkili yapıları. Temel sınıf uygulamasını bağımsız değişkenlerini kabul eder veya dönüş değerleri komutları ile çalışır. Bağımsız değişkenler kabul eden ya da dönüş değerleri komutları işlemek gerekiyorsa, bu işlevi geçersiz gerekir ve çalışmak *pvarargIn* ve *pvarargOut* parametreleri kendiniz.  
+ Bu işlevin temel sınıf uygulamasını komut hedefi ile ilişkili OLE_COMMAND_MAP yapıları yol ve uygun tanıtıcının komutu gönderileceği deneyin. Temel sınıf uygulamasını bağımsız değişkenleri kabul edin veya dönüş değerleri komutları ile çalışır. Bağımsız değişkenleri kabul eden ya da dönüş değerleri komutları işlemek gerekiyorsa, bu işlev geçersiz kılınamıyor gerekir ve çalışmak *pvarargIn* ve *pvarargOut* parametreleri kendiniz.  
   
 ##  <a name="onframewindowactivate"></a>  COleServerDoc::OnFrameWindowActivate  
- Kapsayıcı uygulamanın çerçeve penceresi etkinleştirilmiş veya devre dışı bırakıldığında framework bu işlevi çağırır.  
+ Framework kapsayıcı uygulamasının çerçeve penceresini etkinleştirmek veya bu işlevi çağırır.  
   
 ```  
 virtual void OnFrameWindowActivate(BOOL bActivate);
@@ -610,43 +610,43 @@ virtual void OnFrameWindowActivate(BOOL bActivate);
   
 ### <a name="parameters"></a>Parametreler  
  *bActivate*  
- Çerçeve penceresi etkin veya devre dışı olup olmadığını belirtir.  
+ Çerçeve penceresi etkin veya devre dışı bırakılması olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama çerçeve penceresi olabilir. tüm Yardım modları iptal eder. Çerçeve penceresi etkin veya devre dışı bırakıldığında özel işlem gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar.  
+ Varsayılan uygulama, çerçeve penceresi olabilir herhangi bir Yardım modları iptal eder. Çerçeve penceresi etkin veya devre dışı olduğunda özel işlem gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar.  
   
- Daha fazla bilgi için bkz: [etkinleştirme](../../mfc/activation-cpp.md)...  
+ Daha fazla bilgi için bkz [etkinleştirme](../../mfc/activation-cpp.md)...  
   
 ##  <a name="ongetembeddeditem"></a>  COleServerDoc::OnGetEmbeddedItem  
- Bir kapsayıcı uygulama oluşturmak veya katıştırılmış bir öğeyi düzenlemek için sunucu uygulaması çağırdığında çerçevesi tarafından çağrılır.  
+ Bir kapsayıcı uygulaması oluşturma veya düzenleme gömülü bir öğe için sunucu uygulamasının çağırdığında framework tarafından çağırılır.  
   
 ```  
 virtual COleServerItem* OnGetEmbeddedItem() = 0;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tüm belgeyi temsil eden bir öğe için bir işaretçi; **NULL** işlemi başarısız olursa.  
+ Tüm belgeyi temsil eden bir öğe için bir işaretçi; İşlem başarısız olursa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama yok. Tüm belgeyi temsil eden bir öğesi döndürmek için bu işleve geçersiz kılmanız gerekir. Bu dönüş değeri bir nesne olmalıdır bir `COleServerItem`-türetilmiş sınıf.  
+ Varsayılan uygulaması yok. Tüm belgeyi temsil eden bir öğeyi döndürmek için bu işlevi geçersiz kılmanız gerekir. Bu dönüş değeri bir nesne olmalıdır bir `COleServerItem`-türetilmiş sınıf.  
   
 ##  <a name="onreactivateandundo"></a>  COleServerDoc::OnReactivateAndUndo  
- Kullanıcı yerinde etkinleştirildi, değişti, ve ardından devre dışı bir öğesine yapılan değişiklikleri geri almak seçtiğinde framework bu işlevi çağırır.  
+ Kullanıcı yerinde etkin, değiştirilmiş, ve daha sonra devre dışı bir öğede yapılan değişiklikleri geri almayı seçtiğinde framework bu işlevi çağırır.  
   
 ```  
 virtual BOOL OnReactivateAndUndo();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama dönüş dışında hiçbir şey yapmaz **FALSE** hatayı belirtmek için.  
+ Varsayılan uygulama başarısızlığı göstermek için false değerini döndürür dışında hiçbir şey yapmaz.  
   
- Geri alma uygulamanız destekliyorsa, bu işlev geçersiz kılar. Genellikle, geri alma işlemi gerçekleştirebilir ve ardından öğeyi çağırarak etkinleştirme `ActivateInPlace`. Kapsayıcı uygulama, Microsoft Foundation Class Kitaplığı ile yazılmış çağrılmadan `COleClientItem::ReactivateAndUndo` bu işlevinin çağrılmasına neden olur.  
+ Geri alma uygulamanız destekliyorsa, bu işlev geçersiz kılar. Genellikle, geri alma işlemi gerçekleştirmek, ardından çağırarak öğeyi etkinleştirme `ActivateInPlace`. Kapsayıcı uygulamasını Microsoft Foundation Class Kitaplığı ile yazılmışsa, çağırma `COleClientItem::ReactivateAndUndo` bu işlevin çağrılmasına neden olur.  
   
 ##  <a name="onresizeborder"></a>  COleServerDoc::OnResizeBorder  
- Kapsayıcı uygulamanın çerçeve pencereleri boyutunu değiştirdiğinizde framework bu işlevi çağırır.  
+ Kapsayıcı uygulamasının çerçeve pencereleri boyutu değiştiğinde framework bu işlevi çağırır.  
   
 ```  
 virtual void OnResizeBorder(
@@ -657,23 +657,23 @@ virtual void OnResizeBorder(
   
 ### <a name="parameters"></a>Parametreler  
  *lpRectBorder*  
- İşaretçi bir `RECT` yapısı veya `CRect` kenarlık koordinatlarını belirtir nesnesi.  
+ İşaretçi bir `RECT` yapısı veya `CRect` nesnesini kenarlık koordinatlarını belirtir.  
   
  *lpUIWindow*  
- Sınıfın bir nesnesi için işaretçi **IOleInPlaceUIWindow** geçerli yerinde düzenleme oturum sahibi.  
+ Sınıfın bir nesnesi için işaretçi `IOleInPlaceUIWindow` geçerli yerinde düzenleme oturumunu sahip olan.  
   
  *bFrame*  
- **DOĞRU** varsa *lpUIWindow* işaret kapsayıcı uygulamanın üst düzey çerçeve penceresine veya **FALSE** varsa *lpUIWindow* işaret kapsayıcıya uygulamanın belge düzeyi çerçeve penceresi.  
+ TRUE ise *lpUIWindow* işaret kapsayıcı uygulamasının en üst düzey bir çerçeve penceresinin veya FALSE ise *lpUIWindow* kapsayıcı uygulamasının belge düzeyinde çerçeve penceresine işaret eder.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yeniden boyutlandırır ve araç çubuklarını ve diğer kullanıcı arabirimi öğeleri yeni pencere boyutunu uygun olarak ayarlar.  
+ Bu işlev, yeniden boyutlandırır ve araç çubukları ve diğer kullanıcı arabirimi öğeleri yeni pencere boyutuna göre ayarlar.  
   
- Daha fazla bilgi için bkz: [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) Windows SDK.  
   
- Gelişmiş budur geçersiz kılınabilir.  
+ Bu gelişmiş bir, geçersiz kılınabilir.  
   
 ##  <a name="onsethostnames"></a>  COleServerDoc::OnSetHostNames  
- Kapsayıcı ayarlar ya da bu belge için ana bilgisayar adlarını çerçevesi tarafından çağrılır.  
+ Kapsayıcı ayarlar ya da bu belge için ana bilgisayar adlarını değiştirir framework tarafından çağırılır.  
   
 ```  
 virtual void OnSetHostNames(
@@ -683,18 +683,18 @@ virtual void OnSetHostNames(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszHost*  
- İşaretçi bir dizeye kapsayıcı uygulamanın adını belirtir.  
+ Kapsayıcı uygulamasının adını belirten bir dize işaretçisi.  
   
  *lpszHostObj*  
- İşaretçi belge için kapsayıcının adını belirten dize.  
+ Belgenin kapsayıcının adını belirten bir dize işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama bu belgeye başvuran tüm görünümleri için belge başlığı değiştirir.  
+ Varsayılan uygulama, bu belgeye başvuran tüm görünümleri için belge başlığı değiştirir.  
   
- Bu işlev, uygulamanız farklı bir mekanizma aracılığıyla başlıklarını ayarlarsa geçersiz kılar.  
+ Bu işlev uygulamanızın farklı bir mekanizma aracılığıyla başlıklarını ayarlar geçersiz.  
   
 ##  <a name="onsetitemrects"></a>  COleServerDoc::OnSetItemRects  
- Framework yerinde düzenleme çerçeve penceresi kapsayıcı uygulamanın çerçeve penceresi içinde konumlandırmak için bu işlevi çağırır.  
+ Framework, yerinde düzenleme penceresi içinde kapsayıcı uygulamasının çerçeve penceresini konumlandırmak için bu işlevi çağırır.  
   
 ```  
 virtual void OnSetItemRects(
@@ -704,18 +704,18 @@ virtual void OnSetItemRects(
   
 ### <a name="parameters"></a>Parametreler  
  *lpPosRect*  
- İşaretçi bir `RECT` yapısı veya `CRect` kapsayıcı uygulamanın istemci alanını göre yerinde çerçeve pencere konumunu belirten nesne.  
+ İşaretçi bir `RECT` yapısı veya `CRect` kapsayıcı uygulamasının istemci alanına göre yerinde çerçeve pencerenin konumunu belirten bir nesne.  
   
  *lpClipRect*  
- İşaretçi bir `RECT` yapısı veya `CRect` yerinde çerçeve pencere kapsayıcı uygulamanın istemci alanını göre dikdörtgen kırpma belirtir nesnesi.  
+ İşaretçi bir `RECT` yapısı veya `CRect` nesnesini yerinde çerçeve penceresinin kırpma dikdörtgenini kapsayıcı uygulamasının istemci alanına göre belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Gerekirse görünümün yakınlaştırma faktörünü güncelleştirmek için bu işlevi geçersiz kılar.  
+ Gerekirse görünümün yakınlaştırma faktörünü güncelleştirmek için bu işlevi geçersiz.  
   
- Bu işlev genellikle yanıt olarak adlandırılır bir `RequestPositionChange` herhangi bir zamanda, yerinde öğesi için bir konum değişiklik isteği kapsayıcıya tarafından çağrılabilir rağmen çağırın.  
+ Yanıt olarak genellikle bu işlev çağrılır bir `RequestPositionChange` çağırmak istediğiniz zaman, yerinde öğe için bir konum değişiklik isteği için bir kapsayıcı tarafından çağrılabilir.  
   
 ##  <a name="onshowcontrolbars"></a>  COleServerDoc::OnShowControlBars  
- Framework tarafından tanımlanan çerçeve penceresi ile ilişkili sunucu uygulamasının denetim çubuklarını gösterme veya gizleme için bu işlevi çağırır *pFrameWnd*.  
+ Framework tarafından tanımlanan çerçeve penceresi ile ilişkili sunucu uygulamasının denetim çubuklarını gösterme veya gizleme için bu işlevi çağıran *pFrameWnd*.  
   
 ```  
 virtual void OnShowControlBars(
@@ -725,13 +725,13 @@ virtual void OnShowControlBars(
   
 ### <a name="parameters"></a>Parametreler  
  *pFrameWnd*  
- Çerçeve penceresi, Denetim çubukları gizli veya gösterilen gerektiğini işaretçi.  
+ Çerçeve penceresi, Denetim çubukları gizli veya gösterilen gereken işaretçisi.  
   
  *bBilgi Göster*  
- Denetim çubukları gösterileceğini veya gizleneceğini olup olmadığını belirler.  
+ Denetim çubukları gösterilen veya gizli olup olmadığını belirler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama, çerçeve penceresi tarafından sahip olunan tüm denetim çubukları numaralandırır ve gizler veya bunları gösterir.  
+ Varsayılan uygulama, bu çerçeve penceresi tarafından sahip olunan tüm denetim çubukları numaralandırır ve gizler veya bunları gösterir.  
   
 ##  <a name="onshowdocument"></a>  COleServerDoc::OnShowDocument  
  Framework çağrıları `OnShowDocument` işlev sunucu belgesinin gizli veya gösterilen gerekir.  
@@ -742,26 +742,26 @@ virtual void OnShowDocument(BOOL bShow);
   
 ### <a name="parameters"></a>Parametreler  
  *bBilgi Göster*  
- Belge için kullanıcı arabirimi gösterileceğini veya gizleneceğini olup olmadığını belirtir.  
+ Belge için kullanıcı arabirimi yoksa gizli mi olduğunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *bBilgi Göster* olan **doğru**, varsayılan uygulama gerekirse sunucu uygulaması etkinleştirir ve onun penceresi öğesi görünür olmasını sağlamak kaydırmak kapsayıcı uygulamanın neden olur. Varsa *bBilgi Göster* olan **FALSE**, varsayılan uygulaması bir çağrıyla öğesi devre dışı bırakır `OnDeactivate`, ardından yok eder veya ilk dışında belge için oluşturulan tüm çerçeve pencereleri gizler biri. Varsayılan uygulama görünür belge kalırsa, sunucu uygulaması gizler.  
+ Varsa *bBilgi Göster* doğru ise, varsayılan uygulama gerekirse sunucu uygulaması etkinleştirir ve kendi pencere öğesi görünür olması kaydırmak kapsayıcı uygulaması neden olur. Varsa *bBilgi Göster* false, varsayılan uygulama yapılan bir çağrıyla öğesi devre dışı bırakır. `OnDeactivate`a yok eder veya belge ilk öğe dışında oluşturulan tüm çerçeve pencereleri gizler. Görünür belge kalırsa, sunucu uygulamasının varsayılan uygulama gizler.  
   
 ##  <a name="onupdatedocument"></a>  COleServerDoc::OnUpdateDocument  
- Bir belgeyi kaydetmeyi bileşik belge katıştırılmış bir öğeyi olduğunda çerçevesi tarafından çağrılır.  
+ Bir belge bir bileşik belgeye gömülü bir öğe olduğunda framework tarafından çağırılır.  
   
 ```  
 virtual BOOL OnUpdateDocument();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belge başarıyla güncelleştirildiyse sıfır olmayan; Aksi takdirde 0.  
+ Belge başarıyla güncelleştirildi olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan Uygulama çağrıları [COleServerDoc::NotifySaved](#notifysaved) ve [COleServerDoc::SaveEmbedding](#saveembedding) üye işlevleri ve belgeyi temiz olarak işaretler. Özel bir katıştırılmış öğesi güncellenirken işleme gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar.  
+ Varsayılan Uygulama çağrıları [COleServerDoc::NotifySaved](#notifysaved) ve [COleServerDoc::SaveEmbedding](#saveembedding) üye işlevleri ve sonra belgeyi temiz olarak işaretler. Özel gömülü bir öğe güncelleştirilirken işleme gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar.  
   
 ##  <a name="requestpositionchange"></a>  COleServerDoc::RequestPositionChange  
- Öğenin konumunu değiştirme kapsayıcı uygulama sağlamak için bu üye işlevini çağırın.  
+ Kapsayıcı uygulamasını öğenin konumunu değiştirmek için bu üye işlevini çağırın.  
   
 ```  
 void RequestPositionChange(LPCRECT lpPosRect);
@@ -769,23 +769,23 @@ void RequestPositionChange(LPCRECT lpPosRect);
   
 ### <a name="parameters"></a>Parametreler  
  *lpPosRect*  
- İşaretçi bir `RECT` yapısı veya `CRect` öğesi'nin yeni konumunu içeren bir nesne.  
+ İşaretçi bir `RECT` yapısı veya `CRect` öğenin yeni konumunu içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev genellikle çağrılır (birlikte `UpdateAllItems`) yerinde etkin öğeyi verilerinde zaman değişti. Bu çağrı aşağıdaki kapsayıcı olabilir ya da değişiklik çağırarak yerine getirmeyebilir `OnSetItemRects`. Sonuçta elde edilen konumu, istenen farklı olabilir.  
+ Bu işlev, genellikle çağrılır (birlikte `UpdateAllItems`) yerinde etkin öğeyi verilerin ne zaman değişti. Bu çağrı aşağıdaki kapsayıcı olabilir veya değişiklik çağırarak yerine getirmeyebilir `OnSetItemRects`. Konumu, istenen farklı olabilir.  
   
 ##  <a name="saveembedding"></a>  COleServerDoc::SaveEmbedding  
- Katıştırılmış nesne kaydetmek için kapsayıcı uygulamaya bildirmek için bu işlevini çağırın.  
+ Katıştırılmış nesneyi kaydetmek için kapsayıcı uygulamaya bildirmek için bu işlevi çağırın.  
   
 ```  
 void SaveEmbedding();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev otomatik olarak çağrılır `OnUpdateDocument`. Bu işlev yalnızca belirli bir kullanıcı eylemi sonucunda genellikle olarak adlandırılan şekilde diskte güncelleştirilecek öğesi neden olduğunu unutmayın.  
+ Bu işlev otomatik olarak çağrılır `OnUpdateDocument`. Bu işlev yalnızca belirli bir kullanıcı eylemi sonucunda genellikle çağrıldığı için diskte güncelleştirilecek öğe neden olduğunu unutmayın.  
   
 ##  <a name="scrollcontainerby"></a>  COleServerDoc::ScrollContainerBy  
- Çağrı `ScrollContainerBy` piksel cinsinden miktar kapsayıcı belge kaydırmak için üye işlevi belirtilen tarafından `sizeScroll`.  
+ Çağrı `ScrollContainerBy` piksel cinsinden miktar kapsayıcı belge kaydırmak için üye işlevi tarafından belirtilen `sizeScroll`.  
   
 ```  
 BOOL ScrollContainerBy(CSize sizeScroll);
@@ -793,16 +793,16 @@ BOOL ScrollContainerBy(CSize sizeScroll);
   
 ### <a name="parameters"></a>Parametreler  
  *sizeScroll*  
- İlerlemek için ne kadar kapsayıcı belge olduğunu gösterir.  
+ Kaydırmak için ne kadar kapsayıcı belge olduğunu gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Pozitif değerler aşağı ve sağa kaydırma gösterir; negatif değerler yukarı ve sola kaydırma gösterir.  
+ Pozitif değerler aşağı ve sağa doğru kaydırma gösterir; Yukarı ve sola kaydırma, negatif değerleri göstermek.  
   
 ##  <a name="updateallitems"></a>  COleServerDoc::UpdateAllItems  
- Belge değişti belgeye bağlı tüm bağlantılı öğeler bildirmek için bu işlevini çağırın.  
+ Belge değişti belgeye bağlı tüm bağlantılı öğeler bildirmek için bu işlevi çağırın.  
   
 ```  
 void UpdateAllItems(
@@ -814,29 +814,29 @@ void UpdateAllItems(
   
 ### <a name="parameters"></a>Parametreler  
  *pSender*  
- İşaretçi belge değiştirilen öğeye veya **NULL** tüm öğeleri güncelleştirilmesi gerekiyorsa.  
+ Dokument öğeye işaretçi veya güncelleştirilmesi için tüm öğeleri yoksa NULL.  
   
  *lHint*  
  Değiştirme hakkında bilgi içerir.  
   
  *pHint*  
- Nesneyi değiştirme hakkında bilgi depolamak için işaretçi.  
+ Bir nesne değiştirme hakkında bilgi depolamak için işaretçi.  
   
  *nDrawAspect*  
- Nasıl çizilecek öğedir belirler. Bu bir değerdir `DVASPECT` numaralandırması. Bu parametre aşağıdaki değerlerden biri olabilir:  
+ Çizilecek öğesi'ne olduğunu belirler. Bu DVASPECT sabit bir değerdir. Bu parametre aşağıdaki değerlerden biri olabilir:  
   
-- `DVASPECT_CONTENT` Öğesi, katıştırılmış nesne kapsayıcısı içinde olarak görüntülenebilir şekilde gösterilir.  
+- DVASPECT_ICON öğesi, bir nesnenin kapsayıcısı içindeki olarak görüntülenebilir şekilde temsil edilir.  
   
-- `DVASPECT_THUMBNAIL` Tarama Aracı içinde görüntülenebilir böylece öğesi bir "küçük" gösterimi işlenir.  
+- Tarama Aracı içinde görüntülenebilen böylece desteklemek istiyorsanız öğesi "küçük" gösteriminde işlenir.  
   
-- `DVASPECT_ICON` Öğe bir simge ile temsil edilir.  
+- DVASPECT_ICON öğesi bir simge ile temsil edilir.  
   
-- `DVASPECT_DOCPRINT` Dosya menüsünden Yazdır komutunu kullanarak yazdırılan gibi öğeyi temsil edilir.  
+- Dosya menüsünden Yazdır komutunu kullanarak yazdırılmış gibi DVASPECT_ICON öğesi gösterilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sunucu belgesinin kullanıcı değiştirdikten sonra genellikle bu işlevini çağırın. OLE öğesi belgeye otomatik bir bağlantıyla bağlı ise, öğenin değişiklikleri yansıtacak şekilde güncelleştirilir. Microsoft Foundation Class Kitaplığı ile yazılmış kapsayıcı uygulamalarında [değiştiğinde](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevini `COleClientItem` olarak adlandırılır.  
+ Sunucu belgesinin kullanıcı değiştirdikten sonra genellikle bu işlevi çağırın. OLE öğesini belgeye otomatik bir bağlantıyla bağlıysa, öğe değişiklikleri yansıtacak şekilde güncelleştirilir. Microsoft Foundation Class Kitaplığı ile kapsayıcı uygulamalarında [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) üye işlevinin `COleClientItem` çağrılır.  
   
- Bu işlev çağrılarını `OnUpdate` öğesi, geçirme gönderme dışında belgenin öğelerin her biri için üye işlevi *pHint*, *lHint*, ve *nDrawAspect*. Bu parametreler öğelerine belgede yapılan değişiklikler hakkında bilgi aktarmak için kullanın. Bilgi kodlama *lHint* veya tanımlayabilirsiniz bir `CObject`-türetilmiş sınıf değişiklikler hakkında bilgi depolamak ve bu sınıfı kullanarak bir nesneyi geçirmek için *pHint*. Geçersiz kılma `OnUpdate` üye işlevinde, `COleServerItem`-türetilmiş sınıf kendi sunu değiştirilip bağlı olarak her bir öğeyi güncelleştirme en iyi duruma getirme.  
+ Bu işlev çağrıları `OnUpdate` öğesi, geçirme gönderme dışında belgenin öğelerin her biri için üye işlevi *pHint*, *lHint*, ve *nDrawAspect*. Öğeleri belgeye yapılan değişiklikler hakkında bilgi geçirmek için şu parametreleri kullan. Bilgi'ı kullanarak kodlama *lHint* veya tanımlayabilirsiniz bir `CObject`-türetilmiş sınıf değişiklikler hakkında bilgi depolayabilir ve bu sınıfı kullanmanın bir nesne için *pHint*. Geçersiz kılma `OnUpdate` üye işlevinde, `COleServerItem`-türetilmiş sınıf kendi sunusu değiştirilip bağlı olarak her bir öğe güncelleştirilirken en iyi duruma getirme.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   

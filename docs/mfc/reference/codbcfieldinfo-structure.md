@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ede515f0b8bc95d454fec48c6c6bd2109c43ce74
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: c1723e93320129fae232bb850caa123d1638a37b
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040200"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853088"
 ---
 # <a name="codbcfieldinfo-structure"></a>CODBCFieldInfo Yapısı
-`CODBCFieldInfo` Yapısı ODBC veri kaynağını alanları hakkında bilgiler içerir.  
+`CODBCFieldInfo` Yapısı bir ODBC veri kaynağı alanları hakkında bilgileri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,16 +45,16 @@ struct CODBCFieldInfo
  Alanın adı.  
   
  *m_nSQLType*  
- Alan SQL veri türü. Bu, bir ODBC SQL veri türü veya bir sürücüye özgü SQL veri türü olabilir. Geçerli ODBC SQL veri türleri listesi için Windows SDK'sı "SQL veri türleri" konusuna bakın. Sürücü özgü SQL veri türleri hakkında daha fazla bilgi için sürücünün belgelerine bakın.  
+ Alan SQL veri türü. Bu, bir ODBC SQL veri türü veya bir sürücüye özel SQL veri türü olabilir. Geçerli ODBC SQL veri türleri listesi için Windows SDK'sı "SQL veri türleri" konusuna bakın. Sürücü özgü SQL veri türleri hakkında daha fazla bilgi için sürücünün belgelerine bakın.  
   
  *m_nPrecision*  
- Alan en fazla hassasiyet. Ayrıntılar için Windows SDK'ın "Duyarlık, Ölçek, uzunluğu ve görüntüleme boyutu" bakın.  
+ Verilen duyarlık alan. Ayrıntılar için Windows SDK'yı "Duyarlığı, Ölçek, uzunluğu ve görüntüleme boyutu" konularına bakın.  
   
  *m_nScale*  
- Alan ölçeği. Ayrıntılar için Windows SDK'ın "Duyarlık, Ölçek, uzunluğu ve görüntüleme boyutu" bakın.  
+ Ölçeğin alan. Ayrıntılar için Windows SDK'yı "Duyarlığı, Ölçek, uzunluğu ve görüntüleme boyutu" konularına bakın.  
   
  *m_nNullability*  
- Olup alan bir Null değer kabul eder. Bu iki değerden biri olabilir: **SQL_NULLABLE** Null değerler, alanın kabul ederse veya **SQL_NO_NULLS** alanı Null değerleri kabul etmiyorsa.  
+ Olup alan, bir Null değer kabul eder. Bu iki değerden biri olabilir: alan Null değerleri kabul eder ya da alan kabul edilmez, SQL_NO_NULLS Null değerleri SQL_NULLABLE.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu bilgileri almak için arama [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo).  
@@ -63,7 +63,7 @@ struct CODBCFieldInfo
  **Başlık:** afxdb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)   
  [CRecordset::GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)
 

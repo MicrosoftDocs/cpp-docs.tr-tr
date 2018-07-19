@@ -1,5 +1,5 @@
 ---
-title: IDispEventSimpleImpl (ATL) kullanarak | Microsoft Docs
+title: Idispeventsimpleımpl (ATL) kullanarak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,32 +16,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cdef5012288b7f5f17040f73dfac5ec1f90d4f0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 34fad264e222d27c82f8c1cf79f59664f2c3f601
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361961"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37850791"
 ---
-# <a name="using-idispeventsimpleimpl"></a>IDispEventSimpleImpl kullanma
+# <a name="using-idispeventsimpleimpl"></a>Idispeventsimpleımpl kullanma
 Kullanırken `IDispEventSimpleImpl` olayları işlemek için yapmanız gerekir:  
   
--   Sınıfından türetilen [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md).  
+-   Öğesinden, bir sınıf türetin [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md).  
   
--   Bir olay havuz eşlemesi sınıfınıza ekleyin.  
+-   Bir olay havuzu eşlemesi sınıfınıza ekleyin.  
   
--   Tanımlamak [_ATL_FUNC_INFO](../atl/reference/atl-func-info-structure.md) olayları tanımlayan yapıları.  
+-   Tanımlama [_atl_func_ınfo](../atl/reference/atl-func-info-structure.md) olayları tanımlayan yapılar.  
   
--   Olay iç havuz kullanarak eşleme girişleri eklemek [SINK_ENTRY_INFO](reference/composite-control-macros.md#sink_entry_info) makrosu.  
+-   Olay havuzu kullanarak eşleme girişleri ekleyin [SINK_ENTRY_INFO](reference/composite-control-macros.md#sink_entry_info) makrosu.  
   
--   İşlemede ilgilenen yöntemleri uygulayın.  
+-   İşlemede ilginizi çeken yöntemleri uygulayın.  
   
--   Öneri ve olay kaynağı unadvise.  
+-   Öneri ve olay kaynağı eşlemesindeki.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl işleneceğini gösterir **DocumentChange** olay harekete Word tarafından **uygulama** nesnesi. Bu olay bir yöntem olarak tanımlanan **ApplicationEvents** görüntüleme arabirimi.  
+ Aşağıdaki örnekte nasıl işleneceğini gösterir `DocumentChange` olay harekete Word tarafından **uygulama** nesne. Bu olay üzerinde bir yöntemi olarak tanımlanan `ApplicationEvents` dispinterface.  
   
- Örnek kaynaklı [ATLEventHandling örnek](../visual-cpp-samples.md).  
+ Örnek dandır [ATLEventHandling örnek](../visual-cpp-samples.md).  
   
  `[`  
   
@@ -71,17 +71,17 @@ Kullanırken `IDispEventSimpleImpl` olayları işlemek için yapmanız gerekir:
   
  `};`  
   
- Örnek kullanır `#import` Word tür kitaplığından gereken üstbilgi dosyaları oluşturmak için. Word'ün diğer sürümleri bu örneği kullanmak istiyorsanız, doğru mso dll dosyası belirtmeniz gerekir. Örneğin, Office 2000 mso9.dll ve mso.dll OfficeXP sağlar. Bu kod stdafx.h basitleştirilir:  
+ Örnekte `#import` Word'ün tür kitaplığından gereken üst bilgi dosyaları oluşturmak için. Word'ün diğer sürümleri bu örneği kullanmak istiyorsanız, doğru mso dll dosyası belirtmeniz gerekir. Örneğin, Office 2000 mso9.dll ve OfficeXP mso.dll sağlar. Bu kod, stdafx.h basitleştirilir:  
   
  [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventsimpleimpl_1.h)]  
   
- Yalnızca gerçekten bu örnekte kullanılan tür kitaplığından Word CLSID bilgilerdir **uygulama** nesne ve Laboratuvardaki Kimliğini **ApplicationEvents** arabirimi. Bu bilgiler yalnızca derleme zamanında kullanılır.  
+ Yalnızca tür kitaplığındaki aslında bu örnekte kullanılan Word'ün CLSID bilgilerdir `Application` nesne ve Laboratuvardaki `ApplicationEvents` arabirimi. Bu bilgiler, yalnızca derleme zamanında kullanılır.  
   
- Aşağıdaki kod Simple.h içinde görüntülenir. İlgili kodu açıklamaları tarafından belirtilir:  
+ Aşağıdaki kod Simple.h içinde görünür. İlgili kod açıklamaları tarafından belirtilir:  
   
  [!code-cpp[NVC_ATL_EventHandlingSample#3](../atl/codesnippet/cpp/using-idispeventsimpleimpl_2.h)]  
   
- Aşağıdaki kodu Simple.cpp verilmiştir:  
+ Aşağıdaki kod, Simple.cpp şöyledir:  
   
  [!code-cpp[NVC_ATL_EventHandlingSample#4](../atl/codesnippet/cpp/using-idispeventsimpleimpl_3.cpp)]  
   

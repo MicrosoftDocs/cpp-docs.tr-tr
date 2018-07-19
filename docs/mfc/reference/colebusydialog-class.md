@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4af90e9354e7d443cb50acbafaa1468c99c12c85
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 5f9ed49115a82f6e032404b862b8eca0ad922a34
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040918"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37853075"
 ---
 # <a name="colebusydialog-class"></a>COleBusyDialog sınıfı
-OLE sunucu yanıt vermiyor veya sunucu meşgul iletişim kutuları için kullanılır.  
+OLE Server Not Responding veya Server Busy iletişim kutuları için kullanıldı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,30 +46,30 @@ class COleBusyDialog : public COleDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleBusyDialog::COleBusyDialog](#colebusydialog)|Oluşturan bir `COleBusyDialog` nesnesi.|  
+|[COleBusyDialog::COleBusyDialog](#colebusydialog)|Oluşturur bir `COleBusyDialog` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[COleBusyDialog::DoModal](#domodal)|OLE sunucu meşgul iletişim kutusunu görüntüler.|  
-|[COleBusyDialog::GetSelectionType](#getselectiontype)|İletişim kutusunda yaptığınız seçim şunu belirler.|  
+|[COleBusyDialog::GetSelectionType](#getselectiontype)|İletişim kutusunda yaptığınız seçime belirler.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleBusyDialog::m_bz](#m_bz)|Türü yapısını **OLEUIBUSY** iletişim kutusu davranışını denetler.|  
+|[COleBusyDialog::m_bz](#m_bz)|Yapı türü iletişim kutusu davranışını denetleyen OLEUIBUSY.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıfın bir nesnesi oluşturma `COleBusyDialog` bu iletişim kutularından çağırmak istediğinizde. Sonra bir `COleBusyDialog` nesne oluşturulan, kullanabileceğiniz [m_bz](#m_bz) yapısı değerleri veya iletişim kutusu denetimleri durumlarını başlatılamadı. `m_bz` Yapısıdır türü **OLEUIBUSY**. Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz: [DoModal](#domodal) üye işlevi.  
+ Sınıfın bir nesnesi oluşturma `COleBusyDialog` bu iletişim kutularından çağırmak istediğinizde. Sonra bir `COleBusyDialog` nesne oluşturulur, kullanabileceğiniz [m_bz](#m_bz) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_bz` OLEUIBUSY türünü yapısıdır. Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.  
   
 > [!NOTE]
 >  Uygulama Sihirbazı tarafından oluşturulan kapsayıcı kodu bu sınıfı kullanır.  
   
- Daha fazla bilgi için bkz: [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
   
- OLE özel iletişim kutuları hakkında daha fazla bilgi için bkz: [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
+ Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -90,7 +90,7 @@ class COleBusyDialog : public COleDialog
  **Başlık:** afxodlgs.h  
   
 ##  <a name="colebusydialog"></a>  COleBusyDialog::COleBusyDialog  
- Bu işlev yalnızca oluşturan bir `COleBusyDialog` nesnesi.  
+ Bu işlev yalnızca oluşturan bir `COleBusyDialog` nesne.  
   
 ```  
 explicit COleBusyDialog(
@@ -102,30 +102,30 @@ explicit COleBusyDialog(
   
 ### <a name="parameters"></a>Parametreler  
  *htaskBusy*  
- Meşgul sunucu görev işleyin.  
+ Meşgul sunucu görevini işleyin.  
   
  *bNotResponding*  
- Varsa **doğru**, yanıt iletişim kutusu yerine sunucu meşgul iletişim kutusu çağırın. Yanıt iletişim kutusunda ifade biraz sunucu meşgul iletişim kutusunda ifade farklıdır ve iptal düğmesi devre dışıdır.  
+ Doğruysa, yanıt vermeyen iletişim kutusu yerine sunucu meşgul iletişim kutusu çağırın. Yanıt iletişim kutusu içindeki ifadeleri biraz farklı sunucu meşgul iletişim kutusu içindeki ifadeleri ve iptal düğmesi devre dışıdır.  
   
- *dwFlags*  
- Oluşturma bayrağı. Sıfır veya daha fazla bit düzeyinde OR işleci ile birlikte aşağıdaki değerleri içerebilir:  
+ *CertOpenStore*  
+ Oluşturma bayrak. Sıfır veya daha fazla bit düzeyinde OR işleci ile birlikte aşağıdaki değerleri içerebilir:  
   
-- **BZ_DISABLECANCELBUTTON** iletişim kutusu çağrılırken iptal düğmesi devre dışı bırakın.  
+- BZ_DISABLECANCELBUTTON iletişim kutusu çağırırken iptal düğmesi devre dışı.  
   
-- **BZ_DISABLESWITCHTOBUTTON** iletişim kutusu çağrılırken Geçiş Yap düğmesini devre dışı bırakın.  
+- BZ_DISABLESWITCHTOBUTTON iletişim kutusu çağırırken geçiş yap düğmesi devre dışı.  
   
-- **BZ_DISABLERETRYBUTTON** iletişim kutusu çağrılırken yeniden dene düğmesi devre dışı bırakın.  
+- BZ_DISABLERETRYBUTTON iletişim kutusu çağırırken yeniden deneme düğmesi devre dışı.  
   
  *pParentWnd*  
- İşaret üst veya sahibi pencere nesnesi için (tür `CWnd`) iletişim nesnesi ait olduğu. Eğer öyleyse **NULL**, iletişim nesnenin üst pencere ana uygulama penceresine ayarlanır.  
+ Üst veya sahibi pencere nesnesi için işaret (tür `CWnd`) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim nesnenin üst pencere ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İletişim kutusunu görüntülemek için arama [DoModal](#domodal).  
+ İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal).  
   
- Daha fazla bilgi için bkz: [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
   
 ##  <a name="domodal"></a>  COleBusyDialog::DoModal  
- OLE sunucu meşgul veya sunucu yanıt iletişim kutusunu görüntülemek için bu işlevini çağırın.  
+ OLE sunucu meşgul veya sunucu yanıt iletişim kutusunu görüntülemek için bu işlevi çağırın.  
   
 ```  
 virtual INT_PTR DoModal();
@@ -134,19 +134,19 @@ virtual INT_PTR DoModal();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tamamlanma durumu iletişim kutusu için. Aşağıdaki değerlerden biri:  
   
-- **IDOK** iletişim kutusu başarıyla görüntüleniyorsa.  
+- İletişim kutusu başarıyla görüntülendiyse IDOK.  
   
-- **IDCANCEL** kullanıcı iletişim kutusunu iptal ederseniz.  
+- Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.  
   
-- **IDABORT** durumunda bir hata oluştu. Varsa **IDABORT** olan döndürülen arama `COleDialog::GetLastError` oluştu hata türü hakkında daha fazla bilgi almak için üye işlevi. Olası hatalar listesi için bkz: [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) Windows SDK'sındaki işlevi.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üyeleri ayarlayarak çeşitli iletişim kutusu denetimleri başlatmak istiyorsanız [m_bz](#m_bz) yapısı, bu çağırmadan önce yapmanız gerektiğini `DoModal`, ancak iletişim nesnesi oluşturulur.  
+ Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_bz](#m_bz) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
   
- Varsa `DoModal` döndürür **IDOK**, diğer üye ayarları veya kullanıcı tarafından iletişim kutusuna giriş bilgileri almak için işlevleri çağırabilir.  
+ Varsa `DoModal` döndürür IDOK, diğer üye ayarları veya kullanıcı tarafından iletişim kutusuna giriş bilgi almak için işlevleri çağırabilir.  
   
 ##  <a name="getselectiontype"></a>  COleBusyDialog::GetSelectionType  
- Sunucu meşgul iletişim kutusunda kullanıcı tarafından seçilen seçim türünü almak için bu işlevini çağırın.  
+ Sunucu meşgul iletişim kutusunda kullanıcı tarafından seçmiş seçim türünü almak için bu işlevi çağırın.  
   
 ```  
 UINT GetSelectionType() const;  
@@ -156,7 +156,7 @@ UINT GetSelectionType() const;
  Yapılan seçim türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından belirtilen dönüş türü değerleri **seçimi** numaralandırma türü içinde bildirilen `COleBusyDialog` sınıfı.  
+ Dönüş türü değerleri tarafından belirtilen `Selection` numaralandırma türü içinde bildirilen `COleBusyDialog` sınıfı.  
   
 ```  
 enum Selection {
@@ -166,25 +166,25 @@ enum Selection {
     };
 ```  
   
- Bu değerlerin kısa açıklamaları izleyin:  
+ Bu değerleri kısa açıklamaları izleyin:  
   
-- **COleBusyDialog::switchTo** geçiş yap düğmesine basıldığında.  
+- `COleBusyDialog::switchTo` Geçiş için düğmesine basıldı.  
   
-- **COleBusyDialog::retry** yeniden deneme düğmesine basıldığında.  
+- `COleBusyDialog::retry` Yeniden deneme düğmesine basıldı.  
   
-- **COleBusyDialog::callUnblocked** Sunucusu'nu etkinleştirmek için çağrıdır şimdi engellenmemiş.  
+- `COleBusyDialog::callUnblocked` Çağrı Sunucusu'nu etkinleştirmek için artık engeli kaldırılır.  
   
 ##  <a name="m_bz"></a>  COleBusyDialog::m_bz  
- Türü yapısını **OLEUIBUSY** sunucu meşgul iletişim kutusunun davranışını denetlemek için kullanılır.  
+ Yapı türünü OLEUIBUSY sunucu meşgul iletişim kutusu davranışını denetlemek için kullanılır.  
   
 ```  
 OLEUIBUSY m_bz;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yapı üyeleri, doğrudan veya üye işlevleri aracılığıyla değiştirilebilir.  
+ Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.  
   
- Daha fazla bilgi için bkz: [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)   

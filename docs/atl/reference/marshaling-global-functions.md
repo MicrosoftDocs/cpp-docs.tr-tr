@@ -1,5 +1,5 @@
 ---
-title: Genel işlevler hazırlama | Microsoft Docs
+title: Hazırlama genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,26 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d93839002ce5136d735e4740388109e855561fb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 44c5205416ff19eeb849b0532d015275e4eb166e
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362833"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879345"
 ---
-# <a name="marshaling-global-functions"></a>Genel işlevler hazırlama
-Bu işlevler hazırlama ve arabirim İşaretçileri hazırlama veri dönüştürme için destek sağlar.  
+# <a name="marshaling-global-functions"></a>Hazırlama genel işlevleri
+Bu işlevler, hazırlama ve veri hazırlama, arabirim işaretçilerini dönüştürme için destek sağlar.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarda aşağıdaki tabloda listelenen işlevleri kullanılamaz.  
+>  Aşağıdaki tabloda listelenen İşlevler, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 |||  
 |-|-|  
-|[AtlFreeMarshalStream](#atlfreemarshalstream)|Sıralama verileri serbest bırakır ve `IStream` işaretçi.|  
-|[AtlMarshalPtrInProc](#atlmarshalptrinproc)|Yeni bir akış nesnesi oluşturur ve belirtilen arabirim işaretçisi sıralar.|  
-|[AtlUnmarshalPtr](#atlunmarshalptr)|Veri hazırlama bir akışın bir arabirim işaretçisi dönüştürür.|  
+|[AtlFreeMarshalStream](#atlfreemarshalstream)|Sıralama verilerini serbest bırakır ve `IStream` işaretçi.|  
+|[AtlMarshalPtrInProc](#atlmarshalptrinproc)|Yeni bir akış nesnesi oluşturur ve belirtilen arabirim işaretçisini sıralar.|  
+|[AtlUnmarshalPtr](#atlunmarshalptr)|Bir akışın sıralama verilerini bir arabirim işaretçisi dönüştürür.|  
 
-## <a name="requirements"></a>Gereksinimleri:
+## <a name="requirements"></a>Gereksinimler:
 **Başlık:** atlbase.h
   
 ##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream  
@@ -46,11 +46,11 @@ HRESULT AtlFreeMarshalStream(IStream* pStream);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStream`  
- [in] Bir işaretçi `IStream` sıralama için kullanılan akış arabirimi.  
+ *pStream*  
+ [in] Bir işaretçi `IStream` arabirimde sıralama için kullanılan akış.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
+  Örneğin bakın [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
   
 ##  <a name="atlmarshalptrinproc"></a>  AtlMarshalPtrInProc  
  Yeni bir akış nesnesi oluşturur, proxy CLSID değerini akışa yazar ve proxy'yi akış içinde başlatmak üzere gerekli olan veriyi yazarak belirtilen arabirim işaretçisini sıralar.  
@@ -64,23 +64,23 @@ HRESULT AtlMarshalPtrInProc(
   
 ### <a name="parameters"></a>Parametreler  
  *pUnk*  
- [in] Bir işaretçi sıralanması arabirimi.  
+ [in] Sıralanması arabirim işaretçisi.  
   
- `iid`  
- [in] Sıralanmış arabirimi GUID.  
+ *IID*  
+ [in] Sıralanmış arabiriminin GUID'si.  
   
- `ppStream`  
- [out] Bir işaretçi `IStream` sıralama için kullanılan yeni akış nesnesindeki arabirim.  
+ *ppStream*  
+ [out] Bir işaretçi `IStream` arabirimde sıralama için kullanılan yeni akış nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değer.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **MSHLFLAGS_TABLESTRONG** bayrağı işaretçiyi birden çok akış sıralanabilir şekilde ayarlanır. İşaretçinin, aynı zamanda birden çok kez iptal olabilir.  
+ İşaretçi için birden çok akış sıralanabilir şekilde MSHLFLAGS_TABLESTRONG bayrağı ayarlanır. İşaretçiyi, ayrıca birden çok kez iptal olabilir.  
   
- Başarısız hazırlama, akış işaretçi yayımlanır.  
+ Hazırlama başarısız olursa, akış işaretçisini serbest bırakılır.  
   
- `AtlMarshalPtrInProc` yalnızca bir işlem içi nesnesine bir işaretçi üzerinde kullanılabilir.  
+ `AtlMarshalPtrInProc` yalnızca işlem içi nesneye bir işaretçi üzerinde kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#50](../../atl/codesnippet/cpp/marshaling-global-functions_1.cpp)]  
@@ -96,20 +96,20 @@ HRESULT AtlUnmarshalPtr(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pStream`  
+ *pStream*  
  [in] Yanlış akış için bir işaretçi.  
   
- `iid`  
- [in] Yanlış arabirimi GUID.  
+ *IID*  
+ [in] Yanlış arabiriminin GUID'si.  
   
- `ppUnk`  
- [out] İptal arabirimi için bir işaretçi.  
+ *ppUnk*  
+ [out] İptal arabirim işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değer.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
+  Örneğin bakın [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlevler](../../atl/reference/atl-functions.md)

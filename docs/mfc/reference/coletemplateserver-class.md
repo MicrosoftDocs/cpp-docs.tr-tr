@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38ade76568f261c0e0320002d1a53ef1858c9509
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: c77c8cc20588df8329951167db502a65a67b3756
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37077984"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849347"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer sınıfı
-OLE görsel düzenleme sunucuları, otomasyon sunucuları ve bağlantı kapsayıcıları (eklerinin bağlantılarını destekleyen uygulamalar) için kullanılır.  
+OLE görsel düzenleme sunucuları, otomasyon sunucuları ve bağlantı kapsayıcıları (katıştırma için bağlantı destekleyen uygulamalar) için kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,22 +46,22 @@ class COleTemplateServer : public COleObjectFactory
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleTemplateServer::COleTemplateServer](#coletemplateserver)|Oluşturan bir `COleTemplateServer` nesnesi.|  
+|[COleTemplateServer::COleTemplateServer](#coletemplateserver)|Oluşturur bir `COleTemplateServer` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleTemplateServer::ConnectTemplate](#connecttemplate)|Temel bir belge şablonu bağlayan `COleObjectFactory` nesnesi.|  
-|[COleTemplateServer::Unregister](#unregister)|İlişkili belge şablonu kaydını siler.|  
-|[COleTemplateServer::UpdateRegistry](#updateregistry)|Belge türü OLE sistem kayıt defteri ile kaydeder.|  
+|[COleTemplateServer::ConnectTemplate](#connecttemplate)|Temel alınan bir belge şablonu bağlayan `COleObjectFactory` nesne.|  
+|[COleTemplateServer::Unregister](#unregister)|İlişkili belge şablonunu kaydını siler.|  
+|[COleTemplateServer::UpdateRegistry](#updateregistry)|Belge türü ile OLE sistem kayıt defterine kaydeder.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf sınıfından türetilen [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md); genellikle, kullanabileceğiniz `COleTemplateServer` kendi sınıf türetme yerine doğrudan. `COleTemplateServer` kullanan bir [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) sunucu belgeleri yönetmek için nesnesi. Kullanım `COleTemplateServer` tam bir sunucu, diğer bir deyişle, bir tek başına uygulaması olarak çalıştırmak bir sunucu uygularken. Tek belge arabirimi (SDI) uygulamaları desteklenir, ancak tam genellikle birden çok belge arabirimi (MDI) uygulamaları, sunucularıdır. Bir `COleTemplateServer` sunucu uygulamanızı çalışma sayfaları ve grafikler destekliyorsa, diğer bir deyişle, iki olmalıdır; nesne her bir uygulama destekleyen sunucu belge türü için gerekli `COleTemplateServer` nesneleri.  
+ Bu sınıf sınıfından türetilir [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md); genellikle kullanabileceğiniz `COleTemplateServer` kendi sınıf türetme yerine doğrudan. `COleTemplateServer` kullanan bir [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) sunucu belgeleri yönetmek için nesne. Kullanım `COleTemplateServer` tam sunucusu, diğer bir deyişle, bir tek başına uygulama olarak çalıştırılabilir bir sunucu uygularken. Tek Belgeli Arabirim (SDI) uygulamaları destekleniyor mu rağmen tam genellikle birden çok belge arabirimi (MDI) uygulamaları, sunucularıdır. Bir `COleTemplateServer` nesne, sunucu belgesi bir uygulamanın desteklediği her tür için gereklidir; sunucu uygulamanızı hem çalışma sayfaları ve grafikleri destekler, diğer bir deyişle, iki olmalıdır `COleTemplateServer` nesneleri.  
   
- `COleTemplateServer` geçersiz kılmaları `OnCreateInstance` üye fonksiyonu tarafından tanımlanan `COleObjectFactory`. Bu üye işlev uygun türde bir C++ nesnesi oluşturmak için çerçevesi tarafından çağrılır.  
+ `COleTemplateServer` geçersiz kılmalar `OnCreateInstance` üye işlevi tarafından tanımlanan `COleObjectFactory`. Bu üye işlevi uygun türde bir C++ nesnesi oluşturmak için framework tarafından çağırılır.  
   
- Makaleyi sunucuları hakkında daha fazla bilgi için bkz: [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).  
+ Sunucuları hakkında daha fazla bilgi için bkz [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -76,17 +76,17 @@ class COleTemplateServer : public COleObjectFactory
  **Başlık:** afxdisp.h  
   
 ##  <a name="coletemplateserver"></a>  COleTemplateServer::COleTemplateServer  
- Oluşturan bir `COleTemplateServer` nesnesi.  
+ Oluşturur bir `COleTemplateServer` nesne.  
   
 ```  
 COleTemplateServer();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanımını kısa bir açıklaması için `COleTemplateServer` sınıfı için bkz: [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md) sınıfına genel bakış.  
+ Kullanımını kısa bir açıklaması için `COleTemplateServer` sınıfı [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md) sınıfına genel bakış.  
   
 ##  <a name="connecttemplate"></a>  COleTemplateServer::ConnectTemplate  
- Gösterdiği belge şablonu bağlayan `pDocTemplate` arka plandaki [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md) nesnesi.  
+ İşaret ettiği belge şablonu bağlayan *pDocTemplate* arka plandaki [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md) nesne.  
   
 ```  
 void ConnectTemplate(
@@ -97,26 +97,26 @@ void ConnectTemplate(
   
 ### <a name="parameters"></a>Parametreler  
  *CLSID*  
- Şablon istekleri OLE sınıf kimliği başvuru.  
+ OLE referansı sınıf şablonu isteği kimliği.  
   
  *pDocTemplate*  
- Belge şablonu işaretçi.  
+ Belge şablonu için işaretçi.  
   
- *bMultiInstance*  
- Tek bir örnek uygulamanın birden fazla desteği olup olmadığını gösterir. Varsa **doğru**, uygulamanın birden çok örneğini bir nesne oluşturmak her istek için başlatılır.  
+ *Bmultiınstance*  
+ Tek bir örnek uygulamanın birden çok örneklemesini destekleyip desteklemediğini gösterir. TRUE ise bir nesne oluşturmak için her istek için uygulamanın birden fazla örneği başlatılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [CLSID anahtarı](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK'sındaki.  
+ Daha fazla bilgi için [CLSID anahtar](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK.  
   
 ##  <a name="unregister"></a>  COleTemplateServer::Unregister  
- İlişkili belge şablonu kaydını siler.  
+ İlişkili belge şablonunu kaydını siler.  
   
 ```  
 BOOL Unregister();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa TRUE; Aksi takdirde FALSE.  
+ Başarılı olursa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  EnterRemarks  
@@ -134,35 +134,35 @@ void UpdateRegistry(
   
 ### <a name="parameters"></a>Parametreler  
  *nAppType*  
- Arasında bir değer **OLE_APPTYPE** AFXDISP içinde tanımlanan numaralandırması. H. Aşağıdaki değerlerden biri olabilir:  
+ AFXDISP içinde tanımlanan OLE_APPTYPE sabit bir değer. H Bunu, aşağıdaki değerlerden biri olabilir:  
   
-- `OAT_INPLACE_SERVER` Sunucu tam sunucu kullanıcı arabirimi sahiptir.  
+- Oat_ınplace_server sunucunuzun tam sunucu kullanıcı arabirimi var.  
   
-- `OAT_SERVER` Sunucusu yalnızca katıştırma destekler.  
+- OAT_SERVER sunucusu yalnızca ekleme destekler.  
   
-- `OAT_CONTAINER` Kapsayıcı katıştırılmış nesneler bağlantılarını destekler.  
+- Oat_contaıner kapsayıcı katıştırılmış nesneler bağlantılarını destekler.  
   
-- `OAT_DISPATCH_OBJECT` Nesne `IDispatch`-özelliğine sahip.  
+- Oat_dıspatch_object nesnedir `IDispatch`-özelliğine sahip.  
   
-- `OAT_DOC_OBJECT_SERVER` Sunucu destekler katıştırma ve belge nesnesi bileşen modeli.  
+- OAT_DOC_OBJECT_SERVER Server destekler hem de ekleme ve belge nesnesi bileşen modeli.  
   
  *rglpszRegister*  
- Yalnızca hiçbir girdi yoksa, kayıt defterine yazılır girişinin listesi.  
+ Hiçbir girdi yoksa kayıt defterine yazılır bir liste girdileri.  
   
  *rglpszOverwrite*  
- Tüm önceki girdileri olup mevcut bağımsız olarak kayıt defterine yazılır girişleri listesi.  
+ Önceki tüm girdileri olup mevcut bağımsız olarak kayıt defterine yazılır girişleri listesi.  
   
  *bRegister*  
- Sınıf kayıtlı olup olmadığını belirler. Varsa *bRegister* olan **doğru**, sınıf sistem kayıt defteri ile kaydedilir. Aksi takdirde, sınıf kaydını siler.  
+ Sınıf kayıtlı olup olmadığını belirler. Varsa *bRegister* doğru ise, sınıf sistem kayıt defteri ile kaydedilir. Aksi takdirde, sınıf kaydını siler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kayıt bilgileri yapılan bir çağrı aracılığıyla yüklenen [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Alınan alt dizeler olanlardır dizinleri tarafından tanımlanan **regFileTypeId**, **regFileTypeName**, ve **fileNewName**açıklandığı gibi `GetDocString` başvuru sayfaları.  
+ Kayıt bilgileri bir çağrı yoluyla yüklenen [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Alınan alt dizinleri tarafından tanımlanan olanlardır `regFileTypeId`, `regFileTypeName`, ve `fileNewName`anlatılan şekilde `GetDocString` başvuru sayfalarına.  
   
- Varsa **regFileTypeId** substring boşsa veya çağrısı `GetDocString` başka bir nedenle, bu işlev için başarısız ve dosya bilgileri kayıt defterinde girilmemiş.  
+ Varsa `regFileTypeId` alt dize boşsa veya çağrı `GetDocString` başarısız başka bir nedenle, bu işlev başarısız olur ve dosya bilgileri, kayıt defterinde girilmemiş.  
   
- Bağımsız değişkenler bilgileri *rglpszRegister* ve *rglpszOverwrite* çağrısıyla kayıt defterine yazılır [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass). İki bağımsız değişken olduğunda kayıtlı varsayılan bilgileri **NULL**, çoğu uygulamalar için uygundur. Bu bağımsız değişkenler bilgileri yapısı hakkında daha fazla bilgi için bkz: `AfxOleRegisterServerClass`.  
+ Bilgiler, bağımsız değişkenler *rglpszRegister* ve *rglpszOverwrite* yapılan bir çağrıyla kayıt defterine yazılır [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass). İki bağımsız değişken NULL olduğunda kaydedilir, varsayılan bilgileri, çoğu uygulama için uygundur. Bu bağımsız değişkenler bilgileri yapısı hakkında daha fazla bilgi için bkz: `AfxOleRegisterServerClass`.  
   
- Daha fazla bilgi için bkz: [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+ Daha fazla bilgi için [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   

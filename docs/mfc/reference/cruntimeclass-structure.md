@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e36baac5850942239bc9e553ed041a2914f8d670
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 84597f8d728b0781231cc07b84ad91495b870437
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079550"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852100"
 ---
 # <a name="cruntimeclass-structure"></a>CRuntimeClass yapısı
-Her sınıf türetilmiş `CObject` ile ilişkili bir `CRuntimeClass` çalışma zamanında bir nesne veya onun temel sınıfı hakkında bilgi edinmek için kullanabileceğiniz yapısı.  
+Her sınıf için türetilen `CObject` ile ilişkili bir `CRuntimeClass` çalışma zamanında nesneyi veya onun temel sınıfından hakkında bilgi almak için kullanabileceğiniz yapısı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,27 +43,27 @@ struct CRuntimeClass
 |----------|-----------------|  
 |[CRuntimeClass::CreateObject](#createobject)|Çalışma zamanı sırasında bir nesne oluşturur.|  
 |[CRuntimeClass::FromName](#fromname)|Tanıdık sınıf adını kullanarak çalışma zamanı sırasında bir nesne oluşturur.|  
-|[CRuntimeClass::IsDerivedFrom](#isderivedfrom)|Belirtilen sınıfından türetilmiş sınıf varsa belirler.|  
+|[CRuntimeClass::IsDerivedFrom](#isderivedfrom)|Belirtilen sınıftan türetilmiş sınıf varsa belirler.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CRuntimeClass::m_lpszClassName](#m_lpszclassname)|Sınıfın adı.|  
+|[CRuntimeClass::m_lpszClassName](#m_lpszclassname)|Sınıf adı.|  
 |[CRuntimeClass::m_nObjectSize](#m_nobjectsize)|Nesnenin bayt cinsinden boyutu.|  
 |[CRuntimeClass::m_pBaseClass](#m_pbaseclass)|Bir işaretçi `CRuntimeClass` yapısı temel sınıf.|  
-|[CRuntimeClass::m_pfnCreateObject](#m_pfncreateobject)|Dinamik Nesne oluşturur işlevi için bir işaretçi.|  
-|[CRuntimeClass::m_pfnGetBaseClass](#m_pfngetbaseclass)|Döndürür `CRuntimeClass` (kullanılabilir dinamik olarak bağlı yalnızca) yapılandırın.|  
+|[CRuntimeClass::m_pfnCreateObject](#m_pfncreateobject)|Dinamik olarak nesneyi oluşturan işlevi işaretçisi.|  
+|[CRuntimeClass::m_pfnGetBaseClass](#m_pfngetbaseclass)|Döndürür `CRuntimeClass` (kullanılabilir olduğunda, dinamik olarak bağlı yalnızca) yapılandırın.|  
 |[CRuntimeClass::m_wSchema](#m_wschema)|Sınıfın şeması sayısı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CRuntimeClass` bir yapıdır ve bu nedenle bir taban sınıfı yok.  
+ `CRuntimeClass` bir yapı olduğunu ve bu nedenle bir temel sınıfa sahip değil.  
   
- Çalışma zamanında bir nesne sınıfının belirleme özelliği, ek tür işlev bağımsız değişkenleri denetlemesi gerektiğinde ya da bir nesne sınıfına göre özel amaçlı kod yazmanız gerekir yararlıdır. Çalışma zamanı sınıf bilgileri doğrudan C++ dili tarafından desteklenmiyor.  
+ Çalışma zamanında bir nesnenin sınıfını belirleme imkanı, ek türü işlev bağımsız değişkenleri denetimini gerektiğinde veya bir nesnenin sınıfını esas özel amaçlı kod yazmanız gerekir yararlıdır. Çalışma süresi sınıf bilgilerine doğrudan C++ dil tarafından desteklenmiyor.  
   
- `CRuntimeClass` bir işaretçi gibi ilgili C++ nesne hakkında bilgiler sağlar `CRuntimeClass` temel sınıf ve ilgili sınıf ASCII sınıf adı. Bu yapı, dinamik olarak bilinen bir ad kullanarak ve ilgili sınıfın belirli bir sınıftan türetildiği varsa belirleme nesne türünü belirleme nesneleri oluşturmak için kullanılan çeşitli işlevleri de uygular.  
+ `CRuntimeClass` bir işaretçi gibi ilgili C++ nesne hakkında bilgi verilmektedir `CRuntimeClass` temel sınıf ve ilgili sınıf ASCII sınıf adı. Bu yapı, tanıdık bir ad kullanarak ve ilgili sınıfı belirli bir sınıftan türetilen, belirleyen nesne türünü belirtme nesneleri, dinamik olarak oluşturmak için kullanılan çeşitli işlevleri de uygular.  
   
- Kullanma hakkında daha fazla bilgi için `CRuntimeClass`, makaleye bakın [çalışma zamanı sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).  
+ Kullanma hakkında daha fazla bilgi için `CRuntimeClass`, makaleye göz atın [çalışma süresi sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CRuntimeClass`  
@@ -72,7 +72,7 @@ struct CRuntimeClass
  **Başlık:** afx.h  
   
 ##  <a name="createobject"></a>  CRuntimeClass::CreateObject  
- Belirtilen sınıf çalışma zamanında dinamik olarak oluşturmak için bu işlevini çağırın.  
+ Belirtilen sınıf çalışma zamanı sırasında dinamik olarak oluşturmak için bu işlevi çağırın.  
   
 ```  
 CObject* CreateObject();  
@@ -84,19 +84,19 @@ static CObject* PASCAL CreateObject(LPCWSTR lpszClassName);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszClassName*  
- Oluşturulacak sınıfın tanıdık adı.  
+ Oluşturulacak sınıfı bilinen adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni oluşturulan nesnenin gösteren bir işaretçi veya **NULL** sınıf adı bulunamadı veya nesnesi oluşturmak için yeterli bellek yok.  
+ Yeni oluşturulan nesne veya sınıf adı bulunamadı veya nesneyi oluşturmak için yeterli bellek yoksa NULL bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türetilmiş sınıflar `CObject` çalışma zamanında belirtilen sınıfın bir nesnesi oluşturma yeteneği dinamik oluşturma destekleyebilir. Örneğin, belge, Görünüm ve çerçeve sınıfları dinamik oluşturma desteklemelidir. Dinamik oluşturma hakkında daha fazla bilgi ve `CreateObject` üyesi bkz [CObject sınıfı](../../mfc/using-cobject.md) ve [CObject sınıfı: düzeyleri işlevselliğini belirtme](../../mfc/specifying-levels-of-functionality.md).  
+ Türetilen sınıflar `CObject` çalışma zamanında belirtilen sınıfın bir nesnesi oluşturma özelliği olan dinamik oluşturma destekleyebilir. Örneğin, belge, Görünüm ve çerçeve sınıfları dinamik oluşturma desteklemelidir. Dinamik oluşturma hakkında daha fazla bilgi ve `CreateObject` üyesi bkz [CObject sınıfı](../../mfc/using-cobject.md) ve [CObject sınıfı: düzeyleri işlevi belirterek](../../mfc/specifying-levels-of-functionality.md).  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [IsDerivedFrom](#isderivedfrom).  
+  Örneğin bakın [IsDerivedFrom](#isderivedfrom).  
   
 ##  <a name="fromname"></a>  CRuntimeClass::FromName  
- Almak için bu işlevi çağırmak `CRuntimeClass` tanıdık adıyla ilişkili yapısı.  
+ Almak için bu işlevi çağırın `CRuntimeClass` yapısı tanıdık adıyla ilişkili.  
   
 ```  
 static CRuntimeClass* PASCAL FromName(LPCSTR lpszClassName);  
@@ -106,16 +106,16 @@ static CRuntimeClass* PASCAL FromName(LPCWSTR lpszClassName);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszClassName*  
- Tanıdık adı bir sınıfın türetildiği `CObject`.  
+ Türetilen bir sınıfın tam adını `CObject`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir `CRuntimeClass` geçirilen gibi adına karşılık gelen nesne *lpszClassName*. İşlevi döndürür **NULL** eşleşen hiçbir sınıf adı bulunursa.  
+ Bir işaretçi bir `CRuntimeClass` nesnesi, geçirilen gibi adına karşılık gelen *lpszClassName*. Eşleşen hiçbir sınıf adı bulunursa işlev NULL döndürür.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCObjectSample#17](../../mfc/codesnippet/cpp/cruntimeclass-structure_1.cpp)]  
   
 ##  <a name="isderivedfrom"></a>  CRuntimeClass::IsDerivedFrom  
- Arama sınıfı belirtilen sınıfından türetilen varsa belirlemek için bu işlevi çağırmak *pBaseClass* parametresi.  
+ Arama sınıfı belirtilen sınıf türetilir olmadığını belirlemek için bu işlevi çağırın *pBaseClass* parametresi.  
   
 ```  
 BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
@@ -125,18 +125,18 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
   
 ### <a name="parameters"></a>Parametreler  
  *pBaseClass*  
- Tanıdık adı bir sınıfın türetildiği `CObject`.  
+ Türetilen bir sınıfın tam adını `CObject`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **DOĞRU** varsa sınıfı arama `IsDerivedFrom` taban türetilmiş sınıfının `CRuntimeClass` yapısı, bir parametre olarak belirtilen aksi **FALSE**.  
+ TRUE ise sınıfı arama `IsDerivedFrom` temelden türetilmiş sınıfının `CRuntimeClass` yapısı, bir parametre olarak belirtilen; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlişki "üyenin sınıfından türetilen sınıfların zincir oluşturan tüm dön adım adım ilerlemenizi sağlayarak" belirlenir. Bu işlev yalnızca döndürür **FALSE** için temel sınıfı bir eşleşme varsa.  
+ İlişki "üyenin sınıfından türetilen sınıfların zincir oluşturan tüm dön taramasını tarafından" belirlenir. Bu işlev, yalnızca temel sınıf için eşleşme bulunursa FALSE döndürür.  
   
 > [!NOTE]
->  Kullanılacak `CRuntimeClass` yapısı, çalışma zamanı nesne bilgilerini almak istediğiniz sınıfı uygulamasında ımplement_dynamıc, IMPLEMENT_DYNCREATE veya ımplement_serıal makrosu içermelidir.  
+>  Kullanılacak `CRuntimeClass` yapısı, çalışma zamanı nesne bilgileri almak istediğiniz sınıfının uygulamasında ımplement_dynamıc, IMPLEMENT_DYNCREATE veya ımplement_serıal makrosu içermelidir.  
   
- Kullanma hakkında daha fazla bilgi için `CRuntimeClass`, makaleye bakın [CObject sınıfı: çalışma zamanı sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).  
+ Kullanma hakkında daha fazla bilgi için `CRuntimeClass`, makaleye göz atın [CObject sınıfı: çalışma süresi sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCCObjectSample#18](../../mfc/codesnippet/cpp/cruntimeclass-structure_2.cpp)]  
@@ -145,52 +145,52 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  ASCII sınıf adını içeren null ile sonlandırılmış bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu ad sınıfını kullanarak bir örneğini oluşturmak için kullanılan `FromName` üye işlevi.  
+ Bu ad sınıfı kullanmanın bir örneğini oluşturmak için kullanılan `FromName` üye işlevi.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [IsDerivedFrom](#isderivedfrom).  
+  Örneğin bakın [IsDerivedFrom](#isderivedfrom).  
   
 ##  <a name="m_nobjectsize"></a>  CRuntimeClass::m_nObjectSize  
- Nesnenin bayt cinsinden boyutu.  
+ Nesnesinin bayt cinsinden boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Nesne ayrılmış bellek o noktaya veri üyeleri varsa, bu bellek boyutu dahil değil.  
+ Nesne veri üyeleri o noktaya ayrılan bellek varsa, bu bellek boyutu dahil değil.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [IsDerivedFrom](#isderivedfrom).  
+  Örneğin bakın [IsDerivedFrom](#isderivedfrom).  
   
 ##  <a name="m_pbaseclass"></a>  CRuntimeClass::m_pBaseClass  
- Uygulamanızı statik olarak MFC'ye bağlanıyorsa, bu veri üyesi için bir işaretçi içeriyor `CRuntimeClass` yapısı temel sınıf.  
+ Uygulamanızı MFC'ye, bu veri üyesi için bir işaretçi içeren `CRuntimeClass` yapısı temel sınıf.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanızı MFC kitaplığına dinamik olarak olup [m_pfnGetBaseClass](#m_pfngetbaseclass).  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [IsDerivedFrom](#isderivedfrom).  
+  Örneğin bakın [IsDerivedFrom](#isderivedfrom).  
   
 ##  <a name="m_pfncreateobject"></a>  CRuntimeClass::m_pfnCreateObject  
- Bir işlev işaretçisi varsayılan oluşturucuya, sınıfın bir nesnesi oluşturur.  
+ Sınıfınızın bir nesne oluşturur. varsayılan oluşturucu bir işlev işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işaretçinin, yalnızca sınıf dinamik oluşturma destekliyorsa geçerlidir; Aksi takdirde işlevi döndürür **NULL**.  
+ This işaretçisi, yalnızca dinamik oluşturma sınıfı destekliyorsa, geçerlidir. Aksi halde, işlev NULL döndürür.  
   
 ##  <a name="m_pfngetbaseclass"></a>  CRuntimeClass::m_pfnGetBaseClass  
- Uygulamanız paylaşılan DLL olarak MFC kitaplığını kullanıyorsa, bu veri üyesi döndüren bir işlev işaret `CRuntimeClass` yapısı temel sınıf.  
+ Uygulamanız paylaşılan DLL olarak MFC Kitaplığı kullanıyorsa, bu veri üyesi döndüren bir işleve işaret `CRuntimeClass` yapısı temel sınıf.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulamanızı MFC kitaplığına statik olarak olup [m_pBaseClass](#m_pbaseclass).  
+ Uygulamanızı MFC kitaplığına statik değilse [m_pBaseClass](#m_pbaseclass).  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [IsDerivedFrom](#isderivedfrom).  
+  Örneğin bakın [IsDerivedFrom](#isderivedfrom).  
   
 ##  <a name="m_wschema"></a>  CRuntimeClass::m_wSchema  
- Şema numarasını (nonserializable sınıfları için -1).  
+ Şema numarasını (nonserializable sınıflar için -1).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şema numaraları üzerinde daha fazla bilgi için bkz: [ımplement_serıal](run-time-object-model-services.md#implement_serial) makrosu.  
+ Şema sayıları hakkında daha fazla bilgi için bkz. [ımplement_serıal](run-time-object-model-services.md#implement_serial) makrosu.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [IsDerivedFrom](#isderivedfrom).  
+  Örneğin bakın [IsDerivedFrom](#isderivedfrom).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

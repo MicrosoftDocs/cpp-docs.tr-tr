@@ -1,5 +1,5 @@
 ---
-title: COleCmdUI sınıfı | Microsoft Docs
+title: Colecmduı sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c80c3b81b804a66e70efe9269b12d4e18d31c676
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 9b057620e0ea348559b9c37f55ba7658b7f5270c
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040720"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851489"
 ---
-# <a name="colecmdui-class"></a>COleCmdUI sınıfı
-Kullanıcı arabirimi nesneleri durumunu güncelleştirmek MFC için bir yöntem ile ilgili uygulayan `IOleCommandTarget`-uygulamanızın özelliklerini güdümlü.  
+# <a name="colecmdui-class"></a>Colecmduı sınıfı
+Uygulayan bir yöntem için kullanıcı arabirimi nesnelerinin durumunu güncelleştirmek MFC ilgili `IOleCommandTarget`-uygulamanızın özelliklerini temelli.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,22 +46,22 @@ class COleCmdUI : public CCmdUI
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleCmdUI::COleCmdUI](#colecmdui)|Oluşturan bir `COleCmdUI` nesnesi.|  
+|[COleCmdUI::COleCmdUI](#colecmdui)|Oluşturur bir `COleCmdUI` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleCmdUI::Enable](#enable)|Ayarlar veya etkinleştirme komutu bayrağını temizler.|  
-|[COleCmdUI::SetCheck](#setcheck)|Açık/kapalı iki durumlu durumunu ayarlar komutu.|  
-|[COleCmdUI::SetText](#settext)|Bir komut bir metin adı ya da durum dize döndürür.|  
+|[COleCmdUI::Enable](#enable)|Etkin komut bayrağını kaldırır veya ayarlar.|  
+|[COleCmdUI::SetCheck](#setcheck)|Bir açma/kapatma geçiş durumunu ayarlar komutu.|  
+|[COleCmdUI::SetText](#settext)|Bir komut için metin adı ya da durum dizesi döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanıcı uygulama, MFC işlemleri menü görüntülediğinde DocObjects için etkinleştirilmemiş bir uygulamada **UPDATE_COMMAND_UI** bildirimler. Her bir bildirim verilen bir [Ccmduı](../../mfc/reference/ccmdui-class.md) belirli bir komut durumunu yansıtacak biçimde yönetilebilmesini nesnesi. Ancak, uygulamanız için DocObjects etkinleştirildiğinde, MFC işler **UPDATE_OLE_COMMAND_UI** bildirimleri ve atar `COleCmdUI` nesneleri.  
+ Bir MFC uygulamasında menüsü kullanıcı görünümleri UPDATE_COMMAND_UI bildirimleri işlerken bir uygulamada, DocObjects için etkin değil. Her bir bildirim verilen bir [Ccmduı](../../mfc/reference/ccmdui-class.md) nesnesini belirli bir komut durumunu yansıtacak şekilde yönetilebilir. Ancak, uygulamanız için DocObjects etkinleştirildiğinde, MFC UPDATE_OLE_COMMAND_UI bildirimleri işler ve atar `COleCmdUI` nesneleri.  
   
- `COleCmdUI` kapsayıcısının kullanıcı arabiriminde (örneğin, dosya yeni, Aç, yazdırma vb.) kaynaklanan komutları almak üzere DocObject verir ve DocObject'ın kullanıcı arabiriminde kaynaklanan komutları almak için bir kapsayıcı sağlar. Ancak `IDispatch` aynı komutları gönderilmesi için kullanılabilecek `IOleCommandTarget` sorgulamak ve komutları, bağımsız değişken olmadan genellikle standart kümesi kullanır ve hiçbir tür bilgileri dahil olduğundan yürütmek için daha basit bir yol sağlar. `COleCmdUI` etkinleştirme, güncelleştirme ve diğer DocObject kullanıcı arabirimi komutları özelliklerini ayarlamak için kullanılabilir. Komut çağırma istediğinizde, çağrı [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#onexecolecmd).  
+ `COleCmdUI` DocObject kapsayıcısının kullanıcı arabiriminde (örneğin, dosya yeni, açık, yazdırma ve benzeri) kaynaklanan komutları almak üzere, ve kapsayıcı DocObject'ın kullanıcı arabiriminde kaynaklanan komutları almasına olanak sağlar. Ancak `IDispatch` aynı komutları gönderme için kullanılabilecek `IOleCommandTarget` sorgulamak ve komutları, bağımsız değişken olmadan genellikle standart bir dizi kullanır ve hiçbir tür bilgileri söz konusu olduğundan yürütmek için daha basit bir yol sağlar. `COleCmdUI` etkinleştirme, güncelleştirme ve DocObject kullanıcı arabirimi komutları diğer özelliklerini ayarlamak için kullanılabilir. Çağırmak istediğinizde, çağrı [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#onexecolecmd).  
   
- DocObjects hakkında daha fazla bilgi için bkz: [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) ve [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md). Ayrıca bkz. [Internet ilk adımlar: etkin belgeler](../../mfc/active-documents-on-the-internet.md) ve [etkin belgeler](../../mfc/active-documents-on-the-internet.md).  
+ DocObjects hakkında daha fazla bilgi için bkz: [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) ve [Cdocobjectserverıtem](../../mfc/reference/cdocobjectserveritem-class.md). Ayrıca bkz: [Internet ilk adımlar: etkin belgeler](../../mfc/active-documents-on-the-internet.md) ve [etkin belgeler](../../mfc/active-documents-on-the-internet.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [Ccmduı](../../mfc/reference/ccmdui-class.md)  
@@ -72,7 +72,7 @@ class COleCmdUI : public CCmdUI
  **Başlık:** afxdocobj.h  
   
 ##  <a name="colecmdui"></a>  COleCmdUI::COleCmdUI  
- Oluşturan bir `COleCmdUI` belirli kullanıcı arabirimi komutla ilişkili nesne.  
+ Oluşturur bir `COleCmdUI` belirli kullanıcı arabirimi komut ile ilişkili nesne.  
   
 ```  
 COleCmdUI(
@@ -83,19 +83,19 @@ COleCmdUI(
   
 ### <a name="parameters"></a>Parametreler  
  *rgCmds*  
- Verilen GUID ile ilişkili desteklenen komutlar listesi. **OLECMD** yapısı komutu bayraklarıyla komutları ilişkilendirir.  
+ Verilen GUID ile ilişkili desteklenen komutların listesi. `OLECMD` Yapı komutları komut bayrakları ile ilişkilendirir.  
   
  *cCmds*  
- Komutlarda sayısı *rgCmds*.  
+ Komutlarında sayısı *rgCmds*.  
   
  *pGroup*  
- Bir işaretçi komutları kümesini tanımlayan bir GUID.  
+ Bir komut kümesini tanımlayan bir GUID için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `COleCmdUI` Nesnesi menü öğelerini veya denetim çubuğu düğmelerini gibi DocObject kullanıcı arabirimi nesnelerini güncelleştirme için programa dayalı bir arabirim sağlar. Kullanıcı arabirimi nesneleri etkin, devre dışı, kullanıma ve/veya aracılığıyla temizlenmiş `COleCmdUI` nesnesi.  
+ `COleCmdUI` Nesnesi DocObject menü öğeleri ya da denetim çubuğu düğmeleri gibi kullanıcı arabirimi nesnelerini güncelleştirme için bir programlama arabirimi sağlar. Kullanıcı arabirimi nesneleri etkin, devre dışı, kullanıma ve/veya aracılığıyla temizlenmiş `COleCmdUI` nesne.  
   
 ##  <a name="enable"></a>  COleCmdUI::Enable  
- Komut bayrağı ayarlamak için bu işlevi çağırmak `COleCmdUI` nesnesini **OLECOMDF_ENABLED**, kullanılabilir ve etkin, komut arabirimi söyleyen ya da komut bayrağını temizleyin.  
+ Komut bayrağını ayarlamak için bu işlevi çağırın `COleCmdUI` arabirimi komuttur sağlandığını ve etkinleştirildiğini belirten, OLECOMDF_ENABLED veya komut bayrağını temizlemek için nesne.  
   
 ```  
 virtual void Enable(BOOL bOn);
@@ -103,10 +103,10 @@ virtual void Enable(BOOL bOn);
   
 ### <a name="parameters"></a>Parametreler  
  *İyi*  
- Komutu ile ilişkili olup olmadığını gösteren `COleCmdUI` nesne etkinleştirilecek veya devre dışı. NonZero komutu sağlar; 0 komutu devre dışı bırakır.  
+ Komut ile ilişkili olup olmadığını gösteren `COleCmdUI` nesne etkinleştirilecek veya devre dışı. NonZero komut etkinleştirir; 0 komutu devre dışı bırakır.  
   
 ##  <a name="setcheck"></a>  COleCmdUI::SetCheck  
- Açık/kapalı iki durumlu durumunu ayarlamak için bu işlevi çağırmak komutu.  
+ Bir açma/kapatma geçiş durumunu ayarlamak için bu işlevi çağırın komutu.  
   
 ```  
 virtual void SetCheck(int nCheck);
@@ -114,16 +114,16 @@ virtual void SetCheck(int nCheck);
   
 ### <a name="parameters"></a>Parametreler  
  *Nbakım*  
- Açık/kapalı iki durumlu ayarlamak için durumu belirleme bir değer komutu. Değerler şunlardır:  
+ Bir açma/kapatma getirin durumuna belirleyen bir değer komutu. Değerler şunlardır:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|**1**|Komut göre ayarlar.|  
-|**2**|Komut için belirsiz ayarlar; Bu komutun özniteliği hem şirket hem de ilgili seçim Devletler'de devre dışı olduğundan durumu belirlenemiyor.|  
+|**1**|Komutu, açık olarak ayarlar.|  
+|**2**|Komut için belirsiz ayarlar; Bu komutun öznitelik hem şirket hem de ilgili seçimi durumlarda devre dışı olduğundan durumu belirlenemiyor.|  
 |başka bir değer|Komutu, OFF olarak ayarlar.|  
   
 ##  <a name="settext"></a>  COleCmdUI::SetText  
- Bir komut için bir metin adı ya da durum dize döndürmek için bu işlevini çağırın.  
+ Bir komut için metin adı ya da durum dize döndürmek için bu işlevi çağırın.  
   
 ```  
 virtual void SetText(LPCTSTR lpszText);
@@ -131,7 +131,7 @@ virtual void SetText(LPCTSTR lpszText);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszText*  
- Komutu ile kullanılacak metni için bir işaretçi.  
+ Komutu ile kullanılacak metin işaretçisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md)   

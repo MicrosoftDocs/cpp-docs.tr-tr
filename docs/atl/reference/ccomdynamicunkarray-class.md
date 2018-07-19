@@ -28,15 +28,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c3384c2c8ce03132e6525f175b9d34339b7aa26
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8a83ab3aa6506e9ee620d3604149bfd181678a05
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363929"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879815"
 ---
 # <a name="ccomdynamicunkarray-class"></a>CComDynamicUnkArray sınıfı
-Bu sınıf bir dizi depolar **IUnknown** işaretçileri.  
+Bu sınıf, bir dizi depolar `IUnknown` işaretçileri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,38 +50,38 @@ class CComDynamicUnkArray
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComDynamicUnkArray::CComDynamicUnkArray](#ccomdynamicunkarray)|Oluşturucu. Topluluk değerlerine başlatır **NULL** ve sıfır koleksiyon boyutu.|  
-|[CComDynamicUnkArray:: ~ CComDynamicUnkArray](#dtor)|Yok Edicisi.|  
+|[CComDynamicUnkArray::CComDynamicUnkArray](#ccomdynamicunkarray)|Oluşturucu. Toplama değerleri null ve koleksiyon boyutu sıfırdan başlatır.|  
+|[CComDynamicUnkArray:: ~ CComDynamicUnkArray](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComDynamicUnkArray::Add](#add)|Eklemek için bu yöntemi çağırın bir `IUnknown` dizisine işaretçi.|  
-|[CComDynamicUnkArray::begin](#begin)|İşaretçi ilk döndüren `IUnknown` koleksiyondaki işaretçi.|  
+|[CComDynamicUnkArray::Add](#add)|Eklemek için bu yöntemi çağıran bir `IUnknown` dizi için işaretçi.|  
+|[CComDynamicUnkArray::begin](#begin)|İlk işaretçi döndüren `IUnknown` koleksiyondaki işaretçi.|  
 |[CComDynamicUnkArray::clear](#clear)|Dizi boşaltır.|  
-|[CComDynamicUnkArray::end](#end)|Bir son geçmiş işaretçi döndüren **IUnknown** koleksiyondaki işaretçi.|  
+|[CComDynamicUnkArray::end](#end)|Bir önceki son bir işaretçi döndürür `IUnknown` koleksiyondaki işaretçi.|  
 |[CComDynamicUnkArray::GetAt](#getat)|Belirtilen dizindeki öğeyi alır.|  
-|[CComDynamicUnkArray::GetCookie](#getcookie)|İle ilişkili tanımlama bilgisi almak için bu yöntemi çağırın bir verilen **IUnknown** işaretçi.|  
-|[CComDynamicUnkArray::GetSize](#getsize)|Bir dizi uzunluğu, döndürür.|  
-|[CComDynamicUnkArray::GetUnknown](#getunknown)|Almak için bu yöntemi çağırın **IUnknown** belirli bir tanımlama bilgisi ile ilişkili işaretçi.|  
-|[CComDynamicUnkArray::Remove](#remove)|Kaldırmak için bu yöntemi çağırın bir **IUnknown** dizisinden işaretçi.|  
+|[CComDynamicUnkArray::GetCookie](#getcookie)|İle ilişkili tanımlama bilgisi almak için bu yöntemi çağıran bir verilen `IUnknown` işaretçi.|  
+|[CComDynamicUnkArray::GetSize](#getsize)|Dizinin uzunluğunu döndürür.|  
+|[CComDynamicUnkArray::GetUnknown](#getunknown)|Almak için bu yöntemi çağırın `IUnknown` işaretçi verilen bir tanımlama bilgisi ile ilişkili.|  
+|[CComDynamicUnkArray::Remove](#remove)|Kaldırmak için bu yöntemi çağıran bir `IUnknown` işaretçisinden bir dizi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- **CComDynamicUnkArray** dinamik olarak ayrılan bir dizi tutar **IUnknown** işaretçileri, her bir arabirim bir bağlantı noktası. **CComDynamicUnkArray** bir parametre olarak kullanılan [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) Şablon sınıfı.  
+ `CComDynamicUnkArray` dinamik olarak ayrılan dizi tutar `IUnknown` işaretçileri, her bir arabirim bir bağlantı noktası. `CComDynamicUnkArray` bir parametre olarak kullanılan [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md) Şablon sınıfı.  
   
- **CComDynamicUnkArray** yöntemleri [başlamak](#begin) ve [son](#end) tüm bağlantı noktaları (örneğin, bir olay başlatıldığında) döngü için kullanılabilir.  
+ `CComDynamicUnkArray` Yöntemleri [başlamak](#begin) ve [son](#end) tüm bağlantı noktaları (örneğin, bir olay harekete) döngü için kullanılabilir.  
   
- Bkz: [ekleme bağlantı noktaları bir nesneye](../../atl/adding-connection-points-to-an-object.md) bağlantı oluşturulmasını otomatik hale getirme ile ilgili ayrıntılar için proxy noktası.  
+ Bkz: [bir nesneye bağlantı noktaları ekleme](../../atl/adding-connection-points-to-an-object.md) bağlantı oluşturulmasını otomatik hale getirme konusunda ayrıntılı bilgi için proxy noktası.  
   
 > [!NOTE]
-> **Not** sınıfı **CComDynamicUnkArray** tarafından kullanılan **sınıfı Ekle** bağlantı noktaları olan bir denetim oluştururken, Sihirbazı. Bağlantı noktası sayısı el ile belirtmek istiyorsanız, başvurusundan değiştirme **CComDynamicUnkArray** için `CComUnkArray<` *n* `>`, burada *n*gerekli bağlantı noktalarının sayısı.  
+> **Not** sınıfı `CComDynamicUnkArray` tarafından kullanılan **sınıfı Ekle** bağlantı noktaları olan bir denetim oluşturma Sihirbazı. Bağlantı noktası sayısını el ile belirtmek istiyorsanız, iş başvurusundan değiştirme `CComDynamicUnkArray` için `CComUnkArray<` *n* `>`burada *n* bağlantı noktalarının sayısı Gerekli.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
 ##  <a name="add"></a>  CComDynamicUnkArray::Add  
- Eklemek için bu yöntemi çağırın bir **IUnknown** dizisine işaretçi.  
+ Eklemek için bu yöntemi çağıran bir `IUnknown` dizi için işaretçi.  
   
 ```
 DWORD Add(IUnknown* pUnk);
@@ -89,13 +89,13 @@ DWORD Add(IUnknown* pUnk);
   
 ### <a name="parameters"></a>Parametreler  
  *pUnk*  
- **IUnknown** işaretçi dizisine ekleyin.  
+ `IUnknown` Diziye eklemek için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni eklenen işaretçisi ile ilişkili tanımlama döndürür.  
+ Yeni eklenen işaretçisi ile ilişkili tanımlama bilgisini döndürür.  
   
 ##  <a name="begin"></a>  CComDynamicUnkArray::begin  
- Bir işaretçi koleksiyonunun başına döndürür **IUnknown** arabirim işaretçileri.  
+ Bir işaretçi koleksiyonunun başına döndürür `IUnknown` arabirim işaretçisi.  
   
 ```
 IUnknown**
@@ -103,12 +103,12 @@ IUnknown**
 ```     
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir **IUnknown** arabirim işaretçisi.  
+ Bir işaretçi bir `IUnknown` arabirim işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Koleksiyon arabirimleri olarak yerel olarak depolanan işaretçiler içerir **IUnknown**. Her cast **IUnknown** arabirim gerçek arabirim türüne ve üzerinden çağırın. Arabirim için önce sorgu gerekmez.  
+ Koleksiyon arabirimleri olarak yerel olarak depolanan işaretçileri içeren `IUnknown`. Her dönüştürme `IUnknown` arabirim gerçek bir arabirim türüne ve arkasını çağırın. Arabirim için önce sorgu gerekmez.  
   
- Kullanmadan önce **IUnknown** arabirimi, olmadığını denetlemelidir **NULL**.  
+ Kullanmadan önce `IUnknown` arabirimi, NULL olmadığından emin denetlemelidir.  
   
 ##  <a name="clear"></a>  CComDynamicUnkArray::clear  
  Dizi boşaltır.  
@@ -125,10 +125,10 @@ CComDynamicUnkArray();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Koleksiyon boyutu sıfır olarak ayarlar ve değerlerine başlatır **NULL**. Yok Edicisi koleksiyonu gerekirse boşaltır.  
+ Koleksiyon boyutu sıfır olarak ayarlıyor ve NULL değerlere başlatır. Gerekirse koleksiyon yok Edicisi serbest bırakır.  
   
 ##  <a name="dtor"></a>  CComDynamicUnkArray:: ~ CComDynamicUnkArray  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CComDynamicUnkArray();
@@ -138,7 +138,7 @@ CComDynamicUnkArray();
  Sınıf oluşturucu tarafından ayrılan kaynakları serbest bırakır.  
   
 ##  <a name="end"></a>  CComDynamicUnkArray::end  
- Bir son geçmiş işaretçi döndüren **IUnknown** koleksiyondaki işaretçi.  
+ Bir önceki son bir işaretçi döndürür `IUnknown` koleksiyondaki işaretçi.  
   
 ```
 IUnknown**
@@ -146,7 +146,7 @@ IUnknown**
 ```     
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir **IUnknown** arabirim işaretçisi.  
+ Bir işaretçi bir `IUnknown` arabirim işaretçisi.  
   
 ##  <a name="getat"></a>  CComDynamicUnkArray::GetAt  
  Belirtilen dizindeki öğeyi alır.  
@@ -156,31 +156,31 @@ IUnknown* GetAt(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
+ *nIndex*  
  Alınacak öğenin dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) arabirimi.  
   
 ##  <a name="getcookie"></a>  CComDynamicUnkArray::GetCookie  
- İle ilişkili tanımlama bilgisi almak için bu yöntemi çağırın bir verilen **IUnknown** işaretçi.  
+ İle ilişkili tanımlama bilgisi almak için bu yöntemi çağıran bir verilen `IUnknown` işaretçi.  
   
 ```
 DWORD WINAPI GetCookie(IUnknown** ppFind);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppFind`  
- **IUnknown** ilişkili tanımlama bilgisi olduğu gerekli işaretçi.  
+ *ppFind*  
+ `IUnknown` İşaretçi için ilişkili tanımlama bilgisi gereklidir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İle ilişkili tanımlama bilgisi döndürür **IUnknown** işaretçi veya eşleşme olmaması durumunda sıfır **IUnknown** işaretçi bulundu.  
+ İle ilişkili tanımlama döndürür `IUnknown` işaretçi veya eşleşme olursa sıfır `IUnknown` işaretçi bulundu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Birden çok örneği aynı olup olmadığını **IUnknown** işaretçi, bu işlev, ilk için tanımlama bilgisi döndürür.  
+ Birden fazla örneği aynı ise `IUnknown` işaretçisiyse, bu işlev, ilk öğe için bir tanımlama bilgisi değerini döndürür.  
   
 ##  <a name="getsize"></a>  CComDynamicUnkArray::GetSize  
- Bir dizi uzunluğu, döndürür.  
+ Dizinin uzunluğunu döndürür.  
   
 ```
 int GetSize() const;
@@ -190,33 +190,33 @@ int GetSize() const;
  Dizinin uzunluğu.  
   
 ##  <a name="getunknown"></a>  CComDynamicUnkArray::GetUnknown  
- Almak için bu yöntemi çağırın **IUnknown** belirli bir tanımlama bilgisi ile ilişkili işaretçi.  
+ Almak için bu yöntemi çağırın `IUnknown` işaretçi verilen bir tanımlama bilgisi ile ilişkili.  
   
 ```
 IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwCookie`  
- Kendisi için tanımlama bilgisi ilişkili **IUnknown** işaretçi gereklidir.  
+ *dwCookie*  
+ Tanımlama bilgisi, ilişkili `IUnknown` işaretçisi gereklidir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **IUnknown** işaretçi ya da eşleşen tanımlama bilgisi bulunursa, NULL.  
+ Döndürür `IUnknown` işaretçi veya eşleşen tanımlama bilgisi bulunamazsa NULL.  
   
 ##  <a name="remove"></a>  CComDynamicUnkArray::Remove  
- Kaldırmak için bu yöntemi çağırın bir **IUnknown** dizisinden işaretçi.  
+ Kaldırmak için bu yöntemi çağıran bir `IUnknown` işaretçisinden bir dizi.  
   
 ```
 BOOL Remove(DWORD dwCookie);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwCookie`  
- Tanımlama bilgisi başvuran **IUnknown** diziden kaldırılacak işaretçi.  
+ *dwCookie*  
+ Tanımlama bilgisi başvuru `IUnknown` işaretçi diziden kaldırılacak.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçinin kaldırılırsa, TRUE döndürür; Aksi takdirde FALSE.  
+ İşaretçi kaldırılırsa, TRUE döndürür; Aksi durumda FALSE.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComUnkArray sınıfı](../../atl/reference/ccomunkarray-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4bfef99d12ae724c2ca6e70375f08a8dc1fb15b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7d629806582d7ad9902ef5ca0d9425d6f1ecd7d7
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361846"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879701"
 ---
 # <a name="csimplemapequalhelper-class"></a>CSimpleMapEqualHelper sınıfı
-Bu sınıf için bir Yardımcısı, [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfı.  
+Bu sınıf için Yardımcısı, [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,10 +37,10 @@ class CSimpleMapEqualHelper
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `TKey`  
+ *TKey*  
  Anahtar öğesi.  
   
- `TVal`  
+ *TVal*  
  Değer öğesi.  
   
 ## <a name="members"></a>Üyeler  
@@ -50,10 +50,10 @@ class CSimpleMapEqualHelper
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CSimpleMapEqualHelper::IsEqualKey](#isequalkey)|(Statik) İki anahtar eşitlik için test eder.|  
-|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|(Statik) İki değer eşitlik için test eder.|  
+|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|(Statik) Eşitlik için iki değeri test eder.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu özellikleri sınıf için bir ektir `CSimpleMap` sınıfı. İki karşılaştırma için yöntemler sağlar `CSimpleMap` nesne eşitliği öğeleri (özellikle, anahtar ve değer bileşenleri). Varsayılan olarak, anahtarlar ve değerler kullanılarak karşılaştırılır `operator==()`, ancak kendi eşitlik işleci eksikliği karmaşık veri türlerini eşleme içeriyorsa, bu sınıf ek gerekli işlevselliği sağlamak için geçersiz kılınabilir.  
+ Bu nitelikler sınıfı için bir ektir `CSimpleMap` sınıfı. İki karşılaştırma yöntemlerini sağlar `CSimpleMap` nesne eşitliği (özellikle, anahtar ve değer bileşenleri) öğeleri. Varsayılan olarak, anahtarları ve değerleri kullanılarak karşılaştırılır **operator==()**, ancak fazladan gerekli işlevselliği sağlamak için eşleme eksik kendi eşitlik işleci karmaşık veri türleri içeriyorsa, bu sınıf kılınabilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsimpcoll.h  
@@ -66,17 +66,17 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `k1`  
+ *K1*  
  İlk anahtar.  
   
- `k2`  
+ *K2*  
  İkinci anahtarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Anahtarları yanlış Aksi takdirde, eşitse true döndürür.  
+ Anahtarları false, eşitse true döndürür.  
   
 ##  <a name="isequalvalue"></a>  CSimpleMapEqualHelper::IsEqualValue  
- İki değer eşitlik için test eder.  
+ Eşitlik için iki değeri test eder.  
   
 ```
 static bool IsEqualValue(const TVal& v1, const TVal& v2);
@@ -90,8 +90,8 @@ static bool IsEqualValue(const TVal& v1, const TVal& v2);
  İkinci değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Değeri false Aksi takdirde, eşitse true değerini döndürür.  
+ Değerler yanlış Aksi takdirde, eşitse true döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSimpleMapEqualHelperFalse sınıfı](../../atl/reference/csimplemapequalhelperfalse-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

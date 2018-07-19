@@ -25,15 +25,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07f1252fe993ff2f2e646528996c1a53d25c5a63
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a0bb470030984f83eaf7949f0889546129e96c40
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360325"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880774"
 ---
 # <a name="catlbasemodule-class"></a>CAtlBaseModule sınıfı
-Bu sınıfın her ATL projede örneği.  
+Bu sınıf, her bir ATL projesinde oluşturulur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,22 +54,22 @@ class CAtlBaseModule : public _ATL_BASE_MODULE
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CAtlBaseModule::AddResourceInstance](#addresourceinstance)|Bir kaynak örneği saklı tanıtıcıları listesine ekler.|  
-|[CAtlBaseModule::GetHInstanceAt](#gethinstanceat)|Bir işleyici için belirtilen kaynak örneği döndürür.|  
-|[CAtlBaseModule::GetModuleInstance](#getmoduleinstance)|Modül örneğinden döndüren bir `CAtlBaseModule` nesnesi.|  
-|[CAtlBaseModule::GetResourceInstance](#getresourceinstance)|Kaynak örneğinden döndüren bir `CAtlBaseModule` nesnesi.|  
-|[CAtlBaseModule::RemoveResourceInstance](#removeresourceinstance)|Bir kaynak örneği saklı tanıtıcıları listesinden kaldırır.|  
-|[CAtlBaseModule::SetResourceInstance](#setresourceinstance)|Kaynak örneği ayarlar bir `CAtlBaseModule` nesnesi.|  
+|[CAtlBaseModule::GetHInstanceAt](#gethinstanceat)|Belirtilen kaynak örneğine bir tanıtıcı döndürür.|  
+|[CAtlBaseModule::GetModuleInstance](#getmoduleinstance)|Modül örneğinden döndürür bir `CAtlBaseModule` nesne.|  
+|[CAtlBaseModule::GetResourceInstance](#getresourceinstance)|Kaynak örneği döndüren bir `CAtlBaseModule` nesne.|  
+|[CAtlBaseModule::RemoveResourceInstance](#removeresourceinstance)|Bir kaynak örneğini saklı tanıtıcıları listesinden kaldırır.|  
+|[CAtlBaseModule::SetResourceInstance](#setresourceinstance)|Kaynak örneği ayarlar bir `CAtlBaseModule` nesne.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlBaseModule::m_bInitFailed](#m_binitfailed)|Modülü başlatma başarısız oldu gösteren bir değişken.|  
+|[CAtlBaseModule::m_bInitFailed](#m_binitfailed)|Modül başlatma başarısız oldu gösteren bir değişken.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Örneği `CAtlBaseModule` adlandırılmış _AtlBaseModule içeren modülü örneği için bir tanıtıcı, varsayılan olarak, bir aynı) kaynakları (içeren modülü ve birincil sağlayan modülü işleyicilerine dizisi için bir tanıtıcı her ATL projede mevcut kaynaklar. `CAtlBaseModule` birden çok iş parçacığı güvenli bir şekilde erişilebilir.  
+ Örneği `CAtlBaseModule` adlandırılmış _AtlBaseModule içeren modül örneği için bir tanıtıcı, (varsayılan olarak, bir aynı) kaynakları içeren modül ve birincil sağlayan modülü tanıtıcıları bir dizi için bir tanıtıcı, her bir ATL projesi içinde mevcut kaynaklar. `CAtlBaseModule` birden fazla iş parçacığından güvenli bir şekilde erişilebilir.  
   
- Bu sınıf artık kullanılmıyor değiştirir [CComModule](../../atl/reference/ccommodule-class.md) ATL önceki sürümlerinde kullanılan sınıf  
+ Bu sınıf artık kullanılmıyor değiştirir [CComModule](../../atl/reference/ccommodule-class.md) ATL'ın önceki sürümlerinde kullanılan sınıf  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [_ATL_BASE_MODULE](atl-typedefs.md#_atl_base_module)  
@@ -87,11 +87,11 @@ bool AddResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hInst`  
- Eklenecek kaynak örneği.  
+ *hInst*  
+ Eklemek için kaynak örneği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kaynak başarıyla true değerini döndürür eklenen, false Aksi takdirde.  
+ Kaynak başarılı olduysa true döndürür eklendi, yanlış Aksi takdirde.  
   
 ##  <a name="catlbasemodule"></a>  CAtlBaseModule::CAtlBaseModule  
  Oluşturucu.  
@@ -104,7 +104,7 @@ CAtlBaseModule() throw();
  Oluşturur `CAtlBaseModule`.  
   
 ##  <a name="gethinstanceat"></a>  CAtlBaseModule::GetHInstanceAt  
- Bir işleyici için belirtilen kaynak örneği döndürür.  
+ Belirtilen kaynak örneğine bir tanıtıcı döndürür.  
   
 ```
 HINSTANCE GetHInstanceAt(int i) throw();
@@ -115,66 +115,66 @@ HINSTANCE GetHInstanceAt(int i) throw();
  Kaynak örneği sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Karşılık gelen hiçbir kaynak örneği varsa kaynak örneği veya NULL ile işleyicisini döndürür.  
+ İlişkili kaynak örneği varsa, kaynak örneği veya NULL tanıtıcısını döndürür.  
   
 ##  <a name="getmoduleinstance"></a>  CAtlBaseModule::GetModuleInstance  
- Modül örneğinden döndüren bir `CAtlBaseModule` nesnesi.  
+ Modül örneğinden döndürür bir `CAtlBaseModule` nesne.  
   
 ```
 HINSTANCE GetModuleInstance() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Modül örneğini döndürür.  
+ Modül örneği döndürür.  
   
 ##  <a name="getresourceinstance"></a>  CAtlBaseModule::GetResourceInstance  
- Kaynak örneğini döndürür.  
+ Kaynak örneği döndürür.  
   
 ```
 HINSTANCE GetResourceInstance() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kaynak örneğini döndürür.  
+ Kaynak örneği döndürür.  
   
 ##  <a name="m_binitfailed"></a>  CAtlBaseModule::m_bInitFailed  
- Modülü başlatma başarısız oldu gösteren bir değişken.  
+ Modül başlatma başarısız oldu gösteren bir değişken.  
   
 ```
 static bool m_bInitFailed;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Modül başlatıldı, true, false başlatmak başarısız olursa.  
+ Modül başlatılamadı gerekiyorsa true, false başlatmak başarısız olursa.  
   
 ##  <a name="removeresourceinstance"></a>  CAtlBaseModule::RemoveResourceInstance  
- Bir kaynak örneği saklı tanıtıcıları listesinden kaldırır.  
+ Bir kaynak örneğini saklı tanıtıcıları listesinden kaldırır.  
   
 ```
 bool RemoveResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hInst`  
- Kaldırmak için kaynak örneği.  
+ *hInst*  
+ Kaldırılacak kaynak örneği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kaynak Aksi halde başarıyla kaldırıldı, false ise, true döndürür.  
+ Kaynak, aksi halde başarıyla kaldırıldı, false ise, true döndürür.  
   
 ##  <a name="setresourceinstance"></a>  CAtlBaseModule::SetResourceInstance  
- Kaynak örneği ayarlar bir `CAtlBaseModule` nesnesi.  
+ Kaynak örneği ayarlar bir `CAtlBaseModule` nesne.  
   
 ```
 HINSTANCE SetResourceInstance(HINSTANCE hInst) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hInst`  
+ *hInst*  
  Yeni kaynak örneği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Güncelleştirilmiş kaynak örneğini döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Modül sınıfları](../../atl/atl-module-classes.md)

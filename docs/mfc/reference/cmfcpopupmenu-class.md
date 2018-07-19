@@ -170,15 +170,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f92f600d5005fbc85b1dd82ce66274020adb4b2
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 3b80dbc4383b18f3e8183ae06d2259398b5e1223
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042202"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852555"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu sınıfı
-Windows açılır menü işlevlerini uygular ve etiketleri menüleri ve araç ipuçları gibi özellikler ekleyerek genişletir.
+Windows açılır menü işlevselliğini uygular ve etiket menüler ve araç ipuçları gibi özellikleri ekleyerek genişletir.
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -193,84 +193,84 @@ class CMFCPopupMenu : public CMiniFrameWnd
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCPopupMenu::CMFCPopupMenu](#cmfcpopupmenu)|Oluşturan bir `CMFCPopupMenu` nesnesi.|  
+|[CMFCPopupMenu::CMFCPopupMenu](#cmfcpopupmenu)|Oluşturur bir `CMFCPopupMenu` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CMFCPopupMenu::ActivatePopupMenu](#activatepopupmenu)||  
-|[CMFCPopupMenu::AlwaysShowEmptyToolsEntry](#alwaysshowemptytoolsentry)|Kullanıcı tanımlı araçlar için boş girişleri göstermek için bir açılır menü etkinleştirilip etkinleştirilmediğini ayarlar.|  
+|[CMFCPopupMenu::AlwaysShowEmptyToolsEntry](#alwaysshowemptytoolsentry)|Açılır menü için kullanıcı tanımlı Araçlar boş girişleri göstermek için etkinleştirilip etkinleştirilmediğini ayarlar.|  
 |[CMFCPopupMenu::AreAllCommandsShown](#areallcommandsshown)||  
-|[CMFCPopupMenu::CheckArea](#checkarea)|Bir nokta açılır menüyü göreli konumunu belirler.|  
+|[CMFCPopupMenu::CheckArea](#checkarea)|Açılır menü göreli bir noktasının konumunu belirler.|  
 |[CMFCPopupMenu::CloseMenu](#closemenu)||  
-|[CMFCPopupMenu::Create](#create)|Açılır menü oluşturur ve ona ekler `CMFCPopupMenu` nesnesi.|  
+|[CMFCPopupMenu::Create](#create)|Açılır menü oluşturur ve ona ekler `CMFCPopupMenu` nesne.|  
 |[CMFCPopupMenu::DefaultMouseClickOnClose](#defaultmouseclickonclose)||  
-|[CMFCPopupMenu::EnableMenuLogo](#enablemenulogo)|Logo açılır menü için başlatır.|  
+|[CMFCPopupMenu::EnableMenuLogo](#enablemenulogo)|Açılır menü logosu başlatır.|  
 |[CMFCPopupMenu::EnableMenuSound](#enablemenusound)|Menü ses sağlar.|  
 |[CMFCPopupMenu::EnableResize](#enableresize)||  
 |[CMFCPopupMenu::EnableScrolling](#enablescrolling)||  
 |[CMFCPopupMenu::EnableVertResize](#enablevertresize)||  
 |[CMFCPopupMenu::FindSubItemByCommand](#findsubitembycommand)||  
 |[CMFCPopupMenu::GetActiveMenu](#getactivemenu)|Şu anda etkin menü döndürür.|  
-|[CMFCPopupMenu::GetAnimationSpeed](#getanimationspeed)|Açılır menüler animasyon hızı döndürür.|  
+|[CMFCPopupMenu::GetAnimationSpeed](#getanimationspeed)|Animasyon hızı açılır menüler için döndürür.|  
 |[CMFCPopupMenu::GetAnimationType](#getanimationtype)|Açılır menü animasyon geçerli türünü döndürür.|  
 |[CMFCPopupMenu::GetDropDirection](#getdropdirection)||  
-|[CMFCPopupMenu::GetForceMenuFocus](#getforcemenufocus)|Odağı menü açılır menü görüntülendiğinde çubuğu döndürülen olup olmadığını gösterir.|  
+|[CMFCPopupMenu::GetForceMenuFocus](#getforcemenufocus)|Odağı açılır menü görüntülendiğinde çubuğu menüsüne döndürülür olup olmadığını gösterir.|  
 |[CMFCPopupMenu::GetForceShadow](#getforceshadow)||  
-|[CMFCPopupMenu::GetHMenu](#gethmenu)|Bir tanıtıcı ekli menüsü kaynak döndürür.|  
-|[CMFCPopupMenu::GetMenuBar](#getmenubar)|Döndürür [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) açılır menü katıştırılmış.|  
+|[CMFCPopupMenu::GetHMenu](#gethmenu)|Ekli menü kaynağı için bir tanıtıcı döndürür.|  
+|[CMFCPopupMenu::GetMenuBar](#getmenubar)|Döndürür [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) içinde açılır menüde gömülü.|  
 |[CMFCPopupMenu::GetMenuItem](#getmenuitem)|Belirtilen dizindeki menü öğesi için bir işaretçi döndürür.|  
-|[CMFCPopupMenu::GetMenuItemCount](#getmenuitemcount)|Açılan menüde bir öğe sayısını döndürür.|  
-|[CMFCPopupMenu::GetMessageWnd](#getmessagewnd)|Bir işaretçi burada framework açılır menü iletileri yönlendiren penceresine döndürür.|  
+|[CMFCPopupMenu::GetMenuItemCount](#getmenuitemcount)|Bir açılır menü öğe sayısını döndürür.|  
+|[CMFCPopupMenu::GetMessageWnd](#getmessagewnd)|Çerçeve açılır menü iletileri yönlendirdiği penceresine bir işaretçi döndürür.|  
 |[CMFCPopupMenu::GetParentArea](#getparentarea)||  
-|[CMFCPopupMenu::GetParentButton](#getparentbutton)|Bir işaretçi üst araç çubuğu düğmesi döndürür.|  
-|[CMFCPopupMenu::GetParentPopupMenu](#getparentpopupmenu)|Bir işaretçi ana menüye döndürür.|  
+|[CMFCPopupMenu::GetParentButton](#getparentbutton)|Üst araç çubuğu düğmesi için bir işaretçi döndürür.|  
+|[CMFCPopupMenu::GetParentPopupMenu](#getparentpopupmenu)|Üst menüye bir işaretçi döndürür.|  
 |[CMFCPopupMenu::GetParentRibbonElement](#getparentribbonelement)||  
-|[CMFCPopupMenu::GetParentToolBar](#getparenttoolbar)|Bir işaretçi üst araç çubuğuna döndürür.|  
+|[CMFCPopupMenu::GetParentToolBar](#getparenttoolbar)|Üst araç çubuğuna bir işaretçi döndürür.|  
 |[CMFCPopupMenu::GetQuickCustomizeType](#getquickcustomizetype)||  
-|[CMFCPopupMenu::GetSelItem](#getselitem)|Şu anda seçili menü komutu için bir işaretçi döndürür.|  
+|[CMFCPopupMenu::GetSelItem](#getselitem)|Seçili bir menü komutu için bir işaretçi döndürür.|  
 |[CMFCPopupMenu::HasBeenResized](#hasbeenresized)||  
 |[CMFCPopupMenu::HideRarelyUsedCommands](#hiderarelyusedcommands)|Açılır menü nadiren kullanılan komutlar gizleyebilirsiniz olup olmadığını gösterir.|  
 |[CMFCPopupMenu::InCommand](#incommand)||  
 |[CMFCPopupMenu::InsertItem](#insertitem)|Belirtilen konumda açılır menüsünden Yeni bir öğe ekler.|  
-|[CMFCPopupMenu::InsertSeparator](#insertseparator)|Belirtilen konumda açılır menü ayırıcı ekler.|  
+|[CMFCPopupMenu::InsertSeparator](#insertseparator)|Ayırıcı açılır menüsünde belirtilen konumda ekler.|  
 |[CMFCPopupMenu::IsAlwaysClose](#isalwaysclose)||  
 |[CMFCPopupMenu::IsAlwaysShowEmptyToolsEntry](#isalwaysshowemptytoolsentry)||  
 |[CMFCPopupMenu::IsCustomizePane](#iscustomizepane)|Açılır menü olarak çalışıp çalışmadığını gösteren bir **QuickCustomizePane**.|  
 |[CMFCPopupMenu::IsEscClose](#isescclose)||  
-|[CMFCPopupMenu::IsIdle](#isidle)|Açılır menü şu anda boş olup olmadığını gösterir.|  
+|[CMFCPopupMenu::IsIdle](#isidle)|Açılır menü şu anda boşta olup olmadığını belirtir.|  
 |[CMFCPopupMenu::IsMenuSound](#ismenusound)||  
-|[CMFCPopupMenu::IsQuickCustomize](#isquickcustomize)|Belirler olup olmadığını ilişkili [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md) QuickCustomize moddur.|  
+|[CMFCPopupMenu::IsQuickCustomize](#isquickcustomize)|Belirler olmadığını ilişkili [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md) QuickCustomize modundadır.|  
 |[CMFCPopupMenu::IsResizeble](#isresizeble)||  
-|[CMFCPopupMenu::IsRightAlign](#isrightalign)|Menü sağa hizalı sola hizalı verilip verilmediğini gösterir.|  
+|[CMFCPopupMenu::IsRightAlign](#isrightalign)|Menü sağa hizalı veya sola hizalı olup olmadığını gösterir.|  
 |[CMFCPopupMenu::IsScrollable](#isscrollable)||  
-|[CMFCPopupMenu::IsSendMenuSelectMsg](#issendmenuselectmsg)|Kullanıcı açılır menüden bir komut seçtiğinde framework üst çerçeve uyarıp uyarmayacağını gösterir.|  
-|[CMFCPopupMenu::IsShown](#isshown)|Açılan menüden şu anda görünür olup olmadığını gösterir.|  
+|[CMFCPopupMenu::IsSendMenuSelectMsg](#issendmenuselectmsg)|Açılır menüden kullanıcı komutu seçtiğinde framework üst çerçevenin bildirir olup olmadığını gösterir.|  
+|[CMFCPopupMenu::IsShown](#isshown)|Açılır menü görünür olup olmadığını gösterir.|  
 |[CMFCPopupMenu::MoveTo](#moveto)||  
 |[CMFCPopupMenu::OnCmdMsg](#oncmdmsg)|(Geçersiz kılmaları `CFrameWnd::OnCmdMsg`.)|  
 |[CMFCPopupMenu::PostCommand](#postcommand)||  
 |[CMFCPopupMenu::PreTranslateMessage](#pretranslatemessage)|(Geçersiz kılmaları `CFrameWnd::PreTranslateMessage`.)|  
-|[CMFCPopupMenu::RecalcLayout](#recalclayout)|Standart denetim çubukları açmak veya kapatmak kapatıldığında veya çerçeve penceresi yeniden boyutlandırıldığında çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).)|  
-|[CMFCPopupMenu::RemoveAllItems](#removeallitems)|Açılır menüsünden tüm öğeleri kaldırır.|  
+|[CMFCPopupMenu::RecalcLayout](#recalclayout)|Standart denetim çubukları, açılıp kapatıldığında veya çerçeve penceresi yeniden boyutlandırıldığında framework tarafından çağırılır. (Geçersiz kılmaları [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).)|  
+|[CMFCPopupMenu::RemoveAllItems](#removeallitems)|Bir açılır menüsünden tüm öğelerini siler.|  
 |[CMFCPopupMenu::RemoveItem](#removeitem)|Belirtilen öğe, açılır menüden kaldırır.|  
 |[CMFCPopupMenu::SaveState](#savestate)||  
 |[CMFCPopupMenu::SetAnimationSpeed](#setanimationspeed)|Animasyon hızı açılır menüler için ayarlar.|  
 |[CMFCPopupMenu::SetAnimationType](#setanimationtype)|Animasyon türü açılır menü için ayarlar.|  
 |[CMFCPopupMenu::SetAutoDestroy](#setautodestroy)||  
-|[CMFCPopupMenu::SetDefaultItem](#setdefaultitem)|Açılır menü için varsayılan komut ayarlar.|  
-|[CMFCPopupMenu::SetForceMenuFocus](#setforcemenufocus)|Menü açılır menü görüntülendiğinde çubuğu geri dönmek için giriş odağını zorlar.|  
-|[CMFCPopupMenu::SetForceShadow](#setforceshadow)|Açılır menüler ana çerçevesi dışında görüntülendiğinde menü gölgeleri çizmek için framework zorlar.|  
-|[CMFCPopupMenu::SetMaxWidth](#setmaxwidth)|Açılır menü için en büyük genişliği ayarlayın.|  
+|[CMFCPopupMenu::SetDefaultItem](#setdefaultitem)|Açılan menü için varsayılan komut ayarlar.|  
+|[CMFCPopupMenu::SetForceMenuFocus](#setforcemenufocus)|Menü çubuğu açılır menü görüntülendiğinde dönmek için giriş odağını zorlar.|  
+|[CMFCPopupMenu::SetForceShadow](#setforceshadow)|Açılır menüler dışında ana çerçeve göründüğünde menüsü, gölgeler çizilmesi gerektiğinde framework zorlar.|  
+|[CMFCPopupMenu::SetMaxWidth](#setmaxwidth)|Açılır menü için maksimum genişliğini ayarlayın.|  
 |[CMFCPopupMenu::SetMessageWnd](#setmessagewnd)||  
 |[CMFCPopupMenu::SetParentRibbonElement](#setparentribbonelement)||  
 |[CMFCPopupMenu::SetQuickCustomizeType](#setquickcustomizetype)||  
 |[CMFCPopupMenu::SetQuickMode](#setquickmode)||  
-|[CMFCPopupMenu::SetRightAlign](#setrightalign)|Açılır menüler menü hizalamasını belirler.|  
-|[CMFCPopupMenu::SetSendMenuSelectMsg](#setsendmenuselectmsg)|Kullanıcı bir komut seçtiğinde açılır menüyü üst çerçevesini uyarıp uyarmayacağını denetleyen bir bayrak ayarlar.|  
-|[CMFCPopupMenu::ShowAllCommands](#showallcommands)|Tüm komutları görüntülemek için açılır menüyü zorlar.|  
+|[CMFCPopupMenu::SetRightAlign](#setrightalign)|Açılır menüler menü hizalamasını ayarlar.|  
+|[CMFCPopupMenu::SetSendMenuSelectMsg](#setsendmenuselectmsg)|Kullanıcı komutu seçtiğinde açılır menü, üst çerçeve bildirir olup olmadığını denetleyen bir bayrak ayarlar.|  
+|[CMFCPopupMenu::ShowAllCommands](#showallcommands)|Tüm komutlar görüntülemek için açılan menüden zorlar.|  
 |[CMFCPopupMenu::TriggerResize](#triggerresize)||  
-|[CMFCPopupMenu::UpdateAllShadows](#updateallshadows)|Tüm açık açılır menüler gölgelerin güncelleştirir.|  
+|[CMFCPopupMenu::UpdateAllShadows](#updateallshadows)|Tüm açık açılır menüler gölgesi güncelleştirir.|  
 |[CMFCPopupMenu::UpdateShadow](#updateshadow)|Açılır menü için gölge güncelleştirir.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
@@ -282,10 +282,10 @@ class CMFCPopupMenu : public CMiniFrameWnd
 |[CMFCPopupMenu::OnChooseItem](#onchooseitem)||  
   
 ### <a name="remarks"></a>Açıklamalar  
- Normalde, MFC açılır menüler otomatik olarak oluşturur. Oluşturmak istiyorsanız bir `CMFCPopupMenu` el ile nesne, bir öbek üzerinde ayırın ve ardından çağrısı [CMFCPopupMenu::Create](#create).  
+ Normalde, MFC açılır menüleri otomatik olarak oluşturur. Oluşturmak istiyorsanız bir `CMFCPopupMenu` el ile nesnesi, bir yığın ayırma ve sonra çağrı [CMFCPopupMenu::Create](#create).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir açılır menü nesnesi yapılandırmak gösterilmiştir. Örneğin, logo ve açılan menüden sesi ayarlayın, türü ve animasyon hızı ayarlamak, açılır menüyü ana çerçevesi dışında görüntülendiğinde menü gölgeleri çizmek, en büyük genişliği ayarlayabilir ve açılan menüden doğru menü hizalamasını ayarlama gösterilmektedir. Bu kod parçacığını parçası olan [özel sayfaları örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir açılır menü nesneyi yapılandırma gösterilmektedir. Örnek, logo ve açılır menüyü sesi ayarlayın, animasyon hızı ve türünü ayarlama, dışında ana çerçeve açılır menü görüntülendiğinde menüsü, gölgeler çizmek, maksimum genişliğini ayarlamak ve açılır menüyü sağ menü hizalamasını ayarlama gösterilmektedir. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_CustomPages#2](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_1.cpp)]  
   
@@ -323,7 +323,7 @@ static BOOL __stdcall ActivatePopupMenu(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="alwaysshowemptytoolsentry"></a>  CMFCPopupMenu::AlwaysShowEmptyToolsEntry  
- Kullanıcı tanımlı araçlar için boş girişleri göstermek için bir açılır menü etkinleştirilip etkinleştirilmediğini ayarlar.  
+ Açılır menü için kullanıcı tanımlı Araçlar boş girişleri göstermek için etkinleştirilip etkinleştirilmediğini ayarlar.  
   
 ```  
 static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
@@ -331,7 +331,7 @@ static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bBilgi Göster*  
- `TRUE` açılır menü boş girişleri görüntüleyebilirsiniz `FALSE` Aksi takdirde.  
+ Açılır menü boş girişlerini görüntülemek TRUE; FALSE Aksi takdirde.  
   
 ##  <a name="areallcommandsshown"></a>  CMFCPopupMenu::AreAllCommandsShown  
 
@@ -345,7 +345,7 @@ BOOL AreAllCommandsShown() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="checkarea"></a>  CMFCPopupMenu::CheckArea  
- Bir nokta açılır menüyü göreli konumunu belirler.  
+ Açılır menü göreli bir noktasının konumunu belirler.  
   
 ```  
 MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;  
@@ -353,25 +353,25 @@ MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;
   
 ### <a name="parameters"></a>Parametreler  
  [in] *ptScreen*  
- Ekran koordinatları bir nokta.  
+ Ekran koordinatlarında bir nokta.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Noktası açılır menüyü olduğu belirten bir MENUAREA_TYPE parametresi.  
+ Nokta açılır menüyü olduğu gösteren MENUAREA_TYPE parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- MENUAREA_TYPE parametresi şu değerlerden biri olabilir.  
+ MENUAREA_TYPE parametre aşağıdaki değerlerden biri olabilir.  
   
--   Dış - *ptScreen* açılır menü dışında.  
+-   Dış - *ptScreen* dışında açılır menü.  
   
 -   LOGOSU - *ptScreen* logosu alanıdır.  
   
--   TEAROFF_CAPTION - *ptScreen* etiketleri resim yazısı.  
+-   TEAROFF_CAPTION - *ptScreen* etkinleştiriliyorken resim yazısı.  
   
--   SHADOW_BOTTOM - *ptScreen* açılır menüsünün alt gölge olmasıdır.  
+-   SHADOW_BOTTOM - *ptScreen* açılır menünün altındaki gölge olmasıdır.  
   
--   SHADOW_RIGHT - *ptScreen* açılır menüyü sağ gölge olmasıdır.  
+-   SHADOW_RIGHT - *ptScreen* açılır menüsünden doğru gölge olmasıdır.  
   
--   Menü - *ptScreen* komuttur.  
+-   MENÜSÜ - *ptScreen* bir komuttur.  
   
 ##  <a name="closemenu"></a>  CMFCPopupMenu::CloseMenu  
 
@@ -386,7 +386,7 @@ void CloseMenu(BOOL bSetFocusToBar = FALSE);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="cmfcpopupmenu"></a>  CMFCPopupMenu::CMFCPopupMenu  
- Oluşturan bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) nesnesi.  
+ Oluşturur bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) nesne.  
   
 ```  
 CMFCPopupMenu(
@@ -396,16 +396,16 @@ CMFCPopupMenu(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pCustPage*  
- Bir Özelleştirme sayfası için bir işaretçi.  
+ Özelleştirme sayfası için bir işaretçi.  
   
  [in] *lpszTitle*  
- Menü resim yazısını içeren bir dize.  
+ Menü başlığı içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem için kaynakları ayırır bir `CMFCPopupMenu`. Açılır menü öğesi oluşturmak için arama [CMFCPopupMenu::Create](#create).  
+ Bu yöntem için kaynakları ayıran bir `CMFCPopupMenu`. Açılır menü öğesi oluşturmak için arama [CMFCPopupMenu::Create](#create).  
   
 ##  <a name="create"></a>  CMFCPopupMenu::Create  
- Açılır menü oluşturur ve ona ekler bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) nesnesi.  
+ Açılır menü oluşturur ve ona bağlanan bir [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) nesne.  
   
 ```  
 virtual BOOL Create(
@@ -419,31 +419,31 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pWndParent*  
- İçin üst pencere `CMFCPopupMenu`.  
+ Üst pencere için `CMFCPopupMenu`.  
   
  [in] *x*  
- Konumun açılır menüsünün yatay Ekran koordinatı  
+ Açılır menü konumunu yatay Ekran koordinatı  
   
  [in] *y*  
  Açılır menü konumunu dikey Ekran koordinatı.  
   
  [in] *hMenu*  
- Menü kaynağı için tanıtıcı.  
+ Bir menü kaynağı için tanıtıcı.  
   
  [in] *engellendi*  
- Menü özelleştirilebilir olup olmadığını belirten bir Boole parametresi. `FALSE` açılır menü özelleştirilebilir olduğunu gösterir.  
+ Menü özelleştirilebilir olup olmadığını belirten bir Boole parametresi. FALSE, açılan menüyü özelleştirilebilir olduğunu gösterir.  
   
  [in] *bOwnMessage*  
- Nasıl framework menü iletileri yönlendiren gösteren bir Boole parametresi. Daha fazla ayrıntı için Açıklamalar bölümüne bakın.  
+ Menü iletileri framework tarafından nasıl yönlendirdiği gösteren bir Boole parametresi. Daha fazla ayrıntı için Açıklamalar bölümüne bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *bOwnMessage* olan `TRUE`, menü iletiler framework yönlendirir *pWndParent*. *pWndParent* olmamalıdır `NULL` varsa *bOwnMessage* olan `TRUE.` varsa *bOwnMessage* olan `FALSE`, framework menü iletileri ana menüye yönlendirir. .  
+ Varsa *bOwnMessage* menü iletiler TRUE, framework yollar olan *pWndParent*. *pWndParent* , NULL olmamalı *bOwnMessage* true'dur. Varsa *bOwnMessage* , framework yolları üst açılır menüsüne menü iletileri false'tur.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl kullanılacağı ortaya `Create` yöntemi `CMFCPopuMenu` sınıfı. Bu kod parçacığını parçası olan [özel sayfaları örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yöntemi `CMFCPopuMenu` sınıfı. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_CustomPages#1](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_2.cpp)]  
   
@@ -478,7 +478,7 @@ virtual BOOL DefaultMouseClickOnClose() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="enablemenulogo"></a>  CMFCPopupMenu::EnableMenuLogo  
- Logo açılır menü için başlatır.  
+ Açılır menü logosu başlatır.  
   
 ```  
 void EnableMenuLogo(
@@ -488,13 +488,13 @@ void EnableMenuLogo(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *iLogoSize*  
- Logo piksel cinsinden büyüklüğü.  
+ Logo, piksel cinsinden boyutu.  
   
  [in] *nLogoLocation*  
- Logo konumunu belirten numaralandırılmış veri türü.  
+ Logo konumunu gösteren listelenmiş veri türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Logoyu görüntülemek için koruma yöntemi uygulayabilirsiniz [CFrameWndEx::OnDrawMenuLogo](../../mfc/reference/cframewndex-class.md#ondrawmenulogo) ana çerçeve penceresinde.  
+ Logo görüntülenecek yöntemi uygulamak [CFrameWndEx::OnDrawMenuLogo](../../mfc/reference/cframewndex-class.md#ondrawmenulogo) ana çerçeve penceresinde.  
   
  Olası değerler için *nLogoLocation* MENU_LOGO_LEFT, MENU_LOGO_RIGHT, MENU_LOGO_TOP ve MENU_LOGO_BOTTOM.  
   
@@ -507,10 +507,10 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- `TRUE` Ses, etkinleştirmek için `FALSE` Aksi takdirde.  
+ Ses, aksi takdirde FALSE etkinleştirmek için TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ses etkinleştirirseniz, framework çağırması [PlaySound](http://msdn.microsoft.com/library/windows/desktop/bb774426) bir kullanıcı bir açılır menü açtığında veya menü komutu seçer yöntemi. Bu özellik varsayılan olarak etkindir.  
+ Ses etkinleştirirseniz, framework çağırır [PlaySound](http://msdn.microsoft.com/library/windows/desktop/bb774426) yöntemi, bir kullanıcı bir açılır menü açılır veya bir menü komutu seçer. Varsayılan olarak, bu özelliği etkin.  
   
 ##  <a name="enableresize"></a>  CMFCPopupMenu::EnableResize  
 
@@ -570,23 +570,23 @@ static CMFCPopupMenu* GetActiveMenu();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi etkin açılır menü ya da hiçbir açılan menü şu anda etkin mi yoksa NULL.  
+ Etkin açılır menü veya açılır menü yok şu anda etkin mi yoksa NULL bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Her uygulama, en çok bir etkin açılır menü sahip olabilir.  
+ Her uygulamanın en fazla bir etkin açılır menü olabilir.  
   
 ##  <a name="getanimationspeed"></a>  CMFCPopupMenu::GetAnimationSpeed  
- Açılır menüler animasyon hızı döndürür.  
+ Animasyon hızı açılır menüler için döndürür.  
   
 ```  
 static UINT GetAnimationSpeed();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir açılır menü animasyon tamamlamak için geçen milisaniye cinsinden süreyi belirten tamsayı.  
+ Bir açılır menü animasyon tamamlanıncaya kadar geçen milisaniye cinsinden süre belirten bir tamsayı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Animasyon hızı genel bir değerdir. Kullanım [CMFCPopupMenu::SetAnimationSpeed](#setanimationspeed) açılır menüler animasyon hızını değiştirmek için.  
+ Animasyon hızı genel bir değerdir. Kullanım [CMFCPopupMenu::SetAnimationSpeed](#setanimationspeed) açılır menüler animasyonun hızını değiştirmek için.  
   
 ##  <a name="getanimationtype"></a>  CMFCPopupMenu::GetAnimationType  
  Açılır animasyon geçerli türünü döndürür.  
@@ -597,27 +597,27 @@ static CMFCPopupMenu::ANIMATION_TYPE GetAnimationType(BOOL bNoSystem = FALSE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bNoSystem*  
- Bu yöntem genel değer denetleyip denetlemediğini belirten bir Boole parametresi. Bu örneği için animasyon stili döndürmek için bu yöntemi istiyorsanız FALSE [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md).  
+ Bu yöntem genel değer denetleyip denetlemediğini belirten bir Boole parametresi. Bu örneği için animasyon stil döndürmek için bu yöntem istiyorsanız FALSE [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Animasyon türünü açıklayan numaralandırılmış bir değer.  
+ Animasyon türü tanımlayan numaralandırılmış değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açılır menüler animasyonun stilini uygulamanız için geneldir. Kullanım [CMFCPopupMenu::SetAnimationType](#setanimationtype) animasyon stili ayarlamak için.  
+ Açılır menüler animasyon stilini, uygulamanız için geneldir. Kullanım [CMFCPopupMenu::SetAnimationType](#setanimationtype) animasyon stili ayarlanamadı.  
   
- Aşağıdaki tabloda olası animasyon türlerini listeler.  
+ Aşağıdaki tabloda olası animasyon türleri listelenmektedir.  
   
  NO_ANIMATION  
- Açılır menü değil animasyonlu ve hemen görünür.  
+ Açılır menü değil animasyon ve hemen görünür.  
   
- UNFOLD  
- Framework sol üst köşesindeki açılır menüden sağ alt köşesindeki için ortaya çıkarır.  
+ DÜZLEŞTİRME  
+ Framework, sol üst köşesindeki açılır menüden sağ alt köşesindeki için ortaya çıkarır.  
   
  SLAYT  
  Açılır menü üstten alta taşır.  
   
- SİLİNEREK  
- Açılır menü ilk saydam görünür ve kademeli olarak solidifies.  
+ SOLUKLAŞTIR  
+ Açılır menü, ilk saydam görünür ve kademeli olarak solidifies.  
   
 ##  <a name="getdropdirection"></a>  CMFCPopupMenu::GetDropDirection  
 
@@ -631,17 +631,17 @@ DROP_DIRECTION GetDropDirection() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getforcemenufocus"></a>  CMFCPopupMenu::GetForceMenuFocus  
- Odağı menü açılır menü görüntülendiğinde çubuğu döndürülen olup olmadığını gösterir.  
+ Odağı açılır menü görüntülendiğinde çubuğu menüsüne döndürülür olup olmadığını gösterir.  
   
 ```  
 static BOOL GetForceMenuFocus();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` giriş odağını açılır menü görüntülendiğinde, menü çubuğundaki döndürülürse; `FALSE` açılır menüyü odağını korur durumunda.  
+ Giriş odağı açılır menü görüntülendiğinde menü çubuğuna döndürülürse TRUE; Odağı açılır menüyü korur FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, uygulamanızın menü çubuğunda odağı döndürmez. Bu ayarı değiştirmek için kullanmak [CMFCPopupMenu::SetForceMenuFocus](#setforcemenufocus).  
+ Varsayılan olarak, uygulamanız için menü çubuğunda odağı döndürmez. Bu ayarı değiştirmek için kullanın [CMFCPopupMenu::SetForceMenuFocus](#setforcemenufocus).  
   
 ##  <a name="getforceshadow"></a>  CMFCPopupMenu::GetForceShadow  
 
@@ -655,24 +655,24 @@ static BOOL __stdcall GetForceShadow();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="gethmenu"></a>  CMFCPopupMenu::GetHMenu  
- Bir tanıtıcı ekli menüsü kaynak döndürür.  
+ Ekli menü kaynağı için bir tanıtıcı döndürür.  
   
 ```  
 HMENU GetHMenu();
 ```  
   
 ##  <a name="getmenubar"></a>  CMFCPopupMenu::GetMenuBar  
- Döndürür [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) açılır menü katıştırılmış.  
+ Döndürür [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) içinde açılır menüde gömülü.  
   
 ```  
 virtual CMFCPopupMenuBar* GetMenuBar();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Katıştırılmış bir işaretçi `CMFCPopupMenuBar`.  
+ Katıştırılmış bir işaretçiye `CMFCPopupMenuBar`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açılan menüden bir katıştırılmış sahip `CMFCPopupMenuBar` nesnesi. Farklı bir katıştırılmış sınıf kullanıyorsanız, bu yöntem türetilen bir sınıfta geçersiz kılmanız gerekir.  
+ Açılır menüde gömülü bir sahip `CMFCPopupMenuBar` nesne. Farklı bir ekli sınıfı kullanıyorsanız bu yöntem, türetilen bir sınıfta geçersiz kılmanız gerekir.  
   
 ##  <a name="getmenuitem"></a>  CMFCPopupMenu::GetMenuItem  
  Belirtilen dizindeki menü öğesi için bir işaretçi döndürür.  
@@ -683,36 +683,36 @@ CMFCToolBarMenuButton* GetMenuItem(int iIndex) const;
   
 ### <a name="parameters"></a>Parametreler  
  [in] *İIndex*  
- Menü öğesinin sıfır tabanlı dizini.  
+ Bir menü öğesinin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Menü öğesi için bir işaretçi. `NULL` dizin geçersiz durumunda.  
+ Bir menü öğesi için bir işaretçi. Dizin geçersiz olduğu yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Menü öğeleri temsil ettiği [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md). Bu yöntemi çağırdığınızda, bir işaretçi uygun döndürdüğü `CMFCToolBarMenuButton`.  
+ Menü öğeleri tarafından temsil edilir [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md). Bu yöntemi çağırdığınızda, bir işaretçi uygun döndürür `CMFCToolBarMenuButton`.  
   
 ##  <a name="getmenuitemcount"></a>  CMFCPopupMenu::GetMenuItemCount  
- Açılır menüde bir öğe sayısını döndürür.  
+ Açılır menü öğe sayısını döndürür.  
   
 ```  
 int GetMenuItemCount() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Menü öğelerinin sayısı.  
+ Menüdeki öğelerin sayısı.  
   
 ##  <a name="getmessagewnd"></a>  CMFCPopupMenu::GetMessageWnd  
- Bir işaretçi burada framework açılır menü iletileri yönlendiren penceresine döndürür.  
+ Çerçeve açılır menü iletileri yönlendirdiği penceresine bir işaretçi döndürür.  
   
 ```  
 CWnd* GetMessageWnd() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Açılır menü iletileri alan penceresi için bir işaretçi; `NULL` pencere ise.  
+ Açılır menü iletiler alan penceresine bir işaretçi; Pencere yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntemini kullandığınızda, [CMFCPopupMenu::Create](#create) açılır menü oluşturmak için hangi Pencere menüsü iletileri alan belirtin.  
+ Yöntemini kullandığınızda, [CMFCPopupMenu::Create](#create) açılır menü oluşturmak için hangi pencere menü iletileri alan belirtin.  
   
 ##  <a name="getparentarea"></a>  CMFCPopupMenu::GetParentArea  
 
@@ -729,32 +729,32 @@ virtual CWnd* GetParentArea(CRect& rectParentBtn);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getparentbutton"></a>  CMFCPopupMenu::GetParentButton  
- Bir işaretçi üst araç çubuğu düğmesi döndürür.  
+ Üst araç çubuğu düğmesi için bir işaretçi döndürür.  
   
 ```  
 CMFCToolBarMenuButton* GetParentButton() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Üst araç çubuğu düğmesi için bir işaretçi. `NULL` açılır menü hiçbir üst araç çubuğu düğmesi varsa.  
+ Üst araç çubuğu düğmesi için bir işaretçi. Açılır menü hiçbir üst araç çubuğu düğmesi yoksa null değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- A `CMFCPopupMenu` menüsünde bir düğme ile ilişkili olabilir. Bu senaryoda, kullanıcı üst araç çubuğu düğmesini seçtiğinde açılır menüsünde görüntülenir.  
+ A `CMFCPopupMenu` menüsünde bir düğme ile ilişkilendirilebilir. Bir kullanıcı üst araç çubuğu düğmesini seçtiğinde Bu senaryoda, açılır menü görünür.  
   
- Açılan menüden bir kısayol menüsü ise, hiç üst araç çubuğu düğmesi gerekir.  
+ Açılan menüden bir kısayol menüsü ise, hiçbir üst araç çubuğu düğmesi gerekir.  
   
 ##  <a name="getparentpopupmenu"></a>  CMFCPopupMenu::GetParentPopupMenu  
- Bir işaretçi ana menüye döndürür.  
+ Üst menüye bir işaretçi döndürür.  
   
 ```  
 CMFCPopupMenu* GetParentPopupMenu() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Üst için bir işaretçi `CMFCPopupMenu` nesne; `NULL` hiçbir üst açılan menü ise.  
+ Üst öğeye bir işaretçi `CMFCPopupMenu` nesne; Hiçbir üst açılan menü yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açılır menü bir üst öğeye sahip `CMFCPopupMenu` yalnızca bir alt olup olmadığını nesne.  
+ Açılır menü bir üst öğeye sahipse `CMFCPopupMenu` yalnızca bir alt olan nesne.  
   
 ##  <a name="getparentribbonelement"></a>  CMFCPopupMenu::GetParentRibbonElement  
 
@@ -768,17 +768,17 @@ CMFCRibbonBaseElement* GetParentRibbonElement() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getparenttoolbar"></a>  CMFCPopupMenu::GetParentToolBar  
- Bir işaretçi üst araç çubuğuna döndürür.  
+ Üst araç çubuğuna bir işaretçi döndürür.  
   
 ```  
 CMFCToolBar* GetParentToolBar() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Üst araç için bir işaretçi. `NULL` açılır menüde üst araç varsa.  
+ Üst araç çubuğunda bir işaretçi. Açılır menü hiçbir üst araç çubuğunda yoksa null değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `CMFCPopupMenu` hiçbir üst araç sahip bir kısayol menüsü olduğundan.  
+ Varsa `CMFCPopupMenu` hiçbir üst araç çubuğunda varsa bir kısayol menüsü olduğu.  
   
 ##  <a name="getquickcustomizetype"></a>  CMFCPopupMenu::GetQuickCustomizeType  
 
@@ -792,17 +792,17 @@ QUICK_CUSTOMIZE_TYPE GetQuickCustomizeType() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getselitem"></a>  CMFCPopupMenu::GetSelItem  
- Şu anda seçili menü komutu için bir işaretçi döndürür.  
+ Seçili bir menü komutu için bir işaretçi döndürür.  
   
 ```  
 CMFCToolBarMenuButton* GetSelItem();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Şu anda seçili menü komutu için bir işaretçi; `NULL` öğe seçili değilse.  
+ Seçili bir menü komutu için bir işaretçi; Hiçbir öğe seçili değilse null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açılır menüsünde menü komutları tarafından temsil edilen [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md), veya türetilmiş bir sınıf `CMFCToolBarMenuButton`.  
+ Açılır menü menü komutları tarafından temsil edilen [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md), veya türetilmiş bir sınıf `CMFCToolBarMenuButton`.  
   
 ##  <a name="hasbeenresized"></a>  CMFCPopupMenu::HasBeenResized  
 
@@ -823,10 +823,10 @@ BOOL HideRarelyUsedCommands() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` açılır menü nadiren kullanılan komutlar gizleyebilirsiniz Aksi takdirde `FALSE`.  
+ Açılır menü nadiren kullanılan komutlar gizleyebilirsiniz TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yapılandırma etkin değilse bu yöntem bir açılır menü gizleyebilirsiniz olup yalnızca nadiren, kullanılan komutları belirtir. Açılır menü nadiren kullanılan komutlar bir üst düğmesi varsa ve üst pencere türetilir gizleyebilirsiniz [CMFCMenuBar sınıfı](../../mfc/reference/cmfcmenubar-class.md). Kullanım [CMFCMenuBar::SetRecentlyUsedMenus](../../mfc/reference/cmfcmenubar-class.md#setrecentlyusedmenus) bu özelliği etkinleştirmek için ve [CMFCMenuBar::IsRecentlyUsedMenus](../../mfc/reference/cmfcmenubar-class.md#isrecentlyusedmenus) bu özellik şu anda etkin olup olmadığını belirlemek için. Bu yöntemlerin her ikisi de üst penceresi çağırmanız gerekir.  
+ Bu yapılandırma etkin değilse bu yöntem bir açılır menü gizleyebilirsiniz olup yalnızca nadiren komutları kullanılan belirtir. Açılır menü nadiren kullanılan komutlar bir üst düğme varsa ve ana pencereyi türetilir gizleyebilirsiniz [CMFCMenuBar sınıfı](../../mfc/reference/cmfcmenubar-class.md). Kullanım [CMFCMenuBar::SetRecentlyUsedMenus](../../mfc/reference/cmfcmenubar-class.md#setrecentlyusedmenus) bu özelliği etkinleştirmek için ve [CMFCMenuBar::IsRecentlyUsedMenus](../../mfc/reference/cmfcmenubar-class.md#isrecentlyusedmenus) bu özellik şu anda etkin olup olmadığını belirlemek için. Bu yöntemlerin ikisi de ana pencerenin çağırmanız gerekir.  
   
 ##  <a name="incommand"></a>  CMFCPopupMenu::InCommand  
 
@@ -853,16 +853,16 @@ int InsertItem(
  Menü öğesi eklemek için bir başvuru.  
   
  [in] *iInsertAt*  
- Yeni öğe için sıfır tabanlı dizini. Varsa *iInsertAt* -1 ' dir öğe menü sonuna eklenir.  
+ Yeni öğenin sıfır tabanlı dizini. Varsa *iInsertAt* -1 ' dir öğe menü sonuna eklenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Burada öğe eklendi konumu sıfır tabanlı dizini. yöntem başarısız olursa -1.  
+ Öğe nereye yerleştirildiğini konumu sıfır tabanlı dizini. yöntem başarısız olursa -1.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçin geçersiz bir değer sağlarsanız, bu yöntem başarısız olur *iInsertAt*, şu anda açılır menüdeki öğeler, sayısından daha büyük bir tamsayı gibi.  
+ Bu yöntem için geçersiz bir değer sağlarsanız başarısız olur *iInsertAt*, gibi şu anda açılır menüdeki öğeler, sayısından daha büyük bir tamsayı.  
   
 ##  <a name="insertseparator"></a>  CMFCPopupMenu::InsertSeparator  
- Belirtilen konumda açılır menü ayırıcı ekler.  
+ Ayırıcı açılır menüsünde belirtilen konumda ekler.  
   
 ```  
 int InsertSeparator(int iInsertAt = -1);
@@ -870,15 +870,15 @@ int InsertSeparator(int iInsertAt = -1);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *iInsertAt*  
- Bu yöntem ayırıcı burada ekleyecektir konumu sıfır tabanlı dizini.  
+ Sıfır tabanlı dizin konumu ayırıcı burada bu yöntem ekler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Burada ayırıcı eklenmiş konumu sıfır tabanlı dizini. Bu yöntem başarısız olursa -1.  
+ Ayırıcı nereye yerleştirildiğini konumu sıfır tabanlı dizini. Bu yöntem başarısız olursa -1.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İçin -1 değeri *iInsertAt* bu yöntem, ayırıcı açılır menüyü sonuna eklenir anlamına gelir.  
   
- Bu yöntem başarısız olursa *iInsertAt* geçersiz bir değer.  
+ Bu yöntem, başarısız *iInsertAt* geçersiz bir değerdir.  
   
 ##  <a name="isalwaysclose"></a>  CMFCPopupMenu::IsAlwaysClose  
 
@@ -910,12 +910,12 @@ BOOL IsCustomizePane();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` açılır pencere ise bir **QuckCustomizePane**; Aksi halde `FALSE`.  
+ Açılır pencere ise TRUE bir **QuckCustomizePane**; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım **QuickCustomizePane** doğrudan açılır menüsünü özelleştirmek kullanıcının etkinleştirmek için. **QuickCustomizePane** olan bir `CMFCPopupMenu` kullanıcı doğrudan düzenlemek için bir araç çubuğu düğmesini tıklattığında görüntülenir.  
+ Kullanım **QuickCustomizePane** kullanıcı tarafından doğrudan açılan menü özelleştirme olanağı sağlamak için. **QuickCustomizePane** olduğu bir `CMFCPopupMenu` kullanıcı doğrudan düzenlemek için bir araç çubuğu düğmesini tıkladığında görüntülenir.  
   
- Uygulamanızı sırasında bu yöntemi çağırmanız gerekir [CMDIFrameWndEx::OnShowCustomizePane](../../mfc/reference/cmdiframewndex-class.md#onshowcustomizepane).  
+ Uygulamanız bu yöntemin sırasında çağırmalıdır [CMDIFrameWndEx::OnShowCustomizePane](../../mfc/reference/cmdiframewndex-class.md#onshowcustomizepane).  
   
 ##  <a name="isescclose"></a>  CMFCPopupMenu::IsEscClose  
 
@@ -929,17 +929,17 @@ BOOL IsEscClose();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isidle"></a>  CMFCPopupMenu::IsIdle  
- Açılır menü şu anda boş olup olmadığını gösterir.  
+ Açılır menü şu anda boşta olup olmadığını belirtir.  
   
 ```  
 virtual BOOL IsIdle() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` açılır menü boşta modundaysa; Aksi takdirde `FALSE`.  
+ Açılır menü boşta modunda ise TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bir açılır menü boşta görüntü animasyon tamamlandıktan ve kullanıcı açılır menü kaydırma değil ise.  
+ Varsayılan olarak, bir açılır menü boşta modunda görüntüleme animasyon tamamlandıktan ve kullanıcının açılan menüyü kaydırma değil ise.  
   
 ##  <a name="ismenusound"></a>  CMFCPopupMenu::IsMenuSound  
 
@@ -953,17 +953,17 @@ static UINT __stdcall IsMenuSound();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isquickcustomize"></a>  CMFCPopupMenu::IsQuickCustomize  
- Belirler olup olmadığını ilişkili [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md) QuickCustomize moddur.  
+ Belirler olmadığını ilişkili [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md) QuickCustomize modundadır.  
   
 ```  
 BOOL IsQuickCustomize();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` ilişkili menü düğmesi QuickCustomize modundaysa; Aksi takdirde `FALSE`. Bu yöntem aynı zamanda döndürülecek `FALSE` açılır menü ile ilişkili değilse bir `CMFCToolBarMenuButton`.  
+ İlişkili menü düğmesine QuickCustomize modundaysa TRUE; Aksi durumda FALSE. Açılır menü ile ilişkili değilse bu yöntem ayrıca FALSE döndüreceği bir `CMFCToolBarMenuButton`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçinde QuickCustomize modu kullanıcı düğmesi doğrudan özelleştirmek için bir araç çubuğunda seçer.  
+ İçinde QuickCustomize modu kullanıcının düğmeyi doğrudan özelleştirmek için bir araç çubuğu üzerindeki bir düğme seçer.  
   
 ##  <a name="isresizeble"></a>  CMFCPopupMenu::IsResizeble  
 
@@ -977,19 +977,19 @@ BOOL IsResizeble() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="isrightalign"></a>  CMFCPopupMenu::IsRightAlign  
- Menü sağa hizalı sola hizalı verilip verilmediğini gösterir.  
+ Menü sağa hizalı veya sola hizalı olup olmadığını gösterir.  
   
 ```  
 BOOL IsRightAlign() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` Menü sağa hizalı ise; `FALSE` menü sola hizalı durumunda.  
+ Menü sağa hizalı ise TRUE; Menü sola hizalanmış FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanabileceğiniz [CMFCPopupMenu::SetRightAlign](#setrightalign) menü hizalamayı ayarlamak için. Varsayılan olarak, açılır menüler sol hizalaması kullanın.  
+ Kullanabileceğiniz [CMFCPopupMenu::SetRightAlign](#setrightalign) menü hizalama ayarlamak için. Varsayılan olarak sola hizalama açılır menüleri kullanın.  
   
- Menü hizalama genel bir ayar değildir ve açılır menüler arasında değişebilir.  
+ Menü hizalama genel bir ayar değil ve açılır menüler arasında değişebilir.  
   
 ##  <a name="isscrollable"></a>  CMFCPopupMenu::IsScrollable  
 
@@ -1003,27 +1003,27 @@ BOOL IsScrollable() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="issendmenuselectmsg"></a>  CMFCPopupMenu::IsSendMenuSelectMsg  
- Kullanıcı açılır menüden bir komut seçtiğinde framework üst çerçeve uyarıp uyarmayacağını gösterir.  
+ Açılır menüden kullanıcı komutu seçtiğinde framework üst çerçevenin bildirir olup olmadığını gösterir.  
   
 ```  
 static BOOL IsSendMenuSelectMsg();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` framework üst çerçeve bildirirse; Aksi takdirde `FALSE`.  
+ Üst çerçevenin framework bildirmesi durumunda TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework'te kullanılan bir menü komutu seçtiğinde WM_MENUSELECT iletisi göndererek üst çerçeve bildirir.  
+ Framework kullanılan bir menü komutu seçtiğinde WM_MENUSELECT iletisi göndererek üst çerçevenin bildirir.  
   
 ##  <a name="isshown"></a>  CMFCPopupMenu::IsShown  
- Açılan menüden şu anda görünür olup olmadığını gösterir.  
+ Açılır menü görünür olup olmadığını gösterir.  
   
 ```  
 BOOL IsShown() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` açılır menü görünür durumdaysa; Aksi takdirde `FALSE`.  
+ Açılır menü görünür ise TRUE; Aksi durumda FALSE.  
   
 ##  <a name="moveto"></a>  CMFCPopupMenu::MoveTo  
 
@@ -1123,14 +1123,14 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="removeallitems"></a>  CMFCPopupMenu::RemoveAllItems  
- Açılır menüsünden tüm öğeleri kaldırır.  
+ Bir açılır menüsünden tüm öğelerini siler.  
   
 ```  
 void RemoveAllItems();
 ```  
   
 ##  <a name="removeitem"></a>  CMFCPopupMenu::RemoveItem  
- Belirtilen öğe açılır menüden kaldırır.  
+ Belirtilen öğe, açılır menüden kaldırır.  
   
 ```  
 BOOL RemoveItem(int iIndex);
@@ -1138,13 +1138,13 @@ BOOL RemoveItem(int iIndex);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *İIndex*  
- Silmek istediğiniz öğeyi sıfır tabanlı dizini.  
+ Silinecek öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, otomatik olarak bir öğe kaldırma tarafından etkilenen ayırıcı düzenler. Framework ayırıcılar nasıl yeniden düzenler hakkında daha fazla bilgi için bkz: [CMFCToolBar::RemoveButton](../../mfc/reference/cmfctoolbar-class.md#removebutton).  
+ Bu yöntem, otomatik olarak kaldırılmasını bir öğe tarafından etkilenen ayırıcı yerleştirir. Framework ayırıcılar nasıl yeniden düzenler hakkında daha fazla bilgi için bkz. [CMFCToolBar::RemoveButton](../../mfc/reference/cmfctoolbar-class.md#removebutton).  
   
 ##  <a name="savestate"></a>  CMFCPopupMenu::SaveState  
 
@@ -1167,9 +1167,9 @@ static void SetAnimationSpeed(UINT nElapse);
  Yeni animasyon hızı, milisaniye cinsinden.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Animasyon hızı genel bir değerdir ve uygulamadaki tüm açılır menüler etkiler. Bu değer, animasyonun tamamlamak bir açılır menü için gereken süreyi belirtir.  
+ Animasyon hızı, genel bir değerdir ve uygulamadaki tüm açılır menüler etkiler. Bu değer animasyonun tamamlamak bir açılır menü için ne kadar sürer belirtir.  
   
- Varsayılan olarak, bu parametre için 30 milisaniye olarak ayarlanır. Geçerli değer aralığında *nElapse* 0'dan 200'e değil.  
+ Varsayılan olarak, bu parametre için 30 milisaniye olarak ayarlanır. İçin geçerli değerler aralığının *nElapse* 0'dan 200'e olduğu.  
   
 ##  <a name="setanimationtype"></a>  CMFCPopupMenu::SetAnimationType  
  Bu açılır menü için animasyon türünü ayarlar.  
@@ -1180,10 +1180,10 @@ static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *türü*  
- Animasyon türünü belirten numaralandırılmış veri türü.  
+ Animasyon türü belirten bir listelenmiş veri türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [CMFCPopupMenu::GetAnimationType](#getanimationtype) için geçerli değerler listesi *türü*.  
+ Bkz: [CMFCPopupMenu::GetAnimationType](#getanimationtype) için geçerli değerlerin bir listesi için *türü*.  
   
 ##  <a name="setautodestroy"></a>  CMFCPopupMenu::SetAutoDestroy  
 
@@ -1198,7 +1198,7 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setdefaultitem"></a>  CMFCPopupMenu::SetDefaultItem  
- Açılır menü için varsayılan komut ayarlar.  
+ Açılan menü için varsayılan komut ayarlar.  
   
 ```  
 void SetDefaultItem(UINT uiCmd);
@@ -1206,13 +1206,13 @@ void SetDefaultItem(UINT uiCmd);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *uiCmd*  
- Yeni varsayılan komutu menü komut kimliği.  
+ Yeni varsayılan komut menü komut kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açılır menüde varsayılan komutu açılır menü görüntülendiğinde, seçtiğiniz komutudur.  
+ Varsayılan komutu açılır menüdeki açılır menü görüntülendiğinde, seçtiğiniz komutudur.  
   
 ##  <a name="setforcemenufocus"></a>  CMFCPopupMenu::SetForceMenuFocus  
- Menü açılır menü görüntülendiğinde çubuğu geri dönmek için giriş odağını zorlar.  
+ Menü çubuğu açılır menü görüntülendiğinde dönmek için giriş odağını zorlar.  
   
 ```  
 static void SetForceMenuFocus(BOOL bValue);
@@ -1220,13 +1220,13 @@ static void SetForceMenuFocus(BOOL bValue);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bDeğer*  
- `TRUE` giriş odağını açılır menü, menü çubuğunda zorlamak için framework istiyorsanız görüntülenir. `FALSE` Odağı korumak için açılır menüyü istiyorsanız.  
+ Giriş odağı açılır menü görüntülendiğinde çubuğu menüsüne zorlamak için framework istiyorsanız TRUE. Odağı korumak için açılır menü istiyorsanız FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, uygulamadaki tüm açılır menüler için genel bir bayrak ayarlar. Bu özellik varsayılan olarak etkin değildir.  
+ Bu yöntem, uygulamadaki tüm açılır menüler için genel bir bayrak ayarlar. Varsayılan olarak, bu özellik etkin değil.  
   
 ##  <a name="setforceshadow"></a>  CMFCPopupMenu::SetForceShadow  
- Açılır menüler ana çerçevesi dışında görüntülendiğinde menü gölgeleri çizmek için framework zorlar.  
+ Açılır menüler dışında ana çerçeve göründüğünde menüsü, gölgeler çizilmesi gerektiğinde framework zorlar.  
   
 ```  
 static void SetForceShadow(BOOL bValue);
@@ -1234,13 +1234,13 @@ static void SetForceShadow(BOOL bValue);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bDeğer*  
- `TRUE` Menü gölgeleri çizmek için framework istiyorsanız `FALSE` Aksi takdirde.  
+ Menü gölgeler, aksi takdirde FALSE çizilmesi gerektiğinde framework istiyorsanız TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırdığınızda, uygulamanızda genel bayrağını ayarlar. Bu bayrak, uygulamanızdaki tüm açılır menüler etkiler.  
+ Bu yöntemi çağırdığınızda, uygulamanızda genel bir bayrak ayarlar. Bu bayrak, uygulamanızdaki tüm açılır menüler etkiler.  
   
 ##  <a name="setmaxwidth"></a>  CMFCPopupMenu::SetMaxWidth  
- Açılır menü için en büyük genişliği ayarlayın.  
+ Açılır menü için maksimum genişliğini ayarlayın.  
   
 ```  
 void SetMaxWidth(int iMaxWidth);
@@ -1248,10 +1248,10 @@ void SetMaxWidth(int iMaxWidth);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *iMaxWidth*  
- Açılır menüsünde, piksel cinsinden en büyük genişliği.  
+ Maksimum genişliğini piksel cinsinden açılan menüsü.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Menü komutu ile ilişkili metin en büyük genişliği uymayan kesilir ve uymayan bölümü üç nokta ile değiştirilir.  
+ Bir menü komutu ile ilişkili metin maksimum genişliği sığmayacak kesilir ve uymayan bir parçası üç noktaya değiştirilir.  
   
 ##  <a name="setmessagewnd"></a>  CMFCPopupMenu::SetMessageWnd  
 
@@ -1299,7 +1299,7 @@ void SetQuickMode();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setrightalign"></a>  CMFCPopupMenu::SetRightAlign  
- Açılır menüler menü hizalamasını belirler.  
+ Açılır menüler menü hizalamasını ayarlar.  
   
 ```  
 void SetRightAlign(BOOL bRightAlign = TRUE);
@@ -1307,13 +1307,13 @@ void SetRightAlign(BOOL bRightAlign = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bRightAlign*  
- Menü hizalama belirten bir Boole değeri. `TRUE` sağa hizalama gösterir `FALSE` sol hizalamasını belirtir.  
+ Menü hizalamasını belirten bir Boole değeri. Sağa hizalama TRUE gösterir, FALSE, sola hizalama gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, tüm açılır menüler sola hizalanır.  
   
 ##  <a name="setsendmenuselectmsg"></a>  CMFCPopupMenu::SetSendMenuSelectMsg  
- Kullanıcı bir komut seçtiğinde açılır menüyü üst çerçevesini uyarıp uyarmayacağını denetleyen bir bayrak ayarlar.  
+ Kullanıcı komutu seçtiğinde açılır menü, üst çerçeve bildirir olup olmadığını denetleyen bir bayrak ayarlar.  
   
 ```  
 static void SetSendMenuSelectMsg(BOOL bSet = TRUE);
@@ -1321,20 +1321,20 @@ static void SetSendMenuSelectMsg(BOOL bSet = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bInternet*  
- `TRUE` açılır menüde üst çerçevesini bildirirse `FALSE` Aksi takdirde.  
+ Açılır menü, üst çerçeve yanlış aksi bildirmesi durumunda TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir uygulamadaki tüm açılır menüler için genel bir seçenek budur. Etkinleştirilirse, açılır menüler göndereceğiniz bir `WM_MENUSELECT` kullanıcı bir komut seçtiğinde üst çerçeve ileti.  
+ Bu uygulamadaki tüm açılır menüler için genel bir seçenektir. Etkinleştirilirse, açılır menüler kullanıcı komutu seçtiğinde ana kareye WM_MENUSELECT ileti gönderir.  
   
 ##  <a name="showallcommands"></a>  CMFCPopupMenu::ShowAllCommands  
- Tüm komutları görüntülemek için açılır menüyü zorlar.  
+ Tüm komutlar görüntülemek için açılan menüden zorlar.  
   
 ```  
 void ShowAllCommands();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu genel bir ayar değildir ve yalnızca geçerli açılır menüsünü etkiler.  
+ Bu genel bir ayar değildir ve yalnızca geçerli açılır menü etkiler.  
   
 ##  <a name="triggerresize"></a>  CMFCPopupMenu::TriggerResize  
 
@@ -1346,7 +1346,7 @@ void TriggerResize();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="updateallshadows"></a>  CMFCPopupMenu::UpdateAllShadows  
- Tüm açık açılır menüler gölgelerin güncelleştirir.  
+ Tüm açık açılır menüler gölgesi güncelleştirir.  
   
 ```  
 static void UpdateAllShadows(LPRECT lprectScreen = NULL);
@@ -1354,10 +1354,10 @@ static void UpdateAllShadows(LPRECT lprectScreen = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lprectScreen*  
- Ekran koordinatları olarak güncelleştirmek için bölge belirtir dikdörtgen.  
+ Bir dikdörtgen ekran koordinatlarında güncelleştirmek için bölgeye belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açılır menüler animasyonlu denetimleri veya dinamik içeriğe sahip diğer windows üzerinden görüntülendiğinde bu yöntem kullanışlıdır.  
+ Animasyon denetimleri veya dinamik içerik başka windows üzerinden açılır menü görüntülendiğinde bu yöntem yararlı olur.  
   
 ##  <a name="updateshadow"></a>  CMFCPopupMenu::UpdateShadow  
  Açılır menü için gölge güncelleştirir.  
@@ -1368,10 +1368,10 @@ void UpdateShadow(LPRECT lprectScreen = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lprectScreen*  
- Güncelleştirmek için bölge sınırlarının belirten dikdörtgene, ekran koordinatları.  
+ Güncelleştirilecek bölge sınırlarını belirten bir dikdörtgen, ekran koordinatlarında.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Animasyonlu görüntü gölge içeren bir açılır menü çakışıyor olduğunda bu yöntemi çağırın.  
+ Animasyonlu görüntü gölge içeren bir açılır menü çakıştığında bu yöntemi çağırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

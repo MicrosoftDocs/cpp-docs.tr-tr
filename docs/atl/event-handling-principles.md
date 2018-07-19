@@ -18,36 +18,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb7577dc7d9fb58f43ee67d5e5b8f00393dca1bf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 239ea94343652d379048bbeee87d2650d3f1ed72
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355454"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852542"
 ---
 # <a name="event-handling-principles"></a>Olay işleme ilkeleri
-Tüm olay işleme ortak üç adım vardır. Gerekir:  
+Tüm olay işleme için ortak üç adım vardır. Gerekir:  
   
--   Olay arabirimini nesnenize uygulayın.  
+-   Nesneniz üzerinde olay arabirimini uygulayın.  
   
--   Olay kaynağı nesnenizin olayları almak istediği öneriyoruz.  
+-   Olay kaynağı, nesnenizin olayları almak istediğini önerin.  
   
--   Olay kaynağı nesnenizin olaylarını almak artık ihtiyaç duyduğunda unadvise.  
+-   Olay kaynağı, nesnenizin artık olayları almaya gerektiğinde eşlemesindeki.  
   
- Olay arabirimini uygulayan şekilde, kendi türüne bağlıdır. Bir olay arabirimi vtable, çift ya da bir görüntüleme arabirimi olabilir. Bu arabirimi tanımlamak için tasarımcısına olay kaynağı olan; Bu, bu arabirim uygulamak için hazır.  
+ Olay arabirimi uygulayacaksınız şekilde kendi türüne bağlıdır. Olay arabirimi vtable, dual veya dispinterface bir olabilir. Bu arabirim tanımlamak için tasarımcıya olay kaynağının kalmıştır; Bu, arabirim uygulamak için size aittir.  
   
 > [!NOTE]
->  Bir olay arabirimi çift olamaz hiçbir teknik nedenlerle olsa da, pek çok duals kullanımını önlemek için iyi tasarım vardır. Ancak, bu olay Tasarımcısı/uygulayan tarafından yapılan bir karardır *kaynak*. Olay perspektifinden çalıştığınız beri `sink`, herhangi bir seçiminde olmayabilir olasılığı için izin vermek için ancak bir çift olay arabirimi uygulamak için gerekir. Çift arabirimler hakkında daha fazla bilgi için bkz: [çift arabirimler ve ATL](../atl/dual-interfaces-and-atl.md).  
+>  Olay arabirimi çift olamaz hiçbir teknik nedenlerle olsa da, birkaç duals kullanımını önlemek için iyi bir tasarım nedenleri vardır. Ancak, bu olay Tasarımcısı/uygulayan tarafından yapılan bir karardır *kaynak*. Olay perspektifinden çalıştığınız beri `sink`, herhangi bir seçim olmayabilir olasılığı için izin vermek için ancak bir olayı çift arabirim uygulamak için gerekir. Çift arabirimler hakkında daha fazla bilgi için bkz. [çift arabirimler ve ATL](../atl/dual-interfaces-and-atl.md).  
   
- Olay kaynağı bildiren üç adımı ayrılabilir:  
+ Olay kaynağı bildiren üç adımlamayla ayrılabilir:  
   
 -   Kaynak nesne için sorgu [IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857).  
   
--   Çağrı [IConnectionPointContainer::FindConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms692476) olay arabirimini IID geçirme, ilgilendiğiniz. Başarılı, bu döndürür, [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318) bir bağlantı noktası nesnesindeki arabirim.  
+-   Çağrı [IConnectionPointContainer::FindConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms692476) arabirimi olay Laboratuvardaki geçirmeden, ilgilendiğiniz. Başarılı olursa bu döndürür, [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318) arabirimdeki bir bağlantı noktası nesnesi.  
   
--   Çağrı [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) geçirme **IUnknown** olay iç havuz. Başarılı, bu döndürür, bir `DWORD` bağlantıyı temsil eden tanımlama bilgisi.  
+-   Çağrı [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) geçirme `IUnknown` , olay havuzu. Başarılı olursa bu döndürür, bir `DWORD` bağlantıyı temsil eden bir tanımlama bilgisi.  
   
- Olayları alma ilginize başarıyla kaydettikten sonra nesnenin olay arabirim yöntemleri kaynak nesne tarafından tetiklenen olaylara göre çağrılır. Artık olaylarını almak gerektiğinde, bağlantı noktası dön tanımlama bilgisinin geçirebilirsiniz [IConnectionPoint::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608). Bu kaynak ve havuz arasındaki bağlantıyı çalışmamasına neden olur.  
+ Olaylarını alma konusundaki İlginiz başarıyla kaydettikten sonra kaynak nesnesi tarafından harekete geçirilen olayları göre nesnenizin olay arabirimdeki yöntemleri çağrılmaz. Artık olayları almaya ihtiyacınız olduğunda, bağlantı noktası dön tanımlama bilgisi geçirebilirsiniz [IConnectionPoint::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608). Bu, kaynak ve havuz arasındaki bağlantıyı keser.  
   
  Başvuru kaçınmak için dikkatli olun olayları işlerken geçiş yapar.  
   

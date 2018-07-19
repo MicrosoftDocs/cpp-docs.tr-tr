@@ -1,5 +1,5 @@
 ---
-title: Başvuru (ATL) sayım | Microsoft Docs
+title: Başvuru sayım (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,30 +18,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1ba27f00bf25f88575101b1299daf50f94000ad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8e0ce8b2cc412c576b0eded9662d8e70b34cf2ec
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358254"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37850819"
 ---
 # <a name="reference-counting"></a>Başvuru sayımı
-COM kendisi, nesne artık kullanılmayan düşündüğünde nesneyi bellekten kaldırmak otomatik olarak denemez. Bunun yerine, nesne Programcı kullanılmayan nesne kaldırmanız gerekir. Programcı nesneyi dayalı olarak bir başvuru sayısı kaldırılmış olup olmadığını belirler.  
+COM kendisi, nesnenin artık kullanılıp kullanılmadığını düşündüğünde nesneyi bellekten kaldırmak otomatik olarak denemez. Bunun yerine, nesne Programcı kullanılmayan nesne kaldırmanız gerekir. Programcı, nesnenin başvuru sayısının göre kaldırılıp kaldırılamayacağını belirler.  
   
- COM kullanır **IUnknown** yöntemleri [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317), bir nesne üzerinde arabirimleri başvurusu sayısı yönetmek için. Bu yöntemleri çağırmak için genel kurallar şunlardır:  
+ COM kullanan `IUnknown` yöntemleri [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317), arabirimleri bir nesnede başvuru sayısını yönetme. Bu yöntemleri çağırmak için genel kurallar şunlardır:  
   
--   Bir istemci bir arabirim işaretçisi aldığı zaman `AddRef` arabirimde çağrılmalıdır.  
+-   Her bir istemci bir arabirim işaretçisini aldığında `AddRef` arabiriminde çağrılmalıdır.  
   
--   İstemci arabirimi işaretçisi kullanılarak bitirdi her çağırmalısınız **sürüm**.  
+-   Arabirim işaretçisi kullanılarak istemci bitirdi her çağırmalıdır `Release`.  
   
- Basit bir uygulamada her `AddRef` çağrısı artırır ve her **sürüm** nesne içinde bir sayaç değişken azaltır çağırın. Sayısı sıfır olarak geri döndüğünde, arabirimi artık tüm kullanıcılar var ve kendisini bellekten kaldırmak ücretsizdir.  
+ Basit bir uygulamada her `AddRef` artırır ve her çağrı `Release` nesnesinin içindeki bir sayaç değişkeni azaltır çağırın. Sayısı sıfıra döndürüldüğünde arabirimi artık tüm kullanıcıları içeren ve kendisini bellekten kaldırmak ücretsizdir.  
   
- Böylece her nesneye (değil tek bir arabirim) referansı sayılan başvuru sayımı da uygulanabilir. Bu durumda, her `AddRef` ve **sürüm** nesnesinde merkezi uygulamasına temsilciler çağırın ve **sürüm** başvuru sayısı sıfır ulaştığında nesnenin tamamı boşaltır.  
+ Böylece her nesneye (değil tek bir arabirim) başvuru sayılan başvuru sayımı de uygulanabilir. Bu durumda, her `AddRef` ve `Release` temsilciler merkezi bir uygulamaya nesne üzerinde arama ve `Release` , başvuru sayısı sıfır ulaştığında tüm nesneyi serbest bırakır.  
   
 > [!NOTE]
->  Zaman bir `CComObject`-türetilen nesne kullanılarak yapılandırılmıştır **yeni** işleci, başvuru sayısı: 0. Bu nedenle, yapılan bir çağrı `AddRef` başarıyla oluşturduktan sonra yapılması gerektiğini `CComObject`-türetilmiş bir nesne içermelidir.  
+>  Olduğunda bir `CComObject`-türetilmiş nesnesi kullanılarak oluşturulduğunda **yeni** işleci, başvuru sayısı: 0. Bu nedenle, bir çağrı `AddRef` başarıyla oluşturduktan sonra yapılması gerektiğini `CComObject`-türetilmiş bir nesneye.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [COM giriş](../atl/introduction-to-com.md)   
- [Başvuru sayımı yoluyla nesne yaşam süresi yönetme](http://msdn.microsoft.com/library/windows/desktop/ms687260)
+ [COM'a giriş](../atl/introduction-to-com.md)   
+ [Başvuru sayımı yoluyla, nesne kullanım ömrü Yönetimi](http://msdn.microsoft.com/library/windows/desktop/ms687260)
 

@@ -30,15 +30,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bbd2b19e85f70ae9e61044ccd5a6c369e61b296
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 9304c4e3dfd559b296c69b274c1462f2f973a04d
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041451"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37852764"
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile sınıfı
-Veri akışı temsil eder ( `IStream`) bileşik bir dosyada OLE yapılı depolama bir parçası olarak.  
+Veri akışını temsil eder (`IStream`) OLE yapılı depolama bir parçası olarak birleşik bir dosyadaki.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,27 +52,27 @@ class COleStreamFile : public CFile
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleStreamFile::COleStreamFile](#colestreamfile)|Oluşturan bir `COleStreamFile` nesnesi.|  
+|[COleStreamFile::COleStreamFile](#colestreamfile)|Oluşturur bir `COleStreamFile` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[COleStreamFile::Attach](#attach)|Bir akış nesnesi ile ilişkilendirir.|  
-|[COleStreamFile::CreateMemoryStream](#creatememorystream)|Genel bellekten bir akış oluşturur ve nesnesi ile ilişkilendirir.|  
-|[COleStreamFile::CreateStream](#createstream)|Bir akış oluşturur ve nesnesi ile ilişkilendirir.|  
-|[COleStreamFile::Detach](#detach)|Nesne akıştan keser.|  
-|[COleStreamFile::GetStream](#getstream)|Geçerli akışa döndürür.|  
-|[COleStreamFile::OpenStream](#openstream)|Güvenli bir şekilde bir akış açar ve nesnesi ile ilişkilendirir.|  
+|[COleStreamFile::CreateMemoryStream](#creatememorystream)|Genel bellekten bir akış oluşturur ve nesnesiyle ilişkilendirir.|  
+|[COleStreamFile::CreateStream](#createstream)|Bir akış oluşturur ve nesnesiyle ilişkilendirir.|  
+|[COleStreamFile::Detach](#detach)|Nesne akışından ayırır.|  
+|[COleStreamFile::GetStream](#getstream)|Geçerli akışı döndürür.|  
+|[COleStreamFile::OpenStream](#openstream)|Güvenli bir akış açılır ve nesnesi ile ilişkilendirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir `IStorage` nesne akışı açılamıyor veya bir bellek akış olmadığı sürece oluşturulan önce bulunmalıdır.  
+ Bir `IStorage` nesne akışı açılamıyor veya bellek akışı olmadığı sürece oluşturulan önce bulunmalıdır.  
   
- `COleStreamFile` nesneleri yönetilen tam olarak gibi [CFile](../../mfc/reference/cfile-class.md) nesneleri.  
+ `COleStreamFile` nesneleri yönetilen tıpkı [CFile](../../mfc/reference/cfile-class.md) nesneleri.  
   
- Akışlar ve depolamayı düzenleme hakkında daha fazla bilgi için bkz: [kapsayıcılar: bileşik dosyaları](../../mfc/containers-compound-files.md)...  
+ Akışları ve depolamayı düzenleme hakkında daha fazla bilgi için bkz [kapsayıcılar: bileşik dosyalar](../../mfc/containers-compound-files.md)...  
   
- Daha fazla bilgi için bkz: [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) ve [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) ve [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -85,7 +85,7 @@ class COleStreamFile : public CFile
  **Başlık:** afxole.h  
   
 ##  <a name="attach"></a>  COleStreamFile::Attach  
- Sağlanan OLE akış ile ilişkilendirir `COleStreamFile` nesnesi.  
+ Sağlanan OLE akış ile ilişkilendirir `COleStreamFile` nesne.  
   
 ```  
 void Attach(LPSTREAM lpStream);
@@ -93,15 +93,15 @@ void Attach(LPSTREAM lpStream);
   
 ### <a name="parameters"></a>Parametreler  
  *lpStream*  
- OLE akışa işaret ( `IStream`) nesne ile ilişkili olmalıdır. Olamaz **NULL**.  
+ OLE akışa işaret (`IStream`) nesne ile ilişkilendirilecek. NULL olamaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Nesne zaten bir OLE akış ile ilişkilendirilmemiş olması gerekir.  
+ Nesne zaten bir OLE akışı ile ilişkili olmamalıdır.  
   
- Daha fazla bilgi için bkz: [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK.  
   
 ##  <a name="colestreamfile"></a>  COleStreamFile::COleStreamFile  
- Oluşturur bir `COleStreamFile` nesnesi.  
+ Oluşturur bir `COleStreamFile` nesne.  
   
 ```  
 COleStreamFile(LPSTREAM lpStream = NULL);
@@ -109,15 +109,15 @@ COleStreamFile(LPSTREAM lpStream = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  *lpStream*  
- İşaretçi OLE akışa nesne ile ilişkili olabilir.  
+ OLE akış nesne ile ilişkilendirilmesi için işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *lpStream* olan **NULL**nesne OLE akış ile ilişkili değil, aksi takdirde, nesne sağlanan OLE akış ile ilişkilidir.  
+ Varsa *lpStream* null, nesne bir OLE akışı ile ilişkili değil, aksi takdirde, nesne sağlanan OLE akış ile ilişkilidir.  
   
- Daha fazla bilgi için bkz: [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK.  
   
 ##  <a name="creatememorystream"></a>  COleStreamFile::CreateMemoryStream  
- Güvenli bir şekilde hata normal, beklenen bir durum olduğu yeni bir akış genel, paylaşılan bellek yetersiz oluşturur.  
+ Güvenli bir şekilde hata normal, beklenen bir koşulu olduğu yeni bir akışı küresel, paylaşılan bellek yetersiz oluşturur.  
   
 ```  
 BOOL CreateMemoryStream(CFileException* pError = NULL);
@@ -125,18 +125,18 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  *pError*  
- İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne veya **NULL** oluşturma işleminin tamamlanma durumunu gösterir. Akış oluşturulmaya çalışılırken tarafından oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlayın.  
+ İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne ya da oluşturma işleminin tamamlanma durumunu gösteren NULL. Akış oluşturma denemesi ile oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Akış başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
+ Akış başarıyla oluşturuldu olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bellek OLE alt sistemi tarafından ayrılır.  
   
- Daha fazla bilgi için bkz: [CreateStreamOnHGlobal](http://msdn.microsoft.com/library/windows/desktop/aa378980) Windows SDK'sındaki.  
+ Daha fazla bilgi için [CreateStreamOnHGlobal](http://msdn.microsoft.com/library/windows/desktop/aa378980) Windows SDK.  
   
 ##  <a name="createstream"></a>  COleStreamFile::CreateStream  
- Güvenli bir şekilde yeni bir akış burada bir hata çok normal, beklenen bir durumdur sağlanan depolama nesnesinde oluşturur.  
+ Güvenli bir şekilde yeni bir akış sağlanan depolama nesnesinde bir hata normal, beklenen bir koşulu olduğu oluşturur.  
   
 ```  
 BOOL CreateStream(
@@ -148,52 +148,52 @@ BOOL CreateStream(
   
 ### <a name="parameters"></a>Parametreler  
  *lpStorage*  
- Oluşturulacak akış içeren OLE depolama nesne noktalarına. Olamaz **NULL**.  
+ Oluşturulacak akış içeren OLE depolama nesneyi işaret eder. NULL olamaz.  
   
  *lpszStreamName*  
- Oluşturulacak Akış adı. Olamaz **NULL**.  
+ Oluşturulacak Akış adı. NULL olamaz.  
   
  *nOpenFlags*  
- Akış açarken kullanılacak erişim modu. Özel, okuma/yazma ve oluşturma modları varsayılan olarak kullanılır. Kullanılabilir modları tam bir listesi için bkz: [CFile::CFile](../../mfc/reference/cfile-class.md#cfile).  
+ Erişim modu, akış açılırken kullanılacak. Özel, okuma/yazma ve oluşturma modu varsayılan olarak kullanılır. Kullanılabilir modları tam bir listesi için bkz. [CFile::CFile](../../mfc/reference/cfile-class.md#cfile).  
   
  *pError*  
- İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne veya **NULL**. Akış oluşturulmaya çalışılırken tarafından oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlayın.  
+ İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne veya NULL. Akış oluşturma denemesi ile oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Akış başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
+ Akış başarıyla oluşturuldu olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açık başarısız olursa dosya özel durum oluşturulur ve *pError* değil **NULL**.  
+ Açık başarısız olursa, bir dosya özel durum oluşturulur ve *pError* NULL değil.  
   
- Daha fazla bilgi için bkz: [IStorage::CreateStream](http://msdn.microsoft.com/library/windows/desktop/aa380020) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IStorage::CreateStream](http://msdn.microsoft.com/library/windows/desktop/aa380020) Windows SDK.  
   
 ##  <a name="detach"></a>  COleStreamFile::Detach  
- Nesne akıştan akış kapatmadan keser.  
+ Nesne akıştan akış kapatmadan ayırır.  
   
 ```  
 LPSTREAM Detach();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Akış işaretçisine ( `IStream`), nesne ile ilişkili.  
+ Akış için bir işaretçi (`IStream`), nesneyle ilişkili.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Program bitirmeden akış diğer bazı biçimde kapatılması gerekir.  
+ Akış program sona erdirmeden önce bazı başka bir biçimde kapatılması gerekir.  
   
- Daha fazla bilgi için bkz: [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK.  
   
 ##  <a name="getstream"></a>  COleStreamFile::GetStream  
- Bir işaretçi geçerli akışına döndürmek için bu işlevini çağırın.  
+ Geçerli akışa bir işaretçiyi döndürmek için bu işlevi çağırın.  
   
 ```  
 IStream* GetStream() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli akış arabirimi işaretçisi ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)).  
+ Geçerli akışı arabirim işaretçisi ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)).  
   
 ##  <a name="openstream"></a>  COleStreamFile::OpenStream  
- Var olan bir akış açar.  
+ Var olan bir akışı açılır.  
   
 ```  
 BOOL OpenStream(
@@ -205,24 +205,24 @@ BOOL OpenStream(
   
 ### <a name="parameters"></a>Parametreler  
  *lpStorage*  
- Açılacak akışın içeren OLE depolama nesne noktalarına. Olamaz **NULL**.  
+ Açılacak akışın içeren OLE depolama nesneyi işaret eder. NULL olamaz.  
   
  *lpszStreamName*  
- Açılacak akışın adı. Olamaz **NULL**.  
+ Açılacak akışın adı. NULL olamaz.  
   
  *nOpenFlags*  
- Akış açarken kullanılacak erişim modu. Özel ve okuma/yazma modları, varsayılan olarak kullanılır. Kullanılabilir modları tam listesi için bkz: [CFile::CFile](../../mfc/reference/cfile-class.md#cfile).  
+ Erişim modu, akış açılırken kullanılacak. Özel ve okuma/yazma modu, varsayılan olarak kullanılır. Kullanılabilir modları tam listesi için bkz. [CFile::CFile](../../mfc/reference/cfile-class.md#cfile).  
   
  *pError*  
- İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne veya **NULL**. Akış açmaya tarafından oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlayın.  
+ İşaret eden bir [CFileException](../../mfc/reference/cfileexception-class.md) nesne veya NULL. Akış açmaya tarafından oluşturulan olası özel durumları izlemek istiyorsanız bu parametreyi sağlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Akış başarıyla açılırsa sıfır olmayan; Aksi takdirde 0.  
+ Akış başarıyla açıldı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Açık başarısız olursa dosya özel durum oluşturulur ve *pError* değil **NULL**.  
+ Açık başarısız olursa, bir dosya özel durum oluşturulur ve *pError* NULL değil.  
   
- Daha fazla bilgi için bkz: [IStorage::OpenStream](http://msdn.microsoft.com/library/windows/desktop/aa380025) Windows SDK'sındaki.  
+ Daha fazla bilgi için [IStorage::OpenStream](http://msdn.microsoft.com/library/windows/desktop/aa380025) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CFile sınıfı](../../mfc/reference/cfile-class.md)   

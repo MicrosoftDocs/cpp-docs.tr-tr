@@ -82,15 +82,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c82a73c95c0869f7f5245ef3ddc15c0216b07579
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: e0f97eb2bce0bb39641aeceeaaa57d73dd45994e
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041737"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37854037"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar sınıfı
-`CMFCStatusBar` Sınıfı uygulayan benzer bir durum çubuğu `CStatusBar` sınıfı. Ancak, `CMFCStatusBar` sınıfı tarafından sunulmuyor özelliklere sahiptir `CStatusBar` görüntüleri, animasyonları ve ilerleme çubukları; görüntüleme olanağı ve fare çift tıklamalar yanıt verme yeteneği gibi sınıfı. 
+`CMFCStatusBar` Sınıfı için benzer bir durum çubuğu uygular `CStatusBar` sınıfı. Ancak, `CMFCStatusBar` sınıfı tarafından önerilmeyen özelliklere sahiptir `CStatusBar` resimleri, animasyonları ve ilerleme çubuğunu görüntüleme ve çift tıklamalara yanıt verme gibi bir sınıf. 
 
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]   
   
@@ -108,11 +108,11 @@ class CMFCStatusBar : public CPane
 |----------|-----------------|  
 |[CMFCStatusBar::CalcFixedLayout](#calcfixedlayout)|(Geçersiz kılmaları [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|  
 |[CMFCStatusBar::CommandToIndex](#commandtoindex)||  
-|[CMFCStatusBar::Create](#create)|Denetim çubuğu oluşturur ve ona ekler [CPane](../../mfc/reference/cpane-class.md) nesnesi. (Geçersiz kılmaları [CPane::Create](../../mfc/reference/cpane-class.md#create).)|  
-|[CMFCStatusBar::CreateEx](#createex)|Denetim çubuğu oluşturur ve ona ekler [CPane](../../mfc/reference/cpane-class.md) nesnesi. (Geçersiz kılmaları [CPane::CreateEx](../../mfc/reference/cpane-class.md#createex).)|  
-|[CMFCStatusBar::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|Başka bir bölme dinamik olarak bu bölme ve üst çerçeve arasında eklenebilir olup olmadığını belirler. (Geçersiz kılmaları [CBasePane::DoesAllowDynInsertBefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore).)|  
-|[CMFCStatusBar::EnablePaneDoubleClick](#enablepanedoubleclick)|Fare işleme etkinleştirir veya devre dışı bırakır durum çubuğundaki çift tıklamalar.|  
-|[CMFCStatusBar::EnablePaneProgressBar](#enablepaneprogressbar)|Bir ilerleme çubuğu belirtilen bölmesinde görüntüler.|  
+|[CMFCStatusBar::Create](#create)|Denetim çubuğu oluşturur ve ona ekler [CPane](../../mfc/reference/cpane-class.md) nesne. (Geçersiz kılmaları [CPane::Create](../../mfc/reference/cpane-class.md#create).)|  
+|[CMFCStatusBar::CreateEx](#createex)|Denetim çubuğu oluşturur ve ona ekler [CPane](../../mfc/reference/cpane-class.md) nesne. (Geçersiz kılmaları [CPane::CreateEx](../../mfc/reference/cpane-class.md#createex).)|  
+|[CMFCStatusBar::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|Başka bir bölmesinde dinamik olarak bu bölme ve üst çerçevenin arasında eklenip eklenemeyeceğini belirler. (Geçersiz kılmaları [CBasePane::DoesAllowDynInsertBefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore).)|  
+|[CMFCStatusBar::EnablePaneDoubleClick](#enablepanedoubleclick)|Fare işleme etkinleştirir veya devre dışı bırakır ve durum çubuğunda çift tıkladığında.|  
+|[CMFCStatusBar::EnablePaneProgressBar](#enablepaneprogressbar)|Belirtilen bölmedeki bir ilerleme çubuğu görüntüler.|  
 |[CMFCStatusBar::GetCount](#getcount)|Durum çubuğunda bölmeleri sayısını döndürür.|  
 |[CMFCStatusBar::GetDrawExtendedArea](#getdrawextendedarea)||  
 |[CMFCStatusBar::GetExtendedArea](#getextendedarea)||  
@@ -122,47 +122,47 @@ class CMFCStatusBar : public CPane
 |[CMFCStatusBar::GetPaneProgress](#getpaneprogress)||  
 |[CMFCStatusBar::GetPaneStyle](#getpanestyle)|Bölmesinde stili döndürür. (Geçersiz kılmaları [CBasePane::GetPaneStyle](../../mfc/reference/cbasepane-class.md#getpanestyle).)|  
 |[CMFCStatusBar::GetPaneText](#getpanetext)||  
-|[CMFCStatusBar::GetPaneWidth](#getpanewidth)|Belirtilen durum çubuğu bölmesinin piksel cinsinden genişliği döndürür.|  
-|[CMFCStatusBar::GetTipText](#gettiptext)|Belirtilen bölmesinde durum çubuğu için araç ipucu metni döndürür.|  
+|[CMFCStatusBar::GetPaneWidth](#getpanewidth)|Belirtilen durum çubuğu bölmesinin piksel cinsinden genişliğini döndürür.|  
+|[CMFCStatusBar::GetTipText](#gettiptext)|Belirtilen durum çubuğu bölmesinin araç ipucu metnini döndürür.|  
 |[CMFCStatusBar::InvalidatePaneContent](#invalidatepanecontent)|Belirtilen bölmesinde geçersiz kılar ve içeriğini yeniden çizer.|  
-|[CMFCStatusBar::PreCreateWindow](#precreatewindow)|Bu bağlı Windows penceresi oluşturulmasını önce framework tarafından çağrılan `CWnd` nesnesi. (Geçersiz kılmaları [CWnd::PreCreateWindow](../../mfc/reference/cwnd-class.md#precreatewindow).)|  
+|[CMFCStatusBar::PreCreateWindow](#precreatewindow)|Şuna bağlı Windows penceresi oluşturulmasını önce framework tarafından çağırılır `CWnd` nesne. (Geçersiz kılmaları [CWnd::PreCreateWindow](../../mfc/reference/cwnd-class.md#precreatewindow).)|  
 |[CMFCStatusBar::SetDrawExtendedArea](#setdrawextendedarea)||  
 |[CMFCStatusBar::SetIndicators](#setindicators)||  
 |[CMFCStatusBar::SetPaneAnimation](#setpaneanimation)|Bir animasyon belirtilen bölmesine atar.|  
-|[CMFCStatusBar::SetPaneBackgroundColor](#setpanebackgroundcolor)|Belirtilen durum çubuğu bölmesinin arka plan rengini belirler.|  
-|[CMFCStatusBar::SetPaneIcon](#setpaneicon)|Belirtilen durum çubuğu bölmesinin göstergesi simgesi ayarlar.|  
+|[CMFCStatusBar::SetPaneBackgroundColor](#setpanebackgroundcolor)|Belirtilen durum çubuğu bölmesinin arka plan rengini ayarlar.|  
+|[CMFCStatusBar::SetPaneIcon](#setpaneicon)|Belirtilen durum çubuğu bölmesinin gösterge simgesi ayarlar.|  
 |[CMFCStatusBar::SetPaneInfo](#setpaneinfo)||  
-|[CMFCStatusBar::SetPaneProgress](#setpaneprogress)|Belirtilen durum çubuğu bölmesinin ilerleme çubuğu geçerli durumunu ayarlar.|  
+|[CMFCStatusBar::SetPaneProgress](#setpaneprogress)|İlerleme çubuğu için belirtilen durum çubuğu bölmesinin geçerli durumunu ayarlar.|  
 |[CMFCStatusBar::SetPaneStyle](#setpanestyle)|Bölmesinin stilini ayarlar. (Geçersiz kılmaları [CBasePane::SetPaneStyle](../../mfc/reference/cbasepane-class.md#setpanestyle).)|  
 |[CMFCStatusBar::SetPaneText](#setpanetext)||  
 |[CMFCStatusBar::SetPaneTextColor](#setpanetextcolor)|Belirtilen durum çubuğu bölmesinin metin rengini belirler.|  
-|[CMFCStatusBar::SetPaneWidth](#setpanewidth)|Belirtilen durum çubuğu bölmesinin piksel cinsinden genişliğini belirler.|  
-|[CMFCStatusBar::SetTipText](#settiptext)|Belirtilen bölmesinde durum çubuğu için araç ipucu metni ayarlar.|  
+|[CMFCStatusBar::SetPaneWidth](#setpanewidth)|Belirtilen bölmesinin durum çubuğunun piksel cinsinden genişliğini belirler.|  
+|[CMFCStatusBar::SetTipText](#settiptext)|Belirtilen durum çubuğu bölmesinin araç ipucu metnini ayarlar.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCStatusBar::OnDrawPane](#ondrawpane)|Durum çubuğu bölmesinin yeniden çizer çerçevesi tarafından çağrılır.|  
+|[CMFCStatusBar::OnDrawPane](#ondrawpane)|Durum çubuğu bölmesinin çizer framework tarafından çağırılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Aşağıdaki diyagramda, Durum Çubuğu'ndan bir şekilde gösterilmektedir [durum çubuğu gösterim örneği](../../visual-cpp-samples.md) uygulama.  
+ Durum çubuğunda bir şekilden Aşağıdaki diyagramda gösterilmiştir [durum çubuğu gösterim örneği](../../visual-cpp-samples.md) uygulama.  
   
  ![CMFCStatusBar örneği](../../mfc/reference/media/cmfcstatusbar.png "cmfcstatusbar")  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, çeşitli yöntemleri çağırmak için uygulamanın kullandığı yerel değişkenleri gösterir `CMFCStatusBar` sınıfı. Bu değişkenler StatusBarDemoView.h bildirilir. Ana çerçeve MainFrm.h içinde bildirilen, belge StatusBarDemoDoc.h bildirilmiş ve görünümü içinde StatusBarDemoView.h bildirilmiş. Bu kod parçacığını parçası olan [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, çeşitli yöntemleri çağırmak için uygulamanın kullandığı yerel değişkenlerini gösterir `CMFCStatusBar` sınıfı. Bu değişkenler StatusBarDemoView.h bildirilir. Ana çerçeve MainFrm.h içinde bildirildiği belge içinde StatusBarDemoDoc.h bildirilir ve görünümü içinde StatusBarDemoView.h bildirilir. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_StatusBarDemo#9](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_1.h)]  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir başvuru almak gösterilmiştir `CMFCStatusBar` Tanıtımı nesne `GetStatusBar` MainFrm.h ve bu yöntemi çağırmadan yöntemi `GetStatusBar` StatusBarDemoView.h yöntemi. Bu kod parçacığını parçası olan [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir başvuru almak gösterilmiştir `CMFCStatusBar` giriş nesnesi `GetStatusBar` MainFrm.h ve ardından bu yöntemi çağırmadan yöntemi `GetStatusBar` StatusBarDemoView.h yöntemi. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_StatusBarDemo#7](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_2.h)]  
 [!code-cpp[NVC_MFC_StatusBarDemo#8](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_3.h)]  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, çeşitli yöntemleri çağırmak gösterilmiştir `CMFCStatusBar` StatusBarDemoView.cpp sınıfta. Sabitler MainFrm.h bildirilir. Örnek simgeyi ayarlamak, durum çubuğu bölmesinin araç ipucu metni ayarlamak, belirtilen bölmesinde bir ilerleme çubuğu görüntülemek, belirtilen bölmesine bir animasyon atamak, metin ve durum çubuğu bölmesinin genişliğini ayarlamak ve progr geçerli ilerleme göstergesi ayarlamak nasıl gösterir Durum çubuğu bölmesinin v çubuğu. Bu kod parçacığını parçası olan [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, çeşitli yöntemleri çağırmak gösterilmiştir `CMFCStatusBar` StatusBarDemoView.cpp sınıfta. Sabitler MainFrm.h bildirilir. Örnek Ayarla simgesi, durum çubuğu bölmesinin araç ipucu metnini ayarlamak, belirtilen bölmesinde bir ilerleme çubuğu gösteriliyor, animasyon için belirtilen bölmesinde atamak, metin ve durum çubuğu bölmesinin genişliğini ayarlamak ve progr geçerli ilerleme göstergesini ayarlamak nasıl gösterir Durum çubuğu bölmesinin çubuğu Sırala. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_StatusBarDemo#6](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_4.h)]  
 [!code-cpp[NVC_MFC_StatusBarDemo#1](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_5.cpp)]  
@@ -270,7 +270,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="enablepanedoubleclick"></a>  CMFCStatusBar::EnablePaneDoubleClick  
- Fare işleme etkinleştirir veya devre dışı bırakır durum çubuğundaki çift tıklamalar.  
+ Fare işleme etkinleştirir veya devre dışı bırakır ve durum çubuğunda çift tıkladığında.  
   
 ```  
 void EnablePaneDoubleClick(BOOL bEnable=TRUE);
@@ -278,13 +278,13 @@ void EnablePaneDoubleClick(BOOL bEnable=TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- Varsa `TRUE`, fare işlenmesini çift etkinleştir. Aksi takdirde, fare çift işlenmesini devre dışı bırakın.  
+ TRUE ise, fare çift tıklatması işlenmesini sağlar. Aksi takdirde, fare çift tıklatması işlenmesini devre dışı bırakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çift tıklama işlemek için durum çubuğunu etkinleştirilirse, Windows durum çubuğu kullanıcı çift durum çubuğu bölmesinde, her seferinde sahibi bir kaynak kimliği ile birlikte WM_COMMAND bildirim gönderir.  
+ Durum çubuğunu çift tıklatma işlemek için etkinse, Windows durum çubuğu kullanıcı çift tıkladığında durum çubuğu bölmesinde her seferinde sahibi bir kaynak kimliği ile birlikte WM_COMMAND bildirim gönderir.  
   
 ##  <a name="enablepaneprogressbar"></a>  CMFCStatusBar::EnablePaneProgressBar  
- Belirtilen bölmesinde bir ilerleme çubuğu gösteriliyor.  
+ Belirtilen bölmesinde bir ilerleme çubuğu görüntüler.  
   
 ```  
 void EnablePaneProgressBar(
@@ -298,39 +298,39 @@ void EnablePaneProgressBar(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nIndex*  
- Etkinleştirmek için ilerleme çubuğu bölmesinin dizini belirtir.  
+ Etkinleştirmek için ilerleme çubuğu bölmesi dizinini belirtir.  
   
- [in] *ntoplam yer*  
- İlerleme çubuğu için en büyük değer belirtir.  
+ [in] *nAkışlara*  
+ İlerleme çubuğu için maksimum değeri belirtir.  
   
  [in] *bDisplayText*  
- İlerleme çubuğu geçerli ilerleme değeri görüntüleyip görüntülemeyeceğini belirtir.  
+ İlerleme çubuğu geçerli ilerleme değer görüntülemesi gerekip gerekmediğini belirtir.  
   
  [in] *clrBar*  
  İlerleme çubuğu arka plan rengini belirtir.  
   
  [in] *clrBarDest*  
- İlerleme çubuğu arka plan ikincil rengi belirtir. Farklı değerinden kullanmak *clrBar* gradyan karıştırılan renge göre doldurmak için.  
+ İlerleme çubuğu arka plan ikincil rengi belirtir. Değerinden farklı bir değer kullanmazsanız *clrBar* gradyan karışık bir renge göre doldurmak için.  
   
  [in] *clrProgressText*  
- İlerleme çubuğu metnin rengini belirtir.  
+ İlerleme çubuğu metninin rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlerleme çubuğu çağrısı devre dışı bırakmak istiyorsanız `EnablePaneProgressBar` ile *ntoplam yer* -1 olarak ayarlayın. Varsayılan olarak *ntoplam yer* 100'e ayarlayın. Bu nedenle, yüzde olarak ilerleme durumunu görüntülemek için diğer tüm hesaplamalar gerekmez.  
+ İlerleme çubuğu çağrısı devre dışı bırakmak isterseniz `EnablePaneProgressBar` ile *nAkışlara* -1 olarak ayarlayın. Varsayılan olarak *nAkışlara* 100'e ayarlayın. Bu nedenle, yüzde olarak ilerleme durumunu görüntülemek için diğer tüm hesaplamalar gerekmez.  
   
- Farklı değerler geçirmelisiniz *clrBar* ve *clrBarDest* böylece gradyan karıştırılan renk ilerleme çubuğu arka plan rengini görüntüler. biçimindeki telefon numarasıdır.  
+ Farklı değerler geçmelidir *clrBar* ve *clrBarDest* gradyan karışık bir renk ilerleme çubuğu arka plan rengini görüntüler. biçimindeki telefon numarasıdır.  
   
- Geçerli ilerleme ayarlamak için arama [CMFCStatusBar::SetPaneProgress](#setpaneprogress) yöntemi.  
+ Geçerli ilerleme durumunu ayarlamak için çağrı [CMFCStatusBar::SetPaneProgress](#setpaneprogress) yöntemi.  
   
 ##  <a name="getcount"></a>  CMFCStatusBar::GetCount  
- Durum çubuğu bölmelerinde sayısını alır.  
+ Durum çubuğunda bölmeleri sayısını alır.  
   
 ```  
 int GetCount() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Durum çubuğu bölmelerinde sayısı.  
+ Durum çubuğunda bölmeleri sayısı.  
   
 ##  <a name="getdrawextendedarea"></a>  CMFCStatusBar::GetDrawExtendedArea  
 
@@ -351,7 +351,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -467,7 +467,7 @@ int GetPaneWidth(int nIndex) const;
  Durum çubuğu bölmesinin genişliğini, *nIndex* belirtir; durum çubuğu bölmesinin yoksa, aksi takdirde, sıfır.  
   
 ##  <a name="gettiptext"></a>  CMFCStatusBar::GetTipText  
- Durum çubuğu bölmesinin araç ipucu metnini alır.  
+ Bir durum çubuğu bölmesinin araç ipucu metnini alır.  
   
 ```  
 CString GetTipText(int nIndex) const;  
@@ -478,10 +478,10 @@ CString GetTipText(int nIndex) const;
  Araç ipucu metnini almak bölmesi dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Durum çubuğu bölmesinin araç ipucu metnini, *nIndex* belirtir. Aksi durumda, boş dize bir durum çubuğu bölmesinin için belirtilen yoksa *nIndex* veya kendi araç ipucu metni boş ise.  
+ Durum çubuğu bölmesinin araç ipucu metnini, *nIndex* belirtir. Aksi takdirde boş dize bir durum çubuğu bölmesinin belirtilen mevcut değilse *nIndex* veya araç ipucu metnini boşsa.  
   
 ##  <a name="invalidatepanecontent"></a>  CMFCStatusBar::InvalidatePaneContent  
- Durum çubuğu bölmesinin geçersiz kılmak ve içeriği yeniden.  
+ Durum çubuğu bölmesinin geçersiz kılmak ve içeriği yeniden çizin.  
   
 ```  
 void InvalidatePaneContent(int nIndex);
@@ -489,10 +489,10 @@ void InvalidatePaneContent(int nIndex);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nIndex*  
- Geçersiz kılınan ve yeniden düzenlenmiş içerikleri olan bölmesinde dizinini belirtir.  
+ İçerikleri geçersiz kılındı ve yeniden düzenlenmiş olan bölmesinin dizinini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Durum çubuğu geçersiz kılınması yeniden çizim için işaretlenir. Windows, onu yeniden çizer zaman `UpdateWindow` yöntemi WM_PAINT ileti gönderir `OnPaint` yöntemi.  
+ Durum çubuğunda geçersiz kılınması yeniden için işaretlenir. Windows çizer olduğunda `UpdateWindow` yöntemi WM_PAINT ileti gönderir `OnPaint` yöntemi.  
   
 ##  <a name="ondrawpane"></a>  CMFCStatusBar::OnDrawPane  
  Durum çubuğu bölmesinin yeniden çizin.  
@@ -505,15 +505,15 @@ virtual void OnDrawPane(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- Çizim için cihaz bağlamı için bir işaretçi.  
+ Çizim için bir cihaz bağlamı için bir işaretçi.  
   
  [in] *pPane*  
- Bir işaretçi bir `CMFCStatusBarPaneInfo` çizilmesi için bölmesinde hakkında bilgi içeren yapısı.  
+ Bir işaretçi bir `CMFCStatusBarPaneInfo` çizilmesini bölmesinde ilgili bilgiler içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, `OnDrawPane` bölmesinde cihaz bağlamı kullanarak yeniden çizer *pDC* Bölmesi'nin stili ve içerik göre.  
+ Varsayılan olarak, `OnDrawPane` bölmesinde cihaz bağlamını kullanarak yeniden çizer *pDC* bölmedeki stil ve içeriğe göre.  
   
- Bu yöntemi geçersiz kılın bir `CMFCStatusBar`-türetilmiş bir bölme görünümünü özelleştirmek için sınıf.  
+ Bu yöntemin bir `CMFCStatusBar`-türetilmiş bölme görünümünü özelleştirmek için sınıf.  
   
 ##  <a name="precreatewindow"></a>  CMFCStatusBar::PreCreateWindow  
 
@@ -574,19 +574,19 @@ void SetPaneAnimation(
  Bir animasyon atamak istediğiniz bölmesi dizinini belirtir.  
   
  [in] *hImageList*  
- Animasyon kare tutan resim listesi için bir tanıtıcı belirtir.  
+ Animasyon kareleri tutan resim listesi için bir tanıtıcı belirtir.  
   
  [in] *nFrameRate*  
- Kare hızı, animasyonun için milisaniye cinsinden belirtir.  
+ Kare hızı, animasyon için milisaniye cinsinden belirtir.  
   
  [in] *bgüncelleştirmesinin*  
- Varsa `TRUE`, bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, geçersiz kılınması bölmesinde içerik güncelleştirilir.  
+ TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, geçersiz kılınması bölmesinde içeriği güncelleştirilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli animasyonu devre dışı bırakmak istiyorsanız, çağrı `SetPaneAnimation` ile `hImageList` kümesine `NULL`.  
+ Geçerli animasyon devre dışı bırakmak isterseniz, çağrı `SetPaneAnimation` ile `hImageList` NULL olarak ayarlayın.  
   
 ##  <a name="setpanebackgroundcolor"></a>  CMFCStatusBar::SetPaneBackgroundColor  
- Durum çubuğu bölmesinin arka plan rengini belirler.  
+ Durum çubuğu bölmesinin arka plan rengini ayarlar.  
   
 ```  
 void SetPaneBackgroundColor(
@@ -597,16 +597,16 @@ void SetPaneBackgroundColor(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nIndex*  
- Yeni bir arka plan rengini ayarlamak bölmesi dizinini belirtir.  
+ Bölmesinde yeni bir arka plan rengini ayarlamak istediğiniz dizini belirtir.  
   
  [in] *clrBackground*  
  Yeni arka plan rengini belirtir.  
   
  [in] *bgüncelleştirmesinin*  
- Varsa `TRUE`, bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, başka bir yöntem kullanarak bölmesinde geçersiz kılınan kadar bölmesi içeriği güncelleştirmez.  
+ TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, bölmesinde farklı bir yöntemle geçersiz kadar bölmesinde içeriği güncelleştirmez.  
   
 ##  <a name="setpaneicon"></a>  CMFCStatusBar::SetPaneIcon  
- Durum çubuğu bölmesinin simgesi ayarlayın.  
+ Durum çubuğu bölmesinin simgeyi ayarlayın.  
   
 ```  
 void SetPaneIcon(
@@ -624,24 +624,24 @@ void SetPaneIcon(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nIndex*  
- Görüntü ayarlanacağı bölmesi dizinini belirtir.  
+ Bölmesinin resmi ayarlamak istediğiniz dizini belirtir.  
   
  [in] *hIcon*  
  Bölmesinde görüntüsü olarak ayarlanacak simgesi için bir tanıtıcı belirtir.  
   
  [in] *bgüncelleştirmesinin*  
- Bölmesi içeriği hemen güncelleştirip güncelleştirmeyeceğini belirtir.  
+ İçerik bölmesinde hemen güncelleştirilip güncelleştirilmeyeceğini belirtir.  
   
  [in] *hBmp*  
- Bölmesinde görüntüsü olarak ayarlanacak bit eşlem için bir tanıtıcı belirtir.  
+ Bit eşlem bölmesinde görüntüsü olarak ayarlanacak için bir tanıtıcı belirtir.  
   
  [in] *clrTransparent*  
  Bit eşlem saydam rengini belirtir, *hBmp* gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ya da geçirebilirsiniz `HICON` veya `HBITMAP` birlikte Bölmesi'nin resmi ayarlamak için saydam rengi. Artık görüntüyü istemiyorsanız geçirmek `NULL` değeri görüntü işleyici olarak.  
+ Bölmedeki resmi ayarlamak için saydam rengi ile birlikte HICON ya da HBITMAP geçirebilirsiniz. Artık görüntüyü istemiyorsanız NULL değeri görüntü tanıtıcı geçirin.  
   
- Oynatılmakta olan herhangi bir animasyon ise, [CMFCStatusBar::SetPaneAnimation](#setpaneanimation) sahip ayarlayın, animasyonun durdurulur.  
+ Çalışan tüm animasyon ise, [CMFCStatusBar::SetPaneAnimation](#setpaneanimation) sahip ayarlayın, animasyon durdurulur.  
   
 ##  <a name="setpaneinfo"></a>  CMFCStatusBar::SetPaneInfo  
 
@@ -663,7 +663,7 @@ void SetPaneInfo(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="setpaneprogress"></a>  CMFCStatusBar::SetPaneProgress  
- Geçerli İlerleme göstergesi belirtilen bölmesi ilerleme çubuğunun ayarlayın.  
+ Belirtilen bölmesi için ilerleme çubuğunun geçerli ilerleme göstergesi ayarlayın.  
   
 ```  
 void SetPaneProgress(
@@ -677,15 +677,15 @@ void SetPaneProgress(
  İlerleme göstergesi güncelleştirileceği bölmesi dizinini belirtir.  
   
  [in] *nCurr*  
- İlerleme göstergesi geçerli değeri belirtir.  
+ İlerleme göstergesi geçerli değerini belirtir.  
   
  [in] *bgüncelleştirmesinin*  
  Bölmesinde hemen güncelleştirilmesi gerekip gerekmediğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen bölmesinde ilerleme çubuğu İlerleme göstergesi güncelleştirmek istediğinizde bu yöntemi çağırın.  
+ Belirtilen bölmesinde ilerleme çubuğu için İlerleme göstergesi güncelleştireceğinizi kaldığında bu yöntemi çağırın.  
   
- Verilen bölmesi bu işlevi kullanmak için çağırmalısınız [CMFCStatusBar::EnablePaneProgressBar](#enablepaneprogressbar) ilk.  
+ Verilen bölmesi bu işlevi kullanmak için çağırmalıdır [CMFCStatusBar::EnablePaneProgressBar](#enablepaneprogressbar) ilk.  
   
 ##  <a name="setpanestyle"></a>  CMFCStatusBar::SetPaneStyle  
 
@@ -733,13 +733,13 @@ void SetPaneTextColor(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nIndex*  
- Yeni bir metin rengi atamak istediğiniz bölmesinde dizinini belirtir.  
+ Yeni bir metin rengi atamak istediğiniz bölmesinin dizinini belirtir.  
   
  [in] *clrText*  
  Metin rengini belirtir.  
   
  [in] *bgüncelleştirmesinin*  
- Varsa `TRUE`, bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, başka bir yöntem kullanarak bölmesinde geçersiz kılınan kadar bölmesi içeriği güncelleştirmez.  
+ TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, bölmesinde farklı bir yöntemle geçersiz kadar bölmesinde içeriği güncelleştirmez.  
   
 ##  <a name="setpanewidth"></a>  CMFCStatusBar::SetPaneWidth  
  Durum çubuğu bölmesinin genişliğini ayarlayın.  

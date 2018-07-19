@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e014219a12985142c6d45aae711d0410ff12642
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 9c0508f0042f63441b3a9bdf66cd29ca0a9a73e6
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041951"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849808"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl sınıfı
 `CMFCShellTreeCtrl` Sınıfını genişleten [CTreeCtrl sınıfı](../../mfc/reference/ctreectrl-class.md) Kabuk öğeleri hiyerarşisini görüntüleyerek işlevselliği.  
@@ -61,20 +61,20 @@ class CMFCShellTreeCtrl : public CTreeCtrl
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCShellTreeCtrl::EnableShellContextMenu](#enableshellcontextmenu)|Etkinleştirir veya kısayol menüsünü devre dışı bırakır.|  
-|[CMFCShellTreeCtrl::GetFlags](#getflags)|Geçirilen bayraklar birleşimini döndürür [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066).|  
-|[CMFCShellTreeCtrl::GetItemPath](#getitempath)|Bir öğe yolu alır.|  
-|[CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist)|Bir işaretçi döndürür [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) bu ile birlikte kullanılan nesnesi `CMFCShellTreeCtrl` bir Gezgin benzeri penceresi oluşturulacak nesne.|  
-|[CMFCShellTreeCtrl::OnChildNotify](#onchildnotify)|Bu pencere için geçerli bir bildirim iletisi aldığında, bu üye işlevi bu pencerenin üst pencere tarafından çağrılır. (Geçersiz kılmaları [CWnd::OnChildNotify](../../mfc/reference/cwnd-class.md#onchildnotify).)|  
+|[CMFCShellTreeCtrl::EnableShellContextMenu](#enableshellcontextmenu)|Etkinleştirir veya kısayol menüsünden devre dışı bırakır.|  
+|[CMFCShellTreeCtrl::GetFlags](#getflags)|Geçirilen bayrakların birleşimi döndürür [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066).|  
+|[CMFCShellTreeCtrl::GetItemPath](#getitempath)|Bir öğenin yolunu alır.|  
+|[CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist)|Bir işaretçi döndürür [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) bu ile birlikte kullanılan nesne `CMFCShellTreeCtrl` Gezgin benzeri pencere oluşturmak için nesne.|  
+|[CMFCShellTreeCtrl::OnChildNotify](#onchildnotify)|Bu pencere için geçerli bir bildirim iletisi aldığında, bu üye işlevi bu pencerenin ana pencere tarafından çağırılır. (Geçersiz kılmaları [CWnd::OnChildNotify](../../mfc/reference/cwnd-class.md#onchildnotify).)|  
 |[CMFCShellTreeCtrl::OnGetItemIcon](#ongetitemicon)||  
 |[CMFCShellTreeCtrl::OnGetItemText](#ongetitemtext)||  
-|[CMFCShellTreeCtrl::Refresh](#refresh)|Yeniler ve geçerli şekilde yeniden boyar `CMFCShellTreeCtrl` nesnesi.|  
-|[CMFCShellTreeCtrl::SelectPath](#selectpath)|Bir sağlanan PIDL işaretçisiyle birlikte veya dize yolu göre uygun ağaç denetim öğesi seçer.|  
-|[CMFCShellTreeCtrl::SetFlags](#setflags)|Ağaç bağlam filtrelemek için bayrakları ayarlar (tarafından kullanılan bayrakları benzer `IShellFolder::EnumObjects`).|  
-|[CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist)|Geçerli arasında bir ilişki ayarlar `CMFCShellTreeCtrl` nesne ve `CMFCShellListCtrl` nesne.|  
+|[CMFCShellTreeCtrl::Refresh](#refresh)|Yenilenir ve geçerli halinde yeniden boyar `CMFCShellTreeCtrl` nesne.|  
+|[CMFCShellTreeCtrl::SelectPath](#selectpath)|Sağlanan PIDL işaretçisiyle birlikte veya dize yolu göre uygun ağaç denetim öğesi seçer.|  
+|[CMFCShellTreeCtrl::SetFlags](#setflags)|Bayrakları Ağacı Bağlam filtrelemek için ayarlar (tarafından kullanılan bayraklar benzer `IShellFolder::EnumObjects`).|  
+|[CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist)|Geçerli arasında bir ilişki ayarlar `CMFCShellTreeCtrl` nesnesi ve bir `CMFCShellListCtrl` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıfını genişleten `CTreeCtrl` ağacında Windows Kabuğu öğeleri içerecek şekilde, program etkinleştirerek sınıfı. Bu sınıf ile ilişkili bir `CMFCShellListCtrl` tam Gezgini penceresi oluşturulacak nesne. Ardından, ağacında bir öğeyi seçerek Windows Kabuğu öğelerinin bir listesini ilişkili listesinde görüntülenir.  
+ Bu sınıf genişletir `CTreeCtrl` programınızı ağacında Windows Kabuk öğeleri içerecek şekilde etkinleştirerek sınıfı. Bu sınıf ile ilişkili bir `CMFCShellListCtrl` eksiksiz bir Gezgini penceresi oluşturulacak nesne. Ardından, ilişkili listesinde ağaçta bir öğenin seçilmesi Windows Kabuk öğeleri listesi görüntülenir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -91,7 +91,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
  **Başlık:** afxshelltreeCtrl.h  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCShellTreeCtrl` sınıfı. Bu kod parçacığını parçası olan [Gezgini örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir nesnenin oluşturulacağı gösterilmektedir `CMFCShellTreeCtrl` sınıfı. Bu kod parçacığı parçasıdır [Gezgini örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_Explorer#4](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_1.h)]  
 [!code-cpp[NVC_MFC_Explorer#5](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_2.cpp)]  
@@ -105,23 +105,23 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bSistemlerde*  
- Kısayol menüsünün etkinleştirilip etkinleştirilmeyeceğini belirten bir Boole değeri.  
+ Kısayol menüsünün etkinleştirilip etkinleştirilmeyeceğini belirleyen bir Boole değeri.  
   
 ##  <a name="getflags"></a>  CMFCShellTreeCtrl::GetFlags  
- İçin ayarlanan bayraklar döndürür [CMFCShellTreeCtrl sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md) nesnesi.  
+ İçin ayarlanan işaretlere döndürür [CMFCShellTreeCtrl sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md) nesne.  
   
 ```  
 DWORD GetFlags() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `DWORD` bayrakları şu anda bileşimini değerini ayarlayın.  
+ Şu anda bayrakların birleşimi belirten bir DWORD değeri ayarlayın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bayrakları kümesinde `CMFCShellTreeCtrl` yöntemine gönderilen [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066) her nesne yenilenir. Bayraklarıyla değiştirebileceğiniz [CMFCShellTreeCtrl::SetFlags](#setflags) yöntemi.  
+ Bayrakları kümesinde `CMFCShellTreeCtrl` yöntemine gönderilen [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066) her nesne yenilenir. Bayraklarıyla değiştirebilirsiniz [CMFCShellTreeCtrl::SetFlags](#setflags) yöntemi.  
   
 ##  <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath  
- Bir öğeyi yolunu alır [CMFCShellTreeCtrl sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md) nesnesi.  
+ Bir öğenin yolunu alır [CMFCShellTreeCtrl sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md) nesne.  
   
 ```  
 BOOL GetItemPath(
@@ -131,31 +131,31 @@ BOOL GetItemPath(
   
 ### <a name="parameters"></a>Parametreler  
  [out] *strPath*  
- Bir dize parametresi referansı. Yöntemi bu parametreye öğesinin yolu yazar.  
+ Bir dize parametresi bir başvuru. Yöntemi, bu parametre için öğenin yolu yazar.  
   
  [in] *htreeItem*  
- Yöntemi bu ağaç denetim öğesi yolunu alır.  
+ Yöntemi, bu ağaç denetim öğesi yolunu alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem başarısız olursa *strPath* boş dize içeriyor.  
+ Bu yöntem başarısız olursa *strPath* boş bir dize içeriyor.  
   
- Belirtmezseniz, *hTreeItem*, bu yöntem, seçili öğe için dize almayı dener. Öğe seçiliyse ve *hTreeItem* olan `NULL`, bu yöntem başarısız olur.  
+ Siz belirtmezseniz *hTreeItem*, bu yöntem, geçerli seçilmiş öğe için dize almayı dener. Hiçbir öğe seçili değilse ve *hTreeItem* NULL ise bu yöntem başarısız olur.  
   
 ##  <a name="getrelatedlist"></a>  CMFCShellTreeCtrl::GetRelatedList  
- Bir işaretçi döndürür [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) bu ile ilişkili olan nesne [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) nesnesi.  
+ Bir işaretçi döndürür [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) bununla ilişkili nesne [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) nesne.  
   
 ```  
 CMFCShellListCtrl* GetRelatedList() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `CMFCShellListCtrl` bu ağaç denetimi nesneyle ilişkili nesne.  
+ Bir işaretçi `CMFCShellListCtrl` bu ağaç denetimi nesnesiyle ilişkili nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanarak bir `CMFCShellListCtrl` nesnesi ile birlikte bir `CMFCShellTreeCtrl` nesnesi, bir Gezgin benzeri penceresi oluşturabilirsiniz. Yöntem kullanmak [CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist) iki sınıf ilişkilendirilecek. İlişkili sonra framework otomatik olarak güncelleştirir `CMFCShellListCtrl` , seçim `CMFCShellTreeCtrl` değişiklikler.  
+ Kullanarak bir `CMFCShellListCtrl` nesnesi ile birlikte bir `CMFCShellTreeCtrl` nesnesi bir Gezgin benzeri pencere oluşturabilirsiniz. Bu yöntemi kullanmak [CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist) iki sınıf ilişkilendirilecek. İlişkili oldukları sonra framework otomatik olarak güncelleştirir `CMFCShellListCtrl` , seçimdeki `CMFCShellTreeCtrl` değişiklikler.  
   
 ##  <a name="onchildnotify"></a>  CMFCShellTreeCtrl::OnChildNotify  
 
@@ -210,14 +210,14 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="refresh"></a>  CMFCShellTreeCtrl::Refresh  
- Yeniler ve şekilde yeniden boyar [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md).  
+ Yenilenir ve halinde yeniden boyar [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md).  
   
 ```  
 void Refresh();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- İçinde görüntülenen öğelerin hiyerarşisini yenilemek için bu yöntemi çağırabilmeniz `CMFCShellTreeCtrl`.  
+ Görüntülenen öğelerin hiyerarşisini yenilemek için bu yöntemi çağırın `CMFCShellTreeCtrl`.  
   
 ##  <a name="selectpath"></a>  CMFCShellTreeCtrl::SelectPath  
  Bir öğeyi seçer [CMFCShellTreeCtrl sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md) sağlanan yola göre.  
@@ -229,16 +229,16 @@ BOOL SelectPath(LPCITEMIDLIST lpidl);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszPath*  
- Bir öğe yolu belirten bir dize.  
+ Bir öğenin konumunu belirten bir dize.  
   
  [in] *lpidl*  
  Öğeyi belirten bir PIDL işaretçisiyle birlikte  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `S_OK` başarılı olursa; `E_FAIL` Aksi takdirde.  
+ Başarılıysa S_OK; E_FAIL Aksi takdirde.  
   
 ##  <a name="setflags"></a>  CMFCShellTreeCtrl::SetFlags  
- Ağaç bağlam filtrelemek için bayrakları ayarlar.  
+ Ağacı Bağlam filtrelemek için bayraklarını ayarlar.  
   
 ```  
 void SetFlags(
@@ -247,17 +247,17 @@ void SetFlags(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwFlags*  
- Ayarlamak için işaretler.  
+ [in] *CertOpenStore*  
+ Ayarlanacak bayraklar.  
   
  [in] *bRefresh*  
- Belirten bir Boole değeri olup olmadığını `CMFCShellTreeCtrl` hemen yenilenmesi.  
+ Belirten Boolean bir değer olup olmadığını `CMFCShellTreeCtrl` hemen yenilenmesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CMFCShellTreeCtrl` Tüm kümesine bayrakları geçişleri [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066). Farklı bayrakları değerleri hakkında daha fazla bilgi için bkz: [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066).  
+ `CMFCShellTreeCtrl` Tüm kümesine bayrakları geçişleri [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066). Farklı bayrakları değerler hakkında daha fazla bilgi için bkz. [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066).  
   
 ##  <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList  
- İlişkilendiren bir [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi ile bir [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) nesnesi.  
+ İlişkilendirir bir [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi ile bir [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) nesne.  
   
 ```  
 void SetRelatedList(CMFCShellListCtrl* pShellList);
@@ -265,12 +265,12 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pShellList*  
- Bir işaretçi bir `CMFCShellListCtrl` nesnesi.  
+ Bir işaretçi bir `CMFCShellListCtrl` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem ilişkilendiren bir `CMFCShellListCtrl` ile bir `CMFCShellTreeCtrl`. Bu nesneler Gezgin benzeri pencere olarak görüntülenebilir: kullanıcı bir nesneyi seçtiğinde `CMFCShellTreeCtrl`, öğeleri ilişkili `CMFCShellListCtrl` otomatik olarak güncelleştirilir.  
+ Bu yöntem ilişkilendirir bir `CMFCShellListCtrl` ile bir `CMFCShellTreeCtrl`. Bu nesneleri bir Gezgin benzeri penceresi olarak görüntülenebilir: kullanıcı, nesneyi seçerse `CMFCShellTreeCtrl`, ilişkili öğeleri de `CMFCShellListCtrl` otomatik olarak güncelleştirilir.  
   
- Yöntem kullanmak [CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist) almak için `CMFCShellListCtrl` ile ilişkili bir `CMFCShellTreeCtrl`.  
+ Bu yöntemi kullanmak [CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist) alınacak `CMFCShellListCtrl` ile ilişkili bir `CMFCShellTreeCtrl`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

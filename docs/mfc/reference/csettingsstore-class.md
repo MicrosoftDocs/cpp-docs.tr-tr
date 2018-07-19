@@ -32,15 +32,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7711e0105085f0b7af1344ce230839e90f2b6851
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 48bc0f76ce5b8b3c1bafe3fcd0d6d793a217ae63
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079494"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37849701"
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore sınıfı
-Windows API işlevleri, kayıt defterine erişmek için kullandığınız bir nesne yönelimli bir arabirim sağlayan sarmalar.  
+Windows API işlevlerini, kayıt defterine erişmek için kullandığınız bir nesne yönelimli bir arabirim sağlayan sarmalar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,7 +54,7 @@ class CSettingsStore : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSettingsStore::CSettingsStore](#csettingsstore)|Oluşturan bir `CSettingsStore` nesnesi.|  
+|[CSettingsStore::CSettingsStore](#csettingsstore)|Oluşturur bir `CSettingsStore` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -63,16 +63,16 @@ class CSettingsStore : public CObject
 |[CSettingsStore::Close](#close)|Kayıt defteri anahtarı kapatır.|  
 |[CSettingsStore::CreateKey](#createkey)|Belirtilen anahtarı açar veya henüz yoksa oluşturur.|  
 |[CSettingsStore::DeleteKey](#deletekey)|Belirtilen anahtarı ve tüm alt öğelerini siler.|  
-|[CSettingsStore::DeleteValue](#deletevalue)|Belirtilen değer açık anahtarın siler.|  
-|[CSettingsStore::Open](#open)|Belirtilen anahtarı açar.|  
+|[CSettingsStore::DeleteValue](#deletevalue)|Açık anahtar için belirtilen değer siler.|  
+|[CSettingsStore::Open](#open)|Belirtilen anahtarı'nı açar.|  
 |[CSettingsStore::Read](#read)|Belirtilen bir anahtar değeri için verileri alır.|  
-|[CSettingsStore::Write](#write)|Kayıt defteri anahtarı açılamıyor altında bir değer yazar.|  
+|[CSettingsStore::Write](#write)|Açık anahtarı altındaki kayıt defteri değeri yazar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Üye işlevleri `CreateKey` ve `Open` çok benzer. Kayıt defteri anahtarı zaten varsa, `CreateKey` ve `Open` aynı şekilde işlev. Bununla birlikte, kayıt defteri anahtarı mevcut değilse `CreateKey` ancak oluşturacağı `Open` bir hata değeri döndürür.  
+ Üye işlevleri `CreateKey` ve `Open` çok benzer. Kayıt defteri anahtarı zaten varsa `CreateKey` ve `Open` aynı şekilde işlev. Ancak, kayıt defteri anahtarı mevcut değilse `CreateKey` ise oluşturacağı `Open` bir hata değeri döndürür.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek açık ve okuma yöntemlerinin kullanımı gösterilmiştir `CSettingsStore` sınıfı. Bu kod parçacığını parçası olan [araç ipucu gösterim örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnekte, Aç ve okuma yöntemleri kullanmak gösterilmektedir `CSettingsStore` sınıfı. Bu kod parçacığı parçasıdır [araç ipucu gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_ToolTipDemo#1](../../mfc/reference/codesnippet/cpp/csettingsstore-class_1.cpp)]  
   
@@ -92,7 +92,7 @@ virtual void Close();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem yıkıcısı çağrılır [CSettingsStore sınıfı](../../mfc/reference/csettingsstore-class.md).  
+ Varsayılan olarak, bu yöntem yıkıcıdan çağrılır [CSettingsStore sınıfı](../../mfc/reference/csettingsstore-class.md).  
   
 ##  <a name="createkey"></a>  CSettingsStore::CreateKey  
  Bir kayıt defteri anahtarı açar veya henüz yoksa oluşturur.  
@@ -103,16 +103,16 @@ virtual BOOL CreateKey(LPCTSTR pszPath);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pszPath*  
- Açılan veya oluşturulacak bir anahtarın adını belirtir.  
+ Oluşturulacak veya açılan bir anahtarın adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- başarılı olursa 0; Aksi takdirde sıfır olmayan bir değer.  
+ başarılıysa 0; Aksi halde sıfır olmayan bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CreateKey` kullanan `m_hKey` kayıt defteri sorguları kökü olarak. Arar *pszPath* bir alt olarak `m_hKey`. Anahtar mevcut değilse `CreateKey` oluşturur. Aksi halde, anahtar açar. `CreateKey` Ardından, ayarlar `m_hKey` açılan veya oluşturulan anahtarı.  
+ `CreateKey` kullanan `m_hKey` kökü olarak kayıt defteri sorgular. Arar *pszPath* alt olarak `m_hKey`. Anahtar mevcut değilse `CreateKey` oluşturur. Aksi halde, anahtar açılır. `CreateKey` Daha sonra Ayarlar `m_hKey` açık veya oluşturulan anahtarı.  
   
 ##  <a name="csettingsstore"></a>  CSettingsStore::CSettingsStore  
- Oluşturur bir `CSettngsStore` nesnesi.  
+ Oluşturur bir `CSettngsStore` nesne.  
   
 ```  
 CSettingsStore(
@@ -122,20 +122,20 @@ CSettingsStore(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bYönetim*  
- Belirten Boolean parametre olup olmadığını `CSettingsStore` nesne Yönetici modunda çalışan.  
+ Belirten bir Boole parametresi olmadığını `CSettingsStore` nesne Yönetici modunda çalışan.  
   
  [in] *bReadOnly*  
- Belirten Boolean parametre olup olmadığını `CSettingsStore` nesnesi salt okunur modda oluşturulur.  
+ Belirten bir Boole parametresi olmadığını `CSettingsStore` nesnesi salt okunur erişim modunda oluşturulur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *bYönetim* ayarlanır `true`, `m_hKey` üye değişkeni ayarlanmış `HKEY_LOCAL_MACHINE`. Ayarlarsanız *bYönetim* için `false`, `m_hKey` ayarlanır `HKEY_CURRENT_USER`.  
+ Varsa *bYönetim* TRUE olarak ayarlandığında `m_hKey` üye değişkeni ayarlanır **HKEY_LOCAL_MACHINE**. Ayarlarsanız *bYönetim* false olarak `m_hKey` ayarlanır **HKEY_CURRENT_USER**.  
   
- Güvenlik erişimi bağlıdır *bReadOnly* parametresi. Varsa *bReadonly* olan `false`, güvenlik erişimi ayarlanacak `KEY_ALL_ACCESS`. Varsa *bReadyOnly* olan `true`, güvenlik erişimi için bir birleşimini ayarlanacak `KEY_QUERY_VALUE, KEY_NOTIFY` ve `KEY_ENUMERATE_SUB_KEYS`. Kayıt defteri ile birlikte güvenlik erişim hakkında daha fazla bilgi için bkz: [kayıt defteri anahtarı güvenliği ve erişim hakları](http://msdn.microsoft.com/library/windows/desktop/ms724878).  
+ Güvenlik erişimi bağımlı *bReadOnly* parametresi. Varsa *bReadonly* yanlış, güvenlik erişimi ayarlanacak **KEY_ALL_ACCESS**. Varsa *bReadyOnly* TRUE ise bir birleşimi için güvenlik erişimi ayarlayacak **KEY_QUERY_VALUE, KEY_NOTIFY** ve **KEY_ENUMERATE_SUB_KEYS**. Kayıt defteri ile birlikte güvenlik erişim hakkında daha fazla bilgi için bkz. [kayıt defteri anahtarı güvenlik ve erişim hakları](http://msdn.microsoft.com/library/windows/desktop/ms724878).  
   
- Yıkıcı için `CSettingsStore` serbest `m_hKey` otomatik olarak.  
+ Yok Edicisi `CSettingsStore` sürümleri `m_hKey` otomatik olarak.  
   
 ##  <a name="deletekey"></a>  CSettingsStore::DeleteKey  
- Bir anahtarı ve tüm alt öğelerini kayıt defterinden siler.  
+ Kayıt defterinden bir anahtar ve tüm alt öğelerini siler.  
   
 ```  
 virtual BOOL DeleteKey(
@@ -145,21 +145,21 @@ virtual BOOL DeleteKey(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pszPath*  
- Silinecek anahtarın adı.  
+ Silinecek anahtar adı.  
   
  [in] *bYönetim*  
- Silmek için anahtar konumunu belirten anahtar.  
+ Anahtarı silmek için anahtar konumunu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem başarısız olur `CSettingsStore` nesnesidir salt okunur modda.  
+ Bu yöntem başarısız olur `CSettingsStore` salt okunur modda bir nesnedir.  
   
- Varsa parametresi *bYönetim* sıfır `DeleteKey` altında silmek anahtar arar `HKEY_CURRENT_USER`. Varsa *bYönetim* sıfır olmayan, olan `DeleteKey` altında silmek anahtar arar `HKEY_LOCAL_MACHINE`.  
+ Parametre *bYönetim* sıfır `DeleteKey` anahtarı silmek altında arar **HKEY_CURRENT_USER**. Varsa *bYönetim* sıfır değilse, `DeleteKey` anahtarı silmek altında arar **HKEY_LOCAL_MACHINE**.  
   
 ##  <a name="deletevalue"></a>  CSettingsStore::DeleteValue  
- Arasında bir değer siler `m_hKey`.  
+ Bir değer siler `m_hKey`.  
   
 ```  
 virtual BOOL DeleteValue(LPCTSTR pszValue);
@@ -170,10 +170,10 @@ virtual BOOL DeleteValue(LPCTSTR pszValue);
  Kaldırmak için değer alanını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ##  <a name="open"></a>  CSettingsStore::Open  
- Bir kayıt defteri anahtarı açar.  
+ Bir kayıt defteri anahtarı'nı açar.  
   
 ```  
 virtual BOOL Open(LPCTSTR pszPath);
@@ -184,10 +184,10 @@ virtual BOOL Open(LPCTSTR pszPath);
  Bir kayıt defteri anahtarı adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem belirtilen anahtarı başarıyla açıldıktan sonra Ayarlar `m_hKey` bu anahtarın işlenecek.  
+ Bu yöntem, belirtilen anahtar başarıyla açıldıktan sonra bu ayarlar `m_hKey` bu anahtarın işlenecek.  
   
 ##  <a name="read"></a>  CSettingsStore::Read  
  Bir kayıt defteri anahtarından değer okur.  
@@ -266,61 +266,61 @@ virtual BOOL Read(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pszKey*  
- Kayıt defterinden okunacak değerinin adını içeren null ile sonlandırılmış bir dize işaretçi.  
+ Kayıt defterinden okumak için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.  
   
  [out] *iVal*  
- Kayıt defteri anahtarından okumak değerini alan bir tamsayı değişken başvuru.  
+ Kayıt defteri anahtarından okuma değerini alan bir tamsayı değişkenine başvuru.  
   
  [out] *dwVal*  
- Kayıt defteri anahtarından okumak değerini alan bir 32-bit çift word değişken başvuru.  
+ Kayıt defteri anahtarından okuma değerini alan bir 32-bit çift sözcük değişkenine başvuru.  
   
  [out] *sVal*  
- Kayıt defteri anahtarından okumak değerini alan bir dize değişkeni referansı.  
+ Kayıt defteri anahtarından okuma değerini alan bir dize değişkeni başvuru.  
   
  [out] *scStringList*  
- Kayıt defteri anahtarından okumak değerini alan bir dize listesi değişkeni referansı.  
+ Kayıt defteri anahtarından okuma değerini alan bir dize listesi değişkenine başvuru.  
   
  [out] *scArray*  
- Kayıt defteri anahtarından okumak değerini alan bir dize dizisi değişkeni referansı.  
+ Kayıt defteri anahtarından okuma değerini alan bir dize dizi değişkenine başvuru.  
   
  [out] *dwcArray*  
- Kayıt defteri anahtarından okumak değerini alan bir 32-bit çift word dizi değişkeni referansı.  
+ Kayıt defteri anahtarından okuma değerini alan bir 32-bit çift sözcük dizi değişkenine başvuru.  
   
  [out] *wcArray*  
- Kayıt defteri anahtarından okumak değerini alan bir 16 bit word dizi değişkeni referansı.  
+ Kayıt defteri anahtarından okuma değerini alan bir 16 bit sözcük dizi değişkenine başvuru.  
   
  [out] *bcArray*  
- Kayıt defteri anahtarından okumak değerini alan bir bayt dizi değişkeni referansı.  
+ Kayıt defteri anahtarından okuma değerini alan bir bayt dizisi değişkenine başvuru.  
   
  [out] *Lppoınt*  
- Bir işaretçi başvuru bir `POINT` değerini alan yapısı kayıt defteri anahtarından okumak.  
+ Başvuru için bir işaretçi bir `POINT` kayıt defteri anahtarından değer alan yapısı okuyun.  
   
- [out] *rect*  
- Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) değerini alan değişken kayıt defteri anahtarından okumak.  
+ [out] *dikdörtgen*  
+ Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
   
  [out] *ppData*  
- Kayıt defteri anahtarından değer aldığı veri için bir işaretçi işaretçi okuyun.  
+ İşaretçi değeri alan veri işaretçisi, kayıt defteri anahtarından okuma.  
   
  [out] *pBytes*  
- İşaretçi bir işaretsiz tamsayı değişken. Bu değişken arabellek boyutunu alır, *ppData* işaret eder.  
+ Bir işaretsiz tamsayı değişkeni işaretçisi. Bu değişken arabellek boyutunu alır, *ppData* işaret eder.  
   
  [out] *listesi*  
- Başvuru bir [CObList](../../mfc/reference/coblist-class.md) değerini alan değişken kayıt defteri anahtarından okumak.  
+ Başvuru bir [CObList](../../mfc/reference/coblist-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
   
  [out] *obj*  
- Başvuru bir [CObject](../../mfc/reference/cobject-class.md) değerini alan değişken kayıt defteri anahtarından okumak.  
+ Başvuru bir [CObject](../../mfc/reference/cobject-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
   
  [out] *pObj*  
- Bir işaretçi başvuru bir `CObject` değerini alan değişken kayıt defteri anahtarından okumak.  
+ Başvuru için bir işaretçi bir `CObject` değeri alan değişken kayıt defteri anahtarından okuma.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Read` denetler *pszKey* bir alt olarak `m_hKey`.  
+ `Read` denetler *pszKey* alt olarak `m_hKey`.  
   
 ##  <a name="write"></a>  CSettingsStore::Write  
- Kayıt defteri anahtarı açılamıyor altında bir değer yazar.  
+ Açık anahtarı altındaki kayıt defteri değeri yazar.  
   
 ```  
 virtual BOOL Write(
@@ -396,58 +396,58 @@ virtual BOOL Write(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pszKey*  
- Ayarlanacak değer adını içeren bir dize işaretçi.  
+ Ayarlanacak değerin adını içeren bir dize işaretçisi.  
   
  [in] *iVal*  
- Depolamak için gerekli verileri içeren bir tamsayı değişken başvuru.  
+ Depolamak için verileri içeren bir tamsayı değişkenine başvuru.  
   
  [in] *dwVal*  
- Veri içeren bir 32-bit çift word değişkeni referansı.  
+ Verileri depolamak için bir 32-bit çift sözcük değişkenine başvuru.  
   
  [in] *pszVal*  
- İşaretçi depolamak için gerekli verileri içeren bir dize null ile sonlandırılmış değişkenine.  
+ Verileri depolamak için bir null ile sonlandırılmış dize değişkeni işaretçisi.  
   
  [in] *scStringList*  
- Başvuru bir [CStringList](../../mfc/reference/cstringlist-class.md) depolamak için gerekli verileri içeren değişken.  
+ Başvuru bir [CStringList](../../mfc/reference/cstringlist-class.md) depolamak için verileri içeren bir değişkeni.  
   
  [in] *bcArray*  
- Veri içeren bir bayt dizisi değişkeni referansı.  
+ Depolamak için verileri içeren bir bayt dizisi değişken başvuru.  
   
  [in] *scArray*  
- Veri içeren bir dize dizisi değişkeni referansı.  
+ Depolamak için verileri içeren bir dize dizi değişkeni başvuru.  
   
  [in] *dwcArray*  
- Veri içeren bir 32-bit çift word dizi değişkeni referansı.  
+ Verileri depolamak için bir 32-bit çift sözcük dizi değişkeni başvuru.  
   
  [in] *wcArray*  
- Veri içeren bir 16 bit word dizi değişkeni referansı.  
+ Depolamak için verileri içeren bir 16 bit sözcük dizi değişkenine başvuru.  
   
- [in] *rect*  
- Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) depolamak için gerekli verileri içeren değişken.  
+ [in] *dikdörtgen*  
+ Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) depolamak için verileri içeren bir değişkeni.  
   
  [in] *Lppoınt*  
- Bir işaretçi başvuru bir `POINT` depolamak için gerekli verileri içeren değişken.  
+ Başvuru için bir işaretçi bir `POINT` depolamak için verileri içeren bir değişkeni.  
   
  [in] *pData*  
- İşaretçi depolamak için gerekli verileri içeren bir arabellek.  
+ Verileri depolamak için içeren arabellek için işaretçi.  
   
  [in] *nBytes*  
- Hangi verilerin bayt cinsinden boyutu belirtir *pData* parametresi noktaları.  
+ Hangi verilerin bayt cinsinden boyutunu belirtir *pData* parametresi noktaları.  
   
  [in] *listesi*  
- Başvuru bir [CObList](../../mfc/reference/coblist-class.md) depolamak için gerekli verileri içeren değişken.  
+ Başvuru bir [CObList](../../mfc/reference/coblist-class.md) depolamak için verileri içeren bir değişkeni.  
   
  [in] *obj*  
- Başvuru bir [CObject](../../mfc/reference/cobject-class.md) depolamak için gerekli verileri içeren değişken.  
+ Başvuru bir [CObject](../../mfc/reference/cobject-class.md) depolamak için verileri içeren bir değişkeni.  
   
  [in] *pObj*  
- Bir işaretçi işaretçi bir `CObject` depolamak için gerekli verileri içeren değişken.  
+ Bir işaretçi işaretçisi bir `CObject` depolamak için verileri içeren bir değişkeni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
+ Başarılı olursa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kayıt defterine yazma için ayarlamanız gerekir *bReadOnly* oluşturduğunuzda sıfır olmayan bir değer için bir [CSettingsStore](../../mfc/reference/csettingsstore-class.md) nesnesi. Daha fazla bilgi için bkz: [CSettingsStore::CSettingsStore](#csettingsstore).  
+ Kayıt defterine yazmak için ayarlamanız gerekir *bReadOnly* oluşturduğunuzda sıfır olmayan bir değer için bir [CSettingsStore](../../mfc/reference/csettingsstore-class.md) nesne. Daha fazla bilgi için [CSettingsStore::CSettingsStore](#csettingsstore).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

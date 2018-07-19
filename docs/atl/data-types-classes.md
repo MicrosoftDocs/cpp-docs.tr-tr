@@ -1,5 +1,5 @@
 ---
-title: Veri türleri sınıfları (ATL) | Microsoft Docs
+title: Veri türü sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,22 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ab8c9d6839fad12459e65b396878f719a60c6d1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ae961d47f77b630eaff91e1c02e244454b12dc80
+ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353864"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37851320"
 ---
-# <a name="data-types-classes"></a>Sınıfları veri türleri
-Aşağıdaki sınıflar C++ veri türleri kaydır:  
+# <a name="data-types-classes"></a>Veri türü sınıfları
+Aşağıdaki sınıflar, C++ veri türleri kaydır:  
   
 -   [CComBSTR](../atl/reference/ccombstr-class.md) sarmalar `BSTR` veri türü.  
   
--   [CComVariant](../atl/reference/ccomvariant-class.md) sarmalar **değişken** veri türü.  
+-   [CComVariant](../atl/reference/ccomvariant-class.md) sarmalar `VARIANT` veri türü.  
   
--   [CComCurrency](../atl/reference/ccomcurrency-class.md) içerir yöntemleri ve işleçleri oluşturmak ve yönetmek için bir `CURRENCY` nesnesi.  
+-   [CComCurrency](../atl/reference/ccomcurrency-class.md) içeren yöntemleri ve işleçleri oluşturmak ve yönetmek için bir `CURRENCY` nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 
