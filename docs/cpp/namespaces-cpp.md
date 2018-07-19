@@ -21,17 +21,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aac72a23e50ca3bc6d5b737d533bd11a40ed9da3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 223bf6996d5142cbe8d3521c65596beb40312f2c
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32423682"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941192"
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
-Bir ad alanı içindeki tanımlayıcıları (adları türleri, İşlevler, değişkenler vb.) için bir kapsam sağlayan bir bildirim temelli bölgedir. Ad alanları kod mantıksal gruplar halinde düzenlemek için ve özellikle kod temeliniz birden çok kitaplıklarını içerir yüklendiğinde oluşabilecek ad çakışmaları önlemek için kullanılır. Ad alanı kapsamındaki tüm tanımlayıcılar nitelemesiz birbirine görünür. Örneğin her tanımlayıcısı için tam adı kullanarak ad alanı dışında tanımlayıcıları üyeleri erişebilir `std::vector<std::string> vec;`, göre veya başka bir [bildirimi kullanarak](../cpp/using-declaration.md) tek bir tanımlayıcı için (`using std::string`), ya da bir [yönergesi kullanarak](../cpp/namespaces-cpp.md#using_directives) ad alanındaki tüm tanımlayıcılar için (`using namespace std;`). Üstbilgi dosyaları kodunda her zaman tam ad alanı adı kullanmanız gerekir.  
+Bir ad alanı içindeki tanımlayıcıları (adları türler, İşlevler, değişkenler vb.) için bir kapsam sağlayan tanımlayıcı bir bölgedir. Ad alanlarında, kod mantıksal gruplar halinde düzenlemek ve özellikle kod tabanınızın birden çok kitaplık içerdiğinde oluşabilecek ad çakışmalarını önlemek için kullanılır. Ad alanı kapsamında tüm tanımlayıcılar niteleme olmadan bir başkasına görünür. Tanımlayıcı ad alanı dışında her tanımlayıcısı için tam adı örneğin kullanarak üyeleri erişebilir `std::vector<std::string> vec;`, göre veya başka bir [using bildirimi](../cpp/using-declaration.md) tek bir tanımlayıcı için (`using std::string`), veya bir [using yönergesi](../cpp/namespaces-cpp.md#using_directives) ad alanındaki tüm tanımlayıcıları için (`using namespace std;`). Üst bilgi dosyaları içindeki kod her zaman tam olarak nitelenmiş ad alanı adı kullanmanız gerekir.  
   
- Aşağıdaki örnek, bir ad alanı bildirimi gösterir ve ad alanı dışında kod üç şekilde üyeleri erişir.  
+ Aşağıdaki örnek, bir ad alanı bildirimi gösterir ve ad alanı dışında kod üç yolu üyeleri erişir.  
   
 ```cpp  
 namespace ContosoData  
@@ -45,7 +45,7 @@ namespace ContosoData
 }  
 ```  
   
- Tam ad kullanın:  
+ Tam adını kullanın:  
   
 ```cpp  
 ContosoData::ObjectManager mgr;  
@@ -53,7 +53,7 @@ mgr.DoSomething();
 ContosoData::Func(mgr);  
 ```  
   
- Bir kullanarak kapsam içine bir tanımlayıcı getirmek için bildirimi:  
+ Bir using bildirimi bir tanımlayıcı kapsama alınmak üzere:  
   
 ```cpp  
 using ContosoData::ObjectManager;  
@@ -62,7 +62,7 @@ mgr.DoSomething();
   
 ```  
   
- Kullanarak bir kullanma yönergesi her şeyi ad alanında kapsam içine duruma getirmek için:  
+ Bir using yönergesi her şeyi ad alanında kapsama alınmak üzere:  
   
 ```cpp  
 using namespace ContosoData;
@@ -73,16 +73,16 @@ Func(mgr);
   
 ```  
   
-## <a id="using_directives"></a> using yönergelerini  
- `using` Yönergesi verir tüm adlarının bir **ad alanı** olmadan kullanılacak *ad alanı adı* açık bir niteleyici olarak. Bir kullanarak birkaç farklı tanımlayıcı bir ad alanındaki; kullanıyorsanız yönerge bir uygulama dosyasında (yani *.cpp) bir veya iki tanımlayıcıları yeni kullanıyorsanız, kullanarak bir göz önünde bulundurun yalnızca bu tanımlayıcıları kapsamı ve tüm tanımlayıcılar ad alanında duruma getirmek için bildirimi. Yerel bir değişken adı ad alanı değişkeniyle aynı ada sahipse, ad alanı değişkeni gizlenir. Genel bir değişken olarak aynı ada sahip ad alanı değişkeninin bulundurulması bir hatadır.  
+## <a id="using_directives"></a> using yönergeleri  
+ **Kullanarak** yönergesi verir bölgedeki tüm adları bir **ad alanı** olmadan kullanılacak *ad alanı adı* açık Niteleyici olarak. Bir using birkaç farklı tanımlayıcı bir ad alanında; kullanıyorsanız, yönerge bir uygulama dosyasında (yani, *.cpp) bir veya iki tanımlayıcıları yeni kullanıyorsanız, kullanarak bir göz önünde bulundurun yalnızca bu tanımlayıcıları ad alanında kapsamı ve tüm tanımlayıcılar getirmek için bildirimi. Yerel bir değişken adı ad alanı değişkeniyle aynı ada sahipse, ad alanı değişkeni gizlenir. Genel bir değişken olarak aynı ada sahip ad alanı değişkeninin bulundurulması bir hatadır.  
   
 > [!NOTE]
->  Using yönergesi (Dosya kapsamında), bir .cpp dosyasının üst yerleştirilebilen ya da bir sınıf veya işlev tanımı içinde.  
+>  Using yönergesi (Dosya kapsamında), .cpp dosyasının üst yerleştirilebilir ya da bir sınıf veya işlev tanımı içinde.  
 >   
->  Genel olarak, üst bilgi dosyaları yönergeleri kullanarak Geçirilmemesi (* .h) bu başlığı içeren herhangi bir dosyayı her şeyi ad alanında kapsam içine getirecek hangi adı gizleme neden ve çakışma sorunları ad olduklarından, hata ayıklamak oldukça zor. Her zaman tam olarak nitelenmiş adlar bir üstbilgi dosyası kullanın. Bu adları çok uzun alırsanız, bunları kısaltmak için bir ad alanı diğer adı kullanabilirsiniz. (Aşağıya bakın.)  
+>  Genel olarak, üst bilgi dosyaları yönergeleri kullanarak Geçirilmemesi (* .h), üst bilgi içeren herhangi bir dosyayı her şeyi ad alanında kapsamına getirir çünkü hangi ad gizleme ve neden olabilir, çakışma sorunları ad hata ayıklamak oldukça zor. Her zaman bir üstbilgi dosyasında tam olarak nitelenmiş adlar kullanın. Bu ad çok uzun alırsanız, bunları kısaltmak için bir ad alanı diğer adlarını kullanabilirsiniz. (Aşağıya bakın.)  
   
 ## <a name="declaring-namespaces-and-namespace-members"></a>Ad alanları ve ad alanı üyeleri bildirme  
- Genellikle, bir ad alanı üstbilgi dosyasında bildirmelidir. İşlev uygulamaları ayrı bir dosyaya varsa, bu örnekte olduğu gibi işlev adları nitelemek.  
+ Genellikle bir üstbilgi dosyasında bir ad alanı bildirin. Ardından, işlev uygulamaları içinde ayrı bir dosya varsa, bu örnekte olduğu gibi işlev adlarını nitelendirin.  
   
 ```cpp  
 //contosoData.h   
@@ -95,7 +95,7 @@ namespace ContosoDataServer
 }  
 ```  
   
- Contosodata.cpp işlevi uygulamalarında yerleştirdiğiniz olsa bile tam adı kullanması gereken bir `using` dosyasının üst yönerge:  
+ Contosodata.cpp işlevi uygulamalarında yerleştirdiğiniz olsa bile tam nitelikli ad kullanması gereken bir `using` dosyasının en üstüne yönergenizi:  
   
 ```cpp  
 #include "contosodata.h"  
@@ -110,9 +110,9 @@ void ContosoDataServer::Foo() // use fully-qualified name here
 int ContosoDataServer::Bar(){return 0;}  
 ```  
   
- Bir ad alanı, tek bir dosya ve birden çok dosya birden çok bloklarındaki bildirilebilir. Ön işleme sırasında birlikte derleyici parçaları birleştirir ve sonuçta elde edilen ad alanı tüm parçaları olarak bildirilen tüm üyeler içerir. Buna örnek olarak standart kitaplık üstbilgi dosyaları her bildirilen std ad alanıdır.  
+ Bir ad alanı, tek bir dosyada ve birden çok dosya birden çok bloğundaki bildirilebilir. Ön işleme sırasında birlikte derleyici parçaları birleştirir ve elde edilen ad alanı tüm bölümleri bildirilen tüm üyeleri içerir. Buna örnek olarak, her bir standart kitaplık üstbilgi dosyalarında bildirilen std ad alanıdır.  
   
- Adlandırılmış bir ad alanı üyeleri tarafından tanımlanan adının açık nitelik bildirilen ad alanı dışında tanımlanabilir. Ancak, tanım bildirimi ait ad alanı kapsayan bir ad alanı bildiriminde noktadan sonra görünmesi gerekir. Örneğin:  
+ Adlandırılmış bir ad alanının üyeleri, tanımlanan adın açık nitelik tarafından bildirilen ad alanının dışında tanımlanabilir. Ancak tanımın, bildirimin ad alanını kapsayan bir ad alanında bildirim noktasından sonra görünmesi gerekir. Örneğin:  
   
 ```cpp  
 // defining_namespace_members.cpp  
@@ -130,16 +130,16 @@ namespace V {
 }  
 ```  
   
- Namespace üyelerini arasında birden çok üst bilgi dosyaları bildirilir ve doğru sırada Bu üstbilgiler eklemediniz bu hata oluşabilir.  
+ Namespace üyelerini birden çok üst bilgi dosyaları arasında bildirilir ve doğru sırada bu üstbilgileri eklemediniz bu hata oluşabilir.  
   
 ## <a name="the-global-namespace"></a>Genel ad alanı  
- Açık bir ad alanında bir tanımlayıcı bildirilmedi, örtük genel ad alanı bir parçasıdır. Genel olarak, mümkün olduğunda, giriş noktası dışında genel kapsamda bildirimleri yapmaktan kaçınmak deneyin [main işlevi](../c-language/main-function-and-program-execution.md), genel ad alanında olması gerekir. Açıkça genel tanımlayıcısı nitelemek için bir ad ile kapsam çözümü işleci olarak kullanın `::SomeFunction(x);`. Tanımlayıcı bu diğer ad alanında aynı ada sahip bir şey gelen ayırt ve ayrıca kodunuz başkalarının anlamak daha kolay hale getirmenize yardımcı olur.  
+ Bir tanımlayıcı, açık bir ad alanında bildirilmedi varsa örtük genel ad alanı bir parçasıdır. Genel olarak, mümkün olduğunda, giriş noktası hariç olmak üzere genel kapsamda bildirimleri yapma kaçınmaya çalışın [main işlevi](../c-language/main-function-and-program-execution.md), genel ad alanında olması gerekir. Genel tanımlayıcı açıkça nitelemek için olarak adı olmayan bir kapsam çözümleme işleci kullanın `::SomeFunction(x);`. Başka bir ad alanında aynı ada sahip bir yerden bu tanımlayıcıyı yaratabilmelerini sağlayacak ve ayrıca kodunuzu başkalarının anlamak daha kolay hale getirmek için yardımcı olur.  
   
 ## <a name="the-std-namespace"></a>std ad alanı  
- Tüm C++ Standart Kitaplığı türler ve işlevler içinde bildirilen `std` ad alanı veya ad alanları iç içe içinde `std`.  
+ İçinde bildirilen tüm C++ standart kitaplık türleri ve işlevleri `std` ad alanı veya ad alanlarında iç içe geçmiş içinde `std`.  
   
 ## <a name="nested-namespaces"></a>İç içe geçmiş ad alanları  
- Ad alanları iç içe. Sıradan iç içe geçmiş ad alanına sahip nitelenmemiş ana öğenin üyeleri, ancak üst üye olmayan erişimi iç içe geçmiş ad alanına nitelenmemiş erişimi (satır içi olarak bildirilir sürece), aşağıdaki örnekte gösterildiği gibi:  
+ Ad alanlarında iç içe. Sıradan bir iç içe geçmiş ad alanına sahip üst öğesinin üyeleri, ancak üst üyelerinin nitelenmemiş erişimi nitelenmemiş erişim sahibi iç içe geçmiş ad alanı (satır içi olarak bildirildiği sürece), aşağıdaki örnekte gösterildiği gibi:  
   
 ```cpp  
 namespace ContosoDataServer  
@@ -158,10 +158,10 @@ namespace ContosoDataServer
 }  
 ```  
   
- Sıradan iç içe geçmiş ad alanları, ortak arabirimi üst ad alanının parçası olmayan iç uygulama ayrıntılarını kapsüllemek için kullanılabilir.  
+ Sıradan iç içe geçmiş ad alanları, üst ad alanında'nın ortak arabiriminin bir parçası olmayan iç uygulama ayrıntılarını kapsüllemek için kullanılabilir.  
   
 ## <a name="inline-namespaces-c-11"></a>Satır içi ad alanları (C++ 11)  
- Sıradan iç içe geçmiş bir ad aksine bir satır içi ad alanı üyeleri üst ad alanı bir üyesi olarak kabul edilir. Bu özellik, bir üst ve iç içe geçmiş satır içi ad alanı içinde aşırı olan işlevler üzerinde çalışmak için aşırı yüklenmiş işlevlerdeki bağımsız değişkeni bağımlı aramayı etkinleştirir. Ayrıca, satır içi ad alanında bildirilen bir şablon için bir üst ad alanındaki uzmanlık bildirmek sağlar. Aşağıdaki örnekte nasıl dış kod gösterilir varsayılan olarak satır içi ad alanına bağlanır:  
+ Sıradan bir iç içe geçmiş ad aksine, bir satır içi ad alanının üyeleri, üst ad alanında bir üyesi olarak kabul edilir. Bu özellik, bir üst öğe ve bir iç içe geçmiş satır içi ad alanı içinde aşırı olan işlevler üzerinde çalışmak için aşırı yüklenmiş işlevlerdeki bağımsız değişken bağımlı aramayı etkinleştirir. Ayrıca, bir üst ad alanında satır içi ad alanında bildirilen bir şablonunun bir özelleştirmesi bildirmek sağlar. Aşağıdaki örnek, nasıl harici kod gösterir. varsayılan olarak satır içi ad alanına bağlar:  
   
 ```cpp  
 //Header.h  
@@ -195,7 +195,7 @@ int main()
 }  
 ```  
   
- Aşağıdaki örnek, bir üst öğesi bir satır içi ad alanında bildirilen bir şablon olarak uzmanlık nasıl bildirebilir gösterir:  
+ Aşağıdaki örnek, bir özelleştirmede üst öğesi bir satır içi ad alanında bildirilen bir şablonun nasıl bildirebilirsiniz gösterir:  
   
 ```cpp  
 namespace Parent  
@@ -214,11 +214,11 @@ namespace Parent
   
 ```  
   
- Ortak arabirimi kitaplığı değişiklikleri yönetmek için bir sürüm oluşturma mekanizması olarak satır içi ad alanları kullanın. Örneğin, bir tek üst ad alanı oluşturun ve her arabirimi üst içinde iç içe geçmiş kendi ad alanında sürümü yalıtma. En son veya tercih edilen sürüm tutan ad alanı, satır içi olarak tam ve üst ad alanı doğrudan üyesi değilmiş gibi bu nedenle sunulur. Parent::Class çağırır istemci kodu otomatik olarak yeni kod bağlarsınız. Eski sürümü kullanmayı tercih ederseniz istemcileri bu kodun sahip iç içe geçmiş ad tam yolunu kullanarak erişmeye devam edebilirsiniz.  
+ Sürüm oluşturma mekanizması olarak satır içi ad alanları, bir kitaplık ortak arabiriminde değişiklikleri yönetmek için kullanabilirsiniz. Örneğin, tek üst ad alanı oluşturma ve üst içinde iç içe geçmiş kendi ad alanı arabiriminde'nün her sürümü kapsüller. En son veya tercih edilen sürümü içeren ad alanı satır içi olarak tam ve ana ad uzayını doğrudan üyesi değilmiş gibi bu nedenle sunulur. Parent::Class çağıran istemci kodu yeni kodu otomatik olarak bağlanır. Eski sürümü kullanmayı tercih istemciler, bu kodu olan iç içe geçmiş ad alanı için tam yol kullanarak erişmeye devam edebilir.  
   
- Ad alanı bir derleme biriminde ilk bildirimine inline anahtar sözcüğü uygulanmış olması gerekir.  
+ İnline anahtar sözcüğü, bir derleme biriminde ad alanının ilk bildirimi için uygulanması gerekir.  
   
- Aşağıdaki örnek, bir arabirim, iç içe geçmiş bir ad alanındaki her iki sürümünü gösterir. `v_20` Ad alanına sahip bazı değişikliklere karşı `v_10` arabirim ve satır içi olarak işaretlendi. Yeni Kitaplık ve çağrıları kullanan istemci kodu `Contoso::Funcs::Add` v_20 sürümünü çağıracaktır. Arama girişiminde kod `Contoso::Funcs::Divide` şimdi bir derleme zamanı hatası alırsınız. Bunlar bu işlev gerçekten ihtiyacınız varsa, bunlar erişmeye devam edebilirsiniz `v_10` açıkça çağırarak sürüm `Contoso::v_10::Funcs::Divide`.  
+ Aşağıdaki örnek bir arabirim, her bir iç içe geçmiş ad alanında iki sürümünü gösterir. `v_20` Ad alanına sahip bazı değişikliklere karşı `v_10` arabirim ve satır içi olarak işaretlenir. Aramalar ve yeni bir kitaplık kullanan istemci kodu `Contoso::Funcs::Add` v_20 sürüm çağırır. Çağırmak için çalışan kod `Contoso::Funcs::Divide` artık bir derleme zamanı hatası alırsınız. Bu işlev, gerçekten ihtiyacınız varsa, yine de erişebilmeleri `v_10` açıkça çağırarak sürüm `Contoso::v_10::Funcs::Divide`.  
   
 ```cpp  
 namespace Contoso  
@@ -255,8 +255,8 @@ namespace Contoso
   
 ```  
   
-## <a id="namespace_aliases"></a> Namespace diğer adlar  
- Namespace adlarının benzersiz olması genellikle bunlar çok kısa olmamalıdır, yani gerekir. Kod bir adının uzunluğu okumak zor yaparsa veya burada yönergeleri kullanarak kullanılamaz ve ardından gerçek adı için bir kısaltma olarak hizmet veren bir ad alanı diğer adı yapabileceğiniz bir üstbilgi dosyası yazmak yorucu olabilir. Örneğin:  
+## <a id="namespace_aliases"></a> Namespace diğer adları  
+ Namespace adlarının benzersiz olması genellikle bunlar çok kısa olmamalıdır, yani gerekir. Kod bir adının uzunluğu okumak zor yaparsa veya burada yönergeleri kullanarak kullanılamaz ve ardından gerçek adı için bir kısaltma olarak hizmet veren bir ad alanı diğer adı yapabileceğiniz bir üstbilgi dosyasında tür yorucu olabilir. Örneğin:  
   
 ```cpp  
 namespace a_very_long_namespace_name { class Foo {}; }  
@@ -266,7 +266,7 @@ void Bar(AVLNN::Foo foo){ }
 ```  
   
 ## <a name="anonymous-or-unnamed-namespaces"></a>anonim veya adlandırılmamış ad alanları  
- Açık bir ad alanı oluşturma, ancak bir ad verin değil:  
+ Açık bir ad alanı oluşturun, ancak bir ad verin değil:  
   
 ```cpp  
 namespace  
@@ -275,7 +275,7 @@ namespace
 }  
 ```  
   
- Bu bir adlandırılmamış veya anonim ad alanı adı verilir ve değişken bildirimleri diğer dosyaları için kod görünmez olmasını istediğinizde yararlı olur (yani iç bağlantı vermediğiniz) adlı bir ad oluşturmak zorunda kalmadan. Aynı dosyada tüm kod adlandırılmamış ad alanındaki tanımlayıcıları görebilir, ancak ad alanı kendisiyle birlikte tanımlayıcıları dışında bu dosyayı görünür değildir — veya çeviri birim dışında daha kesin.  
+ Bu adlandırılmamış ya da anonim bir ad alanı adı verilir ve değişken bildirimleri diğer dosyalar için kod görünmez yapmak istediğinizde yararlı olur (yani iç bağlantı vermediğiniz) adlı bir ad alanı oluşturmak zorunda kalmadan. Aynı dosyadaki tüm kod adlandırılmamış bir ad alanı tanımlayıcılarını görebilir, ancak ad alanı kendisini yanı sıra tanımlayıcıların, bu dosyanın dışında görünür değildir — veya çeviri biriminde dışında daha kesin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)

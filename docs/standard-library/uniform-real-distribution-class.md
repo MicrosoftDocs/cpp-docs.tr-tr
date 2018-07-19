@@ -36,16 +36,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bedb88ae44faaea9d65b41dcc98a4e83354ea71b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 222aef46fb8080ba044904dbbedd5546cec51929
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858740"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963098"
 ---
 # <a name="uniformrealdistribution-class"></a>uniform_real_distribution Sınıfı
 
-(Her değere eşit olası) Tekdüzen oluşturur (bunlar dahil) özel bir çıktı aralıkta kayan nokta dağıtım.
+Oluşturur (her değer eşit düzeyde olasıdır) bir Tekdüzen bir kayan nokta dağılımı özel kapsamlı bir çıkış aralığı içinde.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,28 +81,28 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, böylece her değere eşit olası bir dağıtım noktası türüyle kayan bir kullanıcı tarafından belirtilen integral değerleri üreten bir özel (bunlar dahil) dağıtım açıklar. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı, her değer eşit düzeyde olasıdır, böylece bir dağıtım noktası türüyle kayan ve kullanıcı tanımlı bir integral değerini üreten bir özel kapsayıcı dağıtım açıklar. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[uniform_real_distribution](#uniform_real_distribution)|`uniform_real_distribution::a`|`uniform_real_distribution::param`|
 |`uniform_real_distribution::operator()`|`uniform_real_distribution::b`|[param_type](#param_type)|
 
-Özellik üyesi `a()` şu anda depolanan minimum bağlı dağıtımını döndürür sırada `b()` şu anda depolanan en fazla bağlı döndürür. Bu dağıtım sınıfı için bu minimum ve maksimum değerleri ortak özelliği işlevleri tarafından döndürülen aynıdır `min()` ve `max()` açıklanan [ \<rastgele >](../standard-library/random.md) konu.
+Özellik üyesi `a()` şuan depolanan en bağlı dağılımını döndürür ancak `b()` şuan depolanan maksimum sınır döndürür. Bu dağıtım sınıfı için bu minimum ve maksimum değerleri ortak özelliği işlevleri tarafından döndürülen aynıdır `min()` ve `max()` açıklanan [ \<rastgele >](../standard-library/random.md) konu.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
 
-`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
 
-`operator()` Üye işlevleri URNG motoru, geçerli parametre paket veya belirtilen parametre paket göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="example"></a>Örnek
 
@@ -190,7 +190,7 @@ Distribution for 10 samples:
 
 ## <a name="uniform_real_distribution"></a>  uniform_real_distribution::uniform_real_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit uniform_real_distribution(result_type a = 0.0, result_type b = 1.0);
@@ -199,23 +199,26 @@ explicit uniform_real_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*bir* rastgele değerler, kapsayıcı için alt sınır.
+*a*  
+Kapsamlı rastgele değerler için alt sınır.
 
-*b* rastgele değerler, özel kullanım için üst sınır.
+*b*  
+Özel rastgele değerler için üst sınır.
 
-*parametre* `param_type` dağıtım oluşturmak için kullanılan yapısı.
+*parametre*  
+`param_type` Dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `a < b`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `a` değeri tutan değeri *bir* ve, depolanan `b` değeri tutan değeri *b*.
+İlk Oluşturucu bir nesne oluşturur, saklı *bir* değerine değeri *bir* ve saklı *b* değerine değeri *b*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  uniform_real_distribution::param_type
 
-Dağıtım tüm parametreleri depolar.
+Dağıtım, tüm parametreleri depolar.
 
 ```cpp
 struct param_type {
@@ -231,17 +234,20 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*bir* rastgele değerler, kapsayıcı için alt sınır.
+*a*  
+Kapsamlı rastgele değerler için alt sınır.
 
-*b* rastgele değerler, özel kullanım için üst sınır.
+*b*  
+Özel rastgele değerler için üst sınır.
 
-*sağ* `param_type` için karşılaştırılacak nesne.
+*sağ*  
+`param_type` İçin karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `a < b`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

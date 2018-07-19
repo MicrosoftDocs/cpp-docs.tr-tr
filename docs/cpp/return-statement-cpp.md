@@ -17,14 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1252e6833dae0f04e1cb148c5703d04d42cee353
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aea9999adc7089499028850017a32245bba97db6
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948109"
 ---
 # <a name="return-statement-c"></a>return Deyimi (C++)
-Bir işlev yürütülmesi sonlandırır ve denetim çağıran işleve döndürür (veya işletim sistemine denetiminden aktarırsanız `main` işlevi). Çağrının hemen ardından noktada arama işlevinde yürütme sürdürür.  
+Bir işlevin yürütülmesini sonlandırır ve denetim çağırma işlevine döndürür (veya işletim sistemine denetiminden aktarırsanız `main` işlevi). Çağıran işlevin çağrının hemen ardından bir noktada yürütmeyi devam ettirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,19 +34,19 @@ return [expression];
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `expression` Yan tümcesi varsa, dönüştürülür işlevi bildiriminde belirtilen tür için bir başlatma gerçekleştirilen olur. İfade türü bir dönüştürme `return` işlevinin türü geçici nesneler oluşturabilir. Temporaries ne zaman ve nasıl oluşturulduğu hakkında daha fazla bilgi için bkz: [geçici nesneler](../cpp/temporary-objects.md).  
+ `expression` Yan tümcesi varsa, dönüştürülür işlevi bildiriminde belirtilen türe alacağı bir başlatma gerçekleştirildi. İfade türü dönüştürme **dönüş** işlevin türünü, geçici nesneler oluşturabilir. Nasıl ve ne zaman türünü kopyalamıyorsa oluşturulur hakkında daha fazla bilgi için bkz. [geçici nesneler](../cpp/temporary-objects.md).  
   
- Değeri `expression` yan tümcesi, çağıran işleve geri döndürülür. İfade atlanırsa, işlevin dönüş değeri tanımlanmamıştır. Oluşturucular ve yok ediciler ve türünün işlevlerinin `void`, bir ifadede belirtemezsiniz `return` deyimi. Tüm diğer türleri işlevlerinin bir ifadede belirtmelisiniz `return` deyimi.  
+ Değerini `expression` yan tümcesi, çağırma işlevine döndürülür. İfade atlanırsa, işlev dönüş değeri tanımsızdır. Oluşturucular ve Yıkıcılar ve işlevleri türü **void**, bir ifadede belirtemezsiniz **dönüş** deyimi. Diğer tüm türlerin işlevleri, bir ifadede belirtmelisiniz **dönüş** deyimi.  
   
- Denetim akışı işlev tanımı kapsayan blok çıktığında, olduğu gibi aynı sonucudur varsa bir `return` deyimi bir ifade olmadan yürütüldü. Bu değer döndürme olarak bildirilen işlevler için geçersiz.  
+ Denetim akışı işlev tanımı kapsayan blok çıktığında, olduğu gibi aynı sonucudur varsa bir **dönüş** deyimi bir ifade olmadan yürütülen. Bu, bir değer döndüren olarak bildirilen işlevler için geçersiz.  
   
- Bir işlev herhangi bir sayıda olabilir `return` deyimleri.  
+ Herhangi bir sayıda bir işlev bulunabilir **dönüş** deyimleri.  
   
- Aşağıdaki örnek bir ifade ile kullanan bir `return` iki tamsayının en büyük elde etmek için bildirimi.  
+ Aşağıdaki örnek, bir ifade ile kullanır. bir **dönüş** deyimi iki tamsayının en büyük elde edilir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // return_statement2.cpp  
 #include <stdio.h>  
   

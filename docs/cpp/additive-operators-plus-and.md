@@ -22,11 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f265bf915d9ba0c984b85235bd502d6ea0a5a77
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 89fc0f122f0859e6fc891ddfccd4bc99e7034bfe
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948241"
 ---
 # <a name="additive-operators--and--"></a>Ek İşleçler: + and -
 ## <a name="syntax"></a>Sözdizimi  
@@ -45,37 +46,37 @@ expression - expression
   
  Bu ikili işleçlerde soldan sağa ilişkilendirilebilirlik vardır.  
   
- Toplama işleçleri aritmetik veya işaretçi türlerinin işlenen alır. Toplamın sonucunu (**+**) işleci işlenenler toplamıdır. Çıkarma sonucu (**-**) işlecidir işlenenleri arasındaki fark. Bir veya iki işlenen işaretçileri varsa, işaretçileri nesnelere değil, işlevleri olmaları gerekir. Her iki işlenen işaretçileri olursa, her ikisi de aynı dizide nesnelerine işaretçiler olmadıkça sonuçları anlamlı değildir.  
+ Ek işleçler işlenenlerin aritmetik veya işaretçi türü yararlanın. Toplamın sonucunu (**+**) işleci işlenenler toplamıdır. Çıkarma işleminin sonucu (**-**) işlecinin işlenenleri arasındaki fark olarak. Bir veya iki işlenen de işaretçiyse, nesneler için değil, işlev işaretçileri olmaları gerekir. Her iki işlenen de işaretçiyse, her ikisi de aynı dizide nesne işaretçileri olmadığı sürece sonuç anlamlı değildir.  
   
- Toplama işleçleri ele işlenenleri *aritmetik*, *tam sayı*, ve *skaler* türleri. Bunlar aşağıdaki tabloda tanımlanır.  
+ Toplama işleçleri ele işleneni *aritmetik*, *integral*, ve *skaler* türleri. Bunlar aşağıdaki tabloda tanımlanır.  
   
-### <a name="types-used-with-additive-operators"></a>Toplama işleçleri ile kullanılan türleri  
+### <a name="types-used-with-additive-operators"></a>Toplama işleçleri ile kullanılan türler  
   
 |Tür|Açıklama|  
 |----------|-------------|  
-|*Aritmetik*|Kayan ve tam sayı türleri topluca "aritmetik" türleri olarak adlandırılır.|  
-|*Tam sayıdan kaymaya*|Türleri char ve tüm boyutları (uzun ve kısa) ve numaralandırmalar int "tümleşik" türleridir.|  
-|*skaler*|Skaler işleçler aritmetik veya işaretçi türündeki işlenenler ' dir.|  
+|*Aritmetik*|İntegral ve kayan türler topluca "aritmetik" türleri adı verilir.|  
+|*tam sayı*|Tür char ve tüm boyutları (uzun, kısa) ve numaralandırmalar int "tümleşik" türleridir.|  
+|*skaler*|Skaler işlenen, aritmetik veya işaretçi türünde işlenenler ' dir.|  
   
- Bu işleçlere yasal birleşimleridir:  
+ Bu işleçler için yasal birleşimleridir:  
   
  *aritmetik* + *aritmetik*  
   
- *skaler* + *tam sayı*  
+ *skaler* + *tamsayı*  
   
- *tam sayı* + *skaler*  
+ *integral* + *skaler*  
   
  *aritmetik* - *aritmetik*  
   
  *skaler* - *skaler*  
   
- Toplama ve çıkarma eşdeğer işlemleri olmadığına dikkat edin.  
+ Toplama ve çıkarma eşdeğer operations olmadığına dikkat edin.  
   
- Her iki işlenen aritmetik türdeyse, dönüştürmeleri ele [standart dönüşümler](standard-conversions.md) işlenenler için uygulanır ve sonuç dönüştürülen türüdür.  
+ Her iki işlenen de aritmetik türde ise, içinde kapsanan dönüştürmeler [standart dönüştürmeler](standard-conversions.md) işlenenlere uygulanır ve sonuç dönüştürülmüş türü verir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_Additive_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -93,10 +94,10 @@ int main() {
 }  
 ```  
   
-## <a name="pointer-addition"></a>İşaretçi ekleme  
+## <a name="pointer-addition"></a>İşaretçi toplama  
  Ek bir işlem içinde, işlenenlerden biri nesneleri içeren bir dizinin işaretçisi ise, diğeri tamsayı türünde olmalıdır. Sonuç, özgün işaretçi ile aynı türde ve başka bir dizi öğesine işaret eden bir işaretçidir. Aşağıdaki kod parçası bu kavramı gösterir:  
   
-```  
+```cpp 
 short IntArray[10]; // Objects of type short occupy 2 bytes  
 short *pIntArray = IntArray;  
   
@@ -114,11 +115,11 @@ for( int i = 0; i < 10; ++i )
 >  `pIntArray = pIntArray + 1` formunun kodu C++ programlarında nadiren bulunur; arttırma yapmak için şu formlar tercih edilir: `pIntArray++` veya `pIntArray += 1`.  
   
 ## <a name="pointer-subtraction"></a>İşaretçi çıkarması  
- Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifade türü ptrdiff_t imzalı tam sayı sonucunu verir (standart INCLUDE dosyasında tanımlanan \<stddef.h >).  
+ Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifadesi türü işaretli integral sonucunu verir **ptrdiff_t** (standart içerme dosyasında tanımlanan \<stddef.h >).  
   
- İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Çıkarma değerini gösteren bir işaretçidir (*n* - *ı*) th dizi öğesi, burada *n* öğesi için veözgünişaretçisiişaretediyor*ı* ikinci işlenen tam sayı değeri.  
+ İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Bir işaretçi çıkarma değeri (*n* - *miyim*) dizi öğesinin, burada *n* öğe için veorijinalişaretçitarafındanişaretedilen*miyim* ikinci işleneni integral değeridir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Ek İşleçleri](../c-language/c-additive-operators.md)

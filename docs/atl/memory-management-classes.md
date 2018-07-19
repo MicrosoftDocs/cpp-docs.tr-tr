@@ -14,58 +14,58 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6849327d796afd1f500102167b82b08b9c60be18
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2b7b66989b140b7c93abefdd8075adb640b04b6f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356514"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961103"
 ---
 # <a name="memory-management-classes"></a>Bellek yönetimi sınıfları
-Bu sınıfların yığın işaretçileri, akıllı işaretçiler ve diğer bellek ayırma yordamları için destek sağlar.  
+Bu sınıflar, yığın işaretçileri, akıllı işaretçiler ve diğer bellek ayırma yordamlarını için destek sağlar.  
   
--   [CAutoPtr](../atl/reference/cautoptr-class.md) Bu sınıf, bir akıllı işaretçi nesnesi temsil eder.  
+-   [CAutoPtr](../atl/reference/cautoptr-class.md) Bu sınıf, bir akıllı işaretçi nesnesinin temsil eder.  
   
--   [CAutoPtrArray](../atl/reference/cautoptrarray-class.md) akıllı işaretçiler bir dizi oluşturulurken, bu sınıfın sağladığı yöntemlerle yararlıdır.  
+-   [CAutoPtrArray](../atl/reference/cautoptrarray-class.md) akıllı işaretçiler dizisi oluştururken bu sınıfın sağladığı yöntemlerle yararlıdır.  
   
 -   [CAutoPtrList](../atl/reference/cautoptrlist-class.md) akıllı işaretçiler listesi oluşturulurken, bu sınıfın sağladığı yöntemlerle yararlıdır.  
   
--   [CAutoVectorPtr](../atl/reference/cautovectorptr-class.md) vektör yeni ve delete işleçleri kullanarak bir akıllı işaretçi nesnesi bu sınıfı temsil eder.  
+-   [CAutoVectorPtr](../atl/reference/cautovectorptr-class.md) Bu sınıf, yeni vektör ve delete işleçleri kullanarak akıllı işaretçi nesnesinin temsil eder.  
   
--   [CComAllocator](../atl/reference/ccomallocator-class.md) Bu sınıf, COM bellek yordamları kullanarak bellek yönetme için yöntemleri sağlar.  
+-   [CComAllocator](../atl/reference/ccomallocator-class.md) Bu sınıf bellek COM bellek yordamları kullanarak yönetmek için yöntemler sağlar.  
   
--   [CComGITPtr](../atl/reference/ccomgitptr-class.md) Bu sınıf arabirimi işaretçiler ve genel arabirim tablosu (GIT) ilgilenmek için yöntemleri sağlar.  
+-   [Ccomgıtptr](../atl/reference/ccomgitptr-class.md) bu sınıfın sağladığı yöntemlerle arabirim işaretçileri ve genel arabirim tablosu (GIT).  
   
--   [CComHeap](../atl/reference/ccomheap-class.md) Bu sınıf uygulayan [IAtlMemMgr](../atl/reference/iatlmemmgr-class.md) COM bellek ayırma işlevlerini kullanma.  
+-   [CComHeap](../atl/reference/ccomheap-class.md) bu sınıfın uyguladığı [Iatlmemmgr](../atl/reference/iatlmemmgr-class.md) COM bellek ayırma işlevlerini kullanma.  
   
--   [CComHeapPtr](../atl/reference/ccomheapptr-class.md) yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
+-   [CComHeapPtr](../atl/reference/ccomheapptr-class.md) yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfının.  
   
--   [CComPtr](../atl/reference/ccomptr-class.md) COM arabirim işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
+-   [CComPtr](../atl/reference/ccomptr-class.md) COM arabirim işaretçilerini yönetmek için bir akıllı işaretçi sınıfının.  
   
 -   [CComPtrBase](../atl/reference/ccomptrbase-class.md) Bu sınıf, COM tabanlı bellek yordamları kullanarak akıllı işaretçi sınıflar için temel sağlar.  
   
--   [CComQIPtr](../atl/reference/ccomqiptr-class.md) COM arabirim işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
+-   [CComQIPtr](../atl/reference/ccomqiptr-class.md) COM arabirim işaretçilerini yönetmek için bir akıllı işaretçi sınıfının.  
   
--   [CCRTAllocator](../atl/reference/ccrtallocator-class.md) Bu sınıf CRT bellek yordamları kullanarak bellek yönetme için yöntemleri sağlar.  
+-   [CCRTAllocator](../atl/reference/ccrtallocator-class.md) Bu sınıf bellek CRT bellek yordamları kullanarak yönetmek için yöntemler sağlar.  
   
--   [CCRTHeap](../atl/reference/ccrtheap-class.md) Bu sınıf uygulayan [IAtlMemMgr](../atl/reference/iatlmemmgr-class.md) CRT heap işlevleri kullanarak.  
+-   [CCRTHeap](../atl/reference/ccrtheap-class.md) bu sınıfın uyguladığı [Iatlmemmgr](../atl/reference/iatlmemmgr-class.md) CRT yığın işlevlerinin kullanarak.  
   
--   [CGlobalHeap](../atl/reference/cglobalheap-class.md) Bu sınıf uygulayan [IAtlMemMgr](../atl/reference/iatlmemmgr-class.md) Win32 genel yığın işlevlerini kullanma.  
+-   [CGlobalHeap](../atl/reference/cglobalheap-class.md) bu sınıfın uyguladığı [Iatlmemmgr](../atl/reference/iatlmemmgr-class.md) Win32 genel yığın işlevlerini kullanma.  
   
--   [CHandle](../atl/reference/chandle-class.md) Bu sınıf oluşturmak ve bir tanıtıcı nesnesi kullanmak için yöntemleri sağlar.  
+-   [CHandle](../atl/reference/chandle-class.md) bu sınıfın sağladığı yöntemlerle oluşturma ve bir tanıtıcı nesnesi kullanma.  
   
--   [CHeapPtr](../atl/reference/cheapptr-class.md) yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
+-   [CHeapPtr](../atl/reference/cheapptr-class.md) yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfının.  
   
--   [CHeapPtrBase](../atl/reference/cheapptrbase-class.md) birkaç yığın işaretçi sınıfları akıllı için bu sınıf temelini oluşturur.  
+-   [CHeapPtrBase](../atl/reference/cheapptrbase-class.md) birkaç akıllı yığın işaretçisi sınıfları için bu sınıf temelini oluşturur.  
   
 -   [CHeapPtrList](../atl/reference/cheapptrlist-class.md) yığın işaretçileri listesi oluşturulurken, bu sınıfın sağladığı yöntemlerle yararlıdır.  
   
--   [CLocalHeap](../atl/reference/clocalheap-class.md) Bu sınıf uygulayan [IAtlMemMgr](../atl/reference/iatlmemmgr-class.md) Win32 yerel yığın işlevlerini kullanma.  
+-   [CLocalHeap](../atl/reference/clocalheap-class.md) bu sınıfın uyguladığı [Iatlmemmgr](../atl/reference/iatlmemmgr-class.md) Win32 yerel yığın işlevlerini kullanma.  
   
--   [CWin32Heap](../atl/reference/cwin32heap-class.md) Bu sınıf uygulayan [IAtlMemMgr](../atl/reference/iatlmemmgr-class.md) Win32 yığın ayırma işlevleri kullanarak.  
+-   [CWin32Heap](../atl/reference/cwin32heap-class.md) bu sınıfın uyguladığı [Iatlmemmgr](../atl/reference/iatlmemmgr-class.md) Win32 yığın ayırma işlevleri kullanarak.  
   
--   [IAtlMemMgr](../atl/reference/iatlmemmgr-class.md) Bu sınıf, bir bellek yöneticisi arabirimi temsil eder.  
+-   [Iatlmemmgr](../atl/reference/iatlmemmgr-class.md) Bu sınıf, bir bellek yöneticisi için arabirimi temsil eder.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Çalışan Archetype | Microsoft Docs
+title: Çalışan modeli | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,45 +14,45 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cee9df0b137655fe66e68c189de756f15233a94d
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 75f9e974a2969fa817598556e3e043626a826970
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255984"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881311"
 ---
-# <a name="worker-archetype"></a>Çalışan Archetype
-Uygun sınıfları *çalışan* archetype sağlamak işlem iş öğeleri için kod sıraya alınmış bir iş parçacığı havuzu.  
+# <a name="worker-archetype"></a>Çalışan modeli
+Uygun sınıfları *çalışan* archetype işlem iş öğeleri koda sıraya alınmış bir iş parçacığı havuzunda sağlayın.  
   
  **Uygulama**  
   
- Bu archetype uyumsuz bir sınıf uygulama için sınıf aşağıdaki özellikleri sağlamanız gerekir:  
+ Sınıfı, bu archetype için uygun bir sınıf uygulamak için aşağıdaki özellikleri sağlamanız gerekir:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Initialize](#initialize)|Tüm istekler için geçirilmeden önce çalışan nesneyi başlatmak üzere çağrılır [yürütme](#execute).|  
-|[Yürütme](#execute)|Bir iş öğesi işlemek üzere çağrılır.|  
-|[Sonlandırma](#terminate)|Alt nesne için tüm istekleri iletildi sonra kapatmak için çağrılan [yürütme](#execute).|  
+|[Initialize](#initialize)|Tüm istekler için geçirilmeden önce alt nesne başlatmak için çağırılır [yürütme](#execute).|  
+|[Yürütme](#execute)|Bir iş öğesini işlemek için çağrılır.|  
+|[sonlandırma](#terminate)|Alt nesne için tüm istekleri geçildi; sonra kapatmak için çağrılan [yürütme](#execute).|  
   
-|TypeDef|Açıklama|  
+|tür tanımı|Açıklama|  
 |-------------|-----------------|  
-|[RequestType](#requesttype)|Typedef çalışan sınıfı tarafından işlenen iş öğesi türü için.|  
+|[RequestType](#requesttype)|Çalışan sınıfı tarafından işlenen iş öğesi türü için bir typedef.|  
   
- Tipik bir *çalışan* sınıfı şu şekilde görünür:  
+ Tipik bir *çalışan* sınıfı aşağıdaki gibi görünür:  
   
  [!code-cpp[NVC_ATL_Utilities#137](../../atl/codesnippet/cpp/worker-archetype_1.cpp)]  
   
- **Var olan uygulamalar**  
+ **Mevcut uygulamaları**  
   
- Bu sınıfların bu archetype uygun:  
+ Bu sınıflar için bu archetype uyar:  
   
 |örneği|Açıklama|  
 |-----------|-----------------|  
-|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|İş parçacığı havuzundan isteklerini alır ve bunları oluşturulur ve her istek için yok bir alt nesne açın aktarır.|  
+|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|İş parçacığı havuzu isteklerini alır ve bunları oluşturulur ve imha her istek için bir alt nesnesi açın geçirir.|  
   
  **Kullanın**  
   
- Bu şablon parametreleri sınıfı bu archetype uygun olması için bekler:  
+ Bu şablon parametreleri için bu archetype uymak için sınıf bekler:  
   
 |Parametre adı|Kullanan|  
 |--------------------|-------------|  
@@ -63,7 +63,7 @@ Uygun sınıfları *çalışan* archetype sağlamak işlem iş öğeleri için k
  **Başlık:** atlutil.h  
   
 ## <a name="execute"></a>WorkerArchetype::Execute
-Bir iş öğesi işlemek üzere çağrılır.  
+Bir iş öğesini işlemek için çağrılır.  
   
   
   
@@ -75,48 +75,48 @@ void Execute(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `request`  
- İşlenmek üzere iş öğesi. İş öğesi aynı türde olduğundan `RequestType`.  
+ *İstek*  
+ İşlenmek üzere çalışma öğesi. İş öğesi aynı türde olan `RequestType`.  
   
- `pvWorkerParam`  
- Alt sınıf tarafından anlaşılan özel bir parametre. Ayrıca geçirilen `WorkerArchetype::Initialize` ve `Terminate`.  
+ *pvWorkerParam*  
+ Çalışan sınıfı tarafından anlaşılan bir özel parametre. Ayrıca geçirilen `WorkerArchetype::Initialize` ve `Terminate`.  
   
- `pOverlapped`  
- Bir işaretçi [ÇAKIŞAN](http://msdn.microsoft.com/library/windows/desktop/ms684342) üzerinde hangi çalışma öğeleri kuyruğa alındı kuyruk oluşturmak için kullanılan yapısı.  
+ *pOverlapped*  
+ Bir işaretçi [ÇAKIŞAN](http://msdn.microsoft.com/library/windows/desktop/ms684342) yapısı üzerinde hangi iş öğelerini kuyruğa alındı sırayı oluşturmak için kullanılır.  
   
 ## <a name="initialize"></a> WorkerArchetype::Initialize
-Tüm istekler için geçirilmeden önce çalışan nesneyi başlatmak üzere çağrılır `WorkerArchetype::Execute`.  
+Tüm istekler için geçirilmeden önce alt nesne başlatmak için çağırılır `WorkerArchetype::Execute`.  
 ```
 BOOL Initialize(void* pvParam) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `pvParam`  
- Alt sınıf tarafından anlaşılan özel bir parametre. Ayrıca geçirilen `WorkerArchetype::Terminate` ve `WorkerArchetype::Execute`.  
+ *pvParam*  
+ Çalışan sınıfı tarafından anlaşılan bir özel parametre. Ayrıca geçirilen `WorkerArchetype::Terminate` ve `WorkerArchetype::Execute`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dönüş **TRUE** başarılı, **FALSE** hatasında.  
+ Başarılıysa TRUE döndürün başarısız olduğunda FALSE.  
   
 ## <a name="requesttype"></a> WorkerArchetype::RequestType
-Typedef çalışan sınıfı tarafından işlenen iş öğesi türü için.  
+Çalışan sınıfı tarafından işlenen iş öğesi türü için bir typedef.  
   
 ```  
 typedef MyRequestType RequestType;    
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu tür ilk parametre olarak kullanılması gereken `WorkerArchetype::Execute` ve bir iç ULONG_PTR gelen ve giden cast yeteneğinin olması gerekir.  
+ Bu tür, ilk parametresi olarak kullanılmalıdır `WorkerArchetype::Execute` ve bir iç ULONG_PTR gelen ve giden cast uyumlu olması gerekir.  
   
 ## <a name="terminate"></a> WorkerArchetype::Terminate
-Alt nesne için tüm istekleri iletildi sonra kapatmak için çağrılan `WorkerArchetype::Execute`).  
+Alt nesne için tüm istekleri geçildi; sonra kapatmak için çağrılan `WorkerArchetype::Execute`).  
     
 ``` 
 void Terminate(void* pvParam) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `pvParam`  
- Alt sınıf tarafından anlaşılan özel bir parametre. Ayrıca geçirilen `WorkerArchetype::Initialize` ve `WorkerArchetype::Execute`.  
+ *pvParam*  
+ Çalışan sınıfı tarafından anlaşılan bir özel parametre. Ayrıca geçirilen `WorkerArchetype::Initialize` ve `WorkerArchetype::Execute`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../../atl/active-template-library-atl-concepts.md)   

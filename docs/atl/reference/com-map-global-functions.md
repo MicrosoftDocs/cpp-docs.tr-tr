@@ -1,5 +1,5 @@
 ---
-title: COM eşlemesi genel işlevler | Microsoft Docs
+title: COM eşlemesi genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,20 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 509479a923203acd80eaac1ef90aa64125d208c6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a23dc598d499071183cfcf7b0172611a693e569d
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359885"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884242"
 ---
-# <a name="com-map-global-functions"></a>COM eşlemesi genel işlevler
-Bu işlevler COM eşlemesi için desteği **IUnknown** uygulamaları.  
+# <a name="com-map-global-functions"></a>COM eşlemesi genel işlevleri
+Bu işlevler için COM eşleme desteği `IUnknown` uygulamaları.  
   
 |||  
 |-|-|  
-|[AtlInternalQueryInterface](#atlinternalqueryinterface)|İçin temsilciler **IUnknown** toplanmayan bir nesne.|  
-|[InlineIsEqualIUnknown](#inlineisequaliunknown)|Arabirimleri karşı karşılaştırma için verimli kod oluşturur **IUnknown**.|  
+|[AtlInternalQueryInterface](#atlinternalqueryinterface)|Devreder `IUnknown` toplanmayan bir nesne.|  
+|[InlineIsEqualIUnknown](#inlineisequaliunknown)|Arabirimleri karşı karşılaştırma verimli kod oluşturur `IUnknown`.|  
 
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -48,29 +48,29 @@ HRESULT AtlInternalQueryInterface(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pThis`  
- [in] COM eşlemesi maruz arabirimleri içeren nesneyi gösteren bir işaretçi `QueryInterface`.  
+ *pThis*  
+ [in] Açık arabirimler COM haritasını içeren nesneye bir işaretçi `QueryInterface`.  
   
- `pEntries`  
- [in] Bir dizi **_ATL_INTMAP_ENTRY** kullanılabilir arabirimleri haritasını erişim yapıları.  
+ *pEntries*  
+ [in] Bir dizi `_ATL_INTMAP_ENTRY` kullanılabilir arabirim haritasını erişim yapılar.  
   
- `iid`  
- [in] İstenen arabirimi GUID.  
+ *IID*  
+ [in] İstenen arabiriminin GUID'si.  
   
- `ppvObject`  
- [out] Belirtilen arabirim işaretçisi gösteren bir işaretçi `iid`, veya **NULL** arabirimi bulunmazsa.  
+ *ppvObject*  
+ [out] Belirtilen arabirim işaretçisini bir işaretçi *IID*, veya arabirim bulunamazsa NULL.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AtlInternalQueryInterface` Yalnızca COM eşleme tablosu arabirimlerde işler. Nesnenizin toplanır, `AtlInternalQueryInterface` dış bilinmeyen temsilci değil. Makro COM harita tabloya arabirimleri girebilirsiniz [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) veya türevleri biri.  
+ `AtlInternalQueryInterface` yalnızca COM eşleme tablosunda arabirimleri işler. Nesne toplanırsa, `AtlInternalQueryInterface` için dış bilinmeyen temsilci değil. COM eşlemesi tablosuna makro arabirimleri girebilirsiniz [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) veya türevleri biri.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#94](../../atl/codesnippet/cpp/com-map-global-functions_1.cpp)]  
   
 ##  <a name="inlineisequaliunknown"></a>  InlineIsEqualIUnknown  
- Özel bir durum için sınama için bu işlevi çağırmak **IUnknown**.  
+ Sınama özel durum için bu işlevi çağırın `IUnknown`.  
   
 ```
 BOOL InlineIsEqualUnknown(REFGUID rguid1);
@@ -78,8 +78,8 @@ BOOL InlineIsEqualUnknown(REFGUID rguid1);
   
 ### <a name="parameters"></a>Parametreler  
  *rguid1*  
- [in] Karşılaştırma yapılacak GUID **IID_IUnknown**.  
+ [in] Karşılaştırma yapılacak GUID `IID_IUnknown`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlevler](../../atl/reference/atl-functions.md)   
+ [İşlevleri](../../atl/reference/atl-functions.md)   
  [COM Eşleme Makroları](../../atl/reference/com-map-macros.md)

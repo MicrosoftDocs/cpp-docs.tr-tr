@@ -1,5 +1,5 @@
 ---
-title: IQuickActivateImpl sınıfı | Microsoft Docs
+title: Iquickactivateımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -23,18 +23,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b87427408483a60cf33b46a1a670095d211b3d80
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9131a1cc1f8d0c66f2eb3616f4903db74ea4bdf0
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362810"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881379"
 ---
-# <a name="iquickactivateimpl-class"></a>IQuickActivateImpl sınıfı
-Bu sınıf kapsayıcıları denetim başlatma tek bir çağrı halinde birleştirir.  
+# <a name="iquickactivateimpl-class"></a>Iquickactivateımpl sınıfı
+Bu sınıf, kapsayıcılar denetimi başlatma tek bir çağrı halinde birleştirir.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,7 +44,7 @@ class ATL_NO_VTABLE IQuickActivateImpl : public IQuickActivate
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IQuickActivateImpl`.  
   
 ## <a name="members"></a>Üyeler  
@@ -55,12 +55,12 @@ class ATL_NO_VTABLE IQuickActivateImpl : public IQuickActivate
 |----------|-----------------|  
 |[IQuickActivateImpl::GetContentExtent](#getcontentextent)|Çalışan bir denetim için geçerli görüntü boyutunu alır.|  
 |[IQuickActivateImpl::QuickActivate](#quickactivate)|Hızlı Başlatma yüklenen denetimleri gerçekleştirir.|  
-|[IQuickActivateImpl::SetContentExtent](#setcontentextent)|Kapsayıcı atanmış ne kadar görüntü alanını denetim bildirir.|  
+|[IQuickActivateImpl::SetContentExtent](#setcontentextent)|Kapsayıcı atanmış ne kadar görüntüleme alanı denetim bildirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IQuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms690146) arabirimi denetimlerini tek bir çağrı başlatma birleştirerek yüklerken gecikmelerden kaçınmak kapsayıcıları yardımcı olur. `QuickActivate` Yöntemi için bir işaretçi geçirmek kapsayıcı sağlar bir [QACONTAINER](http://msdn.microsoft.com/library/windows/desktop/ms688630) işaretçileri denetimi için tüm arabirimler tutan yapısı gerekiyor. Getirisi, denetim için bir işaretçi geri geçirir bir [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) kapsayıcı tarafından kullanılan kendi arabirimlerine işaretçileri tutan yapısı. Sınıf `IQuickActivateImpl` bir varsayılan uygulamayı sağlar **IQuickActivate** ve uygulayan **IUnknown** aygıt hata ayıklama dökümü bilgileri göndererek oluşturur.  
+ [IQuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms690146) arabirimi denetimleri, tek bir çağrı başlatma birleştirerek yüklenirken gecikmeleri önlemek kapsayıcıları yardımcı olur. `QuickActivate` Yöntemi sağlayan bir işaretçiyi kapsayıcıya bir [QACONTAINER](http://msdn.microsoft.com/library/windows/desktop/ms688630) tüm arabirimleri denetimi işaretçileri tutan yapı gerekiyor. Getirisi, denetim için bir işaretçi geri geçer bir [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) kapsayıcı tarafından kullanılan kendi arabirimlerine işaretçileri tutan yapı. Sınıf `IQuickActivateImpl` bir varsayılan uygulamayı sağlar `IQuickActivate` ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
- **İlgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [bir ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
+ **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IQuickActivate`  
@@ -78,9 +78,9 @@ STDMETHOD(GetContentExtent)(LPSIZEL pSize);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Boyutu tam bir denetim işleme için ve HIMETRIC birimlerle belirtilir.  
+ Denetimin tam işleme için büyüklüğünde ve HIMETRIC birimleri cinsinden belirtilir.  
   
- Bkz: [IQuickActivate::GetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms693792) Windows SDK.  
+ Bkz: [IQuickActivate::GetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms693792) Windows SDK içinde.  
   
 ##  <a name="quickactivate"></a>  IQuickActivateImpl::QuickActivate  
  Hızlı Başlatma yüklenen denetimleri gerçekleştirir.  
@@ -92,22 +92,22 @@ STDMETHOD(QuickActivate)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yapı denetimi ve bazı ortam özelliklerine değerler gerek duyduğu arabirimleri işaretçiler içerir. Return denetimi için bir işaretçi geçirir bir [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) kapsayıcı gerektirir kendi arabirimleri ve ek durum bilgileri işaretçileri içeren yapısı.  
+ Yapısı, Denetim ve ortam bazı özelliklerin değerlerini tarafından gerekli arabirim işaretçileri içerir. İade sırasında denetim için bir işaretçi geçirir. bir [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) kapsayıcı gerektiren kendi arabirimleri ve ek durum bilgilerini işaretçileri içeren yapısı.  
   
- Bkz: [IQuickActivate::QuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms682421) Windows SDK.  
+ Bkz: [IQuickActivate::QuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms682421) Windows SDK içinde.  
   
 ##  <a name="setcontentextent"></a>  IQuickActivateImpl::SetContentExtent  
- Kapsayıcı atanmış ne kadar görüntü alanını denetim bildirir.  
+ Kapsayıcı atanmış ne kadar görüntüleme alanı denetim bildirir.  
   
 ```
 STDMETHOD(SetContentExtent)(LPSIZEL pSize);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Boyutu HIMETRIC birimler cinsinden belirtilir.  
+ Boyutunu HIMETRIC birimleri cinsinden belirtilir.  
   
- Bkz: [IQuickActivate::SetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms678806) Windows SDK.  
+ Bkz: [IQuickActivate::SetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms678806) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

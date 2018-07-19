@@ -18,48 +18,48 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61335d25b0d9b97fe1c7e9915aa9c3d8583eb854
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c28ab24323f4636ede4ad7e9cccbdb2ceceac71d
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363667"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879828"
 ---
 # <a name="composite-control-macros"></a>Bileşik Denetim makroları
-Olay iç havuz eşlemeleri ve girişleri bu makroları tanımlayın.  
+Olay iç havuz eşlemeleri ve girişleri bu makroları tanımlar.  
   
 |||  
 |-|-|  
-|[BEGIN_SINK_MAP](#begin_sink_map)|Bileşik denetim için olay havuz eşlemesi başlangıcını işaretler.|  
-|[END_SINK_MAP](#end_sink_map)|Bileşik denetim için olay havuz eşlemesi sonunu işaretler.|  
-|[SINK_ENTRY](#sink_entry)|Olay iç havuz eşlemesi girdi.|  
-|[SINK_ENTRY_EX](#sink_entry_ex)|Olay iç havuz eşlemesi ek bir parametre ile bir girdi.| 
-|[SINK_ENTRY_EX_P](#sink_entry_ex)| (Visual Studio 2017) Benzer şekilde SINK_ENTRY_EX IID gösteren bir işaretçi sürdüğünü dışında.|  
-|[SINK_ENTRY_INFO](#sink_entry_info)|Olay havuz eşlemesi ile kullanılmak üzere el ile sağlanan tür bilgilerle girişe [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md).|  
-|[SINK_ENTRY_INFO_P](#sink_entry_info)| (Visual Studio 2017) Benzer şekilde SINK_ENTRY_INFO IID gösteren bir işaretçi sürdüğünü dışında.|  
+|[BEGIN_SINK_MAP](#begin_sink_map)|Bileşik denetim için olay havuzu eşlemesi başlangıcını işaretler.|  
+|[END_SINK_MAP](#end_sink_map)|Bileşik denetim için olay havuzu eşlemesi sonunu işaretler.|  
+|[SINK_ENTRY](#sink_entry)|Olay havuzu eşleme girişi.|  
+|[SINK_ENTRY_EX](#sink_entry_ex)|Ek bir parametre ile olay havuzu eşleme girişi.| 
+|[SINK_ENTRY_EX_P](#sink_entry_ex)| (Visual Studio 2017) IID için bir işaretçi alır dışında SINK_ENTRY_EX için benzer.|  
+|[SINK_ENTRY_INFO](#sink_entry_info)|Olay havuzu eşlemesi ile kullanmak için el ile sağlanan tür bilgileriyle girişe [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md).|  
+|[SINK_ENTRY_INFO_P](#sink_entry_info)| (Visual Studio 2017) IID için bir işaretçi alır dışında SINK_ENTRY_INFO için benzer.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
 
 ##  <a name="begin_sink_map"></a>  BEGIN_SINK_MAP  
- Bileşik denetim için olay havuz eşlemesi başlangıcını bildirir.  
+ Bileşik denetim için olay havuzu eşleme başına bildirir.  
   
 ```
 BEGIN_SINK_MAP(_class)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_class`  
- [in] Denetim belirtir.  
+ *_sınıfı*  
+ [in] Denetimi belirtir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]  
   
 ### <a name="remarks"></a>Açıklamalar  
- ActiveX olay havuzlarını yalnızca destekler dönüş türü değerleri HRESULT ya da olay işleyicisi yöntemlerden void uyarlamasını CE ATL; herhangi bir dönüş değeri desteklenmez ve davranışını tanımlanmadı.  
+ ActiveX olayı havuzlarını yalnızca destekler dönüş türü değerlerinin HRESULT ya da geçersiz kılma, olay işleyicisi yöntemleri gelen CE ATL uygulaması; herhangi bir dönüş değeri desteklenmiyor ve davranışı tanımlanmamış olur.  
   
 ##  <a name="end_sink_map"></a>  END_SINK_MAP  
- Bileşik denetim için olay havuz eşlemesi sonuna bildirir.  
+ Bileşik denetim için olay havuzu eşlemesi sonuna bildirir.  
   
 ```
 END_SINK_MAP()
@@ -69,33 +69,33 @@ END_SINK_MAP()
  [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]  
   
 ### <a name="remarks"></a>Açıklamalar  
- ActiveX olay havuzlarını yalnızca destekler dönüş türü değerleri HRESULT ya da olay işleyicisi yöntemlerden void uyarlamasını CE ATL; herhangi bir dönüş değeri desteklenmez ve davranışını tanımlanmadı.  
+ ActiveX olayı havuzlarını yalnızca destekler dönüş türü değerlerinin HRESULT ya da geçersiz kılma, olay işleyicisi yöntemleri gelen CE ATL uygulaması; herhangi bir dönüş değeri desteklenmiyor ve davranışı tanımlanmamış olur.  
   
 ##  <a name="sink_entry"></a>  SINK_ENTRY  
- İşleyici işlevi bildirir ( `fn`) belirtilen olay için ( `dispid`), tarafından tanımlanan denetiminin `id`.  
+ İşleyici işlev bildirir (*fn*) belirtilen olayın (*DISPID*), denetimi tarafından tanımlanan *kimliği*.  
   
 ```
 SINK_ENTRY( id, dispid, fn )
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `id`  
- [in] Denetim tanımlar.  
+ *id*  
+ [in] Denetimi tanımlar.  
   
- `dispid`  
+ *DISPID*  
  [in] Belirtilen olay tanımlar.  
   
- `fn`  
- [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız **_stdcall** çağırma ve uygun görüntüleme arabirimi stili imzaya sahip.  
+ *fn*  
+ [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız `_stdcall` çağırma kuralı ve uygun dispinterface stili imzaya sahip.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]  
   
 ### <a name="remarks"></a>Açıklamalar  
- ActiveX olay havuzlarını yalnızca destekler dönüş türü değerleri HRESULT ya da olay işleyicisi yöntemlerden void uyarlamasını CE ATL; herhangi bir dönüş değeri desteklenmez ve davranışını tanımlanmadı.  
+ ActiveX olayı havuzlarını yalnızca destekler dönüş türü değerlerinin HRESULT ya da geçersiz kılma, olay işleyicisi yöntemleri gelen CE ATL uygulaması; herhangi bir dönüş değeri desteklenmiyor ve davranışı tanımlanmamış olur.  
   
 ##  <a name="sink_entry_ex"></a>  SINK_ENTRY_EX ve SINK_ENTRY_EX_P
- İşleyici işlevi bildirir ( `fn`) belirtilen olay için ( `dispid`), gönderme arabiriminin ( *IID)*, tarafından tanımlanan denetimi için `id`.  
+ İşleyici işlev bildirir (*fn*) belirtilen olayın (*DISPID*), gönderme arabirimi (*IID*), tarafından tanımlanan denetimi için *kimliği*.  
   
 ```
 SINK_ENTRY_EX( id, iid, dispid, fn )
@@ -103,29 +103,29 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `id`  
- [in] Denetim tanımlar.  
+ *id*  
+ [in] Denetimi tanımlar.  
   
- `iid`  
- [in] Gönderme arabirimi tanımlar.  
+ *IID*  
+ [in] Dağıtım arabirimi tanımlar.  
 
- `piid`  
- [in] Gönderme arabirimi işaretçisi.  
+ *piid*  
+ [in] Gönderme arabirim işaretçisi.  
   
- `dispid`  
+ *DISPID*  
  [in] Belirtilen olay tanımlar.  
   
- `fn`  
- [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız **_stdcall** çağırma ve uygun görüntüleme arabirimi stili imzaya sahip.  
+ *fn*  
+ [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız `_stdcall` çağırma kuralı ve uygun dispinterface stili imzaya sahip.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#136](../../atl/codesnippet/cpp/composite-control-macros_2.h)]  
   
 ### <a name="remarks"></a>Açıklamalar  
- ActiveX olay havuzlarını yalnızca destekler dönüş türü değerleri HRESULT ya da olay işleyicisi yöntemlerden void uyarlamasını CE ATL; herhangi bir dönüş değeri desteklenmez ve davranışını tanımlanmadı.  
+ ActiveX olayı havuzlarını yalnızca destekler dönüş türü değerlerinin HRESULT ya da geçersiz kılma, olay işleyicisi yöntemleri gelen CE ATL uygulaması; herhangi bir dönüş değeri desteklenmiyor ve davranışı tanımlanmamış olur.  
   
 ##  <a name="sink_entry_info"></a>  SINK_ENTRY_INFO ve SINK_ENTRY_INFO_P  
- Kullanım `SINK_ENTRY_INFO` makrosu için gerekli bilgileri sağlamak için bir olay havuz eşlemesi içinde [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) rota olaylarla ilgili işleyici işlevi.  
+ Gerekli bilgileri sağlamak için bir olay havuzu eşlemesi içinde SINK_ENTRY_INFO makrosu kullanma [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md) ilgili işleyici işlevi için rota olayları.  
   
 ```
 SINK_ENTRY_INFO( id, iid, dispid, fn, info )
@@ -133,26 +133,26 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `id`  
- [in] Olay kaynağı tanımlayan imzasız tam sayı. Bu değer eşleşmelidir `nID` ilgili kullanılan şablon parametresi [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) temel sınıfı.  
+ *id*  
+ [in] Olay kaynağını belirleme işaretsiz tamsayı. Bu değer eşleşmelidir *nID* şablon parametresi ilgili kullanılan [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md) temel sınıfı.  
   
- `iid`  
- [in] Gönderme arabirimi tanımlayan IID.  
+ *IID*  
+ [in] Bu IID gönderme arabirimi tanımlar.  
 
- `piid`  
- [in] Gönderme arabirimi tanımlayan IID işaretçi.
+ *piid*  
+ [in] Gönderme arabirim tanımlayan IID işaretçisi.
   
- `dispid`  
- [in] Belirtilen olay tanımlama DISPID.  
+ *DISPID*  
+ [in] DISPID belirtilen olay tanımlama.  
   
- `fn`  
- [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız **_stdcall** çağırma ve uygun görüntüleme arabirimi stili imzaya sahip.  
+ *fn*  
+ [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız `_stdcall` çağırma kuralı ve uygun dispinterface stili imzaya sahip.  
   
- `info`  
- [in] Olay işleyici işlevi bilgilerini yazın. Bu tür bilgiler gösteren bir işaretçi biçiminde sağlanır bir `_ATL_FUNC_INFO` yapısı. `CC_CDECL` Windows CE için desteklenen tek seçenek `CALLCONV` alanını `_ATL_FUNC_INFO` yapısı. Başka bir değer desteklenmiyor böylece davranışını tanımlanmamış.  
+ *Bilgileri*  
+ [in] Olay işleyici işlevi bilgilerini yazın. Bu tür bilgiler için bir işaretçi biçiminde sağlanan bir `_ATL_FUNC_INFO` yapısı. Windows CE sahip alanın için desteklenen tek seçenek CC_CDECL olduğu `_ATL_FUNC_INFO` yapısı. Başka bir değer desteklenmiyor bu nedenle, davranışı tanımsız.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk dört makrosu parametreleri için aynıdır [SINK_ENTRY_EX](#sink_entry_ex) makrosu. Son parametre olayı için tür bilgiler sağlar. ActiveX olay havuzlarını yalnızca destekler dönüş türü değerleri HRESULT ya da olay işleyicisi yöntemlerden void uyarlamasını CE ATL; herhangi bir dönüş değeri desteklenmez ve davranışını tanımlanmadı.  
+ İlk dört makro parametrelerini için aynıdır [SINK_ENTRY_EX](#sink_entry_ex) makrosu. Son parametresi, olay için tür bilgisini sağlar. ActiveX olayı havuzlarını yalnızca destekler dönüş türü değerlerinin HRESULT ya da geçersiz kılma, olay işleyicisi yöntemleri gelen CE ATL uygulaması; herhangi bir dönüş değeri desteklenmiyor ve davranışı tanımlanmamış olur.  
   
 
 ## <a name="see-also"></a>Ayrıca Bkz.  

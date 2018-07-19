@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b32b21c8785bb5e28058c51f2345c5ffcb6de1f3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d4ca53db3dc74838592ad0b279ac541d23ad097f
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364943"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880352"
 ---
 # <a name="crbmap-class"></a>CRBMap sınıfı
-Bu sınıf kırmızı siyah bir ikili ağacı kullanarak bir eşleme yapısını temsil eder.  
+Bu sınıf, Red-siyah bir ikili Ağacı'nı kullanarak bir eşleme yapısını temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,17 +42,17 @@ class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 ```    
   
 #### <a name="parameters"></a>Parametreler  
- `K`  
+ *K*  
  Anahtar öğe türü.  
   
  *V*  
  Değer öğe türü.  
   
- `KTraits`  
- Kopyalama veya anahtar öğeleri taşıma için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.  
+ *KTraits*  
+ Kopyalamak veya taşımak temel öğeleri için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.  
   
- `VTraits`  
- Kopyalama veya değer öğeleri taşıma için kullanılan kod.  
+ *VTraits*  
+ Kopyalamak veya taşımak değeri öğeleri için kullanılan kod.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -61,28 +61,28 @@ class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CRBMap::CRBMap](#crbmap)|Oluşturucu.|  
-|[CRBMap:: ~ CRBMap](#dtor)|Yok Edicisi.|  
+|[CRBMap:: ~ CRBMap](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CRBMap::Lookup](#lookup)|Anahtarlar veya değerler aramak için bu yöntemi çağırın `CRBMap` nesnesi.|  
-|[CRBMap::RemoveKey](#removekey)|Bir öğeyi kaldırmak için bu yöntemi çağırın `CRBMap` anahtarı verilen nesnesi.|  
-|[CRBMap::SetAt](#setat)|Bir öğe çifti eşlemeye eklemek için bu yöntemi çağırın.|  
+|[CRBMap::Lookup](#lookup)|Anahtarlar veya değerler aramak için bu yöntemi çağırın `CRBMap` nesne.|  
+|[CRBMap::RemoveKey](#removekey)|Bir öğeyi kaldırmak için bu yöntemi çağırın `CRBMap` anahtar nesnesi.|  
+|[CRBMap::SetAt](#setat)|Haritayı bir öğe çifti eklemek için bu yöntemi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CRBMap` bir eşleme dizisi temel öğeleri ve ilişkili değerleri sıralı bir dizi yönetme, belirtilen her tür için destek sağlar. Her anahtar tek bir ilişkili değer olabilir. Öğeleri (bir anahtarı ve değeri oluşan) bir ikili ağacı depolanan yapısı, kullanarak [CRBMap::SetAt](#setat) yöntemi. Öğeleri kullanılarak kaldırılabilir [CRBMap::RemoveKey](#removekey) belirli anahtar değeri öğeyle siler yöntemi.  
+ `CRBMap` sıralı bir dizi temel öğeleri ve ilişkili değerleri yönetme, belirli bir tür, eşleme bir dizi için destek sağlar. Her anahtar, ilişkili yalnızca bir değer olabilir. Öğeleri (bir anahtar ve değerden oluşan) bir ikili ağaç biçiminde depolanan kullanarak yapı [CRBMap::SetAt](#setat) yöntemi. Öğeleri kullanılarak kaldırılabilir [CRBMap::RemoveKey](#removekey) yöntemi belirtilen anahtar değere sahip öğe siler.  
   
- Ağaç geçiş yapılan olası yöntemleriyle gibi [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#getnext), ve [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#getnextvalue).  
+ Ağacının çapraz geçişi yapılan olası yöntemleriyle gibi [CRBTree::GetHeadPosition](../../atl/reference/crbtree-class.md#getheadposition), [CRBTree::GetNext](../../atl/reference/crbtree-class.md#getnext), ve [CRBTree::GetNextValue](../../atl/reference/crbtree-class.md#getnextvalue).  
   
- `KTraits` Ve `VTraits` parametreleridir kopyalamak veya öğeleri taşımak için gereken ek kod içeren özellikler sınıfları.  
+ *KTraits* ve *VTraits* kopyalama veya öğeleri taşımak için gerekli olan herhangi bir ek kod içeren nitelikleri sınıflar parametrelerdir.  
   
- `CRBMap` türetilmiş [CRBTree](../../atl/reference/crbtree-class.md), kırmızı siyah algoritmasını kullanarak bir ikili ağacı uygular. [CRBMultiMap](../../atl/reference/crbmultimap-class.md) her anahtar için birden çok değer veren bir çeşitlemedir. Gelen çok türetilen `CRBTree`ve bu nedenle birçok özelliklerle paylaşım `CRBMap`.  
+ `CRBMap` türetilen [CRBTree](../../atl/reference/crbtree-class.md), kırmızı-siyah algoritmasını kullanarak bir ikili ağacı uygular. [CRBMultiMap](../../atl/reference/crbmultimap-class.md) her anahtar için birden çok değer veren bir çeşitlemedir. Bu çok türetilir `CRBTree`ve bu nedenle çoğu özelliklerle paylaşımları `CRBMap`.  
   
- Her ikisi de alternatif `CRBMap` ve `CRBMultiMap` tarafından sunulan [CAtlMap](../../atl/reference/catlmap-class.md) sınıfı. Az sayıda öğesi depolanması gerektiğinde kullanmayı [CSimpleMap](../../atl/reference/csimplemap-class.md) yerine sınıfı.  
+ Hem de alternatif `CRBMap` ve `CRBMultiMap` tarafından sunulan [CAtlMap](../../atl/reference/catlmap-class.md) sınıfı. Öğeleri yalnızca az sayıda depolanacak gerektiğinde kullanmayı [CSimpleMap](../../atl/reference/csimplemap-class.md) bunun yerine sınıf.  
   
- Çeşitli koleksiyon sınıfları, özellikleri ve performans özelliklerini daha eksiksiz bir tartışma için bkz [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
+ Çeşitli koleksiyon sınıflarını ve özelliklerini ve performans özelliklerini daha eksiksiz bir açıklaması için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CRBTree](../../atl/reference/crbtree-class.md)  
@@ -100,19 +100,19 @@ explicit CRBMap(size_t nBlockSize = 10) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBlockSize`  
+ *nBlockSize*  
  Blok boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `nBlockSize` Parametresi yeni bir öğesi gerekli olduğunda ayrılmış bellek miktarı ölçüsüdür. Daha büyük öbek boyutları bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynağı kullanır. Varsayılan bir kerede 10 öğeler için alan ayırın.  
+ *NBlockSize* parametre gerektiğinde yeni bir öğe ayrılan bellek miktarını ölçüsüdür. Büyük blok boyutları için bellek ayırma yordamlarını aramalarını azaltır, ancak daha fazla kaynağı kullanır. Varsayılan bir kerede 10 öğe için bir alan ayırın.  
   
- Taban sınıfı için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
+ Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#81](../../atl/codesnippet/cpp/crbmap-class_1.cpp)]  
   
 ##  <a name="dtor"></a>  CRBMap:: ~ CRBMap  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CRBMap() throw();
@@ -121,10 +121,10 @@ explicit CRBMap(size_t nBlockSize = 10) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Ayrılan tüm kaynakları serbest bırakır.  
   
- Taban sınıfı için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
+ Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
   
 ##  <a name="lookup"></a>  CRBMap::Lookup  
- Anahtarlar veya değerler aramak için bu yöntemi çağırın `CRBMap` nesnesi.  
+ Anahtarlar veya değerler aramak için bu yöntemi çağırın `CRBMap` nesne.  
   
 ```
 bool Lookup(KINARGTYPE key, VOUTARGTYPE value) const throw(...);
@@ -133,43 +133,43 @@ CPair* Lookup(KINARGTYPE key) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
- Bakılacak öğesi tanımlayan anahtarını belirtir.  
+ *Anahtarı*  
+ Bakılacak öğeyi tanımlayan anahtar belirtir.  
   
  *value*  
  Değişken, aranan yukarı değerini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yönteminin ilk form anahtar, aksi takdirde false bulunursa true değerini döndürür. İkinci ve üçüncü forms bir işaretçi döndürmek bir [CPair](crbtree-class.md#cpair_class).  
+ İlk yöntem biçiminin anahtar, aksi takdirde false bulunursa true değerini döndürür. İkinci ve üçüncü formları için bir işaretçi döndürür bir [CPair](crbtree-class.md#cpair_class).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Taban sınıfı için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
+ Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#82](../../atl/codesnippet/cpp/crbmap-class_2.cpp)]  
   
 ##  <a name="removekey"></a>  CRBMap::RemoveKey  
- Bir öğeyi kaldırmak için bu yöntemi çağırın `CRBMap` anahtarı verilen nesnesi.  
+ Bir öğeyi kaldırmak için bu yöntemi çağırın `CRBMap` anahtar nesnesi.  
   
 ```
 bool RemoveKey(KINARGTYPE key) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
- Kaldırmak istediğiniz öğe çiftine karşılık gelen anahtarı.  
+ *Anahtarı*  
+ Kaldırmak istediğiniz anahtar karşılık gelen bir öğe çifti.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Anahtar bulundu ve kaldırıldı, başarısız olduğunda false ise true, aksi durumda değeri döndürür.  
+ Anahtar bulunan ve kaldırılmış, başarısız olduğunda false ise true, aksi durumda değeri döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Taban sınıfı için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
+ Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#83](../../atl/codesnippet/cpp/crbmap-class_3.cpp)]  
   
 ##  <a name="setat"></a>  CRBMap::SetAt  
- Bir öğe çifti eşlemeye eklemek için bu yöntemi çağırın.  
+ Haritayı bir öğe çifti eklemek için bu yöntemi çağırın.  
   
 ```
 POSITION SetAt(
@@ -178,19 +178,19 @@ POSITION SetAt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
- Anahtar değeri eklemek için `CRBMap` nesnesi.  
+ *Anahtarı*  
+ Eklenecek anahtar değeri `CRBMap` nesne.  
   
  *value*  
- Eklenecek değer `CRBMap` nesnesi.  
+ Eklenecek değer `CRBMap` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Anahtar/değer öğesi çifti konumunu döndürür `CRBMap` nesnesi.  
+ Anahtar/değer öğe çiftinin konumunu döndürür `CRBMap` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SetAt` eşleşen bir anahtarı bulunursa, var olan öğenin yerini alır. Anahtar bulunamazsa yeni bir anahtar/değer çifti oluşturulur.  
+ `SetAt` eşleşen bir anahtar bulunursa, var olan öğenin yerini alır. Anahtar bulunamazsa yeni bir anahtar/değer çifti oluşturulur.  
   
- Taban sınıfı için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
+ Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class.md) kullanılabilir diğer yöntemler hakkında bilgi edinmek için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#84](../../atl/codesnippet/cpp/crbmap-class_4.cpp)]  
@@ -199,4 +199,4 @@ POSITION SetAt(
  [CRBTree sınıfı](../../atl/reference/crbtree-class.md)   
  [CAtlMap sınıfı](../../atl/reference/catlmap-class.md)   
  [CRBMultiMap sınıfı](../../atl/reference/crbmultimap-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

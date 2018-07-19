@@ -1,5 +1,5 @@
 ---
-title: IConnectionPointContainerImpl sınıfı | Microsoft Docs
+title: Iconnectionpointcontainerımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af5e8b1bc1af0a515cc8fad0500c3f7d040b1eb9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d70989be8e8535336c831cb59fb9422c6e2c63e0
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361176"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886238"
 ---
-# <a name="iconnectionpointcontainerimpl-class"></a>IConnectionPointContainerImpl sınıfı
-Bu sınıf koleksiyonu yönetmek için bir bağlantı noktası kapsayıcı uygulayan [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) nesneleri.  
+# <a name="iconnectionpointcontainerimpl-class"></a>Iconnectionpointcontainerımpl sınıfı
+Bu sınıfın uyguladığı bir koleksiyonu yönetmek için bir bağlantı noktası kapsayıcı [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md) nesneleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class ATL_NO_VTABLE IConnectionPointContainerImpl
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IConnectionPointContainerImpl`.  
   
 ## <a name="members"></a>Üyeler  
@@ -49,17 +49,17 @@ class ATL_NO_VTABLE IConnectionPointContainerImpl
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IConnectionPointContainerImpl::EnumConnectionPoints](#enumconnectionpoints)|Bağlanılabilirlik nesnesinde desteklenen bağlantı noktaları yinelemek için bir numaralandırıcı oluşturur.|  
+|[IConnectionPointContainerImpl::EnumConnectionPoints](#enumconnectionpoints)|Bağlanılabilirlik nesnesinde desteklenen bağlantı noktaları üzerinden yinelemek için bir numaralandırıcı oluşturur.|  
 |[IConnectionPointContainerImpl::FindConnectionPoint](#findconnectionpoint)|Belirtilen IID destekleyen bağlantı noktası için bir arabirim işaretçisi alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IConnectionPointContainerImpl` koleksiyonu yönetmek için bir bağlantı noktası kapsayıcı uygulayan [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) nesneleri. `IConnectionPointContainerImpl` bir istemci bağlanılabilirlik nesnesi hakkında daha fazla bilgi almak için çağırabileceği iki yöntem sunar:  
+ `IConnectionPointContainerImpl` bir koleksiyonu yönetmek için bir bağlantı noktası kapsayıcı uygulayan [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md) nesneleri. `IConnectionPointContainerImpl` bir istemci bir bağlanılabilirlik nesnesi hakkında daha fazla bilgi almak için çağırabileceğiniz iki yöntem sunar:  
   
-- `EnumConnectionPoints` hangi giden nesne destekler arabirimleri belirlemek istemcinin verir.  
+- `EnumConnectionPoints` hangi giden nesne destekler arabirimleri belirlemek istemcinin sağlar.  
   
-- `FindConnectionPoint` Nesne belirli bir giden arabirim destekleyip desteklemediğini belirlemek istemcinin verir.  
+- `FindConnectionPoint` Nesne belirli bir giden arabirim destekleyip desteklemediğini belirlemek üzere istemci sağlar.  
   
- İçinde ATL bağlantı noktaları hakkında daha fazla bilgi için bkz: [bağlantı noktaları](../../atl/atl-connection-points.md).  
+ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı noktaları](../../atl/atl-connection-points.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IConnectionPointContainer`  
@@ -70,14 +70,14 @@ class ATL_NO_VTABLE IConnectionPointContainerImpl
  **Başlık:** atlcom.h  
   
 ##  <a name="enumconnectionpoints"></a>  IConnectionPointContainerImpl::EnumConnectionPoints  
- Bağlanılabilirlik nesnesinde desteklenen bağlantı noktaları yinelemek için bir numaralandırıcı oluşturur.  
+ Bağlanılabilirlik nesnesinde desteklenen bağlantı noktaları üzerinden yinelemek için bir numaralandırıcı oluşturur.  
   
 ```
 STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPointContainer::EnumConnectionPoints](http://msdn.microsoft.com/library/windows/desktop/ms682460) Windows SDK.  
+ Bkz: [IConnectionPointContainer::EnumConnectionPoints](http://msdn.microsoft.com/library/windows/desktop/ms682460) Windows SDK içinde.  
   
 ##  <a name="findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint  
  Belirtilen IID destekleyen bağlantı noktası için bir arabirim işaretçisi alır.  
@@ -87,8 +87,8 @@ STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPointContainer::FindConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms692476) Windows SDK.  
+ Bkz: [IConnectionPointContainer::FindConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms692476) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

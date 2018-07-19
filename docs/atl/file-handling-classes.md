@@ -1,5 +1,5 @@
 ---
-title: Sınıflar (ATL) işleme dosya | Microsoft Docs
+title: Dosya işleme sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99430bc26754023bf7f23511546328e31b6be265
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: adff92e4b5c849c7fab151e716561e163cd59fff
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32353956"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962351"
 ---
-# <a name="file-handling-classes"></a>Dosya sınıfları işleme
-Bu sınıfların dosyaları, geçici dosyaları ve bellek eşlemeli dosyalar işlemek için yöntemleri sağlar.  
+# <a name="file-handling-classes"></a>Dosya işleme sınıfları
+Bu sınıfların dosyaların geçici dosyaları ve bellek eşlemeli dosyalar işlemek için yöntemler sağlar.  
   
 -   [CAtlFile](../atl/reference/catlfile-class.md) Bu sınıf, dosya işleme API Windows çevresinde ince bir sarmalayıcı sağlar.  
   
--   [CAtlFileMapping](../atl/reference/catlfilemapping-class.md) yöntemleri için bir atama işleci ekleme bellekle eşlenen bir dosya, bu sınıfın temsil [CAtlFileMappingBase](../atl/reference/catlfilemappingbase-class.md).  
+-   [CAtlFileMapping](../atl/reference/catlfilemapping-class.md) yöntemleri için bir atama işleci ekleme bellekle eşlenen dosya, bu sınıfın temsil [CAtlFileMappingBase](../atl/reference/catlfilemappingbase-class.md).  
   
--   [CAtlFileMappingBase](../atl/reference/catlfilemappingbase-class.md) Bu sınıf, bellekle eşlenen bir dosyayı temsil eder.  
+-   [CAtlFileMappingBase](../atl/reference/catlfilemappingbase-class.md) Bu sınıf, bir bellek işlemeli dosya temsil eder.  
   
--   [CAtlTemporaryFile](../atl/reference/catltemporaryfile-class.md) bu sınıfın sağladığı yöntemlerle oluşturma ve geçici bir dosya kullanımı için.  
+-   [CAtlTemporaryFile](../atl/reference/catltemporaryfile-class.md) oluşturulmasını ve kullanımını geçici bir dosya için bu sınıfın sağladığı yöntemlerle.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

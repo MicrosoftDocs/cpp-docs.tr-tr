@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07b886b805eb551831ad2d559b041df0d38c5987
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c931e81b27c3a5eb95d546119e0abee118f6e76a
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857876"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964983"
 ---
 # <a name="issame-class"></a>is_same Sınıfı
 
-İki tür aynıysa testleri.
+İki tür aynı olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,13 +37,13 @@ struct is_same;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty1` Sorgu için ilk türü.
+*Ty1* ilk türü için sorgu.
 
-`Ty2` Sorgu için ikinci türü.
+*Ty2* ikinci türü için sorgu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türleri `Ty1` ve `Ty2` aynı türdeyse, aksi takdirde false tutar.
+Karşılaştırmasının bir örneği true tutan türleri *Ty1* ve *Ty2* aynı türdeyse, aksi takdirde false tutar.
 
 ## <a name="example"></a>Örnek
 

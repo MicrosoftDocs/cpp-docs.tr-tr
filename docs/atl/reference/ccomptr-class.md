@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5254e463050d685840ff90334ecbdb94372f27ef
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8513a3de54f8a99191936dfff5b894962c597381
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358546"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881597"
 ---
 # <a name="ccomptr-class"></a>CComPtr sınıfı
-COM arabirimi işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
+COM arabirim işaretçilerini yönetmek için bir akıllı işaretçi sınıfının.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,8 +36,8 @@ class CComPtr
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Depolanacak işaretçi türünü belirleyen bir COM arabirimi.  
+ *T*  
+ Depolanacak işaretçi türü belirten bir COM arabirimi.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -51,18 +51,18 @@ class CComPtr
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComPtr::operator =](#operator_eq)|Bir işaretçi üye işaretçiyi atar.|  
+|[CComPtr::operator =](#operator_eq)|Bir işaretçi, üye işaretçisi atar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- ATL kullanan `CComPtr` ve [CComQIPtr](../../atl/reference/ccomqiptr-class.md) COM arabirim işaretçileri yönetmek için. Her ikisi de türetilmiş [CComPtrBase](../../atl/reference/ccomptrbase-class.md), ve her ikisi de otomatik başvuru sayım gerçekleştirin.  
+ ATL kullanan `CComPtr` ve [CComQIPtr](../../atl/reference/ccomqiptr-class.md) COM arabirim işaretçilerini yönetmek için. Her ikisi de türetilmiş [CComPtrBase](../../atl/reference/ccomptrbase-class.md), ve her ikisi de otomatik başvuru sayımı gerçekleştirin.  
   
- **CComPtr** ve [CComQIPtr](../../atl/reference/ccomqiptr-class.md) sınıfları otomatik başvuru sayım gerçekleştirerek bellek sızıntıları ortadan kaldırmanıza yardımcı olabilir.  Aşağıdaki işlevleri hem mantıksal işlemlerin aynısını gerçekleştirir; Ancak, nasıl ikinci sürümü kullanarak hataya daha az olabileceğine dikkat edin **CComPtr** sınıfı:  
+ `CComPtr` Ve [CComQIPtr](../../atl/reference/ccomqiptr-class.md) sınıfları otomatik başvuru sayımı gerçekleştirerek bellek sızıntılarını ortadan yardımcı olabilir.  Aşağıdaki işlevler hem de aynı mantıksal işlemleri; Ancak, nasıl ikinci sürüm kullanarak hataya daha az olabileceğine dikkat edin `CComPtr` sınıfı:  
   
  [!code-cpp[NVC_ATL_Utilities#130](../../atl/codesnippet/cpp/ccomptr-class_1.cpp)]  
   
  [!code-cpp[NVC_ATL_Utilities#131](../../atl/codesnippet/cpp/ccomptr-class_2.cpp)]  
   
- Hata ayıklama derlemelerinde kod izleme için atlsd.lib bağlayın.  
+ Hata ayıklama yapılarında, kod izleme atlsd.lib bağlayın.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CComPtrBase](../../atl/reference/ccomptrbase-class.md)  
@@ -82,11 +82,11 @@ CComPtr (const CComPtr<T>& lp) throw ();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lp`  
+ *LP*  
  Arabirim işaretçisi başlatmak için kullanılır.  
   
- `T`  
- COM arabirimi.  
+ *T*  
+ Bir COM arabirimi.  
   
 ##  <a name="operator_eq"></a>  CComPtr::operator =  
  Atama işleci.  
@@ -97,12 +97,12 @@ T* operator= (const CComPtr<T>& lp) throw ();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi güncelleştirilmiş döndüren `CComPtr` nesnesi  
+ Güncelleştirilmiş bir işaretçi döndürür `CComPtr` nesnesi  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlemi AddRefs yeni bir nesne ve sürümler varolan nesne yok.  
+ Bu işlem AddRefs yeni bir nesne ve sürümler var olan nesne yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComPtr::CComPtr](#ccomptr)   
  [CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

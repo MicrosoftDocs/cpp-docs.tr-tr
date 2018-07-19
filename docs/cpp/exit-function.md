@@ -16,24 +16,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5767f6b08b4adcd3d1a8d367c6286a746eeecec3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d08ac1375fa383543eaafb5b3ce49cd2bbfbc4da
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412536"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941086"
 ---
 # <a name="exit-function"></a>exit İşlevi
-**Çıkmak** işlevi, standart INCLUDE dosyasında bildirilen \<stdlib.h >, C++ programı sonlandırır.  
+`exit` Standart içerme dosyasında bildirilen işlevde, \<stdlib.h >, bir C++ programını sonlandırır.  
   
- Bağımsız değişken olarak sağlanan değer **çıkmak** işletim sistemi programın dönüş kodu veya çıkış kodu olarak döndürülür. Kural olarak, sıfır olan dönüş kodu programın başarıyla tamamlandığı anlamına gelir.  
+ Bağımsız değişken olarak sağlanan değer `exit` programın dönüş kodu veya çıkış kodu olarak işletim sistemine döndürülür. Kural olarak, sıfır olan dönüş kodu programın başarıyla tamamlandığı anlamına gelir.  
   
 > [!NOTE]
->  Sabitler kullanabilirsiniz `EXIT_FAILURE` ve `EXIT_SUCCESS`, içinde tanımlı \<stdlib.h >, başarı veya başarısızlık programınızın belirtmek için.  
+>  Exıt_faılure ve exıt_success, tanımlı sabitler kullanabileceğiniz \<stdlib.h >, başarı veya başarısızlık programınızın belirtmek için.  
   
- Sertifika veren bir `return` from deyimi **ana** işlevi çağırmak için eşdeğerdir **çıkmak** işlevi bağımsız değişken olarak dönüş değerine sahip.  
+ Veren bir **dönüş** deyimden `main` işlevini çağırmakla eşdeğerdir `exit` işlevi, bağımsız değişkeni dönüş değerine sahip.  
   
- Daha fazla bilgi için bkz: [çıkmak](../c-runtime-library/reference/exit-exit-exit.md) içinde *çalışma zamanı kitaplığı başvurusu*.  
+ Daha fazla bilgi için [çıkmak](../c-runtime-library/reference/exit-exit-exit.md) içinde *çalışma zamanı kitaplığı başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Program Sonlandırma](../cpp/program-termination.md)

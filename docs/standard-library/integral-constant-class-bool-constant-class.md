@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d59c994cba47cf609c13a1d35fbc7fed60fc531f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8bff57549307eeaa9245c0bb4083b206471fe726
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844542"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962539"
 ---
 # <a name="integralconstant-class-boolconstant-class"></a>integral_constant sınıfı, bool_constant sınıfı
 
-Bir integral, tür ve değer sabit hale getirir.
+Bir türü ve değeri bir tamsayı sabit yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,9 +52,9 @@ struct integral_constant {
 
 ## <a name="remarks"></a>Açıklamalar
 
-`integral_constant` Şablon sınıfı, bir tam sayı türüyle özelleştirilmiş zaman *T* ve bir değer *v* bu tür bir sabit belirtilen değerle tam sayı türü tutan bir nesneyi temsil eder. Adlı üye `type` oluşturulan şablon uzmanlık türü için bir diğer ad olduğu ve `value` üye değeri tutan *v* uzmanlık oluşturmak için kullanılır.
+`integral_constant` Şablon sınıfı, özelleştirilmiş bir integral türünde olduğunda *T* ve bir değer *v* bu tür bir sabit tamsayı türü belirtilen değerle tutan bir nesneyi temsil eder. Adlı üye `type` oluşturulan şablon uzmanlığı türü için bir diğer addır ve `value` üye değeri tutan *v* özelleştirmesi oluşturmak için kullanılır.
 
-`bool_constant` Şablon sınıfıdır açık bir kısmi uzmanlığı `integral_constant` kullanan `bool` olarak *T* bağımsız değişkeni.
+`bool_constant` Şablon sınıfı, bir açık kısmi alt uzmanlaşması `integral_constant` kullanan **bool** olarak *T* bağımsız değişken.
 
 ## <a name="example"></a>Örnek
 

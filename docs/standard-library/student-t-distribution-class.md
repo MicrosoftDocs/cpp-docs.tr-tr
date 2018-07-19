@@ -31,16 +31,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e48a657d15fbb6526ebc9d717825f409f10928f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 309b01fac7e6461a48992ee1c2c091439353aee7
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858906"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961018"
 ---
 # <a name="studenttdistribution-class"></a>student_t_distribution Sınıfı
 
-Öğrencinin oluşturur *t*-dağıtım.
+Bir öğrenci oluşturur *t*-dağıtım.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,22 +74,22 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcı tarafından belirtilen integral değerleri üreten bir dağıtım şablonu sınıf tanımlar türü veya türü `double` sağlanırsa, öğrencinin göre dağıtılmış *t*-dağıtım. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı tanımlar kullanıcı tanımlı bir integral değerini üreten bir dağıtım türü veya tür **çift** sağlanmazsa, öğrencinin göre dağıtılmış *t*-dağıtım. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[student_t_distribution](#student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|
 |`student_t_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `n()` depolanan dağıtım parametresinin değeri döndürür `n`.
+Özellik işlevi `n()` saklı dağıtım parametresinin değeri döndürür `n`.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Öğrencinin hakkında ayrıntılı bilgi için *t*-dağıtım, Wolfram MathWorld makalesine bakın [Öğrenciler t-dağıtım](http://go.microsoft.com/fwlink/p/?linkid=401094).
+Öğrenci hakkında ayrıntılı bilgi için *t*-dağıtım, Wolfram MathWorld makaleye göz atın [öğrenci t dağılımı](http://go.microsoft.com/fwlink/p/?linkid=401094).
 
 ## <a name="example"></a>Örnek
 
@@ -174,7 +174,7 @@ Distribution for 10 samples:
 
 ## <a name="student_t_distribution"></a>  student_t_distribution::student_t_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit student_t_distribution(RealType n = 1.0);
@@ -183,21 +183,22 @@ explicit student_t_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*n* `n` dağıtım parametresi.
+*n*  
+ `n` Dağıtım parametresi.
 
-*parametre* dağıtım oluşturmak için kullanılan parametre paket.
+*parametre* dağıtımın oluşturulması için kullanılan parametre paketi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < n`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `n` değeri tutan değeri *n*.
+İlk Oluşturucu bir nesne oluşturur, saklı `n` değerine değeri *n*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  student_t_distribution::param_type
 
-Dağıtım tüm parametreleri depolar.
+Dağıtım, tüm parametreleri depolar.
 
 ```cpp
 struct param_type {
@@ -212,15 +213,17 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*n* `n` dağıtım parametresi.
+*n*  
+`n` Dağıtım parametresi.
 
-*sağ* `param_type` için karşılaştırılacak nesne.
+*sağ*  
+`param_type` İçin karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < n`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

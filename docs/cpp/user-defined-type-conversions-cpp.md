@@ -32,56 +32,57 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfe76a74a46a6da48e22cc07232457f8c0957fbc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4c41e2cf0765c036715377038357d587a755196f
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948249"
 ---
 # <a name="user-defined-type-conversions-c"></a>Kullanıcı tanımlı tür Dönüşümleri (C++)
-A *dönüştürme* farklı türde bir değerden bazı türünde yeni bir değer oluşturur. *Standart dönüşümler* yerleşik türlerinden ve oluşturabilirsiniz C++ dili ve Destek bölümüne yerleşik *kullanıcı tanımlı dönüşümler* için ya da kullanıcı tanımlı türler arasında dönüştürme gerçekleştirmek için.  
+A *dönüştürme* farklı türde bir değer dosyasından bazı türünde yeni bir değer üretir. *Standart dönüştürmeler* C++ dili ve Destek, yerleşik türler ve siz oluşturabilirsiniz yerleşik *kullanıcı tanımlı dönüşümler* için ya da kullanıcı tanımlı türler arasında dönüştürmeler gerçekleştirmek için.  
   
- Standart dönüşümler işaretçileri veya devralma, void işaretçileri, gelen ve giden yoluyla ilgili türler ve null işaretçi başvuruları arasında yerleşik türleri arasında dönüştürmeler gerçekleştirin. Daha fazla bilgi için bkz: [standart dönüşümler](../cpp/standard-conversions.md). Kullanıcı tanımlı dönüşümler kullanıcı tanımlı türler arasında veya kullanıcı tanımlı türler ve yerleşik türleri arasında dönüştürmeler gerçekleştirin. Bunları uygulayabilirsiniz [dönüştürme oluşturucuları](#ConvCTOR) veya as [dönüştürme işlevleri](#ConvFunc).  
+ Standart dönüştürmeler işaretçileri veya başvuruları void işaretçileri, gelen ve devralma yoluyla ilgili türleri ve null işaretçi arasında yerleşik türler arasında dönüştürmeler gerçekleştirin. Daha fazla bilgi için [standart dönüştürmeler](../cpp/standard-conversions.md). Kullanıcı tanımlı dönüştürmeler veya kullanıcı tanımlı türler ve yerleşik türleri kullanıcı tanımlı türler arasında dönüştürmeler gerçekleştirin. Olarak uygulayabilirsiniz [dönüştürme oluşturucuları](#ConvCTOR) veya as [dönüştürme işlevleri](#ConvFunc).  
   
- Dönüşümler ya da açık olabilir — Programcı çağırdığında bir şekilde atama veya doğrudan başlatma olduğu gibi dönüştürülecek bir türü için — ya da örtük — dil veya program çağırdığında Programcı tarafından verilen olandan farklı bir tür için.  
+ Dönüştürme açık olabilir — Programcı çağırdığında bir türü için başka bir tür dönüştürme veya doğrudan başlatma olduğu gibi dönüştürülmesi için — ya da örtük — program ve dil çağırdığında Programcı tarafından verilen olandan farklı bir tür için.  
   
- Örtük dönüşümler çalıştı zaman:  
+ Örtük dönüştürmeleri çalıştı olduğunda:  
   
--   Bir işlev için sağlanan bağımsız değişken eşleştirme parametre ile aynı türü yok.  
+-   Bir işlev için sağlanan bağımsız değişken parametresiyle eşleşen aynı türe sahip değil.  
   
--   İşlev dönüş türü aynı türde bir işlevinden döndürülen değer yok.  
+-   Bir işlevden döndürülen değer işlev dönüş türünü aynı türe sahip değil.  
   
--   Başlatıcı ifade başlatma nesne ile aynı türü yok.  
+-   Bir başlatıcı ifadesinin, başlatma nesnesi aynı türe sahip değil.  
   
--   Bir koşul deyimi, döngü yapısı veya anahtar denetleyen bir ifade denetlemek için gerekli olan sonuç türü yok.  
+-   Bir koşul deyimi, uvozuje konstruktor veya anahtar denetleyen bir ifade denetlemek için gerekli olan sonuç türü yok.  
   
--   Bir işleç için sağlanan işleneni eşleşen işleneni parametresi aynı türe sahip değil. Yerleşik işleçleri için her iki işlenen aynı türde olması gerekir ve her ikisi de gösterebilir ortak bir türü dönüştürülür. Daha fazla bilgi için bkz: [standart dönüşümler](standard-conversions.md). Kullanıcı tanımlı işleçler için her işlenen eşleşen işleneni parametre olarak aynı türe sahip olmalıdır.  
+-   Operatörün sağladığı bir işlenen eşleşen işlenen parametresi aynı türe sahip değil. Yerleşik işleçler, her iki işlenen de aynı türde olmalıdır ve her ikisi de temsil edebilen ortak bir türe dönüştürülür. Daha fazla bilgi için [standart dönüştürmeler](standard-conversions.md). Kullanıcı tanımlı işleçler için her işlenen eşleşen işlenen parametresi aynı türde olmalıdır.  
   
- Bir standart dönüştürme örtük bir dönüştürme tamamlayamıyor, derleyici tamamlamak için ek bir standart dönüştürme tarafından ardından isteğe bağlı kullanıcı tanımlı bir dönüştürme, kullanabilirsiniz.  
+ Standart bir dönüştürme örtük bir dönüştürme tamamlayamadığında, derleyici tamamlamak için isteğe bağlı olarak ek standart bir dönüştürme tarafından izlenen bir kullanıcı tanımlı dönüştürme kullanabilirsiniz.  
   
- Aynı dönüştürme gerçekleştiren iki veya daha fazla kullanıcı tanımlı dönüşümler bir dönüştürme sitede kullanılabilir olduğunda, dönüştürme belirsiz olarak kabul edilir. Bu tür belirsizlikleri hata olduklarından derleyici kullanılabilir dönüşümleri birini seçmeniz gerekir belirleyemiyor. Ancak, yalnızca kaynak kodundaki farklı konumlarda kullanılabilir dönüştürme kümesini farklı olabilir çünkü aynı dönüştürme gerçekleştirme birkaç yolu tanımlamak için bir hata değildir — Örneğin, bağlı olarak hangi üstbilgi dosyalarını bir kaynak dosyasına dahil edilir. Yalnızca bir dönüştürme dönüştürme sitede kullanılabilir olduğu sürece bu belirsizlik yoktur. Belirsiz dönüşümler oluşabilir, ancak en yaygın olanlardır birkaç yolu vardır:  
+ Bir dönüştürme sitede aynı dönüştürme gerçekleştiren iki veya daha fazla kullanıcı tanımlı dönüştürme kullanılabilir olduğunda dönüştürme belirsiz olarak kabul edilir. Böyle belirsizlikleri bir hata olduğu kullanılabilir dönüştürmeler birini seçmeniz gerekir, derleyici belirlenemiyor. Ancak, yalnızca kaynak kodunda farklı konumlarda kullanılabilir dönüştürmeler kümesini farklı olabilir çünkü aynı dönüşüm gerçekleştirme birçok yolu tanımlamak için bir hata değildir — Örneğin, hangi üstbilginin bağlı olarak dosyaları bir kaynak dosyasına dahil edilir. Yalnızca bir dönüştürme dönüştürme sitede kullanılabilir olduğu sürece, belirsizlik olmaz yoktur. Belirsiz dönüşümler oluşabilir, ancak en yaygın olanlarından birkaç yolu vardır:  
   
--   Birden çok devralma. Dönüştürme birden fazla temel sınıfında tanımlanır. 
+-   Birden çok devralma. Dönüştürme birden fazla temel sınıfta tanımlı. 
   
--   Belirsiz işlevi çağrısı. Dönüştürme, hedef türü dönüştürme oluşturucusunun ve kaynak türündeki dönüştürme işlevi olarak tanımlanır. Daha fazla bilgi için bkz: [dönüştürme işlevleri](#ConvFunc).  
+-   Belirsiz işlev çağrısı. Dönüştürmenin bir dönüştürme işlevi kaynak türü ve hedef türünün bir dönüştürme Oluşturucu olarak tanımlanır. Daha fazla bilgi için [dönüştürme işlevleri](#ConvFunc).  
   
- Daha eksiksiz söz konusu türünün adı niteleme tarafından veya maksadınızı açıklamak için bir açık atama gerçekleştirerek genellikle bir belirsizlik çözebilirsiniz.  
+ Genellikle, tam olarak daha ilgili türün adını nitelendirme tarafından veya sizin amacı açıklamak için açık bir yayın gerçekleştirerek bir belirsizlik çözebilirsiniz.  
   
- Dönüştürme oluşturucuları ve dönüştürme işlevleri üye erişim denetimi kuralları uyma ancak anlaşılır bir dönüştürme belirlenebilir açmadıklarını ve ne zaman dönüşümleri erişilebilirliğini yalnızca olarak kabul edilir. Bu erişim düzeyi rakip dönüştürme kullanılmasını görünür duruma önleyen olsa bile bir dönüştürme belirsiz olabileceği anlamına gelir. Üye erişilebilirlik hakkında daha fazla bilgi için bkz: [üye erişim denetimi](../cpp/member-access-control-cpp.md).  
+ Dönüştürme oluşturucuları hem dönüştürme işlevleri, üye erişim denetimi kurallara uyan ancak dönüştürmeler erişilebilirliğini, yalnızca bir dönüştürmesini belirlenebilir açmadıklarını ve ne zaman kabul edilir. Bu, rakip bir dönüştürmenin erişim düzeyi, kullanılmasını önleyen olsa bile bir dönüştürme belirsiz olabilir, anlamına gelir. Üye erişilebilirliği hakkında daha fazla bilgi için bkz: [üye erişim denetimi](../cpp/member-access-control-cpp.md).  
   
-## <a name="the-explicit-keyword-and-problems-with-implicit-conversion"></a>Explicit anahtar sözcüğü ve örtük dönüştürme sorunları  
- Kullanıcı tanımlı bir dönüştürme oluşturduğunuzda varsayılan olarak derleyici onu örtük dönüşümler gerçekleştirmek için kullanabilirsiniz. Bazen bu istediğiniz, ancak bunu istemiyorum kodu kabul etmek için örtük dönüşümler alımında derleyici Kılavuzu basit kural bazen yol açabilir.  
+## <a name="the-explicit-keyword-and-problems-with-implicit-conversion"></a>Explicit anahtar sözcüğü ve örtülü dönüştürme ile ilgili sorunlar  
+ Bir kullanıcı tanımlı dönüştürme oluşturduğunuzda varsayılan olarak derleyici, örtülü dönüştürmeler gerçekleştirmek için kullanabilirsiniz. Bazen bu istediğiniz, ancak derleyici örtük dönüştürmeleri yapmak, yol basit kural bazen kendisine istemediğiniz kod kabul etmek için açabilir.  
   
- İyi bilinen sorunlara neden olabilecek örtük bir dönüştürme örneğidir dönüştürme `bool`. Kullanılabilir bir sınıf türü bir Boolean bağlamında oluşturmak isteyebilirsiniz pek çok nedeni olabilir — örneğin, bu nedenle, BT'nin kullanılabilir denetlemek için bir `if` deyimi veya döngü — ancak yerleşik türü kullanıcı tanımlı bir dönüştürmeye gerçekleştirdiğinde derleyici , derleyici, daha sonra ek bir standart dönüştürme uygulamak için izin verilir. Bu ek standart dönüştürme amacı yükseltme gibi şeyler için izin vermektir `short` için `int`, ancak daha az belirgin dönüşümleri kapısının da açılır — Örneğin, `bool` için `int`, sınıfınız sağlar hiçbir zaman amaçlı tamsayı bağlamlarda kullanılacak yazın. Bu belirli sorun olarak bilinen *güvenli Bool sorun*. Bu tür sorunlar yerdir `explicit` anahtar sözcüğü yardımcı olabilir.  
+ İyi bilinen sorunlara neden olabilecek bir örtük dönüştürme örneğidir dönüştürme **bool**. Kullanılabilir bir sınıf türü Boole bağlamında oluşturmak isteyebilirsiniz birçok neden vardır — örneğin, bu nedenle, BT kullanılabilir denetimine bir **varsa** deyim ya da döngü — ancak derleyici, kullanıcı tanımlı dönüştürme gerçekleştirdiğinde bir Yerleşik tür, derleyici, daha sonra ek bir standart dönüştürme uygulamak izin verilmez. Bu ek standart dönüştürme amacı yükseltme gibi şeyler için izin vermektir **kısa** için **int**, ancak ayrıca daha az belirgin dönüştürmeler için kapı açılır — Örneğin,  **bool** için **int**, hiçbir zaman amaçladığınız tamsayı bağlamlarda kullanılacak sınıf türüne izin verir. Bu belirli sorun olarak da bilinen *güvenli Bool sorun*. Bu tür sorunlar yerdir **açık** anahtar sözcüğü yardımcı olabilir.  
   
- `explicit` Anahtar sözcüğü söyler derleyici belirtilen dönüşüm örtük dönüştürme gerçekleştirmek için kullanılamaz. Örtük dönüşümler önce söz dizimi kolaylık istediğinizi `explicit` anahtar sözcüğü sunulmuştur, istenmeyen sonuçları bazen oluşturulan bu örtük dönüştürme kabul etme veya daha az kullanışlı, adlandırılmış dönüştürme kullanın gerekiyordu geçici bir çözüm olarak işlev. Kullanarak şimdi `explicit` anahtar sözcüğü, yalnızca açık atamaları veya doğrudan başlatma gerçekleştirmek için kullanılabilir ve bu olmaz neden güvenli Bool sorundan örneği sorunları türü için uygun dönüşümleri oluşturabilirsiniz.  
+ **Açık** anahtar sözcüğü derleyiciye belirtilen dönüşüm örtük dönüştürmeler gerçekleştirmek için kullanılamaz. Örtük dönüştürmeleri önce söz dizimsel kolaylık istediğinizi **açık** anahtar sözcüğü tanıtılmıştır, istenmeyen sonuçları bazen oluşturulan bu örtülü dönüştürme kabul etme veya daha az uygun, kullanmanız gerekiyordu geçici çözüm olarak adlandırılmış dönüştürme işlevleri. Kullanarak artık **açık** anahtar sözcüğü, yalnızca açık atamaları veya doğrudan başlatma gerçekleştirmek için kullanılabilir ve, olmaz neden sorunları güvenli Bool sorundan örneği türünü kullanışlı dönüştürmeler oluşturabilirsiniz.  
   
- `explicit` Anahtar sözcüğü, C ++ 98 itibaren dönüştürme oluşturucuları ve C ++ 11 itibaren dönüştürme işlevleri için uygulanabilir. Aşağıdaki bölümlerde nasıl kullanılacağı hakkında daha fazla bilgi içeren `explicit` anahtar sözcüğü.  
+ **Açık** anahtar sözcüğü, dönüştürme işlevleri beri C ++ 11 ve C ++ 98 bu yana dönüştürme oluşturucuları için uygulanabilir. Aşağıdaki bölümlerde nasıl kullanılacağı hakkında daha fazla bilgi içeren **açık** anahtar sözcüğü.  
   
-##  <a name="ConvCTOR"></a> Dönüşüm oluşturucuları  
- Dönüştürme oluşturucuları kullanıcı tanımlı bir tür için kullanıcı tanımlı veya yerleşik türlerinden dönüştürmeler tanımlayın. Aşağıdaki örnek, yerleşik türünden dönüştüren bir dönüştürme Oluşturucu gösterir `double` kullanıcı tanımlı bir tür için `Money`.  
+##  <a name="ConvCTOR"></a> Dönüştürme oluşturucuları  
+ Dönüştürme oluşturucuları, yerleşik veya kullanıcı tanımlı türlerden dönüştürmeler için kullanıcı tanımlı bir tür tanımlar. Aşağıdaki örnek, yerleşik türünden dönüştüren bir dönüştürme Oluşturucu gösterir **çift** kullanıcı tanımlı bir tür için `Money`.  
   
-```  
+```cpp 
 #include <iostream>  
   
 class Money  
@@ -110,23 +111,23 @@ int main(int argc, char* argv[])
 }  
 ```  
   
- İlk işleve çağrı bildirimi `display_balance`, türünde bir bağımsız değişken aldığı `Money`, bağımsız değişkeni doğru türde olduğundan dönüştürme gerektirmez. İçin ancak, ikinci çağrıda `display_balance`, dönüştürme için gerekli bağımsız değişken türü bir `double` değerini `49.95`, değil ne işlev bekliyor değil. İşlevi bu değer, doğrudan kullanamaz, ancak bağımsız değişken türü dönüştürme olduğundan —`double`— eşleşen parametresinin türü için —`Money`— türünde geçici bir değer `Money` bağımsız değişkende oluşturulur ve kullanılacak işlev çağrısı tamamlayın. Üçüncü çağrısında `display_balance`, bağımsız değişken değil bildirimi bir `double`, ancak bunun yerine bir `float` değerini `9.99`— ve derleyici standart dönüştürme gerçekleştirebilirsiniz çünkü henüz işlev çağrısı hala tamamlanabilir — bu durumda , gelen `float` için `double`— ve kullanıcı tanımlı bir dönüştürme gerçekleştirmek `double` için `Money` gerekli dönüştürme işlemini tamamlamak için.  
+ İlk işleve çağrı bildirimi `display_balance`, türünde bir bağımsız değişken alan `Money`, kendi bağımsız değişkeni doğru türe olduğundan bir dönüştürme gerektirmez. Ancak, şirket için yapılan ikinci çağrı `display_balance`, dönüştürme için gerekli bağımsız değişken türünü bir **çift** değerini `49.95`, değil hangi işlevin beklediği. İşlevi bu değeri doğrudan kullanamazsınız, ancak bağımsız değişkenin türünden dönüştürme olmadığından —**çift**— eşleşen parametresinin türü için —`Money`— geçici bir değer türü `Money` nesnesinden oluşturulan bağımsız değişken ve işlev çağrısını tamamlamak için kullanılır. Üçüncü çağrısında `display_balance`, bağımsız değişken değil bildirimi bir **çift**, ancak bunun yerine bir **float** değerini `9.99`— ve henüz işlev çağrısı hala çünkü tamamlanabilir Derleyici, standart bir dönüşüm gerçekleştirebilir; bu durumda, gelen **float** için **çift**— ve ardından kullanıcı tanımlı dönüştürme işlemini gerçekleştirin **çift** için`Money` gerekli dönüştürme işlemini tamamlamak için.  
   
 ### <a name="declaring-conversion-constructors"></a>Dönüştürme oluşturucuları bildirme  
  Bir dönüştürme Oluşturucu bildirmek için aşağıdaki kurallar geçerlidir:  
   
--   Yapılandırılan bir kullanıcı tanımlı tür dönüştürme işleminin hedef türüdür.  
+-   Hedef türü dönüştürme yapılandırılmakta olan kullanıcı tanımlı bir türdür.  
   
--   Dönüştürme oluşturucuları genellikle kaynak türü tam olarak bir bağımsız değişken sürer. Bununla birlikte, her ek parametre varsayılan değere sahip olursa dönüştürme Oluşturucusu ek parametreler belirtebilirsiniz. Kaynak türü, ilk parametresinin türü kalır.  
+-   Dönüştürme oluşturucuları, genellikle kaynak türünde tam olarak bir bağımsız değişken alın. Ancak, her ek bir parametre bir varsayılan değere sahipse, bir dönüştürme Oluşturucu ek parametreler belirtebilirsiniz. Kaynak türü, ilk parametresinin türü kalır.  
   
--   Dönüştürme oluşturucuları tüm oluşturucular gibi bir dönüş türü belirtmeyin. Dönüş türü bildiriminde belirten bir hata var.  
+-   Tüm oluşturucular gibi dönüştürme oluşturucuları bir dönüş türü belirtmeyin. Dönüş türü bildiriminde belirten bir hata var.  
   
 -   Dönüştürme oluşturucuları açık olabilir.  
   
-### <a name="explicit-conversion-constructors"></a>Açık dönüşüm oluşturucuları  
- Olması için bir dönüştürme oluşturucuya bildirme tarafından `explicit`, bunu yalnızca bir nesnenin doğrudan başlatma gerçekleştirmek veya belirtik işlemi gerçekleştirmek için kullanılabilir. Bu da örtük dönüştürme Oluşturucusu ait kaynak türü bağımsız değişkenleri kabul etmesini sınıfı türünde bir bağımsız değişken kabul edin ve sınıf türü kopyalama-başlatılan bir kaynak türü değerinden engeller işlevleri önler. Aşağıdaki örnek, bir açık dönüşüm Oluşturucusu tanımlamak gösterilmiştir ve hangi koduna sahip iyi biçimlendirilmiş bir etkisidir.  
+### <a name="explicit-conversion-constructors"></a>Açık dönüştürme oluşturucuları  
+ Olacak şekilde bir dönüştürme Oluşturucu bildirilerek tarafından **açık**, bir nesnenin doğrudan başlatma gerçekleştirmek için veya açık bir tür dönüştürme gerçekleştirmek için yalnızca kullanılabilir. Bu, aynı zamanda örtük dönüştürme oluşturucunun kaynak türü bağımsız değişkenleri kabul etmesini sınıf türünde bir bağımsız değişken kabul edin ve sınıf türü kopya başlatılan kaynak türü arasında bir değer olmasını önleyen işlevleri engeller. Aşağıdaki örnek, bir açık bir dönüştürme Oluşturucu tanımlamak gösterilmiştir ve hangi kod üzerinde sahip olduğu etkiyi iyi biçimlendirilmemiş.  
   
-```  
+```cpp 
 #include <iostream>  
   
 class Money  
@@ -155,14 +156,14 @@ int main(int argc, char* argv[])
 }  
 ```  
   
- Bu örnekte, hala açık dönüşüm Oluşturucusu doğrudan başlatma işlemi gerçekleştirmek için kullanabileceğiniz fark `payable`. Bunun yerine kopyalama başlatma için olsaydı `Money payable = 79.99;`, bir hata olabilir. İlk çağrıda `display_balance` bağımsız değişkeni doğru türde olduğundan etkilenmez. İkinci çağrı `display_balance` bir hata olduğundan dönüştürme Oluşturucusu örtük dönüşümler gerçekleştirmek için kullanılamaz. Üçüncü çağrısı `display_balance` açık atama nedeniyle uygundur `Money`, ancak derleyici hala Yardım duyuru örtük bir dönüştürme ekleyerek cast tamamlayın `float` için `double`.  
+ Bu örnekte, hala açık bir dönüştürme Oluşturucu öğesinin doğrudan başlatılmasını gerçekleştirmek için kullanabileceğiniz fark `payable`. Bunun yerine kopya başlatma için olsaydı `Money payable = 79.99;`, bir hata olabilir. İlk çağrıda `display_balance` bağımsız değişkeni doğru türe olduğundan etkilenmez. İçin yapılan ikinci çağrı `display_balance` dönüştürme Oluşturucusu örtük dönüştürmeler gerçekleştirmek için kullanılamaz çünkü bir hata oluştu. Üçüncü çağrı `display_balance` açık tür dönüştürme için nedeniyle yasaldır `Money`, ancak derleyici hala Yardım dikkat edin, gelen örtük bir dönüştürme ekleyerek cast tamamlamak **float** için **çift**.  
   
- Örtük dönüşümler vermeyle kolaylık tempting olabilse de, bunun nedenle Bul sabit hatalar ortaya çıkarabilir. Altın kural tüm dönüştürme oluşturucuları örtük olarak gerçekleşmesi için belirli bir dönüştürme istediğinizden emin olduğunuzda dışında açık olmasını sağlamaktır.  
+ Örtük dönüştürmeleri zorlu kolaylık sağlamak cazip olabilir, ancak bunun yapılması bu nedenle bulunur zor hataları ortaya çıkarabilir. Tüm dönüştürme oluşturucuları açık, örtük olarak gerçekleşecek özel bir dönüştürmenin istediğiniz emin olduğunuzda hariç olmak üzere udur.  
   
-##  <a name="ConvFunc"></a> Dönüşüm işlevleri  
- Dönüşüm işlevleri diğer türleri için kullanıcı tanımlı bir türden dönüşümleri tanımlayın. Bir değer farklı bir türe dönüştürüldüğüne olduğunda bunlar, dönüştürme oluşturucuları birlikte çağrılır çünkü bu işlevler "atama işleçleri" adlandırılır. Aşağıdaki örnekte kullanıcı tanımlı türünden dönüştüren bir dönüştürme işlevi gösteren `Money`, yerleşik bir türe `double`:  
+##  <a name="ConvFunc"></a> Dönüştürme işlevleri  
+ Dönüştürme işlevleri, kullanıcı tanımlı bir tür dönüştürmelerinde diğer türlere tanımlayın. Farklı bir tür için bir değer atandığında, dönüştürme oluşturucuları birlikte çağrılır, çünkü bu işlevler için "atama işleçleri" adlandırılır. Aşağıdaki örnek, kullanıcı tanımlı tür, dönüştüren bir dönüştürme işlevi gösterir `Money`, yerleşik bir tür **çift**:  
   
-```  
+```cpp 
 #include <iostream>  
   
 class Money  
@@ -183,31 +184,31 @@ void display_balance(const Money balance)
   
 ```  
   
- Dikkat üye değişkeni `amount` özel ve ortak bir dönüştürme türü için işlev yapılan `double` yalnızca değerini döndürmek için sunulan `amount`. İşlevinde `display_balance`, örtük bir dönüştürme oluşur zaman değerini `balance` akış ekleme işlecini kullanarak standart çıktı akışı `<<`. Hiçbir akış ekleme işleci kullanıcı tanımlı tür için tanımlı olduğundan `Money`, ancak yerleşik türü için bir tane `double`, derleyici dönüştürme işlevini kullanabilirsiniz `Money` için `double` akış ekleme karşılamak için işleç.  
+ Dikkat üye değişkeni `amount` özel ve genel bir dönüştürme türü için işlev yapılan **çift** yalnızca değerini döndürmek için sunulan `amount`. İşlevde `display_balance`, örtük bir dönüştürme gerçekleşir, değerini `balance` standart çıktıya akış ekleme işlecini kullanarak akış `<<`. Kullanıcı tanımlı bir tür için hiçbir akış ekleme işleç tanımlandığından `Money`, yoktur ancak bir yerleşik türü için **çift**, derleyici, dönüştürme işlevinden kullanabilirsiniz `Money` için **çift** akış ekleme işleci karşılamak için.  
   
- Dönüşüm işlevleri türetilmiş sınıflar tarafından devralınır. Tam olarak aynı türde dönüştürürken bir türetilmiş sınıfta dönüştürme işlevleri yalnızca devralınan dönüştürme işlevi geçersiz kılar. Örneğin, kullanıcı tanımlı dönüştürme işlevinin türetilmiş sınıf `operator int` geçersiz — veya hatta etkisi — kullanıcı tanımlı dönüştürme işlevi temel sınıfın `operator short`rağmen standart dönüşümler dönüştürme tanımlayın arasındaki ilişki `int` ve `short`.  
+ Dönüştürme işlevleri, türetilmiş sınıflar tarafından devralınır. Bunlar tam olarak aynı türe dönüştürürken, türetilen bir sınıfta dönüştürme işlevleri yalnızca bir devralınan dönüştürme işlevi geçersiz kılar. Örneğin, bir kullanıcı tanımlı dönüştürme işlevi türetilmiş sınıfın **operator int** geçersiz — veya hatta etkisi — temel sınıfın bir kullanıcı tanımlı dönüştürme işlevi **işleci kısa**bile Standart dönüştürmeler arasındaki bir dönüştürme ilişkiyi tanımlayabilirsiniz ancak **int** ve **kısa**.  
   
-### <a name="declaring-conversion-functions"></a>Dönüştürme işlevleri bildirme  
- Dönüştürme işlevi bildirmek için aşağıdaki kurallar geçerlidir:  
+### <a name="declaring-conversion-functions"></a>Dönüşüm işlevlerini bildirme  
+ Bir dönüştürme işlevi bildirmek için aşağıdaki kurallar geçerlidir:  
   
--   Dönüştürme işleminin hedef türü dönüştürme işlevi bildirimi önce bildirilmesi gerekir. Sınıflar, yapılar, numaralandırmalar ve tür tanımları dönüştürme işlevi bildirimi içinde bildirilemez.  
+-   Dönüştürme hedef türüne dönüştürme işlevi bildirimi önce bildirilmelidir. Sınıflar, yapılar, numaralandırmalar ve tür tanımları dönüştürme işlevi bildirimi içinde bildirilemez.  
   
-    ```  
+    ```cpp 
     operator struct String { char string_storage; }() // illegal  
     ```  
   
--   Dönüştürme işlevleri bağımsız değişken almaz. Herhangi bir parametre bildirimine belirten bir hata var.  
+-   Dönüştürme işlevleri bağımsız değişken almaz. Tüm parametreleri bildirimde belirten bir hata var.  
   
--   Dönüşüm işlevleri de dönüştürme 's hedef türü adıdır dönüştürme işlevi adı tarafından belirtilen bir dönüş türüne sahip. Dönüş türü bildiriminde belirten bir hata var.  
+-   Dönüştürme işlevleri, aynı zamanda dönüştürme 's hedef türünün adı olan bir dönüştürme işlevi adı tarafından belirtilen bir dönüş türüne sahip. Dönüş türü bildiriminde belirten bir hata var.  
   
--   Dönüşüm işlevleri sanal olabilir.  
+-   Dönüştürme işlevleri sanal olabilir.  
   
--   Dönüşüm işlevleri açık olabilir.  
+-   Dönüştürme işlevleri açık olabilir.  
   
-### <a name="explicit-conversion-functions"></a>Açık dönüşüm işlevleri  
- Dönüştürme işlevi açık olmasını bildirilmiş yalnızca, açık bir dönüştürme gerçekleştirmek için kullanılabilir. Bu da örtük olarak sınıf türü bağımsız değişkenleri kabul etmesini dönüştürme işlevin hedef türünde bir bağımsız değişken kabul edin ve hedef türü örnekleri kopyalama-başlatılan bir sınıf türü değerinden engeller işlevleri önler. Aşağıdaki örnekte bir açık dönüşüm işlevi ve hangi kodu doğru biçimlendirilmiş olan etkisini nasıl tanımlanacağı gösterilmektedir.  
+### <a name="explicit-conversion-functions"></a>Açık dönüştürme işlevleri  
+ Bir dönüştürme işlevi açık olarak bildirilmiştir yalnızca, bir açık tür dönüştürme gerçekleştirmek için kullanılabilir. Bu sınıf türünün bağımsız değişkenler de örtülü olarak kabul etmesini dönüştürme işlevin hedef türünde bir bağımsız değişken kabul edin ve hedef türün örneklerinin kopyalama başlatılan sınıf türünde arasında bir değer olmasını önleyen işlevleri engeller. Aşağıdaki örnek, bir açık bir dönüştürme işlevi ve hangi kodun doğru biçimlendirilmiş sahip olduğu etkiyi nasıl tanımlanacağını gösterir.  
   
-```  
+```cpp 
 #include <iostream>  
   
 class Money  
@@ -228,5 +229,5 @@ void display_balance(const Money balance)
   
 ```  
   
- Burada dönüştürme işlevi `operator double` açık, yapılan ve yazmak için bir açık atama `double` işlevinde sunulan `display_balance` dönüştürme gerçekleştirmek için. Bu atama atlanırsa derleyici uygun akış ekleme işleci bulamıyoruz olacaktır `<<` türü için `Money` ve bir hata ortaya çıkabilecek.  
+ Burada dönüştürme işlevi **double işleci** açık, yapılan ve yazmak için açık bir tür dönüştürme **çift** işlevi sunulan `display_balance` dönüştürme gerçekleştirmek için. Bu tür dönüştürme atlanırsa, derleyicinin uygun akış ekleme işleci bulamadı olacaktır `<<` türünün `Money` ve bir hata oluşacak.  
   

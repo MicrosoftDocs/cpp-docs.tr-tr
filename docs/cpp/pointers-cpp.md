@@ -1,5 +1,5 @@
 ---
-title: İşaretçileri (C++) | Microsoft Docs
+title: İşaretçiler (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,21 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04d794041df385a9e18a8a4b25460d961a340cda
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dad1f9a223d8eb97c8e59e955bd5358b27dafd08
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948115"
 ---
-# <a name="pointers-c"></a>İşaretçileri (C++)
-İşaretçileri aşağıdaki dizisi kullanılarak bildirilir.  
+# <a name="pointers-c"></a>İşaretçiler (C++)
+İşaretçiler, aşağıdaki dizi kullanılarak bildirilir.  
   
 ```  
 [storage-class-specifiers] [cv-qualifiers] type-specifiers   
 [ms-modifier] declarator ;  
 ```  
   
- Burada herhangi bir geçerli işaretçi bildirimcisi kullanılabilir için `declarator`.  Basit işaretçi bildirimcisi söz dizimi aşağıdaki gibidir:  
+ Burada herhangi bir geçerli işaretçi bildirimcisi kullanılabilir için `declarator`.  Basit bir işaretçi bildirimci sözdizimi aşağıdaki gibidir:  
   
 ```  
 * [cv-qualifiers] identifier [= expression]  
@@ -39,66 +40,66 @@ ms.lasthandoff: 05/03/2018
   
  1. Bildirim tanımlayıcıları:  
   
--   İsteğe bağlı bir depolama sınıfı tanımlayıcısı. Daha fazla bilgi için bkz: [tanımlayıcıları](../cpp/specifiers.md).  
+    - İsteğe bağlı bir depolama sınıfı tanımlayıcısı. Daha fazla bilgi için [tanımlayıcıları](../cpp/specifiers.md).  
   
--   İsteğe bağlı bir `const` veya `volatile` anahtar sözcüğü için yönlendirilmesi için nesne türünü uygulanıyor.  
+    - İsteğe bağlı **const** veya **geçici** olarak işaret ettiği için nesne türü için uygulama anahtar sözcüğü.  
   
--   Tür tanımlayıcısı: için yönlendirilmesi için nesne türünü temsil eden bir tür adı.  
+    - Tür belirticisi: olarak işaret ettiği nesnenin türünü temsil eden bir tür adı.  
   
- 2. Bildirimcisi:  
+ 2. Bildirimci:  
   
--   Bir isteğe bağlı Microsoft belirli değiştiricisi. Daha fazla bilgi için bkz: [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md).  
+    - Bir isteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).  
   
--   `*` işleci.  
+    - `*` işleci.  
   
--   İsteğe bağlı bir `const` veya `volatile` anahtar sözcüğü işaretçisine uygulanıyor.  
+    - İsteğe bağlı **const** veya **geçici** işaretçi için uygulama anahtar sözcüğü.  
   
--   Tanımlayıcı.  
+    - Tanımlayıcı.  
   
--   İsteğe bağlı bir başlatıcı.  
+    - İsteğe bağlı bir başlatıcı.  
   
- İşlev işaretçisi bildirimcisi şöyle görünür:  
+     İşlevi için bir işaretçi bildirimcisi şöyle görünür:  
   
 ```  
 (* [cv-qualifiers] identifier )( argument-list ) [cv-qualifers]  
 [exception specification] [= expression];  
 ```  
   
--   İşaretçiler bir dizi için sözdizimi şu şekildedir:  
+-   Bir işaretçiler dizisi için söz dizimi şu şekilde görünür:  
   
 ```  
 * identifier [ [ constant-expression ] ]  
 ```  
   
--   Birden çok bildirimler ve kendi başlatıcıları birlikte bildirimi belirleyici aşağıdaki virgülle ayrılmış bir listesi tek bir bildirimde görünebilir.  
+-   Birden çok bildirimcisi ve bunların başlatıcıları birlikte tek bir bildirim belirticisi aşağıdaki virgülle ayrılmış listesi bildiriminde görünebilir.  
   
  Bir işaretçi bildirimi basit bir örneği verilmiştir:  
   
-```  
+```cpp 
 char *pch;  
 ```  
   
- Önceki bildirimi belirleyen `pch` türünde bir nesneye işaret `char`.  
+ Yukarıdaki bildirim belirten `pch` türündeki bir nesneye işaret **char**.  
   
  Daha karmaşık bir örnek  
   
-```  
+```cpp 
 static unsigned int * const ptr;  
 ```  
   
- Önceki bildirimi belirleyen `ptr` türünde bir nesne sabit bir işaretçidir `unsigned` `int` statik depolama süresi.  
+ Yukarıdaki bildirim belirten `ptr` türünde bir nesne için sabit bir işaretçi olduğu **işaretsiz** **int** statik depolama süresine sahip.  
   
- Sonraki örnek birden çok işaretçileri bildirilen ve başlatılan gösterir:  
+ Sonraki örnek, birden çok işaretçisi bildirilir ve başlatılır gösterir:  
   
-```  
+```cpp 
 static int *p = &i, *q = &j;  
 ```  
   
- Önceki örnekte işaretçileri p ve q türündeki nesnelere noktası `int` ve i ve j adreslere sırasıyla başlatılır.  Depolama sınıfı tanımlayıcısı `static` hem işaretçiler uygular.  
+ Önceki örnekte, işaretçiler p ve soru türündeki nesneleri işaret **int** ve adresler i j ve sırasıyla başlatılır.  Depolama sınıfı tanımlayıcısı **statik** hem işaretçiler için geçerlidir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // pointer.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -187,9 +188,9 @@ dog dog
 ```  
   
 ## <a name="example"></a>Örnek  
- Başka bir örnek veri yapılarında işaretçileri kullanımını gösterir; Bu durumda, bir bağlantılı listesinde.  
+ Başka bir örnek veri yapıları işaretçi kullanımını gösterir; Bu durumda, bir bağlantılı listesinde.  
   
-```  
+```cpp 
 // pointer_linkedlist.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -268,5 +269,5 @@ a (add node)  d (display list)  q (quit)
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönlendirme işleci: *](../cpp/indirection-operator-star.md)   
+ [Yöneltme işleci: *](../cpp/indirection-operator-star.md)   
  [Address-of İşleci: &](../cpp/address-of-operator-amp.md)

@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b52479cc433f59d76dd40cfb752550e51652892d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c655ea4adec0364f35d0b43c637eae9c270cdb0e
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856778"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962071"
 ---
 # <a name="ispod-class"></a>is_pod Sınıfı
 
-Testleri POD türüdür.
+POD türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,35 +37,35 @@ struct is_pod;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* sorgu türüne.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`is_pod<T>::value` olan `true` varsa türü *T* düz eski verileri (POD) değil. Aksi takdirde değer `false`.
+`is_pod<T>::value` olan **true** , türü *T* olan düz eski veri (POD). Aksi halde kalır **false**.
 
-Aritmetik türleri, numaralandırma türleri, işaretçi türleri ve üye türleri işaretçisine POD ' dir.
+Aritmetik tür, sabit listesi türleri, işaretçi türleri ve işaretçi üye türleri için POD ' dir.
 
-POD türü MS tam sürümü kendisini bir POD türüdür.
+Bir POD türü cv tam bir sürümünü kendisi bir POD türüdür.
 
 POD kendisini POD dizisidir.
 
-Bu yapı ya da statik olmayan veri üyeleri POD tümü, UNION, kendisini POD ise:
+Varsa bir yapıda veya birleşimde, statik olmayan veri üyeleri POD tümü, kendisini POD verilmiştir:
 
-- Kullanıcı bildirilen oluşturucu yok.
+- Kullanıcı bildirimi Oluşturucusu.
 
-- Statik olmayan verileri özel veya korumalı üye yok.
+- Özel veya korumalı statik olmayan veri üye yok.
 
 - Temel olmayan sınıflar.
 
-- Sanal işlevler yok.
+- Sanal işlev yok.
 
 - Başvuru türü statik olmayan veri üye yok.
 
-- Hiçbir kullanıcı tarafından tanımlanan kopya atama işleci.
+- Hiçbir kullanıcı tanımlı kopya atama işleci.
 
 - Hiçbir kullanıcı tarafından tanımlanan yıkıcı.
 
-Bu nedenle, yinelemeli olarak yapı POD yapılar ve POD yapıları ve diziler içeren dizileri kullanabilirsiniz.
+Bu nedenle, yinelemeli olarak derleme POD yapıları ve POD yapıları ve dizileri içeren dizileri kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 

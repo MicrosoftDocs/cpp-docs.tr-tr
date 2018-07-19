@@ -18,31 +18,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b23188b3dd49afb619576fa9cdcece69feca94f3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 14eafc1ebb50faaffb4c0a95e0cc929c89fb7c0b
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419998"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37938921"
 ---
 # <a name="run-time-type-information"></a>Çalışma Zamanı Türü Bilgileri
-Çalışma zamanı türü bilgileri (RTTI) program yürütülmesi sırasında belirlenmesi için bir nesne türü izin veren bir mekanizmadır. Sınıf kitaplıkları birçok satıcıları bu işlevselliği kendilerini uygulama çünkü RTTI C++ dili eklendi. Bu kitaplıklar arasındaki uyumsuzluklar neden oldu. Bu nedenle, belirgin hale çalışma zamanı türü bilgileri dil düzeyinde gerektiği için destek.  
+Çalışma zamanı tür bilgisini (RTTI) program yürütme sırasında belirlenmesi için bir nesne türünü izin veren mekanizmadır. Sınıf kitaplıklarının birçok satıcı bu işlevselliği kendilerini uygulama çünkü RTTI C++ dil eklendi. Bu kitaplıklar arasında uyumsuzluk nedeniyle. Bu nedenle, belirgin hale için dil düzeyinde gerekli bir çalışma zamanı türü bilgileri destekler.  
   
- Daha anlaşılır olması amacıyla bu RTTI tartışması işaretçileri neredeyse tamamen büyük/küçük harf sınırlıdır. Ancak, açıklanan kavramları başvurular için de geçerlidir.  
+ Netlik sağlamak, bu tartışma RTTI işaretçileri neredeyse tamamen büyük/küçük harf sınırlıdır. Bununla birlikte, açıklanan kavramları başvurular için de geçerlidir.  
   
  Çalışma zamanı türü bilgileri için üç ana C++ dil öğeleri şunlardır:  
   
 -   [Dynamic_cast](../cpp/dynamic-cast-operator.md) işleci.  
   
-     Çok biçimli türleri dönüştürme için kullanılır.  
+     Çok biçimli türlerin dönüştürülmesi için kullanılır.  
   
 -   [TypeID](../cpp/typeid-operator.md) işleci.  
   
-     Tam bir nesne türünü tanımlamak için kullanılır.  
+     Bir nesnenin tam tür tanımlamak için kullanılır.  
   
 -   [Type_info](../cpp/type-info-class.md) sınıfı.  
   
-     Tarafından döndürülen tür bilgiyi tutmak için kullanılan `typeid` işleci.  
+     Tarafından döndürülen tür bilgileri tutmak için kullanılan **TypeID** işleci.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Atama](../cpp/casting.md)

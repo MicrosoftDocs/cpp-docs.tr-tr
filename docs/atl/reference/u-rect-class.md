@@ -19,68 +19,69 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93d067daf34538e3745e9a4efdd91fda65ef4de9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2ebb76d2f373862b39f2a3742481e14523a7a94b
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360893"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882227"
 ---
 # <a name="urect-class"></a>_U_RECT sınıfı
-Bu bağımsız değişken bağdaştırıcı sınıfı ya da verir `RECT` işaretçileri veya bakımından işaretçileri uygulanan bir işlev geçirilmesi başvuruları.  
+Bu bağımsız değişken bağdaştırıcı sınıfı ya da tanır `RECT` işaretçiler veya başvurular açısından işaretçileri uygulanan bir işleve geçirilecek.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```
-class _U_RECT```  
+class _U_RECT
+```  
   
-## Members  
+## <a name="members"></a>Üyeler  
   
-### Public Constructors  
+### <a name="public-constructors"></a>Ortak Oluşturucular  
   
-|Name|Description|  
+|Ad|Açıklama|  
 |----------|-----------------|  
-|[_U_RECT::_U_RECT](#_u_rect___u_rect)|The constructor.|  
+|[_U_RECT::_U_RECT](#_u_rect___u_rect)|Oluşturucu.|  
   
-### Public Data Members  
+### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
-|Name|Description|  
+|Ad|Açıklama|  
 |----------|-----------------|  
-|[_U_RECT::m_lpRect](#_u_rect__m_lprect)|Pointer to a `RECT`.|  
+|[_U_RECT::m_lpRect](#_u_rect__m_lprect)|İşaretçi bir `RECT`.|  
   
-## Remarks  
- The class defines two constructor overloads: one accepts a **RECT&** argument and the other accepts an `LPRECT` argument. The first constructor stores the address of the reference argument in the class's single data member, [m_lpRect](#_u_rect__m_lprect). The argument to the pointer constructor is stored directly without conversion.  
+## <a name="remarks"></a>Açıklamalar  
+ İki oluşturucu aşırı yüklemeleri sınıfı tanımlar: bir kabul bir **RECT &** ve diğer bağımsız değişken kabul eden bir `LPRECT` bağımsız değişken. İlk Oluşturucu, sınıfın tek veri üyesi içinde başvuru bağımsız değişkeni adresini depolar [m_lpRect](#_u_rect__m_lprect). İşaretçi oluşturucusu için bağımsız değişken doğrudan dönüştürme depolanır.  
   
-## Requirements  
- **Header:** atlwin.h  
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** atlwin.h  
   
 ##  <a name="_u_rect__m_lprect"></a>  _U_RECT::m_lpRect  
- The class holds the value passed to either of its constructors as a public `LPRECT` data member.  
+ Sınıf ya da kendi oluşturucular için genel geçirilen değeri içerir `LPRECT` veri üyesi.  
   
 ```
 LPRECT m_lpRect;
 ```  
   
 ##  <a name="_u_rect___u_rect"></a>  _U_RECT::_U_RECT  
- The address of the reference argument is stored in the class's single data member, [m_lpRect](#_u_rect__m_lprect).  
+ Adresini başvuru bağımsız değişkeni sınıfın tek veri üyesi içinde depolanan [m_lpRect](#_u_rect__m_lprect).  
   
 ```
-_U_RECT (RECT & rc);  
-_U_RECT (LPRECT lpRect);
+_U_RECT(RECT& rc);  
+_U_RECT(LPRECT lpRect);
 ```  
   
-### Parameters  
- `rc`  
- A `RECT` reference.  
+### <a name="parameters"></a>Parametreler  
+ *RC*  
+ A `RECT` başvuru.  
   
- `lpRect`  
- A `RECT` pointer.  
+ *lpRect*  
+ A `RECT` işaretçi.  
   
-### Remarks  
- The argument to the pointer constructor is stored directly without conversion.  
+### <a name="remarks"></a>Açıklamalar  
+ İşaretçi oluşturucusu için bağımsız değişken doğrudan dönüştürme depolanır.  
   
-## See Also  
- [Class Overview](../../atl/atl-class-overview.md)
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

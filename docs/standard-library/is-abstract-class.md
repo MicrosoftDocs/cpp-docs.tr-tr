@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65939df15feeb7654f48246d75d128237c393b10
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6f58436bb281af2746197e5d979e1b038a6a5ce1
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844334"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961701"
 ---
 # <a name="isabstract-class"></a>is_abstract Sınıfı
 
-Tür ise testleri soyut sınıf.
+Soyut sınıf türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_abstract;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu en az bir saf sanal işlev, aksi takdirde sahip bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu en az bir saf sanal işlevi, aksi takdirde sahip bir sınıftır.
 
 ## <a name="example"></a>Örnek
 

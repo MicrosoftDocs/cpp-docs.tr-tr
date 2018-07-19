@@ -1,5 +1,5 @@
 ---
-title: ATL Denetim Sihirbazı, seçenekleri | Microsoft Docs
+title: ATL denetimi Sihirbazı, seçenekleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab1062d32aadc2ec4af68cda8bca02ac1a45a526
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a1fa026ecb0b25c17a793c31c3f64dcd0186f0e1
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364479"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880106"
 ---
-# <a name="options-atl-control-wizard"></a>Seçenekler, ATL Denetim Sihirbazı
+# <a name="options-atl-control-wizard"></a>ATL denetimi Sihirbazı, Seçenekler
 "Arama sonuçları" Özet buraya ekleyin.  
   
- Oluşturmakta olduğunuz denetim türünü ve içerdiği arabirimi desteği düzeyini tanımlamak için sihirbazın bu sayfayı kullanın.  
+ Sihirbazın bu sayfası, oluşturmakta olduğunuz denetim türünü ve içerdiği arabirimi destek düzeyini tanımlamak için kullanın.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Denetim türü**  
@@ -34,11 +34,11 @@ ms.locfileid: "32364479"
   
 -   **Standart denetim: bir ActiveX denetimi.**  
   
--   **Bileşik Denetim**: (bir iletişim kutusu benzer) içeren bir ActiveX denetimi diğer ActiveX denetimleri veya Windows denetimleri. Bileşik Denetim aşağıdakileri içerir:  
+-   **Bileşik Denetim**: (iletişim kutusuna benzer) içeren bir ActiveX denetimi diğer ActiveX denetimleri veya Windows denetimleri. Bileşik Denetim şunları içerir:  
   
     -   Bileşik Denetim uygulayan iletişim kutusu için bir şablon.  
   
-    -   Bir özel kaynak, kayıt defteri çağrıldığında bileşik denetim otomatik olarak kaydeder.  
+    -   Özel kaynak, kayıt defteri bileşik denetim çağrıldığında otomatik olarak kaydeder.  
   
     -   Bileşik Denetim uygulayan bir C++ sınıf.  
   
@@ -46,48 +46,48 @@ ms.locfileid: "32364479"
   
     -   Bileşik Denetim içeren bir HTML test sayfası.  
   
-     Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) doğru şekilde, bu pencereli denetim olduğunu belirtmek için. Bir havuz harita uygular. Daha fazla bilgi için bkz: [DHTML denetimi için destek](../../atl/atl-support-for-dhtml-controls.md).  
+     Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true. Bir havuz eşleme uygular. Daha fazla bilgi için [DHTML denetimi desteği](../../atl/atl-support-for-dhtml-controls.md).  
   
--   **DHTML denetimi**: bir ATL DHTML denetimi HTML kullanarak kullanıcı arabirimi belirtir. DHTML UI sınıfı COM eşlemesi içerir. Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) doğru şekilde, bu pencereli denetim olduğunu belirtmek için.  
+-   **DHTML denetimi**: HTML kullanarak kullanıcı arabirimi, bir ATL DHTML denetimini belirtir. DHTML kullanıcı Arabirimi sınıfı bir COM eşlemesi içerir. Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true.  
   
-     Daha fazla bilgi için bkz: [DHTML denetimi proje öğelerini tanımlama](../../atl/identifying-the-elements-of-the-dhtml-control-project.md).  
+     Daha fazla bilgi için [DHTML denetim projesinin öğelerini tanımlama](../../atl/identifying-the-elements-of-the-dhtml-control-project.md).  
   
  **En az denetim**  
- Çoğu kapsayıcıları tarafından kesinlikle gerekli arabirimleri destekler. Ayarlayabileceğiniz **en az denetim** herhangi bir denetim türü için: en az bir standart denetim, en az bir bileşik denetim veya en az bir DHTML denetimi oluşturabilirsiniz.  
+ Çoğu kapsayıcı tarafından kesinlikle gerekli arabirimleri destekler. Ayarlayabileceğiniz **en az bir denetim** herhangi bir denetim türü için: en az standart bir denetimde, en az bir bileşik denetim veya en az bir DHTML denetimi oluşturabilirsiniz.  
   
  **Toplama**  
- Oluşturmakta olduğunuz Denetim toplama desteği ekler. Daha fazla bilgi için bkz: [toplama](../../atl/aggregation.md).  
+ Oluşturmakta olduğunuz Denetim toplama desteği ekler. Daha fazla bilgi için [toplama](../../atl/aggregation.md).  
   
--   **Evet**: kümelenebilir bir denetim oluşturun.  
+-   **Evet**: toplanabilir bir denetim oluşturursunuz.  
   
--   **Hayır**: toplanamaz bir denetim oluşturun.  
+-   **Hayır**: toplanamaz bir denetim oluşturursunuz.  
   
--   **Yalnızca**: yalnızca toplama oluşturulabilir bir denetim oluşturun.  
+-   **Yalnızca**: yalnızca toplama oluşturulan bir denetim oluşturursunuz.  
   
  **İş parçacığı modeli**  
- İş parçacığı modelini denetimi tarafından kullanılan belirtir.  
+ İş parçacığı modeli denetim tarafından kullanılan belirtir.  
   
--   **Tek**: denetimi yalnızca birincil COM iş parçacığı içinde çalışır.  
+-   **Tek**: denetim, yalnızca birincil COM iş parçacığında çalışır.  
   
--   **Grup**: denetim herhangi tek iş parçacığı grubu oluşturulabilir. Varsayılan.  
+-   **Apartman**: denetimin herhangi tek iş parçacığı grubu oluşturulabilir. Varsayılan.  
   
  **Arabirimi**  
- Bu denetim kapsayıcıya kullanıma sunan arabirim türü.  
+ Arabirim türü bu denetim için kapsayıcı gösterir.  
   
--   **Çift**: özellikler ve yöntemler yoluyla kullanıma sunan bir arabirim oluşturur `IDispatch` ve VTBL aracılığıyla doğrudan.  
+-   **Çift**: özellikler ve yöntemler aracılığıyla kullanıma sunduğu bir arabirim oluşturur `IDispatch` ve doğrudan VTBL.  
   
--   **Özel**: bir VTBL aracılığıyla doğrudan yöntemleri gösteren bir arabirim oluşturur.  
+-   **Özel**: doğrudan bir VTBL aracılığıyla yöntemlerini gösteren bir arabirim oluşturur.  
   
-     Seçerseniz **özel**, denetimin belirtebilirsiniz sonra **otomasyon uyumlu**. Seçerseniz **otomasyon uyumlu**, sihirbaz ekler sonra [oleautomation](../../windows/oleautomation.md) IDL arabiriminde özniteliğini ve arabirim oleaut32.dll içinde Evrensel sıralayıcı tarafından sıralanabilir. Bkz: [hazırlama ayrıntıları](http://msdn.microsoft.com/library/windows/desktop/ms692621) daha fazla bilgi için Windows SDK'sındaki.  
+     Seçerseniz **özel**, denetimin olduğunu belirtin ve **otomasyon uyumlu**. Seçerseniz **otomasyon uyumlu**, sihirbaz ekler sonra [oleautomation](../../windows/oleautomation.md) IDL arabiriminde özniteliği ve arabirimi oleaut32.dll, Evrensel sıralayıcı tarafından sıralanabilir. Bkz: [hazırlama ayrıntıları](http://msdn.microsoft.com/library/windows/desktop/ms692621) daha fazla bilgi için Windows SDK.  
   
-     Ayrıca, seçerseniz **otomasyon uyumlu**, denetimdeki tüm yöntemleri için tüm parametreleri olmalıdır **değişken** uyumlu.  
+     Ayrıca, seçerseniz **otomasyon uyumlu**, denetimdeki tüm yöntemler için tüm parametreleri VARYANT olmalıdır uyumlu.  
   
  **Destek**  
  Ek çeşitli destek denetimi için ayarlar.  
   
--   **Bağlantı noktaları**: sağlar, nesne için bağlantı noktaları, nesnenin sınıf türetin yaparak [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) ve kaynak arabirimi kullanıma sunmak etkinleştirilebilir.  
+-   **Bağlantı noktaları**: nesneniz için bağlantı noktaları sağlar, nesnenin sınıfı türetilen yaparak [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) ve bir kaynak arabirimi kullanıma izin veren.  
   
--   **Lisanslı**: denetlemek için destek ekler [lisans](http://msdn.microsoft.com/library/windows/desktop/ms690543). Lisanslı Denetimler, yalnızca istemci makinede doğru lisans varsa barındırılabilir.  
+-   **Lisanslı**: denetim için destek ekler [lisanslama](http://msdn.microsoft.com/library/windows/desktop/ms690543). Lisanslı Denetimler, yalnızca istemci makinede doğru lisansa varsa barındırılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)

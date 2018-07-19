@@ -18,19 +18,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6661996669e454e655d0149f1dbb1df505116469
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3c2fc99d4349a158bc4ce944be96e9c6141700cf
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948041"
 ---
 # <a name="inline-functions-c"></a>Satır İçi İşlevler (C++)
 Sınıf bildirimi gövdesinde tanımlanan bir işlev, satır içi işlevdir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki sınıf bildiriminde, `Account` oluşturucusu bir satır içi işlevdir. Üye işlevleri `GetBalance`, `Deposit`, ve `Withdraw` olarak belirtilmemiş **satır içi** ancak satır içi işlevler uygulanabilir.  
+ Aşağıdaki sınıf bildiriminde, `Account` oluşturucusu bir satır içi işlevdir. Üye işlevleri `GetBalance`, `Deposit`, ve `Withdraw` olarak belirtilmeyen **satır içi** ancak satır içi işlevleri uygulanabilir.  
   
-```  
+```cpp 
 // Inline_Member_Functions.cpp  
 class Account  
 {  
@@ -63,42 +64,42 @@ int main()
 ```  
   
 > [!NOTE]
->  Sınıf bildiriminde işlevleri olmadan bildirilen **satır içi** anahtar sözcüğü. **Satır içi** anahtar sözcüğü sınıfı bildiriminde belirtilebilir; sonuç aynıdır.  
+>  Sınıf bildiriminde, İşlevler olmadan bildirilir **satır içi** anahtar sözcüğü. **Satır içi** anahtar sözcüğü sınıfı bildiriminde belirtilebilir; sonuç aynıdır.  
   
  Belirli bir satır içi üye işlevi, her derleme biriminde aynı şekilde bildirilmelidir. Bu kısıtlama, satır içi işlevlerin örneği oluşturulmuş işlevler gibi davranmasına neden olur. Ayrıca, satır içi işlevinin yalnızca tek bir tanımı olmalıdır.  
   
- Sınıf üye işlevi bu işlev için bir tanım içeriyor sürece dış bağlantı için varsayılan olarak **satır içi** tanımlayıcısı. Önceki örnekte bu işlevleri açıkça ile bildirilmesi gereken olmayan gösterir **satır içi** kullanarak; tanımlayıcısı **satır içi** işlev tanımı satır içi işlev olması neden olur. Ancak, bir işlev olarak redeclare geçersiz **satır içi** sonra bu işlevi çağrısı.  
+ Sınıf üyesi işlevi varsayılan olarak dış bağlantı söz konusu işlev için bir tanım içeriyor sürece **satır içi** tanımlayıcısı. Bu işlevler ile açıkça bildirilmesine yok, önceki örnekte gösterir **satır içi** tanımlayıcısı; kullanarak **satır içi** işlev tanımı, satır içi işlev olmasına neden olur. Ancak, bir işlev olarak çağrıldıktan **satır içi** bu işlev çağrısı yapıldıktan sonra.  
   
 ## <a name="inline-inline-and-forceinline"></a>Satır içi, __inline, ve \__forceinline  
- `inline` ve `__inline` belirticileri, işlevin çağrıldığı her yere işlev gövdesinin bir kopyasını eklemek için talimat verir.  
+ **Satır içi** ve **__inline** belirticileri işlevin çağrıldığı her yere işlev gövdesinin bir kopyasını eklemek için derleyicinin isteyin.  
   
  Ekleme (satır içi genişletme veya satır için yerleştirme denir) yalnızca derleyicinin maliyet/kar analizinin karlı olacağını gösterdiği durumlarda oluşur. Satır içi genişletme, daha büyük boyuttaki kodun olası maliyetinde işlev-çağrı ek yükünü azaltır.  
   
- `__forceinline` anahtar sözcüğü, maliyet/kar analizini geçersiz kılar ve bunun yerine programcının kararına dayanır. `__forceinline` kullanırken dikkatli çalışın. Rasgele `__forceinline` kullanımı, yalnızca marjinal bir performans artışı ile daha büyük kod oluşmasına neden ya da bazı durumlarda performans kayıplarına dahi neden olabilir (örneğin daha büyük çalıştırılabilir belleğin artmasından dolayı).  
+ **__Forceinline** anahtar sözcüğü, Maliyet/Kar analizini geçersiz kılar ve bunun yerine programcının kararına yükümlülükten üzerinde kullanır. Kullanırken dikkatli **__forceinline**. Ayrım gözetilmeden kullanımını **__forceinline** neden olabilecek yalnızca Marjinal bir performans artışı ile daha büyük kod veya, bazı durumlarda performans kayıplarına (nedeniyle artan daha büyük bir yürütülebilir, örneğin disk belleği) bile.  
   
  Satır içi işlevleri kullanmak, işlev çağrıları ile ilgili ek yükü ortadan kaldırdığı için programınızı daha hızlı yapabilir. Satır içi olarak genişletilen işlevler için, normal işlevlerde kullanılamayan kod iyileştirmeleri yapılır.  
   
- Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. İşlevlerin satır içi olacağına dair bir garanti yoktur. Bir `__forceinline` anahtar sözcüğünü kullansanız bile belirli bir işlevin satır içi olması için derleyiciyi zorlayamazsınız. İle derleme yapılırken **/CLR**, derleyici işleve uygulanan güvenlik öznitelik varsa bu hizalı değil işlevi olur.  
+ Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. İşlevlerin satır içi olacağına dair bir garanti yoktur. Belirli bir işlevi satır içi derleyiciye bile zorlayamaz **__forceinline** anahtar sözcüğü. İle derlerken **/CLR**, derleyici işleve uygulanmış güvenlik öznitelikleri varsa bu satır bir işlev olur.  
   
- **Satır içi** anahtar sözcüğü yalnızca C++ içinde kullanılabilir. `__inline` ve `__forceinline` anahtar sözcükleri hem C'de hem de C++'ta kullanılabilir. Önceki sürümlerle uyumluluk için **_inline** eşanlamlısı olduğu `__inline`.  
+ **Satır içi** anahtar sözcüğü yalnızca C++'da kullanılabilir. **__İnline** ve **__forceinline** anahtar sözcükleri hem C'de hem de C++'ta kullanılabilir. Önceki sürümlerle uyumluluk için **eşanlamlıdır** eşanlamlıdır **__inline**.  
   
- **Satır içi** anahtar sözcüğü, satır içi genişletme tercih edilir derleyici söyler. Ancak, derleyici işlevin ayrı bir örneğini oluşturabilir (örneklediğinizde) ve satır içi kod eklemek yerine standart arama bağlantıları oluşturur. Buna izin veren iki durum vardır:  
+ **Satır içi** anahtar sözcüğü derleyiciye satır içi genişletmelerin tercih edildiğini bildirir. Ancak, derleyici işlevin ayrı bir örneğini oluşturabilir (örneklediğinizde) ve satır içi kod eklemek yerine standart arama bağlantıları oluşturur. Buna izin veren iki durum vardır:  
   
 -   Özyinelemeli işlevler.  
   
 -   Çeviri birimi içinde başka bir yerdeki işaretçi üzerinden başvurulan işlevler.  
   
- Bu nedenlerden ile etkileyebilir satır içi kullanım, *diğerleri gibi*, derleyici; kümeleri, üzerinde bağımlı olmamalıdır **satır içi** içermesinden olması için bir işlev neden tanımlayıcısı.  
+ Bu nedenle ile etkileyebilir karıştırılabilir *diğerleri başkaları gibi*, derleyici; kararımıza, bağlı olmamalıdır **satır içi** bir işlevi satır içine alınmayacak kadar belirticisine.  
   
  Normal işlevlerde olduğu gibi, satır içi işlevler için bağımsız değişkenlerin değerlendirilmesinde belirlenmiş bir sıra yoktur. Aslında, bağımsız değişkenlerin normal işlev çağrısı protokolü kullanılarak geçirildiği durumların değerlendirilmesindeki sıralamadan farklı olabilir.  
   
- [/Ob](../build/reference/ob-inline-function-expansion.md) satır içi işlev genişletmesi gerçekte oluşup oluşmadığını belirleyin derleyici en iyi duruma getirme seçeneği yardımcı olur.  
+ [/Ob](../build/reference/ob-inline-function-expansion.md) derleyicisi iyileştirme seçeneği satır içi işlev genişletmesinin gerçekten oluşup oluşmadığını belirlemek yardımcı olur.  
   
- [/ LTCG](../build/reference/ltcg-link-time-code-generation.md) çapraz modülü olup, kaynak kodunda istendi bakılmaksızın satır içi kullanım gerçekleştirir.  
+ [/ LTCG](../build/reference/ltcg-link-time-code-generation.md) çapraz-modül inlining'i olup olmadığı, kaynak kodunda istendi bağımsız olarak gerçekleştirir.  
   
 ### <a name="example-1"></a>Örnek 1  
   
-```  
+```cpp 
 // inline_keyword1.cpp  
 // compile with: /c  
 inline int max( int a , int b ) {  
@@ -108,11 +109,11 @@ inline int max( int a , int b ) {
 }  
 ```  
   
- Sınıf üyesi işlevleri ya da kullanarak satır içi bildirilebilir **satır içi** anahtar sözcüğü veya sınıf tanımı içinde işlev tanımı yerleştirebilirsiniz.  
+ Bir sınıfın üye işlevleri kullanarak ya da satır içi bildirilebilir **satır içi** anahtar sözcüğü veya sınıf tanımı içine işlev tanımı yerleştirerek.  
   
 ### <a name="example-2"></a>Örnek 2  
   
-```  
+```cpp 
 // inline_keyword2.cpp  
 // compile with: /EHsc /c  
 #include <iostream>  
@@ -127,9 +128,9 @@ private:
 ```  
   
 ### <a name="microsoft-specific"></a>Microsoft'a Özgü  
- `__inline` Anahtar sözcüğü eşdeğerdir **satır içi**.  
+ **__İnline** anahtar sözcüğü, eşdeğer **satır içi**.  
   
- `__forceinline` kullanılsa da, derleyici her durumda satır içi kodlamayı yapamaz. Derleyici, şu durumlarda bir işlevi satır içi yapamaz:  
+ Bile **__forceinline**, derleyici her durumda satır içi kod yapamaz. Derleyici, şu durumlarda bir işlevi satır içi yapamaz:  
   
 -   İşlev veya çağıranı /Ob0 (hata ayıklama için varsayılan seçenek) ile derlenir.  
   
@@ -139,26 +140,26 @@ private:
   
 -   İşlev; satır içi derlemeyi, /Og, /Ox, /O1 veya /O2 ile derlenmediği sürece kullanır.  
   
--   İşlev yinelemelidir ve eşlik değil **#pragma inline_recursion(on)**. Pragma ile özyinelemeli işlevler varsayılan 16 aramalı derinliğe kadar satır içi yapılırlar. Satır içi kullanım derinliği azaltmak için kullanma [inline_depth](../preprocessor/inline-depth.md) pragması.  
+-   İşlev özyinelemelidir ve eşlik değil **#pragma inline_recursion(on)**. Pragma ile özyinelemeli işlevler varsayılan 16 aramalı derinliğe kadar satır içi yapılırlar. Satır içi derinliğini azaltmak için kullanma [inline_depth](../preprocessor/inline-depth.md) pragması.  
   
 -   İşlev sanaldır ve sanal olarak çağrılır. Sanal işlevlere doğrudan çağrılar satır içi yapılabilir.  
   
 -   Program işlevin adresini alır ve çağrı işlev işaretçisi aracılığıyla yapılır. Adresleri alınmış olan doğrudan işlev çağrıları satır içi yapılabilir.  
   
--   İşlevi de işaretlenmiş [naked](../cpp/naked-cpp.md) [__declspec](../cpp/declspec.md) değiştiricisi.  
+-   İşlev ayrıca ile işaretlenmiş [naked](../cpp/naked-cpp.md) [__declspec](../cpp/declspec.md) değiştiricisi.  
   
- Satır içi derleyici olamaz, bir işlev ile bildirilen `__forceinline`, ne zaman dışında bir düzey 1 uyarı üretir:
+ Derleyicinin satır içi yapamazsa ile bildirilen bir işlevi **__forceinline**, aşağıdakiler haricinde, düzey 1 uyarısını oluşturur:
   
--   İşlev /Od veya /Ob0 kullanarak derlenir. Hayır satır içi kullanım bu gibi durumlarda beklenir.     
+-   İşlev /Od veya /Ob0 kullanarak derlenir. Hiçbir satır içi kullanım bu gibi durumlarda beklenir.     
   
--   İşlevi harici olarak bulunan bir kitaplık veya başka bir çeviri birim tanımlı değil veya bir sanal çağrısı hedef ya da dolaylı çağrı hedef. Derleyici geçerli çeviri biriminde bulunamıyor içermesinden olmayan kod tanımlanamıyor.  
+-   İşlevi, harici olarak bulunan bir kitaplık ya da başka bir çeviri biriminde tanımlanan veya bir sanal çağrı hedefi ya da dolaylı çağrı hedefi. Derleyici, geçerli çeviri biriminde bulunamıyor satır içi olmayan kod tanımlanamıyor.  
   
- Özyinelemeli işlevler tarafından belirtilen bir derinliği değiştirilen satır içi olabilir [inline_depth](../preprocessor/inline-depth.md) en fazla 16 çağrıları pragması. Bu derinlikten sonra yinelenen işlev çağrıları, işlev örneği çağrıları olarak kabul edilir.  Özyinelemeli işlevlerin derinliği 16'yı geçmeyecek şekilde satır içi buluşsal yöntem tarafından incelenir. [İnline_recursion](../preprocessor/inline-recursion.md) pragma genişletme altında şu anda işlev satır içi genişletme denetler. Bkz: [satır içi işlev genişletmesi](../build/reference/ob-inline-function-expansion.md) (/ Ob) ilgili bilgiler için derleyici seçeneği.  
+ Özyinelemeli İşlevler, satır içi olarak değiştirilebilir tarafından belirtilen bir derinlik olabilir [inline_depth](../preprocessor/inline-depth.md) pragması, en çok 16 çağrısı. Bu derinlikten sonra yinelenen işlev çağrıları, işlev örneği çağrıları olarak kabul edilir.  Özyinelemeli işlevlerin derinliği 16'yı geçmeyecek şekilde satır içi buluşsal yöntem tarafından incelenir. [İnline_recursion](../preprocessor/inline-recursion.md) pragması şu anda bir işlevin satır içi genişletme denetler. Bkz: [satır içi işlev genişletmesi](../build/reference/ob-inline-function-expansion.md) (/ Ob) derleyici seçeneği ilgili bilgiler için.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
  Kullanma hakkında daha fazla bilgi için **satır içi** belirticisi bakın:  
   
--   [Satır içi sınıfı üye işlevleri](../cpp/inline-functions-cpp.md)  
+-   [Satır içi sınıfı üye fonksiyonları](../cpp/inline-functions-cpp.md)  
   
 -   [dllexport ve dllimport ile Satır İçi C++ İşlevlerini Tanımlama](../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md)  
   
@@ -167,7 +168,7 @@ private:
   
  A `Point` sınıfı şu şekilde tanımlanabilir:  
   
-```  
+```cpp 
 // when_to_use_inline_functions.cpp  
 class Point  
 {  
@@ -194,7 +195,7 @@ int main()
 }  
 ```  
   
- Koordinat işleme varsayılarak olan bir istemci görece ortak bir işlemde iki erişimci işlevleri belirtme gibi bir sınıf (`x` ve `y` önceki örnekte) olarak **satır içi** genellikle kaydeder ek yükü:  
+ Koordinat işleme varsayılarak olan istemcisinde nispeten daha sık karşılaşılan bir işlemi iki erişimci işlevi belirterek bu tür bir sınıfın (`x` ve `y` önceki örnekte) olarak **satır içi** genellikle kaydeder iş yükünü:  
   
 -   İşlev çağrıları (parametre geçirme ve nesnenin adresini yığına yerleştirme dahil)  
   
@@ -206,20 +207,20 @@ int main()
   
 -   Eski yığın çerçevesini geri yükleme  
   
--   Döndür  
+-   döndürülecek  
   
 ## <a name="inline-functions-vs-macros"></a>Makrolar ve satır içi işlevler  
- Rağmen satır içi işlevler benzerdir makrolar (işlev kodu derleme zamanında çağrısı noktasında genişletildiğinden), satır içi işlevler tarafından Önişlemci makroları genişletilir ancak derleyici tarafından ayrıştırılan. Sonuç olarak, birkaç önemli farklılıklar vardır:  
+ Olsa da (işlev kodunu derleme zamanında çağrısı noktasında genişletildiğinden) satır içi işlevlerle makrolar benzer, satır içi işlevlerle makrolar, önişlemci tarafından genişletilir ancak derleyici tarafından ayrıştırılan. Sonuç olarak, bazı önemli farklılıklar vardır:  
   
--   Satır içi işlevler normal işlevlerini zorlanan tür güvenliği tüm protokollerin izleyin.  
+-   Satır içi işlevler normal işlevlerde zorlanan tür güvenliği, tüm protokoller izleyin.  
   
--   Satır içi işlevler içerirler dışında herhangi bir işlev aynı sözdizimini kullanarak belirtilen **satır içi** işlevi bildiriminde anahtar sözcüğü.  
+-   Satır içi işlevleri içerirler hariç, herhangi bir işlev olarak aynı sözdizimini kullanılarak belirtilen **satır içi** işlevi bildirimindeki anahtar sözcüğü.  
   
--   Satır içi işlevler için bağımsız değişken olarak geçirilen ifade kez değerlendirilir. Bazı durumlarda, makrolar bağımsız değişken olarak geçirilen ifade birden çok kez değerlendirilebilir.  
+-   Satır içi işlevler için bağımsız değişken olarak geçirilen ifade bir kez değerlendirilir. Bazı durumlarda, bağımsız değişkenleri olarak geçtiklerinde makrolara ifadeleri birden fazla kez değerlendirilebilir.  
   
- Aşağıdaki örnek, küçük harfler, büyük harfe dönüştürür makrosu gösterir:  
+ Aşağıdaki örnek, büyük küçük harflere dönüştürür bir makro gösterir:  
   
-```  
+```cpp 
 // inline_functions_macro.c  
 #include <stdio.h>  
 #include <conio.h>  
@@ -237,13 +238,13 @@ int main() {
   
 ```  
   
- İfade amacı `toupper(getc(stdin))` bir karakter konsol aygıttan okuma olduğunu (`stdin`) ve gerekirse, büyük harfe dönüştürülürse.  
+ İfade amacı `toupper(getc(stdin))` bir karakter konsol CİHAZDAN okuma, (`stdin`) ve gerekirse büyük harfe dönüştürdüyseniz.  
   
- Makro uygulanması nedeniyle `getc` karakter büyük olup olmadığını belirlemek için bir kez yürütülmüş ya da "a" ve belirlemek için "z." değerinden küçük veya eşit olup sonra eşit Bu aralıktaki ise `getc` karakter büyük harfe dönüştürülecek yeniden yürütülür. Başka bir deyişle, ideal olarak, yalnızca bir beklemesi gerekir, program için iki veya üç karakter bekler.  
+ Makro uygulanması nedeniyle `getc` karakterin büyük olup olmadığını belirlemek için bir kez yürütülmüş veya "a" ve belirlemek için "z" küçüktür veya eşittir olmasından sonra eşittir Bu aralık içinde olup olmadığını `getc` karakteri büyük harfe dönüştürülecek yeniden yürütülür. Başka bir deyişle, ideal olarak, yalnızca bir beklemesi gerekir, program için iki veya üç karakter bekler.  
   
- Satır içi işlevler daha önce açıklanan bildirime:  
+ Satır içi işlevler, daha önce açıklanan bildirime:  
   
-```  
+```cpp 
 // inline_functions_inline.cpp  
 #include <stdio.h>  
 #include <conio.h>  

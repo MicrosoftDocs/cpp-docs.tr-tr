@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f739152b502a156dc62dfab279e5ad044cfff99
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 13971ede3aef6d223b1c631c4a28f8bf190e7174
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420210"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37938789"
 ---
 # <a name="restrictions-on-exception-handlers"></a>Özel Durum İşleyicileri Kısıtlamaları
-Kodda özel durum işleyicileri kullanmaya ilişkin birincil sınırlama, `goto` deyim bloğuna atlamak için `__try` deyimi kullanamamanızdır. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. `__try` deyim bloğundan dışarı atlayabilir ve seçtiğiniz özel durum işleyicilerini iç içe yerleştirebilirsiniz.  
+Kodda özel durum işleyicileri kullanmaya ilişkin birincil sınırlama, kullanamazsınız olduğu bir **goto** bloğuna atlamak için bir **__try** deyim bloğu. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. / Hızlı bir **__try** deyimi engelleme ve seçtiğiniz özel durum işleyicilerini iç içe yerleştirebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)   

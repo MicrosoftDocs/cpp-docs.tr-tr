@@ -15,25 +15,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf4204e55811cd33fa48e2b3a07d3058100729ac
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4d64a25475ad7ac40f63d29798768f8f57866b3c
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411653"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941631"
 ---
 # <a name="casting-operators"></a>Atama İşleçleri
 C++ diline özgü birkaç atama işleci vardır. Bu işleçler, eski stil C dili atamalarında bulunan belirsizliğin ve tehlikenin bir kısmının giderilmesini amaçlar. Bu işleçler şunlardır:  
   
--   [dynamic_cast](../cpp/dynamic-cast-operator.md) biçimli türleri dönüştürme için kullanılır.  
+-   [dynamic_cast](../cpp/dynamic-cast-operator.md) çok biçimli türlerin dönüştürülmesi için kullanılır.  
   
--   [static_cast](../cpp/static-cast-operator.md) nonpolymorphic türleri dönüştürme için kullanılır.  
+-   [static_cast](../cpp/static-cast-operator.md) dönüştürme olmayan türlerin dönüştürülmesi için kullanılır.  
   
--   [const_cast](../cpp/const-cast-operator.md) kaldırmak için kullanılan `const`, `volatile`, ve `__unaligned` öznitelikleri.  
+-   [const_cast](../cpp/const-cast-operator.md) kaldırmak için kullanılan **const**, **geçici**, ve **__unaligned** öznitelikleri.  
   
--   [reinterpret_cast](../cpp/reinterpret-cast-operator.md) BITS basit reinterpretation için kullanılır.  
+-   [reinterpret_cast](../cpp/reinterpret-cast-operator.md) bitlerin basit reinterpretation için kullanılır.  
   
--   [safe_cast](../windows/safe-cast-cpp-component-extensions.md) doğrulanabilen MSIL üretmek için kullanılır.  
+-   [safe_cast](../windows/safe-cast-cpp-component-extensions.md) doğrulanabilir MSIL oluşturmak için kullanılır.  
   
  Bu işleçler eski stil atamalarla aynı tehlikeleri arz ettiği için son çare olarak `const_cast` ve `reinterpret_cast` kullanın. Bununla birlikte, eski stil atamaları tamamen değiştirmek için gereklidirler.  
   

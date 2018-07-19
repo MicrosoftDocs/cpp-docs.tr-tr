@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65d5ed1bae5f4571cad6b942af9d6e9b4ff646ed
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 71bb3985fe870b29d06ebc01d0b7dab4712f1797
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414555"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941073"
 ---
 # <a name="function-templates"></a>İşlev Şablonları
 Sınıf şablonları, örneği oluşturulduktan sonra sınıfa geçirilen tür bağımsız değişkenlerini temel alan ilgili sınıflar ailesini tanımlar. İşlev şablonları sınıf şablonlarına benzer, ancak bir işlevler ailesi tanımlar. İşlev şablonlarıyla, aynı kodu temel alan, ancak farklı türler veya sınıflar üzerinde işlem yapan bir işlevler kümesi belirtebilirsiniz. Aşağıdaki işlev şablonu iki öğeyi birbirleriyle değiştirir:  
@@ -37,9 +37,9 @@ int main() {
 }  
 ```  
   
- Bu kod, bir bağımsız değişkenlerin değerlerini birbirleriyle değiştiren bir işlevler ailesini tanımlar. Bu şablondan değiştireceksiniz işlevleri oluşturabilir **int** ve **uzun** türleri ve ayrıca kullanıcı tanımlı türler. `MySwap`, sınıfın kopya oluşturucu ve atama işleci düzgün bir şekilde tanımlanmışsa sınıfları bile birbirleriyle değiştirecektir.  
+ Bu kod, bir bağımsız değişkenlerin değerlerini birbirleriyle değiştiren bir işlevler ailesini tanımlar. Bu şablondan birbirleriyle değiştirecek işlevler oluşturabilirsiniz **int** ve **uzun** türleri ve ayrıca kullanıcı tanımlı türler. `MySwap`, sınıfın kopya oluşturucu ve atama işleci düzgün bir şekilde tanımlanmışsa sınıfları bile birbirleriyle değiştirecektir.  
   
- Ayrıca, derleyici derleme zamanında `a` ve `b` parametrelerinin türlerini bildiği için işlev şablonu farklı türden nesneleri birbirleriyle değiştirmenizi önleyecektir.  
+ Derleyici türlerini bildiği için ek olarak, işlev şablonu, farklı türden nesneleri önleyecektir *bir* ve *b* derleme zamanında parametreleri.  
   
  Bu işlev şablonu oluşturulmamış bir işlev tarafından gerçekleştirilebilse de, şablon sürümü void işaretçileri kullanılırsa typesafe olabilir. Aşağıdaki çağrıları göz önünde bulundurun:  
   
@@ -64,10 +64,10 @@ int main(int j) {
 }  
 ```  
   
- Şablon bağımsız değişkenini açıkça belirtildiğinde, işlev bağımsız değişkenini ilgili işlev şablonu parametrelerine dönüştürmek için normal örtük dönüştürmeler gerçekleştirilir. Yukarıdaki örnekte derleyici dönüştürecek `char j` yazmak için `int`.  
+ Şablon bağımsız değişkenini açıkça belirtildiğinde, işlev bağımsız değişkenini ilgili işlev şablonu parametrelerine dönüştürmek için normal örtük dönüştürmeler gerçekleştirilir. Yukarıdaki örnekte, derleyicinin dönüştürecek `char j` türüne **int**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Şablonları](../cpp/templates-cpp.md)   
  [İşlev şablonu örneklemesi](../cpp/function-template-instantiation.md)   
- [Açık örnekleme](../cpp/explicit-instantiation.md)   
+ [Açık örnek oluşturma](../cpp/explicit-instantiation.md)   
  [İşlev Şablonlarının Açık Alt Uzmanlaşması](../cpp/explicit-specialization-of-function-templates.md)

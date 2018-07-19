@@ -1,5 +1,5 @@
 ---
-title: IViewObjectExImpl sınıfı | Microsoft Docs
+title: Iviewobjectexımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -32,18 +32,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c51bc9e5feb02d837c37341b82a1fc19a3cea558
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3eb40b5b886407a87e0633052cde67868d756a88
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365917"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37883651"
 ---
-# <a name="iviewobjecteximpl-class"></a>IViewObjectExImpl sınıfı
-Bu sınıf uygulayan **IUnknown** ve varsayılan uygulamalarını sağlar [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), ve [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375)arabirimleri.  
+# <a name="iviewobjecteximpl-class"></a>Iviewobjectexımpl sınıfı
+Bu sınıfın uyguladığı `IUnknown` ve varsayılan uygulamalarını sağlar [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), ve [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) arabirimleri.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,7 +54,7 @@ class ATL_NO_VTABLE IViewObjectExImpl
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IViewObjectExImpl`.  
   
 ## <a name="members"></a>Üyeler  
@@ -63,21 +63,21 @@ class ATL_NO_VTABLE IViewObjectExImpl
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IViewObjectExImpl::Draw](#draw)|Bir cihaz bağlamı üzerine denetim gösterimini çizer.|  
-|[IViewObjectExImpl::Freeze](#freeze)|Bir denetim çizilmiş gösterimini kadar değişmeyeceği şekilde donuyor bir `Unfreeze`. ATL uygulamasını döndürür **E_NOTIMPL**.|  
-|[IViewObjectExImpl::GetAdvise](#getadvise)|Varsa mevcut bir danışma havuz bağlantı denetimi alır.|  
-|[IViewObjectExImpl::GetColorSet](#getcolorset)|Çizim için denetim tarafından kullanılan mantıksal palet döndürür. ATL uygulamasını döndürür **E_NOTIMPL**.|  
-|[IViewObjectExImpl::GetExtent](#getextent)|Denetimin görüntüleme boyutu HIMETRIC birimler (birim başına 0,01 milimetre) denetim sınıfı veri üyesi alır [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).|  
-|[IViewObjectExImpl::GetNaturalExtent](#getnaturalextent)|Kullanıcı yeniden boyutlandırır olarak kullanılmak üzere nesnesinin kapsayıcısından boyutlandırma ipuçlarını sağlar.|  
-|[IViewObjectExImpl::GetRect](#getrect)|İstenen bir çizim yönü açıklayan bir dikdörtgen döndürür. ATL uygulamasını döndürür **E_NOTIMPL**.|  
-|[IViewObjectExImpl::GetViewStatus](#getviewstatus)|Nesne ve hangi çizim yönlerini desteklenen opaklık hakkındaki bilgileri döndürür.|  
-|[IViewObjectExImpl::QueryHitPoint](#queryhitpoint)|Belirtilen nokta belirtilen dikdörtgenin nedir ve döndürür denetler bir [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) değeri `pHitResult`.|  
-|[IViewObjectExImpl::QueryHitRect](#queryhitrect)|Denetimin görüntüleme dikdörtgenini çakışıyor belirtilen konum dikdörtgenin içindeki herhangi bir noktasını döndürür olup olmadığını denetler ve bir **HITRESULT** değeri `pHitResult`.|  
-|[IViewObjectExImpl::SetAdvise](#setadvise)|Havuz değişiklikleri denetimin görünüm hakkında bildirim almak için denetimi ve bir öneri havuz arasında bir bağlantı kurar.|  
-|[IViewObjectExImpl::Unfreeze](#unfreeze)|Denetim çizilmiş gösterimini canlandırır. ATL uygulamasını döndürür **E_NOTIMPL**.|  
+|[IViewObjectExImpl::Draw](#draw)|Bir cihaz bağlamı denetime gösterimini çizer.|  
+|[IViewObjectExImpl::Freeze](#freeze)|Bir denetim çizilen gösterimini kadar değişmez şekilde donuyor bir `Unfreeze`. ATL uygulamasını E_NOTIMPL döndürür.|  
+|[IViewObjectExImpl::GetAdvise](#getadvise)|Varsa mevcut bir danışmanlık havuz bağlantı denetimi alır.|  
+|[IViewObjectExImpl::GetColorSet](#getcolorset)|Çizim için denetim tarafından kullanılan mantıksal paletini döndürür. ATL uygulamasını E_NOTIMPL döndürür.|  
+|[IViewObjectExImpl::GetExtent](#getextent)|Denetim sınıfı veri üyesi denetimin görüntü boyutunu HIMETRIC biriminde (her birim 0,01 milimetre) alır [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).|  
+|[IViewObjectExImpl::GetNaturalExtent](#getnaturalextent)|Kullanıcı objeyi nesne için kapsayıcıdan boyutlandırma ipuçları sağlar.|  
+|[IViewObjectExImpl::GetRect](#getrect)|Bir istenen çizimin görünüş bilgisini tarif ederken bir dikdörtgen döndürür. ATL uygulamasını E_NOTIMPL döndürür.|  
+|[IViewObjectExImpl::GetViewStatus](#getviewstatus)|Nesne ve hangi çizim görünümlerinin desteklendiği geçirgenlik hakkında bilgi döndürür.|  
+|[IViewObjectExImpl::QueryHitPoint](#queryhitpoint)|Belirtilen nokta içinde belirtilen dikdörtgen döndürür olmadığını denetler ve bir [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) değerini `pHitResult`.|  
+|[IViewObjectExImpl::QueryHitRect](#queryhitrect)|Denetimin görünen dikdörtgen çakışıyor herhangi bir noktasında belirtilen konuma dikdörtgen bir HITRESULT değerini döndürür olup olmadığını denetler ve `pHitResult`.|  
+|[IViewObjectExImpl::SetAdvise](#setadvise)|Havuz denetim görünümünde değişiklikleri hakkında bilgilendirilebilirsiniz için Denetim ve bir öneri havuz arasında bir bağlantı kurar.|  
+|[IViewObjectExImpl::Unfreeze](#unfreeze)|Denetim çizilen gösterimini canlandırır. ATL uygulamasını E_NOTIMPL döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), ve [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) arabirimleri kendisini doğrudan görüntülemek ve oluşturmak ve bildirmek için bir öneri havuz yönetmek bir denetimini etkinleştirme Denetim görüntüleme değişiklikleri kapsayıcısı. **IViewObjectEx** arabirimi titreşimsiz çizim, dikdörtgen olmayan ve saydam denetimleri ve (örneğin, ne kadar yakın bir fare tıklatma üzerinde olarak kabul edilmesi için olmalıdır isabet sınaması gibi genişletilmiş denetim özellikleri için destek sağlar Denetim). Sınıf `IViewObjectExImpl` bu arabirimleri bir varsayılan uygulamayı sağlar ve uygulayan **IUnknown** aygıt hata ayıklama dökümü bilgileri göndererek oluşturur.  
+ [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), ve [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) arabirimleri kendisini doğrudan görüntülemek ve oluşturmak ve bildirmek için bir öneri havuz yönetmek bir denetimini etkinleştirme kapsayıcı değişiklik denetimi görüntülenir. `IViewObjectEx` Arabirimi titreşimsiz çizim, dikdörtgen olmayan ve saydam denetimleri ve (örneğin, ne kadar yakın bir fare tıklaması denetimi olarak kabul edilmesi için olmalıdır) isabet sınaması gibi genişletilmiş denetim özellikleri için destek sağlar. Sınıf `IViewObjectExImpl` uygular ve bu arabirimler bir varsayılan uygulamayı sağlar `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IViewObjectEx`  
@@ -88,7 +88,7 @@ class ATL_NO_VTABLE IViewObjectExImpl
  **Başlık:** atlctl.h  
   
 ##  <a name="draw"></a>  IViewObjectExImpl::Draw  
- Bir cihaz bağlamı üzerine denetim gösterimini çizer.  
+ Bir cihaz bağlamı denetime gösterimini çizer.  
   
 ```
 STDMETHOD(Draw)(
@@ -104,12 +104,12 @@ STDMETHOD(Draw)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırır **CComControl::OnDrawAdvanced** denetim sınıfınızın sırayla çağıran `OnDraw` yöntemi. Bir `OnDraw` ATL Denetim Sihirbazı'yla denetiminizi oluşturduğunuzda yöntemi denetim sınıfınıza otomatik olarak eklenir. Sihirbazın varsayılan `OnDraw` "ATL 3.0" etiketli bir dikdörtgen çizer.  
+ Bu yöntemin çağırdığı `CComControl::OnDrawAdvanced` denetim sınıfınızın sırayla çağıran `OnDraw` yöntemi. Bir `OnDraw` ATL denetimi Sihirbazı'yla denetiminizi oluşturduğunuzda yöntemi denetim sınıfınıza otomatik olarak eklenir. Sihirbazın varsayılan `OnDraw` "ATL 3.0" etiketli bir dikdörtgen çizer.  
   
- Bkz: [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655) Windows SDK.  
+ Bkz: [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655) Windows SDK içinde.  
   
 ##  <a name="freeze"></a>  IViewObjectExImpl::Freeze  
- Bir denetim çizilmiş gösterimini kadar değişmeyeceği şekilde donuyor bir `Unfreeze`. ATL uygulamasını döndürür **E_NOTIMPL**.  
+ Bir denetim çizilen gösterimini kadar değişmez şekilde donuyor bir `Unfreeze`. ATL uygulamasını E_NOTIMPL döndürür.  
   
 ```
 STDMETHOD(Freeze)(
@@ -120,10 +120,10 @@ STDMETHOD(Freeze)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IViewObject::Freeze](http://msdn.microsoft.com/library/windows/desktop/ms688728) Windows SDK.  
+ Bkz: [IViewObject::Freeze](http://msdn.microsoft.com/library/windows/desktop/ms688728) Windows SDK içinde.  
   
 ##  <a name="getadvise"></a>  IViewObjectExImpl::GetAdvise  
- Varsa mevcut bir danışma havuz bağlantı denetimi alır.  
+ Varsa mevcut bir danışmanlık havuz bağlantı denetimi alır.  
   
 ```
 STDMETHOD(GetAdvise)(
@@ -133,12 +133,12 @@ STDMETHOD(GetAdvise)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetim sınıfı veri üyesi danışma havuz depolanan [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink).  
+ Danışmanlık havuz denetim sınıfı veri üyesi içinde depolanan [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink).  
   
- Bkz: [IViewObject::GetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692772) Windows SDK.  
+ Bkz: [IViewObject::GetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692772) Windows SDK içinde.  
   
 ##  <a name="getcolorset"></a>  IViewObjectExImpl::GetColorSet  
- Çizim için denetim tarafından kullanılan mantıksal palet döndürür. ATL uygulamasını döndürür **E_NOTIMPL**.  
+ Çizim için denetim tarafından kullanılan mantıksal paletini döndürür. ATL uygulamasını E_NOTIMPL döndürür.  
   
 ```
 STDMETHOD(GetColorSet)(
@@ -151,10 +151,10 @@ STDMETHOD(GetColorSet)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IViewObject::GetColorSet](http://msdn.microsoft.com/library/windows/desktop/ms686553) Windows SDK.  
+ Bkz: [IViewObject::GetColorSet](http://msdn.microsoft.com/library/windows/desktop/ms686553) Windows SDK içinde.  
   
 ##  <a name="getextent"></a>  IViewObjectExImpl::GetExtent  
- Denetimin görüntüleme boyutu HIMETRIC birimler (birim başına 0,01 milimetre) denetim sınıfı veri üyesi alır [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).  
+ Denetim sınıfı veri üyesi denetimin görüntü boyutunu HIMETRIC biriminde (her birim 0,01 milimetre) alır [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).  
   
 ```
 STDMETHOD(GetExtent)(
@@ -165,10 +165,10 @@ STDMETHOD(GetExtent)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IViewObject2::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms684032) Windows SDK.  
+ Bkz: [IViewObject2::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms684032) Windows SDK içinde.  
   
 ##  <a name="getnaturalextent"></a>  IViewObjectExImpl::GetNaturalExtent  
- Kullanıcı yeniden boyutlandırır olarak kullanılmak üzere nesnesinin kapsayıcısından boyutlandırma ipuçlarını sağlar.  
+ Kullanıcı objeyi nesne için kapsayıcıdan boyutlandırma ipuçları sağlar.  
   
 ```
 STDMETHOD(GetNaturalExtent)(
@@ -181,34 +181,34 @@ STDMETHOD(GetNaturalExtent)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `dwAspect` olan `DVASPECT_CONTENT` ve *pExtentInfo -> dwExtentMode* olan **DVEXTENT_CONTENT**, ayarlar * `psizel` denetim sınıfın veri üyesi için [CComControlBase: : m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural). Aksi takdirde bir hata döndürür `HRESULT`.  
+ Varsa `dwAspect` DVASPECT_ICON olduğu ve *pExtentInfo dwExtentMode ->* DVEXTENT_CONTENT ise, ayarlar * `psizel` denetim sınıfın veri üyesinin [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural). Aksi takdirde bir hata HRESULT döndürür.  
   
- Bkz: [IViewObjectEx::GetNaturalExtent](http://msdn.microsoft.com/library/windows/desktop/ms683718) Windows SDK.  
+ Bkz: [IViewObjectEx::GetNaturalExtent](http://msdn.microsoft.com/library/windows/desktop/ms683718) Windows SDK içinde.  
   
 ##  <a name="getrect"></a>  IViewObjectExImpl::GetRect  
- İstenen bir çizim yönü açıklayan bir dikdörtgen döndürür. ATL uygulamasını döndürür **E_NOTIMPL**.  
+ Bir istenen çizimin görünüş bilgisini tarif ederken bir dikdörtgen döndürür. ATL uygulamasını E_NOTIMPL döndürür.  
   
 ```
 STDMETHOD(GetRect)(DWORD /* dwAspect */, LPRECTL /* pRect */);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IViewObjectEx::GetRect](http://msdn.microsoft.com/library/windows/desktop/ms695246) Windows SDK.  
+ Bkz: [IViewObjectEx::GetRect](http://msdn.microsoft.com/library/windows/desktop/ms695246) Windows SDK içinde.  
   
 ##  <a name="getviewstatus"></a>  IViewObjectExImpl::GetViewStatus  
- Nesne ve hangi çizim yönlerini desteklenen opaklık hakkındaki bilgileri döndürür.  
+ Nesne ve hangi çizim görünümlerinin desteklendiği geçirgenlik hakkında bilgi döndürür.  
   
 ```
 STDMETHOD(GetViewStatus)(DWORD* pdwStatus);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, ATL ayarlar `pdwStatus` denetimi desteklediğini belirtmek için **VIEWSTATUS_OPAQUE** (olası değerler şunlardır: ın [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) numaralandırması).  
+ Varsayılan olarak, ATL ayarlar `pdwStatus` denetimi VIEWSTATUS_OPAQUE desteklediğini belirtmek için (olası değerler [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) sabit listesi).  
   
- Bkz: [IViewObjectEx::GetViewStatus](http://msdn.microsoft.com/library/windows/desktop/ms693371) Windows SDK.  
+ Bkz: [IViewObjectEx::GetViewStatus](http://msdn.microsoft.com/library/windows/desktop/ms693371) Windows SDK içinde.  
   
 ##  <a name="queryhitpoint"></a>  IViewObjectExImpl::QueryHitPoint  
- Belirtilen nokta belirtilen dikdörtgenin nedir ve döndürür denetler bir [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) değeri `pHitResult`.  
+ Belirtilen nokta içinde belirtilen dikdörtgen döndürür olmadığını denetler ve bir [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) değerini `pHitResult`.  
   
 ```
 STDMETHOD(QueryHitPoint)(
@@ -220,14 +220,14 @@ STDMETHOD(QueryHitPoint)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değer, ya da olabilir **HITRESULT_HIT** veya **HITRESULT_OUTSIDE**.  
+ Değer HITRESULT_HIT ya da HITRESULT_OUTSIDE olabilir.  
   
- Varsa `dwAspect` eşittir [DVASPECT_ICON](http://msdn.microsoft.com/library/windows/desktop/ms690318), yöntem `S_OK`. Aksi durumda, yöntem döndürür **E_FAIL**.  
+ Varsa `dwAspect` eşittir [DVASPECT_ICON](http://msdn.microsoft.com/library/windows/desktop/ms690318), yöntem S_OK döndürür. Aksi takdirde E_FAIL yöntemi döndürür.  
   
- Bkz: [IViewObjectEx::QueryHitPoint](http://msdn.microsoft.com/library/windows/desktop/ms691209) Windows SDK.  
+ Bkz: [IViewObjectEx::QueryHitPoint](http://msdn.microsoft.com/library/windows/desktop/ms691209) Windows SDK içinde.  
   
 ##  <a name="queryhitrect"></a>  IViewObjectExImpl::QueryHitRect  
- Denetimin görüntüleme dikdörtgenini çakışıyor belirtilen konum dikdörtgenin içindeki herhangi bir noktasını döndürür olup olmadığını denetler ve bir [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) değeri `pHitResult`.  
+ Denetimin görünen dikdörtgen çakışıyor belirtilen konuma dikdörtgenin içindeki herhangi bir noktasını döndürür olup olmadığını denetler ve bir [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) değerini `pHitResult`.  
   
 ```
 STDMETHOD(QueryHitRect)(
@@ -239,14 +239,14 @@ STDMETHOD(QueryHitRect)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değer, ya da olabilir **HITRESULT_HIT** veya **HITRESULT_OUTSIDE**.  
+ Değer HITRESULT_HIT ya da HITRESULT_OUTSIDE olabilir.  
   
- Varsa `dwAspect` eşittir [DVASPECT_ICON](http://msdn.microsoft.com/library/windows/desktop/ms690318), yöntem `S_OK`. Aksi durumda, yöntem döndürür **E_FAIL**.  
+ Varsa `dwAspect` eşittir [DVASPECT_ICON](http://msdn.microsoft.com/library/windows/desktop/ms690318), yöntem S_OK döndürür. Aksi takdirde E_FAIL yöntemi döndürür.  
   
- Bkz: [IViewObjectEx::QueryHitRect](http://msdn.microsoft.com/library/windows/desktop/ms693797) Windows SDK.  
+ Bkz: [IViewObjectEx::QueryHitRect](http://msdn.microsoft.com/library/windows/desktop/ms693797) Windows SDK içinde.  
   
 ##  <a name="setadvise"></a>  IViewObjectExImpl::SetAdvise  
- Havuz değişiklikleri denetimin görünüm hakkında bildirim almak için denetimi ve bir öneri havuz arasında bir bağlantı kurar.  
+ Havuz denetim görünümünde değişiklikleri hakkında bilgilendirilebilirsiniz için Denetim ve bir öneri havuz arasında bir bağlantı kurar.  
   
 ```
 STDMETHOD(SetAdvise)(
@@ -257,23 +257,23 @@ STDMETHOD(SetAdvise)(
   
 ### <a name="remarks"></a>Açıklamalar  
 
- İşaretçi [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) öneri havuz arabirimde denetim sınıfı veri üyesi depolanan [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).  
+ İşaretçi [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) öneri havuz arabirimi denetim sınıfı veri üyesi depolanan [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).  
 
   
- Bkz: [IViewObject::SetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms683950) Windows SDK.  
+ Bkz: [IViewObject::SetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms683950) Windows SDK içinde.  
   
 ##  <a name="unfreeze"></a>  IViewObjectExImpl::Unfreeze  
- Denetim çizilmiş gösterimini canlandırır. ATL uygulamasını döndürür **E_NOTIMPL**.  
+ Denetim çizilen gösterimini canlandırır. ATL uygulamasını E_NOTIMPL döndürür.  
   
 ```
 STDMETHOD(Unfreeze)(DWORD /* dwFreeze */);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IViewObject::Unfreeze](http://msdn.microsoft.com/library/windows/desktop/ms686641) Windows SDK.  
+ Bkz: [IViewObject::Unfreeze](http://msdn.microsoft.com/library/windows/desktop/ms686641) Windows SDK içinde.  
   
 ##  <a name="closehandle"></a>  IWorkerThreadClient::CloseHandle  
- Bu nesneyle ilişkili tanıtıcı kapatmak için bu yöntemi uygulaması.  
+ Bu nesneyle ilişkili tanıtıcı kapatmak için bu yöntemi uygular.  
   
 ```
 HRESULT CloseHandle(HANDLE hHandle);
@@ -281,41 +281,41 @@ HRESULT CloseHandle(HANDLE hHandle);
   
 ### <a name="parameters"></a>Parametreler  
  *hHandle*  
- Kapatılması işleci.  
+ Kapatılması tanıtıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı veya başarısızlık HRESULT hata S_OK döndürür.  
+ Başarı veya başarısızlık durumunda bir hata HRESULT S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yönteme geçirilen tanıtıcı çağrısı ile bu nesne ile daha önce ilişkili [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).  
+ Bu yönteme geçirilen tanıtıcı bir çağrı tarafından bu nesne ile daha önce ilişkili [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod basit bir uyarlamasını gösterir `IWorkerThreadClient::CloseHandle`.  
+ Aşağıdaki kod basit bir uygulamasını gösterir `IWorkerThreadClient::CloseHandle`.  
   
  [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/cpp/iviewobjecteximpl-class_1.cpp)]  
   
 ##  <a name="execute"></a>  IWorkerThreadClient::Execute  
- Bu nesneyle ilişkili tanıtıcı işaret hale zaman kod yürütmek için bu yöntemi uygulaması.  
+ Bu nesneyle ilişkili tanıtıcı sinyal olur olduğunda kod yürütmek için bu yöntemi uygular.  
   
 ```
 HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dwParam`  
+ *dwParam*  
  Kullanıcı parametresi.  
   
- `hObject`  
- İşaret hale işleci.  
+ *hObject*  
+ Sinyal haline tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı veya başarısızlık HRESULT hata S_OK döndürür.  
+ Başarı veya başarısızlık durumunda bir hata HRESULT S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tanıtıcı ve DWORD/işaretçi bu yönteme geçirilen bir çağrı tarafından bu nesne ile daha önce ilişkili [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).  
+ Tanıtıcı ve DWORD/işaretçi bu yönteme bir çağrı tarafından bu nesne ile daha önce ilişkili [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod basit bir uyarlamasını gösterir `IWorkerThreadClient::Execute`.  
+ Aşağıdaki kod basit bir uygulamasını gösterir `IWorkerThreadClient::Execute`.  
   
  [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iviewobjecteximpl-class_2.cpp)]  
   
@@ -324,4 +324,4 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
  [Arabirimleri ActiveX denetimleri](http://msdn.microsoft.com/library/windows/desktop/ms692724)   
  [Öğretici](../../atl/active-template-library-atl-tutorial.md)   
  [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

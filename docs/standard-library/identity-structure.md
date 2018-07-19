@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83180020c20f78c16af0b1b33bada91936b6af9b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f065f7c00d3853d00c1063cd5b2838ec6d1d27b4
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844412"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953003"
 ---
 # <a name="identity-structure"></a>identity Yapısı
 
-Şablon parametresi olarak bir tür tanımı sağlar yapısı.
+Şablon parametresi olarak bir tür tanımı sağlayan bir yapı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,13 +40,13 @@ struct identity {
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`left`|Tanımlamak için değer.|
+|*Sol*|Tanımlamak için değeri.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı ortak türü tanımını içeren `type`, şablon parametre türü ile aynı olduğu. Şablon işlevi ile birlikte kullanılan [İleri](../standard-library/utility-functions.md#forward) bir işlev parametresi da istenen türe sahip olduğundan emin olmak için.
+Sınıfı ortak tür tanımını içeren `type`, şablon parametre türü ile aynı olduğu. Şablon işlevi ile birlikte kullanılan [İleri](../standard-library/utility-functions.md#forward) bir işlev parametresi istenen türde olduğundan emin olmak için.
 
-Eski kod ile uyumluluk için sınıfı ayrıca IDENTITY işlevi tanımlayan `operator()` bağımsız değişkeni döndürür `left`.
+Eski kod ile uyumluluk için sınıf IDENTITY işlevi de tanımlar `operator()` bağımsız değişkenini döndürür *sol*.
 
 ## <a name="requirements"></a>Gereksinimler
 

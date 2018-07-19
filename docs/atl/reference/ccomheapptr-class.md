@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1937bb96cabfd1a42650e2a27fd04c11aa648f2b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c3cc64804dbd628669b31de070b0f30aa92a77a3
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359064"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884788"
 ---
 # <a name="ccomheapptr-class"></a>CComHeapPtr sınıfı
-Yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
+Yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfının.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,8 +36,8 @@ class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Öbek üzerinde depolanması için nesne türü.  
+ *T*  
+ Yığın üzerinde depolanan nesne türü.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -48,7 +48,7 @@ class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 |[CComHeapPtr::CComHeapPtr](#ccomheapptr)|Oluşturucu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComHeapPtr` türetilen `CHeapPtr`, ancak kullanır [CComAllocator](../../atl/reference/ccomallocator-class.md) COM yordamları kullanarak bellek ayıramadı. Bkz: [CHeapPtr](../../atl/reference/cheapptr-class.md) ve [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) kullanılabilir yöntemleri için.  
+ `CComHeapPtr` öğesinden türetilen `CHeapPtr`, ancak kullandığı [CComAllocator](../../atl/reference/ccomallocator-class.md) COM yordamları kullanarak bellek ayrılamadı. Bkz: [CHeapPtr](../../atl/reference/cheapptr-class.md) ve [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) uygun olan yöntemler için.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md)  
@@ -69,14 +69,14 @@ explicit CComHeapPtr(T* pData) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pData`  
+ *pData*  
  Varolan bir `CComHeapPtr` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yığın işaretçisi isteğe bağlı olarak var olan kullanılarak oluşturulabilir `CComHeapPtr` nesnesi. Bu durumda, yeni `CComHeapPtr` nesne yeni işaretçi ve kaynakları yönetmek için sorumluluk varsayar.  
+ Yığın işaretçisi isteğe bağlı olarak var olan bir oluşturulabilir `CComHeapPtr` nesne. Bu durumda, yeni `CComHeapPtr` nesne yeni işaretçi ve kaynaklarını yönetme sorumluluğunu varsayar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)   
  [CHeapPtrBase sınıfı](../../atl/reference/cheapptrbase-class.md)   
  [CComAllocator sınıfı](../../atl/reference/ccomallocator-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b30b634a84dc47d839e1288bc34437b440e914c3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4eef350723dd8658bfc349495e905466e8179db1
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864128"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965925"
 ---
 # <a name="istrivial-class"></a>is_trivial sınıfı
 
-Türü bir basit tür olup olmadığını sınar.
+Türü bir basit türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_trivial;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` false tuttuğu bir önemsiz, aksi takdirde türüdür. Önemsiz türleridir skaler türler, trivially copyable sınıf türleri, bu tür diziler ve bu tür MS tam sürümleri.
+Karşılaştırmasının bir örneği true tutan türü *T* tuttuğu yanlış bir önemsiz türü, aksi takdirde. Önemsiz türler şunlardır: skaler türler, artık önemsiz olarak kopyalanabilir sınıf türleri, bu tür dizilerini ve bu tür cv nitelikli sürümleri.
 
 ## <a name="requirements"></a>Gereksinimler
 

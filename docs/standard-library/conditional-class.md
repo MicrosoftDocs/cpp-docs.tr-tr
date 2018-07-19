@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d51397080267dd50f012b274e95ac4c9aa4fa64
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 57e01cbfd7cb291ff7d2651e3244b74ae96adbea
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841882"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962406"
 ---
 # <a name="conditional-class"></a>conditional Sınıfı
 
@@ -40,15 +40,15 @@ using conditional_t = typename conditional<_Test, _T1, _T2>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-`B` Seçili türünü belirleyen değeri.
+*B* seçili türü belirleyen değer.
 
-`T1` B true olduğunda türü sonucu.
+*T1* B true olduğunda türü sonucu.
 
-`T2` B false olduğunda türü sonucu.
+*T2* B false olduğunda türü sonucu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon üye typedef `conditional<B, T1, T2>::type` değerlendiren `T1` zaman `B` değerlendiren `true`ve değerlendiren `T2` zaman `B` değerlendiren `false`.
+Şablon üye typedef `conditional<B, T1, T2>::type` değerlendiren *T1* olduğunda *B* değerlendiren **true**ve değerlendiren *T2* olduğunda  *B* değerlendiren **false**.
 
 ## <a name="requirements"></a>Gereksinimler
 

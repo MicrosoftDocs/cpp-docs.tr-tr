@@ -16,35 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88e7153fa77c7a0aa213bfb01587f2ea080c6ddd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f6a9fa05a4cb8c421a511a30fd62310d69003fde
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854096"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966439"
 ---
 # <a name="securescl"></a>_SECURE_SCL
 
-Yerine geçen [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md), bu makrosu tanımlar olup olmadığını [işaretli yineleyiciler](../standard-library/checked-iterators.md) etkinleştirilir. Varsayılan olarak işaretli yineleyiciler hata ayıklama derlemelerinde etkin ve perakende yapılarında devre dışı.
+Yerine geçen [_ıterator_debug_level](../standard-library/iterator-debug-level.md), bu makroyu tanımlar olup olmadığını [Checked Iterators](../standard-library/checked-iterators.md) etkinleştirilir. Varsayılan olarak işaretli yineleyiciler hata ayıklama yapılarında etkinleştirildiğinden ve perakende sürümlerde devre dışı.
 
 > [!IMPORTANT]
-> Doğrudan kullanımını `_SECURE_SCL` makrosu kullanım dışıdır. Bunun yerine, kullanın `_ITERATOR_DEBUG_LEVEL` denetlenen yineleyici ayarlarını denetlemek için. Daha fazla bilgi için bkz: [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).
+> Doğrudan kullanımını _SECURE_SCL makrosu kullanım dışıdır. Bunun yerine, yineleyici ayarlarını kullanıma denetlemek _ıterator_debug_level kullanın. Daha fazla bilgi için [_ıterator_debug_level](../standard-library/iterator-debug-level.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşaretli yineleyiciler etkinleştirilmişse, güvenli olmayan yineleyici kullanımı bir çalışma zamanı hatasına neden olur ve program sonlandırılır. İşaretli yineleyiciler etkinleştirmek için ayarlanmış `_ITERATOR_DEBUG_LEVEL` 1 veya 2. Bu eşdeğer olan bir `_SECURE_SCL` ayar 1 ya da etkin:
+İşaretli yineleyiciler etkinleştirilirse, güvenli olmayan yineleyici kullanımı bir çalışma zamanı hatasına neden olur ve program sonlandırılır. İşaretli yineleyiciler etkinleştirmek için 1 veya 2'ye _ıterator_debug_level ayarlayın. _SECURE_SCL 1 ayarı için eşdeğer olan veya etkin:
 
 ```cpp
 #define _ITERATOR_DEBUG_LEVEL 1
 ```
 
-İşaretli yineleyiciler devre dışı bırakmak için ayarlanmış `_ITERATOR_DEBUG_LEVEL` 0. Bu eşdeğer olan bir `_SECURE_SCL` 0 ya da devre dışı ayarlama:
+İşaretli yineleyiciler devre dışı bırakmak için _ıterator_debug_level 0 olarak ayarlayın. 0 _SECURE_SCL ayarı için eşdeğerdir veya devre dışı:
 
 ```cpp
 #define _ITERATOR_DEBUG_LEVEL 0
 ```
 
-İşaretli yineleyiciler ilgili uyarılar devre dışı bırakma hakkında daha fazla bilgi için bkz: [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md).
+Denetlenen yineleyiciler hakkında uyarılar devre dışı bırakma hakkında daha fazla bilgi için bkz: [_scl_secure_no_warnıngs](../standard-library/scl-secure-no-warnings.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

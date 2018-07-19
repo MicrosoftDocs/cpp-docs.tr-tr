@@ -39,14 +39,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 556a56de97c6e1b547b9a67387acfcdd3205913c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 40834c7c41bc19b395958b4a173a68bd014b2e70
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948151"
 ---
 # <a name="bstrt-relational-operators"></a>_bstr_t İlişkisel İşleçleri
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  İki karşılaştırır `_bstr_t` nesneleri.  
   
@@ -54,31 +55,19 @@ ms.lasthandoff: 05/03/2018
   
 ```  
   
-      bool operator!( ) const throw( );   
-bool operator==(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator!=(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator<(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator>(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator<=(  
-   const _bstr_t& str   
-) const throw( );  
-bool operator>=(  
-   const _bstr_t& str   
-) const throw( );  
+bool operator!( ) const throw( );   
+bool operator==(const _bstr_t& str) const throw( );  
+bool operator!=(const _bstr_t& str) const throw( );  
+bool operator<(const _bstr_t& str) const throw( );  
+bool operator>(const _bstr_t& str) const throw( );  
+bool operator<=(const _bstr_t& str) const throw( );  
+bool operator>=(const _bstr_t& str) const throw( );  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işleçlere iki karşılaştırmak `_bstr_t` lexicographically nesneleri. İşleçler dönmek **true** karşılaştırmaları tutarsanız, aksi takdirde dönmek **false**.  
+ Bu işleçler karşılaştırabilirsiniz `_bstr_t` sözlüksel nesnelerini. İşleçler TRUE döndürür. karşılaştırmayı tutarsanız, aksi takdirde false değerini döndürür.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

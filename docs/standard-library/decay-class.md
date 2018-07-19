@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0451b8565a4d021181d79d15437637e1b2f3b27
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5433c9ff76b8b6f218cfff5e5fd39a0ad7166613
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841804"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963621"
 ---
 # <a name="decay-class"></a>decay Sınıfı
 
-Değere göre geçti olarak türü üretir. Yaptığında türü başvuru olmayan, sabit olmayan geçici olmayan ya da bir işaretçi bir işlev veya bir dizi türü türe yapar.
+Türü, değer olarak geçilemez olarak oluşturur. Tür başvuru olmayan, sabit olmayan, geçici olmayan yapar veya bir işlev ya da bir dizi türü için tür işaretçisi yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,19 +39,19 @@ using decay_t = typename decay<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Değişiklik türü.
+*T* değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Decay şablon türü değer bağımsız değişken olarak geçirilen gibi sonuç türü oluşturmak için kullanın. Şablon sınıfının üye typedef `type` bulunan aşağıdaki aşamaları tanımlanan değiştirilmiş bir türü bulunur:
+Decay şablon türü bağımsız değişken olarak değere göre geçirildiyse olarak elde edilen türü kullanın. Şablon sınıfı üye typedef `type` aşağıdaki aşamalara tanımlanan bir değiştirilmiş türü tutar:
 
 - Türü `U` olarak tanımlanan `remove_reference<T>::type`.
 
-- Varsa `is_array<U>::value` doğrudur değiştirilmiş türü `type` olan `remove_extent<U>::type *`.
+- Varsa `is_array<U>::value` true ise değiştirilen türü `type` olduğu `remove_extent<U>::type *`.
 
-- Aksi halde, eğer `is_function<U>::value` doğrudur değiştirilmiş türü `type` olan `add_pointer<U>::type`.
+- Aksi takdirde `is_function<U>::value` true ise değiştirilen türü `type` olduğu `add_pointer<U>::type`.
 
-- Aksi takdirde, değiştirilmiş türü `type` olan `remove_cv<U>::type`.
+- Aksi takdirde, değiştirilen türü `type` olduğu `remove_cv<U>::type`.
 
 ## <a name="requirements"></a>Gereksinimler
 

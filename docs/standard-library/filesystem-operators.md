@@ -1,5 +1,5 @@
 ---
-title: '&lt;dosya sistemi&gt; işleçleri | Microsoft Docs'
+title: '&lt;dosya sistemi&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,18 +22,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 546e601afeb05e0347dba8bf792611f20068c69b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6e93cbd4298a0f2094c2c5950220610a17642512
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845381"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965584"
 ---
 # <a name="ltfilesystemgt-operators"></a>&lt;dosya sistemi&gt; işleçleri
 
-İşleçler iki yolu sözcük karşılaştırması dize olarak gerçekleştirin. Kullanım **eşdeğer** iki yolu (örneğin, göreli bir yol ve mutlak bir yol) aynı dosya veya dizin diskteki başvurmak olup olmadığını belirlemek için işlev.
+İşleçler, dize olarak iki yol sözcük temelli bir karşılaştırma yapar. Kullanım `equivalent` iki yolu (örneğin, göreli bir yol ve mutlak bir yol) aynı dosya veya dizin diskte başvurmadığını belirlemek için işlevi.
 
-Daha fazla bilgi için bkz: [dosya sistemi Gezinti (C++)](../standard-library/file-system-navigation.md).
+Daha fazla bilgi için [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
 
 ## <a name="operator"></a>operator==
 
@@ -41,7 +41,7 @@ Daha fazla bilgi için bkz: [dosya sistemi Gezinti (C++)](../standard-library/fi
 bool operator==(const path& left, const path& right) noexcept;
 ```
 
-Left.native() işlevi döndürür right.native() ==.
+İşlev left.native() döndürür right.native() ==.
 
 ## <a name="operator"></a>operator!=
 
@@ -49,7 +49,7 @@ Left.native() işlevi döndürür right.native() ==.
 bool operator!=(const path& left, const path& right) noexcept;
 ```
 
-İşlev verir! (sağdan sola ==).
+İşlev verir. (sağdan sola ==).
 
 ## <a name="operator"></a>operator<
 
@@ -57,7 +57,7 @@ bool operator!=(const path& left, const path& right) noexcept;
 bool operator<(const path& left, const path& right) noexcept;
 ```
 
-Left.native() işlevi döndürür < right.native().
+İşlev left.native() döndürür < right.native().
 
 ## <a name="operator"></a>operator<=
 
@@ -65,7 +65,7 @@ Left.native() işlevi döndürür < right.native().
 bool operator<=(const path& left, const path& right) noexcept;
 ```
 
-İşlev verir! (sağ \< sol).
+İşlev verir. (doğru \< sol).
 
 ## <a name="operator"></a>operator >
 
@@ -73,7 +73,7 @@ bool operator<=(const path& left, const path& right) noexcept;
 bool operator>(const path& left, const path& right) noexcept;
 ```
 
-İşlev sağa döndürür \< sol.
+İşlevi hemen döndürür \< sol.
 
 ## <a name="operator"></a>operator > =
 
@@ -81,7 +81,7 @@ bool operator>(const path& left, const path& right) noexcept;
 bool operator>=(const path& left, const path& right) noexcept;
 ```
 
-İşlev verir! (sol < sağ).
+İşlev verir. (sol < doğru).
 
 ## <a name="operator"></a>operator /
 
@@ -89,7 +89,7 @@ bool operator>=(const path& left, const path& right) noexcept;
 path operator/(const path& left, const path& right);
 ```
 
-İşlev çalıştırır:
+İşlevi yürütür:
 
 ```cpp
 basic_string<Elem, Traits> str;
@@ -113,7 +113,7 @@ template <class Elem, class Traits>
 basic_istream<Elem, Traits>& operator<<(basic_istream<Elem, Traits>& is, const path& pval);
 ```
 
-İşlev çalıştırır:
+İşlevi yürütür:
 
 ```cpp
 basic_string<Elem, Traits> str;

@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 066f7c50940e6c68bb0fca554bb3bc56fc20b93c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 674be7ebd819b48cfdf22376565f2bea90787330
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425705"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939215"
 ---
 # <a name="unions"></a>Birleşimler
-A `union` tüm üyeleri aynı bellek konumuna paylaşmak bir kullanıcı tanımlı tür. Başka bir deyişle, belirli bir zamanda birden fazla nesne üyeleri listesinden UNION içerebilir. Ayrıca, UNION sahip kaç üye olsun, her zaman yalnızca yeterli bellek büyük üye depolamak için kullandığını anlamına gelir.  
+A **birleşim** tüm üyeleri aynı bellek konumunda paylaşır ve kullanıcı tanımlı bir tür. Başka bir deyişle, belirli bir zamanda üyeler listesinden birden fazla nesne bir birleşim içerebilir. Ayrıca, kaç üyeleri olan bir birleşim ne olursa olsun, her zaman yeterli bellek en büyük üyesini depolamak için kullandığı anlamına gelir.  
   
- Birleşimler, nesneleri ve/veya sınırlı bellek çok sayıda olduğunda bellek tasarrufu için faydalı olabilir. Ancak her zaman için yazılmıştır son üyesini erişim sağlamak için sorumlu olduğu için doğru bir şekilde kullanmak için ek bakım gerektirir. Tüm üye türleri Önemsiz olmayan bir oluşturucu varsa, açıkça oluşturmak ve bu üyede yok etmek için ek kod yazmanız gerekir. Çözmeye çalıştığınız sorunu daha iyi bir temel sınıfı kullanılarak ifade edilebilir ve türetilmiş sınıfları UNION kullanmadan önce göz önünde bulundurun.  
+ Birleşimler, nesneleri ve/veya bellek sınırlı sayıda olduğunda bellek tasarrufu için faydalı olabilir. Ancak bunlar her zaman için yazılmış son üyesini erişim sağlamak için sorumlu olduğunuz için doğru bir şekilde kullanmak için çok dikkatli gerektirir. Herhangi bir üye türü, Önemsiz olmayan bir oluşturucu varsa, açıkça oluşturmak ve bu üyede yok etmek için ek kod yazmanız gerekir. Sorunu çözmeye çalışıyorsanız daha iyi bir temel sınıf kullanarak ifade edilebilir ve türetilmiş sınıfları bir birleşim kullanmadan önce göz önünde bulundurun.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,16 +36,16 @@ union [name]  { member-list };
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `name`  
+ *Adı*  
  Birleşime verilen tür adı.  
   
- `member-list`  
- UNION içerebilir üyeleri. Açıklamalar bakın.  
+ *üye listesi*  
+ Üyeler birleşimini içerebilir. Açıklamalara bakın.  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="declaring-a-union"></a>Bir Birleşimi Bildirme  
- Bir birleşim bildirimi başlamak `union` anahtar sözcüğü ve kaşlı ayraç üye listesini alın:  
+ Bir birleşim bildirimi başlamak **birleşim** anahtar sözcüğü ve üye listesini küme ayraçlarının içine alın:  
   
 ```cpp  
 // declaring_a_union.cpp  
@@ -67,7 +67,7 @@ int main()
 ```  
   
 ## <a name="using-unions"></a>Birleşimler kullanma  
- Önceki örnekte, UNION erişen herhangi bir kod hangi üye verileri tutan bilmesi gerekir. En yaygın bu sorunun birleşim içinde şu anda depolanmakta veri türünü belirten bir ek numaralandırma üyesi birlikte bir yapı içinde UNION kapsamak için çözümüdür. Bu adlı bir *UNION ayrılmış* ve aşağıdaki örnek, temel düzeni gösterir.  
+ Önceki örnekte, birleşim erişen herhangi bir kod üye verileri tutan bilmesi gerekir. En yaygın bu sorunun çözümü şu anda birleşimde depolanmakta olan verilerin türünü belirten ek sabit listesi üyesi ile birlikte bir yapı içinde birleşim içine sağlamaktır. Bu adlı bir *ayırt edici birleşim* ve aşağıdaki örnek, temel düzeni gösterir.  
   
 ```cpp  
 #include "stdafx.h"  
@@ -152,14 +152,14 @@ void Initialize()
   
 ```  
   
- Önceki örnekte, birleşim giriş yapı içinde hiçbir adı olduğuna dikkat edin. Bu anonim bir birleşim ve yapının doğrudan üyesi değilmiş gibi üyeleri erişilebilir. Anonim birleşimler hakkında daha fazla bilgi için aşağıdaki bölümüne bakın.  
+ Önceki örnekte, giriş struct birleşimde adsız olmadığını unutmayın. Anonim birleşim budur ve yapının doğrudan üyeleri olarak bulunuyorlarmış üyelerini erişilebilir. Anonim birleşimler hakkında daha fazla bilgi için aşağıdaki bölümüne bakın.  
   
- Elbette, önceki örnekte de ortak bir taban sınıftan türetilen sınıflarını kullanarak ve kapsayıcıdaki her nesnenin çalışma zamanı türüne göre kodunuzu dallanma çözülmesi bir sorunu gösterir. Bu kod korumak ve, ama anlamak daha kolay ayrıca birleşimler kullanmaktan daha yavaş olabileceğini neden olabilir. Ayrıca, bir birleşimi ile tamamen ilişkisiz türleri depolamak ve dinamik olarak birleşim değişken türünü değiştirmeden depolanan değerin türünü değiştirin. Bu nedenle, farklı türlerde farklı değerler öğeleri depolamak MyUnionType heterojen bir dizi oluşturabilirsiniz.  
+ Elbette, önceki örnekte da ortak bir taban sınıftan türetilen sınıfları kullanarak ve kapsayıcıdaki her nesnenin çalışma zamanı türüne göre kodunuzu dallanma çözülmesi bir sorunu gösterir. Bu kod bakımı ve, ama anlamak daha kolay ayrıca birleşimler kullanmaktan daha yavaş olabilir, neden olabilir. Ayrıca, bir birleşim ile tamamen ilişkisiz türleri depolamak ve dinamik olarak birleşim değişkenini türünü değiştirmeden depolanan değer türünü değiştirin. Bu nedenle, öğeleri farklı türlerde farklı değerler depoluyor MyUnionType heterojen bir dizi oluşturabilirsiniz.  
   
- Unutmayın `Input` önceki örnekte yapısı kolaylıkla kötüye olabilir. Tamamen Ayrıştırıcıyı doğru verilerini tutan üye erişmek için kullanılacak kullanıcı kadar da değil. UNION özel yaparak kötüye karşı koruyabilir ve özel erişim sağlayan, sonraki örnekte gösterildiği şekilde çalışır.  
+ Unutmayın `Input` yapı önceki örnekte, kolaylıkla kötüye olabilir. Ayrıştırıcı doğru verileri tutan bir üyesine erişmek için kullanılacak kullanıcının kadar tamamen olduğu. Birleşim özel hale getirerek kötüye karşı koruyabilir ve İşlevler özel erişim sağlayan, sonraki örnekte gösterildiği gibi.  
   
 ## <a name="unrestricted-unions-c11"></a>Kısıtlanmamış birleşimler (C ++ 11)  
- Hiçbir kullanıcı tarafından sağlanan Oluşturucular, Yıkıcılar veya atama işleçleri türüne sahip olduğu sürece C ++ 03 ve daha önceki bir birleşim sınıfı türüyle statik olmayan veri üyeleri içerebilir. C ++ 11'de, bu sınırlamalar kaldırılmıştır. Böyle bir üyesi birleşim içinde eklerseniz derleyici otomatik olarak kullanıcı tarafından silindi olarak sağlanan olmayan herhangi bir özel üye işlevleri işaretleyin. UNION anonim bir birleşim sınıfta veya yapı içinde ise, kullanıcı tarafından sağlanan olmayan özel üye işlevleri sınıf veya yapı silinmiş olarak işaretlenmiş. Aşağıdaki örnek, bir birleşim üyeleri bu özel işleme gerektiren bir üyeye sahip olduğu durumda nasıl ele alınacağını gösterir:  
+ Hiçbir kullanıcı tarafından sağlanan Oluşturucular, Yıkıcılar veya atama işleçleri türüne sahip olduğu sürece C ++ 03 ve daha önceki bir birleşim sınıfı türü statik olmayan veri üyeleriyle içerebilir. C ++ 11'de, bu kısıtlamalar kaldırılır. Böyle bir üyesi, birleşimde eklerseniz derleyici kullanıcı silindi olarak sağlanan herhangi bir özel üye işlevlerinin otomatik olarak işaretler. Birleşimin anonim birleşim bir sınıf veya yapı içinde ise, kullanıcı tarafından sağlanan olmayan özel üye işlevleri sınıf veya yapının silindi olarak işaretlenir. Aşağıdaki örnek, bu özel işleme gerektiren bir üyesi olduğu bir Birleşimdeki üyelerin durumu işlemek nasıl gösterir:  
   
 ```cpp  
 // for MyVariant  
@@ -606,7 +606,7 @@ private:
   
 ```  
   
- Birleşimler başvuruları depolanamıyor. Birleşimler devralma desteklemiyorsa, bu nedenle bir birleşim bir temel sınıf olarak kullanılan veya başka bir sınıftan veya sanal işlevlere sahiptir.  
+ Birleşimler başvuruları depolanamıyor. Birleşimler devralmayı desteklemeyen, bu nedenle bir birleşim bir taban sınıfı olarak kullanılamaz veya başka bir sınıftan veya sanal işlevler içeremez.  
   
 ## <a name="initializing-unions"></a>Birleşimler başlatılıyor  
  Küme ayraçları içine alınmış bir ifade atayarak aynı deyimde bir birleşimi bildirebilir ve başlatabilirsiniz. İfade değerlendirilir ve birleşimin ilk alanına atanır.  
@@ -642,17 +642,17 @@ int main()
 Verilerin NumericType Birleşiminde Depolanması  
   
 ## <a name="anonymous_unions"></a> Anonim birleşimler  
- Anonim birleşimler olmadan bildirilen birleşimler olan bir *sınıf adı* veya *bildirimcisi listesi*.  
+ Anonim birleşimler olmadan bildirilen birleşimlerdir birleşimler olan bir *sınıf adı* veya *bildirimci listesi*.  
   
 ```cpp  
 union  {  member-list  }    
 ```  
   
-Anonim bir birleşimde bildirilen adlar, üye olmayan değişkenlerde olduğu gibi doğrudan kullanılır. Bu nedenle, çevreleyen kapsamdaki anonim bir birleşim içinde bildirilen adları benzersiz olmalıdır.  
+Anonim bir birleşimde bildirilen adlar, üye olmayan değişkenlerde olduğu gibi doğrudan kullanılır. Bu nedenle, anonim bir birleşimde bildirilen adlar çevreleyen kapsam içinde benzersiz olmalıdır.  
   
-Adlandırılmış birleşimler kısıtlamalarına ek olarak, bu ek sınırlamalara tabidir anonim birleşimler şunlardır:  
+Anonim birleşimler, adlandırılmış birleşimler kısıtlamalarına ek olarak bu ek kısıtlamalara tabidir şunlardır:  
   
--   Olarak da bildirilmelidir **statik** dosya veya ad alanı kapsamda bildirilen durumunda.  
+-   Olarak da bildirilmelidir **statik** dosya veya ad alanı kapsamında bildirilmişlerse.  
   
 -   Yalnızca genel üyeleri olabilir; anonim birleşimlerdeki özel ve korumalı üyeler hata oluşturur.  
   
@@ -660,6 +660,6 @@ Adlandırılmış birleşimler kısıtlamalarına ek olarak, bu ek sınırlamala
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
- [sınıfı](../cpp/class-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [Sınıfı](../cpp/class-cpp.md)   
  [struct](../cpp/struct-cpp.md)

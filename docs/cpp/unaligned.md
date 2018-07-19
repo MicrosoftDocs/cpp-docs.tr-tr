@@ -16,22 +16,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d73b082b9f41d03eb0b1a8c9fe772351ff4da91f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2a7a9de35e225dabadbf9f4a3731f6d57fd9e99a
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420927"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940419"
 ---
 # <a name="unaligned"></a>__unaligned
 
-**Microsoft özel**. `__unaligned` değiştiricisiyle bir işaretçiyi bildirdiğinizde, derleyici işaretçinin hizalanmamış verilere yönelik olduğunu varsayar. Sonuç olarak, platform uygun kodu hizalanmamış okuma işlemek için oluşturulan ve işaretçiyi yazar.
+**Microsoft'a özgü**. Bir işaretçiyi bildirdiğinizde **__unaligned** değiştiricisi, derleyici varsayar işaretçinin hizalanmamış veri yöneliktir. Sonuç olarak, platform için uygun kodu hizalanmamış okuma işlemek için oluşturuldu ve işaretçiyle yazar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu değiştirici işaretçi ele veri hizalamasını açıklar; İşaretçi hizalanacak varsayılır.
+Bu değiştirici, işaretçi tarafından ele alınan verilerin hizalamasını açıklar; İşaretçinin hizalandığı varsayılır.
 
-Sürümüne geçirilmesi için zorunludur `__unaligned` anahtar sözcüğü platform ve ortam göre değişir. Veri uygun şekilde işaretlemek için hata performans cezaları donanım hataları arasında değişen sorunları neden olabilir. `__unaligned` Değiştiricisi x86 için geçerli değil platform.
+İçin yeterlilikte **__unaligned** anahtar sözcüğü, platform ve ortam tarafından değişir. Veri uygun şekilde işaretlemek için hata sorunları performans cezaları arasında değişen donanım hatalarına neden olabilir. **__Unaligned** değiştiricisi x86 için geçerli değil platform.
 
 Hizalama hakkında daha fazla bilgi için bkz.
 

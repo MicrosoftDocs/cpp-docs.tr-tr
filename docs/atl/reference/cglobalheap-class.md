@@ -21,18 +21,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bef811807c90507184690d1a29d4debd00cc6fda
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1f3113cf4176c3f582a210e89e732d5e0d92b62d
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363340"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882838"
 ---
 # <a name="cglobalheap-class"></a>CGlobalHeap sınıfı
-Bu sınıf uygulayan [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) Win32 genel yığın işlevlerini kullanma.  
+Bu sınıfın uyguladığı [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) Win32 genel yığın işlevlerini kullanma.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,18 +47,18 @@ class CGlobalHeap : public IAtlMemMgr
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CGlobalHeap::Allocate](#allocate)|Bir bellek bloğu ayırmak için bu yöntemi çağırın.|  
-|[CGlobalHeap::Free](#free)|Bu bellek yöneticisi tarafından ayrılan bellek bloğu boşaltmak için bu yöntemi çağırın.|  
-|[CGlobalHeap::GetSize](#getsize)|Bu bellek yöneticisi tarafından ayrılan bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.|  
-|[CGlobalHeap::Reallocate](#reallocate)|Bu bellek yöneticisi tarafından ayrılan belleği yeniden tahsis etmek için bu yöntemi çağırın.|  
+|[CGlobalHeap::Free](#free)|Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest bırakmak için bu yöntemi çağırın.|  
+|[CGlobalHeap::GetSize](#getsize)|Bu bellek yöneticisi tarafından ayrılan bir bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.|  
+|[CGlobalHeap::Reallocate](#reallocate)|Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CGlobalHeap` bellek ayırma işlevleri Win32 genel yığın işlevler kullanılarak uygular.  
+ `CGlobalHeap` bellek ayırma işlevleri için Win32 genel yığın işlevlerini uygular.  
   
 > [!NOTE]
->  Genel heap işlevleri diğer bellek yönetimi işlevleri yavaş çalışır ve gibi birçok özellik sağlamaz. Bu nedenle, yeni uygulamalar kullanmalıdır [yığın işlevleri](http://msdn.microsoft.com/library/windows/desktop/aa366711). Bunlar kullanılabilir olan [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfı. Genel işlevler hala DDE ve Pano işlevleri tarafından kullanılır.  
+>  Genel yığın işlevleri diğer bellek yönetimi işlevleri yavaş çalışır ve gibi birçok özelliği sağlamaz. Bu nedenle, yeni uygulamalar kullanmalıdır [yığın işlevleri](http://msdn.microsoft.com/library/windows/desktop/aa366711). Bunlar, kullanılabilir [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfı. Genel İşlevler, yine de DDE ve Pano işlevleri tarafından kullanılır.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).  
+ Örneğin bakın [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IAtlMemMgr`  
@@ -76,64 +76,64 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBytes`  
- İstenen yeni bellek bloğu içindeki bayt sayısı.  
+ *nBytes*  
+ İstenen bayt yeni bellek bloğu sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi yeni ayrılan bellek bloğu başlangıcını döndürür.  
+ Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CGlobalHeap::Free](#free) veya [CGlobalHeap::Reallocate](#reallocate) bu yöntem tarafından ayrılan bellek boşaltmak için.  
   
- Kullanılarak uygulanan [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) bir bayrak parametresi ile **GMEM_FIXED**.  
+ Kullanılarak uygulanan [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) GMEM_FIXED bayrağı parametresi ile.  
   
 ##  <a name="free"></a>  CGlobalHeap::Free  
- Bu bellek yöneticisi tarafından ayrılan bellek bloğu boşaltmak için bu yöntemi çağırın.  
+ Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest bırakmak için bu yöntemi çağırın.  
   
 ```
 virtual void Free(void* p) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `p`  
- Bu bellek yöneticisi tarafından önceden ayrılmış bellek işaretçisi. NULL geçerli bir değer ve hiçbir şey yapmaz.  
+ *p*  
+ Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi. NULL, geçerli bir değer ve hiçbir şey yapmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanılarak uygulanan [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579).  
   
 ##  <a name="getsize"></a>  CGlobalHeap::GetSize  
- Bu bellek yöneticisi tarafından ayrılan bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.  
+ Bu bellek yöneticisi tarafından ayrılan bir bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.  
   
 ```
 virtual size_t GetSize(void* p) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `p`  
- Bu bellek yöneticisi tarafından önceden ayrılmış bellek işaretçisi.  
+ *p*  
+ Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ayrılmış bellek blok boyutunu bayt cinsinden döndürür.  
+ Ayrılan bellek blok boyutu bayt cinsinden döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanılarak uygulanan [GlobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593).  
   
 ##  <a name="reallocate"></a>  CGlobalHeap::Reallocate  
- Bu bellek yöneticisi tarafından ayrılan belleği yeniden tahsis etmek için bu yöntemi çağırın.  
+ Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.  
   
 ```
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `p`  
- Bu bellek yöneticisi tarafından önceden ayrılmış bellek işaretçisi.  
+ *p*  
+ Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.  
   
- `nBytes`  
- İstenen yeni bellek bloğu içindeki bayt sayısı.  
+ *nBytes*  
+ İstenen bayt yeni bellek bloğu sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi yeni ayrılan bellek bloğu başlangıcını döndürür.  
+ Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CGlobalHeap::Free](#free) bu yöntem tarafından ayrılan bellek boşaltmak için.  
@@ -141,7 +141,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
  Kullanılarak uygulanan [GlobalReAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366590).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [CComHeap sınıfı](../../atl/reference/ccomheap-class.md)   
  [CWin32Heap sınıfı](../../atl/reference/cwin32heap-class.md)   
  [CLocalHeap sınıfı](../../atl/reference/clocalheap-class.md)   

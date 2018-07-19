@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeb9e61f94ddd5f41ff3de26728c1fbe155f809d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5e5ec6ebf4329ff03c75240dc7cec93e9ba46331
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373644"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885744"
 ---
 # <a name="sockaddrin-structure"></a>SOCKADDR_IN Yapısı
-Internet adresi ailesindeki `SOCKADDR_IN` yapısı yuva bağlantı kurmak için bir yerel veya uzak uç noktası adresi belirtmek için Windows Sockets tarafından kullanılır.  
+Internet adresi ailesinde `SOCKADDR_IN` yapısı Windows Sockets tarafından bir yuva bağlantı kurmak için bir yerel veya uzak bitiş noktası adresini belirtmek için kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,7 +39,7 @@ struct in_addr sin_addr;
   
 #### <a name="parameters"></a>Parametreler  
  *sin_family*  
- Adres ailesi (olmalıdır **AF_INET**).  
+ Adres ailesi (af_ınet olmalıdır).  
   
  *sin_port*  
  IP bağlantı noktası.  
@@ -48,12 +48,12 @@ struct in_addr sin_addr;
  IP adresi.  
   
  *sin_zero*  
- Aynı boyutta yapısı yapmak için doldurma `SOCKADDR`.  
+ Yapı aynı boyuta getirmek için doldurma `SOCKADDR`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu biçimidir `SOCKADDR` Internet adresi ailesine belirli yapısı ve için cast `SOCKADDR`.  
+ Bu formu şöyledir `SOCKADDR` Internet adresi ailesine özgü yapısı ve atanabilecek `SOCKADDR`.  
   
- Bu yapı IP adresi bileşeninin türünde **IN_ADDR**. **IN_ADDR** yapısı Windows Sockets üstbilgi dosyası WINSOCK tanımlanır. H şekilde:  
+ Bu yapının IP adresi bileşeni türüdür `IN_ADDR`. `IN_ADDR` Yapısı Windows Sockets üstbilgi dosyası WINSOCK tanımlanır. Aşağıdaki gibi H:  
   
 ```  
 struct in_addr {
@@ -73,5 +73,5 @@ struct in_addr {
  **Başlık:** winsock2.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [SOCKADDR Yapısı](../../mfc/reference/sockaddr-structure.md)

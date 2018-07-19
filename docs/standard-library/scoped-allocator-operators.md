@@ -1,5 +1,5 @@
 ---
-title: '&lt;scoped_allocator&gt; işleçleri | Microsoft Docs'
+title: '&lt;scoped_allocator&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
-ms.openlocfilehash: 66cf60dd3d70719fe42645215b1190c9fb752ff3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c2c61e3fce5d1cf58f59bc9dd51920bccc0eb2f3
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854684"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966478"
 ---
 # <a name="ltscopedallocatorgt-operators"></a>&lt;scoped_allocator&gt; işleçleri
 
@@ -22,9 +22,9 @@ ms.locfileid: "33854684"
 |-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-İki testleri `scoped_allocator_adaptor` eşitsizlik nesneleri.
+İki `scoped_allocator_adaptor` nesneleri için eşitsizlik.
 
 ```cpp
 template <class Outer, class... Inner>
@@ -35,17 +35,17 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Sol `scoped_allocator_adaptor` nesnesi.
+*Sol* sol `scoped_allocator_adaptor` nesne.
 
-`right` Sağa `scoped_allocator_adaptor` nesnesi.
+*Sağ* sağ `scoped_allocator_adaptor` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 `!(left == right)`
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-İki testleri `scoped_allocator_adaptor` nesneleri eşitlik için.
+İki `scoped_allocator_adaptor` eşitlik için nesneleri.
 
 ```cpp
 template <class Outer, class... Inner>
@@ -56,9 +56,9 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Sol `scoped_allocator_adaptor` nesnesi.
+*Sol* sol `scoped_allocator_adaptor` nesne.
 
-`right` Sağa `scoped_allocator_adaptor` nesnesi.
+*Sağ* sağ `scoped_allocator_adaptor` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

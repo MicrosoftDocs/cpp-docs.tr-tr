@@ -14,20 +14,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a3147ae06e4deedf48415b4ae605e524458343c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 51479d6571a58fccf57c9060254cd0c445f8483b
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948238"
 ---
 # <a name="relational-function-templates"></a>İlişkisel İşlev Şablonları
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      template<typename _InterfaceType> bool operator==(  
+template<typename _InterfaceType> bool operator==(  
    int NULL,  
    _com_ptr_t<_InterfaceType>& p   
 );  
@@ -87,13 +88,13 @@ template<typename _Interface,
  *i*  
  Ham arabirim işaretçisi.  
   
- `p`  
- Akıllı bir işaretçi.  
+ *p*  
+ Bir akıllı işaretçi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlev şablonları karşılaştırma işlecinin sağ tarafta karşılaştırma akıllı işaretçiyle izin verin. Bu üye işlevlerini olmayan `_com_ptr_t`.  
+ Bu işlev şablonları akıllı bir işaretçi ile karşılaştırma karşılaştırma işlecinin sağ tarafında izin verin. Bu üye işlevleri olmayan `_com_ptr_t`.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

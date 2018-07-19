@@ -23,55 +23,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fa925a01633d72f43b165b87c27e5203a143d1e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d6e1ea4abadc3b751b8bad9f9521462d510c5227
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948187"
 ---
 # <a name="raising-software-exceptions"></a>Yazılım Özel Durumlarını Oluşturma
-Bazı program hataların en yaygın kaynakları özel durumlar olarak sistem tarafından işaretlenmeyen. Örneğin, bir bellek bloğu ayırma girişimi, ancak yeterli bellek yok, çalışma zamanı veya API işlevi bir özel durum oluşturmaz ancak bir hata kodu döndürür.  
+Sistem tarafından program hataların en yaygın kaynaklardan bazılarını özel durumlar olarak işaretlenmeyen. Örneğin, bir bellek bloğunu ayırmaya çalışır, ancak yeterli bellek çalışma zamanı veya API işlevi bir özel durum oluşturmaz ancak bir hata kodu döndürür.  
   
- Herhangi bir koşul özel durum kodunuzda bu koşul algılama ve çağırarak raporlama tarafından ancak davranabilirsiniz [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) işlevi. Bu şekilde hataları işaretlemesini tarafından yapılandırılmış özel durum işleme her türlü çalışma zamanı hatası avantajları kullanıma sunabilirsiniz.  
+ Herhangi bir koşul bir özel kodunuzda bu koşulu algılayarak ve çağırarak raporlama ancak davranabileceğiniz [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) işlevi. Bu şekilde hataları işaretlemesini tarafından yapılandırılmış özel durum işleme herhangi bir türden çalışma zamanı hatası avantajları getirebilirsiniz.  
   
- Yapılandırılmış özel durum işleme hataları olan kullanmak için:  
+ Yapılandırılmış özel durum işleme hatalarla kullanmak için:  
   
--   Olayı için kendi özel durum kodu tanımlayın.  
+-   Olay için kendi özel kodunuzu tanımlayın.  
   
--   Çağrı **RaiseException** algılamak ne zaman bir sorun.  
+-   Çağrı `RaiseException` algılamak ne zaman bir sorun.  
   
--   Tanımladığınız özel durum kodu için test etmek için özel durum işleme filtreleri kullanın.  
+-   Tanımladığınız özel durum kodunu test etmek için özel durum işleme filtrelerini kullanın.  
   
- \<Winerror.h'de > dosyasını özel durum kodları biçimi gösterir. Çakışan bir kod var olan bir özel durum kodu belirtmiyor emin olmak için üçüncü en önemli biti 1 olarak ayarlayın. Aşağıdaki tabloda gösterildiği gibi dört en önemli BITS ayarlanması gerekir.  
+ \<Wınerror > özel durum kodları için biçim dosyasını gösterir. Çakışan bir kod mevcut bir özel durum kodu ile tanımlamazsanız emin olmak için üçüncü en anlamlı biti 1 olarak ayarlayın. Aşağıdaki tabloda gösterildiği gibi dört en önemli bitleri ayarlanması gerekir.  
   
 |Bits|Önerilen ikili ayarı|Açıklama|  
 |----------|--------------------------------|-----------------|  
-|31-30|11|Bu iki bit kodu temel durumunu açıklar: 11 = hata, 00 = success, 01 = bilgilendirme, 10 uyarı =.|  
+|31-30|11|Bu iki bit kod temel durumunu açıklayan: 11 hatası, 00 = = başarılı, 01 = bilgilendirici, 10 = uyarı.|  
 |29|1.|İstemci bit. Kullanıcı tanımlı kodları için 1 olarak ayarlayın.|  
 |28|0|Ayrılmış bit. (0 olarak ayarlanmış olarak bırakın.)|  
   
- İsterseniz, "error" ayarı çoğu özel durumlar için uygun olsa da, ilk iki BITS 11 dışında bir ayarı için ikili ayarlayabilirsiniz. Anımsaması önemli şey BITS 29 ve 28 önceki tabloda gösterilen ayarlamaktır.  
+ İsterseniz, "error" ayarı çoğu özel durumlar için uygun olsa da, ilk iki bit 11 dışındaki bir ayar için ikili ayarlayabilirsiniz. Anımsanması gereken önemli şey BITS 29 ile 28 önceki tabloda gösterilen şekilde ayarlamaktır.  
   
- Sonuçta elde edilen hata kodu dolayısıyla en yüksek dört onaltılık E'ye bitler olması gerekir Örneğin, aşağıdaki tanımları çakışmasını özel durum kodları tüm Windows özel durum kodları ile tanımlayın. (Ancak, kodlara üçüncü taraf DLL'leri tarafından kullanılan denetlemek ihtiyacınız olabilir.)  
+ Ortaya çıkan hata kodu, bu nedenle en yüksek dört onaltılık E'ye bitler olmalıdır Örneğin, şu tanımlamalardan herhangi bir Windows özel durum kodları ile çakışmayan özel durum kodları tanımlayın. (Ancak kodlara üçüncü parti DLL'ler tarafından kullanılan denetlemek ihtiyacınız olabilir.)  
   
-```  
+```cpp 
 #define STATUS_INSUFFICIENT_MEM       0xE0000001  
 #define STATUS_FILE_BAD_FORMAT        0xE0000002  
 ```  
   
- Bir özel durum kodu tanımladıktan sonra bir özel durum oluşturmak için kullanabilirsiniz. Örneğin, aşağıdaki kod yanıt olarak bir bellek ayırma sorunu STATUS_INSUFFICIENT_MEM özel durum oluşturur:  
+ Bir özel durum kodu tanımladıktan sonra bir özel durum oluşturmak için kullanabilirsiniz. Örneğin, aşağıdaki kod yanıt olarak bir bellek ayırma sorun STATUS_INSUFFICIENT_MEM özel durum oluşturur:  
   
-```  
+```cpp 
 lpstr = _malloc( nBufferSize );  
 if (lpstr == NULL)  
     RaiseException( STATUS_INSUFFICIENT_MEM, 0, 0, 0);  
 ```  
   
- Yalnızca bir özel durum yükseltmek istiyorsanız, en son üç parametre 0 olarak ayarlayın. Üç son parametre ek bilgi geçirmek için kullanışlı olan ve işleyicileri yürütme devam etmesini engelleyen bir bayrak ayarı. Bkz: [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) işlevi [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] daha fazla bilgi için.  
+ Yalnızca bir özel durum yükseltmek istiyorsanız, en son üç parametre 0 olarak ayarlayabilirsiniz. Son üç parametre ek bilgi geçirmek için kullanışlıdır ve bayrak ayarı işleyicileri yürütme devam etmesini engeller. Bkz: [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) işlevi [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] daha fazla bilgi için.  
   
- Özel durum işleme filtrelerinizi tanımladığınız kodlarını sonra test edebilirsiniz. Örneğin:  
+ Özel durum işleme filtrelerinizi tanımladınız kodlarını sonra test edebilirsiniz. Örneğin:  
   
-```  
+```cpp 
 __try {  
     ...  
 }  

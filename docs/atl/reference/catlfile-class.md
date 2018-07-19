@@ -30,18 +30,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43ee71aae842ca7100f70af67cd8845d31e39a96
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5ecf0dc1907d2f78a844756d0efc8add04de6046
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32366113"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885279"
 ---
 # <a name="catlfile-class"></a>CAtlFile sınıfı
-Bu sınıf Windows çevresinde ince bir sarmalayıcı dosya işleme API sağlar.  
+Bu sınıf, dosya işleme API Windows çevresinde ince bir sarmalayıcı sağlar.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -61,17 +61,17 @@ class CAtlFile : public CHandle
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlFile::Create](#create)|Oluşturmak veya bir dosyayı açmak için bu yöntemi çağırın.|  
-|[CAtlFile::Flush](#flush)|Dosya için arabellek temizleyip dosyasına yazılacak olan tüm arabelleğe alınan verilerin neden için bu yöntemi çağırın.|  
-|[CAtlFile::GetOverlappedResult](#getoverlappedresult)|Dosya çakışan bir işlem sonuçları almak için bu yöntemi çağırın.|  
-|[CAtlFile::GetPosition](#getposition)|Geçerli dosya işaretçisini konumu dosyadan almak için bu yöntemi çağırın.|  
-|[CAtlFile::GetSize](#getsize)|Dosyanın bayt cinsinden boyutu almak için bu yöntemi çağırın.|  
-|[CAtlFile::LockRange](#lockrange)|Bir bölgede başka bir işlem, erişimini engellemek için dosyayı kilitlemek için bu yöntemi çağırın.|  
-|[CAtlFile::Read](#read)|Dosya işaretçisini tarafından belirtilen konumda başlayarak bir dosyadan verileri okumak için bu yöntemi çağırın.|  
-|[CAtlFile::Seek](#seek)|Dosyanın dosya işaretçisini taşımak için bu yöntemi çağırın.|  
-|[CAtlFile::SetSize](#setsize)|Dosyanın boyutunu ayarlamak için bu yöntemi çağırın.|  
+|[CAtlFile::Create](#create)|Bir dosyayı açmak veya oluşturmak için bu yöntemi çağırın.|  
+|[CAtlFile::Flush](#flush)|Dosya için arabellek temizleyin ve dosyaya yazılacak tüm arabelleğe alınan verileri neden için bu yöntemi çağırın.|  
+|[CAtlFile::GetOverlappedResult](#getoverlappedresult)|Dosya çakışan bir işlem sonuçlarını almak için bu yöntemi çağırın.|  
+|[CAtlFile::GetPosition](#getposition)|Geçerli dosya işaretçisi konumunu dosyasından almak için bu yöntemi çağırın.|  
+|[CAtlFile::GetSize](#getsize)|Dosyanın bayt cinsinden boyutunu almak için bu yöntemi çağırın.|  
+|[CAtlFile::LockRange](#lockrange)|Diğer işlemlerin erişimini engellemek için dosyanın bir bölgede kilitlemek için bu yöntemi çağırın.|  
+|[CAtlFile::Read](#read)|Dosya işaretçisi tarafından belirtilen konumda başlayan bir dosyadan veri okumak için bu yöntemi çağırın.|  
+|[CAtlFile::Seek](#seek)|Dosya işaretçisini dosyanın taşımak için bu yöntemi çağırın.|  
+|[CAtlFile::SetSize](#setsize)|Dosya boyutunu ayarlamak için bu yöntemi çağırın.|  
 |[CAtlFile::UnlockRange](#unlockrange)|Bir bölge dosyanın kilidini açmak için bu yöntemi çağırın.|  
-|[CAtlFile::Write](#write)|Dosya işaretçisini tarafından belirtilen konumda başlayan dosya verileri yazmak için bu yöntemi çağırın.|  
+|[CAtlFile::Write](#write)|Dosya işaretçisi tarafından belirtilen konumda başlayarak dosyaya veri yazmak için bu yöntemi çağırın.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
@@ -80,7 +80,7 @@ class CAtlFile : public CHandle
 |[CAtlFile::m_pTM](#m_ptm)|İşaretçi `CAtlTransactionManager` nesnesi|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, dosya işleme gereksinimlerini görece basit ancak MFC bağımlılıklar dahil olmak üzere olmadan Windows API sağladığından daha fazla soyutlama gerekli olduğu durumlarda kullanın.  
+ Bu sınıf, dosya işleme gereksinimlerini oldukça basittir ancak MFC bağımlılıklar dahil olmak üzere Windows API sağladığından daha fazla soyutlama gerekli olduğu durumlarda kullanın.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CHandle](../../atl/reference/chandle-class.md)  
@@ -101,20 +101,20 @@ explicit CAtlFile(HANDLE hFile) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `file`  
+ *Dosya*  
  Dosya nesnesi.  
   
- `hFile`  
+ *Hfıle*  
  Dosya tanıtıcısı.  
   
- `pTM`  
- CAtlTransactionManager nesnesine işaretçi  
+ *pTM*  
+ CAtlTransactionManager nesne işaretçisi  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kopya Oluşturucu özgün dosya tanıtıcısı sahipliğini aktarır `CAtlFile` yeni oluşturulan nesnesini.  
+ Kopya Oluşturucu, özgün dosya tanıtıcısı sahipliğini aktarır `CAtlFile` yeni oluşturulmuş nesne için nesne.  
   
 ##  <a name="create"></a>  CAtlFile::Create  
- Oluşturmak veya bir dosyayı açmak için bu yöntemi çağırın.  
+ Bir dosyayı açmak veya oluşturmak için bu yöntemi çağırın.  
   
 ```
 HRESULT Create(
@@ -131,45 +131,45 @@ HRESULT Create(
  *szFilename*  
  Dosya adı.  
   
- `dwDesiredAccess`  
- İstenen erişim. Bkz: `dwDesiredAccess` içinde [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) Windows SDK.  
+ *dwDesiredAccess*  
+ İstenen erişim. Bkz: *dwDesiredAccess* içinde [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) Windows SDK.  
   
- `dwShareMode`  
- Paylaşım modu. Bkz: `dwShareMode` içinde **CreateFile**.  
+ *dwShareMode*  
+ Paylaşım modu. Bkz: *dwShareMode* içinde `CreateFile`.  
   
- `dwCreationDisposition`  
- Oluşturma değerlendirme. Bkz: `dwCreationDisposition` içinde **CreateFile**.  
+ *dwCreationDisposition*  
+ Oluşturma değerlendirme. Bkz: *dwCreationDisposition* içinde `CreateFile`.  
   
- `dwFlagsAndAttributes`  
- Bayrakları ve öznitelikleri. Bkz: `dwFlagsAndAttributes` içinde **CreateFile**.  
+ *dwFlagsAndAttributes*  
+ Bayraklar ve öznitelikleri. Bkz: *dwFlagsAndAttributes* içinde `CreateFile`.  
   
- `lpsa`  
- Güvenlik öznitelikleri. Bkz: *lpSecurityAttributes* içinde **CreateFile**.  
+ *lpsa*  
+ Güvenlik öznitelikleri. Bkz: *lpSecurityAttributes* içinde `CreateFile`.  
   
- `hTemplateFile`  
- Şablon dosyası. Bkz: `hTemplateFile` içinde **CreateFile**.  
+ *hTemplateFile*  
+ Şablon dosyası. Bkz: *hTemplateFile* içinde `CreateFile`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) oluşturmak veya dosyayı açmak için.  
+ Çağrıları [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) oluşturma veya dosyasını açın.  
   
 ##  <a name="flush"></a>  CAtlFile::Flush  
- Dosya için arabellek temizleyip dosyasına yazılacak olan tüm arabelleğe alınan verilerin neden için bu yöntemi çağırın.  
+ Dosya için arabellek temizleyin ve dosyaya yazılacak tüm arabelleğe alınan verileri neden için bu yöntemi çağırın.  
   
 ```
 HRESULT Flush() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [FlushFileBuffers](http://msdn.microsoft.com/library/windows/desktop/aa364439) dosyayı arabelleğe alınan verileri temizlemek için.  
+ Çağrıları [FlushFileBuffers](http://msdn.microsoft.com/library/windows/desktop/aa364439) dosyayı arabelleğe alınan verileri temizleyemedi.  
   
 ##  <a name="getoverlappedresult"></a>  CAtlFile::GetOverlappedResult  
- Dosya çakışan bir işlem sonuçları almak için bu yöntemi çağırın.  
+ Dosya çakışan bir işlem sonuçlarını almak için bu yöntemi çağırın.  
   
 ```
 HRESULT GetOverlappedResult(
@@ -179,77 +179,77 @@ HRESULT GetOverlappedResult(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pOverlapped`  
- Çakışan yapısı. Bkz: `lpOverlapped` içinde [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) Windows SDK.  
+ *pOverlapped*  
+ Çakışan yapı. Bkz: *lpOverlapped* içinde [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) Windows SDK.  
   
  *dwBytesTransferred*  
- Aktarılan bayt sayısı. Bkz: *lpNumberOfBytesTransferred* içinde `GetOverlappedResult`.  
+ Bayt aktarıldı. Bkz: *lpNumberOfBytesTransferred* içinde `GetOverlappedResult`.  
   
- `bWait`  
- Bekleme seçeneği. Bkz: `bWait` içinde `GetOverlappedResult`.  
+ *bWait*  
+ Bekleme seçeneği. Bkz: *bWait* içinde `GetOverlappedResult`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) dosyasında çakışan bir işlem sonuçları elde etmek için.  
+ Çağrıları [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) dosya çubuğunda çakışan bir işlem sonuçlarını almak için.  
   
 ##  <a name="getposition"></a>  CAtlFile::GetPosition  
- Geçerli dosya işaretçisini konumunu almak için bu yöntemi çağırın.  
+ Geçerli dosya işaretçisi konumunu almak için bu yöntemi çağırın.  
   
 ```
 HRESULT GetPosition(ULONGLONG& nPos) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPos`  
- Bayt konumu.  
+ *nPos*  
+ Bayt cinsinden konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) geçerli dosya işaretçisini konumunu almak için.  
+ Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) geçerli dosya işaretçisi konumunu almak için.  
   
 ##  <a name="getsize"></a>  CAtlFile::GetSize  
- Dosyanın bayt cinsinden boyutu almak için bu yöntemi çağırın.  
+ Dosyanın bayt cinsinden boyutunu almak için bu yöntemi çağırın.  
   
 ```
 HRESULT GetSize(ULONGLONG& nLen) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nLen`  
+ *nLen*  
  Dosyanın bayt sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [GetFileSize](http://msdn.microsoft.com/library/windows/desktop/aa364955) dosyasının bayt cinsinden boyutu alınamıyor.  
+ Çağrıları [GetFileSize](http://msdn.microsoft.com/library/windows/desktop/aa364955) dosyasının bayt cinsinden boyutunu almak için.  
   
 ##  <a name="lockrange"></a>  CAtlFile::LockRange  
- Bir bölgede başka bir işlem, erişimini engellemek için dosyayı kilitlemek için bu yöntemi çağırın.  
+ Diğer işlemlerin erişimini engellemek için dosyanın bir bölgede kilitlemek için bu yöntemi çağırın.  
   
 ```
 HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPos`  
- Kilit nerede başlaması gerektiğini dosyanın konumu.  
+ *nPos*  
+ Kilit nerede başlayacağını dosyanın konumu.  
   
- `nCount`  
- Kilitlenecek bayt aralığı uzunluğu.  
+ *nCount*  
+ Kilitlenecek bayt aralığı cinsinden uzunluğu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [LockFile](http://msdn.microsoft.com/library/windows/desktop/aa365202) dosyayı bir bölgede kilitlenemiyor. Bir dosyada baytları kilitleme erişimi başka işlemler tarafından bu bayt engeller. Bir dosyanın birden fazla bölge kilitleyebilirsiniz ancak hiç çakışan bölge izin verilir. Bir bölge kilidini kullandığınızda [CAtlFile::UnlockRange](#unlockrange), bayt aralığı önceden kilitli olan bölge tam olarak eşleşmelidir. `LockRange` bitişik bölgeler birleştirmez; iki kilitli bölgeler bitişikse, her ayrı olarak kilidini açmanız gerekir.  
+ Çağrıları [LockFile](http://msdn.microsoft.com/library/windows/desktop/aa365202) bir bölgede dosyası kilitlenemiyor. Bir dosyadaki baytları kilitleme erişim için bu baytlardan başka işlemler tarafından engeller. Bir dosyanın birden fazla bölgeye kilitleyebilirsiniz ancak çakışan bölge izin verilir. Bir bölge kilidini kaldırdığında kullanarak [CAtlFile::UnlockRange](#unlockrange), bayt aralığı, önceden kilitli olan bölge tam olarak karşılık gelmelidir. `LockRange` bitişik bölgeleri birleştirmez; kilitli iki bölgeleri bitişikse, her ayrı olarak kilidini açmanız gerekir.  
   
 ##  <a name="m_ptm"></a>  CAtlFile::m_pTM  
- İşaretçi bir `CAtlTransactionManager` nesnesi.  
+ İşaretçi bir `CAtlTransactionManager` nesne.  
   
 ```
 CAtlTransactionManager* m_pTM;
@@ -258,7 +258,7 @@ CAtlTransactionManager* m_pTM;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="read"></a>  CAtlFile::Read  
- Dosya işaretçisini tarafından belirtilen konumda başlayarak bir dosyadan verileri okumak için bu yöntemi çağırın.  
+ Dosya işaretçisi tarafından belirtilen konumda başlayan bir dosyadan veri okumak için bu yöntemi çağırın.  
   
 ```
 HRESULT Read(
@@ -283,29 +283,29 @@ HRESULT Read(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBuffer`  
- Dosyadan okunan veriler alacak arabellek işaretçi.  
+ *pBuffer*  
+ Dosyadan okunan veriler alacak arabellek için işaretçi.  
   
- `nBufSize`  
- Bayt cinsinden arabellek boyutu.  
+ *nBufSize*  
+ Arabellek boyutu bayt cinsinden.  
   
- `nBytesRead`  
+ *nBytesRead*  
  Okunan bayt sayısı.  
   
- `pOverlapped`  
- Çakışan yapısı. Bkz: `lpOverlapped` içinde [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) Windows SDK.  
+ *pOverlapped*  
+ Çakışan yapı. Bkz: *lpOverlapped* içinde [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) Windows SDK.  
   
- `pfnCompletionRoutine`  
- Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) Windows SDK'sındaki.  
+ *pfnCompletionRoutine*  
+ Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk üç forms çağrısı [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467), son [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) dosyasından veri okunamıyor. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşımak için.  
+ İlk üç forms çağrı [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467), son [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) dosyasından veri okunamıyor. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşınır.  
   
 ##  <a name="seek"></a>  CAtlFile::Seek  
- Dosyanın dosya işaretçisini taşımak için bu yöntemi çağırın.  
+ Dosya işaretçisini dosyanın taşımak için bu yöntemi çağırın.  
   
 ```
 HRESULT Seek(
@@ -314,31 +314,31 @@ HRESULT Seek(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nOffset`  
- Başlangıç noktası tarafından verilen uzaklığı `dwFrom`.  
+ *nOffset*  
+ Başlangıç noktası tarafından verilen uzaklığı *dwFrom*.  
   
- `dwFrom`  
+ *dwFrom*  
  Başlangıç noktası (FILE_BEGIN, FILE_CURRENT veya FILE_END).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) dosya işaretçisini taşımak için.  
+ Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) dosya işaretçisini taşınır.  
   
 ##  <a name="setsize"></a>  CAtlFile::SetSize  
- Dosyanın boyutunu ayarlamak için bu yöntemi çağırın.  
+ Dosya boyutunu ayarlamak için bu yöntemi çağırın.  
   
 ```
 HRESULT SetSize(ULONGLONG nNewLen) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nNewLen`  
+ *nNewLen*  
  Yeni dosyanın bayt cinsinden uzunluğu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) ve [SetEndOfFile](http://msdn.microsoft.com/library/windows/desktop/aa365531) dosyasının boyutunu ayarlamak için. Getirisi, dosya işaretçisini dosyanın sonunda konumlandırıldı.  
@@ -351,20 +351,20 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nPos`  
- Unlock nerede başlaması gerektiğini dosyanın konumu.  
+ *nPos*  
+ Kilit açma nerede başlayacağını dosya konumu.  
   
- `nCount`  
- Kilidi açılacak bayt aralığı uzunluğu.  
+ *nCount*  
+ Kilidinin açılması için bayt aralığı cinsinden uzunluğu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [UnlockFile](http://msdn.microsoft.com/library/windows/desktop/aa365715) bir bölge dosyanın kilidini açmak için.  
   
 ##  <a name="write"></a>  CAtlFile::Write  
- Dosya işaretçisini tarafından belirtilen konumda başlayan dosya verileri yazmak için bu yöntemi çağırın.  
+ Dosya işaretçisi tarafından belirtilen konumda başlayarak dosyaya veri yazmak için bu yöntemi çağırın.  
   
 ```
 HRESULT Write(
@@ -385,28 +385,28 @@ HRESULT Write(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pBuffer`  
- Dosyasına yazılacak veriler içeren bir arabellek.  
+ *pBuffer*  
+ Dosyaya yazılacak veriler içeren arabellek.  
   
- `nBufSize`  
+ *nBufSize*  
  Arabellekteki aktarılacak bayt sayısı.  
   
- `pOverlapped`  
- Çakışan yapısı. Bkz: `lpOverlapped` içinde [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) Windows SDK.  
+ *pOverlapped*  
+ Çakışan yapı. Bkz: *lpOverlapped* içinde [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) Windows SDK.  
   
- `pfnCompletionRoutine`  
- Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) Windows SDK'sındaki.  
+ *pfnCompletionRoutine*  
+ Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) Windows SDK.  
   
- `pnBytesWritten`  
+ *pnBytesWritten*  
  Yazılan bayt sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarı veya hata `HRESULT` hatasında.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk üç forms çağrısı [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747), son çağrıları [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) dosyaya veri yazmak için. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşımak için.  
+ İlk üç forms çağrı [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747), son çağrı [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) dosyaya veri yazmak için. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşınır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan örnek](../../visual-cpp-samples.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [CHandle Sınıfı](../../atl/reference/chandle-class.md)

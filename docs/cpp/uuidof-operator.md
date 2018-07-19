@@ -18,44 +18,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70731665ca2a2eba739f139678e0f7eaface2b85
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 92f7e0f3652a1142c97f878784edba6229fb19cd
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948112"
 ---
 # <a name="uuidof-operator"></a>__uuidof İşleci
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İfadeye bağlı GUID alır.  
+ İfade iliştirilen GUID alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      __uuidof (  
-   expression   
-)  
+__uuidof (expression)  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- *İfade* , bu tür veya bir değişkeni bu tür bir şablonu özelleştirilmiş tür adı, işaretçi, başvuru veya dizi türünde olabilir. Derleyici ekli GUID bulmak için kullanabileceğiniz sürece bağımsız değişkeni geçerli değil.  
+ *İfade* , bu tür veya bu tür bir değişken şablon özel bir tür adı, işaretçi, başvuru veya dizi türünde olabilir. Derleyici iliştirilen GUID bulmak için kullanabileceğiniz sürece bağımsız değişken geçerli değil.  
   
- Bu iç, özel bir durum olduğunda ya da **0** veya **NULL** bağımsız değişken olarak sağlanır. Bu durumda, `__uuidof` sıfırları oluşan bir GUID döndürür.  
+ Bu iç özel bir durum olduğunda ya da **0** veya NULL bağımsız değişken olarak sağlanır. Bu durumda, **__uuidof** sıfırlardan oluşan bir GUID değerini döndürür.  
   
- İlişkili GUID ayıklamak için bu anahtar sözcük kullanın:  
+ Bağlı GUID ayıklamak için bu anahtar sözcük kullanın:  
   
--   Nesne tarafından [UUID](../cpp/uuid-cpp.md) genişletilmiş öznitelik.  
+-   Bir nesne tarafından [UUID](../cpp/uuid-cpp.md) genişletilmiş öznitelik.  
   
 -   Bir kitaplık bloğu ile oluşturulan [Modülü](../windows/module-cpp.md) özniteliği.  
   
 > [!NOTE]
->  Hata ayıklama derlemesi içinde `__uuidof` her zaman bir nesnede dinamik olarak (çalışma zamanı) başlatır. Bir sürümde yapıdaki `__uuidof` statik olarak (derleme zamanında) bir nesne başlatabilirsiniz.  
+>  Hata ayıklama derlemesinde **__uuidof** her zaman zamanında dinamik olarak () bir nesneyi başlatır. Derleme, **__uuidof** statik (derleme zamanında) nesneyi başlatabilirsiniz.  
   
 ## <a name="example"></a>Örnek  
- (Ole32.lib ile derlenen) aşağıdaki kod modülü özniteliği ile oluşturulan bir kitaplık blok UUID'si görüntülenir:  
+ Modül özniteliği ile oluşturulan bir kitaplığı blok UUID'si (ole32.lib ile derlenmiş) aşağıdaki kodu görüntüler:  
   
-```  
+```cpp 
 // expre_uuidof.cpp  
 // compile with: ole32.lib  
 #include "stdio.h"  
@@ -77,13 +76,13 @@ int main() {
 ```  
   
 ## <a name="comments"></a>Açıklamalar  
- Kitaplık adı olduğu artık kapsamda durumlarda __LIBID kullanabilirsiniz\_ yerine `__uuidof`. Örneğin:  
+ Kitaplık adı olduğu artık kapsamda durumlarda kullanabilirsiniz `__LIBID_` yerine **__uuidof**. Örneğin:  
   
-```  
+```cpp 
 StringFromCLSID(__LIBID_, &lpolestr);  
 ```  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   

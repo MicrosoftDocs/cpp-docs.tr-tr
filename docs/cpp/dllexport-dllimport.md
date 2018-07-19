@@ -20,17 +20,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d57287723da1bb7fbe7f75dece05674142bd417
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a330ecf221d210134425c4bf39c17bac0f5006dc
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414210"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940540"
 ---
 # <a name="dllexport-dllimport"></a>dllexport, dllimport
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- `dllexport` Ve **dllimport** depolama sınıfı öznitelikler C ve C++ dilleri için Microsoft'a özgü uzantılar bağlıdır. Ya da DLL'den işlevleri, veri ve nesneleri almak ve vermek için bunları kullanabilirsiniz.  
+ **Dllexport** ve **dllimport** depolama sınıfı öznitelikleri olan C ve C++ dilleri için Microsoft'a özgü uzantılardır. İşlevleri, verileri ve nesneleri için veya bir DLL içeri ve dışarı aktarmak kullanabilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,15 +41,15 @@ ms.locfileid: "32414210"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu öznitelikler DLL'nin arabirimi yürütülebilir dosya veya başka bir DLL olabilir, istemciye açıkça tanımlayın. İşlevleri bildirme `dllexport` bir modül-tanımlama (.def) dosyası en az dışarı aktarılan işlevleri'nin belirtimine göre ortadan kaldırır. `dllexport` Özniteliği değiştirir `__export` anahtar sözcüğü.  
+ Bu öznitelikler, DLL'nin arabirimini yürütülebilir dosya veya başka bir DLL olabilir, istemciye açıkça tanımlayın. İşlevleri bildirme **dllexport** dışarı aktarılan işlevlerin belirtimi açısından en az bir modül-tanımlama (.def) dosyası ihtiyacını ortadan kaldırır. **Dllexport** özniteliği değiştirir **__export** anahtar sözcüğü.  
   
- Bir sınıf declspec(dllexport) işaretlenmişse sınıf şablonlarının sınıf hiyerarşisindeki tüm özelleştirmeleri örtük olarak declspec(dllexport) işaretlenir. Bu sınıf şablonları açıkça örneği ve sınıf'ın üyeleri tanımlanmalıdır anlamına gelir.  
+ Bir sınıf declspec(dllexport) olarak, sınıf hiyerarşisindeki sınıf şablonlarının tüm uzmanlıkları örtük olarak declspec(dllexport) işaretlenir. Bunun anlamı, sınıf şablonlarının açıkça oluşturulduğu ve sınıf üyelerinin tanımlanması gerekir.  
   
- `dllexport` bir işlevi olarak düzenlenmiş adıyla işlevi sunar. İçin C++ işlevlerini, bu ad bozma içerir. C işlevlerini veya olarak bildirilen işlevler için `extern "C"`, bu arama kuralına göre platforma özgü decoration içerir. C/C++ kod ad düzenleme hakkında daha fazla bilgi için bkz: [donatılmış adları](../build/reference/decorated-names.md). Ad düzenlemesi dışarı aktarılan C işlevlerini ya da C++ uygulanan `extern "C"` kullanarak işlevleri `__cdecl` çağırma.  
+ **dllexport** işlevi fonksiyonu düzenlenmiş adıyla gösterir. C++ işlevleri için ad değiştirmeyi içerir. C işlevleri veya olarak bildirilen işlevler için `extern "C"`, bu çağrı standardına göre platforma özgü düzenlemeler içerir. C/C++ kodundaki ad düzenleme hakkında daha fazla bilgi için bkz: [düzenlenmiş adlar](../build/reference/decorated-names.md). Hiçbir ad düzenlemesi dışarı aktarılan C işlevleri veya C++ için uygulanan `extern "C"` kullanan işlevler `__cdecl` çağırma kuralı.  
   
- Ve bir ad vermek için bir dışarı aktarma bölümünde ve adını tanımlayan bir modül tanımlama (.def) dosyası kullanarak bağlayabilirsiniz. Daha fazla bilgi için bkz: [dışarı](../build/reference/exports.md). Ve bir ad vermek için başka bir yolu bir `#pragma comment(linker, "/export:alias=decorated_name")` kaynak kodundaki yönergesi.  
+ Tamamlanmamış bir ad vermek için bir EXPORTS bölümünde düzenlenmemiş adını tanımlayan bir modül tanımlama (.def) dosyası kullanarak bağlayabilirsiniz. Daha fazla bilgi için [dışarı AKTARMALARI](../build/reference/exports.md). Tamamlanmamış bir ad vermek için başka bir yolu bir `#pragma comment(linker, "/export:alias=decorated_name")` kaynak kodunda yönergesi.  
   
- Ne zaman bildirdiğiniz `dllexport` veya **dllimport**, kullanmalısınız [öznitelik sözdizimi Genişletilmiş](../cpp/declspec.md) ve `__declspec` anahtar sözcüğü.  
+ Bildirdiğinizde **dllexport** veya **dllimport**, kullanmanız gereken [genişletilmiş öznitelik sözdizimi](../cpp/declspec.md) ve **__declspec** anahtar sözcüğü.  
   
 ## <a name="example"></a>Örnek  
   
@@ -81,7 +81,7 @@ DllExport int n;
   
 -   [C++ Sınıflarında dllimport ve dllexport Kullanma](../cpp/using-dllimport-and-dllexport-in-cpp-classes.md)  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__declspec](../cpp/declspec.md)   

@@ -20,18 +20,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14b918747d9b7bee1b661eebd61fbb35325861e7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cbbee8a404b679c8411470215821b8cdcccc695e
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358058"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885227"
 ---
 # <a name="catlwinmodule-class"></a>CAtlWinModule sınıfı
-Bu sınıf ATL Pencereleme bileşenleri için destek sağlar.  
+Bu sınıf, ATL Pencereleme bileşenleri için destek sağlar.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,14 +46,14 @@ class CAtlWinModule : public _ATL_WIN_MODULE
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CAtlWinModule::CAtlWinModule](#catlwinmodule)|Oluşturucu.|  
-|[CAtlWinModule:: ~ CAtlWinModule](#dtor)|Yok Edicisi.|  
+|[CAtlWinModule:: ~ CAtlWinModule](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlWinModule::AddCreateWndData](#addcreatewnddata)|Bir veri nesnesi ekler.|  
-|[CAtlWinModule::ExtractCreateWndData](#extractcreatewnddata)|Bir işaretçi pencere modülü veri nesnesi döndürür.|  
+|[CAtlWinModule::AddCreateWndData](#addcreatewnddata)|Bir veri nesnesine ekler.|  
+|[CAtlWinModule::ExtractCreateWndData](#extractcreatewnddata)|Pencere modülü veri nesnesine bir işaretçi döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu sınıf Pencereleme özellikleri gerektiren tüm ATL sınıfları için destek sağlar.  
@@ -67,21 +67,21 @@ class CAtlWinModule : public _ATL_WIN_MODULE
  **Başlık:** atlbase.h  
   
 ##  <a name="addcreatewnddata"></a>  CAtlWinModule::AddCreateWndData  
- Bu yöntem, başlatır ve ekler bir `_AtlCreateWndData` yapısı.  
+ Bu yöntem başlatır ve ekler bir `_AtlCreateWndData` yapısı.  
   
 ```
 void AddCreateWndData(_AtlCreateWndData* pData, void* pObject);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pData`  
- İşaretçi `_AtlCreateWndData` başlatıldı ve geçerli modülüne eklenmiş yapısı.  
+ *pData*  
+ İşaretçi `_AtlCreateWndData` yapısı başlatılamadı ve geçerli modülüne eklendi.  
   
- `pObject`  
- Bir nesnenin işaretçi **bu** işaretçi.  
+ *pObject*  
+ Bir nesnenin işaretçisine **bu** işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırır [AtlWinModuleAddCreateWndData](winmodule-global-functions.md#atlwinmoduleaddcreatewnddata) hangi başlatır bir [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) yapısı. Bu yapı depolayacak **bu** işaretçi, pencere yordamları sınıf örneği elde etmek üzere kullanılır.  
+ Bu yöntemin çağırdığı [AtlWinModuleAddCreateWndData](winmodule-global-functions.md#atlwinmoduleaddcreatewnddata) hangi başlatır bir [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) yapısı. Bu yapı depolayacak **bu** işaretçisi, pencere yordamları sınıfı örneğinde elde etmek üzere kullanılır.  
   
 ##  <a name="catlwinmodule"></a>  CAtlWinModule::CAtlWinModule  
  Oluşturucu.  
@@ -91,10 +91,10 @@ CAtlWinModule();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Başlatma başarısız olursa bir **EXCEPTION_NONCONTINUABLE** özel durum oluşturulur.  
+ Başlatma başarısız olursa bir **EXCEPTION_NONCONTINUABLE** özel durumu oluşturulur.  
   
 ##  <a name="dtor"></a>  CAtlWinModule:: ~ CAtlWinModule  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CAtlWinModule();
@@ -104,16 +104,16 @@ CAtlWinModule();
  Ayrılan tüm kaynakları serbest bırakır.  
   
 ##  <a name="extractcreatewnddata"></a>  CAtlWinModule::ExtractCreateWndData  
- Bu yöntem için bir işaretçi bir `_AtlCreateWndData` yapısı.  
+ Bu yöntem bir işaretçi döndürür. bir `_AtlCreateWndData` yapısı.  
   
 ```
 void* ExtractCreateWndData();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi döndürür `_AtlCreateWndData` ile daha önce eklediğiniz yapısı [CAtlWinModule::AddCreateWndData](#addcreatewnddata), veya nesne yok yoksa NULL.  
+ Bir işaretçi döndürür `_AtlCreateWndData` yapısı ile daha önce eklediğiniz [CAtlWinModule::AddCreateWndData](#addcreatewnddata), ya da nesne mevcut yoksa NULL.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Modül sınıfları](../../atl/atl-module-classes.md)

@@ -1,5 +1,5 @@
 ---
-title: Olay işleme genel işlevlerini | Microsoft Docs
+title: Olay işleme genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,22 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb2c7834e7d5475810973a42ef179ea4f5f0079f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 85babf3155fdc94dafd5d62c2e67401e5add3663
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358344"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884005"
 ---
-# <a name="event-handling-global-functions"></a>Olay işleme genel işlevler
-Bu işlev bir olay işleyicisi sağlar.  
+# <a name="event-handling-global-functions"></a>Olay işleme genel işlevleri
+Bu işlev, bir olay işleyicisi sağlar.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarda aşağıdaki tabloda listelenen işlevi kullanılamaz.  
+>  Aşağıdaki tabloda listelenen işlevi, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 |||  
 |-|-|  
-|[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Bir nesne bildirilmesini, bu sırada gerektiğinde pencere iletileri gönderme bekler.|  
+|[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Bu arada pencere iletilerini gerektiği şekilde gönderme bildirilmesini, bir nesne için bekler.|  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
@@ -41,21 +41,21 @@ Bu işlev bir olay işleyicisi sağlar.
  Nesne için sinyal gönderilmesini bekler, bu arada pencere iletilerini gerektiği şekilde dağıtır.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 BOOL AtlWaitWithMessageLoop(HANDLE hEvent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hEvent`  
- [in] Beklemek için nesne işleci.  
+ *hEvent*  
+ [in] İşleci nesnenin bekleyin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **TRUE** nesne işaret varsa.  
+ Nesne sinyal varsa TRUE değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Gerçekleşir ve bunu gerçekleştiği bildirim almak bir nesnenin olayı bekle istiyor ancak bekleme sırasında dağıtılması pencere iletileri izin vermek yararlıdır.  
+ Gerçekleşir ve gerçekleştirilecek bu bildirim bir nesnenin olay beklemek istiyor, ancak bekleme sırasında dağıtılması pencere iletilerini izin vermek yararlıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlevler](../../atl/reference/atl-functions.md)

@@ -1,7 +1,7 @@
 ---
 title: extern depolama sınıfı tanımlayıcısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/10/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -18,69 +18,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08a578514aaf6de4132bd856900b0ec31d31835c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 365f4cf424ee51c493859e1d79f733b2cfcf331c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388734"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964190"
 ---
 # <a name="extern-storage-class-specifier"></a>extern Depolama Sınıfı Tanımlayıcısı
-`extern` depolama sınıfı belirticisiyle bildirilen bir değişken, programın kaynak dosyalarından birinde dış düzeyde tanımlanmış aynı ada sahip bir değişkene yönelik başvurudur. İç `extern` bildirimi, dış düzey değişken tanımını blok içinde görünür hale getirmek için kullanılır. Dış düzeyinde aksi bildirilmediği sürece, `extern` anahtar sözcüğü ile bildirilen bir değişken yalnızca bildirildiği blok içinde görülebilir.  
+
+Bildirilen bir değişken **extern** depolama sınıfı tanımlayıcısı başka bir kaynak dosyasında tanımlanmış aynı ada sahip bir değişken için bir başvurudur. Dış düzey değişken tanımını görünür yapmak için kullanılır. Olarak bildirilen bir değişken **extern** hiçbir kendisi için ayrılan depolama; yalnızca bir ad değildir. 
   
 ## <a name="example"></a>Örnek  
  Bu örnekte, iç ve dış düzeyi bildirimler gösterilmektedir:  
   
-```  
-// extern_StorageClassSpecified.c  
+```c  
+
+// Source1.c  
+
+int i = 1;
+
+
+// Source2. c
+
 #include <stdio.h>  
-  
-void other( void );  
-  
-int main()  
-{  
-    // Reference to i, defined below:   
-    extern int i;  
-  
-    // Initial value is zero; a is visible only within main:   
-    static int a;  
-  
-    // b is stored in a register, if possible:   
-    register int b = 0;  
-  
-    // Default storage class is auto:   
-    int c = 0;  
-  
-    // Values printed are 1, 0, 0, 0:   
-    printf_s( "%d\n%d\n%d\n%d\n", i, a, b, c );  
-    other();  
-    return;  
-}  
-  
-int i = 1;  
-  
-void other( void )  
-{  
+
+// Refers to the i that is defined in Source1.c:   
+extern int i;
+
+void func(void);
+
+int main()
+{
+    // Prints 1:   
+    printf_s("%d\n", i);
+    func();
+    return;
+}
+
+void func(void)
+{
     // Address of global i assigned to pointer variable:  
-    static int *external_i = &i;  
-  
-    // i is redefined; global i no longer visible:   
-    int i = 16;  
-  
-    // This a is visible only within the other function:   
-    static int a = 2;  
-  
-    a += 2;  
-    // Values printed are 16, 4, and 1:  
-    printf_s( "%d\n%d\n%d\n", i, a, *external_i );  
-}  
+    static int *external_i = &i;
+
+    // This definition of i hides the global i in Source.c:   
+    int i = 16;
+
+    // Prints 16, 1:  
+    printf_s("%d\n%d\n", i, *external_i);
+}
 ```  
   
- Bu örnekte, `i` değişkeni, dış düzeyde başlangıç değeri 1 ile tanımlanmıştır. `extern` işlevindeki bir `main` bildirimi, dış düzeyi `i` için bir başvuru bildirmek üzere kullanılmıştır. **Statik** değişkeni `a` Başlatıcı atlanmış beri 0 olarak varsayılan olarak başlatılır. `printf` çağrısı 1, 0, 0 ve 0 değerlerini yazdırır.  
-  
- İçinde `other` işlevi, genel değişkeni adresi `i` başlatmak için kullanılan **statik** işaretçi değişkeninin `external_i`. Genel değişkeni olduğundan bu çalışır **statik** yaşam süresi, adresini, program yürütme sırasında değişmez anlamına gelir. Ardından, `i` değişkeni, başlangıç değeri 16 ile yerel bir değişken olarak tekrar tanımlanır. Bu tekrar tanımlama işlemi, yerel değişken için adı kullanılarak gizlenen dış düzey `i` değerini etkilemez. Genel `i` değerine şimdi `external_i` işaretçisi aracılığıyla bu blok içinde yalnızca dolaylı olarak erişilebilir. Adresini atanırken **otomatik** değişkeni `i` blok girilir her zaman farklı olabilir bu yana bir işaretçi, çalışmaz. Değişkeni `a` olarak bildirilen bir **statik** değişken ve 2 başlatılmış. Bu `a` ile çakışmayan `a` içinde `main`, bu yana **statik** iç düzeyinde değişkenleri yalnızca blokta görünür, bunlar bildirilir içinde.  
-  
- `a` değişkeni 2 arttırılarak 4 sonucunu verir. `other` işlevi aynı programda yeniden çağırılırsa, `a` öğesinin başlangıç değeri 4 olur. İç **statik** değişkenleri tutmak değerlerine program çıkar ve blok reenters zaman içinde bunlar bildirilir.  
+ Bu örnekte, değişken `i` Source1.c içinde bir başlangıç değeri 1 ile tanımlanır. Bir **extern** Source2.c bildiriminde olan 'i' görünür bu dosyada yapar. 
+
+ İçinde `func` işlevi, genel değişkenin adresi `i` başlatmak için kullanılan **statik** işaretçi değişkeninin `external_i`. Genel değişken olduğu için bu çalışır **statik** ömrü, yani program yürütme sırasında adresi değişmez. Ardından, bir değişken `i` kapsamında tanımlanan `func` başlangıç değeri 16 ile yerel bir değişken olarak. Bu tanım dış düzeyi değerini etkilemez `i`, yerel değişken için adı kullanılarak gizli. Genel değerini `i` artık yalnızca işaretçi erişilebilir `external_i`.   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İç Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

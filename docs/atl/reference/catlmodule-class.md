@@ -30,15 +30,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2be5d5a777d4b9aed9ee4d07016771ee91c913b0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5291ae4783e252341371844ca08e390958c3ff89
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365288"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882578"
 ---
 # <a name="catlmodule-class"></a>CAtlModule sınıfı
-Bu sınıfın birkaç ATL modül sınıfları tarafından kullanılan yöntemleri sağlar.  
+Bu sınıf, birkaç ATL modül sınıfları tarafından kullanılan yöntemleri sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -53,34 +53,34 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CAtlModule::CAtlModule](#catlmodule)|Oluşturucu.|  
-|[CAtlModule:: ~ CAtlModule](#dtor)|Yok Edicisi.|  
+|[CAtlModule:: ~ CAtlModule](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements)|ATL kayıt defteri bileşeni (Kaydedici) değiştirme eşlemesine parametreleri eklemek için bu yöntemi geçersiz kılın.|  
+|[CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements)|ATL kayıt defteri bileşeni (Kaydedici) değiştirme eşlemeye parametreleri eklemek için bu yöntemi yok sayın.|  
 |[CAtlModule::AddTermFunc](#addtermfunc)|Modül sonlandırıldığında çağrılacak yeni bir işlev ekler.|  
-|[CAtlModule::GetGITPtr](#getgitptr)|Genel arabirim işaretçisi döndürür.|  
-|[CAtlModule::GetLockCount](#getlockcount)|Kilit sayımını döndürür.|  
-|[CAtlModule::Lock](#lock)|Kilit sayısını artırır.|  
+|[CAtlModule::GetGITPtr](#getgitptr)|Genel arabirim işaretçisini döndürür.|  
+|[CAtlModule::GetLockCount](#getlockcount)|Kilit sayacını döndürür.|  
+|[CAtlModule::Lock](#lock)|Kilit sayacını artırır.|  
 |[CAtlModule::Term](#term)|Tüm veri üyeleri serbest bırakır.|  
-|[CAtlModule::Unlock](#unlock)|Azaltır kilit sayısı.|  
-|[CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced)|Kaydetmek veya kaydı bir nesne için belirtilen bir kaynak içinde yer alan komut dosyasını çalıştırır.|  
-|[CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper)|Bu yöntem tarafından çağrılır `UpdateRegistryFromResourceD` kayıt defteri güncelleştirme gerçekleştirmek için.|  
-|[CAtlModule::UpdateRegistryFromResourceS](#updateregistryfromresources)|Kaydetmek veya kaydı bir nesne için belirtilen bir kaynak içinde yer alan komut dosyasını çalıştırır. Bu yöntem statik olarak ATL kayıt defteri bileşenine bağlar.|  
+|[CAtlModule::Unlock](#unlock)|Kilit sayısını azaltır.|  
+|[CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced)|Belirtilen kaynak kaydetmek veya kaydını bir nesne için yer alan komut dosyasını çalıştırır.|  
+|[CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper)|Bu yöntemi çağıran `UpdateRegistryFromResourceD` kayıt defterini güncelleştirme gerçekleştirmek için.|  
+|[CAtlModule::UpdateRegistryFromResourceS](#updateregistryfromresources)|Belirtilen kaynak kaydetmek veya kaydını bir nesne için yer alan komut dosyasını çalıştırır. Bu yöntem, ATL kayıt defteri bileşeni için statik olarak bağlar.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CAtlModule::m_libid](#m_libid)|Geçerli modül GUID içerir.|  
-|[CAtlModule::m_pGIT](#m_pgit)|Genel arabirim tablosu işaretçi.|  
+|[CAtlModule::m_pGIT](#m_pgit)|Genel arabirim tablosu işaretçisi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf tarafından kullanılan [CAtlDllModuleT sınıfı](../../atl/reference/catldllmodulet-class.md), [CAtlExeModuleT sınıfı](../../atl/reference/catlexemodulet-class.md), ve [CAtlServiceModuleT sınıfı](../../atl/reference/catlservicemodulet-class.md) EXE uygulamaları DLL uygulamaları için destek sağlamak için ve Windows, sırasıyla Hizmetleri.  
+ Bu sınıf tarafından kullanılan [CAtlDllModuleT sınıfı](../../atl/reference/catldllmodulet-class.md), [CAtlExeModuleT sınıfı](../../atl/reference/catlexemodulet-class.md), ve [CAtlServiceModuleT sınıfı](../../atl/reference/catlservicemodulet-class.md) uygulamaları EXE, DLL uygulamaları için destek sağlamak ve Windows, sırasıyla Hizmetleri.  
   
- ATL modülleri hakkında daha fazla bilgi için bkz: [ATL modül sınıfları](../../atl/atl-module-classes.md).  
+ ATL modüller hakkında daha fazla bilgi için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md).  
   
  Bu sınıf artık kullanılmıyor değiştirir [CComModule sınıfı](../../atl/reference/ccommodule-class.md) ATL önceki sürümlerinde kullanılan  
   
@@ -93,7 +93,7 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
  **Başlık:** atlbase.h  
   
 ##  <a name="addcommonrgsreplacements"></a>  CAtlModule::AddCommonRGSReplacements  
- ATL kayıt defteri bileşeni (Kaydedici) değiştirme eşlemesine parametreleri eklemek için bu yöntemi geçersiz kılın.  
+ ATL kayıt defteri bileşeni (Kaydedici) değiştirme eşlemeye parametreleri eklemek için bu yöntemi yok sayın.  
   
 ```
 virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw() = 0;
@@ -104,12 +104,12 @@ virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw(
  Ayrılmış.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değiştirilebilir parametreler çalışma zamanı verileri belirtmek bir kayıt şirketinizin istemci izin verin. Bunu yapmak için kayıt şirketi içine komut değiştirilebilir parametreler ile ilişkili değerleri girer değiştirme harita tutar. Kayıt şirketi bu girişler çalışma zamanında yapar.  
+ Değiştirilebilir parametreler, çalışma zamanı verileri belirtmek bir kayıt şirketinin istemci izin verin. Bunu yapmak için kayıt şirketi, betiğiniz içine değiştirilebilir parametreler ile ilişkili değerler girer değiştirme harita tutar. Kayıt şirketi, çalışma zamanında bu girişleri hale getirir.  
   
- Konusuna [kullanarak değiştirilebilir parametreler (kayıt şirketinizin önişlemci)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) daha fazla ayrıntı için.  
+ Konusuna [değiştirilebilir parametreler kullanma (kaydedicinin ön işlemcisi)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) daha fazla ayrıntı için.  
   
 ##  <a name="addtermfunc"></a>  CAtlModule::AddTermFunc  
  Modül sonlandırıldığında çağrılacak yeni bir işlev ekler.  
@@ -120,13 +120,13 @@ HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc, DWORD_PTR dw) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *pFunc*  
- Eklemek için işlev işaretçisi.  
+ İşlev eklemek için işaretçi.  
   
- `dw`  
- Kullanıcı tanımlı veri işlevine geçirildi.  
+ *dw*  
+ Kullanıcı tanımlı veri, işleve geçirilen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ##  <a name="catlmodule"></a>  CAtlModule::CAtlModule  
  Oluşturucu.  
@@ -136,10 +136,10 @@ CAtlModule() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri üyeleri başlatır ve önemli bir bölümü modülün iş parçacığı geçici başlatır.  
+ Veri üyeleri başlatır ve kritik bölüm modülün iş parçacığı etrafında başlatır.  
   
 ##  <a name="dtor"></a>  CAtlModule:: ~ CAtlModule  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CAtlModule() throw();
@@ -156,38 +156,38 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `ppGIT`  
- Genel arabirim tablosu işaretçisine alır gereken değişkeni işaretçi.  
+ *ppGIT*  
+ Genel arabirim tablosu işaretçisi alacak bir değişken işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarılı veya başarısız olduğunda bir hata kodu döndürür. E_POINTER ise döndürülür `ppGIT` NULL değerine eşittir.  
+ Başarılıysa S_OK veya bir hata kodu döndürür. E_poınter ise döndürülür *ppGIT* NULL değerine eşittir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Genel arabirim tablosu nesne yok, oluşturulur ve adresini üye değişkeninde depolanan [CAtlModule::m_pGIT](#m_pgit).  
+ Genel arabirim tablosu nesne yok, oluşturulduktan ve adresini üye değişkeninde depolanıyorsa [CAtlModule::m_pGIT](#m_pgit).  
   
- Hata ayıklama derlemelerinde, bir onaylama hata oluşacaktır `ppGIT` NULL değerine eşit olan veya genel arabirim tablosu işaretçi aldıysanız.  
+ Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *ppGIT* NULL olarak eşit olan veya genel arabirim tablosu işaretçisi elde edilemiyor.  
   
  Bkz: [IGlobalInterfaceTable](http://msdn.microsoft.com/library/windows/desktop/ms678517) genel arabirim tablosu hakkında bilgi için.  
   
 ##  <a name="getlockcount"></a>  CAtlModule::GetLockCount  
- Kilit sayımını döndürür.  
+ Kilit sayacını döndürür.  
   
 ```
 virtual LONG GetLockCount() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kilit sayımını döndürür. Bu değer, hata ayıklama ve tanılama için yararlı olabilir.  
+ Kilit sayacını döndürür. Bu değer, tanılama için kullanışlı ve hata ayıklama olabilir.  
   
 ##  <a name="lock"></a>  CAtlModule::Lock  
- Kilit sayısını artırır.  
+ Kilit sayacını artırır.  
   
 ```
 virtual LONG Lock() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kilit sayısını artırır ve güncelleştirilmiş değeri döndürür. Bu değer, hata ayıklama ve tanılama için yararlı olabilir.  
+ Kilit sayacını artırır ve güncelleştirilmiş değeri döndürür. Bu değer, tanılama için kullanışlı ve hata ayıklama olabilir.  
   
 ##  <a name="m_libid"></a>  CAtlModule::m_libid  
  Geçerli modül GUID içerir.  
@@ -197,7 +197,7 @@ static GUID m_libid;
 ```  
   
 ##  <a name="m_pgit"></a>  CAtlModule::m_pGIT  
- Genel arabirim tablosu işaretçi.  
+ Genel arabirim tablosu işaretçisi.  
   
 ```
 IGlobalInterfaceTable* m_pGIT;
@@ -211,20 +211,20 @@ void Term() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm veri üyeleri serbest bırakır. Bu yöntem yıkıcı tarafından çağrılır.  
+ Tüm veri üyeleri serbest bırakır. Bu yöntem tarafından yok Edicisi çağrılır.  
   
 ##  <a name="unlock"></a>  CAtlModule::Unlock  
- Azaltır kilit sayısı.  
+ Kilit sayısını azaltır.  
   
 ```
 virtual LONG Unlock() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Azaltır kilit sayısı ve güncelleştirilmiş değeri döndürür. Bu değer, hata ayıklama ve tanılama için yararlı olabilir.  
+ Kilit sayısını azaltır ve güncelleştirilmiş değeri döndürür. Bu değer, tanılama için kullanışlı ve hata ayıklama olabilir.  
   
 ##  <a name="updateregistryfromresourced"></a>  CAtlModule::UpdateRegistryFromResourceD  
- Kaydetmek veya kaydı bir nesne için belirtilen bir kaynak içinde yer alan komut dosyasını çalıştırır.  
+ Belirtilen kaynak kaydetmek veya kaydını bir nesne için yer alan komut dosyasını çalıştırır.  
   
 ```
 HRESULT WINAPI UpdateRegistryFromResourceD(
@@ -239,30 +239,30 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszRes`  
+ *lpszRes*  
  Bir kaynak adı.  
   
- `nResID`  
+ *nResID*  
  Bir kaynak kimliği  
   
- `bRegister`  
- **DOĞRU** nesne kayıtlı olması; **FALSE** Aksi takdirde.  
+ *bRegister*  
+ Nesne kayıtlı olması gerekiyorsa TRUE; FALSE Aksi takdirde.  
   
- `pMapEntries`  
- Komut dosyanızın değiştirilebilir parametreler ile ilişkili değerlerini depolama değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde kullanın **NULL** varsayılan değer.  
+ *pMapEntries*  
+ Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde, NULL varsayılan değeri kullanın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından belirtilen kaynak içinde yer alan komut dosyasını çalıştırır *lpszRes veya nResID*. Varsa `bRegister` olan **doğru**, bu yöntem nesne sistem kayıt defterinde kaydeder; Aksi takdirde nesne kayıt defterinden kaldırır.  
+ Tarafından belirtilen kaynak yer alan komut dosyasını çalıştırır *lpszRes veya nResID*. Varsa *bRegister* doğru ise, bu yöntem nesnenin sistem kayıt defterine kaydeder; Aksi takdirde nesneyi kayıt defterinden kaldırır.  
   
- ATL kayıt defteri bileşeni (Kaydedici) statik olarak bağlamak için bkz: [CAtlModule::UpdateRegistryFromResourceS](#updateregistryfromresources).  
+ ATL kayıt defteri bileşeni (Kaydedici) statik olarak bağlamak için bkz [CAtlModule::UpdateRegistryFromResourceS](#updateregistryfromresources).  
   
- Bu yöntemi çağırır [CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper) ve [IRegistrar::ResourceUnregister](iregistrar-class.md#resourceunregister).  
+ Bu yöntemin çağırdığı [CAtlModule::UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper) ve [IRegistrar::ResourceUnregister](iregistrar-class.md#resourceunregister).  
   
 ##  <a name="updateregistryfromresourcedhelper"></a>  CAtlModule::UpdateRegistryFromResourceDHelper  
- Bu yöntem tarafından çağrılır `UpdateRegistryFromResourceD` kayıt defteri güncelleştirme gerçekleştirmek için.  
+ Bu yöntemi çağıran `UpdateRegistryFromResourceD` kayıt defterini güncelleştirme gerçekleştirmek için.  
   
 ```
 inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(  
@@ -272,23 +272,23 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszRes`  
+ *lpszRes*  
  Bir kaynak adı.  
   
- `bRegister`  
- Nesne kayıtlı olup olmadığını belirtir.  
+ *bRegister*  
+ Nesne kayıtlı olup olmadığını gösterir.  
   
- `pMapEntries`  
- Komut dosyanızın değiştirilebilir parametreler ile ilişkili değerlerini depolama değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde kullanın **NULL** varsayılan değer.  
+ *pMapEntries*  
+ Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde, NULL varsayılan değeri kullanın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem uygulamasını sağlar [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced).  
   
 ##  <a name="updateregistryfromresources"></a>  CAtlModule::UpdateRegistryFromResourceS  
- Kaydetmek veya kaydı bir nesne için belirtilen bir kaynak içinde yer alan komut dosyasını çalıştırır. Bu yöntem statik olarak ATL kayıt defteri bileşenine bağlar.  
+ Belirtilen kaynak kaydetmek veya kaydını bir nesne için yer alan komut dosyasını çalıştırır. Bu yöntem, ATL kayıt defteri bileşeni için statik olarak bağlar.  
   
 ```
 HRESULT WINAPI UpdateRegistryFromResourceS(  
@@ -303,26 +303,26 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nResID`  
+ *nResID*  
  Bir kaynak kimliği  
   
- `lpszRes`  
+ *lpszRes*  
  Bir kaynak adı.  
   
- `bRegister`  
- Kaynak betik kayıtlı olup olmadığını belirtir.  
+ *bRegister*  
+ Kaynak betiği kayıtlı olup olmadığını gösterir.  
   
- `pMapEntries`  
- Komut dosyanızın değiştirilebilir parametreler ile ilişkili değerlerini depolama değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde kullanın **NULL** varsayılan değer.  
+ *pMapEntries*  
+ Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde, NULL varsayılan değeri kullanın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Benzer şekilde [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced) dışında `CAtlModule::UpdateRegistryFromResourceS` ATL kayıt defteri bileşeni (Kaydedici) statik bir bağlantı oluşturur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_ATL_MODULE](atl-typedefs.md#_atl_module)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Modül sınıfları](../../atl/atl-module-classes.md)   
  [Kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md)  

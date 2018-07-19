@@ -17,21 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bffa79760e9c597c5a6d736104dc856fc1de16b5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8bf975a9d64508368ac5d61c82fecc07edda28b5
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948015"
 ---
 # <a name="class-c"></a>class (C++)
-`class` Anahtar sözcüğü bir sınıf türü bildirir ya da bir sınıf türünde bir nesne tanımlar.  
+**Sınıfı** anahtar sözcüğü bir sınıf türü bildirir veya sınıf türü bir nesneyi tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      [template-spec]  
-       class [ms-decl-spec] [tag [: base-list ]]  
+[template-spec]  
+class [ms-decl-spec] [tag [: base-list ]]  
 {  
    member-list  
 } [declarators];  
@@ -39,29 +40,29 @@ ms.lasthandoff: 05/03/2018
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `template-spec`  
- İsteğe bağlı şablon belirtimleri. Daha fazla bilgi için bkz [şablonları](templates-cpp.md).  
+ *Şablon belirtimi*  
+ İsteğe bağlı şablon belirtimleri. Daha fazla bilgi için [şablonları](templates-cpp.md).  
   
- `class`  
- `class` Anahtar sözcüğü.  
+ *class*  
+ **Sınıfı** anahtar sözcüğü.  
   
- `ms-decl-spec`  
- İsteğe bağlı depolama sınıfı belirtimi. Daha fazla bilgi için bkz [__declspec](../cpp/declspec.md) anahtar sözcüğü.  
+ *MS-decl-spec*  
+ İsteğe bağlı depolama sınıfı belirtimi. Daha fazla bilgi için [__declspec](../cpp/declspec.md) anahtar sözcüğü.  
   
- `tag`  
- Sınıfı için verilen tür adı. Sınıf kapsamı içinde ayrılmış bir sözcük etiketi olur. Etiket isteğe bağlıdır. Anonim sınıf atlanırsa, tanımlanır. Daha fazla bilgi için bkz: [anonim sınıf türleri](../cpp/anonymous-class-types.md).  
+ *Etiket*  
+ Sınıfı için verilen tür adı. Etiket sınıf kapsamı içinde ayrılmış bir sözcük haline gelir. Etiket isteğe bağlıdır. Atlanırsa, anonim bir sınıf tanımlanır. Daha fazla bilgi için [anonim sınıf türleri](../cpp/anonymous-class-types.md).  
   
- `base-list`  
- Sınıflar ya da bu sınıf, üyelerinden elde yapıları isteğe bağlı listesi. Bkz: [taban sınıfları](../cpp/base-classes.md) daha fazla bilgi için. Her temel sınıf veya yapı adı bir erişim belirteci tarafından gelmesi ([ortak](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md), [korumalı](../cpp/protected-cpp.md)) ve [sanal](../cpp/virtual-cpp.md) anahtar sözcük. Üye erişimi tablosunda görmek [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) daha fazla bilgi için.  
+ *temel-liste*  
+ Sınıflar veya yapılar bu sınıf üyelerini derleyeceği isteğe bağlı bir liste. Bkz: [taban sınıfları](../cpp/base-classes.md) daha fazla bilgi için. Her temel sınıf veya yapı adı bir erişim belirticisi tarafından öncesinde ([genel](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md), [korumalı](../cpp/protected-cpp.md)) ve [sanal](../cpp/virtual-cpp.md) anahtar sözcüğü. Üye erişimi tabloya bakın [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) daha fazla bilgi için.  
   
- `member-list`  
+ *üye listesi*  
  Sınıf üyeleri listesi. Başvurmak [sınıf üyelerine genel bakış](../cpp/class-member-overview.md) daha fazla bilgi için.  
   
- `declarators`  
- Sınıf türü bir veya daha fazla örneğinin adını belirterek bildirimcisi listesi. Bildirimler, başlatıcı listeleri içerebilir, sınıfın tüm veri üyesi `public`. Veri üyeleri yapılarda daha yaygın budur `public` biçimde varsayılan sınıfları. Bkz: [genel bakış, Bildirimciler](../cpp/overview-of-declarators.md) daha fazla bilgi için.  
+ *Bildirimciler*  
+ Sınıf türünün bir veya daha fazla örnek adlarını belirten bildirimci listesi. Bildirimciler, sınıfın tüm veri üyeleri ise Başlatıcı Listeleri içerebilir **genel**. Bu veri üyeleri, yapıları, daha sık olarak **genel** varsayılan olarak kıyasla sınıfları. Bkz: [genel bakış, Bildirimcileri](../cpp/overview-of-declarators.md) daha fazla bilgi için.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıfları hakkında daha fazla bilgi için genel olarak, aşağıdaki konulardan birine bakın:  
+ Sınıflar hakkında daha fazla bilgi için genel olarak, aşağıdaki konulardan birine bakın:  
   
 -   [struct](../cpp/struct-cpp.md)  
   
@@ -73,11 +74,11 @@ ms.lasthandoff: 05/03/2018
   
 -   [__virtual_inheritance](../cpp/inheritance-keywords.md)  
   
- Yönetilen sınıflar ve yapılar hakkında daha fazla bilgi için bkz: [sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)  
+ Yönetilen sınıflar ve yapı birimleri hakkında daha fazla bilgi için bkz: [sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // class.cpp  
 // compile with: /EHsc  
 // Example of the class keyword  
@@ -149,5 +150,5 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

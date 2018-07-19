@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fbe8fd203c3fda75e83aee623254676dacaf1da
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c07a9ce1d315c6738472850b987ccb397feda267
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410586"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941359"
 ---
 # <a name="comptrtdetach"></a>_com_ptr_t::Detach
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Kapsüllenmiş arabirim işaretçisini ayıklar ve döndürür.  
   
@@ -37,9 +37,9 @@ Interface* Detach( ) throw( );
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ayıklar ve kapsüllenmiş arabirim işaretçisi döndürür ve kapsüllenmiş işaretçi depolama birimine temizler **NULL**. Bu, arabirim işaretçisini kapsüllemeden kaldırır. Çağrı size olan **sürüm** döndürüldü arabirim işaretçisi üzerinde.  
+ Ayıklar kapsüllenmiş arabirim işaretçisini döndürür ve ardından kapsüllenmiş işaretçi depolamasını null temizler. Bu, arabirim işaretçisini kapsüllemeden kaldırır. Size kalmıştır çağrılacak olan `Release` döndürülen arabirim işaretçisinde üzerinde.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

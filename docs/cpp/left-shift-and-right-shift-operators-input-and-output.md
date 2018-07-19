@@ -23,30 +23,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d8835d096575f3f7a9d50c7be26fa435e5d6bcd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d6f38b5ec30626f73ab3681f674fb39c5492eb49
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422403"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939737"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
-Bit kaydırma işleçleri olan sağa kaydırma işleci (>>), bitleri taşıyan *shift ifade* sağa ve sola kaydırma işleci (<<), bitleri taşıyan *shift-ifade* sol. <sup>1</sup>  
+Bit düzeyinde kaydırma işleçleri olan sağa kaydırma işleci (>>), bitlerini shift_expression *shift-expression* sağa ve sola kaydırma işleci (<<), bitlerini shift_expression *shift-expression* sol. <sup>1</sup>  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-> *Shift ifade* `<<` *ADDITIVE ifade*  
-> *Shift ifade* `>>` *ADDITIVE ifade*  
+> *Shift-expression* `<<` *additive-expression*  
+> *Shift-expression* `>>` *additive-expression*  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 > [!IMPORTANT]
-> Aşağıdaki açıklamalar ve örnekler Windows X86 ve x64 mimarilerinde geçerlidir. Sola kaydırma ve sağa kaydırma işleçlerinin uygulamaları ARM cihazları için Windows RT'de önemli ölçüde farklılık gösterir. Daha fazla bilgi için "Kaydırma işleçleri" bölümüne bakın [Hello ARM](http://blogs.msdn.com/b/vcblog/archive/2012/10/25/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c.aspx) blog postası.  
+> Aşağıdaki açıklamalar ve örnekler Windows X86 ve x64 mimarilerinde geçerlidir. Sola kaydırma ve sağa kaydırma işleçlerinin uygulamaları ARM cihazları için Windows RT'de önemli ölçüde farklılık gösterir. Daha fazla bilgi için "Kaydırma işleçleri" bölümüne bakın. [Hello ARM](http://blogs.msdn.com/b/vcblog/archive/2012/10/25/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c.aspx) blog gönderisi.  
   
 ## <a name="left-shifts"></a>Sola Kaydırmalar  
- Sola kaydırma işleci bitleri neden *shift ifade* sola tarafından belirtilen konumlar sayısına göre değişebilir *ADDITIVE ifade*. Kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. Sola kaydırma mantıksal bir kaydırmadır (imza biti dahil, sona kaydırılan bitler atılır). Bit düzeyinde kaydırmalar türleri hakkında daha fazla bilgi için bkz: [Bitsel kaydırmalar](http://en.wikipedia.org/wiki/Bitwise_shift).  
+ Sola kaydırma işleci neden olan bitler *shift-expression* sola tarafından belirtilen konum sayısına göre kaydırılmasına *additive-expression*. Kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. Sola kaydırma mantıksal bir kaydırmadır (imza biti dahil, sona kaydırılan bitler atılır). Bit düzeyinde kaydırma türleri hakkında daha fazla bilgi için bkz: [bit düzeyinde kaydırmalar](http://en.wikipedia.org/wiki/Bitwise_shift).  
   
- Aşağıdaki örnek, işaretsiz sayıların kullanıldığı sola kaydırma işleçlerini gösterir. Bu örnek değeri bir bit kümesi olarak temsil eden bitlere ne olduğunu göstermektedir. Daha fazla bilgi için bkz: [bitset sınıfı](../standard-library/bitset-class.md).  
+ Aşağıdaki örnek, işaretsiz sayıların kullanıldığı sola kaydırma işleçlerini gösterir. Bu örnek değeri bir bit kümesi olarak temsil eden bitlere ne olduğunu göstermektedir. Daha fazla bilgi için [bitset sınıfı](../standard-library/bitset-class.md).  
   
 ```cpp  
 #include <iostream>  
@@ -92,7 +92,7 @@ int main() {
 ```  
   
 ## <a name="right-shifts"></a>Sağa Kaydırmalar  
- Sağa kaydırma işleci bit desende neden *shift ifade* sağ tarafından belirtilen konumlar sayısına göre değişebilir *ADDITIVE ifade*. İşaretsiz sayılar için, kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. İşaretli sayılar için, imza biti boşaltılmış bit konumlarını doldurmak için kullanılır. Başka bir deyişle, sayı pozitif ise 0 kullanılır ve sayı negatif ise 1 kullanılır.  
+ Sağa kaydırma işleci bit deseninde neden *shift-expression* sağ tarafından belirtilen konum sayısına göre kaydırılmasına *additive-expression*. İşaretsiz sayılar için, kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. İşaretli sayılar için, imza biti boşaltılmış bit konumlarını doldurmak için kullanılır. Başka bir deyişle, sayı pozitif ise 0 kullanılır ve sayı negatif ise 1 kullanılır.  
   
 > [!IMPORTANT]
 > İmzalı bir negatif sayının sağ kaydırmasının sonucu uygulama bağımlıdır. Visual C++ bitleri boşaltılmış konumları dolduracak şekilde kullansa da, başka bir uygulamanın da bunu yapacağının garantisi yoktur.  
@@ -176,9 +176,9 @@ int main() {
 ```  
   
 ## <a name="shifts-and-promotions"></a>Kaydırmalar ve Yükseltmeler  
- Bir kaydırma işlecinin her iki tarafındaki ifadelerin de tamsayı türünde olması gerekir. Tamsayı yükseltmeleri açıklanan kurallarına göre gerçekleştirilir [standart dönüşümler](standard-conversions.md). Sonuç türü yükseltilen türü ile aynıdır *shift ifade*.  
+ Bir kaydırma işlecinin her iki tarafındaki ifadelerin de tamsayı türünde olması gerekir. İntegral yükseltmeler açıklanan kurallara göre gerçekleştirilir [standart dönüştürmeler](standard-conversions.md). Sonucun türü yükseltilen tür ile aynıdır *shift-expression*.  
   
- Aşağıdaki örnekte, türünde bir değişken `char` için yükseltilmiş bir `int`.  
+ Aşağıdaki örnekte, türünde bir değişken **char** için yükseltilmiş bir **int**.  
   
 ```cpp  
 #include <iostream>  
@@ -198,7 +198,7 @@ int main() {
 ```  
   
 ## <a name="additional-details"></a>Ek Ayrıntılar  
- Bir kaydırma işleminin sonucu tanımsız ise *ADDITIVE ifade* negatif veya *ADDITIVE ifade* büyük veya eşit bit sayısına (yükseltilmiş)  *Shift ifade*. Hiçbir kaydırma işlemi yapılır *ADDITIVE ifade* 0'dır.  
+ Bir kaydırma işleminin sonucu tanımsızdır *additive-expression* negatif veya *additive-expression* büyüktür veya eşittir bit sayısı kadar additive  *Shift-expression*. Hiçbir kaydırma işlemi gerçekleştirilmez *additive-expression* 0'dır.  
   
 ```cpp  
 #include <iostream>  
@@ -224,11 +224,11 @@ int main() {
 ```  
   
 ## <a name="footnotes"></a>Dipnotlar  
- 1 aşağıdaki belirtiminde C ++ 11 ISO (INCITS/ISO/IEC 14882-2011[2012]), 5.8.2 ve 5.8.3 bölümlerine. kaydırma işleçleri açıklamasıdır.  
+ 1 C ++ 11 ISO belirtimindeki (INCITS/ISO/IEC 14882-2011[2012]), bölüm 5.8.2 ve 5.8.3.kaydırma. kaydırma işleçlerinin açıklaması aşağıdadır  
   
- Değeri **E1 << E2** olan **E1** sol gölgeye **E2** bit konumları; vacated BITS sıfırla doldurulur. Varsa **E1** imzasız bir türe sahip sonuç değeri **E1 × 2**<sup>**E2**</sup>, modül tane gösterilebilir içindeki en büyük değerden daha düşük Sonuç türü. Aksi halde, eğer **E1** imzalı türü ve negatif olmayan değer vardır ve **E1 × 2**<sup>**E2** </sup> karşılık gelen imzasız türünde gösterilebilir değil Sonuç türü, ardından sonuç türüne dönüştürülüp bu değer, sonuçta elde edilen değerdir; Aksi takdirde davranışı tanımlanmamıştır.  
+ Değerini `E1 << E2` olduğu `E1` sola kaydırılacak `E2` bit konumlarıdır; Boşaltılan bitler sıfır dolguludur. Varsa `E1` bir işaretsiz türe sahipse sonuç değeri **E1 × 2**<sup>**E2**</sup>, indirgenmiş değerden en fazla sonuç türü içinde gösterilebilir. Aksi takdirde `E1` işaretli bir türe ve negatif olmayan değer vardır ve **E1 × 2**<sup>**E2** </sup> sonuç türü, karşılık gelen işaretsiz türünde temsil edilebilir ise Sonuç türüne dönüştürülür, bu değer sonuç değeri olan; Aksi durumda davranış tanımsız olur.  
   
- Değeri **E1 >> E2** olan **E1** sağ gölgeye **E2** bit konumları. Varsa **E1** imzasız türüne sahip veya **E1** işaretli bir türe ve negatif olmayan bir değer varsa, sayının oranı'nın ayrılmaz bir parçası sonuç değeri **E1/2** <sup> **E2**</sup>. Varsa **E1** işaretli bir türe ve negatif bir değere sahip, sonuçta elde edilen uygulama tanımlı değeridir.  
+ Değerini `E1 >> E2` olduğu `E1` sağa kaydırılacak `E2` bit konumlarıdır. Varsa `E1` bir işaretsiz türe sahipse veya `E1` işaretli bir türe ve negatif olmayan değere sahip, sonucun değeri sayının tamsayı kısmını **E1/2**<sup>**E2** </sup>. Varsa `E1` işaretli bir türe ve negatif bir değere sahipse, sonuç değeri uygulama tanımlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   

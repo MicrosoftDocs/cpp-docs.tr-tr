@@ -1,5 +1,5 @@
 ---
-title: WINDOWPOS Structure1 | Microsoft Docs
+title: WINDOWPOS yapısı1 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4abd236998f37f0d719f41827d05a17fde56fde
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: db51e8f9924d69406989b3a9ac12b45f0e55e870
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379300"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885968"
 ---
-# <a name="windowpos-structure1"></a>WINDOWPOS Structure1
-`WINDOWPOS` Yapısı boyutunu ve konumunu penceresinin hakkında bilgiler içerir.  
+# <a name="windowpos-structure1"></a>WINDOWPOS yapısı1
+`WINDOWPOS` Yapısı boyutunu ve konumunu pencere hakkında bilgiler içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,53 +45,53 @@ typedef struct tagWINDOWPOS { /* wp */
  Pencerenin tanımlar.  
   
  *hwndInsertAfter*  
- Bu pencere yerleştirildiği penceresi tanımlar.  
+ Bu pencere yerleştirildiği penceresini tanımlar.  
   
  *x*  
  Pencerenin sol kenarı konumunu belirtir.  
   
  *Y*  
- Pencerenin sağ köşesine konumunu belirtir.  
+ Pencerenin sağ kenarı konumunu belirtir.  
   
- `cx`  
+ *CX*  
  Pencere genişliğini piksel cinsinden belirtir.  
   
- `cy`  
+ *CY*  
  Pencere yüksekliğini piksel cinsinden belirtir.  
   
- `flags`  
- Pencere konumlandırma seçeneklerini belirtir. Bu üye aşağıdaki değerlerden biri olabilir:  
+ *bayrakları*  
+ Pencere yerleştirme seçeneklerini belirtir. Bu üye, aşağıdaki değerlerden biri olabilir:  
   
-- **SWP_DRAWFRAME** (pencere sınıfı açıklamasında tanımlanır) bir çerçeve pencere etrafında çizer. Pencerenin alan bir `WM_NCCALCSIZE` ileti.  
+- SWP_DRAWFRAME (pencere sınıfı açıklamasında tanımlanır) çerçeve penceresi etrafında bir çizer. Pencerenin WM_NCCALCSIZE ileti alır.  
   
-- **SWP_FRAMECHANGED** gönderir bir `WM_NCCALCSIZE` pencere boyutunu değil değiştiriliyor olsa bile penceresine iletisi. Bu bayrak belirtilmezse, `WM_NCCALCSIZE` yalnızca pencere boyutunu değiştirilirken gönderilir.  
+- SWP_FRAMECHANGED gönderir bir WM_NCCALCSIZE iletisi penceresine bile pencerenin boyutu değil değiştiriliyor. Bu bayrak belirtilmezse, yalnızca pencerenin boyutu değiştirilirken WM_NCCALCSIZE gönderilir.  
   
-- **SWP_HIDEWINDOW** penceresini gizler.  
+- SWP_HIDEWINDOW penceresini gizler.  
   
-- `SWP_NOACTIVATE` Pencerenin etkinleştirmez.  
+- SWP_NOACTIVATE mu penceresini etkinleştir değil.  
   
-- **SWP_NOCOPYBITS** istemci alanını tüm içeriğini atar. Bu bayrak belirtilmezse, istemci alanını geçerli içeriğini kaydedilir ve pencere boyutu ya da yeniden konumlandırılır sonra istemci alanına kopyalanır.  
+- Tüm istemci alanını içeriğini SWP_NOCOPYBITS atar. Bu bayrak belirtilmezse istemci alanını geçerli içeriğini kaydedilir ve pencere boyutu veya yeniden konumlandırıldığında sonra istemci alanına kopyalanır.  
   
-- `SWP_NOMOVE` Geçerli konumu korur (yoksayar **x** ve **y** üyeleri).  
+- Geçerli konumun SWP_NOMOVE korunur (yoksayar `x` ve `y` üyeleri).  
   
-- **SWP_NOOWNERZORDER** sahibi pencerenin sıralamasında Z-değiştirmez.  
+- SWP_NOOWNERZORDER mu Z düzeninde sahibi pencerenin konumunu değiştir değil.  
   
-- `SWP_NOSIZE` Geçerli boyut korur (yoksayar **cx** ve **cy** üyeleri).  
+- Geçerli boyut SWP_NOSIZE korunur (yoksayar `cx` ve `cy` üyeleri).  
   
-- **SWP_NOREDRAW** değişiklikleri çizmez.  
+- SWP_NOREDRAW mu değişiklikleri Çiz değil.  
   
-- **SWP_NOREPOSITION** aynı **SWP_NOOWNERZORDER**.  
+- SWP_NOREPOSITION SWP_NOOWNERZORDER aynıdır.  
   
-- **SWP_NOSENDCHANGING** gelen alma penceresinin engeller `WM_WINDOWPOSCHANGING` ileti.  
+- SWP_NOSENDCHANGING penceresi WM_WINDOWPOSCHANGING iletiyi almasını engeller.  
   
-- `SWP_NOZORDER` Geçerli sıralama korur (yoksayar **hwndInsertAfter** üyesi).  
+- Geçerli sıralama SWP_NOZORDER korunur (yoksayar `hwndInsertAfter` üyesi).  
   
-- **SWP_SHOWWINDOW** pencerede görüntülenir.  
+- SWP_SHOWWINDOW penceresinde görüntülenir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winuser.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CWnd::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging)
 

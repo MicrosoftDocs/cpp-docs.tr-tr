@@ -17,16 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b143def4d758307c6ce6737281bdca1097aaa8c5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e81b81509877ff53b613af80638b2386ed0cb0b2
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948225"
 ---
 # <a name="uuid-c"></a>uuid (C++)
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bir sınıf veya bildirilen veya tanımlı yapısı (tam COM nesne tanımları yalnızca) ile bir GUID derleyici iliştirir `uuid` özniteliği.  
+ Derleyici bir sınıf veya bildirildi veya tanımlandı yapısı (tam COM nesne tanımları yalnızca) ile bir GUID ekler **UUID** özniteliği.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,18 +37,18 @@ __declspec( uuid("ComObjectGUID") ) declarator
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `uuid` Özniteliği bağımsız değişkeni olarak bir dize alır. Bu dize bir GUID ile veya olmadan normal kayıt biçiminde adları **{}** sınırlayıcısı. Örneğin:  
+ **UUID** öznitelik bağımsız değişkeni olarak bir dize alır. Bu dize olan veya olmayan normal kayıt biçiminde bir GUID adları **{}** sınırlayıcı. Örneğin:  
   
-```  
+```cpp 
 struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) IUnknown;  
 struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;  
 ```  
   
- Bu öznitelik bir yeniden bildirimi uygulanabilir. Bu sistem başlıklarının arabirimleri gibi tanımlarınızı sağlar **IUnknown**ve bazı diğer üstbilgisinde yeniden bildirimi (gibi \<comdef.h >) GUID sağlamak için.  
+ Bu öznitelik, bir yeniden bildirimi içinde uygulanabilir. Bu arabirimlerin tanımları gibi sağlamak sistem üstbilgileri sağlar `IUnknown`ve başka bir üst bilgisindeki yeniden bildirimi (gibi \<comdef.h >) GUID sağlamak için.  
   
  Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) GUID bağlı kullanıcı tanımlı bir tür sabiti almak için uygulanabilir.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__declspec](../cpp/declspec.md)   

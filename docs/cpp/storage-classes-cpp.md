@@ -19,22 +19,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a56d456564dc171292e8a58b6cb486ce2dfbaf31
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f89651ba671bf66d7d27edb047db6d1b6b15ee06
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32424595"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940930"
 ---
 # <a name="storage-classes-c"></a>Depolama sınıfları (C++)  
   
-A *depolama sınıfı* C++ bağlamında değişken bildirimleri olduğu nesnelerin ömrü, bağlantı ve bellek konumu yöneten bir tür belirteci. Belirli bir nesne yalnızca bir depolama sınıfı olabilir. Bir blok içinde tanımlanan değişkenler kullanarak aksi belirtilmediği sürece otomatik depolama sahip `extern`, `static`, veya `thread_local` tanımlayıcıları. Otomatik nesneleri ve değişkenleri bağlantısı vardır; Bunlar, kod bloğunun dışında görünür değildir.  
+A *depolama sınıfı* C++ bağlamında değişken bildirimleri olan nesnelerin ömrü, bağlantı ve bellek konumu yöneten bir tür tanımlayıcısı. Belirli bir nesne yalnızca bir depolama sınıfına sahip olabilir. Bir blok içinde tanımlanan değişkenleri kullanarak aksi belirtilmediği sürece otomatik depolama sahip **extern**, **statik**, veya `thread_local` tanımlayıcıları. Otomatik nesnelerin ve değişkenlerin hiçbir bağlantısı yoktur; Bunlar kod bloğu dışında görünür değildir.  
   
 **Notlar**  
   
-1.  [Değişebilir](../cpp/mutable-data-members-cpp.md) anahtar sözcük depolama sınıfı tanımlayıcısı kabul. Ancak, sadece bir sınıf tanımının üye listesinde kullanılabilir.  
+1.  [Değişebilir](../cpp/mutable-data-members-cpp.md) anahtar sözcüğü bir depolama sınıfı tanımlayıcısı olarak değerlendirilebilir. Ancak, sadece bir sınıf tanımının üye listesinde kullanılabilir.  
   
-2.  **Visual C++ 2010 ve sonraki sürümleri:** `auto` sözcüktür artık C++ depolama sınıfı tanımlayıcısı ve `register` anahtar sözcüğü kullanım dışıdır. **Visual Studio 2017 15.7 ve sonraki sürümleri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): `register` anahtar sözcüğü C++ dili kaldırılır.
+2.  **Visual C++ 2010 ve sonraki sürümlerine:** **otomatik** anahtar sözcüğü, artık bir C++ depolama sınıfı tanımlayıcısı ve **kaydetme** anahtar sözcüğü kullanım dışı bırakılmıştır. **Visual Studio 2017 sürüm 15.7 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü C++ dili kaldırılır.
 
 
 ```cpp
@@ -49,21 +49,21 @@ A *depolama sınıfı* C++ bağlamında değişken bildirimleri olduğu nesneler
 
 ## <a name="static"></a> Statik
 
-`static` Anahtar sözcüğü, değişkenler ve genel kapsam, ad alanı kapsamı ve sınıf kapsamı işlevleri bildirmek için kullanılabilir. Statik değişkenler ayrıca yerel kapsamda bildirilebilir.
+**Statik** anahtar sözcüğü, değişkenlerin ve işlevlerin genel kapsam, ad alanı kapsamında ve sınıf kapsamı bildirmek için kullanılabilir. Statik değişkenler yerel kapsamda bildirilmiş.
 
-Statik süresi program başlar ve program sona erdiğinde deallocated nesne veya değişken ayrılan olduğunu anlamına gelir. Dış bağlantı değişkeninin adı değişkeni olarak bildirilen dosyası dışında görünür olduğunu gösterir. Buna karşılık, iç bağlantı adı değişkeni olarak bildirilen dosyası dışında görünür olmadığı anlamına gelir. Varsayılan olarak, bir nesneye veya genel ad alanında tanımlı değişkeni statik süresi ve dış bağlantı vardır. `static` Anahtar sözcüğünü aşağıdaki durumlarda kullanılabilir.
+Statik süre, program başladığında ve program sona erdiğinde serbest bırakılmış bir nesne veya değişkenin ayrıldığı olduğunu anlamına gelir. Dış bağlantı, değişkenin adını değişkenin bildirildiği dosyanın dışında görünür olduğunu gösterir. Buna karşılık, iç bağlantı adı değişkenin bildirildiği dosyanın dışında görünür olmadığı anlamına gelir. Varsayılan olarak, bir nesne veya değişkenin genel ad alanında tanımlanan statik süre ve harici bağlantı vardır. **Statik** anahtar sözcüğü aşağıdaki durumlarda kullanılabilir.
 
-1. Ne zaman bildirdiğiniz değişken ya da dosya kapsamında işlevi (genel ve/veya ad alanı kapsam), `static` anahtar sözcüğü, değişken veya işlev iç bağlantı olduğunu belirtir. Bir değişken bildirirken değişkeni statik süresi olan ve başka bir değer belirtmediğiniz sürece derleyici da 0 olarak başlatır.
+1. Bir değişken veya işlev dosya kapsamında bildirdiğinizde (genel ve/veya ad alanı kapsamında), **statik** anahtar sözcüğü değişkenin veya işlevin iç bağlantısı olduğunu belirtir. Bir değişken bildirdiğinizde değişkenin süresi statiktir ve başka bir değer belirtmediğiniz sürece derleyici onu 0 olarak başlatır.
 
-1. Bir işlevdeki bir değişken bildirirken `static` anahtar sözcüğü belirtir değişkeni durumuna bu işlev çağrıları arasında korur.
+1. Bir işlev içinde bir değişken bildirdiğinizde **statik** anahtar sözcüğü değişkenin bu işleve yapılan çağrılar arasında durumunu korur belirtir.
 
-1. Sınıf bildirimindeki veri üyesi bildirirken `static` anahtar sözcüğü belirtir üye bir kopyasını sınıfın tüm örnekleri tarafından paylaşılır. Statik veri üyesi dosya kapsamda tanımlanması gerekir. Olarak bildirin bir tam sayı veri üyesi `const static` bir başlatıcı olabilir.
+1. Bir sınıf bildiriminde veri üyesi bildirdiğinizde **statik** anahtar sözcüğü üyenin bir kopyasının tüm sınıf örnekleri tarafından paylaşıldığını belirtir. Statik veri üyesinin dosya kapsamında tanımlanmış olması gerekir. Olarak bildirdiğiniz bir tam sayı veri üyesinin **const static** bir Başlatıcısı olabilir.
 
-1. Sınıf bildirimindeki üye işlevi bildirirken `static` anahtar sözcüğü belirtir işlevi sınıfın tüm örnekleri tarafından paylaşılır. Statik üye işlevi işlevi örtülü olmadığından örnek üyesine erişemiyor `this` işaretçi. Örnek üyesine erişmek için bir örnek işaretçi veya başvurusu olan bir parametreyi işleviyle bildirin.
+1. Bir sınıf bildiriminde üye işlevi bildirdiğinizde **statik** anahtar sözcüğü işlevin tüm sınıf örnekleri tarafından paylaşıldığını belirtir. Örtük işlev sahip olmadığı için bir statik üye işlevi bir örnek üyesi erişemiyor **bu** işaretçi. Bir örnek üyesine erişmek için işlevi bir örnek işaretçisi veya başvurusu olan bir parametreyle bildirin.
 
-1. Statik olarak bir birleşim üyeleri bildiremezsiniz. Ancak, genel olarak bildirilen anonim UNION açıkça bildirilmelidir `static`.
+1. Statik olarak union üyelerinin bildirimini yapamazsınız. Ancak, bir genel olarak bildirilen anonim birleşim açıkça bildirilmelidir **statik**.
 
-Bu örnek, bir değişkeni nasıl bildirilen gösterir `static` durumuna bu işlev çağrıları arasındaki bir işlevde korur.
+Bu örnek nasıl bildirilen bir değişken gösterir **statik** bir işlevde bu işleve yapılan çağrılar arasında durumunu saklar.
 
 ```cpp
 // static1.cpp
@@ -92,7 +92,7 @@ nStatic is 6
 nStatic is 10
 ```
 
-Bu örnek kullanımı gösterilmiştir `static` bir sınıf.
+Bu örnek, kullanımını gösterir. **statik** sınıfında.
 
 ```cpp
 // static2.cpp
@@ -138,7 +138,7 @@ int main() {
 3
 ```
 
-Bu örnek, bildirilen yerel değişken gösterir `static` bir üye işlev. Statik değişken bütün program kullanılabilir; türünün tüm örneklerini statik değişken aynı kopyasını paylaşır.
+Bu örnek, bildirilmiş bir yerel değişkeni gösterir **statik** bir üye işlev. Statik değişken tüm program için kullanılabilir; türün tüm örnekleri statik değişkenin aynı kopyasını paylaşır.
 
 ```cpp
 // static3.cpp
@@ -170,17 +170,17 @@ var != value
 var == value
 ```
 
-C ++ 11 başlayarak, bir statik yerel değişken başlatma iş parçacığı açısından güvenli olması sağlanır. Bu özellik bazen adlı *Sihirli istatistikleri*. Ancak, birden çok iş parçacıklı uygulamada tüm sonraki atamaları eşitlenmelidir. İş parçacığı statik başlatma özelliğini kullanarak devre dışı bırakılabilir [/Zc:threadSafeInit-](../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) bayrağı CRT üzerinde bir bağımlılık almaktan kaçının.
+C ++ 11'de başlayarak, statik bir yerel değişken başlatma iş parçacığı açısından güvenli olması sağlanır. Bu özellik adlandırılır *Sihirli statikler*. Ancak, çok iş parçacıklı bir uygulamada tüm sonraki atamalarını eşitlenmelidir. İş parçacığı güvenli statik başlatma özelliğini kullanarak devre dışı bırakılabilir [/ZC: threadsafeınit](../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) CRT'ye bağımlılık önlemek için bayrak.
 
 ## <a name="extern"></a> extern
 
-Nesneleri ve olarak bildirilen değişkenlerin `extern` başka bir çeviri birimindeki veya dış bağlantı olarak kapsayan bir kapsam içinde tanımlanan bir nesne bildirme.
+Nesneler ve değişkenler olarak bildirilen **extern** dış bağlantıya sahip olarak sarmalayan bir kapsamda ya da başka bir çeviri biriminde tanımlanan nesne bildirme.
 
-Bildirimi `const` değişkenlerle `extern` depolama sınıfı dış bağlantı sağlamak için değişken zorlar. Bir başlatma bir `extern const` değişkeni tanımlama çeviri biriminde izin verilir. Çeviri birimleri tanımlama çeviri birim dışında başlatmaları tanımsız sonuçlar. Daha fazla bilgi için bkz: [bağlantıyı belirtmek için extern kullanma](../cpp/using-extern-to-specify-linkage.md)
+Deklarace **const** değişkenlerle **extern** depolama sınıfı değişkeni dış bağlantıya sahip olmasına zorlar. Bir başlatma bir **extern const** değişken tanımlayan bir çeviri birimindeki izin verilir. Çeviri birimleri tanımlama çeviri birimi dışında başlatmalarının tanımsız sonuçlar. Daha fazla bilgi için [belirtmek için extern kullanma](../cpp/using-extern-to-specify-linkage.md)
 
-[/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) derleyici seçeneği neden uygulamak derleyici [dış bağlantı]() kullanarak bildirilen değişkenlerin için **extern constexpr**. Visual Studio ve varsayılan olarak eski sürümlerinde veya **/Zc:externConstexpr-** belirtilirse, Visual Studio geçerlidir iç bağlantı **constexpr** olsa bile değişkenleri **extern** anahtar sözcüğü kullanılır. **/Zc:externConstexpr** Visual Studio 2017 güncelleştirme 15,6 başlangıç seçeneği kullanılabilir. ve varsayılan olarak kapalıdır. /Permissive-option /Zc:externConstexpr etkinleştirmez.
+[/ZC: externconstexpr](../build/reference/zc-externconstexpr.md) derleyici seçeneği, derleyicinin uygulamak neden [dış bağlantısı]() kullanılarak bildirilen değişkenlere `extern constexpr`. Varsayılan olarak ve Visual Studio'nun önceki sürümlerinde veya **/Zc:externConstexpr-** belirtilirse, Visual Studio iç bağlantı için geçerli **constexpr** değişkenleri bile **extern** anahtar sözcüğü kullanılır. **/ZC: externconstexpr** Visual Studio 2017 güncelleştirme 15.6 sürümünde başlangıç seçeneği kullanılabilir. ve varsayılan olarak kapalıdır. / ZC: externconstexpr /permissive-option etkinleştirmez.
 
-Aşağıdaki kod iki gösterir `extern` bildirimleri, `DefinedElsewhere` (hangi başvurduğu farklı çeviri biriminde tanımlanan bir ad) ve `DefinedHere` (hangi başvurduğu kapsayan bir kapsamda tanımlanan bir ad):
+Aşağıdaki kod iki gösterir **extern** bildirimleri, `DefinedElsewhere` (hangi başvurduğu farklı çeviri biriminde tanımlanan bir ad) ve `DefinedHere` (hangi başvurduğu bir kapsayan kapsam içinde tanımlanan bir ad):
 
 ```cpp
 // external.cpp
@@ -197,7 +197,7 @@ int main() {
 
 ## <a name="thread_local"></a> thread_local (C ++ 11)
 
-İle bildirilen bir değişken `thread_local` belirticisi üzerinde onu oluşturulduğu yalnızca iş parçacığı üzerinde erişilebilir. İş parçacığı oluşturduğunuzda ve iş parçacığı bozulduğunda yok değişkeni oluşturulur. Her iş parçacığı değişkeni kopyasını vardır. Windows, `thread_local` için Microsoft'a özgü işlevsel olarak eşdeğerdir [__declspec (iş parçacığı)](../cpp/thread.md) özniteliği.
+Bildirilen bir değişken `thread_local` belirticisi üzerinde oluşturulduğu yalnızca iş parçacığı üzerinde erişilebilir. İş parçacığı oluşturulur ve iş parçacığı kaldırıldığında yok değişkeni oluşturulur. Her iş parçacığı, kendi değişken kopyasına sahip olur. Windows, şirket `thread_local` için Microsoft'a özgü işlevsel olarak eşdeğerdir [__declspec (iş parçacığı)](../cpp/thread.md) özniteliği.
 
 ```cpp
 thread_local float f = 42.0; // Global namespace. Not implicitly static.
@@ -218,21 +218,21 @@ void DoSomething()
 
 Hakkında dikkat edilecek noktalar `thread_local` tanımlayıcısı:
 
-- DLL'leri dinamik olarak başlatılan iş parçacığı yerel değişkenleri tüm çağıran iş parçacığı üzerinde düzgün başlatılmamış olabilir. Daha fazla bilgi için bkz: [iş parçacığı](thread.md).
+- Dinamik olarak başlatılmış thread-local değişkenleri DLL'lerdeki tüm çağıran iş parçacığı üzerinde doğru şekilde başlatılmamış olabilir. Daha fazla bilgi için [iş parçacığı](thread.md).
 
--  `thread_local` Tanımlayıcısı ile birleştirilebilir `static` veya `extern`.
+-  `thread_local` Tanımlayıcısı ile birleştirilebilir **statik** veya **extern**.
 
--  Uygulayabileceğiniz `thread_local` yalnızca veri bildirimler ve tanımlar; için `thread_local` işlevi bildirimlerinde veya tanımlarında kullanılamaz.
+-  Uygulayabileceğiniz `thread_local` sadece veri bildirimlerine ve tanımlarına; için `thread_local` İşlev bildirimlerinde veya tanımlarında kullanılamaz.
 
--  Belirleyebileceğiniz `thread_local` yalnızca üzerinde veri öğeleri statik depolama süresi ile. Bu genel veri nesnelerini içerir (her ikisi de `static` ve `extern`), yerel statik nesneler ve sınıflar statik veri üyeleri. Herhangi bir yerel değişken bildirilen `thread_local` başka bir depolama sınıf sağladıysanız; örtük olarak statik diğer bir deyişle, blok kapsamında `thread_local` eşdeğerdir `thread_local static`. 
+-  Belirtebileceğiniz `thread_local` yalnızca statik depolama süresine sahip veri öğeleri üzerinde. Bu, genel veri nesneleri içerir (her ikisi de **statik** ve **extern**), yerel statik nesneler ve sınıfların statik veri üyeleri. Herhangi bir yerel değişken bildirildi `thread_local` başka bir depolama sınıfı sağlanır; örtük olarak statiktir blok kapsamındaki diğer bir deyişle, `thread_local` eşdeğerdir `thread_local static`. 
 
--  Belirtmeniz gerekir `thread_local` bildirimi ve bir iş parçacığı yerel nesnesinin tanımı için bildirim ve tanımı ortaya olup olmadığını aynı dosya veya ayrı dosyalar.
+-  Belirtmelisiniz `thread_local` bildirimi ve bir iş parçacığı yerel nesnesinin tanımı için bildirim ve tanım ortaya aynı dosya veya dosyaları ayırmak.
 
-Windows, `thread_local` işlevsel olarak eşdeğerdir [__declspec(thread)](../cpp/thread.md) dışında `__declspec(thread)` bir tür tanımı için uygulanabilir ve C kodu geçerli değil. Mümkün olduğunda kullanın `thread_local` C++ standart bir parçası olduğundan ve bu nedenle daha taşınabilir.
+Windows, şirket `thread_local` işlevsel olarak eşdeğerdir [gt;__declspec(thread)](../cpp/thread.md) dışında `__declspec(thread)` bir tür tanımı için uygulanabilir ve C kodu geçerli değil. Mümkün olduğunda kullanın `thread_local` C++ standardının bir parçası olduğundan ve bu nedenle daha taşınabilir.
 
-##  <a name="register"></a>  Kaydetme
+##  <a name="register"></a>  Kaydolun
 
-**Visual Studio 2017 15.3 ve sonraki sürümleri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): `register` sözcüktür artık desteklenen depolama sınıfı. Anahtar sözcüğü standart gelecekte kullanım için ayrılmış olarak kalır. 
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü, artık desteklenen bir depolama sınıfı. Anahtar sözcüğü hala standart gelecekte kullanım için ayrılmıştır. 
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
@@ -240,9 +240,9 @@ Windows, `thread_local` işlevsel olarak eşdeğerdir [__declspec(thread)](../cp
 
 ## <a name="example-automatic-vs-static-initialization"></a>Örnek: otomatik statik başlatma karşılaştırması
 
-Denetim akışı tanımına eriştiği her zaman bir yerel otomatik nesnesi veya değişken başlatılır. Bir yerel statik nesne veya değişken tanımını denetim akışını ulaştığında ilk kez başlatıldı.
+Denetim akışı tanımı ulaştığında her zaman yerel otomatik nesne veya değişken başlatılır. Yerel statik nesne veya değişken tanımını denetim akışını ulaştığında ilk kez başlatıldı.
 
-Başlatma ve nesneleri yok etme kaydeder ve üç nesneleri tanımlayan bir sınıf tanımlar, aşağıdaki örnekte, göz önünde bulundurun `I1`, `I2`, ve `I3`:
+Oturum Başlatma ve nesnelerin yok edilmesi ve ardından üç nesne tanımlayan bir sınıf tanımlar, aşağıdaki örneği göz önünde bulundurun `I1`, `I2`, ve `I3`:
 
 ```cpp
 // initialization_of_objects.cpp
@@ -311,15 +311,15 @@ Destroying: Auto I1
 Destroying: Static I3
 ```
 
-Bu örnek nasıl ve ne zaman gösterir nesneleri `I1`, `I2`, ve `I3` başlatılır ve bunların ne zaman kaybolur.
+Bu örnek nasıl ve ne zaman gösterir nesneleri `I1`, `I2`, ve `I3` başlatılır ve bunların ne zaman edilir.
 
-Program hakkında dikkat edilecek birkaç nokta vardır:
+Program hakkında dikkat edilecek bazı noktalar vardır:
 
-- İlk olarak, `I1` ve `I2` denetim akışı blok çıktığında otomatik olarak yok içinde bunlar tanımlanır.
+- İlk olarak, `I1` ve `I2` denetim akışını blok çıktığında otomatik olarak yok, tanımlandıkları içinde.
 
-- İkinci olarak, C++'da, nesneler veya değişkenleri bir bloğun başlangıcında bildirmek ise gerekli değildir. Ayrıca, bu nesneler yalnızca denetim akışını tanımlarını ulaştığında başlatılır. (`I2` ve `I3` tür tanımları örnekleridir.) Tam olarak başlatılmadı çıkış gösterir.
+- İkinci olarak, C++'da, nesneler veya bir blok başına değişkenleri bildirmek ise gerekli değildir. Ayrıca, denetim akışı tanımlarını ulaştığında bu nesneler başlatılır. (`I2` ve `I3` tür tanımlarını bir örnektir.) Tam olarak başlatılmış çıkış gösterir.
 
-- Son olarak, statik yerel değişkenler gibi `I3` program süresince değerlerini korur, ancak programın sonlandırır olarak yok.
+- Son olarak, statik yerel değişkenler gibi `I3` program süresince değerlerini korur, ancak program sona erer gibi yok edilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

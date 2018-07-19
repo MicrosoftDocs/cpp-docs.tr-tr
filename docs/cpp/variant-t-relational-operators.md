@@ -25,49 +25,46 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 663d8e24af8362de8ea809bc37a68c33d3278bc7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 08d7f5c7c244d242c3d1dd7af7d2c2af017bcc78
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948105"
 ---
 # <a name="variantt-relational-operators"></a>_variant_t İlişkisel İşleçleri
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İki karşılaştırmak `_variant_t` nesneleri eşitlik veya eşitsizlik.  
+ Karşılaştırabilirsiniz `_variant_t` eşitlik ve eşitsizlik için nesneleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      bool operator==(  
-   const VARIANT& varSrc   
-) const;  
 bool operator==(  
-   const VARIANT* pSrc   
-) const;  
+   const VARIANT& varSrc) const;  
+bool operator==(  
+   const VARIANT* pSrc) const;  
 bool operator!=(  
-   const VARIANT& varSrc   
-) const;  
+   const VARIANT& varSrc) const;  
 bool operator!=(  
-   const VARIANT* pSrc   
-) const;  
+   const VARIANT* pSrc) const;  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *varSrc*  
- A **değişken** ile Karşılaştırılacak `_variant_t` nesnesi.  
+ A `VARIANT` ile Karşılaştırılacak `_variant_t` nesne.  
   
- `pSrc`  
- İşaretçi **değişken** ile Karşılaştırılacak `_variant_t` nesnesi.  
+ *pSrc*  
+ İşaretçi `VARIANT` ile Karşılaştırılacak `_variant_t` nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** karşılaştırma tutuyorsa **false** değilse.  
+ Döndürür **true** karşılaştırma tutuyorsa **false** Aksi takdirde.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Karşılaştıran bir `_variant_t` nesnesi ile bir **değişken**, eşitlik veya eşitsizlik için sınama.  
+ Karşılaştıran bir `_variant_t` nesnesi ile bir `VARIANT`, eşitlik ve eşitsizlik için test etme.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

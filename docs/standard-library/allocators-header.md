@@ -1,5 +1,5 @@
 ---
-title: '&lt;allocators&gt; | Microsoft Docs'
+title: '&lt;Ayırıcılar&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f578ab4ea06db68b23a03374bcd787dc03715ab5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1a1d2d710631c01a39b910e7d9b15f14179b3125
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847318"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965749"
 ---
-# <a name="ltallocatorsgt"></a>&lt;allocators&gt;
+# <a name="ltallocatorsgt"></a>&lt;Ayırıcılar&gt;
 
-Ayırın ve bellek blokları düğümünü tabanlı kapsayıcıları için boş Yardım çeşitli şablonlar tanımlar.
+Düğüm tabanlı kapsayıcılar için bellek bloğu ayırıp yardımcı çeşitli şablonları tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,23 +35,23 @@ Ayırın ve bellek blokları düğümünü tabanlı kapsayıcıları için boş 
 
 ## <a name="remarks"></a>Açıklamalar
 
-\<Allocators > Üstbilgi düğümü tabanlı kapsayıcıları için bellek yönetimi stratejilerini seçmek için kullanılan altı ayırıcısı şablonları sağlar. Bu şablonlar ile kullanım için farklı çoklu iş parçacığı kullanımı düzenleri (hiçbiri dahil) çeşitli bellek yönetimi stratejisi uyarlamak için birkaç farklı eşitleme filtreleri de sağlar. Bellek yönetimi stratejisi bilinen bellek kullanım desenlerini ve eşitleme gereksinimleri, belirli bir uygulamanın eşleşen genellikle hızını artırmak veya bir uygulamanın genel bellek gereksinimlerini azaltın.
+\<Ayırıcılar > Üstbilgi düğüm tabanlı kapsayıcılar için bellek yönetimi stratejileri seçmek için kullanılan altı ayırıcı şablonları sağlar. Bu şablonlar ile kullanım için bellek yönetimi stratejisi (hiçbiri dahil) farklı bir çoklu iş parçacığı kullanımı düzenlerini çeşitli uyarlamak için birkaç farklı eşitleme filtreleri de sağlar. Bellek yönetimi stratejisi bilinen bellek kullanım desenleri ve eşitleme gereksinimlerini, belirli bir uygulama için eşleşen genellikle hızını artırmak veya bir uygulamanın genel bellek gereksinimlerini azaltın.
 
-Ayırıcı şablonları özelleştirilmiş veya ek bellek yönetimi stratejilerini sağlamak için yerini yeniden kullanılabilir bileşenler ile uygulanır.
+Allocator şablonlar, özelleştirilmiş veya ek bellek yönetimi stratejileri sağlamak yerine yeniden kullanılabilir bileşenleri ile uygulanır.
 
-C++ Standart Kitaplığı (std::list, std::set, std::multiset, std::map ve std::multimap) düğüm tabanlı kapsayıcılarında öğeleri tek tek düğümler depolar. Belirli kapsayıcı türü için tüm düğümlerin aynı boyutta olduğundan, genel amaçlı bellek yöneticisi esnekliğini gerekli değildir. Her bellek bloğu boyutu derleme zamanında bilindiğinden bellek yöneticisi çok daha basit ve daha hızlı olabilir.
+C++ Standart Kitaplığı (std::list, std::set, std::multiset, std::map ve std::multimap) düğüm tabanlı kapsayıcılarda öğeleri tek tek düğümler depolayın. Belirli bir kapsayıcı türü için tüm düğümlerin aynı boyutta olduğundan, genel amaçlı bellek yöneticisi esnekliğini gerekli değildir. Her bellek bloğu boyutu, derleme zamanında bilinen çünkü çok daha kolay ve hızlı bellek yöneticisi olabilir.
 
-Düğüm tabanlı (C++ Standart Kitaplığı kapsayıcıları std::vector std::deque ve std::basic_string gibi) olmayan kapsayıcıları ile kullanıldığında, alllocator şablonları düzgün çalışmaz, ancak tüm performans geliştirmesi üzerinden sağlamak büyük olasılıkla değildir Varsayılan ayırıcısı.
+Düğüm tabanlı (C++ Standart Kitaplığı kapsayıcıları std::vector std::deque ve std::basic_string gibi) değil kapsayıcılarla kullanıldığında alllocator şablonları düzgün çalışacaktır ancak üzerinde herhangi bir performans geliştirmesi sağlayın olasılığı değildir Varsayılan ayırıcı.
 
-Bir ayırıcı depolama ayırma ve nesneleri ve belirtilen türdeki nesneleri dizileri için boşaltma yöneten bir nesneyi tanımlayan bir şablon sınıftır. Ayırıcı nesneleri C++ Standart Kitaplığı'nda birkaç kapsayıcı şablon sınıfları tarafından kullanılır.
+Bir ayırıcıyı depolama ayırmayı ve nesneleri ve belirlenen türünde nesne dizileri için boşaltmayı yöneten bir nesneyi tanımlayan bir şablon sınıfıdır. Ayırıcı nesneleri, C++ Standart Kitaplığı'nda birkaç kapsayıcı Şablon sınıfı tarafından kullanılır.
 
-Allocators bu türdeki tüm şablonları şunlardır:
+Bu türün tüm şablonları ayırıcılar şunlardır:
 
 `template<class` `Type` `>`
 
 `class allocator;`
 
-Burada şablon bağımsız değişken `Type` ayırıcısı örneği tarafından yönetilen türü. C++ Standart Kitaplığı, varsayılan ayırıcısı, Şablon sınıfı sağlar [ayırıcısı](../standard-library/allocator-class.md), içinde tanımlanan [ \<bellek >](../standard-library/memory.md). \<Allocators > aşağıdaki allocators üstbilgisi sağlar:
+Burada şablon bağımsız değişkeni `Type` ayırıcı örneği tarafından yönetilen bir tür. C++ Standart Kitaplığı sağlayan Şablon sınıfı, bir varsayılan ayırıcı [ayırıcı](../standard-library/allocator-class.md), tanımlanan [ \<bellek >](../standard-library/memory.md). \<Ayırıcılar > üst bilgi aşağıdaki ayırıcılar sağlar:
 
 - [allocator_newdel](../standard-library/allocator-newdel-class.md)
 
@@ -65,7 +65,7 @@ Burada şablon bağımsız değişken `Type` ayırıcısı örneği tarafından 
 
 - [allocator_chunklist](../standard-library/allocator-chunklist-class.md)
 
-Bir ayırıcı, uygun bir örnek oluşturma, aşağıdaki kod örneğinde gibi bir kapsayıcı oluştururken ikinci tür bağımsız değişkeni olarak kullanın.
+Aşağıdaki kod örneği gibi bir kapsayıcı oluştururken, uygun bir ayırıcı örneklemesi ikinci tür bağımsız değişkeni kullanın.
 
 `#include <list>`
 
@@ -73,9 +73,9 @@ Bir ayırıcı, uygun bir örnek oluşturma, aşağıdaki kod örneğinde gibi b
 
 `std::list<int, stdext::allocators::allocator_chunklist<int> > _List0;`
 
-_List0 ayırır düğümleriyle `allocator_chunklist` ve varsayılan eşitleme filtresi.
+_List0 ayırır düğümleri `allocator_chunklist` ve varsayılan eşitleme filtresi.
 
-Makro kullanmak [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) varsayılan dışındaki eşitleme filtrelerle ayırıcısı şablonları oluşturmak için:
+Makroyu kullanın [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) eşitleme filtreleri varsayılan dışındaki ayırıcı şablonları oluşturmak için:
 
 `#include <list>`
 
@@ -85,13 +85,13 @@ Makro kullanmak [ALLOCATOR_DECL](../standard-library/allocators-functions.md#all
 
 `std::list<int, alloc<int> > _List1;`
 
-_Lst1 ayırır düğümleriyle `allocator_chunklist` ve [sync_per_thread](../standard-library/sync-per-thread-class.md) eşitleme filtresi.
+_Lst1 ayırır düğümleri `allocator_chunklist` ve [sync_per_thread](../standard-library/sync-per-thread-class.md) eşitleme filtresi.
 
-Bir blok ayırıcısı bir önbellek veya bir filtre değil. Bir bağımsız değişken türü std::size_t, bir şablon sınıfı önbelleğidir. Ayırır ve bellek blokları tek bir boyutta kaldırır bloğu ayırıcısı tanımlar. İşlecini kullanarak bellek edinmelidir `new`, ancak işleci için ayrı bir çağrısı koymasına gerek yoktur `new` her bloğu. Daha büyük bir blok veya sonraki yeniden ayırma blokları serbest önbellek Örneğin, suballocate olabilir.
+Bir blok ayırıcı bir önbellek ya da bir filtre ' dir. Bir önbellek türü std::size_t bir bağımsız değişken alan bir şablon sınıfıdır. Ayırır ve bellek blokları tek bir boyutta ayırmayı iptal eder bloğu ayırıcısı tanımlar. İşlecini kullanarak bellek almalısınız **yeni**, ancak işleci ayrı çağrı yapmak olmayan **yeni** her blok için. Daha büyük bir blok veya sonraki yeniden ayırma için blokları serbest önbellek gibi suballocate olabilir.
 
-Şablon örneği çağrılırken std::size_t bağımsız değişkeninin değeri olmak zorunda değildir yeniden bağlamasını derlenemiyor derleyici önbelleği'nin üye işlevleri için geçirilen bağımsız değişken _Sz değerini ayırma ve serbest bırakma.
+Şablon oluşturulduğunda kullanılan std::size_t bağımsız değişkenin değeri olmak zorunda değildir yeniden bağlamasını derlenemez bir derleyici ile bir önbelleğin üye işleve geçirilen bağımsız değişken _Sz değerini ayırma ve serbest bırakın.
 
-\<allocators > aşağıdaki önbellek şablonlar sağlar:
+\<Ayırıcılar > aşağıdaki önbellek şablonlarını sunar:
 
 - [cache_freelist](../standard-library/cache-freelist-class.md)
 
@@ -99,25 +99,25 @@ Bir blok ayırıcısı bir önbellek veya bir filtre değil. Bir bağımsız de�
 
 - [cache_chunklist](../standard-library/cache-chunklist-class.md)
 
-Şablon bağımsız değişken geçirilen başka bir blok ayırıcıyı kullanarak kendi üye işlevleri uygulayan bir bloğu ayırıcısı filtredir. En yaygın filtre üye işlevleri başka bir bloğu ayırıcısı örneği erişimi denetlemek için bir eşitleme ilkesi uygulanır eşitleme filtresi biçimidir. \<allocators > aşağıdaki eşitleme filtreleri sağlar:
+Üye işlevleri bir şablon bağımsız değişken olarak geçirilen başka bir blok ayırıcı kullanılarak uygulayan bir blok ayırıcı bir filtredir. En yaygın filtresi geçerli bir eşitleme ilkesi, başka bir blok ayırıcı örneği üye işlevleri erişimi denetlemek için bir eşitleme filtre biçimidir. \<Ayırıcılar > aşağıdaki eşitleme filtreleri sağlar:
 
 - [sync_none](../standard-library/sync-none-class.md)
 
-- [sync_per_kapsayıcı](../standard-library/sync-per-container-class.md)
+- [sync_per_container](../standard-library/sync-per-container-class.md)
 
 - [sync_per_thread](../standard-library/sync-per-thread-class.md)
 
 - [sync_shared](../standard-library/sync-shared-class.md)
 
-\<allocators > Ayrıca filtre sağlar [rts_alloc](../standard-library/rts-alloc-class.md), birden çok bloğu ayırıcısı tutan örnekleri ve ayırma veya derleme zamanında ayırmayı kaldırma yerine çalışma zamanında kullanılacak hangi örneği belirler. Yeniden bağlamasını derlenemiyor derleyicileri ile kullanılır.
+\<Ayırıcılar > de filtre sağlar [rts_alloc](../standard-library/rts-alloc-class.md), birden fazla blok ayırıcı tutan, örnekler ve ayırma ya da ayırmayı kaldırma yerine çalışma zamanında derleme zamanında kullanılmak üzere hangi örneğinin belirler. Yeniden bağlamasını derlenemez derleyicilerle birlikte kullanılır.
 
-Eşitleme ilkesi ayırıcısı örneği birden çok iş parçacığından eşzamanlı ayırma ve ayırmayı kaldırma isteklerini nasıl işleyeceğini belirler. En basit ilke aracılığıyla tüm istekleri doğrudan kullanıcıya eşitleme yönetim bırakarak önbellek nesnesini, geçirmektir. Daha karmaşık bir ilke bir mutex önbellek nesnesini erişimi serileştirmek için kullanılacak olabilir.
+Eşitleme ilkesi, bir ayırıcı örneği birden çok iş parçacığından eşzamanlı ayırmayı ve ayırmayı kaldırma isteklerini nasıl işleyeceğini belirler. Basit ilke üzerinden tüm istekleri doğrudan kullanıcıya eşitleme yönetim bırakarak temel alınan önbellek nesnesini geçirmektir. Daha karmaşık bir ilke bir mutex önbellek nesnesini erişimi serileştirmek için kullanılacak olabilir.
 
-Derleyici tek iş parçacıklı hem çok iş parçacıklı uygulamalar derleme destekliyorsa, varsayılan eşitleme tek iş parçacıklı uygulamalar için filtredir `sync_none`; olduğu tüm diğer durumlarda `sync_shared`.
+Derleyici, hem tek iş parçacıklı ve çok iş parçacıklı uygulamalar derleme destekliyorsa, tek iş parçacıklı uygulamalar için varsayılan eşitleme filtresi olduğundan `sync_none`; bu diğer tüm durumlarda `sync_shared`.
 
-Önbellek şablonu `cache_freelist` boş listeden depolanması öğelerinin üst limiti belirleyen bir max sınıfı bağımsız değişkeni alır.
+Önbellek şablonu `cache_freelist` en fazla boş listeden depolanacak öğe sayısını belirleyen bir max sınıfı bağımsız değişken alır.
 
-\<allocators > aşağıdaki max sınıflar sağlar:
+\<Ayırıcılar > aşağıdaki max sınıfları sağlar:
 
 - [max_none](../standard-library/max-none-class.md)
 
@@ -131,7 +131,7 @@ Derleyici tek iş parçacıklı hem çok iş parçacıklı uygulamalar derleme d
 
 |Makrosu|Açıklama|
 |-|-|
-|[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)|Bir ayırıcı Şablon sınıfı verir.|
+|[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)|Şablon sınıfı bir ayırıcı verir.|
 |[CACHE_CHUNKLIST](../standard-library/allocators-functions.md#cache_chunklist)|Verir `stdext::allocators::cache_chunklist<sizeof(Type)>`.|
 |[CACHE_FREELIST](../standard-library/allocators-functions.md#cache_freelist)|Verir `stdext::allocators::cache_freelist<sizeof(Type), max>`.|
 |[CACHE_SUBALLOC](../standard-library/allocators-functions.md#cache_suballoc)|Verir `stdext::allocators::cache_suballoc<sizeof(Type)>`.|
@@ -141,37 +141,37 @@ Derleyici tek iş parçacıklı hem çok iş parçacıklı uygulamalar derleme d
 
 |İşleç|Açıklama|
 |-|-|
-|[operator! = (\<allocators >)](../standard-library/allocators-operators.md#op_neq)|Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitsizliği sınar.|
-|[operator == (\<allocators >)](../standard-library/allocators-operators.md#op_eq_eq)|Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitliği sınar.|
+|[işleç! = (\<ayırıcılar >)](../standard-library/allocators-operators.md#op_neq)|Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitsizliği sınar.|
+|[işleç == (\<ayırıcılar >)](../standard-library/allocators-operators.md#op_eq_eq)|Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitliği sınar.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[allocator_base](../standard-library/allocator-base-class.md)|Kullanıcı tanımlı bir ayırıcı eşitleme filtresi oluşturmak için gereken genel işlevler ve temel sınıf tanımlar.|
-|[allocator_chunklist](../standard-library/allocator-chunklist-class.md)|Depolama ayırma ve için bir önbellek türü kullanarak nesneleri serbest bırakma yöneten bir nesneyi tanımlayan [cache_chunklist](../standard-library/cache-chunklist-class.md).|
-|[allocator_fixed_size](../standard-library/allocator-fixed-size-class.md)|Depolama ayırma ve serbest bırakma türündeki nesneler için yöneten bir nesneyi tanımlayan `Type` bir önbellek türü kullanarak [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunluğa sahip [max_fixed_size](../standard-library/max-fixed-size-class.md).|
-|[allocator_newdel](../standard-library/allocator-newdel-class.md)|Kullanan bir ayırıcı uygulayan `operator delete` bellek ayırması için blok ve `operator new` bir bellek bloğu ayrılamadı.|
-|[allocator_suballoc](../standard-library/allocator-suballoc-class.md)|Depolama ayırma ve serbest bırakma türündeki nesneler için yöneten bir nesneyi tanımlayan `Type` bir önbellek türü kullanarak [cache_suballoc](../standard-library/cache-suballoc-class.md).|
-|[allocator_unbounded](../standard-library/allocator-unbounded-class.md)|Depolama ayırma ve serbest bırakma türündeki nesneler için yöneten bir nesneyi tanımlayan `Type` bir önbellek türü kullanarak [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunluğa sahip [max_unbounded](../standard-library/max-unbounded-class.md).|
-|[allocator_variable_size](../standard-library/allocator-variable-size-class.md)|Depolama ayırma ve serbest bırakma türündeki nesneler için yöneten bir nesneyi tanımlayan `Type` bir önbellek türü kullanarak [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunluğa sahip [max_variable_size](../standard-library/max-variable-size-class.md).|
-|[cache_chunklist](../standard-library/cache-chunklist-class.md)|Ayırır ve bellek blokları tek bir boyutta kaldırır bloğu ayırıcısı tanımlar.|
-|[cache_freelist](../standard-library/cache-freelist-class.md)|Ayırır ve bellek blokları tek bir boyutta kaldırır bloğu ayırıcısı tanımlar.|
-|[cache_suballoc](../standard-library/cache-suballoc-class.md)|Ayırır ve bellek blokları tek bir boyutta kaldırır bloğu ayırıcısı tanımlar.|
-|[FreeList](../standard-library/freelist-class.md)|Bellek blokları bir listesini yönetir.|
-|[max_fixed_size](../standard-library/max-fixed-size-class.md)|Sınırlar max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) sabit uzunluk nesnesine.|
-|[max_none](../standard-library/max-none-class.md)|Sınırlar max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) sıfır en fazla nesne.|
-|[max_unbounded](../standard-library/max-unbounded-class.md)|En büyük uzunluğu sınırlamaz max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) nesnesi.|
-|[max_variable_size](../standard-library/max-variable-size-class.md)|Sınırlar max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) nesne sayısı için kabaca orantılıdır bir maksimum uzunluğu için ayrılan bellek blokları.|
-|[rts_alloc](../standard-library/rts-alloc-class.md)|Rts_alloc Şablon sınıfı açıklayan bir [filtre](../standard-library/allocators-header.md) tutan bir dizi önbelleği örnekleri ve ayırma ve ayırmayı kaldırma yerine çalışma zamanında derleme zamanında kullanmak için hangi örneğinin belirler.|
-|[sync_none](../standard-library/sync-none-class.md)|Hiçbir eşitleme sağlayan eşitleme filtresi açıklar.|
-|[sync_per_kapsayıcı](../standard-library/sync-per-container-class.md)|Her bir ayırıcı nesne için ayrı önbellek nesnesini sağlayan eşitleme filtresi açıklar.|
-|[sync_per_thread](../standard-library/sync-per-thread-class.md)|Her iş parçacığı için ayrı önbellek nesnesini sağlayan eşitleme filtresi açıklar.|
-|[sync_shared](../standard-library/sync-shared-class.md)|Tüm allocators tarafından paylaşılan bir önbellek nesnesi erişimi denetlemek için bir mutex kullanan bir eşitleme filtresi açıklar.|
+|[allocator_base](../standard-library/allocator-base-class.md)|Eşitleme filtresi kullanıcı tarafından tanımlanan bir ayırıcı oluşturmak için gereken genel işlevler ve temel sınıf tanımlar.|
+|[allocator_chunklist](../standard-library/allocator-chunklist-class.md)|Depolama ayırmayı ve boşaltmayı kullanarak bir önbellek türü nesneler için yöneten bir nesneyi tanımlayan [cache_chunklist](../standard-library/cache-chunklist-class.md).|
+|[allocator_fixed_size](../standard-library/allocator-fixed-size-class.md)|Depolama ayırmayı ve boşaltmayı türü nesneler için yöneten bir nesneyi tanımlayan `Type` kullanarak bir önbellek türü [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunlukta [max_fixed_size](../standard-library/max-fixed-size-class.md).|
+|[allocator_newdel](../standard-library/allocator-newdel-class.md)|Kullanan bir ayırıcı uygulayan **delete işleci** ayırması bir bellek bloğu ve **new işleci** bir bellek bloğu ayrılamadı.|
+|[allocator_suballoc](../standard-library/allocator-suballoc-class.md)|Depolama ayırmayı ve boşaltmayı türü nesneler için yöneten bir nesneyi tanımlayan `Type` kullanarak bir önbellek türü [cache_suballoc](../standard-library/cache-suballoc-class.md).|
+|[allocator_unbounded](../standard-library/allocator-unbounded-class.md)|Depolama ayırmayı ve boşaltmayı türü nesneler için yöneten bir nesneyi tanımlayan `Type` kullanarak bir önbellek türü [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunlukta [max_unbounded](../standard-library/max-unbounded-class.md).|
+|[allocator_variable_size](../standard-library/allocator-variable-size-class.md)|Depolama ayırmayı ve boşaltmayı türü nesneler için yöneten bir nesneyi tanımlayan `Type` kullanarak bir önbellek türü [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunlukta [max_variable_size](../standard-library/max-variable-size-class.md).|
+|[cache_chunklist](../standard-library/cache-chunklist-class.md)|Ayırır ve bellek blokları tek bir boyutta ayırmayı iptal eder bloğu ayırıcısı tanımlar.|
+|[cache_freelist](../standard-library/cache-freelist-class.md)|Ayırır ve bellek blokları tek bir boyutta ayırmayı iptal eder bloğu ayırıcısı tanımlar.|
+|[cache_suballoc](../standard-library/cache-suballoc-class.md)|Ayırır ve bellek blokları tek bir boyutta ayırmayı iptal eder bloğu ayırıcısı tanımlar.|
+|[FreeList](../standard-library/freelist-class.md)|Bellek bloklarını listesini yönetir.|
+|[max_fixed_size](../standard-library/max-fixed-size-class.md)|Sınırlayan max sınıfı bir nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) nesne sabit en büyük uzunluğu.|
+|[max_none](../standard-library/max-none-class.md)|Sınırlayan max sınıfı bir nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) nesne en fazla uzunluğu sıfır.|
+|[max_unbounded](../standard-library/max-unbounded-class.md)|En büyük uzunluğunu sınırlamaz bir max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) nesne.|
+|[max_variable_size](../standard-library/max-variable-size-class.md)|Sınırlayan max sınıfı bir nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) ayrılan bellek blokları nesne sayısı için kabaca orantılı en büyük uzunluğu.|
+|[rts_alloc](../standard-library/rts-alloc-class.md)|Rts_alloc Şablon sınıfı tanımlar bir [filtre](../standard-library/allocators-header.md) tutan bir dizi önbellek örnekleri ve ayırmayı ve ayırmayı kaldırma yerine çalışma zamanında derleme zamanında kullanılmak üzere hangi örneğinin belirler.|
+|[sync_none](../standard-library/sync-none-class.md)|Eşitleme sağlayan eşitleme filtresi açıklar.|
+|[sync_per_container](../standard-library/sync-per-container-class.md)|Her bir ayırıcı nesne için ayrı önbellek nesnesi sağlayan bir eşitleme filtresi açıklar.|
+|[sync_per_thread](../standard-library/sync-per-thread-class.md)|Her iş parçacığı için ayrı önbellek nesnesi sağlayan bir eşitleme filtresi açıklar.|
+|[sync_shared](../standard-library/sync-shared-class.md)|Tüm ayırıcılar tarafından paylaşılan bir önbellek nesnesi erişimi bir mutex kullanan eşitleme filtresi açıklar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 

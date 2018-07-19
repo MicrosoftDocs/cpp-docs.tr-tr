@@ -16,26 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b19ac68f1d1db9ac73e0519b566f68443775db11
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1dc03a9d8f5f11b08ab2d5cb9d21190ac0a75925
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852210"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962679"
 ---
 # <a name="maskarray-class"></a>mask_array Sınıfı
 
-Üst valarrays kümeleridir destekler nesneleri alt diziler arasındaki işlemleri sağlayarak bir Boolean ifadesiyle belirtilen bir yardımcı, iç Şablon sınıfı.
+Üst valarrays kümeleridir destekler nesnelerin alt diziler arasındaki işlemleri sağlayarak bir Boole ifadesi ile belirtilen bir iç, ikincil bir şablon sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf bir nesneye başvuru depolayan bir nesne tanımlar **va** sınıfının [valarray](../standard-library/valarray-class.md)**\<türü >**, bir nesne ile birlikte **ba**  sınıfının [valarray\<bool >](../standard-library/valarray-bool-class.md), aralarından seçim yapabileceğiniz öğe dizisi açıklayan **valarray\<türü >** nesnesi.
+Sınıfı bir nesneye bir başvuru depolayan nesneyi tanımlar `va` sınıfın [valarray](../standard-library/valarray-class.md)**\<türü >**, nesneyle birlikte `ba` sınıfın [ valarray\<bool >](../standard-library/valarray-bool-class.md), aralarından seçim yapabileceğiniz öğe dizisi açıklar `valarray<Type>` nesne.
 
-Oluşturmak bir **mask_array\<türü >** biçiminde bir ifade yazarak yalnızca nesne [va&#91;ba&#93;](../standard-library/valarray-class.md#op_at). Karşılık gelen işlevi imzalar için tanımlanan gibi sınıfı mask_array üye işlevlerini sonra davranır **valarray\<türü >**, yalnızca seçilen öğelerin sırasını etkilenen dışında.
+Oluşturmak bir `mask_array<Type>` biçiminde bir ifade yazarak yalnızca nesne [va&#91;ba&#93;](../standard-library/valarray-class.md#op_at). Mask_array sınıfı üye işlevleri sonra karşılık gelen işlev imzası için tanımlanan gibi davranmasını `valarray<Type>`dışında yalnızca seçilen öğelerin sırası etkilenmez.
 
-Dizi en çok oluşur **ba.size** öğeleri. Bir öğenin *J* yalnızca eklenmiştir **ba**[ *J*] doğrudur. Bu nedenle, öğe daha vardır true öğeleri olarak kadar sırada **ba**. Varsa `I` en düşük doğru öğe dizini **ba**, ardından **va**[ `I`] sıfır seçilen sırası öğedir.
+Dizi en çok oluşan `ba.size` öğeleri. Bir öğe *J* yalnızca dahildir **ba**[ *J*] geçerlidir. Bu nedenle, doğru öğeleri olduğundan kadar dizideki vardır `ba`. Varsa `I` en düşük doğru öğenin dizinidir `ba`, ardından **va**[ `I`] seçili dizideki öğe sıfır.
 
 ## <a name="example"></a>Örnek
 

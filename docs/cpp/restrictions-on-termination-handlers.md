@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f35560c6f29e341b05f6b8bdf22873847644d7c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 969930c3918cdc0d2e38747796279c7135aba5a7
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420588"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941346"
 ---
 # <a name="restrictions-on-termination-handlers"></a>Sonlandırma İşleyicileri Kısıtlamaları
-Kullanamazsınız bir `goto` içine atlamak için deyimi bir `__try` deyimi blok veya `__finally` deyimi bloğu. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (Dışı ancak atlamak bir `__try` deyimi blok.) Ayrıca, bir özel durum işleyici veya sonlandırma işleyicisi içinde iç içe yerleştirilemez bir `__finally` bloğu.  
+Kullanamazsınız bir **goto** bloğuna atlamak için bir **__try** deyim bloğunu veya **__finally** deyim bloğu. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (Bununla birlikte, / hızlı bir **__try** deyim bloğunu.) Ayrıca, bir özel durum işleyicisi veya sonlandırma işleyicisi içine yerleştiremezsiniz bir **__finally** blok.  
   
- Ayrıca, dikkatli olun, varsa kullanmanız gerektiği şekilde bir sonlandırma işleyicisi izin kodu bazı tür şüpheli sonuçlara yol. Biridir bir `goto` dışı atlar deyimi bir `__finally` deyimi bloğu. Blok normal sonlandırma bir parçası olarak yürütülen olağan dışı bir şey olur. Olağan dışı bir sonlandırma değilmiş gibi ancak sistem unwinding durdurur ve geçerli işlevi kazanır yığını, geriye doğru izleme olup olmadığını denetler.  
+ Ayrıca, dikkatle varsa kullanmanız gerektiği şekilde bir sonlandırma işleyicisi izin verilen kod bazı türleri tartışmalı sonuçları üretir. Biri bir **goto** tanesi atlar deyimi bir **__finally** deyim bloğu. Bloğun sonlandırma normal bir parçası olarak yürütülüyorsa, olağan dışı hiçbir şey olmaz. Olağan dışı sonlandırma gerçekleşmez değilmiş gibi ancak sistem geriye doğru izleme durur ve geçerli işlevin kazanır yığını geriye doğru olmadığını denetler.  
   
- A `return` deyimi içinde bir `__finally` deyimi blok de aynı durum kabaca gösterir. Sonlandırma işleyicisi içeren işlevi anında arayanlar için denetimini döndürür. Sistem yığını geriye doğru izleme oluştu, bu işlem durdurulur ve şekilde geliştirilmişse özel durum oluştu program devam eder.  
+ A **dönüş** deyimi içinde bir **__finally** deyim bloğunu aynı durum kabaca sunar. Sonlandırma işleyicisi içeren işlev şu anki çağırıcı için denetimini döndürür. Sistem yığın geriye doğru Bu işlem durdurulur ve şekilde geliştirilmişse harekete geçirilen özel durum programın devam eder.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)   

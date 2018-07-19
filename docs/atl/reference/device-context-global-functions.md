@@ -1,5 +1,5 @@
 ---
-title: Cihaz bağlamı genel işlevler | Microsoft Docs
+title: Cihaz bağlamı genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37d54fbe9391cb53cca1d84401e90bb6fd47a479
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4d45468674d274c5f20b5533d782390cf2a6cec6
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358595"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881402"
 ---
-# <a name="device-context-global-functions"></a>Cihaz bağlamı genel işlevler
-Bu işlev belirli bir aygıt için bir cihaz bağlamı oluşturur.  
+# <a name="device-context-global-functions"></a>Cihaz bağlamı genel işlevleri
+Bu işlev, belirli bir cihaz için bir cihaz bağlamı oluşturur.  
   
 |||  
 |-|-|  
 |[AtlCreateTargetDC](#atlcreatetargetdc)|Bir cihaz bağlamı oluşturur.|  
   
 ##  <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC  
- Belirtilen cihaz için cihaz bağlamı oluşturan [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) yapısı.  
+ Belirtilen cihaz için bir cihaz bağlamı oluşturur [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) yapısı.  
   
 ```
 HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
@@ -37,18 +37,18 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
   
 ### <a name="parameters"></a>Parametreler  
  *hdc*  
- [in] Var olan bir cihaz bağlamı tanıtıcısı veya **NULL**.  
+ [in] Bir cihaz bağlamı NULL veya var olan işleyici.  
   
- `ptd`  
- [in] Bir işaretçi **DVTARGETDEVICE** hedef aygıt hakkındaki bilgileri içeren yapısı.  
+ *ptd*  
+ [in] Bir işaretçi `DVTARGETDEVICE` hedef cihaz hakkındaki bilgileri içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen cihaz için cihaz bağlamı için işleyici döner **DVTARGETDEVICE**. Hiçbir aygıt belirtilmezse, varsayılan görüntü aygıtına işleyicisini döndürür.  
+ Belirtilen cihaz için bir cihaz bağlamı için bir tanıtıcı döndürür `DVTARGETDEVICE`. Cihaz belirtilmezse, varsayılan görüntüleme cihazında tanıtıcısını döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yapı ise **NULL** ve *hdc* olan **NULL**, varsayılan görüntüleme cihazı için cihaz bağlamı oluşturur.  
+ Yapısı NULL ise ve *hdc* NULL ise, varsayılan görüntüleme cihazı için bir cihaz bağlamı oluşturur.  
   
- Varsa *hdc* değil **NULL** ve `ptd` olan **NULL**, varolan işlevi döndürür *hdc*.  
+ Varsa *hdc* NULL değil ve *ptd* NULL ise mevcut bir işlevi döndürür *hdc*.  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  

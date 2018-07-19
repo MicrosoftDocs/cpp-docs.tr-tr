@@ -16,17 +16,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff35b6ef4674121a645fb3d80c96f5da3edded9f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 58724d2e17947c69d1aaf2ed0af66137fe20cc74
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948038"
 ---
 # <a name="sizeof-operator"></a>sizeof İşleci
-Kendi işleneninin türü boyutuna göre boyutu ortaya çıkarır `char`.  
+İşlenenin türü bağlı boyutu verir **char**.  
   
 > [!NOTE]
->  Hakkında bilgi için `sizeof ...` işleci, bkz: [üç nokta ve Variadic şablonları](../cpp/ellipses-and-variadic-templates.md).  
+>  Hakkında bilgi için `sizeof ...` işleci bkz [üç nokta ve Variadic şablonları](../cpp/ellipses-and-variadic-templates.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,19 +37,19 @@ sizeof  ( type-name )
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonucu `sizeof` işlecidir türü `size_t`, INCLUDE dosyasında tanımlanan bir tam sayı türü \<stddef.h >. Bu işleç, makine bağımlı veri boyutları programlarınıza belirtmekten kaçının olanak sağlar.  
+ Sonucu **sizeof** işleci türüdür `size_t`, içerme dosyasında tanımlı bir integral türü \<stddef.h >. Bu işleç, programlarınızda makine bağımlı veri boyutları belirtmekten kaçının olanak tanır.  
   
- İşlenenin `sizeof` şunlardan biri olabilir:  
+ İşleneni **sizeof** aşağıdakilerden biri olabilir:  
   
--   Tür adı. Kullanılacak `sizeof` bir tür adıyla adı parantez içine alınmalıdır.  
+-   Tür adı. Kullanılacak **sizeof** bir tür adıyla adı parantez içine alınmalıdır.  
   
--   Bir ifade. Bir ifade ile kullanıldığında `sizeof` ile veya parantezler olmadan belirtilebilir. İfade değerlendirilmez.  
+-   Bir ifade. Bir ifade ile kullanıldığında **sizeof** ile veya parantezler olmadan belirtilebilir. İfade değerlendirilmez.  
   
- Zaman `sizeof` işleci türünde bir nesneye uygulanan `char`, 1 verir. Zaman `sizeof` işleci için bir dizi uygulandığında, bu diziyi değil dizi tanımlayıcı tarafından gösterilen işaretçi boyutunu bayt toplam sayısını verir. Dizi tanımlayıcı tarafından gösterilen işaretçi boyutunu elde etmek için bu parametre olarak kullanan bir işleve geçirme `sizeof`. Örneğin:  
+ Zaman **sizeof** işleci türünde bir nesneye uygulanan **char**, 1 verir. Zaman **sizeof** işleci, bir diziye uygulandığında, bu dizide dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu bayt sayısı verir. Dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu elde etmek için bir parametre olarak kullanan bir işlevine geçirebileceğimiz **sizeof**. Örneğin:  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 #include <iostream>  
 using namespace std;  
   
@@ -72,41 +73,41 @@ int main()
   
 ## <a name="sample-output"></a>Örnek Çıktı  
   
-```  
+```Output  
 The size of a char is: 1  
 The length of Hello, world! is: 14  
 The size of the pointer is 4  
 ```  
   
- Zaman `sizeof` işleci uygulanan bir `class`, `struct`, veya `union` türü, sonuç bu türdeki bir nesne bayt sayısıdır. artı word sınırları üyelerinde hizalamak için herhangi bir doldurmaya eklendi. Sonuç mutlaka tek tek üyeleri depolama gereksinimlerini ekleyerek hesaplanan boyutu karşılık gelmiyor. [/Zp](../build/reference/zp-struct-member-alignment.md) derleyici seçeneği ve [paketi](../preprocessor/pack.md) pragma üyeleri için hizalama sınırları etkiler.  
+ Zaman **sizeof** işleci uygulanır bir **sınıfı**, **yapı**, veya **birleşim** sonuç türüdür, bir nesnenin bayt sayısı türü, artı sözcük sınırlarından üyelerini hizalamak için eklenen tüm doldurma. Sonuç tek tek üyelerin depolama gereksinimlerini toplayarak hesaplanan boyuta karşılık gelmiyor. [/ZP](../build/reference/zp-struct-member-alignment.md) derleyici seçeneği ve [paketi](../preprocessor/pack.md) pragması hizalama sınırları üyelerini etkiler.  
   
- `sizeof` İşleci hiçbir zaman boş bir sınıf için bile 0 verir.  
+ **Sizeof** işleci, 0, boş bir sınıf için bile hiçbir zaman verir.  
   
- `sizeof` İşleci aşağıdaki işlenenleri ile birlikte kullanılamaz:  
+ **Sizeof** işleci aşağıdaki işlenenleri ile birlikte kullanılamaz:  
   
--   İşlevler. (Ancak, `sizeof` işlev işaretçileri uygulanır.)  
+-   İşlevler. (Ancak **sizeof** işaretçileri işlevlere uygulanabilir.)  
   
 -   Bit alanları.  
   
--   Tanımsız sınıflar.  
+-   Tanımlanmamış sınıflar.  
   
--   Türü `void`.  
+-   Türü **void**.  
   
--   Dinamik olarak ayrılan diziler.  
+-   Dinamik olarak ayrılan dizi.  
   
 -   Dış diziler.  
   
 -   Eksik türler.  
   
--   Eksik türler parantez içine alınmış adları.  
+-   Eksik türleri parantez içine alınmış adları.  
   
- Zaman `sizeof` işleci başvuru uygulandığında, sonuç aynıdır gibi `sizeof` nesneye uygulanır.  
+ Zaman **sizeof** işleci bir başvuru uygulandığında, sonuç gibi **sizeof** nesnesine uygulanır.  
   
- Boyutsuz bir dizi bir yapının son öğesi ise, `sizeof` işleci dizi olmadan yapının boyutunu döndürür.  
+ Boyutsuz bir dizi bir yapının son öğesi ise **sizeof** işleci dizi olmadan yapının boyutunu döndürür.  
   
- `sizeof` İşleci genellikle biçiminde bir ifade kullanarak bir dizide öğe sayısını hesaplamak için kullanılır:  
+ **Sizeof** işleci genellikle bir ifade formu kullanarak bir dizideki öğelerin sayısını hesaplamak için kullanılır:  
   
-```  
+```cpp 
 sizeof array / sizeof array[0]  
 ```  
   

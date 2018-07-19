@@ -14,14 +14,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d341a2d7ee9f6220922dbdde95e19020fe085892
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1f516114dbaa9e507491cf669c3371b6b8fbaf11
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948134"
 ---
 # <a name="setcomerrorhandler"></a>_set_com_error_handler
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  COM hata işleme için kullanılan varsayılan işlevi değiştirir.  
   
@@ -37,23 +38,23 @@ void __stdcall _set_com_error_handler(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `pHandler`  
+ *pHandler*  
  Değiştirme işlevinin işaretçisi.  
   
- `hr`  
- `HRESULT` bilgileri.  
+ *İK*  
+ HRESULT bilgileri.  
   
- `perrinfo`  
+ *perrinfo*  
  `IErrorInfo` nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, [_com_raise_error](../cpp/com-raise-error.md) tüm COM hatalarını ele alır. Bu davranışı, kendi hata işleme işlevinizi çağırmak için `_set_com_error_handler` kullanarak değiştirebilirsiniz.  
+ Varsayılan olarak, [_com_raise_error](../cpp/com-raise-error.md) tüm COM hatalarını işler. Bu davranışı, kendi hata işleme işlevinizi çağırmak için `_set_com_error_handler` kullanarak değiştirebilirsiniz.  
   
  Değiştirme işlevi, `_com_raise_error` öğesinin imzasına eşdeğer olan bir imza içermelidir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // _set_com_error_handler.cpp  
 // compile with /EHsc  
 #include <stdio.h>  
@@ -95,7 +96,7 @@ Exception raised: Unable to establish the connection!
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<comdef.h >  
   
- **LIB:** varsa **wchar_t yerel tür olan** derleyici seçeneği üzerinde comsuppw.lib veya comsuppwd.lib kullanın. Varsa **wchar_t yerel tür olan** kapalı ise comsupp.lib kullanın. Daha fazla bilgi için bkz: [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
+ **Lib:** varsa **wchar_t yerel tür olan** derleyici seçeneği açıktır, comsuppw.lib veya comsuppwd.lib kullanın. Varsa **wchar_t yerel tür olan** kapalıysa, comsupp.lib kullanın. Daha fazla bilgi için [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)

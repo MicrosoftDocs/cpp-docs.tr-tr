@@ -1,5 +1,5 @@
 ---
-title: IServiceProviderImpl sınıfı | Microsoft Docs
+title: Iserviceproviderımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b1472fe5d952e93b45240128383db9fdec5b093
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2e298f8398041b7b83a581b95f95c4ff9521cd4b
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363680"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37883612"
 ---
-# <a name="iserviceproviderimpl-class"></a>IServiceProviderImpl sınıfı
-Bu sınıf, bir varsayılan uygulamasını sağlar `IServiceProvider` arabirimi.  
+# <a name="iserviceproviderimpl-class"></a>Iserviceproviderımpl sınıfı
+Bu sınıfın bir varsayılan uygulamayı sağlar `IServiceProvider` arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,7 +37,7 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IServiceProviderImpl`.  
   
 ## <a name="members"></a>Üyeler  
@@ -46,16 +46,16 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IServiceProviderImpl::QueryService](#queryservice)|Oluşturur veya belirtilen hizmet erişir ve hizmet için belirtilen arabirimi için bir arabirim işaretçisi döndürür.|  
+|[IServiceProviderImpl::QueryService](#queryservice)|Oluşturur veya belirtilen hizmete erişen ve hizmet için belirtilen arabirim için bir arabirim işaretçisini döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IServiceProvider` Arabirimi GUID'sine tarafından belirtilen bir hizmeti bulur ve istenen arabirimi arabirim işaretçisi hizmette döndürür. Sınıf `IServiceProviderImpl` bu arabirimin varsayılan uygulamasını sağlar.  
+ `IServiceProvider` Arabirimi GUID'sine tarafından belirtilen bir hizmeti bulur ve hizmette istenen arabirim için arabirim işaretçisini döndürür. Sınıf `IServiceProviderImpl` bu arabirimin bir varsayılan uygulamasını sağlar.  
   
- **IServiceProviderImpl** bir yöntemini belirtir: [QueryService](#queryservice), hangi oluşturur veya belirtilen hizmet erişir ve hizmet için belirtilen arabirimi için bir arabirim işaretçisi döndürür.  
+ `IServiceProviderImpl` bir yöntem belirtir: [QueryService](#queryservice), oluşturan veya belirtilen hizmete erişen ve hizmet için belirtilen arabirim için bir arabirim işaretçisini döndürür.  
   
- `IServiceProviderImpl` ile başlayan bir hizmet eşlemesi kullanan [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) ve ile biten [END_SERVICE_MAP](service-map-macros.md#end_service_map).  
+ `IServiceProviderImpl` ile başlayarak, bir hizmet eşlemesini kullanır [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) ve ile biten [END_SERVICE_MAP](service-map-macros.md#end_service_map).  
   
- Hizmet eşlemesi iki girdiler içeriyor: [SERVICE_ENTRY](service-map-macros.md#service_entry), nesne tarafından desteklenen bir belirtilen hizmet kimliği (SID) gösterir ve [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain), çağıran `QueryService` başka bir zincir için nesne.  
+ Hizmet eşlemesi iki girişler içeriyor: [SERVICE_ENTRY](service-map-macros.md#service_entry), nesne tarafından desteklenen bir belirtilen hizmet kimliği (SID) belirtir ve [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain), çağıran `QueryService` başka zincirdeki nesne.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IServiceProvider`  
@@ -66,7 +66,7 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
  **Başlık:** atlcom.h  
   
 ##  <a name="queryservice"></a>  IServiceProviderImpl::QueryService  
- Oluşturur veya belirtilen hizmet erişir ve hizmet için belirtilen arabirimi için bir arabirim işaretçisi döndürür.  
+ Oluşturur veya belirtilen hizmete erişen ve hizmet için belirtilen arabirim için bir arabirim işaretçisini döndürür.  
   
 ```
 STDMETHOD(QueryService)(
@@ -76,17 +76,17 @@ STDMETHOD(QueryService)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [IN] `guidService`  
- Bir hizmet tanımlayıcı (SID) yönelik işaretçi.  
+ [IN] *guidService*  
+ Hizmet tanımlayıcısı (SID) yönelik işaretçi.  
   
- [IN] `riid`  
- Çağıranın erişim kazanmak için arabirimi tanımlayıcısı.  
+ [IN] *riid*  
+ Arayan erişim elde etmek için arabirim tanımlayıcısı.  
   
- [OUT] `ppvObj`  
- İstenen arabirim dolaylı işaretçi.  
+ [OUT] *ppvObj*  
+ Dolaylı istenen arabirim işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürülen `HRESULT` değeri şunlardan biri değil:  
+ Döndürülen HRESULT değerini aşağıdakilerden biridir:  
   
 |Dönüş değeri|Açıklama|  
 |------------------|-------------|  
@@ -97,19 +97,19 @@ STDMETHOD(QueryService)(
 |E_NOINTERFACE|İstenen arabirim bu hizmetin bir parçası değil veya bilinmeyen bir hizmettir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryService` Belirtilen hizmet istenen arabiriminde dolaylı bir işaretçi döndürür. Çağıran, artık gerekli olmadığında bu işaretçinin serbest bırakma için sorumludur.  
+ `QueryService` Belirtilen hizmet istenen arabiriminde dolaylı bir işaretçi döndürür. Artık gerekli olmadığında, bu işaretçi serbest bırakma için çağıran sorumludur.  
   
- Çağırdığınızda `QueryService`, hem de bir hizmet tanımlayıcı geçirdiğiniz ( `guidService`) ve bir arabirim tanımlayıcısı ( `riid`). `guidService` Erişim için istediğiniz hizmeti belirtir ve `riid` hizmetinin bir parçası olan bir arabirim tanımlar. Buna karşılık, arabirim dolaylı bir işaretçi alırsınız.  
+ Çağırdığınızda `QueryService`, geçirdiğiniz her iki hizmet tanımlayıcısı (*guidService*) ve bir arabirim tanımlayıcısı (*riid*). *GuidService* erişim, istediğiniz hizmet belirtir ve *riid* hizmetin bir parçası olan bir arabirim tanımlar. Buna karşılık, dolaylı bir arabirim işaretçisi alır.  
   
- Arabirimini uygulayan nesne aynı zamanda diğer hizmetlerin parçası olan arabirimler uygulayabilir. Aşağıdakileri göz önünde bulundurun:  
+ Arabirimini uygulayan nesnenin ayrıca diğer hizmetleri arabirimleri uygulayabilir. Aşağıdakileri göz önünde bulundurun:  
   
--   Bu arabirimleri bazıları, isteğe bağlı olabilir. Hizmet açıklamasında tanımlanan tüm arabirimleri mutlaka hizmetinin her uygulama veya her döndürülen nesne yok.  
+-   Bu arabirimlerin bazıları, isteğe bağlı olabilir. Hizmet açıklamasında tanımlanan tüm arabirimleri mutlaka hizmetinin her bir uygulama ya da her döndürülen nesne yok.  
   
--   Çağrı aksine `QueryInterface`, farklı bir hizmet tanımlayıcı geçirme mutlaka gelmez farklı bir Bileşen Nesne Modeli (COM) nesne döndürülür.  
+-   Çağrıları aksine `QueryInterface`, farklı hizmet tanımlayıcısı geçirme mutlaka gelmez farklı bir Bileşen Nesne Modeli (COM) nesne döndürülür.  
   
--   Döndürülen nesne hizmeti tanımının bir parçası olmayan ek arabirimleri olabilir.  
+-   Döndürülen nesne hizmet tanımının bir parçası olmayan ek arabirimleri olabilir.  
   
- Arabirim uygulaması iki hizmetleri arasında ortak bir şey sahip olsanız bile SID_SMyService ve SID_SYourService, gibi iki farklı hizmet her ikisi de aynı arabirimi kullanımını belirtebilirsiniz. Bu, çünkü çalışır yapılan bir çağrı `QueryService` (SID_SMyService, IID_IDispatch) değerinden farklı bir nesne dönebilirsiniz `QueryService` (SID_SYourService, IID_IDispatch). Farklı bir hizmet tanımlayıcı belirttiğinizde nesne kimliği varsayılır değil.  
+ Hiçbir şey iki hizmet arasında ortak arabiriminin uygulamasını sahip olsanız bile SID_SMyService ve SID_SYourService, gibi iki farklı hizmet her ikisi de aynı arabirimi kullanımını belirtebilirsiniz. Bu, çalışır çünkü bir çağrı `QueryService` (SID_SMyService, IID_IDispatch) değerinden farklı bir nesne döndürebilir `QueryService` (SID_SYourService, IID_IDispatch). Farklı hizmet tanımlayıcısı belirttiğinizde nesne kimliğini kabul değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

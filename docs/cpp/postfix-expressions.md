@@ -16,11 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a116e4f1c937a1656f337396a8b10206e0776c0e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6299249b477b568579063f7ee61060514c3028bd
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948237"
 ---
 # <a name="postfix-expressions"></a>Sonek İfadeleri
 Sonek ifadeleri, birincil ifadelerden veya içindeki son ek işleçlerinin bir birincil ifadeyi izlediği ifadelerden oluşur. Sonek işleçleri aşağıdaki tabloda listelenmiştir.  
@@ -32,7 +33,7 @@ Sonek ifadeleri, birincil ifadelerden veya içindeki son ek işleçlerinin bir b
 |[Alt simge işleci](../cpp/subscript-operator.md)|**[ ]**|  
 |[İşlev çağırma işleci](../cpp/function-call-operator-parens.md)|**( )**|  
 |[Açık tür dönüştürme işleci](../cpp/explicit-type-conversion-operator-parens.md)|*tür adı* **)**|  
-|[Üye erişimi işleci](../cpp/member-access-operators-dot-and.md)|**.** Veya **->**|  
+|[Üye erişimi işleci](../cpp/member-access-operators-dot-and.md)|**.** veya **->**|  
 |[Sonek artırma işleci](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`++`|  
 |[Sonek azaltma işleci](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|  
   
@@ -40,13 +41,13 @@ Sonek ifadeleri, birincil ifadelerden veya içindeki son ek işleçlerinin bir b
   
 ```  
   
-      primary-expression   
+primary-expression   
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )  
 ```  
   
- *Sonek ifade* birincil ifadesi veya başka bir sonek ifadesi yukarıdaki olabilir.  Bkz: **birincil ifadeler**.  Soldan sağa sonek ifade grubu, bu şekilde ifadelerin aşağıdaki gibi zincirleme yapılmasına olanak verir:  
+ *Sonek ifadesi* yukarıdaki birincil ifade veya başka bir sonek ifadesi olabilir.  Bkz: **birincil ifadeler**.  Soldan sağa sonek ifade grubu, bu şekilde ifadelerin aşağıdaki gibi zincirleme yapılmasına olanak verir:  
   
-```  
+```cpp 
 func(1)->GetValue()++  
 ```  
   
@@ -56,15 +57,15 @@ func(1)->GetValue()++
   
  Sonek ifade formu  
   
-```  
+```cpp 
 simple-type-name ( expression-list )  
 ```  
   
  oluşturucunun çağrılacağını belirtir.  Basit tür adı bir temel tür ise, ifade listesi tek bir ifade olmalıdır ve bu ifade, ifadenin değerinin temel türe atanacağını belirtir.  Bu tür bir atama ifadesi bir oluşturucuyu taklit eder.  Bu form temel türlerin ve sınıfların aynı sözdizimini kullanılarak oluşturulmasına izin verdiğinden, bu form özellikle şablon sınıfları tanımlarken yararlıdır.  
   
- *Cast anahtar sözcüğü* biri `dynamic_cast`, `static_cast` veya `reinterpret_cast`.  Daha fazla bilgi bulunabilir **dynamic_cast**, **static_cast** ve **reinterpet_cast**.  
+ *Cast-keyword* biri **dynamic_cast**, **static_cast** veya **reinterpret_cast**.  Daha fazla bilgi bulunabilir **dynamic_cast**, **static_cast** ve **reinterpet_cast**.  
   
- `typeid` işleci bir sonek ifade olarak kabul edilir.  Bkz: **typeid işleci**.  
+ **TypeID** işleci bir sonek ifade olarak kabul edilir.  Bkz: **typeid işleci**.  
   
 ## <a name="formal-and-actual-arguments"></a>Resmi ve gerçek bağımsız değişkenler  
  Çağıran programlar çağrılan işlevlere "gerçek bağımsız değişkenler" içinde bilgi aktarır. Çağrılan işlevler, karşılık gelen "biçimsel bağımsız değişkenleri" kullanarak bilgilere erişir.  
@@ -75,7 +76,7 @@ simple-type-name ( expression-list )
   
 -   Her biçimsel bağımsız değişken, ifade listesi içinde karşılık gelen gerçek bağımsız değişkeniyle başlatılır. (Biçimsel bağımsız değişken, işlev üstbilgisinde bildirilen ve bir işlevin gövdesinde kullanılan bir bağımsız değişkendir.) Dönüştürme işlemleri neredeyse başlatma ile gerçekleştirilir; hem standart hem de kullanıcı tanımlı dönüştürmeler, gerçek bir bağımsız değişkeni doğru türe dönüştürürken gerçekleştirilir. Gerçekleştirilen başlatma aşağıdaki kodda kavramsal olarak gösterilmiştir:  
   
-    ```  
+    ```cpp 
     void Func( int i ); // Function prototype  
     ...  
     Func( 7 );          // Execute function call  
@@ -83,24 +84,24 @@ simple-type-name ( expression-list )
   
      Çağrıdan önceki kavramsal başlatmalar şunlardır:  
   
-    ```  
+    ```cpp 
     int Temp_i = 7;  
     Func( Temp_i );  
     ```  
   
-     Başlatmanın, parantez sözdizimi yerine eşittir işareti sözdizimi kullanılıyormuş gibi yapıldığına dikkat edin. Değeri işleve geçirmeden önce `i` öğesinin bir kopyası oluşturulur. (Daha fazla bilgi için bkz: [başlatıcıları](../cpp/initializers.md) ve [dönüşümleri](../cpp/user-defined-type-conversions-cpp.md)).  
+     Başlatmanın, parantez sözdizimi yerine eşittir işareti sözdizimi kullanılıyormuş gibi yapıldığına dikkat edin. Değeri işleve geçirmeden önce `i` öğesinin bir kopyası oluşturulur. (Daha fazla bilgi için [başlatıcılar](../cpp/initializers.md) ve [dönüştürmeler](../cpp/user-defined-type-conversions-cpp.md)).  
   
-     Bu nedenle, işlev prototipi (bildirim) türünde bir bağımsız değişken için çağırırsa **uzun**, ve gerçek bağımsız değişken türü çağıran program sağlarsa `int`, gerçek bağımsız değişkeni bir standart tür dönüştürme kullanılarak yükseltilir türü için **uzun** (bkz [standart dönüşümler](../cpp/standard-conversions.md)).  
+     Bu nedenle, işlev prototipi (bildirim) türünde bir bağımsız değişken için çağırırsa **uzun**, ve çağıran program gerçek bağımsız değişken türü sağlarsa **int**, gerçek bağımsız değişken kullanarak yükseltilmiş bir yazmak için standart bir tür dönüştürme **uzun** (bkz [standart dönüştürmeler](../cpp/standard-conversions.md)).  
   
      Kendisi için biçimsel bağımsız değişkenin türüne yönelik standart veya kullanıcı tanımlı bir dönüştürme bulunmayan bir gerçek bağımsız değişken sağlamak hatadır.  
   
-     Sınıf türünde gerçek bağımsız değişkenler için, biçimsel bağımsız değişken, sınıfın oluşturucusu çağrılarak başlatılır. (Bkz [oluşturucular](../cpp/constructors-cpp.md) bu özel sınıf üyesi işlevleri hakkında daha fazla bilgi için.)  
+     Sınıf türünde gerçek bağımsız değişkenler için, biçimsel bağımsız değişken, sınıfın oluşturucusu çağrılarak başlatılır. (Bkz [oluşturucular](../cpp/constructors-cpp.md) bu özel sınıf üye işlevleri hakkında daha fazla bilgi için.)  
   
 -   İşlev çağrısı yürütülür.  
   
  Aşağıdaki program parçası, bir işlev çağrısı göstermektedir:  
   
-```  
+```cpp 
 // expre_Formal_and_Actual_Arguments.cpp  
 void func( long param1, double param2 );  
   
@@ -119,14 +120,14 @@ void func( long param1, double param2 )
 }  
 ```  
   
- Zaman `func` biçimsel parametresi main adlı `param1` değeri ile başlatılmış `i` (`i` türüne dönüştürülüp **uzun** standart kullanarak doğru türde karşılık gelecek şekilde dönüştürme işlemi) ve biçimsel parametresi `param2` değeri ile başlatılmış `j` (`j` türüne dönüştürülüp **çift** standart dönüştürme kullanarak).  
+ Zaman `func` ana biçimsel parametre olarak adlandırılan `param1` değeriyle başlatılır `i` (`i` türüne dönüştürülür **uzun** standart kullanarak doğru türe karşılık olarak dönüştürme) ve biçimsel parametre `param2` değeriyle başlatılır `j` (`j` türüne dönüştürülür **çift** standart bir dönüştürme kullanılarak).  
   
 ## <a name="treatment-of-argument-types"></a>Bağımsız değişken türlerinin işlenmesi  
- Biçimsel bağımsız değişkenler, bir işlev gövdesi içinde const türleri değiştirilemez olarak bildirildi. İşlevler türünde değil herhangi bir bağımsız değişken değiştirebilirsiniz **const**. Ancak, değişikliği işlev için yerel olan ve gerçek bağımsız değişkeni bir nesne türü için bir başvuru olduğundan sürece gerçek bağımsız değişkeninin değeri etkilemez **const**.  
+ Biçimsel bağımsız değişkenler, const türleri işlevinin gövdesi içinde değiştirilemez olarak bildirilmiş. İşlevler, türde değil herhangi bir bağımsız değişken değiştirebilirsiniz **const**. Ancak, değişiklik işlevi için yereldir ve gerçek bağımsız değişken türü bir nesneye bir başvuru değilse gerçek bağımsız değişkenin değerini etkilemez **const**.  
   
- Aşağıdaki işlevleri bu kavramların bazıları gösterilmektedir:  
+ Aşağıdaki işlevleri bazı bu kavramları göstermektedir:  
   
-```  
+```cpp 
 // expre_Treatment_of_Argument_Types.cpp  
 int func1( const int i, int j, char *c ) {  
    i = 7;   // C3892 i is const.  
@@ -143,23 +144,23 @@ double& func2( double& d, const char *c ) {
 ```  
   
 ## <a name="ellipses-and-default-arguments"></a>Üç noktalar ve varsayılan bağımsız değişkenler  
- İşlevler, iki yöntemden birini kullanarak işlevi tanımında belirtilenden daha az sayıda bağımsız değişken kabul etmek için bildirilebilir: üç nokta (`...`) veya varsayılan bağımsız değişkenler.  
+ İşlevleri, iki yöntemden birini kullanarak işlev tanımında belirtilenden daha az sayıda bağımsız değişken kabul etmeleri bildirilebilir: üç nokta (`...`) ya da varsayılan bağımsız değişkenler.  
   
- Üç nokta bağımsız değişken gerekli olabilir ancak sayısını ve türlerini bildiriminde belirtilmeyen gösterir. Bu C++ avantajlarından biri hedefini uğratır çünkü bu normalde zayıf C++ programlama uygulamadır: tür güvenliği. Farklı dönüşümleri resmi ve gerçek bağımsız değişken türleri bilinen bu işlevlere üç nokta ile bildirilen işlevler uygulanır:  
+ Elipsler bağımsız değişkenlerin gerekli olabileceğini, ancak sayı ve türlerinin bildirimde belirtilmeyen gösterir. Avantajlarından biri C++ programlamasıdır normalde kötü olmasıdır: tür güvenliği. Farklı dönüştürmeler, kendisi için biçimsel ve fiili bağımsız değişken türleri bilinen işlevlerden üç noktayla belirtilen işlevlere uygulanır:  
   
--   Gerçek bağımsız değişken türü ise **float**, yazmak için yükseltilen **çift** işlev çağrısı önce.  
+-   Gerçek bağımsız değişken türü ise **float**, türüne yükseltilir **çift** işlev çağrısından önce.  
   
--   Tüm imzalı veya imzasız `char`, **kısa**, numaralandırılmış türü veya bit alan işaretli veya işaretsiz bir için dönüştürülür `int` tam sayı yükseltme kullanma.  
+-   Tüm işaretli veya işaretlenmemiş **char**, **kısa**, numaralandırılan tür veya bit alanı, bir işaretli veya işaretsiz bir için dönüştürülür **int** integral yükseltme kullanılarak.  
   
--   Sınıf türü herhangi bir bağımsız değişken bir veri yapısı geçirilen değer tarafından; ikili yerine (varsa) sınıfının kopya Oluşturucu çağırarak kopyalayarak kopyası oluşturulur.  
+-   Sınıf türünün herhangi bir bağımsız değişken bir veri yapısı olarak değere göre geçirilir; ikili yerine sınıfın kopya oluşturucusunu (varsa) çağırarak kopyalayarak kopya oluşturulur.  
   
- Üç nokta, kullandıysanız, son bağımsız değişken listesinde bildirilmesi gerekir. Açıklamalara değişken sayıda bağımsız değişken geçirme hakkında daha fazla bilgi için bkz: [va_arg, va_start ve va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) içinde *çalışma zamanı kitaplığı başvurusu*.  
+ Elipsler kullandıysanız, son bağımsız değişken listesinde bildirilmesi gerekir. Değişken sayıda bağımsız değişken geçirme hakkında daha fazla bilgi için, bkz [va_arg, va_start ve va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) içinde *çalışma zamanı kitaplığı başvurusu*.  
   
- CLR programlama varsayılan bağımsız değişkenleri hakkında daha fazla bilgi için bkz: [değişken bağımsız değişken listeleri (...) (C + +/ CLI) ](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md).  
+ CLR programlamada varsayılan bağımsız değişkenler hakkında daha fazla bilgi için bkz: [değişken bağımsız değişken listeleri (...) (C + +/ CLI) ](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md).  
   
- Varsayılan bağımsız değişkenler, bağımsız değişken yok işlev çağrısında sağlanırsa varsayın değer belirtmenize olanak verir. Aşağıdaki kod parçası varsayılan bağımsız değişkenler nasıl çalıştığı gösterilmektedir. Varsayılan bağımsız değişkenleri belirtme kısıtlamaları hakkında daha fazla bilgi için bkz: [varsayılan bağımsız değişkenler](../cpp/default-arguments.md).  
+ Varsayılan bağımsız değişken bağımsız değişken yok işlev çağrısında sağlanırsa değer belirtmenize olanak verir. Aşağıdaki kod parçası, varsayılan bağımsız değişkenler nasıl çalıştığını gösterir. Varsayılan bağımsız değişkenleri belirtme sınırlamaları hakkında daha fazla bilgi için bkz: [varsayılan bağımsız değişkenler](../cpp/default-arguments.md).  
   
-```  
+```cpp 
 // expre_Ellipses_and_Default_Arguments.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -190,9 +191,9 @@ void print( const char *string, const char *terminator )
 }  
 ```  
   
- Bir işlev önceki program bildirir `print`, iki bağımsız değişkeni alır. Ancak, ikinci bağımsız değişkeni `terminator`, varsayılan bir değeri yok `"\n"`. İçinde **ana**, ilk iki çağrıları `print` yazdırılan dizeyi sonlandırmak için yeni bir satır sağlamak varsayılan ikinci bağımsız değişkeni izin verin. Üçüncü çağrısı ikinci bağımsız değişkeni için açık bir değer belirtir. Programdan alınan çıkış  
+ Önceki program bir işlev bildirir `print`, bu iki bağımsız değişkeni alır. Ancak, ikinci bağımsız değişkeni `terminator`, varsayılan bir değeri yok `"\n"`. İçinde `main`, ilk iki çağrıları `print` varsayılan ikinci bağımsız yazdırılan dizeyi sonlandırmak için yeni bir satır sağlamasına izin verin. Üçüncü çağrı, ikinci bağımsız değişkeni için açık bir değer belirtir. Programdan alınan çıkış  
   
-```  
+```Output 
 hello,  
 world!  
 good morning, sunshine.  

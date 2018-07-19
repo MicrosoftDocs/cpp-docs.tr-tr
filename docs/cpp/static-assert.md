@@ -19,14 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47046090da45d963cc0005f47e2bea680ad17795
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dc51fab2dade4c6bed0456dd353258df82722de5
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948203"
 ---
 # <a name="staticassert"></a>static_assert
-Derleme zamanında yazılım onaylama sınar. Belirtilen sabit ifade ise `false`, bir tane belirtilmişse derleyici belirtilen iletisi görüntüler ve derleme C2338 hatasıyla başarısız oluyor; Aksi takdirde, bildirim hiçbir etkisi olmaz.  
+Derleme zamanında yazılım onayını sınar. Belirtilen sabit ifade FALSE ise, derleyici bir sağlanır ve derleme hatalarını hata C2338 ile başarısız olursa belirtilen iletiyi görüntüler; Aksi halde bildirimin etkisi yoktur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,33 +42,33 @@ static_assert( constant-expression );
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|`constant-expression`|Bir Boolean değerine dönüştürülebilir bir tam sayı sabit ifade.<br /><br /> Değerlendirilmiş ifadeyi sıfırsa (false), `string-literal` parametresi görüntülenir ve derleme bir hata ile başarısız olur. İfade sıfır olmayan bir değer (true) ise, `static_assert` bildirimi etkisi yoktur.|  
-|`string-literal`|Varsa görüntülenen bir ileti `constant-expression` parametresi sıfırda. İleti bir karakter dizesidir [temel karakter kümesi](../c-language/ascii-character-set.md) olduğu derleyici; değil [birden çok baytlı veya uluslararası karakter](../c-language/multibyte-and-wide-characters.md).|  
+|`constant-expression`|Bir Boolean değerine dönüştürülebilen integral sabit ifadesi.<br /><br /> Değerlendirilmiş ifade sıfırsa (false) `string-literal` parametresi görüntülenir ve derleme bir hata ile başarısız oluyor. İfade sıfır olmayan (true), ise **static_assert** bildiriminin etkisi yoktur.|  
+|`string-literal`|Bir ileti görüntülenir `constant-expression` parametresi sıfırsa. İleti bir karakter dizesidir [temel karakter kümesinde](../c-language/ascii-character-set.md) olduğundan derleyici; değil [çok baytlı veya geniş karakterler](../c-language/multibyte-and-wide-characters.md).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `constant-expression` Parametresinin bir `static_assert` bildirimi gösteren bir *yazılım onaylama*. Bir yazılım onaylama programınızdaki belirli bir noktada doğru olması için beklediğiniz bir koşulu belirtir. Koşul true ise `static_assert` bildirimi etkisi yoktur. Koşul yanlış ise, onaylama işlemi başarısız olursa, derleyici iletisi görüntüler `string-literal` parametre ve bir hata ile derleme başarısız oluyor. Visual Studio 2017 ve daha sonra değişmez dize değeri parametresi isteğe bağlıdır. 
+ `constant-expression` Parametresinin bir **static_assert** bildirimini temsil eder bir *yazılım onayını*. Yazılım onaylama programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Koşul true ise **static_assert** bildiriminin etkisi yoktur. Koşul yanlışsa onaylama işlemi başarısızsa, derleyici iletisi görüntüler `string-literal` parametre ve bir hata ile derleme başarısız. Visual Studio 2017 ve sonraki sürümlerinde, dize sabit değeri parametresi isteğe bağlıdır. 
   
- `static_assert` Bildirimi derleme zamanında yazılım onaylama sınar. Buna karşılık, [assert makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu çalışma zamanında yazılım onaylama sınar ve çalışma zamanında Maliyet alanı ya da saat oluşturur. `static_assert` Bildirimidir bağımsız şablon eklenebilir olduğundan, şablonları hata ayıklama için özellikle yararlı `constant-expression` parametresi.  
+ **Static_assert** bildirimi derleme zamanında yazılım onayını sınar. Buna karşılık, [assert makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu, çalışma zamanında yazılım onayını sınar ve boş alan veya süre çalışma zamanı maliyetine neden olur. **Static_assert** bildirimi, şablon bağımsız değişkenleri eklenebilir olduğundan, şablonları hata ayıklama için özellikle kullanışlıdır `constant-expression` parametresi.  
   
- Derleyici inceler `static_assert` bildirimi karşılaşıldığında söz dizimi hataları için bildirimi. Derleyici değerlendirir `constant-expression` hemen bir şablon parametresi dayanmayacak, parametre. Aksi takdirde derleyici değerlendirir `constant-expression` şablon örneği oluşturulduğunda parametresi. Sonuç olarak, derleyici bir tanılama iletisi kez ne zaman sorun bildirimi ile karşılaştı ve yeniden ne zaman şablon örneği.  
+ Derleyici inceler **static_assert** bildirimi bildirimi oluştuğunda sözdizimi hataları. Derleyici değerlendirir `constant-expression` parametresini hemen, bir şablon parametresine bağımlı değildir. Aksi halde, derleyici değerlendirir `constant-expression` şablon örneği başlatıldığında parametresi. Sonuç olarak, derleyici bir tanılama iletisi kez ne zaman sorun bildirimle karşılaşıldığında ve yeniden şablon oluşturulduğunda.  
   
- Kullanabileceğiniz `static_assert` anahtar sözcük ad alanı, sınıf veya blok kapsamı. ( `static_assert` Sözcüktür bildirimi teknik olarak, ad alanı kapsamda kullanılabildiğinden, yeni bir ad, programa sunmaz olsa bile.)  
+ Kullanabileceğiniz **static_assert** ad alanı, sınıf veya blok kapsamında anahtar sözcüğü. ( **Static_assert** anahtar sözcüğü, bir bildirim teknik rağmen ad uzayı kapsamında kullanılabildiğinden, yeni adı programınıza sunmaz.)  
   
 ## <a name="description"></a>Açıklama  
- Aşağıdaki örnekte, `static_assert` bildirimi ad alanı kapsama sahiptir. Yazı tipi boyutu derleyici bildiği için `void *`, ifade hemen değerlendirilir.  
+ Aşağıdaki örnekte, **static_assert** bildirimi ad alanı kapsamına sahiptir. Derleyici türünün boyutunu bildiğinden `void *`, ifade hemen değerlendirilir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");  
 ```  
   
 ## <a name="description"></a>Açıklama  
- Aşağıdaki örnekte, `static_assert` bildirimi sınıf kapsamı vardır. `static_assert` Şablon parametresi olduğunu doğrulayan bir *düz eski verileri* (POD) yazın. Derleyici inceler `static_assert` bildirilmiş ancak değil değerlendirmek bildirimi `constant-expression` kadar parametresi `basic_string` sınıf şablonu örneği `main()`.  
+ Aşağıdaki örnekte, **static_assert** bildirimi sınıf kapsamına sahiptir. **Static_assert** şablon parametresi olduğunu doğrulayan bir *düz eski veriler* (POD) türünde. Derleyici inceler **static_assert** bildirilmiş ancak değerlendirmez bildirimi `constant-expression` kadar parametre `basic_string` sınıf şablonu oluşturulana `main()`.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 #include <type_traits>  
 #include <iosfwd>  
 namespace std {  
@@ -91,11 +92,11 @@ int main()
 ```  
   
 ## <a name="description"></a>Açıklama  
- Aşağıdaki örnekte, `static_assert` bildirimi blok kapsamı vardır. `static_assert` VMPage yapısı boyutunu sisteminin sanal bellek pagesize eşit olduğunu doğrular.  
+ Aşağıdaki örnekte, **static_assert** bildirimi blok kapsamına sahiptir. **Static_assert** VMPage yapısının boyutunun sistemin sanal bellek sayfa için ona eşit olduğunu doğrular.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 #include <sys/param.h> // defines PAGESIZE  
 class VMMClient {  
 public:  

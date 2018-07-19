@@ -22,34 +22,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5746c8f54a51e24bad23dcb66f6648266e2e4b56
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 39078cfef6b327aee60d98fce6cccc0b69c5953b
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704821"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941710"
 ---
 # <a name="ptr32-ptr64"></a>__ptr32, __ptr64
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-`__ptr32` yerel bir işaretçi bir 32 bit sistemdeki temsil ederken `__ptr64` yerel bir işaretçi bir 64-bit sistemde temsil eder.
+**__ptr32** 32-bit sistemde yerel bir işaretçiyi temsil ederken **__ptr64** 64-bit sistemde yerel bir işaretçiyi temsil eder.
 
-Aşağıdaki örnek, bu işaretçi türleri bildirme gösterilmektedir:
+Aşağıdaki örnek, bu İşaretçi türlerinin her biri bildirmek gösterilmektedir:
 
 ```cpp
 int * __ptr32 p32;
 int * __ptr64 p64;
 ```
 
- İle bir işaretçi bir 32 bit sistemde bildirilen `__ptr64` 32-bit işaretçi kesilir. İle bir işaretçi bir 64-bit sistemde bildirilen `__ptr32` bir 64-bit işaretçi yüklenen.
+ Bir işaretçi bir 32-bit sistemde bildirilen **__ptr64** 32 bit işaretçi kesilir. Bir işaretçi bir 64-bit sistemde bildirilen **__ptr32** 64-bit işaretçi durumunda bırakılması.
 
 > [!NOTE]
-> Kullanamazsınız `__ptr32` veya `__ptr64` ile derleme yapılırken **/CLR: pure**. Derleyici Hatası C2472 yoksa, oluşturulur. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+> Kullanamazsınız **__ptr32** veya **__ptr64** ile derleme yaparken **/CLR: pure**. Aksi halde, derleyici hatası C2472 oluşturulur. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bildirme ve işaretçileri ile tahsis gösterilmektedir `__ptr32` ve `__ptr64` anahtar sözcükler.
+Aşağıdaki örnek, bildirmek ve işaretçilerle ayırmak gösterilmektedir **__ptr32** ve **__ptr64** anahtar sözcükleri.
 
 ```cpp
 #include <cstdlib>
@@ -77,7 +77,7 @@ int main()
 64
 ```
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

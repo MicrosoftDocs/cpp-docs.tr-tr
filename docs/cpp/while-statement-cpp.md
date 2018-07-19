@@ -17,11 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f281007bea3f23bc8e7cebcdd68b9a306b500e9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fc826b588f133abb93c9942e7907dd8b0fce9574
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948034"
 ---
 # <a name="while-statement-c"></a>while Deyimi (C++)
 Yürütür *deyimi* kadar sürekli olarak *ifade* sıfır olarak değerlendirilir.  
@@ -30,18 +31,18 @@ Yürütür *deyimi* kadar sürekli olarak *ifade* sıfır olarak değerlendirili
   
 ```  
   
-      while ( expression )  
+while ( expression )  
    statement  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Test *ifade* ; döngünün her yürütmeden önce gerçekleşmesi bu nedenle, bir `while` sıfır veya daha fazla kez döngü yürütür. *ifade* tamsayı türü, bir işaretçi türü ya da bir sınıf bir integral anlaşılır bir dönüştürme türünde veya işaretçi türü olmalıdır.  
+ Testi *ifade* gerçekleşir; döngünün her yürütmesinden önce bu nedenle, bir **sırada** sıfır veya daha fazla kez döngü yürütür. *ifade* integral türünde, bir işaretçi türü veya bir sınıf türünde bir dönüştürmesini integral veya işaretçi türü olmalıdır.  
   
- A `while` döngü de sonlandırmak ne zaman bir [sonu](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), veya [dönmek](../cpp/return-statement-cpp.md) deyimi içinde gövdesi yürütülür. Kullanım [devam](../cpp/continue-statement-cpp.md) çıkmadan geçerli yinelemeye sonlandırmak için `while` döngü. **Devam** sonraki yinelemesini denetim geçirir `while` döngü.  
+ A **sırada** döngü de sonlandırılabilir bir [kesme](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), veya [dönüş](../cpp/return-statement-cpp.md) içindeki deyim gövdesi yürütülür. Kullanım [devam](../cpp/continue-statement-cpp.md) çıkmadan geçerli yinelemeyi sonlandırmak için **sırada** döngü. **Devam** denetimi bir sonraki yinelemesine geçirir **sırada** döngü.  
   
- Aşağıdaki kod, bir dizeden sona eklenen alt çizgileri kesmek için bir `while` döngüsü kullanır:  
+ Aşağıdaki kod bir **sırada** boşluklar kırpılacak döngü bir dizedeki alt çizgileri:  
   
-```  
+```cpp 
 // while_statement.cpp  
   
 #include <string.h>  
@@ -72,7 +73,7 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yineleme deyimleri](../cpp/iteration-statements-cpp.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [yapın-while deyimi (C++)](../cpp/do-while-statement-cpp.md)   
  [for deyimi (C++)](../cpp/for-statement-cpp.md)   
  [Range-based for Deyimi (C++)](../cpp/range-based-for-statement-cpp.md)

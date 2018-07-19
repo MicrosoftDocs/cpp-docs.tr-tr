@@ -20,18 +20,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbdebb1ab79ceab44a408fc182b6037f2d32fae
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 94e9c33fb69b439cc6c99d87d00d24f60e87d780
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358452"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882136"
 ---
 # <a name="ca2aex-class"></a>CA2AEX sınıfı
-Bu sınıf dize dönüştürme makroları tarafından kullanılan `CA2TEX` ve `CT2AEX`ve typedef **CA2A**.  
+Bu sınıf, dize dönüşüm makroları CA2TEX ve CT2AEX ve typedef CA2A tarafından kullanılır.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,8 +41,8 @@ class CA2AEX
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `t_nBufferLength`  
- Çeviri işleminde kullanılan arabellek boyutu. Varsayılan uzunluk 128 bayt'tır.  
+ *t_nBufferLength*  
+ Çeviri işlemde kullanılan arabellek boyutu. Varsayılan uzunluk 128 bayt'tır.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -51,44 +51,44 @@ class CA2AEX
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CA2AEX::CA2AEX](#ca2aex)|Oluşturucu.|  
-|[CA2AEX:: ~ CA2AEX](#dtor)|Yok Edicisi.|  
+|[CA2AEX:: ~ CA2AEX](#dtor)|Yıkıcı.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CA2AEX::operator LPSTR](#operator_lpstr)|Dönüşüm işleci.|  
+|[CA2AEX::operator LPSTR](#operator_lpstr)|Dönüştürme işleci.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CA2AEX::m_psz](#m_psz)|Kaynak dizesi depolar veri üyesi.|  
-|[CA2AEX::m_szBuffer](#m_szbuffer)|Dönüştürülmüş dizeyi depolamak için kullanılan statik arabelleği.|  
+|[CA2AEX::m_szBuffer](#m_szbuffer)|Dönüştürülmüş dize depolamak için kullanılan statik arabelleği.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Fazladan işlevsellik gerekli olmadığı sürece kullanmak `CA2TEX`, `CT2AEX`, veya **CA2A** kendi kodu.  
+ Ek işlevler gerekmiyorsa, kendi kodunuzda CA2TEX, CT2AEX veya CA2A kullanın.  
   
- Bu sınıf dönüştürme işleminin sonucu depolamak için kullanılan bir sabit boyutlu statik arabellek içerir. Bellek kullanarak sınıfı sonucu statik belleğe sığmayacak kadar büyük olursa ayırır `malloc`, nesne kapsam dışına çıktığında bellek boşaltma. Bu, metin dönüşüm makroları önceki sürümlerinde ATL, bu sınıfın Döngülerde kullanmak güvenli ve yığın taşması olmaz sağlar.  
+ Bu sınıf, dönüştürmenin sonucu depolamak için kullanılan sabit boyutlu bir statik arabellek içerir. Sonucu statik arabelleğe sığamayacak kadar büyük olursa, sınıfı kullanarak bellek ayırır **malloc**, nesne kapsam dışına çıktığında bellek boşaltma. Bu, metin dönüşüm makroları önceki sürümlerinde ATL, bu sınıf Döngülerde güvenlidir ve stack overflow olmaz sağlar.  
   
- Sınıf başarısız olur ve yığın bellek çalışırsa, çağrı `AtlThrow` bağımsız değişkeni ile **E_OUTOFMEMORY**.  
+ Sınıfı başarısız olur ve yığın bellek çalışırsa, çağrı `AtlThrow` E_OUTOFMEMORY bağımsız.  
   
- Varsayılan olarak, ATL dönüştürme sınıfları ve makroları geçerli iş parçacığının ANSI kod sayfası dönüştürme için kullanın.  
+ Varsayılan olarak, geçerli iş parçacığının ANSI kod sayfasına dönüştürme için ATL dönüştürme sınıfları ve makroları kullanın.  
   
  Aşağıdaki makroları bu sınıfa bağlıdır:  
   
-- `CA2TEX`  
+- CA2TEX  
   
-- `CT2AEX`  
+- CT2AEX  
   
- Aşağıdaki typedef bu sınıfa bağlıdır:  
+ Aşağıdaki tür tanımı bu sınıfa bağlıdır:  
   
-- **CA2A**  
+- CA2A  
   
- Bu metin dönüşüm makroları tartışma için bkz [ATL ve MFC dize dönüştürme makrolarını](string-conversion-macros.md).  
+ Bu metin dönüşüm makroları bir tartışma için bkz [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md).  
   
 ## <a name="example"></a>Örnek  
- Bkz: [ATL ve MFC dize dönüştürme makrolarını](string-conversion-macros.md) Bu dize dönüştürme makrolarını kullanma örneği için.  
+ Bkz: [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md) Bu dize dönüştürme makrolarını kullanma örneği için.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlconv.h  
@@ -102,24 +102,24 @@ CA2AEX(LPCSTR psz) throw(...);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `psz`  
+ *psz*  
  Dönüştürülecek metin dizesi.  
   
- `nCodePage`  
+ *nCodePage*  
  Bu sınıftaki kullanılmayan.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çeviri için gerekli olan arabellek oluşturur.  
+ Çeviri için gerekli arabellek oluşturur.  
   
 ##  <a name="dtor"></a>  CA2AEX:: ~ CA2AEX  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CA2AEX() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayrılmış arabelleğe boşaltır.  
+ Ayrılmış ara belleğini serbest bırakır.  
   
 ##  <a name="m_psz"></a>  CA2AEX::m_psz  
  Kaynak dizesi depolar veri üyesi.  
@@ -129,21 +129,21 @@ LPSTR m_psz;
 ```  
   
 ##  <a name="m_szbuffer"></a>  CA2AEX::m_szBuffer  
- Dönüştürülmüş dizeyi depolamak için kullanılan statik arabelleği.  
+ Dönüştürülmüş dize depolamak için kullanılan statik arabelleği.  
   
 ```
 char m_szBuffer[ t_nBufferLength];
 ```  
   
 ##  <a name="operator_lpstr"></a>  CA2AEX::operator LPSTR  
- Dönüşüm işleci.  
+ Dönüştürme işleci.  
   
 ```
 operator LPSTR() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Metin dizesini türü olarak döndürür **LPSTR**.  
+ Metin dizesi LPSTR türü olarak döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CA2CAEX sınıfı](../../atl/reference/ca2caex-class.md)   
@@ -151,4 +151,4 @@ operator LPSTR() const throw();
  [CW2AEX sınıfı](../../atl/reference/cw2aex-class.md)   
  [CW2CWEX sınıfı](../../atl/reference/cw2cwex-class.md)   
  [CW2WEX sınıfı](../../atl/reference/cw2wex-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

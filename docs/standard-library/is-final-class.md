@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b3d2c37b73d79619aeb16e7b1b81ad71819b09b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 101d987574ca789ce674c7ed01726847a66a4747
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844061"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962019"
 ---
 # <a name="isfinal-class"></a>is_final sınıfı
 
-Türü işaretli bir sınıf türü olup olmadığını sınar `final`.
+Türü olarak işaretlenmiş bir sınıf türü olup olmadığını sınar `final`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_final;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` bir sınıf türü olarak işaretlenmiş `final`, aksi takdirde false tutar. Varsa `T` bir sınıf türü tam bir tür olması gerekir.
+Karşılaştırmasının bir örneği true tutan türü *T* sınıf türü olarak işaretlenmiş `final`, aksi takdirde false tutar. Varsa *T* bir sınıf türü tam bir tür olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 

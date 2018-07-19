@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29088c56d7020b38febb96be7512771a258e25fe
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1dd5bd4c7bc88d0a0acc8abc18b0d7b3462b7f52
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361694"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880852"
 ---
 # <a name="catlmodulet-class"></a>CAtlModuleT sınıfı
 Bu sınıf bir ATL modül uygular.  
@@ -42,8 +42,8 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Sınıfınızda türetilmiş `CAtlModuleT`.  
+ *T*  
+ Sınıfınıza türetilen `CAtlModuleT`.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -57,7 +57,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlModuleT::InitLibId](#initlibid)|Geçerli modül GUID içeren veri üyesi başlatır.|  
+|[CAtlModuleT::InitLibId](#initlibid)|Geçerli modül GUID'i içeren veri üyesi başlatır.|  
 |[CAtlModuleT::RegisterAppId](#registerappid)|EXE kayıt defterine ekler.|  
 |[CAtlModuleT::RegisterServer](#registerserver)|Hizmet kayıt defterine ekler.|  
 |[CAtlModuleT::UnregisterAppId](#unregisterappid)|EXE kayıt defterinden kaldırır.|  
@@ -65,9 +65,9 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 |[CAtlModuleT::UpdateRegistryAppId](#updateregistryappid)|Kayıt defterinde EXE bilgilerini güncelleştirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CAtlModuleT`, türetilmiş [CAtlModule](../../atl/reference/catlmodule-class.md), bir yürütülebilir dosya (EXE) veya bir hizmet (EXE) ATL modül uygular. Bir hizmeti modülü Windows başladığında arka planda çalışan bir Windows uygulaması iken bir yürütülebilir yerel ve işlem dışı bir sunucu modülüdür.  
+ `CAtlModuleT`, öğesinden türetilen [CAtlModule](../../atl/reference/catlmodule-class.md), bir yürütülebilir (EXE) ya da hizmet (EXE) ATL modülüne uygular. Windows başladığında arka planda çalışan bir Windows uygulaması hizmeti modülü iken bir çalıştırılabilir modüle bir yerel, işlem dışı sunucusudur.  
   
- `CAtlModuleT` başlatma, kaydetme ve modül, kaydını kaldırmak için destek sağlar.  
+ `CAtlModuleT` başlatma, kaydetme ve modülün kaydını kaldırmak için destek sağlar.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [_ATL_MODULE](atl-typedefs.md#_atl_module)  
@@ -91,14 +91,14 @@ CAtlModuleT() throw();
  Çağrıları [CAtlModuleT::InitLibId](#initlibid).  
   
 ##  <a name="initlibid"></a>  CAtlModuleT::InitLibId  
- Geçerli modül GUID içeren veri üyesi başlatır.  
+ Geçerli modül GUID'i içeren veri üyesi başlatır.  
   
 ```
 static void InitLibId() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yapıcı tarafından adlı [CAtlModuleT::CAtlModuleT](#catlmodulet).  
+ Oluşturucu tarafından adlandırılan [CAtlModuleT::CAtlModuleT](#catlmodulet).  
   
 ##  <a name="registerappid"></a>  CAtlModuleT::RegisterAppId  
  EXE kayıt defterine ekler.  
@@ -108,7 +108,7 @@ HRESULT RegisterAppId() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ##  <a name="registerserver"></a>  CAtlModuleT::RegisterServer  
  Hizmet kayıt defterine ekler.  
@@ -120,14 +120,14 @@ HRESULT RegisterServer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bRegTypeLib`  
- Tür kitaplığı kaydedilecek ise TRUE. Varsayılan değer FALSE olur.  
+ *bRegTypeLib*  
+ Tür kitaplığı kayıtlı olması ise TRUE. Varsayılan değer FALSE olur.  
   
- `pCLSID`  
- CLSID noktalarına nesnenin kayıtlı olması gerekir. NULL (varsayılan değer) tüm nesneleri nesneyi eşlemesindeki kayıtlı değilse.  
+ *pCLSID*  
+ CLSID işaret kaydedilecek nesne. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kayıtlı değilse.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ##  <a name="unregisterappid"></a>  CAtlModuleT::UnregisterAppId  
  EXE kayıt defterinden kaldırır.  
@@ -137,7 +137,7 @@ HRESULT UnregisterAppId() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ##  <a name="unregisterserver"></a>  CAtlModuleT::UnregisterServer  
  Hizmet kayıt defterinden kaldırır.  
@@ -149,14 +149,14 @@ HRESULT UnregisterServer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bUnRegTypeLib`  
- Tür kitaplığı kaydı için aynı zamanda ise TRUE.  
+ *bUnRegTypeLib*  
+ Tür kitaplığı da silinmesine izin ise TRUE.  
   
- `pCLSID`  
- CLSID noktalarına nesnenin sona erdirilecek. NULL (varsayılan değer) tüm nesneleri nesneyi eşlemesindeki kaydı olacaksa.  
+ *pCLSID*  
+ CLSID işaret silinmesine izin nesnesi. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kaydı silinecek durumunda.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ##  <a name="updateregistryappid"></a>  CAtlModuleT::UpdateRegistryAppId  
  Kayıt defterinde EXE bilgilerini güncelleştirir.  
@@ -166,13 +166,13 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `bRegister`  
+ *bRegister*  
  Ayrılmış.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK başarı veya başarısızlık HRESULT hata döndürür.  
+ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CAtlModule sınıfı](../../atl/reference/catlmodule-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Modül sınıfları](../../atl/atl-module-classes.md)

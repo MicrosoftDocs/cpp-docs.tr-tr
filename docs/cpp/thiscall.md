@@ -17,34 +17,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4912628529ae0b47a5a5b938ab8e6d25a9099510
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d1b7718e4c6d270536f5d7973a1b5a3ec0e61f28
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704409"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941593"
 ---
 # <a name="thiscall"></a>__thiscall
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-`__thiscall` Çağırma üye işlevlerini kullanılır ve değişken bağımsız değişken kullanmayın C++ üye işlevleri tarafından kullanılan varsayılan çağırma. Altında `__thiscall`, aranan olanaksız yığını temizler `vararg` işlevleri. Bağımsız değişkenler kalan yığında sağdan sola, ile `this` kayıt ECX aracılığıyla ve yığında x86 değil, geçirilen işaretçi mimarisi.
+**__Thiscall** çağırma kuralı üye işlevlerde kullanılır ve değişken bağımsız değişkenler kullanmayan C++ üye işlevleri tarafından kullanılan varsayılan çağırma kuralı. Altında **__thiscall**, çağrılan mümkün değildir yığını temizler `vararg` işlevleri. Bağımsız değişkenler itilir yığında sağdan sola, ile **bu** işaretçi ECX kayıt aracılığıyla ve x86 değil yığında geçirilen mimarisi.
 
-Kullanmak için bir neden `__thiscall` olan üye işlevlerini kullanmak sınıflarda olduğu `__clrcall` varsayılan olarak. Bu durumda, kullanabileceğiniz `__thiscall` tek tek üye işlevleri yerel koddan aranabilir yapma.
+Kullanmak için bir neden **__thiscall** sınıflar, üye işlevleri kullanımı olan `__clrcall` varsayılan olarak. Bu durumda, kullanabileceğiniz **__thiscall** üyesine çalıştığından yerel koddan çağrılabilir emin olmak için.
 
-İle derleme yapılırken [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), tüm işlevleri ve işlev işaretçileri `__clrcall` aksi belirtilmediği sürece. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+İle derlerken [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), tüm işlevleri ve işlev işaretçileri `__clrcall` aksi belirtilmediği sürece. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Visual C++ 2005 önce sürümlerde `__thiscall` çağırma kuralı açıkça belirtilemedi bir programda çünkü `__thiscall` bir anahtar sözcük değildi.
+Visual C++ 2005 önce sürümlerde **__thiscall** çağırma kuralı açıkça belirtilemedi bir programda çünkü **__thiscall** bir anahtar sözcük değildi.
 
-`vararg` üye işlevlerini kullanmak `__cdecl` çağırma. Tüm işlev bağımsız değişkenleri, ile yığına `this` işaretçi yerleştirilen yığında son
+`vararg` üye işlevleri kullanmak **__cdecl** çağırma kuralı. Tüm işlev bağımsız değişkenleri ile yığına itilir **bu** yerleştirilen işaretçi yığında son
 
-Bu çağırma yalnızca C++ için geçerli olduğundan, hiçbir C adı decoration düzeni yoktur.
+Bu çağırma kuralı yalnızca C++ için geçerli olduğundan, hiçbir C ad düzenleme şeması yok.
 
-ARM ve x64 makineler, `__thiscall` kabul edilir ve derleyici tarafından yoksayıldı.
+ARM ve x64 makineler **__thiscall** kabul edilir ve derleyici tarafından yok sayılır.
 
 Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir.
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

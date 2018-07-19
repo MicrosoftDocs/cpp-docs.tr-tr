@@ -21,28 +21,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b99147c9eb9a331d7cc0f9064b858979d00e2804
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6320f4819cd8d6172bf620711038b17abcda11f4
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365047"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880800"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
-Bu makroları yararlı hata ayıklama ve izleme olanakları sağlar.  
+Bu makrolar kullanışlı hata ayıklama ve izleme olanakları sağlayın.  
   
 |||  
 |-|-|  
-|[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|, Herhangi bir arabirim sızdırıyor çıkış penceresine yazar zaman algılanır `_Module.Term` olarak adlandırılır.|  
-|[_ATL_DEBUG_QI](#_atl_debug_qi)|Tüm çağrıları Yazar `QueryInterface` çıkış penceresine.|  
-|[ATLASSERT](#atlassert)|Aynı işlevi gerçekleştirir [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makrosu C Çalışma Zamanı Kitaplığı'nda bulundu.|  
-|[ATLENSURE](#atlensure)|Parametre doğrulaması gerçekleştirir. Çağrı `AtlThrow` gerekirse|  
-|[ATLTRACENOTIMPL](#atltracenotimpl)|Belirtilen işlev uygulanmadı döküm cihaza bir ileti gönderir.|  
-|[ATLTRACE](#alttrace)|Uyarı düzeyleri ve belirtilen bayrakları göre hata ayıklayıcı penceresini gibi bir çıktı cihazına bildirir. Geriye dönük uyumluluk için dahil.|  
-|[ATLTRACE2](#atltrace2)|Uyarı düzeyleri ve belirtilen bayrakları göre hata ayıklayıcı penceresini gibi bir çıktı cihazına bildirir.|  
+|[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|Yazar, çıkış penceresinde, herhangi bir arabirimde sızıntıları zaman algılanır `_Module.Term` çağrılır.|  
+|[_ATL_DEBUG_QI](#_atl_debug_qi)|Tüm çağrılar için Yazar `QueryInterface` çıkış penceresine.|  
+|[ATLASSERT](#atlassert)|Aynı işlevi gerçekleştirir [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makrosu C Çalışma Zamanı Kitaplığı'nda bulunamadı.|  
+|[ATLENSURE](#atlensure)|Parametre doğrulama gerçekleştirir. Çağrı `AtlThrow` gerekirse|  
+|[ATLTRACENOTIMPL](#atltracenotimpl)|Bir ileti, belirtilen işlev uygulanmadı döküm cihaza gönderir.|  
+|[ATLTRACE](#alttrace)|Belirtilen bayraklar ve düzeylerine göre hata ayıklayıcısı penceresi gibi bir çıktı cihazına uyarılar bildirir. Geriye dönük uyumluluk için dahildir.|  
+|[ATLTRACE2](#atltrace2)|Belirtilen bayraklar ve düzeylerine göre hata ayıklayıcısı penceresi gibi bir çıktı cihazına uyarılar bildirir.|  
   
 ##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES  
- ATL üstbilgi dosyalarının tüm izleme eklemeden önce bu makrosu tanımlama `AddRef` ve **sürüm** çıkış penceresine, bileşenlerinizin arabirimlerindeki çağırır.  
+ ATL üstbilgi dosyalarını tüm izleme eklemeden önce bu makroyu tanımla `AddRef` ve `Release` çıkış penceresine, bileşenlerin arabirimleri çağırır.  
   
 ```
 #define _ATL_DEBUG_INTERFACES
@@ -53,54 +53,54 @@ Bu makroları yararlı hata ayıklama ve izleme olanakları sağlar.
   
  `ATL: QIThunk - 2008         AddRef  :   Object = 0x00d81ba0   Refcount = 1   CBug - IBug`  
   
- Her izleme ilk kısmı her zaman olacaktır `ATL: QIThunk`. Sonraki belirli tanımlayan bir değerdir *dönüştürücü arabirim* kullanılan. Bir arabirim dönüştürücü başvuru sayısı korumak ve burada kullanılan izleme yeteneği sağlamak için kullanılan bir nesnedir. Yeni bir arabirim dönüştürücü her çağrı için oluşturulan `QueryInterface` isteklerinde dışında **IUnknown** arabirimi (Bu durumda, aynı dönüştürücü her zaman COM'ın kimlik kurallarıyla uyumlu döndürülür).  
+ Her izleme ilk bölümünü her zaman olacaktır `ATL: QIThunk`. Ardından, belirli tanımlayan bir değer olan *dönüştürücü arabirim* kullanılan. Bir arabirim dönüştürücü başvuru sayısı Bakımı ve burada kullanılan izleme yeteneği sağlamak için kullanılan bir nesnedir. Yeni bir arabirim dönüştürücü yapılan her çağrı oluşturulan `QueryInterface` istekleri dışında `IUnknown` arabirimi (Bu durumda, aynı dönüştürücü her COM'ın kimlik kurallarına uyan döndürülür).  
   
- Sonraki göreceğiniz `AddRef` veya **sürüm** belirten hangi yöntemi çağrıldı. Olan arabirimi başvuru sayısı değiştirildi nesnesini belirten bir değer görürsünüz. İzlenen değer **bu** nesne işaretçisi.  
+ Sonraki göreceğiniz `AddRef` veya `Release` belirten hangi yöntemi çağrıldı. Olan arabirimi başvuru sayısını değiştirildi nesneyi tanımlayan bir değer görürsünüz. İzlenen değer **bu** nesne işaretçisi.  
   
- Sonra Bu dönüştürücü başvuru sayısına izlenen başvuru sayısı: `AddRef` veya **sürüm** çağrıldı. Bu başvuru sayısı nesne başvuru sayısı eşleşmeyebilir unutmayın. Her dönüştürücü tam COM'in başvuru sayımı kurallarıyla uyumlu yardımcı olmak için kendi başvuru sayımı tutar.  
+ Bu dönüştürücü sonra başvuru sayısını izleneceğini başvuru sayısı olan `AddRef` veya `Release` çağrıldı. Bu başvuru sayısı nesne başvuru sayımını eşleşmeyebilir unutmayın. Her dönüştürücü tam başvuru sayımını COM'ın kurallarıyla uyumlu yardımcı olmak için kendi başvuru sayısını tutar.  
   
- Son izlenen nesne ve tarafından etkilenen arabirimi adı bilgidir `AddRef` veya **sürüm** çağırın.  
+ Son izlenen nesne ve tarafından etkilenen arabirimi adını bilgidir `AddRef` veya `Release` çağırın.  
   
- Herhangi bir arabirim sunucu kapatıldığında, algılanan sızıntıları ve `_Module.Term` çağrıldığında oturum açmış olmanız şuna benzer:  
+ Herhangi bir arabirim sunucu kapatıldığında, algılanan sızıntıları ve `_Module.Term` çağrıldığında kaydedilir şöyle:  
   
  `ATL: QIThunk - 2005         LEAK    :   Object = 0x00d81ca0   Refcount = 1   MaxRefCount = 1   CBug - IBug`  
   
- Bilgileri doğrudan önceki izleme deyimleri sağlanan bilgilere eşlemeleri burada sağlanan, inceleyebilirsiniz için bir arabirim dönüştürücü tam yaşam süresi başvuru sayar. Ayrıca, bu arabirimi dönüştürücü göstergesidir maksimum başvuru sayısı alın.  
+ Bilgileri burada önceki izleme deyimleri içinde sağlanan bilgileri doğrudan eşlenir sağlanan, incelemeniz başvuru arabirimi dönüştürücü tüm kullanım ömrü boyunca sayar. Ayrıca, bu arabirimi dönüştürücü üzerinde en yüksek başvuru sayısı bir göstergesi alın.  
   
 > [!NOTE]
-> `_ATL_DEBUG_INTERFACES` perakende yapılarında kullanılır.  
+> _ATL_DEBUG_INTERFACES perakende sürümlerde kullanılabilir.  
   
 ##  <a name="_atl_debug_qi"></a>  _ATL_DEBUG_QI  
- Tüm çağrıları Yazar `QueryInterface` çıkış penceresine.  
+ Tüm çağrılar için Yazar `QueryInterface` çıkış penceresine.  
   
 ```
 #define _ATL_DEBUG_QI
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı, `QueryInterface` başarısız oldu, çıktı penceresi görüntülenir:  
+ Bir çağrı, `QueryInterface` başarısız oldu, çıkış penceresinde görüntülenir:  
   
  *Arabirim adı* - `failed`  
   
 ##  <a name="atlassert"></a>  ATLASSERT  
- `ATLASSERT` Makrosu aynı işlevi gerçekleştirir [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makrosu C Çalışma Zamanı Kitaplığı'nda bulundu.  
+ ATLASSERT makro aynı işlevi gerçekleştirir [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makrosu C Çalışma Zamanı Kitaplığı'nda bulunamadı.  
   
 ```
 ATLASSERT(booleanExpression);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `booleanExpression`  
- Sıfır olmayan bir değer veya 0 (işaretçileri dahil) ifadesi.  
+ *booleanDeyimi*  
+ İfade (işaretçileri dahil), sıfır ya da 0 olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama derlemelerinde, `ATLASSERT` değerlendirir `booleanExpression` ve sonucu false olduğunda hata ayıklama raporunu oluşturur.  
+ Hata ayıklama yapılarında ATLASSERT değerlendirir *booleanDeyimi* ve sonucun false olduğu bir hata ayıklama raporunu oluşturur.  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldef.h  
     
 ##  <a name="atlensure"></a>  ATLENSURE  
- Bu makrosu bir işleve parametreleri doğrulamak için kullanılır.  
+ Bu makro, parametreler bir işleve doğrulamak için kullanılır.  
   
 ```
 ATLENSURE(booleanExpression);
@@ -108,22 +108,22 @@ ATLENSURE_THROW(booleanExpression, hr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `booleanExpression`  
- Sınanacak bir Boole ifadesini belirtir.  
+ *booleanDeyimi*  
+ Test edilecek bir Boole ifadesini belirtir.  
   
- `hr`  
- Döndürülecek bir hata kodu belirtir.  
+ *İK*  
+ Döndürülecek bir hata kodunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu makroları algılamak ve hatalı parametre kullanım kullanıcıya bildirmek için bir mekanizma sağlar.  
+ Bu makrolar, algılamak ve hatalı parametre kullanımı kullanıcıya bildirmek için bir mekanizma sağlar.  
   
- Makro çağrıları `ATLASSERT` ve koşul çağrıları başarısız olursa `AtlThrow`.  
+ Makro çağrısı ATLASSERT ve koşul çağrıları başarısız olursa `AtlThrow`.  
   
- İçinde **ATLENSURE** durumda `AtlThrow` E_FAIL ile adlandırılır.  
+ ATLENSURE durumda `AtlThrow` E_FAIL ile adlandırılır.  
   
- İçinde **ATLENSURE_THROW** durumda `AtlThrow` belirtilen HRESULT olarak adlandırılır.  
+ ATLENSURE_THROW durumda `AtlThrow` belirtilen HRESULT çağrılır.  
   
- Arasındaki farkı **ATLENSURE** ve `ATLASSERT` olan **ATLENSURE** sürümdeki bir özel durum oluşturur de olduğu gibi hata ayıklama yapıları atar.  
+ ATLENSURE ATLASSERT arasındaki fark, ATLENSURE sürüm yapılarında de hata ayıklama yapıları olduğu gibi bir özel durum oluşturur ' dir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]  
@@ -132,18 +132,18 @@ ATLENSURE_THROW(booleanExpression, hr);
  **Başlık:** afx.h  
 
 ##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL  
- ATL hata ayıklama derlemelerinde dizesi gönderir " `funcname` uygulanmadı" döndürür ve döküm cihaz için **E_NOTIMPL**.  
+ ATL hata ayıklama yapılarında dize gönderir " *funcname* uygulanmadı" döküm cihaz ve E_NOTIMPL döndürür.  
   
 ```
 ATLTRACENOTIMPL(funcname);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `funcname`  
- [in] Uygulanmadı işlevin adını içeren dize.  
+ *funcname*  
+ [in] Henüz uygulanmadı işlevinin adını içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yayın derlemelerde yalnızca döndürür **E_NOTIMPL**.  
+ Sürüm yapılarında yalnızca E_NOTIMPL döndürür.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#127](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_2.cpp)]  
@@ -152,7 +152,7 @@ ATLTRACENOTIMPL(funcname);
  **Başlık:** atltrace.h 
 
 ##  <a name="atltrace"></a>  ATLTRACE
- Uyarı düzeyleri ve belirtilen bayrakları göre hata ayıklayıcı penceresini gibi bir çıktı cihazına bildirir. Geriye dönük uyumluluk için dahil.  
+ Belirtilen bayraklar ve düzeylerine göre hata ayıklayıcısı penceresi gibi bir çıktı cihazına uyarılar bildirir. Geriye dönük uyumluluk için dahildir.  
   
 ```
 ATLTRACE(exp);
@@ -164,23 +164,23 @@ ATLTRACE(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `exp`  
- [in] Visual C++ çıktı penceresi veya bu iletiler yakalar herhangi bir uygulama göndermek için değişkenleri ve dizesi.  
+ *exp*  
+ [in] Visual C++ çıkış penceresine veya bu iletiler yakalar herhangi bir uygulama göndermek için değişkenleri ve dize.  
   
- `category`  
- [in] Olay ya da rapor üretileceği yönteme türü. Açıklamalar kategorileri listesi için bkz.  
+ *Kategori*  
+ [in] Olay ya da rapora olan yöntem türü. Kategori listesi için açıklamalara bakın.  
   
- `level`  
- [in] Rapor için izleme düzeyi. Açıklamalar Ayrıntılar için bkz.  
+ *düzeyi*  
+ [in] Rapor için izleme düzeyi. Ayrıntılar için açıklamalara bakın.  
   
- `lpszFormat`  
- [in] Döküm aygıta göndermek için biçimlendirilmiş dize.  
+ *lpszFormat*  
+ [in] Döküm cihaza göndermek için biçimlendirilmiş dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ATLTRACE2](#atltrace2) bir açıklaması için **ATLTRACE**. **ATLTRACE** ve `ATLTRACE2` aynı davranışı **ATLTRACE** geriye dönük uyumluluk için bulunmaktadır.  
+ Bkz: [ATLTRACE2](#atltrace2) ATLTRACE açıklaması. ATLTRACE ve ATLTRACE2 aynı davranışa sahip, ATLTRACE geriye dönük uyumluluk için dahildir.  
   
 ##  <a name="atltrace2"></a>  ATLTRACE2  
- Uyarı düzeyleri ve belirtilen bayrakları göre hata ayıklayıcı penceresini gibi bir çıktı cihazına bildirir.  
+ Belirtilen bayraklar ve düzeylerine göre hata ayıklayıcısı penceresi gibi bir çıktı cihazına uyarılar bildirir.  
   
 ```
 ATLTRACE2(exp);
@@ -192,77 +192,77 @@ ATLTRACE2(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `exp`  
- [in] Visual C++ çıktı penceresi veya bu iletiler yakalar herhangi bir uygulama göndermek için dize.  
+ *exp*  
+ [in] Visual C++ çıkış penceresine veya bu iletiler yakalar herhangi bir uygulama göndermek için dize.  
   
- `category`  
- [in] Olay ya da rapor üretileceği yönteme türü. Açıklamalar kategorileri listesi için bkz.  
+ *Kategori*  
+ [in] Olay ya da rapora olan yöntem türü. Kategori listesi için açıklamalara bakın.  
   
- `level`  
- [in] Rapor için izleme düzeyi. Açıklamalar Ayrıntılar için bkz.  
+ *düzeyi*  
+ [in] Rapor için izleme düzeyi. Ayrıntılar için açıklamalara bakın.  
   
- `lpszFormat`  
- [in] `printf`-Stil döküm aygıta göndermek için bir dize oluşturmak için kullanılacak biçim dizesi.  
+ *lpszFormat*  
+ [in] `printf`-Döküm cihaza göndermek için bir dize oluşturmak için kullanılacak biçim dizesi stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kısa formunu `ATLTRACE2` hata ayıklayıcı dizeye animasyonun çıktı penceresi yazar. İkinci biçiminde `ATLTRACE2` de çıktı Hata Ayıklayıcı'nın çıkış penceresine yazar, ancak ATL/MFC izleme aracı ayarları tabi (bkz [ATLTraceTool örnek](../../visual-cpp-samples.md)). Örneğin, ayarlarsanız `level` 4 ve düzey 0 ATL/MFC izleme aracı için ileti görüntülenmez. *düzey* 0, 1, 2, 3 veya 4 olabilir. Varsayılan değer, 0, yalnızca en ciddi sorunlar bildirir.  
+ ATLTRACE2 kısa formunu hata ayıklayıcının çıkış penceresinde bir dize yazar. ATLTRACE2 ikinci biçimi de çıkış hata ayıklayıcının çıkış penceresinde Yazar ancak ATL/MFC izleme aracı ayarlarını tabi olduğunu (bkz [ATLTraceTool örnek](../../visual-cpp-samples.md)). Örneğin, ayarlarsanız *düzeyi* 4 ve ATL/MFC izleme aracı düzeyi 0 ', ileti görüntülenmez. *düzey* 0, 1, 2, 3 veya 4 olabilir. Varsayılan, 0, yalnızca en önemli sorunları bildirir.  
   
- `category` Parametresi ayarlamak için izleme bayrakları listeler. Bu bayrakların raporlamak istediğiniz yöntemleri türlerini karşılık gelir. Aşağıdaki tablolarda listelemek için kullanabileceğiniz geçerli izleme bayrakları `category` parametresi.  
+ *Kategori* parametre kümesi için izleme bayrakları listeler. Bu bayraklar raporlamak istediğiniz yöntemleri türlerine karşılık gelir. Aşağıdaki tablolarda listelemek için kullanabileceğiniz geçerli izleme bayrakları *kategori* parametresi.  
   
 ### <a name="atl-trace-flags"></a>ATL İzleme Bayrakları  
   
 |ATL kategorisi|Açıklama|  
 |------------------|-----------------|  
-|`atlTraceGeneral`|Tüm ATL uygulamaları raporları. Varsayılan.|  
-|`atlTraceCOM`|COM yöntemleri raporlarda.|  
-|`atlTraceQI`|QueryInterface çağrılarını raporları.|  
+|`atlTraceGeneral`|Raporlar tüm ATL uygulamalar. Varsayılan.|  
+|`atlTraceCOM`|COM yöntemleri raporları.|  
+|`atlTraceQI`|QueryInterface çağrıları raporları.|  
 |`atlTraceRegistrar`|Kayıt nesnelerin raporları.|  
-|`atlTraceRefcount`|Başvuru sayısı değiştirme hakkında raporlar.|  
-|`atlTraceWindowing`|Windows yöntemleri raporlarda; Örneğin, bir geçersiz ileti eşleme kimliği raporları|  
-|`atlTraceControls`|Denetimleri raporlarda; Örneğin, bir denetim veya onun penceresi bozulduğunda bildirir.|  
-|`atlTraceHosting`|Raporlar; iletileri barındırma Örneğin, bir istemci bir kapsayıcıda etkinleştirildiğinde bildirir.|  
-|`atlTraceDBClient`|OLE DB tüketici şablonu raporlarda; Örneğin, bir çağrı, GetData başarısız için çıktı HRESULT içerebilir.|  
-|`atlTraceDBProvider`|OLE DB sağlayıcı şablonu raporlarda; Örneğin, bir sütun oluşturulamadı, raporlar.|  
-|`atlTraceSnapin`|MMC ek bileşeni uygulama raporları.|  
-|`atlTraceNotImpl`|Rapor, belirtilen işlevi uygulanmadı.|  
-|**atlTraceAllocation**|Hata ayıklama araçları atldbgmem.h içinde bellek tarafından yazdırılan iletileri bildirir.|  
+|`atlTraceRefcount`|Başvuru sayısını değiştirme raporlar.|  
+|`atlTraceWindowing`|Windows yöntemleri raporlarda; Örneğin, bir geçersiz ileti eşleme kimliği bildirir|  
+|`atlTraceControls`|Denetimleri raporlarda; Örneğin, bir denetim veya kendi penceresini yok edildiğinde bildirir.|  
+|`atlTraceHosting`|Raporlar; iletileri barındırma Örneğin, bir kapsayıcıdaki bir istemci etkinleştirildiğinde bildirir.|  
+|`atlTraceDBClient`|OLE DB tüketici şablonu raporlarda; Örneğin, bir çağrı, GetData başarısız için çıkış HRESULT içerebilir.|  
+|`atlTraceDBProvider`|OLE DB sağlayıcı şablonu raporlarda; Örneğin, bir sütun oluşturulamadı, bildirir.|  
+|`atlTraceSnapin`|MMC ek bileşenini uygulama raporları.|  
+|`atlTraceNotImpl`|Belirtilen işlev uygulanmadı bildirir.|  
+|`atlTraceAllocation`|Hata ayıklama atldbgmem.h araçlarında bellek tarafından yazdırılan iletileri bildirir.|  
   
 ### <a name="mfc-trace-flags"></a>MFC İzleme Bayrakları  
   
 |MFC kategorisi|Açıklama|  
 |------------------|-----------------|  
-|**traceAppMsg**|Genel amaçlı, MFC iletileri. Her zaman önerilir.|  
-|**traceDumpContext**|Gelen iletileri [CDumpContext](../../mfc/reference/cdumpcontext-class.md).|  
-|**traceWinMsg**|İletileri işleme kodunu MFC'nin iletisi.|  
-|**traceMemory**|MFC'nin bellek yönetimi kodundan iletileri.|  
-|**traceCmdRouting**|Komut yönlendirme kod MFC'nin Windows iletileri.|  
-|**traceHtml**|MFC'nin DHTML iletişim destek gelen iletileri.|  
-|**traceSocket**|MFC'nin yuva destek gelen iletileri.|  
-|**traceOle**|MFC'nin OLE desteği gelen iletileri.|  
-|**traceDatabase**|MFC'nin veritabanı desteği gelen iletileri.|  
-|**traceInternet**|MFC'nin Internet gelen iletileri destekler.|  
+|`traceAppMsg`|Genel amaçlı, MFC iletileri. Her zaman önerilir.|  
+|`traceDumpContext`|Gelen iletileri [CDumpContext](../../mfc/reference/cdumpcontext-class.md).|  
+|`traceWinMsg`|İletileri işleme kodunu MFC'nin iletisi.|  
+|`traceMemory`|MFC'nin bellek yönetimi koddan iletileri.|  
+|`traceCmdRouting`|MFC'nin Windows iletileri yönlendirme kod komutu.|  
+|`traceHtml`|MFC'nin DHTML iletişim destek iletileri.|  
+|`traceSocket`|MFC'nin yuva desteği iletileri.|  
+|`traceOle`|MFC'nin OLE desteği iletileri.|  
+|`traceDatabase`|MFC veritabanı desteği iletileri.|  
+|`traceInternet`|MFC'nin İnternet'ten gelen iletileri destekler.|  
   
- Özel İzleme kategorisi bildirmek için genel bir örneğini bildirme `CTraceCategory` gibi sınıfı:  
+ Özel İzleme kategorisi bildirmek için genel bir örneğini bildirmeniz `CTraceCategory` sınıfına aşağıdaki gibi:  
   
  [!code-cpp[NVC_ATL_Utilities#109](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_3.cpp)]  
   
- Kategori adı `MY_CATEGORY` Bu örnekte, belirttiğiniz addır `category` parametresi. ATL/MFC izleme aracı görünür kategori adı ilk parametresidir. İkinci parametre varsayılan izleme düzeydir. Bu parametre isteğe bağlıdır ve varsayılan izleme düzeyi 0'dır.  
+ Kategori adı, bu örnekte, MY_CATEGORY için belirttiğiniz ad olduğu *kategori* parametresi. İlk parametre ATL/MFC İzleme Aracı'nda görüntülenecek kategori addır. İkinci parametre varsayılan izleme düzeydir. Bu parametre isteğe bağlıdır ve varsayılan izleme düzeyi 0'dır.  
   
- Kullanıcı tanımlı bir kategori kullanmak için:  
+ Bir kullanıcı tanımlı kategori kullanmak için:  
   
  [!code-cpp[NVC_ATL_Utilities#110](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_4.cpp)]  
   
- İzleme İletileri Filtrele istediğinizi belirtmek için bu makro tanımlarında Stdafx.h önce takın `#include <atlbase.h>` deyimi.  
+ İzleme iletileri filtre uygulamak istediğiniz belirtmek için önce Stdafx.h Bu makroların tanımlarını eklemek `#include <atlbase.h>` deyimi.  
   
- Önişlemci yönergeleri içinde filtre alternatif olarak, ayarlayabilirsiniz **özellik sayfaları** iletişim kutusu. Tıklatın **önişlemci** sekmesini ve sonra genel içine ekleyin **önişlemci tanımları** düzenleme kutusu.  
+ Alternatif olarak, önişlemci yönergeleri, filtreyi ayarlayabilirsiniz **özellik sayfaları** iletişim kutusu. Tıklayın **önişlemci** sekmesini ve ardından genel içine Ekle **önişlemci tanımları** düzenleme kutusu.  
   
- Atlbase.h varsayılan tanımları içeren `ATLTRACE2` makrolar ve bu tanımları kullanılacak atlbase.h işlenmeden önce bu simgeleri yok tanımlarsanız.  
+ ATLTRACE2 makro tanımlarını varsayılan Atlbase.h içerir ve bu tanımları atlbase.h işlenmeden önce bu sembolleri tanımlamazsanız kullanılacak.  
   
- Yayın derlemelerde `ATLTRACE2` için derler `(void) 0`.  
+ İçin sürüm yapılarında ATLTRACE2 derler `(void) 0`.  
   
- `ATLTRACE2` en fazla 1023 karakter döküm aygıta biçimlendirme sonra gönderilecek dize içeriklerini sınırlar.  
+ ATLTRACE2 döküm cihaza en fazla 1023 karakter biçimlendirme sonrasında gönderilecek dizenin içeriği sınırlar.  
   
- **ATLTRACE** ve `ATLTRACE2` aynı davranışı **ATLTRACE** geriye dönük uyumluluk için bulunmaktadır.  
+ ATLTRACE ve ATLTRACE2 aynı davranışa sahip, ATLTRACE geriye dönük uyumluluk için dahildir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#111](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_5.cpp)]  

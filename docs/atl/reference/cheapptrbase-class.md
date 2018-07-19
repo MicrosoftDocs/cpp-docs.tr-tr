@@ -23,18 +23,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ca18054509ab069722e632308b4d8f57706e548
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d847c83fce13ea39c3032e7db638a91b1cb7ad85
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364574"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880326"
 ---
 # <a name="cheapptrbase-class"></a>CHeapPtrBase sınıfı
-Bu sınıfın birkaç akıllı yığın işaretçi sınıfları temelini oluşturur.  
+Bu sınıfın birkaç akıllı yığın işaretçisi sınıfları temelini oluşturur.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,11 +44,11 @@ class CHeapPtrBase
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Öbek üzerinde depolanması için nesne türü.  
+ *T*  
+ Yığın üzerinde depolanan nesne türü.  
   
- `Allocator`  
- Bellek ayırma kullanacak şekilde sınıfı. Varsayılan olarak, ayırmak ve belleği boşaltmak için CRT yordamlar kullanılır.  
+ *Ayırıcı*  
+ Bellek ayırma kullanmak için sınıf. Varsayılan olarak, ayırmak ve belleği boşaltmak için CRT yordamlar kullanılır.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -56,17 +56,17 @@ class CHeapPtrBase
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CHeapPtrBase:: ~ CHeapPtrBase](#dtor)|Yok Edicisi.|  
+|[CHeapPtrBase:: ~ CHeapPtrBase](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CHeapPtrBase::AllocateBytes](#allocatebytes)|Bellek ayırma için bu yöntemi çağırın.|  
-|[CHeapPtrBase::Attach](#attach)|Varolan bir işaretçi sahipliğini almak için bu yöntemi çağırın.|  
-|[CHeapPtrBase::Detach](#detach)|Bir işaretçi sahipliğini serbest bırakmak için bu yöntemi çağırın.|  
-|[CHeapPtrBase::Free](#free)|Gösterdiği bir nesneyi silmek için bu yöntemi çağırın bir `CHeapPtrBase`.|  
-|[CHeapPtrBase::ReallocateBytes](#reallocatebytes)|Belleği yeniden tahsis için bu yöntemi çağırın.|  
+|[CHeapPtrBase::AllocateBytes](#allocatebytes)|Bellek ayırmak için bu yöntemi çağırın.|  
+|[CHeapPtrBase::Attach](#attach)|Var olan bir işaretçi sahipliğini almak için bu yöntemi çağırın.|  
+|[CHeapPtrBase::Detach](#detach)|Bir işaretçi sahipliğini bırakmak için bu yöntemi çağırın.|  
+|[CHeapPtrBase::Free](#free)|İşaret ettiği nesnenin silmek için bu yöntemi çağıran bir `CHeapPtrBase`.|  
+|[CHeapPtrBase::ReallocateBytes](#reallocatebytes)|Bellek yeniden ayırmak üzere bu yöntemi çağırın.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -84,46 +84,46 @@ class CHeapPtrBase
 |[CHeapPtrBase::m_pData](#m_pdata)|İşaretçi veri üye değişkeni.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıfın birkaç akıllı yığın işaretçi sınıfları temelini oluşturur. Türetilen sınıflar için [CHeapPtr](../../atl/reference/cheapptr-class.md) ve [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), kendi oluşturucular ve işleçler ekleyin. Bu sınıfların uygulama örnekleri için bkz.  
+ Bu sınıfın birkaç akıllı yığın işaretçisi sınıfları temelini oluşturur. Türetilen sınıflar için [CHeapPtr](../../atl/reference/cheapptr-class.md) ve [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), kendi oluşturucular ve işleçleri ekleyin. Bu sınıfların uygulama örnekleri için bkz.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcore.h  
   
 ##  <a name="allocatebytes"></a>  CHeapPtrBase::AllocateBytes  
- Bellek ayırma için bu yöntemi çağırın.  
+ Bellek ayırmak için bu yöntemi çağırın.  
   
 ```
 bool AllocateBytes(size_t nBytes) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBytes`  
+ *nBytes*  
  Ayrılacak bellek bayt sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bellek başarılı olduğunda true değerini döndürür ayrılmış, false Aksi takdirde.  
+ Bellek başarıyla ise true değeri döndürür ayrılmış, yanlış Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama derlemelerinde, bir onaylama işlemi hatasına oluşacaktır [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni şu anda işaret var olan bir değerle; diğer bir deyişle, NULL değerine eşit değil.  
+ Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni şu anda var olan bir değere işaret eder; diğer bir deyişle, NULL değerine eşit değil.  
   
 ##  <a name="attach"></a>  CHeapPtrBase::Attach  
- Varolan bir işaretçi sahipliğini almak için bu yöntemi çağırın.  
+ Var olan bir işaretçi sahipliğini almak için bu yöntemi çağırın.  
   
 ```
 void Attach(T* pData) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pData`  
- `CHeapPtrBase` Nesne sahipliği Bu işaretçinin götürür.  
+ *pData*  
+ `CHeapPtrBase` Nesne, işaretçi sahipliğini alır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman bir `CHeapPtrBase` nesnesini bir işaretçi sahipliğini alır, kapsam dışına çıktığında otomatik olarak işaretçi ve ayrılmış tüm verileri silecektir.  
+ Olduğunda bir `CHeapPtrBase` nesne, işaretçi sahipliğini alır, kapsam dışına çıktığında bunu otomatik olarak işaretçi ve ayrılan tüm verileri siler.  
   
- Hata ayıklama derlemelerinde, bir onaylama işlemi hatasına oluşacaktır [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni şu anda işaret var olan bir değerle; diğer bir deyişle, NULL değerine eşit değil.  
+ Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni şu anda var olan bir değere işaret eder; diğer bir deyişle, NULL değerine eşit değil.  
   
 ##  <a name="dtor"></a>  CHeapPtrBase:: ~ CHeapPtrBase  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CHeapPtrBase() throw();
@@ -133,27 +133,27 @@ void Attach(T* pData) throw();
  Ayrılan tüm kaynakları serbest bırakır.  
   
 ##  <a name="detach"></a>  CHeapPtrBase::Detach  
- Bir işaretçi sahipliğini serbest bırakmak için bu yöntemi çağırın.  
+ Bir işaretçi sahipliğini bırakmak için bu yöntemi çağırın.  
   
 ```
 T* Detach() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçinin kopyasını döndürür.  
+ İşaretçiyi bir kopyasını döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi sahipliğini serbest bırakır, ayarlar [CHeapPtrBase::m_pData](#m_pdata) NULL, üye değişkeni ve işaretçiyi kopyasını döndürür.  
+ Bir işaretçi sahipliğini bırakır, ayarlar [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni null ve işaretçi bir kopyasını döndürür.  
   
 ##  <a name="free"></a>  CHeapPtrBase::Free  
- Gösterdiği bir nesneyi silmek için bu yöntemi çağırın bir `CHeapPtrBase`.  
+ İşaret ettiği nesnenin silmek için bu yöntemi çağıran bir `CHeapPtrBase`.  
   
 ```
 void Free() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından için nesne işaret `CHeapPtrBase` serbest bırakılmaz ve [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni NULL olarak ayarlanır.  
+ Nesne tarafından işaret edilen `CHeapPtrBase` serbest bırakılır ve [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni, NULL olarak ayarlanır.  
   
 ##  <a name="m_pdata"></a>  CHeapPtrBase::m_pData  
  İşaretçi veri üye değişkeni.  
@@ -163,7 +163,7 @@ T* m_pData;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye değişkeni işaretçi bilgileri tutar.  
+ Bu üye değişkeni, işaretçi bilgileri tutar.  
   
 ##  <a name="operator_amp"></a>  CHeapPtrBase::operator &amp;  
  & İşleci.  
@@ -173,7 +173,7 @@ T** operator&() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Gösterdiği nesne adresini döndürür `CHeapPtrBase` nesnesi.  
+ Tarafından işaret edilen nesnenin adresini döndürür `CHeapPtrBase` nesne.  
   
 
 ##  <a name="operator_ptr"></a>  CHeapPtrBase::operator-&gt;  
@@ -188,7 +188,7 @@ T* operator->() const throw();
  Değerini döndürür [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Gösterdiği bir sınıftaki bir yöntemi çağırmak için bu işleci kullanın `CHeapPtrBase` nesnesi. Hata ayıklama derlemelerinde, bir onaylama işlemi hatasına oluşacaktır `CHeapPtrBase` işaret NULL.  
+ İşaret ettiği bir sınıftaki bir yöntemi çağırmak için bu işleci kullanın `CHeapPtrBase` nesne. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir `CHeapPtrBase` işaret NULL.  
   
 ##  <a name="operator_t_star"></a>  CHeapPtrBase::operator T *  
  Atama işleci.  
@@ -201,20 +201,20 @@ operator T*() const throw();
  Döndürür [CHeapPtrBase::m_pData](#m_pdata).  
   
 ##  <a name="reallocatebytes"></a>  CHeapPtrBase::ReallocateBytes  
- Belleği yeniden tahsis için bu yöntemi çağırın.  
+ Bellek yeniden ayırmak üzere bu yöntemi çağırın.  
   
 ```
 bool ReallocateBytes(size_t nBytes) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nBytes`  
- Yeni bayt cinsinden ayrılacak bellek miktarı.  
+ *nBytes*  
+ Yeni ayrılacak bayt cinsinden bellek miktarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bellek başarılı olduğunda true değerini döndürür ayrılmış, false Aksi takdirde.  
+ Bellek başarıyla ise true değeri döndürür ayrılmış, yanlış Aksi takdirde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)   
  [CComHeapPtr sınıfı](../../atl/reference/ccomheapptr-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

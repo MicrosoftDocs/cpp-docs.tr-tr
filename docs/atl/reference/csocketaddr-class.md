@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 830b1087d0a4792b449c516ed12ad7e8a84b2a51
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9e63a464b68267c8202cdf47717fd1cd81db639c
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363402"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884050"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr sınıfı
 Bu sınıf ana bilgisayar adları hem IPv4 hem de IPv6 biçimlerini destekleyen konak adreslere dönüştürme yöntemleri sağlar.  
@@ -51,16 +51,16 @@ class CSocketAddr
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSocketAddr::FindAddr](#findaddr)|Sağlanan ana makine adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.|  
-|[CSocketAddr::FindINET4Addr](#findinet4addr)|IPv4 ana bilgisayar adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.|  
-|[CSocketAddr::FindINET6Addr](#findinet6addr)|IPv6 ana bilgisayar adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.|  
-|[CSocketAddr::GetAddrInfo](#getaddrinfo)|Belirli bir öğe için bir işaretçi döndürmek için bu yöntemi çağırabilmeniz **addrinfo** listesi.|  
-|[CSocketAddr::GetAddrInfoList](#getaddrinfolist)|Bir işaretçi döndürmek için bu yöntemi çağırın **addrinfo** listesi.|  
+|[CSocketAddr::FindAddr](#findaddr)|Belirtilen konak adı için ana bilgisayar adresi dönüştürmek için bu yöntemi çağırın.|  
+|[CSocketAddr::FindINET4Addr](#findinet4addr)|IPv4 ana bilgisayar adı konak adresine dönüştürmek için bu yöntemi çağırın.|  
+|[CSocketAddr::FindINET6Addr](#findinet6addr)|IPv6 ana bilgisayar adı konak adresine dönüştürmek için bu yöntemi çağırın.|  
+|[CSocketAddr::GetAddrInfo](#getaddrinfo)|Belirli bir öğeye bir işaretçiyi döndürmek için bu yöntemi çağıran `addrinfo` listesi.|  
+|[CSocketAddr::GetAddrInfoList](#getaddrinfolist)|Bir işaretçi döndürmek için bu yöntemi çağırın `addrinfo` listesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, Windows ile kullanmak için ağ adresleri bakmak için belirsiz yaklaşımı API işlevleri ve yuva sarmalayıcıları kitaplıklarında yuva IP sürümü sağlar.  
+ Bu sınıf Windows ile kullanmak için ağ adresleri bakmak için belirsiz yaklaşım API işlevleri ve kitaplıklarında yuva sarmalayıcılar yuva IP sürümü sağlar.  
   
- Ağ adreslerini aramak için kullanılan bu sınıfın üyeleri Win32 API işlevini [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520).  
+ Ağ adreslerini aramak için kullanılan bu sınıfın üyeleri Win32 API işlevi kullanmanız [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520).  
   
  Bu sınıf, her iki IPv4 andIPv6 ağ adreslerini destekler.  
   
@@ -75,10 +75,10 @@ CSocketAddr();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeni bir `CSocketAddr` nesne ve konak yanıt bilgilerini içeren bağlantılı listesini başlatır.  
+ Yeni bir oluşturur `CSocketAddr` nesne ve konak yanıt bilgilerini içeren bağlantılı liste başlatır.  
   
 ##  <a name="findaddr"></a>  CSocketAddr::FindAddr  
- Sağlanan ana makine adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.  
+ Belirtilen konak adı için ana bilgisayar adresi dönüştürmek için bu yöntemi çağırın.  
   
 ```
 int FindAddr(
@@ -99,35 +99,35 @@ int FindAddr(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szHost`  
- Ana bilgisayar adı veya noktalı IP adresi.  
+ *szHost*  
+ Konak adı veya IP adresi noktalı.  
   
  *szPortOrServiceName*  
- Bağlantı noktası numarası veya ana bilgisayardaki hizmetin adı.  
+ Bağlantı noktası numarası veya ana bilgisayar hizmetinin adı.  
   
- `nPortNo`  
+ *nPortNo*  
  Bağlantı noktası numarası.  
   
- `flags`  
+ *bayrakları*  
  0 veya AI_PASSIVE, AI_CANONNAME veya AI_NUMERICHOST birleşimi.  
   
  *addr_family*  
  Adres ailesi (örneğin, PF_INET).  
   
- `sock_type`  
+ *sock_type*  
  Yuva türü (örneğin, SOCK_STREAM).  
   
  *ai_proto*  
  Protokol (örneğin, IPPROTO_IP veya IPPROTO_IPV6).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Adres başarılı bir şekilde hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adresi kullanarak başvurulabilir bağlantılı bir listede depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
+ Adres başarıyla hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adres kullanılarak başvurulabilir bağlantılı listesinde depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ana bilgisayar adı parametresi IPv4 veya IPv6 biçiminde olabilir. Bu yöntem Win32 API işlev çağrılarını [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
+ Konak adı parametresi IPv4 veya IPv6 biçiminde olabilir. Bu yöntem Win32 API işlevini çağırır [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
   
 ##  <a name="findinet4addr"></a>  CSocketAddr::FindINET4Addr  
- IPv4 ana bilgisayar adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.  
+ IPv4 ana bilgisayar adı konak adresine dönüştürmek için bu yöntemi çağırın.  
   
 ```
 int FindINET4Addr(
@@ -138,26 +138,26 @@ int FindINET4Addr(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szHost`  
- Ana bilgisayar adı veya noktalı IP adresi.  
+ *szHost*  
+ Konak adı veya IP adresi noktalı.  
   
- `nPortNo`  
+ *nPortNo*  
  Bağlantı noktası numarası.  
   
- `flags`  
+ *bayrakları*  
  0 veya AI_PASSIVE, AI_CANONNAME veya AI_NUMERICHOST birleşimi.  
   
- `sock_type`  
+ *sock_type*  
  Yuva türü (örneğin, SOCK_STREAM).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Adres başarılı bir şekilde hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adresi kullanarak başvurulabilir bağlantılı bir listede depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
+ Adres başarıyla hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adres kullanılarak başvurulabilir bağlantılı listesinde depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem Win32 API işlev çağrılarını [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
+ Bu yöntem Win32 API işlevini çağırır [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
   
 ##  <a name="findinet6addr"></a>  CSocketAddr::FindINET6Addr  
- IPv6 ana bilgisayar adı ana bilgisayar adresine dönüştürmek için bu yöntemi çağırın.  
+ IPv6 ana bilgisayar adı konak adresine dönüştürmek için bu yöntemi çağırın.  
   
 ```
 int FindINET6Addr(
@@ -168,47 +168,47 @@ int FindINET6Addr(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `szHost`  
- Ana bilgisayar adı veya noktalı IP adresi.  
+ *szHost*  
+ Konak adı veya IP adresi noktalı.  
   
- `nPortNo`  
+ *nPortNo*  
  Bağlantı noktası numarası.  
   
- `flags`  
+ *bayrakları*  
  0 veya AI_PASSIVE, AI_CANONNAME veya AI_NUMERICHOST birleşimi.  
   
- `sock_type`  
+ *sock_type*  
  Yuva türü (örneğin, SOCK_STREAM).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Adres başarılı bir şekilde hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adresi kullanarak başvurulabilir bağlantılı bir listede depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
+ Adres başarıyla hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adres kullanılarak başvurulabilir bağlantılı listesinde depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem Win32 API işlev çağrılarını [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
+ Bu yöntem Win32 API işlevini çağırır [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
   
 ##  <a name="getaddrinfo"></a>  CSocketAddr::GetAddrInfo  
- Belirli bir öğe için bir işaretçi döndürmek için bu yöntemi çağırabilmeniz **addrinfo** listesi.  
+ Belirli bir öğeye bir işaretçiyi döndürmek için bu yöntemi çağıran `addrinfo` listesi.  
   
 ```
 addrinfo* const GetAddrInfoint nIndex = 0) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nIndex`  
- Belirli bir öğeye başvuru [addrinfo](http://msdn.microsoft.com/library/windows/desktop/ms737530) listesi.  
+ *nIndex*  
+ Belirli bir öğeye bir başvuru [addrinfo](http://msdn.microsoft.com/library/windows/desktop/ms737530) listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi döndürür **addrinfo** başvurduğu yapısı `nIndex` konak yanıt bilgilerini içeren bağlantılı listesinde.  
+ Bir işaretçi döndürür `addrinfo` yapısı tarafından başvurulan *nIndex* konak yanıt bilgilerini içeren bağlantılı listesinde.  
   
 ##  <a name="getaddrinfolist"></a>  CSocketAddr::GetAddrInfoList  
- Bir işaretçi döndürmek için bu yöntemi çağırın **addrinfo** listesi.  
+ Bir işaretçi döndürmek için bu yöntemi çağırın `addrinfo` listesi.  
   
 ```
 addrinfo* const GetAddrInfoList() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir veya daha fazla bağlantılı listesini işaretçi `addrinfo` konak yanıt bilgilerini içeren yapıları. Daha fazla bilgi için bkz: [addrinfo yapısı](https://msdn.microsoft.com/library/windows/desktop/ms737530).
+ Bir veya daha fazla bağlantılı bir liste işaretçisi `addrinfo` konak yanıt bilgilerini içeren yapılar. Daha fazla bilgi için [addrinfo yapısı](https://msdn.microsoft.com/library/windows/desktop/ms737530).
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

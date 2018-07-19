@@ -17,20 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae88262724dfec5702e2769eb10e076502c09342
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 54a83adda5acc51bd7e2d85e907d84e62a70d5cb
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418256"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940734"
 ---
 # <a name="align-c"></a>align (C++)
 
-Visual Studio 2015 ve sonraki sürümlerinde, C ++ 11 standardını kullanan `alignas` denetim hizalaması için tanımlayıcısı. Daha fazla bilgi için bkz: [hizalama](../cpp/alignment-cpp-declarations.md).
+Visual Studio 2015 ve sonraki sürümlerinde, C ++ 11 standardı kullanın `alignas` denetim hizalaması için tanımlayıcısı. Daha fazla bilgi için [hizalama](../cpp/alignment-cpp-declarations.md).
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-Kullanım `__declspec(align(#))` tam olarak (örneğin, statik ayırma veya bir işlevdeki otomatik veri) kullanıcı tanımlı veri hizalamasını denetlemek için.
+Kullanım `__declspec(align(#))` tam olarak (örneğin, statik atamalar veya otomatik veriler bir işlevde) kullanıcı tanımlı veri hizalamasını denetlemek için.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,21 +38,21 @@ Kullanım `__declspec(align(#))` tam olarak (örneğin, statik ayırma veya bir 
 
 ## <a name="remarks"></a>Açıklamalar
 
-En son işlemci yönergeleri kullanan uygulamalar yazma, bazı yeni kısıtlamaları ve sorunlarını tanıtır. Özellikle, birçok yeni yönergeleri veri 16 bayt sınırları hizalanmalıdır gerektirir. Ayrıca, belirli bir işlemci önbellek satır boyutu için sık kullanılan veri hizalayarak önbellek performansınızı iyileştirir. Örneğin, büyüklüğü 32 bayt'tan küçük olan bir yapı tanımlarsanız, o yapısı türündeki nesneleri verimli bir şekilde önbelleğe alınan emin olmak için 32 bayt Hizala isteyebilirsiniz.
+Son İşlemci yönergeleri kullanan uygulamalar yazmak, bazı yeni sınırlamalar ve sorunlar getirir. Özellikle çoğu yeni yönerge veri 16 bayt sınırlarıyla hizalanmasını gerektirir. Ayrıca, sık kullanılan veriler için belirli bir işlemcinin önbellek satırı boyutuna hizalayarak önbellek performansını arttırın. Örneğin, boyutu 32 bayttan küçük olan bir yapı tanımlarsanız, yapı türündeki nesnelerin etkili bir şekilde önbelleğe emin olmak için 32 bayt ile hizalamanız isteyebilirsiniz.
 
-\# Hizalama değerdir. 1 8192 (bayt), 2, 4, 8, 16, 32 veya 64 gibi iki tamsayı tabanların geçerli girişlerdir. `declarator` hizalı gibi bildirme verilerdir.
+\# Hizalama değeridir. Geçerli girişler 1 8192 (bayt), 2, 4, 8, 16, 32 veya 64 gibi ikinin tamsayı powers oluşur. `declarator` hizalı olarak bildirdiğiniz veridir.
 
-Türünde bir değer döndürmesi hakkında bilgi için `size_t` türü hizalama gereksinimi olan bkz [__alignof](../cpp/alignof-operator.md). 64-bit işlemciler hedeflerken hizalanmamış işaretçileri bildirme hakkında daha fazla bilgi için bkz: [__unaligned](../cpp/unaligned.md).
+Dönüş türü bir değeri hakkında bilgi için `size_t` türün hizalama gereksinimi olan bkz [__alignof](../cpp/alignof-operator.md). 64-bit işlemcileri hedeflerken hizalanmayan işaretçileri bildirme hakkında daha fazla bilgi için bkz: [__unaligned](../cpp/unaligned.md).
 
-Kullanabileceğiniz `__declspec(align(#))` tanımladığınızda bir `struct`, `union`, veya `class`, veya bir değişken bildirme zaman.
+Kullanabileceğiniz `__declspec(align(#))` tanımladığınızda bir **yapı**, **birleşim**, veya **sınıfı**, veya bir değişken bildirdiğinizde.
 
-Derleyici garanti ya da bir kopyalama veya veri dönüştürme işlemi sırasında veri hizalama özniteliğini korumak girişimi. Örneğin, [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) ile bildirilen yapı kopyalayabilirsiniz `__declspec(align(#))` herhangi bir konuma. Not sıradan allocators — Örneğin, [malloc](../c-runtime-library/reference/malloc.md), C++ [new işleci](new-operator-cpp.md)ve Win32 allocators — dönüş genellikle yeterince hizalanır olmayan bellek `__declspec(align(#))` yapıları veya dizileri yapıları. Hedef bir kopya veya veri dönüştürme işlemi için doğru hizalanır güvence altına almak için kullanmak [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md), ya da kendi ayırıcısı yazma.
+Derleyici garanti vermez veya kopyalama ya da veri dönüştürme işlemi sırasında veri hizalama özniteliğini korumak çalışır. Örneğin, [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) ile bildirilen bir yapı kopyalayabilirsiniz `__declspec(align(#))` herhangi bir konuma. Unutmayın, normal ayırıcılar — Örneğin, [malloc](../c-runtime-library/reference/malloc.md), C++ [new işleci](new-operator-cpp.md)ve Win32 ayırıcıların — dönüş genellikle yeterince için hizalanmamış bellek `__declspec(align(#))` yapıları veya dizileri yapılar. Hedef bir kopya veya veri dönüştürme işlemi düzgün hizalanmış sağlamak için kullanmak [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md), veya kendi ayırıcınızı yazın.
 
-İşlev parametreleri için hizalama belirtemezsiniz. Bir hizalama özniteliği veri yığında değeriyle geçirildiğinde kendi hizalama çağırma tarafından denetlenir. Veri hizalama çağrılan işlev önemliyse, kullanmadan önce doğru hizalanmış belleğe parametresi kopyalayın.
+İşlev parametreleri için hizalama belirtemezsiniz. Hizalama özniteliğine sahip veri değerine göre yığında geçirildiğinde hizalamanın çağırma kuralı tarafından denetlenir. Veri hizalama çağrılan işlev önemli ise, parametre kullanmadan önce düzgün şekilde hizalanmış belleğe kopyalayın.
 
-Olmadan `__declspec(align(#))`, derleyici genellikle verileri hedef işlemci ve en fazla 32-bit işlemciler, 4-bayt sınırları verilerin boyutunu temel alarak doğal sınırları ve 64-bit işlemciler 8-bayt sınırları hizalar. Sınıf veya yapı en az doğal hizalama ve geçerli paket ayarı hizalanması veri sınıflarını veya yapıları (#pragma gelen `pack` veya **/Zp** derleyici seçeneği).
+Olmadan `__declspec(align(#))`, derleyici genellikle verileri hedef işlemci ve 4 baytlık sınırlarda, 32-bit işlemciler üzerinde en fazla veri boyutuna göre doğal sınırlara ve 64-bit işlemci 8 baytlık sınırlardaki hizalar. Sınıflar veya yapılardaki veriler, sınıf veya yapıda doğal hizalaması ve geçerli paket ayarının minimumunda hizalanır (#pragma gelen **paketi** veya **/ZP** derleyici seçeneği).
 
-Bu örnek kullanımını gösteren `__declspec(align(#))`:
+Bu örnek kullanımını gösterir `__declspec(align(#))`:
 
 ```cpp
 __declspec(align(32)) struct Str1{
@@ -60,46 +60,46 @@ __declspec(align(32)) struct Str1{
 };
 ```
 
-Bu tür şimdi bir 32 baytlık hizalama özniteliği vardır. Bu, tüm statik ve otomatik örnekleri 32 baytlık sınırında Başlat anlamına gelir. Bu tür bir üye olarak bildirilen ek yapı türleri bu türü hizalama özniteliğini korumak, diğer bir deyişle, tüm yapısı `Str1` en az 32 hizalama özniteliği bir öğeye sahip olarak.
+Bu tür artık 32 bayt hizalama özniteliğine sahiptir. Bu, tüm örnekleri statik ve otomatik bir 32 bayt sınırlarında başlaması anlamına gelir. Bir üye olarak bu türle bildirilen ek yapı türleri, bu türün hizalama özniteliğini korumak, diğer bir deyişle, tüm yapısı `Str1` bir öğe bir en az 32 hizalama özniteliğine sahip olduğundan.
 
-Unutmayın `sizeof(struct Str1)` 32 ile eşittir. Bu, Str1 nesnelerinin bir dizisi oluşturulur ve 32-bayt hizalı dizisinin temel ise, her bir dizi üyesi de 32 bayt hizalı değil anlamına gelir. Dinamik bellek, temel düzgün hizalanmış bir dizi oluşturmak için kullanmak [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md), ya da kendi ayırıcısı yazma.
+Unutmayın `sizeof(struct Str1)` 32 değerine eşittir. Bu, Str1 nesnelerinden oluşan bir dizi oluşturulur ve dizi temeli 32 bayt hizalı, dizinin her üyesini de 32 bayt hizalı olduğunu gösterir. Dinamik bellek temeli düzgün şekilde hizalanmış bir dizi oluşturmak için kullanın [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md), veya kendi ayırıcınızı yazın.
 
-`sizeof` Herhangi yapısı için değer son üye yanı sıra, o üyenin boyutu, en büyük üyesi hizalama değeri veya tüm yapı hizalama değeri en yakın katına yuvarlanan uzaklığını, hangisi daha büyük.
+`sizeof` Herhangi bir yapının değeri en büyük üye hizalama değerinin ya da tam yapı hizalama değerinin en yakın katına yuvarlanmış, bu üyenin boyutudur yanı sıra son üye uzaklığı, hangisi daha büyükse.
 
-Derleyici, bu kurallar için yapı hizalama kullanır:
+Derleyici, yapı hizalama için kurallar kullanır:
 
-- İle geçersiz kılınmadığı sürece `__declspec(align(#))`, skaler yapı üyesi hizalama boyutuna ve geçerli paket en düşük gereksinimdir.
+- İle geçersiz kılınmadığı sürece `__declspec(align(#))`, boyutunun ve geçerli paketleme en azından bir skalar yapı üyesinin hizalanması gereklidir.
 
-- İle geçersiz kılınmadığı sürece `__declspec(align(#))`, bir yapı hizalama onun üyeleri tek tek hizalamasını, en yüksek değer.
+- İle geçersiz kılınmadığı sürece `__declspec(align(#))`, bir yapının hizalanması, bireysel hizalanmalarının en yüksek değer.
 
-- Yapı üyesi en küçük birden çok alt hizalama önceki üyeyi sonuna uzaklığını eşit veya daha büyük olan üst yapısını başından bir uzaklığındaki yerleştirilir.
+- Yapı üyesi, bir uzaklık değerinden büyük veya önceki üyenin sonuna uzaklığı eşit hizalamanın en küçük katı kendi ana yapısının başlangıcından yerleştirilir.
 
-- En küçük birden çok alt hizalama son üyesini sonuna uzaklığını eşit veya daha büyük bir yapı boyutudur.
+- Büyük veya bitiş, son üyesinin uzaklık eşit hizalamanın en küçük katı bir yapının boyutudur.
 
-`__declspec(align(#))` Hizalama kısıtlamaları yalnızca artırabilirsiniz.
+`__declspec(align(#))` yalnızca hizalama kısıtlamalarını artırır.
 
 Daha fazla bilgi için bkz.:
 
-- [Örnekler hizalayın](#vclrfalignexamples)
+- [Örnekleri Hizala](#vclrfalignexamples)
 
-- [__Declspec(align(#)) ile yeni türleri tanımlama](#vclrf_declspecaligntypedef)
+- [__Declspec(align(#)) ile yeni türler tanımlama](#vclrf_declspecaligntypedef)
 
-- [İş parçacığı yerel depolama birimindeki verileri hizalama](#vclrfthreadlocalstorageallocation)
+- [İş parçacığı yerel depolamasında verileri hizalama](#vclrfthreadlocalstorageallocation)
 
-- [Veri paketleme ile Works nasıl hizalayın](#vclrfhowalignworkswithdatapacking)
+- [Nasıl veri Paketlemeyle hizalama](#vclrfhowalignworkswithdatapacking)
 
 - [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md) (x64 belirli)
 
-##  <a name="vclrfalignexamples"></a> Örnekler hizalayın
+##  <a name="vclrfalignexamples"></a> Örnekleri Hizala
 
-Aşağıdaki örneklerde gösterildiği nasıl `__declspec(align(#))` boyutunu ve veri yapıları hizalamasını etkiler. Örnekler aşağıdaki tanımları varsayın:
+Aşağıdaki örneklerde gösterildiği nasıl `__declspec(align(#))` boyutu ve hizalama veri yapılarının etkiler. Örnekler aşağıdaki tanımlamaları varsayar:
 
 ```cpp
 #define CACHE_LINE  32
 #define CACHE_ALIGN __declspec(align(CACHE_LINE))
 ```
 
-Bu örnekte, `S1` yapısı kullanarak tanımlanmış `__declspec(align(32))`. Tüm kullanımlarını `S1` değişken tanımı için veya diğer tür bildirimleri 32 bayt hizalı olan. `sizeof(struct S1)` 32, döndürür ve `S1` 16 dört tamsayılar tutmak için gereken bayt izleyen 16 doldurma bayt vardır. Her `int` üye 4-bayt hizalama gerektiriyor, ancak yapısı hizalamasını 32 olarak bildirilir. Bu nedenle, Genel hizalama 32'dir.
+Bu örnekte, `S1` yapısı, kullanılarak tanımlanır `__declspec(align(32))`. Tüm kullanımları `S1` değişken bir tanım veya diğer tür 32 bayt hizalıdır bildirimlerdir. `sizeof(struct S1)` 32 döndürür ve `S1` 16 doldurma baytı dört tamsayının tutulması gereken 16 bayt vardır. Her **int** üyesi 4 baytlık hizalama gerektirir, ancak yapının kendi hizalaması 32 olarak bildirilmiştir. Bu nedenle, Genel hizalama 32'dir.
 
 ```cpp
 struct CACHE_ALIGN S1 { // cache align all instances of S1
@@ -108,7 +108,7 @@ struct CACHE_ALIGN S1 { // cache align all instances of S1
 struct S1 s1;   // s1 is 32-byte cache aligned
 ```
 
-Bu örnekte, `sizeof(struct S2)` döndürür 16, en büyük hizalama gereksinim (birden fazla 8) birden fazla olduğu için tam olarak üye boyutlarının toplamıdır.
+Bu örnekte, `sizeof(struct S2)` döndürür, 16, en büyük hizalama gereksinimi (8'in katı) katı olduğundan, tam olarak üye boyutlarının toplamıdır.
 
 ```cpp
 __declspec(align(8)) struct S2 {
@@ -116,7 +116,7 @@ __declspec(align(8)) struct S2 {
 };
 ```
 
-Aşağıdaki örnekte, `sizeof(struct S3)` 64 döndürür.
+Aşağıdaki örnekte, `sizeof(struct S3)` 64 değerini döndürür.
 
 ```cpp
 struct S3 {
@@ -127,7 +127,7 @@ struct S3 {
 };
 ```
 
-Bu örnekte, dikkat `a` doğal türü, bu durumda, 4 bayt hizalamasını sahiptir. Ancak, `S1` 32-bayt hizalı gerekir. İzleme doldurma yirmi sekiz bayt `a`, böylece `s1` uzaklığı 32 başlar. `S4` Hizalama gereksinimi devralır `S1`, yapısındaki en büyük hizalama gereksinimi olduğundan. `sizeof(struct S4)` 64 döndürür.
+Bu örnekte, dikkat `a` doğal türde hizalaması kendi, bu durumda 4 bayt vardır. Ancak, `S1` 32 baytla uyumlu olmalıdır. Yirmi sekiz bayt doldurma `a`, böylece `s1` 32 uzaklığında başlar. `S4` ardından öğesinin hizalama gereksinimini devralır `S1`yapısındaki en büyük hizalama gereksinimi olduğundan. `sizeof(struct S4)` 64 değerini döndürür.
 
 ```cpp
 struct S4 {
@@ -137,7 +137,7 @@ struct S4 {
 };
 ```
 
-Aşağıdaki üç değişken bildirimleri de `__declspec(align(#))`. Her durumda, değişkeni 32 bayt hizalı olması gerekir. Söz konusu olduğunda, taban adresi olmayan her dizi üyesini dizisinin 32 bayt hizalı dizidir. `sizeof` Kullandığınızda her dizi üyesini etkilenmez için bir değer `__declspec(align(#))`.
+Aşağıdaki üç değişken bildirimi de `__declspec(align(#))`. Her durumda, değişken 32 baytla olmalıdır. Dizi olması durumunda değil her dizi üyesini dizinin temel adresi 32 bayt hizalıdır ' dir. `sizeof` Kullandığınızda her dizi üyesini etkilenmez için bir değer `__declspec(align(#))`.
 
 ```cpp
 CACHE_ALIGN int i;
@@ -145,14 +145,14 @@ CACHE_ALIGN int array[128];
 CACHE_ALIGN struct s2 s;
 ```
 
-Bir dizinin her bir üyesi hizalamak için bu gibi kodu kullanılmalıdır:
+Bir dizinin her üyesini hizalamak için bu gibi bir kod kullanılmalıdır:
 
 ```cpp
 typedef CACHE_ALIGN struct { int a; } S5;
 S5 array[10];
 ```
 
-Bu örnekte, yapı hizalama ve ilk öğe hizalama aynı etkiye sahip dikkat edin:
+Bu örnekte, yapının kendisiyle hizalanmasının ve ilk öğeyle hizalanmasının aynı etkiye sahip olduğuna dikkat edin:
 
 ```cpp
 CACHE_ALIGN struct S6 {
@@ -166,9 +166,9 @@ struct S7 {
 };
 ```
 
-`S6` ve `S7` aynı hizalama, ayırma ve boyutu özelliklere sahiptir.
+`S6` ve `S7` aynı hizalama, ayırma ve boyut özelliklerine sahiptir.
 
-Bu örnekte, başlangıç hizalama adresleri a, b, c ve d: 4, 1, 4 ve 1, sırasıyla.
+Bu örnekte, adreslerinin hizalaması başlangıç a, b, c ve D'nin 4, 1, 4 ve 1, sırasıyla.
 
 ```cpp
 void fn() {
@@ -179,26 +179,26 @@ void fn() {
 }
 ```
 
-Bellek ve yığında ayrılan zaman hizalama hangi ayırma işlevini çağırdı bağlıdır.  Örneğin, kullanırsanız `malloc`, sonuç işleneni boyutuna bağlıdır. Varsa *arg* > = 8, 8 baytlık hizalanması bellek döndürdü. Varsa *arg* < 8, döndürülen bellek hizalamasını olan 2'in ilk üssü değerinden *arg*. Örneğin, malloc(7) kullanırsanız, hizalama 4 bayt'tır.
+Yığında bellek tahsis edildiğinde hizalama hangi ayırma işlevinin çağrıldığına bağlıysa.  Örneğin, kullanırsanız **malloc**, sonuç işlenen boyutuna bağlıdır. Varsa *arg* > = 8, 8 byte hizalı olan bellek döndürdü. Varsa *arg* < 8, döndürülen bellek hizalama 2'in ilk üssü olan küçüktür *arg*. Örneğin, malloc(7) kullanırsanız, hizalama 4 bayt ' dir.
 
-##  <a name="vclrf_declspecaligntypedef"></a> __Declspec(align(#)) ile yeni türleri tanımlama
+##  <a name="vclrf_declspecaligntypedef"></a> __Declspec(align(#)) ile yeni türler tanımlama
 
-Bir hizalama karakteristiğini türüyle tanımlayabilirsiniz.
+Hizalama özelliğine sahip bir tür tanımlayabilirsiniz.
 
-Örneğin, tanımlayabilirsiniz bir `struct` bu şekilde bir hizalama değeri:
+Örneğin, tanımlayabileceğiniz bir `struct` bu şekilde bir hizalama değeriyle:
 
 ```cpp
 struct aType {int a; int b;};
 typedef __declspec(align(32)) struct aType bType;
 ```
 
-Şimdi, `aType` ve `bType` aynı boyutta (8 bayt) ancak türündeki değişkenler `bType` 32 bayt hizalı şunlardır.
+Şimdi, `aType` ve `bType` aynı boyuttadır (8 bayt) ancak türündeki değişkenler `bType` olan 32 bayt hizalıdır.
 
-##  <a name="vclrfthreadlocalstorageallocation"></a> İş parçacığı yerel depolama birimindeki verileri hizalama
+##  <a name="vclrfthreadlocalstorageallocation"></a> İş parçacığı yerel depolamasında verileri hizalama
 
-İle oluşturulan statik iş parçacığı yerel depolaması (TLS) `__declspec(thread)` özniteliği ve tam olarak normal statik verileri gibi hizalama görüntü works TLS bölümünde yerleştirin. TLS verileri oluşturmak için işletim sistemi TLS bölümünün boyutunu bellek ayırır ve TLS bölüm hizalama özniteliği dikkate alır.
+Oluşturulan statik iş parçacığı yerel depolama (TLS) `__declspec(thread)` özniteliği ve tam olarak normal statik veriler gibi hizalama için resim çalışmalarında TLS bölümüne yerleştirin. TLS veri oluşturmak için işletim sistemi, TLS bölümünün boyutuna bellek ayırır ve TLS bölümü hizalama özniteliğini dikkate alır.
 
-Bu örnek, iş parçacığı yerel depolama alanına hizalanmış verileri yerleştirmek için çeşitli yollar gösterir.
+Bu örnek, iş parçacığı yerel deposuna hizalanmış verileri yerleştirmek için çeşitli yollar gösterir.
 
 ```cpp
 // put an aligned integer in TLS
@@ -217,9 +217,9 @@ struct CACHE_ALIGN S9 {
 __declspec(thread) struct S9 a;
 ```
 
-##  <a name="vclrfhowalignworkswithdatapacking"></a> Veri paketleme ile Works nasıl hizalayın
+##  <a name="vclrfhowalignworkswithdatapacking"></a> Nasıl veri Paketlemeyle hizalama
 
-**/Zp** derleyici seçeneği ve `pack` pragma yapı ve birleşim üyeleri için veri sevk etkisini sahip. Bu örnekte gösterilir nasıl **/Zp** ve `__declspec(align(#))` birlikte çalışır:
+**/ZP** derleyici seçeneği ve **paketi** pragma yapı ve birleşim üyeleri için verileri paketleme etkisi vardır. Bu örnek gösterir nasıl **/ZP** ve `__declspec(align(#))` birlikte çalışır:
 
 ```c[[]]
 struct S {
@@ -232,7 +232,7 @@ struct S {
 };
 ```
 
-Aşağıdaki tabloda, çeşitli altında her üyesinin uzaklık listeler **/Zp** (veya #pragma `pack`) iki nasıl etkileşim gösteren değer.
+Aşağıdaki tabloda çeşitli her üyenin uzaklığını listeler **/ZP** (veya #pragma **paketi**) nasıl etkileştiğini gösteren değer.
 
 |Değişken|/Zp1|/ Zp2|/Zp4|/Zp8|
 |--------------|-----------|-----------|-----------|-----------|
@@ -244,11 +244,11 @@ Aşağıdaki tabloda, çeşitli altında her üyesinin uzaklık listeler **/Zp**
 |F|41|42|44|48|
 |sizeof (S)|64|64|64|64|
 
-Daha fazla bilgi için bkz: [/Zp (yapı üyesi hizalama)](../build/reference/zp-struct-member-alignment.md).
+Daha fazla bilgi için [/Zp (yapı üyesi hizalama)](../build/reference/zp-struct-member-alignment.md).
 
-Nesne olmadıkça bir nesne uzaklığını önceki nesne ve geçerli paket ayarı uzaklığını dayalı bir `__declspec(align(#))` özniteliği, önceki nesne uzaklığını hizalama; bu durumda dayanır ve `__declspec(align(#))` nesne değeri.
+Nesneye sahip olmadığı sürece bir nesnenin uzaklığı önceki nesne ve geçerli paketleme ayarına sapmasını dayalı bir `__declspec(align(#))` özniteliği, bu durumda, hizalama önceki nesnenin uzaklığı üzerinde temel alır ve `__declspec(align(#))` nesne değeri.
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

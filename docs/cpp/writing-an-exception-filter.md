@@ -14,21 +14,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 138bb17b8ccbb13371a1c31e4f7347a9bbdbf64b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eb4b02144f55231a7b4472cd62322fd61a543d18
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948036"
 ---
 # <a name="writing-an-exception-filter"></a>Özel Durum Filtresi Yazma
-Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Kullanabileceğiniz özel durumu ve dönmeden işlemek için özel durum işleyici kodu kullanmak yerine, *filtre* sorunu giderip temizleyin ve ardından, -1 döndürerek normal akıştaki yığın silmeden sürdürmek için.  
+Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Kullanabileceğiniz özel durum ve başarısız işlemler için özel durum işleyicisi kodunu kullanmak yerine, *filtre* sorunu ve ardından, -1 döndürerek, normal akışa yığını temizlemeden sürdürmek için.  
   
 > [!NOTE]
->  Bazı özel durumlar devam ettirilemez. Varsa *filtre* değerlendirir böyle bir özel durum için -1 olarak sistem yeni bir özel durum oluşturur. Çağırdığınızda [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552), özel durum sürdürecektir olup olmadığını belirler.  
+>  Bazı özel durumlar devam ettirilemez. Varsa *filtre* değerlendirir böyle bir özel durum için -1 için sistem yeni bir özel durum oluşturur. Çağırdığınızda [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552), özel durumun devam edip etmeyeceğini siz belirlersiniz.  
   
- Örneğin, aşağıdaki kod bir işlev çağrısında kullanır *filtre* ifade: Bu işlev sorun işler ve denetimi normal akıştaki sürdürmek için -1 döndürür:  
+ Örneğin, aşağıdaki kod bir işlev çağrısı kullanır *filtre* ifade: Bu işlev sorunu giderir ve normal denetim akışını sürdürmek için -1 döndürür:  
   
-```  
+```cpp 
 // exceptions_Writing_an_Exception_Filter.cpp  
 #include <windows.h>  
 int main() {  
@@ -53,11 +54,11 @@ int Eval_Exception ( int n_except ) {
 }  
 ```  
   
- Bir işlev çağrısında kullanmak iyi bir fikirdir *filtre* ifadesi her *filtre* karmaşık bir şey yapmanız gerekir. İfadenin değerlendirilmesi işlevin, bu durumda `Eval_Exception`'ın yürütülmesine neden olur.  
+ Bir işlev çağrısı kullanmak iyi bir fikirdir *filtre* ifadesi her *filtre* karmaşık bir şey yapmanız gerekir. İfadenin değerlendirilmesi işlevin, bu durumda `Eval_Exception`'ın yürütülmesine neden olur.  
   
- Kullanımına dikkat edin [GetExceptionCode](http://msdn.microsoft.com/library/windows/desktop/ms679356) özel durumu belirlemek için. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception` çağrılamıyor **GetExceptionCode**, ancak kendisine geçirilen özel durum kodu olması gerekir.  
+ Kullanımına dikkat edin [GetExceptionCode](http://msdn.microsoft.com/library/windows/desktop/ms679356) özel durumu belirlemek için. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception` çağrılamıyor `GetExceptionCode`, ancak geçirilen özel durum kodu olması gerekir.  
   
- Bu işleyici, özel durum bir tamsayı veya kayan nokta taşması değilse deneyimi başka bir işleyiciye geçirir. Tamsayı veya kayan nokta taşmasıysa, işleyici bazı genel değişkenleri sıfırlamak için bir işlev çağırır (`ResetVars` yalnızca bir örnektir, API işlevi değildir). *Deyimi bloğu 2*, bu örnekte boş olduğundan hiç yürütülebilir olduğundan `Eval_Exception` hiçbir zaman exceptıon_execute_handler (1) döndürür.  
+ Bu işleyici, özel durum bir tamsayı veya kayan nokta taşması değilse deneyimi başka bir işleyiciye geçirir. Tamsayı veya kayan nokta taşmasıysa, işleyici bazı genel değişkenleri sıfırlamak için bir işlev çağırır (`ResetVars` yalnızca bir örnektir, API işlevi değildir). *Deyim bloğu 2*, bu örnekte boş, hiçbir zaman yürütülebilir olduğundan `Eval_Exception` hiçbir zaman exceptıon_execute_handler (1) döndürür.  
   
  Bir işlev çağrısı kullanmak, karmaşık filtre ifadeleriyle başa çıkmak için genel anlamda iyi bir yöntemdir. Yararlı olan diğer iki C dili özelliği şunlardır:  
   
@@ -65,23 +66,23 @@ int Eval_Exception ( int n_except ) {
   
 -   Virgül işleci  
   
- Koşullu işleç, belirli bir dönüş kodunu denetlemek ve ardından iki farklı değerden birini döndürmek için kullanılabildiğinden genellikle çok yararlı olur. Örneğin aşağıdaki kodda yer alan filtre, özel durumu yalnızca özel durum `STATUS_INTEGER_OVERFLOW` ise algılar:  
+ Koşullu işleç, belirli bir dönüş kodunu denetlemek ve ardından iki farklı değerden birini döndürmek için kullanılabildiğinden genellikle çok yararlı olur. Örneğin, yalnızca özel durum STATUS_INTEGER_OVERFLOW ise özel durum filtresi aşağıdaki kodda tanır:  
   
-```  
+```cpp 
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {  
 ```  
   
  Bu durumda koşullu işlecin amacı, temel olarak netlik sağlamaktır, çünkü aşağıdaki kod aynı sonuçları oluşturur:  
   
-```  
+```cpp 
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {  
 ```  
   
- Koşullu işleç daha -1, exceptıon_contınue_executıon değerlendirmek için filtre burada isteyebilirsiniz durumlarda faydalıdır.  
+ Koşullu işleç, -1, exceptıon_contınue_executıon değerlendirmek için filtreyi isteyebileceğiniz durumlarda daha yararlı olur.  
   
  Virgül işleci, tek bir ifade içerisinde birden fazla bağımsız işlemler gerçekleştirmenizi sağlar. Etkisi, kabaca birden fazla deyim yürütmeye ve ardından son ifadenin değerini döndürmeye benzerdir. Örneğin, aşağıdaki kod özel durum kodunu bir değişkende depolar ve ardından bunu test eder:  
   
-```  
+```cpp 
 __except( nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW )  
 ```  
   

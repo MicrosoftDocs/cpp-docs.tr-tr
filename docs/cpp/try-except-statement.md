@@ -35,16 +35,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bd1e8139af64539974ad942f60a19e31b14d7f3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4d490f6bfb411f5ab0147e614813f8ff2bd084ce
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948044"
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 
-**Microsoft özel**  
-**Deneyin-dışında** ifadesi bir Microsoft uzantısı c ve destekleyen C++ dilleri yapılandırılmış özel durum işleme.  
+**Microsoft'a özgü**  
+**Deneyin-dışında** ifadesi bir Microsoft uzantısı c ve C++ dilleri destekleyen yapılandırılmış özel durum işleme.  
 
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -59,50 +60,50 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Deneyin-dışında** ifadesi bir Microsoft uzantısı c ve edinmek için hedef uygulamalar sağlayan C++ dilleri kontrol normalde program yürütme sonlandırmak olayları olduğunda. Bu gibi olaylar adlı *özel durumları*, ve istisnalar ilgilenir mekanizması olarak adlandırılan *yapılandırılmış özel durum işleme* (SEH).
+**Deneyin-dışında** deyimi, C için bir Microsoft uzantısıdır ve edinmek için hedef uygulamalar sağlayan C++ dilleri, normalde programın yürütülmesini sonlandıran olaylar gerçekleştiğinde denetim. Bu tür olayların adlı *özel durumları*, ve uğraşan mekanizması olarak adlandırılan *yapılandırılmış özel durum işleme* (SEH).
 
-İlgili bilgi için bkz: [try-finally deyimi](../cpp/try-finally-statement.md).
+İlgili bilgiler için bkz. [try-finally deyimi](../cpp/try-finally-statement.md).
 
 Özel durumlar, donanım tabanlı veya yazılım tabanlı olabilir. Uygulamalar donanım veya yazılım özel durumlarından tamamen kurtarılamadığında bile, yapılandırılmış özel durum işleme hata bilgilerinin görüntülenmesini ve sorunun tanılanmasına yardımcı olmak için uygulamanın iç durumunun yakalanmasını sağlar. Bu, özellikle kolayca yeniden oluşturulamayan aralıklı sorunlar için yararlıdır.
 
 > [!NOTE]
-> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için C++ özel durum işleme mekanizmasını kullanmanız önerilir ([throw deneyin ve catch](../cpp/try-throw-and-catch-statements-cpp.md) deyimleri).
+> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için C++ özel durum işleme mekanizmasını kullanmanız önerilir ([try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimleri).
 
-`__try` yan tümcesinden sonra gelen bileşik deyim gövdedir veya korunan bölümdür. `__except` yan tümcesinden sonra gelen bileşik deyim, özel durum işleyicisidir. İşleyici, korunan bölümün gövdesi yürütülürken bir özel durum oluşturulursa yapılacak işlemleri belirtir. Yürütme gibi çalışır:
+Sonra gelen bileşik deyim **__try** yan tümcesi ise gövdedir veya korunan bölümdür. Sonra gelen bileşik deyim **__except** yan tümcesi özel durum işleyicisidir. İşleyici, korunan bölümün gövdesi yürütülürken bir özel durum oluşturulursa yapılacak işlemleri belirtir. Yürütme aşağıdaki gibi çalışır:
 
 1. Korunan bölüm yürütülür.
 
-2. Korunan bölümün yürütülmesi sırasında hiçbir özel durum gerçekleşmezse, yürütme işlemine `__except` yan tümcesinden sonra deyimde devam edilir.  
+2. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşursa yürütme tümcesinden sonraki deyimden devam eder **__except** yan tümcesi.  
 
-3. Korumalı Bölüm yürütülmesi sırasında bir özel durum oluşur veya korumalı bölüm içindeki herhangi bir yordamı çağıran `__except` *ifade* (adlı *filtre* ifade) değerlendirilir ve değerin özel durumun nasıl işleneceğini belirler. Üç değer vardır:
+3. Özel bir durum oluştuğunda korunan bölümün yürütülmesi sırasında veya korunan bölümün çağırdığı herhangi bir yordamda **__except** *ifade* (adlı *filtre* ifade) değerlendirilir ve değer özel durumun nasıl işlendiğini belirler. Üç değer vardır:
 
-   **Exceptıon_contınue_executıon (-1)** özel durum kapatılır. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
+   Exceptıon_contınue_executıon (-1) özel durum kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
 
-   **Exceptıon_contınue_search (0)** özel durumu tanınmıyor. Bir işleyici yığını yukarı ilk içeren için aramaya devam **deneyin-dışında** deyimlerini sonra işleyicileri sonraki en yüksek önceliğe sahip.
+   Exceptıon_contınue_search (0) özel durum tanınmıyor. Yığında bir işleyici ilk içeren için aramaya devam edin **deneyin-dışında** deyimleri, ardından sonraki en yüksek önceliğe sahip işleyicileri için.
 
-   **Exceptıon_execute_handler (1)** özel durum tanınmıyor. `__except` bileşik deyimini yürüterek denetimi özel durum işleyicisine aktarın ve ardından `__except` bloğundan sonra yürütmeye devam edin.
+   Exceptıon_execute_handler (1) özel durum tanınır. Yürüterek denetimi özel durum işleyicisine aktarma **__except** bileşik deyimini sonra yürütmeye devam **__except** blok.
 
-Çünkü `__except` ifadenin C ifade olarak, tek bir değer, koşullu ifade işleci veya virgül işleci sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.
+Çünkü **__except** ifadesi C ifadesi olarak değerlendirildiği, tek bir değer, koşullu ifade işleci veya virgül işlecinin sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.
 
 Her uygulamanın kendi özel durum işleyicisi olabilir.
 
-`__try` deyiminin içine atlanamaz, ancak herhangi birinden dışarı atlanabilir. Bir işlem yürütülürken ortasında sonlandırıldıysa özel durum işleyici çağrılmaz bir **deneyin-dışında** deyimi.  
+İçine atlanamaz değil bir **__try** deyimi, ancak herhangi birinden dışarı atlanabilir. Özel durum işleyicisi bir işlem yürütülürken sonlandırılırsa sonlandırılırsa çağrılmaz bir **deneyin-dışında** deyimi.  
   
 Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q315937 : NASIL YAPILIR: Visual C++ Uygulamasında Yığın Taşmasını Yakalama.  
   
 ## <a name="the-leave-keyword"></a>__leave Anahtar Sözcüğü
 
-`__leave` Anahtar sözcüğü yalnızca korumalı bölümünü içinde geçerli bir **deneyin-dışında** deyimi ve etkisi olan korumalı bölümün sonuna atlamak için. Yürütme, özel durum işleyicisinden sonra ilk deyimde devam eder.
+**__Leave** anahtar sözcüğü yalnızca korunan bölümünde geçerlidir bir **deneyin-dışında** deyimi ve etkisi korunan bölümün sonuna atlama etmektir. Yürütme, özel durum işleyicisinden sonra ilk deyimde devam eder.
 
-A `goto` deyimi de dışında korumalı bölüm atlayın ve gibi onu performansının düşmesine neden olmayan bir **try-finally** deyimi yığını geriye doğru izleme oluşmaz çünkü. Ancak, korumalı alan büyükse veya karmaşıksa programlama hatası yapma olasılığınız azalacağı için `__leave` deyimi yerine `goto` anahtar sözcüğünü kullanmanızı öneririz.
+A **goto** deyimi korumalı bölümün dışına da atlayabilir ve olduğu gibi performansı düşmez bir **try-finally** deyimi yığın geriye doğru izleme gerçekleşmediği için. Ancak, kullanmanızı öneririz **__leave** anahtar sözcüğü yerine **goto** deyimi korunan bölümün büyük veya karmaşık ise programlama hata yapma olasılığını olduğundan.
 
 ### <a name="structured-exception-handling-intrinsic-functions"></a>Yapılandırılmış Özel Durum İşleme İç İşlevleri
 
-Yapılandırılmış özel durum işleme ile kullanılabilecek iki iç işlevler sağlar **deneyin-dışında** deyimi: `GetExceptionCode` ve `GetExceptionInformation`.
+Yapılandırılmış özel durum işleme ile kullanılabilecek iki iç işlev sağlar **deneyin-dışında** deyimi: `GetExceptionCode` ve `GetExceptionInformation`.
 
-`GetExceptionCode` özel durum kodunu (32 bit tamsayı) döndürür.
+`GetExceptionCode` özel durum kodunu (32-bit tamsayı) döndürür.
 
-İç işlev `GetExceptionInformation` özel durum hakkında ek bilgi içeren bir yapı için bir işaretçi döndürür. Bu işaretçiyle, donanım özel durumu sırasında var olan makine durumuna erişebilirsiniz. Yapı aşağıdaki gibidir:
+İç işlevi `GetExceptionInformation` özel durum hakkında ek bilgi içeren bir yapıya bir işaretçi döndürür. Bu işaretçiyle, donanım özel durumu sırasında var olan makine durumuna erişebilirsiniz. Yapı aşağıdaki gibidir:
 
 ```cpp  
 typedef struct _EXCEPTION_POINTERS {
@@ -111,13 +112,13 @@ typedef struct _EXCEPTION_POINTERS {
 } EXCEPTION_POINTERS, *PEXCEPTION_POINTERS; 
 ```  
 
-İşaretçi türleri `PEXCEPTION_RECORD` ve `PCONTEXT` INCLUDE dosyasında tanımlanan \<winnt.h >, ve `_EXCEPTION_RECORD` ve `_CONTEXT` INCLUDE dosyasında tanımlanan \<excpt.h >
+İşaretçi türleri `PEXCEPTION_RECORD` ve `PCONTEXT` içerme dosyasında tanımlanır \<winnt.h >, ve `_EXCEPTION_RECORD` ve `_CONTEXT` içerme dosyasında tanımlanır \<excpt.h >
 
-Kullanabileceğiniz `GetExceptionCode` özel durum işleyici içinde. Ancak, kullanabileceğiniz `GetExceptionInformation` yalnızca özel durum filtre ifadesi içinde. İşaret ettiği bilgiler, genellikle yığındadır ve denetim özel durum işleyicisine aktarıldığında kullanılamaz.
+Kullanabileceğiniz `GetExceptionCode` içinde özel durum işleyicisi. Ancak, kullanabileceğiniz `GetExceptionInformation` yalnızca özel durum filtresi ifadesinde. İşaret ettiği bilgiler, genellikle yığındadır ve denetim özel durum işleyicisine aktarıldığında kullanılamaz.
 
-İç işlev `AbnormalTermination` sonlandırma işleyicisi içinde kullanılabilir. İse 0 döndürür gövdesini **try-finally** açıklamayı sonlandıran sıralı olarak. Diğer tüm durumlarda, 1 döndürür.
+İç işlevi `AbnormalTermination` sonlandırma işleyicisinin içerisinde kullanılabilir. 0 döndürür gövdesinin **try-finally** sırayla deyimini sonlandırır. Diğer tüm durumlarda, 1 döndürür.
 
-Bu yapı için bazı diğer adlar excpt.h tanımlar:
+excpt.h, bu iç öğeler için bazı alternatif adlar tanımlar:
 
 `GetExceptionCode` eşdeğerdir `_exception_code`
 
@@ -177,7 +178,7 @@ int main()
   
 ## <a name="output"></a>Çıkış  
   
-```  
+```Output 
 hello  
 in try  
 in try  
@@ -189,7 +190,7 @@ in except
 world  
 ```  
 
-**SON Microsoft özel**  
+**END Microsoft özgü**  
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

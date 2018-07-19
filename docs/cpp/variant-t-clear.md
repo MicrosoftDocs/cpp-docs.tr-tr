@@ -19,17 +19,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce2a8f423c7c1ff4ce975e13b216442825c6d65c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7f3249408a63b873e4eea9d6b1ec741fc1471ac9
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420986"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939409"
 ---
 # <a name="varianttclear"></a>_variant_t::Clear
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Kapsüllenmiş temizler **değişken** nesnesi.  
+ Kapsüllenmiş temizler `VARIANT` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,9 +40,9 @@ void Clear( );
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağrıları **VariantClear** kapsüllenmiş üzerinde **değişken** nesnesi.  
+ Çağrıları `VariantClear` kapsüllenmiş üzerinde `VARIANT` nesne.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

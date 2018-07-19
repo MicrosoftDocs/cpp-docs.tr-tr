@@ -15,16 +15,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e4200548100804d1e64c16311875e85ffcdd717
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 49149a055f60cb24c6f676b91a2d9ddd55132a3a
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948229"
 ---
 # <a name="anonymous-class-types"></a>Anonim Sınıf Türleri
-Sınıfları anonim olabilir — diğer bir deyişle, bunlar olmadan bildirilebilir bir *tanımlayıcısı*. Bir sınıf adı değiştirin gerektiğinde bu faydalıdır bir `typedef` aşağıdaki gibi ad:  
+Sınıflar, anonim olabilir — diğer bir deyişle, bunlar olmadan bildirilebilir bir *tanımlayıcı*. Bir sınıf adını değiştirmeniz gerektiğinde bu faydalıdır bir **typedef** adı olduğu aşağıdaki gibi:  
   
-```  
+```cpp 
 typedef struct  
 {  
     unsigned x;  
@@ -33,11 +34,11 @@ typedef struct
 ```  
   
 > [!NOTE]
->  Önceki örnekte gösterilen anonim sınıfları kullanımını, var olan C kodu ile koruma uyumluluk için kullanışlıdır. Bazı C kodda, kullanımını `typedef` anonim yapılar birlikte yaygın olduğu.  
+>  Önceki örnekte gösterilen anonim sınıflar kullanımını, var olan C kodu ile koruma uyumluluğu için kullanışlıdır. Bazı C kodunda kullanımını **typedef** anonim yapılar ile birlikte yaygın olan.  
   
- Anonim sınıfları ayrıca değil içerdiği şekilde aşağıdaki gibi ayrı bir sınıf görünür için bir sınıf üyesine bir başvuru istediğinizde kullanışlıdır:  
+ Anonim sınıflar, ayrıca bir başvuru sınıfının üyesi değil içerdiği şekilde aşağıdaki gibi ayrı bir sınıf içinde görünür istediğinizde yararlıdır:  
   
-```  
+```cpp 
 struct PTValue  
 {  
     POINT ptLoc;  
@@ -51,28 +52,28 @@ struct PTValue
 PTValue ptv;  
 ```  
   
- Önceki kod `iValue` nesne üye seçimi işleci kullanılarak erişilebilir (**.**) gibi:  
+ Önceki kodda, `iValue` nesne üye seçme işleci kullanılarak erişilebilir (**.**) gibi:  
   
-```  
+```cpp 
 int i = ptv.iValue;  
 ```  
   
- Anonim sınıflardır belirli sınırlamalara tabidir. (Anonim birleşimler hakkında daha fazla bilgi için bkz: [birleşimler](../cpp/unions.md).) Anonim sınıflar:  
+ Belirli kısıtlamalara anonim sınıflardır. (Anonim birleşimler hakkında daha fazla bilgi için bkz: [birleşimler](../cpp/unions.md).) Anonim sınıflar:  
   
--   Oluşturucunun ya da yıkıcı sahip olamaz.  
+-   Bir oluşturucu veya yıkıcıya sahip olamaz.  
   
--   (Tür denetlemesi üç nokta kullanarak engellenmediğinden olmadığı sürece) işleve bağımsız değişken olarak geçirilemez.  
+-   (Tür denetimi üç nokta simgesini kullanarak engellenmediğinden olmadığı sürece) işlevleri için bağımsız değişken olarak geçirilemez.  
   
--   Olarak dönüş değerleri işlevlerden iade edilemez.  
+-   İşlevlerin dönüş değerleri olarak döndürülemez.  
   
 ## <a name="anonymous-structs"></a>Anonim yapılar  
   
 ### <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Microsoft C uzantısı, bir ad verip olmadan başka bir yapı içinde bir yapı değişken bildirme olanak sağlar. Bu iç içe geçmiş yapılar anonim yapılar denir. C++ anonim yapılar izin vermiyor.  
+ Microsoft C uzantısı bir ad vererek olmadan başka bir yapı içinde bir yapısı değişkenini bildirmek sağlar. Anonim yapılar bu iç içe geçmiş yapılar çağrılır. C++ anonim yapılar izin vermez.  
   
- Üyeleri içeren yapısındaki değilmiş gibi anonim bir yapı üyeleri erişebilir.  
+ Üyeleri içeren yapısında değilmiş gibi anonim bir yapının üyelerine erişebilir.  
   
-```  
+```cpp 
 // anonymous_structures.c  
 #include <stdio.h>  
   
@@ -99,5 +100,5 @@ int main()
 //Output: 1234567  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   

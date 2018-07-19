@@ -1,5 +1,5 @@
 ---
-title: Giriş bitiş kodu yazmada dikkat edilmesi gerekenler | Microsoft Docs
+title: Giriş ve bitiş kodu yazmada dikkat edilmesi gerekenler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,16 +18,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bd87d4af4c797d324e6f882cc5c2e139a784543
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5b7f4e2c25d7ead3399020221c1e0e9633557d24
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414776"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37942113"
 ---
 # <a name="considerations-for-writing-prologepilog-code"></a>Giriş ve Bitiş Kodu Yazmada Dikkat Edilmesi Gerekenler
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Kendi giriş ve sonuç kod dizilerinizi yazmadan önce, yığın çerçevesinin nasıl düzenlendiğini anlamak önemlidir. Nasıl kullanılacağını öğrenmek de yararlıdır **__local_sıze** simgesi.  
+ Kendi giriş ve sonuç kod dizilerinizi yazmadan önce, yığın çerçevesinin nasıl düzenlendiğini anlamak önemlidir. __Local_sıze sembol nasıl kullanılacağını kullanışlıdır.  
   
 ##  <a name="_pluslang_c.2b2b_.stack_frame_layout"></a> Yığın çerçevesi düzeni  
  Bu örnekte, 32 bit işlevinde görünebilecek standart giriş kodu gösterilmektedir:  
@@ -48,19 +48,19 @@ pop         ebp           ; Restore ebp
 ret                       ; Return from function  
 ```  
   
- Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yerel öğeler alanı başlangıcı `ebp-4`. Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.  
+ Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yerel alan başlangıcı `ebp-4`. Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.  
   
 ##  <a name="_pluslang___local_size"></a> __LOCAL_SIZE  
- Bir simge derleyici sağlar **__local_sıze**, işlevi giriş kodu satır içi derleyici bloğunu kullanmak için. Bu simge, yerel değişkenleri özel giriş kodunda yığın çerçevesinde alan ayırmak için kullanılır.  
+ Derleyici, __local_sıze, işlev giriş kodunun satır içi assembler bloğunu kullanmak için bir simge sağlar. Bu simge, özel giriş kodundaki yığın çerçevesinde yerel değişkenler için alan ayırmak için kullanılır.  
   
- Derleyici değerini belirler **__local_sıze**. Değerini, tüm kullanıcı tanımlı yerel değişkenleri ve derleyicinin ürettiği geçici değişkenleri bayt toplam sayısıdır. **__Local_sıze** yalnızca hemen işleneni olarak; kullanılabilir bir ifadede kullanılamaz. Değil, değiştirmek veya bu simge değerini yeniden tanımlamanız gerekir. Örneğin:  
+ Derleyici __local_sıze değerini belirler. Değerini bayt tüm kullanıcı tanımlı yerel değişkenlerin ve derleyici tarafından oluşturulan geçici değişkenlerin toplam sayısıdır. __Local_sıze yalnızca bir anlık işlenen kullanılabilir. bir ifadede kullanılamaz. Değiştirmemeli veya değeri bu simgeyi yeniden tanımlama. Örneğin:  
   
 ```  
 mov        eax, __LOCAL_SIZE           ;Immediate operand--Okay  
 mov        eax, [ebp - __LOCAL_SIZE]   ;Error  
 ```  
   
- Özel giriş ve bitiş içeren bir çıplak işlev aşağıdaki örneği dizilerinin kullanır **__local_sıze** sembol giriş sırası içinde:  
+ Özel giriş ve sonuç dizileri içeren çıplak bir işlev, aşağıdaki örnekte giriş dizisinde __local_sıze sembol kullanır:  
   
 ```  
 // the__local_size_symbol.cpp  
@@ -84,7 +84,7 @@ __declspec ( naked ) int main() {
 }  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Naked İşlevi Çağrıları](../cpp/naked-function-calls.md)

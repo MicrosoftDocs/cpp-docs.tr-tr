@@ -16,27 +16,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44df8d3e9429c272d83025b600fc8d43cc8f8b73
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5a469b47d54cef9084ba686538219d62a2d5ec50
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948032"
 ---
 # <a name="true-c"></a>true (C++)
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      bool-identifier = true ;  
+bool-identifier = true ;  
 bool-expression logical-operator true ;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu anahtar sözcük türünde bir değişken için iki değerlerinden biri [bool](../cpp/bool-cpp.md) veya (koşullu ifade şimdi bir ifadedir true boolean) koşullu bir ifade. Varsa `i` türü `bool`, ardından deyimi `i = true;` atar **true** için `i`.  
+ İki değer türünde bir değişken için bu anahtar sözcük biridir [bool](../cpp/bool-cpp.md) ya da bir koşullu ifade (bir koşullu ifade, artık doğru bir Boole ifadesi). Varsa `i` türünde **bool**, then deyimi `i = true;` atar **true** için `i`.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // bool_true.cpp  
 #include <stdio.h>  
 int main()  

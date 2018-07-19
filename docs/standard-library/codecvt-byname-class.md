@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48b1d6e93aa929d95032c04a58b5b419ca312f8d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 822d19e1333163dbe37a1734ce315048f81cb802
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842800"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964378"
 ---
 # <a name="codecvtbyname-class"></a>codecvt_byname Sınıfı
 
@@ -53,15 +53,15 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-`_Locname` Adlandırılmış bir yerel ayar.
+*_Locname* adlandırılmış bir yerel ayar.
 
-`_Refs` Bir başlangıç başvuru sayısı.
+*_Refs* ilk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Adlandırılmış bir yerel ayar oluşturulduğunda Byname modelleri otomatik olarak oluşturulur.
+Adlandırılmış bir yerel ayar oluşturulduğunda Byname özellikleri otomatik olarak oluşturulur.
 
-Davranışını adlandırılmış bölgeye göre belirlenir `_Locname`. Her oluşturucu temel nesnesiyle başlatır [codecvt](../standard-library/codecvt-class.md)\<CharType, bayt StateType > ( `_Refs`).
+Davranışını adlandırılmış yerel ayar tarafından belirlenir *_Locname*. Her Oluşturucu, temel nesnesiyle başlatır [codecvt](../standard-library/codecvt-class.md)\<CharType, Byte, StateType > ( `_Refs`).
 
 ## <a name="requirements"></a>Gereksinimler
 

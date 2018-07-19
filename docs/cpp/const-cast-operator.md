@@ -16,37 +16,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed5daf503024b2c3f843faeeaedbd9ec9bf64b7c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 89ed2b161c5b8f73d68fb22eb29eb00e057d7029
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948139"
 ---
 # <a name="constcast-operator"></a>const_cast İşleci
-Kaldırır **const**, `volatile`, ve **__unaligned** sınıfından öznitelikleri.  
+Kaldırır **const**, **geçici**, ve **__unaligned** bir sınıftan öznitelikleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-const_cast <   
-type-id  
- > (   
-expression  
- )  
+const_cast <type-id> (expression)  
   
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Herhangi bir nesne türü için bir işaretçi veya veri üyesi için bir işaretçi açıkça dışında aynı olan bir türe dönüştürülebilir **const**, `volatile`, ve **__unaligned** niteleyicileri. İşaretçiler ve başvurular için sonuç orijinal nesneye başvuracaktır. Veri üyelerinin işaretçileri için sonuç, veri üyesinin orijinal (atanmamış) işaretçisiyle aynı üyeye başvuracaktır. Başvurulan nesnenin türüne bağlı olarak, elde edilen işaretçi, başvuru veya üye verisinin işaretçisi kullanılarak yapılan yazma işlemi tanımlanmamış davranış oluşturabilir.  
+ Herhangi bir nesne türünün işaretçisi veya bir veri üyesine bir işaretçi açıkça dışında aynı olan bir türe dönüştürülebilir **const**, **geçici**, ve **__unaligned** niteleyiciler. İşaretçiler ve başvurular için sonuç orijinal nesneye başvuracaktır. Veri üyelerinin işaretçileri için sonuç, veri üyesinin orijinal (atanmamış) işaretçisiyle aynı üyeye başvuracaktır. Başvurulan nesnenin türüne bağlı olarak, elde edilen işaretçi, başvuru veya üye verisinin işaretçisi kullanılarak yapılan yazma işlemi tanımlanmamış davranış oluşturabilir.  
   
  Sabit değişkenin sabit durumunu doğrudan geçersiz kılmak için `const_cast` işlecini kullanamazsınız.  
   
- `const_cast` İşleci hedef türü null işaretçinin değeri boş işaretçi değeri dönüştürür.  
+ `const_cast` İşlecini bir null işaretçi değeri hedef türünün boş işaretçi değerine dönüştürür.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_const_cast_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -75,7 +72,7 @@ int main() {
 }  
 ```  
   
- `const_cast` içeren satırda, `this` işaretçisinin veri türü `const CCTest *` şeklindedir. `const_cast` işleci, `this` işaretçisinin veri türünü `CCTest *` olarak değiştirir ve böylece `number` üyesinin değiştirilmesini sağlar. Atama, yalnızca deyimin geri kalanında göründüğü kadar sürer.  
+ İçeren satırda `const_cast`, veri türü **bu** işaretçisi `const CCTest *`. `const_cast` İşleci veri türünü değiştirir **bu** işaretçisine `CCTest *`, üyesinin değiştirilmesini `number` değiştirilecek. Atama, yalnızca deyimin geri kalanında göründüğü kadar sürer.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Atama İşleçleri](../cpp/casting-operators.md)   

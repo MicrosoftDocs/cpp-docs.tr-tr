@@ -15,18 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ee906061c7b51ade818b164c1d371a88ef3d462
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8bec66d25be2cb56c75f42f60af2ccd5e3f759ad
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948218"
 ---
 # <a name="transfers-of-control"></a>Denetim Taşıma
-Kullanabileceğiniz `goto` deyimi veya bir **durum** içinde etiket bir `switch` deyimi bir başlatıcı dallandırır bir program belirtin. Başlatıcı içeren bildirimi tarafından bloğunun içine bloğundaki olmadığı sürece bu tür kodu geçersiz atlama deyimi oluştuğu içinde.  
+Kullanabilirsiniz **goto** deyimi veya bir **çalışması** etiketi bir **geçiş** deyimini bir başlatıcı dallar bir program belirtin. Başlatıcı içeren bildirimi blok tarafından alınmış bir blok içinde olmadığı sürece bu tür kod geçersiz atlama deyimi oluştuğu içinde.  
   
- Aşağıdaki örnek bildirir ve nesneleri başlatır bir döngü gösterir `total`, `ch`, ve `i`. Ayrıca vardır bir hatalı `goto` bir başlatıcı geçmiş denetim aktarır deyimi.  
+ Aşağıdaki örnek, bir döngüyü bildirir ve nesneleri başlatır gösterir `total`, `ch`, ve `i`. De mevcuttur bir hatalı **goto** aktaran bir başlatıcı son denetim ifadesi.  
   
-```  
+```cpp 
 // transfers_of_control.cpp  
 // compile with: /W1  
 // Read input until a nonnumeric character is entered.  
@@ -56,7 +57,7 @@ int main()
 }  
 ```  
   
- Önceki örnekte `goto` deyimi çalışır başlatılması geçmiş denetim aktarmak `i`. Ancak, varsa `i` bildirilen ancak başlatılmadı, aktarım yasal olacaktır.  
+ Önceki örnekte **goto** deyimi son başlatma denetimi aktarım dener `i`. Ancak, varsa `i` bildirildi ancak başlatılmadı, aktarımı geçerli olacaktır.  
   
- Nesneleri `total` ve `ch`görevi gören bloğundaki bildirilen *deyimi* , `while` deyimi kullanarak bu blok çıkıldı zaman yok `break` deyimi.  
+ Nesneleri `total` ve `ch`görevi gören bir blok içinde bildirilen *deyimi* , **sırada** deyimini kullanarak o blok çıkıldı zaman yok  **Kesme** deyimi.  
   

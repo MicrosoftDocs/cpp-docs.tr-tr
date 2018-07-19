@@ -1,5 +1,5 @@
 ---
-title: devam et deyimi (C++) | Microsoft Docs
+title: continue deyimi (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b153c9f5dfae93f1a5cb83dc2b9bcfc09e77af07
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 97422a09f890686c4d414eea13da7db891494cc4
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948210"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C++)
-En küçük kapsayan denetleme ifade için Denetim aktarımını zorlar [yapmak](../cpp/do-while-statement-cpp.md), [için](../cpp/for-statement-cpp.md), veya [sırada](../cpp/while-statement-cpp.md) döngü.  
+En küçük kapsayan denetleme ifade için Denetim aktarımı zorlar [yapmak](../cpp/do-while-statement-cpp.md), [için](../cpp/for-statement-cpp.md), veya [sırada](../cpp/while-statement-cpp.md) döngü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,17 +33,17 @@ continue;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli yinelemeye kalan tüm deyimlerinde yürütülmedi. Sonraki döngü şu şekilde belirlenir:  
+ Kalan tüm geçerli yineleme deyimlerinde yürütülmedi. Döngünün sonraki yinelemesine şu şekilde belirlenir:  
   
--   İçinde bir `do` veya `while` döngü, sonraki yinelemeye başlatır kontrol eden bir ifade reevaluating tarafından `do` veya `while` deyimi.  
+-   İçinde bir **yapmak** veya **sırada** döngü, sonraki yineleme başlatır, denetleme ifadesiyle reevaluating tarafından **yapmak** veya **sırada** deyimi.  
   
--   İçinde bir `for` döngü (sözdizimini kullanarak `for`(`init-expr`; `cond-expr`; `loop-expr`)), `loop-expr` yan tümcesi gerçekleştirilir. Ardından `cond-expr` yan tümcesi yeniden değerlendirimiş ve sonucuna bağlı olarak, döngü ya da sona veya başka bir yineleme gerçekleşir.  
+-   İçinde bir **için** döngü (söz dizimi kullanılarak `for`(`init-expr`; `cond-expr`; `loop-expr`)), `loop-expr` yan tümcesi yürütülür. Ardından `cond-expr` yan tümcesi yeniden değerlendirimiş ve sonucuna bağlı olarak, döngü ya da sona erer veya başka bir yineleme gerçekleşir.  
   
- Aşağıdaki örnekte gösterildiği nasıl `continue` deyimi, kodun bölümlerini atlayıp sonraki yineleme döngüsü başlatmak için kullanılabilir.  
+ Aşağıdaki örnekte gösterildiği nasıl **devam** deyimi, kod bölümlerini atlayabilir ve bir döngünün sonraki yinelemesine başlatmak için kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // continue_statement.cpp  
 #include <stdio.h>  
 int main()  

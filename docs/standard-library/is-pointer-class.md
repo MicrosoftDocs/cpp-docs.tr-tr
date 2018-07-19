@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf9f05b77adc7d989d37afcbce040405ccbfdf03
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 30234c932aad28d16830b80fd19e4ad334ba407c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852116"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962822"
 ---
 # <a name="ispointer-class"></a>is_pointer Sınıfı
 
-Testleri türünü gösteren bir işaretçidir.
+Bir işaretçi türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_pointer;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` gösteren bir işaretçidir `void`, bir işaretçi bir nesneye veya bir işlev işaretçisi bir veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimidir. Unutmayın `is_pointer` ayrı tutma false ise `Ty` üyesi için bir işaretçi veya üye işlevi için bir işaretçi.
+Karşılaştırmasının bir örneği true tutan türü *Ty* işaretçisidir **void**, işaretçi bir nesne için bir veya bir işlev işaretçisine veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimi. Unutmayın `is_pointer` ayrı tutma false ise *Ty* üye işaretçisi veya bir üye işlevi işaretçisi.
 
 ## <a name="example"></a>Örnek
 

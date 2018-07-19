@@ -16,39 +16,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91ce48232884d1ab242ed52f82f614de058a2f91
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b9caa3d08140887da45916b931b6a4850358db16
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948253"
 ---
 # <a name="super"></a>__super
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Geçersiz kılma bir işlev için bir temel sınıf uygulamasını çağırma açıkça durum olanak tanır.  
+ Açıkça geçersiz kılma bir işlev için bir temel sınıf uygulamasını çağırma durumunu sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-__super::  
-member_function  
-();  
+__super::member_function();  
   
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tüm erişilebilir taban sınıf yöntemlerini aşırı yükleme çözümü aşamasında olarak kabul edilir ve en iyi eşleşmeyi sağlayan işlev çağrılır adrestir.  
+ Tüm erişilebilir temel sınıf yöntemleri aşırı yükleme çözünürlüğü aşamasında olarak kabul edilir ve en iyi eşleşmeyi sağlar çağrılan bir işlevdir.  
   
- `__super` yalnızca bir üye işlev gövdesi içinde bulunabilir.  
+ **__super** yalnızca bir üye işlevinin gövdesi içinde görünebilir.  
   
- `__super` kullanarak bir kullanılamaz bildirimi. Bkz: [bildirimi kullanarak](../cpp/using-declaration.md) daha fazla bilgi için.  
+ **__super** kullanarak bir kullanılamaz bildirimi. Bkz: [using bildirimi](../cpp/using-declaration.md) daha fazla bilgi için.  
   
- Girişiyle [öznitelikleri](../windows/cpp-attributes-reference.md) kod ekleme, kodunuzu tanımadığınız, ancak adları çağırmak istediğiniz yöntemleri içeren bir veya daha fazla temel sınıfları içerebilir.  
+ Sunulmasıyla birlikte [öznitelikleri](../windows/cpp-attributes-reference.md) kod ekleme, kodunuzu bilginiz, ancak adları çağırmak istediğiniz yöntemi içeren bir veya daha fazla temel sınıfları içerebilir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // deriv_super.cpp  
 // compile with: /c  
 struct B1 {  
@@ -69,7 +68,7 @@ struct D : B1, B2 {
 };  
 ```  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

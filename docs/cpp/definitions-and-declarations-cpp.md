@@ -12,16 +12,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 742270c77d47c178d0254ca9b9882f73fe3b8293
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f4b8635f082f706ef07697653d56155414c5199d
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411773"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940917"
 ---
 # <a name="definitions-and-declarations-c"></a>Tanımlar ve Bildirimler (C++)
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü
- DLL arabirimi sistemde bazı programlar tarafından verilecek bilinen tüm öğeleri (İşlevler ve veriler) ifade eder; diğer bir deyişle, olarak bildirilen tüm öğeleri `dllimport` veya `dllexport`. DLL arabiriminde dahil tüm bildirimleri ya da belirtmeniz gerekir `dllimport` veya `dllexport` özniteliği. Ancak, tanım yalnızca `dllexport` özniteliğini belirtmelidir. Örneğin, aşağıdaki işlev tanımı bir derleyici hatası oluşturur:
+ DLL arabirimi, sistemdeki bazı programlar tarafından dışa aktarılacak bilinen tüm öğelere (İşlevler ve veriler) gösterir. olarak bildirilen diğer bir deyişle, tüm öğeleri **dllimport** veya **dllexport**. DLL arabirimine dahil olan tüm bildirimler belirtmeli **dllimport** veya **dllexport** özniteliği. Ancak, tanım yalnızca belirtmelisiniz **dllexport** özniteliği. Örneğin, aşağıdaki işlev tanımı bir derleyici hatası oluşturur:
 
 ```
 __declspec( dllimport ) int func() {   // Error; dllimport
@@ -42,7 +42,7 @@ __declspec( dllimport ) int i = 10;  // Error; this is a definition.
 __declspec( dllexport ) int i = 10;  // Okay--export definition
 ```
 
- Kullanımını `dllexport` bir tanımı gelir sırada `dllimport` bir bildirimi anlamına gelir. Bir bildirimi zorlamak için `extern` ile `dllexport` anahtar sözcüğünü kullanmanız gerekir; aksi takdirde, bir tanım gösterilir. Bu nedenle, aşağıdaki örnekler doğrudur:
+ Kullanımını **dllexport** bir tanımı gelir ancak **dllimport** bir bildirimi gösterir. Kullanmalısınız **extern** anahtar sözcüğü ile **dllexport** bir bildirimi zorlamak için Aksi takdirde, bir tanım gösterilir. Bu nedenle, aşağıdaki örnekler doğrudur:
 
 ```
 #define DllImport   __declspec( dllimport )
@@ -73,7 +73,7 @@ void func() {
 }
 ```
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [dllexport, dllimport](../cpp/dllexport-dllimport.md)

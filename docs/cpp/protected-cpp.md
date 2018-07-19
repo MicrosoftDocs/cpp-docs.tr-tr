@@ -17,11 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be866cda09ddc1770cf8d4b1ac0433e3c2701520
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b01c2f9ec4fa48cd2f11bd4176110384c1f8d288
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948010"
 ---
 # <a name="protected-c"></a>protected (C++)
 ## <a name="syntax"></a>Sözdizimi  
@@ -33,7 +34,7 @@ protected base-class
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `protected` Anahtar sözcüğü belirtir sınıf üyelerine erişimi *üye listesi* sonraki erişim belirticisi kadar (**ortak** veya `private`) veya sınıf tanımını sonuna. `protected` olarak bildirilen sınıf üyeleri yalnızca aşağıdakiler tarafından kullanılabilir:  
+ **Korumalı** anahtar sözcüğü belirtir sınıf üyelerine erişimi *üye listesi* kadar sonraki erişim belirticisi (**genel** veya **özel**) veya sınıf tanımının son. Olarak bildirilen sınıf üyeleri **korumalı** yalnızca aşağıdakiler tarafından kullanılabilir:  
   
 -   Başlangıçta bu üyeleri bildiren sınıfın üye işlevleri.  
   
@@ -43,25 +44,25 @@ protected base-class
   
 -   Korumalı üyelere özel erişimi de olan, doğrudan özel olarak türetilmiş sınıflar.  
   
- Bir temel sınıfın adından önce geldiği zaman, `protected` anahtar sözcüğü, temel sınıfın genel ve korumalı üyelerinin aynı zamanda kendi türetilmiş sınıfın korumalı üyeleri olduğunu belirtir.  
+ Bir temel sınıfın adından önce zaman **korumalı** anahtar sözcüğü, temel sınıfın genel ve korumalı üyelerinin kendi türetilmiş sınıfın korumalı üyeleri olduğunu belirtir.  
   
- Korumalı üye olarak özel olmayan `private` yalnızca bildirilen ancak olarak genel olarak olmadıkları sınıfı üyeleri erişilebilir üyeleri **ortak** herhangi bir işlevde erişilebilir üyeleri.  
+ Korumalı üyeler gibi özel olmayan **özel** yalnızca bildirildikleri ancak kadar genel de değildir bu sınıfın üyeleri tarafından erişilebilir olan üyelerin **genel** içinde erişilebilir üyeler herhangi bir işlev.  
   
- Korumalı olarak da bildirilen üyeler **statik** herhangi türetilmiş bir sınıf arkadaş veya üye işlevine erişilebilir. Korumalı olarak bildirilmemiş üyeler **statik** arkadaşlarınıza ve üye işlevleri yalnızca bir başvuru için işaretçi veya türetilmiş bir sınıf nesnesinin üzerinden türetilmiş bir sınıf içinde erişilebilir.  
+ Korumalı olarak da bildirilen üyeler **statik** türetilmiş bir sınıfın tüm arkadaş veya üye işleve erişilebilir. Korumalı olarak bildirilmemiş olan üyelere **statik** arkadaşlar ve üye işlevleri türetilen bir sınıfta yalnızca bir işaretçi başvurusu veya türetilmiş sınıfın nesnesi aracılığıyla erişilebilir.  
   
- İlgili bilgi için bkz: [arkadaş](../cpp/friend-cpp.md), [ortak](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md)ve üye erişimi tabloda [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) .  
+ İlgili bilgiler için bkz. [arkadaş](../cpp/friend-cpp.md), [genel](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md)ve üye erişimi tablosu [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) .  
   
 ## <a name="clr-specific"></a>/clr Özel  
- CLR Türleri'nde, C++ erişim belirteci anahtar sözcükler (**ortak**, `private`, ve `protected`) türlerini ve derlemeleri açısından yöntemleri görünürlüğünü etkileyebilir. Daha fazla bilgi için bkz: [üye erişim denetimi](member-access-control-cpp.md).  
+ CLR türlerinde, C++ erişim belirtici anahtar sözcükleri (**genel**, **özel**, ve **korumalı**) türler ve Derlemelerle yöntemlerin görünürlüğünü etkileyebilir. Daha fazla bilgi için [üye erişim denetimi](member-access-control-cpp.md).  
   
 > [!NOTE]
->  Derlenmiş dosyalar [/LN](../build/reference/ln-create-msil-module.md) Bu davranış tarafından etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.  
+>  İle derlenmiş dosyalar [/LN](../build/reference/ln-create-msil-module.md) Bu davranıştan etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.  
   
 ## <a name="end-clr-specific"></a>END /clr Özel  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // keyword_protected.cpp  
 // compile with: /EHsc  
 #include <iostream>  

@@ -17,26 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4fe4e7c26d1b32f16d524407279e5e71534d00c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eba4ae92f9db67dfff58ec111b294b6cd26eff5a
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411250"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939825"
 ---
 # <a name="compiler-com-support-classes"></a>Derleyici COM Desteği Sınıfları
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Standart sınıfları bazı COM türlerini desteklemek için kullanılır. Sınıfları tanımlanan \<comdef.h > ve tür kitaplığından oluşturulan üstbilgi dosyaları.  
+ Standart sınıfları, COM türlerinin bazılarını desteklemek için kullanılır. Sınıfları, şurada tanımlanan \<comdef.h > ve tür kitaplığından oluşturulan üst bilgi dosyaları.  
   
 |örneği|Amaç|  
 |-----------|-------------|  
-|[_bstr_t](../cpp/bstr-t-class.md)|Sarmalar `BSTR` türü yararlı operatörleri ve yöntemleri sağlar.|  
-|[_com_error](../cpp/com-error-class.md)|Tarafından oluşturulan hata nesnesi tanımlar [_com_raise_error](../cpp/com-raise-error.md) çoğu hata içinde.|  
-|[_com_ptr_t](../cpp/com-ptr-t-class.md)|COM arabirimi işaretçileri yalıtır ve gerekli çağrıları otomatikleştirir `AddRef`, **sürüm**, ve `QueryInterface`.|  
-|[_variant_t](../cpp/variant-t-class.md)|Sarmalar **değişken** türü yararlı operatörleri ve yöntemleri sağlar.|  
+|[_bstr_t](../cpp/bstr-t-class.md)|Sarmalar `BSTR` yararlı işleçler ve yöntemler sağlamak için türü.|  
+|[_com_error](../cpp/com-error-class.md)|Tarafından oluşturulan hata nesnesi tanımlar [_com_raise_error](../cpp/com-raise-error.md) içinde çoğu hata.|  
+|[_com_ptr_t](../cpp/com-ptr-t-class.md)|COM arabirim işaretçilerini kapsayan ve gerekli çağrıları otomatikleştirir `AddRef`, `Release`, ve `QueryInterface`.|  
+|[_variant_t](../cpp/variant-t-class.md)|Sarmalar `VARIANT` yararlı işleçler ve yöntemler sağlamak için türü.|  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici COM desteği](../cpp/compiler-com-support.md)   

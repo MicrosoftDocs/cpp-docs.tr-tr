@@ -24,39 +24,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 915bcd5487f423b6240061a0e85f5554a3224397
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b5f6f0c6bf9933f06da4b50f9754a0d68814e16b
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357600"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37883758"
 ---
 # <a name="date-and-time-automation-support"></a>Tarih ve saat: Otomasyon desteği
-Bu makalede, tarih ve saat yönetimiyle ilgili sınıf kitaplığı Hizmetleri yararlanmak açıklar. Açıklanan yordamları içerir:  
+Bu makalede, tarih ve saat yönetimiyle ilgili sınıf kitaplığı hizmetlerinden yararlanan açıklar. Açıklanan yordamları içerir:  
   
 -   [Geçerli saati alma](../atl-mfc-shared/current-time-automation-classes.md)  
   
--   [Geçen süre hesaplama](../atl-mfc-shared/elapsed-time-automation-classes.md)  
+-   [Geçen süreyi hesaplama](../atl-mfc-shared/elapsed-time-automation-classes.md)  
   
--   [Bir dize gösterimini bir tarih/saat biçimlendirme](../atl-mfc-shared/formatting-time-automation-classes.md)  
+-   [Bir tarih dize gösterimini biçimlendirme](../atl-mfc-shared/formatting-time-automation-classes.md)  
   
- [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) sınıfı tarih ve saat bilgilerini göstermek için bir yol sağlar. Hassas ayrıntı düzeyi ve daha büyük bir aralık sağlar [CTime](../atl-mfc-shared/reference/ctime-class.md) sınıfı. [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) sınıfı temsil eder, ikisi arasındaki farkı gibi belirli bir süre `COleDateTime` nesneleri.  
+ [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) sınıfı tarih ve saat bilgilerini temsil etmek için bir yol sağlar. Daha iyi tanecikli ve daha büyük bir aralık sağladığı [CTime](../atl-mfc-shared/reference/ctime-class.md) sınıfı. [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) sınıfı temsil eder, ikisi arasındaki farkı gibi belirli bir süre `COleDateTime` nesneleri.  
   
- `COleDateTime` Ve `COleDateTimeSpan` sınıfları ile kullanılmak üzere tasarlanmıştır `COleVariant` Otomasyon kullanılan bir sınıftır. `COleDateTime` ve `COleDateTimeSpan` MFC veritabanı programlama kullanışlıdır ancak tarih ve saat değerlerini değiştirmek istediğiniz zaman kullanılabilirler. Rağmen `COleDateTime` sınıfına sahip değerleri ve daha hassas ayrıntı düzeyi daha geniş bir yelpazede `CTime` sınıfı, bir nesne başına daha fazla depolama alanı gerektiren `CTime`. Ayrıca vardır bazı özel durumlar arka plandaki ile çalışırken **tarih** türü. Bkz: [DATE türünde](../atl-mfc-shared/date-type.md) uygulaması hakkında daha fazla ayrıntı için **tarih**.  
+ `COleDateTime` Ve `COleDateTimeSpan` sınıfları ile kullanılmak üzere tasarlanmıştır `COleVariant` Automation'da kullanılan sınıf. `COleDateTime` ve `COleDateTimeSpan` MFC veritabanı programlama, kullanışlıdır ancak tarih ve saat değerlerini değiştirmek istediğiniz zaman kullanılabilirler. Ancak `COleDateTime` sınıfında değerleri ve hassas taneciklikten daha geniş bir yelpazede `CTime` sınıfı, bir nesne başına daha fazla depolama gerektiren `CTime`. Aynı zamanda temel alınan tarih türü ile çalışırken de bazı özel durumlar vardır. Bkz: [tarih türü](../atl-mfc-shared/date-type.md) tarih uygulanması hakkında daha fazla bilgi.  
   
- `COleDateTime` Nesne, tarih arasındaki 1 Ocak 100 ve 31 Aralık 9999 temsil etmek için kullanılabilir. `COleDateTime` bir yaklaşık 1 milisaniyelik çözümlenmesi ile nokta değerleri kayan nesneyi. `COleDateTime` dayanır **tarih** veri türü, MFC belgelerinde altında tanımlı [COleDateTime::operator tarih](../atl-mfc-shared/reference/coledatetime-class.md#operator_date). Gerçek uygulanması **tarih** bu sınırları genişletir. `COleDateTime` Uygulama sınıfı ile çalışmayı kolaylaştırmak için bu sınırlar uygular.  
+ `COleDateTime` nesneleri tarihleri arasında 1 Ocak 100 ve 31 Aralık 9999 temsil etmek için kullanılabilir. `COleDateTime` 1 milisaniyelik, yaklaşık bir çözümleme nokta değerleri kayan nesneler. `COleDateTime` MFC belgelerinde altında tanımlanan tarih veri türüne dayalı [COleDateTime::operator tarih](../atl-mfc-shared/reference/coledatetime-class.md#operator_date). Gerçek tarih uygulanması bu sınırlarının ötesine genişletir. `COleDateTime` Uygulama sınıfı ile çalışmayı kolaylaştırmak için bu sınır uygular.  
   
- `COleDateTime` Jülyen tarihleri desteklemez. Gregoryen takvim, 1 Ocak 100'e geçmişe genişletmek için varsayılır.  
+ `COleDateTime` Jülyen tarihleri desteklemez. Gregoryen takvim geçmişe 1 Ocak 100'e genişletmek için kabul edilir.  
   
- `COleDateTime` gün ışığından yararlanma saati (DST) yok sayar. Aşağıdaki kod örneğinde DST geçiş tarih kestiği bir zaman aralığı hesaplamak için iki yöntem karşılaştırır: CRT kullanarak bir tane ve diğer kullanarak `COleDateTime`. DST üzerinden, çoğu yerlerde Nisan'ın ikinci hafta ve Ekim üçüncü geçer.  
+ `COleDateTime` Yaz Saati (DST) yok sayar. Aşağıdaki kod örneği DST geçiş tarihi aştığında bir zaman aralığını hesaplamak için iki yöntem karşılaştırır: bir CRT ve diğer kullanarak `COleDateTime`. Hedef üzerinde çoğu yerel ayarlarda ikinci hafta Nisan ve Ekim Ayının Üçüncü geçer.  
   
- İlk yöntem iki ayarlar `CTime` nesneleri *saat1* ve *time2*Nisan 5 ve 6 Nisan sırasıyla standart C türü yapıları kullanarak **tm** ve `time_t`. Kod görüntüler *saat1* ve *time2* ve bunların arasındaki zaman aralığı.  
+ İlk yöntem iki ayarlar `CTime` nesneleri *saat1* ve *time2*Nisan 5 ve 6 Nisan sırasıyla, standart C tür yapıları kullanarak `tm` ve `time_t`. Kod görüntüler *saat1* ve *time2* ve bunlar arasındaki zaman aralığı.  
   
- İkinci yöntem iki oluşturur `COleDateTime` nesneleri `oletime1` ve `oletime2`ve aynı tarih olarak ayarlar *saat1* ve *time2*. Görüntülediği `oletime1` ve `oletime2` ve bunların arasındaki zaman aralığı.  
+ İkinci yöntem iki oluşturur `COleDateTime` nesneleri `oletime1` ve `oletime2`ve bunları aynı tarih olarak ayarlar *saat1* ve *time2*. Bu görüntüler `oletime1` ve `oletime2` ve bunlar arasındaki zaman aralığı.  
   
- CRT 23 saat farkını doğru olarak hesaplar. `COleDateTimeSpan` 24 saatlik bir fark hesaplar.  
+ CRT doğru bir 23 saat farkı hesaplar. `COleDateTimeSpan` 24 saatlik bir farkı hesaplar.  
   
- Geçici bir çözüm örnek sonuna yakın kullanılarak uygun şekilde tarihini görüntülemek için kullanılır `COleDateTime::Format`. Bilgi Bankası makalesi "hata: Format("%D") başarısız `COleDateTime` ve `COleDateTimeSpan`" (Q167338).  
+ Geçici bir çözüm örneği sonuna yakın düzgün bir şekilde kullanma tarihini görüntülemek için kullanıldığını unutmayın `COleDateTime::Format`. Bilgi Bankası makalesine bakın "hata: Format("%D") başarısız için `COleDateTime` ve `COleDateTimeSpan`" (Q167338).  
   
  [!code-cpp[NVC_ATLMFC_Utilities#176](../atl-mfc-shared/codesnippet/cpp/date-and-time-automation-support_1.cpp)]  
   

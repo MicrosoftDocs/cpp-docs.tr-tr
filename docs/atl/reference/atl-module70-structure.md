@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a374ee01387c576a5d1a727857badc7ef7139ad
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 9666d73eec770ff8231e5730e01520b0bee68012
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255472"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886225"
 ---
 # <a name="atlmodule70-structure"></a>_ATL_MODULE70 yapısı
 Her ATL modülü tarafından kullanılan verileri içerir.  
@@ -42,16 +42,16 @@ struct _ATL_MODULE70 {
   
 ## <a name="members"></a>Üyeler  
  `cbSize`  
- Sürüm oluşturma için kullanılan yapısı, boyutu.  
+ Sürüm oluşturma için kullanılan bir yapının boyutu.  
   
  `m_nLockCnt`  
- Başvuru sayısı ne kadar süreyle modülü Canlı kalmalı belirlemek için.  
+ Başvuru sayma modülü ne kadar süreyle etkin tutulan bağlantıyı destekliyorsa kalmalı belirlemek için.  
   
- **m_pTermFuncs**  
- ATL kapatıldığında çağrılacak kayıtlı işlevler izler.  
+ `m_pTermFuncs`  
+ ATL kapatıldığında çağrılacak kayıtlı işlevlerini izler.  
   
- **m_csStaticDataInitAndTypeInfo**  
- Birden çok iş parçacıklı durumlarda iç veri erişimi koordine etmek için kullanılır.  
+ `m_csStaticDataInitAndTypeInfo`  
+ Çok iş parçacıklı durumlarda iç veri erişimi koordine etmek için kullanılır.  
   
 ## <a name="remarks"></a>Açıklamalar  
  [_ATL_MODULE](atl-typedefs.md#_atl_module) typedef tanımlanan `_ATL_MODULE70`.  

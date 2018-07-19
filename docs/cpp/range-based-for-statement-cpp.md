@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc60c1efc307f30c06accdd7404cb35c135dae5b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1284e4f6e096ab8021c597b841a8e983673561bd
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948138"
 ---
 # <a name="range-based-for-statement-c"></a>Range-based for Deyimi (C++)
 `statement` içindeki her öğe için `expression` öğesini tekrar tekrar ve sırayla yürütür.  
@@ -25,16 +26,16 @@ ms.lasthandoff: 05/03/2018
   
 ```  
   
-      for ( for-range-declaration : expression )  
+for ( for-range-declaration : expression )  
    statement   
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Aralık tabanlı kullanmak `for` "aracılığıyla yineleyebilirsiniz herhangi bir şey olarak tanımlanan bir aralığı" aracılığıyla yürütülmelidir döngüler oluşturmak için deyimi — Örneğin, `std::vector`, ya da, aralık tarafındantanımlanandiğerC++StandartKitaplığısırası`begin()` ve `end()`. `for-range-declaration` bölümünde bildirilen ad, `for` deyimi için yereldir ve `expression` veya `statement` içinde yeniden bildirilemez. Unutmayın [otomatik](../cpp/auto-cpp.md) anahtar sözcüğü tercih `for-range-declaration` deyim bölümü. 
+ Aralık tabanlı kullanın **için** "yinelemek herhangi bir şey olarak tanımlanan bir aralığı" ile yürütülmesi gereken döngüler oluşturmak için — örneğin, `std::vector`, tüm diğer C++ Standart Kitaplığı dizisi aralığı veya tarafından tanımlanan bir `begin()` ve `end()`. Bölümünde bildirilen ad `for-range-declaration` için yereldir **için** deyimi ve içinde yeniden bildirilemez `expression` veya `statement`. Unutmayın [otomatik](../cpp/auto-cpp.md) anahtar sözcüğünün tercih `for-range-declaration` deyiminin bölümü. 
 
- **Yeni Visual Studio 2017:** aralık tabanlı için begin() ve end() aynı türde nesneler döndürmeye döngüler artık gerek yoktur. Bu gibi aralıkları V3 teklifinde tanımlanan aralıkları tarafından kullanılan bir sentinel nesnesi döndürmek end() sağlar. Daha fazla bilgi için bkz: [Range-Based genelleme döngü için](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) ve [aralığı v3 kitaplığı github'da](https://github.com/ericniebler/range-v3).
+ **Visual Studio 2017'te yeni eklendi:** aralık tabanlı const_iterator ve end() aynı türe ait nesneleri iade döngüler artık gereksinim için. Bu gibi aralıkları V3 teklife tanımlanan aralıkları tarafından kullanılan bir sentinel nesneyi döndürmek end() sağlar. Daha fazla bilgi için bkz [Genelleştiriliyor aralık tabanlı For döngüsü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) ve [aralığı v3 kitaplığı github'da](https://github.com/ericniebler/range-v3).
   
- Bu kod aralık esaslı nasıl kullanılacağını gösterir. `for` bir dizi ve vektör aracılığıyla yinelemek için döngüler:  
+ Bu kod aralık tabanlı nasıl kullanılacağını gösterir. **için** bir dizi ve vektör aracılığıyla yineleme yapmak için:  
   
 ```cpp  
 // range-based-for.cpp  
@@ -93,24 +94,26 @@ int main()
 ```  
   
  Çıktı bu şekildedir:  
+
+```Output
+ 1 2 3 4 5 6 7 8 9 10  
   
- `1 2 3 4 5 6 7 8 9 10`  
+ 1 2 3 4 5 6 7 8 9 10  
   
- `1 2 3 4 5 6 7 8 9 10`  
+ 1 2 3 4 5 6 7 8 9 10  
   
- `1 2 3 4 5 6 7 8 9 10`  
-  
- `1 2 3 4 5 6 7 8 9 10`  
+ 1 2 3 4 5 6 7 8 9 10  
   
  `end of integer array test`  
   
  `0.14159 1.14159 2.14159 3.14159 4.14159 5.14159 6.14159 7.14159 8.14159 9.14159`  
   
  `end of vector test`  
+```
+
+ Aralık tabanlı **için** döngüyü sonlandırır içinde bunlardan biri `statement` yürütülür: bir [sonu](../cpp/break-statement-cpp.md), [dönüş](../cpp/return-statement-cpp.md), veya [goto](../cpp/goto-statement-cpp.md) etiketli bir için Aralık tabanlı dışında'bir deyim **için** döngü. A [devam](../cpp/continue-statement-cpp.md) aralık tabanlı deyiminde **için** döngü yalnızca geçerli yinelemeyi sonlandırır.  
   
- Aralık tabanlı `for` döngü sonlandırır bunlardan biri ile `statement` yürütülür: bir [sonu](../cpp/break-statement-cpp.md), [dönmek](../cpp/return-statement-cpp.md), veya [goto](../cpp/goto-statement-cpp.md) dışında etiketli deyimi Aralık tabanlı **için** döngü. A [devam](../cpp/continue-statement-cpp.md) aralık tabanlı deyiminde `for` döngü yalnızca geçerli yinelemeye sonlandırır.  
-  
- Aralık tabanlı `for` ile ilgili bu bilgileri unutmayın:  
+ Bu bilgiler hakkında aralık tabanlı aklınızda **için**:  
   
 -   Dizileri otomatik olarak tanır.  
   
@@ -121,7 +124,7 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomatik](../cpp/auto-cpp.md)   
  [Yineleme deyimleri](../cpp/iteration-statements-cpp.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [while deyimi (C++)](../cpp/while-statement-cpp.md)   
  [yapın-while deyimi (C++)](../cpp/do-while-statement-cpp.md)   
  [for Deyimi (C++)](../cpp/for-statement-cpp.md)

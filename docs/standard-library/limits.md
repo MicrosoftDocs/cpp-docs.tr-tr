@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a3250d9a090dcbd5eaa9a3cc0d51df84600ed3e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 66f9401bed0a6c9d0b1ffa09a10f98afa258069d
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912881"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964762"
 ---
-# <a name="ltlimitsgt"></a>&lt;Sınırları&gt;
+# <a name="ltlimitsgt"></a>&lt;sınırları&gt;
 
-Şablon sınıfı tanımlayan `numeric_limits` ve kayan nokta temsili ilgili ve yuvarlama iki numaralandırmalar.
+Şablon sınıfı tanımlar `numeric_limits` ve kayan nokta ifadeleri ilgili ve yuvarlama iki numaralandırma.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,20 +37,20 @@ ms.locfileid: "33912881"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Açık özelleştirmeleri `numeric_limits` sınıfı karakter, tamsayı ve kayan nokta türleri gibi temel türleri, birçok özelliklerini açıklar ve `bool` C++ kuralları tarafından sabit yerine tanımlanan uygulama olan dili. Özellikler bölümünde açıklanan \<sınırları > doğruluğu, minimum ve maksimum dahil yuvarlama ve türü hataları sinyal Beyanları boyuta sahip.
+Açık uzmanlıkları `numeric_limits` sınıfı temel türlerin karakter, tamsayı ve kayan nokta türleri dahil olmak üzere birçok özelliklerini açıklar ve **bool** giderilen yerine tanımlanan uygulaması olan C++ dilinin kurallar. Özellikleri açıklanan \<sınırları > doğruluğu, minimum ve maksimum dahil yuvarlama ve türü hata sinyali gösterimleri, boyutlandırılmış.
 
 ### <a name="enumerations"></a>Numaralandırmalar
 
 |||
 |-|-|
-|[float_denorm_style](../standard-library/limits-enums.md#float_denorm_style)|Numaralandırma Normalleştirilmemiş kayan noktalı bir sayıyı temsil eden bir uygulama seçebileceğiniz çeşitli yöntemlerini açıklar — normalleştirilmiş değeri olarak göstermek için çok küçük bir:|
-|[float_round_style](../standard-library/limits-enums.md#float_round_style)|Numaralandırma bir tamsayı değeri kayan noktalı bir sayıyı yuvarlama uygulaması seçebileceğiniz çeşitli yöntemleri açıklar.|
+|[float_denorm_style](../standard-library/limits-enums.md#float_denorm_style)|Numaralandırma normalleştirilmişlikten çıkarılmış bir kayan nokta değeri temsil eden bir uygulama seçim yapabileceği çeşitli yöntemleri açıklar; normalleştirilmiş bir değer olarak göstermek için çok küçük bir:|
+|[float_round_style](../standard-library/limits-enums.md#float_round_style)|Sabit bir kayan nokta değeri tamsayıya yuvarlama uygulaması seçim yapabileceği çeşitli yöntemleri açıklar.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[numeric_limits Sınıfı](../standard-library/numeric-limits-class.md)|Şablon sınıfı yerleşik sayısal türler aritmetik özelliklerini açıklar.|
+|[numeric_limits Sınıfı](../standard-library/numeric-limits-class.md)|Şablon sınıfı, yerleşik sayısal türler aritmetik özelliklerini açıklar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

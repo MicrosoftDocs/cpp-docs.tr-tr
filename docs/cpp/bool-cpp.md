@@ -1,5 +1,5 @@
 ---
-title: bool (C++) | Microsoft Docs
+title: (C++) bool | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,18 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2af648b2b93d2d01eaf66f5b642b6514063577d6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f3bd43c9ceb4f0a0f73b86e3a4ecf4d851d504b3
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410869"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939318"
 ---
 # <a name="bool-c"></a>bool (C++)
 
-Bu anahtar sözcük yerleşik bir türdür. Bu tür bir değişken değerlere sahip olabilir [true](../cpp/true-cpp.md) ve [false](../cpp/false-cpp.md). Koşullu deyimler türüne sahip `bool` , bu nedenle türü değerleri `bool`. Örneğin, `i!=0` artık **true** veya **false** değerine bağlı olarak `i`.  
+Bu anahtar sözcük yerleşik bir türdür. Bu türden bir değişkene değerler olabilir [true](../cpp/true-cpp.md) ve [false](../cpp/false-cpp.md). Koşullu ifadeler **bool** ve bu nedenle türünde değerlere sahiptir **bool**. Örneğin, `i!=0` TRUE veya FALSE değerini bağlı olarak sunuyor `i`.  
 
-**Visual Studio 2017 15.3 ve sonraki sürümleri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işleneni bir sonek veya önek artırma veya azaltma işleci türü olmayabilir **bool**. Diğer bir deyişle, bir değişken verilen **b** türü **bool**, bu deyimleri artık izin verilmiyor:
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işlenen işleci bir sonek veya önek artırma veya azaltma türü olmayabilir **bool**. Diğer bir deyişle, bir değişken verilen `b` türü **bool**, bu deyimler artık izin verilmiyor:
 
 ```cpp
     b++;
@@ -38,7 +38,7 @@ Bu anahtar sözcük yerleşik bir türdür. Bu tür bir değişken değerlere sa
     --b;
 ```
   
-Değerleri **true** ve **false** aşağıdaki ilişkisine sahip:  
+TRUE ve FALSE değerleri şu ilişki vardır:  
   
 ```cpp  
 !false == true  
@@ -51,14 +51,14 @@ Aşağıdaki deyimde:
 if (condexpr1) statement1;   
 ```  
   
-Varsa `condexpr1` olan **true**, `statement1` her zaman; varsa yürütülür `condexpr1` olan **false**, `statement1` hiçbir zaman yürütülür.  
+Varsa `condexpr1` TRUE ise `statement1` her zaman; yürütülür `condexpr1` false değerine `statement1` asla yürütülmez.  
   
-Bir sonek veya önek **++** işleci türünde bir değişken için uygulanan **bool**, değişken **doğru**. 
-**Visual Studio 2017 15.3 ve sonraki sürümleri**: operator ++ için **bool** dilinden kaldırıldı ve artık desteklenmiyor.
+Sonek veya önek **++** işleci türünde bir değişkene uygulandığında **bool**, değişkeni TRUE olarak ayarlanır. 
+**Visual Studio 2017 sürüm 15.3 ve üzeri**: operator ++ için **bool** dilinden kaldırıldı ve artık desteklenmiyor.
 
-Sonek veya önek **--** işleci bu tür bir değişkene uygulanamaz.  
+Sonek veya önek **--** işleci bu türden bir değişkene uygulanamaz.  
   
- **Bool** türü tamsayı yükseltmeleri katılır. Türünde bir r **bool** türünde bir r için dönüştürülebilir **int**, ile **false** sıfır olma ve **true** olma biri. Farklı bir tür olarak **bool** aşırı yük çözüm katılır.  
+ **Bool** türü tamsayı yükseltmelerine katılır. Türündeki bir r **bool** bir tür için dönüştürülebilir **int**, FALSE olma sıfır ile haline TRUE. Farklı bir tür **bool** aşırı yükleme çözümlemesinde rol oynar.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
 

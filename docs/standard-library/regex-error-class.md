@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fae7d6e9e3a50ad6a0b78d2b47a732b6b5fa9fc0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7983857b3814f8ddd9c10ab37676bc2e87e9a59c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853709"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964151"
 ---
 # <a name="regexerror-class"></a>regex_error Sınıfı
 
@@ -44,7 +44,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Hatayla yapım veya kullanımını raporlamak için oluşturulan bir özel durum nesnesi sınıfı tanımlar bir `basic_regex` nesnesi.
+Hata oluşturma veya kullanımını raporlamak için oluşturulan bir özel durum nesnesi sınıfı açıklar bir `basic_regex` nesne.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -62,7 +62,7 @@ regex_constants::error_code code() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini nesnenin oluşturucuya geçirilen değeri döndürür.
+Üye işlevi, nesnenin oluşturucuya geçirilen değeri döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -103,7 +103,7 @@ regex error: unbalanced parentheses
 
 ## <a name="regex_error"></a>  regex_error::regex_error
 
-Nesnesi oluşturur.
+Bir nesne oluşturur.
 
 ```cpp
 regex_error(regex_constants::error_code error);
@@ -111,11 +111,11 @@ regex_error(regex_constants::error_code error);
 
 ### <a name="parameters"></a>Parametreler
 
-`error` Hata kodu.
+*hata* hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucusu değeri tutan bir nesne oluşturur `error`.
+Oluşturucu değeri tutan bir nesne oluşturur *hata*.
 
 ### <a name="example"></a>Örnek
 

@@ -1,5 +1,5 @@
 ---
-title: Başlatma ve oluşturucuları temsilci olarak görevlendirme Tekdüzen | Microsoft Docs
+title: Tekdüzen başlatma ve oluşturucuları temsilci olarak görevlendirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,18 +12,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df40eef538ec09a0189bf6c1e6b4881edb59f5c6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 92174ceefa350b739567ac3e67c2ca023afb6008
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32423528"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939838"
 ---
 # <a name="uniform-initialization-and-delegating-constructors"></a>Tek Düzen Başlatma ve Oluşturucuları Temsilci Olarak Görevlendirme
-Modern C++'da, kullandığınız *başlatma ayracı* eşittir işareti olmadan herhangi bir türü için. Ayrıca, benzer iş gerçekleştirmek birden çok oluşturucuları varsa, kodunuzu basitleştirmek için temsilci seçme oluşturucular kullanabilirsiniz.  
+Modern C++'ta kullanabileceğiniz *başlatma ayracı* eşittir işareti olmadan herhangi bir tür için. Ayrıca, temsilci oluşturucuları benzer işi gerçekleştiren birden çok oluşturucuları varsa, kodu basitleştirmek için kullanabilirsiniz.  
   
-## <a name="brace-initialization"></a>Küme parantezi başlatma  
- Küme parantezi başlatma herhangi sınıf, yapı veya birleşim için kullanabilirsiniz. Türü örtük veya açık olarak bildirilen, varsayılan bir oluşturucu, varsa varsayılan parantezi başlatma (ile boş ayraçlar) kullanabilirsiniz. Örneğin, aşağıdaki sınıf hem varsayılan hem de varsayılan olmayan parantezi başlatma kullanarak başlatılmamış olabilir:  
+## <a name="brace-initialization"></a>Ayraç başlatma  
+ Bir sınıf, yapı veya birleşim ayraç başlatma kullanabilirsiniz. Türü örtük veya açık olarak bildirilen bir varsayılan oluşturucusu varsa, varsayılan ayraç başlatma (boş küme ayraçları ile) kullanabilirsiniz. Örneğin, aşağıdaki sınıf hem varsayılan hem de varsayılan olmayan ayraç başlatma kullanılarak başlatılmamış olabilir:  
   
 ```cpp  
 #include <string>  
@@ -53,7 +53,7 @@ int main()
   
 ```  
   
- Bir sınıf varsayılan olmayan oluşturucuları varsa, hangi sınıfında üyeler görünür parantezi Başlatıcı sıradır ilgili parametreleri oluşturucuda görünme sırasını, üyeler bildirildiğinde sırasını değil (olduğu gibi `class_a` içinde Önceki örnekte). Bildirilen bir oluşturucu yok türündeyse Aksi halde, üyeler parantezi Başlatıcı görünme sırasını bildirilen sipariş aynıdır; Bu durumda, istediğiniz, ancak herhangi bir üyenin atlayamazsınız gibi birçok ortak üyeleri başlatabilirsiniz. Bildirilen bir oluşturucu yok olduğunda aşağıdaki örnekte kullanılan sırayı parantezi başlatma gösterir:  
+ Bir sınıf varsayılan olmayan bir oluşturucu hangi sınıf üyeleri, küme ayracı başlatıcısında görüntülenme sırasını ise karşılık gelen parametreleri oluşturucuda görüntülenme sırasını, üyeleri bildirilen sırasını değil (olduğu gibi `class_a` içinde Önceki örnek). Bildirilen hiçbir oluşturucu türü varsa, aksi takdirde, üyeleri küme ayracı başlatıcısında görünme sırasını içinde bildirildikleri sırasıyla aynıdır; Bu durumda, istediğiniz, ancak herhangi bir üyenin atlayamazsınız birçok ortak üyeleri başlatabilirsiniz. Bildirilen hiçbir oluşturucu olduğunda aşağıdaki örnek küme ayracı başlatmada kullanılan sırayı gösterir:  
   
 ```cpp  
 class class_d {  
@@ -75,7 +75,7 @@ int main()
 }   
 ```  
   
- Varsayılan Oluşturucu açıkça bildirilen ancak silinmiş olarak işaretlenmiş, varsayılan parantezi başlatma kullanılamaz:  
+ Varsayılan Oluşturucu açıkça bildirildi ancak silindi olarak işaretlendi, varsayılan ayraç başlatma kullanılamaz:  
   
 ```cpp  
 class class_f {  
@@ -91,7 +91,7 @@ int main()
 }  
 ```  
   
- Küme parantezi başlatma kullanabilirsiniz başlatma herhangi bir yere genellikle yaptığınız — Örneğin, bir işlev parametresi veya dönüş değeri olarak ya da sahip `new` anahtar sözcüğü:  
+ Ayraç başlatma kullanabileceğiniz her yerden başlatma genellikle yaptığınız — Örneğin, bir işlev parametre veya dönüş değeri olarak ya da sahip **yeni** anahtar sözcüğü:  
   
 ```cpp  
 class_d* cf = new class_d{4.5};  
@@ -101,16 +101,16 @@ return { 4.5 };
 ```  
   
 ## <a name="initializerlist-constructors"></a>initializer_list oluşturucular  
- [İnitializer_list sınıfı](../standard-library/initializer-list-class.md) bir oluşturucu ve diğer bağlamlarda kullanılabilir belirtilen bir türün nesnelerin listesini temsil eder. Küme parantezi başlatma kullanarak bir initializer_list oluşturabileceğiniz:  
+ [İnitializer_list sınıfı](../standard-library/initializer-list-class.md) bir oluşturucu ve diğer bağlamlarda kullanılacak belirtilen türdeki nesneleri listesini temsil eder. Ayraç başlatma kullanılarak bir initializer_list oluşturabilirsiniz:  
   
 ```cpp  
 initializer_list<int> int_list{5, 6, 7};  
 ```  
   
 > [!IMPORTANT]
->  Bu sınıf kullanmak için eklemelisiniz [< initializer_list >](../standard-library/initializer-list.md) üstbilgi.  
+>  Bu sınıf kullanmak için içermelidir [< initializer_list >](../standard-library/initializer-list.md) başlığı.  
   
- Bir `initializer_list` kopyalanabilir. Bu durumda, yeni liste üyeleri özgün listesi üyeleri için başvurular şunlardır:  
+ Bir `initializer_list` kopyalanabilir. Bu durumda, asıl liste üyeleri için başvurular yeni liste üyelerini şunlardır:  
   
 ```cpp  
 initializer_list<int> ilist1{ 5, 6, 7 };  
@@ -120,7 +120,7 @@ if (ilist1.begin() == ilist2.begin())
   
 ```  
   
- Standart Kitaplığı kapsayıcı sınıfları ve ayrıca `string`, `wstring`, ve `regex`, sahip `initializer_list` oluşturucular. Aşağıdaki örneklerde, bu oluşturucular ile başlatma ayracı gösterilmektedir:  
+ Standart kitaplık kapsayıcı sınıfları ve ayrıca `string`, `wstring`, ve `regex`, sahip `initializer_list` oluşturucular. Aşağıdaki örnekler, bu oluşturuculara sahip başlatma ayracı gösterilmektedir:  
   
 ```cpp  
 vector<int> v1{ 9, 10, 11 };   
@@ -130,7 +130,7 @@ regex rgx{'x', 'y', 'z'};
 ```  
   
 ## <a name="delegating-constructors"></a>Oluşturucuların Temsili  
- Pek çok sınıf benzer şeyler birden çok oluşturucular sahip — Örneğin, parametreleri doğrulayın:  
+ Birçok sınıflar benzer bir şey yapmanız birden çok oluşturucular sahiptir — örneğin, parametrelerini doğrular:  
   
 ```cpp  
 class class_c {  
@@ -155,7 +155,7 @@ public:
 };  
 ```  
   
- Tüm doğrulama ancak kodunu yapan bir işlev ekleyerek yinelenen kod azaltabilir `class_c` anlamak ve bir oluşturucusu bazı başka bir işin temsilci seçebilecek durumunda sürdürmek daha kolay olacaktır. Temsilci oluşturucular eklemek için kullanın `constructor (. . .) : constructor (. . .)` sözdizimi:  
+ Tüm doğrulama, ancak kodu yapan bir işlev ekleyerek tekrarlanan kodları azaltabilir `class_c` anlamak ve bir oluşturucu başka bir işin bir kısmını temsilci seçebilecek, düzenlenmesi daha kolay olacaktır. Temsilci oluşturucuları eklemek için `constructor (. . .) : constructor (. . .)` söz dizimi:  
   
 ```cpp  
 class class_c {  
@@ -181,9 +181,9 @@ int main() {
   
 ```  
   
- Önceki örnekte adım olarak dikkat Oluşturucusu `class_c(int, int, int)` ilk oluşturucuyu çağırır `class_c(int, int)`, sırayla çağıran `class_c(int)`. Her Oluşturucular, yalnızca diğer oluşturucular tarafından gerçekleştirilmez çalışma gerçekleştirir.  
+ Önceki örnekte ilerleyerek dikkat Oluşturucu `class_c(int, int, int)` ilk oluşturucuyu çağırır `class_c(int, int)`, sırayla çağıran `class_c(int)`. Her Oluşturucular, yalnızca diğer oluşturucular tarafından gerçekleştirilmeyen çalışma gerçekleştirir.  
   
- Böylece tüm üyeleri bu noktada başlatılmış çağrılan ilk Oluşturucusu nesnesini başlatır. Aşağıda gösterildiği gibi başka bir oluşturucuya temsilciler oluşturucuda üye başlatma yapamazsınız:  
+ Tüm üyeleri bu noktada başlatılır, böylece çağrılan ilk Oluşturucu nesnesini başlatır. Burada gösterildiği gibi başka bir oluşturucu için temsilci bir oluşturucuda, üye başlatma işlemleri yapamaz:  
   
 ```cpp  
 class class_a {  
@@ -204,7 +204,7 @@ public:
   
 ```  
   
- Sonraki örnek statik olmayan veri üyesi başlatıcıları kullanımını göstermektedir. Verilen veri üyesi aynı zamanda bir oluşturucu başlatır, üye başlatıcıdan kılınmadığı dikkat edin:  
+ Sonraki örnek, statik olmayan veri üyesi başlatıcıları kullanımını gösterir. Bir oluşturucu Ayrıca belirli veri üyesini başlatır, üye Başlatıcısı geçersiz kılınmasını dikkat edin:  
   
 ```cpp  
 class class_a {  
@@ -222,7 +222,7 @@ int main() {
 }  
 ```  
   
- Oluşturucu temsilci sözdizimi Oluşturucusu özyineleme yanlışlıkla oluşturulmasını engellemez — Constructor1 çağırır Constructor1 çağıran Constructor2 — ve bir yığın taşması kadar hata atılmaz. Bu döngüleri önlemek için sorumluluğundadır.  
+ Temsilci Oluşturucu sözdizimi Oluşturucusu özyineleme yanlışlıkla oluşturulmasını engellemez — Constructor1 çağırır Constructor1 çağıran Constructor2 — ve hatasız oluncaya kadar bir yığın taşması özel. Bunu döngüleri önlemek için sizin sorumluluğunuzdur.  
   
 ```cpp  
 class class_f{  

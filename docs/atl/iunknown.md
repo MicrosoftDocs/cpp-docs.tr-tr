@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c02018ee3cefb1b98c2df850d44578cf3a092c64
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d832d2978bf9db82b290d77b236fea1c9bcada58
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355845"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953048"
 ---
 # <a name="iunknown"></a>IUnknown
-[IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) her bir COM arabirimi temel arabirimdir.  Bu arabirim üç yöntem tanımlar: [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521), [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), ve [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317). [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) işaretçisi arabirimlerinde başka bir nesne sormak bir arabirim kullanıcının verir. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317) başvuru arabirimde sayım uygulayın.  
+[IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) diğer her COM arayüzünün temel arabirimdir.  Bu arabirim üç yöntemi tanımlar: [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521), [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317). [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) bir arabirim kullanıcısının nesnenin arabirimlerinin başka birine işaretçi soran sağlar. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317) arabirimde sayılan başvuruyu uygular.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [COM giriş](../atl/introduction-to-com.md)   
- [IUnknown ve arabirim devralma](http://msdn.microsoft.com/library/windows/desktop/ms692713)
+ [COM'a giriş](../atl/introduction-to-com.md)   
+ [IUnknown ve arabirimi devralma](http://msdn.microsoft.com/library/windows/desktop/ms692713)
 

@@ -1,5 +1,5 @@
 ---
-title: Üstbilgi dosyaları (C++) | Microsoft Docs
+title: Üst bilgi dosyaları (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 04/20/2018
 ms.reviewer: ''
@@ -17,29 +17,29 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b571cd2836e66ebef21898af27cf2a6d7082e0e5
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: 746b0829be6f66203d22cae4072dded9f6be32d8
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238761"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939708"
 ---
-# <a name="header-files-c"></a>Üstbilgi dosyaları (C++)
+# <a name="header-files-c"></a>Üst bilgi dosyaları (C++)
 
-Değişkenler, İşlevler, sınıflar vb. gibi program öğelerinin adlarını kullanılabilmesi için önce bildirilmesi gerekir. Örneğin, yalnızca yazdığınız olamaz `x = 42` ilk 'x' bildirme olmadan. 
+Değişkenler, İşlevler, sınıflar ve benzeri gibi program öğelerinin adlarını kullanılabilmesi için önce bildirilmelidir. Örneğin, yalnızca yazdığınız olamaz `x = 42` ilk bildirme 'x' olmadan. 
 
 ```cpp
 int x; // declaration
 x = 42; // use x
 ```
 
- Bildirimi derleyici olup olmadığını bildirir olan bir **int**, **çift**, **işlevi**, **sınıfı** veya başka bir şey.  Ayrıca, her bir adı (doğrudan veya dolaylı olarak) bu kullanıldığı her .cpp dosyasında bildirilmelidir. Bir program derlerken her .cpp dosya bağımsız olarak bir derleme birimine derlenir. Derleyici hangi adları diğer derleme birimlerinde bildirilir, hiçbir bilgiye sahiptir. Bir sınıf veya işlev veya genel değişkeni tanımlarsanız, o şey kullandığı her bir ek .cpp dosyadaki bildirimini sağlamalısınız anlamına gelir. Bu bir şey her bildirimi tüm dosyalarda tam olarak aynı olmalıdır. Tek bir program tüm derleme birimleri birleştirmek bağlayıcı denediğinde, hafif bir tutarsızlık hatalar veya beklenmedik davranışlara neden olur.
+ Bildirimi mi derleyiciye olduğu bir **int**, **çift**, **işlevi**, **sınıfı** veya başka bir şey.  Ayrıca, her adı (doğrudan veya dolaylı olarak), kullanıldığı her .cpp dosyasında bildirilmelidir. Bir program derlediğinizde, her .cpp dosyası bir derleme birimine bağımsız olarak derlenir. Derleyici, diğer derleme biriminde bildirilen hangi adlar, hiçbir bilgiye sahiptir. Bir sınıf veya işlev ya da genel değişken tanımlarsanız, bu şeyi kullandığı her ek .cpp dosyası bildirimi sağlamalısınız anlamına gelir. Her şey bu bildirimi tüm dosyaların tam olarak aynı olmalıdır. Bağlayıcı, tüm derleme biriminden tek bir programa birleştirme girişiminde bulunduğunda hafif bir tutarsızlık hataları veya beklenmedik davranışlara neden olur.
 
-Hata olasılığını en aza indirmek için C++ kullanma kuralı benimsemiştir *üstbilgi dosyaları* bildirimleri içerecek şekilde. Üstbilgi dosyasında bildirimleri olun ve ardından kullanmak # her .cpp dosyasında include yönergesi veya diğer üstbilgi dosyası bu bildirimi gerektirir. # Doğrudan derleme önce .cpp dosyasına üstbilgi dosyasının bir kopyasını yönerge ekler include. 
+Hataları olasılığını en aza indirmek için C++ kullanarak kuralı başlamıştır *üst bilgi dosyaları* bildirimleri içerecek. Bir üstbilgi dosyasında bildirimleri olun, ardından kullanmak #include yönergesi her .cpp dosyası içinde veya diğer üst bilgi dosyası bu bildirimi gerektirir. # Yönergesi ekler, .cpp dosyası derleme önce doğrudan üst bilgi dosyasının bir kopyasını include. 
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir sınıf bildirme ve farklı bir kaynak dosyasında kullanmak için en yaygın yolu gösterir. Üstbilgi dosyası ile başlayacağız **my_class.h**. Bir sınıf tanımını içerir, ancak tanımı eksik olduğunu unutmayın; üye işlevini `do_something` tanımlı değil:
+Aşağıdaki örnek, bir sınıf bildirme ve ardından farklı bir kaynak dosyada kullanmak için en yaygın yolu gösterir. Üst bilgi dosyası ile başlayacağız `my_class.h`. Bir sınıfı tanım içeriyor, ancak tanımı eksik olduğunu unutmayın; üye işlevi `do_something` tanımlı değil:
 
 ```cpp
 // my_class.h
@@ -54,9 +54,9 @@ namespace N
 }
 ```
 
-Ardından, bir uygulama dosyası (genellikle bir .cpp veya benzer uzantısı ile) oluşturun. Biz dosya my_class.cpp çağırın ve üye bildirimi için bir tanım girin. Eklediğimiz bir `#include` yönerge eklenen my_class bildirimi olması için "my_class.h" dosyası için bu noktada .cpp dosya ve biz dahil  **\<iostream >** bildirimi çekmesini `std::cout`. Tırnak işaretleri üstbilgi dosyaları kaynak dosya ile aynı dizinde için kullanılır ve standart kitaplığı üstbilgilerini köşeli kullanılır unutmayın. Ayrıca, birçok standart kitaplık üstbilgi .h veya herhangi bir dosya uzantısına sahip.
+Ardından, bir uygulama dosyasını (genellikle bir .cpp veya benzer genişletme ile) oluşturun. Biz dosya my_class.cpp çağırın ve üye bildirimi için bir tanım girin. Eklediğimiz bir `#include` yönerge eklenen my_class bildirimi sahip olmak için "my_class.h" dosyası için bu noktada .cpp dosyası ve biz dahil `<iostream>` bildirimi sütunlarından `std::cout`. Tırnak işaretleri kaynak dosyayla aynı dizinde üst bilgi dosyaları için kullanılır ve açılı ayraçlar standart kitaplığı üst bilgileri için kullanılan unutmayın. Ayrıca, birçok standart kitaplık üstbilgi .h veya başka bir dosya uzantısına sahip değilsiniz.
 
-Uygulama dosyasında biz isteğe bağlı olarak kullanabilirsiniz bir **kullanarak** ile her Bahsetme "my_class" veya "cout" nitelemek zorunda kalmamak için deyimi "N::" veya "std::".  Koymayın **kullanarak** başlık dosyalarının deyimlerinde!
+V souboru implementace, isteğe bağlı olarak kullanabiliriz bir **kullanarak** deyimi ile her Bahsetme "my_class" veya "cout" uygun olmamasına özen gösterin "N::" veya "std::".  Koymayın **kullanarak** üstbilgi dosyalarınızın deyimlerinde!
 
 ```cpp
 // my_class.cpp
@@ -72,7 +72,7 @@ void my_class::do_something()
 }
 ```
 
-Artık biz kullanarak `my_class` başka bir .cpp dosyasında. Sizi # üstbilgi dosyası include derleyici bildiriminde çeker. Bilmeniz tüm derleyici gereksinimlerini olduğundan bu my_class adında bir ortak üye işlevi olan bir sınıfı olan `do_something()`.
+Kullanabiliriz artık `my_class` başka bir .cpp dosyası içinde. Biz # üstbilgi dosyasını include derleyici bildiriminde çeker. Bilmeniz gereken tüm derleyici gereksinimlerini olan bu my_class adlı bir ortak üye işleve sahip bir sınıfı olan `do_something()`.
 
 ```cpp
 // my_program.cpp
@@ -88,39 +88,39 @@ int main()
 }
 ```
 
-.Obj dosyaları içine her .cpp dosyasını derleme derleyici bittikten sonra bağlayıcıya .obj dosyaları geçirir. Nesne dosyaları bağlayıcı birleştirmesi durumunda my_class için tam olarak bir tanım bulur; my_class.cpp için üretilen .obj dosyasında olduğunu ve derleme başarılı olur.
+Derleyici .cpp dosyası her .obj dosyasına derleme tamamlandıktan sonra .obj dosyaları bağlayıcıya iletir. Nesne dosyalarının bağlayıcı birleştiği my_class için tam olarak bir tanımı bulur; my_class.cpp için üretilmiş .obj dosyasındaki olduğunu ve derleme başarılı olur.
 
-## <a name="include-guards"></a>Koruyucuları içerir
+## <a name="include-guards"></a>Cf içerir
 
-Genellikle, üst bilgi dosyalarınız bir *koruma dahil* veya **#pragma kez** yönergesi bunlar birden çok kez tek .cpp dosyasına eklenmiyor emin olun. 
+Genellikle, üst bilgi dosyalarınız bir *guard dahil* veya **#pragma kez** bunlar birden çok kez tek .cpp dosyasına eklenmiyor emin olmak için yönergesi. 
 
 my_class.h
 #<a name="ifndef-myclassh--include-guard"></a>ıfndef MY_CLASS_H / / guard içerir
 #<a name="define-myclassh"></a>MY_CLASS_H tanımlayın
 
 
-ad alanı N {sınıf my_class {ortak: do_something(); void};
+N ad alanı {my_class sınıfı {public: do_something(); void};
 
 }
 
 #<a name="endif--myclassh-"></a>endif / * MY_CLASS_H * /
 
-## <a name="what-to-put-in-a-header-file"></a>Üstbilgi dosyasında put gerekenler
+## <a name="what-to-put-in-a-header-file"></a>Bir üstbilgi dosyasında konulacaklar
 
-Üstbilgi dosyası büyük olasılıkla tarafından birden çok dosya eklenebilir olduğundan, aynı adlı birden fazla tanımı üretebilir tanımları içeremez. Aşağıdaki izin verilmeyen veya çok hatalı yöntem olarak kabul edilir:
+Bir üstbilgi dosyası potansiyel olarak birden çok dosya tarafından eklenmiş olabilir çünkü bu, aynı ada sahip birden çok tanım üretebilir tanımları içeremez. Aşağıdaki izin verilmeyen veya çok hatalı bir uygulama olarak kabul edilir:
 
-- ad alanı veya genel kapsam yerleşik tür tanımları
-- Satır içi olmayan işlev tanımları 
+- ad alanı veya genel kapsamlı yerleşik tür tanımları
+- Satır içi işlev tanımları 
 - const olmayan değişken tanımları
-- Birleşik tanımları
+- Toplama tanımları
 - adlandırılmamış ad alanları
-- using yönergelerini
+- using yönergeleri
 
-Kullanımı **kullanarak** yönergesi mutlaka bir hata neden olmayacak, ancak bu ad alanı doğrudan veya dolaylı olarak bu başlığı içeren her .cpp dosyası kapsamda getirir çünkü bir soruna neden olabilir. 
+Kullanım **kullanarak** yönergesi mutlaka hataya neden olmaz, ancak bu ad alanı kapsamında doğrudan veya dolaylı olarak söz konusu üst bilgisi içeren her .cpp dosyası getirir çünkü bir soruna neden olabilir. 
 
-## <a name="sample-header-file"></a>Örnek üstbilgi dosyası
+## <a name="sample-header-file"></a>Örnek üst bilgi dosyası
 
-Aşağıdaki örnek, çeşitli bildirimler ve bir üstbilgi dosyasında izin verilen tanımlar gösterir:
+Aşağıdaki örnek, çeşitli üstbilgi dosyasında verilen tanımları ve bildirimleri gösterir:
 
 ```cpp
 #pragma once 

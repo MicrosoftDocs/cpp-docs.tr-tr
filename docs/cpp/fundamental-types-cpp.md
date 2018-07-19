@@ -1,5 +1,5 @@
 ---
-title: Temel türleri (C++) | Microsoft Docs
+title: Temel türler (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -53,60 +53,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c24ee360f1c14aa9b355f45ec1c12877efa306c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d91971b7d96b09fe1fd0d14a2a711f7771503a6a
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417334"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941482"
 ---
 # <a name="fundamental-types--c"></a>Temel Türler (C++)
-C++'ta temel türleri üç kategoride bölünen: tamsayı, kayan nokta ve void. Tam sayı türleri tam sayılar işleyebilir. Kayan nokta türleri kesirli bölümleri olabilir değerleri belirtme özelliğine sahiptir.  
+C++ içindeki temel türler üç kategoriye ayrılmıştır: integral, kayan ve void. Tam sayı türleri tam sayıları işleme yeteneğine sahip. Kayan nokta türleri kesirli bölümleri olan değerleri belirtme özelliğine sahiptir.  
   
- [Void](../cpp/void-cpp.md) türünü değerler boş kümesini tanımlar. Hiçbir değişken türü `void` belirtilebilir — genel işaretçileri türsüz veya rasgele bildirmek için veri girilen veya öncelikle hiçbir değer döndüren işlevler bildirmek için kullanılır. Herhangi bir ifade bulunabilir açıkça dönüştürülen veya yazmak için cast `void`. Ancak, bu tür ifadeleri aşağıdaki kullandığı sınırlıdır:  
+ [Void](../cpp/void-cpp.md) bir boş değer kümesini tanımlayan bir tür. Türünde değişken **void** belirtilebilir — genel işaretçileri yazılmamış veya rastgele yazılmış verilere veya birincil olarak değer döndürmeyen işlevleri bildirmek için kullanılır. Herhangi bir ifade açıkça dönüştürülecek veya türüne yapılan **void**. Ancak, konusu ifadelerin aşağıdaki kullanımları kısıtlanmıştır:  
   
 -   Bir ifade deyimi. (Bkz [ifadeleri](../cpp/expressions-cpp.md), daha fazla bilgi için.)  
   
--   Virgül işleci sol işleneni. (Bkz [virgül işleci](../cpp/comma-operator.md) daha fazla bilgi için.)  
+-   Virgül işlecinin sol işleneni. (Bkz [virgül işleci](../cpp/comma-operator.md) daha fazla bilgi için.)  
   
--   Koşullu işleç ikinci ya da üçüncü işleneni (`? :`). (Bkz [koşullu işleç ifadelerle](../cpp/conditional-operator-q.md) daha fazla bilgi için.)  
+-   Koşullu işlecin ikinci veya üçüncü işleneni (`? :`). (Bkz [koşullu işleç içeren ifadeler](../cpp/conditional-operator-q.md) daha fazla bilgi için.)  
   
- Aşağıdaki tabloda kısıtlamaları türü boyutlarına açıklanmaktadır. Bu kısıtlamalar Microsoft uyarlamasını bağımsızdır.  
+ Aşağıdaki tabloda tür boyutlarına kısıtlamaları açıklar. Bu kısıtlamalar, Microsoft uygulamasından bağımsızdır.  
   
-### <a name="fundamental-types-of-the-c-language"></a>C++ dili temel tür  
+### <a name="fundamental-types-of-the-c-language"></a>C++ dilinin temel türler  
   
 |Kategori|Tür|İçindekiler|  
 |--------------|----------|--------------|  
-|Tam sayıdan kaymaya|`char`|Tür `char` genellikle temel yürütme karakter kümesi üyelerini içeren bir tam sayı türü — varsayılan olarak, Microsoft C++ ASCII budur.<br /><br /> C++ derleyicisi değişkenlerine türü `char`, `signed` `char`, ve `unsigned` `char` farklı türlerine sahip olarak. Türündeki değişkenler `char` için yükseltilen `int` türü varsa gibi `signed` `char` varsayılan olarak, /J derleme seçeneği kullanılmıyorsa. Bu durumda türü olarak davranılır `unsigned` `char` için yükseltilmiş `int` oturum uzantısı olmadan.|  
-||`bool`|Tür `bool` iki değerden birini sahip olabilen bir tam sayı türüdür `true` veya `false`. Boyutuna belirtilmedi.|  
-||`short`|Tür `short` `int` (ya da yalnızca `short`) türü boyutuna eşit veya bundan büyük bir tam sayı türü `char`, daha kısa veya buna eşit ve yazı tipi boyutu için `int`.<br /><br /> Nesne türü `short` olarak bildirilen `signed` `short` veya `unsigned short`. `Signed short` eşanlamlısı olduğu `short`.|  
-||`int`|Tür `int` türü boyutuna eşit veya bundan büyük bir tam sayı türü `short` `int`, daha kısa veya buna eşit ve yazı tipi boyutu için `long`.<br /><br /> Nesne türü `int` olarak bildirilen `signed` `int` veya `unsigned` `int`. `Signed` `int` eşanlamlısı olduğu `int`.|  
-||`__int8`, `__int16`, `__int32`, `__int64`|Boyutlu tamsayı `__int n`, burada `n` tamsayı değişken bit cinsinden boyutu. `__int8`, `__int16`, `__int32` ve `__int64` Microsoft'a özgü anahtar sözcükler. Tüm türleri üzerinde tüm mimarileri kullanılabilir. `(__int128` desteklenmiyor.)|  
-||`long`|Tür `long` (veya `long` `int`) türü boyutuna eşit veya bundan büyük bir tam sayı türü `int`.<br /><br /> Nesne türü `long` olarak bildirilen `signed` `long` veya `unsigned` `long`. `Signed` `long` eşanlamlısı olduğu `long`.|  
-||`long``long`|Büyük imzasız `long`.<br /><br /> Nesne türü `long long` olarak bildirilen `signed` `long long` veya `unsigned` `long long`. `signed` `long long` eşanlamlısı olduğu `long long`.|  
-||`wchar_t`, `__wchar_t`|Türünde bir değişken `wchar_t` bir joker karakter veya birden çok baytlı karakter türü belirler. Varsayılan olarak, `wchar_t` yerel türünde, ancak kullanabileceğiniz [/Zc:wchar_t-](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) yapmak için `wchar_t` için typedef `unsigned short`. `__wchar_t` Türüdür Microsoft'a özgü eşanlamlısı yerel `wchar_t` türü.<br /><br /> L öneki, joker karakter türü belirlemek için bir karakter ya da dize sabit değeri önce kullanın.|  
-|Kayan nokta|`float`|Tür `float` en küçük kayan noktası türü.|  
-||`double`|Tür `double` bir kayan büyük nokta türünü veya yazmak için eşittir `float`, ancak daha kısa veya buna eşit yazı tipi boyutu `long` `double`.<br /><br /> Microsoft özel: gösterimini `long double` ve `double` aynıdır. Ancak, `long double` ve `double` ayrı türleridir.|  
-||`long double`|Tür `long` `double` bir kayan büyük nokta türünü veya yazmak için eşittir `double`.|  
+|tam sayı|**char**|Tür **char** genellikle temel yürütme karakter kümesinin üyelerini içeren bir tamsayı türüdür — varsayılan olarak, Microsoft C++'ta ASCII budur.<br /><br /> C++ derleyicisi türünün değişkenlerine **char**, **signed char**, ve **imzasız char** farklı türlere sahip gibi. Türü değişkenlerindeki **char** yükseltilir **int** türü varsa gibi **signed char** varsayılan olarak, /J derleme seçeneği kullanılmadığı sürece. Bu durumda tür olarak davranılır **imzasız char** ve yükseltilir **int** imza uzantısı olmadan.|  
+||**bool**|Tür **bool** iki değerden birine sahip olabilir bir tamsayı türüdür **true** veya **false**. Boyutu belirtilmemiş.|  
+||**short**|Türü **kısa tamsayı** (veya kısaca **kısa**) daha büyük veya ona eşit bir tamsayı türüdür **char**ve daha kısa veya türü boyutunaeşit**int**.<br /><br /> Türündeki nesneler **kısa** olarak bildirilebilir **kısa imzalı** veya **işaretsiz**. **Kısa imzalı** eşanlamlıdır **kısa**.|  
+||**int**|Tür **int** değerden büyük veya ona eşit bir tamsayı türüdür **kısa tamsayı**ve daha kısa veya ona eşit **uzun**.<br /><br /> Türündeki nesneler **int** olarak bildirilebilir **signed int** veya **işaretsiz int**. **İmzalı int** eşanlamlıdır **int**.|  
+||**__int8**, **__int16**, **__int32**, **__int64**|Ölçekli tamsayı `__int n`burada `n` tamsayı değişkeninin bit olarak boyutudur. **__int8**, **__int16**, **__int32** ve **__int64** Microsoft'a özgü anahtar sözcükler. Tüm mimarilerde tüm türleri kullanılabilir. (**__int128** desteklenmiyor.)|  
+||**long**|Tür **uzun** (veya **long int**) daha büyük veya ona eşit bir tamsayı türüdür **int**.<br /><br /> Türündeki nesneler **uzun** olarak bildirilebilir **signed long** veya **işaretsiz uzun**. **Signed long** eşanlamlıdır **uzun**.|  
+||**Long long**|Büyük bir imzalanmamış **uzun**.<br /><br /> Türündeki nesneler **uzun uzun** olarak bildirilebilir **imzalanmış long long** veya **işaretsiz long long**. **imzalanmış Long long** eşanlamlıdır **uzun uzun**.|  
+||**wchar_t**, **__wchar_t**|Türünde bir değişken **wchar_t** bir geniş karakter veya çok baytlı karakter türünü belirtir. Varsayılan olarak, **wchar_t** yerel bir tür olduğu halde kullanabileceğiniz [/Zc:wchar_t-](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) yapmak **wchar_t** için bir typedef **işaretsiz**. **__Wchar_t** türüdür yerel Microsoft'a özgü eşanlamlısı **wchar_t** türü.<br /><br /> L önekini bir karakter veya dize sabit değeri önce geniş karakter türü belirtmek için kullanın.|  
+|Kayan nokta|**float**|Tür **float** olan en küçük kayan nokta türüne.|  
+||**double**|Tür **çift** değerinden daha büyük kayan nokta türünü veya türü için eşittir **float**, ancak daha kısa veya ona eşit **uzun çift**.<br /><br /> Microsoft'a özgü: gösterimini **uzun çift** ve **çift** aynıdır. Ancak, **uzun çift** ve **çift** farklı türlerdir.|  
+||**uzun çift**|Tür **uzun çift** kayan bir değerinden daha büyük bir nokta türünü ya da türü için eşittir **çift**.|  
   
- **Microsoft özel**  
+ **Microsoft'a özgü**  
   
- Aşağıdaki tabloda Microsoft c++ temel türleri için gerekli depolama miktarını listeler.  
+ Aşağıdaki tablo Microsoft C++'da temel türler için gerekli depolama miktarını listeler.  
   
-### <a name="sizes-of-fundamental-types"></a>Temel türler boyutları  
+### <a name="sizes-of-fundamental-types"></a>Temel türlerin boyutları  
   
 |Tür|Boyut|  
 |----------|----------|  
-|`bool`, `char`, `unsigned char`, `signed char`, `__int8`|1 bayt|  
-|`__int16`, `short`, `unsigned short`, `wchar_t`, `__wchar_t`|2 bayt|  
-|`float`, `__int32`, `int`, `unsigned int`, `long`, `unsigned long`|4 bayt|  
-|`double`, `__int64`, `long double`, `long long`|8 bayt|  
+|**bool**, **char**, **imzasız char**, **signed char**, **__int8**|1 bayt|  
+|**__int16**, **kısa**, **işaretsiz**, **wchar_t**, **__wchar_t**|2 bayt|  
+|**float**, **__int32**, **int**, **işaretsiz int**, **uzun**, **işaretsiz uzun**|4 bayt|  
+|**çift**, **__int64**, **uzun çift**, **uzun uzun**|8 bayt|  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
- Bkz: [veri türü aralıkları](../cpp/data-type-ranges.md) bir özeti için her tür değerleri aralığı.  
+ Bkz: [veri türü aralıkları](../cpp/data-type-ranges.md) özeti için her tür değerleri aralığı.  
   
- Tür dönüşümü hakkında daha fazla bilgi için bkz: [standart dönüşümler](../cpp/standard-conversions.md).  
+ Tür dönüştürme hakkında daha fazla bilgi için bkz: [standart dönüştürmeler](../cpp/standard-conversions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri Türü Aralıkları](../cpp/data-type-ranges.md)

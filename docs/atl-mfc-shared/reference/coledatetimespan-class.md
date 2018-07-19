@@ -36,15 +36,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1941984093879ba22921d19580618ce8caa04b38
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 74f6c7dec417e02b34c5974f33b2949da7147015
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32366399"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881259"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan sınıfı
-Göreli zaman, bir zaman aralığı temsil eder.  
+Göreli bir zaman, bir zaman aralığını temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -58,55 +58,55 @@ class COleDateTimeSpan
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleDateTimeSpan::COleDateTimeSpan](#coledatetimespan)|Oluşturan bir `COleDateTimeSpan` nesnesi.|  
+|[COleDateTimeSpan::COleDateTimeSpan](#coledatetimespan)|Oluşturur bir `COleDateTimeSpan` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleDateTimeSpan::Format](#format)|Biçimlendirilmiş dize gösterimini oluşturur bir `COleDateTimeSpan` nesnesi.|  
-|[COleDateTimeSpan::GetDays](#getdays)|Bu aralık gün kısmını döndürür `COleDateTimeSpan` nesne temsil eder.|  
-|[COleDateTimeSpan::GetHours](#gethours)|Bu aralık saat bölümünü döndürür `COleDateTimeSpan` nesne temsil eder.|  
-|[COleDateTimeSpan::GetMinutes](#getminutes)|Bu aralık dakika kısmını döndürür `COleDateTimeSpan` nesne temsil eder.|  
-|[COleDateTimeSpan::GetSeconds](#getseconds)|Bu aralık ikinci bölümünü döndürür `COleDateTimeSpan` nesne temsil eder.|  
-|[COleDateTimeSpan::GetStatus](#getstatus)|Bu durum (geçerlilik) alır `COleDateTimeSpan` nesnesi.|  
-|[COleDateTimeSpan::GetTotalDays](#gettotaldays)|Bu gün sayısını döndürür `COleDateTimeSpan` nesne temsil eder.|  
-|[COleDateTimeSpan::GetTotalHours](#gettotalhours)|Saat sayısı bu döndürür `COleDateTimeSpan` nesne temsil eder.|  
-|[COleDateTimeSpan::GetTotalMinutes](#gettotalminutes)|Bu dakika sayısını döndürür `COleDateTimeSpan` nesne temsil eder.|  
-|[COleDateTimeSpan::GetTotalSeconds](#gettotalseconds)|Bu saniye sayısını döndürür `COleDateTimeSpan` nesne temsil eder.|  
-|[COleDateTimeSpan::SetDateTimeSpan](#setdatetimespan)|Bu değeri ayarlar `COleDateTimeSpan` nesnesi.|  
-|[COleDateTimeSpan::SetStatus](#setstatus)|Durumunu (geçerlilik) Bu ayarlar `COleDateTimeSpan` nesnesi.|  
+|[COleDateTimeSpan::Format](#format)|Bir biçimlendirilmiş dize gösterimini oluşturur bir `COleDateTimeSpan` nesne.|  
+|[COleDateTimeSpan::GetDays](#getdays)|Bu aralık gün kısmını döndürür `COleDateTimeSpan` nesnesini temsil eder.|  
+|[COleDateTimeSpan::GetHours](#gethours)|Bu aralık saat bölümünü döndürür `COleDateTimeSpan` nesnesini temsil eder.|  
+|[COleDateTimeSpan::GetMinutes](#getminutes)|Bu aralık dakika kısmını döndürür `COleDateTimeSpan` nesnesini temsil eder.|  
+|[COleDateTimeSpan::GetSeconds](#getseconds)|Bu aralık saniye kısmını döndürür `COleDateTimeSpan` nesnesini temsil eder.|  
+|[COleDateTimeSpan::GetStatus](#getstatus)|Bu durum (geçerlilik) alır `COleDateTimeSpan` nesne.|  
+|[COleDateTimeSpan::GetTotalDays](#gettotaldays)|Bu gün sayısını döndürür `COleDateTimeSpan` nesnesini temsil eder.|  
+|[COleDateTimeSpan::GetTotalHours](#gettotalhours)|Bu saat sayısını döndürür `COleDateTimeSpan` nesnesini temsil eder.|  
+|[COleDateTimeSpan::GetTotalMinutes](#gettotalminutes)|Bu dakika sayısını döndürür `COleDateTimeSpan` nesnesini temsil eder.|  
+|[COleDateTimeSpan::GetTotalSeconds](#gettotalseconds)|Bu saniye sayısını döndürür `COleDateTimeSpan` nesnesini temsil eder.|  
+|[COleDateTimeSpan::SetDateTimeSpan](#setdatetimespan)|Bu ayarlar `COleDateTimeSpan` nesne.|  
+|[COleDateTimeSpan::SetStatus](#setstatus)|' % S'durumunu (geçerlilik) Bu ayarlar `COleDateTimeSpan` nesne.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |||  
 |-|-|  
-|[operator +, -](#operator_add_-)|Ekleme, çıkarın ve oturum değiştirme `COleDateTimeSpan` değerleri.|  
-|[operator +=-=](#operator_add_eq_-_eq)|Ekleme ve bir `COleDateTimeSpan` bu değerden `COleDateTimeSpan` değeri.|  
+|[operator +, -](#operator_add_-)|Ekleme, çıkarma ve işareti Değiştir `COleDateTimeSpan` değerleri.|  
+|[operator +=-=](#operator_add_eq_-_eq)|Ekleme ve çıkarmayı bir `COleDateTimeSpan` bu değerden `COleDateTimeSpan` değeri.|  
 |[işleç =](#operator_eq)|Kopya bir `COleDateTimeSpan` değeri.|  
-|[operator ==, <, < =](#coledatetimespan_relational_operators)|İki karşılaştırmak `COleDateTimeSpan` değerleri.|  
-|[double işleci](#operator_double)|Bu dönüştürür `COleDateTimeSpan` değeri bir **çift**.|  
+|[işleç ==, <, < =](#coledatetimespan_relational_operators)|Karşılaştırabilirsiniz `COleDateTimeSpan` değerleri.|  
+|[double işleci](#operator_double)|Bu dönüştürür `COleDateTimeSpan` değerini bir **çift**.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleDateTimeSpan::m_span](#m_span)|Arka plandaki içeren **çift** bu `COleDateTimeSpan` nesnesi.|  
-|[COleDateTimeSpan::m_status](#m_status)|Bu durumu içeren `COleDateTimeSpan` nesnesi.|  
+|[COleDateTimeSpan::m_span](#m_span)|Arka plandaki içeren **çift** bu `COleDateTimeSpan` nesne.|  
+|[COleDateTimeSpan::m_status](#m_status)|Bu durumu içeren `COleDateTimeSpan` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `COleDateTimeSpan` bir taban sınıfı yok.  
+ `COleDateTimeSpan` bir temel sınıfa sahip değil.  
   
- A `COleDateTimeSpan` zaman gün içinde tutar.  
+ A `COleDateTimeSpan` süresi gün içinde tutar.  
   
- `COleDateTimeSpan` kendi yardımcı sınıf ile kullanılan [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md). `COleDateTime` yalıtan **tarih** OLE Otomasyon veri türü. `COleDateTime` mutlak saat değerlerini temsil eder. Tüm `COleDateTime` hesaplamaları içeren `COleDateTimeSpan` değerleri. Bu sınıflar arasındaki ilişki arasında bir paraleldir [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).  
+ `COleDateTimeSpan` kendi yardımcı sınıf ile kullanılan [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md). `COleDateTime` kapsülleyen `DATE` OLE Otomasyonu nesnesi etkin veri türü. `COleDateTime` mutlak zaman değerleri temsil eder. Tüm `COleDateTime` içeren `COleDateTimeSpan` değerleri. Bu sınıflar arasındaki ilişki arasında bir benzer [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).  
   
  Daha fazla bilgi için `COleDateTime` ve `COleDateTimeSpan` sınıfları, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** ATLComTime.h  
   
-##  <a name="coledatetimespan_relational_operators"></a>  COleDateTimeSpan ilişkisel işleçler  
+##  <a name="coledatetimespan_relational_operators"></a>  COleDateTimeSpan ilişkisel işleçleri  
  Karşılaştırma işleçleri.  
   
 ```
@@ -123,12 +123,12 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
  `COleDateTimeSpan` Karşılaştırmak için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu işleçlere iki tarih/zaman aralığı değerleri karşılaştırır ve dönüş **true** koşul ise, true, aksi **false**.  
+ Koşul true ise bu işleçler iki tarih/zaman aralığı değerleri ve dönüş doğru karşılaştırma; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  Her iki işlenen geçersiz ise bir ATLASSERT meydana gelir.  
+>  İki işlenenden geçersiz bir ATLASSERT meydana gelir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#25](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_1.cpp)]  
@@ -136,7 +136,7 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#26](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_2.cpp)]  
   
 ##  <a name="coledatetimespan"></a>  COleDateTimeSpan::COleDateTimeSpan  
- Oluşturan bir `COleDateTimeSpan` nesnesi.  
+ Oluşturur bir `COleDateTimeSpan` nesne.  
   
 ```
 COleDateTimeSpan() throw();
@@ -145,30 +145,30 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `dblSpanSrc`  
- Yeni içine kopyalanacak gün sayısını `COleDateTimeSpan` nesnesi.  
+ *dblSpanSrc*  
+ Yeni içine kopyalanacak gün sayısını `COleDateTimeSpan` nesne.  
   
- `lDays`, `nHours`, `nMins`, `nSecs`  
- Yeni içine kopyalanacak gün ve saat değerleri gösterir `COleDateTimeSpan` nesnesi.  
+ *lDays*, *nHours*, *nMins*, *nSecs*  
+ Yeni içine kopyalanacak gün ve saat değerleri belirtmek `COleDateTimeSpan` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm bu oluşturucular Yeni Oluştur `COleDateTimeSpan` nesneleri belirtilen değerle başlatılır. Bu oluşturucu her kısa bir açıklamasını aşağıdaki gibidir:  
+ Tüm bu oluşturucular Yeni Oluştur `COleDateTimeSpan` nesneleri belirtilen değerle başlatılır. Bu oluşturucular her kısa bir açıklaması aşağıdaki gibidir:  
   
 - **COleDateTimeSpan ()** oluşturan bir `COleDateTimeSpan` nesne 0 olarak başlatılır.  
   
-- **COleDateTimeSpan (** `dblSpanSrc` **)** oluşturan bir `COleDateTimeSpan` bir kayan nokta değer nesnesi.  
+- **COleDateTimeSpan (** `dblSpanSrc` **)** oluşturan bir `COleDateTimeSpan` nesneden bir kayan nokta değeri.  
   
-- **COleDateTimeSpan (** `lDays` **,** `nHours` **,** `nMins` **,** `nSecs` **)**  Oluşturan bir `COleDateTimeSpan` nesne belirtilen sayısal değerleri başlatıldı.  
+- **COleDateTimeSpan (** `lDays` **,** `nHours` **,** `nMins` **,** `nSecs` **)**  Oluşturur bir `COleDateTimeSpan` nesne belirtilen sayısal değerlerle başlatıldı.  
   
- Yeni durumunu `COleDateTimeSpan` nesnesi için geçerli ayarlanır.  
+ Yeni durum `COleDateTimeSpan` nesne için geçerli olarak ayarlanır.  
   
- Sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` değerleri, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
+ Sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#14](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_3.cpp)]  
   
 ##  <a name="format"></a>  COleDateTimeSpan::Format  
- Biçimlendirilmiş dize gösterimini oluşturur bir `COleDateTimeSpan` nesnesi.  
+ Bir biçimlendirilmiş dize gösterimini oluşturur bir `COleDateTimeSpan` nesne.  
   
 ```
 CString Format(LPCTSTR pFormat) const;
@@ -176,55 +176,55 @@ CString Format(UINT nID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pFormat`  
- Bir biçimlendirme dize benzer `printf` biçimlendirme dizesi. Biçimlendirme bir yüzde öncesinde kodları ( `%`) oturum açın, ilgili tarafından değiştirilir `COleDateTimeSpan` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dize değişmeden kopyalanır. Değer ve biçimlendirme kodlarını anlamını **biçimi** aşağıda listelenmiştir:  
+ *pFormat*  
+ Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Biçimlendirme kodları, öncesinde bir yüzde (`%`) oturum açın, ilgili değiştirilir `COleDateTimeSpan` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dizeye değiştirilmeden kopyalanır. Değer ve biçimlendirme kodları anlamını `Format` aşağıda listelenmiştir:  
   
-- **%H** saat geçerli gün içinde  
+- **%H** geçerli günün saat  
   
-- **%M** geçerli bir saat içinde dakika  
+- **%M** geçerli bir saatteki dakika  
   
-- **%S** geçerli dakikada saniye  
+- **%S** geçerli dakika, saniye  
   
 - **%%** Yüzde işareti  
   
- Yukarıda listelenen dört biçim kodları biçimi kabul edecek yalnızca kodlarıdır.  
+ Yukarıda listelenen dört biçimi kodları biçimi kabul edileceği yalnızca kodlarıdır.  
   
 -  
   
- `nID`  
- Denetim Biçimlendir dize kaynak kimliği.  
+ *nID*  
+ Biçim Denetimi dizesi kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `CString` biçimlendirilen tarih/zaman aralığı değeri içerir.  
+ A `CString` , biçimlendirilen tarih/zaman aralığı değeri içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Arama zaman aralığı değeri biçimlendirilmiş bir temsilini oluşturmak için bu işlevleri. Varsa bu durumu `COleDateTimeSpan` nesnesi null, boş bir dize dönüş değeri değil. Geçersiz durumundaysa, dönüş dizesi dize kaynak tarafından belirtilen **IDS_INVALID_DATETIMESPAN**.  
+ Arama zaman aralığı değeri biçimlendirilmiş bir temsilini oluşturmak için bu işlevleri. Varsa bu durum `COleDateTimeSpan` nesnesi null ise, dönüş değeri boş bir dizedir. Geçersiz durum ise, dize kaynağı IDS_INVALID_DATETIMESPAN dizesini belirtilir.  
   
- Bu işlev için formları kısa bir açıklamasını aşağıdaki gibidir:  
+ Bu işlev formlarını kısa bir açıklaması aşağıdaki gibidir:  
   
- **Biçim (** `pFormat` **)**  
- Bu form bir yüzde işaretiyle (%) öncesinde özel biçimlendirme kodlar içerir biçim dizesini kullanarak değeri olarak biçimleri `printf`. Biçimlendirme dizesi işlevi için parametre olarak geçirilir.  
+ **Biçimi (** *pFormat* **)**  
+ Bu formu yüzde (%) işareti tarafından öncelenen özel biçimlendirme kodlarını içerirse biçim dizesi kullanarak değeri olarak biçimlendirir. `printf`. Biçimlendirme dizesi, parametre olarak işleve geçirilir.  
   
- **Biçim (** `nID` **)**  
- Bu form bir yüzde işaretiyle (%) öncesinde özel biçimlendirme kodlar içerir biçim dizesini kullanarak değeri olarak biçimleri `printf`. Biçimlendirme dizesi bir kaynaktır. Bu dize kaynağı kimliği, parametre olarak geçirilir.  
+ **Biçimi (** *nID* **)**  
+ Bu formu yüzde (%) işareti tarafından öncelenen özel biçimlendirme kodlarını içerirse biçim dizesi kullanarak değeri olarak biçimlendirir. `printf`. Biçimlendirme dizesi bir kaynaktır. Bu dize kaynak kimliği, parametre olarak geçirilir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#15](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_4.cpp)]  
   
 ##  <a name="getdays"></a>  COleDateTimeSpan::GetDays  
- Bu tarih/zaman aralığı değeri gün kısmını alır.  
+ Bu tarih/zaman aralığı değerinin gün kısmını alır.  
   
 ```
 LONG GetDays() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu tarih/zaman aralığı değerinin gün bölümü.  
+ Bu tarih/zaman aralığı değerinin gün kısmını.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yaklaşık - değerleri bu işlevi aralığından dönüş 3,615,000 ve 3,615,000.  
+ Dönüş değerleri bu işlevi aralığında yaklaşık - 3,615,000 ve 3,615,000.  
   
- Değerini sorgulamak diğer işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değerini sorgulamak diğer işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetHours](#gethours)  
   
@@ -244,19 +244,19 @@ LONG GetDays() const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#16](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_5.cpp)]  
   
 ##  <a name="gethours"></a>  COleDateTimeSpan::GetHours  
- Bu tarih/zaman aralığı değerinin saat bölümünü alır.  
+ Bu tarih/zaman aralığı değerinin saat kısmını alır.  
   
 ```
 LONG GetHours() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu tarih/zaman aralığı değerinin saat bölümü.  
+ Bu tarih/zaman aralığı değeri saat kısmı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev aralığı - 23 ve 23 arasında dönüş değerleri.  
+ Bu işlev aralıktan - 23 ve 23 arasında bir dönüş değerleri.  
   
- Değerini sorgulamak diğer işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değerini sorgulamak diğer işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetDays](#getdays)  
   
@@ -276,19 +276,19 @@ LONG GetHours() const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#17](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_6.cpp)]  
   
 ##  <a name="getminutes"></a>  COleDateTimeSpan::GetMinutes  
- Bu tarih/zaman aralığı değeri dakika kısmını alır.  
+ Bu tarih/zaman aralığı değerinin dakika kısmını alır.  
   
 ```
 LONG GetMinutes() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu tarih/zaman aralığı değeri dakika kısmı.  
+ Bu tarih/zaman aralığı değerinin dakika kısmını.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev aralığı - 59 ile 59 arasında dönüş değerleri.  
+ Dönüş değerleri bu işlevi aralıktan - 59 ile 59 arasında.  
   
- Değerini sorgulamak diğer işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değerini sorgulamak diğer işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetDays](#getdays)  
   
@@ -308,19 +308,19 @@ LONG GetMinutes() const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#18](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_7.cpp)]  
   
 ##  <a name="getseconds"></a>  COleDateTimeSpan::GetSeconds  
- Bu tarih/zaman aralığı değeri ikinci kısmını alır.  
+ Bu tarih/zaman aralığı değeri saniye kısmını alır.  
   
 ```
 LONG GetSeconds() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu tarih/zaman aralığı değeri saniye kısmı.  
+ Bu tarih/zaman aralığı değerinin saniye kısmını.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev aralığı - 59 ile 59 arasında dönüş değerleri.  
+ Dönüş değerleri bu işlevi aralıktan - 59 ile 59 arasında.  
   
- Değerini sorgulamak diğer işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değerini sorgulamak diğer işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetDays](#getdays)  
   
@@ -340,7 +340,7 @@ LONG GetSeconds() const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#19](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_8.cpp)]  
   
 ##  <a name="getstatus"></a>  COleDateTimeSpan::GetStatus  
- Bu durum (geçerlilik) alır `COleDateTimeSpan` nesnesi.  
+ Bu durum (geçerlilik) alır `COleDateTimeSpan` nesne.  
   
 ```
 DateTimeSpanStatus GetStatus() const throw();
@@ -350,7 +350,7 @@ DateTimeSpanStatus GetStatus() const throw();
  Bu durumu `COleDateTimeSpan` değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dönüş değeri tarafından tanımlanan **DateTimeSpanStatus** numaralandırılmış içinde tanımlanan türü `COleDateTimeSpan` sınıfı.  
+ Dönüş değeri tarafından tanımlanan `DateTimeSpanStatus` listelenmiş içinde tanımlanan bir türü `COleDateTimeSpan` sınıfı.  
   
 ```  
 enum DateTimeSpanStatus{  
@@ -362,23 +362,23 @@ enum DateTimeSpanStatus{
   
  Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:  
   
-- **COleDateTimeSpan::valid** belirtir bu `COleDateTimeSpan` nesne geçerlidir.  
+- `COleDateTimeSpan::valid` Belirten bu `COleDateTimeSpan` nesne geçerlidir.  
   
-- **COleDateTimeSpan::invalid** belirtir bu `COleDateTimeSpan` nesnesi geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
+- `COleDateTimeSpan::invalid` Belirten bu `COleDateTimeSpan` Nesne geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
   
-- **COleDateTimeSpan::null** belirtir bu `COleDateTimeSpan` nesnesi null, diğer bir deyişle, bu nesne için herhangi bir değer belirtildi. (Bu bir "herhangi bir değer aksine C++ kullanılmasının" veritabanı algılama "null" **NULL**.)  
+- `COleDateTimeSpan::null` Belirten bu `COleDateTimeSpan` nesnesi, null, diğer bir deyişle, bu nesne için hiçbir değer belirtilmiş. ("Null" bir "herhangi bir değer NULL C++ aksine kullanılmasının" veritabanı anlamında budur.)  
   
- Durumunu bir `COleDateTimeSpan` nesnesi aşağıdaki durumlarda geçersiz:  
+ Durumunu bir `COleDateTimeSpan` aşağıdaki durumlarda nesne geçersiz:  
   
--   Bu nesne bir taşması veya underflow aritmetik atama işlemi sırasında yani, karşılaştı, `+=` veya `-=`.  
+-   Bu nesne bir taşma veya yetersiz gelme aritmetik atama işlemi sırasında yani karşılaştı, `+=` veya `-=`.  
   
--   Bu nesne için geçersiz bir değer atanmışsa.  
+-   Bu nesne için geçersiz bir değere atanırsa.  
   
--   Kullanarak geçersiz bu nesnenin durumu açıkça ayarlanmış olmadığını `SetStatus`.  
+-   Bu nesne durumunu kullanarak geçersiz açıkça ayarlandığını `SetStatus`.  
   
- Durum için geçersiz ayarlama işlemleri hakkında daha fazla bilgi için bkz: [COleDateTimeSpan::operator +, -](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) ve [COleDateTimeSpan::operator +=,-=](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq).  
+ Durumu için geçersiz olarak işlemleri hakkında daha fazla bilgi için bkz. [COleDateTimeSpan::operator +, -](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) ve [COleDateTimeSpan::operator +=,-=](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq).  
   
- Sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` değerleri, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
+ Sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ##  <a name="gettotaldays"></a>  COleDateTimeSpan::GetTotalDays  
  Gün olarak ifade bu tarih/zaman aralığı değeri alır.  
@@ -388,12 +388,12 @@ double GetTotalDays() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Gün olarak ifade bu tarih/zaman aralığı değeri. Bu işlev bir double döndürülecek örneklenmiş olsa da, her zaman bir tamsayı değeri döndürür.  
+ Bu tarih/zaman aralığı, gün cinsinden değeri. Bu işlev bir çift döndürülecek prototipli olsa da, her zaman bir Integer değeri döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev aralığında yaklaşık - 3.65e6 ve 3.65e6 dönüş değerleri.  
   
- Değerini sorgulamak diğer işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değerini sorgulamak diğer işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetDays](#getdays)  
   
@@ -413,19 +413,19 @@ double GetTotalDays() const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#20](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_9.cpp)]  
   
 ##  <a name="gettotalhours"></a>  COleDateTimeSpan::GetTotalHours  
- Saat cinsinden ifade edilen bu tarih/zaman aralığı değeri alır.  
+ Saat cinsinden ifade bu tarih/zaman aralığı değeri alır.  
   
 ```
 double GetTotalHours() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Saat cinsinden ifade edilen bu tarih/zaman aralığı değeri. Bu işlev bir double döndürülecek örneklenmiş olsa da, her zaman bir tamsayı değeri döndürür.  
+ Bu tarih/zaman aralığı değeri saat cinsinden ifade. Bu işlev bir çift döndürülecek prototipli olsa da, her zaman bir Integer değeri döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev aralığında yaklaşık - 8.77e7 ve 8.77e7 dönüş değerleri.  
   
- Değerini sorgulamak diğer işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değerini sorgulamak diğer işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetDays](#getdays)  
   
@@ -442,22 +442,22 @@ double GetTotalHours() const throw();
 - [GetTotalSeconds](#gettotalseconds)  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [GetTotalDays](#gettotaldays).  
+ Örneğin bakın [GetTotalDays](#gettotaldays).  
   
 ##  <a name="gettotalminutes"></a>  COleDateTimeSpan::GetTotalMinutes  
- Dakika cinsinden ifade edilen bu tarih/zaman aralığı değeri alır.  
+ Bu tarih/zaman aralığı, dakika cinsinden ifade değeri alır.  
   
 ```
 double GetTotalMinutes() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu tarih/zaman aralığı dakika cinsinden ifade edilen değer. Bu işlev bir double döndürülecek örneklenmiş olsa da, her zaman bir tamsayı değeri döndürür.  
+ Bu tarih/zaman aralığı dakika cinsinden değeri. Bu işlev bir çift döndürülecek prototipli olsa da, her zaman bir Integer değeri döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev aralığında yaklaşık - 5.26e9 ve 5.26e9 dönüş değerleri.  
   
- Değerini sorgulamak diğer işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değerini sorgulamak diğer işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetDays](#getdays)  
   
@@ -474,22 +474,22 @@ double GetTotalMinutes() const throw();
 - [GetTotalSeconds](#gettotalseconds)  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [GetTotalDays](#gettotaldays).  
+ Örneğin bakın [GetTotalDays](#gettotaldays).  
   
 ##  <a name="gettotalseconds"></a>  COleDateTimeSpan::GetTotalSeconds  
- Saniye cinsinden ifade edilen bu tarih/zaman aralığı değeri alır.  
+ Bu tarih/zaman aralığı değeri saniyelerle ifade alır.  
   
 ```
 double GetTotalSeconds() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu tarih/zaman aralığı saniye cinsinden ifade edilen değer. Bu işlev bir double döndürülecek örneklenmiş olsa da, her zaman bir tamsayı değeri döndürür.  
+ Bu tarih/zaman aralığı değeri saniyelerle ifade edilir. Bu işlev bir çift döndürülecek prototipli olsa da, her zaman bir Integer değeri döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlevi dönüş değerleri arasındaki aralığı yaklaşık - 3.16e11 için 3.16e11.  
+ Bu işlev dönüş değerleri arasındaki aralığı yaklaşık - 3.16e11 için 3.16e11.  
   
- Değerini sorgulamak diğer işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değerini sorgulamak diğer işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetDays](#getdays)  
   
@@ -506,10 +506,10 @@ double GetTotalSeconds() const throw();
 - [GetTotalMinutes](#gettotalminutes)  
   
 ### <a name="example"></a>Örnek  
- Örneğin bkz [GetTotalDays](#gettotaldays).  
+ Örneğin bakın [GetTotalDays](#gettotaldays).  
   
 ##  <a name="m_span"></a>  COleDateTimeSpan::m_span  
- Arka plandaki **çift** bu değeri `COleDateTime` nesnesi.  
+ Arka plandaki **çift** bu değeri `COleDateTime` nesne.  
   
 ```
 double m_span;
@@ -519,10 +519,10 @@ double m_span;
  Bu değer, tarih/zaman aralığı gün cinsinden ifade eder.  
   
 > [!CAUTION]
->  Değer değiştirme **çift** veri üyesi, bu değeri değiştirir `COleDateTimeSpan` nesnesi. Bu durumu değiştirmez `COleDateTimeSpan` nesnesi.  
+>  Değer değiştirme **çift** veri üyesi, bu değeri değiştirir `COleDateTimeSpan` nesne. Bu durumu değiştirmez `COleDateTimeSpan` nesne.  
   
 ##  <a name="m_status"></a>  COleDateTimeSpan::m_status  
- Bu veri üyesi türü numaralandırılmış türüdür **DateTimeSpanStatus**, içinde tanımlanan `COleDateTimeSpan` sınıfı.  
+ Bu veri üyesi için enum türü türüdür `DateTimeSpanStatus`, içinde tanımlanan `COleDateTimeSpan` sınıfı.  
   
 ```
 DateTimeSpanStatus m_status;
@@ -540,26 +540,26 @@ enum DateTimeSpanStatus{
   
  Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:  
   
-- **COleDateTimeSpan::valid** belirtir bu `COleDateTimeSpan` nesne geçerlidir.  
+- `COleDateTimeSpan::valid` Belirten bu `COleDateTimeSpan` nesne geçerlidir.  
   
-- **COleDateTimeSpan::invalid** belirtir bu `COleDateTimeSpan` nesnesi geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
+- `COleDateTimeSpan::invalid` Belirten bu `COleDateTimeSpan` Nesne geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
   
-- **COleDateTimeSpan::null** belirtir bu `COleDateTimeSpan` nesnesi null, diğer bir deyişle, bu nesne için herhangi bir değer belirtildi. (Bu bir "herhangi bir değer aksine C++ kullanılmasının" veritabanı algılama "null" **NULL**.)  
+- `COleDateTimeSpan::null` Belirten bu `COleDateTimeSpan` nesnesi, null, diğer bir deyişle, bu nesne için hiçbir değer belirtilmiş. ("Null" bir "herhangi bir değer NULL C++ aksine kullanılmasının" veritabanı anlamında budur.)  
   
- Durumunu bir `COleDateTimeSpan` nesnesi aşağıdaki durumlarda geçersiz:  
+ Durumunu bir `COleDateTimeSpan` aşağıdaki durumlarda nesne geçersiz:  
   
--   Bu nesne bir taşması veya underflow aritmetik atama işlemi sırasında yani, karşılaştı, `+=` veya `-=`.  
+-   Bu nesne bir taşma veya yetersiz gelme aritmetik atama işlemi sırasında yani karşılaştı, `+=` veya `-=`.  
   
--   Bu nesne için geçersiz bir değer atanmışsa.  
+-   Bu nesne için geçersiz bir değere atanırsa.  
   
--   Kullanarak geçersiz bu nesnenin durumu açıkça ayarlanmış olmadığını [SetStatus](#setstatus).  
+-   Bu nesne durumunu kullanarak geçersiz açıkça ayarlandığını [SetStatus](#setstatus).  
   
- Durum için geçersiz ayarlama işlemleri hakkında daha fazla bilgi için bkz: [COleDateTimeSpan::operator +, -](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) ve [COleDateTimeSpan::operator +=,-=](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq).  
+ Durumu için geçersiz olarak işlemleri hakkında daha fazla bilgi için bkz. [COleDateTimeSpan::operator +, -](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) ve [COleDateTimeSpan::operator +=,-=](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq).  
   
 > [!CAUTION]
->  Gelişmiş programlama durumlar için bu veri üyesidir. Satır içi üye işlevleri kullanması gereken [GetStatus](#getstatus) ve [SetStatus](#setstatus). Bkz: `SetStatus` açıkça bu veri üyesi ayarlama ile ilgili daha fazla uyarılar için.  
+>  Gelişmiş programlama durumlar için bu verileri üyesidir. Satır içi üye işlevleri kullanmalıdır [GetStatus](#getstatus) ve [SetStatus](#setstatus). Bkz: `SetStatus` açıkça bu veri üyesi ayarlama ile ilgili daha fazla uyarılar için.  
   
- Sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` değerleri, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
+ Sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
 ##  <a name="operator_eq"></a>  COleDateTimeSpan::operator =  
  Kopya bir `COleDateTimeSpan` değeri.  
@@ -569,10 +569,10 @@ COleDateTimeSpan& operator=(double dblSpanSrc) throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu aşırı yüklenmiş atama işleci kaynak tarih/zaman aralığı değeri bu kopyalar `COleDateTimeSpan` nesnesi.  
+ Bu aşırı yüklenmiş atama işleci kaynak tarih/zaman aralığı değeri bu kopyalar `COleDateTimeSpan` nesne.  
   
 ##  <a name="operator_add_-"></a>  COleDateTimeSpan::operator +, -  
- Ekleme, çıkarın ve oturum değiştirme `COleDateTimeSpan` değerleri.  
+ Ekleme, çıkarma ve işareti Değiştir `COleDateTimeSpan` değerleri.  
   
 ```
 COleDateTimeSpan operator+(const COleDateTimeSpan& dateSpan) const throw();
@@ -581,19 +581,19 @@ COleDateTimeSpan operator-() const throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk iki işleç ekleyin ve tarih/saat-aralık değerleri çıkarma olanak tanır. Üçüncü bir tarih/zaman aralığı değerinin oturum değiştirmenize olanak verir.  
+ İlk iki işleç ekleyin ve tarih/zaman aralığı değerleri çıkarmayı sağlar. Üçüncü bir tarih/zaman aralığı değerinin oturum değiştirmenize olanak tanır.  
   
- İşlenen birini ise null, elde edilen durumunu `COleDateTimeSpan` değeri NULL'dur.  
+ İşlenenler biri geçerli olduğunda null, ortaya çıkan durumunu `COleDateTimeSpan` değeri NULL'dur.  
   
- İşlenen birini geçersiz ve diğer null değilse, elde edilen durumunu `COleDateTimeSpan` değeri geçersiz.  
+ İşlenenden ya da geçersiz ve diğerini null değilse ortaya çıkan durumu `COleDateTimeSpan` değeri geçersiz.  
   
- Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz: [m_status](#m_status) üye değişkeni.  
+ Geçerli, geçersiz ve boş durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#23](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_10.cpp)]  
   
 ##  <a name="operator_add_eq_-_eq"></a>  COleDateTimeSpan::operator +=-=  
- Ekleme ve bir `COleDateTimeSpan` bu değerden `COleDateTimeSpan` değeri.  
+ Ekleme ve çıkarmayı bir `COleDateTimeSpan` bu değerden `COleDateTimeSpan` değeri.  
   
 ```
 COleDateTimeSpan& operator+=(const COleDateTimeSpan dateSpan) throw();
@@ -601,38 +601,38 @@ COleDateTimeSpan& operator-=(const COleDateTimeSpan dateSpan) throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleçlere ekleme ve bu tarih/saat-aralık değerleri sağlayan `COleDateTimeSpan` nesnesi. İşlenen birini ise null, elde edilen durumunu `COleDateTimeSpan` değeri NULL'dur.  
+ Bu işleçler, ekleme ve bu tarih/zaman aralığı değerleri çıkarmayı sağlar `COleDateTimeSpan` nesne. İşlenenler biri geçerli olduğunda null, ortaya çıkan durumunu `COleDateTimeSpan` değeri NULL'dur.  
   
- İşlenen birini geçersiz ve diğer null değilse, elde edilen durumunu `COleDateTimeSpan` değeri geçersiz.  
+ İşlenenden ya da geçersiz ve diğerini null değilse ortaya çıkan durumu `COleDateTimeSpan` değeri geçersiz.  
   
- Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz: [m_status](#m_status) üye değişkeni.  
+ Geçerli, geçersiz ve boş durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#24](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_11.cpp)]  
   
 ##  <a name="operator_double"></a>  COleDateTimeSpan::operator çift  
- Bu dönüştürür `COleDateTimeSpan` değeri bir **çift**.  
+ Bu dönüştürür `COleDateTimeSpan` değerini bir **çift**.  
   
 ```
 operator double() const throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleç bu değerini döndürür `COleDateTimeSpan` değeri olarak bir kayan nokta gün sayısı.  
+ Bu işleç bu değeri döndürür `COleDateTimeSpan` bir kayan nokta gün sayısı olarak değeri.  
   
 ##  <a name="setdatetimespan"></a>  COleDateTimeSpan::SetDateTimeSpan  
- Bu tarih/zaman aralığı değerini ayarlar.  
+ Bu tarih/zaman aralığı değeri ayarlar.  
   
 ```
 void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lDays`, `nHours`, `nMins`, `nSecs`  
- Bu kopyalanacak tarih aralığı ve zaman aralığını değerler `COleDateTimeSpan` nesnesi.  
+ *lDays*, *nHours*, *nMins*, *nSecs*  
+ Bu kopyalanacak tarih aralığı ve zaman aralığı değerleri gösterir `COleDateTimeSpan` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değerini sorgulamak işlevler için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
+ Değeri, sorgu işlevleri için bir `COleDateTimeSpan` nesne, aşağıdaki üye işlevleri bakın:  
   
 - [GetDays](#getdays)  
   
@@ -654,7 +654,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
  [!code-cpp[NVC_ATLMFC_Utilities#21](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_12.cpp)]  
   
 ##  <a name="setstatus"></a>  COleDateTimeSpan::SetStatus  
- Durumunu (geçerlilik) Bu ayarlar `COleDateTimeSpan` nesnesi.  
+ ' % S'durumunu (geçerlilik) Bu ayarlar `COleDateTimeSpan` nesne.  
   
 ```
 void SetStatus(DateTimeSpanStatus status) throw();
@@ -662,10 +662,10 @@ void SetStatus(DateTimeSpanStatus status) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *Durumu*  
- Bu yeni durum değeri `COleDateTimeSpan` nesnesi.  
+ Bu yeni durum değeri `COleDateTimeSpan` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- *Durum* tarafından tanımlanan parametre değeri **DateTimeSpanStatus** numaralandırılmış içinde tanımlanan türü `COleDateTimeSpan` sınıfı.  
+ *Durumu* parametre değeri tarafından tanımlanan `DateTimeSpanStatus` listelenmiş içinde tanımlanan bir türü `COleDateTimeSpan` sınıfı.  
   
 ```  
 enum DateTimeSpanStatus{  
@@ -677,14 +677,14 @@ enum DateTimeSpanStatus{
   
  Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:  
   
-- **COleDateTimeSpan::valid** belirtir bu `COleDateTimeSpan` nesne geçerlidir.  
+- `COleDateTimeSpan::valid` Belirten bu `COleDateTimeSpan` nesne geçerlidir.  
   
-- **COleDateTimeSpan::invalid** belirtir bu `COleDateTimeSpan` nesnesi geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
+- `COleDateTimeSpan::invalid` Belirten bu `COleDateTimeSpan` Nesne geçersiz; diğer bir deyişle, değeri yanlış olabilir.  
   
-- **COleDateTimeSpan::null** belirtir bu `COleDateTimeSpan` nesnesi null, diğer bir deyişle, bu nesne için herhangi bir değer belirtildi. (Bu bir "herhangi bir değer aksine C++ kullanılmasının" veritabanı algılama "null" **NULL**.)  
+- `COleDateTimeSpan::null` Belirten bu `COleDateTimeSpan` nesnesi, null, diğer bir deyişle, bu nesne için hiçbir değer belirtilmiş. ("Null" bir "herhangi bir değer NULL C++ aksine kullanılmasının" veritabanı anlamında budur.)  
   
     > [!CAUTION]
-    >  Bu işlev, Gelişmiş programlama durumlar için kullanılır. Bu işlev, bu nesne verileri değiştirmez. Durum ayarlamak için çoğunlukla kullanılacak `null` veya **geçersiz**. Unutmayın atama işleci ( [işleç =](#eq)) ve [SetDateTimeSpan](#setdatetimespan) kaynak değerler dayalı bir nesnenin durumu ayarlayın.  
+    >  Bu işlev, Gelişmiş programlama durumlar için kullanılır. Bu işlev, bu nesne verileri değiştirmez. Durumu ayarlamak için en sık kullanılacak **null** veya **geçersiz**. Unutmayın atama işleci ( [işleç =](#eq)) ve [SetDateTimeSpan](#setdatetimespan) kaynak değerleri üzerinde temel bir nesnenin durumu ayarlayın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#22](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_13.cpp)]  
@@ -694,6 +694,6 @@ enum DateTimeSpanStatus{
  [CTime sınıfı](../../atl-mfc-shared/reference/ctime-class.md)   
  [CTimeSpan sınıfı](../../atl-mfc-shared/reference/ctimespan-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [ATL/MFC sınıfları paylaşılan](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+ [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 
 

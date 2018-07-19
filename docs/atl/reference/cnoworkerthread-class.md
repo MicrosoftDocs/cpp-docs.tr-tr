@@ -24,18 +24,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85e1962d10f274f4f8c35ba27cb05c41e8bf19cb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 16eafd8c33bf1c9a42b95c31a333ff1df55b3495
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363090"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962510"
 ---
 # <a name="cnoworkerthread-class"></a>CNoWorkerThread sınıfı
-Bu sınıf için bağımsız değişken olarak kullanma `MonitorClass` dinamik önbellek bakım devre dışı bırakmak istiyorsanız önbellek sınıflarına şablon parametresi.  
+Bu sınıf için bağımsız değişken olarak kullanmak `MonitorClass` şablon parametresi için dinamik önbellek bakım devre dışı bırakmak isterseniz önbellek sınıfları.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -58,9 +58,9 @@ class CNoWorkerThread
 |[CNoWorkerThread::Shutdown](#shutdown)|İşlevsel olmayan denk [CWorkerThread::Shutdown](../../atl/reference/cworkerthread-class.md#shutdown).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Aynı Ortak arabirimi olarak bu sınıfın sağladığı [CWorkerThread](../../atl/reference/cworkerthread-class.md). Bu arabirim tarafından sağlanan beklenen `MonitorClass` önbellek sınıflarına şablon parametresi.  
+ Aynı genel arabirimi olarak bu sınıfın sağladığı [CWorkerThread](../../atl/reference/cworkerthread-class.md). Bu arabirim tarafından sağlanan beklenir `MonitorClass` önbellek sınıfları için şablon parametresi.  
   
- Bu sınıftaki yöntemleri, hiçbir şey yapmak için uygulanır. HRESULT her zaman döndüren yöntemler S_OK dönün ve TANITICISI veya iş parçacığı kimliği her zaman döndüren yöntemler 0 döndürür.  
+ Bu sınıftaki yöntemlerin yapmamak için uygulanır. Her zaman bir HRESULT döndüren yöntemler S_OK döndürür ve her zaman bir tanıtıcı veya iş parçacığı kimliği döndüren yöntemler 0 değerini döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlutil.h  
@@ -124,7 +124,7 @@ DWORD GetThreadId() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Her zaman 0 döndürür.  
+ Her zaman 0 değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.  

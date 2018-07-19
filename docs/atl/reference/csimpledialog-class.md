@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3a8f6cb2ead8798b86d65a1fa875a42a68cdd77
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b0c713781ff6c780e63fdf19545f83bf693a081b
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362393"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881665"
 ---
 # <a name="csimpledialog-class"></a>CSimpleDialog sınıfı
 Bu sınıf temel kalıcı bir iletişim kutusu uygular.  
@@ -41,10 +41,10 @@ class CSimpleDialog : public CDialogImplBase
 #### <a name="parameters"></a>Parametreler  
  *t_wDlgTemplateID*  
   
- İletişim kutusu şablon kaynağı kaynak kimliği.  
+ İletişim şablon kaynağı kaynak kimliği.  
   
  *t_bCenter*  
- **DOĞRU** iletişim nesne sahibi penceresinde ortalanmış; tersi durumda ise **FALSE**.  
+ İletişim nesnesi üzerinde sahip pencereyi ortalamak için ise TRUE; Aksi durumda FALSE.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -52,14 +52,14 @@ class CSimpleDialog : public CDialogImplBase
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSimpleDialog::DoModal](#domodal)|Modal bir iletişim kutusu oluşturur.|  
+|[CSimpleDialog::DoModal](#domodal)|Kalıcı bir iletişim kutusu oluşturur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Modal bir iletişim kutusu ile temel işlevlerini uygular. `CSimpleDialog` Windows ortak denetimleri için yalnızca desteği sağlar. Oluşturun ve kalıcı bir iletişim kutusu görüntülemek için var olan bir kaynak şablonu adı için iletişim kutusu sağlama bu sınıfının bir örneğini oluşturun. Kullanıcı (örneğin, IDOK veya IDCANCEL) önceden tanımlanmış bir değerle herhangi bir denetimi tıklattığında iletişim kutusu nesnesini kapatır.  
+ Kalıcı bir iletişim kutusu ile temel işlevselliğini uygular. `CSimpleDialog` Windows ortak denetimleri için yalnızca destek sağlar. Oluşturun ve kalıcı bir iletişim kutusu görüntülemek için mevcut bir kaynak şablonu adı için iletişim kutusu sağlama, bu sınıfın bir örneğini oluşturun. Kullanıcı (örneğin, IDOK veya IDCANCEL) önceden tanımlı bir değer ile herhangi bir denetimi tıklattığında iletişim kutusu nesnesini kapatır.  
   
- `CSimpleDialog` kalıcı iletişim kutuları oluşturmanıza olanak sağlar. `CSimpleDialog` Varsayılan ileti eşlemesi uygun işleyicileri iletilerini yönlendirmek için kullandığı iletişim kutusu yordam sağlar.  
+ `CSimpleDialog` kalıcı iletişim kutuları oluşturmanıza olanak sağlar. `CSimpleDialog` uygun işleyicileri iletilerini yönlendirmek için varsayılan ileti eşlemesi kullanan iletişim kutusu yordam sağlar.  
   
- Bkz: [bir iletişim kutusu uygulama](../../atl/implementing-a-dialog-box.md) daha fazla bilgi için.  
+ Bkz: [iletişim kutusu uygulama](../../atl/implementing-a-dialog-box.md) daha fazla bilgi için.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CDialogImplBase`  
@@ -70,23 +70,23 @@ class CSimpleDialog : public CDialogImplBase
  **Başlık:** atlwin.h  
   
 ##  <a name="domodal"></a>  CSimpleDialog::DoModal  
- Kalıcı iletişim kutusunu çağırır ve tamamlandığında iletişim kutusu sonucu döndürür.  
+ Kalıcı bir iletişim kutusu çağırır ve işiniz bittiğinde iletişim kutusu sonucu döndürür.  
   
 ```
 INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hWndParent`  
- İletişim kutusunun üst için bir tanıtıcı. Herhangi bir değer sağlanmazsa, üst geçerli etkin pencereyi ayarlanır.  
+ *hWndParent*  
+ İletişim kutusunun üst tanıtıcı. Herhangi bir değer sağlanmazsa, geçerli etkin pencereyi üst ayarlanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, dönüş değeri iletişim kutusu kapatılır denetimi kaynak kimliğidir.  
+ Başarılı olursa, dönüş değeri iletişim kutusu kapatıldı denetimi kaynak kimliğidir.  
   
- İşlev başarısız olursa, dönüş değeri -1'dir. Genişletilmiş hata bilgilerini için arama `GetLastError`.  
+ İşlev başarısız olursa, dönüş değeri -1'dir. Genişletilmiş hata bilgilerini almak için arama `GetLastError`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İletişim kutusu etkinken bu yöntem tüm kullanıcıyla etkileşime işler. İletişim kutusu kalıcı kılan budur; diğer bir deyişle, kullanıcı iletişim kutusu kapatılana kadar diğer windows ile etkileşime giremezler.  
+ İletişim kutusu etkin olduğu sırada bu yöntem tüm etkileşime girmesinin işler. Bu iletişim kutusu kalıcı olmasını sağlayan nedir, diğer bir deyişle, kullanıcı iletişim kutusu kapatılana kadar diğer windows ile etkileşime giremezler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

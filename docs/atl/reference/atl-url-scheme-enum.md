@@ -14,16 +14,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d180454b3189988752c9002ddc462eb460d51ff4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b7dc33d4806e02541f45bfde2ecb5acdc0133ad3
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356954"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962230"
 ---
 # <a name="atlurlscheme"></a>ATL_URL_SCHEME  
 
-Bu numaralandırma üyeleri tarafından anlaşılan düzenleri sabitleri sağlamak [CUrl](curl-class.md).  
+Bu numaralandırma üyeleri tarafından anlaşılan düzenleri için sabitleri sağlayan [CUrl](curl-class.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   

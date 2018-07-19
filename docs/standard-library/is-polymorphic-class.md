@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6de11114eafe423e80c885f3b1a5d00a70b449e0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4eab6d6ce44655177d20073ca5c5cda3859cb8b3
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864053"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966387"
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic Sınıfı
 
-Bir sanal işlev türü olup olmadığını test.
+Bir sanal işlev türünde olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_polymorphic;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` bildirir veya yanlış tuttuğu bir sanal işlev, aksi takdirde devralan bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* bildirir ya da false başvuruysa bir sanal işlev, aksi takdirde devralan bir sınıftır.
 
 ## <a name="example"></a>Örnek
 

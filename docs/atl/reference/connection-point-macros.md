@@ -17,28 +17,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e50a868dd87628873b2a43f0ace55690b0583fd5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 88789bef4bbcce3df99d90d736974377c9bca5fd
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362936"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882942"
 ---
 # <a name="connection-point-macros"></a>Bağlantı noktası makroları
-Bu makroları bağlantı noktası eşlemeleri ve girişleri tanımlayın.  
+Bu makrolar, bağlantı noktası eşlemeleri ve girişleri tanımlayın.  
   
 |||  
 |-|-|  
-|[BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map)|Bağlantı noktası eşleme girdilerini başlangıcını işaretler.|  
+|[BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map)|Bağlantı noktası eşleme girişleri başlangıcını işaretler.|  
 |[CONNECTION_POINT_ENTRY](#connection_point_entry)|Bağlantı noktaları eşlemeye girer.|  
-|[CONNECTION_POINT_ENTRY_P](#connection_point_entry)| (Visual Studio 2017) CONNECTION_POINT_ENTRY benzer, ancak IID gösteren bir işaretçi alır.|
-|[END_CONNECTION_POINT_MAP](#end_connection_point_map)|Bağlantı noktası eşleme girdilerini sonunu işaretler.|  
+|[CONNECTION_POINT_ENTRY_P](#connection_point_entry)| (Visual Studio 2017) CONNECTION_POINT_ENTRY benzer, ancak IID için bir işaretçi alır.|
+|[END_CONNECTION_POINT_MAP](#end_connection_point_map)|Bağlantı noktası eşleme girişleri sonunu işaretler.|  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h 
    
 ##  <a name="begin_connection_point_map"></a>  BEGIN_CONNECTION_POINT_MAP  
- Bağlantı noktası eşleme girdilerini başlangıcını işaretler.  
+ Bağlantı noktası eşleme girişleri başlangıcını işaretler.  
   
 ```
 BEGIN_CONNECTION_POINT_MAP(x)
@@ -46,18 +46,18 @@ BEGIN_CONNECTION_POINT_MAP(x)
   
 ### <a name="parameters"></a>Parametreler  
  *x*  
- [in] Bağlantı noktaları içeren sınıfın adı.  
+ [in] Bağlantı noktalarını içeren sınıfın adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağlantı noktası eşlemesi ile başlangıç `BEGIN_CONNECTION_POINT_MAP` makrosu, her bağlantı noktalarıyla girişleri eklemek [CONNECTION_POINT_ENTRY](#connection_point_entry) makro ve Haritası tamamlamak [END_CONNECTION_POINT_MAP](#end_connection_point_map) makrosu.  
+ BEGIN_CONNECTION_POINT_MAP makro ile bağlantı noktasına eşlemenizi başlatma, her biri ile bağlantı noktaları için girişler ekleyin [CONNECTION_POINT_ENTRY](#connection_point_entry) makro ve haritayla tamamlamak [END_CONNECTION_ POINT_MAP](#end_connection_point_map) makrosu.  
   
- ATL bağlantı noktaları hakkında daha fazla bilgi için bkz: [bağlantı noktaları](../../atl/atl-connection-points.md).  
+ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı noktaları](../../atl/atl-connection-points.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#101](../../atl/codesnippet/cpp/connection-point-macros_1.h)]  
   
 ##  <a name="connection_point_entry"></a>  CONNECTION_POINT_ENTRY ve CONNECTION_POINT_ENTRY_P  
- Bir bağlantı noktası, belirtilen arabirim için bağlantı noktası eşlemeye girer buna erişebilir.  
+ Bir bağlantı noktası, belirtilen arabirim için bağlantı noktası eşlemeye girer ona erişilebilir.  
   
 ```
 CONNECTION_POINT_ENTRY(iid)
@@ -65,33 +65,33 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iid`  
- [in] Bağlantı noktası eşlemesi için eklenmekte olan arabirimi GUID. 
+ *IID*  
+ [in] Bağlantı noktası eşlemeye eklenen arabiriminin GUID'si. 
  
- `piid`  
- [in] İşaretçi adde olan arabirimi GUID.   
+ *piid*  
+ [in] GUID adde olan arabirimi işaretçi.   
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından kullanılan bağlantı noktası eşleme girişlerinde [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md). Bağlantı noktası eşlemesi içeren sınıf öğesinden devralmalıdır `IConnectionPointContainerImpl`.  
+ Tarafından kullanılan bağlantı noktası eşleme girişleri [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md). Bağlantı noktası eşlemesi içeren sınıfın devralmalıdır `IConnectionPointContainerImpl`.  
   
- Bağlantı noktası eşlemesi ile başlangıç [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) makrosu, her bağlantı noktalarıyla girişleri eklemek `CONNECTION_POINT_ENTRY` makro ve Haritası tamamlamak [END_CONNECTION_POINT_MAP ](#end_connection_point_map) makrosu.  
+ Bağlantı noktası eşlemesi ile Başlat [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) makrosu, her biri, bağlantı noktaları CONNECTION_POINT_ENTRY makro için girişler ekleyin ve haritayla tamamlamak [END_CONNECTION_ POINT_MAP](#end_connection_point_map) makrosu.  
   
- ATL bağlantı noktaları hakkında daha fazla bilgi için bkz: [bağlantı noktaları](../../atl/atl-connection-points.md).  
+ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı noktaları](../../atl/atl-connection-points.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#120](../../atl/codesnippet/cpp/connection-point-macros_2.h)]  
   
 ##  <a name="end_connection_point_map"></a>  END_CONNECTION_POINT_MAP  
- Bağlantı noktası eşleme girdilerini sonunu işaretler.  
+ Bağlantı noktası eşleme girişleri sonunu işaretler.  
   
 ```
 END_CONNECTION_POINT_MAP()
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağlantı noktası eşlemesi ile başlangıç [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) makrosu, her bağlantı noktalarıyla girişleri eklemek [CONNECTION_POINT_ENTRY](#connection_point_entry) makro ve Haritasıtamamlayın`END_CONNECTION_POINT_MAP` makrosu.  
+ Bağlantı noktası eşlemesi ile Başlat [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) makrosu, her biri ile bağlantı noktaları için girişler ekleyin [CONNECTION_POINT_ENTRY](#connection_point_entry) makro ve END_ haritayla tamamlayın CONNECTION_POINT_MAP makrosu.  
   
- ATL bağlantı noktaları hakkında daha fazla bilgi için bkz: [bağlantı noktaları](../../atl/atl-connection-points.md).  
+ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı noktaları](../../atl/atl-connection-points.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#128](../../atl/codesnippet/cpp/connection-point-macros_3.h)]  

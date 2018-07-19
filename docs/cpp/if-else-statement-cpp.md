@@ -19,18 +19,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8de2511096766cc4852c1c612eccb7dc65713218
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 42174837f0f60f9a4e3ba9f19702210d6d34ccca
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948001"
 ---
 # <a name="if-else-statement-c"></a>if-else Deyimi (C++)
-Koşullu dallanmayı denetler. Deyimlerinde *IF blok* yalnızca yürütülen *if ifadesi* sıfır olmayan bir değer olarak değerlendirilir (veya `true`). Varsa değerini *ifade* sıfır olmayan, olan *statement1* ve diğer ifadeleri blok içinde yürütülür ve başka blok, varsa, atlanır. Varsa değerini *ifade* sıfır sonra IF blok atlanır ve başka blok, varsa, yürütülür. Sıfır olmayan olarak değerlendirmek ifadeler
-- `true`
+Koşullu dallanmayı denetler. Deyimlerinde *If Bloğu* yalnızca yürütülen *IF ifadesi* bir sıfır olmayan bir değer (veya TRUE) değerlendirir. Varsa değerini *ifade* sıfır değilse, *Deyim1* bloğundaki herhangi bir deyim yürütülür ve else-bloğu, varsa atlanır. Varsa değerini *ifade* sıfırsa, ardından If Bloğu atlanır ve else-bloğu, varsa yürütülür. Sıfır olmayan için değerlendirme ifadeler
+- TRUE
 - bir null olmayan işaretçi
-- Tüm sıfır aritmetik değeri veya 
-- bir aritmetik, Boole veya işaretçi anlaşılır bir dönüştürme tanımlayan bir sınıf adı yazın. (Dönüştürme hakkında daha fazla bilgi için bkz: [standart dönüşümler](../cpp/standard-conversions.md).)   
+- sıfır olmayan aritmetik değerdeki, veya 
+- bir aritmetik, mantıksal değer veya işaretçi belirsiz bir dönüştürmesini tanımlayan bir sınıf adı yazın. (Dönüştürmeler hakkında daha fazla bilgi için bkz. [standart dönüştürmeler](../cpp/standard-conversions.md).)   
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -71,8 +72,10 @@ else  // optional
    ...
 } 
 ```  
+
 ## <a name="example"></a>Örnek  
-```  
+
+```cpp  
 // if_else_statement.cpp  
 #include <iostream>
 
@@ -117,8 +120,8 @@ int main()
     }
 }
 ```  
-## <a name="if-statement-with-an-initializer"></a>varsa bir başlatıcı with deyimi
-**Visual Studio 2017 15.3 ve sonraki sürümleri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir **varsa** deyimi bildirir ve adlandırılmış bir değişkenini ifade da içerebilir. Eğer blok kapsamında değişken yalnızca gerektiğinde if deyimi, bu formu kullanın. 
+## <a name="if-statement-with-an-initializer"></a>bir başlatıcı with deyimi
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir **varsa** ifadesi bildirir ve adlandırılmış bir değişken başlatır bir ifade içerebilir. If Bloğu kapsamında değişken yalnızca gerektiğinde bu tür bir IF deyimi kullanın. 
 
 ```cpp
 ## Example  
@@ -166,12 +169,12 @@ int main()
 }
 ```
 
- Tüm formlarda **varsa** deyimi, *ifade*, bir yapı dışındaki herhangi bir değer olan değerlendirildiği, tüm yan etkileri dahil olmak üzere. Denetim geçirir **varsa** program sonraki deyiminde ifadesine sürece birini *deyimi*s içeren bir [sonu](../cpp/break-statement-cpp.md), [Devam](../cpp/continue-statement-cpp.md), veya [goto](../cpp/goto-statement-cpp.md).  
+ İçindeki tüm biçimlerinin **varsa** deyimi *ifade*, bir yapı dışında herhangi bir değer olan değerlendirilir, tüm yan etkileri de dahil olmak üzere. Denetim geçer **varsa** deyimi programdaki sonraki deyime sürece birini *deyimi*s içeren bir [sonu](../cpp/break-statement-cpp.md), [Devam](../cpp/continue-statement-cpp.md), veya [goto](../cpp/goto-statement-cpp.md).  
   
- **Başka** yan tümcesinde bir `if...else` deyimi, en yakın ile ilişkilendirilmiş önceki **varsa** karşılık gelen sahip değil aynı kapsamda deyimi **başka** deyimi.   
+ **Başka** yan tümcesi bir `if...else` deyimi en yakın ilişkili önceki **varsa** deyimi karşılık gelen sahip değil aynı kapsamda **başka** deyimi.   
 
 ## <a name="constexpr-if-statements"></a>constexpr varsa deyimleri
-**Visual Studio 2017 15.3 ve sonraki sürümleri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işlevi şablonlarında kullanabileceğiniz bir **constexpr varsa** olmadan derleme zamanı dallanma kararlar almak için deyimi için birden fazla işlev aşırı yüklemelerinin çözümlemelere zorunda. Örneğin, tek bir işlevi bu tanıtıcıları parametre (hiçbir sıfır parametresi aşırı yüklemesi gerekli değildir) paketi açılırken yazabilirsiniz: 
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işlev şablonlarında kullanabilirsiniz bir `constexpr if` derleme zamanı dallanma birden çok başvurmadan gerek kalmadan kararları vermek için deyimi işlev aşırı yüklemelerinin. Örneğin, tek bir işlev, (hiçbir sıfır parametresi aşırı yüklemesi gerekli değildir) bu tanıtıcıları parametresi açmak yazabilirsiniz: 
 
 ```cpp
 template <class T, class... Rest>
@@ -197,5 +200,5 @@ void f(T&& t, Rest&&... r)
  
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Seçim deyimleri](../cpp/selection-statements-cpp.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [switch Deyimi (C++)](../cpp/switch-statement-cpp.md)

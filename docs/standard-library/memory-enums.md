@@ -1,19 +1,19 @@
 ---
-title: '&lt;bellek&gt; numaralandırmaları | Microsoft Docs'
+title: '&lt;bellek&gt; sabit listeleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - memory/std::pointer_safety
 ms.assetid: b9be0a7b-0beb-40b2-8183-911de371c6b9
-ms.openlocfilehash: 4d33cf941341f26c88f3a73c5a3d9ac0326db545
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9b9ea485bb66292c3c0509036c22dd161a694dd3
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859273"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961428"
 ---
-# <a name="ltmemorygt-enums"></a>&lt;bellek&gt; numaralandırmaları
+# <a name="ltmemorygt-enums"></a>&lt;bellek&gt; sabit listeleri
 
 ||
 |-|
@@ -21,19 +21,19 @@ ms.locfileid: "33859273"
 
 ## <a name="pointer_safety"></a>  pointer_safety numaralandırması
 
-Olası değerler tarafından döndürülen numaralandırma `get_pointer_safety`.
+Olası değerler tarafından döndürülen sabit `get_pointer_safety`.
 
 sınıf pointer_safety {gevşek, tercih edilen, katı};
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapsamlı `enum` tarafından döndürülen değerleri tanımlar `get_pointer_safety()`:
+Kapsamlı **enum** tarafından döndürülen değerleri tanımlar `get_pointer_safety()`:
 
-`relaxed` --güvenli bir biçimde türetilmiş işaretçileri (açıkça bildirilen veya ayrılmış nesnelerine işaretçiler) kabul edilir aynı Bu güvenle türetilmiş.
+`relaxed` --olmayan güvenli bir şekilde türetilen işaretçileri (açıkça bildirilen veya ayrılmış nesnelerine işaretçiler) kabul edilir bu güvenli bir şekilde türetilen olarak aynı.
 
-`preferred` --eskisi, ancak güvenli bir biçimde türetilmiş işaretçileri değil başvuru yapıldı.
+`preferred` --önceden olduğu gibi ancak olmayan güvenli bir şekilde türetilen işaretçileri değil başvurusu.
 
-`strict` --güvenli bir biçimde türetilmiş işaretçileri kabul Bu güvenle türetilmiş farklı bir biçimde.
+`strict` --olmayan güvenli bir şekilde türetilen işaretçileri kabul bu güvenli bir şekilde türetilen değerinden farklı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

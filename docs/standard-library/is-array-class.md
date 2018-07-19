@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64f4594044ce135ed6927f9d0108863cca12845d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9a368b9df930a3a72ba1e43c861663263175699d
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844100"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963096"
 ---
 # <a name="isarray-class"></a>is_array Sınıfı
 
-Testleri dizi türüdür.
+Dizi türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_array;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bir dizi türü, aksi takdirde.
+Karşılaştırmasının bir örneği true tutan türü *Ty* tuttuğu yanlış bir dizi türü, aksi takdirde.
 
 ## <a name="example"></a>Örnek
 

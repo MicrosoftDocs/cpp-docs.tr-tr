@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e1ef431fdba40ef9e8fd46b8c0e5d9cf7b32eda
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 68ca39b459b0d0e60305105986d3e76aa86a5bed
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844009"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961658"
 ---
 # <a name="equalto-struct"></a>equal_to Yapısı
 
-Eşitlik işlemi gerçekleştiren bir ikili karşılaştırma ( `operator==`) bağımsız değişkenlerini üzerinde.
+Eşitlik işlemi gerçekleştiren bir ikili koşula (`operator==`) üzerinde bağımsız değişkenleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,19 +49,19 @@ struct equal_to<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Destekleyen herhangi bir türü bir `operator==` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator==` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Eşitlik işlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* eşitlik işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Eşitlik işlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* eşitlik işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left == Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator==`.
+Sonucu `Left == Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator==`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne türü `Type` eşitlik bakımından karşılaştırılabilir olmalıdır. Bu gerektiren `operator==` üzerinde tanımlı bir eşdeğer ilişkisi matematiksel özelliklerini nesne kümesini karşılar. Yerleşik sayısal ve işaretçi türlerinin tümü bu gereksinimi karşılamak.
+Türündeki nesneler *türü* eşitlik karşılaştırması yapılabilir olmalıdır. Bunu gerektiren `operator==` tanımlanmış nesne kümesini eşdeğerlik ilişkisi matematik özelliklerini karşılar. Tüm yerleşik sayısal ve işaretçi türleri, bu gereksinimi karşılamak.
 
 ## <a name="example"></a>Örnek
 

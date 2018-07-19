@@ -96,19 +96,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9baef962ab3a71e9dd350c3429c5b8f85d3adb9a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b889a0d9be1942d2d381b0c6a85236c94f4e6ebf
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849021"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965477"
 ---
 # <a name="hashmultiset-class"></a>hash_multiset Sınıfı
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Kapsayıcı sınıfı hash_multiset C++ Standart Kitaplığı, bir uzantısıdır ve hızlı alınması bulunan öğeleri değerlerini anahtar değerleri hizmet ve benzersiz olması için gerekli olmayan bir koleksiyon verileri ve depolama için kullanılır.
+Kapsayıcı sınıfı hash_multiset C++ Standart Kitaplığı bir uzantısıdır ve hızlı, içerdiği öğelerin değerlerinin anahtar değerler olarak hizmet veren ve benzersiz olması gerekmez, bir koleksiyondaki verileri alma ve depolama için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -119,11 +119,11 @@ class hash_multiset
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* öğesi veri türü hash_multiset depolanacak.
+*Anahtar* hash_multiset içinde depolanacak öğe veri türü.
 
-`Traits` İki işlev nesneleri içeren, bir sınıfın karşılaştırma türü olan tekli bir koşul eşlemesi anahtar değerleri işaretsiz öğelere, bir karma işlevi ve göreli sıralarına belirlemek için sıralama anahtarları olarak iki öğenin değerleri karşılaştırmak için bir ikili karşılaştırma Tamsayı türünde **size_t**. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare` *< anahtar* **daha az ***\<anahtar >>* varsayılan değerdir.
+*Nitelikler* bir sınıfın iki işlev nesneleri içeren karşılaştırma türü diğer bir deyişle, bir birli koşul eşleştirme anahtar değerlerinin bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları iki öğenin değerlerini karşılaştırmak için bir ikili koşula işaretsiz tam sayı türünde öğelere `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare` *< anahtar* **daha az ***\<anahtarı >>* varsayılan değerdir.
 
-`Allocator` Hash_multiset's ayırma ve bellek ayırmayı kaldırma hakkında ayrıntılar yalıtan saklı ayırıcısı nesneyi temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcısı ***\<anahtar >.*
+*Allocator* hash_multiset'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer: **ayırıcı ***\<Key >.*
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -133,87 +133,87 @@ Hash_multiset aşağıdaki gibidir:
 
 - Çift yönlüdür, çünkü öğelerine erişmek için çift yönlü bir yineleyici sağlar.
 
-- Karma, öğelerin anahtar değerleri için uygulanan bir karma işlevine değere göre demet içine öğeleri gruplandırıldığından.
+- Karma, çünkü öğelerine demet öğelerinin anahtar değerlere uygulanan bir karma işlevi değere göre gruplanmıştır.
 
-- Benzersizdir, çünkü öğelerinin her birinde benzersiz bir anahtar olması gerekir. Hash_multiset da basit bir ilişkilendirilebilir kapsayıcı olduğundan, öğeleri de benzersizdir.
+- Benzersizdir, çünkü öğelerinin her birinde benzersiz bir anahtar olması gerekir. Hash_multiset de basit ilişkilendirilebilir bir kapsayıcı olduğundan, da öğeleri benzersizdir.
 
-- İşlevselliği sağladığından genel ve bu nedenle bağımsız öğeleri veya anahtarları olarak bulunan verileri, belirli türde bir şablon sınıfı. Öğeler ve anahtarlar için kullanılacak veri türleri, karşılaştırma işlevi ve ayırıcı ile birlikte bir sınıf şablonunda parametreler olarak belirtilir.
+- Bir şablon sınıfı, çünkü sağladığı işlevsellik geneldir ve böylece veri öğeler veya anahtarlar olarak kapsanan belirli türdeki bağımsız. Öğeler ve anahtarlar için kullanılacak veri türleri, karşılaştırma işlevi ve ayırıcı ile birlikte bir sınıf şablonunda parametreler olarak belirtilir.
 
-Sıralama üzerinden karma ana avantajı, verimliliği olmasıdır: başarılı karma eklemeler, silmeler gerçekleştirir ve bir süre karşılaştırıldığında sabit ortalama süre sıralamak için kapsayıcısında öğe sayısını logaritmasını orantılı bulur teknikler. Bir kümedeki bir öğenin değeri doğrudan değiştirilemez. Bunun yerine, eski değerleri silmeniz ve yeni değerlere sahip öğeler eklemeniz gerekir.
+Daha fazla verimlilik üzerinde sıralama karma ana avantajı olduğu: başarılı bir karma işlevi ekleme, silme gerçekleştirir ve sabit ortalama süre değiştirmeyen bir süre içinde sıralamak için kapsayıcı öğe sayısı için logaritmasını orantılı bulur teknikleri. Bir kümedeki bir öğenin değeri doğrudan değiştirilemez. Bunun yerine, eski değerleri silmeniz ve yeni değerlere sahip öğeler eklemeniz gerekir.
 
-Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. Karma ilişkilendirilebilir kapsayıcıları, arama, ekleme ve kaldırma işlemleri için en iyi duruma getirilir. Açıkça işlemlerini destekleyen üye işlevleri, bunları ortalama sabit ve kapsayıcı öğe sayısı bağımlı bir süre içinde gerçekleştirdiğiniz bir iyi tasarlanmış karma işlevi ile kullanıldığında verimlidir. İyi tasarlanmış karma işlevi karma değerleri Tekdüzen dağıtımını oluşturur ve çakışma, burada bir çakışma DISTINCT anahtar değerleri aynı karma değer eşlenir ortaya söylenir sayısını en aza indirir. En kötü durumda, en kötü olası karma işlevi ile işlemlerinin sayısı (doğrusal saati) dizisindeki öğelerin sayısı orantılıdır.
+Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. Karma ilişkilendirilebilir kapsayıcılar, arama, ekleme ve kaldırma işlemleri için iyileştirilmiştir. Bu işlemleri açıkça destekleyen üye işlevleri, ortalama sabit ve kapsayıcıdaki öğelerin sayısına bağlı olmayan bir zaman gerçekleştirip bir iyi tasarlanmış bir karma işlevi ile kullanıldığında verimlidir. İyi tasarlanmış bir karma işlevi, Tekdüzen karma bir değerler dağıtımı verir ve burada bir çakışma ortaya çıkar farklı anahtar değerlerini aynı karma değer ile eşlenmiş kabul edilir, çakışmaları sayısını en aza indirir. En kötü durumda, en kötü olası karma işlevi ile işlem sayısı dizideki (doğrusal zaman) öğelerin sayısını orantılıdır.
 
-Hash_multiset değerleri kendi anahtarlarla ilişkilendirme koşullar olduğunda tercih ilişkilendirilebilir kapsayıcı uygulama tarafından karşılayan olmalıdır. Bir hash_multiset öğeleri birden çok ve anahtarları benzersiz olmayan şekilde kendi sıralama anahtarı olarak hizmet olabilir. Bu tür bir yapı modeli, sözcüklerin birden çok defa geçebildiği sıralı bir sözcükler listesindedir. Bir hash_set uygun bir kapsayıcı yapısı olabilirdi sonra sözcükleri birden çok tekrarı, izin değil. Benzersiz tanımları benzersiz anahtar sözcüklerin listesini değerleri olarak bağlıymış bir hash_map bu verileri içerecek şekilde uygun bir yapı olacaktır. Bunun yerine tanımları benzersiz değil, bir hash_multimap tercih kapsayıcı olacaktır.
+Hash_multiset ilişkilendirilebilir kapsayıcı değerleri onların kendi anahtarlarıyla ilişkilendiren koşullar uygulama tarafından karşılandığında olmalıdır. Bir hash_multiset öğelerini birden çok olabilir ve anahtarlar benzersiz olmadıklarından kendi sıralama anahtarları hizmet eder. Bu tür bir yapı modeli, sözcüklerin birden çok defa geçebildiği sıralı bir sözcükler listesindedir. Uygun bir kapsayıcı yapısı bir hash_set olabilirdi sonra sözcüklerin birden çok defa geçmelerine izin yok. Ardından bir hash_map benzersiz tanımlar benzersiz anahtar sözcükler listesine değerler olarak eklendiyse, verileri kapsayacak uygun bir yapı olacaktır. Bunun yerine tanımlar benzersiz değilse, bir hash_multimap kapsayıcı olması.
 
-Hash_multiset denetimleri depolanan karma nitelikler nesne türü çağırarak dizisi siparişleri [value_compare](#value_compare). Üye işlevini çağırarak bu saklı nesne erişilebileceği [key_comp](#key_comp). Bu tür bir işlev nesnesi sınıfın bir nesnesi olarak aynı şekilde davranır gerekir `hash_compare` *< anahtar* **daha az ***\<anahtar >>.* Özellikle, tüm değerler için *anahtar* türü **anahtar**, çağrı **ayırdedici nitelik**( *anahtar*) bir dağıtım türü değerlerinverir**size_t**.
+Hash_multiset türünde bir depolanan karma nitelikler nesnesi çağırarak denetlediği diziyi sıralar [value_compare](#value_compare). Üye işlevini çağırarak depolanan bu nesne erişilebilecek [key_comp](#key_comp). Böyle bir işlev nesnesi aynı sınıfın bir nesnesi olarak davranmalıdır `hash_compare` *< anahtar* **daha az ***\<anahtar >>.* Tüm değerler için özellikle *anahtarı* türü `Key`, çağrı **nitelik**( *anahtarı*) türünde bir değerler dağıtımı verir `size_t`.
 
-Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. İkili karşılaştırma *f*( *x*, *y*) iki bağımsız değişken nesnelere sahip bir işlev nesnesidir x ve y ve true veya false dönüş değeri. İkili karşılaştırma dönüşsüz, ters ve geçişli ve burada iki nesneleri eşdeğer geçişli ise, sıralama katı bir zayıf bir hash_multiset üzerinde uygulanan sıralama olduğu x ve y ne zaman eşdeğer olarak tanımlanan her ikisi de *f* ( *x*, *y*) ve *f*( *y*, *x*) yanlış ise. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
+Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşula *f*( *x*, *y*) iki bağımsız değişken nesnelere sahip bir işlev nesnesi x ve y ve dönüş değeri true veya false. İkili koşul dönüşsüz, ters ve geçişli ve denklik geçişli ise, burada iki nesne sıralama katı zayıf bir hash_multiset üzerinde uygulanan sıralama olduğu x ve y olduğunda denk olarak tanımlanan her ikisi de *f* ( *x*, *y*) ve *f*( *y*, *x*) false. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
-Denetlenen sıradaki öğelerin gerçek sırası karma işlevi, sıralama işlevi ve kapsayıcı nesnesinde depolanan karma tablosu boyutunu bağlıdır. Denetlenen sıradaki öğelerin sırasını genel tahmin edilemez şekilde karma tablo geçerli boyutu saptanamaz. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
+Denetlenen dizideki öğelerin gerçek sırası karma işlevi ve sıralama işlevini geçerli boyutu bir kapsayıcı nesnesinde depolanan karma tablo bağlıdır. Denetlenen dizideki öğelerin sırasını genelde tahmin edemezsiniz için karma tablo geçerli boyutu belirlenemiyor. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
 
-Çift yönlü yineleyici hash_multiset sınıfı tarafından sağlanan yineleyici ancak sınıf üyesi işlevleri eklemek ve hash_multiset sahip olan işlevselliği gereksinimlerini daha fazla en az bir daha zayıf bir giriş yineleyici şablonu parametreleri olarak ele sürümleri Bu çift yönlü yineleyiciler sınıfı tarafından garanti. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Kendi hash_multiset gereksinimlerinin her yineleyici kavramına sahiptir ve bunlarla çalışmak algoritmaları yineleyici türü tarafından sağlanan gereksinimlerini için kendi varsayımlar sınırlamanız gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu işlevlerin en az bir hash_multiset olur, ancak anlamlı yineleyiciler çeşitli hakkında iletişim kurabilmesi için yeterlidir [ `first`, `last`) sınıf üyesi işlevleri bağlamında.
+Hash_multiset sınıfı tarafından sağlanan yineleyici çift yönlüdür, olan ancak sınıf üyesi işlevleri eklemek ve hash_multiset sahip şablon parametresi olarak alan, işlevsellik gereksinimleri daha zayıf bir giriş yineleyici sürümleri Bu tarafından çift yönlü Yineleyicilerin sınıfında garanti edilir. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi hash_multiset gereksinimleri vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu işlevselliğin en az bir hash_multiset ancak Yineleyicilerin aralığı hakkında konuşabilmek için yeterlidir [ `first`, `last`) bağlamında, sınıf üyesi işlevleri.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[hash_multiset](#hash_multiset)|Oluşturan bir `hash_multiset` diğer bir deyişle boş veya diğer bir deyişle tüm kopyasını veya başka bir parçası `hash_multiset`.|
+|[hash_multiset](#hash_multiset)|Oluşturur bir `hash_multiset` boş veya diğer bir deyişle bir kopyasını tüm veya diğer bir kısmının parçası `hash_multiset`.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[allocator_type](#allocator_type)|Temsil eden bir tür `allocator` için sınıf `hash_multiset` nesnesi.|
-|[const_iterator](#const_iterator)|Çift yönlü yineleyici bu can sağlayan bir türü okuma bir `const` öğesinde `hash_multiset`.|
-|[const_pointer](#const_pointer)|Bir işaretçi sağlayan bir türü bir `const` öğesinde bir `hash_multiset`.|
-|[const_reference](#const_reference)|Bir başvuru sağlayan bir türü bir `const` öğesi saklanan bir `hash_multiset` okumak ve gerçekleştirmek için `const` işlemleri.|
-|[const_reverse_iterator](#const_reverse_iterator)|Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma `const` öğesinde `hash_multiset`.|
-|[difference_type](#difference_type)|Aynı içinde öğelerin adres iki yineleyiciler arasındaki farkı sağlayan bir imzalı tamsayı türü `hash_multiset`.|
-|[Yineleyici](#iterator)|Çift yönlü yineleyici sağlayan bir tür okuma veya herhangi bir öğe değiştirme bir `hash_multiset`.|
-|[key_compare](#key_compare)|Göreli içinde iki öğe sırasını belirlemek için iki sıralama anahtarları karşılaştırabilirsiniz bir işlev nesnesi sağlayan bir türü `hash_multiset`.|
-|[key_type](#key_type)|Bir öğe depolanan bir nesne açıklayan türü bir `hash_set` kapasitesi sıralama anahtarı olarak içinde.|
-|[İşaretçi](#pointer)|Bir öğe için bir işaretçi sağlayan bir türü bir `hash_multiset`.|
-|[Başvuru](#reference)|Depolanmış bir öğe için bir başvuru sağlayan bir türü bir `hash_multiset`.|
-|[reverse_iterator](#reverse_iterator)|Çift yönlü yineleyici sağlayan bir tür okuma veya bir öğedeki bir ters değiştirme `hash_multiset`.|
-|[size_type](#size_type)|Öğe sayısı gösterebilir bir işaretsiz tamsayı türü bir `hash_multiset`.|
-|[value_compare](#value_compare)|İki işlev nesneleri, iki öğenin değerleri karşılaştırabilirsiniz sınıfı karşılaştırma, ikili koşulu sağlayan bir türü bir `hash_multiset` göreli belirlemek için sırası ve bir birli öğeleri karmaları koşul.|
-|[value_type](#value_type)|Bir öğe depolanan bir nesne açıklayan türü bir `hash_multiset` kapasitesi değeri olarak içinde.|
+|[allocator_type](#allocator_type)|Temsil eden bir tür `allocator` sınıfının `hash_multiset` nesne.|
+|[const_iterator](#const_iterator)|Çift yönlü bir yineleyici sağlayan tür okuma bir **const** öğesinde `hash_multiset`.|
+|[const_pointer](#const_pointer)|Bir işaretçi sağlayan bir tür bir **const** öğesinde bir `hash_multiset`.|
+|[const_reference](#const_reference)|Bir başvuru sağlayan bir tür bir **const** öğesi içinde depolanan bir `hash_multiset` okumak ve gerçekleştirmek için **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|Çift yönlü bir yineleyici sağlayan tür herhangi okuma **const** öğesinde `hash_multiset`.|
+|[difference_type](#difference_type)|Öğeler aynı adres iki yineleyici arasındaki farkı sağlayan bir işaretli tamsayı tür `hash_multiset`.|
+|[Yineleyici](#iterator)|Çift yönlü bir yineleyici sağlayan bir tür okuyabilen veya değiştirebilen herhangi bir öğenin bir `hash_multiset`.|
+|[key_compare](#key_compare)|İki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran işlev nesnesi sağlayan bir tür `hash_multiset`.|
+|[key_type](#key_type)|Bir öğesi olarak depolanan nesneyi tanımlayan bir tür bir `hash_set` sıralama anahtarı olarak kapasitesi dahilinde.|
+|[İşaretçi](#pointer)|İçindeki bir öğeye işaretçi sağlayan bir tür bir `hash_multiset`.|
+|[Başvuru](#reference)|İçinde depolanan öğeye başvuru sağlayan bir tür bir `hash_multiset`.|
+|[reverse_iterator](#reverse_iterator)|Çift yönlü bir yineleyici sağlayan bir tür okuyabilen veya değiştirebilen ters döndürülmüş bir öğe `hash_multiset`.|
+|[size_type](#size_type)|İçindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü bir `hash_multiset`.|
+|[value_compare](#value_compare)|İkili koşulu, iki öğenin değerlerini karşılaştırabilen sınıfı karşılaştırma, iki işlev nesnesi sağlayan bir tür bir `hash_multiset` göreli belirlemek için sıralama ve bir birli öğeleri karma koşulu.|
+|[value_type](#value_type)|Bir öğesi olarak depolanan nesneyi tanımlayan bir tür bir `hash_multiset` bir değer olarak kapasitesi dahilinde.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Başlangıç](#begin)|İlk öğe adresleri yineleyici döndürür `hash_multiset`.|
-|[cbegin](#cbegin)|İlk öğe adresleme const yineleyici döndürür `hash_multiset`.|
-|[cend](#cend)|Son öğesi başarılı konumu adresleri const bir yineleyici döndüren bir `hash_multiset`.|
-|[Temizle](#clear)|Tüm öğeleri sildiği bir `hash_multiset`.|
-|[Sayısı](#count)|Öğelerin sayısını döndürür bir `hash_multiset` parametresi belirtilen bir anahtarı olan anahtar eşleşir|
-|[crbegin](#crbegin)|İlk öğe bir ters adresleme const yineleyici döndürür `hash_multiset`.|
-|[crend](#crend)|Son öğesi bir ters başarılı konumu adresleri const bir yineleyici döndürür `hash_multiset`.|
-|[emplace](#emplace)|Yerinde oluşturulan bir öğe ekler bir `hash_multiset`.|
-|[emplace_hint](#emplace_hint)|Yerinde oluşturulan bir öğe ekler bir `hash_multiset`, yerleştirme İpucu ile.|
-|[boş](#empty)|Testleri bir `hash_multiset` boş.|
-|[Bitiş](#end)|Son öğesi başarılı konumu adresleri yineleyici döndüren bir `hash_multiset`.|
-|[equal_range](#equal_range)|Yineleyiciler çifti sırasıyla ilk öğe döndürür bir `hash_multiset` ilk öğe için ve belirtilen anahtar daha büyük bir anahtarla `hash_multiset` eşit veya bundan büyük anahtarı bir anahtara sahip.|
-|[silme](#erase)|Bir öğenin veya bir dizi öğeleri kaldırır bir `hash_multiset` belirtilen konumları veya belirtilen anahtar eşleşen kaldırır öğeleri.|
-|[Bul](#find)|Bir öğedeki konumunu adresleme yineleyici döndüren bir `hash_multiset` , belirtilen anahtar için eşdeğer bir anahtara sahip.|
+|[başlayın](#begin)|İçindeki ilk öğeyi adresleyen bir yineleyici döndüren `hash_multiset`.|
+|[cbegin](#cbegin)|İçindeki ilk öğeyi adresleyerek bir const yineleyici döndürür `hash_multiset`.|
+|[cend](#cend)|İçindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndüren bir `hash_multiset`.|
+|[Temizle](#clear)|Tüm öğelerini siler bir `hash_multiset`.|
+|[Sayısı](#count)|İçindeki öğelerin sayısını döndüren bir `hash_multiset` anahtarı parametre tarafından belirtilen bir anahtarla eşleşen|
+|[crbegin](#crbegin)|Ters çevrilen içindeki ilk öğeyi adresleyerek bir const yineleyici döndürür `hash_multiset`.|
+|[crend](#crend)|Ters çevrilen içindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndürür `hash_multiset`.|
+|[emplace](#emplace)|İçine yerinde oluşturulmuş bir öğe ekler bir `hash_multiset`.|
+|[emplace_hint](#emplace_hint)|İçine yerinde oluşturulmuş bir öğe ekler bir `hash_multiset`, bir yerleşim ipucuyla birlikte.|
+|[boş](#empty)|Testleri bir `hash_multiset` boştur.|
+|[Son](#end)|İçindeki son öğeyi takip eden konumu ele alan bir yineleyici döndüren bir `hash_multiset`.|
+|[equal_range](#equal_range)|Yineleyicilerin bir çiftini, sırasıyla içindeki ilk öğeye döndürür bir `hash_multiset` içindeki ilk öğeye ve belirtilen anahtardan daha büyük bir anahtarla `hash_multiset` anahtardan daha büyük veya ona eşit bir anahtara sahip.|
+|[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `hash_multiset` belirtilen konumları veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
+|[Bul](#find)|İçindeki bir öğenin konumunu ele alan bir yineleyici döndüren bir `hash_multiset` belirtilen anahtara denk bir anahtara sahip.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `hash_multiset`.|
-|[Ekle](#insert)|Bir öğenin veya bir dizi elemanlara ekler bir `hash_multiset`.|
-|[key_comp](#key_compare)|Sipariş anahtarlarında kullanılacak karşılaştırma nesnesinin bir kopyasını alır bir `hash_multiset`.|
-|[lower_bound](#lower_bound)|Yineleyici ilk öğe döndürür bir `hash_multiset` eşit veya bundan büyük belirtilen anahtar bir anahtara sahip.|
-|[max_size](#max_size)|En büyük uzunluğunu döndürür `hash_multiset`.|
-|[rbegin](#rbegin)|İlk öğe bir ters adresleme yineleyici döndürür `hash_multiset`.|
-|[rend](#rend)|Son öğesi bir ters başarılı konumu adresleri yineleyici döndürür `hash_multiset`.|
-|[Boyutu](#size)|Öğelerin sayısını döndürür `hash_multiset`.|
-|[Değiştirme](#swap)|İki öğelerini alış verişleri `hash_multiset`s.|
-|[upper_bound](#upper_bound)|Yineleyici ilk öğe döndürür bir `hash_multiset` eşit veya belirtilen anahtar daha büyük bir anahtar ile.|
-|[value_comp](#value_comp)|Karma ve öğe anahtarı değerleri sıralamak için kullanılan karma nitelikler nesnesinin bir kopyasını alır bir `hash_multiset`.|
+|[Ekle](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `hash_multiset`.|
+|[key_comp](#key_compare)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `hash_multiset`.|
+|[lower_bound](#lower_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_multiset` belirtilen anahtardan daha büyük veya ona eşit bir anahtara sahip.|
+|[max_size](#max_size)|Öğesinin maksimum uzunluğunu döndürür `hash_multiset`.|
+|[rbegin](#rbegin)|Ters çevrilen içindeki ilk öğeyi adresleyen bir yineleyici döndürür `hash_multiset`.|
+|[rend](#rend)|Ters çevrilen içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `hash_multiset`.|
+|[Boyutu](#size)|İçindeki öğelerin sayısını döndürür `hash_multiset`.|
+|[değiştirme](#swap)|İki öğeleri birbiriyle değiştirir `hash_multiset`s.|
+|[upper_bound](#upper_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_multiset` belirtilen anahtardan daha büyük veya ona eşit bir anahtarla.|
+|[value_comp](#value_comp)|Karma ve anahtar değerlerini öğesini sıralamak için kullanılan karma özellikleri nesnesinin bir kopyasını alır bir `hash_multiset`.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[hash_multiset::operator =](#op_eq)|Hash_multiset öğelerini başka bir hash_multiset bir kopyası ile değiştirir.|
+|[hash_multiset::operator =](#op_eq)|Hash_multiset öğelerini başka bir hash_multiset kopyasıyla değiştirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -226,7 +226,7 @@ Denetlenen sıradaki öğelerin gerçek sırası karma işlevi, sıralama işlev
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Allocator sınıfı hash_multiset nesnesinin temsil eden tür.
+Hash_multiset nesne için ayırıcı sınıf temsil eden tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::allocator_type allocator_type;
@@ -234,14 +234,14 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [get_allocator](#get_allocator) bir örnek kullanmak için `allocator_type`
+Örneğin bakın [get_allocator](#get_allocator) bir örnek için `allocator_type`
 
 ## <a name="begin"></a>  hash_multiset::Begin
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset ilk öğe adresleri yineleyici döndürür.
+Hash_multiset içindeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
 ```cpp
 const_iterator begin() const;
@@ -251,11 +251,11 @@ iterator begin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multiset ya da boş bir hash_multiset başarılı konumu ilk öğe adresleme çift yönlü yineleyici.
+Hash_multiset veya sonra gelen konumu adresleyen bir boş hash_multiset içindeki ilk öğeyi ele alan bir çift yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa dönüş değerini **başlamak** atanmış bir `const_iterator`, hash_multiset nesnesindeki öğelerin değiştirilemez. Varsa dönüş değerini **başlamak** atanmış bir **yineleyici**, hash_multiset nesnesindeki öğelerin değiştirilebilir.
+Varsa dönüş değeri `begin` atanan bir `const_iterator`, hash_multiset nesnedeki öğelerin değiştirilemez. Varsa dönüş değeri `begin` atanan bir `iterator`, hash_multiset nesnedeki öğelerin değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -302,7 +302,7 @@ The first element of hms1 is now 2
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset ilk öğe adresleri const bir yineleyici döndürür.
+Hash_multiset ilk öğeyi adresleyen bir const yineleyici döndürür.
 
 ```cpp
 const_iterator cbegin() const;
@@ -310,7 +310,7 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk öğe adresleme const bir çift yönlü yineleyici [hash_multiset](../standard-library/hash-multiset-class.md) ya da boş bir başarılı konumu `hash_multiset`.
+İçindeki ilk öğeyi ele alan sabit bir çift yönlü yineleyici [hash_multiset](../standard-library/hash-multiset-class.md) veya sonra gelen konumu adresleyen bir boş `hash_multiset`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -349,7 +349,7 @@ The first element of hs1 is 1
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir hash_multiset son öğesi başarılı konumu adresleri const bir yineleyici döndürür.
+Bir hash_multiset içindeki son öğeden sonra gelen konumu ele alan bir sabit yineleyici döndürür.
 
 ```cpp
 const_iterator cend() const;
@@ -357,11 +357,11 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Son öğesi başarılı konumu adresleri const bir çift yönlü yineleyici bir [hash_multiset](../standard-library/hash-multiset-class.md). Varsa `hash_multiset` boş olduğundan `hash_multiset::cend == hash_multiset::begin`.
+İçindeki son öğeyi takip eden konumu ele alan sabit bir çift yönlü yineleyici bir [hash_multiset](../standard-library/hash-multiset-class.md). Varsa `hash_multiset` boşsa `hash_multiset::cend == hash_multiset::begin`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend` Yineleyici sonuna ulaştı olup olmadığını sınamak için kullanılan kendi `hash_multiset`. Tarafından döndürülen değer `cend` değil başvuru yapıldı.
+`cend` sonuna bir yineleyici olup olmadığını test etmek için kullanılan kendi `hash_multiset`. Tarafından döndürülen değer `cend` kaldırılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -397,7 +397,7 @@ The last element of hs1 is 3
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir hash_multiset tüm öğeleri siler.
+Bir hash_multiset tüm öğelerini siler.
 
 ```cpp
 void clear();
@@ -441,7 +441,7 @@ The size of the hash_multiset after clearing is 0.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Çift yönlü yineleyici bu can sağlayan bir türü okuma bir **const** hash_multiset öğesinde.
+Çift yönlü bir yineleyici sağlayan tür okuma bir **const** hash_multiset öğesinde.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_iterator const_iterator;
@@ -453,14 +453,14 @@ Bir tür `const_iterator` bir öğenin değerini değiştirmek için kullanılam
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [başlamak](#begin) kullanarak bir örnek için `const_iterator`.
+Örneğin bakın [başlamak](#begin) bir örnek için `const_iterator`.
 
 ## <a name="const_pointer"></a>  hash_multiset::const_pointer
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir işaretçi sağlayan bir türü bir **const** bir hash_multiset öğesinde.
+Bir işaretçi sağlayan bir tür bir **const** bir hash_multiset öğesinde.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_pointer const_pointer;
@@ -470,14 +470,14 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
 
 Bir tür `const_pointer` bir öğenin değerini değiştirmek için kullanılamaz.
 
-Çoğu durumda, bir [const_iterator](#const_iterator) öğeleri erişmek üzere kullanılması bir **const** hash_multiset nesnesi.
+Çoğu durumda bir [const_iterator](#const_iterator) öğelere erişmek için kullanılması gereken bir **const** hash_multiset nesne.
 
 ## <a name="const_reference"></a>  hash_multiset::const_reference
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir başvuru sağlayan bir türü bir **const** okumak ve gerçekleştirmek için bir hash_multiset depolanan öğesi **const** işlemleri.
+Bir başvuru sağlayan bir tür bir **const** okumak ve gerçekleştirmek için bir hash_multiset içinde depolanan öğenin **const** operations.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
@@ -524,7 +524,7 @@ The first element in the hash_multiset is 10.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma **const** hash_multiset öğesinde.
+Çift yönlü bir yineleyici sağlayan tür herhangi okuma **const** hash_multiset öğesinde.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse_iterator const_reverse_iterator;
@@ -532,18 +532,18 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_reverse_iterator` bir öğenin değerini değiştiremez ve kullanın ters hash_multiset yinelemek için.
+Bir tür `const_reverse_iterator` kullanın tersten hash_multiset yinelemek için ve bir öğenin değerini değiştiremezsiniz.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.
+Örneğin bakın [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.
 
 ## <a name="count"></a>  hash_multiset::Count
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Parametresi belirtilen bir anahtarı olan anahtarla eşleşen bir hash_multiset öğe sayısını döndürür.
+Anahtarı parametre tarafından belirtilen bir anahtarla eşleşen bir hash_multiset öğelerin sayısını döndürür.
 
 ```cpp
 size_type count(const Key& key) const;
@@ -551,21 +551,21 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Öğeleri hash_multiset eşleştirilmesi için anahtar.
+*anahtar* hash_multiset eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multiset parametresi belirtilen anahtara sahip öğe sayısı.
+Hash_multiset parametre tarafından belirtilen anahtara sahip öğeleri sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi aşağıdaki aralıkta öğe sayısını döndürür:
+Üye işlevi, şu aralıktaki öğelerin sayısını döndürür:
 
 [ `lower_bound` (_ `Key` ), `upper_bound` (\_ `Key` ) ).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek hash_multiset::count üye fonksiyonu kullanımını göstermektedir.
+Aşağıdaki örnek, hash_multiset::count üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_multiset_count.cpp
@@ -605,7 +605,7 @@ The number of elements in hms1 with a sort key of 2 is: 0.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Ters hash_multiset ilk öğe adresleme const yineleyici döndürür.
+Ters çevrilen hash_multiset içindeki ilk öğeyi adresleyerek bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crbegin() const;
@@ -613,7 +613,7 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir const ters ilk öğe bir ters adresleme çift yönlü yineleyici [hash_multiset](../standard-library/hash-multiset-class.md) veya ne son öğesi unreversed olsaydı adresleme `hash_multiset`.
+Ters çevrilen bir ilk öğeyi ele alan çift yönlü yineleyici bir const [hash_multiset](../standard-library/hash-multiset-class.md) veya ne ters çevrilmeyen içindeki son öğeyi adresleyen `hash_multiset`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -657,7 +657,7 @@ The first element in the reversed hash_multiset is 30.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Ters hash_multiset son öğesi başarılı konumu adresleri const bir yineleyici döndürür.
+Ters çevrilen hash_multiset içindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crend() const;
@@ -665,7 +665,7 @@ const_reverse_iterator crend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir const ters son öğesi bir ters başarılı konumu adresleri çift yönlü yineleyici [hash_multiset](../standard-library/hash-multiset-class.md) (ilk öğe unreversed öncesinde konumu `hash_multiset`).
+Ters çevrilen bir içindeki son öğeden sonra gelen konumu ele çift yönlü yineleyici bir const [hash_multiset](../standard-library/hash-multiset-class.md) (ilk öğeyi çevrilmeyen önce gelen konum `hash_multiset`).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -673,7 +673,7 @@ Bir const ters son öğesi bir ters başarılı konumu adresleri çift yönlü y
 
 Dönüş değeri ile `crend`, `hash_multiset` nesnesi değiştirilemez.
 
-`crend` Ters yineleyici kendi hash_multiset sonuna olup ulaştı için test etmek için kullanılabilir.
+`crend` olup ters yineleyici kendi hash_multiset sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -710,7 +710,7 @@ The last element in the reversed hash_multiset is 10.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Aynı hash_multiset içinde öğelerin adres iki yineleyiciler arasındaki farkı sağlayan imzalı tamsayı türü.
+Aynı hash_multiset içindeki öğelere yönelik iki yineleyici arasındaki farkı sağlayan bir işaretli tamsayı türü.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::difference_type difference_type;
@@ -718,9 +718,9 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::di
 
 ### <a name="remarks"></a>Açıklamalar
 
-`difference_type` Türü çıkarılmasıyla veya kapsayıcı yineleyiciler artırma döndürülür. `difference_type` Genellikle aralığında öğe sayısını temsil etmek için kullanılan [ `first`, `last`) yineleyiciler arasında `first` ve `last`, gösterdiği öğesi içerir `first` ve öğeleri kadar aralığı , ancak değil de dahil olmak üzere, gösterdiği öğesi `last`.
+`difference_type` Türü çıkarma veya kapsayıcının yineleyiciler artan döndürülür. `difference_type` Genellikle aralık içindeki öğelerin sayısını temsil etmek için kullanılan [ `first`, `last`) yineleyici arasındaki `first` ve `last`, işaret ettiği öğe içerir `first` ve en fazla öğe aralığı , ancak dahil değil tarafından işaret edilen öğeyi `last`.
 
-Ancak unutmayın `difference_type` kümesi gibi ters çevrilebilir kapsayıcıları tarafından desteklenen çift yönlü yineleyiciler sınıfı içeren bir giriş yineleyici gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir. Çıkarma yineleyiciler arasında yalnızca bir rastgele erişim kapsayıcı vektör veya deque gibi tarafından sağlanan rasgele erişim yineleyiciler tarafından desteklenir.
+Ancak dikkat `difference_type` kümesi gibi ters çevrilebilir kapsayıcıları tarafından desteklenen çift yönlü Yineleyicilerin sınıfında içeren bir giriş yineleyici gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir. Yineleyici arasındaki çıkarma, yalnızca bir rastgele erişim kapsayıcı vektör veya deque gibi tarafından sağlanan rasgele erişim yineleyicileri tarafından desteklenir.
 
 ### <a name="example"></a>Örnek
 
@@ -790,7 +790,7 @@ The number of elements in the hash_multiset hms1 is 3.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset yerinde oluşturulan bir öğe ekler.
+Bir hash_multiset yerinde oluşturulmuş bir öğe ekler.
 
 ```cpp
 template <class ValTy>
@@ -801,11 +801,11 @@ iterator insert(ValTy&& val);
 
 |Parametre|Açıklama|
 |-|-|
-|`val`|İçine Eklenecek öğenin değerini [hash_multiset](../standard-library/hash-multiset-class.md) sürece `hash_multiset` o öğeye veya daha genel anahtar eşdeğer sıralanmış bir öğe zaten içeriyor.|
+|*VAL*|İçine eklenecek bir öğenin değerini [hash_multiset](../standard-library/hash-multiset-class.md) sürece `hash_multiset` o öğe veya daha genel anahtarı sıralı eşdeğer bir öğe zaten içeriyor.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`emplace` Üye işlevi yeni öğe eklenir burada konumuna işaret eden bir yineleyici döndürür.
+`emplace` Üye işlevi, yeni bir öğe eklenir burada konumu gösteren bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -840,7 +840,7 @@ After the emplace insertion, hms3 contains a.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Yerleştirme İpucu ile bir hash_multiset içine yerinde oluşturulan bir öğe ekler.
+Bir yerleşim ipucuyla birlikte bir hash_multiset içine yerinde oluşturulmuş bir öğe ekler.
 
 ```cpp
 template <class ValTy>
@@ -853,16 +853,16 @@ iterator insert(
 
 |Parametre|Açıklama|
 |-|-|
-|`val`|İçine Eklenecek öğenin değerini [hash_multiset](../standard-library/hash-multiset-class.md) sürece `hash_multiset` o öğeye veya daha genel anahtar eşdeğer sıralanmış bir öğe zaten içeriyor.|
-|`_Where`|Ekleme için doğru noktası aramaya başlamak için koyun. (Ekleme gerçekleşebilir Logaritmik zaman yerine amortized sabit zaman ekleme noktasını hemen izleyen `_Where`.)|
+|*VAL*|İçine eklenecek bir öğenin değerini [hash_multiset](../standard-library/hash-multiset-class.md) sürece `hash_multiset` o öğe veya daha genel anahtarı sıralı eşdeğer bir öğe zaten içeriyor.|
+|*_Where*|Doğru ekleme noktasını için aramaya başlamak için bir yerde. (Ekleme oluşabilir Logaritmik süre yerine amorti edilmiş sabit zaman noktasını hemen izliyorsa *_Where*.)|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[Hash_multiset::emplace](#emplace) üye işlevinin döndürdüğü burada yeni öğe eklenir içine konumuna işaret eden bir yineleyici `hash_multiset`.
+[Hash_multiset::emplace](#emplace) üye işlevi burada yeni bir öğe eklenir içine konumu gösteren bir yineleyici döndürür `hash_multiset`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekleme gerçekleşebilir Logaritmik zaman yerine amortized sabit zaman ekleme noktasını hemen izleyen `_Where`.
+Ekleme oluşabilir Logaritmik süre yerine amorti edilmiş sabit zaman noktasını hemen izliyorsa *_Where*.
 
 ### <a name="example"></a>Örnek
 
@@ -895,7 +895,7 @@ After the emplace insertion, hms1 contains a.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir hash_multiset boşsa, testleri.
+Bir hash_multiset boş olup olmadığını sınar.
 
 ```cpp
 bool empty() const;
@@ -903,7 +903,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_multiset boşsa; **false** hash_multiset boş olmayan ise.
+**doğru** hash_multiset boşsa; **false** hash_multiset boş ise.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -944,7 +944,7 @@ The hash_multiset hms2 is empty.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir hash_multiset son öğesi başarılı konumu adresleri yineleyici döndürür.
+Bir hash_multiset içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.
 
 ```cpp
 const_iterator end() const;
@@ -954,11 +954,11 @@ iterator end();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir hash_multiset son öğesi başarılı konumu adresleri çift yönlü yineleyici. Hash_multiset boş, hash_multiset::end ise hash_multiset::begin ==.
+Bir hash_multiset içindeki son öğeden sonra gelen konumu ele çift yönlü bir yineleyici. Hash_multiset boş sonra hash_multiset::end ise hash_multiset::begin ==.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Son** yineleyici kendi hash_multiset sonuna ulaştı olup olmadığını test etmek için kullanılır. Tarafından döndürülen değer **son** değil başvuru yapıldı.
+`end` bir yineleyicinin kendi hash_multiset sonuna ulaştı olup olmadığını sınamak için kullanılır. Tarafından döndürülen değer `end` kaldırılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1007,7 +1007,7 @@ The last element of hms1 is now 2
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Yineleyiciler çifti sırasıyla hash_multiset belirtilen anahtar daha büyük bir anahtarla ilk öğe ve eşit veya bundan büyük anahtarı bir anahtarla hash_multiset ilk öğe döndürür.
+Yineleyicilerin bir çiftini, sırasıyla belirtilen anahtardan daha büyük bir anahtarla bir hash_multiset içindeki ilk öğeye ve anahtardan büyük veya ona eşit bir anahtarla hash_multiset içindeki ilk öğeye döndürür.
 
 ```cpp
 pair <const_iterator, const_iterator> equal_range (const Key& key) const;
@@ -1017,13 +1017,13 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Aranmakta hash_multiset öğeden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk olduğu yineleyiciler çifti [lower_bound](#lower_bound) anahtarı ve ikincisi [upper_bound](#upper_bound) anahtarı.
+İlk olduğu Yineleyicilerin bir çiftini [lower_bound](#lower_bound) , anahtar ve ikinci [upper_bound](#upper_bound) anahtarı.
 
-İlk yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İlk** ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **İlk**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci** ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).
+Bir çiftin ilk yineleyicisi erişmeye `pr` üye işlevi tarafından döndürülen, kullanın `pr`. **İlk** ve alt sınır yineleyicinin başvuru kaldırma için \*( `pr`. **İlk**). Bir çiftin ikinci yineleyicisi erişmeye `pr` üye işlevi tarafından döndürülen, kullanın `pr`. **İkinci** ve üst sınır yineleyicinin başvuru kaldırma için \*( `pr`. **İkinci**).
 
 ### <a name="example"></a>Örnek
 
@@ -1093,7 +1093,7 @@ The hash_multiset hms1 doesn't have an element with a key less than 40.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir öğenin veya bir dizi öğeleri hash_multiset belirtilen konumlardan kaldırır veya belirtilen anahtar eşleşen öğeleri kaldırır.
+Bir öğenin veya öğelerin aralığını belirtilen konumlardan bir hash_multiset kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
 ```cpp
 iterator erase(iterator _Where);
@@ -1105,25 +1105,25 @@ size_type erase(const key_type& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Where` Hash_multiset kaldırılacak öğe konumu.
+*_Where* hash_multiset kaldırılacak öğenin konumu.
 
-`first` İlk öğenin konumunu hash_multiset kaldırıldı.
+*İlk* ilk öğenin konumunu hash_multiset kaldırıldı.
 
-`last` Yalnızca son öğenin ötesinde konumu hash_multiset kaldırıldı.
+*Son* konumu yalnızca son öğeden sonra hash_multiset kaldırıldı.
 
-`key` Hash_multiset kaldırılacak öğe anahtarı.
+*anahtar* hash_multiset kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki üye işlevleri için çift yönlü Yineleyici, böyle bir öğe varsa, kaldırılan öğelerin ya da bir işaretçi hash_multiset sonuna dışında kalan ilk öğe belirler. Üçüncü üye fonksiyonu için hash_multiset kaldırılan öğelerin sayısı.
+İlk iki üye işlevleri için çift yönlü bir yineleyici, böyle bir öğe varsa, kaldırılan tüm öğelerin veya işaretçi hash_multiset sonuna dışında kalan ilk öğeyi belirtir. Üçüncü üye işlevi için hash_multiset kaldırılan öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri hiçbir zaman bir özel durum.
+Üye işlevleri, hiçbir zaman bir özel durum.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek hash_multiset::erase üye fonksiyonu kullanımını göstermektedir.
+Aşağıdaki örnek, hash_multiset::erase üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_multiset_erase.cpp
@@ -1212,7 +1212,7 @@ After another element with a key equal to that of the 2nd element
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Belirtilen anahtar için eşdeğer bir anahtara sahip bir hash_multiset bir öğedeki konumunu adresleme yineleyici döndürür.
+Belirtilen anahtara denk bir anahtara sahip bir hash_multiset içindeki bir öğenin konumunu ele alan bir yineleyici döndürür.
 
 ```cpp
 iterator find(const Key& key);
@@ -1222,17 +1222,17 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Aranmakta hash_multiset öğeden sıralama anahtarı tarafından eşleştirilmesini bağımsız değişkeni anahtarı.
+*anahtar* Aranan hash_multiset bir öğeyi sıralama anahtarı tarafından eşleştirilecek bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) belirtilen anahtar için eşdeğer bir öğe konumu adresleri veya eşleşme yoksa hash_multiset son öğesi başarılı konumu adresleri için anahtar bulunamadı.
+Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) , belirtilen anahtara denk bir öğenin konumu ele alan veya eşleşme olması durumunda hash_multiset içindeki son öğeyi takip eden konumu ele anahtarı bulundu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi olan sıralama anahtarı hash_multiset bir öğedeki adresleri yineleyici döndürür **eşdeğer** bağımsız değişkeni üzerinde daha az bir sıralama uygulanmasını ikili bir koşul altında anahtar temel-comparability ilişkisi daha.
+Üye işlevi olan sıralama anahtarı hash_multiset bir öğeyi adresleyen bir yineleyici döndürür `equivalent` bağımsız değişkeni üzerinde daha az bir sıralama sevk eden ikili bir koşul altında anahtar temel-comparability ilişkisi daha.
 
-Varsa dönüş değerini **Bul** atanmış bir `const_iterator`, hash_multiset nesnesi değiştirilemez. Varsa dönüş değerini **Bul** atanmış bir **yineleyici**, hash_multiset nesne değiştirilebilir.
+Varsa dönüş değerinin `find` atanan bir `const_iterator`, hash_multiset nesnesi değiştirilemez. Varsa dönüş değerinin `find` atanan bir `iterator`, hash_multiset nesnesi değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1289,7 +1289,7 @@ The element of hms1 with a key matching that of the last element is: 30.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset oluşturmak için kullanılan ayırıcısı nesnesinin bir kopyasını döndürür.
+Hash_multiset oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
 ```cpp
 Allocator get_allocator() const;
@@ -1297,13 +1297,13 @@ Allocator get_allocator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multiset tarafından sınıfının şablon parametresi bellek yönetmek için kullanılan ayırıcısı `Allocator`.
+Hash_multiset tarafından sınıfın şablon parametresi, bellek, yönetmek için kullanılan ayırıcı `Allocator`.
 
 Daha fazla bilgi için `Allocator`, Açıklamalar bölümüne bakın [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Allocators hash_multiset sınıfı için sınıf depolama nasıl yönettiğini belirtin. C++ Standart Kitaplığı kapsayıcı sınıfları ile sağlanan varsayılan allocators çoğu programlama ihtiyaçları için yeterli. Yazma ve kendi allocator sınıfı kullanarak ileri düzeyde C++ bir konudur.
+Hash_multiset sınıfı için ayırıcılar sınıfı depolama nasıl yönettiğini belirtin. C++ Standart Kitaplığı kapsayıcı sınıfları ile sağlanan varsayılan ayırıcılar çoğu programlama ihtiyaçları için yeterli. Yazma ve kendi allocator sınıfı kullanarak bir Gelişmiş C++ konudur.
 
 ### <a name="example"></a>Örnek
 
@@ -1365,7 +1365,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Oluşturan bir `hash_multiset` diğer bir deyişle boş veya diğer bir deyişle tüm kopyasını veya başka bir parçası `hash_multiset`.
+Oluşturur bir `hash_multiset` boş veya diğer bir deyişle bir kopyasını tüm veya diğer bir kısmının parçası `hash_multiset`.
 
 ```cpp
 hash_multiset();
@@ -1413,37 +1413,37 @@ hash_multiset(
 
 |Parametre|Açıklama|
 |-|-|
-|`Al`|Bunun için kullanılacak depolama allocator sınıfı `hash_multiset` varsayılan olarak nesne `Allocator`.|
-|`Comp`|Türü karşılaştırma işlevinden `const Traits` öğeleri sıralamak için kullanılan `hash_multiset`, varsayılan olarak `hash_compare`.|
-|`Right`|`hash_multiset` Biri oluşturulan `hash_multiset` kopyasını olacak.|
-|`First`|Kopyalanacak öğe aralığını ilk öğe konumu.|
-|`Last`|Kopyalanacak öğeleri aralık ötesinde ilk öğe konumu.|
-|`IList`|Kopyalanacak öğeleri içeren initializer_list.|
+|*Al*|Bunun için kullanılacak depolama ayırıcı sınıf `hash_multiset` varsayılan olarak nesne `Allocator`.|
+|*Comp*|Karşılaştırma işlevi türü `const Traits` öğeleri sıralamak için kullanılan `hash_multiset`, bunun varsayılan `hash_compare`.|
+|*Sağ*|`hash_multiset` Biri oluşturulmuş `hash_multiset` bir kopyası olacak.|
+|*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
+|*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
+|*IList*|Kopyalanacak öğe içeren initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular depolamak için bellek depolama yönetir ayırıcısı nesne türünü `hash_multiset` ve, daha sonra döndürülüp döndürülmediğini çağırarak [hash_multiset::get_allocator](#get_allocator). Allocator parametresi, sınıf bildirimleri ve diğer allocators yerine kullanılacak önişlem makroları genellikle atlanır.
+Tüm oluşturucular bir tür için bellek depolama yöneten ayırıcı nesnesini depolar `hash_multiset` ve, daha sonra döndürülmesi çağırarak [hash_multiset::get_allocator](#get_allocator). Allocator parametresi, sınıf bildirimleri ve diğer ayırıcılar yerine kullanılan ön işleme makroları genellikle atlanır.
 
-Tüm oluşturucular kendi hash_multisets başlatır.
+Tüm oluşturucular kendi hash_multisets başlatın.
 
-İşlev nesnesi türündeki tüm oluşturucular depolamak `Traits` bir sipariş anahtarlar oluşturmak için kullanılan `hash_multiset` ve, daha sonra döndürülüp döndürülmediğini çağırarak [hash_multiset::key_comp](#key_comp). Daha fazla bilgi için `Traits` bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
+Tüm oluşturucular türünün işlev nesnesini depolamak `Traits` anahtarları arasında bir sıralamayı oluşturmak için kullanılan `hash_multiset` ve, daha sonra döndürülmesi çağırarak [hash_multiset::key_comp](#key_comp). Daha fazla bilgi için `Traits` bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
 
-Boş bir başlangıç ilk üç oluşturucular belirleyin `hash_multiset`, ikinci karşılaştırma işlev türünü belirtme ( `Comp`) öğeleri ve üçüncü sırasını açıkça oluşturmada kullanılacak ayırıcı belirtme yazın ( `Al`) kullanılacak. Anahtar sözcüğü `explicit` otomatik tür dönüştürme belirli türdeki gizler.
+İlk üç Oluşturucu boş bir ilk belirtin `hash_multiset`, ikinci karşılaştırma işlevinin türü belirtme (*kompozisyonu*) öğeleri ve üçüncü açıkça belirtilmesi sırasını oluşturmada kullanılacak ayırıcı türünü (*Al*) kullanılacak. Anahtar sözcüğü **açık** otomatik tür dönüştürme belirli türdeki bastırır.
 
-Dördüncü Oluşturucusu taşır `hash_multiset` `Right`.
+Dördüncü Oluşturucu taşır `hash_multiset` `Right`.
 
-Beşinci, altıncı ve yedinci oluşturucular bir initializer_list kullanın.
+Beşinci, altıncı ve yedinci oluşturucular bir initializer_list kullanır.
 
-Aralığın son üç oluşturucuları kopyalama [ `First`, `Last`), bir `hash_multiset` karşılaştırma işlevinden sınıfının Karşılaştır ve ayırıcısı türünü belirleyen içinde explicitness artan.
+Son üç oluşturucular aralığını kopyalamaktadır [ `First`, `Last`), bir `hash_multiset` sınıf karşılaştırma ve ayırıcı karşılaştırma işlevinin türü belirtilirken explicitness artan.
 
-Gerçek bir karma kümesi kapsayıcıda öğelerin sırasını sıralama işlevi ve karma tablo boyutunu karma işlevi üzerinde bağlıdır ve sıralama işlevi tarafından belirlendiği kümesi kapsayıcısı ile verebilir gibi genel olarak, tahmin edilemez tek başına.
+Bir karma kümesi kapsayıcıdaki öğelerin gerçek sırası karma tablo geçerli boyutu ve sıralama işlevini karma işleve bağlı olarak değişir ve sıralama işlevi tarafından belirlendiği kümesi kapsayıcısı ile verebilir gibi genel olarak, tahmin edilemez tek başına.
 
 ## <a name="insert"></a>  hash_multiset::insert
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir öğenin veya bir dizi öğeleri hash_multiset ekler.
+Bir öğenin veya öğelerin aralığını bir hash_multiset ekler.
 
 ```cpp
 iterator insert(
@@ -1482,30 +1482,30 @@ iterator insert(
 
 |Parametre|Açıklama|
 |-|-|
-|`Val`|Hash_multiset, öğenin veya daha genel anahtar eşdeğer sıralanmış bir öğe zaten var. sürece hash_multiset Eklenecek öğenin değeri.|
-|`Where`|Ekleme için doğru noktası aramaya başlamak için koyun. (Ekleme gerçekleşebilir Logaritmik zaman yerine amortized sabit zaman ekleme noktasını hemen izleyen `_Where`.)|
-|`First`|Hash_multiset kopyalanacak ilk öğe konumu.|
-|`Last`|Hash_multiset kopyalanmasını yalnızca son öğenin ötesinde konumu.|
-|`IList`|Kopyalanacak öğe içeren initializer_list.|
+|*VAL*|Hash_multiset o öğe veya daha fazla genel anahtarı eşdeğer sıralı bir öğe zaten içermiyorsa hash_multiset eklenecek bir öğenin değeri.|
+|*Burada*|Doğru ekleme noktasını için aramaya başlamak için bir yerde. (Ekleme oluşabilir Logaritmik süre yerine amorti edilmiş sabit zaman noktasını hemen izliyorsa `_Where`.)|
+|*ilk*|Bir hash_multiset kopyalanacak ilk öğenin konumu.|
+|*Son*|Yalnızca bir hash_multiset kopyalanacak son öğenin ötesinde konumu.|
+|*IList*|Kopyalanacak öğe içeren initializer_list.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki Ekle üye işlevleri burada yeni öğe eklendi konumuna işaret eden bir yineleyici döndür.
+İlk iki INSERT üye işlevleri, yeni bir öğe nereye yerleştirildiğini konumu gösteren bir yineleyici döndürür.
 
-Sonraki üç üye işlevleri bir initializer_list kullanın.
+Sonraki üç üye işlevleri bir initializer_list kullanır.
 
-Üçüncü üye işlevi bir dizi öğesi değerlerini yineleyici aralığında tarafından ele her öğesine karşılık gelen bir hash_multiset ekler [ `First`, `Last`), belirtilen hash_multiset.
+Üçüncü üye işlevi bir hash_multiset aralığında bir yineleyici tarafından ele alınan her öğe için karşılık gelen öğe değerleri dizisi ekler [ `First`, `Last`), belirtilen hash_multiset.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekleme gerçekleşebilir Logaritmik zaman yerine INSERT ipucu sürümü amortized sabit zamanında ekleme noktasını hemen izleyen `Where`.
+Ekleme oluşabilir Logaritmik süre yerine INSERT ipucu sürümü için amorti edilmiş sabit zaman noktasını hemen izliyorsa *nerede*.
 
 ## <a name="iterator"></a>  hash_multiset::iterator
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Okuma veya herhangi bir hash_multiset öğesinde değiştirmek için bir çift yönlü yineleyici sağlayan türü.
+Okuyabilen veya değiştirebilen herhangi bir öğenin bir hash_multiset çift yönlü yineleyiciler sağlayan tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::iterator iterator;
@@ -1513,18 +1513,18 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür **yineleyici** bir öğenin değerini değiştirmek için kullanılabilir.
+Bir tür `iterator` bir öğenin değerini değiştirmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için **yineleyici**.
+Örneğin bakın [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için `iterator`.
 
 ## <a name="key_comp"></a>  hash_multiset::key_comp
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir hash_multiset sipariş anahtarlarında kullanılacak karşılaştırma nesnesinin bir kopyasını alır.
+Bir hash_multiset içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
 ```cpp
 key_compare key_comp() const;
@@ -1532,19 +1532,19 @@ key_compare key_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multiset şablon parametresi döndürür `Traits`, karma ve kapsayıcı öğeleri sıralamak için kullanılan işlev nesneleri içerir.
+Hash_multiset şablon parametresi döndürür *nitelikler*, karma ve kapsayıcının öğelerine sıralamak için kullanılan işlev nesneleri içerir.
 
-Daha fazla bilgi için `Traits` bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
+Daha fazla bilgi için *nitelikler* bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Saklanan nesne üye işlevi tanımlar:
+Depolanan nesne üyesi işlevini tanımlar:
 
 **bool işleci**( **const anahtar &** *_xVal,* **const anahtar &** _ `yVal`);
 
-döndüren **true** varsa `_xVal` önündeki ve eşit değil `_yVal` sıralama düzeninde.
+döndüren **true** varsa `_xVal` önündeki ve eşit değildir `_yVal` sıralama düzeninde.
 
-Unutmayın her ikisi de [key_compare](#key_compare) ve [value_compare](#value_compare) şablon parametresi için eş anlamlı sözcükleri olan **nitelikler**. Her iki tür hash_multiset ve hash_multiset sınıfları, burada ayrı hash_map ve hash_multimap sınıfları ile uyumluluk için aynı oldukları için sağlanır.
+Unutmayın hem [key_compare](#key_compare) ve [value_compare](#value_compare) şablon parametresi için eş anlamlı sözcükler olan *nitelikler*. Hash_multiset ve farklı olduğu hash_map ve hash_multimap sınıfları ile uyumluluk için aynı oldukları hash_multiset sınıfları için iki türü de sağlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -1600,7 +1600,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-İki işlev nesneleri sağlayan bir türü göreli sıralarına belirlemek için bir hash_multiset iki öğenin değerleri karşılaştırabilirsiniz sınıfı karşılaştırma, ikili bir koşul ve öğeleri karmaları birli koşul.
+İki işlev nesnesi sağlayan bir tür bir ikili koşul, bir hash_multiset kendi göreli sıralarını belirlemek için iki öğenin değerlerini karşılaştırabilen sınıfı karşılaştırma ve öğeleri karma birli koşulu.
 
 ```cpp
 typedef Traits key_compare;
@@ -1608,22 +1608,22 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-**key_compare** şablon parametresi için bir eş anlamlı olduğundan `Traits`.
+`key_compare` Şablon parametresi için bir eşanlamlı olduğu *nitelikler*.
 
-Daha fazla bilgi için `Traits` bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
+Daha fazla bilgi için *nitelikler* bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
 
-Unutmayın her ikisi de `key_compare` ve value_compare şablon parametresi için eş anlamlı sözcükleri **nitelikler**. Her iki tür ayrı nerede hash_map ve hash_multimap sınıfları ile uyumluluk için aynı oldukları hash_set ve hash_multiset sınıfları için sağlanır.
+Unutmayın hem `key_compare` ve value_compare şablon parametresi için eş anlamlı sözcükler *nitelikler*. Her iki ayrı oldukları hash_map ve hash_multimap sınıfları ile uyumluluk için aynı oldukları hash_set ve hash_multiset sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.
+Örneğin bakın [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.
 
 ## <a name="key_type"></a>  hash_multiset::key_type
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-İşlev nesnesi sağlayan bir türü göreli hash_multiset içinde iki öğe sırasını belirlemek için sıralama anahtarları karşılaştırabilirsiniz.
+Hash_multiset içindeki iki öğenin göreli sırasını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür.
 
 ```cpp
 typedef Key key_type;
@@ -1631,22 +1631,22 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-**key_type** şablon parametresi için bir eş anlamlı olduğundan `Key`.
+`key_type` Şablon parametresi için bir eşanlamlı olduğu *anahtar*.
 
-Unutmayın her ikisi de `key_type` ve [value_type](../standard-library/hash-set-class.md#value_type) şablon parametresi için eş anlamlı sözcükleri olan **anahtar**. Her iki tür kümesi ve burada ayrı multimap sınıfların ve eşleme ile uyumluluk için aynı oldukları çok kümeli sınıfları için sağlanır.
+Unutmayın hem `key_type` ve [value_type](../standard-library/hash-set-class.md#value_type) şablon parametresi için eş anlamlı sözcükler olan *anahtar*. Her iki tür kümesi ve farklı olduğu multimap sınıfları ve eşleme ile uyumluluk için aynı oldukları multiset sınıfları için sağlanır.
 
-Daha fazla bilgi için `Key`, Açıklamalar bölümüne bakın [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
+Daha fazla bilgi için *anahtarı*, Açıklamalar bölümüne bakın [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.
+Örneğin bakın [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.
 
 ## <a name="lower_bound"></a>  hash_multiset::lower_bound
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Yineleyici eşit veya bundan büyük belirtilen anahtar bir anahtarı olan bir hash_multiset ilk öğe döndürür.
+Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla bir hash_multiset içindeki ilk öğeye döndürür.
 
 ```cpp
 const_iterator lower_bound(const Key& key) const;
@@ -1656,11 +1656,11 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Aranmakta hash_multiset öğeden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) eşit veya bundan büyük bağımsız değişkeni anahtar veya konum başarılı adresleri bir anahtarla bir hash_multiset ilk öğe konumu adresleri anahtar için bir eşleşme varsa hash_multiset son öğesi.
+Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) bağımsız değişken anahtardan daha büyük veya ona eşit olan veya konumu adresleyen adresleri bir anahtarla bir hash_multiset ilk öğenin konumu adresleri anahtar için bir eşleşme varsa hash_multiset içerisindeki son öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1712,7 +1712,7 @@ int main() {
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset en büyük uzunluğunu döndürür.
+Hash_multiset maksimum uzunluğunu döndürür.
 
 ```cpp
 size_type max_size() const;
@@ -1720,7 +1720,7 @@ size_type max_size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multiset en fazla olası uzunluğu.
+Hash_multiset maksimum olası uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1750,7 +1750,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset öğelerini başka bir hash_multiset bir kopyası ile değiştirir.
+Hash_multiset öğelerini başka bir hash_multiset kopyasıyla değiştirir.
 
 ```cpp
 hash_multiset& operator=(const hash_multiset& right);
@@ -1762,11 +1762,11 @@ hash_multiset& operator=(hash_multiset&& right);
 
 |Parametre|Açıklama|
 |-|-|
-|`right`|[Hash_multiset](../standard-library/hash-multiset-class.md) içine kopyalanmasını `hash_multiset`.|
+|*sağ*|[Hash_multiset](../standard-library/hash-multiset-class.md) içine kopyalanan `hash_multiset`.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Var olan öğeleri silindikten sonra bir `hash_multiset`, `operator=` kopyalar ya da içeriğini taşır `right` içine `hash_multiset`.
+Var olan tüm öğeleri silme sonra bir `hash_multiset`, `operator=` kopyalar veya içeriğini hareket *doğru* içine `hash_multiset`.
 
 ### <a name="example"></a>Örnek
 
@@ -1811,7 +1811,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir hash_multiset bir öğe için bir işaretçi sağlayan türü.
+Hash_multiset bir öğeye işaretçi sağlayan bir tür.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::pointer pointer;
@@ -1819,16 +1819,16 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::po
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür **işaretçi** bir öğenin değerini değiştirmek için kullanılabilir.
+Bir tür `pointer` bir öğenin değerini değiştirmek için kullanılabilir.
 
-Çoğu durumda, bir [yineleyici](#iterator) çok kümeli nesnesindeki öğelerin erişmek için kullanılmalıdır.
+Çoğu durumda bir [yineleyici](#iterator) multiset nesnesindeki öğelere erişmek için kullanılmalıdır.
 
 ## <a name="rbegin"></a>  hash_multiset::rbegin
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Yineleyici ters hash_multiset ilk öğe adresleme döndürür.
+Ters çevrilen hash_multiset içindeki ilk öğeyi ele alan bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rbegin() const;
@@ -1838,15 +1838,15 @@ reverse_iterator rbegin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters hash_multiset ilk öğe adresleme veya ne adresleme ters çift yönlü yineleyici unreversed hash_multiset son öğesi eklenmiştir.
+Ters çevrilen hash_multiset ilk öğeyi ele alan veya ne ters çevrilmeyen hash_multiset içindeki son öğeyi adresleyen ters iki yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin` Ters hash_multiset ile kullanılan gibi [başlamak](#begin) hash_multiset ile kullanılır.
+`rbegin` ters çevrilen bir hash_multiset ile kullanılan gibi [başlamak](#begin) bir hash_multiset ile kullanılır.
 
-Varsa dönüş değerini `rbegin` atanmış bir `const_reverse_iterator`, sonra da hash_multiset nesnesi değiştirilemez. Varsa dönüş değerini `rbegin` atandığı bir `reverse_iterator`, sonra hash_multiset nesne değiştirilebilir.
+Varsa dönüş değeri `rbegin` atanan bir `const_reverse_iterator`, sonra da hash_multiset nesnesi değiştirilemez. Varsa dönüş değeri `rbegin` atanan bir `reverse_iterator`, ardından hash_multiset nesnesi değiştirilebilir.
 
-`rbegin` hash_multiset geriye doğru yinelemek için kullanılabilir.
+`rbegin` bir hash_multiset geriye doğru gezinmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1911,7 +1911,7 @@ After the erasure, the first element in the reversed hash_multiset is 20.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset içinde depolanan bir öğe için bir başvuru sağlar türü.
+Bir hash_multiset içinde depolanan öğeye başvuru sağlayan bir tür.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
@@ -1961,7 +1961,7 @@ The first element in the hash_multiset is now 15.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Ters hash_multiset son öğesi başarılı konumu adresleri yineleyici döndürür.
+Ters çevrilen hash_multiset içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rend() const;
@@ -1971,15 +1971,15 @@ reverse_iterator rend();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters hash_multiset (ilk öğe unreversed hash_multiset öncesinde konum) son öğesi başarılı konumu adresleri ters çift yönlü yineleyici.
+Ters çevrilen bir hash_multiset (ters çevrilmeyen hash_multiset ilk öğeyi önce gelen konum) içindeki son öğeden sonra gelen konumu ele ters iki yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend` Ters hash_multiset ile kullanılan gibi [son](#end) hash_multiset ile kullanılır.
+`rend` ters çevrilen bir hash_multiset ile kullanılan gibi [son](#end) bir hash_multiset ile kullanılır.
 
-Varsa dönüş değerini `rend` atanmış bir `const_reverse_iterator`, sonra da hash_multiset nesnesi değiştirilemez. Varsa dönüş değerini `rend` atandığı bir `reverse_iterator`, sonra hash_multiset nesne değiştirilebilir. Tarafından döndürülen değer `rend` değil başvuru yapıldı.
+Varsa dönüş değeri `rend` atanan bir `const_reverse_iterator`, sonra da hash_multiset nesnesi değiştirilemez. Varsa dönüş değeri `rend` atanan bir `reverse_iterator`, ardından hash_multiset nesnesi değiştirilebilir. Tarafından döndürülen değer `rend` kaldırılmamalıdır.
 
-`rend` Ters yineleyici kendi hash_multiset sonuna olup ulaştı için test etmek için kullanılabilir.
+`rend` olup ters yineleyici kendi hash_multiset sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2047,7 +2047,7 @@ After the erasure, the last element in the reversed hash_multiset is 20.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Okuma veya ters hash_multiset bir öğedeki değiştirmek için bir çift yönlü yineleyici sağlayan türü.
+Okuyabilen veya değiştirebilen bir ters hash_multiset içindeki bir öğeyi çift yönlü yineleyiciler sağlayan tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::reverse_iterator reverse_iterator;
@@ -2055,18 +2055,18 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `reverse_iterator` kullanın ters hash_multiset yinelemek için.
+Bir tür `reverse_iterator` kullanın tersten hash_multiset yinelemek için.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.
+Örneğin bakın [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.
 
 ## <a name="size"></a>  hash_multiset::size
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset öğe sayısını döndürür.
+Hash_multiset öğelerin sayısını döndürür.
 
 ```cpp
 size_type size() const;
@@ -2113,7 +2113,7 @@ The hash_multiset length is now 2.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir hash_multiset öğe sayısı gösterebilir bir işaretsiz tamsayı türü.
+Bir hash_multiset içindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
@@ -2123,14 +2123,14 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği `size_type`
+Örneğin bakın [boyutu](#size) bildirme ve kullanma örneği `size_type`
 
 ## <a name="swap"></a>  hash_multiset::Swap
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-İki hash_multisets öğelerini değiş tokuş eder.
+İki hash_multisets öğelerini birbiriyle değiştirir.
 
 ```cpp
 void swap(hash_multiset& right);
@@ -2138,11 +2138,11 @@ void swap(hash_multiset& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Bağımsız değişken hash_multiset öğeleri ile hedef hash_multiset takas için sağlama.
+*doğru* hedef hash_multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_multiset.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini hiçbir başvuruları, işaretçileri veya öğeleri arasında alınıp verilen iki hash_multisets öğelerinde tanımladığınız yineleyiciler geçersiz kılar.
+Üye işlev hiçbir başvurular, işaretçiler veya öğeleri değiştirilen iki hash_multisets öğelerinde belirlemek yineleyicileri geçersiz kılar.
 
 ### <a name="example"></a>Örnek
 
@@ -2203,7 +2203,7 @@ After swapping with hms3, list hms1 is: 300.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Belirtilen anahtar daha büyük bir anahtara sahip bir hash_multiset ilk öğe yineleyici döndürür.
+Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtarla bir hash_multiset içindeki ilk öğeye döndürür.
 
 ```cpp
 const_iterator upper_bound(const Key& key) const;
@@ -2213,11 +2213,11 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Aranmakta hash_multiset öğeden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) bağımsız değişkeni anahtarından daha büyük bir anahtarla bir hash_multiset ilk öğe konumu adresleri ya da son öğesi başarılı konumu adresleri hash_multiset anahtar için bir eşleşme.
+Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) bağımsız değişken anahtardan daha büyük bir anahtarla bir hash_multiset ilk öğenin konumu adresleri veya içindeki son öğeyi takip eden konumu ele hash_multiset anahtar için bir eşleşme.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2281,7 +2281,7 @@ that of the initial element of hms1 is: 20.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Bir hash_multiset sipariş öğesi değerleri için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
+Bir hash_multiset içindeki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
 ```cpp
 value_compare value_comp() const;
@@ -2289,19 +2289,19 @@ value_compare value_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multiset şablon parametresi döndürür `Traits`, karma ve kapsayıcının sipariş öğeleri için kullanılan işlev nesneleri içerir.
+Hash_multiset şablon parametresi döndürür *nitelikler*, karma ve kapsayıcının sırası öğeleri için kullanılan işlev nesneleri içerir.
 
-Daha fazla bilgi için `Traits` bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
+Daha fazla bilgi için *nitelikler* bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Saklanan nesne üye işlevi tanımlar:
+Depolanan nesne üyesi işlevini tanımlar:
 
 **bool işleci**( **constKey &**`_xVal`, **const anahtar &** *_yVal*);
 
-döndüren **true** varsa `_xVal` önündeki ve eşit değil `_yVal` sıralama düzeninde.
+döndüren **true** varsa `_xVal` önündeki ve eşit değildir `_yVal` sıralama düzeninde.
 
-Unutmayın her ikisi de [key_compare](#key_compare) ve [value_compare](#value_compare) şablon parametresi için eş anlamlı sözcükleri olan **nitelikler**. Her iki tür hash_multiset ve hash_multiset sınıfları, burada ayrı hash_map ve hash_multimap sınıfları ile uyumluluk için aynı oldukları için sağlanır.
+Unutmayın hem [key_compare](#key_compare) ve [value_compare](#value_compare) şablon parametresi için eş anlamlı sözcükler olan *nitelikler*. Hash_multiset ve farklı olduğu hash_map ve hash_multimap sınıfları ile uyumluluk için aynı oldukları hash_multiset sınıfları için iki türü de sağlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -2362,7 +2362,7 @@ vc2( 2,3 ) returns value of false, where vc2 is the function object of hms2.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-İki işlev nesneleri sağlayan bir türü göreli sıralarına belirlemek için bir hash_multiset iki öğenin değerleri karşılaştırabilirsiniz sınıfı karşılaştırma, ikili bir koşul ve öğeleri karmaları birli koşul.
+İki işlev nesnesi sağlayan bir tür bir ikili koşul, bir hash_multiset kendi göreli sıralarını belirlemek için iki öğenin değerlerini karşılaştırabilen sınıfı karşılaştırma ve öğeleri karma birli koşulu.
 
 ```cpp
 typedef key_compare value_compare;
@@ -2370,22 +2370,22 @@ typedef key_compare value_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-**value_compare** şablon parametresi için bir eş anlamlı olduğundan `Traits`.
+`value_compare` Şablon parametresi için bir eşanlamlı olduğu *nitelikler*.
 
-Daha fazla bilgi için `Traits` bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
+Daha fazla bilgi için *nitelikler* bkz [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konu.
 
-Unutmayın her ikisi de [key_compare](#key_compare) ve **value_compare** şablon parametresi için eş anlamlı sözcükleri olan **nitelikler**. Her iki tür sınıfları harita ve burada ayrı multimap ile uyumluluk için aynı oldukları, multiset ve sınıfları kümesi için sağlanır.
+Unutmayın hem [key_compare](#key_compare) ve `value_compare` şablon parametresi için eş anlamlı sözcükler olan *nitelikler*. Multimap, farklı olduğu ve eşleme sınıfları ile uyumluluk için aynı olan, multiset ve sınıfları kümesi için her iki türü de sağlanır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [value_comp](#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.
+Örneğin bakın [value_comp](#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.
 
 ## <a name="value_type"></a>  hash_multiset::value_type
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Hash_multiset kapasitesi değer olarak, bir öğe olarak saklanan bir nesneyi tanımlayan bir türü.
+Öğe bir değer olarak kapasitesi dahilinde bir hash_multiset şeklinde depolanan nesneyi tanımlayan tür.
 
 ```cpp
 typedef Key value_type;

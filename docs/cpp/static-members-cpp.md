@@ -1,5 +1,5 @@
 ---
-title: Statik üyeler (C++) | Microsoft Docs
+title: Statik üyeleri (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -23,17 +23,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca75d2e54c951e20de842b984f8619dc6639dc00
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a9cfa2dd47f14053da9ef0b9620c9ce0dc05c5da
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421077"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941986"
 ---
 # <a name="static-members-c"></a>Statik Üyeler [C++]
-Sınıfları, statik üye verilerini ve üye işlevleri içerebilir. Ne zaman veri üyesi bildirilen olarak **statik**, verilerin yalnızca bir kopyasını sınıfın tüm nesneleri için saklanır.
+Sınıflar, statik üye verileri ve üye işlevleri içerebilir. Ne zaman veri üyesi olarak bildirilen **statik**, sınıfın tüm nesneleri için verileri yalnızca bir kopyası saklanır.
   
- Statik veri üyeleri verilen sınıf türü nesneleri parçası değildir. Sonuç olarak, bir statik veri üyesi bildirimi bir tanımını dikkate alınmaz. Veri üyesi sınıfı kapsamda bildirilmiş ancak tanım dosyası kapsamda gerçekleştirilir. Bu statik üyeleri dış bağlantı vardır. Aşağıdaki örnekte bu gösterilmektedir:  
+ Statik veri üyeleri, belirli bir sınıf türü nesneleri bir parçası değildir. Sonuç olarak, bir statik veri üyesi bildirimi bir tanım dikkate alınmaz. Veri üyesi, sınıf kapsamında bildirilen, ancak tanımı dosya kapsamında gerçekleştirilir. Bu statik üyeleri dış bağlantısı vardır. Aşağıdaki örnek bunu göstermektedir:  
   
 ```cpp  
 // static_data_members.cpp  
@@ -64,15 +64,15 @@ int main()
 }  
 ```  
   
- Önceki kodda, üye `bytecount` sınıfında tanımlanan `BufferedOutput`, ancak sınıf bildiriminin dışında tanımlanmış olması gerekir.  
+ Önceki kodda, üye `bytecount` sınıfta bildirilen `BufferedOutput`, ancak sınıf bildirimi dışında tanımlanmış olması gerekir.  
   
- Statik veri üyeleri için bir sınıf türü nesneye başvuran olmadan belirtilebilir. Kullanılarak yazılan bayt sayısı `BufferedOutput` nesneleri gibi edinilebilir:  
+ Statik veri üyeleri, sınıf türünden bir nesneye başvuruda bulunmadan bulunulabilir. Kullanılarak yazılan bayt sayısı `BufferedOutput` nesneleri gibi edinilebilir:  
   
 ```cpp  
 long nBytes = BufferedOutput::bytecount;  
 ```  
   
- Statik üye bulunmasını sınıf türü herhangi bir nesne var olduğundan gerekli değildir. Statik üyeler da erişilebilir üye seçimi kullanarak (**.** ve **->**) işleçler. Örneğin:  
+ Statik üye var sınıf türünün herhangi bir nesne bulunduğunu gerekli değildir. Statik üyeleri de erişilebilir kullanarak üye seçimi (**.** ve **->**) işleçleri. Örneğin:  
   
 ```cpp  
 BufferedOutput Console;  
@@ -80,11 +80,11 @@ BufferedOutput Console;
 long nBytes = Console.bytecount;  
 ```  
   
- Önceki durumda, nesne başvurusunu (`Console`) değerlendirilmez; statik nesnesinin döndürülen değer olan `bytecount`.  
+ Yukarıdaki durumda, bir nesneye başvuru (`Console`) değerlendirilmez; döndürülen değer statik nesne olan `bytecount`.  
   
- Statik veri üyeleri için özel erişim yalnızca sınıf üyesi işlevleri ve arkadaş izin statik veri üyeleri sınıf üyesi erişim tabi, kurallardır. Bu kurallar açıklanan [üye erişim denetimi](../cpp/member-access-control-cpp.md). Bu statik veri üyeleri dosya kapsamı bunların erişim kısıtlamaları bağımsız olarak tanımlanmalıdır istisnadır. Açıkça başlatılması için veri üyesi ise, bir başlatıcı tanımıyla sağlanmalıdır.  
+ Statik veri üyeleri sınıf üyesine erişim kurallarına tabidir olduğundan statik veri üyeleri için özel erişim yalnızca sınıf üyesi işlevleri ve arkadaş için izin verilir. Bu kurallar, şurada açıklanan [üye erişim denetimi](../cpp/member-access-control-cpp.md). Bu statik veri üyeleri kendi erişim kısıtlamaları bağımsız olarak dosya kapsamı tanımlanmalıdır istisnadır. Açıkça başlatılması için veri üyesi ise, bir başlatıcı tanımıyla sağlanmalıdır.  
   
- Statik üye türü sınıfı adıyla yeterli değil. Bu nedenle, türü `BufferedOutput::bytecount` olan `long`.  
+ Statik bir üyenin türü ve sınıf adıyla yeterli değil. Bu nedenle, türü `BufferedOutput::bytecount` olduğu **uzun**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

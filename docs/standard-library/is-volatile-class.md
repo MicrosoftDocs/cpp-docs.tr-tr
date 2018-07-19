@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cda5485fee6ae0d8a7de8c9212e7e27c76f430ae
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d8e3ec18d00c50db29c6a08956d4c3375a4dc7ae
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33905373"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962390"
 ---
 # <a name="isvolatile-class"></a>is_volatile Sınıfı
 
-Volatile türündeyse testleri.
+Volatile türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_volatile;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa true türü koşulu örneğini tutan `Ty` olan `volatile-qualified`.
+Karşılaştırmasının bir örneği true tutan *Ty* olduğu `volatile-qualified`.
 
 ## <a name="example"></a>Örnek
 

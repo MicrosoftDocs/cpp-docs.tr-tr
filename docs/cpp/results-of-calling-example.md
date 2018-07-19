@@ -18,35 +18,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cc5d5f96b5ffabd5397f26b6ff1372232fe0cd6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0e7b022925e22f021a2ddad1b3b9ef52924b25a3
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421425"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939113"
 ---
 # <a name="results-of-calling-example"></a>Çağırma Örneği Sonuçları
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
   
 ## <a name="cdecl"></a>__cdecl  
- C düzenlenmiş işlevi adıdır "_MyFunc."  
+ "_MyFunc." C düzenlenmiş işlev adıdır  
   
- ![Cdecl arama kuralı](../cpp/media/vc37i01.gif "vc37I01")  
-__Cdecl çağırma  
+ ![Çağırma kuralı CDECL](../cpp/media/vc37i01.gif "vc37I01")  
+__Cdecl çağırma kuralı  
   
 ## <a name="stdcall-and-thiscall"></a>__stdcall ve thiscall  
- C donatılmış adı (`__stdcall`) olan "_MyFunc@20." Özel donatılmış C++ adıdır.  
+ C ile düzenlenmiş adı (**__stdcall**) olan "_MyFunc@20." C++ ile düzenlenmiş adın özel.  
   
  ![&#95;&#95;stdcall ve thiscall çağırma kuralları](../cpp/media/vc37i02.gif "vc37I02")  
 __Stdcall ve thiscall çağırma kuralları  
   
 ## <a name="fastcall"></a>__fastcall  
- C donatılmış adı (`__fastcall`) olan "@MyFunc@20." Özel donatılmış C++ adıdır.  
+ C ile düzenlenmiş adı (**__fastcall**) olan "@MyFunc@20." C++ ile düzenlenmiş adın özel.  
   
  ![Çağırma kuralı için &#95; &#95;fastcall](../cpp/media/vc37i03.gif "vc37I03")  
-__Fastcall çağırma  
+__Fastcall çağırma kuralı  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çağırma Örneği: İşlev Prototipi ve Çağrı](../cpp/calling-example-function-prototype-and-call.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Regex&gt; işleçleri | Microsoft Docs'
+title: '&lt;Regex&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,24 +14,24 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
-ms.openlocfilehash: 73469182938a51d89a9ca9777f5481824e54dbeb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ccabc523ed502a3841cb9299ea2ccd2115115743
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862620"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961548"
 ---
 # <a name="ltregexgt-operators"></a>&lt;Regex&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;&lt;](#op_lt_lt)|[işleci&lt;=](#op_lt_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;&lt;](#op_lt_lt)|[İşleci&lt;=](#op_lt_eq)|
 |[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Eşit değildir karşılaştırma çeşitli nesneleri için.
+Eşit değildir karşılaştırma için çeşitli nesneleri.
 
 ```cpp
 template <class BidIt>
@@ -70,19 +70,19 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-`BidIt` Yineleyici türü.
+*BidIt* yineleyici türü.
 
-`IOtraits` String nitelikler sınıfı.
+*IOtraits* dize nitelikler sınıfı.
 
-`Alloc` Allocator sınıfı.
+*Ayırma* ayırıcı sınıf.
 
-`left` Karşılaştırılacak sol nesne.
+*Sol* sol Karşılaştırılacak nesne.
 
-`right` Karşılaştırılacak doğru nesne.
+*doğru* Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci döndürür `!(left == right)`.
+Her şablon işlecini verir `!(left == right)`.
 
 ### <a name="example"></a>Örnek
 
@@ -144,7 +144,7 @@ sub != "aab" == true
 sub != 'a' == true
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
 Karşılaştırma için çeşitli nesneleri küçüktür.
 
@@ -181,19 +181,19 @@ bool operator<(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-`BidIt` Yineleyici türü.
+*BidIt* yineleyici türü.
 
-`IOtraits` String nitelikler sınıfı.
+*IOtraits* dize nitelikler sınıfı.
 
-`Alloc` Allocator sınıfı.
+*Ayırma* ayırıcı sınıf.
 
-`left` Karşılaştırılacak sol nesne.
+*Sol* sol Karşılaştırılacak nesne.
 
-`right` Karşılaştırılacak doğru nesne.
+*doğru* Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci değişkenlerinin bir dize türüne dönüştürür ve döndürür true ise dönüştürülmüş değeri `left` karşılaştırır dönüştürülmüş değeri'den `right`.
+Her şablon işlecini bağımsız bir dize türüne dönüştürür ve döndürür true ise dönüştürülmüş değeri *sol* karşılaştırır dönüştürülmüş değeri değerinden *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -250,9 +250,9 @@ sub < "aab" == true
 sub < 'a' == false
 ```
 
-## <a name="op_lt_lt"></a>  işleci&lt;&lt;
+## <a name="op_lt_lt"></a>  İşleci&lt;&lt;
 
-Bir sub_match bir akışı ekler.
+Bir akışa bir sub_match ekler.
 
 ```cpp
 template <class Elem, class IOtraits, class Alloc, class BidIt>
@@ -262,21 +262,21 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 
 ### <a name="parameters"></a>Parametreler
 
-`Elem` Öğe türü.
+*Elem* öğe türü.
 
-`IOtraits` String nitelikler sınıfı.
+*IOtraits* dize nitelikler sınıfı.
 
-`Alloc` Allocator sınıfı.
+*Ayırma* ayırıcı sınıf.
 
-`BidIt` Yineleyici türü.
+*BidIt* yineleyici türü.
 
-`os` Çıkış akışı.
+*işletim sistemi* çıkış akışı.
 
-`right` Eklenecek nesne.
+*doğru* eklenecek nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işleci döndürür `os << right.str()`.
+Şablon işlecini verir `os << right.str()`.
 
 ### <a name="example"></a>Örnek
 
@@ -305,9 +305,9 @@ int main()
 whole match: caaa
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Küçüktür veya eşittir karşılaştırma çeşitli nesneleri için.
+Küçüktür veya eşittir çeşitli nesneleri karşılaştırma.
 
 ```cpp
 template <class BidIt>
@@ -342,19 +342,19 @@ bool operator<=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-`BidIt` Yineleyici türü.
+*BidIt* yineleyici türü.
 
-`IOtraits` String nitelikler sınıfı.
+*IOtraits* dize nitelikler sınıfı.
 
-`Alloc` Allocator sınıfı.
+*Ayırma* ayırıcı sınıf.
 
-`left` Karşılaştırılacak sol nesne.
+*Sol* sol Karşılaştırılacak nesne.
 
-`right` Karşılaştırılacak doğru nesne.
+*doğru* Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci döndürür `!(right < left)`.
+Her şablon işlecini verir `!(right < left)`.
 
 ### <a name="example"></a>Örnek
 
@@ -411,9 +411,9 @@ sub <= "aab" == true
 sub <= 'a' == false
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Eşit karşılaştırma çeşitli nesneleri için.
+Eşit karşılaştırma için çeşitli nesneleri.
 
 ```cpp
 template <class BidIt>
@@ -452,27 +452,27 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-`BidIt` Yineleyici türü.
+*BidIt* yineleyici türü.
 
-`IOtraits` String nitelikler sınıfı.
+*IOtraits* dize nitelikler sınıfı.
 
-`Alloc` Allocator sınıfı.
+*Ayırma* ayırıcı sınıf.
 
-`left` Karşılaştırılacak sol nesne.
+*Sol* sol Karşılaştırılacak nesne.
 
-`right` Karşılaştırılacak doğru nesne.
+*doğru* Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci her biri kendi bağımsız değişken bir dize türüne dönüştürür ve dönüştürülen nesnenin eşitlik için karşılaştırılması sonucunu döndürür.
+Her şablon işlecini her bağımsız değişkenlerinin dize türüne dönüştürür ve dönüştürülmüş nesneleri eşitlik için karşılaştırma sonucunu döndürür.
 
-Bir şablon işleci bir dize türü bağımsız değişkenleri dönüştürdüğünde geçerlidir şu dönüşümleri ilk kullanır:
+Bir şablon işlecini bir dize türüne değişkenlerinin dönüştürdüğünde uygulayan ilk aşağıdaki dönüşümlerden birini kullanır:
 
-bağımsız değişkenler, türleridir Şablon sınıfı uzmanlaşması `match_results` veya `sub_match` çağırarak dönüştürülür `str` üye işlevi;
+eşleşen türleri olan şablon sınıfının bir uzmanlık bağımsız değişkenleri `match_results` veya `sub_match` çağırarak dönüştürülür `str` ; üye işlevi
 
-bağımsız değişkenler, türleridir Şablon sınıfı uzmanlaşması `basic_string` aynıdır;
+eşleşen türleri olan şablon sınıfının bir uzmanlık bağımsız değişkenleri `basic_string` değişmez;
 
-diğer tüm bağımsız değişken türleri için uygun bir şablon sınıfı uzmanlaşması oluşturucu bağımsız değişken değeri geçirerek dönüştürülür `basic_string`.
+Tüm diğer bağımsız değişken türleri için uygun bir şablon sınıfı uzmanlaşması oluşturucusuna bağımsız değişken değeri geçirerek dönüştürülür `basic_string`.
 
 ### <a name="example"></a>Örnek
 
@@ -534,7 +534,7 @@ sub == "aab" == false
 sub == 'a' == false
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
 Karşılaştırma için çeşitli nesneleri büyüktür.
 
@@ -571,19 +571,19 @@ bool operator>(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-`BidIt` Yineleyici türü.
+*BidIt* yineleyici türü.
 
-`IOtraits` String nitelikler sınıfı.
+*IOtraits* dize nitelikler sınıfı.
 
-`Alloc` Allocator sınıfı.
+*Ayırma* ayırıcı sınıf.
 
-`left` Karşılaştırılacak sol nesne.
+*Sol* sol Karşılaştırılacak nesne.
 
-`right` Karşılaştırılacak doğru nesne.
+*doğru* Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci döndürür `right < left`.
+Her şablon işlecini verir `right < left`.
 
 ### <a name="example"></a>Örnek
 
@@ -640,9 +640,9 @@ sub > "aab" == false
 sub > 'a' == true
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Büyük veya ona eşit karşılaştırma çeşitli nesneleri için.
+Büyüktür veya eşittir karşılaştırma için çeşitli nesneleri.
 
 ```cpp
 template <class BidIt>
@@ -677,19 +677,19 @@ bool operator>=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-`BidIt` Yineleyici türü.
+*BidIt* yineleyici türü.
 
-`IOtraits` String nitelikler sınıfı.
+*IOtraits* dize nitelikler sınıfı.
 
-`Alloc` Allocator sınıfı.
+*Ayırma* ayırıcı sınıf.
 
-`left` Karşılaştırılacak sol nesne.
+*Sol* sol Karşılaştırılacak nesne.
 
-`right` Karşılaştırılacak doğru nesne.
+*doğru* Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci döndürür `!(left < right)`.
+Her şablon işlecini verir `!(left < right)`.
 
 ### <a name="example"></a>Örnek
 

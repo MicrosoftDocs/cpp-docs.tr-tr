@@ -26,182 +26,185 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e84c92e8bbf65ff3b8b54111bcce2306628edb1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5ec0ebd30f8fc871830e36878446a7cf6b5f875c
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365859"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879939"
 ---
-# <a name="compiler-options-macros"></a>Makro derleyici seçenekleri
-Bu makroları belirli derleyicisi özelliklerini denetler.  
+# <a name="compiler-options-macros"></a>Derleyici Seçenekleri makroları
+Bu makrolar özgü derleyici özelliklerini denetleyin.  
   
 |||  
 |-|-|  
-|[_ATL_ALL_WARNINGS](#_atl_all_warnings)|ATL önceki sürümlerinden dönüştürülen projelerinde hataları sağlayan bir simge|  
-|[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Bir veya daha fazla nesnelerinizi Apartman iş parçacığı oluşturma kullanırsanız tanımlayın.|  
-|[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Belirli yapar `CString` oluşturucular açık istenmeyen dönüştürmenin engelliyor.|  
-|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Üye işlevi için bir işaretçi başlatmak için standart olmayan bir sözdizimi kullanıldığında C4867 derleyici hatası oluşturur C++ Standart uyumlu sözdizimi kullanmak için bu makrosu tanımlayın.|  
-|[_ATL_FREE_THREADED](#_atl_free_threaded)|Bir veya daha fazla nesnelerinizi boş veya nötr iş parçacığı oluşturma kullanırsanız tanımlayın.|  
-|[_ATL_MULTI_THREADED](#_atl_multi_threaded)|Proje gösteren bir simge Both, boş veya bağımsız olarak işaretlenen nesneleri sahip olur. Makro [_ATL_FREE_THREADED](#_atl_free_threaded) bunun yerine kullanılmalıdır.|  
-|[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|ATL olarak ad alanı varsayılan kullanımını önleyen bir simge|  
-|[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|COM ile ilgili kod projenizle derlenmiş engelleyen bir simge.|  
-|[ATL_NO_VTABLE](#atl_no_vtable)|Sınıfının oluşturucusu ve yıkıcı başlatılmış vtable işaretçi engeller bir simge.|  
-|[ATL_NOINLINE](#atl_noinline)|Bir işlev gösteren bir simge içermesinden olmamalıdır.|  
-|[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Tüm nesnelerinin tek iş parçacığı modelini kullandıysanız tanımlayın.|  
+|[_ATL_ALL_WARNINGS](#_atl_all_warnings)|ATL önceki sürümlerinden dönüştürülmüş projelerinde hatalar sağlayan bir simge|  
+|[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Bir veya daha fazla nesnelerinizi iş parçacığı grubu kullanıyorsanız tanımlayın.|  
+|[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Bilmesini sağlar `CString` oluşturucuları açık, yanlışlıkla dönüştürmenin engelliyor.|  
+|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Bir üye işlevine bir işaretçi başlatmak için standart olmayan bir sözdizimi kullanıldığında C4867 derleyici hatası oluşturur C++ Standart uyumlu sözdizimi kullanmak için bu makroyu tanımlar.|  
+|[_ATL_FREE_THREADED](#_atl_free_threaded)|Bir veya daha fazla nesnelerinizi ücretsiz veya nötr iş parçacığı kullanırsanız tanımlayın.|  
+|[_ATL_MULTI_THREADED](#_atl_multi_threaded)|Projeyi gösteren bir simge Both, boş veya nötr olarak işaretlenen nesneleri olacaktır. Makro [_ATL_FREE_THREADED](#_atl_free_threaded) bunun yerine kullanılmalıdır.|  
+|[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|ATL olarak ad alanı varsayılan kullanımını engelleyen bir sembol|  
+|[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|COM ilgili kod projenizi ile derlenmiş engelleyen bir simge.|  
+|[ATL_NO_VTABLE](#atl_no_vtable)|Vtable işaretçisi sınıfın oluşturucusu ve yıkıcısı başlatılmakta engelleyen bir simge.|  
+|[ATL_NOINLINE](#atl_noinline)|Bir işlev gösteren bir simge satır içine alınmış olmamalıdır.|  
+|[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Tek iş parçacıklı model nesnelerinizi tüm kullandıysanız tanımlayın.|  
   
 ##  <a name="_atl_all_warnings"></a>  _ATL_ALL_WARNINGS  
- ATL önceki sürümlerinden dönüştürülen projelerinde hataları sağlayan bir simge  
+ ATL önceki sürümlerinden dönüştürülmüş projelerinde hatalar sağlayan bir simge  
   
 ```
 #define _ATL_ALL_WARNINGS
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Visual C++ .NET 2002 önce ATL çok sayıda uyarı devre dışı ve bunları böylece bunlar hiçbir zaman içinde kullanıcı kodu gösterdi devre dışı bırakıldı. Özellikle:  
+ Visual C++ .NET 2002 önce ATL çok sayıda uyarı devre dışı ve bunları böylece bunlar hiçbir zaman kullanıcı kodunda hatırlarsınız devre dışı kaldı. Özellikle:  
   
--   C4127 koşullu ifade sabittir  
+-   C4127 koşullu ifade sabit  
   
--   C4786 'tanımlayıcısı': hata ayıklama bilgileri 'numara' karakter tanımlayıcı kesildi  
+-   C4786 'identifier': tanımlayıcı hata ayıklama bilgilerinde 'number' karakter olarak kesildi  
   
--   Kullanılan C4201 standart olmayan uzantısı: Adsız struct/birleşim  
+-   C4201 standart olmayan uzantı kullanıldı: Adsız yapı/birleşim  
   
--   C4103 'filename': #pragma paketi hizalama değiştirmek için kullanılır  
+-   C4103 'filename': #pragma paketini hizalamasını değiştirmek için kullanılır  
   
--   C4291 'bildirimi': bulundu; hiçbir eşleşen delete işleci başlatma bir özel durum oluşturursa bellek serbest bırakılmaz  
+-   C4291 'bildirim': bulunamadı; eşleşen hiçbir delete işleci başlatma bir özel durum oluşturursa bellek serbest bırakılmaz  
   
--   C4268 'tanımlayıcısı': oluşturulan derleyici varsayılan kurucu ile başlatılmış 'const' statik/genel veri sıfırlarla nesnesini doldurur  
+-   C4268 'identifier': derleyicinin ürettiği varsayılan oluşturucuyla başlatılan 'const' statik/genel verileri nesneyi sıfırlarla dolduruyor  
   
--   C4702 ulaşılamaz kod  
+-   Erişilemeyen kod C4702  
   
- Önceki sürümlerden dönüştürülen projelerde, bu uyarılar hala kitaplıkları üstbilgileri tarafından devre dışı bırakılır.  
+ Önceki sürümlerden dönüştürülen projelerinde, bu uyarılar hala kitaplıkları üstbilgileri tarafından devre dışı bırakıldı.  
   
- Aşağıdaki satırı stdafx.h dosyasına kitaplıkları üstbilgileri eklemeden önce ekleyerek, bu davranış değiştirilebilir.  
+ Aşağıdaki satırı stdafx.h dosyasına kitaplıkları üst bilgiler dahil olmak üzere önce ekleyerek, bu davranış değiştirilebilir.  
   
  [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]  
   
- Bu `#define` eklenir, böylece bunlar genel devre dışı olmadığını (veya kullanıcı açıkça bunları etkinleştirmemeyi bireysel uyarıları devre dışı bırakır) Bu uyarılar durumunu korumak dikkatli ATL üstbilgileri.  
+ Bu `#define` eklenir, böylece bunlar genel olarak devre dışı bırakılmaz (veya kullanıcı tarafından açıkça bunları etkinleştirmek için ayrı uyarılar devre dışı bırakıldığında) bu uyarıları durumunu korumak dikkatli ATL üstbilgilerine.  
   
- Yeni projeler sahip bu `#define` Stdafx.h'de varsayılan olarak ayarlayın.  
+ Yeni projeler sahip bu `#define` stdafx.h içinde varsayılan olarak ayarlayın.  
   
 ##  <a name="_atl_apartment_threaded"></a>  _ATL_APARTMENT_THREADED  
- Bir veya daha fazla nesnelerinizi Apartman iş parçacığı oluşturma kullanırsanız tanımlayın.  
+ Bir veya daha fazla nesnelerinizi iş parçacığı grubu kullanıyorsanız tanımlayın.  
   
 ```
 _ATL_APARTMENT_THREADED
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Apartman iş parçacığı oluşturma belirtir. Bkz: [projenin iş parçacıklı Model belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) diğer için iş parçacığı oluşturma seçenekleri ve [seçenekleri, ATL Basit Nesne Sihirbazı](../../atl/reference/options-atl-simple-object-wizard.md) iş parçacığı için bir açıklama modeller ATL nesne için kullanılabilir.  
+ İş parçacığı grubu belirtir. Bkz [projenin iş parçacıklı Model belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) iş parçacığı için diğer seçenekler ve [ATL Basit Nesne Sihirbazı, seçenekleri](../../atl/reference/options-atl-simple-object-wizard.md) iş parçacığı için bir açıklama modeller bir ATL nesnesi için kullanılabilir.  
   
 ##  <a name="_atl_cstring_explicit_constructors"></a>  _ATL_CSTRING_EXPLICIT_CONSTRUCTORS  
- Belirli yapar `CString` oluşturucular açık istenmeyen dönüştürmenin engelliyor.  
+ Bilmesini sağlar `CString` oluşturucuları açık, yanlışlıkla dönüştürmenin engelliyor.  
   
 ```
 _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu tanımlandığında, tek bir parametre alan tüm CString oluşturucular giriş bağımsız değişkenleri örtük dönüşümler engeller explicit anahtar sözcüğü ile derlenir. _UNICODE tanımlandığında, kullanım çalışırsanız, örneğin, yani char * dizesini, CString oluşturucu bağımsız değişkeni olarak bir derleyici hatasına neden olur. Bu makrosu burada dar ve geniş dize türleri arasında örtük dönüşümler önlemek için gereken durumlarda kullanın.  
+ Bu tanımlandığında, tek bir parametre tüm CString oluşturucuları giriş bağımsız değişkenlerinin örtülü dönüştürmeler engeller explicit anahtar sözcüğü ile derlenir. _UNICODE tanımlandığında, kullanım çalışırsanız, örneğin, yani char * dizesini, CString oluşturucu bağımsız değişkeni olarak bir derleyici hatasına neden olur. Bu makro, dar ve geniş dize türleri arasında örtük dönüştürme önlemek için gereken durumlarda kullanın.  
   
- Tüm Oluşturucusu dize bağımsız değişkenleri _T makrosu kullanarak _UNICODE olup tanımlanan bakılmaksızın derleme hatalarını önlemek ve _ATL_CSTRING_EXPLICIT_CONSTRUCTORS tanımlayın.  
+ _T makrosu tüm Oluşturucu dize bağımsız değişkenleri kullanarak _ATL_CSTRING_EXPLICIT_CONSTRUCTORS tanımlayın ve _UNICODE tanımlı olup olmadığı bağımsız olarak, derleme hatalarından kaçınmak.  
   
 ##  <a name="_atl_enable_ptm_warning"></a>  _ATL_ENABLE_PTM_WARNING  
- Üye işlevleri işaretçisine ANSI C++ Standart uyumlu sözdizimi kullanılmasını zorlamak için bu makrosu tanımlayın. Bu makrosu kullanarak C4867 derleyici hatası üye işlevi için bir işaretçi başlatmak için standart olmayan sözdizimi kullanıldığında oluşturulmasına neden olur.  
+ Üye işaretçisi işlevlerine ANSI C++ standard uyumlu söz dizimi kullanılmasını zorlamak için bu makroyu tanımlar. Bu makroyu kullanarak, bir üye işlevine bir işaretçi başlatmak için standart olmayan söz dizimi kullanıldığında oluşturulacak C4867 derleyici hatasına neden olur.  
   
 ```
 #define _ATL_ENABLE_PTM_WARNING
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL ve MFC kitaplıkları, Visual C++ derleyicinin geliştirilmiş standart C++ uyumluluk eşleşecek şekilde değiştirildi. ANSI C++ Standart göre sınıf üye işlevi için bir işaretçi sözdizimi olmalıdır `&CMyClass::MyFunc`.  
+ ATL ve MFC kitaplıkları, Visual C++ derleyicisinin geliştirilmiş standart C++ uyumluluk eşleşecek şekilde değiştirildi. ANSI C++ standardına göre söz dizimi bir sınıf üyesi işlevi için bir işaretçi olmalıdır `&CMyClass::MyFunc`.  
   
- Zaman [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) tanımlı değil olarak önce oluşturmak önceki sürümlerde oluşturulmuş kodu devam edebilmesi için (varsayılan durumda) ATL/MFC (özellikle ileti eşlemeleri) makrosu Maps C4867 hata devre dışı bırakır. Tanımlarsanız **_ATL_ENABLE_PTM_WARNING**, kodunuzu C++ Standart uyumlu olmalıdır.  
+ Zaman [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) tanımlanmamış böylece önceki sürümlerinde oluşturulan kod, önceki gibi oluşturmaya devam edebilirsiniz (varsayılan durumda) ATL/MFC C4867 hata makrosu Maps (özellikle ileti eşlemeleri) devre dışı bırakır. Tanımlarsanız **_ATL_ENABLE_PTM_WARNING**, kodunuzu C++ standardı ile uyumlu olmalıdır.  
   
- C++ Standart uyumlu sözdizimi için var olan kodu taşımanız gerekir böylece ancak, standart olmayan form, kullanım dışı bırakıldı. Örneğin, aşağıdaki:  
+ C++ Standart uyumlu sözdizimi için mevcut kodu Taşı gerekmez ancak standart form, kullanım dışıdır. Örneğin, aşağıdaki:  
   
  [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]  
   
- Değiştirilmelidir:  
+ Şekilde değiştirilmelidir:  
   
  [!code-cpp[NVC_MFCListView#11](../../atl/reference/codesnippet/cpp/compiler-options-macros_3.cpp)]  
   
- '&' Karakteri eklemek eşleme makroları için onu yeniden kodunuzda eklemeyin olduğunu unutmayın.  
+ '&' Karakteri eklemek için eşleme makroları, onu yeniden kodunuzda eklemeyin olduğunu unutmayın.  
   
 ##  <a name="_atl_free_threaded"></a>  _ATL_FREE_THREADED  
- Bir veya daha fazla nesnelerinizi boş veya nötr iş parçacığı oluşturma kullanırsanız tanımlayın.  
+ Bir veya daha fazla nesnelerinizi ücretsiz veya nötr iş parçacığı kullanırsanız tanımlayın.  
   
 ```
 _ATL_FREE_THREADED
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Boş iş parçacığı oluşturma belirtir. Boş iş parçacığı oluşturma için çoklu iş parçacığı apartman modeli eşdeğerdir. Bkz: [projenin iş parçacıklı Model belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) diğer için iş parçacığı oluşturma seçenekleri ve [seçenekleri, ATL Basit Nesne Sihirbazı](../../atl/reference/options-atl-simple-object-wizard.md) iş parçacığı için bir açıklama modeller ATL nesne için kullanılabilir.  
+ Serbest iş parçacığı oluşturmayı belirtir. Ücretsiz iş parçacığı için bir çoklu iş parçacığı apartman modeli eşdeğerdir. Bkz [projenin iş parçacıklı Model belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) iş parçacığı için diğer seçenekler ve [ATL Basit Nesne Sihirbazı, seçenekleri](../../atl/reference/options-atl-simple-object-wizard.md) iş parçacığı için bir açıklama modeller bir ATL nesnesi için kullanılabilir.  
   
 ##  <a name="_atl_multi_threaded"></a>  _ATL_MULTI_THREADED  
- Proje gösteren bir simge Both, boş veya bağımsız olarak işaretlenen nesneleri sahip olur.  
+ Projeyi gösteren bir simge Both, boş veya nötr olarak işaretlenen nesneleri olacaktır.  
   
 ```
 _ATL_MULTI_THREADED
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu simgenin tanımlanmışsa ATL genel verilere erişimin doğru eşitler kodda çeker. Yeni kod eşdeğer makrosu kullanması gereken [_ATL_FREE_THREADED](#_atl_free_threaded) yerine.  
+ Bu simge tanımlanmazsa, ATL genel veri erişim doğru eşitleyecek kodda çeker. Yeni kod eşdeğer makrosu kullanması gereken [_ATL_FREE_THREADED](#_atl_free_threaded) yerine.  
   
 ##  <a name="_atl_no_automatic_namespace"></a>  _ATL_NO_AUTOMATIC_NAMESPACE  
- ATL olarak ad alanı varsayılan kullanımını önleyen bir simge  
+ ATL olarak ad alanı varsayılan kullanımını engelleyen bir sembol  
   
 ```
 _ATL_NO_AUTOMATIC_NAMESPACE
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu simgeyi tanımlanmazsa atlbase.h dahil olmak üzere gerçekleştirecek **ad alanı ATL kullanılarak** varsayılan olarak, hangi açabilir adlandırma çakışmaları. Bunu önlemek için bu simgeyi tanımlayın.  
+ Bu simge tanımlanmazsa, atlbase.h dahil olmak üzere gerçekleştirecek **using namespace ATL** varsayılan olarak, hangi açabilir adlandırma çakışmaları. Bunu önlemek için bu simge tanımlayın.  
   
 ##  <a name="_atl_no_com_support"></a>  _ATL_NO_COM_SUPPORT  
- COM ile ilgili kod projenizle derlenmiş engelleyen bir simge.  
+ COM ilgili kod projenizi ile derlenmiş engelleyen bir simge.  
   
 ```
-_ATL_NO_COM_SUPPORT```  
+_ATL_NO_COM_SUPPORT
+```  
   
 ##  <a name="atl_no_vtable"></a>  ATL_NO_VTABLE  
- A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.  
+ Vtable işaretçisi sınıfın oluşturucusu ve yıkıcısı başlatılmakta engelleyen bir simge.  
   
 ```
 ATL_NO_VTABLE
 ```  
   
-### Remarks  
- If the vtable pointer is prevented from being initialized in the class's constructor and destructor, the linker can eliminate the vtable and all of the functions to which it points. Expands to **__declspec(novtable)**.  
+### <a name="remarks"></a>Açıklamalar  
+ Vtable işaretçisi sınıfın oluşturucusu ve yıkıcısı başlatılmakta verilmemişse, bağlayıcı vtable ve tüm işaret ettiği işlevleri çıkarabilirsiniz. Genişletir **__declspec(novtable)**.  
   
-### Example  
+### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#53](../../atl/codesnippet/cpp/compiler-options-macros_4.h)]  
   
 ##  <a name="atl_noinline"></a>  ATL_NOINLINE  
- A symbol that indicates a function should not be inlined.  
+ Bir işlev gösteren bir simge satır içine alınmış olmamalıdır.  
   
 ```
     ATL_NOINLINE inline
     myfunction
- { ... }
+ {
+...
+ }
 ```  
   
-### Parameters  
- *myfunction*  
- The function that should not be inlined.  
+### <a name="parameters"></a>Parametreler  
+ *myFunction*  
+ İşlev satır içine alınmış olmamalıdır.  
   
-### Remarks  
- Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to **__declspec(noinline)**.  
+### <a name="remarks"></a>Açıklamalar  
+ Bu simge, böylece bir üstbilgi dosyasına yerleştirilebilir, satır içi olarak bildirilmelidir olsa bile bir işlev derleyici tarafından satır içine almaz emin olmak istiyorsanız kullanın. Genişletir **__declspec(noinline)**.  
   
 ##  <a name="_atl_single_threaded"></a>  _ATL_SINGLE_THREADED  
- Define if all of your objects use the single threading model  
+ Tek iş parçacıklı model nesnelerinizi tüm kullandıysanız tanımlayın  
   
 ```
 _ATL_SINGLE_THREADED
 ```  
   
-### Remarks  
- Specifies that the object always runs in the primary COM thread. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.  
+### <a name="remarks"></a>Açıklamalar  
+ Nesne her zaman birincil COM iş parçacığında çalışır belirtir. Bkz [projenin iş parçacıklı Model belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) iş parçacığı için diğer seçenekler ve [ATL Basit Nesne Sihirbazı, seçenekleri](../../atl/reference/options-atl-simple-object-wizard.md) iş parçacığı için bir açıklama modeller bir ATL nesnesi için kullanılabilir.  
   
-## See Also  
- [Macros](../../atl/reference/atl-macros.md)
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Makroları](../../atl/reference/atl-macros.md)

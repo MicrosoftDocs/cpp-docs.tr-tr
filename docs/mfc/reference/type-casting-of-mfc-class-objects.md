@@ -1,5 +1,5 @@
 ---
-title: MFC sınıf nesnelerine atama yazın | Microsoft Docs
+title: Türü, MFC sınıf nesnelerine atama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,68 +20,68 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 217be53a78a65a0f617438127b922b20c950853d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d90b188b99f4f0711635cc47c03383617b9046e
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33371167"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886017"
 ---
 # <a name="type-casting-of-mfc-class-objects"></a>MFC Sınıf Nesnelerine İlişkin Tür Atama
-Tür atama makroları ile veya cast yasal denetlemeden belirli sınıftan bir nesneyi gösteren bir işaretçi için belirli bir işaretçi dönüştürmek için bir yol sağlar.  
+Tür atama makroları ile veya olmadan cast geçerli olup olmadığını denetleyerek belirli sınıfının bir nesneye işaret eden bir işaretçi verilen bir işaretçiye için bir yol sağlar.  
   
- Aşağıdaki tabloda MFC tür atama makroları listeler.  
+ Aşağıdaki tabloda, MFC tür atama makroları listeler.  
   
 ### <a name="macros-that-cast-pointers-to-mfc-class-objects"></a>MFC sınıf nesnelerine işaretçiler atama makroları  
   
 |||  
 |-|-|  
-|[DYNAMIC_DOWNCAST](#dynamic_downcast)|Cast yasal olup olmadığını görmek için kontrol edilirken bir sınıf nesnesi için bir işaretçi bir işaretçi çevirir.|  
-|[STATIC_DOWNCAST](#static_downcast)|Bir işaretçi bir nesneye bir sınıftan ilgili türü işaretçisi çevirir. Bir hata ayıklama derlemesi neden olan bir **ASSERT** nesne değilse, bir "tür" hedef türü.|  
+|[DYNAMIC_DOWNCAST](#dynamic_downcast)|Bir sınıf nesnesine bir işaretçi işaretçisi dönüştürme geçerli olup olmadığını denetlerken çevirir.|  
+|[STATIC_DOWNCAST](#static_downcast)|Bir işaretçi bir nesne için bir sınıftan ilgili türünde bir işaretçiye çevirir. Nesne değilse, hata ayıklama yapısında, bir onay neden olan bir "tür" hedef türü.|  
   
 ##  <a name="dynamic_downcast"></a>  DYNAMIC_DOWNCAST  
- Cast yasal olup olmadığını görmek için kontrol edilirken bir sınıf nesnesi için bir işaretçi bir işaretçi dönüştürmek için kullanışlı bir yöntem sağlar.  
+ Bir sınıf nesnesine bir işaretçi dönüştürme geçerli olup olmadığını denetlerken işaretçiye için kullanışlı bir yol sağlar.  
   
 ```   
 DYNAMIC_DOWNCAST(class, pointer)  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `class`  
- Bir sınıf adı.  
+ *class*  
+ Bir sınıfın adı.  
   
- `pointer`  
- Bir nesne türü için bir işaretçi için dönüştürmek için bir işaretçi `class`.  
+ *İşaretçi*  
+ Bir işaretçi işaretçisi türünde bir nesne başvurusuna *sınıfı*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Makro cast `pointer` bir nesne için bir işaretçi parametresi `class` parametrenin türü.  
+ Makro cast *işaretçi* parametresi bir nesnenin işaretçisi *sınıfı* parametrenin türü.  
   
- İşaretçi tarafından başvurulan nesne ise bir "tür" tanımlanan sınıfı makrosu uygun işaretçi döndürür. Makro döndürür, yasal bir cast değilse, **NULL**.  
+ İşaretçi tarafından başvurulan nesne ise, bir "tür" tanımlanan sınıfı makro uygun işaretçiyi döndürür. Yasal bir yayın değil ise, makro NULL döndürür.  
   
 ##  <a name="static_downcast"></a>  STATIC_DOWNCAST  
- Atamalar *pobject* için bir işaretçi bir *class_name* nesnesi.  
+ Yayınları *pobject* işaretçisi bir *$class_name* nesne.  
   
 ```   
 STATIC_DOWNCAST(class_name, pobject)   
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *class_name*  
- Cast için sınıfı adı.  
+ *$class_name*  
+ Dönüştürme için sınıfı adı.  
   
  *pobject*  
- Bir işaretçi için dönüştürmek için işaretçiyi bir *class_name* nesnesi.  
+ İşaretçiyi bir işaretçiye dönüştürülebilir bir *$class_name* nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- *pobject* ya da olmalıdır **NULL**, veya bir nesne doğrudan türetilmiş bir sınıf ya da dolaylı, gelen noktasına *class_name*. İle uygulamanızın derlemelerde **_DEBUG** tanımlanan önişlemci sembolü makrosu olacak **ASSERT** varsa *pobject* değil **NULL**, veya olmayan bir nesneye işaret ediyorsa bir "tür" Belirtilen sınıf *class_name* parametre (bkz [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof)). İçinde olmayan **_DEBUG** derlemeleri, makrosu herhangi bir tür denetlemesi olmadan cast gerçekleştirir.  
+ *pobject* gerekir ya da NULL olamaz ya da doğrudan türetilmiş bir sınıfın veya dolaylı olarak gelen bir nesneye işaret *$class_name*. Tanımlanan _DEBUG önişlemci sembolü uygulamanızla yapılarında makrosu, İDDİA *pobject* NULL değil veya olmayan bir nesneye işaret ediyorsa bir "tür" Belirtilen sınıf *$class_name*parametre (bkz [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof)). İçinde olmayan **_DEBUG** yapılar, makrosu, herhangi bir tür denetlemesi olmadan cast gerçekleştirir.  
   
- Belirtilen sınıf *class_name* parametresi türetilmeli `CObject` kullanmalıdır `DECLARE_DYNAMIC` ve `IMPLEMENT_DYNAMIC`, `DECLARE_DYNCREATE` ve `IMPLEMENT_DYNCREATE`, veya `DECLARE_SERIAL` ve `IMPLEMENT_SERIAL`makalesinde açıklandığı gibi makroları [CObject sınıfı: CObject'ten sınıf türetme](../../mfc/deriving-a-class-from-cobject.md).  
+ Belirtilen sınıf *$class_name* parametresi türetilen gerekir `CObject` DECLARE_DYNAMIC ımplement_dynamıc, DECLARE_DYNCREATE ve IMPLEMENT_DYNCREATE, veya declare_serıal ve IMPLEMENT_ kullanmalıdır Seri makroları olarak makalesinde açıklanan [CObject sınıfı: CObject'ten sınıf türetme](../../mfc/deriving-a-class-from-cobject.md).  
   
- Örneğin, bir işaretçi cast `CMyDoc`adlı `pMyDoc`, bir işaretçi için **CDocument** Bu ifade kullanarak:  
+ Örneğin, bir işaretçiye dönüştürme `CMyDoc`adlı `pMyDoc`, işaretçisi `CDocument` Bu ifade kullanarak:  
   
  [!code-cpp[NVC_MFCDocView#197](../../mfc/codesnippet/cpp/type-casting-of-mfc-class-objects_1.cpp)]  
   
- Varsa `pMyDoc` doğrudan veya dolaylı olarak türetilen bir nesneye işaret etmiyor **CDocument**, makrosu olacak **ASSERT**.  
+ Varsa `pMyDoc` doğrudan veya dolaylı olarak türetilmiş bir nesneye işaret etmiyor `CDocument`, makro ASSERT.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

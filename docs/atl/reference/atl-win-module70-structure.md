@@ -1,5 +1,5 @@
 ---
-title: _ATL_WIN_MODULE70 yapısı | Microsoft Docs
+title: _Atl_wın_module70 yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 587b115c428b0d82183abbec9f712ff06ea448f4
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: e330beda4770f60d5358ed8baf8d3b2fae260d3a
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34256086"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37883040"
 ---
-# <a name="atlwinmodule70-structure"></a>_ATL_WIN_MODULE70 yapısı
-ATL Pencereleme kodda tarafından kullanılan  
+# <a name="atlwinmodule70-structure"></a>_Atl_wın_module70 yapısı
+ATL Pencereleme kod tarafından kullanılan  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,16 +42,16 @@ struct _ATL_WIN_MODULE70 {
   
 ## <a name="members"></a>Üyeler  
  `cbSize`  
- Sürüm oluşturma için kullanılan yapısı, boyutu.  
+ Sürüm oluşturma için kullanılan bir yapının boyutu.  
   
  `m_csWindowCreate`  
- Pencere kayıt koda erişim serileştirmek için kullanılır. ATL tarafından dahili olarak kullanılır  
+ Pencere kayıt kodu erişim serileştirmek için kullanılır. ATL tarafından dahili olarak kullanılır  
   
- **m_pCreateWndList**  
- Windows için kendi nesneleri bağlamak için kullanılır. ATL tarafından dahili olarak kullanılır  
+ `m_pCreateWndList`  
+ Windows, nesnelere bağlamak için kullanılır. ATL tarafından dahili olarak kullanılır  
   
- **m_rgWindowClassAtoms**  
- Böylece sonlandırmanın düzgün kaydedilmemiş olabilir pencere sınıfı kaydı izlemek için kullanılır. ATL tarafından dahili olarak kullanılır  
+ `m_rgWindowClassAtoms`  
+ Pencere sınıfı kaydı sonlandırmanın düzgün kaydedilmemiş olabilir, böylece izlemek için kullanılır. ATL tarafından dahili olarak kullanılır  
   
 ## <a name="remarks"></a>Açıklamalar  
  [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module) typedef tanımlanan `_ATL_WIN_MODULE70`.  

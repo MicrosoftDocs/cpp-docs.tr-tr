@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a149269117f83b18838d54c728d6d8da580882b0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bdd2a8417f66c0e095f571c914d5a4624179fdb6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840706"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962119"
 ---
 # <a name="alignedunion-class"></a>aligned_union Sınıfı
 
-Bir birleşim türü ve gerekli boyutu depolamak için bir POD türü büyüklükte ve uygun hizalanmış sağlar.
+Bir birleşim türü ve gerekli boyutu depolamak için bir POD türü büyüklükte ve düzgün hizalanmış sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,17 +39,17 @@ using aligned_union_t = typename aligned_union<Len, Types...>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-`Len` Birleşim en büyük türünde hizalama değeri.
+*Len* en büyük birleşim türü için hizalama değeri.
 
-`Types` Temel alınan UNION farklı türler.
+*Türleri* temel alınan Birliği'ndeki farklı türler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı UNION başlatılmamış deposunda depolamak için gereken boyutu ve hizalama almak için kullanın. Üye typedef `type` bir POD adlarını yazın listelenen herhangi bir türde depolama için uygun `Types`; minimum boyutu `Len`. Statik üye `alignment_value` türü `std::size_t` listelenen her türlü gerekli sıkı hizalama içeren `Types`.
+Şablon sınıfı bir birleşim başlatılmamış depolamada depolamak için gereken boyutu ve hizalama almak için kullanın. Üye typedef `type` adları bir POD türü listelenen herhangi bir türde depolama için uygun *türleri*; en küçük boyut *Len*. Statik üye `alignment_value` türü `std::size_t` , listelenen tüm türleri için gereken en katı hizalama içeren *türleri*.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte nasıl kullanılacağını gösterir `aligned_union` UNION yerleştirmek için bir hizalanmış yığını arabelleği ayrılamadı.
+Aşağıdaki örnek nasıl kullanılacağını gösterir `aligned_union` UNION yerleştirmek için bir hizalanmış bir yığın arabelleği ayrılamadı.
 
 ```cpp
 // std__type_traits__aligned_union.cpp

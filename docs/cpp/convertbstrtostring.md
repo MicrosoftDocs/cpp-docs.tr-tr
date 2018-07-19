@@ -16,28 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 986fc35d1a84737b441d7259bba78459a42404e6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1278ab84ea8888b34290c9738e0eb88a4485e99c
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948103"
 ---
 # <a name="convertbstrtostring"></a>ConvertBSTRToString
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Dönüştüren bir `BSTR` değeri bir **char \*** .  
+ Dönüştürür bir `BSTR` değerini bir **char \*** .  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      char* __stdcall ConvertBSTRToString(  
-   BSTR pSrc  
-);  
+char* __stdcall ConvertBSTRToString(BSTR pSrc);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `pSrc`  
+ *pSrc*  
  BSTR değişken.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -45,7 +44,7 @@ ms.lasthandoff: 05/03/2018
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // ConvertBSTRToString.cpp  
 #include <comutil.h>  
 #include <stdio.h>  
@@ -69,12 +68,12 @@ BSTR text: Test
 char * text: Test  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<comutil.h >.  
   
- **LIB:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
+ **Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)

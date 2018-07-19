@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abe2a27a79705e9850df2c9fb54037278abd8cd5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a471cdd63ed46e15c9ec41968ed341eefaf36963
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843268"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965398"
 ---
 # <a name="codecvtbase-class"></a>codecvt_base Sınıfı
 
-Bir numaralandırma türü tanımlamak için kullanılan codecvt sınıfı için bir taban sınıf denir **sonuç**, bir dönüştürme sonucu göstermek için model üye işlevleri için dönüş türü olarak kullanılır.
+Bir numaralandırma türü tanımlamak için kullanılan codecvt sınıfının bir temel sınıf denir `result`bir dönüştürmenin sonucunu belirtmek için model üye işlevleri için dönüş türü olarak kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,15 +48,15 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfının tüm özelleştirmeleri için ortak bir numaralandırma sınıf tanımlar [codecvt](../standard-library/codecvt-class.md). Olası dönüş değerleri numaralandırması sonucu açıklanmaktadır [do_in](../standard-library/codecvt-class.md#do_in) veya [do_out](../standard-library/codecvt-class.md#do_out):
+Sınıfı için şablon sınıfın tüm uzmanlıkları ortak bir numaralandırma açıklar [codecvt](../standard-library/codecvt-class.md). Sabit listesi sonucu olası dönüş değerleri açıklar [do_in](../standard-library/codecvt-class.md#do_in) veya [do_out](../standard-library/codecvt-class.md#do_out):
 
-- **Tamam** iç ve dış karakter kodlamaları arasında dönüştürme başarılı olursa.
+- `ok` İç ve dış karakter kodlamaları arasında dönüştürme başarılı olursa.
 
-- **Kısmi** hedef dönüştürme işleminin başarılı olması için yeterince büyük değilse.
+- `partial` Hedef dönüştürme başarılı olması için yeterince büyük değilse.
 
-- **hata** kaynak sırası hatalı olması durumunda oluşturulmuş.
+- `error` Kaynak sırası olgu ise oluşturulmuş.
 
-- **noconv** dönüştürme işlevi uyguluyorsa.
+- `noconv` herhangi bir dönüştürme işlevi uyguluyorsa.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -16,38 +16,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb81a8aa7d9262992da29a2d93cf770fad754316
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: afba5d2c2d0cd0b84e12cbd13cedba473b535587
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373217"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885903"
 ---
 # <a name="type-library-access"></a>Tür Kitaplığı Erişimi
-Tür kitaplıkları OLE kullanan diğer uygulamalar için bir OLE denetiminin arabirimleri kullanıma sunar. Açığa çıkarılması bir veya daha fazla arabirimin olması durumunda her OLE denetim bir tür kitaplığı olması gerekir.  
+Tür kitaplıkları OLE kullanan diğer uygulamalar için bir OLE denetim arabirimleri kullanıma sunar. Bir veya daha fazla arabirim sağlamak olması durumunda her bir OLE denetimi tür kitaplığı olması gerekir.  
   
- Aşağıdaki makroları kendi tür kitaplığı erişimi sağlamak bir OLE denetlemesine izin ver:  
+ Aşağıdaki makroları, kendi tür kitaplığı erişimi sağlamak bir OLE denetimi izin ver:  
   
 ### <a name="type-library-access"></a>Tür Kitaplığı Erişimi  
   
 |||  
 |-|-|  
-|[DECLARE_OLETYPELIB](#declare_oletypelib)|Bildiren bir `GetTypeLib` üye işlevi bir OLE denetiminin (sınıfı bildiriminde kullanılmalıdır).|  
-|[IMPLEMENT_OLETYPELIB](#implement_oletypelib)|Implements bir `GetTypeLib` üye işlevi bir OLE denetiminin (sınıfı uygulamasında kullanılmalıdır).|  
+|[DECLARE_OLETYPELIB](#declare_oletypelib)|Bildiren bir `GetTypeLib` (sınıf bildirimi içinde kullanılmalıdır) bir OLE denetim üye işlevi.|  
+|[IMPLEMENT_OLETYPELIB](#implement_oletypelib)|Uygulayan bir `GetTypeLib` (sınıfı uygulamasında kullanılmalıdır) bir OLE denetim üye işlevi.|  
   
 ##  <a name="declare_oletypelib"></a>  DECLARE_OLETYPELIB  
- Bildirir `GetTypeLib` denetim sınıfınızın üye işlevi.  
+ Bildirir `GetTypeLib` denetim sınıfınızın bir üye işlevi.  
   
 ```   
 DECLARE_OLETYPELIB(class_name)   
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *class_name*  
- Tür kitaplığı ilgili denetim sınıfı adı.  
+ *$class_name*  
+ Tür kitaplığına ilgili denetim sınıfı adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu makrosu denetim sınıfı üstbilgi dosyası kullanın.  
+ Bu makro denetim sınıf üstbilgi dosyasında kullanın.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  
@@ -60,20 +60,20 @@ IMPLEMENT_OLETYPELIB(class_name, tlid, wVerMajor,  wVerMinor)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *class_name*  
- Tür kitaplığı ilgili denetim sınıfı adı.  
+ *$class_name*  
+ Tür kitaplığına ilgili denetim sınıfı adı.  
   
  *tlid*  
- Tür kitaplığı kimliği sayısı.  
+ Tür kitaplığını kimliği sayısı.  
   
- `wVerMajor`  
+ *wVerMajor*  
  Tür kitaplığı ana sürüm numarası.  
   
- `wVerMinor`  
+ *wVerMinor*  
  Tür kitaplığı ikincil sürüm numarası.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu makrosu kullanan herhangi bir denetim sınıf uygulama dosyada görünmelidir `DECLARE_OLETYPELIB` makrosu.  
+ Bu makro, declare_oletypelıb makrosu kullanan herhangi bir denetim sınıf için uygulama dosyasında yer almalıdır.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  

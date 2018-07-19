@@ -30,16 +30,16 @@ helpviewer_keywords:
 - std::packaged_task [C++], valid
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b37d6fc7b01c179f017e04f8064a789b8f4ad2b9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7eb5b8d003682f5b941dd805f424afbe4a36cc85
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860911"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964801"
 ---
 # <a name="packagedtask-class"></a>packaged_task Sınıfı
 
-Açıklayan bir *zaman uyumsuz sağlayıcısı* diğer bir deyişle, çağrı imzası çağrısı sarmalayıcı `Ty(ArgTypes...)`. Kendi *zaman uyumsuz durum ilişkili* olası sonuç yanı sıra kendi aranabilir nesnesinin bir kopyasını tutar.
+Açıklayan bir *zaman uyumsuz sağlayıcıyı* yani çağrı imzası olan bir çağrı sarmalayıcı `Ty(ArgTypes...)`. Kendi *ilişkili zaman uyumsuz durumu* olası sonucu yanı sıra kendi çağrılabilir nesnesinin bir kopyasını tutar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,36 +54,36 @@ class packaged_task;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[packaged_task](#packaged_task)|Oluşturan bir `packaged_task` nesnesi.|
-|[packaged_task:: ~ packaged_task yıkıcısı](#dtorpackaged_task_destructor)|Bozar bir `packaged_task` nesnesi.|
+|[packaged_task](#packaged_task)|Oluşturur bir `packaged_task` nesne.|
+|[packaged_task:: ~ packaged_task yıkıcısı](#dtorpackaged_task_destructor)|Yok eder bir `packaged_task` nesne.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get_future](#get_future)|Döndürür bir [gelecekteki](../standard-library/future-class.md) aynı olan nesneyi ilişkili zaman uyumsuz durumu.|
-|[make_ready_at_thread_exit](#make_ready_at_thread_exit)|İlişkili zaman uyumsuz durumunda depolanır ve otomatik olarak döndürülen değer depolayan aranabilir nesnesi çağırır.|
-|[Sıfırla](#reset)|Zaman uyumsuz işlemin ilişkili durumu değiştirir.|
-|[Değiştirme](#swap)|Belirtilen bir nesneye değeriyle ilişkili zaman uyumsuz durum değiş tokuş eder.|
-|[valid](#valid)|Nesnenin ilişkili bir zaman uyumsuz durum olup olmadığını belirtir.|
+|[get_future](#get_future)|Döndürür bir [gelecekteki](../standard-library/future-class.md) nesnesi aynı ilişkilendirilmiş zaman uyumsuz duruma.|
+|[make_ready_at_thread_exit](#make_ready_at_thread_exit)|İlişkili zaman uyumsuz durumu içerisinde saklanan ve döndürülen değeri atomik olarak depolar çağrılabilir nesne çağırır.|
+|[Sıfırlama](#reset)|İlişkili zaman uyumsuz durumu değiştirir.|
+|[değiştirme](#swap)|İlişkili zaman uyumsuz duruma, belirtilen bir nesnenin ile değiştirir.|
+|[valid](#valid)|Nesnenin ilişkili bir zaman uyumsuz duruma sahip olup olmadığını belirtir.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[packaged_task::operator=](#op_eq)|İlişkili bir zaman uyumsuz durumu belirtilen bir nesneden aktarır.|
-|[packaged_task::operator()](#op_call)|İlişkili zaman uyumsuz durumunda depolanır, otomatik olarak döndürülen değer depolayan ve durumunu ayarlar aranabilir nesnesi çağırır *hazır*.|
-|[packaged_task::operator bool](#op_bool)|Nesnenin ilişkili bir zaman uyumsuz durum olup olmadığını belirtir.|
+|[packaged_task::operator=](#op_eq)|Belirtilen bir nesneden bir ilişkili zaman uyumsuz durumu aktarır.|
+|[packaged_task::operator()](#op_call)|İlişkili zaman uyumsuz durumu içerisinde saklanan, atomik olarak döndürülen değeri depolar ve durumu ayarlar çağrılabilir nesne çağırır *hazır*.|
+|[packaged_task::operator bool](#op_bool)|Nesnenin ilişkili bir zaman uyumsuz duruma sahip olup olmadığını belirtir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<gelecekteki >
+**Başlık:** \<gelecek >
 
 **Namespace:** std
 
 ## <a name="get_future"></a>  packaged_task::get_future
 
-Türünde bir nesne döndürür `future<Ty>` aynı olan *zaman uyumsuz durum ilişkili*.
+Türünde bir nesne döndürür `future<Ty>` aynı olan *ilişkili zaman uyumsuz durumu*.
 
 ```cpp
 future<Ty> get_future();
@@ -91,13 +91,13 @@ future<Ty> get_future();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `packaged_task` nesnesinin ilişkili bir zaman uyumsuz durumu yok, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) hata kodunu olan `no_state`.
+Varsa `packaged_task` nesne bir ilişkili zaman uyumsuz duruma sahip değil, bu yöntem bir [future_error](../standard-library/future-error-class.md) bir hata koduna sahip `no_state`.
 
-Bu yöntem için zaten çağrılmış bir `packaged_task` aynı olan nesneyi ilişkili zaman uyumsuz durumu, yöntemi atar bir `future_error` hata kodunu olan `future_already_retrieved`.
+Bu yöntem için zaten çağrılmış bir `packaged_task` nesnesi aynı ilişkilendirilmiş zaman uyumsuz duruma, çağırılıyorsa yöntem bir `future_error` bir hata koduna sahip `future_already_retrieved`.
 
 ## <a name="make_ready_at_thread_exit"></a>  packaged_task::make_ready_at_thread_exit
 
-Depolanan aranabilir nesnesi çağırır *zaman uyumsuz durum ilişkili* ve döndürülen değer otomatik olarak depolar.
+Depolanan çağrılabilir nesne çağırır *ilişkili zaman uyumsuz durumu* ve döndürülen değeri atomik olarak depolar.
 
 ```cpp
 void make_ready_at_thread_exit(ArgTypes... args);
@@ -105,17 +105,17 @@ void make_ready_at_thread_exit(ArgTypes... args);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `packaged_task` nesnesi, ilişkili bir zaman uyumsuz durum yoksa, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) hata kodunu olan `no_state`.
+Varsa `packaged_task` bir ilişkili zaman uyumsuz durumu nesnesi yoksa, bu yöntem bir [future_error](../standard-library/future-error-class.md) bir hata koduna sahip `no_state`.
 
-Varsa bu yöntemi veya [make_ready_at_thread_exit](#make_ready_at_thread_exit) için zaten çağrılmış bir `packaged_task` aynı olan nesneyi ilişkili zaman uyumsuz durumu, yöntemi atar bir `future_error` hata kodunu olan `promise_already_satisfied`.
+Bu yöntem veya [make_ready_at_thread_exit](#make_ready_at_thread_exit) için zaten çağrılmış bir `packaged_task` nesnesi aynı ilişkilendirilmiş zaman uyumsuz duruma, çağırılıyorsa yöntem bir `future_error` bir hata koduna sahip `promise_already_satisfied`.
 
-Aksi takdirde, bu işleç çağırır `INVOKE(fn, args..., Ty)`, burada *fn* ilişkili zaman uyumsuz durumunda depolanan aranabilir nesnesidir. Herhangi bir döndürülen değer otomatik olarak ilişkili zaman uyumsuz durum döndürülen sonuç depolanır.
+Aksi takdirde, bu işlecini çağıran `INVOKE(fn, args..., Ty)`burada *fn* ilişkili zaman uyumsuz durumu içerisinde saklanan çağrılabilir nesnedir. Döndürülen herhangi bir değeri atomik olarak ilişkili zaman uyumsuz duruma döndürülen sonucu olarak depolanır.
 
-Tersine için [packaged_task:: operator()](#op_call), ilişkili zaman uyumsuz durum ayarlanmazsa `ready` kadar tüm iş parçacığı yerel nesneleri çağıran iş parçacığı yok. Genellikle, çağıran iş parçacığı çıkar kadar ilişkili zaman uyumsuz durumunu engellenmiş iş parçacıklarının engeli değildir.
+Tersine [packaged_task:: operator()](#op_call), ilişkili zaman uyumsuz durumu olarak ayarlanmazsa `ready` çağıran iş parçacığındaki tüm iş parçacığı-yerel nesneleri yok olana kadar. Genellikle, çağıran iş parçacığı çıkana kadar ilişkili zaman uyumsuz durumda engellenen iş parçacıklarının engeli değildir.
 
 ## <a name="op_eq"></a>  packaged_task::operator =
 
-Aktarımları *zaman uyumsuz durum ilişkili* belirtilen bir nesneden.
+Aktarımları *ilişkili zaman uyumsuz durumu* belirtilen bir nesneden.
 
 ```cpp
 packaged_task& operator=(packaged_task&& Right);
@@ -123,7 +123,7 @@ packaged_task& operator=(packaged_task&& Right);
 
 ### <a name="parameters"></a>Parametreler
 
-`Right` A `packaged_task` nesnesi.
+*Sağ* A `packaged_task` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -131,11 +131,11 @@ packaged_task& operator=(packaged_task&& Right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleminden sonra `Right` ilişkili bir zaman uyumsuz durum artık sahip değil.
+İşlemden sonra *sağ* artık bir ilişkili zaman uyumsuz duruma sahip değil.
 
 ## <a name="op_call"></a>  packaged_task:: operator()
 
-Depolanan aranabilir nesnesi çağırır *zaman uyumsuz durum ilişkili*, otomatik olarak döndürülen değer depolar ve durumunu ayarlar *hazır*.
+Depolanan çağrılabilir nesne çağırır *ilişkili zaman uyumsuz durumu*atomik olarak döndürülen değeri depolar ve durumu ayarlar *hazır*.
 
 ```cpp
 void operator()(ArgTypes... args);
@@ -143,15 +143,15 @@ void operator()(ArgTypes... args);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `packaged_task` nesnesi, ilişkili bir zaman uyumsuz durum yoksa, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) hata kodunu olan `no_state`.
+Varsa `packaged_task` bir ilişkili zaman uyumsuz durumu nesnesi yoksa, bu yöntem bir [future_error](../standard-library/future-error-class.md) bir hata koduna sahip `no_state`.
 
-Varsa bu yöntemi veya [make_ready_at_thread_exit](#make_ready_at_thread_exit) için zaten çağrılmış bir `packaged_task` aynı olan nesneyi ilişkili zaman uyumsuz durumu, yöntemi atar bir `future_error` hata kodunu olan `promise_already_satisfied`.
+Bu yöntem veya [make_ready_at_thread_exit](#make_ready_at_thread_exit) için zaten çağrılmış bir `packaged_task` nesnesi aynı ilişkilendirilmiş zaman uyumsuz duruma, çağırılıyorsa yöntem bir `future_error` bir hata koduna sahip `promise_already_satisfied`.
 
-Aksi takdirde, bu işleç çağırır `INVOKE(fn, args..., Ty)`, burada *fn* ilişkili zaman uyumsuz durumunda depolanan aranabilir nesnesidir. Herhangi bir değeri otomatik olarak ilişkili zaman uyumsuz durum döndürülen sonuç depolanır ve durumu döndürülen için hazır. Sonuç olarak, ilişkili zaman uyumsuz durumunu engellenmiş iş parçacığı sayısı engeli haline gelir.
+Aksi takdirde, bu işlecini çağıran `INVOKE(fn, args..., Ty)`burada *fn* ilişkili zaman uyumsuz durumu içerisinde saklanan çağrılabilir nesnedir. Tüm döndürülen değeri atomik olarak ilişkili zaman uyumsuz duruma döndürülen sonucu olarak depolanır ve durumunu ayarlamak için hazır. Sonuç olarak, ilişkili aman uyumsuz durumda engellenen iş parçacıklarının engeli kaldırılır.
 
 ## <a name="op_bool"></a>  packaged_task::operator bool
 
-Nesne sahip olup olmadığını belirten bir `associated asynchronous state`.
+Nesne olup olmadığını belirten bir `associated asynchronous state`.
 
 ```cpp
 operator bool() const noexcept;
@@ -159,11 +159,11 @@ operator bool() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` nesnenin ilişkili bir zaman uyumsuz durum varsa; Aksi takdirde `false`.
+**doğru** ilişkili zaman uyumsuz durumu; nesne varsa, aksi takdirde, **false**.
 
 ## <a name="packaged_task"></a>  packaged_task::packaged_task Oluşturucusu
 
-Oluşturan bir `packaged_task` nesnesi.
+Oluşturur bir `packaged_task` nesne.
 
 ```cpp
 packaged_task() noexcept;
@@ -178,25 +178,25 @@ template <class Fn, class Alloc>
 
 ### <a name="parameters"></a>Parametreler
 
-`Right` A `packaged_task` nesnesi.
+*Sağ* A `packaged_task` nesne.
 
-`alloc` Bellek ayırıcısında. Daha fazla bilgi için bkz: [ \<allocators >](../standard-library/allocators-header.md).
+*ayırma* bellek ayırıcı. Daha fazla bilgi için [ \<ayırıcılar >](../standard-library/allocators-header.md).
 
-`fn` Bir işlev nesnesidir.
+*fn* bir işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucusu yapıları bir `packaged_task` hiçbir nesne *zaman uyumsuz durum ilişkili*.
+İlk Oluşturucu yapıları bir `packaged_task` hiçbir nesne *ilişkili zaman uyumsuz durumu*.
 
-İkinci oluşturucu yapıları bir `packaged_task` nesne ve ilişkili zaman uyumsuz durumundan aktarımı `Right`. İşleminden sonra `Right` ilişkili bir zaman uyumsuz durum artık sahip değil.
+İkinci oluşturucu yapıları bir `packaged_task` nesnesini ve ilişkili zaman uyumsuz durumu aktarır *sağ*. İşlemden sonra *sağ* artık bir ilişkili zaman uyumsuz duruma sahip değil.
 
-Üçüncü Oluşturucusu yapıları bir `packaged_task` bir kopyasına sahip nesne `fn` ilişkili zaman uyumsuz durumundayken depolanır.
+Üçüncü Oluşturucu yapıları bir `packaged_task` bir kopyasına sahip nesne *fn* , ilişkili zaman uyumsuz durumunda depolanan.
 
-Dördüncü Oluşturucusu yapıları bir `packaged_task` bir kopyasına sahip nesne `fn` ilişkili zaman uyumsuz durumundayken depolanır ve kullandığı `alloc` bellek ayırma için.
+Dördüncü Oluşturucu yapıları bir `packaged_task` bir kopyasına sahip nesne *fn* , ilişkili zaman uyumsuz durumunda depolanan ve kullandığı `alloc` bellek ayırma için.
 
 ## <a name="dtorpackaged_task_destructor"></a>  packaged_task:: ~ packaged_task yıkıcısı
 
-Bozar bir `packaged_task` nesnesi.
+Yok eder bir `packaged_task` nesne.
 
 ```cpp
 ~packaged_task();
@@ -204,11 +204,11 @@ Bozar bir `packaged_task` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *zaman uyumsuz durum ilişkili* değil *hazır*, yıkıcı depoları bir [future_error](../standard-library/future-error-class.md) hata kodunu sahip özel durum `broken_promise` sonucu olarak ilişkili zaman uyumsuz durumu ve engeli hale ilişkili zaman uyumsuz durumunu engellenmiş iş parçacığı sayısı.
+Varsa *ilişkili zaman uyumsuz durumu* değil *hazır*, yok edici depoları bir [future_error](../standard-library/future-error-class.md) bir hata koduna sahip bir özel durum `broken_promise` sonucu olarak ilişkili zaman uyumsuz durumu ve engeli ilişkili zaman uyumsuz durumda engellenen tüm iş parçacıkları.
 
 ## <a name="reset"></a>  packaged_task::reset
 
-Yeni bir kullanan *zaman uyumsuz durum ilişkili* varolan değiştirmek için zaman uyumsuz durum ilişkilendirilmiş.
+Yeni bir kullanan *ilişkili zaman uyumsuz durumu* ilişkili zaman uyumsuz durumunu değiştirin.
 
 ```cpp
 void reset();
@@ -216,11 +216,11 @@ void reset();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gerçekte, bu yöntem yürütür `*this = packaged_task(move(fn))`, burada *fn* bu nesne için ilişkili zaman uyumsuz durumunda depolanan işlev nesnesidir. Bu nedenle, nesnenin durumunu temizlenir, ve [get_future](#get_future), [operator()](#op_call), ve [make_ready_at_thread_exit](#make_ready_at_thread_exit) yeni oluşturulan gibi bir nesne üzerinde çağrılabilir.
+Aslında, bu yöntem çalıştırır `*this = packaged_task(move(fn))`burada *fn* bu nesne için ilişkili zaman uyumsuz durumunda depolanan bir işlev nesnesidir. Bu nedenle, bir nesnenin durumu temizlenir, ve [get_future](#get_future), [operator()](#op_call), ve [make_ready_at_thread_exit](#make_ready_at_thread_exit) yeni oluşturulmuş gibi bir nesne üzerinde çağrılabilir.
 
 ## <a name="swap"></a>  packaged_task::Swap
 
-Belirtilen bir nesneye değeriyle ilişkili zaman uyumsuz durum değiş tokuş eder.
+İlişkili zaman uyumsuz duruma, belirtilen bir nesnenin ile değiştirir.
 
 ```cpp
 void swap(packaged_task& Right) noexcept;
@@ -228,11 +228,11 @@ void swap(packaged_task& Right) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Right` A `packaged_task` nesnesi.
+*Sağ* A `packaged_task` nesne.
 
 ## <a name="valid"></a>  packaged_task::valid
 
-Nesne sahip olup olmadığını belirten bir `associated asynchronous state`.
+Nesne olup olmadığını belirten bir `associated asynchronous state`.
 
 ```cpp
 bool valid() const;
@@ -240,9 +240,9 @@ bool valid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` nesnenin ilişkili bir zaman uyumsuz durum varsa; Aksi takdirde `false`.
+**doğru** ilişkili zaman uyumsuz durumu; nesne varsa, aksi takdirde, **false**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<sonraki >](../standard-library/future.md)<br/>
+[\<gelecek >](../standard-library/future.md)<br/>

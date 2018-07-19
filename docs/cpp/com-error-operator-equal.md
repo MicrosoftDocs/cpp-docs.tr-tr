@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 744a4b344a336ec502e184e9be9ffb236c863708
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5b358bc38ad055ed5e485dea566238de06242e7f
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410638"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37942035"
 ---
 # <a name="comerroroperator-"></a>_com_error::operator =
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Var olan atar `_com_error` başka bir nesne.  
+ Mevcut bir atar `_com_error` başka bir nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ ms.locfileid: "32410638"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `that`  
- A `_com_error` nesnesi.  
+ *,*  
+ A `_com_error` nesne.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_error Sınıfı](../cpp/com-error-class.md)

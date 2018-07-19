@@ -15,38 +15,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bbe048ee6667aaf71b2a3cf52e82993f90ab1c7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ed6f9a11b6cf2a0045729acbc79d8e45103064ea
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419147"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940192"
 ---
 # <a name="lvalues-and-rvalues-visual-c"></a>Lvalues ve Rvalues (Visual C++)
 
-Her C++ ifadesi bir türe sahip ve ait bir *değeri kategori*. Değer kategorileri derleyiciler oluştururken, kopyalama ve ifade değerlendirme sırasında geçici nesneleri taşıma izlemeniz gereken kuralların temelidir.
+Her bir C++ ifadesi bir türe sahiptir ve ait olduğu bir *değeri kategori*. Değer kategorileri derleyiciler oluşturma, kopyalama ve geçici nesneler ifadesi değerlendirmesi sırasında taşıma sırada izlemelidir kuralları için temelidir.
 
- C ++ 17 standart ifade değeri kategorileri şu şekilde tanımlar:
+ C ++ 17 standardına ifade değeri kategorileri gibi tanımlar:
 
-- A *glvalue* , değerlendirme bir nesne, bit alanı veya işlevi kimliğini belirleyen bir ifadedir.
-- A *prvalue* , değerlendirme bir nesneyi veya bir bit alanı başlatır veya görünür durumda içerik tarafından belirtildiği gibi bir işlecinin işleneni değerini hesaplar bir ifadedir.
-- Bir *xvalue* bir nesneye veya bit alanı (genellikle yaşam süresinin sonuna yakın olduğundan), kaynaklara yeniden kullanılabilir gösterir glvalue değil. [Örnek: rvalue başvuru (8.3.2) içeren ifadeler belirli türde bir dönüş türü olan bir rvalue başvuru işlevi çağrısı veya bir rvalue başvuru türüne dönüştürme gibi x değerleri verim. ]
-- Bir *lvalue* bir xvalue değil glvalue değil.
-- Bir *rvalue* bir prvalue ya da bir xvalue.
+- A *glvalue* bir ifadedir, değerlendirme, bir nesne, bit alanı veya işlev kimliğini belirler.
+- A *prvalue* ifade, değerlendirme nesneyi ya da bir bit alanına başlatır veya görünür durumda bağlam tarafından belirtildiği gibi bir işlecinin işleneni değerini hesaplar.
+- Bir *xvalue* bir nesne veya bit alanı (genellikle yaşam sonuna yakın olduğundan) kaynaklarını yeniden kullanılabilir gösteren bir glvalue olduğu. [Örnek: belirli türde bir rvalue başvuruları (8.3.2) içeren ifadeler yield, dönüş türü bir rvalue başvurusu olan bir işlev çağrısı veya rvalue başvuru türüne atamak gibi x değerleri. ]
+- Bir *lvalue* bir xvalue değil bir glvalue olduğu.
+- Bir *rvalue* bir prvalue veya bir xvalue.
 
-Aşağıdaki diyagramda kategorileri arasındaki ilişkiler gösterilmektedir:
+Aşağıdaki diyagramda, kategoriler arasındaki ilişkiler gösterilmektedir:
 
  ![C++ ifade değeri kategorileri](media/value_categories.png "C++ ifade değeri kategorileri")
 
- Bir lvalue programınıza erişebilirsiniz bir adresi vardır. Lvalue ifade örnekleri dahil olmak üzere değişken adları `const` değişkenleri, dizi öğeleri lvalue başvuru, bit alanları, birleşimler ve sınıf üyeleri dönen çağrıları işlev.
+ Lvalue programınızı erişebilen bir adresi vardır. Lvalue örnekleri dahil olmak üzere değişken adları dahil **const** değişkenleri, dizi öğelerinin işlevi bir lvalue başvurusuna, bit alanları, birleşimler ve sınıf üyeleri dönen çağrıları.
 
- Prvalue ifade programınız tarafından erişilebilen bir adresi vardır. Prvalue ifadeleri örnekleri değişmez değerleri, bir başvuru olmayan türü dönen işlev çağrıları ve ifade evalution sırasında ancak erişilebilir yalnızca derleyici tarafından oluşturulan geçici nesneleri içerir.
+ Programınız tarafından erişilebilir olan adresi bir prvalue ifadesi yok. Değişmez değerler, bir başvuru türü olmayan dönen işlev çağrıları ve ifade evalution sırasında ancak erişilebilir yalnızca derleyici tarafından oluşturulan geçici nesneler prvalue örnekleri içerir.
 
- Bir adresi xvalue ifade içeriyor, erişilemez, program tarafından ancak ifade erişim sağlayan bir rvalue başvuru başlatmak için kullanılabilir. Örnekler dizi veya nesne rvalue başvuru olduğu için üye ifadeleri rvalue başvuru ve dizi alt simge, üye ve işaretçi döndüren işlev çağrılarını içerir.
+ Xvalue ifade bir adresi olduğundan, programınız tarafından artık erişilebilir ancak ifade erişim sağlayan bir rvalue başvurusu başlatmak için kullanılabilir. Diziye veya nesneye bir rvalue başvurusu olduğu bir rvalue başvurusu ve dizi indisi, üye ve işaretçi üye ifadeleri dönen işlev çağrıları örneklerindendir.
 
 ## <a name="example"></a>Örnek
 
- Aşağıdaki örnek, birkaç doğru ve yanlış kullanım lvalues ve rvalues gösterir:
+ Aşağıdaki örnek, çeşitli doğru ve hatalı kullanımları lvalues ve rvalues gösterir:
 
 ```cpp
 // lvalues_and_rvalues2.cpp
@@ -74,10 +74,10 @@ int main()
 ```
 
 > [!NOTE]
-> İşleçleri aşırı yüklü değil, bu konudaki örnekler doğru ve yanlış kullanımı gösterilmiştir. İşleç aşırı yüklemesi tarafından bir ifade gibi yapabileceğiniz `j * 4` bir lvalue.
+> Değil işleçler aşırı yüklendiğinde örnekler bölümüne doğru ve yanlış kullanımı gösterir. Aşırı yükleme işleçleri tarafından bir ifade gibi yapabileceğiniz `j * 4` lvalue.
 
-Koşulları *lvalue* ve *rvalue* nesne başvuruları başvurduğunuzda genellikle kullanılır. Başvurular hakkında daha fazla bilgi için bkz: [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md) ve [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Koşulları *lvalue* ve *rvalue* nesne başvuruları başvurduğunuzda sık sık kullanılır. Başvurular hakkında daha fazla bilgi için bkz. [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md) ve [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
- [Temel kavramları](../cpp/basic-concepts-cpp.md) [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md) [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md)
+ [Temel kavramlar](../cpp/basic-concepts-cpp.md) [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md) [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md)

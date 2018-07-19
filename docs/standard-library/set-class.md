@@ -96,16 +96,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c22a260130d38a4ed1dfbf1a49bbc5d670357c3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d549d3440de902bf9888fa399e5636b93001ca29
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33865745"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964892"
 ---
 # <a name="set-class"></a>set Sınıfı
 
-C++ Standart Kitaplığı kapsayıcı sınıfı kümesi depolanması ve alınması bulunan öğeleri değerlerini benzersiz ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hizmet veren bir koleksiyon verileri için kullanılır. Bir kümedeki bir öğenin değeri doğrudan değiştirilemez. Bunun yerine, eski değerleri silmeniz ve yeni değerlere sahip öğeler eklemeniz gerekir.
+C++ Standart Kitaplığı kapsayıcı sınıfı kümesi, içerdiği öğelerin değerlerinin benzersiz olduğu ve verilerin otomatik sıralamasına göre anahtar değerler olarak hizmet verdikleri bir koleksiyondan verilerin alınmasını ve depolama için kullanılır. Bir kümedeki bir öğenin değeri doğrudan değiştirilemez. Bunun yerine, eski değerleri silmeniz ve yeni değerlere sahip öğeler eklemeniz gerekir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -118,13 +118,13 @@ class set
 
 ### <a name="parameters"></a>Parametreler
 
-`Key` Kümesinde depolanması için öğe veri türü.
+*Anahtar* kümede depolanacak öğe veri türü.
 
-`Traits` İşlev nesnesi sağlayan türü göreli sıralarına kümesindeki belirlemek için sıralama anahtarları olarak iki öğenin değerleri karşılaştırabilirsiniz. Bu bağımsız değişken isteğe bağlıdır ve ikili karşılaştırma **daha az**  *\<anahtar >* varsayılan değerdir.
+*Nitelikler* iki öğenin değerlerini kümedeki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul **daha az**  *\<anahtarı >* varsayılan değerdir.
 
-C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` tür parametresi yok koşulu. Daha fazla bilgi için bkz: [ilişkilendirilebilir kapsayıcılarında heterojen arama](../standard-library/stl-containers.md#sequence_containers)
+C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` hiçbir tür parametreleri olan koşul. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
-`Allocator` Kümenin ayırma ve bellek ayırmayı kaldırma hakkında ayrıntılar yalıtan saklı ayırıcısı nesneyi temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcısı ***\<anahtar >.*
+*Allocator* kümenin ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer: **ayırıcı ***\<Key >.*
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -144,11 +144,11 @@ Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve eklem
 
 Küme, değerleri onların kendi anahtarlarıyla ilişkilendiren koşullar uygulama tarafından karşılandığında seçimin ilişkili kapsayıcısı olmalıdır. Kümenin öğeleri benzersizdir ve kendi sıralama anahtarı olarak hizmet eder. Bu tür bir yapı modeli, sözcüklerin yalnızca bir defa geçebildiği sıralı bir sözcükler listesindedir. Sözcüklerin birden çok defa geçmelerine izin verilirse, bir çoklu küme uygun bir kapsayıcı yapısı olacaktır. Değerlerin benzersiz anahtar sözcükler listesine eklenmesi gerekirse, bir eşlem verileri kapsayacak uygun bir yapı olacaktır. Bunun yerine, anahtarlar benzersiz değilse, seçilecek kapsayıcı bir çoklu eşlem olurdu.
 
-Denetimleri saklı işlev nesnesi türü çağırarak sırası kümesi siparişleri [key_compare](#key_compare). Üye işlevini çağırarak erişilebilir bir karşılaştırma işlevi bu saklı nesnesidir [key_comp](#key_comp). Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. İkili karşılaştırma *f*( *x, y*) iki bağımsız değişken nesnelere sahip bir işlev nesnesidir *x* ve *y* ve dönüş değeri  **doğru** veya **false**. İkili karşılaştırma dönüşsüz, ters ve geçişli ve burada iki nesneleri eşdeğer geçişli ise, sıralama katı bir zayıf olduğu bir kümesi üzerinde uygulanan sıralama *x* ve *y* olarak tanımlanır eşdeğer olduğunda her ikisi de *f*( *x, y*) ve *f*( *y, x*) yanlış ise. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
+Belirlenen bir türünde depolanmış bir işlev nesnesi çağırarak denetlediği diziyi sıralar [key_compare](#key_compare). Depolanan bu nesne işlevi çağrılarak erişilebilen bir karşılaştırma işlevidir [key_comp](#key_comp). Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşula *f*( *x, y*) iki bağımsız değişken nesnelere sahip bir işlev nesnesidir *x* ve *y* ve dönüş değeri  **doğru** veya **false**. Bir kümesinde ikili koşul dönüşsüz, ters ve geçişli ve denklik geçişli ise, burada iki nesne sıralama katı zayıf sıralamadır *x* ve *y* olarak tanımlanır eşdeğer when hem *f*( *x, y*) ve *f*( *y, x*) false. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
-C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` tür parametresi yok koşulu. Daha fazla bilgi için bkz: [ilişkilendirilebilir kapsayıcılarında heterojen arama](../standard-library/stl-containers.md#sequence_containers)
+C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` hiçbir tür parametreleri olan koşul. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
-Sınıf üyesi işlevleri ancak bir çift yönlü yineleyici kümesi sınıfı tarafından sağlanan yineleyici olan [Ekle](#insert) ve [ayarlamak](#set) daha zayıf bir giriş yineleyici şablonu parametreleri olarak ele sürümlerde, çift yönlü yineleyiciler sınıfı tarafından garanti olandan daha az işlevselliği gereksinimleri verilmiştir. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi gereksinimler kümesi vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu en az işlevselliği kümesidir, ancak anlamlı yineleyiciler çeşitli hakkında iletişim kurabilmesi için yeterlidir [ `First`, `Last`) sınıfının üye işlevleri bağlamında.
+Küme sınıfı tarafından sağlanan yineleyici çift yönlüdür, ancak sınıf üyesi işlevleri olan [Ekle](#insert) ve [ayarlamak](#set) şablon parametresi olarak daha zayıf bir giriş yineleyicisini alan sürümlere sahip olan işlevsellik gereksinimleri tarafından çift yönlü Yineleyicilerin sınıfında garanti daha düşüktür. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi gereksinimler kümesi vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu bir en düşük işlevsellik kümesidir, ancak Yineleyicilerin aralığı hakkında konuşabilmek için yeterlidir [ `First`, `Last`) sınıfın üye işlevleri bağlamında.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -160,11 +160,11 @@ Sınıf üyesi işlevleri ancak bir çift yönlü yineleyici kümesi sınıfı t
 
 |Tür adı|Açıklama|
 |-|-|
-|[allocator_type](#allocator_type)|Temsil eden bir tür `allocator` kümesi nesnesi için sınıf.|
-|[const_iterator](#const_iterator)|Çift yönlü yineleyici bu can sağlayan bir türü okuma bir `const` kümesindeki öğesi.|
-|[const_pointer](#const_pointer)|Bir işaretçi sağlayan bir türü bir `const` kümesinde öğesi.|
-|[const_reference](#const_reference)|Bir başvuru sağlayan bir türü bir `const` okumak ve gerçekleştirmek için kümesinde depolanan öğesi `const` işlemleri.|
-|[const_reverse_iterator](#const_reverse_iterator)|Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma `const` kümesindeki öğesi.|
+|[allocator_type](#allocator_type)|Temsil eden bir tür `allocator` küme nesnesi için sınıf.|
+|[const_iterator](#const_iterator)|Çift yönlü bir yineleyici sağlayan tür okuma bir **const** kümedeki öğe.|
+|[const_pointer](#const_pointer)|Bir işaretçi sağlayan bir tür bir **const** küme içindeki öğeye.|
+|[const_reference](#const_reference)|Bir başvuru sağlayan bir tür bir **const** okumak ve gerçekleştirmek için bir küme içinde depolanan öğenin **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|Çift yönlü bir yineleyici sağlayan tür herhangi okuma **const** kümedeki öğe.|
 |[difference_type](#difference_type)|Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki küme öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.|
 |[Yineleyici](#iterator)|Küme içindeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü yineleyiciler sağlayan tür.|
 |[key_compare](#key_compare)|Küme içindeki iki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan bir tür.|
@@ -180,7 +180,7 @@ Sınıf üyesi işlevleri ancak bir çift yönlü yineleyici kümesi sınıfı t
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Başlangıç](#begin)|Küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.|
+|[başlayın](#begin)|Küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.|
 |[cbegin](#cbegin)|Küme içindeki ilk öğeyi ele alan sabit bir yineleyici döndürür.|
 |[cend](#cend)|Küme içindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndürür.|
 |[Temizle](#clear)|Bir kümenin tüm öğelerini siler.|
@@ -190,11 +190,11 @@ Sınıf üyesi işlevleri ancak bir çift yönlü yineleyici kümesi sınıfı t
 |[emplace](#emplace)|Bir küme içine yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_hint](#emplace_hint)|Bir küme içine, bir yerleşim ipucuyla birlikte yerinde oluşturulmuş bir öğe ekler.|
 |[boş](#empty)|Kümenin boş olup olmadığını sınar.|
-|[Bitiş](#end)|Küme içindeki son öğeyi takip eden konumu ele alan bir yineleyici döndürür.|
+|[Son](#end)|Küme içindeki son öğeyi takip eden konumu ele alan bir yineleyici döndürür.|
 |[equal_range](#equal_range)|Yineleyicilerin bir çiftini, sırasıyla belirtilen anahtardan daha büyük olan bir anahtar ile küme içindeki ilk öğeye ve anahtardan büyük veya ona eşit bir anahtar ile kümedeki ilk öğeye döndürür.|
 |[silme](#erase)|Küme içindeki bir öğeyi veya öğelerin aralığını belirtilen konumlardan kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
 |[Bul](#find)|Belirtilen anahtara denk bir anahtara sahip bir küme içindeki öğenin konumunu ele alan bir yineleyici döndürür.|
-|[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` kümesi oluşturmak için kullanılan nesne.|
+|[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` küme oluşturmak için kullanılan nesne.|
 |[Ekle](#insert)|Bir küme içine bir öğe veya öğe aralığı ekler.|
 |[key_comp](#key_comp)|Bir küme içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|
 |[lower_bound](#lower_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla küme içindeki ilk öğeye döndürür.|
@@ -202,7 +202,7 @@ Sınıf üyesi işlevleri ancak bir çift yönlü yineleyici kümesi sınıfı t
 |[rbegin](#rbegin)|Ters çevrilen küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.|
 |[rend](#rend)|Ters çevrilen küme içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.|
 |[Boyutu](#size)|Kümedeki öğelerin sayısını döndürür.|
-|[Değiştirme](#swap)|İki kümenin öğelerini birbiriyle değiştirir.|
+|[değiştirme](#swap)|İki kümenin öğelerini birbiriyle değiştirir.|
 |[upper_bound](#upper_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtarla küme içindeki ilk öğeye döndürür.|
 |[value_comp](#value_comp)|Küme içindeki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|
 
@@ -214,13 +214,13 @@ Sınıf üyesi işlevleri ancak bir çift yönlü yineleyici kümesi sınıfı t
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<ayarlamak >
+**Başlık:** \<kümesi >
 
 **Namespace:** std
 
 ## <a name="allocator_type"></a>  set::allocator_type
 
-Allocator sınıfı kümesi nesnesi için temsil eden tür.
+Küme nesnesi için ayırıcı sınıf temsil eden tür.
 
 ```cpp
 typedef Allocator allocator_type;
@@ -228,15 +228,15 @@ typedef Allocator allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-**allocator_type** şablon parametresi için bir eş anlamlı olduğundan [ayırıcısı](../standard-library/set-class.md).
+`allocator_type` Şablon parametresi için bir eşanlamlı olduğu [ayırıcı](../standard-library/set-class.md).
 
-Şablon parametresi olan öğeleri, sipariş için bir çoklu küme kullanan işlevi nesnesi döndüren `Allocator`.
+Şablon parametresi olan bir çoklu küme, öğeleri düzenlemek amacıyla kullanan işlev nesnesini döndürür `Allocator`.
 
 Daha fazla bilgi için `Allocator`, Açıklamalar bölümüne bakın [set sınıfı](../standard-library/set-class.md) konu.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [get_allocator](#get_allocator) kullanan bir örnek `allocator_type`.
+Örneğin bakın [get_allocator](#get_allocator) kullanan bir örnek için `allocator_type`.
 
 ## <a name="begin"></a>  set::Begin
 
@@ -250,11 +250,11 @@ iterator begin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk öğe kümesini veya boş başarılı konumunda adresleme çift yönlü yineleyici.
+Küme veya sonra gelen konumu adresleyen bir boş küme içindeki ilk öğeyi ele alan bir çift yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa dönüş değerini **başlamak** atanmış bir `const_iterator`, öğeleri kümesi nesnesi değiştirilemez. Varsa dönüş değerini **başlamak** atanmış bir **yineleyici**, öğeleri kümesi nesnesindeki değiştirilebilir.
+Varsa dönüş değeri `begin` atanan bir `const_iterator`, öğeleri kümesi nesnesi değiştirilemez. Varsa dönüş değeri `begin` atanan bir `iterator`, Küme nesnesi öğeleri değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -297,7 +297,7 @@ The first element of s1 is now 2
 
 ## <a name="cbegin"></a>  set::cbegin
 
-Döndürür bir `const` aralığın ilk öğe adresleri yineleyici.
+Döndürür bir **const** aralıktaki ilk öğeyi adresleyen bir yineleyici.
 
 ```cpp
 const_iterator cbegin() const;
@@ -305,13 +305,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `const` ilk öğede aralığı ya da yalnızca boş bir aralığın ötesinde konumunu işaret çift yönlü erişim yineleyici (boş bir aralığın için `cbegin() == cend()`).
+A **const** aralığı veya konuma boş bir aralığın ilk öğesine, çift yönlü erişim yineleyicisi (boş bir aralık için `cbegin() == cend()`).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile `cbegin`, öğeleri aralığında değiştirilemez.
+Dönüş değeri ile `cbegin`, aralıktaki öğeler değiştirilemez.
 
-Bu üye işlevi yerine kullanabileceğiniz `begin()` üye işlevi dönüş değeri garanti `const_iterator`. Genellikle, ile birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` bir değiştirilebilir için (olmayan `const`) destekleyen herhangi bir türde kapsayıcı `begin()` ve `cbegin()`.
+Bu üye işlevi yerine kullanabileceğiniz `begin()` üye işlev dönüş değeri olacağını garanti etmek için `const_iterator`. Genellikle birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` değiştirilebilir (olmayan **const**) destekleyen herhangi bir türdeki kapsayıcı `begin()` ve `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -323,7 +323,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  set::cend
 
-Döndürür bir `const` konumun yalnızca bir aralıkta son öğenin ötesinde adresleri yineleyici.
+Döndürür bir **const** konuma bir aralıktaki son öğeyi ele alan bir yineleyici.
 
 ```cpp
 const_iterator cend() const;
@@ -331,13 +331,13 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `const` yalnızca aralığın sonunu aşan işaret çift yönlü erişim yineleyici.
+A **const** aralığın sonunu yalnızca çift yönlü erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend` Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.
+`cend` bir yineleyicinin kendi aralığının sonunu geçmediğini sınamak için kullanılır.
 
-Bu üye işlevi yerine kullanabileceğiniz `end()` üye işlevi dönüş değeri garanti `const_iterator`. Genellikle, ile birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` bir değiştirilebilir için (olmayan `const`) destekleyen herhangi bir türde kapsayıcı `end()` ve `cend()`.
+Bu üye işlevi yerine kullanabileceğiniz `end()` üye işlev dönüş değeri olacağını garanti etmek için `const_iterator`. Genellikle birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` değiştirilebilir (olmayan **const**) destekleyen herhangi bir türdeki kapsayıcı `end()` ve `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -347,7 +347,7 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-Tarafından döndürülen değer `cend` değil başvuru yapıldı.
+Tarafından döndürülen değer `cend` kaldırılmamalıdır.
 
 ## <a name="clear"></a>  set::Clear
 
@@ -389,7 +389,7 @@ The size of the set after clearing is 0.
 
 ## <a name="const_iterator"></a>  set::const_iterator
 
-Çift yönlü yineleyici bu can sağlayan bir türü okuma bir **const** kümesindeki öğesi.
+Çift yönlü bir yineleyici sağlayan tür okuma bir **const** kümedeki öğe.
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -401,11 +401,11 @@ Bir tür `const_iterator` bir öğenin değerini değiştirmek için kullanılam
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [başlamak](#begin) kullanan bir örnek `const_iterator`.
+Örneğin bakın [başlamak](#begin) kullanan bir örnek için `const_iterator`.
 
 ## <a name="const_pointer"></a>  set::const_pointer
 
-Bir işaretçi sağlayan bir türü bir **const** kümesinde öğesi.
+Bir işaretçi sağlayan bir tür bir **const** küme içindeki öğeye.
 
 ```cpp
 typedef typename allocator_type::const_pointer const_pointer;
@@ -415,11 +415,11 @@ typedef typename allocator_type::const_pointer const_pointer;
 
 Bir tür `const_pointer` bir öğenin değerini değiştirmek için kullanılamaz.
 
-Çoğu durumda, bir [const_iterator](#const_iterator) const kümesi nesnesi öğelerinde erişmek için kullanılmalıdır.
+Çoğu durumda bir [const_iterator](#const_iterator) const kümesi nesnesindeki öğelere erişmek için kullanılmalıdır.
 
 ## <a name="const_reference"></a>  set::const_reference
 
-Bir başvuru sağlayan bir türü bir **const** okumak ve gerçekleştirmek için kümesinde depolanan öğesi **const** işlemleri.
+Bir başvuru sağlayan bir tür bir **const** okumak ve gerçekleştirmek için bir küme içinde depolanan öğenin **const** operations.
 
 ```cpp
 typedef typename allocator_type::const_reference const_reference;
@@ -460,7 +460,7 @@ The first element in the set is 10.
 
 ## <a name="const_reverse_iterator"></a>  set::const_reverse_iterator
 
-Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma **const** kümesindeki öğesi.
+Çift yönlü bir yineleyici sağlayan tür herhangi okuma **const** kümedeki öğe.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -468,11 +468,11 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_reverse_iterator` bir öğenin değerini değiştiremez ve kullanın ters kümesinde yinelemek için.
+Bir tür `const_reverse_iterator` kullanın ters kümesinde yinelemek için ve bir öğenin değerini değiştiremezsiniz.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.
+Örneğin bakın [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.
 
 ## <a name="count"></a>  set::Count
 
@@ -484,21 +484,21 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Öğeleri kümesinden eşleştirilmesi için anahtar.
+*anahtar* kümesinden eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-kümesi olan sıralama anahtarı parametre anahtarıyla eşleşen bir öğe içeriyorsa 1. 0 kümesi bir öğe ile eşleşen bir anahtarı içermiyor.
+1 küme sıralama anahtarı parametresi anahtarla eşleşen bir öğe içeriyorsa. kümesi ile eşleşen bir anahtarı bir öğe yoksa 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi aşağıdaki aralıkta öğe sayısını döndürür:
+Üye işlevi, şu aralıktaki öğelerin sayısını döndürür:
 
-[ `lower_bound` (_ *Anahtar* ), `upper_bound` (\_ *anahtar* )).
+[ `lower_bound` (_ *Anahtarı* ), `upper_bound` (\_ *anahtarı* )).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek set::count üye fonksiyonu kullanımını göstermektedir.
+Aşağıdaki örnek, set::count üye işlevinin kullanımını gösterir.
 
 ```cpp
 // set_count.cpp
@@ -541,13 +541,13 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir const ters kümesi ilk öğe adresleme veya ne unreversed kümesindeki son öğe olsaydı adresleme çift yönlü yineleyici ters çevrilir.
+Bir const geriye doğru ne ters çevrilmeyen küme içindeki son öğeyi adresleyen ters çevrilen küme içindeki ilk öğeyi ele alan ya da çift yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crbegin` Ters kümesiyle kullanılan gibi [başlamak](#begin) set ile kullanılır.
+`crbegin` ters çevrilen küme ile kullanılan gibi [başlamak](#begin) ile bir küme kullanılır.
 
-Dönüş değeri ile `crbegin`, kümesi nesnesi değiştirilemez.
+Dönüş değeri ile `crbegin`, Küme nesnesi değiştirilemez.
 
 ### <a name="example"></a>Örnek
 
@@ -587,15 +587,15 @@ const_reverse_iterator crend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir const ters kümesi (ilk öğe unreversed kümesinde öncesinde konum) son öğesi başarılı konumu adresleri çift yönlü yineleyici ters çevrilir.
+Bir const çift yönlü yineleyici (ters çevrilmeyen kümedeki ilk öğeyi önce gelen konum) ters çevrilen küme içindeki son öğeden sonra gelen konumu ele tersine çevirir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend` Ters kümesiyle kullanılan gibi [son](#end) set ile kullanılır.
+`crend` ters çevrilen küme ile kullanılan gibi [son](#end) ile bir küme kullanılır.
 
-Dönüş değeri ile `crend`, kümesi nesnesi değiştirilemez. Tarafından döndürülen değer `crend` değil başvuru yapıldı.
+Dönüş değeri ile `crend`, Küme nesnesi değiştirilemez. Tarafından döndürülen değer `crend` kaldırılmamalıdır.
 
-`crend` Ters yineleyici kendi kümesinin sonuna olup ulaştı için test etmek için kullanılabilir.
+`crend` olup ters yineleyici kendine sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -631,9 +631,9 @@ typedef typename allocator_type::difference_type difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`difference_type` Türü çıkarılmasıyla veya kapsayıcı yineleyiciler artırma döndürülür. `difference_type` Genellikle aralığında öğe sayısını temsil etmek için kullanılan *[Soyadı)* yineleyiciler arasında `first` ve `last`, gösterdiği öğesini içeren `first` ve aralığı öğeleri kadar ancak dahil değil, öğe işaret için tarafından `last`.
+`difference_type` Türü çıkarma veya kapsayıcının yineleyiciler artan döndürülür. `difference_type` Genellikle aralık içindeki öğelerin sayısını temsil etmek için kullanılan *[Soyadı)* yineleyici arasındaki `first` ve `last`, işaret ettiği öğe içeren `first` ve aralığı öğeleri kadar ancak dahil değil, öğe tarafından işaret edilen `last`.
 
-Ancak unutmayın `difference_type` kümesi, çıkarma yineleyiciler arasında yalnızca gibi ters çevrilebilir kapsayıcıları tarafından desteklenen çift yönlü yineleyiciler sınıfı içeren bir giriş yineleyici gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir rasgele erişim kapsayıcı vektör gibi tarafından sağlanan rasgele erişim yineleyiciler tarafından desteklenir.
+Ancak dikkat `difference_type` kümesi, yineleyici arasındaki çıkarma yalnızca gibi ters çevrilebilir kapsayıcıları tarafından desteklenen çift yönlü Yineleyicilerin sınıfında içeren bir giriş yineleyici gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir vektör gibi bir rastgele erişim kapsayıcı tarafından sağlanan rasgele erişim yineleyicileri tarafından desteklenmiyor.
 
 ### <a name="example"></a>Örnek
 
@@ -696,7 +696,7 @@ The number of elements in the set s1 is: 2.
 
 ## <a name="emplace"></a>  set::emplace
 
-(Hiçbir kopyalama veya taşıma işlemler gerçekleştirilir) yerinde oluşturulan bir öğe ekler.
+(Hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir) yerinde oluşturulmuş bir öğe ekler.
 
 ```cpp
 template <class... Args>
@@ -709,17 +709,17 @@ emplace(
 
 |Parametre|Açıklama|
 |-|-|
-|`args`|Öğenin değeri eşdeğer sıralı içermedikçe kümesine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
+|*bağımsız değişken*|Bir öğenin değerini eşdeğer sıralı bir öğe içermiyorsa kümesine eklenecek oluşturmak için iletilen bağımsız değişkenler.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [çifti](../standard-library/pair-structure.md) ekleme yaptıysanız, bool bileşen true değerini döndürür ve harita değeri sıralama, eşdeğer bir değeri olan bir öğe içeriyorsa false. Dönüş değeri çifti yineleyici bileşeninin (bool bileşen true ise) yeni bir öğe burada eklenmiş veya (bool bileşen false ise) öğesi zaten bulunduğu konumun adresini döndürür.
+A [çifti](../standard-library/pair-structure.md) ekleme yapıldıysa, bool bileşen true değerini döndürür ve harita değeri sıralama, eşdeğer bir değer olan bir öğe içeriyorsa false. Dönüş değeri çiftinin yineleyici bileşeni (bool bileşen true ise) burada yeni bir öğe eklendi veya (bool bileşen false ise) öğenin zaten bulunduğu adresini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyiciler veya başvuruları olmadığından bu işlev tarafından geçersiz kılınır.
+Yineleyiciler ya da başvuruları, bu işlev tarafından geçersiz kılınır.
 
-Bir özel durum, emplacement sırasında kapsayıcının durumu değiştirilemez.
+Yerleştirme sırasında bir özel durum oluşturulursa, kapsayıcının durumu değiştirilmez.
 
 ### <a name="example"></a>Örnek
 
@@ -778,7 +778,7 @@ int main()
 
 ## <a name="emplace_hint"></a>  set::emplace_hint
 
-Yerinde (hiçbir kopyalama veya taşıma işlemler gerçekleştirilir), yerleştirme İpucu ile oluşturulan bir öğe ekler.
+(Hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir) bir yerleşim ipucuyla birlikte yerinde oluşturulmuş bir öğe ekler.
 
 ```cpp
 template <class... Args>
@@ -791,20 +791,20 @@ iterator emplace_hint(
 
 |Parametre|Açıklama|
 |-|-|
-|`args`|Bu öğe zaten içeriyor veya zaten bir öğe değerini içerdiği sürece daha genel olarak, eşdeğer sıralanır sürece kümesine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
-|`where`|Ekleme için doğru noktası aramaya başlamak için koyun. (O noktadan hemen önceyse `where`, ekleme Logaritmik zaman yerine amortized sabit zaman meydana gelebilir.)|
+|*bağımsız değişken*|Belirlenen bu öğeyi zaten içeriyor veya zaten bir öğe değerini içerdiği sürece daha genel olarak, eşdeğer sıralanır sürece kümesine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
+|*Burada*|Doğru ekleme noktasını için aramaya başlamak için bir yerde. (Bu noktanın hemen önceyse *burada*, ekleme Logaritmik süre yerine amorti edilmiş sabit zaman meydana gelebilir.)|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleyici yeni eklenen öğesi.
+Yeni eklenen öğeye bir yineleyici.
 
-Öğe zaten var olduğundan ekleme başarısız olursa, yineleyici varolan öğeyi döndürür.
+Öğe zaten var olduğundan ekleme başarısız olursa var olan öğeye bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyiciler veya başvuruları olmadığından bu işlev tarafından geçersiz kılınır.
+Yineleyiciler ya da başvuruları, bu işlev tarafından geçersiz kılınır.
 
-Bir özel durum, emplacement sırasında kapsayıcının durumu değiştirilemez.
+Yerleştirme sırasında bir özel durum oluşturulursa, kapsayıcının durumu değiştirilmez.
 
 ### <a name="example"></a>Örnek
 
@@ -861,7 +861,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** kümesi boşsa; **false** boş olmayan ayarlanırsa.
+**doğru** kümesi boşsa; **false** kümesi boş ise.
 
 ### <a name="example"></a>Örnek
 
@@ -907,19 +907,19 @@ iterator end();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçmiş--end yineleyici. Ardından kümesi boşsa, `set::end() == set::begin()`.
+Past--end yineleyici. Ardından kümesi boşsa, `set::end() == set::begin()`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Son** yineleyici kendi kümesinin sonuna başarılı olup test etmek için kullanılır.
+**Son** kendine sonuna bir yineleyici geçmediğini sınamak için kullanılır.
 
-Tarafından döndürülen değer **son** değil başvuru yapıldı.
+Tarafından döndürülen değer **son** kaldırılmamalıdır.
 
 Kod örneği için bkz: [set::find](#find).
 
 ## <a name="equal_range"></a>  set::equal_range
 
-Yineleyiciler çifti sırasıyla kümesi ilk öğe büyük veya eşit belirtilen anahtar ve ilk öğe için anahtar daha büyük bir anahtarla kümesindeki bir anahtarla döndürür.
+Yineleyicilerin bir çiftini, sırasıyla bir küme içindeki ilk öğeyi büyüktür veya eşittir belirtilen anahtar ve ilk öğeye anahtardan daha büyük bir anahtarla küme içindeki bir anahtarı ile döndürür.
 
 ```cpp
 pair <const_iterator, const_iterator> equal_range (const Key& key) const;
@@ -929,13 +929,13 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Bir öğenin Aranmakta kümesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk olduğu yineleyiciler çifti [lower_bound](#lower_bound) anahtarı ve ikincisi [upper_bound](#upper_bound) anahtarı.
+İlk olduğu Yineleyicilerin bir çiftini [lower_bound](#lower_bound) , anahtar ve ikinci [upper_bound](#upper_bound) anahtarı.
 
-İlk yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İlk**ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **İlk**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci**ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).
+Bir çiftin ilk yineleyicisi erişmeye `pr` üye işlevi tarafından döndürülen, kullanın `pr`. **İlk**ve alt sınır yineleyicinin başvuru kaldırma için \*( `pr`. **İlk**). Bir çiftin ikinci yineleyicisi erişmeye `pr` üye işlevi tarafından döndürülen, kullanın `pr`. **İkinci**ve üst sınır yineleyicinin başvuru kaldırma için \*( `pr`. **İkinci**).
 
 ### <a name="example"></a>Örnek
 
@@ -1013,19 +1013,19 @@ size_type erase(
 
 ### <a name="parameters"></a>Parametreler
 
-`Where` Kaldırılacak öğe konumu.
+*Burada* kaldırılacak öğenin konumu.
 
-`First` Kaldırılacak ilk öğe konumu.
+*İlk* kaldırılacak ilk öğenin konumu.
 
-`Last` Kaldırılacak yalnızca son öğenin ötesinde konumu.
+*Son* kaldırılacak son öğeden hemen ötesinde konumu.
 
-`Key` Kaldırılacak öğe anahtar değeri.
+*Anahtar* kaldırılacak öğelerin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki üye işlevleri için çift yönlü Yineleyici, kaldırılan öğelerin ya da böyle bir öğe varsa kümenin sonundaki olan bir öğeyi dışında kalan ilk öğe belirler.
+İlk iki üye işlevleri için çift yönlü bir yineleyici, kaldırılan herhangi bir öğe veya böyle bir öğe varsa, küme sonuna bir öğe ilk öğeyi belirtir.
 
-Üye işlevi için üçüncü kümeden kaldırılmış olan öğe sayısını döndürür.
+Üye işlevi için üçüncü kümeden kaldırılmış olan öğelerin sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1110,7 +1110,7 @@ int main()
 
 ## <a name="find"></a>  set::Find
 
-Belirtilen anahtar için eşdeğer bir anahtara sahip bir küme içindeki bir öğe konumu başvurduğu yineleyici döndürür.
+Belirtilen anahtara denk bir anahtara sahip bir kümedeki bir öğenin konumunu gösteren bir yineleyici döndürür.
 
 ```cpp
 iterator find(const Key& key);
@@ -1121,17 +1121,17 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Bir öğenin Aranmakta kümesinden sıralama anahtarı tarafından eşleştirilmesini anahtar değeri.
+*anahtar* Aranan kümesinden bir öğenin sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen anahtara sahip bir öğe konumu veya kümesindeki son öğe başarılı konuma başvuruyor yineleyici ( `set::end()`) anahtar için bir eşleşme varsa.
+Belirtilen anahtara sahip bir öğenin konumunu veya konumu küme içindeki son öğeyi adresleyen bir yineleyici (`set::end()`) anahtar için bir eşleşme varsa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi bağımsız değişkeninin anahtar kümesi bir öğedeki başvurduğu yineleyici eşdeğerdir döndürür `key` bir comparability ilişkisi küçüktür göre sıralama uygulanmasını ikili bir koşul altında.
+Üye işlevi bağımsız değişken eşdeğer anahtarla küme içindeki bir öğeyi başvuran bir yineleyici döndürür *anahtarı* comparability ilişkisi küçüktür göre sıralama sevk eden ikili bir koşul altında.
 
-Varsa dönüş değerini **Bul** atanmış bir **const_iterator**, kümesi nesnesi değiştirilemez. Varsa dönüş değerini **Bul** atanmış bir **yineleyici**, kümesi nesnesi değiştirilebilir
+Varsa dönüş değerinin `find` atanan bir `const_iterator`, Küme nesnesi değiştirilemez. Varsa dönüş değerinin `find` atanan bir `iterator`, Küme nesnesi değiştirilebilir
 
 ### <a name="example"></a>Örnek
 
@@ -1197,7 +1197,7 @@ int main()
 
 ## <a name="get_allocator"></a>  set::get_allocator
 
-Küme oluşturmak için kullanılan ayırıcısı nesnesinin bir kopyasını döndürür.
+Küme oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
 ```cpp
 allocator_type get_allocator() const;
@@ -1205,13 +1205,13 @@ allocator_type get_allocator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablon parametresi bellek yönetmek için kümesi tarafından kullanılan ayırıcısı `Allocator`.
+Şablon parametresi, bellek, yönetilecek kümesi tarafından kullanılan ayırıcı `Allocator`.
 
 Daha fazla bilgi için `Allocator`, Açıklamalar bölümüne bakın [set sınıfı](../standard-library/set-class.md) konu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Allocators set sınıfı için sınıf depolama nasıl yönettiğini belirtin. C++ Standart Kitaplığı kapsayıcı sınıfları ile sağlanan varsayılan allocators çoğu programlama ihtiyaçları için yeterli olur. Yazma ve kendi allocator sınıfı kullanarak ileri düzeyde C++ bir konudur.
+Ayırıcılar kümesi sınıfı için sınıf depolama nasıl yönettiğini belirtin. C++ Standart Kitaplığı kapsayıcı sınıfları ile sağlanan varsayılan ayırıcılar çoğu programlama ihtiyaçları için yeterli olur. Yazma ve kendi allocator sınıfı kullanarak bir Gelişmiş C++ konudur.
 
 ### <a name="example"></a>Örnek
 
@@ -1316,35 +1316,35 @@ IList);
 
 |Parametre|Açıklama|
 |-|-|
-|`Val`|Öğenin değeri eşdeğer sıralı içermedikçe kümesine Eklenecek öğenin değeri.|
-|`Where`|Ekleme için doğru noktası aramaya başlamak için koyun. (O noktadan hemen önceyse `Where`, ekleme Logaritmik zaman yerine amortized sabit zaman meydana gelebilir.)|
-|`ValTy`|Belirlenen bir öğe oluşturmak için kullanabileceğiniz bağımsız değişken türü belirtir şablon parametresi [value_type](../standard-library/map-class.md#value_type)ve mükemmel ileten `Val` bağımsız değişken olarak.|
-|`First`|Kopyalanacak ilk öğe konumu.|
-|`Last`|Kopyalanacak yalnızca son öğenin ötesinde konumu.|
-|`InputIterator`|Gereksinimlerini karşılayan şablon işlevi bağımsız değişken bir [giriş yineleyici](../standard-library/input-iterator-tag-struct.md) oluşturmak için kullanılan bir türü öğelerine işaret [value_type](../standard-library/map-class.md#value_type) nesneleri.|
-|`IList`|[İnitializer_list](../standard-library/initializer-list.md) öğeleri kopyalanacak.|
+|*VAL*|Değerini eşdeğer sıralı bir öğe içermiyorsa kümesine eklenecek bir öğenin değeri.|
+|*Burada*|Doğru ekleme noktasını için aramaya başlamak için bir yerde. (Bu noktanın hemen önceyse *burada*, ekleme Logaritmik süre yerine amorti edilmiş sabit zaman meydana gelebilir.)|
+|*ValTy*|Küme öğesi oluşturmak için kullanabileceğiniz bağımsız değişken türü belirten bir şablon parametresi [value_type](../standard-library/map-class.md#value_type)ve mükemmel ileten *Val* bağımsız değişken olarak.|
+|*ilk*|Kopyalanacak ilk öğenin konumu.|
+|*Son*|Kopyalanacak son öğenin ötesinde konumu.|
+|*Inputıterator*|Gereksinimlerini karşılayan şablonu işlev bağımsız değişkeni bir [giriş yineleyici](../standard-library/input-iterator-tag-struct.md) oluşturmak için kullanılan bir tür öğelerine işaret eden [value_type](../standard-library/map-class.md#value_type) nesneleri.|
+|*IList*|[İnitializer_list](../standard-library/initializer-list.md) öğeleri kopyalanacak.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek öğe üye işlevleri (1) ve (2), dönüş bir [çifti](../standard-library/pair-structure.md) , `bool` bileşenidir ekleme yaptıysanız true ve false kümesi sıralama içinde eşdeğer değerinin bir öğe içeriyorsa. Dönüş değeri çifti yineleyici bileşeninin varsa yeni eklenen öğesine işaret eden `bool` bileşenidir true veya varolan öğesine durumunda `bool` bileşen değer false.
+Tek öğeli üye işlevleri (1) ve (2) iade bir [çifti](../standard-library/pair-structure.md) olan **bool** bileşendir ekleme yaptıysanız true ve false kümesi eşdeğer değerinin bir öğe içeriyorsa sıralama. Yineleyici bileşeni dönüş değeri çiftinin yeni eklenen öğeye işaret ederse **bool** bileşendir true veya var olan öğeye varsa **bool** bileşen değer false.
 
-İpucu ile tek öğe üye işlevleri (3) ve (4), yeni öğe kümesine eklenen burada veya eşdeğer bir anahtarı olan bir öğe zaten var olan öğe varsa konumuna işaret eden bir yineleyici döndürür.
+İpucu ile tek öğe üye işlevleri, (3) ve (4), yeni bir öğe kümesine eklenmiş burada veya eşdeğer bir anahtara sahip bir öğe zaten var olan öğeye varsa konuma gösteren bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir yineleyiciler, işaretçileri veya başvuruları bu işlev tarafından geçersiz kılınır.
+Hiçbir yineleyiciler, işaretçiler veya başvurular, bu işlev tarafından geçersiz kılınır.
 
-Bir özel durum, yalnızca bir öğe ekleme sırasında kapsayıcının durumu değiştirilemez. Bir özel durum, birden çok öğe ekleme sırasında kapsayıcı belirtilmeyen ancak geçerli bir durumda bırakılır.
+Bir özel durum oluşturulursa, yeni bir öğe ekleme sırasında kapsayıcının durumu değiştirilmez. Bir özel durum oluşturulursa, birden çok öğe ekleme sırasında kapsayıcı belirtilmeyen ancak geçerli bir durumda bırakılır.
 
-Yineleyici bileşeninin erişmek için bir `pair` `pr` tek öğe üye işlevleri tarafından döndürülen, kullanın `pr.first`; döndürülen çifti içinde yineleyici dereference kullanmak için `*pr.first`, bir öğenin vermiş. Erişim için `bool` bileşen, kullanım `pr.second`. Bu makaledeki örnek kod bir örnek için bkz.
+Yineleyici bileşeni erişmek için bir `pair` `pr` kullanın, tek öğeli üye işlevleri tarafından döndürülen `pr.first`; döndürülen çiftin içinde yineleyicinin başvuru kaldırma, kullanın `*pr.first`, size bir öğe sağlar. Erişim için **bool** bileşeni, kullanım `pr.second`. Bu makaledeki örnek kod örneği için bkz.
 
-[Value_type](../standard-library/map-class.md#value_type) , bir kapsayıcı ve, küme ait bir typedef kapsayıcısıdır `set<V>::value_type` türü `const V`.
+[Value_type](../standard-library/map-class.md#value_type) küme ve, kapsayıcıya ait bir tür tanımı, kapsayıcısıdır `set<V>::value_type` türü `const V`.
 
-Aralık üye işlevi (5) aralığında bir yineleyici tarafından ele her öğesine karşılık gelen bir grup bir dizi öğesi değerlerini ekler `[First, Last)`; bu nedenle, `Last` takılı. Kapsayıcı üye fonksiyonu `end()` kapsayıcı son öğesi hemen sonra konuma başvuruyor — Örneğin, deyim `s.insert(v.begin(), v.end());` tüm öğeleri ekleme girişiminde `v` içine `s`. Yalnızca benzersiz değerler aralığında olan öğenin eklenir; Yinelenen değer yok sayılır. Hangi öğelerin reddedilir izlemek için tek öğe sürümlerini kullanan `insert`.
+Aralık üye işlevi (5) aralığında bir yineleyici tarafından ele alınan her öğe için karşılık gelen bir öğe değerleri dizisi ekler `[First, Last)`; bu nedenle `Last` takılı. Kapsayıcı üye işlevi `end()` kapsayıcıdaki son öğeden hemen sonra konuma başvuran — Örneğin, deyim `s.insert(v.begin(), v.end());` tüm öğeleri ekleme girişiminde `v` içine `s`. Yalnızca benzersiz değerler aralığında olan öğeler eklenir; Yinelenen göz ardı edilir. Hangi öğelerin reddedilir gözlemlemek için tek öğeli sürümleri kullanın `insert`.
 
-Başlatıcı listesi üye işlevi (6) kullanan bir [initializer_list](../standard-library/initializer-list.md) öğeleri kümesine kopyalamak için.
+Başlatıcı listesinde üye işlev (6) kullanan bir [initializer_list](../standard-library/initializer-list.md) öğeleri kümesine kopyalamak için.
 
-Yerinde oluşturulan bir öğe eklemeye — diğer bir deyişle, kopyalama veya taşıma işlemi yok gerçekleştirilen — bkz [set::emplace](#emplace) ve [set::emplace_hint](#emplace_hint).
+Yerinde oluşturulmuş bir öğe ekleme — diğer bir deyişle, hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir — bkz [set::emplace](#emplace) ve [set::emplace_hint](#emplace_hint).
 
 ### <a name="example"></a>Örnek
 
@@ -1447,7 +1447,7 @@ int main()
 
 ## <a name="iterator"></a>  set::iterator
 
-Bir sabit sağlayan bir türü [çift yönlü yineleyici](../standard-library/bidirectional-iterator-tag-struct.md) kümesindeki herhangi bir öğe okuyabilir.
+Bir sabit sağlayan bir tür [çift yönlü yineleyici](../standard-library/bidirectional-iterator-tag-struct.md) kümesindeki herhangi bir öğeyi okuyabilen.
 
 ```cpp
 typedef implementation-defined iterator;
@@ -1455,7 +1455,7 @@ typedef implementation-defined iterator;
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için bir **yineleyici**.
+Örneğin bakın [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için bir `iterator`.
 
 ## <a name="key_comp"></a>  set::key_comp
 
@@ -1467,19 +1467,19 @@ key_compare key_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablon parametresi olan öğeleri, sipariş için kümesi kullanan işlevi nesnesi döndüren `Traits`.
+Şablon parametresi olan bir alt öğeleri düzenlemek amacıyla kullanan işlev nesnesini döndürür `Traits`.
 
 Daha fazla bilgi için `Traits` bkz [set sınıfı](../standard-library/set-class.md) konu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Saklanan nesne üye işlevini tanımlar:
+Depolanan nesne üyesi işlevini tanımlar:
 
 **bool operator()**( **const anahtar &**`_xVal`, **const anahtar &**`_yVal`);
 
-döndüren **true** varsa `_xVal` önündeki ve eşit değil `_yVal` sıralama düzeninde.
+döndüren **true** varsa `_xVal` önündeki ve eşit değildir `_yVal` sıralama düzeninde.
 
-Unutmayın her ikisi de [key_compare](#key_compare) ve [value_compare](#value_compare) şablon parametresi için eş anlamlı sözcükleri olan **nitelikler**. Her iki tür kümesi ve burada ayrı multimap sınıfların ve eşleme ile uyumluluk için aynı oldukları çok kümeli sınıfları için sağlanır.
+Unutmayın hem [key_compare](#key_compare) ve [value_compare](#value_compare) şablon parametresi için eş anlamlı sözcükler olan `Traits`. Her iki tür kümesi ve farklı olduğu multimap sınıfları ve eşleme ile uyumluluk için aynı oldukları multiset sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -1542,19 +1542,19 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare` Şablon parametresi için bir eş anlamlı olduğundan `Traits`.
+`key_compare` Şablon parametresi için bir eşanlamlı olduğu `Traits`.
 
 Daha fazla bilgi için `Traits` bkz [set sınıfı](../standard-library/set-class.md) konu.
 
-Unutmayın her ikisi de `key_compare` ve [value_compare](#value_compare) şablon parametresi için eş anlamlı sözcükleri olan **nitelikler**. Her iki tür kümesi ve burada ayrı multimap sınıfların ve eşleme ile uyumluluk için aynı oldukları çok kümeli sınıfları için sağlanır.
+Unutmayın hem `key_compare` ve [value_compare](#value_compare) şablon parametresi için eş anlamlı sözcükler olan `Traits`. Her iki tür kümesi ve farklı olduğu multimap sınıfları ve eşleme ile uyumluluk için aynı oldukları multiset sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.
+Örneğin bakın [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.
 
 ## <a name="key_type"></a>  set::key_type
 
-Sıralama anahtarı olarak kapasitesi kümesinde bir öğe olarak saklanan bir nesneyi tanımlayan bir türü.
+Sıralama anahtarı olarak kapasitesi dahilinde bir küme öğesi olarak depolanan nesneyi tanımlayan tür.
 
 ```cpp
 typedef Key key_type;
@@ -1562,15 +1562,15 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type` Şablon parametresi için bir eş anlamlı olduğundan `Key`.
+`key_type` Şablon parametresi için bir eşanlamlı olduğu `Key`.
 
 Daha fazla bilgi için `Key`, Açıklamalar bölümüne bakın [set sınıfı](../standard-library/set-class.md) konu.
 
-Unutmayın her ikisi de `key_type` ve [value_type](#value_type) şablon parametresi için eş anlamlı sözcükleri olan **anahtar**. Her iki tür kümesi ve burada ayrı multimap sınıfların ve eşleme ile uyumluluk için aynı oldukları çok kümeli sınıfları için sağlanır.
+Unutmayın hem `key_type` ve [value_type](#value_type) şablon parametresi için eş anlamlı sözcükler olan `Key`. Her iki tür kümesi ve farklı olduğu multimap sınıfları ve eşleme ile uyumluluk için aynı oldukları multiset sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.
+Örneğin bakın [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.
 
 ## <a name="lower_bound"></a>  set::lower_bound
 
@@ -1584,11 +1584,11 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Bir öğenin Aranmakta kümesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleyici veya `const_iterator` adresleri anahtar için bir öğe için veya daha büyük bağımsız değişkeni anahtar veya kümesindeki son öğe yoksa başarılı konumu adresleri anahtarı ile eşleşmesini kümesinde konumunu bulundu.
+Bir yineleyici veya `const_iterator` adresleri anahtar için bağımsız değişken anahtardan daha büyük veya ona eşit olan veya hiçbir küme içindeki son öğeyi takip eden konumu ele bir anahtar ile eşleştiğinden emin bir kümedeki bir öğenin konumunu bulunamadı.
 
 ### <a name="example"></a>Örnek
 
@@ -1649,7 +1649,7 @@ size_type max_size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olası uzunluk kümesi.
+Kümesinin maksimum olası uzunluğu.
 
 ### <a name="example"></a>Örnek
 
@@ -1673,7 +1673,7 @@ int main( )
 
 ## <a name="op_eq"></a>  set::operator =
 
-Bu öğeleri değiştirir `set` kullanan başka bir öğeler `set`.
+Bu öğelerini değiştirir `set` öğeleri başka bir kullanılarak `set`.
 
 ```cpp
 set& operator=(const set& right);
@@ -1685,15 +1685,15 @@ set& operator=(set&& right);
 
 |Parametre|Açıklama|
 |-|-|
-|`right`|`set` İçin atanacak yeni öğeleri sağlayan `set`.|
+|*sağ*|`set` İçin atanacak yeni öğeleri sağlayan `set`.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sürümü `operator=` kullanan bir [lvalue başvuru](../cpp/lvalue-reference-declarator-amp.md) için `right`, öğelerinden kopyalamak için `right` bu `set`.
+Ürününün ilk sürümünü `operator=` kullanan bir [lvalue başvuru](../cpp/lvalue-reference-declarator-amp.md) için *doğru*öğelerden kopyalamak için *doğru* bu `set`.
 
-İkinci sürümü kullanan bir [rvalue başvuru](../cpp/rvalue-reference-declarator-amp-amp.md) hakkı için. Öğelerden taşır `right` bu `set`.
+Dosyanın ikinci sürümü kullanan bir [rvalue başvuru](../cpp/rvalue-reference-declarator-amp-amp.md) yönelik hakkı. Öğelerden taşır *doğru* bu `set`.
 
-Bu herhangi bir öğe `set` işleci işlevi yürütülmeden önce atılır.
+Bu öğeleri `set` işleç işlev yürütülmeden önce atılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1744,7 +1744,7 @@ typedef typename allocator_type::pointer pointer;
 
 Bir tür **işaretçi** bir öğenin değerini değiştirmek için kullanılabilir.
 
-Çoğu durumda, bir [yineleyici](#iterator) kümesi nesnesi öğelerinde erişmek için kullanılmalıdır.
+Çoğu durumda bir [yineleyici](#iterator) kümesi nesnesindeki öğelere erişmek için kullanılmalıdır.
 
 ## <a name="rbegin"></a>  set::rbegin
 
@@ -1758,15 +1758,15 @@ reverse_iterator rbegin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters kümesi ilk öğe adresleme veya ne adresleme ters çift yönlü yineleyici unreversed kümesindeki son öğe eklenmiştir.
+Ters çevrilen küme içindeki ilk öğeyi ele alan veya ne ters çevrilmeyen küme içindeki son öğeyi adresleyen ters iki yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin` Ters kümesiyle kullanılan gibi [başlamak](#begin) set ile kullanılır.
+`rbegin` ters çevrilen küme ile kullanılan gibi [başlamak](#begin) ile bir küme kullanılır.
 
-Varsa dönüş değerini `rbegin` atanmış bir `const_reverse_iterator`, sonra da kümesi nesnesi değiştirilemez. Varsa dönüş değerini `rbegin` atandığı bir `reverse_iterator`, sonra kümesi nesnesi değiştirilebilir.
+Varsa dönüş değeri `rbegin` atanan bir `const_reverse_iterator`, ardından küme nesnesi değiştirilemez. Varsa dönüş değeri `rbegin` atanan bir `reverse_iterator`, ardından küme nesnesi değiştirilebilir.
 
-`rbegin` aracılığıyla geriye doğru yinelemek için kullanılabilir.
+`rbegin` Geriye dönük olarak aracılığıyla yineleme yapmak için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1870,15 +1870,15 @@ reverse_iterator rend();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters kümesi (ilk öğe unreversed kümesinde öncesinde konum) son öğesi başarılı konumu adresleri ters çift yönlü yineleyici.
+Konumu (ters çevrilmeyen kümedeki ilk öğeyi önce gelen konum) ters çevrilen küme içindeki son öğeyi adresleyen ters iki yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend` Ters kümesiyle kullanılan gibi [son](#end) set ile kullanılır.
+`rend` ters çevrilen küme ile kullanılan gibi [son](#end) ile bir küme kullanılır.
 
-Varsa dönüş değerini `rend` atanmış bir `const_reverse_iterator`, sonra da kümesi nesnesi değiştirilemez. Varsa dönüş değerini `rend` atandığı bir `reverse_iterator`, sonra kümesi nesnesi değiştirilebilir. Tarafından döndürülen değer `rend` değil başvuru yapıldı.
+Varsa dönüş değeri `rend` atanan bir `const_reverse_iterator`, ardından küme nesnesi değiştirilemez. Varsa dönüş değeri `rend` atanan bir `reverse_iterator`, ardından küme nesnesi değiştirilebilir. Tarafından döndürülen değer `rend` kaldırılmamalıdır.
 
-`rend` Ters yineleyici kendi kümesinin sonuna olup ulaştı için test etmek için kullanılabilir.
+`rend` olup ters yineleyici kendine sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1943,7 +1943,7 @@ Bir tür `reverse_iterator` kullanın ters kümesinde yinelemek için.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.
+Örneğin bakın [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.
 
 ## <a name="set"></a>  set::set
 
@@ -2001,30 +2001,30 @@ set(
 
 |Parametre|Açıklama|
 |-|-|
-|`Al`|Varsayılan olarak bu kümesi nesnesi için kullanılacak depolama allocator sınıfı **ayırıcısı**.|
-|`Comp`|Türü karşılaştırma işlevinden `const Traits` öğeler için varsayılanları kümesindeki sıralamak için kullanılan `Compare`.|
-|`Rght`|Oluşturulan kümesi bir kopya olarak olduğu kümesi.|
-|`First`|Kopyalanacak öğe aralığını ilk öğe konumu.|
-|`Last`|Kopyalanacak öğeleri aralık ötesinde ilk öğe konumu.|
-|`IList`|Öğelerin kopyalanacağı initializer_list.|
+|*Al*|Varsayılan olarak bu küme nesnesi için kullanılacak depolama ayırıcı sınıf `Allocator`.|
+|*Comp*|Karşılaştırma işlevi türü `const Traits` öğeler kümesinde varsayılan olarak sıralamak için kullanılan `Compare`.|
+|*Rght*|Oluşturulan kümesi kopyası olacak olduğu kümesi.|
+|*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
+|*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
+|*IList*|Öğelerin kopyalanacağı initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular bellek depolama kümesi için yönetir ve, daha sonra döndürülüp döndürülmediğini çağırarak ayırıcısı nesne türünü depolamak [get_allocator](#get_allocator). Allocator parametresi, sınıf bildirimleri ve diğer allocators yerine kullanılacak önişlem makroları genellikle atlanır.
+Tüm Oluşturucular, bellek depolama kümesi için yönetir ve bu daha sonra döndürülmesi çağırarak ayırıcı nesnesi türü depolamak [get_allocator](#get_allocator). Allocator parametresi, sınıf bildirimleri ve diğer ayırıcılar yerine kullanılan ön işleme makroları genellikle atlanır.
 
-Tüm oluşturucular kendi kümeleri başlatır.
+Tüm Oluşturucular, Ayarlar'ı başlatın.
 
-İşlev nesnesi türündeki tüm oluşturucular depolamak **nitelikler** bir sıra kümesi anahtarlar oluşturmak için kullanılan ve, daha sonra döndürülüp döndürülmediğini çağırarak [key_comp](#key_comp).
+Tüm oluşturucular türünün işlev nesnesini depolamak `Traits` anahtarları kümesi arasında bir sıralamayı oluşturmak için kullanılan ve, daha sonra döndürülmesi çağırarak [key_comp](#key_comp).
 
-İlk üç oluşturucular belirtin boş ilk kümesi, ikinci karşılaştırma işlev türünü belirtme ( `comp`) öğeleri ve üçüncü sırasını oluşturmada kullanılacak ayırıcı açıkça belirtilmesi yazın ( `al`) olmalıdır kullanılır. Anahtar sözcüğü **açık** otomatik tür dönüştürme belirli türdeki gizler.
+İlk üç Oluşturucular, bir boş ilk kümesi, ikinci belirtin karşılaştırma işlevinin türü belirtme (`comp`) öğeleri ve üçüncüsü sırasını oluşturmada kullanılacak ayırıcı açıkça belirtilmesi yazın (`al`) olması kullanılır. Anahtar sözcüğü **açık** otomatik tür dönüştürme belirli türdeki bastırır.
 
-Dördüncü Oluşturucusu kümesinin bir kopyasını belirtir `right`.
+Dördüncü Oluşturucu kümesinin bir kopyasını belirtir `right`.
 
 Sonraki üç oluşturucular bir initializer_list öğeleri belirtmek için kullanın.
 
-Sonraki üç oluşturucular aralığı kopyalayın [ `first`, `last`) sınıfının karşılaştırma işlevini türünü belirleyen içinde explicitness artan kümesinin **nitelikler** ve **ayırıcısı**.
+Sonraki üç oluşturucular aralığını kopyalamaktadır [ `first`, `last`) sınıfın karşılaştırma işlevinin türü belirtilirken explicitness artan kümesinin `Traits` ve **ayırıcı**.
 
-Sekizinci Oluşturucusu taşıyarak kümesinin bir kopyasını belirtir `right`.
+Sekizinci Oluşturucusu taşıyarak kümesinin bir kopyasını belirtir. `right`.
 
 ### <a name="example"></a>Örnek
 
@@ -2190,7 +2190,7 @@ typedef typename allocator_type::size_type size_type;
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği `size_type`
+Örneğin bakın [boyutu](#size) bildirme ve kullanma örneği `size_type`
 
 ## <a name="swap"></a>  set::Swap
 
@@ -2203,11 +2203,11 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Öğeleri sağlayan hedefle takas koymak bağımsız değişkeni olarak ayarlayın.
+*doğru* değişkenini hedef kümesi ile değiştirilecek öğeleri sağlayan.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini hiçbir başvuruları, işaretçileri veya öğeleri arasında alınıp verilen iki öğelerinde tanımladığınız yineleyiciler geçersiz kılar.
+Üye işlev hiçbir başvurular, işaretçiler veya öğeleri değiştirilen iki kümenin öğelerini belirlemek yineleyicileri geçersiz kılar.
 
 ### <a name="example"></a>Örnek
 
@@ -2261,7 +2261,7 @@ After swapping with s3, list s1 is: 300.
 
 ## <a name="upper_bound"></a>  set::upper_bound
 
-Yineleyici ilk öğeye bir kümede, belirtilen anahtar daha büyük bir anahtarla döndürür.
+Bir yineleyici ilk öğeye bir kümesi, belirtilen anahtardan daha büyük bir anahtarla döndürür.
 
 ```cpp
 const_iterator upper_bound(const Key& key) const;
@@ -2271,11 +2271,11 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Bir öğenin Aranmakta kümesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir **yineleyici** veya `const_iterator` adresleri anahtar için bağımsız değişken anahtarından daha büyük ya da kümesindeki son öğe yoksa başarılı konumu adresleri bir anahtarla eşleşmesini kümesinde bir öğe konumu bulunamadı.
+Bir `iterator` veya `const_iterator` adresleri anahtar için bağımsız değişken anahtardan daha büyük ya da hiçbir küme içindeki son öğeyi takip eden konumu ele bir anahtar ile eşleştiğinden emin küme içindeki bir öğenin konumunu bulunamadı.
 
 ### <a name="example"></a>Örnek
 
@@ -2336,19 +2336,19 @@ value_compare value_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablon parametresi olan öğeleri, sipariş için kümesi kullanan işlevi nesnesi döndüren `Traits`.
+Şablon parametresi olan bir alt öğeleri düzenlemek amacıyla kullanan işlev nesnesini döndürür `Traits`.
 
 Daha fazla bilgi için `Traits` bkz [set sınıfı](../standard-library/set-class.md) konu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Saklanan nesne üye işlevini tanımlar:
+Depolanan nesne üyesi işlevini tanımlar:
 
 **bool işleci**( **const anahtar &**`_xVal`, **const anahtar &**`_yVal`);
 
-döndüren **true** varsa `_xVal` önündeki ve eşit değil `_yVal` sıralama düzeninde.
+döndüren **true** varsa `_xVal` önündeki ve eşit değildir `_yVal` sıralama düzeninde.
 
-Unutmayın her ikisi de [value_compare](#value_compare) ve [key_compare](#key_compare) şablon parametresi için eş anlamlı sözcükleri olan **nitelikler**. Her iki tür kümesi ve burada ayrı multimap sınıfların ve eşleme ile uyumluluk için aynı oldukları çok kümeli sınıfları için sağlanır.
+Unutmayın hem [value_compare](#value_compare) ve [key_compare](#key_compare) şablon parametresi için eş anlamlı sözcükler olan `Traits`. Her iki tür kümesi ve farklı olduğu multimap sınıfları ve eşleme ile uyumluluk için aynı oldukları multiset sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -2403,7 +2403,7 @@ vc2( 2,3 ) returns value of false, where vc2 is the function object of s2.
 
 ## <a name="value_compare"></a>  set::value_compare
 
-İşlev nesnesi sağlayan bir türü göreli sıralarına kümesindeki belirlemek için iki öğenin değerleri karşılaştırabilirsiniz.
+Kümedeki kendi göreli sıralarını belirlemek için iki öğenin değerlerini karşılaştırabilen bir işlev nesnesi sağlayan tür.
 
 ```cpp
 typedef key_compare value_compare;
@@ -2411,19 +2411,19 @@ typedef key_compare value_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_compare` Şablon parametresi için bir eş anlamlı olduğundan `Traits`.
+`value_compare` Şablon parametresi için bir eşanlamlı olduğu `Traits`.
 
 Daha fazla bilgi için `Traits` bkz [set sınıfı](../standard-library/set-class.md) konu.
 
-Unutmayın her ikisi de [key_compare](#key_compare) ve **value_compare** şablon parametresi için eş anlamlı sözcükleri olan **nitelikler**. Her iki tür kümesi ve burada ayrı multimap sınıfların ve eşleme ile uyumluluk için aynı oldukları çok kümeli sınıfları için sağlanır.
+Unutmayın hem [key_compare](#key_compare) ve `value_compare` şablon parametresi için eş anlamlı sözcükler olan `Traits`. Her iki tür kümesi ve farklı olduğu multimap sınıfları ve eşleme ile uyumluluk için aynı oldukları multiset sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [value_comp](#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.
+Örneğin bakın [value_comp](#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.
 
 ## <a name="value_type"></a>  set::value_type
 
-Değer olarak kapasitesi kümesinde bir öğe olarak saklanan bir nesneyi tanımlayan bir türü.
+Bir değer olarak kapasitesi dahilinde bir küme öğesi olarak depolanan nesneyi tanımlayan tür.
 
 ```cpp
 typedef Key value_type;
@@ -2431,11 +2431,11 @@ typedef Key value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type` Şablon parametresi için bir eş anlamlı olduğundan `Key`.
+`value_type` Şablon parametresi için bir eşanlamlı olduğu `Key`.
 
 Daha fazla bilgi için `Key`, Açıklamalar bölümüne bakın [set sınıfı](../standard-library/set-class.md) konu.
 
-Unutmayın her ikisi de [key_type](#key_type) ve `value_type` şablon parametresi için eş anlamlı sözcükleri olan **anahtar**. Her iki tür kümesi ve burada ayrı multimap sınıfların ve eşleme ile uyumluluk için aynı oldukları çok kümeli sınıfları için sağlanır.
+Unutmayın hem [key_type](#key_type) ve `value_type` şablon parametresi için eş anlamlı sözcükler olan `Key`. Her iki tür kümesi ve farklı olduğu multimap sınıfları ve eşleme ile uyumluluk için aynı oldukları multiset sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -2474,7 +2474,7 @@ The set has elements: 10 20.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Ayarlama >](../standard-library/set.md)<br/>
+[\<kümesi >](../standard-library/set.md)<br/>
 [Kapsayıcılar](../cpp/containers-modern-cpp.md)<br/>
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

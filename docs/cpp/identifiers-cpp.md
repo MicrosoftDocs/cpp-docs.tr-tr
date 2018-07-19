@@ -18,23 +18,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bb25713ad4f4a8ab1821eac4f7bf05d671bb101
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1ef6bf658cd290e23be59eb7d26a6b0d353b52c6
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415413"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941778"
 ---
 # <a name="identifiers-c"></a>Tanımlayıcılar (C++)
-Aşağıdakilerden birini belirtmek için kullanılan bir karakter dizisi tanımlayıcısıdır:  
+Bir tanımlayıcı, aşağıdakilerden birini belirtmek için kullanılan karakter dizisidir:  
   
 -   Nesne veya değişken adı  
   
 -   Sınıf, yapı veya birleşim adı  
   
--   Enum türü adı  
+-   Numaralandırma türü adı  
   
--   Sınıf, yapı, UNION veya numaralandırma üyesi  
+-   Sınıfı, yapı, birleşim veya numaralandırma üyesi  
   
 -   İşlev veya sınıf üyesi işlevi  
   
@@ -55,31 +55,31 @@ A B C D E F G H I J K L M
 N O P Q R S T U V W X Y Z  
 ```  
   
- Evrensel karakter adları belirli aralıklarına tanımlayıcıda de izin verilir.  Evrensel karakter adları bir tanımlayıcıda bir denetim karakteri veya temel kaynak karakter kümesinde bir karakter belirtemezsiniz. Daha fazla bilgi için bkz: [karakter kümesi](../cpp/character-sets.md). Bu Unicode kod noktası numarası aralıkları bir tanımlayıcı olarak evrensel karakter adları herhangi bir karakter için izin verilir:  
+ Evrensel karakter adları belirli aralıklarının bir tanımlayıcıda de izin verilir.  Evrensel karakter adı bir tanımlayıcıda bir denetim karakteri veya temel kaynak karakter kümesindeki karakter belirtemezsiniz. Daha fazla bilgi için [karakter kümesi](../cpp/character-sets.md). Bu Unicode kod noktası numarası aralıkları gibi evrensel karakter adları için herhangi bir karakter bir tanımlayıcıda izin verilir:  
   
--   00A8, 00AA, 00AD, 00AF, 00B2 00B5, 00B7 00BA, 00BC-00BE, 00C 0-00 D 6, 00D 8-00F6, 00F8 00FF, 0100 02FF, 0370 167F, 1681 180D, 180F 1DBF, 1E00 1FFF, 200B - 200D, 202A 202E, 203F 2040, 2054, 2060 206F, 2070 20CF, 2100 218F, 2460 24FF, 2776-2793, 2C 00-2DFF, 2E80 2FFF 3004 3007, 3021 302F, 3031 303F, 3040-D7FF F900 FD3D, FD40 FDCF, FDF0 FE1F, FE30 FE44, FE47-FFFD 10000 1FFFD, 20000 2FFFD, 30000 3FFFD, 40000 4FFFD, 50000 5FFFD, 60000 6FFFD, 70000 7FFFD, 80000 8FFFD, 90000 9FFFD, A0000 AFFFD, B0000 BFFFD, C0000-CFFFD D0000-DFFFD, E0000 EFFFD  
+-   00A8, 00AA, 00AD, 00AF, 00B2 00B5, 00B7 00BA 00BC 00BE, 00C 0-00 D 6, 8-00F6 00D, 00F8 00FF 0100 02FF, 0370 167F, 1681 180D, 180F 1DBF, 1E00 1FFF, 200B 200-D, 202A 202E, 203F 2040, 2054, 2060 206F, 2070 20CF, 2100 218F, 2460 24FF, 2776-2793 2C 00-2DFF, 2E80 2FFF, 3004 3007, 3021 302F, 3031 303F, 3040-D7FF F900 FD3D, FD40 FDCF, FDF0 FE1F, FE30 FE44 FE47 FFFD 10000 1FFFD, 20000 2FFFD, 30000 3FFFD, 40000 4FFFD, 50000 5FFFD, 60000 6FFFD, 70000 7FFFD, 80000 8FFFD, 90000 9FFFD, A0000 AFFFD, B0000 BFFFD, C0000-CFFFD D0000 DFFFD, E0000 EFFFD  
   
- Şu karakterlerden bir tanımlayıcı ilk dışında herhangi bir karaktere izin verilir:  
+ Bir tanımlayıcının ilki hariç herhangi bir karakter olarak şu karakterlere izin:  
   
 ```  
 0 1 2 3 4 5 6 7 8 9  
 ```  
   
- Bu Unicode kod noktası sayısı aralıkları, ilk dışında bir tanımlayıcıda gibi evrensel karakter adları herhangi bir karakter için de izin verilir:  
+ Bu Unicode kod noktası numara aralığı, bir tanımlayıcının ilki hariç, herhangi bir karakteri olarak evrensel karakter adları de izin verilir:  
   
--   0300-036F 1DC0 1DFF, 20D 0-20FF, FE20 FE2F  
+-   0300-036F 1DC0 1DFF, 0-20FF 20D, FE20 FE2F  
   
- **Microsoft özel**  
+ **Microsoft'a özgü**  
   
- Yalnızca ilk 2048 Microsoft C++ tanımlayıcıların önemli karakterlerdir. Kullanıcı tanımlı türler için "türü bilgileri korumak için derleyici tarafından düzenlenmiş adlar". Tür bilgiler dahil olmak üzere sonuç adı 2048 karakterden uzun olamaz. (Bkz [donatılmış adları](../build/reference/decorated-names.md) daha fazla bilgi için.) Düzenlenmiş tanımlayıcısının uzunluğu etkileyen faktörler şunlardır:  
+ Microsoft C++ tanıtıcılarının yalnızca ilk 2048 karakteri önemlidir. Kullanıcı tanımlı türler için adları "tür bilgilerinin korunabilmesi için derleyici tarafından"decorated". Tür bilgileri de dahil olmak üzere sonuçta elde edilen ad 2048 karakterden uzun olamaz. (Bkz [düzenlenmiş adlar](../build/reference/decorated-names.md) daha fazla bilgi için.) Düzenlenmiş bir tanımlayıcının uzunluğunu etkileyen faktörler şunlardır:  
   
--   Kullanıcı tanımlı tür veya bir türün bir nesne tanımlayıcısı olup olmadığını gösterir, kullanıcı tanımlı bir türden türetilmiş.  
+-   Tanımlayıcı bir nesne kullanıcı tanımlı tür veya tür olup olmadığını belirtir, kullanıcı tanımlı bir türden türetilmiş.  
   
--   Bir işlev veya bir tür tanımlayıcı olup olmadığını gösterir bir işleve türetilmiş.  
+-   Bir işlevden türetilmiş bir işlev veya tür tanımlayıcı olup olmadığını gösterme durumu.  
   
--   Bir işleve bağımsız değişken sayısı.  
+-   Bir işlev için bağımsız değişken sayısı.  
   
- Dolar işareti `$` Visual C++ içinde geçerli bir tanımlayıcı karakterdir. Visual C++ evrensel karakter adları tanımlayıcıları içinde izin verilen aralıklarını tarafından temsil edilen gerçek karakterler kullanmanızı sağlar. Bu karakterler kullanmak için bunları içeren codepage kodlama dosyasını kullanarak dosyayı kaydetmeniz gerekir.  Bu örnek, hem de genişletilmiş karakterler nasıl gösterir ve evrensel karakter adları kodunuzda birbirinin yerine kullanılabilir.  
+ Dolar işareti `$` Visual C++'ta geçerli tanımlayıcı karakterdir. Visual C++ tarafından izin verilen evrensel karakter adları tanımlayıcıları aralıklarını temsil karakterlerini kullanmanızı sağlar. Bu karakterler kullanmak için bunları içeren kod sayfası kodlama bir dosyasını kullanarak dosyayı kaydetmeniz gerekir.  Bu örnek, hem de genişletilmiş karakterler nasıl gösterir ve evrensel karakter adları kodunuzda birbirlerinin yerine kullanılabilir.  
   
 ```  
 // extended_identifier.cpp  
@@ -96,15 +96,15 @@ int main() {
 }  
 ```  
   
- Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kod. / CLR kullanarak derlenmiş kod tanımlayıcılarının izlemelidir [standart ECMA-335: ortak dil altyapısı (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).  
+ Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kodu. / CLR ile derlenmiş kodda tanımlayıcıları izlemelidir [ECMA-335 standart: ortak dil altyapısı (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
- İlk karakteri bir tanımlayıcı büyük veya küçük bir alfasayısal karakter veya alt çizgi olmalıdır ( **_** ). C++ tanımlayıcıları büyük/küçük harfe duyarlı olduğundan `fileName` farklı `FileName`.  
+ Bir tanımlayıcının ilk karakteri alfabetik bir karakter, büyük veya küçük veya alt çizgi olmalıdır ( **_** ). C++ tanımlayıcıları büyük/küçük harfe duyarlı olduğu için `fileName` farklıdır `FileName`.  
   
- Tanımlayıcılar tam olarak aynı yazım ve servis talebi olarak anahtar sözcükler olamaz. Anahtar sözcükler içeren yasal tanımlayıcılardır. Örneğin, `Pint` içeriyor olsa da yasal bir tanımlayıcıdır `int`, bir anahtar sözcük olduğu.  
+ Tanımlayıcılar tam olarak aynı yazım ve çalışması olarak anahtar sözcükler olamaz. Anahtar sözcük içeren tanımlayıcılar kullanılabilir. Örneğin, `Pint` içerse yasal bir tanımlayıcısı olan **int**, bir anahtar sözcük olduğu.  
   
- İki ardışık kısa çizgi karakteri kullanımını ( **__** ) başlangıcında bir tanımlayıcı ya da bir büyük harf tarafından izlenen tek bir başında alt çizgi, tüm kapsamlar C++ uygulamalarında için ayrılmıştır. Önde gelen alt çizgi bir küçük harf dosya kapsamı içeren adlara yönelik geçerli veya gelecek ayrılmış tanımlayıcılarına sahip olası çakışmaları nedeniyle arkasından kullanarak kaçınmalısınız.  
+ İki ardışık alt çizgi karakterleri kullanımını ( **__** ) bir tanımlayıcı veya büyük harf ve ardından tek bir başındaki altçizgiyi başında, tüm kapsamlarda C++ uygulamaları için ayrılmıştır. Bir alt çizgi bir küçük harf dosya kapsamına sahip adlar için geçerli veya gelecek ayrılmış tanımlayıcılarla olası çakışmaları ardından kullanarak kaçınmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

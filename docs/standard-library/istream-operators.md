@@ -1,5 +1,5 @@
 ---
-title: '&lt;istream&gt; işleçleri | Microsoft Docs'
+title: '&lt;istream&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,18 +12,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5068c0bd540b1c44d2cdc484c2e511276bd12666
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 60ec526dd8874529b60558f7131c31f0bf4a2d3b
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853066"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961119"
 ---
 # <a name="ltistreamgt-operators"></a>&lt;istream&gt; işleçleri
 
-## <a name="op_gt_gt"></a>  işleci&gt;&gt;
+## <a name="op_gt_gt"></a>  İşleci&gt;&gt;
 
-Karakterler ve dizeleri akıştan ayıklar.
+Karakterlerin ve dizelerin akıştan ayıklar.
 
 ```cpp
 template <class Elem, class Tr>
@@ -64,13 +64,13 @@ basic_istream<Elem, Tr>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-`Ch` Karakter.
+*CH* bir karakter.
 
-`Istr` Bir akış.
+*Istr* bir akış.
 
-`str` Bir dize.
+*str* bir dize.
 
-`val` Bir tür.
+*VAL* bir tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -78,7 +78,7 @@ Akış
 
 ### <a name="remarks"></a>Açıklamalar
 
-`basic_istream` Sınıfı ayrıca birkaç ayıklama işleçlerini tanımlar. Daha fazla bilgi için bkz: [basic_istream::operator >>](../standard-library/basic-istream-class.md#op_gt_gt).
+`basic_istream` Sınıfı da birkaç ayıklama işleçlerini tanımlar. Daha fazla bilgi için [basic_istream::operator >>](../standard-library/basic-istream-class.md#op_gt_gt).
 
 Şablon işlevi:
 
@@ -88,9 +88,9 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem* str);
 ```
 
-en fazla ayıklar *N* - 1 öğeleri ve başlatma sırasında _ dizi depolar *Str*. Varsa `Istr`. [Genişlik](../standard-library/ios-base-class.md#width) , sıfırdan büyük *N* olan `Istr`. **Genişlik**; Aksi halde, en büyük dizi boyutu olan **Elem** , bildirilebilir. İşlev değeri her zaman depolar **Elem()** herhangi depoladığı öğeleri ayıklanan sonra. Ayıklama durdurur erken dosya sonu, değeri olan bir karakter üzerinde üzerinde **Elem**(0) (hangi değil ayıklanır), veya tarafından atılmak (hangi değil ayıklanır) herhangi bir öğeyi [ws](../standard-library/istream-functions.md#ws). Öğe işlevi ayıklar, çağıran `Istr`. [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**). Herhangi bir durumda, çağıran `Istr`. **Genişlik**(0) ve döndürür `Istr`.
+en fazla ayıklar *N* - 1 öğeleri ve başlatma _ dizide saklar *Str*. Varsa `Istr`. [Genişlik](../standard-library/ios-base-class.md#width) , sıfırdan büyük *N* olduğu `Istr`. **Genişlik**; Aksi takdirde, en büyük dizi boyutu olan `Elem` , bildirilebilir. İşlev her zaman değeri depolar `Elem()` herhangi depoladığı öğeleri ayıklanan sonra. Ayıklama durdurur erken dosya sonu, bir karakter değeri ile üzerinde bulunan **Elem**(0) (hangi değil ayıklanır), veya herhangi bir öğede tarafından atılan (Bu ayıklanmadı) [ws](../standard-library/istream-functions.md#ws). Hiçbir öğe işlevi ayıklar, çağırdığı `Istr`. [setstate](../standard-library/basic-ios-class.md#setstate)(**failbit**). Her durumda çağıran `Istr`. **Genişlik**(0) ve döndürür *Istr*.
 
-**Güvenlik Notu** giriş akışından ayıklanırken null ile sonlandırılmış dize hedef arabellek boyutunu aşmamalıdır `str`. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Güvenlik Notu** girdi akışından ayıklanırken null ile sonlandırılmış dize hedef arabelleğinin boyutunu aşamaz *str*. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 Şablon işlevi:
 
@@ -100,7 +100,7 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem& Ch);
 ```
 
-bir öğenin olasıdır ve depolar ayıklar `Ch`. Aksi takdirde, çağıran **olan**. [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**). Her iki durumda da döndürür `Istr`.
+bir öğe mümkündür ve depolar ayıklar *Ch*. Aksi takdirde, çağrı **olduğu**. [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**). Her durumda döndürür *Istr*.
 
 Şablon işlevi:
 
@@ -151,7 +151,7 @@ basic_istream<Elem, Tr>& operator>>(
     Type& val);
 ```
 
-döndürür `Istr` `>>` `val` (ve dönüştüren bir `rvalue reference` için `Istr` için bir `lvalue` işleminde).
+döndürür `Istr` `>>` `val` (ve dönüştüren bir `rvalue reference` için `Istr` için bir `lvalue` işlemdeki).
 
 ### <a name="example"></a>Örnek
 

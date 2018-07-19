@@ -18,20 +18,20 @@ helpviewer_keywords:
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 355b9945e8783879c9d35aab9893dffa32596d00
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1d369ba9b2af313c27e96e9981129fe2cf1da3c8
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840781"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961077"
 ---
 # <a name="ltarraygt-functions"></a>&lt;dizi&gt; işlevleri
 
-\<Dizi > Üstbilgi içeren iki üye olmayan işlevleri `get` ve `swap`, üzerinde çalışması `array` nesneleri.
+\<Dizi > üst bilgi içeren iki üye olmayan işlevleri `get` ve `swap`, üzerinde çalışan **dizi** nesneleri.
 
 |||
 |-|-|
-|[get](#get)|[Değiştirme](#swap)|
+|[get](#get)|[değiştirme](#swap)|
 
 ## <a name="get"></a>  Al
 
@@ -50,13 +50,13 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-`Index` Öğe uzaklığı.
+*Dizin* öğesi uzaklığı.
 
-`T` Bir öğenin türü.
+*T* öğenin türü.
 
-`N` Dizideki öğelerin sayısı.
+*N* dizideki öğelerin sayısı.
 
-`arr` Aralarından seçim yapabileceğiniz dizisi.
+*arr* dizi seçin.
 
 ### <a name="example"></a>Örnek
 
@@ -90,9 +90,9 @@ int main()
 1 3
 ```
 
-## <a name="swap"></a>  Değiştirme
+## <a name="swap"></a>  değiştirme
 
-Üye olmayan şablon uzmanlaşması `std::swap` iki değiştirir `array` nesneleri.
+Üye olmayan şablon özelleştirmesi `std::swap` iki değiştirir **dizi** nesneleri.
 
 ```cpp
 template <class Ty, std::size_t N>
@@ -101,13 +101,13 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Bir öğenin türü.
+*Ty* öğenin türü.
 
-`N` Dizi büyüklüğü.
+*N* dizinin boyutu.
 
-`left` Değiştirilecek ilk dizi.
+*Sol* takas etmek için ilk dizi.
 
-`right` Değiştirilecek ikinci dizisi.
+*doğru* takas etmek için ikinci bir dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -161,4 +161,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dizi >](../standard-library/array.md)<br/>
+[\<Array >](../standard-library/array.md)<br/>

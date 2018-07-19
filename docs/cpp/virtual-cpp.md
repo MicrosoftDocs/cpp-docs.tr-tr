@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 909fd3fde92479b2e5407608026cb01ec17fced2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9eba5462caf739d78236e10df018fc07421ea876
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421802"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939126"
 ---
 # <a name="virtual-c"></a>virtual (C++)
-`virtual` Anahtar sözcüğü bir sanal işlev veya sanal bir temel sınıf bildirir.  
+**Sanal** anahtar sözcüğü, bir sanal işlev ya da sanal bir temel sınıf bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,22 +38,22 @@ virtual [access-specifier] base-class-name
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `type-specifiers`  
+ *tür tanımlayıcıları*  
  Sanal üye işlevi dönüş türünü belirtir.  
   
- `member-function-declarator`  
- Üye işlevi bildirir.  
+ *üye işlevinin bildirimcisi*  
+ Bir üye işlev bildirir.  
   
- `access-specifier`  
- Taban sınıfı için erişim düzeyini tanımlayan `public`, `protected` veya `private`. Önce veya sonra görünebilir `virtual` anahtar sözcüğü.  
+ *erişim belirticisi*  
+ Temel sınıf için erişim düzeyini tanımlar **genel**, **korumalı** veya **özel**. Önce veya sonra görünebilir **sanal** anahtar sözcüğü.  
   
- `base-class-name`  
+ *temel sınıf adı*  
  Daha önce bildirilen sınıf türü tanımlar.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bkz: [sanal işlevler](../cpp/virtual-functions.md) daha fazla bilgi için.  
   
- Ayrıca bkz. aşağıdaki anahtar sözcükler: [sınıfı](../cpp/class-cpp.md), [özel](../cpp/private-cpp.md), [ortak](../cpp/public-cpp.md), ve [korumalı](../cpp/protected-cpp.md).  
+ Aşağıdaki anahtar sözcükler Ayrıca bkz: [sınıfı](../cpp/class-cpp.md), [özel](../cpp/private-cpp.md), [genel](../cpp/public-cpp.md), ve [korumalı](../cpp/protected-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

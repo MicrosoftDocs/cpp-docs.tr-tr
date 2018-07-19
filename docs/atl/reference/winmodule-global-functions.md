@@ -1,5 +1,5 @@
 ---
-title: Genel işlevler WinModule | Microsoft Docs
+title: WinModule genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,29 +15,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 514703e2c7c968035e9defc7677943377778a761
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9ac96acaf337ad3ee73f0b6f93ae6893632962e9
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362303"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884571"
 ---
-# <a name="winmodule-global-functions"></a>WinModule genel işlevler
-Bu işlevler için destek sağlayan `_AtlCreateWndData` yapısı işlemleri.  
+# <a name="winmodule-global-functions"></a>WinModule genel işlevleri
+Bu işlevler için destek sağlayan `_AtlCreateWndData` yapı işlemleri.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarda aşağıdaki tabloda listelenen işlevleri kullanılamaz.  
+>  Aşağıdaki tabloda listelenen İşlevler, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 |||  
 |-|-|  
-|[AtlWinModuleAddCreateWndData](#atlwinmoduleaddcreatewnddata)|Bu işlev başlatmak ve eklemek için kullanılan bir `_AtlCreateWndData` yapısı.|  
-|[AtlWinModuleExtractCreateWndData](#atlwinmoduleextractcreatewnddata)|Var olan ayıklamak için bu işlevi çağırmak `_AtlCreateWndData` yapısı.|  
+|[AtlWinModuleAddCreateWndData](#atlwinmoduleaddcreatewnddata)|Bu işlev, başlatmak ve eklemek için kullanılan bir `_AtlCreateWndData` yapısı.|  
+|[AtlWinModuleExtractCreateWndData](#atlwinmoduleextractcreatewnddata)|Mevcut bir ayıklamak için bu işlevi çağırın `_AtlCreateWndData` yapısı.|  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   `            
 ##  <a name="atlwinmoduleaddcreatewnddata"></a>  AtlWinModuleAddCreateWndData  
- Bu işlev başlatmak ve eklemek için kullanılan bir `_AtlCreateWndData` yapısı.  
+ Bu işlev, başlatmak ve eklemek için kullanılan bir `_AtlCreateWndData` yapısı.  
    
 ```
 ATLINLINE ATLAPI_(void) AtlWinModuleAddCreateWndData(
@@ -47,34 +47,34 @@ ATLINLINE ATLAPI_(void) AtlWinModuleAddCreateWndData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWinModule`  
- Bir modülün işaretçi [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md) yapısı.  
+ *pWinModule*  
+ Bir modülün işaretçisine [_atl_wın_module70](../../atl/reference/atl-win-module70-structure.md) yapısı.  
   
- `pData`  
- İşaretçi [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) başlatıldı ve geçerli modülüne eklenmiş yapısı.  
+ *pData*  
+ İşaretçi [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) yapısı başlatılamadı ve geçerli modülüne eklendi.  
   
- `pObject`  
- Bir nesnenin işaretçi **bu** işaretçi.  
+ *pObject*  
+ Bir nesnenin işaretçisine **bu** işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Başlatır bir `_AtlCreateWndData` depolamak için kullanılan yapısı **bu** işaretçi sınıfı örneklerine başvurmak için kullanılan ve bir modülün tarafından başvurulan listesine ekler `_ATL_WIN_MODULE70` yapısı. Tarafından çağrılır [CAtlWinModule::AddCreateWndData](catlwinmodule-class.md#addcreatewnddata).  
+ Başlatan bir `_AtlCreateWndData` depolamak için kullanılan yapı **bu** işaretçiyi sınıf örneklerinin başvurmak için kullanılan ve bir modülün tarafından başvurulan listesine ekler `_ATL_WIN_MODULE70` yapısı. Çağıran [CAtlWinModule::AddCreateWndData](catlwinmodule-class.md#addcreatewnddata).  
   
 ##  <a name="atlwinmoduleextractcreatewnddata"></a>  AtlWinModuleExtractCreateWndData  
- Var olan ayıklamak için bu işlevi çağırmak `_AtlCreateWndData` yapısı.  
+ Mevcut bir ayıklamak için bu işlevi çağırın `_AtlCreateWndData` yapısı.  
  
 ```
 ATLINLINE ATLAPI_(void*) AtlWinModuleExtractCreateWndData(_ATL_WIN_MODULE* pWinModule);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pWinModule`  
- Bir modülün işaretçi [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md) yapısı.  
+ *pWinModule*  
+ Bir modülün işaretçisine [_atl_wın_module70](../../atl/reference/atl-win-module70-structure.md) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi döndürür [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev varolan ayıklamak `_AtlCreateWndData` yapısı bir modülün tarafından başvurulan listeden `_ATL_WIN_MODULE70` yapısı.  
+ Bu işlev, mevcut bir ayıklayacaksınız `_AtlCreateWndData` yapısı bir modülün tarafından başvurulan listeden `_ATL_WIN_MODULE70` yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlevler](../../atl/reference/atl-functions.md)

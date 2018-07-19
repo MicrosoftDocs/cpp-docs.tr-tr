@@ -23,15 +23,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 437ae282efd4b21f294e26890f16130b7a89a55f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5c247874f96fa3b91af8f5b03840f716b6eb6516
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355613"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963978"
 ---
 # <a name="message-handler-functions"></a>İleti işleyici işlevleri
-ATL üç tür ileti işleyici işlevleri sağlar:  
+ATL ileti işleyici işlevlerini üç tür sağlar:  
   
 |İleti işleyicisi türü|Karşılık gelen ileti makrosu|  
 |-----------------------------|---------------------------------|  
@@ -40,7 +40,7 @@ ATL üç tür ileti işleyici işlevleri sağlar:
 |[NotifyHandler](../atl/notifyhandler.md)|[NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir pencere uygulama](../atl/implementing-a-window.md)   
+ [Pencere uygulama](../atl/implementing-a-window.md)   
  [İleti eşlemeleri](../atl/message-maps-atl.md)   
  [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
 

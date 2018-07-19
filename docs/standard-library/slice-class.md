@@ -22,44 +22,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d17dc3e53504add2507617c95439fa7d32565a53
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2d0f45f1b8eac09ae28f8a289a59d8a16a709295
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858519"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965883"
 ---
 # <a name="slice-class"></a>slice Sınıfı
 
-Tek boyutlu bir üst valarray kümelerine tanımlamak için kullanılan valarray için yardımcı sınıfı. Bir valarray iki boyutlu bir matris bir dizinin tüm öğeleri olarak kabul edilir, dilim iki boyutlu dizi dışında bir boyuttaki bir vektör ayıklar.
+Tek boyutlu bir üst valarray kümelerine tanımlamak için kullanılan valarray için yardımcı program sınıfı. Bir valarray bir dizideki tüm öğeler içeren iki boyutlu bir matris olarak kabul edilir, dilim iki boyutlu dizi dışında bir boyutta bir vektör ayıklar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türünde bir nesne niteleyen parametreleri sınıfı depolar [slice_array](../standard-library/slice-array-class.md) sınıfın bir nesnesi için bağımsız değişken olarak bir nesne sınıfı dilimin görüntülendiğinde, bir valarray alt dolaylı olarak oluşturulan [valarray ](../standard-library/valarray-class.md#op_at)  **\<Türü >**. Üst valarray Seçili alt belirtin depolanan değerleri şunlardır:
+Sınıf türünde bir nesne niteleyen parametreleri depolayan [slice_array](../standard-library/slice-array-class.md) sınıfın bir nesnesi için bağımsız değişken olarak bir nesne sınıfı diliminin göründüğünde alt kümesini bir valarray dolaylı olarak oluşturulmuş [valarray ](../standard-library/valarray-class.md#op_at)  **\<Türü >**. Üst valarray Seçili alt küme belirtmeyi depolanan değerler şunlardır:
 
 - Valarray bir başlangıç dizini.
 
-- Bir toplam uzunluğu veya dilim öğe sayısı.
+- Toplam uzunluğu, veya dilimi içindeki öğelerin sayısı.
 
-- Bir adım veya valarray'ndaki öğelerin sonraki dizinler arasındaki uzaklığı.
+- Bir adım veya valarray öğelerin sonraki dizinler arasındaki uzaklık.
 
-Bir dilim tarafından tanımlanan bir sabit valarray alt kümesidir, dilim yeni valarray olur. Bir dilim tarafından tanımlanan alt kümesini nonconstant valarray ayarlanırsa, dilim özgün valarray başvuru semantik vardır. Nonconstant valarrays için değerlendirme mekanizması süresi ve bellek kaydeder.
+Bir dilim tarafından tanımlanan kümeye bir sabit valarray alt kümesidir, dilim yeni valarray olur. Bir dilim tarafından tanımlanan kümeye nonconstant valarray kısmı ise, dilim özgün valarray için başvuru semantiği vardır. Değerlendirme mekanizması nonconstant valarrays süresi ve bellek kaydeder.
 
-Valarrays işlemleri yalnızca dilimler tarafından tanımlanan kaynak ve hedef alt kümelerini farklıdır ve tüm dizinleri geçerli sağlanır.
+Valarrays işlemleri yalnızca dilimleri tarafından tanımlanan kaynak ve hedef kümeleri farklıdır ve tüm dizinleri geçerli garanti edilir.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Dilim](#slice)|Bir alt kümesini tanımlar bir `valarray` bir eşit uzaklıkta olan ve belirtilen bir öğede Başlat öğeleri sayısının oluşur.|
+|[Dilim](#slice)|Bir alt kümesini tanımlayan bir `valarray` bir sayının belirtilen bir öğe başlangıç ve bir eşit uzaklıkta olan öğelerin oluşur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Boyutu](#size)|Dilimin öğe sayısını bulur bir `valarray`.|
-|[Başlat](#start)|Bir dilimin başlangıç dizinini bulur bir `valarray`.|
-|[STRIDE](#stride)|Bir dilimin öğeler arasındaki mesafeyi bulur bir `valarray`.|
+|[Boyutu](#size)|Dilimin öğelerin sayısını bulur bir `valarray`.|
+|[Başlangıç](#start)|Dilimin başlangıç dizini bulur bir `valarray`.|
+|[STRIDE](#stride)|Dilimin öğeler arasındaki uzaklık bulur bir `valarray`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -69,7 +69,7 @@ Valarrays işlemleri yalnızca dilimler tarafından tanımlanan kaynak ve hedef 
 
 ## <a name="size"></a>  Slice::size
 
-Dilimi bir valarray öğe sayısını bulur.
+Bir dilim bir valarray öğe sayısını bulur.
 
 ```cpp
 size_t size() const;
@@ -77,7 +77,7 @@ size_t size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir valarray dilimin öğe sayısı.
+Valarray bir dilimin içindeki öğe sayısı.
 
 ### <a name="example"></a>Örnek
 
@@ -133,7 +133,7 @@ The size of slice vaSlice is: 6.
 
 ## <a name="slice"></a>  Slice::slice
 
-Bir eşit uzaklıkta olan ve belirtilen bir öğede Başlat öğe sayısı oluşan bir valarray kümesini tanımlar.
+Bir sayının belirtilen bir öğe başlar ve bir eşit uzaklıkta olan öğelerin oluşan bir valarray kümesini tanımlar.
 
 ```cpp
 slice();
@@ -146,15 +146,15 @@ slice(
 
 ### <a name="parameters"></a>Parametreler
 
-`_StartIndex` Alt ilk öğe valarray dizini.
+*_StartIndex* ilk alt öğenin valarray dizini.
 
-`_Len` Alt öğe sayısı.
+*_Len* alt öğe sayısı.
 
-`stride` Alt öğeler arasındaki uzaklığı.
+*STRIDE* alt öğeler arasındaki uzaklık.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan Oluşturucu sıfır başlangıç dizini, toplam uzunluğu ve STRIDE depolar. İkinci oluşturucu depoları `_StartIndex` başlangıç dizini için `_Len` toplam uzunluğu ve `stride` STRIDE için.
+Varsayılan Oluşturucu sıfır başlangıç dizini, toplam uzunluğu ve ilerleme için depolar. İkinci oluşturucu depoları *_StartIndex* başlangıç dizini için *_Len* toplam uzunluğu ve *STRIDE* STRIDE için.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -203,7 +203,7 @@ va[slice( 1, 7, 3)] = ( 4 10 16 22 28 34 40 ).
 
 ## <a name="start"></a>  Slice::Start
 
-Bir valarray dilimin başlangıç dizinini bulur.
+Valarray bir dilimin başlangıç dizini bulur.
 
 ```cpp
 size_t start() const;
@@ -211,7 +211,7 @@ size_t start() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir valarray dilimin başlangıç dizini.
+Valarray bir dilimin başlangıç dizini.
 
 ### <a name="example"></a>Örnek
 
@@ -261,7 +261,7 @@ The start index of slice vaSlice is: 3.
 
 ## <a name="stride"></a>  Slice::stride
 
-Bir valarray dilimin öğeler arasındaki mesafeyi bulur.
+Valarray bir dilimin öğeler arasındaki uzaklık bulur.
 
 ```cpp
 size_t stride() const;
@@ -269,7 +269,7 @@ size_t stride() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir valarray dilimin öğeler arasındaki uzaklığı.
+Valarray bir dilimin öğeler arasındaki uzaklık.
 
 ### <a name="example"></a>Örnek
 

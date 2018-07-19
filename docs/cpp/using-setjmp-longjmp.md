@@ -1,5 +1,5 @@
 ---
-title: Setjmp longjmp kullanma | Microsoft Docs
+title: Setjmp-longjmp kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,22 +22,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dee79d5b81e968e89e8072fb545c86f33be9bcce
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f68cd13304e73282735ad1227510b289b19caed8
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422611"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939773"
 ---
 # <a name="using-setjmplongjmp"></a>setjmp/longjmp Kullanma
-Zaman [setjmp](../c-runtime-library/reference/setjmp.md) ve [longjmp](../c-runtime-library/reference/longjmp.md) olan birlikte kullanıldığında, yerel olmayan yürütmek için bir yol sağladıkları `goto`. Bunlar, genellikle standart arama kullanmadan önce çağrılan bir yordam hata işleme veya kurtarma kodunda yürütme denetimi geçirmek için kullanılan veya kuralları döndürür.  
+Zaman [setjmp](../c-runtime-library/reference/setjmp.md) ve [longjmp](../c-runtime-library/reference/longjmp.md) olan birlikte kullanıldığında, yerel olmayan yürütmek için bir yol sağlarlar **goto**. Bunlar, genellikle standart çağırma kullanmadan daha önce çağrılmış bir yordam hata işleme veya kurtarma koduna yürütme denetimi geçirmek için kullanılan veya dönüş kuralları.  
   
 > [!CAUTION]
->  Ancak, çünkü `setjmp` ve `longjmp` C++ nesne semantiği desteklemez ve yerel değişkenler en iyi duruma getirilmesi engelleyerek performansını azaltabilir, bunları C++ programlarında kullanmamanızı öneririz. Kullanmanızı öneririz `try` / `catch` yerine oluşturur.  
+>  Ancak, çünkü `setjmp` ve `longjmp` C++ nesnesi semantiğini desteklemediğinden ve yerel değişkenlerde iyileştirmeyi engelleyerek performansı düşebilir olduğundan, bunları C++ programlarında kullanmamanızı öneririz. Kullanmanızı öneririz **deneyin**/**catch** yerine oluşturur.  
   
- Kullanmaya karar verirseniz `setjmp` / `longjmp` bir C++ programı da dahil \<setjmp.h'ı > veya \<setjmpex.h > işlevleri ve C++ özel durum işleme arasında doğru etkileşim güvence altına almak için. Kullanırsanız [/EH](../build/reference/eh-exception-handling-model.md) derlemek için yerel nesneleri için Yıkıcılar yığını geriye doğru izleme sırasında denir. Kullanırsanız **/EHs** derleme ve, işlev çağrıları kullanan bir işlev bir biri [nothrow](../cpp/nothrow-cpp.md) ve kullanan bir işlev `nothrow` çağrıları `longjmp`, yıkıcı bırakma gerçekleşmeyebilir sonra İyileştirici bağlı olarak.  
+ Kullanmaya karar verirseniz `setjmp` / `longjmp` bir C++ programında de \<setjmp.h > veya \<setjmpex.h > İşlevler ve C++ özel durum işleme arasında doğru etkileşimi sağlamak için. Kullanırsanız [/EH](../build/reference/eh-exception-handling-model.md) derlemek için yerel nesneleri yok ediciler yığın bırakma sırasında çağrılır. Kullanırsanız **EHS** derleme ve biri, işlev çağrıları kullanan bir işlevi [nothrow](../cpp/nothrow-cpp.md) ve kullanan işlev **nothrow** çağrıları `longjmp`, ardından yok edici, iyileştiriciye bağlı değil.  
   
- Taşınabilir kodda, yerel olmayan zaman `goto` çağırır `longjmp` yürütüldüğünde, çerçeve tabanlı nesnelerin doğru yok etme güvenilir olabilir.  
+ Taşınabilir kodda, yerel olmayan **goto** çağrılarının `longjmp` yürütüldüğünde, doğru çerçeve tabanlı nesnelerin yok edilmesini güvensiz olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)

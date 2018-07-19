@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d87eac720b205560993a7d6995be8a8fe6ad6194
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 979e726e1374ac37844472d9e2f9ae8ddd5ddf4d
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843528"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965808"
 ---
 # <a name="ismoveconstructible-class"></a>is_move_constructible sınıfı
 
-Bir taşıma oluşturucusuna türüne sahip olup olmadığını sınar.
+Türü bir taşıma oluşturucusuna sahip olup olmadığını test eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +36,11 @@ struct is_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-Değerlendirilecek T türü
+*T* değerlendirilecek türü
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü ise true olarak değerlendirilir türü koşulu `T` bir taşıma işlemi kullanılarak oluşturulabilir. Bu koşul eşdeğerdir `is_constructible<T, T&&>`.
+Gerekirse true değerlendirir türü bir tür koşulu *T* taşıma işlemi kullanılarak oluşturulabilir. Bu koşulu eşdeğerdir `is_constructible<T, T&&>`.
 
 ## <a name="requirements"></a>Gereksinimler
 

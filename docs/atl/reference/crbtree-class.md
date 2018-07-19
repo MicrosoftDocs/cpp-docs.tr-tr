@@ -37,15 +37,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b15ddf62545d5926faf75af760ed52219f1cb03
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 10ca0fee1bb88b205732590b085cb9ddfe9a6c10
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365591"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885799"
 ---
 # <a name="crbtree-class"></a>CRBTree sınıfı
-Bu sınıf oluşturma ve kırmızı siyah ağaç kullanan yöntemleri sağlar.  
+Bu sınıf, oluşturma ve Red-siyah ağaç kullanan yöntemleri sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -58,28 +58,28 @@ class CRBTree
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `K`  
+ *K*  
  Anahtar öğe türü.  
   
  *V*  
  Değer öğe türü.  
   
- `KTraits`  
- Kopyalama veya anahtar öğeleri taşıma için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.  
+ *KTraits*  
+ Kopyalamak veya taşımak temel öğeleri için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.  
   
- `VTraits`  
- Kopyalama veya değer öğeleri taşıma için kullanılan kod.  
+ *VTraits*  
+ Kopyalamak veya taşımak değeri öğeleri için kullanılan kod.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CRBTree::KINARGTYPE](#kinargtype)|Bir giriş bağımsız değişkeni bir anahtar geçirildiğinde kullanılan türü.|  
-|[CRBTree::KOUTARGTYPE](#koutargtype)|Bir anahtar çıkış bağımsız değişken olarak döndürüldüğünde kullanılan türü.|  
-|[CRBTree::VINARGTYPE](#vinargtype)|Bir giriş bağımsız değişkeni bir değer geçirildiğinde kullanılan türü.|  
-|[CRBTree::VOUTARGTYPE](#voutargtype)|Çıkış bağımsız değişken olarak bir değer geçirildiğinde kullanılan türü.|  
+|[CRBTree::KOUTARGTYPE](#koutargtype)|Çıkış bağımsız değişken olarak bir anahtar döndürüldüğünde kullanılan türü.|  
+|[CRBTree::VINARGTYPE](#vinargtype)|Kullanılması için bir giriş bağımsız değişkeni geçirilen bir değer türü.|  
+|[CRBTree::VOUTARGTYPE](#voutargtype)|Çıkış bağımsız değişken olarak geçirilen bir değer olduğunda kullanılan türü.|  
   
 ### <a name="public-classes"></a>Genel sınıflar  
   
@@ -91,35 +91,35 @@ class CRBTree
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CRBTree:: ~ CRBTree](#dtor)|Yok Edicisi.|  
+|[CRBTree:: ~ CRBTree](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CRBTree::FindFirstKeyAfter](#findfirstkeyafter)|Sonraki kullanılabilir anahtar kullanan öğenin konumunu bulmak için bu yöntemi çağırın.|  
-|[CRBTree::GetAt](#getat)|Ağacında verilen konumda öğesini almak için bu yöntemi çağırın.|  
-|[CRBTree::GetCount](#getcount)|Öğe sayısını ağacında almak için bu yöntemi çağırın.|  
-|[CRBTree::GetHeadPosition](#getheadposition)|Ağaç başındaki öğesi için konum değerini almak için bu yöntemi çağırın.|  
-|[CRBTree::GetKeyAt](#getkeyat)|Ağacında belirli bir konumdan anahtarını almak için bu yöntemi çağırın.|  
-|[CRBTree::GetNext](#getnext)|Depolanmış bir öğe için bir işaretçi elde etmek için bu yöntemi çağırın `CRBTree` nesne ve sonraki öğeye konumu ilerleyin.|  
-|[CRBTree::GetNextAssoc](#getnextassoc)|Anahtar ve değer eşlemesinde depolanan bir öğenin almak için bu yöntemi çağırın ve sonraki öğeye konumu ilerleyin.|  
-|[CRBTree::GetNextKey](#getnextkey)|Ağaçta depolanan bir öğenin anahtarı almak için bu yöntemi çağırın ve sonraki öğeye konumu ilerleyin.|  
-|[CRBTree::GetNextValue](#getnextvalue)|Ağaçta depolanan bir öğe değerini almak için bu yöntemi çağırın ve sonraki öğeye konumu ilerleyin.|  
-|[CRBTree::GetPrev](#getprev)|Depolanmış bir öğe için bir işaretçi elde etmek için bu yöntemi çağırın `CRBTree` nesnesi ve ardından önceki öğesine konumu güncelleştirin.|  
-|[CRBTree::GetTailPosition](#gettailposition)|Ağaç kuyruğu öğede için konum değerini almak için bu yöntemi çağırın.|  
-|[CRBTree::GetValueAt](#getvalueat)|Belirli bir konumda depolanan değerini almak için bu yöntemi çağırın `CRBTree` nesnesi.|  
-|[CRBTree::IsEmpty](#isempty)|Bir boş ağaç nesne için test etmek için bu yöntemi çağırın.|  
-|[CRBTree::RemoveAll](#removeall)|Tüm öğeleri kaldırmak için bu yöntemi çağırın **CRBTree** nesnesi.|  
-|[CRBTree::RemoveAt](#removeat)|Belirtilen konumda öğesini kaldırmak için bu yöntemi çağırın **CRBTree** nesnesi.|  
-|[CRBTree::SetValueAt](#setvalueat)|Belirli bir konumda depolanan değeri değiştirmek için bu yöntemi çağırın `CRBTree` nesnesi.|  
+|[CRBTree::FindFirstKeyAfter](#findfirstkeyafter)|Sonraki kullanılabilir anahtarı kullanan bir öğenin konumunu bulmak için bu yöntemi çağırın.|  
+|[CRBTree::GetAt](#getat)|Verilen konumda ağacındaki öğe almak için bu yöntemi çağırın.|  
+|[CRBTree::GetCount](#getcount)|Ağaçta öğelerin sayısını almak için bu yöntemi çağırın.|  
+|[CRBTree::GetHeadPosition](#getheadposition)|Öğe ağacı başındaki konum değerini almak için bu yöntemi çağırın.|  
+|[CRBTree::GetKeyAt](#getkeyat)|Ağaçta belirli bir konumdan anahtarı almak için bu yöntemi çağırın.|  
+|[CRBTree::GetNext](#getnext)|İçinde depolan bir öğeye bir işaretçi alma için bu yöntemi çağırın `CRBTree` nesne ve sonraki öğeye konumuna ilerleyin.|  
+|[CRBTree::GetNextAssoc](#getnextassoc)|Eşlem içinde depolan bir öğenin değerini ve anahtarı almak için bu yöntemi çağırın ve sonraki öğeye konumuna ilerleyin.|  
+|[CRBTree::GetNextKey](#getnextkey)|Depolanan ağaçta bir öğenin anahtarı almak için bu yöntemi çağırın ve sonraki öğeye konumuna ilerleyin.|  
+|[CRBTree::GetNextValue](#getnextvalue)|Ağacı içinde depolan bir öğeye değerini almak için bu yöntemi çağırın ve sonraki öğeye konumuna ilerleyin.|  
+|[CRBTree::GetPrev](#getprev)|İçinde depolan bir öğeye bir işaretçi alma için bu yöntemi çağırın `CRBTree` nesnesi ve ardından önceki öğenin konumunu güncelleştirin.|  
+|[CRBTree::GetTailPosition](#gettailposition)|Öğe ağacı kuyruğunu konum değerini almak için bu yöntemi çağırın.|  
+|[CRBTree::GetValueAt](#getvalueat)|Belirli bir konumda depolanan değeri almak için bu yöntemi çağırın `CRBTree` nesne.|  
+|[CRBTree::IsEmpty](#isempty)|Boş bir ağaç nesne için test etmek için bu yöntemi çağırın.|  
+|[CRBTree::RemoveAll](#removeall)|Tüm öğeleri kaldırmak için bu yöntemi çağırın `CRBTree` nesne.|  
+|[CRBTree::RemoveAt](#removeat)|Belirtilen konumda bir öğe kaldırmak için bu yöntemi çağırın `CRBTree` nesne.|  
+|[CRBTree::SetValueAt](#setvalueat)|Belirli bir konumda depolanan değeri değiştirmek için bu yöntemi çağırın `CRBTree` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kırmızı siyah ağaç fazladan kullanan bir ikili arama ağacıdır bit onu kalmasını sağlamak için düğüm başına bilgilerinin "Dengeli," olan, ağaç yüksekliğini orantısız büyük büyür ve performansı etkileyen değil.  
+ Ek kullanan ikili arama ağacını Red-siyah ağacıdır bilgilerin, kalmasını sağlamak için düğüm başına bit "Dengeli," olan, ağaç yüksekliği orantısız büyük büyütme ve performans üzerindeki etkisi yoktur.  
   
- Bu şablon sınıfı tarafından kullanılmak üzere tasarlanmış [CRBMap](../../atl/reference/crbmap-class.md) ve [CRBMultiMap](../../atl/reference/crbmultimap-class.md). Bu türetilmiş sınıfları olun yöntemleri toplu tarafından sağlanan `CRBTree`.  
+ Bu şablon sınıfının tarafından kullanılmak üzere tasarlanmıştır [CRBMap](../../atl/reference/crbmap-class.md) ve [CRBMultiMap](../../atl/reference/crbmultimap-class.md). Bu türetilmiş sınıfları yöntemlerin toplu tarafından sağlanan `CRBTree`.  
   
- Çeşitli koleksiyon sınıfları, özellikleri ve performans özelliklerini daha eksiksiz bir tartışma için bkz [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
+ Çeşitli koleksiyon sınıflarını ve özelliklerini ve performans özelliklerini daha eksiksiz bir açıklaması için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
@@ -132,7 +132,7 @@ class CPair : public __POSITION
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu sınıf yöntemler tarafından kullanılan [CRBTree::GetAt](#getat), [CRBTree::GetNext](#getnext), ve [CRBTree::GetPrev](#getprev) ağaç yapısında depolanmış anahtar ve değer öğeleri erişmek için.  
+ Bu sınıf yöntemleri tarafından kullanılır [CRBTree::GetAt](#getat), [CRBTree::GetNext](#getnext), ve [CRBTree::GetPrev](#getprev) ağaç yapısı içinde depolanan anahtar ve değer öğelere erişmek için.  
   
  Üyeleri aşağıdaki gibidir:  
   
@@ -142,34 +142,34 @@ class CPair : public __POSITION
 |`m_value`|Değer öğesini depolama veri üyesi.|  
   
 ##  <a name="dtor"></a>  CRBTree:: ~ CRBTree  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CRBTree() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayrılan tüm kaynakları serbest bırakır. Çağrıları [CRBTree::RemoveAll](#removeall) tüm öğeleri silmek için.  
+ Ayrılan tüm kaynakları serbest bırakır. Çağrıları [CRBTree::RemoveAll](#removeall) tüm öğeleri silinemedi.  
   
 ##  <a name="findfirstkeyafter"></a>  CRBTree::FindFirstKeyAfter  
- Sonraki kullanılabilir anahtar kullanan öğenin konumunu bulmak için bu yöntemi çağırın.  
+ Sonraki kullanılabilir anahtarı kullanan bir öğenin konumunu bulmak için bu yöntemi çağırın.  
   
 ```
 POSITION FindFirstKeyAfter(KINARGTYPE key) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Bir anahtar değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Konum, bir sonraki kullanılabilir anahtarı kullanan öğenin değerini döndürür. Daha fazla öğe varsa, null değeri döndürülür.  
+ Sonraki kullanılabilir anahtarı kullanan öğenin konumunu değerini döndürür. Daha fazla öğe yoksa NULL döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem konum değerleri önceden hesaplamak zorunda kalmadan ağacı gezme kolay hale getirir.  
+ Bu yöntem, önceden konum değerleri hesaplama yapmak zorunda kalmadan ağacı gezme kolaylaştırır.  
   
 ##  <a name="getat"></a>  CRBTree::GetAt  
- Ağacında verilen konumda öğesini almak için bu yöntemi çağırın.  
+ Verilen konumda ağacındaki öğe almak için bu yöntemi çağırın.  
   
 ```
 CPair* GetAt(POSITION pos) throw();
@@ -178,65 +178,65 @@ void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
+ *POS*  
  Konum değeri.  
   
- `key`  
- Anahtarı aldıktan değişkeni.  
+ *Anahtarı*  
+ Değişken anahtarı alır.  
   
  *value*  
- Değerini alan değişken.  
+ Değişken değerini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk iki forms bir işaretçi döndürmek bir [CPair](#cpair_class). Üçüncü formun bir anahtarı ve belirtilen konum için bir değer alır.  
+ İlk iki form bir işaretçi döndürür bir [CPair](#cpair_class). Üçüncü formu bir anahtarı ve belirtilen konum için bir değer alır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Konum değerini daha önce bir yöntem çağrısı gibi belirlenebilir [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::GetTailPosition](#gettailposition).  
+ Konum değerini daha önce bir yönteme bir çağrı ile gibi belirlenebilir [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::GetTailPosition](#gettailposition).  
   
- Hata ayıklama derlemelerinde, bir onaylama işlemi hatasına oluşacaktır `pos` NULL değerine eşittir.  
+ Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pos* NULL değerine eşittir.  
   
 ##  <a name="getcount"></a>  CRBTree::GetCount  
- Öğe sayısını ağacında almak için bu yöntemi çağırın.  
+ Ağaçta öğelerin sayısını almak için bu yöntemi çağırın.  
   
 ```
 size_t GetCount() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ağaçta depolanan (her anahtar/değer çifti bir öğedir) öğe sayısını döndürür.  
+ Ağaçta depolanan (her anahtar/değer çifti bir öğedir) öğelerin sayısını döndürür.  
   
 ##  <a name="getheadposition"></a>  CRBTree::GetHeadPosition  
- Ağaç başındaki öğesi için konum değerini almak için bu yöntemi çağırın.  
+ Öğe ağacı başındaki konum değerini almak için bu yöntemi çağırın.  
   
 ```
 POSITION GetHeadPosition() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ağaç başındaki öğesinin konum değeri döndürür.  
+ Öğe ağacı başındaki konum değeri döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Tarafından döndürülen değer `GetHeadPosition` yöntemleriyle gibi kullanılabilir [CRBTree::GetKeyAt](#getkeyat) veya [CRBTree::GetNext](#getnext) ağacı gezme ve değerleri almak için.  
   
 ##  <a name="getkeyat"></a>  CRBTree::GetKeyAt  
- Ağacında belirli bir konumdan anahtarını almak için bu yöntemi çağırın.  
+ Ağaçta belirli bir konumdan anahtarı almak için bu yöntemi çağırın.  
   
 ```
 const K& GetKeyAt(POSITION pos) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
+ *POS*  
  Konum değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Konumunda depolanan anahtar döndürür `pos` ağacında.  
+ Konumunda depolanan anahtar döndürür *pos* ağacında.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `pos` bir geçerli konumu değer sonuçları tahmin edilemez. Hata ayıklama derlemelerinde, bir onaylama işlemi hatasına oluşacaktır `pos` NULL değerine eşittir.  
+ Varsa *pos* bir geçerli konumu değeri değil sonuçların tahmin edilemeyeceğine. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pos* NULL değerine eşittir.  
   
 ##  <a name="getnext"></a>  CRBTree::GetNext  
- Depolanmış bir öğe için bir işaretçi elde etmek için bu yöntemi çağırın `CRBTree` nesne ve sonraki öğeye konumu ilerleyin.  
+ İçinde depolan bir öğeye bir işaretçi alma için bu yöntemi çağırın `CRBTree` nesne ve sonraki öğeye konumuna ilerleyin.  
   
 ```
 const CPair* GetNext(POSITION& pos) const throw();
@@ -244,17 +244,17 @@ CPair* GetNext(POSITION& pos) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
- Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konumu sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
+ *POS*  
+ Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sonraki işaretçi döndüren [CPair](#cpair_class) ağacında değeri.  
+ Sonraki bir işaretçi döndürür [CPair](#cpair_class) ağacında değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pos` Konumu sayaç, her çağrısından sonra güncelleştirilir. Alınan öğe ağacında, son ise `pos` NULL olarak ayarlandı.  
+ *Pos* konumu sayaç her çağrıdan sonra güncelleştirilir. Alınan öğe ağacında, son ise *pos* NULL olarak ayarlandı.  
   
 ##  <a name="getnextassoc"></a>  CRBTree::GetNextAssoc  
- Anahtar ve değer eşlemesinde depolanan bir öğenin almak için bu yöntemi çağırın ve sonraki öğeye konumu ilerleyin.  
+ Eşlem içinde depolan bir öğenin değerini ve anahtarı almak için bu yöntemi çağırın ve sonraki öğeye konumuna ilerleyin.  
   
 ```
 void GetNextAssoc(
@@ -264,37 +264,37 @@ void GetNextAssoc(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
- Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konumu sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
+ *POS*  
+ Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
   
- `key`  
- Şablon parametresi ağacının anahtar türü belirtme.  
+ *Anahtarı*  
+ Ağacının anahtar türünü belirten bir şablon parametre.  
   
  *value*  
- Şablon parametresi ağacının değerin türünü belirtme.  
+ Ağacının değerin türünü belirten bir şablon parametre.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pos` Konumu sayaç, her çağrısından sonra güncelleştirilir. Alınan öğe ağacında, son ise `pos` NULL olarak ayarlandı.  
+ *Pos* konumu sayaç her çağrıdan sonra güncelleştirilir. Alınan öğe ağacında, son ise *pos* NULL olarak ayarlandı.  
   
 ##  <a name="getnextkey"></a>  CRBTree::GetNextKey  
- Ağaçta depolanan bir öğenin anahtarı almak için bu yöntemi çağırın ve sonraki öğeye konumu ilerleyin.  
+ Depolanan ağaçta bir öğenin anahtarı almak için bu yöntemi çağırın ve sonraki öğeye konumuna ilerleyin.  
   
 ```
 const K& GetNextKey(POSITION& pos) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
- Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konumu sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
+ *POS*  
+ Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ağaçta sonraki anahtarı için bir başvuru döndürür.  
+ Sonraki anahtarı için bir başvuru ağacında döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli konumu sayaç güncelleştirmeleri `pos`. Ağaçta daha fazla girdi yoksa konumu sayacı NULL olarak ayarlanır.  
+ Geçerli konumu sayacı güncelleştiren *pos*. Ağacında daha fazla girdi yoksa konumu sayaç değeri NULL olarak ayarlanır.  
   
 ##  <a name="getnextvalue"></a>  CRBTree::GetNextValue  
- Ağaçta depolanan bir öğe değerini almak için bu yöntemi çağırın ve sonraki öğeye konumu ilerleyin.  
+ Ağacı içinde depolan bir öğeye değerini almak için bu yöntemi çağırın ve sonraki öğeye konumuna ilerleyin.  
   
 ```
 const V& GetNextValue(POSITION& pos) const throw();
@@ -302,17 +302,17 @@ V& GetNextValue(POSITION& pos) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
- Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konumu sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
+ *POS*  
+ Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ağaçta sonraki değeri bir başvuru döndürür.  
+ Ağaçta sonraki değerine bir başvuru döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli konumu sayaç güncelleştirmeleri `pos`. Ağaçta daha fazla girdi yoksa konumu sayacı NULL olarak ayarlanır.  
+ Geçerli konumu sayacı güncelleştiren *pos*. Ağacında daha fazla girdi yoksa konumu sayaç değeri NULL olarak ayarlanır.  
   
 ##  <a name="getprev"></a>  CRBTree::GetPrev  
- Depolanmış bir öğe için bir işaretçi elde etmek için bu yöntemi çağırın `CRBTree` nesnesi ve ardından önceki öğesine konumu güncelleştirin.  
+ İçinde depolan bir öğeye bir işaretçi alma için bu yöntemi çağırın `CRBTree` nesnesi ve ardından önceki öğenin konumunu güncelleştirin.  
   
 ```
 const CPair* GetPrev(POSITION& pos) const throw();
@@ -320,30 +320,30 @@ CPair* GetPrev(POSITION& pos) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
- Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konumu sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
+ *POS*  
+ Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi önceki döndüren [CPair](#cpair_class) ağacında depolanan değer.  
+ Önceki bir işaretçi döndürür [CPair](#cpair_class) ağacında depolanan değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli konumu sayaç güncelleştirmeleri `pos`. Ağaçta daha fazla girdi yoksa konumu sayacı NULL olarak ayarlanır.  
+ Geçerli konumu sayacı güncelleştiren *pos*. Ağacında daha fazla girdi yoksa konumu sayaç değeri NULL olarak ayarlanır.  
   
 ##  <a name="gettailposition"></a>  CRBTree::GetTailPosition  
- Ağaç kuyruğu öğede için konum değerini almak için bu yöntemi çağırın.  
+ Öğe ağacı kuyruğunu konum değerini almak için bu yöntemi çağırın.  
   
 ```
 POSITION GetTailPosition() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ağaç kuyruğu öğede konum değeri döndürür.  
+ Öğe ağacı sonu için konum değeri döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Tarafından döndürülen değer `GetTailPosition` yöntemleriyle gibi kullanılabilir [CRBTree::GetKeyAt](#getkeyat) veya [CRBTree::GetPrev](#getprev) ağacı gezme ve değerleri almak için.  
   
 ##  <a name="getvalueat"></a>  CRBTree::GetValueAt  
- Belirli bir konumda depolanan değerini almak için bu yöntemi çağırın `CRBTree` nesnesi.  
+ Belirli bir konumda depolanan değeri almak için bu yöntemi çağırın `CRBTree` nesne.  
   
 ```
 const V& GetValueAt(POSITION pos) const throw();
@@ -351,21 +351,21 @@ V& GetValueAt(POSITION pos) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
- Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konumu sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
+ *POS*  
+ Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Verilen konumunda depolanan değeri bir başvuru döndürür `CRBTree` nesnesi.  
+ Belirtilen konumda depolanan değeri bir başvuru döndürür `CRBTree` nesne.  
   
 ##  <a name="isempty"></a>  CRBTree::IsEmpty  
- Bir boş ağaç nesne için test etmek için bu yöntemi çağırın.  
+ Boş bir ağaç nesne için test etmek için bu yöntemi çağırın.  
   
 ```
 bool IsEmpty() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** ağaç boşsa, **false** Aksi takdirde.  
+ Ağaç değilse FALSE değerini boş, TRUE döndürür.  
   
 ##  <a name="kinargtype"></a>  CRBTree::KINARGTYPE  
  Bir giriş bağımsız değişkeni bir anahtar geçirildiğinde kullanılan türü.  
@@ -375,14 +375,14 @@ typedef KTraits::INARGTYPE KINARGTYPE;
 ```  
   
 ##  <a name="koutargtype"></a>  CRBTree::KOUTARGTYPE  
- Bir anahtar çıkış bağımsız değişken olarak döndürüldüğünde kullanılan türü.  
+ Çıkış bağımsız değişken olarak bir anahtar döndürüldüğünde kullanılan türü.  
   
 ```
 typedef KTraits::OUTARGTYPE KOUTARGTYPE;
 ```  
   
 ##  <a name="removeall"></a>  CRBTree::RemoveAll  
- Tüm öğeleri kaldırmak için bu yöntemi çağırın `CRBTree` nesnesi.  
+ Tüm öğeleri kaldırmak için bu yöntemi çağırın `CRBTree` nesne.  
   
 ```
 void RemoveAll() throw();
@@ -392,49 +392,49 @@ void RemoveAll() throw();
  Temizler `CRBTree` öğeleri depolamak için kullanılan bellek boşaltma nesnesi.  
   
 ##  <a name="removeat"></a>  CRBTree::RemoveAt  
- Belirtilen konumda öğesini kaldırmak için bu yöntemi çağırın **CRBTree** nesnesi.  
+ Belirtilen konumda bir öğe kaldırmak için bu yöntemi çağırın `CRBTree` nesne.  
   
 ```
 void RemoveAt(POSITION pos) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
- Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konumu sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
+ *POS*  
+ Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen konumda saklanan anahtar/değer çifti kaldırır. Öğe depolamak için kullanılan bellek serbest bırakılır. KONUM tarafından başvurulan `pos` geçersiz hale gelir ve diğer öğeleri KONUMUNU ağacında yapmaları gerekmez, geçerli kalırken aynı sırada korur.  
+ Belirtilen konumda depolanan anahtar/değer çifti kaldırır. Öğe depolamak için kullanılan bellek serbest bırakılır. KONUMU tarafından başvurulan *pos* geçersiz hale gelir ve aynı sırada herhangi bir öğe konumu ağacında yaptıkları mutlaka geçerli kalırken korur.  
   
 ##  <a name="setvalueat"></a>  CRBTree::SetValueAt  
- Belirli bir konumda depolanan değeri değiştirmek için bu yöntemi çağırın `CRBTree` nesnesi.  
+ Belirli bir konumda depolanan değeri değiştirmek için bu yöntemi çağırın `CRBTree` nesne.  
   
 ```
 void SetValueAt(POSITION pos, VINARGTYPE value);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pos`  
- Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konumu sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
+ *POS*  
+ Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).  
   
  *value*  
- Eklenecek değer `CRBTree` nesnesi.  
+ Eklenecek değer `CRBTree` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Verilen konumunda depolanan değer öğesini değiştirir `CRBTree` nesnesi.  
+ Belirtilen konumda depolanan değer öğesini değiştirir `CRBTree` nesne.  
   
 ##  <a name="vinargtype"></a>  CRBTree::VINARGTYPE  
- Bir giriş bağımsız değişkeni bir değer geçirildiğinde kullanılan türü.  
+ Kullanılması için bir giriş bağımsız değişkeni geçirilen bir değer türü.  
   
 ```
 typedef VTraits::INARGTYPE VINARGTYPE;
 ```  
   
 ##  <a name="voutargtype"></a>  CRBTree::VOUTARGTYPE  
- Çıkış bağımsız değişken olarak bir değer geçirildiğinde kullanılan türü.  
+ Çıkış bağımsız değişken olarak geçirilen bir değer olduğunda kullanılan türü.  
   
 ```
 typedef VTraits::OUTARGTYPE VOUTARGTYPE;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

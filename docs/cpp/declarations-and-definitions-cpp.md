@@ -12,35 +12,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f8a0922d66a9421bcc7c6c07b9396b277499d0d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e66371ead4c2070769b45bf5b181677431936c84
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948132"
 ---
 # <a name="declarations-and-definitions-c"></a>Bildirimler ve Tanımlar (C++)
-Bildirimleri bir program adlarında örneğin değişkenleri, ad alanları, işlevleri ve sınıf adları tanıtır. Bildirimler ayrıca türü bilgilerin yanı sıra diğer bildirilmiş nesne özelliklerini belirtin. Bir ad kullanılabilmesi için bildirilmesi gerekir; C++'da bir ad bildirilmedi noktası derleyiciye görünür olup olmadığını belirler. Bir işlev veya derleme biriminde daha sonraki bir noktada bildirilen sınıf başvuramıyor; kullanabileceğiniz *iletme bildirimleri* bu sınırlamaya geçici alınamıyor.  
+Bildirimleri adları programında, örneğin değişkenler, ad alanları, işlevleri ve sınıfları adlarını tanıtır. Bildirimleri ayrıca tür bilgilerin yanı sıra diğer bildirilmiş nesne özelliklerini belirtin. Bir ad kullanılmadan önce bildirilmelidir; c++'ta, bir ad bildirildiği noktası derleyiciye görünür olup olmadığını belirler. Bir işlev veya derleme biriminde daha sonraki bir noktada bildirilen sınıf başvuramaz; kullanabileceğiniz *iletme bildirimleri* bu sınırlamayı alınamıyor.  
   
  Hangi kod veya veri adı açıklar tanımlarını belirtin. Derleme tanımı bildirilmiş şey için depolama alanı ayırdığınızdan olması gerekir.  
   
 ## <a name="declarations"></a>Bildirimler  
- Bir bildirimi, bir veya daha fazla adları bir programa tanıtır. Bildirimleri bir programda birden çok kez ortaya çıkabilir. Bu nedenle, sınıflar, yapılar, numaralandırılmış türler ve diğer kullanıcı tanımlı türler her derleme birimi için bildirilebilir. Bu birden çok bildiriminde tüm bildirimler aynı sınırlamadır. Bildirimler ayrıca hizmet tanımları, ne zaman dışında olarak bildirimi:  
+ Bir bildirimi, bir programa bir veya daha çok sunar. Bildirimleri bir programda birden çok kez gerçekleşebilir. Bu nedenle, sınıflar, yapılar, numaralandırılan türleri ve diğer kullanıcı tanımlı türler için her derleme biriminde bildirilebilir. Bu birden çok bildiriminde tüm bildirimler aynı sınırlamadır. Bildirimleri Ayrıca hizmet tanımları, aşağıdakiler haricinde olarak bildirimi:  
   
-1.  İşlev prototipi (işlev bildirimi hiçbir işlev gövdesi ile) olur.  
+1.  Bir işlev prototipi (bir işlev bildirimi ile hiçbir işlev gövdesi) olur.  
   
-2.  İçeren `extern` belirticisi ancak hiçbir Başlatıcı (nesneleri ve değişkenleri) veya işlev gövdesi (işlev). Başka bir belirtir, tanım geçerli çeviri biriminde olmak zorunda değildir ve ad dış bağlantı sağlar.  
+2.  İçeren **extern** belirtici ancak hiçbir Başlatıcı (nesneler ve değişkenler) veya işlev gövdesi (işlevler). Bu tanımı geçerli çeviri biriminde olmak zorunda değildir ve adı dış bağlantısı sağlar gösterir.  
   
-3.  Sınıf bildirimi içinde statik veri üyesi olur.  
+3.  Bir sınıf bildirimi içinde statik veri üyesi değil.  
   
-     Statik sınıf veri üyeleri ayrık sınıfın tüm nesneleri tarafından paylaşılan değişkenleri olduğundan, bunlar gerekir tanımlanabilir ve sınıf bildiriminin dışında başlatıldı. (Sınıflar ve sınıf üyeleri hakkında daha fazla bilgi için bkz: [sınıfları](../cpp/classes-and-structs-cpp.md).)  
+     Statik sınıf veri üyeleri ayrık sınıfın tüm nesneleri tarafından paylaşılan değişkenleri olduğundan, bunlar gerekir tanımlanabilir ve sınıf bildirimi dışında başlatıldı. (Sınıflar ve sınıf üyeleri hakkında daha fazla bilgi için bkz: [sınıfları](../cpp/classes-and-structs-cpp.md).)  
   
-4.  Bir sınıf adı bildirimi aşağıdaki tanım, olduğu gibi `class T;`.  
+4.  Aşağıdaki tanım, sınıf adı bildirimiyle olduğu gibi `class T;`.  
   
-5.  Olan bir `typedef` deyimi.  
+5.  Olan bir **typedef** deyimi.  
   
- Aynı zamanda tanımları olan bildirimleri örnekleri şunlardır:  
+ Ayrıca tanımları, bildirimleri örnekleri şunlardır:  
   
-```  
+```cpp 
 // Declare and define int variables i and j.  
 int i;  
 int j = 10;  
@@ -57,28 +58,28 @@ public:
 };  
 ```  
   
- Tanımları olmayan bazı bildirimleri şunlardır:  
+ Tanımları olmayan bazı bildirimlerini şunlardır:  
   
-```  
+```cpp 
   
 extern int i;  
 char *strchr( const char *Str, const char Target );  
 ```  
   
- Kendi bildirimcisi hemen sonra ancak kendi (isteğe bağlı) Başlatıcı önce bildirilmesi için bir ad olarak kabul edilir. Daha fazla bilgi için bkz: [Point of bildirimi](../cpp/point-of-declaration-in-cpp.md).  
+ Kendi bildirimci hemen sonra ancak (isteğe bağlı) başlatıcısı önce bildirilmesi için bir ad olarak kabul edilir. Daha fazla bilgi için [bildirim noktası](../cpp/point-of-declaration-in-cpp.md).  
   
- Bildirimleri oluşan bir *kapsam*. Kapsam bildirilen ad görünürlüğünü hem de tanımlanan, nesne varsa denetler. Kapsam kuralları bildirimleri ile nasıl etkileşim hakkında daha fazla bilgi için bkz: [kapsam](../cpp/scope-visual-cpp.md).  
+ Bildirimleri gerçekleştirilir bir *kapsam*. Kapsam bildirilen ad görünürlüğünü ve tanımlı, nesne süresi varsa denetler. Kapsam kuralları bildirimleri ile nasıl etkileşim hakkında daha fazla bilgi için bkz. [kapsam](../cpp/scope-visual-cpp.md).  
   
- Bir nesne bildirimi içerdiği sürece, aynı zamanda bir tanımı olan `extern` depolama sınıfı tanımlayıcısı açıklanan [depolama sınıfları](storage-classes-cpp.md). Bir prototip olmadığı sürece bir işlev bildirimi de bir tanımıdır. Bir prototip tanımlayan bir işlev gövdesi olmadan işlevi başlığıdır. Bir nesne tanımı, depolama ve bu nesne için uygun başlatmaları neden olur.  
+ İçerdiği sürece nesne bildirimi de bir tanımıdır **extern** depolama sınıfı tanımlayıcısı açıklanan [depolama sınıfları](storage-classes-cpp.md). Bir prototip olmadığı sürece bir işlev bildirimi de bir tanımıdır. Bir prototip olmadan tanımlayan bir işlev gövdesi bir işlev üstbilgisi ' dir. Bir nesnenin tanımı, depolama ve bu nesne için uygun başlatmalar ayırma neden olur.  
   
 ## <a name="definitions"></a>Tanımlar  
- Bir tanımı, bir nesne değişkeni, işlevi, sınıf veya numaralandırıcı benzersiz bir özelliğidir. Tanımları benzersiz olması gerektiğinden, bir program belirli bir program öğesi için yalnızca tek bir tanım içerebilir. Bildirimler ve tanımlar arasındaki çok bir ilişkiyi olabilir. İçinde bir program öğesi kullanılabilir bildirilen ve tanımlanmamış iki durum vardır:  
+ Bir nesne veya değişkenin, işlev, sınıf veya numaralandırıcı benzersiz bir belirtimi tanımıdır. Bir program, tanımları benzersiz olması gerektiğinden, belirtilen program öğesi için yalnızca bir tanım içerebilir. Bildirimler ve tanımlar arasında çok-bir ilişkiyi olabilir. İçinde bir program öğesi bildirilebileceği ve tanımlı iki durum vardır:  
   
-1.  Bir işlev bildirilen ancak işlev adresi alır bir deyim veya bir işlev çağrısı ile asla başvurulmaz.  
+1.  Bir işlev bildirildi, ancak bir işlev çağrısıyla veya işlevin adresini alır bir ifadeyle nikdy neodkazovalo.  
   
-2.  Bir sınıf tanımına bilinir gerektirmeyen bir biçimde kullanılır. Ancak, sınıf bildirilmelidir. Aşağıdaki kod, böyle bir durumda gösterir:  
+2.  Bir sınıf tanımı bilinir gerektirmeyen bir biçimde kullanılır. Ancak, sınıf bildirilmelidir. Aşağıdaki kod, böyle bir durumda göstermektedir:  
   
-    ```  
+    ```cpp 
     // definitions.cpp  
     class WindowCounter;   // Forward declaration; no definition  
   
@@ -95,4 +96,4 @@ char *strchr( const char *Str, const char Target );
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Temel kavramlar](../cpp/basic-concepts-cpp.md)   
- [Point of bildirimi](../cpp/point-of-declaration-in-cpp.md)
+ [Bildirim noktası](../cpp/point-of-declaration-in-cpp.md)

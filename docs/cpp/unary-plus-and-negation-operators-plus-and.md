@@ -21,11 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1441337275ac07b0d1ba39e8bfa34e7165f87f82
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aa500288ec4982ca4e1d304fac2cd577d58f4207
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948230"
 ---
 # <a name="unary-plus-and-negation-operators--and--"></a>Birli Artı ve Değilleme işleçleri: + ve -
 ## <a name="syntax"></a>Sözdizimi  
@@ -33,25 +34,21 @@ ms.lasthandoff: 05/03/2018
 ```  
   
 + cast-expression  
-```  
-  
-```  
-  
 - cast-expression  
 ```  
   
 ## <a name="-operator"></a>+ işleci  
- Birli artı işleci sonucu (**+**), işlenen değeri. Tek işlenenli artı işleminin işleneni, aritmetik bir türden olmalıdır.  
+ Tek işlenenli artı sonucunu (**+**), işleneninin değeridir. Tek işlenenli artı işleminin işleneni, aritmetik bir türden olmalıdır.  
   
- İntegral işlenenlerde integral yükseltme gerçekleştirilir. Sonuç türü, işlenin yükseltildiği türdür. Bu nedenle, `+ch`'nin `ch` türünde olduğu `char` ifadesi, `int` türüyle sonuçlanır; değer değiştirilmez. Bkz: [standart dönüşümler](standard-conversions.md) nasıl yükseltme yapılacağı hakkında daha fazla bilgi.  
+ İntegral işlenenlerde integral yükseltme gerçekleştirilir. Sonuç türü, işlenin yükseltildiği türdür. Bu nedenle, ifade `+ch`burada `ch` türünde **char**, türüyle sonuçlanır **int**; değer değiştirilmez. Bkz: [standart dönüştürmeler](standard-conversions.md) yükseltmenin nasıl yapılacağı hakkında daha fazla bilgi.  
   
 ## <a name="--operator"></a>- işleci  
- Tekli değilleme işleci (**-**), işlenen negatif üretir. Tekli değilleme işleci için işlenen aritmetik bir türü olmalıdır.  
+ Tekli değilleme işleci (**-**), işleneninin negatifini üretir. Tekli değilleme işleci için işlenen, aritmetik bir türü olmalıdır.  
   
- İntegral yükseltme, iç işlenenlerde gerçekleştirilir ve ortaya çıkan tür işlenenin yükseltildiği türdür. Bkz: [standart dönüşümler](standard-conversions.md) yükseltme nasıl gerçekleştirildiğini hakkında daha fazla bilgi.  
+ İntegral yükseltme, iç işlenenlerde gerçekleştirilir ve ortaya çıkan tür işlenenin yükseltildiği türdür. Bkz: [standart dönüştürmeler](standard-conversions.md) yükseltmenin nasıl gerçekleştirildiğini hakkında daha fazla bilgi.  
   
-## <a name="microsoft-specific"></a>Belirli Microsoft  
- Tekli değilleme imzasız miktarlarının işleneni 2 değerini çıkarılmasıyla gerçekleştirilir ^ burada n verilen imzasız türünde bir nesne bit sayısını alır.
+## <a name="microsoft-specific"></a>Microsoft'a özgü  
+ Tekli olumsuzlama işaretsiz miktarlar, işlenenin 2'den çıkarılmasıyla gerçekleştirilir ^ n, n, bit işaretsiz belirtilen türde bir nesne sayısı.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   

@@ -15,14 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55d9456a62c97a2edf1523634268582a7f568b79
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8b54eb2757f4f58acd0339a058c8bee999b4c8b7
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948000"
 ---
 # <a name="labeled-statements"></a>Etiketli Deyimler
-Etiketleri program denetim doğrudan belirtilen ifadesine aktarmak için kullanılır.  
+Etiketler, program denetiminin doğrudan belirtilen deyime aktarmak için kullanılır.  
   
 ```  
 identifier :  statement  
@@ -30,10 +31,10 @@ case constant-expression :  statement
 default :  statement  
 ```  
   
- Bir etiket kapsamı içinde bildirilmiş tüm işlevdir.  
+ Etiket kapsamı içinde bildirildiği tüm işlevdir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Üç etiketli deyim türü vardır. Tümü, bir etiket türünü deyimden ayırmak için iki nokta üst üste kullanır. Durum ve varsayılan etiketleri örneği deyimlerini özgüdür.  
+ Üç etiketli deyim türü vardır. Tümü, bir etiket türünü deyimden ayırmak için iki nokta üst üste kullanır. Durumu ve varsayılan etiketler, case deyimleri için özeldir.  
   
 ```cpp  
 #include <iostream>   
@@ -64,13 +65,13 @@ int main() {
   
  **Goto deyimi**  
   
- Görünümünü bir *tanımlayıcısı* kaynak programda etiket etiket bildirir. Yalnızca bir [goto](../cpp/goto-statement-cpp.md) deyimi denetimine aktarılabileceği bir *tanımlayıcısı* etiketi. Aşağıdaki kod parçası kullanımını göstermektedir `goto` deyimi ve bir *tanımlayıcısı* etiketi:  
+ Görünümünü bir *tanımlayıcı* etiket kaynak programda bir etiket bildirir. Yalnızca bir [goto](../cpp/goto-statement-cpp.md) deyimi denetim aktarabilir bir *tanımlayıcı* etiketi. Aşağıdaki kod parçası kullanışını **goto** deyimi ve *tanımlayıcısı* etiketi:  
   
  Etiket kendi başına görünemez, her zaman bir deyime bağlı olmalıdır. Tek başına bir etiket gerekiyorsa, etiketten sonra boş bir deyim koyun.  
   
  Etiket, işlev kapsamına sahiptir ve işlev içinde tekrar bildirilemez. Ancak aynı ad, farklı işlevlerde bir etiket olarak kullanılabilir.  
   
-```  
+```cpp 
 // labels_with_goto.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -89,9 +90,9 @@ int main() {
   
  **Case deyimi**  
   
- Sonra görünen etiketlerin **durum** anahtar sözcüğü dışında da bulunamaz bir `switch` deyimi. (Bu kısıtlama için de geçerlidir. **varsayılan** anahtar sözcüğü.) Aşağıdaki kod parçası doğru kullanımı gösterilmiştir **durumda** etiketleri:  
+ Sonra görünen etiketlerin **çalışması** anahtar sözcüğü dışında da alamaz bir **geçiş** deyimi. (Bu kısıtlama için de geçerlidir. **varsayılan** anahtar sözcüğü.) Aşağıdaki kod parçası doğru kullanımını gösterir **çalışması** etiketleri:  
   
-```  
+```cpp 
 // Sample Microsoft Windows message processing loop.  
 switch( msg )  
 {  
@@ -117,10 +118,10 @@ switch( msg )
 }  
 ```  
   
-## <a name="labels-in-the-case-statement"></a>Etiketleri içindeki case deyimi  
- Sonra görünen etiketlerin **durum** anahtar sözcüğü dışında da bulunamaz bir `switch` deyimi. (Bu kısıtlama için de geçerlidir. **varsayılan** anahtar sözcüğü.) Aşağıdaki kod parçası doğru kullanımı gösterilmiştir **durumda** etiketleri:  
+## <a name="labels-in-the-case-statement"></a>Case deyiminde etiketleri  
+ Sonra görünen etiketlerin **çalışması** anahtar sözcüğü dışında da alamaz bir **geçiş** deyimi. (Bu kısıtlama için de geçerlidir. **varsayılan** anahtar sözcüğü.) Aşağıdaki kod parçası doğru kullanımını gösterir **çalışması** etiketleri:  
   
-```  
+```cpp 
 // Sample Microsoft Windows message processing loop.  
 switch( msg )  
 {  
@@ -162,13 +163,13 @@ switch( msg )
 ```  
   
 ## <a name="labels-in-the-goto-statement"></a>Goto deyimi etiketler  
- Görünümünü bir *tanımlayıcısı* kaynak programda etiket etiket bildirir. Yalnızca bir [goto](../cpp/goto-statement-cpp.md) deyimi denetimine aktarılabileceği bir *tanımlayıcısı* etiketi. Aşağıdaki kod parçası kullanımını göstermektedir `goto` deyimi ve bir *tanımlayıcısı* etiketi:  
+ Görünümünü bir *tanımlayıcı* etiket kaynak programda bir etiket bildirir. Yalnızca bir [goto](../cpp/goto-statement-cpp.md) deyimi denetim aktarabilir bir *tanımlayıcı* etiketi. Aşağıdaki kod parçası kullanışını **goto** deyimi ve *tanımlayıcısı* etiketi:  
   
  Etiket kendi başına görünemez, her zaman bir deyime bağlı olmalıdır. Tek başına bir etiket gerekiyorsa, etiketten sonra boş bir deyim koyun.  
   
  Etiket, işlev kapsamına sahiptir ve işlev içinde tekrar bildirilemez. Ancak aynı ad, farklı işlevlerde bir etiket olarak kullanılabilir.  
   
-```  
+```cpp 
 // labels_with_goto.cpp  
 // compile with: /EHsc  
 #include <iostream>  

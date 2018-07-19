@@ -18,36 +18,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeacac8afb7a8195642ebbfb6aac7c697544cd16
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 428e3634898f50e7737c5fc5dae2ce7d0445572e
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948007"
 ---
 # <a name="bitwise-and-operator-amp"></a>Bit düzeyinde AND işleci: &amp;
+
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-expression   
-&  
- expression  
-  
-```  
+```
+
+expression & expression  
+
+```
   
 ## <a name="remarks"></a>Açıklamalar  
- İfadeler diğer ve-ifadeleri, veya olabilir (konu aşağıda belirtilen türü kısıtlamaları) eşitlik ifadeleri, ilişkisel ifadeleri, ek ifadeler, çarpma ifadeleri, üye ifadeleri, cast ifadeleri birli işaretçi deyimler, ifadeler ya da birincil ifadeler sonek.  
+ İfadeler diğer ve ifadeleri, veya olabilir (aşağıda belirtilen türü kısıtlamalarına tabidir) eşitlik ifadeleridir, ilişkisel ifadeleri, ek ifadeleri, çarpma ifadeler, üye ifadeleri, cast ifadeleri birli işaretçisi deyimler, ifadeler veya birincil ifadeler sonek.  
   
- Bit düzeyinde AND işleci (**&**) karşılık gelen bit ikinci işleneninin ilk işleneninin her bit karşılaştırır. Her iki BITS 1 ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi halde, karşılık gelen sonuç bit 0 olarak ayarlanır.  
+ Bit düzeyinde AND işleci (**&**) karşılık gelen bit ikinci işlenenin ilk işlenenin her bitini karşılaştırır. Her iki bit 1 ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç bit 0 olarak ayarlanır.  
   
- Bit düzeyinde AND işleci için iki işlenen tam sayı türleri olmalıdır. Olağan aritmetik dönüştürmeler ele [standart dönüşümler](standard-conversions.md), işlenen uygulanır.  
+ Bit düzeyinde AND işleci iki işleneni de integral türünde olmalıdır. Olağan aritmetik dönüştürmeler ele [standart dönüştürmeler](standard-conversions.md), işlenenlere uygulanır.  
   
-## <a name="operator-keyword-for-"></a>Operator anahtar sözcüğü için &  
- `bitand` İşlecidir metin denk **&**. Erişim için iki yolla `bitand` programlarınızı işleci: üst bilgi dosyasını dahil `iso646.h`, veya ile derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneği.  
+## <a name="operator-keyword-for-"></a>İçin işleç anahtar sözcüğü &  
+ **Bitand** işlecidir öğesinin metin eşdeğeridir **&**. Erişmenin iki yöntemi vardır **bitand** programlarınızda işleci: üstbilgi dosyasını dahil `iso646.h`, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_Bitwise_AND_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate bitwise AND  
@@ -63,5 +63,5 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](cpp-built-in-operators-precedence-and-associativity.md)  
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Bit Düzeyinde İşleçler](../c-language/c-bitwise-operators.md)

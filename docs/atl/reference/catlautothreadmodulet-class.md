@@ -18,18 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a012494365745d40d98c0f65ee9eff6b5e9502da
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a54818b839f13ad9114274248cfdbfc74efa033a
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361424"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37883079"
 ---
 # <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT sınıfı
-Bu sınıf, bir iş parçacığı havuza, modeli COM sunucusu uygulamak için yöntemleri sağlar.  
+Bu sınıf, apartman modeli iş parçacığı havuza, COM sunucu uygulama için yöntemler sağlar.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,14 +41,14 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- COM sunucusu uygulayan sınıf.  
+ *T*  
+ COM sunucusunun uygulayan sınıf.  
   
- `ThreadAllocator`  
+ *ThreadAllocator*  
  İş parçacığı seçimi yönetme sınıfı. Varsayılan değer [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).  
   
- `dwWait`  
- Zaman aşımı aralığı, milisaniye cinsinden belirtir. Yöntemin zaman aşımı aralığı geçtikten hiçbir zaman anlamına gelir SONSUZ varsayılandır.  
+ *dwWait*  
+ Milisaniye cinsinden zaman aşımı aralığı belirtir. Yöntemin zaman aşımı aralığı, hiçbir zaman geçtikçe anlamına gelir ve SINIRSIZ varsayılandır.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -56,13 +56,13 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlAutoThreadModuleT::GetDefaultThreads](#getdefaultthreads)|Bu statik işlev dinamik olarak hesaplar ve işlemci sayısına göre EXE modülü için iş parçacığı sayısını döndürür.|  
+|[CAtlAutoThreadModuleT::GetDefaultThreads](#getdefaultthreads)|Bu statik işlev dinamik olarak hesaplar ve en fazla işlemci sayısına göre bir EXE modülü için iş parçacıklarının sayısını döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıf [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) türetilen `CAtlAutoThreadModuleT` apartman modeli iş parçacığı havuza, COM sunucusu uygulamak için. Artık kullanılmayan sınıfı yerini [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
+ Sınıf [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) türetildiği `CAtlAutoThreadModuleT` apartman modeli iş parçacığı havuza, COM sunucusu uygulamak için. Geçersiz sınıf değiştirir [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
   
 > [!NOTE]
->  Bu sınıf DLL'de, varsayılan olarak kullanılmamalıdır `dwWait` DLL kaldırıldığında, SONSUZ değerini bir kilitlenmeye neden olur.  
+>  Bu sınıf bir DLL içinde varsayılan olarak kullanılmamalıdır *dwWait* DLL kaldırıldığında, SONSUZ değerini karşılıklı bir kilitlenme neden olur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IAtlAutoThreadModule`  
@@ -73,7 +73,7 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
  **Başlık:** atlbase.h  
   
 ##  <a name="getdefaultthreads"></a>  CAtlAutoThreadModuleT::GetDefaultThreads  
- Bu statik işlev dinamik olarak hesaplar ve işlemci sayısına göre EXE modülü için iş parçacığı sayısını döndürür.  
+ Bu statik işlev dinamik olarak hesaplar ve en fazla işlemci sayısına göre bir EXE modülü için iş parçacıklarının sayısını döndürür.  
   
 ```
 static int GetDefaultThreads();
@@ -83,10 +83,10 @@ static int GetDefaultThreads();
  EXE modülünde oluşturulacak iş parçacığı sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İş parçacığı sayısını hesaplamak için farklı bir yöntem kullanmak istiyorsanız bu yöntemi geçersiz kılın. Varsayılan olarak, iş parçacığı sayısını işlemci sayısına bağlıdır.  
+ İş parçacığı sayısını hesaplamak için farklı bir yöntem kullanmak istiyorsanız bu yöntemi yok sayın. Varsayılan olarak, iş parçacığı sayısını işlemci sayısına bağlıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IAtlAutoThreadModule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
- [IAtlAutoThreadModule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
+ [Iatlautothreadmodule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+ [Iatlautothreadmodule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
  [Modül sınıfları](../../atl/atl-module-classes.md)

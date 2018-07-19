@@ -16,14 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de790fa55299999be8c4cb4d2945e2b004d20a9e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a80c918036887e9c3e573294d3859a9b60e71e7f
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948009"
 ---
 # <a name="bstrtassign"></a>_bstr_t::Assign
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Kopya bir `BSTR` içine `BSTR` tarafından Sarmalanan bir **_**`bstr_t`.  
   
@@ -36,7 +37,7 @@ void Assign(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `s`  
+ *s*  
  A `BSTR` içine kopyalanacak `BSTR` tarafından Sarmalanan bir `_bstr_t`.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -44,7 +45,7 @@ void Assign(
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // _bstr_t_Assign.cpp  
   
 #include <comdef.h>  
@@ -115,7 +116,7 @@ bstrWrapper = changing BSTR
 bstrWrapper2 = some text  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

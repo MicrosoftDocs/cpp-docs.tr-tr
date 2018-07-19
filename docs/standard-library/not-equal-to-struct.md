@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e50e613885215cf13504f8c9b72e0e48d5a6447
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e02a48fddfb2e5ff8f85b59b1ff241492461e521
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852731"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966361"
 ---
 # <a name="notequalto-struct"></a>not_equal_to Yapısı
 
-Eşitsizlik işlemi gerçekleştiren bir ikili karşılaştırma ( `operator!=`) bağımsız değişkenlerini üzerinde.
+Eşitsizlik işlemi gerçekleştiren bir ikili koşula (`operator!=`) üzerinde bağımsız değişkenleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,19 +49,19 @@ struct not_equal_to<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Destekleyen herhangi bir türü bir `operator!=` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator!=` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Eşitsizlik işlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* eşitsizlik işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Eşitsizlik işlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* eşitsizlik işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left != Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator!=`.
+Sonucu `Left != Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator!=`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne türü `Type` eşitlik bakımından karşılaştırılabilir olmalıdır. Bu gerektiren `operator!=` üzerinde tanımlı bir eşdeğer ilişkisi matematiksel özelliklerini nesne kümesini karşılar. Yerleşik sayısal ve işaretçi türlerinin tümü bu gereksinimi karşılamak.
+Türündeki nesneler *türü* eşitlik karşılaştırması yapılabilir olmalıdır. Bunu gerektiren `operator!=` tanımlanmış nesne kümesini eşdeğerlik ilişkisi matematik özelliklerini karşılar. Tüm yerleşik sayısal ve işaretçi türleri, bu gereksinimi karşılamak.
 
 ## <a name="example"></a>Örnek
 
@@ -124,7 +124,7 @@ between v1 & v2 is: ( 0 0 1 0 1 0 )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

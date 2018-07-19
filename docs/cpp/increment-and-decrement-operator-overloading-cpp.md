@@ -17,11 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dee35098dbf78e04241f04687c74c40ded1a0010
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a3ed5cee9d3742410c4316b0eb8c3c80b2f41353
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948234"
 ---
 # <a name="increment-and-decrement-operator-overloading-c"></a>Artırma ve Azaltma İşleci Aşırı Yüklemesi (C++)
 Artırma ve azaltma işleçleri, her birinin iki çeşidi olduğu için özel bir kategorinin kapsamına girer:  
@@ -30,14 +31,14 @@ Artırma ve azaltma işleçleri, her birinin iki çeşidi olduğu için özel bi
   
 -   Azaltma öncesi ve azaltma sonrası  
   
- Aşırı yüklenmiş işleç işlevleri yazdığınızda, bu işleçlerin önek ve sonek sürümleri için ayrı sürümler uygulamak yararlı olabilir. Bu ikisi arasında ayrım yapmak için aşağıdaki kural uygulanır: İşlecin önek biçimi diğer tekli ifadelerle aynı şekilde bildirilir; sonek biçimi `int` türünden bir ek bağımsız değişkeni kabul eder.  
+ Aşırı yüklenmiş işleç işlevleri yazdığınızda, bu işleçlerin önek ve sonek sürümleri için ayrı sürümler uygulamak yararlı olabilir. İki tür arasında ayrım yapmak için aşağıdaki kural uygulanır: işlecin önek biçimi herhangi diğer birli işleç; tam olarak aynı şekilde bildirilir. sonek biçimi ek bağımsız değişken türü kabul eden **int**.  
   
 > [!NOTE]
->  Artırma veya azaltma işlecinin sonek biçimi için aşırı yüklenmiş bir işleç belirtilirken, ek bağımsız değişken `int` türünde olmalıdır; başka bir türün belirtilmesi hata oluşturur.  
+>  Artırma veya azaltma işlecinin sonek biçimi için aşırı yüklenmiş bir işleç belirtilirken, ek bağımsız değişken türü olmalıdır **int**; herhangi bir tür belirtilmesi bir hata oluşturur.  
   
  Aşağıdaki örnekte, `Point` sınıfı için önek ve sonek artırma ve azaltma işleçlerinin nasıl tanımlanacağı gösterilmektedir:  
   
-```  
+```cpp  
 // increment_and_decrement1.cpp  
 class Point  
 {  
@@ -98,16 +99,16 @@ int main()
   
  Aşağıdaki işlev başlıkları kullanılarak dosya kapsamında aynı işleçler tanımlanabilir (genel olarak):  
   
-```  
+```cpp  
 friend Point& operator++( Point& )      // Prefix increment  
 friend Point& operator++( Point&, int ) // Postfix increment  
 friend Point& operator--( Point& )      // Prefix decrement  
 friend Point& operator--( Point&, int ) // Postfix decrement  
 ```  
   
- Artırma ve azaltma işlecinin sonek biçimini gösteren `int` türünden bağımsız değişken, bağımsız değişkenleri geçirmek için yaygın bir şekilde kullanılmaz. Genellikle 0 değerini içerir. Ancak, aşağıdaki şekilde de kullanılabilir:  
+ Bağımsız değişken türü **int** , artış sonek biçimi gösterir veya azaltma işlecinin genellikle bağımsız değişkenleri geçirmek için kullanılmaz. Genellikle 0 değerini içerir. Ancak, aşağıdaki şekilde de kullanılabilir:  
   
-```  
+```cpp  
 // increment_and_decrement2.cpp  
 class Int  
 {  

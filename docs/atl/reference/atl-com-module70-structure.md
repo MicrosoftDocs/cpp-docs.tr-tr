@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d78165481c8f2e9d8bba33ad14ebd0794f04fde
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 3a3140a0013d284b9145029575418054af22c65e
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255667"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37883719"
 ---
 # <a name="atlcommodule70-structure"></a>_ATL_COM_MODULE70 yapısı
-ATL COM ilgili kodda tarafından kullanılan  
+ATL COM ile ilgili kod tarafından kullanılan  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,22 +43,22 @@ struct _ATL_COM_MODULE70 {
   
 ## <a name="members"></a>Üyeler  
  `cbSize`  
- Sürüm oluşturma için kullanılan yapısı, boyutu.  
+ Sürüm oluşturma için kullanılan bir yapının boyutu.  
   
  `m_hInstTypeLib`  
- Bu modül için tür kitaplığı tanıtıcı örneğine.  
+ Bu modül için tür kitaplığı için tanıtıcı örneği.  
   
- **m_ppAutoObjMapFirst**  
- Bu modülü için nesne eşleme girdilerini başlangıcını belirten dizi öğesi adresidir.  
+ `m_ppAutoObjMapFirst`  
+ Bu modülü için nesne eşleme girişleri başlangıcını gösteren bir dizi öğenin adresi.  
   
- **m_ppAutoObjMapLast**  
- Bu modülü için nesne eşleme girdilerini sonuna belirten dizi öğesi adresidir.  
+ `m_ppAutoObjMapLast`  
+ Bu modülü için nesne eşleme girişleri sonuna belirten dizi öğesinin adresi.  
   
  `m_csObjMap`  
- Nesne eşleme girdilerini erişimi serileştirmek için kritik bölüm. ATL tarafından dahili olarak kullanılır  
+ Nesne eşleme girişleri erişimi serileştirmek için kritik bölüm. ATL tarafından dahili olarak kullanılır  
   
 ## <a name="remarks"></a>Açıklamalar  
- [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module) typedef tanımlanan `_ATL_COM_MODULE70`.  
+ [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module) _ATL_COM_MODULE70 typedef tanımlanır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  

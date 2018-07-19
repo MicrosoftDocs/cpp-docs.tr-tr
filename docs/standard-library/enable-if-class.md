@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8fbcf91b2b863312374fad96239a9585bb3b38c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2192ea954df1e7a63157d6deb04c7d34cd42337c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846915"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966491"
 ---
 # <a name="enableif-class"></a>enable_if Sınıfı
 
-Koşullu SFINAE için bir tür örneği aşırı yükleme çözümü sağlar. İç içe geçmiş typedef `enable_if<Condition,Type>::type` var — ve eşanlamlısı `Type`— yalnızca ve yalnızca, `Condition` olan `true`.
+Koşullu olarak aşırı yükleme çözümlemesi SFINAE için bir türün bir örneğini sağlar. İç içe geçmiş tür tanımı `enable_if<Condition,Type>::type` var — ve eşanlamlıdır `Type`— ve yalnızca, `Condition` olduğu **true**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,28 +37,28 @@ struct enable_if;
 
 ### <a name="parameters"></a>Parametreler
 
-`B` Elde edilen türü varlığını belirleyen değeri.
+*B* elde edilen türü varlığını belirleyen bir değer.
 
-`T` Varsa örneği oluşturmak için türü `B` doğrudur.
+*T* varsa örneklemek için tür *B* geçerlidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa `B` doğrudur `enable_if<B, T>` sahip eşanlamlısı olan "tür" adlı bir iç içe geçmiş typedef `T`.
+Varsa *B* true ise `enable_if<B, T>` sahip eşanlamlıdır "tür" adlı bir iç içe geçmiş typedef *T*.
 
-Varsa `B` false, `enable_if<B, T>` "type" adlı bir iç içe geçmiş typedef sahip değil.
+Varsa *B* false ise `enable_if<B, T>` "türü" adlı iç içe geçmiş bir tür tanımı yok.
 
-Bu diğer ad şablon sağlanır:
+Bu diğer ad şablonu sağlanır:
 
 ```cpp
 template <bool B, class T = void>
 using enable_if_t = typename enable_if<B,T>::type;
 ```
 
-C++'da, şablon parametre değiştirme hatası kendi içinde bir hata değildir — bu olarak adlandırılır *SFINAE* (değiştirme hatası bir hata değildir). Genellikle, `enable_if` aşırı resolution adayları kaldırmak için kullanılan — diğer bir deyişle, aşırı kümesi culls — böylece bir tanım başka lehinde reddedilebilir. Bu SFINAE davranışı için uygundur. SFINAE hakkında daha fazla bilgi için bkz: [değiştirme hatası bir hata değildir](http://go.microsoft.com/fwlink/p/?linkid=394798) wikipedia'da.
+C++'da, şablon parametre değiştirme hatası kendi içinde bir hata değildir — bu olarak adlandırılır *SFINAE* (değiştirme hatası bir hata değildir). Genellikle, `enable_if` adayları aşırı yükleme çözünürlüğü kaldırmak için kullanılır — diğer bir deyişle, aşırı yükleme kümesi ayırmasından — böylece bir tanım yerine başka bir reddedilemiyor. Bu, SFINAE davranışı için uygundur. SFINAE hakkında daha fazla bilgi için bkz: [değiştirme hatası bir hata değil](http://go.microsoft.com/fwlink/p/?linkid=394798) wikipedia.
 
-Dört örnek senaryolar verilmiştir:
+Dört örnek senaryolar şunlardır:
 
-- Senaryo 1: bir işlevin dönüş türü kaydırma:
+- 1. Senaryo: bir işlevin dönüş türünü kaydırma:
 
 ```cpp
     template <your_stuff>
@@ -72,7 +72,7 @@ yourfunction(args) {// ...
  }
 ```
 
-- Senaryo 2: varsayılan bağımsız bir işlev parametresi ekleme:
+- Senaryo 2: varsayılan bir bağımsız değişkene sahip bir işlev parametresi ekleme:
 
 ```cpp
     template <your_stuff>
@@ -81,14 +81,14 @@ your_return_type_if_present
  }
 ```
 
-- Senaryo 3: varsayılan bağımsız bir şablon parametresi ekleme:
+- Senaryo 3: varsayılan bir bağımsız değişkene sahip bir şablon parametresi ekleme:
 
 ```cpp
     template <your_stuff, typename Dummy = enable_if_t<your_condition>>
 rest_of_function_declaration_goes_here
 ```
 
-- Senaryo 4: işlevinizi şablonlu olmayan bir bağımsız değişkeni varsa, kendi türü kayabilir:
+- Senaryo 4: işlevinizi şablonlu olmayan bir bağımsız değişken varsa, onun türü kayabilir:
 
 ```cpp
     template <typename T>
@@ -98,9 +98,9 @@ s) {// ...
  }
 ```
 
-Dönüş türleri olmadığından Senaryo 1 oluşturucular ve dönüştürme işleçleri ile çalışmaz.
+Senaryo 1, dönüş türleri olmadığından taşıma oluşturucuları ve dönüştürme işleçleri ile çalışmaz.
 
-Senaryo 2 adlandırılmamış parametre bırakır. Diyebilirsiniz `::type Dummy = BAR`, ancak adı `Dummy` ilgisiz, olduğundan ve bir ad verip "başvurulmayan parametre" uyarı tetiklemek büyük olasılıkla. Seçmeniz gerekir bir `FOO` işlev parametre türü ve `BAR` varsayılan bağımsız değişkeni.  Diyebilirsiniz `int` ve `0`, ancak ardından kodunuzu kullanıcılarının yanlışlıkla işleve yok sayılırdı fazladan bir tamsayı geçirebilirdiniz. Bunun yerine, kullanmanızı öneririz `void **` ve her iki `0` veya `nullptr` neredeyse hiçbir şey dönüştürülebilir olduğundan `void **`:
+Senaryo 2 adlandırılmamış parametre bırakır. Söyleyin `::type Dummy = BAR`, ancak ad `Dummy` ilgisizdir, ve bir ad verin "başvurulmayan parametre" uyarı tetiklemek büyük olasılıkla. Seçim yapmak zorunda değilsiniz bir `FOO` işlevi parametre türüne ve `BAR` varsayılan bağımsız değişken.  Söyleyin **int** ve `0`, ancak daha sonra kullanıcılar, kodunuzun yanlışlıkla işleve yok ek bir tamsayı geçirebiliriz. Bunun yerine kullanmanızı öneriyoruz `void **` ve her iki `0` veya **nullptr** neredeyse hiçbir şey dönüştürülebilir olduğundan `void **`:
 
 ```cpp
 template <your_stuff>
@@ -109,23 +109,23 @@ yourfunction(args, typename enable_if<your_condition, void **>::type = nullptr) 
 }
 ```
 
-Senaryo 2 sıradan oluşturucuları için de çalışır.  Ancak, ek parametreleri alamıyor çünkü dönüşüm işleçleri için işe yaramaz.  Ayrıca için işe yaramaz [variadic](../cpp/ellipses-and-variadic-templates.md) oluşturucular anlaşılan olmayan bir içerik paketi işlev parametresi yapar ve böylece, uramayacak ek parametreler eklemek için `enable_if`.
+Senaryo 2 için sıradan oluşturucular da çalışır.  Ancak, bunlar ek parametreler alınamıyor çünkü dönüştürme işleçleri için çalışmaz.  Ayrıca için işe yaramaz [variadic](../cpp/ellipses-and-variadic-templates.md) oluşturucular ek parametreler ekleyerek atanan olmayan bir içerik paketi işlevi parametre yapar ve böylece amacını boşa çıkarır çünkü `enable_if`.
 
-Senaryo 3 kullanan adı `Dummy`, ancak isteğe bağlıdır. Yalnızca " `typename = typename`" çalışır, ancak bu tuhaf arar düşünüyorsanız, bir "kukla" adı kullanabilirsiniz — yalnızca bir işlev tanımı'nda da kullanılabilir kullanmayın. Bir türe vermeyin varsa `enable_if`hükümsüz kılmak için varsayılan olarak ve mükemmel olan ne önemli değil çünkü makul `Dummy` olduğu. Bu her şeyi için dönüşüm işleçleri dahil olmak üzere çalışır ve [variadic](../cpp/ellipses-and-variadic-templates.md) oluşturucular.
+Senaryo 3 kullanan ad `Dummy`, ancak isteğe bağlıdır. Yalnızca " `typename = typename`" işe yarar, ancak bu tuhaf görünüyor düşünüyorsanız, "kukla" bir adı kullanabilirsiniz — yalnızca bir işlev tanımında ayrıca kullanılabilir kullanmayın. Bir türe vermediyseniz `enable_if`hükümsüz kılmak için varsayılan olarak ve mükemmel olan ne umursamaz çünkü makul `Dummy` olduğu. Bu dahil her şeyi için dönüştürme işleçleri çalışır ve [variadic](../cpp/ellipses-and-variadic-templates.md) oluşturucular.
 
-Senaryo 4 dönüş türleri yok kurucularda çalışır ve böylece kaydırma sınırlama senaryosu 1 çözer.  Bununla birlikte, her zaman kullanılabilir olmayan şablonlu olmayan işlevi bağımsız için Senaryo 4 sınırlıdır.  (Senaryo 4 bir şablonlu işlevi bağımsız değişken kullanarak şablon bağımsız değişken kesintisi üzerinde çalışmasını önler.)
+Senaryo 4 dönüş türlerine sahip olmayan oluşturucular çalışır ve böylece Senaryo 1 sarmalama SORUMLULUĞUN çözer.  Bununla birlikte, her zaman kullanılabilir olmayan şablonlu olmayan işlev bağımsız için Senaryo 4 sınırlıdır.  (Senaryo 4 bir şablonlu işlevinin bağımsız değişkenine kullanarak şablon bağımsız değişkeni kesintisi üzerinde çalışmasını engeller.)
 
-`enable_if` güçlü, ancak bunu yanlış olmadığını da tehlikeli olur.  Amacı yanlış, aşırı yükleme çözünürlüğü önce kaybolur aday olun çünkü etkileri çok kafa karıştırıcı olabilir.  Bazı öneriler şunlardır:
+`enable_if` güçlü, ancak bu yanlış olursa da tehlikeli değildir.  Amacı, yanlış olduğunda aşırı yükleme çözünürlüğü önce kaybolur aday olmak için olduğundan, etkilerini çok kafa karıştırıcı olabilir.  Bazı öneriler şunlardır:
 
-- Kullanmayın `enable_if` derleme zamanında uygulamaları arasındaki seçin. Şimdiye kadar bir yazmayın `enable_if` için `CONDITION` için başka bir `!CONDITION`.  Bunun yerine, bir *etiketi gönderme* düzeni — yineleyiciler gücü bağlı olarak uygulamaları seçen bir algoritma, örneğin, verilir.
+- Kullanmayın `enable_if` derleme zamanında uygulamaları arasındaki seçin. Şimdiye kadar bir yazmayın `enable_if` için `CONDITION` diğeri `!CONDITION`.  Bunun yerine, bir *gönderme etiketi* deseni — Yineleyicilerin uygulamaları güçlü bağlı olarak seçen bir algoritma, örneğin, verilir.
 
-- Kullanmayın `enable_if` gereksinimleri zorlamak için.  Şablon parametreleri doğrulamak istiyorsanız ve doğrulama başarısız olursa, başka bir uygulama seçmek yerine bir hata neden, kullanma [static_assert](../cpp/static-assert.md).
+- Kullanmayın `enable_if` gereksinimlerinizi uygulamaktır.  Şablon parametreleri doğrulamak istiyorsanız ve doğrulama başarısız olursa başka bir uygulama seçmek yerine bir hataya neden, kullanın [static_assert](../cpp/static-assert.md).
 
-- Kullanım `enable_if` aksi iyi yapar bir aşırı yüklemesini kümesi olduğunda, kod belirsiz.  Çoğu zaman oluşturucular örtük dönüştürme içinde gerçekleşir.
+- Kullanım `enable_if` aksi iyi yaptığı bir aşırı yükleme kümesi olduğunda, kod belirsiz.  Çoğunlukla, oluşturucu örtük olarak dönüştürürken gerçekleşir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte açıklanmıştır nasıl C++ Standart kitaplığı şablon işlevi [std::make_pair()](../standard-library/utility-functions.md#make_pair) avantajlarından yararlanır `enable_if`.
+Bu örnekte açıklar nasıl şablon işlevi C++ Standart Kitaplığı [std::make_pair()](../standard-library/utility-functions.md#make_pair) sağladığı avantajlardan yararlanarak `enable_if`.
 
 ```cpp
 void func(const pair<int, int>&);
@@ -135,9 +135,9 @@ void func(const pair<string, string>&);
 func(make_pair("foo", "bar"));
 ```
 
-Bu örnekte, `make_pair("foo", "bar")` döndürür `pair<const char *, const char *>`. Aşırı yükleme çözümü vardır, belirlemek `func()` istiyor. `pair<A, B>` örtük dönüştürme oluşturucudan sahip `pair<X, Y>`.  Bu yeni değildir — C ++ 98 oluştu. Olsa bile ancak, C ++ 98/03, örtük dönüştürme Oluşturucusu ait imza her zaman, mevcut `pair<int, int>(const pair<const char *, const char *>&)`.  Aşırı yükleme çözümü değil verdiğiniz bu oluşturucu örneği girişimi nedeniyle horribly dağıtır `const char *` örtük olarak dönüştürülebilir değil `int`; imzaları yalnızca arıyor, önce işlev tanımları oluşturulur.  İmzaları dönüştürmek için olduğundan bu nedenle, örnek kod, belirsiz `pair<const char *, const char *>` her ikisine de `pair<int, int>` ve `pair<string, string>`.
+Bu örnekte, `make_pair("foo", "bar")` döndürür `pair<const char *, const char *>`. Aşırı yükleme çözünürlüğü sahip olduğu belirlemek `func()` istediğiniz. `pair<A, B>` örtük dönüştürme bir oluşturucudan sahip `pair<X, Y>`.  Bu yeni değildir — C ++ 98'de olduğu. Bunu olsa bile, ancak C ++ 98/03, imzası örtük dönüştürme oluşturucunun her zaman, mevcut `pair<int, int>(const pair<const char *, const char *>&)`.  Aşırı yükleme çözünürlüğü değil dikkatli olun, oluşturucu örneği girişimi nedeniyle horribly dağıtır `const char *` örtük olarak dönüştürülebilir değil **int**; imzalar yalnızca arıyor, önce işlev tanımları örneği.  İmzaları dönüştürmek için mevcut olduğundan bu nedenle, örnek kod, belirsiz `pair<const char *, const char *>` hem `pair<int, int>` ve `pair<string, string>`.
 
-C ++ 11 kullanarak bu belirsizlik Çözüldü `enable_if` emin olmak için `pair<A, B>(const pair<X, Y>&)` var. **yalnızca** zaman `const X&` örtük olarak parametresinin `A` ve `const Y&` içinörtükolarakparametresinin`B`.  Bu, belirlemek aşırı yükleme çözümü sağlar `pair<const char *, const char *>` parametresinin `pair<int, int>` ve aşırı alan `pair<string, string>` kurtarılamaz.
+C ++ 11 kullanarak bu belirsizlik işlemler sırasında Çözüldü `enable_if` emin olmak için `pair<A, B>(const pair<X, Y>&)` var. **yalnızca** olduğunda `const X&` örtük olarak dönüştürülebilir `A` ve `const Y&` içinörtükolarakdönüştürülebilir`B`.  Bu, belirlemek aşırı yükleme çözünürlüğü sağlar `pair<const char *, const char *>` öğesine dönüştürülebilir değildir `pair<int, int>` ve aşırı yükleme alan `pair<string, string>` kurtarılamaz.
 
 ## <a name="requirements"></a>Gereksinimler
 

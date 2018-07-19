@@ -16,14 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2f775573693f0897122502d7ca092cfe392ebd9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 21d1c1ad928ef61573271263a9a1112e944e2472
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948127"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru Bildirimcisi: &amp;&amp;
-Rvalue deyim için bir başvuru tutar.  
+Rvalue ifadesi için bir başvuru içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,18 +34,18 @@ type-id && cast-expression
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Rvalue başvuru bir lvalue bir rvalue ayırt etmek etkinleştirin. Lvalue başvuru ve rvalue başvuru sözdizimsel olarak ve anlam olarak benzerdir, ancak biraz farklı kuralları izleyin. Lvalues ve rvalues hakkında daha fazla bilgi için bkz: [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md). Lvalue başvuru hakkında daha fazla bilgi için bkz: [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md).  
+ Rvalue başvurular bir lvalue bir rvalue'den ayırt etmek etkinleştirin. Lvalue başvuruları ve rvalue başvuruları sözdizimsel olarak ve anlam olarak benzerdir, ancak bunlar biraz farklı kuralları takip ederler. Lvalues ve rvalues hakkında daha fazla bilgi için bkz: [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md). Ivalue başvuruları hakkında daha fazla bilgi için bkz. [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md).  
   
- Aşağıdaki bölümlerde rvalue başvuru uygulaması'ı nasıl desteklediğini *semantiği taşıma* ve *kusursuz iletme*.  
+ Aşağıdaki bölümlerde rvalue başvuruları uygulamasını nasıl destekler? *taşıma semantiği* ve *kusursuz iletme*.  
   
 ## <a name="move-semantics"></a>Taşıma semantiği  
- Rvalue başvuru uygulaması Destek *semantiği taşıma*, hangi önemli ölçüde artırabilir uygulamalarınızın performansını. Kaynakları (örneğin, dinamik olarak ayrılan bellek) aktarır kod yazmaya semantiği sağlar bir nesneden diğerine taşıyın. Başka bir programda başvurulamaz geçici nesnelerinden aktarılacak kaynakları sağladığından semantiği çalışır taşıyın.  
+ Rvalue başvuruları uygulamasını destekler *taşıma semantiği*, önemli ölçüde artıran uygulamalarınızın performansını. Semantiği, kaynakları (örneğin, dinamik olarak ayrılan bellek) aktaran kod yazmanızı sağlayan bir nesneden diğerine taşıyabilirsiniz. Taşıma semantiği programda başka bir yerde başvurulamaz geçici nesnelerden kaynaklar aktarılmasını sağladığından çalışır.  
   
- Taşıma semantiği uygulamak için genellikle sağladığınız bir *taşıma oluşturucusu,* ve isteğe bağlı olarak bir taşıma atama işleci (`operator=`), sınıfınıza. Kaynaklarının rvalues olan sonra otomatik olarak yararlanmak Kopyala ve atama işlemlerine semantiği taşıyın. Varsayılan kopya Oluşturucu, bir varsayılan taşıma oluşturucusuna derleyici sağlamaz. Bir taşıma oluşturucusuna yazma ve uygulamanızda kullanmak hakkında daha fazla bilgi için bkz: [taşıma oluşturucuları ve taşıma atama işleçleri (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
+ Taşıma semantiği uygulamak için genellikle sınıfınıza bir *taşıma Oluşturucu,* ve isteğe bağlı olarak bir taşıma ataması işleci (`operator=`), sınıfınıza. Taşıma semantiği, kaynakları rvalues değerleridir sonra otomatik olarak yararlanmak kopyalama ve atama işlemleri. Varsayılan kopya oluşturucusundan farklı olarak, derleyici varsayılan bir taşıma Oluşturucusu sağlamaz. Taşıma Oluşturucusu yazma ve uygulamanızda kullanma hakkında daha fazla bilgi için bkz. [taşıma oluşturucuları ve taşıma atama işleçleri (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
   
- Sıradan işlevleri aşırı yüklenebilir ve yararlanmak için işleçleri semantiği taşıyın. Visual C++ 2010 C++ Standart Kitaplığı'na taşıma semantiği tanıtır. Örneğin, `string` sınıfı taşıma semantiği gerçekleştirmek işlemlerini uygular. Birkaç dizesini birleştirir ve sonucu yazdıracak aşağıdaki örneği göz önünde bulundurun:  
+ Normal işlevleri de Aşırı yüklenme olabilir ve taşıma semantiği yararlanmak için işleçleri. Visual C++ 2010 C++ Standart kitaplığına taşıma semantiklerini tanıtır. Örneğin, `string` sınıfı semantik taşınmasını gerçekleştiren işlemleri uygular. Birkaç dizeyi birleştirmeye ve sonucu yazdırmaya aşağıdaki örneği göz önünde bulundurun:  
   
-```  
+```cpp 
 // string_concatenation.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -58,24 +59,24 @@ int main()
 }  
 ```  
   
- Visual C++ 2010'dan önce her çağrısı `operator+` ayırır ve yeni bir geçici döndürür `string` nesne (rvalue bir). `operator+` Kaynak dizeleri lvalues veya rvalues olduğunu bilmediğinden bir dize diğerine eklenemiyor. Kaynak dizeleri hem lvalues varsa, başka bir programda başvurulan ve bu nedenle değiştirilmemesi gerekir. Rvalue başvuru kullanarak `operator+` başka bir programda başvurulamaz rvalues yapılacak değiştirilebilir. Bu nedenle, `operator+` bir dize diğerine şimdi ekleyebilirsiniz. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` class gerçekleştirmelisiniz. Hakkında daha fazla bilgi için `string` sınıfı için bkz: [basic_string sınıfı](../standard-library/basic-string-class.md).  
+ Visual C++ 2010'dan önce her çağrısı `operator+` ayırır ve yeni bir geçici döndürür `string` nesnesini (rvalue). `operator+` Kaynak dizelerin lvalues veya rvalues olduğunu bilmediği için bir dizeyi diğerine ekleyemez. Kaynak dizeleri her iki lvalues ise, programda başka bir yerde başvurulabilir ve bu nedenle değiştirilmemelidir. Rvalue başvuruları kullanılarak `operator+` programda başka bir yerde başvurulamaz rvalues değeri alması için değiştirilebilir. Bu nedenle, `operator+` şimdi bir dizeyi başka birine ekleyebilir. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` sınıfı gerçekleştirmeniz gerekir. Hakkında daha fazla bilgi için `string` sınıfı [basic_string sınıfı](../standard-library/basic-string-class.md).  
   
- Derleyici dönüş değeri en iyi duruma getirme (RVO) veya adlı dönüş değeri en iyi duruma getirme (NRVO) kullanamazsınız taşıma semantiği de faydalıdır. Bu durumlarda, türü tanımlıyorsa derleyici taşıma oluşturucusuna çağırır. Adlı dönüş değeri en iyi duruma getirme hakkında daha fazla bilgi için bkz: [adlı dönüş değeri en iyi duruma getirme Visual C++ 2005'te](http://go.microsoft.com/fwlink/p/?linkid=131571).  
+ Derleyici dönüş değeri iyileştirme (RVO) veya adlı dönüş değeri iyileştirme (NRVO) kullanamadığı zaman, taşıma semantiği de yardımcı olur. Bu gibi durumlarda, tür tanımlıyorsa derleyici taşıma yapıcısını çağırır. Adlı dönüş değeri iyileştirme hakkında daha fazla bilgi için bkz: [adlı dönüş değeri iyileştirme Visual C++ 2005'te](http://go.microsoft.com/fwlink/p/?linkid=131571).  
   
- Taşıma semantiği daha iyi anlamak için bir öğeye ekleme örneği göz önünde bulundurun. bir `vector` nesnesi. Varsa kapasitesini `vector` nesne aşıldı `vector` nesne öğeleri için bellek tahsis ve her öğe, eklenen öğesi için yer açmak için başka bir bellek konumuna kopyalayın. Bir ekleme işlemi öğenin kopyaladığında, yeni bir öğesi oluşturur, önceki öğesinden yeni öğe verileri kopyalamak için Kopyala oluşturucuyu çağırır ve önceki öğesi yok eder. Taşıma semantiği pahalı bellek ayırma gerçekleştirmek ve kopyalama işlemlerini yapmak zorunda kalmadan doğrudan nesneleri taşımanızı sağlar.  
+ Taşıma semantiğini daha iyi anlamak için bir öğe ekleme örneği göz önünde bulundurun. bir `vector` nesne. Varsa kapasitesini `vector` nesne aşıldı, `vector` nesnesinin kendi öğeleri için bellek tahsis ve ardından her öğe eklenen öğeye yer açmak için başka bir bellek konumuna kopyalayın. Bir ekleme işlemi bir öğe kopyalarken, yeni bir öğe oluşturur, verileri yeni bir öğe için önceki öğeyi kopyalamak için Kopyala oluşturucusunu çağırır ve ardından önceki öğeyi yok eder. Taşıma semantiği, pahalı bellek ayırması gerçekleştirmek ve kopyalama işlemlerini yapmak zorunda kalmadan nesneleri taşımanıza olanak sağlar.  
   
- Taşıma semantiği yararlanmak için `vector` örnek, verileri bir nesneden taşımak için bir taşıma oluşturucusuna yazabilirsiniz.  
+ Örneğinde taşıma semantiklerinden yararlanmak için `vector` örnek, verileri bir nesneden diğerine taşımak amacıyla taşıma yapıcısı yazabilirsiniz.  
   
- Taşıma semantiği giriş Visual C++ 2010 C++ Standart kitaplığına hakkında daha fazla bilgi için bkz: [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md).  
+ Taşıma semantiği Visual C++ 2010 C++ Standart kitaplığına giriş hakkında daha fazla bilgi için bkz: [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md).  
   
 ## <a name="perfect-forwarding"></a>Kusursuz iletme  
- Kusursuz iletme aşırı yüklenmiş işlevlerin gereksinimini azaltır ve iletme sorun yardımcı kaçının. *Sorun iletme* başvuru parametreleri olarak isteyen bir genel işlevi yazma ve bunu geçirir oluşabilir (veya *iletir*) Bu parametreleri başka bir işlev. Örneğin, genel işlevi türünde bir parametre sürerse `const T&`, sonra çağrılan işlev bu parametrenin değeri değiştirilemez. Genel işlevi türünde bir parametre sürerse `T&`, sonra da bir rvalue (örneğin, bir geçici nesne veya tamsayı değişmez değer) kullanarak işlevi çağrılamaz.  
+ Kusursuz iletme aşırı yüklenmiş işlevlere gereksinimini azaltır ve iletme sorunundan yardımcı kaçının. *Sorun iletme* parametre olarak başvuruları alan genel işlevi yazmak ve geçirir oluşabilir (veya *iletir*) Bu parametreleri başka bir işlev. Örneğin jenerik işlev türünde bir parametre alırsa, `const T&`, çağrılan işlev bu parametrenin değerini değiştiremez. Genel işlev türünde bir parametre alırsa `T&`, işlev bir rvalue (örneğin, geçici bir nesne veya değişmez değer tamsayı) kullanılarak çağrılamaz.  
   
- Normalde, bu sorunu çözmek için her ikisi de almayan aşırı yüklü sürümü genel işlevi sağlamalısınız `T&` ve `const T&` her parametreleri. Sonuç olarak, aşırı yüklenen işlevler sayısı katlanarak parametre sayısı artar. Rvalue başvuru isteğe bağlı bağımsız değişkenler kabul eder ve diğer işlevi doğrudan çağrısı yaptığını gibi bunları başka bir işleve ileten bir işlev bir sürümünü yazmanızı sağlar.  
+ Normalde, bu sorunu çözmek için hem de alan genel işlevin aşırı yüklenmiş sürümleri sağlamalısınız `T&` ve `const T&` kendi parametrelerinin her biri için. Sonuç olarak, aşırı yüklenen işlevlerin sayısı, parametre sayısıyla birlikte katlanarak artar. Rvalue başvuruları, rasgele bağımsız değişkenleri kabul eden ve diğer işlev doğrudan çağrılmış gibi bunları başka bir işleve ileten bir işlevin bir sürümünü yazmanıza olanak sağlar.  
   
- Dört tür bildirir aşağıdaki örneği göz önünde bulundurun `W`, `X`, `Y`, ve `Z`. Farklı bir birleşimi her türünün Oluşturucusu alır `const` ve olmayan-`const` lvalue başvuru parametreleri olarak.  
+ Dört tür bildiren aşağıdaki örneği göz önünde bulundurun `W`, `X`, `Y`, ve `Z`. Her tür için oluşturucu alan farklı bir birleşimini **const** ve olmayan-**const** parametre olarak lvalue başvuruları.  
   
-```  
+```cpp 
 struct W  
 {  
    W(int&, int&) {}  
@@ -97,32 +98,32 @@ struct Z
 };  
 ```  
   
- Nesneleri oluşturur genel bir işlev yazdığınızda istediğinizi varsayalım. Aşağıdaki örnek, bu işlev yazmak için bir yol gösterir:  
+ Nesneleri oluşturan genel işlevi yazmak istediğinizi varsayalım. Aşağıdaki örnek, bu işlevi yazmanın bir yöntemi gösterir:  
   
-```  
+```cpp 
 template <typename T, typename A1, typename A2>  
 T* factory(A1& a1, A2& a2)  
 {  
    return new T(a1, a2);  
 }  
-```  
+```
   
  Aşağıdaki örnek, geçerli bir çağrı gösterir `factory` işlevi:  
   
-```  
+```cpp 
 int a = 4, b = 5;  
 W* pw = factory<W>(a, b);  
 ```  
   
- Ancak, aşağıdaki örnek, geçerli bir çağrı içermiyor `factory` çünkü işlev `factory` parametreleri, ancak değiştirilebilir alır lvalue başvuru rvalues kullanarak çağrılır:  
+ Ancak, aşağıdaki örnekte, geçerli bir çağrı içermiyor `factory` olduğundan işlev `factory` parametrelerini, ancak bunu lvalue başvurularını alır, rvalues kullanarak çağrılır:  
   
-```  
+```cpp 
 Z* pz = factory<Z>(2, 2);  
 ```  
   
- Normalde, bu sorunu çözmek için aşırı yüklü sürümünü oluşturmalısınız `factory` işlevi her birleşimi için `A&` ve `const A&` parametreleri. Rvalue başvuru etkinleştirmek bir sürümünü yazmanızı `factory` aşağıdaki örnekte gösterildiği gibi işlev:  
+ Normalde, bu sorunu çözmek için aşırı yüklenmiş bir sürümünü oluşturmalısınız `factory` işlevi her birleşimi için `A&` ve `const A&` parametreleri. Rvalue başvuruları bir sürümünü yazmanıza olanak tanır `factory` aşağıdaki örnekte gösterildiği gibi işlev:  
   
-```  
+```cpp 
 template <typename T, typename A1, typename A2>  
 T* factory(A1&& a1, A2&& a2)  
 {  
@@ -130,11 +131,11 @@ T* factory(A1&& a1, A2&& a2)
 }  
 ```  
   
- Bu örnek için parametre olarak rvalue başvuru kullanır `factory` işlevi. Amacı [std::forward](../standard-library/utility-functions.md#forward) işlevidir şablon sınıf Fabrika işleve parametrelerinin iletmek için.  
+ Bu örnekte, parametreleri olarak rvalue başvuruları kullanılmaktadır `factory` işlevi. Amacı [std::forward](../standard-library/utility-functions.md#forward) şablonu sınıfının oluşturucusu, Fabrika işlevinin parametrelerini iletecek şekilde işlevdir.  
   
- Aşağıdaki örnekte gösterildiği `main` düzenlenen kullanan bir işlev `factory` örneklerini oluşturmak üzere işlevini `W`, `X`, `Y`, ve `Z` sınıfları. Düzenlenen `factory` işlevi (lvalues veya rvalues) parametrelerini uygun sınıf oluşturucu iletir.  
+ Aşağıdaki örnekte gösterildiği `main` düzenlenen kullanan işlev `factory` örneklerini oluşturmak için işlevi `W`, `X`, `Y`, ve `Z` sınıfları. Düzenlenen `factory` işlevi parametrelerini (lvalues veya rvalues) uygun sınıf oluşturucusuna iletir.  
   
-```  
+```cpp 
 int main()  
 {  
    int a = 4, b = 5;  
@@ -150,12 +151,12 @@ int main()
 }  
 ```  
   
-## <a name="additional-properties-of-rvalue-references"></a>Rvalue başvuru ek özellikler  
- **Lvalue başvuru ve rvalue başvuru almak için bir işlev aşırı yüklenebilir.**  
+## <a name="additional-properties-of-rvalue-references"></a>Rvalue başvuruları ek özellikleri  
+ **Lvalue başvuru ve rvalue başvurusu almak için işleve Aşırı yüklenme olabilir.**  
   
- Yapılacak bir işlev aşırı yüklemesi tarafından bir `const` lvalue başvuru veya rvalue başvuru, değiştirilebilir olmayan nesneler (lvalues) arasında ayırt kod yazabilirsiniz ve değiştirilebilir geçici değerleri (rvalues). Nesne olarak işaretlenmemişse rvalue başvuru isteyen bir işlevi için bir nesne geçirebilir `const`. Aşağıdaki örnek, işlev gösterir `f`, lvalue başvuru ve rvalue başvuru almak üzere aşırı. `main` İşlev çağrıları `f` lvalues ve bir rvalue.  
+ Almak için işleve aşırı yükleme tarafından bir **const** değiştirilebilir geçici değerleri (rvalues) ve lvalue başvurusunu veya rvalue başvurusu değiştirilemez nesnelerle (lvalues) ayıran kod yazabilirsiniz. Nesne olarak işaretlenmediği sürece bir rvalue başvurusu alan bir işlev için bir nesne geçirebilirsiniz **const**. Aşağıdaki örnek işlev gösterir `f`, aşırı yüklenmiş bir lvalue başvurusu ve rvalue başvurusu almak için. `main` İşlev çağrılarında `f` hem lvalues hem de rvalue ile.  
   
-```  
+```cpp 
 // reference-overload.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -185,22 +186,22 @@ int main()
 }  
 ```  
   
- Bu örnek şu çıkışı üretir:  
+ Bu örnek aşağıdaki çıktıyı üretir:  
   
-```  
+```Output  
 In f(const MemoryBlock&). This version cannot modify the parameter.  
 In f(MemoryBlock&&). This version can modify the parameter.  
 ```  
   
- Bu örnekte, ilk çağrı `f` bağımsız değişken olarak yerel bir değişken (bir lvalue) geçirir. İkinci çağrı `f` geçici bir nesne, bağımsız değişkeni olarak geçirir. Çağrı aşırı yüklü sürümünü bağlar geçici nesne başka bir programda başvurulamaz çünkü `f` nesneyi değiştirmek ücretsiz bir rvalue başvuru alır.  
+ Bu örnekte, ilk çağrı `f` bağımsız değişken olarak yerel bir değişken (lvalue) geçirir. İçin yapılan ikinci çağrı `f` geçici bir nesne, bağımsız değişkeni olarak geçirir. Geçici bir nesne başka bir programda başvuruda bulunulamaz çünkü çağrıyı aşırı yüklenmiş sürümüne bağlanır `f` nesneyi değiştirmek ücretsiz olarak bir rvalue başvurusunu alır.  
   
- **Derleyici bir lvalue olarak adlandırılmış rvalue başvuru ve adsız rvalue başvuru bir rvalue davranır.**  
+ **Derleyici, adlandırılmış bir rvalue başvurusunu lvalue olarak ve adlandırılmamış bir rvalue başvurusunu rvalue olarak değerlendirir.**  
   
- Rvalue başvuru, parametre olarak alan bir işlev yazdığınızda, bu parametre bir lvalue işlev gövdesine olarak kabul edilir. Bir adlandırılmış nesneyi çeşitli bölümlerini bir program tarafından başvurulabilir olduğundan derleyici bir lvalue adlandırılmış rvalue başvuru değerlendirir; birden çok bölümlerini değiştirmek veya bu nesneden kaynakları kaldırmak için bir program izin vermek tehlikeli olabilir. Örneğin, bir program birden fazla bölümü aynı nesneden kaynakları aktarım denerseniz, yalnızca ilk bölümü başarıyla kaynak aktarın.  
+ Rvalue başvurusunu parametre olarak alan bir işlev yazdığınızda, söz konusu parametre işlevin gövdesinde lvalue olarak değerlendirilir. Adlandırılmış bir nesneye bir programın çeşitli parçaları tarafından başvuru yapılabildiği derleyici adlandırılmış bir rvalue başvurusunu lvalue olarak değerlendirebilir; birden fazla bölümü değiştirmek veya o nesneden kaynakları kaldırmak için bir program izin vermek tehlikeli olabilir. Örneğin, bir programın birden çok parçası kaynakları aynı nesneden aktarmaya çalışırsanız yalnızca ilk bölümü başarıyla kaynak aktarın.  
   
- Aşağıdaki örnek, işlev gösterir `g`, lvalue başvuru ve rvalue başvuru almak üzere aşırı. İşlev `f` kendi parametre (adlandırılmış rvalue başvuru) olarak rvalue başvuru alır ve bir rvalue başvuru (adlandırılmamış rvalue başvuru) döndürür. Çağrısında `g` gelen `f`, aşırı yükleme çözünürlüğü seçer sürümü `g` çünkü lvalue başvuru alan gövdesini `f` , parametresinin bir lvalue değerlendirir. Çağrısında `g` gelen `main`, aşırı yükleme çözünürlüğü seçer sürümü `g` çünkü rvalue başvuru alan `f` rvalue başvuru döndürür.  
+ Aşağıdaki örnek işlev gösterir `g`, aşırı yüklenmiş bir lvalue başvurusu ve rvalue başvurusu almak için. İşlev `f` bir rvalue başvurusunu kendi parametresi olarak (adlandırılmış bir rvalue Başvurusu) alır ve bir rvalue başvurusuna (adlandırılmamış rvalue Başvurusu) döndürür. Çağrısında `g` gelen `f`, aşırı yükleme çözünürlüğü sürümünü seçer `g` çünkü bir lvalue başvurusuna alan gövdesinin `f` , parametresinin bir lvalue gibi kabul eder. Çağrısında `g` gelen `main`, aşırı yükleme çözünürlüğü sürümünü seçer `g` çünkü bir rvalue başvurusu alan `f` bir rvalue başvurusu döndürür.  
   
-```  
+```cpp 
 // named-reference.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -234,20 +235,20 @@ int main()
 }  
 ```  
   
- Bu örnek şu çıkışı üretir:  
+ Bu örnek aşağıdaki çıktıyı üretir:  
   
-```  
+```cpp 
 In g(const MemoryBlock&).  
 In g(MemoryBlock&&).  
 ```  
   
- Bu örnekte, `main` işlevi bir rvalue geçirir `f`. Gövdesini `f` adlandırılmış parametre bir lvalue değerlendirir. Çağrısından `f` için `g` bir lvalue başvuru parametreyi bağlar (ilk aşırı yüklü sürümünü `g`).  
+ Bu örnekte, `main` işlevi öğesine rvalue geçirir `f`. Gövdesi `f` adlandırılmış parametresini bir lvalue gibi kabul eder. Çağrısından `f` için `g` parametreyi bir lvalue başvurusuna bağlar (ilk Aşırı yüklenen sürümü `g`).  
   
--   **Rvalue başvuru için bir lvalue çevirebilirsiniz.**  
+-   **Bir rvalue başvurusuna bir lvalue çevirebilirsiniz.**  
   
- C++ Standart Kitaplığı [std::move](../standard-library/utility-functions.md#move) işlevi rvalue başvuru, bu nesneye bir nesne Dönüştür olanak sağlar. Alternatif olarak, kullanabileceğiniz `static_cast` anahtar sözcüğü bir lvalue rvalue başvuru için aşağıdaki örnekte gösterildiği gibi dönüştürmek için:  
+ C++ Standart Kitaplığı [std::move](../standard-library/utility-functions.md#move) işlevi bir nesne için o nesnenin rvalue başvurusuna dönüştürmenize olanak sağlar. Alternatif olarak, **static_cast** anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi lvalue olarak bir rvalue başvurusuna atanamadı:  
   
-```  
+```cpp 
 // cast-reference.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -277,22 +278,22 @@ int main()
 }  
 ```  
   
- Bu örnek şu çıkışı üretir:  
+ Bu örnek aşağıdaki çıktıyı üretir:  
   
-```  
+```cpp 
 In g(const MemoryBlock&).  
 In g(MemoryBlock&&).  
 ```  
   
- **İşlev şablonları kendi şablon bağımsız değişken türleri türetme ve kuralları daraltma başvuru kullanın.**  
+ **İşlev şablonları kendi şablon bağımsız değişken türlerini alır ve ardından başvuru daraltma kuralları kullanın.**  
   
- Aktardığı işlevi şablon yazma yaygındır (veya *iletir*) başka bir işlev parametreleri. Şablon türü kesintisi rvalue başvuru ele işlev şablonları için nasıl çalıştığını anlamak önemlidir.  
+ Başarılı bir işlev şablonu yazılması olağandır (veya *iletir*) başka bir işlev parametrelerini. Şablon türü kesintisinin rvalue başvurularını alan işlev şablonları için nasıl çalıştığını anlamak önemlidir.  
   
- İşlev bağımsız değişkeni bir rvalue ise, derleyici rvalue başvuru olmasını deduces. Örneğin, bir rvalue başvuru türünde bir nesneye geçirirseniz `X` türü isteyen bir şablon işlevi için `T&&` , parametre olarak şablon bağımsız değişken kesintisi deduces `T` olmasını `X`. Bu nedenle, parametre türüne sahip `X&&`. İşlev bağımsız değişkeni bir lvalue ise veya `const` lvalue, derleyici deduces lvalue başvuru türünü veya `const` lvalue başvuru türü.  
+ İşlev bağımsız değişkeni bir rvalue ise, derleyici bağımsız değişkenin rvalue başvurusu olarak anlar. Örneğin, bir nesne türü bir rvalue başvurusunu geçirirseniz `X` türünü alan bir şablon işlevine `T&&` parametre olarak şablon bağımsız değişkeni kesintisi çıkarır `T` olmasını `X`. Bu nedenle, parametre türüne sahip `X&&`. İşlev bağımsız değişkeni bir lvalue ise veya **const** lvalue çıkarır derleyici bir ıvalue başvurusu için türünü veya **const** lvalue başvuru türü.  
   
- Aşağıdaki örnek, bir yapı şablon bildirir ve çeşitli başvuru türleri için uzmanlaşmış. `print_type_and_value` İşlev, parametre olarak rvalue başvuru alır ve uygun özel sürümüne iletir `S::print` yöntemi. `main` İşlevi çağırmak için çeşitli yollar gösterir `S::print` yöntemi.  
+ Aşağıdaki örnek, bir yapı şablonu bildirir ve ardından onu çeşitli başvuru türlerine uzmanlaşmış. `print_type_and_value` İşlevi bir rvalue başvurusunu parametre olarak alan ve ilgili özel sürümüne iletir `S::print` yöntemi. `main` İşlevi çağırmak için çeşitli yollar gösterir `S::print` yöntemi.  
   
-```  
+```cpp 
 // template-type-deduction.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -371,43 +372,43 @@ int main()
 }  
 ```  
   
- Bu örnek şu çıkışı üretir:  
+ Bu örnek aşağıdaki çıktıyı üretir:  
   
-```  
+```cpp 
 print<T&>: first  
 print<const T&>: second  
 print<T&&>: third  
 print<const T&&>: fourth  
 ```  
   
- Her çağrı çözümlemek için `print_type_and_value` işlevi, derleyici ilk şablon bağımsız değişken kesintisi gerçekleştirir. Derleyici başvurusu parametre türleri sonucuna varılan şablon bağımsız değişkenleri değiştirir zaman kuralları daraltma sonra uygulanır. Örneğin, yerel değişken geçirme `s1` için `print_type_and_value` işlevi aşağıdaki işlevi imzayı üretmek derleyici neden olur:  
+ Her çağrı çözümlenecek `print_type_and_value` işlevi, derleyici önce şablon bağımsız değişkeni kesintisi gerçekleştirir. Derleyici, ardından başvuru daraltma kuralları, çıkarılan şablon bağımsız değişken parametre türleri için yerini alır, uygular. Örneğin, yerel değişken geçirme `s1` için `print_type_and_value` işlevi, derleyicinin aşağıdaki işlev imzasını üretmesine neden olur:  
   
-```  
+```cpp 
 print_type_and_value<string&>(string& && t)  
 ```  
   
- Derleyici imza aşağıdaki azaltmak için başvuru kuralları daraltma kullanır:  
+ Derleyici imzayı aşağıdaki hale indirgemek için başvuru daraltma kuralları kullanır:  
   
-```  
+```cpp 
 print_type_and_value<string&>(string& t)  
 ```  
   
- Bu sürümü `print_type_and_value` işlevi sonra doğru özel sürümü için kendi parametre iletir `S::print` yöntemi.  
+ Bu sürümü `print_type_and_value` işlevi daha sonra parametresini doğru sürümüne iletir `S::print` yöntemi.  
   
- Şablon bağımsız değişken türü kesintisi için kuralları daraltma başvuru aşağıdaki tabloda özetlenmiştir:  
+ Başvuru daraltma kuralları şablon bağımsız değişken türü kesintisi için aşağıdaki tabloda özetlenmiştir:  
   
 |||  
 |-|-|  
-|Genişletilmiş türü|Daraltılmış türü|  
+|Genişletilmiş tür|Daraltılmış tür|  
 |`T& &`|`T&`|  
 |`T& &&`|`T&`|  
 |`T&& &`|`T&`|  
 |`T&& &&`|`T&&`|  
   
- Şablon bağımsız değişken kesintisi kusursuz iletme uygulamanın önemli bir öğedir. Alt bölümde, bu konunun önceki bölümlerinde sunulan, kusursuz iletme, kusursuz iletme daha ayrıntılı açıklanmıştır.  
+ Şablon bağımsız değişkeni kesintisi, kusursuz iletme uygulamanın önemli bir öğedir. Bu konunun önceki bölümlerinde sunulan, kusursuz iletme, bölüm kusursuz iletme bölümünde daha ayrıntılı açıklanmaktadır.  
   
 ## <a name="summary"></a>Özet  
- Rvalue başvuru lvalues rvalues ayırt etmek. Bunlar, gereksiz bellek ayırmaları gereksinimini ortadan kaldırarak, uygulamalarınızın performansını artırmak ve kopyalama işlemlerini yardımcı olabilir. Bunlar ayrıca isteğe bağlı bağımsız değişkenler kabul eder ve diğer işlevi doğrudan çağrısı yaptığını gibi bunları başka bir işleve ileten bir işlev bir sürümünü yazmak etkinleştirin.  
+ Rvalue başvuruları lvalues rvalues'den ayırt eder. Bunlar, gereksiz bellek ayırma gereksinimini ortadan kaldırarak uygulamalarınızın performansını ve kopyalama işlemlerini yardımcı olabilir. Bunlar ayrıca, rasgele bağımsız değişkenleri kabul eden ve diğer işlev doğrudan çağrılmış gibi bunları başka bir işleve ileten bir işlevin bir sürümünü yazmanıza olanak sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   

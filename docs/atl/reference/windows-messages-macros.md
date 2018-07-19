@@ -1,5 +1,5 @@
 ---
-title: Windows iletileri makroları | Microsoft Docs
+title: Windows iletisi makroları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21bb273b94f871e253ab927238c96256f46e2b3a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3063dd1bb5bbd9c0eb957b9727027b2d01edfd7d
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360223"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886212"
 ---
-# <a name="windows-messages-macros"></a>Windows iletileri makroları
-Bu makrosu pencere iletileri iletir.  
+# <a name="windows-messages-macros"></a>Windows iletisi makroları
+Bu makro, pencere iletilerini iletir.  
   
 |||  
 |-|-|  
@@ -32,17 +32,17 @@ Bu makrosu pencere iletileri iletir.
  **Başlık:** atlbase.h 
    
 ##  <a name="wm_forwardmsg"></a>  WM_FORWARDMSG  
- Bu makrosu işleme için başka bir pencere için bir pencere tarafından alınan ileti gönderir.  
+ Bu makro, işleme için başka bir pencere için bir pencere tarafından alınan ileti iletir.  
   
 ```
 WM_FORWARDMSG
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sıfır olmayan iletisi işlendi, sıfır değilse.  
+ Sıfır olmayan bir ileti işlediğinde yoksa sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `WM_FORWARDMSG` işleme için başka bir pencere için bir pencere tarafından alınan bir iletiyi iletmesini. LPARAM ve WPARAM parametreleri aşağıdaki gibi kullanılır:  
+ İşleme için başka bir pencere için bir pencere tarafından alınan bir iletiyi iletmesini WM_FORWARDMSG kullanın. LPARAM ve WPARAM Parametreler şu şekilde kullanılır:  
   
 |Parametre|Kullanım|  
 |---------------|-----------|  
@@ -50,7 +50,7 @@ WM_FORWARDMSG
 |LPARAM|Bir işaretçi bir `MSG` bir ileti hakkında bilgi içeren yapısı|  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte, `m_hWndOther` şu iletiyi alıyor başka bir pencere temsil eder.  
+ Aşağıdaki örnekte, `m_hWndOther` bu iletiyi alır bir pencereyi temsil eder.  
   
  [!code-cpp[NVC_ATL_Windowing#137](../../atl/codesnippet/cpp/windows-messages-macros_1.cpp)]  
   

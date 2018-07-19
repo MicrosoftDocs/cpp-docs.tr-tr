@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a56c5ef5f8cc5a3061b18ec2ffcdc83bf850d641
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 73c7faa1146c7784076c75a468e87a717a8d03da
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853940"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965736"
 ---
 # <a name="plus-struct"></a>plus Yapısı
 
-Toplama işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi (ikili `operator+`) bağımsız değişkenlerini üzerinde.
+Toplama işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (ikili `operator+`) üzerinde bağımsız değişkenleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,15 +49,15 @@ struct plus<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Bir ikili destekleyen bir türü `operator+` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* bir ikili destekleyen bir türü `operator+` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Ek işlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* toplama işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Ek işlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* sağ işleneninin toplama işlemi. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left + Right`. Özelleşmiş şablon ikili tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator+`.
+Sonucu `Left + Right`. Özelleşmiş şablon ikili tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator+`.
 
 ## <a name="example"></a>Örnek
 
@@ -111,7 +111,7 @@ The element-wise sums are: ( -4 -2 0 2 4 6 )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

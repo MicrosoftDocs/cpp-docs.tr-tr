@@ -1,5 +1,5 @@
 ---
-title: '&lt;işlev&gt; işleçleri | Microsoft Docs'
+title: '&lt;işlevsel&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,22 +17,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e84ed8ed97a529d67c6d136fd8464cd13c8a502
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1b9bc37213ed2e5690f85fca738d44e6eecfaa8c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845225"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962055"
 ---
-# <a name="ltfunctionalgt-operators"></a>&lt;işlev&gt; işleçleri
+# <a name="ltfunctionalgt-operators"></a>&lt;işlevsel&gt; işleçleri
 
 |||
 |-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Aranabilir nesne boşsa, testleri.
+Çağrılabilir nesnesi boş olup olmadığını sınar.
 
 ```cpp
 template <class Fty>
@@ -44,15 +44,15 @@ bool operator==(null_ptr_type npc, const function<Fty>& f);
 
 ### <a name="parameters"></a>Parametreler
 
-`Fty` Sarmalamak için işlev türü.
+*Fty* sarmalamak için işlev türü.
 
-`f` İşlev nesnesi
+*f* işlev nesnesi
 
-`npc` Bir null işaretçi.
+*npc* null bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir başvuru olmayan bir bağımsız değişken işleçlerinin her ikisi de ele bir `function` nesnesi ve bir null işaretçinin sabit olmayan bir bağımsız değişken. Her ikisi de true ise dönmek `function` nesnesidir boş.
+Her iki işleçleri başvuru bir bağımsız değişken alır bir `function` nesnesi ve bir null işaretçi sabit bir bağımsız değişken. Her ikisi de yalnızca, true döndürür `function` nesnesi boş.
 
 ### <a name="example"></a>Örnek
 
@@ -87,9 +87,9 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Testleri aranabilir nesnesi boş değil.
+Çağrılabilir nesnesi boş olup olmadığını sınar.
 
 ```cpp
 template <class Fty>
@@ -101,15 +101,15 @@ bool operator!=(null_ptr_type npc, const function<Fty>& f);
 
 ### <a name="parameters"></a>Parametreler
 
-`Fty` Sarmalamak için işlev türü.
+*Fty* sarmalamak için işlev türü.
 
-`f` İşlev nesnesi
+*f* işlev nesnesi
 
-`npc` Bir null işaretçi.
+*npc* null bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir başvuru olmayan bir bağımsız değişken işleçlerinin her ikisi de ele bir `function` nesnesi ve bir null işaretçinin sabit olmayan bir bağımsız değişken. Her ikisi de true ise dönmek `function` nesnesi boş değil.
+Her iki işleçleri başvuru bir bağımsız değişken alır bir `function` nesnesi ve bir null işaretçi sabit bir bağımsız değişken. Her ikisi de yalnızca, true döndürür `function` nesnesi boş değil.
 
 ### <a name="example"></a>Örnek
 

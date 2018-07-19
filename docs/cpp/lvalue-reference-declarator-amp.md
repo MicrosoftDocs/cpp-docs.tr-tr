@@ -17,14 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de716ec8c29bbdb50462cd6ea642ed603d411c2a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d16ed882b1037123963f105b1a78bf8e1023d332
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948221"
 ---
 # <a name="lvalue-reference-declarator-amp"></a>Lvalue başvuru Bildirimcisi: &amp;
-Bir nesne adresini tutar ancak sözdizimsel olarak bir nesne gibi davranır.  
+Bir nesnenin adresini tutar ancak sözdizimsel olarak bir nesne gibi davranır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,16 +35,16 @@ type-id & cast-expression
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Lvalue başvuru bir nesne için başka bir ad olarak düşünebilirsiniz. Lvalue başvuru bildirimi isteğe bağlı bir başvuru bildirimcisi tarafından izlenen tanımlayıcıları listesinden oluşur. Bir başvuru başlatılması gerekir ve değiştirilemez.  
+ Bir lvalue başvurusu bir nesnenin başka bir ad olarak düşünebilirsiniz. İsteğe bağlı bir liste belirleyicilerinin bir başvuru bildirimcisi tarafından izlenen bir lvalue başvurusu bildirimi oluşur. Bir başvuru başlatılmalıdır ve değiştirilemez.  
   
- Adresini verilen işaretçi türüne dönüştürülebilir herhangi bir nesne de benzer başvuru türüne dönüştürülebilir. Adresini türüne dönüştürülebilir Örneğin, herhangi bir nesne `char *` türüne dönüştürülebilir `char &`.  
+ Herhangi bir nesnenin adresini verilen işaretçi türüne dönüştürülebilir benzer bir başvuru türüne de dönüştürülebilir. Örneğin, tüm nesne adresini türüne dönüştürülebilir `char *` türüne de dönüştürülebilir `char &`.  
   
- Başvuru bildirimleri kullanımı ile karıştırmayın [address-of işleci](../cpp/address-of-operator-amp.md). Zaman `&` *tanımlayıcısı* türüne göre gibi öncesinde `int` veya `char`, *tanımlayıcısı* bir başvuru türü olarak bildirilmiş. Zaman `&` *tanımlayıcısı* değil öncesinde türüne göre, address-of işleci kullanımdır.  
+ Başvuru bildirimleri kullanımı ile karıştırmayın [address-of işleci](../cpp/address-of-operator-amp.md). Zaman `&` *tanımlayıcı* gibi bir tür tarafından öncesinde **int** veya **char**, *tanımlayıcı* bir başvuru olarak bildirilir türü. Zaman `&` *tanımlayıcı* değil öncesinde bir tarafından kullanım, address-of işleci türüdür.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bildirerek başvuru bildirimcisi gösterir bir `Person` nesne ve bu nesneye bir başvurusu. Çünkü `rFriend` başvurusudur `myFriend`, her iki değişken güncelleştirme aynı nesne değiştirir.  
+ Aşağıdaki örnek, bildirerek başvuru bildirimcisi gösterir bir `Person` nesne ve o nesnenin bir başvuru. Çünkü `rFriend` bir başvurudur `myFriend`, güncelleştirme ya da değişken aynı nesneye değiştirir.  
   
-```  
+```cpp 
 // reference_declarator.cpp  
 // compile with: /EHsc  
 // Demonstrates the reference declarator.  

@@ -16,31 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab2de61df8c4e22b1955e9fd4798b5128a3e12be
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 81f0509c6230020b586c0341e1de608981c05476
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845901"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965985"
 ---
 # <a name="hasiteratordebugging"></a>_HAS_ITERATOR_DEBUGGING
 
-Yerine geçen [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md), bu makrosu özelliği hata ayıklama yineleyici hata ayıklama derlemede etkin olup olmadığını tanımlar. Varsayılan olarak, hata ayıklama yineleyici hata ayıklama derlemelerinde etkin ve perakende yapılarında devre dışı. Daha fazla bilgi için bkz: [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md).
+Yerine geçen [_ıterator_debug_level](../standard-library/iterator-debug-level.md), hata ayıklama derlemesinde hata ayıklama özelliği yineleyici etkinleştirilip etkinleştirilmeyeceğini Bu makroyu tanımlar. Varsayılan olarak, hata ayıklama yineleyici hata ayıklama yapılarında etkinleştirilir ve perakende sürümlerde devre dışı. Daha fazla bilgi için [Debug Iterator Support](../standard-library/debug-iterator-support.md).
 
 > [!IMPORTANT]
-> Doğrudan kullanımını `_HAS_ITERATOR_DEBUGGING` makrosu kullanım dışıdır. Bunun yerine, kullanın `_ITERATOR_DEBUG_LEVEL` denetlemek için yineleyici hata ayıklama, ayarları. Daha fazla bilgi için bkz: [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).
+> Doğrudan kullanımını _HAS_ITERATOR_DEBUGGING makrosu kullanım dışıdır. Bunun yerine, yineleyici hata ayıklama ayarlarını denetlemek _ıterator_debug_level kullanın. Daha fazla bilgi için [_ıterator_debug_level](../standard-library/iterator-debug-level.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yineleyici hata ayıklama derlemelerinde hata ayıklamayı etkinleştirmek için ayarlanmış `_ITERATOR_DEBUG_LEVEL` 2. Bu eşdeğer olan bir `_HAS_ITERATOR_DEBUGGING` ayar 1 ya da etkin:
+Hata ayıklama yapılarında hata ayıklama yineleyici etkinleştirmek için _ıterator_debug_level 2 olarak ayarlayın. 1 _HAS_ITERATOR_DEBUGGING ayarı için eşdeğer olan veya etkin:
 
 ```cpp
 #define _ITERATOR_DEBUG_LEVEL 2
 ```
 
-`_ITERATOR_DEBUG_LEVEL` 2 olarak ayarlanmış (ve `_HAS_ITERATOR_DEBUGGING` 1 olarak ayarlayın) perakende oluşturur.
+_Iterator_debug_level 2 ayarlanamaz (ve _HAS_ITERATOR_DEBUGGING 1 için ayarlanamaz) perakende oluşturur.
 
-Hata ayıklama yineleyiciler hata ayıklama derlemelerinde devre dışı bırakmak için ayarlanmış `_ITERATOR_DEBUG_LEVEL` için 0 veya 1. Bu eşdeğer olan bir `_HAS_ITERATOR_DEBUGGING` 0 ya da devre dışı ayarlama:
+Hata ayıklama yapılarında hata ayıklama yineleyiciler devre dışı bırakmak için _ıterator_debug_level 0 veya 1 olarak ayarlayın. 0 _HAS_ITERATOR_DEBUGGING ayarı için eşdeğerdir veya devre dışı:
 
 ```cpp
 #define _ITERATOR_DEBUG_LEVEL 0

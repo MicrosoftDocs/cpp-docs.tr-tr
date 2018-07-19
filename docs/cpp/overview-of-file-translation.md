@@ -19,29 +19,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa38b2ea9ea05fb9391ab8a69e11821d4422e392
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0dd4643c21ebb8626252230b90880af9f9499c0d
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948011"
 ---
 # <a name="overview-of-file-translation"></a>Dosya Çevirisine Genel Bakış
 C++ programları, C programlarında olduğu gibi bir veya daha fazla dosyadan oluşur. Bu dosyaların her biri, aşağıdaki kavramsal sırayla çevrilir (gerçek sıra "gibi" kuralını izler: çeviri bu adımlar uygulanmış gibi gerçekleşmelidir):  
   
-1.  Sözcük temelli belirteç oluşturma. Karakter eşleme ve üç harf işleme, satır birleştirme ve belirteç oluşturma bu çeviri aşamasında gerçekleştirilir.  
+1. Sözcük temelli belirteç oluşturma. Karakter eşleme ve üç harf işleme, satır birleştirme ve belirteç oluşturma bu çeviri aşamasında gerçekleştirilir.  
   
-2.  Ön işleme. Bu çeviri aşaması başvurduğu bulunabilecek kaynak dosyalarında getirir `#include` yönergeleri, "dizeleyen" ve "yönergeleri karakterleştirme" işler ve belirteç yapıştıran ve makrosu genişletme gerçekleştirir (bkz [önişlemci yönergeleri](../preprocessor/preprocessor-directives.md) içinde *önişlemci başvurusu* daha fazla bilgi için). Ön işleme aşamasının sonucu, birlikte bir "çeviri birimini" tanımlayan belirteçler dizisidir.  
+2. Ön işleme. Bu çeviri aşaması, tarafından başvurulan yedek kaynak dosyalarını getirir `#include` yönergeleri, "dize haline getirme" ve "yönergeleri karakterleştirme" işler ve belirteç yapıştırma ve makro genişletme işlemlerini gerçekleştirir (bkz [önişlemci yönergeleri](../preprocessor/preprocessor-directives.md) içinde *önişlemci başvurusu* daha fazla bilgi için). Ön işleme aşamasının sonucu, birlikte bir "çeviri birimini" tanımlayan belirteçler dizisidir.  
   
-     Önişlemci yönergeleri her zaman sayı işaretiyle başlar (**#**) karakter (satırındaki ilk alanı renkleri karakter, sayı işareti olmalıdır). Belirli bir satırda yalnızca bir önişlemci yönergesi görünebilir. Örneğin:  
+     Önişlemci yönergeleri her zaman sayı işareti ile başlayan (**#**) karakteri (yani satırdaki ilk boşluk olmayan karakter sayı işareti olmalıdır). Belirli bir satırda yalnızca bir önişlemci yönergesi görünebilir. Örneğin:  
   
-    ```  
+    ```cpp 
     #include <iostream>  // Include text of iostream in   
                          //  translation unit.  
     #define NDEBUG       // Define NDEBUG (NDEBUG contains empty   
                          //  text string).  
     ```  
   
-3.  Kod oluşturma. Bu çeviri aşaması, nesne kodu oluşturmak için ön işleme aşamasında oluşturulan belirteçleri kullanır.  
+3. Kod oluşturma. Bu çeviri aşaması, nesne kodu oluşturmak için ön işleme aşamasında oluşturulan belirteçleri kullanır.  
   
      Bu aşamada, kaynak kodunun sözdizimsel ve semantik denetimi gerçekleştirilir.  
   
@@ -49,11 +50,11 @@ C++ programları, C programlarında olduğu gibi bir veya daha fazla dosyadan ol
   
  C++ önişlemcisi, ANSI C önişlemcisinin kesin bir üst kümesidir, ancak C++ önişlemcisi birkaç örnekte farklılık gösterir. Aşağıdaki listede, ANSI C ve C++ önişlemcileri arasındaki birkaç farklılık açıklanmaktadır:  
   
--   Tek satırlı yorumlar desteklenir. Bkz: [açıklamaları](../cpp/comments-cpp.md) daha fazla bilgi için.  
+- Tek satırlı yorumlar desteklenir. Bkz: [açıklamaları](../cpp/comments-cpp.md) daha fazla bilgi için.  
   
--   Önceden tanımlanmış bir makro **__cplusplus**, yalnızca C++ için tanımlanır. Bkz: [önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md) içinde *önişlemci başvurusu* daha fazla bilgi için.  
+- Önceden tanımlanmış bir makro `__cplusplus`, yalnızca C++ için tanımlanır. Bkz: [önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md) içinde *önişlemci başvurusu* daha fazla bilgi için.  
   
--   C önişlemci C++ işleçleri tanımıyor: **.\*** , **-> \***, ve `::`. Bkz: [işleçleri](../cpp/cpp-built-in-operators-precedence-and-associativity.md) ve [ifadeleri](../cpp/expressions-cpp.md), işleçler hakkında daha fazla bilgi.  
+- C önişlemcisi C++ işleçlerini tanımaz: **.\*** , **-> \***, ve `::`. Bkz: [işleçleri](../cpp/cpp-built-in-operators-precedence-and-associativity.md) ve [ifadeleri](../cpp/expressions-cpp.md), işleçler hakkında daha fazla bilgi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

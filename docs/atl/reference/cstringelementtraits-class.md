@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddce07ed7f79c167d4cf819b85de1484346bba93
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f0c6ed9fb68e685a7b8a59b049277e61f41fd2ce
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363991"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885731"
 ---
 # <a name="cstringelementtraits-class"></a>CStringElementTraits sınıfı
-Bu sınıf, depolama koleksiyon sınıfları tarafından kullanılan statik işlevler sağlar `CString` nesneleri.  
+Statik işlevler depolama koleksiyon sınıfları tarafından kullanılan bu sınıfın sağladığı `CString` nesneleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,73 +42,73 @@ class CStringElementTraits
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Bir koleksiyonda depolanan verilerin türü.  
+ *T*  
+ Koleksiyonda depolanacak veri türü.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CStringElementTraits::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.|  
-|[CStringElementTraits::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.|  
+|[CStringElementTraits::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|  
+|[CStringElementTraits::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CStringElementTraits::CompareElements](#compareelements)|(Statik) Eşitlik için iki dize öğeleri karşılaştırmak için bu işlevini çağırın.|  
-|[CStringElementTraits::CompareElementsOrdered](#compareelementsordered)|(Statik) İki dize öğesi karşılaştırmak için bu işlevini çağırın.|  
-|[CStringElementTraits::CopyElements](#copyelements)|(Statik) Kopyalamak için bu işlevi çağırmak `CString` bir koleksiyon sınıfı nesnesinde depolanan öğeler.|  
-|[CStringElementTraits::Hash](#hash)|(Statik) Verilen dize öğesi için bir karma değer hesaplamak için bu işlevini çağırın.|  
-|[CStringElementTraits::RelocateElements](#relocateelements)|(Statik) Konumunu değiştirmek için bu işlevi çağırmak `CString` bir koleksiyon sınıfı nesnesinde depolanan öğeler.|  
+|[CStringElementTraits::CompareElements](#compareelements)|(Statik) Eşitlik için iki dize öğeleri karşılaştırmak için bu işlevi çağırın.|  
+|[CStringElementTraits::CompareElementsOrdered](#compareelementsordered)|(Statik) İki dize öğe karşılaştırmak için bu işlevi çağırın.|  
+|[CStringElementTraits::CopyElements](#copyelements)|(Statik) Kopyalamak için bu işlevi çağırın `CString` bir koleksiyon sınıfı nesnesinde saklanan öğe.|  
+|[CStringElementTraits::Hash](#hash)|(Statik) Verilen dize öğesi için bir karma değeri hesaplamak için bu işlevi çağırın.|  
+|[CStringElementTraits::RelocateElements](#relocateelements)|(Statik) Yeniden konumlandırmak için bu işlevi çağırın `CString` bir koleksiyon sınıfı nesnesinde saklanan öğe.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, bir karma değer oluşturma ve kopyalama, taşıma ve dizeleri karşılaştırma için statik işlevler sağlar. Bu işlevleri koleksiyon sınıfı dize tabanlı veri depolamak için kullandığınızda yararlıdır. Kullanım [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md) duyarlı karşılaştırmalar zaman gereklidir. Kullanım [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md) olduğunda string nesneleri ile başvuru olarak ele alınabilir.  
+ Bu sınıf, kopyalama, taşıma ve dizeleri karşılaştırmak için ve bir karma değer oluşturmak için statik işlevler sağlar. Bu işlevler, dize tabanlı verileri depolamak için koleksiyon sınıfı kullanıldığında yararlıdır. Kullanım [Cstringelementtraitsı](../../atl/reference/cstringelementtraitsi-class.md) büyük küçük harf duyarsız karşılaştırmalar zaman gereklidir. Kullanım [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md) olduğunda dize nesneleri ile başvuru olarak ele alınabilir.  
   
- Daha fazla bilgi için bkz: [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
+ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** cstringt.h  
   
 ##  <a name="compareelements"></a>  CStringElementTraits::CompareElements  
- Eşitlik için iki dize öğeleri karşılaştırmak için bu statik işlevini çağırın.  
+ Eşitlik için iki dize öğeleri Karşılaştırılacak statik bu işlevi çağırın.  
   
 ```
 static bool CompareElements(INARGTYPE str1, INARGTYPE str2);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `str1`  
- İlk öğe dize.  
+ *str1*  
+ İlk dize öğesi.  
   
- `str2`  
- İkinci öğe dize.  
+ *str2*  
+ İkinci dize öğesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğeleri yanlış Aksi takdirde, eşitse true döndürür.  
+ Öğe yanlış Aksi takdirde, eşitse true döndürür.  
   
 ##  <a name="compareelementsordered"></a>  CStringElementTraits::CompareElementsOrdered  
- İki dize öğesi karşılaştırmak için bu statik işlevini çağırın.  
+ İki dize öğe Karşılaştırılacak statik bu işlevi çağırın.  
   
 ```
 static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `str1`  
- İlk öğe dize.  
+ *str1*  
+ İlk dize öğesi.  
   
- `str2`  
- İkinci öğe dize.  
+ *str2*  
+ İkinci dize öğesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sıfır dizeleri özdeş ise, < 0 ise `str1` olan değerinden `str2`, veya > 0 ise `str1` değerinden daha büyük `str2`. [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi karşılaştırmaları gerçekleştirmek için kullanılır.  
+ Dizeler aynıysa sıfır, < 0, *str1* olduğu küçüktür *str2*, veya > 0 ise *str1* büyüktür *str2*. [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi karşılaştırmalar yapmak için kullanılır.  
 
   
 ##  <a name="copyelements"></a>  CStringElementTraits::CopyElements  
- Kopyalamak için bu statik işlev çağrısı `CString` bir koleksiyon sınıfı nesnesinde depolanan öğeler.  
+ Kopyalamak için statik bu işlevi çağırın `CString` bir koleksiyon sınıfı nesnesinde saklanan öğe.  
   
 ```
 static void CopyElements(
@@ -118,48 +118,48 @@ static void CopyElements(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDest`  
- Kopyalanan veriler alacak ilk öğe işaretçi.  
+ *pDest*  
+ Kopyalanan veriler alacak ilk öğesinin işaretçisi.  
   
- `pSrc`  
- Kopyalamak için ilk öğe işaretçi.  
+ *pSrc*  
+ Kopyalamak için ilk öğesinin işaretçisi.  
   
- `nElements`  
+ *nElements*  
  Kopyalanacak öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kaynak ve hedef öğeleri çakışmaması gerekir.  
+ Kaynak ve hedef öğeleri çakışmaması.  
   
 ##  <a name="hash"></a>  CStringElementTraits::Hash  
- Verilen dize öğesi için bir karma değer hesaplamak için bu statik işlevini çağırın.  
+ Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.  
   
 ```
 static ULONG Hash(INARGTYPE str);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `str`  
+ *str*  
  Dize öğesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizesinin içeriği kullanılarak hesaplanan bir karma değer döndürür.  
+ Dizenin içeriklerini kullanarak hesaplanan bir karma değer döndürür.  
   
 ##  <a name="inargtype"></a>  CStringElementTraits::INARGTYPE  
- Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.  
+ Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.  
   
 ```
 typedef T::PCXSTR INARGTYPE;
 ```  
   
 ##  <a name="outargtype"></a>  CStringElementTraits::OUTARGTYPE  
- Koleksiyon sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.  
+ Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.  
   
 ```
 typedef T& OUTARGTYPE;
 ```  
   
 ##  <a name="relocateelements"></a>  CStringElementTraits::RelocateElements  
- Taşıyabilir bu statik işlev çağrısı `CString` bir koleksiyon sınıfı nesnesinde depolanan öğeler.  
+ Dışında yeniden konumlandırmakta statik bu işlevi çağırın `CString` bir koleksiyon sınıfı nesnesinde saklanan öğe.  
   
 ```
 static void RelocateElements(
@@ -169,19 +169,19 @@ static void RelocateElements(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDest`  
- Yeniden konumlandırılan veri alacak ilk öğe işaretçi.  
+ *pDest*  
+ Veriler yeni yerlerine alacak ilk öğesinin işaretçisi.  
   
- `pSrc`  
- İşaretçi ilk öğesine taşıyabilir.  
+ *pSrc*  
+ Dışında yeniden konumlandırmakta ilk öğesinin işaretçisi.  
   
- `nElements`  
- Taşıyabilir öğe sayısı.  
+ *nElements*  
+ Dışında yeniden konumlandırmakta öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu statik işlev çağrılarını [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), çoğu veri türleri için yeterli olduğu. Taşınan nesne kendi üye işaretçileri içeriyorsa, bu statik işlev geçersiz kılınacak gerekir.  
+ Bu statik işlev çağrıları [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), çoğu veri türleri için yeterli olduğu. Taşınan nesnelerin kendi üye işaretçileri içeriyorsa, bu statik işlev geçersiz kılınması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CElementTraitsBase sınıfı](../../atl/reference/celementtraitsbase-class.md)   
- [CStringElementTraitsI sınıfı](../../atl/reference/cstringelementtraitsi-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Cstringelementtraitsı sınıfı](../../atl/reference/cstringelementtraitsi-class.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

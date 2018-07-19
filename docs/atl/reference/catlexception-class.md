@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aaafdf42d218e2c3bca1e8ee28c27898f80bcf40
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fed15dc2348fa540c1f33e7742c5cbcda96b5846
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357876"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882539"
 ---
 # <a name="catlexception-class"></a>CAtlException sınıfı
-Bu sınıf ATL istisna tanımlar.  
+Bu sınıf, ATL istisna tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,18 +47,18 @@ class CAtlException
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlException::operator HRESULT](#operator_hresult)|Geçerli nesne HRESULT değerine çevirir.|  
+|[CAtlException::operator HRESULT](#operator_hresult)|HRESULT değerini geçerli nesneye çevirir.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlException::m_hr](#m_hr)|Türündeki değişken HRESULT nesne tarafından oluşturulan ve hata durumunu depolamak için kullanılır.|  
+|[CAtlException::m_hr](#m_hr)|Türünde değişken HRESULT nesne tarafından oluşturulan ve hata durumunu depolamak için kullanılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- A `CAtlException` nesnesi bir ATL işlemle ilişkili bir özel durumu temsil eder. `CAtlException` Sınıfı özel durumu ve HRESULT değilmiş gibi özel durumu işlemek izin veren bir atama işleci nedeni gösteren durum kodunu depolar ortak veri üyesi içerir.  
+ A `CAtlException` nesnesi bir ATL işlemiyle ilgili bir özel durum koşulunu temsil eder. `CAtlException` Sınıfı özel durumu ve HRESULT değilmiş gibi özel durumu işle olanak tanıyan bir atama işleci nedenini gösteren durum kodunu depolar genel veri üyesi içerir.  
   
- Genel olarak, çağıracaksınız `AtlThrow` oluşturmak yerine bir `CAtlException` doğrudan nesne.  
+ Genel olarak, çağıracak `AtlThrow` oluşturmak yerine bir `CAtlException` doğrudan nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlexcept.h  
@@ -72,26 +72,26 @@ CAtlException() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hr`  
- `HRESULT` Hata kodu.  
+ *İK*  
+ HRESULT hata kodu.  
   
 ##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT 
- Geçerli nesne HRESULT değerine çevirir.  
+ HRESULT değerini geçerli nesneye çevirir.  
   
 ```  
 operator HRESULT() const throw ();
 ```  
   
 ##  <a name="m_hr"></a>  CAtlException::m_hr  
- `HRESULT` Veri üyesi.  
+ HRESULT veri üyesi.  
   
 ```
 HRESULT m_hr;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata koşulu depolar veri üyesi. HRESULT değer oluşturucusu tarafından ayarlanır [CAtlException::CAtlException](#catlexception).  
+ Hata koşulu depolar veri üyesi. HRESULT değerini Oluşturucu tarafından ayarlanan [CAtlException::CAtlException](#catlexception).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Çeşitlemeleri](debugging-and-error-reporting-global-functions.md#atlthrow)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

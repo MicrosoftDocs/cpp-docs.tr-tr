@@ -17,26 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e93798dadee3e4270d82eac84a794c6133c05c07
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 61531ad8471a7409a42fdd2d55b27a82d08ba340
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411711"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941034"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>Onaylama ve Kullanıcının Sağladığı İletiler (C++)
-Yardımcı C++ dili destekler üç hata işleme mekanizmaları uygulamanızda hata ayıklama: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), [static_assert](../cpp/static-assert.md) anahtar sözcüğü ve [assert makrosu, _assert, _ wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. Hata iletileri üç mekanizma vermek ve ayrıca test iki yazılım onaylar. Bir yazılım onaylama programınızdaki belirli bir noktada doğru olması için beklediğiniz bir koşulu belirtir. Derleme zamanı onaylama başarısız olursa, derleyici bir tanılama iletisi ve derleme hatası verir. Çalışma zamanı onaylama başarısız olursa, işletim sisteminin bir tanılama iletisi yayınlar ve uygulamanızı kapatır.  
+Yardımcı olan C++ dil destekleyen üç hata işleme mekanizması, uygulamanızı hata ayıklama: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), [static_assert](../cpp/static-assert.md) anahtar sözcüğü ve [assert makrosu, _assert, _ wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. Hata iletileri üç mekanizma vermek ve iki Ayrıca yazılım onaylar test edin. Yazılım onaylama programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Bir derleme zamanı onaylama işlemi başarısızsa, derleyici bir tanılama iletisi ve bir derleme hatası verir. Bir çalışma zamanı onaylama başarısız olursa, işletim sisteminin bir tanılama iletisi yayınlar ve uygulamanızı kapatır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ön işleme uygulamanızın ömrünü oluşur, derleyin ve zaman aşaması çalıştırın. Her hata mekanizması işleme Bu aşamalar biri sırasında hata ayıklama bilgileri erişir. Etkili bir şekilde hata ayıklamak için bu aşamada ilgili bilgileri sağlayan mekanizması seçin:  
+ Zaman aşamayı çalıştırmak ve derleme veya ön işleme uygulamanızın ömrünü oluşur. Her bir hata işleme mekanizması biri bu aşamaları sırasında kullanılabilir hata ayıklama bilgileri erişir. Etkili bir şekilde hata ayıklamak için bu aşamada ilgili bilgileri sağlayan mekanizma seçin:  
   
--   [#Error yönergesi](../preprocessor/hash-error-directive-c-cpp.md) zaman ön işleme sırasında etkili olur. Koşulsuz olarak bir kullanıcı tarafından belirtilen ileti yayar ve derlemesinin bir hata ile başarısız olmasına neden olur. Önişlemci yönergeleri tarafından yönetilebilir metin iletisi içerebilir ancak herhangi bir sonuç ifade değerlendirilmez.  
+-   [#Error yönergesi](../preprocessor/hash-error-directive-c-cpp.md) zaman ön işleme sırasında yürürlükte olur. Koşulsuz olarak bir kullanıcı tarafından belirtilen iletiyi yayar ve derlemesinin bir hata ile başarısız olmasına neden olur. Önişlemci yönergeleri tarafından yönetilen bir metin iletisi içerebilir, ancak herhangi bir sonuç ifade değerlendirilmez.  
   
--   [Static_assert](../cpp/static-assert.md) bildirimidir yürürlükte derleme zamanında. Kullanıcı tarafından belirtilen ve bir Boolean değerine dönüştürülebilir bir tamsayı ifade tarafından temsil edilen bir yazılım onaylama sınar. Sıfır (false) ifadeyi hesaplar, kullanıcı tanımlı iletinin derleyici sorunları ve derleme bir hata ile başarısız olur.  
+-   [Static_assert](../cpp/static-assert.md) bildirimi yürürlükte olan derleme zamanında. Bu kullanıcı tarafından belirtilen ve bir Boolean değerine dönüştürülebilir bir integral ifadesi tarafından temsil edilen bir yazılım onayını sınar. İfade sıfır (false) olarak değerlendirilirse, kullanıcı tarafından belirtilen ileti derleyici verir ve derleme bir hata ile başarısız olur.  
   
-     `static_assert` Bildirimi, bağımsız şablon kullanıcı tarafından belirtilen ifade eklenebilir olduğundan, şablonları hata ayıklama için özellikle yararlıdır.  
+     `static_assert` Bildirimi, şablon bağımsız değişkenleri, kullanıcı tarafından belirtilen ifade eklenebilir olduğundan, şablonları hata ayıklama için özellikle kullanışlıdır.  
   
--   [Assert makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu olduğundan geçerli çalışma zamanında. Bir kullanıcı tarafından belirtilen ifadeyi değerlendirir ve sonuç sıfır ise, sistem bir tanılama iletisi yayınlar ve uygulamanızı kapatır. Diğer birçok makrolar gibi[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) ve `_ASSERTE`, bu makrosu benzer ancak farklı sistem tanımlı veya kullanıcı tanımlı tanılama iletileri sorun.  
+-   [Assert makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu yürürlükte olan çalışma zamanında. Bir kullanıcı tarafından belirtilen ifadeyi değerlendirir ve sonucu sıfır ise, sistem bir tanılama iletisi yayınlar ve uygulamanızı kapatır. Diğer birçok makrolar gibi[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) ve _ASSERTE, bu makroyu benzer ancak farklı sistem tanımlı veya kullanıcı tanımlı tanılama iletileri yayınlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#error yönergesi (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)   

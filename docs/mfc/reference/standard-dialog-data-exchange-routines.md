@@ -1,5 +1,5 @@
 ---
-title: Standart iletişim kutusu veri değişimi yordamları | Microsoft Docs
+title: Standart iletişim kutusu veri değişimi rutinleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,42 +14,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6c79a96439605bcf9ab670c1f75dda2d50169f6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 338412780116201b40e51ff38c4805097add4e3c
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33377661"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885982"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>Standart İletişim Kutusu Veri Değişimi Rutinleri
-Bu konu genel MFC iletişim kutusu denetimleri için kullanılan standart iletişim kutusu veri değişimi (DDX) yordamları listeler.  
+Bu konu, genel MFC iletişim kutusu denetimleri için kullanılan standart iletişim kutusu veri değişimi (DDX) rutinleri listeler.  
   
 > [!NOTE]
->  Standart iletişim kutusu veri değişimi rutinleri üstbilgi dosyası afxdd_.h tanımlanır. Ancak, uygulamaları afxwin.h içermelidir.  
+>  Standart iletişim kutusu veri değişimi rutinleri üstbilgi dosyası afxdd_.h içinde tanımlanır. Ancak, uygulamaları afxwin.h içermelidir.  
   
 ### <a name="ddx-functions"></a>DDX işlevleri  
   
 |||  
 |-|-|  
-|[Ddx_cbındex](#ddx_cbindex)|Birleşik giriş kutusu denetimi, geçerli seçim dizinini alır veya başlatır.|  
-|[DDX_CBString](#ddx_cbstring)|Birleşik giriş kutusu denetimi Düzenle alanının geçerli içeriğini alır veya başlatır.|  
-|[DDX_CBStringExact](#ddx_cbstringexact)|Birleşik giriş kutusu denetimi Düzenle alanının geçerli içeriğini alır veya başlatır.|  
-|[DDX_Check](#ddx_check)|Bir onay kutusu denetimi geçerli durumunu alır veya başlatır.|  
+|[Ddx_cbındex](#ddx_cbindex)|Başlatır veya birleşik giriş kutusu denetimi oluşan geçerli seçimi dizinini alır.|  
+|[DDX_CBString](#ddx_cbstring)|Başlatır veya birleşik giriş kutusu denetimi Düzenle alanının geçerli içeriğini alır.|  
+|[DDX_CBStringExact](#ddx_cbstringexact)|Başlatır veya birleşik giriş kutusu denetimi Düzenle alanının geçerli içeriğini alır.|  
+|[DDX_Check](#ddx_check)|Başlatır veya onay kutusu denetimi geçerli durumunu alır.|  
 |[DDX_Control](#ddx_control)|Alt sınıfların bir iletişim kutusu içinde belirli bir denetim.|  
-|[DDX_DateTimeCtrl](#ddx_datetimectrl)|Başlatır veya bir tarih ve Saat Seçici denetiminin tarih ve/veya saat verileri alır.|  
-|[Ddx_ıpaddress](#ddx_ipaddress)|Bir IP adresi denetimi geçerli değeri alır veya başlatır.|  
-|[Ddx_lbındex](#ddx_lbindex)|Liste kutusu denetimi, geçerli seçim dizinini alır veya başlatır.|  
-|[DDX_LBString](#ddx_lbstring)|Geçerli seçim içindeki bir liste kutusu denetimini alır veya başlatır.|  
-|[DDX_LBStringExact](#ddx_lbstringexact)|Geçerli seçim içindeki bir liste kutusu denetimini alır veya başlatır.|
-|[DDX_ManagedControl](#ddx_managedcontrol)|Denetimin kaynak kimlikle eşleşen bir .NET denetimi oluşturur|  
-|[DDX_MonthCalCtrl](#ddx_monthcalctrl)|Aylık takvim denetiminin geçerli değeri alır veya başlatır.|  
-|[DDX_Radio](#ddx_radio)|Şu anda radyo denetim Grup içinde kullanıma radyo denetim 0 tabanlı dizinini alır veya başlatır.|  
-|[DDX_Scroll](#ddx_scroll)|Bir kaydırma denetimin kaydırma geçerli konumunu alır veya başlatır.|  
-|[DDX_Slider](#ddx_slider)|Kaydırıcı denetim Flash geçerli konumunu alır veya başlatır.|  
-|[DDX_Text](#ddx_text)|Bir düzen denetimi geçerli değeri alır veya başlatır.|  
+|[DDX_DateTimeCtrl](#ddx_datetimectrl)|Başlatır veya tarih ve/veya saat verileri bir tarih ve saat seçici denetimi değerini alır.|  
+|[Ddx_ıpaddress](#ddx_ipaddress)|Başlatır veya bir IP adresi denetimi geçerli değerini alır.|  
+|[Ddx_lbındex](#ddx_lbindex)|Başlatır veya bir liste kutusu denetimini oluşan geçerli seçimi dizinini alır.|  
+|[DDX_LBString](#ddx_lbstring)|Geçerli seçimi içinde bir liste kutusu denetimini alır veya belirler başlatır.|  
+|[DDX_LBStringExact](#ddx_lbstringexact)|Geçerli seçimi içinde bir liste kutusu denetimini alır veya belirler başlatır.|
+|[DDX_ManagedControl](#ddx_managedcontrol)|Denetimin kaynak kimliğiyle eşleşen bir .NET denetimi oluşturur|  
+|[DDX_MonthCalCtrl](#ddx_monthcalctrl)|Başlatır veya bir ay takvimi geçerli değerini alır.|  
+|[DDX_Radio](#ddx_radio)|Başlatır veya şu anda bir radyo denetimi grubu içinde kullanıma radyo denetimi 0 tabanlı dizinini alır.|  
+|[DDX_Scroll](#ddx_scroll)|Başlatır veya kaydırma denetim thumb geçerli konumunu alır.|  
+|[DDX_Slider](#ddx_slider)|Başlatır veya bir kaydırıcı denetiminin thumb geçerli konumunu alır.|  
+|[DDX_Text](#ddx_text)|Başlatır veya bir düzenleme denetimi geçerli değerini alır.|  
   
 ##  <a name="ddx_cbindex"></a>  Ddx_cbındex  
- `DDX_CBIndex` İşlevi aktarımını yönetir `int` arasında bir iletişim kutusu, birleşik giriş kutusu denetiminde veri form görünümü ya da Denetim Görünüm nesnesi ve `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_CBIndex` İşlevi aktarımını yöneten **int** arasında bir iletişim kutusu, birleşik giriş kutusu denetiminde veri görünümü veya denetim görünüm nesnesi oluşturur ve bir **int** iletişim kutusu, form görünümü veya denetim veri üyesi Görünüm nesnesi.  
   
 ```  
 void AFXAPI DDX_CBIndex(
@@ -59,25 +59,25 @@ void AFXAPI DDX_CBIndex(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Birleşik giriş kutusu denetimi denetim özelliğiyle ilişkili kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkili birleşik giriş kutusu denetimi kaynak kimliği.  
   
  *Dizin*  
- İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
+ İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_CBIndex` olarak adlandırılır, *dizin* geçerli birleşik giriş kutusu seçimi dizinine ayarlanır. Öğe seçiliyse, *dizin* 0 olarak ayarlayın.  
+ Zaman `DDX_CBIndex` çağrıldığında *dizin* birleşik giriş kutusu seçilen dizinine ayarlanır. Hiçbir öğe seçili değilse *dizin* 0 olarak ayarlayın.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_cbstring"></a>  DDX_CBString  
- `DDX_CBString` İşlevi aktarımını yönetir `CString` birleşik giriş kutusu denetiminde bir iletişim kutusu düzen denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_CBString` İşlevi aktarımını yöneten `CString` verileri arasında bir iletişim kutusu, birleşik giriş kutusu denetiminde düzenleme denetimi form görünümü veya denetim görünüm nesnesi ve bir `CString` iletişim kutusu, form görünümü veya denetim view nesnesinin veri üyesi.  
   
 ```  
 void AFXAPI DDX_CBString(
@@ -87,28 +87,28 @@ void AFXAPI DDX_CBString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Birleşik giriş kutusu denetimi denetim özelliğiyle ilişkili kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkili birleşik giriş kutusu denetimi kaynak kimliği.  
   
  *value*  
- İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
+ İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_CBString` olarak adlandırılır, *değeri* geçerli birleşik giriş kutusu seçimi ayarlayın. Öğe seçiliyse, *değeri* sıfır uzunlukta bir dize olarak ayarlayın.  
+ Zaman `DDX_CBString` çağrıldığında *değer* geçerli birleşik giriş kutusu seçimi ayarlanır. Hiçbir öğe seçili değilse *değer* sıfır uzunluklu bir dizeye ayarlayın.  
   
 > [!NOTE]
->  Birleşik giriş kutusu açılan liste kutusu ise, değiştirilen 255 karakterle sınırlı değerdir.  
+>  Birleşik giriş kutusundaki açılır liste kutusu ise, değiştirilen değer 255 karakterle sınırlıdır.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_cbstringexact"></a>  DDX_CBStringExact  
- `DDX_CBStringExact` İşlevi aktarımını yönetir `CString` birleşik giriş kutusu denetiminde bir iletişim kutusu düzen denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_CBStringExact` İşlevi aktarımını yöneten `CString` verileri arasında bir iletişim kutusu, birleşik giriş kutusu denetiminde düzenleme denetimi form görünümü veya denetim görünüm nesnesi ve bir `CString` iletişim kutusu, form görünümü veya denetim view nesnesinin veri üyesi.  
   
 ```  
 void AFXAPI DDX_CBStringExact(
@@ -118,28 +118,28 @@ void AFXAPI DDX_CBStringExact(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Birleşik giriş kutusu denetimi denetim özelliğiyle ilişkili kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkili birleşik giriş kutusu denetimi kaynak kimliği.  
   
  *value*  
- İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
+ İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_CBStringExact` olarak adlandırılır, *değeri* geçerli birleşik giriş kutusu seçimi ayarlayın. Öğe seçiliyse, *değeri* sıfır uzunlukta bir dize olarak ayarlayın.  
+ Zaman `DDX_CBStringExact` çağrıldığında *değer* geçerli birleşik giriş kutusu seçimi ayarlanır. Hiçbir öğe seçili değilse *değer* sıfır uzunluklu bir dizeye ayarlayın.  
   
 > [!NOTE]
->  Birleşik giriş kutusu açılan liste kutusu ise, değiştirilen 255 karakterle sınırlı değerdir.  
+>  Birleşik giriş kutusundaki açılır liste kutusu ise, değiştirilen değer 255 karakterle sınırlıdır.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_check"></a>  DDX_Check  
- `DDX_Check` İşlevi aktarımını yönetir `int` iletişim kutusunda, onay kutusu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_Check` İşlevi aktarımını yöneten **int** arasında bir iletişim kutusu bir onay kutusu denetiminde veri form görünümü veya denetim görünüm nesnesi ve bir **int** iletişim kutusu, form görünümü veya denetim veri üyesi Görünüm nesnesi.  
   
 ```  
 void AFXAPI DDX_Check(
@@ -149,25 +149,25 @@ void AFXAPI DDX_Check(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Denetim özellik ile ilişkilendirilmiş onay kutusu denetimi kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkilendirilmiş onay kutusu denetimi kaynak kimliği.  
   
  *value*  
- İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
+ İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_Check` olarak adlandırılır, *değeri* onay kutusu denetimi geçerli durumuna ayarlanır. Olası durum değerlerinin listesi için bkz: [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) Windows SDK'sındaki.  
+ Zaman `DDX_Check` çağrıldığında *değer* onay kutusu denetimi geçerli durumuna ayarlanır. Olası durum değerleri listesi için bkz. [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) Windows SDK.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_control"></a>  DDX_Control  
- `DDX_Control` Alt sınıflar tarafından belirtilen denetim işlev `nIDC`, iletişim kutusu, form görünümü veya denetim görünüm nesnesi.  
+ `DDX_Control` Alt sınıflar tarafından belirtilen denetim, işlev *nIDC*, iletişim kutusu, form görünümü veya denetim görünüm nesnesi.  
   
 ```  
 void AFXAPI DDX_Control(
@@ -177,25 +177,25 @@ void AFXAPI DDX_Control(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi.  
+ *pDX*  
+ Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.  
   
- `nIDC`  
- Kaynak Kimliği sınıflandırma denetimi.  
+ *nIDC*  
+ Kaynak Kimliği sınıflandırılacak denetimi.  
   
  *rControl*  
- Üye değişkeni iletişim kutusu, form görünümü veya denetim görünüm nesnesi belirtilen denetimi ile ilgili başvuru.  
+ İletişim kutusu, form görünümü veya belirtilen denetimle ilişkili denetim view nesnesinin üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pDX` Nesne çerçevesi tarafından sağlanan zaman `DoDataExchange` işlevi çağrılır. Bu nedenle, `DDX_Control` geçersiz kılma içinde yalnızca çağrılmalıdır `DoDataExchange`.  
+ *PDX* nesne framework tarafından sağlanan zaman `DoDataExchange` işlevi çağrılır. Bu nedenle, `DDX_Control` yalnızca kılacağınızı çağrılmalıdır `DoDataExchange`.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_datetimectrl"></a>  DDX_DateTimeCtrl  
- `DDX_DateTimeCtrl` İşlevi bir tarih ve Saat Seçici denetimini arasında tarih ve/veya saat veri aktarımını yönetir ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) bir iletişim kutusu veya form görünümü nesnesi ve ya da bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) iletişim kutusu veya form görünümü nesnesi veri üyesi.  
+ `DDX_DateTimeCtrl` İşlevi bir tarih ve Saat Seçici denetimini arasında tarih ve/veya saat veri aktarımını yönetir ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) bir iletişim kutusu veya form Görünüm nesnesi ve ya da bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) iletişim kutusu veya form view nesnesinin veri üyesi.  
   
 ```  
 void AFXAPI DDX_DateTimeCtrl(
@@ -215,33 +215,30 @@ void AFXAPI DDX_DateTimeCtrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar. Bu nesneyi silmek gerek yoktur.  
+ *pDX*  
+ Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar. Bu nesne silmeniz gerekmez.  
   
- `nIDC`  
- Üye değişkeni ile ilişkilendirilmiş tarih ve Saat Seçici denetimini kaynak kimliği.  
+ *nIDC*  
+ Üye değişkeni ile ilişkili tarih ve Saat Seçici denetimini kaynak kimliği.  
   
  *value*  
- İlk iki sürümlerinde, bir başvuru bir `CTime` veya `COleDateTime` üye değişkeni, iletişim kutusu, form görünümü veya ile veri değişimi denetim görünüm nesnesi. Bir başvuru üçüncü sürümündeki bir `CString` veri üyesi denetim görünüm nesnesi.  
+ İlk iki sürümlerinde, bir başvuru bir `CTime` veya `COleDateTime` üye değişkeni, iletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi. Üçüncü sürümünde, bir başvuru bir `CString` veri üyesi denetim görünüm nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_DateTimeCtrl` olarak adlandırılır, *değeri* geçerli ayarlamak tarih ve Saat Seçici denetimini veya denetim durumu ayarlanmış *değeri*exchange yönünü bağlı olarak.  
+ Zaman `DDX_DateTimeCtrl` çağrılır, *değeri* geçerli ayarlanmış tarih ve saat seçici denetimi veya denetim durumunu ayarlanır *değeri*exchange yönüne bağlı olarak.  
   
- Yukarıdaki üçüncü sürümünde `DDX_DateTimeCtrl` aktarımını yönetir `CString` verileri arasında bir tarih saat denetim ve [CString](../../atl-mfc-shared/reference/cstringt-class.md) denetim görünüm nesnesi veri üyesi. Tarihler ve saatler biçimlendirme için geçerli yerel kurallarını kullanarak biçimlendirilmiş dize.  
+ Yukarıdaki üçüncü sürümünde `DDX_DateTimeCtrl` aktarımını yöneten `CString` verileri arasında bir tarih saat denetimi ve bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) denetim view nesnesinin veri üyesi. Dize, tarihleri ve saatleri biçimlendirme için geçerli yerel ayarın kuralları kullanılarak biçimlendirilir.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
 
-   
-
- 
 ## <a name="ddx_managedcontrol"></a>  DDX_ManagedControl
-Denetimin kaynak kimlikle eşleşen bir .NET denetimi oluşturur  
+Denetimin kaynak kimliğiyle eşleşen bir .NET denetimi oluşturur  
    
 ### <a name="syntax"></a>Sözdizimi  
-  ```  
+```  
 template <typename T>  
 void DDX_ManagedControl(  
      CDataExchange* pDX,   
@@ -249,19 +246,19 @@ void DDX_ManagedControl(
      CWinFormsControl<T>& control );  
 ```
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir [CDataExchange sınıfı](cdataexchange-class.md) nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir [CDataExchange sınıfı](cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Denetim özelliği ile ilişkili denetime kaynak kimliği.  
+ *nIDC*  
+ Denetimin Denetim özelliği ile ilişkili kaynak kimliği.  
   
- `control`  
- Bir başvuru bir [Ddx_managedcontrol sınıfı](cwinformscontrol-class.md) nesnesi.  
+ *control*  
+ Bir başvuru bir [CWinFormsControl sınıfı](cwinformscontrol-class.md) nesne.  
    
 ### <a name="remarks"></a>Açıklamalar  
- `DDX_ManagedControl` çağrıları [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol) kaynak denetimi kimlikle eşleşen bir denetim oluşturmak için Kullanım `DDX_ManagedControl` kaynak kimlikleri denetimleri oluşturmak için [CDialog::OnInitDialog](cdialog-class.md#oninitdialog). Veri değişimi için Windows Forms denetimleri ile DDX/DDV işlevlerini kullanmak gerekmez.  
+ `DDX_ManagedControl` çağrıları [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol) kaynak denetimi kimlikle eşleşen bir denetim oluşturmak için Kullanım `DDX_ManagedControl` kaynak kimlikleri denetimleri oluşturmak için [CDialog::OnInitDialog](cdialog-class.md#oninitdialog). Veri değişimi için Windows Forms denetimleri ile DDX/DDV işlevler kullanın gerekmez.  
   
- Daha fazla bilgi için bkz: [nasıl yapılır: yapmak DDX/DDV veri bağlaması Windows Forms ile](../../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).  
+ Daha fazla bilgi için [nasıl yapılır: yapmak DDX/DDV veri bağlaması Windows Forms ile](../../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).  
    
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwinforms.h  
@@ -273,7 +270,7 @@ void DDX_ManagedControl(
 
   
 ##  <a name="ddx_ipaddress"></a>  Ddx_ıpaddress  
- `DDX_IPAddress` İşlevi bir IP adresi denetimini ve denetim görünüm nesnesi veri üyesi arasında veri aktarımını yönetir.  
+ `DDX_IPAddress` İşlevi, bir IP adresi denetimini ve denetim view nesnesinin veri üyesi arasında veri aktarımını yönetir.  
   
 ```  
 void AFXAPI DDX_IPAddress(
@@ -283,34 +280,34 @@ void AFXAPI DDX_IPAddress(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Denetim özelliği ile ilişkili IP adresi denetim kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkili IP adresi denetimi kaynak kimliği.  
   
  *value*  
- Bir başvuru `DWORD` IP adresi denetim dört alanı değerini içeren. Alanları doldurulmuş veya gibi görünecek.  
+ IP adresi denetimi dört alan değerini içeren DWORD başvuru. Alan dolu veya şu şekilde okuyun.  
   
 |Alan|Alan değeri içeren BITS|  
 |-----------|-------------------------------------|  
-|3|0 ile 7 arasında|  
-|2|8-15|  
-|1.|23 aracılığıyla 16|  
-|0|24 ile 31 arasında|  
+|3|0 ile 7 arasındaki|  
+|2|8 ile 15|  
+|1.|16-23|  
+|0|24 ile 31|  
   
- Win32 kullanmak [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378) değer okuma veya kullanma [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380) değeri doldurmak için. Bu iletiler, Windows SDK'ın açıklanmıştır.  
+ Win32 kullanın [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378) değeri okunamıyor veya bunları kullanmanızı [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380) değeri doldurmak için. Bu iletiler, Windows SDK'yı açıklanmıştır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_IPAddress` olarak adlandırılır, *değeri* ya da IP adresi denetiminden okuma veya *değeri* exchange yöne bağlı olarak denetim yazılır.  
+ Zaman `DDX_IPAddress` çağrılır, *değer* ya da IP adresi denetiminden okuyun veya *değer* exchange birini yöne bağlı olarak denetlemek için yazılır.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_lbindex"></a>  Ddx_lbındex  
- `DDX_LBIndex` İşlevi aktarımını yönetir `int` iletişim kutusunda, liste kutusu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve bir `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_LBIndex` İşlevi aktarımını yöneten **int** verileri arasında bir iletişim kutusunda, liste kutusu denetimi form görünümü veya denetim görünüm nesnesi ve bir **int** iletişim kutusu, form görünümü veya denetim veri üyesi Görünüm nesnesi.  
   
 ```  
 void AFXAPI DDX_LBIndex(
@@ -320,25 +317,25 @@ void AFXAPI DDX_LBIndex(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Denetim özellik ile ilişkilendirilmiş liste kutusu denetimini kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkilendirilen liste kutusu denetimini kaynak kimliği.  
   
  *Dizin*  
- İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
+ İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_LBIndex` olarak adlandırılır, *dizin* geçerli liste kutusu seçimine dizinine ayarlanır. Öğe seçiliyse, *dizin* -1 olarak ayarlayın.  
+ Zaman `DDX_LBIndex` çağrıldığında *dizin* geçerli liste kutusu seçenekleri dizinine ayarlanır. Hiçbir öğe seçili değilse *dizin* -1 olarak ayarlanır.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_lbstring"></a>  DDX_LBString  
- `DDX_LBString` İşlevi aktarımını yönetir `CString` iletişim kutusunda, liste kutusu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_LBString` İşlevi aktarımını yöneten `CString` verileri arasında bir iletişim kutusunda, liste kutusu denetimi form görünümü veya denetim görünüm nesnesi ve bir `CString` iletişim kutusu, form görünümü veya denetim view nesnesinin veri üyesi.  
   
 ```  
 void AFXAPI DDX_LBString(
@@ -348,30 +345,30 @@ void AFXAPI DDX_LBString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Denetim özellik ile ilişkilendirilmiş liste kutusu denetimini kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkilendirilen liste kutusu denetimini kaynak kimliği.  
   
  *value*  
- İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
+ İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_LBString` liste kutusu denetimi, listedeki ilk öğe olan başına eşleşen denetim veri aktarmak için adlı *değeri* seçilir. (Yalnızca bir önek yerine öğenin tamamı eşleşecek şekilde kullanmak [DDX_LBStringExact](#ddx_lbstringexact).) Herhangi bir eşleşme varsa, hiç öğe seçilmedi. Eşleştirme büyük küçük harfe duyarlıdır.  
+ Zaman `DDX_LBString` liste kutusu denetimi, ilk öğesi denetiminde olan başlangıcıyla eşleşir veri aktarmak için çağrılan *değer* seçilir. (Öğenin tamamı yerine yalnızca bir ön eki eşleşmesi için kullanın [DDX_LBStringExact](#ddx_lbstringexact).) Herhangi bir eşleşme varsa, hiçbir öğe seçili. Eşleştirme büyük küçük harfe duyarlıdır.  
   
- Zaman `DDX_LBString` bir liste kutusu denetimi veri aktarmak için adlı *değeri* geçerli liste kutusu seçimi ayarlayın. Öğe seçiliyse, *değeri* sıfır uzunlukta bir dize olarak ayarlayın.  
+ Zaman `DDX_LBString` bir liste kutusu denetimi ile veri aktarmayı adlı *değer* geçerli liste kutusu seçenekleri ayarlayın. Hiçbir öğe seçili değilse *değer* sıfır uzunluklu bir dizeye ayarlayın.  
   
 > [!NOTE]
->  Liste kutusunda aşağı açılan liste kutusu ise, değiştirilen 255 karakterle sınırlı değerdir.  
+>  Aşağı açılan liste kutusu liste kutusunun ise değiştirilen değer 255 karakterle sınırlıdır.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_lbstringexact"></a>  DDX_LBStringExact  
- `DDX_CBStringExact` İşlevi aktarımını yönetir `CString` iletişim kutusunda, bir liste kutusu denetiminin düzenleme denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `CString` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_CBStringExact` İşlevi aktarımını yöneten `CString` verileri arasında bir iletişim kutusunda, bir liste kutusu denetimini düzenleme denetimi form görünümü veya denetim görünüm nesnesi ve bir `CString` iletişim kutusu, form görünümü veya denetim view nesnesinin veri üyesi.  
   
 ```  
 void AFXAPI DDX_LBStringExact(
@@ -381,30 +378,30 @@ void AFXAPI DDX_LBStringExact(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Denetim özellik ile ilişkilendirilmiş liste kutusu denetimini kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkilendirilen liste kutusu denetimini kaynak kimliği.  
   
  *value*  
- İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
+ İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_LBStringExact` liste kutusu denetimi, listedeki ilk öğe ile eşleşen denetim veri aktarmak için adlı *değeri* seçilir. (Öğenin tamamı yerine yalnızca bir önek eşleşecek şekilde kullanmak [DDX_LBString](#ddx_lbstring).) Herhangi bir eşleşme varsa, hiç öğe seçilmedi. Eşleştirme büyük küçük harfe duyarlıdır.  
+ Zaman `DDX_LBStringExact` liste kutusu denetimi, denetimin eşleşen listedeki ilk öğe için veri aktarımı için çağrılan *değer* seçilir. (Öğenin tamamı yerine yalnızca bir ön eki eşleşmesi için kullanın [DDX_LBString](#ddx_lbstring).) Herhangi bir eşleşme varsa, hiçbir öğe seçili. Eşleştirme büyük küçük harfe duyarlıdır.  
   
- Zaman `DDX_CBStringExact` bir liste kutusu denetimi veri aktarmak için adlı *değeri* geçerli liste kutusu seçimi ayarlayın. Öğe seçiliyse, *değeri* sıfır uzunlukta bir dize olarak ayarlayın.  
+ Zaman `DDX_CBStringExact` bir liste kutusu denetimi ile veri aktarmayı adlı *değer* geçerli liste kutusu seçenekleri ayarlayın. Hiçbir öğe seçili değilse *değer* sıfır uzunluklu bir dizeye ayarlayın.  
   
 > [!NOTE]
->  Liste kutusunda aşağı açılan liste kutusu ise, değiştirilen 255 karakterle sınırlı değerdir.  
+>  Aşağı açılan liste kutusu liste kutusunun ise değiştirilen değer 255 karakterle sınırlıdır.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_monthcalctrl"></a>  DDX_MonthCalCtrl  
- `DDX_MonthCalCtrl` İşlevi bir aylık takvim denetiminin arasında tarih veri aktarımını yönetir ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) bir iletişim kutusu, form görünümünde veya denetim görünüm nesnesi ve ya da bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_MonthCalCtrl` İşlevi bir ay takvimi arasında tarih veri aktarımını yönetir ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) bir iletişim kutusu, form görünümü veya denetim görünüm nesnesi ve ya da bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) iletişim kutusu, form görünümü veya denetim view nesnesinin veri üyesi.  
   
 ```  
 void AFXAPI DDX_MonthCalCtrl(
@@ -419,29 +416,29 @@ void AFXAPI DDX_MonthCalCtrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar. Bu nesneyi silmek gerek yoktur.  
+ *pDX*  
+ Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar. Bu nesne silmeniz gerekmez.  
   
- `nIDC`  
- Aylık takvim denetiminin kaynak Kimliğini üye değişkeni ile ilişkilendirilmiş.  
+ *nIDC*  
+ Aylık takvim denetiminin kaynak Kimliğini üye değişkeni ile ilişkili.  
   
  *value*  
- Bir başvuru bir `CTime` veya `COleDateTime` üye değişkeni iletişim kutusu, form görünümü veya ile veri değişimi denetim görünüm nesnesi.  
+ Bir başvuru bir `CTime` veya `COleDateTime` üye değişkeni iletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  Denetim bir tarih değeri yalnızca yönetir. Zaman zaman nesnesindeki denetimi penceresi oluşturulma zamanını yansıtacak şekilde ayarlama veya her zaman çağrısıyla denetiminde ayarlandı alanlardır `CMonthCalCtrl::SetCurSel`.  
+>  Denetim, yalnızca bir tarih değeri yönetir. Zaman zaman nesnesindeki oluşturulma zamanı denetimi pencerenin yansıtacak şekilde kümesi veya her zaman çağrısıyla denetimde ayarlanmış alanlar `CMonthCalCtrl::SetCurSel`.  
   
- Zaman `DDX_MonthCalCtrl` olarak adlandırılır, *değeri* aylık takvim denetiminin geçerli durumuna ayarlanır.  
+ Zaman `DDX_MonthCalCtrl` çağrıldığında *değer* aylık takvim denetiminin geçerli durumuna ayarlanır.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_radio"></a>  DDX_Radio  
- `DDX_Radio` İşlevi aktarımını yönetir `int` iletişim kutusundaki radyo denetim grubu arasında veri form görünümü ya da Denetim Görünüm nesnesi ve `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi. Değeri `int` veri üyesi olduğunu belirledi göre hangi radyo düğmesi grubundaki seçilir.  
+ `DDX_Radio` İşlevi aktarımını yöneten **int** arasında bir iletişim kutusu, radyo denetimi grubunda veri form görünümü veya denetim görünüm nesnesi ve bir **int** iletişim kutusu, form görünümü veya denetim veri üyesi Görünüm nesnesi. Değerini **int** veri üyesi göre hangi radyo düğmesi grubundaki seçili belirlenir.  
   
 ```  
 void AFXAPI DDX_Radio(
@@ -451,27 +448,27 @@ void AFXAPI DDX_Radio(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  Gruptaki ilk radyo denetimi kaynak kimliği.  
   
  *value*  
- İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
+ İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_Radio` olarak adlandırılır, *değeri* radyo denetim grubu geçerli durumuna ayarlanır. Değer bir 0 tabanlı bir dizin şu anda kullanıma radyo denetimi ayarlanır veya hiçbir radyo denetimleri, -1 denetlenir.  
+ Zaman `DDX_Radio` çağrıldığında *değer* radyo denetimi grubunun geçerli duruma ayarlayın. Değer bir 0 tabanlı bir dizin şu anda kullanıma radyo denetimi ayarlanır veya radyo denetim yok, -1 denetlenir.  
   
- Örneğin, ilk radyo düğmesi grubunda durumda değerini (WS_GROUP stiliyle düğmesi) kullanıma `int` üyesidir 0 ve benzeri.  
+ Örneğin, ilk radyo düğmesi grubunda durumda (WS_GROUP stili düğme) değerini işaretli **int** üyesi olan 0 ve benzeri.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_scroll"></a>  DDX_Scroll  
- `DDX_Scroll` İşlevi aktarımını yönetir `int` bir iletişim kutusunda kaydırma çubuğu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve bir `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_Scroll` İşlevi aktarımını yöneten **int** verileri arasında bir iletişim kutusunda bir kaydırma çubuğu denetimi form görünümü veya denetim görünüm nesnesi ve bir **int** iletişim kutusu, form görünümü veya denetim veri üyesi Görünüm nesnesi.  
   
 ```  
 void AFXAPI DDX_Scroll(
@@ -481,25 +478,25 @@ void AFXAPI DDX_Scroll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir `CDataExchange` nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Denetim özellik ile ilişkilendirilmiş kaydırma çubuğu denetimi kaynak kimliği.  
+ *nIDC*  
+ Denetim özelliği ile ilişkili kaydırma çubuğu denetimi kaynak kimliği.  
   
  *value*  
- İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
+ İletişim kutusu, form görünümü veya denetim üye değişkeni başvuru ile veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_Scroll` olarak adlandırılır, *değeri* denetimin kaydırma geçerli konumunu ayarlayın. Denetimin kaydırma geçerli konumu ile ilişkili değerler hakkında daha fazla bilgi için bkz: [GetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787585) Windows SDK'sındaki.  
+ Zaman `DDX_Scroll` çağrıldığında *değer* thumb denetiminin geçerli konumu için ayarlanır. Thumb denetiminin geçerli konumu ile ilişkili değerler hakkında daha fazla bilgi için bkz. [GetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787585) Windows SDK.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_slider"></a>  DDX_Slider  
- `DDX_Slider` İşlevi aktarımını yönetir `int` kaydırıcı denetimi iletişim kutusunu veya form görünümünde arasında veri ve bir `int` iletişim kutusu veya form görünümü nesnesi veri üyesi.  
+ `DDX_Slider` İşlevi aktarımını yöneten **int** verileri arasında bir iletişim kutusu veya form görünümünde bir kaydırıcı denetimi ve bir **int** iletişim kutusu veya form view nesnesinin veri üyesi.  
   
 ```  
 void AFXAPI DDX_Slider(
@@ -509,25 +506,25 @@ void AFXAPI DDX_Slider(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
+ *nIDC*  
  Kaydırıcı denetimi kaynak kimliği.  
   
  *value*  
- Değiştirilebilmesi için değeri referansı. Bu parametre tutan veya kaydırıcı denetimin geçerli konumunu ayarlar.  
+ Değiştirilecek değerine bir başvuru. Bu parametre, tutan veya kaydırıcı denetiminin geçerli konumu ayarlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_Slider` olarak adlandırılır, *değeri* denetimin kaydırma kutusu, geçerli konuma ayarlayın veya exchange yöne bağlı olarak konum değeri alır.  
+ Zaman `DDX_Slider` çağrıldığında *değer* denetimin thumb geçerli konuma ayarlanır veya exchange birini yöne bağlı olarak konumu ' değerini alır.  
   
- DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Kaydırıcı denetimleri hakkında daha fazla bilgi için bkz: [kullanarak CSliderCtrl](../../mfc/using-csliderctrl.md).  
+ DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Kaydırıcı denetimleri hakkında daha fazla bilgi için bkz. [CSliderCtrl kullanma](../../mfc/using-csliderctrl.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
   
 ##  <a name="ddx_text"></a>  DDX_Text  
- `DDX_Text` İşlevi aktarımını yönetir `int`, **UINT**, **uzun**, `DWORD`, `CString`, **float**, veya  **çift** arasında bir iletişim kutusu, Düzen denetiminde veri form görünümü ya da Denetim görünümü ve bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
+ `DDX_Text` İşlevi aktarımını yöneten **int**, **UINT**, **uzun**, DWORD, `CString`, **float**, veya **çift** verileri arasında bir iletişim kutusunda, bir düzenleme denetimi form görünümü veya denetim görünümü ve bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) iletişim kutusu, form görünümü veya denetim view nesnesinin veri üyesi.  
   
 ```  
 void AFXAPI DDX_Text(
@@ -587,20 +584,20 @@ void AFXAPI DDX_Text(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDX`  
- Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
+ *pDX*  
+ Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.  
   
- `nIDC`  
- Bir düzen denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
+ *nIDC*  
+ Bir düzenleme denetimi iletişim kutusu, form görünümü veya denetim view nesnesinin kimliği.  
   
  *value*  
- İletişim kutusunda, form görünümü veya denetim görünüm nesnesi veri üyesine bir başvuru. Veri türü *değeri* bağımlı olduğu aşırı yüklenmiş sürümlerinin `DDX_Text` kullanın.  
+ İletişim kutusu, form görünümü veya denetim view nesnesinin veri üyesine başvuru. Veri türü *değer* bağımlı olduğu aşırı yüklenmiş sürümlerinin `DDX_Text` kullanırsınız.  
   
 ### <a name="remarks"></a>Açıklamalar  
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
 
 ### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdd_.h  
+  **Üst bilgi** afxdd_.h  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Standart iletişim kutusu veri doğrulama rutinleri](../../mfc/reference/standard-dialog-data-validation-routines.md)   

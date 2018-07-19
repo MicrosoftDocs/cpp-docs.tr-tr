@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsingImpl sınıfı | Microsoft Docs
+title: Iperpropertybrowsingımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -23,18 +23,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d9fffd6151405eaf53e99f770281139d7664b01
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e5c202ed5e4c7e58ab8c503cece3750f2dd606e3
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364914"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37883111"
 ---
-# <a name="iperpropertybrowsingimpl-class"></a>IPerPropertyBrowsingImpl sınıfı
-Bu sınıf uygulayan **IUnknown** ve bir istemcinin bir nesnenin özellik sayfaları bilgilerinde erişmesine olanak tanır.  
+# <a name="iperpropertybrowsingimpl-class"></a>Iperpropertybrowsingımpl sınıfı
+Bu sınıfın uyguladığı `IUnknown` ve bir istemci bir nesnenin özellik sayfalarındaki bilgilere erişmesine izin verir.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,7 +46,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IPerPropertyBrowsingImpl`.  
   
 ## <a name="members"></a>Üyeler  
@@ -55,18 +55,18 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IPerPropertyBrowsingImpl::GetDisplayString](#getdisplaystring)|Belirli bir özelliğe tanımlayan bir dize alır.|  
-|[IPerPropertyBrowsingImpl::GetPredefinedStrings](#getpredefinedstrings)|Bir özelliğe kabul edebileceği değerlere karşılık gelen bir dizeler dizisi alır.|  
-|[IPerPropertyBrowsingImpl::GetPredefinedValue](#getpredefinedvalue)|Alır bir **değişken** verilen DISPID tarafından tanımlanan bir özellik değerini içeren. Kaynağından alınan dize adı ile DISPID ilişkilendirilen `GetPredefinedStrings`. ATL uygulamasını döndürür **E_NOTIMPL**.|  
-|[IPerPropertyBrowsingImpl::MapPropertyToPage](#mappropertytopage)|Belirli bir özellik ile ilişkilendirilmiş özellik sayfası CLSID alır.|  
+|[IPerPropertyBrowsingImpl::GetDisplayString](#getdisplaystring)|Belirli bir özelliğe açıklayan bir dize alır.|  
+|[IPerPropertyBrowsingImpl::GetPredefinedStrings](#getpredefinedstrings)|Belirli bir özelliğe kabul edebilen değerlere karşılık gelen bir dize dizisi alır.|  
+|[IPerPropertyBrowsingImpl::GetPredefinedValue](#getpredefinedvalue)|Belirli bir DISPID tarafından tanımlanan bir özellik değerini içeren bir değişken alır. DISPID hizmetinden alınan dize adı ilişkilendirilmiş olan `GetPredefinedStrings`. ATL uygulamasını E_NOTIMPL döndürür.|  
+|[IPerPropertyBrowsingImpl::MapPropertyToPage](#mappropertytopage)|Verilen bir özellik ile ilişkili özellik sayfası CLSID değeri alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IPerPropertyBrowsing](http://msdn.microsoft.com/library/windows/desktop/ms678432) arabirimi nesnenin özellik sayfaları bilgilerinde erişmek için bir istemci izin verir. Sınıf `IPerPropertyBrowsingImpl` bu arabirimin varsayılan uygulamasını sağlar ve uygulayan **IUnknown** aygıt hata ayıklama dökümü bilgileri göndererek oluşturur.  
+ [IPerPropertyBrowsing](http://msdn.microsoft.com/library/windows/desktop/ms678432) bir istemci, bir nesnenin özellik sayfalarındaki bilgilere erişmek arabirim sağlar. Sınıf `IPerPropertyBrowsingImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
 > [!NOTE]
->  Microsoft Access kapsayıcı uygulaması olarak kullanıyorsanız, sınıfından türetilmelidir `IPerPropertyBrowsingImpl`. Aksi takdirde, erişim denetim yüklemez.  
+>  Kapsayıcı uygulaması Microsoft Access kullanıyorsanız, sizin sınıfınızdan türetilmelidir `IPerPropertyBrowsingImpl`. Aksi takdirde, erişim denetim yüklemez.  
   
- **İlgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [bir ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
+ **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IPerPropertyBrowsing`  
@@ -77,7 +77,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
  **Başlık:** atlctl.h  
   
 ##  <a name="getdisplaystring"></a>  IPerPropertyBrowsingImpl::GetDisplayString  
- Belirli bir özelliğe tanımlayan bir dize alır.  
+ Belirli bir özelliğe açıklayan bir dize alır.  
   
 ```
 STDMETHOD(GetDisplayString)(
@@ -86,10 +86,10 @@ STDMETHOD(GetDisplayString)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPerPropertyBrowsing::GetDisplayString](http://msdn.microsoft.com/library/windows/desktop/ms688734) Windows SDK.  
+ Bkz: [IPerPropertyBrowsing::GetDisplayString](http://msdn.microsoft.com/library/windows/desktop/ms688734) Windows SDK içinde.  
   
 ##  <a name="getpredefinedstrings"></a>  IPerPropertyBrowsingImpl::GetPredefinedStrings  
- Her dizi sıfır öğe ile doldurur.  
+ Her dizi öğeleri sıfır ile doldurur.  
   
 ```
 STDMETHOD(GetPredefinedStrings)(
@@ -99,13 +99,13 @@ STDMETHOD(GetPredefinedStrings)(
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- ATL'ın uyarlamasını [GetPredefinedValue](#getpredefinedvalue) döndürür **E_NOTIMPL**.  
+ ATL uygulamasını [GetPredefinedValue](#getpredefinedvalue) E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPerPropertyBrowsing::GetPredefinedStrings öğesini](http://msdn.microsoft.com/library/windows/desktop/ms679724) Windows SDK.  
+ Bkz: [IPerPropertyBrowsing::GetPredefinedStrings öğesini](http://msdn.microsoft.com/library/windows/desktop/ms679724) Windows SDK içinde.  
   
 ##  <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue  
- Alır bir **değişken** verilen DISPID tarafından tanımlanan bir özellik değerini içeren. Kaynağından alınan dize adı ile DISPID ilişkilendirilen `GetPredefinedStrings`.  
+ Belirli bir DISPID tarafından tanımlanan bir özellik değerini içeren bir değişken alır. DISPID hizmetinden alınan dize adı ilişkilendirilmiş olan `GetPredefinedStrings`.  
   
 ```
 STDMETHOD(GetPredefinedValue)(
@@ -115,15 +115,15 @@ STDMETHOD(GetPredefinedValue)(
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **E_NOTIMPL**.  
+ E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL'ın uyarlamasını [GetPredefinedStrings](#getpredefinedstrings) karşılık gelen hiçbir dizeleri alır.  
+ ATL uygulamasını [GetPredefinedStrings](#getpredefinedstrings) karşılık gelen koşulsuz alır.  
   
- Bkz: [IPerPropertyBrowsing::GetPredefinedValue](http://msdn.microsoft.com/library/windows/desktop/ms690401) Windows SDK.  
+ Bkz: [IPerPropertyBrowsing::GetPredefinedValue](http://msdn.microsoft.com/library/windows/desktop/ms690401) Windows SDK içinde.  
   
 ##  <a name="mappropertytopage"></a>  IPerPropertyBrowsingImpl::MapPropertyToPage  
- Belirtilen özellik ile ilişkilendirilmiş özellik sayfası CLSID alır.  
+ Belirtilen özellik ile ilişkili özellik sayfası CLSID değeri alır.  
   
 ```
 STDMETHOD(MapPropertyToPage)(
@@ -132,11 +132,11 @@ STDMETHOD(MapPropertyToPage)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL nesnenin özellik eşlemesi bu bilgileri almak için kullanır.  
+ ATL, bu bilgileri almak için nesnenin özellik eşlemesi kullanır.  
   
- Bkz: [IPerPropertyBrowsing::MapPropertyToPage](http://msdn.microsoft.com/library/windows/desktop/ms694476) Windows SDK.  
+ Bkz: [IPerPropertyBrowsing::MapPropertyToPage](http://msdn.microsoft.com/library/windows/desktop/ms694476) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IPropertyPageImpl sınıfı](../../atl/reference/ipropertypageimpl-class.md)   
- [ISpecifyPropertyPagesImpl sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Ipropertypageımpl sınıfı](../../atl/reference/ipropertypageimpl-class.md)   
+ [Ispecifypropertypagesımpl sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

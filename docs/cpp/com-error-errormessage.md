@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c16b8bb6859cd65b534d804764257b901050995b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2bff5e8f84b316f028daf503c3013667c82aaa4e
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411243"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940572"
 ---
 # <a name="comerrorerrormessage"></a>_com_error::ErrorMessage
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İçin dize iletiyi alır `HRESULT` depolanan `_com_error` nesnesi.  
+ HRESULT içinde depolanan için dize iletiyi alır `_com_error` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,12 +37,12 @@ const TCHAR * ErrorMessage( ) const throw( );
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Dize ileti için döndürür `HRESULT` içinde kayıtlı `_com_error` nesnesi. Varsa `HRESULT` eşlenen bir 16 bit [wCode](../cpp/com-error-wcode.md), sonra genel bir ileti "`IDispatch error #<wCode>`" döndürülür. Hiçbir ileti bulunursa, sonra genel bir ileti "`Unknown error #<hresult>`" döndürülür. Döndürülen dize Unicode veya durumuna bağlı olarak birden çok baytlı dize olan **_UNICODE** makrosu.  
+ HRESULT içinde kaydedilen için dize iletisi döndürür `_com_error` nesne. HRESULT eşlenmiş bir 16-bit ise [wCode](../cpp/com-error-wcode.md), ardından genel bir ileti "`IDispatch error #<wCode>`" döndürülür. İleti bulunursa, ardından genel bir ileti "`Unknown error #<hresult>`" döndürülür. Döndürülen dize bir Unicode ya da _UNICODE makrosu durumuna bağlı olarak, çok baytlı bir dize değil.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İçin uygun sistem ileti metnini alır `HRESULT` içinde kayıtlı `_com_error` nesnesi. Sistem ileti metni Win32 çağırılarak alınır [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) işlevi. Tarafından döndürülen dize ayrılmış `FormatMessage` API ve bunu serbest bırakıldığında `_com_error` nesne yok.  
+ HRESULT içinde kaydedilen için uygun sistem ileti metni alır `_com_error` nesne. Sistem ileti metni Win32 çağırılarak alınır [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) işlevi. Tarafından döndürülen dize ayrılan `FormatMessage` API ve serbest bırakıldığında `_com_error` nesnesi yok edildiğinde.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_error Sınıfı](../cpp/com-error-class.md)

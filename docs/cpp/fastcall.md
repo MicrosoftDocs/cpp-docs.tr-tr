@@ -16,31 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03f286f21f213f5b2a193ccb824ba22b7c7c1f00
-ms.sourcegitcommit: 39585672df8874fb5df4e70de97cd7f328fe9880
+ms.openlocfilehash: f50239d42c164e2f9c6876e26389eb60e710ed34
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2018
-ms.locfileid: "34153125"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940101"
 ---
 # <a name="fastcall"></a>__fastcall
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- `__fastcall` Çağırma bağımsız değişkenlerinin işlevlere Yazmaçları, mümkün olduğunda geçirilecek olduğunu belirtir. Bu çağırma yalnızca x86 geçerlidir mimarisi. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.  
+ **__Fastcall** çağırma kuralı işlevlere bağımsız değişkenler, mümkün olduğunda kayıtlara geçirilebilir olduğunu belirtir. Bu çağırma kuralı yalnızca x86 için geçerlidir mimarisi. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.  
   
 |Öğe|Uygulama|  
 |-------------|--------------------|  
-|Bağımsız değişken geçirme sırası|İlk iki DWORD veya bağımsız değişken listesinde soldan sağa bulunan küçük bağımsız değişkenleri ECX ve EDX yazmaçlar geçirilir; diğer tüm bağımsız değişkenler sağdan sola yığında geçirilir.|  
-|Yığın bakımı sorumluluğu|İşlev POP yığından bağımsız değişkenleri olarak bilinir.|  
-|Ad düzenleme kuralı|At işareti (\@) adlarını; önekli bir at işareti parametresinde (ondalık) bayt sayısı ve ardından listesi adlarına sonekine.|  
+|Bağımsız değişken geçirme sırası|İlk iki DWORD veya bağımsız değişken listesinde soldan sağa bulunan daha küçük bağımsız değişken ECX ve EDX kayıtlara geçirilir; Tüm diğer bağımsız değişkenler yığında sağdan sola geçirilir.|  
+|Yığın bakımı sorumluluğu|Çağırılan işlev, yığından bağımsız değişkenleri yığından.|  
+|Ad düzenleme kuralı|At işareti (\@); adların bir at işareti parametresinde (ondalık) bayt sayısı ardından liste adların.|  
 |Durum çevirisi kuralları|Durum çevirisi yapılmaz.|  
   
 > [!NOTE]
->  Gelecekteki derleyici sürümler farklı kasada parametreleri depolamak için kullanabilirsiniz.  
+>  Gelecekteki derleyici sürümleri, parametreleri depolamak için farklı yazmaçlar kullanabilir.  
   
- Kullanarak [/Gr](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği olarak derlemek için modüldeki her işlevi neden `__fastcall` işlevi çakışan özniteliğini kullanarak bildirilmiş veya işlevin adını kaldırılana kadar `main`.  
+ Kullanarak [GR](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği olarak derlemek için modüldeki her işlevin neden **__fastcall** çakışan bir öznitelik kullanarak bildirilen işlev veya işlevin adı sürece `main` .  
   
- `__fastcall` Anahtar sözcüğünü kabul edilir ve hedef ARM ve x64 derleyicileri tarafından göz ardı mimarileri; x x64 yongası, kurala göre ilk dört bağımsız değişkenler yazmaçlar mümkün olduğunda geçirilir ve ek bağımsız değişkenler, yığında geçirilir. Daha fazla bilgi için bkz: [x64 genel bakış çağırma kuralları](../build/overview-of-x64-calling-conventions.md). ARM yonga üzerinde dört tamsayı kadar bağımsız değişkenleri ve sekiz kayan nokta değişkenleri Yazmaçları geçirilebilir ve ek bağımsız değişkenler yığında geçirilir.  
+ **__Fastcall** anahtar sözcüğünü kabul edilir ve ARM ve x64 hedefleyen derleyicileri tarafından göz ardı mimarileri; x x64 yonga, kural olarak, ilk dört bağımsız değişkenler mümkün olduğunda kayıtlara geçirilir ve ek bağımsız değişkenler geçirilir Yığında. Daha fazla bilgi için [x64 bakış çağırma kuralları](../build/overview-of-x64-calling-conventions.md). ARM bir yonga üzerinde en çok dört tamsayı bağımsız değişken ve sekiz kayan nokta değişkeni kayıtlara geçirilebilir ve ek bağımsız değişkenler yığına geçirilir.  
   
  Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımını ele alalım:  
   
@@ -63,7 +63,7 @@ void __fastcall CMyClass::mymethod() { return; }
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, işlev `DeleteAggrWrapper` bağımsız değişkenleri Yazmaçları geçirilir:  
+ Aşağıdaki örnekte, işlev `DeleteAggrWrapper` kayıtlara geçirilen bağımsız değişkenler:  
   
 ```cpp  
 // Example of the __fastcall keyword  
@@ -74,7 +74,7 @@ void FASTCALL DeleteAggrWrapper(void* pWrapper);
 typedef BOOL (__fastcall *funcname_ptr)(void * arg1, const char * arg2, DWORD flags, ...);  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)   

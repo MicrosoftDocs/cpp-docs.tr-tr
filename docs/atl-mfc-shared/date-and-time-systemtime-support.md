@@ -1,5 +1,5 @@
 ---
-title: 'Tarih ve saat: SYSTEMTIME destek | Microsoft Docs'
+title: 'Tarih ve saat: SYSTEMTIME desteği | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,19 +21,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ecbfd517a0fd535a23920ae21d03f1756babc113
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cf48881b3baeb7dc5ab48483ae9b075a9c048a38
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355406"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37883573"
 ---
 # <a name="date-and-time-systemtime-support"></a>Tarih ve saat: SYSTEMTIME desteği
-[CTime](../atl-mfc-shared/reference/ctime-class.md) sınıfı Win32 sistem ve dosya sürelerinden kabul oluşturucular sahiptir. Kullanırsanız `CTime` nesneleri bu amaçlar için kendi başlatma bu makalede anlatıldığı gibi uygun şekilde değiştirmeniz gerekir.  
+[CTime](../atl-mfc-shared/reference/ctime-class.md) sınıfı Win32 sistem ve dosya sürelerinden kabul oluşturucular sahiptir. Kullanırsanız `CTime` nesneler bu amaçlar için başlatma bu makalede açıklandığı gibi uygun şekilde değiştirmeniz gerekir.  
   
  SYSTEMTIME yapısı hakkında daha fazla bilgi için bkz: [SYSTEMTIME](../mfc/reference/systemtime-structure1.md). FILETIME yapısı hakkında daha fazla bilgi için bkz: [FILETIME](../mfc/reference/filetime-structure.md).  
   
- MFC hala sağlar `CTime` zamanı bağımsız değişkenlerini MS-DOS stilde, ancak MFC sürüm 3.0, başlangıç ele oluşturucular `CTime` sınıfı ayrıca bir Win32 alan bir oluşturucu destekler `SYSTEMTIME` yapısı ve başka bir Win32 alan `FILETIME` yapısı.  
+ MFC hala sağlar `CTime` MS-DOS stilde zamanı bağımsız değişkenleri, ancak sürüm 3.0 MFC'de başlangıç alan oluşturucular `CTime` sınıfı ayrıca bir Win32 alan bir oluşturucu destekler `SYSTEMTIME` yapısı ve başka bir Win32 alan `FILETIME` yapısı.  
   
  Yeni `CTime` oluşturucular şunlardır:  
   
@@ -41,19 +41,19 @@ ms.locfileid: "32355406"
   
 -   CTime (const FILETIME & `fileTime`);  
   
- `fileTime` Parametredir Win32 başvuru `FILETIME` yapısı, zaman iç depolama için daha uygun bir biçim 64-bitlik bir değer olarak temsil eden bir `SYSTEMTIME` yapısını ve dosya zamanı temsil etmesi için Win32 tarafından kullanılan biçimi oluşturma.  
+ *Fıletıme* parametresi, bir Win32 başvuru `FILETIME` yapısı, iç depolama alanı için daha uygun bir biçim 64-bit bir değer olarak saati temsil eden bir `SYSTEMTIME` yapısı ve Win32'tarafından kullanılan biçimi dosyanın oluşturulma zamanı temsil eder.  
   
- Kodunuzu içeriyorsa bir `CTime` sistem saatiyle başlatılmamış nesne kullanması gereken `SYSTEMTIME` Win32 Oluşturucu.  
+ Kodunuzu içeriyorsa bir `CTime` sistem saatiyle başlatılan nesne kullanmalısınız `SYSTEMTIME` Win32'de Oluşturucusu.  
   
- Büyük olasılıkla kullanmaz `CTime` `FILETIME` doğrudan başlatma. Kullanırsanız, bir `CFile` bir dosyayı değiştirmek için nesne [CFile::GetStatus](../mfc/reference/cfile-class.md#getstatus) , dosyası zaman damgasına alır bir `CTime` nesne başlatılmış olan bir `FILETIME` yapısı.  
+ Büyük olasılıkla kullanmaz `CTime` `FILETIME` doğrudan başlatma. Kullanıyorsanız bir `CFile` bir dosya işlemek için nesne [CFile::GetStatus](../mfc/reference/cfile-class.md#getstatus) , dosya zaman damgası alır bir `CTime` nesne başlatıldı ile bir `FILETIME` yapısı.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Genel tarih ve saat programlama MFC içinde](../atl-mfc-shared/date-and-time.md)  
+-   [Genel tarih ve saat programlama MFC](../atl-mfc-shared/date-and-time.md)  
   
 -   [Tarih ve saat programlama Otomasyon desteği](../atl-mfc-shared/date-and-time-automation-support.md)  
   
--   [Tarih ve saat programlama için genel amaçlı sınıfları](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
+-   [Tarih ve saat programlama için genel amaçlı sınıflar](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)

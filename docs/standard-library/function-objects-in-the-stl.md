@@ -1,5 +1,5 @@
 ---
-title: İşlev nesneleri C++ Standart Kitaplığı'nda | Microsoft Docs
+title: İşlev nesneleri C++ Standart kitaplığında | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,22 +17,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa2694e9f5bb477447d08ab976cac60634ef3b60
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 09123f4b8d0200d133ae04244d38b615640f7d30
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845459"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964934"
 ---
-# <a name="function-objects-in-the-c-standard-library"></a>C++ Standart Kitaplığı'nda işlev nesneleri
+# <a name="function-objects-in-the-c-standard-library"></a>C++ Standart kitaplığındaki işlev nesneleri
 
-A *işlev nesnesi*, veya *functor*, operator() uygulayan herhangi bir tür. Bu işleç olarak adlandırılır *çağırma işleci* veya bazen *uygulama işleci*. C++ Standart Kitaplığı, öncelikle sıralama ölçütü kapsayıcıları ve algoritmaları olarak işlev nesneleri kullanır.
+A *işlev nesnesi*, veya *functor*, operator() uygulayan herhangi bir tür. Bu işleç olarak adlandırılır *çağrısı işleci* veya bazen *uygulama işleci*. C++ Standart Kitaplığı, öncelikli olarak sıralama ölçütü kapsayıcılar ve algoritmaları olarak işlev nesneleri kullanır.
 
-İşlev nesneleri bir düz işlev çağrısı iki ana avantaj sağlar. İlk işlev nesnesi durumu içerebilir ' dir. , Bir işlev nesnesi bir türü ve bu nedenle bir şablon parametresi kullanılabilir saniyedir.
+İşlev nesneleri, düz bir işleve iki ana avantajları sağlar. İlk işlev nesnesi durumu içerebilmesidir. İkinci bir işlev nesnesi bir tür ve bu nedenle bir şablon parametresi kullanılabilir olduğunu.
 
-## <a name="creating-a-function-object"></a>İşlev nesnesi oluşturma
+## <a name="creating-a-function-object"></a>Bir işlev nesnesi oluşturma
 
-İşlev nesnesi oluşturmak için bir tür oluşturun ve operator(), aşağıdaki gibi uygulayın:
+Bir işlev nesnesi oluşturmak için bir tür oluşturmak ve operator(), aşağıdaki gibi uygulayın:
 
 ```cpp
 class Functor
@@ -45,11 +45,11 @@ public:
 };
 ```
 
-Son satırının `main` işlevi gösterir nasıl işlev nesnesi çağırın. Bu çağrı bir işlevi çağrısı gibi görünüyor, ancak gerçekte operator() Functor türü çağırma. İşlev nesnesi ve bir işlev çağırma arasındaki bu benzerlik terim işlev nesnesi nasıl ortaya çıktığını ' dir.
+Son satırının `main` işlevi, işlev nesnesi çağırmanızı nasıl gösterir. Bu çağrı bir işleve bir çağrı şuna benzer, ancak gerçekte Functor türü operator() çağırma. Bir işlev nesnesi ve bir işlev çağırma arasında bu benzerlik terimi işlev nesnesi nasıl çıktığını ' dir.
 
 ## <a name="function-objects-and-containers"></a>İşlev nesneleri ve kapsayıcıları
 
-C++ Standart Kitaplığı birkaç işlevi nesneleri içeren [ \<işlevsel >](../standard-library/functional.md) üstbilgi dosyası. Bir bu işlev nesneleri kapsayıcıları için bir sıralama ölçütü olarak kullanılır. Örneğin, `set` kapsayıcı gibi bildirilen:
+C++ Standart Kitaplığı içinde birden fazla işlev nesneleri içeren [ \<işlevsel >](../standard-library/functional.md) üst bilgi dosyası. Bir işlev nesneleri Bu kapsayıcılar için bir sıralama ölçütü olarak kullanılır. Örneğin, `set` kapsayıcısı gibi bildirilir:
 
 ```cpp
 template <class Key,
@@ -58,11 +58,11 @@ template <class Key,
 class set
 ```
 
-İkinci şablon bağımsız değişken işlev nesnesidir `less`. Bu işlev nesnesi döndüren `true` geçirilen ilk parametre, daha az ise ikinci parametre geçirildi. Bazı kapsayıcıları öğeleri sıralama olduğundan, kapsayıcı iki öğe karşılaştırılması bir yola ihtiyaç duyar ve bu işlev nesnesi kullanılarak gerçekleştirilir. Kendi işlev nesnesi oluşturma ve kapsayıcı için şablon listesinde belirterek sıralama ölçütü kapsayıcıları için tanımlayabilirsiniz.
+İkinci şablon bağımsız değişkeni işlev nesnesidir `less`. Bu işlev nesnesi döndürür **true** ilk parametre geçirilmiş küçük olup ikinci parametresi geçirildi. Bazı kapsayıcıları öğeleri sıralama olduğundan, kapsayıcıyı iki öğeyi karşılaştıran bir yol gerekir ve bu işlev nesnesi kullanılarak gerçekleştirilir. Kendi sıralama ölçütü kapsayıcılar için bir işlev nesnesi oluşturma ve bu kapsayıcı için şablon listesinde belirterek tanımlayabilirsiniz.
 
 ## <a name="function-objects-and-algorithms"></a>İşlev nesneleri ve algoritmaları
 
-Başka bir işlev nesneleri algoritmaları kullanılır. Örneğin, `remove_if` algoritması gibi bildirilen:
+Başka bir işlev nesneleri algoritmaları kullanılır. Örneğin, `remove_if` algoritması gibi bildirilir:
 
 ```cpp
 template <class ForwardIterator, class Predicate>
@@ -72,7 +72,7 @@ ForwardIterator remove_if(
     Predicate pred);
 ```
 
-Son bağımsız değişkeni `remove_if` bir Boole değeri döndürür bir işlev nesnesidir (bir *koşulu*). İşlev nesnesi sonuç ise `true`, öğe yineleyiciler tarafından erişilen kapsayıcı kaldırılır sonra `first` ve `last`. Bildirilen işlevi nesnelerden herhangi birini kullanabilirsiniz [ \<işlevsel >](../standard-library/functional.md) bağımsız değişkeni için üstbilgi `pred` veya kendi oluşturabilirsiniz.
+Son bağımsız değişkeninin `remove_if` bir Boole değeri döndüren bir işlev nesnesi (bir *koşul*). İşlev nesnesinin sonucu **true**, öğe yineleyiciler tarafından erişilen kapsayıcısından kaldırılır `first` ve `last`. Bildirilen işlev nesneleri dilediğinizi kullanabilirsiniz [ \<işlevsel >](../standard-library/functional.md) bağımsız değişkeni için üst bilgi `pred` veya kendi oluşturabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

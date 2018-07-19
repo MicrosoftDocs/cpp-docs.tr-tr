@@ -24,18 +24,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0d4b0a6491aaeb27e4a1d986db01c03d1c5314d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 26f6216d5e78ae8ee95eb9f43d70f13aeb5f4874
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360181"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881064"
 ---
 # <a name="ccomcontainedobject-class"></a>CComContainedObject sınıfı
-Bu sınıf uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahip nesne için temsilci seçme tarafından **IUnknown**.  
+Bu sınıfın uyguladığı [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahibi nesnenin temsilci tarafından `IUnknown`.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,8 +45,8 @@ class CComContainedObject : public Base
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `Base`  
- Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [in uygulamasına](../../atl/reference/ccomobjectrootex-class.md).  
+ *temel*  
+ Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md).  
   
 ## <a name="members"></a>Üyeler  
   
@@ -55,19 +55,19 @@ class CComContainedObject : public Base
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComContainedObject::CComContainedObject](#ccomcontainedobject)|Oluşturucu. Üye işaretçisi sahibi nesnenin başlatır `IUnknown`.|  
-|[CComContainedObject:: ~ CComContainedObject](#dtor)|Yok Edicisi.|  
+|[CComContainedObject:: ~ CComContainedObject](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComContainedObject::AddRef](#addref)|Sahip nesne üzerinde başvurusu sayısını artırır.|  
-|[CComContainedObject::GetControllingUnknown](#getcontrollingunknown)|Sahibi nesnenin alır `IUnknown`.|  
-|[CComContainedObject::QueryInterface](#queryinterface)|Sahip nesne üzerinde istenen arabirimi için bir işaretçi alır.|  
-|[CComContainedObject::Release](#release)|Başvuru sayım sahibi nesnesinde azaltır.|  
+|[CComContainedObject::AddRef](#addref)|Sahip nesne başvuru sayısını artırır.|  
+|[CComContainedObject::GetControllingUnknown](#getcontrollingunknown)|Sahip nesne alır `IUnknown`.|  
+|[CComContainedObject::QueryInterface](#queryinterface)|Sahip nesne üzerinde istenen arabirim işaretçisi alır.|  
+|[CComContainedObject::Release](#release)|Sahibi nesnede başvuru sayısını azaltır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- ATL kullanan `CComContainedObject` sınıflardaki [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), ve [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahip nesne için temsilci seçme tarafından **IUnknown**. (Dış nesne bir toplama veya etiketleri arabirimi oluşturulmaktadır nesne sahibi değil.) `CComContainedObject` çağrıları `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, ve `OuterRelease`, aracılığıyla devralınan tüm `Base`.  
+ ATL kullanan `CComContainedObject` sınıflardaki [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), ve [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahibi nesnenin temsilci tarafından `IUnknown`. (Dış nesne bir toplama veya bölünmüş arabirim oluşturulduğu nesnenin sahibi değil.) `CComContainedObject` çağrıları `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, ve `OuterRelease`, üzerinden devralınan tüm `Base`.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Base`  
@@ -78,14 +78,14 @@ class CComContainedObject : public Base
  **Başlık:** atlcom.h  
   
 ##  <a name="addref"></a>  CComContainedObject::AddRef  
- Sahip nesne üzerinde başvurusu sayısını artırır.  
+ Sahip nesne başvuru sayısını artırır.  
   
 ```
 STDMETHOD_(ULONG, AddRef)();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tanılama için kullanışlı veya test bir değer.  
+ Tanılama için kullanışlı veya test olabilir bir değer.  
   
 ##  <a name="ccomcontainedobject"></a>  CComContainedObject::CComContainedObject  
  Oluşturucu.  
@@ -95,14 +95,14 @@ CComContainedObject(void* pv);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pv`  
- [in] Sahibi nesnenin **IUnknown**.  
+ *BD*  
+ [in] Sahibi nesnenin `IUnknown`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayarlar `m_pOuterUnknown` üye işaretçisi (aracılığıyla devralınan `Base` sınıfı) için `pv`.  
+ Kümeleri `m_pOuterUnknown` üye işaretçisi (devralınan `Base` sınıfı) için *pv*.  
   
 ##  <a name="dtor"></a>  CComContainedObject:: ~ CComContainedObject  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CComContainedObject();
@@ -112,20 +112,20 @@ CComContainedObject(void* pv);
  Ayrılan tüm kaynakları serbest bırakır.  
   
 ##  <a name="getcontrollingunknown"></a>  CComContainedObject::GetControllingUnknown  
- Döndürür `m_pOuterUnknown` üye işaretçisi (aracılığıyla devralınan *temel* sınıfı) sahibi nesnenin tutan **IUnknown**.  
+ Döndürür `m_pOuterUnknown` üye işaretçisi (devralınan *temel* sınıfı) nesnenin sahibi tutan `IUnknown`.  
   
 ```
 IUnknown* GetControllingUnknown();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sahibi nesnenin **IUnknown**.  
+ Sahibi nesnenin `IUnknown`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem sanal varsa `Base` belirtmiş [DECLARE_GET_CONTROLLING_UNKNOWN](aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) makrosu.  
+ Bu yöntem sanal varsa `Base` gözükeceğini [DECLARE_GET_CONTROLLING_UNKNOWN](aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) makrosu.  
   
 ##  <a name="queryinterface"></a>  CComContainedObject::QueryInterface  
- Sahip nesne üzerinde istenen arabirimi için bir işaretçi alır.  
+ Sahip nesne üzerinde istenen arabirim işaretçisi alır.  
   
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
@@ -134,27 +134,27 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iid`  
- [in] İstenen arabirimi tanımlayıcısı.  
+ *IID*  
+ [in] İstenen arabirim tanımlayıcısı.  
   
- `ppvObject`  
- [out] Arabirim işaretçisi ile tanımlanan bir işaretçi `iid`. Nesne bu arabirim desteklemiyorsa `ppvObject` ayarlanır **NULL**.  
+ *ppvObject*  
+ [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*. Nesne bu arabirimi desteklemiyorsa *ppvObject* NULL olarak ayarlandı.  
   
- `pp`  
- [out] Türe göre belirlenen arabirim işaretçisi gösteren bir işaretçi `Q`. Nesne bu arabirim desteklemiyorsa `pp` ayarlanır **NULL**.  
+ *PP*  
+ [out] Türe göre belirlenen arabirim işaretçisi için bir işaretçi `Q`. Nesne bu arabirimi desteklemiyorsa *pp* NULL olarak ayarlandı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ##  <a name="release"></a>  CComContainedObject::Release  
- Başvuru sayım sahibi nesnesinde azaltır.  
+ Sahibi nesnede başvuru sayısını azaltır.  
   
 ```
 STDMETHOD_(ULONG, Release)();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Hata ayıklama derlemelerinde, **sürüm** tanılama için kullanışlı veya test bir değer döndürür. Olmayan hata ayıklama derlemelerinde, **sürüm** her zaman 0 döndürür.  
+ Hata ayıklama yapılarında `Release` tanılama için kullanışlı veya test olabilecek bir değer döndürür. Hata ayıklama olmayan yapılarında `Release` her zaman 0 değerini döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

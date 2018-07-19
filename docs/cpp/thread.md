@@ -19,18 +19,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0f456d217119020f5683a58560283a1ff08ac75
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f268dd12ca0eca55cbc91bffe5daccbc23ef4dbe
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422741"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940156"
 ---
 # <a name="thread"></a>thread
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-**İş parçacığı** genişletilmiş depolama sınıfı değiştiricisi iş parçacığı yerel değişken bildirmek için kullanılır. Taşınabilir için eşdeğer C ++ 11 ve sonraki sürümleri, kullanın [thread_local](../cpp/storage-classes-cpp.md#thread_local) taşınabilir kodu için depolama sınıfı tanımlayıcısı. Windows **thread_local** ile uygulanan **__declspec(thread)**.
+**İş parçacığı** genişletilmiş depolama sınıfı değiştiricisi, bir iş parçacığı yerel değişkenini bildirmek için kullanılır. Kullanmak için taşınabilir C ++ 11'de eşdeğer ve üzeri, [thread_local](../cpp/storage-classes-cpp.md#thread_local) taşınabilir kod için depolama sınıfı tanımlayıcısı. Windows üzerinde `thread_local` ile uygulanan `__declspec(thread)`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,33 +38,33 @@ ms.locfileid: "32422741"
 
 ## <a name="remarks"></a>Açıklamalar
 
-İş Parçacığı Yerel Depolaması (TLS), çok iş parçacıklı bir işlemdeki her iş parçacığının, iş parçacığına özgü veriler için depolama alanı ayırdığı mekanizmadır. Standart çok iş parçacıklı programlarda veriler belirli bir işlemin tüm iş parçacıkları arasında paylaşılırken, iş parçacığı yerel depolaması, her iş parçacığı verisi için ayrıma yapan mekanizmadır. İş parçacığı kapsamlı bir açıklama için bkz: [çoklu iş parçacığı kullanımı](../parallel/multithreading-support-for-older-code-visual-cpp.md).
+İş Parçacığı Yerel Depolaması (TLS), çok iş parçacıklı bir işlemdeki her iş parçacığının, iş parçacığına özgü veriler için depolama alanı ayırdığı mekanizmadır. Standart çok iş parçacıklı programlarda veriler belirli bir işlemin tüm iş parçacıkları arasında paylaşılırken, iş parçacığı yerel depolaması, her iş parçacığı verisi için ayrıma yapan mekanizmadır. İş parçacıklarını tam bir açıklaması için bkz: [çoklu iş parçacığı kullanımı](../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
-İş parçacığı yerel değişkenleri bildirimlerini kullanmalıdır [öznitelik sözdizimi Genişletilmiş](../cpp/declspec.md) ve `__declspec` anahtar sözcüğüyle **iş parçacığı** anahtar sözcüğü. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişken bildirir ve bir değerle başlatır:
+İş parçacığı yerel değişkenleri bildirimlerinin kullanmalıdır [genişletilmiş öznitelik sözdizimi](../cpp/declspec.md) ve **__declspec** anahtar sözcüğü ile **iş parçacığı** anahtar sözcüğü. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bir değer ile başlatır:
 
 ```cpp
 __declspec( thread ) int tls_i = 1;
 ```
 
-İş parçacığı yerel değişkenleri dinamik olarak yüklenen kitaplıklarında kullanırken, bir iş parçacığı yerel değişken düzgün başlatılmamış neden olan faktörleri bilmeniz gerekir:
+Thread-local değişkenleri dinamik olarak yüklenen kitaplıkları kullanırken bir iş parçacığı yerel değişkeni doğru şekilde başlatılmamış neden olabilecek faktörünü bilmeniz gerekir:
 
-1. Değişkeni (oluşturucular dahil) bir işlev çağrısı ile başlatılırsa, bu işlevi yalnızca ikili/DLL yüklendikten sonra başlatılan bu iş parçacıkları ve ikili / işlemine yüklemek için DLL neden iş parçacığı için çağrılır. DLL yüklendiğinde, zaten çalışıyordu herhangi başka bir iş parçacığı için başlatma işlevleri adı değil. Dinamik başlatma DllMain DllMain çağrısı ancak DLL hiçbir iş parçacığı başladığında DLL işleminde değilse, ileti alır oluşur.
+1. (Oluşturucular dahil) bir işlev çağrısıyla değişkeni başlatılır, bu işlevi yalnızca ikili/DLL yüklendikten sonra başlatılan bu iş parçacıkları ve işleme yüklemek ikili/DLL neden iş parçacığı için çağrılır. Başlatma işlevleri DLL yüklendiğinde, çalışmakta herhangi başka bir iş parçacığı için oluşumlarından çağrılmaz. Dinamik olarak başlatılması DllMain DllMain çağrısı ancak DLL hiçbir zaman iş parçacığı başlatıldığında DLL işlemde değilse, ileti alır oluşur.
 
-1. Statik olarak sabit değerlerle başlatılan iş parçacığı yerel değişkenler genellikle tüm iş parçacıklarında düzgün başlatılır. Ancak, aralık 2017 itibariyle yoktur bilinen uyumluluk sorunu Microsoft Visual C++ derleyicinin yapabildiği constexpr değişkenleri almak yerine statik başlatma dinamik.
+1. Sabit değerler ile statik olarak başlatılır, thread-local değişkenleri genellikle tüm iş parçacıkları üzerinde düzgün bir şekilde başlatılır. Ancak, aralık 2017'den itibaren var. bilinen uyumluluk sorunu Microsoft Visual C++ derleyicinin yapabildiği constexpr değişkenlerini almak dinamik yerine statik başlatma
 
-   Not: Bu sorunların hem de gelecekte derleyici güncelleştirmeleri düzeltilmesi beklenir.
+   Not: Bu sorunların hem de gelecekte güncelleştirmeleri derleyicinin düzeltilmesi beklenir.
 
-Ayrıca, bu yönergeleri iş parçacığı yerel nesneleri ve değişkenleri bildirirken uymanız gerekir:
+Ayrıca, iş parçacığı yerel nesneleri ve değişkenleri bildirirken bu yönergelere uymanız gerekir:
 
-- Uygulayabileceğiniz **iş parçacığı** özniteliği yalnızca sınıfı ve veri bildirimler ve tanımlar; için **iş parçacığı** işlevi bildirimlerinde veya tanımlarında kullanılamaz.
+- Uygulayabileceğiniz **iş parçacığı** özniteliği yalnızca sınıf ve veri bildirimlerine ve tanımlarına; **iş parçacığı** İşlev bildirimlerinde veya tanımlarında kullanılamaz.
 
-- Belirleyebileceğiniz **iş parçacığı** yalnızca veri öğeleri statik depolama süresi ile özniteliği. Bu genel veri nesnelerini içerir (her ikisi de **statik** ve **extern**), yerel statik nesneler ve sınıflar statik veri üyeleri. Otomatik veri nesneleri ile bildiremezsiniz **iş parçacığı** özniteliği.
+- Belirtebileceğiniz **iş parçacığı** özniteliğini yalnızca statik depolama süresine sahip veri öğeleri. Bu, genel veri nesneleri içerir (her ikisi de **statik** ve **extern**), yerel statik nesneler ve sınıfların statik veri üyeleri. Otomatik veri nesneleriyle bildiremezsiniz **iş parçacığı** özniteliği.
 
-- Kullanmalısınız **iş parçacığı** öznitelik bildirimi ve bir iş parçacığı yerel nesnesinin tanımı için bildirim ve tanımı aynı dosya veya ayrı dosyaları gerçekleştirileceğini.
+- Kullanmalısınız **iş parçacığı** özniteliği bildirimi ve bir iş parçacığı yerel nesnesinin tanımı için bildirim ve tanım aynı dosyada veya ayrı dosyalarda olsun.
 
-- Kullanamazsınız **iş parçacığı** öznitelik bir tür değiştiricisi olarak.
+- Kullanamazsınız **iş parçacığı** özniteliğini tür değiştiricisi olarak.
 
-- Nesnelerin bildirimi kullandığından **iş parçacığı** özniteliği izin verilir, bu iki örnek anlam olarak eşdeğerdir:
+- Kullanan nesnelerin bildirimine **iş parçacığı** özniteliği izin verilir, bu iki örnek anlam olarak eşdeğerdir:
 
     ```cpp
     // declspec_thread_2.cpp
@@ -91,9 +91,9 @@ Ayrıca, bu yönergeleri iş parçacığı yerel nesneleri ve değişkenleri bil
    Thread int tls_i = sizeof( tls_i );   // Okay in C and C++
    ```
 
-   Unutmayın bir **sizeof** başlatılmakta nesnesi içerir ifadesi kendisine bir başvuru niteliğinde değildir ve C ve C++ izin verilir.
+   Unutmayın bir **sizeof** başlatılan nesneyi içeren ifadesi kendisine bir başvuru oluşturmadığına ve C ve C++ içinde izin verilir.
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

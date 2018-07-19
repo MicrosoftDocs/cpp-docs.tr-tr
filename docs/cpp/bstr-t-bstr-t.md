@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 824108b78ede3999a83b1c7c1ac75cc847f182f5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fb2e870c7418c0d0a6cf3cd82bc0a8acb45466a0
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413290"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941271"
 ---
 # <a name="bstrtbstrt"></a>_bstr_t::_bstr_t
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturan bir `_bstr_t` nesnesi.  
+ Oluşturur bir `_bstr_t` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -53,37 +53,37 @@ _bstr_t(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `s1`  
+ *S1*  
  A `_bstr_t` kopyalanacak nesne.  
   
- `s2`  
- Birden çok baytlı bir dize.  
+ *S2*  
+ Çok baytlı bir dize.  
   
- `s3`  
- Bir UNICODE dizesi  
+ *S3*  
+ Unicode dizesi  
   
- `var`  
- A [_variant_t](../cpp/variant-t-class.md) nesnesi.  
+ *var*  
+ A [_variant_t](../cpp/variant-t-class.md) nesne.  
   
- `bstr`  
+ *BSTR*  
  Varolan bir `BSTR` nesnesi.  
   
- `fCopy`  
- Varsa `false`, `bstr` bağımsız değişkeni bağlı yeni nesneye çağırarak bir kopyasını yapmadan `SysAllocString`.  
+ *fCopy*  
+ FALSE ise *bstr* bağımsız değişkeni, yeni nesneye çağırarak bir kopyası oluşturmadan takılı `SysAllocString`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Aşağıdaki tabloda açıklanmaktadır `_bstr_t` oluşturucular.  
+ Aşağıdaki tabloda açıklanmıştır `_bstr_t` oluşturucular.  
   
 |Oluşturucu|Açıklama|  
 |-----------------|-----------------|  
 |`_bstr_t( )`|Varsayılan yapıları `_bstr_t` null yalıtan nesne `BSTR` nesne.|  
-|`_bstr_t( _bstr_t&`  `s1`  `)`|Oluşturan bir `_bstr_t` nesnesi başka bir kopyasını olarak.<br /><br /> Bu bir *yüzeysel* kapsüllenmiş başvurusu sayısını artırır kopyalama `BSTR` yeni bir tane oluşturmak yerine nesne.|  
-|`_bstr_t( char*`  `s2`  `)`|Oluşturan bir `_bstr_t` çağırarak nesne `SysAllocString` yeni `BSTR` nesnesi ve ardından kapsüller.<br /><br /> Bu oluşturucu, ilk çok baytlı Unicode dönüştürme gerçekleştirir.|  
-|`_bstr_t( wchar_t*`  `s3`  `)`|Oluşturan bir `_bstr_t` çağırarak nesne `SysAllocString` yeni `BSTR` nesnesi ve ardından kapsüller.|  
-|`_bstr_t( _variant_t&`  `var`  `)`|Yapıları bir `_bstr_t` nesnesinin bir `_variant_t` ilk alarak nesnesi bir `BSTR` kapsüllenmiş değişken nesnesinden nesnesi.|  
-|`_bstr_t( BSTR`  `bstr` `, bool`  `fCopy`  `)`|Oluşturan bir `_bstr_t` varolan bir nesne `BSTR` (tersine bir `wchar_t*` dize). Varsa `fCopy` false, sağlanan `BSTR` ile yeni bir kopya yapmadan yeni nesneye bağlı `SysAllocString`.<br /><br /> Bu Oluşturucu Tür kitaplığı üstbilgi sarmalayıcı işlevleri kapsüllemek ve sahipliğini almak için kullandığı bir `BSTR` bir arabirim yöntemi tarafından döndürülen.|  
+|`_bstr_t( _bstr_t&`  `s1`  `)`|Oluşturur bir `_bstr_t` başka bir kopya olarak nesnesi.<br /><br /> Bu bir *yüzeysel* kapsüllenmiş başvuru sayısını artırır kopya `BSTR` yeni bir tane oluşturmak yerine nesne.|  
+|`_bstr_t( char*`  `s2`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.<br /><br /> Bu oluşturucu, ilk çok baytlı Unicode dönüştürme gerçekleştirir.|  
+|`_bstr_t( wchar_t*`  `s3`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.|  
+|`_bstr_t( _variant_t&`  `var`  `)`|Oluşturur bir `_bstr_t` nesnesinden bir `_variant_t` ilk alarak nesne bir `BSTR` kapsüllenmiş değişken nesnesinden nesne.|  
+|`_bstr_t( BSTR`  `bstr` `, bool`  `fCopy`  `)`|Oluşturur bir `_bstr_t` mevcut bir nesne `BSTR` (başlangıcı yerine sonundan bir `wchar_t*` dize). Varsa `fCopy` yanlışsa, sağlanan `BSTR` ile yeni bir kopya yapmadan yeni nesneye iliştirilmiş `SysAllocString`.<br /><br /> Bu oluşturucu şifreleyebilir ve sahipliğini almak için tür kitaplığı üstbilgi sarmalayıcı işlevleri tarafından kullanılır bir `BSTR` bir arabirim yöntemi tarafından döndürülür.|  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_bstr_t sınıfı](../cpp/bstr-t-class.md)   

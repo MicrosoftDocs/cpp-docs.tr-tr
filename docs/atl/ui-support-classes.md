@@ -1,5 +1,5 @@
 ---
-title: Kullanıcı Arabirimi desteği sınıfları (ATL) | Microsoft Docs
+title: UI desteği sınıfları (ATL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,29 +17,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 044fecc07d0d6ee252a966e0395f30415c7527bd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bd98d71fe52f9ecfb1410593506ab6487540d4e5
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360292"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961961"
 ---
-# <a name="ui-support-classes"></a>Kullanıcı Arabirimi desteği sınıfları
-Aşağıdaki sınıflar genel kullanıcı Arabirimi desteği sağlar:  
+# <a name="ui-support-classes"></a>UI desteği sınıfları
+Aşağıdaki sınıflar, genel kullanıcı Arabirimi desteği sağlar:  
   
--   [IDocHostUIHandlerDispatch](../atl/reference/idochostuihandlerdispatch-interface.md) Microsoft HTML Ayrıştırma ve işleme altyapısı için bir arabirim.  
+-   [Idochostuıhandlerdispatch](../atl/reference/idochostuihandlerdispatch-interface.md) arabirime Microsoft HTML Ayrıştırma ve işleme altyapısı.  
   
--   [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) bir denetimle üzerinden iletişim kuran bir kapsayıcı asıl yöntemleri sağlar. Etkinleştirme ve devre dışı bırakma yerinde denetimlerinin yönetir.  
+-   [Ioleobjectımpl](../atl/reference/ioleobjectimpl-class.md) bir denetimle üzerinden iletişim kuran bir kapsayıcı asıl yöntemleri sağlar. Yerinde denetimleri devre dışı bırakma ve etkinleştirme yönetir.  
   
--   [IOleInPlaceObjectWindowlessImpl](../atl/reference/ioleinplaceobjectwindowlessimpl-class.md) yerinde denetimleri etkinleştirme yönetir. İletileri alacak şekilde sürükle ve bırak işlemlerinde katılmayı penceresiz bir denetim sağlar.  
+-   [Ioleınplaceobjectwindowlessımpl](../atl/reference/ioleinplaceobjectwindowlessimpl-class.md) yerinde denetimlerin etkinleştirme yönetir. İletileri alacak şekilde sürükle ve bırak işlemleri katılmak penceresiz denetime olanak tanır.  
   
--   [IOleInPlaceActiveObjectImpl](../atl/reference/ioleinplaceactiveobjectimpl-class.md) bir yerinde denetimi kapsayıcısı arasındaki iletişimi yardımcı olur.  
+-   [Ioleınplaceactiveobjectımpl](../atl/reference/ioleinplaceactiveobjectimpl-class.md) yerinde denetim kapsayıcısı arasındaki iletişimi yardımcı olur.  
   
--   [IViewObjectExImpl](../atl/reference/iviewobjecteximpl-class.md) kendisini doğrudan görüntülemek ve görünümünü değişiklikleri kapsayıcı bildirmek için bir denetim sağlar. Titreşimsiz çizim, dikdörtgen olmayan ve saydam denetimleri ve isabet testi için destek sağlar.  
+-   [Iviewobjectexımpl](../atl/reference/iviewobjecteximpl-class.md) kendisini doğrudan görüntülemek ve değişiklikleri görünümünü kapsayıcı bildirmek için bir denetim sağlar. Titreşimsiz çizim, dikdörtgen olmayan ve saydam denetimleri ve isabet sınaması için destek sağlar.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

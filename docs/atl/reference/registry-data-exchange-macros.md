@@ -21,21 +21,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62a26e8d602010ce637114464a844d2f95e635c9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7473bed5e4bf973dcea4d186e9b5b3367fb03ff1
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363064"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880365"
 ---
-# <a name="registry-data-exchange-macros"></a>Kayıt defteri veri Exchange makroları
-Bu makroları kayıt defteri veri değişimi işlemleri gerçekleştirir.  
+# <a name="registry-data-exchange-macros"></a>Kayıt defteri veri değişim makroları
+Bu makrolar, kayıt defteri veri değişimi işlemleri gerçekleştirir.  
   
 |||  
 |-|-|  
 |[BEGIN_RDX_MAP](#begin_rdx_map)|Kayıt defteri veri değişimi harita başlangıcını işaretler.|  
 |[END_RDX_MAP](#end_rdx_map)|Kayıt defteri veri değişimi harita sonunu işaretler.|  
-|[RDX_BINARY](#rdx_binary)|Belirtilen kayıt defteri girdisini bayt türünde belirtilen üye değişkeni ile ilişkilendirir.|  
+|[RDX_BINARY](#rdx_binary)|Belirtilen kayıt defteri girdisi türü bayt belirtilen üye değişkeni ile ilişkilendirir.|  
 |[RDX_CSTRING_TEXT](#rdx_cstring_text)|Belirtilen kayıt defteri girdisi türü CString belirtilen üye değişkeni ile ilişkilendirir.|  
 |[RDX_DWORD](#rdx_dword)|Belirtilen kayıt defteri girdisini DWORD türünün belirtilen üye değişkeni ile ilişkilendirir.|  
 |[RDX_TEXT](#rdx_text)|Belirtilen kayıt defteri girdisini TCHAR türü belirtilen üye değişkeni ile ilişkilendirir.|  
@@ -51,16 +51,16 @@ BEGIN_RDX_MAP
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki makroları içinde kayıt defteri veri değişimi harita okumak ve sistem kayıt defterinde girişler yazmak için kullanılır:  
+ Aşağıdaki makroları, kayıt defteri veri değişimi eşlemesi içinde okuyup girişleri sistem kayıt defterine yazmak için kullanılır:  
   
 |Makrosu|Açıklama|  
 |-----------|-----------------|  
-|[RDX_BINARY](#rdx_binary)|Belirtilen kayıt defteri girdisini bayt türünde belirtilen üye değişkeni ile ilişkilendirir.|  
+|[RDX_BINARY](#rdx_binary)|Belirtilen kayıt defteri girdisi türü bayt belirtilen üye değişkeni ile ilişkilendirir.|  
 |[RDX_DWORD](#rdx_dword)|Belirtilen kayıt defteri girdisini DWORD türünün belirtilen üye değişkeni ile ilişkilendirir.|  
 |[RDX_CSTRING_TEXT](#rdx_cstring_text)|Belirtilen kayıt defteri girdisi türü CString belirtilen üye değişkeni ile ilişkilendirir.|  
 |[RDX_TEXT](#rdx_text)|Belirtilen kayıt defteri girdisini TCHAR türü belirtilen üye değişkeni ile ilişkilendirir.|  
   
- Genel işlevin [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye işlevi tarafından oluşturulan aynı ada sahip `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları, kodunuzu sistem kayıt defteri arasında veri değişimi gerektiğinde kullanılmalıdır ve RDX eşlemesinde belirtilen değişkenleri.  
+ Genel işlev [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya kodunuzu sistem kayıt defteri arasında veri değişimi gerektiğinde BEGIN_RDX_MAP ve END_RDX_MAP makroları tarafından oluşturulan aynı ada sahip bir üye işlevi kullanılmalıdır ve RDX eşlemesinde belirtilen değişkenler.  
   
 ##  <a name="end_rdx_map"></a>  END_RDX_MAP  
  Kayıt defteri veri değişimi harita sonunu işaretler.  
@@ -70,7 +70,7 @@ END_RDX_MAP
 ```  
   
 ##  <a name="rdx_binary"></a>  RDX_BINARY  
- Belirtilen kayıt defteri girdisini bayt türünde belirtilen üye değişkeni ile ilişkilendirir.  
+ Belirtilen kayıt defteri girdisi türü bayt belirtilen üye değişkeni ile ilişkilendirir.  
   
 ```
 RDX_BINARY(
@@ -82,23 +82,23 @@ RDX_BINARY(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rootkey`  
+ *ROOTKEY*  
  Kayıt defteri anahtarı kökü.  
   
- `subkey`  
+ *alt*  
  Kayıt defteri alt anahtarı.  
   
- `valuename`  
+ *değer adı*  
  Kayıt defteri anahtarı.  
   
- `member`  
+ *Üyesi*  
  Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.  
   
- `member_size`  
+ *member_size*  
  Üye değişkeni bayt cinsinden boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu makrosu ile birlikte kullanılan `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları bir üye değişkenine bir belirli kayıt defteri girdisi ile ilişkilendirilecek. Genel işlevin [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye işlevi tarafından oluşturulan aynı ada sahip `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları, sistem kayıt defteri ve üye arasında veri değişimi gerçekleştirmek için kullanılması gerekir RDX harita değişkenleri.  
+ Bu makro, bir üye değişkeni bir belirli kayıt defteri girişi ile ilişkilendirilecek BEGIN_RDX_MAP ve END_RDX_MAP makroları ile birlikte kullanılır. Genel işlev [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye değişkenleri arasındaki sistem kayıt defteri veri değişim yapması BEGIN_RDX_MAP ve END_RDX_MAP makroları tarafından oluşturulan aynı ada sahip bir üye işlevi kullanılmalıdır RDX haritada.  
   
 ##  <a name="rdx_cstring_text"></a>  RDX_CSTRING_TEXT  
  Belirtilen kayıt defteri girdisi türü CString belirtilen üye değişkeni ile ilişkilendirir.  
@@ -113,23 +113,23 @@ RDX_CSTRING_TEXT(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rootkey`  
+ *ROOTKEY*  
  Kayıt defteri anahtarı kökü.  
   
- `subkey`  
+ *alt*  
  Kayıt defteri alt anahtarı.  
   
- `valuename`  
+ *değer adı*  
  Kayıt defteri anahtarı.  
   
- `member`  
+ *Üyesi*  
  Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.  
   
- `member_size`  
+ *member_size*  
  Üye değişkeni bayt cinsinden boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu makrosu ile birlikte kullanılan `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları bir üye değişkenine bir belirli kayıt defteri girdisi ile ilişkilendirilecek. Genel işlevin [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye işlevi tarafından oluşturulan aynı ada sahip `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları, sistem kayıt defteri ve üye arasında veri değişimi gerçekleştirmek için kullanılması gerekir RDX harita değişkenleri.  
+ Bu makro, bir üye değişkeni bir belirli kayıt defteri girişi ile ilişkilendirilecek BEGIN_RDX_MAP ve END_RDX_MAP makroları ile birlikte kullanılır. Genel işlev [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye değişkenleri arasındaki sistem kayıt defteri veri değişim yapması BEGIN_RDX_MAP ve END_RDX_MAP makroları tarafından oluşturulan aynı ada sahip bir üye işlevi kullanılmalıdır RDX haritada.  
   
 ##  <a name="rdx_dword"></a>  RDX_DWORD  
  Belirtilen kayıt defteri girdisini DWORD türünün belirtilen üye değişkeni ile ilişkilendirir.  
@@ -144,23 +144,23 @@ RDX_DWORD(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rootkey`  
+ *ROOTKEY*  
  Kayıt defteri anahtarı kökü.  
   
- `subkey`  
+ *alt*  
  Kayıt defteri alt anahtarı.  
   
- `valuename`  
+ *değer adı*  
  Kayıt defteri anahtarı.  
   
- `member`  
+ *Üyesi*  
  Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.  
   
- `member_size`  
+ *member_size*  
  Üye değişkeni bayt cinsinden boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu makrosu ile birlikte kullanılan `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları bir üye değişkenine bir belirli kayıt defteri girdisi ile ilişkilendirilecek. Genel işlevin [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye işlevi tarafından oluşturulan aynı ada sahip `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları, sistem kayıt defteri ve üye arasında veri değişimi gerçekleştirmek için kullanılması gerekir RDX harita değişkenleri.  
+ Bu makro, bir üye değişkeni bir belirli kayıt defteri girişi ile ilişkilendirilecek BEGIN_RDX_MAP ve END_RDX_MAP makroları ile birlikte kullanılır. Genel işlev [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye değişkenleri arasındaki sistem kayıt defteri veri değişim yapması BEGIN_RDX_MAP ve END_RDX_MAP makroları tarafından oluşturulan aynı ada sahip bir üye işlevi kullanılmalıdır RDX haritada.  
   
 ##  <a name="rdx_text"></a>  RDX_TEXT  
  Belirtilen kayıt defteri girdisini TCHAR türü belirtilen üye değişkeni ile ilişkilendirir.  
@@ -175,23 +175,23 @@ RDX_TEXT(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `rootkey`  
+ *ROOTKEY*  
  Kayıt defteri anahtarı kökü.  
   
- `subkey`  
+ *alt*  
  Kayıt defteri alt anahtarı.  
   
- `valuename`  
+ *değer adı*  
  Kayıt defteri anahtarı.  
   
- `member`  
+ *Üyesi*  
  Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.  
   
- `member_size`  
+ *member_size*  
  Üye değişkeni bayt cinsinden boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu makrosu ile birlikte kullanılan `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları bir üye değişkenine bir belirli kayıt defteri girdisi ile ilişkilendirilecek. Genel işlevin [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye işlevi tarafından oluşturulan aynı ada sahip `BEGIN_RDX_MAP` ve `END_RDX_MAP` makroları, sistem kayıt defteri ve üye arasında veri değişimi gerçekleştirmek için kullanılması gerekir RDX harita değişkenleri.  
+ Bu makro, bir üye değişkeni bir belirli kayıt defteri girişi ile ilişkilendirilecek BEGIN_RDX_MAP ve END_RDX_MAP makroları ile birlikte kullanılır. Genel işlev [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye değişkenleri arasındaki sistem kayıt defteri veri değişim yapması BEGIN_RDX_MAP ve END_RDX_MAP makroları tarafından oluşturulan aynı ada sahip bir üye işlevi kullanılmalıdır RDX haritada.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları](../../atl/reference/atl-macros.md)   

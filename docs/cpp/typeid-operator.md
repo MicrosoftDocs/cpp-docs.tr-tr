@@ -14,31 +14,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abb99b3dbc656d43701eebafbd7d34de125d1a31
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9646678398ff1e18d0acf45c45bc931ce37cd54a
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948270"
 ---
 # <a name="typeid-operator"></a>typeid İşleci
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      typeid(   
-      type-id  
-       )  
-typeid( expression )  
+typeid(type-id)  
+typeid(expression)  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `typeid` işleci nesnenin türünün çalışma zamanında belirlenmesine izin verir.  
+ **TypeID** işleci, bir nesnenin çalışma zamanında belirlenecek türü sağlar.  
   
- Sonucu `typeid` olan bir **const type_info &**. Bir başvuru değeri olan bir **type_info** ya da temsil eden nesne *türü kimliği* veya türü *ifade*hangi biçiminin bağlı olarak `typeid` kullanılır . Bkz: [type_info sınıfı](../cpp/type-info-class.md) daha fazla bilgi için.  
+ Sonucu **TypeID** olduğu bir `const type_info&`. Değer bir başvurudur bir `type_info` temsil eden nesne *türü kimliği* veya türü *ifade*bağlı olarak hangi tür **TypeID** kullanılır. Bkz: [type_info sınıfı](../cpp/type-info-class.md) daha fazla bilgi için.  
   
- `typeid` İşleci (soyut Bildirimciler veya örnekleri) yönetilen türleriyle çalışmaz, bkz: [TypeID](../windows/typeid-cpp-component-extensions.md) alma hakkında bilgi için <xref:System.Type> belirli bir türde.  
+ **TypeID** işleci yönetilen türlerle (soyut Bildirimciler veya örnekleri) çalışmaz, bkz: [TypeID](../windows/typeid-cpp-component-extensions.md) alma hakkında bilgi <xref:System.Type> belirli bir türde.  
   
- `typeid` işleci, doğru nesne türünün sağlanan statik bilgilerle belirlenemediği çok biçimli bir sınıf türünün l- değerine uygulandığında bir çalışma zamanı denetimi yapar. Bu gibi durumlar şunlardır:  
+ **TypeID** işlecinin yaptığı bir l değeri olarak bir çok biçimli bir sınıf türünün uygulandığında bir çalışma zamanı denetimi burada sağlanan statik bilgilerle doğru nesne türü belirlenemiyor. Bu gibi durumlar şunlardır:  
   
 -   Bir sınıf başvurusu  
   
@@ -46,9 +45,9 @@ typeid( expression )
   
 -   Bir alt işaretçi (diğer bir deyişle [ ]). (Bir çok biçimli türün işaretçisi ile bir alt simge kullanmanın genellikle güvenli olmadığını unutmayın.)  
   
- Varsa *ifade* nesne gerçekte bu temel sınıfından türetilmiş bir türün yine de bir taban sınıf türü için işaret bir **type_info** türetilmiş sınıf sonucu için başvuru. *İfade* çok biçimli bir türü (sanal işlevler sınıfıyla) işaret etmelidir. Aksi takdirde, sonuç değer **type_info** başvurulan statik sınıf için *ifade*. Ayrıca, işaretçinin işaret ettiği nesnenin kullanılabilmesi için işaretçinin başvurusu kaldırılmalıdır. İşaretçi başvurusunun kaldırılmasının olmadan sonucu olacaktır **type_info** hangi BT işaretçisi işaret. Örneğin:  
+ Varsa *ifade* ancak nesne aslında o temel sınıftan türetilmiş bir tür değil bir temel sınıf türüne işaret eden bir `type_info` sonucu türetilmiş sınıf için başvuru. *İfade* çok biçimli bir türe (sanal işlevler içeren bir sınıf) işaret etmelidir. Aksi halde sonuç, `type_info` başvurulan statik sınıf için *ifade*. Ayrıca, işaretçinin işaret ettiği nesnenin kullanılabilmesi için işaretçinin başvurusu kaldırılmalıdır. İşaretçinin başvurusu kaldırılmazsa, sonuç olacaktır `type_info` işaretçisi değil işaret ettiği. Örneğin:  
   
-```  
+```cpp 
 // expre_typeid_Operator.cpp  
 // compile with: /GR /EHsc  
 #include <iostream>  
@@ -73,11 +72,11 @@ int main() {
 }  
 ```  
   
- Varsa *ifade* bir işaretçi başvurusunun kaldırılmasının ve işaretçinin değeri sıfır ise **TypeID** oluşturur bir [bad_typeid özel durumu](../cpp/bad-typeid-exception.md). İşaretçinin geçerli bir nesneye işaret etmiyorsa bir `__non_rtti_object` özel durum, bir arıza tetiklenen RTTI analiz denemesi belirten (ister erişim ihlali), nesne şekilde geçersiz olduğundan (geçersiz işaretçi veya kod değildi derlenmiş ile[/GR](../build/reference/gr-enable-run-time-type-information.md)).  
+ Varsa *ifade* bir işaretçinin başvurusunu kaldırıyorsa ve işaretçinin değeri sıfır ise **TypeID** oluşturur bir [bad_typeid özel durumu](../cpp/bad-typeid-exception.md). İşaretçi geçerli bir nesneye işaret etmiyorsa bir `__non_rtti_object` özel durumu oluşturulur, bir hata tetikleyen RTTI'yi analiz etmek için girişimini (erişim ihlali gibi), nesne şekilde geçersiz olduğundan (hatalı işaretçi veya kod derlenmediği ile[GR](../build/reference/gr-enable-run-time-type-information.md)).  
   
- Varsa *ifade* ne bir işaretçi ne de bir temel sınıf nesnenin başvuru sonucu olan bir **type_info** statik türünü temsil eden başvuru *ifade*. *Statik türü* derleme zamanında bilinen bir ifadenin bir ifade türüne başvuruyor. Yürütme semantikleri, bir ifadenin statik türü değerlendirilirken göz ardı edilir. Ayrıca, bir ifadenin statik türü belirlenirken, mümkün olduğunca başvurular da dikkate alınmaz:  
+ Varsa *ifade* bir işaretçi ya da bir temel sınıf nesnenin bir başvuru değil sonucu olan bir `type_info` statik türünü temsil eden başvuru *ifade*. *Statik tür* derleme zamanında bilinen bir ifade, ifadenin türü gösterir. Yürütme semantikleri, bir ifadenin statik türü değerlendirilirken göz ardı edilir. Ayrıca, bir ifadenin statik türü belirlenirken, mümkün olduğunca başvurular da dikkate alınmaz:  
   
-```  
+```cpp 
 // expre_typeid_Operator_2.cpp  
 #include <typeinfo>  
   
@@ -87,9 +86,9 @@ int main()
 }  
 ```  
   
- **TypeId** şablonlarında şablon parametresi türünü belirlemek için de kullanılabilir:  
+ **typeid** şablonlarında bir şablon parametresinin türünü belirlemek için de kullanılabilir:  
   
-```  
+```cpp 
 // expre_typeid_Operator_3.cpp  
 // compile with: /c  
 #include <typeinfo>  

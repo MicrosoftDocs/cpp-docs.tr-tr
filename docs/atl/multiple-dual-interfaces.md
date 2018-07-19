@@ -1,5 +1,5 @@
 ---
-title: Birden çok çift arabirimler | Microsoft Docs
+title: Birden çok çift arabirim | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,29 +19,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e23682bd0b7c923a1e377463405f84a6c6ee1221
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ace347148f3a339c75fd9a1069be368c7373d351
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356725"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38952935"
 ---
-# <a name="multiple-dual-interfaces"></a>Birden çok çift arabirimler
-Çift arabirim (diğer bir deyişle, vtable ve geç bağlama, böylece sınıf kullanılabilir C++ yanı sıra komut dosyası dili yapma esnekliği) avantajları birleştirmek isteyebilirsiniz birden çok devralma teknikleri ile.  
+# <a name="multiple-dual-interfaces"></a>Birden çok çift arabirim
+Çift arabirim (diğer bir deyişle, vtable ve geç bağlama, bu nedenle sınıf kullanılabilir C++ yanı sıra komut dosyası dilleri yapma esnekliği) avantajları birleştirmek isteyebilirsiniz birden çok devralma tekniklerle.  
   
- Tek bir COM nesnesi üzerinde birden çok çift arabirimler kullanıma mümkün olsa da, önerilmez. Birden çok çift arabirimler varsa olmalıdır tek `IDispatch` sunulan arabirimi. Bu durumda olduğundan emin olmak teknikleri cezaları işlevi ya da daha fazla kod karmaşıklığı kaybı gibi uygulayın. Bu yaklaşım dikkate Geliştirici dikkatle olumlu ve olumsuz tartmanız gerekir.  
+ Tek bir COM nesne üzerinde birden çok çift arabirim kullanıma sunmak mümkün olsa da, önerilmez. Birden çok çift arabirim varsa, olmalıdır tek `IDispatch` kullanıma sunulan arabirimi. Bu durumda olduğundan emin olmak teknikleri yaptırımlara işlevi ya da daha fazla kod karmaşıklığı kaybı gibi uygulayın. Bu yaklaşım dikkate Geliştirici dikkatle olumlu ve olumsuz tartmanız gerekir.  
   
 ## <a name="exposing-a-single-idispatch-interface"></a>Tek bir IDispatch arabirimi gösterme  
- Tek bir nesne üzerinde birden çok çift arabirimler iki veya daha fazla özelleştirmeleri türetme tarafından kullanıma mümkündür `IDispatchImpl`. Bununla birlikte, istemcilerin sorgulamak için izin verirseniz `IDispatch` arabirimi, kullanması gerekecektir [COM_INTERFACE_ENTRY2](reference/com-interface-entry-macros.md#com_interface_entry2) makrosu (veya [COM_INTERFACE_ENTRY_IID](reference/com-interface-entry-macros.md#com_interface_entry_iid))) kullanılmak üzere hangi temel sınıf belirtmek için uygulaması `IDispatch`.  
+ Tek bir nesnede birden çok çift arabirim iki veya daha fazla uzmanlıkları türetme tarafından kullanıma sunmak mümkündür `IDispatchImpl`. Ancak, istemciler sorgulamak izin verirseniz `IDispatch` arabirimini kullanmanız gerekecek [COM_INTERFACE_ENTRY2](reference/com-interface-entry-macros.md#com_interface_entry2) makrosu (veya [COM_INTERFACE_ENTRY_IID](reference/com-interface-entry-macros.md#com_interface_entry_iid))) kullanılmak üzere hangi temel sınıf belirtmek için uygulamasını `IDispatch`.  
   
  [!code-cpp[NVC_ATL_COM#23](../atl/codesnippet/cpp/multiple-dual-interfaces_1.h)]  
   
- Çünkü tek `IDispatch` arabirimi gösterilir, yalnızca nesnelerinizi aracılığıyla erişebilirsiniz istemcileri `IDispatch` arabirimi edemeyecek yöntemleri veya diğer bir arabirimi özelliklerinde erişmek.  
+ Çünkü tek `IDispatch` arabirimi kullanıma sunulan, nesnelerinizi aracılığıyla yalnızca erişimi olan istemciler `IDispatch` arabirimi yöntemleri ya da herhangi bir arabirim özelliği erişmek mümkün olmayacaktır.  
   
-## <a name="combining-multiple-dual-interfaces-into-a-single-implementation-of-idispatch"></a>Birden çok çift arabirimler tek IDispatch uygulamasına birleştirme  
- ATL sağlamaz herhangi bir destek, tek bir uygulama içinde birden çok çift arabirimler birleştirme `IDispatch`. Ancak, ayrı bir birleşimini içerir şablonlu bir sınıf oluşturma gibi arabirimleri, el ile birleştirme için birkaç bilinen yaklaşım vardır `IDispatch` gerçekleştirmek için yeni bir nesne oluşturma arabirimleri `QueryInterface` işlevi veya kullanarak bir TypeInfo tabanlı bir uygulama oluşturmak için iç içe geçmiş nesnelerin `IDispatch` arabirimi.  
+## <a name="combining-multiple-dual-interfaces-into-a-single-implementation-of-idispatch"></a>Tek bir IDispatch uygulamasına birden çok çift arabirim birleştirme  
+ ATL sağlamaz her türlü destek tek bir uygulama içinde birden çok çift arabirim birleştirmek için `IDispatch`. Ancak, ayrı bir birleşimini içeren bir şablonlu sınıf oluşturma gibi arabirimler, el ile birleştirme için birkaç bilinen yaklaşım vardır `IDispatch` gerçekleştirmek için yeni bir nesne oluşturma arabirimlerini `QueryInterface` işlevi veya kullanarak bir typeinfo tabanlı bir uygulama oluşturmak için iç içe geçmiş nesnelerin `IDispatch` arabirimi.  
   
- Bu yaklaşım olası ad çakışmalarının yanı sıra kod karmaşıklığı ve bakımı sorunlarınız. Birden çok çift arabirimler oluşturma önerilmez.  
+ Bu yaklaşımların olası ad çakışmalarının yanı sıra kod karmaşıklığı ve bakımı ile ilgili sorunlar var. Birden çok çift arabirim oluşturmak önerilmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çift Arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)

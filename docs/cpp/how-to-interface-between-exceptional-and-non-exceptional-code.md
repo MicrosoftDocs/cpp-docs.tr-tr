@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasındaki arabirim | Microsoft Docs'
+title: 'Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasında arabirim | Microsoft Docs'
 ms.custom: how-to
 ms.date: 11/04/2016
 ms.technology:
@@ -12,23 +12,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2cf2216ba75912520f744f0f0331a50520aa895
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 74805c7ecd4b4ecef71d8ac1358fd6c2014e27d5
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417281"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940124"
 ---
 # <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim
-Bu makalede nasıl tutarlı özel durum işlemeyi C++ modülünde uygulanacağını ve bu özel durumlar için ve özel durum sınırlarında hata kodlarından Çevir nasıl açıklanmaktadır.  
+Bu makalede, bir C++ modülünde tutarlı özel durum işleme gerçekleştirme ve ayrıca bu özel durumların özel durum sınırlarındaki hata kodlarına/kodlarından çevirmek nasıl açıklar.  
   
- C++ modülü bazen gerekir özel durumları (özel durumlu olmayan kod) kullanmayan kodu arabirimi. Böyle bir arabirim olarak bilinen bir *özel durum sınır*. Örneğin, Win32 işlevi çağırmak isteyebilir `CreateFile` C++ programı. `CreateFile` özel durumlar oluşturma değil; Bunun yerine tarafından alınan hata kodları ayarlar `GetLastError` işlevi. C++ programı Önemsiz olmayan ise, ardından içinde büyük olasılıkla tutarlı bir özel durum tabanlı hata işleme ilkesi olması tercih edilir. Ve büyük olasılıkla yalnızca özel durumlu olmayan kod ile arabirim ve, C++ modülünde hata özel durum tabanlı ve özel durum tabanlı ilkeleri karıştırmak istediğiniz özel durumlar bırakmasını istemiyorum.  
+ Bir C++ modülünün bazen gerekir (durumsuz kod) özel durumlar kullanmayan kod arabirimi. Böyle bir arabirim olarak bilinen bir *özel durum sınırı*. Örneğin, Win32 işlevini çağırmak isteyebilirsiniz `CreateFile` C++ programınızda. `CreateFile` özel durumlar oluşturmaz; Bunun yerine tarafından alınabilen hata kodlarını ayarlar `GetLastError` işlevi. C++ programınız Önemsiz ise, ardından bunu, büyük olasılıkla tutarlı bir özel durum tabanlı hata işleme ilkesi tercih edebilirsiniz. Ve büyük olasılıkla özel durumları çünkü yalnızca özel durumlu olmayan kod ile arabirim ve özel durum tabanlı ve özel durum tabanlı olmayan tabansız hata ilkelerini C++ modülünüzde karıştırmak diğerinden istediğiniz bırakmaya karar istemiyorum.  
   
-## <a name="calling-non-exceptional-functions-from-c"></a>C++ içinden özel durumlu olmayan işlevleri çağırma  
- C++ içinden özel durumlu olmayan bir işlev çağırdığınızda, bu işlev hataları algılar ve büyük olasılıkla bir özel durum oluşturur C++ işlevinde sarmalamak olur. Bu tür bir sarmalayıcı işlevi tasarlarken, özel durum garantisi sağlamak için hangi tür ilk karar verin: Hayır throw, güçlü veya temel. İkinci olarak, bir özel durum, tüm kaynaklar, örneğin, dosya tanıtıcıları doğru serbest şekilde işlevi tasarlayın. Genellikle, bu kaynakları sahibi Akıllı işaretçiler veya benzer kaynak yöneticileri kullanmak anlamına gelir. Tasarım konuları hakkında daha fazla bilgi için bkz: [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).  
+## <a name="calling-non-exceptional-functions-from-c"></a>C++'tan olmayan durum fonksiyonlarını çağırma  
+ C++'dan olağanüstü olmayan bir işlev çağırdığınızda, bu işlev hatalar varsa algılayan ve muhtemelen bir istisna atan bir C++ işlev içinde sarmalamak olur. Böyle bir sarmalayıcı işlevi tasarlarken, öncelikle sağlamak için özel durum garantisi türüne karar verin: fırlatmasız, güçlü veya temel. İkinci olarak, bir özel durum oluşturulursa tüm kaynakların, örneğin dosya tanıtıcılarının doğru yayımlanır böylece işlev tasarlayın. Genellikle, bu kaynaklara sahip olmak için akıllı işaretçiler veya benzer kaynak yöneticileri kullanmanız anlamına gelir. Tasarım konuları hakkında daha fazla bilgi için bkz. [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnek, Win32 kullanmak için C++ işlevlerini gösterir `CreateFile` ve `ReadFile` işlevleri dahili olarak açabilir ve iki dosyaları okuyabilir.  `File` Sınıfı, bir kaynak edinme olan dosya işleyici için başlatma (RAII) sarmalayıcı. Kurucusu "dosya bulunamadı" koşul algılar ve C++ modülü çağrı yığınını hata yaymak için bir özel durum oluşturur (Bu örnekte, `main()` işlevi). Sonra bir özel durum, bir `File` nesnesi tam olarak oluşturulan, otomatik olarak yıkıcı çağrıları `CloseHandle` dosya tanıtıcısı serbest bırakmak için. (Tercih ederseniz, Etkin Şablon kitaplığı (ATL) kullanabilirsiniz `CHandle` aynı bu amaç için sınıf veya `unique_ptr` özel bir Silici birlikte.) Win32 ve CRT API'leri çağırmak işlevler hataları algılar ve yerel olarak tanımlanan kullanarak C++ özel durumlarını throw `ThrowLastErrorIf` sırayla kullanan işlevi `Win32Exception` türetilmiş sınıf `runtime_error` sınıfı. Bu örnek uygulamasında tüm işlevleri güçlü özel durum garantisi sağlar; Bu işlevler herhangi bir noktada bir özel durum, kaynak sızmasını ve hiçbir program durumu değiştirilebilir.  
+ Aşağıdaki örnek, Win32 kullanan C++ işlevlerini gösterir. `CreateFile` ve `ReadFile` işlevleri dahili olarak açmak ve iki dosya okuma için.  `File` Sınıfı, kaynak alımı başlatma (RAII) sarmalayıcı dosya tanıtıcıları için olan. Oluşturucusuna bir "dosya bulunamadı" koşulu algılar ve C++ modülü çağrı yığınına hata yaymak için bir özel durum oluşturur (Bu örnekte, `main()` işlevi). Sonra bir özel durum oluşturulursa bir `File` nesnesi tamamen oluşturulduktan, yıkıcı otomatik olarak çağırır `CloseHandle` dosya tanıtıcısını bırakmak için. (İsterseniz, Etkin Şablon kitaplığı (ATL) kullanabileceğiniz `CHandle` sınıfı, aynı amaçla veya bir `unique_ptr` özel bir siliciyle birlikte.) Win32 ve CRT API çağıran işlevler hataları algılar ve ardından yerel olarak tanımlanan kullanan C++ özel durumlarını throw `ThrowLastErrorIf` sırayla kullanan işlevi, `Win32Exception` sınıfından türetilen `runtime_error` sınıfı. Bu örnekteki tüm işlevler güçlü özel durum garantisi sağlar; Bu işlevlerden herhangi bir noktada bir özel durum oluşturulursa, kaynak sızmaz ve program durumu değiştirilmez.  
   
 ```cpp  
 // compile with: /EHsc  
@@ -164,10 +164,10 @@ int main ( int argc, char* argv[] )
   
 ```  
   
-## <a name="calling-exceptional-code-from-non-exceptional-code"></a>Özel durumlu olmayan kod olağanüstü kodu çağırma  
- "Extern C" C programlar tarafından çağrılabilir olarak bildirilen C++ işlevlerini. C++ COM sunucusu herhangi bir dizi farklı dillerde yazılmış kod tarafından kullanılabilecek. C++ özel durumlu olmayan kod tarafından çağrılacak ortak özel durumu algılayan işlevleri uyguladığınızda, C++ işlevi geri çağırana yaymak özel durumlar izin vermemelidir. Bu nedenle, C++ işlevi işlemek ve uygunsa, özel durum çağıran özelliğini algılayan bir hata kodu dönüştürmek nasıl bilir her özel durum özellikle catch gerekir. Tüm olası özel durumlar biliniyorsa, C++ işlevi olmalıdır bir `catch(...)` bloğu son işleyici olarak. Programınızı bilinmeyen bir durumda olabileceğinden böyle bir durumda çağırana önemli bir hata raporu en iyisidir.  
+## <a name="calling-exceptional-code-from-non-exceptional-code"></a>Özel durumlu olmayan kod kodundan olağanüstü durum kodunu çağırma  
+ "Dış C" C programları tarafından çağrılabilir olarak bildirilen C++ işlevler. C++ COM sunucuları herhangi bir dizi farklı dillerde yazılan kod tarafından tüketilebilir. Genel özel durum duyarlı işlevleri özel durumlu olmayan kod tarafından çağrılmak üzere uygularken, C++ işlevi özel durumların tekrar çağırana yayılmasına izin vermemesi gerekir. Bu nedenle, C++ işlevi, işlemek ve uygunsa, özel durumu çağıranın anladığı bir hata koduna dönüştürmek bildiği her özel durum özellikle yakalamalıdır. Tüm potansiyel özel durumlar bilinmiyorsa, C++ işlevi olmalıdır bir `catch(...)` son işleyici olarak blok. Programınız bilinmeyen bir durumda olabilir. böyle bir durumda, en iyisi arayana önemli bir hata raporu olmasıdır.  
   
- Aşağıdaki örnek, durum herhangi bir özel durum bir Win32Exception veya türetilmiş bir özel durum türü olduğunu varsayar. bir işlev gösterir `std::exception`. İşlevi bu tür özel durumları yakalar ve hata bilgilerini çağırana Win32 hata kodu olarak yayar.  
+ Aşağıdaki örnek oluşturulabilecek tüm özel bir Win32Exception veya türetilmiş bir özel durum türü olduğunu varsayan bir işlev gösterir `std::exception`. İşlevi, bu tür herhangi bir özel durumu yakalar ve hata bilgisini çağırana bir Win32 hata kodu olarak yayar.  
   
 ```cpp  
 BOOL DiffFiles2(const string& file1, const string& file2)   
@@ -197,7 +197,7 @@ BOOL DiffFiles2(const string& file1, const string& file2)
   
 ```  
   
- Hata kodları için özel durumları dönüştürme olası bir sorunu hata kodları genellikle bir özel durum depolayabilir bilgi zenginliğinin içermeyen olur. Bu sorunu çözmek için sağlayabilirsiniz bir `catch` durum ve bir hata kodu dönüştürülmeden önce özel durum ayrıntıları kaydetmek için günlüğe kaydetme gerçekleştirebilirsiniz her bir özel durum türü için blok. Birden çok işlevler tümünü aynı kümesini kullanıyorsanız bu yaklaşım çok fazla kod yineleme oluşturabilirsiniz `catch` engeller. Uygulayan bir özel yardımcı programı işlevdeki bu blokları yeniden düzenleme kod yineleme önlemek için en iyi yolu olan `try` ve `catch` engeller ve içinde çağrılan işlev nesnesi kabul eden `try` bloğu. Her ortak işlevinde kodu için yardımcı program işlevi bir lambda ifadesi geçirin.  
+ Özel durumlardan hata kodlarına dönüştürdüğünüzde, hata kodlarının genellikle bir özel durumun depolayabileceği bilgi zenginliği içermeyen bir olası sorun olduğunu. Bunu ele almak için sağlayabilirsiniz bir **catch** blok harekete geçirilebilirse ve bir hata koduna dönüştürülmeden önce özel durumun ayrıntılarını kaydetmek için günlük işlemi her özel durum türü. Birden fazla işlevin hepsi aynı kümesi kullanıyorsanız bu yaklaşım çok fazla kod tekrarı oluşturabilir **catch** engeller. Kod tekrarından kaçınmanın en iyi yolu, söz konusu bloklar uygulayan bir özel bir yardımcı programda yeniden düzenlemektir tarafından olan **deneyin** ve **catch** engeller ve içindeçağrılanişlevnesnesinikabul**deneyin** blok. Her ortak işlev kodunda, kodu lambda ifadesiyle yardımcı program işlevine geçirin.  
   
 ```cpp  
 template<typename Func>   
@@ -220,7 +220,7 @@ bool Win32ExceptionBoundary(Func&& f)
   
 ```  
   
- Aşağıdaki örnekte nasıl functor tanımlayan lambda ifadesi yazılacağını gösterir. Lambda ifadesi kullanarak bir functor "satır içi olarak tanımlanan" olduğunda, genellikle yazılmış, adlandırılmış işlev nesnesi durumdakinden daha okumak kolaydır.  
+ Aşağıdaki örnek işlev nesnesini tanımlayan lambda ifadesinin nasıl yazılacağını gösterir. Bir functor, lambda ifadesi kullanılarak "satır içi" olduğunda, genellikle bu yazılmış bir adlandırılmış işlev nesnesi olarak olmasına kıyasla okuması daha kolay olur.  
   
 ```cpp  
 bool DiffFiles3(const string& file1, const string& file2)   
@@ -240,7 +240,7 @@ bool DiffFiles3(const string& file1, const string& file2)
   
 ```  
   
- Lambda ifadeleri hakkında daha fazla bilgi için bkz: [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).  
+ Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)   

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd4e586a211d7c4e2ead1ce3f225e2d92d2bd5a7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 37148a3849e859d7ca77595416616cfa0b952ecf
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418822"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939955"
 ---
 # <a name="ifnotexists-statement"></a>__if_not_exists Deyimi
-`__if_not_exists` Deyimi belirtilen tanımlayıcı var olup olmadığını sınar. Tanımlayıcı mevcut değilse, belirtilen ifade bloğu yürütülür.  
+**__İf_not_exists** deyimi belirtilen tanımlayıcı var olup olmadığını test eder. Tanımlayıcı mevcut değilse, belirtilen deyim bloğu yürütülür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,28 +38,28 @@ statements
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|`identifier`|Varlığı test etmek istediğiniz tanımlayıcısı.|  
-|`statements`|Varsa yürütmek için bir veya daha fazla deyimleri `identifier` yok.|  
+|`identifier`|Test etmek istediğiniz varlığı tanımlayıcısı.|  
+|`statements`|Bir veya daha fazla deyimlerini `identifier` yok.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 > [!CAUTION]
->  En güvenilir sonuçlar elde etmek için kullanmak `__if_not_exists` deyimi aşağıdaki kısıtlamalar altında.  
+>  En güvenilir sonuçlar elde etmek için kullanın **__if_not_exists** deyiminin altında aşağıdaki kısıtlamalar geçerlidir.  
   
--   Uygulama `__if_not_exists` deyimi yalnızca basit türlere, şablon yok.  
+-   Uygulama **__if_not_exists** deyimi yalnızca basit türlere, şablon yok.  
   
--   Uygulama `__if_not_exists` deyimi içinde veya dışında bir sınıf tanımlayıcıları. Geçerli `__if_not_exists` yerel değişkenler ifadesine.  
+-   Uygulama **__if_not_exists** deyimi içinde veya dışında bir sınıf tanımlayıcıları. Geçerli **__if_not_exists** yerel değişkenlere deyimi.  
   
--   Kullanım `__if_not_exists` deyimi yalnızca bir işlev gövdesi. Bir işlev gövdesi dışında `__if_not_exists` deyimi tam olarak tanımlı türler yalnızca test edebilirsiniz.  
+-   Kullanım **__if_not_exists** deyimi yalnızca bir işlev gövdesinin içinde. Bir işlev gövdesinin dışında **__if_not_exists** deyimi tam olarak tanımlanmamış türlerden yalnızca test edebilirsiniz.  
   
--   Aşırı yüklenen işlevler için test ettiğinizde, belirli bir aşırı yük form için test edilemez.  
+-   Aşırı yüklenmiş işlevler için test ettiğinizde, belirli bir aşırı yükleme form için test edilemez.  
   
- Tamamlayan `__if_not_exists` ifadesi [__if_exists](../cpp/if-exists-statement.md) deyimi.  
+ Tamamlayan **__if_not_exists** deyimi [__if_exists](../cpp/if-exists-statement.md) deyimi.  
   
 ## <a name="example"></a>Örnek  
- Bir örneğin nasıl kullanılacağı hakkında `__if_not_exists`, bkz: [__if_exists deyimi](../cpp/if-exists-statement.md).  
+ Nasıl kullanılacağı hakkında bir örnek **__if_not_exists**, bkz: [__if_exists deyimi](../cpp/if-exists-statement.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Seçim deyimleri](../cpp/selection-statements-cpp.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [__if_exists Deyimi](../cpp/if-exists-statement.md)

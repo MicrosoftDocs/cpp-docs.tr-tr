@@ -18,39 +18,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e6a1df3bb262a814c641f5bfbcee070ec5de344
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d150d2419885c2f0273e376fd58750417ced6756
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948106"
 ---
 # <a name="this-pointer"></a>this İşaretçisi
-**Bu** işaretçidir yalnızca statik olmayan üye işlevleri içinde erişilebilir bir işaretçi bir **sınıfı**, `struct`, veya **UNION** türü. Üye işlevinin çağrıldığı nesneye işaret eder. Statik üye işlevleri sahip bir **bu** işaretçi.  
+**Bu** işaretçisine, yalnızca statik olmayan üye işlevlerinin içinden erişilebilir bir **sınıfı**, **yapı**, veya **birleşim** türü. Üye işlevinin çağrıldığı nesneye işaret eder. Statik üye işlevleri yoktur bir **bu** işaretçi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      this   
+this   
 this->member-identifier  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir nesnenin **bu** işaretçi nesnenin kendisini; parçası değil sonucu yansıtılmaz bir `sizeof` deyimi nesne üzerinde. Bunun yerine, bir nesne için statik olmayan bir üye işlevi çağrıldığında, derleyici tarafından nesnenin adresi gizli bir bağımsız değişken olarak işleve geçirilir. Örneğin, aşağıdaki işlev çağrısı:  
+ Bir nesnenin **bu** işaretçisi nesnenin kendisini; bir parçası değil sonucuna yansıtılmaz bir **sizeof** deyimi nesne üzerinde. Bunun yerine, bir nesne için statik olmayan bir üye işlevi çağrıldığında, derleyici tarafından nesnenin adresi gizli bir bağımsız değişken olarak işleve geçirilir. Örneğin, aşağıdaki işlev çağrısı:  
   
-```  
+```cpp 
 myDate.setMonth( 3 );  
 ```  
   
  şu şekilde yorumlanabilir:  
   
-```  
+```cpp 
 setMonth( &myDate, 3 );  
 ```  
   
- Nesnenin adresi üye fonksiyonu içinde kullanılabilir **bu** işaretçi. Çoğu kullanımlarını **bu** örtük şunlardır. Gereksiz olsa, açıkça kullanmak yasal, olduğu **bu** sınıf üyeleri için söz konusu olduğunda. Örneğin:  
+ Nesnenin adresi olarak üye işlev içinden kullanılabilir **bu** işaretçi. Çoğu kullanım **bu** örtüktür. Gereksiz olsa da, açıkça kullanılacak hukuk olduğu **bu** sınıf üyelerine başvuru yaparken. Örneğin:  
   
-```  
+```cpp 
 void Date::setMonth( int mn )  
 {  
    month = mn;            // These three statements  
@@ -61,25 +62,25 @@ void Date::setMonth( int mn )
   
  `*this` ifadesi bir üye işlevinden geçerli nesneyi döndürmek için yaygın olarak kullanılır:  
   
-```  
+```cpp 
 return *this;  
 ```  
   
- **Bu** işaretçi kendi kendine başvuru karşı koruma sağlamak için de kullanılır:  
+ **Bu** işaretçi kendi kendine başvuru yapmaya karşı koruma sağlamak için de kullanılır:  
   
-```  
+```cpp 
 if (&Object != this) {  
 // do not execute in cases of self-reference  
 ```  
   
 > [!NOTE]
->  Çünkü **bu** işaretçidir değiştirilemez, atamalar **bu** izin verilmez. C++ önceki uygulamalarında izin atamalarını **bu**.  
+>  Çünkü **bu** this işaretçisi atamaları **bu** izin verilmez. C++'ın önceki uygulamaları atama yapmaya izin **bu**.  
   
- Bazen, **bu** işaretçi doğrudan kullanılan — Örneğin, kendi kendine başvuran verileri işlemek için yapıları, geçerli nesne adresini gerekli olduğu.  
+ Bazen, **bu** işaretçisi doğrudan kullanılır — Örneğin, kendine başvuru yapan veri yapılarını işlemek için geçerli nesnenin adresinin gerekli olduğu.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // this_pointer.cpp  
 // compile with: /EHsc  
   
@@ -147,12 +148,12 @@ my buffer
 your buffer  
 ```  
   
-## <a name="type-of-the-this-pointer"></a>Bu tür işaretçi  
- **Bu** işaretçinin türü tarafından işlevi bildiriminde değiştirilebilir **const** ve `volatile` anahtar sözcükler. Bir işlevi bu anahtar sözcüklerden birinin veya daha fazlasının özniteliklerini alacak şekilde bildirmek için anahtar sözcükleri işlev bağımsız değişken listesinden sonra ekleyin.  
+## <a name="type-of-the-this-pointer"></a>Bu öğenin türü işaretçi  
+ **Bu** işaretçinin türü, işlev bildiriminde tarafından değiştirilebilir **const** ve **geçici** anahtar sözcükleri. Bir işlevi bu anahtar sözcüklerden birinin veya daha fazlasının özniteliklerini alacak şekilde bildirmek için anahtar sözcükleri işlev bağımsız değişken listesinden sonra ekleyin.  
   
  Bu örneği göz önünde bulundurun:  
   
-```  
+```cpp 
 // type_of_this_pointer1.cpp  
 class Point  
 {  
@@ -163,9 +164,9 @@ int main()
 }  
 ```  
   
- Üye işlevi, önceki kod bildirir `X`, burada **bu** işaretçi olarak değerlendirilir bir **const** işaretçi bir **const** nesnesi. Birleşimlerini *MS mod listesi* seçenekleri kullanılabilir ancak bunlar her zaman gösterdiği nesne değiştirme **bu**değil **bu** işaretçi kendisi. Bu nedenle, aşağıdaki bildirimi işlev bildirir `X`; **bu** işaretçi bir **const** işaretçi bir **const** nesnesi:  
+ Yukarıdaki kod, bir üye işlev bildirir `X`, hangi **bu** işaretçisi olarak kabul edildiği bir **const** işaretçi bir **const** nesne. Birleşimlerini *cv mod listesi* seçenekleri kullanılabilir ancak bunlar her zaman işaret ettiği nesneyi değiştirmek **bu**değil **bu** işaretçinin kendisinde. Bu nedenle, aşağıdaki bildirimi işlev bildirir `X`; **bu** işaretçi bir **const** işaretçi bir **const** nesnesi:  
   
-```  
+```cpp 
 // type_of_this_pointer2.cpp  
 class Point  
 {  
@@ -176,11 +177,11 @@ int main()
 }  
 ```  
   
- Türü **bu** bir üye işlevi aşağıdaki sözdizimi tarafından açıklanan nerede *MS niteleyici listesinde* olabilir ve üye işlevleri bildirimcisi belirlenir **const**veya **volatile** (veya her ikisi de) ve *sınıf türü* sınıfı adıdır:  
+ Türünü **bu** üye işlevi aşağıdaki sözdizimi tarafından açıklanan burada *cv niteleyici listesi* olabilir ve üye işlevleri bildirimcisinden belirlendiği **const**veya **geçici** (veya her ikisi de) ve *sınıf türü* sınıf adıdır:  
   
- *sınıf türü [MS-niteleyici-list]* **\* const bu**  
+ *[cv niteleyici listesi] sınıf türü* **\* const bu**  
   
- Diğer bir deyişle, **bu** her zaman bir const; işaretçidir onu atanamaz.  **Const** veya `volatile` gösterdiği sınıf örneği için üye işlevi bildiriminde kullanılan niteleyicileri Uygula **bu** bu işlev kapsamında.  
+ Diğer bir deyişle, **bu** her zaman bir const işaretçisidir; olduğundan yeniden atanamaz.  **Const** veya **geçici** işaret ettiği sınıf örneği uygulanacağı üye işlevi bildiriminde kullanılan niteleyicileri **bu** bu işlevin kapsamında.  
   
  Aşağıdaki tabloda, bu değiştiricilerin nasıl çalıştığı hakkında daha fazla bilgi verilmektedir.  
   
@@ -188,15 +189,15 @@ int main()
   
 |Değiştirici|Açıklama|  
 |--------------|-------------|  
-|**const**|Üye verileri değiştiremezsiniz. olmayan üye işlevleri çağıramaz **const**.|  
-|`volatile`|Üye verileri her erişildiğinde bellekten yüklenir; bazı iyileştirmeler devre dışı bırakılır.|  
+|**const**|Üye verilerini değiştiremez; olmayan üye işlevleri çağrılamaz **const**.|  
+|**volatile**|Üye verileri her erişildiğinde bellekten yüklenir; bazı iyileştirmeler devre dışı bırakılır.|  
   
- Geçirmek için bir hata olduğunu bir **const** değil bir üye işlevi nesnesine **const**. Benzer şekilde, bir `volatile` nesnesini `volatile` olmayan bir üye işlevine geçirmek bir hatadır.  
+ Geçirilecek bir hata olduğunu bir **const** olmayan bir üye işlev nesnesine **const**. Benzer şekilde, bu geçirmek bir hatadır bir **geçici** olmayan bir üye işlev nesnesine **geçici**.  
   
- Üye işlevleri bildirilen **const** üye verileri değiştiremezsiniz — bu tür işlevler içinde **bu** işaretçidir gösteren bir işaretçi bir **const** nesnesi.  
+ Olarak bildirilen üye işlevleri **const** üye verilerini değiştiremez; böyle işlevlerde, **bu** işaretçisidir bir işaretçi bir **const** nesne.  
   
 > [!NOTE]
->  Olarak Kurucular ve Yıkıcılar bildirilemez **const** veya `volatile`. Ancak, olabilirler üzerinde çağrılan **const** veya `volatile` nesneleri.  
+>  Olarak oluşturucular ve Yıkıcılar bildirilemez **const** veya **geçici**. Ancak, olabilirler çağrılabilirler **const** veya **geçici** nesneleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)   

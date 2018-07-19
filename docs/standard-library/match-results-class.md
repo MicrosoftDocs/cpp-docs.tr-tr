@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 407da94d8d813e4951f12ad9951dc64ac298f61d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 256ca308160a2e34341c6156ee761473c13142e1
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863653"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964489"
 ---
 # <a name="matchresults-class"></a>match_results Sınıfı
 
-Bir dizi submatches tutar.
+Bir dizi alt eşleşmelerin tutar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,13 +69,13 @@ class match_results {
 
 ### <a name="parameters"></a>Parametreler
 
-`BidIt` Submatches yineleyici türü.
+*BidIt* alt eşleşmeleri için yineleyici türü.
 
-`Alloc` Depolama yönetmek için bir ayırıcı türü.
+*Ayırma* depolamayı yönetmek için bir ayırıcı türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı türündeki öğeler değiştirilebilir olmayan bir dizi denetleyen bir nesneyi tanımlayan `sub_match<BidIt>` bir normal ifade araması tarafından oluşturulur. Her öğe, o öğeye karşılık gelen yakalama grubu eşleşen değişkene işaret eder.
+Şablon sınıfı türü öğeler değiştirilebilir olmayan bir dizi denetleyen bir nesneyi tanımlayan `sub_match<BidIt>` bir normal ifade araması tarafından oluşturulur. Her öğenin o öğe için karşılık gelen yakalama grubuyla eşleşen alt diziyi işaret eder.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -93,7 +93,7 @@ typedef Alloc allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon bağımsız değişken eşanlamlısı typedef olduğu `Alloc`.
+Typedef şablon bağımsız değişkeni eşanlamlıdır *ayırma*.
 
 ### <a name="example"></a>Örnek
 
@@ -206,7 +206,7 @@ empty == false
 
 ## <a name="begin"></a>  match_results::Begin
 
-Submatch dizisi başlangıcını belirtir.
+Alt eşleşme dizisi başlangıcını belirtir.
 
 ```cpp
 const_iterator begin() const;
@@ -214,7 +214,7 @@ const_iterator begin() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini rasgele erişim yineleyici bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi ötesinde) döndürür.
+Üye işlevi bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi bitiminin ötesinde) bir rastgele erişim yineleyici döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -335,7 +335,7 @@ typedef typename iterator_traits<BidIt>::value_type char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef türü için eş anlamlı olduğundan `iterator_traits<BidIt>::value_type`, aranan karakter dizisi öğe türüne olduğu.
+Typedef türü eşanlamlıdır `iterator_traits<BidIt>::value_type`, aranan karakter dizisi ' öğe türü.
 
 ### <a name="example"></a>Örnek
 
@@ -448,7 +448,7 @@ empty == false
 
 ## <a name="const_iterator"></a>  match_results::const_iterator
 
-Submatches const yineleyici türü.
+Alt eşleşmeleri için const yineleyici türü.
 
 ```cpp
 typedef T0 const_iterator;
@@ -456,7 +456,7 @@ typedef T0 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef denetimli sırası için sabit bir rastgele erişim yineleyici olarak hizmet verebilir nesneyi açıklar.
+Typedef, denetlenen dizi için sabit bir rastgele erişim yineleyici olarak hizmet verebilen bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -569,7 +569,7 @@ empty == false
 
 ## <a name="const_reference"></a>  match_results::const_reference
 
-Bir öğe const başvurusu türü.
+Bir öğe const başvuru türü.
 
 ```cpp
 typedef const typename Alloc::const_reference const_reference;
@@ -577,7 +577,7 @@ typedef const typename Alloc::const_reference const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef öğenin denetimli dizisi sabit bir başvuru olarak hizmet verebilir nesneyi açıklar.
+Typedef değerinin denetlenen dizideki bir öğe için sabit bir başvuru olarak hizmet verebilen bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -690,7 +690,7 @@ empty == false
 
 ## <a name="difference_type"></a>  match_results::difference_type
 
-Yineleyici fark türü.
+Bir yineleyicinin fark türü.
 
 ```cpp
 typedef typename iterator_traits<BidIt>::difference_type difference_type;
@@ -698,7 +698,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef türü için eş anlamlı olduğundan `iterator_traits<BidIt>::difference_type`; denetimli dizisi öğeler noktası herhangi iki yineleyiciler arasındaki farkı temsil eden bir nesne açıklar.
+Typedef türü eşanlamlıdır `iterator_traits<BidIt>::difference_type`; değerinin denetlenen dizideki öğeler işaret herhangi iki yineleyici arasındaki farkı temsil edebilen bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -811,7 +811,7 @@ empty == false
 
 ## <a name="empty"></a>  match_results::empty
 
-Hiçbir submatches için testleri.
+Hiçbir alt eşleşmelerin sınar.
 
 ```cpp
 bool empty() const;
@@ -819,7 +819,7 @@ bool empty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yalnızca normal ifade araması başarısız olduysa true değerini döndürür.
+Üye işlevi, yalnızca normal ifade araması başarısız olduysa true değerini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -932,7 +932,7 @@ empty == false
 
 ## <a name="end"></a>  match_results::End
 
-Submatch dizinin sonuna belirler.
+Alt eşleşme dizinin sonuna belirler.
 
 ```cpp
 const_iterator end() const;
@@ -940,7 +940,7 @@ const_iterator end() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yalnızca dizisi ötesinde işaret yineleyici döndürür.
+Üye işlevi, dizinin sonuna hemen ötesine işaret eden bir yineleyici döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1066,19 +1066,19 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 
 ### <a name="parameters"></a>Parametreler
 
-`OutIt` Çıktı yineleyici türü.
+*OutIt* çıkış yineleyici türü.
 
-`out` Yazılacak çıkış akışı.
+*Çıkış* yazılacak çıkış akışı.
 
-`fmt` Biçim dizesi.
+*FMT* biçim dizesi.
 
-`flags` Biçim bayraklar.
+*bayrakları* biçim bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Biçimlendirilmiş metin biçimi denetimindeki her üye işlevi oluşturur `fmt`. Biçimlendirilmiş metin ilk üye işlev bağımsız değişkeni tarafından tanımlanan dizisi Yazar `out` ve döndürür `out`. İkinci üye işlevi biçimlendirilmiş metnin bir kopyasını tutarak bir dize nesnesi döndürür.
+Her üye işlevi biçiminin denetiminde biçimlendirilmiş metin üretir *fmt*. İlk üye işlevi biçimlendirilmiş metnin bağımsız değişkeni tarafından tanımlanan diziye Yazar *kullanıma* ve döndürür *kullanıma*. İkinci üye işlevi biçimlendirilmiş metnin bir kopyasını tutarak bir dize nesnesi döndürür.
 
-Biçimlendirilmiş metin oluşturmak için. metin dize biçiminde normalde hedef sırası kopyalanır. Biçim dizesindeki her çıkış dizisi temsil ettiği metin tarafından değiştirilir. Kopyalama ve değiştirmeyle ilgili ayrıntılar işleve geçirilen biçim bayrakları tarafından denetlenir.
+Biçimlendirilmiş metin oluşturmak için. Biçim dizesindeki değişmez metin normalde hedef dizisine kopyalanır. Biçim dizesindeki her çıkış dizisi temsil ettiği metin tarafından değiştirilir. Kopyalama ve değiştirmeyle ilgili ayrıntılar işleve geçirilen biçim bayrakları tarafından denetlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1191,7 +1191,7 @@ empty == false
 
 ## <a name="get_allocator"></a>  match_results::get_allocator
 
-Saklı ayırıcısı döndürür.
+Depolanan ayırıcı döndürür.
 
 ```cpp
 allocator_type get_allocator() const;
@@ -1199,7 +1199,7 @@ allocator_type get_allocator() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye fonksiyonu tarafından kullanılan ayırıcısı nesnesinin bir kopyasını döndürür `*this` ayırmak için kendi `sub_match` nesneleri.
+Üye işlevi tarafından kullanılan ayırıcı nesnesinin bir kopyasını döndürür `*this` ayırmak için kendi `sub_match` nesneleri.
 
 ### <a name="example"></a>Örnek
 
@@ -1312,7 +1312,7 @@ empty == false
 
 ## <a name="iterator"></a>  match_results::iterator
 
-Submatches yineleyici türü.
+Alt eşleşmeleri için yineleyici türü.
 
 ```cpp
 typedef const_iterator iterator;
@@ -1320,7 +1320,7 @@ typedef const_iterator iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimli sırası için rasgele erişim yineleyici olarak hizmet verebilir bir nesne türünü tanımlar.
+Denetlenen dizi için bir rastgele erişim yineleyici olarak hizmet verebilen bir nesneyi tanımlayan bir tür.
 
 ### <a name="example"></a>Örnek
 
@@ -1433,7 +1433,7 @@ empty == false
 
 ## <a name="length"></a>  match_results::length
 
-Bir submatch uzunluğunu döndürür.
+Bir alt eşleşme uzunluğunu döndürür.
 
 ```cpp
 difference_type length(size_type sub = 0) const;
@@ -1441,11 +1441,11 @@ difference_type length(size_type sub = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`sub` Submatch dizini.
+*alt* alt eşleşme dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `(*this)[sub].length()`.
+Üye işlevinin döndürdüğü `(*this)[sub].length()`.
 
 ### <a name="example"></a>Örnek
 
@@ -1558,7 +1558,7 @@ empty == false
 
 ## <a name="match_results"></a>  match_results::match_results
 
-Nesnesi oluşturur.
+Bir nesne oluşturur.
 
 ```cpp
 explicit match_results(const Alloc& alloc = Alloc());
@@ -1568,13 +1568,13 @@ match_results(const match_results& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`alloc` Depolamak için ayırıcısı nesnesi.
+*ayırma* depolanacak ayırıcı nesne.
 
-`right` Kopyalamak için match_results nesnesi.
+*doğru* match_results kopyalanacak nesneye.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucusu yapıları bir `match_results` hiçbir submatches tutan nesne. İkinci oluşturucu yapıları bir `match_results` bir kopyasını nesne `right`.
+İlk Oluşturucu yapıları bir `match_results` hiçbir alt eşleşmelerin tutan nesne. İkinci oluşturucu yapıları bir `match_results` bir kopyasını nesnesini *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -1687,7 +1687,7 @@ empty == false
 
 ## <a name="max_size"></a>  match_results::max_size
 
-Submatches en büyük sayısını alır.
+Alt eşleşmeleri en büyük sayısını alır.
 
 ```cpp
 size_type max_size() const;
@@ -1695,7 +1695,7 @@ size_type max_size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini nesne denetleyebilirsiniz uzun sırası uzunluğunu döndürür.
+Üye işlevi, nesneyi de denetleyebilir kastetmek uzunluğunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1816,11 +1816,11 @@ match_results& operator=(const match_results& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Kopyalamak için match_results nesnesi.
+*doğru* match_results kopyalanacak nesneye.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci tarafından denetlenen dizisi değiştirir `*this` tarafından denetlenen dizisi kopyasıyla `right`.
+Üye işleci tarafından denetlenen dizinin değiştirir `*this` tarafından denetlenen dizinin bir kopyasını *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -1933,7 +1933,7 @@ empty == false
 
 ## <a name="op_at"></a>  match_results::operator]
 
-Bir alt nesne erişin.
+Bir alt nesneye erişim.
 
 ```cpp
 const_reference operator[](size_type n) const;
@@ -1941,11 +1941,11 @@ const_reference operator[](size_type n) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`n` Submatch dizini.
+*n* alt eşleşme dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini öğesine bir başvuru döndürür `n` denetimli dizisi ya da boş bir başvuru `sub_match` , nesne `size() <= n` veya grup yakalama `n` eşleşen bir parçası değil.
+Üye işlevi öğeye bir başvuru döndürür *n* denetlenen dizi ya da boş bir başvuru `sub_match` , nesne `size() <= n` veya yakalama grubu *n* eşleşmenin bir parçası değildi.
 
 ### <a name="example"></a>Örnek
 
@@ -2066,11 +2066,11 @@ difference_type position(size_type sub = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`sub` Submatch dizini.
+*alt* alt eşleşme dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `std::distance(prefix().first, (*this)[sub].first)`, diğer bir deyişle, ilk karakter, hedef sırası mesafe submatch ilk karakterle işaret için öğesi tarafından `n` denetimli dizisi.
+Üye işlevinin döndürdüğü `std::distance(prefix().first, (*this)[sub].first)`, diğer bir deyişle, ilk karakter, alt eşleşme için hedef dizideki ilk karakteri uzaklığı işaret edilen öğe tarafından `n` denetlenen dizinin.
 
 ### <a name="example"></a>Örnek
 
@@ -2183,7 +2183,7 @@ empty == false
 
 ## <a name="prefix"></a>  match_results::prefix
 
-İlk submatch önce dizisini alır.
+İlk alt eşleşme önce dizisini alır.
 
 ```cpp
 const_reference prefix() const;
@@ -2191,7 +2191,7 @@ const_reference prefix() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi bir başvuru türünde bir nesne döndürür `sub_match<BidIt>` hedef sırası başlangıcında başlar ve bitişi karakter dizisi işaret `(*this)[0].first`, diğer bir deyişle, eşleşen değişkene önündeki metnin işaret eder.
+Üye işlevi bir başvuru türü bir nesne döndürür `sub_match<BidIt>` işaret eden hedef dizideki başlangıcında başlar ve biter karakter dizisi `(*this)[0].first`, diğer bir deyişle, eşleşen alt diziyi önündeki metne işaret eder.
 
 ### <a name="example"></a>Örnek
 
@@ -2312,7 +2312,7 @@ typedef const_reference reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü için eş anlamlı türüdür `const_reference`.
+Türe ilişkin bir eşanlam türüdür `const_reference`.
 
 ### <a name="example"></a>Örnek
 
@@ -2425,7 +2425,7 @@ empty == false
 
 ## <a name="size"></a>  match_results::size
 
-Submatches sayar.
+Alt eşleşmelerin sayısını sayar.
 
 ```cpp
 size_type size() const;
@@ -2433,7 +2433,7 @@ size_type size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye yakalama grubu araması için kullanılan normal ifadede'birden fazla döndürür bir işlev veya hiçbir arama yaptıysanız sıfır.
+Üye araması için kullanılan normal ifadedeki yakalama gruplarının sayısı'birden fazla döndürür bir işlev veya arama yaptıysanız sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -2546,7 +2546,7 @@ empty == false
 
 ## <a name="size_type"></a>  match_results::size_type
 
-Bir submatch sayısı türü.
+Alt eşleşme sayısı türü.
 
 ```cpp
 typedef typename Alloc::size_type size_type;
@@ -2554,7 +2554,7 @@ typedef typename Alloc::size_type size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü için eş anlamlı türüdür `Alloc::size_type`.
+Türe ilişkin bir eşanlam türüdür `Alloc::size_type`.
 
 ### <a name="example"></a>Örnek
 
@@ -2667,7 +2667,7 @@ empty == false
 
 ## <a name="str"></a>  match_results::Str
 
-Bir submatch döndürür.
+Bir alt eşleşme döndürür.
 
 ```cpp
 string_type str(size_type sub = 0) const;
@@ -2675,11 +2675,11 @@ string_type str(size_type sub = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`sub` Submatch dizini.
+*alt* alt eşleşme dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `string_type((*this)[sub])`.
+Üye işlevinin döndürdüğü `string_type((*this)[sub])`.
 
 ### <a name="example"></a>Örnek
 
@@ -2800,7 +2800,7 @@ typedef basic_string<char_type> string_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü için eş anlamlı türüdür `basic_string<char_type>`.
+Türe ilişkin bir eşanlam türüdür `basic_string<char_type>`.
 
 ### <a name="example"></a>Örnek
 
@@ -2913,7 +2913,7 @@ empty == false
 
 ## <a name="suffix"></a>  match_results::suffix
 
-Sonra son submatch dizisini alır.
+Sonra son alt eşleşme dizisini alır.
 
 ```cpp
 const_reference suffix() const;
@@ -2921,7 +2921,7 @@ const_reference suffix() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi bir başvuru türünde bir nesne döndürür `sub_match<BidIt>` başlangıcı karakter dizisi işaret `(*this)[size() - 1].second` ve diğer bir deyişle, hedef dizinin sonuna uçta eşleşen değişkene aşağıdaki metni işaret.
+Üye işlevi bir başvuru türü bir nesne döndürür `sub_match<BidIt>` işaret eden başlangıcı karakter dizisi `(*this)[size() - 1].second` ve diğer bir deyişle, hedef dizinin sonuna uçta eşleşen alt diziyi takip metne işaret.
 
 ### <a name="example"></a>Örnek
 
@@ -3042,11 +3042,11 @@ void swap(const match_results& right) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-`right` İle değiştirme match_results nesnesi.
+*doğru* match_results ile değiştirilecek nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini içeriğini değiştirir `*this` ve `right` sabit zaman ve özel durumlar oluşturmadığını.
+Üye işlevi içeriğini değiştirir `*this` ve *doğru* sabit zamanlı ve özel durum oluşturmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -3159,7 +3159,7 @@ empty == false
 
 ## <a name="value_type"></a>  match_results::value_type
 
-Bir submatch türü.
+Bir alt eşleşme türü.
 
 ```cpp
 typedef sub_match<BidIt> value_type;
@@ -3167,7 +3167,7 @@ typedef sub_match<BidIt> value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef türü için eş anlamlı olduğundan `sub_match<BidIt>`.
+Typedef türü eşanlamlıdır `sub_match<BidIt>`.
 
 ### <a name="example"></a>Örnek
 

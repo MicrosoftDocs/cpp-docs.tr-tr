@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3e3138c9028f72327c9d4bf2c2f2e82c942dbde
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 54e4f4a2ac9be9dc68320e5121bc86e5a4280807
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422442"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941047"
 ---
 # <a name="typeinfo-class"></a>type_info Sınıfı
-**Type_info** sınıfı programında derleyici tarafından üretilen türü bilgileri açıklar. Bu sınıfın nesneleri, tür için bir ada etkili şekilde bir işaretçi depolar. **Type_info** sınıfı, iki tür eşitlik için karşılaştırılması veya harmanlama sırası için uygun kodlanmış bir değer de depolar. Türler için kodlama kurallarını ve harmanlama sırası belirsizdir ve programdan programa farklılık gösterebilir.  
+`type_info` Sınıfı programında derleyici tarafından oluşturulan tür bilgilerini açıklar. Bu sınıfın nesneleri, tür için bir ada etkili şekilde bir işaretçi depolar. `type_info` Sınıfı ayrıca iki tür eşitlik için karşılaştırma veya harmanlama sırası için uygun kodlanmış bir değer depolar. Türler için kodlama kurallarını ve harmanlama sırası belirsizdir ve programdan programa farklılık gösterebilir.  
   
- `<typeinfo>` Üstbilgi dosyası içerilmelidir kullanmak için **type_info** sınıfı. Arabirim için **type_info** sınıfı:  
+ `<typeinfo>` Üstbilgi dosyası kullanmak için dahil edilen olmalıdır `type_info` sınıfı. Arabirimin `type_info` sınıfı:  
   
 ```cpp
 class type_info {  
@@ -42,19 +42,19 @@ public:
 };  
 ```  
   
- Nesnelerin örneği oluşturulamıyor **type_info** sınıfı yalnızca özel kopya Oluşturucu olduğundan doğrudan sınıfı. (Geçici) oluşturmak için tek yolu **type_info** nesnesi kullanmaktır [TypeID](../cpp/typeid-operator.md) işleci. Atama işleci ayrıca özel olduğundan kopyalayamaz veya sınıfın nesnelerini atamak **type_info**.  
+ Nesnelerin örneği oluşturulamıyor `type_info` sınıfı yalnızca bir özel kopya Oluşturucu olduğundan doğrudan sınıf. Bir (geçici) oluşturmak için tek yolu `type_info` kullanılacak nesnedir [TypeID](../cpp/typeid-operator.md) işleci. Atama işleci de özel olduğundan, kopyalayamaz veya sınıfın nesneleri Ata `type_info`.  
   
- **type_info::hash_code** türü değerleri eşlemek için uygun bir karma işlevi tanımlar **TypeInfo** dizin değerlerin bir dağıtım.  
+ `type_info::hash_code` türü değerleri için uygun bir karma işlevi tanımlar `typeinfo` dizin değerlerinin dağıtımına.  
   
- İşleçler `==` ve `!=` eşitlik ve eşitsizlik için diğer ile karşılaştırmak için kullanılan **type_info** nesneleri, sırasıyla.  
+ İşleçler `==` ve `!=` eşitlik ve eşitsizlik için diğer karşılaştırmak için kullanılan `type_info` nesneleri, sırasıyla.  
   
- Türlerin ve devralma ilişkilerinin harmanlama sırası arasında bir bağlantı yoktur. Kullanım **type_info::before** türleri harmanlama sırasını belirlemek için üye işlevi. Garantisi yoktur, **type_info::before** farklı programlar ya da aynı şekilde programın bile farklı çalıştırmalarını aynı sonucu verecek olan. Bu şekilde **type_info::before** adres-of için benzer **(&)** işleci.  
+ Türlerin ve devralma ilişkilerinin harmanlama sırası arasında bir bağlantı yoktur. Kullanım `type_info::before` türlerin harmanlama sırasını belirlemek için üye işlevi. Garanti yoktur, `type_info::before` farklı programlar veya hatta farklı çalışmalarında aynı programın aynı sonucu verir. Bu şekilde `type_info::before` address-of benzer `(&)` işleci.  
   
- **Type_info::name** üye işlevinin döndürdüğü bir **const char\***  türünün okunabilir adını temsil eden bir null ile sonlandırılmış dizeye. İşaret edilen bellek önbelleğe alınır ve hiçbir zaman doğrudan kaldırılmamalıdır.  
+ `type_info::name` Üye işlevinin döndürdüğü bir `const char*` insanlar tarafından okunabilen tür adını temsil eden boş sonlandırılmış bir dize. İşaret edilen bellek önbelleğe alınır ve hiçbir zaman doğrudan kaldırılmamalıdır.  
   
- **Type_info::raw_name** üye işlevinin döndürdüğü bir **const char\***  nesne türü düzenlenmiş adını temsil eden bir null ile sonlandırılmış dizeye. Ad aslında yerden kazanmak için düzenlenmiş hâli içinde saklanır. Sonuç olarak, bu işlev hızlıdır **type_info::name** adı bilgilerini kaldırmak gerekli olmayan olduğundan. Tarafından döndürülen dize **type_info::raw_name** işlevi karşılaştırma işlemlerinde kullanışlıdır ancak okunabilir değil. Okunabilir dize gerekiyorsa kullanın **type_info::name** yerine işlev.  
+ `type_info::raw_name` Üye işlevinin döndürdüğü bir `const char*` nesne türünün düzenlenmiş adını temsil eden boş sonlandırılmış bir dize. Ad aslında yerden kazanmak için düzenlenmiş hâli içinde saklanır. Sonuç olarak, bu işlev hızlıdır, `type_info::name` , adın düzenlemesini kaldırması gerekmediğinden. Tarafından döndürülen dize `type_info::raw_name` işlevi karşılaştırma işlemlerinde yararlıdır, ancak okunabilir değil. Kullanıcı tarafından okunabilen bir dize ihtiyacınız varsa, `type_info::name` işlevini.  
   
- Tür bilgilerini çok biçimli sınıflar serileştirilebilmesi için oluşturulan [/GR (çalışma zamanı türü bilgileri etkinleştir)](../build/reference/gr-enable-run-time-type-information.md) derleyici seçeneği belirtildi.  
+ Tür bilgileri yalnızca şu durumlarda çok biçimli sınıflar için oluşturulan [/GR (çalışma zamanı türü bilgileri etkinleştir)](../build/reference/gr-enable-run-time-type-information.md) derleyici seçeneği belirtildi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalışma Zamanı Tür Bilgileri](../cpp/run-time-type-information.md)

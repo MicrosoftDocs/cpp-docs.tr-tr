@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5b06bf475c60c0190fc6ab78f4357e1b247f1d8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5ed197cc1f18821b65c249ee15a7e75f54fc7a32
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361645"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884772"
 ---
 # <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits sınıfı
-Bu sınıf varsayılan öğesi karşılaştırma işlevleri sağlar.  
+Bu sınıf, varsayılan öğe karşılaştırma işlevleri sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,8 +37,8 @@ class CDefaultCompareTraits
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Bir koleksiyonda depolanan verilerin türü.  
+ *T*  
+ Koleksiyonda depolanacak veri türü.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -46,62 +46,62 @@ class CDefaultCompareTraits
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDefaultCompareTraits::CompareElements](#compareelements)|(Statik) Eşitlik için iki öğeleri karşılaştırmak için bu işlevini çağırın.|  
-|[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(Statik) Büyük ve küçük öğeyi belirlemek üzere bu işlevini çağırın.|  
+|[CDefaultCompareTraits::CompareElements](#compareelements)|(Statik) Eşitlik için iki öğe karşılaştırmak için bu işlevi çağırın.|  
+|[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(Statik) Büyük ve daha az öğe belirlemek için bu işlevi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, bir koleksiyon sınıfı nesnesinde depolanan öğeleri karşılaştırma için iki statik işlevler içerir. Bu sınıf tarafından kullanılan [CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md).  
+ Bu sınıf, bir koleksiyon sınıfı nesnesinde saklanan öğe karşılaştırmak için iki statik işlevler içerir. Bu sınıf tarafından kullanılan [CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md).  
   
- Daha fazla bilgi için bkz: [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
+ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
 ##  <a name="compareelements"></a>  CDefaultCompareTraits::CompareElements  
- Eşitlik için iki öğeleri karşılaştırmak için bu işlevini çağırın.  
+ Eşitlik için iki öğe karşılaştırmak için bu işlevi çağırın.  
   
 ```
 static bool CompareElements(const T& element1, const T& element2);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `element1`  
+ *element1*  
  İlk öğe.  
   
- `element2`  
+ *element2*  
  İkinci öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğeleri yanlış Aksi takdirde, eşitse true döndürür.  
+ Öğe yanlış Aksi takdirde, eşitse true döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan bu işlev eşitlik uygulamasıdır ( `==`) işleci. Basit veri türleri farklı nesneler için bu işlev geçersiz kılınması gerekebilir.  
+ Bu işlev varsayılan uygulamasını eşitliği olan (**==**) işleci. Basit veri türleri dışındaki nesneler için bu işlev geçersiz kılınması gerekebilir.  
   
 ##  <a name="compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered  
- Büyük ve küçük öğeyi belirlemek üzere bu işlevini çağırın.  
+ Büyük ve daha az öğe belirlemek için bu işlevi çağırın.  
   
 ```
 static int CompareElementsOrdered(const T& element1, const T& element2);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `element1`  
+ *element1*  
  İlk öğe.  
   
- `element2`  
+ *element2*  
  İkinci öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Aşağıdaki tabloda temel bir tamsayı döndürür:  
+ Aşağıdaki tabloyu temel alan bir tamsayı döndürür:  
   
 |Koşul|Dönüş değeri|  
 |---------------|------------------|  
-|`element1` < `element2`|<0|  
-|`element1` == `element2`|0|  
-|`element1` > `element2`|>0|  
+|*element1* < *element2*|<0|  
+|*element1* == *element2*|0|  
+|*element1* > *element2*|>0|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev varsayılan uygulamasını kullanan `==`, **\<**, ve **>** işleçler. Basit veri türleri farklı nesneler için bu işlev geçersiz kılınması gerekebilir.  
+ Bu işlev varsayılan uygulamasını kullanan **==**, **\<**, ve **>** işleçleri. Basit veri türleri dışındaki nesneler için bu işlev geçersiz kılınması gerekebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

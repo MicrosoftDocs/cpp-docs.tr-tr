@@ -16,20 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eea8f2585a1e385795a42c745aa95e180c6bb352
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 03964b224603d86064290aa68344c828c2630a17
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948119"
 ---
 # <a name="interface"></a>__interface
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Visual C++ arabirimi şu şekilde tanımlanabilir:  
+ Visual C++ arabirimi aşağıdaki gibi tanımlanabilir:  
   
--   Sıfır veya daha fazla temel arabirimlerinden devralabilirsiniz.  
+-   Sıfır veya daha fazla temel Ara birimden devralınabilir.  
   
--   Bir taban sınıftan devralın olamaz.  
+-   Bir temel sınıfından devralamaz.  
   
 -   Yalnızca genel, saf sanal yöntemler içerebilir.  
   
@@ -43,36 +44,35 @@ ms.lasthandoff: 05/03/2018
   
 ```  
   
-modifier  
- __interface interface-name {interface-definition};  
+modifier __interface interface-name {interface-definition};  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- C++ [sınıfı](../cpp/class-cpp.md) veya [yapısı](../cpp/struct-cpp.md) bu kurallara göre uygulanabilir ancak `__interface` bunları zorlar.  
+ Bir C++ [sınıfı](../cpp/class-cpp.md) veya [yapı](../cpp/struct-cpp.md) bu kurallar ile uygulanabilir ancak **__interface** bunları zorlar.  
   
- Örneğin, bir örnek arabirim tanımı verilmiştir:  
+ Örneğin, aşağıdaki örnek bir arabirim tanımı şöyledir:  
   
-```  
+```cpp 
 __interface IMyInterface {  
    HRESULT CommitX();  
    HRESULT get_X(BSTR* pbstrName);  
 };  
 ```  
   
- Yönetilen arabirimleri hakkında daha fazla bilgi için bkz: [arabirimi sınıfı](../windows/interface-class-cpp-component-extensions.md).  
+ Yönetilen arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md).  
   
- Açıkça belirtmek gerekmez bildirimi `CommitX` ve `get_X` işlevleri saf sanal. İlk işlev için eşdeğer bir bildirimi olacaktır:  
+ Açıkça belirtmek gerekmez bildirimi `CommitX` ve `get_X` işlevleri saf sanal. İlk işlev için eşdeğer bir bildirim olacaktır:  
   
-```  
+```cpp 
 virtual HRESULT CommitX() = 0;  
 ```  
   
- `__interface` gelir [novtable](../cpp/novtable.md) `__declspec` değiştiricisi.  
+ **__interface** gelir [novtable](../cpp/novtable.md) **__declspec** değiştiricisi.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir arabirim, bildirilen özelliklerinin nasıl kullanılacağını gösterir.  
+ Aşağıdaki örnek, bir arabirimde bildirilen özelliklerinin nasıl kullanılacağını gösterir.  
   
-```  
+```cpp 
 // deriv_interface.cpp  
 #define _ATL_ATTRIBUTES 1  
 #include <atlbase.h>  
@@ -150,8 +150,8 @@ p->int_data = 100
 bstr_data = Testing  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Arabirim Öznitelikleri](../windows/interface-attributes.md)

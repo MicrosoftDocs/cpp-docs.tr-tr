@@ -1,5 +1,5 @@
 ---
-title: Kaynak kodu kuruluş (C++ Şablonları) | Microsoft Docs
+title: Kaynak kodu kuruluşu (C++ Şablonları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,24 +10,24 @@ dev_langs:
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 05a5b0423b79e817e16aeb0d39f1d0dcf856c1ba
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ef23b1a12305be9ecf181beb085bb686e81b083b
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32423122"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939760"
 ---
-# <a name="source-code-organization-c-templates"></a>Kaynak kodu kuruluş (C++ Şablonları)
+# <a name="source-code-organization-c-templates"></a>Kaynak kodu kuruluşu (C++ Şablonları)
 
-Sınıf şablonu tanımlarken, bunları gerektiğinde üye tanımları derleyiciye görünür şekilde kaynak kodu düzenlemeniz gerekir.   Kullanma seçeneğiniz *ekleme modeli* veya *açık örnekleme* modeli. Ekleme modelinde, bir şablonu kullanan her dosyada üye tanımlarını içerir. Bu yaklaşımın en kolayıdır ve hangi somut türleri, şablonunuzla kullanılabilir bakımından en büyük esneklik sağlar. Kendi dezavantajı, derleme sürelerini artırabilir ' dir. Proje, önemli etkisi olabilir ve/veya eklenen dosyalar büyük. Açık örnekleme yaklaşımda somut sınıflar ya da sınıf üyeleri belirli türleri için şablon örneği oluşturur.  Bu yaklaşım derleme sürelerini hızlandırabilir ancak kullanım, şablonu uygulayan önceden etkinleştirilmiş sınıfları için sınırlar. Genel olarak, derleme sürelerini bir sorun haline sürece dahil etme modeli kullanmanızı öneririz.
+Bir sınıf şablonunun tanımlarken, kaynak kodunu yeniden gerektiğinde üye tanımları için derleyici görünür olduğunu şekilde düzenlemeniz gerekir.   Kullanma seçeneğiniz *ekleme modeli* veya *açık örnek oluşturma* modeli. Ekleme modelinde, bir şablon kullanan her dosyasında üye tanımları içerir. Bu yaklaşım basit ve hangi somut türleri şablonunuzla birlikte kullanılabilir bakımından en üst düzeyde esneklik sağlar. Kendi dezavantajı, derleme sürelerini artırabilir ' dir. Etkisi önemli bir proje varsa olabilir ve/veya eklenen dosyalar yüksektir. Açık örnek oluşturma yaklaşımıyla somut sınıflar veya sınıf üyeleri için özel tür şablon örneği oluşturur.  Bu yaklaşım, derleme sürelerini hızlandırmanın, ancak kullanım, şablonu uygulayan önceden etkinleştirilmiş sınıfları için sınırlar. Genel olarak, derleme sürelerini bir sorun haline sürece dahil etme modeli kullanmanızı öneririz.
 
 ## <a name="background"></a>Arka Plan
 
-Şablonlar gibi sıradan sınıfları derleyici bir şablonu veya tüm üyeleri için nesne kodu oluşturmaz herkese açık değildir. Şablon somut türleri ile örneği kadar oluşturmak için hiçbir şey yoktur. Derleyici karşılaştığında şablonu örneklemesi gibi `MyClass<int> mc;` ve hiçbir sınıfı bu imza ile henüz yok, yeni bir sınıf oluşturur. Kullanılan tüm üye işlevleri kodunu oluşturmak de çalışır. Bu tanımları olmayan bir dosya olup olmadığını #, doğrudan veya dolaylı olarak derleniyor, .cpp dosyasında included derleyici bunları göremez.  İşlevler içinde durumda bağlayıcı bunları bulacaksınız başka bir çeviri biriminde tanımlanan çünkü derleyicinin açısından bakıldığında, bu mutlaka bir hata değildir.  Bağlayıcı bu kodu bulamazsa başlatır bir **çözümlenmemiş dış** hata.
+Şablonlar, derleyici şablon veya diğer üyelerinin nesne kodu oluşturmaz anlamında sıradan sınıflar gibi değildir. Somut türleri ile şablon örneği oluşturulana dek oluşturulacak bir şey yok. Derleyici karşılaştığında bir şablon örneklemesinde gibi `MyClass<int> mc;` ve bu imzaya sahip hiçbir sınıf henüz var, yeni bir sınıf oluşturur. Kullanılan tüm üye işlevleri için kod oluşturmak üzere de çalışır. Bu tanımları olmayan bir dosyada olup olmadığını #, doğrudan veya dolaylı olarak derleniyor, .cpp dosyası içinde included derleyici bunları göremez.  İşlevler durumu bağlayıcı bulabilirsiniz bunları başka bir çeviri birimindeki tanımlanabileceği için derleyicinin açısından bakıldığında, bu mutlaka bir hata değildir.  Bağlayıcı bu kodu bulamazsa bilmemektedir bir **çözülmemiş dış** hata.
 
-## <a name="the-inclusion-model"></a>Ekleme modeli
+## <a name="the-inclusion-model"></a>Model ekleme
 
-Şablonu tanımlarını bir çeviri birim boyunca görünür hale getirmek için basit ve en yaygın yoludur üstbilgi dosyası kendisini tanımları yerleştirilecek.  Gereken yalnızca şablonu kullanan herhangi bir .cpp dosyayı # include. Bu standart Kitaplığı'nda kullanılan yaklaşımdır.
+Şablon tanımlarında bir çeviri birimi içinde görünür hale getirmek için basit ve en yaygın yoludur tanımları üstbilgi dosyasının kendisinde yerleştirmek için.  Gereken yeterlidir şablonu kullanan herhangi bir .cpp dosyasını # include. Standart Kitaplığı'nda kullanılan yaklaşım budur.
 
 ```cpp
 #ifndef MYARRAY
@@ -57,13 +57,13 @@ public:
 #endif
 ```
 
-Bu yaklaşımı Derleyici tam şablon tanımının erişimi vardır ve herhangi bir tür için isteğe bağlı şablonları örneğini oluşturabilirsiniz. Basit ve sürdürmek daha kolaydır. Ancak, ekleme modeli bir maliyet açısından derleme sürelerini sahip.   Bu maliyet büyük programlarda önemli özellikle şablonu başlığı # diğer üstbilgileri includes. Her .cpp dosya #includes üstbilgi işlev şablonları ve tüm tanımları kendine ait kopyasını alır. Bağlayıcı genellikle şey, işlevi için birden fazla tanımı şunun değil, ancak bu iş yapmak için zaman alır şekilde Sırala mümkün olacaktır. Ek derleme süresi önemli olduğunu büyük olasılıkla daha küçük programlarda.
+Bu yaklaşımla, derleyici tam şablon tanımı erişebilir ve şablonları isteğe bağlı olarak herhangi bir tür örneği oluşturabilir. Bu basit ve korumak daha kolay olur. Ancak, ekleme model derleme sürelerini açısından maliyeti sahip.   Bu maliyet büyük programlarda, önemli özellikle şablon başlığı # diğer üst bilgilerini includes. Her .cpp dosyasının #includes üstbilgi işlev şablonları ve tüm tanımları kendine ait kopyasını alır. Bağlayıcı genel olarak şey, bir işlev için birden çok tanım ile bitmeyen, ancak bu işi yapabilmek için zaman alır olacak şekilde Sırala mümkün olacaktır. Ek derleme süresi önemli olduğunu büyük olasılıkla daha küçük programlarda.
 
-## <a name="the-explicit-instantiation-model"></a>Açık örnekleme modeli
+## <a name="the-explicit-instantiation-model"></a>Açık örnek oluşturma modeli
 
-Ekleme modeli projeniz için uygun değil ve bir şablon örneği oluşturmak için kullanılan türleri kümesini tam olarak biliyorsanız sonra şablonu kodu .h ve .cpp dosyasına dışarı ayırın ve .cpp dosyasında açıkça şablonları örneği. Derleyici kullanıcı örneklemesi karşılaştığında görürsünüz bu nesne kodu oluşturulmasına neden olur.
+Ekleme modeli projeniz için uygun değil ve bir şablon oluşturmak için kullanılan türleri kesin bir şekilde biliyorsanız, bir .h ve .cpp dosyası şablon kodunu ayrı sonra .cpp dosyasında açıkça şablonları örneği. Bu kullanıcı örneklemeleri karşılaştığında derleyici görürsünüz nesne kodu oluşturulmasına neden olur.
 
-Açık örnekleme örneği oluşturmak için istediğiniz varlığı imzaya göre ardından anahtar sözcüğü şablonu kullanarak oluşturun. Bu, bir tür veya üye olabilir. Açıkça bir türü örneği varsa, tüm üyeler oluşturulur.
+Bir açık örnek oluşturma, oluşturmak istediğiniz varlığı imzası tarafından izlenen anahtar sözcüğü şablonu kullanarak oluşturun. Bu, bir tür veya üye olabilir. Bir tür açıkça örneği, tüm üyeleri örneği oluşturulur.
 
 ```cpp
 template MyArray<double, 5>;
@@ -108,7 +108,7 @@ void MyArray<T,N>::Print()
 template MyArray<double, 5>;template MyArray<string, 5>;
 ```
 
-Önceki örnekte, açık örneklemesi .cpp dosyanın sonunda ' dir. A `MyArray` yalnızca için kullanılabilir **çift** veya **dize** türleri.
+Önceki örnekte, açık örnek oluşturma işlemleri .cpp dosyasının sonunda ' dir. A `MyArray` yalnızca kullanılabilir **çift** veya `String` türleri.
 
 > [!NOTE]
-> C ++ 11 **verme** anahtar sözcüğü şablonu tanımlarını bağlamında kullanım. Çoğu derleyicileri formu hiçbir zaman desteklenmediğinden pratikteki bu çok az etkisi vardır.
+> C ++ 11'de **dışarı** anahtar sözcüğü, şablon tanımlarında bağlamında kullanım. Derleyicilerin çoğu hiçbir zaman desteklemediği için pratikte bunun çok az etkisi vardır.

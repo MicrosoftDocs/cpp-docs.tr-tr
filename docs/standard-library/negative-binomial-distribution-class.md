@@ -36,16 +36,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f1bcdfa87eac674d935eeaa8007434f930636e9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 52f9c1335304cc3eefec76abde641e62932eb727
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854996"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964414"
 ---
 # <a name="negativebinomialdistribution-class"></a>negative_binomial_distribution Sınıfı
 
-Negatif terimli dağıtım oluşturur.
+Bir negatif binom açılımı üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,36 +77,36 @@ public:
     result_type min() const;
     result_type max() const;
 };
+```
 
-### Parameters
+### <a name="parameters"></a>Parametreler
 
-*IntType*
-The integer result type, defaults to `int`. For possible types, see [\<random>](../standard-library/random.md).
+*İnt'i* tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-## Remarks
+## <a name="remarks"></a>Açıklamalar
 
-The template class describes a distribution that produces values of a user-specified integral type, or type `int` if none is provided, distributed according to the Negative Binomial Distribution discrete probability function. The following table links to articles about individual members.
+Şablon sınıfı tanımlar kullanıcı tanımlı bir integral değerini üreten bir dağıtım türü veya tür **int** sağlanırsa, negatif binom açılımı ayrık olasılık işlevi göre dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[negative_binomial_distribution](#negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|
 |`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[param_type](#param_type)|
 
-The property members `k()` and `p()` return the currently stored distribution parameter values *k* and *p* respectively.
+Özellik üyelerini `k()` ve `p()` şuan depolanan dağıtım parametre değerlerini döndürmek *k* ve *p* sırasıyla.
 
-The property member `param()` sets or returns the `param_type` stored distribution parameter package.
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
 
-The `min()` and `max()` member functions return the smallest possible result and largest possible result, respectively.
+`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
 
-The `reset()` member function discards any cached values, so that the result of the next call to `operator()` does not depend on any values obtained from the engine before the call.
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
 
-The `operator()` member functions return the next generated value based on the URNG engine, either from the current parameter package, or the specified parameter package.
+`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
 
-For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-For detailed information about the negative binomial distribution discrete probability function, see the Wolfram MathWorld article [Negative Binomial Distribution](http://go.microsoft.com/fwlink/p/?linkid=400516).
+Negatif binom açılımı ayrık olasılık işlevi hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [negatif binom açılımı](http://go.microsoft.com/fwlink/p/?linkid=400516).
 
-## Example
+## <a name="example"></a>Örnek
 
 ```cpp
 // compile with: /EHsc /W4
@@ -162,7 +162,7 @@ int main()
 
 ```
 
-İlk çalıştırın:
+İlk çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -181,7 +181,7 @@ Histogram for 100 samples:
     5 ::
 ```
 
-İkinci çalıştırın:
+İkinci olarak çalıştırın:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -233,7 +233,7 @@ Histogram for 100 samples:
 
 ## <a name="negative_binomial_distribution"></a>  negative_binomial_distribution::negative_binomial_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit negative_binomial_distribution(result_type k = 1, double p = 0.5);
@@ -246,23 +246,23 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 *p* `p` dağıtım parametresi.
 
-*parametre* dağıtım oluşturmak için kullanılan parametre yapısı.
+*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < k` ve `0.0 < p ≤ 1.0`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `p` değeri tutan değeri *p* ve, depolanan `k` değeri tutan değeri *k*.
+İlk Oluşturucu bir nesne oluşturur, saklı `p` değerine değeri *p* ve saklı `k` değerine değeri *k*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  negative_binomial_distribution::param_type
 
-Dağıtım parametreleri depolar.
+Dağıtım parametrelerini depolar.
 
-Yapı param_type {typedef negative_binomial_distribution`<`result_type > distribution_type; param_type (result_type k = 1, çift p = 0,5); result_type k() const; p() const; çift
+Yapı param_type {typedef negative_binomial_distribution`<`result_type > distribution_type; param_type (result_type bin = 1, çift p = 0,5); result_type k() const; p() const; çift
 
-   bool işleci (const param_type & sağa) == const; bool işleci! = (const param_type & sağa) const; };
+   bool işleci (const param_type & sağa) == const; bool işleci! (const param_type & sağa) = const; };
 
 ### <a name="parameters"></a>Parametreler
 
@@ -270,13 +270,13 @@ Yapı param_type {typedef negative_binomial_distribution`<`result_type > distrib
 
 *p* `p` dağıtım parametresi.
 
-*sağ* `param_type` karşılaştırmak için kullanılan yapısı.
+*doğru* `param_type` karşılaştırmak için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < k` ve `0.0 < p ≤ 1.0`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

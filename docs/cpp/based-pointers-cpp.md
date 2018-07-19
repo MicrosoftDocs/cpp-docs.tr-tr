@@ -19,16 +19,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6cc2e45574d30ae1a544da78a4f7a75321a1156
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f24c2ad56f91be3ed413f6967e6e40749693fe1b
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948040"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C++)
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- `__based` anahtar sözcüğü, işaretçileri işaretçilere göre (varolan işaretçilerin uzaklığına göre işaretçiler) bildirmenizi sağlar.  
+ **__Based** anahtar sözcüğü, işaretçileri (varolan işaretçilerin gelen uzaklıkları olan işaretçiler) göre işaretçileri bildirmek olanak sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,11 +39,11 @@ type __based( base ) declarator
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- İşaretçi adreslerine göre işaretçiler, 32 bir veya 64 bit derlemelerde geçerli olan tek `__based` anahtar sözcüğü biçimidir. Microsoft 32 bit C/C++ derleyicisi için temel alınan bir işaretçi, 32 bit işaretçi temeline göre 32 bit uzaklıktadır. Benzer bir kısıtlama, temel alınan bir işaretçinin 64 bit temelden 64 bit uzaklıkta olduğu 64 bit ortamlar için de geçerlidir.  
+ İşaretçi adreslerine göre işaretçiler, yalnızca kuralar **__based** 32 bit veya 64 bit derlemelerde geçerli anahtar sözcüğü. Microsoft 32 bit C/C++ derleyicisi için temel alınan bir işaretçi, 32 bit işaretçi temeline göre 32 bit uzaklıktadır. Benzer bir kısıtlama, temel alınan bir işaretçinin 64 bit temelden 64 bit uzaklıkta olduğu 64 bit ortamlar için de geçerlidir.  
   
  İşaretçilere göre işaretçilerin bir kullanımı da, işaretçiler içeren kalıcı tanımlayıcılara yöneliktir. İşaretçiye göre işaretçilerden oluşan bağlantılı bir liste diske kaydedilebilir ve daha sonra işaretçiler geçerli kalacak şekilde bellekte başka bir yere yeniden yüklenebilir. Örneğin:  
   
-```  
+```cpp 
 // based_pointers1.cpp  
 // compile with: /c  
 void *vpBuffer;  
@@ -55,16 +56,16 @@ struct llist_t {
  `vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.  
   
 > [!NOTE]
->  İşaretçileri içeren kalıcı tanımlayıcıları da gerçekleştirilebilir kullanarak [bellek eşlemeli dosyalar](http://msdn.microsoft.com/library/windows/desktop/aa366556).  
+>  İşaretçiler içeren kalıcı tanımlayıcılar da elde edilebilir kullanarak [bellek eşlemeli dosyalar](http://msdn.microsoft.com/library/windows/desktop/aa366556).  
   
  Temel alınan işaretçinin başvurusu kaldırılırken, temel açıkça belirtilmeli veya bildirim aracılığıyla örtük olarak bilinmelidir.  
   
- Önceki sürümlerle uyumluluk için **_based** eşanlamlısı olduğu `__based`.  
+ Önceki sürümlerle uyumluluk için **_based** eşanlamlıdır **__based**.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kodda, temel alınan bir işaretçinin temeli değiştirilerek değiştirilmesi gösterilmektedir.  
   
-```  
+```cpp 
 // based_pointers2.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -98,5 +99,5 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [alloc_text](../preprocessor/alloc-text.md)

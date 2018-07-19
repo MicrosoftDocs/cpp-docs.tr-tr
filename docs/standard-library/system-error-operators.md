@@ -1,5 +1,5 @@
 ---
-title: '&lt;system_error&gt; işleçleri | Microsoft Docs'
+title: '&lt;system_error&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,22 +9,22 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
-ms.openlocfilehash: d0a556505370078f599d6d667fa856723d9bac8f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 974b1294f8ef23936d79e64926595779a9019368
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856804"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963699"
 ---
 # <a name="ltsystemerrorgt-operators"></a>&lt;system_error&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&lt;](#op_lt)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&lt;](#op_lt)|[operator==](#op_eq_eq)|
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Nesne işlecinin sol tarafındaki sağ tarafında nesnesine eşitse testleri.
+İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(const error_code& left,
@@ -38,20 +38,20 @@ bool operator==(const error_condition& left,
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`left`|Eşitlik için test edilebilir nesne.|
-|`right`|Eşitlik için test edilebilir nesne.|
+|*Sol*|Eşitlik için test edilecek nesne.|
+|*sağ*|Eşitlik için test edilecek nesne.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneleri eşitse; **false** nesneleri eşit değilse.
+**doğru** nesneler eşitse; **false** nesneler eşit değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, döndürür `left.category() == right.category() && left.value() == right.value()`.
+Bu işlev döndürür `left.category() == right.category() && left.value() == right.value()`.
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Testleri işlecinin sol tarafındaki nesnesi sağ tarafında nesnede eşit değil.
+İşlecin sol tarafındaki nesne işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const error_code& left,
@@ -65,18 +65,18 @@ bool operator!=(const error_condition& left,
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`left`|Eşitsizlik için test edilebilir nesne.|
-|`right`|Eşitsizlik için test edilebilir nesne.|
+|*Sol*|Eşitsizlik için test edilecek nesne.|
+|*sağ*|Eşitsizlik için test edilecek nesne.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesne içinde aktarılırsa `left` geçirilen nesnesine eşit değil `right`; Aksi halde **false**.
+**doğru** nesne iletilmezse *sol* geçirilen nesne eşit değil *doğru*; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, döndürür `!(left == right)`.
+Bu işlev döndürür `!(left == right)`.
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
 Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.
 
@@ -108,12 +108,12 @@ inline bool operator<(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`left`|Karşılaştırılacak nesne.|
-|`right`|Karşılaştırılacak nesne.|
+|*Sol*|Karşılaştırılacak nesne.|
+|*sağ*|Karşılaştırılacak nesne.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesne içinde aktarılırsa `left` daha az nesne geçirilen `right`; Aksi takdirde, **false**.
+**doğru** nesne iletilmezse *sol* nesneden değerinden *doğru*; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 

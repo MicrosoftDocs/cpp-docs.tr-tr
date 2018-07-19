@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71cd88882ea104275e4c1a43ccf05494a859d303
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f8b1c932f53651b8ad116139724348714b183506
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418760"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939396"
 ---
 # <a name="jitintrinsic"></a>jitintrinsic
 İşlevi 64 bit ortak dil çalışma zamanı için önemli olarak işaretler. Bu, Microsoft tarafından sağlanan kitaplıklardaki belirli işlevlerde kullanılır.  
@@ -37,7 +37,7 @@ __declspec(jitintrinsic)
 ## <a name="remarks"></a>Açıklamalar  
  `jitintrinsic`, işlev imzasına bir MODOPT (<xref:System.Runtime.CompilerServices.IsJitIntrinsic>) ekler.  
   
- Beklenmedik sonuçlar ortaya çıkabileceği için kullanıcıların bu `__declspec` değiştiricisini kullanması önerilmez.  
+ Kullanıcılar bu kullanarak önerilmez **__declspec** değiştiricisi, beklenmedik sonuçlar oluşabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__declspec](../cpp/declspec.md)   

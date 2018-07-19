@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7df1fb3a8ca600b888e5d6f2c51fc44fda17dd27
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4be038bff05ce7a37b09ec3b3c61572635747864
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414265"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939903"
 ---
 # <a name="comerrordescription"></a>_com_error::Description
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Çağrıları **IErrorInfo::GetDescription** işlevi.  
+ Çağrıları `IErrorInfo::GetDescription` işlevi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,12 +37,12 @@ _bstr_t Description( ) const;
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Sonucunu döndürür **IErrorInfo::GetDescription** için **IErrorInfo** nesne kaydedilen içinde `_com_error` nesnesi. Elde edilen `BSTR` içinde kapsüllenir bir `_bstr_t` nesnesi. Öyle değilse **IErrorInfo** olan kaydedilmiş boş döndürür `_bstr_t`.  
+ Sonucunu döndürür `IErrorInfo::GetDescription` için `IErrorInfo` nesne kaydedilmiş içinde `_com_error` nesne. Ortaya çıkan `BSTR` içinde kapsüllenir bir `_bstr_t` nesne. Hayır ise `IErrorInfo` olan kaydedilmemişse, boş bir döndürür `_bstr_t`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağrıları **IErrorInfo::GetDescription** işlevi ve alır **IErrorInfo** içinde kayıtlı `_com_error` nesnesi. Arama sırasında herhangi bir hata **IErrorInfo::GetDescription** yöntemi göz ardı edilir.  
+ Çağrıları `IErrorInfo::GetDescription` işlevi ve alır `IErrorInfo` içinde kaydedilen `_com_error` nesne. Çağrılırken `IErrorInfo::GetDescription` yöntemi göz ardı edilir.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_error Sınıfı](../cpp/com-error-class.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;dizi&gt; işleçleri | Microsoft Docs'
+title: '&lt;dizi&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,25 +13,25 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
-ms.openlocfilehash: 09d09e47103fa263adc4c5cf288803835b112142
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 782acd7fda671d84252ab226d095fe21c75645bf
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846148"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965464"
 ---
 # <a name="ltarraygt-operators"></a>&lt;dizi&gt; işleçleri
 
-\<Dizi > başlığını içerdiğinden bu `array` üyesi olmayan karşılaştırma şablon işlevleri.
+\<Array > Bu içeren üst bilgi **dizi** üye olmayan karşılaştırma şablon işlevleri.
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Dizi karşılaştırma, eşit değil.
+Dizi karşılaştırması, eşit değil.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -42,17 +42,17 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Bir öğenin türü.
+*Ty* öğenin türü.
 
-`N` Dizi büyüklüğü.
+*N* dizinin boyutu.
 
-`left` Karşılaştırılacak sol kapsayıcı.
+*Sol* karşılaştırmak için sol kapsayıcı.
 
-`right` Karşılaştırılacak sağ kapsayıcı.
+*doğru* karşılaştırmak için doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi döndürür `!(left == right)`.
+Şablon işlevinin döndürdüğü `!(left == right)`.
 
 ### <a name="example"></a>Örnek
 
@@ -98,9 +98,9 @@ false
 true
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Dizi karşılaştırma, küçüktür.
+Dizi karşılaştırması, küçüktür.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -111,17 +111,17 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Bir öğenin türü.
+*Ty* öğenin türü.
 
-`N` Dizi büyüklüğü.
+*N* dizinin boyutu.
 
-`left` Karşılaştırılacak sol kapsayıcı.
+*Sol* karşılaştırmak için sol kapsayıcı.
 
-`right` Karşılaştırılacak sağ kapsayıcı.
+*doğru* karşılaştırmak için doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlev aşırı yüklemelerinin `operator<` iki nesne şablonu sınıfının Karşılaştırılacak [array sınıfı](../standard-library/array-class-stl.md). İşlevi döndürür `lexicographical_compare(left.begin(), left.end(), right.begin())`.
+Şablonu işlev aşırı yüklemelerinin `operator<` şablon sınıfının iki nesneleri karşılaştırmak için [array sınıfı](../standard-library/array-class-stl.md). İşlev döndürür `lexicographical_compare(left.begin(), left.end(), right.begin())`.
 
 ### <a name="example"></a>Örnek
 
@@ -168,9 +168,9 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Dizi karşılaştırma, küçük veya buna eşit.
+Dizi karşılaştırması, küçüktür veya eşittir.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -181,17 +181,17 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Bir öğenin türü.
+*Ty* öğenin türü.
 
-`N` Dizi büyüklüğü.
+*N* dizinin boyutu.
 
-`left` Karşılaştırılacak sol kapsayıcı.
+*Sol* karşılaştırmak için sol kapsayıcı.
 
-`right` Karşılaştırılacak sağ kapsayıcı.
+*doğru* karşılaştırmak için doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi döndürür `!(right < left)`.
+Şablon işlevinin döndürdüğü `!(right < left)`.
 
 ### <a name="example"></a>Örnek
 
@@ -238,9 +238,9 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Dizi karşılaştırma, eşit.
+Dizi karşılaştırması, eşit.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -251,17 +251,17 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Bir öğenin türü.
+*Ty* öğenin türü.
 
-`N` Dizi büyüklüğü.
+*N* dizinin boyutu.
 
-`left` Karşılaştırılacak sol kapsayıcı.
+*Sol* karşılaştırmak için sol kapsayıcı.
 
-`right` Karşılaştırılacak sağ kapsayıcı.
+*doğru* karşılaştırmak için doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlev aşırı yüklemelerinin `operator==` iki nesne şablonu sınıfının Karşılaştırılacak [array sınıfı](../standard-library/array-class-stl.md). İşlevi döndürür `equal(left.begin(), left.end(), right.begin())`.
+Şablonu işlev aşırı yüklemelerinin `operator==` şablon sınıfının iki nesneleri karşılaştırmak için [array sınıfı](../standard-library/array-class-stl.md). İşlev döndürür `equal(left.begin(), left.end(), right.begin())`.
 
 ### <a name="example"></a>Örnek
 
@@ -308,9 +308,9 @@ true
 false
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
-Dizi karşılaştırma, daha büyük.
+Dizi karşılaştırması, büyüktür.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -321,17 +321,17 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Bir öğenin türü.
+*Ty* öğenin türü.
 
-`N` Dizi büyüklüğü.
+*N* dizinin boyutu.
 
-`left` Karşılaştırılacak sol kapsayıcı.
+*Sol* karşılaştırmak için sol kapsayıcı.
 
-`right` Karşılaştırılacak sağ kapsayıcı.
+*doğru* karşılaştırmak için doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi döndürür `(right < left)`.
+Şablon işlevinin döndürdüğü `(right < left)`.
 
 ### <a name="example"></a>Örnek
 
@@ -378,9 +378,9 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Dizi karşılaştırma, büyüktür veya eşittir.
+Dizi karşılaştırması, büyüktür veya eşittir.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -391,17 +391,17 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Bir öğenin türü.
+*Ty* öğenin türü.
 
-`N` Dizi büyüklüğü.
+*N* dizinin boyutu.
 
-`left` Karşılaştırılacak sol kapsayıcı.
+*Sol* karşılaştırmak için sol kapsayıcı.
 
-`right` Karşılaştırılacak sağ kapsayıcı.
+*doğru* karşılaştırmak için doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi döndürür `!(left < right)`.
+Şablon işlevinin döndürdüğü `!(left < right)`.
 
 ### <a name="example"></a>Örnek
 
@@ -450,4 +450,4 @@ false
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dizi >](../standard-library/array.md)<br/>
+[\<Array >](../standard-library/array.md)<br/>

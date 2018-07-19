@@ -13,56 +13,56 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1a2aad184a1f388df6f7a6941aa9e5f302f35b12
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.sourcegitcommit: 894b3b3a91fcd8894b582747b03135c0be450c1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418373"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38102904"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>Nasıl yapılır: shared_ptr Örnekleri Oluşturma ve Kullanma
-`shared_ptr` Türü bir işaretçidir akıllı C++ Standart kitaplığında senaryoları, birden fazla sahibi gerekebilir bellekte nesnesi ömrünü yönetmek için tasarlanmıştır. Başlatır sonra bir `shared_ptr` kopyalayın, işlev bağımsız değişkenleri değere göre geçirmek ve diğer atamak `shared_ptr` örnekleri. Tüm örnekleri aynı nesneye'nın üzerine gelin, yeni bir başvuru sayısı paylaşım erişimi azaltır ve bir "artırır denetim bloğu" `shared_ptr` eklenir, kapsam dışı geçip geçmeyeceğini veya sıfırlanır. Başvuru sayısı sıfır ulaştığında, denetim bloğu bellek kaynağı ve kendisini siler.  
+`shared_ptr` Senaryoları, birden fazla sahibi gerekebilir bellekteki nesnenin ömrünü yönetmek için tasarlanan C++ Standart Kitaplığı'nda bir akıllı işaretçi türüdür. Başlatın, sonra bir `shared_ptr` kopyalayın, değer tarafından işlev bağımsız değişkenleri geçirme ve diğer atamak `shared_ptr` örnekleri. Tüm örnekleri aynı nesneye'nın üzerine gelin, yeni bir başvuru sayısı paylaşım erişimi için bir "artırır denetim bloğu" ve azaltır `shared_ptr` eklenir, kapsamın dışına çıkıncaya veya sıfırlanır. Başvuru sayısı sıfır ulaştığında, denetim bloğu bellek kaynağı ve kendisini siler.  
   
- Aşağıda birkaç gösterilmiştir `shared_ptr` bir bellek konumunu işaret örnekleri.  
+ Aşağıda birkaç gösterilmiştir `shared_ptr` bir bellek konumuna işaret örnekleri.  
   
  [![Paylaşılan işaretçi](../cpp/media/shared_ptr.png "shared_ptr")](assetId:///9785ad08-31d8-411a-86a9-fb9cd9684c27)  
   
 ## <a name="example"></a>Örnek  
- Mümkün olduğunda kullanın [make_shared](../standard-library/memory-functions.md#make_shared) işlevi oluşturmak için bir `shared_ptr` bellek kaynağı ilk kez oluşturulduğunda. `make_shared` özel durum-güvenlidir. Aynı çağrı denetim bloğu ve kaynak için bellek ayırmak için kullanır ve böylece yapım ek yükünü azaltır. Kullanmıyorsanız, `make_shared`, kendisine geçirmeden önce nesneyi oluşturmak için bir açık yeni ifade kullanmak zorunda sonra `shared_ptr` Oluşturucusu. Aşağıdaki örnek, bildirme ve başlatmak için çeşitli yollar gösterir bir `shared_ptr` birlikte yeni bir nesne.  
+ Mümkün olduğunda kullanın [make_shared](../standard-library/memory-functions.md#make_shared) oluşturmak için işlevi bir `shared_ptr` bellek kaynağı ilk kez oluşturulduğunda. `make_shared` özel durum-güvenli olmayandır. Aynı çağrı denetim bloğu ve kaynak için bellek ayırmak için kullanır ve böylece oluşturma ek yükü azaltır. Kullanmıyorsanız, `make_shared`, kendisine geçirdiğiniz önce nesne oluşturmak için açık bir new ifadesi kullanmayı sahip `shared_ptr` Oluşturucusu. Aşağıdaki örnek, bildirmek ve başlatmak için çeşitli yollar gösterir. bir `shared_ptr` birlikte yeni bir nesne.  
   
  [!code-cpp[stl_smart_pointers#1](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek bildirilip gösterilmektedir `shared_ptr` uygulamanız örnekleri paylaşılan bir başkası tarafından zaten ayrılmış bir nesnenin sahipliğini `shared_ptr`. Varsayımında `sp2` bir başlatılmış olduğunu `shared_ptr`.  
+ Aşağıdaki örnek, bildirmek ve başlatmak gösterilmektedir `shared_ptr` uygulamanız örnekler paylaşılan bir başkası tarafından zaten ayrılmış bir nesne sahipliğini `shared_ptr`. Varsayımında `sp2` başlatılan bir olan `shared_ptr`.  
   
  [!code-cpp[stl_smart_pointers#2](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_2.cpp)]  
   
 ## <a name="example"></a>Örnek  
- `shared_ptr` öğeleri kopyalama algoritmaları kullanırken C++ Standart Kitaplığı kapsayıcılarında yararlıdır. Öğeleri kayabilir bir `shared_ptr`ve diğer kapsayıcılarını temelindeki bellek ihtiyacınız olduğu sürece geçerli ve artık olduğunu anlama ile kopyalayın. Aşağıdaki örnekte nasıl kullanılacağını gösterir `replace_copy_if` algoritmasına `shared_ptr` vektör örnekleri.  
+ `shared_ptr` C++ Standart Kitaplığı kapsayıcıları öğeleri kopyala algoritmalar kullandığınızda da yararlıdır. Öğeleri kaydırılabilir bir `shared_ptr`ve diğer temel alınan bellek ihtiyacınız olduğu sürece geçerli ve artık olduğunu anlama kapsayıcılarla kopyalayın. Aşağıdaki örnek nasıl kullanılacağını gösterir `replace_copy_if` algoritmasına `shared_ptr` vektördeki örnekleri.  
   
  [!code-cpp[stl_smart_pointers#4](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]  
   
 ## <a name="example"></a>Örnek  
- Kullanabileceğiniz `dynamic_pointer_cast`, `static_pointer_cast`, ve `const_pointer_cast` dönüştürmek için bir `shared_ptr`. Bu işlevler benzer `dynamic_cast`, `static_cast`, ve `const_cast` işleçler. Aşağıdaki örnek bir vektörü her öğesinin türetilen tür test etme gösterir `shared_ptr` , temel sınıflar, öğeleri kopyalayın ve bunlarla ilgili bilgileri görüntüler.  
+ Kullanabileceğiniz `dynamic_pointer_cast`, `static_pointer_cast`, ve `const_pointer_cast` dönüştürülecek bir `shared_ptr`. Bu işlevler benzer `dynamic_cast`, `static_cast`, ve `const_cast` işleçleri. Aşağıdaki örnek, bir vektör her öğenin türetilmiş tür test etme gösterir `shared_ptr` , temel sınıflar, öğeleri kopyalayın ve bunlarla ilgili bilgileri görüntüler.  
   
  [!code-cpp[stl_smart_pointers#5](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_4.cpp)]  
   
 ## <a name="example"></a>Örnek  
- Geçirebilirsiniz bir `shared_ptr` aşağıdaki yollarla başka bir işlev için:  
+ Geçirebilirsiniz bir `shared_ptr` aşağıdaki yollarla başka bir işleve:  
   
--   Geçirmek `shared_ptr` değeriyle. Bu kopya oluşturucu çağırır, başvuru sayısını artırır ve Aranan sahibi yapar. Bu işlem bağlı olarak kaç önemli ek yükü az miktarda yoktur `shared_ptr` geçirme nesneleri. Çağıran ve çağrılan arasında kod Sözleşme (örtük veya açık) aranan bir sahip olması gerektiğinde bu seçeneği kullanın.  
+-   Geçirmek `shared_ptr` değere göre. Bu kopya oluşturucusunu çağırır, başvuru sayısını artırır ve çağrılan sahibi yapar. Az miktarda bir kaç bağlı olarak önemli bu işlem ek yükü var. `shared_ptr` , kaçı nesneleri. Çağıran ve çağrılan arasında kod Sözleşmesi (örtük veya açık) çağrılan sahibi olmanız gerektiğinde bu seçeneği kullanın.  
   
--   Geçirmek `shared_ptr` başvuru veya const başvuru. Bu durumda, başvuru sayımı değil artırılır ve arayan kapsamının dışına geçmez sürece Aranan işaretçinin erişebilir. Veya, aranan oluşturmaya karar verebilirsiniz bir `shared_ptr` referansı temel alarak ve böylece bir paylaşılan sahibi olur. Çağıran ve çağrılan olanağıyla olduğunda veya, geçmesi gerektiğinde bu seçeneği kullanın bir `shared_ptr` ve performansı artırmak için kopyalama işlemi önlemek istiyorsanız.  
+-   Geçirmek `shared_ptr` başvuru veya const başvuru. Bu durumda, başvuru sayısını değil artırılır ve çağıran kapsam dışına geçmez sürece çağrılan işaretçi erişebilirsiniz. Ya da çağrılan oluşturmaya karar bir `shared_ptr` Referanslı ve böylece bir paylaşılan sahibi. Çağrılan olanağıyla çağırana sahip olduğunda ya da geçirmeniz gerekir bu seçeneği kullanın. bir `shared_ptr` ve performansı artırmak için kopyalama işlemini ortadan kaldırmak istiyorsanız.  
   
--   Temel alınan işaretçi veya temel alınan nesnede başvurusu geçirin. Bu nesne kullanılacak Aranan sağlar, ancak sahipliği paylaşma veya yaşam genişletmek için etkinleştirmez. Aranan oluşturursa bir `shared_ptr` ham işaretçiden itibaren yeni `shared_ptr` özgün bağımsızdır ve temel alınan kaynak denetlemez. Arayan sahipliğini korur çağıran ve çağrılan arasında sözleşme açıkça belirtir olduğunda bu seçeneği kullanın `shared_ptr` yaşam süresi.  
+-   Temel alınan işaretçiye veya arka plandaki nesneye bir başvuru geçirin. Bu nesne kullanmak Aranan sağlar, ancak bu paylaşım sahipliğinin veya ömrü genişletmek etkinleştirmez. Çağrılan oluşturursa bir `shared_ptr` ham işaretçisinden yeni `shared_ptr` orijinalden bağımsızdır ve temel alınan kaynak denetlemez. Sözleşme çağıran ve çağrılan arasında NET bir şekilde çağıran sahipliğini korur belirttiğinde, bu seçeneği kullanın. `shared_ptr` yaşam süresi.  
   
--   Ne zaman karar geçirmek nasıl bir `shared_ptr`, aranan temel alınan kaynak sahipliğini paylaşmak sahip olup olmadığını belirleyin. Bir "sahibi" bir nesneye veya, gerekli olduğu sürece, temel alınan kaynak için Canlı tutabilirsiniz işlevi değil. Aranan işaretçi ömrünü uzatabilir garanti etmek arayan varsa, kendi (işlev) yaşam süresi, ilk kullan seçeneği. Aranan ömrü genişletir olup olmadığını önemli değil, başvuruya göre geçirme ve veya kopyalama Aranan olanak tanır.  
+-   Ne zaman karar geçirmek nasıl bir `shared_ptr`, çağrılan temel alınan kaynağın sahipliği paylaşmaya gerekip gerekmediğini belirlemek. "Sahip" nesne veya işlev ihtiyaç duyduğu sürece, temel alınan kaynak için canlı tut ' dir. Çağrılan işaretçi ömrünü genişletebilirsiniz güvence altına almak çağırıcı sahip değilse, (işlev) yaşam süresi, ilk kullanım seçeneği. Çağrılan yaşam süresini uzatır olup olmadığını İlgilenmiyor, başvuruya göre ve veya kopyalama çağrılan olanak tanır.  
   
--   Gerekirse bir yardımcı işlevi erişim temel işaretçi ve bilmeniz yardımcı işlevini yalnızca işaretçi kullanıyor ve arama işlevini döndürür, sonra bu işlev önce dönüş emin verin temel işaretçi sahipliğini paylaşmak yok. Bunu yalnızca işaretçi arayanın yaşam süresi içinde erişmelidir `shared_ptr`. Bu durumda, geçirmek güvenli `shared_ptr` başvuru veya geçişi ham işaretçi veya arka plandaki başvuru nesnesi. Bu şekilde geçirme küçük performans avantajı sağlar ve ayrıca programlama maksadınızı express yardımcı.  
+-   Gerekirse temel alınan işaretçi sahipliğini paylaşmak yardımcı işlevini yalnızca işaretçi kullanıyor ve çağıran işlevi döndürür ve ardından bu işlev önce iade, temel alınan işaretçi için ve bir yardımcı işlev erişim bilmeniz verin yok. Yalnızca işaretçi arayanın yaşam süresi içinde erişmek sahip `shared_ptr`. Bu durumda, geçirilecek güvenli `shared_ptr` başvuru veya pass ham işaretçi veya başvuru temel alınan nesne. Bu şekilde geçirme küçük performans artar ve ayrıca, programlama amacınızla express yardımcı olabilir.  
   
--   Bazı durumlarda örneğin bir `std:vector<shared_ptr<T>>`, her geçmesi gerekebilir `shared_ptr` bir lambda ifadesi gövdesi veya adlandırılmış işlev nesnesi. Lambda veya işlev işaretçisi depolamayın, daha sonra geçirin `shared_ptr` her öğe için kopya Oluşturucu çağırma önlemek için başvuruya göre.    
+-   Bazı durumlarda örneğin bir `std:vector<shared_ptr<T>>`, her geçmesi gerekebilir `shared_ptr` bir lambda ifadesi gövdesinin veya adlandırılmış işlev nesnesi. Lambda veya işlev işaretçisi depolamayın ardından geçirmesi `shared_ptr` her öğe için kopya Oluşturucusu çağrılırken önlemek için başvuruya göre.    
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği nasıl `shared_ptr` tarafından sahip olunan bellek işaretçisi karşılaştırmaları etkinleştirmek için çeşitli Karşılaştırma işleçleri aşırı yüklemeler `shared_ptr` örnekleri.  
+ Aşağıdaki örnekte gösterildiği nasıl `shared_ptr` tarafından sahip olunan bir bellek işaretçi karşılaştırmalar etkinleştirmek için çeşitli Karşılaştırma işleçleri aşırı `shared_ptr` örnekleri.  
   
  [!code-cpp[stl_smart_pointers#3](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_6.cpp)]  
   

@@ -17,21 +17,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fa65e0c1d910791bed416a1b31f9de46dfb2299
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 643718dc0b58f74fbb1ed957c8dc3212a4408073
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419959"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939929"
 ---
 # <a name="program-termination"></a>Program Sonlandırma
-C++'da, bir programdan çıkmak için birkaç yolu vardır:  
+C++'da, programdan çıkmak için birkaç yol vardır:  
   
 -   Çağrı [çıkmak](../cpp/exit-function.md) işlevi.  
   
--   Çağrı [abort](../cpp/abort-function.md) işlevi.  
+-   Çağrı [iptal](../cpp/abort-function.md) işlevi.  
   
--   Yürütme bir [dönmek](../cpp/return-statement-in-program-termination-cpp.md) from deyimi **ana**.  
+-   Yürütme bir [dönüş](../cpp/return-statement-in-program-termination-cpp.md) deyimden `main`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [main: Program Başlatma](../cpp/main-program-startup.md)

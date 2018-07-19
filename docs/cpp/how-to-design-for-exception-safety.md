@@ -12,23 +12,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbad81c5014c2aa3bcf10b083fa974615e4669e9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3dd7448d50debc54cde075b8a6879af8b1be62c9
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417974"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940333"
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel Durum Güvenliği Tasarımı
-Özel durum mekanizması avantajlarından biri özel durumla ilgili verileri birlikte bu yürütme, catch, işleme deyimi doğrudan ilk özel durum oluşturur deyimden atlar. İşleyici düzeyleri herhangi bir sayıda çağrı yığınında yukarı olabilir. Try deyimi ve throw deyimine arasında adlı işlevleri oluşturulan özel durumla ilgili herhangi bir şey bilmeniz gerekli değildir.  Ancak, böylece kapsam "beklenmedik bir şekilde dışında" gidebilirsiniz tasarlanmalıdır burada bir özel durum yukarı öğesinden aşağıda yayılması ve böylece kısmen oluşturulmuş nesnelerin arkasında ayrılmadan sızmasını bellek herhangi bir noktasını veya kullanılamaz durumda veri yapılarını sahip oldukları.  
+Avantajlarından biri özel durum mekanizması birlikte özel durum hakkındaki verileri bu yürütme, catch işleme deyimi deyimden öncelikle özel durum oluşturan doğrudan atlar. İşleyici düzeyleri herhangi bir sayıda çağrı yığınında yukarı olabilir. Throw deyimi try deyimi arasında çağıran işlevler oluşturulan özel durum hakkında bir şey bilmek için gerekli değildir.  Bununla birlikte, kapsamı "beklenmedik bir şekilde dışında" gidebilirsiniz olacak şekilde tasarlanmış olması burada bir özel durum yukarı gelen aşağıda yayar ve bu nedenle kısmen oluşturulan nesnelerin arkasında çıkmadan sızmasına bellek herhangi bir noktasını veya kullanılamaz durumda olmadığından veri yapılarını sahiptirler.  
   
 ## <a name="basic-techniques"></a>Temel teknikleri  
- Güçlü bir özel durum işleme ilkesi dikkatle düşünürken gerektirir ve tasarım sürecinin bir parçası olması gerekir. Genel olarak, çoğu özel durum algıladı ve yazılım modülü alt katmanlar sırasında oluşturulur, ancak genellikle bu Katmanlar hatayı işleyebilir ya da son kullanıcılara bir ileti kullanıma sunmak için yeterli bağlama sahip değildir. Orta katmanda işlevleri yakalamak ve özel durum nesnesi incelemek sahip oldukları ya da sonuçta özel yakalayan bir üst katman sağlamak için başka yararlı bilgiler sahip bir özel durum yeniden oluşturma. Bir işlev yakalamak ve "yalnızca tamamen ondan kurtarabilmek için ise bir özel durum swallow". Çoğu durumda, bir özel durum çağrı yığınına yayılmasına izin vermek için Orta katmanda davranış doğrudur. Hatta en üst katmanında, özel durum, doğruluğu garanti edilemez bir durumda program bırakırsa bir programı sonlandırmak işlenmeyen bir özel durum izin vermek uygun olabilir.  
+ Sağlam bir özel durum işleme ilkesi dikkatli düşünce gerektirir ve tasarım sürecinin bir parçası olmalıdır. Genel olarak, çoğu özel durumların algılandı ve bir yazılım modülü daha düşük katmanlardaki sırasında oluşturulur, ancak genellikle bu Katmanlar hatayı işlemek veya son kullanıcılara bir ileti kullanıma sunmak için yeterli bağlam yoktur. Orta katmanda işlevleri catch ve özel durum nesnesi incelemek sahip oldukları veya sahip oldukları için sonuç olarak özel durumu yakalar üst katman sağlamak için ek yararlı bilgiler bir özel durumu yeniden kullanabilirsiniz. Bir işlev, catch ve "yalnızca tamamen CİHAZDAN kurtarmanız mümkün ise bir özel durum swallow". Çoğu durumda, bir özel durum çağrı yığınına yayılmaya izin vermek için Orta katmanda davranış doğrudur. Bile en üst katmanında, özel durum, doğruluğu garanti edilemez durumda program ayrıldığında bir programı sonlandırmak işlenmeyen bir özel durum izin vermek uygun olabilir.  
   
- Bir işlev "özel durum-güvenli," sağlanmasına yardımcı olmak için bir özel durum işleme biçimini olsun, aşağıdaki temel kurallara göre tasarlanmalıdır.  
+ Bir işlev "özel durum açısından güvenli," sağlanmasına yardımcı olmak için bir özel durum, nasıl işlediğini ne olursa olsun, aşağıdaki temel kurallara göre tasarlanmış olması gerekir.  
   
 ### <a name="keep-resource-classes-simple"></a>Kaynak sınıfları basit tutun  
- El ile kaynak yönetimi sınıflardaki kapsülleyen, her bir kaynağın yönetmek için başka bir şey yapan bir sınıf kullanın; Aksi takdirde sızıntıları getirebilir. Kullanım [akıllı işaretçiler](../cpp/smart-pointers-modern-cpp.md) mümkün olduğunda, aşağıdaki örnekte gösterildiği gibi. Bu örnekte bilerek yapay ve simplistic farkları vurgulamak için zaman `shared_ptr` kullanılır.  
+ El ile kaynak yönetimi sınıflardaki yalıtma, her kaynak için başka bir şey yapmaz bir sınıf kullanma; Aksi takdirde, sızıntılarına yol açabilir. Kullanım [akıllı işaretçileri](../cpp/smart-pointers-modern-cpp.md) mümkün olduğunda, aşağıdaki örnekte gösterildiği gibi. Kasıtlı olarak yapay ve alıyormuş farklar vurgulamak için bu örnekte, zaman `shared_ptr` kullanılır.  
   
 ```cpp  
 // old-style new/delete version  
@@ -89,35 +89,35 @@ public:
   
 ```  
   
-### <a name="use-the-raii-idiom-to-manage-resources"></a>RAII deyim kaynakları yönetmek için kullanın  
- Özel durum güvenli olması için bir işlev nesneleri kullanarak ayrılmış sahip olmanız gerekir `malloc` veya `new` yok olur ve dosya tanıtıcıları gibi tüm kaynakları kapalı veya bir özel durum bile, serbest. *Kaynak edinme olan başlatma* (RAII) deyim otomatik değişkenler Sysprep'in gibi kaynaklara yönetimini bağlar. Bir işlev, normalde döndürerek veya bir özel durum nedeniyle kapsamının dışına çıktığında tam olarak oluşturulan tüm otomatik değişkenler için Yıkıcılar çağrılır. Akıllı bir işaretçi gibi uygun çağırır RAII sarmalayıcı nesneyi silmek ya da kendi yıkıcı işlevinde kapatın. Özel durum güvenli kod içinde her bir kaynağın sahipliğini RAII nesnesi bir tür için hemen geçirmek oldukça önemlidir. Unutmayın `vector`, `string`, `make_shared`, `fstream`, ve benzer sınıflarını idare, kaynağın edinme.  Ancak, `unique_ptr` ve geleneksel `shared_ptr` kaynak edinme nesnenin yerine kullanıcı tarafından gerçekleştirildiğinden kurulumlarını özel; bu nedenle, bunlar olarak say *kaynak sürüm olan yok etme* ancak RAII olarak sorgulanabilir.  
+### <a name="use-the-raii-idiom-to-manage-resources"></a>Kaynakları yönetmek için RAII deyim kullanma  
+ Özel durum açısından güvenli olmak üzere bir işlevi kullanılarak ayrılmış sahip nesneleri emin olmanız gerekir `malloc` veya **yeni** yok edilir ve dosya tanıtıcıları gibi tüm kaynaklara kapalı veya bir özel durum olsa bile yayımladı. *Olduğu kaynak alımı başlatma* (RAII) deyimidir yönetimini otomatik değişkenler ömrü gibi kaynaklara bağlar. Bir işlev, normalde döndürerek veya bir özel durum nedeniyle kapsam dışına çıktığında tam oluşturulmuş tüm otomatik değişkenler için yok ediciler çağrılır. Akıllı bir işaretçi gibi uygun çağıran bir RAII sarmalayıcı nesne silin veya işlev yok edici kapatın. Özel durum-güvenli kod içinde her bir kaynağın sahipliğini hemen bazı tür RAII nesneyi geçirmek oldukça önemlidir. Unutmayın `vector`, `string`, `make_shared`, `fstream`, ve benzer sınıflar, için kaynağın alım.  Ancak, `unique_ptr` ve geleneksel `shared_ptr` kaynak alımının nesnenin yerine kullanıcı tarafından gerçekleştirildiği için yapılarını özel; bu nedenle, bunlar olarak say *kaynak sürüm olan yok etme* ancak RAII olarak sorgulanabilir.  
   
-## <a name="the-three-exception-guarantees"></a>Üç özel durum garanti  
- Genellikle, özel durum güvenliği işlevi sağlayan üç özel durum garanti bakımından ele alınmıştır: *Hayır çökme garantisi*, *güçlü garanti*ve *temel garantisi* .  
+## <a name="the-three-exception-guarantees"></a>Üç özel durum garantisi  
+ Genellikle, özel durum güvenliği bir işlev sağlayan üç özel durum garantisinden açısından ele alınmıştır: *Hayır çökme garantisi*, *güçlü garanti*ve *temel garantisi* .  
   
-### <a name="no-fail-guarantee"></a>Hayır çökme garantisi  
- Hayır çökme (veya "no-throw") garantisi işlevi sağlayan güçlü garantisi yoktur. İşlevi değil bir özel durum ya da bir yayılmasına izin olduğunu belirtir. Ancak, (a), bu işlev çağrılarını tüm işlevleri de Hayır çökme bilmiyorsanız bu tür bir garanti güvenilir bir şekilde sağlayamaz (b), bu işlev düşmeden önce oluşturulan herhangi bir özel durum yakalandı bildiğiniz veya (c) yakalamak nasıl bildiğiniz ve düzgün bir şekilde bu işlev ulaşmak tüm özel durumları işler.  
+### <a name="no-fail-guarantee"></a>Hayır-başarısız garantisi  
+ Hayır-başarısız (veya "fırlatmasız") garantisi, bir işlev sağlayan güçlü garanti yoktur. Bu işlev değil bir özel durum veya bir yayılmasına izin olduğunu belirtir. Ancak, (a) bu işlevi çağıran tüm işlevleri no-başarısız olduğunu bilmediği sürece bir böyle bir garanti güvenilir bir şekilde sağlayamaz veya (b), bu işlev ulaşmadan önce attığı özel durumları yakalanır bildiğiniz veya nasıl catch (c), bildiğiniz ve Bu işlev ulaşan tüm istisnalarla başa.  
   
- Güçlü garanti ve temel garantisi Yıkıcılar Hayır çökme varsayımına dayanır. Tüm kapsayıcıları ve standart kitaplığı türlerinde kendi Yıkıcılar değil throw garanti. Ayrıca Ters gereksinimi vardır: standart kitaplığı gerektirir kullanıcı tanımlı türlerinden, kendisine verilen — Örneğin, şablon bağımsız değişken olarak — atma olmayan Yıkıcılar olması gerekir.  
+ Hem güçlü garanti hem de temel garanti yok ediciler Hayır çökme varsayımına güvenir. Tüm kapsayıcıları ve standart kitaplık türleri, Yıkıcılar değil throw garanti. De ters gereksinim mevcuttur: Standart Kitaplığı gerektiren kullanıcı tanımlı türler, kendisine verilen — Örneğin, şablon bağımsız değişkenleri olarak — oluşturmayan Yıkıcılar olması gerekir.  
   
 ### <a name="strong-guarantee"></a>Güçlü garanti  
- Bir işlev bir özel durum nedeniyle kapsam dışında kalırsa, bu bellek ve program sızıntısı değil, güçlü garanti durumları durumu değiştirilmeyecek. Temelde COMMIT veya rollback semantiklerine sahip bir işlem güçlü garanti sağlayan bir işlev değil: tamamen başarılı ya da herhangi bir etkisi olmaz.  
+ Güçlü garanti, bir işlev bir özel durum nedeniyle kapsam dışında kalırsa, onu bellek ve program sızıntı oluşturacaktır değil, durumları durum değiştirilmeyecek. Güçlü garanti sağlayan bir işlev yürütme veya geri alma semantiğe sahip işlem temelde,: ya tamamen başarılı ya da hiçbir etkisi olmaz.  
   
 ### <a name="basic-guarantee"></a>Temel garantisi  
- Temel garanti zayıf üç sağlar. Ancak, güçlü bir garanti bellek tüketimi veya performans çok pahalı olduğunda en iyi seçim olabilir. Temel garanti durumları, bir özel durum oluştu, hiçbir bellek sızmasını veri değiştirilmiş olabilir olsa bile nesnesi hala kullanılabilir durumda ise.  
+ Temel bir garanti üç zayıfa doğru sağlar. Ancak, güçlü garanti bellek tüketimi veya performans çok pahalı olduğunda en iyi seçenek olabilir. Temel garanti durumlar, özel bir durum oluştuğunda, bellek sızmış ve verileri değiştirilmiş olabilir olsa da hala kullanılabilir durumda nesnedir.  
   
 ## <a name="exception-safe-classes"></a>Özel durum açısından güvenli sınıflar  
- Bir sınıf bile, güvenli olmayan işlevleri tarafından kısmen oluşturulmuş veya kısmen yok kendisinden engelleyerek kullanıldığında, kendi özel durum güvenliği sağlamaya yardımcı olabilir. Bir sınıf oluşturucu tamamlanmadan önce bulunup bulunmadığını nesne hiçbir zaman oluşturulur ve kendi yıkıcı hiçbir zaman çağrılır. Özel durum önce başlatılmış otomatik değişkenler sahip olsa da kendi Yıkıcılar çağrılır, dinamik olarak ayrılan belleği veya akıllı bir işaretçi tarafından yönetilmeyen kaynakları veya benzer otomatik değişkeni sızmasını.  
+ Bir sınıf, kısmen oluşturulmuş veya kısmen yok kendisini engelleyerek güvenli olmayan işlevler tarafından bile tüketildiği kendi özel durum güvenliği sağlamaya yardımcı olabilir. Tamamlanmadan önce bir sınıfın Oluşturucusu varsa nesne hiçbir zaman oluşturulur ve yok edici asla çağrılmaz. Özel durum önce başlatılan otomatik değişkenler sahip, ancak bunların yok ediciler çağrılır, dinamik olarak ayrılan bellek veya akıllı bir işaretçi tarafından yönetilmeyen kaynakları veya benzer otomatik değişken leaked.  
   
- Hayır başarısız yerleşik türleri ve en az bir temel garanti standart kitaplığı türlerini destekler. Özel durum güvenli olması kullanıcı tanımlı tür için aşağıdaki yönergeleri izleyin:  
+ Hayır çökme tüm yerleşik türler ve temel garanti en az standart kitaplık türleri destekler. Özel durum açısından güvenli olmalıdır kullanıcı tanımlı türü için aşağıdaki yönergeleri izleyin:  
   
--   Akıllı işaretçiler veya diğer RAII türü sarmalayıcıları tüm kaynakları yönetmek için kullanın. Kaynak Yönetimi işlevleri, sınıf yıkıcı kaçının, çünkü Oluşturucusu bir özel durum oluşturursa yıkıcı çağrılan değil. Sınıfı yalnızca bir kaynak denetimleri ayrılmış Kaynak Yöneticisi, ancak, sonra onu yıkıcı kaynakları yönetmek için kullanmayı kabul edilebilir ise.  
+-   Akıllı işaretçiler veya diğer tür RAII sarmalayıcıları tüm kaynakları yönetmek için kullanın. Kaynak Yönetimi işlevselliği, sınıf yok edicisini kaçının, çünkü Oluşturucusu bir özel durum oluşturursa yok Edicisi çağrılır değil. Sınıfı yalnızca bir kaynak denetleyen bir adanmış Kaynak Yöneticisi, ancak ardından, yok Edicisi kaynakları yönetmek için kullanmak kabul edilebilir ise.  
   
--   Bir temel sınıf oluşturucu oluşturulan bir özel bir türetilmiş sınıf oluşturucu swallowed anlayın. Temel sınıfı özel durumu türetilmiş bir oluşturucu yeniden başlatıldıysa ve Çevir istiyorsanız, bir işlev try bloğu kullanın.   
+-   Bir taban sınıfı oluşturucusunda bir özel durum türetilmiş sınıf oluşturucu rediscache anlayın. Çevirin ve türetilmiş bir oluşturucuda temel sınıfı özel durumu yeniden harekete geçirerek istiyorsanız, bir işlev try bloğu kullanın.   
   
--   Kullanılıp özellikle bir sınıfın "başarısız olmasına izin başlatma." kavramı varsa, akıllı bir işaretçi kaydırılan bir veri üyesi tüm sınıf durumunu depolamak göz önünde bulundurun Başlatılmamış veri üyeleri için C++ olanak tanısa da başlatılmamış veya kısmen başlatılmış sınıf örneklerini desteklemez. Bir oluşturucu başarılı başarısız veya gerekir; Oluşturucusu tamamlanıncaya kadar çalışmazsa hiçbir nesnesi oluşturulur.  
+-   Özellikle, bir sınıfın "başarısız olmasına izin başlatma." kavramı varsa, bir akıllı işaretçi içinde sarmalanmış bir veri üyesi tüm sınıf durumunu depolamak etkinleştirilip etkinleştirilmeyeceğini göz önünde bulundurun Başlatılmamış veri üyeleri için C++ olanak tanısa da başlatılmamış veya kısmen başlatılmış sınıf örneklerinin desteklemez. Bir oluşturucu başarılı başarısız veya gerekir; Oluşturucu tamamlanana kadar çalışmazsa hiçbir nesne oluşturulur.  
   
--   Bir yıkıcı kaçınmak özel durumlar izin vermez. C++, temel axiom yıkıcı bir özel durum çağrı yığınına yayılmaya hiçbir zaman izin vermelidir ' dir. Bir yıkıcı bir olası özel durum atma işlemi gerçekleştirmeniz gerekirse, bu nedenle bir try catch bloğu ve gerekir özel durum swallow. Standart Kitaplığı, bu garantisi tanımladığı tüm Yıkıcılar üzerinde sağlar.  
+-   Bir yok ediciden kaçış özel durumların izin vermez. C++'ın temel bir axiom yok ediciler, bir özel durum çağrı yığınına yayılmaya hiçbir zaman izin vermelidir ' dir. Bir yok edici bir özel durum büyük olasılıkla işlemi gerçekleştirmesi gerekiyorsa, bu nedenle bir try catch bloğu ve gerekir swallow özel durum. Standart kitaplık bu garanti tanımladığı tüm yok ediciler üzerinde sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)   

@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bebd9c6628924b5927fb48518925bdd665b0ee14
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70cea341e7f78032cdaca260e3c891f4c762e0b6
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360024"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882630"
 ---
 # <a name="csimplemapequalhelperfalse-class"></a>CSimpleMapEqualHelperFalse sınıfı
-Bu sınıf için bir Yardımcısı, [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfı.  
+Bu sınıf için Yardımcısı, [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,9 +46,9 @@ class CSimpleMapEqualHelperFalse
 |[CSimpleMapEqualHelperFalse::IsEqualValue](#isequalvalue)|(Statik) Yanlış değerini döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu özellikleri sınıf için bir ektir `CSimpleMap` sınıfı. İçindeki iki öğe karşılaştırma için bir yöntem sağlar `CSimpleMap` nesnesi, özellikle iki değer öğe veya iki anahtar öğeleri.  
+ Bu nitelikler sınıfı için bir ektir `CSimpleMap` sınıfı. İçindeki iki öğe karşılaştırmak için bir yöntem sağlar `CSimpleMap` nesne, özellikle iki değer öğe veya iki temel öğeleri.  
   
- Değer karşılaştırma her zaman false döndürür ve ayrıca, çağıracak `ATLASSERT` bağımsız değişkeni hiç başvurulduğunda false. Burada eşitlik test yeterince tanımlanmamış durumlarda, bu sınıf için çoğu yöntemleri çalışmayabilir, ancak üzerinde karşılaştırmalarına gibi bağımlı yöntemleri için iyi tanımlanmış bir şekilde başarısız anahtar/değer çiftleri içeren bir eşleme sağlar [CSimpleMap:: FindVal](../../atl/reference/csimplemap-class.md#findval).  
+ Değer karşılaştırma her zaman false döndürür ve ayrıca, çağıran `ATLASSERT` bağımsız hiç olmadığı kadar başvurulan yoksa false. Burada eşitlik testi yeterince tanımlı değil durumlarda, bu sınıf için çoğu yöntemleri doğru şekilde çalışmaz, ancak üzerinde karşılaştırmalar gibi bağlı yöntemler için iyi tanımlanmış bir şekilde başarısız için anahtar/değer çiftleri içeren bir eşleme sağlar. [CSimpleMap:: FindVal](../../atl/reference/csimplemap-class.md#findval).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsimpcoll.h  
@@ -61,17 +61,17 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `k1`  
+ *K1*  
  İlk anahtar.  
   
- `k2`  
+ *K2*  
  İkinci anahtarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Anahtarları yanlış Aksi takdirde, eşitse true döndürür.  
+ Anahtarları false, eşitse true döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırır [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md).  
+ Bu yöntemin çağırdığı [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md).  
   
 ##  <a name="isequalvalue"></a>  CSimpleMapEqualHelperFalse::IsEqualValue  
  Yanlış değerini döndürür.  
@@ -84,8 +84,8 @@ static bool IsEqualValue(const TVal&, const TVal&);
  Yanlış değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` bağımsız değişkeni hiç başvurulduğunda false. Amacı `CSimpleMapEqualHelperFalse::IsEqualValue` eşitlik testleri yeterli tanımlanmamış olduğunda iyi tanımlanmış bir biçimde başarısız olmasına karşılaştırmaları kullanma yöntemleri zorlamak için.  
+ Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` bağımsız hiç olmadığı kadar başvurulan yoksa false. Amacı `CSimpleMapEqualHelperFalse::IsEqualValue` yöntemleri karşılaştırmalar eşitliği testleri yeterince tanımlanmamış iyi tanımlanmış bir şekilde başarısız kullanmayı zorlamak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSimpleMapEqualHelper sınıfı](../../atl/reference/csimplemapequalhelper-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

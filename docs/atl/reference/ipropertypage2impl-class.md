@@ -1,5 +1,5 @@
 ---
-title: IPropertyPage2Impl sınıfı | Microsoft Docs
+title: Ipropertypage2ımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,18 +20,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 204f62e667bd149dd174f960ba31d8388e01394e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bf5cf9438d2fcecb434802dc99aaa5c692ba108f
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361908"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882903"
 ---
-# <a name="ipropertypage2impl-class"></a>IPropertyPage2Impl sınıfı
-Bu sınıf uygulayan **IUnknown** ve varsayılan uygulaması devralır [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).  
+# <a name="ipropertypage2impl-class"></a>Ipropertypage2ımpl sınıfı
+Bu sınıfın uyguladığı `IUnknown` ve varsayılan uygulamasını devralan [Ipropertypageımpl](../../atl/reference/ipropertypageimpl-class.md).  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,7 +41,7 @@ class IPropertyPage2Impl : public IPropertyPageImpl<T>
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IPropertyPage2Impl`.  
   
 ## <a name="members"></a>Üyeler  
@@ -50,21 +50,21 @@ class IPropertyPage2Impl : public IPropertyPageImpl<T>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IPropertyPage2Impl::EditProperty](#editproperty)|Özellik sayfası etkinleştirildiğinde özelliğini denetleyen odak alacağını belirtir. ATL uygulamasını döndürür **E_NOTIMPL**.|  
+|[IPropertyPage2Impl::EditProperty](#editproperty)|Özellik sayfasını etkinleştirildiğinde özelliğini denetleyen odak alacağını belirtir. ATL uygulamasını E_NOTIMPL döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IPropertyPage2](http://msdn.microsoft.com/library/windows/desktop/ms683996) arabirimi genişletiyor [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) ekleyerek `EditProperty` yöntemi. Bu yöntem, belirli bir özelliği bir özellik sayfası nesnesinde seçmek bir istemci sağlar.  
+ [IPropertyPage2](http://msdn.microsoft.com/library/windows/desktop/ms683996) arabirimini genişletir [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) ekleyerek `EditProperty` yöntemi. Bu yöntem, özellik sayfa nesnesi içinde belirli bir özelliği seçmek bir istemci sağlar.  
   
- Sınıf `IPropertyPage2Impl` yalnızca döndürür **E_NOTIMPL** için **IPropertyPage2::EditProperty**. Ancak, varsayılan uygulaması devralır [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md) ve uygulayan **IUnknown** aygıt hata ayıklama dökümü bilgileri göndererek oluşturur.  
+ Sınıf `IPropertyPage2Impl` E_NOTIMPL için basitçe döndürür `IPropertyPage2::EditProperty`. Bununla birlikte, varsayılan uygulamasını devralır [Ipropertypageımpl](../../atl/reference/ipropertypageimpl-class.md) ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
- Özellik sayfası oluşturduğunuzda, sınıfınız genellikle türetildiği `IPropertyPageImpl`. Ek desteği sağlamak için **IPropertyPage2**, sınıf tanımını değiştirin ve geçersiz kılma `EditProperty` yöntemi.  
+ Özellik sayfası oluşturduğunuzda, kendi sınıfınızı genellikle türetilir `IPropertyPageImpl`. Ek destek sağlamak üzere `IPropertyPage2`, sınıf tanımına değiştirmek ve geçersiz kılma `EditProperty` yöntemi.  
   
- **İlgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [bir ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
+ **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IPropertyPage`  
   
- [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)  
+ [Ipropertypageımpl](../../atl/reference/ipropertypageimpl-class.md)  
   
  `IPropertyPage2Impl`  
   
@@ -72,19 +72,19 @@ class IPropertyPage2Impl : public IPropertyPageImpl<T>
  **Başlık:** atlctl.h  
   
 ##  <a name="editproperty"></a>  IPropertyPage2Impl::EditProperty  
- Özellik sayfası etkinleştirildiğinde özelliğini denetleyen odak alacağını belirtir.  
+ Özellik sayfasını etkinleştirildiğinde özelliğini denetleyen odak alacağını belirtir.  
   
 ```
 HRESULT EditProperty(DISPID dispID);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **E_NOTIMPL**.  
+ E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) Windows SDK.  
+ Bkz: [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IPerPropertyBrowsingImpl sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)   
- [ISpecifyPropertyPagesImpl sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Iperpropertybrowsingımpl sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)   
+ [Ispecifypropertypagesımpl sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

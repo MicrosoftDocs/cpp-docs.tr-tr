@@ -19,16 +19,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: effa754f50f8c092cef727969a0f4036e765f888
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 46f8d00877aa4147e4b3e4ec2a6a23b70d8154c8
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856052"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965854"
 ---
 # <a name="valuecompare-class-ltmapgt"></a>value_compare sınıfı (&lt;harita&gt;)
 
-Bir harita öğelerini göreli sıralarına eşlemesindeki belirlemek için kendi anahtarları değerleri karşılaştırarak karşılaştırabilirsiniz bir işlev nesnesi sağlar.
+Bir eşlemin öğelerini haritadaki kendi göreli sıralarını belirlemek için anahtarlarına değerlerini karşılaştırarak karşılaştıran bir işlev nesnesi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,13 +45,13 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tarafından sağlanan karşılaştırma ölçütü `value_compare` arasında **value_types** bir harita tarafından bulunan tüm öğelerin yardımcı sınıf oluşturma ile ilgili öğelerin anahtarları arasında bir karşılaştırma gelen kopyaladığınızda. Üye işlevi işleci nesnenin kullandığı **comp** türü `key_compare` tarafından sağlanan işlev nesnesi depolanan `value_compare` iki öğeleri sıralama anahtarı bileşenlerinin karşılaştırmak için.
+Tarafından sağlanan karşılaştırma ölçütü `value_compare` arasında `value_types` eşlemesi tarafından bulunan tüm öğelerin yardımcı sınıf oluşturma ile ilgili öğelerin anahtarlarını arasında bir karşılaştırma alanından kaynaklanan. Üye işlevi işleci nesnenin kullandığı `comp` türü `key_compare` tarafından sağlanan işlev nesnede depolanan `value_compare` iki öğeyi sıralama anahtarı bileşenlerinin karşılaştırmak için.
 
-Kümeleri ve anahtar değerlerinin olduğu öğesi değerlerin aynı basit kapsayıcılar olan, multisets `value_compare` eşdeğerdir `key_compare`; eşlemeleri ve bunlar değil, türü değeri multimaps `pair` öğeleri aynı değil öğenin anahtar değeri.
+Ayarlar ve basit kapsayıcılar anahtar değerlerinin olduğu öğe değerlerin aynı olan multisets `value_compare` eşdeğerdir `key_compare`; Haritalar ve bunlar değil, türü değeri olarak multimaps `pair` öğeleri aynı değil öğenin anahtar değeri.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [value_comp](../standard-library/map-class.md#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.
+Örneğin bakın [value_comp](../standard-library/map-class.md#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f018a87f7a73de6500294b0817263e6f847af8ad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 09efc905507d93bbb80b003f93b885d9d27fcb1d
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422676"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939851"
 ---
 # <a name="stdcall"></a>__stdcall
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- `__stdcall` Çağırma Win32 API işlevleri çağırmak için kullanılır. Derleyici yapar şekilde aranan yığını temizler **vararg** işlevler `__cdecl`. Bu arama kuralı kullanmak işlevleri işlev prototipi gerektirir.  
+ **__Stdcall** çağırma kuralı Win32 API işlevleri çağırmak için kullanılır. Aranan, yığını temizler, derleyici yapsak **vararg** işlevleri **__cdecl**. Bu çağrı kuralını kullanan işlevler bir işlev prototipi gerektirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,18 +41,18 @@ return-type __stdcall function-name[(argument-list)]
 |Öğe|Uygulama|  
 |-------------|--------------------|  
 |Bağımsız değişken geçirme sırası|Sağdan sola.|  
-|Bağımsız değişken geçirme kuralı|Değer bir işaretçi veya reference türü geçirilen sürece.|  
-|Yığın bakımı sorumluluğu|İşlev POP yığından kendi bağımsız değişkenleri olarak bilinir.|  
-|Ad düzenleme kuralı|Bir alt çizgi (_) adına önek. Tarafından adından at işareti (@) bağımsız değişken listesinde (ondalık) bayt sayısı ve ardından. Bu nedenle, olarak bildirilen bir işlev `int func( int a, double b )` gibi donatılmış: `_func@12`|  
+|Bağımsız değişken geçirme kuralı|Değer bir işaretçi veya başvuru türü geçirilmezse.|  
+|Yığın bakımı sorumluluğu|Çağırılan işlev, yığından bağımsız kendi değişkenlerini yığından.|  
+|Ad düzenleme kuralı|Bir alt çizgi (_) adın önekidir. Adın ardından at işareti (@) bağımsız değişken listesinde (ondalık) bayt sayısı ardından. Bu nedenle, bildirilen işlev `int func( int a, double b )` şu şekilde sunulur: `_func@12`|  
 |Durum çevirisi kuralları|Yok.|  
   
- [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği belirtir `__stdcall` açıkça farklı bir arama kuralı ile bildirilen tüm işlevler için.  
+ [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneğini belirten **__stdcall** farklı bir çağırma kuralı açıkça bildirilmeyen tüm işlevler için.  
   
- İşlevler kullanılarak bildirilen `__stdcall` değiştiricisi dönüş değerleri kullanılarak bildirilen işlevler aynı şekilde [__cdecl](../cpp/cdecl.md).  
+ Kullanılarak bildirilen işlevlerle **__stdcall** değiştirici dönüş değerleri kullanılarak bildirilen işlevlerle aynı şekilde [__cdecl](../cpp/cdecl.md).  
   
- ARM ve x64 işlemciler `__stdcall` kabul edilir ve ARM ve x64; derleyici tarafından mimarileri göz ardı kurala göre bağımsız değişken yazmaçlar mümkün olduğunda geçirilir ve sonraki bağımsız değişkenler, yığında geçirilir.  
+ ARM ve x64 işlemciler **__stdcall** kabul edilir ve derleyici tarafından; ARM ve x64 mimarileri, yoksayıldı. kural olarak, bağımsız değişkenler mümkün olduğunda kayıtlara geçirilir ve sonraki bağımsız değişkenler yığına geçirilir.  
   
- Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımını verildiğinde,  
+ Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımı verildiğinde,  
   
 ```cpp  
 struct CMyClass {  
@@ -66,14 +66,14 @@ struct CMyClass {
 void CMyClass::mymethod() { return; }  
 ```  
   
- Bunun için eşdeğerdir  
+ Şuna eşdeğerdir:  
   
 ```cpp  
 void __stdcall CMyClass::mymethod() { return; }  
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, kullanma __**stdcall** tüm sonuçları `WINAPI` işlevi türleri standart araması olarak işlenen:  
+ Aşağıdaki örnekte __ kullanın**stdcall** tüm sonuçları `WINAPI` işlevi standart arama olarak işlenen türleri:  
   
 ```cpp  
 // Example of the __stdcall keyword  

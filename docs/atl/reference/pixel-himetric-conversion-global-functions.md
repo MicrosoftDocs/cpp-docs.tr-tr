@@ -1,5 +1,5 @@
 ---
-title: Piksel HIMETRIC dönüştürme genel işlevler | Microsoft Docs
+title: Piksel HIMETRIC dönüştürme genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,23 +15,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92d84204bdf02e75f1baf64bd52d96eab0b3d271
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 14b28ec031cf4570ec98e9ab2cebfa3954a88754
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359432"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881168"
 ---
-# <a name="pixelhimetric-conversion-global-functions"></a>Piksel/HIMETRIC dönüştürme genel işlevler
-Bu işlevler piksel gelen ve HIMETRIC birimleri dönüştürmek için destek sağlar.  
+# <a name="pixelhimetric-conversion-global-functions"></a>Piksel/HIMETRIC dönüştürme genel işlevleri
+Bu işlevler, gelen ve piksel hımetrıc dönüştürme için destek sağlar.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarda aşağıdaki tabloda listelenen işlevleri kullanılamaz.  
+>  Aşağıdaki tabloda listelenen İşlevler, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 |||  
 |-|-|  
-|[AtlHiMetricToPixel](#atlhimetrictopixel)|(Her 0,01 milimetre birimdir) HIMETRIC birimleri piksel olarak dönüştürür.|  
-|[AtlPixelToHiMetric](#atlpixeltohimetric)|Piksel HIMETRIC birimlerine dönüştürür (her 0,01 milimetre birimdir).|  
+|[AtlHiMetricToPixel](#atlhimetrictopixel)|Piksel HIMETRIC birimleri (her birim 0,01 milimetre'dir) dönüştürür.|  
+|[AtlPixelToHiMetric](#atlpixeltohimetric)|Piksel HIMETRIC birimleri dönüştürür (her birim 0,01 milimetre'dir).|  
   
 ##  <a name="atlhimetrictopixel"></a>  AtlHiMetricToPixel  
  Ekran cihazında, bir nesnenin HIMETRIC birimindeki (her birim 0,01 milimetre) boyutunu piksel cinsinden boyuta dönüştürür.  
@@ -44,11 +44,11 @@ extern void AtlHiMetricToPixel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpSizeInHiMetric`  
- [in] İşaretçi HIMETRIC birimleri nesnenin boyutu.  
+ *lpSizeInHiMetric*  
+ [in] Nesnenin HIMETRIC birimindeki boyutunu işaretçisi.  
   
- `lpSizeInPix`  
- [out] Nesnenin boyutu piksel cinsinden döndürülecek olduğu için işaretçi.  
+ *lpSizeInPix*  
+ [out] Döndürülecek nesnenin boyutunu piksel cinsinden olduğu için işaretçi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#49](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_1.cpp)]  
@@ -66,11 +66,11 @@ extern void AtlPixelToHiMetric(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpSizeInPix`  
- [in] İşaretçi piksel cinsinden nesnenin boyutu.  
+ *lpSizeInPix*  
+ [in] Nesnesinin piksel boyutunda işaretçisi.  
   
- `lpSizeInHiMetric`  
- [out] Nesnenin boyutu HIMETRIC birimlerindeki döndürülecek olduğu için işaretçi.  
+ *lpSizeInHiMetric*  
+ [out] Döndürülecek nesnenin boyutunu HIMETRIC birimleri olduğu için işaretçi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#51](../../atl/codesnippet/cpp/pixel-himetric-conversion-global-functions_2.cpp)]  

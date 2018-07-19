@@ -1,5 +1,5 @@
 ---
-title: IConnectionPointImpl sınıfı | Microsoft Docs
+title: Iconnectionpointımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -24,14 +24,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 444dea401fa711b40e4d8229b26c9cdbf6d1fcbc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cf1f012067c3a3b85dd5168cf93521e4b2024e00
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362646"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884054"
 ---
-# <a name="iconnectionpointimpl-class"></a>IConnectionPointImpl sınıfı
+# <a name="iconnectionpointimpl-class"></a>Iconnectionpointımpl sınıfı
 Bu sınıf, bir bağlantı noktası uygular.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -42,14 +42,14 @@ class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IConnectionPointImpl`.  
   
- `piid`  
- Bağlantı noktası nesnesinin temsil ettiği arabirimi IID gösteren bir işaretçi.  
+ *piid*  
+ Bağlantı noktası nesnesiyle temsil edilen arabirimi Laboratuvardaki bir işaretçi.  
   
- `CDV`  
- Bağlantıları yöneten bir sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız izin verir. Aynı zamanda [CComUnkArray](../../atl/reference/ccomunkarray-class.md), sabit bir bağlantı sayısını belirtir.  
+ *CDV*  
+ Bağlantıları yöneten bir sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız sayıda bağlantı sağlar. Ayrıca [CComUnkArray](../../atl/reference/ccomunkarray-class.md), sabit sayıda bağlantı belirtir.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -58,23 +58,23 @@ class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[IConnectionPointImpl::Advise](#advise)|Bağlantı noktası ve bir havuz arasında bir bağlantı kurar.|  
-|[IConnectionPointImpl::EnumConnections](#enumconnections)|Bağlantı noktası için bağlantıları yinelemek için bir numaralandırıcı oluşturur.|  
-|[IConnectionPointImpl::GetConnectionInterface](#getconnectioninterface)|Bağlantı noktası tarafından temsil edilen arabirim IID alır.|  
-|[IConnectionPointImpl::GetConnectionPointContainer](#getconnectionpointcontainer)|Arabirim işaretçisi bağlanılabilirlik nesnesine alır.|  
-|[IConnectionPointImpl::Unadvise](#unadvise)|Üzerinden daha önce oluşturulmuş bir bağlantıyı sonlandırır `Advise`.|  
+|[IConnectionPointImpl::EnumConnections](#enumconnections)|Bağlantılar için bağlantı noktası üzerinden yinelemek için bir numaralandırıcı oluşturur.|  
+|[IConnectionPointImpl::GetConnectionInterface](#getconnectioninterface)|Bağlantı noktası tarafından temsil edilen arabirimi Laboratuvardaki alır.|  
+|[IConnectionPointImpl::GetConnectionPointContainer](#getconnectionpointcontainer)|Bağlanılabilirlik nesnesine bir arabirim işaretçisi alır.|  
+|[IConnectionPointImpl::Unadvise](#unadvise)|Daha önce aracılığıyla kurulan bir bağlantıyı sonlandırır `Advise`.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IConnectionPointImpl::m_vec](#m_vec)|Bağlantı noktası yönelik bağlantıları yönetir.|  
+|[IConnectionPointImpl::m_vec](#m_vec)|Bağlantı noktası için bağlantıları yönetir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IConnectionPointImpl` istemciye giden bir arabirimi kullanıma sunmak bir nesne sağlayan bir bağlantı noktası uygular. İstemci bir havuz adlı bir nesne üzerinde bu arabirimi uygular.  
+ `IConnectionPointImpl` istemciye giden bir arabirim ortaya çıkarmak bir nesne sağlayan bir bağlantı noktası uygular. İstemci, bir havuz olarak adlandırılan bir nesne üzerinde bu arabirimi uygular.  
   
- ATL kullanan [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) bağlanılabilirlik nesne uygulamak için. Her bağlantı noktası bağlanılabilirlik nesne içinde tarafından tanımlanan, giden bir arabirimi temsil eder `piid`. Sınıf *CDV* bağlantı noktası ve bir havuz arasındaki bağlantıları yönetir. Her bağlantı "tanımlama bilgisi tarafından." benzersiz olarak tanımlanır  
+ ATL kullanan [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) bağlanılabilirlik nesne uygulamak için. Bağlanılabilirlik nesnesi içindeki her bir bağlantı noktası, giden bir arabirim tarafından tanımlanan temsil eden *piid*. Sınıf *CDV* bağlantı noktası ve bir havuz arasındaki bağlantıları yönetir. Her bağlantı bir "tanımlama bilgisi tarafından" benzersiz olarak tanımlanır  
   
- İçinde ATL bağlantı noktaları hakkında daha fazla bilgi için bkz: [bağlantı noktaları](../../atl/atl-connection-points.md).  
+ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı noktaları](../../atl/atl-connection-points.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `_ICPLocator`  
@@ -94,39 +94,39 @@ STDMETHOD(Advise)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [Unadvise](#unadvise) bağlantı aramayı sonlandırmak için.  
+ Kullanım [Unadvise](#unadvise) bağlantı çağrıyı sonlandırmak için.  
   
- Bkz: [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) Windows SDK.  
+ Bkz: [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) Windows SDK içinde.  
   
 ##  <a name="enumconnections"></a>  IConnectionPointImpl::EnumConnections  
- Bağlantı noktası için bağlantıları yinelemek için bir numaralandırıcı oluşturur.  
+ Bağlantılar için bağlantı noktası üzerinden yinelemek için bir numaralandırıcı oluşturur.  
   
 ```
 STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPoint::EnumConnections](http://msdn.microsoft.com/library/windows/desktop/ms680755) Windows SDK.  
+ Bkz: [IConnectionPoint::EnumConnections](http://msdn.microsoft.com/library/windows/desktop/ms680755) Windows SDK içinde.  
   
 ##  <a name="getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface  
- Bağlantı noktası tarafından temsil edilen arabirim IID alır.  
+ Bağlantı noktası tarafından temsil edilen arabirimi Laboratuvardaki alır.  
   
 ```
 STDMETHOD(GetConnectionInterface)(IID* piid2);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPoint::GetConnectionInterface](http://msdn.microsoft.com/library/windows/desktop/ms693468) Windows SDK.  
+ Bkz: [IConnectionPoint::GetConnectionInterface](http://msdn.microsoft.com/library/windows/desktop/ms693468) Windows SDK içinde.  
   
 ##  <a name="getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer  
- Arabirim işaretçisi bağlanılabilirlik nesnesine alır.  
+ Bağlanılabilirlik nesnesine bir arabirim işaretçisi alır.  
   
 ```
 STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPoint::GetConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms679669) Windows SDK.  
+ Bkz: [IConnectionPoint::GetConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms679669) Windows SDK içinde.  
   
 ##  <a name="m_vec"></a>  IConnectionPointImpl::m_vec  
  Bağlantı noktası nesnesi ve bir havuz arasındaki bağlantıları yönetir.  
@@ -136,18 +136,18 @@ CDV m_vec;
 ```     
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, `m_vec` türü [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md).  
+ Varsayılan olarak, `m_vec` türünde [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md).  
   
 ##  <a name="unadvise"></a>  IConnectionPointImpl::Unadvise  
- Üzerinden daha önce oluşturulmuş bir bağlantıyı sonlandırır [öneri](#advise).  
+ Daha önce aracılığıyla kurulan bir bağlantıyı sonlandırır [öneri](#advise).  
   
 ```
 STDMETHOD(Unadvise)(DWORD dwCookie);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPoint::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608) Windows SDK.  
+ Bkz: [IConnectionPoint::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

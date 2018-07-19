@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bb54ae332dac556333516c5e50129b9ba43ce07
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 01eb327458331ca457b7b7f23d8c69668fbf1fa7
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845082"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964164"
 ---
 # <a name="binaryfunction-struct"></a>binary_function Yapısı
 
-Bir ikili işlev nesnesi sağlayan türetilmiş sınıflar tarafından devralınır türlerini tanımlayan bir boş temel yapı.
+Bir ikili bir işlev nesnesi sağlayan türetilen sınıfları tarafından devralındığından türlerini tanımlayan boş bir temel yapı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,13 +39,13 @@ struct binary_function {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapısı, formun üye işlevi tanımlayan sınıflar için temel görevi görür:
+Şablon yapı biçiminde bir üye işlevi tanımlayan sınıflar için temel olarak hizmet eder:
 
 **result_type operator()**( **constfirst_argument_type&**,
 
 **const second_argument_type &** ) **const**
 
-Tüm bu ikili işlevleri, ilk bağımsız değişken türü başvurabilirsiniz **first_argument_type**, tür, ikinci bağımsız değişkeni olarak **second_argument_type**ve kendi dönüş türü olarak ***result_type*** .
+İkili tüm bu işlevler, ilk bağımsız değişken türü başvurabilir `first_argument_type`, tür, ikinci bağımsız değişkeni olarak `second_argument_type`ve kendi dönüş türü olarak ***result_type***.
 
 ## <a name="example"></a>Örnek
 
@@ -110,7 +110,7 @@ The element-wise averages are: ( 5.5 1.75 -0.166667 -1.625 -2.9 -4.08333 )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

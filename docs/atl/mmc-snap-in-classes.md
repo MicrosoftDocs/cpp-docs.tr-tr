@@ -16,21 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3b5c1786695c9bf48189c6ff350d721a5bdac74
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 571cee9a309f1e980e62521215a717e6af432b08
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355499"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964124"
 ---
-# <a name="mmc-snap-in-classes"></a>MMC ek bileşen sınıfları
-Aşağıdaki sınıflar geliştirme Microsoft Yönetim Konsolu (MMC) ek bileşenleri için destek sağlar:  
+# <a name="mmc-snap-in-classes"></a>MMC ek bileşeni sınıfları
+Aşağıdaki sınıflar, geliştirme Microsoft Yönetim Konsolu (MMC) ek bileşenleri için destek sağlar:  
   
--   [CSnapInItemImpl](../atl/reference/csnapinitemimpl-class.md) menü öğeleri ve araç çubuklarını ekleme ve komutları için uygun işleyiciyi işlevi ek düğüme iletme gibi ek olarak, ek bileşenini düğüm nesnesi uygular.  
+-   [Csnapınıtemımpl](../atl/reference/csnapinitemimpl-class.md) menü öğeleri ve araç çubuklarını ekleme ve uygun bir işleyici işlevi için ek düğüm için komutları iletme gibi ek olarak, ek bileşenini düğüm nesnesi uygular.  
   
--   [CSnapInPropertyPageImpl](../atl/reference/csnapinpropertypageimpl-class.md) bir ek özellik sayfası nesnesi uygular.  
+-   [Csnapınpropertypageımpl](../atl/reference/csnapinpropertypageimpl-class.md) bir ek özellik sayfa nesnesi uygular.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)   
  [Ek Bileşen Nesne Makroları](../atl/reference/snap-in-object-macros.md)
 

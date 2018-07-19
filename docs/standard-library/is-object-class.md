@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3eaae998f1ca975e8eb4d102c8f7793ac8ab3b34
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 413223636efb735303ec600b09803472370ff306
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912790"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965597"
 ---
 # <a name="isobject-class"></a>is_object Sınıfı
 
-Bir nesne türü ise testleri yazın.
+Türü bir nesne türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_object;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği yanlış olmadığını tutan türü `Ty` bir başvuru türü, işlev türü ya da geçersiz kılma, veya bir `cv-qualified` form bunlardan biri, aksi takdirde tutan true.
+Yanlış tür koşulu örneğini tutan türü *Ty* bir başvuru türü, işlev türü veya void, veya bir `cv-qualified` form bunlardan biri, aksi halde tutan true.
 
 ## <a name="example"></a>Örnek
 

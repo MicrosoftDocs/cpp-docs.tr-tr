@@ -1,5 +1,5 @@
 ---
-title: Toplama ve sınıf Fabrika makroları | Microsoft Docs
+title: Toplama ve sınıf üreticisi makroları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -27,36 +27,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8569d4ecbbd74a6d2d37701a4ec22e56cbe9f100
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4995779a7f5595eca9dc47a29ea11d875995e959
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32366425"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881233"
 ---
-# <a name="aggregation-and-class-factory-macros"></a>Toplama ve sınıf Fabrika makroları
-Bu makroları toplama denetleme ve sınıf oluşturucuları bildirme yollar sağlar.  
+# <a name="aggregation-and-class-factory-macros"></a>Toplama ve sınıf üreticisi makroları
+Bu makrolar, toplama denetleme ve sınıf üreteçlerini bildirme yollar sağlar.  
   
 |||  
 |-|-|  
-|[DECLARE_AGGREGATABLE](#declare_aggregatable)|Nesnenizin olabilir bildirir (varsayılan) bir araya getirilir.|  
-|[DECLARE_CLASSFACTORY](#declare_classfactory)|Olmasını üreteci bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), ATL varsayılan üreteci.|  
-|[DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex)|Üreteci olması için sınıf üretecini bildirir.|  
-|[DECLARE_CLASSFACTORY2](#declare_classfactory2)|Bildirir [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) üreteci olmalıdır.|  
-|[DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread)|Bildirir [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) üreteci olmalıdır.|  
-|[DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton)|Bildirir [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md) üreteci olmalıdır.|  
+|[DECLARE_AGGREGATABLE](#declare_aggregatable)|Nesneniz olduğunu bildirir (varsayılan) toplanır.|  
+|[DECLARE_CLASSFACTORY](#declare_classfactory)|Sınıf üreteci olarak bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), ATL varsayılan sınıf üreteci.|  
+|[DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex)|Sınıf üreteci olacak şekilde, sınıf üretecini bildirir.|  
+|[DECLARE_CLASSFACTORY2](#declare_classfactory2)|Bildirir [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) sınıf üreteci olacak.|  
+|[DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread)|Bildirir [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) sınıf üreteci olacak.|  
+|[DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton)|Bildirir [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md) sınıf üreteci olacak.|  
 |[DECLARE_GET_CONTROLLING_UNKNOWN](#declare_get_controlling_unknown)|Bir sanal bildirir `GetControllingUnknown` işlevi.|  
 |[DECLARE_NOT_AGGREGATABLE](#declare_not_aggregatable)|Nesnenizin toplanamaz bildirir.|  
-|[DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable)|Nesnenizin toplanması gereken bildirir.|  
-|[DECLARE_POLY_AGGREGATABLE](#declare_poly_aggregatable)|Dış bilinmeyen denetler ve nesnenizin toplanabilir veya değil toplanabilir, uygun şekilde bildirir.|  
-|[DECLARE_PROTECT_FINAL_CONSTRUCT](#declare_protect_final_construct)|Dış nesne silme işlemi sırasında bir iç nesne oluşumunu önler.|  
-|[DECLARE_VIEW_STATUS](#declare_view_status)|Belirtir **VIEWSTATUS** bayrakları kapsayıcısı.|  
+|[DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable)|Nesnenizin toplanmalıdır bildirir.|  
+|[DECLARE_POLY_AGGREGATABLE](#declare_poly_aggregatable)|Dış bilinmeyen değerini denetler ve toplanabilir veya toplanabilir değil, uygun şekilde, nesne bildirir.|  
+|[DECLARE_PROTECT_FINAL_CONSTRUCT](#declare_protect_final_construct)|Dış nesne iç bir nesnenin yapımı sırasında silmeye karşı korur.|  
+|[DECLARE_VIEW_STATUS](#declare_view_status)|Kapsayıcıya VIEWSTATUS bayrakları belirtir.|  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
    
 ##  <a name="declare_aggregatable"></a>  DECLARE_AGGREGATABLE  
- Nesnenizin kümelenebilir belirtir.  
+ Nesnenizin toplanabilir belirtir.  
   
 ```
 DECLARE_AGGREGATABLE( x )
@@ -64,29 +64,29 @@ DECLARE_AGGREGATABLE( x )
   
 ### <a name="parameters"></a>Parametreler  
  *x*  
- [in] Aggregatable olarak tanımlıyorsanız sınıfının adı.  
+ [in] Toplanabilir olarak tanımlıyorsanız sınıfın adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CComCoClass](../../atl/reference/ccomcoclass-class.md) varsayılan toplama modeli belirtmek için bu makrosu içerir. Bu varsayılanı geçersiz kılmak için ya da belirleyin [DECLARE_NOT_AGGREGATABLE](#declare_not_aggregatable) veya [DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable) makrosu sınıf tanımında.  
+ [CComCoClass](../../atl/reference/ccomcoclass-class.md) varsayılan toplama modelini belirtmek için bu makroyu içerir. Bu varsayılanı geçersiz kılmak için seçeneklerinden birini belirtin [DECLARE_NOT_AGGREGATABLE](#declare_not_aggregatable) veya [DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable) sınıfı Tanımınızda makrosu.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#121](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_1.h)]  
   
 ##  <a name="declare_classfactory"></a>  DECLARE_CLASSFACTORY  
- Bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) üreteci olmalıdır.  
+ Bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) sınıf üreteci olacak.  
   
 ```
 DECLARE_CLASSFACTORY()
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CComCoClass](../../atl/reference/ccomcoclass-class.md) nesnenizin varsayılan üreteci bildirmek için bu makrosu kullanır.  
+ [CComCoClass](../../atl/reference/ccomcoclass-class.md) nesneniz için varsayılan sınıf üreteci bildirmek için bu makroyu kullanır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#55](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_2.h)]  
   
 ##  <a name="ccomclassfactory_class"></a>  CComClassFactory sınıfı  
- Bu sınıf uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi.  
+ Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi.  
   
 ```
 class CComClassFactory : public IClassFactory,
@@ -94,43 +94,43 @@ public CComObjectRootEx<CComGlobalsThreadModel>
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CComClassFactory` uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) daha hızlı oluşturulacak yeni nesneler izin vermek için bellek sınıfı fabrikada kilitleme yanı sıra belirli CLSID bir nesne oluşturmak için kullanılan yöntemler içerir arabirimi. **IClassFactory** sistem kayıt defterinde ve CLSID atamak için kayıt her sınıf için uygulanması gerekir.  
+ `CComClassFactory` uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi, yeni nesneler daha hızlı bir şekilde oluşturulmasına izin vermek için bellekte sınıf üreteci kilitleme yanı sıra belirli bir CLSID bir nesne oluşturmak için yöntemleri içerir. `IClassFactory` Sistem kayıt defterinde ve CLSID atamak için kaydettiğiniz her sınıf için uygulanmalıdır.  
   
- ATL nesneleri normalde türetme tarafından bir üreteci elde [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makrosu içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir `CComClassFactory` varsayılan üreteci olarak. Bu varsayılanı geçersiz kılmak için aşağıdakilerden birini belirtin `DECLARE_CLASSFACTORY` *XXX* Sınıf tanımınız makrolarındaki. Örneğin, [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) makrosu üreteci için belirtilen sınıf kullanır:  
+ ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir `CComClassFactory` olarak varsayılan sınıf üreteci. Bu varsayılanı geçersiz kılmak için DECLARE_CLASSFACTORY birini belirtin*XXX* sınıf tanımına makrolarındaki. Örneğin, [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) makrosu belirtilen sınıfı için sınıf üreteci kullanır:  
   
  [!code-cpp[NVC_ATL_COM#8](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_3.h)]  
   
- Yukarıdaki sınıf tanımını belirleyen **CMyClassFactory** nesnenin varsayılan üreteci kullanılır. **CMyClassFactory** öğesinden türetilmelidir `CComClassFactory` ve geçersiz kılma `CreateInstance`.  
+ Yukarıdaki sınıf tanımı belirten `CMyClassFactory` nesnenin varsayılan sınıf üreteci kullanılır. `CMyClassFactory` öğesinden türetilmelidir `CComClassFactory` ve geçersiz kılma `CreateInstance`.  
   
- ATL bir üreteci bildirme üç makroları sağlar:  
+ ATL bir sınıf üreteci bildirmek üç makroları sağlar:  
   
 - [DECLARE_CLASSFACTORY2](#declare_classfactory2) kullanan [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md), bir lisans ile oluşturma denetler.  
   
-- [DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread) kullanan [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md), birden çok grupların nesneler oluşturur.  
+- [DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread) kullanan [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md), içinde birden çok apartmanlar nesneleri oluşturur.  
   
-- [DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton) kullanan [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md), tek bir yapıları [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) nesnesi.  
+- [DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton) kullanan [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md), tek bir yapıları [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) nesne.  
   
 ##  <a name="declare_classfactory_ex"></a>  DECLARE_CLASSFACTORY_EX  
- Bildirir `cf` üreteci olmalıdır.  
+ Bildirir `cf` sınıf üreteci olacak.  
   
 ```
 DECLARE_CLASSFACTORY_EX( cf )
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `cf`  
- [in] Sınıf üretecini uygulayan sınıf adı.  
+ *cf*  
+ [in] Sınıf üretecini uygulayan sınıfın adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `cf` Parametresi öğesinden türetilmelidir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve geçersiz kılma `CreateInstance` yöntemi.  
+ *Cf* parametresi türetilmesi gereken [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve geçersiz kılma `CreateInstance` yöntemi.  
   
- [CComCoClass](../../atl/reference/ccomcoclass-class.md) içeren [DECLARE_CLASSFACTORY](#declare_classfactory) belirtir makrosu `CComClassFactory` varsayılan üreteci olarak. Ekleyerek ancak `DECLARE_CLASSFACTORY_EX` makrosu, nesnenin sınıf tanımında bu varsayılanı geçersiz kılabilir.  
+ [CComCoClass](../../atl/reference/ccomcoclass-class.md) içerir [DECLARE_CLASSFACTORY](#declare_classfactory) belirten makrosu `CComClassFactory` olarak varsayılan sınıf üreteci. Ancak, DECLARE_CLASSFACTORY_EX makrosu, nesnenin sınıf tanımında dahil ederek, bu varsayılanı geçersiz.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#8](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_3.h)]  
   
 ##  <a name="declare_classfactory2"></a>  DECLARE_CLASSFACTORY2  
- Bildirir [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) üreteci olmalıdır.  
+ Bildirir [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) sınıf üreteci olacak.  
   
 ```
 DECLARE_CLASSFACTORY2( lic )
@@ -141,13 +141,13 @@ DECLARE_CLASSFACTORY2( lic )
  [in] Uygulayan bir sınıf `VerifyLicenseKey`, `GetLicenseKey`, ve `IsLicenseValid`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CComCoClass](../../atl/reference/ccomcoclass-class.md) içeren [DECLARE_CLASSFACTORY](#declare_classfactory) belirtir makrosu [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) varsayılan üreteci olarak. Ekleyerek ancak `DECLARE_CLASSFACTORY2` makrosu, nesnenin sınıf tanımında bu varsayılanı geçersiz kılabilir.  
+ [CComCoClass](../../atl/reference/ccomcoclass-class.md) içerir [DECLARE_CLASSFACTORY](#declare_classfactory) belirten makrosu [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Ancak, DECLARE_CLASSFACTORY2 makrosu, nesnenin sınıf tanımında dahil ederek, bu varsayılanı geçersiz.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_4.h)]  
   
 ##  <a name="ccomclassfactory2_class"></a>  CComClassFactory2 sınıfı  
- Bu sınıf uygulayan [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) arabirimi.  
+ Bu sınıfın uyguladığı [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) arabirimi.  
   
 ```
 template <class license>
@@ -167,38 +167,38 @@ class  CComClassFactory2 : public IClassFactory2,
 - **statik BOOL IsLicenseValid ();**  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CComClassFactory2` uygulayan [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) uzantısıdır arabirimi, [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). **IClassFactory2** denetimleri nesne bir lisans ile oluşturma. Bir sınıf Fabrika lisanslı bir makinede yürütülen bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri örneği oluşturmak bir uygulama sağlar.  
+ `CComClassFactory2` uygulayan [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) uzantısıdır arabirimi, [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). `IClassFactory2` bir lisans ile denetimleri nesne oluşturma. Bir sınıf üreteci lisanslı bir makinede çalıştırma, bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri somutlaştırmak bir uygulama sağlar.  
   
- ATL nesneleri normalde türetme tarafından bir üreteci elde [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makrosu içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) varsayılan üreteci olarak. Kullanılacak `CComClassFactory2`, belirtin [DECLARE_CLASSFACTORY2](#declare_classfactory2) makrosu, nesnenin sınıf tanımında. Örneğin:  
+ ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactory2`, belirtin [DECLARE_CLASSFACTORY2](#declare_classfactory2) makrosu, nesnenin sınıf tanımında. Örneğin:  
   
  [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_4.h)]  
   
- **CMyLicense**, şablon parametresi `CComClassFactory2`, statik işlevler uygulamalıdır `VerifyLicenseKey`, `GetLicenseKey`, ve `IsLicenseValid`. Bir basit lisans sınıfın bir örnek verilmiştir:  
+ `CMyLicense`, şablon parametresi olarak `CComClassFactory2`, statik işlevler uygulamalıdır `VerifyLicenseKey`, `GetLicenseKey`, ve `IsLicenseValid`. Aşağıdaki basit lisans sınıfının bir örneğidir:  
   
  [!code-cpp[NVC_ATL_COM#3](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_5.h)]  
   
- `CComClassFactory2` hem türetilen **CComClassFactory2Base** ve *lisans*. **CComClassFactory2Base**, buna karşılık, türetilen **IClassFactory2** ve **in uygulamasına\< CComGlobalsThreadModel >**.  
+ `CComClassFactory2` hem türetilen `CComClassFactory2Base` ve *lisans*. `CComClassFactory2Base`, sırasıyla türetildiği `IClassFactory2` ve **CComObjectRootEx\< CComGlobalsThreadModel >**.  
   
 ##  <a name="declare_classfactory_auto_thread"></a>  DECLARE_CLASSFACTORY_AUTO_THREAD  
- Bildirir [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) üreteci olmalıdır.  
+ Bildirir [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) sınıf üreteci olacak.  
   
 ```
 DECLARE_CLASSFACTORY_AUTO_THREAD()
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CComCoClass](../../atl/reference/ccomcoclass-class.md) içeren [DECLARE_CLASSFACTORY](#declare_classfactory) belirtir makrosu [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) varsayılan üreteci olarak. Ekleyerek ancak `DECLARE_CLASSFACTORY_AUTO_THREAD` makrosu, nesnenin sınıf tanımında bu varsayılanı geçersiz kılabilir.  
+ [CComCoClass](../../atl/reference/ccomcoclass-class.md) içerir [DECLARE_CLASSFACTORY](#declare_classfactory) belirten makrosu [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Ancak, DECLARE_CLASSFACTORY_AUTO_THREAD makrosu, nesnenin sınıf tanımında dahil ederek, bu varsayılanı geçersiz.  
   
- Nesneler (işlem dışı Server'daki) birden çok grupların oluştururken, ekleme `DECLARE_CLASSFACTORY_AUTO_THREAD` sınıfınıza.  
+ (İşlem dışı Server'daki) birden çok apartmanlar nesneler oluşturduğunuzda DECLARE_CLASSFACTORY_AUTO_THREAD sınıfınıza ekleyin.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_6.h)]  
   
 ##  <a name="ccomclassfactoryautothread_class"></a>  CComClassFactoryAutoThread sınıfı  
- Bu sınıf uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirim ve nesnelerin içinde birden çok grupların oluşturulmasına izin verir.  
+ Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirim ve nesnelerin içinde birden çok apartmanlar oluşturulmasına izin verir.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 class CComClassFactoryAutoThread : public IClassFactory,
@@ -206,34 +206,34 @@ public CComObjectRootEx<CComGlobalsThreadModel>
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CComClassFactoryAutoThread` benzer [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), ancak nesnelerin içinde birden çok grupların oluşturulmasına izin verir. Bu destek yararlanmak için EXE modülünden türetin [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
+ `CComClassFactoryAutoThread` benzer [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), ancak nesnelerin içinde birden çok apartmanlar oluşturulmasına izin verir. Bu destek avantajlarından yararlanmak için EXE modülünden türetilen [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).  
   
- ATL nesneleri normalde türetme tarafından bir üreteci elde [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makrosu içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) varsayılan üreteci olarak. Kullanılacak `CComClassFactoryAutoThread`, belirtin [DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread) makrosu, nesnenin sınıf tanımında. Örneğin:  
+ ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactoryAutoThread`, belirtin [DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread) makrosu, nesnenin sınıf tanımında. Örneğin:  
   
  [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_6.h)]  
   
 ##  <a name="declare_classfactory_singleton"></a>  DECLARE_CLASSFACTORY_SINGLETON  
- Bildirir [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md) üreteci olmalıdır.  
+ Bildirir [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md) sınıf üreteci olacak.  
   
 ```
 DECLARE_CLASSFACTORY_SINGLETON( obj )
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `obj`  
- [in] Sınıf nesnesi adı.  
+ *obj*  
+ [in] Sınıfı nesne adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CComCoClass](../../atl/reference/ccomcoclass-class.md) içeren [DECLARE_CLASSFACTORY](#declare_classfactory) belirtir makrosu [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) varsayılan üreteci olarak. Ekleyerek ancak `DECLARE_CLASSFACTORY_SINGLETON` makrosu, nesnenin sınıf tanımında bu varsayılanı geçersiz kılabilir.  
+ [CComCoClass](../../atl/reference/ccomcoclass-class.md) içerir [DECLARE_CLASSFACTORY](#declare_classfactory) belirten makrosu [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Ancak, DECLARE_CLASSFACTORY_SINGLETON makrosu, nesnenin sınıf tanımında dahil ederek, bu varsayılanı geçersiz.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_7.h)]  
   
 ##  <a name="ccomclassfactorysingleton_class"></a>  CComClassFactorySingleton sınıfı  
- Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturulamadı.  
+ Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 template<class T>
@@ -241,25 +241,25 @@ class CComClassFactorySingleton : public CComClassFactory
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınıza.  
   
- `CComClassFactorySingleton` türetilen [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturulamadı. Her çağrı `CreateInstance` yöntemi sadece bu nesne için bir arabirim işaretçisi sorgular.  
+ `CComClassFactorySingleton` öğesinden türetilen [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için. Her çağrı `CreateInstance` yöntemi yalnızca bu nesne bir arabirim işaretçisi için sorgular.  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL nesneleri normalde türetme tarafından bir üreteci elde [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makrosu içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir `CComClassFactory` varsayılan üreteci olarak. Kullanılacak `CComClassFactorySingleton`, belirtin [DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton) makrosu, nesnenin sınıf tanımında. Örneğin:  
+ ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir `CComClassFactory` olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactorySingleton`, belirtin [DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton) makrosu, nesnenin sınıf tanımında. Örneğin:  
   
  [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_7.h)]  
   
 ##  <a name="declare_get_controlling_unknown"></a>  DECLARE_GET_CONTROLLING_UNKNOWN  
- Bir sanal işlev bildirir `GetControllingUnknown`.  
+ Sanal bir işlev bildirir `GetControllingUnknown`.  
   
 ```
 DECLARE_GET_CONTROLLING_UNKNOWN()
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Derleyici hata iletisi alırsanız, nesnesine bu makrosu ekleme `GetControllingUnknown` tanımlı değil (örneğin, **CComAggregateCreator**).  
+ Derleyici hata iletisi alırsanız bu makro, nesnesine ekleme `GetControllingUnknown` tanımlı değil (örneğin, `CComAggregateCreator`).  
   
 ##  <a name="declare_not_aggregatable"></a>  DECLARE_NOT_AGGREGATABLE  
  Nesnenizin toplanamaz belirtir.  
@@ -270,12 +270,12 @@ DECLARE_NOT_AGGREGATABLE( x )
   
 ### <a name="parameters"></a>Parametreler  
  *x*  
- [in] Not aggregatable olarak tanımlıyorsanız sınıfı nesnesinin adı.  
+ [in] Sınıfı nesne adı olarak toplanabilir tanımlıyorsunuz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `DECLARE_NOT_AGGREGATABLE` neden `CreateInstance` hata döndürülecek ( **CLASS_E_NOAGGREGATION**) denemesi yapılırsa, nesnenizin üzerine toplanacak.  
+ DECLARE_NOT_AGGREGATABLE neden `CreateInstance` denemesi yapılırsa (CLASS_E_NOAGGREGATION) bir hata döndürmek için nesnenin üzerine toplanacak.  
   
- Varsayılan olarak, [CComCoClass](../../atl/reference/ccomcoclass-class.md) içeren [DECLARE_AGGREGATABLE](#declare_aggregatable) nesnenizin kümelenebilir belirtir makrosu. Bu varsayılan davranışı geçersiz kılmak için dahil `DECLARE_NOT_AGGREGATABLE` sınıf tanımında.  
+ Varsayılan olarak, [CComCoClass](../../atl/reference/ccomcoclass-class.md) içeren [DECLARE_AGGREGATABLE](#declare_aggregatable) nesnenizin toplanabilir belirten makrosu. Bu varsayılan davranışı geçersiz kılmak için sınıf tanımında DECLARE_NOT_AGGREGATABLE içerir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#121](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_1.h)]  
@@ -289,18 +289,18 @@ DECLARE_ONLY_AGGREGATABLE( x )
   
 ### <a name="parameters"></a>Parametreler  
  *x*  
- [in] Yalnızca aggregatable olarak tanımlıyorsanız sınıfı nesnesinin adı.  
+ [in] Yalnızca toplanabilir tanımladığınız sınıf nesnesi adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `DECLARE_ONLY_AGGREGATABLE` bir hataya neden olur ( **E_FAIL**) denemesi yapılırsa **CoCreate** nesnenizin toplanmayan nesne olarak.  
+ DECLARE_ONLY_AGGREGATABLE neden bir hata (E_FAIL) denemesi yapılırsa `CoCreate` nesnenizin toplanmayan bir nesne.  
   
- Varsayılan olarak, [CComCoClass](../../atl/reference/ccomcoclass-class.md) içeren [DECLARE_AGGREGATABLE](#declare_aggregatable) nesnenizin kümelenebilir belirtir makrosu. Bu varsayılan davranışı geçersiz kılmak için dahil `DECLARE_ONLY_AGGREGATABLE` sınıf tanımında.  
+ Varsayılan olarak, [CComCoClass](../../atl/reference/ccomcoclass-class.md) içeren [DECLARE_AGGREGATABLE](#declare_aggregatable) nesnenizin toplanabilir belirten makrosu. Bu varsayılan davranışı geçersiz kılmak için sınıf tanımında DECLARE_ONLY_AGGREGATABLE içerir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#125](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_8.h)]  
   
 ##  <a name="declare_poly_aggregatable"></a>  DECLARE_POLY_AGGREGATABLE  
- Belirleyen bir örneğini **CComPolyObject \<**  *x* **>** nesnenizin oluşturulduğunda oluşturulur.  
+ Belirten bir örneğini **CComPolyObject \<**  *x* **>** nesnenizin oluşturduğunuzda oluşturulur.  
   
 ```
 DECLARE_POLY_AGGREGATABLE( x )
@@ -308,33 +308,33 @@ DECLARE_POLY_AGGREGATABLE( x )
   
 ### <a name="parameters"></a>Parametreler  
  *x*  
- [in] Toplanabilir veya değil toplanabilir olarak tanımlama sınıfı nesnesinin adı.  
+ [in] Toplanabilir veya toplanabilir değil olarak tanımlayan sınıf nesnesi adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma sırasında dış bilinmeyen değerini denetlenir. Eğer öyleyse **NULL**, **IUnknown** toplanmayan bir nesne için uygulanır. Dış bilinmeyen değilse **NULL**, **IUnknown** toplanmış olan bir nesne için uygulanır.  
+ Oluşturma sırasında dış bilinmeyen değerini denetlenir. NULL ise `IUnknown` toplanmayan bir nesne için uygulanır. Dış bilinmeyen NULL değilse `IUnknown` toplanan nesne için uygulanır.  
   
- Kullanmanın avantajı `DECLARE_POLY_AGGREGATABLE` her ikisi de zorunda kalmamak olan `CComAggObject` ve `CComObject` toplanmış ve toplanmayan durumlarında, modüldeki. Tek bir `CComPolyObject` nesnesini işleme her iki durumda. Bu, yalnızca bir kopyasını vtable ve işlevlerin bir kopya, modülünde mevcut anlamına gelir. Vtable büyükse, bu modül boyutu önemli ölçüde düşürebilir. Ancak, vtable küçükse kullanarak `CComPolyObject` bir toplanmış veya toplanmayan nesne için iyileştirilmediğinden biraz daha büyük bir modül boyutu sonuçlanabilir olarak `CComAggObject` ve `CComObject`.  
+ İkisinin önlemek DECLARE_POLY_AGGREGATABLE kullanmanın avantajı olduğu `CComAggObject` ve `CComObject` toplanmış ve toplanmayan durumlarında, modüldeki. Tek bir `CComPolyObject` nesnesi, her iki durumda işler. Bu işlevler bir kopyasını ve yalnızca bir kopyasını vtable modülünüzde mevcut anlamına gelir. Vtable büyükse, bu, modül boyutu önemli ölçüde düşürebilir. Ancak, vtable küçükse kullanarak `CComPolyObject` bir toplanmış veya toplanmayan nesnesi için iyileştirilmediğinden biraz daha büyük bir modül boyutu sonuçlanabilir olarak `CComAggObject` ve `CComObject`.  
   
- `DECLARE_POLY_AGGREGATABLE` Tam bir denetim oluşturmak için ATL Denetim Sihirbazı'nı kullanırsanız makrosu, nesnesinde otomatik olarak bildirilmedi.  
+ Tam bir denetim oluşturmak için ATL Denetim Sihirbazı'nı kullanırsanız DECLARE_POLY_AGGREGATABLE makrosu, nesne otomatik olarak bildirilir.  
   
 ##  <a name="declare_protect_final_construct"></a>  DECLARE_PROTECT_FINAL_CONSTRUCT  
 
- Nesneniz varsa silinmiş korur (sırasında [FinalConstruct](ccomobjectrootex-class.md#finalconstruct)) iç toplanmış nesne başvuru sayısı sonra azaltır 0 sayısını artırır.  
+ Nesneniz varsa silinmiş korur (sırasında [FinalConstruct](ccomobjectrootex-class.md#finalconstruct)) iç toplanan nesne başvuru sayısını sonra azaltır 0 sayısını artırır.  
   
 ```
 DECLARE_PROTECT_FINAL_CONSTRUCT()
 ```  
   
 ##  <a name="declare_view_status"></a>  DECLARE_VIEW_STATUS  
- Bu makrosu belirtmek için bir ATL ActiveX denetiminin denetimi sınıfta yerleştirin **VIEWSTATUS** bayrakları kapsayıcısı.  
+ Bir ATL ActiveX denetiminin denetim sınıfı kapsayıcıya VIEWSTATUS bayrakları belirtmek için bu makroyu yerleştirin.  
   
 ```
 DECLARE_VIEW_STATUS( statusFlags )
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `statusFlags`  
- [in] **VIEWSTATUS** bayrakları. Bkz: [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) bayrakları listesi.  
+ *statusFlags*  
+ [in] VIEWSTATUS bayraklar. Bkz: [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) bayrakların listesi için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#126](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_9.h)]  

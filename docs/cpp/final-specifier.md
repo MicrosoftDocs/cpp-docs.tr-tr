@@ -16,34 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82fb9e13fc5dbbafcc37905716a37322b2966c6d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 594bc432cb12b63c76172b06ee078d5b0f72de55
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948003"
 ---
 # <a name="final-specifier"></a>final Tanımlayıcısı
-Türetilmiş bir sınıfta geçersiz kılınamayan sanal işlevler atamak için `final` anahtar sözcüğünü kullanabilirsiniz. Ayrıca devralınamaz sınıflar aramak için de onu kullanabilirsiniz.  
+Kullanabileceğiniz **son** türetilen bir sınıfta geçersiz kılınmış sanal işlevler atamak için anahtar sözcüğü. Ayrıca devralınamaz sınıflar aramak için de onu kullanabilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
 function-declaration final;  
-```  
-  
-```  
-  
 class class-name final base-classes  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `final` bağlama duyarlıdır ve yalnızca bir işlev bildiriminden veya sınıf adından sonra kullanıldığında özel anlamı olur; aksi takdirde, ayrılmış bir anahtar sözcük değildir.  
+ **Son** duyarlıdır ve bir işlev bildiriminden sonra ya da sınıf adı; Aksi takdirde, ayrılmış bir anahtar sözcük değil yalnızca özel bir anlamı vardır.  
   
- `final` sınıf bildirimlerinde kullanıldığı zaman; `base-classes`, bildirimin isteğe bağlı bir parçasıdır.  
+ Zaman **son** sınıf bildirimlerinde kullanılır `base-classes` bildirimi isteğe bağlı bir parçasıdır.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, sanal işlevin geçersiz kılınamayacağını belirtmek için `final` anahtar sözcüğü kullanılmaktadır.  
+ Aşağıdaki örnekte **son** anahtar sözcüğü, bir sanal işlevi geçersiz kılınamaz belirtmek için.  
   
 ```cpp  
 class BaseClass  
@@ -58,9 +55,9 @@ class DerivedClass: public BaseClass
 };  
 ```  
   
- Üye işlevlerini geçersiz kılınabilir belirtme hakkında daha fazla bilgi için bkz: [override tanımlayıcısı](../cpp/override-specifier.md).  
+ Üye işlevlerinin geçersiz kılınabileceğini belirtme hakkında daha fazla bilgi için bkz: [geçersiz kılma belirticisi](../cpp/override-specifier.md).  
   
- Sonraki örnekte, bir sınıfın devralınamayacağını belirtmek için `final` anahtar sözcüğü kullanılmıştır.  
+ Sonraki örnekte **son** anahtar sözcüğü bir sınıfın devralınamayacağını belirtmek için.  
   
 ```cpp  
 class BaseClass final   
@@ -74,5 +71,5 @@ class DerivedClass: public BaseClass // compiler error: BaseClass is
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [override Tanımlayıcısı](../cpp/override-specifier.md)

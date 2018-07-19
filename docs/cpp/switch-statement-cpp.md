@@ -1,5 +1,5 @@
 ---
-title: Deyimi (C++) geçiş | Microsoft Docs
+title: switch deyimi (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,14 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cea2c7e4bff895f9ccabc044ed5b7f5ae506b32
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1d4ab0694936fe4ad25b3c56bf286e9416e4e935
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948141"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C++)
-Tam sayı ifadenin değerine bağlı olarak kod birden çok bölüm arasında seçim sağlar.  
+Kod, tam sayı ifadesinin değerine bağlı olarak birden çok bölüm arasında seçim sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,23 +39,23 @@ Tam sayı ifadenin değerine bağlı olarak kod birden çok bölüm arasında se
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- *İfade* tamsayı türü veya var olduğu anlaşılır bir tam sayı türüne dönüştürme sınıf türü olması gerekir. Tam sayı yükseltme açıklandığı gibi gerçekleştirilir [standart dönüşümler](standard-conversions.md).  
+ *İfade* bir tamsayı türü veya bir sınıf türünün var olan bir tamsayı türüne belirsiz dönüştürme olmalıdır. İntegral yükseltme gerçekleştirilir açıklandığı [standart dönüştürmeler](standard-conversions.md).  
   
- `switch` Deyimi gövde oluşan bir dizi **durum** etiketleri ve isteğe bağlı bir **varsayılan** etiketi. Hiçbir iki sabit ifadeler **durumda** deyimleri aynı değere değerlendirin. **Varsayılan** etiketi yalnızca bir kez görünebilir. Etiketli deyimler söz dizimi gereksinimler değildir ancak `switch` açıklamadır onlar olmadan anlamsız.   Varsayılan deyimini sonunda gelen değil; herhangi bir yere switch deyimi gövdesinde yer alabilir. Servis talebi veya varsayılan bir etiket yalnızca switch deyimi içinde bulunabilir.  
+ **Geçiş** oluşan bir dizi deyim gövdesi **çalışması** etiketleri ve isteğe bağlı **varsayılan** etiketi. Hiçbir iki sabit ifadelerde **çalışması** deyimlerindeki aynı değeri. **Varsayılan** etiket yalnızca bir kez görünebilir. Etiketli ifadeler sözdizimsel gereksinimler değildir ancak **geçiş** deyimini bunlar olmadan anlamsız olur.   Varsayılan deyimin sona gelmesi gerekmez; Ayrıca, switch deyimi gövdesinin içinde herhangi bir yerde görünebilir. Bir case veya default etiketi yalnızca switch deyimi içinde bulunabilir.  
   
- *Sabit ifadesi* her **durum** etiket türüne dönüştürülüp *ifade* ve ile karşılaştırıldığında *ifade* için Eşitlik. Denetim geçirir ifadesine özelliği **durum** *sabit ifadesi* değeri ile eşleşen *ifade*. Bunun sonucunda oluşan davranışı aşağıdaki tabloda gösterilmiştir.  
+ *Sabit-ifade* her **çalışması** etiket türüne dönüştürülür *ifade* ve ile karşılaştırıldığında *ifade* için Eşitlik. Denetim özelliği deyime geçer **çalışması** *sabit-ifade* değeriyle eşleşen *ifade*. Sonuçta ortaya çıkan davranış aşağıdaki tabloda gösterilmektedir.  
   
 ### <a name="switch-statement-behavior"></a>Switch deyimi davranışı  
   
 |Koşul|Eylem|  
 |---------------|------------|  
-|Dönüştürülen değeri, yükseltilen denetleme ifade ile eşleşir.|Denetimin etiket aşağıdaki deyimi aktarılır.|  
-|Sabitler hiçbiri sabitler eşleşen **durum** etiketler; bir **varsayılan** etiketi mevcut.|Denetim için aktarılır **varsayılan** etiketi.|  
-|Sabitler hiçbiri sabitler eşleşen **durumda** etiketler; **varsayılan** etiketi mevcut değil.|Denetim sonraki deyime aktarılır `switch` deyimi.|  
+|Dönüştürülmüş değeri, yükseltilen denetleme ifadesiyle eşleşir.|Denetim, bu etiketi takiben deyime aktarılır.|  
+|Sabitlerden hiçbiri sabitlerle eşleşmez **çalışması** etiketler; bir **varsayılan** etiketi görüntülenir.|Denetim aktarılır **varsayılan** etiketi.|  
+|Sabitlerden hiçbiri sabitlerle eşleşmez **çalışması** etiketler; **varsayılan** etiketi mevcut değil.|Denetim sonraki deyime aktarılır **geçiş** deyimi.|  
   
- Eşleşen bir ifade bulunursa, denetim tarafından sonraki engelleniyor değil **durum** veya **varsayılan** etiketler. [Sonu](../cpp/break-statement-cpp.md) deyimi yürütme durdurun ve sonra deyimi denetim aktarmak için kullanılan `switch` deyimi. Olmadan bir **sonu** deyimi, eşleşen her deyiminden **durum** etiket sonuna `switch`dahil **varsayılan**, yürütülür. Örneğin:  
+ Eşleşen bir ifade bulunursa denetim sonraki tarafından engellenmez **çalışması** veya **varsayılan** etiketler. [Sonu](../cpp/break-statement-cpp.md) deyimi yürütmeyi durdurmak ve denetimi sonraki deyime aktarmak için kullanılan **geçiş** deyimi. Olmadan bir **sonu** deyimi, eşleşen her deyim **çalışması** sonuna etiket **geçiş**de dahil olmak üzere **varsayılan**, olan yürütülür. Örneğin:  
   
-```  
+```cpp 
 // switch_statement1.cpp  
 #include <stdio.h>  
   
@@ -83,9 +84,9 @@ int main() {
 }  
 ```  
   
- Yukarıdaki örnekte, `capa` olmazsa artırılır `c` bir büyük `A`. `break` Sonra deyimi `capa++` yürütülmesi sonlandırır `switch` deyimi gövde ve denetim geçtiği `while` döngü. Olmadan `break` deyimi, yürütme "geçiş" sonraki etiketli deyim için böylece `lettera` ve `nota` da artar. Benzer bir amaçla tarafından sunulan `break` bildirimi `case 'a'`. Varsa `c` küçük harf olduğundan `a`, `lettera` artırılır ve `break` açıklamayı sonlandıran `switch` deyimi gövdesi. Varsa `c` değil bir `a` veya `A`, `default` deyimi gerçekleştirilir.  
+ Yukarıdaki örnekte, `capa` artırılır `c` bir büyük harf olan `A`. **Sonu** deyiminden sonra `capa++` yürütülmesini sonlandırır **geçiş** deyim gövdesi ve denetim geçtiği **sırada** döngü. Olmadan **sonu** deyimi, yürütme "geçiş" sonraki etiketli deyime, böylece `lettera` ve `nota` de artırılır. Benzer bir amaç tarafından sunulan **sonu** bildirimi `case 'a'`. Varsa `c` küçük harfliyse `a`, `lettera` artırılır ve **sonu** açıklamayı sonlandıran **geçiş** deyim gövdesi. Varsa `c` değil bir `a` veya `A`, **varsayılan** deyimi yürütülür.  
 
- **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği, C ++ 17 standardında belirtilir. İçinde kullanılabilir bir `switch` deyimi bu başarısızlığı davranışı derleyici (veya kod okuyan herkes için) bir ipucu olarak tasarlanmıştır. Bu öznitelik hiçbir etkisi derleyici davranışı nedenle Visual C++ Derleyici fallthrough davranışı üzerinde şu anda uyarmaz. Etiketli deyim içinde boş bir deyimi öznitelik uygulanan unutmayın; diğer bir deyişle noktalı virgül gereklidir.
+ **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği C ++ 17 standardına belirtildi. İçinde kullanılabilir bir **geçiş** deyimi bu başarısızlığı davranışı ipucu derleyici (veya kodu okuyan herkese) olarak hazırlanmıştır. Bu öznitelik derleyici davranışı üzerinde hiçbir etkisi için Visual C++ derleyicisi fallthrough davranışı, şu anda uyarmaz. Etiketli deyim içinde boş bir deyimi öznitelik uygulandığı dikkat edin. diğer bir deyişle noktalı virgül gereklidir.
 
 ```cpp
 int main()
@@ -113,7 +114,7 @@ int main()
 }
 ```
 
- **Visual Studio 2017 15.3 ve sonraki sürümleri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): switch deyimi getirir ve kapsamını switch deyimi bloğuna sınırlı bir değişken başlatılamadı:
+ **Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): switch ifadesi tanıtır ve kapsamı switch ifadesinin blokla sınırlı bir değişkeni:
 
 ```cpp
  switch (Gadget gadget(args); auto s = gadget.get_status())
@@ -126,7 +127,7 @@ int main()
         };
 ```
 
- Bir iç bloğunu bir `switch` deyimi, başlatmaları tanımlarla içerebilir, erişilebilir olduğu sürece — tüm olası yürütme yollarla diğer bir deyişle, atlanacağı değil. Bu bildirimler kullanarak sunulan adları yerel kapsama sahip. Örneğin:  
+ İç bloğu, bir **geçiş** deyimi, erişilebilir oldukları sürece Başlatmalarla birlikte tanımlar içerebilir — diğer bir deyişle, tüm olası yürütme yolları tarafından atlanmamıştır. Bu bildirimler kullanılarak bildirilen adlar yerel kapsama sahiptir. Örneğin:  
   
 ```cpp  
 // switch_statement2.cpp  
@@ -161,15 +162,15 @@ int main(int argc, char *argv[])
 }  
 ```  
   
- A `switch` deyimi iç içe geçirilemez. Böyle durumlarda, **durum** veya **varsayılan** etiketlerle ilişkilendirmek en yakın `switch` bunları barındırır deyimi.  
+ A **geçiş** deyimi iç içe geçirilemez. Bu gibi durumlarda **çalışması** veya **varsayılan** etiketlerle ilişkilendirmek en yakın **geçiş** bunları kapsayan deyimi.  
 
  
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Microsoft C case değerlerini sayısını sınırlamaz bir `switch` deyimi. Yalnızca kullanılabilir bellek ile sınırlıdır. ANSI C gerektiren en az 257 durum etiketi içinde izin verilmeyecek bir `switch` deyimi.  
+ Microsoft C, durum değeri sayısını sınırlamaz bir **geçiş** deyimi. Sayı yalnızca kullanılabilir bellekle sınırlıdır. ANSI C gerektiren en az 257 durum etiketi içinde izin bir **geçiş** deyimi.  
   
- Microsoft C için Microsoft uzantıları etkinleştirildiğini varsayılandır. Kullanım [/Za](../build/reference/za-ze-disable-language-extensions.md) bu uzantıları devre dışı bırakma derleyici seçeneği.  
+ Microsoft C için varsayılan Microsoft genişletmelerinin etkinleştirilmiş olduğu. Kullanım [/Za](../build/reference/za-ze-disable-language-extensions.md) bu uzantıları devre dışı bırakma derleyici seçeneği.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Seçim deyimleri](../cpp/selection-statements-cpp.md)   

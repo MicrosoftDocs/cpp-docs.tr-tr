@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1248c8efd06069863a9f78a94378fe7aed651011
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ae0db2b789e16a39396a329a64dfb8794eef5775
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856091"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961915"
 ---
 # <a name="istriviallymoveassignable-class"></a>is_trivially_move_assignable sınıfı
 
-Önemsiz taşıma atama işleci türüne sahip olup olmadığını sınar.
+Önemsiz taşıma atama işleci türünde olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,23 +36,23 @@ struct is_trivially_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bir önemsiz taşıma atama işleci, aksi takdirde sahip bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu Önemsiz taşıma atama işleci, aksi takdirde sahip bir sınıftır.
 
-Bir sınıf için bir taşıma atama işleci `Ty` deyimle varsa:
+Bir sınıf için bir taşıma atama işlecini *Ty* gereksizse, varsa:
 
-örtük olarak sağlanır
+örtük olarak sağlanan
 
-sınıf `Ty` hiçbir sanal işleve sahip
+sınıf *Ty* sahip sanal işlev yok
 
-sınıf `Ty` hiçbir sanal temellerine sahip
+sınıf *Ty* hiçbir sanal temellere sahip
 
-sınıf türü tüm statik olmayan veri üyeleri sınıflarını Önemsiz taşıma atama işleçleri sahip
+tüm statik olmayan veri üyeleri sınıf türünün sınıflarını sahip Önemsiz taşıma atama işleçleri
 
-sınıf türü dizisi tüm statik olmayan veri üyeleri sınıflarını Önemsiz taşıma atama işleçleri sahip
+Önemsiz taşıma atama işleçleri dizi sınıf türünde tüm statik olmayan veri üyelerinin sınıflarını sahip
 
 ## <a name="requirements"></a>Gereksinimler
 

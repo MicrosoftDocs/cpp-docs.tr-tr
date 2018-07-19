@@ -14,19 +14,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2896e8a29a1b941b085f7d95276b6d28081b6458
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f894be144956dc0feb6ba8b67dbdc05f9cf0bcf5
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842592"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963945"
 ---
 # <a name="container-classiterator"></a>Kapsayıcı Sınıfı::iterator
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Yineleyici denetimindeki sırası için olarak hizmet verebilir nesneyi açıklar.
+Denetlenen dizi için bir yineleyici olarak hizmet verebilen bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,7 +37,7 @@ typedef T5 iterator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bunu açıklanan burada belirtilmemiş türler eşanlamlısı olarak **T5**. Türünde bir nesne **yineleyici** türünde bir nesneye cast [const_iterator](../standard-library/container-class-const-iterator.md).
+Açıklanmıştır belirtilmeyen türünün eşanlamlısı olarak burada `T5`. Bir nesne türü `iterator` türünde bir nesne başvurusuna yayınlanabilir [const_iterator](../standard-library/container-class-const-iterator.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

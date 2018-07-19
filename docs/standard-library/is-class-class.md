@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d344beea880bb576a681a4797c7bdd8ff8d88e5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2ada95adb2d82bfccf05f3b9141a1b940feaed50
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843606"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966452"
 ---
 # <a name="isclass-class"></a>is_class Sınıfı
 
-Test türü bir sınıftır.
+Bir sınıf türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_class;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` bir türü olarak tanımlanmış olan bir `class` veya `struct`, veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimidir.
+Karşılaştırmasının bir örneği true tutar türü *Ty* bir türü olarak tanımlanan bir **sınıfı** veya **yapı**, veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçiminin.
 
 ## <a name="example"></a>Örnek
 

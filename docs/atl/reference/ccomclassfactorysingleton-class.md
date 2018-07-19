@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 754a3abd02a4a09df3e36aa9aea75c400ef00761
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ee594cb3cfef5ebc67b953b62d05b933b71f9f1d
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360387"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884200"
 ---
 # <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton sınıfı
-Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturulamadı.  
+Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,10 +38,10 @@ class CComClassFactorySingleton : public CComClassFactory
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınıza.  
   
- `CComClassFactorySingleton` türetilen [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturulamadı. Her çağrı `CreateInstance` yöntemi sadece bu nesne için bir arabirim işaretçisi sorgular.  
+ `CComClassFactorySingleton` öğesinden türetilen [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için. Her çağrı `CreateInstance` yöntemi yalnızca bu nesne bir arabirim işaretçisi için sorgular.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -58,7 +58,7 @@ class CComClassFactorySingleton : public CComClassFactory
 |[CComClassFactorySingleton::m_spObj](#m_spobj)|[CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tarafından oluşturulan nesne `CComClassFactorySingleton`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- ATL nesneleri normalde türetme tarafından bir üreteci elde [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makrosu içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir `CComClassFactory` varsayılan üreteci olarak. Kullanılacak `CComClassFactorySingleton`, belirtin [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) makrosu, nesnenin sınıf tanımında. Örneğin:  
+ ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir `CComClassFactory` olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactorySingleton`, belirtin [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) makrosu, nesnenin sınıf tanımında. Örneğin:  
   
  [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/ccomclassfactorysingleton-class_1.h)]  
   
@@ -77,24 +77,24 @@ class CComClassFactorySingleton : public CComClassFactory
  **Başlık:** atlcom.h  
   
 ##  <a name="createinstance"></a>  CComClassFactorySingleton::CreateInstance  
- Çağrıları `QueryInterface` aracılığıyla [m_spObj](#m_spobj) bir arabirim işaretçisi alınamadı.  
+ Çağrıları `QueryInterface` aracılığıyla [m_spObj](#m_spobj) bir arabirim işaretçisini almak için.  
   
 ```
 STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pUnkOuter`  
- [in] Nesne bir toplama bir parçası olarak sonra oluşturuldu, `pUnkOuter` dış bilinmeyen olması gerekir. Aksi takdirde, `pUnkOuter` olmalıdır **NULL**.  
+ *pUnkOuter*  
+ [in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.  
   
- `riid`  
- [in] İstenen arabirim IID. Varsa `pUnkOuter` olan olmayan **NULL**, `riid` olmalıdır **IID_IUnknown**.  
+ *riid*  
+ [in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.  
   
- `ppvObj`  
- [out] Arabirim işaretçisi ile tanımlanan bir işaretçi `riid`. Nesne bu arabirim desteklemiyorsa `ppvObj` ayarlanır **NULL**.  
+ *ppvObj*  
+ [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ##  <a name="m_spobj"></a>  CComClassFactorySingleton::m_spObj  
  [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tarafından oluşturulan nesne `CComClassFactorySingleton`.  
@@ -104,14 +104,14 @@ CComPtr<IUnknown> m_spObj;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Her çağrı [CreateInstance](#createinstance) yöntemi sadece bu nesne için bir arabirim işaretçisi sorgular.  
+ Her çağrı [CreateInstance](#createinstance) yöntemi yalnızca bu nesne bir arabirim işaretçisi için sorgular.  
   
- Unutmayın, geçerli form `m_spObj` biçimde önemli bir değişiklik gösterir, `CComClassFactorySingleton` ATL önceki sürümlerde çalışan Önceki sürümlerde `CComClassFactorySingleton` nesnenin oluşturulduğu sınıf fabrikası aynı zamanda sunucu başlatma sırasında. Visual C++ .NET 2003 ' nesnesi gevşek, ilk isteği oluşturulur. Bu değişiklik, erken başlatma üzerinde kullanan programlarda hatalara yol açabilir.  
+ Unutmayın, geçerli form `m_spObj` sunan bir arabirimden değişiklik, `CComClassFactorySingleton` ATL önceki sürümlerinde çalışan Önceki sürümlerde `CComClassFactorySingleton` nesnenin oluşturulduğu sınıf üreteci ile aynı zamanda sunucu başlatma sırasında. Visual C++ .NET 2003 nesne gevşek, ilk isteği oluşturulur. Bu değişiklik, üzerinde erken başlatma kullanan programlar hatalara yol açabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364)   
  [CComClassFactory2 sınıfı](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactoryAutoThread sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)   
- [İn uygulamasına sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
+ [CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
  [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

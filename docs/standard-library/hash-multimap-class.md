@@ -96,19 +96,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c3b9e3ba7a7929158adacfab889007cb518c54b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: efebe74f0f2735b9f32b0114a3db68d0839b90f2
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849073"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965015"
 ---
 # <a name="hashmultimap-class"></a>hash_multimap Sınıfı
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Kapsayıcı sınıfı hash_multimap C++ Standart Kitaplığı, bir uzantısıdır ve depolama ve her öğenin değeri benzersiz olması gerekmez sıralama anahtarı olan bir çift olduğu bir koleksiyon ve ilişkili veriler bir değer verileri hızlı alınması için kullanılır.
+Kapsayıcı sınıfı hash_multimap C++ Standart Kitaplığı bir uzantısıdır ve her bir öğenin değerini benzersiz olması gerekmez sıralama anahtarına sahip olduğu bir çift olan bir koleksiyonu ve ilişkili veriler bir değer verileri hızlı alma ve depolama için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -122,13 +122,13 @@ class hash_multimap
 
 ### <a name="parameters"></a>Parametreler
 
-`Key` Hash_multimap depolanması için anahtar veri türü.
+*Anahtar* hash_multimap içinde depolanacak anahtar veri türü.
 
-`Type` Hash_multimap depolanması için öğe veri türü.
+*Tür* hash_multimap içinde depolanacak öğe veri türü.
 
-`Traits` Bir sınıfın iki işlev nesneleri içeren türü `Traits` göreli sıralarına ve imzasız tamsayılar öğelerine koşul eşlemesi anahtar değerlerinin bir birli olan karma işlevi belirlemek için sıralama anahtarları olarak iki öğenin değerleri karşılaştırmak mümkün olan tür **size_t**. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key>>` varsayılan değerdir.
+*Nitelikler* bir sınıfın iki işlev nesneleri içeren tür *nitelikler* birli koşul eşleştirme anahtarını olan bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları iki öğenin değerlerini karşılaştırma mümkün olan işaretsiz tamsayı türü için öğe değerlerini `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key>>` varsayılan değerdir.
 
-`Allocator` Hash_multimap's ayırma ve bellek ayırmayı kaldırma hakkında ayrıntılar yalıtan saklı ayırıcısı nesneyi temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type>>`.
+*Allocator* hash_multimap'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type>>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -138,89 +138,89 @@ Hash_multimap aşağıdaki gibidir:
 
 - Çift yönlüdür, çünkü öğelerine erişmek için çift yönlü bir yineleyici sağlar.
 
-- Karma, öğelerin anahtar değerleri için uygulanan bir karma işlevine değere göre demet içine öğeleri gruplandırıldığından.
+- Karma, çünkü öğelerine demet öğelerinin anahtar değerlere uygulanan bir karma işlevi değere göre gruplanmıştır.
 
 - Öğelerinin benzersiz anahtarlara ihtiyacı olmaması için çokludur, böylece bir anahtar değer onunla ilişkili çok sayıda öğe verisi değerine sahip olabilir.
 
-- Bir çifti ilişkilendirilebilir kapsayıcı öğesi değerlerini kendi anahtar değerlerini birbirinden farklı olduğundan.
+- Bir çift ilişkilendirilebilir kapsayıcıdır, çünkü öğelerinin değerleri kendi anahtar değerlerinden farklıdır.
 
 - Bir şablon sınıfıdır, çünkü sağladığı işlevsellik geneldir ve böylece öğeler veya anahtarlar olarak kapsanan belirli veri türünden bağımsızdır. Öğeler ve anahtarlar için kullanılacak veri türleri, karşılaştırma işlevi ve ayırıcı ile birlikte bir sınıf şablonunda parametreler olarak belirtilir.
 
-Sıralama üzerinden karma ana avantajı, verimliliği olmasıdır; başarılı bir karma eklemeler, silmeler gerçekleştirir ve sabit ortalama süresi bir saat ile karşılaştırıldığında teknikleri sıralamak için kapsayıcısında öğe sayısını logaritmasını orantılı bulur. Bir hash_multimap bir öğe değerini ancak değil ilişkili anahtar değerini, doğrudan değiştirilebilir. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve eklenen yeni öğelerle ilişkili yeni anahtar değerleri eklenmelidir.
+Sıralama üzerinden karma ana avantajı, daha verimli olur; başarılı bir karma işlevi ekleme, silme gerçekleştirir ve sabit ortalama süre değiştirmeyen bir süre içinde teknikleri sıralama kapsayıcıdaki öğelerin sayısını logaritmasını için orantılı bulur. Bir hash_multimap içindeki bir öğenin değeri, ancak ilişkili anahtar değeri, doğrudan değiştirilemez. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve eklenen yeni öğelerle ilişkili yeni anahtar değerleri eklenmelidir.
 
-Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. Karma ilişkilendirilebilir kapsayıcıları, arama, ekleme ve kaldırma işlemleri için en iyi duruma getirilir. Açıkça işlemlerini destekleyen üye işlevleri, bunları ortalama sabit ve kapsayıcı öğe sayısı bağımlı bir süre içinde gerçekleştirdiğiniz bir iyi tasarlanmış karma işlevi ile kullanıldığında verimlidir. İyi tasarlanmış karma işlevi karma değerleri Tekdüzen dağıtımını oluşturur ve çakışma, burada bir çakışma DISTINCT anahtar değerleri aynı karma değer eşlenir ortaya söylenir sayısını en aza indirir. En kötü durumda, en kötü olası karma işlevi ile işlemlerinin sayısı (doğrusal saati) dizisindeki öğelerin sayısı orantılıdır.
+Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. Karma ilişkilendirilebilir kapsayıcılar, arama, ekleme ve kaldırma işlemleri için iyileştirilmiştir. Bu işlemleri açıkça destekleyen üye işlevleri, ortalama sabit ve kapsayıcıdaki öğelerin sayısına bağlı olmayan bir zaman gerçekleştirip bir iyi tasarlanmış bir karma işlevi ile kullanıldığında verimlidir. İyi tasarlanmış bir karma işlevi, Tekdüzen karma bir değerler dağıtımı verir ve burada bir çakışma ortaya çıkar farklı anahtar değerlerini aynı karma değer ile eşlenmiş kabul edilir, çakışmaları sayısını en aza indirir. En kötü durumda, en kötü olası karma işlevi ile işlem sayısı dizideki (doğrusal zaman) öğelerin sayısını orantılıdır.
 
-Uygulama tarafından değerleri kendi anahtarlarla ilişkilendirme koşulları sağlandığında hash_multimap tercih ilişkilendirilebilir kapsayıcı olmalıdır. Bu tür bir yapı için model, mesela açıklamalar sağlayan dize değerleriyle ilişkili anahtar sözcüklerin sıralı bir listesidir, burada sözcükler her zaman benzersiz olarak tanımlanmamıştır. Böylece anahtarları benzersiz bunun yerine, anahtar sözcükleri benzersiz şekilde tanımlanan varsa, bir hash_map tercih kapsayıcı olacaktır. Diğer taraftan, yalnızca sözcükleri listesini depolanmakta varsa, bir hash_set doğru kapsayıcı olacaktır. Birden çok tekrarı sözcükleri izin verilmekteydi, bir hash_multiset uygun bir kapsayıcı yapısı olacaktır.
+Hash_multimap, değerleri onların kendi anahtarlarıyla ilişkilendiren koşullar uygulama tarafından karşılandığında seçimin ilişkili kapsayıcısı olmalıdır. Bu tür bir yapı için model, mesela açıklamalar sağlayan dize değerleriyle ilişkili anahtar sözcüklerin sıralı bir listesidir, burada sözcükler her zaman benzersiz olarak tanımlanmamıştır. Ardından, anahtarlar benzersiz olacak şekilde bunun yerine, anahtar sözcükler benzersiz olarak tanımlanırsa, bir hash_map kapsayıcı olacaktır. Ardından, diğer taraftan, yalnızca sözcüklerin listesi depolanmaktadır, bir hash_set doğru kapsayıcı olacaktır. Ardından bir hash_multiset sözcüklerin birden çok defa geçmelerine izin verilirse, uygun bir kapsayıcı yapısı olacaktır.
 
-Hash_multimap denetimleri depolanan karma çağırarak dizisi siparişleri `Traits` nesne türü [value_compare](../standard-library/value-compare-class.md). Üye işlevini çağırarak bu saklı nesne erişilebileceği [key_comp](../standard-library/hash-map-class.md#key_comp). Bu tür bir işlev nesnesi sınıfın bir nesnesi olarak aynı şekilde davranır gerekir [hash_compare](../standard-library/hash-compare-class.md)`<Key, less<Key>>`. Özellikle, tüm değerler için `Key` türü `Key`, çağrı `Traits (Key)` türü değerleri dağıtımını verir `size_t`.
+Hash_multimap depolanan karma çağırarak denetlediği diziyi sıralar `Traits` türündeki nesne [value_compare](../standard-library/value-compare-class.md). Üye işlevini çağırarak depolanan bu nesne erişilebilecek [key_comp](../standard-library/hash-map-class.md#key_comp). Böyle bir işlev nesnesi aynı sınıfın bir nesnesi olarak davranmalıdır [hash_compare](../standard-library/hash-compare-class.md)`<Key, less<Key>>`. Tüm değerler için özellikle `Key` türü `Key`, çağrı `Traits (Key)` türünde bir değerler dağıtımı verir `size_t`.
 
-Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, bir eşdeğer olmayan öğeler arasında sıralamada sonuçlanır. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. İkili karşılaştırma f (x, y) iki bağımsız değişken nesnelere sahip bir işlev nesnesidir `x` ve `y` ve dönüş değeri `true` veya `false`. İkili karşılaştırma dönüşsüz, ters ve geçişli ve burada iki nesneleri eşdeğer geçişli ise, sıralama katı bir zayıf olduğu bir hash_multimap üzerinde uygulanan sıralama `x` ve `y` ne zaman eşdeğer olarak tanımlanan her iki f (x y) ve f (y, x) `false`. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
+Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu bir denk olmayan öğeler arasında neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşula f (x, y) iki bağımsız değişken nesnelere sahip bir işlev nesnesidir `x` ve `y` ve dönüş değeri **true** veya **false**. İkili koşul dönüşsüz, ters ve geçişli ve denklik geçişli ise, burada iki nesne sıralama katı zayıf bir hash_multimap üzerinde uygulanan sıralama olan `x` ve `y` olduğunda denk olarak tanımlanan her iki f (x y) ve f (y, x) **false**. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
-Denetlenen sıradaki öğelerin gerçek sırası karma işlevi, sıralama işlevi ve kapsayıcı nesnesinde depolanan karma tablosu boyutunu bağlıdır. Denetlenen sıradaki öğelerin sırasını genel tahmin edilemez şekilde karma tablo geçerli boyutu saptanamaz. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
+Denetlenen dizideki öğelerin gerçek sırası karma işlevi ve sıralama işlevini geçerli boyutu bir kapsayıcı nesnesinde depolanan karma tablo bağlıdır. Denetlenen dizideki öğelerin sırasını genelde tahmin edemezsiniz için karma tablo geçerli boyutu belirlenemiyor. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
 
-Hash_multimap sınıfı tarafından sağlanan yineleyici sınıf üyesi işlevleri ancak bir çift yönlü yineleyici olan [Ekle](#insert) ve [hash_multimap](#hash_multimap) şablon parametreleri olarak daha zayıf bir giriş gerçekleştirin sürümlerin gerekir Yineleyici, çift yönlü yineleyiciler sınıfı tarafından garanti olandan daha az olan işlevselliği gereksinimleri. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Kendi hash_multimap gereksinimlerinin her yineleyici kavramına sahiptir ve bunlarla çalışmak algoritmaları yineleyici türü tarafından sağlanan gereksinimlerini için kendi varsayımlar sınırlamanız gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu işlevlerin en az bir hash_multimap olur, ancak anlamlı yineleyiciler çeşitli hakkında iletişim kurabilmesi için yeterlidir `[First, Last)` üye işlevleri bağlamında.
+Hash_multimap sınıfı tarafından sağlanan yineleyici çift yönlüdür, ancak sınıf üyesi işlevleri olan [Ekle](#insert) ve [hash_multimap](#hash_multimap) şablon parametresi olarak daha zayıf bir giriş alan sürümlere sahip Yineleyici, işlevsellik gereksinimleri daha az tarafından çift yönlü Yineleyicilerin sınıfında garanti edilene. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi hash_multimap gereksinimleri vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu işlevselliğin en az bir hash_multimap ancak Yineleyicilerin aralığı hakkında konuşabilmek için yeterlidir `[First, Last)` üye işlevleri bağlamında.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[hash_multimap](#hash_multimap)|Belirli bir boyutta veya belirli bir değere öğelerini veya belirli bir liste oluşturur `allocator` veya başka bir kopyasını olarak `hash_multimap`.|
+|[hash_multimap](#hash_multimap)|Belirli bir boyut veya belirli bir değer öğeleriyle veya belirli bir ile bir liste oluşturur `allocator` veya diğer bir kısmının kopyası olarak `hash_multimap`.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[allocator_type](#allocator_type)|Temsil eden bir tür `allocator` için sınıf `hash_multimap` nesnesi.|
-|[const_iterator](#const_iterator)|Çift yönlü yineleyici bu can sağlayan bir türü okuma bir `const` öğesinde `hash_multimap`.|
-|[const_pointer](#const_pointer)|Bir işaretçi sağlayan bir türü bir `const` öğesinde bir `hash_multimap`.|
-|[const_reference](#const_reference)|Bir başvuru sağlayan bir türü bir `const` öğesi saklanan bir `hash_multimap` okumak ve gerçekleştirmek için `const` işlemleri.|
-|[const_reverse_iterator](#const_reverse_iterator)|Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma `const` öğesinde `hash_multimap`.|
-|[difference_type](#difference_type)|Öğelerinin sayısı temsil etmek için kullanılan bir imzalı tamsayı türü bir `hash_multimap` yineleyiciler tarafından işaret öğeler arasındaki bir aralıkta.|
-|[Yineleyici](#iterator)|Çift yönlü yineleyici sağlayan bir tür okuma veya herhangi bir öğe değiştirme bir `hash_multimap`.|
-|[key_compare](#key_compare)|Göreli içinde iki öğe sırasını belirlemek için iki sıralama anahtarları karşılaştırabilirsiniz bir işlev nesnesi sağlayan bir türü `hash_multimap`.|
-|[key_type](#key_type)|Her öğeye oluşturduğunu sıralama anahtar nesneyi tanımlayan bir tür `hash_multimap`.|
+|[allocator_type](#allocator_type)|Temsil eden bir tür `allocator` sınıfının `hash_multimap` nesne.|
+|[const_iterator](#const_iterator)|Çift yönlü bir yineleyici sağlayan tür okuma bir `const` öğesinde `hash_multimap`.|
+|[const_pointer](#const_pointer)|Bir işaretçi sağlayan bir tür bir **const** öğesinde bir `hash_multimap`.|
+|[const_reference](#const_reference)|Bir başvuru sağlayan bir tür bir **const** öğesi içinde depolanan bir `hash_multimap` okumak ve gerçekleştirmek için **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|Çift yönlü bir yineleyici sağlayan tür herhangi okuma **const** öğesinde `hash_multimap`.|
+|[difference_type](#difference_type)|Öğelerin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü bir `hash_multimap` yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki.|
+|[Yineleyici](#iterator)|Çift yönlü bir yineleyici sağlayan bir tür okuyabilen veya değiştirebilen herhangi bir öğenin bir `hash_multimap`.|
+|[key_compare](#key_compare)|İki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran işlev nesnesi sağlayan bir tür `hash_multimap`.|
+|[key_type](#key_type)|Her öğesini oluşturan sıralama anahtarını nesnesini tanımlayan bir tür `hash_multimap`.|
 |[mapped_type](#mapped_type)|İçinde depolanan veri türünü temsil eden bir tür bir `hash_multimap`.|
-|[İşaretçi](#pointer)|Bir öğe için bir işaretçi sağlayan bir türü bir `hash_multimap`.|
-|[Başvuru](#reference)|Depolanmış bir öğe için bir başvuru sağlayan bir türü bir `hash_multimap`.|
-|[reverse_iterator](#reverse_iterator)|Çift yönlü yineleyici sağlayan bir tür okuma veya bir öğedeki bir ters değiştirme `hash_multimap`.|
-|[size_type](#size_type)|Öğe sayısı gösterebilir bir işaretsiz tamsayı türü bir `hash_multimap`.|
-|[value_type](#value_type)|İki öğe içindeki göreli sıralarına belirlemek için sıralama anahtarları olarak karşılaştırabilirsiniz bir işlev nesnesi sağlayan bir türü `hash_multimap`.|
+|[İşaretçi](#pointer)|İçindeki bir öğeye işaretçi sağlayan bir tür bir `hash_multimap`.|
+|[Başvuru](#reference)|İçinde depolanan öğeye başvuru sağlayan bir tür bir `hash_multimap`.|
+|[reverse_iterator](#reverse_iterator)|Çift yönlü bir yineleyici sağlayan bir tür okuyabilen veya değiştirebilen ters döndürülmüş bir öğe `hash_multimap`.|
+|[size_type](#size_type)|İçindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü bir `hash_multimap`.|
+|[value_type](#value_type)|İki öğenin kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür `hash_multimap`.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Başlangıç](#begin)|İlk öğe adresleme yineleyici döndürür `hash_multimap`.|
-|[cbegin](#cbegin)|İlk öğe adresleme const yineleyici döndürür `hash_multimap`.|
-|[cend](#cend)|Son öğesi başarılı konumu adresleri const bir yineleyici döndüren bir `hash_multimap`.|
-|[Temizle](#clear)|Tüm öğeleri sildiği bir `hash_multimap`.|
-|[Sayısı](#count)|Öğelerin sayısını döndürür bir `hash_multimap` parametresi belirtilen bir anahtarı olan anahtar eşleşir.|
-|[crbegin](#crbegin)|İlk öğe bir ters adresleme const yineleyici döndürür `hash_multimap`.|
-|[crend](#crend)|Son öğesi bir ters başarılı konumu adresleri const bir yineleyici döndürür `hash_multimap`.|
-|[emplace](#emplace)|Yerinde oluşturulan bir öğe ekler bir `hash_multimap`.|
-|[emplace_hint](#emplace_hint)|Yerinde oluşturulan bir öğe ekler bir `hash_multimap`, yerleştirme İpucu ile.|
-|[boş](#empty)|Testleri bir `hash_multimap` boş.|
-|[Bitiş](#end)|Son öğesi başarılı konumu adresleri yineleyici döndüren bir `hash_multimap`.|
-|[equal_range](#equal_range)|Son öğesi başarılı konumu adresleri yineleyici döndüren bir `hash_multimap`.|
-|[silme](#erase)|Bir öğenin veya bir dizi öğeleri kaldırır bir `hash_multimap` belirtilen konumlardan|
-|[Bul](#find)|Bir öğedeki konumunu adresleme yineleyici döndüren bir `hash_multimap` , belirtilen anahtar için eşdeğer bir anahtara sahip.|
+|[başlayın](#begin)|İçindeki ilk öğeyi adresleyen bir yineleyici döndürür `hash_multimap`.|
+|[cbegin](#cbegin)|İçindeki ilk öğeyi adresleyerek bir const yineleyici döndürür `hash_multimap`.|
+|[cend](#cend)|İçindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndüren bir `hash_multimap`.|
+|[Temizle](#clear)|Tüm öğelerini siler bir `hash_multimap`.|
+|[Sayısı](#count)|İçindeki öğelerin sayısını döndüren bir `hash_multimap` anahtarı parametre tarafından belirtilen bir anahtarla eşleşen.|
+|[crbegin](#crbegin)|Ters çevrilen içindeki ilk öğeyi adresleyerek bir const yineleyici döndürür `hash_multimap`.|
+|[crend](#crend)|Ters çevrilen içindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndürür `hash_multimap`.|
+|[emplace](#emplace)|İçine yerinde oluşturulmuş bir öğe ekler bir `hash_multimap`.|
+|[emplace_hint](#emplace_hint)|İçine yerinde oluşturulmuş bir öğe ekler bir `hash_multimap`, bir yerleşim ipucuyla birlikte.|
+|[boş](#empty)|Testleri bir `hash_multimap` boştur.|
+|[Son](#end)|İçindeki son öğeyi takip eden konumu ele alan bir yineleyici döndüren bir `hash_multimap`.|
+|[equal_range](#equal_range)|İçindeki son öğeyi takip eden konumu ele alan bir yineleyici döndüren bir `hash_multimap`.|
+|[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `hash_multimap` belirtilen konumlardan|
+|[Bul](#find)|İçindeki bir öğenin konumunu ele alan bir yineleyici döndüren bir `hash_multimap` belirtilen anahtara denk bir anahtara sahip.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `hash_multimap`.|
-|[Ekle](#insert)|Bir öğenin veya bir dizi elemanlara ekler `hash_multimap` belirtilen konumda.|
-|[key_comp](#key_comp)|Sipariş anahtarlarında kullanılacak karşılaştırma nesnesinin bir kopyasını alır bir `hash_multimap`.|
-|[lower_bound](#lower_bound)|Yineleyici ilk öğe döndürür bir `hash_multimap` bir anahtarla değerine eşit veya bundan büyük, belirtilen anahtar.|
-|[max_size](#max_size)|En büyük uzunluğunu döndürür `hash_multimap`.|
-|[rbegin](#rbegin)|İlk öğe bir ters adresleme yineleyici döndürür `hash_multimap`.|
-|[rend](#rend)|Son öğesi bir ters başarılı konumu adresleri yineleyici döndürür `hash_multimap`.|
-|[Boyutu](#size)|Yeni bir boyutu belirtir bir `hash_multimap`.|
-|[Değiştirme](#swap)|İki öğelerini alış verişleri `hash_multimap`s.|
-|[upper_bound](#upper_bound)|Yineleyici ilk öğe döndürür bir `hash_multimap` bir anahtarla değeri, belirtilen anahtar daha büyük.|
-|[value_comp](#value_comp)|Sipariş öğesi değerleri için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `hash_multimap`.|
+|[Ekle](#insert)|Bir öğe veya bir dizi öğelerine ekler `hash_multimap` belirtilen konumda.|
+|[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `hash_multimap`.|
+|[lower_bound](#lower_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_multimap` belirtilen anahtardan daha büyük ya da eşit bir anahtarla değer.|
+|[max_size](#max_size)|Öğesinin maksimum uzunluğunu döndürür `hash_multimap`.|
+|[rbegin](#rbegin)|Ters çevrilen içindeki ilk öğeyi adresleyen bir yineleyici döndürür `hash_multimap`.|
+|[rend](#rend)|Ters çevrilen içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `hash_multimap`.|
+|[Boyutu](#size)|İçin yeni bir boyut belirtir bir `hash_multimap`.|
+|[değiştirme](#swap)|İki öğeleri birbiriyle değiştirir `hash_multimap`s.|
+|[upper_bound](#upper_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_multimap` belirtilen anahtardan büyük bir anahtarla değer.|
+|[value_comp](#value_comp)|İçindeki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `hash_multimap`.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[hash_multimap::operator =](#op_eq)|Öğeleri değiştirir bir `hash_multimap` başka bir kopyasına sahip `hash_multimap`.|
+|[hash_multimap::operator =](#op_eq)|Öğelerinin yerini alan bir `hash_multimap` başka bir kopyasına sahip olan `hash_multimap`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -233,7 +233,7 @@ Hash_multimap sınıfı tarafından sağlanan yineleyici sınıf üyesi işlevle
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Allocator sınıfı hash_multimap nesnesinin temsil eden tür.
+Hash_multimap nesne için ayırıcı sınıf temsil eden tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::allocator_type allocator_type;
@@ -241,20 +241,20 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 
 ### <a name="remarks"></a>Açıklamalar
 
-`allocator_type` Şablon parametresi için bir eş anlamlı olduğundan `Allocator`.
+`allocator_type` Şablon parametresi için bir eşanlamlı olduğu `Allocator`.
 
 Daha fazla bilgi için `Allocator`, Açıklamalar bölümüne bakın [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konu.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [get_allocator](#get_allocator) kullanarak bir örnek için `allocator_type`.
+Örneğin bakın [get_allocator](#get_allocator) bir örnek için `allocator_type`.
 
 ## <a name="begin"></a>  hash_multimap::Begin
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap ilk öğe adresleme yineleyici döndürür.
+Hash_multimap içindeki ilk öğeyi ele alan bir yineleyici döndürür.
 
 ```cpp
 const_iterator begin() const;
@@ -264,11 +264,11 @@ iterator begin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multimap ya da boş bir hash_multimap başarılı konumu ilk öğe adresleme çift yönlü yineleyici.
+Hash_multimap veya sonra gelen konumu adresleyen bir boş hash_multimap içindeki ilk öğeyi ele alan bir çift yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa dönüş değerini **başlamak** atanmış bir `const_iterator`, hash_multimap nesnesindeki öğelerin değiştirilemez. Varsa dönüş değerini **başlamak** atanmış bir **yineleyici**, hash_multimap nesnesindeki öğelerin değiştirilebilir.
+Varsa dönüş değeri `begin` atanan bir `const_iterator`, hash_multimap nesnedeki öğelerin değiştirilemez. Varsa dönüş değeri `begin` atanan bir `iterator`, hash_multimap nesnedeki öğelerin değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -319,7 +319,7 @@ The first element of hm1 is now 1.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap ilk öğe adresleme const yineleyici döndürür.
+Hash_multimap içindeki ilk öğeyi adresleyerek bir const yineleyici döndürür.
 
 ```cpp
 const_iterator cbegin() const;
@@ -327,7 +327,7 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk öğe adresleme const bir çift yönlü yineleyici [hash_multimap](../standard-library/hash-multimap-class.md) ya da boş bir başarılı konumu `hash_multimap`.
+İçindeki ilk öğeyi ele alan sabit bir çift yönlü yineleyici [hash_multimap](../standard-library/hash-multimap-class.md) veya sonra gelen konumu adresleyen bir boş `hash_multimap`.
 
 ### <a name="example"></a>Örnek
 
@@ -363,7 +363,7 @@ The first element of hm1 is 2.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir hash_multimap son öğesi başarılı konumu adresleri const bir yineleyici döndürür.
+Bir hash_multimap içindeki son öğeden sonra gelen konumu ele alan bir sabit yineleyici döndürür.
 
 ```cpp
 const_iterator cend() const;
@@ -371,13 +371,13 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Son öğesi başarılı konumu adresleri const bir çift yönlü yineleyici bir [hash_multimap](../standard-library/hash-multimap-class.md). Varsa `hash_multimap` boş olduğundan `hash_multimap::cend == hash_multimap::begin`.
+İçindeki son öğeyi takip eden konumu ele alan sabit bir çift yönlü yineleyici bir [hash_multimap](../standard-library/hash-multimap-class.md). Varsa `hash_multimap` boşsa `hash_multimap::cend == hash_multimap::begin`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend` Yineleyici kendi hash_multimap sonuna ulaştı olup olmadığını test etmek için kullanılır.
+`cend` bir yineleyicinin kendi hash_multimap sonuna ulaştı olup olmadığını sınamak için kullanılır.
 
-Tarafından döndürülen değer `cend` değil başvuru yapıldı.
+Tarafından döndürülen değer `cend` kaldırılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -414,7 +414,7 @@ The value of last element of hm1 is 30.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir hash_multimap tüm öğeleri siler.
+Bir hash_multimap tüm öğelerini siler.
 
 ```cpp
 void clear();
@@ -424,7 +424,7 @@ void clear();
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek hash_multimap::clear üye fonksiyonu kullanımını göstermektedir.
+Aşağıdaki örnek, hash_multimap::clear üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_multimap_clear.cpp
@@ -464,7 +464,7 @@ The size of the hash_multimap after clearing is 0.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Çift yönlü yineleyici bu can sağlayan bir türü okuma bir **const** hash_multimap öğesinde.
+Çift yönlü bir yineleyici sağlayan tür okuma bir **const** hash_multimap öğesinde.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_iterator const_iterator;
@@ -474,22 +474,22 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 Bir tür `const_iterator` bir öğenin değerini değiştirmek için kullanılamaz.
 
-`const_iterator` Nesnelerin hash_multimap noktalarına tarafından tanımlanan [value_type](#value_type), türü olan `pair` *\< ***constKey, türü*** >*. Anahtar değeri ilk üye çifti kullanılabilir ve eşlenen öğesinin değeri çifti ikinci üyesi üzerinden kullanılabilir.
+`const_iterator` Nesnelerin hash_multimap noktalarına göre tanımlanan [value_type](#value_type), türü olan `pair` *\< ***constKey, türü*** >*. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
 
-Başvuru için bir `const_iterator` `cIter` bir hash_multimap bir öğesine işaret eden, kullanın **->** işleci.
+Başvurulacak bir `const_iterator` `cIter` bir hash_multimap içindeki bir öğeyi işaret eden, kullanın `->` işleci.
 
-Öğe için anahtar değerini erişmek için `cIter`  ->  **ilk**, eşit olduğu (\* `cIter`). **İlk**. Eşlenen veri öğesinin değeri erişmek için `cIter`  ->  **ikinci**, eşit olduğu (\* `cIter`). **İlk**.
+Öğenin anahtarının değerini erişmek için `cIter`  ->  **ilk**, eşit olduğu (\* `cIter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `cIter`  ->  **ikinci**, eşit olduğu (\* `cIter`). **İlk**.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [başlamak](#begin) kullanarak bir örnek için `const_iterator`.
+Örneğin bakın [başlamak](#begin) bir örnek için `const_iterator`.
 
 ## <a name="const_pointer"></a>  hash_multimap::const_pointer
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir işaretçi sağlayan bir türü bir **const** bir hash_multimap öğesinde.
+Bir işaretçi sağlayan bir tür bir **const** bir hash_multimap öğesinde.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_pointer const_pointer;
@@ -499,14 +499,14 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
 
 Bir tür `const_pointer` bir öğenin değerini değiştirmek için kullanılamaz.
 
-Çoğu durumda, bir [yineleyici](#iterator) hash_multimap nesnesindeki öğelerin erişmek için kullanılmalıdır.
+Çoğu durumda bir [yineleyici](#iterator) hash_multimap nesnesindeki öğelere erişmek için kullanılmalıdır.
 
 ## <a name="const_reference"></a>  hash_multimap::const_reference
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir başvuru sağlayan bir türü bir **const** okumak ve gerçekleştirmek için bir hash_multimap depolanan öğesi **const** işlemleri.
+Bir başvuru sağlayan bir tür bir **const** okumak ve gerçekleştirmek için bir hash_multimap içinde depolanan öğenin **const** operations.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
@@ -562,7 +562,7 @@ The data value of 1st element in the hash_multimap is 10.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma **const** hash_multimap öğesinde.
+Çift yönlü bir yineleyici sağlayan tür herhangi okuma **const** hash_multimap öğesinde.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse_iterator const_reverse_iterator;
@@ -570,24 +570,24 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_reverse_iterator` bir öğenin değerini değiştiremez ve kullanın ters hash_multimap yinelemek için.
+Bir tür `const_reverse_iterator` kullanın tersten hash_multimap yinelemek için ve bir öğenin değerini değiştiremezsiniz.
 
-`const_reverse_iterator` Nesnelerin hash_multimap noktalarına tarafından tanımlanan [value_type](#value_type), türü olan `pair` * \< * **const anahtar, türü >**, ilk üye öğesi anahtarıdır ve ikinci olan üye eşlenen datum öğe tarafından tutulur.
+`const_reverse_iterator` Nesnelerin hash_multimap noktalarına göre tanımlanan [value_type](#value_type), türü olan `pair` * \< * **const Key, türü >**, ilk üye öğesine bir anahtar ve ikinci olan üye eşlenen datum öğe tarafından tutulur.
 
-Başvuru için bir `const_reverse_iterator` `crIter` bir hash_multimap bir öğesine işaret eden, kullanın **->** işleci.
+Başvurulacak bir `const_reverse_iterator` `crIter` bir hash_multimap içindeki bir öğeyi işaret eden, kullanın `->` işleci.
 
-Öğe için anahtar değerini erişmek için `crIter`  ->  **ilk**, eşit olduğu (\* `crIter`). **İlk**. Eşlenen veri öğesinin değeri erişmek için `crIter`  ->  **ikinci**, eşit olduğu (\* `crIter`). **İlk**.
+Öğenin anahtarının değerini erişmek için `crIter`  ->  **ilk**, eşit olduğu (\* `crIter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `crIter`  ->  **ikinci**, eşit olduğu (\* `crIter`). **İlk**.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.
+Örneğin bakın [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.
 
 ## <a name="count"></a>  hash_multimap::Count
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Parametresi belirtilen bir anahtarı olan anahtarla eşleşen bir hash_multimap öğe sayısını döndürür.
+Anahtarı parametre tarafından belirtilen bir anahtarla eşleşen bir hash_multimap öğelerin sayısını döndürür.
 
 ```cpp
 size_type count(const Key& key) const;
@@ -595,23 +595,23 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Öğeleri hash_multimap eşleştirilmesi için anahtar.
+*anahtar* hash_multimap eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hash_multimap olan sıralama anahtarı parametre anahtarıyla eşleşen bir öğe içeriyorsa 1; 0 hash_multimap bir öğesi ile eşleşen bir anahtarı içermiyor.
+hash_multimap sıralama anahtarı parametresi anahtarla eşleşen bir öğe içeriyorsa 1; 0 hash_multimap bir öğesi ile eşleşen bir anahtar içermiyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini aralığında öğe sayısını döndürür
+Üye işlevi aralıktaki öğelerin sayısını döndürür.
 
 **[lower_bound (** `key` **), upper_bound (** `key` **))**
 
-bir anahtar değerine sahip `key`.
+bir anahtar değere sahip *anahtar*.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek hash_multimap::count üye fonksiyonu kullanımını göstermektedir.
+Aşağıdaki örnek, hash_multimap::count üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_multimap_count.cpp
@@ -659,7 +659,7 @@ The number of elements in hm1 with a sort key of 3 is: 0.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Ters hash_multimap ilk öğe adresleme const yineleyici döndürür.
+Ters çevrilen hash_multimap içindeki ilk öğeyi adresleyerek bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crbegin() const;
@@ -667,11 +667,11 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir const ters ilk öğe bir ters adresleme çift yönlü yineleyici [hash_multimap](../standard-library/hash-multimap-class.md) veya ne son öğesi unreversed olsaydı adresleme `hash_multimap`.
+Ters çevrilen bir ilk öğeyi ele alan çift yönlü yineleyici bir const [hash_multimap](../standard-library/hash-multimap-class.md) veya ne ters çevrilmeyen içindeki son öğeyi adresleyen `hash_multimap`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crbegin` Ters hash_multimap ile kullanılan gibi [hash_multimap::begin](#begin) ile kullanılan bir `hash_multimap`.
+`crbegin` ters çevrilen bir hash_multimap ile kullanılan gibi [hash_multimap::begin](#begin) ile kullanılan bir `hash_multimap`.
 
 Dönüş değeri ile `crbegin`, `hash_multimap` nesnesi değiştirilemez.
 
@@ -711,7 +711,7 @@ The first element of the reversed hash_multimap hm1 is 3.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Ters hash_multimap son öğesi başarılı konumu adresleri const bir yineleyici döndürür.
+Ters çevrilen hash_multimap içindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crend() const;
@@ -719,17 +719,17 @@ const_reverse_iterator crend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir const ters son öğesi bir ters başarılı konumu adresleri çift yönlü yineleyici [hash_multimap](../standard-library/hash-multimap-class.md) (ilk öğe unreversed öncesinde konumu `hash_multimap`).
+Ters çevrilen bir içindeki son öğeden sonra gelen konumu ele çift yönlü yineleyici bir const [hash_multimap](../standard-library/hash-multimap-class.md) (ilk öğeyi çevrilmeyen önce gelen konum `hash_multimap`).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend` Ters hash_multimap ile kullanılan gibi [hash_multimap::end](#end) hash_multimap ile kullanılır.
+`crend` ters çevrilen bir hash_multimap ile kullanılan gibi [hash_multimap::end](#end) bir hash_multimap ile kullanılır.
 
 Dönüş değeri ile `crend`, `hash_multimap` nesnesi değiştirilemez.
 
-`crend` Ters yineleyici kendi hash_multimap sonuna olup ulaştı için test etmek için kullanılabilir.
+`crend` olup ters yineleyici kendi hash_multimap sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
 
-Tarafından döndürülen değer `crend` değil başvuru yapıldı.
+Tarafından döndürülen değer `crend` kaldırılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -766,7 +766,7 @@ The last element of the reversed hash_multimap hm1 is 3.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap yineleyiciler tarafından işaret öğeler arasındaki bir aralıkta öğe sayısını temsil etmek için kullanılan bir imzalı tamsayı türü.
+Bir hash_multimap yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki öğelerin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::difference_type difference_type;
@@ -774,9 +774,9 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::di
 
 ### <a name="remarks"></a>Açıklamalar
 
-`difference_type` Türü çıkarılmasıyla veya kapsayıcı yineleyiciler artırma döndürülür. `difference_type` Genellikle aralığında öğe sayısını temsil etmek için kullanılan *[Soyadı)* yineleyiciler arasında `first` ve `last`, gösterdiği öğesini içeren `first` ve aralığı öğeleri kadar ancak dahil değil, öğe işaret için tarafından `last`.
+`difference_type` Türü çıkarma veya kapsayıcının yineleyiciler artan döndürülür. `difference_type` Genellikle aralık içindeki öğelerin sayısını temsil etmek için kullanılan *[Soyadı)* yineleyici arasındaki `first` ve `last`, işaret ettiği öğe içeren `first` ve aralığı öğeleri kadar ancak dahil değil, öğe tarafından işaret edilen `last`.
 
-Ancak unutmayın `difference_type` kümesi, çıkarma yineleyiciler arasında yalnızca gibi ters çevrilebilir kapsayıcıları tarafından desteklenen çift yönlü yineleyiciler sınıfı içeren bir giriş yineleyici gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir rasgele erişim kapsayıcı vektör gibi tarafından sağlanan rasgele erişim yineleyiciler tarafından desteklenir.
+Ancak dikkat `difference_type` kümesi, yineleyici arasındaki çıkarma yalnızca gibi ters çevrilebilir kapsayıcıları tarafından desteklenen çift yönlü Yineleyicilerin sınıfında içeren bir giriş yineleyici gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir vektör gibi bir rastgele erişim kapsayıcı tarafından sağlanan rasgele erişim yineleyicileri tarafından desteklenmiyor.
 
 ### <a name="example"></a>Örnek
 
@@ -843,7 +843,7 @@ The values of the mapped elements are: 10 20 30 20.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap yerinde oluşturulan bir öğe ekler.
+Bir hash_multimap yerinde oluşturulmuş bir öğe ekler.
 
 ```cpp
 template <class ValTy>
@@ -854,15 +854,15 @@ iterator emplace(ValTy&& val);
 
 |Parametre|Açıklama|
 |-|-|
-|`val`|Taşıma için kullanılan değer oluşturmak içine Eklenecek öğenin [hash_multimap](../standard-library/hash-multimap-class.md).|
+|*VAL*|Taşıma için kullanılan değer, a eklenmesi için bir öğe oluşturmak [hash_multimap](../standard-library/hash-multimap-class.md).|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`emplace` Üye işlevi yeni öğe eklenir burada konumuna işaret eden bir yineleyici döndürür.
+`emplace` Üye işlevi, yeni bir öğe eklenir burada konumu gösteren bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Hash_multimap::value_type](#value_type) böylece bir öğe değerini bir sıralı çifti anahtar değerine eşit ilk bileşeni ve öğenin veri değerine eşit ikinci bileşeni ile bir çift öğesidir.
+[Hash_multimap::value_type](#value_type) böylece bir öğenin değerini sıralı bir çift anahtar değerine eşit olan ilk bileşen ve saniye bileşenini öğenin veri değerine eşit olan bir çift öğesidir.
 
 ### <a name="example"></a>Örnek
 
@@ -898,7 +898,7 @@ After the emplace insertion, hm1 contains:
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Yerleştirme İpucu ile bir hash_multimap içine yerinde oluşturulan bir öğe ekler.
+Bir yerleşim ipucuyla birlikte bir hash_multimap içine yerinde oluşturulmuş bir öğe ekler.
 
 ```cpp
 template <class ValTy>
@@ -911,18 +911,18 @@ iterator emplace_hint(
 
 |Parametre|Açıklama|
 |-|-|
-|`val`|Taşıma için kullanılan değer oluşturmak içine Eklenecek öğenin [hash_multimap](../standard-library/hash-multimap-class.md) sürece `hash_multimap` zaten o öğenin (veya daha genel olarak, anahtar eşdeğer sıralanmış bir öğe) içerir.|
-|`_Where`|Ekleme için doğru noktası aramaya başlamak için yer ile ilgili bir ipucu.|
+|*VAL*|Taşıma için kullanılan değer, a eklenmesi için bir öğe oluşturmak [hash_multimap](../standard-library/hash-multimap-class.md) sürece `hash_multimap` zaten o öğenin (veya daha genel anahtarı sıralı eşdeğer bir öğe) içerir.|
+|*_Where*|Doğru ekleme noktasını için aramaya başlamak için yer ile ilgili bir ipucu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[Hash_multimap::emplace](#emplace) üye işlevinin döndürdüğü burada yeni öğe eklenir içine konumuna işaret eden bir yineleyici `hash_multimap`.
+[Hash_multimap::emplace](#emplace) üye işlevi burada yeni bir öğe eklenir içine konumu gösteren bir yineleyici döndürür `hash_multimap`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Hash_multimap::value_type](#value_type) böylece bir öğe değerini bir sıralı çifti anahtar değerine eşit ilk bileşeni ve öğenin veri değerine eşit ikinci bileşeni ile bir çift öğesidir.
+[Hash_multimap::value_type](#value_type) böylece bir öğenin değerini sıralı bir çift anahtar değerine eşit olan ilk bileşen ve saniye bileşenini öğenin veri değerine eşit olan bir çift öğesidir.
 
-Ekleme gerçekleşebilir Logaritmik zaman yerine amortized sabit zaman ekleme noktasını hemen izleyen `_Where`.
+Ekleme oluşabilir Logaritmik süre yerine amorti edilmiş sabit zaman noktasını hemen izliyorsa *_Where*.
 
 ### <a name="example"></a>Örnek
 
@@ -958,7 +958,7 @@ After the emplace insertion, hm1 contains:
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir hash_multimap boşsa, testleri.
+Bir hash_multimap boş olup olmadığını sınar.
 
 ```cpp
 bool empty() const;
@@ -966,7 +966,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_multimap boşsa; **false** hash_multimap boş olmayan ise.
+**doğru** hash_multimap boşsa; **false** hash_multimap boş ise.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1009,7 +1009,7 @@ The hash_multimap hm2 is empty.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir hash_multimap son öğesi başarılı konumu adresleri yineleyici döndürür.
+Bir hash_multimap içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.
 
 ```cpp
 const_iterator end() const;
@@ -1019,13 +1019,13 @@ iterator end();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir hash_multimap son öğesi başarılı konumu adresleri çift yönlü yineleyici. Hash_multimap boş, hash_multimap::end ise hash_multimap::begin ==.
+Bir hash_multimap içindeki son öğeden sonra gelen konumu ele çift yönlü bir yineleyici. Hash_multimap boş sonra hash_multimap::end ise hash_multimap::begin ==.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Son** yineleyici kendi hash_multimap sonuna ulaştı olup olmadığını test etmek için kullanılır.
+`end` bir yineleyicinin kendi hash_multimap sonuna ulaştı olup olmadığını sınamak için kullanılır.
 
-Tarafından döndürülen değer **son** değil başvuru yapıldı.
+Tarafından döndürülen değer `end` kaldırılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1080,7 +1080,7 @@ The value of last element of hm1 is now 20.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Yineleyiciler çifti sırasıyla hash_multimap belirtilen anahtar daha büyük bir anahtarla ilk öğe ve eşit veya bundan büyük anahtarı bir anahtarla hash_multimap ilk öğe döndürür.
+Yineleyicilerin bir çiftini, sırasıyla belirtilen anahtardan daha büyük bir anahtarla bir hash_multimap içindeki ilk öğeye ve anahtardan büyük veya ona eşit bir anahtarla hash_multimap içindeki ilk öğeye döndürür.
 
 ```cpp
 pair <const_iterator, const_iterator> equal_range (const Key& key) const;
@@ -1090,13 +1090,13 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Aranmakta hash_multimap öğeden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleyiciler çifti ilk olacak şekilde, [lower_bound](#lower_bound) anahtarı ve ikincisi [upper_bound](#upper_bound) anahtarı.
+Yineleyicilerin bir çiftini ilk güvenilecek şekilde [lower_bound](#lower_bound) , anahtar ve ikinci [upper_bound](#upper_bound) anahtarı.
 
-İlk yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İlk** ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **İlk**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci** ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).
+Bir çiftin ilk yineleyicisi erişmeye `pr` üye işlevi tarafından döndürülen, kullanın `pr`. **İlk** ve alt sınır yineleyicinin başvuru kaldırma için \*( `pr`. **İlk**). Bir çiftin ikinci yineleyicisi erişmeye `pr` üye işlevi tarafından döndürülen, kullanın `pr`. **İkinci** ve üst sınır yineleyicinin başvuru kaldırma için \*( `pr`. **İkinci**).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1168,7 +1168,7 @@ The hash_multimap hm1 doesn't have an element with a key less than 4.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir öğenin veya bir dizi öğeleri hash_multimap belirtilen konumlardan kaldırır veya belirtilen anahtar eşleşen öğeleri kaldırır.
+Bir öğenin veya öğelerin aralığını belirtilen konumlardan bir hash_multimap kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
 ```cpp
 iterator erase(iterator _Where);
@@ -1180,27 +1180,27 @@ size_type erase(const key_type& key);
 
 ### <a name="parameters"></a>Parametreler
 
-`_Where` Hash_multimap kaldırılacak öğe konumu.
+*_Where* hash_multimap kaldırılacak öğenin konumu.
 
-`first` İlk öğenin konumunu hash_multimap kaldırıldı.
+*İlk* ilk öğenin konumunu hash_multimap kaldırıldı.
 
-`last` Yalnızca son öğenin ötesinde konumu hash_multimap kaldırıldı.
+*Son* konumu yalnızca son öğeden sonra hash_multimap kaldırıldı.
 
-`key` Hash_multimap kaldırılacak öğe anahtarı.
+*anahtar* hash_multimap kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki üye işlevleri için çift yönlü Yineleyici, böyle bir öğe varsa, kaldırılan öğelerin veya işaretçisi hash_multimap sonuna dışında kalan ilk öğe belirler.
+İlk iki üye işlevleri için çift yönlü bir yineleyici, böyle bir öğe varsa, kaldırılan tüm öğelerin veya işaretçi hash_multimap sonuna dışında kalan ilk öğeyi belirtir.
 
-Üye işlevi için üçüncü hash_multimap kaldırılmış olan öğe sayısını döndürür.
+Üye işlevi için üçüncü hash_multimap kaldırılan öğelerin sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri hiçbir zaman bir özel durum.
+Üye işlevleri, hiçbir zaman bir özel durum.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek hash_multimap::erase üye fonksiyonu kullanımını göstermektedir.
+Aşağıdaki örnek, hash_multimap::erase üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_multimap_erase.cpp
@@ -1290,7 +1290,7 @@ After another element with a key equal to that of the
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Belirtilen anahtar için eşdeğer bir anahtara sahip bir hash_multimap bir öğedeki ilk konumunu adresleme yineleyici döndürür.
+Belirtilen anahtara denk bir anahtara sahip bir hash_multimap içindeki bir öğenin birinci konumunu ele alan bir yineleyici döndürür.
 
 ```cpp
 iterator find(const Key& key);
@@ -1300,17 +1300,17 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Aranmakta hash_multimap öğeden sıralama anahtarı tarafından eşleştirilmesini anahtarı.
+*anahtar* Aranan hash_multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen bir anahtar veya anahtar için bir eşleşme varsa hash_multimap son öğesi başarılı konumu ile bir öğenin ilk konum adresleri yineleyici.
+Bir öğenin birinci konumunu belirtilen bir anahtar veya anahtar için bir eşleşme varsa hash_multimap içindeki son öğeyi takip eden konumu ele alan bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi olan sıralama anahtarı hash_multimap bir öğedeki adresleri yineleyici döndürür **eşdeğer** bağımsız değişkeni comparability ilişkisi küçüktür anahtarı bir sıralama uygulanmasını ikili bir koşul altında dayalı.
+Üye işlevi olan sıralama anahtarı hash_multimap bir öğeyi adresleyen bir yineleyici döndürür `equivalent` bağımsız değişkeni comparability ilişkisi küçüktür anahtarı altında bir sıralama sevk eden ikili bir koşula dayalı.
 
-Varsa dönüş değerini **Bul** atanmış bir `const_iterator`, hash_multimap nesnesi değiştirilemez. Varsa dönüş değerini **Bul** atanmış bir **yineleyici**, hash_multimap nesne değiştirilebilir.
+Varsa dönüş değerinin `find` atanan bir `const_iterator`, hash_multimap nesnesi değiştirilemez. Varsa dönüş değerinin `find` atanan bir `iterator`, hash_multimap nesnesi değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1385,7 +1385,7 @@ This is not the last element of hash_multimap hm1.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap oluşturmak için kullanılan ayırıcısı nesnesinin bir kopyasını döndürür.
+Hash_multimap oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
 ```cpp
 Allocator get_allocator() const;
@@ -1393,11 +1393,11 @@ Allocator get_allocator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multimap tarafından kullanılan ayırıcısı.
+Hash_multimap tarafından kullanılan ayırıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Allocators hash_multimap sınıfı için sınıf depolama nasıl yönettiğini belirtin. C++ Standart Kitaplığı kapsayıcı sınıfları ile sağlanan varsayılan allocators çoğu programlama ihtiyaçları için yeterli. Yazma ve kendi allocator sınıfı kullanarak ileri düzeyde C++ bir konudur.
+Hash_multimap sınıfı için ayırıcılar sınıfı depolama nasıl yönettiğini belirtin. C++ Standart Kitaplığı kapsayıcı sınıfları ile sağlanan varsayılan ayırıcılar çoğu programlama ihtiyaçları için yeterli. Yazma ve kendi allocator sınıfı kullanarak bir Gelişmiş C++ konudur.
 
 ### <a name="example"></a>Örnek
 
@@ -1461,7 +1461,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Boş veya tüm kopyalama veya başka bir hash_multimap parçası olan bir hash_multimap oluşturur.
+Boş olan veya bir kopyası tüm veya bazı diğer hash_multimap parçası hash_multimap oluşturur.
 
 ```cpp
 hash_multimap();
@@ -1515,37 +1515,37 @@ hash_multimap(
 
 |Parametre|Açıklama|
 |-|-|
-|`Al`|Varsayılan olarak bu hash_multimap nesne için kullanılacak depolama allocator sınıfı `Allocator`.|
-|`Comp`|Türü karşılaştırma işlevinden `const Traits` varsayılan olarak eşlemesindeki öğeleri sıralamak için kullanılan `Traits`.|
-|`Right`|Oluşturulan kümesi bir kopya olarak olduğu eşleme.|
-|`First`|Kopyalanacak öğe aralığını ilk öğe konumu.|
-|`Last`|Kopyalanacak öğeleri aralık ötesinde ilk öğe konumu.|
-|`IList`|Kopyalanacak initializer_list.|
+|*Al*|Varsayılan olarak bu hash_multimap nesne için kullanılacak depolama ayırıcı sınıf `Allocator`.|
+|*Comp*|Karşılaştırma işlevi türü `const Traits` varsayılan olarak haritada öğeleri sıralamak için kullanılan `Traits`.|
+|*Sağ*|Oluşturulan kümesi kopyası olacak olduğu eşlemesi.|
+|*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
+|*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
+|*IList*|Kopyalanacak initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_multimap için bellek depolama yönetir ve, daha sonra döndürülüp döndürülmediğini çağırarak ayırıcısı nesne türünü tüm oluşturucular depolamak [get_allocator](#get_allocator). Allocator parametresi sınıf bildirimlerinde genellikle atlanır ve önişlem makroları alternatif allocators yerine kullanılır.
+Tüm Oluşturucular, hash_multimap için bellek depolama yönetir ve bu daha sonra döndürülmesi çağırarak ayırıcı nesnesi türü depolamak [get_allocator](#get_allocator). Ayırıcı parametre sınıf bildirimlerinde genellikle atlanır ve ön işleme makroları alternatif ayırıcılar yerine kullanılır.
 
-Tüm oluşturucular kendi hash_multimap başlatır.
+Tüm oluşturucular kendi hash_multimap başlatın.
 
-İşlev nesnesi türündeki tüm oluşturucular depolamak `Traits` sipariş hash_multimap anahtarlar oluşturmak için kullanılır ve daha sonra çağırarak döndürülebilecek [key_comp](#key_comp).
+Tüm oluşturucular türünün işlev nesnesini depolamak `Traits` hash_multimap anahtarları arasında bir sipariş oluşturmak için kullanılır ve daha sonra çağırarak döndürülebilir [key_comp](#key_comp).
 
-İlk üç oluşturucular boş bir ilk hash_multimap belirtin; İkinci karşılaştırma işlevi türünü belirtir ( `Comp`) öğeleri ve üçüncü sırasını açıkça oluşturmada kullanılacak ayırıcı türünü belirtir ( `_Al`) kullanılacak. Anahtar sözcüğü `explicit` otomatik tür dönüştürme belirli türdeki gizler.
+İlk üç Oluşturucu boş bir başlangıç hash_multimap belirtin. İkinci karşılaştırma işlevi türünü belirtir (*kompozisyonu*) öğeleri ve üçüncüsü sırasını açıkça oluşturmada kullanılacak ayırıcı türünü belirtir (`_Al`) kullanılacak. Anahtar sözcüğü `explicit` otomatik tür dönüştürme belirli türdeki bastırır.
 
-Hash_multimap bir kopyasını dördüncü Oluşturucusu belirtir `Right`.
+Dördüncü Oluşturucu hash_multimap bir kopyasını belirtir `Right`.
 
-Sonraki üç oluşturucular aralığı kopyalayın `First, Last)` sınıfının karşılaştırma işlevini türünü belirleyen içinde explicitness artan eşleme **nitelikler** ve ayırıcı.
+Sonraki üç oluşturucular aralığını kopyalamaktadır `First, Last)` sınıfın karşılaştırma işlevinin türü belirtilirken explicitness artan eşleme `Traits` ve ayırıcı.
 
 Hash_multimap sekizinci Oluşturucusu taşır `Right`.
 
-Son üç oluşturucular bir initializer_list kullanın.
+Son üç oluşturucular bir initializer_list kullanır.
 
 ## <a name="insert"></a>  hash_multimap::insert
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir öğenin veya bir dizi öğeleri hash_multimap ekler.
+Bir öğenin veya öğelerin aralığını bir hash_multimap ekler.
 
 ```cpp
 iterator insert(
@@ -1575,33 +1575,33 @@ iterator insert(
 
 |Parametre|Açıklama|
 |-|-|
-|`Val`|Bu öğe zaten içeriyor veya zaten bir öğe olan anahtar içerdiği sürece daha genel olarak, eşdeğer sıralanır sürece hash_multimap Eklenecek öğenin değeri.|
-|`Where`|Ekleme için doğru noktası aramaya başlamak nereye konusunda ipucu.|
-|`First`|Bir eşlemesinden kopyalanacak ilk öğe konumu.|
-|`Last`|Yalnızca bir eşlemesinden kopyalanacak son öğenin ötesinde konumu.|
+|*VAL*|Bu öğeyi zaten içeriyor veya zaten anahtarı bir öğe içeriyorsa sürece daha genel olarak, eşdeğer sıralanır sürece hash_multimap eklenecek bir öğenin değeri.|
+|*Burada*|Doğru ekleme noktasını için aramaya başlamak nereye hakkında bir ipucu.|
+|*ilk*|Bir eşlemden kopyalanacak ilk öğenin konumu.|
+|*Son*|Yalnızca bir eşlemden kopyalanacak son öğenin ötesinde konumu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki `insert` üye işlevleri yeni öğe eklenir burada konumuna işaret eden bir yineleyici döndürür.
+İlk iki `insert` üye işlevleri, yeni bir öğe eklenir burada konumu gösteren bir yineleyici döndürür.
 
-Eklenecek öğeler için bir initializer_list üçüncü üye işlevi kullanır.
+Üçüncü üye işlevi, eklenecek öğeler için bir initializer_list kullanır.
 
-Dördüncü üye işlevi bir dizi öğesi değerlerini yineleyici aralığında tarafından ele her öğesine karşılık gelen bir harita ekler `[First, Last)` belirtilen kümenin.
+Dördüncü üye işlevi aralıktaki bir yineleyici tarafından ele alınan her öğe için karşılık gelen bir harita öğe değerleri dizisi ekler `[First, Last)` belirtilen kümenin.
 
-Son iki `insert` üye işlevleri davrandığını ilk iki aynı bunlar taşıma-yapı eklenen değer dışında.
+Son iki `insert` üye işlevleri davrandığını ilk ikisi, aynı bunlar move-yapısı eklenen değer dışında.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Value_type](#value_type) böylece bir öğenin değerini ilk bileşen olduğu anahtar değerine eşit bir sıralı çiftinin bir çifti öğesidir ve ikinci öğesi veri değerine eşit bileşendir.
+[Value_type](#value_type) böylece bir öğenin değeri ilk bileşen olduğu anahtar değerine eşit sıralı bir çift bir çift öğesidir ve saniye bileşenini öğenin veri değerine eşittir.
 
-Ekleme ipucu sürümü için amortized sabit zaman içinde gerçekleşebilir `insert`, ekleme noktasını hemen izliyorsa Logaritmik zaman yerine `Where`.
+Ekleme ipucu sürümü için amorti edilmiş sabit zaman meydana gelebilir `insert`, ekleme noktasını hemen izliyorsa Logaritmik süre yerine *nerede*.
 
 ## <a name="iterator"></a>  hash_multimap::iterator
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Okuma veya herhangi bir hash_multimap öğesinde değiştirmek için bir çift yönlü yineleyici sağlayan türü.
+Okuyabilen veya değiştirebilen herhangi bir öğenin bir hash_multimap çift yönlü yineleyiciler sağlayan tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::iterator iterator;
@@ -1609,24 +1609,24 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Yineleyici** nesnelerin hash_multimap noktalarına tarafından tanımlanan [value_type](#value_type), türü olan `pair` \< **const anahtar, türü**>, yalnızca ilk üye anahtarı öğesi olduğundan ve ikinci öğe tarafından tutulan eşlenen datum üyesidir.
+`iterator` Nesnelerin hash_multimap noktalarına göre tanımlanan [value_type](#value_type), türü olan `pair` \< **const Key, türü**>, öğenin anahtarı, ilk üyesidir ikinci öğe tarafından tutulan eşlenen datum üyesidir.
 
-Başvuru için bir **yineleyici** `Iter` bir hash_multimap bir öğesine işaret eden, kullanın **->** işleci.
+Başvurulacak bir **yineleyici** `Iter` bir hash_multimap içindeki bir öğeyi işaret eden, kullanın `->` işleci.
 
-Öğe için anahtar değerini erişmek için `Iter`  ->  **ilk**, eşit olduğu (\* `Iter`). **İlk**. Eşlenen veri öğesinin değeri erişmek için `Iter`  ->  **ikinci**, eşit olduğu (\* `Iter`). **İlk**.
+Öğenin anahtarının değerini erişmek için `Iter`  ->  **ilk**, eşit olduğu (\* `Iter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `Iter`  ->  **ikinci**, eşit olduğu (\* `Iter`). **İlk**.
 
-Bir tür **yineleyici** bir öğenin değerini değiştirmek için kullanılabilir.
+Bir tür `iterator` bir öğenin değerini değiştirmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için **yineleyici**.
+Örneğin bakın [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için `iterator`.
 
 ## <a name="key_comp"></a>  hash_multimap::key_comp
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir hash_multimap sipariş anahtarlarında kullanılacak karşılaştırma nesnesinin bir kopyasını alır.
+Bir hash_multimap içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
 ```cpp
 key_compare key_comp() const;
@@ -1634,15 +1634,15 @@ key_compare key_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri sıralamak için bir hash_multimap kullanan işlevi nesnesini döndürür.
+Alt öğeleri düzenlemek amacıyla bir hash_multimap kullanan bir işlev nesnesi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini saklanan nesne tanımlar
+Depolanan nesne üyesi işlevini tanımlar.
 
 **bool işleci (const anahtar &** `left` **, const anahtar &** `right` **);**
 
-döndüren **true** varsa `left` önündeki ve eşit değil `right` sıralama düzeninde.
+döndüren **true** varsa `left` önündeki ve eşit değildir `right` sıralama düzeninde.
 
 ### <a name="example"></a>Örnek
 
@@ -1698,7 +1698,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-İşlev nesnesi sağlayan bir türü göreli hash_multimap içinde iki öğe sırasını belirlemek için iki sıralama anahtarları karşılaştırabilirsiniz.
+Hash_multimap içindeki iki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran işlev nesnesi sağlayan tür.
 
 ```cpp
 typedef Traits key_compare;
@@ -1706,20 +1706,20 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-**key_compare** şablon parametresi için bir eş anlamlı olduğundan `Traits`.
+`key_compare` Şablon parametresi için bir eşanlamlı olduğu *nitelikler*.
 
-Daha fazla bilgi için `Traits` bkz [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konu.
+Daha fazla bilgi için *nitelikler* bkz [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konu.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.
+Örneğin bakın [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.
 
 ## <a name="key_type"></a>  hash_multimap::key_type
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap her öğeye oluşturduğunu sıralama anahtar nesneyi tanımlayan bir türü.
+Hash_multimap her öğesini oluşturan sıralama anahtarını nesnesini tanımlayan bir tür.
 
 ```cpp
 typedef Key key_type;
@@ -1727,20 +1727,20 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type` Şablon parametresi için bir eş anlamlı olduğundan `Key`.
+`key_type` Şablon parametresi için bir eşanlamlı olduğu *anahtar*.
 
-Daha fazla bilgi için `Key`, Açıklamalar bölümüne bakın [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konu.
+Daha fazla bilgi için *anahtarı*, Açıklamalar bölümüne bakın [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konu.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_compare`.
+Örneğin bakın [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_compare`.
 
 ## <a name="lower_bound"></a>  hash_multimap::lower_bound
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Yineleyici eşit veya bundan büyük belirtilen anahtar bir anahtarı olan bir hash_multimap ilk öğe döndürür.
+Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla bir hash_multimap içindeki ilk öğeye döndürür.
 
 ```cpp
 iterator lower_bound(const Key& key);
@@ -1750,13 +1750,13 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Aranmakta hash_multimap öğeden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) eşit veya bundan büyük bağımsız değişkeni anahtar ya da son başarılı konumu adresleri bir anahtarla bir hash_multimap bir öğedeki konumunu adresleri anahtar için bir eşleşme varsa hash_multimap öğe.
+Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) bağımsız değişken anahtardan daha büyük veya ona eşit olan veya sonra gelen konumu adresleyen son adresleri bir anahtarla bir hash_multimap içindeki bir öğenin konumunu ele hash_multimap anahtar için bir eşleşme varsa öğe.
 
-Varsa dönüş değerini `lower_bound` atanmış bir `const_iterator`, hash_multimap nesnesi değiştirilemez. Varsa dönüş değerini `lower_bound` atanmış bir **yineleyici**, hash_multimap nesne değiştirilebilir.
+Varsa dönüş değerinin `lower_bound` atanan bir `const_iterator`, hash_multimap nesnesi değiştirilemez. Varsa dönüş değerinin `lower_bound` atanan bir `iterator`, hash_multimap nesnesi değiştirilebilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1834,7 +1834,7 @@ This is not the last element of hash_multimap hm1.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap içinde depolanan veri türünü temsil eden tür.
+Bir hash_multimap içinde depolanan veri türünü temsil eden tür.
 
 ```cpp
 typedef Type mapped_type;
@@ -1842,20 +1842,20 @@ typedef Type mapped_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`mapped_type` Şablon parametresi için bir eş anlamlı olduğundan `Type`.
+`mapped_type` Şablon parametresi için bir eşanlamlı olduğu *türü*.
 
-Daha fazla bilgi için `Type` bkz [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konu.
+Daha fazla bilgi için *türü* bkz [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konu.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.
+Örneğin bakın [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.
 
 ## <a name="max_size"></a>  hash_multimap::max_size
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap en büyük uzunluğunu döndürür.
+Hash_multimap maksimum uzunluğunu döndürür.
 
 ```cpp
 size_type max_size() const;
@@ -1863,7 +1863,7 @@ size_type max_size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_multimap en fazla olası uzunluğu.
+Hash_multimap maksimum olası uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1893,7 +1893,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap öğelerini başka bir hash_multimap bir kopyası ile değiştirir.
+Hash_multimap öğelerini başka bir hash_multimap kopyasıyla değiştirir.
 
 ```cpp
 hash_multimap& operator=(const hash_multimap& right);
@@ -1905,11 +1905,11 @@ hash_multimap& operator=(hash_multimap&& right);
 
 |Parametre|Açıklama|
 |-|-|
-|`right`|[Hash_multimap](../standard-library/hash-multimap-class.md) içine kopyalanmasını `hash_multimap`.|
+|*sağ*|[Hash_multimap](../standard-library/hash-multimap-class.md) içine kopyalanan `hash_multimap`.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Var olan öğeleri silindikten sonra bir `hash_multimap`, `operator=` kopyalar ya da içeriğini taşır `right` içine `hash_multimap`.
+Var olan tüm öğeleri silme sonra bir `hash_multimap`, `operator=` kopyalar veya içeriğini hareket *doğru* içine `hash_multimap`.
 
 ### <a name="example"></a>Örnek
 
@@ -1954,7 +1954,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir hash_multimap bir öğe için bir işaretçi sağlayan türü.
+Hash_multimap bir öğeye işaretçi sağlayan bir tür.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::pointer pointer;
@@ -1962,16 +1962,16 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::po
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür **işaretçi** bir öğenin değerini değiştirmek için kullanılabilir.
+Bir tür `pointer` bir öğenin değerini değiştirmek için kullanılabilir.
 
-Çoğu durumda, bir [yineleyici](#iterator) hash_multimap nesnesindeki öğelerin erişmek için kullanılmalıdır.
+Çoğu durumda bir [yineleyici](#iterator) hash_multimap nesnesindeki öğelere erişmek için kullanılmalıdır.
 
 ## <a name="rbegin"></a>  hash_multimap::rbegin
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Yineleyici ters hash_multimap ilk öğe adresleme döndürür.
+Ters çevrilen hash_multimap içindeki ilk öğeyi ele alan bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rbegin() const;
@@ -1981,15 +1981,15 @@ reverse_iterator rbegin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters hash_multimap ilk öğe adresleme veya ne adresleme ters çift yönlü yineleyici unreversed hash_multimap son öğesi eklenmiştir.
+Ters çevrilen hash_multimap ilk öğeyi ele alan veya ne ters çevrilmeyen hash_multimap içindeki son öğeyi adresleyen ters iki yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin` Ters hash_multimap ile kullanılan gibi [başlamak](#begin) hash_multimap ile kullanılır.
+`rbegin` ters çevrilen bir hash_multimap ile kullanılan gibi [başlamak](#begin) bir hash_multimap ile kullanılır.
 
-Varsa dönüş değerini `rbegin` atanmış bir `const_reverse_iterator`, sonra da hash_multimap nesnesi değiştirilemez. Varsa dönüş değerini `rbegin` atandığı bir `reverse_iterator`, sonra hash_multimap nesne değiştirilebilir.
+Varsa dönüş değeri `rbegin` atanan bir `const_reverse_iterator`, sonra da hash_multimap nesnesi değiştirilemez. Varsa dönüş değeri `rbegin` atanan bir `reverse_iterator`, ardından hash_multimap nesnesi değiştirilebilir.
 
-`rbegin` hash_multimap geriye doğru yinelemek için kullanılabilir.
+`rbegin` bir hash_multimap geriye doğru gezinmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2056,7 +2056,7 @@ After the erasure, the first element
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap içinde depolanan bir öğe için bir başvuru sağlar türü.
+Bir hash_multimap içinde depolanan öğeye başvuru sağlayan bir tür.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
@@ -2119,7 +2119,7 @@ The modified data value of first element is 15.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Ters hash_multimap son öğesi başarılı konumu adresleri yineleyici döndürür.
+Ters çevrilen hash_multimap içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rend() const;
@@ -2129,17 +2129,17 @@ reverse_iterator rend();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters hash_multimap (ilk öğe unreversed hash_multimap öncesinde konum) son öğesi başarılı konumu adresleri ters çift yönlü yineleyici.
+Ters çevrilen bir hash_multimap (ters çevrilmeyen hash_multimap ilk öğeyi önce gelen konum) içindeki son öğeden sonra gelen konumu ele ters iki yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend` Ters hash_multimap ile kullanılan gibi [son](#end) hash_multimap ile kullanılır.
+`rend` ters çevrilen bir hash_multimap ile kullanılan gibi [son](#end) bir hash_multimap ile kullanılır.
 
-Varsa dönüş değerini `rend` atanmış bir [const_reverse_iterator](#const_reverse_iterator), sonra da hash_multimap nesnesi değiştirilemez. Varsa dönüş değerini `rend` atandığı bir [reverse_iterator](#reverse_iterator), sonra hash_multimap nesne değiştirilebilir.
+Varsa dönüş değeri `rend` atanan bir [const_reverse_iterator](#const_reverse_iterator), sonra da hash_multimap nesnesi değiştirilemez. Varsa dönüş değeri `rend` atanan bir [reverse_iterator](#reverse_iterator), ardından hash_multimap nesnesi değiştirilebilir.
 
-`rend` Ters yineleyici kendi hash_multimap sonuna olup ulaştı için test etmek için kullanılabilir.
+`rend` olup ters yineleyici kendi hash_multimap sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
 
-Tarafından döndürülen değer `rend` değil başvuru yapıldı.
+Tarafından döndürülen değer `rend` kaldırılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -2207,7 +2207,7 @@ After the erasure, the last element in the reversed hash_multimap is 2.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Okuma veya ters hash_multimap bir öğedeki değiştirmek için bir çift yönlü yineleyici sağlayan türü.
+Okuyabilen veya değiştirebilen bir ters hash_multimap içindeki bir öğeyi çift yönlü yineleyiciler sağlayan tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::reverse_iterator reverse_iterator;
@@ -2215,20 +2215,20 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `reverse_iterator` ters hash_multimap yinelemek için kullanılır.
+Bir tür `reverse_iterator` tersten hash_multimap yinelemek için kullanılır.
 
-`reverse_iterator` Nesnelerin hash_multimap noktalarına tarafından tanımlanan [value_type](#value_type), türü olan `pair` \< **const anahtar, türü**>. Anahtar değeri ilk üye çifti kullanılabilir ve eşlenen öğesinin değeri çifti ikinci üyesi üzerinden kullanılabilir.
+`reverse_iterator` Nesnelerin hash_multimap noktalarına göre tanımlanan [value_type](#value_type), türü olan `pair` \< **const Key, türü**>. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.
+Örneğin bakın [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.
 
 ## <a name="size"></a>  hash_multimap::size
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap öğe sayısını döndürür.
+Hash_multimap öğelerin sayısını döndürür.
 
 ```cpp
 size_type size() const;
@@ -2242,7 +2242,7 @@ Hash_multimap geçerli uzunluğu.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek hash_multimap::size üye fonksiyonu kullanımını göstermektedir.
+Aşağıdaki örnek, hash_multimap::size üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_multimap_size.cpp
@@ -2278,7 +2278,7 @@ The hash_multimap length is now 2.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Bir hash_multimap öğelerin sayısını sayar bir işaretsiz tamsayı türü.
+Bir hash_multimap içindeki öğelerin sayısını sayar bir işaretsiz tamsayı türü.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
@@ -2288,14 +2288,14 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 
 ### <a name="example"></a>Örnek
 
-Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği `size_type`
+Örneğin bakın [boyutu](#size) bildirme ve kullanma örneği `size_type`
 
 ## <a name="swap"></a>  hash_multimap::Swap
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-İki hash_multimaps öğelerini değiş tokuş eder.
+İki hash_multimaps öğelerini birbiriyle değiştirir.
 
 ```cpp
 void swap(hash_multimap& right);
@@ -2303,11 +2303,11 @@ void swap(hash_multimap& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Öğeleri takas için sağlama hash_multimap veya hash_multimap olanlar değiştirilmek üzere öğeleri olan hash_multimap.
+*doğru* değiştirilecek öğeleri sağlayan hash_multimap veya öğeleri olan hash_multimap olanlar değiştirilecek hash_multimap.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini hiçbir başvuruları, işaretçileri veya öğeleri arasında alınıp verilen iki hash_multimaps öğelerinde tanımladığınız yineleyiciler geçersiz kılar.
+Üye işlev hiçbir başvurular, işaretçiler veya öğeleri değiştirilen iki hash_multimaps öğelerinde belirlemek yineleyicileri geçersiz kılar.
 
 ### <a name="example"></a>Örnek
 
@@ -2366,7 +2366,7 @@ After swapping with hm3, hash_multimap hm1 is: 300.
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Belirtilen anahtar daha büyük bir anahtara sahip bir hash_multimap ilk öğe yineleyici döndürür.
+Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtarla bir hash_multimap içindeki ilk öğeye döndürür.
 
 ```cpp
 iterator upper_bound(const Key& key);
@@ -2376,13 +2376,13 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`key` Aranmakta hash_multimap öğeden sıralama anahtarı ile Karşılaştırılacak bağımsız değişkeni anahtarı.
+*anahtar* Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) bağımsız değişkeni anahtarından daha büyük ya da son öğesi başarılı konumu adresleri bir anahtara sahip bir öğe bir hash_multimap konumunu adresleri hash_multimap anahtar için bir eşleşme.
+Bir [yineleyici](#iterator) veya [const_iterator](#const_iterator) bağımsız değişken anahtardan daha büyük veya içindeki son öğeyi takip eden konumu ele bir anahtara sahip bir hash_multimap içindeki bir öğenin konumunu adresleri hash_multimap anahtar için bir eşleşme.
 
-Varsa dönüş değerini `upper_bound` atanmış bir `const_iterator`, hash_multimap nesnesi değiştirilemez. Varsa dönüş değerini `upper_bound` atanmış bir **yineleyici**, hash_multimap nesne değiştirilebilir.
+Varsa dönüş değerinin `upper_bound` atanan bir `const_iterator`, hash_multimap nesnesi değiştirilemez. Varsa dönüş değerinin `upper_bound` atanan bir `iterator`, hash_multimap nesnesi değiştirilebilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2451,7 +2451,7 @@ The first element of hm1 with a key greater than
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Üye işlevini anahtar değerlerine karşılaştırarak bir hash_multimap öğelerin sırasını belirleyen bir işlev nesnesi döndürür.
+Üye işlevi, anahtar değerlerini karşılaştırarak bir hash_multimap içindeki öğelerin sırasını belirleyen bir işlev nesnesi döndürür.
 
 ```cpp
 value_compare value_comp() const;
@@ -2459,15 +2459,15 @@ value_compare value_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri sıralamak için bir hash_multimap kullanan karşılaştırma işlevi nesnesini döndürür.
+Alt öğeleri düzenlemek amacıyla bir hash_multimap kullanan karşılaştırma işlevi nesnesini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir hash_multimap için *m*, iki öğe *e*1 ( *k*1 *, d*1) ve *e*2 ( *k*2 *, d*2) türündeki nesneler [value_type](#value_type), burada *k*1 ve *k*2 olan kendi anahtarları türü [key_type](#key_type) ve `d`1 ve `d`2 kendi veri türü olan [mapped_type](#mapped_type), ardından *m.*`value_comp`() ( *e*1 *, e*olan 2) eşdeğer *m.*`key_comp`() ( *k*1 *, k*2). Üye işlevini saklanan bir nesne tanımlar
+Bir hash_multimap için *m*, iki öğe *e*1 ( *k*1 *, d*1) ve *e*2 ( *k*2 *, d*2) türündeki nesneler [value_type](#value_type)burada *k*1 ve *k*2 olan kendi anahtarları türü [key_type](#key_type) ve `d`1 ve `d`2 kendi veri türü olan [mapped_type](#mapped_type), ardından *m.*`value_comp`() ( *e*1 *, e*olan 2) eşdeğer *m.*`key_comp`() ( *k*1 *, k*2). Depolanan bir nesne üye işlevini tanımlar.
 
 **bool işleci**( **value_type &**`left`, **value_type &** `right`);
 
-döndüren **true** , anahtar değeri `left` önündeki ve anahtar değerine eşit değil `right` sıralama düzeninde.
+döndüren **true** , anahtar değerini `left` önündeki ve anahtar değerine eşit değil `right` sıralama düzeninde.
 
 ### <a name="example"></a>Örnek
 
@@ -2521,7 +2521,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Hash_multimap içinde depolanan nesne türünü temsil eden tür.
+İçinde bir hash_multimap depolanan nesne türünü temsil eden tür.
 
 ```cpp
 typedef pair<const Key, Type> value_type;
@@ -2529,7 +2529,7 @@ typedef pair<const Key, Type> value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type` çifti olarak bildirilen\<const [key_type](#key_type), [mapped_type](#mapped_type)> ve değil eşleştirin\<key_type, mapped_type > ilişkilendirilebilir kapsayıcı anahtarları değiştirilmedi çünkü nonconstant yineleyici veya reference kullanıyor.
+`value_type` çifti olarak bildirilmiştir\<const [key_type](#key_type), [mapped_type](#mapped_type)> ve değil eşleştirin\<key_type, mapped_type > ilişkilendirilebilir bir kapsayıcı anahtarları değiştirilemez çünkü nonconstant yineleyici ya da başvuru kullanıyor.
 
 ### <a name="example"></a>Örnek
 

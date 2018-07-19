@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1354d490446795e55b41fa0c548e8dd8aa38c71b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 810a5c16df1027aba976bea3c165b19f765d15a6
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411542"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941846"
 ---
 # <a name="comerrorwcode"></a>_com_error::WCode
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Kapsüllenmiş eşlenen 16 bit hata kodu alır `HRESULT`.  
+ Kapsüllenmiş HRESULT biçimine eşlenen 16-bit hata kodunu alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,12 +37,12 @@ WORD WCode ( ) const throw( );
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Varsa `HRESULT` 0x80040200 için 0x8004FFFF aralığı içinde **WCode** yöntemi döndürür `HRESULT` 0x80040200; Aksi halde, sıfır döndürür.  
+ HRESULT için 0x80040200 0x8004FFFF aralığında ise `WCode` yöntemi 0x80040200 eksi HRESULT döndürür; Aksi takdirde, sıfır döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **WCode** yöntemi COM destek kodda gerçekleşen eşleme geri almak için kullanılır. İçin sarmalayıcı bir **görüntüleme arabirimi** özellik veya yöntem çağrıları ve bağımsız değişkenler paketleri bir destek yordam çağrıları **IDispatch::Invoke**. İade, bir hata varsa üzerine `HRESULT` , `DISP_E_EXCEPTION` döndürülür hata bilgilerini alınır **EXCEPINFO** yapısı geçirilen **IDispatch::Invoke**. Hata kodu olabilir ya da depolanan bir 16 bit değeri `wCode` üyesi **EXCEPINFO** yapısı veya tam 32-bit değerinde **scode** üyesi **EXCEPINFO**yapısı. 16 bit ise `wCode` döndürülür, ilk eşlenmelidir bir 32 bit hata `HRESULT`.  
+ `WCode` Yöntemi COM desteği kodda gerçekleşen bir eşleme geri almak için kullanılır. İçin sarmalayıcı bir `dispinterface` özellik veya yöntem çağrıları ve bağımsız değişkenler paketleri bir destek yordam çağrıları `IDispatch::Invoke`. Bir hata HRESULT'ın DISP_E_EXCEPTION döndürülürse, iade sırasında hata bilgilerini alınır `EXCEPINFO` yapısı geçirilen `IDispatch::Invoke`. Hata kodu olabilir depolanan bir 16 bitlik değer `wCode` üyesi `EXCEPINFO` yapısı veya bir tam 32-bit değeri `scode` üyesi `EXCEPINFO` yapısı. 16 bit varsa `wCode` döndürülür, ilk eşlenmeli bir 32-bit hata HRESULT.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)   

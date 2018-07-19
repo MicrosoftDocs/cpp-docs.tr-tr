@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9cd414e2e6f23cb2fe44e6de4b5f53b33ef3555
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a399fa8a9f8fc9a73d75605f31245e42a2154b7c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857889"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963634"
 ---
 # <a name="iterator-struct"></a>iterator Yapısı
 
-Bir kullanıcı tarafından tanımlanan yineleyici sınıf düzgün ile çalıştığından emin olmak için kullanılan boş bir temel yapı **iterator_trait**s.
+Bir kullanıcı tanımlı iterator sınıfı düzgün ile çalıştığından emin olmak için kullanılan boş bir temel yapı `iterator_trait`s.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,25 +43,25 @@ struct iterator {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapısı tüm yineleyiciler için temel tür olarak görev yapar. Üye türleri tanımlar
+Şablon yapı tüm yineleyiciler için bir temel tür olarak görev yapar. Üye türleri tanımlar
 
-- `iterator_category` (şablon parametresi için bir eş anlamlı `Category`).
+- `iterator_category` (şablon parametresi için bir eşanlamlı `Category`).
 
-- `value_type` (şablon parametresi için bir eş anlamlı **türü**).
+- `value_type` (şablon parametresi için bir eşanlamlı `Type`).
 
-- `difference_type` (şablon parametresi için bir eş anlamlı `Distance`).
+- `difference_type` (şablon parametresi için bir eşanlamlı `Distance`).
 
-- `distance_type` (şablon parametresi için bir eş anlamlı `Distance`)
+- `distance_type` (şablon parametresi için bir eşanlamlı `Distance`)
 
-- `pointer` (şablon parametresi için bir eş anlamlı `Pointer`).
+- `pointer` (şablon parametresi için bir eşanlamlı `Pointer`).
 
-- `reference` (şablon parametresi için bir eş anlamlı `Reference`).
+- `reference` (şablon parametresi için bir eşanlamlı `Reference`).
 
-Unutmayın `value_type` bir sabit türü olsa bile olmamalıdır **işaretçi** const nesnenin noktalarda **türü** ve başvurusu bir nesnenin const atar **türü**.
+Unutmayın `value_type` sabit türü bile olmamalıdır `pointer` nesnenin noktalarda **const** `Type` ve başvurusu bir nesnenin atar **const** `Type`.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [iterator_traits](../standard-library/iterator-traits-struct.md) bildirme ve türleri yineleyici taban sınıf içinde nasıl kullanılacağını gösteren bir örnek.
+Bkz: [iterator_traits](../standard-library/iterator-traits-struct.md) bildirmek ve yineleyici temel sınıf türleri kullanma örneği için.
 
 ## <a name="requirements"></a>Gereksinimler
 

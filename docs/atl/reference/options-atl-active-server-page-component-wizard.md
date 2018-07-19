@@ -1,5 +1,5 @@
 ---
-title: Seçenekler, ATL Active Server sayfası Bileşen Sihirbazı | Microsoft Docs
+title: ATL Active Server Page bileşeni Sihirbazı, seçenekleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,50 +16,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31549c812b4f523cb8026a0d0b15ae60e31cd1f8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cdd3e62915b81311450cf4d798b04f8df30492ff
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364555"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884606"
 ---
-# <a name="options-atl-active-server-page-component-wizard"></a>Seçenekler, ATL Active Server sayfası Bileşen Sihirbazı
-Daha fazla verimlilik ve nesne için hata desteği için tasarlamak için bu sayfayı ATL etkin sunucu sayfası Bileşen Sihirbazı'nı kullanın.  
+# <a name="options-atl-active-server-page-component-wizard"></a>Seçenekler, ATL Active Server Page bileşeni Sihirbazı
+Daha fazla verimlilik ve nesne için hata desteğe yönelik tasarlanacağını ATL Active Server sayfa bileşeni Sihirbazı, bu sayfayı kullanın.  
   
- ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz: [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md).  
+ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md).  
   
  **İş parçacığı modeli**  
- İş parçacığı yönetme yöntemini gösterir. Varsayılan olarak, projeyi kullanır **grup** iş parçacığı oluşturma.  
+ İş parçacıkları yönetmek için bir yöntemi gösterir. Varsayılan olarak projenin kullandığı **apartman** iş parçacığı oluşturma.  
   
  Bkz: [projenin iş parçacıklı Model belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) daha fazla bilgi için.  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|`Single`|Nesne tek iş parçacıklı model kullandığını belirtir. Çoklu iş parçacığı modeli nesnenin her zaman birincil COM parçacığında çalışır. Bkz: [Single-Threaded grupların](http://msdn.microsoft.com/library/windows/desktop/ms680112) ve [Inprocserver32](http://msdn.microsoft.com/library/windows/desktop/ms682390) daha fazla bilgi için.|  
-|**Grup**|Nesne Apartman iş parçacığı oluşturma kullandığını belirtir. Eşdeğer tek iş parçacığı grubu. Her bir boş iş parçacıklı bileşen nesnesinin ömrü boyunca nesnesi, iş parçacığı için bir grup atanır; Ancak, birden çok iş parçacığı birden fazla nesne kullanılabilir. Her grup için belirli bir iş parçacığı bağlıdır ve bir Windows ileti Pompalama (varsayılan) sahiptir.<br /><br /> Bkz: [Single-Threaded grupların](http://msdn.microsoft.com/library/windows/desktop/ms680112) daha fazla bilgi için.|  
-|**Her ikisi**|Nesne grubu ya da boş iş parçacığı oluşturma, oluşturulduktan bir iş parçacığı hangi tür gelen bağlı olarak kullanabileceğiniz belirtir.|  
-|**Boş**|Nesne serbest iş parçacığı oluşturmayı kullandığını belirtir. Boş iş parçacığı oluşturma için çoklu iş parçacığı apartman modeli eşdeğerdir. Bkz: [birden çok iş parçacıklı grupların](http://msdn.microsoft.com/library/windows/desktop/ms693421) daha fazla bilgi için.|  
-|**Nötr**|Nesne birden çok iş parçacıklı grupların yönelik yönergeleri takip eder, ancak iş parçacığı her türlü yürütebilir belirtir.|  
+|**Tek**|Nesne tek iş parçacıklı model kullandığını belirtir. Tek iş parçacığı modelinde, bir nesneyi her zaman birincil COM iş parçacığında çalışır. Bkz: [Single-Threaded apartmanlar](http://msdn.microsoft.com/library/windows/desktop/ms680112) ve [Inprocserver32](http://msdn.microsoft.com/library/windows/desktop/ms682390) daha fazla bilgi için.|  
+|**Grup**|Nesne grubu iş parçacığı kullandığını belirtir. Eşdeğer tek iş parçacığı grubu. Her nesne bir boş iş parçacıklı bileşen nesne ömrü için kendi iş parçacığı için bir grup atanır; Ancak, birden çok iş parçacığı, birden çok nesne için kullanılabilir. Her grup, belirli bir iş parçacığına bağlıdır ve bir Windows ileti pompası (varsayılan) sahiptir.<br /><br /> Bkz: [Single-Threaded apartmanlar](http://msdn.microsoft.com/library/windows/desktop/ms680112) daha fazla bilgi için.|  
+|**Her ikisi de**|Nesne grubu ya da boş iş parçacığı, oluşturulduktan bir iş parçacığının hangi tür gelen bağlı olarak kullanabileceğiniz belirtir.|  
+|**Ücretsiz**|Nesneyi serbest iş parçacığı oluşturma kullandığını belirtir. Ücretsiz iş parçacığı için bir çoklu iş parçacığı apartman modeli eşdeğerdir. Bkz: [birden çok iş parçacıklı apartmanlar](http://msdn.microsoft.com/library/windows/desktop/ms693421) daha fazla bilgi için.|  
+|**Nötr**|Nesne birden çok iş parçacıklı apartmanlar yönelik yönergeleri takip eder, ancak iş parçacığı herhangi bir türden yürütebilirsiniz belirtir.|  
   
  **Toplama**  
- Nesne kullanıp kullanmadığını belirten [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558). Hangi istemcilere göstermek için arabirimleri toplama bir nesne seçer ve onları toplama bir nesne uygulanırsa, gibi arabirimler gösterilir. Birleşik nesnesinin istemciler yalnızca toplama bir nesne ile iletişim kurar.  
+ Nesne kullanıp kullanmadığını gösteren [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558). Toplama nesnesine hangi istemcilere göstermek için arabirimleri seçer ve toplama nesnesi bunlar yönetimlerini uygularsanız gibi arabirimler gösterilir. Toplama nesnesi, istemciler yalnızca toplama nesnesi ile iletişim kurar.  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**Evet**|Nesne kümelenebilir belirtir. Varsayılan.|  
-|**Yok**|Nesne olmayan toplanır belirtir.|  
-|**yalnızca**|Nesne toplanması gereken belirtir.|  
+|**Evet**|Nesnenin toplanabilir belirtir. Varsayılan.|  
+|**Yok**|Nesne değil toplanır belirtir.|  
+|**Yalnızca**|Nesne toplanması gereken belirtir.|  
   
  **Destek**  
  (Eklenecek öğe açıklaması)  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**ISupportErrorInfo**|Desteği oluşturur [ISupportErrorInfo](../../atl/reference/isupporterrorinfoimpl-class.md) nesne istemciye hata bilgilerini dönebilmeniz arabirim.|  
-|**Bağlantı noktaları**|Bağlantı noktaları, nesne için nesnenin sınıf türetin yaparak etkinleştirir [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md).|  
-|**Ücretsiz iş parçacıklı Sıralayıcı**|Aynı işlemde iş parçacıkları arasında verimli bir şekilde arabirimi işaretçilerini sıralama için ücretsiz iş parçacıklı Sıralayıcı nesnesi oluşturur. Ya da belirtme nesne için kullanılabilen **her ikisi de** veya **serbest** iş parçacığı modeli olarak.|  
+|`ISupportErrorInfo`|Desteği oluşturur [ISupportErrorInfo](../../atl/reference/isupporterrorinfoimpl-class.md) istemciye hata bilgilerini nesnenin dönebilmeniz arabirim.|  
+|**Bağlantı noktaları**|Nesneniz için bağlantı noktaları, nesnenin sınıfı türetilen yaparak sağlar [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md).|  
+|**Ücretsiz iş parçacıklı Sıralayıcı**|Aynı işlemdeki iş parçacıkları arasında verimli bir şekilde arabirim işaretçilerini sıralama bir ücretsiz iş parçacıklı bir Sıralayıcı nesnesini oluşturur. Belirtme nesne için kullanılabilen **hem** veya **ücretsiz** iş parçacığı modeli olarak.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL Active Server sayfası Bileşen Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md)   
- [ATL Active Server sayfası bileşeni](../../atl/reference/adding-an-atl-active-server-page-component.md)
+ [ATL Active Server Page bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md)   
+ [ATL Active Server Page bileşeni](../../atl/reference/adding-an-atl-active-server-page-component.md)
 

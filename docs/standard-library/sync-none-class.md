@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 540f5085d1f2ab3b641e023654d05f1e9e66bae2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9fe7672a925105bff3b63032a709353388143c0c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857343"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953016"
 ---
 # <a name="syncnone-class"></a>sync_none Sınıfı
 
@@ -51,12 +51,12 @@ class sync_none
 |Üye işlevi|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bir bellek bloğu ayırır.|
-|[Serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|
-|[equals](#equals)|Eşitlik için iki önbellekleri karşılaştırır.|
+|[Serbest Bırak](#deallocate)|Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.|
+|[equals](#equals)|Eşitlik için iki önbellekler karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<allocators >
+**Başlık:** \<ayırıcılar >
 
 **Namespace:** stdext
 
@@ -72,15 +72,15 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`count`|Ayrılacak dizideki öğelerin sayısı.|
+|*Sayısı*|Ayrılacak dizideki öğelerin sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `cache.allocate(count)`, burada `cache` önbellek nesnesidir.
+Üye işlevinin döndürdüğü `cache.allocate(count)`burada `cache` önbellek nesnesi.
 
 ## <a name="deallocate"></a>  sync_none::deallocate
 
-Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.
+Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -90,16 +90,16 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`ptr`|Depolama biriminden bırakılmasına ilk nesne için bir işaretçi.|
-|`count`|Depolama biriminden bırakılmasına nesnelerin sayısı.|
+|*ptr*|Depolama alanından serbest bırakılması ilk nesneye bir işaretçi.|
+|*Sayısı*|Depolama alanından serbest bırakılması nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrılarını `cache.deallocate(ptr, count)`, burada `cache` önbellek nesnesini temsil eder.
+Üye işlev çağrıları `cache.deallocate(ptr, count)`burada `cache` önbellek nesnesini temsil eder.
 
 ## <a name="equals"></a>  sync_none::Equals
 
-Eşitlik için iki önbellekleri karşılaştırır.
+Eşitlik için iki önbellekler karşılaştırır.
 
 ```cpp
 bool equals(const sync<Cache>& Other) const;
@@ -109,15 +109,15 @@ bool equals(const sync<Cache>& Other) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Cache`|Eşitleme filtresi önbellek nesnesi.|
-|`Other`|Eşitlik için karşılaştırmak için önbellek nesnesi.|
+|*Önbellek*|Eşitleme filtresi önbellek nesnesi.|
+|*Diğer*|Eşitlik için karşılaştırma için önbellek nesnesi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlev her zaman döndürür `true`.
+Üye işlevi her zaman döndürür **true**.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

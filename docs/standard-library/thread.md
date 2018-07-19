@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5558f1e7998cca1efd64fbc5ee0ad39cc40ee2a6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ef5470d7c7e83c260f44d723665d5d9c0a5ad061
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858620"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953035"
 ---
 # <a name="ltthreadgt"></a>&lt;thread&gt;
 
-Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread` ve çeşitli destekleyici işlevler.
+Standart üst bilgiyi dahil \<iş parçacığı > sınıfını tanımlamak için **iş parçacığı** ve çeşitli destekleyici işlevler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,9 +34,9 @@ Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Kullanarak derlenmiş kod **/CLR**, bu başlığı engellenir.
+> Derlenmiş kodda **/CLR**, bu başlığı engellenir.
 
-`__STDCPP_THREADS__` Makrosu iş parçacıklarını bu üstbilgisi tarafından desteklendiğini belirtmek için sıfır olmayan bir değer olarak tanımlanır.
+`__STDCPP_THREADS__` Makrosu, iş parçacıkları bu üstbilgisi tarafından desteklendiğini belirten sıfır olmayan bir değer olarak tanımlanır.
 
 ## <a name="members"></a>Üyeler
 
@@ -44,35 +44,35 @@ Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[thread Sınıfı](../standard-library/thread-class.md)|İnceleyin ve bir iş parçacığı bir uygulamada yürütme yönetmek için kullanılan nesneyi tanımlar.|
+|[thread Sınıfı](../standard-library/thread-class.md)|İnceleyin ve bir iş parçacığı, bir uygulamada yönetmek için kullanılan nesneyi tanımlar.|
 
 ### <a name="public-structures"></a>Genel yapılar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[hash Yapısı (C++ Standart Kitaplığı)](../standard-library/hash-structure-stl.md)|Benzersiz olarak tarafından belirlenen bir değer döndüren bir üye işlevi tanımlayan bir `thread::id`. Üye işlevini tanımlayan bir [karma](../standard-library/hash-class.md) eşleme türü değerleri için uygun işlevi `thread::id` dizin değerlerin bir dağıtım.|
+|[hash Yapısı (C++ Standart Kitaplığı)](../standard-library/hash-structure-stl.md)|Benzersiz tarafından belirlenen bir değer döndüren bir üye işlev tanımlayan bir `thread::id`. Üye işlevini tanımlayan bir [karma](../standard-library/hash-class.md) eşleme türü değerleri için uygun işlevi `thread::id` dizin değerlerinin dağıtımına.|
 
-### <a name="public-functions"></a>Genel işlevler
+### <a name="public-functions"></a>Genel işlevleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get_id](../standard-library/thread-functions.md#get_id)|Geçerli yürütme iş parçacığı benzersiz olarak tanımlar.|
-|[sleep_for](../standard-library/thread-functions.md#sleep_for)|Çağıran iş parçacığı engeller.|
-|[sleep_until](../standard-library/thread-functions.md#sleep_until)|Çağıran iş parçacığı en az belirtilen zamana kadar engeller.|
-|[Değiştirme](../standard-library/thread-functions.md#swap)|İki durumlarını alış verişleri `thread` nesneleri.|
-|[yield](../standard-library/thread-functions.md#yield)|Geçerli iş parçacığının normal şekilde çalışmaya devam eder olsa bile diğer iş parçacıklarını çalıştırmak için işletim sistemi işaret eder.|
+|[get_id](../standard-library/thread-functions.md#get_id)|Geçerli iş parçacığı yürütme benzersiz olarak tanımlar.|
+|[sleep_for](../standard-library/thread-functions.md#sleep_for)|Çağıran iş parçacığını engeller.|
+|[sleep_until](../standard-library/thread-functions.md#sleep_until)|Çağıran iş parçacığını en az belirtilen süre kadar engeller.|
+|[değiştirme](../standard-library/thread-functions.md#swap)|İki durumlarını birbiriyle değiştirir **iş parçacığı** nesneleri.|
+|[yield](../standard-library/thread-functions.md#yield)|Geçerli iş parçacığını normal şekilde çalışmaya devam ediyordu olsa bile işletim sisteminin diğer iş parçacıklarını çalıştırmasını bildirir.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator > = işleci](../standard-library/thread-operators.md#op_gt_eq)|Bir olup olmadığını belirleyen `thread::id` nesnesidir başka eşit veya daha büyük.|
-|[operator > işleci](../standard-library/thread-operators.md#op_gt)|Bir olup olmadığını belirleyen `thread::id` nesnesidir diğerinden daha büyük.|
-|[operator < = işleci](../standard-library/thread-operators.md#op_lt_eq)|Bir olup olmadığını belirleyen `thread::id` nesnesidir değerinden küçük veya eşit başka.|
-|[operator < işleci](../standard-library/thread-operators.md#op_lt)|Bir olup olmadığını belirleyen `thread::id` nesnesi, başka değerinden.|
-|[operator! = işleci](../standard-library/thread-operators.md#op_neq)|İki karşılaştırır `thread::id` eşitsizlik nesneleri.|
-|[operator == işleci](../standard-library/thread-operators.md#op_eq_eq)|İki karşılaştırır `thread::id` nesneleri eşitlik için.|
-|[işleç << işleci](../standard-library/thread-operators.md#op_lt_lt)|Bir metin gösterimini ekler bir `thread::id` bir akış nesnesine.|
+|[operator > = işleci](../standard-library/thread-operators.md#op_gt_eq)|Az olup olmadığını belirler `thread::id` büyüktür veya eşittir başka bir nesne.|
+|[operator > işleci](../standard-library/thread-operators.md#op_gt)|Az olup olmadığını belirler `thread::id` nesnedir diğerinden daha büyük.|
+|[operator < = işleci](../standard-library/thread-operators.md#op_lt_eq)|Az olup olmadığını belirler `thread::id` küçüktür veya eşittir başka bir nesne değil.|
+|[operator < işleci](../standard-library/thread-operators.md#op_lt)|Az olup olmadığını belirler `thread::id` başka bir nesne değil.|
+|[işleç! = işleci](../standard-library/thread-operators.md#op_neq)|İki karşılaştırır `thread::id` nesneleri için eşitsizlik.|
+|[operator == işleci](../standard-library/thread-operators.md#op_eq_eq)|İki karşılaştırır `thread::id` eşitlik için nesneleri.|
+|[işleç << işleci](../standard-library/thread-operators.md#op_lt_lt)|Bir metin temsilini ekler bir `thread::id` bir akış nesnesine.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

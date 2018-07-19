@@ -16,29 +16,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba50965199128726f325fc0dcf9260c6415bf0d9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1e81484f7b40417320078700332b512cbc81d7e6
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948012"
 ---
 # <a name="comptrtgetinterfaceptr"></a>_com_ptr_t::GetInterfacePtr
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Kapsüllenmiş arabirim işaretçisi döndürür.  
+ Kapsüllenmiş arabirim işaretçisini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      Interface* GetInterfacePtr( ) const throw( );   
+Interface* GetInterfacePtr( ) const throw( );   
 Interface*& GetInterfacePtr() throw();  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Olabilir kapsüllenmiş arabirim işaretçisi döndürür **NULL**.  
+ NULL olabilecek kapsüllenmiş arabirim işaretçisini döndürür.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

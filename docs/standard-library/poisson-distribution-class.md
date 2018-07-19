@@ -33,16 +33,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d88359bbf1521ad9fa464f22149c82497101ecb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 108182e7f54453bb88d9ea6e001f672c0c214a2c
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857291"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961632"
 ---
 # <a name="poissondistribution-class"></a>poisson_distribution Sınıfı
 
-Poisson dağılımı oluşturur.
+Bir Poisson dağılımı üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,30 +77,30 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*İnt'i* tamsayı sonuç türü varsayılan olarak `int`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*İnt'i* tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Poisson dağılımı ile kullanıcı tarafından belirtilen tam sayı türü değerleri üreten bir dağıtım şablonu sınıfı tanımlar. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı, bir kullanıcı tarafından belirtilen integral türünden bir Poisson dağılımı değerleri üreten bir dağıtım açıklar. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
 
 ||||
 |-|-|-|
 |[poisson_distribution](#poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|
 |`poisson_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `mean()` depolanan dağıtım parametresinin değeri döndürür *anlamına*.
+Özellik işlevi `mean()` saklı dağıtım parametresinin değeri döndürür *ortalama*.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
 
-`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
 
-`operator()` Üye işlevleri URNG motoru, geçerli parametre paket veya belirtilen parametre paket göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
 
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Poisson dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [dağılımı](http://go.microsoft.com/fwlink/p/?linkid=401112).
+Poisson dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [Poisson dağılımı](http://go.microsoft.com/fwlink/p/?linkid=401112).
 
 ## <a name="example"></a>Örnek
 
@@ -156,7 +156,7 @@ int main()
 
 ```
 
-İlk testi:
+İlk test:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -173,7 +173,7 @@ Distribution for 100 samples:
     5 :
 ```
 
-İkinci test edin:
+İkinci test:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -208,7 +208,7 @@ Distribution for 100 samples:
 
 ## <a name="poisson_distribution"></a>  poisson_distribution::poisson_distribution
 
-Dağıtım oluşturur.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit poisson_distribution(RealType mean = 1.0);
@@ -219,19 +219,19 @@ explicit binomial_distribution(const param_type& parm);
 
 *Ortalama* `mean` dağıtım parametresi.
 
-*parametre* dağıtım oluşturmak için kullanılan parametre yapısı.
+*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < mean`
 
-İlk Oluşturucusu bir nesne oluşturur, depolanan `mean` değeri tutan değeri *anlamına*.
+İlk Oluşturucu bir nesne oluşturur, saklı `mean` değerine değeri *ortalama*.
 
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
 
 ## <a name="param_type"></a>  poisson_distribution::param_type
 
-Dağıtım parametreleri depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -246,13 +246,13 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-Oluşturucu parametreleri için bkz: [poisson_distribution](#poisson_distribution).
+Oluşturucu parametresi için bkz. [poisson_distribution](#poisson_distribution).
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < mean`
 
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

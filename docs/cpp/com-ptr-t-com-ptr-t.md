@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d47cfc48a7d73ca1159c4a1862281c01c16cc11
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f27d6f1a09f46dfb3906825bdf4f2347a02f2d38
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413940"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939077"
 ---
 # <a name="comptrtcomptrt"></a>_com_ptr_t::_com_ptr_t
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturan bir `_com_ptr_t` nesnesi.  
+ Oluşturur bir `_com_ptr_t` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -143,31 +143,31 @@ explicit _com_ptr_t(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `pInterface`  
+ *pInterface*  
  Ham arabirim işaretçisi.  
   
- `fAddRef`  
- Varsa **true**, `AddRef` kapsüllenmiş arabirim işaretçisi başvuru sayısını artırmak için çağrılır.  
+ *fAddRef*  
+ TRUE ise `AddRef` kapsüllenmiş arabirim işaretçisinin başvuru sayısını artırmak için çağrılır.  
   
  *CP*  
- A `_com_ptr_t` nesnesi.  
+ A `_com_ptr_t` nesne.  
   
- `p`  
+ *p*  
  Türü bu `_com_ptr_t` nesnesinin akıllı işaretçi türünden farklı olan ham arabirim işaretçisi.  
   
  *varSrc*  
- A `_variant_t` nesnesi.  
+ A `_variant_t` nesne.  
   
- `clsid`  
- **CLSID** bir coclass'ı.  
+ *CLSID*  
+ `CLSID` Si.  
   
- `dwClsContext`  
+ *dwClsContext*  
  Yürütülebilir kodu çalıştırmak için bağlam.  
   
  *lpcStr*  
- Ya da tutan birden çok baytlı bir dize bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.  
+ Bulunduran çok baytlı bir dize bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.  
   
- `pOuter`  
+ *pOuter*  
  İçin dış bilinmeyen [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

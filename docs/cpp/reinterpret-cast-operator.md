@@ -16,14 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd64960469c9c4ca069611f6ebeefeaac8b29ba0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 18a7cdd80c1d7b6b17a988d8f3581c7757f69823
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948116"
 ---
 # <a name="reinterpretcast-operator"></a>reinterpret_cast İşleci
-Herhangi bir işaretçi türü dönüştürülecek hiçbir işaretçi sağlar. Ayrıca herhangi bir işaretçi türü ve tersi yönde dönüştürülecek herhangi bir tam sayı türü sağlar.  
+Herhangi bir işaretçi türü dönüştürülecek herhangi bir işaretçi sağlar. Ayrıca, herhangi bir işaretçi türü ve tersi dönüştürülecek herhangi bir tamsayı türü sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,19 +33,19 @@ reinterpret_cast < type-id > ( expression )
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- B.internet `reinterpret_cast` işleci kolayca güvenli olabilir. İstenen dönüştürme kendiliğinden alt düzey olmadığı sürece, diğer atama işleçleri birini kullanmanız gerekir.  
+ Kötüye kullanımı **reinterpret_cast** işleci kolayca güvenli olabilir. İstenen dönüştürme kendiliğinden alt düzey olmadığı sürece, bir atama işleçleri birini kullanmanız gerekir.  
   
- `reinterpret_cast` İşleci kullanılabilir dönüştürmelerde gibi `char*` için `int*`, veya `One_class*` için `Unrelated_class*`, doğası gereği güvenli olduğu.  
+ **Reinterpret_cast** işleci kullanılabilir dönüştürmeler için gibi `char*` için `int*`, veya `One_class*` için `Unrelated_class*`, doğası gereği güvenli olduğu.  
   
- Sonucunu bir `reinterpret_cast` özgün türüne cast dışında her şey için güvenli bir şekilde kullanılamaz. Diğer kullanımlar, en iyi nonportable.  
+ Sonucu bir **reinterpret_cast** özgün türüne atandığını dışında her şey için güvenli bir şekilde kullanılamaz. Diğer kullanımlar, en iyi nitelikte.  
   
- `reinterpret_cast` İşleci olamaz atama dışarıda **const**, `volatile`, veya **__unaligned** öznitelikleri. Bkz: [const_cast işleci](../cpp/const-cast-operator.md) bu öznitelikler kaldırma hakkında bilgi için.  
+ **Reinterpret_cast** işleci beklenmedik şekilde atayamaz **const**, **geçici**, veya **__unaligned** öznitelikleri. Bkz: [const_cast işleci](../cpp/const-cast-operator.md) bu öznitelikleri kaldırma hakkında bilgi için.  
   
- `reinterpret_cast` İşleci hedef türü null işaretçinin değeri boş işaretçi değeri dönüştürür.  
+ **Reinterpret_cast** işlecini bir null işaretçi değeri hedef türünün boş işaretçi değerine dönüştürür.  
   
- Bir pratik kullanımını `reinterpret_cast` bir değer şekilde iki ayrı bir dizine hangi eşlemeleri değerleri nadiren son yukarı aynı dizinde bir karma işlevi olarak.  
+ Bir pratik kullanımını **reinterpret_cast** hangi şekilde iki farklı bir dizin değeri eşler değerleri nadiren son yedekleme ile aynı dizine bir karma işlevi bulunmaktadır.  
   
-```  
+```cpp 
 #include <iostream>  
 using namespace std;  
   
@@ -84,7 +85,7 @@ Output:
 64829  
 ```  
   
- `reinterpret_cast` İşaretçiyi ayrılmaz bir tür olarak kabul edilmesi izin verir. Sonuç sonra bit-kaydırılacağı uzaklık ve benzersiz bir dizin (benzersiz olasılığı yüksek derecede için) üretmek için kendi kendine XORed. Dizin, bir standart C işlevinin dönüş türü cast türü tarafından sonra kesilir.  
+ **Reinterpret_cast** bir tam sayı türü olarak kabul edilmesi bir işaretçi sağlar. Sonuç ardından bit-kaydırılacağı uzaklık ve (benzersiz olasılığı yüksek derecede için) benzersiz bir dizin üretmek için kendi kendine XORed. Dizin, ardından tarafından döndürülen işlev türüne standart C stili kesilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Atama İşleçleri](../cpp/casting-operators.md)   

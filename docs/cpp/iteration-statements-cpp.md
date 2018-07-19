@@ -15,28 +15,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1973223d6aab44d4c5d8652111d3e6b8251676fb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a8f2853189d6b31b2f3b4e371f3583d3abb6f165
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418919"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939435"
 ---
 # <a name="iteration-statements-c"></a>Yineleme Deyimleri (C++)
-Yineleme deyimleri bazı döngü sonlandırma ölçütleri tabi sıfır veya daha fazla kez yürütülecek deyimleri (veya bileşik deyimler) neden. Bu deyimler bileşik deyimler olduğunda ne zaman dışında sırada yürütülür ya da [sonu](../cpp/break-statement-cpp.md) deyimi veya [devam](../cpp/continue-statement-cpp.md) deyimi karşılaştı.  
+Yineleme deyimleri neden: Bazı döngü sonlandırma ölçütünü tabi sıfır veya daha fazla kez yürütülecek deyimler (veya bileşik deyimlerin). Bu deyimler bileşik deyimler olduğunda bunlar, aşağıdakiler haricinde sırayla yürütülür ya da [sonu](../cpp/break-statement-cpp.md) deyimi veya [devam](../cpp/continue-statement-cpp.md) deyimi karşılaştı.  
   
- C++ dört yineleme deyimleri sağlar — [sırada](../cpp/while-statement-cpp.md), [yapmak](../cpp/do-while-statement-cpp.md), [için](../cpp/for-statement-cpp.md), ve [aralık tabanlı için](../cpp/range-based-for-statement-cpp.md). Bunların her biri sıfır (false), sonlandırma ifadeyi hesaplar kadar veya döngü sonlandırma ile zorlanır kadar tekrarlanan bir **sonu** deyimi. Aşağıdaki tabloda, bu deyimleri ve eylemlerinin özetlenmiştir; her izleyen bölümlerde ayrıntılı olarak ele alınmıştır.  
+ C++, dört yineleme deyimleri sağlar — [sırada](../cpp/while-statement-cpp.md), [yapmak](../cpp/do-while-statement-cpp.md), [için](../cpp/for-statement-cpp.md), ve [aralık tabanlı for](../cpp/range-based-for-statement-cpp.md). Bunların her biri sıfır (false), sonlandırma ifade sonucunu verene kadar veya döngü sonlandırma ile zorlamalı kadar yinelenir bir **sonu** deyimi. Aşağıdaki tabloda, bu deyimler ve eylemlerinin özetlenmiştir; her ayrıntılı olarak bölümlerde ele alınmıştır.  
   
 ### <a name="iteration-statements"></a>Yineleme Deyimleri  
   
-|Deyim|Konumundaki hesaplanan|Başlatma|Artırma|  
+|Deyim|Sırasında değerlendirilen|Başlatma|Artırma|  
 |---------------|------------------|--------------------|---------------|  
-|`while`|Döngü üstündeki|Hayır|Hayır|  
+|**while**|Döngü en üstüne|Hayır|Hayır|  
 |**do**|Alt döngüsü|Hayır|Hayır|  
-|**for**|Döngü üstündeki|Evet|Evet|  
-|**Aralık tabanlı için**|Döngü üstündeki|Evet|Evet|  
+|**for**|Döngü en üstüne|Evet|Evet|  
+|**Aralık tabanlı for**|Döngü en üstüne|Evet|Evet|  
   
- Bir yineleme deyimi deyim bölümü bildirimi olamaz. Ancak, bir bildirimi içeren bileşik bir ifade olabilir.  
+ Bir bildirim deyimi bir yineleme deyiminin bir parçası olamaz. Ancak, bir bildirimi içeren bir bileşik deyim olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)

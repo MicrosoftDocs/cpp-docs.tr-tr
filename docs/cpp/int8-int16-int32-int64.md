@@ -1,5 +1,5 @@
 ---
-title: __int8, __int16, __int32, __int64 | Microsoft Docs
+title: __int8, __int16, __int64 __int32 türünün int | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -24,31 +24,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8083d37d2526820ccd75104f9ee8a748eb5d33bc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 409197ec99a8df9ad1999b20edd1537f10ced085
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948037"
 ---
 # <a name="int8-int16-int32-int64"></a>__int8, __int16, __int32, __int64
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Microsoft C/C++ özellikleri, boyutlandırılmış tamsayı türlerini destekler. 8 - 16-, 32 veya 64 bit tamsayı değişkenleri kullanarak bildirebilirsiniz **__int *** n* tür tanımlayıcısı, burada *n* 8, 16, 32 ya da 64.  
+ Microsoft C/C++ özellikleri, boyutlandırılmış tamsayı türlerini destekler. Kullanarak 8, 16, 32 veya 64-bit tamsayı değişkenleri bildirebilirsiniz **__int *** n* tür tanımlayıcısı, burada *n* 8, 16, 32 veya 64.  
   
  Aşağıdaki örnekte, bu tür boyutlandırılmış tamsayıların her biri için bir değişken bildirilir:  
   
-```  
+```cpp 
 __int8 nSmall;      // Declares 8-bit integer  
 __int16 nMedium;    // Declares 16-bit integer  
 __int32 nLarge;     // Declares 32-bit integer  
 __int64 nHuge;      // Declares 64-bit integer  
 ```  
   
- `__int8`, `__int16` ve `__int32` türleri aynı boyuttaki ANSI türleri ile eşanlamlıdır ve çeşitli platformlarda aynı şekilde çalışan taşınabilir kodlar yazmak için yararlıdır. `__int8` Veri türü olan türüyle eşanlamlı `char`, `__int16` türüyle çalışır **kısa**, ve `__int32` türüyle çalışır `int`. `__int64` Türüdür türüyle eşanlamlı `long long`.  
+ Türleri **__int8**, **__int16**, ve **__int32** eşanlamlıdır aynı sahip ANSI türleri, boyut ve aynı şekilde davranan taşınabilir kod yazmak için yararlıdır birden çok platformda. **__İnt8** veri türü olan türü ile eşanlamlı **char**, **__int16** türüyle eşanlamlıdır **kısa**, ve **__int32 türünün int**  türüyle eşanlamlıdır **int**. **__İnt64** türüdür türüyle eşanlamlıdır **uzun uzun**.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir __int gösterir*xx* parametresi tanıtılması için `int`:  
+ Aşağıdaki örnek, bir __int gösteren*xx* parametresi için yükseltilecek **int**:  
   
-```  
+```cpp 
 // sized_int_types.cpp  
   
 #include <stdio.h>  
@@ -69,9 +70,9 @@ int main()
 func  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Temel türler](../cpp/fundamental-types-cpp.md)   
  [Veri Türü Aralıkları](../cpp/data-type-ranges.md)

@@ -18,46 +18,45 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f683b7ff17a1dd3945f5cb554a7440ab47fad454
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d826ba5a2252ba11a0b9206a0555c7a022a9382c
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948181"
 ---
 # <a name="logical-and-operator-ampamp"></a>Mantıksal AND işleci: &amp;&amp;
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-expression   
-&&  
- expression  
+expression && expression  
   
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Mantıksal AND işleci (**&&**) Boole değeri döndürür **true** her iki işlenen olursa **true** ve döndürür **yanlış** Aksi takdirde. İşlenenler, değerlendirilmeden önce örtük olarak `bool` türüne dönüştürülür ve sonuçta `bool` türü ortaya çıkar. Mantıksal AND soldan sağa birleşim vardır.  
+ Mantıksal AND işleci (**&&**) her iki işlenen de TRUE ise, boolean TRUE değerini döndürür ve aksi takdirde FALSE döndürür. İşlenen örtülü olarak türüne dönüştürülür **bool** önceki değerlendirme ve sonuç türüdür **bool**. Mantıksal AND soldan sağa ilişkilendirilebilirlik vardır.  
   
- Mantıksal AND işleci için işlenen aynı türde olması gerekmez, ancak bunlar olmalıdır tamsayı veya işaretçi türü. İşlenenler, genel olarak ilişkisel veya eşitlik ifadeleridir.  
+ Mantıksal AND işlecinin işlenenleri aynı türde olması gerekmez, ancak bunlar olmalıdır integral veya işaretçi türü. İşlenenler, genel olarak ilişkisel veya eşitlik ifadeleridir.  
   
- İlk işlenen tamamen değerlendirilir ve tüm yan etkileri mantıksal ve ifadesi değerlendirmesi devam etmeden önce tamamlanır.  
+ İlk işleneni tamamen değerlendirilir ve mantıksal AND ifadesi değerlendirmesi devam etmeden önce tüm yan etkiler tamamlanır.  
   
- Yalnızca ilk işleneni (sıfır) true olarak değerlendirilirse ikinci işlenen değerlendirilir. Mantıksal ve ifade false olduğunda bu değerlendirmeyi ikinci işlenen gereksiz değerlendirmesi ortadan kaldırır. Bu kullanabileceğiniz null işaretçi başvurusunun kaldırılmasının, önlemek için aşağıdaki örnekte gösterildiği gibi değerlendirmesi:  
+ Yalnızca ilk işlenen true (sıfırdan farklı) olarak değerlendirilirse, ikinci işlenenin değerlendirilir. Bu değerlendirme mantıksal AND ifadesi false olduğunda ikinci işlenenin değerlendirilmesine ortadan kaldırır. Bu null işaretçisinin başvurusunun kaldırılması, önlemek için aşağıdaki örnekte gösterildiği gibi kısa devre değerlendirmesi:  
   
-```  
+```cpp 
 char *pch = 0;  
 ...  
 (pch) && (*pch = 'a');  
 ```  
   
- Varsa `pch` null (0) ifade sağ tarafındaki değerlendirildiği hiçbir zaman. Bu nedenle, null işaretçi üzerinden atama mümkün değildir.  
+ Varsa `pch` null ifadesinin sağ tarafı (0), hiçbir zaman değerlendirilir. Bu nedenle, bir null işaretçi aracılığıyla atanabilecek mümkün değildir.  
   
-## <a name="operator-keyword-for-"></a>Operator anahtar sözcüğü için & &  
- **Ve** işlecidir metin denk **&&**. Erişim için iki yolla **ve** programlarınızı işleci: üst bilgi dosyasını dahil `iso646.h`, veya ile derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneği.  
+## <a name="operator-keyword-for-"></a>İçin işleç anahtar sözcüğü & &  
+ **Ve** işlecidir öğesinin metin eşdeğeridir **&&**. Erişmenin iki yöntemi vardır **ve** programlarınızda işleci: üstbilgi dosyasını dahil `iso646.h`, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_Logical_AND_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate logical AND  
@@ -78,5 +77,5 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ yerleşik işleçleri öncelik ve birleşim](cpp-built-in-operators-precedence-and-associativity.md) [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler öncelik ve İlişkisellik](cpp-built-in-operators-precedence-and-associativity.md) [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Mantıksal İşleçleri](../c-language/c-logical-operators.md)

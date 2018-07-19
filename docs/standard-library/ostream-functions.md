@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::endl [C++]
 - std::ends [C++]
 - std::flush [C++]
-ms.openlocfilehash: e85ce2728aaaa8ae9b23067bfb1dcbb3ff2db7d0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d30ad23956c978ee47ef447463a0d5422a94d4b9
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855552"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962328"
 ---
 # <a name="ltostreamgt-functions"></a>&lt;ostream&gt; işlevleri
 
@@ -28,11 +28,11 @@ Tanımlanan genel şablon işlevleri bunlar &lt;ostream&gt;. Üye işlevleri iç
 ||||
 |-|-|-|
 |[endl](#endl)|[sona erer](#ends)|[Temizleme](#flush)|
-|[Değiştirme](#swap)|
+|[değiştirme](#swap)|
 
 ## <a name="endl"></a>endl
 
-Bir satır sonlandırır ve arabelleği temizler.
+Bir satır sonlandırır ve arabelleğini aktarır.
 
 ```cpp
 template class<Elem, Tr>
@@ -46,15 +46,15 @@ basic_ostream<Elem, Tr>& endl(
 
 *Ostr* türünde bir nesne **basic_ostream**.
 
-*Tr* nitelikler karakter.
+*Tr* karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir nesne **basic_ostream**.
+Bir nesne türü **basic_ostream**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator çağrıları *Ostr*.[ PUT](../standard-library/basic-ostream-class.md#put)(*Ostr*.[ widen](../standard-library/basic-ios-class.md#widen)('\n')) ve ardından çağırır *Ostr*.[ Flush](../standard-library/basic-ostream-class.md#flush). Döndürdüğü *Ostr*.
+İşleyici çağrıları *Ostr*.[ PUT](../standard-library/basic-ostream-class.md#put)(*Ostr*.[ genişletmek](../standard-library/basic-ios-class.md#widen)('\n')) ve ardından çağırır *Ostr*.[ Flush](../standard-library/basic-ostream-class.md#flush). Döndürür *Ostr*.
 
 ### <a name="example"></a>Örnek
 
@@ -88,17 +88,17 @@ basic_ostream<Elem, Tr>& ends(
 
 *Elem* öğe türü.
 
-*Ostr* türünde bir nesne **basic_ostream**.
+*Ostr* türünde bir nesne `basic_ostream`.
 
-*Tr* nitelikler karakter.
+*Tr* karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir nesne **basic_ostream**.
+Bir nesne türü `basic_ostream`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator çağrıları *Ostr*.[ PUT](../standard-library/basic-ostream-class.md#put)(*Elem*('\0')). Döndürdüğü *Ostr*.
+İşleyici çağrıları *Ostr*.[ PUT](../standard-library/basic-ostream-class.md#put)(*Elem*('\0')). Döndürür *Ostr*.
 
 ### <a name="example"></a>Örnek
 
@@ -134,17 +134,17 @@ basic_ostream<Elem, Tr>& flush(
 
 *Elem* öğe türü.
 
-*Ostr* türünde bir nesne **basic_ostream**.
+*Ostr* türünde bir nesne `basic_ostream`.
 
-*Tr* nitelikler karakter.
+*Tr* karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir nesne **basic_ostream**.
+Bir nesne türü `basic_ostream`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipulator çağrıları *Ostr*.[ Flush](../standard-library/basic-ostream-class.md#flush). Döndürdüğü *Ostr*.
+İşleyici çağrıları *Ostr*.[ Flush](../standard-library/basic-ostream-class.md#flush). Döndürür *Ostr*.
 
 ### <a name="example"></a>Örnek
 
@@ -166,7 +166,7 @@ testing
 
 ## <a name="swap"></a>swap
 
-İki değerlerini alış verişleri **basic_ostream** nesneleri.
+İki değeri birbiriyle değiştirir `basic_ostream` nesneleri.
 
 ```cpp
 template <class Elem, class Tr>
@@ -179,15 +179,15 @@ void swap(
 
 *Elem* öğe türü.
 
-*Tr* nitelikler karakter.
+*Tr* karakter nitelikleri.
 
-*Sol* lvalue başvuru için bir **basic_ostream** nesnesi.
+*Sol* bir lvalue başvurusuna bir `basic_ostream` nesne.
 
-*sağ* lvalue başvuru için bir **basic_ostream** nesnesi.
+*doğru* bir lvalue başvurusuna bir `basic_ostream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi **takas** yürütür `left.swap(right)`.
+Şablon işlevi `swap` yürütür `left.swap(right)`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

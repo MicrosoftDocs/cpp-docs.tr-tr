@@ -19,33 +19,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37badfba693357cb14b34e0f26f717b2ebe8f024
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 61302df754c0657fb201d555c6e7491ba1414f7f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359009"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962949"
 ---
 # <a name="creating-an-atl-project"></a>ATL projesi oluşturma
-ATL projesi oluşturmak için en kolay yolu Win32 Proje klasöründe yer alan ATL Proje Sihirbazı kullanmaktır **yeni proje iletişim kutusu**.  
+Bir ATL projesi oluşturmak için en kolay yolu Win32 Proje klasöründe bulunan ATL projesi Sihirbazı, kullanmaktır **yeni proje iletişim kutusu**.  
   
-### <a name="to-create-an-atl-project-using-the-atl-project-wizard"></a>ATL Proje Sihirbazı'nı kullanarak bir ATL projesi oluşturmak için  
+### <a name="to-create-an-atl-project-using-the-atl-project-wizard"></a>ATL projesi Sihirbazı'nı kullanarak bir ATL projesi oluşturmak için  
   
-1.  Konudaki yönergeleri izleyerek [proje bir Visual C++ Uygulama Sihirbazı oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md).  
+1.  Konu başlığı altındaki yönergeleri [Visual C++ uygulama sihirbazıyla proje oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md).  
   
-2.  Seçin **ATL Proje** ATL Proje Sihirbazı'nı açmak için Şablonlar bölmesinde simgesi.  
+2.  Seçin **ATL projesi** ATL projesi Sihirbazı'nı açmak için şablonlar bölmesindeki simgesi.  
   
-3.  Uygulama ayarlarınızı kullanarak tanımlama [uygulama ayarları](../../atl/reference/application-settings-atl-project-wizard.md) sayfasında `ATL Project Wizard`.  
+3.  Kullanarak uygulama ayarlarınızı tanımlayın [uygulama ayarları](../../atl/reference/application-settings-atl-project-wizard.md) sayfasının `ATL Project Wizard`.  
   
     > [!NOTE]
     >  Sihirbaz tutmak için bu adımı atlayın varsayılan ayarlar.  
   
-4.  Tıklatın **son** Sihirbazı kapatmak ve yeni projeniz geliştirme ortamında açın.  
+4.  Tıklayın **son** sihirbazı kapatın ve geliştirme ortamında yeni projenizi açın.  
   
- Projeniz oluşturulduktan sonra oluşturulan dosyaları görüntüleyebilirsiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için project oluşturulan dosya ReadMe.txt bakın. Dosya türleri hakkında daha fazla bilgi için bkz: [Visual C++ projeleri için oluşturulan dosya türleri](../../ide/file-types-created-for-visual-cpp-projects.md). Yeni ATL Proje ve nasıl değiştirileceğini yapılandırmalar hakkında daha fazla bilgi için bkz: [varsayılan ATL Proje yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).  
+ Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../ide/file-types-created-for-visual-cpp-projects.md). Yapılandırmalar yeni ATL projesi ve ayarların nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [varsayılan ATL projesi yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)   
- [Özellik sayfaları](../../ide/property-pages-visual-cpp.md)   
- [Uygulamaları dağıtma](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Özellik Sayfaları](../../ide/property-pages-visual-cpp.md)   
 

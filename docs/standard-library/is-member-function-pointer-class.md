@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c8f72191a84661749db87958a2c08807c00d446
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 669e6f8d26b8ce6255d1c8195a089d07ff028b64
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845043"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965785"
 ---
 # <a name="ismemberfunctionpointer-class"></a>is_member_function_pointer Sınıfı
 
-Üye işlevi için bir işaretçi türü ise testleri.
+Bir üye işlev işaretçisi türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_member_function_pointer;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` üye işlev işaretçisi olan veya bir `cv-qualified` false tuttuğu üye işlev işaretçisi, aksi takdirde.
+Karşılaştırmasının bir örneği true tutan türü *Ty* bir üye işlev işaretçisi veya `cv-qualified` false tuttuğu üye işlevi işaretçisi, aksi takdirde.
 
 ## <a name="example"></a>Örnek
 

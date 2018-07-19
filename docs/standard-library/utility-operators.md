@@ -1,5 +1,5 @@
 ---
-title: '&lt;yardımcı programı&gt; işleçleri | Microsoft Docs'
+title: '&lt;yardımcı programı&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,23 +20,23 @@ helpviewer_keywords:
 - std::operator&lt; (utility)
 - std::operator&lt;= (utility)
 - std::operator== (utility)
-ms.openlocfilehash: e5ed9d81e4b63dd57ebaf5f41ecc8422eaf166dd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f5dc68dcd2b29b77b54bcc5af7e9dc8e4e79a897
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861616"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962032"
 ---
 # <a name="ltutilitygt-operators"></a>&lt;yardımcı programı&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit değil.
+İşlecin sol tarafındaki çift nesnesi işlecin sağ tarafındaki çifti nesneye eşit olup olmadığını sınar.
 
 ```cpp
 template <class Type>
@@ -48,17 +48,19 @@ constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **çifti.**
+*Sol*  
+ Bir nesne türü `pair`.
 
-`right` Türünde bir nesne `pair`.
+*sağ*  
+ Bir nesne türü `pair`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** çiftleri eşit; değilse **false** çiftleri eşit olması durumunda.
+**doğru** çiftleri eşit; değilse, **false** çiftleri eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kendi ilgili öğelerin her birini eşitse tek çifti için başka bir çift eşittir. İki ilk veya ikinci öğesi bir diğer çifti karşılık gelen öğesine eşit değilse eşit olmayan çiftleridir.
+Her bir ilgili öğeleri eşitse bir çifti için başka bir çift eşittir. İki ilk veya ikinci öğe bir diğer çifti karşılık gelen öğesine eşit değilse eşit çiftleridir.
 
 ### <a name="example"></a>Örnek
 
@@ -107,9 +109,9 @@ The pairs p1 and p2 are not equal.
 The pairs p1 and p3 are equal.
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Sağ taraftaki çifti nesnesi işlecinin sol tarafındaki çifti nesnesi eşitse testleri.
+İşlecin sol tarafındaki çifti nesnesinin işlecin sağ tarafındaki çifti nesneye eşit olup olmadığını sınar.
 
 ```cpp
 template <class T, class U>
@@ -118,9 +120,9 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **çifti.**
+*Sol* türünde bir nesne `pair`.
 
-`right` Türünde bir nesne `pair`.
+*doğru* türünde bir nesne `pair`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -128,7 +130,7 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kendi ilgili öğelerin her birini eşitse tek çifti için başka bir çift eşittir. İşlevi döndürür `left`. **İlk** == `right`. **İlk** && `left`. **İkinci** == `right`. **İkinci**. İki ilk veya ikinci öğesi bir diğer çifti karşılık gelen öğesine eşit değilse eşit olmayan çiftleridir.
+Her bir ilgili öğeleri eşitse bir çifti için başka bir çift eşittir. İşlev döndürür `left`. **İlk** == `right`. **İlk** && `left`. **İkinci** == `right`. **İkinci**. İki ilk veya ikinci öğe bir diğer çifti karşılık gelen öğesine eşit değilse eşit çiftleridir.
 
 ### <a name="example"></a>Örnek
 
@@ -168,9 +170,9 @@ int main( )
 }
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Çift işlecinin sol tarafında nesne sağlayıp sağlamadığını test azdır sağ tarafında çifti nesnesi.
+İşlecin sol tarafta çift nesnesi olup olmadığını test eder çifti nesnesinin işlecin sağ tarafındaki küçüktür.
 
 ```cpp
 template <class T, class U>
@@ -179,19 +181,21 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `pair` işlecinin sol tarafındaki.
+*Sol*  
+ Bir nesne türü `pair` işlecinin sol tarafındaki.
 
-`right` Türünde bir nesne `pair` işlecinin sağ tarafında.
+*sağ*  
+ Bir nesne türü `pair` işlecin sağ tarafındaki.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `pair` işlecinin sol tarafında kesinlikle olan küçük `pair` ; işlecinin sağ tarafında aksi **false**.
+**doğru** varsa `pair` işlecinin sol tarafında kesinlikle olan küçüktür `pair` ; işlecin sağ tarafındaki aksi **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`left` `pair` Nesne kesinlikle olmasını söyledi küçük `right` `pair` , nesne `left` eşit değildir ve küçük `right`.
+`left` `pair` Nesne söyledi kesinlikle olacak şekilde küçüktür `right` `pair` , nesne *sol* eşit değildir ve küçük *doğru*.
 
-Çiftleri Karşılaştırmada değerleri ilk iki çift öğelerden en yüksek önceliğe sahiptir. Bunlar farklıysa, karşılaştırma sonucu çifti karşılaştırması sonucu olarak alınır. İlk öğelerinin değerlerini farklı değilse, ikinci öğelerinin değerlerini karşılaştırılır ve bunların karşılaştırma sonucu çifti karşılaştırması sonucu olarak alınır.
+Çiftleri Karşılaştırmada değerlerin ilk öğesini iki çiftleri en yüksek önceliğe sahiptir. Bunlar farklıysa, Karşılaştırmanın sonucu çiftinin Karşılaştırmanın sonucu kabul edilir. İlk öğe değerlerini farklı değilse, ikinci öğe değerlerini karşılaştırılır ve bunların karşılaştırma sonucu çiftinin Karşılaştırmanın sonucu alınır.
 
 ### <a name="example"></a>Örnek
 
@@ -240,9 +244,9 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Çift işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında çifti nesnesi eşit veya daha az olur.
+İşlecinin sol tarafta çift nesnesi küçük olup olmadığını sınar veya işlecin sağ tarafındaki çift nesnesi eşittir.
 
 ```cpp
 template <class Type>
@@ -254,17 +258,19 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `pair` işlecinin sol tarafındaki.
+*Sol*  
+ Bir nesne türü `pair` işlecinin sol tarafındaki.
 
-`right` Türünde bir nesne `pair` işlecinin sağ tarafında.
+*sağ*  
+ Bir nesne türü `pair` işlecin sağ tarafındaki.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `pair` işlecinin sol tarafında küçük veya buna eşit olduğundan `pair` ; işlecinin sağ tarafında aksi **false**.
+**doğru** varsa `pair` işlecinin sol tarafında daha az veya buna eşit olan `pair` ; işlecin sağ tarafındaki aksi **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çiftleri Karşılaştırmada değerleri ilk iki çift öğelerden en yüksek önceliğe sahiptir. Bunlar farklıysa, karşılaştırma sonucu çifti karşılaştırması sonucu olarak alınır. İlk öğelerinin değerlerini farklı değilse, ikinci öğelerinin değerlerini karşılaştırılır ve bunların karşılaştırma sonucu çifti karşılaştırması sonucu olarak alınır.
+Çiftleri Karşılaştırmada değerlerin ilk öğesini iki çiftleri en yüksek önceliğe sahiptir. Bunlar farklıysa, Karşılaştırmanın sonucu çiftinin Karşılaştırmanın sonucu kabul edilir. İlk öğe değerlerini farklı değilse, ikinci öğe değerlerini karşılaştırılır ve bunların karşılaştırma sonucu çiftinin Karşılaştırmanın sonucu alınır.
 
 ### <a name="example"></a>Örnek
 
@@ -323,9 +329,9 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
-Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi değerinden daha büyük.
+İşlecin sol tarafındaki çifti nesnesinin işlecin sağ tarafındaki çift nesnesi büyük olup olmadığını sınar.
 
 ```cpp
 template <class Type>
@@ -337,19 +343,21 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `pair` işlecinin sol tarafındaki.
+*Sol*  
+ Bir nesne türü `pair` işlecinin sol tarafındaki.
 
-`right` Türünde bir nesne `pair` işlecinin sağ tarafında.
+*sağ*  
+ Bir nesne türü `pair` işlecin sağ tarafındaki.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `pair` işlecinin sol tarafında değerinden kesinlikle büyük olan `pair` ; işlecinin sağ tarafında aksi **false**.
+**doğru** varsa `pair` işlecinin sol tarafında değerinden kesinlikle büyük olan `pair` ; işlecin sağ tarafındaki aksi **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`left` `pair` Nesne değerinden kesinlikle büyük olacak şekilde söyledi `right` `pair` , nesne `left` daha büyük ve eşit değil `right`.
+`left` `pair` Nesne değerinden kesinlikle büyük olacak şekilde söyledi `right` `pair` , nesne *sol* büyükse ve eşit değildir *doğru*.
 
-Çiftleri Karşılaştırmada değerleri ilk iki çift öğelerden en yüksek önceliğe sahiptir. Bunlar farklıysa, karşılaştırma sonucu çifti karşılaştırması sonucu olarak alınır. İlk öğelerinin değerlerini farklı değilse, ikinci öğelerinin değerlerini karşılaştırılır ve bunların karşılaştırma sonucu çifti karşılaştırması sonucu olarak alınır.
+Çiftleri Karşılaştırmada değerlerin ilk öğesini iki çiftleri en yüksek önceliğe sahiptir. Bunlar farklıysa, Karşılaştırmanın sonucu çiftinin Karşılaştırmanın sonucu kabul edilir. İlk öğe değerlerini farklı değilse, ikinci öğe değerlerini karşılaştırılır ve bunların karşılaştırma sonucu çiftinin Karşılaştırmanın sonucu alınır.
 
 ### <a name="example"></a>Örnek
 
@@ -408,9 +416,9 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit veya daha büyük.
+İşlecin sol tarafındaki çift nesnesi büyük veya işlecin sağ tarafındaki çifti nesneye eşit olup olmadığını sınar.
 
 ```cpp
 template <class Type>
@@ -422,17 +430,19 @@ constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne `pair` işlecinin sol tarafındaki.
+*Sol*  
+ Bir nesne türü `pair` işlecinin sol tarafındaki.
 
-`right` Türünde bir nesne `pair` işlecinin sağ tarafında.
+*sağ*  
+ Bir nesne türü `pair` işlecin sağ tarafındaki.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `pair` işlecinin sol tarafında büyüktür veya şuna eşittir: `pair` ; işlecinin sağ tarafında aksi **false**.
+**doğru** varsa `pair` büyüktür veya eşittir işleci sol tarafında olduğu `pair` ; işlecin sağ tarafındaki aksi **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çiftleri Karşılaştırmada değerleri ilk iki çift öğelerden en yüksek önceliğe sahiptir. Bunlar farklıysa, karşılaştırma sonucu çifti karşılaştırması sonucu olarak alınır. İlk öğelerinin değerlerini farklı değilse, ikinci öğelerinin değerlerini karşılaştırılır ve bunların karşılaştırma sonucu çifti karşılaştırması sonucu olarak alınır.
+Çiftleri Karşılaştırmada değerlerin ilk öğesini iki çiftleri en yüksek önceliğe sahiptir. Bunlar farklıysa, Karşılaştırmanın sonucu çiftinin Karşılaştırmanın sonucu kabul edilir. İlk öğe değerlerini farklı değilse, ikinci öğe değerlerini karşılaştırılır ve bunların karşılaştırma sonucu çiftinin Karşılaştırmanın sonucu alınır.
 
 ### <a name="example"></a>Örnek
 

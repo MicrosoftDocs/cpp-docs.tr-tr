@@ -1,5 +1,5 @@
 ---
-title: override tanımlayıcısı | Microsoft Docs
+title: geçersiz kılma belirticisi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d43620ceeb0404c3ad8b10cee3d0a00e7b2f467
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b50ffc096cc710f4028c7effc2dda8822f077f29
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420187"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940660"
 ---
 # <a name="override-specifier"></a>override Tanımlayıcısı
-Kullanabileceğiniz `override` üye bir taban sınıf içinde sanal işlevi geçersiz kılma işlevleri belirlemek için anahtar sözcüğü.  
+Kullanabileceğiniz **geçersiz kılma** üye bir temel sınıf sanal işlevi geçersiz kılan işlevleri tanımlamak için anahtar sözcüğü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,10 +32,10 @@ function-declaration override;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `override` bağlama duyarlı ve yalnızca bir üye işlevi bildirimi sonra kullanıldığında özel anlamı olan; Aksi takdirde, ayrılmış bir anahtar değil.  
+ **geçersiz kılma** duyarlıdır ve yalnızca kullanıldığında özel anlamı olan bir üye işlev bildiriminden sonra kullanılır; Aksi takdirde, ayrılmış bir anahtar değil.  
   
 ## <a name="example"></a>Örnek  
- Kullanım `override` kodunuzda yanlışlıkla devralma davranışı önlemek için. Aşağıdaki örnek, kullanmadan where gösterir `override`, türetilmiş sınıf üye işlevi davranışını değil hedeflenen. Derleyici Hataları bu kodun yayma değil.  
+ Kullanım **geçersiz kılma** kodunuzda yanlışlıkla kalıtım davranışını önlemeye yardımcı olmak için. Aşağıdaki örnek, kullanmadan where gösterir **geçersiz kılma**, türetilen sınıfın üye işlev davranışının aktarmayı şablonlarınızı. Derleyici bu kod için herhangi bir hata vermez.  
   
 ```cpp  
 class BaseClass  
@@ -61,7 +61,7 @@ class DerivedClass: public BaseClass
   
 ```  
   
- Kullandığınızda `override`, derleyici hataları sessizce yeni üye işlevleri oluşturmak yerine oluşturur.  
+ Kullanırken **geçersiz kılma**, derleyici sessiz bir şekilde yeni üye işlevleri oluşturmak yerine hatalar üretir.  
   
 ```cpp  
 class BaseClass  
@@ -89,7 +89,7 @@ class DerivedClass: public BaseClass
   
 ```  
   
- İşlevleri geçersiz kılınamaz ve sınıfları devralınan belirtmek için kullanın [son](../cpp/final-specifier.md) anahtar sözcüğü.  
+ İşlevlerin geçersiz kılınamaz ve sınıfların devralınamaz olduğunu belirtmek için kullanın [son](../cpp/final-specifier.md) anahtar sözcüğü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [final tanımlayıcısı](../cpp/final-specifier.md)   

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Tuple&gt; işlevleri | Microsoft Docs'
+title: '&lt;Tanımlama grubu&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,14 +17,14 @@ helpviewer_keywords:
 - std::get [C++]
 - std::make_tuple [C++]
 - std::tie [C++]
-ms.openlocfilehash: d6f921f85ffc6ef6d7985d66fe8637f044965176
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f0b995c4a966481e02ebd96748b247fd8844f19f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858818"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966413"
 ---
-# <a name="lttuplegt-functions"></a>&lt;Tuple&gt; işlevleri
+# <a name="lttuplegt-functions"></a>&lt;Tanımlama grubu&gt; işlevleri
 
 ||||
 |-|-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "33858818"
 
 ## <a name="get"></a>  Al
 
-Bir öğeyi alır bir `tuple` nesnesi, dizine göre veya (C ++ 14) türüne göre.
+Bir öğeyi alır bir `tuple` nesne, dizin veya (C ++ 14) türüne göre.
 
 ```cpp
 // by index:
@@ -64,19 +64,23 @@ template <class T, class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-`Index` Alınacak öğenin dizini.
+*Index*  
+ Alınacak öğenin dizini.
 
-`Types` Dizideki bildirimi sırayla türleri dizisi bildirildi.
+*Türler*  
+ Bildirim sırasında tanımlama grubu türleri dizisi bildirilmiş.
 
-`T` Alınacak öğenin türü.
+*T*  
+ Alınacak öğenin türü.
 
-`Tuple` Herhangi bir sayıda öğe içeren std::tuple.
+*Tanımlama grubu*  
+ Herhangi bir sayıda öğe içeren std::tuple.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevleri dizin değerinde bir başvuru döndürmek `Index`, veya türünde `T` içinde `tuple` nesnesi.
+Şablon işlevleri değeri dizinindeki bir başvuru döndürmeyi *dizin*, veya tür *T* içinde `tuple` nesne.
 
-Çağırma `get<T>(Tuple)` tanımlama grubu t türünde bir öğe sayısından fazla veya az içeriyorsa derleyici hatası oluşturur
+Çağırma `get<T>(Tuple)` demet t türünde bir öğe sayısından fazla veya az içeriyorsa, bir derleyici hatasına neden olur
 
 ### <a name="example"></a>Örnek
 
@@ -109,7 +113,7 @@ int main() {
 
 ## <a name="make_tuple"></a>  make_tuple
 
-Yapar bir `tuple` öğesi değerlerinden.
+Yapar bir `tuple` öğesi değerlerden.
 
 ```cpp
 template <class T1, class T2, ..., class TN>
@@ -118,15 +122,17 @@ template <class T1, class T2, ..., class TN>
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` Nth işlevi parametresi türü.
+*TN*  
+ Nth işlevi parametrenin türü.
 
-`tN` Nth işlevi parametre değeri.
+*TN*  
+ Nth işlevi parametresinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi döndürür `tuple<V1, V2, ..., VN>(t1, t2, ..., tN)`, burada her tür `Vi` olan `X&` karşılık gelen yazdığınızda `Ti` olan `cv` `reference_wrapper<X>`; Aksi takdirde, bu `Ti`.
+Şablon işlevinin döndürdüğü `tuple<V1, V2, ..., VN>(t1, t2, ..., tN)`, burada her tür `Vi` olduğu `X&` karşılık gelen yazdığınızda `Ti` olduğu `cv` `reference_wrapper<X>`; Aksi takdirde bu `Ti`.
 
-Bir avantajı `make_tuple` depolanmakta nesne türlerini derleyici tarafından otomatik olarak belirlenir ve açıkça belirtilmesi gerekmez. Açık şablon bağımsız değişkenler gibi kullanmayan `make_tuple<int, int>(1, 2)` kullandığınızda `make_tuple` gereksiz yere ayrıntılı olduğundan ve derleme hatasına neden olabilen karmaşık rvalue başvuru sorunlarını ekler.
+Bir avantajı `make_tuple` faydası depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenir ve açıkça belirtilmesi gerekmez. Açık şablon bağımsız değişkenleri gibi kullanmayın `make_tuple<int, int>(1, 2)` kullandığınızda `make_tuple` çünkü gereksiz ayrıntılıdır ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler.
 
 ### <a name="example"></a>Örnek
 
@@ -165,7 +171,7 @@ int main() {
 
 ## <a name="tie"></a>  tie
 
-Yapar bir `tuple` öğesi başvuruları gelen.
+Yapar bir `tuple` öğesi referanslar.
 
 ```cpp
 template <class T1, class T2, ..., class TN>
@@ -174,11 +180,12 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 
 ### <a name="parameters"></a>Parametreler
 
-`TN` Nth tanımlama grubu öğenin temel türü.
+*TN*  
+ Nth demet öğesi temel türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi döndürür `tuple<T1&, T2&, ..., TN&>(t1, t2, ..., tN)`.
+Şablon işlevinin döndürdüğü `tuple<T1&, T2&, ..., TN&>(t1, t2, ..., tN)`.
 
 ### <a name="example"></a>Örnek
 
@@ -223,4 +230,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Tuple >](../standard-library/tuple.md)<br/>
+[\<Tanımlama grubu >](../standard-library/tuple.md)<br/>

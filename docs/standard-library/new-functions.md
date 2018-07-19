@@ -7,12 +7,12 @@ f1_keywords:
 - new/std::nothrow
 - new/std::set_new_handler
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
-ms.openlocfilehash: c52376f504e526c03d4f2c2afd39c029761f3c99
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f930fb43ea554e1dd445dabb382adecc6f67e35f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852614"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964970"
 ---
 # <a name="ltnewgt-functions"></a>&lt;Yeni&gt; işlevleri
 
@@ -22,7 +22,7 @@ ms.locfileid: "33852614"
 
 ## <a name="nothrow"></a>  nothrow
 
-Bir bağımsız değişken olarak kullanılacak bir nesneyi sağlar `nothrow` sürümleri **yeni** ve **silmek**.
+Bir bağımsız değişken olarak kullanılacak nesne sağlar **nothrow** sürümlerini **yeni** ve **Sil**.
 
 ```cpp
 extern const std::nothrow_t nothrow;
@@ -30,7 +30,7 @@ extern const std::nothrow_t nothrow;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne parametre türüyle eşleşecek şekilde işlevi bağımsız değişken olarak kullanılan [std::nothrow_t](../standard-library/nothrow-t-structure.md).
+Nesne parametre türüyle eşleşecek şekilde bir işlev bağımsız değişken olarak kullanılan [std::nothrow_t](../standard-library/nothrow-t-structure.md).
 
 ### <a name="example"></a>Örnek
 
@@ -38,7 +38,7 @@ Bkz: [new işleci](../standard-library/new-operators.md#op_new) ve [new işleci&
 
 ## <a name="set_new_handler"></a>  set_new_handler
 
-Ne zaman çağrılacak olan bir kullanıcı işlevi yükler `operator new` bellek ayıramadı, denemesi başarısız olur.
+Ne zaman çağrılacak olan bir kullanıcı işlevi yükler **new işleci** bellek ayırmak için kendi denemesi başarısız olur.
 
 ```cpp
 new_handler set_new_handler(new_handler Pnew) throw();
@@ -46,15 +46,16 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-`Pnew` Yüklenecek new_handler.
+*Pnew*  
+`new_handler` Yüklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ilk çağrıda ve önceki 0 `new_handler` sonraki çağrılar üzerinde.
+İlk çağrı ve önceki 0 `new_handler` arka arkaya çağrı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev depoları `Pnew` statik olarak [yeni işleyicisi](../standard-library/new-typedefs.md#new_handler) sakladığı, işaretçi ardından işaretçiyi daha önce depolanan değeri döndürür. Yeni işleyici tarafından kullanılan [new işleci](../standard-library/new-operators.md#op_new)( **size_t**).
+İşlev depoları *Pnew* statik olarak [yeni işleyici](../standard-library/new-typedefs.md#new_handler) bu tutar, işaretçi, ardından daha önce işaretçide depolanan değeri döndürür. Yeni işleyici tarafından kullanılan [new işleci](../standard-library/new-operators.md#op_new)(**size_t**).
 
 ### <a name="example"></a>Örnek
 

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::swap (unordered_map/multimap)
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 665bdfd08fffdfcb662c175b9af44b8e9ed42a1a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 76210e9ae860f8a7de0f22db2b7108e90e09e5be
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857317"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965558"
 ---
 # <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; işlevleri
 
@@ -42,19 +42,26 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-`Key` Anahtar türü.
+*Key*  
+ Anahtar türü.
 
-`Ty` Eşlenen türü.
+*Ty*  
+ Eşlenen tür.
 
-`Hash` Karma işlevi nesne türü.
+*Karma*  
+ Karma işlev nesne türü.
 
-`Pred` Eşitlik karşılaştırması işlevi nesne türü.
+*Pred*  
+ Eşitlik karşılaştırma işlevi nesne türü.
 
-`Alloc` Allocator sınıfı.
+*Ayırma*  
+ Ayırıcı sınıf.
 
-`left` Değiştirilecek ilk kapsayıcı.
+*Sol*  
+ Takas etmek için ilk kapsayıcı.
 
-`right` Değiştirilecek ikinci kapsayıcı.
+*sağ*  
+ Takas etmek için ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -129,19 +136,26 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-`Key` Anahtar türü.
+*Key*  
+ Anahtar türü.
 
-`Ty` Eşlenen türü.
+*Ty*  
+ Eşlenen tür.
 
-`Hash` Karma işlevi nesne türü.
+*Karma*  
+ Karma işlev nesne türü.
 
-`Pred` Eşitlik karşılaştırması işlevi nesne türü.
+*Pred*  
+ Eşitlik karşılaştırma işlevi nesne türü.
 
-`Alloc` Allocator sınıfı.
+*Ayırma*  
+ Ayırıcı sınıf.
 
-`left` Değiştirilecek ilk kapsayıcı.
+*Sol*  
+ Takas etmek için ilk kapsayıcı.
 
-`right` Değiştirilecek ikinci kapsayıcı.
+*sağ*  
+ Takas etmek için ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 

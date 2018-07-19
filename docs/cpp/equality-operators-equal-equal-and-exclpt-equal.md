@@ -24,11 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16e4a85f31777581df1a138de6d50b1057253e5b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eaf0c52cc9811e84fab026e333ee3c0808d4effd
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948195"
 ---
 # <a name="equality-operators--and-"></a>Eşitlik İşleçleri: == ve !=
 ## <a name="syntax"></a>Sözdizimi  
@@ -39,18 +40,18 @@ expression != expression
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- İkili eşitlik işleçleri kendi işlenenler katı eşitlik veya eşitsizlik için karşılaştırın.  
+ İkili eşitlik işleçleri işlenenleri katı eşitlik ve eşitsizlik için karşılaştırın.  
   
- Eşitlik işleçleri eşit (`==`) ve eşit değildir (`!=`), ilişkisel işleçleri daha düşük önceliğe sahip, ancak bunlar benzer şekilde davranır. Bu işleçlere sonuç türü olan `bool`.  
+ Eşitlik işleçleri eşit (`==`) ve eşit değildir (`!=`), ilişkisel işleçler daha düşük önceliğe sahip, ancak benzer şekilde davranır. Bu işleçler için sonuç türü **bool**.  
   
- Eşittir işleci (`==`) döndürür **true** (1) ise her iki işlenen aynı değere sahip; Aksi halde döndürür **false** (0). Not-eşittir operatörü (`!=`) döndürür **true** Aksi halde, işlenen aynı değeri; yoksa döndürür **false**.  
+ Eşittir işleci (`==`) döndürür **true** (1) Eğer her iki işlenen de aynı değere sahip; Aksi halde **false** (0). Not-eşittir operatörü (`!=`) döndürür **true** işlenenler aynı değeri; yoksa, aksi halde döndürür **false**.  
   
-## <a name="operator-keyword-for-"></a>Operator anahtar sözcüğü için! =  
- `not_eq` işleci, `!=` öğesinin metin eşdeğeridir. Erişim için iki yolla `not_eq` programlarınızı işleci: üst bilgi dosyasını dahil `iso646.h`, veya ile derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneği.  
+## <a name="operator-keyword-for-"></a>İçin işleç anahtar sözcüğü! =  
+ `not_eq` işleci, `!=` öğesinin metin eşdeğeridir. Erişmenin iki yöntemi vardır `not_eq` programlarınızda işleci: üstbilgi dosyasını dahil `iso646.h`, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_Equality_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -66,9 +67,9 @@ int main() {
 }  
 ```  
   
- Eşitlik işleçleri aynı türde üye işaretçileri karşılaştırabilirsiniz. Bu tür bir Karşılaştırmada işaretçi-üye dönüşümleri gerçekleştirilir. Üye işaretçileri da 0 olarak değerlendirir, sabit bir ifade karşılaştırılabilir.  
+ Eşitlik işleçleri, aynı türde üye işaretçileri karşılaştırabilirsiniz. Böyle bir Karşılaştırmada işaretçi-üye dönüşümleri gerçekleştirilir. Üye işaretçileri için 0 olarak değerlendirilen sabit bir ifade ayrıca karşılaştırılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C İlişkisel ve Eşitlik İşleçleri](../c-language/c-relational-and-equality-operators.md)

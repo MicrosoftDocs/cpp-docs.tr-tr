@@ -1,5 +1,5 @@
 ---
-title: IPersistStorageImpl sınıfı | Microsoft Docs
+title: Ipersiststorageımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -25,18 +25,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18f03ba235fdfc14dba22f1759240bd5fb72bafd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 634a7a7373f6686ad36b645a73613a4ae350bbab
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364668"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884707"
 ---
-# <a name="ipersiststorageimpl-class"></a>IPersistStorageImpl sınıfı
-Bu sınıf uygulayan [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) arabirimi.  
+# <a name="ipersiststorageimpl-class"></a>Ipersiststorageımpl sınıfı
+Bu sınıfın uyguladığı [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) arabirimi.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,7 +46,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Sınıfınız, türetilen `IPersistStorageImpl`.  
   
 ## <a name="members"></a>Üyeler  
@@ -56,19 +56,19 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[IPersistStorageImpl::GetClassID](#getclassid)|Nesnenin CLSID alır.|  
-|[IPersistStorageImpl::HandsOffStorage](#handsoffstorage)|Tüm depolama nesneleri serbest bırakır ve HandsOff moduna nesnesine bildirir. ATL uygulamasını döndürür `S_OK`.|  
-|[IPersistStorageImpl::InitNew](#initnew)|Yeni bir depolama birimi başlatır.|  
-|[IPersistStorageImpl::IsDirty](#isdirty)|Son kaydedilişinden nesnenin veri değişip değişmediğini denetler.|  
-|[IPersistStorageImpl::Load](#load)|Belirtilen depolama biriminden nesnenin özelliklerini yükler.|  
+|[IPersistStorageImpl::HandsOffStorage](#handsoffstorage)|Tüm depolama nesneleri serbest bırakma ve HandsOff moduna girmek için nesne bildirir. ATL uygulamasını S_OK döndürür.|  
+|[IPersistStorageImpl::InitNew](#initnew)|Yeni bir depolama başlatır.|  
+|[IPersistStorageImpl::IsDirty](#isdirty)|Nesne verileri son kez kaydedildiğinden beri değiştirilip değiştirilmediğini denetler.|  
+|[IPersistStorageImpl::Load](#load)|Belirtilen depolama alanından nesnenin özelliklerini yükler.|  
 |[IPersistStorageImpl::Save](#save)|Nesnenin özelliklerini belirtilen depolama alanına kaydeder.|  
-|[IPersistStorageImpl::SaveCompleted](#savecompleted)|Kendi depolama nesnesi yazmak için Normal moduna geri dönebilirsiniz nesneyi bildirir. ATL uygulamasını döndürür `S_OK`.|  
+|[IPersistStorageImpl::SaveCompleted](#savecompleted)|Kendi depolama nesnesine yazmak için Normal moda döndürebilen bir nesne bildirir. ATL uygulamasını S_OK döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IPersistStorageImpl` uygulayan [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) arabirimi, nesne yük istemek üzere bir istemci sağlayan ve bir depolama kullanarak kendi kalıcı veri kaydedin.  
+ `IPersistStorageImpl` uygulayan [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) arabirimi, nesnesi yük istemek üzere bir istemci sağlayan ve kalıcı verilerini bir depolama kullanarak kaydedin.  
   
- Bu sınıfın sınıfı gerektirir `T` uygulaması yapmak için `IPersistStreamInit` arabirimi aracılığıyla kullanılabilen `QueryInterface`. Genellikle bu o sınıfın gelir `T` öğesinden türetilmelidir [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), için bir girdi sağlayın `IPersistStreamInit` içinde [COM eşlemesi](http://msdn.microsoft.com/library/ead2a1e3-334d-44ad-bb1f-b94bb14c2333)ve bir [özellik eşlemesi](http://msdn.microsoft.com/library/bfe30be6-62c3-4dc2-bd49-21ef96f15427) sınıfının kalıcı veri açıklamak için.  
+ Bu sınıfın uygulaması sınıfı gerektirir `T` uygulaması yapmak için `IPersistStreamInit` arabirimi aracılığıyla kullanılabilir `QueryInterface`. Genellikle bu sınıfın başka bir deyişle `T` türetilmesi [Ipersiststreamınitımpl](../../atl/reference/ipersiststreaminitimpl-class.md), sağlamak için bir giriş `IPersistStreamInit` içinde [COM eşlemesi](http://msdn.microsoft.com/library/ead2a1e3-334d-44ad-bb1f-b94bb14c2333)ve bir [özellik eşlemesi](http://msdn.microsoft.com/library/bfe30be6-62c3-4dc2-bd49-21ef96f15427) sınıfın kalıcı veriyi tanımlamak için.  
   
- **İlgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [bir ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
+ **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IPersistStorage`  
@@ -86,56 +86,56 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) Windows SDK.  
+ Bkz: [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) Windows SDK içinde.  
   
 ##  <a name="handsoffstorage"></a>  IPersistStorageImpl::HandsOffStorage  
- Tüm depolama nesneleri serbest bırakır ve HandsOff moduna nesnesine bildirir.  
+ Tüm depolama nesneleri serbest bırakma ve HandsOff moduna girmek için nesne bildirir.  
   
 ```
 STDMETHOD(HandsOffStorage)(void);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK`.  
+ Başarılıysa S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPersistStorage::HandsOffStorage](http://msdn.microsoft.com/library/windows/desktop/ms679742) Windows SDK.  
+ Bkz: [IPersistStorage::HandsOffStorage](http://msdn.microsoft.com/library/windows/desktop/ms679742) Windows SDK içinde.  
   
 ##  <a name="initnew"></a>  IPersistStorageImpl::InitNew  
- Yeni bir depolama birimi başlatır.  
+ Yeni bir depolama başlatır.  
   
 ```
 STDMETHOD(InitNew)(IStorage*);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL uygulamasını temsilci için [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi.  
+ ATL uygulamasını temsilciler için [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi.  
   
- Bkz: [IPersistStorage:InitNew](http://msdn.microsoft.com/library/windows/desktop/ms687194) Windows SDK.  
+ Bkz: [IPersistStorage:InitNew](http://msdn.microsoft.com/library/windows/desktop/ms687194) Windows SDK içinde.  
   
 ##  <a name="isdirty"></a>  IPersistStorageImpl::IsDirty  
- Son kaydedilişinden nesnenin veri değişip değişmediğini denetler.  
+ Nesne verileri son kez kaydedildiğinden beri değiştirilip değiştirilmediğini denetler.  
   
 ```
 STDMETHOD(IsDirty)(void);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL uygulamasını temsilci için [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi.  
+ ATL uygulamasını temsilciler için [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi.  
   
- Bkz: [IPersistStorage:IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910) Windows SDK.  
+ Bkz: [IPersistStorage:IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910) Windows SDK içinde.  
   
 ##  <a name="load"></a>  IPersistStorageImpl::Load  
- Belirtilen depolama biriminden nesnenin özelliklerini yükler.  
+ Belirtilen depolama alanından nesnenin özelliklerini yükler.  
   
 ```
 STDMETHOD(Load)(IStorage* pStorage);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL uygulamasını temsilci için [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi. **Yük** "İçerik" adlı bir akış nesnenin veri almak için kullanır. [Kaydetmek](#save) yöntemi ilk olarak, bu akış oluşturur.  
+ ATL uygulamasını temsilciler için [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi. `Load` nesnenin veri almak için "İçerik" adlı bir akış'ı kullanır. [Kaydet](#save) yöntemi, başlangıçta bu akış oluşturur.  
   
- Bkz: [IPersistStorage:Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) Windows SDK.  
+ Bkz: [IPersistStorage:Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) Windows SDK içinde.  
   
 ##  <a name="save"></a>  IPersistStorageImpl::Save  
  Nesnenin özelliklerini belirtilen depolama alanına kaydeder.  
@@ -145,25 +145,25 @@ STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL uygulamasını temsilci için [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi. Zaman **kaydetmek** ilk adlı, belirtilen depolama "İçerik" adlı bir akış oluşturur. Bu akış ardından sonraki çağrılarında kullanılan **kaydetmek** ve [yük](#load).  
+ ATL uygulamasını temsilciler için [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi. Zaman `Save` ilk adlı, belirtilen depolama alanında "İçerik" adlı bir akış oluşturur. Bu akış ardından sonraki çağrılarda kullanılan `Save` ve [yük](#load).  
   
- Bkz: [IPersistStorage:Save](http://msdn.microsoft.com/library/windows/desktop/ms680680) Windows SDK.  
+ Bkz: [IPersistStorage:Save](http://msdn.microsoft.com/library/windows/desktop/ms680680) Windows SDK içinde.  
   
 ##  <a name="savecompleted"></a>  IPersistStorageImpl::SaveCompleted  
- Kendi depolama nesnesi yazmak için Normal moduna geri dönebilirsiniz nesneyi bildirir.  
+ Kendi depolama nesnesine yazmak için Normal moda döndürebilen bir nesne bildirir.  
   
 ```
 STDMETHOD(SaveCompleted)(IStorage*);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK`.  
+ Başarılıysa S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPersistStorage:SaveCompleted](http://msdn.microsoft.com/library/windows/desktop/ms679713) Windows SDK.  
+ Bkz: [IPersistStorage:SaveCompleted](http://msdn.microsoft.com/library/windows/desktop/ms679713) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Depolar ve akışlar](http://msdn.microsoft.com/library/windows/desktop/aa380352)   
- [IPersistStreamInitImpl sınıfı](../../atl/reference/ipersiststreaminitimpl-class.md)   
- [IPersistPropertyBagImpl sınıfı](../../atl/reference/ipersistpropertybagimpl-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Ipersiststreamınitımpl sınıfı](../../atl/reference/ipersiststreaminitimpl-class.md)   
+ [Ipersistpropertybagımpl sınıfı](../../atl/reference/ipersistpropertybagimpl-class.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;iOS&gt; tür tanımları | Microsoft Docs'
+title: '&lt;iOS&gt; typedefs | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +11,12 @@ f1_keywords:
 - iosfwd/std::wios
 - iosfwd/std::wstreampos
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
-ms.openlocfilehash: 7ee458d0d84b63de52a2840a7a86903afed1704d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d79e3361d58165ac356e2ef75c0a3fd1a4cb4f26
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845992"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963647"
 ---
 # <a name="ltiosgt-typedefs"></a>&lt;iOS&gt; tür tanımları
 
@@ -27,7 +27,7 @@ ms.locfileid: "33845992"
 
 ## <a name="ios"></a>  iOS
 
-Eski iostream kitaplığı ios sınıfından destekler.
+Eski iostream Kitaplığı'ndan ios sınıf destekler.
 
 ```cpp
 typedef basic_ios<char, char_traits<char>> ios;
@@ -35,11 +35,11 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için eş anlamlı türüdür [basic_ios](../standard-library/basic-ios-class.md), türündeki öğeler için özelleştirilmiş `char` varsayılan karakter nitelikler ile.
+Şablon sınıfı için bir eşanlamlı türüdür [basic_ios](../standard-library/basic-ios-class.md), türü öğeler için özelleştirilmiş **char** varsayılan karakter nitelikleri ile.
 
 ## <a name="streamoff"></a>  streamoff
 
-İç işlemleri destekler.
+İç işlemlerini destekler.
 
 ```cpp
 #ifdef _WIN64
@@ -51,11 +51,11 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü işlemleri konumlandırma çeşitli akışında katılan bir bayt uzaklığı depolayan bir nesneyi tanımlayan imzalı bir tamsayıdır. Kendi gösterimi en az 32 değeri BITS içeriyor. Bir akış içinde rastgele bayt konumunu göstermek için mutlaka yeterince büyük değil. Değer **streamoff(-1)** genellikle hatalı uzaklığı gösterir.
+İşlemleri konumlandırma çeşitli stream'de ilgili bir bayt uzaklığı depolayan bir nesne tanımlayan bir işaretli bir tamsayı türüdür. Değer en az 32 bit gösterimine sahiptir. Bir rastgele bayt konumu bir akış içinde temsil etmek için mutlaka yeterli büyüklükte değil. Değer `streamoff(-1)` genellikle hatalı bir uzaklık gösterir.
 
 ## <a name="streampos"></a>  streampos
 
-Arabellek işaretçi veya dosya işaretçisini geçerli konumunu tutar.
+Arabelleğin işaretçisini veya dosya işaretçisi konumunu içerir.
 
 ```cpp
 typedef fpos<mbstate_t> streampos;
@@ -63,7 +63,7 @@ typedef fpos<mbstate_t> streampos;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşanlamlısı türüdür [fpos](../standard-library/fpos-class.md)< `mbstate_t`>.
+Türü eşanlamlıdır [fpos](../standard-library/fpos-class.md)< `mbstate_t`>.
 
 ### <a name="example"></a>Örnek
 
@@ -102,11 +102,11 @@ Akış boyutunu gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeşitli akış işlemleri söz konusu öğelerin sayısını depolayan bir nesneyi tanımlayan bir işaretli tamsayıyı türüdür. Kendi gösterimi en az 16 bit vardır. Bir akış içinde rastgele bayt konumunu göstermek için mutlaka yeterince büyük değil.
+Çeşitli akış işlemleriyle ilgili öğelerin sayısını depolayan bir nesne tanımlayan bir işaretli bir tamsayı türüdür. En az 16 bit gösterimine sahiptir. Bir rastgele bayt konumu bir akış içinde temsil etmek için mutlaka yeterli büyüklükte değil.
 
 ### <a name="example"></a>Örnek
 
-Derleme ve aşağıdaki programı çalıştırma Ara sonra ayarı etkisini görmek için dosya sınama.txt `streamsize`.
+Derleyerek ve çalıştırarak aşağıdaki programın ara sonra ayarının etkisini görmek için dosya test.txt `streamsize`.
 
 ```cpp
 // ios_streamsize.cpp
@@ -126,7 +126,7 @@ int main( )
 
 ## <a name="wios"></a>  wios
 
-Eski iostream kitaplığı wios sınıfından destekler.
+Eski iostream kitaplığı wios sınıftan destekler.
 
 ```cpp
 typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
@@ -134,11 +134,11 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için eş anlamlı türüdür [basic_ios](../standard-library/basic-ios-class.md), türündeki öğeler için özelleştirilmiş `wchar_t` varsayılan karakter nitelikler ile.
+Şablon sınıfı için bir eşanlamlı türüdür [basic_ios](../standard-library/basic-ios-class.md), türü öğeler için özelleştirilmiş **wchar_t** varsayılan karakter nitelikleri ile.
 
 ## <a name="wstreampos"></a>  wstreampos
 
-Arabellek işaretçi veya dosya işaretçisini geçerli konumunu tutar.
+Arabelleğin işaretçisini veya dosya işaretçisi konumunu içerir.
 
 ```cpp
 typedef fpos<mbstate_t> wstreampos;
@@ -146,7 +146,7 @@ typedef fpos<mbstate_t> wstreampos;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşanlamlısı türüdür [fpos](../standard-library/fpos-class.md)< `mbstate_t`>.
+Türü eşanlamlıdır [fpos](../standard-library/fpos-class.md)< `mbstate_t`>.
 
 ### <a name="example"></a>Örnek
 

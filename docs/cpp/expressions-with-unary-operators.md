@@ -16,21 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e1b8db2e02e6ab3e2a70d94ba5f6fe3516e464e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9301d4fdb09c63b7dc8e875e2b03a4990acec054
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416177"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941164"
 ---
 # <a name="expressions-with-unary-operators"></a>Birli İşleçli İfadeler
-Birli işleçleri deyimde yalnızca bir işlenen hareket. Birli işleçleri aşağıdaki gibidir:  
+Birli işleçler yalnızca tek bir işlenen bir ifadede gerçekleştir. Birli işleçleri aşağıdaki gibidir:  
   
--   [İndirection işleci (*)](../cpp/indirection-operator-star.md)  
+-   [Yöneltme işleci (*)](../cpp/indirection-operator-star.md)  
   
 -   [Address-of işleci (&)](../cpp/address-of-operator-amp.md)  
   
--   [Birli artı işleci (+)](../cpp/unary-plus-and-negation-operators-plus-and.md)  
+-   [Tek İşlenenli artı (+)](../cpp/unary-plus-and-negation-operators-plus-and.md)  
   
 -   [Tekli değilleme işleci (-)](../cpp/unary-plus-and-negation-operators-plus-and.md)  
   
@@ -38,7 +38,7 @@ Birli işleçleri deyimde yalnızca bir işlenen hareket. Birli işleçleri aşa
   
 -   [Birinin tamamlama işleci (~)](../cpp/one-s-complement-operator-tilde.md)  
   
--   [Önek arttırma işleci (++)](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)  
+-   [Önek artırma işleci (++)](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)  
   
 -   [Önek azaltma işleci (-)](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)  
   
@@ -54,37 +54,37 @@ Birli işleçleri deyimde yalnızca bir işlenen hareket. Birli işleçleri aşa
   
 -   [delete işleci](../cpp/delete-operator-cpp.md)  
   
- Bu işleçlere sağdan sola birleşim vardır. Birli ifadeler genellikle bir sonek veya birincil ifade önündeki sözdizimi içerir.  
+ Bu işleçler, sağdan sola birleşme özelliği içindedir. Tekli ifade, genellikle bir sonek veya birincil ifade önündeki söz dizimi içerir.  
   
- Olası form birli ifadelerin verilmiştir.  
+ Tekli ifade olası form aşağıda verilmiştir.  
   
--   *sonek ifade*  
+-   *sonek ifadesi*  
   
--   `++` *Tek terimli ifadesi*  
+-   `++` *Tekli ifade*  
   
--   `--` *Tek terimli ifadesi*  
+-   `--` *Tekli ifade*  
   
--   *birli işleç* *cast ifadesi*  
+-   *birli işleç* *atama ifadesi*  
   
--   `sizeof` *Tek terimli ifadesi*  
+-   **sizeof** *tekli ifade*  
   
 -   `sizeof(` *tür adı* `)`  
   
--   `decltype(` *ifade* `)`  
+-   `decltype(` *İfade* `)`  
   
--   *ayırma ifade*  
+-   *ayırma-ifadesi*  
   
--   *ayırmayı kaldırma ifade*  
+-   *ayırmayı kaldırma ifadesi*  
   
- Tüm *sonek ifade* olarak kabul edilir bir *Tek terimli ifadesi*, ve herhangi bir birincil ifade olduğu kabul edildiği için bir *sonek ifade*, tüm birincil ifadeler olduğu kabul bir *Tek terimli ifadesi* de. Daha fazla bilgi için bkz: [sonek ifadeleri](../cpp/postfix-expressions.md) ve [birincil ifadeler](../cpp/primary-expressions.md).  
+ Tüm *sonek ifadesi* değerlendirilir bir *tekli ifade*, ve herhangi bir birincil ifade olduğu kabul edildiği için bir *sonek ifadesi*, olan herhangi bir birincil ifadeler kabul bir *tekli ifade* de. Daha fazla bilgi için [sonek ifadeleri](../cpp/postfix-expressions.md) ve [birincil ifadeler](../cpp/primary-expressions.md).  
   
- A *birli işleç* bir veya daha fazla aşağıdaki simgelerden oluşur: `* & + - ! ~`  
+ A *birli işleç* bir veya daha fazla şu sembollerden biri oluşur: `* & + - ! ~`  
   
- *Cast ifadesi* türünü değiştirmek için isteğe bağlı bir cast ile birli ifadesidir. Daha fazla bilgi için bkz: [atama işleci: ()](../cpp/cast-operator-parens.md).  
+ *Atama ifadesini* türünü değiştirmek için isteğe bağlı bir tür dönüştürme ile birli ifadesidir. Daha fazla bilgi için [atama işleci: ()](../cpp/cast-operator-parens.md).  
   
- Bir *ifade* herhangi bir ifade olabilir. Daha fazla bilgi için bkz: [ifadeleri](../cpp/expressions-cpp.md).  
+ Bir *ifade* herhangi bir ifade olabilir. Daha fazla bilgi için [ifadeleri](../cpp/expressions-cpp.md).  
   
- *Ayırma ifade* başvurduğu `new` işleci. *Ayırmayı kaldırma ifade* başvurduğu `delete` işleci. Daha fazla bilgi için bu konunun önceki kısımlarında bağlantılara bakın.  
+ *Ayırma ifade* başvurduğu **yeni** işleci. *Ayırmayı kaldırma ifade* başvurduğu **Sil** işleci. Daha fazla bilgi için bu konunun önceki kısımlarında bağlantılara bakın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İfade Türleri](../cpp/types-of-expressions.md)

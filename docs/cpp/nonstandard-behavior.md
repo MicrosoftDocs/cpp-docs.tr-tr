@@ -1,5 +1,5 @@
 ---
-title: Standart olmayan davranış | Microsoft Docs
+title: Standart dışı davranış | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,20 +16,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54d421f00839d21236741e8d33f1415fe129b18c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1b7334fdc420c096c42360dd6b75fc400b8b34f3
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420301"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941804"
 ---
 # <a name="nonstandard-behavior"></a>Standart Dışı Davranış
 Aşağıdaki bölümlerde, C++'nın Visual C++ uygulamasının C++ standartıyla uyumlu olmadığı yerlerin bazıları listelenmiştir. Aşağıda verilen bölüm numaraları C++ 11 standartındaki (ISO/IEC 14882:2011(E)) bölüm numaralarına başvurur.  
   
- C++ Standart tanımlanan farklı derleyici sınırları listesi verilen [derleyici sınırları](../cpp/compiler-limits.md).  
+ C++ standartında farklı derleyici sınırlarının listesi verilir [derleyici sınırları](../cpp/compiler-limits.md).  
   
 ## <a name="covariant-return-types"></a>Birlikte Değişken Dönüş Türleri  
- Sanal işlevde bağımsız değişkenlerin bir değişken sayısı olduğunda, sanal taban sınıfları birlikte değişken dönüş türleri olarak desteklenmez. Bu, ISO C++ belirtimi 10.3 bölümü, paragraf 7 ile uyumlu değildir. Aşağıdaki örnek derlenmiyor, derleyici hatası vererek [C2688](../error-messages/compiler-errors-2/compiler-error-c2688.md)  
+ Sanal işlevde bağımsız değişkenlerin bir değişken sayısı olduğunda, sanal taban sınıfları birlikte değişken dönüş türleri olarak desteklenmez. Bu, ISO C++ belirtimi 10.3 bölümü, paragraf 7 ile uyumlu değildir. Aşağıdaki örnek derleme yapmaz, derleyici hatası [C2688](../error-messages/compiler-errors-2/compiler-error-c2688.md)  
   
 ```cpp  
 // CovariantReturn.cpp  
@@ -71,17 +71,17 @@ int main() {
 ```  
   
 ## <a name="function-exception-specifiers"></a>İşlev Özel Durum Belirleyicileri.  
- Özel durum tanımlayıcıları dışında işlev `throw()` Ayrıştırılan ancak kullanılmadı. Bu, ISO C++ belirtiminin 15.4 bölümü ile uyumlu değildir. Örneğin:  
+ Özel durum tanımlayıcıları dışındaki işlev `throw()` ayrıştırılır ancak kullanılmaz. Bu, ISO C++ belirtiminin 15.4 bölümü ile uyumlu değildir. Örneğin:  
   
 ```cpp  
 void f() throw(int); // parsed but not used  
 void g() throw();    // parsed and used  
 ```  
   
- Özel durum belirtimleri hakkında daha fazla bilgi için bkz: [özel durum belirtimleri](../cpp/exception-specifications-throw-cpp.md).  
+ Özel durum belirtimleri hakkında daha fazla bilgi için bkz. [özel durum belirtimleri](../cpp/exception-specifications-throw-cpp.md).  
   
 ## <a name="chartraitseof"></a>char_traits::eof()  
- C++ Standart bildiren [char_traits::eof](../standard-library/char-traits-struct.md#eof) geçerli bir eşleşmelidir değil `char_type` değeri. Visual C++ derleyicisi türü için bu kısıtlamayı zorlar `char`, ancak türü için `wchar_t`. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.  
+ C++ standartı [char_traits::eof](../standard-library/char-traits-struct.md#eof) geçerli bir karşılık gelmelidir değil `char_type` değeri. Visual C++ derleyicisi türü için bu kısıtlamayı zorlar **char**, ancak türü `wchar_t`. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.  
   
 ```cpp  
 #include <iostream>  

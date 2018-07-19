@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55f000ea8458925f8ea3faa4896943e045de127d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8191b572595b8ada96f59357af095baf5d846bc4
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841493"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961727"
 ---
 # <a name="binder1st-class"></a>binder1st Sınıfı
 
-İkili işlevinin ilk bağımsız değişken belirtilen değere bağlama tarafından ikili işlev nesnesi bir birli işlevi nesnesine dönüştürür bir oluşturucu sağlayan bir şablon sınıfı.
+Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,21 +53,21 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-`Func` Birli işlevi nesnesine dönüştürülecek ikili işlev nesnesi.
+*FUNC* birli işlev nesnesi için dönüştürülecek ikili fonksiyon nesnesi.
 
-`left` İlk bağımsız değişken ikili işlev nesnesinin bağlanacak olduğu değeri.
+*Sol* bağlanacak ikili fonksiyon nesnesi ilk bağımsız değişkeni için olan değerdir.
 
-`right` İkinci bağımsız değişkeni sabit değer için uyarlanmış ikili nesne karşılaştırır bağımsız değişkeninin değeri.
+*doğru* uyarlanmış ikili nesne sabit değeri ikinci bağımsız değişkeni olarak karşılaştırır bağımsız değişkeninin değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değerine ilk bağımsız değişken ikili işlev nesnesinin bağlama sonuçları birli işlev nesnesi `left.`
+İkili fonksiyon nesnesi öğesinin ilk bağımsız değişkeninin değeri bağlama gelen sonuçları birli işlev nesnesi *sol*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir ikili işlevi nesnesinin bir kopyasını depolar `Func` içinde **op**ve bir kopyasını `left` içinde **değeri**. Üye işlevini tanımlar `operator()` döndürme olarak **op**( **değeri**, `right`).
+Şablon sınıfı bir ikili fonksiyon nesnesinin bir kopyasını depolar *Func* içinde `op`ve bir kopyasını *sol* içinde `value`. Onun üye işlevini tanımlar `operator()` döndüren olarak **op**( **değer**, `right`).
 
-Varsa `Func` türünde bir nesne **işlemi** ve `c` bir sabit ise [bind1st](../standard-library/functional-functions.md#bind1st) ( `Func`, `c` ) eşdeğerdir `binder1st` sınıfı Oluşturucu `binder1st` \< **işlemi**> ( `Func`, `c` ) ve daha kullanışlıdır.
+Varsa *Func* türünde bir nesnedir `Operation` ve `c` bir sabit ise [bind1st](../standard-library/functional-functions.md#bind1st) ( `Func`, `c` ) değerine eşdeğer olan `binder1st` sınıf oluşturucusu `binder1st` \< **İşlemi**> ( `Func`, `c` ) ve daha kolay.
 
 ## <a name="example"></a>Örnek
 
@@ -121,7 +121,7 @@ The number of elements in v1 less than 10 is: 2.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84cc8ade8d844b591d6cb848ebee0fb3b05fb932
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5c0e37eb0eaa7f0a6e40f385315822742f15516e
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33851908"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962377"
 ---
 # <a name="isscalar-class"></a>is_scalar Sınıfı
 
-Tür skaler ise testleri.
+Skalar türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_scalar;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` bir tam sayı türü bir kayan noktası türü, bir numaralandırma türü, bir işaretçi türü veya bir işaretçi üye türü için veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimidir.
+Karşılaştırmasının bir örneği true tutar türü *Ty* bir Entegral türü olduğunda, bir değişken türü, bir numaralandırma türü, bir işaretçi türü veya bir işaretçi üye türüne işaret veya `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimi.
 
 ## <a name="example"></a>Örnek
 

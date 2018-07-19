@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02afac78de5eb5908d477f8503ceeebffe46f672
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 21f2da8c10b9b796740144f81d0390f1af124cab
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412588"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37942061"
 ---
 # <a name="comerrorerror"></a>_com_error::Error
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Alır `HRESULT` oluşturucuya geçirilen.  
+ Oluşturucuya geçirilen HRESULT alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,12 +38,12 @@ HRESULT Error( ) const throw( );
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Ham `HRESULT` öğesi oluşturucuya geçirilen.  
+ Ham HRESULT öğesi, oluşturucuya geçirilen.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kapsüllenmiş alır `HRESULT` öğesi bir `_com_error` nesnesi.  
+ Kapsüllenmiş HRESULT öğeyi alır bir `_com_error` nesne.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_error Sınıfı](../cpp/com-error-class.md)

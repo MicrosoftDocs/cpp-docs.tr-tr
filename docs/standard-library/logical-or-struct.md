@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9591e11774550f198de601f36fce0350f76cf6bd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4cef7f0b51d9dc7a44e6dbc45c32f1296825ca30
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852103"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961512"
 ---
 # <a name="logicalor-struct"></a>logical_or Yapısı
 
-Mantıksal ayrım işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi ( `operator||`) bağımsız değişkenlerini üzerinde.
+Mantıksal ayrılma işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi ( `operator||`) üzerinde bağımsız değişkenleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,19 +49,19 @@ struct logical_or<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type`, `T`, `U` Destekleyen herhangi bir türü bir `operator||` türündeki işlenenler belirtilen veya çıkarsanan alır.
+*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator||` , belirtilen veya çıkarsanan tür işlenen alır.
 
-`Left` Mantıksal ayrım işlemi sol işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `T`.
+*Sol* mantıksal veya işlecini işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-`Right` Mantıksal ayrım işlemi sağ işleneni. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `U`.
+*Sağ* mantıksal ayrılma işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left || Right`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator||`.
+Sonucu `Left || Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator||`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanıcı tanımlı türler için var. hiçbir işleneni değerlendirmesi kısa devre Her iki değişken tarafından değerlendirilir `operator||`.
+Kullanıcı tanımlı türler için var. hiçbir işlenen değerlendirmesini kısa devre Her iki bağımsız değişkenleri tarafından değerlendirilir `operator||`.
 
 ## <a name="example"></a>Örnek
 
@@ -125,7 +125,7 @@ The deque which is the disjuction of d1 & d2 is:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

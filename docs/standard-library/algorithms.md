@@ -18,48 +18,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c67a509c17558c7b388aa288612d73ea26062ec0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5338ddeb802d13d100e5e3026152793f866c90f6
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846668"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961031"
 ---
 # <a name="algorithms"></a>Algoritmalar
 
-Algoritmalar, C++ Standart Kitaplığı, temel bir parçasıdır. Algoritmalar kapsayıcıları kendilerini ile ancak bunun yerine yineleyiciler çalışmaz. Bu nedenle, aynı algoritmayı çoğu değilse tarafından tüm C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Bu bölüm, C++ Standart Kitaplığı algoritmalarının terminoloji ve kuralları açıklar.
+Algoritmalar, C++ Standart Kitaplığı, temel bir parçasıdır. Algoritmalar, kendilerini kapsayıcılar ile ancak yineleyiciler yerine ile çalışmaz. Bu nedenle, aynı algoritmayı en değilse tarafından tüm C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Bu bölüm, C++ Standart Kitaplığı algoritmaları terminoloji ve kuralları açıklar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Algoritma şablon işlevleri açıklamalarını birkaç kestirme tümcecikleri birkaçını:
+Algoritma şablon işlevleri açıklamalarını birkaç toplu ifadeleri kullanın:
 
-- Tümcecik "aralığında [*A*, *B*)" ile başlayan sıfır veya daha fazla ayrık değerler dizisi anlamına gelir *A* kadar ancak dahil değil *B*. Bir aralığı geçerli yalnızca *B* gelen erişilebildiğinden *A;* depolayabileceğiniz *A* nesnedeki *N* (*N*  =  *A*), sıfır veya daha fazla kez nesne Artır (++*N*), ve eşit Karşılaştır nesnesi *B* artışlarla sınırlı sayıda sonra (N B==*).*
+- Tümcecik "aralıktaki [*A*, *B*)" ile başlayan sıfır veya daha fazla ayrık değerler dizisi anlamına gelir *bir* kadar ancak dahil değil *B*. Geçerli bir aralık olduğundan yalnızca *B* Sunucusu'ndan olan *A;* depolayabilir miyim *bir* nesnedeki *N* (*N*  =  *A*), nesne sıfır veya daha fazla kez Artır (++*N*), ve eşit Karşılaştır nesnesinin *B* sınırlı bir artış sayısını sonra (N B==*).*
 
-- Tümcecik "her *N* aralığında [*A*, *B*)" anlamına *N* değerle başlayan *A* ve değerine eşit kadar sıfır veya daha fazla kez artar *B*. Durum *N* == *B* aralığında değil.
+- İfade "her *N* aralıktaki [*A*, *B*)" anlamına gelir *N* değer ile başlayan *A* ve sıfır veya daha fazla kez değere eşit kadar artırılır *B*. Durum *N* == *B* aralığında değil.
 
-- Tümcecik "en düşük değerini *N* aralığında [*A*, *B*) gibi *X*" koşul anlamına *X*her biri için belirlenen *N* aralığında [*A*, *B*) koşul kadar *X* karşılanır.
+- İfade "en düşük değerini *N* aralıktaki [*A*, *B*) gibi *X*" koşul anlamına *X*her biri için belirlenen *N* aralıktaki [*A*, *B*) koşul kadar *X* karşılanır.
 
-- Tümcecik "en yüksek değeri *N* aralığında [*A*, *B*) gibi *X* anlamına *X* olduğu her biri için belirlenen *N* aralığında [*A*, *B*). İşlev depolar `K` bir kopyasını *N* koşul her zaman *X* karşılanır. Bu tür bir depolama meydana gelirse, işlevi son değerini değiştirir *N*, hangi eşittir *B*, değeriyle `K`. Çift yönlü veya rasgele erişim Yineleyici, ancak bu, anlamına da gelebilir *N* aralığındaki en yüksek değer ile başlar ve aralığında kadar koşul düşülür *X* karşılanır.
+- İfade "en yüksek değeri *N* aralıktaki [*A*, *B*) gibi *X* anlamına *X* olduğu her biri için belirlenen *N* aralıktaki [*A*, *B*). İşlev depolar `K` bir kopyasını *N* koşul her zaman *X* karşılanır. Bu tür bir depolama ortaya çıkarsa, işlev son değerini değiştirir *N*, hangi eşittir *B*, değeriyle `K`. Çift yönlü veya rastgele erişim yineleyicisini, ancak bu, anlamına da gelebilir *N* aralıktaki en yüksek değeri ile başlayan ve koşul kadar aralığında azaltılır *X* karşılanır.
 
-- İfadeler gibi *X* - *Y*, burada *X* ve *Y* tasarlanmıştır, rastgele erişim yineleyiciler dışında yineleyiciler olabilir Matematik anlamda. İşlev işleci değerlendirmek değil**-** varsa bu tür bir değer belirlemelisiniz. Aynı ayrıca ifadeler için doğru olduğu gibi *X* + *N* ve *X* - *N*, burada *N*  bir tamsayı türüdür.
+- İfadeler gibi *X* - *Y*burada *X* ve *Y* yöneliktir, rasgele erişim yineleyicileri dışında yineleyiciler olabilir matematiksel anlamda. İşlev işleci değerlendirmek değil**-** varsa, bu tür bir değer belirlemelisiniz. Aynı de gibi ifadeler için geçerlidir *X* + *N* ve *X* - *N*burada *N*  bir tamsayı türüdür.
 
-Çeşitli algoritmalar olun ile gibi ikili karşılaştırma gerçekleştiren bir koşul kullanımı `operator==`, elde etmek üzere bir `bool` sonucu. Koşul işlevi `operator==`, ya da ona ait tüm değiştirme gerekir değiştirmemesi işlenenleri birini. Aynı verim gerekir `bool` kabul edilir ve her iki işlenen bir kopyasını işleneni yerine, aynı sonucu verecek gerekir her zaman sonucu.
+Birçok algoritma olun ile olduğu gibi bir ikili karşılaştırma gerçekleştiren bir koşul kullanmak `operator==`, elde etmek üzere bir **bool** sonucu. Koşul işlevi `operator==`, ya da herhangi bir ardılı gerekir değiştirmemesi işlenenleri biri. Aynı yield gerekir **bool** her zaman değerlendirilir ve iki işlenenden kopyası için işlenen konur, aynı sonucu verecek gerekir neden.
 
-Çeşitli algoritmalar olun, bir katı zayıf bir sırasından öğelerinin çiftleri sıralama zorunlu tuttukları gerekir bir koşulun kullanın. Koşul için `pr`(*X*, *Y*):
+Birçok algoritma olun katı bir zayıf çiftlerini dizisinin öğelerinin sıralama dayatır bir koşul kullanın. Koşul için `pr`(*X*, *Y*):
 
-- Strict anlamına `pr`(*X*, *X*) yanlış.
+- Katı anlamına `pr`(*X*, *X*) yanlış.
 
-- Zayıf anlamına *X* ve *Y* eşdeğer bir sıralama konusuysa!`pr` (*X*, *Y*) & &!`pr` (*Y*, *X*) (*X* == *Y* tanımlanması gerekmez).
+- Zayıf anlamına *X* ve *Y* eşdeğer bir sıralama söz konusuysa!`pr` (*X*, *Y*) & &!`pr` (*Y*, *X*) (*X* == *Y* tanımlanması gerekmez).
 
 - Sıralama anlamına `pr`(*X*, *Y*) & & `pr`(*Y*, Z) gelir `pr`(*X*, Z).
 
-Bu algoritmalar bazıları örtük olarak koşulu kullanmak *X* \< *Y*. Genellikle gereksinim sıralama katı zayıf karşılamak diğer koşulları olan *X* > *Y*, **daha az**(*X*,  *Y*), ve `greater`(*X*, *Y*). Unutmayın, ancak bu doğrulamaları gibi *X* \< =  *Y* ve *X* >= *Y* uygun olmadığı Bu gereksinim.
+Bu algoritmalar bazıları örtük olarak koşul kullanmak *X* \< *Y*. Gereksinim sıralama katı zayıf genellikle karşılayan diğer koşullar olan *X* > *Y*, `less`(*X*, *Y*), ve `greater`(*X*, *Y*). Unutmayın, Bununla birlikte, doğrulamaları gibi *X* \< =  *Y* ve *X* >= *Y* karşılamaz Bu gereksinim.
 
-Yineleyiciler aralığında belirlenen öğeleri dizisi [`First`, `Last`) operatörü tarafından sıralanan sırası**<** her IF *N* aralığında [0, `Last`  -  `First`) ve her *M* aralığında (N `Last`  -  `First`) koşulu! () \*(`First` + *M*) < \*(*ilk* + *N*)) geçerlidir. (Öğeleri artan düzende sıralanır unutmayın.) Koşul işlevi **işleci <**, ya da ona ait tüm değiştirme gerekir değiştirmemesi işlenenleri birini. Aynı verim gerekir `bool` kabul edilir ve her iki işlenen bir kopyasını işleneni yerine, aynı sonucu verecek gerekir her zaman sonucu. Ayrıca, katı bir zayıf onu karşılaştırır işlenen üzerinde sıralama koymak gerekir.
+Aralıktaki yineleyiciler tarafından atanan öğe dizisi [`First`, `Last`) işleciyle sıralı bir dizisi olduğundan**<** her ise *N* aralıktaki [0, `Last`  -  `First`) ve her *M* aralığındaki (N `Last`  -  `First`) koşul! () \*(`First` + *M*) < \*(*ilk* + *N*)) geçerlidir. (Öğeleri artan düzende sıralanır unutmayın.) Koşul işlevi `operator<`, ya da herhangi bir ardılı gerekir değiştirmemesi işlenenleri biri. Aynı yield gerekir `bool` her zaman değerlendirilir ve iki işlenenden kopyası için işlenen konur, aynı sonucu verecek gerekir neden. Ayrıca, katı bir zayıf karşılaştırır, işlenenler üzerinde sıralama dayatır gerekir.
 
-Yineleyiciler aralığında belirlenen öğeleri dizisi [`First`, `Last`) yığın göre sıralanmış **işleci <** her IF *N* aralığında [1, `Last`  -  `First`) koşulu! (\*`First` < \*(`First` + *N*)) geçerlidir. (İlk öğesi, en büyük olur.) İç yapısını Aksi halde yalnızca şablon işlevleri bilinen [make_heap](../standard-library/algorithm-functions.md#make_heap), [pop_heap](../standard-library/algorithm-functions.md#pop_heap), ve [push_heap](../standard-library/algorithm-functions.md#push_heap). Sıralı, koşul işlevinin olduğu gibi **işleci <**, veya ona ait tüm değiştirme gerekir değiştirmemesi işlenenleri birini ve katı bir zayıf onu karşılaştırır işlenen üzerinde sıralama koymak gerekir. Aynı verim gerekir `bool` kabul edilir ve her iki işlenen bir kopyasını işleneni yerine, aynı sonucu verecek gerekir her zaman sonucu.
+Bir dizi öğe aralığındaki yineleyiciler tarafından belirlenen [`First`, `Last`) bir yığın tarafından bulunduğundan `operator<` her ise *N* aralıktaki [1, `Last`  -  `First`) Koşul! (\*`First` < \*(`First` + *N*)) geçerlidir. (İlk öğenin en büyük içindir.) İç yapısını Aksi durumda yalnızca şablon işlevlerine bilinen [make_heap](../standard-library/algorithm-functions.md#make_heap), [pop_heap](../standard-library/algorithm-functions.md#pop_heap), ve [push_heap](../standard-library/algorithm-functions.md#push_heap). Bir sıralı koşul işlevi olduğu gibi `operator<`, herhangi bir ardılı gerekir değiştirmemesi işlenenleri birini veya katı bir zayıf karşılaştırır, işlenenler üzerinde sıralama dayatır gerekir. Aynı yield gerekir **bool** her zaman değerlendirilir ve iki işlenenden kopyası için işlenen konur, aynı sonucu verecek gerekir neden.
 
-C++ Standart Kitaplığı algoritmaları bulunan [ \<algoritması >](../standard-library/algorithm.md) ve [ \<sayısal >](../standard-library/numeric.md) üstbilgi dosyaları.
+C++ Standart Kitaplığı algoritmaları bulunan [ \<algoritma >](../standard-library/algorithm.md) ve [ \<sayısal >](../standard-library/numeric.md) üst bilgi dosyaları.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

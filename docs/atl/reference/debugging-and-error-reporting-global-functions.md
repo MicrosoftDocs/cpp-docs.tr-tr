@@ -1,5 +1,5 @@
 ---
-title: Hata ayıklama ve hata genel işlevler raporlama | Microsoft Docs
+title: Hata ayıklama ve hata raporlama genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,23 +18,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb3257b5205587b27a83671ed8e610aad5373eef
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d41cc60b9a30254e46a9ca3ef3d3ad7dbc0dfcfb
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364888"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882919"
 ---
-# <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel işlevler
-Bu işlevler yararlı hata ayıklama ve izleme olanakları sağlar.  
+# <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel işlevleri
+Bu işlevler, kullanışlı hata ayıklama ve izleme olanakları sağlayın.  
   
 |||  
 |-|-|  
-|[AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)|Döndürür bir `GetLastError` biçiminde bir HRESULT hata kodu.|  
+|[AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)|Döndürür bir `GetLastError` HRESULT biçiminde hata kodu.|  
 |[AtlHresultFromWin32](debugging-and-error-reporting-global-functions.md#atlhresultfromwin32)|Win32 hata kodunu HRESULT biçimine dönüştürür.|  
-|[AtlReportError](debugging-and-error-reporting-global-functions.md#atlreporterror)|Ayarlayan **IErrorInfo** istemciye hata ayrıntılarını sağlamak için.|  
-|[AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow)|Atan bir `CAtlException`.|  
-|[AtlThrowLastWin32](debugging-and-error-reporting-global-functions.md#atlthrowlastwin32)|Windows işlev sonucuna hata göstermek için bu işlevi çağırmak `GetLastError`.|  
+|[AtlReportError](debugging-and-error-reporting-global-functions.md#atlreporterror)|Ayarlar `IErrorInfo` istemciye hata ayrıntılarını sağlamak için.|  
+|[Çeşitlemeleri](debugging-and-error-reporting-global-functions.md#atlthrow)|Oluşturur bir `CAtlException`.|  
+|[AtlThrowLastWin32](debugging-and-error-reporting-global-functions.md#atlthrowlastwin32)|Windows işlev sonucuna dayalı olarak hata sinyali vermek için bu işlevi çağırın `GetLastError`.|  
   
 ##  <a name="atlhresultfromlasterror"></a>  AtlHresultFromLastError  
  Çağıran iş parçacığının son hata kodu değerini HRESULT biçiminde döndürür.  
@@ -44,7 +44,7 @@ HRESULT AtlHresultFromLastError();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AtlHresultFromLastError` çağrıları `GetLastError` son hata elde edilir ve kullanarak bir HRESULT dönüştürdükten sonra hata döndürür **HRESULT_FROM_WIN32** makrosu.  
+ `AtlHresultFromLastError` çağrıları `GetLastError` son hata elde edilir ve bu hresult_from_wın32 makrosu kullanarak HRESULT dönüştürdükten sonra bir hata döndürür.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcomcli.h  
@@ -58,19 +58,19 @@ AtlHresultFromWin32(DWORD error);
   
 ### <a name="parameters"></a>Parametreler  
  *Hata*  
- Dönüştürülecek hata değer.  
+ Dönüştürülecek hata değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Win32 hata kodu makrosu kullanarak bir HRESULT dönüştürür **HRESULT_FROM_WIN32**.  
+ Win32 hata kodunu bu hresult_from_wın32 makrosu kullanılarak bir HRESULT biçimine dönüştürür.  
   
 > [!NOTE]
->  Yerine **HRESULT_FROM_WIN32(GetLastError())**, işlevini [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).  
+>  Yerine `HRESULT_FROM_WIN32(GetLastError())`, işlevini [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcomcli.h  
 
 ##  <a name="atlreporterror"></a>  AtlReportError  
- Ayarlayan `IErrorInfo` nesne istemcilere hata bilgileri sağlamak için arabirim.  
+ Ayarlar `IErrorInfo` hata bilgilerini nesnenin istemcilerine sağlamak için arabirim.  
   
 ```
 HRESULT WINAPI AtlReportError(
@@ -119,70 +119,70 @@ HRESULT WINAPI AtlReportError(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `clsid`  
- [in] Hata Raporlama nesnesinin CLSID.  
+ *CLSID*  
+ [in] Hata Raporlama nesne CLSID değeri.  
   
- `lpszDesc`  
- [in] Hatayı açıklayan dize. Unicode sürümleri belirtin `lpszDesc` türü **LPCOLESTR**; ANSI sürümü türünü `LPCSTR`.  
+ *lpszDesc*  
+ [in] Hatayı açıklayan bir dize. Unicode sürümlerini belirtmek *lpszDesc* değil LPCOLESTR türü; ANSI sürümü LPCSTR türünü belirtir.  
   
- `iid`  
- [in] Hata tanımlayan arabirim IID veya `GUID_NULL` hata işletim sistemi tarafından tanımlanmış olması durumunda.  
+ *IID*  
+ [in] Hata işletim sistemi tarafından tanımlanmış olması durumunda hata veya GUID_NULL tanımlama arabirimi Laboratuvardaki.  
   
- `hRes`  
- [in] `HRESULT` İstediğiniz çağırana döndürülen.  
+ *Xact_s_lastresourcemanager*  
+ [in] İstediğiniz HRESULT arayana döndürülür.  
   
- `nID`  
- [in] Hata açıklama dizesi depolandığı kaynak tanımlayıcısı. Bu değer 0x0200 arasında 0xFFFF, ikisi de dahil olmak kalan. Hata ayıklama derlemelerinde, bir **ASSERT** neden olur `nID` geçerli bir dize dizin kullanılamıyor. Yayın derlemelerde "İçin bilinmeyen hata." hatası açıklama dizesi ayarlanacak  
+ *nID*  
+ [in] Hata açıklaması dizesi depolandığı kaynak tanımlayıcısı. Bu değer 0x0200 ile 0xFFFF arasında aralığında yer alan. Hata ayıklama yapılarında, bir **ASSERT** neden olur *nID* geçerli bir dize dizinini oluşturmaz. Sürüm yapılarında hata açıklama dizesi "İçin bilinmeyen hata." ayarlanır.  
   
- `dwHelpID`  
+ *dwHelpID*  
  [in] Hata için Yardım içeriği tanımlayıcı.  
   
- `lpszHelpFile`  
- [in] Hatayı açıklayan Yardım dosyasının adını ve yolunu.  
+ *lpszHelpFile*  
+ [in] Hatayı açıklayan Yardım dosyasının adı ve yolu.  
   
- `hInst`  
- [in] Kaynağı için tanıtıcı. Varsayılan olarak, bu parametredir **__AtlBaseModuleModule::GetResourceInstance**, burada **__AtlBaseModuleModule** genel örneğinin [CAtlBaseModule](../../atl/reference/catlbasemodule-class.md) ya da bir sınıf ondan türetilmiş.  
+ *hInst*  
+ [in] Kaynağı için tanıtıcı. Varsayılan olarak, bu parametredir `__AtlBaseModuleModule::GetResourceInstance`burada `__AtlBaseModuleModule` genel örneğinin [CAtlBaseModule](../../atl/reference/catlbasemodule-class.md) veya ondan türetilmiş bir sınıf.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Varsa `hRes` parametre sıfır olmayan, değerini döndürür `hRes`. Varsa `hRes` sıfır sonra ilk dört sürümleri olan `AtlReportError` iade `DISP_E_EXCEPTION`. Son iki sürüm makrosu sonuç **MAKE_HRESULT (1, FACILITY_ITF,** `nID` **)**.  
+ Varsa *Xact_s_lastresourcemanager* parametre sıfır olmayan, değerini döndürür *Xact_s_lastresourcemanager*. Varsa *Xact_s_lastresourcemanager* sıfır sonra ilk dört sürümleri `AtlReportError` DISP_E_EXCEPTION döndürür. Son iki sürüm makronun sonucu döndürür **MAKE_HRESULT (1, FACILITY_ITF,** `nID` **)**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dize *lpszDesc* hata metin açıklaması olarak kullanılır. İstemci zaman alır `hRes` , döndürmek `AtlReportError`, istemcinin erişebildiği **IErrorInfo** hata hakkındaki ayrıntılar için yapısı.  
+ Dize *lpszDesc* hatanın metin açıklama kullanılır. İstemci aldığında *Xact_s_lastresourcemanager* gelen dönüş `AtlReportError`, istemcinin erişebildiği `IErrorInfo` yapısı hata hakkındaki ayrıntılar için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#52](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_1.cpp)]  
   
 > [!CAUTION]
->  Kullanmayın `AtlReportError` c++'ta catch işleyicileri. Bu işlevlerin bazı geçersiz kılmaları sırayla kullandığınız ATL dize dönüşüm makroları dahili olarak kullanın. `_alloca` dahili olarak işlev. Kullanarak `AtlReportError` bir C++ catch işleyicisi C++ catch işleyicileri özel durumlara neden olabilir.  
+>  Kullanmayın `AtlReportError` c++'ta catch işleyicileri. Sırayla kullandığınız dahili olarak, bu işlevlerin bazı geçersiz kılmaları ATL dize dönüşüm makroları kullanın `_alloca` dahili olarak işlev. Kullanarak `AtlReportError` bir C++ catch işleyicisi özel durumları C++ catch işleyicileri neden olabilir.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
     
-##  <a name="atlthrow"></a>  AtlThrow  
- Temel bir hata göstermek için bu işlevi çağırmak bir `HRESULT` durum kodu.  
+##  <a name="atlthrow"></a>  Çeşitlemeleri  
+ Bir HRESULT durum koduna göre hata sinyali vermek için bu işlevi çağırın.  
   
 ```
 __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hr`  
- Standart HRESULT değeri.  
+ *İK*  
+ Standart HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, bir hata koşulu durumunda ATL ve MFC kodu tarafından kullanılır. Ayrıca kendi koddan çağrılabilir. Bu işlev varsayılan uygulaması simgenin tanımını bağlıdır **_ATL_NO_EXCEPTIONS** ve proje, MFC ya da ATL türü  
+ Bu işlev, bir hata koşulu olması durumunda, ATL ve MFC kodu tarafından kullanılır. Ayrıca kendi koddan çağrılabilir. Bu işlev varsayılan uygulamasını sembol _ATL_NO_EXCEPTIONS tanımını ve MFC veya ATL projesi türünü bağlıdır.  
   
- Her durumda, bu işlev HRESULT hata ayıklayıcı izler.  
+ Her durumda, bu işlev hata ayıklayıcı HRESULT izler.  
   
- Visual Studio 2015 güncelleştirme 3 ve sonraki sürümlerinde, bu işlev öznitelikli __declspec(noreturn) alacaklardır SAL uyarılarını önlemek amacıyla kullanılır.  
+ Visual Studio 2015 güncelleştirme 3 ve sonraki sürümlerinde, bu işlev öznitelikli __declspec(noreturn) alacaklardır SAL uyarılarının önlemek için kullanılır.  
   
- Varsa **_ATL_NO_EXCEPTIONS** tanımlı değil Bu işlev bir MFC projesine oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md) HRESULT değere göre.  
+ Bir MFC projesinde _ATL_NO_EXCEPTIONS tanımlı değil, bu işlev oluşturur. bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md) HRESULT değerini temel alarak.  
   
- Varsa **_ATL_NO_EXCEPTIONS** ATL projesinde, işlevi atar tanımlanmamış bir [CAtlException](../../atl/reference/catlexception-class.md).  
+ Bir ATL projesinde _ATL_NO_EXCEPTIONS tanımlı değil, işlev oluşturur. bir [CAtlException](../../atl/reference/catlexception-class.md).  
   
- Varsa **_ATL_NO_EXCEPTIONS** olan tanımlanan işlevi bir özel durum atma yerine bir onaylama işlemi hatasına neden olur.  
+ _ATL_NO_EXCEPTIONS tanımlanmazsa, işlev bir özel durum oluşturmaktansa bir onaylama işlemi hatasına neden olur.  
   
- ATL projeleri için bu işlevin ATL tarafından bir arıza olması durumunda kullanılmak üzere kendi uygulama sunmak amacıyla mümkündür. Bunu yapmak için kendi işlev aynı imzayla tanımlayın `AtlThrow` ve #define `AtlThrow` , işlevin adı olmalıdır. Bu, (yani atlbase.h atlexcept.h içeren bu yana tüm ATL üstbilgileri dahil olmak üzere önce yapılmalıdır) atlexcept.h eklemeden önce yapılmalıdır. İşlevinizi özniteliği `__declspec(noreturn)` alacaklardır SAL uyarılarını önlemek amacıyla.  
+ ATL projeleri için bu işlev bir hata olması durumunda ATL tarafından kullanılmak üzere kendi uygulamasını sağlamak mümkündür. Bunu yapmak için kendi işlevi aynı imzaya sahip tanımlama `AtlThrow` ve #define `AtlThrow` işlev uygulamanızın adı olacak. Bu, (yani herhangi bir ATL üstbilgilerine atlbase.h atlexcept.h içerdiğinden dahil önce yapılmalıdır) atlexcept.h eklemeden önce yapılmalıdır. İşlevinizi özniteliği `__declspec(noreturn)` alacaklardır SAL uyarılarının önlemek için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]  
@@ -191,27 +191,27 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
  **Başlık:** atldef.h  
 
 ##  <a name="atlthrowlastwin32"></a>  AtlThrowLastWin32  
- Windows işlev sonucuna hata göstermek için bu işlevi çağırmak `GetLastError`.  
+ Windows işlev sonucuna dayalı olarak hata sinyali vermek için bu işlevi çağırın `GetLastError`.  
   
 ```
 inline void AtlThrowLastWin32();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlevin sonucu izler `GetLastError` hata ayıklayıcı için.  
+ Bu işlev sonucu izler `GetLastError` hata ayıklayıcı.  
   
- Varsa **_ATL_NO_EXCEPTIONS** tanımlı değil Bu işlev bir MFC projesine oluşturur bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md) tarafındandöndürülendeğergöre`GetLastError`.  
+ Bir MFC projesinde _ATL_NO_EXCEPTIONS tanımlı değil, bu işlev oluşturur. bir [CMemoryException](../../mfc/reference/cmemoryexception-class.md) veya [COleException](../../mfc/reference/coleexception-class.md) tarafından döndürülen değere göre `GetLastError`.  
   
- Varsa **_ATL_NO_EXCEPTIONS** ATL projesinde, işlevi atar tanımlanmamış bir [CAtlException](../../atl/reference/catlexception-class.md).  
+ Bir ATL projesinde _ATL_NO_EXCEPTIONS tanımlı değil, işlev oluşturur. bir [CAtlException](../../atl/reference/catlexception-class.md).  
   
- Varsa **_ATL_NO_EXCEPTIONS** olan tanımlanan işlevi bir özel durum atma yerine bir onaylama işlemi hatasına neden olur.  
+ _ATL_NO_EXCEPTIONS tanımlanmazsa, işlev bir özel durum oluşturmaktansa bir onaylama işlemi hatasına neden olur.  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldef.h  
    
      
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlevler](../../atl/reference/atl-functions.md)   
+ [İşlevleri](../../atl/reference/atl-functions.md)   
  [Hata Ayıklama ve Hata Raporlama Makroları](../../atl/reference/debugging-and-error-reporting-macros.md)
 
 

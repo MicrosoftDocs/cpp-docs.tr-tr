@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bf12a91fc4dd1485e0129e8ce9049d3401c181c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 38e076d5a8e552efa353be711d84485c96f6ffd3
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844809"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962994"
 ---
 # <a name="isnothrowdefaultconstructible-class"></a>is_nothrow_default_constructible Sınıfı
 
-Atma varsayılan bir oluşturucu türüne sahip olup olmadığını sınar.
+Oluşturmayan bir varsayılan oluşturucu türüne sahip olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +36,11 @@ struct is_nothrow_default_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu nothrow varsayılan bir oluşturucu, aksi takdirde sahiptir. Türü koşulu örneği eşdeğerdir `is_nothrow_constructible<Ty>`.
+Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu nothrow varsayılan bir oluşturucu, aksi takdirde sahiptir. Bir tür koşulu örneğini eşdeğerdir `is_nothrow_constructible<Ty>`.
 
 ## <a name="requirements"></a>Gereksinimler
 

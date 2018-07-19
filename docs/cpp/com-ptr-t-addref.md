@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54a1b629f254bae2b72790546bcbb00185f2c44c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 40ed48b54a3862f7ac5804e7652d98b661bb071d
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409780"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940998"
 ---
 # <a name="comptrtaddref"></a>_com_ptr_t::AddRef
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Çağrıları `AddRef` üye işlevini **IUnknown** kapsüllenmiş arabirim işaretçisi üzerinde.  
+ Çağrıları `AddRef` üye işlevinin `IUnknown` kapsüllenmiş arabirim işaretçisini üzerinde.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,9 +37,9 @@ void AddRef( );
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağrıları `IUnknown::AddRef` kapsüllenmiş arabirim işaretçisi üzerinde gerçekleştiren bir `E_POINTER` işaretçi ise hata **NULL**.  
+ Çağrıları `IUnknown::AddRef` işaretçi NULL ise kapsüllenmiş arabirim işaretçisini e_poınter hata oluşturma.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

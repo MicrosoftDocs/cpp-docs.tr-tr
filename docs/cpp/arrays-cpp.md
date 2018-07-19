@@ -16,47 +16,48 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fe8e5f53d05ac159fd577b260268f297b59d146
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 60c7baaaf20158c29c34aea364e70c0d040a42e3
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948123"
 ---
 # <a name="arrays-c"></a>Diziler (C++)
-Bir dizi nesneleri gibi koleksiyonudur. Basit dizi aşağıdaki sırası tarafından bildirilen bir vektör durumdur:  
+Koleksiyonu nesneleri gibi bir dizidir. Bir dizinin en basit durumu aşağıdaki sırayla bildirilebilecek bir vektör şöyledir:  
   
 ```  
   
-      decl-specifier identifier [ constant-expression ]  
+decl-specifier identifier [ constant-expression ]  
 decl-specifier identifier []  
 decl-specifier identifer [][ constant-expression] . . .  
 decl-specifier identifier [ constant-expression ]  
 [ constant-expression ] . . .  
 ```  
   
- 1. Bildirim tanımlayıcısı:  
+ 1. Bildirim belirticisi:  
   
 -   İsteğe bağlı bir depolama sınıfı tanımlayıcısı.  
   
--   İsteğe bağlı **const** ve/veya `volatile` tanımlayıcıları.  
+-   İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.  
   
--   Dizideki öğeler türünün adı.  
+-   Dizideki öğelerin tür adı.  
   
- 2. Bildirimcisi:  
+ 2. Bildirimci:  
   
 -   Tanımlayıcı.  
   
--   Köşeli parantez içine alınmış Tamsayı türünde sabit bir ifade **[].** Birden çok boyut ek parantez kullanılarak bildirilir, sabit ifadesine köşeli ilk kümesinde atlanabilir.  
+-   Köşeli ayraç içinde Tamsayı türünde sabit bir ifade **[]**. Birden çok boyutta ek oluşur. parantez kullanılarak bildirilirse, Birinci ayraç kümesi sabit ifade atlanabilir.  
   
--   İsteğe bağlı ek kapsayan sabit ifadeler ayırır.  
+-   Sabit ifadeleri kapsayan isteğe bağlı ek parantezler.  
   
- 3. İsteğe bağlı bir başlatıcı.  Bkz: [başlatıcıları](../cpp/initializers.md).  
+ 3. İsteğe bağlı bir başlatıcı.  Bkz: [başlatıcılar](../cpp/initializers.md).  
   
- Dizideki öğelerin sayısı sabit ifadeyle verilir. Dizinin ilk öğe 0 öğesidir ve son öğe (*n*-1) öğe, burada *n* dizi içerebilir öğe sayısı. *Sabit ifadesi* bir tamsayı türünde olmalıdır ve 0'dan büyük olmalıdır. Dizi en son alanda olduğunda sıfır boyutlu bir array yasal bir `struct` veya **UNION** ve Microsoft Uzantıları (/Ze) etkin olduğunda.  
+ Dizideki öğelerin sayısını sabit ifade tarafından verilir. Dizideki ilk öğe 0 öğedir ve son öğe (*n*-1) öğe, burada *n* dizi içerebilir öğe sayısı. *Sabit-ifade* bir tamsayı türünde olmalı ve 0'dan büyük olmalıdır. Dizi içinde son alan olduğunda sıfır boyutlu bir dizi yasal bir **yapı** veya **birleşim** ve Microsoft Uzatmaları (/Ze) etkinleştirildiğinde.  
   
- Aşağıdaki örnek, bir dizi çalışma zamanında tanımlamak gösterilmektedir:  
+ Aşağıdaki örnek, çalışma zamanında bir dizi tanımlamak gösterilmektedir:  
   
-```  
+```cpp 
 // arrays.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -77,22 +78,22 @@ int main() {
 }  
 ```  
   
- Diziler türetilmiş türler ve İşlevler, başvuruları dışında herhangi bir diğer türetilmiş veya temel türü oluşturulabilir ve `void`.  
+ Diziler türetilmiş türlerdir, dolayısıyla İşlevler, başvurular dışında herhangi bir diğer türetilmiş veya temel türden oluşturulabilir ve **void**.  
   
- Diğer diziler de oluşturulan çok boyutlu diziler dizidir. Bu çok boyutlu diziler köşeli parantez içindeki birden çok sabit ifadeler sırayla yerleştirerek belirtilir. Örneğin, bu bildirim göz önünde bulundurun:  
+ Diğer dizilerden oluşturulmuş diziler çok boyutlu dizilerdir. Bu çok boyutlu dizilerin dizisi birden fazla parantezli sabit ifadeler yerleştirerek belirtilir. Örneğin, bu bildirimi göz önünde bulundurun:  
   
-```  
+```cpp 
 int i2[5][7];  
 ```  
   
- Türünde bir dizi belirtir `int`, kavramsal olarak düzenlenmiş iki boyutlu bir Matristeki beş satır ve yedi sütun, aşağıdaki çizimde gösterildiği gibi:  
+ Türünde bir dizi belirtir **int**, kavramsal olarak düzenlenmiş iki boyutlu bir matris beş satırdan ve yedi sütundan aşağıdaki şekilde gösterildiği gibi:  
   
- ![Bir çoklu kavramsal yerleşimini&#45;boyutlu bir dizi](../cpp/media/vc38rc1.gif "vc38RC1")  
+ ![Bir çoklu kavramsal düzeni&#45;boyutlu bir dizi](../cpp/media/vc38rc1.gif "vc38RC1")  
 Çok boyutlu dizinin kavramsal düzeni  
   
- Bir başlatıcı listeniz multidimensioned dizi bildirimlerden (açıklandığı gibi [başlatıcıları](../cpp/initializers.md)), ilk boyut sınırlarını belirtir sabit ifadesine atlanabilir. Örneğin:  
+ Başlatıcı listesi olan dizilerin bildirimlerinde (açıklandığı [başlatıcılar](../cpp/initializers.md)), ilk boyut sınırlarını belirten sabit ifade atlanabilir. Örneğin:  
   
-```  
+```cpp 
 // arrays2.cpp  
 // compile with: /c  
 const int cMarkets = 4;  
@@ -104,7 +105,7 @@ double TransportCosts[][cMarkets] = {
 };  
 ```  
   
- Önceki bildirimi dört sütun tarafından üç satır bir dizi tanımlar. Satırları oluşturucuları temsil eder ve sütunlar için oluşturucuları sevk pazarda temsil eder. Taşıma maliyetleri oluşturucuları pazarda değerlerdir. Dizinin ilk boyutu sol ancak derleyici, başlatıcı inceleyerek doldurur.  
+ Yukarıdaki bildirim üç satıra dört sütun bir dizi tanımlar. Satırlar üreticileri temsil eder ve sütunlar pazarlar için fabrikaları sevk temsil eder. Değerler, fabrikalardan marketlere nakliye maliyetlerini bağlıdır. Dizinin ilk boyutu kalır, ancak derleyici bunu başlatıcıyı inceleyerek doldurur.  
   
  Bu bölümdeki konular:  
   
@@ -119,9 +120,9 @@ double TransportCosts[][cMarkets] = {
 -   [C++ Dizilerini Sıralama](../cpp/ordering-of-cpp-arrays.md)  
   
 ## <a name="example"></a>Örnek  
- Çok boyutlu bir diziye ilk boyutu için sınır belirtimi atlama tekniği de işlev bildirimleri gibi kullanılabilir:  
+ Çok boyutlu bir dizinin ilk boyutu için sınır belirtimini atlama tekniği de İşlev bildirimlerinde gibi kullanılabilir:  
   
-```  
+```cpp 
 // multidimensional_arrays.cpp  
 // compile with: /EHsc  
 // arguments: 3  
@@ -173,7 +174,7 @@ The minimum cost to Market 3 is: 17.29
 ```  
   
 ## <a name="comments"></a>Açıklamalar  
- İşlev `FindMinToMkt` yeni oluşturucuları ekleme kod değişikliklerini, yalnızca yeniden derlenmek gerektirmez şekilde yazılır.  
+ İşlev `FindMinToMkt` yeni Fabrika ekleme herhangi bir kod değişikliği, yalnızca yeniden derleme gerektirmeyen yazılmıştır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  

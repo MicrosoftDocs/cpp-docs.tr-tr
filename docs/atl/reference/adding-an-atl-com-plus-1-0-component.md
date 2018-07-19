@@ -17,23 +17,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0375c0c098d3e8328cb8c8a678b266053ef7e89
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 50529f5e229736c2d2688cb74edabee0ec492718
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355797"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963569"
 ---
 # <a name="adding-an-atl-com-10-component"></a>ATL COM + 1.0 bileşeni ekleme
 Bu sihirbaz projenize işlemleri dahil olmak üzere, COM + 1.0 hizmetlerini destekleyen bir nesne ekler.  
   
 ### <a name="to-add-an-atl-com-10-component-to-your-project"></a>ATL COM + 1.0 bileşeni projenize eklemek için  
   
-1.  Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), ATL COM + 1.0 bileşen eklemek istediğiniz proje adına sağ tıklayın.  
+1.  Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ATL COM + 1.0 bileşeni eklemek istediğiniz proje adına sağ tıklayın.  
   
 2.  Kısayol menüsünde **Ekle**ve ardından **sınıfı Ekle**.  
   
-3.  İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) Şablonlar bölmesinde iletişim kutusu **ATL COM + 1.0 bileşeni**ve ardından **açık** görüntülenecek [ATL COM + 1.0 Bileşen Sihirbazı ](../../atl/reference/atl-com-plus-1-0-component-wizard.md).  
+3.  İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) Şablonlar bölmesinde, iletişim kutusu **ATL COM + 1.0 bileşeni**ve ardından **açık** görüntülenecek [ATL COM + 1.0 bileşeni Sihirbazı ](../../atl/reference/atl-com-plus-1-0-component-wizard.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)   

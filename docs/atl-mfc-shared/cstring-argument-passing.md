@@ -21,28 +21,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 642ff20028a0929bb7bc11815e66b9f845ef9bd7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 86e89a0f4af28606abef8804aeab5d1e2f62e8d8
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356836"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882457"
 ---
 # <a name="cstring-argument-passing"></a>CString bağımsız değişken geçirme
-Bu makalede nasıl geçirileceğini açıklayan [CString](../atl-mfc-shared/reference/cstringt-class.md) nesneleri işlevleri ve nasıl döndürüleceğini `CString` işlevleri nesneleri.  
+Bu makalede nasıl geçirileceğini açıklar [CString](../atl-mfc-shared/reference/cstringt-class.md) nesneleri işlevleri ve nasıl döndürüleceğini `CString` işlevleri nesneleri.  
   
 ##  <a name="_core_cstring_argument.2d.passing_conventions"></a> CString bağımsız değişken geçirme kuralları  
- Bir sınıf arabirimi tanımladığınızda, üye işlevleri için bağımsız değişken geçirme kuralı belirlemeniz gerekir. Geçirme ve döndürmek için standart bazı kurallar vardır `CString` nesneleri. Açıklanan kuralları izlerseniz [dizeleri işlev giriş olarak](#_core_strings_as_function_inputs) ve [dizeleri işlevi çıktı olarak](#_core_strings_as_function_outputs), verimli ve doğru koduna sahip olacak.  
+ Bir sınıf arabirimi tanımladığınızda, üye işlevleri için bağımsız değişken geçirme kuralı belirlemeniz gerekir. İletme ve döndürme için bazı standart kuralları `CString` nesneleri. İçinde açıklanan kurallar izlerseniz [dize işlev giriş olarak](#_core_strings_as_function_inputs) ve [işlevi çıktı olarak dizeler](#_core_strings_as_function_outputs), verimli ve doğru bir kod olacaktır.  
   
-##  <a name="_core_strings_as_function_inputs"></a> İşlev giriş olarak dizeleri  
- Kullanmak için en güvenli ve verimli şekilde bir `CString` çağrılan işlevlerin nesnedir geçirmek için bir `CString` işlevine nesnesi. Ad rağmen bir `CString` nesne saklamadığı bir dize dahili olarak null Sonlandırıcı sahip C stili dize olarak. Bunun yerine, bir `CString` nesne olan karakter sayısı dikkatli izini tutar. Sahip `CString` sağlayan bir `LPCTSTR` null sonlandırılmış bir dize işaretçidir sürekli yapmak, kodunuzu varsa, önemli hale gelebilir iş az miktarda. Değişiklik sonucu geçici çünkü `CString` içeriği geçersiz kılar, eski kopyalarını `LPCTSTR` işaretçi.  
+##  <a name="_core_strings_as_function_inputs"></a> Dize olarak işlev giriş  
+ Kullanılacak en verimli ve güvenli bir yol bir `CString` çağrılan işlevlerin nesnedir geçirilecek bir `CString` işlevi nesnesi. Adını rağmen bir `CString` nesne depolamaz bir dize dahili olarak bir null Sonlandırıcı sahip C stili dize olarak. Bunun yerine, bir `CString` nesne dikkatli izini bulunan karakter sayısını tutar. Sahip `CString` LPCTSTR null ile sonlandırılmış bir dize işaretçisi sürekli yapmak kodunuz varsa, belirgin hale gelebilir iş az miktarda sağlar. Değişiklik için sonucu geçici `CString` içeriği LPCTSTR işaretçi eski kopyalarını geçersiz kılar.  
   
- Bir C stili dize sağlamak için bazı durumlarda algılama yapar. Örneğin, burada çağrılan işlev C'de yazılmış ve nesneleri desteklemiyor bir durum olabilir. Bu durumda, coerce `CString` parametresi `LPCTSTR`, ve işlev C türü null sonlandırılmış bir dize alır. Ayrıca başka bir yöne gidin ve oluşturma bir `CString` kullanarak nesne `CString` C stili dize parametresi kabul Oluşturucusu.  
+ Bu bazı durumlarda bir C tarzı dize sağlamak mantıklı. Örneğin, bir durum burada çağrılan işlev C dilinde yazılan ve nesneleri desteklemiyor olabilir. Bu durumda, coerce `CString` LPCTSTR ve işlev parametresi, C stili null ile sonlandırılmış bir dize alırsınız. Ayrıca diğer yönde gidin ve oluşturma bir `CString` kullanarak nesne `CString` C stili dize parametresi kabul eden Oluşturucu.  
   
- Dize içeriklerini bir işlev tarafından değiştirilmesi gerekiyorsa, bir nonconstant parametre bildirme `CString` başvurusu (**CString &**).  
+ Dize içeriklerini işlev tarafından değiştirilmesi gerekiyorsa, parametre olarak bir nonconstant bildirmek `CString` başvurusu (`CString&`).  
   
-##  <a name="_core_strings_as_function_outputs"></a> Dize olarak işlevi çıkışları  
- Genellikle döndürebilir `CString` çünkü işlevlerden nesneleri `CString` nesneleri değer semantiği ilkel türler gibi izleyin. Salt okunur bir dize döndürecek şekilde bir sabit kullanın `CString` başvurusu (**const CString &**). Aşağıdaki örnek kullanımını göstermektedir `CString` parametreler ve dönüş türleri:  
+##  <a name="_core_strings_as_function_outputs"></a> İşlev çıktı olarak dizeler  
+ Genellikle döndürebilir `CString` çünkü nesneler işlevlerden `CString` nesneler gibi ilkel türler değer semantiği izleyin. Salt okunur bir dize döndürecek şekilde, bir sabiti kullanın `CString` başvurusu (`const CString&`). Aşağıdaki örnek, kullanımını gösterir `CString` parametreler ve dönüş türleri:  
   
  [!code-cpp[NVC_ATLMFC_Utilities#197](../atl-mfc-shared/codesnippet/cpp/cstring-argument-passing_1.cpp)]  
   

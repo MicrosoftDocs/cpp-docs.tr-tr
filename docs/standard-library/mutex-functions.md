@@ -1,5 +1,5 @@
 ---
-title: '&lt;Mutex&gt; işlevleri ve değişkenler | Microsoft Docs'
+title: '&lt;Mutex&gt; işlevler ve değişkenler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,14 @@ helpviewer_keywords:
 - std::defer_lock [C++]
 - std::lock [C++]
 - std::try_to_lock [C++]
-ms.openlocfilehash: 85ed95250b5563cd8a7c1ef9cfc0ee048cb3bc60
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: df52b5bdf9b7054fd838b1892c4e641cdf9d4dcc
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858218"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962194"
 ---
-# <a name="ltmutexgt-functions-and-variables"></a>&lt;Mutex&gt; işlevleri ve değişkenler
+# <a name="ltmutexgt-functions-and-variables"></a>&lt;Mutex&gt; işlevler ve değişkenler
 
 ||||
 |-|-|-|
@@ -32,7 +32,7 @@ ms.locfileid: "33858218"
 
 ## <a name="adopt_lock"></a>  adopt_lock değişkeni
 
-Oluşturucuları için geçirilecek bir nesneyi temsil ediyor [lock_guard](../standard-library/lock-guard-class.md) ve [unique_lock](../standard-library/unique-lock-class.md) de oluşturucuya geçirilen mutex nesnesi kilitli olup olmadığını belirtmek için.
+Oluşturucular için geçirilecek bir nesneyi temsil ediyor [lock_guard](../standard-library/lock-guard-class.md) ve [unique_lock](../standard-library/unique-lock-class.md) ayrıca oluşturucuya geçirilen mutex nesnesi kilitli olmadığını belirtmek için.
 
 ```cpp
 const adopt_lock_t adopt_lock;
@@ -40,7 +40,7 @@ const adopt_lock_t adopt_lock;
 
 ## <a name="call_once"></a>  call_once
 
-Yürütme sırasında tam olarak bir kez belirtilen bir aranabilir nesne çağırmak için bir mekanizma sağlar.
+Yürütme sırasında tam bir kez belirli bir çağrılabilir nesnesini çağırmak için bir mekanizma sağlar.
 
 ```cpp
 template <class Callable, class... Args>
@@ -50,25 +50,25 @@ void call_once(once_flag& Flag,
 
 ### <a name="parameters"></a>Parametreler
 
-`Flag` A [once_flag](../standard-library/once-flag-structure.md) aranabilir nesne yalnızca bir kez çağrılır sağlar nesnesi.
+*Bayrağı* A [once_flag](../standard-library/once-flag-structure.md) çağrılabilir nesnenin yalnızca bir kez çağrılır sağlayan nesne.
 
-`F` Aranabilir bir nesne.
+*F* çağrılabilir bir nesne.
 
-`A` Bir bağımsız değişken listesi.
+*A* bir bağımsız değişken listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `Flag` işlevi oluşturur, geçersiz bir [system_error](../standard-library/system-error-class.md) hata kodunu olan `invalid_argument`. Aksi durumda, şablon işlevi kullanır, `Flag` çağırır emin olmak için bağımsız değişken `F(A...)` bağımsız olarak kaç kez şablon işlevi başarıyla tam olarak bir kez çağrılır. Varsa `F(A...)` bir özel durum atma tarafından sonlandırılır çağrı başarılı değildi.
+Varsa *bayrağı* işlevi oluşturur, geçersiz bir [system_error](../standard-library/system-error-class.md) bir hata koduna sahip `invalid_argument`. Aksi durumda şablon işlevi kullanır, *bayrağı* çağrı yaptığı emin olmak için bağımsız değişken `F(A...)` şablon işlevi bağımsız olarak kaç kez başarılı bir şekilde tam olarak bir kez çağrılır. Varsa `F(A...)` özel bir durum yaratarak sonlandırılır çağrı başarılı değildi.
 
 ## <a name="defer_lock"></a>  defer_lock değişkeni
 
-İçin oluşturucuya geçirilen nesneyi temsil eden [unique_lock](../standard-library/unique-lock-class.md). Bu oluşturucu de ona geçirilmiş mutex nesnesi kilitlemeniz değil gösterir.
+İçin oluşturucuya geçirilen nesneyi temsil eden [unique_lock](../standard-library/unique-lock-class.md). Bu oluşturucu ayrıca için geçirilmiş mutex nesnesi kilitlemenizi değil gösterir.
 
 ```cpp
 const defer_lock_t defer_lock;
 ```
 
-## <a name="lock"></a>  kilitleme
+## <a name="lock"></a>  Kilit
 
 Tüm bağımsız değişkenler olmadan kilitlenme kilitlemek çalışır.
 
@@ -79,13 +79,13 @@ void lock(L1&, L2&, L3&...);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi bağımsız değişken olmalıdır *mutex türleri*, çağrılar, dışında `try_lock` özel durumlar oluşturma.
+Şablon işlevi için bağımsız değişkenler olmalıdır *mutex türleri*, çağrılar dışında `try_lock` özel durumlar.
 
-İşlev bağımsız değişkenlerini kilitlenme olmadan tümünün yapılan çağrılar tarafından kilitler `lock`, `try_lock`, ve `unlock`. Çağrı, `lock` veya `try_lock` , işlev çağrıları aykırı `unlock` herhangi bir özel durum yeniden atma önce başarıyla kilitlenmiştir mutex nesneleri.
+İşlevin tüm bağımsız değişkenleri kilitlenme olmadan yapılan çağrılar tarafından kilitler `lock`, `try_lock`, ve `unlock`. Bir çağrı, `lock` veya `try_lock` işlev çağrıları bir istisna atarsa `unlock` herhangi bir özel durum yeniden atma önce başarıyla kilitlenmiştir mutex nesneleri.
 
 ## <a name="try_to_lock"></a>  try_to_lock değişkeni
 
-İçin oluşturucuya geçirilen nesneyi temsil eden [unique_lock](../standard-library/unique-lock-class.md) Oluşturucusu kilidini açmak denemelisiniz belirtmek için `mutex` , ayrıca geçirilen kendisine engellenmeden.
+İçin oluşturucuya geçirilen nesneyi temsil eden [unique_lock](../standard-library/unique-lock-class.md) Oluşturucu kilidini açma denemesi gerektiğini belirtmek için `mutex` de yapan kendisine engellemeden.
 
 ```cpp
 const try_to_lock_t try_to_lock;

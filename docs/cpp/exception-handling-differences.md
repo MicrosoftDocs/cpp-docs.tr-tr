@@ -18,22 +18,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4577739c7ef141576361e6db630eafbe432e913
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dafb3c41bd490e7c123e1aefe9ccaa04a4e6b233
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948126"
 ---
 # <a name="exception-handling-differences"></a>Özel Durum İşleme Farkları
-C++ özel durum türleri modeli anlaşmalar işleme yapılandırılmış özel durum işleme modeli C sırasında özel durumlar dışında bir tür ilgilenir yapılandırılmış özel durum işleme ve C++ özel durum işleme arasındaki en önemli fark olan — özellikle `unsigned int`. Diğer bir deyişle, C++ özel durumlarını veri türüne göre tanımlanır ancak C özel durumlar bir işaretsiz tamsayı değeri tarafından tanımlanır. C'de bir özel durum oluştuğunda, her olası işleyicisi C özel durum bağlamı inceler ve özel durum kabul edin, diğer bazı işleyicisine geçirmek ya da yok sayın belirleyen bir filtre yürütür. C++'da bir özel durum, herhangi bir türde olabilir.  
+Yapılandırılmış özel durum işleme ve C++ özel durum işleme arasındaki en önemli fark modeli anlaşmalar türlerinde C++ özel durum işleme, yapılandırılmış özel durum işleme modeli sırasında C, bir tür özel durumlar ile ilgilenen olan — özellikle  **işaretsiz int**. Diğer bir deyişle, C++ özel durumlarını veri türüyle tanımlanır ancak C özel durumlarını bir işaretsiz tamsayı değeri tarafından tanımlanır. C dilinde bir özel durum oluştuğunda, her olası işleyici C özel durum bağlamı inceler ve bu özel durum kabul edin, başka bir işleyiciye geçirmek ya da onu yok saymasını belirleyen bir filtre yürütür. C++'da bir özel durum oluştuğunda, bunu herhangi bir türde olabilir.  
   
- İkinci bir fark, özel durumlar denetiminin normal akıştaki ikincil gerçekleşmesi C yapılandırılmış özel durum işleme modeli "zaman uyumsuz olarak için" denir, ' dir. C++ özel durum mekanizması işleme yalnızca zaman bunlar oluşturulan özel durumları ortaya başka bir deyişle, tam olarak "," uyumludur.  
+ İkinci bir fark, özel durumlar, denetiminin normal akışı için ikincil ortaya C yapılandırılmış özel durum işleme modeli "zaman uyumsuz olarak için" olduğunu adlandırılır. C++ özel durum işleme mekanizmasını tam olarak "zaman uyumlu," yalnızca bunlar oluştuğunda özel durum ortaya anlamına gelir.  
   
- Bir C++ programı C özel durum oluşursa, C++ veya onun ilişkili filtre ile yapılandırılmış özel durum işleyici tarafından işlenebilir **catch** hangisi işleyicisidir dinamik olarak nearer to özel durum bağlamı. Örneğin, bir C özel bir C++ içinde aşağıdaki C++ programı başlatır **deneyin** bağlamı:  
+ C++ programında C özel durum oluşturulursa, bunu bir C++ veya kendi ilişkili Filtresi ile bir yapılandırılmış özel durum işleyicisi tarafından işlenebilen **catch** işleyicisi, hangisi daha dinamik olarak nearer to özel durum bağlamı. Örneğin, bir C özel durumu bir C++ içinde aşağıdaki C++ programı başlatan **deneyin** Bağlam:  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // exceptions_Exception_Handling_Differences.cpp  
 // compile with: /EHa  
 #include <iostream>  
@@ -67,11 +68,11 @@ Caught a C exception.
 ```  
   
 ##  <a name="_core_c_exception_wrapper_class"></a> C özel durum sarmalayıcı sınıfı  
- Yukarıdaki gibi bir basit örnekte, yalnızca üç nokta C istisnası yakalanabilir (**...** ) **catch** işleyicisi. Tür veya özel durum doğası hakkında hiçbir bilgi işleyicisine iletilir. Bu yöntem çalışırken, bazı durumlarda, böylece her C özel durumu ile belirli bir sınıf ilişkilendirilen iki özel durum işleme modelleri arasında dönüştürme tanımlamak gerekebilir. Bunu yapmak için kullanılan veya bir C özel öznitelik belirli bir sınıf türü için türetilmiş bir C özel durum "sarmalayıcı" sınıfı, tanımlayabilirsiniz. Bunu yaparak, her C özel durumu C++ tarafından işlenebilir **catch** işleyici içinde daha fazla ayrı olarak önceki örnek.  
+ Yukarıdaki gibi basit bir örnekte C özel durumu yalnızca üç nokta yakalanabilir (**...** ) **catch** işleyici. İşleyicinin veya özel durum doğası hakkında hiçbir bilgi iletilir. Bu yöntem çalışır, ancak bazı durumlarda, böylece her C özel durumu belirli bir sınıf ile ilişkili iki özel durum işleme modelleri arasında dönüştürme tanımlamanız gerekebilir. Bunu yapmak için kullanılan veya bir C özel durumu için belirli bir sınıf türü özniteliği için türetilen bir C özel durum "sarmalayıcı" sınıfı tanımlayabilirsiniz. Bunun yapılması her C özel durumu bir C++ tarafından işlenebilen **catch** işleyici kıyasla daha ayrı olarak önceki örnek.  
   
- Sarmalayıcı sınıfı, özel durum değeri belirlemek ve C özel durumu modeli tarafından sağlanan genişletilmiş özel durum bağlamını erişim bazı üye işlevleri oluşan bir arabirim olabilir. Varsayılan bir oluşturucu ve kabul eden bir oluşturucu tanımlamak isteyebilirsiniz bir `unsigned int` (için temel alınan C özel durumu temsil sağlamak için) bağımsız değişkeni ve bit düzeyinde kopya Oluşturucu. C özel durum sarmalayıcı sınıfı olası uyarlamasını verilmiştir:  
+ Bazı üye işlevleri, özel durum değerini belirlemek ve C özel durum modeli tarafından sağlanan genişletilmiş özel durum bağlamı bilgilerini erişim oluşan bir arabirim, sarmalayıcı sınıfı olabilir. Varsayılan bir oluşturucu ve kabul eden bir kurucu tanımlamak isteyebilirsiniz bir **işaretsiz int** (temel alınan C özel durum temsili sağlamak için) bağımsız değişken ve bit düzeyinde bir kopya Oluşturucu. C özel durum sarmalayıcı sınıfı olası bir uygulaması aşağıdaki gibidir:  
   
-```  
+```cpp 
 // exceptions_Exception_Handling_Differences2.cpp  
 // compile with: /c  
 class SE_Exception {  
@@ -89,14 +90,14 @@ public:
   
 ```  
   
- Bu sınıf kullanmak için işleme mekanizması C özel durum her zaman iç özel durum tarafından çağrılan özel bir C özel durumu çeviri işlev yükleyin. Çeviri işlevinizi içinde yazılan özel durumları atabilirsiniz (belki de bir `SE_Exception` türü ya da bir sınıf türü türetilen `SE_Exception`), yakalanan uygun eşleşen C++ tarafından **catch** işleyicisi. Çeviri işlevi yalnızca geri döndürülebilir istisnayı işlemedi gösterir. Çeviri işlevi bir C özel geçirirse [sonlandırmak](../c-runtime-library/reference/terminate-crt.md) olarak adlandırılır.  
+ Bu sınıf kullanmak için her zaman bir C özel durum iç özel durum işleme mekanizmasını tarafından çağrılan özel bir C özel durum çevirisi işlevi yükleyin. Çeviri işlevinizi içinde herhangi bir türü belirtilmiş özel durumu oluşturabilecek (belki de bir `SE_Exception` türü veya sınıf türü türetilen `SE_Exception`), yakalandı uygun eşleşen C++ tarafından **catch** işleyici. Çeviri işlevi yalnızca geri dönebilirsiniz özel durum işlemedi gösterir. Çeviri işlevi C özel durum harekete geçirirse [sonlandırmak](../c-runtime-library/reference/terminate-crt.md) çağrılır.  
   
- Özel çeviri işlevi belirtmek için arama [_set_se_translator](../c-runtime-library/reference/set-se-translator.md) çeviri işlevinizi tek bağımsız değişken olarak adıyla işlevi. Her işlev çağrısını sahip yığında için yazdığınız çeviri işlevi bir kez çağrılır **deneyin** engeller. Hiçbir varsayılan çeviri işlevi yoktur; bir çağırarak belirtmezseniz, `_set_se_translator`, C özel durumu yalnızca üç nokta yakalanabilir **catch** işleyicisi.  
+ Özel çeviri işlevi belirtmek için çağrı [_set_se_translator](../c-runtime-library/reference/set-se-translator.md) tek bağımsız değişken olarak çeviri işlev uygulamanızın adıyla işlevi. Her yığında olan işlev çağrısını için yazdığınız çeviri işlevi bir kez çağrılır **deneyin** engeller. Hiçbir varsayılan çeviri işlevi yoktur; bir çağırarak belirtmezseniz `_set_se_translator`, C özel durumu yalnızca üç nokta yakalanabilir **catch** işleyici.  
   
 ## <a name="example"></a>Örnek  
- Örneğin, aşağıdaki kod bir özel çeviri işlevi yükler ve tarafından Sarmalanan bir C özel durumu oluşturur `SE_Exception` sınıfı:  
+ Örneğin, aşağıdaki kod bir özel çeviri işlevi yükler ve ardından tarafından Sarmalanan bir C özel durumu harekete `SE_Exception` sınıfı:  
   
-```  
+```cpp 
 // exceptions_Exception_Handling_Differences3.cpp  
 // compile with: /EHa  
 #include <stdio.h>  

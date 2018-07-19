@@ -18,20 +18,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0db0ea95fe3f5491780cd0297e8d3f56b6800e1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4772c62db1443beaf6a5fff962a52a71823674bc
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948179"
 ---
 # <a name="varianttoperator-"></a>_variant_t::operator =
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      _variant_t& operator=(  
+_variant_t& operator=(  
    const VARIANT& varSrc   
 );  
   
@@ -127,39 +128,39 @@ _variant_t& operator=(
 ## <a name="remarks"></a>Açıklamalar  
  İşleç, `_variant_t` nesnesine yeni bir değer atar:  
   
--   **işleç = (***varSrc***)** varolan atar **değişken** için bir `_variant_t` nesnesi.      
+-   **operator = (***varSrc***)** varolan atar `VARIANT` için bir `_variant_t` nesne.      
   
--   **işleç = (***pVarSrc***)** varolan atar **değişken** için bir `_variant_t` nesnesi.      
+-   **operator = (***pVarSrc***)** varolan atar `VARIANT` için bir `_variant_t` nesne.      
   
--   **işleç = (***var_t_Src***)** varolan atar `_variant_t` nesnesine bir `_variant_t` nesnesi.      
+-   **operator = (***; var_t_src &***)** varolan atar `_variant_t` nesnesini bir `_variant_t` nesne.      
   
--   **işleç = (***sSrc***)** atayan bir **kısa** tamsayı değerine bir `_variant_t` nesnesi.      
+-   **operator = (***sSrc***)** atar bir **kısa** tamsayı değerini bir `_variant_t` nesne.      
   
--   **işleç = (**`lSrc`**)** atayan bir **uzun** tamsayı değerine bir `_variant_t` nesnesi.      
+-   **operator = (**`lSrc`**)** atar bir **uzun** tamsayı değerini bir `_variant_t` nesne.      
   
--   **işleç = (***fltSrc***)** atar bir **float** sayısal değer için bir `_variant_t` nesnesi.      
+-   **operator = (***; fltsrc &***)** atar bir **float** sayısal değeri bir `_variant_t` nesne.      
   
--   **işleç = (***dblSrc***)** atar bir **çift** sayısal değer için bir `_variant_t` nesnesi.      
+-   **operator = (***; dblsrc &***)** atar bir **çift** sayısal değeri bir `_variant_t` nesne.      
   
--   **işleç = (***cySrc***)** atayan bir **CY** nesnesine bir `_variant_t` nesnesi.      
+-   **operator = (***cysrc &***)** atar bir `CY` nesnesini bir `_variant_t` nesne.      
   
--   **işleç = (***bstrSrc***)** atayan bir `BSTR` nesnesine bir `_variant_t` nesnesi.      
+-   **operator = (***bstrSrc***)** atar bir `BSTR` nesnesini bir `_variant_t` nesne.      
   
--   **işleç = (***wstrSrc***)** bir UNICODE dizesi atar bir `_variant_t` nesnesi.      
+-   **operator = (***; wstrsrc &***)** atar bir Unicode dizesini bir `_variant_t` nesne.      
   
--   **işleç = (**`strSrc`**)** birden çok baytlı dizeye atar bir `_variant_t` nesnesi.      
+-   **operator = (**`strSrc`**)** çok baytlı bir string'e atar bir `_variant_t` nesne.      
   
--   **işleç = (** `bSrc` **)** atayan bir `bool` değeri bir `_variant_t` nesnesi.    
+-   **operator = (** `bSrc` **)** atar bir **bool** değerini bir `_variant_t` nesne.    
   
--   **işleç = (***pDispSrc***)** atayan bir **VT_DISPATCH** nesnesine bir `_variant_t` nesnesi.      
+-   **operator = (***; pdispsrc &***)** atar bir `VT_DISPATCH` nesnesini bir `_variant_t` nesne.      
   
--   **işleç = (***pIUnknownSrc***)** atayan bir **VT_UNKNOWN** nesnesine bir `_variant_t` nesnesi.      
+-   **operator = (***pıunknownsrc &***)** atar bir `VT_UNKNOWN` nesnesini bir `_variant_t` nesne.      
   
--   **işleç = (***decSrc***)** atayan bir **ondalık** değeri bir `_variant_t` nesnesi.      
+-   **operator = (***decSrc***)** atar bir `DECIMAL` değerini bir `_variant_t` nesne.      
   
--   **işleç = (** `bSrc` **)** atayan bir **bayt** değeri bir `_variant_t` nesnesi.    
+-   **operator = (** `bSrc` **)** atar bir `BYTE` değerini bir `_variant_t` nesne.    
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

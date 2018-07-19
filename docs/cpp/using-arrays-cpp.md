@@ -1,5 +1,5 @@
 ---
-title: Diziler (C++) kullanarak | Microsoft Docs
+title: Dizileri kullanma (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c2140dbe786a5d2a2a1b86eca17912e5e06b922
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 980aaa5bf0b9472e8fb1c6d7f6b3c56aa255d00b
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948020"
 ---
 # <a name="using-arrays-c"></a>Dizileri Kullanma (C++)
-Dizi alt simge işleci kullanarak bir dizinin ayrı ayrı öğeler erişebilirsiniz (`[ ]`). Deyimde hiçbir alt simge olan tek boyutlu dizi kullandıysanız, dizi adı dizinin ilk öğe için bir işaretçi olarak değerlendirilir.  
+Dizi indisi işlecini kullanarak bir dizinin tek tek öğelerine erişebilirsiniz (`[ ]`). Alt indisi olmayan bir ifadede tek boyutlu bir dizi kullanılıyorsa, dizi adı dizideki ilk öğe işaretçisi için değerlendirir.  
   
-```  
+```cpp 
 // using_arrays.cpp  
 int main() {  
    char chArray[10];  
@@ -33,9 +34,9 @@ int main() {
 }  
 ```  
   
- Çok boyutlu diziler kullandığınızda ifadelerinde çeşitli bileşimlerini kullanabilirsiniz.  
+ Çok boyutlu diziler kullandığınızda, ifadelerde çeşitli birleşimler kullanabilirsiniz.  
   
-```  
+```cpp 
 // using_arrays_2.cpp  
 // compile with: /EHsc /W1  
 #include <iostream>  
@@ -54,7 +55,7 @@ int main() {
 }  
 ```  
   
- Önceki kod `multi` üç boyutlu bir dizi türü `double`. `p2multi` İşaretçinin işaret türünde bir dizi `double` üç boyutunun. Bu örnekte, dizi bir, iki ya da üç alt simgeler ile kullanılır. Tüm alt simgeler olarak belirtmek için daha yaygın olmasına rağmen `cout` deyimi, onu bazen faydalıdır dizi öğelerini, belirli bir alt seçmek aşağıdaki tablolarda gösterildiği gibi `cout`.  
+ Önceki kodda, `multi` üç boyutlu bir dizi türü **çift**. `p2multi` İşaretçinin, bir dizi türüne işaret **çift** boyut olarak üç olan. Bu örnekte, dizi bir, iki ve üç alt simgeyle birlikte kullanılır. Tüm alt simgeler olarak belirtmek için daha yaygın olsa `cout` deyiminde olduğu bazen belirli bir alt dizi öğeleri kümesini seçmek adına kullanışlı olabilir izleyen gösterildiği `cout`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Diziler](../cpp/arrays-cpp.md)

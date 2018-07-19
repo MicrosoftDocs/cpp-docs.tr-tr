@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e7ae83cd92ac8441d842e704446d519f57d4f65
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fce633707096db8913da6d3601da20d14d3704c7
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847734"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961489"
 ---
 # <a name="ltiosgt"></a>&lt;iOS&gt;
 
-İostreams işlemi için çeşitli türleri ve temel işlevleri tanımlar. Bu üst başka bir iostream üstbilgileri tarafından sizin için genellikle bulunur; nadiren doğrudan dahil.
+İostreams çalışması için çeşitli türleri ve işlevleri temel tanımlar. Bu üstbilginin başka bir iostream üstbilgi tarafından sizin için genellikle bulunur; nadiren doğrudan dahil.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,9 +37,9 @@ ms.locfileid: "33847734"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çok sayıda işlevleri manipülatörleri var. Bir manipulator bildirilen \<ios > sınıfının bağımsız değişken nesnesinde depolanan değerleri değiştirir [ios_base](../standard-library/ios-base-class.md). Diğer manipülatörleri şablon sınıfları birini uzmanlaşması gibi bu sınıftan türetilen türdeki nesneleri tarafından denetlenen akışları eylemler gerçekleştirme [basic_istream](../standard-library/basic-istream-class.md) veya [basic_ostream](../standard-library/basic-ostream-class.md). Örneğin, [noskipws](../standard-library/ios-functions.md#noskipws)(**str**) biçimi bayrağını temizler `ios_base::skipws` nesnesindeki **str**, olabilen bu türlerden biri.
+Çok sayıda işlevleri manipülatörleri var. Bildirilen bir işleyici \<ios > sınıfının, bağımsız değişken nesnede depolanan değerleri değiştirir [ios_base](../standard-library/ios-base-class.md). Diğer manipülatörleri akışlarında nesnelerin bir şablon sınıfının bir özelleştirme gibi bu sınıftan türetilmiş bir tür tarafından denetlenen eylemleri gerçekleştirme [basic_istream](../standard-library/basic-istream-class.md) veya [basic_ostream](../standard-library/basic-ostream-class.md). Örneğin, [noskipws](../standard-library/ios-functions.md#noskipws)(**str**) biçimi bayrağını temizler `ios_base::skipws` nesnesindeki `str`, olabilen bu türlerden biri.
 
-Ayrıca, bir çıkış akışı ekleyerek bir manipulator çağırabilirsiniz veya sınıflar için sağlanan özel ekleme ve çıkarma işlemleri nedeniyle bir giriş akıştan ayıklanıyor türetilen `ios_base`. Örneğin:
+Elem ekleyerek bir işleyici çağırabilir veya sınıfından türetilen sınıflar için sağlanan özel ekleme ve çıkarma işlemleri nedeniyle, giriş akışından ayıklama `ios_base`. Örneğin:
 
 ```cpp
 istr>> noskipws;
@@ -51,48 +51,48 @@ istr>> noskipws;
 
 |Tür adı|Açıklama|
 |-|-|
-|[iOS](../standard-library/ios-typedefs.md#ios)|Eski iostream kitaplığı ios sınıfından destekler.|
-|[streamoff](../standard-library/ios-typedefs.md#streamoff)|İç işlemleri destekler.|
-|[streampos](../standard-library/ios-typedefs.md#streampos)|Arabellek işaretçi veya dosya işaretçisini geçerli konumunu tutar.|
+|[iOS](../standard-library/ios-typedefs.md#ios)|Eski iostream Kitaplığı'ndan ios sınıf destekler.|
+|[streamoff](../standard-library/ios-typedefs.md#streamoff)|İç işlemlerini destekler.|
+|[streampos](../standard-library/ios-typedefs.md#streampos)|Arabelleğin işaretçisini veya dosya işaretçisi konumunu içerir.|
 |[streamsize](../standard-library/ios-typedefs.md#streamsize)|Akış boyutunu belirtir.|
-|[wios](../standard-library/ios-typedefs.md#wios)|Eski iostream kitaplığı wios sınıfından destekler.|
-|[wstreampos](../standard-library/ios-typedefs.md#wstreampos)|Arabellek işaretçi veya dosya işaretçisini geçerli konumunu tutar.|
+|[wios](../standard-library/ios-typedefs.md#wios)|Eski iostream kitaplığı wios sınıftan destekler.|
+|[wstreampos](../standard-library/ios-typedefs.md#wstreampos)|Arabelleğin işaretçisini veya dosya işaretçisi konumunu içerir.|
 
 ### <a name="manipulators"></a>Manipülatörleri
 
 |||
 |-|-|
-|[boolalpha](../standard-library/ios-functions.md#boolalpha)|Belirtir türündeki bu değişkenler [bool](../cpp/bool-cpp.md) olarak görünür **true** veya **false** akış.|
-|[Ara](../standard-library/ios-functions.md#dec)|Tamsayı değişkenleri temel 10 gösterimde görüntüleneceğini belirtir.|
-|[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Bayraklarını yapılandırır bir `ios_base` nesne float değerleri için bir varsayılan görüntü biçimi kullanın.|
-|[Sabit](../standard-library/ios-functions.md#fixed)|Bir kayan noktalı sayının Sabit ondalık gösterimde görüntüleneceğini belirtir.|
-|[Onaltılık](../standard-library/ios-functions.md#hex)|Tamsayı değişkenleri temel 16 gösterimde görüntüleneceğini belirtir.|
-|[internal](../standard-library/ios-functions.md#internal)|Sayının işaretini sola hizalı olarak ve sağa hizalı olarak numarası neden olur.|
-|[Sol](../standard-library/ios-functions.md#left)|Sol kenar boşluğu ile akış temizleme görünmesi çıkış genişliği kadar geniş değil metin neden olur.|
-|[noboolalpha](../standard-library/ios-functions.md#noboolalpha)|Belirtir türündeki bu değişkenler [bool](../cpp/bool-cpp.md) 1 veya 0'a akış olarak görünür.|
+|[boolalpha](../standard-library/ios-functions.md#boolalpha)|Belirtir, türü değişkenlerindeki [bool](../cpp/bool-cpp.md) olarak görünür **true** veya **false** akış.|
+|[Ara](../standard-library/ios-functions.md#dec)|Tamsayı değişkenleri taban 10 gösteriminde görüneceğini belirtir.|
+|[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Bayraklarını yapılandırır bir `ios_base` kayan nokta değerleri için varsayılan görüntüleme biçimi kullanılacak nesne.|
+|[düzeltildi](../standard-library/ios-functions.md#fixed)|Bir kayan noktalı sayı sabit ondalık gösteriminde görüntüleneceğini belirtir.|
+|[onaltılık](../standard-library/ios-functions.md#hex)|Tamsayı değişkenleri temel 16 gösteriminde görüneceğini belirtir.|
+|[internal](../standard-library/ios-functions.md#internal)|Bir sayının işaretini sola hizalı olarak ve sağa hizalı olarak sayı neden olur.|
+|[Sol](../standard-library/ios-functions.md#left)|Sol kenar boşluğu ile stream temizleme görünmesini çıkış olarak geniş olmayan metin neden olur.|
+|[noboolalpha](../standard-library/ios-functions.md#noboolalpha)|Belirten bu türü değişkenlerindeki [bool](../cpp/bool-cpp.md) 1 veya 0 akışı gibi görünür.|
 |[noshowbase](../standard-library/ios-functions.md#noshowbase)|Bir sayı görüntülendiği notational temel belirten devre dışı bırakır.|
-|[noshowpoint](../standard-library/ios-functions.md#noshowpoint)|Kayan nokta sayıları, kesirli bölümü sıfırdır yalnızca tam sayı bölümünü görüntüler.|
-|[noshowpos](../standard-library/ios-functions.md#noshowpos)|Açıkça imzalanmamış pozitif sayılar neden olur.|
+|[noshowpoint](../standard-library/ios-functions.md#noshowpoint)|Kayan noktalı sayıların, kesirli bölümü sıfırdır. yalnızca tam sayı bölümünü görüntüler.|
+|[noshowpos](../standard-library/ios-functions.md#noshowpos)|Pozitif sayı değil açıkça imzalanmasını neden olur.|
 |[noskipws](../standard-library/ios-functions.md#noskipws)|Giriş akışı tarafından okunacak alanları neden.|
-|[nounitbuf](../standard-library/ios-functions.md#nounitbuf)|Çıkış arabelleğe ve arabellek dolduğunda, işlenen için neden olur.|
-|[nouppercase](../standard-library/ios-functions.md#nouppercase)|Onaltılık basamak ve bilimsel gösterimde üs küçük harflerle görüntüleneceğini belirtir.|
-|[Eki](../standard-library/ios-functions.md#oct)|Tamsayı değişkenleri temel 8 gösterimde görüntüleneceğini belirtir.|
-|[Sağ](../standard-library/ios-functions.md#right)|Sağ kenar boşluğu ile akış temizleme görünmesi çıkış genişliği kadar geniş değil metin neden olur.|
-|[Bilimsel](../standard-library/ios-functions.md#scientific)|Kayan nokta numarası bilimsel gösterim kullanılarak görüntülenmesine neden olur.|
+|[nounitbuf](../standard-library/ios-functions.md#nounitbuf)|Arabelleğe alınan ve arabelleği dolu olduğunda işlenen nedenleri çıktı.|
+|[nouppercase](../standard-library/ios-functions.md#nouppercase)|Onaltılık basamak ve bilimsel gösterimde üs küçük harflerle görüneceğini belirtir.|
+|[Eki](../standard-library/ios-functions.md#oct)|Tamsayı değişkenleri temel 8 gösteriminde görüneceğini belirtir.|
+|[sağ](../standard-library/ios-functions.md#right)|Sağ kenar boşluğu ile stream temizleme görünmesini çıkış olarak geniş olmayan metin neden olur.|
+|[Bilimsel](../standard-library/ios-functions.md#scientific)|Kayan noktalı sayılar bilimsel gösterim kullanılarak görüntüleneceğini neden olur.|
 |[showbase](../standard-library/ios-functions.md#showbase)|Bir sayı görüntülendiği notational temel gösterir.|
-|[showpoint](../standard-library/ios-functions.md#showpoint)|Kesirli bölümü sıfır olsa bile bir kayan noktalı sayı ve basamak tamsayılı bölümünü ondalık konumun sağında görüntüler.|
-|[showpos](../standard-library/ios-functions.md#showpos)|Açıkça imzalanacak pozitif sayılar neden olur.|
-|[skipws](../standard-library/ios-functions.md#skipws)|Giriş akışı tarafından değil okunacak alanları neden.|
+|[showpoint](../standard-library/ios-functions.md#showpoint)|Kesirli bölümü sıfır olsa bile tam sayı bölümü bir kayan noktalı sayı ve sayılar ondalık noktasının sağında görüntüler.|
+|[showpos](../standard-library/ios-functions.md#showpos)|Pozitif sayıları açıkça imzalanmasını neden olur.|
+|[skipws](../standard-library/ios-functions.md#skipws)|Giriş akışı tarafından okunur olmayan alanları neden.|
 |[unitbuf](../standard-library/ios-functions.md#unitbuf)|Çıkış arabelleği boş olmadığında işlenmesi için neden olur.|
-|[büyük harf](../standard-library/ios-functions.md#uppercase)|Onaltılık basamak ve bilimsel gösterimde üs büyük görüntüleneceğini belirtir.|
+|[büyük harf](../standard-library/ios-functions.md#uppercase)|Onaltılık basamak ve bilimsel gösterimde üs büyük harf olarak görüneceğini belirtir.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_ios](../standard-library/basic-ios-class.md)|Şablon sınıfı için her iki giriş akışları ortak depolama ve üye işlevleri açıklanmaktadır (şablon sınıfının [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları (şablon sınıfının [basic_ostream](../standard-library/basic-ostream-class.md)), bağlıdır Şablon parametreleri.|
-|[fpos](../standard-library/fpos-class.md)|Şablon sınıfı bir rastgele dosya konumu göstergesi akış içinde geri yüklemek için gerekli tüm bilgileri depolayan bir nesne tanımlar.|
-|[ios_base](../standard-library/ios-base-class.md)|Şablon parametreleri dayanmayan ortak giriş ve çıkış akışları üye işlevleri ve depolama sınıfı açıklanmaktadır.|
+|[basic_ios](../standard-library/basic-ios-class.md)|Şablon sınıfı için her iki giriş akışları genel depolama ve üye işlevleri tanımlar (şablon sınıfının [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışlarına (şablon sınıfının [basic_ostream](../standard-library/basic-ostream-class.md)) bağlı olduğu Şablon parametreleri.|
+|[fpos](../standard-library/fpos-class.md)|Şablon sınıfı, yükün herhangi bir rastgele dosya konumu göstergesi geri yüklemek için gerekli tüm bilgileri depolayan nesneyi tanımlar.|
+|[ios_base](../standard-library/ios-base-class.md)|Depolama sınıfı açıklar ve üye işlevleri, şablon parametrelerine bağlı olmayan giriş ve çıkış yaygın olarak kullanılan akış.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -14,19 +14,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cad92eb5ce664d22cc5ee0ad8b4c26d41c88d883
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 13883e1426be22c8cf3d329be33258c69511900d
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842852"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966025"
 ---
 # <a name="container-classreference"></a>Kapsayıcı Sınıfı::reference
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Öğenin denetimli sırasının bir başvuru olarak hizmet verebilir nesneyi açıklar.
+Denetlenen dizinin bir öğesine bir başvuru olarak hizmet verebilen bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,7 +37,7 @@ typedef T2 reference;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bunu açıklanan burada belirtilmemiş türler eşanlamlısı olarak **T2** (genellikle **Alloc::reference**). Türünde bir nesne **başvuru** türünde bir nesneye cast [const_reference](../standard-library/container-class-const-reference.md).
+Açıklanmıştır belirtilmeyen türünün eşanlamlısı olarak burada `T2` (genellikle `Alloc::reference`). Bir nesne türü `reference` türünde bir nesne başvurusuna yayınlanabilir [const_reference](../standard-library/container-class-const-reference.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

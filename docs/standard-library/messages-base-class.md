@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ddde025fa633ccc1b9561acf595de186548ba3a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e402f103a29dd4c4af49fa1c34b9cae71fc6e9af
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857175"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964853"
 ---
 # <a name="messagesbase-class"></a>messages_base Sınıfı
 
-Temel sınıf tanımlar bir `int` türü kataloğun iletileri.
+Temel sınıf açıklayan bir **int** iletilerin kataloğu için türü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,7 +38,7 @@ struct messages_base : locale::facet {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü kataloğun türü için eş anlamlı olduğundan `int` iletileri olası dönüş değerleri açıklayan:: [do_open](../standard-library/messages-class.md#do_open).
+Türe ilişkin bir eşanlam türü kataloğudur **int** iletileri olası dönüş değerlerini açıklayan:: [do_open](../standard-library/messages-class.md#do_open).
 
 ## <a name="requirements"></a>Gereksinimler
 

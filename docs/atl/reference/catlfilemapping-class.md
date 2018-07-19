@@ -17,18 +17,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 524e5d9c7cef5bcff0d72ddf1225ef79b1b26d64
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 17f4735b56d6d15dfe3740c0dad727765e0eb84b
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358847"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882311"
 ---
 # <a name="catlfilemapping-class"></a>CAtlFileMapping sınıfı
-Bu sınıf yöntemleri için bir atama işleci ekleyerek bir bellek eşlemeli dosyasını temsil eder [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
+Bu sınıfın temsil yöntemleri için bir atama işleci ekleyerek bir bellek işlemeli dosya [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,8 +38,8 @@ class CAtlFileMapping : public CAtlFileMappingBase
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Atama işleci için kullanılan veri türü.  
+ *T*  
+ Tür dönüştürme işleci için kullanılan veri türü.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -47,10 +47,10 @@ class CAtlFileMapping : public CAtlFileMappingBase
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlFileMapping::operator T *](#operator_t_star)|Örtük dönüştürme verir `CAtlFileMapping` nesneleri `T` **\***.|  
+|[CAtlFileMapping::operator T *](#operator_t_star)|Örtük dönüştürme sağlayan `CAtlFileMapping` nesneleri için `T` **\***.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, örtük dönüştürmeye izin vermek için tek atama işleci ekler `CAtlFileMapping` nesneleri `T` **\***. Diğer üyeleri temel sınıfı tarafından sağlanan [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
+ Bir tek atama işleci örtük dönüştürme izin vermek için bu sınıfı ekler `CAtlFileMapping` nesneleri için `T` **\***. Diğer üyeleri taban sınıfı tarafından sağlanan [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md)  
@@ -61,18 +61,18 @@ class CAtlFileMapping : public CAtlFileMappingBase
  **Başlık:** atlfile.h  
   
 ##  <a name="operator_t_star"></a>  CAtlFileMapping::operator T *  
- Örtük dönüştürme verir `CAtlFileMapping` nesneleri `T` **\***.  
+ Örtük dönüştürme sağlayan `CAtlFileMapping` nesneleri için `T` **\***.  
   
 ```  
 operator T*() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir `T` **\*** bellekle eşlenen dosya başlangıç işaretçisi.  
+ Döndürür bir `T` **\*** bellekle eşlenen dosya işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) ve döndürülen işaretçi olarak reinterprets bir `T` **\*** nerede *T* şablon olarak kullanılan türü Bu sınıf parametresi.  
+ Çağrıları [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) ve döndürülen işaretçi olarak derecenin bir `T` **\*** burada *T* şablon olarak kullanılan bir tür Bu sınıf parametresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CAtlFileMappingBase sınıfı](../../atl/reference/catlfilemappingbase-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

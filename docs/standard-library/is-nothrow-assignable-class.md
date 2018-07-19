@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f11e1ce8b016ab8c6e8af04e351e80307b2189e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 424fcf5b960182326dc1192d8d60f168ead59d98
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843450"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965421"
 ---
 # <a name="isnothrowassignable-class"></a>is_nothrow_assignable sınıfı
 
-Değeri olup olmadığını sınar `From` türü atanabilen `To` türü ve atama değil atmak için bilinir.
+Bir değeri olup olmadığını test *gelen* türüne atanabilen *için* türü ve atama değil atmasına bilinir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,13 +37,13 @@ struct is_nothrow_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-Atamayı alan nesnesi türü için.
+*İçin* atamayı alan nesnenin türü.
 
-Nesne türünden değer sağlar.
+*Gelen* değer sağlayan bir nesne türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İfade `declval<To>() = declval<From>()` doğru biçimlendirilmiş olması gerekir ve derleyiciye değil throw bilinmesi gerekir. Her ikisi de `From` ve `To` tam tür `void`, veya bilinmeyen bağlı dizileri.
+İfade `declval<To>() = declval<From>()` iyi biçimlendirilmiş olmalıdır ve derleyiciye değil atmak için bilinmesi gerekir. Her ikisi de *gelen* ve *için* tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
 
 ## <a name="requirements"></a>Gereksinimler
 

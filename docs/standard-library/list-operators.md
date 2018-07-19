@@ -1,5 +1,5 @@
 ---
-title: '&lt;Liste&gt; işleçleri | Microsoft Docs'
+title: '&lt;Liste&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,23 +20,23 @@ helpviewer_keywords:
 - std::operator&lt; (list)
 - std::operator&lt;= (list)
 - std::operator== (list)
-ms.openlocfilehash: b2647cf836fb565115b8a582085b6108c01a3420
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ba77722abb28f246d305b44fb78379b2297ccc14
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856654"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965723"
 ---
 # <a name="ltlistgt-operators"></a>&lt;Liste&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
+|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-Testleri işlecinin sol tarafındaki liste nesnesi sağ tarafında listesi nesnesine eşit değil.
+İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(
@@ -46,17 +46,17 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **listesi**.
+*Sol* türünde bir nesne `list`.
 
-`right` Türünde bir nesne **listesi**.
+*doğru* türünde bir nesne `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** listeler eşit; değilse **false** listeler eşit olması durumunda.
+**doğru** listeleri eşit; değilse, **false** listeleri aynıysa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-List nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki liste aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+List nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki liste, bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerleri eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -83,9 +83,9 @@ Lists not equal.
 *\
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Liste nesnesi işlecinin sol tarafındaki liste nesnesi sağ tarafında küçükse testleri.
+İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki listesi nesneden küçük olup olmadığını sınar.
 
 ```cpp
 bool operator<(
@@ -95,17 +95,17 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **listesi**.
+*Sol* türünde bir nesne `list`.
 
-`right` Türünde bir nesne **listesi**.
+*doğru* türünde bir nesne `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** listenin işlecinin sol tarafındaki ancak değil listenin işlecinin sağ tarafında eşit; Aksi takdirde düşükse **false**.
+**doğru** işlecinin sol tarafındaki listenin daha ancak değil işlecin sağ tarafındaki listenin eşit Aksi takdirde küçükse **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-List nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Küçüktür-iki nesne arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını alan daha.
+List nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Daha az-iki nesne arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
 
 ### <a name="example"></a>Örnek
 
@@ -136,9 +136,9 @@ List c1 is less than list c2.
 *\
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Listenin işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında liste nesnesi eşit veya daha az olur.
+Listenin işlecinin sol tarafında nesne küçük olup olmadığını sınar veya liste nesnesi eşit işlecin sağ tarafındaki.
 
 ```cpp
 bool operator<=(
@@ -148,17 +148,17 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **listesi**.
+*Sol* türünde bir nesne `list`.
 
-`right` Türünde bir nesne **listesi**.
+*doğru* türünde bir nesne `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki liste veya liste işlecinin sağ tarafında eşit; aksi düşükse **false**.
+**doğru** işlecinin sol tarafındaki listenin daha veya işlecin sağ tarafındaki listenin eşittir; Aksi takdirde küçükse **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-List nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki nesne arasındaki ilişki için küçük veya eşittir ilk çiftlerini eşit olmayan bir karşılaştırmasını temel alır.
+List nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki nesne arasındaki ilişki için daha az veya eşit ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
 
 ### <a name="example"></a>Örnek
 
@@ -189,9 +189,9 @@ List c1 is less than or equal to list c2.
 *\
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-Liste nesnesi işlecinin sol tarafındaki sağ tarafında listesi nesnesine eşitse testleri.
+İşlecin sol tarafındaki listesi nesnesinin işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator==(
@@ -201,17 +201,17 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **listesi**.
+*Sol* türünde bir nesne `list`.
 
-`right` Türünde bir nesne **listesi**.
+*doğru* türünde bir nesne `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** listenin işlecinin sol tarafındaki eşitse işlecinin sağ tarafında listesine aksi **false**.
+**doğru** işlecinin sol tarafındaki listenin ise, aksi takdirde işlecin sağ tarafındaki listenin eşit **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-List nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki liste aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.
+List nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. İki liste, bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerleri eşit olur. Aksi takdirde, eşit oldukları.
 
 ### <a name="example"></a>Örnek
 
@@ -238,9 +238,9 @@ The lists are equal.
 *\
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
-Testleri işlecinin sol tarafındaki liste nesnesi sağ taraftaki liste nesnesi değerinden daha büyük.
+İşlecin sol tarafındaki liste nesnesi liste nesnesi işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
 ```cpp
 bool operator>(
@@ -250,17 +250,17 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **listesi**.
+*Sol* türünde bir nesne `list`.
 
-`right` Türünde bir nesne **listesi**.
+*doğru* türünde bir nesne `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki listesi ise, listenin işlecinin sağ tarafında büyük; Aksi takdirde **false**.
+**doğru** işlecinin sol tarafındaki listenin ise, aksi takdirde listede bir işlecin sağ tarafındaki büyük **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-List nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Büyük-iki nesne arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını alan daha.
+List nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyük-iki nesne arasındaki ilişki ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde alan daha.
 
 ### <a name="example"></a>Örnek
 
@@ -291,9 +291,9 @@ List c1 is greater than list c2.
 *\
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Testleri listesi işlecinin sol tarafındaki büyük veya ona eşit listesi nesnesine sağ tarafında nesnesidir.
+İşlecin sol tarafındaki liste nesnesi büyük veya işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator>=(
@@ -303,17 +303,17 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Türünde bir nesne **listesi**.
+*Sol* türünde bir nesne `list`.
 
-`right` Türünde bir nesne **listesi**.
+*doğru* türünde bir nesne `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki liste büyük veya eşit işlecinin sağ tarafında listesine; tersi durumda ise **false**.
+**doğru** işlecinin sol tarafındaki listenin büyüktür veya eşittir işlecin sağ tarafındaki listenin; tersi durumda ise **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-List nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Büyük veya ona eşit iki nesne arasındaki ilişki için ilk çiftlerini eşit olmayan bir karşılaştırmasını temel alır.
+List nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Büyüktür veya eşittir iki nesne arasındaki ilişki için ilk çifti eşit olmayan öğelerin karşılaştırması üzerinde temel alır.
 
 ### <a name="example"></a>Örnek
 
@@ -347,4 +347,4 @@ List c1 is greater than or equal to list c2.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Liste >](../standard-library/list.md)<br/>
+[\<listesi >](../standard-library/list.md)<br/>

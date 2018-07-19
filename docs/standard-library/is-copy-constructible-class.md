@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb4cc6588b61563d547cdbf8e332c66d1909e94d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 568eb077a2006bdb33eb08e0fa5618b7c38a6cb1
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844874"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38962643"
 ---
 # <a name="iscopyconstructible-class"></a>is_copy_constructible sınıfı
 
-Kopya Oluşturucu türündeyse testleri.
+Kopya Oluşturucu türüne sahip olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +36,11 @@ struct is_copy_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` false tuttuğu kopya Oluşturucu, aksi takdirde sahip bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *Ty* tuttuğu yanlış bir kopya Oluşturucu, aksi takdirde sahip bir sınıftır.
 
 ## <a name="example"></a>Örnek
 

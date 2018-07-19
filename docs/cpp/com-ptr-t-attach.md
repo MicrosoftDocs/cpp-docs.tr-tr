@@ -17,44 +17,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7341695ad0cbc8384da859b80a72a63d8d52215f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f8e982ebd9a09d4dfcb5e4b5e150b42a1e8d5c75
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948192"
 ---
 # <a name="comptrtattach"></a>_com_ptr_t::Attach
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bu akıllı işaretçinin türü ham arabirim işaretçisi yalıtır.  
+ Bu akıllı işaretçinin türü ham arabirim işaretçisi kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      void Attach(  
-   Interface* pInterface   
-) throw( );  
-void Attach(  
-   Interface* pInterface,  
-   bool fAddRef   
-) throw( );  
+void Attach( Interface* pInterface ) throw( );  
+void Attach( Interface* pInterface, bool fAddRef ) throw( );  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `pInterface`  
+ *pInterface*  
  Ham arabirim işaretçisi.  
   
- `fAddRef`  
- Eğer öyleyse **true**, ardından `AddRef` olarak adlandırılır. Eğer öyleyse **false**, `_com_ptr_t` nesnesini alır çağırmadan ham arabirim işaretçisi sahipliğini `AddRef`.  
+ *fAddRef*  
+ TRUE ise, `AddRef` çağrılır. FALSE ise `_com_ptr_t` Nesne sahipliği çağırmadan ham arabirim işaretçisi alır `AddRef`.  
   
 ## <a name="remarks"></a>Açıklamalar  
   
--   **Ekleme (**`pInterface`**)** `AddRef` çağrılmaz.     Arabirim sahipliğini için geçirilen `_com_ptr_t` nesnesi. **Yayın** önceden kapsüllenmiş işaretçi başvuru sayısı azaltma için çağrılır.  
+-   **Ekleme (***pInterface***)** `AddRef` çağrılmaz.     Arabirim sahipliğinin için geçirilen `_com_ptr_t` nesne. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır.  
   
--   **Ekleme (** `pInterface` **,**`fAddRef`**)** varsa `fAddRef` olan **true**, `AddRef` başvuru artırmak için çağrılır Kapsüllenmiş arabirim işaretçisi için sayısı.       Varsa `fAddRef` olan **false**, bu `_com_ptr_t` nesnesini alır çağırmadan ham arabirim işaretçisi sahipliğini `AddRef`. **Yayın** önceden kapsüllenmiş işaretçi başvuru sayısı azaltma için çağrılır.  
+-   **Ekleme (***pInterface* **,***fAddRef***)** varsa *fAddRef* TRUE ise `AddRef`kapsüllenmiş arabirim işaretçisini için başvuru sayısını artırmak için çağrılır.       Varsa *fAddRef* yanlış, bu `_com_ptr_t` Nesne sahipliği çağırmadan ham arabirim işaretçisi alır `AddRef`. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

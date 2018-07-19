@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7a80ffbfbcfb8c350eecc54e87c4cadaaab0295
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 85efc646daf6ddb55f37c1f46157671eda2f13a8
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841424"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963582"
 ---
 # <a name="addpointer-class"></a>add_pointer Sınıfı
 
@@ -40,17 +40,17 @@ using add_pointer_t = typename add_pointer<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* değiştirmek için türü.
+*T* değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Üye typedef `type` aynı türde adları `remove_reference<T>::type*`. Diğer ad `add_pointer_t` üye typedef erişmek için bir kısayol `type`.
+Üye **typedef** `type` aynı türü adları `remove_reference<T>::type*`. Diğer ad `add_pointer_t` üyesine erişmek için bir kısayol **typedef** `type`.
 
-Bir işaretçi bir başvuru yapmak için geçersiz olduğundan `add_pointer` başvuru varsa kaldırır, kendisinden önce belirtilen türden işaretçi-için-type hale getirir. Sonuç olarak, bir türü ile kullanabileceğiniz `add_pointer` türü bir başvuru olup hakkında kaygı olmadan.
+Bir işaretçi, başvuru yapmak için geçersiz olduğundan `add_pointer` başvuruyu, varsa kaldırır, kendisinden önce belirtilen türden bir işaretçi türü sağlar. Sonuç olarak, bir türü ile kullanabileceğiniz `add_pointer` türün başvuru olup hakkında endişe olmadan.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterilmiştir `add_pointer` türü türü için bir işaretçi ile aynıdır.
+Aşağıdaki örnek, gösterir `add_pointer` türü bir işaretçi türü ile aynıdır.
 
 ```cpp
 #include <type_traits>

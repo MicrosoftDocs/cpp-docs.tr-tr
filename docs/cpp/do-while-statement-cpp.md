@@ -19,11 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81ed3628b75b98bdf7883de275ccd8f74a066abd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d2de180d58c31f4bd6c8b15eb69076b99f8b57b0
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948157"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C++)
 Yürüten bir *deyimi* belirtilen sonlandırma koşulu kadar sürekli olarak ( *ifade*) sıfır olarak değerlendirilir.  
@@ -37,18 +38,18 @@ while ( expression ) ;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonlandırma koşulu test döngünün her yürütme sonrasında yapılan; Bu nedenle, bir `do-while` sonlandırma ifadenin değerine bağlı olarak bir veya birden çok kez döngü yürütür. `do-while` Deyimi de sonlandırmak ne zaman bir [sonu](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), veya [dönmek](../cpp/return-statement-cpp.md) deyimi deyimi gövdesi içinde yürütülür.  
+ Sonlandırma koşulunun testi döngünün her yürütülmesi yapılır; Bu nedenle, bir **yapın-sırada** sonlandırma ifadesinin değerine bağlı olarak bir veya daha fazla kez döngü yürütür. **Yapın-sırada** deyimi de sonlandırılabilir bir [sonu](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), veya [dönüş](../cpp/return-statement-cpp.md) deyimi, deyim gövdesi içinde yürütülür.  
   
- *İfade* aritmetik veya işaretçi türü olmalıdır. Yürütme gibi çalışır:  
+ *İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi çalışır:  
   
-1.  Deyimi gövdesi yürütülür.  
+1.  İfade gövdesi yürütülür.  
   
-2.  Ardından, *ifade* değerlendirilir. Varsa *ifade* false, `do-while` açıklamayı sonlandıran ve denetim geçirir program sonraki ifadesine. Varsa *ifade* (sıfır), işlem yinelenir, adım 1 ile başlayan doğrudur.  
+2.  Ardından, *ifade* değerlendirilir. Varsa *ifade* false ise **yapın-sırada** deyimi sonlanır ve denetim geçer programdaki sonraki deyime. Varsa *ifade* (sıfırdan farklı) işlem tekrarlanır, adım 1'den itibaren geçerlidir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek gösterilmektedir `do-while` deyimi:  
+ Aşağıdaki örnekte **yapın-sırada** deyimi:  
   
-```  
+```cpp 
 // do_while_statement.cpp  
 #include <stdio.h>  
 int main()  
@@ -63,7 +64,7 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yineleme deyimleri](../cpp/iteration-statements-cpp.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [while deyimi (C++)](../cpp/while-statement-cpp.md)   
  [for deyimi (C++)](../cpp/for-statement-cpp.md)   
  [Range-based for Deyimi (C++)](../cpp/range-based-for-statement-cpp.md)

@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a320b02bb97c4f6b506e23a7dc93b36c22421aec
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5408cf05910bdc1802213d69a286707199f0be76
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409767"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940238"
 ---
 # <a name="bstrtoperator-"></a>_bstr_t::operator !
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Denetler kapsüllenmiş `BSTR` olan bir **NULL** dize.  
+ Denetler kapsüllenmiş `BSTR` boş bir dizi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,9 +39,9 @@ bool operator!( ) const throw( );
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürdüğü **true** Evet ise, **false** değilse.  
+ Yanıt Evet ise true değeri döndürür, aksi takdirde FALSE.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

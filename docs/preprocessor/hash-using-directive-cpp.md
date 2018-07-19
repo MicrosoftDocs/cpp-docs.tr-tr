@@ -1,5 +1,5 @@
 ---
-title: '#using yönergesi (C + +/ CLR) | Microsoft Docs'
+title: '#using yönergesi (C + +/ CLI) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,15 +22,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 053c425a6bb8dcab0dc5cb94db1537f0fff3d9f8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c2255f5de9cc26505bb07110da6368a039009c6c
+ms.sourcegitcommit: b8b1cba85ff423142d73c888be26baa8c33f3cdc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840742"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39093039"
 ---
-# <a name="using-directive-cclr"></a>#using yönergesi (C + +/ CLR)
-Meta verileri ile derlenen bir program aktarır [/CLR](../build/reference/clr-common-language-runtime-compilation.md).  
+# <a name="using-directive-ccli"></a>#using yönergesi (C + +/ CLI)
+İle derlenmiş bir programa meta veri aktarır [/CLR](../build/reference/clr-common-language-runtime-compilation.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,27 +45,27 @@ Meta verileri ile derlenen bir program aktarır [/CLR](../build/reference/clr-co
  `#using <MyComponent.dll>`  
   
  as_friend  
- `file` içindeki tüm türlerin erişilebilir olduğunu belirtir.  Daha fazla bilgi için bkz: [arkadaş derlemeler (C++)](../dotnet/friend-assemblies-cpp.md).  
+ `file` içindeki tüm türlerin erişilebilir olduğunu belirtir.  Daha fazla bilgi için [arkadaş derlemeler (C++)](../dotnet/friend-assemblies-cpp.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `file`, yönetilen verileri ve yönetilen yapıları için içe aktardığınız bir Microsoft ara dili (MSIL) dosyası olabilir. Derleme bildirimi bir .dll dosyası içeriyorsa sonra bildiriminde başvurulan tüm .dll alınır ve oluşturduğunuz derleme listeleyecek *dosya* bir derleme başvurusu olarak meta veriler.  
+ `file`, yönetilen verileri ve yönetilen yapıları için içe aktardığınız bir Microsoft ara dili (MSIL) dosyası olabilir. Bir .dll dosyası bir derleme bildirimi içeren sonra bildiriminde atıf yapılan tüm .dll aktarılır ve oluşturuyor olduğunuz derleme listeler *dosya* bir bütünleştirilmiş kod başvurusu olarak meta.  
   
- Varsa `file` bütünleştirilmiş içermiyor (varsa `file` bir modül) ve geçerli (derleme) uygulamada modülü tür bilgilerini kullanmak istiyorsanız değil, yalnızca modülü parçası olduğunu belirten seçeneğiniz vardır derleme; kullanın[/ASSEMBLYMODULE](../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md). Ardından modüldeki türler derlemeye başvuruda bulunan herhangi bir uygulama için kullanılabilir hale gelir.  
+ Varsa `file` derleme içermiyor (varsa `file` bir modüldür) ve modülü tür bilgilerini geçerli (derleme) kullanmak istiyorsanız değil, yalnızca modülün parçası olduğunu gösteren seçeneğiniz vardır derleme; kullanın[Assemblymodule](../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md). Ardından modüldeki türler derlemeye başvuruda bulunan herhangi bir uygulama için kullanılabilir hale gelir.  
   
- Kullanmak için bir alternatif `#using` olan [/FU](../build/reference/fu-name-forced-hash-using-file.md) derleyici seçeneği.  
+ Kullanılacak alternatif `#using` olduğu [/FU](../build/reference/fu-name-forced-hash-using-file.md) derleyici seçeneği.  
   
- .exe derlemeleri geçirilen `#using` derlenmelidir (Visual Basic veya Visual C#, örneğin) Visual Studio .NET derleyicileri birini kullanarak.  İle derlenen bir .exe derlemesinden meta verileri içeri aktarılmaya çalışılırken **/CLR** bir dosya yükleme özel durumuna neden.  
+ geçirilen .exe derlemeleri `#using` derlenmelidir .NET Visual Studio derleyicileri (Visual Basic veya Visual C#, örneğin) birini kullanarak.  İle derlenmiş .exe derlemesinden meta veriler içe aktarmaya çalışıldığında **/CLR** bir dosya yükleme özel neden olur.  
   
 > [!NOTE]
 >  `#using` ile başvurulan bir bileşen, derleme zamanında içe aktarılan dosyanın farklı bir sürümüyle çalıştırılabilir, bu da bir istemci uygulamasının beklenmedik sonuçlar vermesine neden olur.  
   
  Derleyicinin derlemede (modül değil) bir türü tanıması için, türü çözümlemeye zorlanması gerekir. Bunu türün bir örneğini tanımlayarak yapabilirsiniz. Derleyiciye ilişkin bir derlemede bulunan tür adlarını çözmek için başka yollar da vardır; örneğin, derleme içinde bulunan bir türden devralıyorsanız, daha sonra tür adı derleyici tarafından bilinecektir.  
   
- Kullanılan kaynak kodundan yerleşik meta verileri içe aktarırken [__declspec(thread)](../cpp/thread.md), iş parçacığı semantiğini meta verilerde kalıcı değildir. Örneğin, ile bildirilen bir değişken **__declspec(thread)**, .NET Framework ortak dil çalışma zamanı için yapı ve üzerinden içe aktarılan bir programda derlenmiş `#using`, artık **__declspec () iş parçacığı)** semantiği değişkeni üzerinde.  
+ Kullanılan kaynak kodundan oluşturulan meta veri aktarırken [gt;__declspec(thread)](../cpp/thread.md), iş parçacığı semantiği meta veri içinde kalıcı yapılmaz. Örneğin, bildirilen bir değişken **gt;__declspec(thread)**, .NET Framework ortak dil çalışma zamanı için derleme ve ile içe aktarılan bir programda derlenmiş `#using`, artık **__declspec () iş parçacığı)** semantiği.  
   
  `#using` ile başvurulan bir dosyada içe aktarılan tüm türler (hem yönetilen hem yerel) kullanılabilir, ancak derleyici yerel türleri tanımlar olarak değil bildirimler olarak sayar.  
   
- mscorlib.dll ile derleme yapılırken otomatik olarak başvurulan **/CLR**.  
+ mscorlib.dll ile derleme yaparken otomatik olarak başvurulan **/CLR**.  
   
  LIBPATH ortam değişkeni; derleyici `#using` öğesine geçirilen dosya adlarını çözümlemeye çalışırken aranacak dizinleri belirtir.  
   
@@ -77,7 +77,7 @@ Meta verileri ile derlenen bir program aktarır [/CLR](../build/reference/clr-co
   
 -   .NET Framework sistem dizini.  
   
--   Eklendi dizinleri [/AI](../build/reference/ai-specify-metadata-directories.md) derleyici seçeneği.  
+-   Eklenen dizinler [/AI](../build/reference/ai-specify-metadata-directories.md) derleyici seçeneği.  
   
 -   LIBPATH ortam değişkenindeki dizinler.  
   

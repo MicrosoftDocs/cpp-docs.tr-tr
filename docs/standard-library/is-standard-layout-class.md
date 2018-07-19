@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d899d9c56ecc8b27b18498de225bbba6f0d110d2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6223151acbce299178101735db05f7b4bd516f2f
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852090"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965519"
 ---
 # <a name="isstandardlayout-class"></a>is_standard_layout Sınıfı
 
-Testleri standart bir yerleşim türüdür.
+Standart Düzen türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,11 +39,11 @@ struct is_standard_layout;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Ty`|Sorgu türü|
+|*Ty*|Sorgulanacak tür|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu türü koşulu örneği doğru tutan türü `Ty` false tuttuğu bellekte, aksi takdirde member nesnelerinde standart bir düzenine sahip bir sınıftır.
+Bu tür koşulu örneği true tutan türü *Ty* üye nesneleri standart düzeni false tuttuğu bellekte, aksi takdirde sahip bir sınıftır.
 
 ## <a name="requirements"></a>Gereksinimler
 

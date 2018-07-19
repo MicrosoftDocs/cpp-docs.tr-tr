@@ -4,20 +4,20 @@ ms.custom: ''
 ms.date: 03/28/2017
 ms.topic: language-reference
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: 7bd7fd4e01fb210069f4dbae42a671e4dd9c64c9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4a7ddcd7a83c64fe160d06d9b8ae378874e7518c
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416203"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940683"
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 
-C++ Standart öznitelikler kümesi tanımlar ve ayrıca kendi özniteliklerle (satıcıya özgü ad alanı) tanımlamak derleyici satıcılarının izin verir, ancak derleyicileri yalnızca standardında tanımlanan özniteliklere tanımak için gereklidir.
+C++ standardı bir öznitelik kümesini tanımlar ve ayrıca kendi öznitelikleri (içinde bir satıcıya özgü ad alanı) tanımlamak derleyici satıcıları sağlar, ancak derleyicileri standartlarındaki öznitelikleri tanımak için gereklidir.
 
-Bazı durumlarda standart öznitelikleri derleyici özgü declspec parametrelerle çakışıyor. Visual C++'da, kullandığınız `[[deprecated]]` kullanmak yerine özniteliği `declspec(deprecated)` ve öznitelik herhangi uyumluluğunu derleyici tarafından tanınır. Diğer tüm declspec parametreleri için dllimport ve dllexport gibi olmadığından olarak henüz hiçbir öznitelik eşdeğeri declspec sözdizimi kullanmaya devam etmeniz gerekir. Öznitelikler tür sistemi etkilemez ve bir program anlamını değiştirmeyin. Derleyicileri bunlar tanımadığınız öznitelik değerleri yok sayın.
+Bazı durumlarda standart öznitelikleri derleyici özgü declspec parametrelerle çakışıyor. Visual c++'ta kullanabileceğiniz `[[deprecated]]` kullanmak yerine özniteliği `declspec(deprecated)` ve öznitelik herhangi uyumlu derleyici tarafından tanınır. Tüm diğer declspec parametreleri için dllimport ve dllexport gibi olarak henüz özniteliği eşdeğeri yoktur declspec sözdizimini kullanmaya devam etmelisiniz. Öznitelikler tür sistemine etkilemez ve bir program anlamını değişmiyor. Derleyiciler, bunlar tanımıyoruz öznitelik değerleri yok sayın.
 
-**Visual Studio 2017 15.3 ve sonraki sürümleri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir öznitelik listesi kapsamında tüm adlar için ad alanı tek bir tıklatmayla belirtebilirsiniz `using` introducer:
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir öznitelik listesi kapsamında tüm adlar için ad alanı tek bir belirtebilirsiniz **kullanarak** introducer:
 
 ```cpp
 void g() {
@@ -28,24 +28,24 @@ void g() {
 
 ## <a name="c-standard-attributes"></a>C++ Standart öznitelikleri
 
-C ++ 11'de öznitelikleri olabilir veya satıcıya özgü olmayabilir ek bilgilerle C++ yapıları (ancak bunlarla sınırlı olmamak sınıfları, İşlevler, değişkenler ve blokları dahil) ek açıklama eklemek için standartlaştırılmış bir yol sağlar. Derleyici bilgilendirici iletileri oluşturmak veya atanmış kodu derlerken özel mantığını uygulamak için bu bilgileri kullanabilirsiniz. Derleyici bu söz dizimini kullanarak kendi özel öznitelikler tanımlayamazsınız yani tanımazsa, tüm öznitelikleri yoksayar. Öznitelikleri tarafından çift köşeli ayraç içine alınır:
+C ++ 11'de, öznitelikler (ancak bunlarla sınırlı olmamak sınıfları, İşlevler, değişkenler ve blokları dahil) C++ yapıları satıcıya özgü olmayabilir veya ek bilgilerle açıklama eklemek için standartlaştırılmış bir yol sağlar. Derleyici, bilgi iletilerini oluşturmak veya öznitelikli kodunu derlerken özel mantığı uygulamak için bu bilgileri kullanabilirsiniz. Derleyici, yani bu söz dizimini kullanarak kendi özel öznitelikler tanımlanamaz tanımazsa, herhangi bir özniteliği yok sayar. Öznitelikleri çift köşeli ayraç içine alınır:
 
 ```cpp
 [[deprecated]]
 void Foo(int);
 ```
 
-Öznitelikleri temsil #pragma yönergeleri, __declspec() (Visual C++) gibi satıcıya özel uzantıları için standartlaştırılmış bir alternatif veya &#95; &#95;özniteliği&#95; &#95; (GNU). Ancak, yine satıcıya özgü yapıları çoğu amaç için kullanmanız gerekecektir. Standart şu anda uyumlu derleyici tanımalıdır aşağıdaki öznitelikler belirtir:
+Öznitelikleri temsil eden satıcıya özgü uzantılar #pragma yönergeleri __declspec() (Visual C++) gibi standart bir alternatif veya &#95; &#95;özniteliği&#95; &#95; (GNU). Ancak, yine de satıcıya özel yapılar birçok amaç için kullanmanız gerekecektir. Standart şu anda uyumlu derleyici tanımalıdır aşağıdaki öznitelikleri belirtir:
 
-- `[[noreturn]]` Bir işlev hiçbir zaman döndürür belirtir; diğer bir deyişle her zaman bir özel durum oluşturur. Derleyici için derleme kurallarını ayarlayabilirsiniz `[[noreturn]]` varlıklar.
+- `[[noreturn]]` Bir işlev hiçbir zaman döndürür belirtir. diğer bir deyişle, her zaman bir özel durum oluşturur. Derleyici, derleme kuralları ayarlayabilirsiniz `[[noreturn]]` varlıklar.
 
-- `[[carries_dependency]]` İşlev iş parçacığı eşitleme göre sıralama veri bağımlılığı yayar belirtir. Öznitelik, geçilen bağımsız değişken bir bağımlılık işlev gövdesine taşır belirtmek üzere bir veya daha fazla parametreler için uygulanabilir. Öznitelik, işlevin dönüş değeri işlevi dışında bir bağımlılık gerçekleştirecek belirtmeniz kendisi için uygulanabilir. Derleyici daha verimli kodu oluşturmak için bu bilgileri kullanabilirsiniz.
+- `[[carries_dependency]]` İşlevi iş parçacığı eşitleme göre sıralama veri bağımlılığı yayar belirtir. Öznitelik, geçilen bağımsız değişken işlev gövdesine bağımlılık izleme belirtmek için bir veya daha fazla parametrelere uygulanabilir. Özniteliği işlevin dönüş değeri işlevin dışında bir bağımlılık gerçekleştirecek belirtmeniz kendisi için uygulanabilir. Derleyici, daha verimli kod oluşturmak için bu bilgileri kullanabilirsiniz.
 
-- `[[deprecated]]` **Visual Studio 2015 ve sonraki sürümler:** bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecekte mevcut olmayabilir. Derleyici bu işlevi çağırmak istemci kodu denediğinde, bir bilgilendirme iletisi oluşturmak için kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkeni, statik olmayan veri üyesi, bir işlev, bir ad alanı, numaralandırma, bir numaralandırıcı veya şablon uzmanlık bildirimine uygulanabilir.  
+- `[[deprecated]]` **Visual Studio 2015 ve sonraki sürümler:** bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecek mevcut olmayabilir. Derleyici bir işlevi çağırmak istemci kodu girişiminde bulunduğunda bir bilgi iletisidir oluşturmak için bunu kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkenin, statik olmayan veri üyesi, bir işlev, bir ad alanı, bir numaralandırma, bir numaralandırıcı veya şablon uzmanlığı bildirimine uygulanabilir.  
 
-- `[[fallthrough]]` **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği bağlamında kullanılabilir [geçiş](switch-statement-cpp.md) derleyici (veya okuyan herkes ipucu olarak deyimleri kodu), fallthrough bir davranıştır. Bu öznitelik hiçbir etkisi derleyici davranışı nedenle Visual C++ Derleyici fallthrough davranışı üzerinde şu anda uyarmaz.
+- `[[fallthrough]]` **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği bağlamında kullanılabilir [geçiş](switch-statement-cpp.md) derleyici (veya herkesin okuma ipucu olarak deyimleri kodu), fallthrough davranıştır. Bu öznitelik hiçbir etkisi derleyici davranışı Bu nedenle Visual C++ derleyicisi fallthrough davranışı, şu anda uyarmaz.
 
-- `[[nodiscard]]` **Visual Studio 2017 15.3 ve sonraki sürümleri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir işlevin dönüş değeri atılmak üzere tasarlanmamıştır belirtir. Bu örnekte gösterildiği gibi C4834, uyarı oluşturur:
+- `[[nodiscard]]` **Visual Studio 2017 sürüm 15.3 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir işlevin dönüş değerini atılmak üzere tasarlanmamıştır belirtir. Bu örnekte gösterildiği gibi C4834 uyarı oluşturur:
 
    ```cpp
    [[nodiscard]]
@@ -58,11 +58,11 @@ void Foo(int);
    }
    ```
 
-- `[[maybe_unused]]` **Visual Studio 2017 15.3 ve sonraki sürümleri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir değişkeni, işlevi, sınıf, typedef, statik olmayan veri üyesi, enum veya şablon uzmanlık kasıtlı olarak kullanılamayabilir olduğunu belirtir. Bir varlık işaretlendiğinde derleyici uyarmaz `[[maybe_unused]]` kullanılmaz. Özniteliği olmadan bildirilen bir varlık daha sonra öznitelik ve tersi yönde yeniden bildirilen. Bir varlık olarak işaretlenmiş ilk bildiriminden analiz sonra ve geçerli çeviri birim çevrilmesi kalanı için işaretlenmiş olarak kabul edilir.
+- `[[maybe_unused]]` **Visual Studio 2017 sürüm 15.3 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir değişken, işlevi, sınıf, typedef, statik olmayan veri üyesi, enum veya şablon uzmanlığı amaçlanan kullanılabileceğini belirtir. Bir varlık işaretlendiğinde derleyici uyarmaz `[[maybe_unused]]` kullanılmaz. Özniteliği bildirilmiş bir varlık daha sonra özniteliğine sahip ve yeniden tanımlanıyor. Varlık olarak işaretlenmiş ilk bildiriminden analiz sonra ve çeviri geçerli çeviri biriminin geri kalanında işaretlenmiş olarak kabul edilir.
 
 ## <a name="microsoft-specific-attributes"></a>Microsoft'a özgü öznitelikleri
 
-- `[[gsl::suppress(rules)]]` Bu Microsoft özgü öznitelik zorunlu denetleyicileri gelen uyarıları gizleme için kullanılan [yönergeleri destek kitaplığı (GSL)](https://github.com/Microsoft/GSL) kod kuralları. Örneğin, bu kod parçacığını göz önünde bulundurun:
+- `[[gsl::suppress(rules)]]` Bu Microsoft'a özgü öznitelik zorunlu kareler gelen uyarıları gizleme için kullanılır [yönergeleri destek kitaplığı (GSL)](https://github.com/Microsoft/GSL) kod kuralları. Örneğin, bu kod parçacığı göz önünde bulundurun:
 
     ```cpp
     void main()
@@ -77,12 +77,12 @@ void Foo(int);
     }
     ```
 
-   Örneğin, bu uyarılar oluşturur:
+   Örneğin, bu uyarıları oluşturur:
 
-   - 26494 (tür kural 5: her zaman bir nesne başlatılamıyor.)
+   - 26494 (tür kural 5: bir nesneyi her zaman başlatın.)
 
-   - 26485 (sınırları kural 3: hiçbir dizisine bir işaretçi decay.)
+   - 26485 (sınırları kural 3: diziden işaretçiye bozunma gerçekleştirmeyin.)
 
-   - 26481 (sınırları kural 1: işaretçi aritmetiği kullanmayın. Aralık yerine bunu kullanın.)
+   - 26481 (sınırları kural 1: işaretçi aritmetiği kullanmayın. Yayılma kullanın.)
 
-   Bu kod yüklenmeli ve etkinleştirilmelidir CppCoreCheck kod analizi aracı ile derlerken ilk iki uyarıları kov. Ancak üçüncü uyarıyı nedeniyle öznitelik yangın değil. [[Gsl::suppress(bounds)]] yazarak bir özel kural numarası dahil olmak üzere tüm sınırların profil gizleyebilirsiniz. C++ çekirdek kılavuzları, daha iyi ve daha güvenli kod yazmanıza yardımcı olmak için tasarlanmıştır. Bastır özniteliği değil istediği zaman uyarılarını devre dışı bırakma kolaylaştırır.
+   Bu kod yüklenmeli ve etkinleştirilmelidir CppCoreCheck kod analizi aracı ile derleme yaparken, ilk iki uyarıları kov. Ancak öznitelik nedeniyle üçüncü uyarı etkinleşmez. [[Gsl::suppress(bounds)]] yazarak bir özel kural numarası dahil olmak üzere tüm sınırların profil gösterilmemesini sağlayabilirsiniz. C++ temel yönergeleri, daha iyi ve daha güvenli kod yazmanıza yardımcı olmak için tasarlanmıştır. Bastır öznitelik değil istediğiniz zaman uyarılarını kapatmak kolaylaştırır.

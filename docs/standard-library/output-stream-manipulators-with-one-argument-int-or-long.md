@@ -1,5 +1,5 @@
 ---
-title: Çıkış akışı Manipülatörleri (int veya long) tek bağımsız değişkenli | Microsoft Docs
+title: Stream Manipülatörleri (int veya long) bir bağımsız değişkenli çıkış | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3238ffcbd03f40c6eac0423d0212a65719fb33d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f569b064d2ee5de5bd1aa39c9d443c8a49ca2677
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853079"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961857"
 ---
 # <a name="output-stream-manipulators-with-one-argument-int-or-long"></a>Bir Bağımsız Değişkenli Çıkış Akışı Manipülatörleri (int veya long)
 
-İostream sınıf kitaplığı parametreli manipülatörleri oluşturmak için makroları kümesi sağlar. Tek bir manipülatörleri `int` veya `long` bağımsız değişkeni olan bir özel durum. Tek bir kabul eden bir çıkış akışı manipulator oluşturmak için `int` veya `long` bağımsız değişkeni (gibi `setw`), tanımlanan _Smanip makrosu kullanmalısınız \<iomanip >. Bu örnek tanımlayan bir `fillblank` boşlukları belirtilen sayıda akışa ekler manipulator:
+İostream sınıf kitaplığı parametreli manipülatörleri oluşturmak için makroları sunmaktadır. Tek bir manipülatörleri **int** veya **uzun** bağımsız değişkeni olan bir özel durum. Tek bir kabul eden bir çıkış akışı işleyiciyi oluşturmak için **int** veya **uzun** bağımsız değişken (gibi `setw`), tanımlanan _Smanip makro kullanmalısınız \<iomanip >. Bu örnekte tanımlayan bir `fillblank` akımına boşluk belirtilen sayıda eklediği işleyici:
 
 ## <a name="example"></a>Örnek
 

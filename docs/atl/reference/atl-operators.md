@@ -1,5 +1,5 @@
 ---
-title: ATL işleçleri | Microsoft Docs
+title: ATL işleçler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,30 +14,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75c9ffb8c918cce70ad1e150dd80cb07ebdd7b34
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7ffb1c782e4b527b5e8a930a07d74859f7d8824c
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360942"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880209"
 ---
 # <a name="atl-operators"></a>ATL işleçleri
-Bu bölüm için ATL genel işleçler başvuru konuları içerir.  
+Bu bölümde, ATL genel işleçler için başvuru konuları içerir.  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[operator ==](#operator_eq_eq)|İki karşılaştırır `CSid` nesneleri veya `SID` yapıları eşitlik için.|  
-|[operator! =](#operator_neq)|İki karşılaştırır `CSid` nesneleri veya `SID` eşitsizlik yapılarında.|  
-|[operator <](#operator_lt)|Varsa testleri `CSid` nesne veya `SID` yapısı işlecinin sol tarafındaki küçük `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.|  
-|[operator >](#operator_gt)|Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır büyük `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.|  
-|[operator < =](#operator_lt__eq)|Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır küçük veya eşit `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.|  
-|[operator > =](#operator_gt__eq)|Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır değerinden büyük veya eşit `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.|  
+|[işleç ==](#operator_eq_eq)|İki karşılaştırır `CSid` nesneleri veya `SID` yapıları eşitlik için.|  
+|[işleç! =](#operator_neq)|İki karşılaştırır `CSid` nesneleri veya `SID` yapıları eşitsizlik için.|  
+|[işleç <](#operator_lt)|Olmadığını test eder `CSid` nesne veya `SID` yapısı işlecinin sol tarafındaki küçüktür `CSid` nesne veya `SID` yapısı (Standart C++ Kitaplığı uyumluluğu için) sağ taraftaki.|  
+|[operator >](#operator_gt)|Olmadığını test eder `CSid` nesne veya `SID` yapısı işlecinin sol tarafındaki büyük `CSid` nesne veya `SID` yapısı işlecin sağ tarafındaki (C++ Standart Kitaplığı uyumluluk için).|  
+|[operator < =](#operator_lt__eq)|Olmadığını test eder `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısı, küçük veya buna eşit `CSid` nesne veya `SID` yapısı (Standart C++ Kitaplığı uyumluluğu için) sağ taraftaki.|  
+|[operator > =](#operator_gt__eq)|Olmadığını test eder `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısı büyüktür veya eşittir `CSid` nesne veya `SID` yapısı işlecin sağ tarafındaki (C++ Standart Kitaplığı uyumluluk için).|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h.  
   
-##  <a name="operator_eq_eq"></a>  operator ==  
- Karşılaştırır `CSid` nesneleri veya `SID` (güvenlik tanımlayıcısı) yapıları eşitlik için.  
+##  <a name="operator_eq_eq"></a>  işleç ==  
+ Karşılaştırır `CSid` nesneleri veya `SID` eşitlik için yapılar (güvenlik tanımlayıcısı).  
   
 ```   
 bool operator==(const CSid& lhs, const CSid& rhs) throw(); 
@@ -51,104 +51,104 @@ bool operator==(const CSid& lhs, const CSid& rhs) throw();
  İkinci `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** nesneleri eşitse, **false** eşit değillerse.  
+ DOĞRU eşit değilse, nesneleri yanlış eşit olup olmadığını döndürür.  
   
-##  <a name="operator_neq"></a>  operator! =  
- Karşılaştırır `CSid` nesneleri veya `SID` eşitsizlik yapılarında (güvenlik tanımlayıcısı).  
+##  <a name="operator_neq"></a>  işleç! =  
+ Karşılaştırır `CSid` nesneleri veya `SID` eşitsizlik için yapılar (güvenlik tanımlayıcısı).  
   
 ```   
 bool operator==(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lhs`  
+ *lhs*  
  İlk `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
- `rhs`  
+ *Sol*  
  İkinci `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** nesneleri eşit değilse **false** eşit olup olmadıkları.  
+ DOĞRU nesneleri değil, eşittir, eşitlerse FALSE döndürür.  
   
-##  <a name="operator_lt"></a>  operator <  
- Varsa testleri `CSid` nesne veya `SID` yapısı işlecinin sol tarafındaki küçük `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.  
+##  <a name="operator_lt"></a>  işleç <  
+ Olmadığını test eder `CSid` nesne veya `SID` yapısı işlecinin sol tarafındaki küçüktür `CSid` nesne veya `SID` yapısı (Standart C++ Kitaplığı uyumluluğu için) sağ taraftaki.  
   
 ```   
 bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lhs`  
+ *lhs*  
  İlk `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
- `rhs`  
+ *Sol*  
  İkinci `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** varsa adresini `lhs` nesne adresini azdır `rhs` nesnesi **false** Aksi takdirde.  
+ Gerekirse TRUE döndürür adresini *lhs* nesnenin adresini azdır *sol* , yanlış aksi nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleç adresini temel görevi gören `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları uyum sağlamak için uygulanır.  
+ Bu işlecin adresini davranır `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları ile uyumluluk sağlamak için kullanılır.  
   
 ##  <a name="operator_gt"></a>  operator >  
- Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır büyük `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.  
+ Olmadığını test eder `CSid` nesne veya `SID` yapısı işlecinin sol tarafındaki büyük `CSid` nesne veya `SID` yapısı işlecin sağ tarafındaki (C++ Standart Kitaplığı uyumluluk için).  
   
 ```   
 bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lhs`  
+ *lhs*  
  İlk `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
- `rhs`  
+ *Sol*  
  İkinci `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** varsa adresini `lhs` adresini büyük `rhs`, **false** Aksi takdirde.  
+ Gerekirse TRUE döndürür adresini *lhs* adresini büyükse *sol*false Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleç adresini temel görevi gören `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları uyum sağlamak için uygulanır.  
+ Bu işlecin adresini davranır `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları ile uyumluluk sağlamak için kullanılır.  
   
 ##  <a name="operator_lt__eq"></a>  operator < =  
- Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır küçük veya eşit `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.  
+ Olmadığını test eder `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısı, küçük veya buna eşit `CSid` nesne veya `SID` yapısı (Standart C++ Kitaplığı uyumluluğu için) sağ taraftaki.  
   
 ```   
 bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lhs`  
+ *lhs*  
  İlk `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
- `rhs`  
+ *Sol*  
  İkinci `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** varsa adresini `lhs` adresini küçük veya ona eşit `rhs`, **false** Aksi takdirde.  
+ Gerekirse TRUE döndürür adresini *lhs* adresini küçük veya ona eşit *sol*FALSE, aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleç adresini temel görevi gören `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları uyum sağlamak için uygulanır.  
+ Bu işlecin adresini davranır `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları ile uyumluluk sağlamak için kullanılır.  
   
 ##  <a name="operator_gt__eq"></a>  operator > =  
- Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır değerinden büyük veya eşit `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.  
+ Olmadığını test eder `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısı büyüktür veya eşittir `CSid` nesne veya `SID` yapısı işlecin sağ tarafındaki (C++ Standart Kitaplığı uyumluluk için).  
   
 ```   
 bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lhs`  
+ *lhs*  
  İlk `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
- `rhs`  
+ *Sol*  
  İkinci `CSid` nesne veya `SID` Karşılaştırılacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** varsa adresini `lhs` büyük veya eşit adresine `rhs`, **false** Aksi takdirde.  
+ Gerekirse TRUE döndürür adresini *lhs* büyüktür veya eşittir adresini *sol*false Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleç adresini temel görevi gören `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları uyum sağlamak için uygulanır.
+ Bu işlecin adresini davranır `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları ile uyumluluk sağlamak için kullanılır.
 
 
 

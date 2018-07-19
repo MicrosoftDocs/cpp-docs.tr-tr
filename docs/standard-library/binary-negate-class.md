@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3db081a3baa3b8e5d974080275fc75b372009b6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f54f036c6e647c3f04bb202b68109e227061bf7a
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850137"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961928"
 ---
 # <a name="binarynegate-class"></a>binary_negate Sınıfı
 
-Belirtilen ikili işlevinin dönüş değeri üzerindeki geçersiz kılar üye işlevi sağlayan bir şablon sınıfı.
+Belirtilen bir ikili fonksiyon dönüş değeri verilerek bir üye işlevi sağlayan bir şablon sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,21 +44,21 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-`Func` Tasarruflarını için ikili işlev.
+*FUNC* negatif için ikili fonksiyon.
 
-`left` Sol işleneni ikili işlevinin tasarruflarını.
+*Sol* negatif için ikili fonksiyon sol işleneni.
 
-`right` Sağ işleneni ikili işlevinin tasarruflarını.
+*doğru* negatif için ikili fonksiyon sağ işleneni.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İkili işlevi değilleme.
+İkili fonksiyon negation.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir ikili işlevi nesne _ bir kopyasını depolar *Func*. Üye işlevini tanımlar `operator()` döndürme olarak **!**\_ *Func (sol, sağ).*
+Şablon sınıfı bir ikili fonksiyon nesnesi _ kopyasını depoladığından *Func*. Onun üye işlevini tanımlar `operator()` döndüren olarak **!**\_ *Func (sol, sağ).*
 
-Oluşturucusunun `binary_negate` nadiren doğrudan kullanılır. Yardımcı işlevini [not2](../standard-library/functional-functions.md#not2) bildirme ve kullanma için genellikle tercih **binary_negator** bağdaştırıcısı koşulu.
+Oluşturucusuna `binary_negate` doğrudan nadiren kullanılır. Yardımcı işlevini [not2](../standard-library/functional-functions.md#not2) bildirme ve kullanma için genellikle tercih edilir **binary_negator** bağdaştırıcısı koşul.
 
 ## <a name="example"></a>Örnek
 
@@ -125,7 +125,7 @@ Resorted vector v1 = ( 3739828298 3715465425 2621500314 2233879413 580942933 626
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 Std
 

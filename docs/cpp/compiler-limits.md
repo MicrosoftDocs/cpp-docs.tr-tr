@@ -14,33 +14,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc7cd26add0a46bab8df7669fb6dfb6060b0010e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ecf3351180fbff4d6872c7027eee90b92e560059
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412143"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37938905"
 ---
 # <a name="compiler-limits"></a>Derleyici Sınırları
-C++ Standart çeşitli dil yapıları için sınırlar önerir. Burada Visual C++ derleyicisi önerilen sınırları uygulamıyor örneklerinin bir listesi verilmiştir. İlk sayı ISO C++ 11'de standart (INCITS/ISO/IEC 14882-2011 [2012] eki B) belirlenen sınırı ve ikinci sayı Visual C++ tarafından uygulanan sınır:  
+C++ standartı, çeşitli dil yapıları için sınırlar önerir. Burada Visual C++ derleyicisi, önerilen sınırları uygulamıyor örneklerinin listesi verilmiştir. ISO C++ 11'de standart (INCITS/ISO/IEC 14882-2011 [2012] Annex B) belirlenen sınırı ilk sayıdır ve ikinci sayı Visual C++ tarafından uygulanan sınır:  
   
--   Bileşik deyimler, yineleme denetim yapıları ve seçimi iç içe geçme düzeyi denetim yapıları - C++ Standart: 256, Visual C++ Derleyici: iç içe deyimlerinin ancak genellikle 100 110 arasındaki birleşimi bağlıdır.  
+-   Bileşik deyimler, yineleme kontrol yapılarını ve seçim iç içe geçme düzeyi denetim yapıları - C++ Standart: 256, Visual C++ derleyicisi: birleşimi iç içe geçmiş deyimler ancak genellikle 110 ile 100 arasındaki bağlıdır.  
   
--   Bir makro tanımı - C++ Standart parametrelerinde: 256, Visual C++ Derleyici: 127.  
+-   Bir Makro tanımında - C++ Standart Parametreler: 256, Visual C++ derleyicisi: 127.  
   
--   Bir makrosu çağırma - C++ standart bağımsız değişkenler: 256, Visual C++ Derleyici 127.  
+-   Bir makro çağrısı - C++ standart bağımsız değişkenleri: 256, Visual C++ derleyicisi 127.  
   
--   Bir karakterin karakter dizelerle değişmez değer veya geniş dize sabit değeri (sonra) - C++ Standart: 65536, Visual C++ Derleyici: 65535 tek baytlık karakterler `null` Sonlandırıcı ve dahilolmaküzere32767çiftbaytlıkkarakterler`null` Sonlandırıcı.  
+-   Bir karakterin karakter dize sabit değeri veya geniş dize değişmez değeri (birleştirmesi sonra) - C++ Standart: 65536, Visual C++ derleyicisi: NULL sonlandırıcıyı da dahil olmak üzere, 65535 tek baytlık karakter ve NULL Sonlandırıcı dahil olmak üzere, 32767 çift baytlık karakterler.  
   
--   Düzey iç içe geçmiş sınıf, yapı ve birleşim tanımları tek bir `struct-declaration-list` -C++ Standart: 256, Visual C++ Derleyici: 16.  
+-   İç içe geçmiş sınıf, yapı veya birleşim tanımlarına tek bir düzeyde `struct-declaration-list` -C++ Standart: 256, Visual C++ derleyicisi: 16.  
   
--   Üye başlatıcıları Oluşturucusu tanımında - C++ Standart: 6144, Visual C++ Derleyici: en az 6144.  
+-   Bir oluşturucu tanımı - C++ Standart üyesi başlatıcıları: 6144, Visual C++ derleyicisi: en az 6144.  
   
--   Kapsam bir tanımlayıcı - C++ Standart nitelikleri: 256, Visual C++ Derleyici: 127.  
+-   Bir tanımlayıcının - C++ Standart nitelikleri kapsam: 256, Visual C++ derleyicisi: 127.  
   
--   İç içe geçmiş `extern` belirtimleri - C++ Standart: 1024, Visual C++ Derleyici: 9 (örtük saymaz `extern` belirtimi genel kapsamda ya da örtük sayım yapmak istiyorsanız 10 `extern` genel kapsam belirtiminde..  
+-   İç içe geçmiş **extern** belirtimleri - C++ Standart: 1024, Visual C++ derleyicisi: 9 (örtük sayılmaz **extern** belirtimi genel kapsamda veya 10 örtük sayısı, **extern**  belirtimi genel kapsamda...  
   
--   Bir şablon bildirimi - C++ standart şablon bağımsız değişkenler: 1024, Visual C++ Derleyici: 2046.  
+-   Bir şablon bildiriminde - C++ standart şablon bağımsız değişkenleri: 1024, Visual C++ derleyicisi: 2046.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)

@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 493c3dc0faf42e0f08f88afd3ac405cfbd7404aa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ac1a6c39f25e42237265964ae1bfb0214aaa9087
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844887"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961005"
 ---
 # <a name="isenum-class"></a>is_enum Sınıfı
 
-Bir numaralandırma türü ise, testleri.
+Bir numaralandırma türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_enum;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `Ty` bir numaralandırma türü veya `cv-qualified` form false tuttuğu bir numaralandırma türünün, aksi takdirde.
+Karşılaştırmasının bir örneği true tutar türü *Ty* bir sabit listesi türü veya bir `cv-qualified` form tuttuğu yanlış bir numaralandırma türü, aksi takdirde.
 
 ## <a name="example"></a>Örnek
 

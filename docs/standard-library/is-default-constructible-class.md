@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 267f0d83ee8f92eb73bddfbcd383f59db83c8a83
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 23a361362d574910d21b0031d5687331f8c11dda
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850352"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964261"
 ---
 # <a name="isdefaultconstructible-class"></a>is_default_constructible sınıfı
 
-Bir türü varsayılan bir oluşturucu varsa testleri.
+Bir türe varsayılan bir oluşturucuya sahip olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +36,11 @@ struct is_default_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` false tuttuğu varsayılan bir oluşturucu, aksi takdirde sahip bir sınıf türü. Bu koşulu eşdeğerdir `is_constructible<T>`. Tür `T` tam bir tür olmalıdır `void`, veya bilinmeyen bağlı bir dizi.
+Karşılaştırmasının bir örneği true tutan türü *T* false tuttuğu varsayılan bir oluşturucu, aksi durumda olan bir sınıf türüdür. Bu koşulu eşdeğerdir `is_constructible<T>`. Tür *T* tam bir tür olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
 
 ## <a name="example"></a>Örnek
 

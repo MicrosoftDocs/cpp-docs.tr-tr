@@ -12,16 +12,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbbe3819d2271db85696825d82ba26335e380163
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 835f56498d3bc19f0b31ea9047f2e76d955183f4
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948033"
 ---
 # <a name="user-defined-literals--c"></a>Kullanıcı tanımlı değişmez değerler (C++)
-Değişmez değerler beş ana kategoriye ayrılır: tamsayı, karakteri, kayan nokta, dize, boolean ve işaretçi.  C++ 11 başlangıç ortak deyimleri için söz dizim kısayollar sağlar ve tür güvenliği artırmak için bu kategorilere göre kendi değişmez değerleri tanımlayabilirsiniz. Örneğin, bir uzaklık sınıf sahip varsayalım. Bir hazır değer kilometre için ve mil için başka bir tanımlayın ve yalnızca yazarak ölçü hakkında açık kullanıcının olmasını öneririz: otomatik d 42.0_km veya otomatik d = 42.0_mi =. Performans avantajı veya kullanıcı tanımlı değişmez değerler dezavantajı yoktur; derleme zamanı tür kesintisi veya kolaylık olması için öncelikle oldukları. Kullanıcı tanımlı değişmez değerler std:string, std::complex ve birimleri standart kitaplığı zamanını ve süresini işlemlerinde sahip \<chrono > Üstbilgi:  
+Değişmez değerlerinin beş temel kategori bulunur: tamsayı, karakter, kayan nokta, dize, Boole ve işaretçi.  C++ 11'de, başlangıç için ortak deyimleri söz dizimsel kısayolları sağlamak ve tür güvenliği artırmak için bu kategorilere göre kendi değişmez değerleri tanımlayabilirsiniz. Örneğin, bir uzaklık sınıf olduğunu varsayalım. Bir sabit değer için kilometre ve mil için başka bir tanımlayın ve teşvik yalnızca yazarak ölçü birimi hakkında açık olmasına olanak: otomatik d 42.0_km veya otomatik d = 42.0_mi =. Performans avantajı veya kullanıcı tanımlı değişmez değerler dezavantajı yoktur; Kolaylık olması için öncelikle veya derleme zamanı türü kesintisi için değildirler. Kullanıcı tanımlı değişmez değerler std:string, std::complex ve birimler için standart kitaplık zamanını ve süresini işlemlerinde sahip \<chrono > üst bilgi:  
   
-```  
+```cpp 
 Distance d = 36.0_mi + 42.0_km;         // Custom UDL (see below)  
     std::string str = "hello"s + "World"s;  // Standard Library <string> UDL  
     complex<double> num =   
@@ -29,10 +30,10 @@ Distance d = 36.0_mi + 42.0_km;         // Custom UDL (see below)
     auto duration = 15ms + 42h;             // Standard Library <chrono> UDLs  
 ```  
   
-## <a name="user-defined-literal-operator-signatures"></a>Kullanıcı tanımlı değişmez değer işleci imzaları  
- Kullanıcı tanımlı değişmez değer tanımlayarak uygulamak bir `operator""` aşağıdaki biçimlerden biri ile ad alanı kapsamda:  
+## <a name="user-defined-literal-operator-signatures"></a>Kullanıcı tanımlı sabit değer operatörü imzaları  
+ Bir kullanıcı tanımlı sabit değer tanımlayarak uygulamak bir `operator""` aşağıdaki biçimlerden biri ile ad alanı kapsamında:  
   
-```  
+```cpp 
 ReturnType operator "" _a(unsigned long long int);   // Literal operator for user-defined INTEGRAL literal  
 ReturnType operator "" _b(long double);              // Literal operator for user-defined FLOATING literal  
 ReturnType operator "" _c(char);                     // Literal operator for user-defined CHARACTER literal  
@@ -47,14 +48,14 @@ ReturnType operator "" _r(const char*);              // Raw literal operator
 template<char...> ReturnType operator "" _t();       // Literal operator template  
 ```  
   
- Önceki örnekte işleci sağladığınız ad yer tutucular adlarıdır; Ancak, baştaki alt çizgi gereklidir. (Yalnızca standart kitaplığı alt çizgi olmadan değişmez değerleri tanımlayın izin verilmez.) Dönüş türü, dönüştürme ya da sabit gerçekleştirir başka bir işlem özelleştirme burada ' dir. Ayrıca, bu işleçlere hiçbirini olarak tanımlanabilir `constexpr`.  
+ Önceki örnekte işleci sağladığınız dilediğiniz adı için yer tutucular adlarıdır; Ancak, alt çizgi gereklidir. (Yalnızca standart kitaplığı değişmez değerleri alt çizgi olmadan tanımlama izin verilmez.) Burada, dönüştürme veya değişmez değer gerçekleştiren başka bir işlem özelleştirme dönüş türüdür. Ayrıca, bu işleçler hiçbirini olarak tanımlanabilir `constexpr`.  
   
-## <a name="cooked-literals"></a>Hazırlanan değişmez değerleri  
- Kullanıcı tanımlı ya da alfasayısal karakterler, aslında bir dizi gibi değil tüm değişmez değeri kaynağında kod `101`, veya `54.7`, veya `"hello"` veya `true`. Derleme sırası bir tamsayı, kayan nokta, const char olarak yorumlar\* dize ve benzeri. Değişmez değer atanmış derleyici türü ne olursa olsun girdi olarak kabul eden bir kullanıcı tanımlı bir hazır değer basit olarak bilinen bir *hazırlanan değişmez değeri*. Yukarıdaki tüm işleçleri hariç `_r` ve `_t` değişmez değerleri hazırlanan. Örneğin, bir hazır değer `42.0_km` _b ve sabit benzer bir imzaya sahip _km adında bir operatör bağlamak `42_km` _Sütun için benzer bir imza ile bir işleç bağlayın.  
+## <a name="cooked-literals"></a>İşlenmiş değişmez değerleri  
+ Kullanıcı tanımlı ya da alfasayısal karakterler, aslında bir dizi gibi değil, herhangi bir sabit değer kaynakta kod `101`, veya `54.7`, veya `"hello"` veya `true`. Derleyici, dizi bir integer, float, const char olarak yorumlar\* dize ve benzeri. Değişmez değer atanmış derleyici türü ne olursa olsun girdi olarak kabul eden bir kullanıcı tanımlı bir sabit değer içinde gayri resmi yollardan olarak bilinen bir *işlenmiş literal*. Yukarıdaki tüm işleçleri dışında `_r` ve `_t` değişmez değerleri işlenmiş. Örneğin, bir sabit değer `42.0_km` adlı _km _b ve değişmez değer için benzer bir imzaya sahip bir işleç bağlayın `42_km` _a için benzer bir imzaya sahip bir işleç bağlayın.  
   
- Aşağıdaki örnekte nasıl kullanıcı tanımlı değişmez değerler gösterilmektedir arayanlar hakkında kendi giriş açık olmasını öneririz. Oluşturmak için bir `Distance`, kullanıcı açıkça kilometre ya da mil uygun kullanıcı tanımlı değişmez değeri kullanarak belirtmeniz gerekir. Elbette ayrıca diğer yollarla aynı sonucu elde edebilirsiniz, ancak kullanıcı tanımlı değişmez değerler alternatifleri daha az ayrıntılıdır.  
+ Nasıl kullanıcı tanımlı değişmez değerler aşağıdaki örnekte, giriş hakkında açık olmaya çağıranlar teşvik edebilir. Oluşturmak için bir `Distance`, kullanıcı açıkça kilometre ya da mil uygun kullanıcı tanımlı değişmez değeri kullanarak belirtmeniz gerekir. Elbette da başka şekillerde aynı sonucu elde edebilirsiniz, ancak kullanıcı tanımlı değişmez değerler alternatifleri daha az ayrıntılıdır.  
   
-```  
+```cpp 
 struct Distance  
 {  
 private:  
@@ -102,24 +103,24 @@ int main(int argc, char* argv[])
 }  
 ```  
   
- Değişmez değer sayı ondalık kullanmanız gerekir, aksi takdirde sayısı bir tamsayı olarak yorumlanacağını ve türü işleç ile uyumlu olmayacaktır unutmayın. Ayrıca, giriş noktası değişken için tür olmalıdır unutmayın `long double`ve olmalıdır tam sayı türleri için `long long`.  
+ Değişmez değer sayı ondalık kullanmanız gerekir, aksi takdirde sayısı bir tamsayı olarak yorumlanacağını ve türü işleci ile uyumlu olmayacaktır unutmayın. Giriş noktası değişken için türü olması gerektiğini unutmayın **uzun çift**, integral türleri olmalıdır ve **uzun uzun**.  
   
 ## <a name="raw-literals"></a>Ham değişmez değerleri  
- Bir ham kullanıcı tanımlı değişmez değeri, tanımladığınız işleci sabit bir karakter değerleri dizisi kabul eder ve bir sayı veya dize veya diğer tür o sırada yorumlamak için en fazla olur. Bu sayfanın önceki bölümlerinde gösterilen işleçleri listesinde `_r` ve `_t` ham değişmez değerleri tanımlamak için kullanılabilir:  
+ Bir ham kullanıcı tanımlı sabit değer, tanımladığınız işleci, bir karakter değerleri dizisi olarak değişmez değer kabul eder ve bu dizi bir sayı veya dize veya başka bir tür olarak yorumlamak için en fazla olur. Bu sayfada daha önce gösterilen işleçleri listesinde `_r` ve `_t` ham değişmez değerleri tanımlamak için kullanılabilir:  
   
-```  
+```cpp 
 ReturnType operator "" _r(const char*);              // Raw literal operator  
 template<char...> ReturnType operator "" _t();       // Literal operator template  
 ```  
   
- Ham değişmez değerleri derleyici gerçekleştirmek daha farklı bir giriş sırası özel bir yorumu sağlamak için kullanabilirsiniz. Örneğin, sırası dönüştüren bir hazır değer tanımlayabilirsiniz `4.75987` içine bir IEEE kayan noktası türü 754 yerine özel bir Decimal türü. Ham değişmez değerleri, ister değişmez değerleri hazırlanan, aynı zamanda giriş sıralarının derleme zamanı doğrulama gerçekleştirmek için kullanılabilir.  
+ Ham değişmez değerleri, özel bir derleyici gerçekleştirmek değerinden farklı bir giriş sırası yorumlanmasını sağlamak için kullanabilirsiniz. Örneğin, sıra dönüştüren bir sabit değer tanımlayabilirsiniz `4.75987` içine, bir IEEE 754 kayan nokta türü yerine özel bir Decimal türü. Ham değişmez değerleri, ister değişmez değerleri işlenmiş, de giriş dizilerinin derleme zamanı doğrulamayı gerçekleştirmek için kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
   
 ### <a name="limitations-of-raw-literals"></a>Ham değişmez değerleri sınırlamaları  
- Yalnızca ham değişmez değer işleci ve değişmez değer işleci şablon Entegral ve kayan nokta kullanıcı tanımlı değişmez değerler için aşağıdaki örnekte gösterildiği gibi çalışır:  
+ Yalnızca ham sabit değer operatörü ve sabit değer operatörü şablonu integral ve kayan nokta kullanıcı tanımlı değişmez değerler için aşağıdaki örnekte gösterildiği gibi çalışır:  
   
-```  
+```cpp 
 #include <cstddef>  
 #include <cstdio>  
   

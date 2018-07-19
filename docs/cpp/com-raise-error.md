@@ -16,53 +16,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e7b28c9d48704eede883cbcd387d9e77798647f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f38a0d97b90f1512e5f16b3bd147bda3e0614e4f
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948111"
 ---
 # <a name="comraiseerror"></a>_com_raise_error
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Atan bir [_com_error](../cpp/com-error-class.md) hatasına yanıt.  
+ Oluşturur bir [_com_error](../cpp/com-error-class.md) yanıt olarak bir hata.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      void __stdcall _com_raise_error(  
+void __stdcall _com_raise_error(  
    HRESULT hr,  
    IErrorInfo* perrinfo = 0  
 );  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `hr`  
- `HRESULT` bilgileri.  
+ *İK*  
+ HRESULT bilgileri.  
   
- `perrinfo`  
- **IErrorInfo** nesnesi.  
+ *perrinfo*  
+ `IErrorInfo` nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_com_raise_error`, içinde tanımlanan \<comdef.h >, bir kullanıcı tarafından yazılan aynı adı ve sürümünü prototip tarafından değiştirilebilir. Kullanmak istiyorsanız, bu yapılabilir `#import` ancak C++ özel durum işleme kullanmak istiyor musunuz. Bu durumda, kullanıcı sürümünde **_com_raise_error** yapmak karar verebilirsiniz bir `longjmp` veya bir ileti kutusu görüntüleme ve durdur. Derleyici COM destek kodu dönmek için beklemiyor çünkü kullanıcı sürümü, yine de vermemelidir.  
+ `_com_raise_error`, tanımlanan \<comdef.h >, bir kullanıcı tarafından yazılan sürümü aynı ada ve prototip tarafından değiştirilebilir. Kullanmak istiyorsanız bu yapılabilir `#import` ancak C++ özel durum işleme kullanmak istemiyorsanız. Bu durumda, kullanıcı sürümünde `_com_raise_error` yapmak karar verebilirsiniz bir `longjmp` veya bir ileti kutusu görüntüleme ve durdur. Derleyici COM destek kodunu döndürmek için bunu beklemiyor çünkü kullanıcı sürümüdür, ancak döndürmemelidir.  
   
- Aynı zamanda [_set_com_error_handler](../cpp/set-com-error-handler.md) varsayılan hata işleme işlevini değiştirmek için.  
+ Ayrıca [_set_com_error_handler](../cpp/set-com-error-handler.md) varsayılan hata işleme işlevinizi değiştirilecek.  
   
  Varsayılan olarak, `_com_raise_error` şu şekilde tanımlanır:  
   
-```  
+```cpp  
 void __stdcall _com_raise_error(HRESULT hr, IErrorInfo* perrinfo) {  
    throw _com_error(hr, perrinfo);  
 }  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<comdef.h >  
   
- **LIB:** varsa **wchar_t yerel tür olan** derleyici seçeneği üzerinde comsuppw.lib veya comsuppwd.lib kullanın. Varsa **wchar_t yerel tür olan** kapalı ise comsupp.lib kullanın. Daha fazla bilgi için bkz: [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
+ **Lib:** varsa **wchar_t yerel tür olan** derleyici seçeneği açıktır, comsuppw.lib veya comsuppwd.lib kullanın. Varsa **wchar_t yerel tür olan** kapalıysa, comsupp.lib kullanın. Daha fazla bilgi için [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Global COM işlevleri](../cpp/compiler-com-global-functions.md)   

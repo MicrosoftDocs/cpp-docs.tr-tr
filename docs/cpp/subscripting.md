@@ -1,5 +1,5 @@
 ---
-title: Alt simge oluşturma | Microsoft Docs
+title: Subscripting | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,19 +19,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65798eb9983273cf3b8b2b136be9a9acc082cb4f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a55aca3abe95d189c40c7571db39fc48edf5f4cc
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948120"
 ---
 # <a name="subscripting"></a>Alt Simge Oluşturma
-Alt simge işleci (**[]**) gibi işlev çağırma işleci ikili işleç olarak kabul edilir. Alt simge işleci tek bir bağımsız değişken bir statik olmayan üye işlevi olması gerekir. Bu bağımsız değişken herhangi bir türde olabilir ve istenen dizi alt simge atar.  
+Alt simge işleci (**[]**) gibi işlev çağrısı işleci, ikili işleç olarak kabul edilir. Alt simge işleci, tek bir bağımsız değişken alan bir statik olmayan üye işlev olmalıdır. Bu bağımsız değişken, herhangi bir türde olabilir ve istenen bir dizi alt simge belirtir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir vektör türü oluşturmak gösterilmiştir `int` denetimi sınırları uygular:  
+ Aşağıdaki örnek, bir vektör türü oluşturmak gösterilmiştir **int** sınır denetimi uygular:  
   
-```  
+```cpp 
 // subscripting.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -97,9 +98,9 @@ Element: [10] = 10
 ```  
   
 ## <a name="comments"></a>Açıklamalar  
- Zaman `i` önceki programında 10 ulaştığında `operator[]` bir out-of-bounds alt simge kullanılıyor bir hata iletisi sorunlar olduğunu algılar.  
+ Zaman `i` önceki program 10 ulaştığında `operator[]` işlemleri indis kullanılıyor ve bir hata iletisi sorunları algılar.  
   
- Unutmayın işlevi `operator[]` bir başvuru türü döndürür. Bu, bir l-alt ifadeler atama işleçleri iki tarafında kullanmanıza olanak sağlayan değeri olması neden olur.  
+ Unutmayın işlevi `operator[]` bir başvuru türü döndürür. Bu da simgeli ifade atama işleçleri her iki tarafında kullanmanıza olanak sağlayan lvalue, olmasını neden olur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

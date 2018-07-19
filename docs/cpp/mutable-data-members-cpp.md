@@ -16,14 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7dd639cbf1ef076dee6e447f317533bf12dae10
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 65d2fc42021a01a1260b57f9516e53c439c8e604
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948214"
 ---
 # <a name="mutable-data-members-c"></a>Değişebilir Veri Üyeleri (C++)
-Bu anahtar sözcüğü yalnızca statik olmayan ve const olmayan verileri bir sınıf üyelerine uygulanabilir. Bir veri üyesi bildirilirse `mutable`, bu veri üyesi için bir değer atamak için yasal ise bir **const** üye işlevi.  
+Bu anahtar sözcüğü, yalnızca bir sınıfın statik olmayan ve sabit olmayan veri üyelerine uygulanabilir. Bir veri üyesi bildirilirse **değişebilir**, sonra da bu veri üyesi için bir değer atamak için yasal bir **const** üye işlevi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,9 +34,9 @@ mutable member-variable-declaration;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Örneğin, aşağıdaki kod hatasız olduğundan derlenir `m_accessCount` olarak bildirilen `mutable`ve bu nedenle tarafından değiştirilebilir `GetFlag` olsa bile `GetFlag` const bir üye işlevdir.  
+ Örneğin, aşağıdaki kod hatasız çünkü derleyeceği `m_accessCount` olarak bildirilmiş **değişebilir**ve bu nedenle tarafından değiştirilebilir `GetFlag` olsa bile `GetFlag` const üye işlevi olmasıdır.  
   
-```  
+```cpp 
 // mutable.cpp  
 class X  
 {  

@@ -12,29 +12,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94a9e75770e822c89ea65a745a2fca491f175d95
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: ee05e7008795056ee197ce45f68084e6c633f23c
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34569868"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939747"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>Hatalar ve Özel Durum İşleme (Modern C++)
-Çoğu senaryoda, modern c++ rapor ve mantık hataları ve çalışma zamanı hataları işlemek için tercih edilen yöntem özel durumlar kullanmaktır. Yığın hatası algılarsa işlevi ve onu nasıl ele alınacağını bilmeniz bağlamı olan işlevi arasında birden fazla işlev çağrılarını içerebilir durumlarda özellikle geçerlidir. Özel durum çağrı yığını bilgileri geçirmek için hatalarını algılar kodu için resmi ve iyi tanımlanmış bir yol sağlar.  
+Çoğu senaryoda, modern C++'ta rapor ve mantık hatalarını ve çalışma zamanı hataları işlemek için tercih edilen yol özel durumları kullanmaktır. Yığın hatayı algılayan işlevi ve sahip nasıl işleyeceğini bilen işlev arasında birden fazla işlev çağrısı içerdiğinde bu özellikle doğrudur. Özel durumlar, bilgileri çağrı yığınına aktarmak üzere hataları algılayan kod için biçimsel ve iyi tanımlanmış bir yol sağlar.  
   
- Program hataları genellikle iki kategoriye bölünmüş: bir "Ağ Hizmet kullanılamıyor" hatalar, örneğin programlama, "dizin aralık dışında" hata ve Programcı, denetimi ötesine Örneğin, çalışma zamanı hataları nedeniyle oluşan mantık hataları bir hata oluştu. C türü programlama ve COM, hata raporlama bir hata kodu ya da belirli bir işlev için durum kodunu temsil eden bir değer döndürerek veya çağıranın görmek için her işlev çağrısı sonra isteğe bağlı olarak alabilir genel bir değişkeni ayarlayarak yönetilir hataları olup olmadığını bildirildi. Örneğin, COM programlama hataları çağırana iletişim kurmak için HRESULT dönüş değerini kullanır ve Win32 API çağrı yığını tarafından bildirilen son hata almak için GetLastError işlevi vardır. Her iki durumda da, çağırana kodu tanımak ve uygun şekilde yanıtlamak için hazır. Arayan açıkça hata kodu işleyemez, program uyarmadan kilitlenme veya hatalı verilerle yürütün ve hatalı sonuçlar devam.  
+ Program hataları genellikle iki kategoriye ayrılmıştır: hatalar, örneğin programlama, "dizin aralık dışında" hata ve programlayıcının kontrolü dışında dışında Örneğin, çalışma zamanı hataları nedeniyle bir "Ağ Hizmeti kullanılamıyor" oluşan mantık hataları bir hata oluştu. C stili programlamada ve com'da hata raporlama bir hata kodu veya belirli bir işlev için durum kodu temsil eden bir değer döndürerek veya çağıranın görmek için her işlev çağrısından sonra isteğe bağlı olarak alabileceği genel bir değişken ayarlanarak yönetilir hataları olup olmadığını bildirildi. Örneğin, COM programlama, hataları arayana iletişim kurmak için HRESULT dönüş değerini kullanır ve Win32 API çağrısı yığını tarafından bildirilen son hatayı alması için GetLastError işlevi vardır. Her iki durumda, bu da kodun tanınması ve uygun şekilde yanıtlanması arayana aittir. Arayan açıkça hata kodunu işlemezse program uyarı vermeden kilitlenebilir veya hatalı sonuçlar verir ve hatalı verilerle yürütülmeye devam.  
   
- Özel durumlar modern C++'da aşağıdaki nedenlerle tercih edilen:  
+ Özel durumlar, modern C++'da aşağıdaki nedenlerden dolayı tercih edilir:  
   
--   Bir özel durum bir hata koşulu tanınması ve bu çağrıyı yapan kod zorlar. İşlenmeyen özel durumlar, program yürütme durdurun.  
+-   Bir özel durum, çağırma kodunun bir hata durumunu tanıması ve işlemesi için zorlar. İşlenmeyen özel durumlar programın yürütülmesini durdurur.  
   
--   Bir özel hatayı işleyebilir çağrı yığınında noktası atlar. Ara işlevleri yayılması özel durum izin verebilirsiniz. Diğer katmanlarıyla koordine gerekmez.  
+-   Bir özel durum çağrı yığınında hatayı işleyebilen noktaya atlar. Ara işlevler özel durumun yayılmasını izin verebilirsiniz. Diğer katmanlarla koordine gerekmez.  
   
--   Bir özel durum oluşturulduktan sonra özel durum yığını geriye doğru izleme mekanizması iyi tanımlanmış kurallarına göre kapsamındaki tüm nesnelerin bozar.  
+-   Özel durum yığın geriye doğru mekanizması bir özel durum oluşmasından sonra iyi tanımlanmış kurallara göre kapsam içindeki tüm nesneleri yok eder.  
   
--   Bir özel durum hatası algılarsa kodu ve hata işleme kodu arasında temiz bir ayrım sağlar.  
+-   Bir özel durum, hatayı algılayan kod ile hatayı işleyen kod arasında NET bir ayrım sağlar.  
   
- Aşağıdaki Basitleştirilmiş örnekte atma ve C++'da özel durumları yakalama için gerekli sözdizimi gösterilmektedir.  
+ Aşağıdaki Basitleştirilmiş örnekte oluşturmak ve C++ özel durumları yakalamak için gerekli sözdizimi gösterilir.  
   
 ```cpp  
 #include <stdexcept>  
@@ -71,41 +71,41 @@ int main()
   
 ```  
   
- C++ içinde özel durumları C# ve Java gibi dilleri de benzer. İçinde `try` bir özel durum ise bloğunu *durum* olacak *yakalanan* tarafından ilk ilişkili `catch` blok türü, özel durumun eşleşir. Diğer bir deyişle, gelen yürütme atlar `throw` ifadesine `catch` deyimi. Hiçbir kullanılabilir catch bloğu bulunursa, `std::terminate` çağrılır ve program çıkar. C++'da, herhangi bir tür durum; Ancak, doğrudan veya dolaylı olarak türeyen bir tür throw öneririz `std::exception`. Önceki örnekte, özel durum türü [invalid_argument](../standard-library/invalid-argument-class.md), standart Kitaplığı'nda tanımlanan [ \<stdexcept >](../standard-library/stdexcept.md) üstbilgi dosyası. C++ sağlamaz ve gerektirmeyen bir `finally` bloğu bir özel durum, tüm kaynakları serbest olduğundan emin olun. Kaynak edinme, akıllı işaretçiler kullanır, başlatma (RAII) deyim kaynak Temizleme için gerekli işlevselliği sağlar ' dir. Daha fazla bilgi için bkz: [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md). C++ yığın geriye doğru izleme mekanizması hakkında daha fazla bilgi için bkz: [özel durumlar ve yığını Unwinding](../cpp/exceptions-and-stack-unwinding-in-cpp.md).  
+ C++ içindeki özel durumlar bu C# ve Java gibi dillerdeki benzer. İçinde **deneyin** bir özel durum bloğunda *durum* olacaktır *yakalandı* ilk ilişkili **catch** olan türüyle eşleşen blok özel durum. Yürütme başka bir deyişle, atlar **throw** ifadesine **catch** deyimi. Kullanılabilir catch bloğu bulunduysa `std::terminate` çağrılır ve programdan çıkılır. C++'da, herhangi bir tür oluşturulabilir; Ancak, doğrudan veya dolaylı olarak türetir tür throw öneririz `std::exception`. Önceki örnekte, özel durum türü [invalid_argument](../standard-library/invalid-argument-class.md), standart kitaplıkta tanımlanan [ \<stdexcept >](../standard-library/stdexcept.md) üst bilgi dosyası. C++ sağlamaz ve gerektirmeyen bir **son** bir özel durum oluşturulursa tüm kaynakların serbest bırakıldığından emin olmak için blok. Kaynak alımı başlatma (RAII) deyimidir, akıllı işaretçiler kullanan kaynak Temizleme için gereken işlevselliği sağlar ' dir. Daha fazla bilgi için [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md). C++ yığın geriye doğru izleme mekanizması hakkında daha fazla bilgi için bkz: [özel durumlar ve yığını geriye doğru izleme](../cpp/exceptions-and-stack-unwinding-in-cpp.md).  
   
-## <a name="basic-guidelines"></a>Temel yönergeleri  
- Sağlam hata işleme herhangi bir programlama dili zordur. Özel durumlar iyi hata işleme desteği çeşitli özellikler sunmasına karşın, bunlar tüm iş için bunu yapamazsınız. Özel durum mekanizması faydaları hayata geçirmek için özel durumlar kodunuzu tasarlarken göz önünde bulundurun.  
+## <a name="basic-guidelines"></a>Temel yönergeler  
+ Herhangi bir programlama dilinde güçlü hata işleme zordur. Özel durumlar hata işlemeyi iyi destekleyen çeşitli özellikler sağlasa da, bunlar işin tümünü sizin yerinize gerçekleştiremez. Özel durum düzeneğinin avantajlardan faydalanmak için kodunuzun tasarlarken özel durumları göz önünde bulundurun.  
   
--   Hiçbir zaman gerçekleşeceğini hataları denetlemek için kullanım onaylar. Özel durumlar, örneğin, oluşabilecek hatalar için ortak işlevlerin parametreleri giriş doğrulama hatalarını denetlemek için kullanın. Daha fazla bilgi için başlıklı bölüme bakın **özel durumlar vs. Onaylar**.  
+-   Gereken hataları denetlemek için kullanım onaylar. Genel işlev parametrelerinin giriş doğrulamalarındaki hatalar, örneğin, oluşabilecek hataları denetlemek için özel durumları kullanın. Daha fazla bilgi için bkz. bölümüne **özel durumları vs. Onaylamalar**.  
   
--   Hata işleme kodu hatası algılarsa kodundan tarafından bir veya daha fazla müdahalede bulunan işlev çağrılarını ayrılmış, özel durumlar kullanın. Hata işleme kodu sıkı şekilde bağlı-algıladığı kodu olduğunda hata kodları performans açısından kritik Döngülerde kullanmayı düşünün. 
+-   Hatayı işleyen kodun hatayı algılayan koddan bir veya daha fazla işlev çağrısıyla ayrılabileceği durumlarda özel durumları kullanın. Hatayı işleyen kod, algıladığı koda sıkıca bağlı olduğunda hata kodları performans açısından kritik döngüler yerine kullanıp kullanmayacağınızı düşünün. 
   
--   Oluşturduğunda veya bir özel durum yayılması her işlev için üç özel durum garanti birini belirtin: güçlü garanti, temel garanti ya da nothrow (noexcept) garanti edilemez. Daha fazla bilgi için bkz: [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).  
+-   Throw veya bir özel durum yayan her işlev için üç özel durum garantisinden birini sağlayın: güçlü garanti, temel garanti veya nothrow (noexcept) garantisi. Daha fazla bilgi için [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).  
   
--   Değere göre özel durumlar oluşturma, başvuruya göre yakalayın. Ne işleyemiyor catch yok. 
+-   Özel durumları değere göre oluşturun, başvuruya göre yakalayın. İşleyemeyeceğiniz hiçbir öğeyi yakalamayın. 
   
--   C ++ 11'de kullanım dışı özel durum belirtimleri kullanmayın. Daha fazla bilgi için başlıklı bölüme bakın **özel durum belirtimleri ve noexcept**.  
+-   C ++ 11'de kullanım dışı özel durum belirtimlerini kullanmayın. Daha fazla bilgi için bkz. bölümüne **özel durum belirtimleri ve noexcept**.  
   
--   Bunlar uyguladığınızda standart kitaplığı özel durum türleri kullanın. Özel durum türlerini türetmek [özel durum sınıfı](../standard-library/exception-class.md) hiyerarşisi.  
+-   Geçerli olduğu durumlarda standart kitaplık özel durum türlerini kullanın. Özel durum'türleri türetin [özel durum sınıfı](../standard-library/exception-class.md) hiyerarşisi.  
   
--   Yıkıcılar kaçış veya İşlevler bellek ayırmayı kaldırma özel durumlara izin verme.  
+-   Özel durumlar edicilerden veya bellek-ayırma kaldırma işlevlerinden kurtulmasına izin vermeyin.  
   
-## <a name="exceptions-and-performance"></a>Özel durumları ve performans  
- Özel durum mekanizması hiçbir özel durum, bir çok az performans sahiptir. Bir özel durum, yığın geçişi, maliyet ve unwinding kabaca bir işlev çağrısı maliyetini karşılaştırılabilir. Ek veri yapılarını sonra çağrı yığını izlemek üzere gerekli bir `try` blok girilir ve ek yönergeler, bir özel durum yığını geriye doğru izleme için gereklidir. Bununla birlikte, çoğu senaryoda, maliyet performans ve bellek alanını önemli değildir. Büyük olasılıkla yalnızca çok bellek kısıtlı sistemlerinde önemli özel durumların performansı olumsuz etkileyebilir veya içinde performans açısından kritik burada bir hata oluştuğu düzenli olarak ve onu işlemek üzere kod rapor kodu sıkı şekilde bağlı döngüye girer. Herhangi bir durumda, özel durumların gerçek maliyet profil oluşturma ve ölçme bilmeniz mümkün değildir. Maliyet önemli olduğunda bu nadir durumlarda bile, onu artan doğruluğu, daha kolay bakım ve iyi tasarlanmış bir özel durum ilkesi tarafından sağlanan diğer avantajları karşı tartmanız.  
+## <a name="exceptions-and-performance"></a>Özel durumlar ve performans  
+ Özel durum mekanizması çok az performans hiçbir özel durum oluşturulursa maliyetine sahiptir. Bir özel durum oluşturulursa, yığın geçişi maliyet ve geriye doğru izleme maliyeti işlev çağrısı için kabaca karşılaştırılabilir. Ek veri yapıları sonra çağırma yığınını izlemek için gerekli bir **deneyin** bloğu girildikten ve ek yönergeler, bir özel durum oluşturulursa yığını geriye doğru izleme için gereklidir. Ancak, çoğu senaryoda performans ve bellek Ayak izi maliyeti önemli değildir. Özel durumların performans üzerindeki olumsuz etkisi, yalnızca belleği çok kısıtlı sistemlerde önemli hale gelmesi muhtemeldir veya içinde performans açısından kritik burada bir hata, düzenli aralıklarla gerçekleşecek şekilde olasıdır ve bunu işlemek üzere kod rapor koda sıkı şekilde bağlı döngü oluşturur. Her durumda profil oluşturma veya ölçme yapılmadan özel durumların gerçek maliyetini bilmek olanaksızdır. Maliyet önemli olduğunda taşıdığı nadir durumlarda bile, bunu artırılmış doğruluk, daha kolay sürdürülebilirlik ve iyi tasarlanmış bir özel durum ilkesi tarafından sağlanan diğer avantajları karşı Tart.  
   
-## <a name="exceptions-vs-assertions"></a>Özel durumlar onaylar karşılaştırması  
- Özel durumlar ve onaylar çalışma zamanı hataları bir programda algılama için iki farklı mekanizmalardır. Kullanım koşulları için hiçbir zaman tüm kodunuzun doğru ise doğru olması gereken geliştirme sırasında test etmek için onaylar. Bir özel durum hata kodu bir şey düzeltilmesi sahip olduğunu gösterir çünkü'ı kullanarak bu tür bir hata işlemedeki noktası yok ve çalışma zamanında kurtarılır program sahip bir koşulu temsil etmez. Assert deyim yürütmesi durur, böylece hata ayıklayıcı program durumda inceleyin; bir özel durum ilk uygun catch işleyicisinden yürütme devam eder. Çalışma zamanında kodunuzun doğru Örneğin, "dosya bulunamadı" olsa bile veya "yetersiz bellek." ortaya çıkabilecek hata koşullarını denetlemek için özel durumlar kullanma Kurtarma yalnızca bir günlük iletisine çıkarır ve programı sonlandırır olsa bile bu koşulları, kurtarmak istediğiniz. Her zaman özel durumları kullanarak genel işlev bağımsız değişkenleri denetleyin. İşlevinizi hatasız olsa bile, bir kullanıcı için geçebilir bağımsız değişken tam denetime sahip olmayabilir.  
+## <a name="exceptions-vs-assertions"></a>Özel durumlar ile onaylar  
+ Özel durumlar ve onaylama işlemleri bir programda çalışma zamanı hataları algılamak için iki ayrı mekanizmadır. Kullanım koşulları için hiçbir zaman tüm kodunuz doğruysa true olması gereken geliştirme sırasında test etmek için onaylar. Özel durum hatası kodu bir şey düzeltilmesi gereken olduğunu belirttiğinden'ı kullanarak bu tür bir hataya işlemedeki noktası yok ve program çalışma zamanında kurtarılır sahip bir koşulu temsil etmez. Hata ayıklayıcıdaki program durumunu denetleyebilmeniz için deyimdeki yürütmeyi durdurur; bir özel durum yürütmeyi ilk uygun catch işleyicisinden devam eder. Çalışma zamanında bile kodunuzun doğru Örneğin, "dosya bulunamadı" veya "yetersiz bellek." ortaya çıkabilecek hata koşullarını denetlemek için özel durumları kullanın Kurtarma yalnızca bir günlük için ileti sunsa ve programı sonlandırsa bile bu koşullar, kurtarılır isteyebilirsiniz. Her zaman özel durumları kullanarak genel işlev bağımsız değişkenleri denetleyin. İşleviniz hatadan arınmış olsa bile, bir kullanıcının buna geçirebileceği bağımsız değişkenler üzerinde tam denetime sahip olmayabilir.  
   
-## <a name="c-exceptions-versus-windows-seh-exceptions"></a>C++ özel durumlarını Windows SEH özel durumlar karşılaştırması  
- C ve C++ programlarında yapılandırılmış özel durum işleme (SEH) mekanizması Windows işletim sisteminde kullanabilirsiniz. SEH kullanır ancak bu SEH açıklanan kavramlar C++ özel durumlarını de benzer `__try`, `__except`, ve `__finally` yerine yapıları `try` ve `catch`. Visual C++'da C++ özel durumlarını SEH için uygulanır. Ancak, C++ kodu yazarken C++ özel durum sözdizimini kullanın.  
+## <a name="c-exceptions-versus-windows-seh-exceptions"></a>C++ özel durumlarına karşı Windows SEH özel durumları  
+ Hem C ve C++ programları, yapılandırılmış özel durum işleme (SEH) mekanizmasını Windows işletim sisteminde kullanabilirsiniz. SEH kullanması hariç, SEH içindeki kavramlar C++ özel durumlarını, de benzer `__try`, `__except`, ve `__finally` yerine yapıları **deneyin** ve **catch**. Visual C++'da, C++ özel durumları SEH için uygulanır. Bununla birlikte, C++ kodu yazarken C++ özel durum söz dizimini kullanın.  
   
  SEH hakkında daha fazla bilgi için bkz: [yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md).  
   
 ## <a name="exception-specifications-and-noexcept"></a>Özel durum belirtimleri ve noexcept  
- Özel durum belirtimleri C++'da bir işlev throw özel durumları belirtmek için bir yol tanıtıldı. Ancak, özel durum belirtimleri uygulamada sorunlu oluyor uygulamasına yol açıyordu ve C ++ 11 taslak standart dışı bırakılmıştır. Özel durum belirtimleri dışında kullanmamanızı öneririz `throw()`, işlevi kaçınmak hiçbir özel durum izin verdiğini gösterir. Özel durum belirtimleri türü kullanmanız gerekiyorsa `throw(` *türü*`)`, Visual C++ belirli şekillerde standardı departs unutmayın. Daha fazla bilgi için bkz: [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md). `noexcept` Tercih edilen alternatif olarak, C ++ 11 belirleyici sunulmuştur `throw()`.  
+ Özel durum belirtimleri bir işlevin oluşturulabileceği özel durumları belirtme yöntemi olarak C++ ile sunulur. Ancak, özel durum belirtimleri uygulamada sorun kanıtlandı ve C ++ 11 taslak standardı kullanım dışı bırakılmıştır. Özel durum belirtimleri dışında kullanmamanızı öneririz `throw()`, işlev kaçış özel durum yok izin verdiğini gösterir. Türündeki özel durum belirtimlerini kullanmanız gerekirse `throw(` *türü*`)`, Visual C++ standardı belirli yollarla departs unutmayın. Daha fazla bilgi için [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md). `noexcept` Tanımlayıcısı için tercih edilen alternatif olarak C ++ 11'de sunulmuştur `throw()`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasındaki arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)   
- [C++ için yeniden Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
+ [Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasında arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)   
+ [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

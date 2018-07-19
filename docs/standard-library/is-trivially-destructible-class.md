@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89215ac3d7b1035ef4326d73b21d540aada5fba6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a0e2fb16ad96ba102295981b9f9d56fda810ddff
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857821"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961064"
 ---
 # <a name="istriviallydestructible-class"></a>is_trivially_destructible sınıfı
 
-Türü trivially destructible olup olmadığını sınar.
+Basit bir şekilde yıkıcı türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_trivially_destructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` destructible türü ve yıkıcı derleyici hiçbir Önemsiz olmayan işlemlerini kullanmak için bilinen bir. Aksi takdirde false tutar.
+Karşılaştırmasının bir örneği true tutan türü *T* yıkıcı bir türdür ve yok edici derleyici için Önemsiz olmayan bir işlem kullanmak için bilinir. Aksi takdirde false tutar.
 
 ## <a name="requirements"></a>Gereksinimler
 

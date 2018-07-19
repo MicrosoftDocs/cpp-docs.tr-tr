@@ -1,5 +1,5 @@
 ---
-title: '&lt;valarray&gt; işleçleri | Microsoft Docs'
+title: '&lt;valarray&gt; işleçler | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -34,27 +34,27 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: e65d11ef95b5305988fe77ab258bb39c2b80de57
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0c297ddf24c1ed357a0756c5e0e5631e7b3d1c02
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862474"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964840"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[operator%](#op_mod)|[işleci&amp;](#op_amp)|
-|[işleci&amp;&amp;](#op_amp_amp)|[işleci&gt;](#op_gt)|[işleci&gt;&gt;](#op_gt_gt)|
-|[işleci&gt;=](#op_gt_eq)|[işleci&lt;](#op_lt)|[işleci&lt;&lt;](#op_lt_lt)|
-|[işleci&lt;=](#op_lt_eq)|[işleç *](#op_star)|[operator +](#op_add)|
+|[operator!=](#op_neq)|[operator%](#op_mod)|[İşleci&amp;](#op_amp)|
+|[İşleci&amp;&amp;](#op_amp_amp)|[İşleci&gt;](#op_gt)|[İşleci&gt;&gt;](#op_gt_gt)|
+|[İşleci&gt;=](#op_gt_eq)|[İşleci&lt;](#op_lt)|[İşleci&lt;&lt;](#op_lt_lt)|
+|[İşleci&lt;=](#op_lt_eq)|[operator *](#op_star)|[operator +](#op_add)|
 |[operator-](#operator-)|[operator /](#op_div)|[operator==](#op_eq_eq)|
 |[operator ^](#op_xor)|[işleci|](#op_or)|[işleci||](#op_lor)|
 
-## <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  işleç! =
 
-İki eşit boyutta valarrays karşılık gelen öğelerini eşit olmayan veya olup olmadığını bir valarray tüm öğeleri eşit olup olmadığını sınar belirtilen bir değeri.
+Eşit değil veya bir valarray tüm öğelerini eşit olup iki eşit boyutlu valarrays karşılık gelen öğeleri olup olmadığını test belirtilen bir değer.
 
 ```cpp
 template <class Type>
@@ -78,25 +78,27 @@ operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Eşitsizlik için sınanacak öğeleri olan iki valarrays ilk.
+*Sol*  
+ Eşitsizlik için test edilecek öğeleri olan iki valarrays ilk.
 
-`right` Eşitsizlik için sınanacak öğeleri olan iki valarrays saniye.
+*sağ*  
+ Eşitsizlik için test edilecek öğeleri olan iki valarrays saniye.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her biri bir valarray Boole değerleri:
 
-- **doğru** karşılık gelen öğeleri eşit ise.
+- **doğru** karşılık gelen öğelerle eşit olduğunda.
 
-- **yanlış** karşılık gelen öğeleri eşit değilse.
+- **false** karşılık gelen öğelerle eşit değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işleci sınıfın bir nesnesi döndürür [valarray\<bool >](../standard-library/valarray-bool-class.md), her öğeleri `I` olan `left[I] != right[I]`.
+Sınıfın bir nesnesi ilk şablon işlecini verir [valarray\<bool >](../standard-library/valarray-bool-class.md), her biri öğeleri `I` olduğu `left[I] != right[I]`.
 
-İkinci şablon işleci öğesinde depolar `I` `left[I] != right`.
+İkinci şablon işlecini öğesinde depolar `I` `left[I] != right`.
 
-Üçüncü şablon işleci öğesinde depolar `I` `left != right[I]`.
+Üçüncü şablon işlecini öğesinde depolar `I` `left != right[I]`.
 
 ### <a name="example"></a>Örnek
 
@@ -147,7 +149,7 @@ The element-by-element result of the not equal comparison test is the
 
 ## <a name="op_mod"></a>  operator %
 
-İki eşit boyutta valarrays veya bir valarray bir belirtilen değere bölünmesinden veya valarray tarafından belirtilen değere bölerek öğelere karşılık gelir ayırma kalan alır.
+Karşılık gelen öğelerle iki eşit boyutlu valarrays veya bir valarray bir belirtilen değere bölünmesinden veya bir valarray tarafından belirtilen değere bölerek bölme kalanı alır.
 
 ```cpp
 template <class Type>
@@ -171,13 +173,15 @@ operator%(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Bir değer veya hangi başka bir değer bölünen hizmet valarray veya valarray bölünür yüklemektir.
+*Sol*  
+ Bir değer veya hangi başka bir değer ile bölünen hizmet veren valarray ya da valarray bölünür sağlamaktır.
 
-`right` Bir değer veya, bölen olarak hizmet verir ve başka bir değerle böler valarray veya valarray.
+*sağ*  
+ Bir değer veya bölen olarak hizmet veren ve, başka bir değerle böler valarray veya valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri olan element-wise kalanları valarray, `left` bölü `right`.
+Aralığın öğe düzeyinde çarpımının kalanları öğeleri olan bir valarray, *sol* bölü *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -226,9 +230,9 @@ The remainders from the element-by-element division is the
 *\
 ```
 
-## <a name="op_amp"></a>  işleci&amp;
+## <a name="op_amp"></a>  İşleci&amp;
 
-Bit düzeyinde edinir **ve** veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.
+Bit düzeyinde alır **ve** bir valarray ve öğe türü belirtilen değeri veya iki eşit boyutlu valarrays karşılık gelen öğeleri arasında.
 
 ```cpp
 template <class Type>
@@ -252,19 +256,21 @@ operator&(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ilk **ve** veya belirtilen değer Bitsel bir valarray her öğenin birleştirilecek öğe türü.
+*Sol*  
+ İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk `AND` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
-`right` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ikinci **ve** veya belirtilen değer Bitsel bir valarray her öğenin birleştirilecek öğe türü.
+*sağ*  
+ İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `AND` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri bit tabanlı AND işlemi element-wise birleşimi olan bir valarray, `left` ve `right`.
+Öğeleri, bit düzeyinde AND işlemi aralığın öğe düzeyinde çarpımının birleşimi olan bir valarray, *sol* ve *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit tabanlı işlemi yalnızca bit cinsinden işlemek için kullanılabilir `char` ve `int` veri türleri ve çeşitleri değil **float**, **çift**, **longdouble**, `void`, `bool` veya diğer, daha karmaşık veri türleri.
+Bit düzeyinde işlem yalnızca bit işlemek için kullanılabilir **char** ve **int** veri türleri ve çeşitleri değil **float**, **çift**, **longdouble**, **void**, **bool** veya diğer, daha karmaşık veri türleri.
 
-Bit düzeyinde **ve** mantıksal aynı gerçekte tabloda sahip **ve** ancak tek tek bit düzeyinde veri türü için geçerlidir. [İşleci & &](../standard-library/valarray-operators.md#amp) geçerli bir öğe düzeyi, tüm sıfır olmayan değerler true ve sonuç sayım valarray Boolean değeri değil. Bit düzeyinde **ANDoperator &**, bunun aksine, değer 0 veya 1, bit düzeyinde işleminin sonucunu bağlı olarak başka bir valarray neden olabilir.
+Bit düzeyinde `AND` mantıksal olarak aynı gerçekte tablo `AND` ancak tek bit düzeyinde veri türü için geçerlidir. [İşleci & &](../standard-library/valarray-operators.md#amp) geçerli bir öğe düzeyi, tüm sıfır olmayan değerler true ve sonuç sayım olduğu bir valarray Boolean değeri. Bit düzeyinde **ANDoperator &**, aksine, değerleri 0 veya 1, bit düzeyinde işlemin sonucunu bağlı olarak başka bir valarray neden olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -313,9 +319,9 @@ The element-by-element result of the bitwise operator & is the
 *\
 ```
 
-## <a name="op_amp_amp"></a>  işleci&amp;&amp;
+## <a name="op_amp_amp"></a>  İşleci&amp;&amp;
 
-Mantıksal edinir **ve** bir valarray ve valarray's öğe türü belirtilen değeri veya iki eşit boyutta valarrays karşılık gelen öğeleri arasında.
+Mantıksal alır **ve** bir valarray ve valarray'nın öğe türünün belirtilen bir değeri veya iki eşit boyutlu valarrays karşılık gelen öğeleri arasında.
 
 ```cpp
 template <class Type>
@@ -339,17 +345,19 @@ operator&&(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ilk **ve** veya belirtilen değer bir valarray her öğenin birleştirilecek öğe türü.
+*Sol*  
+ İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ilk `AND` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
 
-`right` İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ikinci **ve** veya belirtilen değer bir valarray her öğenin birleştirilecek öğe türü.
+*sağ*  
+ İki valarrays ilgili öğeleri olan mantıksal ile birleştirilecek ikinci `AND` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri türü bool ve mantıksal element-wise birleşimi valarray **ve** işlemi `left` ve `right`.
+Öğeleri türü bool ve mantıksal aralığın öğe düzeyinde çarpımının birleşimi bir valarray `AND` işleyişini *sol* ve *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mantıksal **ANDoperator & &** geçerli bir öğe düzeyi, tüm sıfır olmayan değerler true ve sonuç sayım valarray Boolean değeri değil. Bit düzeyinde sürümü **ve**, [işleci &,](../standard-library/valarray-operators.md#op_amp), bunun aksine, değer 0 veya 1, bit düzeyinde işleminin sonucunu bağlı olarak başka bir valarray neden olabilir.
+Mantıksal `ANDoperator&&` geçerli bir öğe düzeyi, tüm sıfır olmayan değerler true ve sonuç sayım olduğu bir valarray Boolean değeri. Bit düzeyinde sürümünü `AND`, [işleci &,](../standard-library/valarray-operators.md#op_amp), aksine, değerleri 0 veya 1, bit düzeyinde işlemin sonucunu bağlı olarak başka bir valarray neden olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -398,9 +406,9 @@ The element-by-element result of the logical AND operator&& is the
 *\
 ```
 
-## <a name="op_gt"></a>  işleci&gt;
+## <a name="op_gt"></a>  İşleci&gt;
 
-Bir valarray öğelerini daha büyük bir eşit boyutta valarray öğelerini veya bir valarray tüm öğeleri büyük ya da belirtilen değerden daha az olup olmadığını test eder.
+Bir valarray öğelerden daha büyük bir eşit boyutlu valarray öğelerini veya bir valarray tüm öğelerini büyük ya da belirtilen değerden daha az olup olmadığını sınar.
 
 ```cpp
 template <class Type>
@@ -424,21 +432,23 @@ operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Her bir valarray öğesi ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays veya belirtilen bir değeri.
+*Sol*  
+ Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-`right` Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen bir değeri her bir valarray öğesi ile Karşılaştırılacak.
+*sağ*  
+ Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her biri bir valarray Boole değerleri:
 
-- **doğru** varsa `left` öğesi veya değeri karşılık gelen daha büyük `right` öğesi veya değer.
+- **doğru** varsa *sol* öğe veya değer ilgili daha fazla *doğru* öğe veya değer.
 
-- **yanlış** varsa `left` öğesi veya değeri karşılık gelen daha büyük değil `right` öğesi veya değer.
+- **false** varsa *sol* öğe veya değer karşılık gelen değerinden büyük değil *doğru* öğe veya değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki valarrays öğe sayısı eşit değilse, tanımlanmamış bir sonucudur.
+İki valarrays içindeki öğelerin sayısını eşit değilse sonuç tanımsızdır.
 
 ### <a name="example"></a>Örnek
 
@@ -487,9 +497,9 @@ The element-by-element result of the greater than comparison test is the
 *\
 ```
 
-## <a name="op_gt_eq"></a>  işleci&gt;=
+## <a name="op_gt_eq"></a>  İşleci&gt;=
 
-Bir valarray öğelerini değerinden büyük veya eşit boyutta bir valarray veya olup bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit öğelerini eşit olup olmadığını sınar.
+Bir valarray öğelerini değerinden büyük veya eşit boyutlu bir valarray veya bir valarray tüm öğelerini büyük veya eşit veya daha az olup belirtilen bir değere eşit öğelerinin eşit olup olmadığını test eder.
 
 ```cpp
 template <class Type>
@@ -513,21 +523,23 @@ operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Her bir valarray öğesi ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays veya belirtilen bir değeri.
+*Sol*  
+ Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-`right` Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen bir değeri her bir valarray öğesi ile Karşılaştırılacak.
+*sağ*  
+ Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her biri bir valarray Boole değerleri:
 
-- **doğru** varsa `left` öğesi veya değeri sıfırdan büyük veya buna karşılık gelen eşit `right` öğesi veya değer.
+- **doğru** varsa *sol* büyüktür veya eşittir karşılık gelen öğe veya değer *doğru* öğe veya değer.
 
-- **yanlış** varsa `left` öğesi veya değer, ilgili değerinden `right` öğesi veya değer.
+- **false** varsa *sol* öğe veya değer azdır karşılık gelen *doğru* öğe veya değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki valarrays öğe sayısı eşit değilse, tanımlanmamış bir sonucudur.
+İki valarrays içindeki öğelerin sayısını eşit değilse sonuç tanımsızdır.
 
 ### <a name="example"></a>Örnek
 
@@ -576,9 +588,9 @@ The element-by-element result of the greater than or equal test is the
 *\
 ```
 
-## <a name="op_gt_gt"></a>  işleci&gt;&gt;
+## <a name="op_gt_gt"></a>  İşleci&gt;&gt;
 
-Valarray belirtilen sayıda konumlar veya ikinci valarray tarafından belirtilen bir element-wise miktar, her bir öğe için BITS sağa kaydırır.
+Sağa kaydırmalar her öğeyi belirtilen sayıda konumları veya ikinci bir valarray tarafından belirtilen aralığın öğe düzeyinde çarpımının bir miktara göre bir valarray parçaları.
 
 ```cpp
 template <class Type>
@@ -602,17 +614,19 @@ operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Değerin gölgeye veya değişebilir öğeleri olan valarray.
+*Sol*  
+ Kaydırılmasına değer veya kaydırılmasına öğeleri olan valarray.
 
-`right` Sağa kaydırma veya valarray miktarını gösteren değer öğeleri sağa kaydırma element-wise miktarını belirtin.
+*sağ*  
+ Sağa kaydırma veya valarray belirten değeri öğeleri sağa kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir miktarda öğeleri sağ gölgeye valarray.
+Belirli bir miktarda öğeleri sağa kaydırılacak bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretli sayılara korunur kendi işaretlere sahip.
+İşaretli sayılara korunur, imzalar vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -661,9 +675,9 @@ The element-by-element result of the right shift is the
 *\
 ```
 
-## <a name="op_lt"></a>  işleci&lt;
+## <a name="op_lt"></a>  İşleci&lt;
 
-Bir valarray öğelerini eşit boyutta bir valarray veya bir valarray tüm öğeleri büyük ya da belirtilen değerden daha az olup öğelerini değerinden olup olmadığını sınar.
+Bir valarray öğelerinin eşit boyutlu bir valarray veya bir valarray tüm öğelerini büyük ya da belirtilen değerden daha az olup öğelerini küçük olup olmadığını test eder.
 
 ```cpp
 template <class Type>
@@ -687,21 +701,23 @@ operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Her bir valarray öğesi ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays veya belirtilen bir değeri.
+*Sol*  
+ Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-`right` Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen bir değeri her bir valarray öğesi ile Karşılaştırılacak.
+*sağ*  
+ Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her biri bir valarray Boole değerleri:
 
-- **doğru** varsa `left` öğesi veya değer, ilgili değerinden `right` öğesi veya değer.
+- **doğru** varsa *sol* öğe veya değer azdır karşılık gelen *doğru* öğe veya değer.
 
-- **yanlış** varsa `left` öğesi veya değeri değil karşılık gelen daha küçük `right` öğesi veya değer.
+- **false** varsa *sol* öğesi veya değeri değil ilgili daha az *doğru* öğe veya değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğeleri iki valarrays sayısı eşit değilse, tanımlanmamış bir sonucudur.
+Öğeleri iki valarrays sayısına eşit değil ise sonuç tanımsızdır.
 
 ### <a name="example"></a>Örnek
 
@@ -750,9 +766,9 @@ The element-by-element result of the less-than comparson test is the
 *\
 ```
 
-## <a name="op_lt_eq"></a>  işleci&lt;=
+## <a name="op_lt_eq"></a>  İşleci&lt;=
 
-Bir valarray öğelerini küçük veya buna eşit boyutta bir valarray öğelerini eşit olup olmadığına veya bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit olup olmadığını sınar.
+Bir valarray öğelerini ya da eşit boyutlu bir valarray öğelerinin eşit olup olmadığını veya bir valarray tüm öğelerini büyük veya eşit veya daha az veya belirtilen değere eşit olup olmadığını test eder.
 
 ```cpp
 template <class Type>
@@ -776,21 +792,23 @@ operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Her bir valarray öğesi ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays veya belirtilen bir değeri.
+*Sol*  
+ Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-`right` Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen bir değeri her bir valarray öğesi ile Karşılaştırılacak.
+*sağ*  
+ Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her biri bir valarray Boole değerleri:
 
-- **doğru** varsa `left` öğesi değeri mi değerinden küçük veya eşit karşılık gelen `right` öğesi veya değer.
+- **doğru** varsa *sol* öğe veya değer olan küçük veya eşit karşılık gelen *doğru* öğe veya değer.
 
-- **yanlış** varsa `left` öğesi veya değeri karşılık gelen daha büyük `right` öğesi veya değer.
+- **false** varsa *sol* öğe veya değer ilgili daha fazla *doğru* öğe veya değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğeleri iki valarrays sayısı eşit değilse, tanımlanmamış bir sonucudur.
+Öğeleri iki valarrays sayısına eşit değil ise sonuç tanımsızdır.
 
 ### <a name="example"></a>Örnek
 
@@ -839,9 +857,9 @@ The element-by-element result of the less than or equal test is the
 *\
 ```
 
-## <a name="op_lt_lt"></a>  işleci&lt;&lt;
+## <a name="op_lt_lt"></a>  İşleci&lt;&lt;
 
-Valarray belirtilen sayıda konumlar veya ikinci valarray tarafından belirtilen bir element-wise miktar, her bir öğe için BITS Sola kaydırır.
+Sola bir valarray belirtilen sayıda konumları veya ikinci bir valarray tarafından belirtilen aralığın öğe düzeyinde çarpımının bir miktar, her öğe için bit kaydırır.
 
 ```cpp
 template <class Type>
@@ -865,17 +883,19 @@ operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Değerin gölgeye veya değişebilir öğeleri olan valarray.
+*Sol*  
+ Kaydırılmasına değer veya kaydırılmasına öğeleri olan valarray.
 
-`right` Sola kaydırma veya valarray miktarını gösteren değer öğeleri sola kaydırma element-wise miktarını belirtin.
+*sağ*  
+ Sola kaydırma veya valarray belirten bir değeri, öğeleri sola kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir miktarda sol öğeleri gölgeye bir valarray.
+Belirli bir miktarda sola kaydırılacak öğeleri bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretli sayılara korunur kendi işaretlere sahip.
+İşaretli sayılara korunur, imzalar vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -924,9 +944,9 @@ The element-by-element result of the left shift is the
 *\
 ```
 
-## <a name="op_star"></a>  işleç *
+## <a name="op_star"></a>  operator *
 
-İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise ürün edinir valarray belirtilen değer arasında.
+Aralığın öğe düzeyinde çarpımının ürün arasındaki, iki eşit boyutlu valarrays ve karşılık gelen öğeleri alır bir valarray belirtilen değer arasında.
 
 ```cpp
 template <class Type>
@@ -950,13 +970,15 @@ operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Her bir valarray öğesi ile çarpılacağı ilk çarpılacağı öğeleri olan iki valarrays ya da belirtilen bir değeri.
+*Sol*  
+ Her bir valarray öğe ile çarpılmasına ilk çarpılmasına öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-`right` Öğeleri çarpılacağı olan iki valarrays ikinci veya belirtilen değer bir valarray her öğenin çarpılacağı.
+*sağ*  
+ Öğeleri çarpılmasına olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile çarpılmasına.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri olan element-wise ürün valarray, `left` ve `right`.
+Aralığın öğe düzeyinde çarpımının ürün öğeleri olan bir valarray, *sol* ve *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -1007,7 +1029,7 @@ The element-by-element result of the multiplication is the
 
 ## <a name="op_add"></a>  operator +
 
-İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise toplam alacağı valarray belirtilen değer arasında.
+İki eşit boyutlu valarrays veya, ilgili öğeler arasındaki aralığın öğe düzeyinde çarpımının toplamını alır bir valarray belirtilen değer arasında.
 
 ```cpp
 template <class Type>
@@ -1031,13 +1053,15 @@ operator+(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Her bir valarray öğesi ile eklenecek ilk eklenecek öğeleri olan iki valarrays veya belirtilen bir değeri.
+*Sol*  
+ Bir valarray her öğesinin eklenmesi ilk eklenecek öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-`right` Eklenecek öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her öğenin eklenecek.
+*sağ*  
+ Eklenecek öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her öğeyle eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri element-wise toplamı olan valarray, `left` ve `right`.
+Aralığın öğe düzeyinde çarpımının toplamını öğeleri olan bir valarray, *sol* ve *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -1088,7 +1112,7 @@ The element-by-element result of the sum is the
 
 ## <a name="operator-"></a>  operator-
 
-Karşılık gelen öğeleri iki eşit boyutta valarrays veya, element-wise birbirinden edinir valarray belirtilen değer arasında.
+İki eşit boyutlu valarrays veya, karşılık gelen öğeleri arasındaki aralığın öğe düzeyinde çarpımının fark alır bir valarray belirtilen değer arasında.
 
 ```cpp
 template <class Type>
@@ -1112,19 +1136,21 @@ operator-(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Bir değer veya içerdiği diğer değerleri veya valarrays fark oluşturan çıkarılır için olan minuend görevi gören valarray.
+*Sol*  
+ Bir değer veya içerdiği diğer değerleri veya valarrays fark oluşturan içinde çıkarılan için olan Eksilen görevi gören valarray.
 
-`right` Bir değer veya diğer değerleri veya fark oluşturan içinde valarrays çıkartma yapılacak için subtrahend görevi gören valarray.
+*sağ*  
+ Bir değer veya diğer değerleri veya fark oluşturan içinde valarrays çıkarmanın yapılacağı olan çıkarılan görevi gören valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri element-wise farkı olan bir valarray, `left` ve `right`.
+Aralığın öğe düzeyinde çarpımının fark öğeleri olan bir valarray, *sol* ve *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıkarma tanımlamak için kullanılan aritmetik terminolojisi:
+Çıkarma tanımlamak için kullanılan aritmetik terimler:
 
-fark minuend - = subtrahend
+fark - Eksilen = çıkarılan
 
 ### <a name="example"></a>Örnek
 
@@ -1175,7 +1201,7 @@ The element-by-element result of the difference is the
 
 ## <a name="op_div"></a>  operator /
 
-İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise sayının edinir valarray belirtilen değer arasında.
+Aralığın öğe düzeyinde çarpımının bölümü arasındaki, iki eşit boyutlu valarrays ve karşılık gelen öğeleri alır bir valarray belirtilen değer arasında.
 
 ```cpp
 template <class Type>
@@ -1199,17 +1225,19 @@ operator/(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Bir değer veya hangi başka bir değer bölünen hizmet valarray veya valarray sayının oluşturan bölünür yüklemektir.
+*Sol*  
+ Bir değer veya hangi başka bir değer ile bölünen hizmet veren valarray ya da valarray sayının oluşturan içinde bölünür sağlamaktır.
 
-`right` Bir değer veya valarray, bölen olarak hizmet verir ve başka bir değer veya sayının oluşturan içinde valarray böler.
+*sağ*  
+ Bir değer veya valarray bölen olarak hizmet veren ve başka bir değer veya bölümü oluşturan içinde valarray böler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri olan element-wise sayının valarray, `left` bölü `right`.
+Öğeleri aralığın öğe düzeyinde çarpımının bölümü olan bir valarray, *sol* bölü *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölme tanımlamak için kullanılan aritmetik terminolojisi:
+Bir bölme tanımlamak için kullanılan aritmetik terimler:
 
 sayının bölünen = / bölen
 
@@ -1260,9 +1288,9 @@ The element-by-element result of the quotient is the
 *\
 ```
 
-## <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  işleç ==
 
-İki eşit boyutta valarrays karşılık gelen öğelerini eşittir veya bir valarray tüm öğeleri olup olup testleri belirtilen değere eşit.
+İki eşit boyutlu valarrays karşılık gelen öğeleri eşit veya bir valarray tüm öğelerini olup olup olmadığını test belirtilen değere eşit.
 
 ```cpp
 template <class Type>
@@ -1286,21 +1314,23 @@ operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Eşitlik için test edilecek öğeleri olan iki valarrays ilk.
+*Sol*  
+ Eşitlik için test edilecek öğeleri olan iki valarrays ilk.
 
-`right` Eşitlik için test edilecek öğeleri olan iki valarrays saniye.
+*sağ*  
+ Eşitlik için test edilecek öğeleri olan iki valarrays saniye.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her biri bir valarray Boole değerleri:
 
-- **doğru** karşılık gelen öğeleri eşit olması durumunda.
+- **doğru** karşılık gelen öğe eşitse.
 
-- **yanlış** karşılık gelen öğeleri eşit değilse.
+- **false** karşılık gelen öğelerle eşit değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işleci sınıfın bir nesnesi döndürür [valarray\<bool >](../standard-library/valarray-bool-class.md), her öğeleri `I` olan `left[I] == right[I]`. İkinci şablon işleci öğesinde depolar `I` `left[I] == right`. Üçüncü şablon işleci öğesinde depolar `I` `left == right[I]`.
+Sınıfın bir nesnesi ilk şablon işlecini verir [valarray\<bool >](../standard-library/valarray-bool-class.md), her biri öğeleri `I` olduğu `left[I] == right[I]`. İkinci şablon işlecini öğesinde depolar `I` `left[I] == right`. Üçüncü şablon işlecini öğesinde depolar `I` `left == right[I]`.
 
 ### <a name="example"></a>Örnek
 
@@ -1351,7 +1381,7 @@ The element-by-element result of the equality comparison test is the
 
 ## <a name="op_xor"></a>  operator ^
 
-Bit düzeyinde özel edinir `OR` ( **XOR**) veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.
+Bit düzeyinde özel alır `OR` ( **XOR**) veya bir valarray ve öğe türü belirtilen değeri karşılık gelen iki eşit boyutlu valarrays öğelerin arasında.
 
 ```cpp
 template <class Type>
@@ -1375,19 +1405,21 @@ operator^(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ilk **XOR** veya belirtilen değer Bitsel bir valarray her öğenin birleştirilecek öğe türü.
+*Sol*  
+ İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk **XOR** veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
-`right` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ikinci **XOR** veya belirtilen değer Bitsel bir valarray her öğenin birleştirilecek öğe türü.
+*sağ*  
+ İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci **XOR** veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri bitwise element-wise birleşimi olan bir valarray **XOR** işlemi `left` ve `right`.
+Öğeleri bit aralığın öğe düzeyinde çarpımının birleşimi olan bir valarray **XOR** işleyişini *sol* ve *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit tabanlı işlemi yalnızca bit cinsinden işlemek için kullanılabilir `char` ve `int` veri türleri ve çeşitleri değil **float**, **çift**, `long double`, `void`, `bool` veya diğer, daha karmaşık veri türleri.
+Bit düzeyinde işlem yalnızca bit işlemek için kullanılabilir **char** ve **int** veri türleri ve çeşitleri değil **float**, **çift**, **uzun çift**, **void**, **bool** veya diğer, daha karmaşık veri türleri.
 
-Bit düzeyinde özel `OR` ( **XOR**) aşağıdaki semantiğini vardır: BITS verilen *b*1 ve *b*2, *b*1  **XOR** *b*2 **true** BITS tam olarak birine true; ise **false** bitlerin her ikisi de false olduğunda veya bitlerin her ikisi de doğruysa.
+Bit düzeyinde özel `OR` ( **XOR**) semantiği aşağıdaki: BITS verilen *b*1 ve *b*2 *b*1  **XOR** *b*2 **true** bitleri tam olarak biri true; değilse **false** bitlerin her ikisi de false olduğunda veya bitlerin her ikisi de doğruysa.
 
 ### <a name="example"></a>Örnek
 
@@ -1442,7 +1474,7 @@ The element-by-element result of the bitwise XOR operator^ is the
 
 ## <a name="op_or"></a>  işleci&#124;
 
-Bit düzeyinde edinir `OR` veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.
+Bit düzeyinde alır `OR` bir valarray ve öğe türü belirtilen değeri veya iki eşit boyutlu valarrays karşılık gelen öğeleri arasında.
 
 ```cpp
 template <class Type>
@@ -1466,19 +1498,21 @@ operator|(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ilk `OR` veya belirtilen değer Bitsel bir valarray her öğenin birleştirilecek öğe türü.
+*Sol*  
+ İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk `OR` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
-`right` İlgili öğeleri olan Bitsel ile birleştirilecek iki valarrays ikinci `OR` veya belirtilen değer Bitsel bir valarray her öğenin birleştirilecek öğe türü.
+*sağ*  
+ İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `OR` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri bitwise element-wise birleşimi olan bir valarray `OR` işlemi `left` ve `right`.
+Öğeleri bit aralığın öğe düzeyinde çarpımının birleşimi olan bir valarray `OR` işleyişini *sol* ve *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit tabanlı işlemi yalnızca bit cinsinden işlemek için kullanılabilir `char` ve `int` veri türleri ve çeşitleri değil **float**, **çift**, **longdouble**, `void`, `bool` veya diğer, daha karmaşık veri türleri.
+Bit düzeyinde işlem yalnızca bit işlemek için kullanılabilir **char** ve **int** veri türleri ve çeşitleri değil **float**, **çift**, **longdouble**, **void**, **bool** veya diğer, daha karmaşık veri türleri.
 
-Bit düzeyinde OR mantıksal aynı gerçekte tabloda sahip `OR`, ancak tek tek bit düzeyinde veri türü için geçerlidir. BITS verilen *b*1 ve *b*2, *b*1 `OR` *b*2 **true** BITS en az biri olduğunda TRUE veya **false** bitlerin her ikisi de yanlışsa. Mantıksal `OR` [işleci&#124; &#124; ](../standard-library/valarray-operators.md#op_lor) olarak sıfır dışındaki tüm değerleri sayım bir öğe düzeyi geçerli **true**, ve sonucu bir valarray Boolean değeri. Bit düzeyinde OR `operator|`, bunun aksine, değer 0 veya 1, bit düzeyinde işleminin sonucunu bağlı olarak başka bir valarray neden olabilir.
+Bit düzeyinde OR mantıksal olarak aynı doğru tablosu sahip `OR`, ancak tek bit düzeyinde veri türü için geçerlidir. BITS verilen *b*1 ve *b*2 *b*1 `OR` *b*2 **true** en az bir bit ise TRUE veya **false** bitlerin her ikisi de false ise. Mantıksal `OR` [işleci&#124; &#124; ](../standard-library/valarray-operators.md#op_lor) olarak sıfır dışındaki tüm değerleri sayma bir öğe düzeyi geçerli **true**, ve sonucu bir valarray Boolean değeri. Bit düzeyinde OR `operator|`, aksine, değerleri 0 veya 1, bit düzeyinde işlemin sonucunu bağlı olarak başka bir valarray neden olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1533,7 +1567,7 @@ The element-by-element result of the bitwise OR operator| is the
 
 ## <a name="op_lor"></a>  işleci&#124;&#124;
 
-Mantıksal edinir `OR` veya bir valarray ile valarray öğesi türünde belirtilen değer arasında iki eşit boyutta valarrays öğelere karşılık gelir.
+Mantıksal alır `OR` bir valarray ve valarray öğe türü belirtilen değeri veya iki eşit boyutlu valarrays karşılık gelen öğeleri arasında.
 
 ```cpp
 template <class Type>
@@ -1557,17 +1591,19 @@ operator||(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ilk `OR` veya belirtilen değer bir valarray her öğenin birleştirilecek öğe türü.
+*Sol*  
+ İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ilk `OR` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
 
-`right` İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ikinci `OR` veya belirtilen değer bir valarray her öğenin birleştirilecek öğe türü.
+*sağ*  
+ İki valarrays ilgili öğeleri olan mantıksal ile birleştirilecek ikinci `OR` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri türü olan bir valarray `bool` ve mantıksal OR çalışmasını element-wise birleşimi `left` ve `right`.
+Öğeleri türü olan bir valarray **bool** ve mantıksal OR işleyişini aralığın öğe düzeyinde çarpımının birleşimi *sol* ve *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mantıksal `OR` `operator||` olarak sıfır dışındaki tüm değerleri sayım bir öğe düzeyi geçerli **doğru**, ve sonucu bir valarray Boolean değeri. Bit düzeyinde sürümü `OR`, [işleci&#124; ](../standard-library/valarray-operators.md#op_or) aksine, değer 0 veya 1, bit düzeyinde işleminin sonucunu bağlı olarak başka bir valarray neden olabilir.
+Mantıksal `OR` `operator||` olarak sıfır dışındaki tüm değerleri sayma bir öğe düzeyi geçerli **true**, ve sonucu bir valarray Boolean değeri. Bit düzeyinde sürümünü `OR`, [işleci&#124; ](../standard-library/valarray-operators.md#op_or) aksine, değerleri 0 veya 1, bit düzeyinde işlemin sonucunu bağlı olarak başka bir valarray neden olabilir.
 
 ### <a name="example"></a>Örnek
 

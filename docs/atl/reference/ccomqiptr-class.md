@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66c6cc1484ef84ce53ffaf5529575eea43431869
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e480fe81f8a6181aa8543710d050f0f20f288681
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359185"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884837"
 ---
 # <a name="ccomqiptr-class"></a>CComQIPtr sınıfı
-COM arabirimi işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
+COM arabirim işaretçilerini yönetmek için bir akıllı işaretçi sınıfının.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ class CComQIPtr: public CComPtr<T>
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Depolanacak işaretçi türünü belirleyen bir COM arabirimi.  
+ *T*  
+ Depolanacak işaretçi türü belirten bir COM arabirimi.  
   
- `piid`  
- Bir işaretçi IID `T`.  
+ *piid*  
+ Laboratuvardaki işaretçisi *T*.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -54,10 +54,10 @@ class CComQIPtr: public CComPtr<T>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComQIPtr::operator =](#operator_eq)|Bir işaretçi üye işaretçiyi atar.|  
+|[CComQIPtr::operator =](#operator_eq)|Bir işaretçi, üye işaretçisi atar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- ATL kullanan `CComQIPtr` ve [CComPtr](../../atl/reference/ccomptr-class.md) COM arabirim işaretçileri yönetmek için her ikisi de öğesinden türetilen [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Her iki sınıfları otomatik başvuru çağrıları aracılığıyla sayım gerçekleştirin `AddRef` ve **sürüm**. Aşırı yüklenmiş işleçler işaretçi işlemleri işleyin.  
+ ATL kullanan `CComQIPtr` ve [CComPtr](../../atl/reference/ccomptr-class.md) COM arabirim işaretçilerini yönetmek için ikisi için de öğesinden türetilen [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Her iki sınıfları otomatik başvuru yapılan çağrılar aracılığıyla sayımı gerçekleştirmek `AddRef` ve `Release`. Aşırı yüklenmiş işleçler, işaretçi işlemleri işleyin.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CComPtrBase](../../atl/reference/ccomptrbase-class.md)  
@@ -80,14 +80,14 @@ CComQIPtr(const CComQIPtr<T, piid>& lp) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lp`  
+ *LP*  
  Arabirim işaretçisi başlatmak için kullanılır.  
   
- `T`  
- COM arabirimi.  
+ *T*  
+ Bir COM arabirimi.  
   
- `piid`  
- Bir işaretçi IID `T`.  
+ *piid*  
+ Laboratuvardaki işaretçisi *T*.  
   
 ##  <a name="operator_eq"></a>  CComQIPtr::operator =  
  Atama işleci.  
@@ -99,21 +99,21 @@ T* operator= (IUnknown* lp) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lp`  
+ *LP*  
  Arabirim işaretçisi başlatmak için kullanılır.  
   
- `T`  
- COM arabirimi.  
+ *T*  
+ Bir COM arabirimi.  
   
- `piid`  
- Bir işaretçi IID `T`.  
+ *piid*  
+ Laboratuvardaki işaretçisi *T*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi güncelleştirilmiş döndüren `CComQIPtr` nesnesi.  
+ Güncelleştirilmiş bir işaretçi döndürür `CComQIPtr` nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)   
  [CComQIPtr::CComQIPtr](#ccomqiptr)   
  [CComPtrBase sınıfı](../../atl/reference/ccomptrbase-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [CComQIPtrElementTraits Sınıfı](../../atl/reference/ccomqiptrelementtraits-class.md)

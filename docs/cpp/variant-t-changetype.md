@@ -19,38 +19,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53fd73fc9606053dda6f8c143618373ad9bb7e4e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f87d9e4d7193755f70e3463f4da60d88a7bd832c
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948101"
 ---
 # <a name="varianttchangetype"></a>_variant_t::ChangeType
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Türünü değiştirir `_variant_t` belirtilen nesneye **VARTYPE**.  
+ Değişiklikleri türde `_variant_t` belirtilen nesneye `VARTYPE`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      void ChangeType(  
+void ChangeType(  
    VARTYPE vartype,  
    const _variant_t* pSrc = NULL   
 );  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `vartype`  
- **VARTYPE** bu `_variant_t` nesnesi.  
+ *VarType*  
+ `VARTYPE` Bu `_variant_t` nesne.  
   
- `pSrc`  
- Bir işaretçi `_variant_t` dönüştürülecek nesne. Bu değer ise **NULL**, dönüştürme, yerinde yapılır.  
+ *pSrc*  
+ Bir işaretçi `_variant_t` dönüştürülecek nesne. Bu değer NULL ise, yerinde dönüştürme yapılır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi dönüştüren bir `_variant_t` belirtilen nesnesine **VARTYPE**. Varsa `pSrc` olan **NULL**, dönüştürme yerinde, aksi takdirde bu yapılır `_variant_t` nesne kopyalanan `pSrc` ve sonra dönüştürülür.  
+ Bu üye işlevi dönüştürür bir `_variant_t` belirtilen nesnede `VARTYPE`. Varsa *pSrc* NULL ise dönüştürme yerine, aksi takdirde bu yapılır `_variant_t` nesne kopyalandığına *pSrc* ve sonra dönüştürülür.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

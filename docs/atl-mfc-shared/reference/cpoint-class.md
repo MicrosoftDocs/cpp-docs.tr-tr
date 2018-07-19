@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36dc82c03f13b4708d705d9fd66eff26870c8346
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bd7e3b405f5724abd1df5e0e8fcc35dcd2149153
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365399"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880108"
 ---
 # <a name="cpoint-class"></a>CPoint sınıfı
-Windows benzer `POINT` yapısı.  
+Windows için benzer `POINT` yapısı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,35 +43,35 @@ class CPoint : public tagPOINT
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPoint::CPoint](#cpoint)|Oluşturan bir `CPoint`.|  
+|[CPoint::CPoint](#cpoint)|Oluşturur bir `CPoint`.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPoint::Offset](#offset)|Değerleri ekler **x** ve **y** üyeleri `CPoint`.|  
+|[CPoint::Offset](#offset)|Değerine ekler `x` ve `y` üyeleri `CPoint`.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPoint::operator-](#operator_-)|Farkını döndürür bir `CPoint` ve bir boyut veya bir nokta ya da iki nokta veya uzaklık negatif bir boyuta göre boyutu birbirinden değilleme.|  
-|[CPoint::operator! =](#operator_neq)|İki nokta arasındaki eşitsizlik denetler.|  
-|[CPoint::operator +](#operator_add)|Toplamını döndürür bir `CPoint` ve boyutu veya de noktası veya bir `CRect` boyutuna göre uzaklığı.|  
-|[CPoint::operator +=](#operator_add_eq)|Kaydırır `CPoint` boyutu veya noktası ekleyerek düzenleyin.|  
-|[CPoint::operator-=](#operator_-_eq)|Kaydırır `CPoint` boyutu veya noktasının çıkarılarak tarafından.|  
-|[CPoint::operator ==](#operator_eq_eq)|İki nokta arasındaki eşitlik denetler.|  
+|[CPoint::operator-](#operator_-)|Farkını döndürür bir `CPoint` ve bir boyut veya negation bir veya iki nokta veya negatif bir boyuta göre uzaklığını arasındaki boyut farkı.|  
+|[CPoint::operator! =](#operator_neq)|İki nokta arasındaki eşitsizliği denetler.|  
+|[CPoint::operator +](#operator_add)|Toplamını geri döndüren bir `CPoint` ve boyutu veya noktası veya bir `CRect` boyutuna göre uzaklığı.|  
+|[CPoint::operator +=](#operator_add_eq)|Uzaklıkları `CPoint` boyutu veya noktası ekleyerek.|  
+|[CPoint::operator-=](#operator_-_eq)|Uzaklıkları `CPoint` boyutu veya noktası çıkararak.|  
+|[CPoint::operator ==](#operator_eq_eq)|İki nokta arasındaki denetler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ayrıca işlemek için üye işlevlerini içerir `CPoint` ve [noktası](../../mfc/reference/point-structure1.md) yapıları.  
+ Ayrıca yönlendirmek üzere öğe işlevleri içerir `CPoint` ve [noktası](../../mfc/reference/point-structure1.md) yapıları.  
   
- A `CPoint` nesnesi olabilir yerde kullanılan bir `POINT` yapısı kullanılır. "Boyutu" ile etkileşim operatörler, bu sınıfın ya da kabul [CSize](../../atl-mfc-shared/reference/csize-class.md) nesneleri veya [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapıları bu yana iki birbirinin yerine kullanılabilir.  
-  
-> [!NOTE]
->  Bu sınıfın türetildiği `tagPOINT` yapısı. (Adı `tagPOINT` için daha az kullanılan bir addır `POINT` yapısı.) Veri üyeleri buna `POINT` yapısı, `x` ve `y`, erişilebilir veri üyesi `CPoint`.  
+ A `CPoint` nesnesi olabilir yerde kullanılan bir `POINT` yapısı kullanılır. Bu sınıfın "boyutu" ile etkileşim işleçleri ya da kabul [CSize](../../atl-mfc-shared/reference/csize-class.md) nesneleri veya [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapıları iki birbirinin yerine olduğundan.  
   
 > [!NOTE]
->  Daha fazla bilgi için paylaşılan yardımcı sınıflar (gibi `CPoint`), bkz: [paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md).  
+>  Bu sınıf türetilir `tagPOINT` yapısı. (Adın `tagPOINT` için daha az kullanılan addır `POINT` yapısı.) Veri üyeleri buna `POINT` yapısını `x` ve `y`, erişilebilir veri üyeleri `CPoint`.  
+  
+> [!NOTE]
+>  Daha fazla bilgi için paylaşılan yardımcı sınıflar (gibi `CPoint`), bkz: [paylaşılan sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `tagPOINT`  
@@ -82,7 +82,7 @@ class CPoint : public tagPOINT
  **Başlık:** atltypes.h  
   
 ##  <a name="cpoint"></a>  CPoint::CPoint
- Oluşturan bir `CPoint` nesnesi.  
+ Oluşturur bir `CPoint` nesne.  
   
 ```  
 CPoint() throw();
@@ -93,23 +93,23 @@ CPoint(LPARAM dwPoint) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `initX`  
- Değerini belirtir. `x` üyesi `CPoint`.  
+ *initX*  
+ Değerini belirtir `x` üyesi `CPoint`.  
   
- `initY`  
- Değerini belirtir. `y` üyesi `CPoint`.  
+ *initY*  
+ Değerini belirtir `y` üyesi `CPoint`.  
   
- `initPt`  
- [NOKTASI](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` başlatmak için kullanılan değerleri belirtir `CPoint`.  
+ *initPt*  
+ [NOKTASI](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` başlatmak için kullanılan değerleri belirten `CPoint`.  
   
- `initSize`  
- [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) başlatmak için kullanılan değerleri belirtir `CPoint`.  
+ *initSize*  
+ [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) başlatmak için kullanılan değerleri belirten `CPoint`.  
   
- `dwPoint`  
- Ayarlar `x` düşük düzey sözcüğün üyesine `dwPoint` ve `y` yüksek düzey sözcüğün üyesine `dwPoint`.  
+ *dwPoint*  
+ Kümeleri `x` alt sıra sözcüğüne üye *dwPoint* ve `y` dwpoint üye *dwPoint*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağımsız değişkenler verilirse, `x` ve `y` üyeleri 0 olarak ayarlanmış.  
+ Bağımsız değişken olmadan verilirse `x` ve `y` üyeleri 0 olarak ayarlanır.  
   
 ### <a name="example"></a>Örnek  
   
@@ -139,7 +139,7 @@ ASSERT(ptFromDouble == ptMFCHere);
 ```  
   
 ##  <a name="offset"></a>  CPoint::Offset  
- Değerleri ekler **x** ve **y** üyeleri `CPoint`.  
+ Değerine ekler `x` ve `y` üyeleri `CPoint`.  
   
 ```  
 void Offset(int xOffset, int yOffset) throw();
@@ -149,56 +149,56 @@ void Offset(SIZE size) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *xOffset*  
- Dengelemek için belirtir **x** üyesi `CPoint`.  
+ Kaydırılacağı uzaklık belirtir `x` üyesi `CPoint`.  
   
  *yOffset*  
- Dengelemek için belirtir **y** üyesi `CPoint`.  
+ Kaydırılacağı uzaklık belirtir `y` üyesi `CPoint`.  
   
- `point`  
+ *Noktası*  
  Belirtir ( [noktası](../../mfc/reference/point-structure1.md) veya `CPoint`) dengelemek için `CPoint`.  
   
- `size`  
+ *Boyutu*  
  Belirtir ( [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](../../atl-mfc-shared/reference/csize-class.md)) dengelemek için `CPoint`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#28](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_1.cpp)]  
   
 ##  <a name="operator_eq_eq"></a>  CPoint::operator ==  
- İki nokta arasındaki eşitlik denetler.  
+ İki nokta arasındaki denetler.  
   
 ```  
 BOOL operator==(POINT point) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
- İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` nesnesi.  
+ *Noktası*  
+ İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Puanları eşitse, sıfır olmayan; Aksi takdirde 0.  
+ Noktaları eşit olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#29](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_2.cpp)]  
   
 ##  <a name="operator_neq"></a>  CPoint::operator! =  
- İki nokta arasındaki eşitsizlik denetler.  
+ İki nokta arasındaki eşitsizliği denetler.  
   
 ```  
 BOOL operator!=(POINT point) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
- İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` nesnesi.  
+ *Noktası*  
+ İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Noktaları eşit değilse sıfır olmayan; Aksi takdirde 0.  
+ Noktaları eşit değilse, sıfır olmayan; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#30](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_3.cpp)]  
   
 ##  <a name="operator_add_eq"></a>  CPoint::operator +=  
- İlk aşırı bir boyuta ekler `CPoint`.  
+ İlk aşırı yükleme bir boyuta ekler `CPoint`.  
   
 ```  
 void operator+=(SIZE size) throw(); 
@@ -206,16 +206,16 @@ void operator+=(POINT point) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `size`  
- İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi.  
+ *Boyutu*  
+ İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
   
- `point`  
- İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.  
+ *Noktası*  
+ İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İkinci aşırı bir noktasına ekler `CPoint`.  
+ İkinci aşırı yüklemesi bir noktaya ekler `CPoint`.  
   
- Her iki durumda da, toplama ekleyerek yapılır **x** (veya **cx**) sağ işleneni üyesi **x** üyesi `CPoint` ve ekleyerek **y**  (veya **cy**) sağ işleneni üyesi **y** üyesi `CPoint`.  
+ Her iki durumda da ayrıca ekleyerek yapılır `x` (veya `cx`) sağ işleneni üyesi `x` üyesi `CPoint` ve ekleme `y` (veya `cy`) sağ işleneni üyesi `y` üyesi `CPoint`.  
   
  Örneğin, ekleme `CPoint(5, -7)` içeren bir değişkene `CPoint(30, 40)` değişkenine değişiklikleri `CPoint(35, 33)`.  
   
@@ -223,7 +223,7 @@ void operator+=(POINT point) throw();
  [!code-cpp[NVC_ATLMFC_Utilities#31](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_4.cpp)]  
   
 ##  <a name="operator_-_eq"></a>  CPoint::operator-=  
- Sabit boyutlu bir ilk aşırı çıkarır `CPoint`.  
+ İlk aşırı yükleme listesinden bir boyut çıkarır `CPoint`.  
   
 ```  
 void operator-=(SIZE size) throw(); 
@@ -231,24 +231,24 @@ void operator-=(POINT point) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `size`  
- İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi.  
+ *Boyutu*  
+ İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
   
- `point`  
- İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.  
+ *Noktası*  
+ İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İkinci aşırı bir noktasından çıkarır `CPoint`.  
+ İkinci aşırı yüklemesi bir noktasından çıkarır `CPoint`.  
   
- Her iki durumda da çıkarılmasıyla çıkarma yapılır **x** (veya **cx**) sağ işleneni üyesi **x** üyesi `CPoint` ve çıkarma**y** (veya **cy**) sağ işleneni üyesi **y** üyesi `CPoint`.  
+ Her iki durumda da çıkarma çıkararak yapılır `x` (veya `cx`) atamada sağ işlenen üye `x` üyesi `CPoint` ve çıkarma `y` (veya `cy`) sağ üyesi işlenenden `y` üyesi `CPoint`.  
   
- Örneğin, çıkarılmasıyla `CPoint(5, -7)` içeren bir değişkenin `CPoint(30, 40)` değişkenine değişiklikleri `CPoint(25, 47)`.  
+ Örneğin, çıkarma `CPoint(5, -7)` içeren bir değişkenden `CPoint(30, 40)` değişkenine değişiklikleri `CPoint(25, 47)`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#32](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_5.cpp)]  
   
 ##  <a name="operator_add"></a>  CPoint::operator +  
- Uzaklık için bu işleci kullanın `CPoint` tarafından bir `CPoint` veya `CSize` nesnesi veya dengelemek için bir `CRect` tarafından bir `CPoint`.  
+ Kaydırmak için bu işleci kullanın `CPoint` tarafından bir `CPoint` veya `CSize` nesnesi veya dengelemek için bir `CRect` tarafından bir `CPoint`.  
   
 ```  
 CPoint operator+(SIZE size) const throw();
@@ -257,28 +257,28 @@ CRect operator+(const RECT* lpRect) const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `size`  
- İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi.  
+ *Boyutu*  
+ İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
   
- `point`  
- İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.  
+ *Noktası*  
+ İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.  
   
- `lpRect`  
- Bir işaretçi içeren bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi.  
+ *lpRect*  
+ Bir işaretçi içeren bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `CPoint` boyutuna göre uzaklığı bir **CPoint** noktası tarafından uzaklığı veya **CRect** noktası tarafından uzaklığı.  
+ A `CPoint` bir boyuta göre uzaklığı bir `CPoint` bir noktası tarafından uzaklığı veya `CRect` noktası tarafından uzaklığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Örneğin, ilk iki aşırı birini noktası dengelemek için kullanarak `CPoint(25, -19)` bir noktaya göre `CPoint(15, 5)` veya boyutu `CSize(15, 5)` değeri döndürür `CPoint(40, -14)`.  
+ Örneğin, ilk iki aşırı noktası dengelemek için kullanarak `CPoint(25, -19)` bir nokta `CPoint(15, 5)` veya boyutu `CSize(15, 5)` değeri döndürür `CPoint(40, -14)`.  
   
- Dikdörtgen bir noktasına ekleme döndürür dikdörtgen tarafından uzaklığı sonra **x** ve **y** noktasında belirtilen değerleri. Örneğin, bir dikdörtgen dengelemek için son aşırı yüklemeleri kullanarak `CRect(125, 219, 325, 419)` bir noktaya göre `CPoint(25, -19)` döndürür `CRect(150, 200, 350, 400)`.  
+ Bir dikdörtgen bir noktaya ekleme döndürür dikdörtgen tarafından uzaklığı sonra `x` ve `y` noktasında belirtilen değerleri. Örneğin, bir dikdörtgen dengelemek için son aşırı yükü kullanarak `CRect(125, 219, 325, 419)` bir nokta `CPoint(25, -19)` döndürür `CRect(150, 200, 350, 400)`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#33](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_6.cpp)]  
   
 ##  <a name="operator_-"></a>  CPoint::operator-  
- İlk iki aşırı birini çıkartılacak kullanın bir `CPoint` veya `CSize` nesnesinin `CPoint`.  
+ İlk iki aşırı çıkarılacak kullanmak bir `CPoint` veya `CSize` nesnesinden `CPoint`.  
   
 ```  
 CSize operator-(POINT point) const throw();
@@ -288,28 +288,28 @@ CPoint operator-() const throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `point`  
- A [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.  
+ *Noktası*  
+ A [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.  
   
- `size`  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi.  
+ *Boyutu*  
+ A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
   
- `lpRect`  
- Bir işaretçi bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi.  
+ *lpRect*  
+ Bir işaretçi bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `CSize` diğer bir deyişle iki nokta arasındaki farkı bir `CPoint` bir boyutu değilleme tarafından uzaklığı bir `CRect` bir noktası değilleme tarafından uzaklığı veya `CPoint` diğer bir deyişle bir noktası değilleme.  
+ Bir `CSize` diğer bir deyişle iki nokta arasındaki fark bir `CPoint` bir boyut olumsuzlama göre uzaklığı bir `CRect` bir noktanın olumsuzlama göre uzaklığı veya `CPoint` diğer bir deyişle olumsuzlama noktası.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üçüncü aşırı uzaklıkları bir `CRect` değilleme işlemi tarafından `CPoint`. Son olarak, negate için birli işleç kullanma `CPoint`.  
+ Üçüncü aşırı uzaklıkları bir `CRect` negation tarafından `CPoint`. Son olarak, negatif yapılacak birli işleç kullanın `CPoint`.  
   
- Örneğin, iki nokta arasındaki farkı bulmak için ilk aşırı yüklemeleri kullanarak `CPoint(25, -19)` ve `CPoint(15, 5)` döndürür `CSize(10, -24)`.  
+ Örneğin, iki nokta arasındaki farkı bulmak için ilk aşırı yükleme kullanarak `CPoint(25, -19)` ve `CPoint(15, 5)` döndürür `CSize(10, -24)`.  
   
- Çıkarılmasıyla bir `CSize` gelen `CPoint` yukarıdaki gibi aynı hesaplamayı yapar ancak döndürür bir `CPoint` nesnesi değil, bir `CSize` nesnesi. Örneğin, noktası arasındaki farkı bulmak için ikinci aşırı yüklemeleri kullanarak `CPoint(25, -19)` ve boyutu `CSize(15, 5)` döndürür `CPoint(10, -24)`.  
+ Çıkarma bir `CSize` gelen `CPoint` yukarıdakilerle aynı olan hesaplamayı yapar ancak döndürür bir `CPoint` nesnesi değil, bir `CSize` nesne. Örneğin, noktası arasındaki fark bulmak için ikinci aşırı yüklemesi kullanarak `CPoint(25, -19)` ve boyutu `CSize(15, 5)` döndürür `CPoint(10, -24)`.  
   
- Dikdörtgen bir noktasından çıkarılmasıyla dikdörtgen uzaklık negatif tarafından döndürür **x** ve **y** noktasında belirtilen değerleri. Örneğin, dikdörtgen dengelemek için son aşırı yüklemeleri kullanarak `CRect(125, 200, 325, 400)` noktası tarafından `CPoint(25, -19)` döndürür `CRect(100, 219, 300, 419)`.  
+ Bir dikdörtgen bir noktasından çıkararak dikdörtgen uzaklığı negatif tarafından döndürür `x` ve `y` noktasında belirtilen değerleri. Örneğin, dikdörtgen dengelemek için son aşırı yükü kullanarak `CRect(125, 200, 325, 400)` noktası tarafından `CPoint(25, -19)` döndürür `CRect(100, 219, 300, 419)`.  
   
- Birli işleç bir nokta negate için kullanın. Örneğin, noktasıyla birli işleç kullanılarak `CPoint(25, -19)` döndürür `CPoint(-25, 19)`.  
+ Bir noktası negatif yapılacak birli işlecini kullanın. Örneğin, noktasıyla birli işleç kullanılarak `CPoint(25, -19)` döndürür `CPoint(-25, 19)`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#34](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_7.cpp)]  

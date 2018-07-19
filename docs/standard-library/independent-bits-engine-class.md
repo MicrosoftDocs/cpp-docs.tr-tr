@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f89e6e0fc83a83ece82793050441fec9a1e7978b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f802dc91c3429ba718778d122d1a787aad0dec87
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844503"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38964229"
 ---
 # <a name="independentbitsengine-class"></a>independent_bits_engine Sınıfı
 
-BITS repacking BITS tarafından belirtilen sayıda numaralarıyla rastgele bir dizi kendi temel altyapı tarafından döndürülen değer oluşturur.
+Kendi temel altyapısıyla döndürülen değerlerden bitleri repacking BITS kullanılarak belirtilen sayıda sayıların rastgele bir sıra üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +36,11 @@ class independent_bits_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-`Engine` Temel altyapısı türü.
+*Altyapısı* temel altyapısı türü.
 
-`W` **Word boyutu**. Oluşturulan her sayının bit cinsinden boyutu. **Önkoşul**: `0 < W ≤ numeric_limits<UIntType>::digits`
+*W* **Word boyutu**. Oluşturulan her bir sayının bit cinsinden boyutu. **Önkoşul**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-`UIntType` İşaretsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*UIntType* işeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="members"></a>Üyeler
 
@@ -49,11 +49,11 @@ class independent_bits_engine;
 |`independent_bits_engine::independent_bits_engine`|`independent_bits_engine::base`|`independent_bits_engine::discard`|
 |`independent_bits_engine::operator()`|`independent_bits_engine::base_type`|`independent_bits_engine::seed`|
 
-Altyapısı üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Altyapısı üyeleri hakkında daha fazla bilgi için bkz. [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıf tanımlar bir *motoru bağdaştırıcı* , üreten değerleri bunun sonucunda, temel altyapısı tarafından döndürülen değerler bitten repacking tarafından `W`-bit değerleri.
+Bu şablon sınıfının açıklayan bir *altyapısı bağdaştırıcısı* değerler üreten sonuçta kendi temel altyapısıyla döndürülen değerlerden bitleri yeniden paketleyerek *W*-bit değerleri.
 
 ## <a name="requirements"></a>Gereksinimler
 

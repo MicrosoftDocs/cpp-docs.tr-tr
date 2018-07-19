@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d4e07c4869bd345e77f0af4f30f694773aed114
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 973f183980e89ac0be268e5cbbec42de83a378f4
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845147"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965821"
 ---
-# <a name="ltcodecvtgt"></a>&lt;Codecvt&gt;
+# <a name="ltcodecvtgt"></a>&lt;codecvt&gt;
 
-Şablon sınıfına dayalı nesneler tanımlar birkaç şablon sınıfları tanımlar [codecvt](../standard-library/codecvt-class.md). Bu nesneler olarak hizmet verebilir [yerel ayar modelleri](../standard-library/locale-class.md#facet_class) kontrol eden bir dizi türü değerleri arasında dönüştürme `Elem` ve bir dizi türü değerleri `char`.
+Şablon sınıfına göre nesnelerini açıklamaya birkaç şablon sınıfları tanımlar [codecvt](../standard-library/codecvt-class.md). Bu nesneler olarak hizmet verebilen [yerel ayar modelleri](../standard-library/locale-class.md#facet_class) türü değerler dizisi arasındaki dönüştürmeleri denetlemek `Elem` türü değerler dizisi **char**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,21 +37,21 @@ ms.locfileid: "33845147"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu başlığında bildirilen yerel modelleri arasında birkaç karakter kodlamaları dönüştürün. Geniş karakterler (sabit boyutlu tamsayı programa içinde depolanan) için:
+Bu üstbilgisinde bildirilen yerel ayar modelleri birkaç karakter kodlamaları arasından dönüştürme. Geniş karakterler (sabit boyutlu tamsayı programa içinde depolanan):
 
-- UCS-4 bir 32 bit tamsayı olarak programından kodlanmış Unicode (ISO 10646) olur.
+- UCS-4 programında bir 32 bit tamsayı olarak kodlanmış Unicode (ISO 10646) ' dir.
 
-- UCS-2 bir 16 bit tamsayı olarak programından kodlanmış Unicode gösterilir.
+- UCS-2 programında bir 16 bit tam sayı olarak kodlanmış bir Unicode gösterilir.
 
-- UTF-16 programın içinde bir veya iki 16 bit tamsayı olarak kodlanmış Unicode ' dir. (Bu geçerli bir joker karakter standart C ya da standart C++ için kodlamada tüm gereksinimleri karşılamıyor unutmayın. Yine de bu yaygın şekilde kullanılır.)
+- UTF-16 Unicode program içindeki bir veya iki 16 bit tamsayılar olarak kodlanmış ' dir. (Bu, geçerli bir geniş karakter standart C veya C++ Standart kodlamada tüm gereksinimlerini karşılamıyor unutmayın. Bununla birlikte, yaygın şekilde kullanılır.)
 
-Bayt akışları için (bir dosyada depolanan, bir bayt dizisi aktarılan veya bir dizi programa içinde depolanan `char`):
+Bayt akışları için (bir dosyada depolanır, bir bayt dizisi aktarılan veya bir dizi program içinde depolanan **char**):
 
-- UTF-8 bayt akışı içinde belirleyici bayt sırasına sahip bir veya daha fazla sekiz bit bayt olarak kodlanmış Unicode ' dir.
+- İçinde bayt akışı belirleyici bayt sırasına sahip bir veya daha fazla sekiz bitlik bayt olarak kodlanmış bir Unicode UTF-8 kodlamasıdır.
 
-- UTF-16LE Unicode bayt akış UTF-16 olarak içinde kodlanmış olan ilk daha az önemli bayt iki sekiz bit bayt olarak sunulan her 16 bit tamsayı değerine sahip.
+- İçinde bayt akışı olarak UTF-16 kodlamalı Unicode UTF-16LE olan ilk az önemli bayt iki sekiz bitlik bayt olarak sunulan her 16-bit tamsayı değerine sahip.
 
-- UTF-16BE Unicode bayt akış UTF-16 olarak içinde kodlanmış olan ilk daha önemli bayt iki sekiz bit bayt sunulan her 16 bit tamsayı değerine sahip.
+- İçinde bayt akışı olarak UTF-16 kodlamalı Unicode UTF-16BE türlerinden olan ilk iki sekiz bitlik bayt cinsinden daha önemli bayt sunulan her 16-bit tamsayı değerine sahip.
 
 ### <a name="enumerations"></a>Numaralandırmalar
 
@@ -63,9 +63,9 @@ Bayt akışları için (bir dosyada depolanan, bir bayt dizisi aktarılan veya b
 
 |örneği|Açıklama|
 |-|-|
-|[codecvt_utf8](codecvt-utf8-class.md)|Geniş karakterler UCS-2 veya 4 UCS olarak kodlanmış UTF-8 olarak kodlanmış bir bayt akışı arasındaki dönüştürür bir yerel ayar modeli temsil eder.|
-|[codecvt_utf8_utf16](codecvt-utf8-utf16-class.md)|Geniş karakterler UTF-16 kodlanmış UTF-8 olarak kodlanmış bir bayt akışı arasındaki dönüştürür bir yerel ayar modeli temsil eder.|
-|[codecvt_utf16](codecvt-utf16-class.md)|Geniş karakterler UCS-2 veya 4 UCS olarak kodlanmış UTF-16LE veya UTF-16BE olarak kodlanmış bir bayt akışı arasındaki dönüştürür bir yerel ayar modeli temsil eder.|
+|[codecvt_utf8](codecvt-utf8-class.md)|UTF-8 olarak kodlanmış bir bayt akışı yanı sıra UCS-2 veya UCS-4 olarak kodlanmış geniş karakterler arasında dönüştürür bir yerel ayar modeli temsil eder.|
+|[codecvt_utf8_utf16](codecvt-utf8-utf16-class.md)|UTF-16 olarak kodlanmış geniş karakterler ve UTF-8 olarak kodlanmış bir bayt akışı arasında dönüştürür bir yerel ayar modeli temsil eder.|
+|[codecvt_utf16](codecvt-utf16-class.md)|Geniş karakterler UCS-2 veya UCS-4 olarak kodlanan ve UTF-16LE veya UTF-16BE türlerinden olarak kodlanmış bir bayt akışı arasında dönüştürür bir yerel ayar modeli temsil eder.|
 
 ## <a name="requirements"></a>Gereksinimler
 

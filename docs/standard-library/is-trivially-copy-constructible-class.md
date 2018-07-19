@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01c95007f1db1bcaf549398fa8865a9e51fe23d1
-ms.sourcegitcommit: 96cdc2da0d8c3783cc2ce03bd280a5430e1ac01d
+ms.openlocfilehash: 410566c623595cc941ab6e6ad21dd95bd70fe516
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33954108"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963673"
 ---
 # <a name="istriviallycopyconstructible-class"></a>is_trivially_copy_constructible Sınıfı
 
-Önemsiz kopya Oluşturucu türündeyse testleri.
+Önemsiz bir kopya Oluşturucu türüne sahip olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,13 +36,13 @@ struct is_trivially_copy_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` false tuttuğu Önemsiz kopya Oluşturucu, aksi takdirde sahip bir sınıftır.
+Karşılaştırmasının bir örneği true tutan türü *T* false tuttuğu Önemsiz kopya Oluşturucu, aksi takdirde sahip bir sınıftır.
 
-Bir sınıf için bir kopya Oluşturucu `T` bu örtülü olarak bildirilen, sınıf deyimle `T` hiçbir sanal işlevleri veya sanal tabanları, sınıfın tüm doğrudan temellerine sahip `T` Önemsiz kopya oluşturucuları, tüm statik olmayan sınıflarını sahip veri üyeleri sınıf türü Önemsiz kopya oluşturucuları, ve önemsiz kopya oluşturucuları dizisi türünde sınıfı tüm statik olmayan veri üyeleri sınıflarını sahiptir.
+Bir sınıf için kopya Oluşturucu *T* örtük olarak bildirilmiş, sınıf gereksizse, *T* sanal işlevler veya sanal tabanları olan sınıfın tüm doğrudan tabanları olmayan *T* sahip Önemsiz kopya oluşturucuları, tüm statik olmayan veri üyeleri sınıf türünün sınıflarını Önemsiz kopya oluşturucuları olması ve dizi sınıf türünde tüm statik olmayan veri üyelerinin sınıflarını Önemsiz kopya oluşturucuları olması.
 
 ## <a name="requirements"></a>Gereksinimler
 

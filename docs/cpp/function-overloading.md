@@ -16,18 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07b7209c890ce3eeadb2db346445802576674bfd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1506870ff0b5bb2aea55874d32f62b1da63c7302
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948045"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
-C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar adlandırılır *aşırı* işlevleri. Aşırı yüklenmiş işlevlerin bir işlev bağımsız değişken sayısı ve türleri bağlı olarak farklı anlamları sağlamak etkinleştirin. 
+C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar adlandırılır *aşırı* işlevleri. Aşırı yüklenmiş İşlevler, işlev için bağımsız değişken sayısı ve türleri bağlı olarak farklı semantikler sağlamak etkinleştirin. 
   
- Örneğin, bir **yazdırma** isteyen işlevi bir **std::string** bağımsız değişkeni bir bağımsız değişken türü birden çok farklı görevleri gerçekleştirebileceğiniz **çift**. Aşırı yükleme kaydeder, adları gibi kullanmak zorunda kalmaktan `print_string` veya `print_double`. Derleme zamanında, çağıran tarafından geçirilen bağımsız değişken türünü kullanmak için hangi aşırı yüklemenin dayalı derleyici seçer.  Çağırırsanız **print(42.0)** sonra **void yazdırma (çift d)** işlevi çağrılabilir. Çağırırsanız **("Merhaba Dünya") yazdırma** sonra **print(std::string) void** aşırı çağrılabilir.
+ Örneğin, bir `print` alan işlev bir `std::string` bağımsız değişken türünde bir bağımsız değişken birden çok farklı görevleri gerçekleştirebileceğiniz **çift**. Aşırı yükleme kaydeder, adları gibi kullanmak zorunda kalmaktan `print_string` veya `print_double`. Derleme zamanında derleyici, çağıran tarafından geçirilen bağımsız değişken türünü kullanmak için hangi aşırı yüklemenin göre seçer.  Eğer `print(42.0)` sonra `void print(double d)` işlevi çağrılacak. Eğer `print("hello world")` sonra `void print(std::string)` aşırı çağrılacak.
 
-Üye işlevleri ve üye olmayan işlevleri aşırı yüklenebilir. Aşağıdaki tabloda, C++'nın aynı kapsamda aynı ana sahip işlev gruplarını birbirinden ayırmak için işlev bildiriminin hangi bölümlerini kullandığını gösterir.  
+Üye işlevleri ve üye olmayan işlevleri hem aşırı yüklenebilir. Aşağıdaki tabloda, C++'nın aynı kapsamda aynı ana sahip işlev gruplarını birbirinden ayırmak için işlev bildiriminin hangi bölümlerini kullandığını gösterir.  
   
 ### <a name="overloading-considerations"></a>Aşırı Yükleme Hakkında Önemli Noktalar  
   
@@ -37,15 +38,15 @@ C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar
 |Bağımsız değişkenlerin sayısı|Evet|  
 |Bağımsız değişkenlerin türü|Evet|  
 |Üç noktanın olması veya olmaması|Evet|  
-|`typedef` adlarının kullanımı|Hayır|  
+|Kullanım **typedef** adları|Hayır|  
 |Belirtilmemiş dizi sınırları|Hayır|  
-|**const** veya `volatile`|Evet, tüm işlevi uygulandığında|
+|**const** veya **geçici**|Evet, tüm işlevine uygulandığında|
 |[ref niteleyicisi](#ref-qualifier)|Evet|  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte, aşırı yüklemenin nasıl kullanılabileceği gösterilmektedir.  
   
-```  
+```cpp 
 // function_overloading.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -126,78 +127,78 @@ int print(double dvalue, int prec)
   
   
 ## <a name="argument-matching"></a>Bağımsız Değişken Eşleştirme  
- Aşırı yüklenen işlevler için işlev çağrısında sağlanan bağımsız değişkenler geçerli kapsamdaki işlev bildirimleri en iyi eşleşmeyi için seçilir. Uygun bir işlev bulunursa, o işlev çağrılır. Bu bağlamda "uygun" aşağıdakilerden biri anlamına gelir:  
+ Aşırı yüklenmiş işlevler için işlev bildirimleri işlev çağırısında sağlanan bağımsız değişkenler için geçerli kapsamdaki en iyi eşleşmeyi seçilir. Uygun bir işlev bulunursa, bu işlev çağrılır. Bu bağlamda "uygun" aşağıdakilerden birini gösterir:  
   
 -   Tam bir eşleşme bulunamadı.  
   
--   Önemsiz dönüştürme gerçekleştirildi.  
+-   Dönüştürmelerden gerçekleştirildi.  
   
--   Bir tam sayı yükseltme gerçekleştirildi.  
+-   Bir integral yükseltme gerçekleştirildi.  
   
--   İstenen bağımsız değişken türü için standart bir dönüştürme yok.  
+-   İstenen bağımsız değişken türüne standart dönüştürme yok.  
   
--   Bir kullanıcı tarafından tanımlanan dönüştürme (dönüşüm işleci veya oluşturucusu) istenen bağımsız değişken türü var.  
+-   Kullanıcı tanımlı dönüştürme (dönüştürme işleci veya Oluşturucu) istenen bağımsız değişken türü var.  
   
--   Elips tarafından temsil edilen bağımsız değişken bulunamadı.  
+-   Üç nokta tarafından temsil edilen bağımsız değişken bulunamadı.  
   
- Derleyici işlevleri her bağımsız değişkeni için aday kümesi oluşturur. Aday işlevler konumda gerçek bağımsız değişkeni biçimsel bağımsız değişken türüne dönüştürülebilir işlevlerdir.  
+ Derleyici işlevleri için her bağımsız değişken adayı kümesi oluşturur. Aday işlevleri konumda gerçek bağımsız değişken biçimsel bağımsız değişkenin türüne dönüştürülebilir işlevlerdir.  
   
- Her bağımsız değişkeni için "en iyi eşleşen işlevleri" kümesi oluşturulur ve tüm ayarlar kesişimi seçili işlevdir. Kesişimi birden fazla işlev içeriyorsa, aşırı yüklemesi belirsiz ve bir hata oluşturur. Sonunda seçilen her zaman en az bir değişken için her bir grup işlevinde'den daha iyi bir eşleşme işlevdir. (Hiçbir Temizle kazanan varsa) durum bu değilse, işlev çağrısı bir hata oluşturur.  
+ Her bağımsız değişkeni için "en iyi eşleşen işlevleri" bir dizi yerleşik olarak bulunur ve tüm kümelerinin kesişimi seçili işlevdir. Aşırı yükleme kesişmesi birden fazla işlev içeriyorsa, belirsiz ve bir hata oluşturur. Sonunda seçilen her zaman her bir işlev grubunda daha iyi bir eşleşme için en az bir bağımsız değişken işlevdir. (Hiçbir açık kazanan yoksa) durum bu değilse, işlev çağrısı bir hata oluşturur.  
   
- Aşağıdaki bildirimler göz önünde bulundurun (işlevleri işaretlenmiş `Variant 1`, `Variant 2`, ve `Variant 3`, kimliği'nde aşağıdaki tartışma için):  
+ Aşağıdaki bildirimleri dikkate alın (işlevler işaretlenmiş `Variant 1`, `Variant 2`, ve `Variant 3`, kimliği'nde aşağıdaki tartışma için):  
   
-```  
+```cpp 
 Fraction &Add( Fraction &f, long l );       // Variant 1  
 Fraction &Add( long l, Fraction &f );       // Variant 2  
 Fraction &Add( Fraction &f, Fraction &f );  // Variant 3  
   
 Fraction F1, F2;  
-```  
+```
   
- Aşağıdaki deyim göz önünde bulundurun:  
+ Aşağıdaki ifadeyi göz önünde bulundurun:  
   
-```  
+```cpp 
 F1 = Add( F2, 23 );  
 ```  
   
- Önceki deyimi iki kümesi oluşturur:  
+ Önceki deyim, iki kümesi oluşturur:  
   
-|Kümesi 1: Türü kesir işlevinin ilk bağımsız değişkeni olan aday İşlevler|Kümesi 2: Adayı işlevleri Whose ikinci bağımsız değişkeni dönüştürülebilir tür int|  
+|Kümesi 1: İlk bağımsız değişken türü basamağını aday işlevleri|Kümesi 2: Aday işlevleri Whose ikinci bağımsız değişkeni dönüştürülebilir tür int|  
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|Değişken 1|Değişken 1 (`int` dönüştürülebilir `long` standart dönüştürme kullanılarak)|  
+|Değişken 1|Değişken 1 (**int** dönüştürülebilir **uzun** standart bir dönüştürme kullanılarak)|  
 |Değişken 3||  
   
- 2. ayarlamak işlevlerdir karşılığında var. işlevlerdir biçimsel parametresi türü için fiili parametre türünden örtük dönüşümler ve bu tür işlevler arasında "biçimsel parametresi türü için fiili parametre türü dönüştürme Maliyet" olduğu bir işlevi yoktur en küçük.  
+ İşlevler kümesi 2: hangi işlevleri var olan gerçek parametre türü biçimsel parametre türüne örtük dönüşümlere ve bu tür işlevleri arasında "gerçek parametre türü, biçimsel parametre türüne dönüştürme maliyeti" olduğu bir işlev yok en küçük.  
   
- Bu iki kümenin kesişimini değişken 1'dir. Belirsiz işlev çağrısı örneğidir:  
+ Bu iki kümenin kesişimini değişken 1 ' dir. Belirsiz bir işleve örneğidir:  
   
-```  
+```cpp 
 F1 = Add( 3, 6 );  
 ```  
   
- Önceki işlev çağrısı şu kümeler oluşturur:  
+ Önceki işlev çağrısı aşağıdaki oluşturur:  
   
-|Kümesi 1: Adayı işlevleri emin olan ilk bağımsız değişken türü int|Kümesi 2: Adayı işlevleri olduğunu sahip ikinci bağımsız değişkeni tür int|  
+|Kümesi 1: Aday işlevleri, sahip ilk bağımsız değişkeni tür int|Kümesi 2: Aday işlevleri emin olan ikinci bağımsız değişkeni tür int|  
 |---------------------------------------------------------------------|----------------------------------------------------------------------|  
-|Değişken 2 (`int` dönüştürülebilir `long` standart dönüştürme kullanılarak)|Değişken 1 (`int` dönüştürülebilir `long` standart dönüştürme kullanılarak)|  
+|Değişken 2 (**int** dönüştürülebilir **uzun** standart bir dönüştürme kullanılarak)|Değişken 1 (**int** dönüştürülebilir **uzun** standart bir dönüştürme kullanılarak)|  
   
- Bu iki kesişimi boş olduğunu unutmayın. Bu nedenle, derleyici bir hata iletisi oluşturur.  
+ Bu iki kümesi arasında kesişimi boş olduğunu unutmayın. Bu nedenle, derleyici bir hata iletisi oluşturur.  
   
- Bağımsız değişken eşleştirme, bir işlev için *n* varsayılan bağımsız değişkenler olarak değerlendirilir *n*+ 1 ayrı işlevleri, her biri farklı sayıda bağımsız değişken.  
+ Bağımsız değişkeni bir işlev ile eşleşen *n* varsayılan bağımsız değişkenler olarak kabul edildiği *n*+ 1 ayrı İşlevler, her biri farklı sayıda bağımsız değişken.  
   
- Joker karakter üç nokta (...) görür; herhangi bir gerçek bağımsız değişken eşleşir. Aşırı yüklenmiş işlevi kümelerinizi onaylamadığından çok dikkatli tasarım değil, bu çok sayıda belirsiz kümelerine neden olabilir.  
+ Joker karakter üç nokta (...) görür; Bu, herhangi bir gerçek bağımsız değişken ile eşleşir. Son derece dikkatli olunmalıdır ile aşırı yüklenmiş işlev kümeleriniz tasarlamayın varsa bu birçok belirsiz kümelerine neden olabilir.  
   
 > [!NOTE]
->  Bir işlev çağrısı karşılaşılanaa kadar aşırı yüklenmiş işlevlerin belirsizlik belirlenemiyor. Bu noktada, ayarlar her işlev çağrısı bağımsız değişkeni için oluşturulmuştur ve anlaşılır bir aşırı bulunup bulunmadığını belirleyebilirsiniz. Bu, bunlar belirli işlev çağrısı tarafından evoked kadar belirsizlikleri kodunuzda kalabileceği anlamına gelir.  
+>  Belirsizlik işlevlerin aşırı yüklenmiş işlev çağrısı karşılaşılanaa kadar belirlenemiyor. Bu noktada, kümeleri işlev çağrısındaki her bağımsız değişkeni oluşturulur ve anlaşılır bir aşırı bulunup bulunmadığını belirleyebilirsiniz. Bu, bunlar belirli işlev çağrısına göre evoked kadar belirsizlikleri kodunuzda kalabileceği anlamına gelir.  
   
 ## <a name="argument-type-differences"></a>Bağımsız Değişken Türü Farkları  
  Aşırı yüklenmiş işlevler, farklı başlatıcıları olan bağımsız değişken türlerini ayırt eder. Bu nedenle, belirli türden bir bağımsız değişken ve bu türe yapılan bir başvuru, aşırı yükleme amaçları için aynı olarak kabul edilir. Aynı başlatıcıları aldıkları için aynı olarak kabul edilirler. Örneğin `max( double, double )`, `max( double &, double & )` ile aynı olarak kabul edilir. Böyle iki işlevin bildirilmesi bir hataya neden olur.  
   
- Değiştiren bir tür bağımsız değişkenleri aynı nedenden dolayı işlev **const** veya `volatile` aşırı yükleme amacıyla temel türü'den farklı kabul edilmediği.  
+ Aynı nedenden dolayı bağımsız değişkenleri tarafından değiştirilen türün işlev **const** veya **geçici** temel türden farklı aşırı yükleme amaçları için değerlendirilir.  
   
- Ancak, mekanizması aşırı yükleme işlevi tarafından tam başvuruları ayırt edebilirsiniz **const** ve `volatile` ve temel tür referansı. Bu, aşağıdaki gibi kodlara imkan tanır:  
+ Ancak işlev aşırı yükleme mekanizması tarafından nitelendirilen başvuruları arasında ayrım yapabilme kolaylığı **const** ve **geçici** ve temel tür referansı. Bu, aşağıdaki gibi kodlara imkan tanır:  
   
-```  
+```cpp 
 // argument_type_differences.cpp  
 // compile with: /EHsc /W3  
 // C4521 expected  
@@ -224,7 +225,7 @@ int main() {
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output  
 Over default constructor  
 Over&  
 Over default constructor  
@@ -233,81 +234,81 @@ Over default constructor
 volatile Over&  
 ```  
   
- İşaretçiler **const** ve `volatile` nesneler de değerlendirilir temel türü işaretçilerini farklı aşırı yükleme amacıyla.  
+ İşaretçileri **const** ve **geçici** nesneleri ayrıca değerlendirilir temel türün işaretçilerinden farklı aşırı yükleme amaçları için.  
   
 ## <a name="argument-matching-and-conversions"></a>Bağımsız değişken eşleme ve dönüşümleri  
- İşlev bildirimleri değişkenlerinde karşı gerçek bağımsız değişkenler eşleşecek şekilde derleyici çalıştığında, tam eşleşme bulunamazsa, doğru türde elde etmek için standart veya kullanıcı tanımlı dönüşümler sağlayabilir. Bu kurallar tabi dönüşümleri uygulamadır:  
+ Derleyici, gerçek bağımsız değişkenler İşlev bildirimlerinde bağımsız karşı eşleşecek şekilde çalıştığında, tam eşleşme bulunamazsa, doğru türü elde etmek için standart veya kullanıcı tanımlı dönüştürmeler sağlayabilirsiniz. Bu kurallar tabi dönüştürmeler uygulamasıdır:  
   
--   Birden fazla kullanıcı tanımlı dönüştürme içeren dönüşümleri dizilerini kabul edilmez.  
+-   Dizileri içeren kullanıcı tanımlı dönüştürme birden fazla dönüştürülme dikkate alınmaz.  
   
--   Ara dönüşümleri kaldırarak kısaltılmış dönüşümleri dizilerini kabul edilmez.  
+-   Ara dönüştürmeler kaldırarak kısalttık dönüştürmeler dönüştürülmelerini dikkate alınmaz.  
   
- Dönüştürme, sonuç dizisi varsa, en iyi sıra eşleşen adı verilir. Nesne türüne dönüştürmek için çeşitli yolları vardır `int` yazmak için `unsigned long` standart dönüşümler kullanma (açıklanan [standart dönüşümler](../cpp/standard-conversions.md)):  
+ Dönüştürme, sonuç dizi sırası eşleştirme en iyi varsa çağrılır. Türünde bir nesneyi dönüştürmek için birkaç şekilde **int** türüne **işaretsiz uzun** standart dönüştürmeler kullanarak (açıklanan [standart dönüştürmeler](../cpp/standard-conversions.md)):  
   
--   Dönüştür `int` için `long` ve sonra `long` için `unsigned long`.  
+-   Dönüştürmek **int** için **uzun** ve sonra **uzun** için **işaretsiz uzun**.  
   
--   Dönüştür `int` için `unsigned long`.  
+-   Dönüştürmek **int** için **işaretsiz uzun**.  
   
- İstenen hedef, ulaşır ilk sırası en iyi sıra eşleşen değildir — daha kısa bir dizi bulunmaktadır.  
+ İstenen hedef, başarır rağmen ilk dizi sırası eşleştirme en iyi değildir — daha kısa bir dizisi yok.  
   
- Aşağıdaki tabloda dönüşümleri, en iyi eşleşen hangi sırasıdır belirleme sınırlı etkisi Önemsiz dönüşümleri, adlı bir grup gösterir. Önemsiz dönüşümleri dizisi seçimine etkileyen örnekleri aşağıdaki tablonun listesinde ele alınmıştır.  
+ Aşağıdaki tabloda, dönüştürme, en iyi eşleşen hangi sırasıdır belirleme sınırlı etkisi Önemsiz dönüştürmeler, adlı bir grubu gösterir. Basit dönüştürme sırası, tercih ettiğiniz etkileyen örnekleri aşağıdaki tablonun listede açıklanmıştır.  
   
-### <a name="trivial-conversions"></a>Önemsiz dönüşümleri  
+### <a name="trivial-conversions"></a>Basit dönüştürme  
   
-|Türünden Dönüştür|Türüne dönüştürün|  
+|Türünden dönüştürme|Türüne dönüştürün|  
 |-----------------------|---------------------|  
 |*tür adı*|*tür adı* **&**|  
 |*tür adı* **&**|*tür adı*|  
 |*tür adı* **]**|*tür adı\**|  
-|*tür adı* **(** *bağımsız değişken listesi* **)**|**(**  *\*türü adı* **) (** *bağımsız değişken listesi* **)**|  
-|*tür adı*|**const** *türü adı*|  
-|*tür adı*|`volatile` *tür adı*|  
-|*tür adı\**|**const** *türü adı\**|  
-|*tür adı\**|`volatile` *tür adı\**|  
+|*tür adı* **(** *bağımsız değişken listesi* **)**|**(**  *\*tür adı* **) (** *bağımsız değişken listesi* **)**|  
+|*tür adı*|**const** *tür adı*|  
+|*tür adı*|**volatile** *tür adı*|  
+|*tür adı\**|**const** *tür adı\**|  
+|*tür adı\**|**volatile** *tür adı\**|  
   
- Dönüşümler girişimine dizisi aşağıdaki gibidir:  
+ Dönüştürmeleri denenmez sırası aşağıdaki gibidir:  
   
-1.  Tam eşleşme. Hangi işlev çağrılır ve işlev prototipi türleri bildirilen türler arasında tam bir eşleşme her zaman en iyi eşleşme olan. Önemsiz dönüşümleri dizilerini tam eşleşme sınıflandırılır. Ancak, bu dönüşümleri yapmayın sıraları Dönüştür sıraları iyi değerlendirilir:  
+1.  Tam eşleşme. Hangi işlev çağrılır ve türleri işlev prototipi içinde bildirilen türler arasında bir tam eşleşme her zaman en iyi eşleşmedir. Önemsiz dönüştürmeler dizileri tam eşleşme sınıflandırılır. Ancak, bu dönüştürmeler yapmayın dizileri dönüştürme dizileri iyi kabul edilir:  
   
-    -   İşaretçi işaretçisine gelen **const** (`type` **\*** için **const** `type` **\*** ).  
+    -   İşaretçiden işaretçiye için **const** (`type` **\*** için **const** `type` **\*** ).  
   
-    -   İşaretçi işaretçisine gelen `volatile` (`type` **\*** için `volatile` `type` **\***).  
+    -   İşaretçiden işaretçiye için **geçici** (`type` **\*** için **geçici** `type` **\***).  
   
     -   Başvuru için başvurusundan **const** (`type` **&** için **const** `type` **&**).  
   
-    -   Başvuru için başvurusundan `volatile` (`type` **&** için `volatile` `type` **&**).  
+    -   Başvuru için başvurusundan **geçici** (`type` **&** için **geçici** `type` **&**).  
   
-2.  Promosyon kullanarak eşleşir. Yalnızca tamsayı yükseltmeleri, gelen dönüşümleri içeren tam bir eşleşme olarak sınıflandırılan değil dizisi **float** için **çift**, ve önemsiz dönüşümleri promosyonlar kullanarak bir eşleşme olarak sınıflandırılmış. Eşleşen ne kadar iyi bir tam bir eşleşme olarak promosyonlar kullanarak bir eşleşme standart dönüşümler kullanarak eşleşmeden daha iyi olsa da.  
+2.  Promosyon kullanarak eşleştirin. Yalnızca integral yükseltmeler, dönüşümlerse içeren tam bir eşleşme olarak sınıflandırılan değil herhangi bir dizisi **float** için **çift**, ve önemsiz dönüştürmeler promosyonlar kullanarak bir eşleşme olarak sınıflandırılmış. Kadar iyi bir eşleşme rağmen tam bir eşleşme olarak promosyonlar kullanarak bir eşleşme standart dönüştürmeler kullanarak bir eşleşme iyidir.  
   
-3.  Standart dönüşümler kullanarak eşleşir. Tam bir eşleşme veya yalnızca standart dönüşümler ve önemsiz dönüşümleri içeren promosyonlar kullanarak bir eşleşme olarak sınıflandırılan değil dizisi standart dönüşümler kullanarak bir eşleşme olarak sınıflandırılır. Bu kategoride aşağıdaki kurallar uygulanır:  
+3.  Standart dönüştürmeler kullanarak eşleştirin. Tam bir eşleşme veya yalnızca standart dönüştürmeler veya önemsiz dönüştürmeler içeren promosyonlar kullanarak bir eşleşme olarak sınıflandırılan değil herhangi bir dizisi, standart dönüştürmeler kullanarak bir eşleşme olarak sınıflandırılır. Bu kategori, aşağıdaki kurallar uygulanır:  
   
-    -   Bir işaretçi dönüştürmeye türetilmiş bir sınıf, doğrudan veya dolaylı bir taban sınıfı için bir işaretçi dönüştürme için tercih **void \***  veya **const void \*** .  
+    -   Bir doğrudan veya dolaylı taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürme için dönüştürme tercih **void \***  veya **const void \*** .  
   
-    -   Bir işaretçi bir dönüştürme için bir taban sınıfı için bir işaretçi türetilmiş bir sınıf için temel sınıfı için doğrudan bir temel sınıf daha yakındır daha iyi bir eşleşme üretir. Aşağıdaki çizimde gösterildiği gibi sınıf hiyerarşisi olduğunu varsayın.  
+    -   Bir taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürme daha yakın temel sınıfı için doğrudan temel sınıf olan daha iyi bir eşleşme üretir. Aşağıdaki şekilde gösterilen sınıf hiyerarşisini olduğunu varsayın.  
   
- ![Tercih edilen dönüşümleri](../cpp/media/vc391t1.gif "vc391T1")  
-Tercih edilen dönüşümleri gösteren grafik  
+ ![Tercih edilen dönüştürmeler](../cpp/media/vc391t1.gif "vc391T1")  
+Tercih edilen dönüştürmeler gösteren graf  
   
- Türüne dönüştürme `D*` yazmak için `C*` türüne dönüştürme için tercih edilir `D*` yazmak için `B*`. Benzer şekilde, türüne dönüştürme `D*` yazmak için `B*` türüne dönüştürme için tercih edilir `D*` yazmak için `A*`.  
+ Türünden dönüştürme `D*` türüne `C*` türünden dönüştürme için tercih edilir `D*` türüne `B*`. Benzer şekilde, türünden dönüştürme `D*` türüne `B*` türünden dönüştürme için tercih edilir `D*` türüne `A*`.  
   
- Bu aynı kural başvuru dönüşümleri uygular. Türüne dönüştürme `D&` yazmak için `C&` türüne dönüştürme için tercih edilir `D&` yazmak için `B&`ve benzeri.  
+ Bu aynı kural için başvuru dönüşümleri uygular. Türünden dönüştürme `D&` türüne `C&` türünden dönüştürme için tercih edilir `D&` türüne `B&`ve benzeri.  
   
- Bu aynı kural işaretçi-üye dönüşümleri uygular. Türüne dönüştürme `T D::*` yazmak için `T C::*` türüne dönüştürme için tercih edilir `T D::*` yazmak için `T B::*`ve benzeri (burada `T` üye türü).  
+ Bu aynı kural için işaretçi-üye dönüşümleri uygular. Türünden dönüştürme `T D::*` türüne `T C::*` türünden dönüştürme için tercih edilir `T D::*` türüne `T B::*`ve benzeri (burada `T` üye türü).  
   
- Önceki kural türetme yalnızca belirli bir yol geçerlidir. Aşağıdaki çizimde gösterilen grafik göz önünde bulundurun.  
+ Önceki kural türetme yalnızca belirli bir yol geçerlidir. Aşağıdaki şekilde gösterilen grafiğe göz önünde bulundurun.  
   
- ![Çoklu&#45;tercih edilen dönüşümleri gösterir devralma](../cpp/media/vc391t2.gif "vc391T2")  
-Tercih edilen dönüşümleri gösteren birden çok devralma grafiği  
+ ![Çoklu&#45;tercih edilen dönüştürmeler gösteren devralma](../cpp/media/vc391t2.gif "vc391T2")  
+Tercih edilen dönüştürmeler gösteren birden çok devralma grafiği  
   
- Türüne dönüştürme `C*` yazmak için `B*` türüne dönüştürme için tercih edilir `C*` yazmak için `A*`. Aynı yolda oldukları nedeni ve `B*` daha yakındır. Ancak, türüne dönüştürme `C*` yazmak için `D*` türüne dönüştürme için tercih değil `A*`; tercih yoktur dönüşümleri farklı yollar izledikleri için.  
+ Türünden dönüştürme `C*` türüne `B*` türünden dönüştürme için tercih edilir `C*` türüne `A*`. Aynı yolda olduklarını nedenidir ve `B*` daha yakındır. Ancak, türünden dönüştürme `C*` türüne `D*` türüne dönüştürme tercih değil `A*`; yoktur tercih yoktur çünkü dönüştürmeler farklı yolları izleyin.  
   
-1.  Kullanıcı tanımlı dönüşümler ile eşleşir. Bu sıra tam bir eşleşme, promosyonlar kullanarak bir eşleşme veya standart dönüşümler kullanarak bir eşleşme olarak sınıflandırılan olamaz. Sıra, yalnızca kullanıcı tanımlı dönüşümler, standart dönüşümler veya kullanıcı tanımlı dönüşümler ile bir eşleşme olarak sınıflandırılan Önemsiz dönüşümleri içermelidir. Kullanıcı tanımlı dönüşümler ile eşleşmeyi üç nokta ile bir eşleşme ancak standart dönüşümler ile bir eşleşme olarak kadar iyi bir eşleşme değerinden daha iyi bir eşleşme olarak kabul edilir.  
+1.  Kullanıcı tanımlı dönüşümler ile eşleştirin. Bu sıra tam bir eşleşme, promosyonlar kullanarak bir eşleşme veya standart dönüştürmeler kullanarak bir eşleşme sınıflandırılamaz. Sıra, yalnızca kullanıcı tanımlı dönüştürmeler, standart dönüştürmeler veya kullanıcı tanımlı dönüşümler ile bir eşleşme olarak sınıflandırılması Önemsiz dönüştürmeler içermelidir. Kullanıcı tanımlı dönüşümler ile bir eşleşme, üç nokta ile eşleşmeyi ancak kadar iyi bir eşleşme ile standart dönüştürmeler bir eşleşme olarak daha iyi bir eşleşme olarak kabul edilir.  
   
-2.  Üç nokta ile eşleşir. Üç nokta bildiriminde eşleşen dizisi üç nokta ile bir eşleşme olarak sınıflandırılır. Bu zayıf eşleşme olarak kabul edilir.  
+2.  Üç nokta ile eşleşir. Üç nokta bildiriminde eşleşen tüm dizisi, üç nokta ile bir eşleşme olarak sınıflandırılır. Bu, zayıf eşleşme olarak değerlendirilir.  
   
- Yerleşik yükseltme veya dönüştürme yok, kullanıcı tanımlı dönüşümler uygulanır. Bu dönüşümleri eşleşen bağımsız değişken türü temel alınarak seçilir. Aşağıdaki kod göz önünde bulundurun:  
+ Herhangi bir yerleşik bir yükseltmeyi veya dönüştürme varsa, kullanıcı tanımlı dönüşümler uygulanır. Bu dönüştürmeler eşleşen bağımsız değişken türünü temel alınarak seçilir. Aşağıdaki kodu göz önünde bulundurun:  
   
-```  
+```cpp 
 // argument_matching1.cpp  
 class UDC  
 {  
@@ -331,22 +332,22 @@ int main()
 }  
 ```  
   
- Sınıfı için kullanılabilen kullanıcı tanımlı dönüşümler `UDC` türünden olan `int` ve türü **uzun**. Bu nedenle, eşleşen nesne türünü dönüştürmelerde derleyici göz önünde bulundurur: `UDC`. Bir dönüştürme `int` var olduğundan ve onu seçilir.  
+ Sınıfı için kullanılabilen kullanıcı tanımlı dönüşümler `UDC` türünden olan **int** ve türü **uzun**. Bu nedenle, derleyici eşleştirilen nesne türü için dönüştürme göz önünde bulundurur: `UDC`. Dönüştürme **int** var ve seçili.  
   
- Bağımsız değişken eşleştirme işlemi sırasında standart dönüşümler bağımsız değişkeni ve kullanıcı tanımlı bir dönüştürme sonucu için uygulanabilir. Bu nedenle, aşağıdaki kod çalışır:  
+ Bağımsız değişken eşleştirme işlemi sırasında hem bağımsız değişken hem de kullanıcı tanımlı bir dönüştürmenin sonucu için standart dönüştürmeler uygulanabilir. Bu nedenle, aşağıdaki kod çalışır:  
   
-```  
+```cpp 
 void LogToFile( long l );  
 ...  
 UDC udc;  
 LogToFile( udc );  
 ```  
   
- Önceki örnekte, kullanıcı tanımlı dönüştürme **long işleci**, dönüştürmek için çağrılan `udc` yazmak için **uzun**. Türü için kullanıcı tanımlı dönüştürme, **uzun** olsaydı tanımlanan dönüştürme gibi proceeded: türü `UDC` türü dönüştürülmüş `int` kullanıcı tanımlı dönüştürme kullanarak. Ardından standart dönüştürme türünden `int` yazmak için **uzun** bildirimi değişkeninde eşleşecek şekilde uygulanmış.  
+ Yukarıdaki örnekte, kullanıcı tanımlı dönüştürme **long işleci**, dönüştürmek için çağrılan `udc` türüne **uzun**. Yazmak için kullanıcı tanımlı dönüştürme, **uzun** olsaydı tanımlanmış dönüştürme gibi proceeded: türü `UDC` türüne dönüştürülmüş **int** kullanarak kullanıcı tanımlı dönüştürme. Ardından türüne standart dönüştürme **int** türüne **uzun** bağımsız değişken bildiriminde eşleştirilecek uygulanmış.  
   
- Bağımsız değişken eşleşmesi için tüm kullanıcı tanımlı dönüşümler gerekirse standart dönüşümler en iyi eşleşmeyi hesaplanırken kullanılmaz. Kullanıcı tanımlı bir dönüştürme birden fazla aday işlevi gerektirir olsa bile bu geçerlidir; Böyle bir durumda işlevleri eşit olarak kabul edilir. Örneğin:  
+ Herhangi bir kullanıcı tanımlı dönüşümler eşleştirilmesi bağımsız değişken için standart dönüştürmeler en iyi eşleşmeyi değerlendirirken kullanılmaz. Birden fazla aday işlevi kullanıcı tanımlı bir dönüştürme gerekli olsa bile bu geçerlidir; Böyle bir durumda işlevleri eşit olarak kabul edilir. Örneğin:  
   
-```  
+```cpp 
 // argument_matching2.cpp  
 // C2668 expected  
 class UDC1  
@@ -370,29 +371,29 @@ int main()
 }  
 ```  
   
- Her iki sürümü `Func` türüne dönüştürmek için kullanıcı tanımlı bir dönüştürme gerektiren `int` sınıfı tür bağımsız değişkeni için. Olası dönüşümleri şunlardır:  
+ Her iki sürümü `Func` türü dönüştürmek için bir kullanıcı tanımlı dönüştürme gerektiren **int** sınıf türü bağımsız değişkeni. Olası dönüştürmeler şunlardır:  
   
--   Türünden dönüştürmek `int` yazmak için `UDC1` (kullanıcı tanımlı dönüştürme).  
+-   Türünden dönüştürme **int** türüne `UDC1` (kullanıcı tanımlı dönüştürme).  
   
--   Türünden dönüştürmek `int` yazmak için **uzun**; ardından türüne dönüştürme `UDC2` (iki aşamalı dönüştürme).  
+-   Türünden dönüştürme **int** türüne **uzun**; ardından türüne dönüştürme `UDC2` (iki aşamalı dönüştürme).  
   
- Standart dönüştürme gibi kullanıcı tanımlı dönüştürme bu ikinci gerektirir olsa bile, iki dönüşümleri hala eşit olarak kabul edilir.  
+ Bu ikinci kullanıcı tanımlı dönüştürme yanı sıra, standart bir dönüşüm gerektiriyor olsa da, iki dönüştürmeler yine de eşit olarak kabul edilir.  
   
 > [!NOTE]
->  Kullanıcı tanımlı dönüşümler dönüştürme yapım veya dönüştürme (dönüştürme işlevi) başlatma tarafından kabul edilir. Her iki yöntem en iyi eşleşmeyi değerlendirirken eşit olarak kabul edilir.  
+>  Kullanıcı tanımlı dönüşümler dönüştürme oluşturma veya dönüştürme başlatma (dönüştürme işlevi) tarafından kabul edilir. Her iki yöntem de en iyi eşleşmeyi değerlendirirken eşit olarak kabul edilir.  
   
 ## <a name="argument-matching-and-the-this-pointer"></a>Bağımsız değişken eşleştirme ve this işaretçisi  
- Sınıf üyesi işlevleri, `static` olarak bildirilip bildirilmediklerine bağlı olarak farklı bir şekilde değerlendirilir. Statik olmayan işlevlerde `this` işaretçisini sağlayan örtük bağımsız değişken olduğu için statik olmayan işlevlerin statik işlevlere göre bir bağımsız değişkeni daha olduğu kabul edilir; aksi takdirde, benzer olarak bildirilirler.  
+ Sınıf üyesi işlevleri kabul edilir farklı olarak bildirilip bağlı olarak **statik**. Statik olmayan işlevler sağlayan örtük bağımsız değişken olduğundan **bu** işaretçisi, statik olmayan işlevlerin statik İşlevler'den daha fazla bir bağımsız değişkene sahip olarak kabul edilir; Aksi halde aynı şekilde beyan edildiklerine bağlıdır.  
   
- Bu statik olmayan üye işlevleri, örtük `this` işaretçisinin işlevi çağırmak için kullanılan nesne türüyle eşleşmesini veya aşırı yüklenmiş işleçler için ilk bağımsız değişkenin işlecin uygulandığı nesneyle eşleşmesini gerektirir. (Aşırı yüklenmiş işleçler hakkında daha fazla bilgi için bkz: [aşırı yüklenmiş işleçler](../cpp/operator-overloading.md).)  
+ Bu statik olmayan üye işlevleri örtük **bu** işaretçi eşleşen üzerinden işlevi çağrılan nesne türü veya aşırı yüklenmiş işleçler için ilk bağımsız değişken nesne eşleşmesini gerektirir. işleç uygulanıyor. (Aşırı yüklenmiş işleçler hakkında daha fazla bilgi için bkz: [aşırı yüklenmiş işleçler](../cpp/operator-overloading.md).)  
   
- Aşırı yüklenmiş işlevlerdeki diğer bağımsız değişkenlerin aksine, `this` işaretçi bağımsız değişkeni eşleştirilmeye çalışılırken hiçbir geçici nesne kullanıma sunulmaz ve hiçbir dönüşüm işlemi denenmez.  
+ Aşırı yüklenmiş işlevlerdeki diğer bağımsız değişkenlerin aksine, hiçbir geçici nesne kullanıma sunulmaz ve hiçbir dönüştürme çalışılırken denenme **bu** işaretçi bağımsız değişkeni.  
   
- Zaman `->` üye seçimi işleci sınıfının üye işlevini erişmek için kullanılan `class_name`, `this` işaretçi değişkeni olan bir tür `class_name * const`. Üyeleri olarak bildirilen varsa `const` veya `volatile`, türleri `const class_name * const` ve `volatile class_name * const`sırasıyla.  
+ Zaman `->` üye seçme işleci bir sınıfın üye işlevine erişmek için kullanılan `class_name`, **bu** işaretçi bağımsız değişkeni bir tür olan `class_name * const`. Üyeleri olarak bildirilmişse **const** veya **geçici**, türler `const class_name * const` ve `volatile class_name * const`sırasıyla.  
   
  `.` üye seçme işleci, örtük `&` (adres) işlecinin nesne adının önüne eklenmesi dışında tamamen aynı şekilde çalışır. Aşağıdaki örnekte, bunun nasıl çalıştığı gösterilmektedir:  
   
-```  
+```cpp 
 // Expression encountered in code  
 obj.name  
   
@@ -400,10 +401,10 @@ obj.name
 (&obj)->name  
 ```  
   
- Sol işleneni `->*` ve `.*` (işaretçiden üyeye) işleçleri aynı şekilde ele `.` ve `->` bağımsız değişken eşleştirme göre (üye seçim) işleçleri.  
+ Sol işleneni `->*` ve `.*` (üye işaretçisi) işleçleri aynı şekilde ele alınır `.` ve `->` göre bağımsız değişken eşleştirme (üye seçme) işleçleri.  
 
-## <a name="ref-qualifiers"></a> Ref niteleyicileri üzerinde üye işlevleri  
-Ref niteleyicileri olanaklı hale getirir olup nesne gösterdiği temel alarak üye işlevi aşırı yüklemeyi `this` bir rvalue ya da bir lvalue.  Bu özellik gereksiz kopyalama işlemleri senaryolarda önlemek için işaretçi veri erişebilmesi için değil seçtiğiniz kullanılabilir. Örneğin, sınıf varsayın **C** kurucusu bazı veriler başlatır ve bu verilerin bir kopyasını üye işlevinde döndürür **get_data()**. Türünde bir nesne, **C** derleyici seçecektir sonra yaklaşık yok edilmesi için bir rvalue olan **get_data() & &** kopyalamak yerine aşırı yükleme, hangi verileri taşır. 
+## <a name="ref-qualifiers"></a> Üye işlevlerin ref tanımlayıcıları  
+Başvuru niteleyicileri olanaklı hale getirir olup olmadığı için tarafından işaret edilen nesne göndermemeniz bir üye işlev aşırı yükleme **bu** rvalue veya bir lvalue.  Bu özellik senaryolarda gereksiz kopyalama işlemleri önlemek için işaretçi verilere erişim sağlamak seçtiğiniz kullanılabilir. Örneğin, sınıf varsayın `C` oluşturucusuna bazı verileri başlatır ve üye işlevinde, verilerin bir kopyasını döndürür `get_data()`. Bir nesne türü ise `C` derleyici seçecektir sonra edilmek üzere olan bir rvalue olduğunu `get_data() &&` kopyalamak yerine aşırı yükleme, hangi verileri taşır. 
 
 ```cpp
 #include <iostream>
@@ -442,43 +443,43 @@ int main()
 ```
   
 ## <a name="restrictions-on-overloading"></a>Aşırı yükleme kısıtlamaları  
- Birkaç kısıtlamaları aşırı yüklenmiş işlevlerin kabul edilebilir bir kümesini yöneten:  
+ Birkaç kısıtlama, kabul edilebilir bir aşırı yüklenmiş işlevler kümesi yöneten:  
   
--   Aşırı yüklenmiş işlevlerin kümesinde iki tüm işlevler farklı bağımsız değişken listeleri olması gerekir.  
+-   Her iki işlev aşırı yüklenmiş işlevler kümesinde farklı bağımsız değişken listeleri olması gerekir.  
   
--   Tek başına, dönüş türüne göre aynı türdeki bağımsız değişken listeleriyle işlevler aşırı yüklemesi bir hatadır.  
+-   Tek başına dönüş türüne bağlı olarak aynı tür bağımsız değişken listeleriyle işlevler aşırı yüklemesi bir hata var.  
   
-     **Microsoft özel**  
+     **Microsoft'a özgü**  
   
- Aşırı yüklenebilir **new işleci** yalnızca temeline göre dönüş türü — özellikle, belirtilen bellek modeli değiştiricisi temel alınarak.  
+ Aşırı yükleyebilirler **new işleci** yalnızca temeline göre dönüş türü — özellikle, belirtilen bellek modeli değiştiricisi göndermemeniz.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
--   Üye işlevleri yalnızca tek bir statik olmanın ve diğer statik olmayan temel alarak aşırı yüklenemez.  
+-   Üye işlevleri yalnızca bir statik olan ve diğer statik dışı göndermemeniz aşırı yüklenemez.  
   
--   `typedef` bildirimleri yeni türleri tanımlamaz; Bunlar, mevcut türleri için eş anlamlı sözcükleri tanıtır. Tekrar yüklemesi mekanizması etkilemez. Aşağıdaki kod göz önünde bulundurun:  
+-   **TypeDef** bildirimleri yeni türleri tanımlamaz; bunlar varolan türleri için eş anlamlı sözcükler tanıtır. Aşırı yüklerken mekanizması etkilemez. Aşağıdaki kodu göz önünde bulundurun:  
   
-    ```  
+    ```cpp 
     typedef char * PSTR;  
   
     void Print( char *szToPrint );  
     void Print( PSTR szToPrint );  
     ```  
   
-     Önceki iki işlevleri aynı bağımsız değişken listeleri vardır. `PSTR` türü için eş anlamlı olduğundan **char \*** . Üye kapsamda bu kodu bir hata oluşturur.  
+     Önceki iki işlev aynı bağımsız değişken listeleri vardır. `PSTR` tür eşanlamlıdır **char \*** . Üye kapsamda Bu kod bir hata oluşturur.  
   
--   Numaralandırılmış türler farklı türler ve Aşırı yüklenen işlevler arasında ayrım yapmak için kullanılır.  
+-   Numaralandırılmış türler farklı türler ve aşırı yüklenmiş işlevler arasında ayrım yapmak için kullanılabilir.  
   
--   Türleri "dizisi" ve "işaretçi" Aşırı yüklenen işlevler arasında ayrım amacıyla aynı olarak kabul edilir. Bu, yalnızca ayrı olarak dimensioned diziler için geçerlidir. Bu nedenle, aşağıdaki işlevleri çakışma aşırı yüklenmiş ve bir hata iletisi oluşturur:  
+-   Türü "array" ve "işaretçisi" aşırı yüklenmiş işlevler arasında ayrım amacıyla aynı olarak kabul edilir. Bu, yalnızca tek dimensioned diziler için geçerlidir. Bu nedenle, aşağıdaki işlevleri çakışma aşırı ve bir hata iletisi oluşturur:  
   
-    ```  
+    ```cpp 
     void Print( char *szToPrint );  
     void Print( char szToPrint[] );  
     ```  
   
-     Çarp dimensioned diziler için ikinci ve tüm izleyen boyutları türünün bir parçası olarak kabul edilir. Bu nedenle, bunlar Aşırı yüklenen işlevler arasında ayrım kullanılır:  
+     Birden çok kez dimensioned diziler için ikinci ve sonraki tüm boyutlar, türün bir parçası olarak kabul edilir. Bu nedenle, bunlar aşırı yüklenmiş işlevler arasında ayrım içinde kullanılır:  
   
-    ```  
+    ```cpp 
     void Print( char szToPrint[] );  
     void Print( char szToPrint[][7] );  
     void Print( char szToPrint[][9][42] );  
@@ -486,15 +487,15 @@ int main()
   
 ## <a name="overloading-overriding-and-hiding"></a>Aşırı yüklemesi, geçersiz kılma ve gizleme
   
- Her iki işlev bildirimleri aynı kapsamda aynı ada sahip aynı işlevi veya aşırı yüklenmiş iki ayrı işlev başvurabilir. Bağımsız değişken olarak listeleniyorsa (önceki bölümde açıklandığı gibi) eşdeğer türlerle bağımsız bildirimleri içeren, aynı işleve işlev bildirimleri bakın. Aksi takdirde, aşırı yüklemesi kullanılarak seçilen iki farklı işlevler başvurun.  
+ Her iki işlev bildirimleri aynı kapsamda aynı adın, aynı işlevin veya aşırı iki ayrı işlevler başvurabilir. Bağımsız değişken listeleri (önceki bölümde açıklandığı gibi) bağımsız değişken eşdeğer türlerinin bildirimlerini içeren, aynı işleve işlev bildirimlerine bakın. Aksi takdirde aşırı yüklemesi kullanarak seçili olan iki farklı işlevleri bakın.  
   
- Sınıf kapsamı kesinlikle gözlenir; Bu nedenle, bir taban sınıf içinde bildirilen bir işlev işlevi olarak aynı kapsamda türetilen bir sınıfta bildirilmedi. Sanal bir temel sınıfı, türetilmiş sınıf işlevi işlevinde aynı ada sahip türetilmiş bir sınıf işlevinde bildirilen varsa *geçersiz kılmaları* temel sınıf işlevi. Daha fazla bilgi için bkz: [sanal işlevler](../cpp/virtual-functions.md).
+ Sınıf kapsamı kesinlikle gözlemlenen; Bu nedenle, bir temel sınıfta bildirilen bir işlevi bir işlev ile aynı kapsamda türetilmiş sınıf içinde bildirilmedi. Bir işlev türetilen bir sınıfta türetilmiş sınıf işlevi taban sınıfında sanal işlevi olarak aynı ada sahip olarak tanımlanıp tanımlanmadığını *geçersiz kılmalar* temel sınıf işlevi. Daha fazla bilgi için [sanal işlevler](../cpp/virtual-functions.md).
 
-Taban sınıf işlevi 'sanal' olarak bildirilmedi sonra türetilmiş sınıf işlevi söylenir *Gizle* onu. Hem geçersiz kılma ve gizleme aşırı yüklemesini farklıdır.  
+Temel sınıf işlevini 'virtual' olarak bildirilmedi ardından türetilmiş sınıf işlevi belirtilmektedir *Gizle* bu. Hem geçersiz kılma ve gizleme aşırı yüklemesini farklıdır.  
   
- Blok kapsamı kesinlikle gözlenir; Bu nedenle, dosya kapsamda bildirilen işlevi bir işlevi olarak aynı kapsamda yerel olarak bildirilmedi. Yerel olarak bildirilen bir işlev dosya kapsamda bildirilen bir işlevi olarak aynı ada sahipse, yerel olarak bildirilen işlev aşırı yüklemesi neden yerine dosya kapsamlı işlevi gizler. Örneğin:  
+ Blok kapsamı kesinlikle gözlemlenen; Bu nedenle, dosya kapsamı içinde bildirilen bir işlevi bir işlev ile aynı kapsamda yerel olarak bildirilmedi. Yerel olarak bildirilen bir işleve dosya kapsamı içinde bildirilen bir işlevi olarak aynı ada sahip, yerel olarak bildirilen işlev aşırı yüklemesi neden yerine dosya kapsamlı işlevi gizler. Örneğin:  
   
-```  
+```cpp 
 // declaration_matching1.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -520,15 +521,15 @@ int main()
 }  
 ```  
   
- Önceki kod iki işlev tanımları gösterir `func`. Türünde bir bağımsız değişken tanımı `char *` için yerel olan `main` nedeniyle `extern` deyimi. Bu nedenle, bir bağımsız değişken türü tanımı `int` gizlenir ve ilk çağrıda `func` hatalı.  
+ Yukarıdaki kod, iki işlev tanımları gösterir `func`. Türünde bir bağımsız değişken tanımı `char *` için yerel `main` nedeniyle **extern** deyimi. Bu nedenle, türünde bir bağımsız değişken tanımı **int** gizlidir ve ilk çağrıda `func` hata.  
   
- Aşırı yüklenmiş üye işlevleri için işlev'in farklı sürümlerini farklı erişim ayrıcalıkları verilebilir. Bunlar hala kapsayan sınıfı kapsamında olduğu kabul edilir ve böylece aşırı yüklenmiş işlevlerdir. Aşağıdaki kodda göz önünde bulundurun üye fonksiyonu `Deposit` aşırı yüklendi; bir sürümüdür ortak, diğer özel.  
+ Aşırı yüklü üye işlevler için işlev farklı sürümlerini farklı erişim ayrıcalığı verilebilir. Bunlar, kapsayan sınıf kapsamı içinde olarak kabul edilir ve bu nedenle aşırı yüklenmiş işlevler şunlardır. Aşağıdaki kodu düşünün üye işlevi `Deposit` aşırı yüklendi; bir sürüm genel, diğer, özel.  
   
- Bu örnek amacı sağlamaktır bir `Account` içinde doğru parolayı mevduatları gerçekleştirmek için gereken sınıfı. Bu, aşırı yüklemesi kullanılarak gerçekleştirilir.  
+ Bu örnek amacı sağlamaktır bir `Account` sınıfı içinde doğru parolayı mevduatlarını gerçekleştirmek için gereklidir. Bu aşırı yüklemesi kullanarak gerçekleştirilir.  
   
- Unutmayın çağrısı `Deposit` içinde `Account::Deposit` özel üye işlevi çağırır. Bu çağrı doğru olduğundan `Account::Deposit` bir üye işlevidir ve bu nedenle özel üyeleri sınıfın erişimi.  
+ Unutmayın çağrısı `Deposit` içinde `Account::Deposit` özel üye işlevini çağırır. Bu çağrı doğru olduğundan `Account::Deposit` bir üye işlevidir ve bu nedenle özel üyeleri sınıfın erişebilir.  
   
-```  
+```cpp 
 // declaration_matching2.cpp  
 class Account  
 {  

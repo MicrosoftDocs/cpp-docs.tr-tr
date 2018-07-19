@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5d265938eb024a41d8b90f3b9891c35ec1ec251
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3735b6cd8b0397ae1e1092fdb37ba094248ab507
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858805"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963932"
 ---
 # <a name="tuple-class"></a>tuple Sınıfı
 
-Öğe sabit uzunluk dizisi sarmalar.
+Sabit uzunluklu dizi öğe sarmalar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,17 +48,18 @@ public:
    template <class U1, class U2>
       tuple& operator=(const pair<U1, U2>&); // N == 2
    };
+```
 
-### Parameters
+### <a name="parameters"></a>Parametreler
 
-`TN`
- The type of the Nth tuple element.
+*TN*  
+ Nth demet öğesi türü.
 
-## Remarks
+## <a name="remarks"></a>Açıklamalar
 
-The template class describes an object that stores N objects of types `T1`, `T2`, ..., `TN`, respectively, where where `0 <= N <= Nmax`. The extent of a tuple instance `tuple<T1, T2, ..., TN>` is the number `N` of its template arguments. The index of the template argument `Ti` and of the corresponding stored value of that type is `i - 1`. Thus, while we number the types from 1 to N in this documentation, the corresponding index values range from 0 to N - 1.
+Şablon sınıfı türlerinin N nesnelerini depolayan bir nesneyi tanımlayan `T1`, `T2`,..., `TN`, sırasıyla, burada burada `0 <= N <= Nmax`. Bir tanımlama grubu örneği kapsamını `tuple<T1, T2, ..., TN>` sayı `N` , şablon bağımsız değişkenlerinin. Şablon bağımsız değişkeni dizinini `Ti` ve karşılık gelen depolanan değeri o türün `i - 1`. Bu nedenle, biz 1 Bu belgelerindeki türleri n numara, ancak karşılık gelen dizin aralığı 0-N - 1 değerleri.
 
-## Example
+## <a name="example"></a>Örnek
 
 ```cpp
 // tuple.cpp
@@ -134,7 +135,7 @@ The tuples in the vector are
 
 ## <a name="op_eq"></a>  tuple::operator=
 
-Atayan bir `tuple` nesnesi.
+Atayan bir `tuple` nesne.
 
 ```cpp
 tuple& operator=(const tuple& right);
@@ -153,15 +154,17 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>Parametreler
 
-`UN` N. türünü tanımlama grubu öğesi kopyalanır.
+*GERİ AL*  
+ Demet öğesi türü n. kopyalanır.
 
-`right` Kopyalanacak tanımlama grubu.
+*sağ*  
+ Kopyalamak için kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk iki üye işleçleri öğelerini atamak `right` karşılık gelen öğeleri için `*this`. Üçüncü üye işleci atar `right.first` dizin 0 konumunda öğesine `*this` ve `right.second` 1 dizininde bulunan öğe için. Tüm üç üye işleçleri dönmek `*this`.
+İlk iki üye işleçleri öğelerini atama *doğru* ilgili öğelerin `*this`. Üçüncü üye işleci atar `right.first` dizini 0 öğe için `*this` ve `right.second` için 1 dizindeki öğe. Tüm üç üye işleçleri dönüş `*this`.
 
-Kalan üye işleçleri analogs önceki olanlara ancak ile olan [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Kalan üye işleçleri analogs öncekileri, ancak sahip olduğunuz [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ### <a name="example"></a>Örnek
 
@@ -215,7 +218,7 @@ x 4
 
 ## <a name="tuple_swap"></a>  Tuple:Swap
 
-İki başlığın öğelerini değiş tokuş eder.
+İki öğelerini birbiriyle değiştirir.
 
 ```cpp
 template <class... Types>
@@ -226,16 +229,16 @@ template <class... Types>
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`left`|Öğeleri olan tanımlama grubu olanlar değiştirilebilmesi için bir tanımlama grubu `right`.|
-|`right`|Öğeleri olan tanımlama grubu olanlar değiştirilebilmesi için bir tanımlama grubu `left`.|
+|*Sol*|Kayıt düzeninin öğelerle için öğeleri olan tanımlama grubu *doğru*.|
+|*sağ*|Kayıt düzeninin öğelerle için öğeleri olan tanımlama grubu *sol*.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev yürütür `left.swap(right)`.
+İşlevi yürütür `left.swap(right)`.
 
 ## <a name="tuple"></a>  Tuple::Tuple
 
-Oluşturan bir `tuple` nesnesi.
+Oluşturur bir `tuple` nesne.
 
 ```cpp
 constexpr tuple();
@@ -260,21 +263,23 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>Parametreler
 
-`UN` N. türünü tanımlama grubu öğesi kopyalanır.
+*GERİ AL*  
+ Demet öğesi türü n. kopyalanır.
 
-`right` Kopyalanacak tanımlama grubu.
+*sağ*  
+ Kopyalamak için kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucusu oluşturulan varsayılan öğeleri olan bir nesne oluşturur.
+İlk Oluşturucu, varsayılan oluşturulmuş öğeleri olan bir nesne oluşturur.
 
-İkinci oluşturucu öğeleri bağımsız değişkenlerden oluşturulan kopyası olan bir nesne oluşturur `P1`, `P2`,..., `PN` her `Pi` dizininde bulunan öğe başlatma `i - 1`.
+İkinci oluşturucu bağımsız değişkenden oluşan kopyalama, öğeleri olan bir nesne oluşturur `P1`, `P2`,..., `PN` her `Pi` dizinindeki öğeyi başlatma `i - 1`.
 
-Üçüncü ve dördüncü oluşturucular öğeleri karşılık gelen öğenin oluşturulan kopyası olan bir nesne oluşturmak `right`.
+Üçüncü ve dördüncü oluşturucuları kopya karşılık gelen öğeden öğeleri olan bir nesne oluşturmak *doğru*.
 
-Bir nesne, dizin 0 konumunda öğedir kopyalama oluşturulan beşinci Oluşturucusu yapıları `right.first` ve 1 dizinindeki olan öğe kopyalama gelen oluşturulan `right.second`.
+Oluşturulan dizini 0 olan bir öğede kopyası olan bir nesne öğesinden beşinci Oluşturucu yapıları `right.first` ve dizini 1 olan bir öğede kopyalama nesnesinden oluşturulan `right.second`.
 
-Kalan oluşturucular analogs önceki olanlara ancak ile olan [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Kalan oluşturucular analogs öncekileri, ancak sahip olduğunuz [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ### <a name="example"></a>Örnek
 
@@ -347,5 +352,5 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Tuple >](../standard-library/tuple.md)<br/>
+[\<Tanımlama grubu >](../standard-library/tuple.md)<br/>
 [make_tuple](../standard-library/tuple-functions.md#make_tuple)<br/>

@@ -1,5 +1,5 @@
 ---
-title: Genel (C++) | Microsoft Docs
+title: public (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,11 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49c7f113aa234a5e682576ff509199c0223b7cc5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aa6d4abf9423df29d59f375b825a815404a3c76c
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948167"
 ---
 # <a name="public-c"></a>public (C++)
 ## <a name="syntax"></a>Sözdizimi  
@@ -32,27 +33,27 @@ public base-class
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıf üyeleri listesi önceki zaman **ortak** anahtar sözcüğü, bu üyeler herhangi bir işlev erişilebilir olduğunu belirtir. Bu sonraki erişim belirticisi veya sınıf sonuna kadar bildirilen tüm üyeleri için geçerlidir.  
+ Sınıf üyeleri listesi önce geldiği zaman **genel** anahtar sözcüğü, bu üyeler herhangi bir işlevden erişilebilir olduğunu belirtir. Bu, sonraki erişim belirticisi veya sınıf sonuna kadar bildirilen tüm üyeleri için geçerlidir.  
   
- Bir taban sınıf adını önceki zaman **ortak** anahtar sözcüğü belirtir temel sınıfın ortak ve korumalı üyeleri ortak ve korumalı üyeler, sırasıyla türetilmiş sınıf.  
+ Bir temel sınıfın adından önce zaman **genel** anahtar sözcüğü, temel sınıfın genel ve korumalı üyelerinin genel olduğunu belirtir ve korumalı üyeler, sırasıyla türetilmiş sınıf.  
   
- Varsayılan erişim bir sınıf üyelerinin özeldir. Varsayılan erişim yapısı veya birleşim üyeleri herkes tarafından kullanılabilir.  
+ Bir sınıf içinde üyelerin varsayılan erişimi özeldir. Bir yapı veya birleşim üyelerin varsayılan erişimi geneldir.  
   
- Varsayılan bir taban sınıfın sınıfları için özel ve genel yapılar için erişilebilir. Birleşimler temel sınıflar sahip olamaz.  
+ Özel sınıfları ve yapıları için ortak bir taban sınıfın varsayılan erişim. Birleşimlerin temel sınıfları olamaz.  
   
- Daha fazla bilgi için bkz: [özel](../cpp/private-cpp.md), [korumalı](../cpp/protected-cpp.md), [arkadaş](../cpp/friend-cpp.md)ve üye erişimi tabloda [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) .  
+ Daha fazla bilgi için [özel](../cpp/private-cpp.md), [korumalı](../cpp/protected-cpp.md), [arkadaş](../cpp/friend-cpp.md)ve üye erişimi tablosu [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) .  
   
 ## <a name="clr-specific"></a>/clr Özel  
- CLR Türleri'nde, C++ erişim belirteci anahtar sözcükler (**ortak**, `private`, ve `protected`) türlerini ve derlemeleri açısından yöntemleri görünürlüğünü etkileyebilir. Daha fazla bilgi için bkz: [üye erişim denetimi](member-access-control-cpp.md).  
+ CLR türlerinde, C++ erişim belirtici anahtar sözcükleri (**genel**, **özel**, ve **korumalı**) türler ve Derlemelerle yöntemlerin görünürlüğünü etkileyebilir. Daha fazla bilgi için [üye erişim denetimi](member-access-control-cpp.md).  
   
 > [!NOTE]
->  Derlenmiş dosyalar [/LN](../build/reference/ln-create-msil-module.md) Bu davranış tarafından etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.  
+>  İle derlenmiş dosyalar [/LN](../build/reference/ln-create-msil-module.md) Bu davranıştan etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.  
   
 ## <a name="end-clr-specific"></a>END /clr Özel  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // keyword_public.cpp  
 class BaseClass {  
 public:  

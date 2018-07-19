@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e22d67634f29b60bdc983c892c5fe266df61d08
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a325da2edd4af8b8b0e6e965dc60df8c11bf8d30
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358212"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882864"
 ---
 # <a name="csimplearrayequalhelperfalse-class"></a>CSimpleArrayEqualHelperFalse sınıfı
-Bu sınıf için bir Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.  
+Bu sınıf için Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,7 +36,7 @@ class CSimpleArrayEqualHelperFalse
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Türetilmiş bir sınıf.  
   
 ## <a name="members"></a>Üyeler  
@@ -48,7 +48,7 @@ class CSimpleArrayEqualHelperFalse
 |[CSimpleArrayEqualHelperFalse::IsEqual](#isequal)|(Statik) Yanlış değerini döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu nitelikler sınıf, bir tamamlama `CSimpleArray` sınıfı. BT döndürür false değerini ve ayrıca, çağıracaktır her zaman `ATLASSERT` bağımsız değişkeni hiç başvurulduğunda false. Burada eşitlik test yeterince tanımlanmamış durumlarda, bu sınıf için çoğu yöntemleri çalışmayabilir, ancak üzerinde karşılaştırmalarına gibi bağımlı yöntemleri için iyi tanımlanmış bir şekilde başarısız öğeleri içeren bir dizi sağlar [CSimpleArray:: Bul](../../atl/reference/csimplearray-class.md#find).  
+ Bu nitelikleri tamamlayan bir sınıftır `CSimpleArray` sınıfı. Her zaman BT döndürür false değerini ve ayrıca, çağıracaktır `ATLASSERT` bağımsız hiç olmadığı kadar başvurulan yoksa false. Burada eşitlik testi yeterince tanımlı değil durumlarda, bu sınıf için çoğu yöntemleri doğru şekilde çalışmaz, ancak üzerinde karşılaştırmalar gibi bağlı yöntemler için iyi tanımlanmış bir şekilde başarısız için öğeleri içeren bir dizi sağlar [CSimpleArray:: Bulma](../../atl/reference/csimplearray-class.md#find).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsimpcoll.h  
@@ -64,8 +64,8 @@ static bool IsEqual(const T&, const T&);
  Yanlış değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` bağımsız değişkeni başvurulan false. Amacı `CSimpleArrayEqualHelperFalse::IsEqual` eşitlik testleri yeterli tanımlanmamış olduğunda iyi tanımlanmış bir biçimde başarısız olmasına karşılaştırmaları kullanma yöntemleri zorlamak için.  
+ Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` bağımsız başvurulan yoksa false. Amacı `CSimpleArrayEqualHelperFalse::IsEqual` yöntemleri karşılaştırmalar eşitliği testleri yeterince tanımlanmamış iyi tanımlanmış bir şekilde başarısız kullanmayı zorlamak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSimpleArrayEqualHelper sınıfı](../../atl/reference/csimplearrayequalhelper-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

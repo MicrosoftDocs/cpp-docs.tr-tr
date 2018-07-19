@@ -1,5 +1,5 @@
 ---
-title: Güvenlik genel işlevler | Microsoft Docs
+title: Güvenlik genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -26,18 +26,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad9ad170706b72c9d236e095db0e2b6df00031ff
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3e6dcaeed793a81580b9ca5ed93ad7e267b534fe
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365060"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881181"
 ---
-# <a name="security-global-functions"></a>Güvenlik genel işlevler
+# <a name="security-global-functions"></a>Güvenlik genel işlevleri
 Bu işlevler, SID ve ACL nesneleri değiştirmek için destek sağlar.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarda aşağıdaki tabloda listelenen işlevleri kullanılamaz.  
+>  Aşağıdaki tabloda listelenen İşlevler, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 |||  
 |-|-|  
@@ -58,7 +58,7 @@ Bu işlevler, SID ve ACL nesneleri değiştirmek için destek sağlar.
  Belirtilen bir nesnenin isteğe bağlı erişim denetimi listesini (DACL) almak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlGetDacl(
@@ -68,26 +68,26 @@ inline bool AtlGetDacl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
- Nesne için güvenlik bilgilerini almak için işler.  
+ *hObject*  
+ Güvenlik bilgilerini almak istediğiniz nesneye işleyin.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma `hObject` parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
- `pDacl`  
- Alınan güvenlik bilgilerini içeren bir DACL nesnesine işaretçi.  
+ *pDacl*  
+ Alınan güvenlik bilgilerini içeren bir DACL nesne işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama derlemelerinde, bir onaylama hata ya da oluşacaktır `hObject` veya `pDacl` geçersiz.  
+ Hata ayıklama derlemelerinde, ya da bir onaylama işlemi hatası meydana gelir *hObject* veya *pDacl* geçersiz.  
   
 ##  <a name="atlsetdacl"></a>  AtlSetDacl  
  Belirtilen bir nesnenin isteğe bağlı erişim denetimi listesini (DACL) ayarlamak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlSetDacl(
@@ -98,23 +98,23 @@ inline bool AtlSetDacl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
- Nesne için güvenlik bilgileri ayarlanacağı için işleyin.  
+ *hObject*  
+ Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma `hObject` parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
- `rDacl`  
+ *rDacl*  
  Yeni güvenlik bilgilerini içeren DACL.  
   
- `dwInheritanceFlowControl`  
- Devralma akış denetimi. Bu değer, 0 (varsayılan) PROTECTED_DACL_SECURITY_INFORMATION veya UNPROTECTED_DACL_SECURITY_INFORMATION olabilir.  
+ *dwInheritanceFlowControl*  
+ Devralma akış denetimi. Bu değer, 0 (varsayılan), PROTECTED_DACL_SECURITY_INFORMATION veya UNPROTECTED_DACL_SECURITY_INFORMATION olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama derlemelerinde, bir onaylama hata oluşacaktır `hObject` geçersiz veya `dwInheritanceFlowControl` üç izin verilen değerlerden biri değil.  
+ Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *hObject* geçersiz veya *dwInheritanceFlowControl* üç izin verilen değerlerden biri değil.  
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h 
 
@@ -122,7 +122,7 @@ inline bool AtlSetDacl(
  Bir nesnenin grup güvenlik tanımlayıcısını (SID) almak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlGetGroupSid(
@@ -132,14 +132,14 @@ inline bool AtlGetGroupSid(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
- Güvenlik bilgileri alınacağı nesnesine işleyin.  
+ *hObject*  
+ Güvenlik bilgileri alınacağı nesneye işleyin.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma `hObject` parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
- `pSid`  
- İşaretçi bir `CSid` yeni güvenlik bilgilerini içeren nesne.  
+ *Psıd*  
+ İşaretçi bir `CSid` yeni güvenlik bilgilerini içeren bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
@@ -151,7 +151,7 @@ inline bool AtlGetGroupSid(
  Bir nesnenin grup güvenlik tanımlayıcısını (SID) ayarlamak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlSetGroupSid(
@@ -161,14 +161,14 @@ inline bool AtlSetGroupSid(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
- Nesne için güvenlik bilgileri ayarlanacağı için işleyin.  
+ *hObject*  
+ Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma `hObject` parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
- `rSid`  
- `CSid` Yeni güvenlik bilgilerini içeren nesne.  
+ *rSid*  
+ `CSid` Yeni güvenlik bilgilerini içeren bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
@@ -180,7 +180,7 @@ inline bool AtlSetGroupSid(
  Bir nesnenin sahip güvenlik tanımlayıcısını (SID) almak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlGetOwnerSid(
@@ -190,14 +190,14 @@ inline bool AtlGetOwnerSid(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
- Güvenlik bilgileri alınacağı nesnesine işleyin.  
+ *hObject*  
+ Güvenlik bilgileri alınacağı nesneye işleyin.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma `hObject` parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
- `pSid`  
- İşaretçi bir `CSid` yeni güvenlik bilgilerini içeren nesne.  
+ *Psıd*  
+ İşaretçi bir `CSid` yeni güvenlik bilgilerini içeren bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
@@ -209,7 +209,7 @@ inline bool AtlGetOwnerSid(
  Bir nesnenin sahip güvenlik tanımlayıcısını (SID) ayarlamak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlSetOwnerSid(
@@ -219,14 +219,14 @@ inline bool AtlSetOwnerSid(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
- Nesne için güvenlik bilgileri ayarlanacağı için işleyin.  
+ *hObject*  
+ Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma `hObject` parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
- `rSid`  
- `CSid` Yeni güvenlik bilgilerini içeren nesne.  
+ *rSid*  
+ `CSid` Yeni güvenlik bilgilerini içeren bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
@@ -238,7 +238,7 @@ inline bool AtlSetOwnerSid(
  Belirtilen bir nesnenin sistem erişim denetimi listesini (SACL) almak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlGetSacl(
@@ -249,23 +249,23 @@ inline bool AtlGetSacl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
- Güvenlik bilgileri alınacağı nesnesine işleyin.  
+ *hObject*  
+ Güvenlik bilgilerini alınacağı nesneye işleyin.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma `hObject` parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
- `pSacl`  
- Alınan güvenlik bilgilerini içeren bir SACL nesnesine işaretçi.  
+ *pSacl*  
+ Alınan güvenlik bilgilerini içeren bir SACL nesne işaretçisi.  
   
- `bRequestNeededPrivileges`  
+ *bRequestNeededPrivileges*  
  TRUE ise, işlev SE_SECURITY_NAME ayrıcalık etkinleştirmek ve tamamlanma geri dener.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `AtlGetSacl` birçok farklı nesneler üzerinde birçok kez çağrılacak olan bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli `bRequestNeededPrivileges` false olarak ayarlayın.  
+ Varsa `AtlGetSacl` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h 
@@ -274,7 +274,7 @@ inline bool AtlGetSacl(
  Belirtilen bir nesnenin sistem erişim denetimi listesini (SACL) ayarlamak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlSetSacl(
@@ -286,28 +286,28 @@ inline bool AtlSetSacl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hObject`  
- Nesne için güvenlik bilgileri ayarlanacağı için işleyin.  
+ *hObject*  
+ Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma `hObject` parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *rSacl*  
  Yeni güvenlik bilgilerini içeren SACL.  
   
- `dwInheritanceFlowControl`  
- Devralma akış denetimi. Bu değer, 0 (varsayılan) PROTECTED_SACL_SECURITY_INFORMATION veya UNPROTECTED_SACL_SECURITY_INFORMATION olabilir.  
+ *dwInheritanceFlowControl*  
+ Devralma akış denetimi. Bu değer, 0 (varsayılan), PROTECTED_SACL_SECURITY_INFORMATION veya UNPROTECTED_SACL_SECURITY_INFORMATION olabilir.  
   
- `bRequestNeededPrivileges`  
+ *bRequestNeededPrivileges*  
  TRUE ise, işlev SE_SECURITY_NAME ayrıcalık etkinleştirmek ve tamamlanma geri dener.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama derlemelerinde, bir onaylama hata oluşacaktır `hObject` geçersiz veya `dwInheritanceFlowControl` üç izin verilen değerlerden biri değil.  
+ Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *hObject* geçersiz veya *dwInheritanceFlowControl* üç izin verilen değerlerden biri değil.  
   
- Varsa `AtlSetSacl` birçok farklı nesneler üzerinde birçok kez çağrılacak olan bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli `bRequestNeededPrivileges` false olarak ayarlayın.  
+ Varsa `AtlSetSacl` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h 
@@ -316,7 +316,7 @@ inline bool AtlSetSacl(
  Verilen bir nesnenin güvenlik tanımlayıcısını almak için bu işlevi çağırın.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarında bu işlevi kullanılamaz.  
+>  Bu işlev, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ```
 inline bool AtlGetSecurityDescriptor(
@@ -331,25 +331,25 @@ inline bool AtlGetSecurityDescriptor(
   
 ### <a name="parameters"></a>Parametreler  
  *pszObjectName*  
- İşaretçi null ile sonlandırılmış dizeye güvenlik bilgilerini almak üzere nesnesinin adını belirtir.  
+ Güvenlik bilgileri alınacağı nesnesinin adını belirtir. null ile sonlandırılmış bir dize işaretçisi.  
   
- `ObjectType`  
- Arasında bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü belirten numaralandırma *pszObjectName* parametresi.  
+ *ObjectType*  
+ Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *pszObjectName* parametresi.  
   
  *pSecurityDescriptor*  
  İstenen güvenlik tanımlayıcısı alan nesne.  
   
  *requestedInfo*  
- Bir dizi [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit bayrakları almak için güvenlik bilgi türünü gösterir. Bu parametre, aşağıdaki değerleri birleşimi olabilir.  
+ Bir dizi [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit almak için güvenlik bilgi türünü belirten bayraklar. Bu parametre aşağıdaki değerleri birleşimi olabilir.  
   
- `bRequestNeededPrivileges`  
+ *bRequestNeededPrivileges*  
  TRUE ise, işlev SE_SECURITY_NAME ayrıcalık etkinleştirmek ve tamamlanma geri dener.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `AtlGetSecurityDescriptor` birçok farklı nesneler üzerinde birçok kez çağrılacak olan bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli `bRequestNeededPrivileges` false olarak ayarlayın.  
+ Varsa `AtlGetSecurityDescriptor` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h 

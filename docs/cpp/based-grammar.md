@@ -14,36 +14,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20e1c14cd7add01f8583c24541987b2980da794a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fad00244be53a2eebe4a02b99c6368333f3daf23
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409543"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939370"
 ---
 # <a name="based-grammar"></a>__based Dilbilgisi
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Tabanlı Adresleme (statik ve dinamik tabanlı veri) nesneleri ayrılan segment denetleyebilmeniz gerektiğinde kullanışlıdır.  
+ Tabanlı Adresleme (statik ve dinamik tabanlı veriler) nesne ayrılmış segment üzerinde kesin denetim gerektiğinde yararlıdır.  
   
- Tabanlı adresleme 32 bit ve 64-bit derlemelerde kabul edilebilir "temel üzerindeki işaretçi" yalnızca form tanımlayan bir 32 bit veya 64-bit tabanı için bir 32 bit veya 64-bit öteleme içeriyor veya temel bir tür `void`.  
+ Tabanlı adresleme 32-bit ve 64 bit derlemelerde kabul edilebilir "temel bir işaretçi üzerinde" yalnızca formun tanımlayan bir 32 bit veya 64-bit öteleme 32 bit veya 64-bit tabana içeriyor veya temel bir tür **void**.  
   
 ## <a name="grammar"></a>Dilbilgisi  
- *temel aralığı-değiştirici*:  
+ *temel-aralık-modifier*:  
  **__based (***temel ifade***)**   
   
  *temel ifade*:  
  *based-variablebased-abstract-declaratorsegment-namesegment-cast*  
   
- *temel değişkeni*:  
- *Tanımlayıcı*  
+ *bağlı değişken*:  
+ *tanımlayıcı*  
   
- *temel-Özet-bildirimcisi*:  
- *Özet bildirimcisi*  
+ *temel-Özet-declarator*:  
+ *soyut bildirimci*  
   
  *temel türü*:  
  *tür adı*  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tabanlı İşaretçiler](../cpp/based-pointers-cpp.md)

@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 805045e4ea63f153e9a35b0d4b068bd69874b93f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3195d2c988abcfb2d62acb4ece957c8c5156bbd7
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864092"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38965694"
 ---
 # <a name="moneybase-class"></a>money_base Sınıfı
 
-Bir numaralandırma ve Şablon sınıfı tüm özelleştirmeleri için ortak bir yapı sınıf tanımlar [moneypunct](../standard-library/moneypunct-class.md).
+Sınıfı bir numaralandırma ve şablon sınıfının tüm uzmanlıkları için ortak bir yapı tanımlar [moneypunct](../standard-library/moneypunct-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,17 +38,17 @@ struct pattern
 
 ## <a name="remarks"></a>Açıklamalar
 
-Numaralandırma **bölümü** yapısı düzeninde dizi alanının öğelerinde olası değerleri açıklanmaktadır. Değerlerini **bölümü** şunlardır:
+Numaralandırma `part` öğelerinin yapısı desenin dizi alanının olası değerleri açıklanmaktadır. Değerlerini `part` şunlardır:
 
-- **Hiçbiri** sıfır veya daha fazla boşluk veya hiçbir şey oluşturmak üzere.
+- `none` eşleşen sıfır veya daha fazla boşluk veya hiçbir şey oluşturmak için.
 
-- **oturum** eşleşen veya olumlu veya olumsuz bir oturum oluşturur.
+- `sign` eşleşen ya da artı veya eksi işareti oluşturmak için.
 
-- **alan** sıfır veya daha fazla boşluk veya bir alan oluşturmak üzere.
+- `space` eşleşen sıfır veya daha fazla boşluk veya bir alan oluşturmak için.
 
-- **Sembol** veya bir para birimi simgesini oluşturmak üzere.
+- `symbol` eşleşen veya bir para birimi sembolü oluşturmak için.
 
-- **değer** veya parasal bir değer üretmek üzere.
+- `value` eşleşen veya parasal bir değeri oluşturmak için.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -206,163 +206,163 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9af450071546691778dc607746870084a7b1f346
-ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
+ms.openlocfilehash: e8c8868f83cb2e05a364b8977b014db5c02689c5
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36322426"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886069"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller  
   
-Karşılık gelen MFC nesne oluşturduğunuzda penceresi veya denetim görünümünü ve davranışını belirtmek için aşağıdaki stil bayrakları kullanın. Çoğu durumda, bu stilleri ayarlama `dwStyle` sınıfının parametresi `Create` işlevi.  
+Aşağıdaki stil bayrakları karşılık gelen MFC nesne oluşturduğunuzda, pencere veya denetimin görünümünü ve davranışını belirtmek için kullanın. Çoğu durumda, bu stilleri ayarlama *dwStyle* parametresi sınıf `Create` işlevi.  
   
 ## <a name="button-styles"></a> Düğme stilleri  
   
-Düğme stilleri uygulamak için [CButton sınıfı](../../mfc/reference/cbutton-class.md) radyo düğmeleri gibi nesneler onay kutuları ve pushbuttons. Stilleri bileşimini belirtin `dwStyle` parametresinin [CButton::Create](../../mfc/reference/cbutton-class.md#create). Düğme stilleri Windows hakkında daha fazla bilgi için bkz: [düğme stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951).  
+Düğme stilleri uygulamak için [CButton sınıfı](../../mfc/reference/cbutton-class.md) radyo düğmeleri gibi nesneleri onay kutuları ve pushbuttons. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CButton::Create](../../mfc/reference/cbutton-class.md#create). Windows düğme stilleri hakkında daha fazla bilgi için bkz. [düğme stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951).  
   
 ### <a name="button-types"></a>Düğme türleri  
   
-Aşağıdaki tabloda düğmesi türlerini listeler. İsteğe bağlı olarak aşağıdakilerden birini seçebilirsiniz. Düğme türü belirtmezseniz, varsayılan değer `BS_PUSHBUTTON`.  
+Aşağıdaki tablo düğme türlerini listeler. İsteğe bağlı olarak aşağıdakilerden birini seçebilirsiniz. Bir düğme türü belirtmezseniz BS_PUSHBUTTON varsayılandır.  
   
 |Tür|Açıklama|  
 |----------|-----------------|  
-|`BS_3STATE`|Bir onay kutusu düğmesi ile üç durumdan oluşturur: `BST_CHECKED`, `BST_INDETERMINATE`, ve `BST_UNCHECKED`. Düğmesini tıklatarak gönderir bir `BN_CLICKED` bildirim sahibi penceresine düğmenin durumunu değiştirmez ancak. Varsayılan olarak, onay kutusunun sağında ilişkili metin görüntülenir. Metin kutusunun sol tarafındaki onay için görüntülenecek kullanmak `BS_LEFTTEXT` veya `BS_RIGHTBUTTON` stili.|  
-|`BS_AUTO3STATE`|Bir onay kutusu düğmesi ile üç durumdan oluşturur: `BST_CHECKED`, `BST_INDETERMINATE`, ve `BST_UNCHECKED`. Düğmesini tıklatarak gönderir bir `BN_CLICKED` sahibi penceresine bildirim ve düğmesi durumunu değiştirir. Düğme durumları döngüsü sırasına göre `BST_CHECKED`, `BST_INDETERMINATE`, ve `BST_UNCHECKED`. Varsayılan olarak, onay kutusunun sağında ilişkili metin görüntülenir. Metin kutusunun sol tarafındaki onay için görüntülenecek kullanmak `BS_LEFTTEXT` veya `BS_RIGHTBUTTON` stili.|  
-|`BS_AUTOCHECKBOX`|Bir onay kutusu düğmesi ile iki durumlu oluşturur: `BST_CHECKED` ve `BST_UNCHECKED`. Düğmesini tıklatarak gönderir bir `BN_CLICKED` sahibi penceresine bildirim ve düğmesi durumunu değiştirir. Varsayılan olarak, onay kutusunun sağında ilişkili metin görüntülenir. Metin kutusunun sol tarafındaki onay için görüntülenecek kullanmak `BS_LEFTTEXT` veya `BS_RIGHTBUTTON` stili.|  
-|`BS_AUTORADIOBUTTON`|İki durumlu ile radyo düğmesi oluşturur: `BST_CHECKED` ve `BST_UNCHECKED`. Genellikle radyo düğmeleri gruplarıyla her gruba aynı anda bir checked seçeneği maksimum kullanılır. Düğmesini tıklatarak gönderir bir `BN_CLICKED` bildirim sahibi penceresine ayarlar için tıklatılan radyo düğmesi durumunu `BST_CHECKED`ve diğer tüm radyo düğmeleri durumlarını düğmesi grubuna ayarlar `BST_UNCHECKED`. Varsayılan olarak, ilişkili metin radyo düğmesinin sağında görüntülenir. Metni sola radyo düğmesinin görüntülemek için kullanın `BS_LEFTTEXT` veya `BS_RIGHTBUTTON` stili.|  
-|`BS_CHECKBOX`|Bir onay kutusu düğmesi ile iki durumlu oluşturur: `BST_CHECKED` ve `BST_UNCHECKED`. Düğmesini tıklatarak gönderir bir `BN_CLICKED` bildirim sahibi penceresine düğmenin durumunu değiştirmez ancak. Varsayılan olarak, onay kutusunun sağında ilişkili metin görüntülenir. Metin kutusunun sol tarafındaki onay için görüntülenecek kullanmak `BS_LEFTTEXT` veya `BS_RIGHTBUTTON` stili.|  
-|`BS_COMMANDLINK`|Bir komut bağlantı düğmesi oluşturur. Komut düğmesi için özel bir komut bağı düğmesini olduğu [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ana metni ve ana metni altındaki notta solundaki yeşil bir ok görüntüler. Not metnini kullanarak ayarlayabilirsiniz [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote).|  
-|`BS_DEFCOMMANDLINK`|Bir komut bağlantı düğmesi oluşturur. Komut düğmesi için özel bir komut bağı düğmesini olduğu [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ana metni ve ana metni altındaki notta solundaki yeşil bir ok görüntüler. Not metnini kullanarak ayarlayabilirsiniz [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote). Düğmeyi iletişim kutusunda, gönderir anahtar ENTER tuşuna basarak bir `BN_CLICKED` bildirim bile düğmesi giriş odağını olmadığında iletişim kutusu.|  
-|`BS_DEFPUSHBUTTON`|Yoğun bir siyah kenarlığa sahip bir komut düğmesi oluşturur. Düğmeyi iletişim kutusunda, gönderir anahtar ENTER tuşuna basarak bir `BN_CLICKED` bildirim bile düğmesi giriş odağını olmadığında iletişim kutusu.|  
-|`BS_DEFSPLITBUTTON`|Bölünmüş düğme oluşturur. Bölünmüş düğme için belirli bir komut düğmesi olup [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] için aşağı açılan okunu bitişik bir düğme içerir. Düğmeye tıkladığınızda, varsayılan komutu yürütülür. Aşağı açılan oku tıklatın, ek komutlar menüsü görüntülenir. Bölünmüş düğme iletişim kutusunda, gönderir anahtar ENTER tuşuna basarak bir `BN_CLICKED` bildirim bile düğmesi giriş odağını olmadığında iletişim kutusu|  
-|`BS_GROUPBOX`|Diğer düğmeleri gruplandırılabilir Dikdörtgen oluşturur. Bu stili ile ilişkili metin dikdörtgenin sol üst köşesinde görüntülenir.|  
-|`BS_OWNERDRAW`|Sahip tarafından çizilmiş düğmesi oluşturur. Framework çağrıları `DrawItem` yöntemi düğmenin görsel yönü zaman değişti. Kullandığınızda bu stili ayarlanmalıdır `CBitmapButton` sınıfı.|  
-|`BS_PUSHBUTTON`|Gönderen bir komut düğmesi oluşturur bir `BN_CLICKED` kullanıcı düğmesini tıklattığında sahibi penceresine bildirim.|  
-|`BS_RADIOBUTTON`|İki durumlu ile radyo düğmesi oluşturur: `BST_CHECKED` ve `BST_UNCHECKED`. Genellikle radyo düğmeleri gruplarıyla her gruba aynı anda bir checked seçeneği maksimum kullanılır. Düğmesini tıklatarak gönderir bir `BN_CLICKED` bildirim sahibi penceresine otomatik olarak grubundaki herhangi bir düğmeye durumunu değiştirmez ancak. Varsayılan olarak, ilişkili metin radyo düğmesinin sağında görüntülenir. Metni sola radyo düğmesinin görüntülemek için kullanın `BS_LEFTTEXT` veya `BS_RIGHTBUTTON` stili.|  
-|`BS_SPLITBUTTON`|Bölünmüş düğme oluşturur. Bölünmüş düğme için belirli bir komut düğmesi olup [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] için aşağı açılan okunu bitişik bir düğme içerir. Düğmeye tıkladığınızda, varsayılan komutu yürütülür. Aşağı açılan oku tıklatın, ek komutlar menüsü görüntülenir.|  
-|`BS_USERBUTTON`|16 bit Windows sürümleri ile uyumluluk için sağlanan ancak Kullanımdan kalktı. Win32 tabanlı uygulamalar kullanması gereken `BS_OWNERDRAW` yerine.|  
+|BS_3STATE|Üç durum içeren bir onay kutusu düğmesi oluşturur: BST_CHECKED BST_INDETERMINATE ve BST_UNCHECKED. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirimi gönderilir ancak düğmenin durumu değişmez. Varsayılan olarak, ilişkili metin onay kutusunun sağında görüntülenir. Metni onay kutusunun solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
+|BS_AUTO3STATE|Üç durum içeren bir onay kutusu düğmesi oluşturur: BST_CHECKED BST_INDETERMINATE ve BST_UNCHECKED. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirimi gönderilir ve düğmenin durumu değişir. Düğme durumları döngüsü BST_CHECKED BST_INDETERMINATE ve BST_UNCHECKED sırasına göre. Varsayılan olarak, ilişkili metin onay kutusunun sağında görüntülenir. Metni onay kutusunun solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
+|BS_AUTOCHECKBOX|İki durum içeren bir onay kutusu düğmesi oluşturur: BST_CHECKED ve BST_UNCHECKED. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirimi gönderilir ve düğmenin durumu değişir. Varsayılan olarak, ilişkili metin onay kutusunun sağında görüntülenir. Metni onay kutusunun solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
+|BS_AUTORADIOBUTTON|İki durum içeren bir radyo düğmesi oluşturur: BST_CHECKED ve BST_UNCHECKED. Radyo düğmeleri genelde gruplar olarak her grupta en fazla bir işaretli seçenek birer birer kullanılır. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirim gönderir, tıklanan radyo düğmesinin durumu BST_CHECKED için ayarlar ve BST_UNCHECKED için ve düğme grubundaki diğer tüm düğmelerin durumlarını ayarlar. Varsayılan olarak, ilişkili metin radyo düğmesinin sağında görüntülenir. Metni radyo düğmesinin solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
+|BS_CHECKBOX|İki durum içeren bir onay kutusu düğmesi oluşturur: BST_CHECKED ve BST_UNCHECKED. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirimi gönderilir ancak düğmenin durumu değişmez. Varsayılan olarak, ilişkili metin onay kutusunun sağında görüntülenir. Metni onay kutusunun solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
+|BS_COMMANDLINK|Bir komut bağlantı düğmesi oluşturur. Bir komut bağlantı düğmesi bir özgü komut düğmesidir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ana metni ve ana metnin altında bir not solundaki yeşil bir ok görüntüler. Not metnini kullanarak ayarlayabilirsiniz [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote).|  
+|BS_DEFCOMMANDLINK|Bir komut bağlantı düğmesi oluşturur. Bir komut bağlantı düğmesi bir özgü komut düğmesidir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ana metni ve ana metnin altında bir not solundaki yeşil bir ok görüntüler. Not metnini kullanarak ayarlayabilirsiniz [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote). Düğme bir iletişim kutusunda, düğme giriş odağında olmasa olduğunda ENTER tuşuna basmak BN_CLICKED bildirim iletişim kutusuna gönderir.|  
+|BS_DEFPUSHBUTTON|Koyu siyah kenarlığa sahip bir komut düğmesi oluşturur. Düğme bir iletişim kutusunda, düğme giriş odağında olmasa olduğunda ENTER tuşuna basmak BN_CLICKED bildirim iletişim kutusuna gönderir.|  
+|BS_DEFSPLITBUTTON|Bölünmüş düğme oluşturur. Bölünmüş düğme bir özgü komut düğmesidir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] açılır oka bitişik bir düğmeyi içeren. Düğmeyi tıkladığınızda varsayılan komut yürütülür. Aşağı açılır oku tıkladığınızda ek komutlar içeren bir menü görünür. Bölünmüş düğme bir iletişim kutusunda, düğme giriş odağında olmasa ENTER tuşuna basmak BN_CLICKED bildirim iletişim kutusuna gönderir|  
+|BS_GROUPBOX|Diğer düğmelerin gruplandırılabilir bir dikdörtgen oluşturur. Bu stil ile ilişkili metin dikdörtgenin sol üst köşesinde görüntülenir.|  
+|BS_OWNERDRAW|Bir kullanıcı çizimli düğmesi oluşturur. Framework çağrıları `DrawItem` düğmenin görsel bir özelliği olduğunda yöntemi değişti. Bu stil kullanırken ayarlanmalıdır `CBitmapButton` sınıfı.|  
+|BS_PUSHBUTTON|Kullanıcı düğmeye tıkladığında sahip penceresine bir BN_CLICKED bildirim gönderen bir komut düğmesi oluşturur.|  
+|BS_RADIOBUTTON|İki durum içeren bir radyo düğmesi oluşturur: BST_CHECKED ve BST_UNCHECKED. Radyo düğmeleri genelde gruplar olarak her grupta en fazla bir işaretli seçenek birer birer kullanılır. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirim gönderir, ancak otomatik olarak gruptaki herhangi bir düğmenin durumu değişmez. Varsayılan olarak, ilişkili metin radyo düğmesinin sağında görüntülenir. Metni radyo düğmesinin solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
+|BS_SPLITBUTTON|Bölünmüş düğme oluşturur. Bölünmüş düğme bir özgü komut düğmesidir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] açılır oka bitişik bir düğmeyi içeren. Düğmeyi tıkladığınızda varsayılan komut yürütülür. Aşağı açılır oku tıkladığınızda ek komutlar içeren bir menü görünür.|  
+|BS_USERBUTTON|Windows 16-bit sürümleriyle uyumluluk için sağlanmıştır ancak Kullanımdan kalktı. Win32 tabanlı uygulamalar BS_OWNERDRAW kullanmalısınız.|  
   
 ### <a name="radio-button-and-check-box-styles"></a>Radyo düğmesi ve onay kutusu stilleri  
   
-Aşağıdaki tabloda radyo düğmeleri ve onay kutularını özel stiller listeler. Bu stiller tüm diğer düğmesi türlerinde göz ardı edilir. İsteğe bağlı olarak, bir veya daha fazlasını seçebilirsiniz.  
+Aşağıdaki tablo, radyo düğmeleri ve onay kutularına özel stilleri listeler. Bu stiller diğer tüm düğme türlerinde yoksayılır. İsteğe bağlı olarak, bir veya daha fazlasını seçebilirsiniz.  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`BS_LEFTTEXT`|Radyo düğmesini veya onay kutusunu stili ile birleştirildiğinde, metin radyo düğmesini veya onay kutusunun sol tarafında görünür.|  
-|`BS_RIGHTBUTTON`|Radyo düğmesini veya onay kutusunu stili ile birleştirildiğinde, metin radyo düğmesini veya onay kutusunun sol tarafında görünür. Bu stili aynıdır `BS_LEFTTEXT` stili.|  
-|`BS_PUSHLIKE`|Bir onay kutusu veya arayın ve komut düğmesi gibi davranır radyo düğmesi hale getirir. Durumu olduğunda basılı düğmesinin `BST_CHECKED`basılı ve durumuna olduğunda soluk `BST_INDETERMINATE`ve durumunu serbest `BST_UNCHECKED`.|  
+|BS_LEFTTEXT|Bir radyo düğmesi veya onay kutusu stiliyle birlikte kullanıldığında metin radyo düğmesinin veya onay kutusunun sol tarafında görünür.|  
+|BS_RIGHTBUTTON|Bir radyo düğmesi veya onay kutusu stiliyle birlikte kullanıldığında metin radyo düğmesinin veya onay kutusunun sol tarafında görünür. Bu stil BS_LEFTTEXT stil aynıdır.|  
+|BS_PUSHLIKE|Bir onay kutusu veya radyo düğmesini arayın ve komut düğmesi gibi çalışır hale getirir. Basılan BST_INDETERMINATE olduğunda soluk ve kendi BST_UNCHECKED olduğunda serbest BST_CHECKED olduğunda düğmesi basılı görünür.|  
   
-### <a name="button-text-alignment-styles"></a>Düğme metni hizalama stilleri  
+### <a name="button-text-alignment-styles"></a>Düğme metin hizalama stilleri  
   
-Aşağıdaki tabloda yatay ve dikey metin hizalama seçeneklerini listeler. İsteğe bağlı olarak aşağıdakilerden birini seçebilirsiniz.  
-  
-|Stil|Açıklama|  
-|-----------|-----------------|  
-|`BS_LEFT`|Sol düğmesi dikdörtgeni metinde hizalar. Ancak, düğme bir onay kutusu veya radyo düğmesi yoktur `BS_RIGHTBUTTON` metin stili değişmeden onay kutusu veya radyo düğmesi sağ tarafta hizalı.|  
-|`BS_RIGHT`|Sağa düğmesi dikdörtgeni metinde hizalar. Ancak, düğme bir onay kutusu veya radyo düğmesi yoktur `BS_RIGHTBUTTON` stil, metnin sağ tarafında onay kutusu veya radyo düğmesi sağ hizalanır.|  
-|`BS_CENTER`|Düğmesini dikdörtgeni metinde yatay olarak toplanır.|  
-|`BS_TOP`|Metin düğmesi dikdörtgenin üst kısmında yerleştirir.|  
-|`BS_BOTTOM`|Metin düğmesi Dikdörtgen sonunda yerleştirir.|  
-|`BS_VCENTER`|Düğme dikdörtgen dikey metinde toplanır.|  
-  
-### <a name="button-content-options"></a>Düğme içerik seçenekleri  
-  
-Aşağıdaki tabloda düğmesini görüntülenenleri belirtmek seçeneklerini listeler. Yalnızca metni görüntüle düğmesi türleri bu yoksay. İsteğe bağlı olarak aşağıdakilerden birini seçebilirsiniz.  
+Aşağıdaki tablo yatay ve dikey metin hizalama seçeneklerini listeler. İsteğe bağlı olarak aşağıdakilerden birini seçebilirsiniz.  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`BS_BITMAP`|Düğme bir bit eşlem görüntüler belirtir.|  
-|`BS_ICON`|Düğme bir simge görüntülenir belirtir.|  
-|`BS_TEXT`|Düğme metni görüntüleyen belirtir.|  
+|BS_LEFT|Düğme dikdörtgenin içindeki metni sola hizalar. Bununla birlikte, metin düğme, onay kutusu veya bs_rıghtbutton stili yok radyo düğmesini ise, sol onay kutusunun veya radyo düğmesinin sağ tarafında hizalanır.|  
+|BS_RIGHT|Düğme dikdörtgenin içindeki metni sağa hizalar. Düğme, onay kutusu veya bs_rıghtbutton stili yok radyo düğmesini ise, Bununla birlikte, metin onay kutusunun veya radyo düğmesinin sağ tarafında doğru hizalanır.|  
+|BS_CENTER|Metini, düğme dikdörtgeninde yatay olarak merkezlendirir.|  
+|BS_TOP|Metni düğme dikdörtgeninin üstüne yerleştirir.|  
+|BS_BOTTOM|Metni düğme dikdörtgeninin alt kısmında yerleştirir.|  
+|BS_VCENTER|Metini, düğme dikdörtgeninde dikey olarak merkezlendirir.|  
   
-### <a name="other-button-options"></a>Diğer düğmesi seçenekleri  
+### <a name="button-content-options"></a>Düğme içeriği seçenekleri  
   
-Herhangi bir düğme türü ile kullanabileceğiniz ek seçenekleri aşağıdaki tabloda listelenmektedir. İsteğe bağlı olarak, bir veya daha fazlasını seçebilirsiniz.  
+Aşağıdaki tabloda, hangi düğmeye görüntülendiğini belirten seçenekleri listeler. Yalnızca metin görüntüleyen düğme türleri bu stilleri yoksayar. İsteğe bağlı olarak aşağıdakilerden birini seçebilirsiniz.  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`BS_FLAT`|Düğme iki boyutlu ve üç boyutlu bir görüntü oluşturmak için varsayılan gölgelendirme ile çizilmiş değil belirtir.|  
-|`BS_MULTILINE`|Metin dizesini düğmesi dikdörtgenin içindeki tek bir satırda uymak için çok büyük ise, çok satırlı düğmesi metni sarmalar.|  
-|`BS_NOTIFY`|Gönderilecek bir düğmesini etkinleştirir `BN_DBLCLK`, `BN_KILLFOCUS`, ve `BN_SETFOCUS` kendi üst penceresi bildirim iletileri. Gönderme düğmeleri Not `BN_CLICKED` bu stili belirtilip bağımsız olarak bildirim.|  
+|BS_BITMAP|Bir bit eşlem görüntüleyen düğmeyi belirtir.|  
+|BS_ICON|Bir simge görüntüleyen düğmeyi belirtir.|  
+|BS_TEXT|Metin görüntüleyen düğmeyi belirtir.|  
+  
+### <a name="other-button-options"></a>Diğer düğme seçenekleri  
+  
+Aşağıdaki tabloda, herhangi bir düğme türü ile kullanabileceğiniz ek seçenekleri listeler. İsteğe bağlı olarak, bir veya daha fazlasını seçebilirsiniz.  
+  
+|Stil|Açıklama|  
+|-----------|-----------------|  
+|BS_FLAT|Düğmenin iki boyutlu olduğunu ve üç boyutlu bir görüntü oluşturmak için varsayılan gölgelendirme ile çizilen değil belirtir.|  
+|BS_MULTILINE|Metin dizesi düğme dikdörtgenin içindeki tek bir satıra sığmayacak kadar uzun olduğunda düğme metnini çoklu satırlara sarar.|  
+|BS_NOTIFY|Üst pencereye BN_DBLCLK BN_KILLFOCUS ve BN_SETFOCUS bildirim iletilerini göndermek bir düğme etkinleştirir. Düğme Bu stilin belirtilmesinden BN_CLICKED bildirim gönderme unutmayın.|  
   
 ## <a name="combo-box-styles"></a>  Birleşik giriş kutusu stilleri  
   
-Aşağıdaki birleşik giriş kutusu stilleri MFC'de kullanılabilir. Birleşik giriş kutusu stilleri Windows hakkında daha fazla bilgi için bkz: [birleşik giriş kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796).  
+MFC'de kullanılabilen aşağıdaki birleşik giriş kutusu stilleri. Windows birleşik giriş kutusu stilleri hakkında daha fazla bilgi için bkz: [birleşik giriş kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`CBS_AUTOHSCROLL`|Kullanıcı satırın sonuna bir karakter yazdığında metni sağa düzenleme denetimindeki otomatik olarak kayar. Bu stili ayarlanmadı dikdörtgen sınırı içinde uygun metin izin verilir.|  
-|`CBS_DISABLENOSCROLL`|Liste kutusu zaman liste kutusunda kaydırma için yeterli öğeleri içermiyor çubuğu devre dışı bırakılmış bir dikey kaydırma gösterir. Liste kutusu yeterli öğeleri içermediğinde, bu stili kaydırma çubuğu gizlenir.|  
-|`CBS_DROPDOWN`|Benzer şekilde `CBS_SIMPLE`dışında kullanıcı düzenleme denetimi yanındaki simge seçmedikçe liste kutusunu görüntülenmez.|  
-|`CBS_DROPDOWNLIST`|Benzer şekilde `CBS_DROPDOWN`, liste kutusunda geçerli seçim görüntüleyen bir statik metin öğe düzenleme denetimi değiştirilir dışında.|  
-|`CBS_HASSTRINGS`|Bir sahip çizim birleşik giriş kutusu dizeleri oluşan öğeleri içerir. Uygulamayı kullanabilmeniz için bellek ve dizeleri işaretçileri birleşik giriş kutusu tutar `GetText` belirli bir öğenin metni almak için üye işlevi.|  
-|`CBS_LOWERCASE`|Seçimi alanını ve listenin tüm metni küçük harfe dönüştürür.|  
-|`CBS_NOINTEGRALHEIGHT`|Birleşik giriş kutusu boyutunu tam olarak birleşik giriş kutusu oluşturduğunuzda uygulama tarafından belirtilen boyut olduğunu belirtir. Normalde, böylece birleşik giriş kutusu kısmi öğeleri görüntülemez Windows birleşik giriş kutusu boyutları.|  
-|`CBS_OEMCONVERT`|Birleşik giriş kutusu düzenleme denetimine girilen metin ANSI karakter kümesinden OEM karakter kümesini ve ANSI sonra geri dönüştürülür. Uygulama çağırdığında bu uygun karakter dönüştürme sağlar `AnsiToOem` birleşik giriş kutusu ANSI dizesinde OEM karakterlerine dönüştürmek için Windows işlevi. Bu stili ile oluşturulan birleşik giriş kutuları için geçerlidir ve dosya adlarını içeren birleşik giriş kutuları için en kullanışlıdır `CBS_SIMPLE` veya `CBS_DROPDOWN` stilleri.|  
-|`CBS_OWNERDRAWFIXED`|Liste kutusu içeriğini çizmek için sorumlu sahibi; liste kutusunda aynı yüksekliği öğelerdir.|  
-|`CBS_OWNERDRAWVARIABLE`|Liste kutusu içeriğini çizmek için sorumlu sahibi; liste kutusunda yükseklik değişkeninde öğelerdir.|  
-|`CBS_SIMPLE`|Liste kutusu her zaman görüntülenir. Seçilen liste kutusunda düzenleme denetimine görüntülenir.|  
-|`CBS_SORT`|Otomatik olarak liste kutusuna girilen dizeleri sıralar.|  
-|`CBS_UPPERCASE`|Seçimi alanını ve listenin tüm metni büyük harfe dönüştürür.|  
+|CBS_AUTOHSCROLL|Otomatik kullanıcı satırın sonunda bir karakter yazdığında metni sağa düzenleme denetiminde kaydırır. Bu stil ayarlanmadı dikdörtgen sınırları içinde uygun metin izin verilir.|  
+|CBS_DISABLENOSCROLL|Liste kutusu, ne zaman liste kutusunda kaydırma yapmak için yeterli öğeleri içermiyor çubuğu devre dışı bırakılmış bir dikey kaydırma gösterir. Liste kutusu öğe yeterli olmadığında bu stil kaydırma çubuğu gizlenir.|  
+|CBS_DROPDOWN|Kullanıcı düzenleme denetiminin yanında bir simge seçmedikçe liste kutusu görüntülenmez dışında cbs_sımple için benzer.|  
+|CBS_DROPDOWNLIST|Benzer biçimde CBS_DROPDOWN, düzenleme denetiminin değiştirilir dışında bir statik metin öğesi tarafından geçerli seçim liste kutusu içinde görüntüler.|  
+|CBS_HASSTRINGS|Bir özelleştirilmiş çizimli birleşik giriş kutusunun, dizelerden oluşan öğeleri içerir. Uygulamayı kullanabilmeniz için birleşik giriş kutusu dizeleri için işaretçiler ve bellek tutar `GetText` belirli bir öğenin metnini almak için üye işlevi.|  
+|CBS_LOWERCASE|Seçim alanı hem de listenin tüm metni küçük harfe dönüştürür.|  
+|CBS_NOINTEGRALHEIGHT|Birleşik giriş kutusunun boyutunun tam olarak birleşik giriş kutusu oluşturduğunuzda uygulama tarafından belirtilen boyut olduğunu belirtir. Normalde, böylece kısmi öğeleri Kombo kutusu görüntülemez Windows birleşik giriş kutusu boyutlandırır.|  
+|CBS_OEMCONVERT|Birleşik giriş kutusu düzenleme denetimine girilen metni ANSI karakter kümesi OEM karakter kümesine ve ANSI sonra geri dönüştürülür. Uygulama çağırdığında, bu uygun bir karakter dönüştürme sağlar `AnsiToOem` OEM karakter birleşik giriş kutusundaki bir ANSI dizesine dönüştürmek için Windows işlevi. Bu stil cbs_sımple veya CBS_DROPDOWN stilleri ile oluşturulan birleşik giriş kutuları için geçerlidir ve dosya adlarını içeren birleşik giriş kutuları için en kullanışlıdır.|  
+|CBS_OWNERDRAWFIXED|Liste kutusunun içeriğini çizmek için sorumlu sahibidir; liste kutusunda aynı yükseklikte öğelerdir.|  
+|CBS_OWNERDRAWVARIABLE|Liste kutusunun içeriğini çizmek için sorumlu sahibidir; öğeleri liste kutusunda yükseklikte bir değişkendir.|  
+|CBS_SIMPLE|Liste kutusu, her zaman görüntülenir. Geçerli seçimi liste kutusunda bir düzenleme denetimini görüntülenir.|  
+|CBS_SORT|Otomatik olarak dizeleri liste kutusuna girilen sıralar.|  
+|CBS_UPPERCASE|Seçim alanı hem de listenin tüm metni büyük harfe dönüştürür.|  
   
 ## <a name="edit-styles"></a>  Düzenleme stilleri  
   
-Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CEdit::Create](../../mfc/reference/cedit-class.md#create). Düzenle denetim stilleri Windows hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
+Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CEdit::Create](../../mfc/reference/cedit-class.md#create). Windows düzenleme denetimi stilleri hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`ES_AUTOHSCROLL`|Otomatik olarak kullanıcı satırın sonuna bir karakter yazdığında tarafından 10 karakter metni sağa kaydırır. Kullanıcı ENTER tuşuna bastığında denetimi geri konumuna 0 tüm metni kayar.|  
-|`ES_AUTOVSCROLL`|Kullanıcı son satırında ENTER tuşuna bastığında otomatik olarak bir sayfa yukarı metin kayar.|  
-|`ES_CENTER`|Metin bir satır içi tek veya çok satırlı düzenleme denetimindeki toplanır.|  
-|`ES_LEFT`|Tek satırlı veya çok satırlı metin sola hizalar denetim düzenleyin.|  
-|`ES_LOWERCASE`|Tüm karakterleri düzenleme denetimine yazılan gibi küçük harfe dönüştürür.|  
-|`ES_MULTILINE`|Birden çok satırlı düzenleme denetimi belirler. (Tek satır varsayılandır.) Varsa `ES_AUTOVSCROLL` stili belirtilmediyse, düzenleme denetimi mümkün olduğu kadar satır gösterir ve dikey olarak kullanıcı ENTER tuşuna bastığında kaydırır. Varsa `ES_AUTOVSCROLL` olduğundan daha fazla satır görüntülendiği zaman ENTER basıldıysa verilmedi, düzenleme denetimi sayıda satırı olası ve bip gösterir. Varsa `ES_AUTOHSCROLL` stili belirtilmediyse, birden çok satırlı düzenleme denetimi otomatik olarak yatay şapka denetimi sağ köşesine gittiğinde kaydırır. Yeni bir satır başlatmak için kullanıcı ENTER tuşuna basın gerekir. Varsa `ES_AUTOHSCROLL` olan verilmedi, denetim gerekli olduğunda sonraki satırın başlangıcına sözcükleri otomatik olarak kaydırılıp; ENTER tuşuna bastığınızda, yeni bir satır da başlatılır. Sözcük kaydırma konumunu pencere boyutu tarafından belirlenir. Pencere boyutu değişirse wordwrap konum değişiklikleri ve metin görünürler. Birden çok satırlı düzenleme denetimlerinde kaydırma çubukları olabilir. Kaydırma çubukları ile düzenleme denetimi kendi kaydırma çubuğu iletileri işler. Yukarıda açıklandığı gibi kaydırma çubukları kaydırma olmadan denetimler düzenleyin ve üst pencere tarafından gönderilen tüm kaydırma iletilerini işlemek.|  
-|`ES_NOHIDESEL`|Normalde, denetim giriş odağı kaybettiğinde ve denetim giriş odağını aldığında seçimi tersine çevirir olmadığında düzenleme denetimi seçimi gizler. Belirtme `ES_NOHIDESEL` bu varsayılan eylem siler.|  
-|`ES_NUMBER`|Düzenleme denetimine girilecek yalnızca rakamlar sağlar.|  
-|`ES_OEMCONVERT`|Düzenleme denetimine girilen metin ANSI karakter kümesinden OEM karakter kümesini ve ANSI sonra geri dönüştürülür. Uygulama çağırdığında bu uygun karakter dönüştürme sağlar `AnsiToOem` ANSI dize düzenleme denetimindeki OEM karakterlerine dönüştürmek için Windows işlevi. Bu stili dosya adlarını içeren düzenleme denetimleri için kullanışlıdır.|  
-|`ES_PASSWORD`|Tüm karakterleri görüntüler bir yıldız işareti (__\*__) düzenleme denetimine yazılan gibi. Bir uygulamanın kullanabileceği `SetPasswordChar` görüntülenen karakterini değiştirmek için üye işlevi.|  
-|`ES_READONLY`|Kullanıcının girmek veya metin düzenleme denetimindeki düzenleme engeller.|  
-|`ES_RIGHT`|Tek satırlı veya çok satırlı metin sağa hizalar denetim düzenleyin.|  
-|`ES_UPPERCASE`|Tüm karakterleri düzenleme denetimine yazılan gibi büyük harfe dönüştürür.|  
-|`ES_WANTRETURN`|Kullanıcı bir iletişim kutusunda birden çok satırlı düzenleme denetimine metin yazarken ENTER tuşuna bastığında bir satır başı karakteri eklenmesini belirtir. Bu stili ENTER tuşuna basarak iletişim kutuları varsayılan basma düğmesi tuşuna basarak aynı etkiye sahiptir. Bu stili düzenleme denetimi tek satırlı üzerinde hiçbir etkisi yoktur.|  
+|ES_AUTOHSCROLL|Kullanıcı satırın sonunda bir karakter yazdığında metni otomatik olarak sağ tarafından 10 karakter kaydırır. Kullanıcı ENTER tuşuna bastığında denetimin konumu 0 dön tüm metni kaydırır.|  
+|ES_AUTOVSCROLL|Otomatik kullanıcı Son satırda ENTER tuşuna bastığında metin bir sayfa yukarı kaydırır.|  
+|ES_CENTER|Tek satır veya çok satırlı düzenleme denetiminde metni ortalar.|  
+|ES_LEFT|Bir satır içi tek veya çok satırlı düzenleme denetiminde metni sola hizalar.|  
+|ES_LOWERCASE|Tüm karakterler düzenleme denetimine yazılan gibi küçük harfe dönüştürür.|  
+|ES_MULTILINE|Birden çok satırlı düzenleme denetimini belirtir. (Tek satır varsayılandır.) ES_AUTOVSCROLL stili belirtilirse, düzenleme denetiminin mümkün olduğu kadar çok satırları gösterir ve kullanıcının ENTER tuşuna bastığında dikey olarak kaydırır. ES_AUTOVSCROLL verilmezse, daha fazla satır görüntülenebilir olduğunda ENTER tuşuna bastığınızda, düzenleme denetiminin sayıda satırı mümkün ve bip sesi olarak gösterir. ES_AUTOHSCROLL stili belirtilirse, çok satırlı düzenleme denetimi otomatik olarak yatay olarak giriş işaretini denetimin sağ kenarı gittiğinde kaydırır. Yeni bir satıra başlatmak için kullanıcı ENTER tuşuna basın gerekir. ES_AUTOHSCROLL verilmezse, denetim gerekli olduğunda sonraki satırın başlangıcına sözcükleri otomatik olarak kaydırılıp; ENTER tuşuna bastığınızda, yeni bir satır da başlatıldı. Sözcük kaydırma konumunu pencere boyutu tarafından belirlenir. Pencere boyutu değişirse, sözcük kaydırmayı konumu değiştiğinde ve metin görünürler. Çok satırlı düzenleme denetimleri, kaydırma çubukları olabilir. Kaydırma çubuklu bir düzenleme denetimi kendi kaydırma çubuğu iletileri işler. Yukarıda açıklandığı gibi kaydırma çubukları kaydırma olmadan denetimlere düzenleyin ve ana pencere tarafından gönderilen herhangi bir kaydırma iletiyi.|  
+|ES_NOHIDESEL|Normalde, denetimin Girintiyi kaybettiğini ve denetim giriş odağını aldığında seçimi tersine çevirir. bir düzenleme denetimi seçimi gizler. Es_nohıdesel belirterek bu varsayılan eylem siler.|  
+|ES_NUMBER|Sadece sayılarının girilmesine düzenleme denetimine girilmesi izin verir.|  
+|ES_OEMCONVERT|Metin düzenleme denetiminde girdiğiniz ANSI karakter kümesinden OEM karakter kümesine ve ANSI sonra geri dönüştürülür. Uygulama çağırdığında, bu uygun bir karakter dönüştürme sağlar `AnsiToOem` Windows işlevini düzenleme denetiminde bir ANSI dizesine OEM karakterlere dönüştürür. Bu stil dosya adlarını içeren düzenleme denetimleri için kullanışlıdır.|  
+|ES_PASSWORD|Tüm karakter yıldız görüntüler (__\*__) düzenleme denetimine yazılan gibi. Bir uygulamanın kullanabileceği `SetPasswordChar` görüntülenen karakterini değiştirmek için üye işlevi.|  
+|ES_READONLY|Kullanıcının girme ve düzenleme denetiminde metin düzenlemesini engeller.|  
+|ES_RIGHT|Bir satır içi tek veya çok satırlı düzenleme denetiminde metni sağa hizalar.|  
+|ES_UPPERCASE|Tüm karakterler düzenleme denetimine yazılan gibi büyük harfe dönüştürür.|  
+|ES_WANTRETURN|Bir iletişim kutusu birden çok satırlı düzenleme denetiminde metin girerek sırasında kullanıcı ENTER tuşuna bastığında bir satır başı eklenmesi belirtir. Bu stil ENTER tuşuna basarak iletişim kutuları varsayılan basma düğmesi aynı etkiye sahip. Bu stil düzenleme denetimi tek satır üzerinde etkisi yoktur.|  
   
 ## <a name="frame-window-styles-mfc"></a> Çerçeve pencere stilleri  
   
-Çerçeve pencere stilleri uygulamak için [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create).  
+Çerçeve pencere stilleri uygulamak için [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`FWS_ADDTOTITLE`|Çerçeve penceresi başlığı sonuna bilgileri belirtir. Örneğin, "Microsoft çizin – çizim içinde Document1". Belge şablonu dizeleri sekmesi Uygulama Sihirbazı'nda görüntülenen dizeleri belirtebilirsiniz. Bu seçenek devre dışı bırakmak gerekiyorsa, geçersiz kılma `CWnd::PreCreateWindow` üye işlevi.|  
-|`FWS_PREFIXTITLE`|Uygulama adı önce belge adı bir çerçeve pencere başlığında görüntülenir. Örneğin, "Belge – WordPad". Belge şablonu dizeleri sekmesi Uygulama Sihirbazı'nda görüntülenen dizeleri belirtebilirsiniz. Bu seçenek devre dışı bırakmak gerekiyorsa, geçersiz kılma `CWnd::PreCreateWindow` üye işlevi.|  
-|`FWS_SNAPTOBARS`|Denetimleri boyutlandırma zaman, kayan bir pencere yerine bir çerçeve penceresinde yerleşik çubuğu denetim barındırır çerçeve penceresi. Bu stili denetim çubuğu uyacak şekilde pencere boyutları.|
+|FWS_ADDTOTITLE|Çerçeve pencere başlığı sonuna bilgilere belirtir. Örneğin, "Microsoft çizmek – çizim içinde Document1". Belge şablonu dizeleri sekmesi Uygulama Sihirbazı'nda görüntülenen dizeler belirtebilirsiniz. Bu seçenek devre dışı bırakmak gerekiyorsa, geçersiz kılma `CWnd::PreCreateWindow` üye işlevi.|  
+|FWS_PREFIXTITLE|Belge adı uygulama adından önce bir çerçeve pencere başlığı gösterilir. Örneğin, "Belge – WordPad". Belge şablonu dizeleri sekmesi Uygulama Sihirbazı'nda görüntülenen dizeler belirtebilirsiniz. Bu seçenek devre dışı bırakmak gerekiyorsa, geçersiz kılma `CWnd::PreCreateWindow` üye işlevi.|  
+|FWS_SNAPTOBARS|Denetimleri boyutlandırma çerçeve penceresinin ne zaman bir kayan pencerede yerine için bir çerçeve penceresinin yerleştirilmiş çubuğu denetim barındırır. Bu stil, denetim çubuğu uyacak şekilde pencere boyutunu ayarlar.|
   
 ## <a name="list-box-styles"></a> Liste kutusu stilleri  
   
-Liste kutusu stilleri uygulamak için [CListBox sınıfı](../../mfc/reference/clistbox-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CListBox::Create](../../mfc/reference/clistbox-class.md#create). Liste kutusu stilleri Windows hakkında daha fazla bilgi için bkz: [liste kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149).  
+Liste kutusu stilleri uygulamak için [CListBox sınıfı](../../mfc/reference/clistbox-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CListBox::Create](../../mfc/reference/clistbox-class.md#create). Windows liste kutusu stilleri hakkında daha fazla bilgi için bkz: [liste kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`LBS_DISABLENOSCROLL`|Liste kutusu zaman liste kutusunda kaydırma için yeterli öğeleri içermiyor çubuğu devre dışı bırakılmış bir dikey kaydırma gösterir. Liste kutusu yeterli öğeleri içermediğinde, bu stili kaydırma çubuğu gizlenir.|  
-|`LBS_EXTENDEDSEL`|Kullanıcı SHIFT tuşunu ve fare veya özel tuş birleşimlerini kullanarak birden çok öğe seçebilirsiniz.|  
-|`LBS_HASSTRINGS`|Dizeleri oluşan öğelerini içeren bir sahibi tarafından çizilen liste kutusu belirtir. Uygulamayı kullanabilmeniz için bellek ve dizeleri işaretçileri liste kutusu tutar `GetText` belirli bir öğenin metni almak için üye işlevi.|  
-|`LBS_MULTICOLUMN`|Yatay kaydırılan bir sütunlu liste kutusu belirtir. `SetColumnWidth` Üye işlevi sütunların genişliğini ayarlar.|  
-|`LBS_MULTIPLESEL`|Dize seçimi kullanıcı tıklattığında veya dize çift tıklamalar her zaman yükseğe. Dizeleri herhangi bir sayıda seçilebilir.|  
-|`LBS_NODATA`|Veri yok liste kutusu belirtir. Liste kutusunda öğelerin sayısını bin aşacak olduğunda bu stilini belirtin. Veri yok liste kutusu ayrıca olmalıdır `LBS_OWNERDRAWFIXED` stil ancak değil olmalıdır `LBS_SORT` veya `LBS_HASSTRINGS` stili. <br />< /br / > veri yok liste kutusu sahip tarafından çizilmiş liste kutusu benzer bir öğe için hiçbir dize veya bit eşlem verileri içerir. Komutları eklemek için Ekle ya da bir öğeyi silmek öğesi belirtilen veri; her zaman yoksay Liste kutusu içinde her zaman bir dizeyi bulmak için istekleri başarısız olur. Sistem gönderir `WM_DRAWITEM` ileti bir öğe çizilmesi gerektiğinde sahibi penceresine. Öğe kimliği üyesi `DRAWITEMSTRUCT` yapısı geçirilen ile `WM_DRAWITEM` ileti çizilecek öğesi satır sayısını belirtir. Veri yok liste kutusu göndermemek bir `WM_DELETEITEM` ileti.|  
-|`LBS_NOINTEGRALHEIGHT`|Liste kutusunu tam olarak liste kutusu oluşturduğunuzda uygulama tarafından belirtilen boyut boyutudur. Genellikle, böylece liste kutusu kısmi öğeleri görüntülemez Windows bir liste kutusu boyutları.|  
-|`LBS_NOREDRAW`|Değişiklik yapıldığında liste kutusu görüntü güncelleştirilmez. Bu stili göndererek herhangi bir zamanda değiştirilebilir bir `WM_SETREDRAW` ileti.|  
-|`LBS_NOSEL`|Liste kutusu görüntülenebilir ancak seçili öğeleri içerdiğini belirtir.|  
-|`LBS_NOTIFY`|Her kullanıcı tıklattığında veya bir dize çift tıklamalar üst pencere bir giriş iletisi alır.|  
-|`LBS_OWNERDRAWFIXED`|Liste kutusu içeriğini çizmek için sorumlu sahibi; liste kutusunda aynı yükseklikte öğelerdir.|  
-|`LBS_OWNERDRAWVARIABLE`|Liste kutusu içeriğini çizmek için sorumlu sahibi; liste kutusunda yükseklik değişkeninde öğelerdir.|  
-|`LBS_SORT`|Liste kutusu dizelerde alfabetik olarak sıralanır.|  
-|`LBS_STANDARD`|Liste kutusu dizelerde alfabetik ve her kullanıcının tıklattığında veya bir dize çift tıklamalar üst pencere bir giriş iletisi alır. Liste kutusu tüm yüze Kenarlıklar içerir.|  
-|`LBS_USETABSTOPS`|Algılar ve kendi dizeleri çizerken sekme karakterleri genişletmek bir liste kutusu sağlar. Varsayılan sekme konumlar 32 iletişim birimleridir. (Bir iletişim yatay ve dikey uzaklık birimdir. Bir yatay iletişim biriminin geçerli iletişim temel genişliği biriminin bir-dördüncü için eşittir. İletişim kutusu temel birimleri geçerli sistem yazı tipi genişliği ve yüksekliği göre hesaplanır. `GetDialogBaseUnits` Windows işlevi temel birimleri geçerli iletişim piksel cinsinden döndürür.) Bu stili ile kullanılmamalıdır `LBS_OWNERDRAWFIXED`.|  
-|`LBS_WANTKEYBOARDINPUT`|Liste kutusu sahibi alır `WM_VKEYTOITEM` veya `WM_CHARTOITEM` her liste kutusu odak giriş sırada kullanıcının bir anahtar bastığında iletileri. Bu klavye girdisi özel işlem gerçekleştirmek bir uygulama sağlar.|  
+|LBS_DISABLENOSCROLL|Liste kutusu, ne zaman liste kutusunda kaydırma yapmak için yeterli öğeleri içermiyor çubuğu devre dışı bırakılmış bir dikey kaydırma gösterir. Liste kutusu öğe yeterli olmadığında bu stil kaydırma çubuğu gizlenir.|  
+|LBS_EXTENDEDSEL|Kullanıcı, SHIFT tuşunu ve fare veya özel tuş birleşimleri kullanarak birden çok öğe seçebilirsiniz.|  
+|LBS_HASSTRINGS|Dizelerden oluşan öğeleri içeren bir sahip çizim liste kutusu belirtir. Uygulamayı kullanabilmeniz için liste kutusu dizeleri için işaretçiler ve bellek tutar `GetText` belirli bir öğenin metnini almak için üye işlevi.|  
+|LBS_MULTICOLUMN|Yatay olarak kaydırılan bir çoklu sütun liste kutusunu belirtir. `SetColumnWidth` Üye işlevi sütunların genişliğini ayarlar.|  
+|LBS_MULTIPLESEL|Kullanıcı tıkladığında veya dize çift tıklamaları birbirinden ayırma her zaman yükseğe dize seçimi. Herhangi bir sayıda dizeyi seçilebilir.|  
+|LBS_NODATA|Veri yok liste kutusunu belirtir. Bu stil bin liste kutusunda öğelerin sayısını aşacak belirtin. Veri yok liste kutusu lbs_ownerdrawfıxed stili de sahip olmalıdır, ancak LBS_SORT veya lbs_hasstrıngs stili olmaması gerekir. <br />< /br / > veri yok liste kutusunda bir sahip tarafından çizilmiş liste kutusu benzer bir öğe için dize ya da bit eşlem veri içermiyor. Komutları eklemek için eklemek veya bir öğeyi silin; veri öğesi verilen herhangi her zaman yoksay Liste kutusu içinde her zaman bir dizeyi bulmak için istekleri başarısız olur. Bir öğe çizilmesi gerektiğinde sistemin sahip penceresine WM_DRAWITEM iletiyi gönderir. Öğe kimliği üyesi `DRAWITEMSTRUCT` yapısı WM_DRAWITEM iletinin başarılı çizilecek öğesi satır sayısını belirtir. Veri yok liste kutusu WM_DELETEITEM ileti göndermez.|  
+|LBS_NOINTEGRALHEIGHT|Liste kutusu liste kutusunun oluşturduğunuzda, uygulama tarafından belirtilen boyutu tam olarak boyutudur. Genellikle Windows liste kutusu boyutları, böylece liste kutusu, kısmi öğeleri görüntülemez.|  
+|LBS_NOREDRAW|Değişiklikler yapıldığında liste kutusu görünen güncelleştirilmez. Bu stil WM_SETREDRAW iletisi göndererek herhangi bir zamanda değiştirilebilir.|  
+|LBS_NOSEL|Liste kutusu görüntülenebilir, ancak seçili öğeleri içerdiğini belirtir.|  
+|LBS_NOTIFY|Kullanıcı tıkladığında veya bir dize çift tıklamaları birbirinden ayırma zaman üst penceresine bir giriş iletisi alır.|  
+|LBS_OWNERDRAWFIXED|Liste kutusunun içeriğini çizmek için sorumlu sahibidir; liste kutusunda aynı yükseklikte öğelerdir.|  
+|LBS_OWNERDRAWVARIABLE|Liste kutusunun içeriğini çizmek için sorumlu sahibidir; öğeleri liste kutusunda yükseklikte bir değişkendir.|  
+|LBS_SORT|Dizeleri liste kutusunda alfabetik olarak sıralanır.|  
+|LBS_STANDARD|Dizeleri liste kutusunda alfabetik olarak sıralanır ve kullanıcı tıkladığında veya bir dize çift tıklamaları birbirinden ayırma zaman ana pencerenin bir giriş iletisi alır. Liste kutusu, kenarlık tüm yüze içerir.|  
+|LBS_USETABSTOPS|Alt dizeler çizerken sekme karakterlerini tanıyacağını ve tanımak bir liste kutusu sağlar. Varsayılan sekme konumlar 32 iletişim birimleridir. (Yatay veya dikey uzaklık iletişim birimidir. Tek bir yatay iletişim birim dörtte için geçerli iletişim temel genişliği birimi eşittir. İletişim temel birimler geçerli sistem yazı tipi genişliği ve yüksekliği göre hesaplanır. `GetDialogBaseUnits` Windows işlevi temel birimlerinin geçerli iletişim piksel cinsinden döndürür.) Bu stil lbs_ownerdrawfıxed ile kullanılmamalıdır.|  
+|LBS_WANTKEYBOARDINPUT|Liste kutusu odağı giriş sırada kullanıcının bir tuşuna bastığında her liste kutusunun sahibine wm_vkeytoıtem veya WM_CHARTOITEM iletileri alır. Bu, klavye girdisi özel işleme gerçekleştirmek bir uygulama sağlar.|  
   
 ##<a name="message-box-styles"></a>  İleti kutusu stilleri  
   
-İleti kutusu stilleri uygulamak için [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) öğeleri. Stilleri bileşimini belirtin `nType` parametresinin `AfxMessageBox`. Windows ileti kutusu stilleri hakkında daha fazla bilgi için bkz: [MessageBox işlevi (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505).  
+İleti kutusu stilleri uygulamak için [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) öğeleri. Stilleri bir birleşimi belirler *nTür* parametresinin `AfxMessageBox`. Windows ileti kutusu stilleri hakkında daha fazla bilgi için bkz: [MessageBox işlevi (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505).  
   
 Aşağıdaki ileti kutusu stilleri kullanılabilir.  
   
@@ -370,161 +370,161 @@ Aşağıdaki ileti kutusu stilleri kullanılabilir.
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`MB_ABORTRETRYIGNORE`|İleti kutusu üç pushbuttons içerir:, yeniden deneme, iptal etmek ve yoksay.|  
-|`MB_OK`|İleti kutusu bir basma düğmesi içerir: Tamam.|  
-|`MB_OKCANCEL`|İleti kutusu iki pushbuttons içerir: Tamam ve iptal edin.|  
-|`MB_RETRYCANCEL`|İleti kutusu iki pushbuttons içerir: iptal edin ve yeniden deneyin.|  
-|`MB_YESNO`|İleti kutusu iki pushbuttons içerir: Evet ve Hayır.|  
-|`MB_YESNOCANCEL`|İleti kutusu üç pushbuttons içerir: Evet, Hayır ve iptal edin.|  
+|MB_ABORTRETRYIGNORE|İleti kutusunda üç pushbuttons içerir: durdurmak, yeniden deneyin ve yoksay.|  
+|MB_OK|İleti kutusunda bir basma düğmesi içerir: Tamam.|  
+|MB_OKCANCEL|İleti kutusunda iki pushbuttons içerir: Tamam ve iptal edin.|  
+|MB_RETRYCANCEL|İleti kutusunda iki pushbuttons içerir: iptal edin ve yeniden deneyin.|  
+|MB_YESNO|İleti kutusunda iki pushbuttons içerir: Evet ve Hayır|  
+|MB_YESNOCANCEL|İleti kutusunda üç pushbuttons içerir: Evet, Hayır, iptal etmek.|  
   
 ### <a name="message-box-modality"></a>İleti kutusu Şekil  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`MB_APPLMODAL`|Kullanıcının geçerli pencerede iş devam etmeden önce ileti kutusu yanıt vermesi gerekir. Ancak, kullanıcı diğer uygulamaların windows taşıyın ve bu windows çalışır. Varsayılan değer `MB_APPLMODAL` ne `MB_SYSTEMMODAL` ya da `MB_TASKMODAL` belirtilir.|  
-|`MB_SYSTEMMODAL`|Kullanıcı ileti kutusu yanıt verene kadar tüm uygulamaları askıya alınır. Sistem kalıcı ileti kutuları Acil dikkat gerektiren ve kullanılmamalıdır hataları zararlı kullanıcıya ciddi, bildirmek için kullanılır.|  
-|`MB_TASKMODAL`|Benzer şekilde `MB_APPLMODAL`, ancak Microsoft Foundation class uygulamadaki kullanışlı değil. Bu bayrak, çağıran uygulama veya kullanılabilir bir pencere tanıtıcının yok kitaplığı için ayrılmıştır.|  
+|MB_APPLMODAL|Kullanıcı, iş devam etmeden önce geçerli pencerede ileti kutusuna yanıt vermelidir. Ancak, kullanıcı diğer uygulamaların windows taşıyın ve bu pencerelerde çalışma. MB_SYSTEMMODAL ne MB_TASKMODAL belirtilmezse varsayılan MB_APPLMODAL kullanılır.|  
+|MB_SYSTEMMODAL|Tüm uygulamalar kullanıcı için ileti kutusu yanıt kadar askıya alınır. Sistem kalıcı ileti kutuları, önemli, dikkat gerektiren ve kaçınılmalıdır hataları zararlı kullanıcıya bildirmek için kullanılır.|  
+|MB_TASKMODAL|MB_APPLMODAL, ancak Microsoft Foundation sınıf uygulaması içinde faydalı olmayan benzer. Bu bayrak, çağıran uygulama veya bir pencere tutucu kullanılabilir olmayan kitaplık için ayrılmıştır.|  
   
-### <a name="message-box-icons"></a>İleti kutusu simgeleri  
-  
-|Stil|Açıklama|  
-|-----------|-----------------|  
-|`MB_ICONEXCLAMATION`|İleti kutusu içinde bir ünlem işareti simgesi görünür.|  
-|`MB_ICONINFORMATION`|İleti kutusu bir "g" bir daire oluşan bir simge görüntülenir.|  
-|`MB_ICONQUESTION`|Bir soru işareti simgesi ileti kutusunda görüntülenir.|  
-|`MB_ICONSTOP`|İleti kutusu bir Dur işareti simgesi görünür.|  
-### <a name="message-box-default-buttons"></a>İleti kutusu varsayılan düğmeleri  
+### <a name="message-box-icons"></a>İleti kutusu simgeler  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`MB_DEFBUTTON1`|İlk düğme varsayılandır. İlk düğme Varsayılan sürece her zaman olduğuna dikkat edin `MB_DEFBUTTON2` veya `MB_DEFBUTTON3` belirtilir.|  
-|`MB_DEFBUTTON2`|İkinci düğme varsayılandır.|  
-|`MB_DEFBUTTON3`|Üçüncü düğme varsayılandır.|  
+|MB_ICONEXCLAMATION|İleti kutusunda bir ünlem simgesi görünür.|  
+|MB_ICONINFORMATION|İleti kutusunda bir "ı" bir daire içinde oluşan bir simge görünür.|  
+|MB_ICONQUESTION|İleti kutusunda bir soru işareti simgesi görünür.|  
+|MB_ICONSTOP|İleti kutusunda bir Durma işareti simgesi görünür.|  
+### <a name="message-box-default-buttons"></a>İleti kutusunda varsayılan düğme  
+  
+|Stil|Açıklama|  
+|-----------|-----------------|  
+|MB_DEFBUTTON1|İlk düğmeyi varsayılandır. MB_DEFBUTTON2 veya MB_DEFBUTTON3 belirtilmediği sürece ilk düğmeyi her zaman varsayılan olduğunu unutmayın.|  
+|MB_DEFBUTTON2|İkinci düğme varsayılandır.|  
+|MB_DEFBUTTON3|Alan üçüncü düğmeye varsayılandır.|  
   
 ## <a name="scroll-bar-styles"></a> Kaydırma çubuğu stilleri  
   
-Kaydırma çubuğu stilleri uygulamak için [CScrollBar sınıfı](../../mfc/reference/cscrollbar-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). Kaydırma çubuğu denetim stilleri Windows hakkında daha fazla bilgi için bkz: [kaydırma çubuğu denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533).  
+Kaydırma çubuğu stilleri uygulamak için [CScrollBar sınıfı](../../mfc/reference/cscrollbar-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). Kaydırma çubuğu denetimi stilleri Windows hakkında daha fazla bilgi için bkz: [kaydırma çubuğu denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`SBS_BOTTOMALIGN`|İle kullanılan `SBS_HORZ` stili. Kaydırma çubuğu kenar belirtilen dikdörtgen kenar ile hizalanır `Create` üye işlevi. Kaydırma çubuğu sistem kaydırma çubukları için varsayılan yükseklik sahiptir.|  
-|`SBS_HORZ`|Yatay kaydırma çubuğu belirler. Ne `SBS_BOTTOMALIGN` ya da `SBS_TOPALIGN` stili belirtilmediyse, kaydırma çubuğunun yüksekliği, genişlik ve verilen konumu sahip `Create` üye işlevi.|  
-|`SBS_LEFTALIGN`|İle kullanılan `SBS_VERT` stili. Kaydırma çubuğu sol kenarı sol kenarı belirtilen dikdörtgenin ile hizalanır `Create` üye işlevi. Kaydırma çubuğu sistem kaydırma çubukları için varsayılan genişliğini sahiptir.|  
-|`SBS_RIGHTALIGN`|İle kullanılan `SBS_VERT` stili. Kaydırma çubuğunun sağ kenarı ile belirtilen dikdörtgen sağ köşesine hizalanır `Create` üye işlevi. Kaydırma çubuğu sistem kaydırma çubukları için varsayılan genişliğini sahiptir.|  
-|`SBS_SIZEBOX`|Bir boyut kutusu belirler. Ne `SBS_SIZEBOXBOTTOMRIGHTALIGN` ya da `SBS_SIZEBOXTOPLEFTALIGN` stili belirtilmediyse, boyut kutusu yüksekliğini, genişlik ve verilen konumu sahip `Create` üye işlevi.|  
-|`SBS_SIZEBOXBOTTOMRIGHTALIGN`|İle kullanılan `SBS_SIZEBOX` stili. Boyutu kutusunun sağ alt köşesindeki sağ alt köşedeki belirtilen dikdörtgenin ile hizalanır `Create` üye işlevi. Boyut kutusu sistem boyutu kutuları için varsayılan boyutunu sahiptir.|  
-|`SBS_SIZEBOXTOPLEFTALIGN`|İle kullanılan `SBS_SIZEBOX` stili. Boyutu kutusunun sol üst köşesindeki belirtilen dikdörtgen sol üst köşesindeki ile hizalanır `Create` üye işlevi. Boyut kutusu sistem boyutu kutuları için varsayılan boyutunu sahiptir.|  
-|`SBS_SIZEGRIP`|Aynı `SBS_SIZEBOX`, ancak yükseltilmiş kenarıyla.|  
-|`SBS_TOPALIGN`|İle kullanılan `SBS_HORZ` stili. Kaydırma çubuğunun üst kenarı belirtilen dikdörtgenin üst ucuyla hizalanır `Create` üye işlevi. Kaydırma çubuğu sistem kaydırma çubukları için varsayılan yükseklik sahiptir.|  
-|`SBS_VERT`|Dikey kaydırma çubuğu belirler. Ne `SBS_RIGHTALIGN` ya da `SBS_LEFTALIGN` stili belirtilmediyse, kaydırma çubuğunun yüksekliği, genişlik ve verilen konumu sahip `Create` üye işlevi.|  
+|SBS_BOTTOMALIGN|SBS_HORZ stiliyle kullanılır. Belirtilen dikdörtgen alt kenarı kaydırma çubuğu kenar hizalı `Create` üye işlevi. Kaydırma çubuğunun sistemini kaydırma çubukları için varsayılan yükseklik sahiptir.|  
+|SBS_HORZ|Yatay kaydırma çubuğu belirler. Sbs_bottomalıgn ne sbs_topalıgn stili belirtilirse, yükseklik, genişlik ve verilen konuma kaydırma çubuğu içeren `Create` üye işlevi.|  
+|SBS_LEFTALIGN|SBS_VERT stiliyle kullanılır. Belirtilen dikdörtgenin sol kenarı ile kaydırma çubuğunun sol kenarına hizalanır `Create` üye işlevi. Kaydırma çubuğunun sistemini kaydırma çubukları varsayılan genişliğini sahiptir.|  
+|SBS_RIGHTALIGN|SBS_VERT stiliyle kullanılır. Kaydırma çubuğunun sağ kenarı sağ kenarı belirtilen dikdörtgen hizalanır `Create` üye işlevi. Kaydırma çubuğunun sistemini kaydırma çubukları varsayılan genişliğini sahiptir.|  
+|SBS_SIZEBOX|Bir boyut kutusu belirler. Sbs_sızeboxbottomrıghtalıgn ne sbs_sızeboxtopleftalıgn stili belirtilirse, boyut kutusu yüksekliğini, genişliğini ve verilen konuma sahip `Create` üye işlevi.|  
+|SBS_SIZEBOXBOTTOMRIGHTALIGN|Sbs_sızebox stiliyle kullanılır. Boyutu kutusunun sağ alt köşedeki sağ alt köşedeki belirtilen dikdörtgenin ile hizalanır `Create` üye işlevi. Boyut kutusu sistem boyutu kutuları için varsayılan boyutu vardır.|  
+|SBS_SIZEBOXTOPLEFTALIGN|Sbs_sızebox stiliyle kullanılır. Boyut kutusu sol üst köşesinde ile belirtilen dikdörtgenin sol üst köşesine hizalanır `Create` üye işlevi. Boyut kutusu sistem boyutu kutuları için varsayılan boyutu vardır.|  
+|SBS_SIZEGRIP|Aynı sbs_sızebox, ancak yükseltilmiş Edge.|  
+|SBS_TOPALIGN|SBS_HORZ stiliyle kullanılır. Belirtilen dikdörtgenin üst kenarı ile üst kenarı kaydırma çubuğunun hizalı `Create` üye işlevi. Kaydırma çubuğunun sistemini kaydırma çubukları için varsayılan yükseklik sahiptir.|  
+|SBS_VERT|Dikey kaydırma çubuğu belirler. Sbs_rıghtalıgn ne sbs_leftalıgn stili belirtilirse, yükseklik, genişlik ve verilen konuma kaydırma çubuğu içeren `Create` üye işlevi.|  
   
 ## <a name="static-styles"></a> Statik stiller  
   
-Statik stiller uygulamak için [CStatic sınıfı](../../mfc/reference/cstatic-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CStatic::Create](../../mfc/reference/cstatic-class.md#create). Statik denetim stilleri Windows hakkında daha fazla bilgi için bkz: [statik denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773).  
+Statik stiller uygulamak için [CStatic sınıfı](../../mfc/reference/cstatic-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CStatic::Create](../../mfc/reference/cstatic-class.md#create). Windows statik denetimi stilleri hakkında daha fazla bilgi için bkz: [statik denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`SS_BITMAP`|Statik denetiminde görüntülenecek bir bit eşlem olduğunu belirtir. Verilen metni başka bir kaynak dosyasında tanımlanan bir bit eşlem (dosya adı değil) adıdır. Stil nWidth ve nHeight parametreleri yoksayar; denetimi otomatik olarak kendisini bit eşlem uyum sağlayacak şekilde boyutlandırır.|  
-|`SS_BLACKFRAME`|Pencere çerçeveleri aynı renkle çizilen çerçeve içeren bir kutu belirtir. Siyah varsayılandır.|  
-|`SS_BLACKRECT`|Pencere çerçeveleri çizmek için kullanılan renkle dolu bir dikdörtgen belirtir. Siyah varsayılandır.|  
-|`SS_CENTER`|Basit bir dikdörtgen atar ve dikdörtgende ortalanmış verilen metni görüntüler. Gösterilmeden önce metin biçimlendirilir. Bir satır sonunun genişletir sözcükleri otomatik olarak sonraki ortalanmış satırın başlangıcına sarılır.|  
-|`SS_CENTERIMAGE`|İstemci alanını geri kalanı bit eşlem veya simge statik denetimi istemci alandan daha küçükse, bit eşlem veya simgesine sol üst köşesinde piksel renkle doldurulur, belirtir. Statik denetimi tek satırlık metin içeriyorsa, metnin dikey denetimi istemci alanında ortalanır.|  
-|`SS_ENDELLIPSIS`|veya `SS_PATHELLIPSIS` değiştirir verilen dize parçası üç nokta ile gerekirse, böylece sonuç belirtilen dikdörtgende sığar. <br /><br />Belirleyebileceğiniz `SS_END_ELLIPSIS` karakter dizesi sonunda değiştirmek için ya da `SS_PATHELLIPSIS` dize ortasında karakterlerini değiştirmek için. Dize ters eğik çizgi varsa (\\) karakterleri, `SS_PATHELLIPSIS` sonra son ters eğik çizgi mümkün olduğunca metnini kadar korur.|  
-|`SS_ENHMETAFILE`|Statik denetiminde görüntülenecek bir Gelişmiş Meta dosyası olduğunu belirtir. Verilen metni meta dosyası adıdır. Geliştirilmiş Meta dosyası statik denetimi sabit bir boyutu vardır; Meta dosyası statik denetimin istemci alanını uyacak şekilde ölçeklendirilir.|  
-|`SS_ETCHEDFRAME`|Statik denetimi kullanma çerçeve çizer `EDGE_ETCHED` kenar stili.|  
-|`SS_ETCHEDHORZ`|Kullanarak statik denetimi üst ve alt kenarları çizer `EDGE_ETCHED` kenar stili.|  
-|`SS_ETCHEDVERT`|Sol ve sağ kenarları EDGE_ETCHED kenar stili kullanarak statik denetimi çizer.|  
-|`SS_GRAYFRAME`|Ekran arka plan (Masaüstü) ile aynı renkle çizilen çerçeve içeren bir kutu belirtir. Gri varsayılandır.|  
-|`SS_GRAYRECT`|Ekran arka plan doldurmak için kullanılan renkle dolu bir dikdörtgen belirtir. Gri varsayılandır.|  
-|`SS_ICON`|İletişim kutusunda görüntülenen simge belirler. Verilen metni başka bir kaynak dosyasında tanımlanan bir simge (dosya adı değil) adıdır. `nWidth` Ve `nHeight` parametreleri yok sayılır; simge otomatik olarak kendini boyutlandırır.|  
-|`SS_LEFT`|Basit bir dikdörtgen atar ve verilen metni temizleme sol dikdörtgende görüntüler. Gösterilmeden önce metin biçimlendirilir. Bir satır sonunun genişletir sözcükleri otomatik olarak sonraki flush sol satırın başlangıcına sarılır.|  
-|`SS_LEFTNOWORDWRAP`|Basit bir dikdörtgen atar ve verilen metni temizleme sol dikdörtgende görüntüler. Sekmeleri genişletilmiş ancak sözcükler değil sarılır. Bir satır sonunun genişletiliyor metin kırpılır.|  
-|`SS_NOPREFIX`|Bu stili belirtilmediği sürece, Windows bir ampersan (&) Hızlandırıcı önek karakter olmalı ve denetim metin karakter görürler. Bu durumda, ve işareti kaldırılır ve sonraki karakteri dizesindeki çizilir. Burada bu özelliği istediği değil, metin içeren için statik bir denetimi ise, `SS_NOPREFIX` eklenebilir. Bu statik denetim stilini herhangi tanımlanan statik denetimleri dahil edilebilir. Birleştirebilirsiniz `SS_NOPREFIX` bit düzeyinde OR işleci kullanılarak diğer stilleri ile. Bu, en sık dosya adları ya da ve işareti içerebilir diğer dizeleri statik denetiminde bir iletişim kutusunda görüntülenecek gerektiğinde kullanılır.|  
-|`SS_NOTIFY`|Üst pencere gönderir `STN_CLICKED`, `STN_DBLCLK`, `STN_DISABLE`, ve `STN_ENABLE` bildirim iletileri kullanıcı tıklattığında ya da denetim çift tıklamalar.|  
-|`SS_OWNERDRAW`|Statik denetim sahibi denetimi çizim için sorumlu olduğunu belirtir. Sahip pencereyi alan bir `WM_DRAWITEM` denetimi çizilmesi gerektiğinde iletisi.|  
-|`SS_REALSIZEIMAGE`|Statik bir simge veya bit eşlem denetimi engeller (diğer bir deyişle, statik denetimleri `SS_ICON` veya `SS_BITMAP` stili) yüklü veya çizilmiş gibi yeniden boyutlandırılan gelen. Simge veya bit eşlem hedef alandan daha büyük olursa, görüntü kırpılır.|  
-|`SS_RIGHT`|Basit bir dikdörtgen atar ve verilen metni temizleme sağ dikdörtgende görüntüler. Gösterilmeden önce metin biçimlendirilir. Bir satır sonunun genişletir sözcükleri otomatik olarak sonraki flush sağ satırın başlangıcına sarılır.|  
-|`SS_RIGHTJUST`|Belirleyen bir statik denetimle sağ alt köşesindeki `SS_BITMAP` veya `SS_ICON` kalmasına olduğu zaman denetim boyutlandırılır sabit stili. Yalnızca üst ve sol kenarı yeni bit eşlem veya simge uyum sağlayacak şekilde ayarlanır.|  
-|`SS_SIMPLE`|Basit bir dikdörtgen atar ve tek satırlık metin temizleme sol dikdörtgende görüntüler. Metin satırının kısaltılmış veya herhangi bir şekilde değiştirilmiş. (Denetimin üst pencere veya iletişim kutusu değil işlemelidir `WM_CTLCOLOR` ileti.)|  
-|`SS_SUNKEN`|Statik bir denetimi yarı basık kenarlık çizer.|  
-|`SS_USERITEM`|Kullanıcı tanımlı bir öğeyi belirtir.|  
-|`SS_WHITEFRAME`|Bir çerçeve penceresinde arka plan ile aynı renkle çizilmiş sahip bir kutusu belirtir. Beyaz varsayılandır.|  
-|`SS_WHITERECT`|Pencere arka doldurmak için kullanılan renkle dolu bir dikdörtgen belirtir. Beyaz varsayılandır.|  
-|`SS_WORDELLIPSIS`|Uymayan ve üç nokta eklediği metni keser.|  
+|SS_BITMAP|Bir bit eşlem statik denetimi görüntüleneceğini belirtir. Verilen metni başka bir yerde kaynak dosyasında tanımlanan bir bit eşlem (dosya adı değil) adıdır. Stil nWidth ve nHeight parametreleri yoksayar; Denetim kendisini bit eşlem için uyum sağlayacak şekilde otomatik olarak boyutlandırır.|  
+|SS_BLACKFRAME|Bir kutu ile aynı renge pencere çerçeveleri ile çizilen çerçeve belirtir. Siyah varsayılandır.|  
+|SS_BLACKRECT|Pencere çerçeveleri çizmek için kullanılan renk ile doldurulmuş bir dikdörtgen belirtir. Siyah varsayılandır.|  
+|SS_CENTER|Basit bir dikdörtgen atar ve dikdörtgende ortalanmış verilen metni görüntüler. Gösterilmeden önce metin biçimlendirilir. Bir satır sonundan kapsayacak şekilde genişletilebilir sözcükleri otomatik olarak sonraki ortalanmış satır başlangıcına kadar sarmalanır.|  
+|SS_CENTERIMAGE|İstemci alanını geri kalanı bit eşlem veya simge statik denetimin istemci alanı daha küçükse, bit eşlem ve simge sol üst köşedeki piksel rengi ile doldurulur, belirtir. Statik denetim tek satırlık metin içeriyorsa, metni dikey olarak denetimin istemci alanı içinde ortalanır.|  
+|SS_ENDELLIPSIS|veya verilen dize ile üç nokta, gerekirse, böylece sonucun belirtilen dikdörtgende sığar parçası ss_pathellıpsıs değiştirir. <br /><br />Dizenin sonundaki karakterleri değiştirmek için SS_END_ELLIPSIS veya dizenin ortasındaki karakterleri değiştirmek için ss_pathellıpsıs belirtebilirsiniz. Dize ters eğik çizgi varsa (\\) karakter ss_pathellıpsıs korur metnin kadar ters eğik çizgiden sonra mümkün olduğunca.|  
+|SS_ENHMETAFILE|Statik Denetimde görüntülenecek bir Gelişmiş Meta dosyası olduğunu belirtir. Verilen metni meta dosyası adıdır. Gelişmiş Meta dosyası statik denetim, sabit bir boyutu vardır; Meta dosyası statik denetimin istemci alanı sığacak şekilde ölçeklendirilir.|  
+|SS_ETCHEDFRAME|Çerçevenin EDGE_ETCHED uç stili kullanarak statik denetimin çizer.|  
+|SS_ETCHEDHORZ|EDGE_ETCHED uç stili kullanarak statik denetimi üst ve alt kenarları çizer.|  
+|SS_ETCHEDVERT|EDGE_ETCHED uç stili kullanarak statik denetimin sol ve sağ kenarları çizer.|  
+|SS_GRAYFRAME|Bir kutu ile aynı renge ekranı arka plan (Masaüstü) ile çizilen çerçeve belirtir. Gri varsayılandır.|  
+|SS_GRAYRECT|Ekran arkaplanını doldurmak için kullanılan renk ile doldurulmuş bir dikdörtgen belirtir. Gri varsayılandır.|  
+|SS_ICON|İletişim kutusunda görüntülenen simgeyi belirtir. Verilen metni başka bir yerde kaynak dosyasında tanımlanan bir simge (dosya adı değil) adıdır. *NWidth* ve *nHeight* parametreleri yok sayılır; simge kendisini otomatik olarak boyutlandırır.|  
+|SS_LEFT|Basit bir dikdörtgen atar ve verilen temizleme sol dikdörtgenin metni görüntüler. Gösterilmeden önce metin biçimlendirilir. Bir satır sonundan kapsayacak şekilde genişletilebilir sözcükleri sonraki temizleme sol satır başlangıcına kadar otomatik olarak sarmalanır.|  
+|SS_LEFTNOWORDWRAP|Basit bir dikdörtgen atar ve verilen temizleme sol dikdörtgenin metni görüntüler. Sekmeleri genişletilir ancak sözcük olmayan sarmalanır. Bir satır sonundan genişleten metin kırpılır.|  
+|SS_NOPREFIX|Bu stil belirtilmediği sürece Windows bir ampersan (&) Hızlandırıcı Önek karakterleri olmasını denetimin metninin karakterler görürler. Bu durumda, ve işareti kaldırılır ve dize içindeki sonraki karakteri çizilir. Burada bu özellik istenmediğinde metini kapsamak için statik bir denetimi olması durumunda ss_noprefıx eklenebilir. Bu statik denetim stili, herhangi bir tanımlı statik denetimini dahil edilebilir. Bit düzeyinde OR işleci kullanılarak diğer stillerle ss_noprefıx birleştirebilirsiniz. Bu, çoğunlukla statik bir denetimi bir iletişim kutusunda görüntülenecek dosya adlarını ya da ve işareti içerebilir diğer dizeleri gerektiğinde kullanılır.|  
+|SS_NOTIFY|Kullanıcı tıkladığında veya denetime çift tıklamaları birbirinden ayırma üst pencere STN_CLICKED, STN_DBLCLK STN_DISABLE ve STN_ENABLE bildirim iletileri gönderir.|  
+|SS_OWNERDRAW|Statik denetim sahibi denetimi çizmek için sorumlu olduğunu belirtir. Denetim çizilmesi gerektiğinde, sahip penceresine bir WM_DRAWITEM ileti alır.|  
+|SS_REALSIZEIMAGE|Statik bir simge ya da bit eşlem denetimi (ss_ıcon veya ss_bıtmap stili olan diğer bir deyişle, statik denetimleri) yüklendiğinde veya çizilmiş olarak yeniden boyutlandırılmaya engeller. Görüntü, simge ya da bit eşlem hedef alandan daha büyük olması durumunda, kırpılır.|  
+|SS_RIGHT|Basit bir dikdörtgen atar ve temizleme sağ dikdörtgende verilen metni görüntüler. Gösterilmeden önce metin biçimlendirilir. Bir satır sonundan kapsayacak şekilde genişletilebilir sözcükleri sonraki temizleme sağ satır başlangıcına kadar otomatik olarak sarmalanır.|  
+|SS_RIGHTJUST|Statik bir denetimi ss_bıtmap veya ss_ıcon stiliyle sağ alt köşesindeki kalmasına denetimin ne zaman yeniden boyutlandırıldığını sabit olduğunu belirtir. Yalnızca üst ve sol tarafında, yeni bir bit eşlem ya da simgesini yerleştirmek için ayarlanır.|  
+|SS_SIMPLE|Basit bir dikdörtgen atar ve temizleme sol dikdörtgende metnin tek bir çizgi görüntüler. Metin satırının kısalttık veya hiçbir şekilde değiştirilemez. (Denetimin ana pencerede veya iletişim kutusunda WM_CTLCOLOR iletisi işlem gerekir.)|  
+|SS_SUNKEN|Statik bir denetimi etrafında yarı basık bir kenarlığa çizer.|  
+|SS_USERITEM|Kullanıcı tanımlı bir öğeyi belirtir.|  
+|SS_WHITEFRAME|Pencere arkaplanı aynı renge ile çizilen çerçeve ile bir kutusunu belirtir. Beyaz varsayılandır.|  
+|SS_WHITERECT|Pencere arkaplanını doldurmak için kullanılan renk ile doldurulmuş bir dikdörtgen belirtir. Beyaz varsayılandır.|  
+|SS_WORDELLIPSIS|Üç nokta simgesini ekler ve sığmayan metin keser.|  
   
 ## <a name="window-styles"></a> Pencere stilleri  
   
-Pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/reference/cwnd-class.md) nesneleri. Stilleri bileşimini belirtin `dwStyle` parametresinin [CWnd::Create](../../mfc/reference/cwnd-class.md#create) veya [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). Pencere stilleri Windows hakkında daha fazla bilgi için bkz: [pencere stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600).  
+Pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/reference/cwnd-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CWnd::Create](../../mfc/reference/cwnd-class.md#create) veya [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). Pencere stillerini Windows hakkında daha fazla bilgi için bkz. [pencere stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`WS_BORDER`|Kenarlık sahip bir pencere oluşturur.|  
-|`WS_CAPTION`|Başlık çubuğu sahip bir pencere oluşturur (gelir `WS_BORDER` stili). Kullanılamaz `WS_DLGFRAME` stili.|  
-|`WS_CHILD`|Alt pencere oluşturur. Kullanılamaz `WS_POPUP` stili.|  
-|`WS_CHILDWINDOW`|Aynı `WS_CHILD` stili.|  
-|`WS_CLIPCHILDREN`|Üst pencereye çizerken alt windows tarafından kapladığı alanı dışlar. Üst pencere oluşturduğunuzda kullanılır.|  
-|`WS_CLIPSIBLINGS`|Alt pencereler birbirine kırpar; diğer bir deyişle, belirli alt pencere bir boyama ileti zaman alır `WS_CLIPSIBLINGS` stili güncelleştirilmesi alt pencere bölgesi dışında tüm diğer çakışan alt öğe pencerelerini kırpar. (Varsa `WS_CLIPSIBLINGS` verilmemiş ve alt windows çakışma, alt pencere istemci alanını içinde çizerken komşu alt pencere istemci alanını içinde çizmek olası.) İle kullanılmak üzere `WS_CHILD` yalnızca stili.|  
-|`WS_DISABLED`|Başlangıçta devre dışı bir pencere oluşturur.|  
-|`WS_DLGFRAME`|Bir pencere çift kenarlık ancak hiçbir başlık oluşturur.|  
-|`WS_GROUP`|Bir grup, kullanıcı bir denetimden yanındaki ok tuşlarını kullanarak taşıyabilirsiniz denetimleri ilk denetim belirtir. İle tanımlanmış tüm denetimler `WS_GROUP` stili `FALSE` ilk denetim ait sonra aynı gruba. İle bir sonraki denetime `WS_GROUP` stili sonraki grubu (sonraki başladığı diğer bir deyişle, bir grup uçları) başlatır.|  
-|`WS_HSCROLL`|Yatay kaydırma çubuğu sahip bir pencere oluşturur.|  
-|`WS_ICONIC`|Başlangıçta en aza bir pencere oluşturur. Aynı `WS_MINIMIZE` stili.|  
-|`WS_MAXIMIZE`|Maksimum boyutta bir pencere oluşturur.|  
-|`WS_MAXIMIZEBOX`|Ekranı Kapla düğmesi sahip bir pencere oluşturur.|  
-|`WS_MINIMIZE`|Başlangıçta en aza bir pencere oluşturur. İle kullanılmak üzere `WS_OVERLAPPED` yalnızca stili.|  
-|`WS_MINIMIZEBOX`|Simge Durumuna Küçült düğmesini sahip bir pencere oluşturur.|  
-|`WS_OVERLAPPED`|Bir pencere oluşturur. Bir pencere genellikle bir başlık ve bir sınır vardır.|  
-|`WS_OVERLAPPEDWINDOW`|Bir pencere ile oluşturur `WS_OVERLAPPED`, `WS_CAPTION`, `WS_SYSMENU`, `WS_THICKFRAME`, `WS_MINIMIZEBOX`, ve `WS_MAXIMIZEBOX` stilleri.|  
-|`WS_POPUP`|Açılır pencere oluşturur. Kullanılamaz `WS_CHILD` stili.|  
-|`WS_POPUPWINDOW`|İçeren bir açılır pencere oluşturur `WS_BORDER`, `WS_POPUP`, ve `WS_SYSMENU` stilleri. `WS_CAPTION` Stili birlikte, ile `WS_POPUPWINDOW` Denetim menüsü görünür yapmak için stil.|  
-|`WS_SIZEBOX`|Boyutlandırma kenarlık sahip bir pencere oluşturur. Aynı `WS_THICKFRAME` stili.|  
-|`WS_SYSMENU`|Başlık çubuğunu Denetim menüsü kutusuna sahip bir pencere oluşturur. Yalnızca başlık çubukları ile windows için kullanılır.|  
-|`WS_TABSTOP`|Denetimler için SEKME tuşunu kullanarak üzerinden kullanıcı taşıyabilirsiniz herhangi bir sayıda birini belirtir. Sekme tuşuna kullanıcı tarafından belirtilen bir sonraki denetime gider `WS_TABSTOP` stili.|  
-|`WS_THICKFRAME`|Bir pencere pencere boyutu için kullanılabilir olan kalın çerçeveye oluşturur.|  
-|`WS_TILED`|Bir pencere oluşturur. Bir pencere başlık çubuğu ve bir sınır vardır. Aynı `WS_OVERLAPPED` stili.|  
-|`WS_TILEDWINDOW`|Bir pencere ile oluşturur `WS_OVERLAPPED`, `WS_CAPTION`, `WS_SYSMENU`, `WS_THICKFRAME`, `WS_MINIMIZEBOX`, ve `WS_MAXIMIZEBOX` stilleri. Aynı `WS_OVERLAPPEDWINDOW` stili.|  
-|`WS_VISIBLE`|Başlangıçta görünür bir pencere oluşturur.|  
-|`WS_VSCROLL`|Dikey kaydırma çubuğu sahip bir pencere oluşturur.|  
+|WS_BORDER|Kenarlığı olan bir pencere oluşturur.|  
+|WS_CAPTION|(WS_BORDER stili anlamına gelir) bir başlık çubuğu olan bir pencere oluşturur. WS_DLGFRAME stiliyle kullanılamaz.|  
+|WS_CHILD|Alt pencere oluşturur. WS_POPUP stiliyle kullanılamaz.|  
+|WS_CHILDWINDOW|WS_CHILD stil ile aynıdır.|  
+|WS_CLIPCHILDREN|Ana pencerede çizerken alt pencerelerin kapladığı alanı dışarıda bırakır. Üst pencere oluşturulurken kullanılır.|  
+|WS_CLIPSIBLINGS|Alt pencereleri birbirine kırpar; diğer bir deyişle, belirli bir alt pencere bir boyama iletisi aldığında, diğer tüm çakışan alt pencereleri güncelleştirilecek alt pencerenin binmiş ws_clıpsıblıngs stili kırpar. (Ws_clıpsıblıngs verilmemişse ve alt öğe pencerelerini çakışan alt pencerenin istemci alanı içinde çizdiğinizde komşu alt pencerenin istemci alanı içinde çizmek mümkündür.) Yalnızca WS_CHILD stiliyle için kullanın.|  
+|WS_DISABLED|Başlangıçta devre dışı olan bir pencere oluşturur.|  
+|WS_DLGFRAME|Bir çift kenarlığın ancak başlık bir pencere oluşturur.|  
+|WS_GROUP|Hangi kullanıcının bir denetimden yanındaki ok tuşlarıyla taşıyabilirsiniz Denetim grubunun ilk denetimi belirtir. Sonraki ilk denetim WS_GROUP stili FALSE ile tanımlanan tüm denetimler için aynı gruba ait. WS_GROUP stili sonraki denetim sonraki grubu (sonraki başladığı diğer bir deyişle, bir grubun bittiği) başlatır.|  
+|WS_HSCROLL|Yatay kaydırma çubuğu içeren bir pencere oluşturur.|  
+|WS_ICONIC|Başlangıçta simge durumuna küçültülmüş olan bir pencere oluşturur. Ws_mınımıze stil ile aynıdır.|  
+|WS_MAXIMIZE|En büyük boyutta bir pencere oluşturur.|  
+|WS_MAXIMIZEBOX|Ekranı Kapla düğmesini içeren bir pencere oluşturur.|  
+|WS_MINIMIZE|Başlangıçta simge durumuna küçültülmüş olan bir pencere oluşturur. Yalnızca WS_OVERLAPPED stiliyle için kullanın.|  
+|WS_MINIMIZEBOX|Simge Durumuna Küçült düğmesini içeren bir pencere oluşturur.|  
+|WS_OVERLAPPED|Çakışan bir pencere oluşturur. Çakışan bir pencere genellikle bir açıklamalı alt yazı ve kenarlık içerir.|  
+|WS_OVERLAPPEDWINDOW|WS_OVERLAPPED, ws_captıon, WS_SYSMENU, ws_thıckframe, ws_mınımızebox ve ws_maxımızebox stilleriyle bir çakışan pencere oluşturur.|  
+|WS_POPUP|Bir açılır pencere oluşturur. WS_CHILD stiliyle kullanılamaz.|  
+|WS_POPUPWINDOW|WS_BORDER WS_POPUP ve WS_SYSMENU stilleriyle bir açılır pencere oluşturur. Denetim menüsünün görünür hale ws_popupwındow stiliyle ws_captıon stili birleştirilmelidir.|  
+|WS_SIZEBOX|Boyutlandırma kenarlığı içeren bir pencere oluşturur. Ws_thıckframe stil ile aynıdır.|  
+|WS_SYSMENU|Bir başlık çubuğunda Denetim menüsü kutusu olan bir pencere oluşturur. Yalnızca başlık çubuklarına sahip pencereler için kullanılır.|  
+|WS_TABSTOP|Herhangi bir sayıda üzerinden kullanıcı TAB tuşunu kullanarak taşıyabilirsiniz denetimleri birini belirtir. Sekme tuşunu kullanıcı WS_TABSTOP stili tarafından belirtilen sonraki denetime gider.|  
+|WS_THICKFRAME|Pencereyi boyutlandırmak için kullanılacak kalın kenarlığa sahip bir pencere oluşturur.|  
+|WS_TILED|Çakışan bir pencere oluşturur. Çakışan bir pencere bir başlık çubuğu ve kenarlık içerir. WS_OVERLAPPED stil ile aynıdır.|  
+|WS_TILEDWINDOW|WS_OVERLAPPED, ws_captıon, WS_SYSMENU, ws_thıckframe, ws_mınımızebox ve ws_maxımızebox stilleriyle bir çakışan pencere oluşturur. Ws_overlappedwındow stil ile aynıdır.|  
+|WS_VISIBLE|Başlangıçta görünen bir pencere oluşturur.|  
+|WS_VSCROLL|Dikey kaydırma çubuğu içeren bir pencere oluşturur.|  
   
 ## <a name="extended-window-styles"></a> Genişletilmiş pencere stilleri  
   
-Genişletilmiş pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/reference/cwnd-class.md) nesneleri. Stilleri bileşimini belirtin `dwExStyle` parametresinin [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). Genişletilmiş pencere stilleri Windows hakkında daha fazla bilgi için bkz: [genişletilmiş pencere stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543).  
+Genişletilmiş pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/reference/cwnd-class.md) nesneleri. Stilleri bir birleşimi belirler *dwExStyle* parametresinin [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). Genişletilmiş pencere stilleri Windows hakkında daha fazla bilgi için bkz: [genişletilmiş pencere stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
-|`WS_EX_ACCEPTFILES`|Bu stili ile oluşturulan bir pencere sürükle ve bırak dosyaları kabul edeceğini belirtir.|  
-|`WS_EX_APPWINDOW`|Pencere görünür olduğunda görev üzerine üst düzey bir pencere zorlar.|  
-|`WS_EX_CLIENTEDGE`|Bir pencere 3B bir görünüme sahip belirtir — diğer bir deyişle, basık kenarıyla kenarlık.|  
-|`WS_EX_CONTEXTHELP`|Bir soru işareti penceresinin başlık çubuğunu içerir. Soru işareti, soru işareti işaretçiyle imleç yapılan değişiklikler kullanıcı tıkladığında. Kullanıcı daha sonra alt pencere tıklarsa, alt alan bir `WM_HELP` ileti.|  
-|`WS_EX_CONTROLPARENT`|Sekme tuşunu kullanarak pencerenin alt pencereleri arasında gezinme olanak tanır.|  
-|`WS_EX_DLGMODALFRAME`|(İsteğe bağlı) belirttiğinizde çubuğu bir başlıkla oluşturulabilir çift kenarlık penceresiyle atar `WS_CAPTION` stil bayrağı `dwStyle` parametresi.|  
-|`WS_EX_LAYERED`|Pencere bir [katmanlı pencere](http://msdn.microsoft.com/library/ms632599.aspx#layered). Pencerenin varsa bu stili kullanılamaz bir [sınıf stili](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) herhangi birinin `CS_OWNDC` veya `CS_CLASSDC`. Ancak, [!INCLUDE[win8_first](../../mfc/reference/includes/win8_first_md.md)] desteklemiyor `WS_EX_LAYERED` burada önceki Windows sürümlerinde, yalnızca en üst düzey windows desteği için alt öğe pencerelerini stili.|  
-|`WS_EX_LEFT`|Pencere genel sola hizalı özellikleri sağlar. Bu varsayılandır.|  
-|`WS_EX_LEFTSCROLLBAR`|Dikey kaydırma çubuğu istemci alanını sola yerleştirir.|  
-|`WS_EX_LTRREADING`|Soldan sağa kullanarak pencere metni görüntüler sipariş özellikleri okunurken. Bu varsayılandır.|  
-|`WS_EX_MDICHILD`|MDI alt pencere oluşturur.|  
-|`WS_EX_NOPARENTNOTIFY`|Bu stiliyle oluşturulan alt pencere değil göndereceğiniz belirtir `WM_PARENTNOTIFY` ileti kendi üst penceresine alt pencere oluşturulduğunda veya yok.|  
-|`WS_EX_OVERLAPPEDWINDOW`|Birleştirir `WS_EX_CLIENTEDGE` ve `WS_EX_WINDOWEDGE` stilleri|  
-|`WS_EX_PALETTEWINDOW`|Birleştirir `WS_EX_WINDOWEDGE` ve `WS_EX_TOPMOST` stilleri.|  
-|`WS_EX_RIGHT`|Bir pencere genel sağa hizalı özellikleri sağlar. Bu pencere sınıfı üzerinde bağlıdır.|  
-|`WS_EX_RIGHTSCROLLBAR`|Bir dikey kaydırma çubuğunun (varsa) istemci alanını sağındaki yerleştirir. Bu varsayılandır.|  
-|`WS_EX_RTLREADING`|Sağdan sola okuma kullanarak pencere metni görüntüler sipariş özellikleri.|  
-|`WS_EX_STATICEDGE`|Bir pencere için kullanıcı girişi kabul ediyor musunuz öğeleri kullanılmaya üç boyutlu kenarlık stili oluşturur.|  
-|`WS_EX_TOOLWINDOW`|Kayan araç kullanılmak üzere bir penceredir bir araç penceresi oluşturur. Araç penceresi normal başlık çubuğu kısa bir başlık çubuğu vardır ve pencere başlığı daha küçük bir yazı tipi kullanarak çizilir. Araç penceresi, görev çubuğunda veya kullanıcı ALT + SEKME tuşuna bastığında görüntülenen pencerede görünmez.|  
-|`WS_EX_TOPMOST`|Bu stiliyle oluşturulan bir pencere yukarıdaki tüm nontopmost windows yerleştirilmelidir ve hatta penceresi devre dışı bırakıldığında bunları kalın belirtir. Bir uygulamanın kullanabileceği `SetWindowPos` üye işlevi ekleme veya bu özniteliği Kaldır.|  
-|`WS_EX_TRANSPARENT`|Bu stili ile oluşturulan bir pencere saydam olması gerektiğini belirtir. Diğer bir deyişle, pencerenin tüm pencereleri pencere tarafından yapılabileceği değil. Bu stili ile oluşturulan bir pencere alır `WM_PAINT` altındaki tüm eşdüzey windows yalnızca güncelleştirdikten sonra iletileri.|  
-|`WS_EX_WINDOWEDGE`|Bir pencere kenarlık yükseltilmiş kenarıyla olduğunu belirtir.|  
+|WS_EX_ACCEPTFILES|Bu stil ile oluşturulan pencerenin sürükle ve bırak dosyalarını kabul edeceğini belirtir.|  
+|WS_EX_APPWINDOW|Pencerenin görünür olduğunda görev bir üst düzey penceresinden zorlar.|  
+|WS_EX_CLIENTEDGE|3B görünümü bir pencere sahip olduğunu belirtir; diğer bir deyişle, bir kenarlık basık bir kenarlığa.|  
+|WS_EX_CONTEXTHELP|Pencerenin başlık çubuğundaki bir soru işareti içerir. Kullanıcı, soru işareti, imleç değişiklikleri bir işaretçiyle soru işaretine tıkladığında. Kullanıcı daha sonra bir alt pencere tıklarsa, alt WM_HELP iletisini alır.|  
+|WS_EX_CONTROLPARENT|Sekme tuşunu kullanarak penceresinin alt pencereleri arasında gezinmek kullanıcının sağlar.|  
+|WS_EX_DLGMODALFRAME|Bir pencere bir başlık çubuğu ws_captıon stili bayrağı belirtirseniz ile oluşturulabilir (isteğe bağlı olarak) çift kenarlıklı atayan *dwStyle* parametresi.|  
+|WS_EX_LAYERED|Pencere bir [katmanlı pencere](http://msdn.microsoft.com/library/ms632599.aspx#layered). Bu stil penceresi olup olmadığını kullanılamaz bir [sınıfı stili](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) CS_OWNDC ya da CS_CLASSDC. Ancak, [!INCLUDE[win8_first](../../mfc/reference/includes/win8_first_md.md)] WS_EX_LAYERED stili alt pencereler, burada önceki Windows sürümlerinde, yalnızca üst düzey windows desteği için desteklememektedir.|  
+|WS_EX_LEFT|Pencere genel sola hizalanmış özellikleri sunar. Bu varsayılandır.|  
+|WS_EX_LEFTSCROLLBAR|Dikey kaydırma çubuğu istemci alanını soluna yerleştirir.|  
+|WS_EX_LTRREADING|Soldan sağa kullanarak pencere metni görüntüler sırası özellikleri okunurken. Bu varsayılandır.|  
+|WS_EX_MDICHILD|Bir MDI çocuk penceresini oluşturur.|  
+|WS_EX_NOPARENTNOTIFY|Alt pencere oluşturulduğunda yok veya bu stil ile oluşturulan alt pencerenin wm_parentnotıfy iletisini üst pencereye göndermez belirtir.|  
+|WS_EX_OVERLAPPEDWINDOW|WS_EX_CLIENTEDGE ve ws_ex_wındowedge stillerini birleştirir|  
+|WS_EX_PALETTEWINDOW|Ws_ex_wındowedge ve WS_EX_TOPMOST stilleri birleştirir.|  
+|WS_EX_RIGHT|Bir pencere genel sağa hizalı özellikleri sağlar. Bu pencere sınıfa bağlıdır.|  
+|WS_EX_RIGHTSCROLLBAR|Dikey kaydırma çubuğu (varsa) istemci alanını sağına yerleştirir. Bu varsayılandır.|  
+|WS_EX_RTLREADING|Sağdan sola okuma kullanarak pencere metni görüntüler sipariş özellikleri.|  
+|WS_EX_STATICEDGE|Kullanıcı girişi kabul öğeleri için kullanılması hedeflenen bir üç boyutlu stili bir pencere oluşturur.|  
+|WS_EX_TOOLWINDOW|Kayan araç çubuğu kullanılmak üzere bir pencere bir araç penceresi oluşturur. Araç penceresi olan bir başlık çubuğu, normal bir başlık çubuğundan daha kısadır ve pencere başlığı daha küçük bir yazı tipi kullanılarak çizilir. Araç penceresi, görev çubuğunda veya kullanıcı ALT + TAB tuşuna bastığında görünen penceresinde görünmez.|  
+|WS_EX_TOPMOST|Bu stil ile oluşturulan pencerenin tüm nontopmost windows yerleştirilmelidir ve bile penceresi devre dışı bırakılmışsa bunları kalın belirtir. Bir uygulamanın kullanabileceği `SetWindowPos` ekleme veya kaldırma bu özniteliğin üye işlevi.|  
+|WS_EX_TRANSPARENT|Bu stil ile oluşturulan pencerenin saydam olarak olduğunu belirtir. Diğer bir deyişle, pencerenin tüm pencereleri pencere tarafından yapılabileceği değil. Bu stil ile oluşturulan bir pencere, yalnızca altındaki tüm eşdüzey pencerelerin güncelleştirildikten sonra WM_PAINT iletileri alır.|  
+|WS_EX_WINDOWEDGE|Bir pencere bir kenarlık yükseltilmiş bir kenarlığa sahip olduğunu belirtir.|  
     
 ## <a name="see-also"></a>Ayrıca Bkz.  
   
-[MFC sınıf genel bakış](../../mfc/class-library-overview.md)  
+[MFC sınıfı genel bakış](../../mfc/class-library-overview.md)  
 [CWnd::Create](../../mfc/reference/cwnd-class.md#create)  
 [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)  
 [CEdit::Create](../../mfc/reference/cedit-class.md#create)  
 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)  
 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)  
 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)  
-[CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679)  
+[CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679)  
 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680)  
 [Düğme stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951)  
 [Birleşik giriş kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796)  

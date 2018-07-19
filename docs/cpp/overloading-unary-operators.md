@@ -21,52 +21,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7f242fac0d81c6d46c2d810bf07459fde2fb2ae
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6f20268e9d67ed59e52f3716e9203dadd2a2715d
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421066"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941697"
 ---
 # <a name="overloading-unary-operators"></a>Aşırı Yükleme Birli İşleçleri
 Aşırı yüklenebilen birli işleçler şunlardır:  
   
 1.  `!` ([mantıksal değil](../cpp/logical-negation-operator-exclpt.md))  
   
-2.  `&` ([adres,](../cpp/address-of-operator-amp.md))  
+2.  `&` ([adres](../cpp/address-of-operator-amp.md))  
   
-3.  `~` ([birinin tamamlama](../cpp/one-s-complement-operator-tilde.md))  
+3.  `~` ([birinin tamamlayıcısı](../cpp/one-s-complement-operator-tilde.md))  
   
 4.  `*` ([işaretçiye](../cpp/indirection-operator-star.md))  
   
 5.  `+` ([birli artı](../cpp/additive-operators-plus-and.md))  
   
-6.  `-` ([tekli değilleme](../cpp/additive-operators-plus-and.md))  
+6.  `-` ([tekli olumsuzlama](../cpp/additive-operators-plus-and.md))  
   
-7.  `++` ([artırma](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))  
+7.  `++` ([artışı](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))  
   
 8.  `--` ([azaltma](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))  
   
 9. dönüştürme işleçleri  
   
- Sonek arttırma ve azaltma işleçleri (`++` ve **--**) üzerinde ayrı olarak davranılır [artırmak ve azaltma](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
+ Sonek artırma ve azaltma işleçleri (`++` ve `--`) içinde ayrı ayrı değerlendirilir [artırmak ve azaltma](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
   
- Dönüştürme işleçleri ayrıca ayrı bir konuda ele alınmıştır; bkz: [kullanıcı tanımlı tür dönüşümleri](../cpp/user-defined-type-conversions-cpp.md).  
+ Dönüştürme işleçleri de ayrı bir konuda ele alınmıştır; bkz: [kullanıcı tanımlı tür dönüşümleri](../cpp/user-defined-type-conversions-cpp.md).  
   
  Aşağıdaki kurallar diğer tüm birli işleçler için doğrudur. Birli işleç işlevini statik olmayan bir üye olarak bildirmek için şu biçimde bildirmeniz gerekir:  
   
  `ret-type operator` `op` `()`  
   
- Burada `ret-type` dönüş türü ve `op` yukarıdaki tabloda listelenen işleçleri birinin.  
+ Burada `ret-type` dönüş türü ve `op` yukarıdaki tabloda listelenen işleçlerden.  
   
  Birli işleç işlevini genel bir işlev olarak bildirmek için şu biçimde bildirmeniz gerekir:  
   
  `ret-type operator` `op` (`arg` )  
   
- Burada `ret-type` ve `op` üye işleci işlevleri için açıklanan ve `arg` üzerinde çalışılacak sınıfı türünde bir bağımsız değişken değil.  
+ Burada `ret-type` ve `op` üye işleci işlevleri için tanımlanmıştır ve `arg` üzerinde çalışacağı sınıf türünün bir bağımsız değişken.  
   
 > [!NOTE]
->  Birli operatörlerin dönüş türleriyle ilgili bir kısıtlama yoktur. Örneğin, mantıksal değil için mantıklıdır (`!`) bir tamsayı değeri, ancak bu döndürülecek zorunlu tutulmaz.  
+>  Birli operatörlerin dönüş türleriyle ilgili bir kısıtlama yoktur. Örneğin, mantıksal değil için mantıklıdır (`!`) bir tamsayı değeri, ancak bu döndürülecek zorlanmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

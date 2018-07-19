@@ -16,27 +16,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 882181bd3ac69257b69a79f42e12c2573f2f1da4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0b6fea501724b24c07ab8b2199410a369d62dc9d
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948150"
 ---
 # <a name="const-c"></a>const (C++)
-Bir veri bildirimi değiştirirken **const** anahtar sözcüğü nesne veya değişken değiştirilebilir olmadığını belirtir.  
+Bir veri bildirimi değiştirirken **const** anahtar sözcüğü, nesne veya değişkenin değiştirilebilir olmadığını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      const declaration ;  
+const declaration ;  
 member-function const ;  
 ```  
   
-## <a name="const-values"></a>sabit değerler  
- **Const** anahtar sözcüğü bir değişkenin değeri sabittir ve Programcı bunu değiştirmesine engel olmaya derleyici söyler belirtir.  
+## <a name="const-values"></a>const değerleri  
+ **Const** anahtar sözcüğü, bir değişkenin değeri sabittir ve Programcı bunu değiştirmesini önlemek için derleyiciye belirtir.  
   
-```  
+```cpp 
 // constant_values1.cpp  
 int main() {  
    const int i = 5;  
@@ -45,20 +46,20 @@ int main() {
 }  
 ```  
   
- C++'da, kullandığınız **const** anahtar sözcüğü yerine [#define](../preprocessor/hash-define-directive-c-cpp.md) sabit değerleri tanımlamak için önişlemci yönergesi. İle tanımlanan değerleri **const** tür denetlemesi tabi olan ve sabit ifadeler yerine kullanılabilir. C++'da, bir dizi boyutu belirtebilirsiniz bir **const** şekilde değişkeni:  
+ C++'ta kullanabileceğiniz **const** anahtar sözcüğü yerine [#define](../preprocessor/hash-define-directive-c-cpp.md) sabit değerler tanımlamak üzere önişlemci yönergesi. İle tanımlanan değerleri **const** tür denetimi tabi olan ve sabit ifadeler yerine kullanılabilir. C++'da bir dizinin boyutunu belirtebilirsiniz. bir **const** değişkeni aşağıdaki gibi:  
   
-```  
+```cpp 
 // constant_values2.cpp  
 // compile with: /c  
 const int maxarray = 255;  
 char store_char[maxarray];  // allowed in C++; not allowed in C  
 ```  
   
- C, dış bağlantı için sabit değerler varsayılan olarak bu nedenle bunlar yalnızca kaynak dosyalarında yer alabilir. C++, sabit değerler varsayılan iç bağlantı için hangi üstbilgi dosyalarında görünmesini sağlar.  
+ C'de, dış bağlantısı sabit değerleri varsayılan şekilde bunlar yalnızca kaynak dosyalarında görünebilir. C++'da sabit değerler varsayılan iç bağlantısı için hangi üstbilgi dosyalarında görünmesini sağlar.  
   
- **Const** anahtar sözcüğü işaretçi bildirimleri de kullanılabilir.  
+ **Const** anahtar sözcüğü işaretçi bildirimlerinde de kullanılabilir.  
   
-```  
+```cpp 
 // constant_values3.cpp  
 int main() {  
    char *mybuf = 0, *yourbuf;  
@@ -68,9 +69,9 @@ int main() {
 }  
 ```  
   
- Bir işaretçi olarak bildirilen bir değişken **const** de olarak bildirilen bir işaretçi atanmış **const**.  
+ Olarak bildirilen bir değişken işaretçisi **const** olarak bildirilmiş bir işaretçiye atanabilir **const**.  
   
-```  
+```cpp 
 // constant_values4.cpp  
 #include <stdio.h>  
 int main() {  
@@ -85,23 +86,23 @@ int main() {
 }  
 ```  
   
- İşlev işaretçisi geçirilen parametre değiştirmesini önlemek için sabit veri işaretçileri işlevi parametre olarak kullanabilirsiniz.  
+ İşlev işaretçisi geçirilen bir parametreyi değiştirmesini önlemek için sabit veri işaretçileri işlevi parametre olarak kullanabilirsiniz.  
   
- Olarak bildirilen nesneler için **const**, yalnızca sabit üye işlevleri çağırabilir. Bu sabit nesne hiçbir zaman değişiklik sağlar.  
+ Olarak bildirilen nesneler için **const**, yalnızca sabit üye işlevleri çağırabilir. Bu sabit nesne hiçbir zaman değiştirilmez sağlar.  
   
-```  
+```cpp 
 birthday.getMonth();    // Okay  
 birthday.setMonth( 4 ); // Error  
 ```  
   
- Nonconstant bir nesne için sabit veya nonconstant üye işlevleri çağırabilirsiniz. Üye işlevini kullanarak da aşırı yüklenebilir **const** anahtar sözcüğü; bu sabit ve nonconstant nesneler için çağrılacak işlev farklı bir sürümünü sağlar.  
+ Sabit veya nonconstant üye nonconstant bir nesne için işlevleri çağırabilir. Üye işlevini kullanarak da aşırı yükleyebilirler **const** anahtar sözcüğü; Bu, sabit ve nonconstant nesneler için çağrılacak işlev farklı bir sürümü sağlar.  
   
- Oluşturucular veya Yıkıcılar ile bildiremezsiniz **const** anahtar sözcüğü.  
+ Oluşturucuları veya yıkıcıları ile bildiremezsiniz **const** anahtar sözcüğü.  
   
 ## <a name="const-member-functions"></a>sabit üye işlevleri  
- Üye işlevi ile bildirme **const** anahtar sözcüğü işlevi için adlandırılan nesne değiştirmez "salt okunur" bir işlevi olduğunu belirtir. Sabit üye işlevi herhangi bir statik olmayan veri üyesi değiştiremez veya herhangi bir üyenin sabit olmayan işlevlerini çağırın. Sabit üye işlevi bildirmek için yerleştirin **const** bağımsız değişken listesinin kapanış parantezi sonra anahtar sözcük. **Const** anahtar sözcüğü, hem bildirim hem de tanımı gereklidir.  
+ Bir üye işlevi bildirmek **const** anahtar sözcüğü, işlev için adlandırılan nesnesini değiştirmek olmadığı bir "salt okunur" işlev olduğunu belirtir. Sabit üye işlevi herhangi bir statik olmayan veri üyesi değiştiremez veya herhangi bir üye, sabit olmayan işlevlerini çağırın. Sabit üye işlevi bildirmek için yerleştirin **const** bağımsız değişken listesinin kapatma parantezinden sonra anahtar sözcüğü. **Const** hem bildirim hem de tanımı anahtar sözcüğü gereklidir.  
   
-```  
+```cpp 
 // constant_member_function.cpp  
 class Date  
 {  
@@ -131,35 +132,35 @@ int main()
 }  
 ```  
   
-## <a name="c-and-c-const-differences"></a>C ve C++ const farklılıkları  
- Bir değişken olarak bildirme zaman **const** C kaynak kod dosyasında olarak bunu:  
+## <a name="c-and-c-const-differences"></a>C ve C++ const farkları  
+ Olarak bir değişken bildirdiğinizde **const** C kaynak kodu dosyasında olarak bunu:  
   
-```  
+```cpp 
 const int i = 2;  
 ```  
   
- Ardından bu değişken başka bir modül aşağıdaki gibi kullanabilirsiniz:  
+ Ardından bu değişkeni başka bir modülde şu şekilde kullanabilirsiniz:  
   
-```  
+```cpp 
 extern const int i;  
 ```  
   
- Ancak C++'da aynı davranışı elde etmek üzere bildirmelisiniz, **const** değişken olarak:  
+ Ancak C++'da aynı davranışı sağlamak için bildirmeniz gerekir, **const** değişken olarak:  
   
-```  
+```cpp 
 extern const int i = 2;  
 ```  
   
- Bildirmek isterseniz, bir `extern` C kaynak kodu dosyası, kullanım kullanmak için C++ kaynak kodu dosyasına değişken:  
+ Bildirmek istiyorsanız bir **extern** değişken bir C++ kaynak kod dosyasında kullanmak C kaynak kodu dosyasında, kullanın:  
   
-```  
+```cpp 
 extern "C" const int x=10;  
 ```  
   
- C++ derleyicisi tarafından ad bozma önlemek için.  
+ C++ derleyicisi tarafından ad değiştirmeyi önlemek için.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Üye işlevin parametre listesi, aşağıdaki durumlarda **const** anahtar sözcüğü belirtir işlevi için bunu çağrılır nesneyi değiştirmez.  
+ Bir üye işlevin parametre listesi, takip ederken **const** anahtar sözcüğü işlevin kendisi için çağrıldığında nesnesini değiştirmek olmadığı belirtir.  
   
  Daha fazla bilgi için **const**, aşağıdaki konulara bakın:  
     

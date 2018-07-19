@@ -19,34 +19,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93c4ec0b4d25f1ca0ec03d9aae1dd9e1c16b79a9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 42c275d085434cc8077a0629429c7c0e1cbbfcc3
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948191"
 ---
 # <a name="varianttattach"></a>_variant_t::Attach
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bağlayan bir **değişken** içine nesne `_variant_t` nesne.  
+ Bağlanan bir `VARIANT` içine nesne `_variant_t` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      void Attach(  
-   VARIANT& varSrc   
-);  
+void Attach(VARIANT& varSrc);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *varSrc*  
- A **değişken** için eklenecek nesne `_variant_t` nesne.  
+ A `VARIANT` için eklenecek nesne `_variant_t` nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sahipliğini **değişken** , şifrelenmiş olarak. Bu üye işlevi kapsüllenmiş var olan serbest **değişken**, sağlanan kopyalar **değişken**ve ayarlar kendi **VARTYPE** için `VT_EMPTY` emin olmak için kaynaklar yalnızca değiştirilerek serbest bırakılabilir `_variant_t` yıkıcı.  
+ Sahipliğini `VARIANT` , şifrelenmiş olarak. Bu üye işlevi herhangi kapsüllenmiş varolan yayımlar `VARIANT`, ardından sağlanan kopyalar `VARIANT`ve ayarlar, `VARTYPE` emin olmak için VT_EMPTY kaynaklarını tarafından yalnızca yayımlanabilecek `_variant_t` yıkıcı.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

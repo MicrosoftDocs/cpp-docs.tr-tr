@@ -18,55 +18,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 807754bb13f8302fe9583b6f4a8219e3aea81086
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 273572fd6ad79ba45ae2aabbf91296afd6e8308e
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948117"
 ---
 # <a name="conditional-operator--"></a>Koşullu işleç:? :
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+``` 
   
 expression ? expression : expression  
-```  
+``` 
   
 ## <a name="remarks"></a>Açıklamalar  
- Koşullu işleç (**?:**) (üç işlenen alır) Üçlü işleci. Koşullu işleç aşağıdaki gibi çalışır:  
+ Koşullu işleç (**?:**) (üç işlenen alır) bir Üçlü işleçtir. Koşullu işleç aşağıdaki gibi çalışır:  
   
--   İlk işlenen örtülü olarak `bool` öğesine dönüştürülür. Değerlendirilir ve devam etmeden önce tüm yan etkileri tamamlanır.  
+-   İlk işlenen örtülü olarak dönüştürülür **bool**. Değerlendirilir ve devam etmeden önce tüm yan etkileri tamamlanır.  
   
--   İlk işlenen değerlendirilirse **true** (1), ikinci işlenen değerlendirildiği.  
+-   Birinci işlenenin değerlendirilirse **true** (1), ikinci işlenenin değerlendirilir.  
   
--   İlk işlenen değerlendirilirse **false** (0), üçüncü işleneni değerlendirildiği.  
+-   Birinci işlenenin değerlendirilirse **false** (0), üçüncü işlenen değerlendirilir.  
   
  Koşullu işlecin sonucu, değerlendirilen işlenenin sonucudur — ikinci veya üçüncü. Son iki işlenenden yalnızca biri bir koşullu ifade içinde değerlendirilir.  
   
- Koşullu ifadeler sağdan sola birleşme özelliği içindedir. Birinci işlenen bir entegral veya işaretçi türü olmalıdır. İkinci ve üçüncü işlenenler için aşağıdaki kurallar geçerli olur:  
+ Koşullu ifadeler sağdan sola birleşme özelliği içindedir. Birinci işlenen bir entegral veya işaretçi türü olmalıdır. İkinci ve üçüncü işlenenleri için aşağıdaki kurallar geçerlidir:  
   
--   Her iki işlenen aynı türde varsa, bu tür bir sonucudur.  
+-   Her iki işlenen de aynı türde ise, sonuç o türde olur.  
   
--   Her iki işlenen aritmetik veya numaralandırma türleri, olağan aritmetik dönüştürmeler olursa (ele [standart dönüşümler](standard-conversions.md)) için ortak bir türü dönüştürmek için gerçekleştirilir.  
+-   Her iki işlenen de aritmetik veya numaralandırma, olağan aritmetik dönüştürmeler türlerindeyse (ele [standart dönüştürmeler](standard-conversions.md)) bunları ortak bir türe dönüştürmek için gerçekleştirilir.  
   
--   Her iki işlenen işaretçi türleri olursa ya da bir işaretçi türü ve diğer 0 olarak değerlendirir, sabit bir ifade ise işaretçi dönüşümleri ortak türüne dönüştürmek için gerçekleştirilir.  
+-   Her iki işlenen de işaretçi türlerindeyse veya biri işaretçi türünde ve diğer 0 olarak değerlendirilen sabit bir ifade ise, bunları ortak bir türe dönüştürmek için işaretçi dönüşümleri gerçekleştirilir.  
   
--   Her iki işlenen başvuru türleri varsa, bunları ortak bir türe dönüştürmek için başvuru dönüşümleri gerçekleştirilir.  
+-   Her iki işlenen de başvuru türlerindeyse, bunları ortak bir türe dönüştürmek için başvuru dönüşümleri gerçekleştirilir.  
   
--   Her iki işlenen türü void olursa, ortak türü türü void.  
+-   Her iki işlenen void türündeyse, ortak tür void türüdür.  
   
--   Her iki işlenen aynı kullanıcı tanımlı tür olursa, ortak türü bu türüdür.  
+-   Her iki işlenen de aynı kullanıcı tanımlı türde ise, ortak tür o türüdür.  
   
--   İşlenen farklı türleri sahiptir ve işlenen en az biri kullanıcı tanımlı tür varsa dil kuralları ortak türü belirlemek için kullanılır. (Uyarı aşağıya bakın.)  
+-   İşlenenleri farklı türlere sahip ve en az bir işlenen kullanıcı tanımlı türe sahipse dil kuralları ortak türünü belirlemek için kullanılır. (Aşağıdaki uyarı bakın.)  
   
  Yukarıdaki listede bulunmayan ikinci ve üçüncü işlenenlerin birleşimleri geçersizdir. Hem ikinci hem de üçüncü işlenen aynı türdeyse ve her ikisi de l-değeri ise, sonucun türü ortak türdür ve bir l-değerdir.  
   
 > [!WARNING]
->  İkinci ve üçüncü işlenen türleri aynı değilse, C++ Standart belirtildiği gibi karmaşık tür dönüştürme kurallarını çağrılır. Bu dönüşümleri yapım ve geçici nesneleri yok etme gibi beklenmeyen davranışlara neden olabilir. Bu nedenle, biz güçlü, kullanıcı tanımlı türler kullanın, ardından açıkça her işlenen ortak bir tür cast (2), ya da (1) kullanıcı tanımlı türler koşullu işleç ile işlenen olarak kullanmaktan kaçının veya öneriyoruz.  
+>  İkinci ve üçüncü işlenen türleri aynı değilse, C++ standardında belirtildiği gibi karmaşık tür dönüştürme kurallarını sonra çağrılır. Bu dönüştürmeler, oluşturma ve geçici nesnelerin yok edilmesi gibi beklenmeyen davranışlara neden olabilir. Bu nedenle, biz kesinlikle, kullanıcı tanımlı türler kullanın, ardından açıkça her işlenen ortak bir türe dönüştürün (2), ya da (1) kullanıcı tanımlı türler koşullu işleç içeren işlenen olarak kullanmaktan kaçının veya önerin.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_Expressions_with_the_Conditional_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate conditional operator  
@@ -79,5 +80,5 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Koşullu İfade İşleci](../c-language/conditional-expression-operator.md)

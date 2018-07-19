@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a144f4ff9902a633933ae556df872a9d55a5409
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1d58fc816bea6672309e60a09528b0727c64c6fd
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359251"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880030"
 ---
 # <a name="ccomclassfactory-class"></a>CComClassFactory sınıfı
-Bu sınıf uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi.  
+Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,69 +43,69 @@ class CComClassFactory
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComClassFactory::CreateInstance](#createinstance)|Belirtilen CLSID bir nesne oluşturur.|  
-|[CComClassFactory::LockServer](#lockserver)|Bellek sınıfı fabrikada kilitler.|  
+|[CComClassFactory::CreateInstance](#createinstance)|Belirtilen CLSID'yi bir nesne oluşturur.|  
+|[CComClassFactory::LockServer](#lockserver)|Sınıf üreteci bellekte kilitler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComClassFactory` uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) daha hızlı oluşturulacak yeni nesneler izin vermek için bellek sınıfı fabrikada kilitleme yanı sıra belirli CLSID bir nesne oluşturmak için kullanılan yöntemler içerir arabirimi. **IClassFactory** sistem kayıt defterinde ve CLSID atamak için kayıt her sınıf için uygulanması gerekir.  
+ `CComClassFactory` uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi, yeni nesneler daha hızlı bir şekilde oluşturulmasına izin vermek için bellekte sınıf üreteci kilitleme yanı sıra belirli bir CLSID bir nesne oluşturmak için yöntemleri içerir. `IClassFactory` Sistem kayıt defterinde ve CLSID atamak için kaydettiğiniz her sınıf için uygulanmalıdır.  
   
- ATL nesneleri normalde türetme tarafından bir üreteci elde [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makrosu içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir `CComClassFactory` varsayılan üreteci olarak. Bu varsayılanı geçersiz kılmak için aşağıdakilerden birini belirtin `DECLARE_CLASSFACTORY` *XXX* Sınıf tanımınız makrolarındaki. Örneğin, [DECLARE_CLASSFACTORY_EX](aggregation-and-class-factory-macros.md#declare_classfactory_ex) makrosu üreteci için belirtilen sınıf kullanır:  
+ ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir `CComClassFactory` olarak varsayılan sınıf üreteci. Bu varsayılanı geçersiz kılmak için aşağıdakilerden birini belirtin `DECLARE_CLASSFACTORY` *XXX* sınıf tanımına makrolarındaki. Örneğin, [DECLARE_CLASSFACTORY_EX](aggregation-and-class-factory-macros.md#declare_classfactory_ex) makrosu belirtilen sınıfı için sınıf üreteci kullanır:  
   
  [!code-cpp[NVC_ATL_COM#8](../../atl/codesnippet/cpp/ccomclassfactory-class_1.h)]  
   
- Yukarıdaki sınıf tanımını belirleyen **CMyClassFactory** nesnenin varsayılan üreteci kullanılır. **CMyClassFactory** öğesinden türetilmelidir `CComClassFactory` ve geçersiz kılma `CreateInstance`.  
+ Yukarıdaki sınıf tanımı belirten `CMyClassFactory` nesnenin varsayılan sınıf üreteci kullanılır. `CMyClassFactory` öğesinden türetilmelidir `CComClassFactory` ve geçersiz kılma `CreateInstance`.  
   
- ATL bir üreteci bildirme üç makroları sağlar:  
+ ATL bir sınıf üreteci bildirmek üç makroları sağlar:  
   
 - [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) kullanan [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md), bir lisans ile oluşturma denetler.  
   
-- [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) kullanan [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md), birden çok grupların nesneler oluşturur.  
+- [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) kullanan [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md), içinde birden çok apartmanlar nesneleri oluşturur.  
   
-- [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) kullanan [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md), tek bir yapıları [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) nesnesi.  
+- [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) kullanan [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md), tek bir yapıları [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
 ##  <a name="createinstance"></a>  CComClassFactory::CreateInstance  
- Belirtilen CLSID bir nesne oluşturur ve bu nesne için bir arabirim işaretçisi alır.  
+ Belirtilen CLSID'yi bir nesne oluşturur ve bu nesne için bir arabirim işaretçisi alır.  
   
 ```
 STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pUnkOuter`  
- [in] Nesne bir toplama bir parçası olarak sonra oluşturuldu, `pUnkOuter` dış bilinmeyen olması gerekir. Aksi takdirde, `pUnkOuter` olmalıdır **NULL**.  
+ *pUnkOuter*  
+ [in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.  
   
- `riid`  
- [in] İstenen arabirim IID. Varsa `pUnkOuter` olan olmayan **NULL**, `riid` olmalıdır **IID_IUnknown**.  
+ *riid*  
+ [in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.  
   
- `ppvObj`  
- [out] Arabirim işaretçisi ile tanımlanan bir işaretçi `riid`. Nesne bu arabirim desteklemiyorsa `ppvObj` ayarlanır **NULL**.  
+ *ppvObj*  
+ [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ##  <a name="lockserver"></a>  CComClassFactory::LockServer  
- Artırır ve modül kilit sayısı çağırarak azaltır **_Module::Lock** ve **_Module::Unlock**sırasıyla.  
+ Artırır ve azaltır modülün kilit sayacını çağırarak `_Module::Lock` ve `_Module::Unlock`sırasıyla.  
   
 ```
 STDMETHOD(LockServer)(BOOL fLock);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `fLock`  
- [in] Varsa **TRUE**kilit sayısı artırılır; Aksi takdirde, kilit sayısı düşülür.  
+ *fLock*  
+ [in] TRUE ise kilit sayacını artırılır; Aksi takdirde, kilit sayısı azaltılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **_Module** genel örneğine başvurur [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.  
+ `_Module` global örneğine başvurur [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.  
   
- Çağırma `LockServer` böylece birden fazla nesne hızlı oluşturulabilir üreteci tutmak bir istemcinin sağlar.  
+ Çağırma `LockServer` bir istemci birden çok nesne hızla oluşturulabilen bir sınıf üreteci tutacak sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İn uygulamasına sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
+ [CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
  [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

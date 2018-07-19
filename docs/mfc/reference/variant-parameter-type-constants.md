@@ -45,50 +45,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13820ff4fb07c3743f36ba3ebe33ee56a3a79c7d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d61930bda4560baaf628ce018cc0161527d9d07e
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379866"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885955"
 ---
 # <a name="variant-parameter-type-constants"></a>Değişken Parametre Türü Sabitleri
-Bu konu Microsoft Foundation Class Kitaplığı OLE denetim sınıfları ile kullanılmak üzere tasarlanmış değişken parametre türü belirtmek yeni sabitleri listeler.  
+Bu konu, Microsoft Foundation Class Kitaplığı OLE denetim sınıfları ile kullanılmak üzere tasarlanmış değişken parametre türü gösteren yeni sabitleri listeler.  
   
- Sınıf sabitleri listesi aşağıdadır:  
+ Sınıf sabit listesi verilmiştir:  
   
 ##  <a name="_mfc_variant_data_constants"></a> Değişken veri sabitleri  
   
--   **VTS_COLOR** bir RGB renk değeri temsil etmek için kullanılan bir 32 bit tamsayı.  
+-   VTS_COLOR bir 32 bit tamsayı RGB renk değerleri temsil etmek için kullanılır.  
   
--   **VTS_FONT** gösteren bir işaretçi **IFontDisp** OLE yazı tipi nesnesinin arabirimi.  
+-   VTS_FONT bir işaretçi `IFontDisp` OLE yazı tipi nesnesinin arabirimi.  
   
--   **VTS_HANDLE** bir Windows tanıtıcı değeri.  
+-   VTS_HANDLE A Windows tanıtıcı değeri.  
   
--   **Vts_pıcture** gösteren bir işaretçi `IPictureDisp` OLE resim nesnesinin arabirimi.  
+-   Vts_pıcture bir işaretçi `IPictureDisp` arabirimi OLE Resim nesnesi.  
   
--   **Vts_optexclusıve** radyo düğmeleri gibi denetimleri grubundaki kullanılması hedeflenen bir denetim için kullanılan bir 16 bit değeri. Bu tür kapsayıcı bir denetim, bir grup olduğunu bildiren bir **TRUE** değeri, diğerlerini olmalıdır **FALSE**.  
+-   Bir grup radyo düğmeleri gibi denetimleri kullanılmak üzere tasarlanan bir denetim için kullanılan vts_optexclusıve bir 16 bitlik değer. Bu tür bir denetim grubundaki TRUE değeri varsa, diğerlerini FALSE olmalıdır kapsayıcı söyler.  
   
--   **Vts_trıstate** bir 16 bit işaretli tamsayıyı kullanılan üç olası değerlerden (Seçilen temizlenmiş, kullanılamaz), örneğin, sahip özellikler için bir onay kutusu.  
+-   Vts_trıstate bir 16 bitlik işaretli tamsayı üç olası değer (Seçilen temizlenmiş, kullanılamaz), örneğin, bir onay kutusu birine sahip özellikler için kullanılır.  
   
--   **Vts_xpos_hımetrıc** içinde x ekseni boyunca bir konumu temsil etmek için kullanılan bir 32 bit işaretsiz tamsayıyı **HIMETRIC** birimleri.  
+-   HIMETRIC birimleri x ekseni boyunca bir konumu temsil etmek için kullanılan vts_xpos_hımetrıc bir 32-bit işaretsiz tamsayı.  
   
--   **Vts_ypos_hımetrıc** içinde y ekseni boyunca bir konumu temsil etmek için kullanılan bir 32 bit işaretsiz tamsayıyı **HIMETRIC** birimleri.  
+-   Y ekseni boyunca HIMETRIC birimleri bir konumu temsil etmek için kullanılan vts_ypos_hımetrıc bir 32-bit işaretsiz tamsayı.  
   
--   **Vts_xpos_pıxels** bir 32 bit işaretsiz tamsayıyı x ekseni boyunca konumunu piksel cinsinden göstermek için kullanılır.  
+-   Piksel olarak x ekseni boyunca bir konumu temsil etmek için kullanılan vts_xpos_pıxels bir 32-bit işaretsiz tamsayı.  
   
--   **Vts_ypos_pıxels** piksel cinsinden y ekseni boyunca bir konumu temsil etmek için kullanılan bir 32 bit işaretsiz tamsayıyı.  
+-   Piksel olarak y ekseni boyunca bir konumu temsil etmek için kullanılan vts_ypos_pıxels bir 32-bit işaretsiz tamsayı.  
   
--   **Vts_xsıze_pıxels** bir 32 bit işaretsiz tamsayıyı ekran nesne piksel cinsinden genişliği göstermek için kullanılır.  
+-   Bir ekran nesnesinin piksel cinsinden genişliği temsil etmek için kullanılan vts_xsıze_pıxels bir 32-bit işaretsiz tamsayı.  
   
--   **Vts_ysıze_pıxels** bir 32 bit işaretsiz tamsayıyı ekran nesne piksel cinsinden yüksekliği göstermek için kullanılır.  
+-   Bir ekran nesnesinin piksel cinsinden yüksekliğini temsil etmek için kullanılan vts_ysıze_pıxels bir 32-bit işaretsiz tamsayı.  
   
--   **Vts_xsıze_hımetrıc** bir ekran nesnesinde genişliğini temsil etmek için kullanılan bir 32 bit işaretsiz tamsayıyı **HIMETRIC** birimleri.  
+-   Bir ekran nesnesi HIMETRIC biriminde genişliğini temsil etmek için kullanılan vts_xsıze_hımetrıc bir 32-bit işaretsiz tamsayı.  
   
--   **Vts_ysıze_hımetrıc** bir ekran nesnesinde yüksekliğini temsil etmek için kullanılan bir 32 bit işaretsiz tamsayıyı **HIMETRIC** birimleri.  
+-   Bir ekran nesnesi HIMETRIC biriminde yüksekliğini temsil etmek için kullanılan vts_ysıze_hımetrıc bir 32-bit işaretsiz tamsayı.  
   
     > [!NOTE]
-    >  Ek değişken sabitleri dışında tüm değişken türleri için tanımlanmışsa **VTS_FONT** ve **vts_pıcture**, değişken veri ortak bir işaretçi sağlayın nstant. Kullanarak bu sabitleri adlı **VTS_P** `constantname` kuralı. Örneğin, **VTS_PCOLOR** gösteren bir işaretçidir bir **VTS_COLOR** sabit.  
+    >  Değişken veri sabit bir işaretçi sağlayan tüm değişken türleri için VTS_FONT ve vts_pıcture, hariç olmak üzere ek değişken sabitleri tanımlanmadı. VTS_P kullanarak bu sabitleri adlı`constantname` kuralı. Örneğin, VTS_PCOLOR VTS_COLOR sabiti bir işaretçisidir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h  

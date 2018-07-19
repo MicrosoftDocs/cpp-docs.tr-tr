@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8e7edfb2cb4040238985c6cd78e8f1e5756f4d6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c2830584ea3c54ec0963dc115318be7b7d5880c
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358775"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881220"
 ---
 # <a name="options-atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı Seçenekleri
-Özellik sayfası oluşturmakta olduğunuz iş parçacığı modeli ve toplama düzeyini tanımlamak için sihirbazın bu sayfayı kullanın.  
+Sihirbazın bu sayfasındaki özellik sayfası oluşturmakta olduğunuz iş parçacığı modelini ve toplamayı düzeyini tanımlamak için kullanın.  
   
  **İş parçacığı modeli**  
  Özellik sayfası tarafından kullanılan iş parçacığı modelini belirtir.  
@@ -33,17 +33,17 @@ ms.locfileid: "32358775"
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|`Single`|Özellik sayfası, yalnızca birincil COM iş parçacığı çalıştırır.|  
-|**Grup**|Özellik sayfası herhangi tek iş parçacığı grubu oluşturulabilir. Varsayılan.|  
+|**Tek**|Özellik sayfası, yalnızca birincil COM iş parçacığında çalışır.|  
+|**Grup**|Özellik sayfasını herhangi tek iş parçacığı grubu oluşturulabilir. Varsayılan.|  
   
  **Toplama**  
- Oluşturmakta olduğunuz özellik sayfası toplama desteği ekler. Bkz: [toplama](../../atl/aggregation.md) daha fazla bilgi için.  
+ Oluşturmakta olduğunuz özellik sayfası için toplama desteği ekler. Bkz: [toplama](../../atl/aggregation.md) daha fazla bilgi için.  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**Evet**|Kümelenebilir bir özellik sayfası oluşturun.|  
+|**Evet**|Toplanabilir bir özellik sayfası oluşturun.|  
 |**Yok**|Toplanamaz bir özellik sayfası oluşturun.|  
-|**yalnızca**|Yalnızca toplama oluşturulabilir bir özellik sayfası oluşturun.|  
+|**Yalnızca**|Yalnızca toplama oluşturulan özellik sayfası oluşturun.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL Özellik Sayfası Sihirbazı](../../atl/reference/atl-property-page-wizard.md)   

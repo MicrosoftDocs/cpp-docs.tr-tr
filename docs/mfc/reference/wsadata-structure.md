@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93c98f792e1d72d3e6d4a8e15b8347c653b32f46
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dadc502900285d879f2fd77af69b1fcf08a4ba1e
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380090"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880937"
 ---
 # <a name="wsadata-structure"></a>WSADATA Yapısı
-`WSADATA` Yapısı için bir çağrı tarafından döndürülen Windows Sockets başlatma bilgileri depolamak için kullanılan `AfxSocketInit` genel işlevi.  
+`WSADATA` Yapısı Windows Sockets başlatma bilgileri bir çağrı tarafından döndürülen depolamak için kullanılan `AfxSocketInit` genel işlev.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,33 +42,33 @@ struct WSAData {
   
 #### <a name="parameters"></a>Parametreler  
  *wVersion*  
- Windows Yuvaları DLL kullanmak için arayan beklediğini sürümü Windows Sockets belirtimi.  
+ Windows Yuvaları DLL kullanılacak çağıran bekliyor sürümü Windows yuva belirtimi.  
   
  *wHighVersion*  
- (Ayrıca olarak yukarıdaki kodlanmış) bu DLL destekleyen Windows Sockets belirtimi en yüksek sürümü. Normalde, bu aynıdır **wVersion**.  
+ (Ayrıca yukarıdaki gibi kodlanmış) bu DLL destekleyen Windows yuva belirtimi en yüksek sürümü. Normalde, bu aynıdır *wVersion*.  
   
  *szDescription*  
- Satıcı Kimliği de dahil olmak üzere Windows Sockets uygulaması açıklamasını içine Windows Sockets DLL kopyalar null ile sonlandırılmış ASCII dize. Metin (uzunluğu en fazla 256 karakter) herhangi bir karakter içerebilir, ancak karakter biçimlendirme ve denetim dahil karşı satıcılar dikkatli olmalıdır: bir durum iletisinde (büyük olasılıkla kesilmiş) görüntülemek için bu sokar bir uygulama için en olası kullanımı içindir.  
+ Satıcı Kimliği de dahil olmak üzere Windows Sockets uygulaması açıklamasını Windows Sockets DLL içine kopyalar null ile sonlandırılmış ASCII dize. Metin (en fazla 256 karakter uzunluğunda) tüm karakterleri içerebilir, ancak denetimi içeren ve karakter biçimlendirme karşı satıcıları dikkatli olmalıdır:, bu sokar bir uygulama için büyük olasılıkla (büyük olasılıkla kesilmiş) görüntülemek için bir durum iletisinde kullanılır.  
   
  *szSystemStatus*  
- İçine ilgili durum ya da yapılandırma bilgileri Windows Sockets DLL kopyalar null ile sonlandırılmış ASCII dize. Bilgiler yalnızca veya kullanıcı için yararlı personele destek Windows Sockets DLL Bu alan kullanmalısınız; Uzantı düşünülmemelidir **szDescription** alan.  
+ Durum veya yapılandırma bilgileri Windows Sockets DLL içine kopyalar null ile sonlandırılmış ASCII dize. Bilgiler yalnızca veya kullanıcı için yararlı destek personeli Windows Sockets DLL Bu alan kullanmanız gerekir; bir uzantısı olarak değerlendirilmemelidir *szDescription* alan.  
   
  *iMaxSockets*  
- Tek bir işlem olası açabilirsiniz yuva sayısı. Bir Windows Sockets uygulamasını herhangi bir işlem için ayırma için genel bir yuva havuzu sağlayabilirsiniz; Alternatif olarak, bu yuva için işlem başına kaynakları ayırabilirsiniz. Sayı Windows Sockets DLL ya da ağ yazılımı yapılandırılan yolu da yansıtabilirsiniz. Uygulama yazarları bu numara, Windows Sockets uygulaması uygulama tarafından kullanılabilir olup kaba bir gösterge olarak kullanabilirsiniz. Örneğin, bir X Windows server kontrol **iMaxSockets** ilk kez başlatıldığında: 8'den az ise, uygulama ağ yazılımı yeniden yapılandırmak için kullanıcı söyleyen bir hata iletisi görüntüler. (Bu bir durumdur, **szSystemStatus** metin kullanılan.) Belli ki belirli bir uygulamayı gerçekten ayırabileceğiniz garantisi yoktur **iMaxSockets** yuva bu yana diğer Windows Sockets uygulamaları kullanımda olabilir.  
+ Tek bir işlem büyük olasılıkla açabilirsiniz yuva sayısı. Bir Windows Sockets uygulaması yuva oluşan küresel bir havuz ayırmak için herhangi bir işlem sağlayabilir. Alternatif olarak, bu işlem içi kaynak yuva için tahsis edebilirsiniz. Sayı da Windows Sockets DLL ya da ağ yazılımı yapılandırılan şekilde yansıtabilir. Uygulama yazarları, bu sayı, Windows Sockets uygulaması uygulama tarafından kullanılabilir olup kaba bir gösterge olarak kullanabilirsiniz. Örneğin, bir X Windows server denetleyebilir *iMaxSockets* ilk başlattığınızda: 8'den az ise, uygulama ağ yazılımı yeniden yapılandırmak için kullanıcı söyleyen bir hata iletisi görüntüler. (Bu bir durumda olduğundan *szSystemStatus* metin kullanılan.) Kuşkusuz belirli bir uygulamayı gerçekten tahsis edebileceğiniz bir garanti yoktur *iMaxSockets* diğer Windows Sockets uygulamaları kullanımda olabileceği yuva.  
   
  *iMaxUdpDg*  
- Gönderilen veya Windows Sockets uygulaması tarafından alınan en büyük kullanıcı veri birimi Protokolü (UDP) datagram bayt cinsinden boyutu. Uygulama, sınır uygular, **iMaxUdpDg** sıfırdır. Berkeley yuva birçok uygulamalarında (hangi gerekirse parçalanmış) UDP veri birimleri üzerinde 8192 bayt örtük bir sınırı yoktur. Windows Yuvaları uygulama örneği için parça yeniden birleştirme arabellek tahsisine dayalı bir sınır uygulayabilir. En küçük değerini **iMaxUdpDg** için uyumlu bir Windows Sockets 512 uygulamasıdır. Değeri bağımsız olarak unutmayın **iMaxUdpDg**, daha maksimum aktarım Birimi'nin (MTU) ağ için büyük yayın bir veri birimi göndermeye önerilmez. (Windows Sockets API MTU bulmak için bir mekanizma sağlamaz, ancak en az 512 bayt olmalıdır.)  
+ Bayt gönderilen ya da Windows Sockets uygulama tarafından alınan en büyük kullanıcı veri birimi Protokolü (UDP) veri biriminin boyutu. Uygulama, sınır uygular, *iMaxUdpDg* sıfırdır. Berkeley yuva birçok uygulamalarında (hangi gerekirse parçalanmış) UDP veri birimleri üzerinde 8192 bayt örtük bir sınırlama yoktur. Bir Windows Sockets uygulaması örneği için parçanın yeniden birleştirme arabellek tahsisine dayalı bir sınır uygulayabilir. En küçük değerini *iMaxUdpDg* için uyumlu bir Windows Sockets 512 uygulamasıdır. Değeri bağımsız olarak dikkat *iMaxUdpDg*, daha maksimum aktarım Birimi'nin (MTU) ağ için büyük bir yayın datagram göndermeye önerilmez. (Windows Sockets API'SİNİN MTU bulmak için bir mekanizma sağlamaz, ancak en az 512 bayt olması gerekir.)  
   
  *lpVendorInfo*  
- Bir satıcıya özgü veri yapısı için uzak bir işaretçi. Windows Yuvaları belirtimi kapsamı dışındadır (sağlandıysa) Bu yapı tanımıdır.  
+ Uzak bir satıcıya özgü veri yapısı işaretçisi. Windows Yuvaları belirtimi kapsamı dışındadır (sağlandıysa) Bu yapı tanımıdır.  
   
 > [!NOTE]
->  MFC'de, `WSADATA` yapısı tarafından döndürülen `AfxSocketInit` , arama işlevi, `InitInstance` işlevi. Yapısı almak ve bilgi daha sonra kullanmanız gerekiyorsa, programınıza saklayın.  
+>  MFC'de, `WSADATA` yapısı tarafından döndürülen `AfxSocketInit` , arama işlevi, `InitInstance` işlevi. Yapısı almak ve verilerden bilgi daha sonra kullanmanız gerekiyorsa, programınızda depolayın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** winsock2.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [Afxsocketınit](../../mfc/reference/application-information-and-management.md#afxsocketinit)
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a1c3a8abd39f7f190f36a18e7691475d951cab8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6084882bed6690269fbb926f394159491d22978a
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379492"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885890"
 ---
 # <a name="xform-structure"></a>XFORM Yapısı
 `XFORM` Yapısı aşağıdaki biçime sahiptir:  
@@ -40,19 +40,19 @@ typedef struct  tagXFORM {  /* xfrm */
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `XFORM` Yapısı sayfa alanı dönüştürme alanına world belirtir. **EDx** ve **eDy** üyeleri yatay ve dikey çeviri bileşenleri sırasıyla belirtin. Aşağıdaki tabloda nasıl diğer üyeler, işlemine bağlı olarak kullanıldığı gösterilmektedir:  
+ `XFORM` Yapısı, dünya alanındaki sayfası-space transformation için belirtir. `eDx` Ve `eDy` üyeleri yatay ve dikey çeviri bileşenleri sırasıyla belirtin. Aşağıdaki tablo, diğer üyeleri, bağlı olarak işlem kullanılma gösterir:  
   
 |Çalışma|eM11|eM12|eM21|eM22|  
 |---------------|----------|----------|----------|----------|  
 |`Rotation`|Döndürme açısının kosinüsünü|Döndürme açısının sinüsünü|Negatif döndürme açısının sinüsünü|Döndürme açısının kosinüsünü|  
-|**ölçeklendirme**|Yatay ölçekleme bileşeni|Nothing|Nothing|Dikey ölçekleme bileşeni|  
-|**Bükme**|Nothing|Yatay orantı sabiti|Dikey orantı sabiti|Nothing|  
-|**Yansıma**|Yatay yansıma bileşeni|Nothing|Nothing|Dikey yansıma bileşeni|  
+|`Scaling`|Yatay ölçeklendirme bileşeni|Nothing|Nothing|Dikey ölçeklendirme bileşeni|  
+|`Shear`|Nothing|Yatay orantı sabiti|Dikey orantı sabiti|Nothing|  
+|`Reflection`|Yatay yansıma bileşeni|Nothing|Nothing|Dikey yansıma bileşeni|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** wingdi.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CRgn::CreateFromData](../../mfc/reference/crgn-class.md#createfromdata)
 

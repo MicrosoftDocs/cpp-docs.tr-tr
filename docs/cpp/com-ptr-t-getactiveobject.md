@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ca25ca31475d2870e62d00676e7bf3717c10fa3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ccff761cb9b738de9e2f0debc470746d1482ab56
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414751"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940374"
 ---
 # <a name="comptrtgetactiveobject"></a>_com_ptr_t::GetActiveObject
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Varolan bir nesneyi, verilen örneğine bağlanan bir **CLSID** veya **ProgID**.  
+ Verilen bir nesnenin varolan örneğine için bir `CLSID` veya `ProgID`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,25 +44,25 @@ HRESULT GetActiveObject(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `rclsid`  
- **CLSID** bir nesne.  
+ *rclsid*  
+ `CLSID` Bir nesne.  
   
- `clsidString`  
- Ya da tutan bir UNICODE dizesi bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.  
+ *clsidString*  
+ Bulunduran bir Unicode dizesini bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.  
   
- `clsidStringA`  
- Ya da tutan ANSI kod sayfası kullanılarak birden çok baytlı bir dize bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.  
+ *clsidStringA*  
+ Bulunduran ANSI kod sayfasını kullanarak çok baytlı bir dize bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu üye işlevleri OLE ile kaydedilmiş çalışan bir nesnenin işaretçisini almak için `GetActiveObject`'i çağırır ve ardından bu akıllı işaretçinin arabirim türünü sorgular. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. **Yayın** önceden kapsüllenmiş işaretçi başvuru sayısı azaltma için çağrılır. Bu yordam, başarıyı veya başarısızlığı göstermek için `HRESULT` döndürür.  
+ Bu üye işlevleri OLE ile kaydedilmiş çalışan bir nesnenin işaretçisini almak için `GetActiveObject`'i çağırır ve ardından bu akıllı işaretçinin arabirim türünü sorgular. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır. Bu yordam, başarıyı veya başarısızlığı göstermek için HRESULT döndürür.  
   
--   **GetActiveObject (**`rclsid`**)** varolan bir nesneyi, verilen örneğine bağlanan bir **CLSID**.      
+-   **GetActiveObject (**`rclsid`**)** için verilen bir nesnenin varolan örneğine bir `CLSID`.      
   
--   **GetActiveObject (**`clsidString`**)** varolan ya da tutan bir UNICODE dizesi belirtilen bir nesne örneğine bağlanan bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.      
+-   **GetActiveObject (**`clsidString`**)** bulunduran Unicode dizesi verilmiş nesnenin varolan örneğine için bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.      
   
--   **GetActiveObject (**`clsidStringA`**)** varolan ya da tutan çok baytlı karakter dizesi belirtilen bir nesne örneğine bağlanan bir **CLSID** (başlayarak "**{** ") veya bir **ProgID**.     Çağrıları [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), dize OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
+-   **GetActiveObject (**`clsidStringA`**)** bulunduran çok baytlı karakter dizesi verilmiş nesnenin varolan örneğine bağlanan bir `CLSID` (sürümünden itibaren "**{**") veya `ProgID`.     Çağrıları [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), dizenin OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

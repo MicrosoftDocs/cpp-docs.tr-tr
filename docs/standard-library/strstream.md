@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 882248ab4f9ed692aa36bac5873251867b2fff54
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a1695306ddc53a8150917eef8b27f5d3edce2bf3
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856641"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961870"
 ---
 # <a name="ltstrstreamgt"></a>&lt;strstream&gt;
 
-Ayrılmış bir dizi içinde depolanan sıraları iostreams işlemlerini destekleyen birden fazla sınıf tanımlar `char` nesnesi. Bu tür dizileri kolayca C dizeleri gelen ve giden dönüştürülür.
+Ayrılmış bir dizi içinde depolanan dizileri iostreams işlemleri destekleyen çeşitli sınıfları tanımlar **char** nesne. Tür dizilerini kolayca C dizeleri gelen ve giden dönüştürülür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,7 +36,7 @@ Ayrılmış bir dizi içinde depolanan sıraları iostreams işlemlerini destekl
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne türü `strstream` ile çalışmak `char` *, C dizeleri olduğu. Kullanım [ \<sstream >](../standard-library/sstream.md) türü nesneleriyle çalışmak için [basic_string](../standard-library/basic-string-class.md).
+Türündeki nesneler `strstream` ile çalışmak `char` *, C dizeleri olan. Kullanım [ \<sstream >](../standard-library/sstream.md) türü nesnelerle çalışmayı [basic_string](../standard-library/basic-string-class.md).
 
 > [!NOTE]
 > Sınıflarda \<strstream > kullanım dışı bırakılmıştır. Sınıflarda kullanmayı \<sstream > bunun yerine.
@@ -45,10 +45,10 @@ Nesne türü `strstream` ile çalışmak `char` *, C dizeleri olduğu. Kullanım
 
 |örneği|Açıklama|
 |-|-|
-|[strstreambuf Sınıfı](../standard-library/strstreambuf-class.md)|Öğeleri depolanan öğe dizisi gelen ve giden iletimini denetleyen bir Akış Arabellek sınıf tanımlar bir `char` dizi nesnesi.|
-|[istrstream Sınıfı](../standard-library/istrstream-class.md)|Ayıklama öğelerinin denetleyen bir nesne ve akış arabellek sınıfının kodlanmış nesnelerden sınıfı açıklar [strstreambuf](../standard-library/strstreambuf-class.md).|
-|[ostrstream Sınıfı](../standard-library/ostrstream-class.md)|Sınıfı ve kodlanmış nesneleri öğelerinin ekleme denetimlerini bir nesne sınıfının bir akışı arabelleğe açıklar [strstreambuf](../standard-library/strstreambuf-class.md).|
-|[strstream Sınıfı](../standard-library/strstream-class.md)|Sınıf ekleme ve çıkarma öğelerinin denetleyen bir nesne sınıfının bir Akış Arabellek kullanarak ve kodlanmış nesneleri tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|
+|[strstreambuf Sınıfı](../standard-library/strstreambuf-class.md)|Sınıfı bir dizi öğe depolanan gelen ve giden öğeleri iletimini denetleyen bir akış arabelleğinin açıklar bir **char** dizi nesnesi.|
+|[istrstream Sınıfı](../standard-library/istrstream-class.md)|Öğelerin ayıklama denetleyen bir nesne ve bir akış arabelleğinin sınıfın kodlanmış nesnelerden sınıfı tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|
+|[ostrstream Sınıfı](../standard-library/ostrstream-class.md)|Sınıfı bir akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri sınıfı tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|
+|[strstream Sınıfı](../standard-library/strstream-class.md)|Ekleme ve çıkarma öğelerin denetleyen bir nesne ve bir akış arabelleğinin sınıfı kullanarak kodlanmış nesne sınıfı tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

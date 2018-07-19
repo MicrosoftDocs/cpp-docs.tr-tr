@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0fd249dd7591caaaf62a0b8a698085efedb1f25
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 00ccd9e9ffbab78534c5b6417b7567ba03d007ab
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854541"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963686"
 ---
 # <a name="vectorltboolgtreferenceoperator-bool"></a>vektör&lt;bool&gt;:: reference::operator bool
 
-Örtük bir dönüştürme sağlar `vector<bool>::reference` için `bool`.
+Örtük bir dönüştürme sağlar `vector<bool>::reference` için **bool**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,11 +39,11 @@ operator bool() const;
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Öğesinin Boole değeri [vektör\<bool >](../standard-library/vector-bool-class.md) nesnesi.
+Öğesinin Boolean değerini [vektör\<bool >](../standard-library/vector-bool-class.md) nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`vector<bool>` Nesne bu operatör tarafından değiştirilemez.
+`vector<bool>` Nesnesi bu işleç tarafından değiştirilemez.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -53,5 +53,5 @@ operator bool() const;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[vektör\<bool >:: sınıfı başvurusu](../standard-library/vector-bool-reference-class.md)<br/>
+[vektör\<bool >:: reference sınıfı](../standard-library/vector-bool-reference-class.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

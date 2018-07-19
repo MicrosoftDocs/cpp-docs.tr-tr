@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e3955fcda665e08e5415652a1e8f1f232d0fe13
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dbcbd73f1a4a6d80ed30a5d70ca43d5fe45677f9
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412270"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941723"
 ---
 # <a name="comerrorhresulttowcode"></a>_com_error::HRESULTToWCode
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- 32-bit eşlemeleri `HRESULT` için 16 bit `wCode`.  
+ 16 bit için 32 bitlik HRESULT eşler `wCode`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,16 +38,16 @@ ms.locfileid: "32412270"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `hr`  
- 32 bit `HRESULT` 16 bit eşlenmesi `wCode`.  
+ *İK*  
+ 16 bit eşlenmesi 32 bitlik HRESULT `wCode`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- 16 bit `wCode` 32-bit eşlenen `HRESULT`.  
+ 16-bit `wCode` 32 bitlik HRESULT eşlenmiş.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bkz: [_com_error::WCode](../cpp/com-error-wcode.md) daha fazla bilgi için.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_error::WCode](../cpp/com-error-wcode.md)   

@@ -15,24 +15,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66fd08215c3849bf487578b28b1824afbec14c52
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 27e78f7429c4d2a0f83ff7184460eb2ae69df129
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38960992"
 ---
 # <a name="assignment"></a>Atama
-Atama işleci (**=**) kesinlikle olarak bakıldığında, ikili işleç değil. Bildiriminden herhangi diğer ikili işleç için aşağıdaki istisnalar benzerdir:  
+Atama işleci (**=**), NET olarak söylemek gerekirse, ikili bir işleçtir. Aşağıdaki istisnalar herhangi diğer ikili işlecine bildiriminden aynıdır:  
   
--   Statik olmayan üye işlevi olmalıdır. Hayır `operator=` dahil olmayan işlev olarak bildirilebilir.  
+-   Statik olmayan üye işlevi olmalıdır. Hayır **işleç =** değiştiricilere işlevi olarak bildirilebilir.  
   
 -   Türetilmiş sınıflar tarafından alınmadı.  
   
--   Varsayılan `operator=` işlevi tarafından oluşturulabilir sınıf türleri derleyici hiçbiri yoksa. (Varsayılan hakkında daha fazla bilgi için `operator=` İşlevler, bkz: [Memberwise atama ve başlatma](http://msdn.microsoft.com/en-us/94048213-8b49-4416-8069-b1b7a6f271f9).)  
+-   Varsayılan **işleç =** işlevi oluşturulabilir sınıf türleri için derleyici tarafından yoksa.  
   
- Aşağıdaki örnek, bir atama işleci bildirmeyi gösterilmektedir:  
+ Aşağıdaki örnek, bir atama işleci bildirmek verilmektedir:  
   
-```  
+```cpp 
 // assignment.cpp  
 class Point  
 {  
@@ -55,9 +56,9 @@ int main()
 }  
 ```  
   
- Sağlanan bağımsız değişken ifadesinin sağ tarafında olduğunu unutmayın. İşleç ataması tamamlandıktan sonra sol tarafındaki değerini döndüren atama işleci davranışını korumak için nesne döndürür. Bu ifadeler gibi yazma sağlar:  
+ Sağlanan bağımsız değişken ifadesinin sağ tarafı olduğunu unutmayın. İşleci atama işlemi tamamlandıktan sonra sol tarafındaki değerini döndüren bir atama işleci davranışı korumak için nesneyi döndürür. Bu ifadeler gibi yazma sağlar:  
   
-```  
+```cpp 
 pt1 = pt2 = pt3;  
 ```  
   

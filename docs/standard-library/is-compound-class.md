@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d062912a441f16e9eb26415287fbbb574b829e9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 91132492ab6173d9d462eeb74d6393dce41f6833
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843814"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961597"
 ---
 # <a name="iscompound-class"></a>is_compound Sınıfı
 
-Belirtilen tür temel değilse testleri.
+Belirtilen tür temel olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +37,11 @@ struct is_compound;
 
 ### <a name="parameters"></a>Parametreler
 
-`Ty` Sorgulanacak türü.
+*Ty* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneğini tutan `false` varsa türünü `Ty` temel türü (varsa, diğer bir deyişle, [is_fundamental](../standard-library/is-fundamental-class.md)\<Ty > tutan `true`); Aksi takdirde, bu `true`. Bu nedenle, koşul tutan `true` varsa `Ty` olan bir dizi türü, bir işlev türü için bir işaretçi `void` veya bir nesneye veya işlevi bir başvuru, sınıfı, bir UNION, bir numaralandırma veya işaretçi statik olmayan sınıf üyesi için bir veya bir  *MS tam* bunlardan birini biçimidir.
+Bir tür koşulu örneğini **false** varsa türünü *Ty* temel türü (varsa, diğer bir deyişle, [is_fundamental](../standard-library/is-fundamental-class.md)\<Ty > tutar  **doğru**); Aksi halde tutan **true**. Bu nedenle, koşul tutan **true** varsa *Ty* olan bir dizi türü, bir işlev türü, işaretçi **void** veya bir nesneye veya bir işlev, başvuru, bir sınıf, UNION, bir numaralandırma veya bir Statik olmayan sınıf üye işaretçisi veya *cv nitelenmiş* bunlardan birinin biçimi.
 
 ## <a name="example"></a>Örnek
 

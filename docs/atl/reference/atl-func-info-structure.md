@@ -1,5 +1,5 @@
 ---
-title: _ATL_FUNC_INFO yapısı | Microsoft Docs
+title: _Atl_func_ınfo yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa81e83d353c542ea5b2b6e8e5e8fe32f7c57606
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 8852deacfd36ba988b9b31bdad363c05aee12b6e
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255628"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882214"
 ---
-# <a name="atlfuncinfo-structure"></a>_ATL_FUNC_INFO yapısı
-Bir yöntemi veya özelliği üzerinde görüntüleme arabirimi tanımlamak için kullanılan tür bilgileri içerir.  
+# <a name="atlfuncinfo-structure"></a>_Atl_func_ınfo yapısı
+Bir yöntem veya özellik üzerinde bir dispinterface açıklamak için kullanılan tür bilgilerini içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,23 +41,23 @@ struct _ATL_FUNC_INFO {
 ```  
   
 ## <a name="members"></a>Üyeler  
- **cc**  
- Çağırma kuralı. Bu yapı ile kullanırken [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) sınıfı, bu üye olmalıdır **CC_STDCALL**. `CC_CDECL` Windows CE için desteklenen tek seçenek `CALLCONV` alanını `_ATL_FUNC_INFO` yapısı. Başka bir değer desteklenmiyor böylece davranışını tanımlanmamış.  
+ `cc`  
+ Çağırma kuralı. Bu yapı ile kullanırken [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md) sınıfı, bu üye CC_STDCALL olması gerekir. `CC_CDECL` Windows CE için desteklenen tek seçenek `CALLCONV` alanını `_ATL_FUNC_INFO` yapısı. Başka bir değer desteklenmiyor bu nedenle, davranışı tanımsız.  
   
- **vtReturn**  
- Değişken türü işlevinin dönüş değeri.  
+ `vtReturn`  
+ Değişken türü işlevin dönüş değeri.  
   
- **nParams**  
+ `nParams`  
  İşlev parametreleri sayısı.  
   
- **pVarTypes**  
- İşlev parametreleri VARIANT türleri dizisi.  
+ `pVarTypes`  
+ Değişken işlevi parametre türleri dizisi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Dahili olarak, bir tür kitaplığından alınan bilgileri tutmak için bu yapı ATL kullanır. Bu yapı ile kullanılan bir olay işleyicisinin türü bilgilerini sağlarsanız, doğrudan işlemek gerekebilir [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) sınıfı ve [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) makrosu.  
+ Dahili olarak, ATL tür kitaplığından alınan bilgileri tutmak için bu yapıyı kullanır. İle kullanılan bir olay işleyicisi için tür bilgilerini sağlarsanız, bu yapı doğrudan düzenlemezsiniz gerekebilir [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md) sınıfı ve [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) makrosu.  
   
 ## <a name="example"></a>Örnek  
- IDL içinde tanımlanmış bir görüntüleme arabirimi yöntemi verilen:  
+ IDL içinde tanımlanan bir görüntü arabirimi yöntemi verilen:  
   
  [!code-cpp[NVC_ATL_Windowing#139](../../atl/codesnippet/cpp/atl-func-info-structure_1.idl)]  
   
@@ -66,11 +66,11 @@ struct _ATL_FUNC_INFO {
  [!code-cpp[NVC_ATL_Windowing#140](../../atl/codesnippet/cpp/atl-func-info-structure_2.h)]  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcom.h  
+ Üstbilgi: atlcom.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
   [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)  
- [IDispEventSimpleImpl sınıfı](../../atl/reference/idispeventsimpleimpl-class.md)   
+ [Idispeventsimpleımpl sınıfı](../../atl/reference/idispeventsimpleimpl-class.md)   
  [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)
 
 

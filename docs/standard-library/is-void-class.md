@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13fee96611e2a2618de6ea6e1671ece9986a22d9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 35a40b016fa8fb25782393ea462b5cff2a3c3fac
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857590"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963259"
 ---
 # <a name="isvoid-class"></a>is_void Sınıfı
 
@@ -37,11 +37,11 @@ struct is_void;
 
 ### <a name="parameters"></a>Parametreler
 
-`T` Sorgulanacak türü.
+*T* Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü koşulu örneği doğru tutan türü `T` olan `void` veya MS tam bir tür `void`, aksi takdirde false tutar.
+Karşılaştırmasının bir örneği true tutan türü *T* olduğu **void** veya cv nitelenmiş bir tür **void**, aksi takdirde false tutar.
 
 ## <a name="example"></a>Örnek
 

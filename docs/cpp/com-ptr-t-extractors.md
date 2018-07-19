@@ -30,14 +30,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1343d7dd5f6a35bb222b731294ec897116b9e4b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b0bfe0cdb5ea9dd524f2e81fcb2719bf40001758
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948153"
 ---
 # <a name="comptrt-extractors"></a>_com_ptr_t Ayıklayıcıları
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Kapsüllenmiş COM arabirimi işaretçisini ayıklayın.  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 05/03/2018
   
 ```  
   
-      operator Interface*( ) const throw( );   
+operator Interface*( ) const throw( );   
 operator Interface&( ) const;   
 Interface& operator*( ) const;   
 Interface* operator->( ) const;   
@@ -55,19 +56,19 @@ operator bool( ) const throw( );
   
 ## <a name="remarks"></a>Açıklamalar  
   
--   **işleç arabirimi\***  olabilir kapsüllenmiş arabirim işaretçisi döndürür **NULL**.  
+-   **işleç arabirimi\***  NULL olabilecek kapsüllenmiş arabirim işaretçisini döndürür.  
   
--   **işleç arabirimi &** kapsüllenmiş arabirim işaretçisi bir başvuru döndürür ve işaretçi ise hata sorunlarını **NULL**.  
+-   **işleç arabirimi &** kapsüllenmiş arabirim işaretçisini bir başvuru döndürür ve işaretçi NULL ise, bir hata verir.  
   
--   **İşleç\***  bir akıllı işaretçi nesne dizinindeymiş gibi başvuru yapıldı zaman gerçek kapsüllenmiş arabirimi üstlenmesini sağlar.  
+-   **İşleç\***  akıllı işaretçi nesnesinin gibi başvurusu kaldırıldığında gerçek bir kapsüllenmiş arabirim davranmasını sağlar.  
   
--   **-> işleci** bir akıllı işaretçi nesne dizinindeymiş gibi başvuru yapıldı zaman gerçek kapsüllenmiş arabirimi üstlenmesini sağlar.  
+-   **operator ->** akıllı işaretçi nesnesinin gibi başvurusu kaldırıldığında gerçek bir kapsüllenmiş arabirim davranmasını sağlar.  
   
--   **operator &** ile değiştirerek tüm kapsüllenmiş arabirimi işaretçisi serbest **NULL**ve kapsüllenmiş işaretçi adresini döndürür. Bu akıllı işaretçiyi olan bir işlev adresiyle geçirilmesini sağlar bir **çıkışı** parametresi üzerinden bir arabirim işaretçisi döndürür.  
+-   **işleç &** NULL'ile değiştirerek, herhangi bir kapsüllenmiş arabirim işaretçisini serbest bırakır ve kapsüllenmiş işaretçiye adresini döndürür. Bu akıllı işaretçinin sahip bir işleve adres tarafından geçirilecek sağlar bir *kullanıma* bir arabirim işaretçisi döndürmesini parametresi.  
   
--   **işleç bool değeri** koşullu ifadesinde kullanılabilmesi için bir akıllı işaretçi nesnesi sağlar. Bu işleç döndürür **true** işaretçinin değilse **NULL**.  
+-   **işleç bool değeri** akıllı işaretçi nesnesinin koşullu ifadede kullanılmasını sağlar. Bu işleç, işaretçi NULL değilse, TRUE döndürür.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

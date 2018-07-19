@@ -16,22 +16,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70ccd73980295bdda67a4c49d034b6d185d2d93c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c8aca9422c4798cd798d048ce42443c4f38bd170
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948107"
 ---
 # <a name="comptrtcreateinstance"></a>_com_ptr_t::CreateInstance
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Verilen bir nesne yeni bir örneğini oluşturur bir **CLSID** veya **ProgID**.  
+ Verilen nesne yeni bir örneğini oluşturur bir `CLSID` veya `ProgID`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
   
-      HRESULT CreateInstance(  
+HRESULT CreateInstance(  
    const CLSID& rclsid,  
    IUnknown* pOuter=NULL,  
    DWORD dwClsContext = CLSCTX_ALL   
@@ -49,31 +50,31 @@ HRESULT CreateInstance(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `rclsid`  
- **CLSID** bir nesne.  
+ *rclsid*  
+ `CLSID` Bir nesne.  
   
- `clsidString`  
- Ya da tutan bir UNICODE dizesi bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.  
+ *clsidString*  
+ Bulunduran bir Unicode dizesini bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.  
   
- `clsidStringA`  
- Ya da tutan ANSI kod sayfası kullanılarak birden çok baytlı bir dize bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.  
+ *clsidStringA*  
+ Bulunduran ANSI kod sayfasını kullanarak çok baytlı bir dize bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.  
   
- `dwClsContext`  
+ *dwClsContext*  
  Yürütülebilir kodu çalıştırmak için bağlam.  
   
- `pOuter`  
+ *pOuter*  
  İçin dış bilinmeyen [toplama](../atl/aggregation.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu üye işlevleri çağırma `CoCreateInstance` yeni bir COM nesnesi ve ardından bu akıllı işaretçinin arabirim türü için sorgular oluşturmak için. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. **Yayın** önceden kapsüllenmiş işaretçi başvuru sayısı azaltma için çağrılır. Bu yordam, başarıyı veya başarısızlığı göstermek için `HRESULT` döndürür.  
+ Bu üye işlevleri çağırma `CoCreateInstance` yeni bir COM nesnesi ve ardından bu akıllı işaretçinin arabirim türünü sorgularını oluşturmak için. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır. Bu yordam, başarıyı veya başarısızlığı göstermek için HRESULT döndürür.  
   
--   **CreateInstance (** `rclsid` **,**`dwClsContext`**)** verilen bir nesne yeni çalışan bir örneğini oluşturur bir **CLSID**.        
+-   **CreateInstance (***rclsid* **,***dwClsContext***)** bir verilmişbirnesneninyeniçalışanbirörneğinioluşturur`CLSID`.        
   
--   **CreateInstance (** `clsidString` **,**`dwClsContext`**)** ya da tutan bir UNICODE dizesi belirtilen bir nesne yeni çalışan bir örneğini oluşturur bir **CLSID**(başlayarak "**{**") veya bir **ProgID**.        
+-   **CreateInstance (***clsidString* **,***dwClsContext***)** verilmiş bir nesnenin yeni çalışan bir örneğini oluşturur bir Bulunduran Unicode dizesi bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.        
   
--   **CreateInstance (** `clsidStringA` **,**`dwClsContext`**)** ya da tutan çok baytlı karakter dizesi belirtilen bir nesne yeni çalışan bir örneğini oluşturur bir **CLSID**  (başlayarak "**{**") veya bir **ProgID**.       Çağrıları [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), dize OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
+-   **CreateInstance (***clsidStringA* **,***dwClsContext***)** verilmiş bir nesnenin yeni çalışan bir örneğini oluşturur bir bulunduran çok baytlı karakter dizesi bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.       Çağrıları [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), dizenin OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

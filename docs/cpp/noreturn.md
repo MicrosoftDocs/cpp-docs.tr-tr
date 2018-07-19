@@ -17,25 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90fab865a02b7ad00bd25b6d74f2d19b2678875c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2323af14472741901c4e4b7d8fe27e56e1d4d4f0
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948215"
 ---
 # <a name="noreturn"></a>noreturn
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Bu `__declspec` özniteliği bir işlevin dönmeyeceğini derleyiciye bildirir. Sonuç olarak, derleyici, bilir yapılan bir çağrı aşağıdaki kod bir **__declspec(noreturn)** işlevidir erişilemiyor.  
+ Bu **__declspec** öznitelik derleyiciye bir işlev değil döndürür. Sonuç olarak derleyici olduğunu bilir çağrıyı izleyen kodu bir **__declspec(noreturn)** işlevi erişilemez.  
   
- Derleyici bir işlevi değer döndürmeyen bir denetim yolu ile bulursa, (C4715) uyarısı veya hata iletisi (C2202) oluşturur. Denetim yolu hiçbir zaman döndüren bir işlev nedeniyle ulaşılamıyorsa kullanabileceğiniz **__declspec(noreturn)** bu uyarı veya hata önlemek için.  
+ Derleyici bir işlevi değer döndürmeyen bir denetim yolu ile bulursa, (C4715) uyarısı veya hata iletisi (C2202) oluşturur. Hiçbir zaman döndüren bir işlev nedeniyle denetim yoluna ulaşılamıyorsa kullanabileceğiniz **__declspec(noreturn)** bu uyarı veya hatayı önlemek için.  
   
 > [!NOTE]
->  Ekleme **__declspec(noreturn)** dönmek için beklenen bir işleve tanımlanmamış davranışlara neden olabilir.  
+>  Ekleme **__declspec(noreturn)** dönmesi beklenen bir işleve tanımsız davranışlara neden olabilir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, **başka** yan tümcesi bir dönüş ifadesi içermiyor.  Bildirme `fatal` olarak **__declspec(noreturn)** bir hata veya uyarı iletisi önler.  
+ Aşağıdaki örnekte, **başka** yan tümcesi bir dönüş deyimi içermez.  Bildirme `fatal` olarak **__declspec(noreturn)** bir hata veya uyarı iletisi önler.  
   
-```  
+```cpp 
 // noreturn2.cpp  
 __declspec(noreturn) extern void fatal () {}  
   

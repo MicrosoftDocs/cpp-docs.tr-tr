@@ -22,50 +22,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2999596fe30afca4c9945efc34a8537e9f45e14a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2f78a122837fc2cb9a89083d5be8fd2b488c1772
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939230"
 ---
 # <a name="main-program-startup"></a>main: Program Başlatma
-Adlı özel bir işlev `main` yürütme tüm C ve C++ programları için başlangıç noktasıdır. Aynılarını kod yazma varsa [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] kullanabileceğiniz programlama modeli, `wmain`, joker karakter sürümü olduğu `main`.  
+Adlı bir özel işlev `main` yürütme tüm C ve C++ programları için başlangıç noktasıdır. Aynılarını kod yazma varsa [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] kullanabileceğiniz programlama modeli, `wmain`, geniş karakter sürümünü olduğu `main`.  
   
- `main` Derleyici tarafından işlevi önceden değil. Program metinde sağlanmalıdır.  
+ `main` İşlevi derleyici tarafından önceden değil. Program metni sağlanmalıdır.  
   
  Bildirim sözdizimi `main` olduğu  
   
-```  
+```cpp 
 int main();  
 ```  
   
  veya isteğe bağlı olarak,  
   
-```  
+```cpp 
 int main(int argc, char *argv[], char *envp[]);  
 ```  
   
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Bildirim sözdizimi için `wmain` aşağıdaki gibidir:  
+ Bildirim sözdizimi `wmain` aşağıdaki gibidir:  
   
-```  
+```cpp 
 int wmain( );  
 ```  
   
  veya isteğe bağlı olarak,  
   
-```  
+```cpp 
 int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);  
 ```  
   
- Aynı zamanda `_tmain`, TCHAR.h içinde tanımlanır. `_tmain` çözümler `main` _UNICODE tanımlanmadığı sürece. Bu durumda, `_tmain` çözümler `wmain`.  
+ Ayrıca `_tmain`, TCHAR.h içinde tanımlanır. `_tmain` çözümler `main` _UNICODE tanımlanmış sürece. Bu durumda, `_tmain` çözümler `wmain`.  
   
- Alternatif olarak, `main` ve `wmain` işlevleri döndürme olarak bildirilebilir `void` (dönüş değeri yok). Bildirirseniz `main` veya `wmain` döndürme olarak `void`, kullanarak üst işleme veya işletim sistemi için bir çıkış kodu döndüremez bir [dönmek](../cpp/return-statement-in-program-termination-cpp.md) deyimi. Döndürülecek bir çıkış kodu ne zaman `main` veya `wmain` olarak bildirilen `void`, kullanmalısınız [çıkmak](../cpp/exit-function.md) işlevi.  
+ Alternatif olarak, `main` ve `wmain` olarak döndüren işlevleri bildirilebilir **void** (dönüş değeri). Bildirirseniz `main` veya `wmain` döndüren olarak **void**, kullanarak üst işleme ya da işletim sistemi için bir çıkış kodu döndürülemez bir [dönüş](../cpp/return-statement-in-program-termination-cpp.md) deyimi. Döndürülecek bir çıkış kodu ne zaman `main` veya `wmain` olarak bildirilen **void**, kullanmalısınız [çıkmak](../cpp/exit-function.md) işlevi.  
   
-**SON Microsoft özel**  
- Türleri için `argc` ve `argv` dil tarafından tanımlanır. Adları `argc`, `argv`, ve `envp` geleneksel ancak derleyici tarafından gerekli değildir. Daha fazla bilgi ve bir örnek için bkz: [bağımsız değişken tanımları](../cpp/argument-definitions.md).  
+**END Microsoft özgü**  
+ Türleri için `argc` ve `argv` dil tarafından tanımlanır. Adları `argc`, `argv`, ve `envp` Geleneksel, ancak derleyici tarafından gerekli değildir. Daha fazla bilgi ve örnek için bkz. [bağımsız değişken tanımları](../cpp/argument-definitions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Main yerine wmain kullanma](../cpp/using-wmain-instead-of-main.md)   
- [main İşlevi Kısıtlamaları](../cpp/main-function-restrictions.md)
+ [Main işlevi kısıtlamaları](../cpp/main-function-restrictions.md)   
+ [C++ Komut Satırı Bağımsız Değişkenlerini Ayrıştırma](../cpp/parsing-cpp-command-line-arguments.md)

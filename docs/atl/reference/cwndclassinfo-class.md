@@ -1,5 +1,5 @@
 ---
-title: CWndClassInfo sınıfı | Microsoft Docs
+title: Cwndclassınfo sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -25,18 +25,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 878d6065f3a158ac4404620205ef9c60912d89ca
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7b328cb869f971afb0251750d7847d6850688731
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365770"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37879841"
 ---
-# <a name="cwndclassinfo-class"></a>CWndClassInfo sınıfı
-Bu sınıf için bir pencere sınıfı bilgileri kaydetmek için yöntemleri sağlar.  
+# <a name="cwndclassinfo-class"></a>Cwndclassınfo sınıfı
+Bu sınıf, bir pencere sınıfının bilgileri kaydetmek için yöntemler sağlar.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,38 +50,38 @@ class CWndClassInfo
   
 |||  
 |-|-|  
-|[Kaydetme](#register)|Pencere sınıfı kaydeder.|  
+|[Kaydolun](#register)|Pencere sınıfını kaydeder.|  
   
 ### <a name="data-members"></a>Veri üyeleri  
   
 |||  
 |-|-|  
 |[m_atom](#m_atom)|Kayıtlı pencere sınıfı benzersiz olarak tanımlar.|  
-|[m_bSystemCursor](#m_bsystemcursor)|İmleç kaynak sistem imleç veya modülü kaynağında bulunan bir imleç başvuruda olup olmadığını belirtir.|  
-|[m_lpszCursorID](#m_lpszcursorid)|İmleç kaynağın adını belirtir.|  
-|[m_lpszOrigName](#m_lpszorigname)|Varolan bir pencere sınıfı adını içerir.|  
-|[m_szAutoName](#m_szautoname)|ATL oluşturulan bir pencere sınıfı adını içerir.|  
-|[m_wc](#m_wc)|Pencere sınıfı bilgileri tutan bir **WNDCLASSEX** yapısı.|  
-|[pWndProc](#pwndproc)|Pencere yordamı noktalarına mevcut bir pencere sınıfın.|  
+|[m_bSystemCursor](#m_bsystemcursor)|İmleç kaynak sistemi imleç veya modül kaynakta yer alan bir imleç gösterir olup olmadığını belirtir.|  
+|[m_lpszCursorID](#m_lpszcursorid)|İmleç kaynağının adını belirtir.|  
+|[m_lpszOrigName](#m_lpszorigname)|Var olan bir pencere sınıfı adını içerir.|  
+|[m_szAutoName](#m_szautoname)|ATL tarafından oluşturulan bir pencere sınıfı adını içerir.|  
+|[m_wc](#m_wc)|Pencere sınıfı bilgileri tutar bir `WNDCLASSEX` yapısı.|  
+|[pWndProc](#pwndproc)|Pencere yordamı işaret var olan bir pencere sınıf.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CWndClassInfo` pencere sınıfı bilgilerini yönetir. Tipik olarak kullandığınız `CWndClassInfo` üç makroları biri aracılığıyla `DECLARE_WND_CLASS`, `DECLARE_WND_CLASS_EX`, veya `DECLARE_WND_SUPERCLASS`aşağıdaki tabloda açıklandığı gibi:  
+ `CWndClassInfo` pencere sınıfı bilgilerini yönetir. Tipik olarak kullandığınız `CWndClassInfo` üç makroları, DECLARE_WND_CLASS, DECLARE_WND_CLASS_EX veya aşağıdaki tabloda açıklandığı gibi DECLARE_WND_SUPERCLASS biri aracılığıyla:  
   
 |Makrosu|Açıklama|  
 |-----------|-----------------|  
-|[DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class)|`CWndClassInfo` Yeni bir pencere sınıfı için bilgileri kaydeder.|  
-|[DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex)|`CWndClassInfo` bilgi sınıfı parametreleri de dahil olmak üzere yeni bir pencere sınıfı için kaydeder.|  
-|[DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass)|`CWndClassInfo` Varolan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı için bilgileri kaydeder. Bu teknik üst Sınıflama adı verilir.|  
+|[DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class)|`CWndClassInfo` bilgi için yeni bir pencere sınıfını kaydeder.|  
+|[DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex)|`CWndClassInfo` sınıf parametreleri de dahil olmak üzere yeni bir pencere sınıf için bilgileri kaydeder.|  
+|[DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass)|`CWndClassInfo` bilgi için farklı pencere yordamını kullanır ancak mevcut bir sınıfı temel alan bir pencere sınıfını kaydeder. Bu teknik superclassing çağrılır.|  
   
- Varsayılan olarak, [CWindowImpl](../../atl/reference/cwindowimpl-class.md) içeren `DECLARE_WND_CLASS` makrosu bir pencere oluşturmak için temel üzerinde yeni bir pencere sınıfı. DECLARE_WND_CLASS varsayılan stillerini ve arka plan rengi için denetim sağlar. Stil belirtin ve kendiniz arka plan rengi istiyorsanız, sınıfından türetilen `CWindowImpl` ve dahil `DECLARE_WND_CLASS_EX` makrosu sınıf tanımında.  
+ Varsayılan olarak, [Cwindowımpl](../../atl/reference/cwindowimpl-class.md) içerir `DECLARE_WND_CLASS` bir pencere oluşturmak için temel üzerinde yeni bir pencere sınıfı. DECLARE_WND_CLASS varsayılan stillerini ve arka plan rengi için bir denetim sağlar. Kendiniz arka plan rengi ve stilini belirtmek istiyorsanız, sınıfından türetilir `CWindowImpl` ve DECLARE_WND_CLASS_EX makrosu, sınıf tanımına ekleyin.  
   
- Varolan bir pencere sınıfına dayalı bir pencere oluşturmak istiyorsanız, sınıfından türetilen `CWindowImpl` ve dahil `DECLARE_WND_SUPERCLASS` makrosu sınıf tanımında. Örneğin:  
+ Var olan bir pencere sınıfını esas bir pencere oluşturmak istiyorsanız, sınıfından türetilir `CWindowImpl` ve DECLARE_WND_SUPERCLASS makrosu, sınıf tanımına ekleyin. Örneğin:  
   
  [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]  
   
- Pencere sınıfları hakkında daha fazla bilgi için bkz: [pencere sınıfları](http://msdn.microsoft.com/library/windows/desktop/ms632596) Windows SDK'sındaki.  
+ Pencere sınıfları hakkında daha fazla bilgi için bkz: [pencere sınıfları](http://msdn.microsoft.com/library/windows/desktop/ms632596) Windows SDK.  
   
- ATL Windows'da kullanma hakkında daha fazla bilgi için bkz: [ATL pencere sınıfları](../../atl/atl-window-classes.md).  
+ ATL kullanarak hakkında daha fazla bilgi için bkz [ATL pencere sınıfları](../../atl/atl-window-classes.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
@@ -94,38 +94,38 @@ ATOM m_atom;
 ```  
   
 ##  <a name="m_bsystemcursor"></a>  CWndClassInfo::m_bSystemCursor  
- Varsa **doğru**, pencere sınıfı kaydedildikten sonra sistem imleç kaynak yüklenecek.  
+ TRUE ise pencere sınıfını kaydedildiğinde sistem imleç kaynak yüklenir.  
   
 ```
 BOOL m_bSystemCursor;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aksi takdirde, modülünde yer alan imleç kaynak yüklenecektir.  
+ Aksi takdirde, bir modülde içerilen imleç kaynak yüklenir.  
   
- `CWndClassInfo` kullanan `m_bSystemCursor` yalnızca [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu belirtilir. Bu durumda, `m_bSystemCursor` için başlatılan **doğru**. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
+ `CWndClassInfo` kullanan `m_bSystemCursor` yalnızca [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [Cwindowımpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu belirtildi. Bu durumda, `m_bSystemCursor` TRUE olarak başlatılır. Daha fazla bilgi için [Cwndclassınfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
   
 ##  <a name="m_lpszcursorid"></a>  CWndClassInfo::m_lpszCursorID  
- Düşük düzey word ve yüksek düzey Word'de sıfır imleç kaynağın adını ya da kaynak tanımlayıcı belirtir.  
+ Düşük düzey word ve sıfır dwpoint imleç kaynağının adını ya da kaynak tanımlayıcı belirtir.  
   
 ```
 LPCTSTR m_lpszCursorID;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Pencere sınıfı kaydettirildiğini, imleci tarafından tanımlanan tanıtıcısını `m_lpszCursorID` alınır ve tarafından depolanan [m_wc](#m_wc).  
+ Pencere sınıfı zaman kaydedildi, tanıtıcı tarafından tanımlanan imlece kadar `m_lpszCursorID` alınır ve tarafından depolanan [m_wc](#m_wc).  
   
- `CWndClassInfo` kullanan `m_lpszCursorID` yalnızca [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu belirtilir. Bu durumda, `m_lpszCursorID` için başlatılan **IDC_ARROW**. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
+ `CWndClassInfo` kullanan `m_lpszCursorID` yalnızca [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [Cwindowımpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu belirtildi. Bu durumda, `m_lpszCursorID` IDC_ARROW için başlatılır. Daha fazla bilgi için [Cwndclassınfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
   
 ##  <a name="m_lpszorigname"></a>  CWndClassInfo::m_lpszOrigName  
- Varolan bir pencere sınıfı adını içerir.  
+ Var olan bir pencere sınıfı adını içerir.  
   
 ```
 LPCTSTR m_lpszOrigName;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CWndClassInfo` kullanan `m_lpszOrigName` yalnızca dahil ettiğinizde [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu sınıf tanımında. Bu durumda, `CWndClassInfo` pencere sınıfı tarafından adlı sınıf temel kayıtları `m_lpszOrigName`. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
+ `CWndClassInfo` kullanan `m_lpszOrigName` eklediğinizde yalnızca [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) sınıfı Tanımınızda makrosu. Bu durumda, `CWndClassInfo` pencere sınıfını temel alan tarafından adlandırılan sınıftaki kayıtlarla `m_lpszOrigName`. Daha fazla bilgi için [Cwndclassınfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
   
 ##  <a name="m_szautoname"></a>  CWndClassInfo::m_szAutoName  
  Pencere sınıfı adını içerir.  
@@ -135,49 +135,49 @@ TCHAR m_szAutoName[13];
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CWndClassInfo` kullanan `m_szAutoName` yalnızca **NULL** geçirilen `WndClassName` parametresi [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class), [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) veya [ DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass). Pencere sınıfı kaydedildiğinde ATL bir ad oluşturun.  
+ `CWndClassInfo` kullanan `m_szAutoName` NULL geçirilirse yalnızca `WndClassName` parametresi [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class), [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) veya [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) . Pencere sınıfı kaydedildiğinde ATL bir ad oluşturmak.  
   
 ##  <a name="m_wc"></a>  CWndClassInfo::m_wc  
- Pencere sınıfı bilgileri tutan bir [WNDCLASSEX](http://msdn.microsoft.com/library/windows/desktop/ms633577) yapısı.  
+ Pencere sınıfı bilgileri tutar bir [WNDCLASSEX](http://msdn.microsoft.com/library/windows/desktop/ms633577) yapısı.  
   
 ```
 WNDCLASSEX m_wc;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirttiyseniz [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu, `m_wc` hakkında bilgi içeren bir Yeni pencere sınıfı.  
+ Belirttiyseniz [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [Cwindowımpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makro `m_wc` hakkında bilgi içeren bir Yeni pencere sınıfı.  
   
- Belirttiyseniz [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu, `m_wc` bir üst sınıf hakkında bilgi içerir — varolan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı. [m_lpszOrigName](#m_lpszorigname) ve [pWndProc](#pwndproc) varolan penceresi sınıfın adını ve pencere yordamı, sırasıyla kaydedin.  
+ Belirttiyseniz [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makro `m_wc` bir üst sınıf hakkında bilgi içerir — farklı pencere yordamını kullanır ancak mevcut bir sınıfı temel alan bir pencere sınıf. [m_lpszOrigName](#m_lpszorigname) ve [pWndProc](#pwndproc) mevcut pencere sınıfının adını ve pencere yordamını sırasıyla kaydedin.  
   
 ##  <a name="pwndproc"></a>  CWndClassInfo::pWndProc  
- Pencere yordamı noktalarına mevcut bir pencere sınıfın.  
+ Pencere yordamı işaret var olan bir pencere sınıf.  
   
 ```
 WNDPROC pWndProc;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CWndClassInfo` kullanan `pWndProc` yalnızca dahil ettiğinizde [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu sınıf tanımında. Bu durumda, `CWndClassInfo` var olan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı kaydeder. Varolan penceresi sınıfının pencere yordamı kaydedilir `pWndProc`. Daha fazla bilgi için bkz: [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
+ `CWndClassInfo` kullanan `pWndProc` eklediğinizde yalnızca [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) sınıfı Tanımınızda makrosu. Bu durumda, `CWndClassInfo` farklı pencere yordamını kullanır ancak mevcut bir sınıfı temel alan bir pencere sınıfını kaydeder. Var olan pencereyi sınıfın pencere yordamını kaydedilir `pWndProc`. Daha fazla bilgi için [Cwndclassınfo](../../atl/reference/cwndclassinfo-class.md) genel bakış.  
   
 ##  <a name="register"></a>  CWndClassInfo::Register  
- Tarafından çağrılır [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#create) henüz kayıtlı değilse, pencere sınıfı kaydetmek için.  
+ Çağıran [CWindowImpl::Create](../../atl/reference/cwindowimpl-class.md#create) henüz kayıtlı değilse, pencere sınıfını kaydedilecek.  
   
 ```
 ATOM Register(WNDPROC* pProc);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pProc`  
- [out] Mevcut bir pencere sınıfın özgün pencere yordamı belirtir.  
+ *pProc*  
+ [out] Özgün pencere yordamını, var olan bir pencere sınıfını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, atom, benzersiz olarak Kaydedilmekte pencere sınıfı tanımlar. Aksi takdirde, 0.  
+ Başarılı olursa, atom, benzersiz olarak Kaydedilmekte pencere sınıfını tanımlar. Aksi takdirde 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirttiyseniz [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [CWindowImpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makrosu, `Register` yeni bir pencere sınıfı kaydeder. Bu durumda, `pProc` parametresi kullanılmaz.  
+ Belirttiyseniz [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) (varsayılan olarak [Cwindowımpl](../../atl/reference/cwindowimpl-class.md)) veya [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) makro `Register` yeni bir pencere sınıfını kaydeder. Bu durumda, *pProc* parametre kullanılmaz.  
   
- Belirttiyseniz [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu, `Register` bir üst sınıf kaydeder — varolan bir sınıfına dayalı ancak farklı pencere yordamı kullanan bir pencere sınıfı. Varolan penceresi sınıfının pencere yordamı döndürülür `pProc`.  
+ Belirttiyseniz [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makro `Register` bir sınıfın kaydeder; farklı pencere yordamını kullanır ancak mevcut bir sınıfı temel alan bir pencere sınıf. Var olan pencereyi sınıfın pencere yordamını döndürülür *pProc*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

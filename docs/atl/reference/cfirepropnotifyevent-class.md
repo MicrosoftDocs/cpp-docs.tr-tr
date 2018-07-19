@@ -21,18 +21,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 728f4e973a7ef74dcdbb44150375df235e0d990e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 20fd9c660f036c04ea2ca7d06d04315391504e3e
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360994"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37881535"
 ---
 # <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent sınıfı
-Bu sınıf kapsayıcının havuz denetim özelliği değişiklikleri ile ilgili bilgilendirmek için yöntemleri sağlar.  
+Bu sınıfın sağladığı yöntemlerle kapsayıcının havuz denetimi özellik değişiklikleri ile ilgili bilgilendirme.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,21 +46,21 @@ class CFirePropNotifyEvent
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CFirePropNotifyEvent::FireOnChanged](#fireonchanged)|(Statik) Bir denetim özelliği değişti kapsayıcının havuz bildirir.|  
-|[CFirePropNotifyEvent::FireOnRequestEdit](#fireonrequestedit)|(Statik) Bir denetim değiştirilmek özelliktir kapsayıcının havuz bildirir.|  
+|[CFirePropNotifyEvent::FireOnChanged](#fireonchanged)|(Statik) Denetimine özelliğin değiştirildiğini kapsayıcının havuz bildirir.|  
+|[CFirePropNotifyEvent::FireOnRequestEdit](#fireonrequestedit)|(Statik) Kapsayıcının havuz, bir denetim özelliği değişmek üzere olduğunu bildirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CFirePropNotifyEvent` bir denetim özelliğini değiştirildi veya değiştirilmek kapsayıcının havuz bildir iki yöntem vardır.  
+ `CFirePropNotifyEvent` bir denetim özelliği değiştirildi veya değiştirilmek kapsayıcının havuz bildir iki yöntem vardır.  
   
- Denetim uygulayan sınıfa türetilir varsa `IPropertyNotifySink`, `CFirePropNotifyEvent` yöntemlerini çağırdığınızda çağrılır `FireOnRequestEdit` veya `FireOnChanged`. Denetim sınıfınıza türetilmedi varsa `IPropertyNotifySink`, bu işlevler çağrıları dönmek `S_OK`.  
+ Denetiminiz uygulayan bir sınıfa türetilir, `IPropertyNotifySink`, `CFirePropNotifyEvent` yöntemlerini çağırdığınızda çağrılır `FireOnRequestEdit` veya `FireOnChanged`. Denetim sınıfınıza türünden türetilmediğinden varsa `IPropertyNotifySink`, bu işlevlere aramaların S_OK döndürür.  
   
- Denetimler oluşturma hakkında daha fazla bilgi için bkz: [ATL öğretici](../../atl/active-template-library-atl-tutorial.md).  
+ Denetimler oluşturma hakkında daha fazla bilgi için bkz. [ATL öğretici](../../atl/active-template-library-atl-tutorial.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlctl.h  
   
 ##  <a name="fireonchanged"></a>  CFirePropNotifyEvent::FireOnChanged  
- Tüm bildirir bağlı [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) belirtilen nesne özelliği değişen arabirimlerde (nesnenin her bağlantı noktası).  
+ Tüm bildirir bağlı [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) belirtilen nesne özelliğin değiştirildiğini arabirimleri (üzerinde nesnenin her bağlantı noktası).  
   
 ```
 static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
@@ -68,19 +68,19 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
   
 ### <a name="parameters"></a>Parametreler  
  *pUnk*  
- [in] İşaretçi **IUnknown** bildirim göndererek nesnesi.  
+ [in] İşaretçi `IUnknown` bildirimi gönderilmesi nesnenin.  
   
  *dispID*  
- [in] Değişti özellik tanımlayıcısı.  
+ [in] Değişen özellik tanımlayıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart birini `HRESULT` değerleri.  
+ Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, denetim bağlantı noktalarını desteklemiyor olsa bile çağrılması güvenlidir.  
+ Bu işlev, denetimi bağlantı noktalarını desteklemiyor olsa bile çağrılması güvenlidir.  
   
 ##  <a name="fireonrequestedit"></a>  CFirePropNotifyEvent::FireOnRequestEdit  
- Tüm bildirir bağlı [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) değiştirilmek üzere belirtilen nesne özelliği olan arabirimlerde (nesnenin her bağlantı noktası).  
+ Tüm bildirir bağlı [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) değiştirilmek üzere belirtilen nesne özelliği olan arabirimleri (üzerinde nesnenin her bağlantı noktası).  
   
 ```
 static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
@@ -88,16 +88,16 @@ static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
   
 ### <a name="parameters"></a>Parametreler  
  *pUnk*  
- [in] İşaretçi **IUnknown** bildirim göndererek nesnesi.  
+ [in] İşaretçi `IUnknown` bildirimi gönderilmesi nesnenin.  
   
  *dispID*  
- [in] Değiştirilmek özellik tanımlayıcısı.  
+ [in] Değişmek üzere özellik tanımlayıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart birini `HRESULT` değerleri.  
+ Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, denetim bağlantı noktalarını desteklemiyor olsa bile çağrılması güvenlidir.  
+ Bu işlev, denetimi bağlantı noktalarını desteklemiyor olsa bile çağrılması güvenlidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

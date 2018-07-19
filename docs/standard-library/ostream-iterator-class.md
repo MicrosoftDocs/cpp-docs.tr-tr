@@ -22,16 +22,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49626cbb33ed1220ad82cbec10ad675769b054d6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4ee931abb2273ab3119fa62b9219ad69448b2048
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863614"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963530"
 ---
 # <a name="ostreamiterator-class"></a>ostream_iterator Sınıfı
 
-Şablon sınıfı ostream_iterator ardışık öğelere ayıklama ile çıkış akışı üzerine yazar bir çıktı yineleyici nesneyi tanımlayan **işleci <<**.
+Şablon sınıfı ostream_iterator ardışık öğeleri çıkış akışına yazan yineleyici bir çıkış nesnesi tanımlar `operator <<`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,35 +42,35 @@ class ostream_iterator
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* çıkış akışı eklenecek nesne türü.
+*Tür* çıkış akımına eklenecek nesnenin türü.
 
-`CharType` Karakter türünü temsil eden tür `ostream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `char`.
+*CharType* için karakter türünü temsil eden tür `ostream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **char**.
 
-`Traits` Karakter türünü temsil eden tür `ostream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `char_traits` \< *CharType >.*
+*Nitelikler* için karakter türünü temsil eden tür `ostream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `char_traits` \< *CharType >.*
 
-Ostream_iterator sınıfının, bir çıkış yineleyici için gereksinimleri karşılaması gerekir. Çıkış akışları kullanarak doğrudan algoritmaları yazılabilir bir `ostream_iterator`.
+Ostream_iterator sınıfının, bir çıkış yineleyici için gereksinimleri karşılaması gerekir. Algoritmaları, çıktı kullanılarak doğrudan yazılabilir bir `ostream_iterator`.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[ostream_iterator](#ostream_iterator)|Oluşturan bir `ostream_iterator` yani başlatılmış ve ayrılmış için çıkış akışı yazılamıyor.|
+|[ostream_iterator](#ostream_iterator)|Oluşturur bir `ostream_iterator` çıkış akışına diğer bir deyişle başlatılan ve sınırlanan yazma.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[char_type](#char_type)|Karakter türü için sağlayan bir türü `ostream_iterator`.|
-|[ostream_type](#ostream_type)|Akış türü için sağlayan bir türü `ostream_iterator`.|
-|[traits_type](#traits_type)|Karakter nitelikler tür sağlayan bir tür `ostream_iterator`.|
+|[char_type](#char_type)|İçin karakter türünü sağlayan bir tür `ostream_iterator`.|
+|[ostream_type](#ostream_type)|Akış türü için sağlayan bir tür `ostream_iterator`.|
+|[traits_type](#traits_type)|Karakter nitelikleri için sağlayan bir tür türü `ostream_iterator`.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç *](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `i`  =  `x`.|
-|[operator ++](#op_add_add)|Döndüren bir işlevsel artış işleci bir `ostream_iterator` işlemi çağrılmadan önce de aynı nesneye onu ele.|
-|[operator=](#op_eq)|Çıktı yineleyici ifade uygulamak için kullanılan atama işleci * `i`  =  `x` çıkış akışına yazmak için.|
+|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma * `i`  =  `x`.|
+|[operator ++](#op_add_add)|Döndüren işlevsiz bir artış işleci bir `ostream_iterator` işlemi çağrılmadan önce aynı nesneye onu ele.|
+|[operator=](#op_eq)|Çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci * `i`  =  `x` çıkış akışına yazmak için.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -80,7 +80,7 @@ Ostream_iterator sınıfının, bir çıkış yineleyici için gereksinimleri ka
 
 ## <a name="char_type"></a>  ostream_iterator::char_type
 
-Yineleyici karakter türü için sağlayan türü.
+İçin karakter türünü bir yineleyici sağlayan tür.
 
 ```cpp
 typedef CharType char_type;
@@ -88,7 +88,7 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür **CharType**.
+Şablon parametresi için bir eşanlamlı türüdür `CharType`.
 
 ### <a name="example"></a>Örnek
 
@@ -129,7 +129,7 @@ by intOut are:
 
 ## <a name="op_star"></a>  ostream_iterator::operator*
 
-Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci \* *II* = *x*.
+Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* *II* = *x*.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator*();
@@ -141,7 +141,7 @@ Bir başvuru `ostream_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıktı yineleyici gereksinimlerini, `ostream_iterator` karşılamalıdır yalnızca ifade gerektiren \* *II* = *t* geçerli ve hiçbir şey hakkında diyor**işleci** veya `operator=` kendi başlarına. Bu uygulamada üye işleci döndürür  **\*bu**.
+Bir çıkış yineleyici için gereksinimleri, `ostream_iterator` karşılamalıdır yalnızca ifade gerektiren \* *II* = *t* geçerli olması ve hiçbir şey hakkında diyor**işleci** veya `operator=` kendi. Bu uygulamada üye işleci döndürür  **\*bu**.
 
 ### <a name="example"></a>Örnek
 
@@ -178,7 +178,7 @@ Elements written to output stream:
 
 ## <a name="op_add_add"></a>  ostream_iterator::operator++
 
-Döndüren bir işlevsel artış işleci bir `ostream_iterator` işlemi çağrılmadan önce de aynı nesneye onu ele.
+Döndüren işlevsiz bir artış işleci bir `ostream_iterator` işlemi çağrılmadan önce aynı nesneye onu ele.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator++();
@@ -191,7 +191,7 @@ Bir başvuru `ostream_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki bu üye işleçleri dönmek  **\*bu**.
+Hem bu üye işleçleri dönüş  **\*bu**.
 
 ### <a name="example"></a>Örnek
 
@@ -228,7 +228,7 @@ Elements written to output stream:
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
 
-Atama işleci output_iterator ifade uygulamak için kullanılan * `i`  =  `x` çıkış akışına yazmak için.
+Output_iterator ifadesini uygulamak için kullanılan atama işleci * `i`  =  `x` çıkış akışına yazmak için.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
@@ -236,15 +236,15 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-`val` Nesne türü değeri `Type` çıkış akışı eklenecek.
+*VAL* nesne türünün değerini `Type` çıkış akımına eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleç ekler `val` belirtilen sınırlayıcıyı nesneyle ilişkili çıktı akışa arkasından [ostream_iterator Oluşturucusu](#ostream_iterator) (varsa) ve ardından bir başvuru döndürür `ostream_iterator`.
+İşleç ekler *val* nesnesiyle ilişkili çıkış akımına ardından belirtilen sınırlayıcıya göre [ostream_iterator Oluşturucusu](#ostream_iterator) (varsa) ve ardından birbaşvurudöndürür`ostream_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıktı yineleyici gereksinimleri, `ostream_iterator` getirmelidir yalnızca ifadesi gerektirir * `ii`  =  `t` geçerli ve hiçbir şey işletmeni veya işletmeni hakkında diyor, kendi =. Bu üye işleci döndürür `*this`.
+Bir çıkış yineleyici için gereksinimleri, `ostream_iterator` karşılamalıdır yalnızca ifade gerektiren * `ii`  =  `t` geçerli olması ve hiçbir şey işleci veya işleç hakkında diyor, kendi =. Bu üye işleci döndürür `*this`.
 
 ### <a name="example"></a>Örnek
 
@@ -281,7 +281,7 @@ Elements written to output stream:
 
 ## <a name="ostream_iterator"></a>  ostream_iterator::ostream_iterator
 
-Oluşturan bir `ostream_iterator` yani başlatılmış ve ayrılmış için çıkış akışı yazılamıyor.
+Oluşturur bir `ostream_iterator` çıkış akışına diğer bir deyişle başlatılan ve sınırlanan yazma.
 
 ```cpp
 ostream_iterator(
@@ -294,15 +294,15 @@ ostream_iterator(
 
 ### <a name="parameters"></a>Parametreler
 
-`_Ostr` Çıkış akışı türü [ostream_iterator::ostream_type](#ostream_type) üzerinden yinelendiğinde için.
+*_Ostr* türü çıkış akışına [ostream_iterator::ostream_type](#ostream_type) üzerinden yinelenir için.
 
-`_Delimiter` Değerler arasında çıktı akışına eklenir ve sınırlayıcı.
+*_Delimiter* çıkış akışına değerleri arasındaki eklenen ayırıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıkış akışı işaretçiyle ilk Oluşturucu başlatır `&_Ostr`. Sınırlayıcı dize işaretçisi boş bir dize belirler.
+İlk Oluşturucu başlatır ve çıkış akışı işaretçiyle `&_Ostr`. Ayırıcı dize işaretçisi, boş bir dize belirtir.
 
-İkinci Oluşturucu, çıkış akışı işaretçi başlatır `&_Ostr` ve sınırlayıcı dize işaretçisi ile `_Delimiter`.
+İkinci oluşturucu başlatır ve çıkış akışı işaretçiyle `&_Ostr` ayırıcı dize işaretçisi ile *_Delimiter*.
 
 ### <a name="example"></a>Örnek
 
@@ -353,7 +353,7 @@ Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
 
 ## <a name="ostream_type"></a>  ostream_iterator::ostream_type
 
-Yineleyici akışı türü için sağlayan türü.
+Yineleyici türü akış için sağlayan bir tür.
 
 ```cpp
 typedef basic_ostream<CharType, Traits> ostream_type;
@@ -361,7 +361,7 @@ typedef basic_ostream<CharType, Traits> ostream_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşanlamlısı türüdür [basic_ostream](../standard-library/basic-ostream-class.md)< `CharType`, `Traits`>, iostream hiyerarşisinin stream sınıfı tanımlayan yazmak için kullanılan nesne.
+Türü eşanlamlıdır [basic_ostream](../standard-library/basic-ostream-class.md)< `CharType`, `Traits`>, bir akış sınıf iostream hiyerarşinin yazmak için kullanılan nesneleri tanımlayan.
 
 ### <a name="example"></a>Örnek
 
@@ -369,7 +369,7 @@ Bkz: [ostream_iterator](#ostream_iterator) bildirme ve kullanma konusunda bir ö
 
 ## <a name="traits_type"></a>  ostream_iterator::traits_type
 
-Yineleyici karakter nitelikler türünün sağlayan türü.
+İçin karakter nitelikleri türünü yineleyici sağlayan tür.
 
 ```cpp
 typedef Traits traits_type;
@@ -377,7 +377,7 @@ typedef Traits traits_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eş anlamlı türüdür **nitelikler**.
+Şablon parametresi için bir eşanlamlı türüdür `Traits`.
 
 ### <a name="example"></a>Örnek
 

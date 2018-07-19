@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ac37ac5abc193082aaccb8d5de1a4f75f8a3f7c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3abbd69a69205b0dd7f4ee9fb43d5889e2824552
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360749"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882734"
 ---
 # <a name="ccomobjectstack-class"></a>CComObjectStack sınıfı
-Bu sınıf geçici bir COM nesnesi oluşturur ve bir iskelet uygulamasıyla sağlar **IUnknown**.  
+Bu sınıf, geçici bir COM nesnesi oluşturur ve ile iskelet bir uygulamasını sağlar `IUnknown`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,8 +41,8 @@ class CComObjectStack
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `Base`  
- Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [in uygulamasına](../../atl/reference/ccomobjectrootex-class.md)nesnede desteklemek istediğiniz iyi herhangi diğer arabirimi uğradıysa gibi.  
+ *temel*  
+ Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer bir arabirim uğradıysa nesnede desteklemek istediğiniz gibi.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -51,30 +51,30 @@ class CComObjectStack
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComObjectStack::CComObjectStack](#ccomobjectstack)|Oluşturucu.|  
-|[CComObjectStack:: ~ CComObjectStack](#dtor)|Yok Edicisi.|  
+|[CComObjectStack:: ~ CComObjectStack](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComObjectStack::AddRef](#addref)|Sıfır döndürür. Hata ayıklama modunda çağırır `_ASSERTE`.|  
-|[CComObjectStack::QueryInterface](#queryinterface)|Döndürür **E_NOINTERFACE**. Hata ayıklama modunda çağırır `_ASSERTE`.|  
-|[CComObjectStack::Release](#release)|Sıfır döndürür. Hata ayıklama modunda çağırır `_ASSERTE`. ~|  
+|[CComObjectStack::AddRef](#addref)|Sıfır döndürür. Hata ayıklama modunda çağrı `_ASSERTE`.|  
+|[CComObjectStack::QueryInterface](#queryinterface)|E_noınterface döndürür. Hata ayıklama modunda çağrı `_ASSERTE`.|  
+|[CComObjectStack::Release](#release)|Sıfır döndürür. Hata ayıklama modunda çağrı `_ASSERTE`. ~|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComObjectStack::m_hResFinalConstruct](#m_hresfinalconstruct)|İçeren **HRESULT** yapımı sırasında döndürülen `CComObjectStack` nesnesi.|  
+|[CComObjectStack::m_hResFinalConstruct](#m_hresfinalconstruct)|Oluşumu sırasında döndürülen HRESULT içeren `CComObjectStack` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComObjectStack` geçici bir COM nesnesi oluşturun ve nesneyi bir iskelet uygulamasını sağlamak için kullanılan **IUnknown**. Genellikle, nesne (yığına itildiği) bir işlev içinde yerel bir değişken olarak kullanılır. İşlev tamamlandığında nesnesi yok olduğundan, başvuru sayımı verimliliğini artırmak için yapılmaz.  
+ `CComObjectStack` geçici bir COM nesnesi oluşturup nesneyi bir iskelet uygulamasını sağlamak için kullanılan `IUnknown`. Genellikle, nesne (yani yığın üstüne itilir) bir işlev içinde yerel bir değişken olarak kullanılır. İşlev sona erdiğinde nesnesi yok edildikten sonra başvuru sayımı verimliliğini artırmak için yapılmaz.  
   
  Aşağıdaki örnek, bir işlev içinde kullanılan bir COM nesnesinin nasıl oluşturulacağını gösterir:  
   
  [!code-cpp[NVC_ATL_COM#42](../../atl/codesnippet/cpp/ccomobjectstack-class_1.cpp)]  
   
- Geçici nesne `Tempobj` yığına gönderilir ve işlev bittiğinde otomatik olarak kaldırılır.  
+ Geçici nesnenin `Tempobj` yığın üstüne itilir ve işlev sona erdiğinde otomatik olarak kaldırılır.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Base`  
@@ -95,7 +95,7 @@ STDMETHOD_(ULONG, AddRef)();
  Sıfır döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama modunda çağırır `_ASSERTE`.  
+ Hata ayıklama modunda çağrı `_ASSERTE`.  
   
 ##  <a name="ccomobjectstack"></a>  CComObjectStack::CComObjectStack  
  Oluşturucu.  
@@ -105,27 +105,27 @@ CComObjectStack(void* = NULL);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları `FinalConstruct` ve ardından ayarlar [m_hResFinalConstruct](#m_hresfinalconstruct) için `HRESULT` tarafından döndürülen `FinalConstruct`. Taban sınıfından türetilmemiş varsa [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), kendi sağlamalısınız `FinalConstruct` yöntemi. Yıkıcı çağrıları `FinalRelease`.  
+ Çağrıları `FinalConstruct` ve ardından ayarlar [m_hResFinalConstruct](#m_hresfinalconstruct) döndürdüğü HRESULT için `FinalConstruct`. Varsa, temel sınıftan türetilmemiş [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), kendi sağlamalısınız `FinalConstruct` yöntemi. Yıkıcı çağrıları `FinalRelease`.  
   
 ##  <a name="dtor"></a>  CComObjectStack:: ~ CComObjectStack  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 CComObjectStack();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayrılan tüm kaynakları ve çağrıları boşaltır [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
+ Ayrılan tüm kaynakları ve aramalar boşaltır [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
   
 ##  <a name="m_hresfinalconstruct"></a>  CComObjectStack::m_hResFinalConstruct  
- İçeren `HRESULT` arama öğesinden döndürülen `FinalConstruct` oluşturma işlemi sırasında `CComObjectStack` nesnesi.  
+ Arama öğesinden döndürülen HRESULT içeren `FinalConstruct` yapımı sırasında `CComObjectStack` nesne.  
   
 ```
 HRESULT    m_hResFinalConstruct;
 ```  
   
 ##  <a name="queryinterface"></a>  CComObjectStack::QueryInterface  
- Döndürür **E_NOINTERFACE**.  
+ E_noınterface döndürür.  
   
 ```
 HRESULT    QueryInterface(REFIID, void**)
@@ -133,10 +133,10 @@ HRESULT    QueryInterface(REFIID, void**)
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür **E_NOINTERFACE**.  
+ E_noınterface döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama modunda çağırır `_ASSERTE`.  
+ Hata ayıklama modunda çağrı `_ASSERTE`.  
   
 ##  <a name="release"></a>  CComObjectStack::Release  
  Sıfır döndürür.  
@@ -149,10 +149,10 @@ STDMETHOD_(ULONG, Release)();
  Sıfır döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama modunda çağırır `_ASSERTE`.  
+ Hata ayıklama modunda çağrı `_ASSERTE`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)   
  [CComObject sınıfı](../../atl/reference/ccomobject-class.md)   
  [CComObjectGlobal sınıfı](../../atl/reference/ccomobjectglobal-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

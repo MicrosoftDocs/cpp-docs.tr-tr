@@ -16,30 +16,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 450c22a6c31128204dcb9e2f5baf8aeb04439eab
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1c3803a3b78e5a5a1e08edf1e8b6ca7df0c257ee
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361192"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961782"
 ---
 # <a name="utility-classes"></a>Yardımcı program sınıfları
-Aşağıdaki MFC bağımsız yardımcı sınıflar sağlanır:  
+Aşağıdaki bağımsız MFC yardımcı sınıflar sağlanır:  
   
--   [Cımage](../atl-mfc-shared/reference/cimage-class.md) sağlar gelişmiş yük ve görüntüleri, JPEG, GIF, BMP, kaydetme özelliği de dahil olmak üzere, bit eşlem destek ve Taşınabilir Ağ Grafikleri (PNG) biçimlendirir.  
+-   [Cımage](../atl-mfc-shared/reference/cimage-class.md) Gelişmiş görüntüleri, JPEG, GIF, BMP, kaydetme ve yükleme olanağı dahil olmak üzere, bit eşlem desteği sağlar ve Taşınabilir Ağ Grafikleri (PNG) biçimlendirir.  
   
--   [CPoint](../atl-mfc-shared/reference/cpoint-class.md) koordinat (x, y) çiftlerini depolamak için bir uygulama sağlar.  
+-   [CPoint](../atl-mfc-shared/reference/cpoint-class.md) koordinat (x, y) çiftleri depolamak için bir uygulamasını sağlar.  
   
--   [CRect](../atl-mfc-shared/reference/crect-class.md) dikdörtgen alanları koordinatlarını depolamak için bir uygulama sağlar.  
+-   [CRect](../atl-mfc-shared/reference/crect-class.md) dikdörtgen alanları koordinatlarını depolamak için bir uygulamasını sağlar.  
   
--   [CSize](../atl-mfc-shared/reference/csize-class.md) uzaklığı, göreli konumları veya eşleştirilmiş değerlerini depolamak için bir uygulama sağlar.  
+-   [CSize](../atl-mfc-shared/reference/csize-class.md) uzaklığı, göreli konumlarını veya eşleştirilmiş değerleri depolamak için bir uygulamasını sağlar.  
   
--   [CString](../atl-mfc-shared/reference/cstringt-class.md) karakter dizeleri depolamak için bir uygulama sağlar.  
+-   [CString](../atl-mfc-shared/reference/cstringt-class.md) karakter dizeleri depolamak için bir uygulamasını sağlar.  
   
--   [CAdapt](../atl/reference/cadapt-class.md) address-of işleci yeniden tanımlamanız sınıfları sarmalamak için kullanılan basit bir şablon.  
+-   [CAdapt](../atl/reference/cadapt-class.md) address-of işlecini yeniden tanımlayan sınıfları sarmalamak için kullanılan basit bir şablondur.  
   
--   [_U_RECT](../atl/reference/u-rect-class.md) ya da izin veren bir bağımsız değişken bağdaştırıcı sınıfı `RECT` işaretçileri veya bakımından işaretçileri uygulanan bir işlev geçirilmesi başvuruları.  
+-   [_U_RECT](../atl/reference/u-rect-class.md) ya da izin veren bir bağımsız değişken bağdaştırıcı sınıfı `RECT` işaretçiler veya başvurular açısından işaretçileri uygulanan bir işleve geçirilecek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../atl/atl-class-overview.md)
 

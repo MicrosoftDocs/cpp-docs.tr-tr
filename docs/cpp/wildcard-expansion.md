@@ -21,20 +21,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb58d5da479d686cac0d18c9d36e500bd6b5a632
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7f4de54cbbe978534a42dcb9cbfa677eb1597aa5
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420656"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37939142"
 ---
 # <a name="wildcard-expansion"></a>Joker Karakter Genişletmesi
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
  Dosya adı ve yol bağımsız değişkenlerini komut satırında belirtmek için soru işareti (?) ve yıldız işareti (*) gibi joker karakterler kullanabilirsiniz.  
   
- Komut satırı bağımsız değişkenleri olarak adlandırılan bir yordam tarafından işlenen **_setargv** (veya **_wsetargv** joker karakter ortamında), varsayılan olarak genişletme joker karakterler ayrıdizelerdeiçine`argv`dize dizisi. Joker karakter genişletmesi etkinleştirme hakkında daha fazla bilgi için bkz [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md).  
+ Komut satırı bağımsız değişkenleri, bir yordam tarafından işlenir `_setargv` (veya `_wsetargv` geniş karakter ortamında), varsayılan olarak genişletmeyen joker karakterler ayrı dizelere `argv` dize dizisi. Joker karakter genişletmesini etkinleştirme hakkında daha fazla bilgi için [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md).  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [main: Program Başlatma](../cpp/main-program-startup.md)

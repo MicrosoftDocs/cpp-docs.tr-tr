@@ -21,16 +21,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c13dcadc87c23e288c7f8c8a7f5bc9752aae5db7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b385d822c2f58d26938b3300207a790dc1193060
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853657"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38953055"
 ---
 # <a name="resultof-class"></a>result_of Sınıfı
 
-Belirtilen bağımsız değişken türleri alır aranabilir türü dönüş türünü belirler.
+Belirtilen bağımsız değişken türleri alan çağrılabilir türü dönüş türünü belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,13 +48,13 @@ template<class T>
 
 ### <a name="parameters"></a>Parametreler
 
-`Fn` Sorgu için aranabilir türü.
+*Fn* çağrılabilir türü için sorgu.
 
-`ArgTypes` Sorgulanacak aranabilir türü için bağımsız değişken listesi türleri.
+*ArgTypes* bağımsız değişken listesi sorguya çağrılabilir türüne türlerini.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonuç türü, derleme zamanında belirlemek için bu şablonu kullanmak `Fn`(`ArgTypes`), burada `Fn` aranabilir türü, işlev başvurusunu ya da bir bağımsız değişken listesi türlerini kullanarak çağrılan aranabilir türüne başvuru `ArgTypes`. `type` Şablon sınıfının üye adları sonuç türü `decltype(std::invoke(declval<Fn>(), declval<ArgTypes>()...))` varsa değerlendirilmeyecek ifade `std::invoke(declval<Fn>(), declval<ArgTypes>()...)` doğru oluşturulmamış. Aksi takdirde, Şablon sınıfı hiçbir üyenin `type`. Türü `Fn` ve parametre paketi içindeki tüm türler `ArgTypes` tam tür `void`, veya bilinmeyen bağlı dizileri.
+Sonuç türü derleme zamanında belirlemek için bu şablonu kullanın `Fn`(`ArgTypes`), burada *Fn* çağrılabilir türü, işlev başvurusu veya içinde türlerininbirbağımsızdeğişkenlistesikullanılarakçağrılançağrılabilirtürünebaşvuru *ArgTypes*. `type` Şablon sınıfının üye adları sonuç türü `decltype(std::invoke(declval<Fn>(), declval<ArgTypes>()...))` varsa değerlendirilmemiş ifade `std::invoke(declval<Fn>(), declval<ArgTypes>()...)` doğru oluşturulmamış. Aksi takdirde, Şablon sınıfı üyesi yok `type`. Türü *Fn* ve tüm türleri parametre paketi *ArgTypes* tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
 
 ## <a name="requirements"></a>Gereksinimler
 

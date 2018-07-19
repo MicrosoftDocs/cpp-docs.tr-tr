@@ -31,12 +31,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0a3f60a4cbcde76a681b33ed9201e81f313bac1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 80cb3dd5d60665fbfb510fb2fddf94f17ef9f171
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862104"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963800"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -50,7 +50,7 @@ class locale;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir model gösteren bir işaretçidir sınıfından türetilen bir sınıftan bir nesneyi [modeli](#facet_class) ortak nesnesi biçiminde olan:
+Bir model bir sınıftan türetilmiş bir sınıfın nesne işaretçisidir [modeli](#facet_class) formu genel bir nesnesine sahip:
 
 ```cpp
 static locale::id id;
@@ -58,7 +58,7 @@ static locale::id id;
 
 Bu modellerin açık uçlu bir kümesini tanımlayabilirsiniz. Ayrıca, modellerin rastgele bir sayısını gösteren bir yerel ayar nesnesi oluşturabilirsiniz.
 
-Bu modellerle önceden tanımlanmış grupları temsil [yerel ayar kategorileri](#category) işlevi tarafından standart C Kitaplığı'nda geleneksel yönetilen `setlocale`.
+Bu modellerin önceden tanımlı grupları temsil [yerel ayar kategorileri](#category) işlevi olarak standart C Kitaplığı'nda geleneksel olarak yönetilen `setlocale`.
 
 Kategori collate (LC_COLLATE) şu modelleri içerir:
 
@@ -122,7 +122,7 @@ messages<wchar_t>
 
 Bu önceden tanımlanmış modellerin bazıları iostreams sınıfları tarafından sayısal değerlerin to ve from metin dizilerine dönüştürülmesini denetlemek için kullanılır.
 
-Bir nesne sınıfı yerel ayar, bir yerel ayar adı sınıfın bir nesnesi da depolar. [dize](../standard-library/string-typedefs.md#string). Yerel ayar modeli veya bir yerel ayar nesnesi oluşturmak için bir geçersiz yerel ayar adını kullanarak sınıfın bir nesnesi oluşturur [runtime_error](../standard-library/runtime-error-class.md). Depolanan yerel ayar adı `"*"` yerel nesne C tarzı yerel ayar için tam olarak karşılık geldiğini belirli olamazsa nesnesiyle temsil. Aksi halde, yerel ayar nesnesi için standart C Kitaplığı içinde eşleşen bir yerel kurup `Loc`, çağırarak `setlocale`(LC_ALL `,` `Loc`. [ad](#name)`().c_str()`).
+Bir sınıf yerel ayarı nesnesi bir yerel ad ayrıca sınıfın bir nesnesi depolar. [dize](../standard-library/string-typedefs.md#string). Bir yerel ayar modeli veya bir yerel ayar nesnesi oluşturmak için bir geçersiz yerel ayar adı kullanarak sınıfının bir nesnesi atar [runtime_error](../standard-library/runtime-error-class.md). Depolanan yerel ayar adı `"*"` yerel ayar nesnesi C stili yerel ayar tam olarak karşılık geldiğinden emin olamazsa, nesne tarafından temsil edilir. Aksi takdirde, yerel ayar standart C Kitaplığı içinde eşleşen bir yerel ayar kurup `Loc`, çağırarak `setlocale`(LC_ALL `,` `Loc`. [adı](#name)`().c_str()`).
 
 Bu uygulamada, statik üye işlevini de çağırabilirsiniz:
 
@@ -130,13 +130,13 @@ Bu uygulamada, statik üye işlevini de çağırabilirsiniz:
 static locale empty();
 ```
 
-Böylece, modeli olmayan bir yerel bir nesne oluşturabilirsiniz. Ayrıca, saydam bir yerel ayar olan; varsa şablon işlevleri [has_facet](../standard-library/locale-functions.md#has_facet) ve [use_facet](../standard-library/locale-functions.md#use_facet) istenen model bulunamıyor saydam yerel ayarda, bunlar ilk genel yerel başvurun ve ardından, saydam ise, Klasik yerel ayar. Bu nedenle, şunu yazabilirsiniz:
+Böylece, modeli olmayan bir yerel bir nesne oluşturabilirsiniz. Bu ayrıca saydam bir yerel ayar olur; varsa şablon işlevleri [has_facet](../standard-library/locale-functions.md#has_facet) ve [use_facet](../standard-library/locale-functions.md#use_facet) istenen modeli bulamazsa saydam bir yerel ayarda bunlar ilk olarak genel yerel ayara bakın ve bu saydamsa Klasik yerel ayar. Bu nedenle, şunu yazabilirsiniz:
 
 ```cpp
 cout.imbue(locale::empty());
 ```
 
-Sonraki eklemelerin [cout](../standard-library/iostream.md#cout) genel yerel geçerli durumuna göre mediated. Şunu da yazabilirsiniz:
+Sonraki eklemeler [cout](../standard-library/iostream.md#cout) genel yerel ayarın geçerli duruma göre cout. Şunu da yazabilirsiniz:
 
 ```cpp
 locale loc(locale::empty(),
@@ -146,7 +146,7 @@ locale loc(locale::empty(),
 cout.imbue(loc);
 ```
 
-Sayısal biçimlendirme kuralları sonraki eklemeleri için `cout` tarihleri ve para tutarlar eklemek için değiştirme kuralları genel yerel kaynakları gibi C yerel olduğu gibi aynı kalır.
+Sayısal biçimlendirme kuralları için sonraki eklemeler `cout` genel yerel ayar'ı tarihleri ve parasal tutarların eklenmesi için kuralların değiştirilmesini sağlasa bile gibi C yerel olduğu gibi aynı kalır.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -179,7 +179,7 @@ Sayısal biçimlendirme kuralları sonraki eklemeleri için `cout` tarihleri ve 
 |İşleç|Açıklama|
 |-|-|
 |[operator!=](#op_neq)|İki yerel ayarın farklı olup olmadığını sınar.|
-|[işleci)](#op_call)|İki karşılaştırır `basic_string` nesneleri.|
+|[işleç)](#op_call)|İki karşılaştırır `basic_string` nesneleri.|
 |[operator==](#op_eq_eq)|İki yerel ayarın farksız olup olmadığını sınar.|
 
 ### <a name="classes"></a>Sınıflar
@@ -213,27 +213,27 @@ static const int none = 0;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşanlamlısı türü olan bir `int` bir bit maskesi olan ayrı öğeleri grubunu temsil edebilir türü sınıfı yerel ayar için yerel yazın veya karşılık gelen C yerel ayar kategorileri birini temsil etmek için kullanılabilir. Öğeler şunlardır:
+Türü eşanlamlıdır bir **int** bir bit maskesi ayrı öğelerinde bir grubu temsil edebilen türü sınıf yerel ayarı için yerel yazın veya herhangi bir karşılık gelen C yerel ayar kategorileri göstermek için kullanılabilir. Öğeler şunlardır:
 
-- **COLLATE**, C kategorisine LC_COLLATE karşılık gelen
+- `collate`, C kategorisine LC_COLLATE karşılık gelen
 
-- **CType**, C kategorisine LC_CTYPE karşılık gelen
+- `ctype`, C kategorisine LC_CTYPE karşılık gelen
 
-- **para**, C kategorisine LC_MONETARY karşılık gelen
+- `monetary`, C kategorisine LC_MONETARY karşılık gelen
 
-- **Sayısal**, C kategorisine lc_numerıc karşılık gelen
+- `numeric`, C kategorisine lc_numerıc karşılık gelen
 
-- **zaman**, C kategorisine lc_tıme karşılık gelen
+- `time`, C kategorisine lc_tıme karşılık gelen
 
-- **iletileri**, LC_MESSAGES POSIX kategoriye karşılık gelen
+- `messages`, POSIX LC_MESSAGES kategoriye karşılık gelen
 
 Ayrıca, iki yararlı değerler şunlardır:
 
-- **Hiçbiri**, karşılık gelen None C kategorileri
+- `none`, C kategorisi hiçbiri için karşılık gelen
 
-- **tüm**, ilişkili tüm kategorileri LC_ALL C birleşimi
+- `all`, tüm kategorileri LC_ALL C birleşime karşılık gelen
 
-Kullanarak kategorileri rasgele bir grubu temsil edebilir `OR` giriş olarak bu sabitler ile **para** &#124; **zaman**.
+Kullanarak kategorileri rastgele bir grubu temsil edebilen `OR` görüldüğü Bu sabitler ile `monetary` &#124; `time`.
 
 ## <a name="classic"></a>  Locale::Classic
 
@@ -245,11 +245,11 @@ static const locale& classic();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-C yerel bir başvuru.
+C yerel başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Klasik C yerel ayar ABD'dır İngilizce ASCII yerel olmayan Uluslararası yapılan programlarda örtük olarak kullanılan standart C Kitaplığı içinde.
+Klasik C yerel US değeridir Örtük olarak değil Uluslararası yapılan programlarda kullanılan standart C Kitaplığı içinde ASCII İngilizce yerel ayarı.
 
 ### <a name="example"></a>Örnek
 
@@ -301,11 +301,11 @@ locale combine(const locale& Loc) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`Loc` Hedef yerel ayar eklenecek modeli içeren yerel ayar.
+*Loc* modeli hedef yerel ayara eklenecek içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevini değiştirir veya ekler bir yerel ayar nesnesi döndüren  **\*bu** modeli `Facet` listelenen `Loc`.
+Üye işlevini değiştiren veya ekleyen bir yerel ayar nesnesi döndürür  **\*bu** modeli `Facet` listelenen *Loc*.
 
 ### <a name="example"></a>Örnek
 
@@ -355,13 +355,13 @@ private:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kopyalayamaz veya sınıf modeli bir nesne atama olduğunu unutmayın. Oluşturun ve sınıfından türetilen nesneleri yok `locale::facet` nesneleri uygun temel sınıf. Genellikle, bir nesne oluşturmak `_Myfac` gibi bir yerel yapısı oluştururken model türetilen **localeloc**( `locale::classic`(), **yeni**`_Myfac`);
+Kopyalayamaz veya sınıf tarafı nesneye atamak olduğunu unutmayın. Oluşturun ve sınıfından türetilmiş nesneler yok `locale::facet` nesneleri doğru temel sınıf. Genellikle, bir nesne oluşturmak `_Myfac` gibi bir yerel ayar oluştururken, model türetilmiş **localeloc**( `locale::classic`(), **yeni**`_Myfac`);
 
-Böyle durumlarda, temel sınıf modeli Oluşturucusu sıfır olmalıdır `_Refs` bağımsız değişkeni. Nesne artık gerekli olmadığında silinir. Sıfır olmayan bir _ bu nedenle, sağladığınız *Refs* bağımsız değişkeni yalnızca ele burada nesnesinin ömrü sorumluluğunu nadir durumlarda.
+Böyle durumlarda temel sınıf modeli için oluşturucu sıfır olmalıdır `_Refs` bağımsız değişken. Nesne artık gerekmediğinde silinir. Sıfır dışında bir _ bu nedenle, sağladığınız *Refs* bağımsız değişkeni yalnızca nesnenin ömrünü sorumluluğunu aldığınız yere nadir durumlarda.
 
 ## <a name="global"></a>  Locale::Global
 
-Program için varsayılan yerel ayar sıfırlar. C ve C++ için genel yerel etkiler.
+Program için varsayılan yerel ayar sıfırlar. Bu, C ve C++ için genel yerel ayar etkiler.
 
 ```cpp
 static locale global(const locale& Loc);
@@ -369,7 +369,7 @@ static locale global(const locale& Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-`Loc` Varsayılan yerel ayar program tarafından kullanılmak üzere yerel ayar.
+*Loc* program tarafından varsayılan yerel ayar olarak kullanılacak yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -377,7 +377,7 @@ Varsayılan yerel ayar sıfırlamadan önceki yerel ayar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Program başlatma sırasında genel yerel Klasik yerel ile aynıdır. `global()` İşlev çağrıları `setlocale( LC_ALL, loc.name. c_str())` standart C Kitaplığı'nda eşleşen bir yerel ayar oluşturmak için.
+Program başlangıcında, genel yerel ayar Klasik yerel ayara ile aynıdır. `global()` İşlev çağrılarında `setlocale( LC_ALL, loc.name. c_str())` standart C Kitaplığı içinde eşleşen bir yerel ayar oluşturmak için.
 
 ### <a name="example"></a>Örnek
 
@@ -415,7 +415,7 @@ sınıf kimliği {korumalı: id(); özel: id(const id&) / / void işleç tanıml
 
 ### <a name="remarks"></a>Açıklamalar
 
-Statik üye nesne her benzersiz yerel modeli tarafından gerekli üye sınıfı açıklar. Kopyalayamaz veya sınıfın bir nesnesi atama, Not **kimliği**.
+Üye sınıfı, her benzersiz yerel ayar modeli gerekli statik üye nesnesi tanımlar. Kopyalayamaz veya sınıfın bir nesnesi atama, Not `id`.
 
 ## <a name="locale"></a>  Locale::Locale
 
@@ -436,35 +436,35 @@ locale(const locale& Loc, const Facet* Fac);
 
 ### <a name="parameters"></a>Parametreler
 
-`Locname` Yerel ayar adı.
+*Locname* bir yerel ayar adı.
 
-`Loc` Yeni yerel oluştururken kopyalanacak yerel ayar.
+*Loc* yeni yerel oluştururken kopyalanacak bir yerel ayar.
 
-`Other` Yerel ayar çıkarılacağı bir kategori seçin.
+*Diğer* kendisinden bir kategori seçmek bir yerel ayar.
 
-`Cat` Oluşturulan yerel atanması kategorisi.
+*Cat* kategori oluşturulmuş bir yerel ayar yerine kullanılacak.
 
-`Fac` Oluşturulan yerel değiştirilecek model.
+*Fac* oluşturulmuş bir yerel ayar yerine kullanılacak model.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucusu genel yerel eşleşecek şekilde nesnesini başlatır. Yerel ayar adı ile tutarlı davranışı sağlamak için tüm yerel ayar kategorileri ikinci ve üçüncü oluşturucular başlatma `Locname`. Kalan oluşturucuları kopyalama `Loc`, belirtilen özel durum dışında:
+İlk Oluşturucu, genel yerel ayar eşleştirilecek nesnesini başlatır. Yerel ayar adı ile tutarlı bir davranış sağlamak için tüm yerel ayar kategorileri ikinci ve üçüncü oluşturucular başlatma *Locname*. Kalan oluşturucuları kopyalama *Loc*, belirtilen özel durumlarla birlikte:
 
 `locale(const locale& Loc, const locale& Other, category Cat);`
 
-gelen değiştirir `Other` bu modelleri için hangi C C kategoriye karşılık gelen & `Cat` sıfır olmayan bir değer değil.
+gelen değiştirir *diğer* bu modelleri için hangi C C kategorisine karşılık gelen & *Cat* sıfır değil.
 
 `locale(const locale& Loc, const char* Locname, category Cat);`
 
 `locale(const locale& Loc, const string& Locname, category Cat);`
 
-gelen değiştirir `locale(Locname, _All)` bu modelleri için hangi C C kategoriye karşılık gelen & `Cat` sıfır olmayan bir değer değil.
+gelen değiştirir `locale(Locname, _All)` bu modelleri için hangi C C kategorisine karşılık gelen & *Cat* sıfır değil.
 
 `template<class Facet> locale(const locale& Loc, Facet* Fac);`
 
-değiştirir (veya ekler) `Loc` modeli `Fac`, `Fac` null işaretçi değil.
+değiştirir (veya ekler) *Loc* modeli *Fac*, *Fac* null bir işaretçi değil.
 
-Yerel ayar adları, `Locname` null işaretçi ya da başka nedenle geçersiz işlev oluşturur [runtime_error](../standard-library/runtime-error-class.md).
+Bir yerel ayar adı *Locname* null bir işaretçiyse ya da aksi takdirde geçersiz işlev oluşturursa [runtime_error](../standard-library/runtime-error-class.md).
 
 ### <a name="example"></a>Örnek
 
@@ -516,7 +516,7 @@ string name() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yerel ad verip bir dize.
+Yerel ayarın adını veren bir dize.
 
 ### <a name="example"></a>Örnek
 
@@ -555,15 +555,15 @@ bool operator!=(const locale& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Yerel ayarlar için eşitsizlik sınanacak biri.
+*doğru* bir eşitsizlik için test edilecek gezinin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir Boole değeri **true** yerel ayarlar aynı yerel; kopyalarını değilse **false** yerel ayarlar aynı yerel kopyasını varsa.
+Bir Boolean değer **true** yerel kopyalarını aynı yerel ayarı kullanır; değilse, **false** yerel ayarlar aynı yerel kopyaları varsa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başka bir kopyasını ise aynı yerel olmaları durumunda ya da aynı adlara sahip iki yerel ayarı eşit.
+Aynı yerel kopyasını, diğerini ise olmaları durumunda ya da bunların aynı adlara sahip iki yerel eşit olur.
 
 ### <a name="example"></a>Örnek
 
@@ -618,23 +618,23 @@ bool operator()(
 
 ### <a name="parameters"></a>Parametreler
 
-`left` Sol dizesi.
+*Sol* sol dize.
 
-`right` Sağ dizesi.
+*doğru* doğru dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Üye işlevi döndürür:
 
-- ilk dizi ikinci dizisi sayısından az karşılaştırır, -1.
+- ilk dizi ikinci sırası sayısından az karşılaştırırsa -1.
 
-- İkinci sırası ilk dizisi sayısından az karşılaştırır, + 1.
+- İkinci sırası daha azını ilk dizi karşılaştırırsa + 1.
 
-- 0 sıraları eşdeğerdir.
+- 0 dizileri eşdeğerdir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini etkili bir şekilde çalışır:
+Üye işlevi etkin şekilde şunları yürütür:
 
 ```cpp
 const collate<CharType>& fac = use_fac<collate<CharType>>(*this);
@@ -642,7 +642,7 @@ const collate<CharType>& fac = use_fac<collate<CharType>>(*this);
 return (fac.compare(left.begin(), left.end(), right.begin(), right.end()) < 0);
 ```
 
-Bu nedenle, bir işlev nesnesi olarak yerel ayar nesnesini kullanabilirsiniz.
+Bu nedenle, bir işlev nesnesi bir yerel ayar nesnesini kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -685,15 +685,15 @@ bool operator==(const locale& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-`right` Eşitlik için test edilmesi için yerel ayarları biri.
+*doğru* bir eşitlik için test edilecek gezinin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir Boole değeri **true** yerel ayarlar aynı yerel; kopyalarını varsa **false** yerel ayarlar aynı yerel kopyasını değilse.
+Bir Boolean değer **true** yerel ayarlar aynı; yerel kopyaları varsa **false** yerel ayarlar aynı yerel kopyasını değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başka bir kopyasını ise aynı yerel olmaları durumunda ya da aynı adlara sahip iki yerel ayarı eşit.
+Aynı yerel kopyasını, diğerini ise olmaları durumunda ya da bunların aynı adlara sahip iki yerel eşit olur.
 
 ### <a name="example"></a>Örnek
 

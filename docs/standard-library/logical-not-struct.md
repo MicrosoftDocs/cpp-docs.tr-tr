@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0d654c526e5c856431d69c045c5018d77a6fed3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bf93d84534671cb65c873555d70fea756036fe06
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860024"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38961645"
 ---
 # <a name="logicalnot-struct"></a>logical_not Yapısı
 
-Mantıksal gerçekleştirir önceden tanımlı işlev nesnesi değil işlemi ( `operator!`) bağımsız değişkeni üzerinde.
+Mantıksal gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi değil işlemi (`operator!`) bağımsız değişken üzerinde.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,13 +49,13 @@ struct logical_not<void>
 
 ### <a name="parameters"></a>Parametreler
 
-`Type` Destekleyen herhangi bir türü bir `operator!` belirtilen veya çıkarsanan türünde işleneni alır.
+*Tür* destekleyen herhangi bir türü bir `operator!` belirtilen veya çıkarsanan türünde bir işlenen alan.
 
-`Left` Mantıksal işleneni değil işlemi. Lvalue başvuru bağımsız değişken türü unspecialized şablonu alır `Type`. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız çıkarımı yapılan tür `Type`.
+*Sol* mantıksal işleneni işlemi değil. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *türü*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `!Left`. Özel şablonu tarafından döndürülen türüne sahip sonuç iletilmesini mükemmel `operator!`.
+Sonucu `!Left`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator!`.
 
 ## <a name="example"></a>Örnek
 
@@ -104,7 +104,7 @@ The deque with its values negated is:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

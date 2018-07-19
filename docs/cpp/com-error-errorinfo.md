@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fbc735dfae1b30209eccfd14f1170826fb07680
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 52935c81849ded072cb20d6c835b3a71b66c2871
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410999"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37941320"
 ---
 # <a name="comerrorerrorinfo"></a>_com_error::ErrorInfo
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Alır **IErrorInfo** oluşturucuya nesnesi geçirildi.  
+ Alır `IErrorInfo` oluşturucuya nesnesi geçirildi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,12 +37,12 @@ IErrorInfo * ErrorInfo( ) const throw( );
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Ham **IErrorInfo** öğesi oluşturucuya geçirilen.  
+ Ham `IErrorInfo` öğesi oluşturucuya geçirilen.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kapsüllenmiş alır **IErrorInfo** öğesi bir `_com_error` nesnesi veya **NULL** yoksa **IErrorInfo** öğesi kaydedilir. Arayan çağırmalısınız **sürüm** bitirdikten sonra döndürülen nesne üzerinde kullanıyor.  
+ Kapsüllenmiş alır `IErrorInfo` öğesi bir `_com_error` nesne veya hiç yoksa NULL `IErrorInfo` öğesi kaydedilir. Çağıranın çağırmalıdır `Release` bittiğinde, döndürülen nesneyi kullanmayı.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_error Sınıfı](../cpp/com-error-class.md)

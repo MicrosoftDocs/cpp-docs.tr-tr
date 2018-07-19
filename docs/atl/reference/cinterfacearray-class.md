@@ -1,5 +1,5 @@
 ---
-title: CInterfaceArray sınıfı | Microsoft Docs
+title: Cınterfacearray sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36a24eadea87d0d34adf0f577b321fa16a7cfc86
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c33e0783acfba1b460894ac8f5dde80e61780762
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359468"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882730"
 ---
-# <a name="cinterfacearray-class"></a>CInterfaceArray sınıfı
-Bu sınıf, bir dizi COM arabirim işaretçileri oluşturulurken yararlı yöntemleri sağlar.  
+# <a name="cinterfacearray-class"></a>Cınterfacearray sınıfı
+Bu sınıf, bir COM arabirimi işaretçiler dizisi oluştururken kullanışlı yöntemler sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,11 +38,11 @@ class CInterfaceArray :
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `I`  
- Depolanacak işaretçi türünü belirleyen bir COM arabirimi.  
+ *I*  
+ Depolanacak işaretçi türü belirten bir COM arabirimi.  
   
- `piid`  
- Bir işaretçi IID `I`.  
+ *piid*  
+ Laboratuvardaki işaretçisi *miyim*.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -50,12 +50,12 @@ class CInterfaceArray :
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CInterfaceArray::CInterfaceArray](#cinterfacearray)|Arabirim dizi Oluşturucusu.|  
+|[CInterfaceArray::CInterfaceArray](#cinterfacearray)|Arabirimi dizi için oluşturucu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, bir oluşturucu ve COM arabirim işaretçileri dizisi oluşturmak için türetilen yöntemler sağlar. Kullanım [CInterfaceList](../../atl/reference/cinterfacelist-class.md) listesini zaman gereklidir.  
+ Bu sınıf, bir oluşturucu ve bir COM arabirimi işaretçiler dizisi oluşturmak için türetilmiş yöntemleri sağlar. Kullanım [Cınterfacelist](../../atl/reference/cinterfacelist-class.md) listesini zaman gereklidir.  
   
- Daha fazla bilgi için bkz: [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
+ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CAtlArray`  
@@ -78,5 +78,5 @@ CInterfaceArray() throw();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CAtlArray sınıfı](../../atl/reference/catlarray-class.md)   
  [CComQIPtr sınıfı](../../atl/reference/ccomqiptr-class.md)   
- [CComQIPtrElementTraits sınıfı](../../atl/reference/ccomqiptrelementtraits-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Ccomqıptrelementtraits sınıfı](../../atl/reference/ccomqiptrelementtraits-class.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

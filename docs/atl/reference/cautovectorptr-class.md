@@ -23,18 +23,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df21eabe70c1d9ed8684fa1409e24dcdc76ffec0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 520e23432ee4691a5018221aa3a8d44553875f80
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362251"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37882081"
 ---
 # <a name="cautovectorptr-class"></a>CAutoVectorPtr sınıfı
-Bu sınıf vektör kullanarak yeni bir akıllı işaretçi nesneyi temsil eder ve delete işleçleri.  
+Bu sınıf, vektör kullanarak yeni bir akıllı işaretçi nesnesinin temsil eder ve delete işleçleri.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,16 +54,16 @@ class CAutoVectorPtr
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CAutoVectorPtr::CAutoVectorPtr](#cautovectorptr)|Oluşturucu.|  
-|[CAutoVectorPtr:: ~ CAutoVectorPtr](#dtor)|Yok Edicisi.|  
+|[CAutoVectorPtr:: ~ CAutoVectorPtr](#dtor)|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAutoVectorPtr::Allocate](#allocate)|Gösterdiği nesneler dizisi gerektirdiği bellek ayırmak için bu yöntemi çağırabilmeniz `CAutoVectorPtr`.|  
-|[CAutoVectorPtr::Attach](#attach)|Varolan bir işaretçi sahipliğini almak için bu yöntemi çağırın.|  
-|[CAutoVectorPtr::Detach](#detach)|Bir işaretçi sahipliğini serbest bırakmak için bu yöntemi çağırın.|  
-|[CAutoVectorPtr::Free](#free)|Gösterdiği bir nesneyi silmek için bu yöntemi çağırın bir `CAutoVectorPtr`.|  
+|[CAutoVectorPtr::Allocate](#allocate)|İşaret ettiği nesneler dizisi için gerekli bellek ayırmak için bu yöntemi çağırın `CAutoVectorPtr`.|  
+|[CAutoVectorPtr::Attach](#attach)|Var olan bir işaretçi sahipliğini almak için bu yöntemi çağırın.|  
+|[CAutoVectorPtr::Detach](#detach)|Bir işaretçi sahipliğini bırakmak için bu yöntemi çağırın.|  
+|[CAutoVectorPtr::Free](#free)|İşaret ettiği nesnenin silmek için bu yöntemi çağıran bir `CAutoVectorPtr`.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -79,46 +79,46 @@ class CAutoVectorPtr
 |[CAutoVectorPtr::m_p](#m_p)|İşaretçi veri üye değişkeni.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf oluşturmak ve kapsamının dışına düştüğünde otomatik olarak kaynak kullanımını azaltarak bellek sızıntıları karşı korunmasına yardımcı olacak bir akıllı işaretçi yönetmek için yöntemler sağlar. `CAutoVectorPtr` benzer `CAutoPtr`, bu tek fark `CAutoVectorPtr` kullanan [vektör yeni&#91; &#93; ](../../standard-library/new-operators.md#op_new_arr) ve [vektör silme&#91; &#93; ](../../standard-library/new-operators.md#op_delete_arr) ayırmak ve belleği boşaltmak için C++ yerine **yeni** ve **silmek** işleçler. Bkz: [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) , koleksiyon sınıfları `CAutoVectorPtr` gereklidir.  
+ Bu sınıf, oluşturmak ve kapsam dışına düştüğünde otomatik olarak kaynakları boşaltma tarafından bellek sızıntılarını karşı korunmasına yardımcı olacak akıllı bir işaretçi yönetmek için yöntemler sağlar. `CAutoVectorPtr` benzer `CAutoPtr`, tek fark, olan `CAutoVectorPtr` kullanan [yeni vektör&#91; &#93; ](../../standard-library/new-operators.md#op_new_arr) ve [vektör silme&#91; &#93; ](../../standard-library/new-operators.md#op_delete_arr) ayırmak ve belleği boşaltmak için C++ yerine **yeni** ve **Sil** işleçleri. Bkz: [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) , koleksiyon sınıfları `CAutoVectorPtr` gereklidir.  
 
   
- Bkz: [CAutoPtr](../../atl/reference/cautoptr-class.md) akıllı işaretçi sınıfı kullanma örneği için.  
+ Bkz: [CAutoPtr](../../atl/reference/cautoptr-class.md) akıllı işaretçi sınıfının kullanma örneği için.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
 ##  <a name="allocate"></a>  CAutoVectorPtr::Allocate  
- Gösterdiği nesneler dizisi gerektirdiği bellek ayırmak için bu yöntemi çağırabilmeniz `CAutoVectorPtr`.  
+ İşaret ettiği nesneler dizisi için gerekli bellek ayırmak için bu yöntemi çağırın `CAutoVectorPtr`.  
   
 ```
 bool Allocate(size_t nElements) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `nElements`  
+ *nElements*  
  Dizideki öğelerin sayısı  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ayrılmış bellek başarılı olduğunda true değerini döndürür, başarısız olduğunda false.  
+ Ayrılan bellek başarıyla ise true değeri döndürür, başarısız olduğunda false.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata ayıklama derlemelerinde, bir onaylama işlemi hatasına oluşacaktır [CAutoVectorPtr::m_p](#m_p) üye değişkeni şu anda işaret var olan bir değerle; diğer bir deyişle, NULL değerine eşit değil.  
+ Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir [CAutoVectorPtr::m_p](#m_p) üye değişkeni şu anda var olan bir değere işaret eder; diğer bir deyişle, NULL değerine eşit değil.  
   
 ##  <a name="attach"></a>  CAutoVectorPtr::Attach  
- Varolan bir işaretçi sahipliğini almak için bu yöntemi çağırın.  
+ Var olan bir işaretçi sahipliğini almak için bu yöntemi çağırın.  
   
 ```
 void Attach(T* p) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `p`  
- `CAutoVectorPtr` Nesne sahipliği Bu işaretçinin götürür.  
+ *p*  
+ `CAutoVectorPtr` Nesne, işaretçi sahipliğini alır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman bir `CAutoVectorPtr` nesnesini bir işaretçi sahipliğini alır, kapsam dışına çıktığında otomatik olarak işaretçi ve ayrılmış tüm verileri silecektir. Varsa [CAutoVectorPtr::Detach](#detach) olduğu adlı Programcı yeniden herhangi boşaltma sorumluluğunu verilen kaynakları tahsis edilir.  
+ Olduğunda bir `CAutoVectorPtr` nesne, işaretçi sahipliğini alır, kapsam dışına çıktığında bunu otomatik olarak işaretçi ve ayrılan tüm verileri siler. Varsa [CAutoVectorPtr::Detach](#detach) olan çağrılır, programcı yeniden herhangi boşaltma sorumluluğunu verilen kaynakları tahsis edilir.  
   
- Hata ayıklama derlemelerinde, bir onaylama işlemi hatasına oluşacaktır [CAutoVectorPtr::m_p](#m_p) üye değişkeni şu anda işaret var olan bir değerle; diğer bir deyişle, NULL değerine eşit değil.  
+ Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir [CAutoVectorPtr::m_p](#m_p) üye değişkeni şu anda var olan bir değere işaret eder; diğer bir deyişle, NULL değerine eşit değil.  
   
 ##  <a name="cautovectorptr"></a>  CAutoVectorPtr::CAutoVectorPtr  
  Oluşturucu.  
@@ -130,14 +130,14 @@ CAutoVectorPtr(CAutoVectorPtr<T>& p) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `p`  
- Varolan bir işaretçi.  
+ *p*  
+ Var olan bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CAutoVectorPtr` Nesne var olan bir işaretçi kullanılarak oluşturulabilir, bu durumda işaretçinin sahipliğini aktarır.  
+ `CAutoVectorPtr` Nesne var olan bir işaretçi kullanarak oluşturulabilir, bu durumda işaretçi sahipliğini aktarır.  
   
 ##  <a name="dtor"></a>  CAutoVectorPtr:: ~ CAutoVectorPtr  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CAutoVectorPtr() throw();
@@ -147,27 +147,27 @@ CAutoVectorPtr(CAutoVectorPtr<T>& p) throw();
  Ayrılan tüm kaynakları serbest bırakır. Çağrıları [CAutoVectorPtr::Free](#free).  
   
 ##  <a name="detach"></a>  CAutoVectorPtr::Detach  
- Bir işaretçi sahipliğini serbest bırakmak için bu yöntemi çağırın.  
+ Bir işaretçi sahipliğini bırakmak için bu yöntemi çağırın.  
   
 ```
 T* Detach() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçinin kopyasını döndürür.  
+ İşaretçiyi bir kopyasını döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi sahipliğini serbest bırakır, ayarlar [CAutoVectorPtr::m_p](#m_p) NULL, üye değişkeni ve işaretçiyi kopyasını döndürür. Çağırdıktan sonra **ayırma**, bunu herhangi boşaltmak için programcı kadar kaynaklar ayrıldığı `CAutoVectorPtr` nesnesi önceden kabul sorumluluk.  
+ Bir işaretçi sahipliğini bırakır, ayarlar [CAutoVectorPtr::m_p](#m_p) üye değişkeni null ve işaretçi bir kopyasını döndürür. Arama sonra `Detach`, bunu herhangi boşaltmak için programcı kadar kaynakları ayrıldığı `CAutoVectorPtr` nesnesi daha önce kabul sorumluluk.  
   
 ##  <a name="free"></a>  CAutoVectorPtr::Free  
- Gösterdiği bir nesneyi silmek için bu yöntemi çağırın bir `CAutoVectorPtr`.  
+ İşaret ettiği nesnenin silmek için bu yöntemi çağıran bir `CAutoVectorPtr`.  
   
 ```
 void Free() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından için nesne işaret `CAutoVectorPtr` serbest bırakılmaz ve [CAutoVectorPtr::m_p](#m_p) üye değişkeni NULL olarak ayarlanır.  
+ Nesne tarafından işaret edilen `CAutoVectorPtr` serbest bırakılır ve [CAutoVectorPtr::m_p](#m_p) üye değişkeni, NULL olarak ayarlanır.  
   
 ##  <a name="m_p"></a>  CAutoVectorPtr::m_p  
  İşaretçi veri üye değişkeni.  
@@ -177,7 +177,7 @@ T* m_p;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye değişkeni işaretçi bilgileri tutar.  
+ Bu üye değişkeni, işaretçi bilgileri tutar.  
   
 ##  <a name="operator_eq"></a>  CAutoVectorPtr::operator =  
  Atama işleci.  
@@ -187,14 +187,14 @@ CAutoVectorPtr<T>& operator= (CAutoVectorPtr<T>& p) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `p`  
+ *p*  
  Bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir başvuru döndürür bir **CAutoVectorPtr\< T >**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Atama işleci ayırır `CAutoVectorPtr` geçerli bir işaretçi bir nesneden ve yeni işaretçi ekler `p`, onun yerine.  
+ Atama işleci ayırır `CAutoVectorPtr` herhangi bir geçerli işaretçi nesneden ve yeni bir işaretçi ekler *p*, onun yerine.  
   
 ##  <a name="operator_t__star"></a>  CAutoVectorPtr::operator T *  
  Atama işleci.  
@@ -204,8 +204,8 @@ operator T*() const throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sınıf şablonunda tanımlanan nesne veri türü için bir işaretçi döndürür.  
+ Sınıf şablonunda tanımlanan nesne veri türü bir işaretçi döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CAutoPtr sınıfı](../../atl/reference/cautoptr-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

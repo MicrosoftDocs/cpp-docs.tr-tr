@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da050dbf2b4052aeadd9fe8380857a0ba15b264f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b2c571733aca48ddbfd881a294786d1de334c7c3
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360926"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37884671"
 ---
 # <a name="ccomsimplethreadallocator-class"></a>CComSimpleThreadAllocator sınıfı
-Bu sınıf sınıfı için iş parçacığı seçimi yönetir `CComAutoThreadModule`.  
+Bu sınıf, sınıf için iş parçacığı seçimi yönetir `CComAutoThreadModule`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,33 +46,33 @@ class CComSimpleThreadAllocator
 |[CComSimpleThreadAllocator::GetThread](#getthread)|Bir iş parçacığı seçer.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComSimpleThreadAllocator` iş parçacığı seçimi için yönetir [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md). `CComSimpleThreadAllocator::GetThread` yalnızca her iş parçacığı geçiş yapar ve bir sonraki sırada döndürür.  
+ `CComSimpleThreadAllocator` iş parçacığı seçimi yönetir [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md). `CComSimpleThreadAllocator::GetThread` yalnızca her bir iş parçacığı arasında geçiş yapar ve bir dizi döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
   
 ##  <a name="getthread"></a>  CComSimpleThreadAllocator::GetThread  
- Bir iş parçacığı sırayla sonraki iş parçacığı belirterek seçer.  
+ Bir iş parçacığı dizisinde sonraki iş parçacığını belirterek seçer.  
   
 ```
 int GetThread(CComApartment* /* pApt */, int nThreads);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pApt`  
+ *pApt*  
  ATL'ın varsayılan uygulamasında kullanılmaz.  
   
- `nThreads`  
- EXE modülündeki iş parçacığı sayısı.  
+ *nThreads*  
+ EXE modülü iş parçacıklarının sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sıfır arasında bir tamsayı ve ( `nThreads` - 1). Bir iş parçacığı EXE modülünde tanımlar.  
+ Sıfır arasında bir tamsayı ve (*nThreads* - 1). EXE modülündeki iş parçacıklarından tanımlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçersiz kılabilirsiniz `GetThread` seçimin farklı bir yöntem sağlamak ya da yapmak için kullanımı `pApt` parametresi.  
+ Geçersiz kılabilirsiniz `GetThread` seçimin farklı bir yöntem sağlamak veya yapmak için kullanım *pApt* parametresi.  
   
- `GetThread` tarafından çağrılır [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).  
+ `GetThread` çağıran [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComApartment sınıfı](../../atl/reference/ccomapartment-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

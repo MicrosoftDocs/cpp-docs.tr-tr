@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2529a38a7737fc45573f5c151477e0a5754cde50
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7017ee7b29e8e41e4aa33f95560a10127dc812e7
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854577"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38960898"
 ---
 # <a name="unarynegate-class"></a>unary_negate Sınıfı
 
-Belirtilen birli işlevinin dönüş değeri üzerindeki geçersiz kılar üye işlevi sağlayan bir şablon sınıfı.
+Belirtilen birli işlevi dönüş değeri verilerek bir üye işlevi sağlayan bir şablon sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,19 +42,21 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-`Func` Tasarruflarını için birli işlev.
+*FUNC*  
+ Negatif birli işlevi.
 
-`left` Tekli değilleme uygulanmış işlevine işlenen.
+*Sol*  
+ Birli işlevi negatif işleneni.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Birli işlevi değilleme.
+Birli işlevi negation.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı birli işlevi nesne _ bir kopyasını depolar *Func.* Üye işlevini tanımlar `operator()` döndürme olarak **!**\_ *FUNC(left).*
+Şablon sınıfı bir birli işlevi nesne _ kopyasını depoladığından *Func.* Onun üye işlevini tanımlar `operator()` döndüren olarak **!**\_ *FUNC(left).*
 
-Oluşturucusunun `unary_negate` nadiren doğrudan kullanılır. Yardımcı işlevini [not1](../standard-library/functional-functions.md#not1) bildirme ve kullanma için daha kolay bir yol sağlayan **unary_negator** bağdaştırıcısı koşulu.
+Oluşturucusuna `unary_negate` doğrudan nadiren kullanılır. Yardımcı işlevini [not1](../standard-library/functional-functions.md#not1) bildirme ve kullanma için daha kolay bir yol sağlayan **unary_negator** bağdaştırıcısı koşul.
 
 ## <a name="example"></a>Örnek
 
@@ -110,7 +112,7 @@ The number of elements in v1 not greater than 10 is: 3.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

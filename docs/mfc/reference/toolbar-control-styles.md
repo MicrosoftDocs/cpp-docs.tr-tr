@@ -14,27 +14,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1958c83ef5a0eec5f3c7f5873451edd3839146be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 35b5b87944f2b0f9ce78adbe42b59d92b98a6e5a
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33373201"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37885841"
 ---
 # <a name="toolbar-control-styles"></a>ToolBar Denetim Stilleri
-[CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) görünümünü belirleyen stili bayrakları kümesi ve düğme davranışını sahiptir. Bu bayrak birleşimi çağırarak ayarlayabileceğiniz [CMFCToolBarButton::SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle). Bu konu, stil bayrak değerleri ve anlamlarını listeler.  
+[CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) düğmesinin davranışını ve görünümünü belirleyen bayrakları stil kümesi vardır. Bu bayrakların birleşimi çağırarak ayarlayabileceğiniz [CMFCToolBarButton::SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle). Bu konu, stil bayrak değerleri ve anlamlarını listeler.  
   
 ## <a name="property-values"></a>Özellik değerleri  
- Aşağıdaki değerleri denetimini temsil eden düğmesi türünü belirleyin:  
+ Aşağıdaki değerleri denetimini temsil eden bir düğme türünü belirleyin:  
   
  TBBS_BUTTON  
  Standart basma düğmesi (varsayılan).  
   
  TBBS_CHECKBOX  
- onay kutusunu seçin.  
+ Onay kutusunu seçin.  
   
  TBBS_CHECKGROUP  
- Onay kutularını birtakım başlangıcı.  
+ Onay kutularından oluşan bir grubu başlangıcı.  
   
  TBBS_GROUP  
  Bir grup düğmesi başlangıcı.  
@@ -45,26 +45,26 @@ ms.locfileid: "33373201"
  Aşağıdaki değerleri denetimi geçerli durumunu temsil eder:  
   
  TBBS_CHECKED  
- Onay kutusu işaretliyse.  
+ Onay kutusu işaretli.  
   
  TBBS_DISABLED  
- Denetim devre dışı bırakıldı.  
+ Denetim devre dışıdır.  
   
  TBBS_INDETERMINATE  
- Onay kutusunu belirlenmemiş bir durumda.  
+ Onay kutusu belirsiz bir durumda.  
   
  TBBS_PRESSED  
  Düğmeye basıldığında.  
   
- Aşağıdaki değeri araç çubuğu düğmesini yerleşimini değiştirir:  
+ Aşağıdaki değeri, araç çubuğundaki düğmenin düzenini değiştirir:  
   
  TBBS_BREAK  
- Öğeyi sütunları ayırarak olmadan yeni bir satır veya yeni bir sütun yerleştirir.  
+ Öğesi, sütun ayırıcı olmadan yeni bir satır veya yeni bir sütun yerleştirir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli stili depolanan [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle). Yeni bir değer ayarlamayın `m_nStyle` doğrudan bazı türetilen sınıflar çağırdığınızda ek işleme gerçekleştirdiğinden `SetStyles`.  
+ Geçerli stili depolanan [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle). Yeni bir değere ayarlamayın `m_nStyle` doğrudan bazı türetilmiş sınıflar çağırdığınızda, ek işleme gerçekleştirdiğinden `SetStyles`.  
   
- Görsel Yöneticisi her durum düğmeleri görünümünü belirler. Bkz: [seri hale getirme Yöneticisi](../../mfc/visualization-manager.md) daha fazla bilgi için.  
+ Görsel yöneticiyi düğmelerin her durumda görünümünü belirler. Bkz: [seri hale getirme Yöneticisi](../../mfc/visualization-manager.md) daha fazla bilgi için.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxtoolbarbutton.h  

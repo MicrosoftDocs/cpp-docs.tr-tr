@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109d7ee960b6788468c473e88321a00a38fb4379
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7ff0fffeffd10f382f4d0d4fe6361c2eddac55e3
+ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862396"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38963137"
 ---
-# <a name="ltregexgt"></a>&lt;Regex&gt;
+# <a name="ltregexgt"></a>&lt;Normal ifade&gt;
 
-Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../standard-library/regular-expressions-cpp.md)ve birkaç şablon sınıfları ve işlevleri metin bir normal ifade nesnesi için eşleşme aramak için.
+Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../standard-library/regular-expressions-cpp.md), birkaç şablon sınıf ve eşleşen bir normal ifade nesnesi için metin aranacak işlev.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,73 +35,73 @@ Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir normal ifade nesnesi oluşturmak için şablon sınıfını kullanmak [basic_regex sınıfı](../standard-library/basic-regex-class.md) veya kendi özelleştirmeleri [regex](../standard-library/regex-typedefs.md#regex) ve [wregex](../standard-library/regex-typedefs.md#wregex), söz dizimi bayraklarını ile birlikte tür [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type).
+Bir normal ifade nesnesi oluşturmak için Şablon sınıfı kullanın [basic_regex sınıfı](../standard-library/basic-regex-class.md) veya kendi uzmanlıkları [regex](../standard-library/regex-typedefs.md#regex) ve [wchar_t](../standard-library/regex-typedefs.md#wregex)söz dizimi bayraklarını birlikte tür [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type).
 
-Metin bir normal ifade nesnesi için eşleşme aramak için şablon işlevleri kullanmak [regex_match](../standard-library/regex-functions.md#regex_match) ve [regex_search](../standard-library/regex-functions.md#regex_search), eşleşme bayrakları türü ile birlikte [regex_constants::match_ flag_type](../standard-library/regex-constants-class.md#match_flag_type). Şablon sınıfı kullanarak bu işlevler sonuçlar döndürebilir [match_results sınıfı](../standard-library/match-results-class.md) ve kendi özelleştirmeleri [cmatch](../standard-library/regex-typedefs.md#cmatch), [wcmatch](../standard-library/regex-typedefs.md#wcmatch), [smatch](../standard-library/regex-typedefs.md#smatch), ve [wsmatch](../standard-library/regex-typedefs.md#wsmatch), Şablon sınıfı ile birlikte [sub_match sınıfı](../standard-library/sub-match-class.md) ve kendi özelleştirmeleri [csub_match](../standard-library/regex-typedefs.md#csub_match), [wcsub_ eşleşen](../standard-library/regex-typedefs.md#wcsub_match), [ssub_match](../standard-library/regex-typedefs.md#ssub_match), ve [wssub_match](../standard-library/regex-typedefs.md#wssub_match).
+Metin bir normal ifade nesnesine eşleşme aramak için şablon işlevleri kullanmak [regex_match](../standard-library/regex-functions.md#regex_match) ve [regex_search](../standard-library/regex-functions.md#regex_search)tür eşleşme bayrağı ile birlikte [regex_constants::match_ flag_type](../standard-library/regex-constants-class.md#match_flag_type). Bu işlevler, Şablon sınıfı kullanarak sonuçları döndürmek [match_results sınıfı](../standard-library/match-results-class.md) ve kendi uzmanlıkları [cmatch](../standard-library/regex-typedefs.md#cmatch), [wcmatch](../standard-library/regex-typedefs.md#wcmatch), [smatch](../standard-library/regex-typedefs.md#smatch), ve [wsmatch](../standard-library/regex-typedefs.md#wsmatch)Şablon sınıfı ile birlikte [sub_match sınıfı](../standard-library/sub-match-class.md) ve kendi uzmanlıkları [csub_match](../standard-library/regex-typedefs.md#csub_match), [wcsub_ eşleşen](../standard-library/regex-typedefs.md#wcsub_match), [ssub_match](../standard-library/regex-typedefs.md#ssub_match), ve [wssub_match](../standard-library/regex-typedefs.md#wssub_match).
 
-Normal ifade nesnesi eşleşen metni değiştirmek için şablon işlevi kullanın [regex_replace](../standard-library/regex-functions.md#regex_replace), eşleşme bayrakları türü ile birlikte [regex_constants::match_flag_type](../standard-library/regex-constants-class.md#match_flag_type).
+Bir normal ifade nesnesi eşleşen metni değiştirmek için şablon işlevini [regex_replace](../standard-library/regex-functions.md#regex_replace)tür eşleşme bayrağı ile birlikte [regex_constants::match_flag_type](../standard-library/regex-constants-class.md#match_flag_type).
 
-Normal ifade nesnesi birden çok eşleşme ile yinelemek için şablon sınıfları kullanan [regex_iterator sınıfı](../standard-library/regex-iterator-class.md) ve [regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md) veya kendi özelleştirmeleri [ cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator), [sregex_iterator](../standard-library/regex-typedefs.md#sregex_iterator), [wcregex_iterator](../standard-library/regex-typedefs.md#wcregex_iterator), [wsregex_iterator](../standard-library/regex-typedefs.md#wsregex_iterator), [cregex_token_iterator ](../standard-library/regex-typedefs.md#cregex_token_iterator), [sregex_token_iterator](../standard-library/regex-typedefs.md#sregex_token_iterator), [wcregex_token_iterator](../standard-library/regex-typedefs.md#wcregex_token_iterator), veya [wsregex_token_iterator](../standard-library/regex-typedefs.md#wsregex_token_iterator), eşleşme bayrakları türü ile birlikte [regex_constants::match_flag_type](../standard-library/regex-constants-class.md#match_flag_type).
+Bir normal ifade nesnesi birden çok eşleşme ile yinelemek için şablon sınıfları kullanın [regex_iterator sınıfı](../standard-library/regex-iterator-class.md) ve [regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md) veya kendi uzmanlıkları [ cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator), [sregex_iterator](../standard-library/regex-typedefs.md#sregex_iterator), [wcregex_iterator](../standard-library/regex-typedefs.md#wcregex_iterator), [wsregex_iterator](../standard-library/regex-typedefs.md#wsregex_iterator), [cregex_token_iterator ](../standard-library/regex-typedefs.md#cregex_token_iterator), [sregex_token_iterator](../standard-library/regex-typedefs.md#sregex_token_iterator), [wcregex_token_iterator](../standard-library/regex-typedefs.md#wcregex_token_iterator), veya [wsregex_token_iterator](../standard-library/regex-typedefs.md#wsregex_token_iterator)tür eşleşme bayrağı ile birlikte [regex_constants::match_flag_type](../standard-library/regex-constants-class.md#match_flag_type).
 
-Normal ifadeler dilbilgisi ayrıntılarını değiştirmek için normal ifade nitelikler uygulayan bir sınıf yazma.
+Normal ifade dilbilgisi ayrıntılarını değiştirmek için normal ifade niteliklerini uygulayan bir sınıf yazın.
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
 |[basic_regex](../standard-library/basic-regex-class.md)|Normal bir ifadeyi sarar.|
-|[match_results](../standard-library/match-results-class.md)|Bir dizi submatches tutar.|
-|[regex_constants](../standard-library/regex-constants-class.md)|Ayrı tutma sabitleri getirilebilir.|
-|[regex_error](../standard-library/regex-error-class.md)|Bozuk bir normal ifade bildirir.|
-|[regex_iterator](../standard-library/regex-iterator-class.md)|Eşleşme sonuçları arasında yineler.|
+|[match_results](../standard-library/match-results-class.md)|Bir dizi alt eşleşmelerin tutar.|
+|[regex_constants](../standard-library/regex-constants-class.md)|Çeşitli sabitleri tutar.|
+|[regex_error](../standard-library/regex-error-class.md)|Hatalı bir normal ifade bildirir.|
+|[regex_iterator](../standard-library/regex-iterator-class.md)|Eşleştirme sonuçları yinelenir.|
 |[regex_traits](../standard-library/regex-traits-class.md)|Eşleşen öğelerin özelliklerini açıklar.|
-|[regex_traits\<char >](../standard-library/regex-traits-char-class.md)|Özelliklerini açıklayan `char` eşleme.|
-|[regex_traits<wchar_t>](../standard-library/regex-traits-wchar-t-class.md)|Özelliklerini açıklayan `wchar_t` eşleme.|
-|[regex_token_iterator](../standard-library/regex-token-iterator-class.md)|Submatches yineler.|
-|[sub_match](../standard-library/sub-match-class.md)|Bir submatch açıklar.|
+|[regex_traits\<char >](../standard-library/regex-traits-char-class.md)|Özellikleri açıklanmaktadır **char** eşlemek için.|
+|[regex_traits<wchar_t>](../standard-library/regex-traits-wchar-t-class.md)|Özellikleri açıklanmaktadır **wchar_t** eşlemek için.|
+|[regex_token_iterator](../standard-library/regex-token-iterator-class.md)|Alt eşleşmeleri yinelenir.|
+|[sub_match](../standard-library/sub-match-class.md)|Bir alt eşleşme açıklar.|
 
 ### <a name="type-definitions"></a>Tür tanımları
 
 |||
 |-|-|
-|[cmatch](../standard-library/regex-typedefs.md#cmatch)|Tür tanımı için `char` `match_results`.|
-|[cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator)|Tür tanımı için `char` `regex_iterator`.|
-|[cregex_token_iterator](../standard-library/regex-typedefs.md#cregex_token_iterator)|Tür tanımı için `char` `regex_token_iterator`.|
-|[csub_match](../standard-library/regex-typedefs.md#csub_match)|Tür tanımı için `char` `sub_match`.|
-|[Regex](../standard-library/regex-typedefs.md#regex)|Tür tanımı için `char` `basic_regex`.|
-|[smatch](../standard-library/regex-typedefs.md#smatch)|Tür tanımı için `string` `match_results`.|
-|[sregex_iterator](../standard-library/regex-typedefs.md#sregex_iterator)|Tür tanımı için `string` `regex_iterator`.|
-|[sregex_token_iterator](../standard-library/regex-typedefs.md#sregex_token_iterator)|Tür tanımı için `string` `regex_token_iterator`.|
-|[ssub_match](../standard-library/regex-typedefs.md#ssub_match)|Tür tanımı için `string` `sub_match`.|
-|[wcmatch](../standard-library/regex-typedefs.md#wcmatch)|Tür tanımı için `wchar_t` `match_results`.|
-|[wcregex_iterator](../standard-library/regex-typedefs.md#wcregex_iterator)|Tür tanımı için `wchar_t` `regex_iterator`.|
-|[wcregex_token_iterator](../standard-library/regex-typedefs.md#wcregex_token_iterator)|Tür tanımı için `wchar_t` `regex_token_iterator`.|
-|[wcsub_match](../standard-library/regex-typedefs.md#wcsub_match)|Tür tanımı için `wchar_t` `sub_match`.|
-|[wregex](../standard-library/regex-typedefs.md#wregex)|Tür tanımı için `wchar_t` `basic_regex`.|
-|[wsmatch](../standard-library/regex-typedefs.md#wsmatch)|Tür tanımı için `wstring` `match_results`.|
-|[wsregex_iterator](../standard-library/regex-typedefs.md#wsregex_iterator)|Tür tanımı için `wstring` `regex_iterator`.|
-|[wsregex_token_iterator](../standard-library/regex-typedefs.md#wsregex_token_iterator)|Tür tanımı için `wstring` `regex_token_iterator`.|
-|[wssub_match](../standard-library/regex-typedefs.md#wssub_match)|Tür tanımı için `wstring` `sub_match`.|
+|[cmatch](../standard-library/regex-typedefs.md#cmatch)|Tür tanımına için **char** `match_results`.|
+|[cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator)|Tür tanımına için **char** `regex_iterator`.|
+|[cregex_token_iterator](../standard-library/regex-typedefs.md#cregex_token_iterator)|Tür tanımına için **char** `regex_token_iterator`.|
+|[csub_match](../standard-library/regex-typedefs.md#csub_match)|Tür tanımına için **char** `sub_match`.|
+|[Normal ifade](../standard-library/regex-typedefs.md#regex)|Tür tanımına için **char** `basic_regex`.|
+|[smatch](../standard-library/regex-typedefs.md#smatch)|Tür tanımına için `string` `match_results`.|
+|[sregex_iterator](../standard-library/regex-typedefs.md#sregex_iterator)|Tür tanımına için `string` `regex_iterator`.|
+|[sregex_token_iterator](../standard-library/regex-typedefs.md#sregex_token_iterator)|Tür tanımına için `string` `regex_token_iterator`.|
+|[ssub_match](../standard-library/regex-typedefs.md#ssub_match)|Tür tanımına için `string` `sub_match`.|
+|[wcmatch](../standard-library/regex-typedefs.md#wcmatch)|Tür tanımına için **wchar_t** `match_results`.|
+|[wcregex_iterator](../standard-library/regex-typedefs.md#wcregex_iterator)|Tür tanımına için **wchar_t** `regex_iterator`.|
+|[wcregex_token_iterator](../standard-library/regex-typedefs.md#wcregex_token_iterator)|Tür tanımına için **wchar_t** `regex_token_iterator`.|
+|[wcsub_match](../standard-library/regex-typedefs.md#wcsub_match)|Tür tanımına için **wchar_t** `sub_match`.|
+|[wchar_t](../standard-library/regex-typedefs.md#wregex)|Tür tanımına için **wchar_t** `basic_regex`.|
+|[wsmatch](../standard-library/regex-typedefs.md#wsmatch)|Tür tanımına için `wstring` `match_results`.|
+|[wsregex_iterator](../standard-library/regex-typedefs.md#wsregex_iterator)|Tür tanımına için `wstring` `regex_iterator`.|
+|[wsregex_token_iterator](../standard-library/regex-typedefs.md#wsregex_token_iterator)|Tür tanımına için `wstring` `regex_token_iterator`.|
+|[wssub_match](../standard-library/regex-typedefs.md#wssub_match)|Tür tanımına için `wstring` `sub_match`.|
 
 ### <a name="functions"></a>İşlevler
 
 |İşlev|Açıklama|
 |-|-|
-|[regex_match](../standard-library/regex-functions.md#regex_match)|Tam olarak normal ifadeyle eşleşir.|
-|[regex_replace](../standard-library/regex-functions.md#regex_replace)|Normal ifadeler değiştirir eşleşmedi.|
-|[regex_search](../standard-library/regex-functions.md#regex_search)|Normal ifade eşleştirmesi arar.|
-|[Değiştirme](../standard-library/regex-functions.md#swap)|Değiştirir `basic_regex` veya `match_results` nesneleri.|
+|[regex_match](../standard-library/regex-functions.md#regex_match)|Tam olarak normal bir ifadeyle eşleşiyor.|
+|[regex_replace](../standard-library/regex-functions.md#regex_replace)|Normal ifadeler değiştirir eşleşti.|
+|[regex_search](../standard-library/regex-functions.md#regex_search)|Bir normal ifade eşleştirmesi arar.|
+|[değiştirme](../standard-library/regex-functions.md#swap)|Değiştirir `basic_regex` veya `match_results` nesneleri.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator==](../standard-library/regex-operators.md#op_eq_eq)|Çeşitli nesneleri, eşit karşılaştırması.|
-|[operator!=](../standard-library/regex-operators.md#op_neq)|Karşılaştırma nesnelerin çeşitli eşit değil.|
-|[operator <](../standard-library/regex-operators.md#op_lt)|Çeşitli nesnelerin karşılaştırma küçüktür.|
-|[işleci\<=](../standard-library/regex-operators.md#op_gt_eq)|Karşılaştırma çeşitli nesnelerin küçüktür veya eşittir.|
-|[operator >](../standard-library/regex-operators.md#op_gt)|Karşılaştırma nesnelerin çeşitli büyüktür.|
-|[operator>=](../standard-library/regex-operators.md#op_gt_eq)|Büyük veya ona eşit olmak üzere çeşitli nesneleri karşılaştırması.|
+|[operator==](../standard-library/regex-operators.md#op_eq_eq)|Çeşitli nesneler eşit karşılaştırması.|
+|[operator!=](../standard-library/regex-operators.md#op_neq)|Çeşitli nesneler eşit değildir karşılaştırma.|
+|[işleç <](../standard-library/regex-operators.md#op_lt)|Karşılaştırma çeşitli nesnelerin küçüktür.|
+|[İşleci\<=](../standard-library/regex-operators.md#op_gt_eq)|Karşılaştırma çeşitli nesnelerin küçüktür veya eşittir.|
+|[operator >](../standard-library/regex-operators.md#op_gt)|Çeşitli nesneleri, büyüktür karşılaştırması.|
+|[operator>=](../standard-library/regex-operators.md#op_gt_eq)|Büyük veya buna eşit olmak üzere çeşitli nesneleri karşılaştırması.|
 |[işleç <<](../standard-library/regex-operators.md#op_lt_lt)|Ekler bir `sub_match` bir akış.|
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -19,11 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b64e9887e51666405d3c6c106b40c99528ea4510
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c6c8ad17195954feeeccb47896fa013302b6d7e3
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948114"
 ---
 # <a name="logical-negation-operator-"></a>Mantıksal Değilleme İşleci: !
 ## <a name="syntax"></a>Sözdizimi  
@@ -34,16 +35,16 @@ ms.lasthandoff: 05/03/2018
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Mantıksal değilleme işleci (**!**), işlenen anlamını tersine çevirir. İşlenen, aritmetik veya işaretçi türünde (veya aritmetik ya da işaretçi türü olarak değerlendirilen bir ifade) olmalıdır. İşlenen, örtülü olarak `bool` türüne dönüştürülür. Sonuç **true** dönüştürülmüş işleneni ise **false**; sonuç **false** dönüştürülmüş işleneni ise **doğru**. Sonuç, `bool` türündedir.  
+ Mantıksal değilleme işleci (**!**), işlenenin anlamını tersine çevirir. İşlenen, aritmetik veya işaretçi türünde (veya aritmetik ya da işaretçi türü olarak değerlendirilen bir ifade) olmalıdır. İşlenen örtülü olarak türüne dönüştürülür **bool**. Dönüştürülen işlenen FALSE ise, sonuç değeri True'dur; Dönüştürülen işlenen TRUE ise sonuç FALSE olur. Sonuç türünde **bool**.  
   
- Bir ifadenin *e*, tek terimli ifadesi **! *** e* ifade eşdeğerdir **(*** e* `==` 0), aşırı yüklenmiş işleçler söz konusu olduğu dışında.  
+ Bir ifade için *e*, birli ifadesi **! *** e* ifadesine eşdeğerdir **(*** e* `==` 0), aşırı yüklenmiş işleçler dahil olduğu dışında.  
   
 ## <a name="operator-keyword-for-"></a>! için İşleç Anahtar Sözcüğü  
- **Değil** işlecidir metin denk **!**. Erişmek için iki yolla **değil** programlarınızı işleci: üst bilgi dosyasını dahil `iso646.h`, veya ile derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneği.  
+ **Değil** işlecidir öğesinin metin eşdeğeridir **!**. Erişmenin iki yöntemi vardır **değil** programlarınızda işleci: üstbilgi dosyasını dahil `iso646.h`, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_Logical_NOT_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -58,5 +59,5 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Birli Aritmetik İşleçler](../c-language/unary-arithmetic-operators.md)

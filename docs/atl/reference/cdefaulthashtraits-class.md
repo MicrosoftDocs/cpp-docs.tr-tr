@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85cf9e27211763559617715a6c025055b25379fa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a87ecddfff7cb3096ae30d9da5d9e5b6913adcbd
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361518"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886251"
 ---
 # <a name="cdefaulthashtraits-class"></a>CDefaultHashTraits sınıfı
-Bu sınıf, karma değerleri hesaplamak için statik bir işlev sağlar.  
+Bu sınıf, karma değerleri hesaplamak için statik işlev sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,8 +36,8 @@ class CDefaultHashTraits
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Bir koleksiyonda depolanan verilerin türü.  
+ *T*  
+ Koleksiyonda depolanacak veri türü.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -45,32 +45,32 @@ class CDefaultHashTraits
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDefaultHashTraits::Hash](#hash)|(Statik) Verilen öğe için bir karma değer hesaplamak için bu işlevini çağırın.|  
+|[CDefaultHashTraits::Hash](#hash)|(Statik) Belirli bir öğe için bir karma değeri hesaplamak için bu işlevi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf için belirli bir öğenin bir karma değer döndürür tek bir statik işlevi içerir. Bu sınıf tarafından kullanılan [CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md).  
+ Bu sınıf belirli bir öğe için bir karma değer döndüren tek bir statik işlev içerir. Bu sınıf tarafından kullanılan [CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md).  
   
- Daha fazla bilgi için bkz: [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
+ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcoll.h  
   
 ##  <a name="hash"></a>  CDefaultHashTraits::Hash  
- Verilen öğe için bir karma değer hesaplamak için bu işlevini çağırın.  
+ Belirli bir öğe için bir karma değeri hesaplamak için bu işlevi çağırın.  
   
 ```
 static ULONG Hash(const T& element) throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `element`  
+ *Öğesi*  
  Öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Karma değer döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan karma algoritması çok basittir: dönüş değeri öğesi sayısıdır. Daha karmaşık bir algoritma gerekli olduğunda bu işlev geçersiz kılar.  
+ İçin varsayılan karma algoritması çok basittir: öğe numarası dönüş değeridir. Daha karmaşık bir algoritma gerekli olduğunda bu işlev geçersiz kılar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)

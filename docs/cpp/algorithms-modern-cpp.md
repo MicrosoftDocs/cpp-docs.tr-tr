@@ -12,23 +12,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fdd5742bb86992ce20f5a52f587c8557d46a97eb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7ce233b4ffa33873b752ebc409fb8570856acbff
+ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412302"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37940205"
 ---
 # <a name="algorithms-modern-c"></a>Algoritmalar (Modern C++)
-Algoritmalara kullanmanızı tavsiye ederiz Modern C++ programlama [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md). Önemli bazı örnekler şunlardır:  
+Modern C++ programlama için algoritmaları kullandığınız olan öneririz [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md). Önemli bazı örnekler şunlardır:  
   
--   `for_each`, varsayılan geçişi algoritma olduğu. (Ayrıca `transform` yerinde değil-semantiği için.)  
+-   **for_each**, varsayılan algoritmasıdır geçişi. (Ayrıca **dönüştürme** için değil, yerinde semantiği.)  
   
--   `find_if`, varsayılan arama algoritması olduğu.  
+-   **find_if**, varsayılan arama algoritması olduğu.  
   
--   `sort`, `lower_bound`ve sıralama ve arama algoritmaları diğer varsayılan.  
+-   **Sıralama**, **lower_bound**, sıralama ve arama algoritmaları diğer varsayılan.  
   
- Bir karşılaştırıcı yazmak için katı kullanmak `<` ve *Lambda'lar adlı* zaman şunları yapabilirsiniz.  
+ Karşılaştırıcı yazmak için katı kullanın **<** ve *adlandırılmış lambdalar* zaman şunları yapabilirsiniz.  
   
 ```cpp  
 auto comp = [](const widget& w1, const widget& w2)  
@@ -40,9 +40,9 @@ auto i = lower_bound( v.begin(), v.end(), comp );
 ```  
   
 ## <a name="loops"></a>Döngüler  
- Mümkün olduğunda, aralığın tabanlı kullanın `for` döngüler veya algoritması çağrıları ya da her ikisini de yerine elle yazılmış döngüler.`copy`, `transform`, `count_if`, `remove_if`, ve diğerleri gibi onları el yazısı döngüler daha iyi çünkü bunların amacı açıktır ve bunlar hata serbest kod yazmayı kolaylaştırır. Ayrıca, birçok C++ Standart Kitaplığı algoritması daha verimli hale uygulama iyileştirmeler vardır.  
+ Mümkün olduğunda, aralık tabanlı kullanın **için** döngüler veya algoritma çağrılarını ya da her ikisi de el ile yazılmış döngüler yerine. **kopyalama**, **dönüştürme**, **count_if**, **remove_if**, ve bunların amacı açıktır olduğundan, bunlar gibi diğerleri döngülerden daha iyidir ve hatasız kodlar yazmayı kolaylaştırmak. Ayrıca, birçok C++ Standart Kitaplığı algoritması daha verimli hale uygulama iyileştirmelerine sahiptir.  
   
- Bu gibi eski C++ yerine:  
+ Bunun gibi eski C++ yerine:  
   
 ```cpp  
 for ( auto i = strings.begin(); i != strings.end(); ++i ) {  
@@ -56,7 +56,7 @@ for ( ; i != v.end(); ++i ) {
 }  
 ```  
   
- Bu gibi Modern C++ kullanın:  
+ Modern C++ şu şekilde kullanın:  
   
 ```cpp  
 for_each( begin(strings), end(strings), [](string& s) {  
@@ -66,19 +66,19 @@ for_each( begin(strings), end(strings), [](string& s) {
 auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );  
 ```  
   
-### <a name="range-based-for-loops"></a>Döngüler için aralık tabanlı  
- Aralık tabanlı `for` döngü bir özelliktir C ++ 11 dil, C++ Standart Kitaplığı algoritması. Ancak, bu konudaki ilgiyi döngüleri hakkında gerektirir. Aralık tabanlı `for` döngüler uzantısı olan `for` anahtar sözcüğü ve değerleri aralığı yineleme döngüler yazmak için kolay ve verimli bir yolunu sağlar. C++ Standart Kitaplığı kapsayıcıları, dize ve diziler için hazır aralık tabanlı `for` döngüler. Bu yeni kullanıcı tanımlı tür yineleme sözdizimi etkinleştirmek için aşağıdaki Destek ekleyin:  
+### <a name="range-based-for-loops"></a>Aralık tabanlı for döngüleri  
+ Aralık tabanlı **için** döngü olan bir C ++ 11 dil özelliğidir, C++ Standart Kitaplığı algoritması. Ancak, döngüler hakkındaki bu tartışmada ilgiyi gerektirir. Aralık tabanlı **için** döngüler'ın bir uzantısı olan **için** anahtar sözcüğü ve bir değer aralığı boyunca üzerinde yineleme yapan döngüler yazmak için kullanışlı ve etkili bir yol sağlar. C++ Standart Kitaplığı kapsayıcıları, dizeleri ve diziler için aralık tabanlı **için** döngüleri. Bu yineleme sözdizimini kullanıcı tanımlı türüne yönelik etkinleştirmek için aşağıdaki desteği ekleyin:  
   
--   A `begin` yineleyici yapısı başına döndürür yöntemi ve bir `end` yapısı sonuna yineleyici döndürür yöntemi.  
+-   A **başlamak** yapının başlangıcına bir yineleyici döndüren bir yöntemi ve bir **son** yapının sonuna bir yineleyici döndüren yöntemi.  
   
--   Yineleyici bu yöntemleri için destek: `operator*`, `operator!=`, ve `operator++` (önek sürüm).  
+-   Bu yöntemler için yineleyicide destek: ** işleci *** **işleç! =**, ve **operator ++** (önek sürüm).  
   
- Bu yöntemler üyeleri veya tek başına işlevleri olabilir.  
+ Bu yöntemler, üye veya tek başına çalışan işlevler olabilir.  
   
 ## <a name="random-numbers"></a>Rastgele sayılar  
- Hiçbir gizli olmadığından, eski CRT `rand()` işlevi en length C++ topluluğuna açıklanan birçok açıkları vardır. Modern C++'da, bu eksik ile mücadele etmek zorunda değilsiniz — ya da kendi hep dağıtılmış rastgele sayı üreticisinin stok zorunda — hızlı ve kolay bir şekilde bunları oluşturmak için Araçlar C++ Standart kitaplığında kullanılabilir olmadığından gösterildiğigibi[ \<rastgele >](../standard-library/random.md).  
+ SIR değildir, eski CRT **rand()** en length C++ topluluğu içinde açıklanan pek çok fabrikadan işlevi vardır. Modern C++'da, bu eksiklikleri ile uğraşmak zorunda değildir — ne de kendi birörnek dağıtılmış rastgele sayı üreticisinin stok zorunda — hızla ve kolayca bunları oluşturmaya yönelik araçlar C++ Standart kitaplığında kullanılabilir olmadığından gösterildiği[ \<rastgele >](../standard-library/random.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ için yeniden Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
+ [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)
