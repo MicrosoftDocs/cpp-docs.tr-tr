@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09f92440a926f547f051dd0bee73468a1958813e
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 03e773e57b4cdaee09331dab651f41f1fa8db211
+ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041032"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37336068"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection sınıfı
-Bir HTTP sunucusuna bağlantınız yönetir.  
+HTTP sunucusuyla olan bağlantınızı yönetir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,7 +42,7 @@ class CHttpConnection : public CInternetConnection
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CHttpConnection::CHttpConnection](#chttpconnection)|Oluşturur bir `CHttpConnection` nesnesi.|  
+|[CHttpConnection::CHttpConnection](#chttpconnection)|Oluşturur bir `CHttpConnection` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -51,13 +51,13 @@ class CHttpConnection : public CInternetConnection
 |[CHttpConnection::OpenRequest](#openrequest)|Bir HTTP isteği açar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- HTTP MFC WinINet sınıfları tarafından uygulanan üç Internet sunucu protokolleri biridir.  
+ HTTP MFC WinINet sınıfları tarafından uygulanan üç Internet sunucusu protokolden biridir.  
   
- Sınıf `CHttpConnection` oluşturucu ve bir üye fonksiyonu içeriyor [OpenRequest](#openrequest), sunucuya bir HTTP protokolü ile bağlantıları yönetir.  
+ Sınıf `CHttpConnection` bir oluşturucu ve bir üye işlevi içeren [OpenRequest](#openrequest), bir HTTP protokolü ile sunucu bağlantıları yönetir.  
   
- Bir HTTP sunucusu ile iletişim kurmak için önce bir örneğini oluşturmanız gerekir [CInternetSession](../../mfc/reference/cinternetsession-class.md)ve ardından oluşturun bir [CHttpConnection](#_mfc_chttpconnection) nesnesi. Hiçbir zaman oluşturduğunuz bir `CHttpConnection` doğrudan nesne; bunun yerine, çağrı [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection), oluşturan `CHttpConnection` nesne ve bir işaretçi döndürür.  
+ Bir HTTP sunucusu ile iletişim kurmak için öncelikle bir örneğini oluşturmanız gerekir [Cınternetsession](../../mfc/reference/cinternetsession-class.md)ve ardından bir [CHttpConnection](#_mfc_chttpconnection) nesne. Asla oluşturma bir `CHttpConnection` doğrudan nesne; bunun yerine, çağırarak [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection), oluşturan `CHttpConnection` nesnesi ve bir işaretçi döndürür.  
   
- Hakkında daha fazla bilgi için `CHttpConnection` diğer MFC Internet sınıfları ile works başlıklı makaleye bakın [Internet programlama WinINet ile](../../mfc/win32-internet-extensions-wininet.md). Desteklenen Internet protokolleri, gopher ve FTP diğer iki kullanarak sunucuya bağlanma hakkında daha fazla bilgi için bkz: sınıflarını [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) ve [CFtpConnection](../../mfc/reference/cftpconnection-class.md).  
+ Hakkında daha fazla bilgi edinmek için `CHttpConnection` diğer Internet MFC sınıfları ile çalışır, başlıklı makaleye bakın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md). Diğer iki kullanarak sunuculara bağlanma hakkında daha fazla bilgi desteklenen Internet protokolleri, gopher ve FTP için bkz: sınıfları [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) ve [CFtpConnection](../../mfc/reference/cftpconnection-class.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -70,7 +70,7 @@ class CHttpConnection : public CInternetConnection
  **Başlık:** afxinet.h  
   
 ##  <a name="chttpconnection"></a>  CHttpConnection::CHttpConnection  
- Bu üye işlevi oluşturmak için çağrılan bir `CHttpConnection` nesnesi.  
+ Bu üye işlevi oluşturmak için çağrılan bir `CHttpConnection` nesne.  
   
 ```  
 CHttpConnection(
@@ -101,38 +101,38 @@ CHttpConnection(
   
 ### <a name="parameters"></a>Parametreler  
  *pSession*  
- Bir işaretçi bir [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi.  
+ Bir işaretçi bir [Cınternetsession](../../mfc/reference/cinternetsession-class.md) nesne.  
   
  *hConnected*  
  Internet bağlantısı için bir tanıtıcı.  
   
  *pstrServer*  
- Sunucu adını içeren bir dize için bir işaretçi.  
+ Sunucu adını içeren bir dize işaretçisi.  
   
  *dwContext*  
- İçerik tanımlayıcısını `CInternetConnection` nesnesi. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
+ İçerik tanımlayıcısı `CInternetConnection` nesne. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
  *nbağlantı noktası*  
- Bu bağlantı için Internet bağlantı noktasını tanımlar sayı.  
+ Bu bağlantı için Internet bağlantı noktasını tanımlayan numara.  
   
  *pstrUserName*  
- İşaretçi null ile sonlandırılmış dizeye oturum açmak için kullanıcı adını belirtir. Varsa **NULL**, anonim varsayılandır.  
+ Oturum açmak için kullanıcı adını belirten bir null ile sonlandırılmış dize işaretçisi. NULL ise, anonim bir varsayılandır.  
   
  *pstrPassword*  
- Oturum açmak için kullanılacak parolayı belirten null ile sonlandırılmış bir dize için bir işaretçi. Her iki *pstrPassword* ve *pstrUserName* olan **NULL**, varsayılan anonim parola kullanıcının e-posta adıdır. Varsa *pstrPassword* olan **NULL** (veya boş bir dize) ancak *pstrUserName* değil **NULL**, boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklanmaktadır *pstrUserName* ve *pstrPassword*:  
+ Oturum açmak için kullanılacak parolayı belirten bir boş sonlandırılmış dizeye bir işaretçi. Her iki *pstrPassword* ve *pstrUserName* NULL, varsayılan anonim kullanıcı e-posta adını paroladır. Varsa *pstrPassword* boş (veya boş bir dize) ancak *pstrUserName* NULL değil boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklar *pstrUserName* ve *pstrPassword*:  
   
 |*pstrUserName*|*pstrPassword*|FTP sunucusuna gönderilen kullanıcı adı|FTP sunucusuna gönderilen parola|  
 |--------------------|--------------------|---------------------------------|---------------------------------|  
-|**NULL** veya ""|**NULL** veya ""|"anonim"|Kullanıcının e-posta adı|  
-|Olmayan- **NULL** dize|**NULL** veya ""|*pstrUserName*|" "|  
-|**NULL** olmayan **NULL** dize|**HATA**|**HATA**||  
-|Olmayan- **NULL** dize|Olmayan- **NULL** dize|*pstrUserName*|*pstrPassword*|  
+|NULL veya ""|NULL veya ""|"anonim"|Kullanıcının e-posta adı|  
+|BOŞ olmayan bir dize|NULL veya ""|*pstrUserName*|" "|  
+|BOŞ bir NULL olmayan dize|HATA|HATA||  
+|BOŞ olmayan bir dize|BOŞ olmayan bir dize|*pstrUserName*|*pstrPassword*|  
   
- *dwFlags*  
- Herhangi bir bileşimini **INTERNET_ FLAG_\***  bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](#openrequest) bir açıklaması için *dwFlags* değerleri.  
+ *CertOpenStore*  
+ Herhangi bir birleşimini **INTERNET_ FLAG_\***  bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](#openrequest) açıklamasını *CertOpenStore* değerleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hiçbir zaman oluşturduğunuz bir `CHttpConnection` doğrudan. Bunun yerine, çağırarak bir nesne oluşturma [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  
+ Asla oluşturma bir `CHttpConnection` doğrudan. Bunun yerine, çağırarak bir nesne oluşturma [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  
   
 ##  <a name="openrequest"></a>  CHttpConnection::OpenRequest  
  Bir HTTP bağlantısı açmak için bu üye işlevini çağırın.  
@@ -160,59 +160,59 @@ CHttpFile* OpenRequest(
   
 ### <a name="parameters"></a>Parametreler  
  *pstrVerb*  
- İstekte kullanmak için fiili içeren bir dize için bir işaretçi. Varsa `NULL`, "GET" kullanılır.  
+ İstekte kullanmak için fiili içeren bir dize işaretçisi. NULL ise, "Al" kullanılır.  
   
  *pstrObjectName*  
- Belirtilen fiil hedef nesnesi içeren bir dize için bir işaretçi. Bu genellikle bir dosya adı yürütülebilir bir modül veya arama belirleyici içindir.  
+ Belirtilen fiili hedef nesneye içeren bir dize işaretçisi. Bu, genellikle bir dosya adı, bir çalıştırılabilir modüle veya bir arama tanımlayıcısı.  
   
  *pstrReferer*  
- Belgeden adresi (URL) belirten bir dize için bir işaretçi istek URL'SİNDE ( *pstrObjectName*) alınamadı. Varsa `NULL`, bir HTTP üstbilgisi belirtilir.  
+ ' % S'adresi (URL) belge belirten bir dize işaretçisi istek URL'SİNDE ( *pstrObjectName*) alınamadı. NULL ise, hiçbir HTTP üst bilgisi belirtildi.  
   
  *dwContext*  
- İçerik tanımlayıcısını `OpenRequest` işlemi. Daha fazla bilgi için Açıklamalar bölümüne bakın *dwContext*.  
+ İçerik tanımlayıcısı `OpenRequest` işlemi. Hakkında daha fazla bilgi için Açıklamalar bölümüne bakın *dwContext*.  
   
  *ppstrAcceptTypes*  
- Sonlandırılmış bir dizi için bir işaretçi `LPCTSTR` içerik türlerini gösteren dizelerin işaretçiler istemci tarafından kabul edildi. Varsa *ppstrAcceptTypes* olan `NULL`, sunucuların istemci türüne belgelerinin yalnızca kabul eder yorumlama "metin / *" (diğer bir deyişle, yalnızca metin belgeleri ve resimleri veya diğer ikili dosyaları). İçerik türü, HTTP POST ve PUT gibi bilgileri bağlı sorguları için veri türünü tanımlayan CGI değişken CONTENT_TYPE eşdeğerdir.  
+ İstemci tarafından kabul edilen içerik türleri gösteren dizelerin LPCTSTR işaretçileri null ile sonlandırılmış bir dizi için bir işaretçi. Varsa *ppstrAcceptTypes* NULL ise istemci yalnızca tür belge kabul ettiğinden sunucuları yorumlama "metin / *" (diğer bir deyişle, yalnızca metin belgeleri ve resimleri veya diğer ikili dosyalar). İçerik türü, HTTP POST ve PUT gibi bilgileri ekli sorgular için verilerin türünü tanımlar CGI değişken CONTENT_TYPE eşdeğerdir.  
   
  *pstrVersion*  
- HTTP sürümü tanımlayan bir dize için bir işaretçi. Varsa `NULL`, "HTTP/1.0" kullanılır.  
+ HTTP sürümünü tanımlayan bir dize işaretçisi. NULL ise, "HTTP/1.0" kullanılır.  
   
- *dwFlags*  
- INTERNET_ FLAG_ * bayrakları herhangi bir bileşimini. Olası bir açıklaması için Açıklamalar bölümüne bakın *dwFlags* değerleri.  
+ *CertOpenStore*  
+ Herhangi bir birleşimini INTERNET_ FLAG_ * bayrakları. Olası bir açıklaması için Açıklamalar bölümüne bakın *CertOpenStore* değerleri.  
   
  *nVerb*  
  HTTP isteği türüyle ilişkili bir sayı. Aşağıdakilerden biri olabilir:  
   
 |HTTP istek türü|*nVerb* değeri|  
 |-----------------------|-------------------|  
-|`HTTP_VERB_POST`|0|  
-|`HTTP_VERB_GET`|1.|  
-|`HTTP_VERB_HEAD`|2|  
-|`HTTP_VERB_PUT`|3|  
-|`HTTP_VERB_LINK`|4|  
-|`HTTP_VERB_DELETE`|5|  
-|`HTTP_VERB_UNLINK`|6|  
+|HTTP_VERB_POST|0|  
+|HTTP_VERB_GET|1.|  
+|HTTP_VERB_HEAD|2|  
+|HTTP_VERB_PUT|3|  
+|HTTP_VERB_LINK|4|  
+|HTTP_VERB_DELETE|5|  
+|HTTP_VERB_UNLINK|6|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi [CHttpFile](../../mfc/reference/chttpfile-class.md) istenen nesnesi.  
+ Bir işaretçi [CHttpFile](../../mfc/reference/chttpfile-class.md) istenen nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- *dwFlags* şunlardan biri olabilir:  
+ *CertOpenStore* aşağıdakilerden biri olabilir:  
   
 |Internet bayrağı|Açıklama|  
 |-------------------|-----------------|  
-|`INTERNET_FLAG_RELOAD`|İstenen dosya, nesne veya dizin listeleme indirme kaynak sunucudan, önbelleğinden zorlar.|  
-|`INTERNET_FLAG_DONT_CACHE`|Döndürülen varlığı için önbelleği eklemez.|  
-|`INTERNET_FLAG_MAKE_PERSISTENT`|Döndürülen varlığı kalıcı bir varlık olarak önbelleğe ekler. Bu, standart önbelleği temizleme, tutarlılık denetimi veya çöp toplama bu öğeyi önbellekten kaldıramazsınız anlamına gelir.|  
-|`INTERNET_FLAG_SECURE`|Güvenli işlem semantiğini kullanır. Bu SSL/PCT kullanmaya dönüşür ve yalnızca HTTP isteklerinde anlamlıdır|  
-|`INTERNET_FLAG_NO_AUTO_REDIRECT`|Yalnızca HTTP ile kullanılan, yeniden yönlendirme otomatik olarak işleneceğini değil belirtir [CHttpFile::SendRequest](../../mfc/reference/chttpfile-class.md#sendrequest).|  
+|INTERNET_FLAG_RELOAD|İstenen dosya, nesne veya dizin listeleme, indirme, kaynak sunucu, önbellekten zorlar.|  
+|INTERNET_FLAG_DONT_CACHE|Döndürülen varlığı için önbelleği eklemez.|  
+|INTERNET_FLAG_MAKE_PERSISTENT|Döndürülen varlığı kalıcı bir varlık olarak önbelleğe ekler. Başka bir deyişle, standart önbellek temizleme, tutarlılık denetimi veya çöp toplama bu öğeyi önbellekten kaldırılamıyor.|  
+|INTERNET_FLAG_SECURE|Güvenli işlem semantiği kullanır. Bu SSL/PCT kullanmaya çevirir ve yalnızca HTTP isteklerini anlamlı|  
+|INTERNET_FLAG_NO_AUTO_REDIRECT|Yalnızca HTTP ile kullanılan, yeniden yönlendirmelerini otomatik olarak içinde işlenmesi gereken değil, belirtir [CHttpFile::SendRequest](../../mfc/reference/chttpfile-class.md#sendrequest).|  
   
- Geçersiz kılma `dwContext` varsayılan bağlam tanımlayıcı bir değerine ayarlayın. Bağlam tanıtıcısı belirli bu işlemle ilişkili `CHttpConnection` tarafından oluşturulan nesne kendi [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi. İçin döndürülen değer [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen işlem durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
+ Geçersiz kılma `dwContext` varsayılan bağlamı tanımlayıcısını bir değere ayarlamak için. Bu belirli işlemle ilişkili bağlam tanımlayıcıdır `CHttpConnection` tarafından oluşturulan nesne kendi [Cınternetsession](../../mfc/reference/cinternetsession-class.md) nesne. İçin döndürülen değer [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) ile belirtilen işlem durumu sağlamak için. Makaleye göz atın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlam tanımlayıcısı hakkında daha fazla bilgi.  
   
- Bu işlev ile durumlar.  
+ Bu işlev ile özel durumlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CInternetConnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
+ [Cınternetconnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CInternetConnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
+ [Cınternetconnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
  [CHttpFile Sınıfı](../../mfc/reference/chttpfile-class.md)

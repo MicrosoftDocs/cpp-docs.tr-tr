@@ -26,18 +26,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 052e7ad2bfa8cc03c4eadd4926dbd84c4fd60223
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b577e9ffdce651af1e8fcbec741ec259a37c65d6
+ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32364323"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37880992"
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
-Bu sınıf bir ActiveX denetimini barındıran bir pencere düzenleme için yöntemleri sağlar.  
+Bu sınıf, bir ActiveX denetimi barındırma pencere yönlendirmeye yönelik yöntemleri sağlar.  
   
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -51,36 +51,36 @@ class CAxWindow : public CWindow
   
 |||  
 |-|-|  
-|[AttachControl](#attachcontrol)|Varolan bir ActiveX denetimine iliştirir `CAxWindow` nesnesi.|  
-|[CAxWindow](#caxwindow)|Oluşturan bir `CAxWindow` nesnesi.|  
-|[CreateControl](#createcontrol)|ActiveX denetimi oluşturur, bunu başlatır ve içinde barındıran `CAxWindow` penceresi.|  
-|[CreateControlEx](#createcontrolex)|ActiveX denetimi oluşturur ve bir arabirim işaretçisi (veya işaretçileri) denetimden alır.|  
-|[GetWndClassName](#getwndclassname)|(Statik) Önceden tanımlanmış sınıf adını alır `CAxWindow` nesnesi.|  
-|[QueryControl](#querycontrol)|Alır **IUnknown** barındırılan ActiveX denetiminin.|  
-|[QueryHost](#queryhost)|Alır **IUnknown** işaretçisi `CAxWindow` nesnesi.|  
-|[SetExternalDispatch](#setexternaldispatch)|Tarafından kullanılan dış dağıtma arabirimi ayarlar `CAxWindow` nesnesi.|  
-|[SetExternalUIHandler](#setexternaluihandler)|Dış ayarlar **IDocHostUIHandler** tarafından kullanılan arabirimi `CAxWindow` nesnesi.|  
+|[AttachControl](#attachcontrol)|Varolan bir ActiveX denetimini ekler `CAxWindow` nesne.|  
+|[CAxWindow](#caxwindow)|Oluşturur bir `CAxWindow` nesne.|  
+|[CreateControl](#createcontrol)|Bir ActiveX denetimi oluşturur, onu başlatır ve onu barındıran `CAxWindow` penceresi.|  
+|[CreateControlEx](#createcontrolex)|Bir ActiveX denetimi oluşturur ve denetimi bir arabirim işaretçisi (veya işaretçiler) alır.|  
+|[GetWndClassName](#getwndclassname)|(Statik) Önceden tanımlanmış sınıf adını alır. `CAxWindow` nesne.|  
+|[QueryControl](#querycontrol)|Alır `IUnknown` barındırılan ActiveX denetimi.|  
+|[QueryHost](#queryhost)|Alır `IUnknown` işaretçisinin `CAxWindow` nesne.|  
+|[SetExternalDispatch](#setexternaldispatch)|Tarafından kullanılan dış gönderme arabirimi ayarlar `CAxWindow` nesne.|  
+|[SetExternalUIHandler](#setexternaluihandler)|Dış ayarlar `IDocHostUIHandler` tarafından kullanılan arabirimi `CAxWindow` nesne.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç =](#operator_eq)|Atayan bir **HWND** varolan bir **CAxWindow** nesnesi.|  
+|[işleç =](#operator_eq)|Varolan bir HWND atar `CAxWindow` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, bir ActiveX denetimini barındıran bir pencere düzenleme için yöntemleri sağlar. Barındırma tarafından sağlanan " **AtlAxWin80"**, tarafından Sarmalanan `CAxWindow`.  
+ Bu sınıf, bir ActiveX denetimi barındıran bir pencere yönlendirmeye yönelik yöntemleri sağlar. Barındırma tarafından sağlanan " **AtlAxWin80"**, tarafından Sarmalanan `CAxWindow`.  
   
- Sınıf `CAxWindow` uzmanlaşması uygulanan `CAxWindowT` sınıfı. Bu uzmanlık olarak bildirilmiş:  
+ Sınıf `CAxWindow` özelleştirmesi uygulanan `CAxWindowT` sınıfı. Bu özelleştirme olarak bildirilir:  
   
  `typedef CAxWindowT<CWindow> CAxWindow;`  
   
- Taban sınıfı değiştirmeniz gerekiyorsa, kullanabileceğiniz `CAxWindowT` ve şablon bağımsız değişken yeni taban sınıfı belirtin.  
+ Temel sınıf değiştirmeniz gerekiyorsa, kullanabileceğiniz `CAxWindowT` ve yeni temel sınıfın şablon bağımsız değişken belirtin.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
   
 ##  <a name="attachcontrol"></a>  CAxWindow::AttachControl  
- Bir zaten mevcut değilse ve belirtilen denetim ana bilgisayara bağlanan yeni bir ana bilgisayar nesnesi oluşturur.  
+ Zaten mevcut değilse ve belirtilen denetim konağa ekler, yeni bir ana bilgisayar nesnesi oluşturur.  
   
 ```
 HRESULT AttachControl(
@@ -89,28 +89,28 @@ HRESULT AttachControl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pControl`  
- [in] Bir işaretçi **IUnknown** denetimi.  
+ *pControl*  
+ [in] Bir işaretçi `IUnknown` denetimi.  
   
- `ppUnkContainer`  
- [out] Bir işaretçi **IUnknown** ana bilgisayar ( **AxWin** nesnesi).  
+ *ppUnkContainer*  
+ [out] Bir işaretçi `IUnknown` konağın ( `AxWin` nesne).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İliştirilmekte olan denetim nesne doğru çağırmadan önce başlatılmalıdır `AttachControl`.  
   
 ##  <a name="caxwindow"></a>  CAxWindow::CAxWindow  
- Oluşturan bir `CAxWindow` var olan bir pencere nesnesi işleci kullanılarak nesne.  
+ Oluşturur bir `CAxWindow` var olan bir pencere nesnesi işleci kullanılarak nesne.  
   
 ```
 CAxWindow(HWND hWnd = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hWnd`  
- Varolan bir pencere nesnesi için bir tanıtıcı.  
+ *hWnd*  
+ Var olan bir pencere nesnesi için bir tanıtıcı.  
   
 ##  <a name="createcontrol"></a>  CAxWindow::CreateControl  
  Bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.  
@@ -128,8 +128,8 @@ HRESULT CreateControl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
- Denetimi oluşturmak için bir dize için bir işaretçi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:  
+ *lpszName*  
+ Denetimi oluşturmak için bir dize işaretçisi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:  
   
 -   Bir ProgID gibi "MSCAL. Calendar.7 "  
   
@@ -139,31 +139,31 @@ HRESULT CreateControl(
   
 -   Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"  
   
--   HTML gibi bir parçasını "MSHTML:\<HTML >\<gövde > metin satırının budur\</BODY >\</HTML >"  
+-   HTML gibi bir parçasını "MSHTML:\<HTML >\<GÖVDESİ > metin satırı budur\</BODY >\</HTML >"  
   
     > [!NOTE]
-    >  "MSHTML:" MSHTML akış olduğu atanır böylece HTML parçasını gelmelidir. Windows Mobile platformları yalnızca ProgID ve CLSID desteklenir. Windows CE embedded platformları, Windows Mobile CE IE desteği için destek ile dışında ProgID dahil olmak üzere tüm türleri CLSID, URL, başvuru etkin belgeyi ve HTML parçasını.  
+    >  "MSHTML:" MSHTML stream olacak şekilde atanır böylece HTML parçasını gelmelidir. ProgID ve CLSID yalnızca Windows mobil platformlarda desteklenir. Windows CE Platform katıştırılmış, Windows Mobile CE IE destek desteğiyle dışında ProgID dahil olmak üzere tüm CLSID, URL, başvuru türleri etkin belge ve HTML parçasını.  
   
- `pStream`  
- [in] Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. Olabilir **NULL**.  
+ *pStream*  
+ [in] Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. NULL olabilir.  
   
- `ppUnkContainer`  
- [out] Alacak bir işaretçi adresini **IUnknown** kapsayıcısının. Olabilir **NULL**.  
+ *ppUnkContainer*  
+ [out] Adresi alacak bir işaretçi `IUnknown` kapsayıcının. NULL olabilir.  
   
- `dwResID`  
- Bir HTML kaynağının kaynak kimliği. WebBrowser denetimi oluşturulur ve belirtilen kaynakla yüklendi.  
+ *dwResID*  
+ Bir HTML kaynağının kaynak kimliği. WebBrowser denetimi oluşturulur ve belirtilen kaynak yüklendi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem ikinci sürümü kullanılırsa, bir HTML denetimini oluşturulur ve tarafından tanımlanan bir kaynağa bağlı `dwResID`.  
+ Dosyanın ikinci sürümü, bu yöntem kullandıysanız, bir HTML denetimini oluşturulur ve tarafından tanımlanan kaynağa bağlı *dwResID*.  
   
- Bu yöntem çağırma aynı sonucu verir:  
+ Bu yöntem çağrıldığında aynı sonucu verir:  
   
  [!code-cpp[NVC_ATL_Windowing#42](../../atl/codesnippet/cpp/caxwindow-class_1.cpp)]  
   
- Bkz: [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#createcontrollic) oluşturmak için başlatmak ve lisanslı bir ActiveX denetimi barındırır.  
+ Bkz: [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#createcontrollic) oluşturmak, başlatmak ve lisanslı bir ActiveX denetimi barındırma.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `CreateControl`.  
@@ -190,8 +190,8 @@ HRESULT CreateControlEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `lpszName`  
- Denetimi oluşturmak için bir dize için bir işaretçi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:  
+ *lpszName*  
+ Denetimi oluşturmak için bir dize işaretçisi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:  
   
 -   Bir ProgID gibi "MSCAL. Calendar.7 "  
   
@@ -201,66 +201,66 @@ HRESULT CreateControlEx(
   
 -   Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"  
   
--   HTML gibi bir parçasını "MSHTML:\<HTML >\<gövde > metin satırının budur\</BODY >\</HTML >"  
+-   HTML gibi bir parçasını "MSHTML:\<HTML >\<GÖVDESİ > metin satırı budur\</BODY >\</HTML >"  
   
     > [!NOTE]
-    >  "MSHTML:" MSHTML akış olduğu atanır böylece HTML parçasını gelmelidir. Windows Mobile platformları yalnızca ProgID ve CLSID desteklenir. Windows CE embedded platformları, Windows Mobile CE IE desteği için destek ile dışında ProgID dahil olmak üzere tüm türleri CLSID, URL, başvuru etkin belgeyi ve HTML parçasını.  
+    >  "MSHTML:" MSHTML stream olacak şekilde atanır böylece HTML parçasını gelmelidir. ProgID ve CLSID yalnızca Windows mobil platformlarda desteklenir. Windows CE Platform katıştırılmış, Windows Mobile CE IE destek desteğiyle dışında ProgID dahil olmak üzere tüm CLSID, URL, başvuru türleri etkin belge ve HTML parçasını.  
   
- `pStream`  
- [in] Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. Olabilir **NULL**.  
+ *pStream*  
+ [in] Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. NULL olabilir.  
   
- `ppUnkContainer`  
- [out] Alacak bir işaretçi adresini **IUnknown** kapsayıcısının. Olabilir **NULL**.  
+ *ppUnkContainer*  
+ [out] Adresi alacak bir işaretçi `IUnknown` kapsayıcının. NULL olabilir.  
   
- `ppUnkControl`  
- [out] Alacak bir işaretçi adresini **IUnknown** denetimi. Olabilir **NULL**.  
+ *ppUnkControl*  
+ [out] Adresi alacak bir işaretçi `IUnknown` denetimi. NULL olabilir.  
   
- `iidSink`  
- [in] Kapsanan nesne giden bir arabirimde arabirimi tanımlayıcısı. Olabilir **IID_NULL**.  
+ *iidSink*  
+ [in] Kapsanan nesne üzerinde giden bir arabirim arabirimi tanımlayıcısı. IID_NULL olabilir.  
   
  *punkSink*  
- [in] Bir işaretçi **IUnknown** arabirimi tarafından belirtilen kapsanan nesne bağlantı noktasında bağlanması için havuz nesnesinin `iidSink`.  
+ [in] Bir işaretçi `IUnknown` arabirimi tarafından belirtilen kapsanan nesne üzerindeki bağlantı noktasına bağlı havuz nesnenin *iidSink*.  
   
- `dwResID`  
- [in] Bir HTML kaynağının kaynak kimliği. WebBrowser denetimi oluşturulur ve belirtilen kaynakla yüklendi.  
+ *dwResID*  
+ [in] Bir HTML kaynağının kaynak kimliği. WebBrowser denetimi oluşturulur ve belirtilen kaynak yüklendi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem benzer [CAxWindow::CreateControl](#createcontrol), ancak bu yöntem aksine `CreateControlEx` ayrıca yeni oluşturulan denetlemek için bir arabirim işaretçisi almak ve denetim tarafından tetiklenen olayları almak için bir olay iç havuz ayarlamanıza olanak sağlar.  
+ Bu yöntem benzer [CAxWindow::CreateControl](#createcontrol), ancak bu yöntem aksine `CreateControlEx` de yeni oluşturulan denetime bir arabirim işaretçisi alır ve denetimi tarafından tetiklenen olayları almak için bir olay havuzu ayarlamanıza olanak sağlar.  
   
- Bkz: [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#createcontrollicex) oluşturmak için başlatmak ve lisanslı bir ActiveX denetimi barındırır.  
+ Bkz: [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#createcontrollicex) oluşturmak, başlatmak ve lisanslı bir ActiveX denetimi barındırma.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `CreateControlEx`.  
   
 ##  <a name="getwndclassname"></a>  CAxWindow::GetWndClassName  
- Pencere sınıfı adını alır.  
+ Pencere sınıfının adını alır.  
   
 ```
 static LPCTSTR GetWndClassName();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Nonlicensed ActiveX denetimlerini barındırabilir pencere sınıfı adını içeren bir dize için bir işaretçi.  
+ ActiveX denetimlerini nonlicensed barındırabilir pencere sınıfının adını içeren bir dize işaretçisi.  
   
 ##  <a name="operator_eq"></a>  CAxWindow::operator =  
- Atayan bir `HWND` varolan bir `CAxWindow` nesnesi.  
+ Varolan bir HWND atar `CAxWindow` nesne.  
   
 ```
 CAxWindow<TBase>& operator=(HWND hWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `hWnd`  
- Varolan bir pencere için bir tanıtıcı.  
+ *hWnd*  
+ Var olan bir pencere için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir başvuru döndürür `CAxWindow` nesnesi.  
+ Geçerli bir başvuru döndürür `CAxWindow` nesne.  
   
 ##  <a name="querycontrol"></a>  CAxWindow::QueryControl  
- Belirtilen arabirim barındırılan denetimin alır.  
+ Belirtilen barındırılan denetim arabiriminin alır.  
   
 ```
 HRESULT QueryControl(REFIID iid, void** ppUnk);
@@ -269,20 +269,20 @@ HRESULT QueryControl(Q** ppUnk);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iid`  
- [in] Denetimin arabirimi IID belirtir.  
+ *IID*  
+ [in] Denetimin arabirimi Laboratuvardaki belirtir.  
   
- `ppUnk`  
- [out] Arabirim denetimi için bir işaretçi. Bu yöntem şablon sürümde gerek yoktur başvuru kimliği için ilişkili bir UUID yazılan arabirimiyle geçirilen sürece.  
+ *ppUnk*  
+ [out] Denetimin bir arabirim işaretçisi. Bu yöntem şablon sürümünü gerek yoktur başvuru kimliği için belirlenmiş bir arabirim ile ilişkili bir UUID geçirilen sürece.  
   
- `Q`  
- [in] İçin sorgulanan arabirimi.  
+ *Q*  
+ [in] İçin sorgulanan arabirim.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ##  <a name="queryhost"></a>  CAxWindow::QueryHost  
- Ana bilgisayarın belirtilen arabirimini döndürür.  
+ Ana bilgisayarın belirtilen arabirim döndürür.  
   
 ```
 HRESULT QueryHost(REFIID iid, void** ppUnk);
@@ -291,37 +291,37 @@ HRESULT QueryHost(Q** ppUnk);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `iid`  
- [in] Denetimin arabirimi IID belirtir.  
+ *IID*  
+ [in] Denetimin arabirimi Laboratuvardaki belirtir.  
   
- `ppUnk`  
- [out] Ana bilgisayarda arabirimi için bir işaretçi. Bu yöntem şablon sürümde gerek yoktur başvuru kimliği için ilişkili bir UUID yazılan arabirimiyle geçirilen sürece.  
+ *ppUnk*  
+ [out] Konak üzerindeki arabirim işaretçisi. Bu yöntem şablon sürümünü gerek yoktur başvuru kimliği için belirlenmiş bir arabirim ile ilişkili bir UUID geçirilen sürece.  
   
- `Q`  
- [in] İçin sorgulanan arabirimi.  
+ *Q*  
+ [in] İçin sorgulanan arabirim.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ana bilgisayar arabirimi tarafından uygulanan penceresi barındırma kodu temel işlevselliğini erişmesini sağlar **AxWin**.  
+ Konağın arabirimi tarafından uygulanan penceresi barındırma kodu temel işlevselliğini erişime `AxWin`.  
   
 ##  <a name="setexternaldispatch"></a>  CAxWindow::SetExternalDispatch  
- Dış gönderme arabirimi ayarlar `CAxWindow` nesnesi.  
+ Dış gönderme arabirimi ayarlar `CAxWindow` nesne.  
   
 ```
 HRESULT SetExternalDispatch(IDispatch* pDisp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pDisp`  
+ *pDisp*  
  [in] Bir işaretçi bir `IDispatch` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ##  <a name="setexternaluihandler"></a>  CAxWindow::SetExternalUIHandler  
- Dış ayarlar [IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md) için arabirim `CAxWindow` nesnesi.  
+ Dış ayarlar [Idochostuıhandlerdispatch](../../atl/reference/idochostuihandlerdispatch-interface.md) için arabirim `CAxWindow` nesne.  
   
 ```
 HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
@@ -329,18 +329,18 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
   
 ### <a name="parameters"></a>Parametreler  
  *pUIHandler*  
- [in] Bir işaretçi bir **IDocHostUIHandlerDispatch** arabirimi.  
+ [in] Bir işaretçi bir `IDocHostUIHandlerDispatch` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir `HRESULT` değeri.  
+ Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dış `IDocHostUIHandlerDispatch` arabirimi ana bilgisayarın site için sorgu denetimleri tarafından kullanılan `IDocHostUIHandlerDispatch` arabirimi. WebBrowser denetimi bunu yapan bir denetimdir.  
+ Dış `IDocHostUIHandlerDispatch` arabirimi ana bilgisayarın site için sorgu denetimler tarafından kullanılır `IDocHostUIHandlerDispatch` arabirimi. WebBrowser denetimi bunu yapan bir denetimdir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATLCON örnek](../../visual-cpp-samples.md)   
  [CWindow sınıfı](../../atl/reference/cwindow-class.md)   
  [Bileşik Denetim temelleri](../../atl/atl-composite-control-fundamentals.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Denetim kapsamı SSS](../../atl/atl-control-containment-faq.md)
 
