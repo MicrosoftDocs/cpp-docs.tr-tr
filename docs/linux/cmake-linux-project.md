@@ -14,12 +14,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 014d23996777d0660d4978e307b80e4f94c19686
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 285c1fcd38ef20ea38fe03e2cbd27f77469775cf
+ms.sourcegitcommit: 30192458404618039fdadddf37dc269baa559860
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849265"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182544"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
@@ -29,7 +29,7 @@ Linux CMake desteği, Linux C++ iş yükünü yüklediğinizde, varsayılan olar
 Bu konuda, Visual Studio'da CMake desteği temel olarak bilindiğini sahip olduğunuz varsayılır. Daha fazla bilgi için [Visual C++ için CMake araçlarını](../ide/cmake-tools-for-visual-cpp.md). CMake kendisi hakkında daha fazla bilgi için bkz: [derleme, Test ve paket Your yazılım CMake ile](https://cmake.org/).
 
 > [!NOTE]  
-> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Paket Yöneticisi'ni CMake daha eski bir sürümünü sağlıyorsa, geçici bir çözüm olarak çalışabilir [kaynağından CMake oluşturma](#build-a-supported-cmake release-from-source) veya resmi indirme [CMake indirme sayfası](https://cmake.org/download/).
+> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Paket Yöneticisi'ni CMake daha eski bir sürümünü sağlıyorsa, geçici bir çözüm olarak çalışabilir [kaynağından CMake oluşturma](#build-a-supported-cmake release-from-source) veya resmi indirme [CMake indirme sayfası](https://cmake.org/download/). Destekleyen bir Microsoft tarafından sağlanan CMake değişken için [CMake hedefleri görünümü](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) bölmesinde Visual Studio, en son önceden oluşturulmuş ikili karşıdan [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases).
 
 ## <a name="open-a-folder"></a>Klasör Aç
 
@@ -143,7 +143,7 @@ Ardından, sürüm doğrulamak için bu komutu çalıştırın > = 3.8 ve sunucu
 cmake -E capabilities
 ```
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)  
 [Visual C++ için CMake araçları](../ide/cmake-tools-for-visual-cpp.md)  

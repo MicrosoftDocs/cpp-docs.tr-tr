@@ -51,18 +51,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d83407efee1da2bc1c59cf0d869f54f6022a4eb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 459192f5936db3c47d2377885cf3ca30dadb92df
+ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415539"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180796"
 ---
 # <a name="strchr-wcschr-mbschr-mbschrl"></a>strchr, wcschr, _mbschr, _mbschr_l
-Bir karakter dizesi içinde geçerli yerel veya belirtilen LC_CTYPE dönüştürme durumu kategorisinin kullanarak bulur.
+Bir karakter, geçerli yerel ayarı veya belirtilen LC_CTYPE dönüştürme durumu kategorisini kullanarak bir dize içinde bulur.
 
 > [!IMPORTANT]
-> **_mbschr** ve **_mbschr_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbschr` ve `_mbschr_l` Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -123,44 +123,44 @@ const unsigned char *_mbschr_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Sonlandırılmış kaynak dizesi.
+Null ile sonlandırılmış kaynak dizesi.
 
 *c*<br/>
-Yerleştirilecek karakter.
+Bulunmasını karakter.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri bir işaretçi ilk örneğini döndüren *c* içinde *str*, veya **NULL** varsa *c* bulunamadı.
+Bu işlevlerin her biri işaretçi ilk örneğini döndüren *c* içinde *str*, veya yoksa NULL *c* nebyl nalezen.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strchr** işlev ilk örneğini bulur *c* içinde *str*, veya döndürdüğü **NULL** varsa *c* olduğu bulunamadı. Null sonlandırma karakter aramada dahil edilir.
+`strchr` İşlevi ilk oluşumunu bulur *c* içinde *str*, veya NULL olursa döndürür *c* nebyl nalezen. Sondaki null karakter aramaya dahil edilir.
 
-**wcschr**, **_mbschr** ve **_mbschr_l** joker karakter ve çok baytlı karakter sürümleri **strchr**. Bağımsız değişkenleri ve dönüş değerini **wcschr** joker karakter olan dizeleri; bu **_mbschr** çok baytlı karakter dizeleri belirtilmiştir. **_mbschr** çok baytlı karakter sıralarının tanır. Ayrıca, dize null işaretçinin ise **_mbschr** açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_mbschr** döndürür **NULL** ve ayarlar **errno** için **EINVAL**. **strchr** ve **wcschr** parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.
+`wcschr`, `_mbschr` ve `_mbschr_l` geniş karakter ve çok baytlı karakter sürümleridir `strchr`. Bağımsız değişkenler ve dönüş değeri `wcschr` geniş karakterli dizelerdir; `_mbschr` çok baytlı karakter dizeleridir. `_mbschr` çok baytlı karakter sıralarını tanır. Ayrıca, bir dize bir null işaretçi ise `_mbschr` açıklandığı gibi geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse `_mbschr` NULL döndürür ve ayarlar `errno` EINVAL için. `strchr` ve `wcschr` kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** kategori ayar yerel; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri yerel LC_CTYPE kategori ayarı ayarından etkilenir; Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-C, bu işlevler ele bir ** const ** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı kullanılabilir. Bir işaretçi alma aşırı ** const ** gösteren bir işaretçi döndürür **const **; bir işaretçi olmayan alır sürüm**const ** gösteren bir işaretçi olmayan döndürür**const **. Makro **_CRT_CONST_CORRECT_OVERLOADS** her iki tanımlanan **const ** ve olmayan-** const ** bu işlevler sürümlerinde kullanılabilir. Olmayan gerektiriyorsa**const ** hem C++ aşırı davranışını tanımlayın simgenin **_CONST_RETURN**.
+C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yükleme **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür**const** . Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++ aşırı _const_return sembolünü.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcschr**|**strchr**|**_mbschr**|**wcschr**|
-|**_ yok**|**yok**|**_mbschr_l**|**yok**|
+|`_tcschr`|`strchr`|`_mbschr`|`wcschr`|
+|**_ yok**|**yok**|`_mbschr_l`|**yok**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strchr**|\<String.h >|
-|**wcschr**|\<String.h > veya \<wchar.h >|
-|**_mbschr**, **_mbschr_l**|\<Mbstring.h >|
+|`strchr`|\<String.h >|
+|`wcschr`|\<String.h > veya \<wchar.h >|
+|`_mbschr`, `_mbschr_l`|\<Mbstring.h >|
 
-Uyumluluğu hakkında daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

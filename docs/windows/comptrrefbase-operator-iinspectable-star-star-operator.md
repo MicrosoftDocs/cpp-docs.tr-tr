@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e337f6bbc92718c839fc2bd12c9df9f0caa5d5aa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0c23ba7ba476b44b44f48b76119776e2f2cb188e
+ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883465"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39181152"
 ---
-# <a name="comptrrefbaseoperator-iinspectable-operator"></a>ComPtrRefBase::operator IInspectable** İşleci
+# <a name="comptrrefbaseoperator-iinspectable-operator"></a>ComPtrRefBase::operator Iınspectable\* \* işleci
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -36,11 +36,11 @@ operator IInspectable**() const;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geçerli bıraktığı [ptr_](../windows/comptrrefbase-ptr-data-member.md) veri üyesi için bir işaretçi-için-a-pointer-Iınspectable arabirimi.
+Geçerli bıraktığı [ptr_](../windows/comptrrefbase-ptr-data-member.md) veri üyesi için bir işaretçi-için-a-işaretçi-Iınspectable arabirimi.
 
-Geçerli ComPtrRefBase Iınspectable türetirseniz olmayan bir hata yayınlanır.
+Geçerli ComPtrRefBase Iınspectable türetirseniz olmayan bir hata yayılır.
 
-Bu atama kullanılabilir yalnızca **&#95; &#95;WRL_CLASSIC_COM&#95; &#95;** tanımlanır.
+Bu tür dönüştürme kullanılabilir yalnızca **&#95; &#95;WRL_CLASSIC_COM&#95; &#95;** tanımlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -54,18 +54,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbb937cfdce7ed933c637cb48d370515134b66dd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5ea5ed6c4441ebd98462562ac9405d6f8c115c61
+ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415715"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39181100"
 ---
 # <a name="strstr-wcsstr-mbsstr-mbsstrl"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
-Bir işaretçi bir arama dizesi bir dizedeki ilk örneğini döndürür.
+Bir arama dizesinin bir dizede ilk geçtiği yere bir işaretçi döndürür.
 
 > [!IMPORTANT]
-> **_mbsstr** ve **_mbsstr_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbsstr` ve `_mbsstr_l` Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -126,45 +126,45 @@ const unsigned char *_mbsstr_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Aranacak dize null ile sonlandırılmış.
+Aramak için null ile sonlandırılmış dize.
 
 *strSearch*<br/>
-Aranacak dizeyi null sonlandırıldı.
+Aramak için null ile sonlandırılmış dize.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi ilk örneğini döndüren *strSearch* içinde *str*, veya **NULL** varsa *strSearch* görünmez *str* . Varsa *strSearch* işaret sıfır uzunlukta bir dizeye işlevi döndürür *str*.
+İlk geçtiği bir işaretçi döndürür *strSearch* içinde *str*, veya yoksa NULL *strSearch* görünmez *str*. Varsa *strSearch* işaret sıfır uzunluğunda bir dize için işlev döndürür *str*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strstr** işlevi ilk örneğini bir işaretçi döndürür *strSearch* içinde *str*. Arama null karakterlerini sonlandırma içermez. **wcsstr** geniş karakter sürümü **strstr** ve **_mbsstr** çok baytlı karakter sürümüdür. Bağımsız değişkenleri ve dönüş değerini **wcsstr** joker karakter olan dizeleri; bu **_mbsstr** çok baytlı karakter dizeleri belirtilmiştir. **_mbsstr** parametrelerini doğrular. Varsa *str* veya *strSearch* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa **_mbsstr** ayarlar **errno** için **EINVAL** ve 0 döndürür. **strstr** ve **wcsstr** parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.
+`strstr` İşlevi için ilk geçtiği bir işaretçi döndürür *strSearch* içinde *str*. Arama boş karakterlerin sonlandırılmasını içermez. `wcsstr` öğesinin geniş karakterli sürümüdür `strstr` ve `_mbsstr` çok baytlı karakter sürümüdür. Bağımsız değişkenler ve dönüş değeri `wcsstr` geniş karakterli dizelerdir; `_mbsstr` çok baytlı karakter dizeleridir. `_mbsstr` kendi parametrelerini doğrular. Varsa *str* veya *strSearch* NULL ise açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse `_mbsstr` ayarlar `errno` EINVAL ve 0 döndürür. `strstr` ve `wcsstr` kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
 
 > [!IMPORTANT]
-> Bu işlevlerin bir tehdit bir arabellek taşması sorun etkileyebilir. Arabellek taşması sorunları unwarranted ayrıcalık yükselmesine neden olabilir rastgele kod yürütmeyi izin verebilir nedeni bir sistem saldırmak için kullanılabilir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlevler, arabellek taşması sorunu kaynaklanan bir tehdit tabi olabilirsiniz. Arabellek taşması sorunları, bir unwarranted ayrıcalık yükselmesine neden olabilir rastgele kod yürütülmesine izin verebilir çünkü bir sistem saldırmak için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
-C, bu işlevler ele bir ** const ** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı kullanılabilir. Bir işaretçi alır aşırı ** const ** gösteren bir işaretçi döndürür **const **; bir işaretçi olmayan alır sürüm**const ** gösteren bir işaretçi olmayan döndürür**const **. Makro **_CRT_CONST_CORRECT_OVERLOADS** her iki tanımlanan **const ** ve olmayan-** const ** bu işlevler sürümlerinde kullanılabilir. Olmayan gerektiriyorsa**const ** hem C++ aşırı davranışını tanımlayın simgenin **_CONST_RETURN**.
+C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yüklemesini **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür **const**. Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++ aşırı _const_return sembolünü.
 
-Çıkış değerini yerel ayar kategorisi ayarı tarafından etkilenen **LC_CTYPE**; daha fazla bilgi için bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md). Bu işlevlerin olmayan sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; olan sürümleri **_l** soneki, bunun yerine kullandıkları dışında aynıdır geçirilen yerel ayar parametresi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri LC_CTYPE yerel ayar kategori ayarından etkilenir; Daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md). Sahip olmayan bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sahip sürümler **_l** sonekine yerine kullandıkları dışında geçirilen yerel ayar parametresini. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsstr**|**strstr**|**_mbsstr**|**wcsstr**|
-|**yok**|**yok**|**_mbsstr_l**|**yok**|
+|`_tcsstr`|`strstr`|`_mbsstr`|`wcsstr`|
+|**yok**|**yok**|`_mbsstr_l`|**yok**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strstr**|\<String.h >|
-|**wcsstr**|\<String.h > veya \<wchar.h >|
-|**_mbsstr**, **_mbsstr_l**|\<Mbstring.h >|
+|`strstr`|\<String.h >|
+|`wcsstr`|\<String.h > veya \<wchar.h >|
+|`_mbsstr`, `_mbsstr_l`|\<Mbstring.h >|
 
-Uyumluluğu hakkında daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

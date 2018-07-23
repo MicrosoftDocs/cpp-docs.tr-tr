@@ -54,19 +54,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd62d95e971ac5fd927cce1b7b4eb600ebcf7df6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: db26c60badceab6c1422146a32de3d6dd2ecb8bd
+ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415884"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39181139"
 ---
 # <a name="strpbrk-wcspbrk-mbspbrk-mbspbrkl"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 
-Belirtilen karakter kümelerini karakterler için dizeleri tarar.
+Belirtilen karakter kümelerindeki karakterler için dizeleri tarar.
 
 > [!IMPORTANT]
-> **_mbspbrk** ve **_mbspbrk_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbspbrk` ve `_mbspbrk_l` Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -127,48 +127,48 @@ const unsigned char *_mbspbrk_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Sonlandırılmış, aranan dize.
+Null ile sonlandırılmış, aranan dize.
 
 *strCharSet*<br/>
-Null olarak sonlandırılan bir karakter kümesi.
+Null ile sonlandırılmış karakter kümesi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi herhangi bir karakter ilk örneğini döndüren *strCharSet* içinde *str*, veya bir **NULL** iki dize bağımsız değişkeni hiçbir karakter ortak varsa işaretçi.
+Herhangi bir karakterin ilk geçtiği yere bir işaretçi döndürür *strCharSet* içinde *str*, ya da iki dize bağımsız değişkenleri, bir NULL işaretçi herhangi bir karakter ortak sahip.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strpbrk** işlevi bir işaretçi bir karakter ilk örneğini döndürür *str* ait olan karakter kümesinde *strCharSet*. Arama sonlandırma null karakteri içermez.
+`strpbrk` İşlevi, bir karakterin ilk geçtiği yere bir işaretçi döndürür *str* karakter kümesine ait olan *strCharSet*. Arama, sonlandırıcı null karakteri içermez.
 
-**wcspbrk** ve **_mbspbrk** joker karakter ve çok baytlı karakter sürümleri **strpbrk**. Bağımsız değişkenleri ve dönüş değerini **wcspbrk** joker karakter olan dizeleri; bu **_mbspbrk** çok baytlı karakter dizeleri belirtilmiştir.
+`wcspbrk` ve `_mbspbrk` geniş karakter ve çok baytlı karakter sürümleridir `strpbrk`. Bağımsız değişkenler ve dönüş değeri `wcspbrk` geniş karakterli dizelerdir; `_mbspbrk` çok baytlı karakter dizeleridir.
 
-**_mbspbrk** parametrelerini doğrular. Varsa *str* veya *strCharSet* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_mbspbrk** döndürür **NULL** ve ayarlar **errno** için **EINVAL**. **strpbrk** ve **wcspbrk** parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.
+`_mbspbrk` kendi parametrelerini doğrular. Varsa *str* veya *strCharSet* NULL ise açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse `_mbspbrk` NULL döndürür ve ayarlar `errno` EINVAL için. `strpbrk` ve `wcspbrk` kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
 
-**_mbspbrk** benzer **_mbscspn** dışında **_mbspbrk** türünde bir değer yerine bir işaretçi döndürür [size_t](../../c-runtime-library/standard-types.md).
+`_mbspbrk` benzer `_mbscspn` dışında `_mbspbrk` türünde bir değer yerine bir işaretçi döndürür [size_t](../../c-runtime-library/standard-types.md).
 
-C, bu işlevler ele bir ** const ** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı kullanılabilir. Bir işaretçi alma aşırı ** const ** gösteren bir işaretçi döndürür **const **; bir işaretçi olmayan alır sürüm**const ** gösteren bir işaretçi olmayan döndürür**const **. Makro **_CRT_CONST_CORRECT_OVERLOADS** her iki tanımlanan **const ** ve olmayan-** const ** bu işlevler sürümlerinde kullanılabilir. Olmayan gerektiriyorsa**const ** hem C++ aşırı davranışını tanımlayın simgenin **_CONST_RETURN**.
+C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yükleme **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür**const** . Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++ aşırı _const_return sembolünü.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** kategori ayar yerel; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümü ile **_l** soneki, yerel ayar parametresi kullanır ancak bu aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri yerel LC_CTYPE kategori ayarı ayarından etkilenir; Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümü ile **_l** soneki, yerel ayar parametresini kullanması hariç, aynıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcspbrk**|**strpbrk**|**_mbspbrk**|**wcspbrk**|
-|**yok**|**yok**|**_mbspbrk_l**|**yok**|
+|`_tcspbrk`|`strpbrk`|`_mbspbrk`|`wcspbrk`|
+|**yok**|**yok**|`_mbspbrk_l`|**yok**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strpbrk**|\<String.h >|
-|**wcspbrk**|\<String.h > veya \<wchar.h >|
-|**_mbspbrk**, **_mbspbrk_l**|\<Mbstring.h >|
+|`strpbrk`|\<String.h >|
+|`wcspbrk`|\<String.h > veya \<wchar.h >|
+|`_mbspbrk`, `_mbspbrk_l`|\<Mbstring.h >|
 
-Uyumluluğu hakkında daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

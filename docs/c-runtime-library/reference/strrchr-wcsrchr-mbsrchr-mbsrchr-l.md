@@ -51,19 +51,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a41b52b07d5f3abc290773bd7c96ca82d1b698a8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 03b0ce2c9bd205f9065c783a4ff4d7e50d0ff803
+ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416281"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39181165"
 ---
 # <a name="strrchr-wcsrchr-mbsrchr-mbsrchrl"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 
-Bir karakter son a geçişi için bir dize tarar.
+Son a geçişi bir karakter için bir dize arar.
 
 > [!IMPORTANT]
-> **_mbsrchr** ve **_mbsrchr_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbsrchr` ve `_mbsrchr_l` Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -124,50 +124,50 @@ const unsigned char *_mbsrchr_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Aranacak dize null ile sonlandırılmış.
+Aramak için null ile sonlandırılmış dize.
 
 *c*<br/>
-Yerleştirilecek karakter.
+Bulunmasını karakter.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi son örneğini döndüren *c* içinde *str*, veya **NULL** varsa *c* bulunamadı.
+Son oluşumu için bir işaretçi döndürür *c* içinde *str*, veya yoksa NULL *c* nebyl nalezen.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strrchr** işlev son bulur *c* (dönüştürülen **char**) içinde *str*. Arama sonlandırma null karakter içerir.
+`strrchr` İşlevi son oluşumunu bulur *c* (dönüştürülür **char**) içinde *str*. Arama, sondaki boş karakter içerir.
 
-**wcsrchr** ve **_mbsrchr** joker karakter ve çok baytlı karakter sürümleri **strrchr**. Bağımsız değişkenleri ve dönüş değerini **wcsrchr** joker karakter olan dizeleri; bu **_mbsrchr** çok baytlı karakter dizeleri belirtilmiştir.
+`wcsrchr` ve `_mbsrchr` geniş karakter ve çok baytlı karakter sürümleridir `strrchr`. Bağımsız değişkenler ve dönüş değeri `wcsrchr` geniş karakterli dizelerdir; `_mbsrchr` çok baytlı karakter dizeleridir.
 
-C, bu işlevler ele bir ** const ** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı kullanılabilir. Bir işaretçi alma aşırı ** const ** gösteren bir işaretçi döndürür **const **; bir işaretçi olmayan alır sürüm**const ** gösteren bir işaretçi olmayan döndürür**const **. Makro **_CRT_CONST_CORRECT_OVERLOADS** her iki tanımlanan **const ** ve olmayan-** const ** bu işlevler sürümlerinde kullanılabilir. Olmayan gerektiriyorsa**const ** hem C++ aşırı davranışını tanımlayın simgenin **_CONST_RETURN**.
+C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yükleme **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür**const** . Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++ aşırı _const_return sembolünü.
 
-**_mbsrchr** parametrelerini doğrular. Varsa *str* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve **_mbsrchr** 0 döndürür. **strrchr** ve **wcsrchr** parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.
+`_mbsrchr` kendi parametrelerini doğrular. Varsa *str* NULL ise açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse `errno` EINVAL için ayarlanır ve `_mbsrchr` 0 döndürür. `strrchr` ve `wcsrchr` kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** kategori ayar yerel; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri yerel LC_CTYPE kategori ayarı ayarından etkilenir; Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsrchr**|**strrchr**|**_mbsrchr**|**wcsrchr**|
-|**yok**|**yok**|**_mbsrchr_l**|**yok**|
+|`_tcsrchr`|`strrchr`|`_mbsrchr`|`wcsrchr`|
+|**yok**|**yok**|`_mbsrchr_l`|**yok**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strrchr**|\<String.h >|
-|**wcsrchr**|\<String.h > veya \<wchar.h >|
-|**_mbsrchr**, **_mbsrchr_l**|\<Mbstring.h >|
+|`strrchr`|\<String.h >|
+|`wcsrchr`|\<String.h > veya \<wchar.h >|
+|`_mbsrchr`, `_mbsrchr_l`|\<Mbstring.h >|
 
-Uyumluluğu hakkında daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Kullanarak bir örnek için **strrchr**, bkz: [strchr](strchr-wcschr-mbschr-mbschr-l.md).
+Kullanma örneği için `strrchr`, bkz: [strchr](strchr-wcschr-mbschr-mbschr-l.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

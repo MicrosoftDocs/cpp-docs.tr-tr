@@ -33,16 +33,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c2ba300275f0154e84f7d2ced21b0893bbe3d85
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 43c76ae09f491ff163391f0ee46564af7bb629fe
+ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401691"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39181178"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
-Karakter arabellekte bulun.
+Karakter, bir arabellek bulun.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,7 +82,7 @@ const wchar_t *wmemchr(
 ### <a name="parameters"></a>Parametreler
 
 *Arabellek*<br/>
-Arabellek işaretçi.
+Arabellek için işaretçi.
 
 *c*<br/>
 Aranacak karakter.
@@ -92,22 +92,22 @@ Denetlenecek karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bir işaretçi ilk konumunu döndürür *c* içinde *arabellek*. Aksi takdirde döndürür **NULL**.
+Başarılı olursa, bir işaretçi ilk konumunu döndürür *c* içinde *arabellek*. Aksi takdirde NULL döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**memchr'e** ve **wmemchr** ilk geçtiği için Ara *c* ilk *sayısı* bayt *arabellek*. Bunu bulduğunda durdurur *c* veya ne zaman kullanıma ilk *sayısı* bayt sayısı.
+`memchr` ve `wmemchr` ilk oluşumunu arayın *c* ilk *sayısı* bayt *arabellek*. Bulduğunda durdurulmadan *c* veya ne zaman kullanıma ilk *sayısı* bayt.
 
-C, bu işlevler ele bir ** const ** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı kullanılabilir. Bir işaretçi alma aşırı ** const ** gösteren bir işaretçi döndürür **const **; bir işaretçi olmayan alır sürüm**const ** gösteren bir işaretçi olmayan döndürür**const **. Her iki makrosu _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const ** ve olmayan-** const ** bu işlevler sürümlerinde kullanılabilir. Olmayan gerektiriyorsa**const ** hem C++, C++ overloadsin davranışını simgesi _CONST_RETURN tanımlayın.
+C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yükleme **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür**const** . Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++, C++ overloadsin _const_return sembolünü.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memchr'e**|\<Memory.h > veya \<string.h >|
-|**wmemchr**|\<wchar.h >|
+|`memchr`|\<Memory.h > veya \<string.h >|
+|`wmemchr`|\<wchar.h >|
 
-Uyumluluğu hakkında daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
