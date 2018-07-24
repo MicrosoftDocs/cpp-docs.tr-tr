@@ -1,5 +1,5 @@
 ---
-title: kalan, remainderf, remainderl | Microsoft Docs
+title: geri kalan, remainderf remainderl | Microsoft Docs
 ms.custom: ''
 ms.date: 04/05/2018
 ms.technology:
@@ -37,16 +37,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f277292f413e09b9c41a87cd82e438e0e1e883a8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 96d87a213029ab33e4d3c0269c4e7ba41e1aed43
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406673"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209423"
 ---
 # <a name="remainder-remainderf-remainderl"></a>remainder, remainderf, remainderl
 
-Sayının yakın tamsayı değerine yuvarlanan iki kayan nokta değerlerinin kalanı hesaplar.
+En yakın tamsayı değerine yuvarlanır iki kayan nokta değerleri bölümünü geri kalanı hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,25 +67,25 @@ long double remainder( long double x, long double y ); /* C++ only */
 Pay.
 
 *Y*<br/>
-Payda değeri.
+Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kayan nokta geri kalanı *x* / *y*. Varsa değerini *y* 0.0, olan **kalan** sessiz NaN döndürür. Sessiz NaN tarafından gösterimini hakkında bilgi için **printf** ailesi, bkz: [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+Kayan nokta kalanını *x* / *y*. Varsa değerini *y* 0.0, olan **kalan** sessiz bir NaN döndürür. Tarafından sessiz bir NaN'ın sunumu hakkındaki bilgiler için **printf** ailesi, bkz: [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kalan** işlevler hesapla kayan nokta kalan *r* , *x* / *y* şekilde *x*   =  *n* * *y* + *r*, burada *n*olduğu tamsayı değeri'yakın *x* / *y* ve *n*olsa bile her &#124; *n*  -  *x* / *y* &#124; = 1/2. Zaman *r* = 0, *r* aynı işarete sahip *x*.
+**Kalan** işlevler hesapla kayan nokta kalanını *r* , *x* / *y* şekilde *x*   =  *n* \* *y* + *r*burada *n*olduğu tamsayı değeri için en yakın *x* / *y* ve *n*olsa bile her &#124; *n*  -  *x* / *y* &#124; = 1/2. Zaman *r* = 0, *r* aynı işarete sahip *x*.
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **kalan** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **kalan** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **kalan** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **kalan** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|İşlev|Gerekli başlık (C)|Gerekli başlık (C++)|
 |--------------|---------------------|-|
 |**kalan**, **remainderf**, **remainderl**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -37,16 +37,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a465ca74af72a5114eac949439ab8493f89bcb39
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 47b6e20c6395337113088aa51d8ba75744421922
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406270"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207526"
 ---
 # <a name="scalb-scalbf"></a>_scalb, _scalbf
 
-Ölçek bağımsız değişkeni 2'in tarafından.
+2'in kuvveti olarak ölçek bağımsız değişkeni.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,20 +64,20 @@ float _scalbf(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Çift duyarlıklı kayan noktalı değeri.
+Çift duyarlıklı, kayan nokta değeri.
 
 *exp*<br/>
 Uzun tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bir üstel değeri döndürür. Taşma (işaretini bağlı olarak *x*), **_scalb** döndürür **HUGE_VAL**; **errno** değişken ayarlandığında  **ERANGE**.
+Başarılı olursa üstel bir değer döndürür. Taşma (işaretini bağlı olarak *x*), **_scalb** döndürür **HUGE_VAL**; **errno** değişkeni ayarlanır  **ERANGE**.
 
-Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Scalb** işlevi değerini hesaplar *x* * 2<sup>*exp*</sup>.
+**_Scalb** işlevi değerini hesaplar *x* \* 2<sup>*exp*</sup>.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -85,7 +85,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno,
 |-------------|---------------------|
 |**_scalb**, **_scalbf**|\<float.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

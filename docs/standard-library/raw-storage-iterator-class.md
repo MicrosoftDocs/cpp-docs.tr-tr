@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d259040ec5f4d7f1148b9a782479b6db8617602
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 470fb497bb52fa51fec06ac0edb3e1996aa1e5e8
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954636"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208532"
 ---
 # <a name="rawstorageiterator-class"></a>raw_storage_iterator Sınıfı
 
@@ -69,8 +69,8 @@ Bellek ayırma ve nesne oluşturmayı ayırmak gerekli olduğunda bu bağdaştı
 
 |İşleç|Açıklama|
 |-|-|
-|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma * `ii`  =  `x`.|
-|[operator=](#op_eq)|Ham depolama yineleyici ifadesini uygulamak için kullanılan bir atama işleci * `i`  =  `x` bellekte depolamak için.|
+|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* `ii`  =  `x`.|
+|[operator=](#op_eq)|Ham depolama yineleyici ifadesini uygulamak için kullanılan bir atama işleci \* `i`  =  `x` bellekte depolamak için.|
 |[operator ++](#op_add_add)|Ham depolama yineleyiciler preincrement ve postincrement işleçler.|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -103,7 +103,7 @@ typedef ForwardIterator iter_type;
 
 Şablon parametresi için bir eşanlamlı türüdür `ForwardIterator`.
 
-## <a name="op_star"></a>  raw_storage_iterator::operator*
+## <a name="op_star"></a>  raw_storage_iterator::operator\*
 
 Ham depolama yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* *II* = *x*.
 

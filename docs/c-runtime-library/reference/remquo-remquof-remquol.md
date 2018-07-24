@@ -37,16 +37,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d2bcb774d7ebe7e71c3877af326177bbf8d7160
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 480bf65d61581866fe447c9563a267d08d17c838
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407008"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207659"
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 
-İki tamsayı değerleri geri kalanı hesaplar ve bir tamsayı değeri oturum ve sayının yaklaşık büyüklüğünü ile bir parametresinde belirtilen bir konumda saklar.
+İki tamsayı değerinin kalanını hesaplar ve işaretli ve yaklaşık büyüklük tamsayı değerini bir parametre içinde belirtilen bir konumda saklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,28 +67,28 @@ long double remquo( long double numer, long double denom, int* quo ); /* C++ onl
 Pay.
 
 *denom*<br/>
-Payda değeri.
+Payda.
 
 *quo*<br/>
-Tamsayı oturum ve sayının yaklaşık büyüklüğünü olan bir değeri depolamak için bir işaretçi.
+İşaretli ve yaklaşık büyüklük olan bir değeri depolamak için bir tamsayıya yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**remquo** kayan nokta geri kalanı döndürür *x* / *y*. Varsa değerini *y* 0.0, olan **remquo** sessiz NaN döndürür. Sessiz NaN tarafından gösterimini hakkında bilgi için **printf** ailesi, bkz: [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+**remquo** kayan nokta kalanını döndürür *x* / *y*. Varsa değerini *y* 0.0, olan **remquo** sessiz bir NaN döndürür. Tarafından sessiz bir NaN'ın sunumu hakkındaki bilgiler için **printf** ailesi, bkz: [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Remquo** işlevi kayan nokta kalanı hesaplar *f* , *x* / *y* şekilde *x*   =  *ı* * *y* + *f*, burada *ı* bir tamsayıdır , *f* aynı işarete sahip *x*ve mutlak değerini *f* mutlak değerini'dan küçük *y*.
+**Remquo** işlevi kayan nokta kalanını hesaplar *f* , *x* / *y* şekilde *x*   =  *miyim* \* *y* + *f*burada *miyim* tamsayı , *f* aynı işarete sahip *x*ve mutlak değerini *f* mutlak değerini'dan küçük *y*.
 
-C++ verir aşırı yüklemesi, aşırı çağırması **remquo** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **remquo** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
+C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **remquo** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **remquo** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|İşlev|Gerekli başlık (C)|Gerekli başlık (C++)|
 |--------------|---------------------|-|
 |**remquo**, **remquof**, **remquol**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

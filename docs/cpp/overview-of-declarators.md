@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe5866c3e945d55722a4cf8530c543b0e8ca5163
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 405ef6da02c15e93e516069c1fedc22f002bdf2c
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948031"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208568"
 ---
 # <a name="overview-of-declarators"></a>Bildiricilere Genel Bakış
 Bildirimciler, nesne veya işlev adlarını belirten bir bildirimin bileşenleridir. Bildirimciler, adlandırılmış nesnelerin bir nesne, işaretçi, başvuru veya dizi olduğunu da belirtir.  Bildirimciler temel türü belirtmese de, işaretçiler, başvurular ve diziler gibi türetilmiş türleri belirtmek için temel türdeki tür bilgilerini değiştirir.  İşlevlere uygulanan bildirimci, bir işlevin dönüş türünü nesne, işaretçi veya başvuru olarak belirtmek için tür tanımlayıcısı ile birlikte çalışır. (De ele alınan tanımlayıcılar, [bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md), tür ve depolama sınıfı gibi özellikleri iletmek. Bu bölümde hem de ele alınan değiştiriciler [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md), bildirimcileri değiştirir.) Aşağıdaki şekilde, tam bir `MyFunction` bildirimi gösterilmekte ve bildirimin bileşenleri çağrılmaktadır.  
@@ -127,7 +127,7 @@ int i, *j, f(int k);  // int, pointer to int, function returning int
 int* i, f(int k);  // pointer to int, function returning int (not int*)  
 ```  
   
- bildirimi olarak görünebilir bir **int** işaretçi ve döndüren bir işlevin `int*`, ancak böyle değildir.  Çünkü * işareti, `i` bildirimcisinin değil, `f` bildirimcisinin bir parçasıdır.  
+ bildirimi olarak görünebilir bir **int** işaretçi ve döndüren bir işlevin `int*`, ancak böyle değildir.  Çünkü \* bildirimcisinin bir parçasıdır `i`, bildirimcisi parçası `f`.  
   
  **Typedef ile bildirimci sözdizimini basitleştirme**  
   
@@ -175,8 +175,8 @@ int a, *b, c[5], **d, &e=a;
   
 - ve *işaretçi işleci* biridir:  
   
-  - * [cv niteleyicileri]  
-  - & [cv niteleyicileri]:: iç içe-adı-specifier * [cv niteleyicileri]  
+  - \* [cv niteleyicileri]  
+  - & [cv niteleyicileri]:: iç içe-adı-specifier \* [cv niteleyicileri]  
 
   
  Bir bildirimci bildirimciler içerebileceği için yukarıdaki kurallar kullanılarak işaretçi dizileri, işlev işaretçilerinin dizilerini döndüren işlevler gibi daha karmaşık türetilmiş türler oluşturulabilir.  Oluşturma işleminin her adımı için temel veri türünü temsil eden tanımlayıcı ile işe başlayın ve önceki ifadeyle birlikte `declarator` olarak yukarıdaki sözdizimi kuralını uygulayın.  Sözdizimi kurallarını uyguladığınız sıra, ifadenin İngilizce olarak belirtildiği yönün tersi olmalıdır.  Uygulanıyorsa *işaretçi işleci* sözdizimi kuralı bir dizi veya işlev ifade, dizi veya işlev, aşağıdaki tabloda Son satırda olduğu gibi bir işaretçiye istiyorsanız parantezler kullanın.  
@@ -190,4 +190,4 @@ int a, *b, c[5], **d, &e=a;
 |10 dizisi|`(*i)[10]`|4|  
 |işaretçisi|`*((*i)[10])`|6 ve sonra 5|  
   
- Birden fazla işaretçi, başvuru, dizi veya işlev değiştiricisi kullanıldığında, bildiriciler çok karmaşık hale gelebilir.  Konu [daha karmaşık Bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md) daha karmaşık bildirimci sözdiziminin nasıl okunacağı açıklanmaktadır.  C++'ta olsa da, herhangi bir konu hem C hem de C++ için uygun * MyClass gibi bir tam adı bir işaretçiyi göstermek için kullanılan::\* bir sınıfın bir üye işaretçisi belirtmek için kullanılabilir.
+ Birden fazla işaretçi, başvuru, dizi veya işlev değiştiricisi kullanıldığında, bildiriciler çok karmaşık hale gelebilir.  Konu [daha karmaşık Bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md) daha karmaşık bildirimci sözdiziminin nasıl okunacağı açıklanmaktadır.  C++'ta olsa da, herhangi bir konu hem C hem de C++ için uygun \* MyClass gibi bir tam adı bir işaretçiyi göstermek için kullanılan::\* bir sınıfın bir üye işaretçisi belirtmek için kullanılabilir.

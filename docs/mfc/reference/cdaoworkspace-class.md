@@ -72,12 +72,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa0067e3054972ccc60253bb7205dc7a4f1fe4bd
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 7e6210f8c1b1fd1bd19efb74ca68c7a1bed3f7f1
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337453"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209137"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace sınıfı
 Adlandırılmış, parola korumalı veritabanı oturumunu, tek bir kullanıcı tarafından oturum kapatma için oturum açma işlemi yönetir.  
@@ -745,7 +745,7 @@ static void PASCAL SetDefaultUser(LPCTSTR lpszDefaultUser);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszDefaultUser*  
- Varsayılan kullanıcı adı. Bir kullanıcı adı 1-20 karakter uzunluğunda olmalıdır ve alfabetik karakterler, aksanlı karakterler, sayılar, boşluk ve semboller dışında şunlardır: "(tırnak işaretleri) / (eğik çizgi), \ (ters eğik çizgi) \[ \] (köşeli ayraç): (virgül) &#124; ( Kanal) \< (az-işareti), > (büyük-işareti), + (artı) = (eşittir işareti), (virgül), (ayrılmış) (soru işareti) * (, alanları ve denetim karakterlerine (ASCII 00 ile 31 ASCII) baştaki yıldız işareti). İlgili bilgiler için DAO Yardımı'nda "UserName özelliği" konusuna bakın.  
+ Varsayılan kullanıcı adı. Bir kullanıcı adı 1-20 karakter uzunluğunda olmalıdır ve alfabetik karakterler, aksanlı karakterler, sayılar, boşluk ve semboller dışında şunlardır: "(tırnak işaretleri) / (eğik çizgi), \ (ters eğik çizgi) \[ \] (köşeli ayraç): (virgül) &#124; ( Kanal) \< (az-işareti), > (büyük-işareti), + (artı) = (eşittir işareti), (virgül), (ayrılmış) (soru işareti) \* (, alanları ve denetim karakterlerine (ASCII 00 ile 31 ASCII) baştaki yıldız işareti). İlgili bilgiler için DAO Yardımı'nda "UserName özelliği" konusuna bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ayarladığınız varsayılan kullanıcı adı ve çağrının ardından oluşturduğunuz yeni çalışma alanlarında geçerlidir. Sonraki çalışma alanları oluşturduğunuzda, bir kullanıcı adı belirtmeniz gerekmez [Oluştur](#create) çağırın.  

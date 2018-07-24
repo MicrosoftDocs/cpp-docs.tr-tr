@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bd20e2e1d88564c7e688e1e0c9c2392f1f4f2ac
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c4fad0d6f5823a205490038755f9de4eef10eae8
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695317"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208516"
 ---
 # <a name="concurrencyfastmath-namespace-functions"></a>CONCURRENCY::fast_math ad alanı işlevleri
 ||||  
@@ -79,7 +79,7 @@ ms.locfileid: "33695317"
 |[log10](#log10)|[log10f](#log10f)|[log2](#log2)|  
 |[log2f](#log2f)|[logf](#logf)|[modf](#modf)|  
 |[modff](#modff)|[POW](#pow)|[powf](#powf)|  
-|[yuvarlamak](#round)|[roundf](#roundf)|[rsqrt](#rsqrt)|  
+|[Yuvarlak](#round)|[roundf](#roundf)|[rsqrt](#rsqrt)|  
 |[rsqrtf](#rsqrtf)|[signbit](#signbit)|[signbitf](#signbitf)|  
 |[sin](#sin)|[sincos](#sincos)|[sincosf](#sincosf)|  
 |[sinf](#sinf)|[SİNH](#sinh)|[sinhf](#sinhf)|  
@@ -88,7 +88,7 @@ ms.locfileid: "33695317"
 |[trunc](#trunc)|[truncf](#truncf)|  
   
 ##  <a name="acos"></a>  ACOS  
- Bağımsız değişken arkkosinüsünü hesaplar  
+ Bağımsız değişkenin ark kosinüsünü hesaplar.  
   
 ```  
 inline float acos(float _X) restrict(amp);
@@ -99,10 +99,10 @@ inline float acos(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken arkkosinüsünü değerini döndürür  
+ Bağımsız değişkenin ark kosinüsünü değerini döndürür  
   
 ##  <a name="acosf"></a>  acosf  
- Bağımsız değişken arkkosinüsünü hesaplar  
+ Bağımsız değişkenin ark kosinüsünü hesaplar.  
   
 ```  
 inline float acosf(float _X) restrict(amp);
@@ -113,10 +113,10 @@ inline float acosf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken arkkosinüsünü değerini döndürür  
+ Bağımsız değişkenin ark kosinüsünü değerini döndürür  
   
 ##  <a name="asin"></a>  asin  
- Bağımsız değişken arksinüsünü hesaplar  
+ Bağımsız değişkenin ark sinüsünü hesaplar  
   
 ```  
 inline float asin(float _X) restrict(amp);
@@ -127,10 +127,10 @@ inline float asin(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken arksinüsünü değerini döndürür  
+ Bağımsız değişkenin ark sinüsünü değerini döndürür  
   
 ##  <a name="asinf"></a>  asinf  
- Bağımsız değişken arksinüsünü hesaplar  
+ Bağımsız değişkenin ark sinüsünü hesaplar  
   
 ```  
 inline float asinf(float _X) restrict(amp);
@@ -141,10 +141,10 @@ inline float asinf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken arksinüsünü değerini döndürür  
+ Bağımsız değişkenin ark sinüsünü değerini döndürür  
   
 ##  <a name="atan"></a>  atan  
- Bağımsız değişken tanjantını hesaplar  
+ Bağımsız değişkenin ark tanjantını hesaplar.  
   
 ```  
 inline float atan(float _X) restrict(amp);
@@ -155,10 +155,10 @@ inline float atan(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken arktanjantını değerini döndürür  
+ Bağımsız değişkenin ark tanjantını değerini döndürür  
   
 ##  <a name="atan2"></a>  ATAN2  
- _Y/_X tanjantını hesaplar  
+ _Y/_x'in ark tanjantını hesaplar.  
   
 ```  
 inline float atan2(
@@ -174,10 +174,10 @@ inline float atan2(
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _Y/_X arktanjantını değerini döndürür  
+ _Y/_x'in ark tanjantını değerini döndürür  
   
 ##  <a name="atan2f"></a>  atan2f  
- _Y/_X tanjantını hesaplar  
+ _Y/_x'in ark tanjantını hesaplar.  
   
 ```  
 inline float atan2f(
@@ -193,10 +193,10 @@ inline float atan2f(
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _Y/_X arktanjantını değerini döndürür  
+ _Y/_x'in ark tanjantını değerini döndürür  
   
 ##  <a name="atanf"></a>  atanf  
- Bağımsız değişken tanjantını hesaplar  
+ Bağımsız değişkenin ark tanjantını hesaplar.  
   
 ```  
 inline float atanf(float _X) restrict(amp);
@@ -207,10 +207,10 @@ inline float atanf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken arktanjantını değerini döndürür  
+ Bağımsız değişkenin ark tanjantını değerini döndürür  
   
-##  <a name="ceil"></a>  ceil  
- Bağımsız değişken tavan hesaplar  
+##  <a name="ceil"></a>  Ceil  
+ Bağımsız değişkenin tavanını hesaplar.  
   
 ```  
 inline float ceil(float _X) restrict(amp);
@@ -221,10 +221,10 @@ inline float ceil(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken tavan döndürür  
+ Bağımsız değişkenin tavanını döndürür  
   
 ##  <a name="ceilf"></a>  ceilf  
- Bağımsız değişken tavan hesaplar  
+ Bağımsız değişkenin tavanını hesaplar.  
   
 ```  
 inline float ceilf(float _X) restrict(amp);
@@ -235,10 +235,10 @@ inline float ceilf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken tavan döndürür  
+ Bağımsız değişkenin tavanını döndürür  
   
 ##  <a name="cosf"></a>  cosf  
- Bağımsız değişken kosinüsünü hesaplar  
+ Bağımsız değişkenin kosinüsünü hesaplar.  
   
 ```  
 inline float cosf(float _X) restrict(amp);
@@ -249,10 +249,10 @@ inline float cosf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken kosinüsünü değerini döndürür  
+ Bağımsız değişkenin Kosinüs değerini döndürür  
   
 ##  <a name="coshf"></a>  coshf  
- Bağımsız değişkenin hiperbolik kosinüsünü değeri hesaplar  
+ Bağımsız değişkenin hiperbolik Kosinüs değerini hesaplar.  
   
 ```  
 inline float coshf(float _X) restrict(amp);
@@ -263,10 +263,10 @@ inline float coshf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken hiperbolik kosinüsünü değerini döndürür  
+ Bağımsız değişkenin hiperbolik Kosinüs değerini döndürür  
   
-##  <a name="cos"></a>  cos  
- Bağımsız değişken kosinüsünü hesaplar  
+##  <a name="cos"></a>  Cos  
+ Bağımsız değişkenin kosinüsünü hesaplar.  
   
 ```  
 inline float cos(float _X) restrict(amp);
@@ -277,10 +277,10 @@ inline float cos(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken kosinüsünü değerini döndürür  
+ Bağımsız değişkenin Kosinüs değerini döndürür  
   
 ##  <a name="cosh"></a>  COSH  
- Bağımsız değişkenin hiperbolik kosinüsünü değeri hesaplar  
+ Bağımsız değişkenin hiperbolik Kosinüs değerini hesaplar.  
   
 ```  
 inline float cosh(float _X) restrict(amp);
@@ -291,10 +291,10 @@ inline float cosh(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken hiperbolik kosinüsünü değerini döndürür  
+ Bağımsız değişkenin hiperbolik Kosinüs değerini döndürür  
   
 ##  <a name="exp"></a>  exp  
- E tabanında bağımsız değişkeni üstel hesaplar  
+ Tabanında üssü bağımsız değişkeni hesaplar.  
   
 ```  
 inline float exp(float _X) restrict(amp);
@@ -305,10 +305,10 @@ inline float exp(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- E tabanında bağımsız değişkenin üstel döndürür  
+ Üstel bağımsız değişkenin e tabanında döndürür  
   
 ##  <a name="exp2"></a>  exp2  
- Base-2 bağımsız değişkeni üstel hesaplar  
+ 2 tabanında üssünü bağımsız değişkeni hesaplar.  
   
 ```  
 inline float exp2(float _X) restrict(amp);
@@ -319,10 +319,10 @@ inline float exp2(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Base-2 bağımsız değişkeni üstel döndürür  
+ Üstel bağımsız değişkenin 2 tabanında döndürür  
   
 ##  <a name="exp2f"></a>  exp2f  
- Base-2 bağımsız değişkeni üstel hesaplar  
+ 2 tabanında üssünü bağımsız değişkeni hesaplar.  
   
 ```  
 inline float exp2f(float _X) restrict(amp);
@@ -333,10 +333,10 @@ inline float exp2f(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Base-2 bağımsız değişkeni üstel döndürür  
+ Üstel bağımsız değişkenin 2 tabanında döndürür  
   
 ##  <a name="expf"></a>  expf  
- E tabanında bağımsız değişkeni üstel hesaplar  
+ Tabanında üssü bağımsız değişkeni hesaplar.  
   
 ```  
 inline float expf(float _X) restrict(amp);
@@ -347,10 +347,10 @@ inline float expf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- E tabanında bağımsız değişkenin üstel döndürür  
+ Üstel bağımsız değişkenin e tabanında döndürür  
   
 ##  <a name="fabs"></a>  fabs  
- Bağımsız değişken mutlak değerini döndürür  
+ Bağımsız değişkenin mutlak değerini döndürür  
   
 ```  
 inline float fabs(float _X) restrict(amp);
@@ -361,10 +361,10 @@ inline float fabs(float _X) restrict(amp);
  Tamsayı değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken mutlak değerini döndürür  
+ Bağımsız değişkenin mutlak değerini döndürür  
   
 ##  <a name="fabsf"></a>  fabsf  
- Bağımsız değişken mutlak değerini döndürür  
+ Bağımsız değişkenin mutlak değerini döndürür  
   
 ```  
 inline float fabsf(float _X) restrict(amp);
@@ -375,10 +375,10 @@ inline float fabsf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken mutlak değerini döndürür  
+ Bağımsız değişkenin mutlak değerini döndürür  
   
 ##  <a name="floor"></a>  Kat  
- Bağımsız değişken kat hesaplar  
+ Bağımsız değişkenin tabanını hesaplar.  
   
 ```  
 inline float floor(float _X) restrict(amp);
@@ -389,10 +389,10 @@ inline float floor(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken kat döndürür  
+ Tam bir bağımsız değişken değerini döndürür  
   
 ##  <a name="floorf"></a>  floorf  
- Bağımsız değişken kat hesaplar  
+ Bağımsız değişkenin tabanını hesaplar.  
   
 ```  
 inline float floorf(float _X) restrict(amp);
@@ -403,10 +403,10 @@ inline float floorf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken kat döndürür  
+ Tam bir bağımsız değişken değerini döndürür  
   
 ##  <a name="fmax"></a>  fmax  
- Bağımsız değişkenler en büyük sayısal değerini belirleme  
+ Bağımsız değişkenlerin en büyük sayısal değerini belirler  
   
 ```  
 inline float max(
@@ -422,10 +422,10 @@ inline float max(
  Tamsayı değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişkenler en büyük sayısal değeri döndürür  
+ Bağımsız değişkenlerin en büyük sayısal değerini döndürür  
   
 ##  <a name="fmaxf"></a>  fmaxf  
- Bağımsız değişkenler en büyük sayısal değerini belirleme  
+ Bağımsız değişkenlerin en büyük sayısal değerini belirler  
   
 ```  
 inline float fmaxf(
@@ -441,10 +441,10 @@ inline float fmaxf(
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişkenler en büyük sayısal değeri döndürür  
+ Bağımsız değişkenlerin en büyük sayısal değerini döndürür  
   
 ##  <a name="fmin"></a>  fmin  
- Bağımsız değişkenler en küçük sayısal değeri belirleme  
+ Bağımsız değişkenlerin en küçük sayısal değerini belirler  
   
 ```  
 inline float min(
@@ -460,10 +460,10 @@ inline float min(
  Tamsayı değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişkenler en küçük sayısal değeri döndürür  
+ Bağımsız değişkenlerin en düşük sayısal değerini döndürür  
   
 ##  <a name="fminf"></a>  fminf  
- Bağımsız değişkenler en küçük sayısal değeri belirleme  
+ Bağımsız değişkenlerin en küçük sayısal değerini belirler  
   
 ```  
 inline float fminf(
@@ -479,10 +479,10 @@ inline float fminf(
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişkenler en küçük sayısal değeri döndürür  
+ Bağımsız değişkenlerin en düşük sayısal değerini döndürür  
   
-##  <a name="fmod"></a>  fmod  
- Kayan nokta _X/_Y kalanı hesaplar  
+##  <a name="fmod"></a>  Fmod  
+ _X/_Y'in kayan nokta kalanını hesaplar.  
   
 ```  
 inline float fmod(
@@ -498,10 +498,10 @@ inline float fmod(
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kayan nokta _X/_Y kalanı döndürür  
+ _X/_Y'in kayan nokta kalanını döndürür  
   
 ##  <a name="fmodf"></a>  fmodf  
- Kayan nokta _X/_Y kalanı hesaplar.  
+ _X/_Y'in kayan nokta kalanını hesaplar.  
   
 ```  
 inline float fmodf(
@@ -517,10 +517,10 @@ inline float fmodf(
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kayan nokta _X/_Y kalanı döndürür  
+ _X/_Y'in kayan nokta kalanını döndürür  
   
 ##  <a name="frexp"></a>  frexp  
- Mantis ve üs _X, alır  
+ _X'in Mantis ve alır.  
   
 ```  
 inline float frexp(
@@ -533,13 +533,13 @@ inline float frexp(
  Kayan nokta değeri  
   
  `_Exp`  
- Kayan nokta değeri _X tamsayı üs döndürür  
+ _X'in tam sayı üssü kayan nokta değerini döndürür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Mantis _X döndürür  
+ Mantis _x'i döndürür  
   
 ##  <a name="frexpf"></a>  frexpf  
- Mantis ve üs _X, alır  
+ _X'in Mantis ve alır.  
   
 ```  
 inline float frexpf(
@@ -552,13 +552,13 @@ inline float frexpf(
  Kayan nokta değeri  
   
  `_Exp`  
- Kayan nokta değeri _X tamsayı üs döndürür  
+ _X'in tam sayı üssü kayan nokta değerini döndürür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Mantis _X döndürür  
+ Mantis _x'i döndürür  
   
 ##  <a name="isfinite"></a>  isfinite  
- Bağımsız değişken sınırlı bir değere sahip olup olmadığını belirler  
+ Bağımsız değişkenin sınırlı bir değer olup olmadığını belirler  
   
 ```  
 inline int isfinite(float _X) restrict(amp);
@@ -569,10 +569,10 @@ inline int isfinite(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken sınırlı bir değere sahip ve yalnızca, sıfır olmayan bir değer döndürür  
+ Sınırlı bir değeri bağımsız değişkene sahiptir ve yalnızca, sıfır olmayan bir değer döndürür.  
   
 ##  <a name="isinf"></a>  isinf  
- Bağımsız değişkeni bir sonsuzluk olup olmadığını belirler  
+ Bağımsız değişkenin bir sonsuzluk olup olmadığını belirler  
   
 ```  
 inline int isinf(float _X) restrict(amp);
@@ -583,10 +583,10 @@ inline int isinf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken sonsuz bir değere sahip ve yalnızca, sıfır olmayan bir değer döndürür  
+ Bağımsız değişken sonsuz bir değere sahip ve yalnızca, sıfır olmayan bir değer döndürür.  
   
 ##  <a name="isnan"></a>  isNaN  
- Bağımsız değişkeni bir NaN olup olmadığını belirler  
+ Bağımsız değişkenin bir NaN olup olmadığını belirler  
   
 ```  
 inline int isnan(float _X) restrict(amp);
@@ -597,10 +597,10 @@ inline int isnan(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken NaN değerine sahip ve yalnızca, sıfır olmayan bir değer döndürür  
+ Bağımsız değişkenin bir NaN değerini sahiptir ve yalnızca, sıfır olmayan bir değer döndürür.  
   
 ##  <a name="ldexp"></a>  ldexp  
- Mantis ve üs arasında bir gerçek sayı hesaplar  
+ Mantis ve bir gerçek sayı hesaplar.  
   
 ```  
 inline float ldexp(
@@ -616,10 +616,10 @@ inline float ldexp(
  Tamsayı üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür _X * 2 ^ _Exp  
+ _X'i döndürür \* 2 ^ _Exp  
   
 ##  <a name="ldexpf"></a>  ldexpf  
- Mantis ve üs arasında bir gerçek sayı hesaplar  
+ Mantis ve bir gerçek sayı hesaplar.  
   
 ```  
 inline float ldexpf(
@@ -635,10 +635,10 @@ inline float ldexpf(
  Tamsayı üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür _X * 2 ^ _Exp  
+ _X'i döndürür \* 2 ^ _Exp  
   
 ##  <a name="log"></a>  Günlük  
- Bağımsız değişken e tabanında logaritmasını hesaplar  
+ Bağımsız değişkenin e tabanında logaritmasını hesaplar.  
   
 ```  
 inline float log(float _X) restrict(amp);
@@ -649,10 +649,10 @@ inline float log(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken e tabanında logaritmasını döndürür  
+ Bağımsız değişkenin e tabanında logaritmasını döndürür  
   
 ##  <a name="log10"></a>  log10  
- Bağımsız değişken 10 tabanında logaritmasını hesaplar  
+ Bağımsız değişkenin 10 tabanında logaritmasını hesaplar.  
   
 ```  
 inline float log10(float _X) restrict(amp);
@@ -663,10 +663,10 @@ inline float log10(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken 10 tabanında logaritmasını döndürür  
+ Bağımsız değişkenin 10 tabanında logaritmasını döndürür  
   
 ##  <a name="log10f"></a>  log10f  
- Bağımsız değişken 10 tabanında logaritmasını hesaplar  
+ Bağımsız değişkenin 10 tabanında logaritmasını hesaplar.  
   
 ```  
 inline float log10f(float _X) restrict(amp);
@@ -677,10 +677,10 @@ inline float log10f(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken 10 tabanında logaritmasını döndürür  
+ Bağımsız değişkenin 10 tabanında logaritmasını döndürür  
   
 ##  <a name="log2"></a>  log2  
- Bağımsız değişken 2 tabanındaki logaritmasını hesaplar  
+ Bağımsız değişkenin 2 tabanlı logaritmasını hesaplar.  
   
 ```  
 inline float log2(float _X) restrict(amp);
@@ -691,10 +691,10 @@ inline float log2(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken 2 tabanındaki logaritmasını döndürür  
+ Bağımsız değişkenin 2 tabanında logaritmasını döndürür  
   
 ##  <a name="log2f"></a>  log2f  
- Bağımsız değişken 2 tabanındaki logaritmasını hesaplar  
+ Bağımsız değişkenin 2 tabanlı logaritmasını hesaplar.  
   
 ```  
 inline float log2f(float _X) restrict(amp);
@@ -705,10 +705,10 @@ inline float log2f(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken 10 tabanında logaritmasını döndürür  
+ Bağımsız değişkenin 10 tabanında logaritmasını döndürür  
   
 ##  <a name="logf"></a>  logf  
- Bağımsız değişken e tabanında logaritmasını hesaplar  
+ Bağımsız değişkenin e tabanında logaritmasını hesaplar.  
   
 ```  
 inline float logf(float _X) restrict(amp);
@@ -719,10 +719,10 @@ inline float logf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken e tabanında logaritmasını döndürür  
+ Bağımsız değişkenin e tabanında logaritmasını döndürür  
   
 ##  <a name="modf"></a>  modf  
- Kesirli içine _X ve tamsayı bölümleri böler.  
+ _X'i kesirli ve tamsayı bölümlere böler.  
   
 ```  
 inline float modf(
@@ -737,10 +737,10 @@ inline float modf(
  `_Ip`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _X imzalı kesirli kısmını döndürür  
+ _X'in işaretli kesirli kısmını döndürür.  
   
 ##  <a name="modff"></a>  modff  
- Kesirli içine _X ve tamsayı bölümleri böler.  
+ _X'i kesirli ve tamsayı bölümlere böler.  
   
 ```  
 inline float modff(
@@ -755,10 +755,10 @@ inline float modff(
  `_Ip`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _X imzalı kesirli kısmını döndürür  
+ _X'in işaretli kesirli kısmını döndürür.  
   
 ##  <a name="pow"></a>  POW  
- Üssü _Y _X hesaplar  
+ _X ardından _Y üssünü hesaplar.  
   
 ```  
 inline float pow(
@@ -768,16 +768,16 @@ inline float pow(
   
 ### <a name="parameters"></a>Parametreler  
  `_X`  
- Kayan nokta değeri, taban  
+ Kayan nokta değeri, temel  
   
  `_Y`  
  Kayan nokta değeri, üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _X _Y üssüne yükseltilmiş değerini döndürür  
+ _X ardından _Y üssüne yükseltilmiş değerini döndürür  
   
 ##  <a name="powf"></a>  powf  
- Üssü _Y _X hesaplar  
+ _X ardından _Y üssünü hesaplar.  
   
 ```  
 inline float powf(
@@ -787,15 +787,15 @@ inline float powf(
   
 ### <a name="parameters"></a>Parametreler  
  `_X`  
- Kayan nokta değeri, taban  
+ Kayan nokta değeri, temel  
   
  `_Y`  
  Kayan nokta değeri, üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="round"></a>  yuvarlamak  
- _X en yakın tamsayıya yuvarlar  
+##  <a name="round"></a>  Yuvarlak  
+ _X'i en yakın tamsayıya yuvarlar  
   
 ```  
 inline float round(float _X) restrict(amp);
@@ -806,10 +806,10 @@ inline float round(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _X'en yakın tamsayıya döndürür  
+ _X'ın en yakın tamsayıyı döndürür  
   
 ##  <a name="roundf"></a>  roundf  
- _X en yakın tamsayıya yuvarlar  
+ _X'i en yakın tamsayıya yuvarlar  
   
 ```  
 inline float roundf(float _X) restrict(amp);
@@ -820,10 +820,10 @@ inline float roundf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _X'en yakın tamsayıya döndürür  
+ _X'ın en yakın tamsayıyı döndürür  
   
 ##  <a name="rsqrt"></a>  rsqrt  
- Devrik değerlerin bağımsız değişkeni'nin kare kökünü döndürür  
+ Bağımsız değişkenin kare kökünün karşıtını döndürür  
   
 ```  
 inline float rsqrt(float _X) restrict(amp);
@@ -834,10 +834,10 @@ inline float rsqrt(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Devrik değerlerin bağımsız değişkeni'nin kare kökünü döndürür  
+ Bağımsız değişkenin kare kökünün karşıtını döndürür  
   
 ##  <a name="rsqrtf"></a>  rsqrtf  
- Devrik değerlerin bağımsız değişkeni'nin kare kökünü döndürür  
+ Bağımsız değişkenin kare kökünün karşıtını döndürür  
   
 ```  
 inline float rsqrtf(float _X) restrict(amp);
@@ -848,10 +848,10 @@ inline float rsqrtf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Devrik değerlerin bağımsız değişkeni'nin kare kökünü döndürür  
+ Bağımsız değişkenin kare kökünün karşıtını döndürür  
   
 ##  <a name="signbit"></a>  signbit  
- _X oturum negatif olup olmadığını belirler  
+ _X'in işaretini negatif olup olmadığını belirler  
   
 ```  
 inline int signbit(float _X) restrict(amp);
@@ -862,10 +862,10 @@ inline int signbit(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _X oturum varsa ve yalnızca negatifse sıfır olmayan bir değer döndürür  
+ _X'in işaretini negatif ise ve yalnızca, sıfır olmayan bir değer döndürür.  
   
 ##  <a name="signbitf"></a>  signbitf  
- _X oturum negatif olup olmadığını belirler  
+ _X'in işaretini negatif olup olmadığını belirler  
   
 ```  
 inline int signbitf(float _X) restrict(amp);
@@ -876,10 +876,10 @@ inline int signbitf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- _X oturum varsa ve yalnızca negatifse sıfır olmayan bir değer döndürür  
+ _X'in işaretini negatif ise ve yalnızca, sıfır olmayan bir değer döndürür.  
   
-##  <a name="sin"></a>  sin  
- Bağımsız değişkenin sinüsünü değeri hesaplar  
+##  <a name="sin"></a>  Sin  
+ Bağımsız değişkenin sinüs değeri hesaplar  
   
 ```  
 inline float sin(float _X) restrict(amp);
@@ -890,10 +890,10 @@ inline float sin(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken sinüsünü değerini döndürür  
+ Bağımsız değişkenin sinüs değerini döndürür  
   
 ##  <a name="sinf"></a>  sinf  
- Bağımsız değişkenin sinüsünü değeri hesaplar  
+ Bağımsız değişkenin sinüs değeri hesaplar  
   
 ```  
 inline float sinf(float _X) restrict(amp);
@@ -904,10 +904,10 @@ inline float sinf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken sinüsünü değerini döndürür  
+ Bağımsız değişkenin sinüs değerini döndürür  
   
 ##  <a name="sincos"></a>  sincos  
- _X Sinüs ve Kosinüs değerini hesaplar  
+ _X'in Sinüs ve Kosinüs değerini hesaplar.  
   
 ```  
 inline void sincos(
@@ -921,13 +921,13 @@ inline void sincos(
  Kayan nokta değeri  
   
  `_S`  
- _X sinüsünü değerini döndürür  
+ _X'in sinüs değerini döndürür  
   
  `_C`  
- _X kosinüsünü değerini döndürür  
+ _X Kosinüs değerini döndürür  
   
 ##  <a name="sincosf"></a>  sincosf  
- _X Sinüs ve Kosinüs değerini hesaplar  
+ _X'in Sinüs ve Kosinüs değerini hesaplar.  
   
 ```  
 inline void sincosf(
@@ -941,13 +941,13 @@ inline void sincosf(
  Kayan nokta değeri  
   
  `_S`  
- _X sinüsünü değerini döndürür  
+ _X'in sinüs değerini döndürür  
   
  `_C`  
- _X kosinüsünü değerini döndürür  
+ _X Kosinüs değerini döndürür  
   
 ##  <a name="sinh"></a>  SİNH  
- Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar  
+ Bağımsız değişkenin hiperbolik sinüs değerini hesaplar.  
   
 ```  
 inline float sinh(float _X) restrict(amp);
@@ -958,10 +958,10 @@ inline float sinh(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken hiperbolik sinüsünü değerini döndürür  
+ Bağımsız değişkenin hiperbolik sinüs değerini döndürür  
   
 ##  <a name="sinhf"></a>  sinhf  
- Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar  
+ Bağımsız değişkenin hiperbolik sinüs değerini hesaplar.  
   
 ```  
 inline float sinhf(float _X) restrict(amp);
@@ -972,10 +972,10 @@ inline float sinhf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken hiperbolik sinüsünü değerini döndürür  
+ Bağımsız değişkenin hiperbolik sinüs değerini döndürür  
   
 ##  <a name="sqrt"></a>  Sqrt  
- Bağımsız değişken squre kökündeki hesaplar  
+ Bağımsız değişkenin squre kök hesaplar  
   
 ```  
 inline float sqrt(float _X) restrict(amp);
@@ -986,10 +986,10 @@ inline float sqrt(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken squre kökünü döndürür  
+ Bağımsız değişkenin squre kökünü döndürür  
   
 ##  <a name="sqrtf"></a>  sqrtf  
- Bağımsız değişken squre kökündeki hesaplar  
+ Bağımsız değişkenin squre kök hesaplar  
   
 ```  
 inline float sqrtf(float _X) restrict(amp);
@@ -1000,10 +1000,10 @@ inline float sqrtf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken squre kökünü döndürür  
+ Bağımsız değişkenin squre kökünü döndürür  
   
 ##  <a name="tan"></a>  tan  
- Bağımsız değişkenin Eğim değeri hesaplar  
+ Bağımsız değişkenin tanjant değerini hesaplar.  
   
 ```  
 inline float tan(float _X) restrict(amp);
@@ -1014,10 +1014,10 @@ inline float tan(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken Eğim değerini döndürür  
+ Bağımsız değişkenin tanjant değerini döndürür  
   
 ##  <a name="tanf"></a>  tanf  
- Bağımsız değişkenin Eğim değeri hesaplar  
+ Bağımsız değişkenin tanjant değerini hesaplar.  
   
 ```  
 inline float tanf(float _X) restrict(amp);
@@ -1028,10 +1028,10 @@ inline float tanf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken Eğim değerini döndürür  
+ Bağımsız değişkenin tanjant değerini döndürür  
   
 ##  <a name="tanh"></a>  TANH  
- Bağımsız değişkenin hiperbolik tanjant değeri hesaplar  
+ Bağımsız değişkenin hiperbolik tanjant değerini hesaplar.  
   
 ```  
 inline float tanh(float _X) restrict(amp);
@@ -1042,10 +1042,10 @@ inline float tanh(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken hiperbolik tanjant değerini döndürür  
+ Bağımsız değişkenin hiperbolik tanjant değerini döndürür  
   
 ##  <a name="tanhf"></a>  tanhf  
- Bağımsız değişkenin hiperbolik tanjant değeri hesaplar  
+ Bağımsız değişkenin hiperbolik tanjant değerini hesaplar.  
   
 ```  
 inline float tanhf(float _X) restrict(amp);
@@ -1056,10 +1056,10 @@ inline float tanhf(float _X) restrict(amp);
  Kayan nokta değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken hiperbolik tanjant değerini döndürür  
+ Bağımsız değişkenin hiperbolik tanjant değerini döndürür  
   
 ##  <a name="trunc"></a>  trunc  
- Tamsayı bileşen bağımsız değişkeni tamsayıya dönüştürür  
+ Bağımsız değişkeni tam sayı bileşenine keser  
   
 ```  
 inline float trunc(float _X) restrict(amp);
@@ -1073,7 +1073,7 @@ inline float trunc(float _X) restrict(amp);
  Bağımsız değişken tamsayı bileşenini döndürür  
   
 ##  <a name="truncf"></a>  truncf  
- Tamsayı bileşen bağımsız değişkeni tamsayıya dönüştürür  
+ Bağımsız değişkeni tam sayı bileşenine keser  
   
 ```  
 inline float truncf(float _X) restrict(amp);

@@ -1,5 +1,5 @@
 ---
-title: fmod, fmodf, fmodl | Microsoft Docs
+title: fmodf, fmodl fmod | Microsoft Docs
 ms.custom: ''
 ms.date: 04/05/2018
 ms.technology:
@@ -39,16 +39,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f6cc8cc10c026c5ecd621657c556da883c187f5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c473b5cb6822df07f4972ff2c964c828b14b5966
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399042"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207539"
 ---
-# <a name="fmod-fmodf-fmodl"></a>fmod, fmodf, fmodl
+# <a name="fmod-fmodf-fmodl"></a>fmodf, fmodl fmod
 
-Kayan nokta kalanı hesaplar.
+Kayan nokta kalanını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,13 +82,13 @@ Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fmod** kayan nokta geri kalanı döndürür *x* / *y*. Varsa değerini *y* 0.0, olan **fmod** sessiz NaN döndürür. Sessiz NaN tarafından gösterimini hakkında bilgi için **printf** ailesi, bkz: [printf](printf-printf-l-wprintf-wprintf-l.md).
+**fmod** kayan nokta kalanını döndürür *x* / *y*. Varsa değerini *y* 0.0, olan **fmod** sessiz bir NaN döndürür. Sessiz bir NaN göre gösterimini hakkında bilgi için **printf** ailesi, bkz: [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fmod** işlevi kayan nokta kalanı hesaplar *f* , *x* / *y* şekilde *x*  =  *ı* * *y* + *f*, burada *ı* bir tamsayıdır *f* aynı işarete sahip *x*ve mutlak değerini *f* mutlak değerini'dan küçük *y*.
+**Fmod** işlevi kayan nokta kalanını hesaplar *f* , *x* / *y* şekilde *x*  =  *miyim* \* *y* + *f*burada *miyim* bir tamsayıdır *f* aynı işarete sahip *x*ve mutlak değerini *f* mutlak değerini'dan küçük *y*.
 
-C++ verir aşırı yüklemesi, aşırı çağırması **fmod** alın ve dönüş **float** ve **uzun** **çift** değerleri. Bir C programı **fmod** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
+C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **fmod** alan ve getiren **float** ve **uzun** **çift** değerleri. C programında **fmod** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -96,7 +96,7 @@ C++ verir aşırı yüklemesi, aşırı çağırması **fmod** alın ve dönüş
 |--------------|---------------------|
 |**fmod**, **fmodf**, **fmodl**|\<Math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

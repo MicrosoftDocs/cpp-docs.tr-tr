@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3993cb0a5ce55996ae2ff793e83453040455aa7f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9fb3cd0a4c180073499ec1bdde1ea4703ffbf9e8
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33887088"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207858"
 ---
-# <a name="comptrrefoperator-void-operator"></a>ComPtrRef::operator void** İşleci
+# <a name="comptrrefoperator-void-operator"></a>ComPtrRef::operator void\* \* işleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -34,7 +34,7 @@ operator void**() const;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli ComPtrRef nesneyi siler, ComPtrRef nesnesiyle bir işaretçi--pointer-için temsil edilen arabirimi işaretçisine bıraktığı `void`ve atama işaretçi döndürür.  
+ Geçerli ComPtrRef nesnesini siler, ComPtrRef nesne tarafından bir işaretçi-için-işaretçi-to temsil edilen bir arabirim işaretçisine bıraktığı `void`ve ardından atama işaretçiyi döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

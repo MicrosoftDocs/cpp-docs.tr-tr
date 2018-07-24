@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9292e4d5ff9bf0f6f829c14dd0ee11e77a641d2d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 05bae03a94eac7a783f4ccb7248c8699729a006d
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027660"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208695"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 Microsoft Foundation Class Kitaplığı ileti eşleme mimarisi için temel sınıf.  
@@ -326,7 +326,7 @@ HRESULT GetTypeInfoOfGuid(
  Bir işaretçi işaretçisi `ITypeInfo` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı veya başarısız çağrının belirten bir HRESULT. Başarılı olursa, * *ppTypeInfo* işaret türü bilgileri arabirimi.  
+ Başarılı veya başarısız çağrının belirten bir HRESULT. Başarılı olursa, \* *ppTypeInfo* işaret türü bilgileri arabirimi.  
   
 ##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
  Bir tür kitaplığı için bir işaretçi alır.  
@@ -345,7 +345,7 @@ virtual HRESULT GetTypeLib(
  Bir işaretçi işaretçisi `ITypeLib` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı veya başarısız çağrının belirten bir HRESULT. Başarılı olursa, * *ppTypeLib* tür kitaplığı arabirimi işaret eder.  
+ Başarılı veya başarısız çağrının belirten bir HRESULT. Başarılı olursa, \* *ppTypeLib* tür kitaplığı arabirimi işaret eder.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen sınıfların bu üye işlevini geçersiz kılmalıdır (kılınmazsa, `GetTypeLib` TYPE_E_CANTLOADLIBRARY döndürür). Kullanım [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) ayrıca uygulayan makrosu `GetTypeInfoCount` ve `GetTypeLibCache`.  
@@ -437,10 +437,10 @@ virtual BOOL OnCmdMsg(
   
 |*nCode* değeri|*pExtra* değeri|  
 |-------------------|--------------------|  
-|CN_COMMAND|[Ccmduı](../../mfc/reference/ccmdui-class.md)*|  
-|CN_EVENT|AFX_EVENT *|  
-|CN_UPDATE_COMMAND_UI|Ccmduı *|  
-|CN_OLECOMMAND|[Colecmduı](../../mfc/reference/colecmdui-class.md)*|  
+|CN_COMMAND|[Ccmduı](../../mfc/reference/ccmdui-class.md)\*|  
+|CN_EVENT|AFX_EVENT\*|  
+|CN_UPDATE_COMMAND_UI|Ccmduı\*|  
+|CN_OLECOMMAND|[Colecmduı](../../mfc/reference/colecmdui-class.md)\*|  
 |CN_OLE_UNREGISTER|NULL|  
   
 ### <a name="example"></a>Örnek  

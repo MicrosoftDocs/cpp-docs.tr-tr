@@ -33,16 +33,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c516932eb8d50fb8c9fdbe6f8c48a3f590b1ffb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 279fb5f7c400a3c7160a9dc66c6cfce7ccaf2bc4
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408490"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208503"
 ---
 # <a name="setvbuf"></a>setvbuf
 
-Akışı arabelleğe alma ve arabellek boyutunu denetler.
+Akışı arabelleğe alma ve arabellek boyutu denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,37 +57,37 @@ int setvbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 *Arabellek*<br/>
-Kullanıcı tarafından ayrılan arabellek.
+Kullanıcı tarafından ayrılan bir arabellek.
 
 *Modu*<br/>
 Arabelleğe alma modu.
 
 *Boyutu*<br/>
-Bayt cinsinden arabellek boyutu. İzin verilen aralık: 2 < = *boyutu* < = INT_MAX (2147483647). Dahili olarak, için sağlanan değer *boyutu* 2 yakın katına yuvarlanır.
+Arabellek boyutu bayt cinsinden. İzin verilen aralık: 2 < = *boyutu* < = INT_MAX (2147483647). Dahili olarak, için sağlanan değer *boyutu* 2'in en yakın katına yuvarlanır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa 0 döndürür.
 
-Varsa *akış* olan **NULL**, veya *modu* veya *boyutu* olan değil geçerli değişiklik içinde geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev dönüşleri -1 ve kümelerini yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+Varsa *stream* olduğu **NULL**, veya *modu* veya *boyutu* olduğu değil geçerli değişiklik içinde geçersiz parametre işleyicisi, açıklanan şekilde çağrılır [Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
 
 Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setvbuf** işlevi sağlar ve arabellek boyutu için her iki kez arabelleğe alma denetlemek program *akış*. *Akış* , açıldıktan sonra bir g/ç işlemi geçmemiştir açık bir dosyadan başvurmalıdır. Tarafından diziyi işaret için *arabellek* olduğu sürece arabellek olarak kullanılan **NULL**, bu durumda **setvbuf** kullandığı otomatik olarak ayrılmış bir arabellek uzunluğu  *boyutu*/2 * 2 bayt.
+**Setvbuf** işlevine izin verir, her iki kez arabelleğe alma denetlemek ve arabellek boyutu için program *stream*. *Akış* , açıldıktan sonra bir g/ç işlemi gerçekleştirmedi açık bir dosyaya başvurmalıdır. Dizi tarafından işaret edilen *arabellek* olduğu sürece bir arabellek olarak kullanılan **NULL**, bu durumda **setvbuf** kullandığı otomatik olarak ayrılan bir arabellek uzunluğu  *boyutu*/2 \* 2 baytı.
 
-Modu olmalıdır **_ıofbf**, **_ıolbf**, veya **_ıonbf**. Varsa *modu* olan **_ıofbf** veya **_ıolbf**, ardından *boyutu* arabellek boyutu kullanılır. Varsa *modu* olan **_ıonbf**, akış arabellekten çıkarılan ve *boyutu* ve *arabellek* göz ardı edilir. İçin değerler *modu* ve anlamlarını şunlardır:
+Modu olmalıdır **_ıofbf**, **_ıolbf**, veya **_ıonbf**. Varsa *modu* olduğu **_ıofbf** veya **_ıolbf**, ardından *boyutu* arabellek boyutu kullanılır. Varsa *modu* olduğu **_ıonbf**, akış arabellekten çıkarılan ve *boyutu* ve *arabellek* göz ardı edilir. Değerleri *modu* ve anlamlarını:
 
-|*mod* değeri|Açıklama|
+|*modu* değeri|Açıklama|
 |-|-|
-**_IOFBF**|Tam arabelleğe alma; diğer bir deyişle, *arabellek* arabellek olarak kullanılan ve *boyutu* arabellek boyutu kullanılır. Varsa *arabellek* olan **NULL**, otomatik olarak ayrılmış bir arabellek *boyutu* bayt uzunluğundadır kullanılır.
+**_IOFBF**|Tam arabelleğe; diğer bir deyişle, *arabellek* arabellek olarak kullanılır ve *boyutu* arabellek boyutu kullanılır. Varsa *arabellek* olduğu **NULL**, otomatik olarak ayrılan bir arabellek *boyutu* bayt uzunluğundadır kullanılır.
 **_IOLBF**|Bazı sistemler için bu satırı arabelleğe almayı sağlar. Ancak, Win32 için aynı davranıştır **_ıofbf** -tam arabelleğe alma.
-**_IONBF**|Hiçbir arabellek kullanılan, ne olursa olsun, *arabellek* veya *boyutu*.
+**_IONBF**|Arabellek kullanılan, bakılmaksızın *arabellek* veya *boyutu*.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -95,7 +95,7 @@ Modu olmalıdır **_ıofbf**, **_ıolbf**, veya **_ıonbf**. Varsa *modu* olan *
 |-------------|---------------------|
 |**setvbuf**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -140,7 +140,7 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

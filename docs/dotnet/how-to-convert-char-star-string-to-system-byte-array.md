@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Dönüştür char * dizesini System::Byte dizisine | Microsoft Docs'
+title: 'Nasıl yapılır: dönüştürme char * dizesini System::Byte dizisine | Microsoft Docs'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 ms.technology:
@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e42294ad2c2e0bef77d29f6d47a5373dc0f728bd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1afb7548af704fc81d7cab8ac4e1a2476d661717
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33129495"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209449"
 ---
-# <a name="how-to-convert-char--string-to-systembyte-array"></a>Nasıl yapılır: char * Dizesini System::Byte Dizisine Dönüştürme
-Dönüştürülecek en verimli şekilde bir `char *` dizesinden bir <xref:System.Byte> dizi kullanmaktır <xref:System.Runtime.InteropServices.Marshal> sınıfı.  
+# <a name="how-to-convert-char--string-to-systembyte-array"></a>Nasıl yapılır: char dönüştürme \* dizesini System::Byte dizisine
+En verimli şekilde dönüştürmek için bir `char *` dizesinden bir <xref:System.Byte> dizi kullanmaktır <xref:System.Runtime.InteropServices.Marshal> sınıfı.  
   
 ## <a name="example"></a>Örnek  
   

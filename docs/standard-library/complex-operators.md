@@ -19,12 +19,12 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: b65178b171b8717096eb19206877b033a52d1e44
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2491cb859de8908bbe0710f03d12f836bbd80e2f
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957704"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208682"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;karmaşık&gt; işleçleri
 
@@ -172,7 +172,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_star"></a>  operator *
+## <a name="op_star"></a>  İşleci\*
 
 İki çarpar karmaşık sayılar, biri veya ikisi de ait alt reel ve sanal parçaları için türü.
 
@@ -196,9 +196,9 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* ilk iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı * işlemi.
+*Sol* ilk iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
 
-*doğru* ikinci iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı * işlemi.
+*doğru* ikinci iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

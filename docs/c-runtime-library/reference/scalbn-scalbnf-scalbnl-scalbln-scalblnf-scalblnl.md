@@ -46,16 +46,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26f3d4945ef339f5166bdd07bc8d5615b161d266
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3bcaebf6578bfb4168d17131989b9b200a7ef8f9
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407083"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209462"
 ---
 # <a name="scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl"></a>scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 
-Kayan noktalı sayı bir tam sayı flt_radıx gücünü tarafından çarpar.
+Bir kayan noktalı sayı bir tam sayı flt_radıx gücünü tarafından çarpar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -112,23 +112,23 @@ Tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Scalbn** işlevleri dönüş değerini *x* * **flt_radıx**<sup>exp</sup> başarılı olduğunda. Taşma (işaretini bağlı olarak *x*), **scalbn** döndürür **HUGE_VAL**; **errno** değeri ayarı **ERANGE** .
+**Scalbn** işlevler dönüş değerini *x* \* **flt_radıx**<sup>exp</sup> başarılı olduğunda. Taşma (işaretini bağlı olarak *x*), **scalbn** döndürür **HUGE_VAL**; **errno** değeri ayarı **ERANGE** .
 
-Hakkında daha fazla bilgi için **errno** ve dönüş değerleri için bkz: olası hata [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Hakkında daha fazla bilgi için **errno** ve dönüş değerleri için bkz: olası hata [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Flt_radıx** tanımlanan \<float.h > yerel kayan noktalı sayı tabanını olarak; ikili sistemlerde, 2 ' değerine sahip ve **scalbn** eşdeğerdir [ldexp](ldexp.md).
+**Flt_radıx** tanımlanan \<float.h > yerel kayan noktalı sayı tabanı olarak; ikili dosya sistemleri, 2, değerini alır ve **scalbn** eşdeğerdir [ldexp](ldexp.md).
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **scalbn** ve **scalbln** alın ve dönüş **float** veya **uzun** **çift** türleri. C programı **scalbn** her zaman alan bir **çift** ve bir **int** ve döndüren bir **çift**, ve **scalbln**her zaman alan bir **çift** ve **uzun** ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **scalbn** ve **scalbln** alan ve getiren **float** veya **uzun** **çift** türleri. C programında **scalbn** her zaman alan bir **çift** ve **int** ve döndüren bir **çift**, ve **scalbln**her zaman alan bir **çift** ve **uzun** ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**scalbn**, **scalbnf**, **scalbnl**, **scalbln**, **scalblnf**, **scalblnl**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

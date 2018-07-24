@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c984b2ef59e022a355d7c24915b5edbcf7f7e74d
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 7a1e7abe1fbbf3667999852dd1810a8a337cac79
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880953"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208669"
 ---
 # <a name="cfiletime-class"></a>CFileTime sınıfı
 Bu sınıf, bir dosya ile ilişkilendirilmiş tarih ve saat değerlerini yönetmek için yöntemler sağlar.  
@@ -101,11 +101,11 @@ class CFileTime :  public FILETIME
 |Üye değişkeni|100 nanosaniyelik aralık sayısı|  
 |---------------------|-----------------------------------------|  
 |Milisaniye|10,000|  
-|Saniye|Milisaniye * 1.000|  
-|Dakika|İkinci * 60|  
-|Saat|Dakika * 60|  
-|Gün|Saat * 24|  
-|Hafta|Gün * 7|  
+|Saniye|Milisaniye \* 1.000|  
+|Dakika|İkinci \* 60|  
+|Saat|Dakika \* 60|  
+|Gün|Saat \* 24|  
+|Hafta|Gün \* 7|  
   
  **Not** tüm dosya sistemleri oluşturma kaydedebilir ve son erişim zamanı ve tüm dosya sistemleri kayıt bunları aynı şekilde. Örneğin, Windows NT FAT dosya sistemi oluşturmak için süresi 10 milisaniyeden çözünürlüğü var, yazma süresi 2 saniyelik bir çözüm olan ve erişim süresi 1 gün (erişim tarihi), bir çözüm olan. 1 saatlik bir çözüm, NTFS erişim zamanı var. Ayrıca, FAT defa diskte yerel saatle kaydeder, ancak NTFS disk saatleri UTC biçiminde kaydeder. Daha fazla bilgi için [dosya zamanlarını](http://msdn.microsoft.com/library/windows/desktop/ms724290).  
   

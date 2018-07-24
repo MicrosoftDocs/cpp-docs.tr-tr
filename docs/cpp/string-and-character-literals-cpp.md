@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16a4d3e663c0cb8d80d3b154f23082d88b446b6f
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 360945f8156c5c92c62cb2209308c7cdd2860cbc
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37942100"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208555"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 C++, çeşitli dize ve karakter türleri destekler ve bu türlerinden her birinin değişmez değerler express için yöntemler sağlar. Kaynak kodunuzda bir karakter kümesini kullanarak, karakter ve dize değişmez değerleri içeriğini express. Evrensel karakter adları ve kaçış karakterleri yalnızca temel kaynak karakter kümesi kullanan herhangi bir dize express sağlar. Ham dize değişmez değeri kaçış karakterleri kullanmaktan kaçının sağlar ve her tür dize değişmez değerleri ifade etmek için kullanılabilir. Ek yapılma veya dönüştürme adımları yapmak zorunda kalmadan std::string değişmez değerleri daha da oluşturabilirsiniz.  
@@ -310,7 +310,7 @@ const wchar_t* str = L"Hello!";
 const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);  
 ```  
   
- Dikkat `strlen()` ve `wcslen()` boyutu dize türü öğesi boyutuna eşittir sondaki boş karakter boyutunu kapsamadığını: char * dizesini bir bayt, wchar_t iki bayt\* veya char16_t\* dizeleri ve char32_t üzerindeki dört bayt\* dizeleri.  
+ Dikkat `strlen()` ve `wcslen()` boyutu dize türü öğesi boyutuna eşittir sondaki boş karakter boyutunu kapsamadığını: tek baytlık bir karakter üzerinde\* dize, wchar_t iki bayt\* veya char16_t\*dizeleri ve char32_t üzerindeki dört bayt\* dizeleri.  
   
  Bir dize sabitinin en fazla uzunluğu 65535 bayttır. Bu sınır hem dar dize değişmez değerleri hem de geniş dize değişmez değerleri için geçerlidir.  
   
@@ -380,7 +380,7 @@ auto x4 = u8"hello" " "s u8"world"z; // C3688, disagree on suffixes
 ```  
   
 ### <a name="string-literals-with-universal-character-names"></a>Evrensel karakter adları dize sabit değerleri  
- Evrensel karakter adı dize türünde bir veya daha fazla karakter olarak kodlanmış sürece özgün (ham olmayan) dize değişmez değerleri, herhangi bir karakteri temsil etmesi için evrensel karakter adları kullanabilir.  Örneğin, genişletilmiş bir karakteri temsil eden bir evrensel karakter adı bir dar dize ANSI kod sayfası kullanılarak kodlanamaz, ancak bazı çok baytlı kod sayfaları veya UTF-8 dize veya bir geniş dize dar Dizelerdeki kodlanabilir. C ++ 11'de, Unicode desteği * char16_t ve char32_t tarafından genişletilir\* dize türleri:  
+ Evrensel karakter adı dize türünde bir veya daha fazla karakter olarak kodlanmış sürece özgün (ham olmayan) dize değişmez değerleri, herhangi bir karakteri temsil etmesi için evrensel karakter adları kullanabilir.  Örneğin, genişletilmiş bir karakteri temsil eden bir evrensel karakter adı bir dar dize ANSI kod sayfası kullanılarak kodlanamaz, ancak bazı çok baytlı kod sayfaları veya UTF-8 dize veya bir geniş dize dar Dizelerdeki kodlanabilir. C ++ 11'de, char16_t tarafından Genişletilmiş Unicode desteği\* ve char32_t\* dize türleri:  
   
 ```cpp  
 // ASCII smiling face  

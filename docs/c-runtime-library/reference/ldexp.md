@@ -44,16 +44,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 012315e11ccf2dbe63e32c6208487f324ef29289
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8ead91ce542ce547f9453f52455dc76d61045b87
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401431"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208421"
 ---
 # <a name="ldexp-ldexpf-ldexpl"></a>ldexp, ldexpf, ldexpl
 
-Kayan noktalı sayı bir tam sayı gücünü iki tarafından çarpar.
+Bir kayan noktalı sayı bir tam sayı ikinin üssü tarafından çarpar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -90,21 +90,21 @@ Tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Ldexp** işlevleri dönüş değerini *x* * 2<sup>*exp* </sup> başarılı olursa. Taşma ve işaretini bağlı olarak *x*, **ldexp** döndürür **HUGE_VAL**; **errno** değeri ayarı **ERANGE** .
+**Ldexp** işlevler dönüş değerini *x* \* 2<sup>*exp* </sup> başarılı olursa. Taşmada ve işaretini bağlı *x*, **ldexp** döndürür **HUGE_VAL**; **errno** değeri ayarı **ERANGE** .
 
-Hakkında daha fazla bilgi için **errno** ve dönüş değerleri için bkz: olası hata [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Hakkında daha fazla bilgi için **errno** ve dönüş değerleri için bkz: olası hata [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **ldexp** Süren **float** veya **uzun** **çift** türleri. C programı **ldexp** her zaman alan bir **çift** ve bir **int** ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **ldexp** Süren **float** veya **uzun** **çift** türleri. C programında **ldexp** her zaman alan bir **çift** ve **int** ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**ldexp**, **ldexpf**, **ldexpl**|\<Math.h >|\<cmath >|
 
-Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

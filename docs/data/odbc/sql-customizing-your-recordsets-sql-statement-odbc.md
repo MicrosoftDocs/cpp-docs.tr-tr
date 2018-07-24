@@ -21,25 +21,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f385127d1b61e1453eb7a079963da727f82f1874
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c6562689450aab15a766d315f9a948772613c5dd
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33098595"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209254"
 ---
 # <a name="sql-customizing-your-recordsets-sql-statement-odbc"></a>SQL: Kayıt Kümenizin SQL Deyimini Özelleştirme (ODBC)
-Bu konuda açıklanmaktadır:  
+Bu konu şunları açıklar:  
   
--   Çerçeve bir SQL deyimini nasıl oluşturur  
+-   Nasıl bir SQL deyimi framework oluşturur  
   
--   SQL deyimi geçersiz kılmak nasıl  
+-   SQL deyimi geçersiz kılma  
   
 > [!NOTE]
->  Bu bilgiler, MFC ODBC sınıfları için geçerlidir. MFC DAO sınıfları ile çalışıyorsanız, "Karşılaştırma, Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL" DAO Yardım konusuna bakın.  
+>  Bu bilgiler, MFC ODBC sınıflarına uygulanır. MFC DAO sınıflarına ile çalışıyorsanız, "Karşılaştırma, Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL" DAO Yardım konusuna bakın.  
   
 ## <a name="sql-statement-construction"></a>SQL deyimi oluşturma  
- Öncelikle bir SQL kayıt seçimini kümenizin taban **seçin** deyimi. Sihirbaz sınıfınız bildirirken bir geçersiz kılma sürümünü Yazar `GetDefaultSQL` şuna benzer üye işlevi (kayıt kümesi sınıfı adlı `CAuthors`).  
+ Kümenizin bir SQL öncelikli olarak kayıt seçimi tabanları **seçin** deyimi. Sihirbaz sınıfınıza bildirdiğinizde, bir geçersiz kılma sürümünü Yazar `GetDefaultSQL` şuna benzer bir üye işlevi (kayıt kümesi sınıfı olarak adlandırılan `CAuthors`).  
   
 ```  
 CString CAuthors::GetDefaultSQL()  
@@ -48,35 +48,35 @@ CString CAuthors::GetDefaultSQL()
 }  
 ```  
   
- Varsayılan olarak, bu geçersiz kılma Sihirbazı'nı kullanarak belirttiğiniz tablo adı döndürür. Örnekte, "Yazar" tablo adıdır Daha sonra çağırdığınızda kayıt kümesinin **açık** üye işlevi **açık** bir son yapıları **seçin** biçiminde ifade:  
+ Varsayılan olarak, bu geçersiz kılma Sihirbazı ile belirtilen tablo adını döndürür. Örnekte, "Yazarlar." tablo adıdır Daha sonra çağırdığınızda kayıt kümesinin **açık** üye işlevini **açık** bir sonuç oluşturur **seçin** formun deyimi:  
   
 ```  
 SELECT rfx-field-list FROM table-name [WHERE m_strFilter]   
        [ORDER BY m_strSort]  
 ```  
   
- Burada `table-name` çağırılarak alınır `GetDefaultSQL` ve `rfx-field-list` RFX işlev çağrılarını penceresinden `DoFieldExchange`. Bu için aldığınızdır bir **seçin** deyimi parametreleri veya bir filtre varsayılan deyimiyle değiştirebilirsiniz ancak, bunu bir geçersiz kılma çalışma zamanında sürümle sürece.  
+ Burada `table-name` çağırılarak alınır `GetDefaultSQL` ve `rfx-field-list` RFX işlev çağrılarında penceresinden `DoFieldExchange`. Bu için size, bir **seçin** deyimi parametreleri veya bir filtre varsayılan deyimiyle değiştirebilirsiniz ancak, bunu bir geçersiz kılma çalışma zamanında bir sürümle sürece.  
   
 > [!NOTE]
->  Boşluk içeren (veya içerebilir) bir sütun adı belirtirseniz, adı köşeli parantez içine almanız gerekir. Örneğin, "Ad" ad "[ilk adı]" olmalıdır.  
+>  Boşluk içeren (veya içerebilir) bir sütun adı belirtirseniz, adı köşeli parantez içine almalısınız. Örneğin, adı "" "[ad]" olmalıdır.  
   
- Varsayılan değer geçersiz kılmak için **seçin** deyimi, bir tam içeren dize bir geçirin **seçin** çağırdığınızda deyimi **açık**. Kendi varsayılan dizesini oluşturmak yerine kayıt kümesi sağladığınız dizeyi kullanır. Değiştirme deyiminizde içeriyorsa bir **nerede** yan tümcesi içinde filtre belirtmeyin **m_strFilter** sonra gerekir çünkü iki deyimleri filtre. Benzer şekilde, değiştirme deyiminizde içeriyorsa bir **ORDER BY** yan tümcesi içinde bir sıralama belirtmeyin `m_strSort` sahip şekilde iki deyimleri Sırala.  
+ Varsayılan geçersiz kılmak için **seçin** deyimi, bir dizeyi içeren eksiksiz bir pass **seçin** çağırdığınızda deyimi **açık**. Kayıt, kendi varsayılan dizesini oluşturmak yerine, sağladığınız dizeyi kullanır. Değiştirme deyiminiz varsa bir **burada** yan tümcesi, bir filtre belirtmeyin **m_strFilter** ardından gerekir çünkü iki ifadeleri filtreleme. Benzer şekilde, değiştirme deyiminiz varsa bir **ORDER BY** yan tümcesi bir sıralamada belirtmeyin `m_strSort` iki deyimleri, sahip olacak şekilde Sırala.  
   
 > [!NOTE]
->  Değişmez değer dizeleri filtrelerinizi (veya diğer bölümleri SQL deyimi) kullanıyorsanız, teklif"" olabilir (belirtilmiş ayırıcılar içine almanız) karakteri (veya karakterleri) gibi dizeleri DBMS özgü değişmez değer öneki ve değişmez değer soneki.  
+>  Değişmez değer dizeleri filtrelerinizi (veya diğer bölümlerini SQL deyimi) kullanırsanız, "Teklif" gerekebilir (içinde belirtilen sınırlayıcılardan alın) gibi dizeleri DBMS özgü sabit değerli önek ve değişmez değerli karakter (veya karakterler) soneki.  
   
- Dış birleşimler gibi işlemler için özel sözdizimsel gereksinimlerle bağlı olarak, DBMS da karşılaşabilirsiniz. ODBC işlevlerini sürücünüzden DBMS için bu bilgileri almak için kullanın. Örneğin, arama **:: SQLGetTypeInfo** belirli veri türü için aşağıdaki gibi **SQL_VARCHAR**, istemek için **LITERAL_PREFIX** ve **LITERAL_SUFFIX** karakter. Veritabanı bağımsız kod yazıyorsanız, ek C'de bkz *ODBC SDK ** Programcının Başvurusu* ayrıntılı sözdizimi bilgi için MSDN Kitaplığı CD'sindeki.  
+ Bu gibi durumlarda, dış birleştirme gibi işlemler için özel sözdizimsel gereksinimler de bağlı olarak, DBMS karşılaşabilirsiniz. ODBC işlevleri için DBMS sürücünüzden bu bilgileri almak için kullanın. Örneğin, çağrı **:: SQLGetTypeInfo** , belirli veri türü için gibi **SQL_VARCHAR**istemek için **LITERAL_PREFIX** ve **LITERAL_SUFFIX** karakter. Veritabanı-bağımsız kod yazıyorsanız, ek C bkz *ODBC SDK ** Programcının Başvurusu* sözdizimi ayrıntılı bilgi için MSDN Kitaplığı CD'sindeki.  
   
- Özel bir SQL deyimi geçirmezseniz kayıtları seçmek için kullandığı SQL deyimi bir kayıt kümesi nesnesi oluşturur. Bunun nasıl yapılacağı çoğunlukla geçirdiğiniz değere bağlıdır. `lpszSQL` parametresinin **açık** üye işlevi.  
+ Özel bir SQL deyimi geçirmezseniz kayıtları seçmek için kullandığı SQL deyimi bir kayıt kümesi nesnesi oluşturur. Nasıl yapıldığını çoğunlukla geçirdiğiniz değere bağlıdır. `lpszSQL` parametresinin **açık** üye işlevi.  
   
- Bir SQL genel form **seçin** ifadesi:  
+ Bir SQL genel formu **seçin** deyimidir:  
   
 ```  
 SELECT [ALL | DISTINCT] column-list FROM table-list  
     [WHERE search-condition][ORDER BY column-list [ASC | DESC]]  
 ```  
   
- Tek yönlü eklemek için **DISTINCT** kayıt kümenizin SQL deyimini sözcüktür ilk RFX işlev çağrısında anahtar sözcüğü katıştırılacak `DoFieldExchange`. Örneğin:  
+ Yollarından biri **DISTINCT** kayıt kümenizin SQL deyimini sözcüktür anahtar sözcüğü ilk RFX işlev çağrısında katıştırmak için `DoFieldExchange`. Örneğin:  
   
 ```  
 ...  
@@ -85,30 +85,30 @@ SELECT [ALL | DISTINCT] column-list FROM table-list
 ```  
   
 > [!NOTE]
->  Salt okunur olarak açılan yalnızca bir kayıt kümesi ile bu tekniği kullanın.  
+>  Yalnızca salt okunur olarak açılan bir kayıt ile bu tekniği kullanın.  
   
 ## <a name="overriding-the-sql-statement"></a>SQL deyimi geçersiz kılma  
- Aşağıdaki tabloda olasılıklarını gösterir `lpszSQL` parametresi **açık**. Tablo durumlarda, aşağıdaki tablonun açıklanmıştır.  
+ Aşağıdaki tabloda olasılıklarını gösterir `lpszSQL` parametresi **açık**. Tablo durumlarda, aşağıdaki tabloda açıklanmıştır.  
   
  **Parametre lpszSQL ve sonuçta elde edilen SQL dizesi**  
   
-|Durumu|LpszSQL'de geçirin|Elde edilen SELECT deyimi|  
+|Servis talebi|LpszSQL'de geçirin|Sonuçta elde edilen SELECT deyimi|  
 |----------|------------------------------|------------------------------------|  
-|1.|**NULL**|**SEÇİN** *rfx alan listesi* **FROM** *tablo adı*<br /><br /> `CRecordset::Open` çağrıları `GetDefaultSQL` tablo adı alınamıyor. Sonuç dizesini durumlar 2-5, ne bağlı olarak biri `GetDefaultSQL` döndürür.|  
-|2|Bir tablo adı|**SEÇİN** *rfx alan listesi* **FROM** *tablo adı*<br /><br /> Alan listesini RFX deyimlerinde alınırlar `DoFieldExchange`. Varsa **m_strFilter** ve `m_strSort` boş olmayan, ekler **nerede** ve/veya **ORDER BY** yan tümceleri.|  
-|3 *|Bir tam **seçin** deyimi olmadan bir **nerede** veya **ORDER BY** yan tümcesi|Geçirilen gibi. Varsa **m_strFilter** ve `m_strSort` boş olmayan, ekler **nerede** ve/veya **ORDER BY** yan tümceleri.|  
-|4 *|Bir tam **seçin** deyimiyle bir **nerede** ve/veya **ORDER BY** yan tümcesi|Geçirilen gibi. **m_strFilter** ve/veya `m_strSort` gerekir boş ya da iki filtre kalır ve/veya sıralama ifadeleri oluşturulur.|  
-|5 *|Saklı yordam çağrısı|Geçirilen gibi.|  
+|1.|**NULL**|**SEÇİN** *rfx alan listesi* **FROM** *tablo adı*<br /><br /> `CRecordset::Open` çağrıları `GetDefaultSQL` tablo adını almak için. Sonuç dizesi ne bağlı olarak 2-5, durumlarından biri olan `GetDefaultSQL` döndürür.|  
+|2|Tablo adı|**SEÇİN** *rfx alan listesi* **FROM** *tablo adı*<br /><br /> Alan listesi RFX deyimlerinde alınır `DoFieldExchange`. Varsa **m_strFilter** ve `m_strSort` ekler, boş olmayan **burada** ve/veya **ORDER BY** yan tümceleri.|  
+|3 \*|Eksiksiz bir **seçin** deyimi olmadan bir **burada** veya **ORDER BY** yan tümcesi|Geçirilen olarak. Varsa **m_strFilter** ve `m_strSort` ekler, boş olmayan **burada** ve/veya **ORDER BY** yan tümceleri.|  
+|4 \*|Eksiksiz bir **seçin** deyimiyle bir **burada** ve/veya **ORDER BY** yan tümcesi|Geçirilen olarak. **m_strFilter** ve/veya `m_strSort` gerekir boş ya da iki filtre kalır ve/veya sıralama ifadeleri oluşturulur.|  
+|5 \*|Bir saklı yordam çağrısı|Geçirilen olarak.|  
   
- \* `m_nFields` Belirtilen sütun sayısı küçük veya buna eşit olmalıdır **seçin** deyimi. Belirtilen her bir sütunun veri türünü **seçin** deyimi ilgili RFX çıktı sütununun veri türü ile aynı olması gerekir.  
+ \* `m_nFields` Belirtilen sütun sayısı eşit veya ondan daha az olmalıdır **seçin** deyimi. Belirtilen her bir sütunun veri türünü **seçin** deyimi karşılık gelen RFX çıkış sütununun veri türü ile aynı olması gerekir.  
   
-### <a name="case-1---lpszsql--null"></a>1 lpszSQL case = NULL  
- Kayıt seçimi ne bağlıdır `GetDefaultSQL` döndürdüğü `CRecordset::Open` çağırır. Durumlar 2-5 olası dizeleri açıklar.  
+### <a name="case-1---lpszsql--null"></a>1 lpszSQL durumda = NULL  
+ Kayıt seçimi ne bağlıdır `GetDefaultSQL` döndürdüğü `CRecordset::Open` çağırır. Çalışmaları 2'den 5 olası dizeleri açıklar.  
   
-### <a name="case-2---lpszsql--a-table-name"></a>Durum 2 lpszSQL = bir tablo adı  
- Kayıt kümesi RFX kayıt kümesi sınıfının geçersiz kılmada işlevi çağırır sağlanan sütun adlarından sütun listesi oluşturmak için kayıt alanı değişimi (RFX) kullanır. `DoFieldExchange`. Kayıt kümesi sınıfınızı bildirmek için bir sihirbaz kullandıysanız, bu durumda (sihirbazda belirttiğiniz aynı tablo adının geçmesi olması koşuluyla) durum 1 olarak aynı sonucu verir. Sınıfınızı yazmak için bir sihirbaz kullanmazsanız 2 SQL deyimi oluşturmak için en basit yolu durumdur.  
+### <a name="case-2---lpszsql--a-table-name"></a>2. durum lpszSQL bir tablo adı =  
+ Kayıt, kayıt kümesi sınıfın geçersiz kılmasında RFX işlevi sağlanan sütun adlarından sütun listesi oluşturmak için kayıt alanı değişimi (RFX) kullanır. `DoFieldExchange`. Kayıt kümesi sınıfı bildirmek için bir sihirbaz kullandıysanız, bu durumda (sihirbazda belirtilen aynı tablo adı geçmesi şartıyla) 1. durum aynı sonucu vardır. Bir sihirbaz sınıfınıza yazılacak kullanmazsanız, 2. durum SQL deyimi oluşturmak için en basit yoludur.  
   
- Aşağıdaki örnek bir MFC veritabanı uygulamasından kayıtlar seçen bir SQL deyimi oluşturur. Framework çağırdığında `GetDefaultSQL` üye işlevi işlevi, tablo adını döndürür `SECTION`.  
+ Aşağıdaki örnek, bir MFC veritabanı uygulamasından kayıtları seçen bir SQL deyimi oluşturur. Framework çağırdığında `GetDefaultSQL` üye işlevi, işlev, tablonun adını döndürür `SECTION`.  
   
 ```  
 CString CEnrollSet::GetDefaultSQL()  
@@ -138,30 +138,30 @@ SELECT CourseID, InstructorID, RoomNo, Schedule, SectionNo
     FROM SECTION  
 ```  
   
-### <a name="case-3---lpszsql--a-selectfrom-statement"></a>Durum 3 lpszSQL = bir SELECT / FROM deyimi  
- Sütun listesi el ile otomatik olarak oluşturmak RFX güvenmek yerine belirttiğiniz. Bu durumda yapmak isteyebilirsiniz:  
+### <a name="case-3---lpszsql--a-selectfrom-statement"></a>Durum 3 lpszSQL SELECT = buralardan deyimi  
+ Sütun listesi el ile otomatik olarak oluşturmak için RFX'in güvenmek yerine belirttiğiniz. Bu durumda yapmak isteyebilirsiniz:  
   
--   Belirtmek istediğiniz **DISTINCT** anahtar sözcüğünü aşağıdaki **seçin**.  
+-   Belirlemek istediğiniz **DISTINCT** anahtar sözcüğü aşağıdaki **seçin**.  
   
-     İçinde listelenen sütun listesi sütun adlarını ve türlerini aynı sırayla eşleşmelidir `DoFieldExchange`.  
+     Bağlantısında listelendiği gibi sütun listesi sütun adlarını ve türlerini aynı sırayla eşleşmelidir `DoFieldExchange`.  
   
--   ODBC işlevini kullanarak sütun değerlerini el ile almak için nedeniniz **:: SQLGetData** bağlamak ve sütunları aldığınız RFX güvenmek yerine.  
+-   ODBC işlevi kullanarak sütun değerlerini el ile almanız nedeniniz **:: SQLGetData** bağlamak ve sizin için sütunları almak için RFX güvenmek yerine.  
   
-     Örneğin, bir müşteri, uygulamanızın uygulama dağıtıldıktan sonra veritabanı tablolarında eklenen yeni sütunlar uyum sağlamak isteyebilirsiniz. Sınıf Sihirbazı ile bildirilen zaman bilinmeyen bu ek alan veri üyeleri eklemeniz gerekir.  
+     Örneğin, uygulama dağıtıldıktan sonra uygulamanızın bir müşteri veritabanı tablolarına eklenen yeni sütunlar barındırmak isteyebilirsiniz. Sınıf Sihirbazı ile bildirilen zaman bilinmeyen bu ek alan veri üyeleri eklemeniz gerekir.  
   
-     İçinde listelenen sütun listesi sütun adlarını ve türlerini aynı sırayla eşleşmelidir `DoFieldExchange`, el ile ilişkili sütun adlarını takip eden. Daha fazla bilgi için bkz: [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).  
+     Bağlantısında listelendiği gibi sütun listesi sütun adlarını ve türlerini aynı sırayla eşleşmelidir `DoFieldExchange`çizgidir el ile ilişkili sütunların adları. Daha fazla bilgi için [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).  
   
--   Birden fazla tabloya belirterek tabloları katılmasını istediğiniz **FROM** yan tümcesi.  
+-   Birden çok tablodan belirterek tabloları birleştirme istediğiniz **FROM** yan tümcesi.  
   
-     Bilgi ve bir örnek için bkz: [kayıt kümesi: bir birleştirme (ODBC) gerçekleştirme](../../data/odbc/recordset-performing-a-join-odbc.md).  
+     Bilgi ve örnek için bkz. [kayıt kümesi: bir birleştirme (ODBC) gerçekleştirme](../../data/odbc/recordset-performing-a-join-odbc.md).  
   
-### <a name="case-4---lpszsql--selectfrom-plus-where-andor-order-by"></a>Durum 4 lpszSQL = SELECT / FROM + WHERE ve/veya ORDER BY  
- Her şeyi belirtin: sütun listesi (RFX çağrılarında göre `DoFieldExchange`), Tablo listesini ve içeriğini bir **nerede** ve/veya bir **ORDER BY** yan tümcesi. Belirtirseniz, **nerede** ve/veya **ORDER BY** yan tümceleri bu şekilde kullanmayın **m_strFilter** ve/veya `m_strSort`.  
+### <a name="case-4---lpszsql--selectfrom-plus-where-andor-order-by"></a>Durum 4 lpszSQL SELECT = / FROM + WHERE ve/veya ORDER BY  
+ Her şeyi belirtin: sütun listesi (RFX çağrılarında göre `DoFieldExchange`), Tablo listesini ve içeriğini bir **burada** ve/veya bir **ORDER BY** yan tümcesi. Belirtirseniz, **burada** ve/veya **ORDER BY** yan tümceleri bu şekilde kullanmayın **m_strFilter** ve/veya `m_strSort`.  
   
-### <a name="case-5---lpszsql--a-stored-procedure-call"></a>Servis talebi 5 lpszSQL bir saklı yordam çağrısı =  
- Önceden tanımlanmış bir sorguyu (örneğin, bir Microsoft SQL Server veritabanında saklı yordam) çağırmak gerekiyorsa, yazmalısınız bir **ÇAĞRISI** geçirmek için dize deyiminde `lpszSQL`. Sihirbazlar, önceden tanımlanmış sorgu çağırmak için bir kayıt kümesi sınıf bildirme desteklemez. Tüm önceden tanımlanmış sorgular kayıtları döndürmez.  
+### <a name="case-5---lpszsql--a-stored-procedure-call"></a>Durum 5 lpszSQL bir saklı yordam çağrısı =  
+ Önceden tanımlanmış sorgu (örneğin, bir Microsoft SQL Server veritabanında bir saklı yordam) çağırmak gerekiyorsa, yazmanız gereken bir **çağrı** geçirmek için dize deyiminde `lpszSQL`. Sihirbazlar, önceden tanımlanmış sorgu çağırmak için bir kayıt kümesi sınıf bildirme desteklemez. Tüm önceden tanımlanmış sorguları, kayıtları döndürür.  
   
- Önceden tanımlanmış sorgu kayıtları döndürmezse kullanabileceğiniz `CDatabase` üye işlevi `ExecuteSQL` doğrudan. Kayıtları döndüren bir önceden tanımlanmış sorgu için el ile de RFX çağrıları yazmalısınız `DoFieldExchange` yordamı için herhangi bir sütundan döndürür. RFX çağrıları aynı sırayla ve aynı türlerine, önceden tanımlanmış sorgu dönmek gerekir. Daha fazla bilgi için bkz: [kayıt kümesi: bir önceden tanımlanmış sorgu (ODBC için) bir sınıf bildirme](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
+ Önceden tanımlanmış sorgu kayıtları döndürmezse kullanabileceğiniz `CDatabase` üye işlevi `ExecuteSQL` doğrudan. Kayıt döndüren bir önceden tanımlanmış sorgu için el ile de RFX çağrıları yazmanız gereken `DoFieldExchange` yordamı için tüm sütunları döndürür. RFX çağrılarının aynı sırayla ve aynı türlerini, önceden tanımlanmış sorgu dönüş gerekir. Daha fazla bilgi için [kayıt kümesi: bir önceden tanımlanmış sorgu (ODBC için) bir sınıf bildirme](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SQL: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)   

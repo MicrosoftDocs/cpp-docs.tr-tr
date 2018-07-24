@@ -26,39 +26,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f87518c23848cea91a3e3c48361aa0a63fa88a2
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9b99dae277fec7618c2e7caeb76229edce7a78c2
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330810"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207766"
 ---
 # <a name="midl-property-pages-advanced"></a>MIDL Özellik Sayfaları: Gelişmiş
-**Gelişmiş** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçenekleri belirtir:  
+**Gelişmiş** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçeneklerini belirtir:  
   
--   Hata denetimini etkinleştir ([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Hata denetimini etkinleştir ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Ayırmalar denetleyin ([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Ayrılan alanları denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Sınır denetim ([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Sınırları denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Onay Enum aralığı ([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Sabit listesi aralıklarını denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Başvuru işaretçileri denetleyin ([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Başvuru işaretçilerini denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Saplama veri denetleyin ([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Saplama verilerini denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Parametreleri doğrulayın ([/ sağlam](http://msdn.microsoft.com/library/windows/desktop/aa367363)) *  
+-   Parametreleri doğrula ([/ robust](http://msdn.microsoft.com/library/windows/desktop/aa367363)) \*  
   
--   Yapı üyesi hizalama ([/Zp](http://msdn.microsoft.com/library/windows/desktop/aa367388))  
+-   Struct üyesi hizalaması ([/ZP](http://msdn.microsoft.com/library/windows/desktop/aa367388))  
   
 -   Çıktı yeniden yönlendirme ([/o](http://msdn.microsoft.com/library/windows/desktop/aa367351))  
   
--   C Önişle seçenekleri ([/cpp_opt](http://msdn.microsoft.com/library/windows/desktop/aa367318))  
+-   C ön işleme seçenekleri ([/cpp_opt](http://msdn.microsoft.com/library/windows/desktop/aa367318))  
   
--   Önişlemci tanımları tanımlarını Kaldır ([/U](http://msdn.microsoft.com/library/windows/desktop/aa367373))  
+-   Ön İşlemci tanımlarını Kaldır ([/U](http://msdn.microsoft.com/library/windows/desktop/aa367373))  
   
- \* / sağlam yalnızca Windows 2000 veya üstü makine için oluşturulurken kullanılır. ATL projeyi oluşturun ve kullanmak istediğiniz / sağlam, dlldatax.c dosyasında bu satırı değiştirin:  
+ \* / sağlam yalnızca Windows 2000 veya daha yeni bir makine için oluşturma sırasında kullanılır. Bir ATL projesi oluşturmak ve kullanmak istediğiniz / robust, dlldatax.c dosyasında şu satırı değiştirin:  
   
 ```  
 #define _WIN32_WINNT 0x0400   //for Windows NT 4.0 or Windows 95 with DCOM  
@@ -66,7 +66,7 @@ to
 #define _WIN32_WINNT 0x0500   //for Windows NT 4.0 or Windows 95 with DCOM  
 ```  
   
- Nasıl erişileceği hakkında bilgi için **Gelişmiş** özellik sayfasında **MIDL** klasörü, bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+ Erişim hakkında daha fazla bilgi için **Gelişmiş** özellik sayfasında **MIDL** klasörüne bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
  MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>.  
   

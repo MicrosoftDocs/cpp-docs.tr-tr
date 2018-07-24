@@ -66,12 +66,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53b5970f9d0ea6e3b0c7ed4715c8ff9c3578dc00
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 2f19461b04f98ab06a2c828b0f61fb556f9a7d7d
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337427"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209176"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 `CDrawingManager` Sınıfı karmaşık çizim algoritmaları uygular.  
@@ -932,7 +932,7 @@ static COLORREF __stdcall SmartMixColors(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem ya da bir hata ile başarısız *k1* veya *k2* sıfırdan küçüktür. Bu parametrelerin her ikisini de 0 olarak ayarlıysa, yöntem döndürür `RGB(0, 0, 0)`.  
   
- Ağırlıklı oranı aşağıdaki formüle göre hesaplanır: (Renk1 * k1 + renk2 \* k2) /(k1 + k2). Ağırlıklı oranı belirlendikten sonra yöntem için karma renk parlaklığını hesaplar. Ardından tarafından parlaklık çarpar *dblLumRatio*. Değer 1.0 daha büyük ise, yöntem karma renk parlaklığını yeni değere ayarlar. Aksi takdirde, parlaklık 1.0 için ayarlanır.  
+ Ağırlıklı oranı aşağıdaki formüle göre hesaplanır: (Renk1 \* k1 + renk2 \* k2) /(k1 + k2). Ağırlıklı oranı belirlendikten sonra yöntem için karma renk parlaklığını hesaplar. Ardından tarafından parlaklık çarpar *dblLumRatio*. Değer 1.0 daha büyük ise, yöntem karma renk parlaklığını yeni değere ayarlar. Aksi takdirde, parlaklık 1.0 için ayarlanır.  
   
 ##  <a name="drawrotated"></a>  CDrawingManager::DrawRotated  
  Bir kaynak DC içeriği belirtilen dikdörtgen içindeki 90 derece döndürür.  

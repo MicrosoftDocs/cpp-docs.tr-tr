@@ -14,35 +14,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fe65dfec3befa15ffebde3d074081ee11364f4d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: e4d22df877ab757134ee6da86a5ff22ec106f958
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33337580"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208581"
 ---
 # <a name="delimiters-for-visual-c-documentation-tags"></a>Visual C++ Belge Etiketleri için Sınırlayıcılar
-Belge etiketleri kullanılmasını burada belgelerine yorum başlar ve biter derleyici belirtmek sınırlayıcıları gerektirir.  
+Belge etiketleri gösteren bir belge açıklaması burada başlar ve biter derleyici sınırlayıcılar gerektirir.  
   
- XML belgeleri etiketlerle sınırlayıcıları şu tür kullanabilirsiniz:  
+ Aşağıdaki türde sınırlayıcıları ile XML belge etiketleri kullanabilirsiniz:  
   
  `///`  
- Bu belge örneklerde gösterilen ve Visual C++ proje şablonları tarafından kullanılan formdur.  
+ Bu belge örneklerde gösterildiği ve Visual C++ proje şablonları tarafından kullanılan biçimidir.  
   
  `/** */`  
- Bunlar çok satırlı sınırlayıcı olarak kullanılır.  
+ Çok satırlı sınırlayıcı olarak bu kullanılır.  
   
- Var olan bazı biçimlendirme kuralları kullanırken `/** */` sınırlayıcılar:  
+ Var olan bazı biçimlendirme kurallarını kullanarak `/** */` sınırlayıcılar:  
   
--   İçeren satırı için `/**` kalan satırının satır boşluk ise sınırlayıcı açıklamaları için işlenmedi. İlk karakteri boşluk ise, bu boşluk karakteri dikkate alınmaz ve satır kalan işlenir. Aksi takdirde satırından sonra tüm metnin `/**` sınırlayıcı yorum bir parçası olarak işlenir.  
+-   İçeren bir satır için `/**` ayırıcı, boşluk, satır satır geri kalanında ise açıklamalarına işlenmedi. İlk karakterin boşluk varsa bu boşluk karakteri göz ardı edilir ve satırın geri kalanını işlenir. Aksi takdirde, tüm metin satırının sonra `/**` sınırlayıcı açıklamayı bir parçası olarak işlenir.  
   
--   İçeren satırı için `*/` varsa yalnızca boşluk kadar sınırlayıcı `*/` sınırlayıcısı, o satırdaki göz ardı edilir. Aksi takdirde kadar satırındaki metin `*/` sınırlayıcı aşağıdaki maddede açıklandığı desen eşleştirme kuralları tabi yorum bir parçası olarak işlenir.  
+-   İçeren bir satır için `*/` varsa yalnızca boşluk kadar sınırlayıcı `*/` sınırlayıcı, o satırdaki göz ardı edilir. Aksi takdirde, en fazla bir satırındaki metin `*/` sınırlayıcı desen eşleştirme kuralları aşağıdaki maddede açıklandığı tabi açıklamayı bir parçası olarak işlenir.  
   
--   İle başlayan bir sonraki satırların için `/**` sınırlayıcısı, derleyici, isteğe bağlı boşluk ve bir yıldız işareti oluşan her satırın başındaki genel bir desen arar (`*`), ardından daha fazla isteğe bağlı boşluk. Derleyici her satırın başındaki ortak bir karakter kümesi bulursa, sonra tüm çizgiler için bu deseni yoksayacak `/**` sınırlayıcısı, kadar ve muhtemelen içeren satırı dahil `*/` sınırlayıcısı.  
+-   İle başlayan bir sonraki satırların için `/**` sınırlayıcı, derleyici, isteğe bağlı beyaz boşluk ve yıldız oluşan her satırın başında yaygın bir düzen arar (`*`) ve ardından daha fazla isteğe bağlı beyaz boşluk. Derleyici, ortak bir karakter kümesi, her satırın başında bulursa, sonra tüm satırlar için bu düzeni yoksayacak `/**` sınırlayıcı, en fazla ve büyük olasılıkla içeren satırı dahil olmak üzere `*/` sınırlayıcı.  
   
  Bazı örnekler:  
   
--   Yalnızca nasıl işleneceğini aşağıdaki açıklama ile başlayan satırı parçasıdır `<summary>`. Aşağıdaki iki etiket biçimlerini aynı açıklamaları üretir:  
+-   Yalnızca işlenecek şu açıklama ile başlayan satırı parçasıdır `<summary>`. Aşağıdaki iki etiket biçimlerini aynı açıklamaları oluşturacak:  
   
     ```  
     /**  
@@ -51,7 +51,7 @@ Belge etiketleri kullanılmasını burada belgelerine yorum başlar ve biter der
     /** <summary>text</summary> */  
     ```  
   
--   Derleyici bir desenini uygular "*" ikinci ve üçüncü satır başında yoksaymak için.  
+-   Derleyici desenini uygular " \* " ikinci ve üçüncü satır başında yok sayılacak.  
   
     ```  
     /**  
@@ -59,7 +59,7 @@ Belge etiketleri kullanılmasını burada belgelerine yorum başlar ve biter der
      *  text </summary>*/  
     ```  
   
--   İkinci satırda bir yıldız işareti olduğundan derleyici hiçbir düzeni Bu açıklamada bulur. Bu nedenle, tüm metin ikinci ve üçüncü satırlarındaki yukarı kasa `*/`, yorum bir parçası olarak işlenir.  
+-   İkinci satırda hiçbir yıldız işareti olduğundan derleyici Bu açıklamada yok desenini bulur. Bu nedenle, tüm metin ikinci ve üçüncü satırlardaki yukarı kasa `*/`, yorum bir parçası olarak işlenir.  
   
     ```  
     /**  
@@ -67,7 +67,7 @@ Belge etiketleri kullanılmasını burada belgelerine yorum başlar ve biter der
        text </summary>*/  
     ```  
   
--   Derleyici hiçbir düzeni iki nedenden dolayı bu açıklamada bulur. İlk olarak, tutarlı bir yıldız işareti önce boşluk sayısı ile başlayan hiçbir satır vardır. İkinci olarak, beşinci satır alanları eşleşmiyor bir sekme ile başlar. Bu nedenle, tüm metni kadar ikinci satırında `*/` yorum bir parçası olarak işlenir.  
+-   Derleyici, iki nedenden dolayı bu açıklamada yok desenini bulur. İlk olarak, tutarlı bir yıldız işareti önceki boşluklar sayısı ile başlayan satırı yok yoktur. İkinci olarak, beşinci satır alanları eşleşmiyor bir sekme ile başlar. Bu nedenle, tüm metin kadar ikinci satırında `*/` açıklamayı bir parçası olarak işlenir.  
   
     ```  
     /**  

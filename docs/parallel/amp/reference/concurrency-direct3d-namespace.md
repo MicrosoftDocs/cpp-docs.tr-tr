@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9516e3f89d393405a5f71af569a50e46e381d579
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: e95a0cb4b2dc8dfae7667a147dc2912cd7922c3d
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687393"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207698"
 ---
 # <a name="concurrencydirect3d-namespace"></a>Concurrency::direct3d Ad Alanı
-`direct3d` Ad alanı, D3D birlikte çalışabilirlik desteği işlevleri sağlar. Bu işlem AMP kodda D3D kaynaklarının sorunsuz kullanımını sağlar yanı sıra Ara yedek kopya oluşturmak zorunda kalmadan D3D kodda AMP içinde oluşturulan kaynakları kullanılmasına izin verin. Artımlı olarak C++ AMP kullanarak DirectX uygulamalarınızı işlem yoğunluklu bölümlerini hızlandırmak ve AMP hesaplamalar üretilen veriler üzerinde D3D API kullanın.  
+`direct3d` Ad alanı D3D birlikte çalışabilirlik destekleyen işlevleri sağlar. AMP kodunda hesaplamak için D3D kaynakların sorunsuz kullanılmasına olanak tanır hem de gereksiz Ara kopyalar oluşturmadan, AMP D3D kodunda oluşturulan kaynakları kullanılmasına izin verin. Artımlı olarak, C++ AMP kullanarak DirectX uygulamalarınızın hesaplama yoğunluklu bölümlerini hızlandırmak ve AMP hesaplamalarıyla üretilen verilerde D3D API'sini kullanın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,43 +42,43 @@ namespace direct3d;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[scoped_d3d_access_lock Sınıfı](scoped-d3d-access-lock-class.md)|RAII sarmalayıcı D3D erişim kilit için bir `accelerator_view` nesnesi.|  
+|[scoped_d3d_access_lock Sınıfı](scoped-d3d-access-lock-class.md)|Bir D3D erişim kilidi için RAII sarmalayıcı bir `accelerator_view` nesne.|  
   
 ### <a name="structures"></a>Yapılar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[adopt_d3d_access_lock_t Yapısı](adopt-d3d-access-lock-t-structure.md)|D3D erişim kilit göstermek için etiket türünü benimsenen edinilen yerine.|  
+|[adopt_d3d_access_lock_t Yapısı](adopt-d3d-access-lock-t-structure.md)|D3D erişim kilidi belirtmek için etiket türü yerine benimsenmesi.|  
   
 ### <a name="functions"></a>İşlevler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Abs](concurrency-direct3d-namespace-functions-amp.md#abs)|Bağımsız değişken mutlak değerini döndürür|  
-|[CLAMP](concurrency-direct3d-namespace-functions-amp.md#clamp)|Fazla Yüklendi. Belirtilen _Min ve _en aralığına _X clamps|  
-|[countbits](concurrency-direct3d-namespace-functions-amp.md#countbits)|_X kümesi bit sayısını sayar|  
-|[create_accelerator_view](concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view)|Oluşturur bir [accelerator_view sınıfı](accelerator-view-class.md) Direct3D aygıt arabirimi için bir işaretçi gelen|  
-|[d3d_access_lock](concurrency-direct3d-namespace-functions-amp.md#d3d_access_lock)|Güvenli bir şekilde D3D işlemleri ile accelerator_view paylaşılan kaynaklar amacıyla bir accelerator_view üzerinde bir kilit alır|  
-|[d3d_access_try_lock](concurrency-direct3d-namespace-functions-amp.md#d3d_access_try_lock)|D3D erişim bir accelerator_view engellenmeden Kilitle girişimi.|  
-|[d3d_access_unlock](concurrency-direct3d-namespace-functions-amp.md#d3d_access_unlock)|Verilen accelerator_view D3D erişim kilidi serbest bırakın.|  
-|[firstbithigh](concurrency-direct3d-namespace-functions-amp.md#firstbithigh)|En yüksek sıra bit başlatma ve aşağı çalışma _X ilk kümesi bit konumunu alır|  
-|[firstbitlow](concurrency-direct3d-namespace-functions-amp.md#firstbitlow)|En düşük sıra bit başlatma ve yukarı çalışma _X ilk kümesi bit konumunu alır|  
-|[get_buffer](concurrency-direct3d-namespace-functions-amp.md#get_buffer)|Bir dizi temel D3D arabellek arabirimi alın.|  
-|[imax](concurrency-direct3d-namespace-functions-amp.md#imax)|Büyük değer döndürme iki değerlerini karşılaştırır.|  
-|[imin](concurrency-direct3d-namespace-functions-amp.md#imin)|Daha küçük olan değer döndürme iki değerlerini karşılaştırır.|  
-|[is_timeout_disabled](concurrency-direct3d-namespace-functions-amp.md#is_timeout_disabled)|Zaman aşımı için belirtilen accelerator_view devre dışı olup olmadığını gösteren bir Boole bayrağı döndürür.|  
-|[mad](concurrency-direct3d-namespace-functions-amp.md#mad)|Fazla Yüklendi. Üç bağımsız değişkenler aritmetik Çarp/ekleme işlemi gerçekleştirir: _X * _Y + _Z|  
-|[make_array](concurrency-direct3d-namespace-functions-amp.md#make_array)|Bir dizi D3D arabellek arabirimi işaretçi oluşturun.|  
-|[gürültü](concurrency-direct3d-namespace-functions-amp.md#noise)|Rastgele bir değeri Perlin gürültü algoritması kullanılarak oluşturur|  
-|[radyan cinsinden](concurrency-direct3d-namespace-functions-amp.md#radians)|_X derece radyan için dönüştürür.|  
-|[rcp](concurrency-direct3d-namespace-functions-amp.md#rcp)|Hızlı, yaklaşık devrik bağımsız değişkenin hesaplar|  
-|[reversebits](concurrency-direct3d-namespace-functions-amp.md#reversebits)|_X bitleri sırasını tersine çevirir|  
-|[saturate](concurrency-direct3d-namespace-functions-amp.md#saturate)|0 ve 1 aralığında _X clamps|  
-|[sign](concurrency-direct3d-namespace-functions-amp.md#sign)|Fazla Yüklendi. Bağımsız değişken işaretini döndürür|  
-|[smoothstep](concurrency-direct3d-namespace-functions-amp.md#smoothstep)|_X [_Min, _en] aralığında bir kesintisiz Hermite ilişkilendirme 0 ile 1 arasında döndürür.|  
-|[Adım](concurrency-direct3d-namespace-functions-amp.md#step)|İki değer, 0 veya 1 hangi değerin büyük olduğuna bağlı olarak döndüren karşılaştırır|  
-|[umax](concurrency-direct3d-namespace-functions-amp.md#umax)|Büyük değer döndürme iki imzasız değerlerini karşılaştırır.|  
-|[umin](concurrency-direct3d-namespace-functions-amp.md#umin)|Daha küçük olan değer döndürme iki imzasız değerlerini karşılaştırır.|  
+|[Abs](concurrency-direct3d-namespace-functions-amp.md#abs)|Bağımsız değişkenin mutlak değerini döndürür|  
+|[CLAMP](concurrency-direct3d-namespace-functions-amp.md#clamp)|Fazla Yüklendi. Belirtilen _Min ve _Max aralığına _x'i sıkıştırır.|  
+|[countbits](concurrency-direct3d-namespace-functions-amp.md#countbits)|_X içindeki belirlenmiş bitleri sayar|  
+|[create_accelerator_view](concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view)|Oluşturur bir [accelerator_view sınıfı](accelerator-view-class.md) bir işaretçiden Direct3D cihaz arayüzü|  
+|[d3d_access_lock](concurrency-direct3d-namespace-functions-amp.md#d3d_access_lock)|Güvenli şekilde D3D Hızlandırıcı görünümü ile paylaşılan kaynaklarda işlemleri gerçekleştirmek amacıyla bir Hızlandırıcı görünümünde kilit alır|  
+|[d3d_access_try_lock](concurrency-direct3d-namespace-functions-amp.md#d3d_access_try_lock)|Engelleme olmadan accelerator_view üzerinde D3D erişim kilidi edinmeye çalışın.|  
+|[d3d_access_unlock](concurrency-direct3d-namespace-functions-amp.md#d3d_access_unlock)|Verilen accelerator_view üzerindeki D3D erişim kilidini serbest bırakın.|  
+|[firstbithigh](concurrency-direct3d-namespace-functions-amp.md#firstbithigh)|En yüksek sıra bitinden başlayıp ve aşağı doğru çalışma _X içinde ilk belirlenen bitin konumunu alır.|  
+|[firstbitlow](concurrency-direct3d-namespace-functions-amp.md#firstbitlow)|En düşük sıra bitinden başlayıp ve yukarıya doğru _X içinde ilk belirlenen bitin konumunu alır.|  
+|[get_buffer](concurrency-direct3d-namespace-functions-amp.md#get_buffer)|Bir dizinin altındaki D3D arabellek arayüzünü alın.|  
+|[imax](concurrency-direct3d-namespace-functions-amp.md#imax)|Büyük bir değer döndüren iki değeri karşılaştırır.|  
+|[imin](concurrency-direct3d-namespace-functions-amp.md#imin)|Daha küçük olan bir değer döndüren iki değeri karşılaştırır.|  
+|[is_timeout_disabled](concurrency-direct3d-namespace-functions-amp.md#is_timeout_disabled)|Zaman aşımı için belirtilen Hızlandırıcı görünümü devre dışı olup olmadığını belirten bir Boole bayrağı döndürür.|  
+|[mad](concurrency-direct3d-namespace-functions-amp.md#mad)|Fazla Yüklendi. Bir üç bağımsız değişken üzerinde aritmetik çarpma/ekleme işlemi gerçekleştirir: _X \* _Y + _Z|  
+|[make_array](concurrency-direct3d-namespace-functions-amp.md#make_array)|Bir D3D arabellek arayüz işaretçisinden bir dizi oluşturun.|  
+|[gürültü](concurrency-direct3d-namespace-functions-amp.md#noise)|Perlin gürültü algoritmasını kullanarak rastgele bir değer oluşturur.|  
+|[radyan cinsinden](concurrency-direct3d-namespace-functions-amp.md#radians)|_X'i dereceden radyana çevirir.|  
+|[rcp](concurrency-direct3d-namespace-functions-amp.md#rcp)|Bağımsız değişkenin hızlı, yaklaşık tersini hesaplar|  
+|[reversebits](concurrency-direct3d-namespace-functions-amp.md#reversebits)|_X'deki bitlerin sırasını tersine çevirir|  
+|[Saturate](concurrency-direct3d-namespace-functions-amp.md#saturate)|0 ile 1 aralığında _x'i sıkıştırır.|  
+|[sign](concurrency-direct3d-namespace-functions-amp.md#sign)|Fazla Yüklendi. Bağımsız değişkenin işaretini döndürür|  
+|[smoothstep](concurrency-direct3d-namespace-functions-amp.md#smoothstep)|_X [_Min, _Max] aralığında ise, 0 ile 1 arasında düzgün bir Hermite enterpolasyon döndürür.|  
+|[Adım](concurrency-direct3d-namespace-functions-amp.md#step)|İki değer, 0 veya 1 hangi değerin daha büyük olduğuna göre karşılaştırır.|  
+|[umax](concurrency-direct3d-namespace-functions-amp.md#umax)|Büyük bir değer döndüren işaretsiz iki değeri karşılaştırır.|  
+|[umin](concurrency-direct3d-namespace-functions-amp.md#umin)|Daha küçük olan bir değer döndüren işaretsiz iki değeri karşılaştırır.|  
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** amp.h  

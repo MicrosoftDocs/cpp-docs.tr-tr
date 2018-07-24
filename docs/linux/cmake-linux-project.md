@@ -1,7 +1,8 @@
 ---
 title: Visual Studio'da bir Linux CMake projesi yapılandırma | Microsoft Docs
+description: Visual Studio'da bir Linux CMake projesi yapılandırma
 ms.custom: ''
-ms.date: 04/28/2018
+ms.date: 07/20/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -14,17 +15,17 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 285c1fcd38ef20ea38fe03e2cbd27f77469775cf
-ms.sourcegitcommit: 30192458404618039fdadddf37dc269baa559860
+ms.openlocfilehash: b96c44f978be18e83736736b6edd5965f0f49ef6
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39182544"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207793"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
 **Visual Studio 2017 sürüm 15.4 ve üzeri**  
-Linux CMake desteği, Linux C++ iş yükünü yüklediğinizde, varsayılan olarak seçilidir. Artık CMake için Visual Studio projesi dönüştürmek zorunda kalmadan kullanan mevcut kod tabanınız üzerinde çalışabilirsiniz. Kod tabanınız platformlar arası ise, hem Windows hem de Visual Studio içinden Linux'u hedefleyebilirsiniz.
+Linux CMake desteği, Visual Studio için Linux C++ iş yükünü yüklediğinizde varsayılan olarak seçilidir. Artık CMake için Visual Studio projesi dönüştürmek zorunda kalmadan kullanan mevcut kod tabanınız üzerinde çalışabilirsiniz. Kod tabanınız platformlar arası ise, hem Windows hem de Visual Studio içinden Linux'u hedefleyebilirsiniz.
 
 Bu konuda, Visual Studio'da CMake desteği temel olarak bilindiğini sahip olduğunuz varsayılır. Daha fazla bilgi için [Visual C++ için CMake araçlarını](../ide/cmake-tools-for-visual-cpp.md). CMake kendisi hakkında daha fazla bilgi için bkz: [derleme, Test ve paket Your yazılım CMake ile](https://cmake.org/).
 

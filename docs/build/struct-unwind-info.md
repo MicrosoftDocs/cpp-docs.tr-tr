@@ -12,79 +12,79 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14b17a79905ffc7814e2aecf92e90f3db526453f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a6046dffd74824b05c7b7b10be57bb0b2274ffdc
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383247"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207578"
 ---
 # <a name="struct-unwindinfo"></a>struct UNWIND_INFO
-Bırakma veri bilgisi yapısı yığın işaretçisi ve kalıcı Yazmaçları yığında kaydedildiği bir işleve sahiptir etkileri kaydetmek için kullanılır:  
+Geriye doğru izleme veri bilgisi yapısı, yığın işaretçisi ve kalıcı kayıtlar yığında kaydedildiği bir işleve sahip etkileri kaydetmek için kullanılır:  
   
 |||  
 |-|-|  
 |UBYTE: 3|Sürüm|  
 |UBYTE: 5|Bayraklar|  
 |UBYTE|Giriş boyutu|  
-|UBYTE|Bırakma kodlarının sayımı|  
+|UBYTE|Geriye doğru izleme kodları sayısı|  
 |UBYTE: 4|Çerçeve kaydı|  
-|UBYTE: 4|Çerçeve kaydı uzaklığı (ölçekli)|  
-|USHORT * n|Bırakma kodları dizisi|  
-|değişken|Ya da formun (1) veya (2) aşağıda olabilir mi|  
+|UBYTE: 4|Çerçeve kaydı uzaklık (ölçeği)|  
+|USHORT \* n|Bırakma kodları dizisi|  
+|değişken|Formun (1) veya (2) aşağıda olabilir|  
   
  (1) özel durum işleyicisi  
   
 |||  
 |-|-|  
-|ULONG|Özel durum işleyici adresi|  
+|ULONG|Özel durum işleyicisinin adresi|  
 |değişken|Dile özel işleyici veriler (isteğe bağlı)|  
   
- (2) Zincirleme Bırakma bilgisi  
+ (2) Zincirleme Bırakma bilgi  
   
 |||  
 |-|-|  
 |ULONG|Başlangıç adresi işlevi|  
-|ULONG|İşlev bitiş adresi|  
+|ULONG|Bitiş adresi işlevi|  
 |ULONG|Bırakma bilgisi adresi|  
   
- UNWIND_INFO yapısı bellekte DWORD hizalanmış olmalıdır. Her bir alan anlamını aşağıdaki gibidir:  
+ UNWIND_INFO yapısını bellekte DWORD hizalanmış olmalıdır. Her bir alan anlamını aşağıdaki gibidir:  
   
  **Sürüm**  
- Bırakma verisinin, şu anda 1 sürüm numarası.  
+ Geriye doğru izleme verileri, şu anda 1 sürüm numarası.  
   
- **Bayrakları**  
- Üç bayrakları şu anda tanımlanmıştır:  
+ **bayrakları**  
+ Üç bayraktan şu anda tanımlanır:  
   
- Özel durumlar incelemek için gereken işlevleri ararken çağrılmalıdır bir özel durum işleyicisi UNW_FLAG_EHANDLER işlevi vardır.  
+ UNW_FLAG_EHANDLER işlevi özel durumları incelemek için gereken işlevleri ararken çağrılması gereken bir özel durum işleyicisine sahiptir.  
   
- UNW_FLAG_UHANDLER Bu işlev bir özel durum geriye doğru izleme zaman çağrılmalıdır sonlandırma işleyicisi vardır.  
+ Bir özel durumu geriye doğru izleme sırasında çağrılması gereken bir sonlandırma işleyicisi UNW_FLAG_UHANDLER işlevi vardır.  
   
- UNW_FLAG_CHAININFO bu bırakma bilgisi yapısı birincil bir yordam için değil. Bunun yerine, zincirleme girdisi önceki bir RUNTIME_FUNCTION içeriğini giriştir bırakma bilgisi. Aşağıdaki metni bir açıklaması için bkz: zincirleme bırakma bilgi yapıları. Bu bayrağı ayarlarsanız UNW_FLAG_EHANDLER ve UNW_FLAG_UHANDLER bayrakları temizlenmelidir. Ayrıca, çerçeve kayıt ve sabit yığın ayırma alanları bilgilerindeki birincil aynı değerlere sahip olmalıdır.  
+ UNW_FLAG_CHAININFO bu geriye doğru izleme bilgisi yapısı birincil bir yordam değil. Bunun yerine, zincirleme bir önceki RUNTIME_FUNCTION girişi içeriğini girdidir bilgilerindeki. Aşağıdaki metni bir açıklaması için bkz: zincirleme bırakma bilgi yapıları. Bu bayrağı ayarlarsanız, UNW_FLAG_EHANDLER ve UNW_FLAG_UHANDLER bayrakları temizlenmelidir. Ayrıca, çerçeve kayıt ve sabit yığın ayırma alanları bilgilerindeki birincil aynı değerlere sahip olmalıdır.  
   
  **Giriş boyutu**  
  İşlev giriş bayt cinsinden uzunluğu.  
   
- **Bırakma kodlarının sayımı**  
- Bırakma kodları dizisi yuvalarında sayısıdır. Bazı kodları (örneğin, UWOP_SAVE_NONVOL) bırakma Not dizideki birden fazla yuvası gerektirir.  
+ **Geriye doğru izleme kodları sayısı**  
+ Geriye doğru izleme kodları dizideki sayısıdır. Bazı kodları (örneğin, UWOP_SAVE_NONVOL) geriye doğru izleme Not dizideki birden fazla yuvası gerektirir.  
   
  **Çerçeve kaydı**  
- Sıfır olmayan, ardından işlevi bir çerçeve işaretçisi kullanır ve bu alan için işlem bilgileri alan UNWIND_CODE düğümlerinin aynı kodlama kullanılarak çerçeve işaretçisi olarak kullanılan kalıcı kayıt sayısıdır.  
+ Sıfır olmayan, ardından çerçeve işaretçisi işlevi kullanır ve bu alan UNWIND_CODE düğümleri işlemi bilgileri alan için aynı kodlama kullanılarak çerçeve işaretçisi olarak kullanılan kalıcı kayıt sayısıdır.  
   
- **Çerçeve kaydı uzaklığı (ölçekli)**  
- Çerçeve yazmaç alanı sıfır değilse, ardından oluşturulduğunda, FP reg uygulanan RSP ölçeklendirilmiş uzaklığı budur. Gerçek FP reg ayarlamak RSP + 16 * 240 0'dan uzaklıkları izin vererek, bu sayı. Bu, dinamik yığın çerçeveleri, daha iyi kod yoğunluğu kısa yönergeleri (daha fazla yönerge 8 bit imzalanmış sapma formu kullanabilirsiniz) aracılığıyla izin vermek için yerel yığın ayırma ortasına FP reg işaret eden izin verir.  
+ **Çerçeve kaydı uzaklık (ölçeği Genişletilmiş)**  
+ Çerçeve kaydı alanın sıfır değilse, ardından oluşturulduğunda FP reg için uygulanan RSP ölçeklendirilmiş uzaklığı budur. Gerçek FP reg ayarlanır RSP + 16 \* 0 uzaklıkları 240 izin vererek, bu sayı. Bu, dinamik yığın çerçevesi, daha kısa yönergeleri (daha fazla yönerge 8-bit imzalı sapma formu kullanabilirsiniz) aracılığıyla daha iyi kod yoğunluğu izin vermek için yerel yığın ayırma ortasına FP reg işaret verir.  
   
  **Bırakma kodları dizisi**  
- Bu giriş etkisini kalıcı yazmaçlar ve RSP açıklayan bir öğe dizisidir. Öğelerin tek tek anlamları için UNWIND_CODE hakkındaki bakın. Hizalama amacıyla, bu dizinin her zaman bir çift sayı (Bu durumda dizi sayısı bırakma kodları alanı tarafından belirtilenden daha uzun bir olacaktır), en son girişi potansiyel olarak kullanılmayan girişlerinin olacaktır.  
+ Giriş etkisini kalıcı yazmaçlar ve RSP açıklayan bir dizi öğelerinin budur. Tek tek öğelerin anlamı UNWIND_CODE üzerinde bakın. Hizalama amacıyla bu dizinin her zaman (Bu durumda dizi bir geriye doğru izleme kodları alan sayısı tarafından belirtilenden uzun olacaktır) sayıda olabilecek kullanılmayan son giriş girişe sahip olur.  
   
- **Özel durum işleyici adresi**  
- Bu işlevin dile özgü özel durum/sonlandırma işleyicisi için bir resim göreli işaretçidir (UNW_FLAG_CHAININFO bayrağı Temizle ve UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER bayrakları birini ayarlanır) olur.  
+ **Özel durum işleyicisinin adresi**  
+ Bu işlevin dile özgü özel durum/sonlandırma işleyicisi bir görüntü göreli işaretçisi (UNW_FLAG_CHAININFO bayrağı açık olması ve UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER bayrakları birine ayarlanır) olur.  
   
- **Dile özel işleyici verileri**  
- Bu işlevin dile özgü özel durum işleyici verilerdir. Bu veri biçimi belirtilmemiş ve tamamen kullanımda bir özel durum işleyici tarafından belirlenir.  
+ **Dile özel işleyici veri**  
+ Bu işlevin dile özgü özel durum işleyicisi verilerdir. Bu verilerin biçimi belirtilmemiş ve tamamen kullanılan belirli bir özel durum işleyicisi tarafından belirlenir.  
   
- **Zincirleme Bırakma bilgisi**  
- UNW_FLAG_CHAININFO bayrağı ayarlarsanız UNWIND_INFO yapısı üç UWORDs ile sona erer.  Bu UWORDs işlevi zincirleme RUNTIME_FUNCTION bilgilerini temsil eder.  
+ **Zincirleme Bırakma bilgi**  
+ UNW_FLAG_CHAININFO bayrağı ayarlandıysa UNWIND_INFO yapısı üç UWORDs ile sona erer.  Bu UWORDs işlevi zincirleme RUNTIME_FUNCTION bilgilerini temsil eder.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel Durum İşleme için Veri Bırakma, Hata Ayıklayıcı Desteği](../build/unwind-data-for-exception-handling-debugger-support.md)

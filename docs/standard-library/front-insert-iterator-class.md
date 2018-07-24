@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e94b9f748924c9711c814f0f823467b313affcd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e709ce37d60281bbc56a0e8ecf3cc7eafef5b0ee
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964391"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207617"
 ---
 # <a name="frontinsertiterator-class"></a>front_insert_iterator Sınıfı
 
@@ -63,9 +63,9 @@ Kapsayıcının itfa edilecek sabit sürede dizininin başına öğe eklemenin m
 
 |İşleç|Açıklama|
 |-|-|
-|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma * `i`  =  `x` bir ön ekleme.|
+|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* `i`  =  `x` bir ön ekleme.|
 |[operator ++](#op_add_add)|Artışlarla `front_insert_iterator` sonraki konuma içine bir değer depolanabilir.|
-|[operator=](#op_eq)|Çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci * `i`  =  `x` bir ön ekleme.|
+|[operator=](#op_eq)|Çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci \* `i`  =  `x` bir ön ekleme.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -177,7 +177,7 @@ After the front insertions, the list L is:
 *\
 ```
 
-## <a name="op_star"></a>  front_insert_iterator::operator*
+## <a name="op_star"></a>  front_insert_iterator::operator\*
 
 Onu ele aldığı öğeye döndürme ekleme yineleyici başvurusunu kaldırır.
 

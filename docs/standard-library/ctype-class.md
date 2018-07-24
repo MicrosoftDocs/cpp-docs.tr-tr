@@ -46,12 +46,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49329d97343cfd210a93879961b0492454be9efa
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5a65008b01262ad6252e9942444a4e80602d4292
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954779"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208643"
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 
@@ -275,7 +275,7 @@ Belirtilen bir maskeyle eşleşen bir aralıktaki ilk karaktere bir işaretçi. 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi, en küçük işaretçi döndürür `ptr` aralıktaki [ `first`, `last`) kendisi için [do_is](#do_is)( `maskVal`, * `ptr`) geçerlidir.
+Korumalı üye işlevi, en küçük işaretçi döndürür `ptr` aralıktaki [ `first`, `last`) kendisi için [do_is](#do_is)( `maskVal`, \* `ptr`) geçerlidir.
 
 ### <a name="example"></a>Örnek
 
@@ -306,7 +306,7 @@ Belirtilen bir maskeyle eşleşmeyen bir aralıktaki ilk karaktere bir işaretç
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi, en küçük işaretçi döndürür `ptr` aralıktaki [ `first`, `last`) kendisi için [do_is](#do_is)( `maskVal`, * `ptr`) yanlış.
+Korumalı üye işlevi, en küçük işaretçi döndürür `ptr` aralıktaki [ `first`, `last`) kendisi için [do_is](#do_is)( `maskVal`, \* `ptr`) yanlış.
 
 ### <a name="example"></a>Örnek
 

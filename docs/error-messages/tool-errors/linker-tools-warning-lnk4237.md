@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5acccf52d3738985c7a83432342952af03bf78b4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fcc109fe3ccf06e0461deed449517850271a2024
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302873"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209397"
 ---
 # <a name="linker-tools-warning-lnk4237"></a>Bağlayıcı Araçları Uyarısı LNK4237
-'Dll dosyasından'; alırken belirtilen /SUBSYSTEM:NATIVE /Subsystem:Console veya /SUBSYSTEM:WINDOWS kullanın.  
+'Dll'; dosyasından içeri aktarılırken belirtilen natıve / Subsystem: Console veya /SUBSYSTEM:WINDOWS kullanın.  
   
- [/SUBSYSTEM:NATIVE](../../build/reference/subsystem-specify-subsystem.md) doğrudan windows (Win32) uygulaması derleme birini veya birkaçını kullandığında belirtildi:  
+ [Natıve](../../build/reference/subsystem-specify-subsystem.md) doğrudan windows (Win32) uygulaması oluşturmaya birini veya birkaçını kullandığında belirtildi:  
   
 -   Kernel32.dll  
   
@@ -34,6 +34,6 @@ ms.locfileid: "33302873"
   
 -   User32.dll  
   
--   msvcrt * DLL'leri biri.  
+-   msvcrt birini\* DLL'ler.  
   
- Değil belirterek bu uyarıyı çözümlemek **/SUBSYSTEM:NATIVE**.
+ Değil belirterek bu uyarıyı gidermek **natıve**.

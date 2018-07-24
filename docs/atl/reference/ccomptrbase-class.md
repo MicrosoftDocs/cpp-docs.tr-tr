@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7abcfcfe6aec722fa3540ad974017ab47e6cf71
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 26e2984a3b52152b54d5f35ae72b8f3fdeaff474
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885457"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209228"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase sınıfı
 Bu sınıf, COM tabanlı bellek yordamları kullanarak akıllı işaretçi sınıflar için temel sağlar.  
@@ -77,7 +77,7 @@ class CComPtrBase
 |[CComPtrBase::operator T *](#operator_t_star)|Atama işleci.|  
 |[CComPtrBase::operator!](#operator_not)|NOT işleci.|  
 |[CComPtrBase::operator &](#operator_amp)|& İşleci.|  
-|[CComPtrBase::operator *](#operator_star)|* İşleci.|  
+|[CComPtrBase::operator *](#operator_star)|\* işleci.|  
 |[CComPtrBase::operator <](#ccomptrbase__operator lt)|Daha az-işleci.|  
 |[CComPtrBase::operator ==](#operator_eq_eq)|Eşitlik işleci.|  
 |[CComPtrBase::operator ->](#operator_ptr)|İşaretçi-üye işleci.|  
@@ -246,8 +246,8 @@ T** operator&() throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tarafından işaret edilen nesnenin adresini döndürür `CComPtrBase` nesne.  
   
-##  <a name="operator_star"></a>  CComPtrBase::operator *  
- * İşleci.  
+##  <a name="operator_star"></a>  CComPtrBase::operator \*  
+ \* işleci.  
   
 ```
 T& operator*() const throw();
@@ -300,7 +300,7 @@ bool operator<(T* pT) const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  İşaretçi geçerli nesne tarafından yönetiliyorsa true değerini döndürür, bu karşılaştırılıyor işaretçi küçüktür.  
   
-##  <a name="operator_t_star"></a>  CComPtrBase::operator T *  
+##  <a name="operator_t_star"></a>  CComPtrBase::operator T\*  
  Atama işleci.  
   
 ```  

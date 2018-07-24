@@ -1,7 +1,8 @@
 ---
-title: Uzak Linux bilgisayarınıza bağlayın | Microsoft Docs
+title: Visual Studio'da uzak Linux bilgisayarınıza bağlayın | Microsoft Docs
+description: Visual Studio C++ projesi içinde uzak Linux makineden bağlanma.
 ms.custom: ''
-ms.date: 11/06/2017
+ms.date: 07/20/2018
 ms.technology:
 - cpp-linux
 ms.tgt_pltfrm: Linux
@@ -12,37 +13,37 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: dd7f73a01b3b0941144ff59a683a9e42467f5a18
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9b3977c46e05ab0b175dad3658d1dcc390d33354
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329328"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207672"
 ---
-# <a name="connect-to-your-remote-linux-computer"></a>Uzak Linux bilgisayarınıza bağlayın
+# <a name="connect-to-your-remote-linux-computer"></a>Uzak Linux bilgisayarınıza bağlanma
 
-Oluştururken, Linux kod uzak Linux bilgisayarınıza kopyalanan ve ardından Visual Studio'da seçilen ayarlara göre bu sistemde derlenmiş.  Bu uzak bağlantı kurmak için:
+Visual Studio'da C++ Linux projesi oluştururken, kodu uzak Linux bilgisayarınıza kopyalanır ve sonra derlenmiş Linux Visual Studio ayarlarınızı temel alan. Bu uzak bağlantı kurmak için:
 
-1. İlk kez projeyi oluşturun veya yeni bir giriş seçerek el ile oluşturun **Araçlar > Seçenekler** ve ardından açın **Çapraz Platform > Bağlantı Yöneticisi** düğümü ve tıklatın **Ekle** düğmesi.
+1. İlk kez projeyi derlemeyi ya da el ile seçerek yeni bir giriş oluşturun **Araçlar > Seçenekler** ve açın **Çoklu Platform > Bağlantı Yöneticisi** düğüm ve tıklatın **Ekle** düğmesi.
 
    ![Bağlantı Yöneticisi](media/settings_connectionmanager.png)
 
-   Her iki senaryoda **uzak sisteme bağlanma** penceresi görüntülenir.
+   Her iki senaryoda **uzak sisteme Bağlan** penceresi görüntülenir.
    
-   ![Uzak sisteme bağlanmak](media/connect.png)
+   ![Uzak sisteme Bağlan](media/connect.png)
 
 1. Aşağıdaki bilgileri girin:
 
    | Giriş | Açıklama
    | ----- | ---
-   | **Ana bilgisayar adı**           | Hedef aygıt adı veya IP adresi
+   | **Ana bilgisayar adı**           | Hedef cihazınızın adı veya IP adresi
    | **Bağlantı noktası**                | Genellikle, 22 SSH hizmeti çalışıyor bağlantı noktası
-   | **Kullanıcı adı**           | Kullanıcı olarak kimlik doğrulaması
-   | **Kimlik doğrulama türü** | Parola veya özel anahtar desteklenir
-   | **Parola**            | Girilen kullanıcı adı parolası
-   | **Özel anahtar dosyası**    | Özel anahtar için ssh bağlantısı oluşturuldu
-   | **Parola**          | Yukarıda seçilen özel anahtarla kullanılan parola
+   | **Kullanıcı adı**           | Kullanıcı olarak kimlik doğrulaması yapmak için
+   | **Kimlik doğrulaması türü** | Parola veya özel anahtar desteklenir
+   | **Parola**            | Girilen kullanıcı adının parolası
+   | **Özel anahtar dosyası**    | Ssh bağlantısı için oluşturulan özel anahtarı
+   | **Parola**          | Yukarıda seçilen özel anahtarlı kullanılan parola
 
-1. Tıklatın **Bağlan** uzak bilgisayara bağlanmaya düğmesi.  Bağlantı başarısız olursa, değiştirilmesi gereken giriş kutularının kırmızı renkle gösterilir.
+1. Tıklayın **Connect** uzak bilgisayara bağlanmaya düğmesi.  Değiştirilmesi gereken giriş kutularının bağlantı başarısız olursa, kırmızı renkle gösterilir.
 
    ![Bağlantı Yöneticisi hata](media/settings_connectionmanagererror.png)

@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6830baf3d474b80f2e7906a7aadd27d2eee27f9a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 22f96b81836a8c1a9daa971ff8fb1961edb60cfb
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958626"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209010"
 ---
 # <a name="backinsertiterator-class"></a>back_insert_iterator Sınıfı
 
@@ -63,9 +63,9 @@ Kapsayıcının itfa edilecek sabit sürede dizininin sonuna öğe eklemenin mü
 
 |İşleç|Açıklama|
 |-|-|
-|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma * `i`  =  `x` bir geri ekleme.|
+|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* `i`  =  `x` bir geri ekleme.|
 |[operator ++](#op_add_add)|Artışlarla `back_insert_iterator` sonraki konuma içine bir değer depolanabilir.|
-|[operator=](#op_eq)|Çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci * `i`  =  `x` bir geri ekleme.|
+|[operator=](#op_eq)|Çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci \* `i`  =  `x` bir geri ekleme.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -191,7 +191,7 @@ The original vector vec is: ( 1 2 3 ).
 After the insertion, the vector is: ( 1 2 3 40 ).
 ```
 
-## <a name="op_star"></a>  back_insert_iterator::operator*
+## <a name="op_star"></a>  back_insert_iterator::operator\*
 
 Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* *miyim* = *x*.
 

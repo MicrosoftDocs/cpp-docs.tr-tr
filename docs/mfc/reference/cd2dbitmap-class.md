@@ -61,12 +61,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03c41bc17b6d8e5853203533a2d20d81063316a1
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 68e702331f980c469471288ae0b5bd29878c2c22
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079295"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208760"
 ---
 # <a name="cd2dbitmap-class"></a>CD2DBitmap sınıfı
 ID2D1Bitmap için sarmalayıcı.  
@@ -83,31 +83,31 @@ class CD2DBitmap : public CD2DResource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|Fazla Yüklendi. HBITMAP CD2DBitmap nesnesinden oluşturur.|  
-|[CD2DBitmap:: ~ CD2DBitmap](#_dtorcd2dbitmap)|Yok Edicisi. D2D bit eşlem nesnesi yok çağrılır.|  
+|[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|Fazla Yüklendi. HBITMAP CD2DBitmap nesneden oluşturur.|  
+|[CD2DBitmap:: ~ CD2DBitmap](#_dtorcd2dbitmap)|Yıkıcı. D2D bitmap nesnesi yok ediliyorken çağırılır.|  
   
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|Fazla Yüklendi. CD2DBitmap nesnesi oluşturur.|  
+|[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|Fazla Yüklendi. CD2DBitmap bir nesne oluşturur.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CD2DBitmap::Attach](#attach)|Var olan nesne kaynak arabirimine ekler|  
-|[CD2DBitmap::CopyFromBitmap](#copyfrombitmap)|Belirtilen bölge belirtilen bit eşlem geçerli bitmap içine kopyalar.|  
-|[CD2DBitmap::CopyFromMemory](#copyfrommemory)|Belirtilen bölge bellekten geçerli bitmap içine kopyalar.|  
-|[CD2DBitmap::CopyFromRenderTarget](#copyfromrendertarget)|Kopya belirtilen belirtilen bölgesinden işlemek hedef geçerli bit eşlem|  
+|[CD2DBitmap::Attach](#attach)|Var olan kaynak arabirimi nesnesine ekler|  
+|[CD2DBitmap::CopyFromBitmap](#copyfrombitmap)|Belirtilen bölge belirtilen bit eşlem geçerli bit eşleme kopyalar.|  
+|[CD2DBitmap::CopyFromMemory](#copyfrommemory)|Belirtilen bölge bellekten geçerli bit eşleme kopyalar.|  
+|[CD2DBitmap::CopyFromRenderTarget](#copyfromrendertarget)|Kopya belirtilen belirtilen bölgeden işleme hedefi geçerli bit eşleme|  
 |[CD2DBitmap::Create](#create)|Bir CD2DBitmap oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|  
 |[CD2DBitmap::Destroy](#destroy)|CD2DBitmap nesnesini yok eder. (Geçersiz kılmaları [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|  
-|[CD2DBitmap::detach](#detach)|Kaynak arabirimi nesneden çıkarır|  
+|[CD2DBitmap::detach](#detach)|Kaynak arabirimi nesnesinden ayırır|  
 |[CD2DBitmap::get](#get)|Döndürür ID2D1Bitmap arabirimi|  
-|[CD2DBitmap::GetDPI](#getdpi)|Nokta / inç (DPI) bit eşlem Döndür|  
-|[CD2DBitmap::GetPixelFormat](#getpixelformat)|Bit eşlem piksel biçimi ve alfa modunu alır.|  
-|[CD2DBitmap::GetPixelSize](#getpixelsize)|Aygıta bağımlı birimler (piksel) boyutu, bit eşlem döndürür|  
-|[CD2DBitmap::GetSize](#getsize)|Bit eşlem (Dıps) aygıttan bağımsız piksel cinsinden boyutu döndürür|  
+|[CD2DBitmap::GetDPI](#getdpi)|Nokta / inç (DPI) bit eşlemin döndürür|  
+|[CD2DBitmap::GetPixelFormat](#getpixelformat)|Bit eşlemin piksel biçimi ve alfa modunu alır.|  
+|[CD2DBitmap::GetPixelSize](#getpixelsize)|Bit eşlemin cihaza bağlı birimler (piksel) boyutunu döndürür|  
+|[CD2DBitmap::GetSize](#getsize)|Bit eşlemin CİHAZDAN bağımsız piksel (DIP) boyutunu döndürür|  
 |[CD2DBitmap::IsValid](#isvalid)|Kaynak geçerlilik denetler (geçersiz kılmaları [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
@@ -126,11 +126,11 @@ class CD2DBitmap : public CD2DResource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CD2DBitmap::m_bAutoDestroyHBMP](#m_bautodestroyhbmp)|M_hBmpSrc yok edilmesi TRUE; Aksi takdirde FALSE.|  
-|[CD2DBitmap::m_hBmpSrc](#m_hbmpsrc)|Kaynak eşlem tanıtıcısı.|  
+|[CD2DBitmap::m_bAutoDestroyHBMP](#m_bautodestroyhbmp)|M_hBmpSrc yok TRUE; Aksi durumda FALSE.|  
+|[CD2DBitmap::m_hBmpSrc](#m_hbmpsrc)|Kaynak bit eşlem tanıtıcısı.|  
 |[CD2DBitmap::m_lpszType](#m_lpsztype)|Kaynak türü.|  
-|[CD2DBitmap::m_pBitmap](#m_pbitmap)|ID2D1Bitmap nesneyi gösteren bir işaretçi depolar.|  
-|[CD2DBitmap::m_sizeDest](#m_sizedest)|Hedef boyutu bitmap.|  
+|[CD2DBitmap::m_pBitmap](#m_pbitmap)|ID2D1Bitmap nesneye bir işaretçi depolar.|  
+|[CD2DBitmap::m_sizeDest](#m_sizedest)|Hedef boyut bit eşlem.|  
 |[CD2DBitmap::m_strPath](#m_strpath)|Botmap dosya yolu.|  
 |[CD2DBitmap::m_uiResID](#m_uiresid)|Bit eşlem kaynak kimliği|  
   
@@ -145,14 +145,14 @@ class CD2DBitmap : public CD2DResource;
  **Başlık:** afxrendertarget.h  
   
 ##  <a name="_dtorcd2dbitmap"></a>  CD2DBitmap:: ~ CD2DBitmap  
- Yok Edicisi. D2D bit eşlem nesnesi yok çağrılır.  
+ Yıkıcı. D2D bitmap nesnesi yok ediliyorken çağırılır.  
   
 ```  
 virtual ~CD2DBitmap();
 ```  
   
 ##  <a name="attach"></a>  CD2DBitmap::Attach  
- Var olan nesne kaynak arabirimi ekler.  
+ Var olan kaynak arabirimi nesnesine ekler.  
   
 ```  
 void Attach(ID2D1Bitmap* pResource);
@@ -163,7 +163,7 @@ void Attach(ID2D1Bitmap* pResource);
  Mevcut kaynak arabirimi. NULL olamaz.  
   
 ##  <a name="cd2dbitmap"></a>  CD2DBitmap::CD2DBitmap  
- Kaynak CD2DBitmap nesnesinden oluşturur.  
+ Kaynaktan CD2DBitmap bir nesne oluşturur.  
   
 ```  
 CD2DBitmap(
@@ -201,19 +201,19 @@ CD2DBitmap(
  Kaynak Kimliği kaynak sayısı.  
   
  *lpszType*  
- Kaynak türü içeren null ile sonlandırılmış bir dize işaretçi.  
+ Kaynak türü içeren null ile sonlandırılmış bir dize işaretçisi.  
   
  *sizeDest*  
  Bit eşlem hedef boyutu.  
   
  *bAutoDestroy*  
- Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
+ Nesne sahibi tarafından (pParentTarget) edileceği gösterir.  
   
  *lpszPath*  
- İşaretçi null ile sonlandırılmış dizeye dosya adını içerir.  
+ Dosya adını içeren null ile sonlandırılmış bir dize işaretçisi.  
   
  *hbmpSrc*  
- Bit eşlem için işler.  
+ Bit eşleme işleyin.  
   
 ##  <a name="commoninit"></a>  CD2DBitmap::CommonInit  
  Nesnesini başlatır.  
@@ -223,7 +223,7 @@ void CommonInit();
 ```  
   
 ##  <a name="copyfrombitmap"></a>  CD2DBitmap::CopyFromBitmap  
- Belirtilen bölge belirtilen bit eşlem geçerli bitmap içine kopyalar.  
+ Belirtilen bölge belirtilen bit eşlem geçerli bit eşleme kopyalar.  
   
 ```  
 HRESULT CopyFromBitmap(
@@ -234,19 +234,19 @@ HRESULT CopyFromBitmap(
   
 ### <a name="parameters"></a>Parametreler  
  *pBitmap*  
- Kopyalanacak bitmap.  
+ Kopyalamak için bit eşlem.  
   
  *destPoint*  
- Geçerli bit eşlem için bölge srcRect tarafından belirtilen alan sol üst köşesindeki kopyalanır.  
+ Geçerli bit eşlem içinde olduğu bölgeye srcRect tarafından belirtilen alanın sol üst köşesine kopyalanır.  
   
  *srcRect*  
  Bit eşlem kopyalamak için alanı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
+ Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.  
   
 ##  <a name="copyfrommemory"></a>  CD2DBitmap::CopyFromMemory  
- Belirtilen bölge bellekten geçerli bitmap içine kopyalar.  
+ Belirtilen bölge bellekten geçerli bit eşleme kopyalar.  
   
 ```  
 HRESULT CopyFromMemory(
@@ -257,19 +257,19 @@ HRESULT CopyFromMemory(
   
 ### <a name="parameters"></a>Parametreler  
  *srcData*  
- Kopyalamak için verileri.  
+ Kopyalanacak verileri.  
   
- *Sıklık*  
- STRIDE veya srcData içinde depolanan kaynak bit eşlem aralık. STRIDE tarama satırı (piksel cinsinden bellek bir satır) bayt sayısıdır. STRIDE aşağıdaki formülünden hesaplanan değer: piksel genişlik * piksel + bellek doldurma başına bayt sayısı.  
+ *Aralık*  
+ STRIDE veya aralığını srcData içinde depolanan kaynak bit eşlemi. STRIDE (piksel cinsinden bellek bir satır) bir tarama satırı bayt sayısıdır. STRIDE aşağıdaki formülünden hesaplanan değer: piksel genişliği \* piksel + bellek doldurma başına bayt sayısı.  
   
  *destRect*  
- Geçerli bit eşlem için bölge srcRect tarafından belirtilen alan sol üst köşesindeki kopyalanır. 
+ Geçerli bit eşlem içinde olduğu bölgeye srcRect tarafından belirtilen alanın sol üst köşesine kopyalanır. 
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
+ Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.  
   
 ##  <a name="copyfromrendertarget"></a>  CD2DBitmap::CopyFromRenderTarget  
- Kopya belirtilen bölgesi belirtilen hedef geçerli bitmap içine işleyebilir.  
+ Kopya belirtilen bölge belirtilen hedef geçerli bit eşleme işleyin.  
   
 ```  
 HRESULT CopyFromRenderTarget(
@@ -280,16 +280,16 @@ HRESULT CopyFromRenderTarget(
   
 ### <a name="parameters"></a>Parametreler  
  *pRenderTarget*  
- Kopyalamak için bölgesi içeren işleme hedef.  
+ Kopyalamak için bölge içeren işleme hedefi.  
   
  *destPoint*  
- Geçerli bit eşlem için bölge srcRect tarafından belirtilen alan sol üst köşesindeki kopyalanır.  
+ Geçerli bit eşlem içinde olduğu bölgeye srcRect tarafından belirtilen alanın sol üst köşesine kopyalanır.  
   
  *srcRect*  
- Kopyalamak için işlem hedefi alanı.  
+ İşlem hedefi kopyalamak için alanı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
+ Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.  
   
 ##  <a name="create"></a>  CD2DBitmap::Create  
  Bir CD2DBitmap oluşturur.  
@@ -303,7 +303,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
  İşleme hedefi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
+ Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.  
   
 ##  <a name="destroy"></a>  CD2DBitmap::Destroy  
  CD2DBitmap nesnesini yok eder.  
@@ -320,7 +320,7 @@ ID2D1Bitmap* Detach();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ayrılmış kaynak arabirimi işaretçisi.  
+ Ayrılmış kaynak arabirim işaretçisi.  
   
 ##  <a name="get"></a>  CD2DBitmap::get  
  ID2D1Bitmap arabirimi döndürür.  
@@ -330,10 +330,10 @@ ID2D1Bitmap* Get();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi bir ID2D1Bitmap arabirimi veya nesnesi henüz başlatılmadı yoksa NULL.  
+ Bir ID2D1Bitmap arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.  
   
 ##  <a name="getdpi"></a>  CD2DBitmap::GetDPI  
- Nokta / inç (DPI) bit eşlem döndür.  
+ Nokta / inç (DPI) bit eşlemin döndürür.  
   
 ```  
 CD2DSizeF GetDPI() const;  
@@ -343,54 +343,54 @@ CD2DSizeF GetDPI() const;
  Bit eşlem yatay ve dikey DPI.  
   
 ##  <a name="getpixelformat"></a>  CD2DBitmap::GetPixelFormat  
- Bit eşlem piksel biçimi ve alfa modunu alır.  
+ Bit eşlemin piksel biçimi ve alfa modunu alır.  
   
 ```  
 D2D1_PIXEL_FORMAT GetPixelFormat() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bit eşlem piksel biçimi ve alfa modu.  
+ Bit eşlemin piksel biçimi ve alfa modu.  
   
 ##  <a name="getpixelsize"></a>  CD2DBitmap::GetPixelSize  
- Aygıta bağımlı birimler (piksel) boyutu, bit eşlem döndürür.  
+ Bit eşlemin cihaza bağlı birimler (piksel) boyutunu döndürür.  
   
 ```  
 CD2DSizeU GetPixelSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Piksel cinsinden bit eşlem boyutu...  
+ Bit eşlemin piksel cinsinden boyutu...  
   
 ##  <a name="getsize"></a>  CD2DBitmap::GetSize  
- CİHAZDAN bağımsız piksel (Dıps) boyutu, bit eşlem döndürür.  
+ CİHAZDAN bağımsız piksel (DIP) boyutu, bit eşlemin döndürür.  
   
 ```  
 CD2DSizeF GetSize() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bit eşlem Dıps boyutu.  
+ Bit eşlemin bir Dıps boyutu.  
   
 ##  <a name="isvalid"></a>  CD2DBitmap::IsValid  
- Kaynak geçerliliğini denetler.  
+ Kaynak geçerlilik denetler.  
   
 ```  
 virtual BOOL IsValid() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kaynağın geçerli ise TRUE; Aksi takdirde FALSE.  
+ Kaynak geçerli ise TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_bautodestroyhbmp"></a>  CD2DBitmap::m_bAutoDestroyHBMP  
- M_hBmpSrc yok edilmesi TRUE; Aksi takdirde FALSE.  
+ M_hBmpSrc yok TRUE; Aksi durumda FALSE.  
   
 ```  
 BOOL m_bAutoDestroyHBMP;  
 ```  
   
 ##  <a name="m_hbmpsrc"></a>  CD2DBitmap::m_hBmpSrc  
- Kaynak eşlem tanıtıcısı.  
+ Kaynak bit eşlem tanıtıcısı.  
   
 ```  
 HBITMAP m_hBmpSrc;  
@@ -404,14 +404,14 @@ LPCTSTR m_lpszType;
 ```  
   
 ##  <a name="m_pbitmap"></a>  CD2DBitmap::m_pBitmap  
- ID2D1Bitmap nesneyi gösteren bir işaretçi depolar.  
+ ID2D1Bitmap nesneye bir işaretçi depolar.  
   
 ```  
 ID2D1Bitmap* m_pBitmap;  
 ```  
   
 ##  <a name="m_sizedest"></a>  CD2DBitmap::m_sizeDest  
- Hedef boyutu bitmap.  
+ Hedef boyut bit eşlem.  
   
 ```  
 CD2DSizeU m_sizeDest;  
@@ -439,7 +439,7 @@ operator ID2D1Bitmap*();
 ```   
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi bir ID2D1Bitmap arabirimi veya nesnesi henüz başlatılmadı yoksa NULL.  
+ Bir ID2D1Bitmap arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ee931abb2273ab3119fa62b9219ad69448b2048
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 308254fded0ac38a794233fb3f4eacd4d7d6fd19
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963530"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207925"
 ---
 # <a name="ostreamiterator-class"></a>ostream_iterator Sınıfı
 
@@ -68,9 +68,9 @@ Ostream_iterator sınıfının, bir çıkış yineleyici için gereksinimleri ka
 
 |İşleç|Açıklama|
 |-|-|
-|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma * `i`  =  `x`.|
+|[operator *](#op_star)|Çıkış yineleyici ifadesini uygulamak için kullanılan işleci başvurusunu kaldırma \* `i`  =  `x`.|
 |[operator ++](#op_add_add)|Döndüren işlevsiz bir artış işleci bir `ostream_iterator` işlemi çağrılmadan önce aynı nesneye onu ele.|
-|[operator=](#op_eq)|Çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci * `i`  =  `x` çıkış akışına yazmak için.|
+|[operator=](#op_eq)|Çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci \* `i`  =  `x` çıkış akışına yazmak için.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -228,7 +228,7 @@ Elements written to output stream:
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
 
-Output_iterator ifadesini uygulamak için kullanılan atama işleci * `i`  =  `x` çıkış akışına yazmak için.
+Output_iterator ifadesini uygulamak için kullanılan atama işleci \* `i`  =  `x` çıkış akışına yazmak için.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
@@ -244,7 +244,7 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çıkış yineleyici için gereksinimleri, `ostream_iterator` karşılamalıdır yalnızca ifade gerektiren * `ii`  =  `t` geçerli olması ve hiçbir şey işleci veya işleç hakkında diyor, kendi =. Bu üye işleci döndürür `*this`.
+Bir çıkış yineleyici için gereksinimleri, `ostream_iterator` karşılamalıdır yalnızca ifade gerektiren \* `ii`  =  `t` geçerli olması ve hiçbir şey işleci veya işleç hakkında diyor, kendi =. Bu üye işleci döndürür `*this`.
 
 ### <a name="example"></a>Örnek
 

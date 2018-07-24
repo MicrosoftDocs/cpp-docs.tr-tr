@@ -12,15 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66f0dc8469d1d70b2697df1fe120f10142d90dbe
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 3c906a9a9b781f742f525688b77d5f58da16bb10
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688134"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39208139"
 ---
 # <a name="264-atomic-construct"></a>2.6.4 atomic Yapı
-`atomic` Yönergesi sağlar belirli bellek konumuna birden çok olanağı gösterme yerine otomatik olarak, bir biçimde güncelleştirilir eş zamanlı iş parçacıkları yazma. Söz dizimi `atomic` yönergesi aşağıdaki gibidir:  
+`atomic` Yönergesi sağlar belirli bellek konumu birden fazla olasılığını gösterme yerine atomik olarak, bir biçimde güncelleştirilir eşzamanlı iş parçacığı yazma. Söz dizimi `atomic` yönerge aşağıdaki gibidir:  
   
 ```  
 #pragma omp atomic new-lineexpression-stmt  
@@ -40,19 +40,19 @@ ms.locfileid: "33688134"
   
  Önceki ifadelerinde:  
   
--   *x* skaler türüyle lvalue ifadesidir.  
+-   *x* skalar türü ile bir lvalue ifadesidir.  
   
--   *Expr* ifade skaler türüne sahip olan ve belirlenen nesneye başvurmuyor *x*.  
+-   *Expr* skaler türüne sahip ifade ve tarafından belirlenen nesnede başvurmuyor *x*.  
   
--   `binop` Aşırı yüklenmiş bir işleç değil ve biri +, *, -, / &, ^, &#124;, <\<, veya >>.  
+-   `binop` Aşırı yüklenmiş bir işleç değil ve biri +, \*, -, / &, ^, &#124;, <\<, veya >>.  
   
- Bu uygulama tüm olup yerini alır uygulama tanımlı olmasına rağmen `atomic` yönergeleri ile **kritik** aynı benzersiz olan yönergeleri *adı*, `atomic` yönergesi izinleri daha iyi en iyi duruma getirme. Genellikle donanım yönergeleri kullanılabilir olan en az bir ek yükü atomik güncelleştirme gerçekleştirebilir.  
+ Bu uygulama tüm olup yerini alır uygulama tanımlı olmasına rağmen `atomic` yönergeleri ile **kritik** aynı benzersiz yönergeleri *adı*, `atomic` yönergesi izinleri daha iyi iyileştirme. Genellikle donanım yönergeleri atomik güncelleştirme en az bir ek yükü ile gerçekleştirebilirsiniz.  
   
- Yalnızca Yük ve belirlenen nesnesinin deposu *x* olan atomik; değerlendirmesi *expr* atomik değil. Yarış durumları önlemek için tüm güncelleştirmeleri paralel konumunun ile korunması gerektiğini `atomic` yarış durumları boş olduğu bilinen dışındaki yönergesi.  
+ Yalnızca Yük ve tarafından belirlenen nesnede deposu *x* olan atomik; değerlendirmesi *expr* atomik olması gerekmez. Yarış durumları önlemek için tüm güncelleştirmeleri paralel konumunun ile korunması gerektiğini `atomic` yarış koşulları ücretsiz olduğu bilinen dışındaki yönergesi.  
   
- Kısıtlamaları `atomic` yönergesi aşağıdaki gibidir:  
+ Kısıtlamaları `atomic` yönerge aşağıdaki gibidir:  
   
--   Tüm atomik başvuruları program boyunca depolama konumuna x uyumlu bir türde olması gerekir.  
+-   Tüm atomik başvuruları program boyunca depolama konumuna x uyumlu bir tür olması gerekir.  
   
 ## <a name="examples"></a>Örnekler:  
   

@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c0d7e69c95790122f44dc59d06f2843afbddfb2c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3b8b266d44f9109a346160a1b2493f8644be839
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33112049"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207604"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>Yönetilen Koddan Yerel İşlevleri Çağırma
-Ortak dil çalışma zamanı Platform Başlatma Hizmetleri ya da yerel dinamik bağlantı kitaplıkları (dll) C stili işlevleri çağırmak için kodu yönetilen tanır PInvoke sağlar. Aynı veri hazırlama "Sadece çalışır" ya da IJW, mekanizması için çalışma zamanı ile COM birlikte çalışabilirliği için kullanılır.  
+Platform çağırma Hizmetleri veya PInvoke sağlar yönetilen kodun yerel dinamik bağlantı kitaplıklarında (DLL'ler) C stili işlevleri çağırmak için ortak dil çalışma zamanı sağlar. Aynı veri sıralama, çalışma zamanı ile ve "It Just Works" öğesi veya IJW, mekanizma için COM birlikte çalışabilirlik için kullanılır.  
   
  Daha fazla bilgi için bkz.:  
   
@@ -38,13 +38,13 @@ Ortak dil çalışma zamanı Platform Başlatma Hizmetleri ya da yerel dinamik b
   
 -   [Yakından Platform çağırma](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
   
- Bu bölümdeki örnekler yalnızca göstermek nasıl `PInvoke` kullanılabilir. `PInvoke` yordam sıralama kodu yazmak yerine bildirimli olarak öznitelikler hazırlama bilgi sağlamak için özelleştirilmiş verileri hazırlama basitleştirebilirsiniz.  
+ Bu bölümdeki örnekler yalnızca göstermek nasıl `PInvoke` kullanılabilir. `PInvoke` yordam sıralama kodu yazmak yerine bildirimli olarak öznitelikler sıralama bilgilerini sağlamak için özelleştirilmiş veri hazırlama basitleştirebilir.  
   
 > [!NOTE]
->  Hazırlama kitaplığını en iyi duruma getirilmiş bir yöntem yerel ve Yönetilen ortamlarda arasında verileri hazırlamak için alternatif bir yol sağlar. Bkz: [, genel bakış hazırlama c++](../dotnet/overview-of-marshaling-in-cpp.md) hazırlama kitaplığını hakkında daha fazla bilgi. Hazırlama kitaplığını, yalnızca veri ve işlevleri için kullanılabilir.  
+>  Sıralama kitaplığı, bir en iyi duruma getirilmiş şekilde yerel ve yönetilen ortamlar arasında verileri sıralamak için alternatif bir yol sağlar. Bkz: [Overview of Marshaling c++](../dotnet/overview-of-marshaling-in-cpp.md) sıralama kitaplığı hakkında daha fazla bilgi için. Sıralama Kitaplığı işlevler için değil ve yalnızca veriler için kullanılabilir.  
   
 ## <a name="pinvoke-and-the-dllimport-attribute"></a>PInvoke ve DllImport özniteliği  
- Aşağıdaki örnek kullanımı gösterilmiştir `PInvoke` Visual C++ programı. Yerel işlev Msvcrt.dll'de tanımlanır. DllImport özniteliği yerleştirmelerin bildirimi için kullanılır.  
+ Aşağıdaki örnek kullanımını gösterir `PInvoke` Visual C++ programında. Yerel işlev Msvcrt.dll'de tanımlanır. DllImport özniteliği bildirimi için kullanılır.  
   
 ```  
 // platform_invocation_services.cpp  
@@ -61,7 +61,7 @@ int main() {
 }  
 ```  
   
- Aşağıdaki örnek, önceki örneğe eşdeğerdir ancak IJW kullanır.  
+ Aşağıdaki örnek önceki örneğe eşdeğerdir, ancak IJW kullanır.  
   
 ```  
 // platform_invocation_services_2.cpp  
@@ -82,30 +82,30 @@ int main() {
   
 ### <a name="advantages-of-ijw"></a>IJW avantajları  
   
--   Yazmaya gerek yoktur `DLLImport` öznitelik bildirimlerini programın kullandığı yönetilmeyen API'ler için. Yalnızca içeri aktarma kitaplığı ile bağlantı ve üstbilgi dosyası içerir.  
+-   Yazmaya gerek yoktur `DLLImport` öznitelik bildirimlerini programın kullandığı yönetilmeyen API'lara için. Yalnızca üst bilgi dosyası ve içeri aktarma kitaplığı ile bağlantı içerir.  
   
--   IJW mekanizması biraz daha hızlıdır (örneğin, IJW saplamalar, geliştirici tarafından açıkça yapıldığından PIN veya kopya veri öğeleri gerek olup olmadığını denetlemek gerekmez).  
+-   IJW mekanizması biraz daha hızlıdır (örneğin, IJW saplamalarının açıkça geliştirici tarafından yapıldığı için PIN veya kopya veri öğeleri için gereken denetlemek gerekmez).  
   
--   Performans sorunlarını açıkça gösterir. Bu durumda, bir ANSI dize ve sizin için bir Unicode dizeden çevirme olgu Katılımcısı bellek ayırma ve kaldırma vardır. Bu durumda, IJW kullanarak kodu yazan bir geliştirici çağırmanın fark `_putws` ve kullanarak `PtrToStringChars` performans için daha iyi olur.  
+-   Performans sorunlarını açıkça gösterir. Bu durumda, bir Unicode dizesini bir ANSI dizesine ve aldığınız çevireceğiniz bir olgu bir katılımcısı bellek ayırmayı ve ayırmayı kaldırma vardır. Bu durumda, IJW kullanarak kodu yazan geliştirici çağırmanın fark `_putws` ve kullanarak `PtrToStringChars` performans için daha iyi olur.  
   
--   Bir kez ve geçirerek hazırlama aynı verileri kullanarak çok yönetilmeyen API çağırırsanız, sıralanmış kopyalama her zaman yeniden sıralama'den çok daha etkilidir.  
+-   Geçirme ve sonra bunu aynı veriyi kullanarak birçok yönetilmeyen API çağırırsanız, hazırlamak ve hazırlanmış kopyayı her seferinde yeniden hazırlamaktan çok daha verimlidir.  
   
 ### <a name="disadvantages-of-ijw"></a>IJW dezavantajları  
   
--   Hazırlama açıkça yerine kodda (genellikle uygun olan) öznitelikleri tarafından belirtilmesi gerekir.  
+-   Hazırlama açıkça değil, kod içinde (Bu, çoğu zaman uygun varsayılanlara sahiptir) öznitelikleri belirtilmesi gerekir.  
   
--   Sıralama satır içi, uygulama mantığını akışında daha bozucu olduğu kodudur.  
+-   Sıralama kodu uygulama mantığının akışında daha bozucu olduğu satır içi, olan.  
   
--   Açık sıralama API'ları geri `IntPtr` 32-bit 64-bit taşınabilirlik türlerinde, kullanmalısınız fazladan `ToPointer` çağrıları.  
+-   Açık sıralama API'ları döndürdüğünden `IntPtr` türleri 32-bit mimarilerden 64-bit taşınabilirlik için kullanmanız gerekir fazladan `ToPointer` çağırır.  
   
  C++ tarafından sunulan belirli yöntem daha verimli ve açık yöntem, bazı ek karmaşıklıklar pahasına olur.  
   
- Esas olarak yönetilmeyen veri türleri uygulamanın kullandığı ya da .NET Framework API'den fazla yönetilmeyen API çağrıları, öneririz IJW özelliğini kullanın. Çoğunlukla yönetilen bir uygulamada bir arada sırada yönetilmeyen API çağrısı için daha hafif seçimdir.  
+ Uygulama ağırlıklı olarak yönetilmeyen veri türleri kullanıyorsa ya da daha fazla yönetilmeyen API .NET Framework API'ları çağırırsa, öneririz IJW özelliğini kullanın. Çoğunlukla yönetilen uygulamada nadiren yönetilmeyen API çağırmak için seçim daha inceliklidir.  
   
-## <a name="pinvoke-with-windows-apis"></a>Windows API'leri ile PInvoke  
- PInvoke, Windows'daki işlevleri çağırmak için uygundur.  
+## <a name="pinvoke-with-windows-apis"></a>Windows API'ları içeren PInvoke  
+ PInvoke Windows işlevleri çağırmak için uygundur.  
   
- Bu örnekte, bir Visual C++ programı Win32 API parçası olan MessageBox işleviyle birlikte çalışır.  
+ Bu örnekte, bir Visual C++ programı Win32 API'ın bir parçası olan MessageBox işleviyle birlikte çalışır.  
   
 ```  
 // platform_invocation_services_4.cpp  
@@ -123,25 +123,25 @@ int main() {
 }  
 ```  
   
- Çıktı, PInvoke testi başlığına sahip ve Hello World metnini içeren bir ileti kutusu şeklindedir!.  
+ Çıktı, PInvoke testi başlığına sahip ve Hello World metnini içeren bir ileti kutusudur!.  
   
- Sıralama bilgileri DLL'deki işlevleri aramak için PInvoke tarafından da kullanılır. User32.dll öğesinde yok aslında hiçbir MessageBox işlevi, ancak CharSet =:: Ansi etkinleştirir PInvoke Unicode sürümü MessageBoxW yerine MessageBoxA ANSI sürümü kullanın. Genel olarak, bu çevirme yükünü yerel Unicode biçimini .NET Framework dize nesnelerinin ANSI attığından yönetilmeyen API'ler Unicode sürümleri kullanmanızı öneririz.  
+ Sıralama bilgileri DLL'deki işlevleri aramak için PInvoke tarafından da kullanılır. User32.dll öğesinde yok aslında hiçbir MessageBox işlevi, ancak CharSet:: Ansi etkinleştirir Unicode sürümü olan MessageBoxW yerine ANSI sürümü olan MessageBoxA kullanılacak PInvoke =. Genel olarak, bu çevirme yükünü yerel Unicode biçimlerini .NET Framework dize nesnelerinin ANSI attığından yönetilmeyen API'ların Unicode sürümlerini kullanmanızı öneririz.  
   
 ## <a name="when-not-to-use-pinvoke"></a>Ne zaman PInvoke kullanma  
- PInvoke kullanarak DLL'lerde tüm C stili işlevleri için uygun değil. Örneğin, bir işlev MakeSpecial mylib.dll gibi bildirilmiş var. varsayın:  
+ PInvoke kullanma, DLL'lerdeki tüm C-stili işlevler için uygun değil. Örneğin, bir ' % s'işlevi MakeSpecial mylib.dll içinde şu şekilde bildirilir var. varsayalım:  
   
  `char * MakeSpecial(char * pszString);`  
   
- Visual C++ uygulamasında PInvoke kullanıyoruz, aşağıdakine benzer bir şey yazma:  
+ Bir Visual C++ uygulamasında PInvoke kullanıyoruz, biz aşağıdakine benzer bir şey yazabiliriz:  
   
  `[DllImport("mylib")]`  
   
  `extern "C" String * MakeSpecial([MarshalAs(UnmanagedType::LPStr)] String ^);`  
   
- Zorluk MakeSpecial tarafından döndürülen yönetilmeyen dize için bellek silemiyoruz ' dir. PInvoke aracılığıyla çağrılan diğer işlevleri, kullanıcı tarafından bırakılmasına sahip olmayan bir iç arabellek için bir işaretçi döndürür. Bu durumda, IJW özelliğini kullanarak belirgin bir seçimdir.  
+ Buradaki zorluk MakeSpecial tarafından döndürülen yönetilmeyen dize için belleği silinemiyor ' dir. PInvoke aracılığıyla çağrılan diğer işlevler kullanıcı tarafından serbest bırakılması sahip olmayan bir iç arabellek bir işaretçi döndürür. Bu durumda, IJW özelliğini kullanarak belirgin bir seçimdir.  
   
 ## <a name="limitations-of-pinvoke"></a>PInvoke sınırlamaları  
- Parametre olarak sürdü yerel işlevden işaretçinin aynısını döndüremez. Yerel bir işleve sıralanmış işaretçi için PInvoke tarafından döndürürse, Bellek Bozulması ve özel durum oluşması beklenebilir.  
+ Bir parametre olarak aldığınız yerel bir işlevden işaretçinin aynısını döndüremezsiniz. Yerel bir işlev sıralanmış işaretçiyi için PInvoke tarafından döndürürse, Bellek Bozulması ve özel durumlar oluşması beklenebilir.  
   
 ```  
 __declspec(dllexport)  
@@ -150,7 +150,7 @@ char* fstringA(char* param) {
 }  
 ```  
   
- Aşağıdaki örnek bu sorunun yaşandığı ve program doğru çıktıyı veriyor gibi görünse de, çıktı serbest bırakılmış bellekten geliyor.  
+ Aşağıdaki örnek bu sorunu gösterir ve program doğru çıktıyı veriyor gibi görünse de, çıktı serbest bırakılan bellekten gelmektedir.  
   
 ```  
 // platform_invocation_services_5.cpp  
@@ -173,14 +173,14 @@ int main() {
 }  
 ```  
   
-## <a name="marshaling-arguments"></a>Bağımsız değişkenler hazırlama  
- İle `PInvoke`, hiçbir hazırlama gerekli arasında yönetilen ve C++ yerel temel türler ile aynı formu. Örneğin, hiçbir sıralama veya çift ve çift Int32 ve int arasında gereklidir.  
+## <a name="marshaling-arguments"></a>Bağımsız değişkenleri sıralama  
+ İle `PInvoke`, sıralamaya gerek yoktur arasında yönetilen ve C++ yerel temel türler aynı forma sahip. Örneğin, herhangi bir sıralama Int32 ve int arasında veya Double ve double arasında gerekli değildir.  
   
- Ancak, aynı forma sahip olmayan türleri sıralamanız gerekir. Bu, char, dize ve yapı türleri içerir. Aşağıdaki tabloda çeşitli türleri için sıralayıcı tarafından kullanılan eşlemeleri gösterir:  
+ Ancak, aynı forma sahip olmayan türleri sıralamanız gerekir. Bu, char, string ve struct türlerini içerir. Aşağıdaki tabloda, çeşitli türler için sıralayıcı tarafından kullanılan eşlemeleri gösterir:  
   
 |wtypes.h|Visual C++|Visual C++/CLR ile|Ortak dil çalışma zamanı|  
 |--------------|------------------|-----------------------------|-----------------------------|  
-|İŞLEME|void *|void *|IntPtr, UIntPtr|  
+|TANITICI|Geçersiz kılma \*|Geçersiz kılma \*|IntPtr, UIntPtr|  
 |BYTE|unsigned char|unsigned char|Bayt|  
 |KISA|short|short|Int16|  
 |WORD|imzasız short|imzasız short|UInt16|  
@@ -191,20 +191,20 @@ int main() {
 |DWORD|imzasız long|imzasız long|UInt32|  
 |ULONG|imzasız long|imzasız long|UInt32|  
 |CHAR|char|char|Char|  
-|LPCSTR|char *|Dize ^ [in], StringBuilder ^ [ın, out]|Dize ^ [in], StringBuilder ^ [ın, out]|  
-|LPCSTR|const char *|Dize ^|Dize|  
-|LPWSTR|wchar_t *|Dize ^ [in], StringBuilder ^ [ın, out]|Dize ^ [in], StringBuilder ^ [ın, out]|  
-|LPCWSTR|const wchar_t *|Dize ^|Dize|  
+|LPCSTR|Char \*|String ^ [in], StringBuilder ^ [içinde out]|String ^ [in], StringBuilder ^ [içinde out]|  
+|LPCSTR|const char \*|String ^|Dize|  
+|LPWSTR|wchar_t \*|String ^ [in], StringBuilder ^ [içinde out]|String ^ [in], StringBuilder ^ [içinde out]|  
+|LPCWSTR|wchar_t const \*|String ^|Dize|  
 |KAYAN NOKTA|float|float|Tek|  
 |ÇİFT|çift|çift|Çift|  
   
- Sıralayıcı otomatik olarak adresini yönetilmeyen bir işleve aktarılırsa çalışma zamanı yığında ayrılmış bellek sabitler. Sabitleme, atık toplayıcı ayrılan bellek bloğunu sıkıştırma sırasında geçmesini önler.  
+ Sıralayıcı otomatik olarak adresini yönetilmeyen bir işleve geçirilirse, çalışma zamanı yığınına ayrılmış belleği sabitler. Sabitleme, çöp toplayıcısının ayrılan bellek bloğunu sıkıştırma sırasında taşımasını engeller.  
   
- Bu konunun önceki bölümlerinde gösterilen örnekte DllImport CharSet parametresinin nasıl yönetilen dizelerini belirtir. sıralanmalıdır; Bu durumda, kullanıcılar için yerel tarafı için ANSI dizelerini sıralanmalıdır.  
+ Bu konunun önceki bölümlerinde gösterilen örnekte, DllImport öğesinin CharSet parametresi yönetilen dizelerini belirtir. sıralanmalıdır; Bu durumda, bunlar yerel taraf için ANSI dizelerine sıralanmalıdır.  
   
- MarshalAs özniteliğini kullanarak yerel bir işleve bağımsız değişkenleri için hazırlama bilgileri belirtebilirsiniz. Bir dize sıralama için birkaç seçenek vardır * bağımsız değişken: BStr, ANSIBStr, TBStr, LPStr, LPWStr ve LPTStr. LPStr varsayılandır.  
+ MarshalAs özniteliğini kullanılarak bir yerel işlevin tek tek bağımsız değişkenleri için sıralama bilgilerini belirtebilirsiniz. Bir dize için birkaç seçenek vardır \* bağımsız değişken: BStr, ANSIBStr, TBStr, LPStr, LPWStr ve LPTStr. Varsayılan, LPStr'dir.  
   
- Bu örnekte, dize çift baytlık Unicode karakter dizesi olarak, LPWStr sıralanır. Çıktı Hello World ilk harfini değil! İkinci bayt sıralanmış dizenin null ve puts Bu dize sonu işaretçisi olarak yorumlar.  
+ Bu örnekte, dize bir çift baytlık Unicode karakter dizesi, LPWStr olarak sıralanır. Çıktı Hello World ilk harfidir! sıralanmış dizenin ikinci baytı NULL'dur ve puts bunu dize sonu işareti olarak yorumlar.  
   
 ```  
 // platform_invocation_services_3.cpp  
@@ -221,14 +221,14 @@ int main() {
 }  
 ```  
   
- MarshalAs özniteliği System::Runtime:: InteropServices ad alanında ' dir. Öznitelik, dizileri gibi diğer veri türleriyle kullanılabilir.  
+ MarshalAs özniteliği System::Runtime:: InteropServices ad alanındadır. Öznitelik, diziler gibi diğer veri türleri ile kullanılabilir.  
   
- Konuda daha önce belirtildiği gibi hazırlama kitaplığını yerel ve yönetilen ortamlar arasında verileri hazırlama, yeni, en iyi duruma getirilmiş bir yöntem sağlar. Daha fazla bilgi için bkz: [, genel bakış hazırlama c++](../dotnet/overview-of-marshaling-in-cpp.md).  
+ Konunun önceki kısımlarında belirtildiği gibi sıralama kitaplığı, yerel ve yönetilen ortamlar arasında veri hazırlama yeni ve en iyi duruma getirilmiş bir yöntem sağlar. Daha fazla bilgi için [Overview of Marshaling c++](../dotnet/overview-of-marshaling-in-cpp.md).  
   
 ## <a name="performance-considerations"></a>Başarım Değerlendirmeleri  
- PInvoke sahip 10 ile 30 arasında bir yükü x86 çağrı başına yönergeler. Bu sabit maliyet yanı sıra, sıralama ek yük oluşturur. Yönetilen ve yönetilmeyen kodunda aynı gösterimi varsa blittable türleri arasında hiçbir hazırlama maliyeti yoktur. Örneğin, int ve Int32 arasında maliyeti yoktur.  
+ PInvoke 10 ila 30 yüküne sahiptir x86 çağrı başına yönergeleri. Bu sabit maliyete ek olarak, sıralama ek yük oluşturur. Yönetilen ve yönetilmeyen kod içinde aynı gösterimi içeren Taşınabilir türler arasında hiçbir sıralama maliyeti yoktur. Örneğin, int ve Int32 arasında dönüştürme maliyeti yoktur.  
   
- Daha iyi performans için daha az veri çağrı başına sıralama daha fazla çağrı yerine mümkün olduğunca kadar veri sıralama daha az PInvoke çağrıları vardır.  
+ Daha iyi performans için çağrı başına daha az veri hazırlama daha fazla çağrı yerine, mümkün olduğunca kadar veri hazırlama daha az PInvoke çağrısına sahip olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)

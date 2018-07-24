@@ -14,15 +14,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7866d2960acdd89c3015470ef3971307ba162cd3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b79f7e7c181112877c795f3601e8211e70403563
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369503"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39207753"
 ---
 # <a name="bscmake-command-line"></a>BSCMAKE Komut Satırı
-BSCMAKE çalıştırmak için aşağıdaki komut satırı söz dizimini kullanın:  
+BSCMAKE çalıştırmak için aşağıdaki komut satırı sözdizimini kullanın:  
   
 ```  
 BSCMAKE [options] sbrfiles  
@@ -30,19 +30,19 @@ BSCMAKE [options] sbrfiles
   
  Seçenekler yalnızca görünebilir `options` komut satırında alan.  
   
- *Sbrfiles* alan derleyici veya derleyici tarafından oluşturulan bir veya daha fazla .sbr dosyaları belirtir. .Sbr dosyaları adları, boşluk ya da sekme ile ayırın. Uzantı belirtmeniz gerekir; Varsayılan yok. Dosya adı ile bir yolu belirtebilirsiniz ve işletim sistemi joker karakterleri kullanabilirsiniz (* ve?).  
+ *Sbrfiles* alan bir derleme veya derleyici tarafından oluşturulan bir veya daha fazla .sbr dosyaları belirtir. .Sbr dosyaları adları, boşluk veya sekme ile ayırın. Uzantı belirtmeniz gerekir; Varsayılan yok. Bir yol ile dosya adı belirtin ve işletim sistemi joker karakterleri kullanabilirsiniz (\* ve?).  
   
- Bir artımlı derleme sırasında özgün yapı parçası değildi yeni .sbr dosyaları belirtebilirsiniz. Gözatma bilgileri dosyası kalmasına tüm Katkıları istiyorsanız, ilk olarak .bsc dosyası oluşturmak için kullanılan (kesilmiş dosyaları dahil) tüm .sbr dosyaları belirtmeniz gerekir. .Sbr dosyası atlarsanız, o dosyanın katkı için gözatma bilgileri dosyası kaldırılır.  
+ Artımlı derleme sırasında özgün yapının bir parçası değildi yeni .sbr dosyaları belirtebilirsiniz. Tüm katkılar gözatma bilgisi dosyası içinde kalmasını istiyorsanız, .bsc dosyası oluşturmak için kullanılan (kesilmiş dosyaları dahil) tüm .sbr dosyaları belirtmeniz gerekir. .Sbr dosyası atlarsanız, gözatma bilgisi dosyası için bu dosyanın katkı kaldırılır.  
   
- Tam bir yapı için kesilmiş .sbr dosyası belirtmeyin. Tam bir yapı Katkıları tüm belirtilen .sbr dosyalarından gerektirir. Tam bir yapı gerçekleştirmeden önce Proje derlenir ve boş her dosya için yeni bir .sbr dosyası oluşturun.  
+ Kesilen .sbr dosyası için tam bir yapı belirtmeyin. Tam derleme Katkıları tüm belirtilen .sbr dosyalarını gerektirir. Tam derleme gerçekleştirmeden önce projeyi yeniden derleyin ve boş her dosya için yeni bir .sbr dosyası oluştur.  
   
- BSCMAKE MAIN.bsc üç .sbr dosyaları adlı bir dosya oluşturmak için şu komutu çalıştırır:  
+ BSCMAKE üç .sbr dosyaları MAIN.bsc adlı bir dosya oluşturmak için şu komutu çalıştırır:  
   
 ```  
 BSCMAKE main.sbr file1.sbr file2.sbr  
 ```  
   
- İlgili bilgi için bkz: [BSCMAKE komut dosyası](../../build/reference/bscmake-command-file-response-file.md) ve [BSCMAKE seçenekleri](../../build/reference/bscmake-options.md).  
+ İlgili bilgiler için bkz. [BSCMAKE komut dosyası](../../build/reference/bscmake-command-file-response-file.md) ve [BSCMAKE seçenekleri](../../build/reference/bscmake-options.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)

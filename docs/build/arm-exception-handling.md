@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef0756875a799aacaf7308c406d98cbbf3a9a2a2
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 2047938e25ed235d04b7a851a21a44090194660a
+ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027972"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39209124"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 
@@ -248,25 +248,25 @@ Aşağıdaki tabloda, geriye doğru izleme kodları eşleme işlem kodlarını g
 
 |1 bayt|2 bayt|Bayt 3|4 bayt|Opsize|Açıklama|
 |------------|------------|------------|------------|------------|-----------------|
-|00-7F||||16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x7F) * 4|
+|00-7F||||16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x7F) \* 4|
 |80 BF|00-FF|||32|`pop   {r0-r12, lr}`<br /><br /> Kod & 0x2000 ve r0-r12 karşılık gelen bit kod & 0x1FFF ayarlanırsa, POP, LR burada POP|
 |C0 CF||||16|`mov   sp,rX`<br /><br /> Kod & 0x0F X olduğu|
 |D0 D7 HÜCRESİNİ||||16|`pop   {r4-rX,lr}`<br /><br /> burada X, (kod & 0x03) + 4 ve LR, kaldırılmaz kod & 0x04|
 |DF D8||||32|`pop   {r4-rX,lr}`<br /><br /> burada X, (kod & 0x03) + 8 ve LR, kaldırılmaz kod & 0x04|
 |E0 E7||||32|`vpop  {d8-dX}`<br /><br /> X (kod & 0x07) burada + 8|
-|E8 EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> burada X, (kod & 0x03FF) * 4|
+|E8 EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> burada X, (kod & 0x03FF) \* 4|
 |EC-ED|00-FF|||16|`pop   {r0-r7,lr}`<br /><br /> Kod & 0x0100 ve r0-r7 karşılık gelen bit kod & 0x00FF ayarlanırsa, POP, LR burada POP|
 |EE|00-0F|||16|Microsoft'a özgü|
 |EE|10-FF|||16|Kullanılabilir|
-|EF|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> burada X, (kod & 0x000F) * 4|
+|EF|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> burada X, (kod & 0x000F) \* 4|
 |EF|10-FF|||32|Kullanılabilir|
 |F0 F4||||-|Kullanılabilir|
 |F5|00-FF|||32|`vpop  {dS-dE}`<br /><br /> (kod & 0x00F0) S olduğu >> 4 E ise kod & 0x000F|
 |F6|00-FF|||32|`vpop  {dS-dE}`<br /><br /> S olduğu ((Code & 0x00F0) >> 4) + 16 ve E (kod & 0x000F) + 16|
-|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFF) * 4|
-|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFFFF) * 4|
-|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFF) * 4|
-|FA|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFFFF) * 4|
+|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFF) \* 4|
+|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFFFF) \* 4|
+|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFF) \* 4|
+|FA|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFFFF) \* 4|
 |FB||||16|NOP (16-bit)|
 |FC||||32|NOP (32-bit)|
 |FD||||16|Son + 16 bit nop kapanış içinde|
@@ -751,3 +751,4 @@ Function:
 
 [ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)  
 [Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)  
+
