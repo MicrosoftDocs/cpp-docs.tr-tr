@@ -7,25 +7,31 @@ ms.technology:
 ms.topic: reference
 f1_keywords:
 - CDynamicStringAccessor
+- CDynamicStringAccessor.GetString
+- CDynamicStringAccessor::GetString
+- CDynamicStringAccessor::SetString
+- CDynamicStringAccessor.SetString
 dev_langs:
 - C++
 helpviewer_keywords:
 - CDynamicStringAccessor class
+- GetString method
+- SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1b8888bdac7d605ce1832ef7074955fab4893b33
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fd497c59bcdbaba2afc1571cf7509887a44bcd59
+ms.sourcegitcommit: b217daee32d3413cf33753d9b4dc35a0022b1bfa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33097604"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233446"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor Sınıfı
-Veritabanı şeması (veritabanının temel yapısı) olanağıyla varsa, bir veri kaynağına erişim sağlar.  
+Veritabanı şeması (veritabanı yapılarını) hiçbir bilgiye sahip olduğunda bir veri kaynağına erişim sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,29 +39,92 @@ Veritabanı şeması (veritabanının temel yapısı) olanağıyla varsa, bir ve
       template< typename BaseType, DBTYPEENUM OleDbType >  
 class CDynamicStringAccessorT : public CDynamicAccessor  
 ```  
+
   
+## <a name="requirements"></a>Gereksinimler  
+ **Üst bilgi**: atldbcli.h 
+
 ## <a name="members"></a>Üyeler  
   
 ### <a name="methods"></a>Yöntemler  
   
 |||  
 |-|-|  
-|[GetString](../../data/oledb/cdynamicstringaccessor-getstring.md)|Belirtilen sütun verileri dize olarak alır.|  
-|[SetString](../../data/oledb/cdynamicstringaccessor-setstring.md)|Belirtilen sütun veri dize olarak ayarlar.|  
+|[GetString](#getstring)|Belirtilen sütun verileri dize olarak alır.|  
+|[SetString](#setstring)|Belirtilen sütun verileri dize olarak ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sırada [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) sağlayıcı tarafından bildirilen yerel biçiminde veri istekleri `CDynamicStringAccessor` sağlayıcı dize veri olarak veri deposundan erişilen tüm veriler getirilemedi ister. Bu, özellikle görüntüleme ya da veri deposunun içeriği yazdırma gibi veri deposundaki değerlerin hesaplamasını gerektirmeyen basit görevler için kullanışlıdır.  
+ Sırada [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) sağlayıcı tarafından bildirilen yerel biçiminde veri istekleri `CDynamicStringAccessor` sağlayıcı dize verileri veri deposundan erişilen tüm verileri getirme ister. Bu, özellikle görüntüleme veya veri deposunun içeriği yazdırma gibi veri deposundaki değerleri hesaplama gerektirmeyen basit görevler için kullanışlıdır.  
   
- Yerel veri deposundaki sütun veri türü önemli değildir; Sağlayıcının veri dönüştürme destekleyebilir sürece, dize biçimindeki verileri kullanacaksınız. Sağlayıcı yerel veri türünden (hangi ortak değildir) bir dizeye dönüştürme desteklemiyorsa, istekte bulunan çağrı başarılı değeri döndürür **DB_S_ERRORSOCCURED**, ve karşılık gelen sütunun durumu bir dönüştürme sorun olduğunu gösteriyor **DBSTATUS_E_CANTCONVERTVALUE**.  
+ Yerel veri deposundaki sütunun veri türünü önemli değildir; Sağlayıcı veri dönüştürme destekleyebilir sürece, bu verileri dize biçiminde kullanacaksınız. Sağlayıcı (ortak değil) bir dizeyi yerel veri türünden dönüştürme desteklemiyorsa, istekte bulunan çağrı DB_S_ERRORSOCCURED başarı değeri döndürür ve dönüştürme sorun karşılık gelen sütununu durumunu gösterir DBSTATUS_E_CANTCONVERTVALUE.  
   
- Kullanım `CDynamicStringAccessor` sütun bilgileri almak için yöntemleri. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın.  
+ Kullanım `CDynamicStringAccessor` sütun bilgisi edinmek için. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın.  
   
- Sütun bilgileri oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Arabellek kullanımından verileri elde [GetString](../../data/oledb/cdynamicstringaccessor-getstring.md), veya arabellek kullanmaya mağaza [SetString](../../data/oledb/cdynamicstringaccessor-setstring.md).  
+ Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Veri arabelleği kullanımından elde [GetString](../../data/oledb/cdynamicstringaccessor-getstring.md), veya arabelleği kullanarak mağaza [SetString](../../data/oledb/cdynamicstringaccessor-setstring.md).  
   
  Bir tartışma ve dinamik erişimciyi sınıfları kullanma örnekleri için bkz: [Dinamik Erişimcileri Kullanma](../../data/oledb/using-dynamic-accessors.md).  
+
+## <a name="getstring"></a> CDynamicStringAccessor::GetString
+Belirtilen sütun verileri dize olarak alır.  
   
-## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi**: atldbcli.h  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+      BaseType* GetString(DBORDINAL nColumn) const throw();  
+
+BaseType* GetString(const CHAR* pColumnName) const throw();  
+
+BaseType* GetString(const WCHAR* pColumnName) const throw();  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ *nColumn*  
+ [in] Sütun numarası. Sütun numaraları 1 ile başlayın. 0 değeri, varsa, yer işareti sütunu, ifade eder.  
+  
+ *pColumnName*  
+ [in] Sütun adı içeren bir karakter dizesine bir işaretçi.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ Dize işaretçisine belirtilen sütunundan alınır. Değer türünde `BaseType`, olacak **CHAR** veya **WCHAR** _UNICODE veya tanımlı olup olmadığı bağlı olarak. Belirtilen sütun bulunamazsa NULL değer döndürür.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İkinci sütun adı formu alır bir ANSI dizesine geçersiz. Üçüncü bir Unicode dize olarak sütun adı formu alır geçersiz.  
+ 
+## <a name="setstring"></a> CDynamicStringAccessor::SetString
+Belirtilen sütun verileri dize olarak ayarlar.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+HRESULT SetString(DBORDINAL nColumn,  
+  BaseType* data) throw();  
+
+
+HRESULT SetString(const CHAR* pColumnName,  
+   BaseType* data) throw();  
+
+
+HRESULT SetString(const WCHAR* pColumnName,  
+   BaseType* data) throw();  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ *nColumn*  
+ [in] Sütun numarası. Sütun numaraları 1 ile başlayın. Özel değeri 0 için yer işareti sütunu, varsa ifade eder.  
+  
+ *pColumnName*  
+ [in] Sütun adı içeren bir karakter dizesine bir işaretçi.  
+  
+ *Veri*  
+ [in] Belirtilen sütuna yazılacak dize verileri için bir işaretçi.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ Belirtilen sütun kümesi dize değeri için bir işaretçi. Değer türünde `BaseType`, olacak **CHAR** veya **WCHAR** _UNICODE veya tanımlı olup olmadığı bağlı olarak.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İkinci form alır sütun adı olarak bir ANSI dizesine geçersiz kılma ve üçüncü bir Unicode dize olarak sütun adı formu alır geçersiz kılın.  
+  
+ Sıfır olmayan bir değer olmasını _SECURE_ATL tanımlanırsa, bir çalışma zamanı onaylama işlemi hatası oluşturulur giriş *veri* dizedir başvurulan veri sütununun maksimum izin verilen uzunluktan daha uzun. Aksi takdirde, giriş dizesi, izin verilen uzunluk üst sınırından daha uzun olması durumunda kesilecek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
