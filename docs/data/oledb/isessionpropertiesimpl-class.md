@@ -7,25 +7,33 @@ ms.technology:
 ms.topic: reference
 f1_keywords:
 - ISessionPropertiesImpl
+- ISessionPropertiesImpl::GetProperties
+- ISessionPropertiesImpl.GetProperties
+- GetProperties
+- ISessionPropertiesImpl.SetProperties
+- SetProperties
+- ISessionPropertiesImpl::SetProperties
 dev_langs:
 - C++
 helpviewer_keywords:
 - ISessionPropertiesImpl class
+- GetProperties method
+- SetProperties method
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 62b1321c9d7d50ff2cd459b395efa1e8147a06ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a3759b67ef5d9ee9832649b3b0d516dbfb04440b
+ms.sourcegitcommit: e5792fcb89b9ba64c401f90f4f26a8e45d4a2359
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106056"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39322026"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
-Bir uygulamasını sağlar [ISessionProperties](https://msdn.microsoft.com/en-us/library/ms713721.aspx) arabirimi.  
+Bir uygulamasını sağlar [ISessionProperties](https://msdn.microsoft.com/library/ms713721.aspx) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,12 +44,15 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
    public CUtlProps<PropClass>  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
+### <a name="parameters"></a>Parametreler  
+ *T*  
  Sınıfınız, türetilen `ISessionPropertiesImpl`.  
   
- `PropClass`  
- Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı `T`.  
+ *PropClass*  
+ Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*.  
+
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -49,14 +60,39 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
   
 |||  
 |-|-|  
-|[GetProperties](../../data/oledb/isessionpropertiesimpl-getproperties.md)|Oturumda şu anda ayarlanmış oturum özellik grubundaki özellikler listesini döndürür.|  
-|[SetProperties](../../data/oledb/isessionpropertiesimpl-setproperties.md)|Oturum özellik grubundaki özellikleri ayarlar.|  
+|[GetProperties](#getproperties)|Şu anda oturumda ayarlanan oturumu özellik grubundaki özelliklerinin listesini döndürür.|  
+|[SetProperties](#setproperties)|Oturum özellik grubundaki özellikleri ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Oturumlar üzerinde zorunlu bir arabirim. Bu sınıf tarafından tanımlanan statik işlevini çağırarak oturum özellikleri uygulayan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md). Özellik kümesi eşlemesini oturum sınıfınızda belirtilmesi gerekir.  
+ Oturumlarının üzerinde zorunlu bir arabirim. Bu sınıf tarafından tanımlanan statik bir işlev çağırarak oturum özellikleri uygulayan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md). Özellik kümesi eşlemesi oturumu Sınıfınız içinde belirtilmelidir.  
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+## <a name="getproperties"></a> Isessionpropertiesımpl::GetProperties
+Özellikler listesini döndürür `DBPROPSET_SESSION` oturumda ayarlanan özellik grubu.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+      STDMETHOD(GetProperties)(ULONG cPropertyIDSets,   
+   const DBPROPIDSET rgPropertyIDSets[],   
+   ULONG * pcPropertySets,   
+   DBPROPSET ** prgPropertySets);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ Bkz: [ISessionProperties::GetProperties](https://msdn.microsoft.com/library/ms723643.aspx) içinde *OLE DB Programcının Başvurusu*. 
+
+## <a name="setproperties"></a> Isessionpropertiesımpl::SetProperties
+Ayarlar özellikleri `DBPROPSET_SESSION` özellik grubu.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+   DBPROPSET rgPropertySets[]);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ Bkz: [ISessionProperties::SetProperties](https://msdn.microsoft.com/library/ms714405.aspx) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   

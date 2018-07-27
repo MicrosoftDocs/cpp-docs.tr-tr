@@ -11,25 +11,34 @@ f1_keywords:
 - ATL::IRowsetCreatorImpl<T>
 - ATL.IRowsetCreatorImpl<T>
 - IRowsetCreatorImpl
+- IRowsetCreatorImpl.SetSite
+- IRowsetCreatorImpl<T>::SetSite
+- IRowsetCreatorImpl::SetSite
+- SetSite
+- ATL.IRowsetCreatorImpl.SetSite
+- ATL::IRowsetCreatorImpl<T>::SetSite
+- ATL::IRowsetCreatorImpl::SetSite
+- ATL.IRowsetCreatorImpl<T>.SetSite
 dev_langs:
 - C++
 helpviewer_keywords:
 - IRowsetCreatorImpl class
+- SetSite method
 ms.assetid: 92cc950f-7978-4754-8d9a-defa63867d82
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0492994193130ffa6a547691490b4da1ae557c8f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b8d43c0824b2f4783b9a09782360940fb1327d99
+ms.sourcegitcommit: e5792fcb89b9ba64c401f90f4f26a8e45d4a2359
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33102143"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39322065"
 ---
 # <a name="irowsetcreatorimpl-class"></a>IRowsetCreatorImpl Sınıfı
-Aynı işlevleri gerçekleştiren `IObjectWithSite` ancak OLE DB özellikleri de etkinleştirir **DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS**.  
+Aynı işlevleri gerçekleştiren `IObjectWithSite` ancak OLE DB özelliklerini de etkinleştirir `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS`.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,9 +48,12 @@ class ATL_NO_VTABLE IRowsetCreatorImpl
    : public IObjectWithSiteImpl< T >  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Öğesinden türetilmiş bir sınıf **IRowsetCreator**.  
+### <a name="parameters"></a>Parametreler  
+ *T*  
+ Öğesinden türetilen bir sınıf `IRowsetCreator`.  
+
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -49,14 +61,30 @@ class ATL_NO_VTABLE IRowsetCreatorImpl
   
 |||  
 |-|-|  
-|[SetSite](../../data/oledb/irowsetcreatorimpl-setsite.md)|Satır kümesi nesnesi içeren siteyi ayarlar.|  
+|[SetSite](#setsite)|Satır kümesi nesnesi içeren siteyi ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf devraldığı [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) ve geçersiz kılmalar [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869). Bir satır kümesi sağlayıcı komutu veya oturum nesnesi oluşturduğunda, çağıran `QueryInterface` aramakta satır kümesi nesnesi üzerinde `IObjectWithSite` ve çağrıları `SetSite` satır kümesi nesnenin geçirme **IUnkown** arabirimi site arabirim olarak.  
+ Bu sınıf devraldığı [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) ve geçersiz kılmaları [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869). Bir satır kümesi sağlayıcı komut veya oturum nesnesi oluşturur, onu çağırır `QueryInterface` örnek kod satır kümesi nesnesi üzerinde `IObjectWithSite` ve çağrıları `SetSite` satır kümesi nesnenin geçirme `IUnkown` arabirimi site arabirim olarak.  
+
+## <a name="setsite"></a> Irowsetcreatorımpl::setsite
+Satır kümesi nesnesi içeren siteyi ayarlar. Daha fazla bilgi için [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869).  
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+### <a name="syntax"></a>Sözdizimi  
   
+```cpp
+      STDMETHOD(SetSite )(IUnknown* pCreator);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ *pCreator*  
+ [in] İşaretçi `IUnknown` satır kümesi nesnesi yönetme sitenin arabirim işaretçisi.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ Standart bir HRESULT.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Ayrıca, `IRowsetCreatorImpl::SetSite` OLE DB sağlayan `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS` özellikleri. 
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
