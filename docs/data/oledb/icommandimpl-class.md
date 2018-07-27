@@ -7,25 +7,71 @@ ms.technology:
 ms.topic: reference
 f1_keywords:
 - ICommandImpl
+- ICommandImpl::Cancel
+- Cancel
+- ICommandImpl.Cancel
+- ICommandImpl::CancelExecution
+- ATL::ICommandImpl::CancelExecution
+- ATL.ICommandImpl.CancelExecution
+- CancelExecution
+- ICommandImpl.CancelExecution
+- ICommandImpl::CreateRowset
+- ICommandImpl.CreateRowset
+- CreateRowset
+- ICommandImpl::Execute
+- ICommandImpl.Execute
+- ICommandImpl::GetDBSession
+- GetDBSession
+- ICommandImpl.GetDBSession
+- ATL.ICommandImpl.ICommandImpl
+- ATL::ICommandImpl::ICommandImpl
+- ICommandImpl
+- ICommandImpl::ICommandImpl
+- ICommandImpl.ICommandImpl
+- ICommandImpl::m_bCancel
+- ICommandImpl.m_bCancel
+- m_bCancel
+- ATL::ICommandImpl::m_bCancel
+- ATL.ICommandImpl.m_bCancel
+- ICommandImpl::m_bCancelWhenExecuting
+- ICommandImpl.m_bCancelWhenExecuting
+- ATL::ICommandImpl::m_bCancelWhenExecuting
+- m_bCancelWhenExecuting
+- ATL.ICommandImpl.m_bCancelWhenExecuting
+- ICommandImpl.m_bIsExecuting
+- ATL::ICommandImpl::m_bIsExecuting
+- m_bIsExecuting
+- ATL.ICommandImpl.m_bIsExecuting
+- ICommandImpl::m_bIsExecuting
 dev_langs:
 - C++
 helpviewer_keywords:
 - ICommandImpl class
+- Cancel method
+- CancelExecution method
+- CreateRowset method
+- Execute method
+- GetDBSession method
+- ICommandImpl constructor
+- ICommandImpl class, constructor
+- m_bCancel
+- m_bCancelWhenExecuting
+- m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d69ff56ec92fd3acb622aa4c0399893fb44c4d1d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 18174281baf76b383b56b10e86e2659279037b6c
+ms.sourcegitcommit: b0d6777cf4b580d093eaf6104d80a888706e7578
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33101149"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39269605"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
-Uygulamasını sağlar [ICommand](https://msdn.microsoft.com/en-us/library/ms709737.aspx) arabirimi.  
+Uygulamasını sağlar [ICommand](https://msdn.microsoft.com/library/ms709737.aspx) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,12 +80,15 @@ template <class T, class CommandBase = ICommand>
 class ATL_NO_VTABLE ICommandImpl : public CommandBase  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
+### <a name="parameters"></a>Parametreler  
+ *T*  
  Sınıfınız, türetilen `ICommandImpl`.  
   
- `CommandBase`  
+ *CommandBase*  
  Bir komut arabirimi. Varsayılan, `ICommand` değeridir.  
+
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -47,26 +96,178 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
   
 |||  
 |-|-|  
-|[CancelExecution](../../data/oledb/icommandimpl-cancelexecution.md)|Geçerli komut yürütme iptal eder.|  
-|[İptal Etme](../../data/oledb/icommandimpl-cancel.md)|Geçerli komut yürütme iptal eder.|  
-|[CreateRowset](../../data/oledb/icommandimpl-createrowset.md)|Bir satır kümesi nesnesi oluşturur.|  
-|[Yürütme](../../data/oledb/icommandimpl-execute.md)|Komut yürütür.|  
-|[GetDBSession](../../data/oledb/icommandimpl-getdbsession.md)|Arabirim işaretçisi komutu oluşturulan oturumuna döndürür.|  
-|[Icommandımpl](../../data/oledb/icommandimpl-icommandimpl.md)|Oluşturucu.|  
+|[İptal Etme](#cancel)|Geçerli komut yürütme iptal eder.|  
+|[CancelExecution](#cancelexecution)|Geçerli komut yürütme iptal eder.|  
+|[CreateRowset](#createrowset)|Bir satır kümesi nesnesi oluşturur.|  
+|[Yürütme](#execute)|Komutu yürütür.|  
+|[GetDBSession](#getdbsession)|Komutu tarafından oluşturulan oturuma bir arabirim işaretçisini döndürür.|  
+|[Icommandımpl](#icommandimpl)|Oluşturucu.|  
   
 ### <a name="data-members"></a>Veri üyeleri  
   
 |||  
 |-|-|  
-|[m_bCancel](../../data/oledb/icommandimpl-m-bcancel.md)|Komut iptal edilmesi olup olmadığını gösterir.|  
-|[m_bCancelWhenExecuting](../../data/oledb/icommandimpl-m-bcancelwhenexecuting.md)|Komut yürütülürken iptal edilmesi olup olmadığını gösterir.|  
-|[m_bIsExecuting](../../data/oledb/icommandimpl-m-bisexecuting.md)|Komut şu anda yürütülmekte olup olmadığını gösterir.|  
+|[m_bCancel](#bcancel)|Komut iptal edilebilir olup olmadığını belirtir.|  
+|[m_bCancelWhenExecuting](#bcancelwhenexecuting)|Komutu yürütürken iptal edilebilir olup olmadığını belirtir.|  
+|[m_bIsExecuting](#bisexecuting)|Komut yürütülmekte olmadığını gösterir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Komut nesnesi üzerinde zorunlu bir arabirim.  
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+## <a name="cancel"></a> Icommandımpl::Cancel
+Geçerli komut yürütme iptal eder.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+STDMETHOD(Cancel)();  
+  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Bkz: [ICommand::Cancel](https://msdn.microsoft.com/library/ms714402.aspx) içinde *OLE DB Programcının Başvurusu*.  
+
+## <a name="cancelexecution"></a> Icommandımpl::cancelexecution
+Geçerli komut yürütme iptal eder.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+HRESULT CancelExecution();  
+  
+```  
+
+## <a name="createrowset"></a> Icommandımpl::createrowset
+Çağıran [yürütme](../../data/oledb/icommandimpl-execute.md) tek bir satır kümesi oluşturmak için.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+      template template <class RowsetClass  
+      >  
+HRESULT CreateRowset(IUnknown* pUnkOuter,  
+   REFIID riid,  
+   DBPARAMS* pParams,  
+   DBROWCOUNT* pcRowsAffected,  
+   IUnknown** ppRowset,  
+   RowsetClass*& pRowsetObj);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ *RowsetClass*  
+ Kullanıcının satır kümesi sınıfı temsil eden bir şablon sınıfı üyesinin. Genellikle sihirbaz tarafından oluşturulan.  
+  
+ *pUnkOuter*  
+ [in] Denetlemek için bir işaretçi `IUnknown` bir toplamanın parçası satır kümesi oluşturuluyorsa arabirim; Aksi takdirde null olur.  
+  
+ *riid*  
+ [in] Karşılık gelen *riid* içinde `ICommand::Execute`.  
+  
+ *pParams*  
+ [daraltma/genişletme] Karşılık gelen *pParams* içinde `ICommand::Execute`.  
+  
+ *pcRowsAffected*  
+ Karşılık gelen *pcRowsAffected* içinde `ICommand::Execute`.  
+  
+ *ppRowset*  
+ [daraltma/genişletme] Karşılık gelen *ppRowset* içinde `ICommand::Execute`.  
+  
+ *pRowsetObj*  
+ [out] Bir satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak, daha fazla iş satır kümesinde bir COM nesnesine iletmeden önce gerçekleştirmeniz gerekirse kullanılabilir. Ömrünü *pRowsetObj* bağlı olan *ppRowset*.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ Standart bir HRESULT değerini. Bkz: `ICommand::Execute` genel değerler listesi.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Birden fazla satır kümesi oluşturmak için ya da farklı satır kümeleri oluşturmak için kendi koşulları sağlamak için farklı çağrıları yerleştirin `CreateRowset` içinden `Execute`.  
+  
+ Bkz: [ICommand::Execute](https://msdn.microsoft.com/library/ms718095.aspx) içinde *OLE DB Programcının Başvurusu.*  
+
+## <a name="execute"></a> Icommandımpl::Execute
+Komutu yürütür.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+HRESULT Execute(IUnknown* pUnkOuter,  
+   REFIID riid,  
+   DBPARAMS* pParams,  
+   DBROWCOUNT* pcRowsAffected,  
+   IUnknown** ppRowset);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ Bkz: [ICommand::Execute](https://msdn.microsoft.com/library/ms718095.aspx) içinde *OLE DB Programcının Başvurusu*.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ İstenen giden arabirimi bu işlevi oluşturan satır kümesi nesnesinden alınan bir arabirim olacaktır.  
+  
+ `Execute` çağrıları [CreateRowset](../../data/oledb/icommandimpl-createrowset.md). Varsayılan uygulama birden fazla satır kümesi oluşturun veya farklı satır kümeleri oluşturmak için kendi koşulları sağlamak için geçersiz kılın.  
+
+## <a name="getdbsession"></a> Icommandımpl::getdbsession
+Komutu tarafından oluşturulan oturuma bir arabirim işaretçisini döndürür.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+      STDMETHOD (GetDBSession) (REFIID riid,  
+   IUnknown** ppSession);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ Bkz: [ICommand::GetDBSession](https://msdn.microsoft.com/library/ms719622.aspx) içinde *OLE DB Programcının Başvurusu*.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Oturumdan özellikleri almak için yararlıdır.  
+
+## <a name="icommandimpl"></a> Icommandımpl::ıcommandımpl
+Oluşturucu.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+ICommandImpl();  
+  
+```  
+
+## <a name="bcancel"></a> Icommandımpl::m_bcancel
+Komut iptal olup olmadığını gösterir.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+unsigned m_bCancel:1;  
+  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Bu değişkeni, alabilirsiniz `Execute` komut sınıfı ve uygun şekilde iptal yöntemi. 
+
+## <a name="bcancelwhenexecuting"></a> Icommandımpl::m_bcancelwhenexecuting
+Komutu yürütürken iptal edilebilir olup olmadığını gösterir.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+unsigned m_bCancelWhenExecuting:1;  
+  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Varsayılan olarak **true** (iptal edilebilir).  
+
+## <a name="bisexecuting"></a> Icommandımpl::m_bısexecuting
+Komut yürütülmekte olmadığını gösterir.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+unsigned m_bIsExecuting:1;  
+  
+```  
+  
+### <a name="remarks"></a>Açıklamalar  
+ `Execute` Komutu sınıfınızın yöntemi bu değişkeni ayarlayabilirsiniz **true**. 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   

@@ -11,25 +11,29 @@ f1_keywords:
 - ATL.IGetDataSourceImpl
 - ATL::IGetDataSourceImpl
 - ATL::IGetDataSourceImpl<T>
+- GetDataSource
+- IGetDataSourceImpl.GetDataSource
+- IGetDataSourceImpl::GetDataSource
 dev_langs:
 - C++
 helpviewer_keywords:
 - IGetDataSourceImpl class
+- GetDataSource method
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 50ffa3f176bbd5691a3ea0bc4e23aa8245712e17
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 558578a82f1906d7481abebc5e1f1719b1983724
+ms.sourcegitcommit: b0d6777cf4b580d093eaf6104d80a888706e7578
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33101116"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39269943"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl Sınıfı
-Bir uygulamasını sağlar [IGetDataSource](https://msdn.microsoft.com/en-us/library/ms709721.aspx) nesnesi.  
+Bir uygulamasını sağlar [IGetDataSource](https://msdn.microsoft.com/library/ms709721.aspx) nesne.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,9 +42,12 @@ template <class T>
 class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
+### <a name="parameters"></a>Parametreler  
+ *T*  
  Sınıfınız, türetilen `IGetDataSourceImpl`.  
+
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -48,13 +55,26 @@ class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
   
 |||  
 |-|-|  
-|[GetDataSource](../../data/oledb/igetdatasourceimpl-getdatasource.md)|Arabirim işaretçisi oturum oluşturduğunuz veri kaynağı nesnesi döndürür.|  
+|[GetDataSource](#getdatasource)|Bir arabirim işaretçisi oturum oluşturduğunuz veri kaynağı nesnesi döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu zorunlu bir arabirim veri kaynağı nesnesi için bir arabirim işaretçisi alma oturumu açıktır.  
+ Veri kaynağı nesnesi için bir arabirim işaretçisini almak için oturum zorunlu bir arabirim budur.  
+
+## <a name="getdatasource"></a> Igetdatasourceımpl::getdatasource
+Bir arabirim işaretçisi oturum oluşturduğunuz veri kaynağı nesnesi döndürür.  
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+      STDMETHOD(GetDataSource)(REFIID riid,   
+   IUnknown ** ppDataSource);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ Bkz: [IGetDataSource::GetDataSource](https://msdn.microsoft.com/library/ms725443.aspx) içinde *OLE DB Programcının Başvurusu*.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Veri kaynağı nesnesinin özelliklerine erişmek istiyorsanız kullanışlıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   

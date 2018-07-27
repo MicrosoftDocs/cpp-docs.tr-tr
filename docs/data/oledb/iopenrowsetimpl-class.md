@@ -7,22 +7,30 @@ ms.technology:
 ms.topic: reference
 f1_keywords:
 - IOpenRowsetImpl
+- IOpenRowsetImpl.CreateRowset
+- IOpenRowsetImpl::CreateRowset
+- CreateRowset
+- OpenRowset
+- IOpenRowsetImpl::OpenRowset
+- IOpenRowsetImpl.OpenRowset
 dev_langs:
 - C++
 helpviewer_keywords:
 - IOpenRowsetImpl class
+- CreateRowset method
+- OpenRowset method
 ms.assetid: d259cedc-1db4-41cf-bc9f-5030907ab486
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dd34987fcff3bee663a06276e3ded3c44d7ae77c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd3281aa21cfd20caa902572e9ad39e16a18e6f6
+ms.sourcegitcommit: b0d6777cf4b580d093eaf6104d80a888706e7578
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33102091"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39269832"
 ---
 # <a name="iopenrowsetimpl-class"></a>IOpenRowsetImpl Sınıfı
 Uygulamasını sağlar `IOpenRowset` arabirimi.  
@@ -34,9 +42,12 @@ template <class SessionClass>
 class IOpenRowsetImpl : public IOpenRowset  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `SessionClass`  
+### <a name="parameters"></a>Parametreler  
+ *SessionClass*  
  Sınıfınız, türetilen `IOpenRowsetImpl`.  
+
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -44,14 +55,59 @@ class IOpenRowsetImpl : public IOpenRowset
   
 |||  
 |-|-|  
-|[CreateRowset](../../data/oledb/iopenrowsetimpl-createrowset.md)|Bir satır kümesi nesnesi oluşturur. Doğrudan kullanıcı tarafından adı değil.|  
-|[OpenRowset](../../data/oledb/iopenrowsetimpl-openrowset.md)|Açılır ve tek bir temel tablo veya dizini tüm satırları içeren bir satır kümesi döndürür. (ATLDB içinde değil. Y)|  
+|[CreateRowset](#createrowset)|Bir satır kümesi nesnesi oluşturur. Doğrudan kullanıcı tarafından çağrılır değil.|  
+|[OpenRowset](#openrowset)|Açar ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür. (ATLDB içinde değil. H)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IOpenRowset](https://msdn.microsoft.com/en-us/library/ms716946.aspx) arabirimi için bir oturum nesnesi zorunludur. Açılır ve tek bir temel tablo veya dizini tüm satırları içeren bir satır kümesi döndürür.  
+ [IOpenRowset](https://msdn.microsoft.com/library/ms716946.aspx) arabirimi için bir oturum nesnesi zorunludur. Bu açılır ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür.  
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+## <a name="createrowset"></a> Iopenrowsetımpl::createrowset
+Bir satır kümesi nesnesi oluşturur. Doğrudan kullanıcı tarafından çağrılır değil. Bkz: [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) içinde *OLE DB Programcının Başvurusu.*  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+      template template <class RowsetClass  
+      >  
+HRESULT CreateRowset(IUnknown* pUnkOuter,  
+   DBID* pTableID,  
+   DBID* pIndexID,  
+   REFIID riid,  
+   ULONG cPropertySets,  
+   DBPROPSET rgPropertySets[],  
+   IUnknown** ppRowset,  
+   RowsetClass*& pRowsetObj);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ *RowsetClass*  
+ Kullanıcının satır kümesi sınıfı temsil eden bir şablon sınıfı üyesinin. Genellikle sihirbaz tarafından oluşturulan.  
+  
+ *pRowsetObj*  
+ [out] Bir satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak, daha fazla iş satır kümesinde bir COM nesnesine iletmeden önce gerçekleştirmeniz gerekirse kullanılabilir. Ömrünü *pRowsetObj* bağlı olan *ppRowset*.  
+  
+ Diğer parametreler için bkz: [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) içinde *OLE DB Programcının Başvurusu.*  
+
+## <a name="openrowset"></a> Iopenrowsetımpl::OPENROWSET
+Açar ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür.  
+  
+### <a name="syntax"></a>Sözdizimi  
+  
+```cpp
+HRESULT OpenRowset(IUnknown* pUnkOuter,  
+   DBID* pTableID,  
+   DBID* pIndexID,  
+   REFIID riid,  
+   ULONG cPropertySets,  
+   DBPROPSET rgPropertySets[],  
+   IUnknown** ppRowset);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ Bkz: [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) içinde *OLE DB Programcının Başvurusu*.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Bu yöntem ATLDB içinde bulunamadı. H Sağlayıcı oluşturduğunuzda ATL nesnesi Sihirbazı tarafından oluşturulur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
