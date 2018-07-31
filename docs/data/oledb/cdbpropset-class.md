@@ -44,12 +44,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6e8415fdac405f0a639b03cc90a710214d2c8d0c
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 15a1506980519880652abc637549ec2c7bf17e1d
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207844"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337603"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 Devralınan `DBPROPSET` yapısı ve anahtar alanları başlatan bir oluşturucu ekler ve `AddProperty` erişim yöntemi.  
@@ -136,7 +136,7 @@ Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alan
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      CDBPropSet(const GUID& guid);  
+CDBPropSet(const GUID& guid);  
 
 CDBPropSet(const CDBPropSet& propset);  
 
@@ -156,7 +156,7 @@ Kümeleri `guidPropertySet` alanındaki `DBPROPSET` yapısı.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      void SetGUID(const GUID& guid) throw();  
+void SetGUID(const GUID& guid) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -172,7 +172,7 @@ Bir özellik için başka bir özellik set içeriğini atar.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      CDBPropSet& operator =(CDBPropSet& propset) throw();  
+CDBPropSet& operator =(CDBPropSet& propset) throw();  
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 15355d156b3c85c8f99ba638b30f831da96686af
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32d969ae0c54e529c53ff35f7d6c84421e848d6c
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33107109"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339109"
 ---
 # <a name="record-view-code-created-by-application-wizard--mfc-data-access"></a>Uygulama Sihirbazı (MFC veri erişimi)'ın oluşturduğu kayıt görünümü kodu
-[MFC Uygulama Sihirbazı'nı](../mfc/reference/database-support-mfc-application-wizard.md) görünümün geçersiz kılmaları `OnInitialUpdate` ve `OnGetRecordset` üye işlevleri. Çerçeve penceresi, belge ve görünüm framework oluşturduktan sonra çağırır `OnInitialUpdate` görünümü başlatılamadı. `OnInitialUpdate` bir işaretçi kayıt kümesine belgeden alır. Taban sınıfı için bir çağrı [CView::OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) işlevi kayıt kümesi açar. Bu işlem için aşağıdaki kodu gösterir bir `CRecordView`:  
+[MFC Uygulama Sihirbazı](../mfc/reference/database-support-mfc-application-wizard.md) görünüm geçersiz kılmaları `OnInitialUpdate` ve `OnGetRecordset` üye işlevleri. Çerçeve penceresi, belge ve görünüm framework oluşturduktan sonra çağırdığı `OnInitialUpdate` görünümü başlatılamadı. `OnInitialUpdate` bir işaretçi kayıt kümesine belgeden alır. Temel sınıf için bir çağrı [CView::OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) işlevi kayıt açar. Bu işlem için aşağıdaki kodda gösterildiği bir `CRecordView`:  
   
-```  
+```cpp  
 void CSectionForm::OnInitialUpdate()  
 {  
    m_pSet = &GetDocument()->m_sectionSet;  
@@ -35,10 +35,10 @@ void CSectionForm::OnInitialUpdate()
 }  
 ```  
   
- Kayıt kümesi açıldığında kayıtları seçer. [CRecordset::Open](../mfc/reference/crecordset-class.md#open) geçerli kayıt ve denetimleri form görünümü içinde karşılık gelen DDX taşır verilerden kayıt kümesinin alan veri üyeleri ilk kaydı yapar. RFX hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md). DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md). Belge/görünüm oluşturma işlemi hakkında daha fazla bilgi için bkz: [yazma uygulamaları Windows için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md).  
+ Kayıt kümesi açıldığında kayıt seçer. [CRecordset::Open](../mfc/reference/crecordset-class.md#open) geçerli kayıt ve form denetimi Görünümü'nde ilgili DDX taşır verilerden kümesinin alan veri üyeleri ilk kaydı yapar. RFX hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi (RFX)](../data/odbc/record-field-exchange-rfx.md). DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md). Belge/görünüm oluşturma işlemi hakkında daha fazla bilgi için bkz. [yazma uygulamaları için Windows için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md).  
   
 > [!NOTE]
->  Son kullanıcılarınıza kayıt kümesindeki kayıt görünümü denetimleri yenileme olanağı vermesi gerekir. Bir kullanıcı için geçersiz bir değer, bir denetimin değeri değişirse bu yetenek olmadan kullanıcının kalıcı olarak geçerli kayıtta takılabilir. Denetimleri yenilemek için arama `CWnd` üye işlevi [UpdateData](../mfc/reference/cwnd-class.md#updatedata) bir parametresi ile **FALSE**.  
+>  Son kullanıcılarınızı kayıt kümesindeki kayıt görüntüleme denetimlerini Yenile olanağı vermesi gerekir. Bir kullanıcı için geçersiz bir değer, bir denetimin değeri değişirse bu yetenek olmadan kullanıcı kalıcı olarak geçerli kayıt için takılabilir. Denetimleri yenilemek için çağrı `CWnd` üye işlevi [UpdateData](../mfc/reference/cwnd-class.md#updatedata) parametresi yanlış.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)

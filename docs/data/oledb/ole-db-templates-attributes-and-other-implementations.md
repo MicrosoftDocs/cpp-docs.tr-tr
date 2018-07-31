@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ef9baf43ded1533eb7f4962db7344f9dc1def0ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32d9356c5c223df723626cf6ac07a7b5fda368de
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111178"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340657"
 ---
 # <a name="ole-db-templates-attributes-and-other-implementations"></a>OLE DB Şablonları, Öznitelikler ve Diğer Uygulamalar
 ## <a name="atl-ole-db-templates"></a>ATL OLE DB Şablonları  
- OLE DB ATL (Etkin Şablon Kütüphanesi) parçası olan şablonları, yüksek performanslı OLE DB veritabanı teknolojisi birçok yaygın olarak kullanılan OLE DB arabirimlerini uygulayan sınıflar sağlayarak kullanmak kolaylaştırır. Yanı sıra bu şablon OLE DB Başlatıcı uygulamaları oluşturmak için sihirbaz desteği kitaplığı gelir.  
+ OLE DB ATL (Etkin Şablon Kütüphanesi) parçası olan şablonlar, yüksek performanslı OLE DB veritabanı teknoloji birçok yaygın olarak kullanılan bir OLE DB arabirimlerini uygulayan sınıflar sağlayarak kullanmak kolaylaştırır. Yanı sıra bu şablon OLE DB başlangıç uygulamaları oluşturmak için sihirbaz desteği kitaplığı gelir.  
   
  Bu şablon kitaplığı iki bölümden oluşur:  
   
--   **OLE DB Tüketici Şablonları** bir OLE DB istemci (tüketici) uygulamalarını gerçekleştirmek için kullanılır.  
+-   **OLE DB Tüketici Şablonları** OLE DB (tüketici) istemci uygulamalarını uygulamak için kullanılır.  
   
--   **OLE DB sağlayıcı şablonları** bir OLE DB sunucu (sağlayıcı) uygulamalarını gerçekleştirmek için kullanılır.  
+-   **OLE DB sağlayıcı şablonları** bir OLE DB sunucusu (sağlayıcı) uygulama uygulamak için kullanılır.  
   
- OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile bilgi sahibi olmanız. OLE DB ile bilmiyorsanız bkz [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/en-us/library/ms713643.aspx).  
+ OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/library/ms713643.aspx).  
   
  Daha fazla bilgi için şunları yapabilirsiniz:  
   
@@ -44,18 +44,18 @@ ms.locfileid: "33111178"
   
 -   Listesine bakın [OLE DB Tüketici sınıflar](../../data/oledb/ole-db-consumer-templates-reference.md) veya [OLE DB sağlayıcısı sınıfları](../../data/oledb/ole-db-provider-templates-reference.md).  
   
--   Listesine bakın [OLE DB Şablon örnekleri](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c).  
+-   Listesine bakın [OLE DB Şablon örnekleri](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c).  
   
--   Bkz: [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/en-us/library/ms713643.aspx) (SDK Windows'da).  
+-   Bkz: [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/library/ms713643.aspx) (içinde Windows SDK'sı).  
   
 ## <a name="ole-db-attributes"></a>OLE DB öznitelikleri  
- [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md) OLE DB tüketicileri oluşturmak için kolay bir yol sağlamak. OLE DB öznitelikleri göre kod yerleştirir [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-reference.md) çalışan OLE DB Tüketicileri ve sağlayıcıları oluşturmak için. Öznitelikler tarafından desteklenmeyen bir işlev belirtmeniz gerekiyorsa, OLE DB Şablonları öznitelikleri ile birlikte kodunuzda kullanabilirsiniz.  
+ [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md) OLE DB tüketicileri oluşturmak için kullanışlı bir yol sağlar. OLE DB özniteliklere göre kod ekleme [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-reference.md) çalışma OLE DB Tüketicileri ve sağlayıcıları oluşturmak için. Öznitelikleri tarafından desteklenmeyen bir işlev belirtmek gerekirse, OLE DB Şablonları öznitelikleri ile birlikte kodunuzda kullanabilirsiniz.  
   
 ## <a name="mfc-ole-db-classes"></a>MFC OLE DB sınıfları  
- MFC kitaplık bir sınıf, sahip [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md), denetimlerinde veritabanı kayıtları görüntüler. Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne ve alanlarını görüntüler `CRowset` iletişim şablonun denetimlerinde nesnesi. Ayrıca taşıma için varsayılan uygulamasını sağlar, ilk sonraki, önceki ya da son kaydını ve kayıtta şu anda Görünümü güncelleştirmek için bir arabirim. Daha fazla bilgi için bkz. `COleDBRecordView`.  
+ MFC Kitaplığı bir sınıfı olan [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md), denetimlerde veritabanı kayıtlarını görüntüleyen. Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne ve alanlarını görüntüler `CRowset` iletişim şablonun denetimlerinde nesne. Ayrıca taşımak için varsayılan bir uygulama sağlar, ilk İleri, önceki ya da son kaydını ve kayıtta şu anda Görünümü güncelleştirmek için bir arabirim. Daha fazla bilgi için bkz. `COleDBRecordView`.  
   
-## <a name="ole-db-sdk-interfaces"></a>OLE DB SDK arabirimleri  
- Burada OLE DB Şablonları OLE DB işlevselliği desteklemeyen durumlarda, OLE DB arabirimlerini kullanmanız gerekir. Daha fazla bilgi için bkz: [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/en-us/library/ms713643.aspx) Windows SDK'sındaki.  
+## <a name="ole-db-sdk-interfaces"></a>OLE DB SDK arabirimleriyle  
+ Burada OLE DB Şablonları, OLE DB işlevselliğini desteklemeyen durumlarda, OLE DB arabirimlerini kullanmanız gerekir. Daha fazla bilgi için [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/library/ms713643.aspx) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB programlama](../../data/oledb/ole-db-programming.md)   

@@ -102,12 +102,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 59793d206f8b53d57347070cbfccd6d98ff2c005
-ms.sourcegitcommit: e5792fcb89b9ba64c401f90f4f26a8e45d4a2359
+ms.openlocfilehash: 6cd6ec4bcee26c1e2fb558670c69d0130808c933
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321961"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338346"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl Sınıfı
 Bir uygulamasını sağlar `IRowset` arabirimi.  
@@ -177,7 +177,7 @@ Var olan bir satır işleyici için bir başvuru sayısı ekler.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,  
+STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBREFCOUNT rgRefCounts[],  
    DBROWSTATUS rgRowStatus[]);  
@@ -193,7 +193,7 @@ Bir yardımcı yöntemi tarafından aranır [GetNextRows](../../data/oledb/irows
   
 ```cpp
 HRESULT CreateRow(DBROWOFFSET lRowsOffset,  
-  DBCOUNTITEM& cRowsObtained,  
+   DBCOUNTITEM& cRowsObtained,  
    HROW* rgRows);  
 ```  
   
@@ -216,7 +216,7 @@ Satır satır kümesinin kopyadan verileri alır.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      STDMETHOD(GetData )(HROW hRow,  
+STDMETHOD(GetData )(HROW hRow,  
    HACCESSOR hAccessor,  
    void* pDstData);  
 ```  
@@ -239,7 +239,7 @@ Belirtilen alan için DBSTATUS durumu bayrakları döndürür.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      virtual DBSTATUS GetDBStatus(RowClass* currentRow,  
+virtual DBSTATUS GetDBStatus(RowClass* currentRow,  
    ATLCOLUMNINFO* columnNames);  
 ```  
   
@@ -259,7 +259,7 @@ Satırlar sıralı olarak, önceki konumdan hatırlamak getirir.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      STDMETHOD(GetNextRows )(HCHAPTER hReserved,  
+STDMETHOD(GetNextRows )(HCHAPTER hReserved,  
    DBROWOFFSET lRowsOffset,  
    DBROWCOUNT cRows,  
    DBCOUNTITEM* pcRowsObtained,  
@@ -276,7 +276,6 @@ Oluşturucu.
   
 ```cpp
 IRowsetImpl();  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -307,7 +306,7 @@ Satır serbest bırakır.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,  
+STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBROWOPTIONS rgRowOptions[],  
    DBREFCOUNT rgRefCounts[],  
@@ -323,7 +322,7 @@ Sonraki getirme konumunu ilk konumuna yeniden konumlandırır; diğer bir deyiş
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);  
+STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -338,7 +337,7 @@ Belirtilen alan için DBSTATUS durumu bayraklarını ayarlar.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,  
+virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,  
    RowClass* currentRow,  
    ATLCOLUMNINFO* columnInfo);  
 ```  
@@ -366,7 +365,6 @@ Bir sağlayıcının geri getirme destekleyip desteklemediğini gösterir.
   
 ```cpp
 unsigned m_bCanFetchBack:1;  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -379,7 +377,6 @@ Bir sağlayıcı, imleç kaydırma geriye doğru sahip olup olmadığını göst
   
 ```cpp
 unsigned  m_bCanScrollBack:1;  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -392,7 +389,6 @@ unsigned  m_bCanScrollBack:1;
   
 ```cpp
 unsigned m_bReset:1;  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -405,7 +401,6 @@ unsigned m_bReset:1;
   
 ```cpp
 DBROWOFFSET m_iRowset;  
-  
 ```  
 
 ## <a name="rgrowhandles"></a> Irowsetımpl::m_rgrowhandles
@@ -414,9 +409,7 @@ DBROWOFFSET m_iRowset;
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-MapClass  
- m_rgRowHandles;  
-  
+MapClass m_rgRowHandles;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  

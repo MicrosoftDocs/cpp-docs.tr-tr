@@ -19,15 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3110d20330d42fcb0816873ff3e8a25d1f8436ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0527f4b154b4b5d0dc07b2b152a3975f49746abf
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33097360"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336745"
 ---
 # <a name="cnoaccessor-class"></a>CNoAccessor Sınıfı
-Şablon bağımsız değişken kullanılan (`TAccessor`) için şablon sınıfları gibi `CCommand` ve `CTable`, erişimci sınıfı bağımsız değişken gerektirir.  
+Bir şablon bağımsız değişkeni kullanılabilir (`TAccessor`) için şablon sınıfları gibi `CCommand` ve `CTable`, bir erişimci sınıfında bağımsız değişken gerektirir.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,33 +36,33 @@ class CNoAccessor
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım `CNoAccessor` parametrelerini desteklemek veya sütunların çıktısı için sınıf istemediğinizde şablon bağımsız değişken olarak.  
+ Kullanım `CNoAccessor` parametrelerini veya sütunlarını çıkış desteklemeye sınıfı istemediğinizde bir şablon bağımsız değişkeni olarak.  
   
- `CNoAccessor` diğer erişimci sınıfı yöntemleri için her biri karşılık gelen aşağıdaki saplama yöntemlerini uygular:  
+ `CNoAccessor` karşılık gelen her biri için diğer erişimcisi sınıf yöntemleri aşağıdaki saptama yöntemleri uygular:  
   
--   **BindColumns** -sütunlar için erişimciler bağlar.  
+-   `BindColumns` -Sütunları için erişimciler bağlar.  
   
--   `BindParameters` -Oluşturulan parametreleri sütunları bağlar.  
+-   `BindParameters` -Sütun oluşturulan parametreleri bağlar.  
   
--   **Bağlama** -bağlamaları oluşturur.  
+-   `Bind` -Bağlamaları oluşturur.  
   
--   **Kapat** -erişimcisi kapatır.  
+-   `Close` -Erişimci kapatır.  
   
--   `ReleaseAccessors` -Sınıfı tarafından oluşturulan erişimciler serbest bırakır.  
+-   `ReleaseAccessors` -Sınıfı tarafından oluşturulan erişimcileri serbest bırakır.  
   
--   `FreeRecordMemory` -Herhangi bir sütundan boşaltılması gerek geçerli kayıttaki alan boşaltır.  
+-   `FreeRecordMemory` -Boşaltılması için gereken geçerli kayıt tüm sütunları bırakır.  
   
--   `GetColumnInfo` -Açılan satır kümesinden sütun bilgileri alır.  
+-   `GetColumnInfo` -Açık satır kümesinden sütun bilgileri alır.  
   
--   `GetNumAccessors` -Sınıfı tarafından oluşturulan erişimciler sayısını alır.  
+-   `GetNumAccessors` -Sınıfı tarafından oluşturulan erişimcileri sayısını alır.  
   
 -   `IsAutoAccessor` -Veri taşıma işlemi sırasında otomatik olarak için erişimci alınır true değerini döndürür.  
   
 -   `GetHAccessor` -Belirtilen bir erişimci erişimci tanıtıcısı alır.  
   
--   `GetBuffer` -İşaretçiyi yer işareti arabelleğe alır.  
+-   `GetBuffer` -Yer işareti arabellek için işaretçi alır.  
   
--   **NoBindOnNullRowset** -boş satır kümeleri Veri bağlamada engeller.  
+-   `NoBindOnNullRowset` -Boş satır kümeleri üzerinde veri bağlamasını engeller.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldbcli.h  

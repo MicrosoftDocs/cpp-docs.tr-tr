@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9309180b05a6d91e6749f80c7a7b717b1bc57526
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e1d6d3277f27c20f7b1c002590fd26e1e2f08eb7
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33107863"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340036"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>Dinamik Erişimciyi Geçersiz Kılma
-Kullandığınızda, dinamik erişimciyi gibi `CDynamicAccessor`, komut **açık** yöntemi, otomatik olarak açılan satır kümesinin sütun bilgileri temel alarak için bir erişimci oluşturur. Tam olarak nasıl sütunları bağlı denetlemek için dinamik erişimciyi geçersiz kılabilirsiniz.  
+Kullandığınızda, dinamik erişimciyi gibi `CDynamicAccessor`, komut `Open` açık satır kümesi sütunu bilgilere göre otomatik olarak temel için erişimci yöntemi oluşturur. Sütunları tam olarak nasıl ilişkili denetlemek için dinamik erişimciyi geçersiz kılabilirsiniz.  
   
- Dinamik erişimciyi geçersiz kılmak için geçirmek **false** son parametre olarak `CCommand::Open` yöntemi. Bu engeller **açık** erişimci otomatik olarak oluşturmasına. Ardından çağırabilirsiniz `GetColumnInfo` ve arama `AddBindEntry` bağlamak istediğiniz her bir sütun için. Aşağıdaki kod nasıl yapılacağını gösterir:  
+ Dinamik erişimciyi geçersiz kılma için geçirin **false** son parametre olarak `CCommand::Open` yöntemi. Bu engeller `Open` erişimci otomatik olarak oluşturmasını. Ardından çağırabilirsiniz `GetColumnInfo` ve çağrı `AddBindEntry` bağlamak istediğiniz her bir sütun için. Aşağıdaki kod nasıl yapılacağını gösterir:  
   
-```  
+```cpp  
 USES_CONVERSION;  
 double   dblProductID;  
   

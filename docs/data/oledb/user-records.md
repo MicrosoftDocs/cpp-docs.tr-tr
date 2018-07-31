@@ -26,21 +26,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aea6b4b2ebb1a02e4ef669b437fbe7eb30937f9b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8e9549070acf08e566110ea30f4a0259caeca047
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33109813"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339678"
 ---
 # <a name="user-records"></a>Kullanıcı Kayıtları
-Statik erişimci kullanmak için (öğesinden türetilen bir erişimci **CAccessor)**, bir kullanıcı kaydı, tüketici olmalıdır. Kullanıcı kaydını tanıtıcı giriş veya çıkış veri öğeleri içeren bir C++ sınıfıdır. ATL OLE DB Tüketici Sihirbazı tüketici için bir kullanıcı kaydı oluşturur. Komutları işleme gibi isteğe bağlı görevleri için kullanıcı kayıt yöntemleri ekleyebilirsiniz.  
+Statik erişimci kullanılacak (dan türetilen bir erişimci `CAccessor`), bir kullanıcı kaydı tüketiciye sahip olmanız gerekir. Kullanıcı tanıtıcı giriş veya çıkış için veri öğeleri içeren bir C++ sınıfı kaydıdır. ATL OLE DB Tüketicisi Sihirbazı, tüketici için bir kullanıcı kaydı oluşturur. Kullanıcı kaydı komutları işleme gibi isteğe bağlı görevler için yöntemler ekleyebilirsiniz.  
   
- Aşağıdaki kod komutları işleyen bir kayıt örneği gösterir. Kullanıcı kaydındaki `BEGIN_COLUMN_MAP` sağlayıcıdan tüketiciye geçen veri satır kümesini temsil eder. `BEGIN_PARAM_MAP` Komut parametreleri kümesini temsil eder. Bu örnekte bir [CCommand](../../data/oledb/ccommand-class.md) komut parametrelerini işlemek için sınıf. Eşleme girdilerini veri üyeleri sınıfın her örneği için bellek bir bitişik bloğuna uzaklıkları temsil eder. `COLUMN_ENTRY` Makroları karşılık `PROVIDER_COLUMN_ENTRY` makroları sağlayıcı tarafındaki.  
+ Aşağıdaki kod, komutları işleyen bir örneği kayıt gösterir. Kullanıcı kaydında BEGIN_COLUMN_MAP tüketiciye sağlayıcıdan geçen veri satır kümesini temsil eder. BEGIN_PARAM_MAP komut parametreleri kümesini temsil eder. Bu örnekte bir [CCommand](../../data/oledb/ccommand-class.md) komut parametreleri işlemek için sınıf. Eşleme girişleri veri üyeleri, bitişik bir sınıfın her örneği için bellek bloğu içine uzaklıkları temsil eder. COLUMN_ENTRY makroları PROVIDER_COLUMN_ENTRY sağlayıcı tarafındaki karşılık gelir.  
   
- Hakkında daha fazla bilgi için **COLUMN_MAP** ve **PARAM_MAP** makrolar bkz [OLE DB Tüketici Şablonları için makrolar](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
+ COLUMN_MAP ve PARAM_MAP makrolar hakkında daha fazla bilgi için bkz. [OLE DB Tüketici Şablonları için makrolar](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
   
-```  
+```cpp  
 class CArtists  
 {  
 public:  
@@ -63,15 +63,15 @@ END_PARAM_MAP()
 };  
 ```  
   
-## <a name="wizard-generated-user-records"></a>Sihirbaz tarafından oluşturulan kullanıcı kayıtları  
- Tüketici oluşturmak için ATL OLE DB Tüketici Sihirbazı'nı kullanırsanız, OLE DB Şablonları veya OLE DB öznitelikleri kullanma seçeneği vardır. Oluşturulan kodun her durumda farklıdır. Bu kodu hakkında daha fazla bilgi için bkz: [Tüketici Sihirbazı tarafından oluşturulan sınıflar](../../data/oledb/consumer-wizard-generated-classes.md).  
+## <a name="wizard-generated-user-records"></a>Sihirbaz tarafından oluşturulan kullanıcı kaydı  
+ ATL OLE DB Tüketicisi Sihirbazı tüketici oluşturmak için kullanıyorsanız, OLE DB Şablonları veya OLE DB öznitelikleri kullanarak verebilir. Oluşturulan kod, her durumda farklıdır. Bu kod hakkında daha fazla bilgi için bkz: [kodla](../../data/oledb/consumer-wizard-generated-classes.md).  
   
-## <a name="user-record-support-for-multiple-accessors"></a>Çoklu erişimci için kullanıcı kaydı desteği  
- İçinde çoklu erişimci kullanmanızı gerektiren senaryolar hakkında ayrıntılı bilgi için bkz: [bir satır kümesi üzerinde Çoklu Erişimci Kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md).  
+## <a name="user-record-support-for-multiple-accessors"></a>Çoklu erişimci için kullanıcı kayıt desteği  
+ Gerektiği çoklu erişimci kullanılacak senaryolarda ayrıntılı bir açıklaması için [üzerinde bir satır kümesinde çoklu erişimci kullanarak](../../data/oledb/using-multiple-accessors-on-a-rowset.md).  
   
- Aşağıdaki örnek satır kümesinde çoklu erişimci desteklemek için değiştirilen kullanıcı kaydını gösterir. Yerine `BEGIN_COLUMN_MAP` ve `END_COLUMN_MAP`, kullandığı [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md) ve [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) her erişimcisi için. `BEGIN_ACCESSOR` Makrosu erişimci sayısını (sapma sıfırdan) ve erişimcinin otomatik erişimci olup olmadığını belirtir. Erişimciler `GetData` otomatik olarak yapılan bir çağrı veri almak için [MoveNext](../../data/oledb/crowset-movenext.md). Otomatik olmayan erişimciler açıkça verileri almak üzere gerektirir. Almak için her kayıt için istemeyebilirsiniz büyük veri alanına (örneğin, bir bit eşlem görüntüsü) bağlıyorsanız otomatik olmayan erişimci kullanın.  
+ Aşağıdaki örnek, kullanıcı kayıt satır kümesinde çoklu erişimci desteklemek için değiştirildi gösterir. BEGIN_COLUMN_MAP ve END_COLUMN_MAP yerine kullandığı [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md) ve [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) her erişimcisi için. BEGIN_ACCESSOR makrosu erişimcisi sayısını (sıfır sapma) ve erişimcisi erişimcinin olup olmadığını belirtir. Erişimciler `GetData` verileri otomatik olarak bir çağrı almak için [MoveNext](../../data/oledb/crowset-movenext.md). Otomatik olmayan erişimciler açıkça verileri almanızı gerektirir. Otomatik olmayan bir erişimci almak için her kayıt için isteyebileceğiniz değil bir büyük veri alanına (örneğin, bit eşlem görüntüsüne) bağlanıyorsa bu değeri kullanın.  
   
-```  
+```cpp  
 class CMultiArtists  
 {  
 public:  

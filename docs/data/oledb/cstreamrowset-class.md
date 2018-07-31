@@ -38,12 +38,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e0aad7fe25205d4cf31cbe76db3f1fb441858858
-ms.sourcegitcommit: b217daee32d3413cf33753d9b4dc35a0022b1bfa
+ms.openlocfilehash: 8b9f1c7aef4116ae057d771e66b5027c5783f64e
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233405"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338018"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset Sınıfı
 Kullanılan bir `CCommand` veya `CTable` bildirimi.  
@@ -96,7 +96,6 @@ Oluşturur ve başlatır `CStreamRowset` nesne.
   
 ```cpp
 CStreamRowset();  
-  
 ```  
 
 ## <a name="close"></a> CStreamRowset::Close
@@ -105,8 +104,7 @@ Yayınları [ISequentialStream](https://msdn.microsoft.com/library/ms718035.aspx
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-void Close();  
-  
+void Close();   
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

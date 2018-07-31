@@ -20,23 +20,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ab8c5e5a3e219da7204ef1a1b4942dc70b2f2ad2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c2a04d0b990906f9f124edc9dbda71d65127e4ed
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111191"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338567"
 ---
 # <a name="ole-db-resource-pooling-and-services"></a>OLE DB Kaynak Havuzu ve Hizmetleri
-OLE DB havuzu ile iyi veya herhangi bir OLE DB hizmeti ile çalışmak için sağlayıcınız toplama tüm nesnelerin desteklemesi gerekir. Bu, herhangi bir OLE DB 1.5 veya daha sonraki sağlayıcısı gerekli değildir. Hizmetleri yararlanmak için kritik öneme sahiptir. Toplama desteklemeyen sağlayıcılar havuza alınamaz ve herhangi bir ek hizmet sağlanır.  
+OLE DB havuzu ile veya herhangi bir OLE DB hizmeti ile çalışmak için sağlayıcınıza tüm nesnelerin toplama desteklemesi gerekir. Bu, herhangi bir OLE DB 1.5 veya üzeri sağlayıcısı bir gereksinimdir. Hizmetlerinden yararlanarak için önemlidir. Toplama desteği yok sağlayıcıları havuza ve hiçbir ek hizmetler sağlanır.  
   
- Havuza için sağlayıcıları boş iş parçacığı modelini desteklemesi gerekir. Kaynak havuzu sağlayıcının iş parçacığı modelini göre belirler **DBPROP_THREADMODEL** özelliği.  
+ Bir havuzda toplanabilir için sağlayıcıları boş iş parçacığı modeli desteklemesi gerekir. Kaynak havuzu konusunda anlatılan şekilde sağlayıcının iş parçacığı modeli belirler `DBPROP_THREADMODEL` özelliği.  
   
- Sağlayıcı veri kaynağı başlatılmış durumdayken değişebilir bir genel bağlantı durumu varsa, yeni desteklemelidir **DBPROP_RESETDATASOURCE** özelliği. Bu özellik, bir bağlantı yeniden kullanılır ve sağlayıcı sonraki kullanımından önce durumu temizleme fırsatı verir önce çağrılır. Sağlayıcı bağlantı ile ilişkili bazı durumunun temizleyemiyor, döndürebilir **DBPROPSTATUS_NOTSETTABLE** için özellik ve bağlantı kullanılmaz.  
+ Sağlayıcı veri kaynağına başlatılmış durumdayken değişebilir bir genel bağlantı durumu varsa, yeni desteklemelidir `DBPROP_RESETDATASOURCE` özelliği. Bu özellik, bir bağlantı yeniden ve sağlayıcısı durumu sonraki kullanımından önce temizlemek için sürümümüze önce çağrılır. Sağlayıcı bağlantı ile ilişkili bazı durumu temizleyemiyor verirseniz dönebilirsiniz `DBPROPSTATUS_NOTSETTABLE` için özellik ve bağlantı kullanılmaz.  
   
- Uzak bir veritabanına bağlanan ve bağlantısı kaybolabilir desteklemesi gerekip gerekmediğini algılayabilir sağlayıcıları **DBPROP_CONNECTIONSTATUS** özelliği. Bu özellik, OLE DB hizmetleri ölü bağlantıları algılama ve havuza döndürülmez emin olmak için olanak sağlar.  
+ Uzak bir veritabanına bağlanma ve bağlantıyı kaybolabilir desteklemesi gerekip gerekmediğini algılayabilir sağlayıcıları `DBPROP_CONNECTIONSTATUS` özelliği. Bu özellik, OLE DB hizmetleri ölü bağlantıları algılama ve havuza döndürülmez emin olanağı sağlar.  
   
- Son olarak, havuzu oluşan aynı düzeyde uygulanan sürece otomatik işlem kaydı genellikle çalışmaz. Otomatik işlem kaydı kendilerini desteği sağlayıcıları destek göstererek bu kaydı devre dışı bırakma **DBPROP_INIT_OLEDBSERVICES** özelliği ve kaydı, devre dışı bırakma **DBPROPVAL_OS_ TXNENLISTMENT** seçilmez.  
+ Son olarak, havuzu oluşan ve aynı düzeyde uygulanır sürece otomatik bir işlem kaydı genellikle işe yaramaz. Otomatik bir işlem kaydı kendilerini destekleyen sağlayıcıları göstererek bu kaydı devre dışı bırakma desteklemelidir `DBPROP_INIT_OLEDBSERVICES` özelliği ve kaydı devre dışı bırakmayı `DBPROPVAL_OS_TXNENLISTMENT` seçilmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)

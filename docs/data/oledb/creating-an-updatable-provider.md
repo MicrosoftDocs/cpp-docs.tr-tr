@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cbcd69168b70e8d85bf2b90c3f456f79cd1c228c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e9ee36d2300ed1e86c1f867012ed54c85692f5bd
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954590"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340644"
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 
@@ -30,7 +30,7 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
   
  Bu konuda, uyumlu bir sağlayıcı ile başlayan varsayılır. Güncelleştirilebilir sağlayıcı oluşturma için iki adımı vardır. Sağlayıcı veri deposuna değişiklikleri nasıl yapacak önce karar vermeniz gerekir; Özellikle, değişiklikleri hemen yapılmasına olup bir güncelleştirme komut verilene kadar ertelendi. Bölüm "[sağlayıcıları güncelleştirilebilir yapmadan](#vchowmakingprovidersupdatable)" sağlayıcı kodunda yapmak için ihtiyacınız olan ayarları ve değişiklikleri açıklar.  
   
- Ardından, sağlayıcınız tüketici isteyebileceği desteklemek için tüm işlevselliklerini içerir emin olmanız gerekir. Tüketici veri deposunu güncelleştirin isterse, sağlayıcı veri deposunda veri devam kodu içermesi gerekir. Örneğin, veri kaynağı gibi işlemleri gerçekleştirmek için MFC ve C çalışma zamanı kitaplığı kullanabilirsiniz. Bölüm "[veri kaynağına yazma](#vchowwritingtothedatasource)" veri kaynağına yazma, uğraşmanız açıklar `NULL` varsayılan değerler ve sütun bayraklarını ayarlayın.  
+ Ardından, sağlayıcınız tüketici isteyebileceği desteklemek için tüm işlevselliklerini içerir emin olmanız gerekir. Tüketici veri deposunu güncelleştirin isterse, sağlayıcı veri deposunda veri devam kodu içermesi gerekir. Örneğin, veri kaynağı gibi işlemleri gerçekleştirmek için MFC ve C çalışma zamanı kitaplığı kullanabilirsiniz. Bölüm "[veri kaynağına yazma](#vchowwritingtothedatasource)" veri kaynağına yazmak için NULL ve varsayılan değerlerle Dağıt ve sütun bayraklarını ayarlayın açıklar.  
   
 > [!NOTE]
 >  UpdatePV güncelleştirilebilir sağlayıcı örneğidir. UpdatePV MyProv ancak güncelleştirilebilir destekle aynıdır.  
@@ -55,7 +55,7 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
   
      Ekleme `IRowsetChangeImpl` bu formu kullanarak, devralma zincirini için:  
   
-    ```  
+    ```cpp  
     IRowsetChangeImpl< rowset-name, storage-name >  
     ```  
   
@@ -65,7 +65,7 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
   
      Ekleme `IRowsetUpdate` bu formu kullanarak, devralma zincirini için:  
   
-    ```  
+    ```cpp  
     IRowsetUpdateImpl< rowset-name, storage>  
     ```  
   
@@ -88,7 +88,7 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
   
 4.  Bunlar aşağıda görüldüğü gibi özellik kümesi eşlemesi, ayrıca tüm aşağıdaki ayarlardan birini içermelidir:  
   
-    ```  
+    ```cpp  
     PROPERTY_INFO_ENTRY_VALUE(UPDATABILITY, DBPROPVAL_UP_CHANGE |   
       DBPROPVAL_UP_INSERT | DBPROPVAL_UP_DELETE)  
     PROPERTY_INFO_ENTRY_VALUE(CHANGEINSERTEDROWS, VARIANT_TRUE)  

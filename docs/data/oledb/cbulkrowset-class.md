@@ -113,12 +113,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 457091d5dc0a76ce0cd495679d7c5f978e483574
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 2fa455bbe4a5aa902232b502e129f6c8e21463a9
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207633"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337728"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 Getirir ve tek bir çağrı ile birden çok satır işleyicilerini alarak, toplu veriler üzerinde çalışmaya satırları yönetir.  
@@ -166,7 +166,6 @@ class CBulkRowset : public CRowset<TAccessor>
   
 ```cpp
 HRESULT AddRefRows() throw();  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -179,7 +178,6 @@ Yeni bir oluşturur `CBulkRowset` nesnesini ve varsayılan satır sayısı 10'a 
   
 ```cpp
 CBulkRowset();  
-  
 ```  
 
 ## <a name="movefirst"></a> CBulkRowset::MoveFirst
@@ -189,7 +187,6 @@ CBulkRowset();
   
 ```cpp
 HRESULT MoveFirst() throw();  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -202,7 +199,6 @@ Son satıra taşır.
   
 ```cpp
 HRESULT MoveLast() throw();  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -215,7 +211,6 @@ Sonraki satırda veri alır.
   
 ```cpp
 HRESULT MoveNext() throw();  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -228,7 +223,6 @@ HRESULT MoveNext() throw();
   
 ```cpp
 HRESULT MovePrev() throw();  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -240,7 +234,7 @@ Bir yer işareti veya belirtilen bir uzaklık satırında tarafından işaretlen
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-HRESULT MoveToBookmark(const CBookmarkBase& bookmark,  
+HRESULT MoveToBookmark(const CBookmarkBase& bookmark, 
    DBCOUNTITEM lSkip = 0) throw();  
 ```  
   
@@ -259,8 +253,8 @@ Satır kümesindeki kesirli bir konumdan başlayan satırları getirir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```
-HRESULT MoveToRatio(DBCOUNTITEM nNumerator,  
+```cpp
+HRESULT MoveToRatio(DBCOUNTITEM nNumerator, 
    DBCOUNTITEM nDenominator)throw();  
 ```  
   
@@ -287,8 +281,7 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-HRESULT ReleaseRows() throw();  
-  
+HRESULT ReleaseRows() throw();   
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -300,7 +293,7 @@ Her bir çağrı tarafından alınan satır işleyicilerin sayısını ayarlar.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      void SetRows(DBROWCOUNT nRows) throw();  
+void SetRows(DBROWCOUNT nRows) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

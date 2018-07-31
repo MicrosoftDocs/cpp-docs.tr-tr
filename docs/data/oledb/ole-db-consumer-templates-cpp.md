@@ -18,28 +18,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 39264ed7485e67377963316730689645c73f185f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 636f98337cacdeddbdd42dd74e498c0fbd12e4f8
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33112114"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339405"
 ---
 # <a name="ole-db-consumer-templates-c"></a>OLE DB Tüketici Şablonları (C++)
-OLE DB Tüketici Şablonları OLE DB sürüm 2.6 belirtimini destekler. (OLE DB Tüketici Şablonları OLE DB 2.6 karşı test ancak her arabirimi belirtimini desteklemez.) Tüketici Şablonları bir OLE DB Tüketicisi uygulamak için yazmanız gereken kod miktarını en aza indirir. Şablonlar sağlar:  
+OLE DB Tüketici Şablonları, OLE DB sürüm 2.6 belirtimini destekler. (OLE DB Tüketici Şablonları OLE DB 2.6 karşı test edilmez ancak her arabirim belirtiminde desteklemez.) Tüketici Şablonları bir OLE DB Tüketicisi uygulamak için yazmanız gereken kod miktarını en aza indirin. Şablonlar sağlar:  
   
--   Kolay erişim için OLE DB özellikleri ve ATL ve MFC ile kolay tümleştirme.  
+-   OLE DB özellikleri ve ATL ve MFC ile kolay tümleştirme kolay erişim.  
   
--   Veritabanı parametreleri ve sütunlar için bir kolay bağlama modeli.  
+-   Veritabanı parametreler ve sütun için bir kolayca bağlama modeli.  
   
 -   OLE DB programlama için yerel C/C++ veri türleri.  
   
- OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile bilgi sahibi olmanız. OLE DB ile bilmiyorsanız bkz [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/en-us/library/ms718124.aspx).  
+ OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/library/ms718124.aspx).  
   
- OLE DB Şablonları, yeni bir nesne modeli eklemek yerine varolan OLE DB Nesne modeli destekler. OLE DB Tüketici Şablonları üst düzey sınıflar OLE DB belirtiminde tanımlanan bileşenleri paralel. OLE DB Tüketici Şablonları tasarım üzerinde bir satır kümesinde çoklu erişimci gibi gelişmiş özellikler içeriyor. Şablonları ve birden çok devralma kullanımını kitaplığı küçük ve esnek hale getirir.  
+ OLE DB Şablonları, yeni bir nesne modeli eklemek yerine var olan OLE DB Nesne modeli destekler. OLE DB Tüketici Şablonları üst düzey sınıflar, OLE DB belirtiminde tanımlanan bileşenleri paralel. OLE DB Tüketici Şablonları tasarımını üzerinde bir satır kümesinde çoklu erişimci gibi gelişmiş özellikleri içerir. Şablonları ve birden çok devralma kitaplığı, küçük ve esnek hale getirir.  
   
-## <a name="how-ole-db-consumers-access-data"></a>OLE DB tüketicileri veri nasıl erişim  
- Tüketiciler, aşağıdaki konularda açıklanan nesneleri çeşitli türlerde kullanın:  
+## <a name="how-ole-db-consumers-access-data"></a>OLE DB tüketicileri verilere nasıl  
+ Aşağıdaki konularda açıklanan nesneler çeşitli türlerde tüketiciler kullanın:  
   
 -   [Veri Kaynakları ve Oturumlar](../../data/oledb/data-sources-and-sessions.md)  
   
@@ -49,15 +49,15 @@ OLE DB Tüketici Şablonları OLE DB sürüm 2.6 belirtimini destekler. (OLE DB 
   
 -   [Kullanıcı Kayıtları](../../data/oledb/user-records.md)  
   
- Tüketici bir şey yapmadan önce ilk (örneğin, SQL, Oracle, ODBC ve MSDS) erişmesi gereken veritabanı türü için uygun bir OLE DB sağlayıcısı seçin. Bunu yapmak için genellikle bir numaralandırıcı kullanır (bkz [CEnumerator](../../data/oledb/cenumerator-class.md) bölümünde belirtildiği gibi [veri kaynakları ve oturumlar](../../data/oledb/data-sources-and-sessions.md)).  
+ Tüketici herhangi bir şey yapmadan önce ilk veritabanı (örneğin, SQL, Oracle, ODBC ve MSDS) erişmeniz türü için uygun bir OLE DB sağlayıcısı seçin. Bunu yapmak için genellikle bir numaralandırıcı kullanır (bkz [CEnumerator](../../data/oledb/cenumerator-class.md) belirtildiği gibi [veri kaynakları ve oturumlar](../../data/oledb/data-sources-and-sessions.md)).  
   
- [Veri kaynağı nesnesi](../../data/oledb/data-sources-and-sessions.md) seçtiğiniz veri kaynağına bağlanmak için gerekli bağlantı bilgileri sağlar. Veri kaynağı nesnesi kullanıcılara veri kaynağına erişim izni vermek için kullanılan kimlik bilgileri (örneğin, oturum açma adları ve parolalar) de içerir. Veri kaynağı nesnesi veritabanına bir bağlantı kurar ve bir veya daha fazla oturum nesneleri oluşturur. Her [oturum nesnesi](../../data/oledb/data-sources-and-sessions.md) (diğer bir deyişle, sorgulama ve veri alma) veritabanı ile kendi etkileşimlerini yönetir ve diğer oturumlarına bağımsız olarak bu işlemleri gerçekleştirir.  
+ [Veri kaynağı nesnesi](../../data/oledb/data-sources-and-sessions.md) seçtiğiniz veri kaynağına bağlanmak için gereken bağlantı bilgilerini sağlar. Veri kaynağı nesnesi, ayrıca, kullanıcılar veri kaynağına erişim izni vermek için kullanılan kimlik doğrulama bilgilerini (örneğin, oturum açma adları ve parolalar) içerir. Veri kaynağı nesnesi, veritabanına bir bağlantı kurar ve ardından bir veya daha fazla oturum nesneleri oluşturur. Her [oturum nesnesi](../../data/oledb/data-sources-and-sessions.md) (diğer bir deyişle, sorgulama ve veri alma) veritabanı ile kendi etkileşimlerini yönetir ve diğer oturumlarına bağımsız olarak bu işlemleri gerçekleştirir.  
   
- Oturum satır kümesi ve komut nesneleri oluşturur. [Komut nesnesi](../../data/oledb/commands-and-tables.md) SQL komutlarını kullanarak veritabanı ile Örneğin, etkileşime girmesine izin verir. [Satır kümesi nesnesi](../../data/oledb/accessors-and-rowsets.md) hangi edebilir ve hangi gidebilirsiniz aracılığıyla veri kümesi [güncelleştirme, silme ve Satır Ekle](../../data/oledb/updating-rowsets.md).  
+ Oturum satır ve komut nesneleri oluşturur. [Komut nesnesi](../../data/oledb/commands-and-tables.md) kullanıcıların veritabanıyla, örneğin, SQL komutlarını kullanarak etkileşim kurmanıza olanak tanır. [Satır kümesi nesnesi](../../data/oledb/accessors-and-rowsets.md) , alabilir ve hangi gezinebileceğiniz aracılığıyla veri kümesi [güncelleştirme, silme ve Satır Ekle](../../data/oledb/updating-rowsets.md).  
   
- Bir OLE DB Tüketicisi sütunları yerel değişken içeren veritabanı tablolarındaki bağlar; Bunu yapmak için kullandığı bir [erişimci](../../data/oledb/accessors-and-rowsets.md), veri tüketici içinde nasıl depolandığını bir harita içerir. Harita tablo sütunları ve tüketici uygulamasındaki yerel arabellekler (değişkenler) arasında bağlamaları kümesinden oluşur.  
+ Bir OLE DB Tüketicisi sütunları yerel değişkenlerle veritabanı tablolarındaki bağlar; Bunu yapmak için kullandığı bir [erişimci](../../data/oledb/accessors-and-rowsets.md), tüketici veriler nasıl depolanır, bir harita içerir. Harita bağlamaları tablo sütunları ve tüketici uygulama yerel arabellekleri (değişken) arasında bir dizi oluşur.  
   
- Tüketicileri ile çalışırken önemli bir kavram biri iki sınıf bir tüketici bildirin: [komutu (veya tablo) sınıfı](../../data/oledb/commands-and-tables.md) ve [kullanıcı kayıt sınıfı](../../data/oledb/user-records.md). Satır kümesi erişimci sınıfından hem satır kümesi sınıfından devralan komut (veya tablo) sınıfı aracılığıyla erişebilirsiniz. Kullanıcı kayıt sınıfı daha önce açıklanan satır kümesi bağlama eşlemesi içerir.  
+ Biri tüketicileriyle çalışırken önemli kavramı bir tüketici iki sınıf bildirmek: [komutu (veya tablo) sınıfı](../../data/oledb/commands-and-tables.md) ve [kullanıcı kayıt sınıfı](../../data/oledb/user-records.md). Satır kümesi, bir erişimci sınıfında hem bir satır kümesi sınıfının devraldığı komutu (veya tablo) sınıfı aracılığıyla erişin. Kullanıcı kayıt sınıfı, daha önce açıklanan satır kümesi bağlama eşlemesi içerir.  
   
  Daha fazla bilgi için aşağıdaki konulara bakın:  
   
@@ -68,5 +68,5 @@ OLE DB Tüketici Şablonları OLE DB sürüm 2.6 belirtimini destekler. (OLE DB 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB programlama](../../data/oledb/ole-db-programming.md)   
  [Veri erişimi](../data-access-in-cpp.md)   
- [OLE DB SDK Belgeleri](https://msdn.microsoft.com/en-us/library/ms722784.aspx)   
- [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/en-us/library/ms713643.aspx)
+ [OLE DB SDK Belgeleri](https://msdn.microsoft.com/library/ms722784.aspx)   
+ [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/library/ms713643.aspx)

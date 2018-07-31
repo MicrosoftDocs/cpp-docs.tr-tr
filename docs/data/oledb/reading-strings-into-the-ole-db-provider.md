@@ -1,5 +1,5 @@
 ---
-title: Dizeleri OLE DB sağlayıcısını okuma | Microsoft Docs
+title: Dizeleri OLE DB sağlayıcısına okuma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 073ddbea18e728ffb6777ff16c86bfa4695e05cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3aa9b10b53f4b520ed6d42932ba3e73f11077fdc
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33110175"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337066"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
-`RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizeleri okur. Tüketici çağırarak dosya adını sağlayıcıya geçirir [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709757.aspx). Sağlayıcı dosya adını alır ve üye değişkeninde depolar `m_szCommandText`. `Execute` dosya adını okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, dosya ve çağrıları açılır `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydı bir örneğini oluşturur (`CAgentMan`) ve bir dizi içine yerleştirir.  
+`RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizelerini okur. Tüketici dosya adı çağırarak sağlayıcıya geçen [ICommandText::SetCommandText](https://msdn.microsoft.com/library/ms709757.aspx). Sağlayıcı dosya adını alır ve üye değişkeni depolar `m_szCommandText`. `Execute` Dosya adından okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, çağrılar ve dosyayı açar `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydını örneği oluşturur (`CAgentMan`) ve bir diziye yerleştirir.  
   
- Dosya açılamıyor, `Execute` döndürmelidir **DB_E_NOTABLE**. Döndürürse **E_FAIL** bunun yerine, sağlayıcı birçok tüketici ile çalışmaz ve OLE DB geçmez [uygunluk testleri](../../data/oledb/testing-your-provider.md).  
+ Dosya açılamıyor, `Execute` DB_E_NOTABLE döndürmelidir. Bunun yerine E_FAIL döndürürse, sağlayıcı birçok tüketicileriyle çalışmaz ve OLE DB geçmez [uygunluk testlerini](../../data/oledb/testing-your-provider.md).  
   
 ## <a name="example"></a>Örnek  
   

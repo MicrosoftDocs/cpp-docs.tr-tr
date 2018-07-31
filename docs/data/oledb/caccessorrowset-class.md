@@ -41,12 +41,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a9f869a901885b064ef4ddbbfddc23b246455a39
-ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
+ms.openlocfilehash: edc18dcb83b2dda63fd5cfb5c56c3c95baa72df0
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39181191"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340735"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset Sınıfı
 Bir satır kümesi ve tek bir sınıftaki ilişkili erişimcilerini kapsüller.  
@@ -55,7 +55,7 @@ Bir satır kümesi ve tek bir sınıftaki ilişkili erişimcilerini kapsüller.
 
 ```cpp
 template <class TAccessor = CNoAccessor, 
-          template <typename T> class TRowset = CRowset>  
+   template <typename T> class TRowset = CRowset>  
 class CAccessorRowset : public TAccessor, public TRowset<TAccessor>  
 ```  
   
@@ -79,7 +79,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 |[CAccessorRowset](#caccessorrowset)|Oluşturucu.|  
 |[Kapat](#close)|Satır kümesi ve tüm erişimcileri kapatır.|  
 |[FreeRecordMemory](#freerecordmemory)|Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır.|  
-|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx).|  
+|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx).|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Sınıf `TAccessor` erişimci yönetir. Sınıf *CRowset* satır kümesi yönetir.  
@@ -91,7 +91,6 @@ Belirttiyseniz bağlamaları oluşturur `bBind` olarak **false** içinde [CComma
   
 ```cpp
 HRESULT Bind();  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -104,7 +103,6 @@ Başlatır `CAccessorRowset` nesne.
   
 ```cpp
 CAccessorRowset();  
-  
 ```  
 
 ## <a name="close"></a> CAccessorRowset::Close
@@ -114,7 +112,6 @@ Tüm etkin erişimciler ve satır kümesi serbest bırakır.
   
 ```cpp
 void Close();  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -127,7 +124,6 @@ Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır
   
 ```cpp
 void FreeRecordMemory();  
-  
 ```  
 
 ## <a name="getcolumninfo"></a> CAccessorRowset::GetColumnInfo
@@ -136,16 +132,16 @@ Açık satır kümesinden sütun bilgileri alır.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-HRESULT GetColumnInfo(DBORDINAL* pulColumns,  
-   DBCOLUMNINFO** ppColumnInfo,  
-   LPOLESTR* ppStrings) const;  
-
-HRESULT GetColumnInfo(DBORDINAL* pColumns,  
+HRESULT GetColumnInfo(DBORDINAL* pulColumns, 
+   DBCOLUMNINFO** ppColumnInfo, 
+   LPOLESTR* ppStrings) const; 
+    
+HRESULT GetColumnInfo(DBORDINAL* pColumns, 
    DBCOLUMNINFO** ppColumnInfo);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  
@@ -153,7 +149,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı, döndürülen sütun bilgileri ve dize arabellek boşaltmanız gerekir. Dosyanın ikinci sürümü, bu yöntemi kullandığınızda kullanın [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) ve bağlamaları geçersiz kılmanız gerekir.  
   
- Daha fazla bilgi için [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Daha fazla bilgi için [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   

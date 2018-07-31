@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d7664562ff31f1f5871fab4ce74c1652370a540d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c1b109b86e35a3f27b95c5dbf3b729629235d3a2
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103222"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338661"
 ---
 # <a name="property-maps"></a>Özellik Eşlemeleri
-Oturum, satır kümesi ve isteğe bağlı komut nesnesine ek olarak, her sağlayıcısı bir veya daha fazla özelliklerini destekler. Bu özellikler OLE DB Sağlayıcı Sihirbazı tarafından oluşturulan üstbilgi dosyalarında bulunan özellik eşlemeleri tanımlanır. Her üstbilgi dosyası nesne ya da bu dosyasında tanımlanan nesneleri için tanımlanan OLE DB özellik grubunun özellikleri için bir eşleme içerir. Veri kaynağı nesnesi içeren üstbilgi dosyası için özellik eşlemesi de içeren [veri kaynağı özellikleri](https://msdn.microsoft.com/en-us/library/ms724188\(v=vs.140\).aspx). Session.h içeren için özellik eşlemesi [oturum özellikleri](https://msdn.microsoft.com/en-us/library/ms714221.aspx). Satır kümesi ve komut nesneleri olarak adlandırılan bir tek üstbilgi dosyasında bulunan *projectname*RS.h. Bu özellikler, üyesi [satır kümesi özellikleri](https://msdn.microsoft.com/en-us/library/ms711252.aspx) grubu.  
+Oturum, satır kümesi ve isteğe bağlı komut nesnesi ek olarak, her bir sağlayıcı bir veya daha fazla özelliklerini destekler. Bu özellikler OLE DB sağlayıcısı Sihirbazı tarafından oluşturulan üstbilgi dosyalarında bulunan özellik eşlemeleri tanımlanır. Her başlık dosyası, nesne veya bu dosyada tanımlanan nesneler için tanımlanan OLE DB özellik grubu özellikleri için bir harita içerir. Veri kaynağı nesnesi içeren üst bilgi dosyası için özellik eşlemesi de içeren [veri kaynağı özellikleri](https://msdn.microsoft.com/library/ms724188\(v=vs.140\).aspx). Session.h'deki içeren özellik eşlemesi için [oturum özellikleri](https://msdn.microsoft.com/library/ms714221.aspx). Satır kümesi ve komut nesneleri olarak adlandırılan bir tek üstbilgi dosyasında bulunan *projectname*RS.h. Bu özellikler üyeleri [satır kümesi özellikleri](https://msdn.microsoft.com/library/ms711252.aspx) grubu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

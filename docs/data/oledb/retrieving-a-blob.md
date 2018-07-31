@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 420e863fcd5d4c666bf8e9a25a2f0f53e726c871
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dcd166e205f35133fe2c466175e07ea82970e31f
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33105211"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339281"
 ---
 # <a name="retrieving-a-blob"></a>BLOB Alma
-Çeşitli şekillerde ikili büyük nesne (BLOB) alabilir. Kullanabileceğiniz **DBTYPE_BYTES** bayt dizisi olarak BLOB almak veya gibi bir arabirim kullanmak için `ISequentialStream`. Daha fazla bilgi için bkz: [BLOBLARI ve OLE nesneleri](https://msdn.microsoft.com/en-us/library/ms711511.aspx) içinde *OLE DB Programcının Başvurusu*.  
+Çeşitli şekillerde ikili büyük nesne (BLOB) alabilir. Kullanabileceğiniz `DBTYPE_BYTES` bayt dizisi olarak BLOB alınamıyor veya bir arabirim `ISequentialStream`. Daha fazla bilgi için [BLOB'ları ve OLE nesneleri](https://msdn.microsoft.com/library/ms711511.aspx) içinde *OLE DB Programcının Başvurusu*.  
   
- Aşağıdaki kod kullanarak bir BLOB alma gösterir `ISequentialStream`. Makro [BLOB_ENTRY](../../data/oledb/blob-entry.md) arabirimi ve arabirim için kullanılan bayraklarını belirtmenize olanak tanır. Tablo açıldıktan sonra kod çağırır **okuma** üzerinde sürekli `ISequentialStream` BLOBUNDAN bayt okunamıyor. Kod çağrıları **sürüm** çağırmadan önce arabirimi işaretçisinin silmek için `MoveNext` sonraki kaydı elde edilir.  
+ Aşağıdaki kodu kullanarak bir BLOB alma işlemi gösterilmektedir `ISequentialStream`. Makro [BLOB_ENTRY](../../data/oledb/blob-entry.md) arabirimi ve arabirim için kullanılan bayraklar belirtmenizi sağlar. Tablo açtıktan sonra kodu çağıran `Read` üzerinde sürekli `ISequentialStream` BLOBUNDAN bayt okunamadı. Kod çağrıları `Release` çağırmadan önce arabirim işaretçisi elden çıkarmak `MoveNext` sonraki kayıt elde edilir.  
   
-```  
+```cpp  
 class CCategories  
 {  
 public:  
@@ -57,7 +57,7 @@ while (categories.MoveNext() == S_OK)
 }  
 ```  
   
- BLOB verilerini işleyen makrolar hakkında daha fazla bilgi için bkz: "Sütun eşleme makroları" [makrolar ve genel işlevler OLE DB Tüketici Şablonları için](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
+ BLOB verilerini işleme makrolar hakkında daha fazla bilgi için bkz: "Sütun eşleme makroları" [makroları ve genel işlevler için OLE DB Tüketici Şablonları](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Erişimcileri kullanma](../../data/oledb/using-accessors.md)   

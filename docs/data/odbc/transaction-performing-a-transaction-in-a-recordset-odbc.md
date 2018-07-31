@@ -1,5 +1,5 @@
 ---
-title: 'İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme | Microsoft Docs'
+title: 'İşlem: kayıt kümesi (ODBC) bir işlem gerçekleştirme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,28 +15,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1d7cae3b05c20736a2e271b574569bcac4d5cdc7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9fcc5c6aae86aea005aef50f9083aeb718f64b19
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33094611"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340273"
 ---
 # <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)
-Bu konu kayıt kümesinde işlem gerçekleştirme açıklar.  
+Bu konuda, bir kayıt kümesinde işlem gerçekleştirme açıklanmaktadır.  
   
 > [!NOTE]
->  Yalnızca bir düzey işlemler desteklenir; işlemleri iç içe yerleştirilemez.  
+>  Tek düzey işlemleri desteklenmez. işlemleri iç içe olamaz.  
   
-#### <a name="to-perform-a-transaction-in-a-recordset"></a>Bir kayıt kümesindeki bir işlem gerçekleştirmek için  
+#### <a name="to-perform-a-transaction-in-a-recordset"></a>Bir kayıt kümesinde işlem gerçekleştirme  
   
-1.  Çağrı `CDatabase` nesnenin **BeginTrans** üye işlevi.  
+1.  Çağrı `CDatabase` nesnenin `BeginTrans` üye işlevi.  
   
-2.  Toplu satır getirme değil uyguladıysanız, çağrı **AddNew/Update**, **Düzenle/güncelleştirme**, ve **silme** bir veya daha fazla kayıt aynı kümesi nesnesinin üye işlevleri Veritabanı gerektiği pek çok. Daha fazla bilgi için bkz: [kayıt kümesi: ekleme, güncelleştirme ve silme kayıtlarını (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md). Toplu satır getirme uyguladıysanız, veri kaynağını güncelleştirmek için kendi işlevlerinizi yazmanız gerekir.  
+2.  Toplu satır getirme değil uyguladıysanız, çağrı `AddNew/Update`, `Edit/Update`, ve `Delete` nesnelerin bir veya daha fazla kayıt aynı veritabanında gerektiği birçok üye işlevleri. Daha fazla bilgi için [kayıt kümesi: ekleme, güncelleştirme ve silme kayıtlarını (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md). Toplu satır getirme uyguladıysanız, veri kaynağını güncelleştirmek için kendi işlevlerinizi yazmanız gerekir.  
   
-3.  Son olarak, arama `CDatabase` nesnenin **CommitTrans** üye işlevi. Güncelleştirmeleri birinde bir hata oluşursa veya değişiklikleri iptal etmeye karar verirseniz, çağırın kendi **geri alma** üye işlevi.  
+3.  Son olarak, çağrı `CDatabase` nesnenin `CommitTrans` üye işlevi. Güncelleştirmelerden biri bir hata oluşursa ya değişiklikleri iptal etmek karar verirseniz, arama, `Rollback` üye işlevi.  
   
- Aşağıdaki örnekte iki kayıt kümeleri öğrencinin kayıt Öğrenci Öğrenci kayıtlı tüm sınıflardan kaldırarak bir okul kayıt veritabanından silmek için kullanır. Çünkü **silmek** her iki kayıt kümeleri çağrılarında başarılı olması gerekir, bir işlem gereklidir. Örnek varlığını varsayar `m_dbStudentReg`, üye değişkeni türü `CDatabase` zaten bağlı veri kaynağı ve kayıt kümesi sınıfları `CEnrollmentSet` ve `CStudentSet`. `strStudentID` Değişkeni kullanıcıdan alınan bir değer içeriyor.  
+ Aşağıdaki örnek, bir öğrencinin kayıt Öğrenci, Öğrenci kayıtlı tüm sınıflardan kaldırarak bir okul kayıt veritabanından silmek için iki kayıt kümelerini kullanır. Çünkü `Delete` her iki kayıt kümelerinde çağrıları başarılı olmalıdır, bir işlem gereklidir. Örnek varsayar `m_dbStudentReg`, bir üye değişkeni türü `CDatabase` zaten bağlı veri kaynağı ve kayıt kümesi sınıfları `CEnrollmentSet` ve `CStudentSet`. `strStudentID` Değişken kullanıcıdan alınan bir değer içeriyor.  
   
 ```  
 BOOL CEnrollDoc::RemoveStudent( CString strStudentID )  
@@ -89,10 +89,10 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 ```  
   
 > [!NOTE]
->  Çağırma **BeginTrans** yeniden çağırmadan **CommitTrans** veya **geri alma** bir hatadır.  
+>  Çağırma `BeginTrans` yeniden çağırmadan `CommitTrans` veya `Rollback` bir hatadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)   
- [İşlem: İşlemlerin güncelleştirmeleri (ODBC) etkilemesi](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)   
+ [İşlem: İşlemlerin güncelleştirmeleri (ODBC) nasıl etkiler.](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)   
  [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)   
  [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

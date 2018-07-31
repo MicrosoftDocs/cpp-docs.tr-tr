@@ -24,12 +24,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aa95eb630fac2fe30014e378cc79bdbac285dbdb
-ms.sourcegitcommit: b217daee32d3413cf33753d9b4dc35a0022b1bfa
+ms.openlocfilehash: 4d93d1042f48ae877e61692b095be9442f9a7917
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233509"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337183"
 ---
 # <a name="crestrictions-class"></a>CRestrictions Sınıfı
 Şema satır kümeleri için kısıtlamaları belirlemenizi sağlayan genel bir sınıf.  
@@ -39,10 +39,10 @@ ms.locfileid: "39233509"
 ```cpp
 template <class T, short nRestrictions, const GUID* pguid>  
 class CRestrictions : 
-        public CSchemaRowset <T, nRestrictions>  
+   public CSchemaRowset <T, nRestrictions>  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *T*  
  Erişimci için kullanılan sınıf.  
   

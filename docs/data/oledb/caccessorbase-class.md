@@ -36,12 +36,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 99f6be0815572b88f7c46406262ed21eaefdb77d
-ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
+ms.openlocfilehash: 18199a700cbc5065d987a57cc076a5d0cf670577
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39181204"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340670"
 ---
 # <a name="caccessorbase-class"></a>CAccessorBase Sınıfı
 OLE DB Şablonları tüm erişenler sınıfından türetilir. `CAccessorBase` Çoklu Erişimci yönetmek bir satır kümesi sağlar. Ayrıca parametreleri ve çıkış sütunları için bağlama sağlar.  
@@ -74,7 +74,6 @@ Erişimciler kapatır.
   
 ```cpp
 void Close();  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -86,7 +85,7 @@ Belirtilen bir erişimci erişimci tanıtıcısı alır.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      HACCESSOR GetHAccessor(ULONG nAccessor) const;  
+HACCESSOR GetHAccessor(ULONG nAccessor) const;  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -103,7 +102,6 @@ Sınıfı tarafından oluşturulan erişimcileri sayısını alır.
   
 ```cpp
 ULONG GetNumAccessors() const;  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -115,7 +113,7 @@ Veri taşıma işlemi sırasında otomatik olarak için erişimci alınır true 
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      bool IsAutoAccessor(ULONG nAccessor) const;  
+bool IsAutoAccessor(ULONG nAccessor) const;  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

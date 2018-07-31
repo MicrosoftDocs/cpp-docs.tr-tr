@@ -18,48 +18,48 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8ca0ef94ba6c60bd43e24672fe7db669a3930fd7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2936a65023b32f994ed7260260476bc7b0457c2
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33112388"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336423"
 ---
 # <a name="updating-rowsets"></a>Satır Kümelerini Güncelleştirme
-Bir çok basit bir veritabanı güncelleştirmek veya veri deposuna veri yazmak için bir işlemdir. OLE DB'de güncelleme mekanizması basittir: tüketici uygulamanız bağlı veri üyelerinin değerlerini ayarlar ve ardından bu değerleri satır kümesine yazar; Tüketici sonra sağlayıcının veri deposunu güncelleştirmek ister.  
+Çok basit bir veritabanı işlemi, güncelleştirme veya veri deposuna veri yazma sağlamaktır. OLE DB'de güncelleştirme mekanizmasını basittir: tüketici uygulamanızın bağımlı veri üyelerinin değerlerini ayarlar ve sonra bu değerleri satır kümesi için; yazar Tüketici, sağlayıcı veri deposunda güncelleştirme ardından ister.  
   
- Tüketiciler, satır kümesi veri üzerinde güncelleştirmeleri şu tür gerçekleştirebilir: satır içindeki sütun değerlerini ayarlama, satır ekleme ve bir satırın silinmesi. OLE DB Şablon sınıfı bu işlemleri gerçekleştirmek için [CRowset](../../data/oledb/crowset-class.md) uygulayan [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx) arabirim ve aşağıdaki arabirim yöntemini geçersiz kılar:  
+ Tüketiciler, satır kümesi veri güncelleştirmeleri aşağıdaki türde gerçekleştirebilir: bir satırdaki sütun değerleri ayarlama, satır ekleme ve bir satırın silinmesi. OLE DB Şablon sınıfı bu işlemleri gerçekleştirmek için [CRowset](../../data/oledb/crowset-class.md) uygulayan [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx) arabirim ve aşağıdaki arabirim yöntemini geçersiz kılar:  
   
--   [SetData](../../data/oledb/crowset-setdata.md) değişiklikleri sütun değerleri satır satırda; SQL güncelleştirme komut eşdeğerdir.  
+-   [SetData](../../data/oledb/crowset-setdata.md) değişiklikleri sütun bir satır kümesi bir satır değerleri; için SQL güncelleştirme komut eşdeğerdir.  
   
--   [INSERT](../../data/oledb/crowset-insert.md) satır kümesine; bir satır ekler SQL INSERT komutu ile eşdeğerdir.  
+-   [INSERT](../../data/oledb/crowset-insert.md) bir satır kümesine; bir satır ekler SQL Ekle komutuna karşılık gelir.  
   
--   [Silme](../../data/oledb/crowset-delete.md) bir satır kümesinden; satırları siler SQL DELETE komutu ile eşdeğerdir.  
+-   [Silme](../../data/oledb/crowset-delete.md) bir satır kümesinden; satırları siler SQL DELETE komutu eşdeğerdir.  
   
 ## <a name="supporting-update-operations"></a>Güncelleştirme işlemleri destekleme  
- ATL OLE DB Tüketici Sihirbazı'yla bir tüketici oluşturduğunuzda, birini seçerek güncelleştirme işlemlerini destekleyebilir veya daha fazla üç onay kutularını **değişiklik**, **Ekle**, ve **Sil**. Bunlar seçerseniz sihirbaz kodu seçtiğiniz değişikliklerin türünü desteklemek için uygun şekilde değiştirir. Sihirbaz kullanmazsanız, ancak aşağıdaki satır kümesi özelliklerini ayarlamak için ihtiyacınız `VARIANT_TRUE` güncelleştirmelerini desteklemek için:  
+ ATL OLE DB Tüketicisi Sihirbazı ile bir tüketici oluşturduğunuzda, birini seçerek güncelleştirme işlemleri destekleyebilir ya da daha fazla üç onay kutularını işaretleyin **değişiklik**, **Ekle**, ve **Sil**. Bunları seçerseniz, sihirbaz kodu seçtiğiniz değişikliklerin türünü desteklemek için uygun şekilde değiştirir. Sihirbaz kullanmayın. ancak, aşağıdaki satır kümesi özelliklerini ayarlamak için gerekirse `VARIANT_TRUE` güncelleştirmeleri desteklemek için:  
   
--   **DBPROPVAL_UP_CHANGE** bir satır veri değerlerini değiştirmenizi sağlar.  
+-   `DBPROPVAL_UP_CHANGE` bir satır veri değerlerini değiştirmenizi sağlar.  
   
--   **DBPROPVAL_UP_INSERT** satır ekleme olanak tanır.  
+-   `DBPROPVAL_UP_INSERT` bir satır eklemenizi sağlar.  
   
--   **DBPROPVAL_UP_DELETE** bir satır silmenize olanak sağlar.  
+-   `DBPROPVAL_UP_DELETE` bir satır silmenize olanak sağlar.  
   
- Özellikleri aşağıdaki gibi ayarlayın:  
+ Özellikleri şu şekilde ayarlayın:  
   
-```  
+```cpp  
 CDBPropSet ps(DBPROPSET_ROWSET);  
 
 ps.AddProperty(DBPROP_IRowsetChange, true)  
 ps.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | DBPROPVAL_UP_DELETE)  
 ```  
   
- Bir veya daha fazla sütun yoksa yazılabilir değişiklik, ekleme veya silme işlemleri başarısız olabilir. Bu sorunu gidermek için imleç haritanızı değiştirin.  
+ Bir veya daha fazla sütun ise yazılabilir değiştirme, ekleme veya silme işlemleri başarısız olabilir. Bu sorunu gidermek için imleç harita değiştirin.  
   
 ## <a name="setting-data-in-rows"></a>Satırlardaki verileri ayarlama  
- [CRowset::SetData](../../data/oledb/crowset-setdata.md) geçerli satırda bir veya daha fazla sütunlarında veri değerlerini ayarlar. Aşağıdaki kod sütunlara "Name" ve "Stoktaki" Ürünler tablosunun bağlı veri üyelerinin değerlerini ayarlar ve ardından çağırır `SetData` 100. satırın satır kümesi için bu değerleri yazmak için:  
+ [CRowset::SetData](../../data/oledb/crowset-setdata.md) geçerli satırın bir veya daha fazla sütun veri değerlerini ayarlar. Aşağıdaki kod sütunları için "Name" ve "Stoktaki" tablosunun ürünleri bağlı veri üyelerinin değerlerini ayarlayan ve `SetData` bu değerleri kümesi % 100'lük bir satır yazmak için:  
   
-```  
+```cpp  
 // Instantiate a rowset based on the user record class  
 CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
@@ -79,19 +79,19 @@ HRESULT hr = product.SetData();
 ```  
   
 ## <a name="inserting-rows-into-rowsets"></a>Satır kümelerine ekleme  
- [CRowset::INSERT](../../data/oledb/crowset-insert.md) oluşturur ve erişimci verilerini kullanarak yeni bir satır başlatır. **INSERT** sonra geçerli satır; tamamen yeni bir satır oluşturur sonraki satıra geçerli satır Artır ya da değiştirmeden bırakın belirtmeniz gerekir. Ayarlayarak bunu *bGetRow* parametre:  
+ [CRowset::INSERT](../../data/oledb/crowset-insert.md) oluşturur ve veri erişimci kullanarak yeni bir satır başlatır. `Insert` Geçerli satırın sonra tamamen yeni bir satır oluşturur. sonraki satırda geçerli satıra artırmak ya da değiştirmeden belirtmek zorunda. Ayarlayarak bunu *bGetRow* parametresi:  
   
-```  
+```cpp  
 HRESULT Insert(int nAccessor = 0, bool bGetRow = false)  
 ```  
   
--   **yanlış** geçerli satır (Bu durumda bu, eklenen satırın'noktaları) sonraki satıra Artır (varsayılan değer) belirtir.  
+-   **false** geçerli satır (Bu durumda da, eklenen satırı'noktaları) sonraki satıra Artır (varsayılan değer) belirtir.  
   
--   **doğru** geçerli satır olduğu kalacağını belirtir.  
+-   **doğru** geçerli satırda olduğu kaldığını belirtir.  
   
- Aşağıdaki kod, Ürünler tablosunun sütunlara bağlı veri üyelerinin değerlerini ayarlar ve ardından çağırır **Ekle** satır kümesinin 100. satırın sonra bu değerleri içeren yeni bir satır eklemek için. Yeni satırda tanımsız verileri önlemek için tüm sütun değerlerini ayarlamanız önerilir:  
+ Aşağıdaki kod tablo ürünlerinin bağlı veri üyelerinin değerlerini ayarlar ve `Insert` satır kümesi % 100'lük satırının sonra bu değerleri içeren yeni bir satır eklemek için. Yeni satırda tanımsız veri önlemek için tüm sütun değerleri ayarlamak önerilir:  
   
-```  
+```cpp  
 // Instantiate a rowset based on the user record class  
 CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
@@ -138,14 +138,14 @@ m_dwQuantityPerUnitLength = 10;        // "Pack of 10" has 10 characters
 HRESULT hr = product.Insert();  
 ```  
   
- Daha ayrıntılı bir örnek için bkz: [CRowset::INSERT](../../data/oledb/crowset-insert.md).  
+ Daha ayrıntılı bir örnek için bkz. [CRowset::INSERT](../../data/oledb/crowset-insert.md).  
   
- Durum ve uzunluk veri üyeleri ayarlama hakkında daha fazla bilgi için bkz: [daha fazla Erişimcilerde alan durumu veri üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).  
+ Veri üyeleri, durum ve uzunluk ayarlama hakkında daha fazla bilgi için bkz. [daha fazla Erişimcilerde alan durumu veri üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).  
   
 ## <a name="deleting-rows-from-rowsets"></a>Kümelerinden satırları silme  
- [CRowset::Delete](../../data/oledb/crowset-delete.md) geçerli satır satır kümesinden siler. Aşağıdaki kod çağrıları **silmek** satır kümesinin 100. satırın kaldırmak için:  
+ [CRowset::Delete](../../data/oledb/crowset-delete.md) geçerli satır satır kümesinden siler. Aşağıdaki kod çağrıları `Delete` satır kümesi % 100'lük satırı kaldırmak için:  
   
-```  
+```cpp  
 // Instantiate a rowset based on the user record class  
 CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
@@ -158,26 +158,26 @@ product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100
 HRESULT hr = product.Delete();  
 ```  
   
-## <a name="immediate-and-deferred-updates"></a>Anında ve Ertelenmiş Güncelleştirmeler  
- Aksi belirtilmedikçe, çağrılar `SetData`, **Ekle**, ve **silmek** yöntemleri veri deposu hemen güncelleştirin. Böylece tüketici tüm değişiklikleri yerel önbellekte depolar ve ardından bunları veri deposuna aktarır aşağıdaki güncelleştirme yöntemlerini çağırdığınızda ancak, güncelleştirmelerinin erteleneceği olabilir:  
+## <a name="immediate-and-deferred-updates"></a>Hemen ve ertelenmiş güncelleştirme  
+ Aksi belirtilmedikçe, çağrılar `SetData`, `Insert`, ve `Delete` veri deposu hemen güncelleştirme yöntemleri. Ancak, tüketici tüm değişiklikleri yerel önbellekte depolar ve ardından bunları veri deposuna aktarır aşağıdaki güncelleştirme yöntemlerini çağırdığınızda güncelleştirmelerini ertele olabilir:  
   
--   [CRowset::Update](../../data/oledb/crowset-update.md) bekleyen tüm geçerli satırda son fetch itibaren yaptığınız değişiklikleri aktarır veya **güncelleştirme** üzerinde çağırın.  
+-   [CRowset::Update](../../data/oledb/crowset-update.md) bekleyen tüm değişiklikleri geçerli satırın son getirme bu yana yapılan aktarır veya `Update` çağrı.  
   
--   [CRowset::UpdateAll](../../data/oledb/crowset-updateall.md) bekleyen tüm satırları itibaren son fetch yapılan değişiklikler aktarır veya **güncelleştirme** üzerinde çağırın.  
+-   [CRowset::UpdateAll](../../data/oledb/crowset-updateall.md) bekleyen tüm değişiklikleri tüm satırları için yapılan son getirme beri aktarır veya `Update` çağrı.  
   
- Güncelleştirme yöntemleri tarafından kullanılmak üzere bu güncelleştirmeyi unutmayın, belirli bir anlamı komutunda değişiklikler yapma ve SQL güncelleştirme komut ile karıştırılmamalıdır (`SetData` SQL güncelleştirme komut eşdeğerdir).  
+ Güncelleştirme yöntemleri tarafından kullanılan bu güncelleştirmeyi unutmayın, değişiklikler komutunda, özel bir anlamı vardır ve SQL güncelleştirme komut ile karıştırılmamalıdır ise (`SetData` için SQL güncelleştirme komut eşdeğerdir).  
   
- Ertelenen güncelleştirmeleri, örneğin, bir dizi bankacılık işlemleri gibi durumlarda faydalıdır; bir işlem iptal edilirse sonuncu kaydedildikten sonra değişiklikler yapılana kadar bir dizi göndermek için değişikliği geri alabilirsiniz. Ayrıca, sağlayıcı daha verimli şekilde bir ağ çağrısı dönüşene paketleyebilirsiniz.  
+ Ertelenen güncelleştirmeler, örneğin, bir dizi bankacılık işlemleri gibi durumlarda kullanışlıdır; bir işlem iptal edilirse, sonuncu kaydedildikten sonra değişiklikler yapılana kadar bir dizi göndermek için değişikliği geri alabilirsiniz. Ayrıca, sağlayıcı daha verimli şekilde bir ağ çağrısı değişiklikleri gruplandırabilirsiniz.  
   
- Ertelenen güncelleştirmeleri desteklemek için ayarlamalısınız **DBPROP_IRowsetChange** özelliği "Güncelleştirme işlemlerini desteklemek" bahsedilen özelliklere ek olarak:  
+ Ertelenmiş güncelleştirmeleri destekleyecek şekilde ayarlamalısınız `DBPROP_IRowsetChange` özelliği "Güncelleştirme işlemleri destekleyen" açıklanan özelliklerine ek olarak:  
   
-```  
+```cpp  
 pPropSet->AddProperty(DBPROP_IRowsetUpdate, true);  
 ```  
   
- Çağırdığınızda **güncelleştirme** veya `UpdateAll`, yöntemler aktarımı değişiklikleri yerel önbellekten veri deposuna ve yerel önbelleğini silme. Güncelleştirme değişiklikleri yalnızca geçerli satır aktardığından, uygulamanızın izlemeniz güncelleştirileceğini ve ne zaman güncelleştirileceğini hangi satır çok önemlidir. Aşağıdaki örnekte, iki ardışık satırları güncelleştirmek gösterilmektedir:  
+ Çağırdığınızda `Update` veya `UpdateAll`, yöntemler aktarımı değişiklikleri yerel önbellekten veri deposuna ve ardından yerel önbelleğini silme. Güncelleştirme yalnızca geçerli satır için değişiklikleri aktardığından uygulamanızın hangi satır güncelleştirme ve ne zaman güncelleştirileceği izlemek, önemlidir. Aşağıdaki örnek, iki ardışık satırları güncelleştirme gösterilmektedir:  
   
-```  
+```cpp  
 // Instantiate a rowset based on the user record class  
 CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
@@ -207,13 +207,13 @@ HRESULT hr = product.SetData();  // No changes made to row 101 yet
 product.Update();                 // Update row 101 now  
 ```  
   
- Bekleyen değişikliklerin aktarılmasını sağlamak için çağırmalıdır **güncelleştirme** başka bir satıra geçmeden önce. Ancak, bu sıkıcı veya yetersiz olduğunda, örneğin, yüzlerce satırı güncelleştirmek uygulamanız gerektiğinde kullanabilirsiniz `UpdateAll` tüm satırların aynı anda güncelleştirmek için.  
+ Bekleyen değişikliklerin aktarılmasını sağlamak için çağırmalıdır `Update` başka bir satıra geçilmeden önce. Ancak, bu yorucu bir süreç ya da verimsiz olduğunda, örneğin, yüzlerce satırı güncelleştirmek, uygulamanız gerektiğinde kullanabilirsiniz `UpdateAll` tüm satırların aynı anda güncelleştirilecek.  
   
- Örneğin, ilk **güncelleştirme** çağrısı yukarıdaki kodda eksik, satır 100 değişmeden kalır, satır 101 değişirken. Bu noktadan sonra uygulamanızın ya da çağrı gerekirdi `UpdateAll` veya geri taşıyın satır 100 ve çağrısı **güncelleştirme** güncelleştirilmesi ilgili satır.  
+ Örneğin, ilk `Update` çağrı yukarıdaki kodda eksik, satır 100 değişmeden kalır, satır 101 değişecek ancak. Bu noktadan sonra uygulamanız ya da çağrı gerekirdi `UpdateAll` veya geri taşıyın satır 100 ve çağrı `Update` güncelleştirilecek ilgili satır için.  
   
- Son olarak, değişiklikleri ertelemek için bir temel neden onları geri alabilecek olmaktır. Çağırma [CRowset::Undo](../../data/oledb/crowset-undo.md) bekleyen değişiklikler yapılmadan önce yerel değiştirme önbelleğinin durumunu veri deposu durumuna geri alınır. Bu dikkate almak önemlidir **geri** alma değil (yalnızca en son değiştirilmeden önce durumu) tek adım yerel önbellek durumunu geri; bunun yerine, ilgili satır için yerel önbelleği temizler. Ayrıca, **geri** yalnızca geçerli satır etkiler.  
+ Son olarak, değişiklikleri ertelemek için bir temel nedeni geri almak mümkün olacak. Çağırma [CRowset::Undo](../../data/oledb/crowset-undo.md) bekleyen değişiklikler yapılmadan önce yerel değişiklik önbelleği durumunu veri deposunun durumuna geri alır. Dikkat etmeniz önemlidir `Undo` geri değil tek bir adımda (durum en son değişikliği) olarak yerel önbellek durumu geri; bunun yerine, ilgili satır için yerel önbellek temizler. Ayrıca, `Undo` yalnızca geçerli satırı etkiler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)   
  [CRowset sınıfı](../../data/oledb/crowset-class.md)   
- [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx)
+ [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx)

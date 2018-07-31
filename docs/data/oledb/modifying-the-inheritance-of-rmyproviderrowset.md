@@ -16,15 +16,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 75acbc8370c1ea164c72aa6f0c61a95fe287e3d6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 407406683f03dbba2d582b1ae24d5cc3bb8680a5
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106238"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336471"
 ---
 # <a name="modifying-the-inheritance-of-rmyproviderrowset"></a>RMyProviderRowset Devralmayı Değiştirme
-Eklemek için `IRowsetLocate` arabirim basit salt okunur sağlayıcı örneği, devralma Değiştir **RMyProviderRowset**. Başlangıçta, **RMyProviderRowset** devraldığı `CRowsetImpl`. Devralınan şekilde değiştirmenize gerek **CRowsetBaseImpl**.  
+Eklenecek `IRowsetLocate` arabirim basit bir salt okunur sağlayıcı örneği, devralınmasını Değiştir `RMyProviderRowset`. Başlangıçta `RMyProviderRowset` devraldığı `CRowsetImpl`. Devralınacak şekilde değiştirmeniz gerekir `CRowsetBaseImpl`.  
   
  Bunu yapmak için yeni bir sınıf oluşturun `CMyRowsetImpl`, MyProviderRS.h:  
   
@@ -40,24 +40,24 @@ class CMyRowsetImpl:
 };  
 ```  
   
- Şimdi, COM arabirimi eşlemesini şöyle MyProviderRS.h düzenleyin:  
+ Şimdi, şöyle MyProviderRS.h COM arabirim eşlemesini düzenle:  
   
-```  
+```cpp  
 BEGIN_COM_MAP(CMyRowsetImpl)  
    COM_INTERFACE_ENTRY(IRowsetLocate)  
    COM_INTERFACE_ENTRY_CHAIN(_RowsetBaseClass)  
 END_COM_MAP()  
 ```  
   
- Bu söyleyen bir COM arabirimi eşlemesini oluşturur `CMyRowsetImpl` çağırmak için **QueryInterface** her ikisi için de `IRowset` ve `IRowsetLocate` arabirimleri. Tüm diğer satır kümesi için uygulama almak için sınıflar, eşleme bağlantıları `CMyRowsetImpl` sınıfı başa **CRowsetBaseImpl** sınıf OLE DB Şablonları tarafından tanımlanan; harita söyler COM_INTERFACE_ENTRY_CHAIN makrosu kullanır COM taramak için OLE DB Şablonları eşleme **CRowsetBaseImpl** yanıt olarak bir `QueryInterface` çağırın.  
+ Bu söyleyen bir COM arabirim eşlemesi oluşturur `CMyRowsetImpl` çağrılacak `QueryInterface` hem `IRowset` ve `IRowsetLocate` arabirimleri. Tüm diğer satır kümesi uygulamasını almak için sınıflar, eşleme bağlantıları `CMyRowsetImpl` sınıfı yeniden `CRowsetBaseImpl` sınıfı OLE DB Şablonları tarafından tanımlı; içindeki COM eşlemesine taramak için OLE DB Şablonları söyler COM_INTERFACE_ENTRY_CHAIN makro eşlemesini kullanır `CRowsetBaseImpl` yanıt olarak bir `QueryInterface` çağırın.  
   
- Son olarak, bağlantı `RAgentRowset` için `CMyRowsetBaseImpl` değiştirerek `RAgentRowset` devralınacak `CMyRowsetImpl`aşağıdaki gibi:  
+ Son olarak, bağlantı `RAgentRowset` için `CMyRowsetBaseImpl` değiştirerek `RAgentRowset` devralınacak `CMyRowsetImpl`gibi:  
   
-```  
+```cpp  
 class RAgentRowset : public CMyRowsetImpl<RAgentRowset, CAgentMan, CMyProviderCommand>  
 ```  
   
- `RAgentRowset` artık kullanabilirsiniz `IRowsetLocate` satır kümesi sınıfı için uygulama kalan yararlanarak sırasında arabirimi.  
+ `RAgentRowset` artık `IRowsetLocate` yararlanırken satır kümesi sınıfı için uygulama rest arabirimi.  
   
  Bu yapıldığında, yapabilecekleriniz [Tüketiciye döndürülecek olan sütunları dinamik olarak belirleyen](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).  
   

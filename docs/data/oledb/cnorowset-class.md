@@ -21,15 +21,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 87d005dc19ef286bc4b0da927ecabcd90e6f0235
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e92c9bfb49bbb64faca633f04bb87f40028b6e1e
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33098166"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339568"
 ---
 # <a name="cnorowset-class"></a>CNoRowset Sınıfı
-Şablon bağımsız değişken kullanılan (`TRowset`) için [CCommand](../../data/oledb/ccommand-class.md) veya [CTable](../../data/oledb/ctable-class.md).  
+Bir şablon bağımsız değişkeni kullanılabilir (`TRowset`) için [CCommand](../../data/oledb/ccommand-class.md) veya [CTable](../../data/oledb/ctable-class.md).  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,28 +38,28 @@ template <class TAccessor = CAccessorBase>
 class CNoRowset  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `TAccessor`  
+### <a name="parameters"></a>Parametreler  
+ *TAccessor*  
  Bir erişimci sınıfı. Varsayılan, `CAccessorBase` değeridir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım `CNoRowset` komutu bir satır kümesi döndürmezse şablon bağımsız değişken olarak.  
+ Kullanım `CNoRowset` komut satır döndürmezse, şablon bağımsız değişken olarak.  
   
- `CNoRowset` diğer erişimci sınıfı yöntemleri için her biri karşılık gelen aşağıdaki saplama yöntemlerini uygular:  
+ `CNoRowset` karşılık gelen her biri için diğer erişimcisi sınıf yöntemleri aşağıdaki saptama yöntemleri uygular:  
   
--   **BindFinished** -bağlama tamamlandığında gösterir (döndürür `S_OK`).  
+-   `BindFinished` -Bağlama ne zaman tamamlandığını gösterir (döndürür `S_OK`).  
   
--   **Kapat** -satır ve geçerli Irowset arabirimi serbest bırakır.  
+-   `Close` -Satır ve geçerli Irowset arabirimi serbest bırakır.  
   
--   `GetIID` -Bağlantı noktası arabirimi Kimliğini alır.  
+-   `GetIID` -Bir bağlantı noktasının arabirim kimliği alır.  
   
--   **Getınterface** -bir arabirim alır.  
+-   `GetInterface` -Bir arabirim alır.  
   
--   `GetInterfacePtr` -Kapsüllenmiş arabirim işaretçisi alır.  
+-   `GetInterfacePtr` -Bir kapsüllenmiş arabirim işaretçisini alır.  
   
--   **Set erişimcisi** -erişimcisi için bir işaretçi ayarlar.  
+-   `SetAccessor` -Bir işaretçi için erişimci olarak ayarlar.  
   
--   **SetupOptionalRowsetInterfaces** -isteğe bağlı arabirimler satır kümesi için ayarlar.  
+-   `SetupOptionalRowsetInterfaces` -İsteğe bağlı arabirimler satır kümesi için ayarlar.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldbcli.h  

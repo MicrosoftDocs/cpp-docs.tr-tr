@@ -44,12 +44,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5e77b92822ac82a4fbea06fe354952c9dbd79378
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 111b5ea4f6c25aab2abc4897c9e4bda2a14362a9
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207591"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336946"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 Devralınan `DBPROPIDSET` yapısı ve anahtar alanları başlatan bir oluşturucu ekler ve [Addpropertyıd](../../data/oledb/cdbpropidset-addpropertyid.md) erişim yöntemi.  
@@ -88,7 +88,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      bool AddPropertyID(DBPROPID propid) throw();  
+bool AddPropertyID(DBPROPID propid) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -101,7 +101,7 @@ Oluşturucu. Başlatır `rgProperties`, `cProperties`ve (isteğe bağlı olarak)
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      CDBPropIDSet(const GUID& guid);  
+CDBPropIDSet(const GUID& guid);  
 
 CDBPropIDSet(const CDBPropIDSet& propidset);  
 
@@ -121,7 +121,7 @@ GUID alanı ayarlar `DBPROPIDSET` yapısı.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      void SetGUID(const GUID& guid) throw();  
+void SetGUID(const GUID& guid) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -137,7 +137,7 @@ Bir özellik kimliği başka bir kimlik özelliği için set içeriğini atar.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();  
+CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();  
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

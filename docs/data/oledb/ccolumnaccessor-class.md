@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8d211277a8354d94f1892b97ea8f808cc0b22c30
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c55b2e10112c38835bb1f230970db56a6f53d4e
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33095326"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341068"
 ---
 # <a name="ccolumnaccessor-class"></a>CColumnAccessor Sınıfı
 Eklenen tüketici kod oluşturur.  
@@ -36,23 +36,23 @@ class CColumnAccessor : public CAccessorBase
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Eklenen kod içinde her sütun ayrı bir erişimci bağlıdır. Bu sınıf eklenen kodda kullanılır farkında olmalıdır (örneğin, bu hata ayıklama sırasında karşılaşabileceğiniz), ancak genellikle hiçbir zaman veya yöntemlerinden doğrudan kullanmanız gerekir.  
+ Eklenen kodun her sütun ayrı bir erişimci bağlıdır. Bu sınıf eklenen kodun kullanıldığını bilmeniz gerekir (örneğin, bu hata ayıklama sırasında karşılaşabileceğiniz), ancak genellikle hiçbir zaman doğrudan veya yöntemlerini kullanın.  
   
- `CColumnAccessor` her biri karşılık gelen diğer erişimci sınıfı yöntemlerine işlevsellik aşağıdaki saplama yöntemlerini uygular:  
+ `CColumnAccessor` işlev diğer erişimcisi sınıf yöntemleri karşılık her biri aşağıdaki saptama yöntemleri uygular:  
   
--   `CColumnAccessor` Oluşturucusu oluşturur ve başlatır `CColumnAccessor` nesnesi.  
+-   `CColumnAccessor` Oluşturucusu oluşturur ve başlatır `CColumnAccessor` nesne.  
   
--   `CreateAccessor` Bağlama yapıları sütunu için bellek ayırır ve sütun veri üyelerine başlatır.  
+-   `CreateAccessor` Bağlama yapıları sütun için bellek ayırır ve sütun veri üyelerine başlatır.  
   
--   **BindColumns** sütunlar için erişimciler bağlar.  
+-   `BindColumns` Sütunları için erişimciler bağlar.  
   
--   **SetParameterBuffer** arabellekleri için parametreleri ayırır.  
+-   `SetParameterBuffer` Arabellekler için parametreleri ayırır.  
   
--   `AddParameter` Parametre giriş parametresi giriş yapılara ekler.  
+-   `AddParameter` Bir parametre girişi parametre girişi yapılara ekler.  
   
--   **HasOutputColumns** erişimci sütunları çıktısı olup olmadığını belirler  
+-   `HasOutputColumns` Erişimci sütunları çıktısı olup olmadığını belirler  
   
--   **HasParameters** erişimci parametreleri olup olmadığını belirler.  
+-   `HasParameters` Erişimcisi parametrelere sahip olup olmadığını belirler.  
   
 -   `BindParameters` Oluşturulan parametre sütunları bağlar.  
   

@@ -1,5 +1,5 @@
 ---
-title: Sağlayıcınızdaki sütunları dinamik olarak bağlama | Microsoft Docs
+title: Sütunları dinamik olarak bağlama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,35 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 566a7248fabc1fcdb66224ccbc302e3f8038c5f6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 345bc66200ea4a1d6d4bbb79313157e81b9a2edb
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33101698"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336696"
 ---
 # <a name="dynamically-binding-columns-in-your-provider"></a>Sağlayıcınızdaki Sütunları Dinamik Olarak Bağlama
-Dinamik sütun bağlama gerçekten emin olun. Çünkü gerekebilir:  
+Dinamik sütun bağlama ihtiyacınız olduğundan emin olun. Çünkü gerekebilir:  
   
--   Satır kümesi sütunlarının derleme zamanında tanımlı değil.  
+-   Derleme zamanında, satır kümesi sütunlarının tanımlı değil.  
   
--   Sütunlar ekleyen bir öğe yer işaretleri gibi destekler.  
+-   Yer işaretleri gibi sütunları ekler bir öğenin desteklediğiniz.  
   
 ### <a name="to-implement-dynamic-column-binding"></a>Dinamik sütun bağlama uygulamak için  
   
-1.  Herhangi bir kaldırma **PROVIDER_COLUMN_MAP**kodunuzdan s.  
+1.  Kaldırmak `PROVIDER_COLUMN_MAP`kodunuzdan s.  
   
-2.  Kullanıcı kaydı (yapınız), şu bildirimi ekleyin:  
+2.  Kullanıcı kaydı (yapınızı), aşağıdaki bildirimi ekleyin:  
   
-    ```  
+    ```cpp  
     static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);  
     ```  
   
-3.  Uygulama `GetColumnInfo` işlevi. Bu işlev, bilgilerin nasıl depolandığını yerleştirir. Özellikleri veya bu işlevi için diğer bilgileri almak gerekebilir. Benzer şekilde bir makro oluşturmak isteyebilirsiniz [COLUMN_ENTRY](../../data/oledb/column-entry.md) kendi bilgilerini eklemek için makrosu.  
+3.  Uygulama `GetColumnInfo` işlevi. Bu işlev, bilgilerin nasıl depolandığını yerleştirir. Özellikleri veya bu işlevi diğer bilgilerini almak gerekebilir. Benzer bir makro oluşturmak isteyebilirsiniz [COLUMN_ENTRY](../../data/oledb/column-entry.md) kendi bilgilerini eklemek için makro.  
   
      Aşağıdaki örnekte gösterildiği bir `GetColumnInfo` işlevi.  
   
-    ```  
+    ```cpp  
     // Check the property flag for bookmarks, if it is set, set the zero  
     // ordinal entry in the column map with the bookmark information.  
     CAgentRowset* pRowset = (CAgentRowset*) pThis;  

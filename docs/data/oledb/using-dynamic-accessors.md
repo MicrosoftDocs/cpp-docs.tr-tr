@@ -16,22 +16,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 700a959742fafd4478659ff08821b043aff8bc14
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0d5015a69c01982398dcb661fc7ea86232dde7f2
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111978"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340990"
 ---
 # <a name="using-dynamic-accessors"></a>Dinamik Erişimcileri Kullanma
 
-Dinamik erişimciler veritabanı şeması (temel yapısı) olanağıyla varsa, bir veri kaynağına erişmek sağlar. OLE DB şablonları kitaplığı, bu yapmanıza yardımcı olmak için çeşitli sınıflar sağlar.
+Dinamik Erişimcileri, veritabanı şemasını (temel alınan yapısını) hiçbir bilgiye sahip olduğunda bir veri kaynağına erişmek izin verin. OLE DB şablonları kitaplığı, bunu yapmanıza yardımcı olmak için çeşitli sınıflar sağlar.
 
-[DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) örnek dinamik erişimciyi sınıfları sütun bilgi edinebilir ve dinamik olarak erişimciler oluşturmak için nasıl kullanılacağını gösterir.
+[DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) örnek sütun bilgisi edinmek ve dinamik erişimciler oluşturmak için dinamik erişimci sınıflarını kullanmayı gösterir.
 
 ## <a name="using-cdynamicaccessor"></a>CDynamicAccessor kullanma
 
-[CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) veritabanı şeması (veritabanının temel yapısı) olanağıyla varsa, bir veri kaynağı erişmenize olanak tanır. `CDynamicAccessor` yöntemleri sütun adları, sayı ve veri türü gibi sütun bilgileri edinin. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın. Sütun bilgileri oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Arabellek kullanımından verileri elde [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md) yöntemi.
+[CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) veritabanı şeması (veritabanı yapılarını) hiçbir bilgiye sahip olduğunda bir veri kaynağına erişmenizi sağlar. `CDynamicAccessor` sütun bilgisi gibi sütun adları, sayı ve veri türü yöntemleri edinin. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın. Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Veri arabelleği kullanımından elde [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md) yöntemi.
 
 ## <a name="example"></a>Örnek
 
@@ -103,9 +103,9 @@ int main(int argc, char* argv[] )
 
 ## <a name="using-cdynamicstringaccessor"></a>CDynamicStringAccessor kullanma
 
-[CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md) gibi çalışır [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md), dışındaki önemli bir şekilde. Sırada `CDynamicAccessor` sağlayıcı tarafından bildirilen yerel biçiminde veri istekleri `CDynamicStringAccessor` sağlayıcı dize veri olarak veri deposundan erişilen tüm veriler getirilemedi ister. Bu, özellikle görüntüleme ya da veri deposunun içeriği yazdırma gibi veri deposundaki değerlerin hesaplamasını gerektirmeyen basit görevler için kullanışlıdır.
+[CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md) gibi çalışır [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md), önemli bir şekilde hariç. Sırada `CDynamicAccessor` sağlayıcı tarafından bildirilen yerel biçiminde veri istekleri `CDynamicStringAccessor` sağlayıcı dize verileri veri deposundan erişilen tüm verileri getirme ister. Bu, özellikle görüntüleme veya veri deposunun içeriği yazdırma gibi veri deposundaki değerleri hesaplama gerektirmeyen basit görevler için kullanışlıdır.
 
-Kullanım `CDynamicStringAccessor` sütun bilgileri almak için yöntemleri. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın. Sütun bilgileri oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Arabellek kullanımından verileri elde [CDynamicStringAccessor::GetString](../../data/oledb/cdynamicstringaccessor-getstring.md) veya arabellek kullanmaya mağaza [CDynamicStringAccessor::SetString](../../data/oledb/cdynamicstringaccessor-setstring.md).
+Kullanım `CDynamicStringAccessor` sütun bilgisi edinmek için. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın. Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Veri arabelleği kullanımından elde [CDynamicStringAccessor::GetString](../../data/oledb/cdynamicstringaccessor-getstring.md) veya arabelleği kullanarak mağaza [CDynamicStringAccessor::SetString](../../data/oledb/cdynamicstringaccessor-setstring.md).
 
 ## <a name="example"></a>Örnek
 
@@ -165,11 +165,11 @@ int main(int argc, char* argv[] )
 
 ## <a name="using-cdynamicparameteraccessor"></a>CDynamicParameterAccessor Kullanma
 
-[CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) benzer [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md)dışında `CDynamicParameterAccessor` çağırarak ayarlanacak parametre bilgilerini elde eder [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) arabirim. Sağlayıcı desteklemelidir `ICommandWithParameters` tüketici bu sınıfını kullanmak için.
+[CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) benzer [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md)dışında `CDynamicParameterAccessor` çağırarak ayarlamak için parametre bilgilerini alır [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) arabirim. Sağlayıcı desteklemelidir `ICommandWithParameters` tüketici Bu sınıf kullanmak için.
 
-Parametre bilgileri oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Parametre veri arabelleğinden kullanarak elde [CDynamicParameterAccessor::GetParam](../../data/oledb/cdynamicparameteraccessor-getparam.md) ve [CDynamicParameterAccessor::GetParamType](../../data/oledb/cdynamicparameteraccessor-getparamtype.md).
+Parametre bilgileri oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Parametre verisi arabellekteki kullanarak elde [CDynamicParameterAccessor::GetParam](../../data/oledb/cdynamicparameteraccessor-getparam.md) ve [CDynamicParameterAccessor::GetParamType](../../data/oledb/cdynamicparameteraccessor-getparamtype.md).
 
-Bu sınıf bir SQL Server saklı yordamı yürütmek ve çıkış parametresi değerlerini almak için nasıl kullanılacağını gösteren bir örnek için bkz: [DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) örnek kodda [Microsoft VCSamples](https://github.com/Microsoft/VCSamples) GitHub deposunu.
+Bu sınıf bir SQL Server saklı yordamı yürütme ve çıkış parametresi değerleri almak için nasıl kullanılacağını gösteren bir örnek için bkz: [DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) örnek kodda [Microsoft VCSamples](https://github.com/Microsoft/VCSamples) github deposu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

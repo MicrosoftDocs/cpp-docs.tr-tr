@@ -19,44 +19,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aaed092d0a67c80852216b6342d32820c7028c4b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e8a1a5f5256087a8869426489fe01250b16fc598
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33112764"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340517"
 ---
 # <a name="rowset-object-interfaces"></a>Satır Kümesi Nesnesi Arabirimleri
-Aşağıdaki tabloda satır kümesi nesnesi için OLE DB tarafından tanımlanan zorunlu ve isteğe bağlı arabirimler gösterilir.  
+Aşağıdaki tabloda bir satır kümesi nesnesi için OLE DB tarafından tanımlanan zorunlu ve isteğe bağlı arabirimler gösterilir.  
   
 |Arabirim|Gerekli mi?|OLE DB Şablonları tarafından uygulanır?|  
 |---------------|---------------|--------------------------------------|  
-|[IAccessor](https://msdn.microsoft.com/en-us/library/ms719672.aspx)|Zorunlu|Evet|  
-|[IColumnsInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx)|Zorunlu|Evet|  
-|[IConvertType](https://msdn.microsoft.com/en-us/library/ms715926.aspx)|Zorunlu|Evet|  
-|[IRowset](https://msdn.microsoft.com/en-us/library/ms720986.aspx)|Zorunlu|Evet|  
-|[IRowsetInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx)|Zorunlu|Evet|  
-|[IChapteredRowset](https://msdn.microsoft.com/en-us/library/ms718180.aspx)|İsteğe Bağlı|Hayır|  
-|[IColumnsInfo2](https://msdn.microsoft.com/en-us/library/ms712953.aspx)|İsteğe Bağlı|Hayır|  
-|[IColumnsRowset](https://msdn.microsoft.com/en-us/library/ms722657.aspx)|İsteğe Bağlı|Hayır|  
+|[IAccessor](https://msdn.microsoft.com/library/ms719672.aspx)|Zorunlu|Evet|  
+|[IColumnsInfo](https://msdn.microsoft.com/library/ms724541.aspx)|Zorunlu|Evet|  
+|[IConvertType](https://msdn.microsoft.com/library/ms715926.aspx)|Zorunlu|Evet|  
+|[IRowset](https://msdn.microsoft.com/library/ms720986.aspx)|Zorunlu|Evet|  
+|[IRowsetInfo](https://msdn.microsoft.com/library/ms724541.aspx)|Zorunlu|Evet|  
+|[IChapteredRowset](https://msdn.microsoft.com/library/ms718180.aspx)|İsteğe Bağlı|Hayır|  
+|[IColumnsInfo2](https://msdn.microsoft.com/library/ms712953.aspx)|İsteğe Bağlı|Hayır|  
+|[IColumnsRowset](https://msdn.microsoft.com/library/ms722657.aspx)|İsteğe Bağlı|Hayır|  
 |[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|İsteğe Bağlı|Evet (ATL)|  
-|[IDBAsynchStatus](https://msdn.microsoft.com/en-us/library/ms709832.aspx)|İsteğe Bağlı|Hayır|  
-|[IGetRow](https://msdn.microsoft.com/en-us/library/ms718047.aspx)|İsteğe Bağlı|Hayır|  
-|[IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx)|İsteğe Bağlı|Evet|  
-|[IRowsetChapterMember](https://msdn.microsoft.com/en-us/library/ms725430.aspx)|İsteğe Bağlı|Hayır|  
-|[IRowsetCurrentIndex](https://msdn.microsoft.com/en-us/library/ms709700.aspx)|İsteğe Bağlı|Hayır|  
-|[IRowsetFind](https://msdn.microsoft.com/en-us/library/ms724221.aspx)|İsteğe Bağlı|Hayır|  
-|[IRowsetIdentity](https://msdn.microsoft.com/en-us/library/ms715913.aspx)|İsteğe bağlı (ancak 0 düzey sağlayıcılar için gereklidir)|Evet|  
-|[IRowsetIndex](https://msdn.microsoft.com/en-us/library/ms719604.aspx)|İsteğe Bağlı|Hayır|  
-|[IRowsetLocate](https://msdn.microsoft.com/en-us/library/ms721190.aspx)|İsteğe Bağlı|Evet|  
-|[IRowsetRefresh](https://msdn.microsoft.com/en-us/library/ms714892.aspx)|İsteğe Bağlı|Hayır|  
-|[IRowsetScroll](https://msdn.microsoft.com/en-us/library/ms712984.aspx)|İsteğe Bağlı|Hayır|  
-|[IRowsetUpdate](https://msdn.microsoft.com/en-us/library/ms714401.aspx)|İsteğe Bağlı|Evet|  
-|[IRowsetView](https://msdn.microsoft.com/en-us/library/ms709755.aspx)|İsteğe Bağlı|Hayır|  
-|[ISupportErrorInfo](https://msdn.microsoft.com/en-us/library/ms715816.aspx)|İsteğe Bağlı|Evet|  
-|[IRowsetBookmark](https://msdn.microsoft.com/en-us/library/ms714246.aspx)|İsteğe Bağlı|Hayır|  
+|[IDBAsynchStatus](https://msdn.microsoft.com/library/ms709832.aspx)|İsteğe Bağlı|Hayır|  
+|[IGetRow](https://msdn.microsoft.com/library/ms718047.aspx)|İsteğe Bağlı|Hayır|  
+|[IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx)|İsteğe Bağlı|Evet|  
+|[IRowsetChapterMember](https://msdn.microsoft.com/library/ms725430.aspx)|İsteğe Bağlı|Hayır|  
+|[IRowsetCurrentIndex](https://msdn.microsoft.com/library/ms709700.aspx)|İsteğe Bağlı|Hayır|  
+|[IRowsetFind](https://msdn.microsoft.com/library/ms724221.aspx)|İsteğe Bağlı|Hayır|  
+|[IRowsetIdentity](https://msdn.microsoft.com/library/ms715913.aspx)|İsteğe bağlı (ancak düzeyi 0 sağlayıcıları için gereklidir)|Evet|  
+|[IRowsetIndex](https://msdn.microsoft.com/library/ms719604.aspx)|İsteğe Bağlı|Hayır|  
+|[IRowsetLocate](https://msdn.microsoft.com/library/ms721190.aspx)|İsteğe Bağlı|Evet|  
+|[IRowsetRefresh](https://msdn.microsoft.com/library/ms714892.aspx)|İsteğe Bağlı|Hayır|  
+|[IRowsetScroll](https://msdn.microsoft.com/library/ms712984.aspx)|İsteğe Bağlı|Hayır|  
+|[IRowsetUpdate](https://msdn.microsoft.com/library/ms714401.aspx)|İsteğe Bağlı|Evet|  
+|[IRowsetView](https://msdn.microsoft.com/library/ms709755.aspx)|İsteğe Bağlı|Hayır|  
+|[ISupportErrorInfo](https://msdn.microsoft.com/library/ms715816.aspx)|İsteğe Bağlı|Evet|  
+|[IRowsetBookmark](https://msdn.microsoft.com/library/ms714246.aspx)|İsteğe Bağlı|Hayır|  
   
- Sihirbaz tarafından oluşturulan satır kümesi nesnesi uygulayan `IAccessor`, `IRowset`, ve `IRowsetInfo` devralma yoluyla. `IAccessorImpl` İki çıktı sütununu bağlar. `IRowset` Arabirimi öğesinden satır ve verileri işler. `IRowsetInfo` Arabirimi satır kümesi özelliklerini işler.  
+ Sihirbazın ürettiği satır kümesi nesnesi uygulayan `IAccessor`, `IRowset`, ve `IRowsetInfo` devralma yoluyla. `IAccessorImpl` Hem çıkış sütunları bağlar. `IRowset` Arabirimi öğesinden satır ve verileri işler. `IRowsetInfo` Arabirimi satır kümesi özellikleri işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

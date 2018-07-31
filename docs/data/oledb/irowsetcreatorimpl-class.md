@@ -30,12 +30,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b8d43c0824b2f4783b9a09782360940fb1327d99
-ms.sourcegitcommit: e5792fcb89b9ba64c401f90f4f26a8e45d4a2359
+ms.openlocfilehash: 0c828708a088c8fe31075a8fe8504f3a1f8c14b4
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39322065"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337103"
 ---
 # <a name="irowsetcreatorimpl-class"></a>IRowsetCreatorImpl Sınıfı
 Aynı işlevleri gerçekleştiren `IObjectWithSite` ancak OLE DB özelliklerini de etkinleştirir `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS`.  
@@ -72,7 +72,7 @@ Satır kümesi nesnesi içeren siteyi ayarlar. Daha fazla bilgi için [IObjectWi
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      STDMETHOD(SetSite )(IUnknown* pCreator);  
+STDMETHOD(SetSite )(IUnknown* pCreator);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

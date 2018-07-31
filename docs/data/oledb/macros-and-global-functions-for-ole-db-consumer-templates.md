@@ -111,12 +111,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e5d9105492af55547794023c3574fb626d470828
-ms.sourcegitcommit: 0bf5f6634d66ed92fffb32291ad9f854d9895b17
+ms.openlocfilehash: a915a581a574193918f86f80083d3202c9949674
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39250673"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338154"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 OLE DB Tüketici şablonları aşağıdaki makroları ve genel işlevler şunlardır:  
@@ -197,7 +197,7 @@ Bir hata döndürülürse, OLE DB hata kaydı bilgi döküm cihaza dökümünü 
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
+inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -305,7 +305,6 @@ Bir erişimci girdinin sonunu işaretler.
   
 ```cpp
 END_ACCESSOR()  
-  
 ```  
   
 #### <a name="remarks"></a>Açıklamalar  
@@ -321,7 +320,6 @@ Erişimci eşleme girişleri sonunu işaretler.
   
 ```cpp
 END_ACCESSOR_MAP()  
-  
 ```  
   
 #### <a name="remarks"></a>Açıklamalar  
@@ -335,7 +333,7 @@ Sütun eşleme girişi başlangıcını işaretler.
   
 #### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 BEGIN_COLUMN_MAP(x)  
 ```  
   
@@ -362,7 +360,6 @@ BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanıl
   
 ```cpp
 BLOB_ENTRY(nOrdinal, IID, flags, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -388,7 +385,6 @@ BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanıl
   
 ```cpp
 BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -453,8 +449,7 @@ BEGIN_COLUMN_MAP veya BEGIN_ACCESSOR_MAP ikili büyük nesne bağlamak için kul
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)  
-  
+BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)   
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -586,7 +581,6 @@ Yer işareti sütunu bağlar.
   
 ```cpp
 BOOKMARK_ENTRY(variable)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -652,7 +646,6 @@ Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütun
   
 ```cpp
 COLUMN_ENTRY(nOrdinal, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -683,7 +676,6 @@ Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu te
   
 ```cpp
 COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, status)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -732,7 +724,6 @@ Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu te
   
 ```cpp
 COLUMN_ENTRY_LENGTH(nOrdinal, data, length)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -763,7 +754,6 @@ Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu te
   
 ```cpp
 COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -797,7 +787,6 @@ Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütun
   
 ```cpp
 COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -831,7 +820,6 @@ Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu te
   
 ```cpp
 COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -868,7 +856,6 @@ Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu te
   
 ```cpp
 COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -908,7 +895,6 @@ Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu te
   
 ```cpp
 COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -945,7 +931,6 @@ Satır kümesi üzerindeki bir bağlamaya, veritabanında belirli bir sütunu te
   
 ```cpp
 COLUMN_ENTRY_STATUS(nOrdinal, data, status)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -976,7 +961,6 @@ Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *türü* pa
   
 ```cpp
 COLUMN_ENTRY_TYPE (nOrdinal, wType, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -999,7 +983,6 @@ Veritabanındaki belirli bir sütuna bağlama temsil eder. Destekler *türü* ve
   
 ```cpp
 COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1025,7 +1008,6 @@ Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütun
   
 ```cpp
 COLUMN_NAME(pszName, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1088,7 +1070,6 @@ Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütun
   
 ```cpp
 COLUMN_NAME_LENGTH(pszName, data, length)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1270,7 +1251,6 @@ Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütun
   
 ```cpp
 COLUMN_NAME_TYPE(pszName, wType, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1293,7 +1273,6 @@ Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütun
   
 ```cpp
 COLUMN_NAME_TYPE_PS(pszName, wType, nPrecision, nScale, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1322,7 +1301,6 @@ Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütun
   
 ```cpp
 COLUMN_NAME_TYPE_SIZE(pszName, wType, nLength, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1348,7 +1326,6 @@ Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütun
   
 ```cpp
 COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1374,7 +1351,6 @@ Sütun eşleme girişleri sonunu işaretler.
   
 ```cpp
 END_COLUMN_MAP()  
-  
 ```  
   
 #### <a name="remarks"></a>Açıklamalar  
@@ -1393,7 +1369,6 @@ Satır kümesi kullanırken oluşturmak için kullanılacak komut belirtir [CCom
   
 ```cpp
 DEFINE_COMMAND(x, szCommand)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1418,7 +1393,6 @@ Satır kümesi kullanırken oluşturmak için kullanılacak komut belirtir [CCom
   
 ```cpp
 DEFINE_COMMAND_EX(x, wszCommand)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1443,7 +1417,6 @@ Parametre eşleme girişleri başlangıcını işaretler.
   
 ```cpp
 BEGIN_PARAM_MAP(x)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -1463,7 +1436,6 @@ Parametre eşleme girişleri sonunu işaretler.
   
 ```cpp
 END_PARAM_MAP()  
-  
 ```  
   
 #### <a name="example"></a>Örnek  
@@ -1476,7 +1448,6 @@ SET_PARAM_TYPE makrosu giriş, çıkış veya giriş/çıkış izleyin COLUMN_EN
   
 ```cpp
 SET_PARAM_TYPE(type)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

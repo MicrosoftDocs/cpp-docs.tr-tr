@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d6d05ac97846f55cf65d4010179b28d2b543ef66
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e56f71a427fda2444992cc0ed2c3b6166993af1d
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33096489"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341029"
 ---
 # <a name="cdynamicstringaccessora-class"></a>CDynamicStringAccessorA Sınıfı
-Veritabanı şeması (temel yapısı) olanağıyla varsa, bir veri kaynağına erişim sağlar.  
+Veritabanı şeması (temelindeki) hiçbir bilgiye sahip olduğunda bir veri kaynağına erişim sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,12 +34,12 @@ typedef CDynamicStringAccessorT<CHAR, DBTYPE_STR> CDynamicStringAccessorA;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Her ikisi de sağlayıcı dize verileri, veri deposundan erişilen tüm veriler getirilemedi isteği ancak `CDynamicStringAccessor` istekleri ANSI dize verileri.  
+ Her ikisi de sağlayıcı veri deposu olarak dize verileri, erişilen tüm verileri getirme istek ancak `CDynamicStringAccessor` istekleri ANSI veri dizesi.  
   
- `CDynamicStringAccessorA` devralınan **GetString** ve `SetString` gelen `CDynamicStringAccessor`. Bu yöntemleri kullandığınızda, bir `CDynamicStringAccessorA` nesnesi ***BaseType*** olan **CHAR**.  
+ `CDynamicStringAccessorA` devralınan `GetString` ve `SetString` gelen `CDynamicStringAccessor`. Bu yöntemleri kullanırken bir `CDynamicStringAccessorA` nesnesi ***BaseType*** olduğu **CHAR**.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi**: atldbcli.h  
+ **Üst bilgi**: atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   

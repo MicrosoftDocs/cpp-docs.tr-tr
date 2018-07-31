@@ -19,50 +19,50 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 549f8495ca3a088ec4314cd26318d19f9a5a3176
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e540b68b820234ee6d30295b40c7e0f4cb7c806d
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33098010"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338596"
 ---
 # <a name="transaction-how-transactions-affect-updates-odbc"></a>İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)
-Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) düzenleme arabelleği (işlemleri dışında kullanılan aynı yöntemi) kullanımıyla işlemleri sırasında yönetilir. Kayıt alan veri üyeleri topluca geçici olarak sırasında kayıt yedekler geçerli kaydı içeren düzenleme arabelleği görevi gören bir `AddNew` veya **Düzenle**. Sırasında bir **silmek** işlemi, geçerli kayıt yedeklenmez bir işlem içinde. Düzenleme arabelleği ve nasıl geçerli kayıt güncelleştirmeleri depolamak hakkında daha fazla bilgi için bkz: [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).  
+Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) sırasında işlem düzenleme arabelleği (işlem dışında kullanılan aynı yönteme) kullanılarak yönetilir. Kayıt alan veri üyeleri topluca kayıt sırasında geçici olarak yedekler geçerli kayıt içeren düzenleme arabelleği görevi gören bir `AddNew` veya `Edit`. Sırasında bir `Delete` işlemi, geçerli kayıt yedeklenmez bir işlem içinde. Düzenleme arabelleği ve nasıl kayıt güncelleştirmeleri depolamak hakkında daha fazla bilgi için bkz. [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).  
   
 > [!NOTE]
->  Toplu satır getirme uyguladıysanız, çağıramazsınız `AddNew`, **Düzenle**, veya **silmek**. Bunun yerine, veri kaynağı güncelleştirmelerini gerçekleştirmek için kendi işlevlerinizi yazmanız gerekir. Toplu satır getirme hakkında daha fazla bilgi için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
+>  Toplu satır getirme uyguladıysanız çağıramazsınız `AddNew`, `Edit`, veya `Delete`. Bunun yerine, veri kaynağı güncelleştirmelerini gerçekleştirmek için kendi işlevleri yazmanız gerekir. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- İşlemleri sırasında `AddNew`, **Düzenle**, ve **silmek** işlem yürütülmeli veya geri alındı. Etkilerini **CommitTrans** ve **geri alma** geçerli kaydın düzenleme ara yüklenmemesine neden olabilir. Geçerli kayıt uygun şekilde geri yüklendiğinden emin olmak için anlamak önemlidir nasıl **CommitTrans** ve **geri alma** üye işlevlerini `CDatabase` güncellemeişlevleriylebirlikteçalışma`CRecordset`.  
+ İşlem sırasında `AddNew`, `Edit`, ve `Delete` işlem kaydedilmiş veya geri alındı. Etkilerini `CommitTrans` ve `Rollback` geçerli kayıt düzenleme ara yüklenmemesine neden olabilir. Geçerli kayıt düzgün bir şekilde geri yüklendiğinden emin olmak için anlamak önemlidir nasıl `CommitTrans` ve `Rollback` üye işlevleri `CDatabase` güncelleştirme işlevlerini ile çalışmak `CRecordset`.  
   
-##  <a name="_core_how_committrans_affects_updates"></a> CommitTrans Güncellemeleri nasıl etkiler  
- Aşağıdaki tabloda etkilerini açıklar **CommitTrans** hareketleri.  
+##  <a name="_core_how_committrans_affects_updates"></a> CommitTrans güncelleştirmeleri nasıl etkiler?  
+ Aşağıdaki tablo etkilerini açıklar `CommitTrans` işlemlerle ilgili.  
   
-### <a name="how-committrans-affects-updates"></a>CommitTrans Güncellemeleri nasıl etkiler  
+### <a name="how-committrans-affects-updates"></a>CommitTrans güncelleştirmeleri nasıl etkiler?  
   
-|Çalışma|Veri kaynağının durumu|  
+|Çalışma|Veri kaynağı durumu|  
 |---------------|---------------------------|  
-|`AddNew` ve **güncelleştirme**ve ardından **CommitTrans**|Yeni kayıt veri kaynağına eklenir.|  
-|`AddNew` (olmadan **güncelleştirme**) ve ardından **CommitTrans**|Yeni kayıt kaybolur. Kaydı veri kaynağına eklenmedi.|  
-|**Düzen** ve **güncelleştirme**ve ardından **CommitTrans**|Veri kaynağına kaydedilen düzenlemeler.|  
-|**Düzen** (olmadan **güncelleştirme**) ve ardından **CommitTrans**|Kayıt düzenlemeleri kaybolur. Kayıt veri kaynağında değişmeden kalır.|  
-|**Silme** sonra **CommitTrans**|Veri kaynağından silinen kayıtlar.|  
+|`AddNew` ve `Update`ve ardından `CommitTrans`|Veri kaynağı için yeni bir kayıt eklenir.|  
+|`AddNew` (olmadan `Update`) ve ardından `CommitTrans`|Yeni kayıt kaybolur. Kaydı veri kaynağına ekli değil.|  
+|`Edit` ve `Update`ve ardından `CommitTrans`|Düzenlemeler, veri kaynağına işlendi.|  
+|`Edit` (olmadan `Update`) ve ardından `CommitTrans`|Kayıt düzenlemeler kaybedilir. Kayıt veri kaynağında değişmeden kalır.|  
+|`Delete` Ardından `CommitTrans`|Kayıt veri kaynağından silinir.|  
   
-##  <a name="_core_how_rollback_affects_updates"></a> Rollback işlemleri nasıl etkiler  
- Aşağıdaki tabloda etkilerini açıklar **geri alma** hareketleri.  
+##  <a name="_core_how_rollback_affects_updates"></a> Geri alma işlemleri etkileme  
+ Aşağıdaki tablo etkilerini açıklar `Rollback` işlemlerle ilgili.  
   
-### <a name="how-rollback-affects-transactions"></a>Rollback işlemleri nasıl etkiler  
+### <a name="how-rollback-affects-transactions"></a>Geri alma işlemleri etkileme  
   
-|Çalışma|Geçerli kayıt durumu|Ayrıca gerekir|Veri kaynağının durumu|  
+|Çalışma|Geçerli kayıt durumu|Ayrıca gerekir|Veri kaynağı durumu|  
 |---------------|------------------------------|-------------------|---------------------------|  
-|`AddNew` ve **güncelleştirme**, ardından **geri alma**|Geçerli kayıt içeriğini yeni bir kayıt için yer açmak için geçici olarak depolanır. Yeni kayıt düzenleme arabelleğine girilir. Sonra **güncelleştirme** çağrılır, geçerli kayıt düzenleme ara geri.||Veri kaynağına yapılan ekleme **güncelleştirme** ters çevrilir.|  
-|`AddNew` (olmadan **güncelleştirme**), ardından **geri alma**|Geçerli kayıt içeriğini yeni bir kayıt için yer açmak için geçici olarak depolanır. Düzen arabellek yeni kaydı içerir.|Çağrı `AddNew` yeniden düzenleme arabelleği boş, yeni bir kayıt için geri yüklemek için. Veya arama **taşıma**eski değerleri düzenleme ara geri yüklemek için (0).|Çünkü **güncelleştirme** çağrılmadı, veri kaynağına yapılan bir değişiklik yoktur.|  
-|**Düzen** ve **güncelleştirme**, ardından **geri alma**|Geçerli kayıt düzenlenmemiş sürümü geçici olarak depolanır. Düzenlemeler düzenleme arabelleği içeriğini yapılır. Sonra **güncelleştirme** çağrıldığında düzenlenmemiş kaydın sürüm hala geçici olarak depolanır.|*Dynaset*: geçerli kayıttan kaydın düzenlenmemiş sürüm düzenleme ara geri yüklemek için geri gelin.<br /><br /> *Anlık Görüntü*: çağrı **Requery** veri kaynağından kayıt kümesi yenilenecek.|Veri kaynağı tarafından yapılan değişiklikleri **güncelleştirme** ters çevrilir.|  
-|**Düzen** (olmadan **güncelleştirme**), ardından **geri alma**|Geçerli kayıt düzenlenmemiş sürümü geçici olarak depolanır. Düzenlemeler düzenleme arabelleği içeriğini yapılır.|Çağrı **Düzenle** yeniden düzenleme ara belleğine kaydın düzenlenmemiş sürümünü geri yüklemek için.|Çünkü **güncelleştirme** çağrılmadı, veri kaynağına yapılan bir değişiklik yoktur.|  
-|**Silme** sonra **geri alma**|Geçerli kayıt içeriği silinir.|Çağrı **Requery** veri kaynağından geçerli kayıt içeriğini geri yüklemek için.|Veri kaynağı silme işlemi ters çevrilir.|  
+|`AddNew` ve `Update`, ardından `Rollback`|Geçerli kayıt içeriğini yer açmak için yeni kayıt için geçici olarak depolanır. Yeni kayıt düzenleme arabelleğine girilir. Sonra `Update` çağrıldığında, geçerli kayıt düzenleme ara geri yüklenir.||Veri kaynağı tarafından yapılan bir eklemedir `Update` ters çevrilir.|  
+|`AddNew` (olmadan `Update`), ardından `Rollback`|Geçerli kayıt içeriğini yer açmak için yeni kayıt için geçici olarak depolanır. Düzen arabellek, yeni bir kayıt içerir.|Çağrı `AddNew` yeniden düzenleme arabellek boş, yeni bir kayıt için geri yüklemek için. Veya çağrı `Move`eski değerleri düzenleme ara geri yüklemek için (0).|Çünkü `Update` çağrılmadı, veri kaynağına yapılan bir değişiklik yoktur.|  
+|`Edit` ve `Update`, ardından `Rollback`|Geçerli kayıt düzenlenmemiş bir sürümünü geçici olarak depolanır. Düzenlemeler düzenleme arabellek içeriği yapılır. Sonra `Update` çağrıldığında düzenlenmemiş kaydın sürümünü yine de geçici olarak depolanır.|*Dynaset*: geçerli kayıt düzenlenmemiş sürüm kaydının düzenleme ara geri yüklemek için geri gelin.<br /><br /> *Anlık Görüntü*: çağrı `Requery` kayıt veri kaynağından yenilenemedi.|Veri kaynağı tarafından yapılan değişiklikleri `Update` alınır.|  
+|`Edit` (olmadan `Update`), ardından `Rollback`|Geçerli kayıt düzenlenmemiş bir sürümünü geçici olarak depolanır. Düzenlemeler düzenleme arabellek içeriği yapılır.|Çağrı `Edit` yeniden düzenleme ara kaydı düzenlenmemiş sürümünü geri yüklemek için.|Çünkü `Update` çağrılmadı, veri kaynağına yapılan bir değişiklik yoktur.|  
+|`Delete` Ardından `Rollback`|Geçerli kayıt içeriğini silinir.|Çağrı `Requery` veri kaynağından geçerli kayıt içeriğini geri yüklemek için.|Veri kaynağı silme işlemi ters çevrilir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)   
  [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)   
- [İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)   
+ [İşlem: kayıt kümesi (ODBC) bir işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)   
  [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)   
  [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

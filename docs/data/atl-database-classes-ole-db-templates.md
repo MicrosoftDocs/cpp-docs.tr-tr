@@ -17,33 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fabced79232d17807d252da9dac5b066ddf69f25
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 083ac7485ce2056ab97ca32142be3e88094573f9
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089058"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337891"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL Veritabanı Sınıfları (OLE DB Şablonları)
-Microsoft OLE DB, çeşitli bilgi kaynakları ve biçimlerinde verilere Tekdüzen erişim sağlayan COM arabirimleri kümesi çeşitli uygulamalarını sağlar.  OLE DB resmi olarak kullanım dışı; eski kod bakımı geliştiriciler için belgesidir. Yeni uygulamalar, SQL veri kaynaklarına bağlanmak için ODBC kullanmalıdır.
+Microsoft, OLE DB, verilere çok çeşitli bilgi kaynakları ve biçimler Tekdüzen erişim sağlayan COM arabirimleri kümesi çeşitli uygulamalarını sağlar.  OLE DB resmi olarak kullanım dışı; eski kod bakımı geliştiriciler için belgelerdir. Yeni uygulamalar SQL veri kaynaklarına bağlanmak için ODBC kullanmanız gerekir.
   
- OLE DB Şablonları OLE DB veritabanı teknolojisi birçok yaygın olarak kullanılan OLE DB arabirimlerini uygulayan sınıflar sağlayarak kullanmayı daha kolay hale C++ ATL içinde şablonlarıdır.  
+ ATL OLE DB veritabanı teknoloji birçok yaygın olarak kullanılan bir OLE DB arabirimlerini uygulayan sınıflar sağlayarak kullanımını kolaylaştırmak şablonlarında C++ OLE DB Şablonları var.  
   
  Bu şablon kitaplığı iki bölümden oluşur:  
   
--   [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-cpp.md) bir OLE DB istemci (tüketici) uygulamalarını gerçekleştirmek için kullanılır.  
+-   [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-cpp.md) OLE DB (tüketici) istemci uygulamalarını uygulamak için kullanılır.  
   
--   [OLE DB sağlayıcı şablonları](../data/oledb/ole-db-provider-templates-cpp.md) bir OLE DB sunucu (sağlayıcı) uygulamalarını gerçekleştirmek için kullanılır.  
+-   [OLE DB sağlayıcı şablonları](../data/oledb/ole-db-provider-templates-cpp.md) bir OLE DB sunucusu (sağlayıcı) uygulama uygulamak için kullanılır.  
   
- Ayrıca, [OLE DB tüketici öznitelikleri](../windows/ole-db-consumer-attributes.md) OLE DB tüketicileri oluşturmak için kolay bir yol sağlamak. OLE DB öznitelikleri çalışan OLE DB tüketicileri oluşturmak için OLE DB Tüketici Şablonları göre kod yerleştirir.  
+ Ayrıca, [OLE DB tüketici öznitelikleri](../windows/ole-db-consumer-attributes.md) OLE DB tüketicileri oluşturmak için kullanışlı bir yol sağlar. OLE DB öznitelikleri çalışan OLE DB tüketicileri oluşturmak için OLE DB Tüketici şablonları temel alan kod yerleştirir.  
   
- MFC kitaplığını bir sınıf içerdiğini unutmayın [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), denetimlerinde veritabanı kayıtları görüntüler. Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne ve alanlarını görüntüler `CRowset` iletişim şablonun denetimlerinde nesnesi.  
+ MFC Kitaplığı sınıfını içeren Not [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), denetimlerde veritabanı kayıtlarını görüntüleyen. Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne ve alanlarını görüntüler `CRowset` iletişim şablonun denetimlerinde nesne.  
   
- Daha fazla bilgi için bkz: [OLE DB programlama](../data/oledb/ole-db-programming.md) ve [OLE DB Programcı Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=121548).  
+ Daha fazla bilgi için [OLE DB programlama](../data/oledb/ole-db-programming.md) ve [OLE DB Programcı Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=121548).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketicisi Oluşturma](../data/oledb/creating-an-ole-db-consumer.md)   
  [OLE DB sağlayıcısı oluşturma](../data/oledb/creating-an-ole-db-provider.md)   
  [OLE DB Tüketici Şablonları başvurusu](../data/oledb/ole-db-consumer-templates-reference.md)   
  [OLE DB sağlayıcı şablonları başvurusu](../data/oledb/ole-db-provider-templates-reference.md)   
- [OLE DB Şablon örnekleri](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c)
+ [OLE DB Şablon örnekleri](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)

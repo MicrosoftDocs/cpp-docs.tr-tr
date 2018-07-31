@@ -20,23 +20,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 415fdec8397b72bf8f391865fb5af418f95fdf03
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ba98cfa4a88b695995902bdaca5e4ae3f33e5198
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104558"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339760"
 ---
 # <a name="transaction-object-interfaces"></a>İşlem Nesnesi Arabirimleri
-İşlem nesnesi bir veri kaynağında iş atomik bir ölçü tanımlar ve bu iş birimlerinin birbirleriyle nasıl ilişkili olduğunu belirler. Bu nesne OLE DB sağlayıcı şablonları tarafından doğrudan desteklenmeyen (diğer bir deyişle, kendi nesnesi oluşturmanız gerekir).  
+İşlem nesnesi, bir veri kaynağında atomik bir iş birimi tanımlar ve bu iş birimleri birbirleriyle nasıl ilişki kuracağını belirler. Bu nesne OLE DB sağlayıcı şablonları tarafından doğrudan desteklenmiyor (diğer bir deyişle, kendi nesne oluşturmalısınız).  
   
- Aşağıdaki tabloda bir işlem nesnesi için OLE DB tarafından tanımlanan zorunlu ve isteğe bağlı arabirimler gösterilir.  
+ Aşağıdaki tabloda, bir işlem nesnesi için OLE DB tarafından tanımlanan zorunlu ve isteğe bağlı arabirimler gösterilir.  
   
 |Arabirim|Gerekli mi?|OLE DB Şablonları tarafından uygulanır?|  
 |---------------|---------------|--------------------------------------|  
 |[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|Zorunlu|Hayır|  
-|[ITransaction](https://msdn.microsoft.com/en-us/library/ms723053.aspx)|Zorunlu|Hayır|  
-|[ISupportErrorInfo](https://msdn.microsoft.com/en-us/library/ms715816.aspx)|İsteğe Bağlı|Hayır|  
+|[ITransaction](https://msdn.microsoft.com/library/ms723053.aspx)|Zorunlu|Hayır|  
+|[ISupportErrorInfo](https://msdn.microsoft.com/library/ms715816.aspx)|İsteğe Bağlı|Hayır|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

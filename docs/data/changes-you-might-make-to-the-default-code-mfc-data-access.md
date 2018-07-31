@@ -1,5 +1,5 @@
 ---
-title: Varsayılan kodda (MFC veri erişimi) yaptığınız değişiklikler | Microsoft Docs
+title: Varsayılan kodda (MFC veri erişimi) yaptığınız değişiklikleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,21 +15,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e647f6350819fa2cccb5f8319f95fbac16ca19fc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 29b5373bd9fb638e7ee4d20cba0c64b9354be70f
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088371"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339204"
 ---
 # <a name="changes-you-might-make-to-the-default-code--mfc-data-access"></a>(MFC veri erişimi) varsayılan kodda yapabileceğiniz değişiklikler
-[MFC Uygulama Sihirbazı'nı](../mfc/reference/database-support-mfc-application-wizard.md) tüm kayıtları tek bir tabloda seçen sizin için bir kayıt kümesi sınıfı yazar. Genellikle, bir veya daha aşağıdaki yollardan biriyle bu davranışı değiştirmek isteyeceksiniz:  
+[MFC Uygulama Sihirbazı](../mfc/reference/database-support-mfc-application-wizard.md) içindeki tek bir tablonun tüm kayıtları seçen sizin için bir kayıt kümesi sınıfı yazar. Genellikle, bir veya daha aşağıdaki yollardan biriyle bu davranışı değiştirmek isteyeceksiniz:  
   
--   Bir filtre ya da kayıt için bir sıralama düzeni ayarlayın. Bunu yapmak `OnInitialUpdate` kayıt kümesi nesnesi önce oluşturulduktan sonra **açık** üye işlevi çağrılır. Daha fazla bilgi için bkz: [kayıt kümesi: kayıtları filtreleme (ODBC)](../data/odbc/recordset-filtering-records-odbc.md) ve [kayıt kümesi: Kayıtları sıralama (ODBC)](../data/odbc/recordset-sorting-records-odbc.md).  
+-   Bir filtre veya sıralama kayıt kümesi için ayarlayın. Bunu yapmak `OnInitialUpdate` kayıt kümesi nesnesi önce oluşturulan sonra kendi `Open` üye işlevi çağrılır. Daha fazla bilgi için [kayıt kümesi: kayıtları filtreleme (ODBC)](../data/odbc/recordset-filtering-records-odbc.md) ve [kayıt kümesi: Kayıtları sıralama (ODBC)](../data/odbc/recordset-sorting-records-odbc.md).  
   
--   Kayıt kümesini parametreleştirme. Gerçek çalışma zamanı parametre değeri sonra Filtresi belirtin. Daha fazla bilgi için bkz: [kayıt kümesi: bir kayıt kümesi (ODBC) kümesini parametreleştirme](../data/odbc/recordset-parameterizing-a-recordset-odbc.md)  
+-   Kayıt kümesini parametreleştirme. Fiili çalışma zamanı parametre değeri, sonra filtre belirtin. Daha fazla bilgi için [kayıt kümesi: bir kayıt kümesi (ODBC) kümesini parametreleştirme](../data/odbc/recordset-parameterizing-a-recordset-odbc.md)  
   
--   Özelleştirilmiş bir SQL dizesi geçirmek [açık](../mfc/reference/crecordset-class.md#open) üye işlevi. Bu teknik ile gerçekleştirebileceğiniz bir tartışma için bkz: [SQL: özelleştirme Kümenizin SQL deyimini (ODBC)](../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).  
+-   Özelleştirilmiş bir SQL dizesi geçirmeniz [açık](../mfc/reference/crecordset-class.md#open) üye işlevi. Bu teknik ile gerçekleştirebileceğiniz bir açıklaması için bkz. [SQL: özelleştirme Kümenizin SQL deyimini (ODBC)](../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)

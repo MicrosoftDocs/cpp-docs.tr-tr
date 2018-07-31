@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: bir sınıf bir önceden tanımlanmış sorgu için bildirme (ODBC) | Microsoft Docs'
+title: 'Kayıt kümesi: önceden tanımlanmış bir sorgu (ODBC) için bir sınıf bildirme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,81 +19,81 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cbbb9202aaf56681a792e1acf2a0c02eff5636d9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7805a923ddf0935a12b93430cb378a5a85cee97e
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092381"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340592"
 ---
 # <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)
-Bu konu MFC ODBC sınıfları için geçerlidir.  
+Bu konu MFC ODBC sınıflarına uygulanır.  
   
- Bu konuda (Microsoft SQL Server gibi bir saklı yordam de denir) önceden tanımlanmış sorgu için bir kayıt kümesi sınıfın nasıl oluşturulacağı açıklanmaktadır.  
+ Bu konu (Microsoft SQL Server gibi bir saklı yordam olarak da adlandırılır) önceden tanımlanmış sorgu için bir kayıt kümesi sınıfı oluşturma işlemini açıklar.  
   
 > [!NOTE]
->  Bu konuda türetilen nesnelere uygulanır `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uygulanmışsa çok benzer bir işlemdir. Toplu satır getirme uygulamak kayıt kümeleri ve değişmeyen arasındaki farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
+>  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uygulanmışsa çok benzer bir işlemdir. Toplu satır getirme uygulayan kayıt kümeleri ve değişmeyen arasındaki farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- Bazı veritabanı yönetim sistemi (DBMS), önceden tanımlanmış bir sorgu oluşturup programlarınızı bir işlev gibi çağırmanıza olanak tanır. Sorgu bir adı vardır, parametreler alabilir ve kayıtları döndürebilir. Bu konudaki yordamı kayıtları döndüren (ve belki de kullandığı Parametreler) tanımlanmış bir sorguyu çağırmak açıklar.  
+ Bazı veritabanı yönetim sistemi (DBMS), önceden tanımlanmış bir sorgu oluşturun ve bir işlev gibi programlarınızın çağırmanıza olanak tanır. Sorgu bir ada sahip parametre alabilir ve kayıtları döndürebilir. Bu konudaki yordamı kayıtları döndürür (ve belki de kullandığı Parametreler) önceden tanımlanmış sorgu çağırmak nasıl açıklar.  
   
- Veritabanı sınıfları önceden tanımlanmış sorgular güncelleştirme desteklemez. Anlık görüntü önceden tanımlanmış sorgu dynaset önceden tanımlanmış sorgu arasındaki fark güncellenebilirliğini ancak diğer kullanıcılar (veya diğer kayıt kümeleri programınızdaki) tarafından yapılan değişiklikleri kümenizde görünür olup değil.  
+ Veritabanı sınıfları, önceden tanımlanmış sorguları güncelleme desteklemez. Anlık görüntü önceden tanımlanmış sorgu dynaset önceden tanımlanmış sorgu arasındaki fark güncellenebilirliğini ancak diğer kullanıcılar (veya diğer kayıt kümeleri programınızdaki) tarafından yapılan değişiklikleri kümenizde görünür olup değil.  
   
 > [!TIP]
->  Kayıtları döndürmeyen tanımlanmış bir sorguyu çağırmak için bir kayıt gerekmez. SQL deyimi aşağıda açıklandığı şekilde hazırlayın, ancak çağırarak yürütün `CDatabase` üye işlevi [ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql).  
+>  Kayıtları döndürmeyen önceden tanımlanmış sorgu çağırmak için bir kayıt gerekmez. Aşağıda açıklandığı gibi SQL deyimini hazırlamak, ancak çağırarak çalıştırırsınız `CDatabase` üye işlevi [ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql).  
   
- Önceden tanımlanmış sorgu çağırma yönetmek için tek bir kayıt kümesi sınıfı oluşturabilirsiniz, ancak bazı iş kendiniz yapmanız gerekir. Sihirbazlar, özellikle bu amaç için bir sınıf oluşturma desteklemez.  
+ Önceden tanımlanmış sorgu çağırma yönetmek için tek bir kayıt kümesi sınıfı oluşturabilirsiniz, ancak bunu işinin bir kısmını kendiniz yapmanız gerekir. Sihirbazlar, özellikle bu amaç için bir sınıf oluşturma desteklemez.  
   
 #### <a name="to-create-a-class-for-calling-a-predefined-query-stored-procedure"></a>Önceden tanımlanmış sorgu çağırmak için bir sınıf oluşturun (saklı yordamı)  
   
-1.  Kullanım [MFC ODBC Tüketici Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** en sorgu tarafından döndürülen sütunları katkıda bulunan tablo için bir kayıt kümesi sınıfı oluşturmak için. Bu bir başlangıç sağlar.  
+1.  Kullanım [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** sorgu tarafından döndürülen sütunlar en çok katkıda bulunduğu bir tablo için bir kayıt kümesi sınıfı oluşturmak için. Bu size avantajlı bir başlangıç sağlar.  
   
-2.  Alan veri üyeleri bir sütuna sihirbaz sizin için oluşturmadı ancak bu sorgunun döndürdüğü herhangi bir tabloya ait el ile ekleyin.  
+2.  Alan veri üyeleri, sihirbaz sizin yerinize oluşturmadınız ancak bu sorgunun döndürdüğü tüm tablolar, sütunlar için el ile ekleyin.  
   
-     Örneğin, sorgu iki ek tablodan üç sütun döndürürse, altı alan veri üyeleri (uygun veri türleri için) sınıfına ekleyin.  
+     Örneğin, sorgu iki ek tablodan üç sütun döndürürse, altı alan veri üyeleri (uygun veri türlerinin) sınıfına ekleyin.  
   
-3.  El ile eklemeniz [RFX](../../data/odbc/record-field-exchange-rfx.md) işlev çağrıları [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlevi sınıfın her bir veri türüne karşılık gelen bir alan veri üyesi eklendi.  
+3.  El ile eklemeniz [RFX](../../data/odbc/record-field-exchange-rfx.md) işlev çağrıları [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) sınıfının üye işlevinde, her veri türü için karşılık gelen bir veri üyesi alanı eklendi.  
   
-    ```  
+    ```cpp  
     Immediately before these RFX calls, call <MSHelp:link keywords="_mfc_CFieldExchange.3a3a.SetFieldType" TABINDEX="0">SetFieldType</MSHelp:link>, as shown here:   
     pFX->SetFieldType( CFieldExchange::outputColumn );  
     ```  
   
     > [!NOTE]
-    >  Veri türleri ve sonuçta döndürülen sütunların sırasını ayarlama bilmeniz gerekir. RFX işlevi sırasını çağrıları `DoFieldExchange` sonuç kümesi sütunlarının eşleşmesi gerekir.  
+    >  Veri türleri ve sonuçta döndürülen sütun sırasını bilmeniz gerekir. RFX işlevi sırasını çağrıları `DoFieldExchange` sonuç kümesi sütun eşleşmesi gerekir.  
   
-4.  El ile yeni alan veri üyeleri için başlatmaları kayıt kümesi sınıf oluşturucusunda ekleyin.  
+4.  Yeni alan veri üyeleri için başlatma işlemleri el ile kayıt kümesi sınıf oluşturucusunda ekleyin.  
   
-     Başlatma değerini artırmanız gerekir [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) veri üyesi. Sihirbazı başlatma yazar, ancak yalnızca sizin için eklediği alan veri üyeleri kapsar. Örneğin:  
+     Başlatma değeri de artırmalısınız [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) veri üyesi. Sihirbazı başlatma Yazar ancak sizin için ekler alan veri üyeleri yalnızca kapsar. Örneğin:  
   
-    ```  
+    ```cpp  
     m_nFields += 6;  
     ```  
   
-     Bazı veri türleri Burada, örneğin, başlatılmamış `CLongBinary` veya bayt dizileri.  
+     Bazı veri türleri burada Örneğin, başlatılmamış `CLongBinary` veya bayt dizisi.  
   
-5.  Sorgu parametreleri alıyorsa, her bir parametreyi, her bir RFX işlev çağrısı ve her biri için bir başlatma için parametre veri üyesi ekleyin.  
+5.  Sorgu parametreleri alırsa, her bir parametre, her bir RFX işlev çağrısı ve her bir başlatma parametre veri üyesi ekleyin.  
   
-6.  Artırmanız gerekir `m_nParams` yaptığınız her eklenen parametresi için `m_nFields` için alanları bu yordamın 4 adımda eklendi. Daha fazla bilgi için bkz: [kayıt kümesi: bir kayıt kümesi (ODBC) kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).  
+6.  Artırmanız gerekir `m_nParams` yaptığınız gibi her parametre, eklenen için `m_nFields` için alanları bu yordamın 4. adımında eklendi. Daha fazla bilgi için [kayıt kümesi: bir kayıt kümesi (ODBC) kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).  
   
-7.  El ile bir SQL deyimi dizeyle aşağıdaki biçimde yazın:  
+7.  El ile bir SQL deyimi dizesiyle aşağıdaki biçimde yazın:  
   
     ```  
     {CALL proc-name [(? [, ?]...)]}  
     ```  
   
-     Burada **ÇAĞRISI** bir ODBC anahtar sözcüğü **proc adı** veri kaynağında tanındığı sorgu adıdır ve "?" öğeleridir sağladığınız kayıt kümesine çalışma zamanında (varsa) parametre değerleri için yer tutucuları . Aşağıdaki örnek, bir parametre için bir yer tutucu hazırlar:  
+     Burada **çağrı** bir ODBC anahtar sözcüğü **yordam adı** olarak da bilinen veri kaynağında, sorgunun adıdır ve "?" öğeler sağladığınız kayıt için çalışma zamanında (varsa) parametre değerleri için yer tutucu . Aşağıdaki örnek, bir parametre için bir yer tutucu hazırlar:  
   
     ```  
     CString mySQL = "{CALL Delinquent_Accts (?)}";  
     ```  
   
-8.  Kayıt kümesi açar kodda, kayıt kümesinin parametre veri üyeleri ayarlayın ve ardından arama **açık** SQL dizesi geçirmesi üye işlevi **lpszSQL** parametresi. Veya bunun yerine, tarafından döndürülen dize Değiştir `GetDefaultSQL` sınıfınızda üye işlevi.  
+8.  Kayıt kümesi açılır kodda veri üyeleri kümesinin parametre değerlerini ayarlayın ve sonra çağrı `Open` SQL dizenizi geçirmek için üye işlevi *lpszSQL* parametresi. Veya bunun yerine, tarafından döndürülen dize değiştirin `GetDefaultSQL` sınıfınızdaki üye işlevi.  
   
- Aşağıdaki örnekler adlı önceden tanımlanmış bir sorguyu çağırmak için yordamı `Delinquent_Accts`, satış bölgesi numarası için bir parametre alır. Bu sorgu üç sütun döndürür: `Acct_No`, `L_Name`, `Phone`. Tüm sütunları Müşteriler tablosundan olur.  
+ Aşağıdaki örnekler adlı önceden tanımlanmış sorgu, çağırma yordamı `Delinquent_Accts`, bir satış bölgesi numarası için bir parametre alır. Bu sorgunun döndürdüğü üç sütun: `Acct_No`, `L_Name`, `Phone`. Müşteriler tablosundan tüm sütunlarıdır.  
   
- Aşağıdaki kayıt kümesi sorgunun döndürdüğü ve satış için bir parametre bölge numarası çalışma zamanında istenen sütunlar için alan veri üyeleri belirtir.  
+ Alan veri üyeleri sorgunun döndürdüğü ve satış için bir parametre numarası çalışma zamanında istenen bölge için aşağıdaki kayıt kümesini belirtir.  
   
-```  
+```cpp  
 class CDelinquents : public CRecordset  
 {  
 // Field/Param Data  
@@ -105,11 +105,11 @@ class CDelinquents : public CRecordset
 };  
 ```  
   
- Sihirbaz, dışında yazar gibi bu sınıf bildirimi olan `m_lDistParam` el ile eklenen üye. Diğer üyeleri burada gösterilmiyor.  
+ Bu sınıf bildirimi dışında Yazar Sihirbazı, aynıdır `m_lDistParam` el ile eklenen üye. Diğer üyeleri burada gösterilmez.  
   
- Veri üyeleri için başlatmaları sonraki örnekte gösterildiği `CDelinquents` Oluşturucusu.  
+ Sonraki örnek, veri üyeleri başlatmalarına gösterir `CDelinquents` Oluşturucusu.  
   
-```  
+```cpp  
 CDelinquents::CDelinquents(CDatabase* pdb)  
    : CRecordset(pdb)  
 {  
@@ -124,11 +124,11 @@ CDelinquents::CDelinquents(CDatabase* pdb)
 }  
 ```  
   
- Başlatmalarına Not [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) ve [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams). Sihirbazı'nı başlatır `m_nFields`; başlatır `m_nParams`.  
+ Başlatmalar için Not [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) ve [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams). Sihirbazı'nı başlatır `m_nFields`; başlatır `m_nParams`.  
   
- RFX işlevleri sonraki örnekte gösterildiği `CDelinquents::DoFieldExchange`:  
+ Sonraki örnek, RFX işlevleri gösterir `CDelinquents::DoFieldExchange`:  
   
-```  
+```cpp  
 void CDelinquents::DoFieldExchange(CFieldExchange* pFX)  
 {  
     pFX->SetFieldType(CFieldExchange::outputColumn);  
@@ -140,11 +140,11 @@ void CDelinquents::DoFieldExchange(CFieldExchange* pFX)
 }  
 ```  
   
- Döndürülen üç sütun için RFX çağrıları yapma yanı sıra, bu kod çalışma zamanında geçirdiğiniz parametre bağlama yönetir. Parametre anahtarlanır `Dist_No` (bölge numarası) sütun.  
+ RFX üç döndürülen sütunlar için aramaların yanı sıra, bu kod, çalışma zamanında geçirdiğiniz parametre bağlama yönetir. Parametre anahtarlanır `Dist_No` (bölge numarası) sütunu.  
   
- Sonraki örnek SQL dizesi ayarlama ve kayıt açmak için kullanmak gösterir.  
+ Sonraki örnekte, nasıl SQL dizesi ayarlama ve nasıl kayıt kümesini açmak için kullanılacağını gösterir.  
   
-```  
+```cpp  
 // Construct a CDelinquents recordset object  
 CDelinquents rsDel( NULL );  
 CString strSQL = "{CALL Delinquent_Accts (?)}"  
@@ -155,13 +155,13 @@ if( rsDel.Open( CRecordset::snapshot, strSQL ) )
     // Use the recordset ...  
 ```  
   
- Bu kod bir anlık görüntü oluşturur, daha önce kullanıcıdan alınan parametre geçirir ve önceden tanımlanmış sorgu çağırır. Sorgu çalıştırıldığında, belirtilen satış bölgesi kayıtlarını döndürür. Her kayıt sütunları hesap numarası, Müşteri'nin soyadı ve müşterinin telefon numarasını içerir.  
+ Bu kod, bir anlık görüntü oluşturur, daha önce kullanıcıdan alınan bir parametre geçirir ve önceden tanımlanmış sorgu çağırır. Sorgu çalıştırıldığında, belirtilen satış bölgesi için kayıtları döndürür. Her kayıt için hesap numarası, Müşteri'nin son adı ve müşterinin telefon numarası sütunları içerir.  
   
 > [!TIP]
->  Saklı yordam gelen bir dönüş değeri (çıktı parametresi) işlemek isteyebilirsiniz. Daha fazla bilgi ve bir örnek için bkz: [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).  
+>  Bir saklı yordamdan gelen dönüş değeri (çıkış parametresi) işlemek isteyebilirsiniz. Daha fazla bilgi ve örnek için bkz. [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md)   
- [Kayıt kümesi: kayıt kümesi (ODBC) yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md)   
+ [Kayıt kümesi: kayıt kümesi (ODBC) kümesinde yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md)   
  [Kayıt kümesi: bir sınıf bir tablo için bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)   
  [Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

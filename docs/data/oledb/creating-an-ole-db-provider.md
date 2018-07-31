@@ -16,33 +16,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f649b5b4c79c4148d0aed026b044485ca2b1eaa7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5de304b7a21c47af18b8b753d6de704ef2473c5f
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33097113"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338798"
 ---
 # <a name="creating-an-ole-db-provider"></a>OLE DB Sağlayıcısı Oluşturma
-OLE DB sağlayıcısı oluşturmak için önerilen yöntem ATL COM projesini ve sağlayıcı oluşturmak ve OLE DB Şablonları kullanarak dosyaları değiştirmek için sihirbazlar kullanmaktır. Sağlayıcınız özelleştirme gibi istenmeyen özellikleri açıklaması ve isteğe bağlı arabirimler ekleyin.  
+Bir OLE DB sağlayıcısı oluşturmak için önerilen yöntem, ATL COM projesini ve sağlayıcı oluşturup ardından OLE DB Şablonları kullanarak dosyaları değiştirmek için sihirbazları kullanmaktır. Sağlayıcınız özelleştirme gibi istenmeyen özellikleri açıklaması ve isteğe bağlı arabirimler.  
   
  Temel adımlar aşağıdaki gibidir:  
   
-1.  Temel proje dosyalarını ve ATL OLE DB sağlayıcısı sağlayıcısı oluşturmak için Sihirbazı oluşturmak için ATL Proje Sihirbazı'nı kullanın (seçin **ATL OLE DB sağlayıcısı** Visual C++ klasöründen **sınıfı Ekle**).  
+1.  ATL projesi Sihirbazı, temel proje dosyalarını ve ATL OLE DB sağlayıcısı sağlayıcısı oluşturmak için Sihirbazı oluşturmak için kullanın (seçin **ATL OLE DB sağlayıcısı** Visual C++ klasöründeki **sınıfı Ekle**).  
   
-2.  Kodda değişiklik `Execute` CMyProviderRS.h yöntemi. Bir örnek için bkz: [okuma dizeleri içine bir OLE DB sağlayıcısı](../../data/oledb/reading-strings-into-the-ole-db-provider.md).  
+2.  Kodda değişiklik `Execute` CMyProviderRS.h yöntemi. Bir örnek için bkz. [okuma dizeleri içine bir OLE DB sağlayıcısı](../../data/oledb/reading-strings-into-the-ole-db-provider.md).  
   
-3.  Özellik eşlemeleri MyProviderDS.h, MyProviderSess.h ve MyProviderRS.h düzenleyin. Sihirbazın bir sağlayıcının uygulayabileceği tüm özellikleri içeren bir özellik eşlemesi oluşturur. Özellik eşlemeleri üzerinden giderek kaldırabilir veya yorum sağlayıcınız destek gerekmez özellikleri çıkışı.  
+3.  MyProviderDS.h üzerinde MyProviderSess.h ve MyProviderRS.h özellik eşlemeleri düzenleyin. Sihirbaz bir sağlayıcının uygulayabileceği tüm özellikleri içeren özellik eşlemeleri oluşturur. Özellik eşlemeleri üzerinden giderek kaldırabilir veya yorum sağlayıcınız destek gerekmez özellikleri.  
   
-4.  MyProviderRS.h öğesinde bulunan PROVIDER_COLUMN_MAP güncelleştirin. Bir örnek için bkz: [depolama dizeler, OLE DB sağlayıcısı](../../data/oledb/storing-strings-in-the-ole-db-provider.md).  
+4.  MyProviderRS.h içinde bulunabilir PROVIDER_COLUMN_MAP güncelleştirin. Bir örnek için bkz. [depolama dizeleri, OLE DB sağlayıcısı](../../data/oledb/storing-strings-in-the-ole-db-provider.md).  
   
-5.  Sağlayıcınızı test etmeye hazır olduğunuzda, sağlayıcı bir sağlayıcı numaralandırmasında bulmaya çalışarak test edebilirsiniz. Bir sabit listesinde bir sağlayıcı bulur test kodu örnekleri için bkz: [CATDB](http://msdn.microsoft.com/en-us/003d516b-2bf6-444e-8be5-4ebaa0b66046) ve [DBVIEWER](http://msdn.microsoft.com/en-us/07620f99-c347-4d09-9ebc-2459e8049832) örnekleri veya örnekte [basit tüketici uygulama](../../data/oledb/implementing-a-simple-consumer.md).  
+5.  Sağlayıcınızı test etmeye hazır olduğunuzda, sağlayıcı bir sağlayıcı numaralandırmada bulunamadı deneyerek test edebilirsiniz. Bir sabit listesinde bir sağlayıcı bulur test kod örnekleri için bkz. [CATDB](http://msdn.microsoft.com/003d516b-2bf6-444e-8be5-4ebaa0b66046) ve [DBVIEWER](http://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) örnekleri veya örnekte [bir Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md).  
   
-6.  İstediğiniz herhangi bir ilave arabirimi ekleyin. Bir örnek için bkz: [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).  
+6.  İstediğiniz desteklenecek ek arabirimleri ekleyin. Bir örnek için bkz. [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).  
   
     > [!NOTE]
-    >  Varsayılan olarak, OLE DB düzey 0 uyumlu olan kod sihirbazları oluşturur. Uygulamanızı düzey 0 uyumlu kalmasını sağlamak için sihirbaz tarafından oluşturulan arabirimleri hiçbirini koddan kaldırmayın.  
+    >  Varsayılan olarak, sihirbaz OLE DB düzeyi 0 uyumlu bir kod oluşturur. Uygulama düzeyi 0 uyumlu kalmasını sağlamak için herhangi bir sihirbazın ürettiği arabirimleri koddan kaldırmayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CATDB](http://msdn.microsoft.com/en-us/003d516b-2bf6-444e-8be5-4ebaa0b66046)   
- [DBVIEWER](http://msdn.microsoft.com/en-us/07620f99-c347-4d09-9ebc-2459e8049832)
+ [CATDB](http://msdn.microsoft.com/003d516b-2bf6-444e-8be5-4ebaa0b66046)   
+ [DBVIEWER](http://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832)

@@ -20,22 +20,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f750346b0fdd8821800b012b3cdff7acc12f7897
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a9fea13ef4a89ee2a1105702db4fe692c12643d2
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33112101"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337946"
 ---
 # <a name="supporting-notifications"></a>Bildirimleri Destekleme
-## <a name="implementing-connection-point-interfaces-on-the-provider-and-consumer"></a>Sağlayıcı ve tüketici bağlantı noktası arabirimler uygulama  
- Bildirimleri uygulamak için bir sağlayıcı sınıfı öğesinden devralmalıdır [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md) ve [IConnectionPointContainer](../../atl/reference/iconnectionpointcontainerimpl-class.md).  
+
+## <a name="implementing-connection-point-interfaces-on-the-provider-and-consumer"></a>Bağlantı noktası arabirimleri sağlayıcısı ve tüketici uygulama  
+ Bildirimleri uygulamak için bir sağlayıcı sınıfı devralmalıdır [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md) ve [IConnectionPointContainer](../../atl/reference/iconnectionpointcontainerimpl-class.md).  
   
- `IRowsetNotifyCP` Sağlayıcı site bağlantı noktası arabirimi uygulayan [IRowsetNotify](https://msdn.microsoft.com/en-us/library/ms712959.aspx). `IRowsetNotifyCP` Implements yayın dinleyicileri bağlantı noktasında bildirmek amacıyla işlevleri **IID_IRowsetNotify** satır içeriğini değişiklikler.  
+ `IRowsetNotifyCP` Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](https://msdn.microsoft.com/library/ms712959.aspx). `IRowsetNotifyCP` uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.  
   
- Ayrıca uygulama ve kaydetmeniz gerekir unutmayın `IRowsetNotify` kullanarak tüketici (havuz olarak da bilinir) üzerinde [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) böylece tüketici bildirimleri işleyebilir. Tüketici üzerinde bağlantı noktası arabirimi uygulama hakkında daha fazla bilgi için bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md).  
+ Ayrıca uygulama ve kaydetme gerekir unutmayın `IRowsetNotify` Tüketici (havuz olarak da bilinir) kullanarak [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) tüketici bildirimleri işleyebilmeniz. Bağlantı noktası arabirimi tüketiciye uygulama hakkında daha fazla bilgi için bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md).  
   
- Ayrıca, sınıf de bağlantı noktası girişini şöyle tanımlayan bir harita içermelidir:  
+ Ayrıca, sınıfı tanımlayan bağlantı noktası girişi, böyle bir harita içermelidir:  
   
 ```  
 BEGIN_CONNECTION_POINT_MAP  
@@ -44,12 +45,12 @@ END_CONNECTION_POINT_MAP
 ```  
   
 ## <a name="adding-irowsetnotify"></a>IRowsetNotify ekleme  
- Eklemek için `IRowsetNotify`, eklemenize gerek `IConnectionPointContainerImpl<rowset-name>` ve `IRowsetNotifyCP<rowset-name>` devralma zincirini için.  
+ Eklenecek `IRowsetNotify`, eklemenize gerek `IConnectionPointContainerImpl<rowset-name>` ve `IRowsetNotifyCP<rowset-name>` , devralma zincirini için.  
   
- Örneğin, için devralma zincirini işte `RUpdateRowset` içinde [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f):  
+ Örneğin, devralma zincirinde işte `RUpdateRowset` içinde [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f):  
   
 > [!NOTE]
->  Örnek kod, ne burada listelenen alanından farklı olabilir; Örnek kod daha güncel bir sürüm olarak göz önüne almalısınız.  
+>  Örnek kod, ne burada listelenen öğesinden farklı olabilir; Örnek kod daha güncel bir sürüm olarak göz önüne almalısınız.  
   
 ```cpp
 ///////////////////////////////////////////////////////////////////////////  
@@ -64,18 +65,18 @@ public CRowsetImpl< RUpdateRowset, CAgentMan, CUpdateCommand,
       public IRowsetNotifyCP<RUpdateRowset>  
 ```  
   
-### <a name="setting-com-map-entries"></a>COM eşleme girişlerini ayarlama  
- Ayrıca, satır kümesi COM eşlemesinde aşağıdaki eklemeniz gerekir:  
+### <a name="setting-com-map-entries"></a>COM eşleme girişleri ayarlama  
+ Ayrıca, satır kümesi içindeki COM eşlemesine aşağıdaki eklemeniz gerekir:  
   
 ```  
 COM_INTERFACE_ENTRY(IConnectionPointContainer)  
 COM_INTERFACE_ENTRY_IMPL(IConnectionPointContainer)  
 ```  
   
- Bu makroları herkesin çağırma izin `QueryInterface` için bağlantı noktası kapsayıcısına (temeli `IRowsetNotify`) sağlayıcıdaki istenen arabirimi bulmak için. Bağlantı noktaları kullanma örneği için bkz: KULLANILACAĞINA örnek ve öğretici.  
+ Bu makrolar herkesin çağırma izin `QueryInterface` bağlantı noktası kapsayıcınızın (temel `IRowsetNotify`) istenen arabirim sağlayıcıdaki bulmak için. KULLANILACAĞINA örnek ve öğretici bağlantı noktalarını kullanma örneği için bkz.  
   
-### <a name="setting-connection-point-map-entries"></a>Bağlantı noktası eşleme girişlerini ayarlama  
- Ayrıca bir bağlantı noktası eşlemesi eklemeniz gerekir. Gibi görünmelidir:  
+### <a name="setting-connection-point-map-entries"></a>Bağlantı noktası eşleme girişleri ayarlama  
+ Ayrıca bir bağlantı noktası eşlemesi eklemeniz gerekir. Şunun gibi görünmelidir:  
   
 ```  
 BEGIN_CONNECTION_POINT_MAP(rowset-name)  
@@ -83,28 +84,28 @@ BEGIN_CONNECTION_POINT_MAP(rowset-name)
 END_CONNECTION_POINT_MAP()  
 ```  
   
- Bu bağlantı noktası eşlemesi aramakta bir bileşen sağlar `IRowsetNotify` sağlayıcınızda bulmak için arabirim.  
+ Bu bağlantı noktası eşlemesi aramak bir bileşen sağlayan `IRowsetNotify` sağlayıcınızda bulmak için arabirim.  
   
 ### <a name="setting-properties"></a>Özellikleri ayarlama  
- Aynı zamanda aşağıdaki özellikleri sağlayıcınıza eklemeniz gerekir. Yalnızca desteklediğiniz arabirimlere dayalı özellikler eklemeniz gerekir.  
+ Sağlayıcınız için şu özellikleri eklemeniz gerekir. Yalnızca destek arabirimlere dayalı özellikleri eklemeniz gerekir.  
   
 |Özellik|Destekliyorsanız ekleyin|  
 |--------------|------------------------|  
-|**DBPROP_IConnectionPointContainer**|Her zaman|  
-|**DBPROP_NOTIFICATIONGRANULARITY**|Her zaman|  
-|**DBPROP_NOTIFICATIONPHASES**|Her zaman|  
-|**DBPROP_NOTIFYCOLUMNSET**|`IRowsetChange`|  
-|**DBPROP_NOTIFYROWDELETE**|`IRowsetChange`|  
-|**DBPROP_NOTIFYROWINSERT**|`IRowsetChange`|  
-|**DBPROP_NOTIFYROWSETFETCHPOSITIONCHANGE**|Her zaman|  
-|**DBPROP_NOTIFYROWFIRSTCHANGE**|`IRowsetUpdate`|  
-|**DBPROP_NOTIFYROWSETRELEASE**|Her zaman|  
-|**DBPROP_NOTIFYROWUNDOCHANGE**|`IRowsetUpdate`|  
-|**DBPROP_NOTIFYROWUNDODELETE**|`IRowsetUpdate`|  
-|**DBPROP_NOTIFYROWUNDOINSERT**|`IRowsetUpdate`|  
-|**DBPROP_NOTIFYROWUPDATE**|`IRowsetUpdate`|  
+|`DBPROP_IConnectionPointContainer`|Her zaman|  
+|`DBPROP_NOTIFICATIONGRANULARITY`|Her zaman|  
+|`DBPROP_NOTIFICATIONPHASES`|Her zaman|  
+|`DBPROP_NOTIFYCOLUMNSET`|`IRowsetChange`|  
+|`DBPROP_NOTIFYROWDELETE`|`IRowsetChange`|  
+|`DBPROP_NOTIFYROWINSERT`|`IRowsetChange`|  
+|`DBPROP_NOTIFYROWSETFETCHPOSITIONCHANGE`|Her zaman|  
+|`DBPROP_NOTIFYROWFIRSTCHANGE`|`IRowsetUpdate`|  
+|`DBPROP_NOTIFYROWSETRELEASE`|Her zaman|  
+|`DBPROP_NOTIFYROWUNDOCHANGE`|`IRowsetUpdate`|  
+|`DBPROP_NOTIFYROWUNDODELETE`|`IRowsetUpdate`|  
+|`DBPROP_NOTIFYROWUNDOINSERT`|`IRowsetUpdate`|  
+|`DBPROP_NOTIFYROWUPDATE`|`IRowsetUpdate`|  
   
- Bildirimler için uygulamalarının çoğu OLE DB sağlayıcı şablonları içinde zaten ekli. Değil eklerseniz, `IRowsetNotifyCP` devralma zinciri derleyici bu kodu dolayısıyla kodunuzun boyutunu küçülterek, derleme akışından kaldırır.  
+ Çoğu uygulama bildirimleri için OLE DB sağlayıcı şablonları içinde zaten ekli. Değil eklerseniz `IRowsetNotifyCP` devralma zincirinizi derleyici Bu kod böylece kodunuzun boyutunu küçülterek, derleme akışından kaldırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)

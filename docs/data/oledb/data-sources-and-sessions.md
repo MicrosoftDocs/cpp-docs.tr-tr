@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d93f6aba8e9fad27054c731d37e6df28b54eacda
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dfa91db63aaf0266fa6fef7c0b07210575dc70d8
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33100011"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339834"
 ---
 # <a name="data-sources-and-sessions"></a>Veri Kaynakları ve Oturumlar
-Aşağıdaki şekilde bağlanmak ve veri kaynağına erişme destekleyen sınıfları gösterir. Her sınıf standart bir OLE DB bileşen uygulamasına dayalıdır.  
+Aşağıdaki şekil, bağlanma ve bir veri kaynağına erişimi destekleyen sınıfları gösterir. Her sınıf, standart bir OLE DB bileşeni uygulama üzerinde temel alır.  
   
- ![Veri kaynağı ve oturum sınıfları](../../data/oledb/media/vcdatasourcesessionclasses.gif "vcdatasourcesessionclasses")  
-Veri kaynağı ve oturum sınıfları  
+ ![Veri kaynağı ve oturumu sınıfları](../../data/oledb/media/vcdatasourcesessionclasses.gif "vcdatasourcesessionclasses")  
+Veri kaynağı ve oturum sınıfı  
   
  Sınıfları şunlardır:  
   
--   [CDataSource](../../data/oledb/cdatasource-class.md) Bu sınıf oluşturur ve bir veri kaynağına OLE DB sağlayıcısı aracılığıyla bağlantı yöneten veri kaynağı nesnesi başlatır. Veri kaynağı bir bağlantı dizesi biçiminde veri kaynağı adresi ve kimlik bilgileri gibi bilgileri alır.  
+-   [CDataSource](../../data/oledb/cdatasource-class.md) oluşturur ve bir veri kaynağına OLE DB sağlayıcısı üzerinden bir bağlantı yöneten veri kaynağı nesnesi bu sınıfın örneğini oluşturur. Veri kaynağı bağlantı dizesi şeklinde veri kaynağı adresini ve kimlik doğrulama bilgileri gibi bilgileri alır.  
   
-     Ayrıca, dikkate değerdir yardımcı sınıfı [CEnumerator](../../data/oledb/cenumerator-class.md) sisteme kayıtlı kullanılabilir sağlayıcılar listesi elde etmek için herhangi bir bağlantı kurulmadan önce çoğunlukla kullanılır. Bu veri kaynağı olarak bir sağlayıcı seçmenize olanak sağlar. Örneğin, **veri bağlantısı özelliklerini** iletişim kutusu üzerinde sağlayıcıları listesini doldurmak için bu sınıfı kullanır **sağlayıcıları** sekmesi. Eşdeğer olan **SQLBrowseConnect** veya **SQLDriverConnect** işlevi.  
+     Ayrıca, hatalarının ayıklanabileceğini belirtmekte yarar yardımcı sınıf [CEnumerator](../../data/oledb/cenumerator-class.md) bir sistemde kayıtlı yok sağlayıcıları listesini almak için herhangi bir bağlantı kurulmadan önce sık sık kullanılır. Bu veri kaynağı olarak bir sağlayıcı seçmenize olanak sağlar. Örneğin, **veri bağlantı özellikleri** iletişim kutusu sağlayıcılarının listesini doldurmak için bu sınıfı kullanan **sağlayıcıları** sekmesi. Eşdeğerdir `SQLBrowseConnect` veya `SQLDriverConnect` işlevi.  
   
--   [CSession](../../data/oledb/csession-class.md) Bu sınıf veri kaynağına tek erişimli oturumu gösteren oturum nesnesi başlatır. Ancak, bir veri kaynağında birden çok oturumu oluşturabilirsiniz. Her oturum için satır kümeleri, komutları ve diğer nesneleri veri kaynağından verilere erişmek için oluşturabilirsiniz. Oturum işlemleri işler.  
+-   [CSession](../../data/oledb/csession-class.md) veri kaynağına tek erişim oturumu temsil eden bir oturum nesnesi bu sınıfın örneğini oluşturur. Ancak, bir veri kaynağında birden çok oturumu oluşturabilirsiniz. Her oturum için satır kümeleri, komutların ve diğer nesneleri veri kaynağından verilere erişmek için oluşturabilirsiniz. Oturum hareketlerini işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)

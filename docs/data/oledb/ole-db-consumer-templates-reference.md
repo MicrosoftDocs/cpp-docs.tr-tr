@@ -23,121 +23,121 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b5b599a1c7a1b256cc9c56d772a15621beda286f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4a4a96ca189c8363d4aaf8df17e00b2419715086
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33112062"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337959"
 ---
 # <a name="ole-db-consumer-templates-reference"></a>OLE DB Tüketici Şablonları Başvurusu
-OLE DB Tüketici şablonları aşağıdaki sınıflar içerir. Başvuru malzemesinde üzerinde konuları da içerir. [OLE DB Tüketici Şablonları için makrolar](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
+OLE DB Tüketici şablonları aşağıdaki sınıfları içerir. Başvuru malzemesi üzerinde konuları da içerir. [OLE DB Tüketici Şablonları için makrolar](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
   
 ## <a name="session-classes"></a>Oturum sınıfı  
  [CDataConnection](../../data/oledb/cdataconnection-class.md)  
- Veri kaynağı ile bağlantı yönetir. Bu gerekli nesneleri (veri kaynağı ve oturum) ve bir veri kaynağına bağlanırken gerçekleştirmeniz gereken iş bazıları yalıtır çünkü istemciler oluşturmak için yararlı bir sınıftır.  
+ Veri kaynağı ile bağlantı yönetir. Bu gerekli nesneleri (veri kaynağı ve oturum) ve bir veri kaynağına bağlanırken gerçekleştirmeniz gereken işinin bir kısmını kapsülleyen çünkü istemciler oluşturan için kullanışlı bir sınıftır.  
   
  [CDataSource](../../data/oledb/cdatasource-class.md)  
- Bir veri kaynağına bağlantı sağlayıcısı üzerinden temsil eden bir OLE DB veri kaynağı nesnesi karşılık gelir. Bir veya daha fazla veritabanı oturumları, tarafından gösterilen her bir `CSession` nesne, tek bir bağlantı üzerinde yer alabilir.  
+ Bir veri kaynağına bağlantı sağlayıcısı üzerinden temsil eden bir OLE DB veri kaynağı nesnesinin karşılık gelir. Bir veya daha fazla veritabanı oturumları, tarafından gösterilen her bir `CSession` nesne, tek bir bağlantı üzerinde gerçekleştirilebilir.  
   
  [CEnumerator](../../data/oledb/cenumerator-class.md)  
- Kullanılabilir veri kaynakları ile ilgili satır kümesi bilgilerini alır bir OLE DB Numaralandırıcı nesne karşılık gelir.  
+ Kullanılabilir veri kaynakları hakkında daha fazla satır kümesi bilgileri alır bir OLE DB sabit listesi nesnesi karşılık gelir.  
   
  [CEnumeratorAccessor](../../data/oledb/cenumeratoraccessor-class.md)  
- Tarafından kullanılan `CEnumerator` Numaralandırıcı satır kümesinden verilere erişmek için. Bu satır kümesi veri kaynakları ve numaralandırmalar geçerli Numaralandırıcının görünür oluşur.  
+ Tarafından kullanılan `CEnumerator` Numaralandırıcı satır kümesinden verilere erişmek için. Bu satır kümesi veri kaynakları ve geçerli Numaralandırıcının görünür numaralandırıcılar oluşur.  
   
  [CSession](../../data/oledb/csession-class.md)  
- Tek veritabanı erişim oturumu temsil eder. Bir veya daha fazla oturum ilişkilendirilebilir her `CDataSource` nesnesi.  
+ Bir tek veritabanı erişim oturumu temsil eder. Bir veya daha fazla oturum ilişkilendirilebilir her `CDataSource` nesne.  
   
 ## <a name="accessor-classes"></a>Erişimci sınıfları  
  [CAccessor](../../data/oledb/caccessor-class.md)  
- Statik olarak bir veri kaynağına bağlı kayıtlar için kullanılır. Veri kaynağının yapısı bildiğiniz durumlarda bu erişimci sınıfı kullanın.  
+ Statik olarak bağlı bir veri kaynağına kayıtlar için kullanılır. Veri kaynağının yapısını bildiğinizde bu erişimci sınıfı kullanın.  
   
  [CAccessorBase](../../data/oledb/caccessorbase-class.md)  
- Tüm erişimcisi sınıflar için temel sınıf.  
+ Tüm erişimci sınıflar için temel sınıf.  
   
  [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md)  
- Çalışma zamanında satır kümesi sütunu bilgilere göre oluşturulabilmesi için bir erişimci. Bu sınıf, veri kaynağının yapısını bilmiyorsanız veri almak için kullanın.  
+ Satır kümesi sütunu bilgilere göre çalışma zamanında oluşturulabilir erişimci. Bu sınıf, veri kaynağının yapısını bilmiyorsanız, veri almak için kullanın.  
   
  [CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md)  
- Komut türleri bilinmeyen olduğunda kullanılabilmesi için bir erişimci. Parametre bilgileri çağırarak alır `ICommandWithParameters` sağlayıcı arabirimi destekliyorsa, arabirim.  
+ Komut türü bilinmeyen olduğunda kullanılabilecek bir erişimcisi. Çağırarak parametre bilgilerini alır `ICommandWithParameters` sağlayıcı arabirimi destekliyor, arabirim.  
   
  [CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md)  
- Veritabanı yapılarını hiçbir bilgiye sahip olduğunda bir veri kaynağına erişim sağlar.  
+ Temel alınan veritabanı yapısı bilgisi varsa, bir veri kaynağına erişim sağlar.  
   
  [CDynamicStringAccessorA](../../data/oledb/cdynamicstringaccessora-class.md)  
- Benzer şekilde `CDynamicStringAccessor` dışında bu sınıfın ANSI dize veri olarak veri deposundan erişilen verileri ister.  
+ Benzer şekilde `CDynamicStringAccessor` dışında bu sınıf ANSI dize verileri veri deposundan erişilen verileri ister.  
   
  [CDynamicStringAccessorW](../../data/oledb/cdynamicstringaccessorw-class.md)  
- Benzer şekilde `CDynamicStringAccessor` dışında bu sınıfın UNICODE dize veri olarak veri deposundan erişilen verileri ister.  
+ Benzer şekilde `CDynamicStringAccessor` dışında bu sınıf UNICODE dize verileri veri deposundan erişilen verileri ister.  
   
  [CManualAccessor](../../data/oledb/cmanualaccessor-class.md)  
- Sütunları ve komut parametrelerini işlemek için bir erişimci yöntemleri. Bu sınıf ile sağlayıcı türü dönüştürebilirsiniz sürece herhangi bir veri türünün kullanabilirsiniz.  
+ Hem sütunları hem de komut parametreleri işlemek için bir erişimci yöntemlerini. Bu sınıf ile sağlayıcı türüne dönüştürebilirsiniz sürece herhangi bir veri türü kullanabilirsiniz.  
   
  [CNoAccessor](../../data/oledb/cnoaccessor-class.md)  
- Parametreleri desteklemiyor veya sütunların çıktısı için sınıf istemediğinizde şablon bağımsız değişken kullanılabilir.  
+ Parametrelerini veya sütunlarını çıkış desteklemeye sınıfı istemediğinizde, şablon bağımsız değişkeni kullanılabilir.  
   
  [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md)  
- Benzer şekilde `CDynamicStringAccessor` dışında bu sınıfın tüm verileri XML biçimli (etiketli) veri olarak veri deposundan erişilen dönüştürür.  
+ Benzer şekilde `CDynamicStringAccessor` dışında bu sınıfın XML biçimli (etiketli) veri veri deposundan erişilen tüm verileri dönüştürür.  
   
 ## <a name="rowset-classes"></a>Satır kümesi sınıfları  
  [CAccessorRowset](../../data/oledb/caccessorrowset-class.md)  
- Bir satır kümesi ve onun ilişkili erişimciler yalıtır.  
+ Bir satır kümesi ve ilişkili erişimcilerini kapsüller.  
   
  [CArrayRowset](../../data/oledb/carrayrowset-class.md)  
- Array sözdizimini kullanarak bir satır kümesi öğeleri erişmek için kullanılır.  
+ Dizi söz dizimini kullanarak bir satır kümesi öğelere erişmek için kullanılır.  
   
  [CBulkRowset](../../data/oledb/cbulkrowset-class.md)  
- Fetch ve tek bir çağrı ile birden çok satır işleyicilerini alarak satırları toplu işlemek için kullanılır.  
+ Getirme ve tek bir çağrı ile birden çok satır işleyicilerini alarak toplu satırları yönlendirme için kullanılır.  
   
  [CNoRowset](../../data/oledb/cnorowset-class.md)  
- Komut bir satır kümesi döndürmezse şablon bağımsız değişken kullanılabilir.  
+ Komut satır döndürmezse, şablon bağımsız değişkeni kullanılabilir.  
   
- [CRestrictions](../../data/oledb/crestrictions-class.md)  
+ [cRestrictions](../../data/oledb/crestrictions-class.md)  
  Şema satır kümeleri için kısıtlamaları belirtmek için kullanılır.  
   
  [CRowset](../../data/oledb/crowset-class.md)  
- İşlemek için kullanılan, ayarlayın ve satır kümesi veri alın.  
+ Satır kümesi veri işleme ve ayarlamak için kullanılır.  
   
  [CStreamRowset](../../data/oledb/cstreamrowset-class.md)  
- Döndürür bir `ISequentialStream` sonra kullanın; nesnesi bir satır kümesi yerine **okuma** XML biçiminde veri alma yöntemi. (SQL Server 2000 biçimlendirme yapar; bu özellik yalnızca SQL Server 2000 ile çalıştığını unutmayın.)  
+ Döndürür bir `ISequentialStream` yerine bir satır kümesi nesnesi; ardından `Read` XML biçiminde veri almak için yöntemi. (SQL Server 2000 biçimlendirme yapar; bu özellik yalnızca SQL Server 2000 ile çalıştığını unutmayın.)  
   
  [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md)  
- Sahte bir uygulamasını sağlar `IRowsetNotify`, boş işlevleri için ile `IRowsetNotify` yöntemleri `OnFieldChange`, `OnRowChange`, ve `OnRowsetChange`.  
+ İşlevsiz bir uygulamasını sağlar `IRowsetNotify`, için boş işlevlerle `IRowsetNotify` yöntemleri `OnFieldChange`, `OnRowChange`, ve `OnRowsetChange`.  
   
  [Şema Satır Kümesi Sınıfları ve Typedef Sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)  
   
- OLE DB Şablonları, OLE DB şema satır kümeleri için karşılık gelen sınıf kümesi sağlar.  
+ OLE DB Şablonları, OLE DB şema satır kümeleri karşılık gelen sınıf kümesi sağlar.  
   
 ## <a name="command-classes"></a>Komut sınıfları  
  [CCommand](../../data/oledb/ccommand-class.md)  
- Ayarlama ve bir parametre tabanlı OLE DB komutu yürütmek için kullanılır. Yalnızca basit bir satır kümesinde açmak için kullanmak `CTable` yerine.  
+ Ayarlayın ve parametre tabanlı bir OLE DB komutu yürütmek için kullanılır. Yalnızca basit bir satır kümesinde'ni açmak için kullanmak `CTable` yerine.  
   
  [CMultipleResults](../../data/oledb/cmultipleresults-class.md)  
  Bir şablon bağımsız değişken olarak kullanılan `CCommand` birden çok sonuç kümesi işlemek için komutu istediğinizde şablonu.  
   
  [CNoAccessor](../../data/oledb/cnoaccessor-class.md)  
- Şablon sınıfları için bir şablon bağımsız değişken olarak gibi kullanılan `CCommand` ve `CTable`, Süren erişimci sınıfı bağımsız değişken. Kullanım `CNoAccessor` parametrelerini desteklemek veya sütunların çıktısı için sınıf istemiyorsanız.  
+ Şablon sınıfları için bir şablon bağımsız değişkeni olarak gibi kullanılan `CCommand` ve `CTable`, süren bir erişimci sınıfında bağımsız değişken. Kullanım `CNoAccessor` parametrelerini veya sütunlarını çıkış desteklemeye sınıfı istemiyorsanız.  
   
  [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md)  
- Bir şablon bağımsız değişken olarak kullanılan `CCommand` tek bir satır kümesi işlemek için komutu istediğinizde şablonu. `CNoMultipleResults` Şablon bağımsız değişken için varsayılan değerdir.  
+ Bir şablon bağımsız değişken olarak kullanılan `CCommand` komutu tek bir satır kümesi işlemek istediğinizde şablonu. `CNoMultipleResults` Şablon bağımsız değişkeni için varsayılan değerdir.  
   
  [CNoRowset](../../data/oledb/cnorowset-class.md)  
- Bir şablon bağımsız değişken olarak kullanılan `CCommand` veya `CTable` komut veya tablo bir satır kümesi döndürmezse.  
+ Bir şablon bağımsız değişken olarak kullanılan `CCommand` veya `CTable` komut veya tablo satır döndürmezse.  
   
  [CTable](../../data/oledb/ctable-class.md)  
- Hiçbir parametre basit bir satır kümesinde erişmek için kullanılır.  
+ Basit bir satır kümesinde parametresiz erişmek için kullanılır.  
   
-## <a name="property-classes"></a>Özelliği sınıfları  
+## <a name="property-classes"></a>Özellik sınıfları  
  [CDBPropIDSet](../../data/oledb/cdbpropidset-class.md)  
- Bir dizi özellik kimlikleri için özellik bilgilerini tüketici istediği iletmek için kullanılır. Özellikler bir özellik kümesine ait.  
+ Bir dizi özellik kimlikleri için özellik bilgilerini tüketici istediği geçirmek için kullanılır. Özellikleri bir özellik kümesine ait değil.  
   
  [CDBPropSet](../../data/oledb/cdbpropset-class.md)  
  Bir sağlayıcısında özelliklerini ayarlamak için kullanılır.  
   
 ## <a name="bookmark-class"></a>Yer işareti sınıfı  
  [CBookmark](../../data/oledb/cbookmark-class.md)  
- Bir dizini olarak bir satır kümesi veri erişimi için kullanılır.  
+ Bir satır kümesi veri erişimi için bir dizin olarak kullanılır.  
   
 ## <a name="error-class"></a>Hata sınıfı  
  [CDBErrorInfo](../../data/oledb/cdberrorinfo-class.md)  

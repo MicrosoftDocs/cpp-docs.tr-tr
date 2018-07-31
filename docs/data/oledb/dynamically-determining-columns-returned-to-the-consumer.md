@@ -1,5 +1,5 @@
 ---
-title: Dinamik olarak sütunlar belirleme döndürülen tüketiciye | Microsoft Docs
+title: Döndürülen tüketiciye dinamik olarak sütunlar belirleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fd84b6f9451e924fac9e3630df38719c83ff583a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28150a39042305ab96c4dba7746c0b79dbec9509
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33107945"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340462"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme
-PROVIDER_COLUMN_ENTRY normalde işlemek **IColumnsInfo::GetColumnsInfo** çağırın. Ancak, bir tüketici yer işaretleri kullanmayı tercih edebilirsiniz çünkü sağlayıcı için bir yer işareti ister bağlı olarak Tüketiciye döndürülecek olan sütunları değiştirmek mümkün olması gerekir.  
+PROVIDER_COLUMN_ENTRY normalde işlemek `IColumnsInfo::GetColumnsInfo` çağırın. Ancak, bir tüketici yer işaretlerini kullanmak isteyebilirsiniz, çünkü sağlayıcı tüketici için bir yer ister bağlı olarak döndürülecek olan sütunları değiştirmek mümkün olması gerekir.  
   
- İşlenecek **IColumnsInfo::GetColumnsInfo** çağrı, bir işlevi tanımlayan PROVIDER_COLUMN_MAP silme `GetColumnInfo`, gelen `CAgentMan` kullanıcı kaydı MyProviderRS.h öğesinde ve kendi tanımıyla değiştirin `GetColumnInfo` işlevi:  
+ İşlenecek `IColumnsInfo::GetColumnsInfo` çağrısı, bir işlevi tanımlayan PROVIDER_COLUMN_MAP silme `GetColumnInfo`, gelen `CAgentMan` kullanıcı kaydından içinde ve kendi tanımını değiştirin `GetColumnInfo` işlevi:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -49,11 +49,11 @@ public:
 };  
 ```  
   
- Ardından, uygulama `GetColumnInfo` aşağıdaki kodda gösterildiği gibi MyProviderRS.cpp içinde işlev.  
+ Ardından, uygulama `GetColumnInfo` MyProviderRS.cpp aşağıdaki kodda gösterildiği gibi işlev.  
   
- `GetColumnInfo` ilk denetler OLE DB özelliği **DBPROP_BOOKMARKS** ayarlanır. Özellik get yapılmaya `GetColumnInfo` bir işaretçi kullanır (`pRowset`) satır kümesi nesnesi için. `pThis` İşaretçi özellik eşlemesi depolandığı sınıfı olduğu satır kümesi oluşturulan sınıfı temsil eder. `GetColumnInfo` işaretçisine tür olarak atar `pThis` işaretçi bir `RMyProviderRowset` işaretçi.  
+ `GetColumnInfo` ilk denetler OLE DB özelliği `DBPROP_BOOKMARKS` ayarlanır. Özellik get yapılmaya `GetColumnInfo` bir işaretçi kullanır (`pRowset`) için satır kümesi nesnesi. `pThis` İşaretçisini özellik eşlemesi depolandığı sınıfı olduğu satır kümesi, oluşturulan sınıfı temsil eder. `GetColumnInfo` yuvarlamasını `pThis` işaretçi bir `RMyProviderRowset` işaretçi.  
   
- Denetlenecek **DBPROP_BOOKMARKS** özelliği, `GetColumnInfo` kullanan `IRowsetInfo` çağırarak elde edebileceğiniz arabirimi `QueryInterface` üzerinde `pRowset` arabirimi. Alternatif olarak, bir ATL kullanabilirsiniz [CComQIPtr](../../atl/reference/ccomqiptr-class.md) yöntemi yerine.  
+ Denetlenecek `DBPROP_BOOKMARKS` özelliği `GetColumnInfo` kullanan `IRowsetInfo` çağırarak elde edebileceğiniz arabirimi `QueryInterface` üzerinde `pRowset` arabirimi. Alternatif olarak, bir ATL kullanabileceğiniz [CComQIPtr](../../atl/reference/ccomqiptr-class.md) yöntemi yerine.  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////  
@@ -114,7 +114,7 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
 }  
 ```  
   
- Bu örnek, sütun bilgileri saklamak için statik bir dizi kullanır. Tüketici yer işareti sütunu istemezse dizisinde bulunan bir giriş kullanılmıyor. Bilgileri işlemek için iki dizi makrosu oluşturun: ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX ek bir parametre alan `flags`, yani bir yer işareti sütunu tanımlarsanız gerekli.  
+ Bu örnek, statik bir dizi sütun bilgileri içerecek şekilde kullanır. Tüketici yer işareti sütunu istemezse, dizi bir giriş kullanılmıyor. İki dizi makro oluşturma bilgilerini işlemek için: ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX ek bir parametre alan `flags`, yani sizin belirlediğiniz bir yer işareti sütunu gerekli.  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -145,15 +145,15 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
    _rgColumns[ulCols].columnid.uName.pwszName = (LPOLESTR)name;  
 ```  
   
- İçinde `GetColumnInfo` işlevi, yer işareti makrosu aşağıdaki gibi kullanılır:  
+ İçinde `GetColumnInfo` işlevi, yer işareti makrosu şu şekilde kullanılır:  
   
-```  
+```cpp  
 ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),  
    DBTYPE_BYTES, 0, 0, GUID_NULL, CAgentMan, dwBookmark,   
    DBCOLUMNFLAGS_ISBOOKMARK)  
 ```  
   
- Şimdi derleyin ve Gelişmiş Sağlayıcısı'nı çalıştırın. Sağlayıcı test etmek için test tüketici açıklandığı şekilde değiştirmeniz [basit tüketici uygulama](../../data/oledb/implementing-a-simple-consumer.md). Test tüketici sağlayıcı ile çalıştırın. ' I tıklattığınızda test tüketici uygun dizeleri sağlayıcıdan alır olduğunu doğrulayın **çalıştırmak** düğmesini **Test Tüketicisi** iletişim kutusu.  
+ Şimdi, derleyin ve Gelişmiş Sağlayıcısı'nı çalıştırın. Sağlayıcıyı test için test tüketici açıklandığı şekilde değiştirmeniz [basit tüketici uygulama](../../data/oledb/implementing-a-simple-consumer.md). Test tüketici, sağlayıcı ile çalıştırın. Test tüketici tıkladığınızda sağlayıcısından uygun dizelerden görüntüleyip getirdiğini doğrulayın **çalıştırma** düğmesine **Test tüketici** iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Basit Salt Okunur Sağlayıcıyı Geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)

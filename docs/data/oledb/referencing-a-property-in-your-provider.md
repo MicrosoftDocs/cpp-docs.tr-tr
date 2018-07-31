@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 36965ac33fc0a563951c0c0dfdce60d9d0e4f55b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec2a52949754e6b19730d5ef025f958d517f6fd0
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106550"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341042"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>Sağlayıcınızdaki Bir Özelliğe Başvurma
-Özellik grubu ve özellik kimliği özelliği için bulun. Daha fazla bilgi için bkz: [OLE DB özellikleri](https://msdn.microsoft.com/en-us/library/ms722734.aspx) içinde *OLE DB Programcının Başvurusu*.  
+Özellik kimliği ve özellik grubu istediğiniz özelliği bulun. Daha fazla bilgi için [OLE DB özellikleri](https://msdn.microsoft.com/library/ms722734.aspx) içinde *OLE DB Programcının Başvurusu*.  
   
- Aşağıdaki örnek, satır kümesinden bir özellik get yapılmaya çalışılırken olduğunu varsayar. Oturum ya da komutu kullanmak için kodu benzer ancak farklı bir arabirim kullanır.  
+ Aşağıdaki örnek, satır kümesinden bir özellik get yapılmaya çalışılırken varsayar. Oturum ya da komutu kullanmak için kodu, benzer ancak farklı bir arabirim kullanır.  
   
- Oluşturma bir [CDBPropSet](../../data/oledb/cdbpropset-class.md) Oluşturucusu parametre olarak özellik grubunu kullanarak nesne. Örneğin:  
+ Oluşturma bir [CDBPropSet](../../data/oledb/cdbpropset-class.md) oluşturucusuna parametre olarak özellik grubunu kullanarak nesne. Örneğin:  
   
-```  
+```cpp  
 CDBPropSet propset(DBPROPSET_ROWSET);  
 ```  
   
- Çağrı [AddProperty](../../data/oledb/cdbpropset-addproperty.md), özellik kimliği ve bir değer özelliğine atanacak geçirme. Değerin türü kullandığınız özelliğe bağlıdır.  
+ Çağrı [AddProperty](../../data/oledb/cdbpropset-addproperty.md), özellik kimliği ve bir değer özelliğe atanacak geçirme. Değerin türü, kullanmakta olduğunuz özelliğine bağlıdır.  
   
-```  
+```cpp  
 CDBPropSet propset(DBPROPSET_ROWSET);  
 
 propset.AddProperty(DBPROP_IRowsetChange, true);  
@@ -45,9 +45,9 @@ propset.AddProperty(DBPROP_IRowsetChange, true);
 propset.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_DELETE);  
 ```  
   
- Kullanım `IRowset` çağırmak için arabirimi **GetProperties**. Bir parametre özellik geçirin. Son kod aşağıdaki gibidir:  
+ Kullanım `IRowset` çağrılacak arabirimi `GetProperties`. Bir parametre özelliği geçirin. Son kod aşağıdaki gibidir:  
   
-```  
+```cpp  
 CAgentRowset<CMyProviderCommand>* pRowset = (CAgentRowset<CMyProviderCommand>*) pThis;  
   
 CComQIPtr<IRowsetInfo, &IID_IRowsetInfo> spRowsetProps = pRowset;  

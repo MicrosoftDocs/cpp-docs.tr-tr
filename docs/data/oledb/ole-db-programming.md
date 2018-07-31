@@ -17,33 +17,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fb77c5b7d7f6de91f74e83c395d0fcc13ebf70e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d211297d587fffcfc58ac57db6687dc8edde4344
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33107184"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336553"
 ---
 # <a name="ole-db-programming"></a>OLE DB Programlama
-Microsoft OLE DB eski bir teknolojidir; Yeni uygulama için bağlı SQL sunucuları için gerekli veri erişim API'dir. Diğer tüm yeni uygulamalar ODBC kullanmanız gerekir. SQL Server için geçerli OLE DB sağlayıcısı SQLNCLI11 ' dir. DLL. Sağlayıcı, SQL Server 2016 hala aktarma. Bu belge, OLE DB kullanmakta olan mevcut uygulamaları sürdürmek geliştiriciler için tasarlanmıştır.
+Microsoft OLE DB eski bir teknolojidir; Yeni uygulamalar için bağlı SQL sunucuları için gereken veri erişimi API'si kullanılır. Diğer tüm yeni uygulamaları ODBC kullanmanız gerekir. SQL Server için geçerli OLE DB sağlayıcısı SQLNCLI11 ' dir. DLL. Sağlayıcı, SQL Server 2016'da hala sunulmamaktadır. Bu belge, OLE DB kullanmakta olan mevcut uygulamaları korumak için geliştiriciler içindir.
   
- OLE DB Şablonları, yüksek performanslı OLE DB veritabanı teknolojisi uygulayan sınıfları sağlayarak kullanmak yaygın olarak birçok kolaylaştırmak C++ şablonları kullanılan OLE DB arabirimlerini ' dir. Bu şablon kitaplığı Tüketici Şablonları ve sağlayıcı şablonları olarak bölünür.  
+ OLE DB Şablonları, OLE DB arabirimlerini C++ şablonları, yüksek performanslı OLE DB veritabanı teknoloji uygulayan sınıflar sağlayarak kullanmak yaygın olarak birçok kolaylaştırmak kullanılan ' dir. Bu şablon kitaplığı Tüketici Şablonları ve sağlayıcı şablonları bölünmüştür.  
   
- Visual C++ OLE DB Başlatıcı uygulamaları oluşturmak için sihirbaz desteği de vardır.  
+ Visual C++ OLE DB başlangıç uygulamaları oluşturmak için sihirbaz desteği de vardır.  
   
  Ayrıca, OLE DB Tüketici Şablonları uygulamak için öznitelikler kullanabilirsiniz.  
   
-|Daha fazla bilgi edinmek için|Bkz. |  
+|Hakkında daha fazla bilgi edinmek için|Bkz. |  
 |-------------------------|---------|  
-|OLE DB Tüketici Şablonları (kavramsal konuları) kullanma|[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)|  
-|OLE DB sağlayıcı şablonları (kavramsal konuları) kullanma|[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)|  
+|OLE DB Tüketici Şablonları (kavramsal konular) kullanma|[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)|  
+|OLE DB sağlayıcı şablonları (kavramsal konular) kullanma|[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)|  
 |OLE DB şablon sınıfları ve makroları|[OLE DB Şablonları başvurusu](../../data/oledb/ole-db-templates.md) (Visual C++)|  
 |OLE DB tüketici öznitelikleri|[OLE DB Tüketici Öznitelikleri](../../windows/ole-db-consumer-attributes.md)|  
-|OLE DB arabirimleri|[OLE DB Programcının Başvurusu](https://msdn.microsoft.com/en-us/library/ms713643.aspx) (Windows SDK'da)|  
-|OLE DB Şablon örnekleri|[OLE DB Şablon örnekleri](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c)| 
-|Veri erişimi programlama genel bakış (Visual C++)|[Veri erişim programlama](../../data/data-access-programming-mfc-atl.md)|  
-|ODBC kavramsal konuları|[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
+|OLE DB arabirimleri|[OLE DB Programcının Başvurusu](https://msdn.microsoft.com/library/ms713643.aspx) (Windows SDK'da)|  
+|OLE DB Şablon örnekleri|[OLE DB Şablon örnekleri](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)| 
+|Veri erişim programlama genel bakış (Visual C++)|[Veri erişim programlama](../../data/data-access-programming-mfc-atl.md)|  
+|ODBC kavramsal konular|[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
 
-  
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri Erişimi](../data-access-in-cpp.md)

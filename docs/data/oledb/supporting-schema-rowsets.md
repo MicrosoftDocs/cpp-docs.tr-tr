@@ -18,56 +18,56 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 95f1455fde75ec835486cbcc3d590822891d14f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c0468a9df7b79e79b3e20074c43fc1621058d71
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111763"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339711"
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
-Şema satır kümeleri kendi yapılarını veya şema bilmeden bir veri deposu hakkında bilgi edinmek tüketicilere izin verir. Örneğin, bir veri deposu olurdu şekilde okuma tarafından şemanın bilgi sağlamak için hiçbir şekilde bir kullanıcı tarafından tanımlanan hiyerarşide düzenlenmiş tablolar olabilir. (Başka bir örnek olarak, Visual C++ sihirbazları tüketici erişimcileri oluşturmak için şema satır kümeleri kullandığını unutmayın.) Bunu yapmak izin vermek üzere üzerinde yöntemlerini sağlayıcının oturum nesnesi gösterir [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) arabirimi. Visual C++ uygulamalarında kullandığınız [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) uygulamak için sınıf **IDBSchemaRowset**.  
+Şema satır kümeleri, temel alınan yapısını veya şema farkında olmadan bir veri deposu hakkında bilgi edinmek tüketiciler izin verir. Örneğin, bir veri deposunu okuma tarafından şemanın bilgi emin olmanın bir yolu nedenle kullanıcı tanımlı bir hiyerarşi halinde düzenlenmiş tablolar olabilir. (Başka bir örnek olarak, Visual C++ sihirbazları, tüketicinin için erişimciler üretmek için şema satır kümeleri kullandığını unutmayın.) Bunu yapmak tüketici izin vermek için sağlayıcının oturum nesnesi yöntemleri gösterir [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) arabirimi. Visual C++ uygulamalarında kullandığınız [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) uygulamak için sınıfı `IDBSchemaRowset`.  
   
- `IDBSchemaRowsetImpl` Aşağıdaki yöntemlerden destekler:  
+ `IDBSchemaRowsetImpl` Aşağıdaki yöntemleri destekler:  
   
--   [CheckRestrictions](../../data/oledb/idbschemarowsetimpl-checkrestrictions.md) bir şema satır kümesi karşı kısıtlamaların geçerliliğini denetler.  
+-   [CheckRestrictions](../../data/oledb/idbschemarowsetimpl-checkrestrictions.md) kısıtlamaları şeması satır kümesi karşı geçerliliğini denetler.  
   
--   [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md) şablon parametresi tarafından belirtilen nesne için bir COM nesnesi oluşturucu işlevi uygular.  
+-   [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md) şablon parametresi tarafından belirtilen nesne için bir COM nesnesi oluşturan işlevi uygular.  
   
--   [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) belirli şema satır kümesinde desteklediğiniz hangi kısıtlamaları belirtir.  
+-   [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) destekleyen bir belirli şeması satır kümesi üzerinde hangi kısıtlamalar belirtir.  
   
--   [IDBSchemaRowset::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) (arabiriminden devralınmış) bir şema satır kümesi döndürür.  
+-   [IDBSchemaRowset::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) (arabiriminden devralınan) şeması satır kümesi döndürür.  
   
--   [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) şema satır kümeleri tarafından erişilebilen döndürür `IDBSchemaRowsetImpl::GetRowset` (arabiriminden devralınmış).  
+-   [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) şema satır kümeleri listesi tarafından erişilebilen döndürür `IDBSchemaRowsetImpl::GetRowset` (arabiriminden devralınan).  
   
-## <a name="atl-ole-db-provider-wizard-support"></a>ATL OLE DB Sağlayıcı Sihirbazı desteği  
- ATL OLE DB Sağlayıcı Sihirbazı oturum üstbilgi dosyasında üç şema sınıfları oluşturur:  
+## <a name="atl-ole-db-provider-wizard-support"></a>ATL OLE DB sağlayıcısı Sihirbazı desteği  
+ ATL OLE DB sağlayıcısı Sihirbazı üç şema sınıfları oturumu üstbilgi dosyası oluşturur:  
   
--   **C** *kısaad* **SessionTRSchemaRowset**  
+-   **C** *ShortName* **SessionTRSchemaRowset**  
   
--   **C** *kısaad* **SessionColSchemaRowset**  
+-   **C** *ShortName* **SessionColSchemaRowset**  
   
--   **C** *kısaad* **SessionPTSchemaRowset**  
+-   **C** *ShortName* **SessionPTSchemaRowset**  
   
- Bu sınıfları, şema bilgileri tüketici isteklere yanıt verir; OLE DB belirtiminin bu üç şema satır kümeleri desteklenmesi gerektirdiğini unutmayın:  
+ Bu sınıflar için şema bilgileri tüketici isteklerine yanıt vermek; OLE DB belirtimi, bu üç şema satır kümeleri desteklenen gerektiğini unutmayın:  
   
--   **C** *kısaad* **SessionTRSchemaRowset** tablo bilgilerine yönelik istekleri işleyen ( `DBSCHEMA_TABLES` şeması satır kümesi).  
+-   **C** *ShortName* **SessionTRSchemaRowset** için tablo bilgileri isteklerini işler ( `DBSCHEMA_TABLES` şeması satır kümesi).  
   
--   **C** *kısaad* **SessionColSchemaRowset** sütun bilgisi isteklerini işleme ( **DBSCHEMA_COLUMNS** şeması satır kümesi). Sihirbazın bu sınıfların DOS sağlayıcı için şema bilgileri döndürmek için örnek uygulamaları sağlar.  
+-   **C** *ShortName* **SessionColSchemaRowset** sütun bilgisi isteklerini işler ( `DBSCHEMA_COLUMNS` şeması satır kümesi). Sihirbaz, bu sınıflar bir DOS sağlayıcısı için şema bilgileri döndürmek için örnek uygulamaları sağlar.  
   
--   **C** *kısaad* **SessionPTSchemaRowset** sağlayıcı türü hakkındaki şema bilgilerine yönelik istekleri işleyen ( **DBSCHEMA_PROVIDER_TYPES** şeması satır kümesi). Sihirbaz tarafından sağlanan varsayılan uygulama döndürür `S_OK`.  
+-   **C** *ShortName* **SessionPTSchemaRowset** için şema bilgileri sağlayıcısı türü hakkındaki istekleri işler ( `DBSCHEMA_PROVIDER_TYPES` şeması satır kümesi). Sihirbaz tarafından sağlanan varsayılan uygulamasını döndürür `S_OK`.  
   
- Sağlayıcınıza uygun şema bilgileri işlemek için bu sınıfların özelleştirebilirsiniz:  
+ Şema bilgileri sağlayıcınıza uygun işlemek için bu sınıfların özelleştirebilirsiniz:  
   
--   İçinde **C***kısaad***SessionTRSchemaRowset**, katalog, tablo ve açıklama alanları doldurun gerekir (**trData.m_szType**, **trData.m_szTable** , ve **trData.m_szDesc**). Sihirbaz tarafından oluşturulan örnek, yalnızca bir satır (tablo) kullanır. Diğer sağlayıcıları birden fazla tablo döndürebilir.  
+-   İçinde **C***ShortName***SessionTRSchemaRowset**, katalog, tablo ve açıklama alanları doldurmanız gerekir (`trData.m_szType`, `trData.m_szTable`, ve `trData.m_szDesc`). Sihirbazın ürettiği örnek yalnızca bir satır (tablo) kullanır. Diğer sağlayıcılar, birden fazla tablo döndürebilir.  
   
--   İçinde **C***kısaad***SessionColSchemaRowset**, tablo olarak adını geçirmek bir **DBID**.  
+-   İçinde **C***ShortName***SessionColSchemaRowset**, tablonun adını geçirdiğiniz bir `DBID`.  
   
 ## <a name="setting-restrictions"></a>Kısıtlamalarını ayarlama  
- Şema satır kümesi desteği de önemli bir kavram kullanarak bunu kısıtlamaları ayarı `SetRestrictions`. Kısıtlamalar yalnızca eşleşen satırları getirmeye tüketicileri izin ver (örneğin, tüm sütunlara "MyTable" tablosunda Bul). Kısıtlamaları isteğe bağlıdır ve durumda hiçbirinin desteklenir (varsayılan), tüm veriler her zaman döndürülür. Kısıtlamaları destekleyen bir sağlayıcı örneği için bkz: [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek.  
+ Şema satır kümesi desteği önemli bir kavramdır kullanarak bunu kısıtlamaları Ayarlıyor `SetRestrictions`. Kısıtlamalar yalnızca eşleşen satırları getirilecek tüketiciler izin ver (örneğin, tüm sütunları tabloda "MyTable" Bul). Kısıtlamaları isteğe bağlıdır ve durumda hiçbiri desteklenir (varsayılan), tüm veriler her zaman döndürülür. Kısıtlamaları destekleyen bir sağlayıcı örneği için bkz: [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek.  
   
 ## <a name="setting-up-the-schema-map"></a>Şema eşleme ayarlama  
- Şema eşleme UpdatePV Session.h'deki bunun gibi ayarlayın:  
+ Bir şema eşlemesine UpdatePV Session.h'deki bunun gibi ayarlayın:  
   
 ```  
 BEGIN_SCHEMA_MAP(CUpdateSession)  
@@ -77,9 +77,9 @@ BEGIN_SCHEMA_MAP(CUpdateSession)
 END_SCHEMA_MAP()  
 ```  
   
- Desteklemek için **IDBSchemaRowset**, desteklemeniz gereken `DBSCHEMA_TABLES`, **DBSCHEMA_COLUMNS**, ve **DBSCHEMA_PROVIDER_TYPES**. Ek şema satır kümeleri ekleyebilirsiniz.  
+ Desteklemek için `IDBSchemaRowset`, desteklemeniz gereken `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, ve `DBSCHEMA_PROVIDER_TYPES`. İstediğiniz kadar ek şema satır kümeleri ekleyebilirsiniz.  
   
- Bir şema satır kümesi sınıfla bildirme bir `Execute` yöntemi gibi `CUpdateSessionTRSchemaRowset` UpdatePV:  
+ Şema satır kümesi sınıfıyla bildirmek bir `Execute` yöntemi gibi `CUpdateSessionTRSchemaRowset` UpdatePV:  
   
 ```  
 class CUpdateSessionTRSchemaRowset :   
@@ -91,13 +91,13 @@ class CUpdateSessionTRSchemaRowset :
                     ULONG cRestrictions, const VARIANT* rgRestrictions)  
 ```  
   
- Unutmayın `CUpdateSession` devraldığı `IDBSchemaRowsetImpl`, tüm kısıtlama yöntemleri işleme sahiptir. Kullanarak `CSchemaRowsetImpl`, üç alt sınıflar (şema eşlemede listelenir) bildirin: `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, ve `CUpdateSessionPTSchemaRowset`. Bu alt sınıfların her biri olan bir `Execute` kendi kendine kısıtlama (arama ölçütleri) işleyen yöntem. Her `Execute` yöntemi değerlerini karşılaştırır `cRestrictions` ve `rgRestrictions` parametreleri. Bu parametreler açıklamasına bakın [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).  
+ Unutmayın `CUpdateSession` devraldığı `IDBSchemaRowsetImpl`, yöntemlerinin yönetilmesi kısıtlama vardır. Kullanarak `CSchemaRowsetImpl`, üç alt sınıfları (şema eşlemede listelenmiştir) bildirmek: `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, ve `CUpdateSessionPTSchemaRowset`. Bu alt sınıfların her bir `Execute` kısıtlamaları (arama ölçütleri) ilgili bir dizi işleyen yöntem. Her `Execute` yöntemi değerlerini karşılaştırır `cRestrictions` ve `rgRestrictions` parametreleri. Bu parametreleri açıklamasına bakın [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).  
   
- Kısıtlamaları hakkında belirli şeması satır kümesi için karşılık daha fazla bilgi için şema satır kümesi GUID'ler tablosunun başvurun içinde [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) içinde *OLE DB Programcının Başvurusu* içinde Windows SDK.  
+ İlgili kısıtlamaları karşılık gelen bir belirli şeması satır kümesi için daha fazla bilgi için tablosu şeması satır kümesi GUID'leri başvurun içinde [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) içinde *OLE DB Programcının Başvurusu* içinde Windows SDK'sı.  
   
- Örneğin, desteklenen **TABLE_NAME** ilgili bir kısıtlama `DBSCHEMA_TABLES`, aşağıdakileri yapmanız gerekir:  
+ Örneğin, desteklenen **TABLE_NAME** kısıtlaması `DBSCHEMA_TABLES`, aşağıdakileri yapmanız gerekir:  
   
- İlk olarak, arama `DBSCHEMA_TABLES` ve dört kısıtlamaları (sırayla) destekler.  
+ İlk olarak, arama `DBSCHEMA_TABLES` ve dört kısıtlamaları (sırasıyla) destekler.  
   
 |Şema satır kümesi kısıtlama|Kısıtlama değeri|  
 |-------------------------------|-----------------------|  
@@ -106,19 +106,19 @@ class CUpdateSessionTRSchemaRowset :
 |**TABLE_NAME**|0x4 (ikili 100)|  
 |**TABLE_TYPE**|0x8 (ikili 1000)|  
   
- Ardından, her kısıtlama için bir bit olduğuna dikkat edin. Desteklemek istediğiniz çünkü **TABLE_NAME** yalnızca 0x4 geri `rgRestrictions` öğesi. Desteklenen varsa **TABLE_CATALOG** ve **TABLE_NAME**, 0x5 (binary 101) döndürecektir.  
+ Ardından, her kısıtlama için bir bit olduğuna dikkat edin. Desteklemek istediğiniz çünkü **TABLE_NAME** yalnızca 0x4 geri `rgRestrictions` öğesi. Destekleniyorsa, **TABLE_CATALOG** ve **TABLE_NAME**, 0x5 (ikili 101) döndürecektir.  
   
- Varsayılan olarak, uygulama herhangi bir istek için 0 (herhangi bir kısıtlama desteklemez) döndürür. UpdatePV kısıtlamaları destekleyen bir sağlayıcı örneğidir.  
+ Varsayılan olarak, herhangi bir istek için 0 (herhangi bir kısıtlama desteklemez) uygulamasını döndürür. UpdatePV kısıtlamaları destekleyen sağlayıcı örneğidir.  
   
 ### <a name="example"></a>Örnek  
- Bu kod alınırlar [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek. UpdatePv üç gerekli şema satır kümeleri destekler: `DBSCHEMA_TABLES`, **DBSCHEMA_COLUMNS**, ve **DBSCHEMA_PROVIDER_TYPES**. Uygulama üzerinden nasıl şema desteği sağlayıcınızda uygulayacağınıza dair örnek olarak, bu konuda, geçen **DBSCHEMA_TABLE** satır kümesi.  
+ Bu kod alınır [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek. UpdatePv üç gerekli şema satır kümeleri destekler: `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, ve `DBSCHEMA_PROVIDER_TYPES`. Uygulama konusunda şema desteği sağlayıcınızda uygulamak nasıl bir örnek olarak, bu konuda, alan `DBSCHEMA_TABLE` satır kümesi.  
   
 > [!NOTE]
->  Örnek kod, ne burada listelenen alanından farklı olabilir; Örnek kod daha güncel bir sürüm olarak göz önüne almalısınız.  
+>  Örnek kod, ne burada listelenen öğesinden farklı olabilir; Örnek kod daha güncel bir sürüm olarak göz önüne almalısınız.  
   
- Şema desteği ekleme ilk adımı, hangi kısıtlamaları desteklemek için destekleyeceğinizi belirlemektir. Hangi kısıtlamaları şema satır kümesi için kullanılabilir olduğunu belirlemek üzere tanımı için OLE DB belirtimine bakın **IDBSchemaRowset**. Ana tanımı, şema satır kümesi adı, kısıtlama sayısı ve kısıtlama sütunları içeren bir tabloya bakın. Kısıtlamaları ve kısıtlama sütun sayısını not edin ve desteklemek için istediğiniz şeması satır kümesi seçin. Örneğin, `DBSCHEMA_TABLES` dört kısıtlamayı destekler (**TABLE_CATALOG**, **TABLE_SCHEMA**, **TABLE_NAME**, ve **TABLE_TYPE** ):  
+ İlk adımı şema desteği eklemeyi desteklemek için oluşturacağınız hangi kısıtlamaları belirlemektir. OLE DB belirtimi tanımı için bakmak hangi kısıtlamaları, şeması satır kümesi için kullanılabilir olduğunu belirlemek için `IDBSchemaRowset`. Ana tanımı şema satır kümesi adı, kısıtlama sayısı ve kısıtlama sütunlarını içeren bir tablo görürsünüz. Kısıtlamaları ve kısıtlama sütun sayısını not edin ve desteklemek için istediğiniz şeması satır kümesi seçin. Örneğin, `DBSCHEMA_TABLES` dört kısıtlamaları destekler (**TABLE_CATALOG**, **TABLE_SCHEMA**, **TABLE_NAME**, ve **TABLE_TYPE** ):  
   
-```  
+```cpp  
 void SetRestrictions(ULONG cRestrictions, GUID* rguidSchema,   
    ULONG* rgRestrictions)  
 {  
@@ -135,27 +135,27 @@ void SetRestrictions(ULONG cRestrictions, GUID* rguidSchema,
 }  
 ```  
   
- Bir bit her kısıtlama sütunu temsil eder. Bir kısıtlama desteklemek istiyorsanız (diğer bir deyişle, sorgulayabilirsiniz), o biti 1 olarak ayarlayın. Bir kısıtlama desteklemek istemiyorsanız bu bit sıfır olarak ayarlayın. Yukarıdaki kod satırından UpdatePV destekleyen **TABLE_NAME** ve **TABLE_TYPE** kısıtlamalar `DBSCHEMA_TABLES` satır kümesi. (Bit maskesi: 100) üçüncü ve dördüncü (bit maskesi 1000) kısıtlamaları bunlar. Bu nedenle, UpdatePv için bit maskesi 1100 (veya 0x0C) verilmiştir:  
+ Bir bit her kısıtlama sütunu temsil eder. Bir kısıtlama desteklemek istiyorsanız (diğer bir deyişle, sorgulayabilirsiniz), söz konusu bit 1 olarak ayarlayın. Kısıtlama desteklemek istemiyorsanız, söz konusu bit sıfır olarak ayarlayın. Yukarıdaki kod satırından UpdatePV destekler **TABLE_NAME** ve **TABLE_TYPE** kısıtlamalar `DBSCHEMA_TABLES` satır kümesi. (Bit maskesi 100) üçüncü ve dördüncü (bit maskesi 1000) kısıtlamaları şunlardır. Bu nedenle UpdatePv için bit maskesi 1100 (veya 0x0C) gereklidir:  
   
 ```  
 if (InlineIsEqualGUID(rguidSchema[l], DBSCHEMA_TABLES))  
     rgRestrictions[l] = 0x0C;  
 ```  
   
- Aşağıdaki `Execute` işlevi normal satır kümeleri benzer. Üç bağımsız değişkeni vardır: `pcRowsAffected`, `cRestrictions`, ve `rgRestrictions`. `pcRowsAffected` Değişkeni, bir output parametresi sağlayıcı şeması satır kümesi satırların sayımını geri dönebilirsiniz. `cRestrictions` Tüketici tarafından sağlayıcıya geçirilen kısıtlamaların sayısını içeren bir parametredir giriş. `rgRestrictions` Parametredir bir dizi **değişken** kısıtlama değerleri içeren bir değerler.  
+ Aşağıdaki `Execute` işlev, normal satır kümeleri benzer. Üç bağımsız değişkeni vardır: *pcRowsAffected*, *cRestrictions*, ve *rgRestrictions*. *PcRowsAffected* değişkendir sağlayıcı şeması satır kümesi içinde satır sayısını döndürebilir çıkış parametresi. *CRestrictions* tüketici tarafından sağlayıcısına geçirilen kısıtlamalar sayısını içeren bir parametredir giriş. *RgRestrictions* parametresi, bir dizi `VARIANT` kısıtlama değerleri içeren bir değerler.  
   
 ```  
 HRESULT Execute(DBROWCOUNT* pcRowsAffected, ULONG cRestrictions,   
                 const VARIANT* rgRestrictions)  
 ```  
   
- `cRestrictions` Değişkeni sağlayıcı bunları destekleyip desteklemediğini bakılmaksızın bir şema satır kümesi için kısıtlamalar toplam sayısını temel alır. UpdatePv iki kısıtlama (üçüncü ve dördüncü) desteklediği için bu kod yalnızca arar bir `cRestrictions` üç eşit veya daha büyük bir değer.  
+ `cRestrictions` Değişkeni sağlayıcı bunları destekleyip bağımsız olarak bir şeması satır kümesi için kısıtlamalar toplam sayısını temel alır. UpdatePv (üçüncü ve dördüncü) iki kısıtlama desteklediğinden, bu kod yalnızca arayan bir `cRestrictions` üç eşit veya büyük değer.  
   
- Değeri **TABLE_NAME** kısıtlama depolanır `rgRestrictions[2]` (yeniden sıfır tabanlı bir dizi üçüncü kısıtlamada 2'dir). Kısıtlama olmadığını kontrol etmeniz `VT_EMPTY` gerçekten desteklemek için. Unutmayın **VT_NULL** eşit değil `VT_EMPTY`. **VT_NULL** geçerli bir kısıtlama değeri belirtir.  
+ Değeri **TABLE_NAME** kısıtlama depolanan `rgRestrictions[2]` (yeniden üçüncü kısıtlamayı sıfır tabanlı bir dizi 2'dir). Kısıtlama gerçekten desteklemek için VT_EMPTY olmadığını denetlemek gerekir. VT_NULL VT_EMPTY için eşit olmadığını unutmayın. VT_NULL geçerli bir kısıtlama değeri belirtir.  
   
- Bir metin dosyasına tam yol adı bir tablo adının UpdatePv tanımıdır. Kısıtlama değerini ayıklayın ve dosyanın gerçekten var olmadığından emin olmak için dosyayı açmayı deneyin. Dosya mevcut değilse dönmek `S_OK`. Bu biraz geriye doğru görünebilir ancak hangi kodu gerçekten tüketici söyleyen belirtilen ad tarafından desteklenen hiçbir tablo olduğunu değildir. `S_OK` Return anlamına doğru yürütülen kod.  
+ Bir metin dosyasına tam yol adı tablo adı UpdatePv tanımıdır. Kısıtlama değerini ayıklayın ve ardından dosyanın gerçekten var olmadığından emin olmak için dosyayı açmayı deneyin. Dosya mevcut değilse S_OK döndürür. Bu biraz geriye doğru görünebilir ancak kodun hangi tüketici gerçekten söylüyor belirtilen ad tarafından desteklenen hiçbir tablo olduğunu değildir. S_OK dönüş doğru bir şekilde yürütülen kod anlamına gelir.  
   
-```  
+```cpp  
 USES_CONVERSION;  
 enum {  
             sizeOfszFile = 255  
@@ -190,7 +190,7 @@ if (cRestrictions >= 3 && rgRestrictions[2].vt != VT_EMPTY)
 }  
 ```  
   
- Dördüncü kısıtlama destekleme (**TABLE_TYPE**) üçüncü kısıtlamaya benzerdir. Değerin olmadığını görmek için onay `VT_EMPTY`. Bu kısıtlama yalnızca tablo türü döndürür **tablo**. İçin geçerli değerleri belirlemek için `DBSCHEMA_TABLES`, ek b'de Ara *OLE DB Programcının Başvurusu* içinde **tabloları** satır kümesi bölümü.  
+ Dördüncü kısıtlama destekleme (**TABLE_TYPE**) üçüncü kısıtlamaya benzer. Değer VT_EMPTY olup olmadığını denetleyin. Bu kısıtlama yalnızca tablo türü döndürür **tablo**. İçin geçerli değerleri belirlemek için `DBSCHEMA_TABLES`, içinde ek B bakın *OLE DB Programcının Başvurusu* içinde **tabloları** satır kümesi bölümü.  
   
 ```  
 // TABLE_TYPE restriction:  
@@ -209,9 +209,9 @@ if (cRestrictions >=4 && rgRestrictions[3].vt != VT_EMPTY)
 }  
 ```  
   
- Satır kümesi için bir satır girişini gerçekte oluşturduğunuz budur. Değişkeni `trData` karşılık gelen **CTABLESRow**, OLE DB sağlayıcı şablonları içinde tanımlanmış bir yapı. **CTABLESRow** karşılık gelen **tabloları** ek B satır kümesi tanımında OLE DB belirtimi. Yalnızca aynı anda yalnızca bir tablo destekleyebilir çünkü eklemek için bir satır var.  
+ Satır kümesi için bir satır girişi gerçekten oluşturduğunuz budur. Değişken `trData` karşılık gelen `CTABLESRow`, OLE DB sağlayıcı şablonları içinde tanımlanan bir yapı. `CTABLESRow` karşılık gelen **tabloları** satır kümesi tanımı OLE DB belirtiminin ek B. Yalnızca aynı anda yalnızca bir tablo destekleyebilir çünkü eklemek için bir satır var.  
   
-```  
+```cpp  
 // Bring over the data:  
 wcspy_s(trData.m_szType, OLESTR("TABLE"), 5);  
 
@@ -220,9 +220,9 @@ wcspy_s(trData.m_szDesc, OLESTR("The Directory Table"), 19);
 wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());  
 ```  
   
- UpdatePV yalnızca üç sütun ayarlar: **TABLE_NAME**, **TABLE_TYPE**, ve **açıklama**. Gerçekleştirdiğinizde bu bilgiler gerektiğinden, bilgi, dönmek sütunları not edin `GetDBStatus`:  
+ UpdatePV ayarlar yalnızca üç sütun: **TABLE_NAME**, **TABLE_TYPE**, ve **açıklama**. Uyguladığınızda bu bilgiler gerekeceğinden, iade ettiğiniz bilgi, sütunları not edin `GetDBStatus`:  
   
-```  
+```cpp  
     _ATLTRY  
     {  
         m_rgRowData.Add(trData);  
@@ -238,9 +238,9 @@ wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());
 }  
 ```  
   
- `GetDBStatus` İşlevi şema satır kümesi doğru çalışması için çok önemlidir. Her sütun için veri döndürmeyen çünkü **tabloları** satır kümesi, hangi sütunların verilerini döndürür ve bunu yapmanız belirtmeniz gerekir.  
+ `GetDBStatus` İşlevi, şema satır kümesi doğru çalışması için çok önemlidir. Her sütun için veri döndürmeyen çünkü **tabloları** satır kümesi, hangi sütunların veri için geri dönün ve, bunu belirtmeniz gerekir.  
   
-```  
+```cpp  
 virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)  
 {  
     ATLASSERT(pColInfo != NULL);  
@@ -259,13 +259,13 @@ virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)
 }  
 ```  
   
- Çünkü, `Execute` işlevi için verileri döndürür **TABLE_NAME**, **TABLE_TYPE**, ve **açıklama** alanlarını **tabloları**satır kümesi, OLE DB belirtimine ek b'de arayın ve sıra numaraları 3, 4 ve 6 olduklarından emin (göre yukarıdan aşağıya sayarak) belirleyin. Bu sütunlardan her biri için dönüş **DBSTATUS_S_OK**. Tüm diğer sütunlar için iade **DBSTATUS_S_ISNULL**. Bir tüketici dönmek değer olduğunu anlamayabilir olduğundan dönüş bu durumu daha önemlidir **NULL** veya başka bir şey. Yeniden unutmayın **NULL** boş ile eşdeğer değil.  
+ Çünkü, `Execute` işlevi için veri döndüren **TABLE_NAME**, **TABLE_TYPE**, ve **açıklama** alanlarını **tabloları**satır kümesi, OLE DB belirtiminin ek B bakın ve sıra sayıları 3, 4 ve 6 olduklarını (göre yukarıdan aşağıya sayarak) belirleyin. Her biri söz konusu sütun için DBSTATUS_S_OK döndürür. Diğer tüm sütunlar için DBSTATUS_S_ISNULL döndürür. Bir tüketici, dönüş değeri NULL veya başka bir şey olduğunu anlamayabilir çünkü bu durumuna döndürmek önemlidir. Yeniden NULL boş ile eşdeğer olduğunu unutmayın.  
   
- OLE DB şema satır kümesi arabirimi hakkında daha fazla bilgi için bkz: [IDBSchemaRowset](../../data/oledb/idbschemarowsetimpl-class.md) arabirimi OLE DB Programcı Başvurusu.  
+ OLE DB şema satır kümesi arabirimi hakkında daha fazla bilgi için bkz. [IDBSchemaRowset](../../data/oledb/idbschemarowsetimpl-class.md) arabirimi OLE DB Programcı Başvurusu.  
   
- Tüketiciler nasıl kullanabileceğiniz hakkında bilgi için **IDBSchemaRowset** yöntemleri bkz [şema satır kümeleri ile meta veri alma](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).  
+ Tüketiciler nasıl kullanabileceğiniz hakkında bilgi için `IDBSchemaRowset` yöntemleri bkz [kümelerinin şema satır kümeleri ile](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).  
   
- Şema satır kümeleri destekleyen bir sağlayıcı örneği için bkz: [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek.  
+ Şema satır kümeleri destekleyen bir sağlayıcı örneği için bkz: [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)

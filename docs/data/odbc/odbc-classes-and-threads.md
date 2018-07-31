@@ -17,25 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dedd1f03bf14e0513f9f76a1e292b9180e4d60db
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0a7b78284b1fc0bd952928952c24c61423396eb2
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090594"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341055"
 ---
 # <a name="odbc-classes-and-threads"></a>ODBC Sınıfları ve İş Parçacıkları
 MFC 4.2 ile başlayarak, MFC ODBC sınıfları için çoklu iş parçacığı desteği yoktur. Ancak, MFC DAO sınıflarını çoklu iş parçacığı destek sağlamaz unutmayın.  
   
- ODBC sınıfları için çoklu iş parçacığı destek bazı sınırlamaları vardır. Bu sınıfların ODBC API sarmalamak çünkü bunlar yerleşik olan bileşenleri çoklu iş parçacığı destek sınırlıdır. Örneğin, birçok ODBC sürücüsü iş parçacığı açısından güvenli değildir; Bu nedenle, MFC ODBC sınıfları, bunları bu sürücüleri biri ile kullanıyorsanız, iş parçacığı açısından güvenli değildir. Belirli sürücünüzün iş parçacığı açısından güvenli olup olmadığını doğrulamalıdır.  
+ ODBC sınıfları için çoklu iş parçacığı destek bazı sınırlamaları vardır. ODBC API bu sınıfları sarmalamak çünkü bunlar yerleşik olan bileşenlerin çoklu iş parçacığı destek sınırlıdır. Örneğin, birçok ODBC sürücüleri iş parçacığı açısından güvenli değildir; MFC ODBC sınıfları bu nedenle, bunları bu sürücüleri birini kullanırsanız iş parçacığı açısından güvenli değildir. Belirli bir sürücüyü iş parçacığı açısından güvenli olup olmadığını doğrulamalısınız.  
   
- Birden çok iş parçacıklı bir uygulama oluştururken, aynı nesneyi işlemek için birden çok iş parçacığı kullanırken çok dikkatli olmalıdır. Örneğin, aynı kullanarak `CRecordset` verileri alırken, iki iş parçacığı nesnesinde sorunlara neden; bir iş parçacığında getirme işlemi içinde başka bir iş parçacığı alınan verilerin üzerine yazılmasına neden olabilir. Açık bir paylaşmak için ayrı iş parçacıklarındaki MFC ODBC sınıfları daha yaygın bir kullanımdır `CDatabase` nesne aynı ODBC bağlantısı ayrı bir iş parçacığı boyunca `CRecordset` her bir iş parçacığı nesnesi. Açılmamış bir geçirdiğiniz değil, Not `CDatabase` nesnesine bir `CRecordset` başka bir iş parçacığı nesne.  
+ Çok iş parçacıklı bir uygulama oluştururken, aynı nesneyi işlemek için birden çok iş parçacığı kullanan çok dikkatli olmanız gerekir. Örneğin, aynı kullanarak `CRecordset` verileri alırken, iki iş parçacığı nesnesi sorunlara neden; bir iş parçacığındaki bir getirme işlemi diğer iş parçacığında getirilen verilerin üzerine yazılmasına neden olabilir. Ayrı iş parçacıklarındaki MFC ODBC sınıfları için daha yaygın bir kullanım açık paylaşmaktır `CDatabase` aynı ODBC bağlantısı, ayrı bir iş parçacığı arasında nesne `CRecordset` her iş parçacığı nesnesi. Bir açılmamış geçirmeniz değil olduğunu unutmayın `CDatabase` nesnesini bir `CRecordset` başka bir iş parçacığı nesnesi.  
   
 > [!NOTE]
->  Birden çok iş parçacığı aynı nesneyi işlemek görüntülenmesi gerekiyorsa, kritik bölümler gibi uygun eşitleme mekanizmaları uygulamanız gerekir. Unutmayın, bazı işlemleri gibi **açık**, korumalı olmayan. Bu işlemler aynı anda ayrı iş parçacığı tarafından çağrılmaz emin olmanız gerekir.  
+>  Birden çok iş parçacığı aynı nesne işlemek görüntülenmesi gerekiyorsa, kritik bölüm gibi uygun eşitleme mekanizmaları uygulamalıdır. Unutmayın, belirli işlemleri gibi `Open`, korumalı olmayan. Bu işlemler aynı anda farklı iş parçacıklarından çağrılmayacak emin olmanız gerekir.  
   
- Birden çok iş parçacıklı uygulamalar oluşturma hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı konuları](../../parallel/multithreading-support-for-older-code-visual-cpp.md).  
+ Çok iş parçacıklı uygulamalar oluşturma hakkında daha fazla bilgi için bkz. [çoklu iş parçacığı kullanımı konuları](../../parallel/multithreading-support-for-older-code-visual-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)   
- [Veri erişimi (MFC/ATL) programlama](../../data/data-access-programming-mfc-atl.md)
+ [Veri erişim programlama (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

@@ -19,17 +19,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a29d7a226d12f9c464d91ec356ae8a1a02091f1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6ba5262577fc9176669916a7fc30d299d06770a8
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33102957"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336660"
 ---
 # <a name="traversing-a-simple-rowset"></a>Basit Bir Satır Kümesinde Geçiş Yapma
-Aşağıdaki örnek komut içermeyen bir hızlı ve kolay veritabanı erişimi gösterir. ATL projesinde aşağıdaki tüketici kodu kaydı olarak adlandırılan bir tablodan alır *Sanatçılar* bir Microsoft Access veritabanı ODBC için Microsoft OLE DB sağlayıcısı kullanarak. Kod oluşturur bir [CTable](../../data/oledb/ctable-class.md) erişimci Tablo nesnesiyle tabanlı kullanıcı kayıt sınıfı `CArtists`. Bir bağlantı açar, bağlantıda bir oturum açar ve tablo oturum açar.  
+Aşağıdaki örnek komutlar içermeyen bir hızlı ve kolay veritabanı erişimi gösterir. ATL projesinde aşağıdaki tüketici kodu adlı tablosundan kayıtları alır *Sanatçılar* bir Microsoft Access veritabanına ODBC için Microsoft OLE DB sağlayıcısı kullanılarak. Kod oluşturur bir [CTable](../../data/oledb/ctable-class.md) tablo nesnesi ile erişimci tabanlı kullanıcı kayıt sınıfı `CArtists`. Bir bağlantı açar, bağlantıda bir oturum açar ve tabloyu oturum açar.  
   
-```  
+```cpp  
 #include <atldbcli.h>  
   
 CDataSource connection;  
@@ -55,7 +55,7 @@ while (artists.MoveNext() == S_OK)
   
  Kullanıcı kaydı, `CArtists`, şöyle görünür:  
   
-```  
+```cpp  
 class CArtists  
 {  
 public:  

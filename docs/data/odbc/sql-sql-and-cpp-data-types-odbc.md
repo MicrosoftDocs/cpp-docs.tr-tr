@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6a137c4f648f518420d06f5cbd98ea189a030aee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b978356cead1f9b74ce59e58ab0191f5e00105b
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33095414"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340774"
 ---
 # <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL ve C++ Veri Türleri (ODBC)
 > [!NOTE]
->  Bu bilgiler, MFC ODBC sınıfları için geçerlidir. MFC DAO sınıfları ile çalışıyorsanız, "Karşılaştırma, Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL" DAO Yardım konusuna bakın.  
+>  Bu bilgiler, MFC ODBC sınıflarına uygulanır. MFC DAO sınıflarına ile çalışıyorsanız, "Karşılaştırma, Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL" DAO Yardım konusuna bakın.  
   
- Aşağıdaki tabloda ANSI SQL veri türleri için C++ veri türleri eşler. Bu ek D içinde verilen C dil bilgileri güçlendirir *ODBC SDK* *Programcının Başvurusu* MSDN Kitaplığı CD'sindeki. Sihirbazlar, çoğu veri türü eşlemesi yönetin. Sihirbaz kullanmazsanız, alan değişim kodunu el ile yazmanıza yardım etmek için eşleme bilgilerini kullanabilirsiniz.  
+ Aşağıdaki tabloda, ANSI SQL veri türleri için C++ veri türleri eşler. Bu ek D içinde verilen C dil bilgileri artırmaktadır *ODBC SDK* *Programcının Başvurusu* MSDN Kitaplığı CD'sindeki. Sihirbazlar, çoğu veri türü eşlemesi yönetin. Bir sihirbaz kullanmazsanız, el ile alan exchange kod yazmanıza yardımcı olmak için eşleme bilgilerini kullanabilirsiniz.  
   
-### <a name="ansi-sql-data-types-mapped-to-c-data-types"></a>C++ veri türleri ile eşlenmiş ANSI SQL veri türleri  
+### <a name="ansi-sql-data-types-mapped-to-c-data-types"></a>C++ veri türleri için eşlenen ANSI SQL veri türleri  
   
 |ANSI SQL veri türü|C++ veri türü|  
 |------------------------|---------------------|  
 |**CHAR**|`CString`|  
 |**ONDALIK**|`CString` 1|  
-|**TAMSAYI**|`int`|  
-|`REAL`|**float**|  
+|**TAMSAYI**|**int**|  
+|**GERÇEK**|**float**|  
 |**TAMSAYI**|**long**|  
 |**KAYAN NOKTA**|**double**|  
 |**ÇİFT**|**double**|  
@@ -51,18 +51,18 @@ ms.locfileid: "33095414"
 |**VARBINARY**|`CByteArray`|  
 |**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3|  
 |**TARİH**|`CTime`, `CString`|  
-|**SAAT**|**CTime, CString**|  
-|**ZAMAN DAMGASI**|**CTime, CString**|  
+|**SAAT**|`CTime`, `CString`|  
+|**ZAMAN DAMGASI**|`CTime`, `CString`|  
   
- 1. ANSI **ondalık** ve **sayısal** Eşle `CString` çünkü **SQL_C_CHAR** varsayılan ODBC aktarım türü.  
+ 1. ANSI **ondalık** ve **sayısal** eşleme `CString` çünkü **SQL_C_CHAR** varsayılan ODBC aktarım türü.  
   
- 2. 255 karakteri aşan karakter veri eşlenmiş zaman varsayılan olarak kısaltılır `CString`. Açıkça ayarlayarak kesme uzunluğunu genişletebilirsiniz `nMaxLength` bağımsız değişkeni `RFX_Text`.  
+ 2. 255 karakteri aşan karakter veri eşleştirildiğinde varsayılan olarak kısaltılır `CString`. Kesme uzunluğunu açıkça ayarlayarak genişletebileceğiniz *nMaxLength* bağımsız değişkeni `RFX_Text`.  
   
- 3. 255 karakteri aşan ikili veri eşlenmiş zaman varsayılan olarak kısaltılır `CByteArray`. Açıkça ayarlayarak kesme uzunluğunu genişletebilirsiniz `nMaxLength` bağımsız değişkeni `RFX_Binary`.  
+ 3. 255 karakteri aşan ikili veri eşleştirildiğinde varsayılan olarak kısaltılır `CByteArray`. Kesme uzunluğunu açıkça ayarlayarak genişletebileceğiniz *nMaxLength* bağımsız değişkeni `RFX_Binary`.  
   
- ODBC imleç kitaplığı kullanmıyorsanız, iki güncelleştirmeye çalışırken veya Microsoft SQL Server ODBC sürücüsü MFC ODBC veritabanı sınıfları ile daha fazla değişken uzunlukta uzun alanları bir sorunla karşılaşabilirsiniz. ODBC türleri **SQL_LONGVARCHAR** ve **SQL_LONGVARBINARY**eşlemek için metin ve resim SQL Server türleri. A `CDBException` iki veya daha fazla değişken uzunlukta uzun alanları aynı çağrısında güncelleştirirseniz durum `CRecordset::Update`. Bu nedenle, aynı anda birden çok uzun sütun güncelleştirmeyi `CRecordset::Update`. ODBC API ile aynı anda birden çok uzun sütun güncelleştirebilirsiniz **SQLPutData**. ODBC imleç kitaplığı de kullanabilirsiniz, ancak bu imleçleri desteklemez ve imleç kitaplığı gerekmez sürücüleri için SQL Server sürücüsü gibi önerilmez.  
+ ODBC imleç kitaplığı kullanmıyorsanız, iki güncellemeye çalışırken veya Microsoft SQL Server ODBC sürücüsü ve MFC ODBC veritabanı sınıfları kullanarak daha fazla değişken uzunluklu uzun alan bir sorunla karşılaşabilirsiniz. ODBC türleri **SQL_LONGVARCHAR** ve **SQL_LONGVARBINARY**eşlemek için metin ve resim SQL Server türleri. A `CDBException` iki veya daha fazla değişken uzunlukta uzun alanlar için aynı çağrıda güncelleştirirseniz durum `CRecordset::Update`. Bu nedenle, aynı anda birden çok uzun sütun güncelleştirmez `CRecordset::Update`. ODBC API ile aynı anda birden çok uzun sütun güncelleştirebilirsiniz `SQLPutData`. ODBC imleç kitaplığı da kullanabilirsiniz, ancak bu imleçler destekleyen ve imleç kitaplığı gerekmeyen sürücüler için SQL Server sürücüsünü gibi önerilmez.  
   
- ODBC imleç kitaplığı MFC ODBC veritabanı sınıfları ve Microsoft SQL Server ODBC sürücüsü ile kullanıyorsanız, bir **ASSERT** ile birlikte oluşabilecek bir `CDBException` yapılan bir çağrı varsa `CRecordset::Update` yapılan bir çağrı izleyen `CRecordset::Requery`. Bunun yerine, çağrı `CRecordset::Close` ve `CRecordset::Open` yerine `CRecordset::Requery`. ODBC imleç kitaplığı SQL Server ve SQL Server ODBC sürücüsü yerel destek imleçler için yerel olarak sağlar ve ODBC imleç kitaplığı gerekli değildir çünkü kullanmamanız başka bir çözümdür.  
+ MFC ODBC veritabanı sınıfları ve Microsoft SQL Server ODBC sürücüsü ile ODBC imleç kitaplığı kullanıyorsanız bir **ASSERT** ile birlikte oluşabilir bir `CDBException` çağrısı ise `CRecordset::Update` takip `CRecordset::Requery`. Bunun yerine çağrı `CRecordset::Close` ve `CRecordset::Open` yerine `CRecordset::Requery`. SQL Server ve SQL Server ODBC sürücüsü yerel destek işaretçiler için yerel olarak sağlar ve ODBC imleç kitaplığı gerekli değildir çünkü ODBC imleç kitaplığını kullanma başka bir çözümdür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SQL](../../data/odbc/sql.md)   

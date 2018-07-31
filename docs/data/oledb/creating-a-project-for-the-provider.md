@@ -1,5 +1,5 @@
 ---
-title: Sağlayıcı için proje oluşturma | Microsoft Docs
+title: Sağlayıcı için bir proje oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 08ceb80842d8552e19b62ff2ac2252d3f291b4ee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dad3b020cb7f66fc4ba6535f79393c2d0ad0333f
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33098361"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339847"
 ---
 # <a name="creating-a-project-for-the-provider"></a>Sağlayıcı için Proje Oluşturma
-#### <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB sağlayıcısı yer alacağı bir proje oluşturmak için  
+### <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB sağlayıcısı içinde yer alacağını bir proje oluşturmak için  
   
-1.  Gelen **dosya** menüsünde tıklatın `New`ve ardından **proje**.  
+1.  Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
-2.  Proje Türleri bölmesinde Visual C++ projeleri klasörünü tıklatın. Şablonlar bölmesinde **ATL Proje**.  
+2.  Proje Türleri bölmesinde, Visual C++ projeleri klasöre tıklayın. Şablonlar bölmesinde **ATL projesi**.  
   
-3.  İçinde **adı** kutusunda, proje için bir ad girin ve ardından **Tamam**.  
+3.  İçinde **adı** kutusuna proje için bir ad girin ve ardından **Tamam**.  
   
-     ATL Proje Sihirbazı görünür.  
+     ATL projesi Sihirbazı görünür.  
   
-4.  ATL Proje Sihirbazı'nda seçin **dinamik bağlantı kitaplığı (DLL)** için **sunucu türü**.  
+4.  ATL projesi Sihirbazı'nda seçin **dinamik bağlantı kitaplığı (DLL)** için **sunucu türü**.  
   
 5.  **Son**'a tıklayın.  
   

@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 36c74ec0d17c296707334930736d0cf237ecfe7e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: be948293947d4f007d151e4a89e0ff87fc897bbd
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103570"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338944"
 ---
 # <a name="using-an-existing-ado-recordset"></a>Varolan ADO Kayıt Kümesini Kullanma
-OLE DB Tüketici Şablonları ve etkin Data Objects (ADO) karıştırmak için (OLE DB Tüketici şablonları içinde satır karşılık gelen) kayıt açmak üzere ADO kullanın. Kayıt varsa, bir OLE DB satır kümesi bağlanmak için aşağıdakileri yapın:  
+OLE DB Tüketici Şablonları ve etkin Data Objects (ADO) karıştırmak için bir kayıt kümesi (OLE DB Tüketici Şablonları bir satır kümesinde karşılık gelen) açmak için ADO kullanın. Bir kayıt varsa, bir OLE DB satır kümesine bağlanmak için aşağıdakileri yapın:  
   
 1.  Çağrı `QueryInterface` için `IRowset` ve `IAccessor` işaretçileri.  
   
-    ```  
+    ```cpp  
     IRowset* lpRowset = NULL;  
     IAccessor* lpAccessor = NULL;  
     lpUnk->QueryInterface(IID_IRowset, (void**)&lpRowset);  
@@ -37,11 +37,11 @@ OLE DB Tüketici Şablonları ve etkin Data Objects (ADO) karıştırmak için (
     ```  
   
     > [!NOTE]
-    >  *lpUnk* işaret **IUnknown** ADO kayıt kümesini nesne.  
+    >  *lpUnk* işaret `IUnknown` ADO kayıt kümesini nesne.  
   
-2.  Erişimci ve satır kümesi için uygun kendi OLE DB tüketici şablonu sınıfları ekleyin.  
+2.  Kendi uygun OLE DB tüketici şablonu sınıfları için erişimci ve satır kümesi ekleyin.  
   
-    ```  
+    ```cpp  
     CRowset rs;  
     CAccessor accessor;  
   

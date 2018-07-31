@@ -50,12 +50,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 69c7f92110312d4ae8cff427d1081853290919e9
-ms.sourcegitcommit: b0d6777cf4b580d093eaf6104d80a888706e7578
+ms.openlocfilehash: 756ced3e2e1eef48023831329751477d07d7cfec
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39269930"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336494"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl Sınıfı
 Bir uygulamasını sağlar [IDBInitialize](https://msdn.microsoft.com/library/ms713706.aspx) arabirimi.  
@@ -106,7 +106,6 @@ Oluşturucu.
   
 ```cpp
 IDBInitializeImpl();  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -118,7 +117,7 @@ Veri kaynağı nesnesinin özellik desteğini hazırlayarak başlatır.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      STDMETHOD(Initialize)(void);  
+STDMETHOD(Initialize)(void);  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -130,7 +129,7 @@ Basamak veri özelliği desteği gibi iç kaynaklara azaltarak başlatılmamış
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      STDMETHOD(Uninitialize)(void);  
+STDMETHOD(Uninitialize)(void);  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -143,13 +142,12 @@ Veri kaynağı bayraklar.
   
 ```cpp
 DWORD m_dwStatus;  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu bayraklar belirtin veya veri kaynağı nesnesi için çeşitli öznitelikler durumunu gösterir. Bir veya daha fazlasını içeren **enum** değerleri:  
   
-```  
+```cpp  
 enum DATASOURCE_FLAGS {  
     DSF_MASK_INIT     = 0xFFFFF00F,  
     DSF_PERSIST_DIRTY = 0x00000001,  
@@ -169,10 +167,7 @@ DB özellikleri bilgileri uygulama nesnesi için bir işaretçi.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-CUtlPropInfo<  
-T  
->* m_pCUtlPropInfo;  
-  
+CUtlPropInfo< T >* m_pCUtlPropInfo;  
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

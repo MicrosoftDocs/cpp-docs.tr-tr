@@ -62,12 +62,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a1845f2e2404604aa187a8569954b3cb289ae3ec
-ms.sourcegitcommit: e5792fcb89b9ba64c401f90f4f26a8e45d4a2359
+ms.openlocfilehash: a5c9132325af7c05980aac0d7b6b7d53958e4a2b
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321935"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338050"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonları için Makrolar
 OLE DB Şablonları sağlayıcısı makroları işlevselliğini Aşağıdaki kategorilerde sunulur:  
@@ -118,7 +118,6 @@ Bir özelliğin başına bir özelliği ayarlamak işaretleri eşlemesi ayarlay�
   
 ```cpp
 BEGIN_PROPERTY_SET(guid)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -134,8 +133,7 @@ Bir özelliğin başına bir özelliği ayarlamak işaretleri eşlemesi ayarlay�
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-BEGIN_PROPERTY_SET_EX(guid  
-, flags )  
+BEGIN_PROPERTY_SET_EX(guid, flags)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -155,7 +153,6 @@ BEGIN_PROPERTY_SET_EX(guid
   
 ```cpp
 BEGIN_PROPSET_MAP(Class)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -180,7 +177,6 @@ Bu makro özellik gruplarını zincir.
   
 ```cpp
 CHAIN_PROPERTY_SET(ChainClass)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -200,7 +196,6 @@ Bir özellik kümesi sonunu işaretler.
   
 ```cpp
 END_PROPERTY_SET(guid)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -217,7 +212,6 @@ END_PROPERTY_SET(guid)
   
 ```cpp
 END_PROPSET_MAP()  
-  
 ```  
   
 #### <a name="example"></a>Örnek  
@@ -230,7 +224,6 @@ Bir özellik kümesi içinde belirli bir özelliği temsil eder.
   
 ```cpp
 PROPERTY_INFO_ENTRY(dwPropID)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -249,8 +242,7 @@ Bir özellik kümesi içinde belirli bir özelliği temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROPERTY_INFO_ENTRY_EX(dwPropID  
-, vt, dwFlags, value, options )  
+PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -281,8 +273,7 @@ Bir özellik kümesi içinde belirli bir özelliği temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROPERTY_INFO_ENTRY_VALUE(dwPropID  
-, value )  
+PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -305,7 +296,6 @@ Sağlayıcı sütun eşleme girişleri başlangıcını işaretler.
   
 ```cpp
 BEGIN_PROVIDER_COLUMN_MAP(theClass)  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -324,7 +314,6 @@ Sağlayıcı sütun eşleme girişleri sonunu işaretler.
   
 ```cpp
 END_PROVIDER_COLUMN_MAP()  
-  
 ```  
   
 #### <a name="example"></a>Örnek  
@@ -336,8 +325,7 @@ Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY (name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY (name, ordinal, member)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -356,8 +344,7 @@ Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_FIXED(name  
-, ordinal, dbtype, member )  
+PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -385,8 +372,7 @@ Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_GN (name  
-, ordinal, flags, colSize, dbtype, precision, scale, guid )  
+PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scale, guid)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -423,8 +409,7 @@ Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_LENGTH(name  
-, ordinal, size, member )  
+PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -452,8 +437,7 @@ Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_STR(name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -478,13 +462,11 @@ Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name  
-, ordinal, dbtype, size, member )  
+PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *Adı*  
-  
  [in] Sütun adı.  
   
  *Sıra*  
@@ -508,8 +490,7 @@ Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_WSTR(name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -531,7 +512,7 @@ PROVIDER_COLUMN_ENTRY_WSTR(name
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      BEGIN_SCHEMA_MAP(SchemaClass);  
+BEGIN_SCHEMA_MAP(SchemaClass);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -548,7 +529,6 @@ PROVIDER_COLUMN_ENTRY_WSTR(name
   
 ```cpp
 END_SCHEMA_MAP()  
-  
 ```  
   
 #### <a name="see-also"></a>Ayrıca Bkz.  
@@ -560,7 +540,7 @@ Bir GUID, bir sınıf ile ilişkilendirir.
 #### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      SCHEMA_ENTRY(guid,  
+SCHEMA_ENTRY(guid,  
    rowsetClass);   
 ```  
   

@@ -21,34 +21,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dffefb74faf6836b9f2fc81a7800dc34084657cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9e7f722d4d1759bdec7a23bb15076b38de000eb6
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33093915"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337423"
 ---
 # <a name="caccessor-class"></a>CAccessor Sınıfı
-Erişimci türleri birini temsil eder.  
+Erişimci türlerinden birini temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
+```cpp
 template <class T>  
 class CAccessor : public CAccessorBase, public T  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
+### <a name="parameters"></a>Parametreler  
+ *T*  
  Kullanıcı kayıt sınıfı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir kayıt statik olarak bir veri kaynağına bağlı olduğunda kullanılır. Kayıt arabellek içeriyor. Bu sınıf, bir satır kümesinde çoklu erişimci destekler.  
+ Kayıt bir veri kaynağına statik olarak bağlı olduğunda kullanılır. Kayıt arabellek içerir. Bu sınıf, bir satır kümesinde çoklu erişimci destekler.  
   
- Yapı ve veritabanı türü bildiğiniz durumlarda bu erişimcisi türünü kullanın.  
+ Yapı ve veritabanı türü bildiğinizde bu erişimcisinin türünü kullanın.  
   
- Erişimcisi bellek noktası alanları içeriyorsa (gibi bir `BSTR` veya arabirim) olması gerekir serbest, üye işlevini çağırın [CAccessorRowset::FreeRecordMemory](../../data/oledb/caccessorrowset-freerecordmemory.md) önce sonraki kaydı okur.  
+ Bellek noktası alanlar, erişimci içeriyorsa, (gibi bir `BSTR` veya arabirimi) getirilmesi gereken serbest, üye işlevi çağrısı [CAccessorRowset::FreeRecordMemory](../../data/oledb/caccessorrowset-freerecordmemory.md) sonraki kayıt okunur.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldbcli.h  

@@ -1,5 +1,5 @@
 ---
-title: Sağlayıcı hizmet Varsayılanları geçersiz kılma | Microsoft Docs
+title: Sağlayıcı hizmet varsayılanlarını geçersiz kılma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,30 +16,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: be802c1c3c6ba4b77d1418c9c620840e9ab10170
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 106d1991f5312065aa78330888e55383d1f9506a
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33110086"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337024"
 ---
 # <a name="overriding-provider-service-defaults"></a>Sağlayıcı Hizmet Varsayılanlarını Geçersiz Kılma
-Sağlayıcının kayıt defteri değeri için **OLEDB_SERVICES** için varsayılan değer olarak döndürülür [DBPROP_INIT_OLEDBSERVICES](https://msdn.microsoft.com/en-us/library/ms716898.aspx) başlatma özelliği veri kaynağı nesnesi.  
+Sağlayıcının OLEDB_SERVICES için kayıt defteri değeri için varsayılan değer olarak döndürülen [DBPROP_INIT_OLEDBSERVICES](https://msdn.microsoft.com/library/ms716898.aspx) başlatma özelliği veri kaynağı nesnesi.  
   
- Kayıt defteri girdisi var olduğu sürece, sağlayıcının nesneleri toplanır ve sağlayıcının varsayılan ayarlayarak etkin hizmetler için kullanıcı ayarlarını geçersiz kılabilir **DBPROP_INIT_OLEDBSERVICES** başlatmadan önce özelliği. Etkinleştirmek veya belirli bir hizmet devre dışı bırakmak için kullanıcının genellikle geçerli değerini alır **DBPROP_INIT_OLEDBSERVICES** özelliği, ayarlar ya da etkin veya devre dışı belirli özellik bitini temizler ve özelliği sıfırlar. **DBPROP_INIT_OLEDBSERVICES** doğrudan OLE DB veya ADO için geçirilen bağlantı dizesini ayarlamak veya **IDataInitialize::GetDatasource**. Tek tek Hizmetleri etkinleştir/devre dışı bırakılacak karşılık gelen değerler aşağıdaki tabloda listelenmiştir.  
+ Kayıt defteri girişi var olduğu sürece, sağlayıcının nesneleri toplanır ve kullanıcı için etkin hizmetler ayarlayarak sağlayıcının Varsayılanı geçersiz kılabilirsiniz `DBPROP_INIT_OLEDBSERVICES` başlatmadan önce özelliği. Etkinleştirmek ya da belirli bir hizmet devre dışı bırakmak için kullanıcının genellikle geçerli değerini alır `DBPROP_INIT_OLEDBSERVICES` özelliğini ayarlar veya etkin veya devre dışı belirli bir özellik için bit temizler ve özelliği sıfırlar. `DBPROP_INIT_OLEDBSERVICES` OLE DB veya ADO için geçirilen bağlantı dizesinde doğrudan ayarlanabilir veya `IDataInitialize::GetDatasource`. Tek başına hizmetlerinden etkinleştirmek/devre dışı karşılık gelen değerler aşağıdaki tabloda listelenmiştir.  
   
-|Varsayılan hizmetler etkin|DBPROP_INIT_OLEDBSERVICES özellik değeri|Bağlantı dizesindeki değer|  
+|Varsayılan hizmetler etkin|DBPROP_INIT_OLEDBSERVICES özellik değeri|Bağlantı dizesinde değeri|  
 |------------------------------|------------------------------------------------|--------------------------------|  
-|Tüm hizmetler (varsayılan)|**DBPROPVAL_OS_ENABLEALL**|"OLE DB hizmetleri = -1;"|  
-|Hariç tüm ve AutoEnlistment|**DBPROPVAL_OS_ENABLEALL &AMP;**<br /><br /> **~ DBPROPVAL_OS_RESOURCEPOOLING &AMP;**<br /><br /> **~ DBPROPVAL_OS_TXNENLISTMENT**|"OLE DB Hizmetleri-; 4 ="|  
-|Tüm istemci imleci hariç|**DBPROPVAL_OS_ENABLEALL** &<br /><br /> ~**DBPROPVAL_OS_CLIENTCURSOR**|"OLE DB Hizmetleri = -5;"|  
-|Tüm hariç, AutoEnlistment ve istemci imleci|**DBPROPVAL_OS_ENABLEALL &AMP;**<br /><br /> **~ DBPROPVAL_OS_TXNENLISTMENT &AMP;**<br /><br /> **~ DBPROPVAL_OS_CLIENTCURSOR**|"OLE DB hizmetleri -7; ="|  
-|Hizmet yok|~**DBPROPVAL_OS_ENABLEALL**|"OLE DB hizmetleri = 0;"|  
+|Tüm hizmetler (varsayılan)|`DBPROPVAL_OS_ENABLEALL`|"OLE DB hizmetleri = -1;"|  
+|Havuzu hariç ve AutoEnlistment|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_RESOURCEPOOLING &`<br /><br /> `~DBPROPVAL_OS_TXNENLISTMENT`|"OLE DB Hizmetleri -4; ="|  
+|Tüm istemci imleci hariç|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_CLIENTCURSOR`|"OLE DB Hizmetleri -5; ="|  
+|Tümünü hariç, AutoEnlistment ve istemci imleci|`DBPROPVAL_OS_ENABLEALL &`<br /><br /> `~DBPROPVAL_OS_TXNENLISTMENT &`<br /><br /> `~DBPROPVAL_OS_CLIENTCURSOR`|"OLE DB hizmetleri -7; ="|  
+|Hizmet yok|`~DBPROPVAL_OS_ENABLEALL`|"OLE DB hizmetleri = 0;"|  
   
- Kayıt defteri girdisini sağlayıcı için mevcut değilse, bileşen yöneticilerinin sağlayıcının nesnelerin araya değil ve hiçbir hizmet, kullanıcı tarafından açıkça istenmiş olsa bile çağrılır.  
+ Sağlayıcı için kayıt defteri girdisi yok, bileşen yöneticilerinin sağlayıcının nesneleri toplama değil ve hizmet, kullanıcı tarafından açıkça istenen bile çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak havuzu oluşturma](https://msdn.microsoft.com/en-us/library/ms713655.aspx)   
- [Kaynak havuzu tüketiciler nasıl kullanır](https://msdn.microsoft.com/en-us/library/ms715907.aspx)   
- [Nasıl sağlayıcıları etkili bir şekilde kaynak havuzu ile çalışma](https://msdn.microsoft.com/en-us/library/ms714906.aspx)   
+ [Kaynak havuzu oluşturma](https://msdn.microsoft.com/library/ms713655.aspx)   
+ [Kaynak havuzu tüketiciler kullanma](https://msdn.microsoft.com/library/ms715907.aspx)   
+ [Nasıl sağlayıcıları etkili bir şekilde kaynak havuzu ile çalışma](https://msdn.microsoft.com/library/ms714906.aspx)   
  [OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma](../../data/oledb/enabling-and-disabling-ole-db-services.md)

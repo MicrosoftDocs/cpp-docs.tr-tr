@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: de6931db1ef8048e6f376447307beebed67aa56a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a729497fe24fb0c08734e45d360965f5d22880c4
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090454"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339454"
 ---
 # <a name="open-database-connectivity-odbc"></a>Açık Veritabanı Bağlantısı (ODBC)
-Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritabanı bağlantısı (ODBC) için sınıflar sağlar. Visual Studio 2015 ve SQL Server 2012 ODBC itibariyle SQL veri kaynaklarına bağlanmak için önerilen yöntemdir.
+Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritabanı bağlantısı (ODBC) için sınıflar sağlar. Visual Studio 2015 ve SQL Server 2012 ODBC itibaren SQL veri kaynaklarına bağlanmak için tercih edilen yoludur.
   
- MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz: [açık veritabanı bağlantısı (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252.aspx) MSDN SDK'da.  
+ MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](https://msdn.microsoft.com/library/ms710252.aspx) MSDN SDK.  
   
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [ODBC](odbc-basics.md)— açık veritabanı bağlantısı standart ve API  
+-   [ODBC](odbc-basics.md)— açık veritabanı bağlantısı standardı ve API  
   
--   [Hangi MFC Desteği sağlanmaktadır](odbc-and-mfc.md) ODBC programlama için  
+-   [Hangi MFC Desteği sağlanmaktadır?](odbc-and-mfc.md) ODBC programlama için  
   
--   [ODBC sürücüleri kullanılabilir nedir](odbc-driver-list.md)  
+-   [Hangi ODBC sürücüleri kullanılabilir?](odbc-driver-list.md)  
   
 -   [ODBC veri kaynaklarına bağlanma](data-source-managing-connections-odbc.md)  
   
@@ -56,7 +56,7 @@ Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritaba
   
 -   [Kayıtları toplu yakalama](recordset-fetching-records-in-bulk-odbc.md)  
   
--   [My kayıt kümenizin SQL deyimini özelleştirme](sql-customizing-your-recordsets-sql-statement-odbc.md)  
+-   [Kayıt Kümemin SQL deyimini özelleştirme](sql-customizing-your-recordsets-sql-statement-odbc.md)  
   
 -   [Doğrudan SQL çağrıları yapma](sql-making-direct-sql-calls-odbc.md)  
   
@@ -67,7 +67,7 @@ Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritaba
 -   [ODBC Sürücü Listesi](odbc-driver-list.md)  
   
 ## <a name="odbc-database-tasks"></a>ODBC veritabanı görevleri  
- Bu görevler üzerinde MFC dayalı [ODBC](odbc-basics.md) sınıfları. MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz: [açık veritabanı bağlantısı (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252.aspx) SDK.  
+ Bu görevler MFC dayalı [ODBC](odbc-basics.md) sınıfları. MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](https://msdn.microsoft.com/library/ms710252.aspx) SDK.  
   
 -   [Yükleme ve ODBC ile çalışmaya başlama](installing-and-getting-started-with-odbc.md)  
   
@@ -86,4 +86,4 @@ Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritaba
 -   [MFC ODBC Kayıt Kümelerini Kullanma](use-mfc-odbc-recordsets.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri erişimi (MFC/ATL) programlama](../../data/data-access-programming-mfc-atl.md)
+ [Veri erişim programlama (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

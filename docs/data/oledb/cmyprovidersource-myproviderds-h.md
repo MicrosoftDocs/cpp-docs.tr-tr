@@ -19,15 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f141ad7565a78ff4e7a02b3847287879b81ccd6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 848f940c9aa974c838a4600235ab97d099bcbd06
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33098660"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39340156"
 ---
 # <a name="cmyprovidersource-myproviderdsh"></a>CMyProviderSource (MyProviderDS.H)
-Sağlayıcı sınıflar birden çok devralma kullanın. Aşağıdaki kod, veri kaynağı nesnesi için devralma zincirini gösterir:  
+Birden çok devralma sağlayıcısı sınıfları kullanın. Aşağıdaki kod, veri kaynağı nesnesi için devralma zincirini gösterir:  
   
 ```cpp
 /////////////////////////////////////////////////////////////////////////  
@@ -42,12 +42,12 @@ class ATL_NO_VTABLE CMyProviderSource :
    public IInternalConnectionImpl<CMyProviderSource>  
 ```  
   
- Tüm COM bileşenleri türetin `CComObjectRootEx` ve `CComCoClass`. `CComObjectRootEx` Tüm uygulamasını sağlar **IUnknown** arabirimi. Herhangi bir iş parçacığı modelini işleyebilir. `CComCoClass` gerekli tüm hata desteğini işler. Daha zengin hata bilgisi istemciye göndermek istiyorsanız, bazı hata API'lerini kullanabilirsiniz, `CComCoClass`.  
+ Türetilen tüm COM bileşenlerini `CComObjectRootEx` ve `CComCoClass`. `CComObjectRootEx` Tüm uygulamasını sağlar `IUnknown` arabirimi. Bu, herhangi bir iş parçacığı modeli başa çıkabilir. `CComCoClass` gerekli herhangi bir hata destek işler. Daha zengin hata bilgileri istemciye göndermek istiyorsanız, bazı hata API'leri kullanabilirsiniz, `CComCoClass`.  
   
- Veri kaynağı nesnesi de birkaç 'Impl' sınıflardan devralır. Her sınıf bir arabirim uygulamasını sağlar. Veri kaynağı nesnesi uygular `IPersist`, `IDBProperties`, **IDBInitialize**, ve **IDBCreateSession** arabirimleri. Her bir arabirime tarafından OLE DB veri kaynağı nesnesi uygulamak için gereklidir. Belirli işlevi devralarak veya bu 'Impl' sınıflarından birini devralarak desteklemiyor veya desteklemek üzere seçebilirsiniz. Desteklemek istiyorsanız **IDBDataSourceAdmin** , arabirim, devralınan **IDBDataSourceAdminImpl** gerekli işlevi almak için sınıf.  
+ Veri kaynağı nesnesinin ayrıca çeşitli ' Impl ' sınıfından devralır. Her sınıf, arabirim uygulamasını sağlar. Veri kaynağı nesnesi uygulayan `IPersist`, `IDBProperties`, `IDBInitialize`, ve `IDBCreateSession` arabirimleri. Her arabirim tarafından OLE DB veri kaynağı nesnesinin uygulamak için gereklidir. Bu 'Impl' sınıflarının birinden devralan değil ya da belirli işlevler desteklenmez veya desteklemek üzere seçebilirsiniz. Desteklemek istiyorsanız `IDBDataSourceAdmin` , arabirim, devralma `IDBDataSourceAdminImpl` gerekli işlevi almak için sınıf.  
   
 ## <a name="com-map"></a>COM eşlemesi  
- Her istemci çağırır `QueryInterface` isteğe bağlı olarak veri kaynağında bir arabirim için aşağıdaki COM eşlemesi üzerinden gider:  
+ Her istemci çağrıları `QueryInterface` isteğe bağlı olarak veri kaynağında bir arabirim için aşağıdaki COM eşlemesi üzerinden geçer:  
   
 ```  
 BEGIN_COM_MAP(CMyProviderSource)  
@@ -59,10 +59,10 @@ BEGIN_COM_MAP(CMyProviderSource)
 END_COM_MAP()  
 ```  
   
- COM_INTERFACE_ENTRY makrolar ATL ve uygulanması söyleyin `QueryInterface` içinde `CComObjectRootEx` uygun arabirimleri dönün.  
+ COM_INTERFACE_ENTRY makroları ATL rosling ve yürütmesinin `QueryInterface` içinde `CComObjectRootEx` uygun arabirimleri dönün.  
   
 ## <a name="property-map"></a>Özellik eşlemesi  
- Özellik eşlemesi sağlayıcı tarafından atanmış tüm özellikleri belirtir:  
+ Özellik eşlemesi sağlayıcı tarafından atanmış olan tüm özellikleri belirtir:  
   
 ```  
 BEGIN_PROPSET_MAP(CMyProviderSource)  
@@ -132,11 +132,11 @@ BEGIN_PROPSET_MAP(CMyProviderSource)
 END_PROPSET_MAP()  
 ```  
   
- OLE DB özelliklerinde gruplandırılır. Veri kaynağı nesnesinin iki tür özelliği vardır: biri **DBPROPSET_DATASOURCEINFO** kümesi ve biri için **DBPROPSET_DBINIT** ayarlayın. **DBPROPSET_DATASOURCEINFO** sağlayıcı ve veri kaynağı ile ilgili özellikler kümesi karşılık gelir. **DBPROPSET_DBINIT** kümesi başlangıçta kullanılan özelliklere karşılık gelir. OLE DB sağlayıcı şablonları bu kümeleri PROPERTY_SET makroları ile işleyin. Makrolar özellikler dizisi içeren bir blok oluşturur. Her istemci çağırır `IDBProperties` arabirimi, sağlayıcı özellik eşlemesini kullanır.  
+ OLE DB özelliklerinde gruplandırılır. Veri kaynağı nesnesinin özellikleri iki grup vardır: DBPROPSET_DATASOURCEINFO bir kümesi, diğeri DBPROPSET_DBINIT ayarlayın. DBPROPSET_DATASOURCEINFO kümesi özellikleri hakkında sağlayıcı ve veri kaynağına karşılık gelir. DBPROPSET_DBINIT kümesi başlangıçta kullanılan özelliklere karşılık gelir. OLE DB sağlayıcı şablonları PROPERTY_SET makrolar ile bu kümeleri işleyin. Makrolar, bir dizi özellikleri içeren bir blok oluşturur. Her istemci çağrıları `IDBProperties` arabirimi, sağlayıcı özellik eşlemesi kullanır.  
   
- Her özellik belirtiminde uygulamak gerekmez. Ancak, gerekli özelliklerini desteklemelidir; Düzey 0 uyum belirtimine daha fazla bilgi için bkz. Bir özelliği desteklemek istemiyorsanız eşlemesinden kaldırabilirsiniz. Bir özelliği desteklemek istiyorsanız, PROPERTY_INFO_ENTRY makrosu kullanarak eşlemeye ekleyin. Makro karşılık gelen **UPROPINFO** aşağıdaki kodda gösterildiği gibi yapılandırın:  
+ Her özelliği belirtiminde uygulama gerekmez. Ancak, gerekli özelliklerini desteklemelidir; Düzey 0 Uyumluluğu belirtimi daha fazla bilgi için bkz. Bir özelliği desteklemek istemiyorsanız, haritadaki kaldırabilirsiniz. Bir özelliği desteklemek istiyorsanız, haritayı PROPERTY_INFO_ENTRY makrosu kullanarak ekleyin. Makro karşılık gelen `UPROPINFO` aşağıdaki kodda gösterildiği gibi yapılandırın:  
   
-```  
+```cpp  
 struct UPROPINFO  
 {  
    DBPROPID    dwPropId;  
@@ -152,18 +152,18 @@ struct UPROPINFO
 };  
 ```  
   
- Her bir öğesinde yapısı özelliği işlemek için bilgileri temsil eder. İçerdiği bir **DBPROPID** GUID ve kimliği özelliği için belirlemek için. Ayrıca, türü ve özellik değerini belirlemek üzere girişleri içerir.  
+ Her öğe yapısında özelliği işlemek için bilgileri temsil eder. İçerdiği bir `DBPROPID` GUID ve ID özelliği belirlemek için. Ayrıca, türünü ve özelliğin değerini belirlemek için giriş içerir.  
   
- (Bir tüketici herhangi bir zamanda yazılabilir bir özellik değerini değiştirebilir unutmayın) özelliğinin varsayılan değeri değiştirmek istiyorsanız, PROPERTY_INFO_ENTRY_VALUE ya da PROPERTY_INFO_ENTRY_EX makrosu kullanabilirsiniz. Bu makroları karşılık gelen bir özellik için bir değer belirtmenizi sağlar. PROPERTY_INFO_ENTRY_VALUE makrosu değeri değiştirmenize olanak sağlayan bir toplu notasyona ' dir. PROPERTY_INFO_ENTRY_VALUE makrosu PROPERTY_INFO_ENTRY_EX makrosu çağırır. Bu makrosu ekleme veya tüm öznitelikleri değiştirme sayesinde **UPROPINFO** yapısı.  
+ (Bir tüketici yazılabilir bir özellik değerini istediğiniz zaman değiştirebilirsiniz. Not) özelliğinin varsayılan değeri değiştirmek istiyorsanız, PROPERTY_INFO_ENTRY_VALUE ya da PROPERTY_INFO_ENTRY_EX makrosu kullanabilirsiniz. Bu makrolar, karşılık gelen bir özellik için bir değer belirtmenizi sağlar. PROPERTY_INFO_ENTRY_VALUE makrosu değeri değiştirmenize izin verir ve kısa bir gösterim ' dir. PROPERTY_INFO_ENTRY_VALUE makrosu PROPERTY_INFO_ENTRY_EX makrosu çağırır. Bu makro, eklemek veya tüm öznitelikleri değiştirmek sağlar `UPROPINFO` yapısı.  
   
- Kendi özellik kümesi tanımlamak istiyorsanız, ek bir BEGIN_PROPSET_MAP/END_PROPSET_MAP bileşimi yaparak ekleyebilirsiniz. Özellik kümesi için bir GUID tanımlamak ve kendi özelliklerinizi tanımlamanız gerekir. Sağlayıcıya özgü özellikleri varsa, bunları yeni bir özellik var olan bir kullanmak yerine kümesi ekleyin. OLE DB sonraki sürümlerinde sorunları önler.  
+ Kendi özellik kümesi tanımlamak istiyorsanız, ek bir BEGIN_PROPSET_MAP/END_PROPSET_MAP birleşim yaparak ekleyebilirsiniz. Özellik kümesi için bir GUID tanımlayın ve ardından kendi özelliklerinizi tanımlamanız gerekir. Sağlayıcıya özgü özellikleri varsa bunları kullanarak mevcut bir yerine yeni bir özellik ekleyin. Bu sorunlar daha sonraki sürümlerinde bir OLE DB önler.  
   
 ## <a name="user-defined-property-sets"></a>Kullanıcı tanımlı özellik kümeleri  
- Visual C++ kullanıcı tanımlı özellik kümelerini destekler. Geçersiz kılma gerekmez **GetProperties** veya `GetPropertyInfo`. Bunun yerine, şablonları herhangi bir kullanıcı tanımlı özellik kümesi algılamak ve uygun nesneye ekler.  
+ Visual C++ kullanıcı tanımlı özellik kümesini destekler. Geçersiz kılma gerekmez `GetProperties` veya `GetPropertyInfo`. Bunun yerine, şablonlar, herhangi bir kullanıcı tarafından tanımlanan bir özellik kümesi algılamak ve uygun nesnesine ekleyin.  
   
- Başlatma zamanında kullanılabilir olması gereken kullanıcı tanımlı özellik kümesi varsa (diğer bir deyişle, tüketici çağırmadan önce **IDBInitialize::Initialize**), bu kullanarak belirttiğiniz **UPROPSET_USERINIT** BEGIN_PROPERTY_SET_EX makrosu birlikte bayrağı. Özellik kümesi bunun (OLE DB belirtiminin gerektirdiği gibi) çalışması veri kaynağı nesnesi olması gerekir. Örneğin:  
+ Başlatma zamanında kullanılabilir olması gereken kullanıcı tanımlı bir özellik kümesi varsa (diğer bir deyişle, tüketici çağırmadan önce `IDBInitialize::Initialize`), bu BEGIN_PROPERTY_SET_EX makrosu birlikte UPROPSET_USERINIT bayrağı kullanılarak belirtin. Özellik kümesi (OLE DB belirtimi gerektirdiği şekilde) çalışması bu veri kaynağı nesnesi olması gerekir. Örneğin:  
   
-```  
+```cpp  
 BEGIN_PROPERTY_SET_EX(DBPROPSET_MYPROPSET, UPROPSET_USERINIT)  
    PROPERTY_INFO_ENTRY(DBPROP_MYPROP)  
 END_PROPERTY_SET_EX(DBPROPSET_MYPROPSET)  

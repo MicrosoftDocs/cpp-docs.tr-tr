@@ -21,55 +21,55 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4aa6de58e7e2c530a7a353281ba5af747f48cd4e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d3b1988f9448e9b63fa0263e27d6db6532fdc68
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092079"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337274"
 ---
 # <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)
-Bu konu MFC ODBC sınıfları için geçerlidir.  
+Bu konu MFC ODBC sınıflarına uygulanır.  
   
- Bu konuda aşağıdaki kullanarak toplama sonuçları elde etmek açıklanmaktadır [SQL](../../data/odbc/sql.md) anahtar sözcükler:  
+ Bu konu başlığında, aşağıdaki kullanarak toplama sonuçları elde etmek açıklanmaktadır [SQL](../../data/odbc/sql.md) anahtar sözcükler:  
   
 -   **SUM** sayısal veri türüne sahip bir sütundaki değerlerin toplamını hesaplar.  
   
 -   **MIN** sayısal veri türüne sahip bir sütundaki en küçük değeri ayıklar.  
   
--   **MAX** sayısal veri türüne sahip bir sütundaki en büyük değeri ayıklar.  
+-   **En fazla** sayısal veri türüne sahip bir sütundaki en büyük değeri ayıklar.  
   
--   **Ortalama** sayısal veri türüne sahip bir sütundaki tüm değerlerin ortalama bir değer hesaplar.  
+-   **Ortalama** ortalama değeri bir sütundaki tüm değerlerin sayısal veri türüne sahip hesaplar.  
   
--   **COUNT** herhangi bir veri türü sütununun kayıtlarının sayısını sayar.  
+-   **SAYISI** herhangi bir veri türü sütununun kayıtlarını sayar.  
   
- Bu SQL işlevlerini veri kaynağındaki kayıtlar hakkında istatistiksel bilgiler edinmek için yerine veri kaynağından kayıtları ayıklamak için kullanın. Bir tek genellikle oluşturulan kayıt kümesi oluşur (tüm sütunları toplamalar varsa) kaydı, bir değer içeriyor. (Kullandıysanız birden fazla kayıt olabilir bir **GROUP BY** yan tümcesi.) Bu değer hesaplama veya SQL işlevi tarafından gerçekleştirilen ayıklama sonucudur.  
+ Bu SQL işlevleri, bir veri kaynağındaki kayıtları hakkında istatistiksel bilgi edinmek için yerine veri kaynağından kayıtlar ayıklamak için kullanın. Genellikle oluşturulan kayıt tek bir oluşan bir değer içeren kayıt (tüm sütunları toplamalar varsa). (Kullandıysanız birden fazla kayıtla olabilir bir **GROUP BY** yan tümcesi.) Bir SQL işlev tarafından gerçekleştirilebilse ayıklama veya hesaplama sonucu değerdir.  
   
 > [!TIP]
->  Bir SQL eklemek için **GROUP BY** yan tümcesi (ve muhtemelen bir **HAVING** yan tümcesi) SQL deyimine, onu sonuna **m_strFilter**. Örneğin:  
+>  Bir SQL eklemek için **GROUP BY** yan tümcesi (ve muhtemelen bir **HAVING** yan tümcesi) SQL deyimine, sonuna `m_strFilter`. Örneğin:  
   
 ```  
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";  
 ```  
   
- Sütunları sıralama ve filtreleme ile toplama sonuçları elde etmek için kullandığınız kayıtların sayısını sınırlayabilirsiniz.  
+ Filtreleme ve sıralama sütunlarını toplama sonuçları elde etmek için kullandığınız kayıt sayısını sınırlayabilirsiniz.  
   
 > [!CAUTION]
->  Bazı toplama işleçleri, farklı bir veri türü üzerinde bunlar topluyorsanız sütunlarından döndür.  
+>  Bazı toplama işleçleri, farklı bir veri türü üzerinde toplama sütunları döndürür.  
   
--   **SUM** ve **AVG** sonraki daha büyük veri türüne döndürebilir (örneğin, ile arama `int` döndürür **uzun** veya **çift**).  
+-   **SUM** ve **ortalama** sonraki daha büyük veri türü döndürebilir (örneğin, ile arama `int` döndürür **uzun** veya **çift**).  
   
--   **COUNT** genellikle döndürür **uzun** hedef sütun türü ne olursa olsun.  
+-   **SAYISI** genellikle döndürür **uzun** hedef sütun türü ne olursa olsun.  
   
--   **MAX** ve **MIN** hesaplanacak sütunlar aynı veri türünde döndürür.  
+-   **En fazla** ve **MIN** hesaplanacak sütunları aynı veri türünde döndürür.  
   
-     Örneğin, **sınıfı Ekle** sihirbaz `long` `m_lSales` bunu değiştirmek bir satış sütunu, ancak uyum sağlaması gerekmektedir bir `double m_dblSumSales` toplam sonucu barındırmak için veri üyesi. Aşağıdaki örnekte bakın.  
+     Örneğin, **sınıfı Ekle** sihirbaz `long` `m_lSales` satış sütun, ancak uyum sağlamak için bunu değiştirmeniz gerekir bir `double m_dblSumSales` toplam sonucu barındırmak için veri üyesi. Aşağıdaki örnekte bakın.  
   
-#### <a name="to-obtain-an-aggregate-result-for-a-recordset"></a>Bir kayıt kümesi için birleşik bir sonuç almak için  
+#### <a name="to-obtain-an-aggregate-result-for-a-recordset"></a>Bir kayıt kümesi için birleşik bir sonuç elde etmek için  
   
-1.  Bölümünde açıklandığı gibi bir kayıt kümesi oluşturma [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md) toplama sonuçları elde etmek istediğiniz sütunları içeren.  
+1.  Bölümünde anlatıldığı gibi bir kayıt kümesi oluşturma [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md) toplama sonuçları elde etmek istediğiniz sütunları içeren.  
   
-2.  Değiştirme [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) kayıt kümesi için işlevi. Sütun adını temsil eden dize değiştirin (ikinci bağımsız değişkeni [RFX](../../data/odbc/record-field-exchange-using-rfx.md) işlev çağrıları) ile sütun toplama işlevini temsil eden bir dize. Örneğin, değiştirin:  
+2.  Değiştirme [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) kayıt kümesi için işlevi. Sütun adını temsil eden dize değiştirin (ikinci bağımsız değişkeni [RFX](../../data/odbc/record-field-exchange-using-rfx.md) işlev çağrılarında) ile sütunda toplama işlevini temsil eden bir dize. Örneğin, değiştirin:  
   
     ```  
     RFX_Long(pFX, "Sales", m_lSales);  
@@ -81,12 +81,12 @@ m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
     RFX_Double(pFX, "Sum(Sales)", m_dblSumSales)  
     ```  
   
-3.  Kayıt kümesi'ni açın. Toplama işleminin sonucu left içinde `m_dblSumSales`.  
+3.  Kayıt kümesini açın. Toplama işleminin sonucu left içinde `m_dblSumSales`.  
   
 > [!NOTE]
->  Sihirbaz, aslında veri üye adlarını Macarca önekleri olmadan atar. Örneğin, sihirbaz msgıd `m_Sales` bir satış sütunu için yerine `m_lSales` önceki çizim için kullanılan ad.  
+>  Sihirbaz, aslında Macarca önekleri olmadan veri üye adlarını atar. Örneğin, sihirbaz oluşturur `m_Sales` bir satış sütunu için yerine `m_lSales` önceki çizim için kullanılan ad.  
   
- Kullanıyorsanız bir [CRecordView](../../mfc/reference/crecordview-class.md) verileri görüntülemek için sınıf, yeni veri üyesi değerini; görüntülemek için DDX işlev çağrısı değiştirmek zorunda bu durumda, ondan değiştirme:  
+ Kullanıyorsanız bir [CRecordView](../../mfc/reference/crecordview-class.md) verileri görüntülemek için sınıf, yeni veri üyesinin değerini görüntülemek için DDX işlev çağrısı değiştirmek zorunda bu durumda, ondan değiştirme:  
   
 ```  
 DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_lSales, m_pSet);  

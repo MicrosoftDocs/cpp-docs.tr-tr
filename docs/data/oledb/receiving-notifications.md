@@ -1,5 +1,5 @@
 ---
-title: Bildirimleri alma | Microsoft Docs
+title: Bildirim alma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,31 +21,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d9e1dee5c63281c729cdb798a190938c6433aac0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fdef616456b98086bf9490297d68c98596b2dca4
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33112322"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39338976"
 ---
 # <a name="receiving-notifications"></a>Bildirimleri Alma
-OLE DB olaylar meydana geldiğinde bildirim almak için arabirim sağlar. Bunlar [OLE DB Nesne bildirimleri](https://msdn.microsoft.com/en-us/library/ms725406.aspx) içinde *OLE DB Programcının Başvurusu*. Bu olayların Kurulumu standart COM bağlantı noktası mekanizması kullanır. Örneğin, aracılığıyla olaylarını almak istediği bir ATL nesnesi `IRowsetNotify` uygulayan `IRowsetNotify` ekleyerek arabirimi `IRowsetNotify` türetilmiş sınıf listesi ve üzerinden gösterme bir **COM_INTERFACE_ENTRY** makrosu.  
+OLE DB, olaylar meydana geldiğinde bildirim almak için arabirim sağlar. Bunlar [OLE DB Nesne bildirimleri](https://msdn.microsoft.com/library/ms725406.aspx) içinde *OLE DB Programcının Başvurusu*. Kurulum bu olayların standart COM bağlantı noktası mekanizmasını kullanır. Örneğin, olayları aracılığıyla almayı isteyen bir ATL nesnesi `IRowsetNotify` uygulayan `IRowsetNotify` ekleyerek arabirimi `IRowsetNotify` türetilmiş sınıf listesi ve COM_INTERFACE_ENTRY makrosu aracılığıyla gösterme.  
   
- `IRowsetNotify` çeşitli zamanlarda çağrılabilen üç yöntem vardır. Bu yöntemlerden sadece birini kullanmak için yanıt vermek istiyorsanız, kullanabileceğiniz [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) sınıfı, döndüren **E_NOTIMPL** ilgilendiğiniz değil yöntemleri için.  
+ `IRowsetNotify` çeşitli zamanlarda çağrılabilir üç yöntem vardır. Bu yöntemlerden yalnızca biri için yanıt vermesini istiyorsanız kullanabileceğiniz [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) ilgilendiğiniz olmayan yöntemler için E_NOTIMPL döndüren sınıfı.  
   
- Satır kümesi oluşturduğunuzda, desteklemek için döndürülen satır kümesi nesnesi istediğiniz sağlayıcı söylemelisiniz **IConnectionPointContainer**, bildirimi ayarlamak için gerekli.  
+ Satır kümesi oluşturduğunuzda, istediğiniz desteklemek için döndürülen satır kümesi nesnesi sağlayıcı söylemelisiniz `IConnectionPointContainer`, bildirimi ayarlamak için gerekli.  
   
- Aşağıdaki kod bir ATL nesnesinden satır açmak ve kullanmak nasıl gösterir `AtlAdvise` bildirim havuzunu kurmak için işlev. `AtlAdvise` çağırdığınızda, kullanılan bir tanımlama bilgisi döndürür `AtlUnadvise`.  
+ Aşağıdaki kod bir ATL nesneden satır kümesi açmak ve kullanmak nasıl gösterir `AtlAdvise` bildirim havuzunu'kurmak için işlevi. `AtlAdvise` çağırdığınızda, kullanılan tanımlama bilgisi döndürür `AtlUnadvise`.  
   
-```  
+```cpp  
 CDBPropSet propset(DBPROPSET_ROWSET);  
 
 propset.AddProperty(DBPROP_IConnectionPointContainer, true);  
   
-
 product.Open(session, _T("Products"), &propset);  
   
-
 AtlAdvise(product.m_spRowset, GetUnknown(), IID_IRowsetNotify, &m_dwCookie);  
 ```  
   

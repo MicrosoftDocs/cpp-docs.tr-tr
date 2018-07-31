@@ -15,17 +15,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b377df31e9166ee5288d37b0843944a3b2eb6bc7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 02ce5cbfdc6c5305ab356fc32993b6bdd34f1fac
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104581"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39339542"
 ---
 # <a name="issuing-a-parameterized-query"></a>Parametreleştirilmiş Sorgu Verme
-Aşağıdaki örnek, bir Microsoft Access veritabanı tablosunda (30'dan büyük olan) bir geçerlilik süresi alan kayıtlarıyla alır basit bir Parametreli sorgu verir. Parametre desteklemek için kullanıcı kaydının ek bir eşlemesinin olması gerekir. Aşağıdaki kod bir ATL projesinde kullanır `CCommand` sınıfına `CTable` önceki örnekte kullanılan sınıf [basit bir satır kümesinde geçiş yapma](../../data/oledb/traversing-a-simple-rowset.md).  
+Aşağıdaki örnek, bir Microsoft Access veritabanındaki bir tablodan (30'dan büyük olan) bir geçerlilik süresi alan kayıtlarla alır basit, parametreli bir sorgu verir. Parametre desteklemek için kullanıcı kaydı, ek bir harita olmalıdır. Aşağıdaki kod, kullanan bir ATL projesinde `CCommand` sınıfı yerine `CTable` önceki örnekte kullanılan sınıf [basit bir satır kümesinde geçiş yapma](../../data/oledb/traversing-a-simple-rowset.md).  
   
-```  
+```cpp  
 #include <atldbcli.h>  
   
 CDataSource connection;  
@@ -53,7 +53,7 @@ while (artists.MoveNext() == S_OK)
   
  Kullanıcı kaydı, `CArtists`, şöyle görünür:  
   
-```  
+```cpp  
 class CArtists  
 {  
 public:  

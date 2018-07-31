@@ -78,12 +78,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7545a9a31ff9bd7426002ef97176c59dd308dd49
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 9bd662c827650112d0e9bcf1d59086f4205aea58
+ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209150"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39337624"
 ---
 # <a name="cbookmark-class"></a>CBookmark Sınıfı
 Bir yer işareti değeri kendi arabellekte tutar.  
@@ -131,8 +131,8 @@ Oluşturucu.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      CBookmark();   
-
+CBookmark();
+   
 CBookmark(DBLENGTH nSize);  
 ```  
   
@@ -153,7 +153,6 @@ Yer işareti arabellek için işaretçi alır.
   
 ```cpp
 virtual BYTE* GetBuffer() const throw();  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -166,7 +165,6 @@ Yer işareti arabellek boyutunu alır.
   
 ```cpp
 virtual DBLENGTH GetSize() const throw();  
-  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -177,9 +175,8 @@ Yer işareti değeri tarafından başvurulan kopyalar *pBuffer* için `CBookmark
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```
-HRESULT SetBookmark(DBLENGTH nSize,  
-  BYTE* pBuffer) throw();  
+```cpp
+HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -201,7 +198,7 @@ Atayan bir `CBookmark` başka bir nesne.
 ### <a name="syntax"></a>Sözdizimi  
   
 ```cpp
-      CBookmark& operator =(const CBookmark& bookmark) throw();  
+CBookmark& operator =(const CBookmark& bookmark) throw();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
