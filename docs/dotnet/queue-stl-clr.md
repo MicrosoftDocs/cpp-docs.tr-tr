@@ -1,5 +1,5 @@
 ---
-title: sıra (STL/CLR) | Microsoft Docs
+title: Kuyruk (STL/CLR) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -73,21 +73,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1ae23bf845e3fa78a1971def6ea0034c94b57991
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: adf65c4af70b0ba6bc1f089576d69160ab21a5b6
+ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079713"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376003"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
-Şablon sınıfı ilk giren ilk çıkar özelliğine sahip erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `queue` temel alınan bir kapsayıcı bir sıra olarak yönetmek için.  
+Şablon sınıfı, ilk giren ilk çıkar erişimi olan öğelerin değişen uzunluktaki dizisini denetleyen bir nesneyi tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `queue` temel alınan bir kapsayıcı olarak bir kuyruk yönetmek için.  
   
- Aşağıda, açıklamada `GValue` aynı `Value` ikinci ref türü olmadıkça olmasından; bu durumda `Value^`. Benzer şekilde, `GContainer` aynı `Container` ikinci ref türü olmadıkça olmasından; bu durumda `Container^`.  
+ Aşağıdaki açıklamada `GValue` aynı *değer* ikinci bir başvuru türü olmadığı sürece olduğu durumda `Value^`. Benzer şekilde, `GContainer` aynı *kapsayıcı* ikinci bir başvuru türü olmadığı sürece olduğu durumda `Container^`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     ref class queue  
@@ -98,10 +98,10 @@ template<typename Value,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- Değer  
+ *Değer*  
  Denetlenen sıradaki öğenin türü.  
   
- Kapsayıcı  
+ *Kapsayıcı*  
  Temel alınan kapsayıcı türü.  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -117,7 +117,7 @@ template<typename Value,
 |[queue::container_type (STL/CLR)](#container_type)|Temel alınan kapsayıcı türü.|  
 |[queue::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[queue::generic_container (STL/CLR)](#generic_container)|Kapsayıcı bağdaştırıcısı için genel arabirim türü.|  
-|[queue::generic_value (STL/CLR)](#generic_value)|Kapsayıcı bağdaştırıcısı için genel arabirimini öğenin türü.|  
+|[queue::generic_value (STL/CLR)](#generic_value)|Kapsayıcı bağdaştırıcısı için genel arabirimi için bir öğe türü.|  
 |[queue::reference (STL/CLR)](#reference)|Bir öğe için bir başvuru türü.|  
 |[queue::size_type (STL/CLR)](#size_type)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[queue::value_type (STL/CLR)](#value_type)|Öğenin türü.|  
@@ -125,40 +125,40 @@ template<typename Value,
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
 |[queue::assign (STL/CLR)](#assign)|Tüm öğeleri değiştirir.|  
-|[queue::back (STL/CLR)](#back)|Son öğe erişir.|  
+|[queue::back (STL/CLR)](#back)|Son öğeyi erişir.|  
 |[queue::empty (STL/CLR)](#empty)|Bir öğe olup olmadığını sınar.|  
-|[queue::front (STL/CLR)](#front)|İlk öğe erişir.|  
+|[queue::front (STL/CLR)](#front)|İlk öğeyi erişir.|  
 |[queue::get_container (STL/CLR)](#get_container)|Temel alınan kapsayıcı erişir.|  
 |[queue::pop (STL/CLR)](#pop)|İlk öğeyi kaldırır.|  
 |[queue::push (STL/CLR)](#push)|Yeni bir son öğesi ekler.|  
 |[queue::queue (STL/CLR)](#queue)|Bir kapsayıcı nesnesi oluşturur.|  
 |[queue::size (STL/CLR)](#size)|Öğe sayısını sayar.|  
-|[queue::to_array (STL/CLR)](#to_array)|Denetimli sırası yeni bir diziye kopyalar.|  
+|[queue::to_array (STL/CLR)](#to_array)|Denetlenen dizideki, yeni bir diziye kopyalar.|  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|[queue::back_item (STL/CLR)](#back_item)|Son öğe erişir.|  
-|[queue::front_item (STL/CLR)](#front_item)|İlk öğe erişir.|  
+|[queue::back_item (STL/CLR)](#back_item)|Son öğeyi erişir.|  
+|[queue::front_item (STL/CLR)](#front_item)|İlk öğeyi erişir.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[queue::operator= (STL/CLR)](#op_as)|Denetimli dizisi yerini alır.|  
-|[operator!= (queue) (STL/CLR)](#op_neq)|Belirler bir `queue` nesne diğerine eşit değil `queue` nesnesi.|  
-|[operator< (queue) (STL/CLR)](#op_lt)|Belirler bir `queue` nesnesi, başka değerinden `queue` nesnesi.|  
-|[operator<= (queue) (STL/CLR)](#op_lteq)|Belirler bir `queue` nesnesidir değerinden küçük veya eşit başka `queue` nesnesi.|  
-|[operator== (queue) (STL/CLR)](#op_eq)|Belirler bir `queue` nesnesidir diğerine eşit `queue` nesnesi.|  
-|[operator> (queue) (STL/CLR)](#op_gt)|Belirler bir `queue` nesnesidir diğerinden daha büyük `queue` nesnesi.|  
-|[operator>= (queue) (STL/CLR)](#op_gteq)|Belirler bir `queue` nesnesidir büyük veya ona eşit diğerine `queue` nesnesi.|  
+|[queue::operator= (STL/CLR)](#op_as)|Denetlenen dizi değiştirir.|  
+|[operator!= (queue) (STL/CLR)](#op_neq)|Belirler bir `queue` nesnesi, diğerine eşit değil `queue` nesne.|  
+|[operator< (queue) (STL/CLR)](#op_lt)|Belirler bir `queue` nesnedir daha az `queue` nesne.|  
+|[operator<= (queue) (STL/CLR)](#op_lteq)|Belirler bir `queue` nesnedir küçüktür veya eşittir diğerine `queue` nesne.|  
+|[operator== (queue) (STL/CLR)](#op_eq)|Belirler bir `queue` nesnedir diğerine eşit `queue` nesne.|  
+|[operator> (queue) (STL/CLR)](#op_gt)|Belirler bir `queue` nesnedir diğerinden daha büyük `queue` nesne.|  
+|[operator>= (queue) (STL/CLR)](#op_gteq)|Belirler bir `queue` nesnedir büyüktür veya eşittir diğerine `queue` nesne.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   
 |Arabirim|Açıklama|  
 |---------------|-----------------|  
-|<xref:System.ICloneable>|Yinelenen bir nesne.|  
-|IQueue\<değeri, kapsayıcı >|Genel kapsayıcı bağdaştırıcısı korur.|  
+|<xref:System.ICloneable>|Bir nesne çoğaltın.|  
+|IQueue\<değeri, kapsayıcı >|Genel bir kapsayıcı bağdaştırıcısı korur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Nesne ayırır ve türündeki temel alınan bir kapsayıcı denetlediği dizisi için depolama boşaltır `Container`, depolar `Value` öğeleri ve isteğe bağlı olarak artar. Yalnızca ilk öğe gönderilmesi için nesne erişimi kısıtlayan ve son öğe pencerelerinin, ilk giren ilk çıkar uygulama sıraya (FIFO sıra veya yalnızca bir sıra olarak da bilinir).  
+ Nesneyi ayırır ve serbest bırakma türü temel alınan bir kapsayıcının denetlediği dizi için depolama `Container`, depolayan `Value` öğeleri ve istek üzerine büyür. Yalnızca ilk öğeyi göndermeye nesne erişimi kısıtlayan ve son öğe pencerelerinin, ilk giren ilk çıkar uygulama sıra (FIFO kuyruk veya yalnızca bir sıra olarak da bilinir).  
   
 ## <a name="members"></a>Üyeler
 
@@ -167,16 +167,16 @@ Tüm öğeleri değiştirir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void assign(queue<Value, Container>% right);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Eklemek için kapsayıcı Bağdaştırıcısı'nı tıklatın.  
+ *sağ*  
+ Eklenecek kapsayıcı Bağdaştırıcısı'nı tıklatın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini atar `right.get_container()` temel kapsayıcısı. Sıranın tüm içeriğini değiştirmek için kullanın.  
+ Üye işlevi atar `right.get_container()` temel alınan kapsayıcısı. Sıranın tüm içeriğini değiştirmek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -206,7 +206,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -215,16 +214,16 @@ a b c
 ```  
 
 ## <a name="back"></a> Queue::Back (STL/CLR)
-Son öğe erişir.  
+Son öğeyi erişir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 reference back();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini son öğe boş olmalıdır denetimli dizisi için bir başvuru döndürür. Mevcut bildiğinizde son öğesine erişmek için kullanın.  
+ Üye işlevi, denetlenen dizinin boş olması gereken son öğeye bir başvuru döndürür. Son öğe mevcut bildiğinizde erişmek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -256,7 +255,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -266,16 +264,16 @@ back() = c
 ```  
 
 ## <a name="back_item"></a> Queue::back_item (STL/CLR)
-Son öğe erişir.  
+Son öğeyi erişir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 property value_type back_item;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özelliği, son öğe boş olmalıdır denetimli dizisi erişir. Okumak veya mevcut bildiğinizde son öğe yazmak için kullanın.  
+ Özellik, son öğe boş olmalıdır denetlenen dizinin erişir. Okumak veya son öğe mevcut bildiğinizde yazmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -307,7 +305,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -321,12 +318,12 @@ Bir öğe için sabit bir başvuru türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğe için sabit bir başvuru türü açıklanmaktadır.  
+ Bir öğe için sabit bir başvuru türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -352,7 +349,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -364,12 +360,12 @@ Temel alınan kapsayıcı türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Container value_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon parametresi için bir eş anlamlı türüdür `Container`.  
+ Şablon parametresi için bir eşanlamlı türüdür `Container`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -393,7 +389,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -401,16 +396,16 @@ a b c
 ```  
 
 ## <a name="difference_type"></a> Queue::difference_type (STL/CLR)
-İki öğe arasındaki imzalı uzaklığı türü.  
+İki öğe arasındaki işaretli mesafenin türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünü büyük olasılıkla negatif öğe sayısını tanımlar.  
+ Büyük olasılıkla negatif öğe sayısını tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -448,7 +443,6 @@ int main()
     System::Console::WriteLine("popping 3 = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -462,12 +456,12 @@ Bir öğe olup olmadığını sınar.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş denetimli dizisi için true değerini döndürür. Eşdeğer olan [queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() == 0`. Sıranın boş olup olmadığını sınamak için kullanın.  
+ Üye işlevi boş bir denetlenmiş dizi için true değerini döndürür. Eşdeğerdir [queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() == 0`. Sıranın boş olup olmadığını sınamak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -499,7 +493,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -511,16 +504,16 @@ empty() = True
 ```  
 
 ## <a name="front"></a> Queue::Front (STL/CLR)
-İlk öğe erişir.  
+İlk öğeyi erişir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 reference front();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş olması gerekir denetlenen dizisinin ilk öğesi için bir başvuru döndürür. Mevcut bildiğinizde ilk öğe erişmek için kullanın.  
+ Üye işlevi, denetlenen dizinin boş olması gereken ilk öğeye bir başvuru döndürür. Mevcut bildiğinizde ilk öğeye erişmek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -552,7 +545,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -562,16 +554,16 @@ front() = a
 ```  
 
 ## <a name="front_item"></a> Queue::front_item (STL/CLR)
-İlk öğe erişir.  
+İlk öğeyi erişir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 property value_type front_item;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özelliği boş olması gerekir denetlenen dizisinin ilk öğesi erişir. Okumak veya mevcut bildiğinizde ilk öğe yazmak için kullanın.  
+ Özelliği ilk öğe boş olmalıdır denetlenen dizinin erişir. Okumak veya mevcut bildiğinizde ilk öğeyi yazmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -603,7 +595,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -617,13 +608,13 @@ Kapsayıcı bağdaştırıcısı için genel arabirim türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::IQueue<Value>  
     generic_container;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu şablon kapsayıcı bağdaştırıcı sınıfı için genel arabirimi türünü tanımlar.  
+ Bu şablon kapsayıcı bağdaştırıcısı sınıfın genel arabirim tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -664,7 +655,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -675,16 +665,16 @@ a b c d e
 ```  
 
 ## <a name="generic_value"></a> Queue::generic_value (STL/CLR)
-Kapsayıcı için genel arabirimi ile kullanmak için öğenin türü.  
+Kapsayıcı için genel arabirimi ile kullanmak için bir öğe türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünde bir nesne türünü açıklayan `GValue` kullanmak için saklı öğesi değeri bu şablonu kapsayıcı sınıfı için genel arabirimi açıklar. (`GValue` ya `value_type` veya `value_type^` varsa `value_type` ref türü.)  
+ Türünde bir nesneyi tanımlayan bir tür `GValue` açıklayan yönelik genel arabirimi için bu şablonu kapsayıcı sınıfı ile kullanmak için depolanan öğenin değeri. (`GValue` ya da `value_type` veya `value_type^` varsa `value_type` bir başvuru türüdür.)  
   
 ### <a name="example"></a>Örnek  
   
@@ -722,7 +712,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -736,12 +725,12 @@ Temel alınan kapsayıcı erişir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 container_type^ get_container();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi temel alınan kapsayıcı döndürür. Kapsayıcı sarmalayıcı tarafından uygulanan kısıtlamalar atlamak için kullanın.  
+ Üye işlevi, temel alınan kapsayıcı döndürür. Kapsayıcı sarmalayıcı tarafından uygulanan kısıtlamalar atlamak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -764,7 +753,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -772,20 +760,20 @@ a b c
 ```  
 
 ## <a name="op_as"></a> Queue::operator (STL/CLR) =
-Denetimli dizisi yerini alır.  
+Denetlenen dizi değiştirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 queue <Value, Container>% operator=(queue <Value, Container>% right);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Kopyalamak için kapsayıcı Bağdaştırıcısı'nı tıklatın.  
+ *sağ*  
+ Kopyalanacak kapsayıcı Bağdaştırıcısı'nı tıklatın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işleci kopyaları `right` nesnesine sonra döndürür `*this`. Denetimli sırayla kopyası ile denetlenen sırasını değiştirmek için kullanın `right`.  
+ Üye işleci kopyaları *doğru* ardından nesneye döndürür `*this`. Denetlenen dizi denetlenen dizide bir kopyasını değiştirmek için kullandığınız *doğru*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -814,8 +802,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -828,16 +815,16 @@ Son öğeyi kaldırır.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void pop();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş olmalıdır denetimli dizisi son öğeyi kaldırır. Sıranın arkadaki bir öğe tarafından kısaltmak için kullanın.  
+ Üye işlevi, denetlenen dizinin boş olması gereken son öğeyi kaldırır. Arkasından bir öğe tarafından sıraya kısaltmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cliext_queue_pop.cpp   
 // compile with: /clr   
 #include <cliext/queue>   
@@ -862,7 +849,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -875,12 +861,12 @@ Yeni bir son öğesi ekler.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void push(value_type val);  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini değeri olan bir öğe ekler `val` sıranın sonunda. Kuyruğa bir öğe eklemek için kullanın.  
+ Üye işlev değere sahip bir öğe ekler `val` sıra sonunda. Kuyruğa bir öğe eklemek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -903,7 +889,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -915,7 +900,7 @@ Bir kapsayıcı bağdaştırıcısı nesnesi oluşturur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 queue();  
 queue(queue<Value, Container>% right);  
 queue(queue<Value, Container>^ right);  
@@ -923,36 +908,36 @@ explicit queue(container_type% wrapped);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Kopyalamak için nesne.  
+ *sağ*  
+ Kopyalanacak nesneye.  
   
- Sarmalanan  
- Kullanılacak Sarmalanan kapsayıcı.  
+ *Sarmalanan*  
+ Kullanılacak Sarmalanan kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturucusu:  
+ Oluşturucu:  
   
  `queue();`  
   
- boş bir Sarmalanan kapsayıcı oluşturur. Boş bir başlangıç denetimli dizisini belirtmek için kullanın.  
+ boş bir Sarmalanan kapsayıcı oluşturur. Boş bir başlangıç denetlenmiş dizi belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `queue(queue<Value, Container>% right);`  
   
- bir kopyası Sarmalanan bir kapsayıcı oluşturur `right.get_container()`. Sıra nesnesi tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `right`.  
+ kopyası olan bir sarmalanmış bir kapsayıcı oluşturur `right.get_container()`. Kuyruk nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız *doğru*.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `queue(queue<Value, Container>^ right);`  
   
- bir kopyası Sarmalanan bir kapsayıcı oluşturur `right->get_container()`. Sıra nesnesi tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `*right`.  
+ kopyası olan bir sarmalanmış bir kapsayıcı oluşturur `right->get_container()`. Kuyruk nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız `*right`.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `explicit queue(container_type wrapped);`  
   
- var olan bir kapsayıcı kullanan `wrapped` Sarmalanan kapsayıcı olarak. Var olan bir kapsayıcı kuyruktan oluşturmak için kullanın.  
+ var olan bir kapsayıcı kullanan *sarmalanmış* Sarmalanan kapsayıcısı. Bir kuyruktan var olan bir kapsayıcı oluşturmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -991,7 +976,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1006,12 +990,12 @@ Bir öğe için bir başvuru türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğe için bir başvuru türü açıklanmaktadır.  
+ Öğeye bir başvuru türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1041,7 +1025,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1054,12 +1037,12 @@ a b x
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli sırası uzunluğunu döndürür. Şu anda denetlenen sıradaki öğelerinin sayısını belirlemek için kullanın. Tüm önem verdiğiniz ise dizisi bkz sıfır olmayan boyutu olup [queue::empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)`()`.  
+ Üye işlevi, denetlenen dizinin uzunluğunu döndürür. Şu anda denetlenen dizideki öğelerin sayısını belirlemek için kullanın. Tümü, önem verdiğiniz ise dizisi bakın, sıfır olmayan boyutu olup [queue::empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)`()`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1092,7 +1075,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1103,16 +1085,16 @@ size() = 4 after adding 2
 ```  
 
 ## <a name="size_type"></a> Queue::size_type (STL/CLR)
-İki öğe arasındaki imzalı uzaklığı türü.  
+İki öğe arasındaki işaretli mesafenin türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünü negatif olmayan öğe sayısını tanımlar.  
+ Bir negatif olmayan öğe sayısını tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1142,7 +1124,6 @@ int main()
     System::Console::WriteLine("size difference = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1151,20 +1132,20 @@ size difference = 2
 ```  
 
 ## <a name="to_array"></a> Queue::to_array (STL/CLR)
-Denetimli sırası yeni bir diziye kopyalar.  
+Denetlenen dizideki, yeni bir diziye kopyalar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 cli::array<Value>^ to_array();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi denetimli sırası içeren bir dizi döndürür. Dizi formunda denetimli sırasının bir kopyasını almak için kullanın.  
+ Üye işlevi, denetlenen bir dizi içeren bir dizi döndürür. Dizi formunda denetlenen dizinin bir kopyasını almak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cliext_queue_to_array.cpp   
 // compile with: /clr   
 #include <cliext/queue>   
@@ -1191,7 +1172,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1204,12 +1184,12 @@ a b c
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Value value_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon parametresi için bir eş anlamlı türüdür `Value`.  
+ Şablon parametresi için bir eşanlamlı türüdür *değer*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1235,20 +1215,19 @@ int main()
         }   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
 a b c  
 ```  
 
-## <a name="op_neq"></a> operator! = (kuyruk) (STL/CLR)
-Eşit değildir karşılaştırma sırası.  
+## <a name="op_neq"></a> işleç! = (sıra) (STL/CLR)
+Eşit değildir karşılaştırma kuyruğa alın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator!=(queue<Value, Container>% left,  
@@ -1256,14 +1235,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi döndürür `!(left == right)`. Test etmek için kullandığınız olup olmadığını `left` aynı sıralı değil `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini döndürür `!(left == right)`. Test etmek için kullandığınız olup olmadığını *sol* aynı sıralı değil *doğru* karşılaştırılan öğe öğe olduğunda iki sıralar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1302,7 +1281,6 @@ int main()
         c1 != c2);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1312,12 +1290,12 @@ int main()
 [a b c] != [a b d] is True  
 ```  
 
-## <a name="op_lt"></a> İşleç&lt; (kuyruk) (STL/CLR)
-Karşılaştırma sayısından az sırası.  
+## <a name="op_lt"></a> İşleç&lt; (sıra) (STL/CLR)
+Daha azını karşılaştırma kuyruğa alın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator<(queue<Value, Container>% left,  
@@ -1325,14 +1303,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleci işlevi döndürür true ise, en düşük konumunun `i` kendisi için `!(right[i] < left[i])` Ayrıca, true olan `left[i] < right[i]`. Aksi takdirde, döndürür `left->` [queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md) `() <` `right->size()` sınamak için kullanın olup olmadığını `left` önce sıralı `right` öğe tarafından karşılaştırılan öğe olduğunda iki sıralar.  
+ İşleç işlevi döndürür true ise, en düşük konumu için `i` hangi `!(right[i] < left[i])` de true olduğu `left[i] < right[i]`. Aksi halde `left->` [queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md) `() <` `right->size()` test etmek için kullandığınız olmadığını *sol* önceyse *doğru* iki kuyrukları karşılaştırılan öğe öğe olduğunda.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1370,8 +1348,7 @@ int main()
     System::Console::WriteLine("[a b c] < [a b d] is {0}",   
         c1 < c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1381,12 +1358,12 @@ int main()
 [a b c] < [a b d] is True  
 ```  
 
-## <a name="op_lteq"></a> İşleç&lt;= (kuyruk) (STL/CLR)
-Küçük veya buna eşit sıraya karşılaştırma.  
+## <a name="op_lteq"></a> İşleç&lt;(sıra) (STL/CLR) =
+Küçük veya buna eşit bir sıra karşılaştırması.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator<=(queue<Value, Container>% left,  
@@ -1394,14 +1371,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi döndürür `!(right < left)`. Test etmek için kullandığınız olup olmadığını `left` sonra sıralı değil `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini döndürür `!(right < left)`. Test etmek için kullandığınız olup olmadığını *sol* sonra sıralı değil *doğru* karşılaştırılan öğe öğe olduğunda iki sıralar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1439,8 +1416,7 @@ int main()
     System::Console::WriteLine("[a b d] <= [a b c] is {0}",   
         c2 <= c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1450,12 +1426,12 @@ int main()
 [a b d] <= [a b c] is False  
 ```  
 
-## <a name="op_eq"></a> operator == (kuyruk) (STL/CLR)
-Sıra eşit karşılaştırması.  
+## <a name="op_eq"></a> işleç == (sıra) (STL/CLR)
+Kuyruk eşit karşılaştırması.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator==(queue<Value, Container>% left,  
@@ -1463,14 +1439,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi sıraları denetlediği yalnızca, true değerini döndürür `left` ve `right` aynı uzunlukta olması ve her konum için `i`, `left[i] ==` `right[i]`. Test etmek için kullandığınız olup olmadığını `left` aynı sıralı `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini dizileri denetlediği yalnızca, true değerini döndürür *sol* ve *doğru* aynı uzunluğa sahip ve her konum için `i`, `left[i] ==` `right[i]`. Test etmek için kullandığınız olup olmadığını *sol* aynı sıralı *doğru* karşılaştırılan öğe öğe olduğunda iki sıralar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1508,8 +1484,7 @@ int main()
     System::Console::WriteLine("[a b c] == [a b d] is {0}",   
         c1 == c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1519,12 +1494,12 @@ int main()
 [a b c] == [a b d] is False  
 ```  
 
-## <a name="op_gt"></a> İşleç&gt; (kuyruk) (STL/CLR)
-Sıra karşılaştırma büyük.  
+## <a name="op_gt"></a> İşleç&gt; (sıra) (STL/CLR)
+Kuyruk karşılaştırma büyük.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator>(queue<Value, Container>% left,  
@@ -1532,14 +1507,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi döndürür `right` `<` `left`. Test etmek için kullandığınız olup olmadığını `left` sonra sıralanmış `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini döndürür `right` `<` `left`. Test etmek için kullandığınız olup olmadığını *sol* sonra sıralı *doğru* karşılaştırılan öğe öğe olduğunda iki sıralar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1577,8 +1552,7 @@ int main()
     System::Console::WriteLine("[a b d] > [a b c] is {0}",   
         c2 > c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1588,12 +1562,12 @@ int main()
 [a b d] > [a b c] is True  
 ```  
 
-## <a name="op_gteq"></a> İşleç&gt;= (kuyruk) (STL/CLR)
-Sıra büyük veya eşit karşılaştırma.  
+## <a name="op_gteq"></a> İşleç&gt;(sıra) (STL/CLR) =
+Kuyruk büyüktür veya eşittir karşılaştırma.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator>=(queue<Value, Container>% left,  
@@ -1601,14 +1575,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi döndürür `!(left < right)`. Test etmek için kullandığınız olup olmadığını `left` önce sıralı değil `right` iki sıraları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini döndürür `!(left < right)`. Test etmek için kullandığınız olup olmadığını *sol* önce sıralı değil *doğru* karşılaştırılan öğe öğe olduğunda iki sıralar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1646,8 +1620,7 @@ int main()
     System::Console::WriteLine("[a b c] >= [a b d] is {0}",   
         c1 >= c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  

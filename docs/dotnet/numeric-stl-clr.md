@@ -27,15 +27,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f8d470928cb4cbc1625ad439efe75b97f2bb1bd7
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 62fcf1664164baa876699cf6000217d9977d8271
+ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079051"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376027"
 ---
 # <a name="numeric-stlclr"></a>sayısal (STL/CLR)
-Sayısal işlemek için sağlanan algoritmalar gerçekleştirmek kapsayıcı şablon işlevleri tanımlar.  
+Sağlanan sayısal işlemeler için algoritmalar gerçekleştiren kapsayıcı şablon işlevini tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,19 +52,19 @@ Sayısal işlemek için sağlanan algoritmalar gerçekleştirmek kapsayıcı şa
   
 |İşlev|Açıklama|  
 |--------------|-----------------|  
-|[accumulate (STL/CLR)](#accumulate)|Tüm öğelerin toplamı, art arda kısmi toplamlarını bilgi işlem tarafından bazı başlangıç değeri de dahil olmak üzere belirli bir aralık içinde hesaplar veya benzer şekilde toplam dışında belirtilen bir ikili işlem kullanılarak elde edilen art arda kısmi sonuçlar sonucunu hesaplar.|  
+|[accumulate (STL/CLR)](#accumulate)|Art arda gelen kısmi toplamları tarafından bazı başlangıç değerleri de dahil olmak üzere, belirtilen bir aralıktaki tüm öğelerin toplamını hesaplar veya benzer şekilde bir belirtilen ikili işlem toplamı dışında kullanımından elde edilen art arda gelen kısmi sonuçların sonucunu hesaplar.|  
 |[adjacent_difference (STL/CLR)](#adjacent_difference)|Her bir öğe arasındaki art arda gelen farkları ve bir giriş aralığındaki kendi öncellerini hesaplar ve bir hedef aralığında sonuçların çıktısını alır veya fark işleminin başka bir belirtilen bir ikili işlem tarafından değiştirildiği genelleştirilmiş bir yordamın sonucunu hesaplar.|  
-|[inner_product (STL/CLR)](#inner_product)|İki aralıklarının element-wise ürün toplamını hesaplar ve belirtilen ilk değerine ekler veya sum ve ürün ikili işlemleri tarafından belirtilen diğer ikili işlemlerin burada değiştirilir genelleştirilmiş bir yordamın sonuç hesaplar.|  
-|[partial_sum (STL/CLR)](#partial_sum)|SUM'ları ilk öğe ile bir giriş aralığında bir dizi hesaplar `i`th öğesi ve her tür toplamda sonucunu depolar `i`th öğesi bir hedef aralığının veya genel bir yordam sonucunu hesaplar burada toplam işlem Belirtilen başka bir ikili işlem tarafından değiştirilir.|  
+|[inner_product (STL/CLR)](#inner_product)|İki aralığın öğe düzeyinde çarpımının ürün toplamını hesaplar ve belirtilen bir başlangıç değerine ekler veya toplamın ve ürün ikili işlemler başka bir belirtilen ikili işlem tarafından değiştirildiği desene genelleştirilmiş bir yordamının sonucunu hesaplar.|  
+|[partial_sum (STL/CLR)](#partial_sum)|Bir öğeyi kullanarak ilk öğedeki bir giriş aralığında hesaplar `i`öğedeki ve böyle her bir toplamın sonucunu depolar `i`öğedeki bir hedef aralığına veya genelleştirilmiş bir yordamının sonucunu hesaplar burada toplama işleminin başka bir belirtilen ikili işlem tarafından değiştirilir.|  
  
 ## <a name="members"></a>Üyeler
 
-## <a name="accumulate"></a> accumulate (STL/CLR)
-Tüm öğelerin toplamı, art arda kısmi toplamlarını bilgi işlem tarafından bazı başlangıç değeri de dahil olmak üzere belirli bir aralık içinde hesaplar veya benzer şekilde toplam dışında belirtilen bir ikili işlem kullanılarak elde edilen art arda kısmi sonuçlar sonucunu hesaplar.  
+## <a name="accumulate"></a> biriktir (STL/CLR)
+Art arda gelen kısmi toplamları tarafından bazı başlangıç değerleri de dahil olmak üzere, belirtilen bir aralıktaki tüm öğelerin toplamını hesaplar veya benzer şekilde bir belirtilen ikili işlem toplamı dışında kullanımından elde edilen art arda gelen kısmi sonuçların sonucunu hesaplar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<class _InIt, class _Ty> inline  
     _Ty accumulate(_InIt _First, _InIt _Last, _Ty _Val);  
 template<class _InIt, class _Ty, class _Fn2> inline  
@@ -72,14 +72,14 @@ template<class _InIt, class _Ty, class _Fn2> inline
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev C++ Standart Kitaplığı sayısal işlevi ile aynı şekilde davranır `accumulate`. Daha fazla bilgi için bkz: [accumulate](../standard-library/numeric-functions.md#accumulate).  
+ Bu işlev C++ Standart Kitaplığı sayısal işlevi gibi davranır `accumulate`. Daha fazla bilgi için [accumulate](../standard-library/numeric-functions.md#accumulate).  
 
 ## <a name="adjacent_difference"></a> adjacent_difference (STL/CLR)
 Her bir öğe arasındaki art arda gelen farkları ve bir giriş aralığındaki kendi öncellerini hesaplar ve bir hedef aralığında sonuçların çıktısını alır veya fark işleminin başka bir belirtilen bir ikili işlem tarafından değiştirildiği genelleştirilmiş bir yordamın sonucunu hesaplar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt> inline  
     _OutIt adjacent_difference(_InIt _First, _InIt _Last,  
         _OutIt _Dest);  
@@ -89,14 +89,14 @@ template<class _InIt, class _OutIt, class _Fn2> inline
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev C++ Standart Kitaplığı sayısal işlevi ile aynı şekilde davranır `adjacent_difference`. Daha fazla bilgi için bkz: [adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference).  
+ Bu işlev C++ Standart Kitaplığı sayısal işlevi gibi davranır `adjacent_difference`. Daha fazla bilgi için [adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference).  
 
 ## <a name="inner_product"></a> inner_product (STL/CLR)
-İki aralıklarının element-wise ürün toplamını hesaplar ve belirtilen ilk değerine ekler veya sum ve ürün ikili işlemleri tarafından belirtilen diğer ikili işlemlerin burada değiştirilir genelleştirilmiş bir yordamın sonuç hesaplar.  
+İki aralığın öğe düzeyinde çarpımının ürün toplamını hesaplar ve belirtilen bir başlangıç değerine ekler veya toplamın ve ürün ikili işlemler başka bir belirtilen ikili işlem tarafından değiştirildiği desene genelleştirilmiş bir yordamının sonucunu hesaplar.  
   
 ###<a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2, class _Ty> inline  
     _Ty inner_product(_InIt1 _First1, _InIt1 _Last1, _InIt2 _First2,  
         _Ty _Val);  
@@ -107,14 +107,14 @@ template<class _InIt1, class _InIt2, class _Ty, class _Fn21,
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev C++ Standart Kitaplığı sayısal işlevi ile aynı şekilde davranır `inner_product`. Daha fazla bilgi için bkz: [inner_product](../standard-library/numeric-functions.md#inner_product).
+ Bu işlev C++ Standart Kitaplığı sayısal işlevi gibi davranır `inner_product`. Daha fazla bilgi için [inner_product](../standard-library/numeric-functions.md#inner_product).
 
 ## <a name="partial_sum"></a> partial_sum (STL/CLR)
-SUM'ları ilk öğe ile bir giriş aralığında bir dizi hesaplar `i`th öğesi ve her tür toplamda sonucunu depolar `i`th öğesi bir hedef aralığının veya genel bir yordam sonucunu hesaplar burada toplam işlem Belirtilen başka bir ikili işlem tarafından değiştirilir.  
+Bir öğeyi kullanarak ilk öğedeki bir giriş aralığında hesaplar `i`öğedeki ve böyle her bir toplamın sonucunu depolar `i`öğedeki bir hedef aralığına veya genelleştirilmiş bir yordamının sonucunu hesaplar burada toplama işleminin başka bir belirtilen ikili işlem tarafından değiştirilir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt> inline  
     _OutIt partial_sum(_InIt _First, _InIt _Last, _OutIt _Dest);  
 template<class _InIt, class _OutIt, class _Fn2> inline  
@@ -123,5 +123,4 @@ template<class _InIt, class _OutIt, class _Fn2> inline
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev C++ Standart Kitaplığı sayısal işlevi ile aynı şekilde davranır `partial_sum`. Daha fazla bilgi için bkz: [partial_sum](../standard-library/numeric-functions.md#partial_sum).  
-    
+ Bu işlev C++ Standart Kitaplığı sayısal işlevi gibi davranır `partial_sum`. Daha fazla bilgi için [partial_sum](../standard-library/numeric-functions.md#partial_sum).  

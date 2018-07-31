@@ -61,21 +61,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: abfe2a740a51ffe8b2735942bc9387f0b13bb0d2
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: cb2ee3fa52612ee3c6abae7a57046564c10c8afb
+ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079537"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376043"
 ---
 # <a name="priorityqueue-stlclr"></a>priority_queue (STL/CLR)
-Şablon sınıfı bir değişen Sınırlı erişime öğe dizisi sıralı uzunlukta denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `priority_queue` temel alınan bir kapsayıcı bir öncelik sırası olarak yönetmek için.  
+Şablon sınıfı bir değişen sınırlı erişimi öğe dizisi sıralı uzunluktaki denetleyen bir nesneyi tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `priority_queue` temel alınan bir kapsayıcı öncelikli bir kuyruk olarak yönetilecek.  
   
- Aşağıda, açıklamada `GValue` aynı `Value` ikinci ref türü olmadıkça olmasından; bu durumda `Value^`. Benzer şekilde, `GContainer` aynı `Container` ikinci ref türü olmadıkça olmasından; bu durumda `Container^`.  
+ Aşağıdaki açıklamada `GValue` aynı *değer* ikinci bir başvuru türü olmadığı sürece olduğu durumda `Value^`. Benzer şekilde, `GContainer` aynı *kapsayıcı* ikinci bir başvuru türü olmadığı sürece olduğu durumda `Container^`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     ref class priority_queue  
@@ -85,10 +85,10 @@ template<typename Value,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- Değer  
+ *Değer*  
  Denetlenen sıradaki öğenin türü.  
   
- Kapsayıcı  
+ *Kapsayıcı*  
  Temel alınan kapsayıcı türü.  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -104,10 +104,10 @@ template<typename Value,
 |[priority_queue::container_type (STL/CLR)](#container_type)|Temel alınan kapsayıcı türü.|  
 |[priority_queue::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[priority_queue::generic_container (STL/CLR)](#generic_container)|Kapsayıcı bağdaştırıcısı için genel arabirim türü.|  
-|[priority_queue::generic_value (STL/CLR)](#generic_value)|Kapsayıcı bağdaştırıcısı için genel arabirimini öğenin türü.|  
+|[priority_queue::generic_value (STL/CLR)](#generic_value)|Kapsayıcı bağdaştırıcısı için genel arabirimi için bir öğe türü.|  
 |[priority_queue::reference (STL/CLR)](#reference)|Bir öğe için bir başvuru türü.|  
 |[priority_queue::size_type (STL/CLR)](#size_type)|İki öğe arasındaki işaretli mesafenin türü.|  
-|[priority_queue::value_compare (STL/CLR)](#value_compare)|İki öğe için sıralama temsilcisi.|  
+|[priority_queue::value_compare (STL/CLR)](#value_compare)|İki öğe sipariş temsilcisi.|  
 |[priority_queue::value_type (STL/CLR)](#value_type)|Öğenin türü.|  
   
 |Üye İşlevi|Açıklama|  
@@ -120,8 +120,8 @@ template<typename Value,
 |[priority_queue::push (STL/CLR)](#push)|Yeni bir öğe ekler.|  
 |[priority_queue::size (STL/CLR)](#size)|Öğe sayısını sayar.|  
 |[priority_queue::top (STL/CLR)](#top)|En yüksek öncelikli öğenin erişir.|  
-|[priority_queue::to_array (STL/CLR)](#to_array)|Denetimli sırası yeni bir diziye kopyalar.|  
-|[priority_queue::value_comp (STL/CLR)](#value_comp)|İki öğe için sıralama temsilci kopyalar.|  
+|[priority_queue::to_array (STL/CLR)](#to_array)|Denetlenen dizideki, yeni bir diziye kopyalar.|  
+|[priority_queue::value_comp (STL/CLR)](#value_comp)|İki öğe sipariş temsilcisi kopyalar.|  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
@@ -129,21 +129,21 @@ template<typename Value,
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[priority_queue::operator= (STL/CLR)](#op_as)|Denetimli dizisi yerini alır.|  
+|[priority_queue::operator= (STL/CLR)](#op_as)|Denetlenen dizi değiştirir.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   
 |Arabirim|Açıklama|  
 |---------------|-----------------|  
-|<xref:System.ICloneable>|Yinelenen bir nesne.|  
-|IPriorityQueue\<değeri, kapsayıcı >|Genel kapsayıcı bağdaştırıcısı korur.|  
+|<xref:System.ICloneable>|Bir nesne çoğaltın.|  
+|IPriorityQueue\<değeri, kapsayıcı >|Genel bir kapsayıcı bağdaştırıcısı korur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Nesne ayırır ve türündeki temel alınan bir kapsayıcı denetlediği dizisi için depolama boşaltır `Container`, depolar `Value` öğeleri ve isteğe bağlı olarak artar. En yüksek öncelikli öğesiyle (üst öğe) kolayca erişilebilir ve taşınabilir bir yığın olarak sıralı dizisi tutar. Nesne, yeni öğeler dağıtmaya ve yalnızca en yüksek öncelikli öğesi, bir öncelik sırası uygulama pencerelerinin erişimi sınırlandırır.  
+ Nesneyi ayırır ve serbest bırakma türü temel alınan bir kapsayıcının denetlediği dizi için depolama `Container`, depolayan `Value` öğeleri ve istek üzerine büyür. En yüksek öncelikli öğe (üst öğe) kolayca erişilebilir ve taşınabilir bir yığın olarak sıralı sürdürür. Yeni öğeler gönderme ve yalnızca en yüksek öncelikli öğesi, öncelikli bir kuyruk uygulama pencerelerinin, nesne erişimi kısıtlar.  
   
- Nesne denetleyen bir saklı temsilci nesne türü çağırarak dizisi siparişleri [priority_queue::value_compare (STL/CLR)](../dotnet/priority-queue-value-compare-stl-clr.md). Priority_queue yapısı oluştururken saklı temsilci nesnesini belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<(value_type, value_type)`. Üye işlevini çağırarak saklı bu nesneye erişim [priority_queue::value_comp (STL/CLR)](../dotnet/priority-queue-value-comp-stl-clr.md)`()`.  
+ Nesne türünde bir saklı temsilci nesnesi çağırarak denetlediği diziyi sıralar [priority_queue::value_compare (STL/CLR)](../dotnet/priority-queue-value-compare-stl-clr.md). Priority_queue oluştururken saklı temsilci nesnesi belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<(value_type, value_type)`. Üye işlevini çağırarak depolanan bu nesne erişim [priority_queue::value_comp (STL/CLR)](../dotnet/priority-queue-value-comp-stl-clr.md)`()`.  
   
- Böyle bir temsilci nesnenin katı bir zayıf türü değerlerine sıralama zorunlu tuttukları gerekir [priority_queue::value_type (STL/CLR)](../dotnet/priority-queue-value-type-stl-clr.md). Yani, herhangi iki tuşları `X` ve `Y`:  
+ Bu tür bir temsilci nesnesinin katı bir zayıf türünün değerleri üzerinde sıralama dayatır gerekir [priority_queue::value_type (STL/CLR)](../dotnet/priority-queue-value-type-stl-clr.md). Anlamına gelir, için iki anahtar `X` ve `Y`:  
   
  `value_comp()(X, Y)` Her çağrıda aynı Boolean sonucu döndürür.  
   
@@ -151,19 +151,19 @@ template<typename Value,
   
  Varsa `value_comp()(X, Y)` true ise `X` önce sıralanmalıdır söylenir `Y`.  
   
- Varsa `!value_comp()(X, Y) && !value_comp()(Y, X)` true ise `X` ve `Y` eşdeğer sıralama sahip söylenir.  
+ Varsa `!value_comp()(X, Y) && !value_comp()(Y, X)` true ise `X` ve `Y` eşdeğer sıralamaya olduğu söylenir.  
   
- Herhangi bir öğe için `X` , önündeki `Y` denetlenen sıradaki `key_comp()(Y, X)` false olur. (Varsayılan temsilci nesnesi için anahtarları hiçbir zaman değerini azaltın.)  
+ Herhangi bir öğe için `X` metninden önce `Y` denetlenen dizideki `key_comp()(Y, X)` false'tur. (Varsayılan temsilci nesne için anahtarları asla değerini azaltın.)  
   
- En yüksek öncelik bu nedenle, önce başka bir öğenin sıralı olmayan öğelerden birini öğedir.  
+ En yüksek öncelikli öğenin bu nedenle, diğer bir öğesinden önce sıralanır değil öğeleri biridir.  
   
- Temel alınan kapsayıcı bir yığın sıralı öğeleri tutar bu yana:  
+ Bu yana temel alınan kapsayıcı öğeler bir yığın olarak sıralı tutar:  
   
- Kapsayıcı rasgele erişim yineleyiciler desteklemesi gerekir.  
+ Kapsayıcı, rasgele erişim yineleyicileri desteklemesi gerekir.  
   
- Gönderilen daha eşdeğer sıralama ile öğeleri farklı bir sırada Sil'i. (Sıralama tutarlı değil.)  
+ Gönderildi olandan farklı bir sırada eşdeğer sıralamaya sahip öğelerin POP. (Sıralaması sağlam değil.)  
   
- Bu nedenle, temel alınan kapsayıcısı için aday dahil [deque (STL/CLR)](../dotnet/deque-stl-clr.md) ve [vektör (STL/CLR)](../dotnet/vector-stl-clr.md).  
+ Bu nedenle, temel alınan kapsayıcı için aday dahil [deque (STL/CLR)](../dotnet/deque-stl-clr.md) ve [vektör (STL/CLR)](../dotnet/vector-stl-clr.md).  
   
 ## <a name="members"></a>Üyeler
   
@@ -172,16 +172,16 @@ Tüm öğeleri değiştirir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void assign(priority_queue<Value, Container>% right);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Eklemek için kapsayıcı Bağdaştırıcısı'nı tıklatın.  
+ *sağ*  
+ Eklenecek kapsayıcı Bağdaştırıcısı'nı tıklatın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini atar `right.get_container()` temel kapsayıcısı. Sıranın tüm içeriğini değiştirmek için kullanın.  
+ Üye işlevi atar `right.get_container()` temel alınan kapsayıcısı. Sıranın tüm içeriğini değiştirmek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -211,7 +211,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -224,16 +223,16 @@ Bir öğe için sabit bir başvuru türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğe için sabit bir başvuru türü açıklanmaktadır.  
+ Bir öğe için sabit bir başvuru türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cliext_priority_queue_const_reference.cpp   
 // compile with: /clr   
 #include <cliext/queue>   
@@ -255,7 +254,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -267,12 +265,12 @@ Temel alınan kapsayıcı türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Container value_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon parametresi için bir eş anlamlı türüdür `Container`.  
+ Şablon parametresi için bir eşanlamlı türüdür `Container`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -296,7 +294,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -304,16 +301,16 @@ c a b
 ```  
 
 ## <a name="difference_type"></a> priority_queue::difference_type (STL/CLR)
-İki öğe arasındaki imzalı uzaklığı türü.  
+İki öğe arasındaki işaretli mesafenin türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünü büyük olasılıkla negatif öğe sayısını tanımlar.  
+ Büyük olasılıkla negatif öğe sayısını tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -351,7 +348,6 @@ int main()
     System::Console::WriteLine("popping 3 = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -365,12 +361,12 @@ Bir öğe olup olmadığını sınar.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş denetimli dizisi için true değerini döndürür. Eşdeğer olan [priority_queue::size (STL/CLR)](../dotnet/priority-queue-size-stl-clr.md)`() == 0`. Priority_queue boş olup olmadığını sınamak için kullanın.  
+ Üye işlevi boş bir denetlenmiş dizi için true değerini döndürür. Eşdeğerdir [priority_queue::size (STL/CLR)](../dotnet/priority-queue-size-stl-clr.md)`() == 0`. Priority_queue boş olup olmadığını sınamak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -402,7 +398,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -414,17 +409,17 @@ empty() = True
 ```  
 
 ## <a name="generic_container"></a> priority_queue::generic_container (STL/CLR)
-Genel arabirim kapsayıcının türü.  
+Kapsayıcı için genel arabirim türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::IPriorityQueue<Value>  
     generic_container;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu şablon kapsayıcı bağdaştırıcı sınıfı için genel arabirimi türünü tanımlar.  
+ Bu şablon kapsayıcı bağdaştırıcısı sınıfın genel arabirim tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -465,7 +460,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -476,16 +470,16 @@ e d b a c
 ```  
 
 ## <a name="generic_value"></a> priority_queue::generic_value (STL/CLR)
-Kapsayıcı için genel arabirimi ile kullanmak için öğenin türü.  
+Kapsayıcı için genel arabirimi ile kullanmak için bir öğe türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünde bir nesne türünü açıklayan `GValue` kullanmak için saklı öğesi değeri bu şablonu kapsayıcı sınıfı için genel arabirimi açıklar. (`GValue` ya `value_type` veya `value_type^` varsa `value_type` ref türü.)  
+ Türünde bir nesneyi tanımlayan bir tür `GValue` açıklayan yönelik genel arabirimi için bu şablonu kapsayıcı sınıfı ile kullanmak için depolanan öğenin değeri. (`GValue` ya da `value_type` veya `value_type^` varsa `value_type` bir başvuru türüdür.)  
   
 ### <a name="example"></a>Örnek  
   
@@ -523,7 +517,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -537,12 +530,12 @@ Temel alınan kapsayıcı erişir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 container_type get_container();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi temel alınan kapsayıcı döndürür. Kapsayıcı sarmalayıcı tarafından uygulanan kısıtlamalar atlamak için kullanın.  
+ Üye işlevi, temel alınan kapsayıcı döndürür. Kapsayıcı sarmalayıcı tarafından uygulanan kısıtlamalar atlamak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -565,7 +558,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -573,20 +565,20 @@ c a b
 ```  
 
 ## <a name="op_as"></a> priority_queue::operator (STL/CLR) =
-Denetimli dizisi yerini alır.  
+Denetlenen dizi değiştirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 priority_queue <Value, Container>% operator=(priority_queue <Value, Container>% right);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Kopyalamak için kapsayıcı Bağdaştırıcısı'nı tıklatın.  
+ *sağ*  
+ Kopyalanacak kapsayıcı Bağdaştırıcısı'nı tıklatın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işleci kopyaları `right` nesnesine sonra döndürür `*this`. Denetimli sırayla kopyası ile denetlenen sırasını değiştirmek için kullanın `right`.  
+ Üye işleci kopyaları *doğru* ardından nesneye döndürür `*this`. Denetlenen dizi denetlenen dizide bir kopyasını değiştirmek için kullandığınız *doğru*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -615,8 +607,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -625,16 +616,16 @@ c a b
 ```  
 
 ## <a name="pop"></a> priority_queue::POP (STL/CLR)
-Proirity yüksek öğeyi kaldırır.  
+En yüksek proirity öğeyi kaldırır.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void pop();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş olması gerekir denetlenen dizisinin en yüksek öncelikli öğeyi kaldırır. Sıranın arkadaki bir öğe tarafından kısaltmak için kullanın.  
+ Üye işlevi, denetlenen dizinin boş olması gereken en yüksek öncelikli öğeyi kaldırır. Arkasından bir öğe tarafından sıraya kısaltmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -663,7 +654,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -676,7 +666,7 @@ Bir kapsayıcı bağdaştırıcısı nesnesi oluşturur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 priority_queue();  
 priority_queue(priority_queue<Value, Container> right);  
 priority_queue(priority_queue<Value, Container> right);  
@@ -693,69 +683,69 @@ template<typename InIt>
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- devamı  
- Kopyalamak için kapsayıcı.  
+ *devamı*  
+ Kopyalanacak kapsayıcı.  
   
- ilk  
+ *ilk*  
  Eklenecek Aralık başlangıcı.  
   
- Son  
+ *Son*  
  Eklenecek aralık sonu.  
   
- Pred  
- Denetimli sırası için koşulu sıralaması.  
+ *Pred*  
+ Denetlenen dizi için koşul sıralaması.  
   
- sağ  
- Nesne veya eklemek için aralık.  
+ *sağ*  
+ Nesne veya eklenecek aralık.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturucusu:  
+ Oluşturucu:  
   
  `priority_queue();`  
   
- boş bir Sarmalanan kapsayıcı koşulu sıralama varsayılan oluşturur. Bir boş ilk denetlenen dizisi koşulu sıralama varsayılan belirtmek için kullanın.  
+ Varsayılan karşılaştırma sıralama ile boş bir Sarmalanan kapsayıcı oluşturur. Koşul sıralama varsayılan bir boş ilk denetlenen sıra belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `priority_queue(priority_queue<Value, Container>% right);`  
   
- bir kopyası Sarmalanan bir kapsayıcı oluşturur `right.get_container()`, sıralama koşulu ile `right.value_comp()`. Sıra nesnesi tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `right`, aynı sıralama koşulu ile.  
+ kopyası olan bir sarmalanmış bir kapsayıcı oluşturur `right.get_container()`, sıralama koşul ile `right.value_comp()`. Kuyruk nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız *doğru*, aynı sıralama koşul ile.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `priority_queue(priority_queue<Value, Container>^ right);`  
   
- bir kopyası Sarmalanan bir kapsayıcı oluşturur `right->get_container()`, sıralama koşulu ile `right->value_comp()`. Sıra nesnesi tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `*right`, aynı sıralama koşulu ile.  
+ kopyası olan bir sarmalanmış bir kapsayıcı oluşturur `right->get_container()`, sıralama koşul ile `right->value_comp()`. Kuyruk nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız `*right`, aynı sıralama koşul ile.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `explicit priority_queue(value_compare^ pred);`  
   
- boş bir Sarmalanan kapsayıcı sıralama koşulu ile oluşturur `pred`. Bir boş ilk denetlenen sıra ile belirtilen sıralama koşulu belirtmek için kullanın.  
+ Sıralama koşul ile boş bir Sarmalanan kapsayıcı oluşturur *pred*. Bir boş ilk denetlenen sıra ile belirtilen sıralama koşulu belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `priority_queue(value_compare^ pred, container_type cont);`  
   
- boş bir Sarmalanan kapsayıcı sıralama koşulu ile oluşturur `pred`, tüm öğeleri iter `cont` var olan bir kapsayıcıyı ilk denetlenen dizisinden ile belirtilen sıralama koşulu belirtmek için kullanın.  
+ Sıralama koşul ile boş bir Sarmalanan kapsayıcı oluşturur *pred*, ardından tüm öğelerini gönderim *devamı* denetimli dizisinden ilk var olan bir kapsayıcıyı belirtmek için kullanın belirtilen sıralama koşul.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `template<typename InIt> priority_queue(InIt first, InIt last);`  
   
- boş bir Sarmalanan kapsayıcı varsayılan sıralama koşulu ile oluşturur, ardından dizisi iter [`first`, `last`). Belirtilen sıralama koşulu ile denetlenen dizisinden ilk belirtilen eqeuence belirtmek için kullanın.  
+ Varsayılan sıralama koşul ile boş bir Sarmalanan kapsayıcı oluşturur, ardından dizisi iter [`first`, `last`). Belirtilen sıralama koşul ile belirtilen bir eqeuence ilk denetimli dizisinden belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred);`  
   
- boş bir Sarmalanan kapsayıcı sıralama koşulu ile oluşturur `pred`, dizisi iter [`first`, `last`). Belirtilen sıralama koşulu ile denetlenen dizisinden ilk belirtilen seqeuence belirtmek için kullanın.  
+ Sıralama koşul ile boş bir Sarmalanan kapsayıcı oluşturur *pred*, ardından dizisi iter [`first`, `last`). Belirtilen sıralama koşul ile belirtilen bir seqeuence ilk denetimli dizisinden belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred, container_type% cont);`  
   
- boş bir Sarmalanan kapsayıcı sıralama koşulu ile oluşturur `pred`, tüm öğeleri iter `cont` dizisi artı [`first`, `last`). Belirtilen sıralama koşulu ile ilk denetlenen dizisi var olan bir kapsayıcı ve belirtilen seqeuence belirtmek için kullanın.  
+ Sıralama koşul ile boş bir Sarmalanan kapsayıcı oluşturur *pred*, ardından tüm öğelerini gönderim *devamı* dizisi artı [`first`, `last`). Var olan bir kapsayıcı ve belirtilen bir seqeuence ilk denetimli dizisi ile belirtilen sıralama koşulu belirtmek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -839,7 +829,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -861,12 +850,12 @@ Yeni bir öğe ekler.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void push(value_type val);  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini değeri olan bir öğe ekler `val` içine denetimli dizisi ve yığın uzmanlık korumak için denetimli dizisi yeniden sıralar. Sıraya başka bir öğe eklemek için kullanın.  
+ Üye işlevi değere sahip bir öğe ekler `val` içine denetlenen dizideki ve yığın uzmanlık alanı korumak için denetlenen dizideki yeniden sıralar. Kuyruğa başka bir öğe eklemek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -889,7 +878,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -901,12 +889,12 @@ Bir öğe için bir başvuru türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğe için bir başvuru türü açıklanmaktadır.  
+ Öğeye bir başvuru türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -936,7 +924,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -949,12 +936,12 @@ x a b
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli sırası uzunluğunu döndürür. Şu anda denetlenen sıradaki öğelerinin sayısını belirlemek için kullanın. Tüm önem verdiğiniz ise dizisi bkz sıfır olmayan boyutu olup [priority_queue::empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)`()`.  
+ Üye işlevi, denetlenen dizinin uzunluğunu döndürür. Şu anda denetlenen dizideki öğelerin sayısını belirlemek için kullanın. Tümü, önem verdiğiniz ise dizisi bakın, sıfır olmayan boyutu olup [priority_queue::empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)`()`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -987,7 +974,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -998,16 +984,16 @@ size() = 4 after adding 2
 ```  
 
 ## <a name="size_type"></a> priority_queue::size_type (STL/CLR)
-İki öğe arasındaki imzalı uzaklığı türü.  
+İki öğe arasındaki işaretli mesafenin türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünü negatif olmayan öğe sayısını tanımlar.  
+ Bir negatif olmayan öğe sayısını tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1037,7 +1023,6 @@ int main()
     System::Console::WriteLine("size difference = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1046,16 +1031,16 @@ size difference = 2
 ```  
   
 ## <a name="to_array"></a> priority_queue::to_array (STL/CLR)
-Denetimli sırası yeni bir diziye kopyalar.  
+Denetlenen dizideki, yeni bir diziye kopyalar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 cli::array<Value>^ to_array();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi denetimli sırası içeren bir dizi döndürür. Dizi formunda denetimli sırasının bir kopyasını almak için kullanın.  
+ Üye işlevi, denetlenen bir dizi içeren bir dizi döndürür. Dizi formunda denetlenen dizinin bir kopyasını almak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1086,7 +1071,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1099,12 +1083,12 @@ En yüksek öncelikli öğenin erişir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 reference top();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş olmalıdır denetimli dizisi (en yüksek öncelik) üst öğesine başvuru döndürür. Mevcut bildiğiniz durumlarda en yüksek öncelikli öğenin erişmek için kullanın.  
+ Üye işlevi, denetlenen dizinin boş olması gereken üst (en yüksek öncelik) öğesine bir başvuru döndürür. Mevcut bildiğinizde, en yüksek öncelikli öğenin erişmek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1136,7 +1120,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
 
 ## <a name="top_item"></a> priority_queue::top_item (STL/CLR)
@@ -1144,12 +1127,12 @@ En yüksek öncelikli öğenin erişir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 property value_type back_item;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özelliği üst (en yüksek öncelik) öğe boş olmalıdır denetimli dizisi erişir. Okumak veya mevcut bildiğiniz durumlarda en yüksek öncelikli öğenin yazmak için kullanın.  
+ Özelliği üst (en yüksek öncelik) öğe boş olmalıdır denetlenen dizinin erişir. Okumak veya mevcut bildiğinizde, en yüksek öncelikli öğenin yazmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1181,7 +1164,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1191,16 +1173,16 @@ top_item = c
 ```  
 
 ## <a name="value_comp"></a> priority_queue::value_comp (STL/CLR)
-İki öğe için sıralama temsilci kopyalar.  
+İki öğe sipariş temsilcisi kopyalar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 value_compare^ value_comp();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli sırasını belirlemek için kullanılan sıralama temsilci döndürür. İki değerleri karşılaştırmak için kullanın.  
+ Üye işlevi denetlenen diziyi sıralamak için kullanılan sıralama temsilci döndürür. İki değeri karşılaştırmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1235,7 +1217,6 @@ int main()
         vcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1249,16 +1230,16 @@ compare(L'b', L'a') = True
 ```  
 
 ## <a name="value_compare"></a> priority_queue::value_compare (STL/CLR)
-İki değer için sıralama temsilcisi.  
+İki değer sıralama temsilcisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 binary_delegate<value_type, value_type, int> value_compare;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk bağımsız değişken önce ikinci sıralı olup olmadığını belirler temsilci eşanlamlısı türüdür.  
+ Türü, saniyenin ilk bağımsız değişken sıralı olup olmadığını belirleyen bir temsilci eşanlamlıdır.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1293,7 +1274,6 @@ int main()
         vcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1311,12 +1291,12 @@ compare(L'b', L'a') = True
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Value value_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon parametresi için bir eş anlamlı türüdür `Value`.  
+ Şablon parametresi için bir eşanlamlı türüdür *değer*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1343,7 +1323,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  

@@ -69,21 +69,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: b24bf0eab913285559ec9905762e239841c93a00
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 09368f3a43a5ba7a5a1c4247fdbbccdf345b0b21
+ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079739"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376215"
 ---
 # <a name="stack-stlclr"></a>yığın (STL/CLR)
-Şablon sınıfı son giren ilk çıkar özelliğine sahip erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `stack` temel alınan bir kapsayıcı itme aşağı yığın olarak yönetmek için.  
+Şablon sınıfı, son giren ilk çıkar erişimi olan öğelerin değişen uzunluktaki dizisini denetleyen bir nesneyi tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `stack` temel alınan bir kapsayıcı göndererek yığını olarak yönetilecek.  
   
- Aşağıda, açıklamada `GValue` aynı `Value` ikinci ref türü olmadıkça olmasından; bu durumda `Value^`. Benzer şekilde, `GContainer` aynı `Container` ikinci ref türü olmadıkça olmasından; bu durumda `Container^`.  
+ Aşağıdaki açıklamada `GValue` aynı *değer* ikinci bir başvuru türü olmadığı sürece olduğu durumda `Value^`. Benzer şekilde, `GContainer` aynı *kapsayıcı* ikinci bir başvuru türü olmadığı sürece olduğu durumda `Container^`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     ref class stack  
@@ -94,10 +94,10 @@ template<typename Value,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- Değer  
+ *Değer*  
  Denetlenen sıradaki öğenin türü.  
   
- Kapsayıcı  
+ *Kapsayıcı*  
  Temel alınan kapsayıcı türü.  
 
 ## <a name="requirements"></a>Gereksinimler  
@@ -113,7 +113,7 @@ template<typename Value,
 |[stack::container_type (STL/CLR)](#container_type)|Temel alınan kapsayıcı türü.|  
 |[stack::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[stack::generic_container (STL/CLR)](#generic_container)|Kapsayıcı bağdaştırıcısı için genel arabirim türü.|  
-|[stack::generic_value (STL/CLR)](#generic_value)|Kapsayıcı bağdaştırıcısı için genel arabirimini öğenin türü.|  
+|[stack::generic_value (STL/CLR)](#generic_value)|Kapsayıcı bağdaştırıcısı için genel arabirimi için bir öğe türü.|  
 |[stack::reference (STL/CLR)](#reference)|Bir öğe için bir başvuru türü.|  
 |[stack::size_type (STL/CLR)](#size_type)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[stack::value_type (STL/CLR)](#value_type)|Öğenin türü.|  
@@ -127,32 +127,32 @@ template<typename Value,
 |[stack::push (STL/CLR)](#push)|Yeni bir son öğesi ekler.|  
 |[stack::size (STL/CLR)](#size)|Öğe sayısını sayar.|  
 |[stack::stack (STL/CLR)](#stack)|Bir kapsayıcı nesnesi oluşturur.|  
-|[stack::top (STL/CLR)](#top)|Son öğe erişir.|  
-|[stack::to_array (STL/CLR)](#to_array)|Denetimli sırası yeni bir diziye kopyalar.|  
+|[stack::top (STL/CLR)](#top)|Son öğeyi erişir.|  
+|[stack::to_array (STL/CLR)](#to_array)|Denetlenen dizideki, yeni bir diziye kopyalar.|  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|[stack::top_item (STL/CLR)](#top_item)|Son öğe erişir.|  
+|[stack::top_item (STL/CLR)](#top_item)|Son öğeyi erişir.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[stack::operator= (STL/CLR)](#op_as)|Denetimli dizisi yerini alır.|  
-|[operator!= (stack) (STL/CLR)](#op_neq)|Belirler bir `stack` nesne diğerine eşit değil `stack` nesnesi.|  
-|[operator< (stack) (STL/CLR)](#op_lt)|Belirler bir `stack` nesnesi, başka değerinden `stack` nesnesi.|  
-|[operator<= (stack) (STL/CLR)](#op_lteq)|Belirler bir `stack` nesnesidir değerinden küçük veya eşit başka `stack` nesnesi.|  
-|[operator== (stack) (STL/CLR)](#op_eq)|Belirler bir `stack` nesnesidir diğerine eşit `stack` nesnesi.|  
-|[operator> (stack) (STL/CLR)](#op_gt)|Belirler bir `stack` nesnesidir diğerinden daha büyük `stack` nesnesi.|  
-|[operator>= (stack) (STL/CLR)](#op_gteq)|Belirler bir `stack` nesnesidir büyük veya ona eşit diğerine `stack` nesnesi.|  
+|[stack::operator= (STL/CLR)](#op_as)|Denetlenen dizi değiştirir.|  
+|[operator!= (stack) (STL/CLR)](#op_neq)|Belirler bir `stack` nesnesi, diğerine eşit değil `stack` nesne.|  
+|[operator< (stack) (STL/CLR)](#op_lt)|Belirler bir `stack` nesnedir daha az `stack` nesne.|  
+|[operator<= (stack) (STL/CLR)](#op_lteq)|Belirler bir `stack` nesnedir küçüktür veya eşittir diğerine `stack` nesne.|  
+|[operator== (stack) (STL/CLR)](#op_eq)|Belirler bir `stack` nesnedir diğerine eşit `stack` nesne.|  
+|[operator> (stack) (STL/CLR)](#op_gt)|Belirler bir `stack` nesnedir diğerinden daha büyük `stack` nesne.|  
+|[operator>= (stack) (STL/CLR)](#op_gteq)|Belirler bir `stack` nesnedir büyüktür veya eşittir diğerine `stack` nesne.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   
 |Arabirim|Açıklama|  
 |---------------|-----------------|  
-|<xref:System.ICloneable>|Yinelenen bir nesne.|  
-|IStack\<değeri, kapsayıcı >|Genel kapsayıcı bağdaştırıcısı korur.|  
+|<xref:System.ICloneable>|Bir nesne çoğaltın.|  
+|IStack\<değeri, kapsayıcı >|Genel bir kapsayıcı bağdaştırıcısı korur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Nesne ayırır ve türündeki temel alınan bir kapsayıcı denetlediği dizisi için depolama boşaltır `Container`, depolar `Value` öğeleri ve isteğe bağlı olarak artar. Nesne, iletme ve son giren ilk çıkar özelliğine sahip sıra (olarak da bilinen bir LIFO sıra veya yığın) uygulama yalnızca son öğe pencerelerinin erişimi sınırlandırır.  
+ Nesneyi ayırır ve serbest bırakma türü temel alınan bir kapsayıcının denetlediği dizi için depolama *kapsayıcı*, depolayan *değer* öğeleri ve istek üzerine büyür. Nesne, gönderme ve son giren ilk çıkar (olarak da bilinen bir LIFO kuyruk veya yığın) kuyruk uygulama yalnızca son öğe, yığından erişimi kısıtlar.  
  
 ## <a name="members"></a>Üyeler
 
@@ -161,16 +161,16 @@ Tüm öğeleri değiştirir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void assign(stack<Value, Container>% right);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Eklemek için kapsayıcı Bağdaştırıcısı'nı tıklatın.  
+ *sağ*  
+ Eklenecek kapsayıcı Bağdaştırıcısı'nı tıklatın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini atar `right.get_container()` temel kapsayıcısı. Yığın tüm içeriğini değiştirmek için kullanın.  
+ Üye işlevi atar `right.get_container()` temel alınan kapsayıcısı. Yığın tüm içeriğini değiştirmek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -200,7 +200,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -213,12 +212,12 @@ Bir öğe için sabit bir başvuru türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğe için sabit bir başvuru türü açıklanmaktadır.  
+ Bir öğe için sabit bir başvuru türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -244,7 +243,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -256,12 +254,12 @@ Temel alınan kapsayıcı türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Container value_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon parametresi için bir eş anlamlı türüdür `Container`.  
+ Şablon parametresi için bir eşanlamlı türüdür *kapsayıcı*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -284,8 +282,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -293,16 +290,16 @@ a b c
 ```  
 
 ## <a name="difference_type"></a> Stack::difference_type (STL/CLR)
-İki öğe arasındaki imzalı uzaklığı türü.  
+İki öğe arasındaki işaretli mesafenin türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünü büyük olasılıkla negatif öğe sayısını tanımlar.  
+ Büyük olasılıkla negatif öğe sayısını tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -340,7 +337,6 @@ int main()
     System::Console::WriteLine("popping 3 = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -354,12 +350,12 @@ Bir öğe olup olmadığını sınar.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş denetimli dizisi için true değerini döndürür. Eşdeğer olan [stack::size (STL/CLR)](../dotnet/stack-size-stl-clr.md)`() == 0`. Yığın boş olup olmadığını sınamak için kullanın.  
+ Üye işlevi boş bir denetlenmiş dizi için true değerini döndürür. Eşdeğerdir [stack::size (STL/CLR)](../dotnet/stack-size-stl-clr.md)`() == 0`. Yığını boş olup olmadığını sınamak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -391,7 +387,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -407,13 +402,13 @@ Kapsayıcı bağdaştırıcısı için genel arabirim türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::IStack<Value>  
     generic_container;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu şablon kapsayıcı bağdaştırıcı sınıfı için genel arabirimi türünü tanımlar.  
+ Bu şablon kapsayıcı bağdaştırıcısı sınıfın genel arabirim tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -454,7 +449,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -465,16 +459,16 @@ a b c d e
 ```  
   
 ## <a name="generic_value"></a> Stack::generic_value (STL/CLR)
-Kapsayıcı için genel arabirimi ile kullanmak için öğenin türü.  
+Kapsayıcı için genel arabirimi ile kullanmak için bir öğe türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünde bir nesne türünü açıklayan `GValue` kullanmak için saklı öğesi değeri bu şablonu kapsayıcı sınıfı için genel arabirimi açıklar. (`GValue` ya `value_type` veya `value_type^` varsa `value_type` ref türü.)  
+ Türünde bir nesneyi tanımlayan bir tür `GValue` açıklayan yönelik genel arabirimi için bu şablonu kapsayıcı sınıfı ile kullanmak için depolanan öğenin değeri. (`GValue` ya da `value_type` veya `value_type^` varsa `value_type` bir başvuru türüdür.)  
   
 ### <a name="example"></a>Örnek  
   
@@ -512,7 +506,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -526,12 +519,12 @@ Temel alınan kapsayıcı erişir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 container_type^ get_container();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi temel kapsayıcı için bir işleyici döner. Kapsayıcı sarmalayıcı tarafından uygulanan kısıtlamalar atlamak için kullanın.  
+ Üye işlevi, temel alınan kapsayıcısı için bir tanıtıcı döndürür. Kapsayıcı sarmalayıcı tarafından uygulanan kısıtlamalar atlamak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -555,7 +548,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -563,20 +555,20 @@ a b c
 ```  
 
 ## <a name="op_as"></a> Stack::operator (STL/CLR) =
-Denetimli dizisi yerini alır.  
+Denetlenen dizi değiştirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 stack <Value, Container>% operator=(stack <Value, Container>% right);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Kopyalamak için kapsayıcı Bağdaştırıcısı'nı tıklatın.  
+ *sağ*  
+ Kopyalanacak kapsayıcı Bağdaştırıcısı'nı tıklatın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işleci kopyaları `right` nesnesine sonra döndürür `*this`. Denetimli sırayla kopyası ile denetlenen sırasını değiştirmek için kullanın `right`.  
+ Üye işleci kopyaları *doğru* ardından nesneye döndürür `*this`. Denetlenen dizi denetlenen dizide bir kopyasını değiştirmek için kullandığınız *doğru*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -605,8 +597,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -619,12 +610,12 @@ Son öğeyi kaldırır.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void pop();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş olmalıdır denetimli dizisi son öğeyi kaldırır. Arkadaki bir öğe tarafından yığın kısaltmak için kullanın.  
+ Üye işlevi, denetlenen dizinin boş olması gereken son öğeyi kaldırır. Yığın arkasındaki bir öğe tarafından kısaltmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -653,7 +644,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -666,12 +656,12 @@ Yeni bir son öğesi ekler.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void push(value_type val);  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini değeri olan bir öğe ekler `val` denetimli dizisi sonunda. Başka bir öğe için yığın eklemek için kullanın.  
+ Üye işlevi değere sahip bir öğe ekler `val` denetlenen dizinin sonunda. Yığın için başka bir öğe eklemek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -694,7 +684,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -706,12 +695,12 @@ Bir öğe için bir başvuru türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğe için bir başvuru türü açıklanmaktadır.  
+ Öğeye bir başvuru türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -741,7 +730,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -754,12 +742,12 @@ a b x
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli sırası uzunluğunu döndürür. Şu anda denetlenen sıradaki öğelerinin sayısını belirlemek için kullanın. Tüm önem verdiğiniz ise dizisi bkz sıfır olmayan boyutu olup [(STL/CLR) stack::empty](../dotnet/stack-empty-stl-clr.md)`()`.  
+ Üye işlevi, denetlenen dizinin uzunluğunu döndürür. Şu anda denetlenen dizideki öğelerin sayısını belirlemek için kullanın. Tümü, önem verdiğiniz ise dizisi bakın, sıfır olmayan boyutu olup [stack::empty (STL/CLR)](../dotnet/stack-empty-stl-clr.md)`()`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -792,7 +780,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -803,16 +790,16 @@ size() = 4 after adding 2
 ```  
 
 ## <a name="size_type"></a> Stack::size_type (STL/CLR)
-İki öğe arasındaki imzalı uzaklığı türü.  
+İki öğe arasındaki işaretli mesafenin türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünü negatif olmayan öğe sayısını tanımlar.  
+ Bir negatif olmayan öğe sayısını tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -842,7 +829,6 @@ int main()
     System::Console::WriteLine("size difference = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -855,7 +841,7 @@ Bir kapsayıcı bağdaştırıcısı nesnesi oluşturur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 stack();  
 stack(stack<Value, Container>% right);  
 stack(stack<Value, Container>^ right);  
@@ -863,36 +849,36 @@ explicit stack(container_type% wrapped);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Kopyalamak için nesne.  
+ *sağ*  
+ Kopyalanacak nesneye.  
   
- Sarmalanan  
- Kullanılacak Sarmalanan kapsayıcı.  
+ *Sarmalanan*  
+ Kullanılacak Sarmalanan kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturucusu:  
+ Oluşturucu:  
   
  `stack();`  
   
- boş bir Sarmalanan kapsayıcı oluşturur. Boş bir başlangıç denetimli dizisini belirtmek için kullanın.  
+ boş bir Sarmalanan kapsayıcı oluşturur. Boş bir başlangıç denetlenmiş dizi belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `stack(stack<Value, Container>% right);`  
   
- bir kopyası Sarmalanan bir kapsayıcı oluşturur `right.get_container()`. Yığın nesnesi tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `right`.  
+ kopyası olan bir sarmalanmış bir kapsayıcı oluşturur `right.get_container()`. Yığın nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız *doğru*.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `stack(stack<Value, Container>^ right);`  
   
- bir kopyası Sarmalanan bir kapsayıcı oluşturur `right->get_container()`. Yığın nesnesi tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `*right`.  
+ kopyası olan bir sarmalanmış bir kapsayıcı oluşturur `right->get_container()`. Yığın nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız `*right`.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `explicit stack(container_type% wrapped);`  
   
- var olan bir kapsayıcı kullanan `wrapped` Sarmalanan kapsayıcı olarak. Var olan bir kapsayıcı yığınından oluşturmak için kullanın.  
+ var olan bir kapsayıcı kullanan *sarmalanmış* Sarmalanan kapsayıcısı. Var olan bir kapsayıcı yığından oluşturmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -930,8 +916,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -942,16 +927,16 @@ size() = 0
 ```  
 
 ## <a name="to_array"></a> Stack::to_array (STL/CLR)
-Denetimli sırası yeni bir diziye kopyalar.  
+Denetlenen dizideki, yeni bir diziye kopyalar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 cli::array<Value>^ to_array();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi denetimli sırası içeren bir dizi döndürür. Dizi formunda denetimli sırasının bir kopyasını almak için kullanın.  
+ Üye işlevi, denetlenen bir dizi içeren bir dizi döndürür. Dizi formunda denetlenen dizinin bir kopyasını almak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -982,7 +967,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -991,16 +975,16 @@ a b c
 ```  
 
 ## <a name="top"></a> Stack::Top (STL/CLR)
-Son öğe erişir.  
+Son öğeyi erişir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 reference top();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini son öğe boş olmalıdır denetimli dizisi için bir başvuru döndürür. Mevcut bildiğinizde son öğesine erişmek için kullanın.  
+ Üye işlevi, denetlenen dizinin boş olması gereken son öğeye bir başvuru döndürür. Son öğe mevcut bildiğinizde erişmek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1032,7 +1016,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1042,16 +1025,16 @@ top() = c
 ```  
 
 ## <a name="top_item"></a> Stack::top_item (STL/CLR)
-Son öğe erişir.  
+Son öğeyi erişir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 property value_type top_item;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özelliği, son öğe boş olmalıdır denetimli dizisi erişir. Okumak veya mevcut bildiğinizde son öğe yazmak için kullanın.  
+ Özellik, son öğe boş olmalıdır denetlenen dizinin erişir. Okumak veya son öğe mevcut bildiğinizde yazmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1083,7 +1066,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1097,12 +1079,12 @@ top_item = c
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Value value_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon parametresi için bir eş anlamlı türüdür `Value`.  
+ Şablon parametresi için bir eşanlamlı türüdür *değer*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1128,20 +1110,19 @@ int main()
         }   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
 c b a  
 ```  
 
-## <a name="op_neq"></a> operator! = (yığın) (STL/CLR)
+## <a name="op_neq"></a> işleç! = (yığın) (STL/CLR)
 Eşit değildir karşılaştırma yığın.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator!=(stack<Value, Container>% left,  
@@ -1149,14 +1130,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi döndürür `!(left == right)`. Test etmek için kullandığınız olup olmadığını `left` aynı sıralı değil `right` iki yığınları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini döndürür `!(left == right)`. Test etmek için kullandığınız olmadığını *sol* aynı sıralı değil *doğru* iki yığınları karşılaştırılan öğe öğe olduğunda.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1194,8 +1175,7 @@ int main()
     System::Console::WriteLine("[a b c] != [a b d] is {0}",   
         c1 != c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1210,7 +1190,7 @@ Yığın değerinden karşılaştırma.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator<(stack<Value, Container>% left,  
@@ -1218,14 +1198,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleci işlevi döndürür true ise, en düşük konumunun `i` kendisi için `!(right[i] < left[i])` Ayrıca, true olan `left[i] < right[i]`. Aksi takdirde, döndürür `left->` [stack::size (STL/CLR)](../dotnet/stack-size-stl-clr.md) `() <` `right->size()` test etmek için kullandığınız olup olmadığını `left` önce sıralanır `right` iki yığınları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevi döndürür true ise, en düşük konumu için `i` hangi `!(right[i] < left[i])` de true olduğu `left[i] < right[i]`. Aksi halde `left->` [stack::size (STL/CLR)](../dotnet/stack-size-stl-clr.md) `() <` `right->size()` test etmek için kullandığınız olmadığını *sol* önceyse *doğru* iki yığınları karşılaştırılan öğe öğe olduğunda.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1263,8 +1243,7 @@ int main()
     System::Console::WriteLine("[a b c] < [a b d] is {0}",   
         c1 < c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1274,12 +1253,12 @@ int main()
 [a b c] < [a b d] is True  
 ```  
 
-## <a name="op_lteq"></a> İşleç&lt;= (yığın) (STL/CLR)
-Küçük veya buna eşit yığın karşılaştırma.  
+## <a name="op_lteq"></a> İşleç&lt;(yığın) (STL/CLR) =
+Küçüktür veya eşittir yığın karşılaştırma.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator<=(stack<Value, Container>% left,  
@@ -1287,14 +1266,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi döndürür `!(right < left)`. Test etmek için kullandığınız olup olmadığını `left` sonra sıralı değil `right` iki yığınları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini döndürür `!(right < left)`. Test etmek için kullandığınız olmadığını *sol* sonra sıralı değil *doğru* iki yığınları karşılaştırılan öğe öğe olduğunda.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1332,8 +1311,7 @@ int main()
     System::Console::WriteLine("[a b d] <= [a b c] is {0}",   
         c2 <= c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1343,12 +1321,12 @@ int main()
 [a b d] <= [a b c] is False  
 ```  
 
-## <a name="op_eq"></a> operator == (yığın) (STL/CLR)
+## <a name="op_eq"></a> işleç == (yığın) (STL/CLR)
 Yığın eşit karşılaştırması.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator==(stack<Value, Container>% left,  
@@ -1356,14 +1334,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi sıraları denetlediği yalnızca, true değerini döndürür `left` ve `right` aynı uzunlukta olması ve her konum için `i`, `left[i] ==` `right[i]`. Test etmek için kullandığınız olup olmadığını `left` aynı sıralı `right` iki yığınları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini dizileri denetlediği yalnızca, true değerini döndürür *sol* ve *doğru* aynı uzunluğa sahip ve her konum için `i`, `left[i] ==` `right[i]`. Test etmek için kullandığınız olmadığını *sol* aynı sıralı *doğru* iki yığınları karşılaştırılan öğe öğe olduğunda.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1401,8 +1379,7 @@ int main()
     System::Console::WriteLine("[a b c] == [a b d] is {0}",   
         c1 == c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1413,11 +1390,11 @@ int main()
 ```  
   
 ## <a name="op_gt"></a> İşleç&gt; (yığın) (STL/CLR)
-Yığın karşılaştırma büyük.  
+Yığını karşılaştırma büyük.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator>(stack<Value, Container>% left,  
@@ -1425,14 +1402,14 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi döndürür `right` `<` `left`. Test etmek için kullandığınız olup olmadığını `left` sonra sıralanmış `right` iki yığınları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini döndürür `right` `<` `left`. Test etmek için kullandığınız olmadığını *sol* sonra sıralı *doğru* iki yığınları karşılaştırılan öğe öğe olduğunda.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1470,8 +1447,7 @@ int main()
     System::Console::WriteLine("[a b d] > [a b c] is {0}",   
         c2 > c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1481,12 +1457,12 @@ int main()
 [a b d] > [a b c] is True  
 ```  
   
-## <a name="op_gteq"></a> İşleç&gt;= (yığın) (STL/CLR)
-Yığın daha büyük veya eşit karşılaştırma.  
+## <a name="op_gteq"></a> İşleç&gt;(yığın) (STL/CLR) =
+Yığın büyüktür veya eşittir karşılaştırma.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator>=(stack<Value, Container>% left,  
@@ -1494,18 +1470,18 @@ template<typename Value,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- left  
- Karşılaştırılacak sol kapsayıcı.  
+ *Sol*  
+ Karşılaştırılacak sol kapsayıcısı.  
   
- sağ  
- Karşılaştırılacak sağ kapsayıcı.  
+ *sağ*  
+ Karşılaştırılacak doğru kapsayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşleç işlevi döndürür `!(left < right)`. Test etmek için kullandığınız olup olmadığını `left` önce sıralı değil `right` iki yığınları öğe tarafından karşılaştırılan öğe olduğunda.  
+ İşleç işlevini döndürür `!(left < right)`. Test etmek için kullandığınız olmadığını *sol* önce sıralı değil *doğru* iki yığınları karşılaştırılan öğe öğe olduğunda.  
   
 ### <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cliext_stack_operator_ge.cpp   
 // compile with: /clr   
 #include <cliext/stack>   
@@ -1540,7 +1516,6 @@ int main()
         c1 >= c2);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1548,4 +1523,4 @@ int main()
  a b d  
 [a b c] >= [a b c] is True  
 [a b c] >= [a b d] is False  
-```  
+``` 
