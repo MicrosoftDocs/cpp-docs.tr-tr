@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 144e770a90427d12d79a18c346d74140d07c5c5c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 8acd615cb2f05e62019f5076a423ae0f8218815a
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958591"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406012"
 ---
 # <a name="address-of-operator-amp"></a>Address-of işleci: &amp;
 ## <a name="syntax"></a>Sözdizimi  
@@ -37,7 +37,7 @@ ms.locfileid: "38958591"
   
  Address-of işleci yalnızca temel, yapı, sınıf, değişkenleri uygulanabilir veya alt simgeli dizi başvurularına dosya kapsamı düzeyinde, bildirilen değişkenlere veya birleşim türleri. Bu ifadelerde adres işlecini içermeyen sabit bir ifade eklenecek veya adres ifadeden çıkarılabilir.  
   
- Bir işaretçi türü (r), işlenenin türü uygulandığında işlevler veya l-değeri, ifadenin sonucu elde edilir. Örneğin, işlenenin türü ise **char**, işaretçi türüne ifadenin sonucu olan **char**. Uygulanan address-of işlecini, **const** veya **geçici** nesneleri, değerlendiren **const türünde \***  veya **sabit/geçici tür \*** burada **türü** özgün nesnenin türü.  
+ Bir işaretçi türü (r), işlenenin türü uygulandığında işlevler veya l-değeri, ifadenin sonucu elde edilir. Örneğin, işlenenin türü ise **char**, işaretçi türüne ifadenin sonucu olan **char**. Uygulanan address-of işlecini, **const** veya **geçici** nesneleri, değerlendiren `const type *` veya `volatile type *`burada **türü** özgün türü nesne.  
   
  Address-of işlecini bir tam adı için uygulandığında, sonuç bağlıdır *tam ad* statik bir üyeye belirtir. Bu durumda, sonuç üye bildiriminde belirtilen türe işaretçisidir. Üye statik değilse, üye işaretçisi sonucudur *adı* tarafından belirtilen sınıf *tam sınıf adının*. (Bkz [birincil ifadeler](../cpp/primary-expressions.md) hakkında daha fazla bilgi için *tam sınıf adının*.) Aşağıdaki kod parçası, nasıl sonucu, üye statik olup bağlı olarak farklılık gösterir:  
   
@@ -82,7 +82,7 @@ int main() {
   
 ## <a name="output"></a>Çıkış  
   
-```  
+```Output  
 &d equals &rd  
 ```  
   
@@ -109,11 +109,11 @@ int main() {
   
 ## <a name="output"></a>Çıkış  
   
-```  
+```Output  
 25  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md)   

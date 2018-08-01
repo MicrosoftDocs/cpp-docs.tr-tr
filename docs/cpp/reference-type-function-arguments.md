@@ -18,16 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83d78aad4285ad711581dbed1c88ef6b9a8a9b24
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fad8fc85a37aec80d09ed6df9280a78de0540f01
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408607"
 ---
 # <a name="reference-type-function-arguments"></a>Başvuru Türü İşlev Bağımsız Değişkenleri
 İşlevlere büyük nesneler yerine başvuruların geçirilmesi, genellikle daha etkili olur. Bu, derleyicinin nesnenin adresini nesneye erişmek için kullanılabilecek sözdizimini koruyarak geçirmesini sağlar. `Date` yapısını kullanan aşağıdaki örneği göz önünde bulundurun:  
   
-```  
+```cpp 
 // reference_type_function_arguments.cpp  
 struct Date  
 {  
@@ -66,17 +67,17 @@ int main()
 }  
 ```  
   
- Önceki kod başvuruya göre geçirilen bir yapı üyeleri üye seçimi işleci kullanılarak erişilir gösterir (**.**) yerine işaretçi üye seçimi işleci (**->**).  
+ Yukarıdaki kod, başvuru tarafından geçirilen yapının üyelerine üye seçme işleci kullanılarak erişildiğini göstermektedir (**.**) yerine, işaretçi üye seçme işleci (**->**).  
   
- Başvuru türleri olarak geçirilen bağımsız değişken olmayan İşaretçi türlerinin sözdizimi gözlemlemek rağmen İşaretçi türlerinin bir önemli özellik korurlar: olarak bildirilir sürece değiştirilebilir **const**. Önceki kodun amacı `GDate` nesnesini değiştirmek olmadığı için daha uygun bir işlev prototipi şöyle olur:  
+ Başvuru türleri olarak geçirilen bağımsız değişkenler işaretçi olmayan türlerinin söz dizimi gözlemleyin olsa da, işaretçi türlerinin önemli bir karakteristik korurlar: Bunlar olarak bildirilmedikleri sürece değiştirilebilirler **const**. Önceki kodun amacı `GDate` nesnesini değiştirmek olmadığı için daha uygun bir işlev prototipi şöyle olur:  
   
-```  
+```cpp 
 long JulianFromGregorian( const Date& GDate );  
 ```  
   
  Bu prototip, `JulianFromGregorian` işlevinin bağımsız değişkenini değiştirmeyeceğini garanti eder.  
   
- Standart dönüştürme olduğundan olarak bir başvuru türü alıp örneklenmiş herhangi bir işlev onun yerine aynı türde bir nesne kabul edebilir *typename* için * typename ***&**.  
+ Standart dönüştürme olmadığından herhangi bir başvuru türü alınarak prototipli işlev onun yerine aynı türden bir nesne kabul edebilir *typename* için * typename ***&**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Başvurular](../cpp/references-cpp.md)

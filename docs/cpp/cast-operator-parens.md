@@ -15,11 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ef2d370f4344e4a66c70989582da8d7ac7d5186
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8e7f9c723f605a4f66d5e2bdbb4c39f50645b58b
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408514"
 ---
 # <a name="cast-operator-"></a>Atama İşleci: ()
 Bir tür ataması, belirli bir durumda bir nesne türünün açık dönüştürmesine ilişkin bir yöntem sağlar.  
@@ -27,19 +28,17 @@ Bir tür ataması, belirli bir durumda bir nesne türünün açık dönüştürm
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      unary-expression  
-( type-name ) cast-expression  
+unary-expression ( type-name ) cast-expression  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tek terimli ifadesi bir cast ifadesi olarak kabul edilir.  
+ Herhangi bir tekli ifade atama ifadesi olarak kabul edilir.  
   
- Derleyici değerlendirir *cast ifadesi* türü olarak *türü adı* bir cast türünü yapıldıktan sonra. Atamalar, herhangi bir skaler türdeki nesneleri başka bir skaler türe veya skaler türden dönüştürmek için kullanılabilir. Açık tür atamaları örtük dönüşümler etkilerini belirlemek aynı kurallar tarafından kısıtlanmıştır. Gerçek boyutlar veya belirli türlerin gösterimi, atamalara ilişkin ek kısıtlamalara neden olabilir.  
+ Derleyici işler *atama ifadesini* türü olarak *tür adı* bir tür ataması yapıldıktan sonra. Atamalar, herhangi bir skaler türdeki nesneleri başka bir skaler türe veya skaler türden dönüştürmek için kullanılabilir. Açık tür atamaları, örtük dönüştürmelerin etkilerini belirleyen aynı kuralları tarafından kısıtlanmıştır. Gerçek boyutlar veya belirli türlerin gösterimi, atamalara ilişkin ek kısıtlamalara neden olabilir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // expre_CastOperator.cpp  
 // compile with: /EHsc  
 // Demonstrate cast operator  
@@ -59,7 +58,7 @@ int main()
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // expre_CastOperator2.cpp  
 // The following sample shows how to define and use a cast operator.   
 #include <string.h>  
@@ -127,9 +126,9 @@ Note that the cast changed the raw internal string
 Raw Bytes after cast:   Exciting  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Açık tür dönüştürme işleci:)](../cpp/explicit-type-conversion-operator-parens.md)   
  [Atama İşleçleri](../cpp/casting-operators.md)   
  [Atama İşleçleri](../c-language/cast-operators.md)

@@ -24,27 +24,27 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00b9f94d02443163f45b83d64702fe49622597cd
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: 133cbb01ba54ccc8bc0ce0c31b5d7b4436c2488d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238768"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403056"
 ---
 # <a name="extern-c"></a>extern (C++)
 
-**Extern** anahtar sözcüğü o şey adı olduğunu belirtmek için bir genel değişkeni, işlev veya şablon bildirimine uygulanan *dış bağlantı*. Bağlantı ve genel değişkenler kullanılmasına neden önerilmez hakkında bilgi için bkz: [Program ve bağlantı](program-and-linkage-cpp.md).
+**Extern** anahtar sözcüğü, bir şey adı olduğunu belirtmek için bir genel değişken, işlev veya şablon bildirimine uygulanan *dış bağlantısı*. Bağlantı ve genel değişkenler kullanımına neden önerilmez arka plan bilgileri için bkz. [Program ve bağlantı](program-and-linkage-cpp.md).
 
-**Extern** anahtar sözcüğü bağlam bağlı olarak dört anlamları vardır:
+**Extern** anahtar sözcüğü bağlama dört anlamları vardır:
 
-1. const olmayan genel değişken bildiriminde, **extern** değişken veya işlev, başka bir çeviri biriminde tanımlanan belirtir. **Extern** değişkeni tanımlandığı tüm dosyaları dışındaki uygulanmış olması gerekir.
-1. const Değişken bildiriminde değişkeni dış bağlantı olduğunu belirtir. **Extern** tüm dosyalarda tüm bildirimler için uygulanması gerekir. (Genel const değişkenler, iç bağlantı varsayılan olarak vardır.)
-1. **extern "C"** işlevi başka bir yerde tanımlanır ve C dili çağırma kullanır belirtir. Extern "C" değiştiricisi ayrıca bir blok içinde birden çok işlev bildirimleri için uygulanabilir.
-1. bir şablon bildirimindeki şablon zaten başka bir yerde örneği oluşturulmuş olduğunu belirtir. Derleyici, geçerli konumundaki yeni bir tane oluşturmak yerine diğer oluşturmada yeniden kullanabileceğiniz bildiren bir en iyi duruma getirme budur. Bu kullanımı hakkında daha fazla bilgi için **extern**, bkz: [şablonları](templates-cpp.md).
+1. const olmayan genel değişken bildiriminde, **extern** değişken veya işlev, başka bir çeviri biriminde tanımlanan belirtir. **Extern** değişkeni tanımlandığı tüm dosyalarda dışındaki uygulanmalıdır.
+1. const Değişken bildiriminde değişkeni dış bağlantıya sahip olduğunu belirtir. **Extern** tüm dosyalardaki tüm bildirimleri için uygulanması gerekir. (Const genel değişkenler, varsayılan olarak iç bağlantısı vardır.)
+1. **extern "C"** işlevi başka bir yerde tanımlandığını ve C dili çağırma kuralı gerektiğini belirtir. Extern "C" değiştiricisi, bir blok içinde birden çok işlev bildirimleri için de uygulanabilir.
+1. bir şablon bildiriminde şablonu zaten başka bir yerde oluşturulmuş olduğunu belirtir. Geçerli konumda yeni bir tane oluşturmak yerine bir diğer oluşturma yeniden kullanmak, derleyiciye bir iyileştirme budur. Bu kullanımı hakkında daha fazla bilgi için **extern**, bkz: [şablonları](templates-cpp.md).
 
-## <a name="extern-linkage-for-non-const-globals"></a>const olmayan globals dış bağlantı
+## <a name="extern-linkage-for-non-const-globals"></a>const olmayan globals için dış bağlantı
 
-Bağlayıcı gördüğünde **extern** genel bir değişken bildirimi önce başka bir çeviri birim tanımında arar. Genel kapsamlı const olmayan değişkenlerin bildirimleri varsayılan olarak dış; yalnızca geçerli **extern** tanımı sağlamıyorsa bildirimleri için.
+Bağlayıcı gördüğünde **extern** genel bir değişken bildirimi önce başka bir çeviri birimindeki tanımında arar. Genel kapsamda olmayana değişkenlerin bildirimleri varsayılan olarak dıştır; yalnızca geçerli **extern** tanımı sağlamayan bildirimlere.
 
 ```cpp
 //fileA.cpp
@@ -61,9 +61,9 @@ int i = 43; // LNK2005! 'i' already has a definition.
 extern int i = 43; // same error (extern is ignored on definitions)
 ```
 
-## <a name="extern-linkage-for-const-globals"></a>const globals dış bağlantı
+## <a name="extern-linkage-for-const-globals"></a>const globals için dış bağlantı
 
-A **const** genel değişkeni varsayılan olarak iç bağlantı vardır. Dış bağlantı sağlamak için değişkenin istiyorsanız, uygulama **extern** anahtar sözcüğü tüm diğer dosyaların bildirimlerinde konusunda da tanımı:
+A **const** genel değişkeni varsayılan olarak iç bağlantısı vardır. Değişkeninin dış bağlantıya sahip olmasını isterseniz, uygulama **extern** anahtar sözcüğü için tüm diğer dosyaları bildirimlerinde de tanımına:
 
 ```cpp
 //fileA.cpp
@@ -75,13 +75,13 @@ extern const int i;  // declaration only. same as i in FileA
 
 ## <a name="extern-constexpr-linkage"></a>Extern constexpr bağlantı
 
-Değişkeni extern bile işaretlendi, Visual Studio 2017 içinde sürüm 15.3 ve önceki sürümlerde, derleyici constexpr değişken iç bağlantı her zaman verdi. Visual Studio 2017 sürüm 15,5, yeni derleyici anahtar içinde ([/Zc:externConstexpr](../build/reference/zc-externconstexpr.md)) doğru standartları uyumsuz davranışı etkinleştirir. Sonuç olarak bu varsayılan olur.
+Visual Studio 2017 sürüm 15.3 ve önceki sürümleri, değişkeni extern bile işaretlendi, derleyici her zaman bir constexpr değişken iç bağlantı getirdi. Visual Studio 2017 sürüm 15.5, yeni bir derleyici anahtarı ([/ZC: externconstexpr](../build/reference/zc-externconstexpr.md)) doğru standartlara uyan davranışını etkinleştirir. Sonuçta bu varsayılan olur.
 
 ```cpp
 extern constexpr int x = 10; //error LNK2005: "int const x" already defined
 ```
 
-Üstbilgi dosyası değişken bildirilen extern constexpr içeriyorsa, işaretlenmesi gerekiyor **__declspec(selectany)** birlikte, yinelenen bildirimler doğru olması için:
+Bir üstbilgi dosyası bir değişken bildirilen extern constexpr içeriyorsa, bu işaretlenmesi gerekir **__declspec(selectany)** doğru birleştirilmiş, yinelenen bildirimler sahip olmak için:
 
 ```cpp
 extern constexpr __declspec(selectany) int x = 10;
@@ -89,13 +89,13 @@ extern constexpr __declspec(selectany) int x = 10;
 
 ## <a name="extern-c-and-extern-c-function-declarations"></a>extern "C" ve extern "C++" işlev bildirimleri
 
- Bir dizeyle kullanıldığında C++ ' ta **extern** başka bir dilde bağlantı kuralları declarator(s) için kullanıldığını belirtir. C işlevlerine ve verilerine, yalnızca daha önce C bağlantısına sahip oldukları bildirilmişse erişilebilir. Ancak, ayrı olarak derlenmiş bir çeviri biriminde tanımlanmalıdır.
+ Bir dizeyle kullanıldığında C++ ' ta **extern** Bildirimciler için başka bir dilin bağlantı kurallarının kullanıldığını belirtir. C işlevlerine ve verilerine, yalnızca daha önce C bağlantısına sahip oldukları bildirilmişse erişilebilir. Ancak, ayrı olarak derlenmiş bir çeviri biriminde tanımlanmalıdır.
 
- Microsoft C++ dizeleri destekler **"C"** ve **"C++"** içinde *değişmez dize değeri* alan. Tüm standart eklenmesi dosyaları kullan **extern** C++ programlarında kullanılacak çalışma zamanı kitaplığı işlevleri izin vermek için "C" sözdizimi.
+ Microsoft C++ dizelerini destekler **"C"** ve **"C++"** içinde *dize sabit değeri* alan. Tüm standart içerme dosyaları **extern** "C" sözdizimini çalışma zamanı kitaplık işlevlerinin C++ programlarında kullanılacak.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C bağlantı adlarında bildirme gösterilmektedir:
+Aşağıdaki örnek, C bağlantısına sahip adları bildirmek gösterilmektedir:
 
 ```cpp
 // Declare printf with C linkage.
@@ -132,7 +132,7 @@ extern "C" char GetChar(void) {
 extern "C" int errno;
 ```
 
- Kullanıcının kabul etmesi gerekir birden fazla bağlantı belirtimi, bir işlev varsa, C ve C++ bağlantı sahip olarak işlevleri bildirmek için bir hata var. Ayrıca, bir işlev için iki bildirimleri bir programda gerçekleşmesi durumunda — bir bağlantı belirtimi ve biri olmadan biriyle — bağlantı belirtimi bildirimiyle ilk olması gerekir. Tüm gereksiz bildirimleri bağlantı belirtimi zaten işlevlerin ilk bildiriminde belirtilen bağlantı verilir. Örneğin:
+ Kullanıcının kabul etmesi gereken birden fazla bağlama belirtimi, bir işleve sahiptir Bu işlevler, hem C hem de C++ bağlantısına sahip olarak bildirmek için bir hatadır. Ayrıca, bir işlev için iki bildirimi bir programda gerçekleşmesi durumunda — bir bağlama belirtimi ve görüntü olmadan — bildirimi bağlama belirtimi ile ilk olması gerekir. Bağlama belirtimi zaten işlevlerin yedekli tüm bildirimleri ilk belirtiminde belirtilen bağlantısı verilir. Örneğin:
 
 ```cpp
 extern "C" int CFunc1();
@@ -147,10 +147,9 @@ extern "C" int CFunc2(); // Error: not the first declaration of
                          //  specifier.
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
-- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
-- [Program ve bağlantı](program-and-linkage-cpp.md)
-- [extern depolama sınıfı tanımlayıcısı c](../c-language/extern-storage-class-specifier.md) 
-- [Tanımlayıcıları C'de davranışı](../c-language/behavior-of-identifiers.md) 
-- [C'de bağlantı](../c-language/linkage.md)
+## <a name="see-also"></a>Ayrıca bkz.
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
+ [Program ve bağlantı](program-and-linkage-cpp.md)  
+ [extern depolama sınıfı Belirleyicisi c](../c-language/extern-storage-class-specifier.md)  
+ [C'de tanımlayıcıların davranışı](../c-language/behavior-of-identifiers.md)  
+ [C adlarda bağlantı](../c-language/linkage.md)

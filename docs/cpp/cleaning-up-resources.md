@@ -19,27 +19,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 960e19400ae1d00108d57eb85d3df01ebf1dbc33
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1c7c589f5ac6baef0ef4420d997fa6497f4e03d5
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408511"
 ---
 # <a name="cleaning-up-resources"></a>Kaynakları Temizleme
-Sonlandırma işleyicisi yürütülürken, sonlandırma işleyicisi çağrılmadan önce hangi kaynakların gerçekten ayrıldığını bilemeyebilirsiniz. Tüm kaynaklar ayrılmadan önce `__try` deyim bloğunun durdurulması olasıdır, böylece tüm kaynaklar açılmaz.  
+Sonlandırma işleyicisi yürütülürken, sonlandırma işleyicisi çağrılmadan önce hangi kaynakların gerçekten ayrıldığını bilemeyebilirsiniz. Mümkünse, **__try** deyim bloğunun durdurulması tüm kaynaklar ayrılmadan önce böylece tüm kaynaklar açılmaz.  
   
  Bu nedenle, güvende olmak için, sonlandırma işleme temizleme işlemine devam etmeden önce hangi kaynakların açık olduğunu görmek için denetlemelisiniz. Önerilen bir yordam şöyledir:  
   
 1.  Tanıtıcıları NULL olarak başlatın.  
   
-2.  `__try` deyim bloğunda kaynakları ayırın. Kaynak ayırma işlemi yapılırken tanıtıcılar pozitif değerlere ayarlanır.  
+2.  İçinde **__try** deyimi engelleme, kaynakları ayırın. Kaynak ayırma işlemi yapılırken tanıtıcılar pozitif değerlere ayarlanır.  
   
-3.  `__finally` deyim bloğunda, karşılık gelen tanıtıcısı veya bayrak değişkeni sıfır olmayan veya NULL olmayan her kaynağı serbest bırakın.  
+3.  İçinde **__finally** deyim bloğunda, karşılık gelen tanıtıcısı veya bayrak değişkeni sıfır olmayan her kaynağı serbest bırakın veya not NULL.  
   
 ## <a name="example"></a>Örnek  
- Örneğin, aşağıdaki kod, `__try` deyim bloğunda ayrılmış üç dosyayı ve bir bellek bloğunu kapatmak için bir sonlandırma işleyicisi kullanır. Kod, bir kaynağı silmeden önce kaynağın ayrılıp ayrılmadığını kontrol eder.  
+ Örneğin, aşağıdaki kod üç dosyayı ve ayrılmış bir bellek bloğunu kapatmak için bir sonlandırma işleyicisi kullanır **__try** deyim bloğu. Kod, bir kaynağı silmeden önce kaynağın ayrılıp ayrılmadığını kontrol eder.  
   
-```  
+```cpp 
 // exceptions_Cleaning_up_Resources.cpp  
 #include <stdlib.h>  
 #include <malloc.h>  
@@ -77,6 +78,6 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)   
  [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

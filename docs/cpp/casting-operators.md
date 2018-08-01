@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d64a25475ad7ac40f63d29798768f8f57866b3c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 5b2aa683f539e643127f8f71ff536d4c2ca2c9c0
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941631"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407532"
 ---
 # <a name="casting-operators"></a>Atama İşleçleri
 C++ diline özgü birkaç atama işleci vardır. Bu işleçler, eski stil C dili atamalarında bulunan belirsizliğin ve tehlikenin bir kısmının giderilmesini amaçlar. Bu işleçler şunlardır:  
@@ -35,7 +35,7 @@ C++ diline özgü birkaç atama işleci vardır. Bu işleçler, eski stil C dili
   
 -   [safe_cast](../windows/safe-cast-cpp-component-extensions.md) doğrulanabilir MSIL oluşturmak için kullanılır.  
   
- Bu işleçler eski stil atamalarla aynı tehlikeleri arz ettiği için son çare olarak `const_cast` ve `reinterpret_cast` kullanın. Bununla birlikte, eski stil atamaları tamamen değiştirmek için gereklidirler.  
+ Kullanım **const_cast** ve **reinterpret_cast** bu işleçler eski stil atamaları olarak aynı tehlikeleri arz ettiği atamalarla son çare olarak. Bununla birlikte, eski stil atamaları tamamen değiştirmek için gereklidirler.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Atama](../cpp/casting.md)

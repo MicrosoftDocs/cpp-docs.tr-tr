@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50cdb9899582b3e398909e4fcb7ad571025dbcf0
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: ce55a0eb7f6fe3861f3a5ab398e7d186449dc2e9
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941580"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402113"
 ---
 # <a name="hardware-exceptions"></a>Donanım Özel Durumları
 İşletim sistemi tarafından kabul edilen standart özel durumların çoğu, donanım tarafından tanımlanmış özel durumlardır. Windows, birkaç alt düzey yazılım özel durumunu tanır, ancak bunlar genellikle en iyi işletim sistemi tarafından ele alınır.  
@@ -49,6 +49,6 @@ ms.locfileid: "37941580"
   
  Yukarıdaki tabloda listelenen özel durumların çoğunun hata ayıklayıcılar, işletim sistemi veya başka bir düşük düzeydeki kod tarafından işlenmesi amaçlanır. Tamsayı ve kayan nokta hataları dışında, kodunuzun bu hataları işlememesi gerekir. Bu nedenle, özel durumları yoksaymak (0 olarak değerlendirmek) için genellikle özel durum işleme filtresini kullanmanız gerekir. Aksi takdirde, alt düzey mekanizmaların uygun şekilde yanıt vermesini engelleyebilirsiniz. Ancak, bu düşük düzeydeki hataların olası etkisine karşı uygun önlemler uygulayabileceğiniz [sonlandırma işleyicileri yazarak](../cpp/writing-a-termination-handler.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Bir özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)   
  [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

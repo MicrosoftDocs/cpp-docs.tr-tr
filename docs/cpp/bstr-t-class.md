@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15ed9c32a204bdef726a5ace88d811d2eeeb2c53
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: f7cb3d05997cfe3d803f522962ed9e7382269bd3
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027254"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404931"
 ---
 # <a name="bstrt-class"></a>_bstr_t Sınıfı
 **Microsoft'a özgü**  
   
- A `_bstr_t` kapsülleyen nesne [BSTR veri türü](http://msdn.microsoft.com/1b2d7d2c-47af-4389-a6b6-b01b7e915228). Sınıf kaynak ayırmayı ve ayırmayı kaldırma işlev çağrılarıyla yönetir `SysAllocString` ve `SysFreeString` ve diğer `BSTR` API'leri uygun olduğunda. `_bstr_t` Sınıfı aşırı ek yükten kaçınmak için başvuru sayımını kullanır.  
+ A `_bstr_t` kapsülleyen nesne [BSTR veri türü](http://msdn.microsoft.com/1b2d7d2c-47af-4389-a6b6-b01b7e915228). Sınıf kaynak ayırmayı ve ayırmayı kaldırma işlev çağrılarıyla yönetir `SysAllocString` ve `SysFreeString` ve diğer `BSTR` API'leri uygun olduğunda. **_Bstr_t** sınıfı aşırı ek yükten kaçınmak için başvuru sayımını kullanır.  
   
 ### <a name="construction"></a>Oluşturma  
   
@@ -66,5 +66,5 @@ ms.locfileid: "39027254"
   
  **Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleyici COM Desteği Sınıfları](../cpp/compiler-com-support-classes.md)

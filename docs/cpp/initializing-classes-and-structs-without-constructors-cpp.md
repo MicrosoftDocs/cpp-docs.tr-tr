@@ -12,16 +12,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a547dbe4d5668439ea3002249568962a50a0036
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bca7ef417a633f186f2b7ca6f7d92af37e780420
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408691"
 ---
 # <a name="initializing-classes-and-structs-without-constructors-c"></a>Sınıfları ve yapıları oluşturucular olmadan başlatma (C++)
-Her zaman için bir sınıf, nispeten basit olanları özellikle bir oluşturucu tanımlamak gerekli değildir. Kullanıcılar nesnelerin sınıfta veya yapı tek düzen başlatma kullanarak aşağıdaki örnekte gösterildiği gibi başlatabilirsiniz:  
+Her zaman için bir sınıf, görece basit olanları özellikle bir kurucu tanımlamak gerekli değildir. Kullanıcılar bir sınıf veya yapı nesneleri Tekdüzen başlatma kullanarak aşağıdaki örnekte gösterildiği gibi başlatabilirsiniz:  
   
-```  
+```cpp 
 #include "stdafx.h"  
 #include <Windows.h>  
   
@@ -63,11 +64,10 @@ int main()
   
     return 0;  
 }  
-  
 ```  
   
- Sınıfta veya yapı oluşturucu yok olduğunda, liste öğelerini üyeler sınıfta bildirilir sırayla sağladığını unutmayın. Sınıfın bir oluşturucu varsa, parametreleri sırasına göre öğeleri sağlar.  
+ Bir sınıf veya yapı, hiçbir oluşturucu sahip olduğunda liste öğeleri üyeler sınıfta bildirilir sırayla sağladığını unutmayın. Sınıfın Oluşturucusu varsa, parametrelerin sırasına göre öğeleri sağlar.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)   
  [Oluşturucular](../cpp/constructors-cpp.md)

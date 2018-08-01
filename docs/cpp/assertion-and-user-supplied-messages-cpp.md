@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61531ad8471a7409a42fdd2d55b27a82d08ba340
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: e5f4a05c193ec471c0b8dd11d34961a46ead7660
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941034"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406220"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>Onaylama ve Kullanıcının Sağladığı İletiler (C++)
 Yardımcı olan C++ dil destekleyen üç hata işleme mekanizması, uygulamanızı hata ayıklama: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), [static_assert](../cpp/static-assert.md) anahtar sözcüğü ve [assert makrosu, _assert, _ wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. Hata iletileri üç mekanizma vermek ve iki Ayrıca yazılım onaylar test edin. Yazılım onaylama programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Bir derleme zamanı onaylama işlemi başarısızsa, derleyici bir tanılama iletisi ve bir derleme hatası verir. Bir çalışma zamanı onaylama başarısız olursa, işletim sisteminin bir tanılama iletisi yayınlar ve uygulamanızı kapatır.  
@@ -38,7 +38,7 @@ Yardımcı olan C++ dil destekleyen üç hata işleme mekanizması, uygulamanız
   
 -   [Assert makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu yürürlükte olan çalışma zamanında. Bir kullanıcı tarafından belirtilen ifadeyi değerlendirir ve sonucu sıfır ise, sistem bir tanılama iletisi yayınlar ve uygulamanızı kapatır. Diğer birçok makrolar gibi[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) ve _ASSERTE, bu makroyu benzer ancak farklı sistem tanımlı veya kullanıcı tanımlı tanılama iletileri yayınlar.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [#error yönergesi (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)   
  [Assert makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)   
  [_ASSERT, _ASSERTE, _ASSERT_EXPR makroları](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)   

@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74805c7ecd4b4ecef71d8ac1358fd6c2014e27d5
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: e6c3217360f504d2433551d6ad624a378f4403af
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940124"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407978"
 ---
 # <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim
 Bu makalede, bir C++ modülünde tutarlı özel durum işleme gerçekleştirme ve ayrıca bu özel durumların özel durum sınırlarındaki hata kodlarına/kodlarından çevirmek nasıl açıklar.  
@@ -161,7 +161,6 @@ int main ( int argc, char* argv[] )
         cout.copyfmt(state); // restore previous formatting  
     }  
 }  
-  
 ```  
   
 ## <a name="calling-exceptional-code-from-non-exceptional-code"></a>Özel durumlu olmayan kod kodundan olağanüstü durum kodunu çağırma  
@@ -194,7 +193,6 @@ BOOL DiffFiles2(const string& file1, const string& file2)
     }   
     return FALSE;   
 }  
-  
 ```  
   
  Özel durumlardan hata kodlarına dönüştürdüğünüzde, hata kodlarının genellikle bir özel durumun depolayabileceği bilgi zenginliği içermeyen bir olası sorun olduğunu. Bunu ele almak için sağlayabilirsiniz bir **catch** blok harekete geçirilebilirse ve bir hata koduna dönüştürülmeden önce özel durumun ayrıntılarını kaydetmek için günlük işlemi her özel durum türü. Birden fazla işlevin hepsi aynı kümesi kullanıyorsanız bu yaklaşım çok fazla kod tekrarı oluşturabilir **catch** engeller. Kod tekrarından kaçınmanın en iyi yolu, söz konusu bloklar uygulayan bir özel bir yardımcı programda yeniden düzenlemektir tarafından olan **deneyin** ve **catch** engeller ve içindeçağrılanişlevnesnesinikabul**deneyin** blok. Her ortak işlev kodunda, kodu lambda ifadesiyle yardımcı program işlevine geçirin.  
@@ -217,7 +215,6 @@ bool Win32ExceptionBoundary(Func&& f)
     }   
     return false;   
 }  
-  
 ```  
   
  Aşağıdaki örnek işlev nesnesini tanımlayan lambda ifadesinin nasıl yazılacağını gösterir. Bir functor, lambda ifadesi kullanılarak "satır içi" olduğunda, genellikle bu yazılmış bir adlandırılmış işlev nesnesi olarak olmasına kıyasla okuması daha kolay olur.  
@@ -237,11 +234,10 @@ bool DiffFiles3(const string& file1, const string& file2)
         return true;   
     });   
 }  
-  
 ```  
   
  Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)   
  [Nasıl yapılır: Özel Durum Güvenliği Tasarımı](../cpp/how-to-design-for-exception-safety.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd7d7c9ccf70286040d06e7e01400299b806157e
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 07e05e3a1c1b25e87053e15244f3c5fb9db442d9
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940985"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404167"
 ---
 # <a name="nullptr"></a>nullptr
 Bir boş işaretçi sabiti türü belirler `std::nullptr_t`, olan herhangi bir ham işaretçi türüne dönüştürülebilir.  Anahtar sözcüğünü kullanmanız mümkün olmakla birlikte **nullptr** kodunuzu türü kullanıyorsa, tüm üst bilgiler dahil olmadan `std::nullptr_t`, üst bilgisi ekleyerek tanımlamalıdır sonra `<cstddef>`.  
@@ -32,6 +32,6 @@ Bir boş işaretçi sabiti türü belirler `std::nullptr_t`, olan herhangi bir h
 ## <a name="remarks"></a>Açıklamalar  
  NULL veya sıfır kullanmaktan kaçının (`0`) olarak; boş işaretçi sabiti **nullptr** kötüye kullanımı için daha az savunmasızdır ve çoğu durumda daha iyi çalışır.  Örneğin, verilen `func(std::pair<const char *, double>)`, ardından arama `func(std::make_pair(NULL, 3.14))` bir derleyici hatasına neden olur.  NULL genişletilir makrosu `0`, böylece çağrı `std::make_pair(0, 3.14)` döndürür `std::pair<int, double>`, func () olarak ın dönüştürülebilir değil `std::pair<const char *, double>` parametre türü.  Çağırma `func(std::make_pair(nullptr, 3.14))` başarıyla derlenir çünkü `std::make_pair(nullptr, 3.14)` döndürür `std::pair<std::nullptr_t, double>`, dönüştürülebilir olduğu `std::pair<const char *, double>`.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [nullptr](../windows/nullptr-cpp-component-extensions.md)

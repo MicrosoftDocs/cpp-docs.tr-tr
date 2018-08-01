@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb2e870c7418c0d0a6cf3cd82bc0a8acb45466a0
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: ba2935dcec7863e43c0dd6a0a4e55ee5c4f3d28d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941271"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401652"
 ---
 # <a name="bstrtbstrt"></a>_bstr_t::_bstr_t
 **Microsoft'a özgü**  
@@ -81,10 +81,10 @@ _bstr_t(
 |`_bstr_t( char*`  `s2`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.<br /><br /> Bu oluşturucu, ilk çok baytlı Unicode dönüştürme gerçekleştirir.|  
 |`_bstr_t( wchar_t*`  `s3`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.|  
 |`_bstr_t( _variant_t&`  `var`  `)`|Oluşturur bir `_bstr_t` nesnesinden bir `_variant_t` ilk alarak nesne bir `BSTR` kapsüllenmiş değişken nesnesinden nesne.|  
-|`_bstr_t( BSTR`  `bstr` `, bool`  `fCopy`  `)`|Oluşturur bir `_bstr_t` mevcut bir nesne `BSTR` (başlangıcı yerine sonundan bir `wchar_t*` dize). Varsa `fCopy` yanlışsa, sağlanan `BSTR` ile yeni bir kopya yapmadan yeni nesneye iliştirilmiş `SysAllocString`.<br /><br /> Bu oluşturucu şifreleyebilir ve sahipliğini almak için tür kitaplığı üstbilgi sarmalayıcı işlevleri tarafından kullanılır bir `BSTR` bir arabirim yöntemi tarafından döndürülür.|  
+|`_bstr_t( BSTR`  `bstr` `, bool`  `fCopy`  `)`|Oluşturur bir `_bstr_t` mevcut bir nesne `BSTR` (başlangıcı yerine sonundan bir `wchar_t*` dize). Varsa *fCopy* yanlışsa, sağlanan `BSTR` ile yeni bir kopya yapmadan yeni nesneye iliştirilmiş `SysAllocString`.<br /><br /> Bu oluşturucu şifreleyebilir ve sahipliğini almak için tür kitaplığı üstbilgi sarmalayıcı işlevleri tarafından kullanılır bir `BSTR` bir arabirim yöntemi tarafından döndürülür.|  
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_bstr_t sınıfı](../cpp/bstr-t-class.md)   
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

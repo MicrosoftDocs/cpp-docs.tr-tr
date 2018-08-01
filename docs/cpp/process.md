@@ -17,26 +17,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b36ec42447aa076d0623707951f82b7b9c95d563
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: fdad177231c02d2e6f6fad171ae1811ecb9ccc6c
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704912"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407188"
 ---
 # <a name="process"></a>process
 
-Yönetilen uygulama işleminizde, belirli genel değişkenin, statik üye değişkeninin veya işlemde tüm uygulama etki alanlarında paylaşılan statik yerel değişkenin tek bir kopyasının olması gerektiğini belirtir. Bu öncelikle ile derleme yapılırken kullanılmak üzere tasarlanmıştır **/CLR: pure**, Visual Studio 2017 içinde kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor. İle derleme yapılırken **/CLR**, genel ve statik değişkenler işlemi başına varsayılan olarak ve kullanmasına gerek kalmamasını `__declspec(process)`.
+Yönetilen uygulama işleminizde, belirli genel değişkenin, statik üye değişkeninin veya işlemde tüm uygulama etki alanlarında paylaşılan statik yerel değişkenin tek bir kopyasının olması gerektiğini belirtir. Bu temelde ile derleme yaparken kullanılmak üzere tasarlanmıştır **/CLR: pure**, hangi Visual Studio 2017'de kullanım dışı ve Visual Studio 2017'de desteklenmiyor. İle derlerken **/CLR**, genel ve statik değişkenler işlemi başına varsayılan olarak ve kullanmanıza gerek yoktur **__declspec(process)**.
 
-Yalnızca bir genel değişken, bir statik üye değişkeni veya özgün türün statik bir yerel değişkeni `__declspec(process)` ile işaretlenebilir.
+Genel bir değişkenin, statik üye değişkeni veya özgün türün statik bir yerel değişkeni ile işaretlenebilir **__declspec(process)**.
 
-`process` ile derleme yapılırken yalnızca geçerlidir [/CLR](../build/reference/clr-common-language-runtime-compilation.md).
+**işlem** yalnızca ile derlerken geçerlidir [/CLR](../build/reference/clr-common-language-runtime-compilation.md).
 
-Her uygulama etki genel değişkeni kendi kopyasına sahip olmasını istiyorsanız, kullanmak [appdomain](../cpp/appdomain.md).
+Her uygulama etki alanı kendi genel değişken kopyasına sahip olmasını istiyorsanız, kullanın [appdomain](../cpp/appdomain.md).
 
 Bkz: [uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md) daha fazla bilgi için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-
-- [__declspec](../cpp/declspec.md)
-- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+ [__declspec](../cpp/declspec.md)  
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

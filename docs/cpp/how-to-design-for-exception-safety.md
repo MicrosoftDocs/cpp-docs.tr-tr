@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3dd7448d50debc54cde075b8a6879af8b1be62c9
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1a9eaee55c806ea2efc82300cad47cc744c0a491
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940333"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403699"
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel Durum Güvenliği Tasarımı
 Avantajlarından biri özel durum mekanizması birlikte özel durum hakkındaki verileri bu yürütme, catch işleme deyimi deyimden öncelikle özel durum oluşturan doğrudan atlar. İşleyici düzeyleri herhangi bir sayıda çağrı yığınında yukarı olabilir. Throw deyimi try deyimi arasında çağıran işlevler oluşturulan özel durum hakkında bir şey bilmek için gerekli değildir.  Bununla birlikte, kapsamı "beklenmedik bir şekilde dışında" gidebilirsiniz olacak şekilde tasarlanmış olması burada bir özel durum yukarı gelen aşağıda yayar ve bu nedenle kısmen oluşturulan nesnelerin arkasında çıkmadan sızmasına bellek herhangi bir noktasını veya kullanılamaz durumda olmadığından veri yapılarını sahiptirler.  
@@ -86,7 +86,6 @@ private:
 public:  
     SPShapeResourceClass() : m_p(new Circle), m_q(new Triangle) { }  
 };  
-  
 ```  
   
 ### <a name="use-the-raii-idiom-to-manage-resources"></a>Kaynakları yönetmek için RAII deyim kullanma  
@@ -119,6 +118,6 @@ public:
   
 -   Bir yok ediciden kaçış özel durumların izin vermez. C++'ın temel bir axiom yok ediciler, bir özel durum çağrı yığınına yayılmaya hiçbir zaman izin vermelidir ' dir. Bir yok edici bir özel durum büyük olasılıkla işlemi gerçekleştirmesi gerekiyorsa, bu nedenle bir try catch bloğu ve gerekir swallow özel durum. Standart kitaplık bu garanti tanımladığı tüm yok ediciler üzerinde sağlar.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)   
  [Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasında Arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)

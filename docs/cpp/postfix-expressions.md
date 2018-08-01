@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6299249b477b568579063f7ee61060514c3028bd
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: a951c45da8c5c6b672540c03bc1d97b5d54d9338
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948237"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403147"
 ---
 # <a name="postfix-expressions"></a>Sonek İfadeleri
 Sonek ifadeleri, birincil ifadelerden veya içindeki son ek işleçlerinin bir birincil ifadeyi izlediği ifadelerden oluşur. Sonek işleçleri aşağıdaki tabloda listelenmiştir.  
@@ -34,13 +34,12 @@ Sonek ifadeleri, birincil ifadelerden veya içindeki son ek işleçlerinin bir b
 |[İşlev çağırma işleci](../cpp/function-call-operator-parens.md)|**( )**|  
 |[Açık tür dönüştürme işleci](../cpp/explicit-type-conversion-operator-parens.md)|*tür adı* **)**|  
 |[Üye erişimi işleci](../cpp/member-access-operators-dot-and.md)|**.** veya **->**|  
-|[Sonek artırma işleci](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`++`|  
+|[Sonek artırma işleci](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**++**|  
 |[Sonek azaltma işleci](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|  
   
  Aşağıdaki sözdizimi olası sonek ifadeleri açıklar:  
   
 ```  
-  
 primary-expression   
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )  
 ```  
@@ -51,7 +50,7 @@ postfix-expression[expression]postfix-expression(expression-list)simple-type-nam
 func(1)->GetValue()++  
 ```  
   
- Yukarıdaki ifadede, func birincil ifade, func(1) bir işlev sonek ifadesi, func(1)->GetData sınıfın bir üyesini belirten sonek ifadesi, func(1)->GetData() başka bir işlev sonek ifadesi, tüm ifade ise GetData'nın dönüş değerini arttıran bir sonek ifadesidir.  İfadenin bir bütün olarak anlamı, "call" işlevinin bağımsız değişken olarak 1 geçirmesi ve dönüş değeri olarak sınıfa yönelik bir işaretçi almaktır.  Ardından o sınıfta GetValue() çağrılır ve döndürülen değer arttırılır.  
+ Yukarıdaki ifadede, `func` birincil bir ifade `func(1)` bir işlev sonek ifadesi `func(1)->GetData` olan sınıfın üyesi belirten sonek ifadesi `func(1)->GetData()` tüm ise başka bir işlev sonek ifadesi ifade, artan GetData'nın dönüş değerini bir sonek ifadesidir.  İfadenin bir bütün olarak anlamı, "call" işlevinin bağımsız değişken olarak 1 geçirmesi ve dönüş değeri olarak sınıfa yönelik bir işaretçi almaktır.  Ardından çağırın `GetValue()` o sınıfta, ardından döndürülen değer arttırılır.  
   
  Yukarıda listelenen ifadeler atama ifadeleridir, yani bu ifadelerin sonucu bir r-değeri olmalıdır.  
   
@@ -191,7 +190,7 @@ void print( const char *string, const char *terminator )
 }  
 ```  
   
- Önceki program bir işlev bildirir `print`, bu iki bağımsız değişkeni alır. Ancak, ikinci bağımsız değişkeni `terminator`, varsayılan bir değeri yok `"\n"`. İçinde `main`, ilk iki çağrıları `print` varsayılan ikinci bağımsız yazdırılan dizeyi sonlandırmak için yeni bir satır sağlamasına izin verin. Üçüncü çağrı, ikinci bağımsız değişkeni için açık bir değer belirtir. Programdan alınan çıkış  
+ Önceki program bir işlev bildirir `print`, bu iki bağımsız değişkeni alır. Ancak, ikinci bağımsız değişkeni *Sonlandırıcı*, varsayılan bir değeri yok `"\n"`. İçinde `main`, ilk iki çağrıları `print` varsayılan ikinci bağımsız yazdırılan dizeyi sonlandırmak için yeni bir satır sağlamasına izin verin. Üçüncü çağrı, ikinci bağımsız değişkeni için açık bir değer belirtir. Programdan alınan çıkış  
   
 ```Output 
 hello,  
@@ -199,5 +198,5 @@ world!
 good morning, sunshine.  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İfade Türleri](../cpp/types-of-expressions.md)

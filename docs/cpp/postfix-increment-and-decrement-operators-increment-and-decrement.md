@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6021de0e012797b811fa032547f2b95142176cc
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: b1a878fe1c18889c1abfef995786ffcc9a267981
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948124"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404060"
 ---
 # <a name="postfix-increment-and-decrement-operators--and---"></a>Sonek Arttırma ve Azaltma İşleçleri: ++ ve --
 ## <a name="syntax"></a>Sözdizimi  
@@ -46,7 +46,7 @@ postfix-expression --
 i++;  
 ```  
   
- Sonek artırma işlecini (`++`) uygulamanın etkisi, işlenenin değerinin uygun türde bir birim artırılmasıdır. Benzer şekilde, sonek azaltma işlecini etkisi (**--**) işlenenin'ın değerinin uygun türde bir birim azaltılmasıdır.  
+ Sonek artırma işlecini etkisi (**++**) işlenenin'ın değerinin uygun türde bir birim artırılmasıdır. Benzer şekilde, sonek azaltma işlecini etkisi (**--**) işlenenin'ın değerinin uygun türde bir birim azaltılmasıdır.  
   
  Bir sonek artırma dikkat edin önemlidir veya azaltma ifadeyi hesaplar için ifadenin değerini *öncesinde* ilgili işlecin uygulama. Artırma veya azaltma işlemi gerçekleşir *sonra* işlenen değerlendirilir. Bu sorun, yalnızca sonek artırma veya azaltma işlevi daha büyük bir ifadenin bağlamında gerçekleştiğinde ortaya çıkar.  
   
@@ -81,7 +81,7 @@ Compass myCompass;
 for( myCompass = North; myCompass != West; myCompass++ ) // Error  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sonek ifadeleri](../cpp/postfix-expressions.md)   
  [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Sonek Arttırma ve Azaltma İşleçleri](../c-language/c-postfix-increment-and-decrement-operators.md)

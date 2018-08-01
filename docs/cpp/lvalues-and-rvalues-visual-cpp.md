@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed6f9a11b6cf2a0045729acbc79d8e45103064ea
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 68f13848c01f91f9302246a763dd478ee8fccdda
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940192"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403929"
 ---
 # <a name="lvalues-and-rvalues-visual-c"></a>Lvalues ve Rvalues (Visual C++)
 
@@ -78,6 +78,7 @@ int main()
 
 Koşulları *lvalue* ve *rvalue* nesne başvuruları başvurduğunuzda sık sık kullanılır. Başvurular hakkında daha fazla bilgi için bkz. [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md) ve [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
- [Temel kavramlar](../cpp/basic-concepts-cpp.md) [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md) [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md)
+## <a name="see-also"></a>Ayrıca bkz.
+ [Temel Kavramlar](../cpp/basic-concepts-cpp.md)  
+ [Lvalue Başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md)  
+ [Rvalue Başvuru Bildirimcisi: &&](../cpp/rvalue-reference-declarator-amp-amp.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dce98775007360e3fdd4177141f7a550548d3679
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 3f777b1de83b19727bca5e1b498c5380604f6688
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939201"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404547"
 ---
 # <a name="comerrorwcodetohresult"></a>_com_error::WCodeToHRESULT
 **Microsoft'a özgü**  
@@ -30,9 +30,8 @@ ms.locfileid: "37939201"
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      static HRESULT WCodeToHRESULT(  
+```    
+static HRESULT WCodeToHRESULT(  
    WORD wCode   
 ) throw( );  
 ```  
@@ -49,7 +48,7 @@ ms.locfileid: "37939201"
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_com_error::WCode](../cpp/com-error-wcode.md)   
  [_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)   
  [_com_error Sınıfı](../cpp/com-error-class.md)

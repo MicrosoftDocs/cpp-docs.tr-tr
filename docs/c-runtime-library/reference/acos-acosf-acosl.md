@@ -41,16 +41,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 664c3555602dfc16ce811b065e0d38f8fe93e733
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5384d4e97ebb4f3f6152278e916c02bb350090ea
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392776"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401944"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
-Arkkosinüsünü hesaplar.
+Ark kosinüsünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,34 +67,34 @@ long double acos( long double x );   // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
--1 ve 1 (ters kosinüsünü) arkkosinüsünü hesaplanacağı arasında değeri.
+*x*  
+(Ters kosinüsünü) arkkosinüsünü hesaplamak 1 ile -1 arasındaki değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Acos** işlevi sayının arkkosinüsünü döndürür *x* π radyan aralıktaki 0.
+**Acos** işlevi arkkosinüsünü döndürür *x* 0 aralığındaki π radyan olarak verilir.
 
-Varsayılan olarak, varsa *x* -1 veya 1 ' den büyük küçük **acos** bir belirsiz döndürür.
+Varsayılan olarak, *x* -1'den küçük veya 1 ' den büyük olan **acos** bir sonsuz döndürür.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± ∞|**GEÇERSİZ**|**_DOMAIN**|
-|± QNAN, UL|yok|**_DOMAIN**|
-|&#124;x&#124;>1|**GEÇERSİZ**|**_DOMAIN**|
+|± ∞|GEÇERSİZ|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
+|&#124;x&#124;>1|GEÇERSİZ|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **acos** alın ve dönüş **float** ve **uzun** **çift** türleri. Bir C programı **acos** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **acos** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **acos** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
 |-------------|---------------------|----------------------|
 |**ACOS**, **acosf**, **acosl**|\<Math.h >|\<errno.h >|
 
 ## <a name="example"></a>Örnek
 
-Bu program aralık 1 -1 değeri ister. Bu aralığın dışında kalan giriş değerleri üretmek **_domaın** hata iletileri. Geçerli bir değer girilmezse, program arksinüsünü ve bu değeri arkkosinüsünü yazdırır.
+Bu program için 1 -1 aralığında bir değer ister. Bu aralığın dışında kalan giriş değerleri üreten `_DOMAIN` hata iletileri. Geçerli bir değer girilmezse, program arksinüsünü ve bu değer arkkosinüsünü yazdırır.
 
 ```C
 // crt_asincos.c
@@ -144,10 +144,10 @@ Arccosine of 0.000000 = 1.570796
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)  
+[asin, asinf, asinl](asin-asinf-asinl.md)  
+[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)  
+[cos, cosf, cosl](cos-cosf-cosl.md)  
+[_matherr](matherr.md)  
+[sin, sinf, sinl](sin-sinf-sinl.md)  
+[tan, tanf, tanl](tan-tanf-tanl.md)  

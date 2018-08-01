@@ -40,16 +40,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24c269951eacfc2f7a5d40c8fad1e4fb67cc1d2f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 82390f7afe45b48539fb5c33130900ef75cf1967
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392097"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403309"
 ---
 # <a name="accesss-waccesss"></a>_access_s, _waccess_s
 
-Dosya okuma/yazma izinleri belirler. Bu bir sürümüdür [_access, _waccess](access-waccess.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Dosya okuma/yazma izinleri belirler. Bu bir sürümüdür [_erişim, _waccess](access-waccess.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,50 +66,50 @@ errno_t _waccess_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yol*<br/>
+*Yolu*  
 Dosya veya dizin yolu.
 
-*Modu*<br/>
-İzni ayarı.
+*Modu*  
+İzin ayarı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Verilen modu dosya varsa, her işlev 0 döndürür. Adlandırılmış dosya yok veya verilen modunda erişilebilir değilse işlevi bir hata kodu döndürür. Bu durumda, işlevi bir hata kodu kümesinden gibi döndürür ve ayrıca ayarlar **errno** aynı değere.
+Dosyada belirtilen modu varsa her işlev 0 değerini döndürür. Adlandırılmış dosya yok veya verilen modunda erişilebilir değilse işlev bir hata kodu döndürür. Bu durumda, işlev kümesinden gibi bir hata kodu döndürür ve ayrıca ayarlar `errno` aynı değere.
 
 |errno değeri|Koşul|
 |-|-|
-**EACCES**|Erişim reddedildi. Dosya izni ayarı belirtilen erişim izin vermiyor.
-**ENOENT**|Dosya adı veya yolu bulunamadı.
-**EINVAL**|Geçersiz parametre.
+`EACCES`|Erişim reddedildi. Dosya izin ayarının belirtilen erişim izin vermez.
+`ENOENT`|Dosya adı veya yolu bulunamadı.
+`EINVAL`|Geçersiz parametre.
 
-Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dosyaları ile kullanıldığında **_access_s** işlevi belirtilen dosyanın var olduğundan ve olarak erişilebilir olup olmadığını belirleyen değeri tarafından belirtilen *modu*. Dizinleri ile kullanıldığında **_access_s** yalnızca belirtilen dizin var olup olmadığını belirler. Windows 2000 ve sonraki işletim sistemlerinde, tüm dizinler okuma ve yazma erişimi.
+Dosyaları ile kullanıldığında **_access_s** işlevi, belirtilen dosyanın varolduğundan ve olarak erişilebilir olup olmadığını belirleyen değeri tarafından belirtilen *modu*. Dizinler ile kullanıldığında **_access_s** yalnızca belirtilen dizinin var olup olmadığını belirler. Windows 2000 ve sonraki işletim sistemleri, tüm dizinleri okuma ve yazma erişimi.
 
-|mod değeri|Dosya denetimleri için|
+|mod değeri|Dosya için denetimleri|
 |----------------|---------------------|
 |00|Yalnızca varlığı.|
 |02|Yazma izni.|
 |04|Okuma izni.|
 |06|Okuma ve yazma izni.|
 
-Okuma veya yazma izni dosyayı açma olanağı sağlamak yeterli değil. Bir dosyayı başka bir işlem tarafından kilitlenmiş, örneğin, bunu bile erişilebilir olmayabilir **_access_s** 0 döndürür.
+Okuma veya dosyanın yazma izni bir dosyayı açma olanağı sağlamak yeterli değil. Bir dosyayı başka bir işlem tarafından kilitlenmişse, örneğin, bu olsa bile erişilebilir olmayabilir **_access_s** 0 döndürür.
 
-**_waccess_s** bir joker karakter sürümü **_access_s**, burada *yolu* bağımsız değişkeni **_waccess_s** bir joker karakter dizesidir. Aksi takdirde, **_waccess_s** ve **_access_s** aynı şekilde davranır.
+**_waccess_s** geniş karakterli sürümüdür **_access_s**burada *yolu* bağımsız değişkeni **_waccess_s** geniş karakterli bir dizedir. Aksi takdirde, **_waccess_s** ve **_access_s** aynı şekilde davranır.
 
-Bu işlevler kendi parametreleri doğrulayın. Varsa *yolu* olan **NULL** veya *modu* geçerli bir moda belirtmiyor açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve geri dönüp **EINVAL**.
+Bu işlevler kendi parametrelerini doğrular. Varsa *yolu* null veya *modu* geçerli bir moda belirtmiyor açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi `errno` için `EINVAL` ve dönüş `EINVAL`.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_taccess_s**|**_access_s**|**_access_s**|**_waccess_s**|
+|`_taccess_s`|**_access_s**|**_access_s**|**_waccess_s**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_access_s**|\<io.h >|\<errno.h >|
 |**_waccess_s**|\<wchar.h > veya \<io.h >|\<errno.h >|
@@ -160,9 +160,9 @@ File crt_access_s.c does not have write permission.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
-[_access, _waccess](access-waccess.md)<br/>
-[_chmod, _wchmod](chmod-wchmod.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_stat, _wstat işlevleri](stat-functions.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)  
+[_access, _waccess](access-waccess.md)  
+[_chmod, _wchmod](chmod-wchmod.md)  
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)  
+[_open, _wopen](open-wopen.md)  
+[_stat, _wstat işlevleri](stat-functions.md)  

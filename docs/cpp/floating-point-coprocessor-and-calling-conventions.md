@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46cf9c937453894ed37ad434ad94609d0744be24
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 66ccd54c4abb1d8d9761d5ded88beba76bfae043
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410807"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401360"
 ---
 # <a name="floating-point-coprocessor-and-calling-conventions"></a>Kayan Nokta Eşişlemcisi ve Çağırma Kuralları
-Derleme yordamları için kayan noktalı işlemci yazıyorsanız kayan korumalıdır denetim sözcüğü'nın üzerine gelin ve iade ettiğiniz sürece eşişlemcisi yığın temiz bir **float** veya **çift** (işlevinizi içinde ST(0)) döndürmelidir. değer  
+Yordamlar için kayan noktalı işlemci bütünleştirilmiş kod yazıyorsanız, kayan korumalıdır nokta denetim sözcüğünü ve iade ettiğiniz sürece yığınını temizlemeniz bir **float** veya **çift** (işlevinizin St(0) içinde döndürmelidir. değer  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Çağırma Kuralları](../cpp/calling-conventions.md)

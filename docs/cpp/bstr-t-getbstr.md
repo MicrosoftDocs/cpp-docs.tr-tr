@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3041e8a4ece0ddff813b7ef9cd2ccb258e520a82
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 8863f3a6c37693ec28f931c2af4cb0d299788daa
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940488"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402669"
 ---
 # <a name="bstrtgetbstr"></a>_bstr_t::GetBSTR
 **Microsoft'a özgü**  
@@ -31,21 +31,19 @@ ms.locfileid: "37940488"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 BSTR& GetBSTR( );  
-  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Başlangıcı `BSTR` tarafından Sarmalanan `_bstr_t`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `GetBSTR`, `_bstr_t` paylaşan tüm `BSTR` nesnelerini etkiler. Birden fazla `_bstr_t` paylaşabileceğiniz bir `BSTR` kopya oluşturucu kullanılarak ve ve **işleç =**.  
+ **GetBSTR** tüm etkiler `_bstr_t` nesneleri paylaşan bir `BSTR`. Birden fazla `_bstr_t` paylaşabileceğiniz bir `BSTR` kopya oluşturucu kullanılarak ve ve **işleç =**.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [_bstr_t::Assign](../cpp/bstr-t-assign.md) bir örnek için `GetBSTR`.  
+ Bkz: [_bstr_t::Assign](../cpp/bstr-t-assign.md) bir örnek için **GetBSTR**.  
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

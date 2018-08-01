@@ -16,11 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8533012a921cbfb2861bcc7e1c5f2a6de81aadd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9a139efed1fadd8f7b821363b7cb9cdbf97c9a29
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408646"
 ---
 # <a name="comma-operator-"></a>Virgül İşleci: ,
 Bir deyim beklenirken iki deyimin gruplandırılmasını sağlar.  
@@ -28,12 +29,11 @@ Bir deyim beklenirken iki deyimin gruplandırılmasını sağlar.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 expression , expression  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Virgül işleci soldan sağa birleşim vardır. Virgülle ayrılmış iki ifade, soldan sağa doğru değerlendirilir. Sol işlenen her zaman değerlendirilir ve tüm yan etkileri sağ işlenen değerlendirilmeden önce tamamlanır.  
+ Virgül işleci soldan sağa ilişkilendirilebilirlik vardır. Virgülle ayrılmış iki ifade, soldan sağa doğru değerlendirilir. Sol işlenen her zaman değerlendirilir ve tüm yan etkileri sağ işlenen değerlendirilmeden önce tamamlanır.  
   
  Virgüller, işlev bağımsız değişken listeleri gibi bazı bağlamlarda ayırıcılar olarak kullanılabilir. Ayırıcı olarak virgül kullanımını işleç olarak kullanımıyla karıştırmayın; iki kullanım birbirinden tamamen farklıdır.  
   
@@ -41,11 +41,11 @@ expression , expression
   
  *E1* , *e2*  
   
- İfadenin değerini ve türünü türü ve değeri olan *e2*; değerlendirme sonucu *e1* göz ardı edilir. Sağ işlenen l değeriyse, sonuç bir l değeri olur.  
+ Tür ve ifade değeri türü ve değeri olan *e2*; değerlendirme sonucu *e1* atılır. Sağ işlenen l değeriyse, sonuç bir l değeri olur.  
   
  Virgülün normalde bir ayırıcı olarak kullanıldığı yerlerde (örneğin, işlevlerin veya toplama başlatıcılarının gerçek bağımsız değişkenlerinde), virgül işleci ve işlenenleri parantez içine alınmalıdır. Örneğin:  
   
-```  
+```cpp 
 func_one( x, y + 2, z );  
 func_two( (x--, y + 2), z );  
 ```  
@@ -54,7 +54,7 @@ func_two( (x--, y + 2), z );
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // cpp_comma_operator.cpp  
 #include <stdio.h>  
 int main () {  
@@ -72,7 +72,7 @@ int main () {
 30  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Sıralı Değerlendirme İşleci](../c-language/sequential-evaluation-operator.md)

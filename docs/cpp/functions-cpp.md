@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62a46e7d314281bd19773a5c86e70a63f3c93e14
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 25172bc44c21fcb11ec3f7c77224d3214e21c5f2
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940335"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404616"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
@@ -82,7 +82,7 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
 
 İsteğe bağlı bir işlev bildirimi bölümleri şunlardır:
 
-1. **constexpr**, işlev dönüş değeri bir sabit değer olduğunu belirten, derleme zamanında hesaplanabilir.
+1. `constexpr`, işlev dönüş değeri bir sabit değer olduğunu belirten, derleme zamanında hesaplanabilir.
 
     ```cpp
     constexpr float exp(float x, int n)
@@ -114,7 +114,7 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
 
      Daha fazla bilgi için [satır içi işlevleri](../cpp/inline-functions-cpp.md).
 
-1. A **noexcept** işlev bir özel durum olup olmadığını belirten bir ifade. Aşağıdaki örnekte, bir özel durum işlevi, oluşturmaz `is_pod` ifadeyi hesaplar için **true**.
+1. A `noexcept` işlev bir özel durum olup olmadığını belirten bir ifade. Aşağıdaki örnekte, bir özel durum işlevi, oluşturmaz `is_pod` ifadeyi hesaplar için **true**.
 
     ```cpp
     #include <type_traits>
@@ -127,7 +127,7 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
 
 1. (Yalnızca üye işlevleri) Cv işlevi olup olmadığını belirten niteleyicileri, **const** veya **geçici**.
 
-1. (Yalnızca üye işlevleri) **sanal**, **geçersiz kılma**, veya **son**. **Sanal** bir işlev türetilen bir sınıfta geçersiz kılınabilir belirtir. **geçersiz kılma** bir işlev türetilen bir sınıfta sanal işlevi geçersiz kılma anlamına gelir. **Son** türetilmiş sınıf bir işlevi geçersiz kılınamaz birinde daha anlamına gelir. Daha fazla bilgi için [sanal işlevler](../cpp/virtual-functions.md).
+1. (Yalnızca üye işlevleri) **sanal**, `override`, veya `final`. **Sanal** bir işlev türetilen bir sınıfta geçersiz kılınabilir belirtir. `override` türetilen bir sınıfta bir işlev bir sanal işlevi geçersiz kılma anlamına gelir. `final` türetilmiş sınıf bir işlev, tüm daha fazla geçersiz kılınamaz anlamına gelir. Daha fazla bilgi için [sanal işlevler](../cpp/virtual-functions.md).
 
 1. (yalnızca üye işlevleri) **statik** uygulanan üye işlevi işlev sınıfı herhangi bir nesne örnekleri ile ilişkili olmadığı anlamına gelir.
 
@@ -170,7 +170,7 @@ Gövde içinde bildirilen değişkenler, yerel değişkenler veya yerel öğeler
 
 Bir üye işlev olarak bildirebilirsiniz **const** işlevi sınıfındaki tüm veri üyelerinin değerlerini değiştirmek için izin verilmiyor belirtmek için. Bir üye işlev olarak bildirmek **const**, zorlamak için derleyici yardımcı *const doğruluğu*. Birisi yanlışlıkla olarak bildirilen bir işlevi kullanarak bir nesneyi değiştirmeye çalışırsa **const**, bir derleyici hatası oluşturulur. Daha fazla bilgi için [const](const-cpp.md).
 
-Bir işlev olarak bildirmek **constexpr** olduğunda ürettiği değer muhtemelen belirlenebilir derleme zamanında. Constexpr işlevi genellikle normal işlevinden daha hızlı yürütür. Daha fazla bilgi için [constexpr](constexpr-cpp.md).
+Bir işlev olarak bildirmek `constexpr` olduğunda ürettiği değer muhtemelen belirlenebilir derleme zamanında. Constexpr işlevi genellikle normal işlevinden daha hızlı yürütür. Daha fazla bilgi için [constexpr](constexpr-cpp.md).
 
 ## <a name="function-templates"></a>İşlev Şablonları
 
@@ -269,11 +269,11 @@ Zaman **otomatik** kullanılan bitiş dönüş türü ile birlikte, yalnızca bi
 
 Bir işlev gövdesinin içinde bildirilen bir değişken olarak adlandırılan bir *yerel değişken* veya yalnızca bir *yerel*. Statik olmayan yerel öğeler, yalnızca işlev gövdesi içinde görünür olduğundan ve yığında bildirilmemişse işlev kapsam dışına çıkmaz. Yerel bir değişken oluşturun ve değeri döndürür, derleyici genellikle gereksiz kopyalama işlemleri önlemek için dönüş değeri iyileştirme gerçekleştirebilirsiniz. Yerel bir değişken başvuru ile döndürülen, yerel edildikten sonra referans kullanmak üzere her türlü girişim çağıran tarafından oluşacaktır, derleyici bir uyarı verir.
 
-C++'da yerel bir değişken statik olarak bildirilmelidir. Değişken yalnızca işlev gövdesi içinde görünür olur, ancak işlevin tüm örnekleri için değişkenin tek bir kopyası bulunmaktadır. Yerel statik nesneler tarafından belirtilen sonlandırma sırasında yok edilir **atexit**. Programın denetim akışı bildirimi atlamasından dolayı statik nesne oluşturulmazsa, söz konusu nesneyi yok etmek için girişimde bulunulmaz.
+C++'da yerel bir değişken statik olarak bildirilmelidir. Değişken yalnızca işlev gövdesi içinde görünür olur, ancak işlevin tüm örnekleri için değişkenin tek bir kopyası bulunmaktadır. Yerel statik nesneler `atexit` tarafından belirtilen sonlandırma sırasında yok edilir. Programın denetim akışı bildirimi atlamasından dolayı statik nesne oluşturulmazsa, söz konusu nesneyi yok etmek için girişimde bulunulmaz.
 
 ##  <a name="type_deduction"></a> Çıkarım dönüş türleri (C ++ 14) yazın.
 
-C ++ 14'te, kullandığınız **otomatik** sondaki dönüş türünü sağlamak zorunda kalmamanız işlev gövdesi dönüş türünden çıkarsanacak derleyicisinin. Unutmayın **otomatik** her zaman bir dönüş değere göre için çıkarır. Kullanım **otomatik & &** derleyicinin başvuru için.
+C ++ 14'te, kullandığınız **otomatik** sondaki dönüş türünü sağlamak zorunda kalmamanız işlev gövdesi dönüş türünden çıkarsanacak derleyicisinin. Unutmayın **otomatik** her zaman bir dönüş değere göre için çıkarır. Kullanım `auto&&` derleyicinin başvuru için.
 
 Bu örnekte, **otomatik** lhs ve sol toplamı sabit olmayan değer kopya olarak deyimli.
 
@@ -434,11 +434,10 @@ int (*myFunction(char* s))(int);
 
 Yukarıdaki bildirim, yukarıdaki örneği kullanan bildirime eşdeğerdir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
-- [İşlev Aşırı Yüklemesi](../cpp/function-overloading.md)
-- [Değişken Bağımsız Değişken Listeleriyle İşlevler](../cpp/functions-with-variable-argument-lists-cpp.md)
-- [Açıkça Varsayılan Haline Getirilen ve Silinen İşlevler](../cpp/explicitly-defaulted-and-deleted-functions.md)
-- [İşlevlerde Bağımsız Değişkene Bağlı Ad (Koenig) Arama](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)
-- [Varsayılan Bağımsız Değişkenler](../cpp/default-arguments.md)
-- [Satır İçi İşlevler](../cpp/inline-functions-cpp.md)
+## <a name="see-also"></a>Ayrıca bkz.
+ [İşlev Aşırı Yüklemesi](../cpp/function-overloading.md)  
+ [Değişken Bağımsız Değişken Listeleriyle İşlevler](../cpp/functions-with-variable-argument-lists-cpp.md)  
+ [Açıkça Varsayılan Haline Getirilen ve Silinen İşlevler](../cpp/explicitly-defaulted-and-deleted-functions.md)  
+ [İşlevlerde Bağımsız Değişkene Bağlı Ad (Koenig) Arama](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)  
+ [Varsayılan Bağımsız Değişkenler](../cpp/default-arguments.md)  
+ [Satır İçi İşlevler](../cpp/inline-functions-cpp.md)

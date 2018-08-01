@@ -18,21 +18,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e35eda35a7d2474826ce151292121be224955420
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d8b6a56a0a1dce5d07007898dec486d0e3b080c4
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410739"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407695"
 ---
 # <a name="explicit-specialization-of-function-templates"></a>İşlev Şablonlarının Açık Alt Uzmanlaşması
-İşlev şablonu ile bu tür için bir açık alt uzmanlaşması (geçersiz kılma) işlevi şablonu sağlayarak belirli bir tür için özel bir davranış tanımlayabilirsiniz. Örneğin:  
+Bir işlev şablonu ile bu tür için işlev şablonunun açık uzmanlığı (geçersiz kılma) sağlayarak, belirli bir tür için özel bir davranış tanımlayabilirsiniz. Örneğin:  
   
 ```cpp
 template<> void MySwap(double a, double b);  
 ```  
   
- Bu bildirim için farklı bir işlevi tanımlamanızı sağlar **çift** değişkenleri. Şablon olmayan işlevler, standart tür dönüşümleri gibi (türünde bir değişken yükseltme gibi **float** için **çift**) uygulanır.  
+ Bu bildirim için farklı bir işlev tanımlamanızı sağlayan **çift** değişkenleri. Gibi şablon olmayan işlevlere, standart tür dönüştürmeleri (türünde bir değişken yükseltme gibi **float** için **çift**) uygulanır.  
   
 ## <a name="example"></a>Örnek  
   
@@ -60,5 +60,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İşlev Şablonları](../cpp/function-templates.md)

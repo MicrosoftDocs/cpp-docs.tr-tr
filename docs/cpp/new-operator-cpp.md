@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b01a7f2ca1af2ef114347d7355fbd1be973b8af
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: ae977f1f5388bd4a88c377ee8629f10130854108
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948261"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402997"
 ---
 # <a name="new-operator-c"></a>new İşleci (C++)
 Bir nesne veya nesneler dizisi için bellek ayırır *tür adı* boş depolamak ve nesneye uygun türde, sıfır olmayan bir işaretçi döndürür.  
@@ -255,7 +255,7 @@ T *TObject =::new TObject;
   
  Kapsam çözümleme işleci (`::`) zorlar genel kullanım **yeni** işleci.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Yeni ve delete işleçleri](../cpp/new-and-delete-operators.md)

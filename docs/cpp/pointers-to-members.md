@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cc84a0190430caea9592bf4eb8e47ad5bc1f6ce
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 7c610d7f72c76e8c761de0cb01c42c8d6006e4b7
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948204"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407786"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri
 İşaretçi bildirimleri, özel durumlar bildirimlerdir üye işaretçileri.  Aşağıdaki dizi kullanılarak bildirilirler:  
@@ -79,7 +79,7 @@ int main()
 }  
 ```  
   
- Önceki örnekte `pwCaption` sınıf herhangi bir üyenin bir işaretçisidir `Window` türü olan **char\***. Türünü `pwCaption` olduğu `char * Window::* `. Sonraki kod parçasını işaretçileri bildirir `SetCaption` ve `GetCaption` üye işlevleri.  
+ Önceki örnekte `pwCaption` sınıf herhangi bir üyenin bir işaretçisidir `Window` türü olan `char*`. Türünü `pwCaption` olduğu `char * Window::* `. Sonraki kod parçasını işaretçileri bildirir `SetCaption` ve `GetCaption` üye işlevleri.  
   
 ```cpp 
 const char * (Window::*pfnwGC)() = &Window::GetCaption;  
@@ -103,7 +103,7 @@ strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
   
  Arasındaki fark **.\***  ve **-> \*** is işleçlerini (işaretçi-üye işleçleri) **.\***  seçen üyeleri bir nesne veya nesne başvurusu göz önünde bulundurulduğunda, while **-> \*** işleci bir işaretçiyle üyeleri seçer. (Bu işleçler hakkında daha fazla bilgi için bkz. [işaretçi-üye işleçli ifadeler](../cpp/pointer-to-member-operators-dot-star-and-star.md).)  
   
- İşaretçi-üye işleçleri üyenin türü sonucudur — bu durumda, **char \*** .  
+ İşaretçi-üye işleçleri üyenin türü sonucudur — bu durumda, `char *`.  
   
  Aşağıdaki kod parçası, üye işlevleri çağırır `GetCaption` ve `SetCaption` üyeleri için işaretçiler kullanma:  
   
@@ -174,6 +174,3 @@ int main()
 //Output: Print function for class Base  
 Print function for class Derived  
 ```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 

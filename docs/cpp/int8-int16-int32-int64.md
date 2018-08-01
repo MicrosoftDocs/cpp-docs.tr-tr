@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 409197ec99a8df9ad1999b20edd1537f10ced085
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c1be48b2e6972ca3a291ab57dbcb1976e6a56d87
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948037"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401386"
 ---
 # <a name="int8-int16-int32-int64"></a>__int8, __int16, __int32, __int64
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -72,7 +72,7 @@ func
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Temel türler](../cpp/fundamental-types-cpp.md)   
  [Veri Türü Aralıkları](../cpp/data-type-ranges.md)

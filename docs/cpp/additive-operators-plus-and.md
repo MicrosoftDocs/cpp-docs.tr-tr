@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89fc0f122f0859e6fc891ddfccd4bc99e7034bfe
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 313e4602c06c1baf090ed7a66c51b308a3f6f586
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948241"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402756"
 ---
 # <a name="additive-operators--and--"></a>Ek İşleçler: + and -
 ## <a name="syntax"></a>Sözdizimi  
@@ -115,11 +115,11 @@ for( int i = 0; i < 10; ++i )
 >  `pIntArray = pIntArray + 1` formunun kodu C++ programlarında nadiren bulunur; arttırma yapmak için şu formlar tercih edilir: `pIntArray++` veya `pIntArray += 1`.  
   
 ## <a name="pointer-subtraction"></a>İşaretçi çıkarması  
- Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifadesi türü işaretli integral sonucunu verir **ptrdiff_t** (standart içerme dosyasında tanımlanan \<stddef.h >).  
+ Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifadesi türü işaretli integral sonucunu verir `ptrdiff_t` (standart içerme dosyasında tanımlanan \<stddef.h >).  
   
  İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Bir işaretçi çıkarma değeri (*n* - *miyim*) dizi öğesinin, burada *n* öğe için veorijinalişaretçitarafındanişaretedilen*miyim* ikinci işleneni integral değeridir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
  [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Ek İşleçleri](../c-language/c-additive-operators.md)

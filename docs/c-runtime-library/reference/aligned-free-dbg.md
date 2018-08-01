@@ -32,16 +32,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88c7eb281ecc7a7175614c5c72c54c7267cf55e8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 23e76c5fc4881f0689bf83ee96acd2a7cce8c948
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393465"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401567"
 ---
 # <a name="alignedfreedbg"></a>_aligned_free_dbg
 
-İle ayrılmış bellek bloğu boşaltır [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) (yalnızca hata ayıklama).
+İle ayrılmış olan bellek bloğunu serbest bırakır [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) (yalnızca hata ayıklama).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,17 +53,17 @@ void _aligned_free_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*memblock* için döndürülen bellek bloğu için bir işaretçi [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) işlevi.
+*memblock* için döndürülen bellek bloğuna işaretçi [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Aligned_free_dbg** işlevidir bir hata ayıklama sürümü [_aligned_free](aligned-free.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_free_dbg** yapılan bir çağrı için sınırlı **_aligned_free**. Her ikisi de **_aligned_free** ve **_aligned_free_dbg** bir bellek bloğu temel yığınındaki serbest ancak **_aligned_free_dbg** hata ayıklama özelliği düzenler: boşaltılmış tutmak olanağı yetersiz bellek koşulları benzetimini yapmak için bağlantılı liste öbek 's bloklarında.
+**_Aligned_free_dbg** işlev, hata ayıklama sürümü [_aligned_free](aligned-free.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_free_dbg** çağrısı azaltılır `_aligned_free`. Her ikisi de `_aligned_free` ve **_aligned_free_dbg** temel yığında bir bellek öbeğini serbest ancak **_aligned_free_dbg** hata ayıklama özelliği karşılar: yığının bağlantılı listesinde için serbest bırakılan tutma imkanıyla engeller yetersiz bellek durumları benzetimini yapar.
 
-**_aligned_free_dbg** ücretsiz işlemi gerçekleştirmeden önce belirtilen tüm dosyaları ve blok konumları üzerinde bir geçerlilik denetimi gerçekleştirir. Uygulama bu bilgileri sağlamak için beklenmiyor. Bir bellek bloğu boşaltıldığında, hata ayıklama yığını Yöneticisi otomatik olarak kullanıcı bölümünün her iki tarafında arabellekleri bütünlüğünü denetler ve üzerine oluştu, hata raporu verir. Varsa **_CRTDBG_DELAY_FREE_MEM_DF** bit alanı [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) bayrağı ayarlanmış, boşaltılmış blok atanan değer ile 0xDD, girilir **_FREE_BLOCK** engelleme türü ve Öbek 's bağlı bellek blokları listesinde tutulur.
+**_aligned_free_dbg** ücretsiz işlemi gerçekleştirmeden önce belirtilen tüm dosyaları ve blok konumları üzerinde bir geçerlilik denetimi gerçekleştirir. Uygulama, bu bilgiyi sağlamak için beklenmiyor. Bir bellek bloğunu serbest bırakılır, hata ayıklama yığını Yöneticisi otomatik olarak kullanıcı bölümünün iki tarafındaki arabelleklerin bütünlüğünü denetler ve üzerine yazma olduysa bir hata raporu yayınlar. _CRTDBG_DELAY_FREE_MEM_DF bit alanı, [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) bayrağı ayarlandığında, serbest bırakılan blok 0xDD değeriyle doldurulur, _FREE_BLOCK bloğu türü atanmış ve bellek blokları yığının bağlantılı listesinde saklanır.
 
-Bellek boşaltma içinde bir hata oluşursa, **errno** bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bellek serbest bırakma hata oluşması durumunda `errno` bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayıklama sürümü yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türlerini ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [hata ayıklama yığınındaki blokları türlerini](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemede çağırma arasındaki farklar hakkında daha fazla bilgi için bkz: [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -71,8 +71,8 @@ Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayı
 |-------------|---------------------|
 |**_aligned_free_dbg**|\<crtdbg.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)  

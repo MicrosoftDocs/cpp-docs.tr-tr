@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 594bc432cb12b63c76172b06ee078d5b0f72de55
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: f28ae7b7cb8bdcf335757c58d5e744974f4c7cad
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948003"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405963"
 ---
 # <a name="final-specifier"></a>final Tanımlayıcısı
 Kullanabileceğiniz **son** türetilen bir sınıfta geçersiz kılınmış sanal işlevler atamak için anahtar sözcüğü. Ayrıca devralınamaz sınıflar aramak için de onu kullanabilirsiniz.  
@@ -29,7 +29,6 @@ Kullanabileceğiniz **son** türetilen bir sınıfta geçersiz kılınmış sana
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 function-declaration final;  
 class class-name final base-classes  
 ```  
@@ -70,6 +69,6 @@ class DerivedClass: public BaseClass // compiler error: BaseClass is
 };  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [override Tanımlayıcısı](../cpp/override-specifier.md)

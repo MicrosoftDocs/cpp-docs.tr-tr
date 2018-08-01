@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b01c2f9ec4fa48cd2f11bd4176110384c1f8d288
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 68cf69cd0c14d56c75a2c67d4369264e7a2ee440
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948010"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406178"
 ---
 # <a name="protected-c"></a>protected (C++)
 ## <a name="syntax"></a>Sözdizimi  
@@ -94,6 +94,6 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sınıf üyelerine erişimi denetleme](member-access-control-cpp.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

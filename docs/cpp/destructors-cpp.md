@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2bbe849f8ec9d47c73b7d909734df600957f3afd
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 8b16230d612ea7304e8bc06a9810838ce3f42ac8
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941791"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405655"
 ---
 # <a name="destructors-c"></a>Yıkıcılar (C++)
 
@@ -156,7 +156,6 @@ B1 dtor
 B3 dtor
 B2 dtor
 B1 dtor
-
 ```
 
 ### <a name="virtual-base-classes"></a>Sanal temel sınıflar

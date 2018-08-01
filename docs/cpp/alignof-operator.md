@@ -22,22 +22,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 061557b4d017254584e8ddc3da0127f02d352720
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6a7ab2eb5f33db2a62e745756971ee29f84c25c8
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408538"
 ---
 # <a name="alignof-operator"></a>__alignof İşleci
-C ++ 11 tanıtır `alignof` uyumu, belirtilen türdeki bayt cinsinden döndürür işleci. En fazla taşınabilirlik için Microsoft'a özgü __alignof işleci yerine alignof işleci kullanmanız gerekir.  
+C ++ 11 tanıtır **alignof** bayt belirtilen türün hizalama döndüren işleci. En fazla taşınabilirlik için Microsoft'a özgü __alignof işleci yerine alignof işleci kullanmanız gerekir.  
   
- **Microsoft özel**  
+ **Microsoft'a özgü**  
   
- Türünde bir değer döndürür **size_t** diğer bir deyişle hizalama gereksinim türü.  
+ Türünde bir değer döndürür `size_t` hizalama gereksinimi olan türü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
   __alignof( type )
 ```  
   
@@ -54,26 +55,26 @@ C ++ 11 tanıtır `alignof` uyumu, belirtilen türdeki bayt cinsinden döndürü
 |**__alignof (çift)**|8|  
 |**__alignof (char\* )**|4|  
   
- `__alignof` Değerdir değeri ile aynı `sizeof` temel türleri için. , Ancak bu örnek göz önünde bulundurun:  
+ **__Alignof** değerdir aynı değeri olarak `sizeof` temel türleri için. , Ancak bu örneği göz önünde bulundurun:  
   
-```  
+```cpp 
 typedef struct { int a; double b; } S;  
 // __alignof(S) == 8  
 ```  
   
- Bu durumda, `__alignof` yapısındaki en büyük öğesinin hizalama gereksinim bir değerdir.  
+ Bu durumda, **__alignof** yapısındaki en büyük öğenin hizalama gereksinimi değerdir.  
   
  Benzer şekilde,  
   
-```  
+```cpp 
 typedef __declspec(align(32)) struct { int a; } S;  
 ```  
   
  `__alignof(S)` eşittir `32`.  
   
- Bir kullanım için `__alignof` kendi bellek ayırma yordamları birine bir parametre olarak olacaktır. Yapısı aşağıdaki ' Örneğin, tanımlı `S`, adlandırılmış bir bellek ayırma yordam çağırabilirsiniz `aligned_malloc` belirli hizalama sınırında bellek ayıramadı.  
+ Bir kullanımı **__alignof** kendi bellek ayırma yordamlarınızın birine bir parametre olarak olacaktır. Yapı aşağıdaki ' gibi tanımlı `S`, adlı bir bellek ayırma yordam çağırabilir `aligned_malloc` belirli hizalama sınırındaki bellek ayrılamadı.  
   
-```  
+```cpp 
 typedef __declspec(align(32)) struct { int a; double b; } S;  
 int n = 50; // array size  
 S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));  
@@ -91,12 +92,12 @@ S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
   
 -   [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md) (x64 belirli)  
   
- Hizalama x86 hem x64 ilişkin kodda farklar hakkında daha fazla bilgi için bkz:  
+ Hizalama x86 ve x64 kodda farklılıklar hakkında daha fazla bilgi için bkz:  
   
 -   [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

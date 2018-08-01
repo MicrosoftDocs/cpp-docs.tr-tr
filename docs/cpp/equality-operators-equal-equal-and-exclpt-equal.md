@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eaf0c52cc9811e84fab026e333ee3c0808d4effd
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 073e642b99dea4eb6f77fd1e79731713748f1f61
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948195"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403121"
 ---
 # <a name="equality-operators--and-"></a>Eşitlik İşleçleri: == ve !=
 ## <a name="syntax"></a>Sözdizimi  
@@ -69,7 +69,7 @@ int main() {
   
  Eşitlik işleçleri, aynı türde üye işaretçileri karşılaştırabilirsiniz. Böyle bir Karşılaştırmada işaretçi-üye dönüşümleri gerçekleştirilir. Üye işaretçileri için 0 olarak değerlendirilen sabit bir ifade ayrıca karşılaştırılabilir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
  [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C İlişkisel ve Eşitlik İşleçleri](../c-language/c-relational-and-equality-operators.md)

@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1284e4f6e096ab8021c597b841a8e983673561bd
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 0edf350289d04824dc2e06e4e11144a4f3141770
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948138"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407039"
 ---
 # <a name="range-based-for-statement-c"></a>Range-based for Deyimi (C++)
 `statement` içindeki her öğe için `expression` öğesini tekrar tekrar ve sırayla yürütür.  
@@ -25,7 +25,6 @@ ms.locfileid: "37948138"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 for ( for-range-declaration : expression )  
    statement   
 ```  
@@ -90,7 +89,6 @@ int main()
     cout << endl;  
     cout << "end of vector test" << endl;  
 }  
-  
 ```  
   
  Çıktı bu şekildedir:  
@@ -121,7 +119,7 @@ int main()
   
 -   Diğer her şey için `begin()` ve `end()` bağımsız değişkene bağımlı aramayı kullanır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Otomatik](../cpp/auto-cpp.md)   
  [Yineleme deyimleri](../cpp/iteration-statements-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   

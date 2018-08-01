@@ -18,27 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0771f5e93ba473c9ae1101996e8276bec4cd432a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 55718522bdbf618fb656eedc5c6afd59bfcaca08
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408592"
 ---
 # <a name="badtypeid-exception"></a>bad_typeid Özel Durumu
-`bad_typeid` Özel durum tarafından [typeid işleci](../cpp/typeid-operator.md) zaman işleneni `typeid` NULL işaretçi.  
+**Bad_typeid** tarafından özel durum [typeid işleci](../cpp/typeid-operator.md) zaman için işlenen **TypeID** bir NULL işaretçidir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      catch (bad_typeid)  
+catch (bad_typeid)  
    statement  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `bad_typeid` arabirimi şöyledir:  
+ Arabirimin **bad_typeid** olan:  
   
-```  
+```cpp 
 class bad_typeid : public exception  
 {  
 public:  
@@ -48,9 +48,9 @@ public:
 };  
 ```  
   
- Aşağıdaki örnekte gösterildiği `typeid` atma işleci bir `bad_typeid` özel durum.  
+ Aşağıdaki örnekte gösterildiği **TypeID** atma işleci bir **bad_typeid** özel durum.  
   
-```  
+```cpp 
 // expre_bad_typeid.cpp  
 // compile with: /EHsc /GR  
 #include <typeinfo.h>  
@@ -78,10 +78,10 @@ catch (bad_typeid){
   
 ## <a name="output"></a>Çıkış  
   
-```  
+```Output 
 Object is NULL  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma zamanı türü bilgileri](../cpp/run-time-type-information.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

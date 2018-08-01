@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fceb9ce3433a4255619a6c7bac4e952b15ac04d
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 343aa01d9f8e7b3146976fe046c6b2d7473ca1ec
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941294"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407253"
 ---
 # <a name="decltype--c"></a>decltype (C++)
-`decltype` tür belirticisi belirtilen ifade türünü ortaya çıkarır. `decltype` Tür tanımlayıcısı ile birlikte [auto anahtar sözcüğü](../cpp/auto-cpp.md), öncelikli olarak şablon kitaplıklarını yazma geliştiriciler için yararlıdır. Kullanım **otomatik** ve `decltype` türü olan dönüş bir şablon işlevi bildirmek için şablon bağımsız değişkenlerinin türlerine bağlıdır. Ya da kullanmak **otomatik** ve `decltype` başka bir işleve bir çağrı sarılır ve ardından sarılı işlevin dönüş türünü döndüren bir şablon işlevi bildirmek için.  
+**Decltype** tür belirticisi belirtilen ifade türünü ortaya çıkarır. **Decltype** tür tanımlayıcısı ile birlikte [auto anahtar sözcüğü](../cpp/auto-cpp.md), öncelikli olarak şablon kitaplıklarını yazma geliştiriciler için yararlıdır. Kullanım **otomatik** ve **decltype** türü olan dönüş bir şablon işlevi bildirmek için şablon bağımsız değişkenlerinin türlerine bağlıdır. Ya da kullanmak **otomatik** ve **decltype** başka bir işleve bir çağrı sarılır ve ardından sarılı işlevin dönüş türünü döndüren bir şablon işlevi bildirmek için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,7 +45,7 @@ decltype( expression )
  Türünü *ifade* parametresi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `decltype` türü belirticisi, Visual C++ 2010 veya sonraki sürümlerinde desteklenir ve yerel veya yönetilen kod ile kullanılabilir. `decltype(auto)` (c ++ 14) Visual Studio 2015 ve sonraki sürümlerde desteklenir.  
+ **Decltype** türü belirticisi, Visual C++ 2010 veya sonraki sürümlerinde desteklenir ve yerel veya yönetilen kod ile kullanılabilir. `decltype(auto)` (c ++ 14) Visual Studio 2015 ve sonraki sürümlerde desteklenir.  
   
  Derleyici, türünü belirlemek için aşağıdaki kuralları kullanır. *ifade* parametresi.  
   
@@ -55,7 +55,7 @@ decltype( expression )
   
 -   Varsa *ifade* parametresi bir [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(expression)` türü *ifade*. Varsa *ifade* parametresi bir [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(expression)` olduğu bir [lvalue başvuru](../cpp/lvalue-reference-declarator-amp.md) türüne *ifade*.  
   
- Aşağıdaki kod örneği, `decltype` tür belirticisinin bazı kullanımlarını gösterir. İlk olarak, aşağıdaki deyimleri kodladığınızı varsayalım.  
+ Aşağıdaki kod örneğinde bazı kullanımlarını gösterir **decltype** tür tanımlayıcısı. İlk olarak, aşağıdaki deyimleri kodladığınızı varsayalım.  
   
 ```cpp  
 int var;  
@@ -64,7 +64,7 @@ struct A { double x; }
 const A* a = new A();  
 ```  
   
- Daha sonra, aşağıdaki tabloda dört `decltype` deyimi tarafından döndürülen türleri inceleyin.  
+ Ardından, dört tarafından döndürülen türleri inceleyin **decltype** aşağıdaki tabloda deyimleri.  
   
 |Deyim|Tür|Notlar|  
 |---------------|----------|-----------|  
@@ -76,16 +76,16 @@ const A* a = new A();
 ## <a name="decltype-and-auto"></a>Decltype ve Otomatik  
  C ++ 14'te, kullandığınız `decltype(auto)` dönüş türü bir şablon işlevi bildirmek için sondaki dönüş türü olmadan, şablon bağımsız değişkenlerinin türlerine bağlıdır.  
   
- C ++ 11'de kullanabileceğiniz `decltype` tür belirticisini bitiş dönüş türü üzerinde birlikte **otomatik** dönüş türü bir şablon işlevi bildirmek için anahtar sözcüğü, şablon bağımsız değişkenlerinin türlerine bağlıdır. Örneğin, aşağıdaki kod örneğini dikkate alın, burada şablon işlevin dönüş türü şablon bağımsız değişkenlerinin türlerine bağlıdır. Kod örneğinde, *bilinmeyen* yer tutucu gösteren dönüş türü belirtilemez.  
+ C ++ 11'de kullanabileceğiniz **decltype** tür belirticisini bitiş dönüş türü üzerinde birlikte **otomatik** dönüş türü bir şablon işlevi bildirmek için anahtar sözcüğü, kendi şablon türlerine bağlıdır bağımsız değişkenler. Örneğin, aşağıdaki kod örneğini dikkate alın, burada şablon işlevin dönüş türü şablon bağımsız değişkenlerinin türlerine bağlıdır. Kod örneğinde, *bilinmeyen* yer tutucu gösteren dönüş türü belirtilemez.  
   
 ```cpp  
 template<typename T, typename U>  
 UNKNOWN func(T&& t, U&& u){ return t + u; };   
 ```  
   
- `decltype` tür belirticisiyle birlikte, artık geliştiriciler şablon işlevinin döndürdüğü ifadenin türünü elde edebilirler. Kullanım *alternatif işlev bildirim sözdizimi* , daha sonra gösterilecek **otomatik** anahtar sözcüğü ve `decltype` tür belirticisini bildirmek için bir *sonradan belirtilmiş* dönüş türü. Sonradan belirtilmiş dönüş türü, bildirim kodlandığında değil, derlendiğinde belirlenir.  
+ Giriş **decltype** tür belirticisiyle birlikte bir geliştirici şablon işlevinin döndürdüğü ifadenin türünü elde edilir. Kullanım *alternatif işlev bildirim sözdizimi* , daha sonra gösterilecek **otomatik** anahtar sözcüğü ve **decltype** tür belirticisini bildirmek için bir  *sonradan belirtilmiş* dönüş türü. Sonradan belirtilmiş dönüş türü, bildirim kodlandığında değil, derlendiğinde belirlenir.  
   
- Aşağıdaki prototip, alternatif bir işlev bildiriminin sözdizimini göstermektedir. Unutmayın **const** ve **geçici** niteleyicileri ve **throw** [özel durum belirtimi](../cpp/exception-specifications-throw-cpp.md) isteğe bağlıdır. *Function_body* yer tutucusu işlevin ne yaptığını belirten bir bileşik deyimi temsil eder. En iyi kodlama uygulaması olarak *ifade* yer tutucu `decltype` deyimi tarafından belirtilen ifadeyle eşleşmelidir **dönüş** deyimi, varsa, *function_body* .  
+ Aşağıdaki prototip, alternatif bir işlev bildiriminin sözdizimini göstermektedir. Unutmayın **const** ve **geçici** niteleyicileri ve **throw** [özel durum belirtimi](../cpp/exception-specifications-throw-cpp.md) isteğe bağlıdır. *Function_body* yer tutucusu işlevin ne yaptığını belirten bir bileşik deyimi temsil eder. En iyi kodlama uygulaması olarak *ifade* yer tutucu **decltype** deyimi tarafından belirtilen ifadeyle eşleşmelidir **dönüş** varsa deyimi*function_body*.  
   
  **Otomatik** *işlev_adı* **(** *parametreleri*<sub>iyileştirilmiş</sub> **)**  **const**<sub>iyileştirilmiş</sub> **geçici**<sub>iyileştirilmiş</sub> **->** **decltype (** *ifade* **)** **throw**<sub>iyileştirilmiş</sub> **{** *function_body* **};**  
   
@@ -101,16 +101,15 @@ auto myFunc(T&& t, U&& u) -> decltype (forward<T>(t) + forward<U>(u))
 template<typename T, typename U>  
 decltype(auto) myFunc(T&& t, U&& u)   
         { return forward<T>(t) + forward<U>(u); };  
-  
 ```  
   
 ## <a name="decltype-and-forwarding-functions-c11"></a>Decltype ve iletme işlevleri (C ++ 11)  
  İletme işlevleri, diğer işlevlere yapılan çağrıları sarar. Bağımsız değişkenlerini veya o bağımsız değişkenlerle ilişkili bir ifadenin sonuçlarını başka bir işleve ileten bir işlev şablonu düşünün. Ayrıca, ileten işlev diğer işlevin çağrılması sonucunu döndürür. Bu senaryoda, ileten işlevin dönüş türü sarılan işlevin dönüş türü ile aynı olması gerekir.  
   
- Bu senaryoda, `decltype` tür belirticisi olmadan uygun bir tür ifadesi yazamazsınız. `decltype` tür belirticisi, genel iletme işlevlerinin kullanılmasına olanak verir çünkü bir işlevin bir başvuru döndürüp döndürmeyeceğiyle ilgili gerekli bilgileri kaybetmez. Bir iletme işlevine ait kod örneği için, önceki `myFunc` şablon işlevi örneğine bakın.  
+ Bu senaryoda, uygun bir tür ifadesi olmadan yazılamıyor **decltype** tür tanımlayıcısı. **Decltype** tür belirticisiyle birlikte genel iletme işlevlerinin çünkü bir işlevin bir başvuru türü olup olmadığını döndürür hakkında gerekli bilgileri kaybetmez. Bir iletme işlevine ait kod örneği için, önceki `myFunc` şablon işlevi örneğine bakın.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği, `Plus()` şablon işlevinin sonradan belirtilen dönüş türünü bildirir. `Plus` işlevi, iki işlenenini `operator+` aşırı yüküyle işler. Sonuç olarak, artı işlecinin (+) yorumlanması ve `Plus` işlevinin dönüş türü işlev bağımsız değişkenlerinin türlerine bağlıdır.  
+ Aşağıdaki kod örneği, `Plus()` şablon işlevinin sonradan belirtilen dönüş türünü bildirir. `Plus` İşlevi işler, iki işlenenini **operator +** aşırı yükleme. Sonuç olarak, artı işlecinin (+) yorumlanması ve `Plus` işlevinin dönüş türü işlev bağımsız değişkenlerinin türlerine bağlıdır.  
   
 ```cpp  
 // decltype_1.cpp  
@@ -210,4 +209,3 @@ static_assert(test2, "PASS2");
  Visual C++ 2010 veya sonraki sürümleri.  
   
  `decltype(auto)` Visual Studio 2015 veya sonraki bir sürümü gerektirir.  
-  

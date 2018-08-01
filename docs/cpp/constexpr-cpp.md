@@ -14,20 +14,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f95f6c98138ff1eb52750c1b8593795ca28c784
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fe13dbe61b0a50226f82ae8fb09ab46c922309d1
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418003"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406942"
 ---
 # <a name="constexpr-c"></a>constexpr (C++)
 
-Anahtar sözcüğü **constexpr** C ++ 11'de tanıtılan ve C ++ 14'te geliştirildi. Geldiğini *sabit ifade*. Gibi **const**, böylece herhangi bir kod değeri değiştirmeye çalışırsa derleyici hatası gerçekleştirilecektir bu değişkenleri uygulanabilir. Farklı **const**, **constexpr** işlevler de uygulanabilir ve sınıf oluşturucularını. **constexpr** değer veya dönüş değeri, sabittir ve derleme zamanında hesaplanan Mümkünse, gösterir.
+Anahtar sözcüğü **constexpr** C ++ 11'de tanıtılan ve C ++ 14'te geliştirildi. Geldiğini *sabit ifade*. Gibi **const**, böylece herhangi bir kod değeri değiştirme girişiminde bulunursa, bir derleyici hatası gerçekleştirilecektir Bu değişkenlere uygulanabilir. Farklı **const**, **constexpr** işlevleri için de uygulanabilir ve sınıf oluşturucu. **constexpr** değeri ya da dönüş değeri sabittir ve mümkün olduğunda, derleme zamanında hesaplanacağı, gösterir.
 
-A **constexpr** tam sayı değeri const tamsayı, gibi bağımsız şablon ve dizi bildirimleri gerekli olduğunda kullanılabilir. Ve çalışma zamanında yerine derleme zamanında bir değer hesaplanan, daha hızlı çalışır ve daha az bellek kullanır, programınızı yardımcı olabilir.
+A **constexpr** tamsayı değeri, const tamsayı, olduğu gibi şablon bağımsız değişkenleri ve dizi bildirimleri gereklidir her yerde kullanılabilir. Ve çalışma zamanı yerine derleme zamanında bir değer hesaplanır, programınızı daha hızlı çalışır ve daha az bellek kullanacak yardımcı olabilir.
 
-Bilgi işlem derleme zamanı sabitleri karmaşıklığına ve bunların olası etkileri derleme süreyi sınırlamak için C ++ 14 standart sabit ifadeler ilgili türleri için sınırlı olmalıdır [değişmez değer türleri](trivial-standard-layout-and-pod-types.md#literal_types).
+Bilgi işlem derleme zamanı sabitleri karmaşıklığına ve derleme zamanı, olası etkilerini sınırlamak için C ++ 14 standart sabit ifadelerde ilgili türleri sınırlı olmasını gerektirir [değişmez değer türleri](trivial-standard-layout-and-pod-types.md#literal_types).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,22 +41,21 @@ constexpr ctor (params);
 ## <a name="parameters"></a>Parametreler
 
  *params*  
-Değişmez değer türü olması gerekir ve kendisine gereken bir veya daha fazla parametre sabit bir ifade olması.
+Değişmez değer türü olması gerekir ve kendisine gereken bir veya daha fazla parametre, sabit bir ifade olmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-
  Constexpr değişken veya işlev döndürmelidir bir [değişmez değer türü](trivial-standard-layout-and-pod-types.md#literal_types).
 
-## <a name="constexpr-variables"></a>constexpr değişkenleri
+## <a name="constexpr-variables"></a>constexpr değişkenlerini
 
- Const ve constexpr değişkenleri arasındaki birincil fark, bir constexpr değişken derleme zamanında başlatılmalıdır ise, başlatma const bir değişkenin çalışma zamanına kadar ertelenmiş ' dir.  Tüm constexpr const değişkenlerdir.
+ Const ve constexpr değişkenlerini arasındaki birincil fark, bir constexpr değişken derleme zamanında başlatılmalıdır ise, const bir değişkenin başlatılması çalışma zamanına kadar ertelenmiş ' dir.  Tüm constexpr değişkenlerini const.
 
-- Bir değişken ile bildirilen **constexpr**, değişmez değer türü varsa ve başlatılır. Başlatma oluşturucusu tarafından gerçekleştirilirse, oluşturucusu olarak bildirilmesi gerekir **constexpr**.
+- Bir değişken ile bildirilebilir **constexpr**, değişmez değer türü olan ve başlatılır. Başlatma Oluşturucu tarafından gerçekleştirilirse, oluşturucu olarak bildirilmesi gerekir **constexpr**.
 
-- Bir başvuru constexpr başvurduğu nesnenin sabit bir ifade tarafından başlatıldı ve başlatma sırasında çağrılan tüm örtük dönüşümler sabit ifadeler de bildirilebilir.
+- Bir başvuru, başvuran nesne sabit bir ifade tarafından başlatılmış ve başlatma sırasında çağrılan örtük dönüştürmeleri sabit ifadeler de constexpr bildirilebilir.
 
-- Tüm bildirimlerini bir **constexpr** değişken veya işlev olmalıdır **constexpr** tanımlayıcısı.
+- Tüm bildirimleri bir **constexpr** değişken veya işlev olmalıdır **constexpr** tanımlayıcısı.
 
 ```cpp
 constexpr float x = 42.0;
@@ -69,33 +68,33 @@ constexpr int k = j + 1; //Error! j not a constant expression
 
 ## <a name="constexpr_functions"></a> constexpr işlevleri
 
-A **constexpr** işlevi bir dönüş değeri hesaplanan derleme kodu tüketen gerektirmesi durumunda olduğundan.  Bağımsız değişkenlerini olduğunda **constexpr** değerleri alabilir kod gerektirir ve dönüş değeri başlatmak örneğin derleme zamanında bir **constexpr** değişkeni ya da bir tür olmayan şablon bağımsız değişken sağlayın, derleme zamanı sabiti üretir. Olmayan ile çağrıldığında**constexpr** bağımsız değişken veya değerini derleme zamanında gerekli olmadığı durumlarda, bu değer normal bir işlev gibi çalışma zamanında üretir.  (Bu ikili davranış yazmak zorunda kalmaktan kaydeder **constexpr** ve olmayan-**constexpr** aynı işlevi sürümlerini.)
+A **constexpr** işlev, bir dönüş değeri hesaplanan derleme kodu kullanan gerektirmesi durumunda.  Bağımsız değişkenlerinden olduğunda **constexpr** değerleri kullanan kodu gerektirir ve dönüş değeri derleme zamanında, örneğin başlatmak bir **constexpr** değişkeni veya bir tür olmayan şablon bağımsız değişkeni sağlamak, bir derleme zamanı sabiti oluşturur. Non - çağrıldığında**constexpr** bağımsız değişkenleri, ya da değeri derleme zamanında gerekli değildir, bu değer bir normal işlev gibi çalışma zamanında üretir.  (Bu çift davranışı yazmak zorunda kalmaktan kurtarır **constexpr** ve olmayan-**constexpr** sürümleri aynı işlevin.)
 
-A **constexpr** işlevi Oluşturucusu mi örtük olarak **satır içi**.
+A **constexpr** olan işlevde veya Oluşturucu örtük olarak **satır içi**.
 
-Constexpr işlevleri için aşağıdaki kurallar geçerli olur:
+Constexpr işlevleri için aşağıdaki kurallar geçerlidir:
 
 - A **constexpr** işlevi kabul etmek ve yalnızca dönmek [değişmez değer türleri](trivial-standard-layout-and-pod-types.md#literal_types).
 
 - A **constexpr** işlevi özyinelemeli olabilir.
 
-- Olamaz [sanal](../cpp/virtual-cpp.md). A kapsayan sınıfın tüm sanal taban sınıflar varsa bir oluşturucu constexpr tanımlanamaz.
+- Olamaz [sanal](../cpp/virtual-cpp.md). Bir kapsayan sınıfa herhangi bir sanal temel sınıflar varsa, bir oluşturucu constexpr tanımlanamaz.
 
-- Gövde olarak tanımlanabilir **= varsayılan** veya **= Sil**.
+- Gövde olarak tanımlanabilir `= default` veya `= delete`.
 
-- Gövde Hayır içerebilir **goto** deyimleri veya try blokları.
+- Gövde yok içerebilir **goto** deyimleri ya da try bloğu.
 
-- Bir açık alt uzmanlaşması constexpr olmayan şablon olarak bildirilebilir **constexpr**:
+- Constexpr olmayan şablonun açık uzmanlığı olarak bildirilebilir **constexpr**:
 
-- Bir açık alt uzmanlaşması bir **constexpr** şablonu da gerekmez **constexpr**:
+- Bir açık alt uzmanlaşması bir **constexpr** şablon de gerekmez **constexpr**:
 
-Aşağıdaki kurallar geçerli **constexpr** Visual Studio 2017 ve daha sonra işlevleri:
+Aşağıdaki kurallar geçerli **constexpr** işlevleri Visual Studio 2017 ve sonraki sürümler:
 
-- İçeriyor olabilir **varsa** ve **geçiş** deyimleri ve de dahil olmak üzere tüm Döngü deyimleri **için**, aralık tabanlı, **sırada**ve **yapın-sırada**.
+- İçerebilir **varsa** ve **geçiş** deyimleri ve dahil tüm döngü deyimi **için**, aralığa dayalı for **sırada**ve **yapın-sırada**.
  
-- Yerel değişken bildirimleri içerebilir, ancak değişkeni başlatılmalıdır, değişmez değer türü olmalıdır ve statik veya iş parçacığı yerel olamaz. Yerel olarak bildirilen değişken const olması gerekli değildir ve mutate.
+- Yerel değişken bildirimlerini içerebilir, ancak değişkenin başlatılması gerekir, değişmez değer türü olması gerekir ve statik veya iş parçacığı-yerel olamaz. Yerel olarak bildirilen değişken const olması gerekli değildir ve bulunmamalıdır.
 
-- Constexpr statik olmayan üye işlevi örtük olarak const olması gerekli değildir.
+- Constexpr statik olmayan üye işlev örtük olarak const olması gerekli değildir.
 
 
 ```cpp
@@ -108,15 +107,15 @@ constexpr float exp(float x, int n)
 ```
 
 > [!TIP]
-> Not: Visual Studio Hata Ayıklayıcısı'ndaki bir olmayan-en iyi duruma getirilmiş hata ayıklama hata ayıklarken yapı, size söyleyebilir olup bir **constexpr** işlevi değerlendirileceği derleme zamanında bir kesme noktası içindeki koyarak. Kesme noktası isabet durumunda işlevi çalışma zamanında çağrıldı.  Aksi durumda, işlevi derleme zamanında sonra çağrıldı.
+> Not: Visual Studio hata ayıklayıcısının bir olmayan-en iyi duruma getirilmiş hata ayıklamayı Debug, derleme, size söyleyebilir olup olmadığını bir **constexpr** işlevi değerlendirme derleme zamanında içine bir kesme noktası yerleştirerek. Kesme noktasına erişildiğinde, çalışma zamanında işlev çağrıldı.  Aksi durumda, işlev derleme zamanında ardından çağrıldı.
 
 ## <a name="extern-constexpr"></a>extern constexpr
 
-[/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) derleyici seçeneği neden uygulamak derleyici [dış bağlantı]() kullanarak bildirilen değişkenlerin için **extern constexpr**. Visual Studio ve varsayılan olarak eski sürümlerinde veya **/Zc:externConstexpr-** belirtilirse, Visual Studio geçerlidir iç bağlantı **constexpr** olsa bile değişkenleri **extern** anahtar sözcüğü kullanılır. **/Zc:externConstexpr** Visual Studio 2017 güncelleştirme 15,6 başlangıç seçeneği kullanılabilir. ve varsayılan olarak kapalıdır. /Permissive-option /Zc:externConstexpr etkinleştirmez.
+[/ZC: externconstexpr](../build/reference/zc-externconstexpr.md) derleyici seçeneği, derleyicinin uygulamak neden [dış bağlantısı]() kullanılarak bildirilen değişkenlere **extern constexpr**. Varsayılan olarak ve Visual Studio'nun önceki sürümlerinde veya **/Zc:externConstexpr-** belirtilirse, Visual Studio iç bağlantı için geçerli **constexpr** değişkenleri bile **extern** anahtar sözcüğü kullanılır. **/ZC: externconstexpr** Visual Studio 2017 güncelleştirme 15.6 sürümünde başlangıç seçeneği kullanılabilir. ve varsayılan olarak kapalıdır. / ZC: externconstexpr /permissive-option etkinleştirmez.
 
 ## <a name="example"></a>Örnek
 
- Aşağıdaki örnekte gösterildiği **constexpr** değişkenler, İşlevler ve kullanıcı tanımlı tür. Ana(), son deyimindeki unutmayın **constexpr** üye işlevi GetValue() olduğundan bir çalışma zamanı çağrı değeri derleme zamanında bilinmesi gerekli değildir.
+ Aşağıdaki örnekte gösterildiği **constexpr** değişkenler, İşlevler ve kullanıcı tanımlı bir tür. Ana(), işlemdeki son deyim içinde unutmayın **constexpr** üye işlevi GetValue() olduğundan çalışma zamanı arama değeri derleme zamanında bilinen gerekli değildir.
 
 ```cpp
 #include <iostream>
@@ -183,14 +182,12 @@ int main()
     cout << "The value of foo is " << foo.GetValue() << endl;
 
 }
-
 ```
 
 ## <a name="requirements"></a>Gereksinimler
 
 Visual Studio 2015
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
-- [Bildirimler ve Tanımlar](../cpp/declarations-and-definitions-cpp.md)
-- [const](../cpp/const-cpp.md)
+## <a name="see-also"></a>Ayrıca bkz.
+ [Bildirimler ve Tanımlar](../cpp/declarations-and-definitions-cpp.md)  
+ [const](../cpp/const-cpp.md)

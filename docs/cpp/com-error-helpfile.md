@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acd909224d6a682a210e15eebf04d2c8429a8a3c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 3afcda41d5dc4ad3cc1fd74ed5449d574946f1e5
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939564"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402048"
 ---
 # <a name="comerrorhelpfile"></a>_com_error::HelpFile
 **Microsoft'a özgü**  
@@ -31,9 +31,7 @@ ms.locfileid: "37939564"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 _bstr_t HelpFile() const;  
-  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -44,5 +42,5 @@ _bstr_t HelpFile() const;
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_com_error Sınıfı](../cpp/com-error-class.md)

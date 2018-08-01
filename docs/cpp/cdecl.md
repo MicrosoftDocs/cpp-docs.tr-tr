@@ -16,31 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d07c34c11037132b9f9695ec889bb681c7f43951
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c0a9e4db3e1fcbd24358d6dedd2d4ada80672c2a
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414499"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406552"
 ---
 # <a name="cdecl"></a>__cdecl
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- `__cdecl` Varsayılan C ve C++ programları için çağırma kuralı. Çağıran tarafından yığın Temizlenen çünkü bunu yapabilirsiniz **vararg** işlevleri. `__cdecl` Çağırma oluşturur daha büyük yürütülebilir dosyalar [__stdcall](../cpp/stdcall.md), çünkü yığın temizleme kodu dahil etmek için her işlev çağrısı gerektirir. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.  
+ **__cdecl** çağırma kuralı C ve C++ programları için varsayılan değerdir. Yığın arayan tarafından temizlendiği için bunu yapabilirsiniz `vararg` işlevleri. **__Cdecl** çağırma kuralı, daha büyük yürütülebilir dosyalar oluşturur [__stdcall](../cpp/stdcall.md), çünkü her işlev çağrısının yığın temizleme kodunu içermesini gerektirir. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.  
   
 |Öğe|Uygulama|  
 |-------------|--------------------|  
 |Bağımsız değişken geçirme sırası|Sağdan sola.|  
 |Yığın bakımı sorumluluğu|Çağıran işlev, yığından bağımsız değişkenleri açar.|  
-|Ad düzenleme kuralı|Alt çizgi karakteri (_) öneki ne zaman dışında adlarına \_C bağlantı kullanan _cdecl işlevler verilir.|  
+|Ad düzenleme kuralı|Alt çizgi karakteri (_) önüne eklenmesi dışında olduğunda adlarının \_C bağlantısı kullanan _cdecl işlevleri dışa aktarılır.|  
 |Durum çevirisi kuralları|Durum çevirisi yapılmaz.|  
   
 > [!NOTE]
->  İlgili bilgi için bkz: [donatılmış adları](../build/reference/decorated-names.md).  
+>  İlgili bilgiler için bkz. [düzenlenmiş adlar](../build/reference/decorated-names.md).  
   
- Yer `__cdecl` bir değişken veya işlev adı önce değiştiricisi. Varsayılan adlandırma ve çağırma kuralları C olduğundan, yalnızca bir kez kullanmalısınız `__cdecl` x86 belirttiğiniz kod olduğunda **/GV** (vectorcall) **/Gz** (stdcall) veya  **/Gr** (fastcall) derleyici seçeneği. [/Gd](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği zorlar `__cdecl` çağırma.  
+ Bir yerde **__cdecl** değiştiricisini bir değişken veya işlev adı. C adlandırma ve çağırma kuralları varsayılan olduğu için yalnızca bir kez kullanmalısınız **__cdecl** belirtmiş olduğunuz durumdur içinde x86 kodudur `/Gv` (vectorcall), `/Gz` (stdcall) veya `/Gr` (fastcall) derleyici seçeneği. [/Gd](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneğini zorlar **__cdecl** çağırma kuralı.  
   
- ARM ve x64 işlemciler `__cdecl` kabul ancak genellikle derleyici tarafından yoksayıldı. ARM ve x64 kuralına göre, bağımsız değişkenler mümkün olduğunda kayıtlarda geçirilir ve sonraki bağımsız değişkenler yığında geçirilir. X64 içindeki kod, kullanın `__cdecl` geçersiz kılmak için **/GV** derleyici seçeneği ve varsayılan x64 çağırma kullanın.  
+ ARM ve x64 işlemciler **__cdecl** kabul edilir, ancak genellikle derleyici tarafından yok sayıldı. ARM ve x64 kuralına göre, bağımsız değişkenler mümkün olduğunda kayıtlarda geçirilir ve sonraki bağımsız değişkenler yığında geçirilir. X64 içindeki kod, kullanın **__cdecl** geçersiz kılmak için **GV** derleyici seçeneği ve varsayılan x64 çağırma kuralını kullanın.  
   
  Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımını ele alalım:  
   
@@ -63,7 +63,7 @@ void __cdecl CMyClass::mymethod() { return; }
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, derleyici adlandırma ve çağırma kuralları için C kullanmak için talimat `system` işlevi.  
+ Aşağıdaki örnekte, derleyicinin C adlandırma ve için çağrı kurallarını kullanması talimat verilmiştir `system` işlevi.  
   
 ```cpp  
 // Example of the __cdecl keyword on function  
@@ -72,6 +72,6 @@ int __cdecl system(const char *);
 typedef BOOL (__cdecl *funcname_ptr)(void * arg1, const char * arg2, DWORD flags, ...);  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

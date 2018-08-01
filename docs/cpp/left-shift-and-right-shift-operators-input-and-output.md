@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6f38b5ec30626f73ab3681f674fb39c5492eb49
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 50a177468795ae0e288910fa51192d9cc9a24502
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939737"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403160"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
 Bit düzeyinde kaydırma işleçleri olan sağa kaydırma işleci (>>), bitlerini shift_expression *shift-expression* sağa ve sola kaydırma işleci (<<), bitlerini shift_expression *shift-expression* sol. <sup>1</sup>  
@@ -66,7 +66,6 @@ int main() {
     bitset<16> bitset3{short3};  
     cout << bitset3 << endl;  // 0000000000010000  
 }  
-  
 ```  
   
  İşaretli bir sayıyı sola kaydırırsanız, imza biti etkilenir ve sonuç tanımsız olur. Aşağıdaki örnek, bir 1 bit imza biti konumuna sola kaydırıldığında, Visual C++'ta ne olduğunu gösterir.  
@@ -230,6 +229,6 @@ int main() {
   
  Değerini `E1 >> E2` olduğu `E1` sağa kaydırılacak `E2` bit konumlarıdır. Varsa `E1` bir işaretsiz türe sahipse veya `E1` işaretli bir türe ve negatif olmayan değere sahip, sonucun değeri sayının tamsayı kısmını **E1/2**<sup>**E2** </sup>. Varsa `E1` işaretli bir türe ve negatif bir değere sahipse, sonuç değeri uygulama tanımlanır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
  [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

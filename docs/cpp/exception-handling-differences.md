@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dafb3c41bd490e7c123e1aefe9ccaa04a4e6b233
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: b9c17c0abbd8286d05423ac52abc2e2109253f6d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948126"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404629"
 ---
 # <a name="exception-handling-differences"></a>Özel Durum İşleme Farkları
 Yapılandırılmış özel durum işleme ve C++ özel durum işleme arasındaki en önemli fark modeli anlaşmalar türlerinde C++ özel durum işleme, yapılandırılmış özel durum işleme modeli sırasında C, bir tür özel durumlar ile ilgilenen olan — özellikle  **işaretsiz int**. Diğer bir deyişle, C++ özel durumlarını veri türüyle tanımlanır ancak C özel durumlarını bir işaretsiz tamsayı değeri tarafından tanımlanır. C dilinde bir özel durum oluştuğunda, her olası işleyici C özel durum bağlamı inceler ve bu özel durum kabul edin, başka bir işleyiciye geçirmek ya da onu yok saymasını belirleyen bir filtre yürütür. C++'da bir özel durum oluştuğunda, bunu herhangi bir türde olabilir.  
@@ -87,7 +87,6 @@ public:
       return nSE;  
    }  
 };  
-  
 ```  
   
  Bu sınıf kullanmak için her zaman bir C özel durum iç özel durum işleme mekanizmasını tarafından çağrılan özel bir C özel durum çevirisi işlevi yükleyin. Çeviri işlevinizi içinde herhangi bir türü belirtilmiş özel durumu oluşturabilecek (belki de bir `SE_Exception` türü veya sınıf türü türetilen `SE_Exception`), yakalandı uygun eşleşen C++ tarafından **catch** işleyici. Çeviri işlevi yalnızca geri dönebilirsiniz özel durum işlemedi gösterir. Çeviri işlevi C özel durum harekete geçirirse [sonlandırmak](../c-runtime-library/reference/terminate-crt.md) çağrılır.  
@@ -150,5 +149,5 @@ Caught a __try exception with SE_Exception.
 nSE = 0xc0000094  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)

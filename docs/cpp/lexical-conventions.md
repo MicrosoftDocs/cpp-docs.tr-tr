@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79588c700201a8b59053af3e0007216bfc8f4aec
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b9a9011912b0c187d9aa9e75dd9e484c4688e3c0
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419135"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405915"
 ---
 # <a name="lexical-conventions"></a>Sözcük Kuralları
 Bu bölüm bir C++ programının temel öğelerini tanıtır. Eksiksiz programlar oluşturmak için kullanılan deyimleri, tanımları, bildirimleri ve diğer öğeleri oluşturmak için "sözcük temelli öğeler" veya "belirteçler" olarak adlandırılan bu öğeleri kullanırsınız. Bu bölümde aşağıdaki sözcük temelli öğeler ele alınmıştır:
@@ -44,6 +44,6 @@ Bu bölüm bir C++ programının temel öğelerini tanıtır. Eksiksiz programla
 
 - [Kullanıcı Tanımlı Sabit Değerler](../cpp/user-defined-literals-cpp.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
-- [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
-- [Program ve bağlantı](program-and-linkage-cpp.md)
+## <a name="see-also"></a>Ayrıca bkz.
+ [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)  
+ [Program ve bağlantı](program-and-linkage-cpp.md)

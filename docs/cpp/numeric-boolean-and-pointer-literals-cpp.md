@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 178c75efa84ebc7d27c19feb81e81314dc4c5bd7
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: a445e9c435f9e077899a2a473dc5862f98a36bf4
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948135"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405525"
 ---
 # <a name="numeric-boolean-and-pointer-literals--c"></a>Sayısal, Boole ve işaretçi değişmez değerleri (C++)
 Bir sabit değer doğrudan bir değeri temsil eden bir program öğesidir. Bu makale türü tamsayı sabit değerleri kapsar kayan nokta, Boole ve işaretçi. Dize ve karakter değişmez değerleri hakkında daha fazla bilgi için bkz. [dize ve karakter değişmez değerleri (C++)](../cpp/string-and-character-literals-cpp.md). Ayrıca, herhangi kategorilerine göre kendi değişmez değerleri tanımlayabilirsiniz; Daha fazla bilgi için [kullanıcı tanımlı değişmez değerler (C++)](../cpp/user-defined-literals-cpp.md)  
@@ -33,7 +33,6 @@ const int answer = 42; // integer literal
 double d = sin(108.87);     //floating point literal passed to sin function  
 bool b = true;              // boolean literal  
 MyClass* mc = nullptr;      // pointer literal  
-  
 ```  
   
  Bazen derleyicinin bir sabit değer yorumlama ya da ona vermek için belirli ne tür bildirmek önemlidir. Ön eklerin veya soneklerin değişmez değer ekleyerek bunu yapabilirsiniz. Örneğin, önek 0 x bir onaltılık değer, örneğin 0x35 takip eden sayısı olarak yorumlamak üzere söyler. TAM soneki değeri değerlendirilecek derleyiciye bir **işaretsiz long long** 5894345ULL olduğu gibi bir tür. Ön ekleri tam listesi için aşağıdaki bölümlere ve her değişmez değer türü soneklerini bakın.  
@@ -129,7 +128,6 @@ void func( long double );
  Bir ikili sabit değerinin kullanımı tarafından belirtilebilir `0B` veya `0b` 1 ve 0'ın bir dizi tarafından izlenen öneki:  
   
 ```cpp 
-  
 auto x = 0B001101 ; // int  
 auto y = 0b000001 ; // int  
 ```  
@@ -140,12 +138,11 @@ auto y = 0b000001 ; // int
 ```cpp 
 if (num < 100)  
     return "Success";  
-  
 ```  
   
  Önceki örnekte, düz bir anlamı, örneğin "MAXIMUM_ERROR_THRESHOLD" ileten bir adlandırılmış sabiti kullanmak daha iyi olabilir. Ve "Başarılı", son kullanıcılar, ardından tarafından görülür. döndürülen değer, burada diğer dile yerelleştirilebilen bir dosyadan tek bir konumda depolanan bir adlandırılmış dize sabit kullanılması daha iyidir. Adlandırılmış sabitler kullanmak, diğerlerinin yanı sıra kodun amacı anlamak için kendinize yardımcı olur.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sözcük kuralları](../cpp/lexical-conventions.md)   
  [C++ dize değişmez değerleri](../cpp/string-and-character-literals-cpp.md)   
  [C++ kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md)

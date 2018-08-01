@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6374dcd9dad263afd0961be91971d3283ba863ab
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e773fd8e2c38311a1c36aff4c97199cbebb503e8
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412130"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406487"
 ---
 # <a name="function-template-instantiation"></a>İşlev Şablonu Örneklemesi
-İşlev şablonu ilk her tür için çağrıldığında derleyici örnekleme oluşturur. Her bir sürümü şablonlu oluşturulmadan işlevi türü için özelleştirilmiş. İşlev türü için kullanılan her zaman bu örneklemesi çağrılır. Birkaç aynı örneklemesi, hatta farklı modüllerde varsa, örneklemesi yalnızca bir kopyasını yürütülebilir dosyayı son bulur.  
+Bir işlev şablonu her türü için ilk kez çağrıldığında, derleyici örneklemesi oluşturur. Şablonlu bir sürümünü her örneklemesi olan işlev türü için özelleştirilmiş. Bu örnek oluşturma, işlev türü için kullanılan her zaman çağrılır. Birden fazla özdeş örneklemeleri, hatta farklı modülde varsa, yalnızca bir kopyasını örneklemesinin yürütülebilir dosyada elde edebilirsiniz.  
   
- İşlev bağımsız değişkenleri dönüştürülmesi işlevi şablonlarında burada parametresi bir şablon bağımsız değişkenine bağlı değildir bağımsız değişkeni ve parametre çifti için izin verilir.  
+ İşlev bağımsız değişkenlerinin dönüştürme işlevi şablonlarında burada parametresi bir şablon bağımsız değişkenine bağımlı değildir bağımsız değişken ve parametre çifti için izin verilir.  
   
- İşlev şablonları açıkça bağımsız değişken olarak belirli bir tür ile şablonu bildirerek oluşturulabilir. Örneğin, aşağıdaki kodu izin verilir:  
+ İşlev şablonlarının açık şablon bağımsız değişken olarak belirli bir tür ile bildirerek oluşturulabilir. Örneğin, aşağıdaki koda izin verilir:  
   
 ```cpp
 // function_template_instantiation.cpp  
@@ -46,5 +46,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İşlev Şablonları](../cpp/function-templates.md)

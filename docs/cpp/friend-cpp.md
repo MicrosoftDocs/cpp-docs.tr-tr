@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9938e8bb2128def7d5f507acb111de854dfd4977
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 931f9d7cc17afe974837c8a622b82c124ef6be57
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37942087"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407023"
 ---
 # <a name="friend-c"></a>friend (C++)
 Bazı durumlarda, bir sınıf üyesi olmayan işlevlere veya ayrı bir sınıftaki tüm üyeleri için üye düzeyi erişimi vermek daha uygundur. Yalnızca sınıf uygulayan kendi arkadaşlarınız olan bildirebilirsiniz. Bir işlev veya sınıf kendisi herhangi bir sınıfın arkadaş bildiremezsiniz. Bir sınıf tanımı içinde **arkadaş** anahtar sözcüğü ve üye olmayan işlev veya sınıfınız, özel ve korumalı üyelerine erişim vermek için başka bir sınıfın adı. Bir şablon tanımı içinde bir tür parametresi, bir arkadaş bildirilebilir.  
@@ -59,7 +59,7 @@ friend class F;
 friend F;  
 ```  
   
- En içteki ad alanında aynı adı taşıyan varolan bir sınıfı bulunduysa ilk formun yeni bir sınıf F sunar.  **C ++ 11**: İkinci formu yeni bir sınıf sunmaz; sınıf zaten bildirilmiş ve bir şablon türü parametresine veya bir typedef arkadaş olarak bildirirken kullanılmalıdır olarak kullanılabilir.  
+ En içteki ad alanında aynı adı taşıyan varolan bir sınıfı bulunduysa ilk formun yeni bir sınıf F sunar. **C ++ 11**: İkinci formu yeni bir sınıf sunmaz; sınıf zaten bildirilmiş ve bir şablon türü parametresine veya bir typedef arkadaş olarak bildirirken kullanılmalıdır olarak kullanılabilir.  
   
  Kullanım `class friend F` zaman başvurulan tür değil henüz bildirildiği:  
   
@@ -244,5 +244,5 @@ Arkadaş ilişki etkileri
   
  Sınıf bildirimi içinde tanımlanan arkadaş işlevleri çevreleyen sınıf kapsamında dikkate alınmaz; dosya kapsamındadırlar.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

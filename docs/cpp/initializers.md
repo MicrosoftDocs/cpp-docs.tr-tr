@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7a94ee7df512262c58d7a90e3dbf461270b5d4c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 79deaacbb00638c690d052668f60d9d072a2060d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939875"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408170"
 ---
 # <a name="initializers"></a>Başlatıcılar
 Bir başlatıcı bir değişkenin başlangıç değerini belirtir. Değişkenleri şu bağlamlarda başlatabilirsiniz:  
@@ -46,7 +46,6 @@ Bir başlatıcı bir değişkenin başlangıç değerini belirtir. Değişkenler
     ```cpp  
     Point get_new_point(int x, int y) { return { x, y }; }  
     Point get_new_point(int x, int y) { return Point{ x, y }; }  
-  
     ```  
   
  Başlatıcılar şu biçimleri alabilir:  
@@ -93,7 +92,7 @@ Bir başlatıcı bir değişkenin başlangıç değerini belirtir. Değişkenler
   
 -   Char değişkenleri başlatıldığı `'\0'`.  
   
--   İşaretçileri başlatıldığı `nullptr`.  
+-   İşaretçileri başlatıldığı **nullptr**.  
   
 -   Diziler, [POD](../standard-library/is-pod-class.md) sınıflar, yapılar ve birleşimlerin bir sıfır değeri olarak başlatılan üyeleri vardır.  
   
@@ -214,7 +213,6 @@ int main() {
     int a{};     // value of a is 0  
     double b{};  // value of b is 0.00000000000000000  
 }  
-  
 ```  
   
 ### <a name="copy-initialization"></a>Kopya başlatma  
@@ -533,4 +531,3 @@ Başvuru türlerinin başlatma için karar grafiği
   
 ### <a name="initialization-of-external-variables"></a>Dış değişkenleri başlatma  
  Otomatik, statik ve dış değişkenler bildirimleri başlatıcılar içerebilir. Ancak, yalnızca değişkenleri olarak bildirilmedikçe dış değişkenlerin bildirimleri Başlatıcı içerebilir **extern**.
-  

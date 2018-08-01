@@ -17,29 +17,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ec2506b406166ac5316de4724db27a6cd7ffcc1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3efc793e5030fa86c3bd1214ef4b8b408361a4ef
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408616"
 ---
 # <a name="deprecated-c"></a>deprecated (C++)
-Bu konu hakkında Microsoft'a özgü olan declspec bildirimi kullanım dışı. C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman bu öznitelik Microsoft'a özgü declspec veya pragma, karşılaştırması kullanılacağı Kılavuzu bkz [C++ Standart öznitelikleri](attributes.md).
+Bu konu hakkında Microsoft'a özgü olan declspec bildirimi kullanım dışı. C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman ve Microsoft'a özgü declspec veya pragması, bu öznitelik kullanılacağı hakkında yönergeler [C++ Standart öznitelikleri](attributes.md).
 
- Aşağıda, belirtilen özel durumlarla birlikte **kullanım dışı** bildirimi ile aynı işlevselliği sunar [kullanım dışı](../preprocessor/deprecated-c-cpp.md) pragma:  
+ Aşağıda belirtilen durumlarla **kullanım dışı** bildirimi aynı işlevleri sunar [kullanım dışı](../preprocessor/deprecated-c-cpp.md) pragma:  
   
--   **Kullanım dışı** bildirimi belirtmenize olanak sağlar işlev aşırı yüklemelerinin belirli biçimlerinin olarak kullanım dışı pragma formun tüm aşırı yüklenmiş bir işlev adı formlara uygulanır ancak.  
+-   **Kullanım dışı** bildirimi belirtmenize olanak tanır işlev aşırı yüklemelerinin belirli tür olarak kullanım dışı pragma formun tüm aşırı yüklenmiş bir işlev adı formları için geçerlidir ancak.  
   
--   **Kullanım dışı** bildirimi derleme zamanında görüntülenecek bir ileti belirtmenize olanak sağlar. İleti metni makrosu olabilir.  
+-   **Kullanım dışı** bildirimi derleme zamanında görüntülenecek bir ileti belirtmenize olanak sağlar. İleti metnini makrodan olabilir.  
   
--   Makroları yalnızca ile kullanım dışı bırakıldı olarak işaretlenmelidir **kullanım dışı** pragması.  
+-   Makrolar, yalnızca ile kullanım dışı olarak işaretlenebilir **kullanım dışı** pragması.  
   
- Derleyici kullanım dışı bırakılan bir tanımlayıcısı veya standart kullanılmasını karşılaştığı varsa [ `[[deprecated]]` ](attributes.md) öznitelik, bir [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) uyarı oluşturulur.  
+ Derleyici, kullanım dışı bir tanıtıcı veya standart kullanımını karşılaştığında, [ `[[deprecated]]` ](attributes.md) öznitelik, bir [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) uyarısı oluşturulur.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, kullanım dışı işlev kullanıldığında derleme zamanında görüntülenen bir ileti belirtme ve İşlevler kullanım dışı olarak işaretlemek nasıl gösterir.  
+ Aşağıdaki örnek, kullanım dışı işlev kullanıldığında derleme zamanında görüntülenecek bir ileti belirtme ve İşlevler kullanım dışı bırakıldı olarak işaretlemek nasıl gösterir.  
   
-```  
+```cpp 
 // deprecated.cpp  
 // compile with: /W3  
 #define MY_TEXT "function is deprecated"  
@@ -57,9 +58,9 @@ int main() {
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, kullanım dışı sınıfı kullanıldığında derleme zamanında görüntülenen bir ileti belirtme ve sınıfları kullanım dışı olarak işaretlemek nasıl gösterir.  
+ Aşağıdaki örnek, kullanım dışı sınıfı kullanıldığında derleme zamanında görüntülenecek bir ileti belirtme ve sınıfları kullanım dışı bırakıldı olarak işaretlemek nasıl gösterir.  
   
-```  
+```cpp 
 // deprecate_class.cpp  
 // compile with: /W3  
 struct __declspec(deprecated) X {  
@@ -76,6 +77,6 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [__declspec](../cpp/declspec.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03964b224603d86064290aa68344c828c2630a17
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 24558b99cf5291a83cfef77a76dd631622b657b6
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948119"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404206"
 ---
 # <a name="interface"></a>__interface
 **Microsoft'a özgü**  
@@ -43,7 +43,6 @@ ms.locfileid: "37948119"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 modifier __interface interface-name {interface-definition};  
 ```  
   
@@ -152,6 +151,6 @@ bstr_data = Testing
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Arabirim Öznitelikleri](../windows/interface-attributes.md)

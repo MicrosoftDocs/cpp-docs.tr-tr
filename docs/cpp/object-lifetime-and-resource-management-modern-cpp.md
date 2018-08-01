@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fccba0fe09c6e2fcc636d478824c7dfcc699d653
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 365f9196f3d482098c29bf4b04610120ecbbeec4
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941557"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406048"
 ---
 # <a name="object-lifetime-and-resource-management-modern-c"></a>Nesne Yaşam Süresi ve Kaynak Yönetimi (Modern C++)
 Yönetilen dillerden farklı olarak, C++, bir program çalışırken, otomatik olarak bellek yok-uzun-kullanılan kaynakları serbest bırakır, çöp toplama (GC) sahip değil. C++'da, kaynak yönetimi için nesne ömrü doğrudan ilgilidir. Bu belgede, c++ nesne yaşam süresi ve bunları yönetme etkileyen faktörler açıklanmaktadır.  
@@ -42,7 +42,6 @@ auto p = make_shared<widget>(); // no leak, and exception safe
 p->draw();   
   
 } // no delete required, out-of-scope triggers smart pointer destructor  
-  
 ```  
   
  Kullanım `unique_ptr` benzersiz sahipliği için örneğin *derleme pimpl* deyimidir. (Bkz [derleme zamanı kapsüllemesi için Pimpl](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md).) Olun bir `unique_ptr` tüm açık birincil hedefinin **yeni** ifadeler.  
@@ -61,7 +60,6 @@ class node {
   ...  
 };  
 node::node() : parent(...) { children.emplace_back(new node(...) ); }  
-  
 ```  
   
  Performans iyileştirmesi gerektiğinde kullanmanız gerekebilir *iyi kapsüllenmiş* işaretçiler ve silmek için açık çağrılar sahip. Kendi alt düzey veri yapısı uygularken bir örnektir.  
@@ -90,7 +88,7 @@ void functionUsingWidget () {
   
  Statik ömrü tedbirli şekilde kullanın (genel statik, işlev yerel statik) çünkü sorunlar ortaya çıkabilir. Bir genel nesnesinin Oluşturucusu bir özel durum oluşturduğunda ne olur? Genellikle, uygulama hatalarını hata ayıklaması zor olan şekilde. Oluşturma sırası statik ömrü nesneler için sorun yaratır ve eşzamanlılık açısından güvenli değildir. Yalnızca nesne oluşturmayı bir sorunu olduğunu, özellikle çok biçimlilik söz konusu olduğunda yok etme sırası karmaşık olabilir. Nesne veya değişkenin çok biçimli değil ve karmaşık oluşturma/sıralama yok etme sahip olsa da hala iş parçacığı eşzamanlılık ilgili bir sorun yoktur. Çok iş parçacıklı bir uygulama, iş parçacığı yerel depolama, kaynak kilitleri ve diğer özel önlemler zorunda kalmadan statik nesneler verileri güvenli bir şekilde değiştiremezsiniz.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

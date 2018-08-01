@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 223bf6996d5142cbe8d3521c65596beb40312f2c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 5a68a0a67748e79fe4379cb5f820cca0c845f392
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941192"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405489"
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
 Bir ad alanı içindeki tanımlayıcıları (adları türler, İşlevler, değişkenler vb.) için bir kapsam sağlayan tanımlayıcı bir bölgedir. Ad alanlarında, kod mantıksal gruplar halinde düzenlemek ve özellikle kod tabanınızın birden çok kitaplık içerdiğinde oluşabilecek ad çakışmalarını önlemek için kullanılır. Ad alanı kapsamında tüm tanımlayıcılar niteleme olmadan bir başkasına görünür. Tanımlayıcı ad alanı dışında her tanımlayıcısı için tam adı örneğin kullanarak üyeleri erişebilir `std::vector<std::string> vec;`, göre veya başka bir [using bildirimi](../cpp/using-declaration.md) tek bir tanımlayıcı için (`using std::string`), veya bir [using yönergesi](../cpp/namespaces-cpp.md#using_directives) ad alanındaki tüm tanımlayıcıları için (`using namespace std;`). Üst bilgi dosyaları içindeki kod her zaman tam olarak nitelenmiş ad alanı adı kullanmanız gerekir.  
@@ -59,7 +59,6 @@ ContosoData::Func(mgr);
 using ContosoData::ObjectManager;  
 ObjectManager mgr;  
 mgr.DoSomething();  
-  
 ```  
   
  Bir using yönergesi her şeyi ad alanında kapsama alınmak üzere:  
@@ -70,7 +69,6 @@ using namespace ContosoData;
 ObjectManager mgr;  
 mgr.DoSomething();  
 Func(mgr);  
-  
 ```  
   
 ## <a id="using_directives"></a> using yönergeleri  
@@ -91,11 +89,10 @@ namespace ContosoDataServer
 {  
     void Foo();  
     int Bar();  
-  
 }  
 ```  
   
- Contosodata.cpp işlevi uygulamalarında yerleştirdiğiniz olsa bile tam nitelikli ad kullanması gereken bir `using` dosyasının en üstüne yönergenizi:  
+ Contosodata.cpp işlevi uygulamalarında yerleştirdiğiniz olsa bile tam nitelikli ad kullanması gereken bir **kullanarak** dosyasının en üstüne yönergenizi:  
   
 ```cpp  
 #include "contosodata.h"  
@@ -154,7 +151,6 @@ namespace ContosoDataServer
   
     int Bar(){...};  
     int Baz(int i) { return Details::CountImpl; }      
-  
 }  
 ```  
   
@@ -211,7 +207,6 @@ namespace Parent
      template<>  
      class C<int> {};  
 }  
-  
 ```  
   
  Sürüm oluşturma mekanizması olarak satır içi ad alanları, bir kitaplık ortak arabiriminde değişiklikleri yönetmek için kullanabilirsiniz. Örneğin, tek üst ad alanı oluşturma ve üst içinde iç içe geçmiş kendi ad alanı arabiriminde'nün her sürümü kapsüller. En son veya tercih edilen sürümü içeren ad alanı satır içi olarak tam ve ana ad uzayını doğrudan üyesi değilmiş gibi bu nedenle sunulur. Parent::Class çağıran istemci kodu yeni kodu otomatik olarak bağlanır. Eski sürümü kullanmayı tercih istemciler, bu kodu olan iç içe geçmiş ad alanı için tam yol kullanarak erişmeye devam edebilir.  
@@ -252,7 +247,6 @@ namespace Contoso
       };  
     }  
 }  
-  
 ```  
   
 ## <a id="namespace_aliases"></a> Namespace diğer adları  
@@ -262,7 +256,6 @@ namespace Contoso
 namespace a_very_long_namespace_name { class Foo {}; }  
 namespace AVLNN = a_very_long_namespace_name;  
 void Bar(AVLNN::Foo foo){ }  
-  
 ```  
   
 ## <a name="anonymous-or-unnamed-namespaces"></a>anonim veya adlandırılmamış ad alanları  
@@ -277,5 +270,5 @@ namespace
   
  Bu adlandırılmamış ya da anonim bir ad alanı adı verilir ve değişken bildirimleri diğer dosyalar için kod görünmez yapmak istediğinizde yararlı olur (yani iç bağlantı vermediğiniz) adlı bir ad alanı oluşturmak zorunda kalmadan. Aynı dosyadaki tüm kod adlandırılmamış bir ad alanı tanımlayıcılarını görebilir, ancak ad alanı kendisini yanı sıra tanımlayıcıların, bu dosyanın dışında görünür değildir — veya çeviri biriminde dışında daha kesin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)

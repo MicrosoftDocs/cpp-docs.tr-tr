@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb8f04962593dff13559f49f7f7c23014968c266
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c2648d3628b8edd8b864dcf69dcfa7acb6d07339
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940766"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406669"
 ---
 # <a name="new-and-delete-operators"></a>new ve delete İşleçleri
 
@@ -152,11 +152,11 @@ void operator delete( void * );
 void operator delete( void *, size_t );  
 ```  
   
- Önceki iki formu yalnızca biri için belirli bir sınıfın bulunabilir. İlk türünde tek bir bağımsız değişken alır **void \*** , serbest bırakmak nesneye bir işaretçi içerir. İkinci form — boyutlandırılmış ayırmayı kaldırma — İlki bir bellek bloğunu serbest işaretçisidir ve ikinci serbest bırakmak bayt sayısıdır. iki bağımsız değişkeni alır. Her iki biçimi dönüş türü **void** (**delete işleci** bir dönüş değeri olamaz).  
+ Önceki iki formu yalnızca biri için belirli bir sınıfın bulunabilir. İlk türünde tek bir bağımsız değişken alır `void *`, serbest bırakmak nesneye bir işaretçi içerir. İkinci form — boyutlandırılmış ayırmayı kaldırma — İlki bir bellek bloğunu serbest işaretçisidir ve ikinci serbest bırakmak bayt sayısıdır. iki bağımsız değişkeni alır. Her iki biçimi dönüş türü **void** (**delete işleci** bir dönüş değeri olamaz).  
   
  İkinci form amacı genellikle ayırma depolanan ve büyük olasılıkla önbelleğe alınmamış Silinecek nesnenin doğru boyutta kategori için arama ayarlama için hızıdır; İkinci form olduğunda özellikle yararlı bir **delete işleci** işlevi bir temel sınıftan türetilmiş bir sınıfın bir nesnesini silmek için kullanılır.  
   
- **Delete işleci** işlevi statik; bu nedenle sanal olamaz. `operator delete` İşlevi açıklandığı gibi erişim denetimi ilişkiden [üye erişim denetimi](../cpp/member-access-control-cpp.md).  
+ **Delete işleci** işlevi statik; bu nedenle sanal olamaz. **Delete işleci** işlevi açıklandığı gibi erişim denetimi ilişkiden [üye erişim denetimi](../cpp/member-access-control-cpp.md).  
   
  Aşağıdaki örnek, kullanıcı tanımlı gösterir **new işleci** ve **delete işleci** ayırma ve bellek deallocations oturum için tasarlanmış İşlevler:  
   
@@ -229,4 +229,3 @@ void f() {
    delete [] pX;  
 }  
 ```  
-

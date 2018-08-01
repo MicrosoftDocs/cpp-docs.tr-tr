@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 919c40dce53dd5d1c8847287099c61c3e1b229cf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a412c2b4dd87bc3e8e3e1b77a524d2a5925aaf60
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411760"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405064"
 ---
 # <a name="comments-c"></a>Açıklamaları (C++)
-Açıklama, derleyicinin yoksaydığı ancak programcılar için yararlı bir metindir. Açıklamalar normalde daha sonra başvurmak üzere koda açıklama eklemek için kullanılır. Derleyici bunları boşluk olarak işler. Belirli kod satırlarını devre dışı yapma için sınama sırasında açıklamaları kullanabilirsiniz; Ancak, `#if` / `#endif` önişlemci yönergeleri çalışmak daha iyi bu açıklamaları içeren kodu çevreleyen ancak açıklamaları iç içe yerleştirilemez.  
+Açıklama, derleyicinin yoksaydığı ancak programcılar için yararlı bir metindir. Açıklamalar normalde daha sonra başvurmak üzere koda açıklama eklemek için kullanılır. Derleyici bunları boşluk olarak işler. Kodun belirli satırlarını etkin hale getirmek için test açıklamaları kullanabilirsiniz; Ancak, `#if` / `#endif` önişlemci yönergeleri çalışması daha iyi bu çünkü açıklamaları içeren kodu çevreleyebilirsiniz ancak açıklamaları iç içe olamaz.  
   
  Bir C++ açıklaması aşağıdaki yollardan biriyle yazılır:  
   
@@ -35,5 +35,5 @@ Açıklama, derleyicinin yoksaydığı ancak programcılar için yararlı bir me
   
  Açıklama karakterleri (`/*`, `*/` ve `//`); karakter sabiti, dize sabiti veya açıklama içinde herhangi bir özel anlama sahip değildir. Bundan dolayı, ilk sözdizimini kullanan açıklamalar iç içe yerleştirilemez.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

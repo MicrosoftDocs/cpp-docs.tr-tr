@@ -18,18 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4356e15d1b74508b7fc2606b45b5fb2bc9a435eb
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3a178510c02cd7ae0238686c6ff6634466715ddf
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966666"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408352"
 ---
 # <a name="primary-expressions"></a>Birincil İfadeler
 Birincil ifadeler daha karmaşık ifadelerin yapı taşlarıdır. Oldukları değişmez değerleri, adlar ve kapsam çözümleme işleci tarafından belirtilen adlardır (`::`).  Birincil bir ifade aşağıdaki biçimlerden birini içerebilir:  
   
 ```  
-  
 literal  
 this
 name  
@@ -84,5 +83,5 @@ A::B   // a qualified name
 A<int> // a template id  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İfade Türleri](../cpp/types-of-expressions.md)

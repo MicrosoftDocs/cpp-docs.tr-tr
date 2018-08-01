@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b7334fdc420c096c42360dd6b75fc400b8b34f3
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1369614cfd20d39fee3f2c2dd1ca7436ae742d2b
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941804"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405385"
 ---
 # <a name="nonstandard-behavior"></a>Standart Dışı Davranış
 Aşağıdaki bölümlerde, C++'nın Visual C++ uygulamasının C++ standartıyla uyumlu olmadığı yerlerin bazıları listelenmiştir. Aşağıda verilen bölüm numaraları C++ 11 standartındaki (ISO/IEC 14882:2011(E)) bölüm numaralarına başvurur.  
@@ -67,7 +67,6 @@ int main() {
     g('c');  
 }  
 // Output: f(char)  
-  
 ```  
   
 ## <a name="function-exception-specifiers"></a>İşlev Özel Durum Belirleyicileri.  
@@ -81,7 +80,7 @@ void g() throw();    // parsed and used
  Özel durum belirtimleri hakkında daha fazla bilgi için bkz. [özel durum belirtimleri](../cpp/exception-specifications-throw-cpp.md).  
   
 ## <a name="chartraitseof"></a>char_traits::eof()  
- C++ standartı [char_traits::eof](../standard-library/char-traits-struct.md#eof) geçerli bir karşılık gelmelidir değil `char_type` değeri. Visual C++ derleyicisi türü için bu kısıtlamayı zorlar **char**, ancak türü `wchar_t`. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.  
+ C++ standartı [char_traits::eof](../standard-library/char-traits-struct.md#eof) geçerli bir karşılık gelmelidir değil `char_type` değeri. Visual C++ derleyicisi türü için bu kısıtlamayı zorlar **char**, ancak türü **wchar_t**. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.  
   
 ```cpp  
 #include <iostream>  

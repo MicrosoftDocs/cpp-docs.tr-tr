@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53a05467a876a8b305aba64e49e0763cf5690a56
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 52d1727018fd2ad214e031229945daa4d843f115
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940891"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403069"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -30,7 +30,6 @@ Sınıf üyeleri nasıl başlatılır özelleştirme veya sınıfının bir nesn
 Oluşturucular, isteğe bağlı olarak bir üye init listesini alabilir. Bu sınıf üyeleri Oluşturucusu gövdesinde değerler atayarak daha başlatmak için daha etkili bir yoludur. Aşağıdaki örnek, bir sınıfı gösterir `Box` üç aşırı yüklü oluşturucular. Son iki üye başlatma listeleri kullanın:
 
 ```cpp
-
 class Box {
 public:
     // Default constructor
@@ -55,13 +54,11 @@ private:
     int m_length{ 0 };
     int m_height{ 0 };
 };
-
 ```
 
 Bir sınıf örneği bildirdiğinizde, derleyici çağırmak için hangi kurucu aşırı yükleme çözünürlüğü kurallara göre seçer:
 
 ```cpp
-
 int main()
 {
     Box b; // Calls Box()
@@ -73,7 +70,6 @@ int main()
     // Using function-style notation:
     Box b4(2, 4, 6); // Calls Box(int, int, int)
 }
-
 ```
 
 - Oluşturucular olarak belirtilebilir **satır içi**, [açık](#explicit_constructors), **arkadaş** veya [constexpr](#constexpr_constructors).
@@ -87,7 +83,6 @@ Bir oluşturucu, isteğe bağlı olarak sınıfı üyeleri Oluşturucusu gövden
 Bir üye Başlatıcısı listesini kullanarak doğrudan üye başlatır çünkü Oluşturucu gövdesinde değerler atama üzerinden tercih edilir. Aşağıdaki örnekte üye başlatıcı listesi oluşan tüm gösterir **identifier(argument)** sonra iki nokta üst üste ifadeleri:
 
 ```cpp
-  
     Box(int width, int length, int height)
         : m_width(width), m_length(length), m_height(height)
     {}
@@ -133,7 +128,6 @@ int main() {
     Box box1; // Invoke compiler-generated constructor
     cout << "box1.Volume: " << box1.Volume() << endl; // Outputs 0
 }
-
 ```
 
 Örtülü varsayılan bir oluşturucu kullanırsanız, önceki örnekte gösterildiği gibi sınıf tanımının üye başlatma emin olun. Bu başlatıcılar olmadan üye başlatılmamış ve Volume() aramayı çöp değeri oluşturur. Genel olarak, bu şekilde üyeleri üzerinde örtülü varsayılan bir oluşturucuya bağlı değil bile, Başlat iyi bir uygulamadır.
@@ -141,7 +135,6 @@ int main() {
 Derleyici olarak tanımlayarak bir örtülü varsayılan oluşturucu oluşturmasını engelleyebilirsiniz [silinmiş](#explicitly_defaulted_and_deleted_constructors):
 
 ```cpp
-
     // Default constructor
     Box() = delete;
 
@@ -180,14 +173,12 @@ int main(){
     Box box2{ 2, 3, 4 };
     Box box3; // C2512: no appropriate default constructor available
 }
-
 ```
 
 Bir sınıfın varsayılan oluşturucusu yoksa, o sınıfa ait nesneler dizisi yalnızca köşeli paranteze sahip bir sözdizimi kullanılarak oluşturulamaz. Örneğin önceki kod bloğu düşünüldüğünde, bir Kutular dizisi şu şekilde bildirilemez:
 
 ```cpp
 Box boxes[3]; // C2512: no appropriate default constructor available
-
 ```
 
 Ancak, bir dizi Başlatıcı Listeleri kutusu nesnelerinin bir dizisi başlatmak için kullanabilirsiniz:
@@ -205,7 +196,6 @@ A *kopya Oluşturucu* nesneyi aynı türde bir nesneden üye değerlerinin kopya
 Kopya Oluşturucu bu imzalar birine sahip:
 
 ```cpp
-
     Box(Box& other); // Avoid if possible--allows modification of other.
     Box(const Box& other);
     Box(volatile Box& other);
@@ -240,7 +230,6 @@ Derleyici bir taşıma Oluşturucusu kaynakları burada nesne edilmek üzere old
 #include <string>
 #include <algorithm>
 using namespace std;
-
 
 class Box {
 public:
@@ -298,8 +287,6 @@ int main()
     cin >> ch; // keep window open
     return 0;
 }
-
-
 ```
 
 Bir sınıf bir taşıma Oluşturucu tanımlamıyorsa, hiçbir kullanıcı bildirilen kopya Oluşturucu, kopya atama işleci, taşıma atama işleci veya yıkıcı ise, derleyici örtük bir oluşturur. Hiçbir açık veya örtülü taşıma Oluşturucusu tanımlanmazsa, aksi takdirde bir taşıma Oluşturucusu kullanacağınız operations kopya Oluşturucu kullanın. Bir sınıf, bir taşıma Oluşturucusu veya taşıma atama işleci bildirirse, örtük olarak bildirilmiş bir kopya Oluşturucu silindi olarak tanımlanmış.
@@ -338,7 +325,6 @@ Bir oluşturucu olarak bildirilebilir [constexpr](constexpr-cpp.md) varsa
 - tüm statik olmayan veri üyeleri ve temel sınıf alt nesneler başlatılır;
 - sınıf (a) bir birleşimdir değişken üyelerinin olması ya da (b) olan anonim birleşimler, yalnızca bir birleşim üyeleri başlatılır;
 - her sınıf türünün statik olmayan veri üyesi ve tüm taban sınıfı alt nesneleri bir constexpr oluşturucusuna sahip
-
 
 ## <a name="init_list_constructors"></a> Başlatıcı listesi oluşturucular
 
@@ -385,13 +371,11 @@ private:
 }
 //elsewhere...
     ShippingOrder so(42, 10.8);
-
 ```
 
 Bu tür dönüştürmeler bazı durumlarda yararlı olabilir, ancak daha sık küçük ancak önemli hataları kodunuzda açabilir. Genel kural olarak, kullanmalısınız **açık** anahtar sözcüğü bu tür bir örtük tür dönüştürme önlemek için bir oluşturucu (ve kullanıcı tanımlı işleçler):
 
 ```cpp
-
 explicit Box(int size): m_width(size), m_length(size), m_height(size){}
 ```
 
@@ -412,7 +396,6 @@ Bir oluşturucu kendi işini şu sırayla gerçekleştirir:
 Aşağıdaki örnek, türetilmiş bir sınıfın oluşturucusundaki temel sınıfın ve üye oluşturucuların çağrılma sırasını göstermektedir. Önce taban oluşturucu çağrılır, sonra taban sınıfı üyeleri sınıf bildiriminde görüldükleri sırayla başlatılır ve ardından türetilen oluşturucu çağrılır.
 
 ```cpp
-
 #include <iostream>
 
 using namespace std;
@@ -450,12 +433,11 @@ private:
 int main() {
     DerivedContainer dc;
 }
-
 ```
 
 Çıkış şu şekildedir:
 
-```output
+```Output
 Contained1 ctor
 Contained2 ctor
 BaseContainer ctor
@@ -463,7 +445,7 @@ Contained3 ctor
 DerivedContainer ctor
 ```
 
-Bir türetilmiş sınıf oluşturucusu her zaman bir taban sınıf oluşturucusunu çağırır, böylece bu sınıf ek bir çalışma yapılmadan önce tümüyle oluşturulmuş taban sınıflarına dayanabilir. Temel sınıf oluşturucuları türetilme sıralarına göre çağrılır; örneğin SınıfA SınıfB'den, o ise SınıfC'den türetilmişse, önce SınıfC oluşturucusu, ardından SınıfB oluşturucusu, ardından da SınıfA oluşturucusu çağrılır.
+Bir türetilmiş sınıf oluşturucusu her zaman bir taban sınıf oluşturucusunu çağırır, böylece bu sınıf ek bir çalışma yapılmadan önce tümüyle oluşturulmuş taban sınıflarına dayanabilir. Temel sınıf oluşturucuları türetme sırayla çağrılır — Örneğin, varsa `ClassA` türetilir `ClassB`, türetilen `ClassC`, `ClassC` Oluşturucusu önce çağrılır sonra `ClassB` oluşturucusu, ardından `ClassA` Oluşturucusu.
 
 Bir taban sınıfında varsayılan bir oluşturucu yoksa, türetilen sınıf oluşturucusu içinde temel sınıf oluşturucu parametresini sağlamalısınız:
 
@@ -537,18 +519,15 @@ public:
 int main() {
     DerivedClass dc;
 }
-
 ```
 
 Aşağıdaki çıktıyı beklemelisiniz:
 
-```output
-
+```Output
 BaseClass1 ctor
 BaseClass2 ctor
 BaseClass3 ctor
 DerivedClass ctor
-
 ```
 
 ## <a name="virtual_functions_in_constructors"></a> Oluşturucularda sanal işlevler
@@ -587,7 +566,7 @@ int main() {
 
 Çıkış şu şekildedir:
 
-```output
+```Output
 BaseClass print_it
 Derived Class print_it
 ```
@@ -666,7 +645,6 @@ Derived d1(5) calls: Base(int)
 Derived d1('c') calls: Base(char)
 Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
-
 ```
 
 Using deyimi, temel sınıftan türetilmiş bir sınıf içindeki Oluşturucu ile aynı imzaya sahip olanlar dışındaki tüm oluşturucular kapsamına getirir. Genel olarak, devralma oluşturucuları türetilen sınıfın yeni hiçbir veri üyeleri bildirir olduğunda veya oluşturucuları kullanmak en iyisidir.
@@ -679,7 +657,6 @@ class Derived : T {
     using T::T;   // declare the constructors from T
     // ...
 };
-
 ```
 
 Bu temel sınıfların aynı imzaya sahip oluşturucuları varsa birden çok temel sınıftan türetilen bir sınıf devralınamaz.

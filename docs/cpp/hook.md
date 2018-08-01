@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7721e617541b962994b115344f33e1ec59e4acaf
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: af8470d0ae45d1075fa8b35585225ee0c48db80b
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948246"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406513"
 ---
 # <a name="hook"></a>__hook
 İle bir olay işleyicisi yöntemi ilişkilendirir.  
@@ -30,7 +30,6 @@ ms.locfileid: "37948246"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 long __hook(  
    &SourceClass::EventMethod,  
    source,  
@@ -103,7 +102,7 @@ long __hook(
 ## <a name="example"></a>Örnek  
  Bkz: [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md) ve [com'da olay işleme](../cpp/event-handling-in-com.md) örnekleri için.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Olay işleme](../cpp/event-handling.md)   
  [event_source](../windows/event-source.md)   

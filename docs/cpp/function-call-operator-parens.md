@@ -20,14 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb1cdd4ec5dc556f0427914ca8ec746ad3ad2ccc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1b0c4cde0c50064c5a88469e8f9061a0321902e4
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408589"
 ---
 # <a name="function-call-operator-"></a>İşlev Çağırma İşleci: ()
-İşlev çağırma işleci tarafından izlenen bir sonek ifadesi **()**, bir işlev çağrısı belirtir.  
+İşlev çağrısı işleci bir sonek ifadesi **()**, bir işlev çağrısı belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,41 +38,41 @@ postfix-expression
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Virgülle ayrılmış sıfır veya daha fazla ifade işlev çağırma işleci için bağımsız değişkenler — işlevine gerçek bağımsız değişkenler.  
+ Virgülle ayrılmış ifadeler sıfır veya daha fazla işlev çağrısı işlecinin bağımsız değişkenler — gerçek bağımsız değişkenler işleve.  
   
- *Sonek ifade* bir işlev adresi (örneğin, bir işlev tanımlayıcısı veya bir işlev işaretçisi değerini) değerlendirmeniz gerekir ve *bağımsız değişken ifadesi listesi* ifadeleri (ayrılmış bir listesi virgül tarafından) değerleri (bağımsız değişkenler) işlevine geçirilir. *Bağımsız değişken ifadesi listesi* bağımsız değişkeni boş olamaz.  
+ *Sonek ifadesi* bir işlev adresini (örneğin, bir işlev Belirleyicisi veya işlev işaretçisinin değeri) değerlendirmelidir ve *bağımsız değişken ifade listesi* (ayrılmış ifadeler listesi virgülle) değerleri (bağımsız değişkenleri) işleve geçirilir. *Bağımsız değişken ifade listesi* bağımsız değişkeni boş olabilir.  
   
- *Sonek ifade* bu türlerden biri olmalıdır:  
+ *Sonek ifadesi* bu türlerden biri olmalıdır:  
   
--   Türü döndüren işlev `T`. Bir örnek bildirimi  
+-   Türü döndüren bir işlev `T`. Örnek bildirimi şu şekildedir  
   
-    ```  
+    ```cpp 
     T func( int i )  
     ```  
   
--   Türü döndüren bir işlev işaretçisi `T`. Bir örnek bildirimi  
+-   Türü döndüren bir işlev işaretçisine `T`. Örnek bildirimi şu şekildedir  
   
-    ```  
+    ```cpp 
     T (*func)( int i )  
     ```  
   
--   Başvuru türü döndüren bir işlev `T`. Bir örnek bildirimi  
+-   Başvuru türü döndüren bir işlevin `T`. Örnek bildirimi şu şekildedir  
   
-    ```  
+    ```cpp 
     T (&func)(int i)  
     ```  
   
--   İşaretçi-üye fonksiyonu başvuru döndürmeyi türü `T`. Örnek işlev çağrıları  
+-   İşaretçi-üye işlev döndürme türü başvuru `T`. Örnek işlev çağrıları  
   
-    ```  
+    ```cpp 
     (pObject->*pmf)();  
     (Object.*pmf)();  
     ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek standart kitaplığı işlevi çağırır `strcat_s` üç bağımsız değişken:  
+ Aşağıdaki örnek standart kitaplık işlevini çağırır `strcat_s` üç bağımsız değişken ile:  
   
-```  
+```cpp 
 // expre_Function_Call_Operator.cpp  
 // compile with: /EHsc  
   
@@ -102,9 +103,9 @@ Welcome to C++
 ```  
   
 ## <a name="function-call-results"></a>İşlev çağrısı sonuçları  
- İşlevi bir başvuru türü olarak bildirilmiş sürece bir işlev çağrısı için bir r değerlendirir. Başvuru dönüş türü işlevleriyle l-değerlerini değerlendirmek ve Atama ifadesinin sol tarafta gibi kullanılabilir:  
+ Bir başvuru türü işlev bildirildiği sürece bir işlev çağrısı için bir r değerlendirir. Başvuru dönüş türü içeren işlevler l-değerler ve atama deyiminin sol tarafında aşağıdaki gibi kullanılabilir:  
   
-```  
+```cpp 
 // expre_Function_Call_Results.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -134,11 +135,11 @@ int main()
 }  
 ```  
   
- Önceki kod adlı bir sınıf tanımlar `Point`, özel veri içeren temsil eden nesneler *x* ve *y* koordinatları. Bu veri nesneleri değiştirilmesi gerekir ve bunların değerleri alınır. Bu program yalnızca bu tür bir sınıf için birkaç tasarımlar biridir; kullanımı `GetX` ve `SetX` veya `GetY` ve `SetY` işlevleri başka bir olası tasarım;.  
+ Yukarıdaki kod adında bir sınıf tanımlar `Point`, özel veri içeren temsil eden nesneleri *x* ve *y* koordinatları. Bu veri nesneleri değiştirilmesi gerekir ve bunların değerlerini alınır. Bu program yalnızca bu tür bir sınıf için birkaç tasarımlar biridir; Kullanım `GetX` ve `SetX` veya `GetY` ve `SetY` işlevleri, başka bir olası tasarım.  
   
- Bu dönüş sınıf türleri İşlevler, sınıf türleri işaretçiler veya sınıf türleri başvuruları üye seçim işleçleri için sol işleneni olarak kullanılabilir. Bu nedenle, aşağıdaki kodu uygundur:  
+ Bu dönüş sınıf türleri İşlevler, sınıf türleri için işaretçiler veya başvurular sınıf türleri için üye seçim işleçleri sol işleneni olarak kullanılabilir. Bu nedenle, aşağıdaki kod geçerlidir:  
   
-```  
+```cpp 
 // expre_Function_Results2.cpp  
 class A {  
 public:  
@@ -179,9 +180,9 @@ int main() {
 }  
 ```  
   
- Yinelemeli işlevler çağrılabilir. İşlev bildirimleri hakkında daha fazla bilgi için bkz: [işlevler](functions-cpp.md). İlgili malzeme konusu [Program ve bağlantı](../cpp/program-and-linkage-cpp.md).  
+ Özyinelemeli işlevler çağrılabilir. İşlev bildirimleri hakkında daha fazla bilgi için bkz: [işlevleri](functions-cpp.md). İlgili malzeme konusu [Program ve bağlantı](../cpp/program-and-linkage-cpp.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sonek ifadeleri](../cpp/postfix-expressions.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [İşlev Çağrısı](../c-language/function-call-c.md)   

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce9ed1669d3157327f161643320f20ec5787e17d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7818836406677aa1613c757a1d688cc93ca33045
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415692"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405100"
 ---
 # <a name="class-templates"></a>Sınıf Şablonları
-Bu konuda C++ sınıf şablonları için özel kurallar açıklanmaktadır.  
+Bu konuda, C++ sınıf şablonları için özel kurallar açıklanmaktadır.  
   
 ## <a name="member-functions-of-class-templates"></a>Sınıf şablonlarının üye işlevleri  
  Üye işlevleri, bir sınıf şablonunun içinde veya dışında tanımlanabilir. Sınıf şablonunun dışında tanımlanmışlarsa, işlev şablonu gibi tanımlanırlar.  
@@ -81,15 +81,14 @@ void X<T>::mf(const U &u)
 int main()  
 {  
 }  
-  
 ```  
   
 ## <a name="nested-class-templates"></a>İç içe geçmiş sınıf şablonları  
- Şablonları sınıfları veya sınıf şablonları içinde tanımlanmış, bu durumda bunlar için üye şablonları adlandırılır. Sınıflardır üye şablonları iç içe geçmiş sınıf şablonları olarak adlandırılır. İşlevlerdir üye şablonları içinde ele alınmıştır [üye işlev şablonları](../cpp/member-function-templates.md).  
+ Şablonları sınıflar veya sınıf şablonları içinde tanımlanan, bu durumda bunlar için üye şablonları adlandırılır. Sınıf üye şablonları, iç içe geçmiş sınıf şablonları adlandırılır. İşlevleri, üye şablonları açıklanmıştır [üye işlev şablonları](../cpp/member-function-templates.md).  
   
- İç içe geçmiş sınıf şablonları dış sınıf kapsamı içinde sınıf şablonları olarak bildirilir. Bunlar içinde veya dışında kapsayan sınıfı tanımlanabilir.  
+ İç içe geçmiş sınıf şablonları, dış sınıf kapsamı içinde sınıf şablonları olarak bildirilir. Bunlar, içinde veya kapsayan sınıfa dışında tanımlanabilir.  
   
- Aşağıdaki kod, normal bir sınıf içinde iç içe geçmiş sınıf şablon gösterir.  
+ Aşağıdaki kodda, sıradan bir sınıf içinde iç içe geçmiş sınıf şablonu gösterilmektedir.  
   
 ```cpp  
 // nested_class_template1.cpp  
@@ -418,8 +417,8 @@ A
 a  
 ```  
   
-## <a name="reuse-of-template-parameters"></a>Şablon parametreleri kullanılmasını  
- Şablon parametreleri şablon parametre listesinde yeniden kullanılabilir. Örneğin, aşağıdaki kodu izin verilir:  
+## <a name="reuse-of-template-parameters"></a>Şablon parametrelerinin yeniden kullanımı  
+ Şablon parametreleri şablon parametre listesinde yeniden kullanılabilir. Örneğin, aşağıdaki koda izin verilir:  
   
 ```cpp  
 // template_specifications2.cpp  
@@ -444,5 +443,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Şablonlar](../cpp/templates-cpp.md)

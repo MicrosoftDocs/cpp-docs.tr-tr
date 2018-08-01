@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84738fa2c99e658d4e05dc45a9f942218964eb68
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c7e7b426d3bc4f0913422f508279db9727f6e1f8
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414682"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406825"
 ---
 # <a name="expressions-with-binary-operators"></a>İkili İşleçli İfadeler
 İkili işleçler bir ifadedeki iki işlenen üzerinde işlem yapar. İkili işleçler şunlardır:  
@@ -52,7 +52,7 @@ ms.locfileid: "32414682"
   
     -   Büyüktür (>)  
   
-    -   Küçük veya eşit (\<=)  
+    -   Küçük veya eşittir (\<=)  
   
     -   Büyüktür veya eşittir (> =)  
   
@@ -64,9 +64,9 @@ ms.locfileid: "32414682"
   
     -   [Bit düzeyinde AND (&)](../cpp/bitwise-and-operator-amp.md)  
   
-    -   [Bit düzeyinde XOR (^)](../cpp/bitwise-exclusive-or-operator-hat.md)  
+    -   [Bit düzeyinde dışlamalı OR (^)](../cpp/bitwise-exclusive-or-operator-hat.md)  
   
-    -   [Bit düzeyinde kapsamlı OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)  
+    -   [Bit düzeyinde kapsamalı OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)  
   
 -   Mantıksal işleçler  
   
@@ -92,13 +92,13 @@ ms.locfileid: "32414682"
   
     -   Sağa kaydırma ataması (>> =)  
   
-    -   Bit düzeyinde AND atama (& =)  
+    -   Bit düzeyinde AND ataması (& =)  
   
     -   Bit düzeyinde dışlamalı OR ataması (^=)  
   
-    -   Bit düzeyinde kapsamlı OR Ataması (&#124;=)  
+    -   Bit düzeyinde kapsamalı OR Ataması (&#124;=)  
   
 -   [Virgül işleci](../cpp/comma-operator.md) (,)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İfade Türleri](../cpp/types-of-expressions.md)

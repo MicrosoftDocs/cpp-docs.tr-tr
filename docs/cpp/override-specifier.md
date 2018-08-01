@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b50ffc096cc710f4028c7effc2dda8822f077f29
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c95a67df03f62279b7b9c46ef41b6cafe7ff3df1
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940660"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408157"
 ---
 # <a name="override-specifier"></a>override Tanımlayıcısı
 Kullanabileceğiniz **geçersiz kılma** üye bir temel sınıf sanal işlevi geçersiz kılan işlevleri tanımlamak için anahtar sözcüğü.  
@@ -27,7 +27,6 @@ Kullanabileceğiniz **geçersiz kılma** üye bir temel sınıf sanal işlevi ge
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 function-declaration override;  
 ```  
   
@@ -56,9 +55,7 @@ class DerivedClass: public BaseClass
     virtual void funcC(double = 0.0); // DerivedClass::funcC(double) has a different  
                                       // parameter type than BaseClass::funcC(int), so  
                                       // DerivedClass::funcC(double) is a new member function  
-  
 };  
-  
 ```  
   
  Kullanırken **geçersiz kılma**, derleyici sessiz bir şekilde yeni üye işlevleri oluşturmak yerine hatalar üretir.  
@@ -86,12 +83,10 @@ class DerivedClass: public BaseClass
     void funcD() override; // compiler error: DerivedClass::funcD() does not   
                            // override the non-virtual BaseClass::funcD()  
 };  
-  
 ```  
   
  İşlevlerin geçersiz kılınamaz ve sınıfların devralınamaz olduğunu belirtmek için kullanın [son](../cpp/final-specifier.md) anahtar sözcüğü.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [final tanımlayıcısı](../cpp/final-specifier.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)   
- 

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37098e904402a42f6ff28e594db265fc07b4d458
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: de433a1eccab3b58858aaf5fd3aa9ddb04d0cc1c
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948137"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406083"
 ---
 # <a name="noinline"></a>noinline
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -42,7 +42,7 @@ class X {
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [__declspec](../cpp/declspec.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Satır içi, __inline, \__forceinline](inline-functions-cpp.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6116baca2303807748a4d282acda81233ed32957
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 28f0cedbe20ebea21b3b10e5016605c1bce51383
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957393"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407393"
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 Erişim denetimleri birbirinden ayırmak etkinleştirme [genel](../cpp/public-cpp.md) bir sınıfın arabirim [özel](../cpp/private-cpp.md) uygulama ayrıntılarını ve [korumalı](../cpp/protected-cpp.md) tarafından yalnızca olan üyeleri kullanın türetilmiş sınıflar. Erişim belirticisi sonraki erişim belirticisi karşılaşılanaa kadar sonra bildirilen tüm üyeleri için geçerlidir.  
@@ -42,7 +42,6 @@ private:                 // Declare private state variables.
 protected:      // Declare protected function for derived classes only.  
     Point ToWindowCoords();  
 };  
-  
 ``` 
   
  Varsayılan erişim **özel** bir sınıftaki ve **genel** yapı veya birleşim. Erişim tanımlayıcıları sınıfında olabilir herhangi sayıda herhangi bir sırada kullanılır. Sınıf türü nesneleri için depolama alanı ayırma uygulamaya bağlıdır, ancak üyelere, erişim belirticileri arasında sırayla daha yüksek bellek adresleri atanması garantidir.  
@@ -229,5 +228,5 @@ Devralma Grafiğinin Yolları Üzerinde Erişim
   
  Şekilde `VBase` sınıfında bildirilen bir ada her zaman `RightPath` sınıfıyla ulaşılır. `RightPath``VBase`'i özel olarak bildirirken, `LeftPath``VBase`'i genel bir temel sınıf olarak bildirdiği için sağdaki yol daha fazla erişilebilirdir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

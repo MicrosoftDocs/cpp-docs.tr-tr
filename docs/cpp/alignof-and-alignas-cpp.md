@@ -12,18 +12,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e2988d1260cac91e2614765aba8ae1b9be9b922
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c10821f7e71c928fa749c2b85bd076cb9af6d04a
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407994"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402422"
 ---
 # <a name="alignof-and-alignas-c"></a>alignof ve alignas (C++)
-`alignas` Tür belirteci değişkenler ve kullanıcı tanımlı türler özel hizalamasını belirtmek için bir yoldur taşınabilir, C++ standart. `alignof` İşlecidir benzer şekilde belirtilen türe veya değişken hizalamasını elde etmek için standart ve taşınabilir bir yol.  
+**Alignas** tür tanımlayıcısı, değişkenler ve kullanıcı tanımlı türler özel hizalaması belirtmek için bir taşınabilir, C++ standart yoludur. **Alignof** işleci benzer şekilde, belirtilen tür veya değişken hizalamasını elde etmek için standart, taşınabilir bir yoludur.  
   
 ## <a name="example"></a>Örnek  
- Kullanabileceğiniz `alignas` harfi veya birleşim, bir sınıf ya da tek tek üyeleri. Zaman birden çok `alignas` tanımlayıcıları ile karşılaşıldı, derleyici (en büyük değere sahip bir) sıkı bir seçeceksiniz.  
+ Kullanabileceğiniz **alignas** büyük/küçük harfi, veya UNION, bir sınıf ya da tek tek üyeleri. Zaman birden çok **alignas** tanımlayıcıları karşılaştı, derleyici en katı bir (en büyük değere sahip olanla) seçersiniz.  
   
 ```cpp  
 // alignas_alignof.cpp
@@ -44,5 +44,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Hizalama](../cpp/alignment-cpp-declarations.md)

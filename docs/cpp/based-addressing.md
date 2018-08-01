@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b0fecf99e62932ca363dffc23ac594c37916f84
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2ad6f120c3b271cf5b12af06258f133cb0518d64
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408012"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407799"
 ---
 # <a name="based-addressing"></a>Tabanlı Adresleme
 Bu bölüm şu konuları içerir:  
@@ -30,5 +30,5 @@ Bu bölüm şu konuları içerir:
   
 -   [Tabanlı İşaretçiler](../cpp/based-pointers-cpp.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)

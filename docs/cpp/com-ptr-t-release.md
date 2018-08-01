@@ -17,30 +17,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a8a734eae486ca5e88009301b13d71b21473d9f
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1c5da56c3c85c17bcd2cd91f9fa5a5f8399e9528
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939262"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404281"
 ---
 # <a name="comptrtrelease"></a>_com_ptr_t::Release
 **Microsoft'a özgü**  
   
- Çağrıları `Release` üye işlevinin `IUnknown` kapsüllenmiş arabirim işaretçisini üzerinde.  
+ Çağrıları **yayın** üye işlevinin `IUnknown` kapsüllenmiş arabirim işaretçisini üzerinde.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 void Release( );  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağrıları `IUnknown::Release` bu arabirim işaretçisi, NULL ise kapsüllenmiş arabirim işaretçisini e_poınter hata oluşturma.  
+ Çağrıları `IUnknown::Release` kapsüllenmiş arabirim işaretçisini üzerinde oluşturma bir `E_POINTER` bu arabirim işaretçisi, NULL ise hata.  
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

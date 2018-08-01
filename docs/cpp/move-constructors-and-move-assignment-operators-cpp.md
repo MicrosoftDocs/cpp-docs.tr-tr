@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af1220cbb6b872ebd0370cfa526aba47338e70e6
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 33ed35d02547acdbc9a08928a6e698c3e039d745
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028157"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405577"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>Taşıma Oluşturucuları ve Taşıma Atama İşleçleri (C++)
 Bu konu nasıl yazılacağını açıklar bir *taşıma Oluşturucu* ve bir C++ sınıfına ilişkin taşıma ataması işleci. Taşıma Oluşturucusu kopyalamadan bir lvalue taşınacak rvalue nesnesi tarafından sahip olunan kaynakları sağlar. Semantik taşıma hakkında daha fazla bilgi için bkz. [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
@@ -250,7 +250,7 @@ int main()
   
  Bu örnek aşağıdaki çıktıyı üretir:  
   
-```  
+```Output  
 In MemoryBlock(size_t). length = 25.  
 In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.  
 In ~MemoryBlock(). length = 0.  
@@ -273,7 +273,7 @@ In ~MemoryBlock(). length = 75. Deleting resource.
   
  Visual Studio 2010'dan önce bu örnek aşağıdaki çıktıyı üretilen:  
   
-```  
+```Output  
 In MemoryBlock(size_t). length = 25.  
 In MemoryBlock(const MemoryBlock&). length = 25. Copying resource.  
 In ~MemoryBlock(). length = 25. Deleting resource.  
@@ -304,7 +304,6 @@ In ~MemoryBlock(). length = 75. Deleting resource.
  Sınıfınız için hem bir taşıma oluşturucusuna ve taşıma atama işleci sağlarsanız, taşıma atama işlecini çağırmak için taşıma kurucunuzu yazarak artıklı kodu çıkarabilirsiniz. Aşağıdaki örnek, taşıma atama işlecini çağıran bir taşıma Oluşturucusu düzeltilmiş bir hali gösterilmektedir:  
   
 ```cpp
-  
 // Move constructor.  
 MemoryBlock(MemoryBlock&& other)  
    : _data(nullptr)  
@@ -316,6 +315,6 @@ MemoryBlock(MemoryBlock&& other)
   
  [Std::move](../standard-library/utility-functions.md#move) işlevi rvalue özelliğini korur *diğer* parametresi.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md)   
  [\<yardımcı programı > Taşı](http://msdn.microsoft.com/abef7e85-9dd6-4724-85da-d7f7fe95dca9)

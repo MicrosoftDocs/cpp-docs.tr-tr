@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 697f4a83cb0b5f9aabb7ce477c4664cb39fb7f97
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: f8e25564d89eaf665baa473d7725ab69e2355ccb
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948269"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406311"
 ---
 # <a name="dynamiccast-operator"></a>dynamic_cast İşleci
 İşlenen dönüştürür `expression` türünde bir nesne için `type-id`.  
@@ -29,7 +29,6 @@ ms.locfileid: "37948269"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 dynamic_cast < type-id > ( expression )  
 ```  
   
@@ -296,6 +295,6 @@ in GlobalTest
 Can't cast to C  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Atama İşleçleri](../cpp/casting-operators.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

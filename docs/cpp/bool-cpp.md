@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3bd43c9ceb4f0a0f73b86e3a4ecf4d851d504b3
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 058979420e5bb1426879522e70ec8b1ac768d9cc
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939318"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407409"
 ---
 # <a name="bool-c"></a>bool (C++)
 
@@ -61,6 +61,5 @@ Sonek veya önek **--** işleci bu türden bir değişkene uygulanamaz.
  **Bool** türü tamsayı yükseltmelerine katılır. Türündeki bir r **bool** bir tür için dönüştürülebilir **int**, FALSE olma sıfır ile haline TRUE. Farklı bir tür **bool** aşırı yükleme çözümlemesinde rol oynar.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
-
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[Temel Türler](../cpp/fundamental-types-cpp.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)  
+[Temel Türler](../cpp/fundamental-types-cpp.md)  

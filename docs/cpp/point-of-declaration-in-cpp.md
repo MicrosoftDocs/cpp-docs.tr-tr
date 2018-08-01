@@ -14,18 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e42f43e6187e19df6e9c1111c0e92aa4b9929199
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 89f94cdee6be18436b3f39f840fb7880e5860adb
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408703"
 ---
 # <a name="point-of-declaration-in-c"></a>C++ bildirim noktası
-Kendi bildirimcisi hemen sonra ancak kendi (isteğe bağlı) Başlatıcı önce bildirilmesi için bir ad olarak kabul edilir. (Bildirimciler hakkında daha fazla bilgi için bkz: [bildirimler ve tanımlar](declarations-and-definitions-cpp.md).)  
+Kendi bildirimci hemen sonra ancak (isteğe bağlı) başlatıcısı önce bildirilmesi için bir ad olarak kabul edilir. (Bildirimciler hakkında daha fazla bilgi için bkz. [bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md).)  
   
  Bu örneği göz önünde bulundurun:  
   
-```  
+```cpp 
 // point_of_declaration1.cpp  
 // compile with: /W1   
 double dVar = 7.0;  
@@ -35,7 +36,7 @@ int main()
 }  
 ```  
   
- Bildirim noktası olsaydı *sonra* başlatma sonra yerel `dVar` 7.0, genel değişkenin değerini başlatılmış `dVar`. Ancak, bu durumda, olmadığından `dVar` tanımlanmamış bir değere başlatılır.  
+ Bildirim noktası olsaydı *sonra* başlatma ve ardından yerel `dVar` 7.0, genel değişkeninin değerini başlatılan `dVar`. Ancak, bu durumda olmadığından `dVar` tanımsız bir değerle başlatılır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Kapsam](../cpp/scope-visual-cpp.md)

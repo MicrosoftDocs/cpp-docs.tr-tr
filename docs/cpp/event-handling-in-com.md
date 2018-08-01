@@ -26,18 +26,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f60a0a8a53d77c2d8aa111ce812bf64ab11c4910
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1a4fddaa53aed54fd33afee9205fcc9a3819f1b6
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948035"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406873"
 ---
 # <a name="event-handling-in-com"></a>COM'da Olay İşleme
 COM olay işlemede, ayarladığınız kullanarak bir olay kaynağı ve olay alıcı [event_source](../windows/event-source.md) ve [event_receiver](../windows/event-receiver.md) sırasıyla belirten öznitelikleri `type` = `com`. Bu öznitelikler uygulandıkları sınıfların olayları tetiklemesine ve olayları COM bağlantı noktalarıyla işlemesine olanak vermek için özel, dağılma ve ikili arabirimler için uygun kodu eklerler.  
   
 ## <a name="declaring-events"></a>Olayları Bildirme  
- Bir olay kaynağı sınıfında kullanın [__event](../cpp/event.md) anahtar sözcüğü, bu arabirimin yöntemlerini olaylar olarak bildirmek için bir arabirim bildirimi. Söz konusu arabirimin olayları, siz onları arabirim yöntemleri olarak çağırdığınızda tetiklenir. Olay arabirimlerindeki yöntemler, sıfır veya daha fazla parametre içerebilir (tümü olacağı `in` parametreleri). Dönüş türü void veya herhangi bir tamsayı türü olabilir.  
+ Bir olay kaynağı sınıfında kullanın [__event](../cpp/event.md) anahtar sözcüğü, bu arabirimin yöntemlerini olaylar olarak bildirmek için bir arabirim bildirimi. Söz konusu arabirimin olayları, siz onları arabirim yöntemleri olarak çağırdığınızda tetiklenir. Olay arabirimlerindeki yöntemler, sıfır veya daha fazla parametre içerebilir (tümü olacağı *içinde* parametreleri). Dönüş türü void veya herhangi bir tamsayı türü olabilir.  
   
 ## <a name="defining-event-handlers"></a>Olay işleyicisi tanımlama  
  Bir olay alıcısı sınıfında, işleyecekleri olayla eşleşen imzalı yöntemler (dönüş türleri, çağrı kuralları ve bağımsız değişkenler) olan olay işleyicilerini tanımlarsınız. COM olayları için çağırma kuralları eşleşmesi gerekmez; bkz: [düzene bağımlı COM olayları](#vcconeventhandlingincomanchorlayoutdependentcomevents) altındaki ayrıntılar için.  
@@ -216,5 +216,5 @@ public:
 };  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Olay İşleme](../cpp/event-handling.md)

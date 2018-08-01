@@ -18,31 +18,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55225ba97848b2b503742d15ccf032e99342f0be
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ebe1f3ad7b0fc46e1edba013f4cc986f1771972d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408634"
 ---
 # <a name="bstrtwchart-bstrtchar"></a>_bstr_t::wchar_t *, _bstr_t::char*
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- BSTR karakterleri dar veya uluslararası karakter dizisi olarak döndürür.  
+ BSTR karakter, bir dar veya geniş karakter dizisi olarak döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      operator const wchar_t*( ) const throw( );   
+operator const wchar_t*( ) const throw( );   
 operator wchar_t*( ) const throw( );   
 operator const char*( ) const;   
 operator char*( ) const;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işleçlere yalıtılan karakter verileri ayıklamak için kullanılabilir `BSTR` nesnesi. Yeni bir değer döndürülen işaretçi atayarak özgün BSTR verileri değiştirmez.  
+ Bu işleçler yalıtılan karakter verileri ayıklamak için kullanılabilir `BSTR` nesne. Yeni bir değer döndürülen işaretçi atama orijinal BSTR verileri değiştirmez.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

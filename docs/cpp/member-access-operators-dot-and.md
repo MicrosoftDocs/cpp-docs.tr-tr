@@ -1,5 +1,5 @@
 ---
-title: Üye erişimi işleçleri:. ve -&gt; | Microsoft Docs
+title: Üye erişim işleçleri:. ve -&gt; | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -24,13 +24,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2958291551d081b4284c6683d62f6dd5de06f70d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 91ec7e11272e0a7286d77e3fc96b7437007a0f8d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408526"
 ---
-# <a name="member-access-operators--and--gt"></a>Üye erişimi işleçleri:. ve -&gt;
+# <a name="member-access-operators--and--gt"></a>Üye erişim işleçleri:. ve -&gt;
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
@@ -39,18 +40,18 @@ postfix-expression -> name
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Üye erişimi işleçleri **.** ve **->** yapılar, birleşimler ve sınıflar üyelerine başvurmak için kullanılır. Üye erişimi ifadeleri seçilen üye türü ve değeri sahip.  
+ Üye erişim işleçleri **.** ve **->** yapılar, birleşimler ve sınıfların üyelerine başvurmak için kullanılır. Üye erişimi ifadeleri, seçili üyenin türü ve değerine sahip.  
   
  Üye erişimi ifadeleri iki tür vardır:  
   
-1.  İlk formunda *sonek ifade* yapısı, sınıf veya birleşim türü değerini temsil eder ve *adı* belirtilen yapısı, UNION veya sınıf üyesi adları. İşlemi, değeri *adı* ve bir l-değeri ise *sonek ifade* l-değeri.  
+1.  İlk biçiminde *sonek ifadesi* yapısı, sınıfı ya da birleşim türünün bir değeri temsil eder ve *adı* belirtilen yapı, birlik veya üye adları. İşlem, değeri *adı* ve bir l-değeri ise *sonek ifadesi* bir l değeridir.  
   
-2.  İkinci formunda *sonek ifade* bir işaretçi yapısı, UNION veya sınıfı temsil eder ve *adı* belirtilen yapısı, UNION veya sınıf üyesi adları. Değer budur *adı* ve bir l-değeri. **->** İşleci dereferences işaretçi. Bu nedenle, ifadeler * e ***->** `member` ve **(\****e***)**.`member` (burada *e* bir işaretçi temsil eder) verim aynı sonuçları (olmadığı dışında işleçleri **->** veya **\*** aşırı yüklenmiş olan iş).  
+2.  İkinci biçiminde *sonek ifadesi* yapı, birleşim veya sınıf, bir işaretçiyi temsil eder ve *adı* belirtilen yapı, birlik veya üye adları. Değer budur *adı* ve bir l değeridir. **->** İşleci işaretçinin başvurusunu kaldırır. Bu nedenle, ifadeleri * e ***->** `member` ve **(\****e***)**.`member` (burada *e* bir işaretçiyi temsil eder) aynı sonuçları (olmadığı dışında işleçleri **->** veya **\*** aşırı).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, her iki üye erişimi işleci biçimlerinin gösterir.  
+ Aşağıdaki örnek, üye erişim işleci, her iki biçimi gösterir.  
   
-```  
+```cpp 
 // expre_Selection_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -82,8 +83,8 @@ int main() {
 2/1/2000  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sonek ifadeleri](../cpp/postfix-expressions.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)   
  [Yapı ve Birleşim Üyeleri](../c-language/structure-and-union-members.md)

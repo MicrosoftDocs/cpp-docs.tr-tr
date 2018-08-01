@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b37df4146b23404463ec869e00a8cf5298b7acf5
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 45dc0dfe85e7693cdea9c6e469ff347d75c13d57
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941011"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402952"
 ---
 # <a name="ellipses-and-variadic-templates"></a>Üç Nokta ve Variadic Şablonları
 Bu makalede, üç nokta kullanılacak gösterilmektedir (`...`) C++ değişen sayıda bağımsız değişken şablonları ile. Üç nokta C ve C++'ta pek çok kullanımı oluşturdu. Bunlar işlevler için değişken bağımsız değişken listeleri içerir. `printf()` İşlevi C Çalışma Zamanı Kitaplığı'ndan en iyi bilinen örneklerden biridir.  
@@ -47,7 +47,7 @@ template<typename ... Arguments> class classname;
   
  Bu makalede ilk örnekte gösterilen kuralı kullandığından emin olun (üç nokta iliştirildiği `typename`).  
   
- Önceki örneklerde, `Arguments` bir parametre paketidir. Sınıf `classname` değişken sayıda bağımsız değişkenler, aşağıdaki örneklerde gösterildiği gibi kabul edebilir:  
+ Önceki örneklerde, *bağımsız değişkenleri* bir parametre paketidir. Sınıf `classname` değişken sayıda bağımsız değişkenler, aşağıdaki örneklerde gösterildiği gibi kabul edebilir:  
   
 ```cpp  
 template<typename... Arguments> class vtclass;  
@@ -56,14 +56,12 @@ vtclass< > vtinstance1;
 vtclass<int> vtinstance2;  
 vtclass<float, bool> vtinstance3;  
 vtclass<long, std::vector<int>, std::string> vtinstance4;  
-  
 ```  
   
  Değişen sayıda bağımsız değişken sınıf tanımlarını kullanarak en az bir parametre gerektirebilir:  
   
 ```cpp  
 template <typename First, typename... Rest> class classname;  
-  
 ```  
   
  İşte basit bir örneği *variadic şablon işlevi* söz dizimi:  
@@ -72,7 +70,7 @@ template <typename First, typename... Rest> class classname;
 template <typename... Arguments> returntype functionname(Arguments... args);  
 ```  
   
- `Arguments` Sonraki bölümde gösterildiği gibi parametre paketi kullanmak için ardından Genişletilmiş **bağımsız değişken içeren şablonları anlama**.  
+ *Bağımsız değişkenleri* sonraki bölümde gösterildiği gibi parametre paketi kullanmak için ardından Genişletilmiş **bağımsız değişken içeren şablonları anlama**.  
   
  Diğer tür değişen şablonu işlev sözdizimi mümkündür; ancak bunlarla sınırlı olmamak üzere, şu örnekleri içerir:  
   
@@ -86,14 +84,12 @@ template <typename... Arguments> returntype functionname(Arguments*... args);
   
 ```cpp  
 template <typename... Arguments> returntype functionname(const Arguments&... args);  
-  
 ```  
   
  Olarak variadic Şablon sınıfı tanımlarında olduğu gibi en az bir parametre gerektiren işlevleri yapabilirsiniz:  
   
 ```cpp  
 template <typename First, typename... Rest> returntype functionname(const First& first, const Rest&... args);  
-  
 ```  
   
  Değişken içeren şablonları `sizeof...()` işleci (eski ilgisiz `sizeof()` işleci):  
@@ -108,7 +104,6 @@ void tfunc(const Arguments&... args)
   
     helper_func(xobj, args...);  
 }  
-  
 ```  
   
 ## <a name="more-about-ellipsis-placement"></a>Üç nokta yerleşimi hakkında daha fazla bilgi  
@@ -160,13 +155,11 @@ int main()
     print(100, 200, 300);  
     print("first", 2, "third", 3.14159);  
 }  
-  
 ```  
   
 ## <a name="output"></a>Çıkış  
   
-```  
-  
+```Output  
 1  
 10, 20  
 100, 200, 300  
@@ -175,4 +168,3 @@ first, 2, third, 3.14159
   
 > [!NOTE]
 >  Değişen şablon işlevlerini bir araya getiren çoğu uygulamaları bazı formunun özyineleme kullanır, ancak geleneksel özyineleme biraz farklıdır.  Geleneksel özyineleme, aynı imzayı kullanarak kendisini çağıran bir işlev içerir. (Aşırı yüklenmiş veya şablon oluşturulmuş olabilir, ancak her seferinde aynı imza seçilir.) (Hemen her zaman Azalan) farklı sayıda bağımsız değişken kullanarak ve böylece farklı imza her zaman damgası bir değişken içeren işlevi şablonu çağırmak değişken içeren özyineleme gerektirir. "Temel durum" hala gereklidir ancak Özyinelemenin yapısı farklıdır.  
-  

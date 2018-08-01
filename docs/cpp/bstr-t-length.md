@@ -17,28 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2979b9db6fc7b36d8f0d5581ae9397acf65b6977
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dc853ce15a8c7cfdbe67a3469f33189e89e55c3b
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409143"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403345"
 ---
 # <a name="bstrtlength"></a>_bstr_t::length
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Kapsüllenmiş `_bstr_t`'nin, sonlandırıcı null'u içermeyen `BSTR`'deki karakter sayısını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 unsigned int length ( ) const throw( );  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

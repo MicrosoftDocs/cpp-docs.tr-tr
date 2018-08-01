@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e66371ead4c2070769b45bf5b181677431936c84
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 895a2e3a78c425511f978454d07cf9574f7d8337
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948132"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403725"
 ---
 # <a name="declarations-and-definitions-c"></a>Bildirimler ve Tanımlar (C++)
 Bildirimleri adları programında, örneğin değişkenler, ad alanları, işlevleri ve sınıfları adlarını tanıtır. Bildirimleri ayrıca tür bilgilerin yanı sıra diğer bildirilmiş nesne özelliklerini belirtin. Bir ad kullanılmadan önce bildirilmelidir; c++'ta, bir ad bildirildiği noktası derleyiciye görünür olup olmadığını belirler. Bir işlev veya derleme biriminde daha sonraki bir noktada bildirilen sınıf başvuramaz; kullanabileceğiniz *iletme bildirimleri* bu sınırlamayı alınamıyor.  
@@ -61,7 +61,6 @@ public:
  Tanımları olmayan bazı bildirimlerini şunlardır:  
   
 ```cpp 
-  
 extern int i;  
 char *strchr( const char *Str, const char Target );  
 ```  
@@ -94,6 +93,6 @@ char *strchr( const char *Str, const char Target );
     }  
     ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Temel kavramlar](../cpp/basic-concepts-cpp.md)   
  [Bildirim noktası](../cpp/point-of-declaration-in-cpp.md)

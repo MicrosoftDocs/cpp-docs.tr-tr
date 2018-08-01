@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f38a0d97b90f1512e5f16b3bd147bda3e0614e4f
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 54cb2183bccc45446cd68b8d5d6d2753f571009b
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948111"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408095"
 ---
 # <a name="comraiseerror"></a>_com_raise_error
 **Microsoft'a özgü**  
@@ -31,7 +31,6 @@ ms.locfileid: "37948111"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 void __stdcall _com_raise_error(  
    HRESULT hr,  
    IErrorInfo* perrinfo = 0  
@@ -46,11 +45,11 @@ void __stdcall _com_raise_error(
  `IErrorInfo` nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_com_raise_error`, tanımlanan \<comdef.h >, bir kullanıcı tarafından yazılan sürümü aynı ada ve prototip tarafından değiştirilebilir. Kullanmak istiyorsanız bu yapılabilir `#import` ancak C++ özel durum işleme kullanmak istemiyorsanız. Bu durumda, kullanıcı sürümünde `_com_raise_error` yapmak karar verebilirsiniz bir `longjmp` veya bir ileti kutusu görüntüleme ve durdur. Derleyici COM destek kodunu döndürmek için bunu beklemiyor çünkü kullanıcı sürümüdür, ancak döndürmemelidir.  
+ **_com_raise_error**, tanımlanan \<comdef.h >, bir kullanıcı tarafından yazılan sürümü aynı ada ve prototip tarafından değiştirilebilir. Kullanmak istiyorsanız bu yapılabilir `#import` ancak C++ özel durum işleme kullanmak istemiyorsanız. Bu durumda, kullanıcı sürümünde **_com_raise_error** yapmak karar verebilirsiniz bir `longjmp` veya bir ileti kutusu görüntüleme ve durdur. Derleyici COM destek kodunu döndürmek için bunu beklemiyor çünkü kullanıcı sürümüdür, ancak döndürmemelidir.  
   
  Ayrıca [_set_com_error_handler](../cpp/set-com-error-handler.md) varsayılan hata işleme işlevinizi değiştirilecek.  
   
- Varsayılan olarak, `_com_raise_error` şu şekilde tanımlanır:  
+ Varsayılan olarak, **_com_raise_error** şu şekilde tanımlanır:  
   
 ```cpp  
 void __stdcall _com_raise_error(HRESULT hr, IErrorInfo* perrinfo) {  
@@ -65,6 +64,6 @@ void __stdcall _com_raise_error(HRESULT hr, IErrorInfo* perrinfo) {
   
  **Lib:** varsa **wchar_t yerel tür olan** derleyici seçeneği açıktır, comsuppw.lib veya comsuppwd.lib kullanın. Varsa **wchar_t yerel tür olan** kapalıysa, comsupp.lib kullanın. Daha fazla bilgi için [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleyici Global COM işlevleri](../cpp/compiler-com-global-functions.md)   
  [_set_com_error_handler](../cpp/set-com-error-handler.md)

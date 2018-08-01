@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54a83adda5acc51bd7e2d85e907d84e62a70d5cb
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1e591ad979d6c995fd5559b22a826766b02d50dd
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940734"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405876"
 ---
 # <a name="align-c"></a>align (C++)
 
@@ -50,7 +50,7 @@ Derleyici garanti vermez veya kopyalama ya da veri dönüştürme işlemi sıras
 
 İşlev parametreleri için hizalama belirtemezsiniz. Hizalama özniteliğine sahip veri değerine göre yığında geçirildiğinde hizalamanın çağırma kuralı tarafından denetlenir. Veri hizalama çağrılan işlev önemli ise, parametre kullanmadan önce düzgün şekilde hizalanmış belleğe kopyalayın.
 
-Olmadan `__declspec(align(#))`, derleyici genellikle verileri hedef işlemci ve 4 baytlık sınırlarda, 32-bit işlemciler üzerinde en fazla veri boyutuna göre doğal sınırlara ve 64-bit işlemci 8 baytlık sınırlardaki hizalar. Sınıflar veya yapılardaki veriler, sınıf veya yapıda doğal hizalaması ve geçerli paket ayarının minimumunda hizalanır (#pragma gelen **paketi** veya **/ZP** derleyici seçeneği).
+Olmadan `__declspec(align(#))`, derleyici genellikle verileri hedef işlemci ve 4 baytlık sınırlarda, 32-bit işlemciler üzerinde en fazla veri boyutuna göre doğal sınırlara ve 64-bit işlemci 8 baytlık sınırlardaki hizalar. Sınıflar veya yapılardaki veriler, sınıf veya yapıda doğal hizalaması ve geçerli paket ayarının minimumunda hizalanır (#pragma gelen `pack` veya `/Zp` derleyici seçeneği).
 
 Bu örnek kullanımını gösterir `__declspec(align(#))`:
 
@@ -179,7 +179,7 @@ void fn() {
 }
 ```
 
-Yığında bellek tahsis edildiğinde hizalama hangi ayırma işlevinin çağrıldığına bağlıysa.  Örneğin, kullanırsanız **malloc**, sonuç işlenen boyutuna bağlıdır. Varsa *arg* > = 8, 8 byte hizalı olan bellek döndürdü. Varsa *arg* < 8, döndürülen bellek hizalama 2'in ilk üssü olan küçüktür *arg*. Örneğin, malloc(7) kullanırsanız, hizalama 4 bayt ' dir.
+Yığında bellek tahsis edildiğinde hizalama hangi ayırma işlevinin çağrıldığına bağlıysa.  Örneğin, kullanırsanız `malloc`, sonuç işlenen boyutuna bağlıdır. Varsa *arg* > = 8, 8 byte hizalı olan bellek döndürdü. Varsa *arg* < 8, döndürülen bellek hizalama 2'in ilk üssü olan küçüktür *arg*. Örneğin, malloc(7) kullanırsanız, hizalama 4 bayt ' dir.
 
 ##  <a name="vclrf_declspecaligntypedef"></a> __Declspec(align(#)) ile yeni türler tanımlama
 
@@ -219,9 +219,9 @@ __declspec(thread) struct S9 a;
 
 ##  <a name="vclrfhowalignworkswithdatapacking"></a> Nasıl veri Paketlemeyle hizalama
 
-**/ZP** derleyici seçeneği ve **paketi** pragma yapı ve birleşim üyeleri için verileri paketleme etkisi vardır. Bu örnek gösterir nasıl **/ZP** ve `__declspec(align(#))` birlikte çalışır:
+`/Zp` Derleyici seçeneği ve `pack` pragma yapı ve birleşim üyeleri için verileri paketleme etkisi vardır. Bu örnek gösterir nasıl `/Zp` ve `__declspec(align(#))` birlikte çalışır:
 
-```c[[]]
+```cpp
 struct S {
    char a;
    short b;
@@ -232,7 +232,7 @@ struct S {
 };
 ```
 
-Aşağıdaki tabloda çeşitli her üyenin uzaklığını listeler **/ZP** (veya #pragma **paketi**) nasıl etkileştiğini gösteren değer.
+Aşağıdaki tabloda çeşitli her üyenin uzaklığını listeler `/Zp` (veya #pragma `pack`) nasıl etkileştiğini gösteren değer.
 
 |Değişken|/Zp1|/ Zp2|/Zp4|/Zp8|
 |--------------|-----------|-----------|-----------|-----------|
@@ -251,7 +251,6 @@ Nesneye sahip olmadığı sürece bir nesnenin uzaklığı önceki nesne ve geç
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
-
 [__declspec](../cpp/declspec.md)  
 [ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)  
 [x64 Çağırma Kurallarına Genel Bakış](../build/overview-of-x64-calling-conventions.md)  

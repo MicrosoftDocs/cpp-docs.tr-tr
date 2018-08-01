@@ -16,29 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c05ce0fa1a80de8f5ab8b9335bbab22628f3f158
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c23f18a04010ba62d3651344464ff1668b2127d9
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409728"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405077"
 ---
 # <a name="additional-startup-considerations"></a>Ek Başlatma Konuları
-C++'da, nesne oluşturma ve yıkma işlemleri için kullanıcı kodunun yürütülmesi gerekebilir. Bu nedenle, hangi başlatmaları girişine önce gerçekleşir anlamak önemlidir **ana** ve hangi Yıkıcılar çıkın sonra çağrılan **ana**. (Yapım ve nesneleri yok etme hakkında ayrıntılı bilgi için bkz: [oluşturucular](../cpp/constructors-cpp.md) ve [Yıkıcılar](../cpp/destructors-cpp.md).)  
+C++'da, nesne oluşturma ve yıkma işlemleri için kullanıcı kodunun yürütülmesi gerekebilir. Bu nedenle, girişten önce hangi başlatmalar anlamak önemlidir `main` ve hangi den çıkıştan sonra `main`. (Oluşturulması ve yıkılması nesnelerin hakkında ayrıntılı bilgi için bkz. [oluşturucular](../cpp/constructors-cpp.md) ve [yok ediciler](../cpp/destructors-cpp.md).)  
   
- Aşağıdaki başlatmaları girişine önce gerçekleşmesi **ana**:  
+ Aşağıdaki başlatmalar giriş yapılmadan önce gerçekleşmesi `main`:  
   
 -   Statik verilerin varsayılan olarak sıfıra başlatılması. Açık başlatıcıları olmayan tüm statik veriler, çalışma zamanı başlatması dahil diğer herhangi bir kod yürütülmeden önce sıfır olarak ayarlanır. Yine de statik veri üyelerinin açıkça tanımlanması gerekir.  
   
--   Çeviri biçiminde genel statik nesnelerin başlatılması. Bu girişine önce ya da oluşabilir **ana** veya herhangi bir işlev veya nesnenin çeviri birim nesnesinde ilk kez kullanıyorsanız önce.  
+-   Çeviri biçiminde genel statik nesnelerin başlatılması. Girişten önce ya da oluşabilir `main` veya herhangi bir işlevin veya nesnenin çeviri biriminde nesnenin ilk kullanımından önce.  
   
- **Microsoft özel**  
+ **Microsoft'a özgü**  
   
- Microsoft C++'da, genel statik nesneler girişine önce başlatılmış **ana**.  
+ Microsoft C++'da genel statik nesneler girişten önce başlatılır `main`.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
  Karşılıklı olarak bağımlı, ancak çeviri birimleri bakımından farklı olan genel statik nesneler yanlış davranışlara neden olabilir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Başlatma ve Sonlandırma](../cpp/startup-and-termination-cpp.md)

@@ -12,18 +12,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfd3f1df54e5b5881ed15efeb98a6e6070f400a1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 265eccc4c1a9f51a03e5a84433a9f7e9cc6d6a92
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419941"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402142"
 ---
 # <a name="objects-own-resources-raii"></a>Nesnelerin Kaynakları (RAII)
-Kendi kaynaklarını nesneler emin olun. Bu ilke olarak da bilinen "kaynak edinme başlatma" değil veya "RAII."  
+Kendi kaynaklarını nesnelerin emin olun. Bu ilke olarak da bilinen "kaynak alımı başlatma" ise veya "RAII."  
   
 ## <a name="example"></a>Örnek  
- "Yeni" her nesne oluşturucu bağımsız değişkeni bir (neredeyse her zaman unique_ptr) sahip başka bir adlandırılmış nesneyi geçirin.  
+ "Yeni" her nesne (hemen her zaman unique_ptr) sahip başka bir adlandırılmış nesnesi bir oluşturucu bağımsız değişken olarak geçirin.  
   
 ```cpp  
 void f() {  
@@ -34,7 +34,7 @@ void f() {
   // automatic exception safety, as if "finally { p->dispose(); x.w.dispose(); }"  
 ```  
   
- Her zaman hemen yeni bir kaynak sahip başka bir nesneye geçirin.  
+ Her zaman hemen yeni bir kaynak sahibi başka bir nesneye geçirin.  
   
 ```cpp  
 void g() {  
@@ -44,7 +44,7 @@ void g() {
   // automatic exception safety, as if "finally { y.file.dispose(); }"  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ için yeniden Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

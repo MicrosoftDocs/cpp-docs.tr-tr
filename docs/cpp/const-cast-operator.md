@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89ed2b161c5b8f73d68fb22eb29eb00e057d7029
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 5ba0312b255b2957c815bb5f26c97a668d4f7b6d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948139"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403030"
 ---
 # <a name="constcast-operator"></a>const_cast İşleci
 Kaldırır **const**, **geçici**, ve **__unaligned** bir sınıftan öznitelikleri.  
@@ -29,17 +29,15 @@ Kaldırır **const**, **geçici**, ve **__unaligned** bir sınıftan öznitelikl
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 const_cast <type-id> (expression)  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
  Herhangi bir nesne türünün işaretçisi veya bir veri üyesine bir işaretçi açıkça dışında aynı olan bir türe dönüştürülebilir **const**, **geçici**, ve **__unaligned** niteleyiciler. İşaretçiler ve başvurular için sonuç orijinal nesneye başvuracaktır. Veri üyelerinin işaretçileri için sonuç, veri üyesinin orijinal (atanmamış) işaretçisiyle aynı üyeye başvuracaktır. Başvurulan nesnenin türüne bağlı olarak, elde edilen işaretçi, başvuru veya üye verisinin işaretçisi kullanılarak yapılan yazma işlemi tanımlanmamış davranış oluşturabilir.  
   
- Sabit değişkenin sabit durumunu doğrudan geçersiz kılmak için `const_cast` işlecini kullanamazsınız.  
+ Kullanamazsınız **const_cast** sabit değişkenin sabit durumunu doğrudan geçersiz kılmak için işleci.  
   
- `const_cast` İşlecini bir null işaretçi değeri hedef türünün boş işaretçi değerine dönüştürür.  
+ **Const_cast** işlecini bir null işaretçi değeri hedef türünün boş işaretçi değerine dönüştürür.  
   
 ## <a name="example"></a>Örnek  
   
@@ -72,8 +70,8 @@ int main() {
 }  
 ```  
   
- İçeren satırda `const_cast`, veri türü **bu** işaretçisi `const CCTest *`. `const_cast` İşleci veri türünü değiştirir **bu** işaretçisine `CCTest *`, üyesinin değiştirilmesini `number` değiştirilecek. Atama, yalnızca deyimin geri kalanında göründüğü kadar sürer.  
+ İçeren satırda **const_cast**, veri türü **bu** işaretçisi `const CCTest *`. **Const_cast** işleci veri türünü değiştirir **bu** işaretçisine `CCTest *`, üyesinin değiştirilmesini `number` değiştirilecek. Atama, yalnızca deyimin geri kalanında göründüğü kadar sürer.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Atama İşleçleri](../cpp/casting-operators.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

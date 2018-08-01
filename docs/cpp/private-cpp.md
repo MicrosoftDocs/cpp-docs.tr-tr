@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8acbfb92ad8139d01581561aa61a29b6e429538f
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1d551bea5c78e3a9e0723601647624f29e22f3cb
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948008"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402939"
 ---
 # <a name="private-c"></a>private (C++)
 ## <a name="syntax"></a>Sözdizimi  
@@ -88,6 +88,6 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sınıf üyelerine erişimi denetleme](member-access-control-cpp.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

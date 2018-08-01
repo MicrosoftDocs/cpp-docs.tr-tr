@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a80c918036887e9c3e573294d3859a9b60e71e7f
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: a415f695f512a9d6263025fc6e45d5f9df754f80
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948009"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403913"
 ---
 # <a name="bstrtassign"></a>_bstr_t::Assign
 **Microsoft'a özgü**  
@@ -41,7 +41,7 @@ void Assign(
  A `BSTR` içine kopyalanacak `BSTR` tarafından Sarmalanan bir `_bstr_t`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Assign` Tüm uzunluğu başka bir deyişle, bir ikili kopyalamaz `BSTR` bağımsız olarak içerik kopyalanır.  
+ **Ata** tüm uzunluğu başka bir deyişle, bir ikili kopyalamaz `BSTR` bağımsız olarak içerik kopyalanır.  
   
 ## <a name="example"></a>Örnek  
   
@@ -118,5 +118,5 @@ bstrWrapper2 = some text
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

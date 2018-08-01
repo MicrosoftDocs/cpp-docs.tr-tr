@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b63e2da6286e6a8e10ecf29a37ec9d74e9f1dfc0
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: e32312e8c6f3dc149f6e5e1f8dc37b1395732d02
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948018"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408196"
 ---
 # <a name="const-and-volatile-pointers"></a>const ve volatile İşaretçiler
 [Const](../cpp/const-cpp.md) ve [geçici](../cpp/volatile-cpp.md) anahtar sözcükleri, işaretçilerin nasıl değerlendirildiğini değiştirin. **Const** anahtar sözcüğü, işaretçinin başlatma değiştirilemez belirtir; işaretçi bundan sonra değişikliklere karşı korunur.  
@@ -70,7 +70,7 @@ char *pch2 = &cch;   // Error
 char *const pch3 = &cch;   // Error  
 ```  
   
- `pch2` bildirimi, sabit bir nesnenin değiştirilebileceği ve bu nedenle izin verilmeyen bir işaretçiyi bildirir. Bildirimi `pch3` belirten **işaretçi** olan sabit, nesnenin değil; bildirimi aynı nedenden ötürü `pch2` bildirimi izin verilmiyor.  
+ `pch2` bildirimi, sabit bir nesnenin değiştirilebileceği ve bu nedenle izin verilmeyen bir işaretçiyi bildirir. Bildirimi `pch3` işaretçi sabit olduğunu belirtir nesnenin değil; bildirimi aynı nedenden ötürü `pch2` bildirimi izin verilmiyor.  
   
  Aşağıdaki sekiz atama, işaretçiyle atama ve önceki bildirimler için işaretçi değerinin değiştirilmesini göstermektedir; şimdilik başlatmanın `pch1` ile `pch8` arasında doğru olduğunu varsayın.  
   
@@ -96,7 +96,7 @@ errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *str
  Önceki deyim, bir işlev bildirir [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md), burada üç bağımsız değişken işaretçi türüne ikisidir **char**. Bağımsız değişkenleri başvuruya göre geçirilen değere göre işlevi her ikisini birden değiştirmek ücretsiz değil çünkü ve `strDestination` ve `strSource` varsa `strSource` olarak bildirilen değil **const**. Bildirimi `strSource` olarak **const** arayan, garantiler `strSource` çağrılan işlev tarafından değiştirilemez.  
   
 > [!NOTE]
->  Standart dönüştürme olmadığından *typename* **\*** için **const** *typename* **\***, türünde bir bağımsız değişken geçmek için yasal **char \***  için [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). Ancak tersi doğru değildir; kaldırmak için örtük dönüştürme var **const** özniteliği bir nesne veya işaretçi.  
+>  Standart dönüştürme olmadığından *typename* **\*** için **const** *typename* **\***, türünde bir bağımsız değişken geçmek için yasal `char *` için [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). Ancak tersi doğru değildir; kaldırmak için örtük dönüştürme var **const** özniteliği bir nesne veya işaretçi.  
   
  A **const** belirli bir türden işaretçi aynı türden bir işaretçiye atanabilir. Ancak, bir işaretçi olmayan **const** atanamaz bir **const** işaretçi. Aşağıdaki kod, doğru ve hatalı atamaları gösterir:  
   
@@ -133,5 +133,5 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İşaretçiler](../cpp/pointers-cpp.md)

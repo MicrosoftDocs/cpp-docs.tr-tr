@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 813c90db941f2eb760c4e3a36d15eca64a293bec
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 73c15cfb08bab96acf85bc517165926faced86ad
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955471"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406197"
 ---
 # <a name="multiple-base-classes"></a>Birden Çok Taban Sınıfı
 Birden fazla temel sınıftan türetilmiş bir sınıf. (Burada sınıflar türetilen birden fazla temel sınıftan) bir birden çok devralma modeli temel sınıflar kullanılarak belirtilen *temel-liste* dilbilgisi öğesi. Örneğin, sınıf bildirimi `CollectionOfBook`, türetilmiş `Collection` ve `Book`, belirtilebilir:  
@@ -97,9 +97,9 @@ Sanal ve Sanal Olmayan Devralma ile Nesne Düzeni
 > [!NOTE]
 >  Sanal devralma, sanal olmayan devralmayla karşılaştırıldığında önemli boyut avantajları sağlar. Ancak, ek işlem yükü ortaya çıkarabilir.  
   
- Türetilmiş bir sınıf sanal bir temel sınıftan devraldığı sanal bir işlemi geçersiz kılırsa ve türetilmiş temel sınıfın oluşturucusu veya yıkıcısı sanal temel sınıfa yönelik bir işaretçiyi kullanarak bu işlevi çağırırsa, derleyici sanal temellere sahip sınıflara ek gizli "vtordisk" alanları sunabilir. /vd0 derleyici seçeneği, gizli vtordisp oluşturucu/yıkıcı yer değiştirme üyesinin eklenmesini engeller. Varsayılan olan /vd1 derleyici seçeneği, gerekli olduğunda bunları etkinleştirir. Yalnızca tüm sınıf oluşturucularının ve yıkıcılarının sanal olarak sanal işlevleri çağırdığından eminseniz vtordisps'i kapatın.  
+ Türetilmiş bir sınıf sanal bir temel sınıftan devraldığı sanal bir işlemi geçersiz kılırsa ve türetilmiş temel sınıfın oluşturucusu veya yıkıcısı sanal temel sınıfa yönelik bir işaretçiyi kullanarak bu işlevi çağırırsa, derleyici sanal temellere sahip sınıflara ek gizli "vtordisk" alanları sunabilir. `/vd0` Derleyici seçeneği, gizli vtordisp Oluşturucu/yıkıcı yer değiştirme üyesinin eklenmesini engeller. `/vd1` Derleyici seçeneği, varsayılan olarak, bunları gerekli nerede sağlar. Yalnızca tüm sınıf oluşturucularının ve yıkıcılarının sanal olarak sanal işlevleri çağırdığından eminseniz vtordisps'i kapatın.  
   
- /vd derleyici seçeneği, tüm derleme modülünü etkiler. Kullanım **vtordisp** pragma engellemek ve ardından vtordisp alanlarını sınıf sınıf olarak yeniden etkinleştirmek için:  
+ `/vd` Derleyici seçeneği, tüm derleme modülünü etkiler. Kullanım `vtordisp` engellemek ve ardından yeniden etkinleştirmek için pragma `vtordisp` alanlarını sınıf sınıf olarak:  
   
 ```cpp 
 #pragma vtordisp( off )  
@@ -217,5 +217,5 @@ Sanal vs. Sanal olmayan türetme
   
  Şekilde, sanal olmayan temel sınıflar yoluyla `A` sınıfının her hangi bir üyesine erişmek belirsizliğe neden olur; derleyicide, `B` ile ilişkili alt nesnenin mi yoksa `C` ile ilişkili alt nesnenin mi kullanılacağını açıklayan herhangi bir bilgi yoktur. Ancak, bir sanal temel sınıf olarak `A` belirtildiğinde, hangi alt nesneye erişildiği sorun olmaz.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Devralma](../cpp/inheritance-cpp.md)

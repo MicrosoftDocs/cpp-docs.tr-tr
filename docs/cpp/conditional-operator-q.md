@@ -18,18 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 273572fd6ad79ba45ae2aabbf91296afd6e8308e
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 205a03323a765940ce8cdc5def413faa716fa2fc
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948117"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402210"
 ---
 # <a name="conditional-operator--"></a>Koşullu işleç:? :
 ## <a name="syntax"></a>Sözdizimi  
   
 ``` 
-  
 expression ? expression : expression  
 ``` 
   
@@ -79,6 +78,6 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Koşullu İfade İşleci](../c-language/conditional-expression-operator.md)

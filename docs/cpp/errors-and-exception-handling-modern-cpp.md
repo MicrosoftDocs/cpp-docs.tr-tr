@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee05e7008795056ee197ce45f68084e6c633f23c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: f9d9d21514b0ea90021c9b0543cd742ed6a6206f
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939747"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407240"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>Hatalar ve Özel Durum İşleme (Modern C++)
 Çoğu senaryoda, modern C++'ta rapor ve mantık hatalarını ve çalışma zamanı hataları işlemek için tercih edilen yol özel durumları kullanmaktır. Yığın hatayı algılayan işlevi ve sahip nasıl işleyeceğini bilen işlev arasında birden fazla işlev çağrısı içerdiğinde bu özellikle doğrudur. Özel durumlar, bilgileri çağrı yığınına aktarmak üzere hataları algılayan kod için biçimsel ve iyi tanımlanmış bir yol sağlar.  
@@ -68,7 +68,6 @@ int main()
    //...  
    return 0;  
 }  
-  
 ```  
   
  C++ içindeki özel durumlar bu C# ve Java gibi dillerdeki benzer. İçinde **deneyin** bir özel durum bloğunda *durum* olacaktır *yakalandı* ilk ilişkili **catch** olan türüyle eşleşen blok özel durum. Yürütme başka bir deyişle, atlar **throw** ifadesine **catch** deyimi. Kullanılabilir catch bloğu bulunduysa `std::terminate` çağrılır ve programdan çıkılır. C++'da, herhangi bir tür oluşturulabilir; Ancak, doğrudan veya dolaylı olarak türetir tür throw öneririz `std::exception`. Önceki örnekte, özel durum türü [invalid_argument](../standard-library/invalid-argument-class.md), standart kitaplıkta tanımlanan [ \<stdexcept >](../standard-library/stdexcept.md) üst bilgi dosyası. C++ sağlamaz ve gerektirmeyen bir **son** bir özel durum oluşturulursa tüm kaynakların serbest bırakıldığından emin olmak için blok. Kaynak alımı başlatma (RAII) deyimidir, akıllı işaretçiler kullanan kaynak Temizleme için gereken işlevselliği sağlar ' dir. Daha fazla bilgi için [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md). C++ yığın geriye doğru izleme mekanizması hakkında daha fazla bilgi için bkz: [özel durumlar ve yığını geriye doğru izleme](../cpp/exceptions-and-stack-unwinding-in-cpp.md).  
@@ -97,14 +96,14 @@ int main()
  Özel durumlar ve onaylama işlemleri bir programda çalışma zamanı hataları algılamak için iki ayrı mekanizmadır. Kullanım koşulları için hiçbir zaman tüm kodunuz doğruysa true olması gereken geliştirme sırasında test etmek için onaylar. Özel durum hatası kodu bir şey düzeltilmesi gereken olduğunu belirttiğinden'ı kullanarak bu tür bir hataya işlemedeki noktası yok ve program çalışma zamanında kurtarılır sahip bir koşulu temsil etmez. Hata ayıklayıcıdaki program durumunu denetleyebilmeniz için deyimdeki yürütmeyi durdurur; bir özel durum yürütmeyi ilk uygun catch işleyicisinden devam eder. Çalışma zamanında bile kodunuzun doğru Örneğin, "dosya bulunamadı" veya "yetersiz bellek." ortaya çıkabilecek hata koşullarını denetlemek için özel durumları kullanın Kurtarma yalnızca bir günlük için ileti sunsa ve programı sonlandırsa bile bu koşullar, kurtarılır isteyebilirsiniz. Her zaman özel durumları kullanarak genel işlev bağımsız değişkenleri denetleyin. İşleviniz hatadan arınmış olsa bile, bir kullanıcının buna geçirebileceği bağımsız değişkenler üzerinde tam denetime sahip olmayabilir.  
   
 ## <a name="c-exceptions-versus-windows-seh-exceptions"></a>C++ özel durumlarına karşı Windows SEH özel durumları  
- Hem C ve C++ programları, yapılandırılmış özel durum işleme (SEH) mekanizmasını Windows işletim sisteminde kullanabilirsiniz. SEH kullanması hariç, SEH içindeki kavramlar C++ özel durumlarını, de benzer `__try`, `__except`, ve `__finally` yerine yapıları **deneyin** ve **catch**. Visual C++'da, C++ özel durumları SEH için uygulanır. Bununla birlikte, C++ kodu yazarken C++ özel durum söz dizimini kullanın.  
+ Hem C ve C++ programları, yapılandırılmış özel durum işleme (SEH) mekanizmasını Windows işletim sisteminde kullanabilirsiniz. SEH kullanması hariç, SEH içindeki kavramlar C++ özel durumlarını, de benzer **__try**, **__except**, ve **__finally** yerine yapıları **deneyin** ve **catch**. Visual C++'da, C++ özel durumları SEH için uygulanır. Bununla birlikte, C++ kodu yazarken C++ özel durum söz dizimini kullanın.  
   
  SEH hakkında daha fazla bilgi için bkz: [yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md).  
   
 ## <a name="exception-specifications-and-noexcept"></a>Özel durum belirtimleri ve noexcept  
  Özel durum belirtimleri bir işlevin oluşturulabileceği özel durumları belirtme yöntemi olarak C++ ile sunulur. Ancak, özel durum belirtimleri uygulamada sorun kanıtlandı ve C ++ 11 taslak standardı kullanım dışı bırakılmıştır. Özel durum belirtimleri dışında kullanmamanızı öneririz `throw()`, işlev kaçış özel durum yok izin verdiğini gösterir. Türündeki özel durum belirtimlerini kullanmanız gerekirse `throw(` *türü*`)`, Visual C++ standardı belirli yollarla departs unutmayın. Daha fazla bilgi için [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md). `noexcept` Tanımlayıcısı için tercih edilen alternatif olarak C ++ 11'de sunulmuştur `throw()`.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasında arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)   
  [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   

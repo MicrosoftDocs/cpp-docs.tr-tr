@@ -12,16 +12,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2dba8698461636e292771fc1e5a4f5ac0a633e73
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: 9998e7ad9605d6d2e32bcaff6204fb09dcbca2a5
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238675"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405564"
 ---
 # <a name="program-and-linkage-c"></a>Program ve Bağlantı (C++)
 
-C++ programı bir *simgesi*, örneğin bir değişken veya işlev adı bildirilebilir kez kendi kapsamı içinde herhangi bir sayıda, ancak bunu yalnızca bir kez tanımlanabilir. Bu, bir tanım Kuralı'nı (ODR) olur. A *bildirimi* bir ad programa sunar (veya yeniden tanıtır). A *tanımı* bir ad tanıtır ve bir değişkeni söz konusu olduğunda, açıkça başlatır. A *işlev tanımı* imza ve işlev gövdesi karakterlerinden oluşur.
+C++ programında bir *sembol*, örneğin bir değişken veya işlev adı bildirilebilir kez kendi kapsamı içinde herhangi bir sayıda, ancak yalnızca de çok kez tanımlanmış. Tek Tanım Kuralı'nı (ODR) budur. A *bildirimi* programa bir ad tanıtır (veya yeniden sunar). A *tanımı* bir ad tanıtır ve bir değişken olması durumunda onu açıkça başlatır. A *işlev tanımı* imza ve işlev gövdesi karakterlerinden oluşur.
 
 Bildirimleri şunlardır:
 
@@ -37,29 +37,29 @@ int i{42};
 int f(int x){ return x * i; }
 ```
 
-Bir veya daha fazla program oluşur *çeviri birimleri*. Çeviri birimi, bir uygulama dosyası (.cpp, .cxx, vb.) ve doğrudan veya dolaylı olarak içeren tüm üstbilgileri (.h, .hpp, vb.) oluşur. Her bir çeviri birimi bağımsız olarak geçmesi bağlayıcı birleştirir derlenmiş çeviri birimleri tek bir derleyicisi tarafından derlenen *program*. Farklı çeviri birimleri iki farklı tanımları aynı ada sahip olduğunda ODR kural ihlalleri genellikle bağlayıcı hata olarak gösterilir.
+Bir veya daha fazla program içerir *çeviri birimleri*. Bir çeviri birimi, bir uygulama dosyasını (.cpp, .cxx vb.) ve doğrudan veya dolaylı olarak içeren tüm üstbilgi (.h, .hpp vb.) oluşur. Her çeviri birimini bağımsız olarak sonra bağlayıcı birleştirir derlenmiş bir çeviri birimleri tek bir derleyici tarafından derlenen *program*. Aynı adlı iki farklı tanımları çeviri birimleri bakımından farklı olduğunda ODR kural ihlalleri genellikle bağlayıcı hata olarak gösterilir.
 
-Genel olarak, üstbilgi dosyaya yerleştirin ve eklemek için bir değişken birden çok dosyaya görünür hale getirmek için en iyi yolu olan bir #include yönergesi .cpp cdn'den bildirimi gerektirir. Ekleyerek *koruyucuları dahil* üstbilgisi içeriği geçici bir çözüm, onu tanımlandığı adları yalnızca bir kez tanımlandığından emin olun.
+Genel olarak, bir üstbilgi dosyasına yerleştirilebilir ve eklemek için bir değişken birden çok dosyaya görünür hale getirmek için en iyi yolu olan bir #include yönergesi her .cpp dosyası bildirimi gerektirir. Ekleyerek *cf dahil* üst bilgi içeriği geçici olarak bildirir, adları yalnızca bir kez tanımlandığından emin olun.
 
-Ancak, bazı durumlarda genel değişkeni ya da bir .cpp dosyasında sınıfı bildirmek gerekli olabilir. Bu durumlarda derleyici ve bağlayıcı nesnesinin adını yalnızca bir dosyayı veya tüm dosyaları için geçerli olup olmadığını bildirmek için bir yönteme ihtiyacınız vardır.
+Ancak, bazı durumlarda bir genel değişken ya da bir .cpp dosyası sınıfında bildirmek gerekli olabilir. Bu gibi durumlarda, derleyici ve bağlayıcı nesnesinin adını yalnızca bir dosyayı veya tüm dosyalar için mi geçerli olduğunu bildirmek için bir yol gerekir.
 
-## <a name="linkage-vs-scope"></a>Bağlantı kapsam karşılaştırması
+## <a name="linkage-vs-scope"></a>Bağlantı kapsamı karşılaştırması
 
-Kavramı *bağlantı* çeviri birimleri arasında (örneğin, değişkenleri, tür adları ve işlev adları) genel semboller program içinde görünürlüğünü bir bütün olarak başvuruyor. Kavramı *kapsam* ad alanı, sınıf veya işlev gövdesi gibi bir bloğu içinde bildirilen simgeleri başvuruyor. Bu tür simgeleri tanımlı kapsamı içinde görünür; bağlantı kavramı için geçerli değildir. 
+Kavramını *bağlantı* çeviri birimlerindeki program içinde genel simgeleri (örneğin, değişkenler, tür adları ve işlev adları) görünürlüğünü bir bütün olarak başvuruyor. Kavramını *kapsam* gibi bir ad alanı, sınıf veya işlev gövdesinin bir blok içinde bildirilen sembolleri ifade eder. Tür simgeleri, yalnızca içinde tanımlandıkları kapsamı içinde görülebilir; kavram bağlantı için geçerli değildir. 
 
 ## <a name="external-vs-internal-linkage"></a>Dış ve iç bağlantı
 
-A *serbest işlevi* genel olarak tanımlanan bir işlev değil veya ad alanı kapsamı. Non-const genel değişkenler ve varsayılan olarak boş işlevleri *dış bağlantı*; programda herhangi bir çeviri biriminden görünür. Bu nedenle, hiçbir diğer genel nesne (değişkeni, sınıf tanımı, vb.), bu ada sahip olabilir. Bir simge ile *iç bağlantı* veya *bağlantı yok* yalnızca onu bildirilen çeviri birim içinde görünür. Bir ad iç bağlantı olduğunda, aynı adı başka bir çeviri biriminde bulunabilir. Sınıf tanımları ile değişkenleri bildirilen veya bağlantı yok işlevi gövdeleri sahip. 
+A *boş işlev* genel kapsamda tanımlanan bir işlev veya ad alanı kapsamında. Non-const genel değişkenler ve varsayılan olarak ücretsiz işlevleri *dış bağlantısı*; bunlar programın herhangi bir çeviri birimindeki görülebilir. Bu nedenle, diğer genel nesnesi yok (değişken, sınıf tanımı, vb.), bu ada sahip olabilir. Bir simgeyle *iç bağlantı* veya *bağlantısı olmayan adlar* yalnızca bu bildirilen çeviri birimi içinde görülebilir. Bir ad iç bağlantıya sahip olduğunda, aynı adı başka bir çeviri biriminde bulunabilir. Sınıf tanımları ile değişkenler veya işlev gövdeleri hiçbir bağlantısı yoktur. 
 
-İç bağlantı olarak açıkça bildirerek sağlamak için genel bir ad zorlayabilirsiniz **statik**. Bu, içinde bildirildiği aynı çeviri birimine kendi visiblity sınırlar. Bu bağlamda unutmayın **statik** yerel değişkenlere uygulandığında farklı bir şey anlamına gelir.
+Bir genel bir ad olarak açıkça bildirerek iç bağlantıya sahip olmasını zorunlu kılabilirsiniz **statik**. Bu, katmanın aynı çeviri birimi içinde bildirildiği için sınırlar. Bu bağlamda unutmayın **statik** yerel değişkenlere uygulandığında değerinden farklı bir şey anlamına gelir.
 
-Aşağıdaki nesneler, varsayılan olarak iç bağlantı sahiptir:
-- const nesneleri
+Aşağıdaki nesneler varsayılan olarak iç bağlantısı vardır:
+- const nesnelerine
 - constexpr nesneleri
 - tür tanımları
-- ad alanı kapsamında statik nesneleri
+- ad alanı kapsamında statik nesneler
 
-Const bir nesne dış bağlantı vermek için olarak bildirme **extern** ve bir değer atayabilirsiniz:
+Const nesne dış bağlantı vermek için olarak bildirin **extern** ve bir değer atayın:
 
 ```cpp
 extern const int value = 42;
@@ -67,6 +67,5 @@ extern const int value = 42;
 
 Bkz: [extern](extern-cpp.md) daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
+## <a name="see-also"></a>Ayrıca bkz.
  [Temel Kavramlar](../cpp/basic-concepts-cpp.md)

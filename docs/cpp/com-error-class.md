@@ -16,29 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d59782b62ddfb51601505be6d12f01ce14cd4f1
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 60fc445d51cfa72a6c72984ff19b877d916ded53
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026640"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407767"
 ---
 # <a name="comerror-class"></a>_com_error Sınıfı
 **Microsoft'a özgü**  
   
- A `_com_error` nesnesi, tür kitaplığından oluşturulan üstbilgi dosyalarında hata işleme sarmalayıcı işlevleri veya bir COM desteği sınıfları tarafından algılanan bir özel durum koşulunu temsil eder. `_com_error` Sınıfı Kapsüller HRESULT hata kodu ve varsa ilişkili `IErrorInfo Interface` nesne.  
+ A **_com_error** nesnesi, tür kitaplığından oluşturulan üstbilgi dosyalarında hata işleme sarmalayıcı işlevleri veya bir COM desteği sınıfları tarafından algılanan bir özel durum koşulunu temsil eder. **_Com_error** sınıfı Kapsüller HRESULT hata kodu ve varsa ilişkili `IErrorInfo Interface` nesne.  
   
 ### <a name="construction"></a>Oluşturma  
   
 |||  
 |-|-|  
-|[_com_error](../cpp/com-error-com-error.md)|Oluşturur bir `_com_error` nesne.|  
+|[_com_error](../cpp/com-error-com-error.md)|Oluşturur bir **_com_error** nesne.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç =](../cpp/com-error-operator-equal.md)|Mevcut bir atar `_com_error` başka bir nesne.|  
+|[işleç =](../cpp/com-error-operator-equal.md)|Mevcut bir atar **_com_error** başka bir nesne.|  
   
 ### <a name="extractor-functions"></a>Ayıklayıcısı işlevleri  
   
@@ -62,7 +62,7 @@ ms.locfileid: "39026640"
   
 |||  
 |-|-|  
-|[ErrorMessage](../cpp/com-error-errormessage.md)|HRESULT içinde depolanan için dize iletiyi alır `_com_error` nesne.|  
+|[ErrorMessage](../cpp/com-error-errormessage.md)|HRESULT içinde depolanan için dize iletiyi alır **_com_error** nesne.|  
   
 ### <a name="exepinfowcode-to-hresult-mappers"></a>HRESULT Azaltıcının için ExepInfo.wCode  
   
@@ -78,6 +78,6 @@ ms.locfileid: "39026640"
   
  `Lib:` comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)   
  [IErrorInfo arabirimi](http://msdn.microsoft.com/4dda6909-2d9a-4727-ae0c-b5f90dcfa447)

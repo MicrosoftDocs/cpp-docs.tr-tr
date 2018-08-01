@@ -18,35 +18,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 147461584f1a978be55502d783bc527b5632d20f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eca85baea71052525d70c90ac521ef5fa95a5118
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408652"
 ---
 # <a name="parsing-c-command-line-arguments"></a>C++ Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Microsoft C/C++ başlangıç kod, işletim sistemi komut satırında belirtilen bağımsız değişkenler yorumlanırken aşağıdaki kuralları kullanır:  
+ Microsoft C/C++ başlatma kodunu, işletim sistemi komut satırında belirtilen bağımsız değişkenler yorumlarken aşağıdaki kuralları kullanır:  
   
--   Bağımsız değişkenler, bir boşluk veya bir sekme olduğu boşluk tarafından sınırlandırılır.  
+-   Bağımsız değişkenler bir boşluk veya sekme olduğu boşluk tarafından ayrılmış.  
   
--   Şapka (^) karakteri kaçış karakteri veya sınırlayıcı tanınmıyor. Karakter tamamen tarafından işletim sisteminde komut satırı ayrıştırıcı için iletilmeden önce işlenir `argv` program dizisinde.  
+-   İnceltme işareti (^) bir kaçış karakteri veya sınırlayıcı olarak tanınmıyor. Karakter tamamen işletim sistemindeki komut satırı ayrıştırıcı tarafından için iletilmeden önce işlenir `argv` programı dizisi.  
   
--   Çift tırnak işaretleri bir dize ("*dize*") içinde yer alan boşluk bakılmaksızın tek bir bağımsız değişken olarak yorumlanır. Tırnak içine alınan bir dizeyi bir bağımsız değişken katıştırılabilir.  
+-   Çift tırnak işareti içine alınmış bir dize ("*dize*") içinde yer alan boşluk bağımsız olarak tek bir bağımsız değişken olarak yorumlanır. Tırnak işaretli dize bağımsız değişkeni eklenebilir.  
   
--   Çift tırnak işareti eğik çizgi işaretinden (\\") değişmez değer çift tırnak işareti karakteri (") olarak yorumlanır.  
+-   Çift tırnak işareti öncesinde bir ters eğik çizgi (\\") bir değişmez değer çift tırnak işareti karakteri (") yorumlanır.  
   
--   Bunlar hemen çift tırnak işareti koyun sürece ters eğik çizgi tam anlamıyla, yorumlanır.  
+-   Ters eğik çizgi, başka bir deyişle, bunlar hemen çift tırnak işareti koyun sürece yorumlanır.  
   
--   Ters eğik çizgi çift sayıda çift tırnak işareti izlediyseniz, bir ters eğik çizgi yerleştirilir `argv` dizi her çift ters eğik çizgi ve çift tırnak işareti dize ayırıcı olarak yorumlanır.  
+-   Çift tırnak işareti ters eğik çizgi sayıda izlediyseniz, bir ters eğik çizgi yerleştirildi `argv` dizisi için her çift ters eğik çizgi ve çift tırnak işareti, dize ayırıcı olarak yorumlanır.  
   
--   Ters eğik çizgi tek sayıda çift tırnak işareti izlediyseniz, bir ters eğik çizgi yerleştirilir `argv` dizi her çift ters eğik çizgi ve çift tırnak işareti "kaçış" değişmez değer çift tırnak işareti neden kalan eğik (" ) yerleştirileceği `argv`.  
+-   Çift tırnak işareti ters eğik çizgi tek sayıda izlediyseniz, bir ters eğik çizgi yerleştirildi `argv` dizisi için her çift ters eğik çizgi ve çift tırnak işareti "kaçış" değişmez değer çift tırnak işareti neden kalan eğik (" ) yerleştirileceği `argv`.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki programı nasıl komut satırı bağımsız değişkenleri gösterir geçirilir:  
+ Aşağıdaki program nasıl komut satırı bağımsız değişkenlerini gösterir geçirilir:  
   
-```  
+```cpp 
 // command_line_arguments.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -66,9 +67,9 @@ int main( int argc,      // Number of strings in array argv
 }  
 ```  
   
- Aşağıdaki tabloda, örnek giriş ve yukarıdaki listede kuralları gösteren beklenen çıkış gösterir.  
+ Aşağıdaki tabloda örnek giriş ve yukarıdaki listede yer alan kurallara gösteren beklenen çıktıyı gösterir.  
   
-### <a name="results-of-parsing-command-lines"></a>Komut satırları ayrıştırma sonuçları  
+### <a name="results-of-parsing-command-lines"></a>Komut satırları ayrıştırma sonuçlarını  
   
 |Komut satırı girişi|argv [1]|argv [2]|argv [3]|  
 |-------------------------|---------------|---------------|---------------|  
@@ -77,7 +78,7 @@ int main( int argc,      // Number of strings in array argv
 |`a\\\"b c d`|`a\"b`|`c`|`d`|  
 |`a\\\\"b c" d e`|`a\\b c`|`d`|`e`|  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [main: Program Başlatma](../cpp/main-program-startup.md)

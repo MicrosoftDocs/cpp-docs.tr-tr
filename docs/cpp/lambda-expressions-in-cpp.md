@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc8457371ef266c5628e225eff8f05328190e52d
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 7c7b6d49ae82048d5223eea385f1503c28a990ed
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941973"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402971"
 ---
 # <a name="lambda-expressions-in-c"></a>C++'deki Lambda İfadeleri
 C ++ 11 ve sonraki sürümlerinde, bir lambda ifadesi — genellikle olarak adlandırılan bir *lambda*— bir anonim işlev nesnesi tanımlamanın bir yoludur (bir *kapanış*) konumunda Burada, çağrılan veya bağımsız değişken olarak geçirilen sağ bir işlev. Genellikle lambda ifadeleri, algoritmalar veya zaman uyumsuz yöntemler için geçen birkaç satır kod kapsüllemek için kullanılır. Bu makale lambdaların ne olduğunu tanımlar, bunları diğer programlama teknikleri ile karşılaştırır, faydalarını anlatır ve temel bir örnek verir.  
@@ -46,7 +46,6 @@ void abssort(float* x, unsigned n) {
         } // end of lambda expression  
     );  
 }  
-  
 ```  
   
  Bu örnekte, bir lambda bölümlerini gösterilmiştir:  
@@ -107,7 +106,7 @@ void f(Args... args) {
 }  
 ```  
   
- Bir sınıf yönteminin gövdesinde lambda ifadeleri kullanmak için geçirin `this` işaretçisini yakalama yan tümcesi, kapsayan sınıfın yöntemlerini ve veri üyelerine erişim sağlamak için. 
+ Bir sınıf yönteminin gövdesinde lambda ifadeleri kullanmak için geçirin **bu** işaretçisini yakalama yan tümcesi, kapsayan sınıfın yöntemlerini ve veri üyelerine erişim sağlamak için. 
  
 **Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **bu** işaretçi yakalanıp değerle belirterek `*this` yakalama yan tümcesi içinde. Değere göre yakalama anlamına tüm *kapanış*, lambda ifadesi bu encapulates anonim bir işlev nesnesidir, lambda burada çağrıldığında her çağrı sitesine kopyalanır. Değere göre yakalama, özellikle mimarilerde belirli donanım NUMA gibi paralel veya zaman uyumsuz işlem olarak lambda yürütülür gerektiğinde faydalıdır. 
 
@@ -141,8 +140,7 @@ pNums = make_unique<vector<int>>(nums);
 auto y = [] (int first, int second)  
 {  
     return first + second;  
-};  
-  
+};   
 ```  
   
  İçinde **C++ 14**, parametre türü genelse, auto anahtar kelimesini tür belirticisi kullanabilirsiniz. Bu işlev çağrısı işleci bir şablon olarak oluşturmak için derleyicinin bildirir. Otomatik parametre listesindeki her bir örneğini bir benzersiz tür parametresine eşdeğerdir.  
@@ -340,7 +338,6 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
     {
         return [n] { return n + 1; }();
     }
-
 ``` 
 Bir lambda örtülü olarak başvuruluyor `constexpr` sonucunu gereksinimlerini karşılayıp karşılamadığını bir `constexpr` işlevi:
 ```cpp
@@ -375,7 +372,7 @@ auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };
   
  Visual Studio, C ++ 11 standart lambda işlevlere ek olarak durum bilgisiz lambdalar rastgele çağırma kurallarına kullanan işlev işaretçilerine dönüştürülebilir olan destekler.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart kitaplığındaki işlev nesneleri](../standard-library/function-objects-in-the-stl.md)   
  [İşlev çağrısı](../cpp/function-call-cpp.md)   

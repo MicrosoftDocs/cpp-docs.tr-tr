@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60879ca8792e3259a69b7a9a3de6cd83dce0d6d7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d94acdfff2fdea2cc35d0856940270ba82e131af
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411594"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405262"
 ---
 # <a name="expression-statement"></a>İfade Deyimi
 İfade deyimleri, ifadelerin değerlendirilmesine neden olur. İfade deyiminin sonucunda denetim aktarımı veya yineleme gerçekleşmez.  
@@ -34,7 +34,7 @@ ms.locfileid: "32411594"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir ifade deyimindeki tüm ifadeler değerlendirilir ve sonraki ifade yürütülmeden önce tüm yan etkiler tamamlanır. En yaygın ifade deyimleri atamalar ve işlev çağrılarıdır.  İfade isteğe bağlı olduğundan, tek başına bir noktalı virgül olarak adlandırılan bir boş ifade deyimi değerlendirilir [null](../cpp/null-statement.md) deyimi.  
+ Bir ifade deyimindeki tüm ifadeler değerlendirilir ve sonraki ifade yürütülmeden önce tüm yan etkiler tamamlanır. En yaygın ifade deyimleri atamalar ve işlev çağrılarıdır.  İfade isteğe bağlı olduğundan, tek başına bir noktalı olarak adlandırılan bir boş ifade deyimi olarak değerlendirilir [null](../cpp/null-statement.md) deyimi.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)

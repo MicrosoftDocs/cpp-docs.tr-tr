@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4b8635f082f706ef07697653d56155414c5199d
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 951a7d5c4c171a6662c55d9ae7906cc1500cd137
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940917"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406737"
 ---
 # <a name="definitions-and-declarations-c"></a>Tanımlar ve Bildirimler (C++)
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü
@@ -75,5 +75,5 @@ void func() {
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
  [dllexport, dllimport](../cpp/dllexport-dllimport.md)

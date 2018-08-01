@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cff0103a9debe63def6dbbcf7e3730a8e09dcbc2
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 5fe9e5c1099f6c30483cdb20c48daf9c35fbed8e
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948104"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404983"
 ---
 # <a name="aliases-and-typedefs-c"></a>Diğer adlar ve tür tanımları (C++)
 Kullanabileceğiniz bir *diğer ad bildirimi* eşanlamlısı olarak kullanmak için daha önce bildirilen bir tür için bir ad bildirmek için. (Bu mekanizma resmi olmayan adı olarak da adlandırılan bir *tür diğer adı*). Oluşturmak için bu mekanizma kullanabilirsiniz bir *diğer ad şablonu*, hangi özel ayırıcılar için özellikle yararlı olabilir.  
@@ -31,10 +31,10 @@ using identifier = type;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `identifier`  
+ *tanımlayıcı*  
  Diğer adı.  
   
- `type`  
+ *Türü*  
  İçin bir diğer ad oluşturmakta olduğunuz tür tanımlayıcısı.  
   
  Bir diğer ad, yeni bir tür sunmaz ve var olan bir tür adı anlamını değiştiremezsiniz.  
@@ -177,7 +177,6 @@ int main()
 // typedef UL back in scope  
 ```  
  
-  
 ```cpp 
 // typedef_specifier1.cpp  
 typedef char FlagType;  

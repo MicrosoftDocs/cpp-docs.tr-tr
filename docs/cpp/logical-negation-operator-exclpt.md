@@ -19,18 +19,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6c8ad17195954feeeccb47896fa013302b6d7e3
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 4f911c6f01dfc188c26355a3749d8a130f0d6951
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948114"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403595"
 ---
 # <a name="logical-negation-operator-"></a>Mantıksal Değilleme İşleci: !
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 ! cast-expression  
 ```  
   
@@ -57,7 +56,7 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Birli Aritmetik İşleçler](../c-language/unary-arithmetic-operators.md)

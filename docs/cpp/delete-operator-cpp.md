@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89ad061dc2be090abbcfbc147f1ea5fbddb8ae6a
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: f4f563a424fd5a019b2094f931236f4af6f0ecb4
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948030"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407734"
 ---
 # <a name="delete-operator-c"></a>delete İşleci (C++)
 Bellek bloğunu kaldırır.  
@@ -97,8 +97,7 @@ int main()
   
  Sınıf türündeki nesneler için ([sınıfı](../cpp/class-cpp.md), [yapı](../cpp/struct-cpp.md), veya [birleşim](../cpp/unions.md)), genel delete işleci çağrılır. Sınıf türü nesneler için ifadeyi silmenin birli kapsam çözümleme işleci (:) ile başlıyorsa ayırmayı kaldırma işlevinin adını genel kapsamda çözülür. Aksi takdirde, delete işleci (işaretçi null değilse) belleğini önce nesnenin yok Edicisi çağırır. Delete işleci, sınıf başına temelinde tanımlanabilir; belirli bir sınıfın tür tanımı yok ise, global işleci silme çağrılır. Sanal bir yıkıcı statik türü olan bir sınıf nesnesi ayırması için ifadeyi silmenin kullandıysanız, ayırmayı kaldırma işlevi nesne dinamik türden sanal yıkıcı çözümlenir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [new ve delete İşleçleri](../cpp/new-and-delete-operators.md)   
- 

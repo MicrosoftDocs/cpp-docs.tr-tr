@@ -18,18 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a401caad212978372bcb02b412fa8a9648b7170
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 044c5df5ae0a51912893ccf306a5c93afceb7ab3
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948254"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407594"
 ---
 # <a name="argument-definitions"></a>Bağımsız Değişken Tanımları
 Prototipteki bağımsız değişkenler  
   
 ```cpp 
-  
 int main( int argc, char* argv[], char* envp[]);
 int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);  
 ```  
@@ -45,16 +44,16 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
  İlk komut satırı bağımsız değişkeni her zaman olduğu `argv` **[1]** ve sonuncu `argv` **[** `argc` - 1 **]**.  
   
 > [!NOTE]
->  Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) ve ilk ve ikinci bağımsız kullanıyorsanız (`lpApplicationName` ve `lpCommandLine`), `argv` **[0]** çalışmıyor olabilir yürütülebilir dosya adı; kullanma [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir adı ve tam olarak nitelenmiş yolunu almak için.  
+>  Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) ve ilk ve ikinci bağımsız kullanıyorsanız (*lpApplicationName* ve *lpCommandLine*), `argv` **[0]** yürütülebilir olmayabilir kullanın; adı [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir adı ve tam olarak nitelenmiş yolunu almak için.  
   
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
  *envp*  
- *Envp* çok UNIX sisteminde yaygın bir uzantı olan dizisi Microsoft C++'da kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi bir NULL girdisi ile sonlandırılır. Bir işaretçiler dizisi olarak bildirilebilir **char (char** \*envp []**)** veya işaretçilerinin işaretçisi olarak **char (char** \* \* envp **)**. Programınızı kullanıyorsa **wmain** yerine **ana**, kullanın **wchar_t** veri türü yerine **char**. Öğesine geçirilen ortam bloğu **ana** ve **wmain** geçerli ortamın "dondurulmuş" bir kopyasıdır. Daha sonra ortamı çağrısıyla değiştirirseniz **putenv** veya `_wputenv`, geçerli ortam (tarafından döndürülen `getenv` / `_wgetenv` ve `_environ` /  `_wenviron` değişkeni) değişir, ancak envp ile işaret edilen blok değişmez. Bkz: [komut satırı işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) ortam işlemeyi gizleme hakkında bilgi için. Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.  
+ *Envp* çok UNIX sisteminde yaygın bir uzantı olan dizisi Microsoft C++'da kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi bir NULL girdisi ile sonlandırılır. Bir işaretçiler dizisi olarak bildirilebilir **char (char** \*envp []**)** veya işaretçilerinin işaretçisi olarak **char (char** \* \* envp **)**. Programınızı kullanıyorsa `wmain` yerine `main`, kullanın `wchar_t` veri türü yerine **char**. Öğesine geçirilen ortam bloğu `main` ve `wmain` geçerli ortamın "dondurulmuş" bir kopyasıdır. Daha sonra ortamı çağrısıyla değiştirirseniz `putenv` veya `_wputenv`, geçerli ortam (tarafından döndürülen `getenv` / `_wgetenv` ve `_environ` /  `_wenviron` değişkeni) olur değişir, ancak envp ile işaret edilen blok değişmez. Bkz: [komut satırı işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) ortam işlemeyi gizleme hakkında bilgi için. Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.  
   
 **END Microsoft özgü**  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek nasıl kullanılacağını gösterir *argc*, *argv*, ve *envp* bağımsız değişkenleri **ana**:  
+ Aşağıdaki örnek nasıl kullanılacağını gösterir *argc*, *argv*, ve *envp* bağımsız değişkenleri `main`:  
   
 ```cpp 
 // argument_definitions.cpp  
@@ -80,5 +79,5 @@ int main( int argc, char *argv[], char *envp[] ) {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [main: Program Başlatma](../cpp/main-program-startup.md)

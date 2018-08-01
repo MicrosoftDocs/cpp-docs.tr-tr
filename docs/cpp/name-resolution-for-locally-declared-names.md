@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6347f3b0b71dc35544f22101479de23bb4efd686
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f87d5083839b99e4b94beb2ceb3a4cba9615ea4d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420052"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408274"
 ---
 # <a name="name-resolution-for-locally-declared-names"></a>Yerel Bildirimli Adlar için Ad Çözümü
 
@@ -172,6 +172,5 @@ Base
 1  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.
-
+## <a name="see-also"></a>Ayrıca bkz.
  [Ad çözümlemesi](../cpp/templates-and-name-resolution.md)

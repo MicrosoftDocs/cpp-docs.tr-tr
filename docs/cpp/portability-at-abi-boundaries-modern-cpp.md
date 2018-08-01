@@ -1,5 +1,5 @@
 ---
-title: (Modern C++) ABI sınırlarında taşınabilirlik | Microsoft Docs
+title: ABI sınırlarında taşınabilirlik (Modern C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,18 +12,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c214ed18e5afec51f52514abdd73e0e5b658635a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fb9ce8012db8617afc7af3183bd7439ddeb8fab7
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419674"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402357"
 ---
 # <a name="portability-at-abi-boundaries-modern-c"></a>ABI Sınırlarında Taşınabilirlik (Modern C++)
-İkili arabirimi sınırlarında yeterince Taşınabilir türler ve kuralları kullanın. Bir "taşınabilir" C yerleşik bir tür ya da yalnızca C yerleşik türler içeren yapı türüdür. Sınıf türleri yalnızca arama kuralı, vb. düzenini, çağıran ve çağrılan kabul ettiğinde kullanılabilir. Bu yalnızca her ikisi de aynı derleyici ve derleyici ayarları derlendiğinde mümkündür.  
+İkili arabirimi sınırlarında yeterince Taşınabilir türler ve kuralları kullanın. Bir "taşınabilir" C yerleşik bir tür ya da yalnızca C yerleşik türler içeren bir yapı türüdür. Sınıf türleri yalnızca çağırma kuralı, vb. Düzen, çağıran ve çağrılan kabul ettiğinizde kullanılabilir. Bu yalnızca her ikisi de aynı derleyici ve derleyici ayarları ile derlendiğinde mümkündür.  
   
-## <a name="how-to-flatten-a-class-for-c-portability"></a>C taşınabilirliği için bir sınıf düzleştirmek nasıl  
- Ne zaman arayanlar başka bir derleyici/dili ile derlenmiş, ardından "düzleştirmek" bir **extern "C"** API'si belirli bir arama kuralı ile:  
+## <a name="how-to-flatten-a-class-for-c-portability"></a>Bir sınıf C taşınabilirliği için düzleştirilecek nasıl  
+ Ne zaman çağıranlar başka bir derleyici/dili ile derlenmiş ve ardından "dönüştürme" bir **extern "C"** API'si ile belirli bir çağırma kuralı:  
   
 ```cpp  
 // class widget {  
@@ -39,7 +39,7 @@ extern "C" {        // functions using explicit "this"
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ için yeniden Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

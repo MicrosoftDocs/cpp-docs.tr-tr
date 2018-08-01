@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abfda38c6c35c3e7172b187c89fa78bed5ee7616
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 74b79edb24396896a6c8a50965081e9466720ca4
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948125"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407831"
 ---
 # <a name="event"></a>__event
 Bir olayı bildirir.  
@@ -31,7 +31,6 @@ Bir olayı bildirir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 __event method-declarator;  
 __event __interface interface-specifier;  
 __event member-declarator;  
@@ -67,7 +66,7 @@ __event HRESULT OnClick(int* b, char* s);
  Bkz: [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md) örnek kod için.  
   
 ## <a name="com-events"></a>COM Olayları  
- COM olayları arabirimdir. Olay kaynağı arabirim içindeki bir yönteminin parametreleri olmalıdır `in` parametreleri (ancak bu titizlikle zorunlu değildir), çünkü bir `out` parametresi, çok noktaya yayın olduğunda kullanışlı değildir. Düzey 1 uyarısı kullanırsanız verilecek bir `out` parametresi.  
+ COM olayları arabirimdir. Olay kaynağı arabirim içindeki bir yönteminin parametreleri olmalıdır *içinde* parametreleri (ancak bu titizlikle zorunlu değildir), çünkü bir *kullanıma* parametresi, çok noktaya yayın olduğunda kullanışlı değildir. Düzey 1 uyarısı kullanırsanız verilecek bir *kullanıma* parametresi.  
   
  Dönüş türü genellikle HRESULT olduğu veya **void**, ancak herhangi bir tamsayı türü olabilir dahil olmak üzere **enum**. Bir olay bir integral dönüş türü kullanır ve bir olay işleyicisi sıfır olmayan bir değer döndürür çalışması gerçekleştirilen olay diğer temsilcileri çağrıları iptal ettiğinde, bir hata koşulu olur. Derleyicinin otomatik olarak bir olay kaynağı arabirim olarak işaretlemek Not bir [kaynak](../windows/source-cpp.md) oluşturulan IDL içinde.  
   
@@ -133,7 +132,7 @@ public:
 };  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Olay işleme](../cpp/event-handling.md)   
  [event_source](../windows/event-source.md)   

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5408cf05910bdc1802213d69a286707199f0be76
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c3a3c6d70ded818f938f6169e2c3fbe277dcf35c
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940238"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407065"
 ---
 # <a name="bstrtoperator-"></a>_bstr_t::operator !
 **Microsoft'a özgü**  
@@ -33,9 +33,7 @@ ms.locfileid: "37940238"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 bool operator!( ) const throw( );  
-  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -43,5 +41,5 @@ bool operator!( ) const throw( );
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

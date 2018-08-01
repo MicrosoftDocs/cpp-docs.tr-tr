@@ -1,5 +1,5 @@
 ---
-title: Özel durum işleme Visual c++'ta | Microsoft Docs
+title: Visual C++ içinde özel durum işleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,37 +14,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0acd5df644f097d19e5f9708f0a059a31f3e9ee9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 850050d4307d7b0c1170c24ca9d13d6f339de189
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413329"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406997"
 ---
 # <a name="exception-handling-in-visual-c"></a>Visual C++'da Özel Durum İşleme
-Bir özel durum denetimi dışında kalan program kendi normal yürütme yol boyunca devam etmesini engelleyen büyük olasılıkla programın, bir hata durumudur. Nesne oluşturma, dosya giriş/çıkış ve diğer modüllerden yapılan işlev çağrıları gibi bazı işlemleri bile programınız düzgün çalışmasını özel durumların tüm olası kaynakları olur. Sağlam kod düşünmektedir ve özel durumları işler.  
+Bir özel durum denetimi dışında kalan programın normal yürütme yolu devam etmesini engelleyen büyük olasılıkla programın, bir hata durumudur. Hatta programınızı doğru çalışırken nesne oluşturma, dosya giriş/çıkış ve diğer modüllerden yapılan işlev çağrılarının da dahil olmak üzere belirli, özel durumların tüm olası kaynakları işlemlerdir. Güçlü kod düşünmektedir ve özel durumları işler.  
   
- Mantık hataları tek bir program veya modülü içinde algılamak için özel durumlar yerine onaylar kullanır (bkz [kullanarak onaylar](/visualstudio/debugger/c-cpp-assertions)).  
+ Tek bir program veya Modül içindeki mantık hataları algılamak için özel durumlar yerine onaylar kullanın (bkz [kullanarak Onaylamalar](/visualstudio/debugger/c-cpp-assertions)).  
   
- Visual C++ özel durum işleme üç tür destekler:  
+ Visual C++ üç özel durum işleme türünü destekler:  
   
 -   [C++ özel durum işleme](../cpp/cpp-exception-handling.md)  
   
-     C++ programları için tür kullanımı uyumlu olan ve yığını geriye doğru izleme sırasında Yıkıcılar çağrılan söz konusu nesne sağlar, C++ özel durum işleme kullanmanız gerekir.  
+     C++ programları için hangi tür bakımından güvenlidir ve yığın geriye doğru izleme sırasında yok edicinin çağrılmadığına söz konusu nesne sağlar, C++ özel durum işleme kullanmanız gerekir.  
   
 -   [Yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md)  
   
-     Windows SEH adı verilen kendi özel durum mekanizması sağlar. C++ ya da MFC programlama için önerilmez. SEH yalnızca MFC C programları kullanın.  
+     Windows SEH adı verilen kendi özel durum mekanizması sağlar. C++ ya da MFC programlama için önerilmez. SEH yalnızca MFC olmayan C programlarında kullanın.  
   
 -   [MFC özel durumları](../mfc/exception-handling-in-mfc.md)  
   
-     Sürüm 3.0, bu yana MFC C++ özel durumlarını kullandı ancak hala eski kendi özel durum C++ özel durumlarını formunda benzer makroları işleme destekler. Bu makroları yeni programlama için Önerilmemesine rağmen hala geriye dönük uyumluluk için desteklenir. Zaten makroları kullanmak programlarda da C++ özel durumlarını ücretsiz olarak kullanabilirsiniz. Ön işleme sırasında özel durum Visual C++ sürüm 2. 0'dan sonra C++ dili Visual C++ uygulamasında tanımlı anahtar sözcükler işleme için makroları değerlendirin. C++ özel durumlarını kullanılacak başlatırken var olan özel durum makroları yerinde bırakın.  
+     Sürüm 3.0, bu yana MFC C++ özel durumlarını kullanılmış, ancak yine de C++ özel durumlarını formunda benzer makroları, işleme, eski özel durumu destekler. Bu makrolar için yeni programlama önerilmez olsa da, bunlar yine de geriye dönük uyumluluk için desteklenir. Makroları kullanan programlar içinde de C++ özel durumlarını ücretsiz olarak kullanabilirsiniz. Ön işleme sırasında özel durum işleme Visual C++ uygulaması C++ dili Visual C++ sürüm 2. 0'den itibaren tanımlı anahtar sözcükler için makroları değerlendirir. C++ özel durumlarını kullanmayı başlatırken mevcut bir özel durum makroları yerinde bırakabilirsiniz.  
   
- Kullanmak [/EH](../build/reference/eh-exception-handling-model.md) projede; kullanmak için işleme özel durumun türünü belirtmek için derleyici seçeneği C++ özel durum işleme varsayılandır. Hata işleme mekanizmaları karışık kullanmayın; Örneğin, C++ özel durum ile yapılandırılmış özel durum işleme kullanmayın. C++ özel durum işleme kullanarak kodunuzu daha taşınabilir hale getirir ve herhangi bir türde özel durumları işleme izin verir. Yapılandırılmış özel durum işleme dezavantajları hakkında daha fazla bilgi için bkz: [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). MFC makroları ve C++ özel durumlarını karıştırma hakkında öneriler için bkz: [özel durumlar: kullanarak MFC makroları ve C++ özel durumlarını](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).  
+ Kullanma [/EH](../build/reference/eh-exception-handling-model.md) bir projede; kullanmak için özel durum işleme türünü belirtmek için derleyici seçeneği C++ özel durum işleme varsayılandır. Hata işleme düzenekleri karıştırmayın; Örneğin, C++ özel durumlarını, yapılandırılmış özel durum işleme ile kullanmayın. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir yapar ve herhangi bir türde özel durumları işlemenizi sağlar. Yapılandırılmış özel durum işleme dezavantajları hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). MFC makroları ve C++ özel durumlarını karıştırma hakkında daha fazla öneri için bkz. [özel durumlar: MFC makrolarını ve C++ özel durumlarını](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).  
   
- CLR uygulamalarda özel durum işleme hakkında daha fazla bilgi için bkz: [özel durum işleme](../windows/exception-handling-cpp-component-extensions.md).  
+ CLR uygulamaları özel durumları işleme hakkında daha fazla bilgi için bkz: [özel durum işleme](../windows/exception-handling-cpp-component-extensions.md).  
   
- Özel durum x64 üzerinde işleme hakkında bilgi için bkz: işlemciler, [özel durum işleme (x64)](../build/exception-handling-x64.md).  
+ Özel durum x64 üzerinde işleme hakkında bilgi için işlemciler bkz [özel durum işleme (x64)](../build/exception-handling-x64.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

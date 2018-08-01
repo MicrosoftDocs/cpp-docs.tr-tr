@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cba08aeee123c8b4ed237f2ad5a8397e0f354d10
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0b85f1a97dd38be3e82b2d7e8a10ca8149788e6f
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419972"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404694"
 ---
 # <a name="ordering-of-c-arrays"></a>C++ Dizilerini Sıralama
-C++ dizileri ana satır sırayla depolanır. Ana satır sırası son alt simge en hızlı değişir anlamına gelir.  
+C++ dizilerini satır ağırlıklı sırayla depolanır. Satır öncelikli bir sırada en hızlı son alt simge değişir anlamına gelir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Diziler](../cpp/arrays-cpp.md)

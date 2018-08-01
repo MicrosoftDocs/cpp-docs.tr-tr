@@ -20,16 +20,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1113108f711eccbce9be96852f7f7f28e537c9d9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ddcd094ae828272744060cea5604865d17562890
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408649"
 ---
 # <a name="default-arguments"></a>Varsayılan Bağımsız Değişkenler
-Çoğu durumda işlevlerin, varsayılan bir değerin yeterli olmasını sağlayacak kadar sık kullanılan bağımsız değişkenleri vardır. Bunu çözmek için varsayılan bağımsız değişken özelliği, bir işlev için yalnızca belirli bir çağrıda anlamlı olan bağımsız değişkenleri belirtmeye izin verir. Bu kavramı göstermeye içinde sunulan örneği göz önünde bulundurun. [işlev aşırı yüklemesi](../cpp/function-overloading.md).  
+Çoğu durumda işlevlerin, varsayılan bir değerin yeterli olmasını sağlayacak kadar sık kullanılan bağımsız değişkenleri vardır. Bunu çözmek için varsayılan bağımsız değişken özelliği, bir işlev için yalnızca belirli bir çağrıda anlamlı olan bağımsız değişkenleri belirtmeye izin verir. Bu kavramı anlamak için de sunulan örneği göz önünde bulundurun. [işlev aşırı yüklemesi](../cpp/function-overloading.md).  
   
-```  
+```cpp 
 // Prototype three print functions.  
 int print( char *s );                  // Print a string.  
 int print( double dvalue );            // Print a double.  
@@ -39,16 +40,16 @@ int print( double dvalue, int prec );  // Print a double with a
   
  Birçok uygulamada, `prec` için makul bir varsayılan değer sağlanabilir ve iki işleve olan gereksinim ortadan kalkar:  
   
-```  
+```cpp 
 // Prototype two print functions.  
 int print( char *s );                    // Print a string.  
 int print( double dvalue, int prec=2 );  // Print a double with a  
 //  given precision.  
 ```  
   
- Uygulaması `print` işlevi değiştirildiğinde biraz yalnızca bir işlev türü için mevcut olgu yansıtacak şekilde **çift**:  
+ Uygulamasını `print` işlevi değiştirildiğinde biraz yalnızca bir işlev türü için mevcut olgu yansıtacak şekilde **çift**:  
   
-```  
+```cpp 
 // default_arguments.cpp  
 // compile with: /EHsc /c  
   
@@ -81,7 +82,7 @@ int print( double dvalue, int prec ) {
   
  Yeni `print` işlevini çağırmak için, aşağıdaki gibi bir kod kullanın:  
   
-```  
+```cpp 
 print( d );    // Precision of 2 supplied by default argument.  
 print( d, 0 ); // Override default argument to achieve other  
 //  results.  
@@ -91,13 +92,13 @@ print( d, 0 ); // Override default argument to achieve other
   
 -   Varsayılan bağımsız değişkenler yalnızca izleyen bağımsız değişkenlerin çıkarıldığı işlev çağrılarında kullanılır — bunlar son bağımsız değişkenler olmalıdır. Bu nedenle aşağıdaki kod geçersizdir:  
   
-    ```  
+    ```cpp 
     int print( double dvalue = 0.0, int prec );  
     ```  
   
 -   Tekrar tanımlama orijinaliyle aynı olsa bile, sonraki bildirimlerde varsayılan bir bağımsız değişken tekrar tanımlanamaz. Bu nedenle, aşağıdaki kod bir hata oluşturur:  
   
-    ```  
+    ```cpp 
     // Prototype for print function.  
     int print( double dvalue, int prec = 2 );  
   
@@ -116,9 +117,6 @@ print( d, 0 ); // Override default argument to achieve other
   
 -   İşlev işaretleri için varsayılan bağımsız değişkenler sağlanabilir. Örneğin:  
   
-    ```  
+    ```cpp 
     int (*pShowIntVal)( int i = 0 );  
     ```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 

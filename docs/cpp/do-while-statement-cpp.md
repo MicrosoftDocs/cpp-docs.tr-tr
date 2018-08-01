@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2de180d58c31f4bd6c8b15eb69076b99f8b57b0
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 5db832a7c6c380e43fcf5edb3f36ce1a1bf692e6
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948157"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404723"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C++)
 Yürüten bir *deyimi* belirtilen sonlandırma koşulu kadar sürekli olarak ( *ifade*) sıfır olarak değerlendirilir.  
@@ -62,7 +62,7 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Yineleme deyimleri](../cpp/iteration-statements-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [while deyimi (C++)](../cpp/while-statement-cpp.md)   

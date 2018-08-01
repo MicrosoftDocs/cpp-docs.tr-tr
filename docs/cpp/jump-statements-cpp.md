@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 111db8502355638558796ecb54672ea6e8d4fa03
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2b152be150e284462bddf0940df5656744925da5
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419036"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405502"
 ---
 # <a name="jump-statements-c"></a>Atlama Deyimleri (C++)
 C++ atlama deyimi, denetimin anlık bir yerel aktarmasını gerçekleştirir.  
@@ -44,5 +44,5 @@ goto identifier;
   
 -   [goto Deyimi](../cpp/goto-statement-cpp.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)

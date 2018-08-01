@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25bb47c0297d7e1e472f69334c17aa458aaa57b6
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: a84e14cbac5eb04e63f85708e3ca8ae100ec56ab
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940455"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406327"
 ---
 # <a name="keywords-c"></a>Anahtar sözcükler (C++)
 Anahtar sözcükler, özel anlamları olan önceden tanımlanmış ve ayrılmış tanıtıcılardır. Bunlar programlarınızda tanımlayıcı olarak kullanılamaz. Aşağıdaki anahtar sözcükler Microsoft C++ için ayrılmıştır. Öncesinde alt çizgi adlar Microsoft uzantılarıdır.  
@@ -102,6 +102,6 @@ Anahtar sözcükler, özel anlamları olan önceden tanımlanmış ve ayrılmı�
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sözcük kuralları](../cpp/lexical-conventions.md)   
  [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

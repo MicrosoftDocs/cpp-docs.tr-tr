@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ce233b4ffa33873b752ebc409fb8570856acbff
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: b3c4592255c56aae6bc4d959757164fd9c11f2a5
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940205"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407815"
 ---
 # <a name="algorithms-modern-c"></a>Algoritmalar (Modern C++)
 Modern C++ programlama için algoritmaları kullandığınız olan öneririz [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md). Önemli bazı örnekler şunlardır:  
@@ -69,16 +69,16 @@ auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );
 ### <a name="range-based-for-loops"></a>Aralık tabanlı for döngüleri  
  Aralık tabanlı **için** döngü olan bir C ++ 11 dil özelliğidir, C++ Standart Kitaplığı algoritması. Ancak, döngüler hakkındaki bu tartışmada ilgiyi gerektirir. Aralık tabanlı **için** döngüler'ın bir uzantısı olan **için** anahtar sözcüğü ve bir değer aralığı boyunca üzerinde yineleme yapan döngüler yazmak için kullanışlı ve etkili bir yol sağlar. C++ Standart Kitaplığı kapsayıcıları, dizeleri ve diziler için aralık tabanlı **için** döngüleri. Bu yineleme sözdizimini kullanıcı tanımlı türüne yönelik etkinleştirmek için aşağıdaki desteği ekleyin:  
   
--   A **başlamak** yapının başlangıcına bir yineleyici döndüren bir yöntemi ve bir **son** yapının sonuna bir yineleyici döndüren yöntemi.  
+-   A `begin` yapının başlangıcına bir yineleyici döndüren bir yöntemi ve bir `end` yapının sonuna bir yineleyici döndüren yöntemi.  
   
 -   Bu yöntemler için yineleyicide destek: ** işleci *** **işleç! =**, ve **operator ++** (önek sürüm).  
   
  Bu yöntemler, üye veya tek başına çalışan işlevler olabilir.  
   
 ## <a name="random-numbers"></a>Rastgele sayılar  
- SIR değildir, eski CRT **rand()** en length C++ topluluğu içinde açıklanan pek çok fabrikadan işlevi vardır. Modern C++'da, bu eksiklikleri ile uğraşmak zorunda değildir — ne de kendi birörnek dağıtılmış rastgele sayı üreticisinin stok zorunda — hızla ve kolayca bunları oluşturmaya yönelik araçlar C++ Standart kitaplığında kullanılabilir olmadığından gösterildiği[ \<rastgele >](../standard-library/random.md).  
+ SIR değildir, eski CRT `rand()` en length C++ topluluğu içinde açıklanan pek çok fabrikadan işlevi vardır. Modern C++'da, bu eksiklikleri ile uğraşmak zorunda değildir — ne de kendi birörnek dağıtılmış rastgele sayı üreticisinin stok zorunda — hızla ve kolayca bunları oluşturmaya yönelik araçlar C++ Standart kitaplığında kullanılabilir olmadığından gösterildiği[ \<rastgele >](../standard-library/random.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

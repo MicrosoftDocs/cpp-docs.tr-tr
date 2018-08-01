@@ -18,26 +18,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a8823935ee2f871cdc033aec23f05fc108244e8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c85de0f147d0cfed873a091d17c46e56bf5758a9
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408529"
 ---
 # <a name="compound-statements-blocks"></a>Bileşik Deyimler (Bloklar)
-Bileşik deyim süslü ayraçlar içindeki sıfır veya daha fazla deyimleri oluşur (**{}**). Bileşik deyim, deyim beklenen herhangi bir yerde kullanılabilir. Bileşik deyimlere genellikle "blok" adı verilir.  
+Bileşik deyim, küme ayraçları içine alınmış sıfır veya daha fazla deyim oluşur (**{}**). Bileşik deyim, deyim beklenen herhangi bir yerde kullanılabilir. Bileşik deyimlere genellikle "blok" adı verilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 { [ statement-list ] }  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Aşağıdaki örnek, bileşik deyim olarak kullanır. *deyimi* parçası **varsa** deyimi (bkz [if deyimi](../cpp/if-else-statement-cpp.md) söz dizimi hakkında ayrıntılar için):  
+ Aşağıdaki örnek olarak bileşik deyim kullanır *deyimi* parçası **varsa** deyimi (bkz [if deyimi](../cpp/if-else-statement-cpp.md) sözdizimi hakkında daha fazla ayrıntı için):  
   
-```  
+```cpp 
 if( Amount > 100 )  
 {  
     cout << "Amount was too large to handle\n";  
@@ -50,7 +50,7 @@ else
 ```  
   
 > [!NOTE]
->  Bir bildirim bir deyim olduğundan, bir bildirimi deyimlerinde biri olabilir *deyimi listesi*. Sonuç olarak, bileşik deyim içinde bildirilen, ancak açıkça statik olarak bildirilmeyen adların yerel kapsamı ve (nesneler için) ömrü vardır. Bkz: [kapsam](../cpp/scope-visual-cpp.md) adları yerel kapsamlı işlenmesi hakkındaki ayrıntılar için.  
+>  Bir bildirim bir deyim olduğu için bir bildirim deyimlerinde biri olabilir *deyim listesindeki*. Sonuç olarak, bileşik deyim içinde bildirilen, ancak açıkça statik olarak bildirilmeyen adların yerel kapsamı ve (nesneler için) ömrü vardır. Bkz: [kapsam](../cpp/scope-visual-cpp.md) yerel kapsama sahip adların kullanımı hakkındaki ayrıntılar için.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)

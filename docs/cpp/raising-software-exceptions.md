@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6e1ea4abadc3b751b8bad9f9521462d510c5227
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 3eb98f0b66090a9c9e5f09b0cde3e3f94a6c0248
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948187"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405194"
 ---
 # <a name="raising-software-exceptions"></a>Yazılım Özel Durumlarını Oluşturma
 Sistem tarafından program hataların en yaygın kaynaklardan bazılarını özel durumlar olarak işaretlenmeyen. Örneğin, bir bellek bloğunu ayırmaya çalışır, ancak yeterli bellek çalışma zamanı veya API işlevi bir özel durum oluşturmaz ancak bir hata kodu döndürür.  
@@ -60,7 +60,7 @@ Sistem tarafından program hataların en yaygın kaynaklardan bazılarını öze
 #define STATUS_FILE_BAD_FORMAT        0xE0000002  
 ```  
   
- Bir özel durum kodu tanımladıktan sonra bir özel durum oluşturmak için kullanabilirsiniz. Örneğin, aşağıdaki kod yanıt olarak bir bellek ayırma sorun STATUS_INSUFFICIENT_MEM özel durum oluşturur:  
+ Bir özel durum kodu tanımladıktan sonra bir özel durum oluşturmak için kullanabilirsiniz. Örneğin, aşağıdaki harekete geçirirse kod `STATUS_INSUFFICIENT_MEM` yanıt olarak bir bellek ayırma sorun özel durum:  
   
 ```cpp 
 lpstr = _malloc( nBufferSize );  
@@ -80,6 +80,6 @@ __except (GetExceptionCode() == STATUS_INSUFFICIENT_MEM ||
         GetExceptionCode() == STATUS_FILE_BAD_FORMAT )  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Bir özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)   
  [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 610a46c7906cda3c44cdf1f0aaf652552efb9bcb
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1ac866487c25ee4ce75abbebe9b9f9c2a5e97828
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948022"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405950"
 ---
 # <a name="ifexists-statement"></a>__if_exists Deyimi
 **__İf_exists** deyimi belirtilen tanımlayıcı var olup olmadığını test eder. Tanımlayıcısı varsa, belirtilen deyim bloğu yürütülür.  
@@ -40,8 +40,8 @@ statements
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|`identifier`|Test etmek istediğiniz varlığı tanımlayıcısı.|  
-|`statements`|Bir veya daha fazla deyimlerini `identifier` bulunmaktadır.|  
+|*tanımlayıcı*|Test etmek istediğiniz varlığı tanımlayıcısı.|  
+|*Deyimleri*|Bir veya daha fazla deyimlerini *tanımlayıcı* bulunmaktadır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -129,7 +129,7 @@ g_bFlag = 1
 C::f exists  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Seçim deyimleri](../cpp/selection-statements-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [__if_not_exists Deyimi](../cpp/if-not-exists-statement.md)

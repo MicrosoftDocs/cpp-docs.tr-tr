@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b38b608d1d254d304c7182d5063f870e2bbfcffe
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: feb14056e3054cdf0e802b16ce9ff20f67da43fe
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940825"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401580"
 ---
 # <a name="for-statement-c"></a>for Deyimi (C++)
 Koşul yanlış olana kadar sürekli olarak bir deyimi yürütür. Range-based for deyimi hakkında daha fazla bilgi için bkz: [aralık tabanlı for deyimi (C++)](../cpp/range-based-for-statement-cpp.md).  
@@ -137,9 +137,9 @@ for (int i = 0 ; i < 5 ; i++) {
   
  Varsayılan olarak, altında [/Ze](../build/reference/za-ze-disable-language-extensions.md), içinde bildirilen bir değişken bir **için** döngü kadar kapsam içinde kalır **için** döngüsünün kapsayan kapsamı sona erer.  
   
- [/ ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) for döngüleri /Za belirtilmesine gerek olmadan bildirilen değişkenlerin standart davranışını etkinleştirir.  
+ [/ ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) for döngüleri belirtilmesine gerek olmadan bildirilen değişkenlerin standart davranışını etkinleştirir `/Za`.  
   
- Kapsam farklarını kullanmak da mümkündür **için** /Ze altındaki değişkenleri aşağıdaki gibi tekrar bildirmek için döngü:  
+ Kapsam farklarını kullanmak da mümkündür **için** variables yeniden bildirmek için döngü `/Ze` gibi:  
   
 ```cpp  
 // for_statement5.cpp  
@@ -153,7 +153,7 @@ int main(){
   
  Bu standart içinde bildirilen bir değişken davranışını daha yakından taklit eden bir **için** döngüsü içinde bildirilmiş değişkenlerin gerektiren bir **için** döngü döngü bittikten sonra kapsam dışına çıkmaz. Ne zaman bir değişken içinde bildirilmiş bir **için** döngü, derleyici dahili olarak yükseltir, yerel değişkene **için** döngüsünün kapsayan kapsamı olsa bile zaten aynı ada sahip bir yerel değişken.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Yineleme deyimleri](../cpp/iteration-statements-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [while deyimi (C++)](../cpp/while-statement-cpp.md)   

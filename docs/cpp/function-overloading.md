@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1506870ff0b5bb2aea55874d32f62b1da63c7302
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: f57ae6a7d084a497ec41c9b66b314ad1fdb3e7fc
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948045"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406577"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar adlandırılır *aşırı* işlevleri. Aşırı yüklenmiş İşlevler, işlev için bağımsız değişken sayısı ve türleri bağlı olarak farklı semantikler sağlamak etkinleştirin. 
@@ -163,7 +163,7 @@ F1 = Add( F2, 23 );
   
  Önceki deyim, iki kümesi oluşturur:  
   
-|Kümesi 1: İlk bağımsız değişken türü basamağını aday işlevleri|Kümesi 2: Aday işlevleri Whose ikinci bağımsız değişkeni dönüştürülebilir tür int|  
+|Kümesi 1: İlk bağımsız değişken türü basamağını aday işlevleri|Kümesi 2: Aday işlevleri Whose ikinci bağımsız değişkeni dönüştürülebilir türü **int**|  
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
 |Değişken 1|Değişken 1 (**int** dönüştürülebilir **uzun** standart bir dönüştürme kullanılarak)|  
 |Değişken 3||  
@@ -178,7 +178,7 @@ F1 = Add( 3, 6 );
   
  Önceki işlev çağrısı aşağıdaki oluşturur:  
   
-|Kümesi 1: Aday işlevleri, sahip ilk bağımsız değişkeni tür int|Kümesi 2: Aday işlevleri emin olan ikinci bağımsız değişkeni tür int|  
+|Kümesi 1: Aday işlevleri, sahip ilk bağımsız değişken türü **int**|Kümesi 2: Aday işlevleri emin olan ikinci bağımsız değişken türü **int**|  
 |---------------------------------------------------------------------|----------------------------------------------------------------------|  
 |Değişken 2 (**int** dönüştürülebilir **uzun** standart bir dönüştürme kullanılarak)|Değişken 1 (**int** dönüştürülebilir **uzun** standart bir dönüştürme kullanılarak)|  
   
@@ -282,7 +282,7 @@ volatile Over&
   
 3.  Standart dönüştürmeler kullanarak eşleştirin. Tam bir eşleşme veya yalnızca standart dönüştürmeler veya önemsiz dönüştürmeler içeren promosyonlar kullanarak bir eşleşme olarak sınıflandırılan değil herhangi bir dizisi, standart dönüştürmeler kullanarak bir eşleşme olarak sınıflandırılır. Bu kategori, aşağıdaki kurallar uygulanır:  
   
-    -   Bir doğrudan veya dolaylı taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürme için dönüştürme tercih **void \***  veya **const void \*** .  
+    -   Bir doğrudan veya dolaylı taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürme için dönüştürme tercih `void *` veya `const void *`.  
   
     -   Bir taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürme daha yakın temel sınıfı için doğrudan temel sınıf olan daha iyi bir eşleşme üretir. Aşağıdaki şekilde gösterilen sınıf hiyerarşisini olduğunu varsayın.  
   
@@ -439,7 +439,6 @@ int main()
     auto v2 = C().get_data(); // get the original. prints "rvalue"
     return 0;
 }
-
 ```
   
 ## <a name="restrictions-on-overloading"></a>Aşırı yükleme kısıtlamaları  
@@ -466,7 +465,7 @@ int main()
     void Print( PSTR szToPrint );  
     ```  
   
-     Önceki iki işlev aynı bağımsız değişken listeleri vardır. `PSTR` tür eşanlamlıdır **char \*** . Üye kapsamda Bu kod bir hata oluşturur.  
+     Önceki iki işlev aynı bağımsız değişken listeleri vardır. `PSTR` tür eşanlamlıdır `char *`. Üye kapsamda Bu kod bir hata oluşturur.  
   
 -   Numaralandırılmış türler farklı türler ve aşırı yüklenmiş işlevler arasında ayrım yapmak için kullanılabilir.  
   
@@ -573,8 +572,5 @@ double Account::Deposit( double dAmount, char *szPassword )
 }  
 ```
 
-
-
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [işlevler [C++]](../cpp/functions-cpp.md)

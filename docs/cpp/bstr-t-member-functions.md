@@ -14,15 +14,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 848d4a09c0422a09d62e7e6c6e3324dd4b9d2aac
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7a6fd3b9959e6c029a6a0b670771e6671404739b
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408198"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404141"
 ---
 # <a name="bstrt-member-functions"></a>_bstr_t Üye İşlevleri
-Hakkında bilgi için `_bstr_t` üye işlevleri bkz [_bstr_t sınıfı](../cpp/bstr-t-class.md).  
+Hakkında bilgi için `_bstr_t` üye işlevleri [_bstr_t sınıfı](../cpp/bstr-t-class.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

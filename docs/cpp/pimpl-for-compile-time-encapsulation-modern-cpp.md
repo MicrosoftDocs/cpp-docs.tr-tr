@@ -12,20 +12,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f611a898018cee5edc031be1db2fd35af8857e16
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2e80c4bd86cd4c7400e3937fcb8d164fe6b14106
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420161"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404661"
 ---
 # <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>Derleme Zamanı Kapsüllemesi için Pimpl (Modern C++)
-*Derleme pimpl deyim* uygulaması, bağlantı en aza indirmek ve arabirimleri ayırmak için gizlemek için bir modern C++ tekniğidir. Derleme Pimpl kısaltması "uygulamasına." işaretçidir Zaten kavramına aşina ancak Cheshire kat veya derleyici güvenlik duvarı deyim gibi diğer adları tarafından biliyor.  
+*Derleme pimpl deyim* bağlantısından en aza indirmek ve arabirimleri ayırmak için uygulama gizlemek için modern bir C++ Teknik. Derleme Pimpl kısaltması "uygulaması." işaretçisidir Zaten kavramı hakkında bilgi sahibi olmanız ancak Cheshire Cat veya derleyici güvenlik duvarı deyim gibi diğer adlarıyla bildirin.  
   
-## <a name="why-use-pimpl"></a>Derleme pimpl neden kullanılır?  
- Derleme pimpl deyim yazılım geliştirme yaşam döngüsü nasıl artırabilir aşağıda verilmiştir:  
+## <a name="why-use-pimpl"></a>Derleme pimpl neden kullanmalısınız?  
+ Derleme pimpl deyim yazılım geliştirme yaşam döngüsünün nasıl geliştireceğiniz aşağıda verilmiştir:  
   
--   Derleme bağımlılıkları minimization.  
+-   Derleme bağımlılıkları küçültme.  
   
 -   Arabirim ve uygulama ayrılması.  
   
@@ -40,13 +40,12 @@ class my_class {
 private:  
    class impl; unique_ptr<impl> pimpl; // opaque type here  
 };  
-  
 ```  
   
- Derleme pimpl deyim yeniden basamaklar ve kırılır nesne düzenleri önler. İyi (Geçişli) popüler türleri için de uygundur.  
+ Derleme pimpl deyim yeniden basamaklar ve kırılgan nesne düzeni önler. De (Geçişli) popüler türleri için de uygundur.  
   
 ## <a name="pimpl-implementation"></a>Derleme Pimpl uygulama  
- Tanımlamak `impl` .cpp dosyasındaki sınıfı.  
+ Tanımlama `impl` .cpp dosyası sınıfta.  
   
 ```cpp  
 // my_class.cpp  
@@ -61,9 +60,9 @@ my_class::my_class(): pimpl( new impl )
 ```  
   
 ## <a name="best-practices"></a>Önerilen uygulamalar  
- Atma olmayan takas uzmanlık desteği eklenip eklenmeyeceğini göz önünde bulundurun.  
+ Oluşturmayan takas özelleştirmesi için destek eklenip eklenmeyeceğini göz önünde bulundurun.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ için yeniden Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

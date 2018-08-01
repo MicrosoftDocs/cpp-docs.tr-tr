@@ -17,30 +17,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cbb5c1b4162f3326aade092c7e20ca42a825d13
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 56ee12f65ff9efe9f3b048d061b80aef691eb0f2
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420125"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404401"
 ---
 # <a name="noalias"></a>noalias
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-`noalias` bir işlev çağrısı değiştirmeyin veya başvuru görünür genel durum, anlamına gelir ve yalnızca işaret bellek değiştirir *doğrudan* işaretçi parametreleri (birinci düzey indirections) tarafından.
+**noalias** bir işlev çağrısı değiştirmeyin veya başvuru görünür genel durumu, anlamına gelir ve yalnızca işaret edilen bellek değiştirir *doğrudan* işaretçi parametrelerini (birinci düzey yöneltmeye) tarafından.
 
-Bir işlevi olarak ek açıklama eklenmişse `noalias`, iyileştirici parametreleri kendilerini yanı sıra, yalnızca ilk düzeyi indirections işaretçi parametrelerinin başvurulan veya işlevinde değiştiren, kabul edilebilir. Görünür genel durum değil tanımlanan veya derleme kapsamı dışında başvurulan tüm veri kümesidir ve kendi adres alınmaz. Tüm kaynak dosyaları derleme kapsamıdır ([/LTCG (bağlama zamanı kodu oluşturma)](../build/reference/ltcg-link-time-code-generation.md) derlemeler) ya da tek bir kaynak dosyası (olmayan **/LTCG** yapı).
+Bir işlev olarak eklenmişse **noalias**, iyileştirici parametrelerinin kendilerini ek olarak, yalnızca ilk düzeyi yöneltmeye işaretçi parametrelerinin başvurulan veya işlev içinde değiştirilen, kabul edilebilir. Görünür genel durum değil tanımlanan veya başvurulan derleme kapsamı dışında tüm veri kümesidir ve kendi adres değil alınır. Tüm kaynak dosyaları derleme kapsamıdır ([/LTCG (bağlama zamanı kodu oluşturma)](../build/reference/ltcg-link-time-code-generation.md) oluşturur) veya tek bir kaynak dosyası (olmayan **/LTCG** oluşturun).
 
-`noalias` Ek açıklama yalnızca açıklamalı işlev gövdesi içinde geçerlidir. Bir işlevi olarak işaretleme `__declspec(noalias)` işlev tarafından döndürülen işaretçileri yumuşatma etkilemez.
+**Noalias** ek açıklama yalnızca açıklamalı işlevinin gövdesi içinde geçerlidir. Bir işlev olarak işaretleme **__declspec(noalias)** işaretçiler işlev tarafından döndürülen yumuşatma etkilemez.
 
-Yumuşatma etkileyebilir başka bir açıklama için bkz: [__declspec(restrict)](../cpp/restrict.md).
+Diğer ad kullanımı etkileyebilir başka bir açıklama için bkz. [__declspec(restrict)](../cpp/restrict.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek kullanımını gösteren `__declspec(noalias)`.
+Aşağıdaki örnek, kullanımını gösterir **__declspec(noalias)**.
 
-Zaman işlevi `multiply` erişir bellek açıklama `__declspec(noalias)`, bu işlev parametre listesinde işaretçileri aracılığıyla dışında genel durumunu değiştirmez derleyici söyler.
+İşlev `multiply` erişimleri bellek açıklanıyor **__declspec(noalias)**, bu işlev işaretçileri, parametre listesindeki aracılığıyla dışında genel durumunu değiştirmez derleyiciye bildirir.
 
 ```C
 // declspec_noalias.c
@@ -108,8 +108,7 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
-[__declspec](../cpp/declspec.md)  
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)  
-[__declspec(restrict)](../cpp/restrict.md)  
+## <a name="see-also"></a>Ayrıca bkz.
+ [__declspec](../cpp/declspec.md)  
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
+ [__declspec(restrict)](../cpp/restrict.md)  

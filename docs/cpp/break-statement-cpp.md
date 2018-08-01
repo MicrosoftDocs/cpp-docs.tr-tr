@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00a1122dffac0bdb61ba3799ce78ed3403e6d478
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 30910f6850fc3728ee101ab0662638fdebcd3775
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948118"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405450"
 ---
 # <a name="break-statement-c"></a>break Deyimi (C++)
 **Sonu** deyimi en yakın kapsayan yürütme sona erer döngü ya da içinde göründüğü koşullu deyimin. Denetim, varsa, deyimin sonunu takip eden deyime geçer.  
@@ -158,7 +158,7 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Atlama deyimleri](../cpp/jump-statements-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [continue Deyimi](../cpp/continue-statement-cpp.md)

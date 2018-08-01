@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12b86ee4505792fbc3a90d34ece8e714eb3565ff
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 47b2ce26ea9cba7f0c38d06546eb0d162332d047
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948016"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408303"
 ---
 # <a name="reference-type-function-returns"></a>Başvuru Türü İşlev Dönüşleri
 İşlevler, bir başvuru türü döndürmek için bildirilebilir. Böyle bir bildirim yapmanın iki nedeni vardır:  
@@ -117,5 +117,5 @@ Foo& GetFoo()
   
  Derleyici, bu durumda bir uyarı verir: `warning C4172: returning address of local variable or temporary`. Basit programlarında bellek konumuna yazılır önce başvuru çağıran tarafından erişildiği durumda hiçbir erişim ihlali zaman zaman ortaya çıkar mümkündür. Çalıştırmaları Şanslar nedeni budur. Uyarı önemseyin.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Başvurular](../cpp/references-cpp.md)

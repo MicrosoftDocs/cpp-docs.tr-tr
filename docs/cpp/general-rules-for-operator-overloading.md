@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd7e7a64b1dfc30d1827da614f67a5b47bd42218
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 80058aa22de10088c3901d0c129635288bf880b5
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948039"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403462"
 ---
 # <a name="general-rules-for-operator-overloading"></a>İşleç Aşırı Yüklemesi Genel Kuralları
 Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygulanır. Ancak, bunlar için geçerli değildir [yeni](../cpp/new-operator-cpp.md) ve [Sil](../cpp/delete-operator-cpp.md) işleçler, ayrı ayrı ele alınmaktadır.  
@@ -59,7 +59,7 @@ Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygu
   
 -   Aşırı yüklenmiş işleçler, varsayılan bağımsız değişkenlere sahip olamaz.  
   
--   Tüm aşırı dışında atama işleçleri (`operator=`) türetilmiş sınıflar tarafından devralınır.  
+-   Tüm aşırı dışında atama işleçleri (**işleç =**) türetilmiş sınıflar tarafından devralınır.  
   
 -   Her zaman için nesnenin sınıf türünün üye işlev aşırı yüklenmiş işleçler için ilk bağımsız değişken olduğundan, işleç (işleç bildirilen veya bu sınıftan türetilmiş bir sınıf sınıf) çağrılır. Hiçbir dönüştürme için ilk bağımsız değişken sağlanır.  
   
@@ -72,10 +72,10 @@ var++;
 ++var;  
 ```  
   
- Bu kimliği üzerinde aşırı yükleme işleçleri olan sınıf türleri için dayanan olamaz. Ayrıca, bazı temel türler için bu işleçlerin kullanımda örtük gereksinimleri için aşırı yüklenmiş işleçler esnek. Örneğin, toplama/atama işlecini `+=`, sol işlenen bir l-; temel türlerine uygulandığında bir değer olmasını gerektirir işleci aşırı yüklendiğinde bu tür bir gereksinim değildir.  
+ Bu kimliği üzerinde aşırı yükleme işleçleri olan sınıf türleri için dayanan olamaz. Ayrıca, bazı temel türler için bu işleçlerin kullanımda örtük gereksinimleri için aşırı yüklenmiş işleçler esnek. Örneğin, toplama/atama işlecini **+=**, sol işlenen bir l-; temel türlerine uygulandığında bir değer olmasını gerektirir işleci aşırı yüklendiğinde bu tür bir gereksinim değildir.  
   
 > [!NOTE]
 > Tutarlılık sağlamak için yerleşik türler modelini tanımlama işleçler aşırı yüklendiğinde izlemek idealdir. Aşırı yüklenmiş bir işleç semantiği anlamını diğer bağlamlarda önemli ölçüde farklılık, daha faydalı daha kafa karıştırıcı olabilir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

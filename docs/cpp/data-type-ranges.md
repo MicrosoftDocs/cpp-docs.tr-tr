@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93a399f922d79c073cc6471ebe702d8ef7fcd842
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: d55a2102299957a40cd9f742f91868ee2b5b849b
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940647"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407682"
 ---
 # <a name="data-type-ranges"></a>Veri Türü Aralıkları
 Visual C++ 32 bit ve 64-bit derleyiciler bu makalenin devamındaki tablosunda türlerini tanır.  
@@ -77,33 +77,33 @@ Visual C++ 32 bit ve 64-bit derleyiciler bu makalenin devamındaki tablosunda t�
   
 |Tür adı|Bayt|Diğer adları|Değer aralıkları|  
 |---------------|-----------|-----------------|---------------------|  
-|int|4|imzalı|-2.147.483.648 için 2.147.483.647|  
-|unsigned int|4|imzalanmamış|0 için 4.294.967.295'e|  
-|__int8|1.|char|-128 ila 127 arasında|  
-|İmzasız __int8|1.|unsigned char|0 ile 255 arasında|  
-|__int16|2|kısa, kısa int, imzalanmış kısa tamsayı|-32.768 için 32.767|  
-|İmzasız __int16|2|işaretsiz kısa, işaretsiz kısa tamsayı|0 ile 65.535 arasındaki|  
-|__int32 türünün int|4|İmzalı int, int, imzalanmış|-2.147.483.648 için 2.147.483.647|  
-|İmzasız __int32 türünün int|4|İmzasız, işaretsiz int|0 için 4.294.967.295'e|  
-|__int64|8|Long long, imzalanmış long long|-9,223,372,036,854,775,808 için 9.223.372.036.854.775.807|  
-|imzalanmamış __int64|8|İmzasız uzun uzun|0 için 18,446,744,073,709,551,615|  
-|bool|1.|yok|doğru veya yanlış|  
-|char|1.|yok|-Varsayılan olarak 128 ile 127<br /><br /> 0 ila kullanılarak derlendiğinde 255 [/J](../build/reference/j-default-char-type-is-unsigned.md)|  
-|İmzalı char|1.|yok|-128 ila 127 arasında|  
-|unsigned char|1.|yok|0 ile 255 arasında|  
-|short|2|kısa int, imzalanmış kısa tamsayı|-32.768 için 32.767|  
-|imzasız short|2|imzasız short int|0 ile 65.535 arasındaki|  
-|long|4|Long int, imzalanmış long int|-2.147.483.648 için 2.147.483.647|  
-|imzasız long|4|imzasız long int|0 için 4.294.967.295'e|  
-|long long|8|Hiçbiri (ancak __int64 ile eşit eşdeğer)|-9,223,372,036,854,775,808 için 9.223.372.036.854.775.807|  
-|İmzasız uzun uzun|8|Hiçbiri (ancak imzalanmamış __int64)|0 için 18,446,744,073,709,551,615|  
-|enum|Değişir|yok| |  
-|float|4|yok|3.4e +/-38 (7 basamak)|  
-|çift|8|yok|1.7E +/-308 (15 basamak)|  
-|uzun çift|double ile aynı|yok|Double ile aynı|  
-|wchar_t|2|__wchar_t|0 ile 65.535 arasındaki|  
+|**int**|4|**İmzalı**|-2.147.483.648 için 2.147.483.647|  
+|**işaretsiz int**|4|**İşaretsiz**|0 için 4.294.967.295'e|  
+|**__int8**|1.|**char**|-128 ila 127 arasında|  
+|**İmzasız __int8**|1.|**İmzasız char**|0 ile 255 arasında|  
+|**__int16**|2|**kısa**, **kısa tamsayı**, **imzalı short int**|-32.768 için 32.767|  
+|**İmzasız __int16**|2|**işaretsiz**, **imzasız short int**|0 ile 65.535 arasındaki|  
+|**__int32 türünün int**|4|**İmzalı**, **signed int**, **int**|-2.147.483.648 için 2.147.483.647|  
+|**İmzasız __int32 türünün int**|4|**İmzasız**, **işaretsiz int**|0 için 4.294.967.295'e|  
+|**__int64**|8|**uzun uzun**, **imzalanmış long long**|-9,223,372,036,854,775,808 için 9.223.372.036.854.775.807|  
+|**imzalanmamış __int64**|8|**İmzasız uzun uzun**|0 için 18,446,744,073,709,551,615|  
+|**bool**|1.|yok|**false** veya **true**|  
+|**char**|1.|yok|-Varsayılan olarak 128 ile 127<br /><br /> 0 ila kullanılarak derlendiğinde 255 [/J](../build/reference/j-default-char-type-is-unsigned.md)|  
+|**İmzalı char**|1.|yok|-128 ila 127 arasında|  
+|**İmzasız char**|1.|yok|0 ile 255 arasında|  
+|**short**|2|**kısa tamsayı**, **imzalı short int**|-32.768 için 32.767|  
+|**İmzasız short**|2|**İmzasız short int**|0 ile 65.535 arasındaki|  
+|**long**|4|**Long int**, **imzalı long int**|-2.147.483.648 için 2.147.483.647|  
+|**İmzasız long**|4|**İmzasız long int**|0 için 4.294.967.295'e|  
+|**Long long**|8|Hiçbiri (ancak **__int64**)|-9,223,372,036,854,775,808 için 9.223.372.036.854.775.807|  
+|**İmzasız uzun uzun**|8|Hiçbiri (ancak **unsigned __int64**)|0 için 18,446,744,073,709,551,615|  
+|**enum**|Değişir|yok| |  
+|**float**|4|yok|3.4e +/-38 (7 basamak)|  
+|**double**|8|yok|1.7E +/-308 (15 basamak)|  
+|**uzun çift**|aynı **çift**|yok|Aynı **çift**|  
+|**wchar_t**|2|**__wchar_t**|0 ile 65.535 arasındaki|  
   
- Nasıl kullanıldığına bağlı olarak, bir değişken `__wchar_t` geniş karakter türü veya çok baytlı karakter türünü belirtir. Kullanım `L` önek önce bir karakter veya dize sabiti geniş karakter türü sabiti belirtmek için.  
+ Nasıl kullanıldığına bağlı olarak, bir değişken **__wchar_t** geniş karakter türü veya çok baytlı karakter türünü belirtir. Kullanım `L` önek önce bir karakter veya dize sabiti geniş karakter türü sabiti belirtmek için.  
   
  **İmzalı** ve **işaretsiz** dışında herhangi bir tamsayı türü ile kullanabileceğiniz değiştiricilerdir **bool**. Unutmayın **char**, **signed char**, ve **imzasız char** aşırı yükleme ve şablonlar gibi mekanizmaların amaçlarına yönelik üç farklı türü şunlardır.  
   
@@ -115,6 +115,6 @@ Visual C++ 32 bit ve 64-bit derleyiciler bu makalenin devamındaki tablosunda t�
   
  Numaralanmış türlerin aralığı dil bağlamına bağlı olarak değişir ve belirtilen derleyici bayraklarına. Daha fazla bilgi için [C numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md) ve [numaralandırmalar](../cpp/enumerations-cpp.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Temel Türler](../cpp/fundamental-types-cpp.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 810a5c16df1027aba976bea3c165b19f765d15a6
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c9ad0cbfa614c132a75e25f46b34e37ec3a5fc64
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941846"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407010"
 ---
 # <a name="comerrorwcode"></a>_com_error::WCode
 **Microsoft'a özgü**  
@@ -31,20 +31,18 @@ ms.locfileid: "37941846"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 WORD WCode ( ) const throw( );  
-  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  HRESULT için 0x80040200 0x8004FFFF aralığında ise `WCode` yöntemi 0x80040200 eksi HRESULT döndürür; Aksi takdirde, sıfır döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `WCode` Yöntemi COM desteği kodda gerçekleşen bir eşleme geri almak için kullanılır. İçin sarmalayıcı bir `dispinterface` özellik veya yöntem çağrıları ve bağımsız değişkenler paketleri bir destek yordam çağrıları `IDispatch::Invoke`. Bir hata HRESULT'ın DISP_E_EXCEPTION döndürülürse, iade sırasında hata bilgilerini alınır `EXCEPINFO` yapısı geçirilen `IDispatch::Invoke`. Hata kodu olabilir depolanan bir 16 bitlik değer `wCode` üyesi `EXCEPINFO` yapısı veya bir tam 32-bit değeri `scode` üyesi `EXCEPINFO` yapısı. 16 bit varsa `wCode` döndürülür, ilk eşlenmeli bir 32-bit hata HRESULT.  
+ `WCode` Yöntemi COM desteği kodda gerçekleşen bir eşleme geri almak için kullanılır. İçin sarmalayıcı bir `dispinterface` özellik veya yöntem çağrıları ve bağımsız değişkenler paketleri bir destek yordam çağrıları `IDispatch::Invoke`. Bir hata varsa HRESULT dönüş sırasında `DISP_E_EXCEPTION` döndürülür, hata bilgilerini alınır `EXCEPINFO` yapısı geçirilen `IDispatch::Invoke`. Hata kodu olabilir depolanan bir 16 bitlik değer `wCode` üyesi `EXCEPINFO` yapısı veya bir tam 32-bit değeri `scode` üyesi `EXCEPINFO` yapısı. 16 bit varsa `wCode` döndürülür, ilk eşlenmeli bir 32-bit hata HRESULT.  
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)   
  [_com_error::WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)   
  [_com_error Sınıfı](../cpp/com-error-class.md)

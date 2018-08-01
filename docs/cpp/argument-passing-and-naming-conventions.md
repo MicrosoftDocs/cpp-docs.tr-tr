@@ -23,43 +23,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43aa3430b641f6333c6c35d618f9e9de123b7390
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4e1a6a8e837a44a966f262f581db04f1589233c8
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413492"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404047"
 ---
 # <a name="argument-passing-and-naming-conventions"></a>Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Visual C++ Derleyicileri bağımsız değişkenleri geçirme için kuralları belirtin ve işlevleri ve arayanlar arasında dönüş değerleri olanak sağlar. Tüm kuralları tüm desteklenen platformlarda kullanılabilir ve platforma özgü uygulamaları bazı kuralları kullanır. Çoğu durumda, anahtar sözcükleri veya desteklenmeyen bir kural belirli bir platformda belirtin derleyici anahtarları dikkate alınmaz ve platform varsayılan kuralı kullanılır.  
+ Visual C++ Derleyicileri, bağımsız değişkenleri geçirme için kuralları belirtin ve işlevler ile çağrı yapanlar arasında dönüş değerleri olanak tanır. Kuralların tüm desteklenen platformlarda kullanılabilir ve bazı kurallar platforma özel uygulamalar kullanır. Çoğu durumda, anahtar sözcükler veya belirli bir platformda desteklenmeyen bir kuralı belirten derleyici anahtarları dikkate alınmaz ve platform varsayılan kuralı kullanılır.  
   
- X86 üzerinde bunlar geçirildiğinde, plaftorms, tüm bağımsız değişkenler için 32 bit devam. Dönüş değerleri de 32 bit devam ve EDX:EAX kayıt çiftinin döndürülen 8-bayt yapıları dışında EAX kayıt döndürdü. Daha büyük yapıları döndürülür EAX kayıttaki işaretçiler olarak gizli yapıları döndürür. Yığına, sağdan sola parametreleri gönderilir. Pod'ları olmayan yapıları Yazmaçları döndürülmedi.  
+ X86 bunlar geçirildiğinde, platformlarında, tüm bağımsız değişkenler 32 bit'e genişletilmiş. Dönüş değerleri de 32 bit olarak genişletilmiş ve dışında edx: eax kayıt çiftine döndürülen 8 baytlık yapılar, EAX kaydına döndürülür. Daha büyük yapılar döndürülür EAX kaydına işaretçileri olarak gizli dönüş yapılarına. Parametreler sağdan sola yığın üstüne itilir. Pod olmayan yapılar yazmaçlarda döndürülmez.  
   
- Giriş derleyici oluşturur ve işlevinde kullandıysanız kaydedip ESI, EDI, EBX ve EBP geri yüklemek için bitiş kodu kaydeder.  
+ Derleyici giriş oluşturur ve işlev kullandıysanız ve bitiş kodu kaydedin ve ESI, EDI, EBX ve EBP geri yüklemek için kaydeder.  
   
 > [!NOTE]
->  Bir yapı, UNION ya da sınıf değere göre bir işleve döndürüldüğünde, türündeki tüm tanımları aynı olması gerekir, programın çalışma zamanında başka başarısız olabilir.  
+>  Bir yapı, birlik veya değerle bir işlevden döndürüldüğünde, türün tüm tanımları aynı olması gerekir, aksi takdirde program çalışma zamanında başarısız olabilir.  
   
- Kendi işlev giriş ve bitiş kodu tanımlama hakkında daha fazla bilgi için bkz: [Naked işlevi çağrıları](../cpp/naked-function-calls.md).  
+ Kendi işlev giriş ve bitiş kodunuzun nasıl tanımlanacağı hakkında daha fazla bilgi için bkz: [Naked işlev çağrıları](../cpp/naked-function-calls.md).  
   
- Varsayılan hakkında bilgi için kuralları hedefleri x64 platformları görmek kodda çağırma [x64 genel bakış çağırma kuralları](../build/overview-of-x64-calling-conventions.md). Kuralı sorunları ARM platformları hedefleyen kodu çağırma hakkında daha fazla bilgi için bkz: [genel Visual C++ ARM geçiş sorunları](../build/common-visual-cpp-arm-migration-issues.md).  
+ Varsayılan hakkında bilgi için çağrı kuralları hedefleri x64 platformları görmek kodda [x64 bakış çağırma kuralları](../build/overview-of-x64-calling-conventions.md). ARM platformlarını hedefleyen kodda kuralı sorunları çağırma hakkında daha fazla bilgi için bkz: [genel Visual C++ ARM geçiş sorunları](../build/common-visual-cpp-arm-migration-issues.md).  
   
- Aşağıdaki çağırma kurallarını Visual C/C++ derleyicisi tarafından desteklenir.  
+ Aşağıdaki çağrı kuralları Visual C/C++ Derleyici tarafından desteklenir.  
   
 |Anahtar sözcüğü|Yığın temizleme|Parametre geçirme|  
 |-------------|-------------------|-----------------------|  
-|[__cdecl](../cpp/cdecl.md)|Arayan|Parametrelerini yığına ters sırada (sağdan sola) gönderir.|  
-|[__clrcall](../cpp/clrcall.md)|yok|Parametreleri CLR ifade yığını sırasına (soldan sağa) üzerine yükleyin.|  
-|[__stdcall](../cpp/stdcall.md)|Aranan|Parametrelerini yığına ters sırada (sağdan sola) gönderir.|  
-|[__fastcall](../cpp/fastcall.md)|Aranan|Ardından yığına kaydeder depolanır|  
-|[__thiscall](../cpp/thiscall.md)|Aranan|Yığına; **bu** ECX içinde depolanan işaretçi|  
-|[__vectorcall](../cpp/vectorcall.md)|Aranan|Ardından ters sırada (sağdan sola) yığına kaydeder depolanır|  
+|[__cdecl](../cpp/cdecl.md)|Çağıran|Parametreleri, ters sırada (sağdan sola) yığına|  
+|[__clrcall](../cpp/clrcall.md)|yok|Parametreleri CLR ifade yığınına (soldan sağa) sırada yükleyin.|  
+|[__stdcall](../cpp/stdcall.md)|Çağrılan|Parametreleri, ters sırada (sağdan sola) yığına|  
+|[__fastcall](../cpp/fastcall.md)|Çağrılan|Kayıtlar, sonra yığına itildi depolanır|  
+|[__thiscall](../cpp/thiscall.md)|Çağrılan|Yığına itildi; **bu** işaretçi ECX içine depolandı|  
+|[__vectorcall](../cpp/vectorcall.md)|Çağrılan|Kayıtlar, ardından ters sırada (sağdan sola) yığına depolanır|  
   
- İlgili bilgi için bkz: [artık kullanılmayan çağırma kuralları](../cpp/obsolete-calling-conventions.md).  
+ İlgili bilgiler için bkz. [eski çağırma kuralları](../cpp/obsolete-calling-conventions.md).  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Çağırma Kuralları](../cpp/calling-conventions.md)

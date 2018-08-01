@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75344e8fef933b493177f812b06edd3c187046f6
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 48f9328ef6a862ffc8888b99b16764978b0005c2
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948233"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406259"
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
 Bir numaralandırma, numaralandırıcılar olarak bilinen adlandırılmış integral sabitleri kümesinden oluşan kullanıcı tanımlı bir tür ' dir.  
@@ -98,12 +98,11 @@ namespace CardGame_NonScoped
   
 ```cpp  
 enum Suit { Diamonds = 1, Hearts, Clubs, Spades };  
-  
 ```  
   
  Numaralandırıcı `Diamonds` değeri atanır `1`. Sonraki numaralandırıcılar, açıkça bir değer verilmemişse yanı sıra bir önceki numaralandırıcıların değeri alır. Önceki örnekte, `Hearts` 2 değerine sahip `Clubs` 3 sahip ve benzeri.  
   
- Her Numaralayıcı sabit kabul edilir ve kapsam içinde benzersiz bir ad olmalıdır nerede `enum` (kapsamsız Enum'lar için) tanımlanan ya da Enum'un kendisi (için kapsamlı numaralandırmalar). Adlara verilen değerlerin benzersiz olması gerekmez. Örneğin, kapsamsız bir enum bildirimi `Suit` budur:  
+ Her Numaralayıcı sabit kabul edilir ve kapsam içinde benzersiz bir ad olmalıdır nerede **enum** (kapsamsız Enum'lar için) tanımlanır veya içinde **enum** kendisi (için kapsamlı numaralandırmalar). Adlara verilen değerlerin benzersiz olması gerekmez. Örneğin, kapsamsız bir enum bildirimi `Suit` budur:  
   
 ```cpp  
 enum Suit { Diamonds = 5, Hearts, Clubs = 4, Spades };  
@@ -119,7 +118,6 @@ enum Suit { Diamonds = 5, Hearts, Clubs = 4, Spades };
 int account_num = 135692;  
 Suit hand;  
 hand = account_num; // error C2440: '=' : cannot convert from 'int' to 'Suit'  
-  
 ```  
   
  Bir numaralandırmaya dönüştürmek için gerekli bir **int** için kapsamlı ya da kapsamsız bir numaralandırıcı. Ancak, kapsamsız bir numaralandırıcı bir yayın olmadan bir tamsayı değerine yükseltebilirsiniz.  
@@ -147,7 +145,6 @@ namespace ScopedEnumConversions
         account_num = Suit::Hearts; // error C2440: '=' : cannot convert from 'Suit' to 'int'  
         account_num = static_cast<int>(Suit::Hearts); // OK  
 }  
-  
 ```  
   
  Dikkat satır `hand = account_num;` hala daha önce gösterildiği gibi kapsamsız numaralandırmalar ile oluşan hataya neden. Bu, açık bir yayın ile izin verilir. Bununla birlikte, kapsamlı numaralandırmalar, denenen bir dönüştürme sonraki deyimi içinde `account_num = Suit::Hearts;`, artık açık bir yayın olmadan izin verilmez. 
@@ -190,6 +187,6 @@ int main()
 }
 ``` 
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

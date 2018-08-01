@@ -40,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc5ec18eec5be6ee0cc696768be65cd62b74bdc7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 546006fcf1c559317b4afff424976db8109442e7
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392789"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404758"
 ---
 # <a name="acosh-acoshf-acoshl"></a>acosh, acoshf, acoshl
 
@@ -66,29 +66,29 @@ long double acosh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*x*  
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Acosh** işlevler (Ark hiperbolik kosinüsü) ters hyberbolic kosinüsünü döndürür *x*. Bu işlevler etki alanı üzerinde geçerli *x* ≥ 1. Varsa *x* 1'den, küçük **errno** ayarlanır **EDOM** ve sessiz NaN sonucudur. Varsa *x* sessiz NaN, belirsiz, ya da sonsuz, aynı değeri döndürülür.
+**Acosh** işlevler (Ark hiperbolik kosinüsü) ters hiperbolik kosinüsünü döndürür *x*. Bu işlevler, etki alanı üzerinde geçerli *x* ≥ 1. Varsa *x* 1'den daha az, `errno` ayarlanır `EDOM` ve sessiz bir NaN sonucudur. Varsa *x* sessiz NaN, belirsiz veya sonsuz, aynı değeri döndürülür.
 
-|Giriş|SEH özel durumu|**_matherr** özel durumu|
+|Giriş|SEH özel durumu|`_matherr` özel durum|
 |-----------|-------------------|--------------------------|
-|± QNAN, UL, INF|yok|yok|
+|± QNAN, UL INF|yok|yok|
 |*x* < 1|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ kullandığınızda, aşırı çağırabilirsiniz **acosh** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **acosh** her zaman alan ve döndüren **çift**.
+C++ kullandığınızda, aşırı yüklemesini çağırabilirsiniz **acosh** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **acosh** her zaman alan ve döndüren **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**ACOSH**, **acoshf**, **acoshl**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -120,9 +120,9 @@ acosh( 1.324609 ) = 0.785398
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)  
+[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)  
+[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)  
+[cosh, coshf, coshl](cosh-coshf-coshl.md)  
+[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)  
+[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)  

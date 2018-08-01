@@ -17,42 +17,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a791615f7fd91a7ccfcda45b23fc524ebd9b6400
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c4673101d41b896ed3fc19aa1998aa9329064b41
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408610"
 ---
 # <a name="property-c"></a>property (C++)
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bu öznitelik, bir sınıf veya yapı tanımında statik olmayan için "sanal veri üyeleri" uygulanabilir. Derleyici işlev çağrılarını başvurularını değiştirerek bu "sanal veri üyeleri" veri üye olarak değerlendirir.  
+ Bu öznitelik, bir sınıf veya yapı tanımında statik olmayan için "sanal veri üyeleri" uygulanabilir. Derleyici, işlev çağrılarını başvurularını değiştirerek bu "sanal veri üyeleri" veri üyeleri olarak değerlendirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
    __declspec( property( get=get_func_name ) ) declarator  
    __declspec( property( put=put_func_name ) ) declarator  
    __declspec( property( get=get_func_name, put=put_func_name ) ) declarator  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu öznitelik ile üye seçimi işlecinin sağ tarafta bildirilen bir veri üyesi gördüğünde derleyici ("**.**"veya"**->**"), işlemi dönüştürür bir **Al** veya **put** bu tür bir ifade l-değeri ya da bir r olup olmamasına bağlı olarak işlevi. Daha fazla kapsamları gibi karmaşık "`+=`", bir yeniden yazma hem de yaparak gerçekleştirilir **almak** ve **put**.  
+ Derleyici bu özniteliği ile bildirilen bir üye seçme işlecinin sağ tarafındaki bir veri üyesi gördüğünde ("**.**"veya"**->**"), işlemi dönüştürür bir `get` veya `put` işlevi, böyle bir ifade bir lvalue ya da bir r olmasına bağlı olarak. Daha fazla bağlam gibi karmaşık "`+=`", bir yeniden yazma hem de yaparak gerçekleştirilir `get` ve `put`.  
   
- Bu öznitelik, bir sınıf veya yapı tanımı içinde boş bir dizi bildiriminde de kullanılabilir. Örneğin:  
+ Bu öznitelik, bir sınıf veya yapı tanımı boş bir dizi bildirimi içinde de kullanılabilir. Örneğin:  
   
-```  
+```cpp 
 __declspec(property(get=GetX, put=PutX)) int x[];  
 ```  
   
- Yukarıdaki ifadeyi belirten `x[]` bir veya daha fazla dizi dizinlerini ile kullanılabilir. Bu durumda, `i=p->x[a][b]` içine açık `i=p->GetX(a, b)`, ve `p->x[a][b] = i` içine açık `p->PutX(a, b, i);`  
+ Yukarıdaki ifadeyi gösterir `x[]` bir veya daha fazla dizi dizinleri ile kullanılabilir. Bu durumda, `i=p->x[a][b]` içine açık `i=p->GetX(a, b)`, ve `p->x[a][b] = i` içinde kapatılacak `p->PutX(a, b, i);`  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp 
 // declspec_property.cpp  
 struct S {  
    int i;  
@@ -74,6 +74,6 @@ int main() {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [__declspec](../cpp/declspec.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

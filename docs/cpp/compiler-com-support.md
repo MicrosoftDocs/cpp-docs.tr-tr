@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a21b7dd00aa0bb0894da4cc13cf0f6f40078ee1b
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 7c2204e69ee6df64a08e3f5cf03191ad1e7e0535
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941833"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402467"
 ---
 # <a name="compiler-com-support"></a>Derleyici COM Desteği
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -28,7 +28,7 @@ ms.locfileid: "37941833"
   
  Kullanarak [#import önişlemci yönergesi](../preprocessor/hash-import-directive-cpp.md), derleyici bir tür kitaplığı okuyabilir ve COM tanımlayan bir C++ üstbilgi dosyası içine arabirimleri olarak dönüştürme sınıfları. Bir dizi `#import` öznitelikleri, kullanıcı denetimi elde edilen tür kitaplığı üstbilgi dosyaları içeriğin kullanılabilir.  
   
- Kullanabileceğiniz [__declspec](../cpp/declspec.md) genişletilmiş öznitelik [UUID](../cpp/uuid-cpp.md) bir COM nesnesi için bir genel benzersiz tanıtıcısı (GUID) atanamıyor. Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) bir COM nesnesi ile ilişkili GUID'sini ayıklamak için kullanılabilir. Başka bir `__declspec` özniteliği [özelliği](../cpp/property-cpp.md), belirtmek için kullanılan **alma** ve **ayarlayın** bir COM nesnesi veri üyesi için yöntemleri.  
+ Kullanabileceğiniz [__declspec](../cpp/declspec.md) genişletilmiş öznitelik [UUID](../cpp/uuid-cpp.md) bir COM nesnesi için bir genel benzersiz tanıtıcısı (GUID) atanamıyor. Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) bir COM nesnesi ile ilişkili GUID'sini ayıklamak için kullanılabilir. Başka bir **__declspec** özniteliği [özelliği](../cpp/property-cpp.md), belirtmek için kullanılan `get` ve `set` bir COM nesnesi veri üyesi için yöntemleri.  
   
  COM desteği genel işlevleri ve sınıfları kümesi desteklemek için sağlanan `VARIANT` ve `BSTR` türleri, akıllı işaretçiler uygulamak ve tarafından oluşturulan hata nesnesi kapsülleyen `_com_raise_error`:  
   
@@ -44,6 +44,6 @@ ms.locfileid: "37941833"
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)   
  [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)

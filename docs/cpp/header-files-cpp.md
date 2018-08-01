@@ -17,12 +17,12 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 746b0829be6f66203d22cae4072dded9f6be32d8
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 9f6950049d9bd9b9264383ab6e5e216023526880
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939708"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404771"
 ---
 # <a name="header-files-c"></a>Üst bilgi dosyaları (C++)
 
@@ -92,18 +92,24 @@ Derleyici .cpp dosyası her .obj dosyasına derleme tamamlandıktan sonra .obj d
 
 ## <a name="include-guards"></a>Cf içerir
 
-Genellikle, üst bilgi dosyalarınız bir *guard dahil* veya **#pragma kez** bunlar birden çok kez tek .cpp dosyasına eklenmiyor emin olmak için yönergesi. 
+Genellikle, üst bilgi dosyalarınız bir *guard dahil* veya `#pragma once` bunlar birden çok kez tek .cpp dosyasına eklenmiyor emin olmak için yönergesi. 
 
-my_class.h
-#<a name="ifndef-myclassh--include-guard"></a>ıfndef MY_CLASS_H / / guard içerir
-#<a name="define-myclassh"></a>MY_CLASS_H tanımlayın
+```cpp
+// my_class.h
+#ifndef MY_CLASS_H // include guard
+#define MY_CLASS_H
 
-
-N ad alanı {my_class sınıfı {public: do_something(); void};
-
+namespace N
+{
+    class my_class
+    {
+    public:
+        void do_something();
+    };
 }
 
-#<a name="endif--myclassh-"></a>endif / * MY_CLASS_H * /
+#endif /* MY_CLASS_H */
+```
 
 ## <a name="what-to-put-in-a-header-file"></a>Bir üstbilgi dosyasında konulacaklar
 
@@ -129,14 +135,12 @@ Aşağıdaki örnek, çeşitli üstbilgi dosyasında verilen tanımları ve bild
 
 namespace N  // namespace declaration
 {
-
     inline namespace P
     {
         //...
     }
 
     enum class colors : short { red, blue, purple, azure };
-
 
     const double PI = 3.14;  // const and constexpr definitions
     constexpr int MeaningOfLife{ 42 };
@@ -153,7 +157,6 @@ namespace N  // namespace declaration
 #ifdef LOG   // conditional compilation directive
     void print_to_log();
 #endif
-
 
     class my_class   // regular class definition, 
     {                // but no non-inline function definitions
@@ -190,5 +193,5 @@ namespace N  // namespace declaration
 
     template <typename T>  // template declaration
     class value_widget;
-
 }
+```

@@ -14,19 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9e65dfd7f7cff25debd8eb0d00a7e3bb0397692
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c4a8b77985a06a3898c525500b8a23eab9b54f87
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410898"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39407351"
 ---
 # <a name="calling-conventions"></a>Çağırma Kuralları
 Visual C/C++ derleyicisi, iç ve dış işlevleri çağırmak için birkaç farklı kural sağlar. Bu farklı yaklaşımların anlaşılması, programınızdaki hataları ayıklamanıza ve kodunuzu derleme dili yordamlarına bağlamanıza yardımcı olur.  
   
  Bu bölümdeki konular, çağırma kuralları arasındaki farkları, bağımsız değişkenlerin nasıl geçirildiğini ve değerlerin işlevler tarafından nasıl döndürüldüğünü açıklamaktadır. Bunlar, kendi giriş ve sonuç kodunuzu yazmanızı sağlayan gelişmiş bir işlev olan çıplak işlev çağrılarını da açıklamaktadır.  
   
- Çağırma kuralları için x64 hakkında bilgi için bkz: işlemciler, [arama kuralı](../build/calling-convention.md).  
+ X64 için çağırma kuralları hakkında daha fazla bilgi için işlemciler bkz [çağırma kuralı](../build/calling-convention.md).  
   
 ## <a name="topics-in-this-section"></a>Bu bölümdeki konular  
   
@@ -34,11 +34,11 @@ Visual C/C++ derleyicisi, iç ve dış işlevleri çağırmak için birkaç fark
   
 -   [Çağırma Örneği: İşlev Prototipi ve Çağrı](../cpp/calling-example-function-prototype-and-call.md)  
   
--   [Çıplak işlev çağrıları özel giriş ve bitiş kodu yazmak için kullanma](../cpp/naked-function-calls.md)  
+-   [Özel giriş/Sonuç kodu yazmak için çıplak işlev çağrılarını kullanma](../cpp/naked-function-calls.md)  
   
 -   [Kayan Nokta Eşişlemcisi ve Çağırma Kuralları](../cpp/floating-point-coprocessor-and-calling-conventions.md)  
   
--   [Kullanılmayan çağırma kuralları](../cpp/obsolete-calling-conventions.md)  
+-   [Eski çağırma kuralları](../cpp/obsolete-calling-conventions.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)

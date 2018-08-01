@@ -16,28 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2683daf4fd1293d3fad043037165fa3cbc13de3c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c579437ef0d5bd786b7066756b8e0bac4fa59e4a
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948004"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408508"
 ---
 # <a name="convertstringtobstr"></a>ConvertStringToBSTR
 **Microsoft'a özgü**  
   
- Dönüştürür bir **char \***  değerini bir `BSTR`.  
+ Dönüştürür bir `char *` değerini bir `BSTR`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 BSTR __stdcall ConvertStringToBSTR(const char* pSrc)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *pSrc*  
- A **char \***  değişkeni.  
+ A `char *` değişkeni.  
   
 ## <a name="example"></a>Örnek  
   
@@ -72,5 +71,5 @@ BSTR text: Test
   
  **Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)

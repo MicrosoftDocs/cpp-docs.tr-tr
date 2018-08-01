@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 405ef6da02c15e93e516069c1fedc22f002bdf2c
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 1f09df81587012703d8ba1fc883413d6d35929e8
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208568"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404944"
 ---
 # <a name="overview-of-declarators"></a>Bildiricilere Genel Bakış
 Bildirimciler, nesne veya işlev adlarını belirten bir bildirimin bileşenleridir. Bildirimciler, adlandırılmış nesnelerin bir nesne, işaretçi, başvuru veya dizi olduğunu da belirtir.  Bildirimciler temel türü belirtmese de, işaretçiler, başvurular ve diziler gibi türetilmiş türleri belirtmek için temel türdeki tür bilgilerini değiştirir.  İşlevlere uygulanan bildirimci, bir işlevin dönüş türünü nesne, işaretçi veya başvuru olarak belirtmek için tür tanımlayıcısı ile birlikte çalışır. (De ele alınan tanımlayıcılar, [bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md), tür ve depolama sınıfı gibi özellikleri iletmek. Bu bölümde hem de ele alınan değiştiriciler [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md), bildirimcileri değiştirir.) Aşağıdaki şekilde, tam bir `MyFunction` bildirimi gösterilmekte ve bildirimin bileşenleri çağrılmaktadır.  
@@ -172,13 +172,11 @@ int a, *b, c[5], **d, &e=a;
   - İşaretçi işleci bildirimcisi   
   - (bildirimci)  
 
-  
 - ve *işaretçi işleci* biridir:  
   
   - \* [cv niteleyicileri]  
   - & [cv niteleyicileri]:: iç içe-adı-specifier \* [cv niteleyicileri]  
 
-  
  Bir bildirimci bildirimciler içerebileceği için yukarıdaki kurallar kullanılarak işaretçi dizileri, işlev işaretçilerinin dizilerini döndüren işlevler gibi daha karmaşık türetilmiş türler oluşturulabilir.  Oluşturma işleminin her adımı için temel veri türünü temsil eden tanımlayıcı ile işe başlayın ve önceki ifadeyle birlikte `declarator` olarak yukarıdaki sözdizimi kuralını uygulayın.  Sözdizimi kurallarını uyguladığınız sıra, ifadenin İngilizce olarak belirtildiği yönün tersi olmalıdır.  Uygulanıyorsa *işaretçi işleci* sözdizimi kuralı bir dizi veya işlev ifade, dizi veya işlev, aşağıdaki tabloda Son satırda olduğu gibi bir işaretçiye istiyorsanız parantezler kullanın.  
   
  Aşağıdaki örnekte, "10 int işaretçi dizisinin işaretçisi" oluşturulmuştur.  

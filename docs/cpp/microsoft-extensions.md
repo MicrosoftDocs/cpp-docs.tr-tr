@@ -14,44 +14,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: beac75a8a27fc4638b541228330e83e7b665fbcb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70b1e0e6ef1294ff23952816db6f468022609f4f
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419829"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408381"
 ---
 # <a name="microsoft-extensions"></a>Microsoft Uzantıları
 *asm deyimi*:  
- **__asm***derleme yönergesi* **;** İptal Et    
+ **__asm***derleme yönergesinin* **;** iyileştirilmiş    
   
- **__asm {***derleme yönerge listesi***};** İptal Et      
+ **__asm {***derleme yönerge listesi***};** iyileştirilmiş      
   
  *derleme yönerge listesi*:  
- *derleme yönergesi* **;** İptal Et  
+ *derleme yönergesinin* **;** iyileştirilmiş  
   
- *derleme yönergesi* **;** *derleme yönerge listesi* **;** İptal Et  
+ *derleme yönergesinin* **;** *derleme yönerge listesi* **;** iyileştirilmiş  
   
- *MS değiştiricisi listesi*:  
- *MS-değiştiricisi ms değiştiricisi listesi*iptal et  
+ *MS-modifier-list*:  
+ *MS-modifier ms-modifier-list*iyileştirilmiş  
   
- *MS-değiştirici*:  
+ *MS-modifier*:  
  **__cdecl**  
   
  **__fastcall**  
   
  **__stdcall**  
   
- **__syscall** (gelecekteki uygulamalar için ayrılmış)  
+ **__syscall** (gelecekteki uygulamalar için ayrılmıştır)  
   
- **__oldcall** (gelecekteki uygulamalar için ayrılmış)  
+ **__oldcall** (gelecekteki uygulamalar için ayrılmıştır)  
   
- **__unaligned** (gelecekteki uygulamalar için ayrılmış)  
+ **__unaligned** (gelecekteki uygulamalar için ayrılmıştır)  
   
- *temel değiştiricisi*  
+ *alan değiştiricisi*  
   
- *temel değiştirici*:  
- **__based (** *göre türü* **)**  
+ *alan değiştiricisi*:  
+ **__based (** *temel türü* **)**  
   
- *temel türü*:  
+ *temel tür*:  
  *Adı*  

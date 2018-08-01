@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bf975a9d64508368ac5d61c82fecc07edda28b5
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 8a3c3defdfb882db69f7789c97feba11d346e540
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948015"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405593"
 ---
 # <a name="class-c"></a>class (C++)
 **Sınıfı** anahtar sözcüğü bir sınıf türü bildirir veya sınıf türü bir nesneyi tanımlar.  
@@ -30,7 +30,6 @@ ms.locfileid: "37948015"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [template-spec]  
 class [ms-decl-spec] [tag [: base-list ]]  
 {  
@@ -149,6 +148,6 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

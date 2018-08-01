@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3181369f492f82fca1590e07655e728dbbcd40ff
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b75140879f44423e73c343f7567cc830d97a7b5e
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958604"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403134"
 ---
 # <a name="inheritance--c"></a>Devralma (C++)
 Bu bölümde, genişletilebilir programlar oluşturmak için türetilmiş sınıfların nasıl kullanılacağı açıklanmaktadır.  
@@ -61,5 +61,5 @@ Sınıfın etiketinden (ad) sonra, temel özellikler listesinin ardından bir "i
   
  [__Super](../cpp/super.md) ve [__interface](../cpp/interface.md) anahtar sözcükleri Bu bölümde belgelenmiştir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

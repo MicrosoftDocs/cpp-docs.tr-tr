@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37148a3849e859d7ca77595416616cfa0b952ecf
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: bee63ace276863a30c4ec81d970ba3bf5fd29e40
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939955"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39405291"
 ---
 # <a name="ifnotexists-statement"></a>__if_not_exists Deyimi
 **__İf_not_exists** deyimi belirtilen tanımlayıcı var olup olmadığını test eder. Tanımlayıcı mevcut değilse, belirtilen deyim bloğu yürütülür.  
@@ -38,8 +38,8 @@ statements
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|`identifier`|Test etmek istediğiniz varlığı tanımlayıcısı.|  
-|`statements`|Bir veya daha fazla deyimlerini `identifier` yok.|  
+|*tanımlayıcı*|Test etmek istediğiniz varlığı tanımlayıcısı.|  
+|*Deyimleri*|Bir veya daha fazla deyimlerini *tanımlayıcı* yok.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -59,7 +59,7 @@ statements
 ## <a name="example"></a>Örnek  
  Nasıl kullanılacağı hakkında bir örnek **__if_not_exists**, bkz: [__if_exists deyimi](../cpp/if-exists-statement.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Seçim deyimleri](../cpp/selection-statements-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [__if_exists Deyimi](../cpp/if-exists-statement.md)

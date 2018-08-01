@@ -1,5 +1,5 @@
 ---
-title: Abs labs, llabs, _abs64 | Microsoft Docs
+title: Abs, laboratuvarlar, llabs, _abs64 | Microsoft Docs
 ms.custom: ''
 ms.date: 04/05/2018
 ms.technology:
@@ -46,16 +46,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc426bbbc28e6eb3b7e6e4a0fa9fab7e74f62093
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b783ee6e4a5ea511a26068ffb89fcc09236f20b1
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391759"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408134"
 ---
-# <a name="abs-labs-llabs-abs64"></a>Abs labs, llabs, _abs64
+# <a name="abs-labs-llabs-abs64"></a>Abs, laboratuvarlar, llabs, _abs64
 
-Bağımsız değişken mutlak değerini hesaplar.
+Bağımsız değişkenin mutlak değerini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,31 +76,31 @@ float abs( float n );   // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
+*n*  
 Sayısal değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Abs**, **labs**, **llabs** ve **_abs64** işlevleri parametresi mutlak değerini döndür *n*. Döndürülen hata yoktur.
+**Abs**, **labs**, **llabs** ve **_abs64** işlevleri parametrenin mutlak değerini döndürür *n*. Döndürülen hata yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **abs** alın ve dönüş **uzun**, **uzun** **uzun**,  **float**, **çift**, ve **uzun** **çift** değerleri. Bu aşırı tanımlanan \<cmath > Üstbilgi. Bir C programı **abs** her zaman alır ve bir tamsayı döndürür
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **abs** alan ve getiren **uzun**, **uzun** **uzun**,  **float**, **çift**, ve **uzun** **çift** değerleri. Bu aşırı yüklemeler tanımlanan \<cmath > Üstbilgi. C programında **abs** her zaman alan ve döndüren bir **int**.
 
-**Microsoft Specific**: herhangi bir tam sayı türü kullanarak temsil edilebilir negatif tamsayı aralığı türü kullanarak temsil edilebilir pozitif tamsayılar aralığından daha büyük olduğundan, bu bağımsız değişken sağlayın mümkündür dönüştürülemiyor işlevleri. Dönüş türü tarafından bağımsız değişkeni mutlak değerini gösterilemezse **abs** işlevler değişmeden bağımsız değişken değeri döndürür. Özellikle, `abs(INT_MIN)` döndürür **ınt_mın**, `labs(LONG_MIN)` döndürür **long_mın**, `llabs(LLONG_MIN)` döndürür **LLONG_MIN**, ve `_abs64(_I64_MIN)` döndürür **_I64_MIN**. Bunun anlamı **abs** işlevleri, pozitif bir değer güvence altına almak için kullanılamaz.
+**Microsoft Specific**: herhangi bir tamsayı türü kullanarak temsil edilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilen pozitif tamsayılar aralığından daha büyük olduğundan, bunlar bir değişken sağlamak mümkündür Bu işlevler dönüştürülemez. Bağımsız değişkenin mutlak değeri dönüş türü tarafından temsil edilemiyorsa **abs** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, `abs(INT_MIN)` döndürür `INT_MIN`, `labs(LONG_MIN)` döndürür `LONG_MIN`, `llabs(LLONG_MIN)` döndürür `LLONG_MIN`, ve `_abs64(_I64_MIN)` döndürür `_I64_MIN`. Diğer bir deyişle **abs** işlevleri pozitif bir değer sağlamak için kullanılamaz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
 |-------------|-----------------------|---------------------------|
 |**Abs**, **labs**, **llabs**|\<Math.h > veya \<stdlib.h >|\<cmath >, \<cstdlib >, \<stdlib.h > veya \<math.h >|
 |**_abs64**|\<stdlib.h >|\<cstdlib > veya \<stdlib.h >|
 
-Aşırı yüklenmiş sürümlerini **abs** C++'da eklemelisiniz \<cmath > Üstbilgi.
+Aşırı yüklenmiş sürümlerini kullanılacak **abs** C++'da eklemeniz gerekir \<cmath > Üstbilgi.
 
 ## <a name="example"></a>Örnek
 
-Bu program hesaplar ve birkaç sayıların mutlak değerlerini görüntüler.
+Bu program, hesaplar ve birkaç sayının mutlak değerlerini görüntüler.
 
 ```C
 // crt_abs.c
@@ -157,8 +157,8 @@ _abs64(_I64_MIN) returns 0x8000000000000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[_cabs](cabs.md)<br/>
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
-[imaxabs](imaxabs.md)<br/>
+[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)  
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)  
+[_cabs](cabs.md)  
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)  
+[imaxabs](imaxabs.md)  

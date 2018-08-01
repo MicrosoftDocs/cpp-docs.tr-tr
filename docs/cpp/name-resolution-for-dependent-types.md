@@ -1,5 +1,5 @@
 ---
-title: Bağımlı türleri için ad çözümlemesi | Microsoft Docs
+title: Bağımlı türler için ad çözümlemesi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,15 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c31a609345408727d53abd314e30bd523526833c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d6421c634fb6d27bf79ea0ead9f0b6b8f5829f19
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32419917"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402692"
 ---
 # <a name="name-resolution-for-dependent-types"></a>Bağımlı Türleri Ad Çözme
-Kullanım **typename** verilen tam adı bir türü tanımlar derleyici bildirmek için şablon tanımlarında nitelenmiş adlar için. Daha fazla bilgi için bkz: [typename](../cpp/typename.md).  
+Kullanım **typename** derleyiciye belirtilen tam adın bir türü tanımladığını bildirmek üzere şablon tanımlarında tam adlar için. Daha fazla bilgi için [typename](../cpp/typename.md).  
   
 ```cpp  
 // template_name_resolution1.cpp  
@@ -49,7 +49,7 @@ int main()
 Name resolved by using typename keyword.  
 ```  
   
- Bağımlı adlar için ad arama inceler bağlamı şablon tanımının adlarından — aşağıdaki örnekte, bu bağlamda bulur `myFunction(char)`— ve şablonu örneklemesi bağlamı. Aşağıdaki örnekte, ana şablon örneği; Bu nedenle, `MyNamespace::myFunction` örneklemesi noktasından görünür ve daha iyi eşleşme olarak çekilir. `MyNamespace::myFunction` yeniden adlandırılırsa, bunun yerine `myFunction(char)` çağrılır.  
+ Bağımlı adlara yönelik ad araması, adları hem şablon tanımının bağlamı denetler — aşağıdaki örnekte, bu bağlamda bulacağından `myFunction(char)`— ve Şablon örneğinin bağlamı. Aşağıdaki örnekte, ana şablon örneği; Bu nedenle, `MyNamespace::myFunction` örnek oluşturma noktasında görülebilir ve daha iyi bir eşleşme olarak seçilir. `MyNamespace::myFunction` yeniden adlandırılırsa, bunun yerine `myFunction(char)` çağrılır.  
   
  Tüm adlar, bağımsız adlar gibi çözümlenir. Bununla birlikte, olası bir çakışma varsa tam adlar kullanmanızı öneririz.  
   
@@ -93,12 +93,12 @@ int main()
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output  
 Int MyNamespace::myFunction  
 ```  
   
 ### <a name="template-disambiguation"></a>Şablon Kesinleştirme  
- [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)], "şablon" anahtar sözcüğü ile kesinleştirme için C ++ 98/03/11 standart kurallarını uygular. Aşağıdaki örnekte, Visual C++ 2010 uyumsuz satırları ve uyumlu satırları kabul eder.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] yalnızca uyumlu satırları kabul eder.  
+ [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)], "şablon" anahtar sözcüğü ile kesinleştirme için C ++ 98/03/11 standart kurallarını uygular. Aşağıdaki örnekte, Visual C++ 2010 hem uyumsuz satırları hem de uyumlu satırları kabul eder.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] yalnızca uyumlu satırları kabul eder.  
   
 ```cpp  
 #include <iostream>  
@@ -129,5 +129,5 @@ int main() {
   
  C++ varsayılan olarak `AY::Rebind`'ın bir şablon olmadığını varsaydığı ve dolayısıyla aşağıdaki "`<`" öğesini az olarak yorumladığı için kesinleştirme kurallarına uyum sağlanması gerekir. "`Rebind`" öğesini bir açılı ayraç olarak ayrıştırabilmesi için `<`'ın bir şablon olduğunu bilmesi gerekir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Ad çözümlemesi](../cpp/templates-and-name-resolution.md)

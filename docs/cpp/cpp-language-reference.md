@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c3886e710d0262068848304d9f2419c835b67c2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: df532fca3c1ecbb19126a8692377517d240bd2f8
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954199"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408222"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş *Annotated C++ Reference Manual* Margaret Ellis ve Bjarne Stroustrup tarafından ve ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.  
@@ -59,16 +59,16 @@ Modern C++ programlama uygulamalarını genel bakış için bkz. [Hoş Geldiniz 
  İfade, null, bileşik, seçim, yineleme, atlama ve bildirim deyimleri.  
   
  [Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)  
- Depolama sınıfı belirleyicileri, işlev tanımları, başlatmalar, numaralandırmalar, sınıf, yapı ve birleşim bildirimleri ve typedef bildirimleri. Ayrıca, satır içi işlevler, sabit anahtar sözcük, ad alanları.  
+ Depolama sınıfı tanımlayıcıları, işlev tanımları, başlatmalar, numaralandırmalar, **sınıfı**, **yapı**, ve **birleşim** bildirimleri, ve **tür tanımı**  bildirimleri. Ayrıca, **satır içi** İşlevler, **const** anahtar sözcüğü, ad alanları.  
   
  [Sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md)  
- Sınıflara, yapılara ve birleşimlere giriş. Ayrıca, üye işlevleri, özel üye işlevleri, veri üyeleri, bit alanları, bu işaretçi, iç içe geçmiş sınıflar.  
+ Sınıflara, yapılara ve birleşimlere giriş. Ayrıca, üye işlevleri, özel üye işlevleri, veri üyeleri, bit alanları, **bu** işaretçi, iç içe geçmiş sınıflar.  
   
  [Türetilen sınıflar](../cpp/inheritance-cpp.md)  
- Tek ve birden çok devralma, sanal işlevler, birden fazla temel sınıf, soyut sınıflar, kapsam kuralları. Ayrıca, __super ve \__arabirim anahtar sözcükleri.  
+ Tek ve birden çok devralma **sanal** İşlevler, birden çok taban sınıfı **soyut** sınıflar, kapsam kuralları. Ayrıca, **__super** ve **__interface** anahtar sözcükleri.  
   
  [Üye erişim denetimi](../cpp/member-access-control-cpp.md)  
- Sınıf üyeleri için erişim denetleme: genel, özel ve korumalı anahtar sözcükler. Arkadaş işlevleri ve sınıfları.  
+ Sınıf üyelerine erişimi denetleme: **genel**, **özel**, ve **korumalı** anahtar sözcükleri. Arkadaş işlevleri ve sınıfları.  
   
  [Aşırı yükleme](operator-overloading.md)  
  Aşırı yüklenmiş işleçler, İşleç aşırı yüklemesi kuralları.  
@@ -80,16 +80,16 @@ Modern C++ programlama uygulamalarını genel bakış için bkz. [Hoş Geldiniz 
  `#error` yönergesi, **static_assert** anahtar sözcüğü, `assert` makrosu.  
   
  [Şablonlar](../cpp/templates-cpp.md)  
- Şablon belirtimleri, işlev şablonları, sınıf şablonları, tür adı anahtar sözcüğü, şablonlara karşı makrolar, şablonlar ve akıllı işaretçiler.  
+ Şablon belirtimleri, işlev şablonları, sınıf şablonları **typename** anahtar sözcüğü, şablonlara karşı makrolar, şablonlar ve akıllı işaretçiler.  
   
  [Olay İşleme](../cpp/event-handling.md)  
  Olayları ve olay işleyicileri bildirme.  
   
  [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)  
- Microsoft C++'ya özgü değiştiriciler. Bellek adresleme, çağırma kuralları, naked işlevleri, genişletilmiş depolama sınıfı öznitelikleri (__declspec) \__w64.  
+ Microsoft C++'ya özgü değiştiriciler. Bellek adresleme, çağırma kuralları, **naked** işlevleri, genişletilmiş depolama sınıfı öznitelikleri (**__declspec**), **__w64**.  
   
  [Satır İçi Assembler](../assembler/inline/inline-assembler.md)  
- __asm bloklarında derleme dili ve C++ kullanılıyor.  
+ Assembly dili ve c++'ta kullanarak **__asm** engeller.  
   
  [Derleyici COM Desteği](../cpp/compiler-com-support.md)  
  COM türlerini destekleyen Microsoft'a özgü sınıflar ve genel işlevler için bir başvuru.  
@@ -115,5 +115,5 @@ Modern C++ programlama uygulamalarını genel bakış için bkz. [Hoş Geldiniz 
  [Visual C++ kitaplıkları](../standard-library/cpp-standard-library-reference.md)  
  Çeşitli Visual C++ kitaplıklarının başlangıç sayfaları başvurusuna yönelik bağlantıların bir listesidir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C Dil Başvurusu](../c-language/c-language-reference.md)

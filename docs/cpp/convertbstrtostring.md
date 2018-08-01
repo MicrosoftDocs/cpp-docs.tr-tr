@@ -16,22 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1278ab84ea8888b34290c9738e0eb88a4485e99c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: db1f512b10bdedffa5b6978b735c881dc21370ce
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948103"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39406708"
 ---
 # <a name="convertbstrtostring"></a>ConvertBSTRToString
 **Microsoft'a özgü**  
   
- Dönüştürür bir `BSTR` değerini bir **char \*** .  
+ Dönüştürür bir `BSTR` değerini bir `char *`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 char* __stdcall ConvertBSTRToString(BSTR pSrc);  
 ```  
   
@@ -40,7 +39,7 @@ char* __stdcall ConvertBSTRToString(BSTR pSrc);
  BSTR değişken.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ConvertBSTRToString` bir dize silmeniz gerekir ayırır.  
+ **ConvertBSTRToString** silmelisiniz bir dize ayırır.  
   
 ## <a name="example"></a>Örnek  
   
@@ -75,5 +74,5 @@ char * text: Test
   
  **Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)

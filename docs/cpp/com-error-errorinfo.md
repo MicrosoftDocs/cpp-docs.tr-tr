@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52935c81849ded072cb20d6c835b3a71b66c2871
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: f3f4d105efb7269c0c1344d6a9399ebbe4fa9fd2
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941320"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404300"
 ---
 # <a name="comerrorerrorinfo"></a>_com_error::ErrorInfo
 **Microsoft'a özgü**  
@@ -31,9 +31,7 @@ ms.locfileid: "37941320"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 IErrorInfo * ErrorInfo( ) const throw( );  
-  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -44,5 +42,5 @@ IErrorInfo * ErrorInfo( ) const throw( );
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_com_error Sınıfı](../cpp/com-error-class.md)

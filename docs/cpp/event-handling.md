@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d27ff977bf3e4132f7782c0ffcb85bebefd42d68
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 91fded4380875515da81b87c5ffd74665df01b21
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961447"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408033"
 ---
 # <a name="event-handling"></a>Olay İşleme
 Olay işleme, COM sınıfları için öncelikle desteklenir (genellikle ATL sınıfları kullanarak, COM nesneleri uygulayan C++ sınıflar veya [coclass'ı](../windows/coclass.md) özniteliği).  Daha fazla bilgi için [com'da olay işleme](../cpp/event-handling-in-com.md).  
@@ -41,6 +41,6 @@ Olay işleme, COM sınıfları için öncelikle desteklenir (genellikle ATL sın
 |[__hook](../cpp/hook.md)|İle bir olay işleyicisi yöntemi ilişkilendirir.|  
 |[__unhook](../cpp/unhook.md)|Bir olay işleyicisi yöntemi dissociates.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)   

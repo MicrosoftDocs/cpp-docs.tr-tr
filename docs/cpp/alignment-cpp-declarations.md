@@ -12,29 +12,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f39fe0cf3706a67e2aa42aa89de5914808e9cec
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9031bea449968e22212c241b8418b505710cca8d
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408631"
 ---
 # <a name="alignment-c-declarations"></a>Hizalama (C++ Bildirimleri)
-C++ alt düzey özelliklerini de belirli donanım mimarisi en büyük avantajlarından yararlanmak bellekte nesneleri kesin hizalamasını belirtin yeteneğidir. Varsayılan olarak, kendi boyutu değeri sınıfı ve yapı üyelerinde derleyici hizalar: bool ve char hizalanır tek tek baytlık sınırları, iki bayt üzerinde kısa, dört bayt uzun uzun Int çift ve uzun çift sekiz bayt. Çoğu senaryoda asla varsayılan hizalamayı zaten en iyi olduğundan hizalama ile ilgilenen olmanız gerekir. Bazı durumlarda ancak, önemli ölçüde performans artışı veya bellek tasarruf veri yapıları için özel bir hizalama belirterek elde edebilirsiniz. Visual Studio 2015 öncesinde varsayılandan daha büyük bir hizalama belirtmek için Microsoft'a özgü anahtar sözcükler __alignof ve declspec(alignas) kullanabilirsiniz. Visual Studio 2015'te, başlangıç C ++ 11 standart anahtar sözcükleri kullanması gereken [alignof ve alignas](../cpp/alignof-and-alignas-cpp.md) en fazla kod taşınabilirlik için. Yeni anahtar sözcüklerin Microsoft'a özgü uzantılar başlık altında aynı şekilde davranır ve bu uzantılar belgelerine yeni anahtar sözcüklerin için de geçerlidir. Bkz: [__alignof işleci](../cpp/alignof-operator.md) ve [Hizala](../cpp/align-cpp.md) daha fazla bilgi için. C++ Standart yine de Microsoft #pragma kullanmanız gerekiyorsa hedef platformu için derleyici varsayılan değerinden küçük sınırlarındaki hizalama için paketleme davranışı belirtmiyor [paketi](../preprocessor/pack.md) bu durumda.  
+Alt düzey C++ özelliklerinin belirli donanım mimarisiyle en büyük avantajlarından yararlanmak için bellekte nesnelerin kesin hizalamayı belirtme olanağı biridir. Varsayılan olarak, derleyici sınıf ile yapı üyeleri kendi boyutu değeri hizalar: bool ve char hizalanır bir tek baytlık sınırlarda, iki bayt üzerinde kısa, int üzerindeki dört bayt uzun uzun çift ve uzun çift sekiz bayt. Çoğu senaryoda hiçbir zaman varsayılan hizalama zaten en iyi olduğundan ile aynı doğrultuda önceliğiniz olması gerekir. Bazı durumlarda ancak, önemli performans geliştirmeleri veya bellek tasarrufu, veri yapıları için özel bir hizalama belirterek elde edebilirsiniz. Visual Studio 2015 tarihinden önce varsayılandan daha büyük bir hizalama belirtmek için Microsoft'a özgü anahtar sözcükler __alignof ve declspec(alignas) kullanabilirsiniz. C ++ 11 standart anahtar sözcükleri Visual Studio 2015'te, başlangıç kullanması gereken [alignof ve alignas](../cpp/alignof-and-alignas-cpp.md) maksimum kod taşınabilir. Yeni anahtar sözcüklerle Microsoft'a özgü genişletmelerdir başlık altında aynı şekilde davranır ve bu uzantıları belgelerine de için yeni anahtar sözcüklerin uygular. Bkz: [__alignof işleci](../cpp/alignof-operator.md) ve [hizalama](../cpp/align-cpp.md) daha fazla bilgi için. C++ standart Microsoft #pragma kullanmak yine hedef platformu için derleyici varsayılandan daha küçük sınırlarındaki hizalama için paketleme davranışı belirtmiyor [paketi](../preprocessor/pack.md) durumda.  
   
- C++ Standart Kitaplığı sağlar [aligned_storage sınıfı](../standard-library/aligned-storage-class.md) Özel hizalamaları ile veri yapıları için bellek tahsis etmek için ve [aligned_union sınıfı](../standard-library/aligned-union-class.md) ile birleşimler hizalamasını belirtmek için Önemsiz olmayan oluşturucular veya Yıkıcılar.  
+ C++ Standart Kitaplığı sağlar [aligned_storage sınıfı](../standard-library/aligned-storage-class.md) Özel hizalamaları ile veri yapıları için bellek ayırma için ve [aligned_union sınıfı](../standard-library/aligned-union-class.md) birleşimler ile hizalamayı belirtme Önemsiz olmayan oluşturuculara veya yıkıcıları.  
   
 ## <a name="about-alignment"></a>Hizalama hakkında  
- Hizalama 2'in modulo sayısal adresi olarak ifade edilen bir bellek adresi özelliğidir. Örneğin, 0x0001103F 4 modül 3 adresidir; Bu adres hizalanacak 4n + 3, 4 2'in seçilen üssü burada gösterir kabul edilir. Bir adresi hizalamasını iki seçilen gücüyle bağlıdır. Modül 8 7 adrestir. Bir adresi kendi hizalama Xn + 0 ise X hizalanacak kabul edilir.  
+ Hizalama, 2'in kuvveti modül sayısal adresi olarak ifade edilen bir bellek adresi özelliğidir. Örneğin, ' % s'adresi 0x0001103F 4 modül 3'tür; Bu adres hizalanması için 4n + 3, 4 2 seçilen gücünü burada gösterir kabul edilir. Adres hizalama ikinin seçilen gücüyle bağlıdır. Modül 8 aynı adres 7'dir. Bir adresi hizalamanın Xn + 0 ise X için uyumlu kabul edilir.  
   
- CPU yönergeleri yürütmek bellekte depolanan veriler üzerinde çalışır ve veri adreslerini bellekte tarafından tanımlanır. Adresini yanı sıra tek bir datum ayrıca bir boyutu vardır. Adresini aksi boyutuna ve yanlış hizalanmış hizalanır gerekiyorsa bir datum doğal hizalanmış denir. Örneğin, tanımlamak için kullanılan adres için 8 hizalanır, 8-bayt kayan nokta datum doğal olarak hizalanır.  
+ CPU yürütme yönergeleri bellekte depolanan veriler, çalıştırmak ve verileri, bellek adreslerinde tarafından tanımlanır. Adresini ek olarak, tek bir veri de bir boyutu vardır. Bir veri adresini Aksi takdirde, boyutuna ve yanlış hizalanmış hizalanır, doğal olarak hizalanmış olarak adlandırılır. Örneğin, 8-bayt kayan veri, doğal olarak tanımlamak için kullanılan adres 8'e hizalanır varsa hizalanır.  
   
- Veri alignmentDevice derleyicileri derleyici işlenmesini verileri veri uyuşmazlığın engelleyen bir şekilde tahsis dener.  
+ Verileri veri hizalanmama engelleyen bir şekilde ayırmak için veri alignmentDevice derleyiciler girişimi derleyici işleme.  
   
- Basit veri türleri için veri türünde bayt boyutu'nün katları adreslerinin derleyici atar. Bu nedenle, derleyici uzun türündeki dört, ayarlama adresinin alt iki biti sıfıra katları olan değişkenler adresleri atar.  
+ Basit veri türleri için derleyici veri türünde bayt boyutu katları olan adresleri de atar. Bu nedenle, derleyici, dört, ayarlamanın adresinin alt iki biti sıfır olarak katları olan değişkenlere tür uzun adresleri atar.  
   
- Ayrıca, derleyicinin doğal olarak her öğe yapısı uyacak şekilde yapılarda klavye takımı. Aşağıdaki kod örneğinde yapısı yapısı x_ göz önünde bulundurun:  
+ Ayrıca, derleyici her öğe yapısının doğal olarak uygun bir şekilde yapıları sıfır ekleyerek doldurur. Aşağıdaki kod örneğinde yapısı yapı x_ göz önünde bulundurun:  
   
-```  
+```cpp 
 struct x_  
 {  
    char a;     // 1 byte  
@@ -45,11 +46,11 @@ struct x_
   
 ```  
   
- Derleyici hizalama doğal zorlamak için bu yapı pads.  
+ Derleyici bu yapı hizalama doğal olarak zorlamak için sıfır ekleyerek doldurur.  
   
- Aşağıdaki kod örneğinde nasıl derleyici doldurulan yapısı bellek: kopyalama yerleştirir gösterir  
+ Aşağıdaki kod örneğinde nasıl derleyici bellek: kopyalama doldurulan yapısı yerleştirir gösterir.  
   
-```  
+```cpp 
 // Shows the actual memory layout  
 struct x_  
 {  
@@ -60,20 +61,19 @@ struct x_
    char d;           // 1 byte  
    char _pad1[1];    // padding to make sizeof(x_) multiple of 4  
 }  
-  
 ```  
   
-1.  Her iki bildirimleri sizeof(struct x_) 12 bayt döndürür.  
+1.  Her iki bildirimi sizeof(struct x_) 12 bayt olarak döndürür.  
   
 2.  İkinci bildirim iki doldurma öğeleri içerir:  
   
-3.  _pad0 char dört baytlık sınır int b üyesinde hizalamak için [3]  
+3.  _pad0 char dört bayt sınırındaki int b üyesi hizalamak için [3]  
   
-4.  _pad1 char [3]; çubuğu yapısı yapısı _x dizi öğelerini hizalamak için [1]  
+4.  _pad1 char [1] [3]; çubuğu yapısı yapı _x'i dizi öğelerinin hizalamak için  
   
-5.  Doldurma öğelerini çubuğu [3] doğal erişimine izin veren şekilde hizalar.  
+5.  Doldurma öğeleri [3] çubuğu doğal erişime izin veren bir yolla hizalar.  
   
- Aşağıdaki kod örneğinde çubuğu gösterir [3] dizi düzeni:  
+ Aşağıdaki kod örneği çubuğu gösterir. [3] dizi düzeni:  
   
 ```  
 adr offset   element  
@@ -98,8 +98,7 @@ adr offset   element
 0x0020   short c;  
 0x0022   char d;  
 0x0023   char _pad1[1];  
-  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri yapı hizalama](http://en.wikipedia.org/wiki/Data_structure_alignment)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Veri yapısı hizalama](http://en.wikipedia.org/wiki/Data_structure_alignment)

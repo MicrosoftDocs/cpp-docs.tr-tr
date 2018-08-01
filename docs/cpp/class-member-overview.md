@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee52b42c65a34316454ea6653447938712590327
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1c454872a3f8d1c7f41ba2f6cea7d81402b6327f
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948257"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39403475"
 ---
 # <a name="class-member-overview"></a>Sınıf Üyelerine Genel bakış
 Bir sınıf veya yapı üyelerine oluşur. Bir sınıf yaptığı işi kendi üye işlevleri tarafından gerçekleştirilir. Sakladığı durumu veri üyelerine depolanır. Oluşturucular ve bellek serbest bırakma gibi temizleme işini başlatma üyelerinin gerçekleştirilir ve kaynaklarını serbest yok ediciler tarafından gerçekleştirilir. C ++ 11 ve sonraki sürümlerinde, veri üyesi bildirildiği başlatılması kullanabilirsiniz ve genellikle gerekir.  
@@ -124,7 +124,6 @@ Daha fazla bilgi için [özel üye işlevleri](../cpp/special-member-functions.m
  C ++ 11 ve sonraki sürümlerinde, statik olmayan üye bildirimcilerde başlatıcılar içerebilir.  
   
 ```cpp 
-  
 class CanInit  
 {  
 public:  
@@ -174,5 +173,5 @@ int CanInit2::j = i;
 > [!NOTE]
 >  Tanımlanan `CanInit2` öğesinin `i` sınıfının bir üyesi olduğunu belirtmek için, sınıf adı `i`, `CanInit2` öğesinden önce gelmelidir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

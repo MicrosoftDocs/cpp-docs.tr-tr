@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50cf3d7e5168ba40acde386b62cf02c0933f8ca4
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 54780b11e07819ca78eba89d9af5a8ba018cc9e4
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941255"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401814"
 ---
 # <a name="additional-termination-considerations"></a>Ek Sonlandırma Konuları
-Bir C++ programını kullanarak sonlandırabilirsiniz **çıkmak**, **dönüş**, veya **iptal**. Çıkış işlemini `atexit` işlevini kullanarak ekleyebilirsiniz. Bunlar aşağıdaki bölümlerde ele alınmıştır.  
+Bir C++ programını kullanarak sonlandırabilirsiniz `exit`, **dönüş**, veya `abort`. Çıkış işlemini `atexit` işlevini kullanarak ekleyebilirsiniz. Bunlar aşağıdaki bölümlerde ele alınmıştır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Başlatma ve Sonlandırma](../cpp/startup-and-termination-cpp.md)

@@ -33,16 +33,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd89d0c8657df4bec2da5bf021c8964ad418cd9b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 51220aaf47056f63d37471c61857f8a128a67179
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393374"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402454"
 ---
 # <a name="alignedfree"></a>_aligned_free
 
-İle ayrılmış bellek bloğu boşaltır [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md).
+İle ayrılmış olan bellek bloğunu serbest bırakır [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,13 +54,13 @@ void _aligned_free (
 
 ### <a name="parameters"></a>Parametreler
 
-*memblock* için döndürülen bellek bloğu için bir işaretçi **_aligned_malloc** veya **_aligned_offset_malloc** işlevi.
+*memblock* için döndürülen bellek bloğuna işaretçi `_aligned_malloc` veya `_aligned_offset_malloc` işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_free** işaretlenmiş `__declspec(noalias)`, işlev genel değişkenler değiştirmemeniz garanti anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md).
+**_aligned_free** işaretlenmiş `__declspec(noalias)`, işlevin genel değişkenleri garanti anlamına gelir. Daha fazla bilgi için [noalias](../../cpp/noalias.md).
 
-Bu işlev bir _aligned CRT işlevleri aksine, parametresinin doğrulamaz. Varsa *memblock* olan bir **NULL** işaretçi, bu işlev yalnızca hiçbir eylemleri gerçekleştirir. Değiştirme **errno** ve geçersiz parametre işleyicisi çağırma kullanılamaz. _Aligned işlevleri önceden bellek bloğu ayrılamıyor kullanmayan nedeniyle işlevinde bir hata oluştuğunda veya uyuşmazlığın bellek nedeniyle bazı öngörülemeyen calamity oluştuğunda, hata ayıklama rapordan işlevi oluşturur [_RPT, _RPTF, _RPTW, _ Rptfw makrosu](rpt-rptf-rptw-rptfw-macros.md).
+Bu işlev bir _aligned CRT işlevlerinin aksine, parametresinin doğrulamaz. Varsa *memblock* bir NULL işaretçiyse, bu işlev yalnızca eylem gerçekleştirir. Değiştirme `errno` ve geçersiz parametre işleyicisi çağırma kullanılamaz. _Aligned işlevleri daha önce bellek bloğu ayrılamadı kullanmayan nedeniyle işlevi içinde bir hata oluşursa veya bazı öngörülemeyen calamity nedeniyle bellek hizalanması gerçekleşir, işlev bir hata ayıklama raporu oluşturur [_RPT, _RPTF, _RPTW, _ Rptfw makrosu](rpt-rptf-rptw-rptfw-macros.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -70,8 +70,8 @@ Bu işlev bir _aligned CRT işlevleri aksine, parametresinin doğrulamaz. Varsa 
 
 ## <a name="example"></a>Örnek
 
-Daha fazla bilgi için bkz: [_aligned_malloc](aligned-malloc.md).
+Daha fazla bilgi için [_aligned_malloc](aligned-malloc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Hizalama](../../c-runtime-library/data-alignment.md)<br/>
+[Veri Hizalama](../../c-runtime-library/data-alignment.md)  

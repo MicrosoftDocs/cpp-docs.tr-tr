@@ -17,19 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bba312c6969acf95be8899f58f65e31c75386c4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 75659730198e09a172625c54bfcbdd54b7a9f857
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420479"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404794"
 ---
 # <a name="interpretation-of-subscript-operator"></a>Alt Simge İşleci Yorumu
-Gibi diğer işleçler alt simge işleci (**[]**) kullanıcı tarafından yeniden tanımlanabilir. Alt simge işlecinin varsayılan davranışı, aşırı yüklenmemişse, aşağıdaki yöntemi kullanarak dizi adını ve alt simgeyi birleştirmektir:  
+Alt simge işleci diğer işleçler gibi (**[]**) kullanıcı tarafından tekrar tanımlanabilir. Alt simge işlecinin varsayılan davranışı, aşırı yüklenmemişse, aşağıdaki yöntemi kullanarak dizi adını ve alt simgeyi birleştirmektir:  
   
  \*((*dizi adı*) + (*alt simge*))  
   
- İşaretçi türleri içeren tüm toplama işlemlerinde olduğu gibi; ölçeklendirme, tür boyutunu ayarlamak için otomatik olarak gerçekleştirilir. Bu nedenle, sonuç değeri değil *alt simge* kökeni baytlar *dizi adı*; bunun yerine, bu *alt simge*dizisinin th öğesi. (Bu dönüştürme hakkında daha fazla bilgi için bkz: [ADDITIVE işleçleri](../cpp/additive-operators-plus-and.md).)  
+ İşaretçi türleri içeren tüm toplama işlemlerinde olduğu gibi; ölçeklendirme, tür boyutunu ayarlamak için otomatik olarak gerçekleştirilir. Bu nedenle, sonuç değeri değil *alt simge* kaynağı bayt *dizi adı*; bunun yerine, bu *alt simge*dizinin th öğesi. (Bu dönüştürme hakkında daha fazla bilgi için bkz. [toplama işleçleri](../cpp/additive-operators-plus-and.md).)  
   
  Benzer şekilde, çok boyutlu diziler için aşağıdaki yöntem kullanılarak adres türetilir:  
   
@@ -37,5 +37,5 @@ Gibi diğer işleçler alt simge işleci (**[]**) kullanıcı tarafından yenide
  ***dizi adı* ) + ()**   
  ***alt simge* 1***max*2  *\* max*3 *.. .max*n) **+** *alt simge*2  *\* max*3 *.. .max*n).   biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır. *+* *alt simge*n))  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Diziler](../cpp/arrays-cpp.md)

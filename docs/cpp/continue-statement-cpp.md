@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97422a09f890686c4d414eea13da7db891494cc4
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: d0ab1e052b3e6d843813c33e5444fc3c08796d00
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948210"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39402097"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C++)
 En küçük kapsayan denetleme ifade için Denetim aktarımı zorlar [yapmak](../cpp/do-while-statement-cpp.md), [için](../cpp/for-statement-cpp.md), veya [sırada](../cpp/while-statement-cpp.md) döngü.  
@@ -68,6 +68,6 @@ before the continue
 after the do loop  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Atlama deyimleri](../cpp/jump-statements-cpp.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

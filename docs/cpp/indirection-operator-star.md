@@ -1,5 +1,5 @@
 ---
-title: 'Yönlendirme işleci: * | Microsoft Docs'
+title: 'Yöneltme işleci: * | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,28 +17,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d63fbe4042bb86f1ac7810302eeaa1b7978422b8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 80fdbe14539c5b32c2da80a5de75fbe0a2b64241
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39408628"
 ---
 # <a name="indirection-operator-"></a>Yönlendirme İşleci: *
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 * cast-expression  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birli indirection işleci (**\***) bir; işaretçiye diğer bir deyişle, bir l-değeri bir işaretçi değerine dönüştürür. Yöneltme işlecinin işleneni bir işaretçi bir türü olmalıdır. İşaretçi türünün türetildiği türü yöneltme ifade sonucudur. Kullanımını **\*** bu bağlamda işlecidir kendi çarpım bir ikili işleç anlamı farklıdır.  
+ Birli yöneltme işleci (**\***) bir; işaretçiye başka bir deyişle, bir işaretçi değeri bir l-değerine dönüştürür. Yöneltme işlecinin işleneni, bir tür için bir işaretçi olması gerekir. Yöneltme ifadenin sonucu işaretçi türünün türetildiği türüdür. Kullanımını **\*** işleci bu bağlamda anlamını çarpma bir ikili işleç olarak farklıdır.  
   
  İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir depolama konumuna işaret ediyorsa, sonuç depolama konumunu gösteren l değeridir.  
   
- İndirection işleci işaretçileri işaretçiler başvurulacak kümülatif olarak kullanılabilir. Örneğin:  
+ Yöneltme işleci üst üste işaretçilerin işaretçileri başvuru için kullanılabilir. Örneğin:  
   
-```  
+```cpp 
 // expre_Indirection_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate indirection operator  
@@ -58,7 +58,7 @@ int main() {
 }  
 ```  
   
- İşaretçi değeri geçersiz, tanımlanmamış bir sonucudur. Aşağıdaki liste, işaretçi değerini geçersiz kılan en yaygın koşulların bazılarını içermektedir.  
+ İşaretçi değeri geçersizse sonuç tanımsızdır. Aşağıdaki liste, işaretçi değerini geçersiz kılan en yaygın koşulların bazılarını içermektedir.  
   
 -   İşaretçi, bir null işaretçidir.  
   
@@ -68,8 +68,8 @@ int main() {
   
 -   İşaretçi, yürütülen program tarafından kullanılmayan bir adresi belirtir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Address-of işleci: &](../cpp/address-of-operator-amp.md)   
  [İşleçlerin Yöneltmesi ve Adresi](../c-language/indirection-and-address-of-operators.md)
