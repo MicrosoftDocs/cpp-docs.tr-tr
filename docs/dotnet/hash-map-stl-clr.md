@@ -109,29 +109,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9c42a1d546af7818d0eb9d3d97d395f74d5acccf
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: 1af95d53041c343bc3328beae4e796d3a316b461
+ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305790"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376345"
 ---
 # <a name="hashmap-stlclr"></a>hash_map (STL/CLR)
-Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `hash_map` bir çift yönlü depolama her tablo girişi öğeleri dizisi bir karma tablosu olarak yönetmek için düğümleri ve tek bir öğede depolama her düğüm listesi bağlı. Bir öğenin dizisi ve için kılma gider eşlenen bir değer sıralama için bir anahtar oluşur.  
+Şablon sınıfı, iki yönlü erişime sahip öğelerin değişen uzunluktaki dizisini denetleyen bir nesneyi tanımlar. Kapsayıcı kullandığınız `hash_map` öğeleri dizisi olarak bir karma tablo yönetmek için iki yönlü bir depolama her bir tablo girişi bağlı düğümleri ve bir öğe depolama her düğüm listesi. Bir öğe dizisi ve için kılma gider bir eşlenen değer sıralama için bir anahtar oluşur.  
   
- Aşağıda, açıklamada `GValue` aynıdır:  
+ Aşağıdaki açıklamada `GValue` aynıdır:  
   
  `Microsoft::VisualC::StlClr::GenericPair<GKey, GMapped>`  
   
  burada:  
   
- `GKey` aynı `Key` ikinci ref türü olmadıkça olmasından; bu durumda `Key^`  
+ `GKey` aynı `Key` ikinci bir başvuru türü olmadığı sürece olduğu durumda `Key^`  
   
- `GMapped` aynı `Mapped` ikinci ref türü olmadıkça olmasından; bu durumda `Mapped^`  
+ `GMapped` aynı `Mapped` ikinci bir başvuru türü olmadığı sürece olduğu durumda `Mapped^`  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Key,  
     typename Mapped>  
     ref class hash_map  
@@ -148,10 +148,10 @@ template<typename Key,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- Anahtar  
- Anahtar bileşeni denetlenen sıradaki öğenin türü.  
+ *Key*  
+ Denetlenen sıradaki öğenin anahtar bileşen türü.  
   
- eşlenen  
+ *Eşlenen*  
  Ek bileşen denetlenen sıradaki öğenin türü.  
 
 ## <a name="requirements"></a>Gereksinimler  
@@ -165,100 +165,100 @@ template<typename Key,
 |---------------------|-----------------|  
 |[hash_map::const_iterator (STL/CLR)](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|  
 |[hash_map::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|  
-|[hash_map::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|Denetimli sırası için sabit bir ters yineleyici türü.|  
-|[hash_map::difference_type (STL/CLR)](#difference_type)|İki öğeler arasında (büyük olasılıkla imzalanmış) bir uzaklık türü.|  
-|[hash_map::generic_container (STL/CLR)](#generic_container)|Genel arabirim kapsayıcının türü.|  
-|[hash_map::generic_iterator (STL/CLR)](#generic_iterator)|Yineleyici kapsayıcısı için genel arabirimi türü.|  
-|[hash_map::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|Kapsayıcı için genel arabirimini ters yineleyici türü.|  
-|[hash_map::generic_value (STL/CLR)](#generic_value)|Kapsayıcı için genel arabirimini öğenin türü.|  
-|[hash_map::hasher (STL/CLR)](#hasher)|Bir anahtar için karma temsilcisi.|  
+|[hash_map::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|Denetlenen dizi için bir sabit ters yineleyici türü.|  
+|[hash_map::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki (büyük olasılıkla işaretli) mesafenin türü.|  
+|[hash_map::generic_container (STL/CLR)](#generic_container)|Kapsayıcı için genel arabirim türü.|  
+|[hash_map::generic_iterator (STL/CLR)](#generic_iterator)|Kapsayıcı için genel arabirimi için bir yineleyici türü.|  
+|[hash_map::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|Kapsayıcı için genel arabirimi için ters yineleyici türü.|  
+|[hash_map::generic_value (STL/CLR)](#generic_value)|Kapsayıcı için genel arabirimi için bir öğe türü.|  
+|[hash_map::hasher (STL/CLR)](#hasher)|Bir anahtarı karma temsilcisi.|  
 |[hash_map::iterator (STL/CLR)](#iterator)|Denetlenen dizi için bir yineleyici türü.|  
 |[hash_map::key_compare (STL/CLR)](#key_compare)|İki anahtar sıralama temsilcisi.|  
 |[hash_map::key_type (STL/CLR)](#key_type)|Bir sıralama anahtarının türü.|  
-|[hash_map::mapped_type (STL/CLR)](#mapped_type)|Her anahtar ile ilişkili eşlenen değer türü.|  
+|[hash_map::mapped_type (STL/CLR)](#mapped_type)|Her bir anahtar ile ilişkili bir eşlenen değer türü.|  
 |[hash_map::reference (STL/CLR)](#reference)|Bir öğe için bir başvuru türü.|  
-|[hash_map::reverse_iterator (STL/CLR)](#reverse_iterator)|Denetimli sırası için ters yineleyici türü.|  
-|[hash_map::size_type (STL/CLR)](#size_type)|İki öğe arasındaki (negatif olmayan) uzaklığı türü.|  
-|[hash_map::value_compare (STL/CLR)](#value_compare)|İki öğenin değerleri için sıralama temsilcisi.|  
+|[hash_map::reverse_iterator (STL/CLR)](#reverse_iterator)|Denetlenen dizi için bir ters yineleyici türü.|  
+|[hash_map::size_type (STL/CLR)](#size_type)|İki öğe arasındaki bir (negatif) mesafenin türü.|  
+|[hash_map::value_compare (STL/CLR)](#value_compare)|İki öğenin değerlerini sıralama temsilcisi.|  
 |[hash_map::value_type (STL/CLR)](#value_type)|Öğenin türü.|  
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
 |[hash_map::begin (STL/CLR)](#begin)|Denetlenen dizinin başlangıcını belirtir.|  
-|[hash_map::bucket_count (STL/CLR)](#bucket_count)|Demet sayar.|  
+|[hash_map::bucket_count (STL/CLR)](#bucket_count)|Demet sayısını sayar.|  
 |[hash_map::clear (STL/CLR)](#clear)|Tüm öğeleri kaldırır.|  
-|[hash_map::count (STL/CLR)](#count)|Belirtilen anahtar eşleşen öğeleri sayar.|  
+|[hash_map::count (STL/CLR)](#count)|Belirtilen bir anahtarla eşleşen öğeleri sayar.|  
 |[hash_map::empty (STL/CLR)](#empty)|Bir öğe olup olmadığını sınar.|  
 |[hash_map::end (STL/CLR)](#end)|Denetlenen dizinin bitişini belirtir.|  
 |[hash_map::equal_range (STL/CLR)](#equal_range)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
 |[hash_map::erase (STL/CLR)](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|  
 |[hash_map::find (STL/CLR)](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
-|[hash_map::hash_delegate (STL/CLR)](#hash_delegate)|Bir anahtar için karma temsilci kopyalar.|  
+|[hash_map::hash_delegate (STL/CLR)](#hash_delegate)|Bir anahtarı karma temsilcisi kopyalar.|  
 |[hash_map::hash_map (STL/CLR)](#hash_map)|Bir kapsayıcı nesnesi oluşturur.|  
 |[hash_map::insert (STL/CLR)](#insert)|Öğeleri ekler.|  
 |[hash_map::key_comp (STL/CLR)](#key_comp)|İki anahtar sıralama temsilcisi kopyalar.|  
 |[hash_map::load_factor (STL/CLR)](#load_factor)|Demet başına ortalama öğeyi sayar.|  
-|[hash_map::lower_bound (STL/CLR)](#lower_bound)|Belirtilen anahtarla eşleşen aralığının başlangıcını bulur.|  
-|[hash_map::make_value (STL/CLR)](#make_value)|Bir değer nesnesi oluşturur.|  
+|[hash_map::lower_bound (STL/CLR)](#lower_bound)|Belirtilen bir anahtarla eşleşen aralığı başlangıcını bulur.|  
+|[hash_map::make_value (STL/CLR)](#make_value)|Değer bir nesne oluşturur.|  
 |[hash_map::max_load_factor (STL/CLR)](#max_load_factor)|Demet başına en yüksek öğe sayısını alır veya ayarlar.|  
-|[hash_map::rbegin (STL/CLR)](#rbegin)|Ters denetimli dizisi başlangıcını belirtir.|  
+|[hash_map::rbegin (STL/CLR)](#rbegin)|Ters çevrilen denetlenen dizinin başlangıç belirler.|  
 |[hash_map::rehash (STL/CLR)](#rehash)|Karma tabloyu yeniden oluşturur.|  
-|[hash_map::rend (STL/CLR)](#rend)|Ters denetimli dizinin sonuna belirler.|  
+|[hash_map::rend (STL/CLR)](#rend)|Ters çevrilen denetlenen dizinin sonuna belirler.|  
 |[hash_map::size (STL/CLR)](#size)|Öğe sayısını sayar.|  
 |[hash_map::swap (STL/CLR)](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|  
-|[hash_map::to_array (STL/CLR)](#to_array)|Denetimli sırası yeni bir diziye kopyalar.|  
-|[hash_map::upper_bound (STL/CLR)](#upper_bound)|Belirtilen anahtarla eşleşen aralığın sonuna bulur.|  
-|[hash_map::value_comp (STL/CLR)](#value_comp)|İki öğenin değerleri için sıralama temsilci kopyalar.|  
+|[hash_map::to_array (STL/CLR)](#to_array)|Denetlenen dizideki, yeni bir diziye kopyalar.|  
+|[hash_map::upper_bound (STL/CLR)](#upper_bound)|Belirtilen bir anahtarla eşleşen aralığı sonu bulur.|  
+|[hash_map::value_comp (STL/CLR)](#value_comp)|İki öğenin değerlerini sıralama temsilcisi kopyalar.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[hash_map::operator= (STL/CLR)](#op_as)|Denetimli dizisi yerini alır.|  
-|[hash_map::operator(STL/CLR)](#op)|Bir anahtar ilişkili eşlenen değerine eşler.|  
+|[hash_map::operator= (STL/CLR)](#op_as)|Denetlenen dizi değiştirir.|  
+|[hash_map::operator(STL/CLR)](#op)|Bir anahtar için ilişkili eşlenen değeri eşler.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   
 |Arabirim|Açıklama|  
 |---------------|-----------------|  
-|<xref:System.ICloneable>|Yinelenen bir nesne.|  
+|<xref:System.ICloneable>|Bir nesne çoğaltın.|  
 |<xref:System.Collections.IEnumerable>|Öğeleri dizisi.|  
-|<xref:System.Collections.ICollection>|Öğeleri grubunu koruyun.|  
-|<xref:System.Collections.Generic.IEnumerable%601>|Yazılan öğeleri dizisi.|  
-|<xref:System.Collections.Generic.ICollection%601>|Yazılı öğeleri grubunu koruyun.|  
-|<xref:System.Collections.Generic.IDictionary%602>|{Anahtar, değer} grubunun korumak çiftleri.|  
+|<xref:System.Collections.ICollection>|Öğe grubunu koruyun.|  
+|<xref:System.Collections.Generic.IEnumerable%601>|Türü belirtilmiş öğelerini dizisi.|  
+|<xref:System.Collections.Generic.ICollection%601>|Türü belirtilmiş bir öğe grubunu koruyun.|  
+|<xref:System.Collections.Generic.IDictionary%602>|{Değer, key} grubu korumak çiftleri.|  
 |IHash < anahtar, değer >|Genel kapsayıcı korur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Nesne ayırır ve bağlı bir çift yönlü listedeki tek düğümler olarak denetlediği dizisi için depolama boşaltır. Erişimi hızlandırmak için nesne da verimli tüm liste alt listelerin, bir dizi yönetme bir değişen uzunluk dizisi işaretçileri (karma tablosu), listeye tutar veya aralıkları. Hiçbir zaman kopyalayarak bir düğümün içeriğini başka düğümler arasındaki bağlantılar değiştirilerek sıralı tutan kova öğeleri ekler. INSERT ve rahatsız edici kalan öğeleri olmadan serbestçe öğeleri Kaldır anlamına gelir.  
+ Nesne ayırır ve depolama için bağlı bir çift yönlü bir liste içinde tek tek düğümleri olarak diziyi serbest bırakır. Erişim hızlandırmak için nesne de listesinin tümünü alt listelerin, bir dizi etkin şekilde yönetme işaretçileri (karma tablosu), listeye bir değişen uzunluktaki dizisini korur veya demetlerine. Sıralı tutan bir düğüm içeriğini diğerine kopyalama tarafından hiçbir zaman düğümleri arasındaki bağlantıları değiştirerek bir demet öğeleri ekler. Bu, ekleyin ve özgürce rahatsız edici kalan öğeleri olmadan öğeleri kaldırın anlamına gelir.  
   
- Nesne tarafından denetlenen bir saklı temsilci nesne türü çağırarak her demet siparişleri [hash_set::key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md). Hash_set yapısı oluştururken saklı temsilci nesnesini belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<=(key_type, key_type)`.  
+ Nesne türünde bir saklı temsilci nesnesi çağırarak denetlediği her bir demete siparişleri [hash_set::key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md). Hash_set oluştururken saklı temsilci nesnesi belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, karşılaştırma varsayılandır `operator<=(key_type, key_type)`.  
   
- Üye işlevini çağırarak saklı temsilci nesneye erişim [hash_set::key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)`()`. Böyle bir temsilci nesne eşdeğer sıralama anahtarları türü arasında tanımlamalısınız [hash_set::key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md). Yani, herhangi iki tuşları `X` ve `Y`:  
+ Üye işlevini çağırarak depolanan temsilci nesneye erişim [hash_set::key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)`()`. Bu tür bir temsilci nesnesinin anahtarları türünde arasında eşdeğer sıralamaya tanımlamalıdır [hash_set::key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md). Anlamına gelir, için iki anahtar `X` ve `Y`:  
   
  `key_comp()(X, Y)` Her çağrıda aynı Boolean sonucu döndürür.  
   
- Varsa `key_comp()(X, Y) && key_comp()(Y, X)` true ise `X` ve `Y` eşdeğer sıralama sahip söylenir.  
+ Varsa `key_comp()(X, Y) && key_comp()(Y, X)` true ise `X` ve `Y` eşdeğer sıralamaya olduğu söylenir.  
   
- Gibi davranır herhangi bir sıralama kural `operator<=(key_type, key_type)`, `operator>=(key_type, key_type)` veya `operator==(key_type, key_type)` eqivalent sıralama tanımlar.  
+ Gibi davranan bir sıralama kuralı `operator<=(key_type, key_type)`, `operator>=(key_type, key_type)` veya `operator==(key_type, key_type)` eqivalent sıralamasını tanımlar.  
   
- Kapsayıcı yalnızca öğeleri eşdeğer sıralama, anahtarlara sahip (ve hangi karma aynı tamsayı değerine) içinde bir demet bitişik olduğunu güvence altına alır. Şablon sınıfı aksine [hash_multimap (STL/CLR)](../dotnet/hash-multimap-stl-clr.md), şablon sınıfın bir nesnesi `hash_map` anahtarları tüm öğelerin benzersiz olmasını sağlar. (Eşdeğer sıralama hiçbir iki anahtarı vardır.)  
+ Kapsayıcı yalnızca öğeleri anahtarları, eşdeğer sıralamaya sahip (ve hangi karma aynı tam sayı değerine) bir demette bitişik olmasını sağlar, unutmayın. Şablon sınıfının aksine [hash_multimap (STL/CLR)](../dotnet/hash-multimap-stl-clr.md), şablon sınıfın bir nesnesi `hash_map` anahtarları tüm öğeler için benzersiz olmasını sağlar. (Hiçbir iki anahtarları, eşdeğer sıralamaya sahip.)  
   
- Nesne türünde bir saklı temsilci nesne çağırarak belirli bir sıralama anahtarı hangi demet içermesi gereken belirler [hash_set::hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md). Üye işlevini çağırarak saklı bu nesneye erişim [hash_set::hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md) `()` anahtar değerine bağlı bir tamsayı değeri elde edilir. Hash_set yapısı oluştururken saklı temsilci nesnesini belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, varsayılan işlevdir `System::Object::hash_value(key_type)`. Yani, herhangi bir anahtarı `X` ve `Y`:  
+ Hangi demet türü depolanan bir temsilci nesnesinin çağırarak belirli bir sıralama anahtarı içermelidir nesneyi belirleyen [hash_set::hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md). Üye işlevini çağırarak depolanan bu nesne erişim [hash_set::hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md) `()` anahtar değerine bağlı bir tamsayı değeri elde edilir. Hash_set oluştururken saklı temsilci nesnesi belirtebilirsiniz; hiçbir temsilci nesnesi belirtirseniz, varsayılan işlevi olduğu `System::Object::hash_value(key_type)`. Anlamına gelir, herhangi bir anahtarı `X` ve `Y`:  
   
  `hash_delegate()(X)` Her çağrıda aynı tamsayı sonuç döndürür.  
   
- Varsa `X` ve `Y` eşdeğer, sonra sıralama sahip `hash_delegate()(X)` aynı tamsayı sonuç döndürmelidir `hash_delegate()(Y)`.  
+ Varsa `X` ve `Y` eşdeğer, ardından sıralamaya sahip `hash_delegate()(X)` aynı tamsayı sonucu döndürmelidir `hash_delegate()(Y)`.  
   
- Her öğe ayrı bir anahtar ve eşlenen bir değer içeriyor. Sıra, arama, ekleme ve kaldırma en az örneklerinin en iyi (sabit süresi)--dizisindeki öğelerin sayısı bağımsızdır işlemlerinin sayısı ile rastgele bir öğenin izin veren şekilde gösterilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.  
+ Her öğe ayrı bir anahtar ve eşleşen bir değer içerir. Sıra, arama, ekleme ve kaldırma örneklerinin en iyisi, (sabit zaman)--dizideki öğelerin sayısından bağımsız olan en az bir dizi işlemi ile rastgele bir öğenin izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.  
   
- Karma değerler aynı şekilde dağıtılmaz, ancak bir karma tablosu bozuk. Her zaman aynı değer--döndüren bir karma işlev için extreme--arama, ekleme ve kaldırma (doğrusal saati) dizisindeki öğelerin sayısıyla orantılı arasındadır. Makul karma işlevi, ortalama kova boyutu seçmek kapsayıcı endeavors ve karma tablo boyutu (demet toplam sayısı), ancak bu seçenek bir bölümünü veya tamamını kılabilirsiniz. Örneğin, fonksiyonları görmek [hash_set::max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md) ve [hash_set::rehash (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md).  
+ Karma değerler aynı şekilde dağıtılmaz, ancak bir karma tablo bozuk. Extreme--her zaman aynı değer döndüren bir karma işlevi için arama, ekleme ve kaldırma orantılı dizideki (doğrusal zaman) öğelerin sayısı. Makul bir karma işlevi, ortalama kova boyutu seçmek kapsayıcı endeavors ve karma tablo boyutu (toplam demet sayısı), ancak bu seçenek bir bölümünü veya tamamını geçersiz kılabilirsiniz. Örneğin, işlevleri görmek [hash_set::max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md) ve [hash_set::rehash (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md).  
   
- Bir hash_map çift yönlü yineleyiciler denetlenen sıradaki öğenin atayan bir yineleyici verilen bitişik öğelerine adım anlamı destekler. Özel bir baş düğüm tarafından döndürülen yineleyici karşılık gelen [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`()`. Denetlenen sıradaki son öğe ulaşmak için bu yineleyici varsa azaltma. Baş düğüm ulaşması hash_map yineleyici artırabilirsiniz ve bu ardından eşit karşılaştırır `end()`. Ancak tarafından döndürülen yineleyici başvuramaz `end()`.  
+ Denetlenen dizideki bir öğeyi belirleyen bir yineleyici verilen bitişik öğelere adım anlamına gelir. bir hash_map, çift yönlü yineleyiciler destekler. Özel bir baş düğüm tarafından döndürülen yineleyici karşılık gelen [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`()`. Denetlenen dizi içindeki son öğeden ulaşmak için bu yineleyici varsa azaltma. Baş düğüm ulaşmaya hash_map yineleyici artırabilirsiniz ve bu sonra eşittir karşılaştıracağız `end()`. Ancak tarafından döndürülen yineleyici başvurulamıyor `end()`.  
   
- Rasgele erişim yineleyici gerektiren sayısal konumunu--doğrudan verilen hash_map öğeye başvuramaz unutmayın.  
+ Doğrudan bir rastgele erişim yineleyici gerektiren sayısal konumunu--verilen hash_map öğesine başvuramaz unutmayın.  
   
- Hash_map yineleyici sırayla ilişkilendirilmiş kapsayıcısı için bir tanıtıcı depolar onun ilişkili hash_map düğümü için bir tanıtıcı depolar. Yalnızca ilişkili kapsayıcı nesneleri ile yineleyiciler kullanabilirsiniz. İlişkili hash_map düğümü bazı hash_map ile ilişkili olduğu sürece hash_map yineleyici geçerli kalır. Ayrıca, geçerli bir yineleyici dereferencable--erişmek veya eşit değil sürece bunu atayan--öğe değeri değiştirmek için kullanmak `end()`.  
+ Sırayla ilişkilendirilmiş kapsayıcısı için bir tanıtıcı depolar, ilişkili hash_map düğümü için bir tanıtıcı hash_map yineleyici depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleri ile kullanabilirsiniz. Hash_map Yineleyici, onun ilişkili hash_map düğümü bazı hash_map ile ilişkili olduğu sürece geçerli kalır. Ayrıca, geçerli bir yineleyici yineleyicisine--erişmek veya eşit değildir sürece bu atayan--öğe değeri değiştirmek için kullanabilirsiniz `end()`.  
   
- Silme veya bir öğe kaldırıldığında yıkıcı depolanan değeri için çağırır. Kapsayıcı yok etme tüm öğeleri siler. Bu nedenle, hiçbir öğe kapsayıcı outlive ref sınıfı öğe türü olan bir kapsayıcı sağlar. Ancak, bir kapsayıcı, tanıtıcısı algılamadığı unutmayın `not` öğeleri yok.  
+ Silme veya bir öğenin kaldırılması için depolanan değerine yıkıcı çağırır. Kapsayıcı yok etme tüm öğelerini siler. Bu nedenle, hiçbir öğe'nin kapsayıcı daha uzun sürmesi başvuru sınıfı, öğe türü olan bir kapsayıcı sağlar. Ancak, bir kapsayıcı tutamaçlarından yaptığı unutmayın *değil* öğelerini yok edin.  
   
 ## <a name="members"></a>Üyeler
 
@@ -267,12 +267,12 @@ Denetlenen dizinin başlangıcını belirtir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 iterator begin();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi, ilk öğe denetimli dizisi ya da yalnızca boş bir dizi ötesinde atayan bir çift yönlü yineleyici döndürür. Atayan bir yineleyici almak için kullandığınız `current` denetimli dizisi ancak durumunu başında denetimli sırası uzunluğu değişirse değiştirebilirsiniz.  
+ Üye işlevi, denetlenen dizinin ya da boş bir dizi bitiminin ötesinde yalnızca ilk öğeyi belirleyen çift yönlü bir yineleyici döndürür. Gösteren bir yineleyici almak için kullandığınız `current` denetlenen dizideki ancak durumu başına denetlenen dizinin uzunluğu değişirse değiştirebilirsiniz.  
   
 ### <a name="example"></a>Örnek  
   
@@ -303,7 +303,6 @@ int main()
         it->first, it->second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -313,16 +312,16 @@ int main()
 ```  
 
 ## <a name="bucket_count"></a> hash_map::bucket_count (STL/CLR)
-Demet sayar.  
+Demet sayısını sayar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 int bucket_count();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevleri geçerli sayısını döndürür. Karma tablo boyutunu belirlemek için kullanın.  
+ Üye işlevleri, geçerli demet sayısını döndürür. Karma tablo boyutunu belirlemek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -367,7 +366,6 @@ int main()
         c1.max_load_factor());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -390,12 +388,12 @@ Tüm öğeleri kaldırır.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void clear();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini etkili bir şekilde çağırır [hash_map::erase (STL/CLR)](../dotnet/hash-map-erase-stl-clr.md) `(` [hash_map::begin (STL/CLR)](../dotnet/hash-map-begin-stl-clr.md) `(),` [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md) `())`. Denetimli sırası boş olduğundan emin olmak için kullanın.  
+ Üye işlevi etkili bir şekilde çağıran [hash_map::erase (STL/CLR)](../dotnet/hash-map-erase-stl-clr.md) `(` [hash_map::begin (STL/CLR)](../dotnet/hash-map-begin-stl-clr.md) `(),` [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md) `())`. Denetlenen dizi boş olduğundan emin olmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -432,7 +430,6 @@ int main()
     System::Console::WriteLine("size() = {0}", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -447,12 +444,12 @@ Denetlenen dizi için bir sabit yineleyici türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef T2 const_iterator;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilmeyen türünde bir nesne türünü açıklayan `T2` hizmet eden bir sabit çift yönlü yineleyici denetlenen dizisi olarak.  
+ Bilinmeyen türde bir nesne tanımlayan bir tür `T2` denetlenen dizi için sabit bir çift yönlü bir yineleyici olarak verebilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -476,7 +473,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -488,12 +484,12 @@ Bir öğe için sabit bir başvuru türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğe için sabit bir başvuru türü açıklanmaktadır.  
+ Bir öğe için sabit bir başvuru türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -520,7 +516,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -528,16 +523,16 @@ int main()
 ```   
 
 ## <a name="const_reverse_iterator"></a> hash_map::const_reverse_iterator (STL/CLR)
-Denetimli sırası için sabit bir ters yineleyici türü...  
+Denetlenen dizi için bir sabit ters yineleyici türü...  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef T4 const_reverse_iterator;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilmeyen türünde bir nesne türünü açıklayan `T4` hizmet eden sabit bir ters yineleyici denetlenen dizisi olarak.  
+ Bilinmeyen türde bir nesne tanımlayan bir tür `T4` denetlenen dizi için bir sabit ters yineleyici olarak verebilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -561,7 +556,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -573,16 +567,16 @@ Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 size_type count(key_type key);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- anahtar  
+ *Anahtarı*  
  Aranacak anahtar değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi ile eşdeğer sıralama sahip denetlenen sıradaki öğelerin sayısını döndürür. `key`. Belirtilen anahtar eşleşen öğe şu anda denetlenen sıradaki sayısını belirlemek için kullanın.  
+ Üye işlevi ile eşdeğer sıralamaya sahip denetlenen dizideki öğelerin sayısını döndürür. *anahtar*. Belirtilen bir anahtarla eşleşen şu anda denetlenen dizideki öğelerin sayısını belirlemek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -609,7 +603,6 @@ int main()
     System::Console::WriteLine("count(L'C') = {0}", c1.count(L'C'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -620,16 +613,16 @@ count(L'C') = 0
 ``` 
 
 ## <a name="difference_type"></a> hash_map::difference_type (STL/CLR)
-İki öğe arasındaki imzalı uzaklığı türü.  
+İki öğe arasındaki işaretli mesafenin türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünü büyük olasılıkla negatif öğe sayısını tanımlar.  
+ Büyük olasılıkla negatif öğe sayısını tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -664,7 +657,6 @@ int main()
     System::Console::WriteLine("begin()-end() = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -678,16 +670,16 @@ Bir öğe olup olmadığını sınar.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi boş denetimli dizisi için true değerini döndürür. Eşdeğer olan [hash_map::size (STL/CLR)](../dotnet/hash-map-size-stl-clr.md)`() == 0`. Hash_map boş olup olmadığını sınamak için kullanın.  
+ Üye işlevi boş bir denetlenmiş dizi için true değerini döndürür. Eşdeğerdir [hash_map::size (STL/CLR)](../dotnet/hash-map-size-stl-clr.md)`() == 0`. Hash_map boş olup olmadığını sınamak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cliext_hash_map_empty.cpp   
 // compile with: /clr   
 #include <cliext/hash_map>   
@@ -713,7 +705,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -729,12 +720,12 @@ Denetlenen dizinin bitişini belirtir.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 iterator end();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi yalnızca denetimli dizisi ötesinde işaret çift yönlü yineleyici döndürür. Denetimli bitişinde atayan bir yineleyici almak için kullanın; kendi durumu denetimli sırası uzunluğu değişirse değiştirmek içermiyor.  
+ Üye işlevi, denetlenen dizinin sonuna hemen ötesine işaret eden çift yönlü bir yineleyici döndürür. Denetlenen dizinin sonuna belirten bir yineleyici almak için kullanın. kendi durum eklenmemişse denetlenen dizinin uzunluğu değişirse değiştiremezsiniz.  
   
 ### <a name="example"></a>Örnek  
   
@@ -767,7 +758,6 @@ int main()
         it->first, it->second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -781,16 +771,16 @@ Belirtilen bir anahtarla eşleşen aralığı bulur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 cliext::pair<iterator, iterator> equal_range(key_type key);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `key`  
+ *Anahtarı*  
  Aranacak anahtar değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini yineleyiciler çifti döndürür `cliext::pair<iterator, iterator>(lower_bound(key), upper_bound(key))`. Belirtilen anahtar eşleşen öğeleri şu anda denetlenen sıradaki aralığını belirlemek için kullanın.  
+ Üye işlevi Yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(lower_bound(key), upper_bound(key))`. Belirtilen bir anahtarla eşleşen öğeleri şu anda denetlenen dizideki aralığı belirlemek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -826,7 +816,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -840,33 +829,33 @@ Belirtilen konumlardaki öğeleri kaldırır.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 iterator erase(iterator where);  
 iterator erase(iterator first, iterator last);  
 bool erase(key_type key)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- ilk  
+ *ilk*  
  Silme aralığını başlangıcı.  
   
- anahtar  
- Silmek için anahtar değeri.  
+ *Anahtarı*  
+ Silinecek anahtar değer.  
   
- Son  
+ *Son*  
  Silinecek aralığı sonu.  
   
- Burada  
+ *Burada*  
  Silinecek öğe.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk üye işlevi gösterdiği denetimli sırasının öğeyi kaldırır `where`ve kaldırıldı, öğenin dışında kalan ilk öğe atayan bir yineleyici döndürür veya [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md) `()` böyle bir öğe varsa. Tek bir öğe kaldırmak için kullanın.  
+ İlk üye işlevi tarafından denetlenen dizinin öğeyi kaldırır *burada*ve kaldırıldı, öğenin dışında kalan ilk öğeyi belirleyen bir yineleyici döndürür veya [hash_map::end (STL / CLR)](../dotnet/hash-map-end-stl-clr.md) `()` böyle bir öğe varsa. Tek bir öğe kaldırmak için kullanın.  
   
- İkinci üye işlevi denetlenen sıradaki aralığında kaldırır [`first`, `last`) ve kaldırıldı, herhangi bir öğenin dışında kalan ilk öğe atayan bir yineleyici döndürür veya `end()` böyle bir öğe varsa mevcut... Sıfır veya daha fazla bitişik öğeleri kaldırmak için kullanın.  
+ İkinci üye işlevi öğeleri denetlenen dizinin aralıktaki kaldırır. [`first`, `last`) ve kaldırılan tüm öğelerin ötesindeki ilk öğeyi belirleyen bir yineleyici döndürür veya `end()` böyle bir öğe varsa var... Sıfır veya daha fazla ardışık öğeleri kaldırmak için kullanın.  
   
- Üçüncü üye işlevi olan anahtara sahip eşdeğer sıralama denetimli sırasının herhangi bir öğeyi kaldırır için `key`ve kaldırılan öğelerin sayısını döndürür. Kaldırmak ve belirtilen bir anahtarı eşleşen tüm öğeleri saymak için kullanın.  
+ Üçüncü üye işlevi olan anahtara sahip eşdeğer sıralamaya denetlenen dizideki herhangi bir öğe kaldırır için *anahtarı*ve kaldırılan öğelerin sayısını döndürür. Kaldırın ve belirtilen bir anahtarla eşleşen tüm öğeleri saymak için kullanın.  
   
- Her öğe Silinme zaman öğe sayısını logaritmasını orantılı denetimli sırayla alır.  
+ Her öğe silinme için öğelerin sayısını logaritmasını orantılı zaman denetlenen dizide alır.  
   
 ### <a name="example"></a>Örnek  
   
@@ -913,7 +902,6 @@ int main()
     System::Console::WriteLine("erase(L'e') = {0}", c1.erase(L'e'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -931,16 +919,16 @@ Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 iterator find(key_type key);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- anahtar  
+ *Anahtarı*  
  Aranacak anahtar değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetlenen sıradaki en az bir öğe ile eşdeğer sıralama varsa `key`, bu öğelerden birine belirleme yineleyici üyesi fonksiyonunu döndürür; Aksi halde döner [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md) `()`. Bir öğe şu anda belirtilen anahtarla eşleşen denetimli sırayla bulmak için kullanın.  
+ Denetlenen dizideki en az bir öğe ile eşdeğer sıralamaya sahipse *anahtarı*, üye işlevi biri bu öğeleri gösteren bir yineleyici döndürür; Aksi halde döndürür [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`()`. Bir öğe şu anda belirtilen bir anahtarla eşleşen denetlenen dizide bulmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -973,7 +961,6 @@ int main()
         L'C', c1.find(L'C') != c1.end());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -984,18 +971,18 @@ find C = False
 ```  
 
 ## <a name="generic_container"></a> hash_map::generic_container (STL/CLR)
-Genel arabirim kapsayıcının türü.  
+Kapsayıcı için genel arabirim türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::  
     IHash<GKey, GValue>  
     generic_container;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu şablon kapsayıcı sınıfı için genel arabirimi türünü tanımlar.  
+ Bu şablon kapsayıcı sınıfı için genel arabirim tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1036,7 +1023,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1047,18 +1033,18 @@ int main()
 ```  
 
 ## <a name="generic_iterator"></a> hash_map::generic_iterator (STL/CLR)
-Yineleyici kullanmak için genel arabirimi kapsayıcının türü.  
+Kapsayıcı için genel arabirimi ile kullanmak için bir yineleyici türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::Generic::  
     ContainerBidirectionalIterator<generic_value>  
     generic_iterator;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Genel arabirim ile bu şablon kapsayıcı sınıfı için kullanılabilen genel bir yineleyici türünü tanımlar.  
+ Genel arabirim ile bu şablon kapsayıcı sınıfı için kullanılabilecek genel bir yineleyici türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1093,7 +1079,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1103,18 +1088,18 @@ int main()
 ``` 
 
 ## <a name="generic_reverse_iterator"></a> hash_map::generic_reverse_iterator (STL/CLR)
-Kullanmak için ters yineleyici kapsayıcısı için genel arabirimi türü.  
+Kapsayıcı için genel arabirimi ile kullanmak için bir ters yineleyici türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::Generic::  
     ReverseRandomAccessIterator<generic_value>  
     generic_reverse_iterator;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Genel arabirim ile bu şablon kapsayıcı sınıfı için kullanılabilen genel bir ters yineleyici türünü tanımlar.  
+ Genel arabirim ile bu şablon kapsayıcı sınıfı için kullanılabilecek genel bir ters yineleyici türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1148,7 +1133,6 @@ int main()
     System::Console::WriteLine(" [{0} {1}]", gcval->first, gcval->second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1158,16 +1142,16 @@ int main()
 ```   
 
 ## <a name="generic_value"></a> hash_map::generic_value (STL/CLR)
-Kapsayıcı için genel arabirimi ile kullanmak için öğenin türü.  
+Kapsayıcı için genel arabirimi ile kullanmak için bir öğe türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünde bir nesne türünü açıklayan `GValue` kullanmak için saklı öğesi değeri bu şablonu kapsayıcı sınıfı için genel arabirimi açıklar.  
+ Türünde bir nesneyi tanımlayan bir tür `GValue` açıklayan yönelik genel arabirimi için bu şablonu kapsayıcı sınıfı ile kullanmak için depolanan öğenin değeri.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1201,7 +1185,6 @@ int main()
     System::Console::WriteLine(" [{0} {1}]", gcval->first, gcval->second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1215,12 +1198,12 @@ Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 hasher^ hash_delegate();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi bir anahtar değeri bir tamsayıya dönüştürmek için kullanılan temsilci döndürür. Bir anahtar karma için kullanın.  
+ Üye işlevi bir anahtar değeri bir tamsayıya dönüştürmek için kullanılan temsilci döndürür. Bir anahtar karması için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1239,7 +1222,6 @@ int main()
     System::Console::WriteLine("hash(L'b') = {0}", myhash(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1252,7 +1234,7 @@ Bir kapsayıcı nesnesi oluşturur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 hash_map();  
 explicit hash_map(key_compare^ pred);  
 hash_map(key_compare^ pred, hasher^ hashfn);  
@@ -1274,87 +1256,87 @@ hash_map(System::Collections::Generic::IEnumerable<GValue>^ right,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- ilk  
+ *ilk*  
  Eklenecek Aralık başlangıcı.  
   
- hashfn  
- İşlev demet eşleme anahtarları için karma.  
+ *hashfn*  
+ İşlev eşleme anahtarlarını demet için karma.  
   
- Son  
+ *Son*  
  Eklenecek aralık sonu.  
   
- Pred  
- Denetimli sırası için koşulu sıralaması.  
+ *Pred*  
+ Denetlenen dizi için koşul sıralaması.  
   
- sağ  
- Nesne veya eklemek için aralık.  
+ *sağ*  
+ Nesne veya eklenecek aralık.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturucusu:  
+ Oluşturucu:  
   
  `hash_map();`  
   
- hiçbir öğe ile denetlenen dizisi koşulu sıralama varsayılan başlatır `key_compare()`ve varsayılan karma işlevi ile. Bir boş ilk denetlenen dizi koşulu ve karma işlevini sıralama varsayılan belirtmek için kullanın.  
+ Varsayılan karşılaştırma sıralama ile denetlenen dizideki herhangi bir öğesi ile başlatır `key_compare()`ve varsayılan karma işlevi ile. Varsayılan sıralama koşulu ve karma işlevi ile bir boş ilk denetlenen sıra belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `explicit hash_map(key_compare^ pred);`  
   
- sıralama koşulu ile hiçbir öğe ile denetlenen dizisi başlatır `pred`ve varsayılan karma işlevi ile. Belirtilen sıralama koşulu ve varsayılan karma işlevi ile bir boş ilk denetlenen sırasını belirlemek için kullanın.  
+ Denetlenen dizi sıralama koşul ile hiçbir öğe ile başlatır *pred*ve varsayılan karma işlevi ile. Belirtilen sıralama önerme ve varsayılan karma işlevi ile bir boş ilk denetlenen sıra belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `hash_map(key_compare^ pred, hasher^ hashfn);`  
   
- sıralama koşulu ile hiçbir öğe ile denetlenen dizisi başlatır `pred`ve karma işlevi ile `hashfn`. Belirtilen sıralama koşulu ve karma işlevi ile bir boş ilk denetlenen sırasını belirlemek için kullanın.  
+ Denetlenen dizi sıralama koşul ile hiçbir öğe ile başlatır *pred*ve karma işlevi ile *hashfn*. Belirtilen sıralama koşulu ve karma işlevi ile bir boş ilk denetlenen sıra belirtmek için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `hash_map(hash_map<Key, Mapped>% right);`  
   
- denetimli dizisi dizisiyle başlatır [`right.begin()`, `right.end()`), koşulu sıralama varsayılan ve varsayılan karma işlevi ile. Hash_map nesne tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `right`, karma işlevi ve varsayılan sıralama koşulu.  
+ Denetlenen dizi sırası başlatır [`right.begin()`, `right.end()`), koşul sıralama varsayılan ve varsayılan karma işlevi ile. Hash_map nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız *doğru*, karma işlevi ve varsayılan sıralama koşul.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `hash_map(hash_map<Key, Mapped>^ right);`  
   
- denetimli dizisi dizisiyle başlatır [`right->begin()`, `right->end()`), koşulu sıralama varsayılan ve varsayılan karma işlevi ile. Hash_map nesne tarafından denetlenen sırasının bir kopyasını bir ilk denetlenen sırası belirtmek için kullandığınız `right`, karma işlevi ve varsayılan sıralama koşulu.  
+ Denetlenen dizi sırası başlatır [`right->begin()`, `right->end()`), koşul sıralama varsayılan ve varsayılan karma işlevi ile. Hash_map nesnesi tarafından denetlenen dizinin bir kopyasını olan ilk denetimli bir sıra belirtmek için kullandığınız *doğru*, karma işlevi ve varsayılan sıralama koşul.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `template<typename InIter> hash_map(InIter first, InIter last);`  
   
- denetimli dizisi dizisiyle başlatır [`first`, `last`), koşulu sıralama varsayılan ve varsayılan karma işlevi ile. Denetimli sırası başka bir dizi koşul ve karma işlevini sıralama varsayılan kopyası için kullanın.  
+ Denetlenen dizi sırası başlatır [`first`, `last`), koşul sıralama varsayılan ve varsayılan karma işlevi ile. Denetlenen dizi başka bir dizinin bir kopyasını varsayılan karşılaştırma ve karma işlevi sıralama yapmak için kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `template<typename InIter> hash_map(InIter first, InIter last, key_compare^ pred);`  
   
- denetimli dizisi dizisiyle başlatır [`first`, `last`), sıralama koşulu ile `pred`ve varsayılan karma işlevi ile. Denetimli sırası belirtilen sıralama koşulu ve varsayılan karma işlevi ile başka bir dizi bir kopya yapmak için kullanın.  
+ Denetlenen dizi sırası başlatır [`first`, `last`), sıralama koşul ile *pred*ve varsayılan karma işlevi ile. Denetlenen dizi belirtilen sıralama önerme ve varsayılan karma işlevi ile başka bir sıralı bir kopyasını kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `template<typename InIter> hash_map(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`  
   
- denetimli dizisi dizisiyle başlatır [`first`, `last`), sıralama koşulu ile `pred`ve karma işlevi ile `hashfn`. Denetimli sırası belirtilen sıralama koşulu ve karma işlevi ile başka bir dizi bir kopya yapmak için kullanın.  
+ Denetlenen dizi sırası başlatır [`first`, `last`), sıralama koşul ile *pred*ve karma işlevi ile *hashfn*. Denetlenen dizi belirtilen sıralama koşulu ve karma işlevi ile başka bir sıralı bir kopyasını kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `hash_map(System::Collections::Generic::IEnumerable<Key>^ right);`  
   
- Numaralandırıcı tarafından belirtilen sıra ile denetlenen dizisi başlatır `right`koşulu sıralama varsayılan ve varsayılan karma işlevi ile. Denetimli sırası başka bir dizi koşul ve karma işlevini sıralama varsayılan bir numaralandırıcı tarafından açıklanan bir kopya yapmak için kullanın.  
+ Denetlenen dizi numaralandırıcı tarafından belirtilen sıra başlatır *doğru*, koşul sıralama varsayılan ve varsayılan karma işlevi ile. Denetlenen dizi başka bir sıralı karşılaştırma ve karma işlevi sıralama varsayılan bir numaralandırıcı tarafından açıklanan bir kopyasını kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `hash_map(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`  
   
- Numaralandırıcı tarafından belirtilen sıra ile denetlenen dizisi başlatır `right`, sıralama koşulu ile `pred`ve varsayılan karma işlevi ile. Denetimli sırası belirtilen sıralama koşulu ve varsayılan karma işlevi ile bir numaralandırıcı tarafından açıklanan başka bir dizi bir kopya yapmak için kullanın.  
+ Denetlenen dizi numaralandırıcı tarafından belirtilen sıra başlatır *doğru*, sıralama koşul ile *pred*ve varsayılan karma işlevi ile. Denetlenen dizi, başka bir dizisi tarafından belirtilen sıralama koşulu ve varsayılan karma işlevi ile bir numaralandırıcı açıklanan kopyasını kullanın.  
   
- Oluşturucusu:  
+ Oluşturucu:  
   
  `hash_map(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred, hasher^ hashfn);`  
   
- Numaralandırıcı tarafından belirtilen sıra ile denetlenen dizisi başlatır `right`, sıralama koşulu ile `pred`ve karma işlevi ile `hashfn`. Denetimli sırası belirtilen sıralama koşulu ve karma işlevi ile bir numaralandırıcı tarafından açıklanan başka bir dizi bir kopya yapmak için kullanın.  
+ Denetlenen dizi numaralandırıcı tarafından belirtilen sıra başlatır *doğru*, sıralama koşul ile *pred*ve karma işlevi ile *hashfn*. Denetlenen dizi, başka bir dizisi tarafından belirtilen sıralama koşulu ve karma işlevi ile bir numaralandırıcı açıklanan kopyasını kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1465,7 +1447,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1489,17 +1470,17 @@ size() = 0
 ```   
 
 ## <a name="hasher"></a> hash_map::hasher (STL/CLR)
-Bir anahtar için karma temsilcisi.  
+Bir anahtarı karma temsilcisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 Microsoft::VisualC::StlClr::UnaryDelegate<GKey, int>  
     hasher;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir anahtar değeri tamsayıya dönüştürür bir temsilci türü açıklanmaktadır.  
+ Bir anahtar değeri bir tamsayıya dönüştürür bir temsilci türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1518,7 +1499,6 @@ int main()
     System::Console::WriteLine("hash(L'b') = {0}", myhash(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1531,7 +1511,7 @@ hash(L'b') = 570892832
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 cliext::pair<iterator, bool> insert(value_type val);  
 iterator insert(iterator where, value_type val);  
 template<typename InIter>  
@@ -1540,33 +1520,33 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- ilk  
+ *ilk*  
  Eklenecek Aralık başlangıcı.  
   
- Son  
+ *Son*  
  Eklenecek aralık sonu.  
   
- sağ  
- Eklenecek numaralandırması.  
+ *sağ*  
+ Eklemek için sabit listesi.  
   
- VAL  
+ *VAL*  
  Eklenecek anahtar değeri.  
   
- Burada  
+ *Burada*  
  WHERE (yalnızca ipucu) eklemek için kapsayıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Her üye işlevleri kalan işlenen tarafından belirtilen sıra ekler.  
+ Üye işlevlerin her biri, diğer işlenen tarafından belirtilen bir dizisi ekler.  
   
- İlk üye işlevi endeavors değeri olan bir öğe eklemek `val`ve bir değer çifti döndürür `X`. Varsa `X.second` doğrudur `X.first` yeni eklenen öğesi belirler; Aksi takdirde `X.first` eşdeğer bir öğesiyle atar sıralama zaten var ve yeni bir öğesi eklenir. Tek bir öğe eklemek için kullanın.  
+ İlk üye işlevi endeavors değere sahip bir öğe eklemek `val`ve bir değer çiftini döndürür `X`. Varsa `X.second` true ise `X.first` yeni eklenen öğeyi belirler; Aksi takdirde `X.first` eşdeğer olan bir öğeyi belirleyen sıralama zaten var ve yeni bir öğe yok eklenir. Tek bir öğe eklemek için kullanın.  
   
- İkinci üye işlevi değeri olan bir öğe ekler `val`kullanarak `where` (performansını artırmak için) bağlı olarak, bir ipucu olarak ve yeni eklenen öğesi atayan bir yineleyici döndürür. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için kullanın.  
+ İkinci üye işlevi değere sahip bir öğe ekler *val*kullanarak *burada* (performansını artırmak için) bir ipucu olarak ve yeni eklenen öğeyi belirleyen bir yineleyici döndürür. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için kullanın.  
   
- Üçüncü üye işlevi dizisi ekler [`first`, `last`). Başka bir sırasından kopyalanan sıfır veya daha fazla öğe eklemek için kullanın.  
+ Üçüncü üye işlevi ekler dizisi [`first`, `last`). Başka bir diziden kopyalanan sıfır veya daha fazla öğe eklemek için kullanın.  
   
- Dördüncü üye fonksiyonu tarafından belirlenen dizisi ekler `right`. Bir numaralandırıcı tarafından tanımlanan bir dizi eklemek için kullanın.  
+ Dördüncü üye işlevi tarafından belirlenen dizisi ekler *doğru*. Bir numaralandırıcı tarafından açıklanan bir dizi eklemek için kullanın.  
   
- Her öğe ekleme zaman öğe sayısını logaritmasını orantılı denetimli sırasını alır. Ekleme, bir öğe ekleme noktasını bitişik atayan bir ipucu verilen amortized sabit zamanında bir ancak ortaya çıkabilir.  
+ Her öğe ekleme, denetlenen dizide öğe sayısı için logaritmasını orantılı zaman alır. Ekleme, ekleme noktasını bitişik bir öğeyi belirleyen bir ipucu verilen amorti edilmiş sabit sürede bir ancak ortaya çıkabilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1630,7 +1610,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1649,12 +1628,12 @@ Denetlenen dizi için bir yineleyici türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef T1 iterator;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilmeyen türünde bir nesne türünü açıklayan `T1` hizmet eden bir çift yönlü yineleyici denetlenen dizisi olarak.  
+ Bilinmeyen türde bir nesne tanımlayan bir tür `T1` denetlenen dizi için çift yönlü bir yineleyici olarak verebilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1678,7 +1657,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1690,12 +1668,12 @@ int main()
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 key_compare^key_comp();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli sırasını belirlemek için kullanılan sıralama temsilci döndürür. İki anahtar karşılaştırmak için kullanın.  
+ Üye işlevi denetlenen diziyi sıralamak için kullanılan sıralama temsilci döndürür. İki anahtar karşılaştırmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1730,7 +1708,6 @@ int main()
         kcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1748,13 +1725,13 @@ compare(L'b', L'a') = True
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 Microsoft::VisualC::StlClr::BinaryDelegate<GKey, GKey, bool>  
     key_compare;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Anahtar değişkenlerinin sıralama belirler temsilci eşanlamlısı türüdür.  
+ Türü, sıralama anahtarı, bağımsız değişkenleri belirler temsilci eşanlamlıdır.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1789,7 +1766,6 @@ int main()
         kcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1807,12 +1783,12 @@ Bir sıralama anahtarının türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Key key_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon parametresi için bir eş anlamlı türüdür `Key`.  
+ Şablon parametresi için bir eşanlamlı türüdür *anahtar*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1839,7 +1815,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1851,12 +1826,12 @@ Demet başına ortalama öğeyi sayar.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 float load_factor();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi döndürür `(float)` [hash_map::size (STL/CLR)](../dotnet/hash-map-size-stl-clr.md) `() /` [hash_map::bucket_count (STL/CLR)](../dotnet/hash-map-bucket-count-stl-clr.md)`()`. Ortalama kova boyutu belirlemek için kullanın.  
+ Üye işlevinin döndürdüğü `(float)` [hash_map::size (STL/CLR)](../dotnet/hash-map-size-stl-clr.md) `() /` [hash_map::bucket_count (STL/CLR)](../dotnet/hash-map-bucket-count-stl-clr.md)`()`. Ortalama demet boyutunu belirlemek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1901,7 +1876,6 @@ int main()
         c1.max_load_factor());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1920,20 +1894,20 @@ max_load_factor() = 0.25
 ```   
 
 ## <a name="lower_bound"></a> hash_map::lower_bound (STL/CLR)
-Belirtilen anahtarla eşleşen aralığının başlangıcını bulur.  
+Belirtilen bir anahtarla eşleşen aralığı başlangıcını bulur.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 iterator lower_bound(key_type key);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- anahtar  
+ *Anahtarı*  
  Aranacak anahtar değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye fonksiyonu ilk öğe belirler `X` aynı kova olarak karmaları denetlenen sıradaki `key` ve için eşdeğer sıralama sahip `key`. Böyle bir öğe var olup olmadığını döndürür [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`()`; Aksi takdirde, atayan yineleyici döndürür `X`. Öğe dizisi başına şu anda belirtilen bir anahtar ile denetlenen sırayla bulmak için kullanın.  
+ Üye işlevi ilk öğeyi belirleyen `X` aynı Demetin karıştırır denetlenen dizideki *anahtarı* ve için eşdeğer sıralamaya sahip *anahtar*. Böyle bir öğe var olup olmadığını döndürür [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`()`; Aksi halde gösteren bir yineleyici döndürür `X`. Bir dizi öğe başına şu anda belirtilen bir anahtarla eşleşen denetlenen dizide bulmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1966,7 +1940,6 @@ int main()
         it->first, it->second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1977,23 +1950,23 @@ lower_bound(L'x')==end() = True
 ```  
 
 ## <a name="make_value"></a> hash_map::make_value (STL/CLR)
-Bir değer nesnesi oluşturur.  
+Değer bir nesne oluşturur.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 static value_type make_value(key_type key, mapped_type mapped);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- anahtar  
+ *Anahtarı*  
  Kullanılacak anahtar değeri.  
   
- eşlenen  
- Arama için değer eşlenmiş.  
+ *Eşlenen*  
+ Aranacak eşlenen değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi döndürür bir `value_type` , anahtar nesne `key` ve eşlenen değeri `mapped`. Diğer birçok üye işlevleri ile kullanım için uygun bir nesne oluşturmak için kullanın.  
+ Üye işlevi döndürür bir `value_type` nesne anahtarı *anahtarı* ve eşlenen değeri *eşlenen*. Çeşitli üye işlevleri ile kullanım için uygun bir nesne oluşturmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2016,7 +1989,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2028,12 +2000,12 @@ Her bir anahtar ile ilişkili bir eşlenen değer türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef Mapped mapped_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon parametresi için bir eş anlamlı türüdür `Mapped`.  
+ Şablon parametresi için bir eşanlamlı türüdür `Mapped`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2060,7 +2032,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2072,19 +2043,19 @@ Demet başına en yüksek öğe sayısını alır veya ayarlar.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 float max_load_factor();  
 void max_load_factor(float new_factor);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- new_factor  
- Yeni maksimum depolamak için faktörü yükleyin.  
+ *new_factor*  
+ Yeni en büyük faktör depolamak için yükleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk üye işlevi geçerli depolanan en fazla Yük faktörü döndürür. En yüksek ortalama kova boyutu belirlemek için kullanın.  
+ İlk üye işlevi, geçerli depolanan en yüksek yük faktörünün döndürür. En yüksek ortalama demet boyutunu belirlemek için kullanın.  
   
- İkinci üye işlevi deposu en fazla yük faktörüyle değiştirir `new_factor`. Hiçbir otomatik rehashing kadar sonraki INSERT oluşur.  
+ İkinci üye işlevi ile mağaza en yüksek yük faktörünün değiştirir *new_factor*. Hiçbir otomatik rehashing kadar bir sonraki INSERT gerçekleşir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2129,7 +2100,6 @@ int main()
         c1.max_load_factor());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2148,20 +2118,20 @@ max_load_factor() = 0.25
 ```  
 
 ## <a name="op_as"></a> hash_map::operator (STL/CLR) =
-Denetimli dizisi yerini alır.  
+Denetlenen dizi değiştirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 hash_map<Key, Mapped>% operator=(hash_map<Key, Mapped>% right);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- Kopyalamak için kapsayıcı.  
+ *sağ*  
+ Kopyalanacak kapsayıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işleci kopyaları `right` nesnesine sonra döndürür `*this`. Denetimli sırayla kopyası ile denetlenen sırasını değiştirmek için kullanın `right`.  
+ Üye işleci kopyaları *doğru* ardından nesneye döndürür `*this`. Denetlenen dizi denetlenen dizide bir kopyasını değiştirmek için kullandığınız *doğru*.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2192,7 +2162,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2201,20 +2170,20 @@ int main()
 ``` 
 
 ## <a name="op"></a> hash_map::operator(stl/CLR)
-Bir anahtar ilişkili eşlenen değerine eşler.  
+Bir anahtar için ilişkili eşlenen değeri eşler.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 mapped_type operator[](key_type key);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- anahtar  
+ *Anahtarı*  
  Aranacak anahtar değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çalışmaları için eşdeğer sıralama ile bir öğeyi bulmak için üye işlevlerini `key`. Bulursa, ilişkili eşlenen değer döndürür; Aksi takdirde ekler `value_type(key, mapped_type())` ve ilişkili döndürür (varsayılan) eşlenen değeri. İlişkili anahtarını verilen eşlenen bir değeri aramak için ya da hiçbiri bulunursa, bir giriş için anahtar var olduğundan emin olmak için kullanın.  
+ Çalışmaları için eşdeğer sıralamaya sahip öğeyi bulma için üye işlevlerini *anahtar*. Bu biri bulunursa, ilişkili bir eşlenen değer döndürür; Aksi takdirde ekler `value_type(key, mapped_type())` ve ilişkili döndürür (varsayılan) eşlenen değeri. Verilen anahtarıyla eşleşen bir değeri aramak için veya bulunamazsa anahtarı için bir giriş var. olmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2254,7 +2223,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2266,16 +2234,16 @@ c1[b] = 2
 ```  
 
 ## <a name="rbegin"></a> hash_map::rbegin (STL/CLR)
-Ters denetimli dizisi başlangıcını belirtir.  
+Ters çevrilen denetlenen dizinin başlangıç belirler.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 reverse_iterator rbegin();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli dizisi ya da boş bir dizi başına ötesinde yalnızca son öğesi atar ters bir yineleyici döndürür. Bu nedenle, atar `beginning` ters dizisi. Atayan bir yineleyici almak için kullandığınız `current` ters sırada görülen denetimli dizisi ancak durumunu başında denetimli sırası uzunluğu değişirse değiştirebilirsiniz.  
+ Üye işlevi, denetlenen dizinin ya da boş bir dizi başlangıcı hemen ötesinde son öğeyi belirleyen bir ters yineleyici döndürür. Bu nedenle, atayan `beginning` ters dizisi. Gösteren bir yineleyici almak için kullandığınız `current` denetlenen dizinin uzunluğu değişirse başlangıcına ters sırada görülen denetlenen dizideki ancak durumunu değiştirebilirsiniz.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2306,7 +2274,6 @@ int main()
         rit->first, rit->second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2320,12 +2287,12 @@ Bir öğe için bir başvuru türü.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğe için bir başvuru türü açıklanmaktadır.  
+ Öğeye bir başvuru türü açıklar.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2352,7 +2319,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2364,12 +2330,12 @@ Karma tabloyu yeniden oluşturur.
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void rehash();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi sağlamak için karma tablo oluşturur [hash_map::load_factor (STL/CLR)](../dotnet/hash-map-load-factor-stl-clr.md) `() <=` [hash_map::max_load_factor (STL/CLR)](../dotnet/hash-map-max-load-factor-stl-clr.md). Aksi takdirde, karma tablo yalnızca bir ekleme sonra gerektiği gibi boyutu artar. (Hiçbir zaman otomatik olarak boyutunda azalır.) Karma tablo boyutunu ayarlamak için kullanın.  
+ Üye işlevi sağlanarak, bir karma tabloyu yeniden oluşturur [hash_map::load_factor (STL/CLR)](../dotnet/hash-map-load-factor-stl-clr.md) `() <=` [hash_map::max_load_factor (STL/CLR)](../dotnet/hash-map-max-load-factor-stl-clr.md). Aksi takdirde, karma tablo yalnızca bir ekleme sonra gerektiği şekilde boyutu artar. (Hiçbir zaman otomatik olarak boyutundaki azalır.) Karma tablo boyutunu ayarlamak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2414,7 +2380,6 @@ int main()
         c1.max_load_factor());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2433,16 +2398,16 @@ max_load_factor() = 0.25
 ```  
 
 ## <a name="rend"></a> hash_map::rend (STL/CLR)
-Ters denetimli dizinin sonuna belirler.  
+Ters çevrilen denetlenen dizinin sonuna belirler.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 reverse_iterator rend();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini ters yineleyici başına yalnızca ötesinde işaret denetimli dizisi döndürür. Bu nedenle, atar `end` ters dizisi. Atayan bir yineleyici almak için kullandığınız `current` ters sırada görülen denetimli dizisi ancak durumunu sonuna denetimli sırası uzunluğu değişirse değiştirebilirsiniz.  
+ Üye işlevi hemen ötesine işaret eden bir başlangıç değerinin denetlenen dizideki ters yineleyici döndürür. Bu nedenle, atayan `end` ters dizisi. Gösteren bir yineleyici almak için kullandığınız `current` denetlenen dizinin uzunluğu değişirse sonuna ters sırada görülen denetlenen dizideki ancak durumunu değiştirebilirsiniz.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2475,7 +2440,6 @@ int main()
         rit->first, rit->second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2485,16 +2449,16 @@ int main()
 ```  
 
 ## <a name="reverse_iterator"></a> hash_map::reverse_iterator (STL/CLR)
-Denetimli sırası için ters yineleyici türü.  
+Denetlenen dizi için bir ters yineleyici türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef T3 reverse_iterator;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilmeyen türünde bir nesne türünü açıklayan `T3` hizmet eden bir ters yineleyici denetimli sırası için farklı.  
+ Bilinmeyen türde bir nesne tanımlayan bir tür `T3` denetlenen dizi için bir ters yineleyici olarak verebilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2518,7 +2482,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2530,12 +2493,12 @@ int main()
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli sırası uzunluğunu döndürür. Şu anda denetlenen sıradaki öğelerinin sayısını belirlemek için kullanın. Tüm önem verdiğiniz ise dizisi bkz sıfır olmayan boyutu olup [hash_map::empty (STL/CLR)](../dotnet/hash-map-empty-stl-clr.md)`()`.  
+ Üye işlevi, denetlenen dizinin uzunluğunu döndürür. Şu anda denetlenen dizideki öğelerin sayısını belirlemek için kullanın. Tümü, önem verdiğiniz ise dizisi bakın, sıfır olmayan boyutu olup [hash_map::empty (STL/CLR)](../dotnet/hash-map-empty-stl-clr.md)`()`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2567,7 +2530,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2577,16 +2539,16 @@ size() = 2 after adding 2
 ```  
   
 ## <a name="size_type"></a> hash_map::size_type (STL/CLR)
-İki öğe arasındaki imzalı uzaklığı türü.  
+İki öğe arasındaki işaretli mesafenin türü.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türünü negatif olmayan öğe sayısını tanımlar.  
+ Bir negatif olmayan öğe sayısını tanımlayan bir tür.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2615,7 +2577,6 @@ int main()
     System::Console::WriteLine("end()-begin() = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2628,16 +2589,16 @@ end()-begin() = 3
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void swap(hash_map<Key, Mapped>% right);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- sağ  
- İçeriği ile değiştirilecek kapsayıcı.  
+ *sağ*  
+ Kapsayıcı içeriğini değiştirmek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli sıraları arasında değiştirir `this` ve `right`. Bunu Sabit sürede yapar ve hiçbir özel durum oluşturur. Bunu iki kapsayıcı içeriğini exchange hızlı bir şekilde kullanın.  
+ Denetlenen diziyi üye işlevi değiştirir `this` ve *doğru*. Bunu Sabit sürede yapar ve hiçbir özel durum oluşturur. İki kapsayıcının içeriğinin değişimi için hızlı bir şekilde kullanırsınız.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2679,7 +2640,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2690,16 +2650,16 @@ int main()
 ```  
 
 ## <a name="to_array"></a> hash_map::to_array (STL/CLR)
-Denetimli sırası yeni bir diziye kopyalar.  
+Denetlenen dizideki, yeni bir diziye kopyalar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 cli::array<value_type>^ to_array();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi denetimli sırası içeren bir dizi döndürür. Dizi formunda denetimli sırasının bir kopyasını almak için kullanın.  
+ Üye işlevi, denetlenen bir dizi içeren bir dizi döndürür. Dizi formunda denetlenen dizinin bir kopyasını almak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2730,7 +2690,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2739,20 +2698,20 @@ int main()
 ```  
 
 ## <a name="upper_bound"></a> hash_map::upper_bound (STL/CLR)
-Belirtilen anahtarla eşleşen aralığın sonuna bulur.  
+Belirtilen bir anahtarla eşleşen aralığı sonu bulur.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 iterator upper_bound(key_type key);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- anahtar  
+ *Anahtarı*  
  Aranacak anahtar değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye fonksiyonu son öğe belirler `X` aynı kova olarak karmaları denetlenen sıradaki `key` ve için eşdeğer sıralama sahip `key`. Böyle bir öğe varsa veya `X` Son denetlenen sıradaki döndürdüğü öğedir [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`()`; Aksi takdirde, ilk öğe ötesindeatayanyineleyicidöndürür`X`. Öğelerin dizinin sonuna şu anda belirtilen bir anahtar ile denetlenen sırayla bulmak için kullanın.  
+ Üye işlevi son öğeyi belirler `X` aynı Demetin karıştırır denetlenen dizideki *anahtarı* ve için eşdeğer sıralamaya sahip *anahtar*. Böyle bir öğe varsa veya `X` denetlenen dizideki son öğeyi döndürür olan [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`()`; Aksi halde ötesindekiilköğeyibelirleyenbiryineleyicidöndürür`X`. Bir dizi öğe sonuna şu anda belirtilen bir anahtarla eşleşen denetlenen dizide bulmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2785,7 +2744,6 @@ int main()
         it->first, it->second);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2796,16 +2754,16 @@ upper_bound(L'x')==end() = True
 ```  
 
 ## <a name="value_comp"></a> hash_map::value_comp (STL/CLR)
-İki öğenin değerleri için sıralama temsilci kopyalar.  
+İki öğenin değerlerini sıralama temsilcisi kopyalar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 value_compare^ value_comp();  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini denetimli sırasını belirlemek için kullanılan sıralama temsilci döndürür. İki öğenin değerleri karşılaştırmak için kullanın.  
+ Üye işlevi denetlenen diziyi sıralamak için kullanılan sıralama temsilci döndürür. İki öğenin değerlerini karşılaştırmak için kullanın.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2832,7 +2790,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2842,17 +2799,17 @@ compare([L'b', 2], [L'a', 1]) = False
 ```  
 
 ## <a name="value_compare"></a> hash_map::value_compare (STL/CLR)
-İki öğenin değerleri için sıralama temsilcisi.  
+İki öğenin değerlerini sıralama temsilcisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>  
     value_compare;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kendi değer bağımsız değişkenleri sıralama belirler temsilci eşanlamlısı türüdür.  
+ Türü, değer bağımsız değişkenleri sıralama belirleyen temsilci eşanlamlıdır.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2879,7 +2836,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2893,12 +2849,12 @@ compare([L'b', 2], [L'a', 1]) = False
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typedef generic_value value_type;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eşanlamlısı türüdür `generic_value`.  
+ Türü eşanlamlıdır `generic_value`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2924,10 +2880,8 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
 [a 1] [b 2] [c 3]  
 ```  
-  
