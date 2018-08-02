@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d294eef323d96ddbfecad8f740826a5a038d7b4c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: eae00467e2866ba8c0ff9aeb275224d1249ae361
+ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948043"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39404967"
 ---
 # <a name="examples-of-lambda-expressions"></a>Lambda İfadeleri Örnekleri
 Bu makalede, lambda ifadelerinin programlarınızda nasıl kullanılacağı gösterilmektedir. Lambda ifadelerine genel bakış için bkz. [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md). Bir lambda ifadesinin yapısı hakkında daha fazla bilgi için bkz. [Lambda ifadesi söz dizimi](../cpp/lambda-expression-syntax.md).  
@@ -204,7 +204,6 @@ int main()
     // Print the result.  
     cout << timestwoplusthree << endl;  
 }  
-  
 ```  
   
 ### <a name="output"></a>Çıkış  
@@ -256,7 +255,6 @@ int main()
     // Print the result, which is (7+8)*2.  
     cout << answer << endl;  
 }  
-  
 ```  
   
 ### <a name="output"></a>Çıkış  
@@ -276,7 +274,6 @@ int main()
  Kullanabileceğiniz **bu** burada gösterildiği gibi açıkça bir işlevde işaretçi:  
   
 ```cpp  
-
 // capture "this" by reference
 void ApplyScale(const vector<int>& v) const  
 {  
@@ -290,7 +287,6 @@ void ApplyScale2(const vector<int>& v) const
    for_each(v.begin(), v.end(),   
       [*this](int n) { cout << n * _scale << endl; });  
 }  
-
 ```  
   
  Ayrıca yakalayabilirsiniz **bu** işaretçi örtük olarak:  
@@ -344,7 +340,6 @@ int main()
     Scale s(3);  
     s.ApplyScale(values);  
 }  
-  
 ```  
   
 ### <a name="output"></a>Çıkış  
@@ -354,7 +349,6 @@ int main()
 6  
 9  
 12  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -365,7 +359,7 @@ int main()
 ##  <a name="templateLambdaExpressions"></a> Lambda ifadelerini şablonlarla kullanma  
   
 ### <a name="example"></a>Örnek  
- Lambda ifadeleri yazıldığından, bunları C++ şablonlarıyla birlikte kullanabilirsiniz. Aşağıdaki örnekte gösterildiği `negate_all` ve `print_all` işlevleri. `negate_all` İşlevi uygular birli `operator-` içindeki her öğeyi `vector` nesne. `print_all` İşlevi her öğedeki yazdırır `vector` konsola nesne.  
+ Lambda ifadeleri yazıldığından, bunları C++ şablonlarıyla birlikte kullanabilirsiniz. Aşağıdaki örnekte gösterildiği `negate_all` ve `print_all` işlevleri. `negate_all` İşlevi uygular birli **operator -** içindeki her öğeyi `vector` nesne. `print_all` İşlevi her öğedeki yazdırır `vector` konsola nesne.  
   
 ### <a name="code"></a>Kod  
   
@@ -405,7 +399,6 @@ int main()
     cout << "After negate_all():" << endl;  
     print_all(v);  
 }  
-  
 ```  
   
 ### <a name="output"></a>Çıkış  
@@ -418,7 +411,6 @@ After negate_all():
 -34  
 43  
 -56  
-  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -502,7 +494,6 @@ int main()
         Console::WriteLine(s + Convert::ToChar(ch));   
     }("Hello");  
 }  
-  
 ```  
   
 ### <a name="output"></a>Çıkış  
@@ -519,7 +510,7 @@ Hello!
   
  [[Bu makaledeki](#top)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md)   
  [Lambda ifadesi söz dizimi](../cpp/lambda-expression-syntax.md)   
  [Otomatik](../cpp/auto-cpp.md)   
