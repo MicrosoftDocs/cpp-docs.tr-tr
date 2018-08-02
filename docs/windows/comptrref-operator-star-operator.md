@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 03de935ab9195cddf3ea9936b694b55ba2cec34c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 55d4fa6156c4ef2032111c0306c3cff8dce14059
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883478"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461458"
 ---
 # <a name="comptrrefoperator-operator"></a>ComPtrRef::operator* İşleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,10 +34,10 @@ InterfaceType* operator *();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli ComPtrRef nesnesinin temsil ettiği arabirimi işaretçisi.  
+ Geçerli tarafından temsil edilen bir arabirim işaretçisine **ComPtrRef** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli ComPtrRef nesnesinin temsil ettiği arabirimi işaretçisine alır.  
+ Geçerli tarafından temsil edilen arabirim işaretçisi alır **ComPtrRef** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

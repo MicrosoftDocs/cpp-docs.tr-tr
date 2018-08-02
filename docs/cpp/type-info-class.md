@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54e4f4a2ac9be9dc68320e5121bc86e5a4280807
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 00939b514c243f673baf7f0997f1ca3860251626
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941047"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462657"
 ---
 # <a name="typeinfo-class"></a>type_info Sınıfı
-`type_info` Sınıfı programında derleyici tarafından oluşturulan tür bilgilerini açıklar. Bu sınıfın nesneleri, tür için bir ada etkili şekilde bir işaretçi depolar. `type_info` Sınıfı ayrıca iki tür eşitlik için karşılaştırma veya harmanlama sırası için uygun kodlanmış bir değer depolar. Türler için kodlama kurallarını ve harmanlama sırası belirsizdir ve programdan programa farklılık gösterebilir.  
+**Type_info** sınıfı programında derleyici tarafından oluşturulan tür bilgilerini açıklar. Bu sınıfın nesneleri, tür için bir ada etkili şekilde bir işaretçi depolar. **Type_info** sınıfı ayrıca iki tür eşitlik için karşılaştırma veya harmanlama sırası için uygun kodlanmış bir değer depolar. Türler için kodlama kurallarını ve harmanlama sırası belirsizdir ve programdan programa farklılık gösterebilir.  
   
- `<typeinfo>` Üstbilgi dosyası kullanmak için dahil edilen olmalıdır `type_info` sınıfı. Arabirimin `type_info` sınıfı:  
+ `<typeinfo>` Üstbilgi dosyası kullanmak için dahil edilen olmalıdır **type_info** sınıfı. Arabirimin **type_info** sınıfı:  
   
 ```cpp
 class type_info {  
@@ -42,11 +42,11 @@ public:
 };  
 ```  
   
- Nesnelerin örneği oluşturulamıyor `type_info` sınıfı yalnızca bir özel kopya Oluşturucu olduğundan doğrudan sınıf. Bir (geçici) oluşturmak için tek yolu `type_info` kullanılacak nesnedir [TypeID](../cpp/typeid-operator.md) işleci. Atama işleci de özel olduğundan, kopyalayamaz veya sınıfın nesneleri Ata `type_info`.  
+ Nesnelerin örneği oluşturulamıyor **type_info** sınıfı yalnızca bir özel kopya Oluşturucu olduğundan doğrudan sınıf. Bir (geçici) oluşturmak için tek yolu **type_info** kullanılacak nesnedir [TypeID](../cpp/typeid-operator.md) işleci. Atama işleci de özel olduğundan, kopyalayamaz veya sınıfın nesneleri Ata **type_info**.  
   
- `type_info::hash_code` türü değerleri için uygun bir karma işlevi tanımlar `typeinfo` dizin değerlerinin dağıtımına.  
+ `type_info::hash_code` türü değerleri için uygun bir karma işlevi tanımlar **typeinfo** dizin değerlerinin dağıtımına.  
   
- İşleçler `==` ve `!=` eşitlik ve eşitsizlik için diğer karşılaştırmak için kullanılan `type_info` nesneleri, sırasıyla.  
+ İşleçler `==` ve `!=` eşitlik ve eşitsizlik için diğer karşılaştırmak için kullanılan **type_info** nesneleri, sırasıyla.  
   
  Türlerin ve devralma ilişkilerinin harmanlama sırası arasında bir bağlantı yoktur. Kullanım `type_info::before` türlerin harmanlama sırasını belirlemek için üye işlevi. Garanti yoktur, `type_info::before` farklı programlar veya hatta farklı çalışmalarında aynı programın aynı sonucu verir. Bu şekilde `type_info::before` address-of benzer `(&)` işleci.  
   
@@ -56,5 +56,5 @@ public:
   
  Tür bilgileri yalnızca şu durumlarda çok biçimli sınıflar için oluşturulan [/GR (çalışma zamanı türü bilgileri etkinleştir)](../build/reference/gr-enable-run-time-type-information.md) derleyici seçeneği belirtildi.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma Zamanı Tür Bilgileri](../cpp/run-time-type-information.md)

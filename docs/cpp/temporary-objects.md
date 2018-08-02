@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d914b668140f1cbf372e29bcdd4f4b526397fb9
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 3a34fa07431892493e12a6f38603965da1dbc824
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948014"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466861"
 ---
 # <a name="temporary-objects"></a>Geçici Nesneler
 Bazı durumlarda, derleyicinin geçici nesneler oluşturması gerekir. Bu geçici nesneler aşağıdaki nedenlerde oluşturulabilir:  
@@ -54,4 +54,3 @@ Bazı durumlarda, derleyicinin geçici nesneler oluşturması gerekir. Bu geçic
 |------------------------------|-----------------------|  
 |İfade değerlendirmesinin sonucu|İfade değerlendirmesinin sonucu olarak oluşturulan tüm değerlendirmesidir ifade deyiminin sonunda yok edilir (yani virgülde), veya için ifadelerinin sonunda **için**, **varsa**, **sırada**, **yapmak**, ve **geçiş** deyimleri.|  
 |Başlatma **const** başvuruları|Bir başlatıcı başlatılan başvuruyla aynı türden bir l değeri değilse, temel alınan nesne türünün geçici öğesi oluşturulur ve başlatma ifadesiyle başlatılır. Bu geçici nesne, bağlı olduğu başvuru nesnesi yok edildikten hemen sonra yok edilir.|  
-  

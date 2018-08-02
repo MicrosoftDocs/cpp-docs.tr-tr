@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 360945f8156c5c92c62cb2209308c7cdd2860cbc
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 79ec82ec00e912d597cfeda608e1b77cf08ab4e8
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208555"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466949"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 C++, çeşitli dize ve karakter türleri destekler ve bu türlerinden her birinin değişmez değerler express için yöntemler sağlar. Kaynak kodunuzda bir karakter kümesini kullanarak, karakter ve dize değişmez değerleri içeriğini express. Evrensel karakter adları ve kaçış karakterleri yalnızca temel kaynak karakter kümesi kullanan herhangi bir dize express sağlar. Ham dize değişmez değeri kaçış karakterleri kullanmaktan kaçının sağlar ve her tür dize değişmez değerleri ifade etmek için kullanılabilir. Ek yapılma veya dönüştürme adımları yapmak zorunda kalmadan std::string değişmez değerleri daha da oluşturabilirsiniz.  
@@ -146,7 +146,7 @@ int main() {
   
  **Microsoft'a özgü**  
   
- Bir değeri normal bir karakter sabiti (bir önek olmayanlar) oluşturmak için derleyicinin karakterin veya karakter dizisi halinde bir 32 bit tamsayı içindeki 8-bit değerleri tek tırnak işaretleri arasında dönüştürür. Birden çok karakter sabiti içinde karşılık gelen bayt düşük düzey yüksek sıralı gerektiği gibi doldurun. Oluşturmak için bir **char** değeri, derleyici, düşük düzey bayt alır. Oluşturmak için bir `wchar_t` veya `char16_t` değeri, derleyici, düşük düzey sözcüğü alır. Derleyici, herhangi bir BITS atanmış bayt veya word ayarlanırsa, sonuç kesilmiş sizi uyarır.  
+ Bir değeri normal bir karakter sabiti (bir önek olmayanlar) oluşturmak için derleyicinin karakterin veya karakter dizisi halinde bir 32 bit tamsayı içindeki 8-bit değerleri tek tırnak işaretleri arasında dönüştürür. Birden çok karakter sabiti içinde karşılık gelen bayt düşük düzey yüksek sıralı gerektiği gibi doldurun. Oluşturmak için bir **char** değeri, derleyici, düşük düzey bayt alır. Oluşturmak için bir **wchar_t** veya `char16_t` değeri, derleyici, düşük düzey sözcüğü alır. Derleyici, herhangi bir BITS atanmış bayt veya word ayarlanırsa, sonuç kesilmiş sizi uyarır.  
   
 ```cpp  
 char c0    = 'abcd';    // C4305, C4309, truncates to 'd'  
@@ -231,7 +231,7 @@ const char* str2 = u8"\U0001F607 is O:-)";
 ```  
   
 ### <a name="wide-string-literals"></a>Geniş dize değişmez değerleri  
- Bir geniş dize değişmez değeri null ile sonlandırılmış bir dizi sabit olan `wchar_t` tarafından öneki '`L`' ve çift tırnak işareti ("), ters eğik çizgi hariç tüm grafik karakterlerini içeren (\\), veya yeni satır karakteri. Bir geniş dize sabit değeri, kaçış dizileri, yukarıda listelenen ve herhangi bir evrensel karakter adı içeriyor olabilir.  
+ Bir geniş dize değişmez değeri null ile sonlandırılmış bir dizi sabit olan **wchar_t** tarafından öneki '`L`' ve çift tırnak işareti ("), ters eğik çizgi hariç tüm grafik karakterlerini içeren (\\), veya yeni satır karakteri. Bir geniş dize sabit değeri, kaçış dizileri, yukarıda listelenen ve herhangi bir evrensel karakter adı içeriyor olabilir.  
   
 ```cpp  
 const wchar_t* wide = L"zyxw";  
@@ -319,7 +319,7 @@ const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
   
  **Microsoft'a özgü**  
   
- Visual c++'ta const olmayan bir işaretçi başlatmak için bir dize sabit değeri kullanabilirsiniz **char** veya `wchar_t`. Bu C99 kodunda izin verilir, ancak C ++ 98'de kullanım dışı ve C ++ 11'de kaldırılmıştır. Dize değiştirme girişimi şu örnekte olduğu gibi erişim ihlaline neden olur:  
+ Visual c++'ta const olmayan bir işaretçi başlatmak için bir dize sabit değeri kullanabilirsiniz **char** veya **wchar_t**. Bu C99 kodunda izin verilir, ancak C ++ 98'de kullanım dışı ve C ++ 11'de kaldırılmıştır. Dize değiştirme girişimi şu örnekte olduğu gibi erişim ihlaline neden olur:  
   
 ```cpp  
 wchar_t* str = L"hello";  
@@ -399,7 +399,7 @@ const char16_t* s4 = u"😃 = \U0001F603 is :-D";
 const char32_t* s5 = U"😎 = \U0001F60E is B-)";  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Karakter kümesi](../cpp/character-sets.md)   
  [Sayısal, Boole ve işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)   
  [Kullanıcı Tanımlı Sabit Değerler](../cpp/user-defined-literals-cpp.md)

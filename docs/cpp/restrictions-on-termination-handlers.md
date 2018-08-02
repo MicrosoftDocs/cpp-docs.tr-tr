@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 969930c3918cdc0d2e38747796279c7135aba5a7
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 3ae16363956afc7cca853307ef2888846a02864d
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941346"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461776"
 ---
 # <a name="restrictions-on-termination-handlers"></a>Sonlandırma İşleyicileri Kısıtlamaları
 Kullanamazsınız bir **goto** bloğuna atlamak için bir **__try** deyim bloğunu veya **__finally** deyim bloğu. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (Bununla birlikte, / hızlı bir **__try** deyim bloğunu.) Ayrıca, bir özel durum işleyicisi veya sonlandırma işleyicisi içine yerleştiremezsiniz bir **__finally** blok.  
@@ -30,6 +30,6 @@ Kullanamazsınız bir **goto** bloğuna atlamak için bir **__try** deyim bloğu
   
  A **dönüş** deyimi içinde bir **__finally** deyim bloğunu aynı durum kabaca sunar. Sonlandırma işleyicisi içeren işlev şu anki çağırıcı için denetimini döndürür. Sistem yığın geriye doğru Bu işlem durdurulur ve şekilde geliştirilmişse harekete geçirilen özel durum programın devam eder.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)   
  [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

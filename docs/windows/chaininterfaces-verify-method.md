@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c83479434a936f32fb0f7367d8cd02c6676c74e7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a845ea047682fda97ae581f4daad26775241ddf8
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860700"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466845"
 ---
 # <a name="chaininterfacesverify-method"></a>ChainInterfaces::Verify Yöntemi
-Her bir arabirime şablon parametreleri tarafından tanımlanan doğrular `I0` aracılığıyla `I9` IUnknown ve/veya Iınspectable ve, devralan `I0` devraldığı `I1` aracılığıyla `I9`.  
+Her arabirim şablon parametreleri tarafından tanımlanan doğrular *I0* aracılığıyla *I9* IUnknown ve/veya Iınspectable ve, devralınan *I0* devralan*I1* aracılığıyla *I9*.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,10 +34,10 @@ WRL_NOTHROW __forceinline static void Verify();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Doğrulama işlemi başarısız olursa, bir `static_assert` hatayı açıklayan bir hata iletisi gösterir.  
+ Doğrulama işlemi başarısız olursa bir **static_assert** hatayı açıklayan bir hata iletisi gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Şablon parametreleri `I0` ve `I1` gereklidir ve parametreleri `I2` aracılığıyla `I9` isteğe bağlıdır.  
+ Şablon parametreleri *I0* ve *I1* gereklidir ve parametreleri *I2* aracılığıyla *I9* isteğe bağlıdır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

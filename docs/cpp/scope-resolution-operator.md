@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7caea3a32c0bb983518f7610918c78c8c31c63a0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: baf3678d204042bdea5e892a6e89d041b5091f38
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32420947"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467085"
 ---
 # <a name="scope-resolution-operator-"></a>Kapsam Çözümü İşleci: ::
-Kapsam çözümü işleci `::` tanımlamak ve farklı kapsamlarda kullanılan tanımlayıcıları belirsizliğini ortadan kaldırmak için kullanılır. Kapsam hakkında daha fazla bilgi için bkz: [kapsam](../cpp/scope-visual-cpp.md).  
+Kapsam çözümleme işleci **::** belirlemek ve farklı kapsamlarda kullanılan tanımlayıcıları ayırt etmek için kullanılır. Kapsamı hakkında daha fazla bilgi için bkz. [kapsam](../cpp/scope-visual-cpp.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ enum struct :: identifier
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `identifier` Bir değişken, bir işlev veya bir numaralandırma değeri olabilir.  
+ `identifier` Bir değişken, işlev veya bir sabit listesi değeri olabilir.  
   
-## <a name="with-classes-and-namespaces"></a>Ad alanları ve sınıfları ile  
- Aşağıdaki örnek, kapsam çözümü işleci ad alanları ve sınıflar ile nasıl kullanıldığını gösterir:  
+## <a name="with-classes-and-namespaces"></a>Ad alanlarını ve sınıfları ile  
+ Aşağıdaki örnek, kapsam çözümleme işleci ad alanlarını ve sınıfları ile nasıl kullanıldığını gösterir:  
   
 ```cpp  
 namespace NamespaceA{  
@@ -62,12 +62,10 @@ int main() {
     // A class name used to disambiguate  
     NamespaceA::ClassA a1;  
     a1.x = 2;  
-  
 }  
-  
 ```  
   
- Kapsam çözümü işleci bir kapsam niteleyicisi olmadan genel ad alanına başvuruyor.  
+ Kapsam niteleyicisi olmayan bir kapsam çözümleme işleci genel isim uzayına başvuruyor.  
   
 ```cpp  
 namespace NamespaceA{  
@@ -89,7 +87,7 @@ int main() {
 }  
 ```  
   
- Kapsam çözümü işleci bir ad alanının bir üyesi tanımlamak veya üyenin ad alanında kullanma yönergesi nominates bir ad alanı belirlemek için kullanabilirsiniz. Aşağıdaki örnekte, kullandığınız `NamespaceC` nitelemek için `ClassB`rağmen `ClassB` ad alanında bildirildi `NamespaceB`, çünkü `NamespaceB` içinde MVP `NamespaceC` bir kullanarak yönergesi.  
+ Kapsam çözümleme işleci bir isim uzayı üyesi tanımlamak veya üyenin ad alanı kullanarak yönergesinde nominates bir ad alanı tanımlamak için kullanabilirsiniz. Aşağıdaki örnekte, kullandığınız `NamespaceC` nitelemek için `ClassB`rağmen `ClassB` ad alanında bildirilen `NamespaceB`, çünkü `NamespaceB` , aday `NamespaceC` bir kullanarak yönergesi.  
   
 ```cpp  
 namespace NamespaceB {  
@@ -101,7 +99,6 @@ namespace NamespaceB {
   
 namespace NamespaceC{  
     using namespace B;  
-  
 }  
 int main() {  
     NamespaceB::ClassB c_b;  
@@ -110,10 +107,9 @@ int main() {
     c_b.x = 3;  
     c_c.x = 4;  
 }  
-  
 ```  
   
- Kapsam çözümü işleci zincirleri kullanabilirsiniz. Aşağıdaki örnekte, `NamespaceD::NamespaceD1` iç içe geçmiş ad alanını tanımlayan `NamespaceD1`, ve `NamespaceE::ClassE::ClassE1` iç içe geçmiş sınıf tanımlar `ClassE1`.  
+ Kapsam çözümleme işleci zincirleri kullanabilirsiniz. Aşağıdaki örnekte, `NamespaceD::NamespaceD1` iç içe geçmiş ad alanını tanımlayan `NamespaceD1`, ve `NamespaceE::ClassE::ClassE1` iç içe geçmiş sınıf tanımlar `ClassE1`.  
   
 ```cpp  
 namespace NamespaceD{  
@@ -123,7 +119,6 @@ namespace NamespaceD{
 }  
   
 namespace NamespaceE{  
-  
     class ClassE{  
     public:  
         class ClassE1{  
@@ -138,11 +133,10 @@ int main() {
     NamespaceE::ClassE::ClassE1 e1;  
     e1.x = 7  ;  
 }  
-  
 ```  
   
-## <a name="with-static-members"></a>İle statik üyeler  
- Kapsam çözümü işleci statik sınıf üyeleri çağırmak için kullanmanız gerekir.  
+## <a name="with-static-members"></a>Statik üyeleri ile  
+ Statik sınıf üyeleri çağırmak için kapsam çözünürlük işlecini kullanmanız gerekir.  
   
 ```cpp  
 class ClassG {  
@@ -158,11 +152,10 @@ int main() {
     int gx1 = ClassG::x;  
     int gx2 = ClassG::get_x();   
 }  
-  
 ```  
   
-## <a name="with-scoped-enumerations"></a>İle kapsamlı numaralandırmaları  
- Kapsamlı çözümü işleci da kapsamlı bir numaralandırma değerleri ile kullanılan [numaralandırma bildirimleri](../cpp/enumerations-cpp.md), aşağıdaki örnekte olduğu gibi:  
+## <a name="with-scoped-enumerations"></a>Kapsamlı numaralandırmalar ile  
+ Kapsamlı çözümleme işleci ayrıca kapsamlı numaralandırma değerlerinin kullanılan [numaralandırma bildirimleri](../cpp/enumerations-cpp.md), aşağıdaki örnekte olduğu gibi:  
   
 ```cpp  
 enum class EnumA{  
@@ -172,12 +165,10 @@ enum class EnumA{
 };  
   
 int main() {  
-  
     EnumA enum_value = EnumA::First;  
 }  
-  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+## <a name="see-also"></a>Ayrıca bkz.  
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Ad Alanları](../cpp/namespaces-cpp.md)   

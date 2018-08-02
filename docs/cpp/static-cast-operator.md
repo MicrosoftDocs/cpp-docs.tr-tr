@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad9af76787780ebe2a25b3fab46ce1951085b8e8
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 5b01e9799a1f8b03406750dca0b486c6c4d0f655
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948208"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466702"
 ---
 # <a name="staticcast-operator"></a>static_cast İşleci
 Dönüştürür bir *ifade* türüne *tür kimliği* yalnızca ifadede bulunan türlere göre.  
@@ -113,6 +113,6 @@ void f() {
   
  Yeniden konumlandırma atık Toplayıcıya, kullanımını üstte denetlenmeyen yayınlar gerçekleştirme tehlikesi nedeniyle **static_cast** düzgün çalışır emin olduğunuzda yalnızca performans açısından kritik kodda olmalıdır. Kullanmanız gerekirse **static_cast** yayın modunda ile yerine [safe_cast](../windows/safe-cast-cpp-component-extensions.md) başarı sağlamak için hata ayıklama yapılarınızda.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Atama İşleçleri](../cpp/casting-operators.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

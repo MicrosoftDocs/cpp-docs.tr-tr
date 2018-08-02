@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c2286c347fbd68f34fac807e80facca0a0286aa6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5839edd90f61f9f4aa96ea1d921d2179660be554
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860300"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461216"
 ---
 # <a name="chaininterfacescancastto-method"></a>ChainInterfaces::CanCastTo Yöntemi
-Belirtilen arabirim kimliği her varsayılan olmayan şablon parametreleri tarafından tanımlanan özelleştirmeleri içerip içermeyeceğini gösterir.  
+Her varsayılan olmayan şablon parametreleri tarafından tanımlanan uzmanlıkları belirtilen arabirim kimliği içerip içermeyeceğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,14 +37,14 @@ __forceinline bool CanCastTo(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `riid`  
- Bir arabirim kimliği  
+ *riid*  
+ Bir arabirim kimliği.  
   
- `ppv`  
- Başarılı bir şekilde atama son arabirimi kimliği için bir işaretçi.  
+ *ppv*  
+ Atama başarıyla son arabirim kimliği için bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` tüm yayın operasyonlar başarılıysa; Aksi takdirde `false`.  
+ **doğru** tüm atama işlemlerinin başarılı olduysa; Aksi takdirde, **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

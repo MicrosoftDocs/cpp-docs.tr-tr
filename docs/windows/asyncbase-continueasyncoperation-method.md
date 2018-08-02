@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: caf7cd1cbee97761c6877ec6ab3a51ea956cbfd1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e7b5d2b10b571a3517beab98eaa839d5c7fd86c2
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859598"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460839"
 ---
 # <a name="asyncbasecontinueasyncoperation-method"></a>AsyncBase::ContinueAsyncOperation Yöntemi
-Zaman uyumsuz işlem işleme devam etmesi gerektiğini veya durdurmak belirler.  
+Zaman uyumsuz işlem işlemeye devam etmesi gerektiğinin veya durdurmak belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,7 +34,7 @@ inline bool ContinueAsyncOperation();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` zaman uyumsuz işlemi geçerli bir durumda olmadığını *başlatılan*, işlemi başka bir deyişle, devam etmelidir. Aksi takdirde, `false`, işlemi başka bir deyişle, durdurmak.  
+ **doğru** geçerli durumunu zaman uyumsuz işlemi ise *çalışmaya*, yani işlemi devam etmelidir. Aksi takdirde, **false**, yani işlemi durdurmak.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

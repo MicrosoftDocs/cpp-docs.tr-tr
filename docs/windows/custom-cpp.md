@@ -17,21 +17,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7b37d87d5380b9d4dac69cee702654285461ead6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7222d7021665a76c7e087033f5152d2836008caa
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871633"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460938"
 ---
 # <a name="custom-c"></a>özel (C++)
-Meta veri nesnesi için Tür Kitaplığı'nda tanımlar.  
+Bir nesne için meta verileri tür kitaplığındaki tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ custom(  
+[ custom(  
    uuid,   
    value  
 ) ];  
@@ -45,9 +44,9 @@ Meta veri nesnesi için Tür Kitaplığı'nda tanımlar.
  Bir değişken koyabilirsiniz bir değer.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Özel** C++ öznitelik türü kitaplığa yerleştirilecek bilgi neden olur. Tür kitaplığından özel değeri okuyan bir aracı gerekir.  
+ **Özel** C++ özniteliği tür kitaplığına yerleştirilecek bilgi neden olur. Tür kitaplığından özel değeri okuyan bir aracı gerekir.  
   
- **Özel** özniteliğine sahip ile aynı işlevselliği [özel](http://msdn.microsoft.com/library/windows/desktop/aa366766) MIDL özniteliği.  
+ **Özel** özniteliği ile aynı işlevlere sahip [özel](http://msdn.microsoft.com/library/windows/desktop/aa366766) MIDL özniteliği.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -55,9 +54,9 @@ Meta veri nesnesi için Tür Kitaplığı'nda tanımlar.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Olmayan COM `interface`, **sınıfı**, `enum`s, `idl_module` yöntemleri, arabirim üyeleri, arabirim parametrelerini `typedef`s, **UNION**s, `struct`s|  
-|**Yinelenebilir**|Evet|  
-|**Gerekli öznitelikler**|**coclass'ı** (sınıf üzerinde kullanıldığında)|  
+|**İçin geçerlidir**|COM olmayan **arabirimi**, **sınıfı**, **enum**s, `idl_module` yöntemleri, arabirim üyeleri, arabirim parametrelerini **typedef**s, **birleşim**s, **yapı**s|  
+|**Tekrarlanabilir**|Evet|  
+|**Gerekli öznitelikleri**|**coclass'ı** (sınıfı kullanıldığında)|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

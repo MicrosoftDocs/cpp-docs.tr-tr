@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 980aaa5bf0b9472e8fb1c6d7f6b3c56aa255d00b
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 4ff0716359c715431f9887f50be06e592d57787e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948020"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463918"
 ---
 # <a name="using-arrays-c"></a>Dizileri Kullanma (C++)
 Dizi indisi işlecini kullanarak bir dizinin tek tek öğelerine erişebilirsiniz (`[ ]`). Alt indisi olmayan bir ifadede tek boyutlu bir dizi kullanılıyorsa, dizi adı dizideki ilk öğe işaretçisi için değerlendirir.  
@@ -57,5 +57,5 @@ int main() {
   
  Önceki kodda, `multi` üç boyutlu bir dizi türü **çift**. `p2multi` İşaretçinin, bir dizi türüne işaret **çift** boyut olarak üç olan. Bu örnekte, dizi bir, iki ve üç alt simgeyle birlikte kullanılır. Tüm alt simgeler olarak belirtmek için daha yaygın olsa `cout` deyiminde olduğu bazen belirli bir alt dizi öğeleri kümesini seçmek adına kullanışlı olabilir izleyen gösterildiği `cout`.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Diziler](../cpp/arrays-cpp.md)

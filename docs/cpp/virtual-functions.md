@@ -16,20 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d1fc04a09e48ac50f6f27d4ffd3e01dbd3dac8a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 54444200b9a38c427a8192d1c16e6835712ff1f6
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467523"
 ---
 # <a name="virtual-functions"></a>Sanal İşlevler
-Sanal işlevi türetilmiş sınıflarda yeniden beklediğiniz bir üye işlevdir. Bir işaretçi veya temel sınıf başvurusu kullanarak bir türetilmiş sınıf nesnesi başvurduğunuzda, bu nesne için sanal bir işlevi çağırmak ve işlevi türetilen sınıfın sürümünü çalıştırın.  
+Bir sanal işlev türetilmiş sınıflarda tanımlanmasını beklediğiniz bir üye işlevidir. Bir türetilmiş sınıf nesnesine bir işaretçi veya başvuru temel sınıfına kullanarak başvurduğunuzda, bu nesne için bir sanal işlev çağrısı ve işlevin türetilmiş sınıfın sürümünü yürütün.  
   
- Sanal işlevler doğru işlev bağımsız olarak işlev çağrısı yapmak için kullanılan ifade bir nesne için çağrıldığından emin olun.  
+ Sanal işlevler işlev çağrısını yapmak için kullanılan ifade bağımsız olarak bir nesne için doğru işlevi çağrılır emin olun.  
   
- Bir temel sınıf olarak bildirilen bir işlev içerdiğini varsayalım [sanal](../cpp/virtual-cpp.md) ve aynı işlevi türetilmiş bir sınıf tanımlar. Bir işaretçi veya başvuru için temel sınıfı kullanılarak çağrılır olsa bile işlevi türetilmiş sınıfından türetilen sınıfın nesneleri için çağrılır. Aşağıdaki örnek uygulaması sağlayan bir temel sınıfı gösterir `PrintBalance` işlevi ve iki türetilmiş sınıflar  
+ Bir temel sınıf olarak bildirilen bir işlevi içerdiğini varsayın [sanal](../cpp/virtual-cpp.md) ve aynı işlevi türetilmiş bir sınıf tanımlar. Bir işaretçi veya başvuru temel sınıfına kullanarak çağrılırsa bile işlevi türetilmiş sınıftan türetilen sınıfın nesneleri için çağrılır. Aşağıdaki örnek uygulaması sağlayan bir temel sınıf gösterir `PrintBalance` işlevi ve iki türetilmiş sınıflar  
   
-```  
+```cpp 
 // deriv_VirtualFunctions.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -71,21 +72,21 @@ int main() {
 }  
 ```  
   
- Önceki kodda, çağrıları `PrintBalance` nesne dışında aynı `pAccount` işaret eder. Çünkü `PrintBalance` sanal, her nesne adında için tanımlanan işlevi sürümü. `PrintBalance` İşlevi türetilmiş sınıflarda `CheckingAccount` ve `SavingsAccount` "temel sınıfı işlevinde geçersiz kılma" `Account`.  
+ Önceki kodda, çağrıları `PrintBalance` nesnesinin aynı `pAccount` işaret eder. Çünkü `PrintBalance` sanal, her nesne adı için tanımlanan işlev sürümü. `PrintBalance` İşlevi türetilmiş sınıflarda `CheckingAccount` ve `SavingsAccount` "taban sınıf işlevinde geçersiz kılmayı" `Account`.  
   
- Bir sınıf geçersiz kılma uygulaması sağlamaz bildirilmiş `PrintBalance` işlevi, temel sınıf varsayılan uygulamasından `Account` kullanılır.  
+ Geçersiz kılma uygulaması sağlamaz bir sınıf olarak tanımlanıp tanımlanmadığını `PrintBalance` işlevi, varsayılan uygulama temel sınıftan `Account` kullanılır.  
   
- Yalnızca kendi türünün aynı olduğu durumlarda işlevleri türetilmiş sınıflarda temel sınıflar içinde sanal işlevleri geçersiz kılar. Türetilmiş bir sınıf işlevinde sanal işlevi dönüş türünün yalnızca temel bir sınıfında farklı olamaz; bağımsız değişken listesi de farklı olmalıdır.  
+ Yalnızca kendi türünün aynı olduğu durumlarda işlevleri türetilmiş sınıflarda temel sınıflardaki sanal işlevleri geçersiz kılar. Türetilen bir sınıfta bir işlev bir sanal işlev dönüş türü yalnızca temel sınıfındaki farklı olamaz; bağımsız değişken listesi de farklı olmalıdır.  
   
- Bir işlev işaretçileri veya başvuruları kullanarak çağrılırken, aşağıdaki kurallar geçerlidir:  
+ İşaretçiler veya başvurular kullanarak bir işlev çağrılırken, aşağıdaki kurallar geçerlidir:  
   
--   Bir sanal işlev çağrısı için çağırıldığı nesnenin temel alınan türü göre çözümlenir.  
+-   Bir sanal işlev çağrısı için çağırıldığı nesnenin temel türüne göre çözümlenir.  
   
--   Sanal olmayan bir işlev çağrısı işaretçi veya başvuru türüne göre çözümlenir.  
+-   Sanal olmayan bir işlev çağrısı, işaretçi veya başvuru türüne göre çözümlenir.  
   
- Aşağıdaki örnekte nasıl sanal ve sanal olmayan işlevler işaretçileri çağrıldığında davranır:  
+ Aşağıdaki örnekte nasıl sanal ve sanal olmayan işlevleri işaretçileri çağrıldığında davranır:  
   
-```  
+```cpp 
 // deriv_VirtualFunctions2.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -140,24 +141,24 @@ int main() {
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output  
 Derived::NameOf  
 Invoked by Base  
 Derived::NameOf  
 Invoked by Derived  
 ```  
   
- Olup olmamasına bakılmaksızın unutmayın `NameOf` işlev işaretçisi aracılığıyla çağrıldığında `Base` veya gösteren bir işaretçi `Derived`, işlevi için çağırır `Derived`. İşlevi için çağırır `Derived` çünkü `NameOf` bir sanal işleve ve her ikisi de `pBase` ve `pDerived` türünde bir nesneye işaret `Derived`.  
+ Olup olmamasına bakılmaksızın unutmayın `NameOf` işaretçi üzerinden işlevin çağrıldığı `Base` veya işaretçi `Derived`, işlevi için çağrı `Derived`. İşlevi için çağrı `Derived` çünkü `NameOf` sanal bir işlev ve her ikisi de `pBase` ve `pDerived` türündeki bir nesneye işaret `Derived`.  
   
- Sanal işlevler yalnızca sınıf türleri nesneler için adlandırılır çünkü olarak genel veya statik işlevler bildiremezsiniz **sanal**.  
+ Sanal işlevler yalnızca sınıf türü nesneler için çağrılmadığından, genel veya statik işlevler olarak bildiremezsiniz **sanal**.  
   
- **Sanal** anahtar sözcüğü, türetilen bir sınıfta geçersiz kılma bildirme işlevleri zaman kullanılabilir, ancak gerekli değildir; sanal işlevleri geçersiz kılma sanal her zaman.  
+ **Sanal** anahtar sözcüğü kullanılabilir olduğunda, türetilen bir sınıfta geçersiz kılma bildirme çalışır ancak gerekli değildir; sanal işlevleri geçersiz kılmalarına sanal her zaman.  
   
- Bir taban sınıf içinde sanal işlevleri kullanılarak bildirilir sürece tanımlanmalıdır *belirticisi saf*. (Saf sanal işlevler hakkında daha fazla bilgi için bkz: [soyut sınıflar](../cpp/abstract-classes-cpp.md).)  
+ Bir temel sınıf sanal işlevler kullanılarak bildirilirler sürece tanımlanmalıdır *saf tanımlayıcı*. (Saf sanal işlevler hakkında daha fazla bilgi için bkz: [soyut sınıflar](../cpp/abstract-classes-cpp.md).)  
   
- Kapsam çözümü işleci kullanılarak işlev adı açıkça niteleme tarafından sanal işlev çağrısı mekanizması gizlenebilir (`::`). Önceki örneği ilgili göz önünde bulundurun `Account` sınıfı. Çağrılacak `PrintBalance` taban sınıf içinde aşağıdaki gibi kod kullanın:  
+ Sanal işlev çağrısı mekanizması, kapsam çözümleme işleci kullanarak işlevi adı açıkça uygun tarafından gizlenebilir (`::`). Önceki örnekte ilgili göz önünde bulundurun `Account` sınıfı. Çağrılacak `PrintBalance` taban sınıfında, aşağıdaki gibi bir kod kullanın:  
   
-```  
+```cpp 
 CheckingAccount *pChecking = new CheckingAccount( 100.00 );  
   
 pChecking->Account::PrintBalance();  //  Explicit qualification.  
@@ -167,5 +168,4 @@ Account *pAccount = pChecking;  // Call Account::PrintBalance
 pAccount->Account::PrintBalance();   //  Explicit qualification.  
 ```  
   
- Her iki çağrıları `PrintBalance` önceki örnekte sanal işlev çağrısı mekanizması gösterme.  
-  
+ Her iki çağrıları `PrintBalance` önceki örnekte, sanal işlev çağrısı mekanizması gösterme.  

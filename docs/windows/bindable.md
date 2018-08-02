@@ -17,39 +17,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a1cf16bfbeee2231133e60429a4a25e9d4fe85c8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1a216aa5fb5be727e82313c30aa2aa72d887cb4c
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861811"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467150"
 ---
 # <a name="bindable"></a>bağlanabilir
-Özellik veri bağlama desteklediğini belirtir.  
+Özelliğin veri bağlamayı desteklediğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [bindable]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Bağlanabilirse** C++ özniteliğine sahip ile aynı işlevselliği [bağlanabilirse](http://msdn.microsoft.com/library/windows/desktop/aa366738) MIDL özniteliği. Özellikleri ile tanımlanmış kullanmak [propget](../windows/propget.md), [propput](../windows/propput.md), veya [propputref](../windows/propputref.md) öznitelikleri, veya el ile tanımlayabilirsiniz bağlanabilirse yöntemi.  
+ **Bağlanabilir** C++ özniteliği ile aynı işlevlere sahip [bağlanabilir](http://msdn.microsoft.com/library/windows/desktop/aa366738) MIDL özniteliği. Özellikleri ile tanımlanmış kullanabilirsiniz [propget](../windows/propget.md), [propput](../windows/propput.md), veya [propputref](../windows/propputref.md) öznitelikleri veya el ile tanımlayabilir bağlanabilir bir yöntem.  
   
- Aşağıdaki MFC örnekleri kullanımını göster **bağlanabilirse**:  
+ Aşağıdaki MFC örnekleri kullanımı Göster **bağlanabilir**:  
   
--   [Denetimleri örnekleri: MFC tabanlı ActiveX denetimleri](http://msdn.microsoft.com/en-us/a44adf86-0ba0-4504-bedb-512b6cba2e63)  
+-   [Denetim örnekleri: MFC tabanlı ActiveX denetimleri](http://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)  
   
--   [DAİ örnek: ActiveX denetimi](http://msdn.microsoft.com/en-us/9ba34d04-280e-49f4-90ae-41a6be44c95b)  
+-   [DAİ örnek: ActiveX denetimi](http://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)  
   
--   [TESTHELP örnek: Araç ipuçları ve Yardım ActiveX denetimi](http://msdn.microsoft.com/en-us/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)  
+-   [TESTHELP örneği: Araç ipuçları ve Yardım ActiveX denetimi](http://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod nasıl kullanabileceğinizi gösterir **bağlanabilirse** bir özelliğe:  
+ Aşağıdaki kod nasıl kullanabileceğinizi gösterir **bağlanabilir** özellikte:  
   
-```  
+```cpp  
 // cpp_attr_ref_bindable.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -76,9 +74,9 @@ __interface IPropDemo : IDispatch {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

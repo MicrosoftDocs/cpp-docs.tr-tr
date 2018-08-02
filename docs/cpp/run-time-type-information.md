@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14eafc1ebb50faaffb4c0a95e0cc929c89fb7c0b
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 77584e5fdd731c499629149a9163dbacb5eafb5e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37938921"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467332"
 ---
 # <a name="run-time-type-information"></a>Çalışma Zamanı Türü Bilgileri
 Çalışma zamanı tür bilgisini (RTTI) program yürütme sırasında belirlenmesi için bir nesne türünü izin veren mekanizmadır. Sınıf kitaplıklarının birçok satıcı bu işlevselliği kendilerini uygulama çünkü RTTI C++ dil eklendi. Bu kitaplıklar arasında uyumsuzluk nedeniyle. Bu nedenle, belirgin hale için dil düzeyinde gerekli bir çalışma zamanı türü bilgileri destekler.  
@@ -44,5 +44,5 @@ ms.locfileid: "37938921"
   
      Tarafından döndürülen tür bilgileri tutmak için kullanılan **TypeID** işleci.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Atama](../cpp/casting.md)

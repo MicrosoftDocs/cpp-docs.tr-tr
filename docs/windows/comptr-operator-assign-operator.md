@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f4066db37de8a993802970784f09141352fef028
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fac3a845ea7c512f5a7ccffdabdf67ce26029ff8
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871207"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466169"
 ---
 # <a name="comptroperator-operator"></a>ComPtr::operator= İşleci
-Bir değer için geçerli ComPtr atar.  
+Geçerli bir değer atar **ComPtr**.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -57,29 +57,29 @@ WRL_NOTHROW ComPtr& operator=(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `U`  
+ *U*  
  Bir sınıf.  
   
- `other`  
- Bir tür ya da başka bir ComPtr işaretçi, başvuru ya da rvalue başvuru.  
+ *Diğer*  
+ Bir işaretçi, başvuru veya bir tür veya başka bir rvalue başvurusunu **ComPtr**.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli ComPtr referansı.  
+ Geçerli bir başvuru **ComPtr**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işleç ilk sürümü boş bir değer için geçerli ComPtr atar.  
+ Bu işleç ilk sürümü geçerli boş bir değer atar **ComPtr**.  
   
- Atama arabirim işaretçisi geçerli ComPtr arabirim işaretçisi ile aynı değilse ikinci bir sürümde geçerli ComPtr ikinci arabirim işaretçisi atanır.  
+ Atama arabirim işaretçisini geçerli aynı değilse, İkinci Sürüm **ComPtr** arabirim işaretçisini, ikinci arabirim işaretçisi için geçerli atandığı **ComPtr**.  
   
- Üçüncü sürümünde atama arabirim işaretçisi geçerli ComPtr atanır.  
+ Üçüncü sürümünde geçerli atama arabirim işaretçisi atanır **ComPtr**.  
   
- Arabirim işaretçisi atama değerinin geçerli ComPtr arabirim işaretçisi ile aynı değilse, dördüncü sürümünde geçerli ComPtr ikinci arabirim işaretçisi atanır.  
+ Dördüncü sürümünde arabirim işaretçisi atama değerin geçerli aynı değilse **ComPtr** arabirim işaretçisini, ikinci arabirim işaretçisi için geçerli atandığı **ComPtr**.  
   
- Beşinci sürüm kopyalama işlecidir; bir ComPtr başvuru geçerli ComPtr atanır.  
+ Bir kopya işleci beşinci sürümüdür; bir başvuru bir **ComPtr** geçerli atanan **ComPtr**.  
   
- Kullanan bir kopya işleci taşıma semantiği altıncı sürümüdür; herhangi bir tür cast geçerli ComPtr atanan statik ise ComPtr bir rvalue başvuru.  
+ Taşıma semantiği kullanan bir kopya işlecine altıncı sürümüdür; rvalue başvurusuna bir **ComPtr** herhangi bir tür cast ve ardından geçerli atanan statikse **ComPtr**.  
   
- Kullanan bir kopya işleci taşıma semantiği yedinci sürümüdür; rvalue başvuru türünde bir ComPtr için `U` statik sonra cast ve geçerli ComPtr atanmış.  
+ Taşıma semantiği kullanan bir kopya işlecine yedinci sürümüdür; rvalue başvurusuna bir **ComPtr** türü *U* olan statik as ardından ve geçerli atanan **ComPtr**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b4ee99d82212d0d6cdd610b4565bd9292a0265dc
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e1b9d238d4f5475475e5dc367aae196937630a0e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883958"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465428"
 ---
 # <a name="criticalsectiontrylock-method"></a>CriticalSection::TryLock Yöntemi
-Önemli bir bölümü engellenmeden girmek çalışır. Çağrı başarılı olursa, çağıran iş parçacığı kritik bölümünün aittir.  
+Engelleme olmadan kritik bir bölüm girin dener. Çağrı başarılı olursa, çağıran iş parçacığı, kritik bölüm sahipliğini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,14 +38,14 @@ static SyncLock TryLock(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `cs`  
+ *cs*  
  Bir kullanıcı tarafından belirtilen kritik bölüm nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Kritik bölüm başarıyla girdiyseniz sıfır olmayan bir değer veya geçerli iş parçacığı zaten kritik bölüm sahip olur. Başka bir iş parçacığı zaten kritik bölüm sahipse sıfır.  
+ Kritik bölüm başarıyla girdiyseniz sıfır olmayan bir değer veya geçerli iş parçacığı, kritik bölüm zaten sahip. Başka bir iş parçacığı kritik bölüm sahipse sıfır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk **TryLock** işlevi geçerli kritik bölüm nesne etkiler. İkinci **TryLock** işlevi, kullanıcı tarafından belirtilen kritik bölüm etkiler.  
+ İlk **TryLock** işlevi, geçerli kritik bölüm nesnesini etkiler. İkinci **TryLock** işlevi kullanıcı tanımlı bir kritik bölüm etkiler.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

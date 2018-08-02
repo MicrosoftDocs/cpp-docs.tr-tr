@@ -12,18 +12,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c5217b1860affd05f433c6a3bf944afeb6c13f9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 97447189419bad8d3ad6f2026a7ee5f701ebca04
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422130"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466962"
 ---
 # <a name="template-friends"></a>Şablon Arkadaşları
 
 Sınıf şablonları olabilir [arkadaş](friend-cpp.md). Bir sınıf veya sınıf şablonu, işlev ya da işlev şablonu şablon sınıfının arkadaşı olabilir. Arkadaşlar, sınıf şablonunun veya işlev şablonunun da uzmanlıkları olabilir, ancak kısmi uzmanlıklar olamaz.  
   
-**C++ 11**: formu kullanarak, bir tür parametresi bir arkadaş olarak bildirilebilir `friend T;`.  
+**C++ 11**: bir tür parametresi formu kullanarak bir arkadaş bildirilebilir `friend T;`.  
   
 ```cpp
 template <typename T>  
@@ -260,6 +260,5 @@ A
 a  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
-
-[Varsayılan Bağımsız Değişkenler](../cpp/default-arguments.md)
+## <a name="see-also"></a>Ayrıca bkz.  
+ [Varsayılan Bağımsız Değişkenler](../cpp/default-arguments.md)

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8af021120c06465d0fd79ead79e2a18cb593803
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 4c6194addc8ae950cf5cdcb8b7946ab4f5f6c042
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027615"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460716"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 
@@ -138,6 +138,5 @@ Block-scoped i has the value: 5
 Global-scoped i has the value: 7
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
+## <a name="see-also"></a>Ayrıca bkz.
  [Temel Kavramlar](../cpp/basic-concepts-cpp.md)

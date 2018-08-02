@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bec66d25be2cb56c75f42f60af2ccd5e3f759ad
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: e773a0188eb3450ab1a13a24fc556fa8e8c4f874
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948218"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464275"
 ---
 # <a name="transfers-of-control"></a>Denetim Taşıma
 Kullanabilirsiniz **goto** deyimi veya bir **çalışması** etiketi bir **geçiş** deyimini bir başlatıcı dallar bir program belirtin. Başlatıcı içeren bildirimi blok tarafından alınmış bir blok içinde olmadığı sürece bu tür kod geçersiz atlama deyimi oluştuğu içinde.  
@@ -60,4 +60,3 @@ int main()
  Önceki örnekte **goto** deyimi son başlatma denetimi aktarım dener `i`. Ancak, varsa `i` bildirildi ancak başlatılmadı, aktarımı geçerli olacaktır.  
   
  Nesneleri `total` ve `ch`görevi gören bir blok içinde bildirilen *deyimi* , **sırada** deyimini kullanarak o blok çıkıldı zaman yok  **Kesme** deyimi.  
-  

@@ -15,13 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 200fdb93e7baf8ff229b0445b7ad7a8ceab90d19
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 01b569bd4a752eed66f2af138a7136032b092f51
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421266"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464976"
 ---
 # <a name="virtual-specifier"></a>virtual Tanımlayıcısı
-[Sanal](../cpp/virtual-cpp.md) anahtar sözcüğü yalnızca statik olmayan sınıf üyesi işlevleri için uygulanabilir. Çağrıların işleve bağlanmasının, çalışma zamanına kadar ertelendiğini belirtir. Daha fazla bilgi için bkz: [sanal işlevler](../cpp/virtual-functions.md).  
-  
+[Sanal](../cpp/virtual-cpp.md) anahtar sözcüğü, yalnızca statik olmayan sınıf üyesi işlevlerine uygulanabilir. Çağrıların işleve bağlanmasının, çalışma zamanına kadar ertelendiğini belirtir. Daha fazla bilgi için [sanal işlevler](../cpp/virtual-functions.md).  

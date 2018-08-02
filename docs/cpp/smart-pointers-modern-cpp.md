@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a604ee36bf7d410f9e176278cc98a934874fbac
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1d78b37971cda2ca1bcf468a794abf69555efc3e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939890"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462257"
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı İşaretçiler (Modern C++)
 Modern C++ programlamada standart kitaplık içeren *akıllı işaretçileri*, hangi programları sağlamak için kullanılan bellek ve kaynak sızıntıları ve özel durum açısından güvenli olmalarını.  
@@ -117,7 +117,7 @@ Modern C++ programlamada standart kitaplık içeren *akıllı işaretçileri*, h
  [CAutoPtrList Sınıfı](../atl/reference/cautoptrlist-class.md)  
  Listesini yönlendirmeye yönelik yöntemleri kapsülleyen sınıftır `CAutoPtr` düğümleri.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)   

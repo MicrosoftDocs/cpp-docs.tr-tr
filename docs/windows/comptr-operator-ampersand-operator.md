@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0bfe8cf9091d888c33420f53f584ca5509d80527
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0afff1699a4c7a3a14f07967cfb5ba5727ba0320
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872412"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461568"
 ---
 # <a name="comptroperatoramp-operator"></a>ComPtr::operator&amp; işleci
-Bu ile ilişkili arabiriminin serbest `ComPtr` nesne ve adresini alır `ComPtr` nesnesi.  
+Şununla ilişkili arabirimini yayımlar **ComPtr** nesne ve adresini alır. **ComPtr** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,10 +36,10 @@ const Details::ComPtrRef<const WeakRef> operator&() const
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli zayıf başvuru `ComPtr`.  
+ Geçerli zayıf bir başvuru **ComPtr**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem farklıdır [ComPtr::GetAddressOf](../windows/comptr-getaddressof-method.md) , bu yöntem arabirim işaretçisi başvuru serbest bırakır. Kullanım `ComPtr::GetAddressOf` kullandığınızda arabirim işaretçisi adresini gerektirir ancak bu arabirim serbest bırakmak istiyor musunuz.  
+ Bu yöntem farklıdır [ComPtr::GetAddressOf](../windows/comptr-getaddressof-method.md) , bu yöntem bir arabirim işaretçisi başvurusu serbest bırakır. Kullanım `ComPtr::GetAddressOf` kullandığınızda arabirim işaretçisi adresini gerektirir ancak bu arabirimi serbest bırakmak istiyor musunuz.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

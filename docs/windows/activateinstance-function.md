@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c0bf945dd8225ca3c153d7f497ded6b83ebd022d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 413bf73d5aeaef2c210be89f3c6f4ca3a4254ba4
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855581"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461977"
 ---
 # <a name="activateinstance-function"></a>ActivateInstance İşlevi
-Kaydeder ve bir belirtilen sınıf kimliği tanımlanan belirtilen bir türün bir örneğini alır.  
+Kaydeder ve belirtilen sınıf kimliğinde tanımlanan belirli bir türün bir örneğini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,17 +39,17 @@ inline HRESULT ActivateInstance(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Etkinleştirmek için bir tür.  
   
- `activatableClassId`  
- Parametre tanımlar sınıf kimliği adını `T`.  
+ *activatableClassId*  
+ Parametre tanımlayan sınıf kimliği adını *T*.  
   
- `instance`  
- Bu işlem tamamlandığında, bir örneği için bir başvuru `T`.  
+ *örneği*  
+ Bu işlem tamamlandığında, bir başvuru örneğine *T*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, hatanın nedenini gösterir HRESULT hata.  
+ Başarılıysa S_OK; Aksi takdirde, hatanın nedenini gösteren HRESULT hatası.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

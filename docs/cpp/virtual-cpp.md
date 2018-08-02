@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9eba5462caf739d78236e10df018fc07421ea876
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 84035f2007f3c45c33c1dfa342caf5c788580205
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939126"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460925"
 ---
 # <a name="virtual-c"></a>virtual (C++)
 **Sanal** anahtar sözcüğü, bir sanal işlev ya da sanal bir temel sınıf bildirir.  
@@ -55,5 +55,5 @@ virtual [access-specifier] base-class-name
   
  Aşağıdaki anahtar sözcükler Ayrıca bkz: [sınıfı](../cpp/class-cpp.md), [özel](../cpp/private-cpp.md), [genel](../cpp/public-cpp.md), ve [korumalı](../cpp/protected-cpp.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d4ab0694936fe4ad25b3c56bf286e9416e4e935
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: a5a8858d48a38d42dea7fba0fdce7c3a4d407a3a
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948141"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462192"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C++)
 Kod, tam sayı ifadesinin değerine bağlı olarak birden çok bölüm arasında seçim sağlar.  
@@ -164,7 +164,6 @@ int main(int argc, char *argv[])
   
  A **geçiş** deyimi iç içe geçirilemez. Bu gibi durumlarda **çalışması** veya **varsayılan** etiketlerle ilişkilendirmek en yakın **geçiş** bunları kapsayan deyimi.  
 
- 
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
  Microsoft C, durum değeri sayısını sınırlamaz bir **geçiş** deyimi. Sayı yalnızca kullanılabilir bellekle sınırlıdır. ANSI C gerektiren en az 257 durum etiketi içinde izin bir **geçiş** deyimi.  
   
@@ -172,7 +171,6 @@ int main(int argc, char *argv[])
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Seçim deyimleri](../cpp/selection-statements-cpp.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)   
- 

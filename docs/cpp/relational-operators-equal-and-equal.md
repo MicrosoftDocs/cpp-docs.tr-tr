@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56372764c70498aec4ccf7b23fc7d074d1df179e
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 393cb0b23ca67877a18d2148af76c8de59d29f30
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948113"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465564"
 ---
 # <a name="relational-operators-lt-gt-lt-and-gt"></a>İlişkisel işleçler: &lt;, &gt;, &lt;=, ve &gt;=
 ## <a name="syntax"></a>Sözdizimi  
@@ -81,25 +81,25 @@ int main() {
  Olağan aritmetik dönüştürmeler ele [standart dönüştürmeler](standard-conversions.md) aritmetik türlerin işlenenlerini için uygulanır.  
   
 ## <a name="comparing-pointers"></a>İşaretçileri Kıyaslama  
- Nesneleri aynı türde iki işaretçileri karşılaştırıldığında sonucu programın adres alanında işaret nesnelerin konumu tarafından belirlenir. İşaretçileri de karşılaştırılabilir 0 veya işaretçi türü void döndüren bir sabit ifadesine *. İşaretçi karşılaştırması türünde bir işaretçi karşı void yapılması durumunda \*, diğer işaretçiyi void türüne örtük olarak dönüştürülür \*. Ardından karşılaştırma yapılır.  
+ Nesneleri aynı türde iki işaretçileri karşılaştırıldığında sonucu programın adres alanında işaret nesnelerin konumu tarafından belirlenir. İşaretçileri de karşılaştırılabilir 0 veya türünde bir işaretçi döndüren bir sabit ifadesine `void *`. İşaretçi karşılaştırması karşı türünde bir işaretçi yapılması durumunda `void *`, diğer bir işaretçi türüne örtük olarak dönüştürülür `void *`. Ardından karşılaştırma yapılır.  
   
  Sürece farklı türden iki işaretçisi karşılaştırılamaz:  
   
 -   Bir tür diğer türden türetilmiş bir sınıf türüdür.  
   
--   En az bir işaretçi açıkça dönüştürülür (void türüne dönüştürme) *. (Diğer bir işaretçiyi void türüne örtük olarak dönüştürülür \* dönüştürme için.)  
+-   En az bir işaretçi açıkça dönüştürülür (tür dönüştürme) `void *`. (Diğer bir işaretçi türüne örtük olarak dönüştürülür `void *` dönüştürme için.)  
   
  Karşılaştırılacak aynı nesneye işaret eden iki işaretçi aynı türden eşit garanti edilir. İki nesnenin statik olmayan üye işaretçileri karşılaştırıldığında, aşağıdaki kurallar geçerlidir:  
   
--   Sınıf türü bir birleşim değil ise ve iki üyesi tarafından ayrılmış değil ise bir *erişim belirticisi*, korumalı veya private, public gibi bildirilen üye işaretçisinin son bildirilen üye işaretçisinin büyüktür karşılaştırır daha önce.  
+-   Sınıf türü değilse bir **birleşim**, ve iki üyesi tarafından ayrılmış değil ise bir *erişim belirticisi*, gibi **genel**, **korumalı**, veya **özel**, bildirilen üye işaretçisinin son değerinden daha önce bildirilen bir üye işaretçisinin karşılaştıracağız.  
   
 -   İki üyesi tarafından ayrılmış ise bir *erişim belirticisi*, sonuçlar tanımsızdır.  
   
--   Sınıf türü UNION varsa, bu birleşimde farklı veri üyeleri için işaretçiler eşit karşılaştırın.  
+-   Sınıf türü ise bir **birleşim**, farklı veri üyeleri için işaretçiler **birleşim** karşılaştırma eşittir.  
   
  İki dizinin aynı öğeleri ya da dizinin sonundan öğesi bir işaret ederseniz, daha yüksek alt simge olan nesneye işaretçi yüksek karşılaştırır. Yalnızca işaretçiler aynı dizisindeki nesnelere veya konuma bir dizinin bitişini geçen başvurduğunuzda işaretçileri karşılaştırma geçerli garanti edilir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
  [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C İlişkisel ve Eşitlik İşleçleri](../c-language/c-relational-and-equality-operators.md)

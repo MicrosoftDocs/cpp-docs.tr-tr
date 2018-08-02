@@ -1,5 +1,5 @@
 ---
-title: Özet (C++ bileşen uzantıları) | Microsoft Docs
+title: soyut (C++ bileşen uzantıları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,46 +18,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dcaef98df96b54025cd44a52a2e27a7bc5a83545
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ac043a76ab70c77bd8cdb3a2dd0c66498e409171
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857561"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463248"
 ---
 # <a name="abstract--c-component-extensions"></a>soyut (C++ Bileşen Uzantıları)
-`abstract` Anahtar sözcüğü ya da bildirir:  
+**Soyut** anahtar sözcüğü ya da bildirir:  
   
--   Bir tür bir taban türü kullanılabilir, ancak türü örneği oluşturulamıyor.  
+-   Bir tür temel tür olarak kullanılabilir, ancak tür örneği oluşturulamıyor.  
   
--   Tür üye işlevi yalnızca türetilmiş bir tür tanımlanabilir.  
+-   Tür üye işlevi, yalnızca türetilmiş bir tür içinde tanımlanabilir.  
   
 ## <a name="all-platforms"></a>Tüm Platformlar  
- **Sözdizimi**  
+ **Söz dizimi**  
   
 ```  
-  
       class-declaration  
       class-identifier  
       abstract {}  
 virtualreturn-typemember-function-identifier() abstract ;  
-  
 ```  
   
  **Açıklamalar**  
   
- İlk örnek sözdizimi soyut bir sınıf bildirir. *Sınıf bildirimi* bileşeni, bir ya da bir yerel C++ bildirimi olabilir (`class` veya `struct`), ya da C++ uzantısı bildirimi (`ref class` veya `ref struct`) varsa **/ZW** veya **/CLR** derleyici seçeneği belirtildi.  
+ İlk örnek söz dizimi bir sınıf, soyut olarak bildirir. *Sınıf-bildirimi* bileşeni, bir ya da bir yerel C++ bildirimi olabilir (**sınıfı** veya **yapı**), ya da bir C++ uzantı bildiriminde (**başvurusınıfı** veya **ref struct**) varsa `/ZW` veya `/clr` derleyici seçeneği belirtildi.  
   
- İkinci örnek sözdizimi soyut için sanal üye işlevi bildirir. Bir işlev soyuttur saf sanal işlevi bildirme aynı bildirme. Üye işlevi Özet de soyut belirtilecek kapsayan sınıfı neden bildirme.  
+ İkinci örnek söz dizimi, bir sanal üye işlevi soyut bildirir. Bir işlev soyut aynıdır saf sanal işlevi bildirmek bildirme. Bildirme bir üye işlev soyut da kapsayan sınıfa soyut bildirilmesine neden olur.  
   
- `abstract` Anahtar sözcüğü, yerel ve platforma özgü kodu desteklenir; diğer bir deyişle, onu ile veya olmadan derlenebilir **/ZW** veya **/CLR** derleyici seçeneği.  
+ **Soyut** anahtar sözcüğü, yerel ve platforma özgü kodu desteklenir; diğer bir deyişle, onu içeren veya içermeyen derlenebilir `/ZW` veya `/clr` derleyici seçeneği.  
   
- Bir tür ile soyut ise derleme zamanında algılayabilir `__is_abstract(type)` türü ayırdedici nitelik. Daha fazla bilgi için bkz: [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ Bir türü ile soyut ise derleme zamanında algılayabilir `__is_abstract(type)` türü niteliğine. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
- `abstract` Sözcüktür bağlama duyarlı geçersiz kılma tanımlayıcısı. Bağlama duyarlı anahtar sözcükler hakkında daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md). Geçersiz kılma tanımlayıcıları hakkında daha fazla bilgi için bkz: [nasıl yapılır: yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
+ **Soyut** anahtar sözcüğü, bir bağlama duyarlı geçersiz kılma tanımlayıcısı. Bağlama duyarlı anahtar sözcükler hakkında daha fazla bilgi için bkz. [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md). Geçersiz kılma tanımlayıcıları hakkında daha fazla bilgi için bkz. [nasıl yapılır: yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- Daha fazla bilgi için bkz: [Ref sınıflar ve yapılar](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
+ Daha fazla bilgi için [başvuru sınıfları ve yapıları](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği: **/ZW**  
@@ -70,9 +68,9 @@ virtualreturn-typemember-function-identifier() abstract ;
 ### <a name="examples"></a>Örnekler  
  **Örnek**  
   
- Aşağıdaki kod örneğinde bir hata oluşturur çünkü sınıf `X` işaretlenmiş `abstract`.  
+ Aşağıdaki kod örneği bir hata oluşturur çünkü sınıfı `X` işaretlenmiş `abstract`.  
   
-```  
+```cpp  
 // abstract_keyword.cpp  
 // compile with: /clr  
 ref class X abstract {  
@@ -87,9 +85,9 @@ int main() {
   
  **Örnek**  
   
- Aşağıdaki kod örneği, bir hata oluşturur, çünkü işaretlenmiş yerel bir sınıf başlatır `abstract`. Bu hata ile veya olmadan oluşacaktır **/CLR** derleyici seçeneği.  
+ Aşağıdaki kod örneği, bir hata oluşturur, çünkü işaretlenmiş bir yerel sınıf örneğini oluşturduğunda `abstract`. Bu hata ile veya olmadan oluşur `/clr` derleyici seçeneği.  
   
-```  
+```cpp  
 // abstract_keyword_2.cpp  
 class X abstract {  
 public:  
@@ -99,14 +97,13 @@ public:
 int main() {  
    X * MyX = new X; // C3622: 'X': a class declared as 'abstract'  
                     // cannot be instantiated. See declaration of 'X'}  
-  
 ```  
   
  **Örnek**  
   
- Aşağıdaki kod örneğinde bir hata oluşturur çünkü işlevi `f` bir tanımı içerir ancak işaretlenmiş `abstract`. Örnekte son deyim soyut bir sanal işlev bildirme saf sanal işlevi bildirmek için eşdeğer olduğunu gösterir.  
+ Aşağıdaki kod örneği bir hata oluşturur çünkü işlevi `f` bir tanım içerir, ancak işaretlenen `abstract`. Örnekteki son deyim, soyut bir sanal işlev bildirme saf sanal işlevi bildirmek için eşdeğer olduğunu gösterir.  
   
-```  
+```cpp  
 // abstract_keyword_3.cpp  
 // compile with: /clr  
 ref class X {  

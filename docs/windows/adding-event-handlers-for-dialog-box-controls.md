@@ -18,46 +18,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bb39e502ccc40531e72f761a414e4088de8b147d
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 589318286c48351e3eae6e3a83f42741a805ce68
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121128"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463762"
 ---
 # <a name="adding-event-handlers-for-dialog-box-controls"></a>İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme
 
-Olay işleyicileri oluştururken, sınıf ile ilişkili olan proje iletişim kutuları için bazı kısayollarından sürebilir. Varsayılan Denetim bildirim olayı veya herhangi bir geçerli Windows iletisi için bir işleyici kolayca oluşturabilirsiniz.
+Olay işleyicileri oluşturduğunuzda, bir sınıf ile ilişkili olan proje iletişim kutuları için bazı kısayollarından alabilir. Varsayılan Denetim bildirim olayı veya herhangi bir geçerli Windows ileti için bir işleyici hızlıca oluşturabilirsiniz.
 
-## <a name="to-create-a-handler-for-the-default-control-notification-event"></a>Varsayılan Denetim bildirim olayı için bir işleyici oluşturmak için
+## <a name="to-create-a-handler-for-the-default-control-notification-event"></a>Varsayılan Denetim bildirimi olay işleyicisi oluşturmak için
 
-1. Denetimi çift tıklatın. Metin Düzenleyicisi'ni açar.
+1. Denetimi çift tıklatın. Metin düzenleyicisi açılır.
 
-2. Denetim bildirimi işleyici kodu Metin Düzenleyicisi'nde ekleyin.
+2. Denetim bildirimi işleyicinizin kodunu Metin Düzenleyicisi'nde ekleyin.
 
-## <a name="to-create-a-handler-for-any-applicable-windows-message"></a>Geçerli Windows iletiler için bir işleyici oluşturmak için
+## <a name="to-create-a-handler-for-any-applicable-windows-message"></a>Herhangi bir geçerli Windows ileti işleyicisi oluşturmak için
 
-1. Bildirim olayını işlemek istediğiniz denetimi'ı tıklatın.
+1. Bildirim olayı işlemek kullanmak istediğiniz denetimi tıklayın.
 
-2. İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window), tıklatın **ControlEvents'i** denetimle ilişkili ortak Windows olayları listesini görüntülemek için düğmesi. Örneğin, standart **Tamam** düğmesini **hakkında** iletişim kutusu aşağıdaki bildirim olayları listeler:
+2. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), tıklayın **ControlEvents'i** denetimle ilişkili ortak Windows olayları listesini görüntülemek için düğme. Örneğin, standart **Tamam** düğmesini **hakkında** iletişim kutusunda, aşağıdaki bildirim olayları listeler:
 
-   - **BN_CLICKED**
+   - BN_CLICKED
 
-   - **BN_DOUBLECLICKED**
+   - BN_DOUBLECLICKED
 
-   - **BN_KILLFOCUS**
+   - BN_KILLFOCUS
 
-   - **BN_SETFOCUS**
-
-    > [!NOTE]
-    > Alternatif olarak, iletişim kutusunu işaretleyin ve ' **ControlEvents'i** tüm denetimler için yaygın Windows olaylar listesi iletişim kutusunda görüntülenecek düğmesi.
-
-3. İçinde **özellikleri** penceresinde, işlenecek olay yanındaki sağ sütun tıklayın ve ardından önerilen bildirim olay adı seçin (örneğin, **OnBnClickedOK** tanıtıcıları **BN_CLICKED** ).
+   - BN_SETFOCUS
 
     > [!NOTE]
-    > Alternatif olarak, varsayılan olay işleyicisi adı seçmek yerine tercih ettiğiniz bir olay işleyicisi adı sağlayabilir.
+    > Alternatif olarak, iletişim kutusunu seçip tıklayın **ControlEvents'i** tüm denetimler için ortak Windows olayları listesi iletişim kutusunda görüntülenecek düğmesi.
 
-   Olay seçtikten sonra Visual Studio Metin Düzenleyicisi'ni açar ve olay işleyicinin kodunu görüntüler. Örneğin, aşağıdaki kodu için varsayılan eklenir **OnBnClickedOK**:
+3. İçinde **özellikleri** penceresinde işlenecek olay yanındaki sağ sütuna tıklayın ve ardından önerilen bildirim olay adını seçin (örneğin, **OnBnClickedOK** tanıtıcıları **BN_CLICKED** ).
+
+    > [!NOTE]
+    > Alternatif olarak, varsayılan olay işleyicisi adı seçmek yerine kendi seçtiğiniz bir olay işleyicisi adı sağlayabilirsiniz.
+
+   Olayı seçtikten sonra Visual Studio metin düzenleyicisi açılır ve olay işleyicinin kodunu görüntüler. Örneğin, aşağıdaki kod için varsayılan eklenir **OnBnClickedOK**:
 
     ```cpp
     void CAboutDlg::OnBnClickedOk(void)
@@ -66,9 +66,9 @@ Olay işleyicileri oluştururken, sınıf ile ilişkili olan proje iletişim kut
     }
     ```
 
-Olay işleyicisi bir sınıfa dışındaki bir iletişim kutusu uygulama eklemek istiyorsanız kullanın [olay işleyici Sihirbazı](../ide/event-handler-wizard.md). Daha fazla bilgi için bkz: [olay işleyici ekleme](../ide/adding-an-event-handler-visual-cpp.md).
+Olay işleyicisi bir sınıfa dışındaki bir iletişim kutusu uygulama eklemek istiyorsanız kullanın [olay işleyici Sihirbazı](../ide/event-handler-wizard.md). Daha fazla bilgi için [olay işleyici ekleme](../ide/adding-an-event-handler-visual-cpp.md).
 
-Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -82,5 +82,5 @@ Win32
 [Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)  
 [Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)  
 [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)  
-[Sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)  
+[Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)  
 [MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)  

@@ -1,5 +1,5 @@
 ---
-title: C-Style - clr ile çevirir (C + +/ CLI) | Microsoft Docs
+title: -Clr ile C stili yayınlar (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 384aa6d1d7a4329f52157f1d002dcda2feb5cb8a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0ffb2e5a7276925c5f03d06a909803d001532f35
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860404"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464590"
 ---
 # <a name="c-style-casts-with-clr-ccli"></a>/clr ile C Türü Atamalar (C++/CLI)
-Aşağıdaki konu yalnızca ortak dil çalışma zamanı için geçerlidir.  
+Aşağıdaki konu, yalnızca ortak dil çalışma zamanı için geçerlidir.  
   
- CLR Türleri ile kullanıldığında, derleyicinin C tarzı aşağıdaki sırayla aşağıda listelenen atamaları birine dönüştürme eşlemeye çalışır:  
+ CLR Türleri ile kullanıldığında, derleyici C tarzı dönüştürme şu sırayla aşağıda listelenen yayınları birine eşlemeye çalışır:  
   
 1.  const_cast  
   
@@ -37,14 +37,14 @@ Aşağıdaki konu yalnızca ortak dil çalışma zamanı için geçerlidir.
   
 5.  static_cast artı const_cast  
   
- Yukarıda listelenen atamaları hiçbiri geçerli olup olmadığını ve ifade türü ve hedef türü CLR başvuru türleri ise, bir çalışma zamanı denetim için (castclass MSIL yönergesi) C stili cast eşler. Aksi halde, bir C tarzı cast geçersiz olarak kabul edilir ve derleyici bir hata verir.  
+ Yukarıda listelenen yayınları hiçbiri geçerli olup olmadığını ve ifade türü ve hedef türü CLR başvuru türleri ise, bir çalışma zamanı denetimi için (castclass MSIL yönergesi) C stili tür dönüştürme eşler. Aksi takdirde, C stili tür dönüştürme geçersiz olarak kabul edilir ve derleyici bir hata verir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir C tarzı cast önerilmez. İle derleme yapılırken [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md), kullanın [safe_cast](../windows/safe-cast-cpp-component-extensions.md).  
+ C stili tür dönüştürme önerilmez. İle derlerken [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md), kullanın [safe_cast](../windows/safe-cast-cpp-component-extensions.md).  
   
- Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir bir `const_cast`.  
+ Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **const_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_1.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -56,9 +56,9 @@ int main() {
 }  
 ```  
   
- Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir bir `safe_cast`.  
+ Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **safe_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_2.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -68,9 +68,9 @@ int main() {
 }  
 ```  
   
- Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir bir `safe_cast` artı `const_cast`.  
+ Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **safe_cast** yanı sıra **const_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_3.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -89,9 +89,9 @@ int main() {
 }  
 ```  
   
- Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir bir `static_cast`.  
+ Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **static_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_4.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -110,9 +110,9 @@ int main() {
 }  
 ```  
   
- Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir bir `static_cast` artı `const_cast`.  
+ Aşağıdaki örnek, bir C eşleyen tarzı dönüştürme gösterir. bir **static_cast** yanı sıra **const_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_5.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -131,9 +131,9 @@ int main() {
 }  
 ```  
   
- Aşağıdaki örnek, bir C çalışma zamanı denetlemek için eşleşen tarzı dönüştürme gösterir.  
+ Aşağıdaki örnek, bir C çalışma zamanı denetlemek için eşlenen tarzı dönüştürme gösterir.  
   
-```  
+```cpp  
 // cstyle_casts_6.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -154,7 +154,7 @@ int main() {
   
  Aşağıdaki örnek, bir geçersiz C, derleyici neden olan hata verecek tarzı dönüştürme gösterir.  
   
-```  
+```cpp  
 // cstyle_casts_7.cpp  
 // compile with: /clr  
 using namespace System;  

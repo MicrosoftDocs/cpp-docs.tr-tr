@@ -23,34 +23,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a17649402fa6ebe9c98d768badcf36e5700f5b75
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 21a1dd4f26db41f7e32f3f76fd3b4c82e513397a
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862728"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461695"
 ---
 # <a name="arrays-c-component-extensions"></a>Dizeler (C++ Bileşen Uzantıları)
-`Platform::Array<T>` Türü C + +/ CX, veya `array` anahtar sözcüğü C + +/ CLI, belirtilen tür ve ilk değer bir dizi bildirir.  
+`Platform::Array<T>` Türü C + +/ CX, veya **dizi** anahtar sözcüğü C + +/ CLI, belirtilen tür ve ilk değer dizisi bildirir.  
   
 ## <a name="all-platforms"></a>Tüm Platformlar  
- Dizi bildiriminde kapanış açılı ayraç (>) sonra tanıtıcı nesnesi (^) değiştiricisi kullanılarak bildirilmelidir.  
- Dizideki öğeler sayısı türünün bir parçası değil. Farklı boyutlarda diziler için bir dizi değişkeni başvurabilir.  
+ Bildirimde kapanış açılı ayraç (>) sonra bir tanıtıcı nesnesi (^) değiştirici kullanarak dizi bildirilmesi gerekir.  
+ Dizideki öğelerin sayısını türün bir parçası değil. Farklı boyutlarda bir dizi için bir dizi değişkeni başvurabilir.  
   
- Standart C++ aksine alt simge oluşturma işaretçi aritmetiği eşanlamlısı değil ve yer değiştirebilme değil.  
+ Standart C++, farklı alt simge oluşturma işaretçi aritmetik işlemlerine ilişkin bir eşanlam değil ve yer değiştirebilirlik değil.  
   
- Dizileri hakkında daha fazla bilgi için bkz:  
+ Diziler hakkında daha fazla bilgi için bkz:  
   
 -   [Nasıl yapılır: C++/CLI Üzerinde Dizi Kullanma](../dotnet/how-to-use-arrays-in-cpp-cli.md)  
     
 -   [Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- Diziler üyeleri olan `Platform` ad alanı. Diziler yalnızca tek boyutlu olabilir.  
+ Dizi üyeleri olan `Platform` ad alanı. Diziler, yalnızca bir boyutlu olabilir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
- İlk örnek sözdizimi kullanan `ref new` bir dizi ayırmak için toplam anahtar sözcüğü. İkinci örnek, yerel bir dizi bildirir.  
+ Sözdiziminin ilk örnekte **yeni başvuru** bir dizi ayırmak için toplam anahtar sözcüğü. İkinci örnek, yerel bir diziyi bildirir.  
   
 ```  
 [qualifiers] [Platform::]Array<[qualifiers] array-type [,rank]>^ identifier = 
@@ -61,32 +61,32 @@ ms.locfileid: "33862728"
 ```  
   
  *niteleyiciler* [isteğe bağlı]  
- Bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).  
+ Bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [geçici](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).  
   
- `array-type`  
- Dizi değişkeni türü. Geçerli türleridir Windows çalışma zamanı sınıfları ve temel türleri, ref sınıflar ve yapılar, değer sınıfları ve yapıları ve yerel işaretçileri (`type*`).  
+ *dizi türü*  
+ Dizi değişkeni türü. Geçerli türler, Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları ve yerel işaretçileri olan (`type*`).  
   
- `rank` [isteğe bağlı]  
- Dizi boyutları sayısı. 1 olmalıdır.  
+ *derece* [isteğe bağlı]  
+ Dizinin boyut sayısı. 1 olmalıdır.  
   
- `identifier`  
+ *tanımlayıcı*  
  Dizi değişkeni adı.  
   
- `initialization-type`  
- Dizi başlatma değerlerin türü. Genellikle, `array-type` ve `initialization-type` aynı türde olan. Türleri dönüştürme ise farklı olabilir ancak `initialization-type` için `array-type`— Örneğin, varsa `initialization-type` türetildiği `array-type`.  
+ *başlatma türü*  
+ Dizi başlatma değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdedir. Türleri dönüştürme ise farklı olabilir ancak *başlatma türü* için *dizi türü*— Örneğin, varsa *başlatma türü* türetilmiş*dizi türü*.  
   
- `initialization-list` [isteğe bağlı]  
- Dizideki öğeler başlatma süslü ayraç değerleri virgülle ayrılmış listesi. Örneğin, varsa `rank-size-list` olan `(3)`, tek boyutlu dizi 3 öğelerinin bildirir `initialization list` olabilir `{1,2,3}`.  
+ *başlatma listesi* [isteğe bağlı]  
+ Dizi öğelerine ön değer atamak süslü ayraçlar değerleri virgülle ayrılmış listesi. Örneğin, varsa *derece boyutlarının listesi* olan `(3)`, tek boyutlu bir dizi 3 öğe bildirir *başlatma listesi* olabilir `{1,2,3}`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
- Başvuruları sayılan bir diziyle türü olup olmadığını derleme zamanında algılayabilir `__is_ref_array(type)`. Daha fazla bilgi için bkz: [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ Başvuru sayılan bir dizi içeren bir tür olup olmadığını derleme zamanında algılayabilir `__is_ref_array(type)`. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği: **/ZW**  
   
 ### <a name="examples"></a>Örnekler  
- Aşağıdaki örnek, 100 öğesi içeren bir tek boyutlu dizi oluşturur.  
+ Aşağıdaki örnek, 100 öğeleri olan tek boyutlu dizi oluşturur.  
   
 ```cpp  
 // cwr_array.cpp  
@@ -104,7 +104,7 @@ int main() {
   
 ### <a name="syntax"></a>Sözdizimi  
   
- Sözdizimi ilk örneği kullanan `gcnew` anahtar sözcüğü bir dizi ayrılamadı. İkinci örnek, yerel bir dizi bildirir.  
+ Sözdiziminin ilk örnekte **gcnew** anahtar sözcüğü, bir dizi ayırmak için. İkinci örnek, yerel bir diziyi bildirir.  
   
 ```  
 [qualifiers] [cli::]array<[qualifiers] array-type [,rank]>^ identifier = 
@@ -115,47 +115,47 @@ int main() {
 ```  
   
  *niteleyiciler* [isteğe bağlı]  
- Bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).  
+ Bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [geçici](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).  
   
- `array-type`  
- Dizi değişkeni türü. Geçerli türleridir Windows çalışma zamanı sınıfları ve temel türleri, ref sınıflar ve yapılar, değer sınıflar ve yapılar, yerel işaretçileri (`type*`) ve yerel POD (düz eski verileri) türleri.  
+ *dizi türü*  
+ Dizi değişkeni türü. Geçerli türler Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları, yerel işaretçiler (`type*`) ve yerel POD (düz eski veriler) türleri.  
   
- `rank` [isteğe bağlı]  
- Dizi boyutları sayısı. Varsayılan değer 1'dir; en fazla 32'dir. Dizinin her boyut kendisini bir dizidir.  
+ *derece* [isteğe bağlı]  
+ Dizinin boyut sayısı. Varsayılan değer 1'dir; en fazla 32'dir. Dizinin her boyutunun kendisi bir dizidir.  
   
- `identifier`  
+ *tanımlayıcı*  
  Dizi değişkeni adı.  
   
- `initialization-type`  
- Dizi başlatma değerlerin türü. Genellikle, `array-type` ve `initialization-type` aynı türde olan. Türleri dönüştürme ise farklı olabilir ancak `initialization-type` için `array-type`— Örneğin, varsa `initialization-type` türetildiği `array-type`.  
+ *başlatma türü*  
+ Dizi başlatma değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdedir. Türleri dönüştürme ise farklı olabilir ancak *başlatma türü* için *dizi türü*— Örneğin, varsa *başlatma türü* türetilmiş*dizi türü*.  
   
- `rank-size-list`  
- Dizideki her boyut boyutunu virgülle ayrılmış listesi. Alternatif olarak, varsa `initialization-list` parametresi belirtilirse, derleyicinin her boyut boyutunu türetme ve `rank-size-list` atlanabilir. 
+ *derece boyutlarının listesi*  
+ Dizideki her boyutun boyutu virgülle ayrılmış listesi. Alternatif olarak, *başlatma listesi* parametresi belirtildiğinde, derleyici her boyutu çıkarabilir ve *derece boyutlarının listesi* atlanabilir. 
   
- `initialization-list` [isteğe bağlı]  
- Dizideki öğeler başlatma süslü ayraç değerleri virgülle ayrılmış listesi. Veya virgülle ayrılmış bir listesini iç içe geçmiş *başlatma listesi* çok boyutlu bir dizi öğeleri başlatma öğeleri.  
+ *başlatma listesi* [isteğe bağlı]  
+ Dizi öğelerine ön değer atamak süslü ayraçlar değerleri virgülle ayrılmış listesi. Veya virgülle ayrılmış bir listesini iç içe geçmiş *başlatma listesi* başlatmak çok boyutlu bir dizideki öğeler öğeleri.  
   
- Örneğin, varsa `rank-size-list` olan `(3)`, tek boyutlu dizi 3 öğelerinin bildirir `initialization list` olabilir `{1,2,3}`. Eğer `rank-size-list` olan `(3,2,4)`, ilk boyutu, 2 öğeleri ikinci ve üçüncü 4 öğelerinde 3 öğe üç boyutlu bir dizi bildirir `initialization-list` olabilir `{{1,2,3},{0,0},{-5,10,-21,99}}`.)  
+ Örneğin, varsa *derece boyutlarının listesi* olan `(3)`, tek boyutlu bir dizi 3 öğe bildirir *başlatma listesi* olabilir `{1,2,3}`. Varsa *derece boyutlarının listesi* olan `(3,2,4)`, ilk boyutu, 2 öğe ikinci ve üçüncü 4 öğelerinde 3 öğelerin üç boyutlu bir diziyi bildirir *başlatma listesi* olabilir `{{1,2,3},{0,0},{-5,10,-21,99}}`.)  
   
 ### <a name="remarks"></a>Açıklamalar  
   
  `array` içinde [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) ad alanı.  
   
- Standart C++ gibi bir dizi dizinlerini sıfır tabanlı ve bir dizi köşeli ayraç ([]) kullanarak alt indisli bir dizi. Standart C++, çok boyutlu bir dizi dizinlerini köşeli ayraç ([]) işleçleri her boyut için bir dizi yerine her boyut için dizinler listesinde belirtilir. Örneğin, *tanımlayıcısı*[*dizin1*, *dizin2*] yerine *tanımlayıcısı*[*dizin1*] [ *dizin2*].  
+ Standart C++ gibi bir dizi dizinleri sıfır tabanlıdır ve bir dizi köşeli ayraç ([]) kullanarak alt simgeli. Standart C++, çok boyutlu bir dizi dizinleri her boyut için köşeli ayraç ([]) işleçleri kümesini yerine her boyut için dizin listesinde belirtilir. Örneğin, *tanımlayıcı*[*index1*, *index2*] yerine *tanımlayıcı*[*index1*] [ *index2*].  
   
- Tüm yönetilen diziler devralınmalıdır `System::Array`. Herhangi bir yöntemi veya özelliği `System::Array` doğrudan dizi değişkeni uygulanabilir.  
+ Tüm yönetilen diziler devralınacak `System::Array`. Herhangi bir yöntemi veya özelliği `System::Array` dizi değişkenine doğrudan uygulanabilir.  
   
- Ne zaman, öğe türü bir dizi tahsis işaretçidir-yönetilen bir sınıfa 0 başlatılmış öğeleridir.  
+ Öğe türü bir dizi ayırmak zaman işaretçisidir-yönetilen bir sınıf için öğeleri 0 olarak başlatılır.  
   
- Bir değer türü değil, öğe türü bir dizi tahsis ne zaman `V`, varsayılan oluşturucusu `V` her bir dizi öğesine uygulanır. Daha fazla bilgi için bkz: [C++ yerel türlerinin .NET Framework eşdeğerleri (C + +/ CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md).  
+ Bir değer türü olduğunda, öğe türü bir dizi ayırmak `V`, için varsayılan oluşturucu `V` her dizi öğesine uygulanır. Daha fazla bilgi için [C++ yerel türlerinin .NET Framework eşdeğerleri (C + +/ CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md).  
   
- Derleme zamanında bir türü bir ortak dil çalışma zamanı (CLR) diziyle olup olmadığını algılayabilir `__is_ref_array(type)`. Daha fazla bilgi için bkz: [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ Derleme zamanında bir türde bir ortak dil çalışma zamanı (CLR) diziyle olup algılayabilir `__is_ref_array(type)`. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği:   **/CLR**  
   
 ### <a name="examples"></a>Örnekler  
- Aşağıdaki örnek, 100 öğesi içeren bir tek boyutlu dizi ve 3 öğelerindeki ilk boyut, 5 öğelerini ikinci ve üçüncü 6 öğelerini içeren üç boyutlu bir dizi oluşturur.  
+ Aşağıdaki örnek, 100 öğeleri olan tek boyutlu bir dizi ve ilk boyutunun 3 öğe, 5 öğeleri ikinci ve üçüncü 6 öğe içeren üç boyutlu bir dizi oluşturur.  
   
 ```cpp  
 // clr_array.cpp  

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: afa5976d26351ed3022c58fa8226b6038fa816c0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4d4a84131a6159c665e3947d7b642ab0592b2e36
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883599"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465444"
 ---
 # <a name="comptrdetach-method"></a>ComPtr::Detach Yöntemi
-Bu keser `ComPtr` temsil ettiği arabirimi nesnesinden.  
+Bu ayırır **ComPtr** temsil ettiği arabiriminden nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,7 +34,7 @@ T* Detach();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu tarafından gösterilen arayüzü için bir işaretçi `ComPtr` nesnesi.  
+ Bu sunulacağı arabirim işaretçisi **ComPtr** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

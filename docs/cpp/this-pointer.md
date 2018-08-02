@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d150d2419885c2f0273e376fd58750417ced6756
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: f63b2d129e0eb6e9986942e4286eb1728d4be797
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948106"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462225"
 ---
 # <a name="this-pointer"></a>this İşaretçisi
 **Bu** işaretçisine, yalnızca statik olmayan üye işlevlerinin içinden erişilebilir bir **sınıfı**, **yapı**, veya **birleşim** türü. Üye işlevinin çağrıldığı nesneye işaret eder. Statik üye işlevleri yoktur bir **bu** işaretçi.  
@@ -31,7 +31,6 @@ ms.locfileid: "37948106"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 this   
 this->member-identifier  
 ```  
@@ -199,6 +198,5 @@ int main()
 > [!NOTE]
 >  Olarak oluşturucular ve Yıkıcılar bildirilemez **const** veya **geçici**. Ancak, olabilirler çağrılabilirler **const** veya **geçici** nesneleri.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)   
- 

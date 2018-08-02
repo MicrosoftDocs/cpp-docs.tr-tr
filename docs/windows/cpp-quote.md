@@ -17,21 +17,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 38ecabcde55f49687abf7caff66fb2c316fab0fe
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3dc81eacdbadb971ab86f4cfde1353e89bbe1342
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871168"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463833"
 ---
 # <a name="cppquote"></a>cpp_quote
-Belirtilen dize tırnak karakteri olmadan oluşturulan .idl dosyasına yayar.  
+Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan .idl dosyasına yayar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ cpp_quote(  
+[ cpp_quote(  
    "statement"  
 ) ];  
 ```  
@@ -41,14 +40,14 @@ Belirtilen dize tırnak karakteri olmadan oluşturulan .idl dosyasına yayar.
  Bir C yönergesi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Cpp_quote** C++ özniteliktir .idl dosyasında önişlemci yönergesi put istediğinizde kullanışlıdır.  
+ **Cpp_quote** C++ öznitelik, bir .idl dosyasında bir önişlemci yönergesine koymak istiyorsanız kullanışlıdır.  
   
- Aynı zamanda **cpp_quote** ve MIDL derleme bir parçası olarak bir .h dosyası oluşturun. C++ IDL öznitelikleri kullanan, ancak bazı görev için bu dosyayı kullanamazsınız C++ üstbilgi dosyası varsa, örneğin, daha sonra kullanabilmek için bir MIDL oluşturulan .h dosyası oluşturmak üzere derleyebilirsiniz.  
+ Ayrıca **cpp_quote** ve MIDL derlemenin bir parçası bir .h dosyası oluşturun. C++ IDL öznitelikleri kullanır ancak bazı görev için bu dosyayı kullanamazsınız bir C++ üstbilgi dosyası varsa, örneğin, daha sonra kullanabilmek için bir MIDL tarafından oluşturulan .h dosyası oluşturmak için derleyebilirsiniz.  
   
- **Cpp_quote** özniteliğine sahip ile aynı işlevselliği [cpp_quote](http://msdn.microsoft.com/library/windows/desktop/aa366765) MIDL özniteliği.  
+ **Cpp_quote** özniteliği ile aynı işlevlere sahip [cpp_quote](http://msdn.microsoft.com/library/windows/desktop/aa366765) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [çift](../windows/dual.md) bir örnek için nasıl kullanılacağını kullanmak **cpp_quote**.  
+ Örneğin bakın [çift](../windows/dual.md) kullanma hakkında bir örnek için **cpp_quote**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -56,9 +55,9 @@ Belirtilen dize tırnak karakteri olmadan oluşturulan .idl dosyasına yayar.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Her yerden|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Her yerde|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

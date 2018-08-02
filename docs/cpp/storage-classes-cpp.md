@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f89651ba671bf66d7d27edb047db6d1b6b15ee06
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: e8f7939d42aa246c9b7d5924979357fb6301e726
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940930"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466591"
 ---
 # <a name="storage-classes-c"></a>Depolama sınıfları (C++)  
   
@@ -228,7 +228,7 @@ Hakkında dikkat edilecek noktalar `thread_local` tanımlayıcısı:
 
 -  Belirtmelisiniz `thread_local` bildirimi ve bir iş parçacığı yerel nesnesinin tanımı için bildirim ve tanım ortaya aynı dosya veya dosyaları ayırmak.
 
-Windows, şirket `thread_local` işlevsel olarak eşdeğerdir [gt;__declspec(thread)](../cpp/thread.md) dışında `__declspec(thread)` bir tür tanımı için uygulanabilir ve C kodu geçerli değil. Mümkün olduğunda kullanın `thread_local` C++ standardının bir parçası olduğundan ve bu nedenle daha taşınabilir.
+Windows, şirket `thread_local` işlevsel olarak eşdeğerdir [gt;__declspec(thread)](../cpp/thread.md) dışında **gt;__declspec(thread)** bir tür tanımı için uygulanabilir ve C kodu geçerli değil. Mümkün olduğunda kullanın `thread_local` C++ standardının bir parçası olduğundan ve bu nedenle daha taşınabilir.
 
 ##  <a name="register"></a>  Kaydolun
 
@@ -321,6 +321,5 @@ Program hakkında dikkat edilecek bazı noktalar vardır:
 
 - Son olarak, statik yerel değişkenler gibi `I3` program süresince değerlerini korur, ancak program sona erer gibi yok edilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
+## <a name="see-also"></a>Ayrıca bkz.
  [Bildirimler ve Tanımlar](../cpp/declarations-and-definitions-cpp.md)

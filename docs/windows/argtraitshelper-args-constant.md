@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ff6ef465206ce1fac50b63dad0bed60a9c57b700
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 09480168f842adbcbd9e1c50056a9d16278bccc4
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855061"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465837"
 ---
 # <a name="argtraitshelperargs-constant"></a>ArgTraitsHelper::args Sabiti
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,7 +34,7 @@ static const int args = Traits::args;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yardımcı [ArgTraitsHelper::args](../windows/argtraitshelper-args-constant.md) parametreleri sayısını temsilci arabirimi Invoke yöntemi üzerinde tutun.  
+ Yardımcı [ArgTraitsHelper::args](../windows/argtraitshelper-args-constant.md) parametreleri sayısını takip edin `Invoke` yöntemi temsilci arabirimi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

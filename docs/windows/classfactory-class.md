@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6294634652ffc6a53a577ccd75c348ed63c502e7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 97c07b5cf97578c49da9d4a72b5a232b559ec0ab
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858399"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463872"
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
-IClassFactory arabiriminin temel işlevlerini uygular.  
+Temel işlevselliğini uygular `IClassFactory` arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,19 +46,19 @@ class ClassFactory : public Details::RuntimeClass<
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `I0`  
- Sıfırıncı arabirimi.  
+ *I0*  
+ Sıfırıncı arabirim.  
   
- `I1`  
- İlk arabirimi.  
+ *I1*  
+ İlk arabirim.  
   
- `I2`  
+ *I2*  
  İkinci arabirim.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanan `ClassFactory` kullanıcı tanımlı Üreteç uygulaması sağlamak için.  
+ Yazılımınız `ClassFactory` Fabrika kullanıcı tanımlı bir uygulama sağlamak için.  
   
- Aşağıdaki programlama düzeni nasıl kullanılacağı gösterilmektedir [uygulayan](../windows/implements-structure.md) yapısı bir üreteci üçten fazla arabirimleri belirtin.  
+ Aşağıdaki programlama deseni nasıl kullanılacağını gösteren [uygular](../windows/implements-structure.md) yapısı üzerinde bir sınıf üreteci üçten fazla arabirimleri belirtin.  
   
  `struct MyFactory : ClassFactory<Implements<I1, I2, I3>, I4, I5>`  
   
@@ -74,10 +74,10 @@ class ClassFactory : public Details::RuntimeClass<
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ClassFactory::AddRef Metodu](../windows/classfactory-addref-method.md)|Geçerli ClassFactory nesne başvurusu sayısını artırır.|  
-|[ClassFactory::LockServer Metodu](../windows/classfactory-lockserver-method.md)|Arka plandaki sayısı geçerli ClassFactory nesne tarafından izlenen nesneleri artırır veya azaltır.|  
-|[ClassFactory::QueryInterface Metodu](../windows/classfactory-queryinterface-method.md)|Parametresi tarafından belirtilen arabirimi için bir işaretçi alır.|  
-|[ClassFactory::Release Metodu](../windows/classfactory-release-method.md)|Başvuru sayısı için geçerli ClassFactory nesnesi azaltır.|  
+|[ClassFactory::AddRef Metodu](../windows/classfactory-addref-method.md)|Geçerli ClassFactory nesneye başvuru sayısını artırır.|  
+|[ClassFactory::LockServer Metodu](../windows/classfactory-lockserver-method.md)|Temel alınan sayısı geçerli ClassFactory nesne tarafından izlenen nesneleri artırır veya azaltır.|  
+|[ClassFactory::QueryInterface Metodu](../windows/classfactory-queryinterface-method.md)|Parametresi tarafından belirtilen arabirim işaretçisi alır.|  
+|[ClassFactory::Release Metodu](../windows/classfactory-release-method.md)|Geçerli ClassFactory nesne için başvuru sayısını azaltır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `I0`  

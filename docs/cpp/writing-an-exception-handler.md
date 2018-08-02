@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01d16d95cc246ad7ef0fe9f03c20e2652fe81aad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bb06c23e17f16bdf33fe469327351105d6a4571c
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421828"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461055"
 ---
 # <a name="writing-an-exception-handler"></a>Özel Durum İşleyicisi Yazma
 Özel durum işleyicileri genellikle belirli hatalar için yanıt vermede kullanılır. Ne yapılacağını bildiğiniz durumlar dışında, tüm özel durumları filtrelemek için exception-handling sözdizimini kullanabilirsiniz. Diğer özel durumlar, söz konusu özel durumları aramak yazılmış diğer işleyicilere (büyük olasılıkla çalışma zamanı kitaplığı veya işletim sistemindeki) aktarılmalıdır.  
@@ -39,5 +39,5 @@ ms.locfileid: "32421828"
   
 -   [Özel durum işleyicileri kısıtlamaları](../cpp/restrictions-on-exception-handlers.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

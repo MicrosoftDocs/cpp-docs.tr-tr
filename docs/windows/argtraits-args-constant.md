@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f87b29634d5b9acef2e2ccb3f7b4d5f227433d38
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b6f0059d167b04c9a4b177d1851ad88133ef5cd3
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855779"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466562"
 ---
 # <a name="argtraitsargs-constant"></a>ArgTraits::args Sabiti
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,10 +34,10 @@ static const int args = -1; ;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Invoke yöntemi bir temsilci arabirimin parametrelerin sayısı sayısı tutar.  
+ Parametre sayısını tutar `Invoke` yöntemi temsilci arabirimi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Zaman `args` eşittir -1 gösterir Invoke yöntemi imza eşleşme olabilir.  
+ Zaman `args` eşittir -1 eşleşme olabilir gösterir `Invoke` metodu imzası.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

@@ -19,18 +19,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f268dd12ca0eca55cbc91bffe5daccbc23ef4dbe
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 148e42a79ef7c20b7b35c3ec570212574782c1f6
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940156"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462098"
 ---
 # <a name="thread"></a>thread
 
 **Microsoft'a özgü**
 
-**İş parçacığı** genişletilmiş depolama sınıfı değiştiricisi, bir iş parçacığı yerel değişkenini bildirmek için kullanılır. Kullanmak için taşınabilir C ++ 11'de eşdeğer ve üzeri, [thread_local](../cpp/storage-classes-cpp.md#thread_local) taşınabilir kod için depolama sınıfı tanımlayıcısı. Windows üzerinde `thread_local` ile uygulanan `__declspec(thread)`.
+**İş parçacığı** genişletilmiş depolama sınıfı değiştiricisi, bir iş parçacığı yerel değişkenini bildirmek için kullanılır. Kullanmak için taşınabilir C ++ 11'de eşdeğer ve üzeri, [thread_local](../cpp/storage-classes-cpp.md#thread_local) taşınabilir kod için depolama sınıfı tanımlayıcısı. Windows üzerinde `thread_local` ile uygulanan **gt;__declspec(thread)**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -96,7 +96,6 @@ Ayrıca, iş parçacığı yerel nesneleri ve değişkenleri bildirirken bu yön
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
-
-[__declspec](../cpp/declspec.md)  
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)  
-[İş Parçacığında Yerel Depolama (TLS)](../parallel/thread-local-storage-tls.md)  
+ [__declspec](../cpp/declspec.md)  
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
+ [İş Parçacığında Yerel Depolama (TLS)](../parallel/thread-local-storage-tls.md)  

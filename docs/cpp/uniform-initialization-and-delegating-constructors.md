@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92174ceefa350b739567ac3e67c2ca023afb6008
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 26b4cbfb798e47b1add5b1d46c2ea1adb538898b
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939838"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465974"
 ---
 # <a name="uniform-initialization-and-delegating-constructors"></a>Tek Düzen Başlatma ve Oluşturucuları Temsilci Olarak Görevlendirme
 Modern C++'ta kullanabileceğiniz *başlatma ayracı* eşittir işareti olmadan herhangi bir tür için. Ayrıca, temsilci oluşturucuları benzer işi gerçekleştiren birden çok oluşturucuları varsa, kodu basitleştirmek için kullanabilirsiniz.  
@@ -50,7 +50,6 @@ int main()
     class_a c3{ "yy", 4.4 };  
     class_a c3_1("zz", 5.5);  
 }  
-  
 ```  
   
  Bir sınıf varsayılan olmayan bir oluşturucu hangi sınıf üyeleri, küme ayracı başlatıcısında görüntülenme sırasını ise karşılık gelen parametreleri oluşturucuda görüntülenme sırasını, üyeleri bildirilen sırasını değil (olduğu gibi `class_a` içinde Önceki örnek). Bildirilen hiçbir oluşturucu türü varsa, aksi takdirde, üyeleri küme ayracı başlatıcısında görünme sırasını içinde bildirildikleri sırasıyla aynıdır; Bu durumda, istediğiniz, ancak herhangi bir üyenin atlayamazsınız birçok ortak üyeleri başlatabilirsiniz. Bildirilen hiçbir oluşturucu olduğunda aşağıdaki örnek küme ayracı başlatmada kullanılan sırayı gösterir:  
@@ -97,7 +96,6 @@ int main()
 class_d* cf = new class_d{4.5};  
 kr->add_d({ 4.5 });  
 return { 4.5 };  
-  
 ```  
   
 ## <a name="initializerlist-constructors"></a>initializer_list oluşturucular  
@@ -117,7 +115,6 @@ initializer_list<int> ilist1{ 5, 6, 7 };
 initializer_list<int> ilist2( ilist1 );  
 if (ilist1.begin() == ilist2.begin())  
     cout << "yes" << endl; // expect "yes"  
-  
 ```  
   
  Standart kitaplık kapsayıcı sınıfları ve ayrıca `string`, `wstring`, ve `regex`, sahip `initializer_list` oluşturucular. Aşağıdaki örnekler, bu oluşturuculara sahip başlatma ayracı gösterilmektedir:  
@@ -178,7 +175,6 @@ int main() {
   
     class_c c1{ 1, 3, 2 };  
 }  
-  
 ```  
   
  Önceki örnekte ilerleyerek dikkat Oluşturucu `class_c(int, int, int)` ilk oluşturucuyu çağırır `class_c(int, int)`, sırayla çağıran `class_c(int)`. Her Oluşturucular, yalnızca diğer oluşturucular tarafından gerçekleştirilmeyen çalışma gerçekleştirir.  
@@ -201,7 +197,6 @@ public:
     double m_double{ 1.0 };  
     string m_string;  
 };  
-  
 ```  
   
  Sonraki örnek, statik olmayan veri üyesi başlatıcıları kullanımını gösterir. Bir oluşturucu Ayrıca belirli veri üyesini başlatır, üye Başlatıcısı geçersiz kılınmasını dikkat edin:  

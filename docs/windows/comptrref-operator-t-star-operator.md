@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 25569c1c8f9e5ab733c50c7be0768f64ec51f8b1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f03dfeb75d11ffabe7ab9e29c29474b392dc8bda
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881929"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466806"
 ---
 # <a name="comptrrefoperator-t-operator"></a>ComPtrRef::operator T* İşleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,7 +34,7 @@ operator T*();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Değerini döndürür [ptr_](../windows/comptrrefbase-ptr-data-member.md) geçerli ComPtrRef nesnesinin veri üyesi.  
+ Değerini döndürür [ptr_](../windows/comptrrefbase-ptr-data-member.md) geçerli veri üyesi **ComPtrRef** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

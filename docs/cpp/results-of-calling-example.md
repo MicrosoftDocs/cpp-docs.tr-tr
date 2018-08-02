@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e7b022925e22f021a2ddad1b3b9ef52924b25a3
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 9c49457aecb93b16ffb294f88e4f6643826492e2
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939113"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465704"
 ---
 # <a name="results-of-calling-example"></a>Çağırma Örneği Sonuçları
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -32,7 +32,7 @@ ms.locfileid: "37939113"
  "_MyFunc." C düzenlenmiş işlev adıdır  
   
  ![Çağırma kuralı CDECL](../cpp/media/vc37i01.gif "vc37I01")  
-__Cdecl çağırma kuralı  
+**__Cdecl** çağırma kuralı  
   
 ## <a name="stdcall-and-thiscall"></a>__stdcall ve thiscall  
  C ile düzenlenmiş adı (**__stdcall**) olan "_MyFunc@20." C++ ile düzenlenmiş adın özel.  
@@ -48,5 +48,5 @@ __Fastcall çağırma kuralı
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Çağırma Örneği: İşlev Prototipi ve Çağrı](../cpp/calling-example-function-prototype-and-call.md)

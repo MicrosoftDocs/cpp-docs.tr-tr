@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ab97dad8f14d72a6e8e441c9889a0e18870a0b4a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 631f27dc7124cfce655f6a254548335ca8f1039f
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884013"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465415"
 ---
 # <a name="comptrrefreleaseandgetaddressof-method"></a>ComPtrRef::ReleaseAndGetAddressOf Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,10 +34,10 @@ InterfaceType** ReleaseAndGetAddressOf();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Silinen ComPtrRef nesnesiyle temsil arabirimi işaretçisi.  
+ Sunulacağı arabirim işaretçisi tarafından silinen **ComPtrRef** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli ComPtrRef nesneyi siler ve ComPtrRef nesnesiyle temsil arabirimine bir işaretçi bir-işaretçiye döndürür.  
+ Geçerli siler **ComPtrRef** nesnesi ve bir işaretçi-için-a-işaretçi tarafından temsil arabirimi döndürür **ComPtrRef** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

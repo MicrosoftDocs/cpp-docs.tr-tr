@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3efc793e5030fa86c3bd1214ef4b8b408361a4ef
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 77748cd69a3424bb4b2e209a0a447d39eae25147
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408616"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466910"
 ---
 # <a name="deprecated-c"></a>deprecated (C++)
 Bu konu hakkında Microsoft'a özgü olan declspec bildirimi kullanım dışı. C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman ve Microsoft'a özgü declspec veya pragması, bu öznitelik kullanılacağı hakkında yönergeler [C++ Standart öznitelikleri](attributes.md).
 
- Aşağıda belirtilen durumlarla **kullanım dışı** bildirimi aynı işlevleri sunar [kullanım dışı](../preprocessor/deprecated-c-cpp.md) pragma:  
+Aşağıda belirtilen durumlarla **kullanım dışı** bildirimi aynı işlevleri sunar [kullanım dışı](../preprocessor/deprecated-c-cpp.md) pragma:  
   
 -   **Kullanım dışı** bildirimi belirtmenize olanak tanır işlev aşırı yüklemelerinin belirli tür olarak kullanım dışı pragma formun tüm aşırı yüklenmiş bir işlev adı formları için geçerlidir ancak.  
   

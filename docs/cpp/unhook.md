@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 069d206418fd392e28114d977b3448f8306a3119
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 020ae54cdaaddc2f05a8c3b6e285bc2fd0403ee8
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948213"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463720"
 ---
 # <a name="unhook"></a>__unhook
 Bir olay işleyicisi yöntemi dissociates.  
@@ -31,8 +31,7 @@ Bir olay işleyicisi yöntemi dissociates.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp 
-  
-      long  __unhook(  
+long  __unhook(  
    &SourceClass::EventMethod,  
    source,  
    &ReceiverClass::HandlerMethod  
@@ -61,11 +60,11 @@ long  __unhook(
  Gelen unhooked arabirim adı *alıcı*, yalnızca, COM Olay alıcıları için *layout_dependent* parametresinin [event_receiver](../windows/event-receiver.md) özniteliktir **true**.  
   
  *Kaynak*  
- Olay kaynağının bir örneği için bir işaretçi. Kod bağlı olarak `type` belirtilen **event_receiver**, *kaynak* aşağıdakilerden biri olabilir:  
+ Olay kaynağının bir örneği için bir işaretçi. Kod bağlı olarak `type` belirtilen `event_receiver`, *kaynak* aşağıdakilerden biri olabilir:  
   
 -   Yerel olay kaynak nesne işaretçisi.  
   
--   Bir **IUnknown**-işaretçi (COM kaynak) bağlı.  
+-   Bir `IUnknown`-işaretçi (COM kaynak) bağlı.  
   
 -   Bir yönetilen nesne işaretçisi (yönetilen olaylar).  
   
@@ -107,7 +106,7 @@ long  __unhook(
 ## <a name="example"></a>Örnek  
  Bkz: [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md) ve [com'da olay işleme](../cpp/event-handling-in-com.md) örnekleri için.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [event_source](../windows/event-source.md)   
  [event_receiver](../windows/event-receiver.md)   

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 696d632037f2a1fdc68e298b247e46720b81a343
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c9479180134e8a873e1d79f91deb3d29700d40a2
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855100"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467176"
 ---
 # <a name="chaininterfacescasttounknown-method"></a>ChainInterfaces::CastToUnknown Yöntemi
-Arabirim işaretçisi tarafından tanımlanan türdeki bıraktığı `I0` şablon parametresi IUnknown işaretçisi olarak.  
+Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi IUnknown işaretçisi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

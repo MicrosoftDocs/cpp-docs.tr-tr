@@ -17,20 +17,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ceea3242087d89b511f6309003efe38d155735d2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 75476fec3dcabda2990d3ca3f5dcf017688a176d
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871529"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466130"
 ---
 # <a name="context-sensitive-keywords--c-component-extensions"></a>Bağlama Duyarlı Anahtar Sözcükler (C++ Bileşen Uzantıları)
-*Bağlama duyarlı anahtar sözcükler* yalnızca belirli bağlamlarda tanınır dil öğeleridir. Belirli bağlamı dışında kullanıcı tanımlı bir simge bağlama duyarlı anahtar sözcüğü olabilir.  
+*Bağlama duyarlı anahtar sözcükler* yalnızca belirli bağlamlarda tanınan dil öğeleridir. Belirli bağlamı dışında bağlama duyarlı anahtar sözcük kullanıcı tanımlı bir sembol olabilir.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
  **Açıklamalar**  
   
- Bağlama duyarlı anahtar sözcükler listesi aşağıdadır:  
+ Bağlama duyarlı anahtar sözcüklerin listesi aşağıdadır:  
   
 -   [abstract](../windows/abstract-cpp-component-extensions.md)  
   
@@ -46,7 +46,7 @@ ms.locfileid: "33871529"
   
 -   `internal`   
   
--   [Değişmez değer](../windows/literal-cpp-component-extensions.md)  
+-   [değişmez değer](../windows/literal-cpp-component-extensions.md)  
   
 -   [override](../windows/override-cpp-component-extensions.md)  
   
@@ -56,12 +56,12 @@ ms.locfileid: "33871529"
   
 -   `where` (parçası [genel türler](../windows/generics-cpp-component-extensions.md))  
   
- Okunabilirlik için kullanıcı tanımlı simgeler olarak bağlama duyarlı anahtar sözcükler kullanımınız sınırlamak isteyebilirsiniz.  
+ Okunabilirlik için içeriğe duyarlı anahtar sözcükler kullanıcı tanımlı simgeler olarak kullanımını sınırlamak isteyebilirsiniz.  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
  **Açıklamalar**  
   
- (Bu özellik için hiçbir platforma özgü açıklamalar vardır.)  
+ (Bu özelliğin platforma özel açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği: **/ZW**  
@@ -69,7 +69,7 @@ ms.locfileid: "33871529"
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
  **Açıklamalar**  
   
- (Bu özellik için hiçbir platforma özgü açıklamalar vardır.)  
+ (Bu özelliğin platforma özel açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği:   **/CLR**  
@@ -77,9 +77,9 @@ ms.locfileid: "33871529"
 ### <a name="examples"></a>Örnekler  
  **Örnek**  
   
- Aşağıdaki kod örneği, uygun bağlamda gösterir `property` bağlama duyarlı anahtar sözcük, bir özellik ve bir değişkeni tanımlamak için kullanılabilir.  
+ Aşağıdaki kod örneği uygun içerikte gösteren **özelliği** bağlama duyarlı anahtar sözcüğü, bir özellik ve bir değişkeni tanımlamak için kullanılabilir.  
   
-```  
+```cpp  
 // context_sensitive_keywords.cpp  
 // compile with: /clr  
 public ref class C {  

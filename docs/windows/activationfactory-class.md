@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6775e9466ed337a070b6a234a4d65bb949a009e4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 18ce213d6c4bedd0bcaa2be1af33281ae69f6ad1
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857961"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461511"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory Sınıfı
-Windows çalışma zamanı tarafından etkinleştirilecek bir veya daha fazla sınıfları sağlar.  
+Windows çalışma zamanı tarafından etkinleştirilmesi bir veya daha fazla sınıflar sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,23 +39,23 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `I0`  
- Sıfırıncı arabirimi.  
+ *I0*  
+ Sıfırıncı arabirim.  
   
- `I1`  
- İlk arabirimi.  
+ *I1*  
+ İlk arabirim.  
   
- `I2`  
+ *I2*  
  İkinci arabirim.  
   
 ## <a name="remarks"></a>Açıklamalar  
- ActivationFactory kayıt yöntemleri ve IActivationFactory arabirimi için temel işlevleri sağlar. ActivationFactory özel Üreteç uygulaması vermenizi sağlar.  
+ **ActivationFactory** kayıt yöntemleri ve için temel işlevleri sağlayan `IActivationFactory` arabirimi. **ActivationFactory** ayrıca özel Üreteç uygulaması girmenize olanak tanır.  
   
- Aşağıdaki kod parçası, sembolik olarak nasıl ActivationFactory kullanılacağı gösterilmektedir.  
+ Aşağıdaki kod parçası bildirmelerine ActivationFactory kullanılması gösterilmektedir.  
   
  [!code-cpp[wrl-microsoft__wrl__activationfactory#1](../windows/codesnippet/CPP/activationfactory-class_1.cpp)]  
   
- Aşağıdaki kod parçası nasıl kullanılacağını gösterir [uygulayan](../windows/implements-structure.md) yapısı üçten fazla arabirim kimlikleri belirtin.  
+ Aşağıdaki kod parçası nasıl kullanılacağını gösterir [uygular](../windows/implements-structure.md) yapısı üçten fazla arabirim kimliklerini belirtin.  
   
  `struct MyFactory : ActivationFactory<Implements<I1, I2, I3>, I4, I5>;`  
   
@@ -65,18 +65,18 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ActivationFactory::ActivationFactory Oluşturucusu](../windows/activationfactory-activationfactory-constructor.md)|ActivationFactory sınıfı başlatır.|  
+|[ActivationFactory::ActivationFactory Oluşturucusu](../windows/activationfactory-activationfactory-constructor.md)|Başlatır **ActivationFactory** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ActivationFactory::AddRef Metodu](../windows/activationfactory-addref-method.md)|Geçerli ActivationFactory nesne başvurusu sayısını artırır.|  
+|[ActivationFactory::AddRef Metodu](../windows/activationfactory-addref-method.md)|Geçerli başvuru sayısını artırır **ActivationFactory** nesne.|  
 |[ActivationFactory::GetIids Metodu](../windows/activationfactory-getiids-method.md)|Uygulanan arabirimi kimlikleri dizisini alır.|  
-|[ActivationFactory::GetRuntimeClassName Metodu](../windows/activationfactory-getruntimeclassname-method.md)|Geçerli ActivationFactory başlatır nesne çalışma zamanı sınıf adını alır.|  
-|[ActivationFactory::GetTrustLevel Metodu](../windows/activationfactory-gettrustlevel-method.md)|Geçerli ActivationFactory başlatır nesne güven düzeyini alır.|  
-|[ActivationFactory::QueryInterface Metodu](../windows/activationfactory-queryinterface-method.md)|Belirtilen arabirim için bir işaretçi alır.|  
-|[ActivationFactory::Release Metodu](../windows/activationfactory-release-method.md)|Başvurusu geçerli ActivationFactory nesne sayısını azaltır.|  
+|[ActivationFactory::GetRuntimeClassName Metodu](../windows/activationfactory-getruntimeclassname-method.md)|Nesnenin çalışma zamanı sınıf adını alır Geçerli **ActivationFactory** başlatır.|  
+|[ActivationFactory::GetTrustLevel Metodu](../windows/activationfactory-gettrustlevel-method.md)|Geçerli ActivationFactory başlatan nesne güven düzeyini alır.|  
+|[ActivationFactory::QueryInterface Metodu](../windows/activationfactory-queryinterface-method.md)|Belirtilen arabirim işaretçisi alır.|  
+|[ActivationFactory::Release Metodu](../windows/activationfactory-release-method.md)|Başvuru sayma geçerli azaltır **ActivationFactory** nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `I0`  

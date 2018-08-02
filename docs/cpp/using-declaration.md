@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c40a69e9c8d584d91a1b6401ec0da57368641975
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: e3c2cfb8088ec8b160abeeeda6400f9f109c1722
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941531"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462329"
 ---
 # <a name="using-declaration"></a>using Bildirimi
 Using bildirimi tanıtır bir ad bildirim temelli bölgede içine using bildirimi görünür.  
@@ -330,6 +330,6 @@ public:
 };  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Ad alanları](../cpp/namespaces-cpp.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

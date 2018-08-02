@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4800f8d6e4c361cf44918bc790c0d8edb7591f08
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 785a89b1a5a174fc5ce453a6d2f87a18c508edf6
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854047"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462355"
 ---
 # <a name="activationfactoryaddref-method"></a>ActivationFactory::AddRef Yöntemi
-Geçerli ActivationFactory nesne başvurusu sayısını artırır.  
+Geçerli başvuru sayısını artırır **ActivationFactory** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,7 +37,7 @@ STDMETHOD_(
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata açıklar.  
+ Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

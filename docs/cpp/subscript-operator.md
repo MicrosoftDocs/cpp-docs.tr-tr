@@ -19,54 +19,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b116b55dd951e3be32c23a73614e7082c4102db4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fbdeac996320d885e4d6e131dcb735ac369b09f5
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467520"
 ---
 # <a name="subscript-operator"></a>Alt simge işleci:
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 postfix-expression [ expression ]  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Alt simge işleci tarafından izlenen (aynı zamanda birincil bir ifade olabilir) bir sonek ifadesi **[]**, dizi dizinini belirtir.  
+ Alt simge işleci (de birincil bir ifade olabilir) bir sonek ifadesi **[]**, dizi dizini oluşturma belirtir.  
   
- Yönetilen diziler hakkında daha fazla bilgi için bkz: [diziler](../windows/arrays-cpp-component-extensions.md).  
+ Yönetilen diziler hakkında daha fazla bilgi için bkz. [diziler](../windows/arrays-cpp-component-extensions.md).  
   
- Genellikle, tarafından temsil edilen değer *sonek ifade* bir dizi tanımlayıcı gibi bir işaretçi değeri ve *ifade* (numaralandırılmış türler dahil) bir tamsayı değeri. Ancak, tüm sözdizimsel olarak olduğundan bu ifadelerden biri işaretçi türü ve diğer tamsayı türünde olması gereklidir. Bu nedenle tam sayı değeri olabilir. *sonek ifade* konumu ve işaretçi değeri parantez içinde olabilir *ifade* veya alt simge konumu. Aşağıdaki kod parçası göz önünde bulundurun:  
+ Genellikle, tarafından temsil edilen değeri *sonek ifadesi* bir işaretçi değeri, bir dizi tanımlayıcısına gibi ve *ifade* (numaralandırılmış türler dahil) bir tamsayı değeri. Ancak, tüm sözdizimsel olarak olan bir ifadenin bir işaretçi türünde olması ve diğeri Tamsayı türünde olması gereklidir. Tamsayı değeri bu nedenle olabilir *sonek ifadesi* konumu ve işaretçi değeri parantez içinde olabilir *ifade* veya alt simge konumu. Aşağıdaki kod parçasını göz önünde bulundurun:  
   
-```  
+```cpp 
 int nArray[5] = { 0, 1, 2, 3, 4 };  
 cout << nArray[2] << endl;            // prints "2"  
 cout << 2[nArray] << endl;            // prints "2"  
 ```  
   
- Önceki örnekte, ifade `nArray[2]` aynıdır `2[nArray]`. Bunun nedeni, bir alt simge ifadesi sonucudur *e1 *** [** *e2* **]** tarafından verilir:  
+ Yukarıdaki örnekte, ifade `nArray[2]` aynıdır `2[nArray]`. Neden olan bir alt simge ifadesi sonucu *e1 *** [** *e2* **]** tarafından verilen:  
   
  **\*((** *e2* **)** *+* **(***e1***))**  
   
- İfadeyle verdiğini adresi değil *e2* adresinden bayt *e1*. Bunun yerine, adres dizisindeki sonraki nesnesini verecek şekilde ölçeklendirilir *e2*. Örneğin:  
+ İfade tarafından üretilenleri kaydeder adresi değil *e2* bayt adresinden *e1*. Bunun yerine, adresi dizideki sonraki nesnesini verecek şekilde ölçeklendirilir *e2*. Örneğin:  
   
-```  
+```cpp 
 double aDbl[2];  
 ```  
   
- Adreslerini `aDb[0]` ve `aDb[1]` 8 bayt parçası olan — türünde bir nesne boyutunu **çift**. Bu nesne türüne göre ölçeklendirme C++ dili tarafından otomatik olarak yapılır ve içinde tanımlanan [ADDITIVE işleçleri](../cpp/additive-operators-plus-and.md) burada toplama ve çıkarma işaretçi türü işlenenleri olarak ele alınmıştır.  
+ Adresleri `aDb[0]` ve `aDb[1]` 8 bayt uzaklıkta olduğu — türünde bir nesnenin boyutunu **çift**. Bu nesne türüne göre ölçeklendirme, C++ dil tarafından otomatik olarak yapılır ve tanımlanan [toplama işleçleri](../cpp/additive-operators-plus-and.md) burada toplama ve çıkarma işlenenden işaretçi türünün ele alınmıştır.  
   
  Bir alt simge ifadesinde de aşağıdaki gibi birden fazla alt simge olabilir:  
   
- *İfade1* **[***İfade2***] [***deyim3***]**...  
+ *İfade1* **[***expression2***] [***ifade3***]**...  
   
- Alt simge ifadeleri soldan sağa ilişkilendirilir. Soldaki alt simge ifadesi * İfade1 ***[*** İfade2 ***]**, ilk olarak değerlendirilir. Eklemelerini sonuçları adresi *İfade1* ve *İfade2* bir işaretçi ifadesi; formları sonra *deyim3* yeni bir form için bu işaretçi ifadesi eklenir son alt simge ifadesi bir vb. eklenene kadar işaretçi ifade. İndirection işleci (**\***) son alt ifade değerlendirildikten sonra bir dizi türü son işaretçi değeri adresleri sürece uygulanır.  
+ Alt simge ifadeleri soldan sağa ilişkilendirilir. En soldaki alt simge ifadesi * expression1 ***[*** expression2 ***]**, ilk olarak değerlendirilir. Eklemesini sonuçları adresi *İfade1* ve *expression2* bir işaretçi ifadesi; forms ardından *ifade3* yeni bir form için bu işaretçi ifadesine eklenir vb. son alt simge ifadesi eklenene dek işaretçi ifadesi. Yöneltme işleci (**\***) son işaretçi değeri bir dizi türü adresleri sürece son simgeli ifade değerinden sonra uygulanır.  
   
- Birden çok alt simgeler ifadelerle çok boyutlu diziler öğelerine bakın. Çok boyutlu bir dizi, öğeleri dizi olan bir dizidir. Örneğin, üç boyutlu bir dizinin ilk öğesi iki boyutlu bir dizidir. Aşağıdaki örnek bildirir ve basit iki boyutlu bir dizi karakter başlatır:  
+ Birden çok alt simgeye sahip ifadeler, çok boyutlu dizilerin öğelerine bakın. Çok boyutlu bir dizi, öğeleri dizi olan bir dizidir. Örneğin, üç boyutlu bir dizinin ilk öğesi iki boyutlu bir dizidir. Aşağıdaki örnek, bildirir ve karakter basit bir iki boyutlu dizi başlatır:  
   
-```  
+```cpp 
 // expre_Subscript_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -84,9 +84,9 @@ int main() {
 ```  
   
 ## <a name="positive-and-negative-subscripts"></a>Pozitif ve negatif alt simgeler  
- Bir dizinin ilk öğesi 0 öğesidir. C++ dizi aralık *dizi*[0] için *dizi*[*boyutu* - 1]. Ancak, C++ pozitif ve negatif alt simgeler destekler. Negatif alt simgeler dizi sınırları içinde olmalıdır; yapmazsanız, sonuçları öngörülemeyen sonuçlara yol açabilir. Aşağıdaki kod dizi pozitif ve negatif alt simgeler gösterir:  
+ Bir dizinin ilk öğesi 0 öğesidir. Bir C++ dizi aralık *dizi*[0] için *dizi*[*boyutu* - 1]. Bununla birlikte, C++, pozitif ve negatif alt simgeler destekler. Negatif alt simgeler dizi sınırları içinde olmalıdır; Aksi takdirde, sonuçlar tahmin edilemez. Aşağıdaki kod, dizi pozitif ve negatif alt simgeler gösterir:  
   
-```  
+```cpp 
 #include <iostream>  
 using namespace std;  
   
@@ -107,13 +107,13 @@ int main() {
 }  
 ```  
   
- Dizi kökeni daha bellekte bir adresi 256 baytı alt işaret ettiğinden negatif alt simge lasta satırında bir çalışma zamanı hatası üretebilir. İşaretçinin `midArray` ortasını için başlatılan `intArray`; bu nedenle hem pozitif ve negatif dizi dizinlerini üzerinde kullanılması mümkün değildir. Dizi alt simge hataları derleme zamanı hataları oluşturmaz, ancak bunlar öngörülemeyen sonuçlar.  
+ Dizinin başlangıç değerinden bellekte 256 bayt daha düşük bir adresi işaret ettiğinden negatif indis lasta satırında bir çalışma zamanı hatası üretebilir. İşaretçi `midArray` Orta kısmındaki başlatılır `intArray`; bu nedenle her iki pozitif ve negatif bir dizi dizinleri üzerinde kullanmak mümkün. Dizi alt simge hatalara derleme zamanı hatalarına neden olmaz, ancak bunlar tahmin edilmeyen sonuçlara neden.  
   
- Alt simge işleci yer değiştirebilme ' dir. Bu nedenle, ifadeleri *dizi*[*dizin*] ve *dizi*[*dizi*] alt simge sürece eşdeğer olması garanti İşleç aşırı (bkz [aşırı yüklenmiş işleçler](../cpp/operator-overloading.md)). İlk form en yaygın kodlama, ya da çalışır ancak uygulamadır.  
+ Alt simge işleci değiştirebilir. Bu nedenle, ifadeleri *dizi*[*dizin*] ve *dizi*[*dizi*] olduğu sürece bir alt simge eşdeğer olmasını garanti edilir İşleç aşırı yüklenmemiş (bkz [aşırı yüklenmiş işleçler](../cpp/operator-overloading.md)). En yaygın kodlama uygulaması ya da çalışır ancak ilk biçimidir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sonek ifadeleri](../cpp/postfix-expressions.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
+ [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Diziler](../cpp/arrays-cpp.md)   
- [Tek boyutlu diziler](../c-language/one-dimensional-arrays.md)   
+ [Bir boyutlu diziler](../c-language/one-dimensional-arrays.md)   
  [Çok Boyutlu Diziler](../c-language/multidimensional-arrays-c.md)

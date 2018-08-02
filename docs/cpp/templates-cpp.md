@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 673eadf3651d15f480ee2cff9ef3f7319dee4d84
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c5a9aa15839169de846439c73af1df92d7342358
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948136"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463934"
 ---
 # <a name="templates-c"></a>Şablonlar (C++)
 Genel C++ programlamada temelini şablonlardır. Kesin türü belirtilmiş bir dil C++ açıkça Programcı tarafından bildirilen veya derleyici tarafından atanan belirli bir türün tüm değişkenler gerektirir. Ancak, birçok veri yapısı ve algoritma üzerinde çalıştıkları ne tür ne olursa olsun aynı arayın. Şablonları etkin bir sınıfta veya işlevde işlemlerini tanımlayın ve hangi somut belirtmesine olanak tanır. Bu işlemlerin türleri üzerinde çalışması gerekir.  
@@ -38,7 +38,7 @@ T minimum(const T& lhs, const T& rhs)
 }  
 ```  
   
- Yukarıdaki kodu tek tür parametresi olan genel bir işlev için bir şablon tanımlayan `T`, dönüş değeri ve çağırma parametreleri (lhs ve sol) olan tüm bu tür. Bir tür parametresi, gibi ancak tek bir büyük harf kuralı tarafından en sık kullanılan adı verebilirsiniz. `T` bir şablon parametresi, **typename** anahtar sözcüğü, bu parametre için bir tür için bir yer tutucu olduğunu söyler. İşlev çağrıldığında, derleyici her örneği değiştirecek `T` kullanıcı tarafından belirtilen veya derleyici tarafından atanan somut tür bağımsız değişkeni ile. Derleyici bir sınıf oluşturur veya bir şablondan işlevi olarak adlandırılır işlem *şablonu örneklemesi*;   `minimum<int>` şablonu örneklemesi `minimum<T>`.  
+ Yukarıdaki kodu tek tür parametresi olan genel bir işlev için bir şablon tanımlayan *T*, dönüş değeri ve çağırma parametreleri (lhs ve sol) olan tüm bu tür. Bir tür parametresi, gibi ancak tek bir büyük harf kuralı tarafından en sık kullanılan adı verebilirsiniz. *T* şablon parametresi; **typename** anahtar sözcüğü, bu parametre için bir tür için bir yer tutucu olduğunu söyler. İşlev çağrıldığında, derleyici her örneği değiştirecek `T` kullanıcı tarafından belirtilen veya derleyici tarafından atanan somut tür bağımsız değişkeni ile. Derleyici bir sınıf oluşturur veya bir şablondan işlevi olarak adlandırılır işlem *şablonu örneklemesi*; `minimum<int>` şablonu örneklemesi `minimum<T>`.  
   
  Bir kullanıcı için tamsayı özelleştirilmiş şablon örneği başka bir yerde bildirebilirsiniz Get_a() ve get_b() int döndüren işlevleri olduğunu varsayar:  
   
@@ -48,7 +48,7 @@ int b = get_b();
 int i = minimum<int>(a, b);  
 ```  
   
- Ancak, çünkü bu bir işlev şablonu ve derleyici türetme türü `T` bağımsız değişkenler'den `a` ve `b`, bir normal işlev gibi çağırabilirsiniz:  
+ Ancak, çünkü bu bir işlev şablonu ve derleyici türetme türü `T` bağımsız değişkenler'den *bir* ve *b*, bir normal işlev gibi çağırabilirsiniz:  
   
 ```cpp  
 int i = minimum(a, b);  
@@ -56,9 +56,8 @@ int i = minimum(a, b);
   
  Derleyici, son deyim ile karşılaştığında hangi her örneğinin içinde yeni bir işlev oluşturur *T* şablonda ile değiştirilir **int**:  
   
-```cpp 
-  
-      int minimum(const int& lhs, const int& rhs)  
+```cpp   
+int minimum(const int& lhs, const int& rhs)  
 {  
     return lhs < rhs ? lhs : rhs;  
 }  
@@ -67,13 +66,12 @@ int i = minimum(a, b);
  Derleyicinin tür kesintisi'teki işlev şablonlarının nasıl gerçekleştireceğini kurallarını normal işlevleri için kurallar temel alır. Daha fazla bilgi için [aşırı yükleme çözünürlüğü, işlev şablonu çağrılarının](../cpp/overload-resolution-of-function-template-calls.md).  
   
 ## <a id="type_parameters"></a> Tür parametreleri  
- İçinde `minimum` yukarıdaki şablonu Not tür parametresi `T` işlevi çağrısı parametrelerinde, başvuru niteleyicileri ve const nereden eklenir kullanıldığı kadar herhangi bir yolla nitelenmiyor.  
+ İçinde `minimum` yukarıdaki şablonu Not tür parametresi *T* işlevi çağrısı parametrelerinde, başvuru niteleyicileri ve const nereden eklenir kullanıldığı kadar herhangi bir yolla nitelenmiyor.  
   
  Tür parametreleri sayısı için pratik sınır yoktur. Birden çok parametre, virgüllerle ayırın:  
   
 ```cpp  
 template <typename T, typename U, typename V> class Foo{};  
-  
 ```  
   
  Anahtar sözcüğü **sınıfı** eşdeğerdir **typename** bu bağlamda. Önceki örnek olarak ifade edebilirsiniz:  
@@ -108,7 +106,6 @@ int main()
     MyClass mc2 {2, L"goodbye"};  
     auto result = minimum(mc1, mc2); // Error! C2678  
 }  
-  
 ```  
   
  MyClass aşırı için sağlamaz çünkü bir derleyici hatası oluşturulan < işleci.  
@@ -138,7 +135,6 @@ class MyArray
 public:  
     MyArray() { ... }  
 };  
-  
 ```  
   
  Sözdizimi şablon bildirimindeki unutmayın. Size_t değeri olarak derleme zamanında bir şablon bağımsız değişkeni geçirilir ve sabit veya bir constexpr ifadesi olmalıdır. Bunu şu şekilde kullanabilirsiniz:  
@@ -150,7 +146,7 @@ MyArray<MyClass*, 10> arr;
  İşaretçileri ve başvuruları dahil olmak üzere değerlerine diğer türleri, tür olmayan parametreler geçirilebilir. Örneğin, bir işaretçi bir işlev veya başka bir işlem şablonu kod içinde özelleştirmek için işlev nesnesi geçirebilirsiniz.  
   
 ## <a id="template_parameters"></a> Şablon parametreleri olarak şablonlar  
- Şablon Şablon parametresi olabilir. Bu örnekte, iki şablon parametreleri MyClass2 vardır: bir typename parametre `T` ve şablon parametresi `Arr`:  
+ Şablon Şablon parametresi olabilir. Bu örnekte, iki şablon parametreleri MyClass2 vardır: bir typename parametre *T* ve şablon parametresi *Arr*:  
   
 ```cpp  
 template<typename T, template<typename U, int I> class Arr>  
@@ -162,7 +158,7 @@ class MyClass2
 };  
 ```  
   
- Çünkü `Arr` kendisini parametresinin hiçbir gövdesi, gerekli olmadığında, parametre adları. Aslında, başvurmak için hatadır `Arr`'s typename ya da sınıf parametre adlarından gövdesi içinde `MyClass2`. Bu nedenle, `Arr`ın tür parametresi adlarına atlanabilir, bu örnekte gösterildiği gibi:  
+ Çünkü *Arr* kendisini parametresinin hiçbir gövdesi, gerekli olmadığında, parametre adları. Aslında, başvurmak için hatadır *Arr*'s typename ya da sınıf parametre adlarından gövdesi içinde `MyClass2`. Bu nedenle, *Arr*ın tür parametresi adlarına atlanabilir, bu örnekte gösterildiği gibi:  
   
 ```cpp  
 template<typename T, template<typename, int> class Arr>  
@@ -207,7 +203,6 @@ int main()
 {  
     Bar<> bar; // use all default type arguments  
 }  
-  
 ```  
   
 ## <a name="template-specialization"></a>Şablon uzmanlığı  
@@ -223,9 +218,8 @@ class MyMap<string, V> {/*...*/};
 ...  
 MyMap<int, MyClass> classes; // uses original template  
 MyMap<string, MyClass> classes2; // uses the partial specialization  
-  
 ```  
   
- Her özel tür parametresi benzersiz olduğu sürece, bir şablon uzmanlıkları herhangi bir sayıda olabilir.   Sınıf şablonlarının kısmi özelleştirilmiş. Bir şablonu tam ve kısmi uzmanlıklar, özgün şablon olarak aynı ad alanında bildirilmelidir.  
+ Her özel tür parametresi benzersiz olduğu sürece, bir şablon uzmanlıkları herhangi bir sayıda olabilir. Sınıf şablonlarının kısmi özelleştirilmiş. Bir şablonu tam ve kısmi uzmanlıklar, özgün şablon olarak aynı ad alanında bildirilmelidir.  
   
  Daha fazla bilgi için [şablon uzmanlığı](../cpp/template-specialization-cpp.md).

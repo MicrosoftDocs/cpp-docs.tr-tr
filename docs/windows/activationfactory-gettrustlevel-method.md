@@ -1,5 +1,5 @@
 ---
-title: ActivationFactory::GetTrustLevel yöntemi | Microsoft Docs
+title: ActivationFactory::GetTrustLevel metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1e4dfbfbc146663722eba1302b27e96812d684f4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: af3ec58afd69f3fde6e2eb67969f1dad8848c5de
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854395"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466728"
 ---
 # <a name="activationfactorygettrustlevel-method"></a>ActivationFactory::GetTrustLevel Metodu
-Geçerli ActivationFactory başlatır nesne güven düzeyini alır.  
+Nesne güven düzeyini alır Geçerli **ActivationFactory** başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ STDMETHOD(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `trustLvl`  
- Bu işlem tamamlandığında, güven düzeyi çalışma zamanı sınıfının ActivationFactory başlatır.  
+ *trustLvl*  
+ Bu işlem tamamlandığında, çalışma zamanı güven düzeyini sınıfı, **ActivationFactory** başlatır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi halde, bir onaylama hata yayılan ve `trustLvl` için FullTrust ayarlanır.  
+ Başarılıysa S_OK; Aksi takdirde, bir onaylama işlemi hatası yayılır ve *trustLvl* FullTrust için ayarlanır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

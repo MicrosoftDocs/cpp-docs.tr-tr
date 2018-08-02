@@ -16,30 +16,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 092ba4a438378f12ae1ab332bce906df38b267e7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5f905904668aaba0e16aa20b646085e8e1a973d4
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422169"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461881"
 ---
 # <a name="tilestatic-keyword"></a>tile_static Anahtar Sözcüğü
-`tile_static` Anahtar sözcüğü bir kutucuk iş parçacıklarının tüm iş parçacıkları tarafından erişilebilecek bir değişken bildirmek için kullanılır. Yürütme bildirim noktası ulaştığında ve çekirdek işlevi döndüğünde bitip değişken ömrü başlatır. Döşemeleri kullanma hakkında daha fazla bilgi için bkz: [kullanarak döşeme](../parallel/amp/using-tiles.md).  
+**Tile_static** anahtar sözcüğü iş parçacıklarının döşemedeki tüm iş parçacıklarının tarafından erişilebilecek bir değişken bildirmek için kullanılır. Değişkenin ömrü yürütme bildirim noktasından ulaşır ve çekirdek işlevi döndüğünde sona erer başlatılır. Döşemeleri kullanma ile ilgili daha fazla bilgi için bkz: [kullanarak kutucuk](../parallel/amp/using-tiles.md).  
   
- `tile_static` Anahtar sözcüğünü aşağıdaki sınırlamalara sahiptir:  
+ **Tile_static** anahtar sözcüğü aşağıdaki sınırlamalara sahiptir:  
   
--   Olan bir işlev içinde olmayan değişkenleri kullanılabilir `restrict(amp)` değiştiricisi.  
+-   Olan bir işlev olan değişkenleri kullanılabilir `restrict(amp)` değiştiricisi.  
   
--   İşaretçi veya başvuru türleri olan değişkenler üzerinde kullanılamaz.  
+-   İşaretçi veya başvuru türleri olan değişkenlerde kullanılamaz.  
   
--   A `tile_static` değişkeni bir başlatıcı sahip olamaz. Varsayılan oluşturucu ve Yıkıcılar otomatik olarak çağrılmaz.  
+-   A **tile_static** değişkeni bir başlatıcıya sahip olamaz. Varsayılan oluşturucular ve Yıkıcılar otomatik olarak çağrılmaz.  
   
--   Başlatılmamış bir değeri `tile_static` değişkeni tanımlanmadı.  
+-   Başlatılmamış bir değeri **tile_static** değişkeni tanımlanmamış.  
   
--   Varsa bir `tile_static` değişkeni döşenir olmayan bir çağrı tarafından kökü belirtilmiş bir çağrı grafik içinde bildirilen `parallel_for_each`, bir uyarı oluşturulduğu ve değişken davranışını tanımlanmadı.  
+-   Varsa bir **tile_static** çağrısıyla döşenmemiş kökü belirtilmiş bir çağrı grafı içinde bildirilen değişken `parallel_for_each`, bir uyarı oluşturulur ve bu değişkenin davranış tanımlanmamıştır.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği nasıl bir `tile_static` değişkeni, bir kutucukta birkaç iş parçacıkları arasında veri birleştirdiğinizde için kullanılabilir.  
+ Aşağıdaki örnekte gösterildiği nasıl bir **tile_static** değişkeni, bir döşeme içindeki çeşitli iş parçacıkları arasında veri birleştirdiğinizde için kullanılabilir.  
   
 ```cpp  
 // Sample data:  
@@ -150,10 +150,9 @@ for (int i = 0; i < 4; i++) {
 // 3 3 8 8 3 3  
 // 5 5 2 2 4 4  
 // 5 5 2 2 4 4  
-  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md)   
  [C++ AMP'ye genel bakış](../parallel/amp/cpp-amp-overview.md)   
  [parallel_for_each işlevi (C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)   

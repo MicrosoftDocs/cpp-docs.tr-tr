@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e3abf87340671d1ac4851b055a57896e340d0c20
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 58e808510868e375672ee5de0b27c4bed3c568e0
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860817"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464057"
 ---
 # <a name="comparestringordinal-method"></a>CompareStringOrdinal Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,22 +34,22 @@ inline INT32 CompareStringOrdinal(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `lhs`  
- Karşılaştırma yapılacak ilk HSTRING.  
+ *lhs*  
+ Karşılaştırılacak ilk HSTRING.  
   
- `rhs`  
+ *Sol*  
  Karşılaştırılacak ikinci HSTRING.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 |Değer|Koşul|  
 |-----------|---------------|  
-|-1|`lhs` olan değerinden `rhs`.|  
-|0|`lhs` eşittir `rhs`.|  
-|1.|`lhs` Daha fazla `rhs`.|  
+|-1|*lhs* olduğu küçüktür *sol*.|  
+|0|*lhs* eşittir *sol*.|  
+|1.|*lhs* büyüktür *sol*.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirtilen iki HSTRING nesneyi karşılaştırır ve bir sıralama düzeni göreli konumlarını gösteren bir tamsayı döndürür.  
+ İki belirtilen HSTRING nesneyi karşılaştırır ve bir sıralama düzeni kendi göreli konumunu belirten bir tamsayı döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

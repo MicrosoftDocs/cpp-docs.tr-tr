@@ -18,21 +18,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca00f34f2b527ac7c2c6fc8ac4cccbdfc932fde3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7e059b8144518f3d0cacdde5d7f438c04b7933a2
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467508"
 ---
 # <a name="sptr-uptr"></a>__sptr, __uptr
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Kullanım `__sptr` veya `__uptr` nasıl derleyicisi bir 64-bit işaretçi 32-bit işaretçi kodu belirtmek için bir 32 bit işaretçi bildirimi değiştiricisi. Bir 64-bit işaretçi değişkenine atanan ya da bir 64-bit platformda başvuru yapıldı 32-bit işaretçi, örneğin, dönüştürülür.  
+**Microsoft'a özgü**  
+ Kullanım **__sptr** veya **__uptr** nasıl derleyicinin 64-bit işaretçi bir 32 bit işaretçi dönüştürür belirtmek için bir 32 bit işaretçi bildirimde değiştiricisi. Bir 64-bit işaretçi değişkenine atanan ya da bir 64-bit platformda başvurusu bir 32 bit işaretçi gibi dönüştürülür.  
   
- Microsoft belgelerine desteği için 64-bit platformları bazen bir 32 bit işaretçi en önemli bit için oturum bit ifade eder. Varsayılan olarak, 64-bit gösteren bir işaretçi bir 32 bit işaretçi dönüştürmek için oturum uzantısı derleyici kullanır. Diğer bir deyişle, en az önemli 32 bit 64-bit işaretçisinin 32-bit işaretçi değerine ayarlanır ve en önemli 32 bit 32-bit işaretçisinin oturum bit değerine ayarlanır. Bu dönüştürme oturum bit 0 ise, ancak oturum bit 1 değilse, doğru sonuçlar verir. Örneğin, eşdeğer 64-bit adres 0x000000007FFFFFFF 32-bit adres 0x7FFFFFFF verir, ancak 0x80000000 32-bit adres yanlış 0xFFFFFFFF80000000 için değiştirilebilir.  
+ Microsoft belge desteği için 64-bit platformlarda bazen bir 32 bit işaretçi en önemli bite imza biti ifade eder. Varsayılan olarak, derleyici bir 32 bit işaretçi bir 64-bit işaretçiye dönüştürmek için işaret uzantısı kullanır. Diğer bir deyişle, en az önemli 32 bit 64-bit işaretçisinin 32 bit işaretçi değerine ayarlanır ve en önemli 32 bit imza biti 32-bit işaretçinin değerine ayarlanır. Bu dönüştürme, imza biti 0 ise, ancak imza biti 1 değilse, doğru sonuçlar verir. Örneğin, 32-bit adres 0x7FFFFFFF eşdeğer 64 bit adres 0x000000007FFFFFFF verir, ancak 0x80000000 32-bit adres yanlış 0xFFFFFFFF80000000 için değiştirilir.  
   
- `__sptr`, Veya işaretçisi imzalı değiştiricisi belirten bir işaretçi dönüştürme 32-bit işaretçinin oturum bit 64-bit işaretçinin en önemli BITS ayarlayın. `__uptr`, İmzasız işaretçi değiştiricisi belirtiyor dönüştürme en önemli BITS sıfır olarak ayarlayın. Aşağıdaki bildirimler göster `__sptr` ve `__uptr` değiştiriciler, iki nitelenmemiş işaretçileri ile kullanılan iki işaretçileri tam ile [__ptr32](../cpp/ptr32-ptr64.md) türü ve bir işlev parametresi.  
+ **__Sptr**, veya işaretçi, imzalanmış değiştiricisi, bir işaretçi dönüştürme 32 bit işaretçi için imza biti bir 64-bit işaretçi en önemli bitlerini ayarlamak belirtir. **__Uptr**, veya işaretsiz işaretçi değiştirici belirtir bir dönüştürme en önemli bitleri sıfır olarak ayarlayın. Aşağıdaki bildirimleri göster **__sptr** ve **__uptr** değiştiriciler, iki nitelenmemiş işaretçiler ile kullanılan iki işaretçi ile tam [__ptr32](../cpp/ptr32-ptr64.md) türünü ve bir işlevi parametre.  
   
-```  
+```cpp 
 int * __sptr psp;  
 int * __uptr pup;  
 int * __ptr32 __sptr psp32;  
@@ -40,10 +41,10 @@ int * __ptr32 __uptr pup32;
 void MyFunction(char * __uptr __ptr32 myValue);  
 ```  
   
- Kullanım `__sptr` ve `__uptr` değiştiricileri işaretçi bildirimleri ile. Değiştiriciler konumu kullanmak bir [işaretçi türü niteleyici](../c-language/pointer-declarations.md), değiştirici başka bir deyişle, yıldız işareti gelmelidir. Değiştiriciler ile kullanamazsınız [üyeleri işaretçileri](../cpp/pointers-to-members.md). Değiştiriciler işaretçi olmayan bildirimleri etkilemez.  
+ Kullanım **__sptr** ve **__uptr** işaretçi bildirimleri ile değiştiriciler. Konumunu değiştiricilerini kullanmak bir [işaretçi türü niteleyici](../c-language/pointer-declarations.md), değiştirici başka bir deyişle, yıldız işareti izlemeniz gerekir. Değiştiricilerini kullanamazsınız [üye işaretçileri](../cpp/pointers-to-members.md). Değiştiriciler işaretçi olmayan bildirimleri etkilemez.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, kullanma 32-bit işaretçileri bildirir `__sptr` ve `__uptr` değiştiriciler, her 32-bit işaretçi bir 64-bit işaretçi değişkenine atar ve ardından her bir 64-bit işaretçiyi on altılık değeri görüntüler. Örnek ile yerel 64 bit derleyici derlenir ve 64-bit bir platform üzerinde yürütülür.  
+ Aşağıdaki örnek kullanan 32 bit işaretçiler bildirir **__sptr** ve **__uptr** değiştiriciler, her 32 bit işaretçi bir 64-bit işaretçi değişkenine atar ve ardından her 64 - onaltılık değeri görüntüler. bit işaretçi. Bu örnek, yerel 64 bit derleyici ile derlenmiş ve 64-bit bir platform üzerinde yürütülür.  
   
 ```cpp  
 // sptr_uptr.cpp  
@@ -92,7 +93,7 @@ p32s: p64 = FFFFFFFF87654321
 p32u: p64 = 0000000087654321  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)

@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 703204541a05c260e77562729703677b98fb8e9d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9750f0d49f4c7a580b2c99d0c833c5381ba20997
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883361"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467345"
 ---
 # <a name="comptroperator-operator"></a>ComPtr::operator== İşleci
-İki ComPtr nesnenin eşit olup olmadığını gösterir.  
+Belirtir olup iki **ComPtr** nesneler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,20 +42,19 @@ bool operator==(
    decltype(__nullptr),  
    const ComPtr<T>& a  
 );  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `a`  
- ComPtr bir nesneye başvuru.  
+ *a*  
+ Bir başvuru bir **ComPtr** nesne.  
   
- `b`  
- Başka bir ComPtr nesneye başvuru.  
+ *b*  
+ Başka bir başvuru **ComPtr** nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İlk işleci veriyor `true` , nesne `a` nesnesine eşit olan `b`; Aksi halde, `false`.  
+ İlk işleç sayıları **true** , nesne *bir* nesneye eşit olup *b*; Aksi takdirde **false**.  
   
- İkinci ve üçüncü işleçleri verim `true` , nesne `a` eşittir `nullptr`; Aksi halde, `false`.  
+ İkinci ve üçüncü işleçleri yield **true** , nesne *bir* eşittir **nullptr**; Aksi takdirde **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c41e2cf0765c036715377038357d587a755196f
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 5040319bee3fa74319bb30ca45ff11f2f5d72720
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948249"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465938"
 ---
 # <a name="user-defined-type-conversions-c"></a>Kullanıcı tanımlı tür Dönüşümleri (C++)
 A *dönüştürme* farklı türde bir değer dosyasından bazı türünde yeni bir değer üretir. *Standart dönüştürmeler* C++ dili ve Destek, yerleşik türler ve siz oluşturabilirsiniz yerleşik *kullanıcı tanımlı dönüşümler* için ya da kullanıcı tanımlı türler arasında dönüştürmeler gerçekleştirmek için.  
@@ -79,7 +79,7 @@ A *dönüştürme* farklı türde bir değer dosyasından bazı türünde yeni b
   
  **Açık** anahtar sözcüğü, dönüştürme işlevleri beri C ++ 11 ve C ++ 98 bu yana dönüştürme oluşturucuları için uygulanabilir. Aşağıdaki bölümlerde nasıl kullanılacağı hakkında daha fazla bilgi içeren **açık** anahtar sözcüğü.  
   
-##  <a name="ConvCTOR"></a> Dönüştürme oluşturucuları  
+## <a name="ConvCTOR"></a> Dönüştürme oluşturucuları  
  Dönüştürme oluşturucuları, yerleşik veya kullanıcı tanımlı türlerden dönüştürmeler için kullanıcı tanımlı bir tür tanımlar. Aşağıdaki örnek, yerleşik türünden dönüştüren bir dönüştürme Oluşturucu gösterir **çift** kullanıcı tanımlı bir tür için `Money`.  
   
 ```cpp 
@@ -181,7 +181,6 @@ void display_balance(const Money balance)
 {  
     std::cout << "The balance is: " << balance << std::endl;  
 }  
-  
 ```  
   
  Dikkat üye değişkeni `amount` özel ve genel bir dönüştürme türü için işlev yapılan **çift** yalnızca değerini döndürmek için sunulan `amount`. İşlevde `display_balance`, örtük bir dönüştürme gerçekleşir, değerini `balance` standart çıktıya akış ekleme işlecini kullanarak akış `<<`. Kullanıcı tanımlı bir tür için hiçbir akış ekleme işleç tanımlandığından `Money`, yoktur ancak bir yerleşik türü için **çift**, derleyici, dönüştürme işlevinden kullanabilirsiniz `Money` için **çift** akış ekleme işleci karşılamak için.  
@@ -226,8 +225,6 @@ void display_balance(const Money balance)
 {  
     std::cout << "The balance is: " << (double)balance << std::endl;  
 }  
-  
 ```  
   
  Burada dönüştürme işlevi **double işleci** açık, yapılan ve yazmak için açık bir tür dönüştürme **çift** işlevi sunulan `display_balance` dönüştürme gerçekleştirmek için. Bu tür dönüştürme atlanırsa, derleyicinin uygun akış ekleme işleci bulamadı olacaktır `<<` türünün `Money` ve bir hata oluşacak.  
-  

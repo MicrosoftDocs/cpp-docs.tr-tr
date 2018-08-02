@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e842a13461757e26dd1aed663c590df4c1ba6c74
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fd2f65bb86cdd77d4e285cee5603416fa629f940
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883436"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466354"
 ---
 # <a name="createactivationfactory-function"></a>CreateActivationFactory İşlevi
-Windows çalışma zamanı tarafından etkinleştirilebilir belirtilen sınıfının örnekleri oluşturan bir Üreteç oluşturur.  
+Windows çalışma zamanı tarafından etkinleştirilebilen belirtilen sınıf örneklerini oluşturan bir Üreteç oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,27 +35,26 @@ template<typename Factory>
       _In_ unsigned int *flags,        _In_ const CreatorMap* entry,   
       REFIID riid,   
      _Outptr_ IUnknown **ppFactory) throw();  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `flags`  
- Bir veya daha fazla bileşimini [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değerleri.  
+ *bayrakları*  
+ Bir veya daha fazla birleşimi [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) sabit listesi değerleri.  
   
- `entry`  
- İşaretçi bir [CreatorMap](../windows/creatormap-structure.md) parametresi başlatma ve kayıt bilgilerini içeren `riid`.  
+ *entry*  
+ İşaretçi bir [CreatorMap](../windows/creatormap-structure.md) parametresi başlatma ve kayıt bilgilerini içeren *riid*.  
   
- `riid`  
- Bir arabirim kimliği başvurusu  
+ *riid*  
+ Başvuru için bir arabirim kimliği.  
   
- `ppFactory`  
- Bu işlem bir etkinleştirme üreteci için bir işaretçi başarıyla tamamlarsa.  
+ *ppFactory*  
+ Bu işlem bir etkinleştirme fabrikası için bir işaretçi başarıyla tamamlanırsa.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Assert hata durumunda yayılan şablon parametresi `Factory` IActivationFactory arabiriminden türevi değil.  
+ Assert hata durumunda yayıldığını şablon parametresi *Fabrika* arabiriminden türetilen değil `IActivationFactory`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e08daba1e80523e7992f52ec353826bb53417682
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 1365e950077a65150d8f71fd640f69d1750068c9
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028365"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462316"
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
 C++ dili, temel türler arasında dönüştürmeler tanımlar. Ayrıca, işaretçi, başvuru için dönüştürmeleri tanımlar ve üye işaretçisi türetilmiş türler. Bu dönüştürmeleri "standart dönüştürmeler." olarak adlandırılır (Türleri, standart türleri ve türetilen türler hakkında daha fazla bilgi için bkz. [türleri](http://msdn.microsoft.com/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
@@ -95,7 +95,6 @@ long_num2 = int_num * long_num2;
  İşaretli integral türlerindeki nesneler, ilgili işaretsiz türlere dönüştürülebilir. Bu dönüştürme işlemleri gerçekleştirildiğinde, gerçek bit deseni değişmez; ancak, verilerin yorumlanması değişir. Bu kodu göz önünde bulundurun:  
   
 ```cpp 
-  
 #include <iostream>  
   
 using namespace std;  
@@ -107,7 +106,6 @@ int main()
     cout << (u = i) << "\n";  
 }  
 // Output: 65533  
-  
 ```  
   
  Yukarıdaki örnekte, bir **kısa imzalı**, `i`tanımlanır ve negatif bir sayıda başlatılır. İfade `(u = i)` neden `i` dönüştürülecek bir **işaretsiz** atama için önce `u`.  
@@ -163,7 +161,6 @@ cout << (float)1E300 << endl;
  Aşağıdaki kodda, tabloda açıklanan dönüştürme kuralları gösterilmektedir:  
   
 ```cpp 
-  
 double dVal;  
 float fVal;  
 int iVal;  
@@ -249,12 +246,12 @@ int main()
  İşaretçi `pA` türünde `A *`, yorumlanabilen olarak anlamı "türünde bir nesne işaretçisi `A`." Üyeleri `bObject` `(`gibi `BComponent` ve `BMemberFunc`) türüne özgü `B` ve bu nedenle üzerinden erişilemeyen `pA`. `pA` İşaretçi sınıfta tanımlanan yalnızca bu özellikleri (üye işlevleri ve veriler) nesne erişim sağlar `A`.  
   
 ### <a name="pointer-to-function"></a>İşlev işaretçisi  
- Bir işlev işaretçisi türüne dönüştürülebilir **void \*** , türü **void \***  işaretçiyle tutabilecek kadar büyük olduğundan.  
+ Bir işlev işaretçisi türüne dönüştürülebilir `void *`, türü `void *` işaretçiyle tutabilecek kadar büyük olduğundan.  
   
 ### <a name="pointer-to-void"></a>Ukazatel na void  
  Türü işaretçiler **void** işaretçileri herhangi bir tür, ancak yalnızca bir açık tür dönüştürme ile dönüştürülebilir (aksine c). (Bkz [açık tür dönüşümlü ifadeler](http://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) tür atamaları hakkında daha fazla bilgi.) Herhangi bir tür için bir işaretçi işaretçisi türüne örtük olarak dönüştürülebilir **void**. Bir işaretçi türü eksik bir nesneye bir işaretçiye dönüştürülebilir **void** (örtük) ve (açıkça). Böyle bir dönüştürmenin sonucu özgün işaretçi değerine eşittir. Bir nesne bildirildiği, ancak kendi boyutunu veya temel sınıf belirlemek kullanılabilir yeterli bilgi eksik olarak kabul edilir.  
   
- Değil herhangi bir nesneye bir işaretçi **const** veya **geçici** türünde bir işaretçi örtük olarak dönüştürülebilir **void \*** .  
+ Değil herhangi bir nesneye bir işaretçi **const** veya **geçici** türünde bir işaretçi örtük olarak dönüştürülebilir `void *`.  
   
 ### <a name="const-and-volatile-pointers"></a>const ve volatile işaretçileri  
  C++ standart bir dönüşüm sağlamazsa bir **const** veya **geçici** türü olmayan bir türe **const** veya **geçici**. Ancak, herhangi bir tür dönüştürme açık tür atamaları (güvenli olmayan dönüştürmeler de dahil olmak üzere) kullanılarak belirtilebilir.  
@@ -325,5 +322,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

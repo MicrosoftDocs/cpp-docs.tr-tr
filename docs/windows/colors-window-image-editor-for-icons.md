@@ -26,29 +26,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6a327fd99028bf8e1a6d7724a515f264aa04a4e3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0ee53735c84d586aa41cd4a1c5d3e8a70051c88e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860378"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460977"
 ---
 # <a name="colors-window-image-editor-for-icons"></a>Renkler Penceresi (Simgeler İçin Görüntü Düzenleyicisi)
-Renkler penceresi iki bölümden oluşur:  
+**Renkleri** penceresinde iki bölümü vardır:  
   
-1.  Renk kullanabileceğiniz renkleri temsil eden renk örnekleri bir dizi olan paleti. Grafik araçlarını kullanırken ön ve arka plan renklerini seçin örnekleri tıklatabilirsiniz.  
+1.  **Renkler paleti**, kullanabileceğiniz renkleri temsil eden renkli örnekleri dizisi. Grafik araçları kullanırken ön ve arka plan renkleri seçmek için örnekleri tıklayabilirsiniz.  
   
-2.  Renk ön ve arka plan renkleri ve ekran ve tersi Renk Seçici gösteren göstergesi.  
+2.  **Renk göstergesi**, ön ve arka plan renkleri ve ekran ve ters renk seçicileri gösterir.  
   
-     ![Renkler penceresi](../windows/media/vccolorswindow.gif "vcColorsWindow")  
+     ![Renkler penceresini](../windows/media/vccolorswindow.gif "vcColorsWindow")  
 Renkler Penceresi  
   
 > [!NOTE]
 >  **Ekran rengi** ve **ters renk** araçlardır yalnızca simgeler ve İmleçler için kullanılabilir.  
   
- Renkler penceresi ile kullanabileceğiniz [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md).  
-  
-
+ Renkler penceresi ile kullanabileceğiniz [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 162fbdea86aef81582902340102d54777e3f861b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 667aa3d2d29e4ce541d957b20b2246380e237a6b
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858048"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462049"
 ---
 # <a name="argtraits-structure"></a>ArgTraits Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -118,63 +118,63 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `TMemberFunction`  
- Invoke yöntemi imza eşleşemez ArgTraits yapısı için TypeName parametre.  
+ *TMemberFunction*  
+ TypeName parametresi herhangi eşleşemez bir ArgTraits yapısı için `Invoke` metodu imzası.  
   
- `TDelegateInterface`  
+ *TDelegateInterface*  
  Bir temsilci arabirimi.  
   
- `TArg1`  
- Invoke yöntemi ilk bağımsız değişkeni türü.  
+ *TArg1*  
+ İlk bağımsız değişkeninin türü `Invoke` yöntemi.  
   
- `TArg2`  
- Invoke yöntemi ikinci bağımsız değişkeni türü.  
+ *TArg2*  
+ İkinci bağımsız değişkeni türünü `Invoke` yöntemi.  
   
- `TArg3`  
- Invoke yöntemi işlevinin üçüncü bağımsız değişkeninin türü.  
+ *TArg3*  
+ Üçüncü bağımsız değişkeninin türü `Invoke` yöntemi.  
   
- `TArg4`  
- Invoke yöntemi Dördüncü bağımsız değişkeni türü.  
+ *TArg4*  
+ Dördüncü bağımsız değişkeninin türü `Invoke` yöntemi.  
   
- `TArg5`  
- Invoke yöntemi Beşinci bağımsız değişkeni türü.  
+ *TArg5*  
+ Beşinci bağımsız değişkeninin türü `Invoke` yöntemi.  
   
- `TArg6`  
- Invoke yöntemi altıncı bağımsız değişkeni türü.  
+ *TArg6*  
+ Altıncı bağımsız değişkeninin türü `Invoke` yöntemi.  
   
- `TArg7`  
- Invoke yöntemi yedinci bağımsız değişkeni türü.  
+ *TArg7*  
+ Yedinci bağımsız değişkeninin türü `Invoke` yöntemi.  
   
- `TArg8`  
- Invoke yöntemi alt bağımsız değişkeni türü.  
+ *TArg8*  
+ Sekizinci bağımsız değişkeninin türü `Invoke` yöntemi.  
   
- `TArg9`  
- Invoke yöntemi dokuzuncu bağımsız değişkeni türü.  
+ *TArg9*  
+ Dokuzuncu bağımsız değişkeninin türü `Invoke` yöntemi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ArgTraits` Yapı arabirimi ve belirtilen bir parametre sayısı bir anonim üye işlevi belirtilen temsilci bildirir.  
+ `ArgTraits` Yapıyı, arabirimi ve belirtilen bir dizi parametre içeren bir anonim üye işlevi belirtilen temsilci bildirir.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`Arg1Type`|Typedef TArg1 için.|  
-|`Arg2Type`|Typedef TArg2 için.|  
-|`Arg3Type`|Typedef TArg3 için.|  
-|`Arg4Type`|Typedef TArg4 için.|  
-|`Arg5Type`|Typedef TArg5 için.|  
-|`Arg6Type`|Typedef TArg6 için.|  
-|`Arg7Type`|Typedef TArg7 için.|  
-|`Arg8Type`|Typedef TArg8 için.|  
-|`Arg9Type`|Typedef TArg9 için.|  
+|`Arg1Type`|TArg1 için typedef.|  
+|`Arg2Type`|TArg2 için typedef.|  
+|`Arg3Type`|TArg3 için typedef.|  
+|`Arg4Type`|TArg4 için typedef.|  
+|`Arg5Type`|TArg5 için typedef.|  
+|`Arg6Type`|TArg6 için typedef.|  
+|`Arg7Type`|TArg7 için typedef.|  
+|`Arg8Type`|TArg8 için typedef.|  
+|`Arg9Type`|TArg9 için typedef.|  
   
 ### <a name="public-constants"></a>Genel sabitler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ArgTraits::args Sabiti](../windows/argtraits-args-constant.md)|Invoke yöntemi bir temsilci arabirimin parametrelerin sayısı sayısı tutar.|  
+|[ArgTraits::args Sabiti](../windows/argtraits-args-constant.md)|Parametre sayısını tutar `Invoke` yöntemi temsilci arabirimi.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ArgTraits`  

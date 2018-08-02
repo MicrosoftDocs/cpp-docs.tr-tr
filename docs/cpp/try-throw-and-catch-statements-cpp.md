@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da07786c3aac6bfce2f74a16088b3c09184a8106
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: dc5480b461a06d84647b7f139b2bd0ccce550dcd
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948023"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462150"
 ---
 # <a name="try-throw-and-catch-statements-c"></a>try, throw ve catch Deyimleri (C++)
 Özel durum işlemeyi C++ içinde uygulamak için kullandığınız **deneyin**, **throw**, ve **catch** ifadeler.  
@@ -50,7 +50,6 @@ ms.locfileid: "37948023"
 ## <a name="example"></a>Örnek  
   
 ```cpp 
-  
 MyData md;  
 try {  
    // Code that could throw an exception  
@@ -100,7 +99,7 @@ catch(...) {
 }  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ özel durum işleme](../cpp/cpp-exception-handling.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [İşlenilmeyen C++ özel durumları](../cpp/unhandled-cpp-exceptions.md)   

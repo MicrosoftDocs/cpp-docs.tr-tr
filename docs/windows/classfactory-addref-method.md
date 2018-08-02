@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4ab84f54c8fa5c4784cbdf564805bcfea29b6a93
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1e01ceee3b889a1755fe272366ab66b32a79ae6f
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856153"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462699"
 ---
 # <a name="classfactoryaddref-method"></a>ClassFactory::AddRef Yöntemi
-Geçerli ClassFactory nesne başvurusu sayısını artırır.  
+Geçerli başvuru sayısını artırır **ClassFactory** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,7 +37,7 @@ STDMETHOD_(
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata açıklar.  
+ Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e81b81509877ff53b613af80638b2386ed0cb0b2
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 93ae3ac7f0d6fff700e1c89aad197d5f03734cf5
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948225"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467114"
 ---
 # <a name="uuid-c"></a>uuid (C++)
 **Microsoft'a özgü**  
@@ -32,7 +32,6 @@ ms.locfileid: "37948225"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 __declspec( uuid("ComObjectGUID") ) declarator  
 ```  
   
@@ -50,6 +49,6 @@ struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [__declspec](../cpp/declspec.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

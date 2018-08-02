@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9caa3d08140887da45916b931b6a4850358db16
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 4faf0130ab34b61dc19f5ac3bd615e2e6162b616
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948253"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467387"
 ---
 # <a name="super"></a>__super
 **Microsoft'a özgü**  
@@ -31,9 +31,7 @@ ms.locfileid: "37948253"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 __super::member_function();  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -70,5 +68,5 @@ struct D : B1, B2 {
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

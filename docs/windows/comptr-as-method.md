@@ -17,20 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fb9fd0ff09f6775a95ff881d9f8cbaa3edc61065
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e8307411994fb2f850a71e91b63b44052cca40e0
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857278"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461016"
 ---
 # <a name="comptras-method"></a>ComPtr::As Yöntemi
-Belirtilen şablon parametresi tarafından tanımlanan arabirimi temsil eden bir ComPtr nesnesi döndürür.  
+Döndürür bir **ComPtr** belirtilen şablon parametresi tarafından belirlenen arabirimi temsil eden nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* p  
@@ -40,21 +39,20 @@ template<typename U>
 HRESULT As(  
    _Out_ Details::ComPtrRef<ComPtr<U>> p  
 ) const;  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `U`  
- Parametresi tarafından gösterilemeyecek kadar arabirimi `p`.  
+ *U*  
+ Parametresi tarafından temsil edilmesini arabirimi *p*.  
   
- `p`  
- Parametresi tarafından belirtilen arabirimi temsil eden bir ComPtr nesnesi `U`. Parametre `p` geçerli ComPtr nesnesine başvurmadığından gerekir.  
+ *p*  
+ A **ComPtr** parametresi tarafından belirtilen arabirim temsil eden nesne *U*. Parametre *p* geçerli entityset'e başvurmadığından **ComPtr** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk şablon kodunuzda kullanması gereken biçimidir. C++ dil özellikleri gibi destekleyen bir iç, yardımcı uzmanlık ikinci şablonudur [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü yazın.  
+ İlk şablon kodunuzda kullanması gereken biçimidir. İkinci şablonu olduğu gibi C++ dil özellikleri destekleyen bir iç, Yardımcısı özelleştirmesi [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü yazın.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

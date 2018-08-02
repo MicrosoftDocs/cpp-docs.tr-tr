@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c12709bdcac615937c938468bcf0e2daca437675
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1a9460664ed58cf39f7b295e1406649ad1d66ca9
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859793"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467423"
 ---
 # <a name="asyncbaseputonprogress-method"></a>AsyncBase::PutOnProgress Yöntemi
-Devam eden olay işleyicisi adresini belirtilen değere ayarlar.  
+Devam eden olay işleyicisinin adresi belirtilen değere ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ STDMETHOD(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `progressHandler`  
- Devam eden olay işleyici ayarlamayı adresi.  
+ *progressHandler*  
+ İstediğiniz ilerleme olay işleyicisinin nasıl ayarlandığını adresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde E_ILLEGAL_METHOD_CALL.  
+ Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

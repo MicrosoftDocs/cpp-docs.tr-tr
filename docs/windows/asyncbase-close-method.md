@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4f3f36656b9316fb6ad980349a836fad31c3a9a0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9d0798a6ef593e388ce7867ee9a55763be9ae890
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860801"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463365"
 ---
 # <a name="asyncbaseclose-method"></a>AsyncBase::Close Yöntemi
 Zaman uyumsuz işlemi kapatır.  
@@ -36,10 +36,10 @@ STDMETHOD(
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İşlemi kapatır veya zaten varsa S_OK kapalı; Aksi takdirde E_ILLEGAL_STATE_CHANGE.  
+ İşlemi kapatır veya zaten S_OK kapalı; Aksi takdirde, E_ILLEGAL_STATE_CHANGE.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağrısının IAsyncInfo::Close varsayılan uygulamasıdır ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten kapatmak için OnClose() saf sanal yöntemini geçersiz kılın.  
+ **Çağrısının** varsayılan uygulamasıdır `IAsyncInfo::Close`, ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten kapatmak için geçersiz kılma `OnClose()` saf sanal yöntemi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

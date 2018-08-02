@@ -1,5 +1,5 @@
 ---
-title: AsyncBase::get_ErrorCode yöntemi | Microsoft Docs
+title: AsyncBase::get_ErrorCode metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 88d2dd1d09b573b89e69d28071c7f689fa8396d7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fab750ce655add3ccdac9d955e1e3a36e46f8cc5
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859637"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465135"
 ---
 # <a name="asyncbasegeterrorcode-method"></a>AsyncBase::get_ErrorCode Metodu
-Geçerli zaman uyumsuz işlemi için hata kodunu alır.  
+Geçerli zaman uyumsuz işlem hata kodunu alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ STDMETHOD(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `errorCode`  
- Geçerli hata kodu depolandığı konum.  
+ *hata kodu*  
+ Geçerli hata kodu nerede depolandığını konumu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde geçerli zaman uyumsuz işlemi kapalıysa E_ILLEGAL_METHOD_CALL.  
+ Başarılıysa S_OK; Aksi takdirde, geçerli zaman uyumsuz işlemin kapatılırsa E_ILLEGAL_METHOD_CALL.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

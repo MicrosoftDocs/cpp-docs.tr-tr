@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95d08573515bee89fd86d6b37e3982dde2b29978
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ff853fce39b2052b82df921bf6743b0db361408c
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870479"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461331"
 ---
 # <a name="createclassfactory-function"></a>CreateClassFactory İşlevi
-Belirtilen sınıf örnekleri oluşturan bir Üreteç oluşturur.  
+Belirtilen sınıfın örneklerini oluşturan bir Üreteç oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,27 +37,26 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
    REFIID riid,   
    _Outptr_ IUnknown **ppFactory  
 ) throw();  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `flags`  
- Bir veya daha fazla bileşimini [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değerleri.  
+ *bayrakları*  
+ Bir veya daha fazla birleşimi [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) sabit listesi değerleri.  
   
- `entry`  
- İşaretçi bir [CreatorMap](../windows/creatormap-structure.md) parametresi başlatma ve kayıt bilgilerini içeren `riid`.  
+ *entry*  
+ İşaretçi bir [CreatorMap](../windows/creatormap-structure.md) parametresi başlatma ve kayıt bilgilerini içeren *riid*.  
   
- `riid`  
- Bir arabirim kimliği başvurusu  
+ *riid*  
+ Başvuru için bir arabirim kimliği.  
   
- `ppFactory`  
- Bu işlem bir üreteci için bir işaretçi başarıyla tamamlarsa.  
+ *ppFactory*  
+ Bu işlem bir sınıf üreteci için bir işaretçi başarıyla tamamlanırsa.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Assert hata durumunda yayılan şablon parametresi `Factory` IClassFactory arabiriminden türevi değil.  
+ Assert hata durumunda yayıldığını şablon parametresi *Fabrika* arabiriminden türetilen değil `IClassFactory`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

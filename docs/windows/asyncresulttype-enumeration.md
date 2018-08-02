@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: de4a8465dd61e52425a0335e171cf516591ae589
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8171c4a57621a4f17a5f0ddb0745faa70fde6524
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863315"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465291"
 ---
 # <a name="asyncresulttype-enumeration"></a>AsyncResultType Numaralandırması
-GetResults() yöntemi tarafından döndürülen sonuç türü belirtir.  
+Tarafından döndürülen sonuç türü belirtir `GetResults()` yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,8 +39,8 @@ enum AsyncResultType;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`MultipleResults`|Başlangıç durumu arasında ve çağrısının çağrılmadan önce aşamalı olarak sunulan birden çok sonuç kümesi.|  
-|`SingleResult`|Tamamlama olayı tamamlandıktan sonra sunulan tek bir sonuç.|  
+|`MultipleResults`|Bir aşamalı olarak arasında sunulan birden çok sonuç kümesi `Start` durumu ve önce `Close()` çağrılır.|  
+|`SingleResult`|Tam olay gerçekleştikten sonra sunulan tek bir sonuç.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

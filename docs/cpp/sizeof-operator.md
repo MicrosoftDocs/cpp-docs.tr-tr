@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58724d2e17947c69d1aaf2ed0af66137fe20cc74
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 3eeda8fd3babed4e5f9cd658ba324dfa057f66ce
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948038"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466282"
 ---
 # <a name="sizeof-operator"></a>sizeof İşleci
 İşlenenin türü bağlı boyutu verir **char**.  
@@ -111,6 +111,6 @@ The size of the pointer is 4
 sizeof array / sizeof array[0]  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

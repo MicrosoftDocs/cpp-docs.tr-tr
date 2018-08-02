@@ -1,5 +1,5 @@
 ---
-title: ComPtrRef::GetAddressOf yöntemi | Microsoft Docs
+title: ComPtrRef::GetAddressOf metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5dc8e80fe97bc0a4ace0cb53e43f306ad2b85309
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 435b853268d1fe8c324d217d1ad14f71e4b5a295
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883313"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462943"
 ---
 # <a name="comptrrefgetaddressof-method"></a>ComPtrRef::GetAddressOf Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,10 +34,10 @@ InterfaceType* const * GetAddressOf() const;
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli ComPtrRef nesnesinin temsil ettiği arabirimi için bir işaretçi adresi.  
+ Adres geçerli tarafından temsil edilen arabirimi için bir işaretçi **ComPtrRef** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli ComPtrRef nesnesinin temsil ettiği arabirimi için bir işaretçi adresi alır.  
+ Adresi geçerli tarafından temsil edilen arabirimi için bir işaretçi alır **ComPtrRef** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

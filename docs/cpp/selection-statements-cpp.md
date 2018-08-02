@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f72e3c8145b2909495e53645af8ba500a102ebc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 10e1d9d6a86b4379575c100316ef8e9832bad6d8
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421279"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464434"
 ---
 # <a name="selection-statements-c"></a>Seçim Deyimleri (C++)
-C++ seçim deyimleri [varsa](../cpp/if-else-statement-cpp.md) ve [geçiş](../cpp/switch-statement-cpp.md), koşullu kodun bölümlerini yürütmek için bir yol sağlar.  
+C++ seçme deyimleri [varsa](../cpp/if-else-statement-cpp.md) ve [geçiş](../cpp/switch-statement-cpp.md), kodun bölümlerini koşullu olarak yürütme yöntemi sağlar.  
   
- [__İf_exists](../cpp/if-exists-statement.md) ve [__if_not_exists](../cpp/if-not-exists-statement.md) deyimleri koşullu bir simge varlığını bağlı olarak kod eklemenizi sağlar.  
+ [__İf_exists](../cpp/if-exists-statement.md) ve [__if_not_exists](../cpp/if-not-exists-statement.md) deyimleri bir simgenin kodu koşullu olarak dahil etmenize imkan sağlar.  
   
  Her deyimin sözdizimi için tek tek ilgili konulara bakın.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)

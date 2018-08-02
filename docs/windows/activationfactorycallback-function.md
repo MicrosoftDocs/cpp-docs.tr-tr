@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2f1bae2c503f4e5f0c887a46956248184ece9a1e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9e2e7b2301ae4dd38a40bdf4583e963e55a8b12d
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857330"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461399"
 ---
 # <a name="activationfactorycallback-function"></a>ActivationFactoryCallback İşlevi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -37,19 +37,19 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `activationId`  
- Bir çalışma zamanı sınıf adını belirten bir dizeyi işler.  
+ *Activationıd*  
+ Bir çalışma zamanı sınıfı adının belirten bir dize için işler.  
   
- `ppFactory`  
- Bu işlem tamamlandığında, parametresine karşılık gelen bir etkinleştirme Fabrika `activationId`.  
+ *ppFactory*  
+ Bu işlem tamamlandığında, parametresine karşılık geldiği bir etkinleştirme fabrikası *Activationıd*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata açıklar. Büyük olasılıkla hata HRESULTs CLASS_E_CLASSNOTAVAILABLE ve E_INVALIDARG verilmiştir.  
+ Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT. Büyük olasılıkla başarısız HRESULTs, CLASS_E_CLASSNOTAVAILABLE ve E_INVALIDARG verilmiştir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirtilen etkinleştirme kimliği için etkinleştirme üretecini alır  
+ Belirtilen etkinleştirme kimliği için kullanılan etkinleştirme üreteci alır  
   
- Windows Çalışma Zamanı Modülü çalışma zamanı sınıf adını kullanarak belirtilen bir nesne istemek için bu geri çağırma işlevini çağırır.  
+ Windows çalışma zamanı ve çalışma zamanı sınıf adıyla belirtilen bir nesne istemek için bu geri çağırma işlevini çağırır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

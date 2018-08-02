@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0d8f0c5b2feda3b62dfb17902a281c7e71bd32f5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 57f6e841326339f78d24fa8affea5e74ae5b8d74
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882335"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465389"
 ---
 # <a name="creatormapfactorycreator-data-member"></a>CreatorMap::factoryCreator Veri Üyesi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -38,20 +38,20 @@ HRESULT (*factoryCreator)(
 ```  
   
 ## <a name="parameters"></a>Parametreler  
- `currentflags`  
+ *currentflags*  
  Aşağıdakilerden birini [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırıcılar.  
   
- `entry`  
- CreatorMap.  
+ *entry*  
+ CreatorMap bir.  
   
- `iidClassFactory`  
- Bir sınıf üreteci arabirimi kimliği.  
+ *iidClassFactory*  
+ Bir sınıf üreteci arabirim kimliği.  
   
- `factory`  
- İşlem tamamlandığında, bir sınıf fabrikası adresidir.  
+ *Fabrika*  
+ İşlem tamamlandığında bir sınıf üreteci adresidir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Belirtilen CreatorMap için bir üreteci oluşturur.  

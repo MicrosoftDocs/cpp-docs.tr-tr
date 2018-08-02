@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8419ea4e446c8bf2f555c680079ccb91cc26afb5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3675e8bca6f62a1fbc7e30beefc6cbf6efbf197c
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32424139"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462748"
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
-İfadeler, işleçlerinin önceliğine ve gruplandırılmasına göre değerlendirilir. ([İşleç önceliği ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md) içinde [sözcük kuralları](../cpp/lexical-conventions.md), işleçler zorunlu tuttukları ifadeleri C++ ilişkileri gösterir.)  
+İfadeler, işleçlerinin önceliğine ve gruplandırılmasına göre değerlendirilir. ([İşleç önceliği ve İlişkiselliği](../cpp/cpp-built-in-operators-precedence-and-associativity.md) içinde [sözcük kuralları](../cpp/lexical-conventions.md), işleçler ifadelerle ilgili zorunlu kıldığı ilişkileri C++ gösterir.)  
   
 ## <a name="order-of-evaluation"></a>Değerlendirme sırası  
  Bu örneği göz önünde bulundurun:  
@@ -51,7 +51,7 @@ int main()
 54  
 ```  
   
- ![Bir ifade değerlendirme sırayla](../cpp/media/vc38zv1.gif "vc38ZV1")  
+ ![Bir ifade Değerlendirme sırasını](../cpp/media/vc38zv1.gif "vc38ZV1")  
 İfade-Değerlendirme Sırası  
   
  Yukarıdaki şekilde gösterilen ifadenin değerlendirilme sırası, işleçlerin öncelik ve birleşimlerine göre belirlenir:  
@@ -64,27 +64,27 @@ int main()
   
  Alt ifadeleri gruplamak için parantez kullanıldığında, aşağıdaki şekilde gösterildiği gibi önceliği ve ayrıca ifadenin değerlendirilme sırasını değiştirir.  
   
- ![Değerlendirme sırası parantez ifadenin](../cpp/media/vc38zv2.gif "vc38ZV2")  
+ ![Parantezli İfade Değerlendirme sırasını](../cpp/media/vc38zv2.gif "vc38ZV2")  
 Parantezli İfade-Değerlendirme Sırası  
   
  Yukarıdaki şekildeki gibi ifadeler yalnızca yan etkileri için (bu örnekte bilgileri standart çıktı cihazına aktarmak için) değerlendirilir.  
   
 ## <a name="notation-in-expressions"></a>İfadelerdeki gösterim  
- C++ dili belirli uyumluluğunu işlenenler belirtirken belirtir. Aşağıdaki tabloda işlenenler türlerini kabul edilebilir türündeki işlenenler gerektiren işleçleri gösterilmektedir *türü*.  
+ C++ dili belirli uyumluluğunu işlenenler belirtirken belirtir. Aşağıdaki tabloda türleri işlenenleri kabul edilebilir türündeki işlenenler gerektiren işleçler gösterilmektedir *türü*.  
   
-### <a name="operand-types-acceptable-to-operators"></a>İşlenen türleri işleçleri için kabul edilebilir  
+### <a name="operand-types-acceptable-to-operators"></a>İşleçler için kabul edilebilir işlenen türleri  
   
-|Türü bekleniyor|İzin verilen türleri|  
+|Tür bekleniyor|İzin verilen türleri|  
 |-------------------|-------------------|  
 |*Türü*|`const` *Türü*<br /> `volatile` *Türü*<br /> *Türü*&<br /> `const` *Türü*&<br /> `volatile` *Türü*&<br /> `volatile const` *Türü*<br /> `volatile const` *Türü*&|  
 |*Türü*\*|*Türü*\*<br /> `const` *Türü*\*<br /> `volatile` *Türü*\*<br /> `volatile const` *Türü*\*|  
 |`const` *Türü*|*Türü*<br /> `const` *Türü*<br />`const` *Türü*&|  
 |`volatile` *Türü*|*Türü*<br /> `volatile` *Türü*<br /> `volatile` *Türü*&|  
   
- Önceki kuralları birlikte her zaman kullanılabilir olmadığından geçici bir nesne için sabit bir işaretçi bir işaretçi beklenirken sağlanabilir.  
+ Yukarıdaki kuralları her zaman birlikte kullanılabildiğinden bir const işaretçisi geçici bir nesneye bir işaretçi beklenirken sağlanabilir.  
   
 ## <a name="ambiguous-expressions"></a>Belirsiz ifadeler  
- Belirli ifadelerin anlamları içinde belirsiz. Bir nesnenin değeri birden çok kez aynı ifadesinde değişiklik yapıldığında bu deyimler en sık oluşur. Bu ifadeler burada dili bir tanımlamıyor değerlendirme belirli bir sıraya bağlıdır. Aşağıdaki örnek göz önünde bulundurun:  
+ Belirli ifadeler, bunların anlamı belirsiz olabilir. Bu ifadeler, bir nesnenin değerini aynı ifadedeki birden çok kez değiştirildiğinde en sık oluşur. Bu ifadeler, burada dil bir tanımlamıyor değerlendirme belirli bir sıraya bağlıdır. Aşağıdaki örnek göz önünde bulundurun:  
   
 ```  
 int i = 7;  
@@ -92,7 +92,7 @@ int i = 7;
 func( i, ++i );  
 ```  
   
- C++ dili, bir işlev çağrısı için bağımsız değişkenler değerlendirilme sırasını garanti etmez. Bu nedenle, önceki örnekte, `func` parametreleri soldan sağa veya sağdan sola değerlendirilir bağlı olarak değerleri 7 ve 8 veya 8 ve 8 kendi parametreleri için alabilir.  
+ C++ dili, bir işlev çağrısı için bağımsız değişkenler değerlendirilme sırasını garanti etmez. Bu nedenle, önceki örnekte, `func` parametreler sağdan sola veya soldan sağa doğru değerlendirilir bağlı olarak değerleri 7 ve 8 veya 8 ve 8 yöntemin parametreleri alabilir.  
   
 ## <a name="c-sequence-points-microsoft-specific"></a>C++ sıralama noktaları (Microsoft Specific)  
  Bir ifade, bir nesnenin değerini ardışık "dizi noktaları" arasında yalnızca bir kez değiştirebilir.  
@@ -101,7 +101,7 @@ func( i, ++i );
   
 -   Mantıksal AND işlecinin sol işleneni (&&). Mantıksal AND işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal AND işlecinin sağ işleneninin değerlendirileceği kesin değildir.  
   
--   Sol işleneni mantıksal OR işleci (&#124;&#124;). Mantıksal OR işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal OR işlecinin sağ işleneninin değerlendirileceği kesin değildir.  
+-   Mantıksal OR işlecinin işleneni sol (&#124;&#124;). Mantıksal OR işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal OR işlecinin sağ işleneninin değerlendirileceği kesin değildir.  
   
 -   Virgül işlecinin sol işleneni. Virgül işlecinin sol işleneni tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Virgül işlecinin her iki işleneni de her zaman değerlendirilir.  
   
@@ -121,5 +121,5 @@ func( i, ++i );
   
 -   Dönüş deyimindeki ifade. İfade tamamen değerlendirilir ve denetim çağırma işlevine dönmeden önce tüm yan etkiler tamamlanır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İfadeler](../cpp/expressions-cpp.md)

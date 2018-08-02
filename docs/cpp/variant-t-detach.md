@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f71257b369e7833f279c0f68ce33e0ec925ebf6b
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 895df401ab10ae85641fd2eed9f7a9654916f33f
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026266"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465239"
 ---
 # <a name="varianttdetach"></a>_variant_t::Detach
 **Microsoft'a özgü**  
@@ -34,9 +34,7 @@ ms.locfileid: "39026266"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 VARIANT Detach( );  
-  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -47,5 +45,5 @@ VARIANT Detach( );
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

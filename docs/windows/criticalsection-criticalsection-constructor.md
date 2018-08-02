@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d86c80d169cb6d9794f163290c30bf1b2563588b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 866159a4b3cbacae8b7ad09154fb93707fe4baac
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870903"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467358"
 ---
 # <a name="criticalsectioncriticalsection-constructor"></a>CriticalSection::CriticalSection Oluşturucusu
-Mutex nesnesine benzer, ancak yalnızca tek bir işlem iş parçacığı tarafından kullanılan bir eşitleme nesnesini başlatır.  
+Mutex nesnesine benzer, ancak yalnızca tek bir işlem iş parçacığı tarafından kullanılan bir eşitleme nesnesi başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ explicit CriticalSection(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `spincount`  
- Kritik bölüm nesnesi için döndürme sayısı. Varsayılan değer 0’dır.  
+ *spincount*  
+ Kritik bölüm nesnenin dönüş sayısı. Varsayılan değer 0’dır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kritik bölümler ve spincounts hakkında daha fazla bilgi için bkz: **InitializeCriticalSectionAndSpinCount** Windows API belgelerine eşitleme bölümünde işlevi.  
+ Kritik bölümler ve spincounts hakkında daha fazla bilgi için bkz: `InitializeCriticalSectionAndSpinCount` işlevi **eşitleme** Windows API platformlarının bölümü.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

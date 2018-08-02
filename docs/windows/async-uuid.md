@@ -17,35 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 857b10e206e5a4a3208086e5b7b1455f58bc40a8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c76aee3ce1e56f60e966094bb2d634269cd5e3a9
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856911"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466754"
 ---
 # <a name="asyncuuid"></a>async_uuid
-COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyici yönlendirir UUID belirtir.  
+COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyicisi yönergelerinin sağlandığı UUID belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [async_uuid (  
+[async_uuid (  
    uuid  
 )]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *uuid*  
- Arabirimi sürümünü belirleyen UUID'si.  
+ Arabirimi sürümünü tanımlar UUID'si.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Async_uuid** C++ özniteliğine sahip ile aynı işlevselliği [async_uuid](http://msdn.microsoft.com/library/windows/desktop/aa366735) MIDL özniteliği.  
+ **Async_uuid** C++ özniteliği ile aynı işlevlere sahip [async_uuid](http://msdn.microsoft.com/library/windows/desktop/aa366735) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_async_uuid.cpp  
 // compile with: /LD  
 #include <Windows.h>  
@@ -63,10 +62,10 @@ __interface ICustom {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**çift**, **görüntüleme arabirimi**|  
+|**İçin geçerlidir**|`interface`|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
+|**Geçersiz öznitelikler**|**çift**, **dispinterface**|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   

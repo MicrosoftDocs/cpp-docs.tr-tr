@@ -15,37 +15,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 307f2e8e99e469face090acd19e7c5f28c5d9140
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 29c3aacf63396e96b4520fc849e082c6781e5d64
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870851"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460912"
 ---
 # <a name="c-attributes-reference"></a>C++ Öznitelikleri Başvurusu
-Microsoft COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme basitleştirmek öznitelikleri kümesini tanımlar. Kaynak dosyalarınız öznitelikleri eklediğinizde derleyici sağlayıcısını dll kod ekleme veya oluşturulan nesne dosyaları kodda değiştirmek için birlikte çalışır.  
+Microsoft, bir COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme basitleştiren bir öznitelik kümesini tanımlar. Öznitelikler, kaynak dosyaları eklediğinizde, derleyici sağlayıcısı kod ekleyin veya oluşturulan nesne dosyaları kodu değiştirmek için DLL'ler ile çalışır.  
   
- **Not:** C++ Standart öznitelikleri için arıyorsanız, bkz: [öznitelikleri](../cpp/attributes.md).  
+ **Not:** C++ standart özniteliklerini arıyorsanız bkz [öznitelikleri](../cpp/attributes.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Kavramları](../windows/attributed-programming-concepts.md)  
- Öznitelikleriyle ilişkili çeşitli kavramlarını açıklar.  
+ Öznitelikleriyle ilişkili çeşitli kavramlar açıklanmaktadır.  
   
  [Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)  
  Başvuru konuları, işlev tarafından gruplandırılmış özniteliği için bağlantılar sağlar.  
   
  [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)  
- Başvuru konuları, kullanım göre gruplandırılmış özniteliği için bağlantılar sağlar.  
+ Başvuru konuları, kullanıma göre gruplandırılmış özniteliği için bağlantılar sağlar.  
   
  [Öznitelikler Alfabetik Başvurusu](../windows/attributes-alphabetical-reference.md)  
  Tüm öznitelik başvurusu konulara bağlantılar sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Öznitelikli Programlama](../windows/attributed-programming-concepts.md)  
- Öznitelikleri kavramsal genel bakış sağlar.  
+ Öznitelikleri kavramsal bir genel bakış sağlar.  
   
- [Başvuru](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
- C ve C++ dil başvurusu, Visual C++, Visual C++ genişletilebilirlik nesne modeli ve Microsoft makro derleyici (MASM) ile birlikte sağlanan kitaplıkları açıklayan konulara bağlantılar sağlar.  
+ [Başvuru](http://msdn.microsoft.com/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
+ C ve C++ dil başvuruları, Visual C++, Visual C++ genişletilebilirlik nesne modeli ve Microsoft Macro Assembler (MASM) ile sağlanan kitaplıkları açıklayan konulara bağlantılar sağlar.  
   
  [Visual C++ Örnekleri](../visual-cpp-samples.md)  
- Visual C++ kitaplıkları ve onu destekleyen teknolojileri özelliklerini gösteren örnek kod için bağlantılar sağlar.
+ Visual C++ kitaplıkları ve teknolojileri destekliyorsa özelliklerini gösteren örnek kodlara bağlantılar sağlar.

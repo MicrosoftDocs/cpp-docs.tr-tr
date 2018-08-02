@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 490484a6988851565b478ef41ad16f0c722eb804
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 33ca905d25fb010eb6d5c511f22ba40446ffd385
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856078"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465609"
 ---
 # <a name="asyncbaseputoncomplete-method"></a>AsyncBase::PutOnComplete Yöntemi
-Tamamlama olay işleyicisi adresini belirtilen değere ayarlar.  
+Tamamlama olay işleyicisinin adresi belirtilen değere ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ STDMETHOD(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `completeHandler`  
- Tamamlama olay işleyici ayarlamayı adresi.  
+ *completeHandler*  
+ İstediğiniz tamamlama olay işleyicisinin nasıl ayarlandığını adresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde E_ILLEGAL_METHOD_CALL.  
+ Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

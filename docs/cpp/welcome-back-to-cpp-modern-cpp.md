@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 220c8f27aec52fe707e0482eb041ea71c5bd8291
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c4426f3d25681e3ee46bf4d5da615d185babb0f0
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939383"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462368"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 C++ dünyada en yaygın olarak kullanılan programlama dilleri biridir. İyi yazılmış C++ programları hızlı ve verimlidir. Çok çeşitli uygulamalar oluşturmak için kullanın dil diğer dillerden daha esnektir çünkü — eğlenceli ve heyecan verici oyunlardan yüksek performanslı bilimsel yazılımlara, cihaz sürücüleri, katıştırılmış programlara ve Windows istemci uygulamaları için. 20 yıldan fazla, C++ ve diğer birçok gibi sorunları çözmek için kullanıldı. Değil bilmeniz, artan sayıda C++ programcıları dün belki C stili programlamada yukarı Katlanmış ve modern C++ yerine donned olmasıdır.  
@@ -49,7 +49,6 @@ C++ dünyada en yaygın olarak kullanılan programlama dilleri biridir. İyi yaz
  C++ dili de gelişmiştir. Aşağıdaki kod parçacıklarını karşılaştırın. Bu, c++'ta olması için öğeleri nasıl kullanılacağını gösterir:  
   
 ```cpp  
-
 #include <vector>
 
 void f()
@@ -81,7 +80,6 @@ void f()
  Modern C++'da aynı şeyi nasıl gerçekleştirilir aşağıda verilmiştir:  
   
 ```cpp
-
 #include <memory>  
 #include <vector>  
 
@@ -99,7 +97,6 @@ void f()
         }
     }
 }
-
 ```
 
  Modern C++ programlamada, new/delete veya explicit özel durum bunun yerine akıllı işaretçiler kullanabileceğinizden işlemelerini kullanmak zorunda değilsiniz. Kullanırken **otomatik** ifadeden tür çıkarma ve [lambda işlevi](../cpp/lambda-expressions-in-cpp.md), daha hızlı kod yazabileceğiniz, kısaltabilir ve daha iyi anlayabilirsiniz. Hem de aralık tabanlı **için** döngü daha net, daha kolay ve hata potansiyeli daha az istenmeyen C stili daha **için** döngü. Uygulamanızı yazmak için Demirbaş ve birkaç satır kod kullanabilirsiniz. Ve kod özel durum açısından güvenli ve bellek-güvenli hale getirmek ve uğraşmanız hiçbir ayırma uğraşmazsınız veya hata kodlarıyla.  
@@ -138,7 +135,7 @@ void f()
   
  Daha fazla bilgi için StackOverflow bkz [hangi C++ deyimleri, C ++ 11'de kullanım dışıdır](http://go.microsoft.com/fwlink/p/?linkid=402836)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
  [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md)   
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)  

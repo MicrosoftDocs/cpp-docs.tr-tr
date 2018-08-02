@@ -17,28 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 30d665861688054a4f6b7491f449014afe646c71
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6567650d719b56bb320f1b40eae285322bcab364
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860963"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464317"
 ---
 # <a name="case-c"></a>durum (C++)
-İle kullanılan [switch_type](../windows/switch-type.md) özniteliğini bir **UNION**.  
+İle kullanılan [switch_type](../windows/switch-type.md) özniteliğini bir **birleşim**.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ case(  
+[ case(  
    value  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *value*  
- Olası işleme sağlamak istediğiniz değeri girin. Türü **değeri** aşağıdaki türlerden biri olabilir:  
+ Olası bir işleme sağlamak istediğiniz değeri girin. Türünü **değer** şu türlerden biri olabilir:  
   
 -   `int`  
   
@@ -48,15 +47,15 @@ ms.locfileid: "33860963"
   
 -   `enum`  
   
- ya da böyle bir türde bir tanımlayıcı.  
+ veya böyle bir türü bir tanımlayıcı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Durum** C++ özniteliğine sahip ile aynı işlevselliği **durumda** MIDL özniteliği. Bu öznitelik yalnızca ile kullanılan [switch_type](../windows/switch-type.md) özniteliği.  
+ **Çalışması** C++ özniteliği ile aynı işlevlere sahip **çalışması** MIDL özniteliği. Bu öznitelik yalnızca birlikte kullanılan [switch_type](../windows/switch-type.md) özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod bir kullanımını gösterir **durumda** özniteliği:  
+ Aşağıdaki kod, bir kullanımını göstermektedir. **çalışması** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_case.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -79,9 +78,9 @@ struct SizedValue2 {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Üye bir **sınıfı** veya `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Üye bir **sınıfı** veya **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

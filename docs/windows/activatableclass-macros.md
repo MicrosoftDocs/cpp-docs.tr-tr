@@ -21,16 +21,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aeb68deddd1cdfa9e1e869a08bfb0a1f3bb8d6ca
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e46063bc94fae25d414d25ae67b5418ee5aa8c27
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857470"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465863"
 ---
 # <a name="activatableclass-macros"></a>ActivatableClass Makroları
 
-Belirtilen sınıfının bir örneğini oluşturabilirsiniz bir Fabrika içeren bir iç önbelleğe doldurur.
+Belirtilen sınıfın bir örneğini oluşturan bir üreteci içeren bir iç önbelleğe doldurur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,17 +54,17 @@ ActivatableClassWithFactoryEx(
 ### <a name="parameters"></a>Parametreler
 
 *className*  
-Oluşturmak için sınıfı adı.  
+Oluşturma sınıfı adı.  
 
 *Fabrika*  
-Belirtilen sınıfının bir örneğini oluşturacak üreteci.
+Belirtilen sınıfın bir örneğini oluşturan üreteci.
 
-*serverName*  
-Modül üreteçleri kümesini belirtir adı.
+*SunucuAdı*  
+Modülde üreteçleri kümesini belirten bir ad.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanmadığınız sürece bu makroları klasik COM ile kullanmayın `#undef` emin olmak için yönergesi **&#95; &#95;WRL_WINRT_STRICT&#95; &#95;** makro tanımı kaldırılır.
+Kullandığınız sürece bu makrolar ile klasik COM kullanmayın `#undef` emin olmak için yönergesi **&#95; &#95;WRL_WINRT_STRICT&#95; &#95;** Makro tanımında kaldırılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,5 +73,4 @@ Kullanmadığınız sürece bu makroları klasik COM ile kullanmayın `#undef` e
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-
 [Modül Sınıfı](../windows/module-class.md)

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1a6f88717b8fb371c343d17a9b38608876cd900
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: d49f915174383273f538c38a6ec002558601ca10
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948042"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466676"
 ---
 # <a name="rules-and-limitations-for-naked-functions"></a>Naked İşlevleri için Kurallar ve Sınırlamalar
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -80,5 +80,5 @@ __declspec(naked) int __fastcall  power(int i, int j) {
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Naked İşlevi Çağrıları](../cpp/naked-function-calls.md)

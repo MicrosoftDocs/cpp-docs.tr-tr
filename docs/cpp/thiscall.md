@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1b7718e4c6d270536f5d7973a1b5a3ec0e61f28
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: f878633e29fe2ea7bcb065f9851a907d81f6d20f
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941593"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461553"
 ---
 # <a name="thiscall"></a>__thiscall
 
@@ -47,5 +47,4 @@ Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımland
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
-
-- [Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)
+ [Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)

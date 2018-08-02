@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a55aca3abe95d189c40c7571db39fc48edf5f4cc
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: c278c39908312f76a8b62a529beaed884c07a81d
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948120"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461526"
 ---
 # <a name="subscripting"></a>Alt Simge Oluşturma
 Alt simge işleci (**[]**) gibi işlev çağrısı işleci, ikili işleç olarak kabul edilir. Alt simge işleci, tek bir bağımsız değişken alan bir statik olmayan üye işlev olmalıdır. Bu bağımsız değişken, herhangi bir türde olabilir ve istenen bir dizi alt simge belirtir.  
@@ -98,9 +98,9 @@ Element: [10] = 10
 ```  
   
 ## <a name="comments"></a>Açıklamalar  
- Zaman `i` önceki program 10 ulaştığında `operator[]` işlemleri indis kullanılıyor ve bir hata iletisi sorunları algılar.  
+ Zaman `i` önceki program 10 ulaştığında **operator []** işlemleri indis kullanılıyor ve bir hata iletisi sorunları algılar.  
   
- Unutmayın işlevi `operator[]` bir başvuru türü döndürür. Bu da simgeli ifade atama işleçleri her iki tarafında kullanmanıza olanak sağlayan lvalue, olmasını neden olur.  
+ Unutmayın işlevi **operator []** bir başvuru türü döndürür. Bu da simgeli ifade atama işleçleri her iki tarafında kullanmanıza olanak sağlayan lvalue, olmasını neden olur.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

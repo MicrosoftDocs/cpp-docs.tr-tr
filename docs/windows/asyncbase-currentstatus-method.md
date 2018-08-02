@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 75b9a07fd88caa9db7f2f145069b0d8857b79fe9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 316dfea16aa129dcaff42424bef46305d2dd56b4
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859696"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461435"
 ---
 # <a name="asyncbasecurrentstatus-method"></a>AsyncBase::CurrentStatus Yöntemi
 Geçerli zaman uyumsuz işlemin durumunu alır.  
@@ -36,11 +36,11 @@ inline void CurrentStatus(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `status`  
- Bu işlem geçerli durumunu depoladığı konumu.  
+ *Durumu*  
+ Bu işlem geçerli durumu depoladığı konum.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlem iş parçacığı güvenlidir.  
+ Bu işlem, iş parçacığı açısından güvenlidir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

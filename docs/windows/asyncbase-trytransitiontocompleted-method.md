@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1f628acd1424af11cab5040b2c65d528f1774dff
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f2185b83a393860904903f4b82b3c3b42a2c3b33
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861265"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460748"
 ---
 # <a name="asyncbasetrytransitiontocompleted-method"></a>AsyncBase::TryTransitionToCompleted Yöntemi
-Geçerli zaman uyumsuz işlemi tamamlanıp tamamlanmadığını gösterir.  
+Geçerli zaman uyumsuz işlem tamamlanıp tamamlanmadığını gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,7 +36,7 @@ bool TryTransitionToCompleted(
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` zaman uyumsuz işlemi tamamlandı Aksi takdirde `false`.  
+ **doğru** zaman uyumsuz işlem tamamlandıysa; Aksi takdirde, **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d995c8e35ed35d4581d8eec8b74fda1ebbca6519
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d22112e3478e17e8ed9688749c83cf1c3997d7e3
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880813"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465106"
 ---
 # <a name="comptrptr-data-member"></a>ComPtr::ptr_ Veri Üyesi
-İle ilişkili ve bu ComPtr tarafından yönetilen arabirimi için bir işaretçi içeriyor.  
+İle ilişkili olan ve bu tarafından yönetilen arabirimi için bir işaretçi içeren **ComPtr**.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,7 +34,7 @@ InterfaceType *ptr_;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ptr_` bir iç, korumalı veri üyesidir.  
+ **ptr_** iç ve korumalı veri üyesi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

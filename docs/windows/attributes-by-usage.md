@@ -15,30 +15,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 94ac32d1eac8a22603d31e23695540fe23cdd26b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 72da3eeebdf99ca637708e9e493f64730a350327
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860638"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465525"
 ---
 # <a name="attributes-by-usage"></a>Kullanıma Göre Öznitelikler
-Bu konuda uygulandıkları C++ dil öğeleri göre öznitelikler listelenir.  
+Bu konu, özniteliklere göre uygulandıkları C++ Dil öğelerini listeler.  
   
- Özniteliği özniteliğin kapsamında olmayan bir Visual C++ öğesi önceyse, öznitelik blok yorum olarak kabul edilir.  
+ Öznitelik özniteliğin kapsam içinde değil bir Visual C++ öğesi önceyse, öznitelik blok açıklama olarak kabul edilir.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|[Modül Öznitelikleri](../windows/module-attributes.md)|Uygulandığı öğe [Modülü](../windows/module-cpp.md) özniteliği.|  
-|[Arabirim Öznitelikleri](../windows/interface-attributes.md)|Uygulandığı öğe [__interface](../cpp/interface.md) C++ anahtar sözcüğü.|  
+|[Modül Öznitelikleri](../windows/module-attributes.md)|Uygulandığı [Modülü](../windows/module-cpp.md) özniteliği.|  
+|[Arabirim Öznitelikleri](../windows/interface-attributes.md)|Uygulandığı [__interface](../cpp/interface.md) C++ anahtar sözcüğü.|  
 |[Sınıf Öznitelikleri](../windows/class-attributes.md)|C++ anahtar sözcüğü için geçerlidir.|  
 |[Yöntem Öznitelikleri](../windows/method-attributes.md)|Bir sınıf, coclass'ı veya arabirim yöntemleri için geçerlidir.|  
-|[Parametre Öznitelikleri](../windows/parameter-attributes.md)|Sınıfta veya arabirimde yönteminde parametrelerinin uygular.|  
-|[Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)|Sınıfı, coclass'ı veya arabirim veri üyeleri için geçerlidir.|  
+|[Parametre Öznitelikleri](../windows/parameter-attributes.md)|Bir sınıf veya arabirim yönteminin parametreleri geçerlidir.|  
+|[Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)|Veri üyeleri sınıf, coclass'ı veya arabirim uygular.|  
 |[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)|C++ anahtar sözcükleri için geçerlidir.|  
-|[Dizi Öznitelikleri](../windows/array-attributes.md)|Diziler için geçerli veya **SAFEARRAY**s.|  
-|[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)|Bir kod satırı gibi daha fazla çalışır, ancak bir C++ anahtar sözcük çalışmaz. Tek başına özniteliği deyimleri noktalı satırın sonundaki gerektirir.|  
-|[Özel öznitelikler](../windows/custom-attributes-cpp.md)|Meta verileri genişletme olanak tanır.|  
+|[Dizi Öznitelikleri](../windows/array-attributes.md)|Diziler için geçerlidir veya `SAFEARRAY`s.|  
+|[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)|Bir kod satırı gibi çalışır, ancak C++ anahtar sözcüğü çalışmaz. Tek başına öznitelik deyimleri noktalı virgül satırın sonunda gerektirir.|  
+|[Özel öznitelikler](../windows/custom-attributes-cpp.md)|Meta verileri genişletme izin verir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ öznitelikleri başvurusu](../windows/cpp-attributes-reference.md)   

@@ -1,5 +1,5 @@
 ---
-title: AsyncBase::GetOnProgress yöntemi | Microsoft Docs
+title: AsyncBase::GetOnProgress metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 83af39180da819349e95051c57dc137835db87bb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e88509a77c58266c56290b84adfd1e7c143da2ef
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859546"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465093"
 ---
 # <a name="asyncbasegetonprogress-method"></a>AsyncBase::GetOnProgress Metodu
-Geçerli ilerleme olay işleyicisinin adresi belirtilen değişkenine kopyalar.  
+Adres geçerli ilerleme olay işleyicisinin belirtilen değişkenine kopyalar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ STDMETHOD(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `progressHandler`  
- Geçerli ilerleme olay işleyicisi adresini depolandığı konum.  
+ *progressHandler*  
+ Adres geçerli ilerleme olay işleyicisinin depolandığı konum.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde E_ILLEGAL_METHOD_CALL.  
+ Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

@@ -14,11 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9cfec6642604fb495051d44d816d4a3370e9a8e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3de0974608f313a497dfb93d357995e7cc578e4d
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467496"
 ---
 # <a name="references-to-pointers"></a>İşaretçi Başvuruları
 İşaretçilerin başvuruları, nesne başvurularıyla hemen hemen aynı şekilde bildirilebilir. Bir işaretçi başvurusunun bildirilmesi, normal bir işaretçi gibi kullanılan değiştirilebilir bir değer oluşturur.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 05/03/2018
   
  `Add1` ve `Add2` işlevleri, (aynı şekilde çağrılmasalar da) işlevsel olarak eşdeğerdir. Aralarındaki fark, `Add1`'in çift yöneltme kullanması, `Add2`'nin ise işaretçi başvurusundan yararlanmasıdır.  
   
-```  
+```cpp 
 // references_to_pointers.cpp  
 // compile with: /EHsc  
   
@@ -166,5 +167,5 @@ where:
 Input is from stdin.  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Başvurular](../cpp/references-cpp.md)

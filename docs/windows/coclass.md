@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5eb9c7e632151c039b76a0f389cd18c68c0740ab
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 99a8924776249a3a919a03ca76b4562c39994d4f
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33867018"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463124"
 ---
 # <a name="coclass"></a>coclass
 COM arabirimi uygulayan bir COM nesnesi oluşturur.  
@@ -30,62 +30,60 @@ COM arabirimi uygulayan bir COM nesnesi oluşturur.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [coclass]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Coclass** C++ öznitelik coclass yapı oluşturulan .idl dosyasına yerleştirir.  
+ **Coclass'ı** C++ özniteliği oluşturulmuş bir .idl dosyasında bir coclass'ı yapısı yerleştirir.  
   
- Ayrıca bir coclass'ı tanımlarken belirtebilirsiniz [UUID](../windows/uuid-cpp-attributes.md), [sürüm](../windows/version-cpp.md), [iş parçacığı oluşturma](../windows/threading-cpp.md), [vi_progid](../windows/vi-progid.md), ve [ProgID ](../windows/progid.md) öznitelikleri. Bunları herhangi biri belirtilmezse oluşturulur.  
+ Coclass'ı tanımlarken, ayrıca belirtebilirsiniz [UUID](../windows/uuid-cpp-attributes.md), [sürüm](../windows/version-cpp.md), [iş parçacığı](../windows/threading-cpp.md), [vi_progid](../windows/vi-progid.md), ve [program kimliği ](../windows/progid.md) öznitelikleri. Herhangi biri belirtilmezse oluşturulur.  
   
- İki üst bilgi dosyaları sınıflarıyla içeriyorsa **coclass** özniteliğini ve bir GUID belirtmeyin derleyici aynı GUID için her iki sınıfları kullanır ve bir MIDL hatasına neden olur.  Bu nedenle, kullanmanız gereken `uuid` özniteliği kullandığınızda **coclass'ı**.  
+ İki üst bilgi dosyaları sınıflarıyla içeriyorsa **coclass'ı** özniteliğini ve bir GUID belirtmeyin derleyici aynı GUID için hem sınıflarını kullanır ve bir MIDL hatasına neden olur.  Bu nedenle, kullanmalısınız `uuid` özniteliğini kullandığınızda **coclass'ı**.  
   
  **ATL projeleri**  
   
- Bu öznitelik bir sınıf veya yapı tanımı ATL projesinde önündeki zaman onu:  
+ Bu öznitelik, bir sınıf veya yapı tanımı bir ATL projesinde önce geldiğinde bunu:  
   
--   Kod veya nesne için otomatik kayıt desteklemek için veri yerleştirir.  
+-   Kod veya nesne için otomatik kayıt desteklemek için veri ekler.  
   
--   Kod veya nesne için bir COM sınıfı fabrikası desteklemek için veri yerleştirir.  
+-   Kod veya COM sınıf üreteci nesne için desteklemek için veri ekler.  
   
--   Kod veya uygulamak için veri yerleştirir **IUnknown** ve nesneyi bir COM creatable nesnesi yapın.  
+-   Kod veya uygulamak için veri eklediği `IUnknown` ve nesne haline getiren bir oluşturulabilir COM nesnesi.  
   
- Özellikle, aşağıdaki temel sınıflar hedef nesnesine eklendi:  
+ Özellikle, aşağıdaki temel sınıflar, hedef nesneye eklenir:  
   
--   [CComCoClass sınıfı](../atl/reference/ccomcoclass-class.md) nesne için varsayılan sınıf Fabrika ve toplama modeli sağlar.  
+-   [CComCoClass sınıfı](../atl/reference/ccomcoclass-class.md) nesne için varsayılan sınıf üreteci ve toplama modelini sağlar.  
   
--   [İn uygulamasına sınıfı](../atl/reference/ccomobjectrootex-class.md) sahip bir şablon tarafından belirtilen iş parçacığı modeli sınıfı göre [iş parçacığı oluşturma](../windows/threading-cpp.md) özniteliği. Varsa **iş parçacığı oluşturma** özniteliği belirtilmezse, apartman modeli iş parçacığı oluşturma varsayılan değerdir.  
+-   [CComObjectRootEx sınıfı](../atl/reference/ccomobjectrootex-class.md) sahip bir şablon tarafından belirtilen iş parçacığı model sınıfı göre [iş parçacığı](../windows/threading-cpp.md) özniteliği. Varsa `threading` özniteliği belirtilmezse, apartman modeli iş parçacığı varsayılan değerdir.  
   
--   [IProvideClassInfo2Impl](../atl/reference/iprovideclassinfo2impl-class.md) eklenir [noncreatable](../windows/noncreatable.md) özniteliği için hedef nesne belirtilmedi.  
+-   [Iprovideclassınfo2ımpl](../atl/reference/iprovideclassinfo2impl-class.md) eklenir [noncreatable](../windows/noncreatable.md) özniteliği için hedef nesne belirtilmedi.  
   
- Son olarak, katıştırılmış IDL kullanarak tanımlı değil tüm çift arabirim karşılık gelen ile değiştirilir [IDispatchImpl](../atl/reference/idispatchimpl-class.md) sınıfı. Çift arabirim katıştırılmış IDL içinde tanımlanmış olması durumunda, temel listesinde belirli arabirimi değiştirilmez.  
+ Son olarak, katıştırılmış IDL ile tanımlanmamış herhangi bir çift arabirim karşılık gelen ile değiştirilir [Idispatchımpl](../atl/reference/idispatchimpl-class.md) sınıfı. Çift arabirim katıştırılmış IDL içinde tanımlıysa, özel arabirim temel listesinde değiştirilmez.  
   
- **Coclass** özniteliği de kullanılabilir hale getirir aşağıdaki işlevleri durumunda veya eklenen kodu aracılığıyla `GetObjectCLSID`, statik yöntemi temel sınıf olarak `CComCoClass`:  
+ **Coclass'ı** özniteliği ayrıca aşağıdaki işlevleri kullanıma sunar eklenen kodu aracılığıyla ya da durumunda `GetObjectCLSID`, temel sınıfında statik bir yöntem olarak `CComCoClass`:  
   
--   `UpdateRegistry` sınıf oluşturucuları hedef sınıfın kaydeder.  
+-   `UpdateRegistry` hedef sınıfın sınıf üreteçlerini kaydeder.  
   
 -   `GetObjectCLSID`, kayıt için ilgili de kullanılabilir hedef sınıfın CLSID elde edilir.  
   
--   **GetObjectFriendlyName** varsayılan biçim dizesi döndürür "\<*hedef sınıf adını*> `Object`". Bu işlev zaten varsa, eklenmez. Bu işlev otomatik olarak oluşturulan daha yaşamanızı adını döndürmek için hedef sınıfına ekleyin.  
+-   `GetObjectFriendlyName` Varsayılan biçim dizesi döndürür "\<*hedef sınıf adı*> `Object`". Bu işlev zaten mevcutsa eklenmez. Bu işlev otomatik olarak oluşturulan olandan daha kolay adı döndürülecek hedef sınıfına ekleyin.  
   
--   **GetProgID**, kayıt için ilgili, döndürür belirtilen dize ile [ProgID](../windows/progid.md) özniteliği.  
+-   `GetProgID`, belirtilen dizeyi döndürür, kayıt için ilgili [ProgID](../windows/progid.md) özniteliği.  
   
--   **GetVersionIndependentProgID** aynı işlevselliğe sahip **GetProgID**, ancak belirtilen dizeyi döndürür [vi_progid](../windows/vi-progid.md).  
+-   `GetVersionIndependentProgID` aynı işlevlere sahip `GetProgID`, ancak belirtilen dizeyi döndürür [vi_progid](../windows/vi-progid.md).  
   
- COM eşlemesi ilgili aşağıdaki değişiklikler için hedef sınıf oluşturulur:  
+ Hedef sınıf için COM haritaya ilgili aşağıdaki değişiklikler yapılır:  
   
--   Hedef sınıf türetilen tüm arabirimler için girişleri ve tarafından belirtilen tüm girişleri ile COM eşlemesi eklenen [COM arabirimi giriş noktaları](../mfc/com-interface-entry-points.md) özniteliği ya da tarafından gerekli olanlar [toplamalar](../windows/aggregates.md) özniteliği.  
+-   COM eşlemesi girişleri tüm arabirimlerin hedef sınıf türetilir ve tarafından belirtilen tüm girişler eklenir [COM arabirimi giriş noktaları](../mfc/com-interface-entry-points.md) özniteliği veya gerektirdiği [toplamalar](../windows/aggregates.md) özniteliği.  
   
--   Bir [OBJECT_ENTRY_AUTO](../atl/reference/object-map-macros.md#object_entry_auto) makrosu COM eşlemeye eklenir.
+-   Bir [OBJECT_ENTRY_AUTO](../atl/reference/object-map-macros.md#object_entry_auto) makrosu, COM eşlemesine eklenir.
   
- Sınıfı için .idl dosyasında oluşturulan coclass'ı adını sınıf olarak aynı ada sahip olacaktır.  Örneğin ve aşağıdaki örneğe başvuran CLSID_CMyClass coclass CMyClass, MIDL üretilen üstbilgi dosyası aracılığıyla bir istemci için sınıf kimliği erişmek için kullanın.  
+ Oluşturulan sınıf için .idl dosyasındaki coclass adı, sınıfı aynı ada sahip.  Örneğin ve aşağıdaki örneğe başvuran CLSID_CMyClass sınıf kimliği için bir ' % s'coclass CMyClass, MIDL tarafından oluşturulan üstbilgi dosyası aracılığıyla istemcisinde erişmek için kullanın.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodu nasıl kullanılacağını gösterir **coclass** özniteliği:  
+ Aşağıdaki kod nasıl kullanılacağını gösterir **coclass'ı** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_coclass1.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -101,9 +99,9 @@ appobject, uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")]
 class CMyClass : public I {};  
 ```  
   
- Aşağıdaki örnek, varsayılan uygulaması tarafından eklenen kod görünür bir işlevi geçersiz kılmak gösterilmiştir **coclass** özniteliği. Bkz: [/Fx](../build/reference/fx-merge-injected-code.md) eklenen kodu görüntüleme hakkında daha fazla bilgi. Tüm temel sınıflar veya için bir sınıf kullanma arabirimleri olabilir görünür eklenen kodu.   Ayrıca, bir sınıf eklenen kodu varsayılan olarak dahil edilir ve açıkça o sınıfın temel olarak, coclass için belirttiğiniz, öznitelik sağlayıcısı kodunuzda belirtilen formu kullanın.  
+ Aşağıdaki örnek, varsayılan uygulama tarafından eklenen kodda görüntülenen bir işlevin geçersiz kılmak gösterilir **coclass'ı** özniteliği. Bkz: [/Fx](../build/reference/fx-merge-injected-code.md) eklenen kodu görüntüleme hakkında daha fazla bilgi. Tüm temel sınıflar veya bir sınıf için kullandığınız arabirimlerini olması görünür eklenen kodun.   Ayrıca, bir sınıf, varsayılan olarak eklenen kodu bulunur ve açıkça bu sınıf bir temel olarak, coclass'ı için belirttiğiniz, öznitelik sağlayıcısı kodunuzda belirtilen formu kullanın.  
   
-```  
+```cpp  
 // cpp_attr_ref_coclass2.cpp  
 // compile with: /LD  
 #include <atlbase.h>  
@@ -143,9 +141,9 @@ public:
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

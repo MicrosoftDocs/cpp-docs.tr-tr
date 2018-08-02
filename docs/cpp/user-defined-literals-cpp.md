@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 835f56498d3bc19f0b31ea9047f2e76d955183f4
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 38c3f60f7460a3d03f16141b5629bfc2d6183cae
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948033"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462381"
 ---
 # <a name="user-defined-literals--c"></a>Kullanıcı tanımlı değişmez değerler (C++)
 Değişmez değerlerinin beş temel kategori bulunur: tamsayı, karakter, kayan nokta, dize, Boole ve işaretçi.  C++ 11'de, başlangıç için ortak deyimleri söz dizimsel kısayolları sağlamak ve tür güvenliği artırmak için bu kategorilere göre kendi değişmez değerleri tanımlayabilirsiniz. Örneğin, bir uzaklık sınıf olduğunu varsayalım. Bir sabit değer için kilometre ve mil için başka bir tanımlayın ve teşvik yalnızca yazarak ölçü birimi hakkında açık olmasına olanak: otomatik d 42.0_km veya otomatik d = 42.0_mi =. Performans avantajı veya kullanıcı tanımlı değişmez değerler dezavantajı yoktur; Kolaylık olması için öncelikle veya derleme zamanı türü kesintisi için değildirler. Kullanıcı tanımlı değişmez değerler std:string, std::complex ve birimler için standart kitaplık zamanını ve süresini işlemlerinde sahip \<chrono > üst bilgi:  
@@ -31,7 +31,7 @@ Distance d = 36.0_mi + 42.0_km;         // Custom UDL (see below)
 ```  
   
 ## <a name="user-defined-literal-operator-signatures"></a>Kullanıcı tanımlı sabit değer operatörü imzaları  
- Bir kullanıcı tanımlı sabit değer tanımlayarak uygulamak bir `operator""` aşağıdaki biçimlerden biri ile ad alanı kapsamında:  
+ Bir kullanıcı tanımlı sabit değer tanımlayarak uygulamak bir **işleci ""** aşağıdaki biçimlerden biri ile ad alanı kapsamında:  
   
 ```cpp 
 ReturnType operator "" _a(unsigned long long int);   // Literal operator for user-defined INTEGRAL literal  
@@ -51,7 +51,7 @@ template<char...> ReturnType operator "" _t();       // Literal operator templat
  Önceki örnekte işleci sağladığınız dilediğiniz adı için yer tutucular adlarıdır; Ancak, alt çizgi gereklidir. (Yalnızca standart kitaplığı değişmez değerleri alt çizgi olmadan tanımlama izin verilmez.) Burada, dönüştürme veya değişmez değer gerçekleştiren başka bir işlem özelleştirme dönüş türüdür. Ayrıca, bu işleçler hiçbirini olarak tanımlanabilir `constexpr`.  
   
 ## <a name="cooked-literals"></a>İşlenmiş değişmez değerleri  
- Kullanıcı tanımlı ya da alfasayısal karakterler, aslında bir dizi gibi değil, herhangi bir sabit değer kaynakta kod `101`, veya `54.7`, veya `"hello"` veya `true`. Derleyici, dizi bir integer, float, const char olarak yorumlar\* dize ve benzeri. Değişmez değer atanmış derleyici türü ne olursa olsun girdi olarak kabul eden bir kullanıcı tanımlı bir sabit değer içinde gayri resmi yollardan olarak bilinen bir *işlenmiş literal*. Yukarıdaki tüm işleçleri dışında `_r` ve `_t` değişmez değerleri işlenmiş. Örneğin, bir sabit değer `42.0_km` adlı _km _b ve değişmez değer için benzer bir imzaya sahip bir işleç bağlayın `42_km` _a için benzer bir imzaya sahip bir işleç bağlayın.  
+ Kullanıcı tanımlı ya da alfasayısal karakterler, aslında bir dizi gibi değil, herhangi bir sabit değer kaynakta kod `101`, veya `54.7`, veya `"hello"` veya **true**. Derleyici, dizi bir integer, float, const char olarak yorumlar\* dize ve benzeri. Değişmez değer atanmış derleyici türü ne olursa olsun girdi olarak kabul eden bir kullanıcı tanımlı bir sabit değer içinde gayri resmi yollardan olarak bilinen bir *işlenmiş literal*. Yukarıdaki tüm işleçleri dışında `_r` ve `_t` değişmez değerleri işlenmiş. Örneğin, bir sabit değer `42.0_km` adlı _km _b ve değişmez değer için benzer bir imzaya sahip bir işleç bağlayın `42_km` _a için benzer bir imzaya sahip bir işleç bağlayın.  
   
  Nasıl kullanıcı tanımlı değişmez değerler aşağıdaki örnekte, giriş hakkında açık olmaya çağıranlar teşvik edebilir. Oluşturmak için bir `Distance`, kullanıcı açıkça kilometre ya da mil uygun kullanıcı tanımlı değişmez değeri kullanarak belirtmeniz gerekir. Elbette da başka şekillerde aynı sonucu elde edebilirsiniz, ancak kullanıcı tanımlı değişmez değerler alternatifleri daha az ayrıntılıdır.  
   
@@ -184,5 +184,4 @@ operator "" _dump_raw(const char*)        : ===>42<===
 operator "" _dump_raw(const char*)        : ===>3.1415926<===  
 operator "" _dump_raw(const char*)        : ===>3.14e+25<===   
 *****/  
-  
 ```

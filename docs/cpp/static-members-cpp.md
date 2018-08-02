@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9cfa2dd47f14053da9ef0b9620c9ce0dc05c5da
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 2d202e48bbcd09c3f4071af21e942cb1353f7a6b
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941986"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466247"
 ---
 # <a name="static-members-c"></a>Statik Üyeler [C++]
 Sınıflar, statik üye verileri ve üye işlevleri içerebilir. Ne zaman veri üyesi olarak bildirilen **statik**, sınıfın tüm nesneleri için verileri yalnızca bir kopyası saklanır.
@@ -86,5 +86,5 @@ long nBytes = Console.bytecount;
   
  Statik bir üyenin türü ve sınıf adıyla yeterli değil. Bu nedenle, türü `BufferedOutput::bytecount` olduğu **uzun**.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

@@ -15,31 +15,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 64da24a9811046672c317c24bba5332bf09303f9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 79d89eec82725b28bdbe43f08ac2c05cdb889f6e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860313"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466975"
 ---
 # <a name="attribute-parameter-types--c-component-extensions"></a>Öznitelik Parametre Türleri (C++ Bileşen Uzantıları)
-Öznitelikleri geçirilen değerlerinin derleyiciye derleme zamanında bilinmesi gerekir.  Öznitelik parametreleri aşağıdaki türde olabilir:  
+Öznitelikler için geçirilen değer derleyiciye derleme zamanında bilinen gerekir.  Öznitelik parametreleri aşağıdaki türde olabilir:  
   
--   `bool`  
+-   **bool**  
   
--   `char`, `unsigned char`  
+-   **char**, **işaretsiz karakter**  
   
--   `short`, `unsigned short`  
+-   **kısa**, **işaretsiz**  
   
--   `int`, `unsigned int`  
+-   **int**, **işaretsiz int**  
   
--   `long`, `unsigned long`  
+-   **uzun**, **işaretsiz uzun**  
   
--   `__int64`, `unsigned __int64`  
+-   **__int64**, **unsigned __int64**  
   
--   `float`, `double`  
+-   **float**, **çift**  
   
--   `wchar_t`  
+-   **wchar_t**  
   
 -   `char*` veya `wchar_t*` veya `System::String*`  
   
@@ -47,13 +47,13 @@ ms.locfileid: "33860313"
   
 -   `System::Object ^`  
   
--   `enum`  
+-   **enum**  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // attribute_parameter_types.cpp  
 // compile with: /clr /c  
 using namespace System;  
@@ -77,11 +77,11 @@ ref struct MyStruct {
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Öznitelikleri belirtirken, tüm adlandırılmamış (konumsal) bağımsız değişkenleri herhangi bir adlandırılmış bağımsız değişkeni gelmelidir.  
+ Öznitelikleri belirtirken, tüm adlandırılmamış (konumsal) bağımsız değişkenler adlandırılmış bağımsız değişkenler gelmelidir.  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // extending_metadata_c.cpp  
 // compile with: /clr /c  
 using namespace System;  
@@ -114,7 +114,7 @@ ref class ClassD {};   // Positional and named
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // extending_metadata_d.cpp  
 // compile with: /clr /c  
 using namespace System;  

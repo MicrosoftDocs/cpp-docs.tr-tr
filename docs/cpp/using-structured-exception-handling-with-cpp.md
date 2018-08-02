@@ -15,17 +15,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71ce64a067ed75c29d83913adababe2d97dba6f0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 363dd00cd5f4e177ea32a109cf5f56a1f3c6cb29
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32421957"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461731"
 ---
 # <a name="using-structured-exception-handling-with-c"></a>Yapılandırılmış Özel Durum İşlemeyi C++ ile Kullanma
-Yapılandırılmış özel durum işleme C ve C++ kaynak dosyalarını içeren works bu makalelerde açıklanan. Ancak, özellikle C++ için tasarlanmamıştır ve önerilmez. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum mekanizması işleme daha esnek ve herhangi bir tür özel durumlar işleyebilir olmamasıdır.  
+Yapılandırılmış özel durum işleme, hem C hem de C++ kaynak dosyalarını içeren works aşağıdaki makalelerde açıklanan. Ancak, özellikle C++ için tasarlanmamıştır ve önerilmez. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme mekanizmasını daha esnek ve herhangi bir türde özel durumları işleyebilir olmamasıdır.  
   
- Microsoft C++ C++ özel durum işleme modeli ANSI C++ Standart göre şimdi destekler. Bu mekanizma yerel nesneleri yok etme yığını geriye doğru izleme sırasında otomatik olarak yönetir. Hataya dayanıklı C++ kodu yazma ve özel durum işleme uygulamak isterseniz, C++ özel durum işleme, yapılandırılmış özel durum işleme yerine kullanmanız önerilir. (C++ derleyicisi yapılandırılmış özel durum şu makalelerinde açıklandığı gibi yapıları işleme desteklerken, standart C Derleyici C++ özel durum söz dizimi işleme desteklemiyor unutmayın.) C++ özel durum işleme hakkında ayrıntılı bilgi için bkz: [C++ özel durum işleme](../cpp/cpp-exception-handling.md) ve *C++ başvuru el ile Açıklama* Mine Ellis ve çalışan Bjarne Stroustrup tarafından.  
+ Microsoft C++, C++ özel durum işleme modeli, ANSI C++ Standard'ı temel artık desteklemektedir. Bu mekanizma, yerel nesnelerin yok edilmesi yığın bırakma sırasında otomatik olarak işler. Hataya dayanıklı C++ kod yazıyorsanız ve özel durum işleme uygulamak istiyorsanız, C++ özel durum işleme, yapılandırılmış özel durum işleme yerine kullanmanız önerilir. (C++ Derleyici yapılandırılmış özel durum aşağıdaki makalelerde açıklanan yapıları işleme desteklese de, standart C Derleyici C++ özel durum söz dizimi işleme desteklemediğini unutmayın.) C++ özel durum işleme hakkında ayrıntılı bilgi için bkz: [C++ özel durum işleme](../cpp/cpp-exception-handling.md) ve *Annotated C++ Reference Manual* Margaret Ellis ve Bjarne Stroustrup tarafından.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

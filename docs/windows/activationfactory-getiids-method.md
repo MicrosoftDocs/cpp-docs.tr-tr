@@ -1,5 +1,5 @@
 ---
-title: Activationfactory::getıids yöntemi | Microsoft Docs
+title: Activationfactory::getıids metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6f411f3b2f9e777a4e458b64176ace77a8d13e86
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8f937bf3da7aab803164ca968ba9fa3de227ce03
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855516"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463530"
 ---
 # <a name="activationfactorygetiids-method"></a>ActivationFactory::GetIids Metodu
 Uygulanan arabirimi kimlikleri dizisini alır.  
@@ -36,14 +36,14 @@ STDMETHOD(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `iidCount`  
- Bu işlem tamamlandığında, interace kimlikleri sayısı `iids` dizi.  
+ *Iidcount*  
+ Bu işlem tamamlandığında, nesneniz kimlikleri sayısı *IID'leri* dizisi.  
   
- `iids`  
- Bu işlem tamamlandığında, bir dizi arabirim kimlikleri uygulanmadı.  
+ *IID'leri*  
+ Bu işlem tamamlandığında, bir dizi arabirim kimlikleri uygulanır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata açıklar. E_OUTOFMEMORY, HRESULT olası bir hatadır.  
+ Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT. E_OUTOFMEMORY olası bir hata HRESULT ' dir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

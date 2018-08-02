@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3c873494a702802b8ead3dab9cac28557664f618
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1a4fee4991459ddbab0ac370f025776529a6bd1e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871331"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464554"
 ---
 # <a name="criticalsectionlock-method"></a>CriticalSection::Lock Yöntemi
-Belirtilen kritik bölüm nesnenin sahipliğini bekler. Çağıran iş parçacığı sahipliği verildiğinde işlevi döndürür.  
+Belirtilen kritik bölüm Nesne sahipliği için bekler. Çağıran iş parçacığını sahipliği verildiğinde işlevi döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,14 +38,14 @@ SyncLock Lock();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `cs`  
+ *cs*  
  Bir kullanıcı tarafından belirtilen kritik bölüm nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli kritik bölümün kilidini açmak için kullanılan bir kilit nesnesi.  
+ Geçerli kritik bölümün kilidini açmak için kullanılan nesnesi kilitlenemedi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk **kilit** işlevi geçerli kritik bölüm nesne etkiler. İkinci **kilit** işlevi, kullanıcı tarafından belirtilen kritik bölüm etkiler.  
+ İlk **kilit** işlevi, geçerli kritik bölüm nesnesini etkiler. İkinci **kilit** işlevi kullanıcı tanımlı bir kritik bölüm etkiler.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

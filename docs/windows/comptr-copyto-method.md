@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 680c1278ca2b17c7ea35e72946fb5d5030c5e7c0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 724803fbbf04bd697dfc85f6576ed5706d708eae
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870877"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464447"
 ---
 # <a name="comptrcopyto-method"></a>ComPtr::CopyTo Yöntemi
-Kopya geçerli ya da belirtilen arabirimi belirtilen işaretçisine bu ComPtr ile ilişkili.  
+Şununla ilişkili geçerli ya da belirtilen arabirim kopyalar **ComPtr** belirtilen işaretçi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,24 +46,24 @@ HRESULT CopyTo(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `U`  
+ *U*  
  Tür adı.  
   
- `ptr`  
- Bu işlem tamamlandığında, istenen arabirimi için bir işaretçi.  
+ *ptr*  
+ Bu işlem tamamlandığında istenen arabirim işaretçisi.  
   
- `riid`  
- Bir arabirim kimliği  
+ *riid*  
+ Bir arabirim kimliği.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT örtük QueryInterface işlemi neden başarısız gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, nedenini belirten bir HRESULT örtük `QueryInterface` işlemi başarısız oldu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk işlev bu ComPtr ile ilişkili arabiriminin bir işaretçi bir kopyasını döndürür. Bu işlev, her zaman S_OK döndürür.  
+ İlk işlev, bununla ilişkili arabirimi için bir işaretçi bir kopyasını döndürür. **ComPtr**. Bu işlev her zaman S_OK döndürür.  
   
- İkinci işlev tarafından belirtilen arabirim için bu ComPtr ilişkili arabirimindeki QueryInterface işlemi gerçekleştirir `riid` parametresi.  
+ İkinci işlevi gerçekleştiren bir `QueryInterface` işlemi ile ilişkili arabirimde **ComPtr** tarafından belirtilen arabirim için *riid* parametresi.  
   
- QueryInterface işlemi için temel alınan arabiriminin bu ComPtr ilişkili arabirimde üçüncü işlevi gerçekleştirir `U` parametresi.  
+ Üçüncü işlevi gerçekleştiren bir `QueryInterface` işlemi ile ilişkili arabirimde **ComPtr** temel arabirimi için *U* parametresi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

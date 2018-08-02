@@ -1,5 +1,5 @@
 ---
-title: C++ özel durum işlenmemiş | Microsoft Docs
+title: İşlenmeyen C++ özel durumlarını | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,19 +18,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db763ce602531b15e840013a6dd235b3fba4007e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2e2162034b3e9ff93ebccca0f7eb53299b19c648
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467541"
 ---
 # <a name="unhandled-c-exceptions"></a>İşlenilmeyen C++ Özel Durumları
-Eşleşen bir işleyici varsa (veya üç nokta **catch** işleyici) geçerli özel durumu için önceden tanımlanmış bulunamıyor `terminate` çalışma zamanı işlevi çağrılır. (İşleyicilerinizden herhangi birinde `terminate`'i de açıkça çağırabilirsiniz.) Varsayılan `terminate` işlemi, `abort` çağırmaktır. `terminate`'in uygulamadan çıkmadan önce programınızda başka bir işlevi çağırmasını isterseniz, tek bağımsız değişkeni olarak çağrılacak işlevin adıyla birlikte `set_terminate`'i çağırın. Programınızın herhangi bir noktasında `set_terminate`'i çağırabilirsiniz. `terminate` Yordamı her zaman bir bağımsız değişken olarak verilen son işlevi çağırır `set_terminate`.  
+Eşleşen bir işleyici (ya da üç nokta **catch** işleyicisi) geçerli özel durum için önceden tanımlanmış nebyla nalezena `terminate` çalışma zamanı işlevi çağrılır. (İşleyicilerinizden herhangi birinde `terminate`'i de açıkça çağırabilirsiniz.) Varsayılan `terminate` işlemi, `abort` çağırmaktır. `terminate`'in uygulamadan çıkmadan önce programınızda başka bir işlevi çağırmasını isterseniz, tek bağımsız değişkeni olarak çağrılacak işlevin adıyla birlikte `set_terminate`'i çağırın. Programınızın herhangi bir noktasında `set_terminate`'i çağırabilirsiniz. `terminate` Yordamı her zaman bir bağımsız değişken olarak verilen son işlevi çağırır `set_terminate`.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, bir `char *` özel durumu oluşturur, `char *` türündeki özel durumları yakalayacağı belirtilen bir işleyici içermez. `set_terminate` çağrısı, `terminate`'e `term_func` çağırmasını bildirir.  
   
-```  
+```cpp 
 // exceptions_Unhandled_Exceptions.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -55,11 +56,11 @@ int main() {
   
 ## <a name="output"></a>Çıkış  
   
-```  
+```Output  
 term_func was called by terminate.  
 ```  
   
  `term_func` işlevi, ideal olarak `exit` çağrısıyla programı veya geçerli iş parçacığını sonlandırmalıdır. Sonlandırmazsa ve bunun yerine arayanına dönerse, `abort` çağrılır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

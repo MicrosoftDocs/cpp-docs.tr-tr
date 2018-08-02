@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9826b689e2b8a640efe66e8625b97b3cec347acf
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d72506e3f384a784bce4d159e8e76e88098c79f7
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862068"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461815"
 ---
 # <a name="attribute"></a>özniteliği
 Özel bir öznitelik oluşturmanıza olanak sağlar.  
@@ -33,8 +33,7 @@ ms.locfileid: "33862068"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ attribute(  
+[ attribute(  
    AllowOn,  
    AllowMultiple=boolean,  
    Inherited=boolean  
@@ -43,34 +42,34 @@ ms.locfileid: "33862068"
   
 #### <a name="parameters"></a>Parametreler  
  *AllowOn*  
- Özel öznitelik uygulanabilir dil öğeleri belirtir. Varsayılan değer **System::AttributeTargets::All** (bkz [System::AttributeTargets](https://msdn.microsoft.com/en-us/library/system.attributetargets.aspx)).  
+ Özel öznitelik uygulanabilir dil öğelerini belirtir. Varsayılan değer `System::AttributeTargets::All` (bkz [System::AttributeTargets](https://msdn.microsoft.com/library/system.attributetargets.aspx)).  
   
- `AllowMultiple`  
- Özel öznitelik için bir yapı art arda uygulanabilir olup olmadığını belirtir. Varsayılan değer **FALSE**.  
+ *AttributeUsage*  
+ Özel öznitelik için bir yapı art arda uygulanabilir olup olmadığını belirtir. FALSE varsayılan değerdir.  
   
- `Inherited`  
- Öznitelik alt sınıflar tarafından devralınır olup olmadığını gösterir. Derleyici hiçbir özel destek için bu işlevsellik sağlar; Bu bilgileri dikkate almanız özniteliği tüketicileri (örneğin, yansıma) iş değil. Varsa `Inherited` olan **doğru**, öznitelik devralınır. Varsa `AllowMultiple` olan **TRUE**, öznitelik varsa türetilmiş üyesinde; toplanacaktır `AllowMultiple` olan **FALSE**, öznitelik geçersiz kılma (Değiştir devralma veya). Varsa `Inherited` olan **yanlış**, öznitelik devralınmaz. Varsayılan değer **doğru**.  
+ *Devralınan*  
+ Öznitelik alt sınıflar tarafından devralınmaz olup olmadığını gösterir. Derleyici, bu işlev için hiçbir özel destek sağlar; Bu öznitelik Tüketici (örneğin, yansıma) bu bilgileri dikkate iş. Varsa *devralınan* doğru ise, öznitelik devralınır. Varsa *AttributeUsage* doğru ise, öznitelik ise türetilen üyesinde; birikir *AttributeUsage* yanlış, öznitelik geçersiz kılma (Değiştir Devralmada veya). Varsa *devralınan* yanlış, öznitelik devralınmaz. Varsayılan değer True'dur.  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  `attribute` Özniteliği artık kullanım dışı.  Ortak dil çalışma zamanı özniteliği System.Attribute'un doğrudan kullanıcı tanımlı attirbutes oluşturmak için kullanın.  Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../windows/user-defined-attributes-cpp-component-extensions.md).  
+>  `attribute` Özniteliği artık kullanım dışı.  Kullanıcı tanımlı attirbutes oluşturmak için doğrudan ortak dil çalışma zamanı öznitelik System.Attribute'ı kullanın.  Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../windows/user-defined-attributes-cpp-component-extensions.md).  
   
- Tanımladığınız bir [özel öznitelik](../windows/custom-attributes-cpp.md) yerleştirerek `attribute` bir yönetilen sınıf veya yapı tanımı özniteliği. Özel öznitelik sınıfı adıdır. Örneğin:  
+ Tanımladığınız bir [özel öznitelik](../windows/custom-attributes-cpp.md) yerleştirerek `attribute` yönetilen bir sınıf veya yapı tanımı özniteliği. Sınıf özel öznitelik adıdır. Örneğin:  
   
 ```  
 [ attribute(Parameter) ]  
 public ref class MyAttr {};  
 ```  
   
- işlev parametreleri için uygulanabilir MyAttr adlı bir öznitelik tanımlar. Sınıf özniteliği diğer derlemelerde kullanılacak edecekse ortak olmalıdır.  
+ adlı bir öznitelik tanımlar `MyAttr` işlev parametreleri için uygulanabilir. Sınıfı, öznitelik diğer derlemelerde kullanılacak yayınlanıyorsa ortak olmalıdır.  
   
 > [!NOTE]
->  Ad çakışmaları önlemek için tüm öznitelik adları dolaylı olarak "Özniteliği ile"; bitiş Bu örnekte, sınıf ve öznitelik gerçekten MyAttrAttribute adıdır, ancak MyAttr ve MyAttrAttribute birbirinin yerine kullanılabilir.  
+>  Ad çakışmalarını önlemek için tüm öznitelik adları örtük olarak "Özniteliği"; ile bitmelidir Bu örnekte, sınıf ve öznitelik adı gerçekte olduğu `MyAttrAttribute`, ancak `MyAttr` ve `MyAttrAttribute` birbirlerinin yerine kullanılabilir.  
   
- Sınıfın ortak oluşturucu özniteliğin adlandırılmamış parametrelerini tanımlayın. Aşırı yüklenmiş oluşturucular özel bir öznitelik aşağıdaki şekilde tanımlandığı şekilde öznitelik belirtmemeye birkaç yolu izin ver:  
+ Sınıfın genel oluşturucular özniteliğin adlandırılmamış parametreleri tanımlayın. Aşağıdaki şekilde özel bir öznitelik tanımlandığı şekilde öznitelik belirtmemeye birçok yolu aşırı yüklü oluşturucular sağlar:  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute.cpp  
 // compile with: /c /clr  
 using namespace System;  
@@ -88,9 +87,9 @@ ref class ClassA {};   // Attribute with no parameters
 ref class ClassB {};   // Attribute with one parameter  
 ```  
   
- Sınıfın genel veri üyelerini ve Özellikler özniteliğin isteğe bağlı adlandırılmış parametreler şunlardır:  
+ Sınıfın ortak veri üyeleri ve özellikleri özniteliğin isteğe bağlı adlandırılmış parametreler şunlardır:  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute_2.cpp  
 // compile with: /c /clr  
 using namespace System;  
@@ -112,13 +111,13 @@ public:
 ref class ClassC {};  
 ```  
   
- Olası öznitelik parametre türleri listesi için bkz: [özel öznitelikleri](../windows/custom-attributes-cpp.md).  
+ Olası öznitelik parametre türleri listesi için bkz. [özel öznitelikler](../windows/custom-attributes-cpp.md).  
   
- Bkz: [kullanıcı tanımlı öznitelikler](../windows/user-defined-attributes-cpp-component-extensions.md) özniteliği hedeflerde bir tartışma için.  
+ Bkz: [kullanıcı tanımlı öznitelikler](../windows/user-defined-attributes-cpp-component-extensions.md) öznitelik hedefleri hakkındaki bir tartışmaya.  
   
- `attribute` Özniteliğine sahip bir `AllowMultiple` özel öznitelik tek kullanılıp kullanılmadığını belirten parametre veya multiuse (görünebilir birden çok kez aynı varlık üzerinde).  
+ `attribute` Özniteliğine sahip bir *AttributeUsage* özel özniteliği tek kullanılıp kullanılmadığını belirten bir parametre veya multiuse (görünebilir birden çok kez aynı varlığa).  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute_3.cpp  
 // compile with: /c /clr  
 using namespace System;  
@@ -131,7 +130,7 @@ ref struct MyAttr {
 ref class ClassA {};  
 ```  
   
- Özel öznitelik sınıfları türetilir doğrudan veya dolaylı olarak <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>, hızlı ve kolay meta verilerde özniteliği tanımlarını tanımlayan hangi yapar. `attribute` Özniteliği gelir System::Attribute, devralmadan açık türetme gerekli değildir:  
+ Özel öznitelik sınıfları türetilir doğrudan veya dolaylı olarak <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>, hızlı ve kolay meta veri özniteliği tanımlarını tanımlayan hale getirir. `attribute` Özniteliği gelir System::Attribute, içinden devralma açık türetme gerekli değildir:  
   
 ```  
 [ attribute(Class) ]  
@@ -145,7 +144,7 @@ ref class MyAttr
 ref class MyAttr : System::Attribute   // OK, but redundant.  
 ```  
   
- `attribute` bir diğer adı için <xref:System.AttributeUsageAttribute?displayProperty=fullName> (değil AttributeAttribute; özniteliği adlandırma kuralı için bir özel durum budur).  
+ `attribute` için bir diğer addır <xref:System.AttributeUsageAttribute?displayProperty=fullName> (değil AttributeAttribute; özniteliği adlandırma kuralı için bir özel durum budur).  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -153,16 +152,16 @@ ref class MyAttr : System::Attribute   // OK, but redundant.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`ref` **sınıf**, **ref yapısı**|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**başvuru sınıfı**, **ref struct**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute_4.cpp  
 // compile with: /c /clr  
 using namespace System;  
@@ -176,9 +175,9 @@ ref class MyClass {};
 ```  
   
 ## <a name="example"></a>Örnek  
- `Inherited` Adlandırılmış bağımsız değişkeni bir temel sınıf üzerinde uygulanan özel bir öznitelik türetilmiş bir sınıf yansıma üzerinde görünür olup olmadığını belirtir.  
+ `Inherited` Adlandırılmış bağımsız değişken, bir taban sınıfa uygulanan özel bir öznitelik türetilmiş bir sınıfın yansıma görünür olup olmadığını belirtir.  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute_5.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -218,4 +217,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öznitelikler alfabetik başvurusu](../windows/attributes-alphabetical-reference.md)   
- [Özel öznitelikler](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Özel öznitelikler](http://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

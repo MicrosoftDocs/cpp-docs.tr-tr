@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e3a632c96c39ccd40f008556287af95944530cdc
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d08eb264ff3b4fc2f0170d6aee742ff29611613e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871181"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465376"
 ---
 # <a name="comptrcomptr-constructor"></a>ComPtr::ComPtr Oluşturucusu
-ComPtr sınıfı yeni bir örneğini intializes. Aşırı varsayılan, kopyalama, taşıma ve dönüştürme oluşturucuları sağlar.  
+Yeni bir örneğini başlatır **ComPtr** sınıfı. Varsayılan, kopyalama, taşıma ve dönüştürme oluşturucuları aşırı yüklemeler sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -59,22 +59,22 @@ WRL_NOTHROW ComPtr(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `U`  
- `other` parametresinin türü.  
+ *U*  
+ Türünü *diğer* parametresi.  
   
- `other`  
- Türünde bir nesne `U`.  
+ *Diğer*  
+ Bir nesne türü *U*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucusu hangi implictly boş bir nesne oluşturur varsayılan oluşturucu, ' dir. İkinci oluşturucu belirtir [__nullptr](../windows/nullptr-cpp-component-extensions.md), boş bir nesne açıkça oluşturulur.  
+ İlk Oluşturucu boş bir nesneye hangi insert oluşturur varsayılan oluşturucudur. İkinci oluşturucu belirtir [__nullptr](../windows/nullptr-cpp-component-extensions.md), boş bir nesneye açıkça oluşturulur.  
   
- Üçüncü Oluşturucusu bir işaretçi tarafından belirtilen nesne bir nesne oluşturur.  
+ Üçüncü Oluşturucu bir işaretçi tarafından belirtilen nesne bir nesne oluşturur.  
   
- Dördüncü ve beşinci oluşturucular kopya oluşturucuları ' dir. Geçerli türüne dönüştürülebilir ise beşinci Oluşturucusu nesne kopyalar.  
+ Dördüncü ve beşinci oluşturucular kopya oluşturucuları ' dir. Geçerli türüne dönüştürülebilir ise beşinci Oluşturucu nesneyi kopyalar.  
   
- Altıncı ve yedinci oluşturucular taşıma oluşturucuları ' dir. Geçerli türüne dönüştürülebilir ise yedinci Oluşturucusu nesneyi taşır.  
+ Altıncı ve yedinci oluşturucular taşıma oluşturucuları ' dir. Geçerli türüne dönüştürülebilir ise yedinci Oluşturucusu bir nesneyi taşır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0cd18d340a11575ed9f6f52d92a5910dcee1faec
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fa5988516f3836749357b15295ac228b78fe3f04
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859741"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467247"
 ---
 # <a name="asyncbasefirecompletion-method"></a>AsyncBase::FireCompletion Yöntemi
-Tamamlama olay işleyiciyi çağırır veya iç ilerleme temsilci sıfırlar.  
+Tamamlanma olayı işleyicisini çağırır veya iç ilerleme temsilci sıfırlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,7 +38,7 @@ virtual void FireCompletion();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- FireCompletion() ilk sürümü iç ilerleme temsilci değişkeni sıfırlar. Zaman uyumsuz işlemi tamamlandığında ikinci sürüm tamamlama olay işleyiciyi çağırır.  
+ Ürününün ilk sürümünü **FireCompletion()** iç ilerleme temsilci değişkeni sıfırlar. Zaman uyumsuz işlem tamamlandıysa ikinci sürüm tamamlama olay işleyicisini çağırır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

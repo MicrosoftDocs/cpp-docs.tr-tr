@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9c4ff889f808eda00e5b2ce426cd800678b4829f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 70a331bbbf34a623b02e9d8bc9aa0b80fbee2216
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881802"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467137"
 ---
 # <a name="creatormapactivationid-data-member"></a>CreatorMap::activationId Veri Üyesi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -37,14 +37,14 @@ union {
 ```  
   
 ## <a name="parameters"></a>Parametreler  
- `clsid`  
- Bir arabirim kimliği  
+ *CLSID*  
+ Bir arabirim kimliği.  
   
- `getRuntimeName`  
- Bir nesnenin Windows çalışma zamanı adını alır. bir işlev.  
+ *getRuntimeName*  
+ Windows çalışma zamanı adı bir nesne alır. bir işlev.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tarafından tanımlanan bir nesne kimliği temsil eder.  
+ Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanımlanmış bir nesne kimliği temsil eder.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

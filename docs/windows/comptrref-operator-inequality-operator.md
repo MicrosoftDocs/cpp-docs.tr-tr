@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3d5a6e7389215452177add30b587004c312aeae1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7ebe71706ce1091ee21fc6fbd63e65b201c096b5
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883560"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462930"
 ---
 # <a name="comptrrefoperator-operator"></a>ComPtrRef::operator!= İşleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -55,21 +55,21 @@ bool operator!=(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `a`  
- ComPtrRef bir nesneye başvuru.  
+ *a*  
+ Bir başvuru bir **ComPtrRef** nesne.  
   
- `b`  
- Başka bir ComPtrRef nesne ya da bir işaretçi anonim bir nesneye başvuru (`void*`).  
+ *b*  
+ Başka bir başvuru **ComPtrRef** nesne veya anonim bir nesneye bir işaretçi (`void*`).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İlk işleci veriyor `true` , nesne `a` nesnesine eşit değil `b`; Aksi halde, `false`.  
+ İlk işleç sayıları **true** , nesne *bir* nesnesine eşit değil *b*; Aksi takdirde **false**.  
   
- İkinci ve üçüncü işleçleri verim `true` , nesne `a` eşit değil `nullptr`; Aksi halde, `false`.  
+ İkinci ve üçüncü işleçleri yield **true** , nesne *bir* eşit değildir **nullptr**; Aksi takdirde **false**.  
   
- Dördüncü ve beşinci işleçleri verim `true` , nesne `a` nesnesine eşit değil `b`; Aksi halde, `false`.  
+ Dördüncü ve beşinci işleçleri yield **true** , nesne *bir* nesnesine eşit değil *b*; Aksi takdirde **false**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İki ComPtrRef nesnenin eşit olup olmadığını gösterir.  
+ Belirtir olup iki **ComPtrRef** nesneler eşit değildir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

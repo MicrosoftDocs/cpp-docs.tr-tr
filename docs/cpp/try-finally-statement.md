@@ -28,17 +28,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea792bde6e50f0e4149f802a5c852192def0fefa
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 043c11a6255e3b80fde176f1b2525e8285bbff12
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948047"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464866"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 **Microsoft'a özgü**  
   
- Aşağıdaki söz dizimini açıklar `try-finally` deyimi:  
+ Aşağıdaki söz dizimini açıklar **try-finally** deyimi:  
   
 ```cpp 
 __try {  
@@ -55,7 +55,7 @@ __finally {
   
  **__finally** *bileşik deyim*  
   
- `try-finally` Hedef uygulamaların kod bloğunun yürütülmesi kesintiye uğradığında temizleme kodu yürütme garanti sağlayan bir Microsoft uzantısı C ve C++ dilleri için bir ifadedir. Temizleme gibi görevleri belleğini, dosyaları kapatma ve dosya tanıtıcıları bırakarak oluşur. `try-finally` Sahip olduğu bir onay yapılır neden olabilecek bir hata için erken çeşitli yerlerde yordamlarını yordamından döndürmek için deyimi özellikle yararlıdır.  
+ **Try-finally** hedef uygulamaların kod bloğunun yürütülmesi kesintiye uğradığında temizleme kodu yürütme garanti sağlayan bir Microsoft uzantısı C ve C++ dilleri için bir ifadedir. Temizleme gibi görevleri belleğini, dosyaları kapatma ve dosya tanıtıcıları bırakarak oluşur. **Try-finally** sahip olduğu bir onay yapılır neden olabilecek bir hata için erken çeşitli yerlerde yordamlarını yordamından döndürmek için deyimi özellikle yararlıdır.  
   
  İlgili bilgiler ve bir kod örneği için bkz: [deneyin-except deyimi](../cpp/try-except-statement.md). Yapılandırılmış özel durum işleme genel hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). Yönetilen uygulamaların özel durumları işleme hakkında daha fazla bilgi için bkz: [/CLR altında özel durum işleme](../windows/exception-handling-cpp-component-extensions.md).  
   
@@ -83,20 +83,20 @@ Sonlandırma işleyicisi yürütme sırası
 >  Try-finally davranışını kullanımını destekleyen bazı diğer dillerden farklı **son**, C# gibi.  Tek bir **__try** ya da, her ikisi birden biri olabilir **__finally** ve **__except**.  Her ikisi de birlikte kullanılmak üzere olduğunda, bir dış deneyin-dışında deyimi iç try-finally deyimi almalısınız.  Her blok yürütüldüğünde belirten kuralları da farklıdır.  
   
 ## <a name="the-leave-keyword"></a>__leave Anahtar Sözcüğü  
- **__Leave** anahtar sözcüğü yalnızca korunan bölümünde geçerlidir bir `try-finally` deyimi ve etkisi korunan bölümün sonuna atlama etmektir. Yürütme, sonlandırma işleyicisi içindeki ilk deyimde devam eder.  
+ **__Leave** anahtar sözcüğü yalnızca korunan bölümünde geçerlidir bir **try-finally** deyimi ve etkisi korunan bölümün sonuna atlama etmektir. Yürütme, sonlandırma işleyicisi içindeki ilk deyimde devam eder.  
   
  A **goto** deyimi korumalı bölümün dışına da atlayabilir ve yığın geriye doğru izleme çağırdığından performansı düşürür. **__Leave** deyimi olduğundan daha verimli yığın geriye doğru izleme çıkarmaz.  
   
 ## <a name="abnormal-termination"></a>Olağan dışı sonlandırma  
- Çıkmadan bir `try-finally` using deyimi [longjmp](../c-runtime-library/reference/longjmp.md) çalışma zamanı işlevi olağan dışı sonlandırma olarak kabul edilir. Bloğuna atlamak için geçersiz bir **__try** deyimi, ancak yasal birinden dışarı atlanabilir. Tüm **__finally** kalkış noktası arasında etkin olan deyimleri (normal sonlandırılması **__try** bloğu) ve hedef ( **__except** , engelle özel durum işleme) çalıştırmanız gerekir. Bu, yerel geriye doğru izleme adı verilir.  
+ Çıkmadan bir **try-finally** using deyimi [longjmp](../c-runtime-library/reference/longjmp.md) çalışma zamanı işlevi olağan dışı sonlandırma olarak kabul edilir. Bloğuna atlamak için geçersiz bir **__try** deyimi, ancak yasal birinden dışarı atlanabilir. Tüm **__finally** kalkış noktası arasında etkin olan deyimleri (normal sonlandırılması **__try** bloğu) ve hedef ( **__except** , engelle özel durum işleme) çalıştırmanız gerekir. Bu, yerel geriye doğru izleme adı verilir.  
   
  Varsa bir **deneyin** blok blok dışında bir atlama dahil olmak üzere herhangi bir nedenle erken sonlandırılır, sistem ilişkili yürütür **son** yığın geriye doğru izleme, blok işleminin bir parçası olarak. Bu gibi durumlarda [AbnormalTermination](http://msdn.microsoft.com/library/windows/desktop/ms679265) işlevinin döndürdükleriyle **true** içinden çağrılırsa **son** engelle; Aksi halde **false**.  
   
- Sonlandırma işleyicisi yürütülürken sonlandırılırsa bir işlem sonlandırılırsa çağrılmaz bir `try-finally` deyimi.  
+ Sonlandırma işleyicisi yürütülürken sonlandırılırsa bir işlem sonlandırılırsa çağrılmaz bir **try-finally** deyimi.  
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)   
  [Yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   

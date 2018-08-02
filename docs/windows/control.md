@@ -17,30 +17,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d8e80736ca84b551f197cc475aed4c7b54b9bf52
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 93ffba61c9e0edaf3d127a7ddfb12b098ae484ca
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870838"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466493"
 ---
 # <a name="control"></a>denetimi
-Kullanıcı tanımlı tür denetim olduğunu belirtir.  
+Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [control]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Denetim** özniteliği gelir [coclass](../windows/coclass.md) özniteliği. **Denetim** C++ özniteliğine sahip ile aynı işlevselliği [denetim](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL özniteliği.  
+ **Denetimi** özniteliği gelir [coclass'ı](../windows/coclass.md) özniteliği. **Denetimi** C++ özniteliği ile aynı işlevlere sahip [denetimi](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_control.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -61,9 +59,9 @@ class CTest : public ICustom {};
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

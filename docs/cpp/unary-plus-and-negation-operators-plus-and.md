@@ -21,18 +21,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa500288ec4982ca4e1d304fac2cd577d58f4207
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 06e7f6bd089866619d82798bb220580e8a11b04b
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948230"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460899"
 ---
 # <a name="unary-plus-and-negation-operators--and--"></a>Birli Artı ve Değilleme işleçleri: + ve -
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 + cast-expression  
 - cast-expression  
 ```  
@@ -50,6 +49,6 @@ ms.locfileid: "37948230"
 ## <a name="microsoft-specific"></a>Microsoft'a özgü  
  Tekli olumsuzlama işaretsiz miktarlar, işlenenin 2'den çıkarılmasıyla gerçekleştirilir ^ n, n, bit işaretsiz belirtilen türde bir nesne sayısı.
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

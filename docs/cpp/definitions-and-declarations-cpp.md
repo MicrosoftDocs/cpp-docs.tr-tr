@@ -12,16 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951a7d5c4c171a6662c55d9ae7906cc1500cd137
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 5d192234a2b3cd3d72bef15e11678ebc41ccede0
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406737"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462894"
 ---
 # <a name="definitions-and-declarations-c"></a>Tanımlar ve Bildirimler (C++)
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
- DLL arabirimi, sistemdeki bazı programlar tarafından dışa aktarılacak bilinen tüm öğelere (İşlevler ve veriler) gösterir. olarak bildirilen diğer bir deyişle, tüm öğeleri **dllimport** veya **dllexport**. DLL arabirimine dahil olan tüm bildirimler belirtmeli **dllimport** veya **dllexport** özniteliği. Ancak, tanım yalnızca belirtmelisiniz **dllexport** özniteliği. Örneğin, aşağıdaki işlev tanımı bir derleyici hatası oluşturur:
+**Microsoft Specific** sistemdeki bazı programlar tarafından dışa aktarılacağı bilinen tüm öğelere (İşlevler ve veriler); diğer bir deyişle, olarak bildirilen tüm öğeler için DLL arabirimi başvuruyor **dllimport** veya **dllexport** . DLL arabirimine dahil olan tüm bildirimler belirtmeli **dllimport** veya **dllexport** özniteliği. Ancak, tanım yalnızca belirtmelisiniz **dllexport** özniteliği. Örneğin, aşağıdaki işlev tanımı bir derleyici hatası oluşturur:
 
 ```
 __declspec( dllimport ) int func() {   // Error; dllimport

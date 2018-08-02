@@ -1,5 +1,5 @@
 ---
-title: Belirteçleri (C++) | Microsoft Docs
+title: Belirteçler (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,16 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2e1a6cc36e4e5f2f785c1e5dff03c6fb5e392d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 217061557acb0c8b311a91651eea2f57a8198872
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467535"
 ---
-# <a name="tokens-c"></a>Belirteçleri (C++)
+# <a name="tokens-c"></a>Belirteçler (C++)
 Bir belirteç C++ programının derleyicisi için anlamlı olan en küçük öğesidir. C++ ayrıştırıcısı şu tür belirteçleri tanır: Tanımlayıcılar, anahtar sözcükler, sabitler, işleçler, noktalayıcılar ve diğer ayıraçlar. Bu belirteçlerin akışı bir çeviri birimi oluşturur.  
   
- Belirteçleri genellikle ayrılır *boşluk*. Bir veya daha fazla boşluk olabilir:  
+ Belirteç tarafından ayrılmış genellikle *boşluk*. Bir veya daha fazla boşluk olabilir:  
   
 -   Boşluklar  
   
@@ -38,19 +39,19 @@ Bir belirteç C++ programının derleyicisi için anlamlı olan en küçük öğ
   
 -   Açıklamalar  
   
- Ayrıştırıcının anahtar sözcükler, tanımlayıcılar, değişmez değerleri, işleçler ve noktalama işaretleri tanır. Belirli belirteç türleri hakkında daha fazla bilgi için bkz: [anahtar sözcükleri](../cpp/keywords-cpp.md), [tanımlayıcıları](../cpp/identifiers-cpp.md), [sayısal, Boole ve işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md), [dize ve karakter değişmez değerleri ](../cpp/string-and-character-literals-cpp.md), [Kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md), [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md), ve [noktalama işaretleri](../cpp/punctuators-cpp.md). Beyaz alan ayırmak için gerektiği şekilde belirteçleri dışında yoksayılır.  
+ Ayrıştırıcının, anahtar sözcükler, tanımlayıcılar, değişmez değerler, işleçler ve noktalama tanır. Belirli belirteç türleri hakkında daha fazla bilgi için bkz: [anahtar sözcükleri](../cpp/keywords-cpp.md), [tanımlayıcıları](../cpp/identifiers-cpp.md), [sayısal, Boole ve işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md), [dize ve karakter değişmez değerleri ](../cpp/string-and-character-literals-cpp.md), [Kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md), [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md), ve [noktalama](../cpp/punctuators-cpp.md). Ayırmak için gerektiği gibi belirteçler dışında boşluk yoksayılır.  
   
- Önişlem belirteçleri önişlem aşamalarında derleyiciye geçirilen belirteç akışı oluşturmak için kullanılır. Önişlem belirteci kategoriler üstbilgi adları, tanımlayıcılar, önişlem numaraları, karakter değişmez değerleri, dize değişmez değerleri, önişlem işleçler ve noktalama işaretleri ve diğer kategorilerden birini eşleşmiyor tek boşluk olmayan karakterler bulunur. Karakter ve dize değişmez değerleri, kullanıcı tanımlı değişmez değerler olabilir. Belirteçleri ön işleme boşluk veya açıklamalar tarafından ayrılabilir.  
+ Ön işleme belirteçleri, ön işleme aşamalar için derleyici geçirilen belirteç akışı oluşturmak için kullanılır. Ön işleme belirteci kategoriler, üst bilgi adları, tanımlayıcılar, ön işleme numaraları, karakter değişmez değerleri, dize değişmez değerleri, ön işleme işleçleri ve noktalama işaretçileri ve diğer kategorilerden birini eşleşmeyen tek boşluk olmayan karakterle bulunur. Karakter ve dize değişmez değerleri, kullanıcı tanımlı değişmez değerler olabilir. Ön işleme belirteci boşluk veya açıklamaları ayrılabilir.  
   
  Ayrıştırıcı, soldan sağa taramada girdi karakterlerini kullanarak olası en uzun belirteci oluşturarak, belirteçleri girdi akışından ayırır. Bu kod parçasını göz önünde bulundurun:  
   
-```  
+```cpp 
 a = i+++j;  
 ```  
   
  Kodu yazan programcı bu iki deyimden birini amaçlamış olabilir:  
   
-```  
+```cpp 
 a = i + (++j)  
   
 a = (i++) + j  
@@ -58,5 +59,5 @@ a = (i++) + j
   
  Ayrıştırıcı girdi akışından olası en uzun belirteci oluşturduğundan, ikinci yorumu seçer ve `i++`, `+` ile `j` belirtecini yapar.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

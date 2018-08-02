@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb594eb10e8068d5f5b3ed124d5e77b48ced728e
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 6c08edff8237462cbc2c55dc5541e3da663ed0a3
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37947998"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461119"
 ---
 # <a name="return-statement-in-program-termination-c"></a>Program Sonlandırmada return Deyimi (C++)
-Veren bir `return` deyimden **ana** çağırmakla işlevsel olarak eşdeğerdir **çıkmak** işlevi. Aşağıdaki örnek göz önünde bulundurun:  
+Veren bir **dönüş** deyimden `main` çağırmakla işlevsel olarak eşdeğerdir `exit` işlevi. Aşağıdaki örnek göz önünde bulundurun:  
   
 ```cpp 
 // return_statement.cpp  
@@ -36,7 +36,7 @@ int main()
 }  
 ```  
   
- **Çıkmak** ve **dönüş** önceki örnekte deyimleri aynı işleve sahiptir. Ancak, C++ işlevleri farklı dönüş türlerine, gerektirir **void** bir değer döndürür. **Dönüş** ifadesi bir değer döndürmek verir `main`.  
+ `exit` Ve **dönüş** önceki örnekte deyimleri aynı işleve sahiptir. Ancak, C++ işlevleri farklı dönüş türlerine, gerektirir **void** bir değer döndürür. **Dönüş** ifadesi bir değer döndürmek verir `main`.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Program Sonlandırma](../cpp/program-termination.md)

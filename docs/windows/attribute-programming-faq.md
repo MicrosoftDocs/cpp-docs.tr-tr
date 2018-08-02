@@ -17,53 +17,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 35b57c8813778cf0bbf8efbfcbee8466074b87f0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5cdc7bb8a97be6fbc8c77c06caaddf95a3095323
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862370"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463749"
 ---
 # <a name="attribute-programming-faq"></a>Öznitelik Programlama SSS
 Bu konuda aşağıdaki sık sorulan sorular yanıtlanmaktadır:  
   
 -   [HRESULT nedir?](#vcconattributeprogrammmingfaqanchor1)  
   
--   [Bir öznitelik için parametre adı belirtmek ne zaman var mı?](#vcconattributeprogrammmingfaqanchor2)  
+-   [Bir öznitelik parametresi adını belirtmek ne zaman sahip?](#vcconattributeprogrammmingfaqanchor2)  
   
--   [Öznitelik bloğunda açıklamaları kullanabilir miyim?](#vcconattributeprogrammmingfaqanchor3)  
+-   [Bir öznitelik bloğunda açıklamaları kullanabilir miyim?](#vcconattributeprogrammmingfaqanchor3)  
   
--   [Öznitelikleri devralma ile nasıl etkileşim?](#vcconattributeprogrammmingfaqanchor4)  
+-   [Öznitelikleri devralma ile nasıl etkileşime?](#vcconattributeprogrammmingfaqanchor4)  
   
--   [Öznitelikleri nonattributed ATL projede nasıl kullanabilirim?](#vcconattributeprogrammmingfaqanchor5)  
+-   [Öznitelikleri nonattributed bir ATL projesinde nasıl kullanabilirim?](#vcconattributeprogrammmingfaqanchor5)  
   
--   [Öznitelikli projesinde .idl dosyasında nasıl kullanabilir miyim?](#vcconattributeprogrammmingfaqanchor6)  
+-   [Öznitelik atanmış projede bir .idl dosyası nasıl kullanabilirim?](#vcconattributeprogrammmingfaqanchor6)  
   
--   [Bir öznitelik tarafından eklenen kod değiştirebilir mi?](#vcconattributeprogrammmingfaqanchor7)  
+-   [Bir öznitelik tarafından eklenen kod değiştirebiliyorum?](#vcconattributeprogrammmingfaqanchor7)  
   
--   [Nasıl öznitelikli arabirim İleri bildirimini yapabilir?](#vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface)  
+-   [Nasıl bir öznitelikli arabirimi İleri bildirme?](#vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface)  
   
--   [Ayrıca öznitelikler kullanan bir sınıfından türetilen bir sınıf öznitelikleri kullanabilir miyim?](#vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor)  
+-   [Öznitelikleri kullanan bir sınıftan türetilen bir sınıfta öznitelikleri kullanabilir miyim?](#vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor)  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor1"></a> HRESULT nedir?  
- Bir `HRESULT` genellikle dönüş değeri olarak öznitelikleri ve ATL tarafından genel olarak kullanılan bir basit veri türü. Aşağıdaki tabloda, çeşitli değerleri açıklanmaktadır. Daha fazla değer üstbilgi dosyası Winerror.h'de içinde yer alır.  
+ Bir `HRESULT` çoğunlukla bir dönüş değeri olarak öznitelikleri ve ATL tarafından genel olarak kullanılan bir basit veri türü. Aşağıdaki tabloda, çeşitli değerleri açıklanmaktadır. Daha fazla değer üst bilgi dosyası wınerror içinde yer alır.  
   
 |Ad|Açıklama|Değer|  
 |----------|-----------------|-----------|  
 |S_OK|İşlem başarılı|0x00000000|  
 |E_UNEXPECTED|Beklenmeyen bir hata oluştu|0x8000FFFF|  
 |E_NOTIMPL|Uygulanmadı|0x80004001|  
-|E_OUTOFMEMORY|Gerekli bellek ayrılamadı.|0x8007000E|  
+|E_OUTOFMEMORY|Gerekli bellek ayrılamadı|0x8007000E|  
 |E_INVALIDARG|Bir veya daha fazla bağımsız değişken geçersiz|0x80070057|  
 |E_NOINTERFACE|Böyle bir arabirim desteklenmiyor|0x80004002|  
-|E_POINTER|Geçersiz bir işaretçi|0x80004003|  
-|E_HANDLE|Geçersiz tanıtıcı|0x80070006|  
+|E_POINTER|Geçersiz işaretçi|0x80004003|  
+|E_HANDLE|Geçersiz işleç|0x80070006|  
 |E_ABORT|İşlem iptal edildi|0x80004004|  
 |E_FAIL|Belirtilmeyen hata|0x80004005|  
 |E_ACCESSDENIED|Genel erişim reddedildi hatası|0x80070005|  
   
-##  <a name="vcconattributeprogrammmingfaqanchor2"></a> Bir öznitelik için parametre adı belirtmek ne zaman var mı?  
- Çoğu durumda, tek bir parametre özniteliğine sahipse, bu parametrenin adı verilir. Bu ad, öznitelik kodunuzda eklerken gerekli değildir. Örneğin, aşağıdaki kullanımı [toplanabilir](../windows/aggregatable.md) özniteliği:  
+##  <a name="vcconattributeprogrammmingfaqanchor2"></a> Bir öznitelik parametresi adını belirtmek ne zaman sahip?  
+ Tek bir parametre özniteliğine sahipse, çoğu durumda, bu parametre olarak adlandırılır. Bu ad, öznitelik kodunuzda eklerken gerekli değildir. Örneğin, aşağıdaki kullanımı [toplanabilir](../windows/aggregatable.md) özniteliği:  
   
 ```  
 [coclass, aggregatable(value=allowed)]  
@@ -83,11 +83,11 @@ class CMyClass
 };  
 ```  
   
- Ancak, tek, adlandırılmamış parametreleri aşağıdaki özniteliklere sahiptir:  
+ Ancak, tek ve adlandırılmamış parametreler aşağıdaki özniteliklere sahiptir:  
   
 ||||  
 |-|-|-|  
-|[call_as](../windows/call-as.md)|[Durumu](../windows/case-cpp.md)|[cpp_quote](../windows/cpp-quote.md)|  
+|[call_as](../windows/call-as.md)|[Servis talebi](../windows/case-cpp.md)|[cpp_quote](../windows/cpp-quote.md)|  
 |[default](../windows/default-cpp.md)|[defaultvalue](../windows/defaultvalue.md)|[defaultvtable](../windows/defaultvtable.md)|  
 |[emitidl](../windows/emitidl.md)|[entry](../windows/entry.md)|[first_is](../windows/first-is.md)|  
 |[helpcontext](../windows/helpcontext.md)|[helpfile](../windows/helpfile.md)|[helpstring](../windows/helpstring.md)|  
@@ -99,8 +99,8 @@ class CMyClass
 |[size_is](../windows/size-is.md)|[Kaynak](../windows/source-cpp.md)|[switch_is](../windows/switch-is.md)|  
 |[switch_type](../windows/switch-type.md)|[transmit_as](../windows/transmit-as.md)|[wire_marshal](../windows/wire-marshal.md)|  
   
-##  <a name="vcconattributeprogrammmingfaqanchor3"></a> Öznitelik bloğunda açıklamaları kullanabilir miyim?  
- Bir öznitelik bloğu içinde tek satırlı ve birden çok satırlı açıklamaları kullanabilirsiniz. Ancak, açıklama parametreleri için bir öznitelik bulunduran parantez içinde ya da bir tarzını kullanamazsınız.  
+##  <a name="vcconattributeprogrammmingfaqanchor3"></a> Bir öznitelik bloğunda açıklamaları kullanabilir miyim?  
+ Bir öznitelik blok içindeki tek satır hem de birden çok satırlı açıklamaları kullanabilirsiniz. Ancak, ya da yorum parametreleri için bir öznitelik bulunduran parantezlerinin stilini kullanamazsınız.  
   
  Aşağıdaki izin verilir:  
   
@@ -112,7 +112,7 @@ class CMyClass
 ]  
 ```  
   
- Aşağıdaki izin verilmiyor:  
+ Aşağıdaki izin verilmez:  
   
 ```  
 [ coclass,  
@@ -121,21 +121,21 @@ class CMyClass
 ]  
 ```  
   
-##  <a name="vcconattributeprogrammmingfaqanchor4"></a> Öznitelikleri devralma ile nasıl etkileşim?  
- Öznitelikli ve unattributed sınıfları kendilerini veya öznitelikli diğer sınıflardan devralabilirsiniz. Öznitelikli sınıfından türetilen aynı öznitelik sağlayıcı kendi kod dönüştürdü sonra bu sınıftan türetilen sonucudur. Öznitelikler için türetilen sınıflar C++ devralma üzerinden iletilmez. Bir öznitelik sağlayıcısı yalnızca kod özniteliklerini kapsamına dönüştürür.  
+##  <a name="vcconattributeprogrammmingfaqanchor4"></a> Öznitelikleri devralma ile nasıl etkileşime?  
+ Öznitelikli ve unattributed sınıfları kendileri veya kaynağı diğer sınıflardan devralabilir. Öznitelikli bir sınıftan türetme sonucu özniteliği sağlayıcısı kodunu dönüştürdü sonra bu sınıftan türetme aynıdır. Öznitelikler için türetilmiş sınıfları C++ devralma yoluyla iletilmez. Bir öznitelik sağlayıcısı, yalnızca kod kapsamına özniteliklerini dönüştürür.  
   
-##  <a name="vcconattributeprogrammmingfaqanchor5"></a> Öznitelikleri nonattributed ATL projede nasıl kullanabilirim?  
- Bir .idl dosyası olan nonattributed bir ATL Proje olabilir ve öznitelikli nesneleri eklemek isteyebilirsiniz. Bu durumda, kod sağlamak için sınıf Ekleme Sihirbazı'nı kullanın.  
+##  <a name="vcconattributeprogrammmingfaqanchor5"></a> Öznitelikleri nonattributed bir ATL projesinde nasıl kullanabilirim?  
+ Bir .idl dosyası olan nonattributed bir ATL projesine sahip olabilir ve öznitelikli nesne eklemeye başlamak isteyebilirsiniz. Bu durumda, kod sağlamak için sınıf Ekleme Sihirbazı'nı kullanın.  
   
-##  <a name="vcconattributeprogrammmingfaqanchor6"></a> Öznitelikli projesinde .idl dosyasında nasıl kullanabilir miyim?  
- Öznitelikli ATL projenizde kullanmak istediğiniz bir .idl dosyanız olabilir. Bu durumda, kullanacağınız [importidl](../windows/importidl.md) öznitelik, bir .h dosyasına .idl dosyasını derleyin (bkz [MIDL özellik sayfaları](../ide/midl-property-pages.md) projenin özellik sayfaları iletişim kutusunda) ve ardından .h dosyası projenize ekleme .  
+##  <a name="vcconattributeprogrammmingfaqanchor6"></a> Öznitelik atanmış projede bir .idl dosyası nasıl kullanabilirim?  
+ Öznitelikli ATL projenizde kullanmak istediğiniz bir .idl dosyası olabilir. Bu durumda, kullanacağınız [importidl](../windows/importidl.md) öznitelik, bir .h dosyası .idl dosyasına derlemek (bkz [MIDL özellik sayfaları](../ide/midl-property-pages.md) proje özellik sayfaları iletişim kutusunda) ve ardından .h dosyası projenize ekleyin .  
   
-##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Bir öznitelik tarafından eklenen kod değiştirebilir mi?  
- Bazı öznitelikler kod projenize ekleme. Eklenen kodu kullanarak gördüğünüz [/Fx](../build/reference/fx-merge-injected-code.md) derleyici seçeneği. Eklenen dosyanın kodu kopyalayın ve kaynak kodunuzu yapıştırmak mümkündür. Bu öznitelik davranışını değiştirmenize olanak sağlar. Ancak, diğer bölümleri kodunuzu de değiştirmeniz gerekebilir.  
+##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Bir öznitelik tarafından eklenen kod değiştirebiliyorum?  
+ Bazı öznitelikler kod projenize ekleyin. Eklenen kodu kullanarak gördüğünüz [/Fx](../build/reference/fx-merge-injected-code.md) derleyici seçeneği. Eklenen dosyanın kodu kopyalayın ve kaynak kodunuza yapıştırmak mümkündür. Bu öznitelik davranışını değiştirmenizi sağlar. Ancak, diğer bölümlerinde de kodunuzu değiştirmeniz gerekebilir.  
   
- Aşağıdaki örnek, bir kaynak kodu dosyasına eklenen kodu kopyalama sonucu olan:  
+ Aşağıdaki örnek bir kaynak kod dosyasına eklenen kodu kopyalama sonucudur:  
   
-```  
+```cpp  
 // attr_injected.cpp  
 // compile with: comsupp.lib  
 #define _ATL_ATTRIBUTES 1  
@@ -253,11 +253,11 @@ public:
 int main() {}  
 ```  
   
-##  <a name="vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface"></a> Nasıl öznitelikli arabirim İleri bildirimini yapabilir?  
- Öznitelikli arabirim ileriye dönük bildirimi yapmak için kullanacaksanız, gerçek arabirimi bildirimine uygulayın iletme bildirimine aynı öznitelikleri uygulamanız gerekir. Ayrıca uygulamalısınız [verme](../windows/export.md) özniteliği, ileriye dönük bildirimi.  
+##  <a name="vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface"></a> Nasıl bir öznitelikli arabirimi İleri bildirme?  
+ Öznitelikli arabirim İleri dönük bildiriminin yapmak için kullanacaksanız, gerçek bir arabirim bildirimi için geçerli İleri dönük bildirimi için aynı öznitelikleri uygulamanız gerekir. Ayrıca uygulamalısınız [dışarı](../windows/export.md) özniteliği, İleri dönük bildirimi için.  
   
-##  <a name="vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor"></a> Ayrıca öznitelikler kullanan bir sınıfından türetilen bir sınıf öznitelikleri kullanabilir miyim?  
- Hayır, öznitelikler de kullanan bir sınıfından türetilmiş bir sınıf öznitelikleri kullanma desteklenmiyor.  
+##  <a name="vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor"></a> Öznitelikleri kullanan bir sınıftan türetilen bir sınıfta öznitelikleri kullanabilir miyim?  
+ Hayır, öznitelikleri kullanan bir sınıftan türetilen bir sınıfta öznitelikleri kullanma desteklenmiyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../windows/attributed-programming-concepts.md)

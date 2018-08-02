@@ -1,5 +1,5 @@
 ---
-title: AsyncBase::get_Status yöntemi | Microsoft Docs
+title: AsyncBase::get_Status metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 46854ddfd6891efa2f205649d4b6410cc401e7fb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1590d07a7b37e7dd3abf09377a03734299cb124c
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863367"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460964"
 ---
 # <a name="asyncbasegetstatus-method"></a>AsyncBase::get_Status Metodu
 Zaman uyumsuz işlemin durumunu gösteren bir değer alır.  
@@ -36,14 +36,14 @@ STDMETHOD(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `status`  
- Durum depolanması bulunduğu konum. Daha fazla bilgi için bkz: Windows::Foundation::AsyncStatus numaralandırması.  
+ *Durumu*  
+ Durum depolanacak bulunduğu konumu. Daha fazla bilgi için bkz: Windows::Foundation::AsyncStatus sabit listesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde E_ILLEGAL_METHOD_CALL.  
+ Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem IAsyncInfo::get_Status uygular.  
+ Bu yöntem `IAsyncInfo::get_Status`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

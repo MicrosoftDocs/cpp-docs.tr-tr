@@ -16,30 +16,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4366b5d804275f78ef1c3b4f1dd8e8e51b01b8c2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 02aa14eccddca4bc3631957d6aa3d3d1b2af6894
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860664"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463460"
 ---
 # <a name="compiler-attributes"></a>Derleyici Öznitelikleri
-Derleyici öznitelikleri işlevleri, çeşitli sağlar.  
+Derleyici öznitelikleri işlevleri çeşitli sağlar.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|[emitidl](../windows/emitidl.md)|Tüm sonraki IDL öznitelikleri işlenen ve olması oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirler.|  
-|[event_receiver](../windows/event-receiver.md)|Olay alıcısı oluşturur.|  
-|[event_source](../windows/event-source.md)|Bir olay kaynağı oluşturur.|  
-|[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
-|[Uygular](../windows/implements-cpp.md)|IDL coclass'ı üyeleri olmaya zorlanıp gönderme arabirimleri belirtir.|  
-|[importidl](../windows/importidl.md)|Belirtilen .idl dosya oluşturulan .idl dosyasına ekler.|  
-|[importlib](../windows/importlib.md)|Zaten başka bir tür kitaplığı oluşturulan tür kitaplığı kullanılabilir içine derlenmiştir türleri sağlar.|  
-|[includelib](../windows/includelib-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olur.|  
-|[library_block](../windows/library-block.md)|.İdl dosyanın kitaplığı bloktaki bir yapı yerleştirir.|  
-|[no_injected_text](../windows/no-injected-text.md)|Özellik kullanımı sonucunda kodu injecting derleyici engeller.|  
-|[satype](../windows/satype.md)|Veri türünü belirtir **SAFEARRAY**.|  
-|[Sürüm](../windows/version-cpp.md)|Belirli bir sürüm arasında bir arabirim ya da sınıf birden fazla sürümünü tanımlar.|  
+|[emitidl](../windows/emitidl.md)|Tüm sonraki IDL öznitelikleri işlem görüp oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirler.|  
+|[event_receiver](../windows/event-receiver.md)|Bir olay alıcısı oluşturur.|  
+|[event_source](../windows/event-source.md)|Olay kaynağı oluşturur.|  
+|[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|  
+|[Uygulayan](../windows/implements-cpp.md)|IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.|  
+|[importidl](../windows/importidl.md)|Belirtilen .idl dosyası oluşturulan .idl dosyasına ekler.|  
+|[importlib](../windows/importlib.md)|Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullanılabilir derlenmiştir türleri sağlar.|  
+|[includelib](../windows/includelib-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.|  
+|[library_block](../windows/library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|  
+|[no_injected_text](../windows/no-injected-text.md)|Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.|  
+|[satype](../windows/satype.md)|Veri türü belirtir `SAFEARRAY`.|  
+|[Sürüm](../windows/version-cpp.md)|Belirli bir sürüm arasında bir arabirim veya sınıf birden çok sürümünü tanımlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)

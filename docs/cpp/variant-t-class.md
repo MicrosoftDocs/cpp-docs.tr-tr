@@ -20,40 +20,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70a3406d53296c778eba2ce9a6794afac2c846bd
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 9315c2bb946cd80dd68153543ad6ae532ec9b7a0
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939812"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460878"
 ---
 # <a name="variantt-class"></a>_variant_t Sınıfı
 **Microsoft'a özgü**  
   
- A `_variant_t` kapsülleyen nesne `VARIANT` veri türü. Sınıf kaynak ayırmayı ve ayırmayı yönetir ve işlev çağrıları yapan `VariantInit` ve `VariantClear` uygun şekilde.  
+ A **_variant_t** kapsülleyen nesne `VARIANT` veri türü. Sınıf kaynak ayırmayı ve ayırmayı yönetir ve işlev çağrıları yapan `VariantInit` ve `VariantClear` uygun şekilde.  
   
 ### <a name="construction"></a>Oluşturma  
   
 |||  
 |-|-|  
-|[_variant_t](../cpp/variant-t-variant-t.md)|Oluşturur bir `_variant_t` nesne.|  
+|[_variant_t](../cpp/variant-t-variant-t.md)|Oluşturur bir **_variant_t** nesne.|  
   
 ### <a name="operations"></a>İşlemler  
   
 |||  
 |-|-|  
-|[Attach](../cpp/variant-t-attach.md)|Bağlanan bir `VARIANT` içine nesne `_variant_t` nesne.|  
+|[Attach](../cpp/variant-t-attach.md)|Bağlanan bir `VARIANT` içine nesne **_variant_t** nesne.|  
 |[Temizle](../cpp/variant-t-clear.md)|Kapsüllenmiş temizler `VARIANT` nesne.|  
-|[ChangeType](../cpp/variant-t-changetype.md)|Değişiklikleri türde `_variant_t` belirtilen nesneye `VARTYPE`.|  
-|[Detach](../cpp/variant-t-detach.md)|Kapsüllenmiş ayırır `VARIANT` bu nesneden `_variant_t` nesne.|  
-|[SetString](../cpp/variant-t-setstring.md)|Bir dize için atar `_variant_t` nesne.|  
+|[ChangeType](../cpp/variant-t-changetype.md)|Değişiklikleri türde **_variant_t** belirtilen nesneye `VARTYPE`.|  
+|[Detach](../cpp/variant-t-detach.md)|Kapsüllenmiş ayırır `VARIANT` bu nesneden **_variant_t** nesne.|  
+|[SetString](../cpp/variant-t-setstring.md)|Bir dize için atar **_variant_t** nesne.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç =](../cpp/variant-t-operator-equal.md)|Mevcut bir yeni bir değer atar `_variant_t` nesne.|  
-|[işleç ==,! =](../cpp/variant-t-relational-operators.md)|Karşılaştırabilirsiniz `_variant_t` eşitlik ve eşitsizlik için nesneleri.|  
+|[işleç =](../cpp/variant-t-operator-equal.md)|Mevcut bir yeni bir değer atar **_variant_t** nesne.|  
+|[işleç ==,! =](../cpp/variant-t-relational-operators.md)|Karşılaştırabilirsiniz **_variant_t** eşitlik ve eşitsizlik için nesneleri.|  
 |[Ayıklayıcıları](../cpp/variant-t-extractors.md)|Kapsüllenmiş verileri ayıklamak `VARIANT` nesne.|  
   
 **END Microsoft özgü**  
@@ -63,5 +63,5 @@ ms.locfileid: "37939812"
   
  **Lib:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Derleyici COM Desteği Sınıfları](../cpp/compiler-com-support-classes.md)

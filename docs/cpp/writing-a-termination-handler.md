@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d37319e50e7d2429ca9b64c5fc81d8c7c4418ed5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d9773817337bce2f054b279724db9859cc2faa41
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32423242"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462839"
 ---
 # <a name="writing-a-termination-handler"></a>Sonlandırma İşleyicisi Yazma
 Bir özel durum işleyicisinin tersine, bir sonlandırma işleyicisi korunan kod bloğunun normal bir şekilde sonlandırılıp sonlandırılmadığına bakılmaksızın her zaman yürütülür. Sonlandırma işleyicisinin temel amacı bellek, tanıtıcılar ve dosyalar gibi kaynakları bir kod bölümünün yürütülmesinin nasıl sona erdiğine bakılmaksızın uygun bir şekilde kapatmaktır.  
@@ -39,9 +39,9 @@ Bir özel durum işleyicisinin tersine, bir sonlandırma işleyicisi korunan kod
   
 -   [Kaynakları temizleme](../cpp/cleaning-up-resources.md)  
   
--   [Özel durum işleme Eylemler zamanlama](../cpp/timing-of-exception-handling-a-summary.md)  
+-   [Özel Durum İşlemede eylemlerin zamanlaması](../cpp/timing-of-exception-handling-a-summary.md)  
   
 -   [Sonlandırma işleyicileri kısıtlamaları](../cpp/restrictions-on-termination-handlers.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

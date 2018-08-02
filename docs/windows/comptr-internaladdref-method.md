@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 55f2ffc540ba6680636b85e73b7b4fbe96068ab3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e1ae5d4216efc790fae0bc4d86bbe828fc28c473
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870292"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463099"
 ---
 # <a name="comptrinternaladdref-method"></a>ComPtr::InternalAddRef Yöntemi
-Bu ComPtr ile ilişkili arabiriminin başvurusu sayısını artırır.  
+Şununla ilişkili arabiriminin başvuru sayısını artırır **ComPtr**.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

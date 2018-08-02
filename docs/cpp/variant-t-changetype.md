@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f87d9e4d7193755f70e3463f4da60d88a7bd832c
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 5f3790f4cb357ed830ba2c61b3c2906356dc64da
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948101"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465594"
 ---
 # <a name="varianttchangetype"></a>_variant_t::ChangeType
 **Microsoft'a özgü**  
@@ -34,7 +34,6 @@ ms.locfileid: "37948101"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 void ChangeType(  
    VARTYPE vartype,  
    const _variant_t* pSrc = NULL   
@@ -53,5 +52,5 @@ void ChangeType(
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18a7cdd80c1d7b6b17a988d8f3581c7757f69823
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 27522cb4d3bb15912b7988e0152a121616480330
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948116"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464840"
 ---
 # <a name="reinterpretcast-operator"></a>reinterpret_cast İşleci
 Herhangi bir işaretçi türü dönüştürülecek herhangi bir işaretçi sağlar. Ayrıca, herhangi bir işaretçi türü ve tersi dönüştürülecek herhangi bir tamsayı türü sağlar.  
@@ -87,6 +87,6 @@ Output:
   
  **Reinterpret_cast** bir tam sayı türü olarak kabul edilmesi bir işaretçi sağlar. Sonuç ardından bit-kaydırılacağı uzaklık ve (benzersiz olasılığı yüksek derecede için) benzersiz bir dizin üretmek için kendi kendine XORed. Dizin, ardından tarafından döndürülen işlev türüne standart C stili kesilir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Atama İşleçleri](../cpp/casting-operators.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

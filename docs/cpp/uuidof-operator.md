@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92f7e0f3652a1142c97f878784edba6229fb19cd
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 440d985a522edbb6e30136ec841f934584823204
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948112"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463060"
 ---
 # <a name="uuidof-operator"></a>__uuidof İşleci
 **Microsoft'a özgü**  
@@ -33,7 +33,6 @@ ms.locfileid: "37948112"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 __uuidof (expression)  
 ```  
   
@@ -84,6 +83,6 @@ StringFromCLSID(__LIBID_, &lpolestr);
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

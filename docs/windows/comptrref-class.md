@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d961ed0a675927846788c013e61767f99b408c6b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7f7f392df62892ea0e053e9d243f85772fa0605d
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871451"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463086"
 ---
 # <a name="comptrref-class"></a>ComPtrRef Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -37,11 +37,11 @@ class ComPtrRef : public ComPtrRefBase<T>;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- A [ComPtr\<T >](../windows/comptr-class.md) türü veya bir türü türetilen onu kesmenin ComPtr tarafından temsil edilen arabirimi.  
+ *T*  
+ A [ComPtr\<T >](../windows/comptr-class.md) türü veya tür, kesmenin tarafından temsil edilen arabirim sınıfından türetilen `ComPtr`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- ComPtr türünde bir nesneye başvuru temsil eden\<T >.  
+ Bir nesne türü bir başvuruyu temsil eder `ComPtr<T>`.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -49,25 +49,25 @@ class ComPtrRef : public ComPtrRefBase<T>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtrRef::ComPtrRef Oluşturucusu](../windows/comptrref-comptrref-constructor.md)|Belirtilen işaretçi ComPtrRef sınıfından başka bir ComPtrRef nesne için yeni bir örneğini başlatır.|  
+|[ComPtrRef::ComPtrRef Oluşturucusu](../windows/comptrref-comptrref-constructor.md)|Yeni bir örneğini başlatır **ComPtrRef** belirtilen işaretçisinden sınıfa **ComPtrRef** nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtrRef::GetAddressOf Metodu](../windows/comptrref-getaddressof-method.md)|Geçerli ComPtrRef nesnesinin temsil ettiği arabirimi için bir işaretçi adresi alır.|  
-|[ComPtrRef::ReleaseAndGetAddressOf Metodu](../windows/comptrref-releaseandgetaddressof-method.md)|Geçerli ComPtrRef nesneyi siler ve ComPtrRef nesnesiyle temsil arabirimine bir işaretçi bir-işaretçiye döndürür.|  
+|[ComPtrRef::GetAddressOf Metodu](../windows/comptrref-getaddressof-method.md)|Adresi geçerli ComPtrRef nesnesiyle temsil edilen arabirimi için bir işaretçi alır.|  
+|[ComPtrRef::ReleaseAndGetAddressOf Metodu](../windows/comptrref-releaseandgetaddressof-method.md)|Geçerli siler **ComPtrRef** nesnesi ve bir işaretçi-için-a-işaretçi tarafından temsil arabirimi döndürür **ComPtrRef** nesne.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtrRef::operator InterfaceType** İşleci](../windows/comptrref-operator-interfacetype-star-star-operator.md)|Geçerli ComPtrRef nesneyi siler ve ComPtrRef nesnesiyle temsil arabirimine bir işaretçi bir-işaretçiye döndürür.|  
-|[ComPtrRef::operator T* İşleci](../windows/comptrref-operator-t-star-operator.md)|Değerini döndürür [ptr_](../windows/comptrrefbase-ptr-data-member.md) geçerli ComPtrRef nesnesinin veri üyesi.|  
-|[ComPtrRef::operator void** İşleci](../windows/comptrref-operator-void-star-star-operator.md)|Geçerli ComPtrRef nesneyi siler, ComPtrRef nesnesiyle bir işaretçi--pointer-için temsil edilen arabirimi işaretçisine bıraktığı `void`ve atama işaretçi döndürür.|  
-|[ComPtrRef::operator* İşleci](../windows/comptrref-operator-star-operator.md)|Geçerli ComPtrRef nesnesinin temsil ettiği arabirimi işaretçisine alır.|  
-|[ComPtrRef::operator== İşleci](../windows/comptrref-operator-equality-operator.md)|İki ComPtrRef nesnenin eşit olup olmadığını gösterir.|  
-|[ComPtrRef::operator!= İşleci](../windows/comptrref-operator-inequality-operator.md)|İki ComPtrRef nesnenin eşit olup olmadığını gösterir.|  
+|[ComPtrRef::operator InterfaceType** İşleci](../windows/comptrref-operator-interfacetype-star-star-operator.md)|Geçerli siler **ComPtrRef** nesnesi ve bir işaretçi-için-a-işaretçi tarafından temsil arabirimi döndürür **ComPtrRef** nesne.|  
+|[ComPtrRef::operator T* İşleci](../windows/comptrref-operator-t-star-operator.md)|Değerini döndürür [ptr_](../windows/comptrrefbase-ptr-data-member.md) geçerli ComPtrRef nesnenin veri üyesi.|  
+|[ComPtrRef::operator void** İşleci](../windows/comptrref-operator-void-star-star-operator.md)|Geçerli siler **ComPtrRef** nesne, işaretçi tarafından temsil arabirimine bıraktığı **ComPtrRef** nesnesi olarak bir işaretçiyi-için-işaretçi- **void**ve ardından cast işaretçiyi döndürür.|  
+|[ComPtrRef::operator* İşleci](../windows/comptrref-operator-star-operator.md)|Geçerli tarafından temsil edilen arabirim işaretçisi alır **ComPtrRef** nesne.|  
+|[ComPtrRef::operator== İşleci](../windows/comptrref-operator-equality-operator.md)|Belirtir olup iki **ComPtrRef** nesneler.|  
+|[ComPtrRef::operator!= İşleci](../windows/comptrref-operator-inequality-operator.md)|Belirtir olup iki **ComPtrRef** nesneler eşit değildir.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ComPtrRefBase`  

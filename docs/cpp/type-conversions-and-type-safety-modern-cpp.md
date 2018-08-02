@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38edaa7dfa97fd34ab70b21785a416c3ed072d55
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 7ccdbc71679a197e0464b4ec42dba948754c4c5c
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940559"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462270"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
 Bu belge, tür dönüştürme için yaygın sorunlar tanımlanmakta ve nasıl bunları C++ kodunuzu önleyebilirsiniz açıklar.  
@@ -75,7 +75,6 @@ num2 = -1;
 num = num2;  
 cout << "unsigned val = " << num << " signed val = " << num2 << endl;  
 // Prints: unsigned val = 65535 signed val = -1  
-  
 ```  
   
  Değerler her iki yönde düşürülen dikkat edin. Programınızı beklediğinizden ters tek sonuçları hangi değerin oturum görünüyor oluşturursa, imzalı ve imzasız tamsayı türleri arasında örtük dönüştürme arayın. Aşağıdaki örnekte, ifadenin sonucunu (0 - 1) örtük olarak dönüştürülür **int** için **işaretsiz int** olduğunda, depolanan `num`. Bu bit deseninin düşürülen neden olur.  
@@ -83,7 +82,6 @@ cout << "unsigned val = " << num << " signed val = " << num2 << endl;
 ```cpp  
 unsigned int u3 = 0 - 1;  
 cout << u3 << endl; // prints 4294967295  
-  
 ```  
   
  Derleyici, işaretli ve işaretsiz integral türleri arasında örtük dönüştürme hakkında uyarmaz. Bu nedenle, imzasız için imzalanmış dönüştürmeler tamamen önlemek öneririz. Bunları yoksayılamaz ise kodunuza dönüştürülen değerin daha büyük veya sıfıra eşit olup olmadığını algılamak için bir çalışma zamanı denetimi ekleyin ve en yüksek değeri işaretli tür küçüktür veya eşittir. Bu aralıktaki değerleri imzalanmamış veya işaretsiz düşürülen olmadan oturum açmış nden aktarırız.  
@@ -93,7 +91,6 @@ cout << u3 << endl; // prints 4294967295
   
 ```cpp  
 char* s = "Help" + 3;  
-  
 ```  
   
 ## <a name="explicit-conversions-casts"></a>Açık dönüştürmeler (yayınları)  
@@ -104,7 +101,6 @@ char* s = "Help" + 3;
 ```cpp  
 (int) x; // old-style cast, old-style syntax  
 int(x); // old-style cast, functional syntax  
-  
 ```  
   
  C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve bu nedenle inconspicuous kod içinde ve kolayca gözden kaçabilir kolaydır. Her ikisi de bir bakışta veya arama tanımak zordur ve bunlar herhangi bir birleşimini çağırmak için farklı hatalı olduğu **statik**, **const**, ve **reinterpret_cast**. Eski stil atama gerçekten yaptıklarını anlamak zor ve hata yapmaya açık olabilir. Bir yayın gerektiğinde bu nedenlerle, bazı durumlarda önemli ölçüde daha fazla tür kullanımı uyumlu ve hangi programlama hedefini açıkça çok daha hızlı aşağıdaki C++ atama işleçleri, birini kullanmanızı öneririz:  
@@ -121,7 +117,6 @@ int(x); // old-style cast, functional syntax
     // No error but not necessarily safe.  
     Base* b = new Base();  
     Derived* d2 = static_cast<Derived*>(b);  
-  
     ```  
   
      Daha fazla bilgi için [static_cast](../cpp/static-cast-operator.md).  
@@ -147,7 +142,6 @@ int(x); // old-style cast, functional syntax
     }  
   
     //Output: d3 is null;  
-  
     ```  
   
      Daha fazla bilgi için [dynamic_cast](../cpp/dynamic-cast-operator.md).  
@@ -161,7 +155,6 @@ int(x); // old-style cast, functional syntax
        const double pi = 3.14;  
        Func(const_cast<double&>(pi)); //No error.  
     }  
-  
     ```  
   
      Daha fazla bilgi için [const_cast](../cpp/const-cast-operator.md).  
@@ -181,12 +174,11 @@ int(x); // old-style cast, functional syntax
                       // to do this?  
     int k = reinterpret_cast<int>(str);// Programming intent is clear.  
                                        // However, it is not 64-bit safe.  
-  
     ```  
   
      Daha fazla bilgi için [reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md).  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [C++ tür sistemi](../cpp/cpp-type-system-modern-cpp.md)   
  [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   

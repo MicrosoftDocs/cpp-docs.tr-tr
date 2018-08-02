@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97fcade98e82a289c172c7651f62f3de0394fe16
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fc677304ae7ab61e6726366869e85f731cd92484
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863510"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463213"
 ---
 # <a name="asyncbasetrytransitiontoerror-method"></a>AsyncBase::TryTransitionToError Yöntemi
-Belirtilen hata kodu iç hata durumu değişiklik olup olmadığını gösterir.  
+Belirtilen hata kodu iç hata durumunda değiştirip değiştiremeyeceğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,14 +36,14 @@ bool TryTransitionToError(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `error`  
- HRESULT hata.  
+ *Hata*  
+ HRESULT hatası.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` İç hata durumu değişti Aksi takdirde `false`.  
+ **doğru** iç hata durumunda, değiştirilen; Aksi takdirde **false**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yalnızca hata durumu için S_OK zaten ayarlanmışsa, bu işlem hata durumu değiştirir. Hata durumunda zaten iptal edildi, tamamlandı ya da kapalı hata ise bu işlem bir etkisi yoktur.  
+ Bu işlem, yalnızca hata durumunda S_OK için zaten ayarlanmışsa hata durumu değiştirir. Hata durumunda zaten iptal edildi, tamamlandı veya kapalı hata olması durumunda bu işlem bir etkisi yoktur.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64ff69a4ab75189dd069e774eb05266e6140ff77
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 1edcf2cb24273f475b1ba98e5e973f5704c0cec8
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37940501"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461708"
 ---
 # <a name="structured-exception-handling-cc"></a>Yapılandırılmış Özel Durum İşleme (C/C++)
 Yapılandırılmış özel durum işleme (SEH), Windows ve Visual C++ desteklese de, kod daha taşınabilir ve esnek yapan ISO standardı C++ özel durum işleme kullanmanızı öneririz. Bununla birlikte, varolan kodda ya da belirli program türleri için yine de SEH kullanmanız gerekebilir.  
@@ -72,7 +72,7 @@ Yapılandırılmış özel durum işleme (SEH), Windows ve Visual C++ desteklese
 -   [Yapılandırılmış Özel Durum İşlemeyi C++ ile Kullanma](../cpp/using-structured-exception-handling-with-cpp.md)  
   
 ## <a name="example"></a>Örnek  
- C++ programında SEH kullanın ve kullanarak derleme yerel nesneleri olarak adlandırılan için Yıkıcılar daha önce belirtildiği gibi **/EH** belirli değiştiriciler seçeneğiyle — Örneğin, **/ehsc** ve   **/eha**. Ancak, yürütme sırasında davranışı C++ özel durumlarını da kullanıyorsanız, beklediğiniz olmayabilir. Aşağıdaki örnek, bu davranış farklılıkları gösterir.  
+ C++ programında SEH kullanın ve kullanarak derleme yerel nesneleri olarak adlandırılan için Yıkıcılar daha önce belirtildiği gibi `/EH` belirli değiştiriciler seçeneğiyle — Örneğin, `/EHsc` ve `/EHa`. Ancak, yürütme sırasında davranışı C++ özel durumlarını da kullanıyorsanız, beklediğiniz olmayabilir. Aşağıdaki örnek, bu davranış farklılıkları gösterir.  
   
 ```cpp  
 #include <stdio.h>  
@@ -119,7 +119,6 @@ int main()
   
     return 0;  
 }  
-  
 ```  
   
  Kullanırsanız **/ehsc** , ancak yerel test denetimi bu kodu derlemek için `CPPEX` olan tanımlanmamışsa, hiçbir yürütülmesini yoktur `TestClass` yok edicisini ve çıktı görünür şöyle:  
@@ -149,7 +148,7 @@ Executing SEH __except block
   
 **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Özel durum işleme](../cpp/exception-handling-in-visual-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [\<Özel Durum >](../standard-library/exception.md)   

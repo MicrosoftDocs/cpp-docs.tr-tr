@@ -17,18 +17,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed5f91288671eaa3dcf4700ec35dae63ffaef172
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b3eb361d0b92a3977547388ebfd612915431ec98
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32422894"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463687"
 ---
 # <a name="restrict"></a>restrict
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-Bir işlev bildirimi veya bir işaretçi türü döndürür tanımı uygulandığında `restrict` işlevi değil bir nesne döndürür derleyici söyler *diğer*, diğer bir deyişle, diğer bir işaretçiler tarafından başvurulan. Bu ek iyileştirmeler gerçekleştirmek derleyici sağlar.
+Bir işlev bildiriminin ya da bir işaretçi türü döndüren tanımı uygulandığında **kısıtlama** işlev olmayan bir nesne döndürür derleyiciye *diğer adlı*, diğer bir deyişle, diğer tarafından başvurulan işaretçileri. Bu, derleyicinin ek iyileştirmeler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,21 +36,21 @@ Bir işlev bildirimi veya bir işaretçi türü döndürür tanımı uygulandı�
   
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici yayar `__declspec(restrict)`. Örneğin, CRT `malloc` işlevine sahip bir `__declspec(restrict)` decoration ve bu nedenle, derleyici varsayar işaretçiler tarafından bellek konumlara başlatılmış `malloc` ayrıca diğer önceden varolan tarafından olmayan işaretçileri.
+Derleyici yayar **__declspec(restrict)**. Örneğin CRT `malloc` işleve sahip bir **__declspec(restrict)** düzenleme ve bu nedenle, derleyici varsayar işaretçiler tarafından bellek konumları için başlatılan `malloc` ayrıca diğer adlı olarak olmayan daha önce Varolan işaretçilerin.
 
-Derleyici döndürülen işaretçi aslında diğer olmadığını denetler. Bu program yapar olmayan diğer ad ile işaretli bir işaretçi emin olmak için geliştiricinin sorumluluğundadır `restrict __declspec` değiştiricisi.  
+Derleyici, döndürülen işaretçi gerçekten diğer adlı olmadığını denetlemez. Program yapar olmayan diğer ad ile işaretlenmiş bir işaretçi emin olmak için korumanın geliştiricinin sorumluluğunda olan **__declspec kısıtlama** değiştiricisi.  
   
-Değişkenleri için benzer semantiği almak için bkz: [__restrict](../cpp/extension-restrict.md).
+Değişkenleri, benzer semantiğe için bkz. [__restrict](../cpp/extension-restrict.md).
  
-Bir işlevin içindeki yumuşatma uygulandığı başka bir açıklama için bkz: [__declspec(noalias)](../cpp/noalias.md).
+Diğer ad kullanımı bir işlev içinde geçerlidir başka bir açıklama için bkz. [__declspec(noalias)](../cpp/noalias.md).
   
-Hakkında bilgi için **kısıtlamak** C++ AMP parçası olan anahtar sözcük bkz [(C++ AMP) kısıtlamak](../cpp/restrict-cpp-amp.md).  
+Hakkında bilgi için **kısıtlama** C++ AMP parçası olan anahtar sözcüğü bkz [(C++ AMP) kısıtlama](../cpp/restrict-cpp-amp.md).  
  
 ## <a name="example"></a>Örnek  
 
-Aşağıdaki örnek kullanımını gösteren `__declspec(restrict)`.
+Aşağıdaki örnek, kullanımını gösterir **__declspec(restrict)**.
 
-Zaman `__declspec(restrict)` işaretçi döndürür, bu derleyici dönüş değeri tarafından işaret bellek diğer değil bildirir, bir işlev uygulanır. Bu örnekte, işaretçileri `mempool` ve `memptr` derleyici başvurmak için bellek diğer adı olmadığından emin olamaz için geneldir. İçinde ancak kullanılan `ma` ve kendi arayan `init` , aksi takdirde program tarafından bu nedenle başvurulan değil bellek döndürür şekilde `__decslpec(restrict)` iyileştirici yardımcı olmak için kullanılır. Bu nasıl CRT üstbilgileri ayırma işlevleri gibi tasarlamanız için benzer `malloc` kullanarak `__declspec(restrict)` her zaman varolan işaretçiler tarafından diğer adı olamaz bellek döndürmeleri belirtmek için.
+Zaman **__declspec(restrict)** işaretçi döndürür, bu dönüş değeri tarafından işaret edilen bellek diğer adlı değil derleyiciye, bir işlev olarak uygulanır. Bu örnekte, işaretçiler `mempool` ve `memptr` derleyici başvurmak için bellek diğer adı olmadığından emin olamaz için geneldir. İçinde ancak kullanılan `ma` ve arayanına `init` döndürür, aksi takdirde program tarafından bu nedenle başvuru yapılmaz bellek şekilde **__decslpec(restrict)** iyileştirici yardımcı olmak için kullanılır. Bu nasıl CRT üstbilgileri ayırma işlevleri gibi donatmak için benzer `malloc` kullanarak **__declspec(restrict)** bunlar her zaman varolan işaretçilerin tarafından diğer ad verilemez bellek döndüreceğini belirtmek için.
 
 ```C
 // declspec_restrict.c
@@ -119,10 +119,9 @@ int main()
 }
 ```
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
-
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)  
-[__declspec](../cpp/declspec.md)  
-[__declspec(noalias)](../cpp/noalias.md)  
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
+ [__declspec](../cpp/declspec.md)  
+ [__declspec(noalias)](../cpp/noalias.md)  

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21d1c1ad928ef61573271263a9a1112e944e2472
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: e4fb22334e809215f5f00b7d06170f6a018e3312
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948127"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462394"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru Bildirimcisi: &amp;&amp;
 Rvalue ifadesi için bir başvuru içerir.  
@@ -29,7 +29,6 @@ Rvalue ifadesi için bir başvuru içerir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 type-id && cast-expression  
 ```  
   
@@ -41,7 +40,7 @@ type-id && cast-expression
 ## <a name="move-semantics"></a>Taşıma semantiği  
  Rvalue başvuruları uygulamasını destekler *taşıma semantiği*, önemli ölçüde artıran uygulamalarınızın performansını. Semantiği, kaynakları (örneğin, dinamik olarak ayrılan bellek) aktaran kod yazmanızı sağlayan bir nesneden diğerine taşıyabilirsiniz. Taşıma semantiği programda başka bir yerde başvurulamaz geçici nesnelerden kaynaklar aktarılmasını sağladığından çalışır.  
   
- Taşıma semantiği uygulamak için genellikle sınıfınıza bir *taşıma Oluşturucu,* ve isteğe bağlı olarak bir taşıma ataması işleci (`operator=`), sınıfınıza. Taşıma semantiği, kaynakları rvalues değerleridir sonra otomatik olarak yararlanmak kopyalama ve atama işlemleri. Varsayılan kopya oluşturucusundan farklı olarak, derleyici varsayılan bir taşıma Oluşturucusu sağlamaz. Taşıma Oluşturucusu yazma ve uygulamanızda kullanma hakkında daha fazla bilgi için bkz. [taşıma oluşturucuları ve taşıma atama işleçleri (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
+ Taşıma semantiği uygulamak için genellikle sınıfınıza bir *taşıma Oluşturucu,* ve isteğe bağlı olarak bir taşıma ataması işleci (**işleç =**), sınıfınıza. Taşıma semantiği, kaynakları rvalues değerleridir sonra otomatik olarak yararlanmak kopyalama ve atama işlemleri. Varsayılan kopya oluşturucusundan farklı olarak, derleyici varsayılan bir taşıma Oluşturucusu sağlamaz. Taşıma Oluşturucusu yazma ve uygulamanızda kullanma hakkında daha fazla bilgi için bkz. [taşıma oluşturucuları ve taşıma atama işleçleri (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
   
  Normal işlevleri de Aşırı yüklenme olabilir ve taşıma semantiği yararlanmak için işleçleri. Visual C++ 2010 C++ Standart kitaplığına taşıma semantiklerini tanıtır. Örneğin, `string` sınıfı semantik taşınmasını gerçekleştiren işlemleri uygular. Birkaç dizeyi birleştirmeye ve sonucu yazdırmaya aşağıdaki örneği göz önünde bulundurun:  
   
@@ -59,7 +58,7 @@ int main()
 }  
 ```  
   
- Visual C++ 2010'dan önce her çağrısı `operator+` ayırır ve yeni bir geçici döndürür `string` nesnesini (rvalue). `operator+` Kaynak dizelerin lvalues veya rvalues olduğunu bilmediği için bir dizeyi diğerine ekleyemez. Kaynak dizeleri her iki lvalues ise, programda başka bir yerde başvurulabilir ve bu nedenle değiştirilmemelidir. Rvalue başvuruları kullanılarak `operator+` programda başka bir yerde başvurulamaz rvalues değeri alması için değiştirilebilir. Bu nedenle, `operator+` şimdi bir dizeyi başka birine ekleyebilir. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` sınıfı gerçekleştirmeniz gerekir. Hakkında daha fazla bilgi için `string` sınıfı [basic_string sınıfı](../standard-library/basic-string-class.md).  
+ Visual C++ 2010'dan önce her çağrısı **operator +** ayırır ve yeni bir geçici döndürür `string` nesnesini (rvalue). **operator +** kaynak dizelerin lvalues veya rvalues olduğunu bilmediği için bir dizeyi diğerine ekleyemez. Kaynak dizeleri her iki lvalues ise, programda başka bir yerde başvurulabilir ve bu nedenle değiştirilmemelidir. Rvalue başvuruları kullanılarak **operator +** programda başka bir yerde başvurulamaz rvalues değeri alması için değiştirilebilir. Bu nedenle, **operator +** şimdi bir dizeyi başka birine ekleyebilir. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` sınıfı gerçekleştirmeniz gerekir. Hakkında daha fazla bilgi için `string` sınıfı [basic_string sınıfı](../standard-library/basic-string-class.md).  
   
  Derleyici dönüş değeri iyileştirme (RVO) veya adlı dönüş değeri iyileştirme (NRVO) kullanamadığı zaman, taşıma semantiği de yardımcı olur. Bu gibi durumlarda, tür tanımlıyorsa derleyici taşıma yapıcısını çağırır. Adlı dönüş değeri iyileştirme hakkında daha fazla bilgi için bkz: [adlı dönüş değeri iyileştirme Visual C++ 2005'te](http://go.microsoft.com/fwlink/p/?linkid=131571).  
   
@@ -410,7 +409,7 @@ print_type_and_value<string&>(string& t)
 ## <a name="summary"></a>Özet  
  Rvalue başvuruları lvalues rvalues'den ayırt eder. Bunlar, gereksiz bellek ayırma gereksinimini ortadan kaldırarak uygulamalarınızın performansını ve kopyalama işlemlerini yardımcı olabilir. Bunlar ayrıca, rasgele bağımsız değişkenleri kabul eden ve diğer işlev doğrudan çağrılmış gibi bunları başka bir işleve ileten bir işlevin bir sürümünü yazmanıza olanak sağlar.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md)   
  [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)   

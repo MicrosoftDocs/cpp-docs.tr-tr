@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: abd3eae18d793739866b6c0dd8a1b6a994093c93
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 580df181e544ced6594b049b85d7f147bd2fe22e
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859585"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464622"
 ---
 # <a name="asyncbaseerrorcode-method"></a>AsyncBase::ErrorCode Yöntemi
-Geçerli zaman uyumsuz işlemi için hata kodunu alır.  
+Geçerli zaman uyumsuz işlem hata kodunu alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ inline void ErrorCode(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `error`  
- Bu işlem geçerli hata kodu depoladığı konumu.  
+ *Hata*  
+ Bu işlem, geçerli hata kodu depoladığı konum.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlem iş parçacığı güvenlidir.  
+ Bu işlem, iş parçacığı açısından güvenlidir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

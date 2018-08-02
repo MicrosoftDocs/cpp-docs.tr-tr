@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14386e737d136b91f8864eeaa182038b62df72e0
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 4ef7551047449167ff60372da146618fbdc4e564
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948046"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464168"
 ---
 # <a name="varianttvariantt"></a>_variant_t::_variant_t
 **Microsoft'a özgü**  
@@ -32,7 +32,6 @@ ms.locfileid: "37948046"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 _variant_t( ) throw( );  
   
 _variant_t(  
@@ -200,7 +199,7 @@ _variant_t(
  Bir **işaretsiz int** yeni içine kopyalanacak değeri `_variant_t` nesne.  
   
  *i8Src*  
- Bir __**Int64** yeni içine kopyalanacak değeri `_variant_t` nesne.  
+ Bir **__int64** yeni içine kopyalanacak değeri `_variant_t` nesne.  
   
  *ui8Src*  
  Bir **unsigned __int64** yeni içine kopyalanacak değeri `_variant_t` nesne.  
@@ -215,7 +214,7 @@ _variant_t(
   
 -   **_variant_t (_variant_t &***; var_t_src &***)** oluşturan bir `_variant_t` başka bir nesne `_variant_t` nesne.     Değişken türü korunur.  
   
--   **_variant_t (değişken &***varSrc* **, bool**`fCopy`**)** oluşturan bir `_variant_t` mevcut bir nesne `VARIANT` nesne.       Varsa `fCopy` olduğu **false**, **değişken** nesne yeni nesneye bir kopyası oluşturmadan eklenir.  
+-   **_variant_t (değişken &***varSrc* **, bool**`fCopy`**)** oluşturan bir `_variant_t` mevcut bir nesne `VARIANT` nesne.       Varsa *fCopy* olduğu **false**, **değişken** nesne yeni nesneye bir kopyası oluşturmadan eklenir.  
   
 -   **_variant_t (kısa***sSrc* **, VARTYPE**`vtSrc`**VT_I2 =)** oluşturan bir `_variant_t` nesne türünün VT_I2 veya VT_BOOL bir **kısa** tamsayı değeri.       Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.  
   
@@ -245,5 +244,5 @@ _variant_t(
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

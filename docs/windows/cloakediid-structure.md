@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 57ad76b48b92519eaeed089dfb14817c38273588
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3e0155006987165f5b192aac73bb31991081a231
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856166"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461229"
 ---
 # <a name="cloakediid-structure"></a>CloakedIid Yapısı
-RuntimeClass, uygular ve Chainınterfaces şablonların belirtilen arabirim IID listesinde erişilebilir değil gösterir.  
+Gösterir `RuntimeClass`, `Implements` ve `ChainInterfaces` şablonları belirtilen arabirim IID'si listesinde erişilebilir değil.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,11 +35,11 @@ struct CloakedIid : T;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- (Örtülmüş) gizlenen arabirimi.  
+ *T*  
+ (Gizlenmiş) gizlenen arabirim.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Cloakedıid nasıl kullanıldığı bir örnek şudur: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.  
+ İlişkin bir örnek verilmiştir `CloakedIid` kullanılır: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `T`  

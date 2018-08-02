@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0acc6f62530daf641a2e4d568ed511d6fd831c20
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ab47405f81cf6fb92af215f1868d8ad7c42bffa7
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860924"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39463736"
 ---
 # <a name="asyncbasestart-method"></a>AsyncBase::Start Yöntemi
 Zaman uyumsuz işlemi başlatır.  
@@ -36,10 +36,10 @@ STDMETHOD(
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İşlemi başlatır veya zaten varsa S_OK başlatıldı; Aksi takdirde E_ILLEGAL_STATE_CHANGE.  
+ İşlemi başlatıldığında veya zaten varsa S_OK başlatıldı; Aksi takdirde, E_ILLEGAL_STATE_CHANGE.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Start() IAsyncInfo::Start varsayılan uygulamasıdır ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten başlatmak için OnStart() saf sanal yöntemini geçersiz kılın.  
+ **Start()** varsayılan uygulamasıdır `IAsyncInfo::Start`, ve hiçbir asıl işi yapar. Aslında bir zaman uyumsuz işlemi başlatmak için geçersiz kılma `OnStart()` saf sanal yöntemi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

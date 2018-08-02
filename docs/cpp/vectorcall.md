@@ -12,26 +12,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c05707f3d6d6e323bf9605c3c742f6bef417d817
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 79ddbd94c918605619c7521c966c25a918fadd36
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939786"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462241"
 ---
 # <a name="vectorcall"></a>__vectorcall
 **Microsoft'a özgü**  
   
- `__vectorcall` Çağırma kuralı işlevlere bağımsız değişkenler, mümkün olduğunda kayıtlara geçirilebilir olduğunu belirtir. `__vectorcall` bağımsız değişken için daha fazla kayıtlarını kullanan [__fastcall](../cpp/fastcall.md) veya varsayılan [çağırma kuralı x64](../build/overview-of-x64-calling-conventions.md) kullanın. `__vectorcall` Çağırma kuralı yalnızca desteklenen yerel kodda, Streaming SIMD Extensions 2 (SSE2) içeren x86 ve x64 işlemciler ve üzeri. Kullanım `__vectorcall` defterlerine yüklenen geçmesi birkaç kayan nokta işlevleri veya SIMD vektörü bağımsız değişkenlerini hızlandırmak ve bağımsız değişkenlerden yararlanan işlemleri gerçekleştirmek için. Aşağıdaki liste x86 ve x64 uygulamaları için ortak olan özellikleri gösterir `__vectorcall`. Farklılıklar bu makalenin sonraki bölümlerinde açıklanmıştır.  
+ **__Vectorcall** çağırma kuralı işlevlere bağımsız değişkenler, mümkün olduğunda kayıtlara geçirilebilir olduğunu belirtir. **__vectorcall** bağımsız değişken için daha fazla kayıtlarını kullanan [__fastcall](../cpp/fastcall.md) veya varsayılan [çağırma kuralı x64](../build/overview-of-x64-calling-conventions.md) kullanın. **__Vectorcall** çağırma kuralı yalnızca desteklenen yerel kodda, Streaming SIMD Extensions 2 (SSE2) içeren x86 ve x64 işlemciler ve üzeri. Kullanım **__vectorcall** defterlerine yüklenen geçmesi birkaç kayan nokta işlevleri veya SIMD vektörü bağımsız değişkenlerini hızlandırmak ve bağımsız değişkenlerden yararlanan işlemleri gerçekleştirmek için. Aşağıdaki liste x86 ve x64 uygulamaları için ortak olan özellikleri gösterir **__vectorcall**. Farklılıklar bu makalenin sonraki bölümlerinde açıklanmıştır.  
   
 |Öğe|Uygulama|  
 |-------------|--------------------|  
 |C ad düzenleme kuralı|İşlev adları, iki "at" işareti (@@) parametre listesinde (ondalık) bayt sayısı ardından soneki.|  
 |Durum çevirisi kuralları|Gerçekleşen durum çevirisi yok.|  
   
- Kullanarak [GV](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği olarak derlemek için modüldeki her işlevin neden `__vectorcall` işlevi bir üye işlev olmadığı sürece, çakışan çağrı kuralı özniteliğiyle bildirilen, kullanan bir `vararg` değişkeni bağımsız değişken listesi ya da adına sahip `main`.  
+ Kullanarak [GV](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği olarak derlemek için modüldeki her işlevin neden **__vectorcall** işlevi bir üye işlev olmadığı sürece, çakışan çağrı kuralı özniteliğiyle bildirilen, kullanır bir `vararg` bağımsız değişken listesi ya da adına sahip `main`.  
   
- Kaydına göre üç tür bağımsız değişkeni geçirebilirsiniz `__vectorcall` işlevleri: *tamsayı türü* değerleri *vektör türü* değerleri ve *homojen vektör toplama* (HVA ) değerleri.  
+ Kaydına göre üç tür bağımsız değişkeni geçirebilirsiniz **__vectorcall** işlevleri: *tamsayı türü* değerleri *vektör türü* değerleri ve *homojen vektör Toplama* (HVA) değerleri.  
   
  Bir tamsayı türü, iki gereksinimi karşılar: işlemcinin yerel kayıt boyutuna uyan — Örneğin, 4 baytlık bir x86 makine veya 8 bayt x x64 makine — ve yeniden kendi bit değişiklik yapmadan tamsayıya kayıt uzunluğu ve geri dönüştürülemez temsili. Örneğin yükseltilebilir türlü **int** x86 (**uzun uzun** x64) — Örneğin, bir **char** veya **kısa**— veya için yayımlanabilir **int** (**uzun uzun** x64) ve orijinal türe geri için değişiklik olmayan bir tamsayı türü. Tamsayı türleri, işaretçi, başvuru içerir ve **yapı** veya **birleşim** 4 baytlık (x64 8 bayt) veya daha az. X64 platformlarda, daha büyük **yapı** ve **birleşim** türleri x86; çağırıcı tarafından ayrılan belleğe başvuruyla geçirilir platformlar, bunlar değerine göre geçirilir yığında.  
   
@@ -45,14 +45,13 @@ typedef struct {
    __m256 y;  
    __m256 z;  
 } hva3;    // 3 element HVA type on __m256  
-  
 ```  
   
- İşlevlerinizi açıkça bildirin `__vectorcall` üst bilgi dosyaları, ayrı olarak izin vermek için bir anahtar sözcük hatasız kodu derlenmiş. İşlevleri kullanmak için prototipli olmalıdır `__vectorcall`ve bir `vararg` değişken uzunlukta bağımsız değişken listesi.  
+ İşlevlerinizi açıkça bildirin **__vectorcall** üst bilgi dosyaları, ayrı olarak izin vermek için bir anahtar sözcük hatasız kodu derlenmiş. İşlevleri kullanmak için prototipli olmalıdır **__vectorcall**ve bir `vararg` değişken uzunlukta bağımsız değişken listesi.  
   
- Üye işlevi kullanılarak bildirilebilir `__vectorcall` tanımlayıcısı. Gizli **bu** işaretçisi ilk tamsayı türü bağımsız değişkeni olarak kayıt tarafından geçirilir.  
+ Üye işlevi kullanılarak bildirilebilir **__vectorcall** tanımlayıcısı. Gizli **bu** işaretçisi ilk tamsayı türü bağımsız değişkeni olarak kayıt tarafından geçirilir.  
   
- ARM makinelerde `__vectorcall` kabul edilir ve derleyici tarafından yok sayılır.  
+ ARM makinelerde **__vectorcall** kabul edilir ve derleyici tarafından yok sayılır.  
   
  Tanımlanan çıkış satır dışı, işlev ise, statik olmayan sınıf üyesi işlevleri için çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, sınıfı statik olmayan üyeler için bildirim sırasında belirtilen çağırma kuralı tanımı kabul edilir. Bu sınıf tanımını ele alalım:  
   
@@ -74,14 +73,14 @@ void MyClass::mymethod() { return; }
 void __vectorcall MyClass::mymethod() { return; }  
 ```  
   
- `__vectorcall` Çağırma kuralı değiştiricisi belirtilmelidir işaretçisi olduğunda bir `__vectorcall` işlevi oluşturulur. Sonraki örnek, oluşturur bir **typedef** işaretçisi için bir `__vectorcall` dört alan işlev **çift** bağımsız değişkenleri ve döndürür bir **__m256** değeri:  
+ **__Vectorcall** çağırma kuralı değiştiricisi belirtilmelidir işaretçisi olduğunda bir **__vectorcall** işlevi oluşturulur. Sonraki örnek, oluşturur bir **typedef** işaretçisi için bir **__vectorcall** dört alan işlev **çift** bağımsız değişkenleri ve döndürür bir **__m256**değeri:  
   
 ```cpp  
 typedef __m256 (__vectorcall * vcfnptr)(double, double, double, double);  
 ```  
   
 ## <a name="vectorcall-convention-on-x64"></a>x64 __vectorcall kuralı  
- `__vectorcall` X64 üzerinde çağırma kuralı, ek yazmaçların yararlanmak için çağırma kuralını standard x64 genişletir. Hem tamsayı türü bağımsız değişkenleri ve vektör türü bağımsız değişken listesindeki konumu temel alan kayıtlarla eşlenir. HVA bağımsız değişkenleri kullanılmayan vektör kayıtları için ayrılır.  
+ **__Vectorcall** üzerinde x64 çağırma kuralı, ek yazmaçların yararlanmak için çağırma kuralını standard x64 genişletir. Hem tamsayı türü bağımsız değişkenleri ve vektör türü bağımsız değişken listesindeki konumu temel alan kayıtlarla eşlenir. HVA bağımsız değişkenleri kullanılmayan vektör kayıtları için ayrılır.  
   
  Sırayla soldan sağa doğru ilk dört bağımsız değişken tamsayı türü bağımsız değişken olduğunda, bunlar karşılık gelen kayıt defterinde, geçirilirler — RCX, RDX, R8 ve R9. Gizli **bu** işaretçisi ilk tamsayı türü bağımsız değişken olarak kabul edilir. İlk dört bağımsız değişken biriyle HVA bağımsız değişkeni kullanılabilir kayıtlara geçirilemez, arayana ayrılan belleğe başvuru bunun yerine karşılık gelen bir tamsayı türü kayıttaki geçirilir. Tamsayı türü bağımsız değişkenleri dördüncü parametre konumunda sonra yığına geçirilir.  
   
@@ -89,9 +88,9 @@ typedef __m256 (__vectorcall * vcfnptr)(double, double, double, double);
   
  Yazmaçları vektör bağımsız değişkenleri için ayrılmasından sonra HVA bağımsız değişkenlerinin veri üyeleri, kullanılmayan vektör kayıtlarına XMM0 ila XMM5 arasında artan sırada ayrılır (veya YMM0 ila ymm5 arasında için **__m256** türleri), yeterli yazmaç var olduğu sürece Tüm HVA için kullanılabilir. Aksi durumda yeterli yazmaç, HVA bağımsız değişkeni çağırıcı tarafından ayrılan bellek başvurusu tarafından geçirilir. Bir HVA bağımsız değişkeninin yığın gölge alanı tanımlanmamış içerikle 8 bayt düzeltildi. HVA bağımsız değişkenleri atanır sırayla soldan sağa parametre listesinde ve herhangi bir konumda olabilir. Vektör atanmaz konumları o konuma karşılık gelen tam sayı kayıt başvuruya göre iletilir HVA bağımsız bir ilk dört bağımsız değişken. Dördüncü parametre konumunda sonra başvuru tarafından geçirilen HVA bağımsız değişkenleri yığın üzerine itilir.  
   
- Sonuçları `__vectorcall` işlevleri, mümkün olduğunda yazmaçlardaki değer tarafından döndürülür. Yapılar veya 8 bayt veya daha az birleşimler dahil tamsayı türü sonuçları RAX'daki değer tarafından döndürülür. Vektör türü sonuçları, boyutuna bağlı olarak XMM0 veya YMM0, değer tarafından döndürülür. HVA sonuçları kayıtları XMM0:XMM3 veya YMM0:YMM3, öğe boyutuna bağlı olarak değeri tarafından döndürülen her veri öğesini içerir. İlgili kayıtlara uygun olmayan sonuç türleri, çağırıcı tarafından ayrılan belleğe başvuru tarafından döndürülür.  
+ Sonuçları **__vectorcall** işlevleri, mümkün olduğunda yazmaçlardaki değer tarafından döndürülür. Yapılar veya 8 bayt veya daha az birleşimler dahil tamsayı türü sonuçları RAX'daki değer tarafından döndürülür. Vektör türü sonuçları, boyutuna bağlı olarak XMM0 veya YMM0, değer tarafından döndürülür. HVA sonuçları kayıtları XMM0:XMM3 veya YMM0:YMM3, öğe boyutuna bağlı olarak değeri tarafından döndürülen her veri öğesini içerir. İlgili kayıtlara uygun olmayan sonuç türleri, çağırıcı tarafından ayrılan belleğe başvuru tarafından döndürülür.  
   
- Yığın x64 çağrı yapan tarafından korunur uygulaması `__vectorcall`. Çağıran prolog ve epilog kodu ayırır ve çağrılan işlev için yığını temizler. Bağımsız değişkenleri sağdan sola yığın üzerine itilir ve gölge yığın alanı kayıtlara geçirilen bağımsız değişkenler için ayrılır.  
+ Yığın x64 çağrı yapan tarafından korunur uygulaması **__vectorcall**. Çağıran prolog ve epilog kodu ayırır ve çağrılan işlev için yığını temizler. Bağımsız değişkenleri sağdan sola yığın üzerine itilir ve gölge yığın alanı kayıtlara geçirilen bağımsız değişkenler için ayrılır.  
   
  Örnekler:  
   
@@ -187,11 +186,10 @@ int __cdecl main( void )
    i = example5(1, h2, 3, h4, 5);  
    h4 = example6(h2, h4, c, h2);  
 }  
-  
 ```  
   
 ## <a name="vectorcall-convention-on-x86"></a>x86 __vectorcall kuralı  
- `__vectorcall` Takip çağırma **__fastcall** 32-bit tamsayı türü bağımsız değişkenleri ve vektör türü ve HVA bağımsız değişkenleri için SSE vektör yazmaçlarının avantajlarından kuralı.  
+ **__Vectorcall** takip çağırma **__fastcall** 32-bit tamsayı türü bağımsız değişkenleri ve vektör türü ve HVA bağımsız değişkenleri için SSE vektör yazmaçlarının avantajlarından kuralı.  
   
  Parametre listesinde soldan sağa yerleştirilir doğru ECX ve EDX içine sırasıyla bulunan ilk iki tamsayı türü bağımsız değişkenler. Gizli **bu** işaretçisi ilk tamsayı türü bağımsız değişken olarak kabul edilir ve ECX'e geçirilir. İlk altı vektör türü bağımsız SSE vektör yazmaçlarının 0-5, bağımsız değişken boyutuna bağlı olarak XMM veya YMM kayıtlarında değere göre geçirilir.  
   
@@ -199,9 +197,9 @@ int __cdecl main( void )
   
  Yazmaçları vektör bağımsız değişkenleri için ayrılmasından sonra veri üyeleri, HVA bağımsız değişkenleri kullanılmayan vektör kayıtlarına artan düzende ayrılır XMM0 ila XMM5 arasında kaydeder (veya YMM0 ila ymm5 arasında için **__m256** türleri), yeterli yazmaç var olduğu sürece Tüm HVA için kullanılabilir. Aksi durumda yeterli yazmaç, HVA bağımsız değişkeni çağırıcı tarafından ayrılan bellek başvurusu tarafından yığına geçirilir. HVA bağımsız değişkeni için hiçbir yığın gölge boşluğu ayrılmaz. HVA bağımsız değişkenleri atanır sırayla soldan sağa parametre listesinde ve herhangi bir konumda olabilir.  
   
- Sonuçları `__vectorcall` işlevleri, mümkün olduğunda yazmaçlardaki değer tarafından döndürülür. Yapılar veya 4 bayt veya daha az birleşimler dahil tamsayı türü sonuçları EAX'daki değer tarafından döndürülür. Tamsayı türü yapılar veya 8 bayt veya daha az birleşimler edx: eax içindeki değer tarafından döndürülür. Vektör türü sonuçları, boyutuna bağlı olarak XMM0 veya YMM0, değer tarafından döndürülür. HVA sonuçları kayıtları XMM0:XMM3 veya YMM0:YMM3, öğe boyutuna bağlı olarak değeri tarafından döndürülen her veri öğesini içerir. Diğer sonuç türleri, çağırıcı tarafından ayrılan belleğe başvuru tarafından döndürülür.  
+ Sonuçları **__vectorcall** işlevleri, mümkün olduğunda yazmaçlardaki değer tarafından döndürülür. Yapılar veya 4 bayt veya daha az birleşimler dahil tamsayı türü sonuçları EAX'daki değer tarafından döndürülür. Tamsayı türü yapılar veya 8 bayt veya daha az birleşimler edx: eax içindeki değer tarafından döndürülür. Vektör türü sonuçları, boyutuna bağlı olarak XMM0 veya YMM0, değer tarafından döndürülür. HVA sonuçları kayıtları XMM0:XMM3 veya YMM0:YMM3, öğe boyutuna bağlı olarak değeri tarafından döndürülen her veri öğesini içerir. Diğer sonuç türleri, çağırıcı tarafından ayrılan belleğe başvuru tarafından döndürülür.  
   
- X86 uygulaması `__vectorcall` aşağıdaki çağıran ve çağrılan işlev tarafından yığında sağdan sola taşınan bağımsız değişkenlerle ilgili kuralı yığını temizler hemen önce. Yazmaçlarda yerleştirilmez yalnızca bağımsız değişkenler yığına itilir.  
+ X86 uygulaması **__vectorcall** aşağıdaki çağıran ve çağrılan işlev tarafından yığında sağdan sola taşınan bağımsız değişkenlerle ilgili kuralı yığını temizler hemen önce. Yazmaçlarda yerleştirilmez yalnızca bağımsız değişkenler yığına itilir.  
   
  Örnekler:  
   
@@ -293,11 +291,10 @@ int __cdecl main( void )
    i = example5(1, h2, 3, h4, 5);  
    h4 = example6(h2, h4, c, h2);  
 }  
-  
 ```  
   
  **End Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)   
  [Anahtar Sözcükler](../cpp/keywords-cpp.md)

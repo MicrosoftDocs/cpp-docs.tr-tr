@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 590a50fbaca22b088af39f31e2e6349a3ebc18dd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f852f8f360be90e7d17e9aaa09e7d584ad98fc33
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870109"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461074"
 ---
 # <a name="comptrattach-method"></a>ComPtr::Attach Yöntemi
-Geçerli şablon türü parametresi tarafından belirtilen arabirim türü bu ComPtr ilişkilendirir.  
+Bu ilişkilendirir **ComPtr** geçerli bir şablon türü parametresi tarafından belirtilen arabirim türüne sahip.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,7 +36,7 @@ void Attach(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `other`  
+ *Diğer*  
  Bir arabirim türü.  
   
 ## <a name="requirements"></a>Gereksinimler  

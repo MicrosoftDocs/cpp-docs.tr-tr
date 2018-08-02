@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 94146661b9a00b17732ce75f75bcc0194dcbddd4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 21503e38bb612f935e26f6eaaa93df2097e10445
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882794"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39465343"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
-Oluşturur bir *akıllı işaretçi* şablon parametresi tarafından belirtilen arabirimi temsil eden tür. ComPtr otomatik olarak bir başvuru sayısı için temel arabirim işaretçisi tutar ve başvuru sayısı sıfır olarak gittiğinde arabirimi serbest bırakır.  
+Oluşturur bir *akıllı işaretçi* şablon parametresi tarafından belirlenen arabirimi temsil eden tür. **ComPtr** otomatik olarak temel arabirim işaretçisi için bir başvuru sayısını tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,71 +38,71 @@ friend class ComPtr;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- ComPtr temsil eden arabirim.  
+ *T*  
+ Arabirimi, **ComPtr** temsil eder.  
   
- `U`  
- Geçerli ComPtr bir arkadaş olduğu bir sınıf. (Bu parametre kullandığı şablonunu korunur.)  
+ *U*  
+ Bir sınıfa geçerli **ComPtr** arkadaş olur. (Bu parametre kullanan bir şablonu korunuyor.)  
   
 ## <a name="remarks"></a>Açıklamalar  
- ComPtr <> temel arabirim işaretçisi temsil eden bir tür bildirir. ComPtr <> kullanabilir bir değişkeni bildirme ve ardından OK üye erişimi işleci (`->`) bir arabirim üye işlevine erişmek için.  
+ `ComPtr<>` temel arabirim işaretçisi temsil eden bir tür bildirir. Kullanma `ComPtr<>` bir değişkeni bildirir ve ardından OK üye erişimi işleci (`->`) bir arabirim üye işlevine erişmek için.  
   
- Akıllı işaretçiler hakkında daha fazla bilgi için "COM akıllı işaretçiler" alt bölümüne bakın [COM kodlama uygulamalarını](http://msdn.microsoft.com/en-us/76aca556-b4d6-4e67-a2a3-4439900f0c39)MSDN Kitaplığı'nda konu.  
+ Akıllı işaretçiler hakkında daha fazla bilgi için bkz: "COM akıllı işaretçileri" alt bölümü [COM kodlama uygulamalarını](http://msdn.microsoft.com/76aca556-b4d6-4e67-a2a3-4439900f0c39)MSDN Kitaplığı'nda konu.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`InterfaceType`|Bir eş tarafından belirtilen tür için `T` şablon parametresi.|  
+|`InterfaceType`|Tarafından belirtilen türe ilişkin bir eşanlam *T* şablon parametresi.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtr::ComPtr Oluşturucusu](../windows/comptr-comptr-constructor.md)|ComPtr sınıfı yeni bir örneğini intializes. Aşırı varsayılan, kopyalama, taşıma ve dönüştürme oluşturucuları sağlar.|  
-|[ComPtr::~ComPtr Yıkıcısı](../windows/comptr-tilde-comptr-destructor.md)|ComPtr örneği deinitializes.|  
+|[ComPtr::ComPtr Oluşturucusu](../windows/comptr-comptr-constructor.md)|Yeni bir örneğini başlatır **ComPtr** sınıfı. Varsayılan, kopyalama, taşıma ve dönüştürme oluşturucuları aşırı yüklemeler sağlar.|  
+|[ComPtr::~ComPtr Yıkıcısı](../windows/comptr-tilde-comptr-destructor.md)|Örneği başlatılmasını geri alır **ComPtr**.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtr::As Metodu](../windows/comptr-as-method.md)|Belirtilen şablon parametresi tarafından tanımlanan arabirimi temsil eden bir ComPtr nesnesi döndürür.|  
-|[ComPtr::AsIID Metodu](../windows/comptr-asiid-method.md)|Belirtilen arabirim kimliği ile tanımlanan arabirimi temsil eden bir ComPtr nesnesi döndürür|  
-|[ComPtr::AsWeak Metodu](../windows/comptr-asweak-method.md)|Geçerli nesne zayıf bir başvuru alır.|  
-|[ComPtr::Attach Metodu](../windows/comptr-attach-method.md)|Geçerli şablon türü parametresi tarafından belirtilen arabirim türü bu ComPtr ilişkilendirir.|  
-|[ComPtr::CopyTo Metodu](../windows/comptr-copyto-method.md)|Belirtilen çıkış işaretçisi için bu ComPtr ile ilişkili geçerli ya da belirtilen arabirimi kopyalar.|  
-|[ComPtr::Detach Metodu](../windows/comptr-detach-method.md)|Bu ComPtr temsil ettiği arabiriminden keser.|  
-|[ComPtr::Get Metodu](../windows/comptr-get-method.md)|Bu ComPtr ile ilişkili arayüzü için bir işaretçi alır.|  
-|[ComPtr::GetAddressOf Metodu](../windows/comptr-getaddressof-method.md)|Adresini alır [ptr_](../windows/comptr-ptr-data-member.md) bu ComPtr tarafından temsil edilen arayüzü için bir işaretçi içeriyor veri üyesi.|  
-|[ComPtr::ReleaseAndGetAddressOf Metodu](../windows/comptr-releaseandgetaddressof-method.md)|Bu ComPtr ile ilişkili arabiriminin serbest bırakır ve adresini alır [ptr_](../windows/comptr-ptr-data-member.md) yayımlanan arayüzü için bir işaretçi içeriyor veri üyesi.|  
-|[ComPtr::Reset](../windows/comptr-reset.md)|Bu ComPtr ile ilişkili arabirimi işaretçisi tüm başvurularını serbest bırakır.|  
-|[ComPtr::Swap Metodu](../windows/comptr-swap-method.md)|Belirtilen ComPtr tarafından yönetilen arabirimi geçerli ComPtr tarafından yönetilen arabirimi değiş tokuş eder.|  
+|[ComPtr::As Metodu](../windows/comptr-as-method.md)|Döndürür bir **ComPtr** belirtilen şablon parametresi tarafından belirlenen arabirimi temsil eden nesne.|  
+|[ComPtr::AsIID Metodu](../windows/comptr-asiid-method.md)|Döndürür bir **ComPtr** belirtilen arabirim kimliği. tarafından belirlenen arabirimi temsil eden nesne|  
+|[ComPtr::AsWeak Metodu](../windows/comptr-asweak-method.md)|Geçerli nesnenin zayıf bir başvuru alır.|  
+|[ComPtr::Attach Metodu](../windows/comptr-attach-method.md)|Bu ilişkilendirir **ComPtr** geçerli bir şablon türü parametresi tarafından belirtilen arabirim türüne sahip.|  
+|[ComPtr::CopyTo Metodu](../windows/comptr-copyto-method.md)|Şununla ilişkili geçerli ya da belirtilen arabirim kopyalar **ComPtr** belirtilen çıkış işaretçi.|  
+|[ComPtr::Detach Metodu](../windows/comptr-detach-method.md)|Bu ayırır **ComPtr** arabiriminden temsil eder.|  
+|[ComPtr::Get Metodu](../windows/comptr-get-method.md)|Şununla ilişkili arabirim işaretçisi alır **ComPtr**.|  
+|[ComPtr::GetAddressOf Metodu](../windows/comptr-getaddressof-method.md)|Adresini alır [ptr_](../windows/comptr-ptr-data-member.md) bu tarafından temsil edilen arabirimi için bir işaretçi içeren veri üyesi **ComPtr**.|  
+|[ComPtr::ReleaseAndGetAddressOf Metodu](../windows/comptr-releaseandgetaddressof-method.md)|Şununla ilişkili arabirimini yayımlar **ComPtr** ve adresini alır. [ptr_](../windows/comptr-ptr-data-member.md) yayımlanan arabirimi için bir işaretçi içeren veri üyesi.|  
+|[ComPtr::Reset](../windows/comptr-reset.md)|Bununla ilişkili arabirim işaretçisi için tüm başvurularını serbest **ComPtr**.|  
+|[ComPtr::Swap Metodu](../windows/comptr-swap-method.md)|Geçerli tarafından yönetilen arabirimi birbiriyle değiştirir **ComPtr** tarafından belirtilen yönetilen arabirimi ile **ComPtr**.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtr::InternalAddRef Metodu](../windows/comptr-internaladdref-method.md)|Bu ComPtr ile ilişkili arabiriminin başvurusu sayısını artırır.|  
-|[ComPtr::InternalRelease Metodu](../windows/comptr-internalrelease-method.md)|Bu ComPtr ile ilişkili arabiriminin bir COM yayın işlemi gerçekleştirir.|  
+|[ComPtr::InternalAddRef Metodu](../windows/comptr-internaladdref-method.md)|Şununla ilişkili arabiriminin başvuru sayısını artırır **ComPtr**.|  
+|[ComPtr::InternalRelease Metodu](../windows/comptr-internalrelease-method.md)|Şununla ilişkili arabirim bir COM yayınında işlemi gerçekleştirir **ComPtr**.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtr::operator Microsoft::WRL::Details::BoolType İşleci](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md)|Bir ComPtr bir arabirim nesne ömrü yönetme olup olmadığını gösterir.|  
-|[ComPtr::operator& İşleci](../windows/comptr-operator-ampersand-operator.md)|Geçerli ComPtr adresini alır.|  
-|[ComPtr::operator= İşleci](../windows/comptr-operator-assign-operator.md)|Bir değer için geçerli ComPtr atar.|  
-|[ComPtr::operator-> İşleci](../windows/comptr-operator-arrow-operator.md)|Geçerli şablon parametresi tarafından belirtilen tür için bir işaretçi alır.|  
-|[ComPtr::operator== İşleci](../windows/comptr-operator-equality-operator.md)|İki ComPtr nesnenin eşit olup olmadığını gösterir.|  
-|[ComPtr::operator!= İşleci](../windows/comptr-operator-inequality-operator.md)|İki ComPtr nesnenin eşit olup olmadığını gösterir.|  
+|[ComPtr::operator Microsoft::WRL::Details::BoolType İşleci](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md)|Belirtir olup olmadığını bir **ComPtr** bir arabirimin nesne ömrü yönetimi.|  
+|[ComPtr::operator& İşleci](../windows/comptr-operator-ampersand-operator.md)|Geçerli adresi alır **ComPtr**.|  
+|[ComPtr::operator= İşleci](../windows/comptr-operator-assign-operator.md)|Geçerli bir değer atar **ComPtr**.|  
+|[ComPtr::operator-> İşleci](../windows/comptr-operator-arrow-operator.md)|Geçerli bir şablon parametresi tarafından belirtilen tür için bir işaretçi alır.|  
+|[ComPtr::operator== İşleci](../windows/comptr-operator-equality-operator.md)|Belirtir olup iki **ComPtr** nesneler.|  
+|[ComPtr::operator!= İşleci](../windows/comptr-operator-inequality-operator.md)|Belirtir olup iki **ComPtr** nesneler eşit değildir.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtr::ptr_ Veri Üyesi](../windows/comptr-ptr-data-member.md)|İle ilişkili ve bu ComPtr tarafından yönetilen arabirimi için bir işaretçi içeriyor.|  
+|[ComPtr::ptr_ Veri Üyesi](../windows/comptr-ptr-data-member.md)|İle ilişkili olan ve bu tarafından yönetilen arabirimi için bir işaretçi içeren **ComPtr**.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ComPtr`  

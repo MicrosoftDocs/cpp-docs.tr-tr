@@ -13,15 +13,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dd2ce820367b15cb5dad8baf691a835499457a55
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6edbe333ddb634d8657712695250ec627a171780
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870773"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461090"
 ---
 # <a name="comptrreset"></a>ComPtr::Reset
-Bu ComPtr ile ilişkili arabirimi işaretçisi tüm başvurularını serbest bırakır.  
+Bununla ilişkili arabirim işaretçisi için tüm başvurularını serbest **ComPtr**.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,7 +30,7 @@ unsigned long Reset();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Varsa, serbest başvuru sayısı.  
+ Varsa, yayımlanan başvuru sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 674be7ebd819b48cfdf22376565f2bea90787330
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 48c9962c7a0798b9c3fd4d5d9e1af223d41ac552
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939215"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39460885"
 ---
 # <a name="unions"></a>Birleşimler
 A **birleşim** tüm üyeleri aynı bellek konumunda paylaşır ve kullanıcı tanımlı bir tür. Başka bir deyişle, belirli bir zamanda üyeler listesinden birden fazla nesne bir birleşim içerebilir. Ayrıca, kaç üyeleri olan bir birleşim ne olursa olsun, her zaman yeterli bellek en büyük üyesini depolamak için kullandığı anlamına gelir.  
@@ -35,7 +35,7 @@ A **birleşim** tüm üyeleri aynı bellek konumunda paylaşır ve kullanıcı t
 union [name]  { member-list };  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Adı*  
  Birleşime verilen tür adı.  
   
@@ -149,7 +149,6 @@ void Initialize()
     second.wind = { 204,1418859354, 14, 27 };  
     inputs.push(second);  
 }  
-  
 ```  
   
  Önceki örnekte, giriş struct birleşimde adsız olmadığını unutmayın. Anonim birleşim budur ve yapının doğrudan üyeleri olarak bulunuyorlarmış üyelerini erişilebilir. Anonim birleşimler hakkında daha fazla bilgi için aşağıdaki bölümüne bakın.  
@@ -603,7 +602,6 @@ private:
         WindData wind;  
     };  
 };  
-  
 ```  
   
  Birleşimler başvuruları depolanamıyor. Birleşimler devralmayı desteklemeyen, bu nedenle bir birleşim bir taban sınıfı olarak kullanılamaz veya başka bir sınıftan veya sanal işlevler içeremez.  
@@ -633,7 +631,6 @@ int main()
  10  
  3.141600  
 */  
-  
 ```  
   
  `NumericType` birleşimi, bellekte (kavramsal olarak) aşağıdaki şekilde gösterildiği gibi düzenlenir.  
@@ -654,11 +651,11 @@ Anonim birleşimler, adlandırılmış birleşimler kısıtlamalarına ek olarak
   
 -   Olarak da bildirilmelidir **statik** dosya veya ad alanı kapsamında bildirilmişlerse.  
   
--   Yalnızca genel üyeleri olabilir; anonim birleşimlerdeki özel ve korumalı üyeler hata oluşturur.  
+-   Yalnızca olabilir **genel** üyeleri; **özel** ve **korumalı** anonim Birleşimlerdeki üye hatalar oluşturur.  
   
 -   Bunlar, üye işlevleri sahip olamaz.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Sınıfı](../cpp/class-cpp.md)   

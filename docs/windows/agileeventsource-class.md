@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 58eb96e3a0268d3ba70b60d9c315e935e19485f3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7412968069963679db769cc2ce68169e7a8799b9
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858126"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39462075"
 ---
 # <a name="agileeventsource-class"></a>AgileEventSource sınıfı
 
-Herhangi bir iş parçacığından erişilebilir bir bileşen olan bir Çevik bileşen tarafından gerçekleştirilen bir olayı temsil eder. Öğesinden devralınan [EventSource](eventsource-class.md) ve geçersiz kılmalar `Add` üye işlevi Çevik olay çağırmak nasıl seçeneklerini belirtmek için ek türü parametreye sahip.
+Herhangi bir iş parçacığından erişilebilir bir bileşen olan Çevik bir bileşen tarafından gerçekleştirilen bir olayı temsil eder. Devralınan [EventSource](eventsource-class.md) ve geçersiz kılmaları `Add` Çevik olayı çağırmak nasıl seçeneklerini belirtmek için bir ek tür parametresi ile üye işlevi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,16 +37,16 @@ class AgileEventSource
 ```
 
 ## <a name="parameters"></a>Parametreler  
- `TDelegateInterface`  
+ *TDelegateInterface*  
 
- Olay işleyici temsil eden bir temsilci için arabirim.
+ Bir olay işleyicisi temsil eden bir temsilci için arabirim.
 
- `TEventSourceOptions`  
- Bir [InvokeModeOptions](invokemodeoptions-structure.md) , invokeMode alanı ayarlanmış yapıda `InvokeMode::StopOnFirstError` veya `InvokeMode::FireAll`.
+ *TEventSourceOptions*  
+ Bir [Invokemodeoptions](invokemodeoptions-structure.md) olan invokeMode alanı yapıda `InvokeMode::StopOnFirstError` veya `InvokeMode::FireAll`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Windows çalışma zamanı bileşenleri çoğunluğu, Çevik bileşenleridir. Daha fazla bilgi için bkz: [iş parçacığı oluşturma ve sıralama (C + +/ CX)](../cppcx/threading-and-marshaling-c-cx.md).
+Windows çalışma zamanı bileşenlerinde büyük çoğunluğu, Çevik bileşenleridir. Daha fazla bilgi için [iş parçacığı oluşturma ve sıralama (C + +/ CX)](../cppcx/threading-and-marshaling-c-cx.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -64,11 +64,11 @@ Windows çalışma zamanı bileşenleri çoğunluğu, Çevik bileşenleridir. Da
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[AgileEventSource::Add yöntemi](#add)|Geçerli AgileEventSource nesnesi için olay işleyicileri kümesine tarafından belirtilen temsilci arabirimi temsil Çevik olay işleyicisi ekler.|
+|[AgileEventSource::Add yöntemi](#add)|Geçerli AgileEventSource nesnesi için olay işleyicileri kümesini belirtilen temsilci arabirimi tarafından temsil edilen Çevik olay işleyicisi ekler.|
 
 ## <a name="add"></a> AgileEventSource::Add yöntemi
 
-Olay işleyicileri geçerli kümesine tarafından belirtilen temsilci arabirimi temsil olay işleyicisi ekler [EventSource](eventsource-class.md) nesnesi.
+Ekler için geçerli olay işleyicileri kümesini belirtilen temsilci arabirimi tarafından temsil edilen olay işleyicisi [EventSource](eventsource-class.md) nesne.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -81,17 +81,16 @@ HRESULT Add(
 
 ### <a name="parameters"></a>Parametreler
 
-*delegateInterface*
+*delegateInterface*  
+Bir olay işleyicisi temsil eden bir temsilci nesnesi için arabirim.
 
-Olay işleyici temsil eden bir temsilci nesnesi için arabirim.
-
-*belirteç* bu işlem tamamlandığında, olay temsil eden bir tanıtıcı. Olay işleyicisi atmak için Remove() kullanılmasına yöntemi için parametre olarak bu belirteci kullanın.
+*Belirteç*  
+Bu işlem tamamlandığında, olayı temsil eden bir işleyici. Olay işleyicisi atmak foreach() yöntemin parametre olarak bu belirteci kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-
  [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

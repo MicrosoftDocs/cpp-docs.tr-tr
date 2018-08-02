@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f3249408a63b873e4eea9d6b1ec741fc1471ac9
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 6cc11c12efc2beb8ec70c9081619c799f0c8c0d5
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939409"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466741"
 ---
 # <a name="varianttclear"></a>_variant_t::Clear
 **Microsoft'a özgü**  
@@ -34,9 +34,7 @@ ms.locfileid: "37939409"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 void Clear( );  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -44,5 +42,5 @@ void Clear( );
   
  **END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca bkz.  
  [_variant_t Sınıfı](../cpp/variant-t-class.md)

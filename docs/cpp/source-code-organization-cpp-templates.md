@@ -10,12 +10,12 @@ dev_langs:
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: ef23b1a12305be9ecf181beb085bb686e81b083b
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: ebfbfde25f0fd95eb69018fe46a9d6e04bd473c2
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37939760"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39464125"
 ---
 # <a name="source-code-organization-c-templates"></a>Kaynak kodu kuruluşu (C++ Şablonları)
 

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7e6283b86b8e225771f259df9b5377fffa3667fa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6bd9f899457c3a6045d7a5525c9fb560e23f10d3
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855948"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461042"
 ---
 # <a name="chaininterfacesfillarraywithiid-method"></a>ChainInterfaces::FillArrayWithIid Yöntemi
-Arabirim kimliği tarafından tanımlanan depoları `I0` belirtilen dizinin içinde belirtilen bir konuma kimlikleri arabiriminin şablon parametresi.  
+Arabirim kimliği tarafından tanımlanan depoları *I0* şablon parametresi belirtilen bir dizisinde belirtilen bir konuma arabiriminin kimlikleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,10 +37,10 @@ __forceinline static void FillArrayWithIid(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `index`  
- Bir dizin değeri işaretçi `iids` dizi.  
+ *Dizin*  
+ Bir dizin değeri işaretçisine *IID'leri* dizisi.  
   
- `iids`  
+ *IID'leri*  
  Arabirim kimlikleri dizisi.  
   
 ## <a name="requirements"></a>Gereksinimler  

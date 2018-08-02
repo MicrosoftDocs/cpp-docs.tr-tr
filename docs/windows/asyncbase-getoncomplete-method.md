@@ -1,5 +1,5 @@
 ---
-title: AsyncBase::GetOnComplete yöntemi | Microsoft Docs
+title: AsyncBase::GetOnComplete metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa1bf81c8b377da44fb4b81cdb2b0142e90032e0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 15a561924cad314d09209e205ac73430f6d8be01
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33865116"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39466578"
 ---
 # <a name="asyncbasegetoncomplete-method"></a>AsyncBase::GetOnComplete Metodu
-Geçerli tamamlama olay işleyicisinin adresi belirtilen değişkenine kopyalar.  
+Adres geçerli tamamlama olay işleyicisinin belirtilen değişkenine kopyalar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ STDMETHOD(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `completeHandler`  
+ *completeHandler*  
  Adres geçerli tamamlama olay işleyicisinin depolandığı konum.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde E_ILLEGAL_METHOD_CALL.  
+ Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

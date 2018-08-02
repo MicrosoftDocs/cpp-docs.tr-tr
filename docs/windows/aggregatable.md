@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1d80b2fb707145f698e8d9bb883059478c3da10b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5b5d94a1e66043a83e2ffb2aa8c1d44d9cbd16cc
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863832"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39467202"
 ---
 # <a name="aggregatable"></a>toplanabilir
 Sınıf toplama desteklediğini belirtir.  
@@ -30,40 +30,39 @@ Sınıf toplama desteklediğini belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ aggregatable(   
+[ aggregatable(   
    value  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *değer* (isteğe bağlı)  
- COM nesnesinin ne zaman kümelenebilir belirtmek için bir parametre:  
+ COM nesnesinin ne zaman toplanabilir belirtmek için bir parametre:  
   
 -   **hiçbir zaman** COM nesnesi toplanamaz.  
   
--   **izin verilen** COM nesnesi doğrudan oluşturulabilir veya onu kümelenebilir. Bu varsayılandır.  
+-   **izin verilen** COM nesnesi doğrudan oluşturulabilir veya onu toplanabilir. Bu varsayılandır.  
   
--   **her zaman** COM nesnesi doğrudan oluşturulamaz ve yalnızca kümelenebilir. Çağırdığınızda `CoCreateInstance` bu nesne için aggregating nesnenin belirtmelisiniz **IUnknown** arabirimi (denetleme **IUnknown**).  
+-   **her zaman** COM nesnesi doğrudan oluşturulamaz ve yalnızca toplanabilir. Çağırdığınızda `CoCreateInstance` bu nesne için toplama nesnenin belirtmelisiniz `IUnknown` arabirimi (denetleme `IUnknown`).  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Toplanabilir** C++ özniteliğine sahip ile aynı işlevselliği [toplanabilir](http://msdn.microsoft.com/library/windows/desktop/aa366721) MIDL özniteliği. Bu derleyici geçer anlamına gelir **toplanabilir** oluşturulan .idl dosyasına özniteliği aracılığıyla.  
+ **Toplanabilir** C++ özniteliği ile aynı işlevlere sahip [toplanabilir](http://msdn.microsoft.com/library/windows/desktop/aa366721) MIDL özniteliği. Bu derleyici geçer anlamına gelir **toplanabilir** oluşturulan .idl dosyasına özniteliği aracılığıyla.  
   
- Bu öznitelik gerektiren [coclass](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (veya bunlardan birini gelir başka bir öznitelik) de uygulanması aynı öğeye. Herhangi bir tek öznitelik kullanılırsa, diğer iki otomatik olarak uygulanır. Örneğin, varsa **ProgID** uygulanan **vi_progid** ve **coclass** da uygulanır.  
+ Bu öznitelik gerektiren [coclass'ı](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.  
   
  **ATL projeleri**  
   
- Bu öznitelik, ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davranışını değiştirir. Daha önce açıklanan davranışa ek olarak, öznitelik ayrıca aşağıdaki makroları biri için hedef sınıf ekler:  
+ Bu öznitelik ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davranışını değiştirir. Daha önce açıklandığı gibi davranışa ek olarak, öznitelik ayrıca aşağıdaki makroları biri hedef sınıfına ekler:  
   
 |Parametre değeri|Eklenen makrosu|  
 |---------------------|--------------------|  
-|**Hiçbir zaman**|[DECLARE_NOT_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_not_aggregatable)|  
-|**İzin verildi**|[DECLARE_POLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_poly_aggregatable)|  
-|**Her zaman**|[DECLARE_ONLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_only_aggregatable)|  
+|*hiçbir zaman*|[DECLARE_NOT_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_not_aggregatable)|  
+|*İzin verilen*|[DECLARE_POLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_poly_aggregatable)|  
+|*Her zaman*|[DECLARE_ONLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_only_aggregatable)|  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_aggregatable.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -83,9 +82,9 @@ class CMyClass {};
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Bir veya daha fazlasını: **coclass**, **ProgID**, veya **vi_progid**.|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

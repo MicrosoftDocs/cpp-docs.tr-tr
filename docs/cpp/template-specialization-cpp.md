@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edef104cafc4b56b5f785537db1c836da4e427dc
-ms.sourcegitcommit: 1fd1eb11f65f2999dfd93a2d924390ed0a0901ed
+ms.openlocfilehash: 9a3cb0c41c6d9741e88bfdbba85fecfb6ff3f1b6
+ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37941177"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39461760"
 ---
 # <a name="template-specialization-c"></a>Şablon uzmanlığı (C++)
 
