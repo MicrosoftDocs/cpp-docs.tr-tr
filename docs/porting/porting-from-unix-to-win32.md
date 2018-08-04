@@ -1,7 +1,7 @@
 ---
 title: UNIX'ten Win32'ye taşıma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/02/2018
 ms.technology:
 - cpp-language
 ms.topic: conceptual
@@ -20,68 +20,64 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 628d032ff00205b3f511a613a866f025d62dc50a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 08958de9f756ac005f966245e22a44afd7125bc0
+ms.sourcegitcommit: 66f4f12d3851c897ca69cf62da1697e95b2b97c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843294"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39496681"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
-Uygulamaları Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:  
+Uygulamalar için Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:  
   
--   UNIX'ten Win32 bağlantı noktası uygulamaları için UNIX kitaplıklarını kullanma  
+-   UNIX'ten Win32 uygulamalarına bağlantı noktası UNIX kitaplıklarını kullanma  
   
--   Uygulamaları UNIX'ten Win32 yerel bağlantı noktası oluşturma  
+-   UNIX'ten Win32 uygulamaları yerel olarak taşıma  
   
--   POSIX alt sistemini kullanarak UNIX uygulamalar Windows üzerinde çalışan  
+-   POSIX alt sistemini kullanarak Windows üzerinde çalışan UNIX uygulamalar  
   
 ## <a name="unix-libraries"></a>UNIX kitaplıkları  
- Bir seçenek UNIX programcıları normal olarak dikkate kendi UNIX kod derleme Win32 yürütülebilir izin vermek için üçüncü taraf UNIX benzeri kitaplıkları kullanıyor. Çeşitli ticari (ve en az bir ortak etki alanı) kitaplıklar bunu. Bazı uygulamalar için bir seçenek budur. Bu kitaplıklar taşıma avantajı, bunlar ilk taşıma çabasını en aza olmasıdır. Rekabet yazılım ürünü için ana olumsuz bir uygulamanın yerel bir Win32 bağlantı noktası genellikle daha hızlı olacaktır ve daha fazla işlevsellik kaçınılmaz olarak gerekir ' dir. Daha fazla güç Windows'dan almak için Win32 çağrıları yapması gerektiğinde UNIX kabuğunun dışında adım uygulamanın garip olabilir.  
+ Bir seçenek UNIX programcılar normalde düşünün, UNIX kodu derleme bir Win32 çalıştırılabilir dosyası olarak izin vermek için üçüncü taraf UNIX benzeri kitaplıkları kullanıyor. Birçok ticari (ve en az bir ortak etki alanı) kitaplıkları bunu. Bazı uygulamalar için bir seçenek budur. Bu kitaplıkları taşıma avantajı, bunlar ilk taşıma çabasını en aza olmasıdır. Bir rekabet yazılım ürünü için ana olumsuz bir uygulamanın yerel bir Win32 bağlantı noktası genellikle daha hızlı olacak ve daha fazla işlevsellik kaçınılmaz olarak gerekir ' dir. Daha fazla güç Windows almak için Win32 çağrıları yapması gerektiğinde, UNIX kabuğunun dışında adım uygulamanın garip olabilir.  
   
- Aşağıdaki liste, Microsoft ve üçüncü taraf kaynakları taşıma ve UNIX geçiş Visual C++ için destek sağlar:  
+ Aşağıdaki listede, Microsoft ve üçüncü taraf kaynakları taşıma ve UNIX geçiş Visual c++ destek sağlar:  
   
 ### <a name="unix-migration-guides"></a>UNIX geçiş kılavuzları  
- UNIX özel uygulama Geçiş Kılavuzu Teknik Yardım kod geçiş UNIX'ten Win32 ortamı sağlar.  
+ [UNIX özel uygulama Geçiş Kılavuzu](https://technet.microsoft.com/library/bb656290.aspx) Teknik Yardım kod geçiş UNIX'ten Win32 ortamı sağlar.  
   
- [http://go.microsoft.com/fwlink/p/?linkid=95428](http://go.microsoft.com/fwlink/p/?linkid=95428)  
-  
- Unix geçişi Proje Kılavuzu üst düzey Yardım geçirme önemli projeleri UNIX'ten Win32'ye sağlayarak UNIX özel uygulama geçiş kılavuzunu tamamlar. Kılavuzu her proje geçiş aşamasında dikkate alınacak konular öneriler sağlar. Kılavuzu indirilmesi:  
-  
- [http://go.microsoft.com/fwlink/p/?linkid=20012](http://go.microsoft.com/fwlink/p/?linkid=20012)  
+ [UNIX geçiş Proje Kılavuzu](https://technet.microsoft.com/library/bb656287.aspx) üst düzey Yardım geçirme önemli projeleri UNIX'ten Win32'ye sağlayarak UNIX özel uygulama geçiş kılavuzunu tamamlar. Kılavuz, her proje geçişi aşamasında göz önüne almanız gereken sorunlar hakkında öneriler sağlar.
   
 ### <a name="microsoft-windows-services-for-unix-sfu"></a>Microsoft Windows Services for UNIX (SFU)  
- Microsoft Windows Services for UNIX (SFU) eksiksiz bir Windows varolan UNIX tabanlı ortamlarla bütünleştirmek için platformlar arası hizmetleri sağlar. Services for UNIX dosya paylaşımı, uzaktan erişim ve yönetim, parola eşitleme, ortak dizin yönetimi, yardımcı programlar ortak bir dizi ve bir kabuk sağlar.  
+ Microsoft Windows Services for UNIX (SFU), çeşitli Windows, UNIX tabanlı mevcut ortamlardan tümleştirmeye yönelik platformlar arası hizmetleri sağlar. UNIX için Hizmetleri, dosya paylaşımı, uzaktan erişim ve yönetim, parola eşitleme, ortak dizin yönetimi, ortak bir araçlar kümesi ve bir kabuk sağlar.  
   
- [Windows Services for UNIX](http://www.microsoft.com/downloads/details.aspx?FamilyID=896c9688-601b-44f1-81a4-02878ff11778&displaylang=en)  
+ [UNIX için Windows Hizmetleri](http://www.microsoft.com/downloads/details.aspx?FamilyID=896c9688-601b-44f1-81a4-02878ff11778&displaylang=en)  
   
 ### <a name="interopsystemscom"></a>InteropSystems.com  
  [http://www.interopsystems.com/](http://www.interopsystems.com/)  
   
- Taşıma UNIX'ten Win32 Destekli yazılım sağlayan bir şirket için site bir üçüncü taraf.  
+ Yazılım taşıma UNIX'ten Win32'destek sağlayan bir şirket için site bir üçüncü taraf.  
   
 ### <a name="c-boost-web-site"></a>C++ Destek Web sitesi  
  [http://boost.sourceforge.net/regression-logs/](http://boost.sourceforge.net/regression-logs/)  
   
  [http://boost.sourceforge.net/boost-build2/](http://boost.sourceforge.net/boost-build2/)  
   
-## <a name="porting-unix-applications-directly-to-win32"></a>UNIX uygulamalarını doğrudan Win32 bağlantı noktası oluşturma  
- Başka bir seçenek, UNIX uygulamalarını doğrudan Win32'ye taşıma. ANSI C/C++ kitaplıkları ve ticari C derleyicisi kitaplıkları kullanarak, birçok UNIX uygulamalarla üzerinde çağrıları iletilen geleneksel sistem Win32 uygulamalarda kullanılabilir.  
+## <a name="porting-unix-applications-directly-to-win32"></a>UNIX uygulamalarını doğrudan Win32 taşıma  
+ Başka bir seçenek, UNIX uygulamalarını doğrudan Win32 taşımaktır. ANSI C/C++ kitaplıkları ve ticari C Derleyici kitaplıklarını kullanarak, birçok geleneksel sistem çağrıları UNIX uygulamalar tarafından yararlandı Win32 uygulamalarında kullanılabilir.  
   
- Çıktı modelinin **stdio**-tabanlı uygulamaların API'leri taklit Win32 konsol beri değiştirilen gerekmez **stdio** modeli ve sürümleri *curses* kullanan mevcut Win32 konsol API'lerini. Daha fazla bilgi için bkz: [SetConsoleCursorPosition](http://msdn.microsoft.com/library/windows/desktop/ms686025).  
+ Çıktı modelinin **stdio**-tabanlı uygulamaları API'leri taklit Win32 konsol beri değiştirilmiş gerekmez **stdio** modeli ve sürümleri *curses* kullanan mevcut Win32 konsol API'leri. Daha fazla bilgi için [SetConsoleCursorPosition](http://msdn.microsoft.com/library/windows/desktop/ms686025).  
   
- Win32 uygulamaları olarak çalışmak için çok az değişiklik Berkeley yuva tabanlı uygulamalar gerekir. Windows Yuvaları arabirimi WinSock belirtimi giriş bölümlerde belirtilmiştir minimum değişiklikle BSD yuva ile taşınabilirlik için tasarlanmıştır.  
+ Win32 uygulamaları olarak çalışmak için çok az değişiklik Berkeley yuva tabanlı uygulamaları gerekir. Windows Sockets arabirimini taşınabilirlik sayesinde WinSock belirtiminin giriş olarak bölümlerde belirtilmiştir minimum değişiklikle BSD yuva için tasarlanmıştır.  
   
- RPC tabanlı uygulamaları kolayca kullanılabilir; bu nedenle Windows DCE uyumlu RPC'yi destekler. Bkz: [RPC işlevleri](http://msdn.microsoft.com/library/windows/desktop/aa378623).  
+ Windows uyumlu DCE RPC desteklediğinden, RPC-tabanlı uygulamaları kolayca kullanılabilir. Bkz: [RPC işlevleri](http://msdn.microsoft.com/library/windows/desktop/aa378623).  
   
- En büyük fark alanlarından biri işlem modelinde biridir. UNIX **çatalı**; Win32 değildir. Kullanımına bağlı olarak **çatalı** ve kod temeli Win32 kullanılabilecek iki API vardır: **CreateProcess** ve `CreateThread`. Birden çok kopyalarını bölen UNIX uygulama içinde birden çok iş parçacığı ile tek bir işlem veya birden çok işlemler için Win32 yeniden. Birden çok işlem kullandıysanız, işlemler arasında iletişim kurmak için kullanılan IPC birden çok yöntemleri vardır (ve belki de kodu ve üst gibi olacak yeni işlem verilerini güncelleştirmek için işlevselliği, **çatalı** sağlar gereklidir). IPC hakkında daha fazla bilgi için bkz: [Ara işlem iletişimleri](http://msdn.microsoft.com/library/windows/desktop/aa365574).  
+ En büyük alanlarından farkı, işlem modelinde yer alır. UNIX **çatal**; Win32 değildir. Kullanımına bağlı olarak **çatal** ve kod tabanının Win32 kullanılabilecek iki API vardır: **CreateProcess** ve `CreateThread`. Birden çok kopyalarını çatallar bir UNIX uygulama birden çok işlem ya da birden çok iş parçacığı ile tek bir işlem için Win32'de yeniden. Birden çok işlem kullandıysanız, işlemler arasında iletişim kurmak için kullanılan IPC, birden fazla yöntem vardır (ve belki de kod ve üst öğe gibi olması için yeni bir işlem verileri güncelleştirmek için İşlevler, **çatal** sağlar gereklidir). IPC hakkında daha fazla bilgi için bkz. [Ara işlem iletişimleri](http://msdn.microsoft.com/library/windows/desktop/aa365574).  
   
- Windows ve UNIX grafik modelleri çok farklıdır. Windows GDI kullanırken UNIX X Window System GUI kullanır. Kavramsal benzer olmalarına rağmen X API GDI API'ye basit eşlemesi yok. Bununla birlikte, OpenGL desteği geçirme UNIX OpenGL tabanlı uygulamalar için kullanılabilir. Ve X istemcileri ve sunucuları Windows için X. Bkz: [cihaz bağlamları](http://msdn.microsoft.com/library/windows/desktop/dd183553) GDI hakkında bilgi için.  
+ Windows ve UNIX grafik modelleri çok farklıdır. GDI Windows kullanan UNIX X penceresi sistem GUI kullanır. Benzer kavramsal rağmen GDI API'sine X API'sinin basit eşlemesi yok. Ancak, OpenGL desteği geçirme UNIX OpenGL tabanlı uygulamalar için kullanılabilir. Ve X istemcileri ve sunucuları için Windows X. Bkz: [cihaz bağlamları](http://msdn.microsoft.com/library/windows/desktop/dd183553) GDI hakkında bilgi için.  
   
- Birçok CGI uygulaması gibi temel UNIX uygulamaları kolayca Windows üzerinde çalışan Visual C++ için bağlantı noktası. Gibi işlev **açmak**, `fopen`, **okuma**, **yazma** ve diğerleri Visual C++ Çalışma Zamanı Kitaplığı'nda kullanılabilir. Ayrıca, C UNIX API'ları ve Win32 API'ları arasında bire bir eşleme yoktur: **açmak** için **CreateFile**, **okuma** için **ReadFile**, **yazma** için **WriteFile**, `ioctl` için **DeviceIoControl**, **kapatmak** için **CloseFile**ve benzeri.  
+ Visual c++ Windows üzerinde çalışan çok CGI uygulaması gibi temel UNIX uygulamaları kolayca aktarılabilir. Gibi işlev **açın**, `fopen`, **okuma**, **yazma** ve diğer Visual C++ Çalışma Zamanı Kitaplığı'nda kullanılabilir. Ayrıca, UNIX API'leri C ve Win32 API'ları arasında bire bir eşleme yoktur: **açın** için **CreateFile**, **okuma** için **ReadFile**, **yazma** için **WriteFile**, `ioctl` için **DeviceIoControl**, **kapatmak** için **CloseFile**ve benzeri.  
   
-## <a name="windows-posix-subsystem"></a>Windows POSIX alt sistemini  
- Başka bir seçenek UNIX programcıları bakma Windows POSIX alt sistemidir. Ancak, yalnızca Windows NT oluşturulduğunda standartlaştırılmış tek POSIX sürümü olan POSIX 1003.1 destekler. O zamandan bu yana olmamıştı bu alt sistemi genişletmek için çok az talep uygulamaların çoğu Win32'ye dönüştürüldüğünden olduğundan. Çok sayıda özellik içermediğinden 1003.1 tam özellikli uygulamalar için sınırlı ilgi sistemidir (olanlar 1003.2 içinde gibi ağ desteği vb.). Windows POSIX alt sistemini altında çalışan tam özellikli uygulamaların Windows özellikleri bellek eşlemeli dosyalar, ağ ve grafikler gibi Win32 uygulamalarına erişimi. Windows POSIX alt sistemini ana hedefleri uygulamalardır VI, LS ve GREP gibi.  
+## <a name="windows-posix-subsystem"></a>Windows POSIX alt sistemi  
+ Başka bir seçenek UNIX programcılar göz Windows POSIX alt sistemi ' dir. Ancak, yalnızca Windows NT oluşturulduğunda standartlaştırılmış yalnızca POSIX sürümün POSIX 1003.1 destekler. O zamandan bu yana var. Bu alt genişletmek için çok az talep nedeniyle çoğu uygulama için Win32 dönüştürüldü Çok sayıda özellik içermediğinden 1003.1 tam özellikli uygulamalar için sınırlı ilgi sistemidir (1003.2 penceresindekilerle gibi ağ desteği vb.). Windows POSIX altında çalışan tam özellikli uygulamaların Windows özelliklerine bellek eşlemeli dosyalar, ağ ve grafikler gibi Win32 uygulamalarına erişiminiz yok. VI ve LS GREP gibi Windows POSIX alt ana hedeflerini gösterilebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ taşıma ve yükseltme Kılavuzu](visual-cpp-change-history-2003-2015.md)   
