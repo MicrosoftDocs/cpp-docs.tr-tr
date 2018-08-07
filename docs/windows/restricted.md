@@ -17,36 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e1d688d4ebca5d2cc01901f5fe1afaa4536b71bb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f79b4e53947e0e87fb70211ca40bc54f4500855f
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892884"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39602778"
 ---
 # <a name="restricted"></a>kısıtlı
-Bir modül, arabirim veya görüntüleme arabirimi üyesi rasgele çağrılamaz belirtir.  
+Bir modül, arabirim veya dispinterface üyesi rasgele çağrılamaz belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ restricted(  
+[ restricted(  
    interfaces  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `interfaces`  
- Rasgele bir COM nesnesi üzerinde çağrılamaz bir veya daha fazla arabirim. Bu parametre yalnızca bir sınıfa uygulandığında geçerli olur.  
+### <a name="parameters"></a>Parametreler  
+ *Arabirimleri*  
+ Rasgele bir COM nesnesi üzerinde çağrılamaz bir veya daha fazla arabirim. Bu parametre, yalnızca bir sınıfa uygulandığında geçerlidir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Kısıtlı** C++ özniteliğine sahip ile aynı işlevselliği [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL özniteliği.  
+ **Kısıtlı** C++ özniteliği ile aynı işlevlere sahip [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodu nasıl kullanılacağını gösterir **kısıtlı** özniteliği:  
+ Aşağıdaki kod nasıl kullanılacağını gösterir **kısıtlı** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_restricted.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -75,9 +74,9 @@ class c : public a, public b
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Yöntemi, arabirim `interface`, **sınıfı**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass'ı** (uygulandığında **sınıfı** veya `struct`)|  
+|**İçin geçerlidir**|Arabirim yöntemini **arabirimi**, **sınıfı**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

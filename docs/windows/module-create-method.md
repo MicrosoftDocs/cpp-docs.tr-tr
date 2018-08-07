@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 99ede64c239909956f1f767db34a2a6a14c02314
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c0d49a6f0b5172b0971f755fc61b7767f0f4427d
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874895"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603309"
 ---
 # <a name="modulecreate-method"></a>Module::Create Yöntemi
-Bir modül bir örneğini oluşturur.  
+Bir modülün örneği oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,18 +42,18 @@ WRL_NOTHROW static Module& Create(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
+### <a name="parameters"></a>Parametreler  
+ *T*  
  Modül türü.  
   
- `callback`  
- Modülün son örnek nesne serbest bırakıldığında çağrılır.  
+ *geri çağırma*  
+ Son örnek nesnesi modülünün bırakıldığında çağırılır.  
   
- `object`  
- `object` Ve `method` parametreleri birlikte kullanılır. Modül son örnek nesnesinde serbest bırakıldığında son örnek nesne işaret eder.  
+ *object*  
+ *Nesne* ve *yöntemi* parametreleri birlikte kullanılır. Son örnek nesne modülünde yayımlandığında son örnek nesnesi işaret eder.  
   
- `method`  
- `object` Ve `method` parametreleri birlikte kullanılır. Modül son örnek nesnesinde serbest bırakıldığında son örnek nesnesinin noktalarını yöntemi.  
+ *Yöntemi*  
+ *Nesne* ve *yöntemi* parametreleri birlikte kullanılır. Nesnenin son örnek nesne modülünde yayımlandığında son örneği noktaları yöntemi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Modül başvuru.  
@@ -65,5 +65,3 @@ WRL_NOTHROW static Module& Create(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Modül Sınıfı](../windows/module-class.md)
-
- 

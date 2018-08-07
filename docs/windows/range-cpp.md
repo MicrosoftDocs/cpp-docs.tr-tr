@@ -17,21 +17,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ac5f0e81a7d29d89e32735224afed67f3d9c9101
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d8c7ab6dcfa4a085facf835343404de3ed4998a3
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877936"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603448"
 ---
 # <a name="range-c"></a>aralık (C++)
-Bağımsız değişken veya değerleri çalışma zamanında ayarlanır alanları için izin verilen değer aralığı belirtir.  
+Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanlar için izin verilen değer aralığı belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ range(  
+[ range(  
    low,   
    high  
 ) ]  
@@ -42,14 +41,14 @@ Bağımsız değişken veya değerleri çalışma zamanında ayarlanır alanlar�
  Düşük aralık değeri.  
   
  *Yüksek*  
- Yüksek aralık değeri.  
+ Yüksek bir aralık değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Aralığı** C++ özniteliğine sahip ile aynı işlevselliği [aralığı](http://msdn.microsoft.com/library/windows/desktop/aa367151) MIDL özniteliği.  
+ **Aralığı** C++ özniteliği ile aynı işlevlere sahip [aralığı](http://msdn.microsoft.com/library/windows/desktop/aa367151) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_range.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -69,9 +68,9 @@ __interface ICustom {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemini, arabirim parametresi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemini, arabirim parametresi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

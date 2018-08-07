@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ae5d91f5e7d8f2a057ba05ede5051e14f9787fb0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e0b6584277586f8b9bbefca020b66fb00a0ad74a
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875779"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603970"
 ---
 # <a name="implementsbase-structure"></a>ImplementsBase Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,9 +34,9 @@ struct ImplementsBase;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Şablon parametresi türlerinde doğrulamak için kullanılan [Implements yapısı](../windows/implements-structure.md).  
+ Şablon parametre türleri doğrulamak için kullanılan [Implements yapısı](../windows/implements-structure.md).  
   
- Implementsbase yapısı tasarım gereği boştur.  
+ **Implementsbase** yapısı tasarım gereği boştur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ImplementsBase`  

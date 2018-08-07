@@ -16,51 +16,51 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d2efe55058ab2ace7530afee7255b2ba08377b0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1850507b9d00ab717a2602d4e230968f5222f077
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879828"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604287"
 ---
 # <a name="method-attributes"></a>Yöntem Öznitelikleri
-Aşağıdaki öznitelikler sınıfı, coclass'ı veya arabirim yöntemleri için geçerlidir.  
+Bir sınıf, coclass'ı veya arabirim yöntemleri aşağıdaki özniteliklere uygulanır.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|[bindable](../windows/bindable.md)|Özellik veri bağlama desteklediğini belirtir.|  
+|[bindable](../windows/bindable.md)|Özelliğin veri bağlamayı desteklediğini belirtir.|  
 |[call_as](../windows/call-as.md)|Uzak bir işleve eşlenmesi nonremotable işlevi sağlar.|  
-|[Özel](../windows/custom-cpp.md)|Kendi özniteliğinizi tanımlamanıza olanak sağlar.|  
+|[Özel](../windows/custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|  
 |[db_column](../windows/db-column.md)|Belirtilen sütun, satır kümesine bağlar.|  
 |[db_command](../windows/db-command.md)|OLE DB komut oluşturur.|  
-|[db_param](../windows/db-param.md)|Belirtilen üye değişkeni bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.|  
+|[db_param](../windows/db-param.md)|Belirtilen üye bağımsız değişkenine bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.|  
 |[db_source](../windows/db-source.md)|Bir veri kaynağı için bir bağlantı oluşturur.|  
-|[db_table](../windows/db-table.md)|OLE DB tablo açar.|  
-|[defaultbind](../windows/defaultbind.md)|En iyi nesneyi temsil eden tek, bağlanabilirse özelliği gösterir.|  
-|[defaultcollelem](../windows/defaultcollelem.md)|Visual Basic kodu iyileştirme için kullanılır.|  
-|[displaybind](../windows/displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmelidir bir özelliği belirtir.|  
-|[helpcontext](../windows/helpcontext.md)|Kullanıcı görünümü öğeyle ilgili bilgi bu Yardım dosyasındaki olanak sağlayan bir içerik Kimliğini belirtir.|  
-|[helpfile](../windows/helpfile.md)|Tür Kitaplığı Yardım dosyasının adını ayarlar.|  
-|[helpstring](../windows/helpstring.md)|Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir.|  
-|[helpstringcontext](../windows/helpstringcontext.md)|Yardım konusunun Kimliğini bir .hlp veya .chm dosyasında belirtir.|  
-|[helpstringdll](../windows/helpstringdll.md)|Belge dize araması (yerelleştirme) gerçekleştirmek için kullanılacak DLL adını belirtir.|  
-|[hidden](../windows/hidden.md)|Öğe var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir.|  
-|[id](../windows/id.md)|Üye işlevi (bir özellik veya bir arabirim veya görüntüleme arabirimi bir yöntem) için bir DISPID belirtir.|  
-|[immediatebind](../windows/immediatebind.md)|Veritabanı veri bağlama nesnenin bir özelliğini yapılan tüm değişiklikler, hemen bildirilecek gösterir.|  
-|[in](../windows/in-cpp.md)|Bir parametre çağrılan yordamı çağırma yordamdan geçirilecek olduğunu gösterir.|  
-|[Yerel](../windows/local-cpp.md)|MIDL derleyici arabirimi üstbilgisinde kullanıldığında bir üstbilgi oluşturucuyu olarak kullanmanıza olanak sağlar. Tek bir işlev kullanıldığında, kendisi için hiçbir saplamalar oluşturulan yerel bir yordam belirler.|  
-|[nonbrowsable](../windows/nonbrowsable.md)|Bir arabirim üyesi bir özellik tarayıcıda görüntülenmemelidir gösterir.|  
-|[propget](../windows/propget.md)|Özellik erişimcisi işlevi belirtir.|  
+|[db_table](../windows/db-table.md)|Bir OLE DB tablosu açılır.|  
+|[defaultbind](../windows/defaultbind.md)|En iyi nesneyi temsil eden tek ve bağlanabilir özelliği belirtir.|  
+|[defaultcollelem](../windows/defaultcollelem.md)|Visual Basic kod iyileştirme için kullanılır.|  
+|[displaybind](../windows/displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir.|  
+|[helpcontext](../windows/helpcontext.md)|Kullanıcı Yardım dosyasında bu öğe hakkındaki bilgileri görüntüleme sağlayan bir bağlam kimliği belirtir.|  
+|[helpfile](../windows/helpfile.md)|Bir tür kitaplığı için Yardım dosyasına adını ayarlar.|  
+|[helpstring](../windows/helpstring.md)|Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.|  
+|[helpstringcontext](../windows/helpstringcontext.md)|Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.|  
+|[helpstringdll](../windows/helpstringdll.md)|Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in adını belirtir.|  
+|[hidden](../windows/hidden.md)|Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.|  
+|[id](../windows/id.md)|DISPID bir üye işlevinin (bir özelliği ya da bir yöntemde, arabirim veya dispinterface) belirtir.|  
+|[immediatebind](../windows/immediatebind.md)|Veritabanı veri bağlama nesnesinin bir özelliği yapılan tüm değişikliklerin hemen bildirileceğini belirtir.|  
+|[in](../windows/in-cpp.md)|Bir parametrenin çağıran yordamdan çağrılan yordama geçirileceğini gösterir.|  
+|[Yerel](../windows/local-cpp.md)|MIDL derleyicisi arabirimi başlığı kullanıldığında bir üstbilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saptamalar oluşturulan yerel bir yordam belirler.|  
+|[nonbrowsable](../windows/nonbrowsable.md)|Bir arabirim üyesi bir özellik tarayıcısında görüntülenmemelidir gösterir.|  
+|[propget](../windows/propget.md)|Bir özelliği erişimci işlevi belirtir.|  
 |[propput](../windows/propput.md)|Bir özellik ayarı işlevi belirtir.|  
-|[propputref](../windows/propputref.md)|Bir başvuru yerine bir değer kullanır özellik ayarı işlevi belirtir.|  
-|[ptr](../windows/ptr.md)|Bir işaretçi tam bir işaretçi olarak belirler.|  
-|[Aralık](../windows/range-cpp.md)|Bağımsız değişken veya değerleri çalışma zamanında ayarlanır alanları için izin verilen değer aralığı belirtir.|  
-|[requestedit](../windows/requestedit.md)|Özellik desteklediğini gösterir **OnRequestEdit** bildirim.|  
-|[restricted](../windows/restricted.md)|Bir modül, arabirim veya görüntüleme arabirimi üyesi rasgele çağrılamaz belirtir.|  
-|[satype](../windows/satype.md)|Veri türünü belirtir **SAFEARRAY** yapısı.|  
-|[Kaynak](../windows/source-cpp.md)|Denetimin kaynak arabirimleri bağlantı noktaları için bir sınıf üzerinde belirtir. Bir özellik veya yöntem **kaynak** öznitelik gösterir üye bir nesneye veya kaynaklı olayların bir Değişken döndürür.|  
+|[propputref](../windows/propputref.md)|Bir değer yerine başvurur bir özellik ayarı işlevi belirtir.|  
+|[ptr](../windows/ptr.md)|Bir işaretçinin tam bir işaretçi olarak belirler.|  
+|[Aralığı](../windows/range-cpp.md)|Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanlar için izin verilen değer aralığı belirtir.|  
+|[requestedit](../windows/requestedit.md)|Özelliğin desteklediğini belirtir `OnRequestEdit` bildirim.|  
+|[restricted](../windows/restricted.md)|Bir modül, arabirim veya dispinterface üyesi rasgele çağrılamaz belirtir.|  
+|[satype](../windows/satype.md)|Veri türü belirtir `SAFEARRAY` yapısı.|  
+|[Kaynak](../windows/source-cpp.md)|Denetimin kaynak arabirimleri bağlantı noktaları için bir sınıf üzerinde belirtir. Bir özellik veya yöntem `source` öznitelik, üyenin bir nesne veya bir olay kaynağı olan Değişken döndürür gösterir.|  
 |[synchronize](../windows/synchronize.md)|Hedef yöntemin erişimi eşitler.|  
-|[vararg](../windows/vararg.md)|İşlev değişken sayıda bağımsız değişken sürmesi belirtir.|  
+|[vararg](../windows/vararg.md)|İşlev, değişken sayıda bağımsız değişken yapmanızı belirtir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

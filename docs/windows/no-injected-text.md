@@ -17,31 +17,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 74336ffaa5e1f9f1990acedf1669526c9152b82b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c1b629f805cf07736dd7988cac6afb857a23b5e5
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880354"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603426"
 ---
 # <a name="noinjectedtext"></a>no_injected_text
-Özellik kullanımı sonucunda kodu injecting derleyici engeller.  
+Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ no_injected_text(  
+[ no_injected_text(  
    boolean  
 ) ];  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `boolean`(isteğe bağlı)  
- **doğru** eklenen, kod istiyorsanız **false** eklenemeyebilir kodu izin vermek için. **doğru** varsayılandır.  
+ *Boole* (isteğe bağlı)  
+ **doğru** eklenen, herhangi bir kod isterseniz **false** eklenmesi için kod izin vermek için. **doğru** varsayılandır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- En yaygın kullanımı **no_injected_text** C++ özniteliktir [/Fx](../build/reference/fx-merge-injected-code.md) ekler derleyici seçeneği **no_injected_text** .mrg dosyasına özniteliği.  
+ En yaygın kullanımı **no_injected_text** C++ özniteliktir [/Fx](../build/reference/fx-merge-injected-code.md) ekleyen derleyici seçeneği **no_injected_text** .mrg dosyasına özniteliği.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -49,9 +48,9 @@ ms.locfileid: "33880354"
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Her yerden|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Her yerde|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

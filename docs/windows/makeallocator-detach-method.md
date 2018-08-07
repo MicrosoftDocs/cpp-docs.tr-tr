@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 50afca04492c29aa526f7a004c6e0f725022e9ba
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a269b7cbab3bba180dfc389075346db3c60e8bf0
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876975"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603374"
 ---
 # <a name="makeallocatordetach-method"></a>MakeAllocator::Detach Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,9 +34,9 @@ __forceinline void Detach();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tarafından ayrılan bellek keser [ayırma](../windows/makeallocator-allocate-method.md) geçerli MakeAllocator nesnesinden yöntemi.  
+ Tarafından ayrılan bellek ayırır [ayırma](../windows/makeallocator-allocate-method.md) yöntemi geçerli **MakeAllocator** nesne.  
   
- Detach() çağırırsanız, bellek ayırma yöntemi tarafından sağlanan silmek için sorumludur.  
+ Eğer **Detach()**, tarafından sağlanan belleği silmekten sorumlu `Allocate` yöntemi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

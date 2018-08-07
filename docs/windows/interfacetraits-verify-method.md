@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f5c16ebda96d5d1c8ff12532e728f32501ea4db7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 404c5fc8680089aeac49b0cda655e9cbd0d4ecd9
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875506"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603054"
 ---
 # <a name="interfacetraitsverify-method"></a>InterfaceTraits::Verify Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,7 +34,7 @@ __forceinline static void Verify();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Temel düzgün türetilmiş doğrular.  
+ Doğrular `Base` düzgün şekilde türetilir.  
   
  Hakkında daha fazla bilgi için `Base`, genel tür tanımları bölümüne bakın [Interfacetraits yapısı](../windows/interfacetraits-structure.md).  
   

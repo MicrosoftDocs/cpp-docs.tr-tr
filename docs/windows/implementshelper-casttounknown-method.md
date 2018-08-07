@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e5a5c71fd0a6ca8fa3b04ad39f46ba5583fbd670
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ed779d1655cb2ab4243bb7384d8ec2e07214d8df
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874505"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604245"
 ---
 # <a name="implementshelpercasttounknown-method"></a>ImplementsHelper::CastToUnknown Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,10 +34,10 @@ IUnknown* CastToUnknown();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Temel alınan IUnknown arabirimi işaretçisi.  
+ Temel alınan IUnknown arabirim işaretçisi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir işaretçi temel IUnknown arabirimi için geçerli Implements yapısı alır.  
+ Temel alınan bir işaretçi alır `IUnknown` arabirimi için geçerli `Implements` yapısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

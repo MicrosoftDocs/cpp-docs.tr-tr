@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f381a00b5ac1f105080355f1d3e3cd15efa5abf8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9941f2b1bce67fb09c69db6278de94c102f88473
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878079"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604875"
 ---
 # <a name="make-function"></a>Make İşlevi
-Belirtilen Windows çalışma zamanı sınıf başlatır. Aynı modülde tanımlanmış bir bileşen örneği oluşturmak için bu işlevi kullanın.  
+Belirtilen Windows çalışma zamanı sınıf başlatır. Aynı modülde tanımlanmış bir bileşeni oluşturmak için bu işlevi kullanın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -171,69 +171,69 @@ template <
 ComPtr<T> Make();  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Öğesinden devralınan kullanıcı tanımlı bir sınıf `WRL::RuntimeClass`.  
+### <a name="parameters"></a>Parametreler  
+ *T*  
+ Devralınan bir kullanıcı tarafından belirtilen sınıf `WRL::RuntimeClass`.  
   
- `TArg1`  
- 1'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg1*  
+ 1 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `TArg2`  
- 2'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg2*  
+ 2 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `TArg3`  
- 3'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg3*  
+ 3 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `TArg4`  
- 4'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg4*  
+ 4 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `TArg5`  
- 5'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg5*  
+ 5 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `TArg6`  
- 6'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg6*  
+ 6 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `TArg7`  
- 7'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg7*  
+ 7 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `TArg8`  
- 8'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg8*  
+ 8 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `TArg9`  
- 9'için belirtilen çalışma zamanı sınıf geçirilen bağımsız değişken türü.  
+ *TArg9*  
+ 9 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.  
   
- `arg1`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişkeni 1.  
+ *arg1*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 1.  
   
- `arg2`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişken 2.  
+ *arg2*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 2.  
   
- `arg3`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişken 3.  
+ *Arg3*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 3.  
   
- `arg4`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişken 4.  
+ *Arg4*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 4.  
   
- `arg5`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişken 5.  
+ *arg5*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 5.  
   
- `arg6`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişken 6.  
+ *arg6*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 6.  
   
- `arg7`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişken 7.  
+ *arg7*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 7.  
   
- `arg8`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişken 8.  
+ *arg8*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 8.  
   
- `arg9`  
- Belirtilen çalışma zamanı sınıf için geçirilen bağımsız değişken 9.  
+ *arg9*  
+ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 9.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- A `ComPtr<T>` nesne başarılı; Aksi takdirde `nullptr`.  
+ A `ComPtr<T>` nesne başarılı; Aksi takdirde **nullptr**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bkz [nasıl yapılır: doğrudan WRL bileşenlerinin örneğini](../windows/how-to-instantiate-wrl-components-directly.md) bu işlev arasındaki farkları öğrenin ve [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md)ve bir örnek.  
+ Bkz: [nasıl yapılır: doğrudan WRL bileşenlerinin örneğini oluşturma](../windows/how-to-instantiate-wrl-components-directly.md) bu işlevi arasındaki farkları öğrenin ve [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md)ve bir örnek.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

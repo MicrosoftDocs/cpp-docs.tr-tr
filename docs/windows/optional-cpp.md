@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07a15be3f90c7ab1fd7d5064f8a69371560b7e71
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 50273c511ff682410252a4c9d6ddafd11d0a92dc
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878219"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603714"
 ---
 # <a name="optional-c"></a>isteğe bağlı (C++)
-Üye işlevi için isteğe bağlı bir parametre belirtir.  
+Bir üye işlev için isteğe bağlı bir parametre belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [optional]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **İsteğe bağlı** C++ özniteliğine sahip ile aynı işlevselliği [isteğe bağlı](http://msdn.microsoft.com/library/windows/desktop/aa367132) MIDL özniteliği.  
+ **İsteğe bağlı** C++ özniteliği ile aynı işlevlere sahip [isteğe bağlı](http://msdn.microsoft.com/library/windows/desktop/aa367132) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kodda gösterildiği nasıl **isteğe bağlı** kullanılabilir:  
   
-```  
+```cpp  
 // cpp_attr_ref_optional.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -60,9 +58,9 @@ __interface IFireTabCtrl : IDispatch
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Parametre arabirimi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Parametre arabirimi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 64f2af40c671760bb8d4e667c209598c46b24665
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 193f0d16b03991e24cb16a90b3310512f6e86054
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889217"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604404"
 ---
 # <a name="roinitializewrapperroinitializewrapper-constructor"></a>RoInitializeWrapper::RoInitializeWrapper Oluşturucusu
-Roınitializewrapper sınıfının yeni bir örneğini başlatır.  
+Yeni bir örneğini başlatır **Roınitializewrapper** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,12 +31,12 @@ Roınitializewrapper sınıfının yeni bir örneğini başlatır.
 RoInitializeWrapper(   RO_INIT_TYPE flags)  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `flags`  
- Windows çalışma zamanı tarafından sağlanan destek belirtir RO_INIT_TYPE numaralandırmalar biri.  
+### <a name="parameters"></a>Parametreler  
+ *bayrakları*  
+ Windows çalışma zamanı tarafından sağlanan desteğin belirtir RO_INIT_TYPE numaralandırmalardan biri.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Roınitializewrapper sınıfı Windows::Foundation::Initialize çağırır (*bayrakları*).  
+ **Roınitializewrapper** sınıfı çağırır `Windows::Foundation::Initialize(flags)`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

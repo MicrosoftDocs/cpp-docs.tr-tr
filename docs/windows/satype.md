@@ -17,28 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a77021cbcf6622701a1025ef33000196ba7bb6d9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8a5376e0e830654c15dc31522b07ed53af4492bf
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888688"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603400"
 ---
 # <a name="satype"></a>satype
-Veri türünü belirtir **SAFEARRAY** yapısı.  
+Veri türü belirtir `SAFEARRAY` yapısı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ satype(  
+[ satype(  
    data_type  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *data_type*  
- Veri türü için **SAFEARRAY** parametre olarak bir arabirim yönteme geçirilen veri yapısı.  
+ Veri türü için `SAFEARRAY` arabirim yöntemi için parametre olarak geçirilen veri yapısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -46,20 +45,20 @@ Veri türünü belirtir **SAFEARRAY** yapısı.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim parametresi, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Satype** C++ özniteliği belirtir. veri türünü **SAFEARRAY**.  
+ **Satype** C++ öznitelik veri türü belirtir `SAFEARRAY`.  
   
 > [!NOTE]
->  Yöneltme düzeyini gelen bırakılan **SAFEARRAY** nasıl .cpp dosyasında bildirilen oluşturulan .idl dosyadan işaretçi.  
+>  Yöneltme düzeyi düşürülmüştür `SAFEARRAY` nasıl .cpp dosyasında bildirilen öğesinden oluşturulan .idl dosyasındaki bir işaretçi.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_satype.cpp  
 // compile with: /LD  
 #include "unknwn.h"  

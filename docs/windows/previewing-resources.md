@@ -20,17 +20,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 32d0082d050ceb391a4346e2a4a38ff71c3cf2a3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0ff41dd0aad30382eb5229679054a74526652737
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878677"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605025"
 ---
 # <a name="previewing-resources"></a>Kaynakları Önizleme
-Kaynaklarınızın Önizleme açmadan grafik kaynak görüntülemenize izin verir. Kaynak tanımlayıcılar sayılara değiştiğinden derledik sonra Önizleme de yürütülebilir dosyalar için yararlıdır. Bu sayısal tanımlayıcılar genellikle yeterli bilgi sağlamıyorsa bu yana kaynakları Önizleme hızla tanımlamanıza yardımcı olur.  
+Kaynaklarınızı Önizleme açmaya gerek kalmadan grafik kaynak görüntülemenize olanak sağlar. Kaynak Tanımlayıcıları sayılara değiştiğinden bunlara derlenmiş sonra Önizleme de yürütülebilir dosyalar için yararlıdır. Bu sayısal tanımlayıcıları genellikle yeterli bilgi sağlamayan olduğundan, kaynakları Önizleme hızlıca belirlemenize yardımcı olur.  
   
- Aşağıdaki kaynak türlerini visual düzenini önizlemesini görüntüleyebilirsiniz:  
+ Görsel düzeni aşağıdaki kaynak türlerinin önizlemesini görebilirsiniz:  
   
 -   Bit eşlem  
   
@@ -44,29 +44,28 @@ Kaynaklarınızın Önizleme açmadan grafik kaynak görüntülemenize izin veri
   
 -   Araç Çubuğu  
   
- Görsel Önizleme işlevi Hızlandırıcı, bildirim, dize tablosu ve sürüm bilgileri kaynakları için geçerli değildir.  
+ Görsel Önizleme işlevi Hızlandırıcı, bildirimi, dize tablosu ve sürüm bilgileri kaynakları için geçerli değildir.  
   
-### <a name="to-preview-resources"></a>Kaynakları Önizleme için  
+### <a name="to-preview-resources"></a>Kaynakları Önizleme  
   
-1.  İçinde [kaynak görünümü](../windows/resource-view-window.md) veya belge penceresinin kaynağınız, örneğin, IDD_ABOUTBOX seçin.  
+1.  İçinde [kaynak görünümü](../windows/resource-view-window.md) veya belge penceresi, örneğin, IDD_ABOUTBOX kaynağınızı seçin.  
   
-     **Not** projeniz zaten bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+     **Not** projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window), tıklatın **özellik sayfaları** düğmesi.  
+2.  İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), tıklayın **özellik sayfaları** düğmesi.  
   
      \- veya -  
   
-3.  Üzerinde **Görünüm** menüsünde tıklatın **özellik sayfaları**.  
+3.  Üzerinde **görünümü** menüsünü tıklatın **özellik sayfaları**.  
   
-     Bu kaynak önizlemesini görüntüleme kaynak için özellik sayfasını açar. Yukarı ve aşağı ok tuşlarını ağaç denetimi kaynak görünümü ya da belge penceresine gidin. Özellik sayfası açık kalır ve odağa sahip ve önizlemesi yapabiliyor herhangi bir kaynağa gösterir.  
+     Bu kaynağın önizlemesini görüntüleme kaynak için özellik sayfasını açar. Yukarı ve aşağı ağaç denetimi kaynak görünümü ya da belge penceresini içinde gezinmek için ok tuşlarını. Özellik sayfasını açık kalır ve odaklı ve önizlemesi mümkün olan herhangi bir kaynağa göster.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
+## <a name="requirements"></a>Gereksinimler 
   
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: (tek başına) proje dışındaki kaynak betik dosyasını açın](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)   
+ [Nasıl yapılır: Proje Dışındaki Kaynak Betik Dosyasını Açma (Tek Başına)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)  
  [Kaynak Düzenleyicileri](../windows/resource-editors.md)
-

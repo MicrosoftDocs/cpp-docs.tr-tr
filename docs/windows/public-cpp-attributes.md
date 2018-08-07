@@ -1,5 +1,5 @@
 ---
-title: Genel (C++ öznitelikleri) | Microsoft Docs
+title: public (C++ öznitelikleri) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1d798d828dd252ce8b5f3f49d5a9aaf525acc986
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 071aed04c73702bdb63f19154353794bae34f8fd
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881737"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603612"
 ---
 # <a name="public-c-attributes"></a>genel (C++ Öznitelikleri)
-Bu gelen .idl dosya içinde başvurulmuyor olsa bile bir typedef türü kitaplığa gider sağlar.  
+Bu gelen .idl dosyasında başvurulmuyor olsa bile bir typedef tür kitaplığına geçer sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [public]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Ortak** C++ özniteliğine sahip ile aynı işlevselliği [ortak](http://msdn.microsoft.com/library/windows/desktop/aa367150) MIDL özniteliği.  
+ **Genel** C++ özniteliği ile aynı işlevlere sahip [genel](http://msdn.microsoft.com/library/windows/desktop/aa367150) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodu nasıl kullanılacağını gösterir **ortak** özniteliği:  
+ Aşağıdaki kod nasıl kullanılacağını gösterir **genel** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_public.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -61,9 +59,9 @@ __interface IFireTabCtrl : IDispatch
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`typedef`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**tür tanımı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

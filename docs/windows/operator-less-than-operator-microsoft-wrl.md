@@ -1,5 +1,5 @@
 ---
-title: İşleç&lt; işleç (Microsoft::WRL) | Microsoft Docs
+title: İşleç&lt; işleci (Microsoft::WRL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cd3ea56386cadc638fd0234993ef6a8a0f5eb2be
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2de0d40a4b506da2cec36719b8fa2fe9c22108d8
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881835"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604219"
 ---
-# <a name="operatorlt-operator-microsoftwrl"></a>İşleç&lt; işleç (Microsoft::WRL)
-Bir nesnenin adresi başka bir değerden olup olmadığını belirler.  
+# <a name="operatorlt-operator-microsoftwrl"></a>İşleç&lt; işleci (Microsoft::WRL)
+Bir nesnenin adresini daha az olup olmadığını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,15 +34,15 @@ template<class T, class U>
 bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<ComPtr<U>>& b) throw();  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `a`  
- Sol nesnesi.  
+### <a name="parameters"></a>Parametreler  
+ *a*  
+ Sol nesne.  
   
- `b`  
+ *b*  
  Doğru nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` varsa adresini `a` adresini'dan küçük `b`; Aksi halde, `false`.  
+ **doğru** varsa adresini *bir* adresini'dan küçük *b*; Aksi takdirde **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

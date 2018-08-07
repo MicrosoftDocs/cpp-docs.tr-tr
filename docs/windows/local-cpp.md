@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 17a57ad56402b345aa64e4e4fd02bc57dd7f0321
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: efa937c1eaabb23fe5a360444f8c2105b735b260
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877923"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604206"
 ---
 # <a name="local-c"></a>yerel (C++)
-Arabirim üstbilgisinde kullanıldığında MIDL derleyici üstbilgi Oluşturucu olarak kullanmanıza olanak sağlar. Tek bir işlev kullanıldığında, kendisi için hiçbir saplamalar oluşturulan yerel bir yordam belirler.  
+Arabirimi başlığı kullanıldığında, MIDL derleyici üstbilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saptamalar oluşturulan yerel bir yordam belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [local]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `local` C++ özniteliğine sahip ile aynı işlevselliği [yerel](http://msdn.microsoft.com/library/windows/desktop/aa367071) MIDL özniteliği.  
+ **Yerel** C++ özniteliği ile aynı işlevlere sahip [yerel](http://msdn.microsoft.com/library/windows/desktop/aa367071) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [call_as](../windows/call-as.md) nasıl kullanılacağına ilişkin bir örnek `local`.  
+ Bkz: [call_as](../windows/call-as.md) nasıl kullanılacağına ilişkin bir örnek **yerel**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,12 +45,12 @@ Arabirim üstbilgisinde kullanıldığında MIDL derleyici üstbilgi Oluşturucu
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**dispinterface**|  
+|**İçin geçerlidir**|**arabirimi**, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
+|**Geçersiz öznitelikler**|`dispinterface`|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

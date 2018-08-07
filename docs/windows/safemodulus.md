@@ -17,15 +17,15 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 653293ac04be1e3a04e90412a9d9d8b988773329
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6eaac98e7794ba9a2475cf7b56641d3a779f84d5
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888874"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604891"
 ---
 # <a name="safemodulus"></a>SafeModulus
-İki sayı üzerinde modulus işlemi gerçekleştirir.  
+İki sayıyı mod işlemi gerçekleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,26 +38,26 @@ inline bool SafeModulus (
 ) throw ();  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- [in] `t`  
- Bölen. Bu t türünde olmalıdır  
+### <a name="parameters"></a>Parametreler  
+ [in] *t*  
+ Bölen. Bu tür olmalıdır `T`.  
   
- [in] `u`  
- Kar payı. Bu türü u olmalıdır  
+ [in] *u*  
+ Kar payı. Bu tür olmalıdır `U`.  
   
- [out] `result`  
- Parametre nerede `SafeModulus` sonucu depolar.  
+ [out] *sonucu*  
+ Parametrenin nereden **SafeModulus** sonucu depolar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` herhangi bir hata oluşursa; `false` bir hata oluşursa.  
+ **doğru** Eğer hiç Hata oluşmazsa; **false** hata oluşması durumunda.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem parçası olan [SafeInt Kitaplığı](../windows/safeint-library.md) ve bir örneğini oluşturmak zorunda kalmadan tek mod işlemi için tasarlanmış [SafeInt sınıfı](../windows/safeint-class.md).  
+ Bu yöntem, parçasıdır [SafeInt Kitaplığı](../windows/safeint-library.md) örneği oluşturulmadan tek mod işlemi için tasarlanmış ve [SafeInt sınıfı](../windows/safeint-class.md).  
   
 > [!NOTE]
->  Bu yöntem yalnızca tek bir matematik işlemi korunmalıdır zaman kullanılmalıdır. Birden çok işlemi varsa, kullanması gereken `SafeInt` tek tek tek başına işlevleri çağırmak yerine sınıfı.  
+>  Bu yöntem, yalnızca tek bir matematiksel işlem korunması gereken durumlarda kullanılmalıdır. Birden çok işlem varsa, kullanması gereken `SafeInt` tek tek başına işlevleri çağırmak yerine sınıfı.  
   
- T ve U şablonu türleri hakkında daha fazla bilgi için bkz: [SafeInt işlevleri](../windows/safeint-functions.md).  
+ Şablon türleri hakkında daha fazla bilgi için `T` ve `U`, bkz: [SafeInt işlevleri](../windows/safeint-functions.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** safeint.h  

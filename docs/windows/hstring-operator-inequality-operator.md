@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 74fc15d10818d14467b866ec37c9e353348ce882
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e35c0b9c448ce9b7aeb6e5f14627e82274a72a41
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877037"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604479"
 ---
 # <a name="hstringoperator-operator"></a>HString::Operator!= İşleci
-İki parametre eşit olup olmadığını gösterir.  
+İki parametrenin eşit olup olmadığını gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,14 +45,14 @@ inline bool operator!=( const HString& lhs,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `lhs`  
- Karşılaştırma yapılacak ilk parametre. `lhs` HString veya HStringReference nesneyi veya bir HSTRING tanıtıcısı olabilir.  
+ *lhs*  
+ Karşılaştırılacak ilk parametre. *lhs* olabilir bir **Hstrıng** veya `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.  
   
- `rhs`  
- Karşılaştırılacak ikinci parametre.`rhs` HString veya HStringReference nesneyi veya bir HSTRING tanıtıcısı olabilir.  
+ *Sol*  
+ Karşılaştırılacak ikinci parametre. *sol* olabilir bir **Hstrıng** veya `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` varsa `lhs` ve `rhs` parametreleri eşit; Aksi takdirde değil `false`.  
+ **doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde değil **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

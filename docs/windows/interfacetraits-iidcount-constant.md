@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2664292324ebb395f3a5f260dec57360027c60e4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cf8808074e347f70290498adc83f55f488a75790
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874073"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39602733"
 ---
 # <a name="interfacetraitsiidcount-constant"></a>InterfaceTraits::IidCount Sabiti
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,7 +34,7 @@ static const unsigned long IidCount = 1;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kimlikleri geçerli Interfacetraits nesneyle ilişkili arabirimi sayısını tutar.  
+ Geçerli ile ilişkili kimlikleri arabirimi sayısını tutar **Interfacetraits** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

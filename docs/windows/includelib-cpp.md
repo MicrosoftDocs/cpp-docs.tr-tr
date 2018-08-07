@@ -17,36 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 252a5d953dd05edc494daf8c4a45322d5511f979
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e10ab341dc4c90a26315ea5e30f03bc71e628b64
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878898"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603387"
 ---
 # <a name="includelib-c"></a>includelib (C++)
-Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olur.  
+Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ includelib(  
+[ includelib(  
    name.idl  
 ) ];  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Name.idl*  
- Oluşturulan .idl dosyanın bir parçası olarak dahil istediğiniz .idl dosyasının adı.  
+ Oluşturulan .idl dosyasının bir parçası olarak dahil istediğiniz .idl dosyasının adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `includelib` C++ öznitelik neden sonra oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası `importlib` deyimi.  
+ **İncludelib** C++ öznitelik neden olur, sonra oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası `importlib` deyimi.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod bir .cpp dosyasında gösterilir:  
+ Aşağıdaki kodu, .cpp dosyasında gösterilir:  
   
-```  
+```cpp  
 // cpp_attr_ref_includelib.cpp  
 // compile with: /LD  
 [module(name="MyLib")];  
@@ -59,17 +58,17 @@ Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olu
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Her yerden|  
-|**Yinelenebilir**|Evet|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Her yerde|  
+|**Tekrarlanabilir**|Evet|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
- [İçeri aktarma](../windows/import.md)   
+ [içeri aktarma](../windows/import.md)   
  [importidl](../windows/importidl.md)   
  [İçerir](../windows/include-cpp.md)   
  [importlib](../windows/importlib.md)   

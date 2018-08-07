@@ -17,36 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c21b97e50fa03861245a0c0881963387dd8a3102
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a4563d1b24b3af6e450a67a21d6a083f1839bc3e
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876764"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603074"
 ---
 # <a name="importlib"></a>importlib
-Zaten başka bir tür kitaplığı oluşturulan tür kitaplığı kullanılabilir içine derlenmiştir türleri sağlar.  
+Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullanılabilir derlenmiştir türleri sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ importlib(  
+[ importlib(  
    "tlb_file"  
 ) ];  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *tlb_file*  
- Geçerli projenin türü kitaplığa içeri aktarılan istediğiniz tırnak, bir .tlb dosyası adı.  
+ Geçerli proje türü kitaplığına içeri aktarılan istediğiniz tırnak içinde .tlb dosyasının adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **İmportlib** C++ öznitelik neden olan bir `importlib` oluşturulan .idl dosya kitaplığını bloğunu yerleştirilecek deyimi. **İmportlib** özniteliğine sahip ile aynı işlevselliği [importlib](http://msdn.microsoft.com/library/windows/desktop/aa367050) MIDL özniteliği.  
+ **İmportlib** C++ öznitelik neden olan bir `importlib` oluşturulan .idl dosyasının kitaplığı bloğunda yerleştirilecek deyimi. **İmportlib** özniteliği ile aynı işlevlere sahip [importlib](http://msdn.microsoft.com/library/windows/desktop/aa367050) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği nasıl kullanılacağını gösterir **importlib**:  
   
-```  
+```cpp  
 // cpp_attr_ref_importlib.cpp  
 // compile with: /LD  
 [module(name="MyLib")];  
@@ -59,17 +58,17 @@ Zaten başka bir tür kitaplığı oluşturulan tür kitaplığı kullanılabili
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Her yerden|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Her yerde|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
  [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
- [İçeri aktarma](../windows/import.md)   
+ [içeri aktarma](../windows/import.md)   
  [importidl](../windows/importidl.md)   
  [İçerir](../windows/include-cpp.md)   
  [includelib](../windows/includelib-cpp.md)

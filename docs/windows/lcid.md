@@ -17,30 +17,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c36c4a53dc627af10b6c768cdc9bc9353cbd4877
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 919bf90fad228a3d7b4f574072e5f315da6427d8
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877260"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39602706"
 ---
 # <a name="lcid"></a>lcid
-Yerel ayar tanımlayıcısı bir işleve geçirmenize olanak sağlar.  
+Bir işlev için bir yerel ayar tanımlayıcısı geçirmenize olanak tanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [lcid]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **LCID** C++ öznitelik uygulayan işlevselliğini [LCID](http://msdn.microsoft.com/library/windows/desktop/aa367067) MIDL özniteliği. Kitaplık bloğu için yerel ayar uygulamak isterseniz kullanırsanız **LCID =** `lcid` parametresi [Modülü](../windows/module-cpp.md) özniteliği.  
+ **LCID** C++ özniteliği işlevselliğini uygulayan [LCID](http://msdn.microsoft.com/library/windows/desktop/aa367067) MIDL özniteliği. Yerel bir kitaplığı bloğu için uygulamak istediğiniz kullanırsanız **LCID =** `lcid` parametresi [Modülü](../windows/module-cpp.md) özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_lcid.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -59,12 +57,12 @@ __interface IStatic {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Parametre arabirimi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Parametre arabirimi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

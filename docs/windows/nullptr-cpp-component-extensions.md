@@ -16,34 +16,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 33a276c383618531103a76b1f20c6ad478d57c10
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ccfb2b234550f5b7fc03e717d92e74b1fd5d5f74
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880724"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604453"
 ---
 # <a name="nullptr--c-component-extensions"></a>nullptr (C++ Bileşen Uzantıları)
-`nullptr` Anahtar sözcüğü temsil eden bir *null işaretçi değeri*. Boş işaretçi değeri bir nesneye bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türü göstermiyor belirtmek için kullanın.  
+**Nullptr** anahtar sözcüğü temsil eden bir *null işaretçi değeri*. Bir null işaretçi değeri bir nesne tanıtıcısı, iç işaretçi veya yerel bir işaretçi türü bir nesneye göstermiyor belirtmek için kullanın.  
   
- Kullanım `nullptr` yönetilen veya özgün kod ile. Derleyici yönetilen ve yerel null işaretçinin değerleri için uygun ancak farklı yönergeleri yayar. ISO standart C++ sürümü bu anahtar sözcük kullanma hakkında daha fazla bilgi için bkz: [nullptr](../cpp/nullptr.md).  
+ Kullanım **nullptr** yönetilen veya yerel kod ile. Yönetilen ve yerel bir null işaretçi değerleri için uygun ancak farklı yönergeleri derleyici gösterir. Bu anahtar sözcük ISO standard C++ sürümü kullanma hakkında daha fazla bilgi için bkz: [nullptr](../cpp/nullptr.md).  
   
- `__nullptr` Sözcüktür aynı anlamı taşır Microsoft'a özgü anahtar sözcüğü `nullptr`, ancak yalnızca yerel koda geçerlidir. Kullanırsanız `nullptr` ile yerel C/C++ kod ve ile derleme [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği derleyici belirleyemiyor olup olmadığını `nullptr` yerel veya yönetilen null işaretçinin değeri gösterir. Derleyicinin temizleyin, amacınız yapmak için kullanın `nullptr` yönetilen bir değer belirtmek için veya `__nullptr` yerel bir değer belirtebilirsiniz.  
+ **__Nullptr** anahtar sözcüğü, aynı anlama sahiptir Microsoft'a özgü anahtar sözcük **nullptr**, ancak yalnızca yerel kod için geçerlidir. Kullanırsanız **nullptr** ile yerel C/C++ kod ve ardından derleme [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği, derleyicinin belirleyemiyor olmadığını **nullptr** yerel gösterir veya boş işaretçi değerini yönetilen. Amacınız derleyicinin Temizle yapmak için **nullptr** yönetilen bir değeri belirtmek için veya **__nullptr** yerel bir değer belirtebilirsiniz.  
   
- `nullptr` Anahtar sözcüğü eşdeğerdir `Nothing` Visual Basic'te ve `null` C#.  
+ **Nullptr** anahtar sözcüğü, eşdeğer **hiçbir şey** Visual Basic'te ve **null** C#.  
   
 ## <a name="usage"></a>Kullanım  
- `nullptr` Anahtar sözcüğü tanıtıcısı, yerel işaretçiden veya işlev bağımsız değişkeni kullanılabilir herhangi bir yerde kullanılabilir.  
+ **Nullptr** anahtar sözcüğü bir tanıtıcı, yerel işaretçisi veya işlev bağımsız değişkeni kullanılabilir her yerde kullanılabilir.  
   
- `nullptr` Anahtar sözcüğü bir tür değil ve ile kullanım için desteklenmez:  
+ **Nullptr** anahtar sözcüğü bir tür değil ve ile kullanım için desteklenmez:  
   
 -   [sizeof](../cpp/sizeof-operator.md)  
   
--   [TypeId](../cpp/typeid-operator.md)  
+-   [typeid](../cpp/typeid-operator.md)  
   
 -   `throw nullptr` (ancak `throw (Object^)nullptr;` çalışır)  
   
- `nullptr` Anahtar sözcüğünü aşağıdaki İşaretçi türlerinin başlatma kullanılabilir:  
+ **Nullptr** anahtar sözcüğü aşağıdaki işaretçi türleri başlatma içinde kullanılabilir:  
   
 -   Yerel işaretçi  
   
@@ -51,18 +51,18 @@ ms.locfileid: "33880724"
   
 -   Yönetilen işleyici  
   
--   Yönetilen iç işaretçi  
+-   İç işaretçi yönetilen  
   
- `nullptr` Anahtar sözcüğü, başvuru kullanılmadan önce bir işaretçi veya tanıtıcı başvurusu null ise test etmek için kullanılabilir.  
+ **Nullptr** anahtar sözcüğü, başvuru kullanılmadan önce bir işaretçi veya işleç başvuru null ise, test etmek için kullanılabilir.  
   
- İşlev çağrıları hata denetimi için null işaretçinin değerleri kullanan diller arasında doğru yorumlanması.  
+ İşlev çağrıları hata denetimi için null işaretçi değerleri kullanan diller arasında doğru yorumlanması gerektiğini.  
   
- Sıfır için tanıtıcı başlatamıyor; yalnızca `nullptr` kullanılabilir. Bir nesneyi işlemek için sabit 0 atama üreten bir kutu `Int32` ve bir cast `Object^`.  
+ Sıfırdan bir tanıtıcı başlatılamıyor; yalnızca **nullptr** kullanılabilir. Bir nesne tanıtıcısına sabit 0 atama üretir bir kutu `Int32` ve bir atamanın `Object^`.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde gösteren `nullptr` anahtar sözcüğü bir tanıtıcı olduğunda, yerel işaretçiden kullanılabilir veya işlev bağımsız değişkeni kullanılabilir. Ve örnek gösteren `nullptr` anahtar sözcüğü, kullanılmadan önce bir başvuru denetlemek için kullanılabilir.  
+ Aşağıdaki kod örneği gösteren **nullptr** anahtar sözcüğü bir tanıtıcı her yerde kullanılabilir, yerel işaretçisi veya işlev bağımsız değişkeni kullanılabilir. Bu örnek, gösterir **nullptr** anahtar sözcüğü, kullanılmadan önce bir başvuru denetlemek için kullanılabilir.  
   
-```  
+```cpp  
 // mcpp_nullptr.cpp  
 // compile with: /clr  
 value class V {};  
@@ -88,11 +88,10 @@ int main() {
 ```  
   
 ## <a name="example"></a>Örnek  
- **Örnek**  
   
- Aşağıdaki kod örneğinde gösterir `nullptr` ve sıfır kullanılabilir birbirinin yerine yerel işaretçilerde.  
+ Aşağıdaki kod örneği gösteren **nullptr** ve sıfır kullanılabilir birbirinin yerine yerel işaretçilerde.  
   
-```  
+```cpp  
 // mcpp_nullptr_1.cpp  
 // compile with: /clr  
 class MyClass {  
@@ -130,11 +129,10 @@ pMyClass == 0
 ```  
   
 ## <a name="example"></a>Örnek  
- **Örnek**  
   
- Aşağıdaki kod örneğinde gösterir `nullptr` herhangi bir tür için bir tanıtıcı veya herhangi bir tür için yerel bir işaretçi olarak yorumlanır. İşlev tanıtıcıları farklı türlere sahip olması durumunda aşırı yüklemesi, bir belirsizlik hata oluşturulur. `nullptr` Açıkça bir türe etmesi gerekir.  
+ Aşağıdaki kod örneği gösteren **nullptr** herhangi bir tür için bir tanıtıcı veya herhangi bir tür için yerel bir işaretçi olarak yorumlanır. İşlev farklı türlere sahip olması durumunda aşırı yüklemesi, bir belirsizlik hata oluşturulur. **Nullptr** açıkça bir türe yayınlanması gerekir.  
   
-```  
+```cpp  
 // mcpp_nullptr_2.cpp  
 // compile with: /clr /LD  
 void f(int *){}  
@@ -149,11 +147,10 @@ void f_null() {
 ```  
   
 ## <a name="example"></a>Örnek  
- **Örnek**  
   
- Aşağıdaki kod örneği, atama gösterir `nullptr` izin verilir ve bir işaretçi veya tanıtıcı içeren cast türü döndürür `nullptr` değeri.  
+ Aşağıdaki kod örneği, atama gösterir **nullptr** izin verilir ve bir işaretçi veya işleç içeren bir atama türü döndürür **nullptr** değeri.  
   
-```  
+```cpp  
 // mcpp_nullptr_3.cpp  
 // compile with: /clr /LD  
 using namespace System;  
@@ -171,11 +168,10 @@ int main() {
 ```  
   
 ## <a name="example"></a>Örnek  
- **Örnek**  
   
- Aşağıdaki kod örneğinde gösterir `nullptr` işlevi parametre olarak kullanılabilir.  
+ Aşağıdaki kod örneği gösteren **nullptr** işlevi parametre olarak kullanılabilir.  
   
-```  
+```cpp  
 // mcpp_nullptr_4.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -195,11 +191,10 @@ test
 ```  
   
 ## <a name="example"></a>Örnek  
- **Örnek**  
   
- Aşağıdaki kod örneğinde tanıtıcıları bildirilir ve açıkça başlatıldı, bunlar için başlatılan varsayılan olduğunu gösteren `nullptr`.  
+ Aşağıdaki kod örneği tanıtıcıları bildirildi ve açıkça başlatılır, bunlar için varsayılan olduğunu gösteren **nullptr**.  
   
-```  
+```cpp  
 // mcpp_nullptr_5.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -225,11 +220,10 @@ NULL
 ```  
   
 ## <a name="example"></a>Örnek  
- **Örnek**  
   
- Aşağıdaki kod örneğinde gösterir `nullptr` ile derlerken için yerel bir işaretçi atanabilir **/CLR**.  
+ Aşağıdaki kod örneği gösteren **nullptr** ile derleme yaparken yerel bir işaretçiye atanabilir `/clr`.  
   
-```  
+```cpp  
 // mcpp_nullptr_6.cpp  
 // compile with: /clr  
 int main() {  
@@ -239,7 +233,7 @@ int main() {
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: (gerekli; dahil olmak üzere tüm kod oluşturma seçenekleri tarafından desteklenen **/ZW** ve **/CLR**)  
+ Derleyici seçeneği: (gerekli; dahil olmak üzere tüm kod oluşturma seçenekleri tarafından desteklenen `/ZW` ve `/clr`)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)   

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8791d3c947206be399f475bb8c895b2b5e032133
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 837c8ed508b713f790d1a6a56310705a00f12b3f
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875493"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39602752"
 ---
 # <a name="mutexoperator-operator"></a>Mutex::operator= İşleci
-Atar (taşır) belirtilen Mutex geçerli Mutex nesnesi nesne.  
+Atar (taşıma) belirtilen **Mutex** geçerli nesneye **Mutex** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,15 +35,15 @@ Mutex& operator=(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `h`  
- Bir rvalue-başvuru Mutex nesnesi.  
+### <a name="parameters"></a>Parametreler  
+ *h*  
+ Bir rvalue başvurusuna bir **Mutex** nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli Mutex nesneye başvuru.  
+ Geçerli bir başvuru **Mutex** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: **taşıma semantiği** bölümünü [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
+ Daha fazla bilgi için **taşıma semantiği** bölümünü [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

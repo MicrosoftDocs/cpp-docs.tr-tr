@@ -19,37 +19,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b466a94aba9f19907a5438a8b8e623d65aa0ac2d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6bf7219b4e57c82beeace1545c10b643470c9aca
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880758"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603556"
 ---
 # <a name="platform-default-and-cli-namespaces--c-component-extensions"></a>Platform, varsayılan ve cli Ad Alanları (C++ Bileşen Uzantıları)
-Bir ad alanı dil öğelerinin adlarını kaynak kod içindeki başka bir yerde benzer adlarla çakışmamaları için örtük olarak nitelendirir. Örneğin, bir ad çakışması derleyici tanımasını engel olabilecek [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md). Ad alanları derleyici tarafından kullanılır, ancak oluşturulmuş derlemede korunmaz.  
+Bir ad alanı dil öğelerinin adlarını kaynak kod içindeki başka bir yerde benzer adlarla çakışmamaları için örtük olarak nitelendirir. Bir ad çakışması derleyicinin tanımasını gibi engelleyebilir [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md). Ad alanları derleyici tarafından kullanılır, ancak oluşturulmuş derlemede korunmaz.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- Visual C++, projeyi oluşturduğunuzda projeniz için varsayılan bir ad alanı sağlar. Windows çalışma zamanı .winmd dosyasının adı kök ad alanı eşleşmesi gerekse de ad el ile yeniden adlandırabilirsiniz.  
+ Visual C++, projeyi oluşturduğunuzda projeniz için varsayılan bir ad alanı sağlar. Windows çalışma zamanı'nda .winmd dosyasının adı kök ad alanının adı eşleşmelidir ancak ad alanı, el ile yeniden adlandırabilirsiniz.  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- Daha fazla bilgi için bkz: [ad alanları ve türü görünürlük (C + +/ CX)](http://msdn.microsoft.com/library/windows/apps/hh969551.aspx).  
+ Daha fazla bilgi için [ad alanları ve tür görünürlüğü (C + +/ CX)](http://msdn.microsoft.com/library/windows/apps/hh969551.aspx).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- **Sözdizimi**  
+### <a name="syntax"></a>Sözdizimi  
   
 ```  
 using namespace cli;  
 ```  
   
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
- C + +/ CLI destekleyen `cli` ad alanı. İle derleme yapılırken **/CLR**, `using` deyimi sözdizimi bölümünde kapsanan.  
+ C + +/ CLI destekler **CLI** ad alanı. İle derlerken `/clr`, **kullanarak** sözdizimi bölümündeki deyimi kastedilir.  
   
- Aşağıdaki dil özellikleri bulunan `cli` ad alanı:  
+ Aşağıdaki dil özellikleri **CLI** ad alanı:  
   
 -   [Diziler](../windows/arrays-cpp-component-extensions.md)  
   
@@ -60,14 +60,13 @@ using namespace cli;
 -   [safe_cast](../windows/safe-cast-cpp-component-extensions.md)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
- Aşağıdaki kod örneğinde dosyasındaki bir simge kullanmak da mümkündür gösterilmektedir `cli` kodunuzu kullanıcı tanımlı sembol olarak ad alanı.  Ancak, bunu yaptıktan sonra başvurular açıkça veya örtük nitelemek gerekecek `cli` language öğesi aynı ada sahip.  
+ Aşağıdaki kod örneği, sembol kullanmak mümkün olduğunu gösterir **CLI** kodunuzda kullanıcı tanımlı bir sembol olarak ad alanı.  Ancak, bunu yaptıktan sonra açıkça veya örtük olarak nitelendirmeniz gerekecek **CLI** dil öğesinde aynı ada sahip.  
   
-```  
+```cpp  
 // cli_namespace.cpp  
 // compile with: /clr  
 using namespace cli;  

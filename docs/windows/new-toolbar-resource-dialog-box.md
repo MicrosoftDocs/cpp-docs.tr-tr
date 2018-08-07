@@ -17,31 +17,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6662fcfab3c9bb1d805e39147bd2838e6bbce5b2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2024e9ea69bed58f679456bae6f0c566de6b99f9
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877546"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604111"
 ---
 # <a name="new-toolbar-resource-dialog-box"></a>Yeni Araç Çubuğu Kaynağı İletişim Kutusu
-Yeni araç çubuğu kaynağı iletişim kutusu, genişlik ve yükseklik araç kaynağa eklediğiniz düğmelerinin belirtmenizi sağlar. Varsayılan değer 16 × 15 pikseldir.  
+Yeni araç çubuğu kaynağı iletişim kutusu, genişlik ve yükseklik bir araç çubuğu kaynağı için eklediğiniz düğmelerinin belirtmenizi sağlar. Varsayılan değer 16 × 15 pikseldir.  
   
- Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048 en büyük genişliği vardır. Bunu yaparsanız **düğmesi genişliği** 512 için yalnızca dört düğme olabilir. İçin 513 genişliği ayarlarsanız, yalnızca üç düğme olabilir.  
+ Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048 maksimum genişliği sahiptir. Bunu yaparsanız **düğmesi genişliği** 512, yalnızca dört düğme olabilir. Genişliği için 513 ayarlarsanız, yalnızca üç düğme olabilir.  
   
  **Düğme genişliği**  
- Araç çubuğu kaynak bir bit eşlem kaynaktan dönüştürme araç çubuğu düğmeleri için genişliği girmek bir alan sağlar. Görüntüleri genişlik ve yükseklik belirtilen kırpılır ve renkleri, standart araç renkleri (16 renk) kullanacak şekilde ayarlanır.  
+ Araç çubuğu kaynak bit eşlem kaynağı dönüştürme araç çubuğu düğmeleri genişliğini girmek bir alan sağlar. Resimleri belirtilen yükseklik ve genişlik kırpılmış ve renkleri (16 renk) standart araç çubuğu renklerini kullanmak için ayarlanır.  
   
  **Düğme yüksekliği**  
- Araç çubuğu kaynak bir bit eşlem kaynaktan dönüştürme araç çubuğu düğmeleri için yüksekliği girmek bir alan sağlar. Görüntüleri genişlik ve yükseklik belirtilen kırpılır ve renkleri, standart araç renkleri (16 renk) kullanacak şekilde ayarlanır.  
+ Araç çubuğu kaynak bit eşlem kaynağı dönüştürme araç çubuğu düğmeleri yüksekliği girmek bir alan sağlar. Resimleri belirtilen yükseklik ve genişlik kırpılmış ve renkleri (16 renk) standart araç çubuğu renklerini kullanmak için ayarlanır.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
- MFC ya da ATL  
+ MFC veya ATL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç çubuğu düğmesi özellikleri](../windows/toolbar-button-properties.md)   
  [Bit eşlemleri araç çubuklarına dönüştürme](../windows/converting-bitmaps-to-toolbars.md)   
  [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
-

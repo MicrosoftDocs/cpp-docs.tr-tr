@@ -17,34 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ee904f9243cf642d3a942d4bc323f5ec381b0480
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 562bc3ebd0c80423eb94d2bc328f72aed8e67985
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877468"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604396"
 ---
 # <a name="pointerdefault"></a>pointer_default
-Parametre listelerinde görüntülenen en üst düzey işaretçileri dışındaki tüm işaretçiler varsayılan işaretçi özniteliğini belirtir.  
+Parametre listelerindeki görünen üst düzey işaretçileri dışındaki tüm işaretçiler için varsayılan işaretçi özniteliğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ pointer_default(  
+[ pointer_default(  
    value  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *value*  
- İşaretçi türünün tanımlayan bir değer: **ptr**, `ref`, veya **benzersiz**.  
+ İşaretçi türü tanımlayan bir değer: **ptr**, **ref**, veya **benzersiz**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Pointer_default** C++ özniteliğine sahip ile aynı işlevselliği [pointer_default](http://msdn.microsoft.com/library/windows/desktop/aa367141) MIDL özniteliği.  
+ **Pointer_default** C++ özniteliği ile aynı işlevlere sahip [pointer_default](http://msdn.microsoft.com/library/windows/desktop/aa367141) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [defaultvalue](../windows/defaultvalue.md) bir örnek kullanım için **pointer_default**.  
+ Örneğin bakın [defaultvalue](../windows/defaultvalue.md) örnek kullanımı için **pointer_default**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -52,9 +51,9 @@ Parametre listelerinde görüntülenen en üst düzey işaretçileri dışındak
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**interface**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

@@ -1,5 +1,5 @@
 ---
-title: operator! = işleci (Microsoft::WRL) | Microsoft Docs
+title: işleç! = işleci (Microsoft::WRL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c972687973cbaa66d4b79a883e8b008cd588e237
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 517184dffac0c35772e61284a18eca764fbb5cc8
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876403"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603986"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator!= İşleç (Microsoft::WRL)
 Eşitsizlik işleci için [ComPtr](../windows/comptr-class.md) ve [ComPtrRef](../windows/comptrref-class.md) nesneleri.  
@@ -62,15 +62,15 @@ WRL_NOTHROW bool operator!=(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `a`  
- Sol nesnesi.  
+### <a name="parameters"></a>Parametreler  
+ *a*  
+ Sol nesne.  
   
- `b`  
+ *b*  
  Doğru nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` nesneleri eşit değilse; Aksi takdirde `false`.  
+ **doğru** nesneleri değilse, eşit; Aksi takdirde **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ef98cd3ac446c41143fc8e1f3f5a731f05ab3c45
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 87c3e84c0547751b03fba616df7c3f9bdd4dc06e
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876000"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604336"
 ---
 # <a name="ptr"></a>ptr
-Bir işaretçi tam bir işaretçi olarak belirler.  
+Bir işaretçinin tam bir işaretçi olarak belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [ptr]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Ptr** C++ özniteliğine sahip ile aynı işlevselliği [ptr](http://msdn.microsoft.com/library/windows/desktop/aa367149) MIDL özniteliği.  
+ **Ptr** C++ özniteliği ile aynı işlevlere sahip [ptr](http://msdn.microsoft.com/library/windows/desktop/aa367149) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [defaultvalue](../windows/defaultvalue.md) bir örnek kullanım için **ptr**.  
+ Örneğin bakın [defaultvalue](../windows/defaultvalue.md) örnek kullanımı için **ptr**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,9 +45,9 @@ Bir işaretçi tam bir işaretçi olarak belirler.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim parametresi, arabirim yöntemi, `typedef`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirimi parametreyi, arabirim yöntemi **tür tanımı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

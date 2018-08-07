@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bfee0c0cd7ff7bd7f4525a291184f08f1e2898e5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b298bcab4c2b3547f2b285fe21d4967f4696fb9d
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878742"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605064"
 ---
 # <a name="modulebase-class"></a>ModuleBase Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -42,15 +42,15 @@ class ModuleBase;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ModuleBase::ModuleBase Oluşturucusu](../windows/modulebase-modulebase-constructor.md)|Modül sınıfının bir örneğini başlatır.|  
-|[ModuleBase::~ModuleBase Yıkıcısı](../windows/modulebase-tilde-modulebase-destructor.md)|Modül sınıfının geçerli örneği deinitializes.|  
+|[ModuleBase::ModuleBase Oluşturucusu](../windows/modulebase-modulebase-constructor.md)|Bir örneğini başlatır `Module` sınıfı.|  
+|[ModuleBase::~ModuleBase Yıkıcısı](../windows/modulebase-tilde-modulebase-destructor.md)|Geçerli örneğinin başlatmasını geri alır `Module` sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ModuleBase::DecrementObjectCount Metodu](../windows/modulebase-decrementobjectcount-method.md)|Uygulandığında, azaltır nesnelerin sayısı modül tarafından izlenir.|  
-|[ModuleBase::IncrementObjectCount Metodu](../windows/modulebase-incrementobjectcount-method.md)|Uygulandığında modül tarafından izlenen nesne sayısını artırır.|  
+|[ModuleBase::DecrementObjectCount Metodu](../windows/modulebase-decrementobjectcount-method.md)|Uygulandığında, azaltır nesne sayısını modülü tarafından izlenir.|  
+|[ModuleBase::IncrementObjectCount Metodu](../windows/modulebase-incrementobjectcount-method.md)|Uygulandığında, modül tarafından izlenen nesne sayısını artırır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ModuleBase`  

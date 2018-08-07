@@ -17,36 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f9ef3a14211e223b9902dc9843639d217ceaf1b3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0f0dd12df088d8fc55cc4f1a8eaf71bcbb7d4e93
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878008"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603296"
 ---
 # <a name="iidis"></a>iid_is
-Arabirim işaretçisi tarafından işaret COM arabirimi IID belirtir.  
+Bir arabirim işaretçisi tarafından işaret edilen COM arabirimi Laboratuvardaki belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ iid_is(  
+[ iid_is(  
    "expression"  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *ifade*  
- COM arabirimi IID'yi belirtir C dili ifadesi tarafından bir arabirim işaretçisi işaret.  
+ *İfade*  
+ Bir COM arabirimi Laboratuvardaki belirten C dil ifadesi için bir arabirim işaretçisi tarafından işaret.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **İid_is** C++ özniteliğine sahip ile aynı işlevselliği [iid_is](http://msdn.microsoft.com/library/windows/desktop/aa367044) MIDL özniteliği.  
+ **İid_is** C++ özniteliği ile aynı işlevlere sahip [iid_is](http://msdn.microsoft.com/library/windows/desktop/aa367044) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod kullanımı gösterilmiştir **iid_is**:  
+ Aşağıdaki kod kullanımını gösterir **iid_is**:  
   
-```  
+```cpp  
 // cpp_attr_ref_iid_is.cpp  
 // compile with: /LD  
 #include "wtypes.h"  
@@ -67,12 +66,12 @@ __interface IFireTabCtrl : IDispatch
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim parametresi, veri üyesi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirimi parametresi, veri üyesi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

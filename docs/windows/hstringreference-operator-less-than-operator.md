@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b486157fb42883af724f2356e7f85701e405035
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 489d97252dcb4d20b7ef2f8557991a4e6016743d
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877299"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605538"
 ---
 # <a name="hstringreferenceoperatorlt-operator"></a>HStringReference::Operator&lt; işleci
 İkinci parametre ilk parametre olup değerinden gösterir.  
@@ -33,15 +33,15 @@ inline bool operator<(
     const HStringReference& rhs) throw()  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `lhs`  
- Karşılaştırma yapılacak ilk parametre. `lhs` bir HStringReference başvuru olabilir.  
+### <a name="parameters"></a>Parametreler  
+ *lhs*  
+ Karşılaştırılacak ilk parametre. *lhs* başvuru olabilir bir **HStringReference**.  
   
- `rhs`  
- Karşılaştırılacak ikinci parametre.  `rhs` bir HStringReference başvuru olabilir.  
+ *Sol*  
+ Karşılaştırılacak ikinci parametre.  *Sol* başvuru olabilir bir **HStringReference**.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` varsa `lhs` parametresi küçük `rhs` parametresi; Aksi halde, `false`.  
+ **doğru** varsa *lhs* parametresi değerinden daha küçük *sol* parametre; Aksi takdirde **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

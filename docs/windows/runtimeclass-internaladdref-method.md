@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2998e46201be2137f11f0b91438fb68e326e46c1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 52a594b0731ec8b22076a422fec4cb52c3503235
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888530"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603087"
 ---
 # <a name="runtimeclassinternaladdref-method"></a>RuntimeClass::InternalAddRef Yöntemi
-Geçerli RuntimeClass nesnesine başvuru sayısını artırır.  
+Geçerli başvuru sayısını artırır **RuntimeClass** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

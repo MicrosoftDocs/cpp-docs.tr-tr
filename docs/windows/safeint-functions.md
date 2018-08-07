@@ -15,35 +15,35 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97edd25abca3c9e80a35745165eedc93cc13a9b9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b8a0475b5d3ba9053cd5d2df5ffd99ce9292ba8e
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889313"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603461"
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri
-SafeInt Kitaplığı örneğini oluşturmadan kullanabileceğiniz birçok işlevleri sağlar [SafeInt sınıfı](../windows/safeint-class.md). Tek bir matematik işlemi tamsayı Taşma alanındaki korumak istiyorsanız, bu işlevler kullanabilirsiniz. Birden çok matematik işlemleri korumak istiyorsanız, oluşturmalısınız `SafeInt` nesneleri. Oluşturmak için daha verimlidir `SafeInt` birden çok kez bu işlevler kullanımı çok nesneleri.  
+SafeInt Kitaplığı örneği oluşturulmadan kullanabileceğiniz çeşitli işlevler sağlar [SafeInt sınıfı](../windows/safeint-class.md). Tek bir matematiksel işlem tamsayı taşmasından korumak istiyorsanız, bu işlevleri kullanabilirsiniz. Birden çok matematik işlemi korumak istiyorsanız, oluşturmalısınız **SafeInt** nesneleri. Oluşturmak için daha verimlidir **SafeInt** birden çok kez bu işlevlerin kullanımı çok nesneleri.  
   
- Bu işlevler karşılaştırmak veya ilk aynı türüne dönüştürmek zorunda kalmadan parametreleri iki farklı türde matematik işlemleri gerçekleştirmenize imkan sağlar.  
+ Bu işlevler karşılaştırmak ya da önce aynı türe dönüştürmek zorunda kalmadan iki farklı türde parametreler matematik işlemlerini gerçekleştirmek etkinleştirin.  
   
- Bu işlevlerin her iki şablon türü vardır: `T` ve `U`. Bu türlerinin her biri bir Boole değeri, karakter ya da tam sayı türü olabilir. Tam sayı türleri imzalı veya imzasız ve herhangi bir boyuta 8 bitten 64 bit.  
+ Bu işlevlerin her biri iki şablon türü vardır: `T` ve `U`. Bu türlerinin her biri bir Boole değeri, karakter veya bir tamsayı türü olabilir. Tam sayı türleri imzalı veya imzasız tüm boyutlardaki 8 bitten 64 bite.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
 |İşlev|Açıklama|  
 |--------------|-----------------|  
-|[SafeAdd](../windows/safeadd.md)|İki sayı ekleyen ve taşma karşı korur.|  
-|[SafeCast](../windows/safecast.md)|Başka bir tür parametresi bir tür çevirir.|  
+|[SafeAdd](../windows/safeadd.md)|İki sayı ekleyen ve taşmasına karşı korur.|  
+|[SafeCast](../windows/safecast.md)|Başka bir tür parametresine bir tür çevirir.|  
 |[SafeDivide](../windows/safedivide.md)|İki sayıyı böler ve sıfıra bölme karşı korur.|  
-|[SafeEquals](../windows/safeequals.md), [SafeGreaterThan](../windows/safegreaterthan.md), [SafeGreaterThanEquals](../windows/safegreaterthanequals.md), [SafeLessThan](../windows/safelessthan.md), [SafeLessThanEquals](../windows/safelessthanequals.md), [ SafeNotEquals](../windows/safenotequals.md)|İki sayı karşılaştırır. Bu işlevler türlerini değiştirmeden numaraları iki farklı türde karşılaştırmanıza olanak sağlar.|  
-|[SafeModulus](../windows/safemodulus.md)|İki sayı üzerinde modulus işlemi gerçekleştirir.|  
-|[SafeMultiply](../windows/safemultiply.md)|İki sayı birlikte çarpar ve taşma karşı korur.|  
-|[SafeSubtract](../windows/safesubtract.md)|İki sayı çıkarır ve taşma karşı korur.|  
+|[SafeEquals](../windows/safeequals.md), [SafeGreaterThan](../windows/safegreaterthan.md), [SafeGreaterThanEquals](../windows/safegreaterthanequals.md), [SafeLessThan](../windows/safelessthan.md), [SafeLessThanEquals](../windows/safelessthanequals.md), [ SafeNotEquals](../windows/safenotequals.md)|İki sayıyı karşılaştırır. Bu işlevler, iki farklı tür sayı türlerini değiştirmeden karşılaştırmanızı sağlar.|  
+|[SafeModulus](../windows/safemodulus.md)|İki sayıyı mod işlemi gerçekleştirir.|  
+|[SafeMultiply](../windows/safemultiply.md)|Birlikte iki sayıyı çarpar ve taşmasına karşı korur.|  
+|[SafeSubtract](../windows/safesubtract.md)|İki sayıyı çıkarır ve taşmasına karşı korur.|  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
   
 |Bölüm|Açıklama|  
 |-------------|-----------------|  
-|[SafeInt Sınıfı](../windows/safeint-class.md)|`SafeInt` Sınıfı.|  
+|[SafeInt Sınıfı](../windows/safeint-class.md)|**SafeInt** sınıfı.|  
 |[SafeIntException Sınıfı](../windows/safeintexception-class.md)|SafeInt Kitaplığı'na belirli özel durum sınıfı.|

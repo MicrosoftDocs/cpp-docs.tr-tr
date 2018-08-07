@@ -1,5 +1,5 @@
 ---
-title: ReadOnly (C++) | Microsoft Docs
+title: salt okunur (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,33 +17,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 87933b214dfe91f1c9f7db88127ef83da5b7201c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4b4f4e6d7c3941b1e90e0c49d113afe02dfcd491
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876572"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604430"
 ---
 # <a name="readonly-c"></a>readonly (C++)
-Bir veri üyesi atamayı engeller.  
+Bir veri üyesine atama yasaklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [readonly]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Readonly** C++ özniteliğine sahip ile aynı işlevselliği [readonly](http://msdn.microsoft.com/library/windows/desktop/aa367152) MIDL özniteliği.  
+ **Salt okunur** C++ özniteliği ile aynı işlevlere sahip [salt okunur](http://msdn.microsoft.com/library/windows/desktop/aa367152) MIDL özniteliği.  
   
- Yöntem parametresi değiştirilmesini engellemek istiyorsanız, daha sonra kullanmak [içinde](../windows/in-cpp.md) özniteliği.  
+ Bir yöntem parametresi değiştirilmesini engellemek istiyorsanız, ardından kullanmak [içinde](../windows/in-cpp.md) özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod bir kullanımını gösterir **readonly** özniteliği:  
+ Aşağıdaki kod, bir kullanımını göstermektedir. **salt okunur** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_readonly.cpp  
 // compile with: /LD  
 [idl_quote("midl_pragma warning(disable:2461)")];  
@@ -63,9 +61,9 @@ __interface IFireTabCtrl
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

@@ -1,5 +1,5 @@
 ---
-title: Runtimeclass::QueryInterface yöntemi | Microsoft Docs
+title: Metodu Runtimeclass::QueryInterface | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,20 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 84f5183d0273abfc23834099c07987dca6b3da7f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 15f611a9fe361e401e1884cb1794f8d1ef1f5591
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892111"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603543"
 ---
 # <a name="runtimeclassqueryinterface-method"></a>RuntimeClass::QueryInterface Yöntemi
-Belirtilen arabirim kimliği için bir işaretçi alır.  
+Belirtilen arabirim kimliği. bir işaretçi alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 STDMETHOD(  
    QueryInterface  
 )  
@@ -38,15 +37,15 @@ STDMETHOD(
    _Deref_out_ void **ppvObject);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `riid`  
- Bir arabirim kimliği  
+### <a name="parameters"></a>Parametreler  
+ *riid*  
+ Bir arabirim kimliği.  
   
- `ppvObject`  
- Bu opereation tamamlandığında, tarafından belirtilen arabirimi için bir işaretçi `riid` parametresi.  
+ *ppvObject*  
+ Bu opereation tamamlandığında tarafından belirtilen arabirim işaretçisi *riid* parametresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

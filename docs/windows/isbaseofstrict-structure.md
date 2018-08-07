@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: db8f315c0589ceb7cd9411873152fe644985818e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f9066a9cd8985b132c1fbd9f6a97bcd0654003d2
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876897"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604509"
 ---
 # <a name="isbaseofstrict-structure"></a>IsBaseOfStrict Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -42,17 +42,17 @@ template <
 struct IsBaseOfStrict<Base, Base>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `Base`  
+### <a name="parameters"></a>Parametreler  
+ *temel*  
  Temel türü.  
   
- `Derived`  
- Türetilen tür.  
+ *Türetilmiş*  
+ Türetilmiş bir tür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Başka bir taban bir türü olup olmadığını sınar.  
   
- İlk şablon verim bir taban türü türeyen bir tür olup olmadığını sınar **true** veya **false**. İkinci şablon türeyen bir tür kendisinden, her zaman veren olmadığını test eder **false**.  
+ İlk şablon yield bir temel tür türetilmiş bir tür olup olmadığını test **true** veya **false**. İkinci şablon türetilmiş bir tür kendisinden, her zaman veren olmadığını sınar **false**.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -60,7 +60,7 @@ struct IsBaseOfStrict<Base, Base>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IsBaseOfStrict::value Sabiti](../windows/isbaseofstrict-value-constant.md)|Bir tür başka tabanı olup olmadığını gösterir.|  
+|[IsBaseOfStrict::value Sabiti](../windows/isbaseofstrict-value-constant.md)|Başka bir taban bir türü olup olmadığını gösterir.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IsBaseOfStrict`  

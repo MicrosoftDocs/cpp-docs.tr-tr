@@ -17,32 +17,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bb07c7f53e27e380ba5775369611299cad0f60d4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b0683220710a62c8583fa95fbfe3221ae93307eb
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875064"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603944"
 ---
 # <a name="modulegenericreleasenotifiergenericreleasenotifier-constructor"></a>Module::GenericReleaseNotifier::GenericReleaseNotifier Oluşturucusu
-Module::GenericReleaseNotifier sınıfının yeni bir örneğini başlatır.  
+Yeni bir örneğini başlatır **Module::GenericReleaseNotifier** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      GenericReleaseNotifier(  
+GenericReleaseNotifier(  
    T callback,   
    bool release  
 ) throw() : ReleaseNotifier(release), callback_(callback);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `callback`  
- Lambda, functor veya parantez işlevi operatörüyle çağrılabilir işaretçi işlevi olay işleyicisi (`()`).  
+### <a name="parameters"></a>Parametreler  
+ *geri çağırma*  
+ Bir lambda, functor veya parantez işlevi işleci ile çağrılabilir işaretçi işlevi olay işleyicisi (`()`).  
   
- `release`  
- Belirtin `true` arka plandaki çağırma etkinleştirmek için [Modülü:: ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) yöntemi; Aksi takdirde belirtin `false`.  
+ *Yayın*  
+ Belirtin **true** temel çağırma etkinleştirmek için [Modülü:: ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) yöntemi; Aksi takdirde belirtin **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

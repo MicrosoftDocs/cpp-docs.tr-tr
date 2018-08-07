@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0b612530c1a29588cd837b2cdbeef37faf84c8b4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2975cd066dd15f9179b2e1f0f3fc72084c9c573b
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880413"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604274"
 ---
 # <a name="invokehelper-structure"></a>InvokeHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -88,42 +88,42 @@ template<
 struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `TDelegateInterface`  
- `TCallback`  
+### <a name="parameters"></a>Parametreler  
+ *TDelegateInterface*  
+ *TCallback*  
  Olay işleyici işlevi türü.  
   
- `argCount`  
- Invokehelper uzmanlık değişkenlerinde sayısı.  
+ *argCount*  
+ Bağımsız değişken sayısı bir **Invokehelper** özelleştirmesi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirtilen sayı ve bağımsız değişken türü bağlı olması yöntemin bir uygulaması, sağlar.  
+ Bir uygulamasını sağlar `Invoke()` tabanlı yöntemini belirtilen sayı ve bağımsız değişken türü.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`Traits`|Her olay işleyicisi bağımsız değişken türünü tanımlayan sınıfının eşanlamlısı.|  
+|`Traits`|Her olay işleyicisi bağımsız değişken türünü tanımlayan sınıf için bir eşanlamlı.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[InvokeHelper::InvokeHelper Oluşturucusu](../windows/invokehelper-invokehelper-constructor.md)|Invokehelper sınıfının yeni bir örneğini başlatır.|  
+|[InvokeHelper::InvokeHelper Oluşturucusu](../windows/invokehelper-invokehelper-constructor.md)|Yeni bir örneğini başlatır **Invokehelper** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[InvokeHelper::Invoke Metodu](../windows/invokehelper-invoke-method.md)|Belirtilen bağımsız değişken sayısı, imzası içeren olay işleyicisini çağırır.|  
+|[InvokeHelper::Invoke Metodu](../windows/invokehelper-invoke-method.md)|İmzası olan, belirtilen sayıda bağımsız değişken içeren olay işleyicisini çağırır.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[InvokeHelper::callback_ Veri Üyesi](../windows/invokehelper-callback-data-member.md)|Bir olay gerçekleştiğinde çağırmak için olay işleyicisini temsil eder.|  
+|[InvokeHelper::callback_ Veri Üyesi](../windows/invokehelper-callback-data-member.md)|Bir olay oluştuğunda çağrılacak olay işleyicisini temsil eder.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `InvokeHelper`  

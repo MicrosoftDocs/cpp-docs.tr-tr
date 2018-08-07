@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: de4cc44d88f59e18f2c1644e9b27a9214ad32962
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c19e7b5388438b8c3c2359672360e4a2ee3001a3
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881942"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39602636"
 ---
 # <a name="moduleunregistercomobject-method"></a>Module::UnregisterCOMObject Yöntemi
 Bir veya daha fazla COM nesneleri, diğer uygulamalar için bağlanmasını engelleyen kaydını siler.  
@@ -36,18 +36,18 @@ virtual HRESULT UnregisterCOMObject(
    unsigned int count  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `serverName`  
- (Kullanılmaz)  
+### <a name="parameters"></a>Parametreler  
+ *SunucuAdı*  
+ (Kullanılmayan)  
   
- `cookies`  
- İçin sona erdirilecek sınıfı nesneleri tanımlamak değerlerini dizisi. Dizi tarafından oluşturulan [RegisterCOMObject](../windows/module-registercomobject-method.md) yöntemi.  
+ *Tanımlama bilgileri*  
+ Sınıf nesneleri silinmesine izin değerleri için işaretçiler dizisi. Dizi tarafından oluşturulan [RegisterCOMObject](../windows/module-registercomobject-method.md) yöntemi.  
   
- `count`  
- Kaydını kaldırmak üzere sınıfları sayısı.  
+ *Sayısı*  
+ Sınıfların kaydını sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini gösterir HRESULT işlemi başarısız oldu.  
+ Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini belirten HRESULT işlemi başarısız oldu.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

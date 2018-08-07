@@ -26,24 +26,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a977629cbae140afa1463a7765f193a7519e1f68
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 384db46d495b342d40dd4f7588583c5b6048810c
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881916"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604622"
 ---
 # <a name="icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons"></a>Simgeler ve İmleçler: Görüntüleme Cihazları için Görüntü Kaynakları (Simgeler İçin Görüntü Düzenleyicisi)
-Simgeler ve İmleçler farklı boyutlarda birden fazla görüntü içeren ve renk düzenleri farklı türlerdeki görüntüleme cihazları için grafik kaynaklardır. Ayrıca, bir imleç "etkin nokta," Windows konumunu izlemek için kullandığı konumun sahiptir. Simgeler ve İmleçler oluşturulur ve görüntü Düzenleyicisi'ni kullanarak, bit eşlemler ve diğer görüntüleri gibi düzenlenebilir.  
+Simgeler ve İmleçler, farklı boyutlarda birden fazla görüntüler içerir ve düzenleri görüntüleme cihazları farklı türleri için renk grafik kaynaklardır. Ayrıca, bir imleç "etkin nokta," Windows konumuna izlemek için kullandığı konumun sahiptir. Simgeler ve İmleçler hem oluşturulur ve Resim Düzenleyicisi'ni kullanarak, bit eşlemler ve diğer görüntüleri olarak düzenlenebilir.  
   
- Yeni simgesi veya imleci oluşturduğunuzda, görüntü Düzenleyicisi ilk standart türü görüntüsü oluşturur. Görüntü başlangıçta ekran (saydam) renkle doldurulur. Görüntünün bir imleç etkin nokta başlangıçta sol üst köşesindeki (koordinatları 0,0) ise.  
+ Yeni simgesi veya imleci oluşturduğunuzda, görüntü Düzenleyicisi, ilk standart türünde bir görüntü oluşturur. Görüntü başlangıçta ekran (saydam) renkle doldurulur. Görüntünün bir imleç etkin nokta başlangıçta sol üst köşesinin (koordinatları 0,0) ise.  
   
- Varsayılan olarak, görüntü Düzenleyicisi, aşağıdaki tabloda gösterilen cihazlar için ek görüntüleri oluşturulmasını destekler. Genişlik, yükseklik ve renk sayısı parametreleri içine yazarak diğer cihazlar için görüntüleri oluşturabilirsiniz [özel görüntü iletişim kutusu](custom-image-dialog-box-image-editor-for-icons.md).  
+ Varsayılan olarak, görüntü Düzenleyicisi aşağıdaki tabloda gösterilen cihazlar için ek görüntü oluşturmayı destekler. Genişlik, yükseklik ve renk sayısı parametreleri içine yazarak diğer cihazları için görüntü oluşturabilirsiniz [özel görüntü iletişim kutusu](custom-image-dialog-box-image-editor-for-icons.md).  
   
 > [!NOTE]
 >  Resim Düzenleyicisi'ni kullanarak 32 bitlik resimleri görüntüleyebilirsiniz, ancak onları düzenleyemezsiniz.  
   
-|Renk|Genişliği (piksel cinsinden)|Yükseklik (piksel cinsinden)|  
+|Renk|Genişlik (piksel cinsinden)|Yükseklik (piksel cinsinden)|  
 |-----------|----------------------|-----------------------|  
 |Tek renkli|16|16|  
 |Tek renkli|32|32|  
@@ -75,7 +75,7 @@ Simgeler ve İmleçler farklı boyutlarda birden fazla görüntü içeren ve ren
   
 -   [İmlecin etkin noktasını ayarlama](../windows/setting-a-cursor-s-hot-spot-image-editor-for-icons.md)  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  
@@ -84,4 +84,3 @@ Simgeler ve İmleçler farklı boyutlarda birden fazla görüntü içeren ve ren
  [Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)   
  [Simgeler](http://msdn.microsoft.com/library/windows/desktop/ms646973)   
  [İmleçler](http://msdn.microsoft.com/library/windows/desktop/ms646970)
-

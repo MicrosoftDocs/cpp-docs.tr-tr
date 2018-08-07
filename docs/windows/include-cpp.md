@@ -1,5 +1,5 @@
 ---
-title: (C++) dahil | Microsoft Docs
+title: (C++) ekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,38 +17,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a2c88dd610c1a0b8a8fee4e23da1b5ad844e989c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 93ced38ca30a2fd4a61bb3a3664967416fcaf599
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878430"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603494"
 ---
 # <a name="include-c"></a>include (C++)
-Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.  
+Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ include(  
+[ include(  
    header_file  
 ) ];  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- *header_file*  
+### <a name="parameters"></a>Parametreler  
+ *header_fıle*  
  Oluşturulan .idl dosyasına dahil istediğiniz bir dosya adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **Dahil** C++ öznitelik neden olan bir `#include` altına yerleştirilecek deyimi `import "docobj.idl"` oluşturulan .idl dosyasındaki deyimi.  
   
- **Dahil** C++ özniteliğine sahip ile aynı işlevselliği [dahil](http://msdn.microsoft.com/library/windows/desktop/aa367052) MIDL özniteliği.  
+ **Dahil** C++ özniteliği ile aynı işlevlere sahip [dahil](http://msdn.microsoft.com/library/windows/desktop/aa367052) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği nasıl kullanılacağını gösterir **dahil**. Bu örnekte, yalnızca dosya include.h içeren bir # deyimi include.  
+ Aşağıdaki kod örneği nasıl kullanılacağını gösterir **dahil**. Bu örnekte, yalnızca dosya include.h içeren bir #include deyimi.  
   
-```  
+```cpp  
 // cpp_attr_ref_include.cpp  
 // compile with: /LD  
 [module(name="MyLib")];  
@@ -61,17 +60,17 @@ Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosy
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Her yerden|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Her yerde|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
- [İçeri aktarma](../windows/import.md)   
+ [içeri aktarma](../windows/import.md)   
  [importidl](../windows/importidl.md)   
  [includelib](../windows/includelib-cpp.md)   
  [importlib](../windows/importlib.md)   

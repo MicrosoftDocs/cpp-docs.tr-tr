@@ -17,30 +17,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0bb752c02eb200e952cf247684675ebd377eeaaa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a7bdd285ed74c7792a34cfe99e0a900d42d6bc26
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877374"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604596"
 ---
 # <a name="nonbrowsable"></a>nonbrowsable
-Bir arabirim üyesi bir özellik tarayıcıda görüntülenmemelidir gösterir.  
+Bir arabirim üyesi bir özellik tarayıcısında görüntülenmemelidir gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [nonbrowsable]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Nonbrowsable** C++ özniteliğine sahip ile aynı işlevselliği [nonbrowsable](http://msdn.microsoft.com/library/windows/desktop/aa367117) MIDL özniteliği.  
+ **Nonbrowsable** C++ özniteliği ile aynı işlevlere sahip [nonbrowsable](http://msdn.microsoft.com/library/windows/desktop/aa367117) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_nonbrowsable.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -60,9 +58,9 @@ __interface IMyI
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

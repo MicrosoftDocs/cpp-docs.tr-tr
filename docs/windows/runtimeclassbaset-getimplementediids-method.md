@@ -1,5 +1,5 @@
 ---
-title: Runtimeclassbaset::getımplementedııds yöntemi | Microsoft Docs
+title: Runtimeclassbaset::getımplementedııds metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9ea6ff871ef0ce886b393c948fc45accf3d8e245
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bf29b5db15f88528012914476572cb1ccb21a07c
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892240"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603257"
 ---
 # <a name="runtimeclassbasetgetimplementediids-method"></a>RuntimeClassBaseT::GetImplementedIIDS Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -38,24 +38,24 @@ __forceinline static HRESULT GetImplementedIIDS(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
- `implements` parametresinin türü.  
+### <a name="parameters"></a>Parametreler  
+ *T*  
+ Türünü *uygulayan* parametresi.  
   
- `implements`  
- İşaretçi parametresi tarafından belirtilen türe `T`.  
+ *Uygulayan*  
+ Parametresi tarafından belirtilen türe işaretçi *T*.  
   
- `iidCount`  
- Arabirim kimlikleri almak için maksimum sayısı.  
+ *Iidcount*  
+ Arabirim kimlikleri alınacak maksimum sayısı.  
   
- `iids`  
- Bu işlem başarılı bir şekilde, bir dizi türü tarafından uygulanan kimlikleri arabirimi tamamlandıktan varsa `T`.  
+ *IID'leri*  
+ Bu işlem kimlikleri tür tarafından uygulanan arabirimi dizisi başarıyla tamamlanırsa *T*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
+ Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirtilen türü tarafından uygulanan kimlikleri arabiriminin dizisini alır.  
+ Belirtilen bir tür tarafından uygulanan kimlikleri arabiriminin dizisini alır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

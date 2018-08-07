@@ -18,46 +18,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6871f02a1c37def05b6450e7ffad18f6fa45b461
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 78dda3c52192b0d2755bdc8f8944eb0e1443e7af
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879363"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604180"
 ---
 # <a name="literal-c-component-extensions"></a>değişmez değer (C++ Bileşen Uzantıları)
-Bir değişken (veri üyesi) olarak işaretlenmiş `literal` içinde bir **/CLR** derleme aynıdır yerel bir `static const` değişkeni.  
+Bir değişken (veri üyesi) olarak işaretlenmiş **değişmez değer** içinde bir **/CLR** derleme yerel denk olan bir **statik const** değişkeni.  
   
 ## <a name="all-platforms"></a>Tüm Platformlar  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar 
   
- (Tüm çalışma zamanları için geçerli hiçbir açıklamalar için bu dil özelliği vardır.)  
+ (Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar 
   
- (Yalnızca Windows çalışma zamanı için geçerli hiçbir açıklamalar için bu dil özelliği vardır.)  
+ (Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerli olan açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir veri üyesi olarak işaretlenmiş `literal` bildirirken başlatılması gerekir ve değer sabit Entegral, numaralandırma veya dize türünde olmalıdır. Başlatma ifadesinin türüne dönüştürme statik const veri üyesi türü için kullanıcı tanımlı bir dönüştürme gerekli değil.  
+ Bir veri üyesi olarak işaretlenmiş **değişmez değer** bildirildiğinde başlatılmalıdır ve değeri bir sabit integral, enum veya dize türü olmalıdır. Statik const veri üye türü başlatma ifadesinin türünden dönüştürme, bir kullanıcı tanımlı dönüştürme gerektirmemelidir.  
   
- Değişmez değer alanın çalışma zamanında bellek tahsis; Derleyici değerini sınıfı için meta verilerde yalnızca ekler.  
+ Bellek yok, çalışma zamanında sabit değerli alan için ayrılır; Derleyici, değeri yalnızca meta sınıf ekler.  
   
- Bir değişken olarak işaretlenmiş `static const` meta verilerinde diğer derleyiciler için kullanılamaz.  
+ Bir değişken olarak işaretlenmiş **statik const** diğer derleyicileri için meta verilerinde kullanılamaz.  
   
- Daha fazla bilgi için bkz: [statik](../cpp/storage-classes-cpp.md) ve [const](../cpp/const-cpp.md).  
+ Daha fazla bilgi için [statik](../cpp/storage-classes-cpp.md) ve [const](../cpp/const-cpp.md).  
   
- `literal` bağlama duyarlı bir anahtar sözcüktür. Bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için.  
+ **değişmez değer** bağlama duyarlı bir anahtar sözcüktür. Bkz: [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek gösteren bir `literal` değişkeni gelir `static`.  
+ Bu örnek, gösterir bir **değişmez değer** değişkeni gelir **statik**.  
   
-```  
+```cpp  
 // mcppv2_literal.cpp  
 // compile with: /clr  
 ref struct X {  
@@ -70,9 +70,9 @@ int main() {
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, meta verilerde değişmez değer etkilerini gösterir:  
+ Aşağıdaki örnek, değişmez değer meta verilerinde etkisini gösterir:  
   
-```  
+```cpp  
 // mcppv2_literal2.cpp  
 // compile with: /clr /LD  
 public ref struct A {  
@@ -81,7 +81,7 @@ public ref struct A {
 };  
 ```  
   
- Meta veriler için fark `sc` ve `lit`: `modopt` yönergesi uygulanan `sc`, yani dikkate diğer derleyiciler tarafından.  
+ Fark için meta verilerindeki `sc` ve `lit`: `modopt` yönergesi uygulanan `sc`, yani yoksayılan diğer derleyiciler tarafından.  
   
 ```  
 .field public static int32 modopt([mscorlib]System.Runtime.CompilerServices.IsConst) sc = int32(0x0000000A)  
@@ -92,9 +92,9 @@ public ref struct A {
 ```  
   
 ## <a name="example"></a>Örnek  
- C# dilinde yazılan aşağıdaki örnek, önceki örnekte oluşturulan meta veri başvuruyor ve etkilerini gösterir `literal` ve `static const` değişkenleri:  
+ C# dilinde yazılmış aşağıdaki örnek, önceki örnekte oluşturulan meta veri başvuruları ve etkisini gösterir **değişmez değer** ve **statik const** değişkenleri:  
   
-```  
+```cs  
 // mcppv2_literal3.cs  
 // compile with: /reference:mcppv2_literal2.dll  
 // A C# program  
@@ -124,7 +124,7 @@ class B {
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

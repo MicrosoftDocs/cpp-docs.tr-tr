@@ -17,30 +17,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fe7d915d53b246c98372ce8647e35fb996e9a7c4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 66e195480814fe7ebf228b180ac5999d1ab92bab
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875753"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603808"
 ---
 # <a name="licensed"></a>lisanslı
-Geçerli olduğu COM nesnesi lisanslanmıştır ve kullanma örneği gerekir gösterir **IClassFactory2**.  
+Geçerli bir COM nesnesi lisanslanır ve kullanarak örneği oluşturulmalıdır gösterir `IClassFactory2`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [licensed]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Lisanslı** C++ özniteliğine sahip ile aynı işlevselliği [lisanslı](http://msdn.microsoft.com/library/windows/desktop/aa367070) MIDL özniteliği.  
+ **Lisanslı** C++ özniteliği ile aynı işlevlere sahip [lisanslı](http://msdn.microsoft.com/library/windows/desktop/aa367070) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_licensed.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -65,12 +63,12 @@ public:
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass**|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|`coclass`|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

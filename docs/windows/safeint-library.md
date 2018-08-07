@@ -18,26 +18,26 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 25090eefe4f07181490f650ea4d14add9fc6ac75
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 16ec0ad37202acbae8b33f270cef15547edd77b6
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892058"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604193"
 ---
 # <a name="safeint-library"></a>SafeInt Kitaplığı
-SafeInt Kitaplığı uygulama matematiksel işlemler gerçekleştirdiğinde sonuçlanabilir tamsayı taşan önlemeye yardımcı olur.  
+**SafeInt** kitaplığı, uygulama matematiksel işlemler gerçekleştirdiğinde, sonuçlanabilir tamsayı taşmalarını önleme yardımcı olur.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
 |Bölüm|Açıklama|  
 |-------------|-----------------|  
-|[SafeInt Sınıfı](../windows/safeint-class.md)|Bu sınıf tamsayı taşan karşı korur.|  
-|[SafeInt İşlevleri](../windows/safeint-functions.md)|Oluşturmadan kullanılan işlevleri bir `SafeInt` nesnesi.|  
-|[SafeIntException Sınıfı](../windows/safeintexception-class.md)|Özel durumlar sınıfının ilgili `SafeInt` sınıfı.|  
+|[SafeInt Sınıfı](../windows/safeint-class.md)|Bu sınıf, tamsayı taşma karşı korur.|  
+|[SafeInt İşlevleri](../windows/safeint-functions.md)|Oluşturmadan kullanılabilir işlevler bir **SafeInt** nesne.|  
+|[SafeIntException Sınıfı](../windows/safeintexception-class.md)|Bir sınıf özel durumların ilgili **SafeInt** sınıfı.|  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
   
 |Bölüm|Açıklama|  
 |-------------|-----------------|  
-|[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)|Başvuru ve C++ dili için kavramsal içeriği.|
+|[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)|Başvuru ve C++ dili için kavramsal içerik.|

@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d80f475cf8a50dcb084ca6e953842e91c55e4502
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b272c733dab71e615a46cb4af25609c560bdbfef
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888420"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39602685"
 ---
 # <a name="runtimeclassbase-structure"></a>RuntimeClassBase Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -32,9 +32,9 @@ struct RuntimeClassBase;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- RuntimeClass içinde algılamak için kullanılan [olun](../windows/make-function.md) işlevi.  
+ Algılamak için kullanılan `RuntimeClass` içinde [olun](../windows/make-function.md) işlevi.  
   
- RuntimeClassBase boş bir yapıdır.  
+ **RuntimeClassBase** boş bir yapıdır.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `RuntimeClassBase`  

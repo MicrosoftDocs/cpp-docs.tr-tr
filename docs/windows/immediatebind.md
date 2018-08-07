@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7ee885c138bec9c7fea9adcc3d48b5b23e33a2ca
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8a9979ec16009de680facdc6e8fc22b3d3cdccc3
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876270"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603061"
 ---
 # <a name="immediatebind"></a>immediatebind
-Veritabanı veri bağlama nesnenin bir özelliğini yapılan tüm değişiklikler, hemen bildirilecek gösterir.  
+Veritabanı veri bağlama nesnesinin bir özelliği yapılan tüm değişikliklerin hemen bildirileceğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [immediatebind]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **İmmediatebind** C++ özniteliğine sahip ile aynı işlevselliği [immediatebind](http://msdn.microsoft.com/library/windows/desktop/aa367045) MIDL özniteliği.  
+ **İmmediatebind** C++ özniteliği ile aynı işlevlere sahip [immediatebind](http://msdn.microsoft.com/library/windows/desktop/aa367045) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [bağlanabilirse](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **immediatebind**.  
+ Bkz: [bağlanabilir](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **immediatebind**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,12 +45,12 @@ Veritabanı veri bağlama nesnenin bir özelliğini yapılan tüm değişiklikle
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

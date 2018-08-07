@@ -19,15 +19,15 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c7154349105c1953ad314b7928e7be8385179c42
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0d6bcac8dec2e85f0ea7d1d4530ed6ff1b7acc08
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888753"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604349"
 ---
 # <a name="safeintsafeint"></a>SafeInt::SafeInt
-Oluşturan bir `SafeInt` nesnesi.  
+Oluşturur bir **SafeInt** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -53,27 +53,27 @@ SafeInt (
 )  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- [in] `i`  
- Yeni değeri `SafeInt` nesnesi. Bu oluşturucu bağlı olarak T veya U türünde bir parametresi olmalıdır.  
+### <a name="parameters"></a>Parametreler  
+ [in] *ediyorum*  
+ Yeni değeri **SafeInt** nesne. Bu oluşturucuya bağlı olarak U, ya da T türünde bir parametresi olmalıdır.  
   
- [in] `b`  
- Yeni için Boolean değeri `SafeInt` nesnesi.  
+ [in] *b*  
+ Yeni bir Boole değeri **SafeInt** nesne.  
   
- [in] `u`  
- A `SafeInt` türüne Yeni `SafeInt` nesnesi aynı değere sahip `u`, ancak türü t olur  
+ [in] *u*  
+ A **SafeInt** türüne Yeni **SafeInt** nesnesi aynı değere sahip *u*, ancak türü t  
   
  U  
- Depolanan verilerin türünü `SafeInt`. Bu bir Boole değeri, karakter veya tamsayı türünde olabilir. Bir tamsayı türü ise, yeniden imzalı imzasız veya bırakılabilir ve 8 ve 64 bit arasında olmalıdır.  
+ Depolanan verilerin türünü **SafeInt**. Bu, bir Boole değeri, karakter veya tamsayı türü olabilir. Bir tamsayı türü ise, yeniden imzalanmış imzalanmamış veya bırakılabilir ve 8 ile 64 bit arasında olmalıdır.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Şablon türleri hakkında daha fazla bilgi için `T` ve `E`, bkz: [SafeInt sınıfı](../windows/safeint-class.md).  
   
- Giriş parametresi oluşturucusu için `i` veya `u`, bir Boole değeri, karakter veya tamsayı türünde olmalıdır. Parametresi, başka bir tür ise `SafeInt` sınıfı çağrıları [static_assert](../cpp/static-assert.md) geçersiz bir giriş parametresi belirtmek için.  
+ Oluşturucu giriş parametresi *miyim* veya *u*, Boolean, karakter veya tamsayı türü olmalıdır. Parametresi, başka bir tür ise **SafeInt** sınıf çağrıları [static_assert](../cpp/static-assert.md) geçersiz giriş parametresi belirtmek için.  
   
- Şablon türü kullanmak oluşturucular `U` giriş parametresi tarafından belirtilen türe otomatik olarak dönüştürmek `T`. `SafeInt` Sınıfı ve veri kaybı olmadan veri dönüştürür. Hata işleyicisine raporları `E` yazmak için veri dönüştüremezse `T` veri kaybı olmadan.  
+ Şablon türü kullanmak oluşturucular `U` otomatik olarak giriş parametresi tarafından belirtilen türe dönüştürmek `T`. **SafeInt** sınıfı, veri kaybı olmadan verileri dönüştürür. Hata işleyicisine raporları `E` veri türüne dönüştüremezse `T` veri kaybı olmadan.  
   
- Oluşturursanız, bir `SafeInt` bir Boolean parametresinden değeri hemen başlatmak için gerekir. Oluşturamaz bir `SafeInt` kod kullanarak `SafeInt<bool> sb;`. Bu derleme hatası oluşturur.  
+ Oluşturursanız, bir **SafeInt** değeri hemen başlatmak gereken bir Boole parametresi. Yapısı kopyalanamıyor bir **SafeInt** kodu kullanarak `SafeInt<bool> sb;`. Bu, bir derleme hatasına neden olur.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** safeint.h  

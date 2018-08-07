@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 52acf2f0b9936903b4359e21e23ae50c95d2f31a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 267ef2d9e1b24028016831e050385997ac0037e6
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876741"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604846"
 ---
 # <a name="interfacelist-structure"></a>InterfaceList Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -37,24 +37,24 @@ template <
 struct InterfaceList;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Arabirim adı; özyinelemeli listesindeki ilk arabirimi.  
+### <a name="parameters"></a>Parametreler  
+ *T*  
+ Arabirim adı; özyinelemeli listedeki ilk arabirim.  
   
- `U`  
- Arabirim adı; özyinelemeli listesinde kalan arabirimleri.  
+ *U*  
+ Arabirim adı; özyinelemeli listesinde kalan arabirimler.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Arabirimleri özyinelemeli listesini oluşturmak için kullanılır.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`FirstT`|Şablon parametresi için eş anlamlı `T`.|  
-|`RestT`|Şablon parametresi için eş anlamlı `U`.|  
+|`FirstT`|Şablon parametresi için eş anlamlı *T*.|  
+|`RestT`|Şablon parametresi için eş anlamlı *U*.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `InterfaceList`  

@@ -17,38 +17,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6770f8303af63c66f0d1a656c2b36e034cc2be83
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 11fecff2336163fa4f2e773244bc1ab132a15329
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879041"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603724"
 ---
 # <a name="implementscategory"></a>implements_category
-Hedef sınıf tarafından uygulanan bileşen kategorileri belirtir.  
+Hedef sınıf tarafından uygulanan bileşen kategorilerini belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ implements_category(  
+[ implements_category(  
    implements_category="uuid"  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- **implements_category**  
+### <a name="parameters"></a>Parametreler  
+ *implements_category*  
  Uygulanan kategori kimliği.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **İmplements_category** C++ özniteliği, hedef sınıf tarafından uygulanan bileşen kategorileri belirtir. Bu kategori eşleme oluşturma ve tarafından belirtilen ayrı girişleri ekleyerek yapılır **implements_category** özniteliği. Daha fazla bilgi için bkz: [bileşen kategorileri ve nasıl yapmak bunlar iş nelerdir?](http://msdn.microsoft.com/library/windows/desktop/ms694322).  
+ **İmplements_category** C++ özniteliği hedef sınıf tarafından uygulanan bileşen kategorileri belirtir. Bu kategori harita oluşturma ve tarafından belirlenen ayrı girdileri ekleyerek yapılır **implements_category** özniteliği. Daha fazla bilgi için [bileşen kategorileri ve nasıl yapın, iş nedir?](http://msdn.microsoft.com/library/windows/desktop/ms694322).  
   
- Bu öznitelik gerektiren [coclass](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (veya bunlardan birini gelir başka bir öznitelik) de uygulanması aynı öğeye. Herhangi bir tek öznitelik kullanılırsa, diğer iki otomatik olarak uygulanır. Örneğin, varsa **ProgID** uygulanan **vi_progid** ve **coclass** da uygulanır.  
+ Bu öznitelik gerektiren [coclass'ı](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod, aşağıdaki nesne denetim kategorisi uygulayan belirtir.  
+ Aşağıdaki kod, şu nesne denetim kategorisi uyguladığını belirtir.  
   
-```  
+```cpp  
 // cpp_attr_ref_implements_category.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -67,15 +66,14 @@ class CMyClass {};
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Evet|  
-|**Gerekli öznitelikler**|Şunlardan biri: **coclass**, **ProgID**, veya **vi_progid**|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Evet|  
+|**Gerekli öznitelikleri**|Aşağıdakilerden biri: `coclass`, `progid`, veya `vi_progid`|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM öznitelikleri](../windows/com-attributes.md)   
  [Sınıf öznitelikleri](../windows/class-attributes.md)   
  [IMPLEMENTED_CATEGORY](../atl/reference/category-macros.md#implemented_category)   
- 

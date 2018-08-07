@@ -1,5 +1,5 @@
 ---
-title: Module::GetClassObject yöntemi | Microsoft Docs
+title: Module::GetClassObject metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9205b04fc27e1c6e0e6133a08c3c2f69ffdfc314
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 63ff6c63702cda709f4431d9c7e5be5a4bdb8449
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878544"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39602659"
 ---
 # <a name="modulegetclassobject-method"></a>Module::GetClassObject Metodu
-Sınıf oluşturucuları önbelleği Retreives.  
+Sınıf üreteçlerini önbelleğini Retreives.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,23 +38,23 @@ Sınıf oluşturucuları önbelleği Retreives.
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `clsid`  
+### <a name="parameters"></a>Parametreler  
+ *CLSID*  
  Sınıf kimliği  
   
- `riid`  
- Arabirim, isteği kimliği.  
+ *riid*  
+ İstek, arabirim kimliği.  
   
- `ppv`  
- İşaretçi Nesne döndürdü.  
+ *ppv*  
+ Döndürülen nesne işaretçisi.  
   
- `serverName`  
- Ya da belirtilen sunucu adı `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, veya `ActivatableClass` makrosu; veya `nullptr` varsayılan sunucu adı alınamıyor.  
+ *SunucuAdı*  
+ Ya da belirtilen sunucu adı `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, veya `ActivatableClass` makrosu; veya **nullptr** varsayılan sunucu adı alınamıyor.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem yalnızca COM, değil Windows çalışma zamanı kullanın. Bu yöntem yalnızca IClassFactory yöntemlerini gösterir.  
+ Yalnızca COM için değil Windows çalışma zamanı bu yöntemi kullanın. Bu yöntem yalnızca sunan `IClassFactory` yöntemleri.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

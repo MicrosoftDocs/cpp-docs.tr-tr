@@ -18,49 +18,49 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 03c081abc457d025ca2818c887deeb5baf4c4de7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 74b4ea6b82de65f691d5d0350e161725625e4e1f
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880865"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604492"
 ---
 # <a name="interface-class--c-component-extensions"></a>arabirim sınıfı (C++ Bileşen Uzantıları)
-Arabirim bildirir.  Yerel arabirimleri hakkında daha fazla bilgi için bkz: [__interface](../cpp/interface.md).  
+Bir arabirim bildirir.  Yerel arabirimleri hakkında daha fazla bilgi için bkz: [__interface](../cpp/interface.md).  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- **Sözdizimi**  
+
+### <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 interface_access  
 interface class  
  name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};  
 ```  
   
- **Parametreler**  
+### <a name="parameters"></a>Parametreler  
   
  *interface_access*  
- Derleme dışına arabirim erişilebilirlik.  Olası değerler şunlardır: **ortak** ve `private`.  `private` varsayılandır.  İç içe geçmiş arabirimleri olamaz bir *interface_access* tanımlayıcısı.  
+ Bir arabirimin derleme dışından erişilebilirlik.  Olası değerler **genel** ve **özel**.  **özel** varsayılandır. İç içe geçmiş arabirimleri sahip bir *interface_access* tanımlayıcısı.  
   
  *Adı*  
- Arabirim adı.  
+ Arabirimin adı.  
   
  *inherit_access*  
- Erişilebilirliğini *base_interface*.  Yalnızca izin verilen erişilebilirlik temel bir arabirim için `public` (varsayılan).  
+ Erişilebilirliğini *base_interface*.  Yalnızca izin verilen erişilebilirlik için temel arabirim **genel** (varsayılan).  
   
  *base_interface* (isteğe bağlı)  
  Arabirim için temel bir arabirim *adı*.  
   
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
- **Yapı arabirim** eşdeğerdir **arabirimi sınıfı**.  
+ **Arabirim yapı birimi** eşdeğerdir **arabirim sınıfı**.  
   
- Arabirim bildirimleri işlevleri, olayları ve özellikler içerebilir.  Tüm arabirimi üyeler, ortak erişilebilirlik sahiptir. Arabirim statik veri üyeleri, İşlevler, olayları ve özellikleri de içerebilir ve bu statik üyeleri arabiriminde tanımlanması gerekir.  
+ Bir arabirim bildirimi işlevleri, olayları ve özellikler içerebilir.  Tüm arabirim üyeleri genel erişilebilirlik sahiptir. Bir arabirim statik veri üyeleri, İşlevler, olayları ve özellikleri de içerebilir ve bu statik üyeleri arabiriminde tanımlanması gerekir.  
   
- Bir sınıfın nasıl uygulandığı bir arabirim tanımlar. Bir arabirim bir sınıfı değil ve sınıflar yalnızca arabirimleri uygulayabilir. Bir sınıf bir arabirim, bildirilen bir işlev tanımladığında geçersiz işlevi uygulanır. Bu nedenle, ad araması arabirim üyeleri dahil değildir.  
+ Nasıl bir sınıf uygulanabilir bir arabirim tanımlar. Bir arabirim bir sınıf değil ve sınıfları yalnızca arabirim uygulayabilir. Bir arabirimde bildirilen bir işlevi bir sınıf tanımlar, geçersiz işlevi uygulanır. Bu nedenle, ad arama, arabirim üyeleri içermez.  
   
- Bir sınıf ya da bir arabiriminden türeyen yapı tüm üyeleri arabirimi uygulamalıdır. Arabirim uygularken *adı* arabirimleri de uygulamalıdır `base_interface` listesi.  
+ Bir sınıf veya yapı arabiriminden türetilen arabirimin tüm üyelerini uygulamalıdır. Arabirimi uygulanırken *adı* arabirimleri de uygulamalıdır `base_interface` listesi.  
   
  Daha fazla bilgi için bkz.:  
   
@@ -68,34 +68,33 @@ interface class
   
 -   [Genel Arabirimler (Visual C++)](../windows/generic-interfaces-visual-cpp.md)  
   
- Diğer CLR türleri hakkında daha fazla bilgi için bkz: [sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md).  
+ Diğer CLR türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).  
   
- Bir tür arabirimiyle ise derleme zamanında algılayabilir `__is_interface_class(type)`. Daha fazla bilgi için bkz: [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ Bir türü bir arabirim ile ise derleme zamanında algılayabilir `__is_interface_class(type)`. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
- Geliştirme ortamında F1 Yardımı bu anahtar sözcükleri anahtar sözcüğü vurgulayarak alabilirsiniz (`interface class`, örneğin) ve F1 tuşuna basın.  
+ Geliştirme ortamında F1 Yardım bu anahtar sözcükler üzerinde anahtar sözcüğü vurgulayarak alabilirsiniz (`interface class`, örneğin) ve F1 tuşuna basın.  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
  **Açıklamalar**  
   
- (Yalnızca Windows çalışma zamanı için geçerli hiçbir açıklamalar için bu dil özelliği vardır.)  
+ (Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerli olan açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
  **Açıklamalar**  
   
- (Yalnızca ortak dil çalışma zamanı için geçerli hiçbir açıklamalar için bu dil özelliği vardır.)  
+ (Bu dil özelliğinin yalnızca ortak dil çalışma zamanı için geçerli olan açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
- Aşağıdaki kod örneğinde, bir arabirim clock işlevi davranışını nasıl tanımlayabilirsiniz gösterilmektedir.  
+ Aşağıdaki kod örneği, bir arabirim bir saat işlevin davranışını nasıl tanımlayabilirsiniz gösterir.  
   
-```  
+```cpp  
 // mcppv2_interface_class.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -201,11 +200,9 @@ OnClick: 7, 3.14159
 in Function_1  
 ```  
   
- **Örnek**  
+ Aşağıdaki kod örneği, birden çok arabirimlerde ve bu arabirimler kullanıldığı bir sınıf tarafından bildirilen aynı imzaya sahip işlevler uygulamak için iki yolunu gösterir.  
   
- Aşağıdaki kod örneği birden çok arabirimler içinde ve bu arabirimleri bir sınıf tarafından kullanıldığı bildirilen aynı imzayla işlevlerini gerçekleştirmek için iki yolunu gösterir.  
-  
-```  
+```cpp  
 // mcppv2_interface_class_2.cpp  
 // compile with: /clr /c  
 interface class I {  

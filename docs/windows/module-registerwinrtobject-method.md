@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 097bf70ebd280d9494ff70ea1d80f53615f3d898
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 42ec736126e2381b00542bf71afca0b9db187df7
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874960"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39603763"
 ---
 # <a name="moduleregisterwinrtobject-method"></a>Module::RegisterWinRTObject Yöntemi
 Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla Windows çalışma zamanı nesneleri kaydeder.  
@@ -36,21 +36,21 @@ HRESULT RegisterWinRTObject(const wchar_t* serverName,
    unsigned int count)  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `serverName`  
- Bu işlem tarafından etkilenen nesneler kümesinin belirtir adı.  
+### <a name="parameters"></a>Parametreler  
+ *SunucuAdı*  
+ Bu işlemden etkilenen nesneler kümesini belirten bir ad.  
   
- `activatableClassIds`  
- Kaydetmek için activatable CLSID dizisi.  
+ *activatableClassIds*  
+ Kaydedilecek etkinleştirilebilir CLSID dizisi.  
   
- `cookie`  
- Kaydedilen sınıf nesneleri tanımlayan bir değer. Bu değer daha sonra kaydını iptal etmek için kullanılır.  
+ *Tanımlama bilgisi*  
+ Kaydedilen sınıf nesneleri tanımlayan bir değer. Bu değer daha sonra kaydı iptal etmek için kullanılır.  
   
- `count`  
- Kaydetmek için nesnelerin sayısı.  
+ *Sayısı*  
+ Kaydedilecek nesne sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde bir hata nedenini gösterir CO_E_OBJISREG gibi HRESULT işlemi başarısız oldu.  
+ Başarılıysa S_OK; Aksi takdirde bir hata HRESULT nedenini belirten CO_E_OBJISREG gibi işlem başarısız oldu.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

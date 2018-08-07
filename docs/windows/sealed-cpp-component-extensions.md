@@ -1,5 +1,5 @@
 ---
-title: korumalı (C++ bileşen uzantıları) | Microsoft Docs
+title: Mühürlü (C++ bileşen uzantıları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 05c75aef047e914086aaf4ae2c0d0d3bdd04e8c7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 47efadb89786b7be54f33678d2f71d2474e4deb4
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890870"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39604557"
 ---
 # <a name="sealed--c-component-extensions"></a>mühürlü (C++ Bileşen Uzantıları)
-`sealed` Sanal üyesi geçersiz kılınamaz ya da bir tür bir taban türü kullanılamaz gösteren bir bağlama duyarlı anahtar sözcüğü ref sınıfları için adıdır.  
+**korumalı** sanal üyesi geçersiz kılınamaz gösteren bir bağlama duyarlı anahtar sözcük başvuru sınıfları için veya bir türü temel tür olarak kullanılamaz.  
   
 > [!NOTE]
->  ISO C ++ 11 standart dil sahip [son](../cpp/final-specifier.md) Visual Studio'da desteklenen anahtar sözcüğü. Kullanım `final` standart sınıfları ve `sealed` ref sınıfları.  
+>  ISO C ++ 11 standart dil sahip [son](../cpp/final-specifier.md) Visual Studio'da desteklendiğine anahtar sözcüğü. Kullanım **son** standart sınıfları ve **korumalı** ref sınıfları.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
   
@@ -42,36 +42,36 @@ virtual return-type identifier() sealed {...};
   
 ### <a name="parameters"></a>Parametreler  
   
- *Tanımlayıcı*  
+ *tanımlayıcı*  
  İşlev veya sınıf adı.  
   
  *dönüş türü*  
- Bir işlev tarafından döndürülen türü.  
+ İşlev tarafından döndürülen tür.  
   
 ## <a name="remarks"></a>Açıklamalar  
   
- İlk sözdizimi örnekte bir sınıf korumalı değil. İkinci örnekte, bir sanal işlev korumalı değil.  
+ İlk söz dizimi örnekte, bir sınıfın korumalı. İkinci örnekte, korumalı bir sanal işlev.  
   
- `sealed` Sözcüktür yerel hedefler için ve ayrıca Windows çalışma zamanı ve ortak dil çalışma zamanı (CLR) için geçerli. Daha fazla bilgi için bkz: [geçersiz kılma tanımlayıcıları ve yerel derleme](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
+ **Korumalı** anahtar sözcüğü, yerel hedefler için ve Windows çalışma zamanı ve ortak dil çalışma zamanı (CLR) için geçerli. Daha fazla bilgi için [geçersiz kılma tanımlayıcıları ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
   
- Bir türü kullanarak korumalı olup olmadığını derleme zamanında algılayabilir `__is_sealed(type)` türü ayırdedici nitelik. Daha fazla bilgi için bkz: [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ Bir tür kullanarak korumalı olmadığını derleme zamanında algılayabilir `__is_sealed(type)` türü niteliğine. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
- `sealed` bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
+ **korumalı** bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- Bkz: [Ref sınıflar ve yapılar](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
+ Bkz: [başvuru sınıfları ve yapıları](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
- (Yalnızca ortak dil çalışma zamanı için geçerli hiçbir açıklamalar için bu dil özelliği vardır.)  
+ (Bu dil özelliğinin yalnızca ortak dil çalışma zamanı için geçerli olan açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- Bu aşağıdaki kod örneğinde etkisini gösterir `sealed` sanal üyesi üzerinde.  
+ Bu aşağıdaki kod örneğinde etkilerini gösterir **korumalı** üzerinde bir sanal üye.  
   
 ```cpp  
 // sealed_keyword.cpp  
@@ -122,7 +122,7 @@ X::f override of I1::g
 Y::f override of I1::f  
 ```  
   
- Sonraki kod örneği, bir sınıf korumalı olarak işaretlemek gösterilmiştir.  
+ Sonraki kod örneğinde, bir sınıf sealed olarak işaretlemek gösterilmektedir.  
   
 ```cpp  
 // sealed_keyword_2.cpp  
