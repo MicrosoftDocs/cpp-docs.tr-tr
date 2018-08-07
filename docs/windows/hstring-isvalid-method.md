@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fe2bea7e7971daa1c6bb169a1c049a6757d9ed8d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 26ca5d70f6632c35da64215376e0dddd6eca9fcb
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874323"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571008"
 ---
 # <a name="hstringisvalid-method"></a>HString::IsValid Yöntemi
-Geçerli HString nesnesi boş olup olmadığını gösterir.  
+Belirtir olup olmadığını geçerli **Hstrıng** veya nesne boş.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,7 +32,7 @@ bool IsValid() const throw()
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `true` Geçerli HString nesnesi boş değilse; Aksi takdirde `false`.  
+ **doğru** varsa geçerli **Hstrıng** nesnesi boş; Aksi takdirde değil **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

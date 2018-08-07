@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dc2b6b88f9cfc095dfa6b2648dd81820b3454a1c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cf329199541ad0075044633d49d6ab654146b5e7
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873748"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570970"
 ---
 # <a name="eventtraits-structure"></a>EventTraits Yapısı
-Bir olay sınıfı tanıtıcısı özelliklerini tanımlar.  
+Özelliklerini tanımlayan bir `Event` sınıfı işleyici.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

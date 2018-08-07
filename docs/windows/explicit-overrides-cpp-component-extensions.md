@@ -15,64 +15,63 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4eb418a6ded829e4eeeef3bf108894f9faf3d77e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 225580be17afcc1bda6feab63d3efe79f932b757
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879509"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570330"
 ---
 # <a name="explicit-overrides--c-component-extensions"></a>Açık Geçersiz Kılmalar (C++ Bileşen Uzantıları)
-Bu konuda açıkça temel sınıfta veya arabirimde üye geçersiz kılmak nasıl ele alınmıştır. Adlandırılmış (açık) geçersiz kılma, farklı bir ada sahip bir türetilmiş yöntemiyle bir yöntemini geçersiz kılmak için yalnızca kullanılmalıdır.  
+Bu konu, temel sınıfta veya arabirimde üye açıkça geçersiz kılma anlatılmaktadır. (Açık) adlandırılmış bir geçersiz kılma, farklı bir ada sahip bir türetilmiş yöntemi ile bir yöntemi geçersiz kılmak için yalnızca kullanılmalıdır.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- **Sözdizimi**  
+ **Söz dizimi**  
   
 ```  
-  
-      overriding-function-declarator = type::function [,type::function] { overriding-function-definition }  
+overriding-function-declarator = type::function [,type::function] { overriding-function-definition }  
 overriding-function-declarator = function { overriding-function-definition }  
 ```  
   
  **Parametreler**  
   
- *geçersiz kılma-işlevi-bildirimcisi*  
- Geçersiz kılma işlevi dönüş türü, adı ve bağımsız değişken listesi.  Geçersiz kılma işlevi kılınmasını işlevi ile aynı ada sahip olmadığını unutmayın.  
+ *geçersiz kılma-işlevi-declarator*  
+ Geçersiz kılma işlev dönüş türü, adı ve bağımsız değişken listesi.  Geçersiz kılma işlevi geçersiz kılınmasını işlevi aynı ada sahip olmadığını unutmayın.  
   
  *Türü*  
- Geçersiz kılınacak işlevi içeriyor temel türü.  
+ Geçersiz kılmak için bir işlevi içeren temel türü.  
   
  *İşlevi*  
- Geçersiz kılmak için bir veya daha fazla işlevi adlarının virgülle ayrılmış listesi.  
+ Geçersiz kılmak için bir veya daha fazla işlev adlarının virgülle ayrılmış listesi.  
   
- *geçersiz kılma-işlevi-tanımı*  
- Geçersiz kılma işlevi tanımlayan işlev ifadeleri.  
+ *geçersiz kılma-işlevi-definition*  
+ Geçersiz kılma işlevi tanımlayan işlev gövdesi deyimleri.  
   
  **Açıklamalar**  
   
- Geçersiz kılmalar yöntemi imza için bir diğer ad oluşturmak veya yöntemleri witht aynı imza için farklı uygulamaları sağlamak için açık kullanın.  
+ Geçersiz kılmalar için bir yöntem imzası bir diğer ad oluşturmak veya yöntemleri witht aynı imzaya için farklı uygulamalarını sağlamak için açık kullanın.  
   
- Devralınan türleri ve devralınan tür üyeleri davranışını değiştirme hakkında daha fazla bilgi için bkz: [geçersiz kılma tanımlayıcıları](../windows/override-specifiers-cpp-component-extensions.md).  
+ Devralınan türlerin ve devralınan tür üyeleri davranışını değiştirme hakkında daha fazla bilgi için bkz: [geçersiz kılma tanımlayıcıları](../windows/override-specifiers-cpp-component-extensions.md).  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
  **Açıklamalar**  
   
- Açık hakkında bilgi geçersiz kılmaları yerel kodda veya derlenmiş kod **/clr:oldSyntax**, bkz: [açık geçersiz kılmalar](../cpp/explicit-overrides-cpp.md).  
+ Açık hakkında bilgi yerel kodda geçersiz kılar veya derlenmiş kodu `/clr:oldSyntax`, bkz: [açık geçersiz kılmalar](../cpp/explicit-overrides-cpp.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
  **Örnek**  
   
- Aşağıdaki kod örneğinde basit, örtük geçersiz kılma ve bir üye uyarlamasını temel arabiriminde, açık geçersiz kılmalar kullanmayan gösterir.  
+ Aşağıdaki kod örneği basit, örtük geçersiz kılma ve üye uygulaması temel bir arabirimde açık geçersiz kılmalar kullanmayan gösterir.  
   
-```  
+```cpp  
 // explicit_override_1.cpp  
 // compile with: /clr  
 interface struct I1 {  
@@ -100,10 +99,9 @@ X::f override of I1::f
   
  **Örnek**  
   
- Aşağıdaki kod örneği, ortak bir imza ile tüm arabirim üyeleri açık geçersiz kılma sözdizimini kullanarak uygulayan gösterilmektedir.  
+ Aşağıdaki kod örneği, ortak bir imzaya sahip tüm arabirim üyelerini açık geçersiz kılma sözdiziminin uygulamak gösterilmektedir.  
   
-```  
-  
+```cpp  
 // explicit_override_2.cpp  
 // compile with: /clr  
 interface struct I1 {  
@@ -167,9 +165,9 @@ X::g
   
  **Örnek**  
   
- Aşağıdaki kod örneğinde türü güvenli koleksiyonu uygulayan bir açık arabirim uygulaması gösterir.  
+ Aşağıdaki kod örneği, türü güvenli koleksiyonu uygulayan açık arabirim uygulaması gösterir.  
   
-```  
+```cpp  
 // explicit_override_4.cpp  
 // compile with: /clr /LD  
 using namespace System;  

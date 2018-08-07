@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: (tek başına) proje dışındaki kaynak betik dosyasını açma | Microsoft Docs'
+title: 'Nasıl yapılır: (tek başına) proje dışındaki kaynak betik dosyasını açın | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,56 +20,54 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 87dd0cb1e54b6e74c9c4f4fd7d9baff6461ad470
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 70cba5145f64fd88d1d6f1c4a68ac4c0730968cc
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879171"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570390"
 ---
 # <a name="how-to-open-a-resource-script-file-outside-of-a-project-standalone"></a>Nasıl Yapılır: Proje Dışındaki Kaynak Betik Dosyasını Açma (Tek Başına)
-Açık bir projeniz gerek kalmadan, kaynakları .rc dosyasında görüntüleyebilirsiniz. .Rc dosya açılırken içinde aksine belge penceresinde açılır [kaynak görünümü](../windows/resource-view-window.md) penceresi (dosya projesi içinde açık olduğunda bu yaptığı gibi).  
+Bir proje açmak zorunda kalmadan bir .rc dosyasındaki kaynakları görüntüleyebilirsiniz. .Rc dosyasının'te açılmasını aksine bir belge penceresi açılır [kaynak görünümü](../windows/resource-view-window.md) penceresi (dosya içinde bir proje açıkken çalıştığı gibi).  
   
 > [!NOTE]
->  Bazı komutlar yalnızca dosyanın açılmış tek başına (dışında bir proje) olduğunda kullanılabilir olmadığından önemli bir fark budur. Dosyanın dışında bir proje açıldığında, örneğin, yalnızca bir dosyayı farklı bir biçimde veya farklı bir dosya adı olarak kaydedebilirsiniz ( **Kaydet** komutu, içinde bir proje bir dosya açıldığında kullanılamıyor).  
+>  Bazı komutlar yalnızca dosya açılan tek başına (proje dışında) olduğunda kullanılabilir olmadığından önemli bir fark budur. Dosyanın dışında bir proje açıldığında, örneğin, yalnızca bir dosyayı farklı bir biçimde veya farklı bir dosya adı olarak kaydedebilirsiniz ( **Kaydet** komutu, bir dosya içinde bir proje açıldığında kullanılamaz).  
   
-### <a name="to-open-an-rc-file-outside-a-project"></a>Proje dışındaki bir .rc dosyasını açmak için  
+### <a name="to-open-an-rc-file-outside-a-project"></a>Bir proje dışında bir .rc dosyasını açmak için  
   
 1.  Gelen **dosya** menüsünde seçin **açık**, ardından **dosya**.  
   
-2.  İçinde **açık dosya** iletişim kutusunda, görüntülemek, dosyayı vurgulayın ve tıklatın istediğiniz kaynak betik dosyasına gidin **açık**.  
+2.  İçinde **açık dosya** iletişim kutusunda, görüntülemek, dosyayı vurgulayın ve tıklayın istediğiniz kaynak betik dosyasına gidin **açık**.  
   
     > [!NOTE]
-    >  Proje ilk açarsanız (**dosya**, **açmak**, **proje**), bazı komutlar için kullanılamaz. "Tek başına" dosya açılırken proje yüklemeden açmadan anlamına gelir.  
+    >  İlk proje açarsanız (**dosya**, **açın**, **proje**), bazı komutlar için kullanılabilir olmayacak. "Tek başına" dosyasını açıp, proje yüklemeden açmadan anlamına gelir.  
   
- Açın ve kaynak dosyasını metin biçiminde görüntülemek için bkz: [bir kaynak betik (.rc) dosya düzenleme](../windows/how-to-open-a-resource-script-file-in-text-format.md).  
+ Açın ve kaynak dosyasını metin biçiminde görüntülemek için bkz: [kaynak betiği (.rc) dosya düzenleme](../windows/how-to-open-a-resource-script-file-in-text-format.md).  
   
-#### <a name="to-open-multiple-rc-files-outside-a-project"></a>Proje dışındaki birden çok .rc dosyaları açmak için  
+### <a name="to-open-multiple-rc-files-outside-a-project"></a>Birden çok .rc dosyası bir proje dışında açmak için  
   
 1.  Tek başına hem de kaynak dosyalarını açın. Örneğin, Source1.rc ve Source2.rc açın.  
   
     1.  Gelen **dosya** menüsünde seçin **açık**, ardından **dosya**.  
   
-    2.  İçinde **Dosya Aç** iletişim kutusunda, istediğiniz (Source1.rc) açın, dosyayı vurgulayın ve ' ilk kaynak betik dosyasına gidin **açmak**.  
+    2.  İçinde **Dosya Aç** iletişim kutusunda, istediğiniz (Source1.rc) açın, dosyayı vurgulayın ve'ilk kaynak betik dosyasına gidin **açın**.  
   
-    3.  İkinci .rc dosyasını (Source2.rc) açmak için önceki adımı yineleyin.  
+    3.  İkinci .rc dosyasına (Source2.rc) açmak için önceki adımı yineleyin.  
   
-         .Rc dosyaları ayrı belgeler Windows'da artık açık.  
+         .Rc dosyaları artık ayrı bir belge pencerelerinde açıktır.  
   
-2.  Her iki .rc dosyaları açık olduğunda, aynı anda görüntüleyebilmeniz pencereleri döşe:  
+2.  Her iki .rc dosyası açıkken, aynı anda görebilecek şekilde pencereleri döşe:  
   
-    -   Gelen **penceresi** menüsünde seçin **yeni yatay sekme grubu** veya **yeni dikey sekme grubu**.  
+    -   Gelen **penceresi** menüsünde seçin **yeni yatay sekme grubu** veya **yeni bir dikey sekme grubu**.  
   
          \- veya -  
   
-    -   .Rc dosyaları birine sağ tıklayın ve seçin **yeni yatay sekme grubu** veya **yeni dikey sekme grubu** kısayol menüsünden.  
+    -   .Rc dosyaları birine sağ tıklayın ve seçin **yeni yatay sekme grubu** veya **yeni bir dikey sekme grubu** kısayol menüsünden.  
   
 > [!NOTE]
->  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+>  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-
-  
-### <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

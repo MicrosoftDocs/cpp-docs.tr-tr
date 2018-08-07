@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fbfd12ea513044f1062e60f5c73f5089683f043d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 831c9a524f8120c855382d198a5f53ac312cada6
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872721"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569794"
 ---
 # <a name="eventtargetarrayeventtargetarray-constructor"></a>EventTargetArray::EventTargetArray Oluşturucusu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,26 +36,26 @@ EventTargetArray(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `hr`  
- Bu oluşturucu işlemlerinden sonra parametresi `hr` ayırma dizisinin başarılı veya başarısız olup olmadığını gösterir. İçin olası değerler aşağıdaki tabloda listelenmektedir `hr`.  
+### <a name="parameters"></a>Parametreler  
+ *İK*  
+ Bu oluşturucu işlemlerinden sonra parametre *ik* dizinin ayırma başarılı veya başarısız olduğunu gösterir. İçin olası değerler aşağıdaki tabloda *ik*.  
   
  S_OK  
- İşlemi başarılı oldu.  
+ İşlem başarılı oldu.  
   
  E_OUTOFMEMORY  
  Dizi için bellek ayrılamıyor.  
   
  S_FALSE  
- Parametre `items` sıfırdan küçük veya eşit.  
+ Parametre *öğeleri* sıfırdan küçük veya ona eşit.  
   
- `items`  
- Dizi öğeleri tahsis sayısı.  
+ *Öğeleri*  
+ Ayrılacak dizi öğelerinin sayısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- EventTargetArray sınıfı yeni bir örneğini başlatır.  
+ Yeni bir örneğini başlatır **EventTargetArray** sınıfı.  
   
- EventTargetArray EventSource nesnesinde bir dizi olay işleyicileri tutmak için kullanılır.  
+ **EventTargetArray** bir dizi olay işleyicileri tutmak için kullanılan bir `EventSource` nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

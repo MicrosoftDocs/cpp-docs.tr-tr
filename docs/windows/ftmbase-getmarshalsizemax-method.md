@@ -1,5 +1,5 @@
 ---
-title: FtmBase::GetMarshalSizeMax yöntemi | Microsoft Docs
+title: FtmBase::GetMarshalSizeMax metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5a298e63bc67dadf33a5e653d0eecf165a530d82
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c39c313f06bb4dd1f4dbc095df159a38625e9db8
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873800"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570220"
 ---
 # <a name="ftmbasegetmarshalsizemax-method"></a>FtmBase::GetMarshalSizeMax Metodu
-Belirtilen nesne üzerindeki belirtilen arabirim işaretçisi hazırlamak için gereken bayt sayısı üst sınırı öğrenin.  
+Belirtilen nesneyi belirtilen arabirim işaretçisini hazırlamak için gereken bayt sayısı üst sınırı alın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,31 +40,31 @@ STDMETHODIMP GetMarshalSizeMax(
 ) override;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `riid`  
- Arabirim sıralanması tanıtıcısı başvuru.  
+### <a name="parameters"></a>Parametreler  
+ *riid*  
+ Sıralanması arabirimi tanımlayıcısını başvuru.  
   
- `pv`  
- Arabirim işaretçisi; sıralanması için NULL olabilir.  
+ *BD*  
+ Arabirim işaretçisi; sıralanması NULL olabilir.  
   
- `dwDestContext`  
- Burada belirtilen arabirim iptal edilip hedef bağlamı.  
+ *dwDestContext*  
+ Belirtilen arabirim iptal edilecek olduğu hedef bağlamı.  
   
  Bir veya daha fazla MSHCTX numaralandırma değerlerini belirtin.  
   
- Şu anda unmarshaling (MSHCTX_INPROC) geçerli işlem, başka bir grup veya geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlemde ortaya çıkabilir.  
+ Şu anda unmarshaling geçerli işlemin (MSHCTX_INPROC) başka bir grup veya geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlem içinde ortaya çıkabilir.  
   
- `pvDestContext`  
- Gelecekte kullanılmak üzere ayrılmış; NULL olmamalıdır.  
+ *pvDestContext*  
+ Gelecekte kullanılmak üzere ayrılmış; NULL olmalıdır.  
   
- `mshlflags`  
- Sıralanması için verileri geri istemci işlemi aktarılacak olup olmadığını belirten bayrak — normal durum — veya burada alınabileceği birden çok istemciler tarafından genel bir tabloya yazılır. Bir veya daha fazla MSHLFLAGS numaralandırma değerlerini belirtin.  
+ *mshlflags*  
+ İstemci işlemine aktarılacak veri sıralanması olup olmadığını belirten bayrak — genellikle bu durum — burada, alınabilir birden çok istemci tarafından genel bir tablo yazılamaz veya okunamaz. Bir veya daha fazla MSHLFLAGS numaralandırma değerlerini belirtin.  
   
- `pSize`  
- Bu işlem tamamlandığında, üst sınır hazırlama akışa yazılmasına veri miktarına yönelik işaretçi.  
+ *pSize*  
+ Bu işlem tamamlandığında hazırlama akışa yazılacak veri miktarına üst sınırı için işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde E_FAIL veya E_NOINTERFACE.  
+ Başarılıysa S_OK; Aksi takdirde E_FAIL veya e_noınterface.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** ftm.h  

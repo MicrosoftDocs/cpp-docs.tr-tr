@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 460e3f5316bc4b4509e563fda2354106164b3b1a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b52359d1f50f5ea3bad4075432fd8ae0e468d2df
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872386"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571024"
 ---
 # <a name="dual"></a>çift
-Arabirim çift arabirim .idl dosyasına yerleştirir.  
+Bir arabirim çift arabirim .idl dosyasına yerleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [dual]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Zaman **çift** C++ öznitelik önündeki bir arabirim, oluşturulan .idl dosyasındaki kitaplığı bloğunun yerleştirilecek arabirimi neden olur.  
+ Zaman **çift** C++ özniteliği önündeki bir arabirim, oluşturulan .idl dosyasındaki kitaplığı bloğunun yerleştirilecek arabirimi neden olur.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodu kullanan bir öznitelik bloğu: **çift** arabirim tanımı önce:  
+ Aşağıdaki kodu kullanan bir öznitelik bloğudur **çift** arabirimi tanımından önce:  
   
-```  
+```cpp  
 // cpp_attr_ref_dual.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -79,17 +77,17 @@ __interface IStatic : IDispatch
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**interface**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|**dispinterface**|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Kullanıma göre öznitelikler](../windows/attributes-by-usage.md)   
  [Özel](../windows/custom-cpp.md)   
- [Görüntüleme arabirimi](../windows/dispinterface.md)   
+ [Dispinterface](../windows/dispinterface.md)   
  [Nesne](../windows/object-cpp.md)   
  [__interface](../cpp/interface.md)   

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9785ea27c79ff0a118ff3697a22804c520b265ee
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 59354062dded7792dca1cd84683bba64f6a64aa0
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873686"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571431"
 ---
 # <a name="dontusenewusemakeoperator-new-operator"></a>DontUseNewUseMake::operator new İşleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -37,17 +37,17 @@ void* operator new(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `__unnamed0`  
- Bir adlandırılmamış parametre ayrılacak bellek bayt sayısını belirtir.  
+ *__unnamed0*  
+ Bir adlandırılmamış parametresi ayrılacak bellek bayt sayısını belirtir.  
   
- `placement`  
+ *yerleştirme*  
  Ayrılacak türü.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İşleç aşırı yüklemesi, ek bağımsız değişkenler geçirmek için bir yol sağlar `new`.  
+ İşleç işlecini aşırı yüklediyseniz ek bağımsız değişkenleri geçirmek için bir yol sağlar **yeni**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İşleç aşırı yüklemeler `new` ve RuntimeClass içinde kullanılan engeller.  
+ İşleç aşırı **yeni** ve içinde kullanılmasını engeller `RuntimeClass`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

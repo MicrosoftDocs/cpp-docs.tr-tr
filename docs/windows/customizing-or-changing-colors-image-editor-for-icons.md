@@ -26,33 +26,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 67d84840bb981eab05d923a3f430c9b3972cd1e7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e94945212b9a7215397a1179432e87178d236b42
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871243"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571291"
 ---
 # <a name="customizing-or-changing-colors-image-editor-for-icons"></a>Renkleri Özelleştirme veya Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi'nin [renk paleti](../windows/colors-window-image-editor-for-icons.md) başlangıçta 16 standart renkleri görüntüler. Ek olarak görüntülenen renkler, kendi özel renkler oluşturabilirsiniz. Daha sonra [kaydetme ve özelleştirilmiş bir renk paleti yükleme](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  
+Resim Düzenleyicisi'nin [renkler paleti](../windows/colors-window-image-editor-for-icons.md) başlangıçta 16 standart renkler görüntüler. Ek olarak görüntülenen renkler, kendi özel renkler oluşturabilirsiniz. Daha sonra [kaydetme ve özelleştirilmiş renk paleti yükleme](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  
   
-### <a name="to-change-colors-on-the-colors-palette"></a>Renk paleti renkleri değiştirmek için  
+### <a name="to-change-colors-on-the-colors-palette"></a>Renkler paleti renkleri değiştirmek için  
   
 1.  Gelen **görüntü** menüsünde seçin **renkleri Ayarla**.  
   
-2.  İçinde [Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md), uygun kutulara RGB veya HSL değerleri yazarak rengi tanımlamak veya bir renk seçin **gradyan rengi görüntü** kutusu.  
+2.  İçinde [Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md), rengin RGB veya HSL değerleri ilgili metin kutularına yazarak tanımlayın veya bir renk seçin **gradyan renkli görüntüyü** kutusu.  
   
-3.  Kaydırıcıyı taşıyarak parlaklığını ayarlamak **parlaklığını** çubuğu.  
+3.  Kaydırıcıyı hareket ettirerek parlaklık ayarlamak **parlaklık** çubuğu.  
   
-4.  Birçok özel renkler titreyebilir. Düz renk Titremeli renk en yakın istiyorsanız, çift **renk** kutusu.  
+4.  Birçok özel renkler Titrek. Düz renk Titremeli renk en yakın istiyorsanız çift **renk** kutusu.  
   
-     Daha sonra Titremeli renk istediğiniz karar verirseniz, kaydırıcıyı taşıyın **parlaklığını** çubuk veya işaretçileri taşıma **gradyan rengi görüntü** kutusunu yeniden titreşimi geri yüklemek için.  
+     Titremeli renk istediğiniz daha sonra karar verirseniz, kaydırıcıyı taşıyın **parlaklık** çubuk veya işaretçileri taşıma **gradyan renkli görüntüyü** renk paleti öykünmesi yeniden yüklemeyi kutusu.  
   
-5.  Tıklatın **Tamam** yeni renk eklemek için.  
+5.  Tıklayın **Tamam** rengi ekleyin.  
   
-
-  
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   

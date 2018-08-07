@@ -17,36 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cb853e10b1745151c12f1855f841a21c2a7e126b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 83949616f204ae37b42b91b03d69d8d803a1582f
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882543"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569676"
 ---
 # <a name="defaultvtable"></a>defaultvtable
-Bir COM nesnesi için varsayılan vtable arabirimi olarak bir arabirim tanımlar.  
+Varsayılan vtable arabirim bir COM nesnesi için bir arabirim tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ defaultvtable(  
+[ defaultvtable(  
    interface  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `interface`  
- COM nesne için varsayılan vtable olmasını istediğiniz belirlenen arabirimi.  
+ *interface*  
+ COM nesnesi için varsayılan vtable olmasını istediğiniz belirtilen arabirim.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Defaultvtable** C++ özniteliğine sahip ile aynı işlevselliği [defaultvtable](http://msdn.microsoft.com/library/windows/desktop/aa366795) MIDL özniteliği.  
+ **Defaultvtable** C++ özniteliği ile aynı işlevlere sahip [defaultvtable](http://msdn.microsoft.com/library/windows/desktop/aa366795) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod öznitelikleri kullanan bir sınıfı gösterir **defaultvtable** varsayılan arabirim belirlemek için:  
+ Aşağıdaki kod öznitelikleri kullanan bir sınıf üzerinde gösterir. **defaultvtable** bir varsayılan arabirim belirtmek için:  
   
-```  
+```cpp  
 // cpp_attr_ref_defaultvtable.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -78,12 +77,12 @@ class CMyC3 : public IMyI3 {};
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass**|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|**coclass**|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

@@ -19,15 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f1a4bf31ff44c74362e21e8888630273fcc049e3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2cbb5be3603f79a7df1cb330ca06775357666854
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881344"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570317"
 ---
 # <a name="getactivationfactory-function"></a>GetActivationFactory İşlevi
-Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üreteci alır.  
+Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üretecini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,18 +39,18 @@ inline HRESULT GetActivationFactory(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Şablon parametresi etkinleştirme Fabrika türünü belirtir.  
+### <a name="parameters"></a>Parametreler  
+ *T*  
+ Şablon parametresi etkinleştirme fabrikası türünü belirtir.  
   
- `activatableClassId`  
+ *activatableClassId*  
  Etkinleştirme üretecin üretebileceği sınıfı adı.  
   
- `factory`  
- Bu işlem tamamlandığında, etkinleştirme Fabrika türü için bir başvuru `T`.  
+ *Fabrika*  
+ Bu işlem tamamlandığında, bir başvuru türü için etkinleştirme fabrikası *T*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, bu işlemi neden başarısız gösterir HRESULT hata.  
+ Başarılıysa S_OK; Aksi takdirde, bu işlem başarısız olmasının gösteren HRESULT hatası.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

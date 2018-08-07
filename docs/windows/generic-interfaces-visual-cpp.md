@@ -16,21 +16,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8e16a2ab8a1ee0c9255f394d033bda2a7afc2b7e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 428004d3390b95c700c53fd157b62a1b3fbe3d0b
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878703"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571181"
 ---
 # <a name="generic-interfaces-visual-c"></a>Genel Arabirimler (Visual C++)
-Tür parametreleri sınıflarında uygulamak kısıtlamaları arabirimlerde tür parametreleri için geçerli aynıdır (bkz [Genel sınıflar (C + +/ CLI)](../windows/generic-classes-cpp-cli.md)).  
+Sınıflarında tür parametreleri için kısıtlamalar arabirimleri üzerinde tür parametreleri için geçerli aynıdır (bkz [Genel sınıflar (C + +/ CLI)](../windows/generic-classes-cpp-cli.md)).  
   
- İşlev aşırı yüklemesi denetleyen kurallar genel sınıfları veya genel arabirimler içinde işlevleri için aynıdır.  
+ İşlev aşırı yüklemesi denetleyen kuralları işlevleri Genel sınıflar veya genel arabirimler için aynıdır.  
   
- Açık arabirim üye uygulamaları oluşturulan arabirimi türleriyle (aşağıdaki örneklere bakın) basit arabirim türleriyle aynı şekilde çalışır.  
+ Açık arabirim üyesi uygulamalarını oluşturulmuş arabirimi türleriyle (aşağıdaki örneklere bakın) basit arabirim türleri ile aynı şekilde çalışır.  
   
- Arabirimleri hakkında daha fazla bilgi için bkz: [arabirimi sınıfı](../windows/interface-class-cpp-component-extensions.md).  
+ Arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,36 +41,36 @@ Tür parametreleri sınıflarında uygulamak kısıtlamaları arabirimlerde tür
   
 ## <a name="remarks"></a>Açıklamalar  
  *öznitelikleri* (isteğe bağlı)  
- Ek tanımlayıcı bilgiler. Öznitelikleri özniteliklerinin ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
+ Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
   
  *sınıf anahtarı*  
  **sınıf** veya **typename**  
   
- `type-parameter-identifier(s)`  
+ *tür-parametresi-tanımlayıcıları*  
  Tanımlayıcıları virgülle ayrılmış listesi.  
   
- `type-parameter-constraints-clauses`  
- Belirtilen formundadır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)  
+ *tür parametresi kısıtlamaları tümceleri*  
+ Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)  
   
  *erişilebilirlik değiştiricileri* (isteğe bağlı)  
- Erişilebilirlik değiştiricileri (örneğin **genel, özel**).  
+ Erişilebilirlik değiştiricileri (örneğin **genel ve özel**).  
   
- *Tanımlayıcı*  
+ *tanımlayıcı*  
  Arabirim adı.  
   
- *ana listesi* (isteğe bağlı)  
- Virgülle ayrılmış bir veya daha fazla açık temel arabirimleri içeren bir liste.  
+ *temel-liste* (isteğe bağlı)  
+ Virgülle ayırarak bir veya daha fazla açık temel arabirimlerini içeren liste.  
   
- *Arabirim gövdesi*  
- Arabirim üyeleri bildirimleri.  
+ *Arabirim-gövdesi*  
+ Arabirim üyelerinin bildirimleri.  
   
  *Bildirimciler* (isteğe bağlı)  
- Bildirimleri bu türüne göre değişkenlerin.  
+ Bu türe dayanan değişkenlerin bildirimleri.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bildirin ve genel bir arabirim örneği gösterilmektedir. Örnekte, genel arabirimi `IList<ItemType>` bildirilmedi. Ardından iki genel sınıfları tarafından uygulanan `List1<ItemType>` ve `List2<ItemType>`, farklı uygulamaları ile.  
+ Aşağıdaki örnek, bildirin ve genel bir arabirim örneği gösterilmektedir. Örnekte, genel arabirim `IList<ItemType>` bildirilir. Ardından iki genel sınıfları tarafından uygulanan `List1<ItemType>` ve `List2<ItemType>`, farklı uygulamaları.  
   
-```  
+```cpp  
 // generic_interface.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -244,9 +244,9 @@ List2
 ```  
   
 ## <a name="example"></a>Örnek  
- Bu örnek, genel bir arabirim bildirir `IMyGenIface`ve iki genel olmayan arabirimi `IMySpecializedInt` ve `ImySpecializedString`, specialize `IMyGenIface`. İki özel arabirimleri sonra iki sınıf tarafından uygulanan `MyIntClass` ve `MyStringClass`. Örneğin, genel arabirimler specialize, genel ve genel olmayan arabirimleri oluşturma ve açıkça gerçekleştirilen üyeleri arabirimlerde çağrı gösterilmektedir.  
+ Bu örnek bir genel arabirim bildirir `IMyGenIface`ve iki genel olmayan arabirimleri `IMySpecializedInt` ve `ImySpecializedString`, specialize `IMyGenIface`. İki özel arabirimler ardından iki sınıf tarafından uygulanan `MyIntClass` ve `MyStringClass`. Örnek genel arabirimler uzmanlaşmış, genel ve genel olmayan arabirimleri oluşturma ve arabirimleri üzerinde açıkça uygulanan üyeleri çağırmak nasıl gösterir.  
   
-```  
+```cpp  
 // generic_interface2.cpp  
 // compile with: /clr  
 // Specializing and implementing generic interfaces.  

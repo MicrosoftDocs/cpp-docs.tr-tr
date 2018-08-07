@@ -16,27 +16,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6015d5a61589b8ed2d38b6491392fd42e4f38ef1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 38cbfb171e218f70d45e5ef2e6e850d791803611
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879483"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571194"
 ---
 # <a name="how-to-declare-value-types-with-the-interiorptr-keyword-ccli"></a>Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)
-Bir `interior_ptr` değer türü ile kullanılabilir.  
+Bir **interior_ptr** bir değer türü ile kullanılabilir.  
   
 > [!IMPORTANT]
->  Bu dil özelliği tarafından desteklenen **/CLR** derleyici seçeneği, ancak tarafından **/ZW** derleyici seçeneği.  
+>  Bu dil özelliği tarafından desteklenen `/clr` derleyici seçeneği, ancak tarafından `/ZW` derleyici seçeneği.  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki C + +/ CLI örnek nasıl kullanılacağını gösteren bir `interior_ptr` bir değer türü.  
+ Aşağıdaki C + +/ CLI örnek nasıl kullanılacağını gösteren bir **interior_ptr anahtar** bir değer türü.  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // interior_ptr_value_types.cpp  
 // compile with: /clr  
 value struct V {  
@@ -66,7 +66,7 @@ int main() {
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output  
 1  
 2  
 2  
@@ -78,13 +78,13 @@ int main() {
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Değer türü `this` işaretçi interior_ptr için değerlendirir.  
+ Bir değer türünde **bu** işaretçi interior_ptr için değerlendirir.  
   
- Değer türü statik olmayan üye-işlevi gövdesinde `V`, `this` ifade türü olan `interior_ptr<V>` değeri işlevi çağrıldığında nesne adresidir.  
+ Statik olmayan üye işlevi bir değer türü gövdesinde `V`, **bu** türündeki bir ifade `interior_ptr<V>` değeri işlevin çağrıldığı nesneye adresidir.  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // interior_ptr_value_types_this.cpp  
 // compile with: /clr /LD  
 value struct V {  
@@ -99,13 +99,13 @@ value struct V {
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki örnek, statik üyeleriyle address-of işleci kullanmayı gösterir.  
+ Aşağıdaki örnek, statik üyelerle address-of işlecini kullanmayı gösterir.  
   
- Yerel bir işaretçi bir statik Visual C++ tür üyesi adresini verir.  Değer türü üyesinin çalışma zamanı yığında ayrılmış ve atık toplayıcısı tarafından taşınabilir çünkü statik değer türü üyesinin adresi yönetilen bir işaretçidir.  
+ Yerel bir işaretçi bir statik Visual C++ tür üyesinin adresini verir.  Değer türü üyesine çalışma zamanı yığınına ayrılmış ve çöp toplayıcısı tarafından taşınabilir olduğundan statik değer türü üyesine adresi yönetilen bir işaretçisidir.  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // interior_ptr_value_static.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -131,7 +131,7 @@ int main() {
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output 
 22  
 23  
 hello  

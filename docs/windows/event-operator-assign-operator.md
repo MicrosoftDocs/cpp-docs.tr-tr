@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d3da41ff7fd145889ec799bb2f8ebe99aed36934
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a523d6ba8679bf7d0bdf98563b86946e16e7bfca
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871129"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571304"
 ---
 # <a name="eventoperator-operator"></a>Event::operator= İşleci
-Geçerli olay örneği belirtilen olay referansı atar.  
+Belirtilen atar **olay** geçerli başvuru **olay** örneği.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ WRL_NOTHROW Event& operator=(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `h`  
- Bir rvalue-bir olay örneğine başvuru.  
+ *h*  
+ Bir rvalue başvurusuna bir **olay** örneği.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli olay örneği için bir işaretçi.  
+ Geçerli bir işaretçi **olay** örneği.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

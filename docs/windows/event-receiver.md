@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 01ab5aeee7d706da7016cb1ea1f01ff7367de888
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0b13acb5d637b4a733f2a2b9c66c8ded977c7847
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875571"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569940"
 ---
 # <a name="eventreceiver"></a>event_receiver
 Bir olay alıcısı (havuz) oluşturur.  
@@ -36,20 +36,19 @@ Bir olay alıcısı (havuz) oluşturur.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ event_receiver(  
+[ event_receiver(  
    type   
    [, layout_dependent=false]   
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `type`  
- Numaralandırması şu değerlerden biri:  
+ *Türü*  
+ Sabit listesi aşağıdaki değerlerden biri:  
   
--   `native` Yönetilmeyen C/C++ kodu için (varsayılan yerel sınıfları için).  
+-   `native` Yönetilmeyen C/C++ kodu için (varsayılan yerel sınıflar için).  
   
--   `com` COM kod. Bu değer aşağıdaki üstbilgi dosyaları dahil etme gerektirir:  
+-   `com` COM kodu için. Bu değer, aşağıdaki üst bilgi dosyaları eklemenizi gerektirir:  
   
     ```  
     #define _ATL_ATTRIBUTES  
@@ -58,18 +57,18 @@ Bir olay alıcısı (havuz) oluşturur.
     ```  
   
  **layout_dependent**  
- Belirtin *layout_dependent* yalnızca `type` = **com**. *layout_dependent* bir Boolean:  
+ Belirtin *layout_dependent* yalnızca `type` = **com**. *layout_dependent* bir Boole değeri:  
   
--   **doğru** alıcı olanlar için bunlar sayfaya olay kaynağı tam olarak eşleşmelidir olay temsilcileri imza anlamına gelir. Olay alıcı işleyici adları ilgili olay kaynağı arabiriminde belirtilen adları eşleşmelidir. Kullanmalısınız **coclass** zaman *layout_dependent* olan **doğru**. Belirtmek için biraz daha verimlidir **doğru**.  
+-   **doğru** alıcı olanlar için bunlar kancalandı olay kaynağı tam olarak eşleşmelidir olay temsilci imzası anlamına gelir. Olay alıcısı işleyici adları, ilgili olay kaynak arabiriminde belirtilen adlarının eşleşmesi gerekmektedir. Kullanmalısınız `coclass` olduğunda *layout_dependent* olduğu **true**. Belirtmek için biraz daha verimlidir **true**.  
   
--   **false** (varsayılan) anlamına arama kuralı ve depolama sınıfı (sanal, statik ve diğerleri) ya da işleyici adları olay kaynağı arabirimi yöntemi adları eşleşen gerek olay yöntemi ve işleyicileri; eşleşmesi gerekmez.  
+-   **false** (varsayılan) anlamına çağırma kuralı ve depolama sınıfı (sanal, statik ve diğerleri) işleyici adlarının olay kaynağı arabirim yöntemi adları eşleşmesi gerekir ya da olay yöntemi ve işleyicileri; eşleşmesi gerekmez.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Event_receiver** C++ özniteliği, sınıf veya yapı için bunu uygulandığı Visual C++ birleştirilmiş olay modelini kullanarak bir olay alıcısı olacağını belirtir.  
+ **Event_receiver** C++ özniteliği, sınıf veya yapı, uygulandığı Visual C++ birleştirilmiş olay modeli kullanarak bir olay alıcısı olacağını belirtir.  
   
- **event_receiver** ile kullanılan [event_source](../windows/event-source.md) özniteliği ve [__hook](../cpp/hook.md) ve [__unhook](../cpp/unhook.md) anahtar sözcükler. Kullanım **event_source** olay kaynakları oluşturmak için. Kullanım `__hook` bir olay kaynağı olayları ("kanca") olay alıcı yöntemlere ilişkilendirmek için bir olay alıcının yöntemleri içinde. Kullanım `__unhook` bunları ilişkilendirmesini kaldırmak.  
+ **event_receiver** ile kullanılan [event_source](../windows/event-source.md) özniteliği ve [__hook](../cpp/hook.md) ve [__unhook](../cpp/unhook.md) anahtar sözcükleri. Kullanım `event_source` olay kaynakları oluşturmak için. Kullanım **__hook** olayları olay kaynağı ("kanca") olay alıcı yöntemlere ilişkilendirilecek olay alıcısı'nın yöntemler içindeki. Kullanım **__unhook** bunları ilişkilendirmesini kaldırmak.  
   
- *layout_dependent* COM Olay alıcıları için yalnızca belirtilen (`type`=**com**). İçin varsayılan *layout_dependent* olan **false**.  
+ *layout_dependent* COM Olay alıcıları için yalnızca belirtilen (`type`=**com**). İçin varsayılan *layout_dependent* olduğu **false**.  
   
 > [!NOTE]
 >  Şablonlu bir alan veya yapı, olay içeremez.  
@@ -80,12 +79,12 @@ Bir olay alıcısı (havuz) oluşturur.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass'ı** zaman *layout_dependent*=**true**|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|**coclass'ı** olduğunda *layout_dependent*=**true**|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici öznitelikleri](../windows/compiler-attributes.md)   

@@ -15,28 +15,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e8738c44c11c69f8d2479335ce3effc4135dfe0f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 20a05bf603b874d260c95c010e6f0e8312b35649
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876072"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570995"
 ---
 # <a name="hstringattach-method"></a>HString::Attach Yöntemi
-Belirtilen HString nesne geçerli HString nesnesi ile ilişkilendirir.  
+Belirtilen ilişkilendirir **Hstrıng** geçerli nesneyle **Hstrıng** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 void Attach(  
        HSTRING hstr  
        ) throw()  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `hstr`  
- Varolan bir HString nesne.  
+ *HSTR*  
+ Mevcut bir **Hstrıng** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

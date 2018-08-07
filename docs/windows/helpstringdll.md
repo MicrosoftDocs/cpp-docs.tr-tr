@@ -17,35 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7cb3ab5fc624494d3292cd7a47031782ce7da70
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 27303f294f2414e2ea3f15de0c5bbfb1723628aa
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877351"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570086"
 ---
 # <a name="helpstringdll"></a>helpstringdll
-Belge dize araması (yerelleştirme) gerçekleştirmek için kullanılacak DLL adını belirtir.  
+Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in adını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ helpstringdll(  
+[ helpstringdll(  
    "string"  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `string`  
- Belge dize araması gerçekleştirmek için kullanılacak DLL.  
+### <a name="parameters"></a>Parametreler  
+ *string*  
+ Belge dize arama gerçekleştirmek için kullanılacak DLL.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Helpstringdll** C++ özniteliğine sahip ile aynı işlevselliği [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) MIDL özniteliği.  
+ **Helpstringdll** C++ özniteliği ile aynı işlevlere sahip [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_helpstringdll.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -64,12 +63,12 @@ __interface IMyI
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `interface`, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**sınıf**, **arabirimi**, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kaynak oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Kaynak Oluştur | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e3a5c8ee47203f24c1995cfde9dda40912f21467
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ff08e42ac1afe3954b485e11ed6433449a6ee2ff
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878651"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571476"
 ---
 # <a name="how-to-create-a-resource"></a>Nasıl Yapılır: Kaynak Oluşturma
 > [!NOTE]
@@ -30,39 +30,40 @@ ms.locfileid: "33878651"
   
 ### <a name="to-create-a-new-resource-in-resource-view"></a>Kaynak Görünümü'nde yeni bir kaynak oluşturmak için  
   
-1.  .Rc dosyanızda odaklanmak ile [kaynak görünümü](../windows/resource-view-window.md), tıklatın **Düzenle** menü ve seçin **kaynak ekleme** (veya kaynak görünümünde .rc dosyasını sağ tıklatın ve seçin  **Kaynak ekleme** kısayol menüsünde).  
+1.  Bir .rc dosyasında odaklanarak [kaynak görünümü](../windows/resource-view-window.md), tıklayın **Düzenle** menü ve **kaynak Ekle** (veya kaynak görünümü .rc dosyasına sağ tıklayın ve seçin  **Kaynak Ekle** kısayol menüsünden).  
   
-     **Not** projeniz zaten bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+     **Not** projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
 2.  İçinde [kaynak Ekle iletişim kutusu](../windows/add-resource-dialog-box.md), projenize eklemek istediğiniz kaynak türünü seçin.  
   
-### <a name="to-create-a-new-resource-in-solution-explorer"></a>Çözüm Gezgini'nde yeni bir kaynak oluşturmak için  
+### <a name="to-create-a-new-resource-in-solution-explorer"></a>Çözüm Gezgini içinde yeni bir kaynak oluşturmak için  
   
-1.  İçinde **Çözüm Gezgini**, proje klasörünü sağ tıklatın ve seçin **Ekle**, ardından **kaynak ekleme** kısayol menüsünde.  
+1.  İçinde **Çözüm Gezgini**, proje klasörü sağ tıklatın ve seçin **Ekle**, ardından **kaynak Ekle** kısayol menüsünde.  
   
-     Projenizde .rc dosya yoksa, bu adımı tane oluşturun. Ardından, belirli kaynak türlerine yeni .rc dosyasına eklemek için bu adımı yineleyebilirsiniz.  
+     Projenizde bir .rc dosyası yoksa, bu adımı oluşturur. Sonra belirli kaynak türlerine yeni .rc dosyasına eklemek için bu adımı yineleyebilirsiniz.  
   
 2.  İçinde [kaynak Ekle iletişim kutusu](../windows/add-resource-dialog-box.md), projenize eklemek istediğiniz kaynak türünü seçin.  
   
 ### <a name="to-create-a-new-resource-in-class-view"></a>Sınıf Görünümü'nde yeni bir kaynak oluşturmak için  
   
-1.  İçinde [sınıf görünümü](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925)sınıfınız sağ tıklatın ve seçin **Ekle**, ardından **kaynak ekleme** kısayol menüsünden.  
+1.  İçinde [sınıf görünümü](http://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925)sınıfınıza sağ tıklatın ve seçin **Ekle**, ardından **kaynak Ekle** kısayol menüsünden.  
   
 2.  İçinde [kaynak Ekle iletişim kutusu](../windows/add-resource-dialog-box.md), projenize eklemek istediğiniz kaynak türünü seçin.  
   
 ### <a name="to-create-a-new-resource-from-the-project-menu"></a>Proje menüsünden Yeni bir kaynak oluşturmak için  
   
-1.  Gelen **proje** menüsünde seçin **kaynak ekleme**.  
+1.  Gelen **proje** menüsünde seçin **kaynak Ekle**.  
   
- Yeni bir kaynak oluşturduğunuzda, Visual C++ benzersiz bir ad, örneğin, IDD_DIALOG1 atar. İlişkili kaynak Düzenleyicisi'ni veya kaynak özelliklerini düzenleyerek bu kaynak kimliği özelleştirebilirsiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  
+ Yeni bir kaynak oluşturduğunuzda, Visual C++ buna, örneğin, IDD_DIALOG1 benzersiz bir ad atar. Bu kaynak kimliği için ilişkili kaynak Düzenleyicisi'ni veya kaynak özellikleri düzenleyerek özelleştirebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window).  
   
- Yeni bir varsayılan kaynak (bir şablona dayalı olmayan bir kaynak) veya sonra desenleri bir kaynak olarak kaynak oluşturabileceğiniz bir [şablon](../windows/how-to-use-resource-templates.md).  
+ Yeni bir varsayılan kaynak (bir şablona dayalı olmayan bir kaynak) veya sonra desenli bir kaynak olarak bir kaynak oluşturmak bir [şablon](../windows/how-to-use-resource-templates.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*
+
+
+## <a name="requirements"></a>Gereksinimler  
   
- **Gereksinimler**  
-  
- Win32  
+Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   

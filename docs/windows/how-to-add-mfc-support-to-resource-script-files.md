@@ -20,43 +20,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 50c0493e630c2b141da1fced6964ffc514c761d4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7237366daeaa71ba423aa069bb634b1b9f6bc667
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879802"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569748"
 ---
 # <a name="how-to-add-mfc-support-to-resource-script-files"></a>Nasıl Yapılır: Kaynak Betik Dosyalarına MFC Desteği Ekleme
-Normalde, Windows kullanarak bir MFC uygulaması oluşturduğunuzda [MFC Uygulama Sihirbazı'nı](../mfc/reference/mfc-application-wizard.md), Microsoft Foundation çekirdek özelliklerini içeren temel bir kümesi (bir kaynak (.rc) komut dosyası dahil olmak üzere) dosyaları sihirbaz oluşturur sınıfları (MFC). MFC dayalı olmayan bir Windows uygulaması için bir .rc dosyası düzenliyorsanız, ancak, MFC çerçevesi belirli aşağıdaki özellikler kullanılabilir değil:  
+Normalde, Windows kullanmaya yönelik bir MFC uygulaması oluşturduğunuzda [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md), Microsoft Foundation'ın temel özelliklerini içeren temel bir kümesi (kaynak betiği (.rc) dosyası da dahil olmak üzere) dosyaları sihirbaz oluşturur sınıfları (MFC). Ancak, MFC'ye dayalı olmayan bir Windows uygulaması için bir .rc dosyasını düzenliyorsanız MFC çerçevesine özgü aşağıdaki özellikler kullanılabilir değildir:  
   
--   MFC kodu sihirbazlar (daha önce adı "[MFC ClassWizard](http://msdn.microsoft.com/en-us/98dc2434-ba93-4e0b-b084-1a4bc26cdf1e)")  
+-   MFC kodu sihirbazları (önceki adı "[MFC ClassWizard](http://msdn.microsoft.com/98dc2434-ba93-4e0b-b084-1a4bc26cdf1e)")  
   
 -   Menü komut istemi dizeleri  
   
--   Birleşik giriş kutusu denetimleri için içeriğini listele  
+-   Birleşik giriş kutusu denetimleri için Liste içeriği  
   
 -   ActiveX denetimi barındırma  
   
- Ancak, bunu olmayan mevcut .rc dosyaları için MFC desteği ekleyebilirsiniz.  
+ Ancak sahip olmayan var olan .rc dosyalarına MFC desteği ekleyebilirsiniz.  
   
-### <a name="to-add-mfc-support-to-rc-files"></a>.Rc dosyaları için MFC desteği ekleme  
+### <a name="to-add-mfc-support-to-rc-files"></a>.Rc dosyalarına MFC desteği eklemek için  
   
 1.  Kaynak betik dosyasını açın.  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  İçinde [kaynak görünümü](../windows/resource-view-window.md), Kaynaklar klasörünü (örneğin, MFC.rc) vurgulayın.  
+2.  İçinde [kaynak görünümü](../windows/resource-view-window.md), (örneğin, MFC.rc) kaynaklar klasörünü vurgulayın.  
   
-3.  İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window)ayarlayın **MFC modu** özelliğine **doğru**.  
+3.  İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window)ayarlayın **MFC modu** özelliğini **True**.  
   
     > [!NOTE]
-    >  Bu bayrağını ayarlamanın yanı sıra .rc dosyası bir MFC projesine bir parçası olmalıdır. Örneğin, yalnızca ayarlama **MFC modu** için **True** Win32 .rc dosyasında üzerinde proje MFC özelliklerinden herhangi birini size olmaz.  
+    >  Bu bayrağı ayarlamanın yanı sıra .rc dosyası bir MFC projesinin bir parçası olmalıdır. Örneğin, yalnızca ayarlamak **MFC modu** için **True** bir .rc dosyasının bir Win32 Proje MFC özelliklerinden hiçbirini size olmaz.  
   
-
-  
- **Gereksinimler**  
+## <a name="requirements"></a>Gereksinimler  
   
  MFC  
   

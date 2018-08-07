@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9a63e7ddbf2528b78eac7761bbcf4891f31cc886
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: de0f68ee3e27f2ac3a7f87e64489a05a16dcdc91
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882634"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571418"
 ---
 # <a name="eventevent-constructor-windows-runtime-c-template-library"></a>Event::Event Yapıcı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)
 Olay sınıfının yeni bir örneğini başlatır.  
@@ -37,8 +37,8 @@ WRL_NOTHROW Event(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `h`  
- Bir olaya işleyin. Varsayılan olarak, `h` için başlatılan `nullptr`.  
+ *h*  
+ Bir olay tanıtıcısı olarak ekleyin. Varsayılan olarak, *h* değerine ayarlanır **nullptr**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

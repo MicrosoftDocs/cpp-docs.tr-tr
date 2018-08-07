@@ -17,34 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c838f057d9c5e59193d0578fe8aa871b1b75ee9d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 11ec7cf883fe8c9454cf538efc0835b9c77b1f92
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873423"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569992"
 ---
 # <a name="defaultvalue"></a>defaultvalue
-Yazılı isteğe bağlı bir parametre için varsayılan bir değer belirtimi sağlar.  
+Belirtilmiş bir isteğe bağlı parametre için bir varsayılan değer belirtimi sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [ defaultvalue= value ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *value*  
- Parametresi için varsayılan değer.  
+ Parametre için varsayılan değer.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Defaultvalue** C++ özniteliğine sahip ile aynı işlevselliği [defaultvalue](http://msdn.microsoft.com/library/windows/desktop/aa366793) MIDL özniteliği.  
+ **Defaultvalue** C++ özniteliği ile aynı işlevlere sahip [defaultvalue](http://msdn.microsoft.com/library/windows/desktop/aa366793) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod bir arabirim yöntemini kullanarak gösterir **defaultvalue** özniteliği:  
+ Aşağıdaki kod, bir arabirim yöntemini kullanarak göstermektedir **defaultvalue** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_defaultvalue.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -72,18 +71,18 @@ __interface IFireTabCtrl : IDispatch {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Parametre arabirimi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Parametre arabirimi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Parametre öznitelikleri](../windows/parameter-attributes.md)   
- [Çıkışı](../windows/out-cpp.md)   
+ [Çıkış](../windows/out-cpp.md)   
  [retval](../windows/retval.md)   
  [İçinde](../windows/in-cpp.md)   
  [pointer_default](../windows/pointer-default.md)   
- [Benzersiz](../windows/unique-cpp.md)   
+ [benzersiz](../windows/unique-cpp.md)   

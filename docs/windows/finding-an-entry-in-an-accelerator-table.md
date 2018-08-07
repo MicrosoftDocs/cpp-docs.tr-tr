@@ -16,28 +16,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 53cafe8533eac024f07482563ba2c24183963978
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 45f02bff270c7049e6207d797ed2d2ca5ae339f2
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873215"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571382"
 ---
 # <a name="finding-an-entry-in-an-accelerator-table"></a>Hızlandırıcı Tablosunda Giriş Bulma
-### <a name="to-find-an-entry-in-an-open-accelerator-table"></a>Açık Hızlandırıcı tablosunda bir giriş bulmak için  
+### <a name="to-find-an-entry-in-an-open-accelerator-table"></a>Açık Hızlandırıcı tablosunda giriş aramak için  
   
-1.  Hızlandırıcı tablosunu simgesini çift tıklatarak açın [kaynak görünümü](../windows/resource-view-window.md).  
+1.  Hızlandırıcı tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Sütunun içeriğine alfabetik olarak sıralamak için sütun head'ı tıklatın. Örneğin, **kimliği** tüm kimliklerini Hızlandırıcı tablosunda alfabetik olarak görüntülemek için.  
+2.  Bir sütunun içeriğine alfabetik olarak sıralamak için sütun head tıklayın. Örneğin, **kimliği** Hızlandırıcı tablonuzdaki tüm kimlikleri alfabetik olarak görüntülenecek.  
   
- Ardından listeyi tarayabilir ve girişini bulun.  
+ Listenin tarama ve girişini bulun.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- **Gereksinimler**  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   

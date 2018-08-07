@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4461004a1681d9095449c51fb9cb3973d5017693
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2757589509e4a2b091c5057ef2065866a8829494
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881315"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570427"
 ---
 # <a name="eventtargetarray-class"></a>EventTargetArray Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,7 +36,7 @@ class EventTargetArray : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::Run
 ## <a name="remarks"></a>Açıklamalar  
  Olay işleyicileri dizisini temsil eder.  
   
- İlişkili olay işleyicileri bir [EventSource](../windows/eventsource-class.md) nesne korumalı EventTargetArray veri üyesi depolanır.  
+ İlişkili olay işleyicileri bir [EventSource](../windows/eventsource-class.md) nesnesi depolanır, korumalı bir **EventTargetArray** veri üyesi.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -44,17 +44,17 @@ class EventTargetArray : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::Run
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[EventTargetArray::EventTargetArray Oluşturucusu](../windows/eventtargetarray-eventtargetarray-constructor.md)|EventTargetArray sınıfı yeni bir örneğini başlatır.|  
-|[EventTargetArray::~EventTargetArray Yıkıcısı](../windows/eventtargetarray-tilde-eventtargetarray-destructor.md)|Geçerli EventTargetArray sınıfı deinitializes.|  
+|[EventTargetArray::EventTargetArray Oluşturucusu](../windows/eventtargetarray-eventtargetarray-constructor.md)|Yeni bir örneğini başlatır **EventTargetArray** sınıfı.|  
+|[EventTargetArray::~EventTargetArray Yıkıcısı](../windows/eventtargetarray-tilde-eventtargetarray-destructor.md)|Geçerli başlatılmasını geri alır **EventTargetArray** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[EventTargetArray::AddTail Metodu](../windows/eventtargetarray-addtail-method.md)|Belirtilen olay işleyicisi olay işleyicileri iç dizisi sonuna ekler.|  
-|[EventTargetArray::Begin Metodu](../windows/eventtargetarray-begin-method.md)|Olay işleyicileri iç dizisinde ilk öğe adresini alır.|  
-|[EventTargetArray::End Metodu](../windows/eventtargetarray-end-method.md)|Olay işleyicileri iç dizide son öğe adresini alır.|  
-|[EventTargetArray::Length Metodu](../windows/eventtargetarray-length-method.md)|Olay işleyicileri iç dizisinde geçerli öğe sayısını alır.|  
+|[EventTargetArray::AddTail Metodu](../windows/eventtargetarray-addtail-method.md)|Belirtilen olay işleyicisi, olay işleyicileri iç dizi sonuna ekler.|  
+|[EventTargetArray::Begin Metodu](../windows/eventtargetarray-begin-method.md)|Olay işleyicilerini iç dizideki ilk öğenin adresi alır.|  
+|[EventTargetArray::End Metodu](../windows/eventtargetarray-end-method.md)|Son öğenin adresi olay işleyicileri içinde iç dizisini alır.|  
+|[EventTargetArray::Length Metodu](../windows/eventtargetarray-length-method.md)|Olay işleyicilerini iç dizisinde geçerli öğe sayısını alır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `EventTargetArray`  

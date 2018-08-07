@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kaynakları derleme zamanında dahil | Microsoft Docs'
+title: 'Nasıl yapılır: derleme sırasında kaynak ekleme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -23,43 +23,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 765d78ef5371015fdce3e505e7a2454c29c6c97e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 856d448b096910c322750eccc7447689b08b328e
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880159"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571350"
 ---
 # <a name="how-to-include-resources-at-compile-time"></a>Nasıl Yapılır: Derleme Sırasında Kaynak Ekleme
-Normalde kolay ve tüm kaynakların bir kaynak (.rc) komut dosyasında varsayılan düzenleme çalışmak uygun olur. Ancak, kaynakları diğer dosyalar geçerli projenize derleme zamanında bunları listeleyerek ekleyebileceğiniz **derleme zamanı yönergeleri** kutusunda [kaynağını içeren iletişim kutusunu](../windows/resource-includes-dialog-box.md).  
+Normalde tüm kaynaklar bir kaynak betiği (.rc) dosyasında varsayılan düzenini çalışmak daha kolay olur. Ancak, kaynaklar diğer dosyalar geçerli projenizi derleme zamanında bunları listeleyerek ekleyebilirsiniz **derleme zamanı yönergeleri** kutusunda [kaynak içerikleri iletişim kutusu](../windows/resource-includes-dialog-box.md).  
   
- Ana .rc dosyası dışında bir dosyada kaynakları yerleştirmek için birkaç nedeni vardır:  
+ Ana .rc dosyasının farklı bir dosyadaki kaynakları yerleştirmek için birkaç nedeni vardır:  
   
--   .Rc dosyasını kaydettiğinizde, silinecek değil kaynak deyimleri açıklamaları eklemek için.  
+-   .Rc dosyasını kaydederken, silinecek değil kaynak deyimleri için yorum eklemek için.  
   
-     Kaynak düzenleyicileri .rc veya resource.h dosyaları doğrudan okuyamadı. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derler. Bu dosyayı bir derleme adımdır ve yalnızca simgesel verileri depolar. İşlem ile normal bir derleme gibi bilgileri (örneğin, Yorumlar) sembolik değil derleme işlemi sırasında göz ardı edilir. .Aps dosya .rc dosyasıyla out eşitlenmiş alır her .rc dosyasını yeniden oluşturur (kaydettiğinizde, örneğin, Kaynak Düzenleyici .rc dosyası ve resource.h dosyası geçersiz kılar). Kaynaklardaki değişiklikleri .rc dosyasında eklenen kalır ancak .rc dosyanın üzerine sonra açıklamaları her zaman kaybolur.  
+     Kaynak düzenleyicileri .rc veya resource.h dosyaları doğrudan okunmaz. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derlenir. Bu dosya, bir derleme adımdır ve yalnızca sembolik verileri depolar. (Örneğin, açıklamalar) sembolik değil bilgi işlem ile normal bir derleme olarak derleme işlemi sırasında göz ardı edilir. .Rc dosyasıyla .aps dosyası zaman uyumsuz olarak alır her .rc dosyası yeniden oluşturuldu (kaydettiğinizde, örneğin, kaynak düzenleyicisini .rc dosyasını ve resource.h dosyasını geçersiz kılar). Herhangi bir değişiklik kaynaklardaki .rc dosyasına eklenen kalır ancak .rc dosyasının üzerine sonra açıklamalar her zaman kaybolacak.  
   
--   Zaten geliştirilen ve test kaynakları eklemek ve daha fazla değişiklik gerekmez. (Dahil edilen ancak .rc uzantı olmayan herhangi bir dosya kaynak düzenleyicileri tarafından düzenlenebilir olmaz.)  
+-   Zaten geliştirdiğinizde ve test kaynakları içerecek şekilde ve daha fazla değişiklik gerekmez. (Dahil edilir, ancak bir .rc uzantısı yoksa tüm dosyaları kaynak düzenleyicileri tarafından düzenlenebilir olmayacaktır.)  
   
--   Birkaç farklı proje tarafından kullanılmakta olan veya kaynak kodu sürüm denetimi sistemi parçası olan ve böylece değişikliklerin tüm projeleri burada etkiler merkezi bir konumda bulunmalıdır kaynakları eklemek için.  
+-   Birkaç farklı proje tarafından kullanılmakta olan veya, bir kaynak kod sürüm denetimi sisteminin bir parçası olan ve bu nedenle değişiklikleri tüm projeleri burada etkiler, merkezi bir konumda bulunmalıdır kaynakları dahil etmektir.  
   
--   Özel bir biçimde olan kaynaklar (örneğin, RCDATA kaynakları) eklemek için. RCDATA kaynakları özel gereksinimleri olabilir. Örneğin, bir ifade nameID alanı için bir değer olarak kullanamaz. Bkz: [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] daha fazla bilgi için.  
+-   Özel bir biçimde kaynakları (örneğin, RCDATA kaynaklar) içerecek şekilde. RCDATA kaynaklar özel gereksinimlerine sahip olabilir. Örneğin, bir ifade Nameıd alan için bir değer olarak kullanamazsınız. Bkz: [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] daha fazla bilgi için belgelere bakın.  
   
- Bu koşulların herhangi biri karşılayan mevcut .rc dosyalarınızda bölümleri varsa, bölümler birinde yerleştirmelisiniz veya ayrı .rc dosyaları ve bunları kullanarak projesi dahil daha fazla [kaynağını içeren iletişim kutusunu](../windows/resource-includes-dialog-box.md). *Projectname*yeni bir proje \res alt dizininde oluşturulan .rc2 dosyası bu amaç için kullanılır.  
+ Bölümler Bu koşullardan biri karşılaması, var olan bir .rc dosyası varsa, biri bölümlerde yerleştirmeniz gerekir veya daha fazla ayrı .rc dosyaları ve bunları kullanarak projenize dahil [kaynak içerikleri iletişim kutusu](../windows/resource-includes-dialog-box.md). *Projectname*.rc2 dosya yeni bir proje \res alt dizinde oluşturulur, bu amaçla kullanılır.  
   
-### <a name="to-include-resources-in-your-project-at-compile-time"></a>Kaynakları derleme zamanında projenize eklemek için  
+### <a name="to-include-resources-in-your-project-at-compile-time"></a>Kaynakları projenizde, derleme zamanında dahil etmek için  
   
-1.  Kaynak betik dosyasını benzersiz bir dosya adı ile kaynakları yerleştirin. Kullanmayın *projectname*.rc, bu ana kaynak komut dosyası için kullanılan dosya adı olduğundan.  
+1.  Benzersiz bir dosya adı ile kaynak betik dosyasını kaynakları yerleştirin. Kullanmayın *projectname*.rc, çünkü bu ana kaynak betik dosyası için kullanılan dosya adı.  
   
-2.  .Rc dosyaya sağ tıklayın (içinde [kaynak görünümü](../windows/resource-view-window.md)) ve **kaynağını içeren** kısayol menüsünden.  
+2.  .Rc dosyasına sağ tıklayın (içinde [kaynak görünümü](../windows/resource-view-window.md)) seçip **kaynak içerikleri** kısayol menüsünden.  
   
-3.  İçinde **derleme zamanı yönergeleri** kutusunda, eklemek [#include](../preprocessor/hash-include-directive-c-cpp.md) derleyici yönergesi geliştirme ortamında ana kaynak dosyasında yeni kaynak dosyası içerir.  
+3.  İçinde **derleme zamanı yönergeleri** kutusunda [#include](../preprocessor/hash-include-directive-c-cpp.md) ana kaynak dosyasıyla geliştirme ortamındaki yeni kaynak dosyası eklemek için derleyici yönergesi.  
   
-     Bu şekilde bulunan dosyalar kaynaklarında bir bölümü, yürütülebilir bir dosyanın derleme zamanında yapılır. Projenizin ana .rc dosyada çalışırken düzenleme veya değiştirilmesi için doğrudan kullanılamaz. Dahil edilen .rc dosyaları ayrı olarak açmanız gerekir. Dahil edilen ancak .rc uzantı olmayan herhangi bir dosya kaynak düzenleyicileri tarafından düzenlenebilir olmaz.  
+     Bu şekilde dahil dosyalarındaki kaynaklar, yürütülebilir dosya, derleme zamanında yapılır. Projenizin ana .rc dosyası üzerinde çalışırken bunlar doğrudan düzenlemek veya değişiklik için kullanılabilir değildir. Ayrı olarak eklenen .rc dosyası açmanız gerekir. Dahil edilir, ancak bir .rc uzantısı yoksa tüm dosyaları kaynak düzenleyicileri tarafından düzenlenebilir olmayacaktır.  
   
-
-  
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   
