@@ -17,34 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 81a3e45c5636fd193b7880e093711b5cc584bf99
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e661e911cc0dd583f2ce079f8ac047a354fa596f
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879012"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570937"
 ---
 # <a name="helpstring"></a>helpstring
-Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir.  
+Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ helpstring(  
+[ helpstring(  
    "string"  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `string`  
- Yardım dizesi metin.  
+### <a name="parameters"></a>Parametreler  
+ *string*  
+ Yardım dizesi metni.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Helpstring** C++ özniteliğine sahip ile aynı işlevselliği [helpstring](http://msdn.microsoft.com/library/windows/desktop/aa366856) MIDL özniteliği.  
+ **Helpstring** C++ özniteliği ile aynı işlevlere sahip [helpstring](http://msdn.microsoft.com/library/windows/desktop/aa366856) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [defaultvalue](../windows/defaultvalue.md) nasıl kullanılacağına ilişkin bir örnek **helpstring**.  
+ Örneğin bakın [defaultvalue](../windows/defaultvalue.md) nasıl kullanılacağına ilişkin bir örnek **helpstring**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -52,12 +51,12 @@ Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirti
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`, `typedef`, **sınıfı**, yöntemi, özelliği|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

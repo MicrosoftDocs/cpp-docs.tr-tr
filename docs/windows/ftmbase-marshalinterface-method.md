@@ -1,5 +1,5 @@
 ---
-title: Ftmbase::marshalınterface yöntemi | Microsoft Docs
+title: Ftmbase::marshalınterface metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc22b83aee62b03ec5e664d08440b00718325272
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ff0c1a5e41dfe46f2d88aeeb3093dbc9ee4d4005
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874622"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570063"
 ---
 # <a name="ftmbasemarshalinterface-method"></a>FtmBase::MarshalInterface Metodu
-Bazı istemci işleminde proxy nesneyi başlatmak için gerekli olan veriler bir akışa yazar.  
+Bir akışa bir proxy nesnesi içinde bazı istemci işlemini başlatmak için gerekli verileri yazar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,35 +40,35 @@ STDMETHODIMP MarshalInterface(
 ) override;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `pStm`  
- Hazırlama sırasında kullanılacak akış işaretçi.  
+### <a name="parameters"></a>Parametreler  
+ *pStm*  
+ Hazırlama sırasında kullanılmak üzere stream işaretçisi.  
   
- `riid`  
- Arabirim sıralanması tanıtıcısı başvuru. Bu arabirim IUnknown arabiriminden türetilmiş olmalıdır.  
+ *riid*  
+ Sıralanması arabirimi tanımlayıcısını başvuru. Bu arabirim nesnesinden türetilmesi `IUnknown` arabirimi.  
   
- `pv`  
- Arabirim işaretçisi sıralanması işaretçi; Arayan istenen arabirimine bir işaretçi yoksa NULL olabilir.  
+ *BD*  
+ İşaretçi sıralanması arabirim işaretçisi için; çağıranın istendiği arayüz işaretçisi yoksa NULL olabilir.  
   
- `dwDestContext`  
- Burada belirtilen arabirim iptal edilip hedef bağlamı.  
+ *dwDestContext*  
+ Belirtilen arabirim iptal edilecek olduğu hedef bağlamı.  
   
  Bir veya daha fazla MSHCTX numaralandırma değerlerini belirtin.  
   
- Unmarshaling (MSHCTX_INPROC) geçerli işlem, başka bir Grup ya da geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlemde ortaya çıkabilir.  
+ Unmarshaling, geçerli işlemin (MSHCTX_INPROC) başka bir grup veya geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlemde ortaya çıkabilir.  
   
- `pvDestContext`  
+ *pvDestContext*  
  Gelecekte kullanılmak üzere ayrılmış; sıfır olmalıdır.  
   
- `mshlflags`  
- Sıralanması için verileri geri istemci işlemi iletilmesi olup olmadığını belirtir — normal durum — veya burada alınabileceği birden çok istemciler tarafından genel bir tabloya yazılır.  
+ *mshlflags*  
+ İstemci işlemine aktarılacak veri sıralanması olup olmadığını belirtir: genellikle bu durum — burada da alınabilir birden çok istemci tarafından genel bir tablo yazılamaz veya okunamaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  S_OK  
- Arabirim işaretçisi başarıyla başvuruya.  
+ Arabirim işaretçisi başarılı bir şekilde sıralanır.  
   
  E_NOINTERFACE  
- Belirtilen arabirim desteklenmiyor.  
+ Belirtilen bir arabirim desteklenmiyor.  
   
  STG_E_MEDIUMFULL  
  Akış dolu.  

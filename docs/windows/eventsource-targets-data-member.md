@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a35992a5579bf852323f4c01396fab56542f40cd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e8782d66683d0a242e5321e8e3a0c8ab24b6f358
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871750"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568855"
 ---
 # <a name="eventsourcetargets-data-member"></a>EventSource::targets_ Veri Üyesi
 Bir veya daha fazla olay işleyicileri dizisi.  
@@ -34,7 +34,7 @@ ComPtr<Details::EventTargetArray> targets_;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli EventSource nesne tarafından temsil edilen olay ortaya çıktığında, olay işleyicileri çağırılır.  
+ Zaman geçerli tarafından temsil edilen olay **EventSource** nesne oluşturulur, olay işleyicileri olarak adlandırılır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

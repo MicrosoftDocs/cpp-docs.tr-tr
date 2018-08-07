@@ -1,5 +1,5 @@
 ---
-title: Görüntüyü çevirme (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+title: Çevirme (simgeler için görüntü Düzenleyicisi) görüntü | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,44 +17,43 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4332e1de44682dbd37b67c71bdcc4c107c98a3da
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0cb6c655bdc8da5341a28449a25796ad59e453b4
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873907"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569436"
 ---
 # <a name="flipping-an-image-image-editor-for-icons"></a>Görüntüyü Çevirme (Simgeler İçin Görüntü Düzenleyicisi)
-Çevirebilir veya görüntüye döndürebilirsiniz:  
+Görüntüye Döndür ya da ters çevirin:  
   
--   Özgün yansıtma görüntüsü oluşturun.  
+-   Özgün bir Ayna görüntüsünü oluşturun.  
   
--   Görüntüyü ters açın.  
+-   Görüntü tersyüz açın.  
   
--   Resmi sağa aynı anda 90 derece döndürün.  
+-   Resmi sağa aynı anda 90 derece döndür.  
   
-### <a name="to-flip-the-image-horizontally-mirror-image"></a>Görüntü Yatayda ters çevirmek için (ayna)  
+### <a name="to-flip-the-image-horizontally-mirror-image"></a>Görüntüyü yatay olarak çevrilip çevrilmediği (Ayna görüntüsünü)  
   
 1.  Gelen **görüntü** menüsünde seçin **Yatay Çevir**.  
   
-### <a name="to-flip-the-image-vertically-turn-upside-down"></a>Görüntü Dikeyde ters çevirmek için (ters kapatma)  
+### <a name="to-flip-the-image-vertically-turn-upside-down"></a>Görüntüyü dikey olarak çevrilip çevrilmediği (ters kapatma)  
   
 1.  Gelen **görüntü** menüsünde seçin **Dikey Çevir**.  
   
-### <a name="to-rotate-the-image-90-degrees"></a>Görüntü 90 derece döndürmek için  
+### <a name="to-rotate-the-image-90-degrees"></a>Görüntü 90 derece döndürme  
   
-1.  Gelen **görüntü** menüsünde seçin **90 derece döndürün**.  
+1.  Gelen **görüntü** menüsünde seçin **90 derece döndür**.  
   
     > [!NOTE]
-    >  Aynı zamanda [Hızlandırıcı (kısayol) anahtarları](../windows/accelerator-keys-image-editor-for-icons.md) bu komutların veya kısayol menüsünden (tıklatın sırada görüntü düzenleyicisinde görüntü dışında) komutlara erişmek.  
+    >  Ayrıca [(kısayol) Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md) bu komutların veya kısayol menüsünden (Resim Düzenleyicisi sırada görüntüde dışında tıklayın) komutlara erişin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)   
  [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
-

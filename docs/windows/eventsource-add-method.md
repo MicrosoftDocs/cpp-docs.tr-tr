@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 92af8746b4d2b5ba2f379cc8660b5345b2c5f175
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 90750f965768d5ecda40e074f9a136407613d2d2
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873244"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570395"
 ---
 # <a name="eventsourceadd-method"></a>EventSource::Add Yöntemi
-Olay işleyicileri geçerli EventSource nesne için kümesine tarafından belirtilen temsilci arabirimi temsil olay işleyicisi ekler.  
+Ekler için geçerli olay işleyicileri kümesini belirtilen temsilci arabirimi tarafından temsil edilen olay işleyicisi **EventSource** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,15 +36,15 @@ HRESULT Add(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `delegateInterface`  
- Olay işleyici temsil eden bir temsilci nesnesi için arabirim.  
+### <a name="parameters"></a>Parametreler  
+ *delegateInterface*  
+ Bir olay işleyicisi temsil eden bir temsilci nesnesi için arabirim.  
   
- `token`  
- Bu işlem tamamlandığında olay temsil eden bir tanıtıcı. Parametre olarak bu belirteci kullanın [Remove() kullanılmasına](../windows/eventsource-remove-method.md) olay işleyicisi atmak için yöntem.  
+ *Belirteç*  
+ Bu işlem tamamlandığında, olayı temsil eden bir işleyici. Parametre olarak bu belirteci kullanmasına [foreach()](../windows/eventsource-remove-method.md) olay işleyicisi atmak için yöntemi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

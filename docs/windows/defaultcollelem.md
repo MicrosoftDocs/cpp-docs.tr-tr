@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: da53f10932ffc0696d567bc1140e3e92a609e2c8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 04317a516b94ae5fc70b61cd3ae33269ad437dce
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870916"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569891"
 ---
 # <a name="defaultcollelem"></a>defaultcollelem
-Visual Basic kodu iyileştirme için kullanılır.  
+Visual Basic kod iyileştirme için kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [defaultcollelem]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Defaultcollelem** C++ özniteliğine sahip ile aynı işlevselliği [defaultcollelem](http://msdn.microsoft.com/library/windows/desktop/aa366792) MIDL özniteliği.  
+ **Defaultcollelem** C++ özniteliği ile aynı işlevlere sahip [defaultcollelem](http://msdn.microsoft.com/library/windows/desktop/aa366792) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod bir arabirim yöntemini kullanarak gösterir **defaultcollelem** özniteliği:  
+ Aşağıdaki kod, bir arabirim yöntemini kullanarak göstermektedir **defaultcollelem** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_defaultcollelem.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -62,12 +60,12 @@ __interface IMyForm
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

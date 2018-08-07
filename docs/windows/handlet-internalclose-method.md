@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7b0aef97645d515a03dcf2cab90eedc06f07971c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a54b61902c8994397c7bd6effa74a90d43c7e512
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874151"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568647"
 ---
 # <a name="handletinternalclose-method"></a>HandleT::InternalClose Yöntemi
-Geçerli HandleT nesnesini kapatır.  
+Geçerli kapatır **HandleT** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,10 +34,10 @@ virtual bool InternalClose();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` Geçerli HandleT başarıyla kapattıysanız; Aksi takdirde `false`.  
+ **doğru** varsa geçerli **HandleT** kapalı başarıyla; Aksi takdirde **false**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- InternalClose() korunur.  
+ **InternalClose()** olduğu **korumalı**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

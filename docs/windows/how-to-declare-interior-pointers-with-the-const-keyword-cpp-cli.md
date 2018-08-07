@@ -15,22 +15,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a71de1ab8d0ae081274616d4c22a4d7f39c0bbbd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fdab21e0e8b9ad0b6fb1d58ba7d1bcd7020ffd10
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875051"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568621"
 ---
 # <a name="how-to-declare-interior-pointers-with-the-const-keyword-ccli"></a>Nasıl yapılır: const Anahtar Sözcüğü ile İç İşaretçileri Bildirme (C++/CLI)
-Aşağıdaki örnek nasıl kullanılacağını gösterir `const` iç işaretçi bildirimi.  
+Aşağıdaki örnek nasıl kullanılacağını gösterir **const** iç işaretçiye bildiriminde.  
   
 > [!IMPORTANT]
->  Bu dil özelliği tarafından desteklenen **/CLR** derleyici seçeneği, ancak tarafından **/ZW** derleyici seçeneği.  
+>  Bu dil özelliği tarafından desteklenen `/clr` derleyici seçeneği, ancak tarafından `/ZW` derleyici seçeneği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // interior_ptr_const.cpp  
 // compile with: /clr  
 using namespace System;  

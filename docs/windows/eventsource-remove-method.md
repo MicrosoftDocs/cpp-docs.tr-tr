@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bbf0480252fca342b8a690e93f92ae14ca5e84c0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9dd026158a2bbc76e7a3e195bc5346f65821f2b7
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874388"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569501"
 ---
 # <a name="eventsourceremove-method"></a>EventSource::Remove Yöntemi
-Geçerli EventSource nesneyle ilişkili olay işleyicileri kümesinden tarafından belirtilen olay kaydı belirtecini temsil olay işleyicisi siler.  
+Olay işleyicisi geçerli ile ilişkili olay işleyicileri kümesinden tarafından belirtilen olay kaydı belirtecini temsil siler **EventSource** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,15 +35,15 @@ HRESULT Remove(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `token`  
- Olay işleyici temsil eden bir tanıtıcı. Olay işleyicisi tarafından kaydedildiği durumlarda bu belirteci döndürüldü [Add()](../windows/eventsource-add-method.md) yöntemi.  
+### <a name="parameters"></a>Parametreler  
+ *Belirteç*  
+ Bir olay işleyicisi temsil eden bir tanıtıcı. Olay işleyicisi tarafından kaydedildiğinde bu belirteci döndürüldü [Add()](../windows/eventsource-add-method.md) yöntemi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- EventRegistrationToken yapısı hakkında daha fazla bilgi için Windows çalışma zamanı başvuru belgeleri Windows::Foundation::EventRegistrationToken yapısı konusuna bakın.  
+ EventRegistrationToken yapısı hakkında daha fazla bilgi için bkz. `Windows::Foundation::EventRegistrationToken` yapısı konuda Windows Runtime başvuru belgeleri.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

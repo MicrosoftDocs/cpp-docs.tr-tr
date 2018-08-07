@@ -17,29 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9778f774464e8da003a535e3c4dba0aef6ed24cb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: db09d29f0049152f734ada8a78c510e4424d8dd3
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875285"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569546"
 ---
 # <a name="how-to-specify-include-directories-for-resources"></a>Nasıl Yapılır: Kaynaklar İçin Dizin Eklemeyi Belirtme
 ### <a name="to-specify-include-directories-for-a-specific-rc-file"></a>Belirli bir .rc dosyası için ekleme kodu dizinlerini belirtme  
   
-1.  Çözüm Gezgini'nde .rc dosyasını sağ tıklatın ve seçin **özellikleri** kısayol menüsünden.  
+1.  Çözüm Gezgini'nde .rc dosyasına sağ tıklayıp **özellikleri** kısayol menüsünden.  
   
-2.  İçinde **özellik sayfaları** iletişim kutusu, tıklatın **kaynakları** sol bölmedeki düğüm ardından belirtin ek içeren dizinler **ek içeren dizinler** özellik.  
+2.  İçinde **özellik sayfaları** iletişim kutusu, tıklayın **kaynakları** düğümü sol bölmede, ardından belirtin ek içeren dizinler **ek dizinleri** özellik.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) .NET Framework Geliştirici Kılavuzu. Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynakları dizeleri özelliklerine atama hakkında daha fazla bilgi için bkz: [izlenecek yol: kullanarak kaynakları yerelleştirme ASP.NETile](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) .NET Framework Geliştirici Kılavuzu'nda. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz [Walkthrough: Using Resources for LocalizationASP.NETile](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
- **Gereksinimler**  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak içerikleri iletişim kutusu](../windows/resource-includes-dialog-box.md)   
- [TN035: Visual C++ ile birden çok kaynak dosya ve üstbilgi dosyası kullanma](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)   
+ [TN035: Visual C++ birden çok kaynak dosya ve üstbilgi dosyası kullanma](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)   
  [Semboller: Kaynak tanımlayıcılar](../windows/symbols-resource-identifiers.md)   
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   
  [Kaynak Düzenleyicileri](../windows/resource-editors.md)

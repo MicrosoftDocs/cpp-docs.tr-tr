@@ -17,37 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 67b71639fc0b7d0039f5665d2cc187191ac14baf
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 48c4a645456e3b3c0556dfed268ce911e5799fc3
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874609"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569423"
 ---
 # <a name="export"></a>dışarı aktar
-Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.  
+Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [export]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Verme** C++ öznitelik .idl dosyasında yerleştirilecek ve ardından herhangi bir dil ile kullanmak için kullanılabilir hale getirir ikili ile uyumlu bir biçimde türü kitaplığında kullanılabilir olması için bir veri yapısı neden olur.  
+ **Dışarı** C++ öznitelik, bir veri yapısı .idl dosyasına yerleştirilmesini ve herhangi bir dil ile kullanmak için kullanılabilir hale getirir ikili ile uyumlu bir biçimde tür kitaplığında kullanılabilir olması için neden olur.  
   
- Uygulayamazsınız **verme** sınıfı yalnızca Genel üyeler olsa bile bir sınıfa öznitelik (denk bir `struct`).  
+ Uygulayamazsınız **dışarı** sınıfı yalnızca Genel üyeler olsa bile bir sınıf özniteliği (denk bir **yapı**).  
   
- Adlandırılmamış veriyorsanız `enum`s veya `struct`s, bunlar ile başlayan verilen adları olacaktır **__unnamed *** x*, burada *x* sıralı bir sayıdır.  
+ Adsız dışarı aktarırsanız **enum**s veya **yapı**s, bunlar ile başlayan adlar olacaktır **__unnamed *** x*burada *x* bir sıralı sayı.  
   
- Tür tanımları dışa aktarma için geçerli olan temel türleri, yapılar, birleşimler, numaralandırmalar veya tanımlayıcıları yazın.  Bkz: [typedef](http://msdn.microsoft.com/library/windows/desktop/aa367287) daha fazla bilgi için.  
+ Tür tanımları dışarı aktarma için geçerli olan temel türleri, yapılar, birleşimler, numaralandırmalar veya tanımlayıcıları yazın.  Bkz: [typedef](http://msdn.microsoft.com/library/windows/desktop/aa367287) daha fazla bilgi için.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodu nasıl kullanılacağını gösterir **verme** özniteliği:  
+ Aşağıdaki kod nasıl kullanılacağını gösterir **dışarı** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_export.cpp  
 // compile with: /LD  
 [module(name="MyLibrary")];  
@@ -64,12 +62,12 @@ struct MyStruct {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**birleşim**, `typedef`, `enum`, `struct`, veya `interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**birleşim**, **typedef**, **enum**, **yapı**, veya **arabirimi**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici öznitelikleri](../windows/compiler-attributes.md)   

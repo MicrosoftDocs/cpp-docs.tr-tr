@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6b17749d5f20007e05f181de8f4e069d3fc736f0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: de98932420cf5eb0d5b9b13011044e5bfc7b400d
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872399"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569010"
 ---
 # <a name="ftmbasecreateglobalinterfacetable-method"></a>FtmBase::CreateGlobalInterfaceTable Yöntemi
-Genel arabirim tablosu (GIT) oluşturur.  
+Bir genel arabirim tablosu (GIT) oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,15 +35,15 @@ static HRESULT CreateGlobalInterfaceTable(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `git`  
- Bu işlem tamamlandığında, bir genel arabirim tablo için bir işaretçi.  
+### <a name="parameters"></a>Parametreler  
+ *Git*  
+ Bu işlem tamamlandığında bir genel arabirim tablosu işaretçisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için MSDN Kitaplığı'nda "COM başvurusu" konusunun "COM arabirimleri" konu "IGlobalInterfaceTable" konusuna bakın.  
+ Daha fazla bilgi için MSDN Kitaplığı'ndaki "COM başvuru" konusunun "COM arabirimleri" konu "IGlobalInterfaceTable" bölümüne bakın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** ftm.h  

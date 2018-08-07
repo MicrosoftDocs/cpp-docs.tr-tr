@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 42aca81b3c2a0ad3db652bf9f77c648e503098e2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c0970fbdfd3b7c1885c6291b3a98f8f59775fa59
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873140"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569611"
 ---
 # <a name="handletisvalid-method"></a>HandleT::IsValid Yöntemi
-Geçerli HandleT nesne bir tanıtıcı temsil edip etmediğini gösterir.  
+Belirtir olup olmadığını geçerli **HandleT** nesnesi bir işleyici temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,7 +34,7 @@ bool IsValid() const;
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` HandleT bir tanıtıcı temsil ediyorsa; Aksi takdirde `false`.  
+ **doğru** varsa **HandleT** temsil eden bir işleyici; Aksi takdirde **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

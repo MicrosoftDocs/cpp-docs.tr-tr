@@ -19,44 +19,43 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bb701b91fc1e076dcf4e6540bf8bcaf6141ec6c6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 16f2e9587d3fa9bc9d8472c348e92555b5bbb4bb
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872971"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570863"
 ---
 # <a name="default-c"></a>default (C++)
-Özel veya görüntüleme arabirimi coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.  
+Özel veya dispinterface coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ default(  
+[ default(  
    interface1,  
    interface2  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *interface1*  
- Bir nesne oluşturma komut dosyası ortamlar için kullanıma sunulacaktır varsayılan arabirimi ile tanımlanmış sınıfı temelinde **varsayılan** özniteliği.  
+ *arabirimi1*  
+ Bir nesne oluşturmak, komut dosyası ortamlar için kullanılabilir hale getirilir varsayılan arabirimi ile tanımlanan sınıfın temel **varsayılan** özniteliği.  
   
- Varsayılan arabirim belirtilirse, birinci denetimine arabirimi varsayılan olarak kullanılır.  
+ Herhangi bir varsayılan arabirim belirtilirse, bir kaynak arabirimi ilk geçtiği varsayılan olarak kullanılır.  
   
  *interface2*(isteğe bağlı)  
- Varsayılan kaynak arabirimi. Bu arabirimle belirtmeniz gerekir [kaynak](../windows/source-cpp.md) özniteliği.  
+ Varsayılan kaynak arabirimi. Bu arabirim ile de belirtmeniz gerekir [kaynak](../windows/source-cpp.md) özniteliği.  
   
- Varsayılan kaynak arabirimi olmadan belirtilirse, ilk kaynak arabirimi varsayılan olarak kullanılır.  
+ İlk kaynak arabirimi, hiçbir varsayılan kaynak arabirimi belirtilmezse, varsayılan olarak kullanılır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Varsayılan** C++ özniteliğine sahip ile aynı işlevselliği [varsayılan](http://msdn.microsoft.com/library/windows/desktop/aa366787) MIDL özniteliği. **Varsayılan** özniteliği ile kullanılan de [durumda](../windows/case-cpp.md) özniteliği.  
+ **Varsayılan** C++ özniteliği ile aynı işlevlere sahip [varsayılan](http://msdn.microsoft.com/library/windows/desktop/aa366787) MIDL özniteliği. **Varsayılan** özniteliği ile kullanılan ayrıca [çalışması](../windows/case-cpp.md) özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodda gösterildiği nasıl **varsayılan** bir coclass'ı tanımını belirtmek için kullanılan **ICustomDispatch** varsayılan programlama arabirimi olarak:  
+ Aşağıdaki kodda gösterildiği nasıl **varsayılan** coclass'ı tanımını belirtmek için kullanılan `ICustomDispatch` varsayılan programlama arabirimi olarak:  
   
-```  
+```cpp  
 // cpp_attr_ref_default.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -105,7 +104,7 @@ int main() {
 }  
 ```  
   
- [Kaynak](../windows/source-cpp.md) de öznitelikle nasıl kullanılacağına ilişkin bir örnek **varsayılan**.  
+ [Kaynak](../windows/source-cpp.md) ayrıca özniteliğinin nasıl kullanılacağına ilişkin bir örnek **varsayılan**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -113,12 +112,12 @@ int main() {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`, veri üyesi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass'ı** (uygulandığında **sınıfı** veya `struct`)|  
+|**İçin geçerlidir**|**sınıf**, **yapı**, veri üyesi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

@@ -19,20 +19,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 66eb27b28a1b18942c0a8a9a77a877a2f0b2ef8c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 40f79bc6afe47bfed92d096dace59ef97eed68e1
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878840"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568884"
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
-Tür parametreleri ile bildirilmiş bir işlev buna genel bir işlevdir. Çağrıldığında, gerçek türleri tür parametreleri yerine kullanılır.  
+Genel bir işlev tür parametreleri ile bildirilen bir işlevdir. Gerçek türler, çağrıldığında, tür parametreleri yerine kullanılır.  
   
 ## <a name="all-platforms"></a>Tüm Platformlar  
  **Açıklamalar**  
   
- Bu özellik tüm platformlar için geçerli değildir.  
+ Bu özellik, tüm platformlar için geçerli değildir.  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
  **Açıklamalar**  
@@ -40,12 +40,12 @@ Tür parametreleri ile bildirilmiş bir işlev buna genel bir işlevdir. Çağr�
  Bu özellik, Windows çalışma zamanı'nda desteklenmiyor.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- Tür parametreleri ile bildirilmiş bir işlev buna genel bir işlevdir. Çağrıldığında, gerçek türleri tür parametreleri yerine kullanılır.  
+ Genel bir işlev tür parametreleri ile bildirilen bir işlevdir. Gerçek türler, çağrıldığında, tür parametreleri yerine kullanılır.  
   
- **Sözdizimi**  
+### <a name="syntax"></a>Sözdizimi  
   
 ```  
 [attributes] [modifiers]  
@@ -56,49 +56,49 @@ return-type identifier<type-parameter identifier(s)>
 {function-body}  
 ```  
   
- **Parametreler**  
+### <a name="parameters"></a>Parametreler 
   
  *öznitelikleri* (isteğe bağlı)  
- Ek tanımlayıcı bilgiler. Öznitelikleri özniteliklerinin ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
+ Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
   
  *değiştiriciler* (isteğe bağlı)  
- Statik gibi işlev için değiştiricisi.  `virtual` sanal yöntemler genel olmayabilir olduğundan izin verilmiyor.  
+ Statik gibi işlevine yönelik bir değiştirici.  **Sanal** sanal yöntem genel olamaz bu yana izin verilmez.  
   
  *dönüş türü*  
- Yöntem tarafından döndürülen tür. Dönüş türü void ise, hiçbir değer döndürmeyen gereklidir.  
+ Yöntem tarafından döndürülen tür. Dönüş türü void ise, dönüş değeri gereklidir.  
   
- *Tanımlayıcı*  
+ *tanımlayıcı*  
  İşlev adı.  
   
- *tür parametresi tanımlayıcıları*  
+ *tür-parametresi tanımlayıcıları*  
  Tanımlayıcıları virgülle ayrılmış listesi.  
   
- *Resmi parametreleri* (isteğe bağlı)  
+ *Resmi-parametreler* (isteğe bağlı)  
  Parametre listesi.  
   
- *tür parametresi kısıtlamaları tümceler*  
- Bu tür bağımsız değişkeni kullanılabilir türler kısıtlamalarını belirler ve belirtilen form sürer [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
+ *tür parametresi kısıtlamaları tümceleri*  
+ Bu tür bağımsız değişkenleri kullanılan türler üzerindeki kısıtlamaları belirtir ve belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
   
  *işlev gövdesi*  
- Tür parametresi tanımlayıcı başvurabilir yönteminin gövdesi.  
+ Tür parametresi tanımlayıcılarına yönlendirebiliriz Yöntemin gövdesi.  
   
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
- Genel işlevler genel tür parametresi ile bildirilen işlevlerdir. Bunlar bir sınıf veya yapı veya tek başına işlevleri yöntemlerinde olabilir. Tek bir genel bildirimde örtük olarak yalnızca genel tür parametresi için farklı bir gerçek türü değiştirme değerinde farklı işlevler ailesi bildirir.  
+ Genel tür parametresi ile bildirilen işlevlerle genel işlevlerdir. Bunlar, bir sınıf veya yapı veya tek başına işlevleri yöntemleri olabilir. Tek bir genel bildirimi, genel tür parametresi için farklı bir gerçek tür değiştirmedeki yalnızca farklı işlevler ailesini örtük olarak bildiriyor.  
   
- Visual C++'da, sınıf veya yapı oluşturucuları genel tür parametreleri ile bildirilmemiş.  
+ Visual C++'da, sınıf veya yapı oluşturucuları genel tür parametreleri ile bildirilemez.  
   
- Çağrıldığında, genel tür parametresi geçerli bir tür değiştirilir. Gerçek tür, bir şablon işlev çağrısı için benzer bir sözdizimi kullanılarak açılı ayraç içinde açıkça belirtilebilir. Türü parametresiz çağırdıysanız, derleyici işlev çağrısında sağlanan parametrelerinden gerçek türünü türetme dener. İstenen tür bağımsız değişkeni kullanılan parametreler anlaşılamıyor, derleyici bir hata bildirir.  
+ Çağrıldığında, genel tür parametresi geçerli bir tür tarafından değiştirilir. Gerçek tür açıkça bir şablonu işlev çağrısı için benzer bir sözdizimi kullanarak açılı köşeli ayraçlar içindeki belirtilebilir. Tür parametreleri çağrılırsa, derleyici işlev çağrısında belirtilen parametreler gerçek türünden türetme dener. Kullanılan parametreler hedeflenen tür bağımsız değişkeni anlaşılamıyor, derleyici bir hata rapor eder.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
  **Örnek**  
   
  Aşağıdaki kod örneği, genel bir işlev gösterir.  
   
-```  
+```cpp  
 // generics_generic_function_1.cpp  
 // compile with: /clr  
 generic <typename ItemType>  
@@ -131,9 +131,9 @@ int main() {
   
  **Örnek**  
   
- Genel işlevler imza veya parametre sayısı, üzerinde bir işlev türü parametre sayısı bazında aşırı yüklenmiş. Ayrıca, bazı tür parametrelerinde işlevler farklı sürece genel işlevler ile aynı ada sahip genel olmayan işlevleri aşırı yüklenebilir. Örneğin, aşağıdaki işlevleri aşırı yüklenebilir:  
+ Genel İşlevler, imza veya parametre, üzerinde bir işlev türü parametre sayısı bazında aşırı yüklenebilir. Ayrıca, bazı tür parametrelerinde işlevleri farklı olduğu sürece genel işlevleri ile genel olmayan işlevler aynı ada sahip aşırı yüklenebilir. Örneğin, aşağıdaki işlevleri aşırı yüklenebilir:  
   
-```  
+```cpp  
 // generics_generic_function_2.cpp  
 // compile with: /clr /c  
 ref struct MyClass {  
@@ -149,9 +149,9 @@ ref struct MyClass {
   
  **Örnek**  
   
- Aşağıdaki örnek genel işlevi bir dizi ilk öğe bulmak için kullanır. Bunu bildirir `MyClass`, temel sınıfından devralan `MyBaseClass`. `MyClass` Genel bir işlev içeriyor `MyFunction`, başka bir genel işlevi, çağıran `MyBaseClassFunction`, taban sınıf içinde. İçinde **ana**, genel işlevi `MyFunction`, farklı tür bağımsız değişkenleri kullanılarak çağrılır.  
+ Aşağıdaki örnek, bir dizideki ilk öğeyi bulmak için genel bir işlev kullanır. Bunu bildirir `MyClass`, taban sınıfından devralan `MyBaseClass`. `MyClass` Genel bir işlev içeriyor `MyFunction`, başka bir genel işlev çağrıları `MyBaseClassFunction`, temel sınıf içerisinde. İçinde `main`, alan genel işlevin `MyFunction`, farklı tür bağımsız değişkeni kullanılarak çağrılır.  
   
-```  
+```cpp  
 // generics_generic_function_3.cpp  
 // compile with: /clr  
 using namespace System;  

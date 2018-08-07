@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kopyalarken dilini veya koşulunu bir kaynağın değiştirme | Microsoft Docs'
+title: 'Nasıl yapılır: kopyalarken dilini veya koşulunu bir kaynağı değiştirme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,41 +18,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fcddbc0bb5a2afe807cbe8ca7643a831c28ad50f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0681a5e0c88f44d5616724f5564660ecb05fbdc3
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880143"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570502"
 ---
 # <a name="how-to-change-the-language-or-condition-of-a-resource-while-copying"></a>Nasıl Yapılır: Kopyalarken Kaynağın Dilini veya Koşulunu Değiştirme
-Bir kaynak olarak kopyalanırken dili özelliği veya koşul özelliği veya her ikisini de değiştirebilirsiniz.  
+Bir kaynak olarak kopyalarken, kendi dil özelliği veya koşul özelliğini veya her ikisi de değiştirebilirsiniz.  
   
--   Kaynak dili tam olarak bunu, kaynak dilini tanımlar. Bu tarafından kullanılan [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) kendisi için aramanız kaynak tanımlamaya yardımcı olmak için. (Ancak, kaynakları her metne, örneğin, Japonca klavyede yalnızca çalışabilir Hızlandırıcıları veya yalnızca yerelleştirilmiş Çince için uygun olacak bir bit eşlem derlemeler ilişkili olmayan dil, vb. için farklılıklar olabilir.)  
+-   Kaynağın dilini yalnızca, kaynak için dil tanımlar. Tarafından kullanılan bu [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) , aradığınız kaynak belirlemenize yardımcı olması için. (Ancak, kaynakları farklar her metne yalnızca Japonca klavyede işe yarayabilir Hızlandırıcıları ya da yalnızca yerelleştirilmiş Çince uygun olacağı bir bit eşlem oluşturur Örneğin, ilişkili olmayan dil, vb. olabilir.)  
   
--   Bir kaynağı tanımlayan bir koşul altında bu belirli kaynak kullanılacak kopyasıdır tanımlı bir simge durumdur.  
+-   Bir kaynağı tanımlayan bir koşul altında kullanılacak bu belirli kaynak kopyası olan bir tanımlanmış sembol durumdur.  
   
- Dil ve kaynak durumunu çalışma penceresinde kaynak adından sonra parantez içinde gösterilmektedir. Bu örnekte kendi dili olarak Fince IDD_AboutBox adlı kaynak kullanıyor ve XX33 kendi durumdur.  
+ Dil ve kaynak durumunu çalışma alanı penceresini kaynak adından sonra parantez içinde gösterilmektedir. Bu örnekte, dil Fince IDD_AboutBox adlı kaynağın kullanıyor ve XX33 kendi durumdur.  
   
 ```  
 IDD_AboutBox (Finnish - XX33)  
 ```  
   
-### <a name="to-copy-an-existing-resource-and-change-its-language-or-condition"></a>Mevcut bir kaynağı kopyalayıp kendi dilini veya koşulunu değiştirme  
+### <a name="to-copy-an-existing-resource-and-change-its-language-or-condition"></a>Mevcut bir kaynağı kopyalayın ve kendi dilini veya koşulunu değiştirme  
   
-1.  .Rc dosya ya da buna [kaynak görünümü](../windows/resource-view-window.md) penceresinde, kopyalamak istediğiniz kaynak sağ tıklayın.  
+1.  .Rc dosyasının veya [kaynak görünümü](../windows/resource-view-window.md) penceresi, kopyalamak istediğiniz kaynağa sağ tıklayın.  
   
 2.  Seçin **Ekle kopyalama** kısayol menüsünden.  
   
-3.  İçinde **Ekle kaynak kopyası** iletişim kutusunda:  
+3.  İçinde **kaynak kopyasını Ekle** iletişim kutusunda:  
   
-    -   İçin **dil** liste kutusunda, dili seçin.  
+    -   İçin **dil** liste kutusunda, bir dil seçin.  
   
-    -   İçinde **koşulu** koşulu yazın.  
+    -   İçinde **koşul** koşul yazın.  
   
-
-  
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   

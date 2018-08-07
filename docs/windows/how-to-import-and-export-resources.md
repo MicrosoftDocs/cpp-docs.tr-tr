@@ -27,45 +27,43 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9e526ab335436730f4132b5b7127ec9079432a4a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 49cdee9cfed3b5694fcea899b9250c5f9dd214b7
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879184"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570486"
 ---
 # <a name="how-to-import-and-export-resources"></a>Nasıl Yapılır: Kaynakları İçeri ve Dışarı Aktarma
-Grafik kaynakları (bit eşlemler, simgeler, imleçler ve araç çubuklarını), HTML dosyaları ve özel kaynakların Visual C++'ta kullanmak için içeri aktarabilirsiniz. Geliştirme ortamı dışında kullanılan dosyaları ayırmak için bir Visual C++ projeden dosyaları aynı türde dışarı aktarabilirsiniz.  
+Grafik kaynakları (bit eşlemler, simgeler, işaretçiler ve araç çubukları), HTML dosyaları ve Visual C++'ta kullanmak için özel kaynaklar içeri aktarabilirsiniz. Geliştirme ortamının dışında kullanılan dosyaları ayırmak için bir Visual C++ projesi aynı dosya türlerini dışarı aktarabilirsiniz.  
   
 > [!NOTE]
->  Dize tabloları hızlandırıcıları ve iletişim kutuları gibi kaynak türleri alınamaz veya değil tek başına dosya türleri olduğundan verilemez.  
+>  Dize tabloları hızlandırıcıları ve iletişim kutuları gibi kaynak türleri içeri aktarılabilir veya tek başına dosya türleri değil olduklarından dışarı.  
   
-### <a name="to-import-an-individual-resource-into-your-current-resource-file"></a>Tek başına bir kaynak geçerli kaynak dosyanızı içe aktarmak için  
+### <a name="to-import-an-individual-resource-into-your-current-resource-file"></a>Tek bir kaynağın geçerli kaynak dosyanızı içeri aktarmak için  
   
-1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), bir kaynak betik düğüme sağ tıklayın (* .rc) kaynak eklemek istediğiniz dosya.  
+1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), düğümü için kaynak betiği (* .rc) bir kaynak eklemek istediğiniz dosya.  
   
-2.  Tıklatın **alma** kısayol menüsünde.  
+2.  Tıklayın **alma** kısayol menüsünde.  
   
-3.  Bulun ve seçerlerse, simge (.ico), imleç (.cur), Html dosyası (.htm) veya içeri aktarmak istediğiniz diğer dosya dosya adını seçin.  
+3.  Bulun ve bit eşlem (.bmp), simge (.ico), imleç (.cur), Html dosyası (.htm) veya içeri aktarmak istediğiniz başka bir dosyayı dosya adını seçin.  
   
-4.  Tıklatın **Tamam** seçili dosyada kaynak eklemek için **kaynak** görünümü.  
+4.  Tıklayın **Tamam** 'teki Seçili dosyanın kaynak eklemek için **kaynak** görünümü.  
   
     > [!NOTE]
-    >  Aynı şekilde hangi belirli kaynak olsun türünü içeri aktarma işlemi works seçtiniz. Alınan kaynak, kaynak türü için doğru düğümü otomatik olarak eklenir.  
+    >  Belirli kaynağı ne olursa olsun aynı şekilde türünü içeri aktarma işlemi works seçtiniz. İçeri aktarılan kaynak otomatik olarak bu kaynak türü için doğru düğümüne eklenir.  
   
-### <a name="to-export-a-bitmap-icon-or-cursor-as-a-separate-file-for-use-outside-of-visual-c"></a>Bir bitmap, simgesi veya imleci (kullanmak için Visual C++ dışında) ayrı bir dosya olarak dışarı aktarmak için  
+### <a name="to-export-a-bitmap-icon-or-cursor-as-a-separate-file-for-use-outside-of-visual-c"></a>Bir bit eşlem, simgesi veya imleci (Visual C++ dışında kullanın için) ayrı bir dosya olarak dışarı aktarmak için  
   
-1.  İçinde **kaynak** görüntülemek için dışarı aktarmak istediğiniz kaynak sağ tıklayın.  
+1.  İçinde **kaynak** görüntülemek için dışa aktarmak istediğiniz kaynağa sağ tıklayın.  
   
-2.  Tıklatın **verme** kısayol menüsünde.  
+2.  Tıklayın **dışarı** kısayol menüsünde.  
   
-3.  İçinde **verme kaynak** iletişim kutusunda, geçerli dosya adı kabul edin veya yeni bir tane yazın.  
+3.  İçinde **kaynağı dışarı aktarın** iletişim kutusunda, geçerli dosya adı kabul edin veya yeni bir tane girin.  
   
-4.  Dosyayı kaydedin ve tıklatın istediğiniz klasöre gidin **verme**.  
+4.  Dosyayı kaydedin ve tıklayın istediğiniz klasöre gidin **dışarı**.  
   
-
-  
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   

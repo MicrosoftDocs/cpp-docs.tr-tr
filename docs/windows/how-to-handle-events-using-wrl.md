@@ -13,33 +13,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a3c1666d1c79414beddc5b5e3ccc03953c92e902
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 287fe57868f1550e2f778bd9122d0d350011084e
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881159"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570639"
 ---
 # <a name="how-to-handle-events-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Olayları İşleme
-Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve Windows çalışma zamanı nesne olayları işlemek için nasıl kullanılacağını gösterir.  
+Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olup bir Windows çalışma zamanı nesnesi olaylarını işlemek için nasıl kullanılacağını gösterir.  
   
- Bu bileşen örneği oluşturur ve bir özellik değeri alır daha basit bir örnek için bkz [nasıl yapılır: Windows çalışma zamanı bileşenini etkinleştirme ve kullanma](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).  
+ Bu bileşenin bir örneğini oluşturur ve bir özellik değeri alan daha temel bir örnek için bkz [nasıl yapılır: bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).  
   
 ## <a name="subscribing-to-and-handling-events"></a>Abone olma ve olayları işleme  
- Aşağıdaki adımlar başlangıç bir `ABI::Windows::System::Threading::IDeviceWatcher` nesne ve olay işleyicileri ilerleme durumunu izlemek için kullanabilirsiniz. `IDeviceWatcher` Arabirimi zaman uyumsuz olarak veya arka planda cihazlar numaralandırır ve aygıtlar eklendiğinde, kaldırıldı veya değiştirildi bildirimi olanak sağlar. [Geri çağırma](../windows/callback-function-windows-runtime-cpp-template-library.md) işlevi olduğundan bu örnek önemli bir kısmını bu arka plan işlemi sonuçlarını işlem olay işleyicileri belirtmenizi sağlar. Tam bir örnek aşağıda verilmiştir.  
+ Aşağıdaki adımlar başlangıç bir `ABI::Windows::System::Threading::IDeviceWatcher` nesne ve olay işleyicilerini ilerleme durumunu izlemek için kullanın. `IDeviceWatcher` Arabirimi zaman uyumsuz olarak veya arka plan cihazları listeleme ve aygıtlar eklendiğinde, kaldırıldı veya değiştirildi, bildirim almak etkinleştirir. [Geri çağırma](../windows/callback-function-windows-runtime-cpp-template-library.md) , arka plan işlemi sonuçlarını işleyen olay işleyicileri belirtmek sağladığından işlev, bu örnekte önemli bir parçası. Eksiksiz bir örnek aşağıda verilmiştir.  
   
 > [!WARNING]
->  Genellikle bir evrensel Windows platformu uygulamasında Windows çalışma zamanı C++ Şablon kitaplığı kullanmasına karşın, bu örnek bir konsol uygulaması çizim için kullanır. Gibi işlevleri `wprintf_s` bir evrensel Windows platformu uygulamadan kullanılabilir değil. Türler ve evrensel Windows platformu uygulamasında kullanabileceğiniz işlevler hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) ve [Win32 ve COM UWP uygulamalar için](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
+>  Genellikle bir evrensel Windows platformu uygulaması içinde Windows çalışma zamanı C++ Şablon kitaplığı kullanırsınız, ancak bu örnek bir konsol uygulaması çizim için kullanılır. Gibi işlevler `wprintf_s` bir evrensel Windows platformu uygulaması kullanılabilir değil. Bir evrensel Windows platformu uygulamasında kullanabileceğiniz işlevleri ve türleri hakkında daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) ve [Win32 ve COM UWP uygulamaları için](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
-1.  İçerir (`#include`) Windows çalışma zamanı, Windows çalışma zamanı C++ Şablon kitaplığı ya da C++ Standart Kitaplığı üstbilgilerini gerekli.  
+1.  İçerir (`#include`) Windows çalışma zamanı, Windows çalışma zamanı C++ Şablon kitaplığı ve standart C++ Kitaplığı üstbilgilerini gerekli.  
   
      [!code-cpp[wrl-consume-event#2](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_1.cpp)]  
   
-     Windows.Devices.Enumeration.h aygıtları numaralandırmak için gereken türleri bildirir.  
+     Windows.Devices.Enumeration.h cihazları listelemek için gerekli türleri bildirir.  
   
-     Kullanan öneririz `using namespace` .cpp dosyanızdaki kodunu daha okunabilir hale getirmek için yönerge.  
+     Öneririz, makineler'den `using namespace` kod daha okunabilir yapmak için .cpp dosyanızdaki yönergesi.  
   
-2.  Uygulamayı yerel değişkenleri bildirin. Bu örnek sayısını numaralandırılmış aygıtlar ve daha sonra olaylarından aboneliği etkinleştirmek kayıt belirteçleri tutar.  
+2.  Uygulama için yerel değişkenleri bildirin. Bu örnek, bir dizi numaralandırılmış cihaz ve daha sonra olaylarından aboneliği etkinleştirmek kayıt belirteçleri sayısını tutar.  
   
      [!code-cpp[wrl-consume-event#7](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_2.cpp)]  
   
@@ -47,52 +47,52 @@ Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve
   
      [!code-cpp[wrl-consume-event#3](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_3.cpp)]  
   
-4.  Oluşturma bir [olay](../windows/event-class-windows-runtime-cpp-template-library.md) ana uygulamanın numaralandırma işlemi tamamlandığında eşitler nesnesi.  
+4.  Oluşturma bir [olay](../windows/event-class-windows-runtime-cpp-template-library.md) ana uygulamasında numaralandırma işlemi tamamlandığında eşitler nesne.  
   
      [!code-cpp[wrl-consume-event#4](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_4.cpp)]  
   
     > [!NOTE]
-    >  Bu olay, bir konsol uygulaması bir parçası olarak yalnızca tanıtım içindir. Bu örnek olay zaman uyumsuz bir işlem önce uygulama çıkar tamamlandığından emin olmak için kullanır. Çoğu uygulamada Zaman uyumsuz işlemleri için genellikle beklemeyen.  
+    >  Bu olay, bir konsol uygulaması bir parçası olarak yalnızca tanıtım içindir. Bu örnek, olayın zaman uyumsuz bir işlemi uygulama çıkışından önce tamamlanmasını sağlamak için kullanır. Çoğu uygulamada genellikle zaman uyumsuz işlemleri için beklemeyin.  
   
-5.  İçin etkinleştirme fabrikası oluşturma `IDeviceWatcher` arabirimi.  
+5.  Bir etkinleştirme fabrikası için oluşturma `IDeviceWatcher` arabirimi.  
   
      [!code-cpp[wrl-consume-event#5](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_5.cpp)]  
   
-     Windows çalışma zamanı tam olarak nitelenmiş adlar türlerini tanımlamak için kullanır. `RuntimeClass_Windows_Devices_Enumeration_DeviceInformation` Parametredir Windows çalışma zamanı tarafından sağlanan ve gerekli çalışma zamanı sınıf adını içeren bir dize.  
+     Windows çalışma zamanı türlerini tanımlamak üzere tam olarak nitelenmiş adlar kullanır. `RuntimeClass_Windows_Devices_Enumeration_DeviceInformation` Parametredir, Windows çalışma zamanı tarafından sağlanan ve gerekli çalışma zamanı sınıf adı içeren bir dize.  
   
-6.  Oluşturma `IDeviceWatcher` nesnesi.  
+6.  Oluşturma `IDeviceWatcher` nesne.  
   
      [!code-cpp[wrl-consume-event#6](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_6.cpp)]  
   
-7.  Kullanım `Callback` abone olmak için işlevi `Added`, `EnumerationCompleted`, ve `Stopped` olaylar.  
+7.  Kullanım `Callback` abone olmak için işlev `Added`, `EnumerationCompleted`, ve `Stopped` olayları.  
   
      [!code-cpp[wrl-consume-event#8](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_7.cpp)]  
   
-     `Added` Olay işleyicisi numaralandırılmış aygıtların sayısını artırır. On aygıtları bulunamadığında numaralandırma işlemi durdurur.  
+     `Added` Olay işleyicisi numaralandırılmış cihaz sayısını artırır. On cihazınız bulunamadığında numaralandırma işlemi durdurur.  
   
-     `Stopped` Olay işleyicisi olay işleyicileri kaldırır ve tamamlama olayını ayarlar.  
+     `Stopped` Olay işleyicisi, olay işleyicilerini kaldırır ve tamamlama olayını ayarlar.  
   
-     `EnumerationCompleted` Olay işleyicisi numaralandırma işlemi durdurur. 10'dan az aygıtları olasılığına Biz bu olayı işleyin.  
+     `EnumerationCompleted` Olay işleyicisi numaralandırma işlemi durdurur. 10'dan az cihazları olasılığına Biz bu olayı işleyin.  
   
     > [!TIP]
-    >  Bu örnek bir lambda ifadesi geri çağırmaları tanımlamak için kullanır. İşlev nesneleri (functors) işlev işaretçileri de kullanabilirsiniz veya [std::function](../standard-library/function-class.md) nesneleri. Lambda ifadeleri hakkında daha fazla bilgi için bkz: [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).  
+    >  Bu örnek, geri çağırmaları tanımlamak için bir lambda ifadesi kullanır. İşlev nesneleri (işlev nesneleri), işlev işaretçileri de kullanabilirsiniz veya [std::function](../standard-library/function-class.md) nesneleri. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).  
   
 8.  Numaralandırma işlemi başlatın.  
   
      [!code-cpp[wrl-consume-event#9](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_8.cpp)]  
   
-9. Numaralandırma işlemi tamamlayın ve ardından bir ileti yazdırmak bekleyin. Tüm `ComPtr` ve RAII nesneleri kapsam bırakın ve otomatik olarak yayımlanmıştır.  
+9. Numaralandırma işlemi tamamlayın ve ardından iletiyi yazdırmak bekleyin. Tüm `ComPtr` ve RAII nesneleri kapsam bırakın ve otomatik olarak yayımlanır.  
   
      [!code-cpp[wrl-consume-event#10](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_9.cpp)]  
   
- Aşağıda, tam bir örnek verilmiştir:  
+ Tam bir örnek aşağıda verilmiştir:  
   
  [!code-cpp[wrl-consume-event#1](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_10.cpp)]  
   
 ## <a name="compiling-the-code"></a>Kod Derleniyor  
- Kodu derlemek için kopyalayın ve ardından bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-events.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
+ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-events.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe wrl tüketen events.cpp runtimeobject.lib**  
+ `cl.exe wrl-consume-events.cpp runtimeobject.lib`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

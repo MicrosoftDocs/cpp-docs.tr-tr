@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: bildirme ve iç işaretçiler ve yönetilen diziler kullanma (C + +/ CLI) | Microsoft Docs'
+title: 'Nasıl yapılır: iç işaretçiler ve yönetilen diziler bildirme ve kullanma (C + +/ CLI) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,24 +16,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 457cec66aaabb01b9c10ccc66a8f9594312195b4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4c02849bc3d1b45ecb6de89e103c51311af31b3c
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875311"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569849"
 ---
 # <a name="how-to-declare-and-use-interior-pointers-and-managed-arrays-ccli"></a>Nasıl yapılır: İç İşaretçiler ve Yönetilen Diziler Bildirme ve Kullanma (C++/CLI)
-Aşağıdaki C + +/ CLI örnek nasıl bildirme ve bir dizi iç işaretçi kullanma gösterir.  
+Aşağıdaki C + +/ CLI örneği bildirme ve bir dizi iç işaretçiye kullanmak nasıl gösterir.  
   
 > [!IMPORTANT]
->  Bu dil özelliği tarafından desteklenen **/CLR** derleyici seçeneği, ancak tarafından **/ZW** derleyici seçeneği.  
+>  Bu dil özelliği tarafından desteklenen `/clr` derleyici seçeneği, ancak tarafından `/ZW` derleyici seçeneği.  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // interior_ptr_arrays.cpp  
 // compile with: /clr  
 #define SIZE 10  
@@ -59,7 +59,7 @@ int main() {
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output  
 1st element in arr holds: 1  
 ipi points to memory address whose value is: 1  
 after incrementing ipi, it points to memory address whose value is: 2  

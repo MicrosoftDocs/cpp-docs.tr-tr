@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4f0c1e47420106651cfe0526d6d212e9819a72ff
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 69f3f2c756d158954676f6fc42941b1b80f4345e
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873257"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569924"
 ---
 # <a name="handletclose-method"></a>HandleT::Close Yöntemi
-Geçerli HandleT nesnesini kapatır.  
+Geçerli kapatır **HandleT** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,9 +34,9 @@ void Close();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli HandleT altını çizen tanıtıcı kapatılır ve HandleT geçersiz duruma ayarlanır.  
+ Geçerli altını tanıtıcı **HandleT** kapatılır ve **HandleT** geçersiz duruma ayarlanır.  
   
- Tanıtıcı düzgün kapatmaz, çağıran iş parçacığında özel durum oluşturulur.  
+ Tanıtıcı düzgün kapatmadığına, çağıran iş parçacığında bir özel durum oluşturulur.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

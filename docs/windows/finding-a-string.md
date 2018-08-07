@@ -18,40 +18,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3763baf0f085dc72040ab22c9efd38e8aa8068f7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c91e9523b063e9decbcb97ce9f5d8229a9c670b2
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875740"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568942"
 ---
 # <a name="finding-a-string"></a>Dize Bulma
-Bir veya daha fazla dizelerini dize tablosunda arayın ve kullanmak [normal ifadeler](/visualstudio/ide/using-regular-expressions-in-visual-studio) ile **dosyalarda Bul** komutu (**Düzenle** menüsü) dizeleri tüm örneklerini bulmak için bir desenle eşleşir.  
+Dize tablosunda bir veya daha fazla dizeleri arayın ve kullanmak [normal ifadeler](/visualstudio/ide/using-regular-expressions-in-visual-studio) ile **dosyalarda Bul** komut (**Düzenle** menüsü) dizeleri tüm örneklerini bulmak için bir desen eşleşmesi.  
   
-### <a name="to-find-a-string-in-the-string-table"></a>Dize tabloda bir dizeyi bulmak için  
+### <a name="to-find-a-string-in-the-string-table"></a>Dize tablosunda bir dizeyi bulmak için  
   
-1.  Dize tablosu simgesini çift tıklatarak açın [kaynak görünümü](../windows/resource-view-window.md).  
+1.  Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Üzerinde **Düzenle** menüsünde tıklatın **Bul ve Değiştir**, ardından **bulmak**.  
+2.  Üzerinde **Düzenle** menüsünde tıklayın **Bul ve Değiştir**, ardından **bulmak**.  
   
-3.  İçinde **Aranan** kutusunda, önceki arama dizesi aşağı açılan listeden seçin veya bulmak istediğiniz dizenin resim yazısı metin ya da kaynak tanımlayıcı yazın.  
+3.  İçinde **Aranan** kutusunda aşağı açılan listeden önceki bir arama dizesi seçin veya bulmak istediğiniz string açıklamalı alt yazı metni ya da kaynak tanımlayıcı yazın.  
   
-4.  Birini seçin **Bul** seçenekleri.  
+4.  Herhangi bir **Bul** seçenekleri.  
   
-5.  Tıklatın **Sonrakini Bul**.  
+5.  Tıklayın **Sonrakini Bul**.  
   
     > [!TIP]
-    >  Normal ifadeler dosyalarını ararken kullanmak için **dosyalarda Bul** komutu. Sağındaki düğmesine tıklayın veya bir desenle eşleşen normal bir ifade türü **Aranan** kutusunu normal arama ifadeleri listesini görüntüleyin. Bu listeden bir ifade seçtiğinizde, arama metin olarak geçmesidir **Aranan** kutusu. Normal ifadeler kullanırsanız, mutlaka **kullanın: normal ifadeler** onay kutusu seçilidir.  
+    >  Normal ifadeler dosya ararken kullanmak için **dosyalarda Bul** komutu. Sağındaki düğmeye tıklayın ya da bir desenle eşleşen normal bir ifade yazın **Aranan** normal arama listesini görüntülemek için kutusu. Bu listeden bir ifade seçtiğinizde, arama metni olarak geçmesidir **Aranan** kutusu. Normal ifadeler kullanırsanız, mutlaka **kullanın: normal ifadeler** onay kutusu seçilidir.  
   
- Kaynakları yönetilen projelere (olanlar ortak dil çalışma zamanı hedef) ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynakları dizeleri özelliklerine atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows Formları yerelleştirme](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme kaynaklarını kullanan](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ Yönetilen projelere kaynak (Bu ortak dil çalışma zamanını hedefleyen) ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows formlarını yerelleştirme](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme için kaynakların kullanarak](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
- **Gereksinimler**  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dize Düzenleyicisi](../windows/string-editor.md)   
-

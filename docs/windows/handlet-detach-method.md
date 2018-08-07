@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 100d215099494c9b2714fd2c42dee69644a5006c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cc11d6be992584adb1ce2075e73d080cc3a43f47
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878469"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569485"
 ---
 # <a name="handletdetach-method"></a>HandleT::Detach Yöntemi
-Temel alınan tutamacını geçerli HandleT nesnesinden keser.  
+Geçerli ayırır **HandleT** , temel alınan tanıtıcısını nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,10 +34,10 @@ typename HandleTraits::Type Detach();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Temel alınan işleci.  
+ Temel alınan tanıtıcısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlem tamamlandığında, geçerli HandleT geçersiz durumuna ayarlanır.  
+ Bu işlem tamamlandığında, geçerli **HandleT** geçersiz duruma ayarlanır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

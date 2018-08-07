@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 444994f046b58fbd54dcd3982836bb7fc4d53ed1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e813ce223bad48aab3807bb01e042190d28aef74
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879691"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568676"
 ---
 # <a name="hidden"></a>gizli
-Öğe var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir.  
+Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [hidden]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Gizli** C++ özniteliğine sahip ile aynı işlevselliği [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL özniteliği.  
+ **Gizli** C++ özniteliği ile aynı işlevlere sahip [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **gizli**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **gizli**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,12 +45,12 @@ ms.locfileid: "33879691"
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`, **sınıfı**, `struct`, yöntemi, özelliği|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass'ı** (uygulandığında **sınıfı** veya `struct`)|  
+|**İçin geçerlidir**|**arabirimi**, **sınıfı**, **yapı**, yöntem, özellik|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

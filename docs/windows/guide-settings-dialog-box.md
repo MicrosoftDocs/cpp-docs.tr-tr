@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7d89a4a7bf0e3a8c9452c5f9d87832b8b31deb6e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 265c6c1931b0e48399039e507be45c73c710142d
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875883"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568897"
 ---
 # <a name="guide-settings-dialog-box"></a>Kılavuz Ayarları İletişim Kutusu
 ## <a name="layout-guides"></a>Düzen kılavuzları  
@@ -36,28 +36,28 @@ ms.locfileid: "33875883"
   
  **Yok**  
   
- Düzen araçlarını gizler.  
+ Düzen Araçları gizler.  
   
  **Cetveller ve Kılavuzlar**  
   
- Etkinleştirildiğinde, cetvelleri Düzen Araçları ekler; kılavuzları Cetveller yerleştirilebilir. Varsayılan kılavuzları sürükleyerek taşınabilir kenar boşlukları olur. Cetveller bir kılavuz yerleştirmek için tıklatın. "Denetimleri üzerinden veya bunları yanındaki taşındıklarında denetimleri Kılavuzlara Daya". Ona iliştirilmiş sonra denetimleri ile bir kılavuz da taşıyın. Bir denetim her tarafında bir Kılavuzu'na bağlı olduğu ve bir kılavuz taşınır denetimi boyutlandırılır.  
+ Etkin olduğunda, düzeni araçları Cetveller ekler; kılavuzları cetvellerin yerleştirilebilir. Varsayılan sürükleyerek taşınabilir kenar boşluklarını kılavuzlardır. Cetvellerin bir kılavuz yerleştirmek için tıklayın. "Denetimleri üzerinden veya bunların yanındaki taşındığında denetimleri Kılavuzlara Daya". Kendisine eklenmiş bir kez denetimleri ile bir kılavuz da taşıyın. Her iki taraftaki bir kılavuz bir denetimin ekli olduğu ve bir kılavuz taşınır, denetimin boyutlandırılır.  
   
  **Kılavuz**  
   
- Düzen kılavuzuna oluşturur. Yeni denetimleri otomatik olarak kılavuza hizalayın.  
+ Düzen kılavuzunu oluşturur. Yeni denetimler kılavuza otomatik olarak uyum sağlar.  
   
 ## <a name="grid-spacing"></a>Kılavuz aralığı  
- Kılavuz aralığı için ayarları iletişim kutusu birimleri (Dlu'lar) görüntüler.  
+ Kılavuz aralığı Ayarları iletişim kutusu birimleri (Dlu'lar) görüntüler.  
   
  **Genişlik: Dlu'lar**  
   
- Düzen kılavuzuna genişliğini Dlu'lar ayarlar. Yatay DLU dört tarafından ayrılmış iletişim kutusu yazı tipi ortalama genişliğini ' dir.  
+ Düzen kılavuzunu genişliğini Dlu'lar ayarlar. Yatay DLU dört tarafından ayrılmış iletişim kutusu yazı tipinin ortalama genişliğidir.  
   
  **Yükseklik: Dlu'lar**  
   
- Düzen kılavuzuna yüksekliğini Dlu'lar ayarlar. Dikey DLU sekiz tarafından ayrılmış iletişim kutusu yazı tipi ortalama yüksekliği olur.  
+ Düzen kılavuzunu yüksekliğini Dlu'lar ayarlar. Dikey DLU sekiz tarafından ayrılmış iletişim kutusu yazı tipi ortalama yüksekliği olur.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
@@ -65,4 +65,3 @@ ms.locfileid: "33875883"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzen kılavuzunu değiştirme](../windows/modifying-the-layout-grid.md)   
  [İletişim Kutusu Düzenleyicisi Durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)
-

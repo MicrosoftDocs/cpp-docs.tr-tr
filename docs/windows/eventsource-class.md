@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b2d466b317927cd8de259637450b68b6aaf13bd5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a98d8997ebfb5b21b3e469b2aacca15cde4a5319
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876520"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570541"
 ---
 # <a name="eventsource-class"></a>EventSource Sınıfı
-Çevik olmayan bir olayı temsil eder. EventSource üye işlevleri eklemek, kaldırmak ve olay işleyicilerini çağırma. Çevik olaylar için kullanın [AgileEventSource](agileeventsource-class.md). 
+Çevik olmayan bir olayı temsil eder. **EventSource** üye işlevleri ekleme, kaldırma ve olay işleyicilerini çağırır. Çevik olaylar için kullanın [AgileEventSource](agileeventsource-class.md). 
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,9 +34,9 @@ template<typename TDelegateInterface>
 class EventSource;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `TDelegateInterface`  
- Olay işleyici temsil eden bir temsilci için arabirim.  
+### <a name="parameters"></a>Parametreler  
+ *TDelegateInterface*  
+ Bir olay işleyicisi temsil eden bir temsilci için arabirim.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -44,24 +44,24 @@ class EventSource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[EventSource::EventSource Oluşturucusu](../windows/eventsource-eventsource-constructor.md)|EventSource sınıfının yeni bir örneğini başlatır.|  
+|[EventSource::EventSource Oluşturucusu](../windows/eventsource-eventsource-constructor.md)|Yeni bir örneğini başlatır **EventSource** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[EventSource::Add Metodu](../windows/eventsource-add-method.md)|Olay işleyicileri geçerli EventSource nesne için kümesine tarafından belirtilen temsilci arabirimi temsil olay işleyicisi ekler.|  
-|[EventSource::GetSize Metodu](../windows/eventsource-getsize-method.md)|Geçerli EventSource nesneyle ilişkili olay işleyicileri sayısını alır.|  
-|[EventSource::InvokeAll Metodu](../windows/eventsource-invokeall-method.md)|Belirtilen bağımsız değişken türleri ve bağımsız değişkenler kullanarak geçerli EventSource nesneyle ilişkili her olay işleyicisini çağırır.|  
-|[EventSource::Remove Metodu](../windows/eventsource-remove-method.md)|Geçerli EventSource nesneyle ilişkili olay işleyicileri kümesinden tarafından belirtilen olay kaydı belirtecini temsil olay işleyicisi siler.|  
+|[EventSource::Add Metodu](../windows/eventsource-add-method.md)|Ekler için geçerli olay işleyicileri kümesini belirtilen temsilci arabirimi tarafından temsil edilen olay işleyicisi **EventSource** nesne.|  
+|[EventSource::GetSize Metodu](../windows/eventsource-getsize-method.md)|Geçerli ile ilişkili olay işleyicileri sayısını alır **EventSource** nesnesi|  
+|[EventSource::InvokeAll Metodu](../windows/eventsource-invokeall-method.md)|Geçerli ile ilgili her olay işleyicisini çağırır **EventSource** belirtilen bağımsız değişken türleri ve bağımsız değişkenleri kullanarak nesne.|  
+|[EventSource::Remove Metodu](../windows/eventsource-remove-method.md)|Olay işleyicisi geçerli ile ilişkili olay işleyicileri kümesinden tarafından belirtilen olay kaydı belirtecini temsil siler **EventSource** nesne.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[EventSource::addRemoveLock_ Veri Üyesi](../windows/eventsource-addremovelock-data-member.md)|Erişim eşitler [targets_](../windows/eventsource-targets-data-member.md) eklerken dizi, kaldırma veya olay işleyicilerini çağırma.|  
+|[EventSource::addRemoveLock_ Veri Üyesi](../windows/eventsource-addremovelock-data-member.md)|Erişimi eşitler [targets_](../windows/eventsource-targets-data-member.md) eklerken dizi, kaldırma veya olay işleyicisi çağırma.|  
 |[EventSource::targets_ Veri Üyesi](../windows/eventsource-targets-data-member.md)|Bir veya daha fazla olay işleyicileri dizisi.|  
-|[EventSource::targetsPointerLock_ Veri Üyesi](../windows/eventsource-targetspointerlock-data-member.md)|Olay işleyicileri bu EventSource için bile eklenmiş durumdayken, kaldırıldı veya çağrılan iç veri üyelerine erişimi eşitler.|  
+|[EventSource::targetsPointerLock_ Veri Üyesi](../windows/eventsource-targetspointerlock-data-member.md)|Bu EventSource için olay işleyicileri bile eklenmiş olsa da kaldırılan veya çağrılan iç veri üyelerine erişimi eşitler.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `EventSource`  
@@ -72,5 +72,5 @@ class EventSource;
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
-[AgileEventSource sınıfı](agileeventsource-class.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)  
+ [AgileEventSource Sınıfı](agileeventsource-class.md)

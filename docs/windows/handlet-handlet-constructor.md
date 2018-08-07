@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a0caad909803a0f73987f3e1132920b0948d8d1b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0f8126d4a31863ab556295946ffc170fc49f7d98
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881903"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569517"
 ---
 # <a name="handlethandlet-constructor"></a>HandleT::HandleT Oluşturucusu
-HandleT sınıfı yeni bir örneğini başlatır.  
+Yeni bir örneğini başlatır **HandleT** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,12 +40,12 @@ HandleT(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `h`  
- Bir tanıtıcı.  
+### <a name="parameters"></a>Parametreler  
+ *h*  
+ Tanıtıcı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucusu bir nesne için geçerli bir tanıtıcı değil bir HandleT nesnesini başlatır. İkinci oluşturucu parametresini yeni bir HandleT nesnesi oluşturur `h`.  
+ İlk Oluşturucu başlatan bir **HandleT** değil bir nesne için geçerli bir tanıtıcı nesnesi. İkinci oluşturucu yeni bir oluşturur **HandleT** parametre nesneden *h*.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

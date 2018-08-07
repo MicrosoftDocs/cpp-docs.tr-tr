@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1fec2f00c40b833cc9a65db1db58920543aa90d7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 82a9bc4000919d2bbe2b8598351d3fe6a4730ba9
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873384"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569036"
 ---
 # <a name="enableif-structure"></a>EnableIf Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -43,22 +43,22 @@ struct EnableIf<true, T>;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
+ *T*  
  Bir tür.  
   
- `b`  
- Boole ifadesi.  
+ *b*  
+ Bir Boolean ifadesi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk şablon parametresi değerlendirilirse ikinci şablon parametresi tarafından belirtilen türde bir veri üyesi tanımlar `true`.  
+ İlk şablon parametresi değerlendirilirse ikinci şablon parametresi tarafından belirtilen türde bir veri üyesi tanımlar **true**.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`type`|Varsa şablon parametresi `b` değerlendiren `true`, kısmi uzmanlığı veri üyesini tanımlar `type` türünde olması `T`.|  
+|`type`|Şablon parametresi *b* değerlendiren **true**, kısmi özelleştirmesi veri üyesi tanımlar `type` türünde olmasını `T`.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `EnableIf`  

@@ -17,34 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 926d0fec27bf323f559ad2fe0dffbd4208b1bf2a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f4f25a8f3d5cc76d1b2b8d9a3d9996449f449466
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876195"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570453"
 ---
 # <a name="helpfile"></a>helpfile
-Tür Kitaplığı Yardım dosyasının adını ayarlar.  
+Bir tür kitaplığı için Yardım dosyasına adını ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ helpfile(  
+[ helpfile(  
    "filename"  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Dosya adı*  
  Yardım konuları içeren dosyanın adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Helpfile** C++ özniteliğine sahip ile aynı işlevselliği [helpfile](http://msdn.microsoft.com/library/windows/desktop/aa366853) MIDL özniteliği.  
+ **Helpfile** C++ özniteliği ile aynı işlevlere sahip [helpfile](http://msdn.microsoft.com/library/windows/desktop/aa366853) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [Modülü](../windows/module-cpp.md) nasıl kullanılacağına ilişkin bir örnek **helpfile**.  
+ Örneğin bakın [Modülü](../windows/module-cpp.md) nasıl kullanılacağına ilişkin bir örnek **helpfile**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -52,12 +51,12 @@ Tür Kitaplığı Yardım dosyasının adını ayarlar.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`, `typedef`, **sınıfı**, yöntemi, özelliği|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntemi **özelliği**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

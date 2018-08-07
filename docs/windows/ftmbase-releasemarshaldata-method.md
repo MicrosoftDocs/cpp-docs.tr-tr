@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5d56bc92e11d458a1872975f5a81a19c96566d59
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6c536d3708141250c6e0ab19cacb22fe989dc236
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873657"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568764"
 ---
 # <a name="ftmbasereleasemarshaldata-method"></a>FtmBase::ReleaseMarshalData Yöntemi
 Bir sıralanmış veri paketi yok eder.  
@@ -36,11 +36,11 @@ STDMETHODIMP ReleaseMarshalData(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `pStm`  
- İşaretçi yok edilmesi için veri paketi içeren akış.  
+ *pStm*  
+ Yok edilecek veri paketi içeren bir akışa yönelik işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** ftm.h  

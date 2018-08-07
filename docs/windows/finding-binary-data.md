@@ -21,32 +21,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 815975ac693885842d2e4b2287e14957abe8375f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ee50f78c4fcc39561fbd94ef3a0af28746cfbaa9
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873569"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568692"
 ---
 # <a name="finding-binary-data"></a>İkili Verileri Bulma
-ASCII dizeleri veya onaltılık baytlar için arama yapabilirsiniz. Örneğin, "Hello" bulmak için için dize "Merhaba" veya arayabilirsiniz "48 65 6C 6 C 6F" (onaltılık eşdeğeri).  
+ASCII dizelerinde veya onaltılık baytlar için arama yapabilirsiniz. Örneğin, "Hello" bulmak için sizin için ya da dize "Hello" veya arayabilirsiniz "48 65 6C 6 C 6F" (onaltılık eşdeğeri).  
   
-### <a name="to-find-binary-data"></a>İkili verileri bulunamadı  
+### <a name="to-find-binary-data"></a>İkili verileri bulmak için  
   
 1.  Gelen **Düzenle** menüsünde tıklatın [Bul](/visualstudio/ide/reference/find-command).  
   
-2.  İçinde **Aranan** kutusunda, önceki arama dizesi aşağı açılan listeden seçin veya bulmak istediğiniz veri türü.  
+2.  İçinde **Aranan** kutusunda aşağı açılan listeden önceki bir arama dizesi seçin veya bulmak istediğiniz veri türü.  
   
-3.  Birini seçin **Bul** seçenekleri.  
+3.  Herhangi bir **Bul** seçenekleri.  
   
-4.  Tıklatın **Sonrakini Bul**.  
+4.  Tıklayın **Sonrakini Bul**.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili Düzenleyicisi](binary-editor.md)
-

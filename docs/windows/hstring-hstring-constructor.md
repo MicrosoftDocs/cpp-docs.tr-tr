@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a3188e137d3a39fb26ca4151f72073306038e46f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 96b77ec87e3219206d353f56293fc201c46f5d7e
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876884"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568777"
 ---
 # <a name="hstringhstring-constructor"></a>HString::HString Oluşturucusu
-HString sınıfının yeni bir örneğini başlatır.  
+Yeni bir örneğini başlatır **Hstrıng** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,16 +33,16 @@ HString(HString&& other) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `hstr`  
+ *HSTR*  
  Bir HSTRING tanıtıcısı.  
   
- `other`  
- Varolan bir HString nesne.  
+ *Diğer*  
+ Mevcut bir **Hstrıng** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucusu boş yeni bir HString nesnesini başlatır.  
+ İlk Oluşturucu, yeni bir başlatır **Hstrıng** boş olan nesne.  
   
- İkinci Oluşturucu, var olan değerin yeni HString nesnesine başlatır `other` parametresi ve ardından bozar `other` parametresi.  
+ İkinci Oluşturucu, yeni bir başlatır **Hstrıng** varolan değerin bir nesneye *diğer* parametresi ve ardından yok eder *diğer* parametresi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

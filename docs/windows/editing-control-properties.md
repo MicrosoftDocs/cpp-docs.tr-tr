@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f7976f74e9454b023c4da51168fa780ccaea2342
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fa1283f90560390f8fc14ee13d1ab022bbeeff11
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873491"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39568868"
 ---
 # <a name="editing-control-properties"></a>Denetim Özelliklerini Düzenleme
 ### <a name="to-edit-the-properties-of-a-control-or-controls"></a>Bir denetim veya denetimlerin özelliklerini düzenlemek için  
@@ -30,25 +30,24 @@ ms.locfileid: "33873491"
 1.  İletişim kutusunda, değiştirmek istediğiniz denetimi seçin.  
   
     > [!NOTE]
-    >  Birden çok denetim seçerseniz, yalnızca seçili denetimleri ortak özelliklere düzenlenebilir.  
+    >  Birden çok denetim seçerseniz yalnızca seçili denetimleri ortak özelliklerini düzenleyebilirsiniz.  
   
-2.  İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window), denetim özelliklerini değiştirin.  
+2.  İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), denetim özelliklerini değiştirin.  
   
     > [!NOTE]
-    >  Ayarladığınızda **bit eşlem** düğmesi, radyo düğmesini veya onay kutusu denetimi eşit özelliğini **doğru**, bs_bıtmap denetiminiz için uygulanan stil. Daha fazla bilgi için bkz: [düğme stilleri](../mfc/reference/styles-used-by-mfc.md#button-styles). Bir bit eşlem bir denetimle ilişkilendirme ilişkin bir örnek için bkz: [CButton::SetBitmap](../mfc/reference/cbutton-class.md#setbitmap). Bit eşlemler iletişim Kaynak Düzenleyicisi'nde çalışırken denetiminizi görünmez.  
+    >  Ayarladığınızda **bit eşlem** özelliği için bir düğme, radyo düğmesinin veya onay kutusu denetimi eşit **True**, bs_bıtmap denetim için uygulanan stili. Daha fazla bilgi için [düğme stilleri](../mfc/reference/styles-used-by-mfc.md#button-styles). Bir bit eşlem bir denetimle ilişkilendirme ilişkin bir örnek için bkz [CButton::SetBitmap](../mfc/reference/cbutton-class.md#setbitmap). İletişim kaynak düzenleyicide çalışırken, bit eşlemler denetiminizi görünmez.  
   
 ### <a name="to-undo-changes-to-the-properties-of-a-control"></a>Bir denetimin özelliklerini değişiklikleri geri almak için  
   
 1.  Denetim odağı iletişim kutusu Düzenleyicisi'nde olduğundan emin olun.  
   
-2.  Seçin **geri** gelen **Düzenle** menü (odak denetiminde değilse **geri** komutu kullanılamaz).  
+2.  Seçin **geri** gelen **Düzenle** menü (odak denetimde değilse **geri** komutu kullanılamaz).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynakları dizeleri özelliklerine atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows Formları yerelleştirme](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme kaynaklarını kullanan](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows formlarını yerelleştirme](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme için kaynakların kullanarak](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)
-

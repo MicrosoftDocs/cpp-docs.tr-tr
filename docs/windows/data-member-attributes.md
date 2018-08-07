@@ -17,31 +17,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 490f8f20a6e1fcee476a6bbeb18ec6f6164389fc
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cf8dab858b98e1f1a0433eabaa25a94275ee53ec
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871711"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570736"
 ---
 # <a name="data-member-attributes"></a>Veri Üyesi Öznitelikleri
-Aşağıdaki öznitelikler sınıfı, coclass'ı veya arabirim veri üyeleri için geçerlidir.  
+Veri üyeleri sınıf, coclass'ı veya arabirimi aşağıdaki özniteliklere uygulanır.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|[db_accessor](../windows/db-accessor.md)|Grupları **db_column** katılan öznitelikleri `IAccessor`-bağlama dayalı.|  
+|[db_accessor](../windows/db-accessor.md)|Grupları `db_column` katılmak öznitelikleri `IAccessor`-bağlama dayalı.|  
 |[db_column](../windows/db-column.md)|Belirtilen sütun, satır kümesine bağlar.|  
 |[db_command](../windows/db-command.md)|OLE DB komut oluşturur.|  
-|[db_param](../windows/db-param.md)|Belirtilen üye değişkeni bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.|  
+|[db_param](../windows/db-param.md)|Belirtilen üye bağımsız değişkenine bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.|  
 |[db_source](../windows/db-source.md)|Bir veri kaynağı için bir bağlantı oluşturur.|  
-|[db_table](../windows/db-table.md)|OLE DB tablo açar.|  
-|[defaultbind](../windows/defaultbind.md)|En iyi nesneyi temsil eden tek, bağlanabilirse özelliği gösterir.|  
-|[displaybind](../windows/displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmelidir bir özelliği belirtir.|  
-|[id](../windows/id.md)|Üye işlevi (bir özellik veya bir arabirim veya görüntüleme arabirimi bir yöntem) için bir DISPID belirtir.|  
-|[Aralık](../windows/range-cpp.md)|Bağımsız değişken veya değerleri çalışma zamanında ayarlanır alanları için izin verilen değer aralığı belirtir.|  
+|[db_table](../windows/db-table.md)|Bir OLE DB tablosu açılır.|  
+|[defaultbind](../windows/defaultbind.md)|En iyi nesneyi temsil eden tek ve bağlanabilir özelliği belirtir.|  
+|[displaybind](../windows/displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir.|  
+|[id](../windows/id.md)|DISPID bir üye işlevinin (bir özelliği ya da bir yöntemde, arabirim veya dispinterface) belirtir.|  
+|[Aralığı](../windows/range-cpp.md)|Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanlar için izin verilen değer aralığı belirtir.|  
 |[rdx](../windows/rdx.md)|Bir kayıt defteri anahtarı oluşturur veya mevcut bir kayıt defteri anahtarı değiştirir.|  
-|[readonly](../windows/readonly-cpp.md)|Bir veri üyesi atamayı engeller.|  
-|[requestedit](../windows/requestedit.md)|Özellik desteklediğini gösterir **OnRequestEdit** bildirim.|  
+|[readonly](../windows/readonly-cpp.md)|Bir veri üyesine atama yasaklar.|  
+|[requestedit](../windows/requestedit.md)|Özelliğin desteklediğini belirtir `OnRequestEdit` bildirim.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

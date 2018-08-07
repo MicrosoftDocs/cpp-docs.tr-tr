@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 964ce5cc33b51c54446874522317814279cdd960
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d7b34f1af7734fa22db3a9f296bc021917356f8a
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877725"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570034"
 ---
 # <a name="ftmbaseunmarshalinterface-method"></a>FtmBase::UnmarshalInterface Metodu
-Yeni oluşturulan bir proxy başlatır ve proxy için bir arabirim işaretçisi döndürür.  
+Yeni oluşturulan proxy başlatır ve proxy için bir arabirim işaretçisini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,17 +38,17 @@ STDMETHODIMP UnmarshalInterface(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `pStm`  
- Arabirim işaretçisi iptal olmasını olduğu akış işaretçi.  
+ *pStm*  
+ Arabirim işaretçisi iptal edilecek olduğu akışa yönelik işaretçi.  
   
- `riid`  
- İptal olmasını arabirimi tanıtıcısı başvuru.  
+ *riid*  
+ İptal edilecek arabirimi tanımlayıcısını başvuru.  
   
- `ppv`  
- Bu işlem tamamlandığında, içinde istenen arabirim işaretçisi alan işaretçi değişkenin adresini `riid`. Bu işlem başarılı olursa *`ppv` iptal olmasını arabiriminin istenen arabirim işaretçisi içerir.  
+ *ppv*  
+ Bu işlem tamamlandığında, istenen arabirim işaretçisi alır bir işaretçi değişkeninin adresini *riid*. Bu işlem başarılı olursa **ppv* iptal edilecek arabiriminin istenen arabirim işaretçisi içerir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde E_NOINTERFACE veya E_FAIL.  
+ Başarılıysa S_OK; Aksi takdirde e_noınterface veya E_FAIL.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** ftm.h  

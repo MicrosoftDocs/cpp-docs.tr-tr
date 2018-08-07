@@ -16,37 +16,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8e877015afb0d53bd8c9bb12c092086b06ae59c2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 88d3573c4dce5c2aba85d9482b12bd62ba9fa1ad
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881848"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569953"
 ---
 # <a name="how-to-open-a-manifest-resource"></a>Nasıl Yapılır: Bildirim Kaynağını Açma
-Bildirim kaynağı açarsanız [kaynak görünümü](../windows/resource-view-window.md), kaynak ikili biçimde açılır. Bildirim kaynağı içeriğini daha görüntülenebilir bir biçimde görüntülemek için kaynak Çözüm Gezgini'nden açmanız gerekir.  
+Bildirim kaynağı açarsanız [kaynak görünümü](../windows/resource-view-window.md), kaynak ikili biçimde açılır. Daha fazla görüntülenebilir bir biçimde bir bildirim kaynağı içeriğini görüntülemek için Çözüm Gezgini'nden kaynak açmanız gerekir.  
   
-### <a name="to-open-a-manifest-resource-in-the-text-editor"></a>Bildirim kaynağı metin düzenleyicisinde açmak için  
+### <a name="to-open-a-manifest-resource-in-the-text-editor"></a>Bildirim kaynağı Metin Düzenleyicisi'nde açmak için  
   
-1.  Projenizi Aç ile `Solution Explorer`, genişletin **kaynak dosyaları** klasör.  
+1.  Proje Aç ile **Çözüm Gezgini**, genişletme **kaynak dosyaları** klasör.  
   
 2.  .Manifest dosyasını çift tıklatın.  
   
-     Bildirim kaynağı Metin Düzenleyicisi'nde açar.  
+     Bildirim kaynak Metin Düzenleyicisi'nde açılır.  
   
-### <a name="to-open-a-manifest-resource-in-another-editor"></a>Bildirim kaynağı başka bir düzenleyicisinde açmak için  
+### <a name="to-open-a-manifest-resource-in-another-editor"></a>Bildirim kaynağı başka bir düzenleyicide açın.  
   
-1.  Çözüm Gezgini'nde .manifest dosyasını sağ tıklatın ve seçin **birlikte Aç...**  kısayol menüsünden.  
+1.  İçinde **Çözüm Gezgini**.manifest dosyasını sağ tıklatın ve seçin **birlikte Aç...**  kısayol menüsünden.  
   
-2.  İçinde **birlikte Aç** iletişim kutusunda, istediğiniz'i tıklattığınızda Düzenleyicisi'ni belirtin **açık**.  
+2.  İçinde **birlikte Aç** iletişim kutusunda, kullanmak ve istediğiniz düzenleyici belirtmenize **açık**.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bildirim kaynakları](../windows/manifest-resources.md)   
- [denetimleri](../mfc/controls-mfc.md)   
+ [Denetimleri](../mfc/controls-mfc.md)   
  [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)

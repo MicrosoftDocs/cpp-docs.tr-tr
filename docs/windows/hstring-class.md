@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8544a78fdbdab19f44081853f5f5878f980cec01
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 868d0a4e2d84add447c95bfcd9690c8a17850718
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879378"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571457"
 ---
 # <a name="hstring-class"></a>HString Sınıfı
-RAII desen kullanan bir HSTRING ömrünü yönetmek için bir yardımcı sınıfı.
+Bir HSTRING RAII deseni kullanılarak ömrünü yönetmek için yardımcı sınıfı.
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,7 +32,7 @@ class HString;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Windows çalışma zamanı dizeleri HSTRING tanıtıcıları üzerinden erişim sağlar. HString sınıfı kolaylık işlevleri ve HSTRING tanıtıcıları kullanarak basitleştirmek için işleçleri sağlar. Bu sınıf kullanım ömrünü RAII modeli aracılığıyla sahibi HSTRING işleyebilir. 
+ Windows çalışma zamanı HSTRING tutamaçları ile dizelere erişim sağlar. **Hstrıng** kullanışlı işlevler ve işleçler HSTRING tutamaçları kullanmayı kolaylaştırmak için sınıf sağlar. Bu sınıf, bir RAII deseni sahip HSTRING ömrü başa çıkabilir. 
   
 ## <a name="members"></a>Üyeler  
   
@@ -40,29 +40,29 @@ class HString;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HString::HString Oluşturucusu](../windows/hstring-hstring-constructor.md)|HString sınıfının yeni bir örneğini başlatır.|  
-|[HString::~HString Yıkıcısı](../windows/hstring-tilde-hstring-destructor.md)|HString sınıfının geçerli örneği yok eder.|  
+|[HString::HString Oluşturucusu](../windows/hstring-hstring-constructor.md)|Yeni bir örneğini başlatır **Hstrıng** sınıfı.|  
+|[HString::~HString Yıkıcısı](../windows/hstring-tilde-hstring-destructor.md)|Geçerli örneğini yok eder **Hstrıng** sınıfı.|  
   
 ### <a name="members"></a>Üyeler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HString::Set Metodu](../windows/hstring-set-method.md)|Belirtilen geniş karakter dizesi veya HString parametresi için geçerli HString nesnenin değerini ayarlar.|  
-|[HString::Attach Metodu](../windows/hstring-attach-method.md)|Belirtilen HString nesne geçerli HString nesnesi ile ilişkilendirir.|  
-|[HString::CopyTo Metodu](../windows/hstring-copyto-method.md)|Kopya geçerli HString HSTRING nesneye nesne.|  
-|[HString::Detach Metodu](../windows/hstring-detach-method.md)|Temel alınan değeri belirtilen HString nesnesinden keser.|  
-|[HString::GetAddressOf Metodu](../windows/hstring-getaddressof-method.md)|Temel alınan HSTRING işlemek için bir işaretçi alır.|  
-|[HString::Get Metodu](../windows/hstring-get-method.md)|Temel alınan HSTRING tanıtıcı değerini alır.|  
-|[HString::Release Metodu](../windows/hstring-release-method.md)|Temel dize değeri siler ve boş bir değer için geçerli HString nesne intializes.|  
-|[HString::MakeReference Metodu](../windows/hstring-makereference-method.md)|HStringReference nesneyi belirtilen string parametresinden oluşturur.|  
+|[HString::Set Metodu](../windows/hstring-set-method.md)|Geçerli değerini ayarlar **Hstrıng** belirtilen geniş karakter dizesini bir nesneye veya **Hstrıng** parametresi.|  
+|[HString::Attach Metodu](../windows/hstring-attach-method.md)|Belirtilen ilişkilendirir **Hstrıng** geçerli nesneyle **Hstrıng** nesne.|  
+|[HString::CopyTo Metodu](../windows/hstring-copyto-method.md)|Geçerli kopyalar **Hstrıng** nesnesini bir HSTRING nesnesine.|  
+|[HString::Detach Metodu](../windows/hstring-detach-method.md)|Belirtilen ayırır **Hstrıng** nesnesini temel değerinden.|  
+|[HString::GetAddressOf Metodu](../windows/hstring-getaddressof-method.md)|Temel HSTRING tanıtıcısına bir işaretçi alır.|  
+|[HString::Get Metodu](../windows/hstring-get-method.md)|Temel HSTRING tanıtıcısının değerini alır.|  
+|[HString::Release Metodu](../windows/hstring-release-method.md)|Temel dize değerini siler ve geçerli başlatır **Hstrıng** boş bir değere nesne.|  
+|[HString::MakeReference Metodu](../windows/hstring-makereference-method.md)|Oluşturur bir `HStringReference` nesnesinden belirtilen dize parametresi.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HString::Operator= İşleci](../windows/hstring-operator-assign-operator.md)|Başka bir HString nesnenin değerini geçerli HString nesneye taşır.|  
-|[HString::Operator== İşleci](../windows/hstring-operator-equality-operator.md)|İki parametre eşit olup olmadığını gösterir.|  
-|[HString::Operator!= İşleci](../windows/hstring-operator-inequality-operator.md)|İki parametre eşit olup olmadığını gösterir.|  
+|[HString::Operator= İşleci](../windows/hstring-operator-assign-operator.md)|Başka bir değer taşır **Hstrıng** geçerli nesneye **Hstrıng** nesne.|  
+|[HString::Operator== İşleci](../windows/hstring-operator-equality-operator.md)|İki parametrenin eşit olup olmadığını gösterir.|  
+|[HString::Operator!= İşleci](../windows/hstring-operator-inequality-operator.md)|İki parametrenin eşit olup olmadığını gösterir.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HString`  

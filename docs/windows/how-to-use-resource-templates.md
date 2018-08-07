@@ -21,20 +21,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 534a86d10a4bcbc34e6cef29fbb77d7caa2c64b9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: da0d33c51fa50c7291eaa6421e9b857cd6f82d36
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882738"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569462"
 ---
 # <a name="how-to-use-resource-templates"></a>Nasıl Yapılır: Kaynak Şablonlarını Kullanma
-Kaynak şablon bir .rct dosyası olarak kaydettiğiniz özelleştirilmiş bir kaynaktır. Bir kaynak şablonu diğer kaynakları oluşturmak için bir başlangıç noktası olarak hizmet verebilir. Kaynak şablonları, ek kaynaklar veya standart denetimler gibi özellikleri ve diğer yinelenen öğeleri paylaşan kaynak grupları geliştirmede zaman kazandırır. Örneğin, bir Yardım düğmesi ve bir şirket logosu, bir simge birkaç iletişim kutularında eklemek isteyebilirsiniz. Böylece hızlı bir şekilde yapmak için yeni bir iletişim kutusu şablonu oluşturun ve logo ve Yardım düğmesini özelleştirme.  
+Kaynak şablon bir .rct dosyası olarak kaydettiğiniz bir özelleştirilmiş bir kaynaktır. Kaynak şablonu diğer kaynakları oluşturmak için bir başlangıç noktası olarak hizmet verebilir. Kaynak şablonları, ek kaynaklar ya da standart denetimler gibi özellikleri ve diğer yinelenen öğeleri paylaşan kaynakların grupları geliştirmede zamandan tasarruf edin. Örneğin, Yardım düğmesi ve bir şirket logosu simgesi birkaç iletişim kutularında eklemek isteyebilirsiniz. Kadar hızlı bir şekilde yapmak için yeni bir iletişim kutusu şablonu oluşturma ve Yardım düğmesini logosu ile özelleştirebilir.  
   
- Kaynak şablonu özelleştirdikten sonra şablonu klasöründe (veya INCLUDE yolunda belirtilen herhangi bir yere) yaptığınız değişiklikleri kaydetmeniz gerekir böylece yeni kaynak şablonu kendi kaynak türünün altında görünür [kaynak Ekle iletişim kutusu](../windows/add-resource-dialog-box.md). Ardından yeni kaynak şablonu sıklıkta gerektiği gibi kullanabilirsiniz.  
+ Kaynak şablonu özelleştirdikten sonra şablonu klasörüne (veya INCLUDE yolu belirtilen herhangi bir konuma) yaptığınız değişiklikleri kaydetmeniz gerekir, böylece yeni kaynak şablonu kaynak türüne altında görünür [kaynak Ekle iletişim kutusu](../windows/add-resource-dialog-box.md). Ardından yeni kaynak şablonu sıklıkta gerektiği şekilde kullanabilirsiniz.  
   
 > [!NOTE]
->  Dile özgü şablon dosyalarını ana şablon dizini dizinlerde yerleştirebilirsiniz. Örneğin, yalnızca İngilizce şablon dosyalarında yerleştirebilirsiniz \\< kaynak şablonu dizini\>\1033.  
+>  Dile özgü şablon dosyaları ana şablon dizininin alt dizinlerde yerleştirebilirsiniz. Örneğin, yalnızca İngilizce şablon dosyalarında yerleştirebilirsiniz \\< kaynak şablon dizini\>\1033.  
   
 ### <a name="to-create-a-template-for-resources"></a>Kaynaklar için bir şablon oluşturmak için  
   
@@ -42,40 +42,40 @@ Kaynak şablon bir .rct dosyası olarak kaydettiğiniz özelleştirilmiş bir ka
   
 2.  Kısayol menüsünden **Ekle**, ardından **Yeni Öğe Ekle**.  
   
-3.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **şablonları:** bölmesinde seçin **kaynak şablon dosyası (.rct)**.  
+3.  İçinde **Yeni Öğe Ekle** iletişim kutusundaki **şablonları:** bölmesinde seçin **kaynak şablon dosyası (.rct)**.  
   
-4.  Bir ad ve konum yeni .rct dosyanız için sağlayın ve tıklatın **açık**.  
+4.  Bir ad ve yeni .rct dosyanız için bir konum girin ve tıklatın **açık**.  
   
-5.  Yeni .rct dosyayı projenize eklenir ve altında Çözüm Gezgini'nde görüntülenir **kaynakları** klasör.  
+5.  Yeni .rct dosyası projenize eklenir ve altında Çözüm Gezgini'nde görünür **kaynakları** klasör.  
   
-     Şimdi, bir belge penceresinde açmak için .rct dosyasını çift tıklatın ardından kaynakları ekleyin (belge penceresinde dosyasını sağ tıklatın ve seçin **kaynak ekleme** kısayol menüsünde). Sonra bu kaynakları özelleştirebilir ve .rct dosyasını kaydedin.  
+     Artık, bir belge penceresi açın .rct dosyasına çift tıklayarak sonra kaynakları ekleyin (belge penceresinde dosyasını sağ tıklatın ve seçin **kaynak Ekle** kısayol menüsünden). Ardından, bu kaynakları özelleştirebilir ve .rct dosyayı kaydedin.  
   
     > [!NOTE]
-    >  Yeni bir RCT dosyası oluşturduğunuzda, Visual Studio için \Program Visual Studio 9.0\VC\VCResourceTemplates içinde \Program Visual Studio 9.0\VC\VCResourceTemplates arar\\*LCID* () 1033 İngilizce için) gibi *veya* üzerinde herhangi bir yere [yolunu](../windows/how-to-specify-include-directories-for-resources.md). RCT dosyaları başka bir dosya klasöre depolamak tercih ederseniz, örneğin \My belgeleri, yalnızca bu klasör için Include yolu eklemeniz gerekir ve Visual Studio RCT dosyanızı bulabilirsiniz.  
+    >  Yeni bir RCT dosyası oluşturduğunuzda, Visual Studio için Visual Studio 9.0\VC\VCResourceTemplates \Program içinde \Program Visual Studio 9.0\VC\VCResourceTemplates arar\\*LCID* () 1033 İngilizce için) gibi *veya* yerinde [yolunu](../windows/how-to-specify-include-directories-for-resources.md). RCT dosyaları başka bir dosya klasöre depolamak isterseniz, örneğin \My belgeler, yalnızca bu klasör yoluna eklemeniz gerekir ve Visual Studio RCT dosyanızı bulabilirsiniz.  
   
 ### <a name="to-convert-an-existing-rc-file-to-an-rct-file"></a>Var olan bir .rc dosyasını bir .rct dosyasına dönüştürmek için  
   
 1.  [Tek başına bir dosya olarak .rc dosyasını açın](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).  
   
-2.  Üzerinde **dosya** menüsünde tıklatın **kaydetmek \< *, filename*> olarak**.  
+2.  Üzerinde **dosya** menüsünde tıklatın **Kaydet \< *, filename*> olarak**.  
   
-3.  Bir konum belirtin ve tıklatın **Tamam**.  
+3.  Bir konum belirtin ve tıklayın **Tamam**.  
   
 ### <a name="to-create-a-new-resource-from-a-template"></a>Bir şablondan yeni bir kaynak oluşturmak için  
   
-1.  İçinde [kaynak görünümü](../windows/resource-view-window.md) bölmesinde .rc dosyasını sağ tıklatın ve seçin **kaynak ekleme** kısayol menüsünden.  
+1.  İçinde [kaynak görünümü](../windows/resource-view-window.md) bölmesinde .rc dosyasını sağ tıklatın ve seçin **kaynak Ekle** kısayol menüsünden.  
   
-2.  İçinde **kaynak ekleme** iletişim kutusunda, artı işaretini tıklatın (**+**) kaynak düğümünü genişletin ve bu kaynak için mevcut tüm şablonları görmek için bir kaynak yanındaki.  
+2.  İçinde **kaynak Ekle** iletişim kutusunda, artı işaretine tıklayın (**+**) kaynak düğümünü genişletin ve o kaynak için mevcut tüm şablonları görmek için bir kaynak yanında.  
   
 3.  Kullanmak istediğiniz şablonu çift tıklatın.  
   
 4.  Eklenen kaynak, kaynak düzenleyicisinde gerektiği gibi değiştirin.  
   
-     Kaynak Düzenleyicisi'ni otomatik olarak bir benzersiz kaynak kimliği sağlar Gözden geçirebilirsiniz [kaynak özelliklerini](../windows/changing-the-properties-of-a-resource.md) gerektiğinde.  
+     Kaynak Düzenleyicisi bir kaynağın benzersiz kimliği otomatik olarak sağlar. Düzeltebilir [kaynak özellikleri](../windows/changing-the-properties-of-a-resource.md) gerektiğinde.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   

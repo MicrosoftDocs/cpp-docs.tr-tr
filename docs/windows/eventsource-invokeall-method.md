@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 00bce09f9e081bb0cd5c01115b05e4d3268d7293
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 04a31c7d080ff4fbfae094e07ab02d912966f4b1
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882621"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570664"
 ---
 # <a name="eventsourceinvokeall-method"></a>EventSource::InvokeAll Yöntemi
-Geçerli ilişkili her olay işleyici çağırması [EventSource](../windows/eventsource-class.md) belirtilen bağımsız değişken türleri ve bağımsız değişkenler kullanarak nesne.  
+Geçerli ile ilgili her olay işleyicisini çağırır [EventSource](../windows/eventsource-class.md) belirtilen bağımsız değişken türleri ve bağımsız değişkenleri kullanarak nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -183,65 +183,65 @@ void InvokeAll(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T0`  
+### <a name="parameters"></a>Parametreler  
+ *T0*  
  Sıfırıncı olay işleyicisi bağımsız değişken türü.  
   
- `T1`  
+ *T1*  
  İlk olay işleyicisi bağımsız değişken türü.  
   
- `T2`  
+ *T2*  
  İkinci olay işleyicisi bağımsız değişken türü.  
   
- `T3`  
+ *T3*  
  Üçüncü olay işleyicisi bağımsız değişken türü.  
   
- `T4`  
+ *T4*  
  Dördüncü olay işleyicisi bağımsız değişken türü.  
   
- `T5`  
+ *T5*  
  Beşinci olay işleyicisi bağımsız değişken türü.  
   
- `T6`  
+ *T6*  
  Altıncı olay işleyicisi bağımsız değişken türü.  
   
- `T7`  
+ *T7*  
  Yedinci olay işleyicisi bağımsız değişken türü.  
   
- `T8`  
- Alt olay işleyicisi bağımsız değişken türü.  
+ *T8*  
+ Sekizinci olay işleyicisi bağımsız değişken türü.  
   
- `T9`  
+ *T9*  
  Dokuzuncu olay işleyicisi bağımsız değişken türü.  
   
- `arg0`  
+ *arg0*  
  Sıfırıncı olay işleyicisi bağımsız değişken.  
   
- `arg1`  
+ *arg1*  
  İlk olay işleyicisi bağımsız değişken.  
   
- `arg2`  
+ *arg2*  
  İkinci olay işleyicisi bağımsız değişken.  
   
- `arg3`  
+ *Arg3*  
  Üçüncü olay işleyicisi bağımsız değişken.  
   
- `arg4`  
+ *Arg4*  
  Dördüncü olay işleyicisi bağımsız değişken.  
   
- `arg5`  
- Beşinci olay işleyicisi bağımsız değişken.  
+ *arg5*  
+ Beşinci olay işleyicisi bağımsız.  
   
- `arg6`  
+ *arg6*  
  Altıncı olay işleyicisi bağımsız değişken.  
   
- `arg7`  
+ *arg7*  
  Yedinci olay işleyicisi bağımsız değişken.  
   
- `arg8`  
- Alt olay işleyicisi bağımsız değişken.  
+ *arg8*  
+ Sekizinci olay işleyicisi bağımsız değişken.  
   
- `arg9`  
+ *arg9*  
  Dokuzuncu olay işleyicisi bağımsız değişken.  
   
 ## <a name="requirements"></a>Gereksinimler  

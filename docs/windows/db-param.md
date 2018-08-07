@@ -17,21 +17,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ce7cf5c8e92e7fd6e6e10d7bef0519b1ced4cf62
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2c7ce3c5b76dfa8602a46e947d1e8925ec2bf14c
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880728"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569449"
 ---
 # <a name="dbparam"></a>db_param
-Belirtilen üye değişkeni bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.  
+Belirtilen üye bağımsız değişkenine bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ db_param(   
+[ db_param(   
    ordinal,   
    paramtype="DBPARAMIO_INPUT",   
    dbtype,   
@@ -43,48 +42,48 @@ Belirtilen üye değişkeni bir giriş veya çıkış parametresi ile ilişkilen
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `ordinal`  
- Sütun numarası (**DBCOLUMNINFO** sıralı) veri bağlanacak satır kümesindeki bir alana karşılık gelen.  
+ *Sıra*  
+ Satır kümesi veri bağlanacak bir alana karşılık gelen sütun numarası (DBCOLUMNINFO sıra).  
   
  *paramtype* (isteğe bağlı)  
- İçin parametre türü. Sağlayıcılar, temel alınan veri kaynağı tarafından desteklenen parametre g/ç türlerini destekler. Bir veya daha fazla bileşimini türüdür **DBPARAMIOENUM** değerler:  
+ İçin parametre türü. Sağlayıcılar, temel alınan veri kaynağı tarafından desteklenen parametre g/ç türlerini destekler. Bir veya daha fazla DBPARAMIOENUM değerlerinin bir birleşimini türüdür:  
   
--   **DBPARAMIO_INPUT** giriş parametresi.  
+-   DBPARAMIO_INPUT giriş parametresi.  
   
--   **DBPARAMIO_OUTPUT** çıktı parametresi.  
+-   DBPARAMIO_OUTPUT çıkış parametresi.  
   
--   **DBPARAMIO_NOTPARAM** erişimci hiç parametre yok. Ayarı **eParamIO** bu değere satırda erişimciler anımsatır kullanıcı parametreleri göz ardı edilir.  
+-   Erişimci DBPARAMIO_NOTPARAM hiç parametre yok. Ayar `eParamIO` satır içinde bu değer için erişimciler hatırlatır kullanıcı parametreleri göz ardı edilir.  
   
  *DbType* (isteğe bağlı)  
- OLE DB [türü göstergesi](https://msdn.microsoft.com/en-us/library/ms711251.aspx) sütun girişi.  
+ Bir OLE DB [türü göstergesi](https://msdn.microsoft.com/library/ms711251.aspx) sütun girişi.  
   
  *Duyarlık* (isteğe bağlı)  
- Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek **bPrecision** öğesinin [IAccessor::CreateAccessor'ı yapısı](https://msdn.microsoft.com/en-us/library/ms716845.aspx)  
+ Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](https://msdn.microsoft.com/library/ms716845.aspx)  
   
  *Ölçek* (isteğe bağlı)  
- Sütun girişini kullanılacak ölçeklendirin. Ayrıntılar için açıklamasını görmek **bScale** öğesinin [IAccessor::CreateAccessor'ı yapısı](https://msdn.microsoft.com/en-us/library/ms716845.aspx)  
+ Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](https://msdn.microsoft.com/library/ms716845.aspx)  
   
  *Durum* (isteğe bağlı)  
- Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri bir veri değeri veya başka bir değer, gibi olup olmadığını belirten **NULL**. Olası değerler için bkz: [durum](https://msdn.microsoft.com/en-us/library/ms722617.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](https://msdn.microsoft.com/library/ms722617.aspx) içinde *OLE DB Programcının Başvurusu*.  
   
- *Uzunluk* (isteğe bağlı)  
- Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.  
+ *uzunluğu* (isteğe bağlı)  
+ Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **db_param** parametrelerini tanımlar komutlarda kullanın; Bu nedenle ile kullandığınız **db_command**. Örneğin, kullanabileceğiniz **db_param** SQL sorguları ya da saklı yordamlar parametrelerinde bağlamak için. Saklı yordam parametreleri soru işareti (?) tarafından belirtilir ve parametreleri göründükleri sırada veri üyeleri bağlamak.  
+ **db_param** parametreleri tanımlar komutları kullanın; Bu nedenle ile kullanarak `db_command`. Örneğin, kullanabileceğiniz **db_param** SQL sorguları veya saklı yordamları parametleri bağlamak için. Bir saklı yordam parametreleri soru işareti (?) belirtilir ve parametreleri göründükleri sırayla veri üyeleri bağlamanız gerekir.  
   
- **db_param** OLE DB'de katılabilir üye verileri sınırlandırır `ICommandWithParameters`-bağlama dayalı. Parametre türü (giriş veya çıkış), OLE DB türü, duyarlık, Ölçek, durum ve belirtilen parametre uzunluğu ayarlar. Bu öznitelik, OLE DB Tüketici makroları BEGIN_PARAM_MAP ekler... END_PARAM_MAP. İşaretleme ile her üye **db_param** özniteliği kaplar bir giriş eşlemesindeki bir COLUMN_ENTRY biçiminde.  
+ **db_param** OLE DB içinde yer alabilirler üye verileri sınırlandırır `ICommandWithParameters`-bağlama dayalı. (Giriş veya çıkış) parametre türü, OLE DB türü, kesinlik, Ölçek, durum ve uzunluğu belirtilen parametresi için ayarlar. Bu öznitelik, OLE DB Tüketici makroları BEGIN_PARAM_MAP ekler... END_PARAM_MAP. Her üye ile işaretle **db_param** haritadaki bir COLUMN_ENTRY biçiminde, bir giriş özniteliği dolduracaktır.  
   
- **db_param** ya da ile birlikte kullanılan [db_table](../windows/db-table.md) veya [db_command](../windows/db-command.md) öznitelikleri.  
+ **db_param** ya da birlikte kullanılan [db_table](../windows/db-table.md) veya [db_command](../windows/db-command.md) öznitelikleri.  
   
- Tüketici özniteliği sağlayıcısı bu öznitelik bir sınıfa uyguladığında derleyici sınıfa adlandıracak \_ *YourClassName*erişimci nerede *YourClassName* verdiğiniz adı sınıf ve derleyici adlı bir sınıf oluşturur de *YourClassName*, den türetilen \_ *YourClassName*erişimcisi.  Sınıf Görünümü'nde, her iki sınıfları görürsünüz.  
+ Tüketici özniteliği sağlayıcısı bu öznitelik bir sınıfa uygulandığında, derleyici sınıf için yeniden adlandıracağını \_ *YourClassName*erişimci burada *YourClassName* verdiğiniz addır sınıf ve derleyici adlı bir sınıf oluşturur ayrıca *YourClassName*, öğesinden türetildiğini \_ *YourClassName*erişimcisi.  Sınıf Görünümü'nde, hem sınıflarını görürsünüz.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, Northwind veritabanı SalesbyYear saklı yordamda göre komut sınıfı oluşturur. Saklı yordam ile ilk parametreyi ilişkilendirir `m_RETURN_VALUE` değişkeni ve bir output parametresi olarak tanımlar. Son iki (giriş) parametreleriyle ilişkilendirir `m_Beginning_Date` ve `m_Ending_Date`.  
+ Aşağıdaki örnek, Northwind veritabanındaki SalesbyYear depolanan yordamı temel bir komut sınıfı oluşturur. Saklı yordamı ile ilk parametre ilişkilendirir `m_RETURN_VALUE` değişken ve bir output parametresi olarak tanımlar. Son iki (giriş) parametreleriyle ilişkilendirir `m_Beginning_Date` ve `m_Ending_Date`.  
   
- Aşağıdaki örnek ilişkilendirir `nOutput` değişken çıkış parametreye sahip.  
+ Aşağıdaki örnek ilişkilendirir `nOutput` değişkeni çıkış parametresi.  
   
-```  
+```cpp  
 // db_param.cpp  
 // compile with: /LD  
 #include <atlbase.h>  
@@ -124,9 +123,9 @@ struct CSalesbyYear {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`, üye, yöntem, yerel|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**sınıf**, **yapı**, üye, yöntem, yerel|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

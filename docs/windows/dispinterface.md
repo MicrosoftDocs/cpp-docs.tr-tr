@@ -1,5 +1,5 @@
 ---
-title: görüntüleme arabirimi | Microsoft Docs
+title: dispinterface | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,40 +17,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 10f398e83650dc63c002801ac999816e48f7bdd4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6497d6da630095f4d7691edb076fc354b87e5a13
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874294"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569220"
 ---
 # <a name="dispinterface"></a>dispinterface
-Arabirim dağıtma arabirimi .idl dosyasına yerleştirir.  
+Bir arabirim gönderme arabirimi olarak .idl dosyasına yerleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [dispinterface]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Zaman **görüntüleme arabirimi** C++ öznitelik önündeki bir arabirim, oluşturulan .idl dosyasındaki kitaplığı bloğunun yerleştirilecek arabirimi neden olur.  
+ Zaman **dispinterface** C++ özniteliği önündeki bir arabirim, oluşturulan .idl dosyasındaki kitaplığı bloğunun yerleştirilecek arabirimi neden olur.  
   
- Bir taban sınıfı belirtin sürece dağıtma arabirimi öğesinden türetilen `IDispatch`. Belirtmeniz gerekir bir [kimliği](../windows/id.md) dağıtma arabirimi üyeleri için.  
+ Dağıtım arabirimi türetilir bir temel sınıf belirtmediğiniz sürece `IDispatch`. Belirtmelisiniz bir [kimliği](../windows/id.md) gönderme arabirimin üyeleri için.  
   
- Kullanım örneğin [görüntüleme arabirimi](http://msdn.microsoft.com/library/windows/desktop/aa366802) MIDL belgelerinde:  
+ Kullanım örneği için [dispinterface](http://msdn.microsoft.com/library/windows/desktop/aa366802) MIDL belgelerinde:  
   
 ```  
 dispinterface helloPro   
    { interface hello; };   
 ```  
   
- için geçerli değil **görüntüleme arabirimi** özniteliği.  
+ için geçerli değil **dispinterface** özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **görüntüleme arabirimi**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **dispinterface**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -58,12 +56,12 @@ dispinterface helloPro
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**interface**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|**çift**, **nesne**, **oleautomation**, `local`, **ms_union**|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

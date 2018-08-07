@@ -17,34 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: db90390be5313ddbea1103105f47b55fe9e23d62
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 933fc1db2a890fedd9d725c49bbeb6c363e2f4c8
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872321"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569644"
 ---
 # <a name="entry"></a>giriş
-Bir verilen işlevi veya sabit bir modüle DLL'deki giriş noktası belirleyerek belirtir.  
+Dışarı aktarılan işlevin ya da sabit bir modülün dll giriş noktası belirleyerek belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ entry(  
+[ entry(  
    id  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `id`  
+ *id*  
  Giriş noktası kimliği.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Girişi** C++ özniteliğine sahip ile aynı işlevselliği [girişi](http://msdn.microsoft.com/library/windows/desktop/aa366815) MIDL özniteliği.  
+ **Giriş** C++ özniteliği ile aynı işlevlere sahip [giriş](http://msdn.microsoft.com/library/windows/desktop/aa366815) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [idl_module](../windows/idl-module.md) bir örnek kullanımı için **girişi**.  
+ Örneğin bakın [idl_module](../windows/idl-module.md) bir kullanımı örneği için **giriş**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -52,12 +51,12 @@ Bir verilen işlevi veya sabit bir modüle DLL'deki giriş noktası belirleyerek
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`idl_module` Özniteliği|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|`idl_module` Özniteliği|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

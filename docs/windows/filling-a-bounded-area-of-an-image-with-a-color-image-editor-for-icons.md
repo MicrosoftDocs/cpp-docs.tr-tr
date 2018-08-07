@@ -1,5 +1,5 @@
 ---
-title: Sınırlı bir alanını renkle (simgeler için görüntü Düzenleyicisi) görüntünün doldurma | Microsoft Docs
+title: Doldurma (simgeler için görüntü Düzenleyicisi) renk ile bir görüntünün sınırlı bir alanını | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,32 +18,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f70decbfd0de1a31024482806594ca3c2b12aa8a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4ae915dbcd9e2190f33e29e236170951fcec3d01
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880575"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569878"
 ---
 # <a name="filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons"></a>Görüntünün Sınırlı Bir Alanını Renkle Doldurma (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi sağlar **doldurun** herhangi doldurma aracı içine görüntü alanını geçerli çizim renkle veya geçerli arka plan rengi.  
+Resim Düzenleyicisi sağlar **dolgu** herhangi doldurma aracı geçerli çizim rengini veya arka plan rengi geçerli görüntü alanını alınmış.  
   
 > [!TIP]
->  İmlecinizi bir araç çubuğu düğmesi geldiğinizde araç ipuçları görüntülenir. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
+>  İmlecinizi bir araç çubuğu düğmenin üzerine geldiğinizde araç ipuçlarında görünür. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
   
 ### <a name="to-use-the-fill-tool"></a>Dolgu aracı kullanmak için  
   
-1.  Üzerinde **görüntü Düzenleyicisi** araç çubuğu (veya **görüntü** menüsünde **Araçları** komutu), tıklatın **doldurun** aracı.  
+1.  Üzerinde **görüntü Düzenleyicisi** araç çubuğu (veya **görüntü** menüsünde **Araçları** komut), tıklayın **dolgu** aracı.  
   
-2.  Gerekirse, renkler çizim seçin: içinde [renk paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengini seçmek için sol fare düğmesini veya bir arka plan rengi seçmek için fareyi sağ tıklatın.  
+2.  Gerekirse, renkler çizim seçin: içinde [renkler paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengi seçmesini farenin sol düğmesine veya arka plan rengi seçmesini sağ fare düğmesine tıklayın.  
   
-3.  Taşıma **dolgu** istediğiniz doldurmaya bölgesine aracı.  
+3.  Taşıma **dolgu** doldurmak istediğiniz alanı için aracı.  
   
-4.  Ön plan rengini veya arka plan rengi, sırasıyla doldurmak için sola veya sağa fare düğmesini tıklatın.  
+4.  Sırasıyla ön plan rengini veya arka plan rengi ile doldurmak için sol veya sağ fare düğmesine tıklayın.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   

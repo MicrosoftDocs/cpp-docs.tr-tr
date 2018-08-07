@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: sabitleme işaretçileri bildirme ve değer türlerini | Microsoft Docs'
+title: 'Nasıl yapılır: sabitleme işaretçileri ve değer türlerini | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 40187b7da9083ddaa5342e4bdfeba556fb900e7b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 57c6ed79f9ecb74533a7ffaf2861af8bee9e257a
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880390"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39569761"
 ---
 # <a name="how-to-declare-pinning-pointers-and-value-types"></a>Nasıl yapılır: Sabitleme İşaretçileri ve Değer Türlerini Bildirme
-Değer türü örtük olarak Kutulu. Değer türü nesnesine sabitleme işaretçi kendisi ve kullanım sonra bildirebilir bir **pin_ptr** paketlenmiş değer türü.  
+Örtük olarak bir değer türü kutulanabilir. Değer türü nesne bir sabitleme işaretçisine kendisi ve kullanım ardından bildirebilirsiniz bir **pin_ptr** kutulanmış değer türü.  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // pin_ptr_value.cpp  
 // compile with: /clr  
 value struct V {  
@@ -50,7 +50,7 @@ int main() {
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output  
 8  
 7  
 7  
