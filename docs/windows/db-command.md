@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70399b15081de89d8da49268c8d62d3ad390858d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 8eade0c6a77e70fe156f80c2809a8cca0ed89b38
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "38954987"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39571444"
 ---
 # <a name="dbcommand"></a>db_command
 OLE DB komut oluşturur.  
@@ -133,7 +133,7 @@ Varsa *bulk_fetch* değerden daha az `SetRows` sıfır döndürür.
 ## <a name="remarks"></a>Açıklamalar  
 **db_command** oluşturur bir [CCommand](../data/oledb/ccommand-class.md) bir komutu çalıştırmak için bir OLE DB Tüketicisi tarafından kullanılan nesne.  
   
-Kullanabileceğiniz **db_command** kapsamıyla; sınıf veya işlev temel fark kapsamındaysa `CCommand` nesne. İşlev kapsamı ile veri bağlamaları gibi işlevi sonunda sona erer. Sınıfı hem de işlev kapsamı kullanımları içeren OLE DB tüketici şablonu sınıfı **CCommand\<>**, ancak şablon değişkenlerini işlevi ve sınıf çalışmaları için farklı. İşlev durumda bağlamaları yapılmaz bir **erişimci** , anımsatıcıyı yerel değişkenler sınıfı kullanım çıkarımlar sırada bir `CAccessor`-türetilmiş sınıf için bağımsız değişken olarak. Bir sınıf özniteliği kullanıldığında **db_command** ile birlikte çalışır **db_column**.  
+Kullanabileceğiniz **db_command** kapsamıyla; sınıf veya işlev temel fark kapsamındaysa `CCommand` nesne. İşlev kapsamı ile veri bağlamaları gibi işlevi sonunda sona erer. Sınıfı hem de işlev kapsamı kullanımları içeren OLE DB tüketici şablonu sınıfı `CCommand<>`, ancak şablon değişkenlerini işlevi ve sınıf çalışmaları için farklı. İşlev durumda bağlamaları yapılmaz bir **erişimci** , anımsatıcıyı yerel değişkenler sınıfı kullanım çıkarımlar sırada bir `CAccessor`-türetilmiş sınıf için bağımsız değişken olarak. Bir sınıf özniteliği kullanıldığında **db_command** ile birlikte çalışır **db_column**.  
   
 **db_command** bir sonuç kümesi döndürmüyor komutları yürütmek için kullanılabilir.  
   

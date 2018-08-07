@@ -16,53 +16,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5d6dc0a64c5d225f6e80a21dc008e5a2486ad3d9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3ebb476b0a8c384759c9d44101e7bac7083103b2
+ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878911"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39570772"
 ---
 # <a name="generics-and-templates-visual-c"></a>Genel Türler ve Temsilciler (Visual C++)
-Genel türler ve temsilciler parametreli türleri için destek sağlayan iki dil özellikleridir. Ancak, bunlar farklı ve farklı kullanır. Bu konu, çok sayıda fark genel bir bakış sağlar.  
+Genel türler ve temsilciler parametreli türler için destek sağlayan her iki dil özellikleridir. Ancak, farklıdır ve farklı kullanır sahip. Bu konu, pek çok fark genel bir bakış sağlar.  
   
- Daha fazla bilgi için bkz: [Windows çalışma zamanı ve yönetilen şablonlar](../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md).  
+ Daha fazla bilgi için [Windows çalışma zamanı ve yönetilen şablonlar](../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md).  
   
-## <a name="comparing-templates-and-generics"></a>Şablonlar ve genel türler karşılaştırma  
- Genel türler ve C++ şablonları arasındaki farklar'yi tıklatın:  
+## <a name="comparing-templates-and-generics"></a>Şablonları ve genel türler karşılaştırma  
+ Genel türler ve C++ şablonları arasındaki temel farklar:  
   
--   Genel türler türleri için çalışma zamanında geçen kadar geneldir. Çalışma zamanında hala parametreli türler olmadıkları şekilde şablonları derleme zamanında özelleştirilmiş  
+-   Bunlar için çalışma zamanında başvurulduğunda tür kadar genel türler geneldir. Çalışma zamanında hala parametreli türler olmadıkları için derleme zamanında özelleştirilmiş şablonları  
   
--   Ortak dil çalışma zamanı, özellikle MSIL genel türler destekler. Genel türler hakkında çalışma zamanı bildiği için belirli türleri genel türleri için genel bir tür içeren bir derlemenin başvururken yerine kullanılabilecek. Şablonlar, buna karşılık, derleme zamanında sıradan türlerine çözümlemek ve sonuçta elde edilen türleri diğer derlemelerde özelleştirilmesi değil.  
+-   Ortak dil çalışma zamanı, genel türler özellikle MSIL destekler. Çalışma zamanı, genel türler hakkında bildiğinden, belirli türler genel türler için genel bir tür içeren bir derlemenin başvururken yerine kullanılabileceği. Şablonlar, buna karşılık, sıradan tür olarak derleme zamanında çözmek ve sonuç türleri diğer derlemelerde özelleştirilmesi değil.  
   
--   Genel türler özelleştirilmiş iki farklı derlemelerde aynı türüne sahip bağımsız değişkenler aynı türüdür. Bağımsız değişkenler çalışma zamanı tarafından farklı olarak düşünülür aynı türde iki farklı derlemelerde şablonları özelleştirilmiş.  
+-   Genel türler, iki farklı derlemelerde özelleştirilmiş ile aynı türde bağımsız değişkenleri aynı türdedir. Şablon bağımsız değişkenleri çalışma zamanı tarafından farklı değerlendirilir aynı türde iki farklı derlemelerde anlayışıyla çalışır.  
   
--   Genel türler (Bu değer türü başına benzersiz bir uygulamasına sahipseniz değer türleri için doğru değil) tüm başvuru türü bağımsız değişkenleri için kullanılan yürütülebilir kod tek bir parçası olarak üretilir. JIT derleme genel türler hakkında bilir ve tür bağımsız değişkenleri kullanılan başvuru veya değer türleri için kod iyileştirebilir. Şablonlar her özelleştirmesi için ayrı bir çalışma zamanı kodu oluşturur.  
+-   Genel türler (Bu değer türü başına benzersiz bir uygulama olan değer türleri için doğru değil) tüm başvuru türü bağımsız değişkenleri için kullanılan yürütülebilir kod tek bir parçası olarak oluşturulur. JIT Derleyici, genel türler hakkında bilir ve tür bağımsız değişkenleri kullanılan başvuru veya değer türleri için kod iyileştirebilir. Şablon, her uzmanlık için ayrı bir çalışma zamanı kodu oluşturma.  
   
--   Genel türler izin verme tür olmayan şablon parametreleri gibi `template <int i> C {}`. Şablonları bunları sağlar.  
+-   Genel türler, tür olmayan şablon parametreleri gibi verme `template <int i> C {}`. Şablonlar, bunları sağlar.  
   
--   Genel türler açık uzmanlık (diğer bir deyişle, özel bir uygulamasını belirli bir tür için bir şablon) izin vermez. Şablonları yapın.  
+-   Genel türler (diğer bir deyişle, bir özel uygulanışı belirli bir tür için bir şablon) açık özelleştirme izin vermez. Şablonları yapın.  
   
--   Genel türler kısmi uzmanlığı (müşteri uygulaması için bir alt türü bağımsız değişkenleri) izin vermez. Şablonları yapın.  
+-   Genel türler (özel bir uygulama için bir alt tür bağımsız değişkenlerini) kısmi özelleştirmede izin vermez. Şablonları yapın.  
   
--   Genel türler genel türü için temel sınıf olarak kullanılacak tür parametresi izin vermez. Şablonları yapın.  
+-   Genel türler tür parametresi, genel tür için temel sınıf olarak kullanılacak izin vermez. Şablonları yapın.  
   
--   Şablonları şablonu şablon parametreleri destekler (örneğin `template<template<class T> class X> class MyClass`), ancak genel türler yapın.  
+-   Şablonları destekleyen şablonu şablon parametreleri (örneğin `template<template<class T> class X> class MyClass`), ancak genel türler kullanmayın.  
   
 ## <a name="combining-templates-and-generics"></a>Birleştirme şablonları ve genel türler  
   
--   Genel türler temel fark, şablonları ve genel türler birleştirmek uygulamaları oluşturmaya yönelik etkilere sahiptir. Örneğin, diğer diller için o şablon genel olarak kullanıma sunmak için genel bir sarmalayıcı oluşturmak istediğiniz bir şablon sınıfı olduğunu varsayalım. Genel Al şablon bu tür parametresi derleme zamanında olması gerektiğinden, bunu daha sonra şablonu rağmen geçirir tür parametresi olamaz, ancak genel tür parametresi çalışma zamanına kadar çözmek olmaz. Çalışma zamanında oluşturulabilir rasgele genel türler için derleme zamanında şablonları genişletmek için hiçbir şekilde olduğundan şablon genel içinde iç içe ya da çalışmaz.  
+-   Genel türler temel fark, şablonları ve genel türler birleştiren uygulamalar oluşturmaya yönelik etkilere sahiptir. Örneğin, diğer diller için o şablon genel olarak kullanıma sunmak için genel bir sarmalayıcı oluşturmak istediğiniz bir şablon sınıfı olduğunu varsayalım. Genel sınav zamanı şablonu, derleme zamanında bu tür parametresi olması gerekiyorsa bu yana, daha sonra şablona rağmen geçirir bir tür parametresine sahip olamaz, ancak genel tür parametresi çalışma zamanına kadar çözmez. Çalışma zamanında oluşturulabilir rastgele genel türler için derleme zamanında şablonları genişletmek için hiçbir yolu olmadığından bir şablon genel içinde iç içe ya da işe yaramaz.  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki örnek, şablonları ve genel türler birlikte kullanarak basit bir örnek gösterilmektedir. Bu örnekte, Şablon sınıfı genel tür parametresi üzerinden geçirir. Ters mümkün değildir.  
+ Aşağıdaki örnek şablonları ve genel türler birlikte kullanarak basit bir örneğini gösterir. Bu örnekte, Şablon sınıfı için genel tür parametresi üzerinden geçirir. Ters mümkün değildir.  
   
- Bu deyim bir Visual C++ derleme için yerel olan şablon kodu ile var olan bir genel API oluşturmak istediğinizde ya da şablonlarının değil supporte belirli özelliklerden yararlanmak için genel tür için fazladan bir parametrelemeyi katmanı eklemeniz gerektiğinde kullanılabilir genel türler d.  
+ Bu deyim, bir Visual C++ derleme için yerel bir şablon kod ile var olan bir genel API oluşturmak istediğinizde veya şablon olmayan supporte belirli özelliklerden yararlanmak için genel tür için fazladan bir Parametreleştirme katmanı eklemek, ihtiyacınız olduğunda kullanılabilir genel türler d.  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // templates_and_generics.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -97,7 +97,7 @@ int main() {
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output  
 F  
 ```  
   
