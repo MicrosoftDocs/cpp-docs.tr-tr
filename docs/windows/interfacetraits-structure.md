@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4203fbb639b06e7e421809f9d901c70933d586d1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 63725d5d3e0edaea328d5753640aa74bdf35c7e0
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878690"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606754"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -41,41 +41,41 @@ template<>
 struct __declspec(novtable) InterfaceTraits<Nil>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `I0`  
- Arabirim adı.  
+### <a name="parameters"></a>Parametreler  
+ *I0*  
+ Bir arabirimin adı.  
   
- `CloakedType`  
- RuntimeClass, uygular ve Chainınterfaces, arabirim kimlikleri listesinde olmayacak bir arabirim desteklenmiyor.  
+ *CloakedType*  
+ İçin `RuntimeClass`, `Implements` ve `ChainInterfaces`, arabirim kimlikleri listesinde olmayacak bir arabirim desteklenir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Arabirim genel özelliklerini uygular.  
+ Genel özelliklerini bir arabirim uygular.  
   
- İkinci bir uzmanlık gizlenmiş arabirimleri için şablonudur. Nil parametreleri için özelleştirmesi üçüncü şablonudur.  
+ İkinci bir özelleştirmesi gizlenmiş arabirimleri için şablonudur. Nil parametreleri için bir özelleştirmesi üçüncü şablonudur.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`Base`|Eşanlamlısı `I0` şablon parametresi.|  
+|`Base`|İçin bir eşanlamlı *I0* şablon parametresi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[InterfaceTraits::CanCastTo Metodu](../windows/interfacetraits-cancastto-method.md)|Bir işaretçi için belirtilen işaretçi içerip içermeyeceğini gösterir `Base`.|  
-|[InterfaceTraits::CastToBase Metodu](../windows/interfacetraits-casttobase-method.md)|Bir işaretçi belirtilen işaretçisine bıraktığı `Base`.|  
-|[InterfaceTraits::CastToUnknown Metodu](../windows/interfacetraits-casttounknown-method.md)|IUnknown işaretçisi belirtilen işaretçisine çevirir.|  
-|[InterfaceTraits::FillArrayWithIid Metodu](../windows/interfacetraits-fillarraywithiid-method.md)|Arabirim kimliği atar `Base` dizini bağımsız değişkeniyle belirtilen dizi öğesi.|  
-|[InterfaceTraits::Verify Metodu](../windows/interfacetraits-verify-method.md)|Temel düzgün türetilmiş doğrular.|  
+|[InterfaceTraits::CanCastTo Metodu](../windows/interfacetraits-cancastto-method.md)|Belirtilen işaretçi işaretçisi içerip içermeyeceğini belirten `Base`.|  
+|[InterfaceTraits::CastToBase Metodu](../windows/interfacetraits-casttobase-method.md)|Belirtilen bir işaretçi işaretçisi bıraktığı `Base`.|  
+|[InterfaceTraits::CastToUnknown Metodu](../windows/interfacetraits-casttounknown-method.md)|Belirtilen bir işaretçi işaretçisi bıraktığı `IUnknown`.|  
+|[InterfaceTraits::FillArrayWithIid Metodu](../windows/interfacetraits-fillarraywithiid-method.md)|Arabirim kimliği atar `Base` dizini bağımsız değişkeni tarafından belirtilen dizi öğesi için.|  
+|[InterfaceTraits::Verify Metodu](../windows/interfacetraits-verify-method.md)|Temeli düzgün bir şekilde türetilen doğrular.|  
   
 ### <a name="public-constants"></a>Genel sabitler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[InterfaceTraits::IidCount Sabiti](../windows/interfacetraits-iidcount-constant.md)|Kimlikleri geçerli Interfacetraits nesneyle ilişkili arabirimi sayısını tutar.|  
+|[InterfaceTraits::IidCount Sabiti](../windows/interfacetraits-iidcount-constant.md)|Geçerli ile ilişkili kimlikleri arabirimi sayısını tutar **Interfacetraits** nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `InterfaceTraits`  

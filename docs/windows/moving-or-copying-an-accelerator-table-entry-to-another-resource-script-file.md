@@ -1,5 +1,5 @@
 ---
-title: Taşıma veya Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına kopyalama | Microsoft Docs
+title: Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına kopyalama veya taşıma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,35 +18,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b14e20770b89bb6863eb5fa8d7743bd3cf2efa9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e975ab71e4556c236ecd2e92f2d11a949a68ba5a
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877910"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608058"
 ---
 # <a name="moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı Tablosu Girişini Başka Bir Kaynak Betik Dosyasına Taşıma veya Kopyalama
-### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>Taşımak veya Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına kopyalamak için  
+### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına taşınacak veya kopyalanacak  
   
-1.  Hızlandırıcı tabloları hem kaynak betik dosyaları açın.  
+1.  Hızlandırıcı tablolarını, hem kaynak kod dosyalarını açın.  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Taşımak istediğiniz girişi seçin.  
+2.  Taşımak istediğiniz girişini seçin.  
   
-3.  Gelen **Düzenle** menüsünde seçin **kopya** veya **Kes**.  
+3.  Gelen **Düzenle** menüsünde seçin **kopyalama** veya **Kes**.  
   
-4.  Hedef kaynak betik dosyasına bir giriş seçin.  
+4.  Hedef kaynak kod dosyasında bir giriş seçin.  
   
 5.  Gelen **Düzenle** menüsünde seçin **Yapıştır**.  
   
     > [!NOTE]
-    >  Kısayol tuşları, kopyalama ve yapıştırma için de kullanabilirsiniz.  
+    >  Ayrıca, kopyalama ve yapıştırma için kısayol tuşlarını kullanabilirsiniz.  
   
-
-  
- **Gereksinimler**  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   

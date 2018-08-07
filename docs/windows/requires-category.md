@@ -17,38 +17,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3a6822773292fd651eaae3be5c00fb2b693a80a9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9ddcfe01ec5bd838a84ddad351f43802a8142b44
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882322"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606107"
 ---
 # <a name="requirescategory"></a>requires_category
-Hedef sınıf gerekli bir bileşen kategorilerini belirtir.  
+Hedef sınıfın gerekli bileşen kategorilerini belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-     [ requires_category(   
+[ requires_category(   
   requires_category  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *requires_category*  
- Gerekli Kategori Kimliği.  
+ Gerekli bir kategori kimliği.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Requires_category** C++ özniteliği, hedef sınıf tarafından gerekli bileşen kategorileri belirtir. Daha fazla bilgi için bkz: [REQUIRED_CATEGORY](../atl/reference/category-macros.md#required_category).  
+ **Requires_category** C++ özniteliği hedef sınıfı tarafından gerekli bileşen kategorileri belirtir. Daha fazla bilgi için [REQUIRED_CATEGORY](../atl/reference/category-macros.md#required_category).  
   
- Bu öznitelik gerektiren [coclass](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (veya bunlardan birini gelir başka bir öznitelik) de uygulanması aynı öğeye.  
+ Bu öznitelik gerektiren [coclass'ı](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod, nesne denetim kategorisi uygulamak gerektirir.  
+ Aşağıdaki kod, nesneyi Denetim kategorisi uygulamak gerektirir.  
   
-```  
+```cpp  
 // cpp_attr_ref_requires_category.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -68,9 +67,9 @@ class CMyClass {};
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Bir veya daha fazlasını: **coclass**, **ProgID**, veya **vi_progid**.|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dbd97897138edffba12baf47d64465b1f6ca0df4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 806dcb96916b2e92bffc2d217e318a8853672ae8
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877897"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605077"
 ---
 # <a name="libraryblock"></a>library_block
-IDL kitaplığı bloktaki bir yapı yerleştirir.  
+IDL kitaplığı bloğu içinde bir yapısı yerleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [library_block]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kitaplık bloktaki bir yapı yerleştirdiğinizde, olup başvurulan bağımsız olarak türü kitaplığa geçirilir emin olun. Varsayılan olarak, yalnızca yapıları değiştiren tarafından [coclass](../windows/coclass.md), [görüntüleme arabirimi](../windows/dispinterface.md), ve [idl_module](../windows/idl-module.md) öznitelikleri kitaplığı bloğunda yerleştirilir.  
+ Kitaplık bloğu içinde bir yapısı yerleştirdiğinizde, başvurulan olup bağımsız olarak tür kitaplığına geçirilecek emin olun. Varsayılan olarak, yalnızca yapıları tarafından değiştirildi [coclass'ı](../windows/coclass.md), [dispinterface](../windows/dispinterface.md), ve [idl_module](../windows/idl-module.md) öznitelikleri kitaplığı bloğunda yerleştirilir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodda özel bir arabirim kitaplığı bloğunun içine yerleştirilir.  
+ Aşağıdaki kodda, özel arabirim kitaplığı bloğunun içine yerleştirilir.  
   
-```  
+```cpp  
 // cpp_attr_ref_library_block.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -58,12 +56,12 @@ __interface IMyInterface {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Her yerden|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Her yerde|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici öznitelikleri](../windows/compiler-attributes.md)   

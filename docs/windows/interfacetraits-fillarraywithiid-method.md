@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e6e32b2e40ba9dc2b8085f8edc99beb899e90ace
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1ef552e5025a18eb4c778f9d08389d2b7e3634d5
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877508"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605662"
 ---
 # <a name="interfacetraitsfillarraywithiid-method"></a>InterfaceTraits::FillArrayWithIid Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,20 +34,19 @@ __forceinline static void FillArrayWithIid(
    _Inout_ unsigned long &index,  
    _In_ IID* iids  
 );  
-  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `index`  
- Sıfır tabanlı dizin değeri içeren bir alanı işaretçisi.  
+### <a name="parameters"></a>Parametreler  
+ *Dizin*  
+ Sıfır tabanlı dizin değeri içeren bir alan için işaretçi.  
   
- `iids`  
+ *IID'leri*  
  Arabirim kimlikleri dizisi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Arabirim kimliği atar `Base` dizini bağımsız değişkeniyle belirtilen dizi öğesi.  
+ Arabirim kimliği atar `Base` dizini bağımsız değişkeni tarafından belirtilen dizi öğesi için.  
   
- Bu API adı aykırı yalnızca bir dizi öğesine değiştirildi; Tüm dizisi değil.  
+ Bu API adını aykırı, yalnızca bir dizi öğesi değiştirildi; Tüm dizi değildir.  
   
  Hakkında daha fazla bilgi için `Base`, genel tür tanımları bölümüne bakın [Interfacetraits yapısı](../windows/interfacetraits-structure.md).  
   

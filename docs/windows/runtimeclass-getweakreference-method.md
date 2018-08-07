@@ -1,5 +1,5 @@
 ---
-title: RuntimeClass::GetWeakReference yöntemi | Microsoft Docs
+title: RuntimeClass::GetWeakReference metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e49703e96728e7287206aa264ce12deaad611495
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bb0d5e6ca19749a4647ec85311e1fce0e7561b59
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888226"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608540"
 ---
 # <a name="runtimeclassgetweakreference-method"></a>RuntimeClass::GetWeakReference Metodu
-Bir işaretçi zayıf başvuru nesnesi için geçerli RuntimeClass nesnesini alır.  
+Geçerli zayıf başvuru nesnesine bir işaretçi alır **RuntimeClass** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,9 +35,9 @@ STDMETHOD(
 )(_Deref_out_ IWeakReference **weakReference);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `weakReference`  
- Bu işlem tamamlandığında, zayıf başvuru nesnesi için bir işaretçi.  
+### <a name="parameters"></a>Parametreler  
+ *weakReference*  
+ Bu işlem tamamlandığında zayıf başvuru nesnesine bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Her zaman S_OK.  

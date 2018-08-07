@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bb7782e44fc8598ca3b806ef922f8d0840765e28
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7a7549371ba4648f8fcce03a98a021c8027c676e
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876462"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605200"
 ---
 # <a name="mutexmutex-constructor"></a>Mutex::Mutex Oluşturucusu
-Mutex sınıfı yeni bir örneğini başlatır.  
+Yeni bir örneğini başlatır **Mutex** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,12 +39,12 @@ Mutex(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `h`  
- Bir tanıtıcı veya rvalue başvuru Mutex nesnesi için bir tanıtıcı için.  
+### <a name="parameters"></a>Parametreler  
+ *h*  
+ Tanıtıcı ya da bir tanıtıcı bir rvalue başvurusu için bir **Mutex** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucu, belirtilen tanıtıcı Mutex nesnesinden başlatır. İkinci Oluşturucu, belirtilen tanıtıcı Mutex nesnesinden başlatır ve ardından mutex sahipliğini geçerli Mutex nesnesi taşır.  
+ İlk Oluşturucu başlatan bir **Mutex** nesnesinden belirtilen tanıtıcı. İkinci oluşturucu başlatan bir **Mutex** geçerli nesne belirtilen tanıtıcı, ve ardından mutex sahipliğini taşır **Mutex** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

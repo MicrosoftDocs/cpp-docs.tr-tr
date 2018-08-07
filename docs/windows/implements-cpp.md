@@ -17,35 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 118487d533e8f4701f52804ebbe1e669d29fc4cb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d0fe0c8919eb1959dab426c3c0db47f227c51b66
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880726"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606468"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
-IDL coclass'ı üyeleri olmaya zorlanıp gönderme arabirimleri belirtir.  
+IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ implements(   
+[ implements(   
    interfaces={interfaces},  
    dispinterfaces={dispinterfaces}  
 )]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- **Arabirimleri**  
- Bir virgülle ayrılmış listesi arabirimlerin IDL coclass'ı bir üyesi olur. Tek bir arabirim belirtmek için bir toplu yöntemi **uygular (***interface_name***)**.  
+### <a name="parameters"></a>Parametreler  
+ *Arabirimleri*  
+ Virgülle ayrılmış bir IDL coclass'ı üyesi olacak arabirimlerin listesi. Tek bir arabirim belirtmek için bir toplu yöntemi **uygular (***interface_name***)**.  
   
- **dispinterfaces**  
- Bir virgülle ayrılmış IDL coclass'ı üyesi olacak görüntüleme arabirimi listesi. Tek bir görüntüleme arabirimi belirtmek için bir toplu yöntemi **uygular (dispinterfaces** * dispinterface_name * =**)**.  
+ *görüntüleme*  
+ Virgülle ayrılmış bir IDL coclass'ı üyesi olacak dispinterface listesi. Tek bir dispinterface belirtmek için bir toplu yöntemi **uygular (görüntü arabirimlerinde** * = dispinterface_name ***)**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, yalnızca COM-coclass'ı temel sınıfları olan arabirimler içinde IDL coclass'ı eklenir. **uygulayan** IDL coclass üyesi olacak şekilde diğer arabirimleri zorla olanak tanır.  
+ Varsayılan olarak, yalnızca COM-coclass'ı temel sınıfları, arabirimleri IDL coclass'ı içinde eklenir. **uygulayan** IDL coclass'ı üyesi olacak şekilde diğer arabirimleri zorla olanak tanır.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -53,17 +52,17 @@ IDL coclass'ı üyeleri olmaya zorlanıp gönderme arabirimleri belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Evet|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Evet|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="example"></a>Örnek  
- Üç bölümlerinde aşağıdaki örnektir: .idl dosya ve onun ilişkili .h dosyası ve bir C++ dosyası.  
+ Aşağıdaki örnek, üç bölümlerinde: bir .idl dosyası ve onun ilişkili .h dosyası ve bir C++ dosyası.  
   
- Derleyiciye kullanılabilecek aşağıdaki .idl dosya varsayalım.  
+ Derleyici için kullanılabilecek aşağıdaki .idl dosyası varsayılır.  
   
 ```  
 // attr_implements.idl  
@@ -113,9 +112,9 @@ library odod
 ```  
   
 ## <a name="example"></a>Örnek  
- Ve ayrıca derleyiciye kullanılabilir olması gereken aşağıdaki .h dosyası.  
+ Ve ayrıca derleyicinin kullanılabilir olması gereken aşağıdaki .h dosyası.  
   
-```  
+```cpp  
 // attr_implements.h  
 // this ALWAYS GENERATED file contains definitions for the interfaces  
   
@@ -430,9 +429,9 @@ CBar;
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki programında uygular, olmadan IBar1, IBar2 ve EYOKSA oluşturulan IDL içinde coclass'ı içinde olmaz.  
+ Uygular, olmadan aşağıdaki programı `IBar1`, `IBar2`, ve `ISna` içinde olmayacaktır `coclass` oluşturulan IDL içinde.  
   
-```  
+```cpp  
 // attr_implements.cpp  
 // compile with: /LD /link /idlout:out.idl  
 #define _ATL_ATTRIBUTES 1  

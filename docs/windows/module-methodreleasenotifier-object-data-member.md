@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2ed7505943f71e2fb1817d075d7afaf69323160
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bcc6efe59c71314837ff9c47d9c86c5b7f36c608
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881542"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607238"
 ---
 # <a name="modulemethodreleasenotifierobject-data-member"></a>Module::MethodReleaseNotifier::object_ Veri Üyesi
-Geçerli Module::MethodReleaseNotifier nesnesi için olay işleyicisini, üye işlevi olan nesne için bir işaretçi tutar.  
+Üye işlevi için geçerli olay işleyicisi olan nesneye bir işaretçi tutan **Module::MethodReleaseNotifier** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

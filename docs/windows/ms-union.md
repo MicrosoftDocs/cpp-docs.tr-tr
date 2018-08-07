@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a377995149fda8efd565c30caff9b7791748ed79
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c20b795231cad936f30ef329f015b6ff691aa0d3
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882043"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606705"
 ---
 # <a name="msunion"></a>ms_union
-Ağ veri gösterimi hizalama nonencapsulated birleşimler denetler.  
+Nonencapsulated birleşimler ağ veri gösterimi hizalamasını denetler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [ms_union]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Ms_union** C++ özniteliğine sahip ile aynı işlevselliği [ms_union](http://msdn.microsoft.com/library/windows/desktop/aa367100) MIDL özniteliği.  
+ **Ms_union** C++ özniteliği ile aynı işlevlere sahip [ms_union](http://msdn.microsoft.com/library/windows/desktop/aa367100) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod yerleşimini gösterir **ms_union**:  
+ Aşağıdaki kodda gösterildiği yerleşimini **ms_union**:  
   
-```  
+```cpp  
 // cpp_attr_ref_ms_union.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -70,12 +68,12 @@ __interface IFireTabCtrl {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Nonencapsulated birleşimler|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**dispinterface**|  
+|**İçin geçerlidir**|Nonencapsulated birleşimler|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
+|**Geçersiz öznitelikler**|`dispinterface`|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

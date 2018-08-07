@@ -1,5 +1,5 @@
 ---
-title: Module::GetModule yöntemi | Microsoft Docs
+title: Module::GetModule metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 014a2aeca7876e8fac7a8428388b4d3ead2860a5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 79809a6c9f779e8323f78f3cda91850246350ff2
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875168"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606923"
 ---
 # <a name="modulegetmodule-method"></a>Module::GetModule Metodu
-Bir modül bir örneğini oluşturur.  
+Bir modülün örneği oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,7 +35,7 @@ WRL_NOTHROW static Module& GetModule();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bir modül referansı.  
+ Modül başvuru.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  
@@ -43,5 +43,4 @@ WRL_NOTHROW static Module& GetModule();
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- 
-[Modül Sınıfı](../windows/module-class.md)
+ [Modül Sınıfı](../windows/module-class.md)

@@ -18,21 +18,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 71c0fc9739e7ef8e1e68c5678ce56fcec4a250c1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 82bd3baab698e013b3bfe506877bbdbf0021794b
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880185"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605938"
 ---
 # <a name="partial--c-component-extensions"></a>kısmi (C++ Bileşen Uzantıları)
-`partial` Anahtar sözcüğü bağımsız olarak ve farklı dosyaların yazılmasını aynı ref sınıfı farklı bölümlerini etkinleştirir.  
+**Kısmi** farklı bölümlerini birbirinden bağımsız olarak ve farklı dosyalar yazılması gereken aynı başvuru sınıfı anahtar sözcüğü sağlar.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- (Bu dil özellik yalnızca Windows çalışma zamanı için geçerlidir.)  
+ (Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerlidir.)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- İki kısmi tanımlarına sahip bir ref sınıf için `partial` anahtar sözcüğü tanımı ilk oluşumuna uygulanır ve İnsan Kodlayıcı anahtar sözcüğü çok sık kullanmaz, bu genellikle otomatik olarak oluşturulan kodu tarafından yapılır. İçin tüm sonraki kısmi tanımları sınıfının atlayın `partial` gelen değiştiricisi *sınıf anahtarı* anahtar sözcüğü ve sınıf tanımlayıcısı. Önceden tanımlanmış ref sınıfı ve sınıf tanımlayıcısı ancak hiçbir derleyici karşılaştığında `partial` anahtar sözcüğü, onu dahili olarak tüm ref sınıf tanımının bir tanım içine bölümlerini birleştirir.  
+ İki kısmi tanım var olan bir başvuru sınıfı için **kısmi** anahtar sözcüğü tanımının ilk oluşum için geçerli olduğu ve bir insan Kodlayıcı anahtar sözcüğü çok sık kullanmaz, böylece bu genellikle otomatik olarak oluşturulan kodu tarafından yapılır. İçin tüm sonraki kısmi tanımlar sınıfın atlamak **kısmi** değiştiricisi gelen *sınıf anahtarı* anahtar sözcüğü ve sınıf tanımlayıcısı. Önceden tanımlanmış bir başvuru sınıfı ve sınıf tanımlayıcısı ancak Hayır derleyici karşılaştığında **kısmi** anahtar sözcüğü, dahili olarak tüm ref sınıf tanımında bir tanım bölümlerini birleştirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -50,35 +50,35 @@ class-key identifier {
   
 ### <a name="parameters"></a>Parametreler  
  *sınıf anahtarı*  
- Bir sınıf ya da Windows çalışma zamanı tarafından desteklenen yapı bildiren bir anahtar sözcük. Her iki `ref class`, `value class`, `ref struct`, veya `value struct`.  
+ Bir sınıf ya da Windows çalışma zamanı tarafından desteklenen yapı bildiren bir anahtar sözcük. Her iki **başvuru sınıfı**, **değer sınıfının**, **ref struct**, veya **değeri yapı**.  
   
- *Tanımlayıcı*  
- Tanımlı türünün adı.  
+ *tanımlayıcı*  
+ Tanımlanan bir tür adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kısmi bir sınıf bir dosya ve otomatik kod oluşturma yazılım sınıf tanımının bir parçası, değişiklik burada senaryolarını destekler — Örneğin, XAML Tasarımcısı — başka bir dosya aynı sınıfta kodda değiştirir. Kısmi bir sınıf kullanarak kodunuzu üzerine yazılmasını otomatik kod Oluşturucu engelleyebilir. Visual Studio Proje `partial` değiştiricisi oluşturulan dosya otomatik olarak uygulanır.  
+ Kısmi bir sınıf bir dosya ve otomatik kod oluşturma yazılım bir sınıf tanımının bir parçası, değişiklik burada senaryolarını destekler; Örneğin, XAML Tasarımcısı — başka bir dosyaya aynı sınıftaki kod değiştirir. Kısmi bir sınıf kullanarak kodunuzu silmelerini otomatik kod oluşturucunun engelleyebilirsiniz. Visual Studio projesinde **kısmi** değiştiricisi için oluşturulan dosya otomatik olarak uygulanır.  
   
- İçeriği: iki özel durum ile bir parçalı sınıf tanımı tam sınıf tanımını varsa içerebilecek herhangi bir şey içerebilir `partial` anahtar sözcüğü yoksayıldı. Ancak, sınıf erişilebilirlik belirtilemez (örneğin, `public partial class X { ... };`), veya bir `declspec`.  
+ İçerik: iki özel durum ile bir kısmi sınıf tanımı, tam sınıf tanımının içerebilen her şeyi içerebilir **kısmi** anahtar sözcüğü yoksayıldı. Ancak, sınıf erişilebilirlik belirtemezsiniz (örneğin, `public partial class X { ... };`), veya bir **declspec**.  
   
- Erişim için bir parçalı sınıf tanımında kullanılan tanımlayıcıları *tanımlayıcısı* bir sonraki kısmi veya tam sınıf tanımında varsayılan erişilebilirlik etkilemez *tanımlayıcısı*. Satır içi tanımları statik veri üyeleri izin verilir.  
+ Erişim tanımlayıcıları için bir parçalı sınıf tanımında kullanılan *tanımlayıcı* için bir sonraki kısmi veya tam sınıf tanımı içinde varsayılan erişilebilirlik etkilemez *tanımlayıcı*. Satır içi tanımları statik veri üyelerinin izin verilir.  
   
- Bildirimi: Bir kısmi bir sınıfın tanımını *tanımlayıcısı* yalnızca adı tanıtır *tanımlayıcısı*, ancak *tanımlayıcısı* bir sınıf gerektiren bir şekilde kullanılamaz tanımı. Adı *tanımlayıcısı* boyutunu bilmek kullanılamaz *tanımlayıcısı*, veya bir temel veya üyesi kullanmak için *tanımlayıcısı* kadar tam tanımı derleyici karşılaştığında sonra *tanımlayıcısı*.  
+ Bildirim: Kısmi bir tanımını bir sınıfın *tanımlayıcı* yalnızca adı tanıtan *tanımlayıcı*, ancak *tanımlayıcı* bir sınıf gerektiren bir şekilde kullanılamaz tanımı. Adı *tanımlayıcısı* boyutunu bilmek kullanılamaz *tanımlayıcısı*, veya bir taban veya üye kullanılacak *tanımlayıcı* kadar tam tanımı derleyici karşılaştıktan sonra *tanımlayıcı*.  
   
- Sayı ve sıralama: sıfır veya daha çok parçalı sınıf tanımlarını olabilir *tanımlayıcısı*. Her parçalı sınıf tanımını *tanımlayıcısı* sözcüksel olarak bir tam tanımı gelmelidir *tanımlayıcısı* (varsa tam tanımı; Aksi takdirde sınıfı dışında kullanılamaz olur İleri-bildirilen) ancak, iletme bildirimlerden önce olmayan *tanımlayıcısı*. Tüm sınıf anahtarlarının eşleşmesi gerekir.  
+ Sayı ve sıralama: sıfır veya daha fazla kısmi sınıf tanımları için olabilir *tanımlayıcı*. Her kısmi sınıf tanımını *tanımlayıcı* sözcüksel olarak bir tam tanımı gelmelidir *tanımlayıcı* (varsa tam tanımı için; Aksi takdirde, sınıf dışında kullanılamaz olarak İleri bildirimli) ancak iletme bildirimlerini önünde olmayan *tanımlayıcı*. Tüm sınıfı anahtarları aynı olmalıdır.  
   
- Tam tanımı: sınıfının tam tanımını noktasında *tanımlayıcısı*, aynı davranıştır gibi tanımını *tanımlayıcısı* bildirilen tüm temel sınıflar, üyeler, vb. hangi sırayla Bunlar karşılaştı ve kısmi sınıflarda tanımlanan.  
+ Tam tanımı: sınıfın tam tanımlarken *tanımlayıcı*, aynı durum geçerlidir gibi tanımını *tanımlayıcı* bildirilmiş tüm temel sınıflar, üyeler, vb. hangi sırayla Bunlar karşılaştı ve kısmi sınıflarında tanımlanan.  
   
- Şablonlar: Bir şablon bir parçalı sınıf olamaz.  
+ Şablonları: Şablon bir parçalı sınıf olamaz.  
   
- Genel türler: tam tanımı genel bir parçalı sınıf genel olabilir. Ancak her kısmi ve tam sınıfı biçimsel parametresi adları dahil olmak üzere tam olarak aynı genel parametreleri, olması gerekir.  
+ Genel türler: tam tanımı genel bir parçalı sınıf genel olabilir. Ancak her kısmi ve tam sınıf tam olarak biçimsel parametre adları da dahil olmak üzere aynı genel parametre olmalıdır.  
   
- Nasıl kullanılacağı hakkında daha fazla bilgi için `partial` anahtar sözcüğü, bkz: [kısmi sınıflar (C + +/ CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023).  
+ Nasıl kullanılacağı hakkında daha fazla bilgi için **kısmi** anahtar sözcüğü, bkz: [kısmi sınıflar (C + +/ CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
- (Bu dil özelliği ortak dil çalışma zamanı için uygulanmaz.)  
+ (Bu dil özelliği ortak dil çalışma zamanı için geçerli değildir.)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kısmi sınıflar (C + +/ CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023)

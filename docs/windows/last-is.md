@@ -17,34 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f27c0a12ddf5fe87f7065a16d042bd0afcfc0315
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d0519409e71457ca025318a591772faf33592abe
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877527"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606074"
 ---
 # <a name="lastis"></a>last_is
-Aktarılacak son dizi öğesinden dizinini belirtir.  
+Aktarılacak olan son dizi öğenin dizinini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ last_is(  
+[ last_is(  
    "expression"  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- *ifade*  
- C dili ifadeleri bir veya daha fazla. Boş bağımsız değişkeni yuvaları izin verilir.  
+### <a name="parameters"></a>Parametreler  
+ *İfade*  
+ Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin verilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Last_is** C++ özniteliğine sahip ile aynı işlevselliği [last_is](http://msdn.microsoft.com/library/windows/desktop/aa367066) MIDL özniteliği.  
+ **Last_is** C++ özniteliği ile aynı işlevlere sahip [last_is](http://msdn.microsoft.com/library/windows/desktop/aa367066) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [first_is](../windows/first-is.md) bir dizi bir bölümünü belirleme konusunda bir örneği.  
+ Bkz: [first_is](../windows/first-is.md) örneği nasıl bir dizinin bir bölümünü belirtin.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -52,12 +51,12 @@ Aktarılacak son dizi öğesinden dizinini belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|İçinde alan `struct` veya **UNION**, parametre arabirim, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

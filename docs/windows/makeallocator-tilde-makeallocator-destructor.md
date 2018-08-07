@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f0734f895315f1c8ba7577d531c54a9dc11381e7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2e31f666ca6263a9b9b770261a0899bcad1bc8fd
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877105"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606315"
 ---
 # <a name="makeallocatormakeallocator-destructor"></a>MakeAllocator::~MakeAllocator Yok Edicisi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,9 +34,9 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- MakeAllocator sınıfı, geçerli örneğini deinitializes.  
+ Geçerli örneğinin başlatmasını geri alır **MakeAllocator** sınıfı.  
   
- Bu yıkıcı gerekirse, temel alınan ayrılmış bellek da siler.  
+ Bu yok edici temel alınan ayrılmış bellek gerekirse da siler.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

@@ -17,15 +17,15 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95a3f8508c17936626558ecc6a8d01e21688d403
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a5b1c5fed776e5e9312843160a740fd3d801b196
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892458"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608553"
 ---
 # <a name="safecast"></a>SafeCast
-Başka bir tür sayıya bir tür çevirir.  
+Bir başka bir türe sayı türü çevirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,23 +37,23 @@ inline bool SafeCast (
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- [in] `From`  
- Dönüştürülecek kaynak numarası. Bu t türünde olmalıdır  
+### <a name="parameters"></a>Parametreler  
+ [in] *Gelen*  
+ Dönüştürülecek kaynak sayısı. Bu tür olmalıdır `T`.  
   
- [out] `To`  
- Yeni sayı türü referansı. Bu türü u olmalıdır  
+ [out] *İçin*  
+ Yeni bir sayı türü referansı. Bu tür olmalıdır `U`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` herhangi bir hata oluşursa; `false` bir hata oluşursa.  
+ **doğru** Eğer hiç Hata oluşmazsa; **false** hata oluşması durumunda.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem parçası olan [SafeInt Kitaplığı](../windows/safeint-library.md) ve bir örneğini oluşturmak zorunda kalmadan tek atama işlemi için tasarlanmış [SafeInt sınıfı](../windows/safeint-class.md).  
+ Bu yöntem, parçasıdır [SafeInt Kitaplığı](../windows/safeint-library.md) örneği oluşturulmadan tek atama işlemi için tasarlanmış ve [SafeInt sınıfı](../windows/safeint-class.md).  
   
 > [!NOTE]
->  Bu yöntem yalnızca tek bir işlem korumalı kullanılmalıdır. Birden çok işlemi varsa, kullanması gereken `SafeInt` tek tek tek başına işlevleri çağırmak yerine sınıfı.  
+>  Bu yöntem, yalnızca tek bir işlem korunması gereken durumlarda kullanılmalıdır. Birden çok işlem varsa, kullanması gereken `SafeInt` tek tek başına işlevleri çağırmak yerine sınıfı.  
   
- T ve U şablonu türleri hakkında daha fazla bilgi için bkz: [SafeInt işlevleri](../windows/safeint-functions.md).  
+ T ve U şablon türleri hakkında daha fazla bilgi için bkz. [SafeInt işlevleri](../windows/safeint-functions.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** safeint.h  

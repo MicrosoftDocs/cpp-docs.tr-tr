@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d741494d33cba7b1d19e2ce081bad35eaaf283e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a9b0102ad6ba7b11ea2f0c738983385ffda632ca
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878261"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606481"
 ---
 # <a name="requestedit"></a>requestedit
-Özellik desteklediğini gösterir **OnRequestEdit** bildirim.  
+Özelliğin desteklediğini belirtir `OnRequestEdit` bildirim.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [requestedit]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Requestedit** C++ özniteliğine sahip ile aynı işlevselliği [requestedit](http://msdn.microsoft.com/library/windows/desktop/aa367155) MIDL özniteliği.  
+ **Requestedit** C++ özniteliği ile aynı işlevlere sahip [requestedit](http://msdn.microsoft.com/library/windows/desktop/aa367155) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) bir örnek kullanım için **requestedit**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) örnek kullanımı için **requestedit**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,9 +45,9 @@ ms.locfileid: "33878261"
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

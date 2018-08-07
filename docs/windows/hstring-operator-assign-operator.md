@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6fd1082beb6d84c5dded008e20683f7292cbc1e0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9cc496f4f1c23508b2ebba2788910ff9c9ca2066
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873878"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608605"
 ---
 # <a name="hstringoperator-operator"></a>HString::Operator= İşleci
-Başka bir HString nesnenin değerini geçerli HString nesneye taşır.  
+Başka bir değer taşır **Hstrıng** geçerli nesneye **Hstrıng** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,12 +31,12 @@ Başka bir HString nesnenin değerini geçerli HString nesneye taşır.
 HString& operator=(HString&& other) throw()  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `other`  
- Varolan bir HString nesne.  
+### <a name="parameters"></a>Parametreler  
+ *Diğer*  
+ Mevcut bir **Hstrıng** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Var olan değerin `other` nesne geçerli HString nesnesine kopyalanır ve ardından `other` nesne yok.  
+ Varolan değerin *diğer* nesne geçerli kopyalanır **Hstrıng** nesnesi ve ardından *diğer* nesnesi yok edildiğinde.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

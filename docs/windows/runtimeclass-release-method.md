@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3d07e941f3f8ee0d7df2df14216fa60ef3a2a706
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1c1f9500abc1c92ea5f9aca64e379adfdcf84a44
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888802"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607530"
 ---
 # <a name="runtimeclassrelease-method"></a>RuntimeClass::Release Yöntemi
-Geçerli RuntimeClass nesne üzerinde bir COM yayın işlemi gerçekleştirir.  
+Geçerli bir COM yayınında işlemi gerçekleştirir **RuntimeClass** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,10 +37,10 @@ STDMETHOD_(
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Başvuru sayısı sıfır olursa, RuntimeClass Nesne silindi.  
+ Başvuru sayısı sıfır olduğunda **RuntimeClass** nesnesi silinir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

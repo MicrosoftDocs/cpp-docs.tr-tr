@@ -19,15 +19,15 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ef3c1d11c0f814699ca1492f7ec1fb49c43c3d76
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 744bf034572745cd88a35f47a1ca2da03e900fd8
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892182"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606663"
 ---
 # <a name="safeintexceptionsafeintexception"></a>SafeIntException::SafeIntException
-Oluşturur bir `SafeIntException` nesnesi.  
+Oluşturur bir **Safeıntexception** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,12 +39,12 @@ SafeIntException(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- [in] `code`  
+### <a name="parameters"></a>Parametreler  
+ [in] *kod*  
  Oluşan hatayı açıklayan bir numaralandırılmış veri değeri.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Olası değerler için `code` Safeint.h dosyasında tanımlanır. Kolaylık sağlamak için olası değerler da burada listelenir.  
+ Olası değerler için *kod* Safeint.h dosyasında tanımlanır. Kolaylık olması için olası değerler de burada listelenir.  
   
 -   `SafeIntNoError`  
   

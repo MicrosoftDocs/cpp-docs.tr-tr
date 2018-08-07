@@ -17,30 +17,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 559d149cfbe2fac7a5d648d56cb4e34d427cedc8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 984731d85bafe3c0e6bb0d8f6092800019b40663
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877702"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608192"
 ---
 # <a name="odl"></a>odl
-Arabirim bir nesne Açıklama Dili (ODL) arabirimi olarak tanımlar. MIDL derleyici gerektirmez **odl** özniteliği; yalnızca eski .odl dosyaları ile uyumluluk için tanınmıyor.  
+Arabirimdeki bir nesne Açıklama Dili (ODL) arabirim tanımlar. MIDL derleyicisi gerektirmez **odl** özniteliği; yalnızca eski .odl dosyaları ile uyumluluk için kabul edilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [odl]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Odl** C++ özniteliğine sahip ile aynı işlevselliği [odl](http://msdn.microsoft.com/library/windows/desktop/aa367126) MIDL özniteliği.  
+ **Odl** C++ özniteliği ile aynı işlevlere sahip [odl](http://msdn.microsoft.com/library/windows/desktop/aa367126) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_odl.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -66,9 +64,9 @@ public:
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**interface**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

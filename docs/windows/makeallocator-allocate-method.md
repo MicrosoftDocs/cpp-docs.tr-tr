@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d0e8d387dea7687ad61d85f975d58aa47489266d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 06f8db4c713feb69e0037d10879383411ea07007
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876223"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606269"
 ---
 # <a name="makeallocatorallocate-method"></a>MakeAllocator::Allocate Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,14 +34,14 @@ __forceinline void* Allocate();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, ayrılmış bellek için; bir işaretçi Aksi takdirde `nullptr`.  
+ Başarılı olursa, ayrılan bellek; işaretçisi Aksi takdirde, **nullptr**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bellek ayırır ve geçerli MakeAllocator nesnesi ile ilişkilendirir.  
+ Bellek ayırır ve geçerli ilişkilendirir **MakeAllocator** nesne.  
   
- Ayrılmış bellek boyutu geçerli MakeAllocator şablon parametresi tarafından belirtilen tür boyutudur.  
+ Ayrılan bellek boyutu geçerli belirtilen tür boyutudur **MakeAllocator** şablon parametresi.  
   
- Bir geliştirici farklı bellek ayırma modeli uygulamak için yalnızca Allocate() yöntemini geçersiz kılın gerekiyor.  
+ Yalnızca geçersiz kılmak bir geliştiricinin ihtiyaç duyduğu **Allocate()** farklı bellek ayırma modeli uygulamak için yöntemi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

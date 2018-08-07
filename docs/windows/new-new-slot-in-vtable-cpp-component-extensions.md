@@ -1,5 +1,5 @@
 ---
-title: Yeni (vtable'de yeni yuva) (C++ bileşen uzantıları) | Microsoft Docs
+title: Yeni (vtable'da yeni yuva) (C++ bileşen uzantıları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,42 +15,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7189909f3cff84d2bb1a767e4ddeda817bcd6128
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 32452b4fd44aed2bc399165b3184d974f22d90b6
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879789"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607017"
 ---
 # <a name="new-new-slot-in-vtable--c-component-extensions"></a>yeni (vtable'da yeni yuva) (C++ Bileşen Uzantıları)
-`new` Anahtar sözcüğü gösterir sanal üyesi vtable'de yeni yuva alırsınız.  
+**Yeni** anahtar sözcüğü, sanal üyenin vtable'da yeni yuva aldığını gösterir.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- (Tüm çalışma zamanları için geçerli hiçbir açıklamalar için bu dil özelliği vardır.)  
+ (Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
  Windows çalışma zamanı'nda desteklenmiyor.  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
- İçinde bir **/CLR** derleme `new` sanal üyesi vtable'de yeni yuva alırsınız; işlevi bir temel sınıf yöntemi kılmaz gösterir.  
+ İçinde bir `/clr` derleme **yeni** sanal üyenin vtable'da yeni yuva alırsınız; işlev temel sınıf yöntemini geçersiz kılmaz gösterir.  
   
- `new` işlev için IL eklenecek newslot değiştiricisi neden olur.  Newslot hakkında daha fazla bilgi için bkz:  
+ **Yeni** işlevi için IL eklenecek newslot değiştiricisine neden olur.  Newslot hakkında daha fazla bilgi için bkz:  
   
--   [MethodInfo.GetBaseDefinition yöntemi](https://msdn.microsoft.com/en-us/library/system.reflection.methodinfo.getbasedefinition.aspx)  
+-   [MethodInfo.getbasedefinition yöntemi](https://msdn.microsoft.com/library/system.reflection.methodinfo.getbasedefinition.aspx)  
   
--   [Hatalı MethodAttributes numaralandırması](https://msdn.microsoft.com/en-us/library/system.reflection.methodattributes.aspx)  
+-   [MethodAttributes numaralandırma](https://msdn.microsoft.com/library/system.reflection.methodattributes.aspx)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
- Aşağıdaki örnek etkisini gösterir `new`.  
+ Aşağıdaki örnek etkisini gösterir **yeni**.  
   
-```  
+```cpp  
 // newslot.cpp  
 // compile with: /clr  
 ref class C {  

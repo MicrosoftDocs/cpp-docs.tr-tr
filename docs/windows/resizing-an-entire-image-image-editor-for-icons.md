@@ -1,5 +1,5 @@
 ---
-title: Görüntünün tümünü (simgeler için görüntü Düzenleyicisi) yeniden boyutlandırma | Microsoft Docs
+title: Yeniden boyutlandırma (simgeler için görüntü Düzenleyicisi) görüntünün | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,34 +18,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 15bf797b56882b320368f5396c2d1755f986a3e4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f9104feac603819b9420d315e619182722c87474
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882660"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606224"
 ---
 # <a name="resizing-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Yeniden Boyutlandırma (Simgeler İçin Görüntü Düzenleyicisi)
-### <a name="to-resize-an-entire-image-using-the-properties-window"></a>Özellikler penceresini kullanarak görüntünün tümünü yeniden boyutlandırmak için  
+### <a name="to-resize-an-entire-image-using-the-properties-window"></a>Özellikler penceresini kullanarak görüntünün tümünü yeniden boyutlandırma  
   
 1.  Özelliklerini değiştirmek istediğiniz görüntüyü açın.  
   
-2.  İçinde **genişliği** ve **yükseklik** kutularındaki [Özellikler penceresini](/visualstudio/ide/reference/properties-window), istediğiniz boyutları yazın.  
+2.  İçinde **genişliği** ve **yükseklik** kutularındaki [Özellikler penceresi](/visualstudio/ide/reference/properties-window), istediğiniz boyutları yazın.  
   
-     Görüntü boyutunu artırmayı, görüntü Düzenleyicisi resmi sağa, aşağı, veya her ikisini de genişletir ve yeni bölge geçerli arka plan rengiyle doldurur. Görüntü uzatılabilir değil.  
+     Resmin boyutu artırıyorsunuz, Resim Düzenleyicisi resmi sağa, aşağı, veya her ikisi de genişletir ve yeni bölge geçerli arka plan rengi ile doldurur. Görüntü uzatılabilir değil.  
   
-     Görüntü boyutunu azaltmak, görüntü Düzenleyicisi sağa veya alt kenarı veya her ikisi de resmi kırpar.  
+     Görüntü boyutunu azaltarak, Resim Düzenleyicisi'ni sağ alt kenarı veya her ikisi de resmi kırpar.  
   
     > [!NOTE]
-    >  Width ve Height özellikleriyle kısmi bir seçim değil yeniden boyutlandırmak için tüm görüntüyü yalnızca yeniden boyutlandırmak için kullanabilirsiniz.  
+    >  Genişlik ve yükseklik özellikleriyle, kısmi bir seçim değil yeniden boyutlandırmak için tüm görüntü yalnızca yeniden boyutlandırmak için kullanabilirsiniz.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)
-

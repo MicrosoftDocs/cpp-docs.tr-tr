@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e30b3ea3c6b791eb654a6fbbe91b3c87353f31c1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 673d5b10706580303f179ee453495b581d96eda3
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882647"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608341"
 ---
 # <a name="hstringmakereference-method"></a>HString::MakeReference Yöntemi
-HStringReference nesneyi belirtilen string parametresinden oluşturur.  
+Oluşturur bir `HStringReference` nesnesinden belirtilen dize parametresi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,18 +38,18 @@ template<unsigned int sizeDest>
               unsigned int len);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `sizeDest`  
- Şablon parametresi hedef HStringReference arabellek boyutunu belirtir.  
+### <a name="parameters"></a>Parametreler  
+ *sizeDest*  
+ Hedef boyutunu belirten bir şablon parametresi `HStringReference` arabellek.  
   
- `str`  
- Bir joker karakter dizesi referansı.  
+ *str*  
+ Bir geniş karakter dizesi bir başvuru.  
   
- `len`  
- En büyük uzunluğu `str` bu işlemde kullanılacak parametre arabelleği. Varsa `len` değil parametresi belirtilmezse, tüm `str` parametresi kullanılır.  
+ *Len*  
+ En büyük uzunluğunu *str* parametre arabelleği bu işlemi kullanmak için. Varsa *len* parametresi belirtilmediyse, tüm *str* parametresi kullanılır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Değeri belirtilen türle aynı olan bir HStringReference nesne `str` parametresi.  
+ Bir `HStringReference` değeri belirtilen türle aynı olan nesne *str* parametresi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

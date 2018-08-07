@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e1dc6de0d4c3bc5bb723b1dbb39f146a49fe7ba8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d648577d03507154c8e3b226fa00e3f03dc25abc
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876364"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608514"
 ---
 # <a name="modulebasemodulebase-destructor"></a>ModuleBase::~ModuleBase Yok Edicisi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,7 +34,7 @@ virtual ~ModuleBase();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- ModuleBase sınıfı, geçerli örneğini deinitializes.  
+ Geçerli örneğinin başlatmasını geri alır **ModuleBase** sınıfı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

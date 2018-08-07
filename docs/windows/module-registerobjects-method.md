@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 986dcfff49529eedd8d495f4c37e19fa2b6cb8bc
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bdaa1b23bbefb64071e5f1f330c8708f9f9516ad
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875350"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605272"
 ---
 # <a name="moduleregisterobjects-method"></a>Module::RegisterObjects Yöntemi
 Diğer uygulamalar için bağlanabilmesi için COM veya Windows çalışma zamanı nesneleri kaydeder.  
@@ -35,15 +35,15 @@ HRESULT RegisterObjects(
    const wchar_t* serverName);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `module`  
- COM veya Windows çalışma zamanı nesnelerinin bir dizisi.  
+### <a name="parameters"></a>Parametreler  
+ *Modülü*  
+ COM veya Windows çalışma zamanı nesneleri dizisi.  
   
- `serverName`  
- Nesneleri oluşturma sunucunun adıdır.  
+ *SunucuAdı*  
+ Nesneleri oluşturan sunucunun adı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, nedenini belirten bir HRESULT işlemi başarısız oldu.  
+ Başarılıysa S_OK; Aksi takdirde, nedenini belirten bir HRESULT, işlem başarısız oldu.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

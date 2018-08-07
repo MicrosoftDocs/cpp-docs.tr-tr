@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eb005bc3cbf411a7d5b5ddbfa44cd6aecf802105
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 69775303c5a12f82ef2a31cc61112af4b14d3aad
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879548"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606175"
 ---
 # <a name="removeiunknown-class"></a>RemoveIUnknown Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -39,22 +39,22 @@ template <
 class RemoveIUnknown : public T;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
+### <a name="parameters"></a>Parametreler  
+ *T*  
  Bir sınıf.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Eşdeğer olan bir tür yapar bir `IUnknown`-tabanlı ancak türünde olmayan `QueryInterface`, `AddRef`, ve `Release` üye işlevleri.  
+ Eşdeğer olan bir tür yapar bir `IUnknown`-tabanlı ancak türünde sanal olmayan `QueryInterface`, `AddRef`, ve `Release` üye işlevleri.  
   
- Varsayılan olarak, COM yöntemleri sanal sağlamak `QueryInterface`, `AddRef`ve yayın yöntemleri. Ancak, `ComPtr` sanal yöntemler yükü gerektirmez. `RemoveIUnknown` özel, sanal olmayan sağlayarak bu ek yükü ortadan kaldırır `QueryInterface`, `AddRef`, ve `Release` yöntemleri.  
+ Varsayılan olarak, COM yöntemleri sanal sağlamak `QueryInterface`, `AddRef`, ve `Release` yöntemleri. Ancak, `ComPtr` sanal yöntemler getirdiği ek yüke gerek kalmaz. `RemoveIUnknown` özel, sanal olmayan sağlayarak bu ek yükü ortadan kalkar `QueryInterface`, `AddRef`, ve `Release` yöntemleri.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`ReturnType`|Şablon parametresi için eşdeğer bir gruba bir tür için eş anlamlı `T` ancak sanal olmayan IUnknown üyeler içeriyor.|  
+|`ReturnType`|Şablon parametresine eşdeğerdir bir türe ilişkin bir eşanlam *T* ancak sanal olmayan `IUnknown` üyeleri.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `T`  

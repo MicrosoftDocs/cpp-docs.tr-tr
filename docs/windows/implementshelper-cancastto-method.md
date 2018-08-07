@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6de971f2de2421a2d7987dab30ba73fa2d225b15
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a60f2e45e276592c7c1223526cd002bdc6e79013
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876559"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605486"
 ---
 # <a name="implementshelpercancastto-method"></a>ImplementsHelper::CanCastTo Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -30,7 +30,6 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 HRESULT CanCastTo(  
    REFIID riid,  
    _Deref_out_ void **ppv  
@@ -42,21 +41,21 @@ HRESULT CanCastTo(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `riid`  
- Bir arabirim kimliği başvurusu  
+### <a name="parameters"></a>Parametreler  
+ *riid*  
+ Başvuru için bir arabirim kimliği.  
   
- `ppv`  
- Bu işlem başarılı olursa, arabirim için bir işaretçi tarafından belirtilen `riid` veya `iid`.  
+ *ppv*  
+ Bu işlem başarılı olursa, arabirim işaretçisi tarafından belirtilen *riid* veya *IID*.  
   
- `iid`  
- Bir arabirim kimliği başvurusu  
+ *IID*  
+ Başvuru için bir arabirim kimliği.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir işaretçi için belirtilen arabirim kimliği alır.  
+ Belirtilen arabirim kimliği için bir işaretçi alır  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

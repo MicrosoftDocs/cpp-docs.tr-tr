@@ -17,12 +17,12 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0264fbd8df7f1dec5d20b40a67299cb4502b72aa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7c5698a85e17a8dbcb483dcd5468289df8afadcc
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892676"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605051"
 ---
 # <a name="safedivide"></a>SafeDivide
 Sıfıra bölme karşı koruyan bir şekilde iki sayıyı böler.  
@@ -38,26 +38,26 @@ inline bool SafeDivide (
 ) throw ();  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- [in] `t`  
+### <a name="parameters"></a>Parametreler  
+ [in] *t*  
  Bölen. Bu t türünde olmalıdır  
   
- [in] `u`  
- Kar payı. Bu türü u olmalıdır  
+ [in] *u*  
+ Kar payı. Bu u türü olmalıdır  
   
- [out] `result`  
- Parametre nerede `SafeDivide` sonucu depolar.  
+ [out] *sonucu*  
+ Parametrenin nereden **SafeDivide** sonucu depolar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` herhangi bir hata oluşursa; `false` bir hata oluşursa.  
+ **doğru** Eğer hiç Hata oluşmazsa; **false** hata oluşması durumunda.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem parçası olan [SafeInt Kitaplığı](../windows/safeint-library.md) ve bir örneğini oluşturmak zorunda kalmadan tek bölme işlemi için tasarlanmış [SafeInt sınıfı](../windows/safeint-class.md).  
+ Bu yöntem, parçasıdır [SafeInt Kitaplığı](../windows/safeint-library.md) örneği oluşturmaya gerek kalmadan tek bir bölme işlemi için tasarlanmış ve [SafeInt sınıfı](../windows/safeint-class.md).  
   
 > [!NOTE]
->  Bu yöntem yalnızca tek bir matematik işlemi korunmalıdır zaman kullanılmalıdır. Birden çok işlemi varsa, kullanması gereken `SafeInt` tek tek tek başına işlevleri çağırmak yerine sınıfı.  
+>  Bu yöntem, yalnızca tek bir matematiksel işlem korunması gereken durumlarda kullanılmalıdır. Birden çok işlem varsa, kullanması gereken `SafeInt` tek tek başına işlevleri çağırmak yerine sınıfı.  
   
- T ve U şablonu türleri hakkında daha fazla bilgi için bkz: [SafeInt işlevleri](../windows/safeint-functions.md).  
+ T ve U şablon türleri hakkında daha fazla bilgi için bkz. [SafeInt işlevleri](../windows/safeint-functions.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** safeint.h  

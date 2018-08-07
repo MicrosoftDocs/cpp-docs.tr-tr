@@ -20,59 +20,58 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5626e370dbeac9339dd603781e96f64377308899
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6aae190e20776c252b7f40651d5c0bdb13111dab
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879444"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606256"
 ---
 # <a name="menu-editor"></a>Menü Düzenleyicisi
-Menüleri, mantıksal ve bulma kolay bir şekilde komutları düzenlemek izin verir. Menü düzenleyicisi ile oluşturabilir ve doğrudan yakından tamamlanmış uygulamanızda benzer bir menü çubuğu ile çalışarak menüleri düzenleyebilirsiniz.  
+Menü komutları mantıksal ve bulma kolay bir şekilde Yerleştir olanak sağlar. Menü düzenleyicisi ile oluşturabilir ve menüler doğrudan tamamlanmış uygulamanızdaki bir çok benzeyen bir menü çubuğu birlikte çalışarak Düzenle.  
   
- Visual C++ projeleri için Menü Düzenleyici'ye kullanabilirsiniz:  
+Visual C++ projeleri için menü düzenleyici için kullanabilirsiniz:  
   
--   [Menüleri oluşturma](../windows/creating-a-menu.md)  
+-   [Menüler oluşturma](../windows/creating-a-menu.md)  
   
--   [Varolan menülerin arasına yeni menü ekleme](../windows/inserting-a-new-menu-between-existing-menus.md)  
+-   [Mevcut menülerin arasına yeni menü ekleme](../windows/inserting-a-new-menu-between-existing-menus.md)  
   
--   [Menü komutu oluşturun](../windows/adding-commands-to-a-menu.md)  
+-   [Bir menü komutu oluşturun](../windows/adding-commands-to-a-menu.md)  
   
 -   [Alt menü oluşturma](../windows/creating-a-submenu.md)  
   
 -   [Menüleri ve menü komutlarını seçin](../windows/selecting-multiple-menus-or-menu-commands.md)  
   
--   [Taşıma ve menüleri ve menü komutlarını kopyalama](../windows/moving-and-copying-menus-and-menu-commands.md)  
+-   [Menüleri ve menü komutlarını kopyalama ve taşıma](../windows/moving-and-copying-menus-and-menu-commands.md)  
   
 -   [Açılır menüler oluşturma](../windows/creating-pop-up-menus.md)  
   
--   [Uygulamanıza açılır menü Bağlan](../windows/connecting-a-pop-up-menu-to-your-application.md)  
+-   [Açılır menü, uygulamanızı bağlayın](../windows/connecting-a-pop-up-menu-to-your-application.md)  
   
--   [Menü kaynağı açılır menü olarak görüntüleme](../windows/viewing-a-menu-as-a-pop-up-menu.md)  
+-   [Bir menü kaynağı açılır menü olarak görüntüleme](../windows/viewing-a-menu-as-a-pop-up-menu.md)  
   
--   [Menü komutunu Hızlandırıcı tuşuyla ilişkilendirme](../windows/associating-a-menu-command-with-an-accelerator-key.md)  
+-   [Bir menü komutunu Hızlandırıcı tuşuyla ilişkilendirme](../windows/associating-a-menu-command-with-an-accelerator-key.md)  
   
--   [Menü komutu ile durum çubuğu metniyle ilişkilendirme](../windows/associating-menu-commands-with-status-bar-text-in-mfc-applications.md)  
+-   [Bir menü komutu ile durum çubuğu metniyle ilişkilendirme](../windows/associating-menu-commands-with-status-bar-text-in-mfc-applications.md)  
   
 -   [Menü Komutlarına Erişim Tuşu Atama](../windows/assigning-access-keys-to-menu-commands.md)  
   
 -   [Menü komut özellikleri değiştirme](../windows/menu-command-properties.md)  
   
     > [!TIP]
-    >  Çoğu durumda menü Düzenleyicisi'ni kullanırken, sık kullanılan komutlar açılır menüsünü görüntülemek için sağ fare düğmesini tıklatabilirsiniz. Kullanılabilir komutlar ne işaretçi işaret ettiğinden üzerinde bağlıdır.  
+    >  Çoğu durumda, menü düzenleyicisini kullanırken, sık kullanılan komutlar açılan menüsünü görüntülemek için sağ fare düğmesine tıklayabilirsiniz. Kullanılabilir komutlar ne işaretçinin işaret ettiği üzerinde bağlıdır.  
   
     > [!NOTE]
-    >  Microsoft Foundation Class Kitaplığı (MFC) programları ve ATL programlar için kod menü komutlarına bağlanmanıza kod sihirbazları kullanabilirsiniz. Daha fazla bilgi için bkz: [olay ekleme](../ide/adding-an-event-visual-cpp.md).  
+    >  Microsoft Foundation Class Kitaplığı'nı (MFC) programları ve ATL programları için kod menü komutlarına yeteneklerinizi kod sihirbazlarını kullanabilirsiniz. Daha fazla bilgi için [olay ekleme](../ide/adding-an-event-visual-cpp.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak dosyaları ile çalışma](../windows/working-with-resource-files.md)   
+ [Kaynak dosyalarıyla çalışma](../windows/working-with-resource-files.md)   
  [Kaynak düzenleyicileri](../windows/resource-editors.md)   
  [Kullanıcı arabirimi nesneleri ve komut kimlikleri](../mfc/user-interface-objects-and-command-ids.md)   
- [Menüleri](../mfc/menus-mfc.md)   
+ [Menüler](../mfc/menus-mfc.md)   
  [Menüler](http://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)
-

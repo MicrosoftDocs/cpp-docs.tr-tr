@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3ac9784e450746a4474879aae346a4242bbe2fd2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fc11561401ff34b629fecdc31a00ffb845d6a2d8
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878196"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606806"
 ---
 # <a name="propputref"></a>propputref
-Bir başvuru yerine bir değer kullanır özellik ayarı işlevi belirtir.  
+Bir değer yerine başvurur bir özellik ayarı işlevi belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [propputref]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Propputref** C++ özniteliğine sahip ile aynı işlevselliği [propputref](http://msdn.microsoft.com/library/windows/desktop/aa367147) MIDL özniteliği.  
+ **Propputref** C++ özniteliği ile aynı işlevlere sahip [propputref](http://msdn.microsoft.com/library/windows/desktop/aa367147) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) bir örnek kullanım için **propputref**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) örnek kullanımı için **propputref**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,10 +45,10 @@ Bir başvuru yerine bir değer kullanır özellik ayarı işlevi belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Yöntem|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**propget**, **propput**|  
+|**İçin geçerlidir**|Yöntem|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
+|**Geçersiz öznitelikler**|`propget`, `propput`|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8cd8fa2106ac3792c0352aa40ea34b049c1e5ce4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4f284514472796f22d176325a0223848a827c85c
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878531"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606455"
 ---
 # <a name="interfacetraitscasttobase-method"></a>InterfaceTraits::CastToBase Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,18 +36,18 @@ static __forceinline Base* CastToBase(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Parametrenin türü `ptr`.  
+### <a name="parameters"></a>Parametreler  
+ *T*  
+ Parametresinin türü *ptr*.  
   
- `ptr`  
- İşaretçi türü `T`.  
+ *ptr*  
+ Bir tür işaretçisi *T*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi `Base`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir işaretçi belirtilen işaretçisine bıraktığı `Base`.  
+ Belirtilen bir işaretçi işaretçisi bıraktığı `Base`.  
   
  Hakkında daha fazla bilgi için `Base`, genel tür tanımları bölümüne bakın [Interfacetraits yapısı](../windows/interfacetraits-structure.md).  
   

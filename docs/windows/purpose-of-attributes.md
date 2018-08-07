@@ -15,25 +15,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0ea3b731cc22d144e2e20dc70f14e6b0b76b1479
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2ca7757c1b9a8ebf034f68b9a380c09d4a5b08f1
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877842"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607030"
 ---
 # <a name="purpose-of-attributes"></a>Özniteliklerin Amacı
-Öznitelikleri C++ dili Klasik yapısını bozmadan şu anda olası yönde genişletir. Öznitelikleri sağlayıcıları (dinamik olarak dil işlevselliğini genişletmek için ayrı DLL'ler) izin verir. Öznitelikleri birincil amacı, bileşen Geliştirici üretkenliği düzeyini artırma ek olarak, COM bileşenlerini yazma kolaylaştırmaktır. Öznitelikleri uygulanabilir sınıfları, veri üyeleri veya üye işlevleri gibi neredeyse tüm C++ yapı için. Bu yeni teknoloji tarafından sağlanan avantajlarından Vurgu verilmiştir:  
+Öznitelikleri, C++ dil Klasik yapısını bozmadan şu anda mümkün yönde genişletin. Öznitelikleri sağlayıcıları (dinamik olarak dil işlevlerini genişletmek için ayrı DLL'ler) sağlar. Öznitelikleri birincil amacı, bileşen Geliştirici üretkenliği düzeyini artırmak ek olarak, COM bileşenleri geliştirme kolaylaştırmaktır. Öznitelikleri uygulanabilir sınıfları, veri üyeleri veya üye işlevleri gibi neredeyse tüm C++ yapı için. Bu yeni teknoloji tarafından sağlanan avantajların bir Vurgu verilmiştir:  
   
--   Tanıdık ve basit bir çağırma kullanıma sunar.  
+-   Tanıdık ve basit bir çağırma kuralı kullanıma sunar.  
   
--   Kullanır, makroları farklı olarak, hata ayıklayıcı tarafından tanınan kodu eklenir.  
+-   Kullanır, makroları, hata ayıklayıcı tarafından tanınan kod eklenir.  
   
--   Temel sınıflar sıkıcı uygulama ayrıntılarını olmadan kolay türetmeye izin verir.  
+-   Kolay qname'den türetme sıkıcı uygulama ayrıntılarını olmadan temel sınıflar sağlar.  
   
--   IDL kod birkaç kısa özniteliklere sahip bir COM bileşeni tarafından gereken büyük miktarda yerini alır.  
+-   IDL kod gerekli birkaç kısa özniteliklere sahip bir COM bileşeni tarafından büyük miktarda değiştirir.  
   
- Örneğin, bir basit olay havuz için genel bir ATL sınıf uygulamak için uygulanabilir [event_receiver](../windows/event-receiver.md) gibi belirli bir sınıfa öznitelik `CMyReceiver`. **Event_receiver** özniteliği uygun kodu nesne dosyasına ekler Visual C++ derleyicisi tarafından derlenen sonra.  
+ Örneğin, bir basit olay havuzu için genel bir ATL sınıf uygulamak için uygulayabilirsiniz [event_receiver](../windows/event-receiver.md) gibi belirli bir sınıfa öznitelik `CMyReceiver`. `event_receiver` Özniteliği uygun kod nesnesi dosyasına ekler için Visual C++ derleyicisi tarafından derlenen sonra.  
   
 ```  
 [event_receiver(com)]  
@@ -44,7 +44,7 @@ class CMyReceiver
 }  
 ```  
   
- Ardından ayarlayabilirsiniz **CMyReceiver** yöntemleri `handler1` ve `handler2` olayları işlemek için (iç işlevini kullanarak [__hook](../cpp/hook.md)) kullanarakoluşturabileceğinizbirkaynaktanolay[event_source](../windows/event-source.md).  
+ Ardından ayarlayabilirsiniz `CMyReceiver` yöntemleri `handler1` ve `handler2` olayları işlemek için (iç işlevi kullanarak [__hook](../cpp/hook.md)) kullanarak oluşturabileceğiniz bir olay kaynağından [event_source](../windows/event-source.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../windows/attributed-programming-concepts.md)

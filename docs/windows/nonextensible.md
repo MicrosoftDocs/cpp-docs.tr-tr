@@ -17,33 +17,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 87cdbf66676ed2a3e6054006270b39ad80325857
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2f670da3ad4858f3c09903f2ed3ec6aa58268180
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881607"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608501"
 ---
 # <a name="nonextensible"></a>nonextensible
-Belirleyen `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri arabirimi açıklamasında listelenen ve çalışma zamanında ek üyeleriyle genişletilemez.  
+Belirten `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri arabirimi açıklamasında listelenir ve çalışma zamanında ek üyeleriyle genişletilemez.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [nonextensible]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Nonextensible** C++ özniteliğine sahip ile aynı işlevselliği [nonextensible](http://msdn.microsoft.com/library/windows/desktop/aa367120) MIDL özniteliği.  
+ **Nonextensible** C++ özniteliği ile aynı işlevlere sahip [nonextensible](http://msdn.microsoft.com/library/windows/desktop/aa367120) MIDL özniteliği.  
   
- Kullanımı **nonextensible** de gerektirir [oleautomation](../windows/oleautomation.md) özniteliği.  
+ Kullanım **nonextensible** ayrıca gerektirir [oleautomation](../windows/oleautomation.md) özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod bir kullanımını gösterir **nonextensible** özniteliği:  
+ Aşağıdaki kod bir kullanımını göstermektedir **nonextensible** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_nonextensible.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -64,9 +62,9 @@ __interface IFireTabCtrl
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**çift** ve **oleautomation**, veya **görüntüleme arabirimi**|  
+|**İçin geçerlidir**|**interface**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|`dual` ve `oleautomation`, veya `dispinterface`|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

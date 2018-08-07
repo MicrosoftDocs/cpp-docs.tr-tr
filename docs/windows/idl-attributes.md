@@ -19,109 +19,109 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5c522c039a0471240ba319561485e8cc7f348aaa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ee0f97097ae84f7a1ce004aad6cfedb6d610d612
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881555"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606955"
 ---
 # <a name="idl-attributes"></a>IDL Öznitelikleri
-Geleneksel olarak, bir .idl dosya bakımı için zorunlu kılıyordu:  
+Geleneksel olarak, bir .idl dosyasının bakımını yapmayı hatırlamalısınız anlamına gelir:  
   
--   Yapı ve üzerinde değişiklik yapabilmek için bir .idl dosyasının söz dizimi ile ilgili bilgi sahibi olmanız.  
+-   Değiştirmek için bir .idl dosyasının söz dizimi ve yapısı ile bilgi sahibi olun.  
   
--   .İdl dosyanın bazı yönlerini değiştirmenize izin verir bir sihirbaz üzerinde kullanır.  
+-   .İdl dosyasının bazı yönlerini değiştirmenize izin verir bir sihirbaz üzerinde kullanır.  
   
- Şimdi, .idl dosyasını Visual C++ IDL öznitelikleri kullanarak bir kaynak kodu dosyasının içinden değiştirebilirsiniz. Çoğu durumda, Visual C++ IDL öznitelikleri MIDL öznitelikleri aynı ada sahip. Visual C++ IDL özniteliği ve MIDL öznitelik adı olduğunuzda aynı kaynak kodu dosyanızda Visual C++ öznitelik koyma onun namesake MIDL özniteliğini içeren bir .idl dosyasında sonuçlanır anlamına gelir. Ancak, bir Visual C++ IDL özniteliği MIDL özniteliği tüm işlevselliğini sağlamayabilir.  
+ Artık, Visual C++ IDL öznitelikleri kullanarak bir kaynak kodu dosyası içinde .idl dosyasından değiştirebilirsiniz. Çoğu durumda, Visual C++ IDL öznitelikleri, MIDL öznitelikleri aynı ada sahip. Visual C++ IDL özniteliği ve MIDL öznitelik adı olan, aynı Visual C++ özniteliği, kaynak kod dosyasına koyarak kendi namesake MIDL özniteliğini içeren bir .idl dosyasında neden anlamına gelir. Ancak, bir Visual C++ IDL özniteliği MIDL özniteliği tüm işlevlerini sağlamayabilir.  
   
- İle kullanılmadığı zaman [COM öznitelikleri](../windows/com-attributes.md), IDL öznitelikleri arabirimleri tanımlamanıza olanak tanır. Kaynak kodu derlendiğinde öznitelikler oluşturulan .idl dosya tanımlamak için kullanılır. COM öznitelikleri ATL projesinde ile kullanıldığında, bazı IDL gibi özniteliği **coclass'ı**, projeye eklenemeyebilir kod neden.  
+ İle kullanılmadığı zaman [COM öznitelikleri](../windows/com-attributes.md), IDL öznitelikleri, arabirimleri tanımlamanıza olanak tanır. Kaynak kodu derlendiğinde, öznitelikler, oluşturulan .idl dosyasının tanımlamak için kullanılır. ATL projesinde COM öznitelikleri ile kullanıldığında, bazı IDL, gibi öznitelikleri `coclass`, kod projesine hatalara neden olur.  
   
- Unutmayın [idl_quote](../windows/idl-quote.md) Visual C++ geçerli sürümde desteklenmez MIDL yapıları kullandığınız sağlar. Bu ve diğer öznitelikleri gibi [importlib](../windows/importlib.md) ve [ıncludelıb](../windows/includelib-cpp.md) geçerli Visual C++ projenizdeki varolan .idl dosyaları kullanmak için Yardım.  
+ Unutmayın [idl_quote](../windows/idl-quote.md) Visual C++'ın geçerli sürümünde desteklenmeyen MIDL yapıları kullanmanızı sağlar. Bu ve diğer özniteliklerini gibi [importlib](../windows/importlib.md) ve [ıncludelıb](../windows/includelib-cpp.md) geçerli Visual C++ projesinde varolan bir .idl dosyaları kullanmak için yardımcı.  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|[toplanabilir](../windows/aggregatable.md)|Bir denetim başka bir denetim tarafından toplanan olduğunu gösterir.|  
-|[appobject](../windows/appobject.md)|Bir tam EXE uygulamayla ilişkili olan ve bu tür kitaplığında coclass'ı özellikleri ve işlevleri genel olarak kullanılabilir olduğunu gösterir bir uygulama nesnesi olarak coclass'ı tanımlar.|  
-|[async_uuid](../windows/async-uuid.md)|COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyici yönlendirir UUID belirtir.|  
-|[bindable](../windows/bindable.md)|Özellik veri bağlama desteklediğini belirtir.|  
+|[toplanabilir](../windows/aggregatable.md)|Bir denetimi başka bir denetim tarafından toplanabilir gösterir.|  
+|[appobject](../windows/appobject.md)|Coclass'ı tam bir EXE uygulamayla ilişkili olan ve bu tür kitaplığında coclass'ı özellikleri ve işlevleri genel olarak kullanılabilir olduğunu gösterir bir uygulama nesnesi olarak tanımlar.|  
+|[async_uuid](../windows/async-uuid.md)|COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyicisi yönergelerinin sağlandığı UUID belirtir.|  
+|[bindable](../windows/bindable.md)|Özelliğin veri bağlamayı desteklediğini belirtir.|  
 |[call_as](../windows/call-as.md)|Uzak bir işleve eşlenmesi nonremotable işlevi sağlar.|  
-|[Durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) UNION özniteliği.|  
-|[coclass](../windows/coclass.md)|Yerler .idl dosyasına tanımı coclass'ı olarak sınıfı.|  
-|[control](../windows/control.md)|Kullanıcı tanımlı tür denetim olduğunu belirtir.|  
-|[cpp_quote](../windows/cpp-quote.md)|Belirtilen dize tırnak karakteri olmadan oluşturulan üstbilgi dosyası yayar.|  
-|[defaultbind](../windows/defaultbind.md)|En iyi nesneyi temsil eden tek, bağlanabilirse özelliği gösterir.|  
-|[defaultcollelem](../windows/defaultcollelem.md)|Visual Basic kodu iyileştirme için kullanılır.|  
-|[defaultvalue](../windows/defaultvalue.md)|Yazılı isteğe bağlı bir parametre için varsayılan bir değer belirtimi sağlar.|  
-|[default](../windows/default-cpp.md)|Özel veya görüntüleme arabirimi coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.|  
+|[Servis talebi](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) UNION özniteliği.|  
+|[coclass](../windows/coclass.md)|Basamak bir .idl dosyasında tanımını coclass'ı olarak sınıf.|  
+|[control](../windows/control.md)|Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.|  
+|[cpp_quote](../windows/cpp-quote.md)|Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan üst bilgi dosyasına yayar.|  
+|[defaultbind](../windows/defaultbind.md)|En iyi nesneyi temsil eden tek ve bağlanabilir özelliği belirtir.|  
+|[defaultcollelem](../windows/defaultcollelem.md)|Visual Basic kod iyileştirme için kullanılır.|  
+|[defaultvalue](../windows/defaultvalue.md)|Belirtilmiş bir isteğe bağlı parametre için bir varsayılan değer belirtimi sağlar.|  
+|[default](../windows/default-cpp.md)|Özel veya dispinterface coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.|  
 |[defaultvtable](../windows/defaultvtable.md)|Bir denetim için varsayılan vtable arabirimi olarak bir arabirim tanımlar.|  
-|[dispinterface](../windows/dispinterface.md)|Arabirim dağıtma arabirimi .idl dosyasına yerleştirir.|  
-|[displaybind](../windows/displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmelidir bir özelliği belirtir.|  
-|[dual](../windows/dual.md)|Arabirim çift arabirim .idl dosyasına yerleştirir.|  
-|[entry](../windows/entry.md)|Bir verilen işlevi veya sabit bir modüle DLL'deki giriş noktası belirleyerek belirtir.|  
-|[first_is](../windows/first-is.md)|Aktarılacak ilk dizi öğenin dizinini belirtir.|  
-|[helpcontext](../windows/helpcontext.md)|Kullanıcı görünümü öğeyle ilgili bilgi bu Yardım dosyasındaki olanak sağlayan bir içerik Kimliğini belirtir.|  
-|[helpfile](../windows/helpfile.md)|Tür Kitaplığı Yardım dosyasının adını ayarlar.|  
-|[helpstringcontext](../windows/helpstringcontext.md)|Yardım konusunun Kimliğini bir .hlp veya .chm dosyasında belirtir.|  
-|[helpstringdll](../windows/helpstringdll.md)|Belge dize araması (yerelleştirme) gerçekleştirmek için kullanılacak DLL adını belirtir.|  
-|[helpstring](../windows/helpstring.md)|Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir.|  
-|[hidden](../windows/hidden.md)|Öğe var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir.|  
-|[idl_module](../windows/idl-module.md)|Bir giriş noktası DLL'de belirtir.|  
-|[idl_quote](../windows/idl-quote.md)|Öznitelikleri kullanmanıza olanak sağlar veya Visual C++ geçerli sürümünde desteklenmeyen IDL oluşturur.|  
-|[id](../windows/id.md)|Üye işlevi (bir özellik veya bir arabirim veya görüntüleme arabirimi bir yöntem) için bir DISPID belirtir.|  
-|[iid_is](../windows/iid-is.md)|Arabirim işaretçisi tarafından işaret COM arabirimi IID belirtir.|  
-|[immediatebind](../windows/immediatebind.md)|Veritabanı veri bağlama nesnenin bir özelliğini yapılan tüm değişiklikler, hemen bildirilecek gösterir.|  
-|[importlib](../windows/importlib.md)|Zaten başka bir tür kitaplığı oluşturulan tür kitaplığı kullanılabilir içine derlenmiştir türleri sağlar.|  
-|[import](../windows/import.md)|Ana .idl dosyanızdan başvuru yapmak istediğinizi tanımlarını içeren başka bir .idl, .odl veya üst bilgi dosyasını belirtir.|  
-|[İçerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
-|[includelib](../windows/includelib-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir .idl veya .h dosyası neden olur.|  
-|[in](../windows/in-cpp.md)|Bir parametre çağrılan yordamı çağırma yordamdan geçirilecek olduğunu gösterir.|  
-|[last_is](../windows/last-is.md)|Aktarılacak son dizi öğesinden dizinini belirtir.|  
-|[lcid](../windows/lcid.md)|Yerel ayar tanımlayıcısı bir işleve geçirmenize olanak sağlar.|  
+|[dispinterface](../windows/dispinterface.md)|Bir arabirim gönderme arabirimi olarak .idl dosyasına yerleştirir.|  
+|[displaybind](../windows/displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir.|  
+|[dual](../windows/dual.md)|Bir arabirim çift arabirim .idl dosyasına yerleştirir.|  
+|[entry](../windows/entry.md)|Dışarı aktarılan işlevin ya da sabit bir modülün dll giriş noktası belirleyerek belirtir.|  
+|[first_is](../windows/first-is.md)|Aktarılacak ilk dizi öğesinin dizinini belirtir.|  
+|[helpcontext](../windows/helpcontext.md)|Kullanıcı Yardım dosyasında bu öğe hakkındaki bilgileri görüntüleme sağlayan bir bağlam kimliği belirtir.|  
+|[helpfile](../windows/helpfile.md)|Bir tür kitaplığı için Yardım dosyasına adını ayarlar.|  
+|[helpstringcontext](../windows/helpstringcontext.md)|Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.|  
+|[helpstringdll](../windows/helpstringdll.md)|Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in adını belirtir.|  
+|[helpstring](../windows/helpstring.md)|Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.|  
+|[hidden](../windows/hidden.md)|Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.|  
+|[idl_module](../windows/idl-module.md)|Bir giriş noktası bir DLL içinde belirtir.|  
+|[idl_quote](../windows/idl-quote.md)|Öznitelikleri kullanmanıza olanak tanır veya Visual C++'ın geçerli sürümünde desteklenmeyen IDL oluşturur.|  
+|[id](../windows/id.md)|DISPID bir üye işlevinin (bir özelliği ya da bir yöntemde, arabirim veya dispinterface) belirtir.|  
+|[iid_is](../windows/iid-is.md)|Bir arabirim işaretçisi tarafından işaret edilen COM arabirimi Laboratuvardaki belirtir.|  
+|[immediatebind](../windows/immediatebind.md)|Veritabanı veri bağlama nesnesinin bir özelliği yapılan tüm değişikliklerin hemen bildirileceğini belirtir.|  
+|[importlib](../windows/importlib.md)|Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullanılabilir derlenmiştir türleri sağlar.|  
+|[import](../windows/import.md)|Ana .idl dosyanızdan başvurmak istediğiniz tanımlarını içeren başka bir .idl, .odl veya üst bilgi dosyasını belirtir.|  
+|[İçerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
+|[includelib](../windows/includelib-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.|  
+|[in](../windows/in-cpp.md)|Bir parametrenin çağıran yordamdan çağrılan yordama geçirileceğini gösterir.|  
+|[last_is](../windows/last-is.md)|Aktarılacak olan son dizi öğenin dizinini belirtir.|  
+|[lcid](../windows/lcid.md)|Bir işlev için bir yerel ayar tanımlayıcısı geçirmenize olanak tanır.|  
 |[length_is](../windows/length-is.md)|Aktarılacak dizi öğelerinin sayısını belirtir.|  
-|[licensed](../windows/licensed.md)|Geçerli olduğu coclass'ı lisanslanmıştır ve kullanma örneği gerekir gösterir **IClassFactory2**.|  
-|[Yerel](../windows/local-cpp.md)|MIDL derleyici arabirimi üstbilgisinde kullanıldığında bir üstbilgi oluşturucuyu olarak kullanmanıza olanak sağlar. Tek bir işlev kullanıldığında, kendisi için hiçbir saplamalar oluşturulan yerel bir yordam belirler.|  
-|[max_is](../windows/max-is.md)|Geçerli dizi dizini için maksimum değeri belirler.|  
+|[licensed](../windows/licensed.md)|Geçerli olduğu coclass'ı lisanslanır ve kullanarak örneği oluşturulmalıdır gösterir `IClassFactory2`.|  
+|[Yerel](../windows/local-cpp.md)|MIDL derleyicisi arabirimi başlığı kullanıldığında bir üstbilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saptamalar oluşturulan yerel bir yordam belirler.|  
+|[max_is](../windows/max-is.md)|Geçerli dizi dizini için maksimum değeri atar.|  
 |[Modülü](../windows/module-cpp.md)|Kitaplık blok .idl dosyasında tanımlar.|  
-|[ms_union](../windows/ms-union.md)|Ağ veri gösterimi hizalama nonencapsulated birleşimler denetler.|  
-|[no_injected_text](../windows/no-injected-text.md)|Özellik kullanımı sonucunda kodu injecting derleyici engeller.|  
-|[nonbrowsable](../windows/nonbrowsable.md)|Bir arabirim üyesi bir özellik tarayıcıda görüntülenmemelidir gösterir.|  
-|[noncreatable](../windows/noncreatable.md)|Tek başına başlatılamaz bir nesneyi tanımlar.|  
-|[nonextensible](../windows/nonextensible.md)|Belirleyen `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri arabirimi açıklamasında listelenen ve çalışma zamanında ek üyeleriyle genişletilemez.|  
-|[object](../windows/object-cpp.md)|Özel bir arabirim tanımlar; özel öznitelik ile eşanlamlı.|  
-|[odl](../windows/odl.md)|Arabirim bir nesne Açıklama Dili (ODL) arabirimi olarak tanımlar.|  
-|[oleautomation](../windows/oleautomation.md)|Arabirim otomasyon ile uyumlu olup olmadığını gösterir.|  
-|[İsteğe bağlı](../windows/optional-cpp.md)|Üye işlevi için isteğe bağlı bir parametre belirtir.|  
-|[out](../windows/out-cpp.md)|Çağrılan yordamdan (sunucudan istemciye) arama yordamı döndürülürsünüz işaretçi parametreleri tanımlar.|  
-|[pointer_default](../windows/pointer-default.md)|Varsayılan işaretçi özniteliği için tüm işaretçiler görünür üst düzey işaretçileri dışında parametre listelerinde belirtir.|  
-|[pragma](../windows/pragma.md)|Belirtilen dize tırnak karakteri olmadan oluşturulan .idl dosyasına yayar.|  
-|[progid](../windows/progid.md)|Bir COM nesnesi ProgID belirtir.|  
-|[propget](../windows/propget.md)|Özellik erişimcisi (get) işlevini belirtiyor.|  
-|[propputref](../windows/propputref.md)|Bir başvuru yerine bir değer kullanır özellik ayarı işlevi belirtir.|  
+|[ms_union](../windows/ms-union.md)|Nonencapsulated birleşimler ağ veri gösterimi hizalamasını denetler.|  
+|[no_injected_text](../windows/no-injected-text.md)|Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.|  
+|[nonbrowsable](../windows/nonbrowsable.md)|Bir arabirim üyesi bir özellik tarayıcısında görüntülenmemelidir gösterir.|  
+|[noncreatable](../windows/noncreatable.md)|Tek başına oluşturulamaz bir nesneyi tanımlar.|  
+|[nonextensible](../windows/nonextensible.md)|Belirten `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri arabirimi açıklamasında listelenir ve çalışma zamanında ek üyeleriyle genişletilemez.|  
+|[object](../windows/object-cpp.md)|Özel bir arabirim tanımlar; özel öznitelik ile eşanlamlıdır.|  
+|[odl](../windows/odl.md)|Arabirimdeki bir nesne Açıklama Dili (ODL) arabirim tanımlar.|  
+|[oleautomation](../windows/oleautomation.md)|Bir arabirim otomasyon ile uyumlu olduğunu gösterir.|  
+|[İsteğe bağlı](../windows/optional-cpp.md)|Bir üye işlev için isteğe bağlı bir parametre belirtir.|  
+|[out](../windows/out-cpp.md)|Çağrılan yordamdan çağıran yordama (sunucudan istemciye) döndürülen işaretçi parametrelerini tanımlar.|  
+|[pointer_default](../windows/pointer-default.md)|Görünen üst düzey işaretçileri dışındaki tüm işaretçiler için varsayılan işaretçi öznitelik parametre listelerindeki belirtir.|  
+|[pragma](../windows/pragma.md)|Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan .idl dosyasına yayar.|  
+|[progid](../windows/progid.md)|Bir COM nesnesi için ProgID belirtir.|  
+|[propget](../windows/propget.md)|Bir özellik erişimcisi (get) işlevi belirtir.|  
+|[propputref](../windows/propputref.md)|Bir değer yerine başvurur bir özellik ayarı işlevi belirtir.|  
 |[propput](../windows/propput.md)|Bir özellik ayarı işlevi belirtir.|  
-|[ptr](../windows/ptr.md)|Bir işaretçi tam bir işaretçi olarak belirler.|  
-|[public](../windows/public-cpp-attributes.md)|Bu gelen .idl dosya içinde başvurulmuyor olsa bile bir typedef türü kitaplığa gider sağlar.|  
-|[Aralık](../windows/range-cpp.md)|Bağımsız değişken veya değerleri çalışma zamanında ayarlanır alanları için izin verilen değer aralığı belirtir.|  
-|[readonly](../windows/readonly-cpp.md)|Bir değişkene atama engelliyor.|  
+|[ptr](../windows/ptr.md)|Bir işaretçinin tam bir işaretçi olarak belirler.|  
+|[public](../windows/public-cpp-attributes.md)|Bu gelen .idl dosyasında başvurulmuyor olsa bile bir typedef tür kitaplığına geçer sağlar.|  
+|[Aralığı](../windows/range-cpp.md)|Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanlar için izin verilen değer aralığı belirtir.|  
+|[readonly](../windows/readonly-cpp.md)|Bir değişkene atama yasaklar.|  
 |[ref](../windows/ref-cpp.md)|Bir başvuru işaretçi tanımlar.|  
-|[requestedit](../windows/requestedit.md)|Özellik desteklediğini gösterir **OnRequestEdit** bildirim.|  
-|[restricted](../windows/restricted.md)|Bir kitaplık veya modül, arabirim veya görüntüleme arabirimi üyesi rasgele çağrılamaz olduğunu belirtir.|  
-|[retval](../windows/retval.md)|Üye dönüş değerini parametre belirler.|  
-|[size_is](../windows/size-is.md)|Bellek boyutu boyutlu işaretçileri ayrılmış, boyutlu işaretçiler ve tek veya çok boyutlu diziler işaretçileri boyutta belirtir.|  
-|[Kaynak](../windows/source-cpp.md)|Sınıfı, özelliği veya yöntemi üyesi olayları kaynağı olduğunu gösterir.|  
-|[string](../windows/string-cpp.md)|Belirten tek boyutlu `char`, `wchar_t`, **bayt**, ya da eşdeğer dizi ya da böyle bir dizi işaretçisine gerekir kabul olarak bir dize.|  
-|[switch_is](../windows/switch-is.md)|İfade veya bileşim üyesi seçer birleşim discriminant işlev gören tanımlayıcısını belirtir.|  
-|[switch_type](../windows/switch-type.md)|Birleşim discriminant kullanılan değişken türünü tanımlar.|  
-|[transmit_as](../windows/transmit-as.md)|Hangi istemci ve sunucu uygulamaları işlemek, sunulan türü, bir iletilen türüyle ilişkilendirmek için derleyicisi bildirir.|  
-|[uidefault](../windows/uidefault.md)|Tür bilgileri üye kullanıcı arabiriminde görünen varsayılan üye olduğunu gösterir.|  
-|[Benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
-|[usesgetlasterror](../windows/usesgetlasterror.md)|Bu işlev çağrılırken bir hata varsa çağıran sonra çağırabilirsiniz çağıran söyler `GetLastError` hata kodu alınamadı.|  
-|[uuid](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
-|[v1_enum](../windows/v1-enum.md)|Belirtilen enum türü 16 bit varsayılan yerine bir 32 bit varlık olarak iletilmesi yönlendirir.|  
-|[vararg](../windows/vararg.md)|İşlev değişken sayıda bağımsız değişken sürmesi belirtir.|  
-|[vi_progid](../windows/vi-progid.md)|Sürüm bağımsız form ProgID belirtir.|  
-|[wire_marshal](../windows/wire-marshal.md)|Bir uygulamaya özgü veri türü yerine iletim için kullanılacak bir veri türünü belirtir.|  
+|[requestedit](../windows/requestedit.md)|Özelliğin desteklediğini belirtir `OnRequestEdit` bildirim.|  
+|[restricted](../windows/restricted.md)|Bir kitaplığı veya modül, arabirim veya dispinterface üyesi rasgele çağrılamaz olduğunu belirtir.|  
+|[retval](../windows/retval.md)|Üyenin dönüş değerini alan parametreyi belirler.|  
+|[size_is](../windows/size-is.md)|Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaretçiler ve tek veya çok boyutlu diziler işaretçilere boyutu belirtir.|  
+|[Kaynak](../windows/source-cpp.md)|Bir sınıf, özelliği veya yöntemi üyesi bir olay kaynağı olduğunu gösterir.|  
+|[string](../windows/string-cpp.md)|Bildiren tek boyutlu **char**, **wchar_t**, `byte`, ya da eşdeğer bir dizi veya işaretçiyi gibi bir dizi gerekir kabul bir dize.|  
+|[switch_is](../windows/switch-is.md)|İfade veya birleşim üyesi seçer birleşim discriminant davranan tanımlayıcısını belirtir.|  
+|[switch_type](../windows/switch-type.md)|Birleşim discriminant kullanılan değişkenin türünü tanımlar.|  
+|[transmit_as](../windows/transmit-as.md)|Hangi istemci ve sunucu uygulamaları işlemek, sunulan bir türü, iletilen türüyle ilişkilendirmek için derleyicinin sağlar.|  
+|[uidefault](../windows/uidefault.md)|Tür bilgileri üyesi kullanıcı arabiriminde görüntülemek için varsayılan üye olduğunu gösterir.|  
+|[benzersiz](../windows/unique-cpp.md)|Bir benzersiz işaretçi belirtir.|  
+|[usesgetlasterror](../windows/usesgetlasterror.md)|Bu işlev çağrılırken bir hata ise çağıranın sonra çağırabilirsiniz çağıran söyler `GetLastError` hata kodu alınamıyor.|  
+|[uuid](../windows/uuid-cpp-attributes.md)|Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.|  
+|[v1_enum](../windows/v1-enum.md)|Belirtilen listeden seçimli türü 16-bit varsayılan yerine bir 32-bit varlık olarak iletilmesi yönlendirir.|  
+|[vararg](../windows/vararg.md)|İşlev, değişken sayıda bağımsız değişken yapmanızı belirtir.|  
+|[vi_progid](../windows/vi-progid.md)|ProgID sürümden bağımsız biçimi belirtir.|  
+|[wire_marshal](../windows/wire-marshal.md)|Bir uygulamaya özel veri türü yerine iletim için kullanılacak olan veri türünü belirtir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gruplara göre öznitelikler](../windows/attributes-by-group.md)   
- [Öznitelik sınırlamaları](http://msdn.microsoft.com/en-us/6e6c4329-f667-4869-b991-cbe9cb7a8f61)
+ [Öznitelik sınırlamaları](http://msdn.microsoft.com/6e6c4329-f667-4869-b991-cbe9cb7a8f61)

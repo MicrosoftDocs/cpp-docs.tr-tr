@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2a0a37f4ef9fa8f2aa92405b4b2c01d99386555
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: df603fe8d4c063c014118caf89a74a40e73cbe5b
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879587"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607835"
 ---
 # <a name="interfacetraitscancastto-method"></a>InterfaceTraits::CanCastTo Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -30,33 +30,31 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 template<typename T>  
 static __forceinline bool CanCastTo(  
    _In_ T* ptr,  
    REFIID riid,  
    _Deref_out_ void **ppv  
 );  
-  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `ptr`  
- Bir işaretçi bir tür adı.  
+### <a name="parameters"></a>Parametreler  
+ *ptr*  
+ Bir tür için bir işaretçi adı.  
   
- `riid`  
+ *riid*  
  Arabirim Kimliği `Base`.  
   
- `ppv`  
- Bu işlem başarılı olursa `ppv` tarafından belirtilen arabirimi işaret `Base`. Aksi takdirde, `ppv` ayarlanır `nullptr`.  
+ *ppv*  
+ Bu işlem başarılı olursa *ppv* tarafından belirtilen arabirim işaret `Base`. Aksi takdirde, *ppv* ayarlanır **nullptr**.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` Bu işlem başarılı olursa ve `ptr` gösteren bir işaretçi cast `Base`; Aksi halde, `false` .  
+ **doğru** bu işlem başarılı olursa ve *ptr* işaretçisine dönüştürme `Base`; Aksi takdirde **false** .  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir işaretçi için belirtilen işaretçi içerip içermeyeceğini gösterir `Base`.  
+ Belirtilen işaretçi işaretçisi içerip içermeyeceğini belirten `Base`.  
   
- Hakkında daha fazla bilgi için `Base`, genel tür tanımları bölümüne bakın [Interfacetraits yapısı](../windows/interfacetraits-structure.md).  
+ Hakkında daha fazla bilgi için `Base`, bkz: **genel Typedefler** konusundaki [Interfacetraits yapısı](../windows/interfacetraits-structure.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0605220b9eecce3ba042ddd0b46abd63a06c9dea
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 679b019c15d72586b5ca186e0b54c9a9172db53a
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882959"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608462"
 ---
 # <a name="propput"></a>propput
 Bir özellik ayarı işlevi belirtir.  
@@ -30,16 +30,14 @@ Bir özellik ayarı işlevi belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [propput]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Propput** C++ özniteliğine sahip ile aynı işlevselliği [propput](http://msdn.microsoft.com/library/windows/desktop/aa367146) MIDL özniteliği.  
+ **Propput** C++ özniteliği ile aynı işlevlere sahip [propput](http://msdn.microsoft.com/library/windows/desktop/aa367146) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) bir örnek kullanım için **propput**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) örnek kullanımı için **propput**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,10 +45,10 @@ Bir özellik ayarı işlevi belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Yöntem|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**propget**, **propputref**|  
+|**İçin geçerlidir**|Yöntem|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
+|**Geçersiz öznitelikler**|`propget`, `propputref`|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   

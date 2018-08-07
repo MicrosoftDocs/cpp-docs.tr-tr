@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c0bf7ecd989b51a17c853c6d2986db204c3ce34
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d6f17f44e520018f82dc82abe88427a2410d68e7
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888727"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606357"
 ---
 # <a name="retval"></a>retval
-Üye dönüş değerini parametre belirler.  
+Üyenin dönüş değerini alan parametreyi belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [retval]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Retval** C++ özniteliğine sahip ile aynı işlevselliği [retval](http://msdn.microsoft.com/library/windows/desktop/aa367158) MIDL özniteliği.  
+ **Retval** C++ özniteliği ile aynı işlevlere sahip [retval](http://msdn.microsoft.com/library/windows/desktop/aa367158) MIDL özniteliği.  
   
- **retval** son bağımsız değişken bir işlevin bildiriminde görünmesi gerekir.  
+ **retval** son bağımsız değişken işlevin bildiriminde yer almalıdır.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) bir örnek kullanım için **retval**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) örnek kullanımı için **retval**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -49,9 +47,9 @@ ms.locfileid: "33888727"
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim parametresi, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**out**|  
+|**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|**out**|  
 |**Geçersiz öznitelikler**|**in**|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

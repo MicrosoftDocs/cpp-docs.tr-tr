@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4fd6e6736c74e1ce895031e17c1d5268eb4ce646
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 53b17558998812895ece4b47f5de03700e502b8e
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877079"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608949"
 ---
 # <a name="implementscancastto-method"></a>Implements::CanCastTo Yöntemi
-Bir işaretçi belirtilen arabirime alır.  
+Belirtilen arabirim için bir işaretçi alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,15 +36,15 @@ __forceinline HRESULT CanCastTo(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `riid`  
- Bir arabirim kimliği başvurusu  
+### <a name="parameters"></a>Parametreler  
+ *riid*  
+ Başvuru için bir arabirim kimliği.  
   
- `ppv`  
- Başarılı, arayüzü için bir işaretçi olarak belirttiyseniz `riid`.  
+ *ppv*  
+ Başarılı bir arabirim işaretçisi tarafından belirttiyseniz *riid*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT E_NOINTERFACE gibi hatayı gösterir.  
+ Başarılıysa S_OK; Aksi takdirde, e_noınterface gibi hatayı gösteren HRESULT.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu QueryInterface işlemi gerçekleştiren bir iç yardımcı işlevdir.  

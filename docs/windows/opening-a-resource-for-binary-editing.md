@@ -1,5 +1,5 @@
 ---
-title: Bir kaynağı ikili düzenleme için açma | Microsoft Docs
+title: Kaynağı ikili düzenleme için açma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,52 +18,51 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c09cd825a5974422eaf757419f4ce890f5123100
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 428c62db8f1444f497d6fede7affea34560b4b0e
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878492"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605961"
 ---
 # <a name="opening-a-resource-for-binary-editing"></a>Kaynağı İkili Düzenleme İçin Açma
-### <a name="to-open-a-windows-desktop-resource-for-binary-editing"></a>İkili düzenleme için bir Windows Masaüstü kaynak açmak için  
+### <a name="to-open-a-windows-desktop-resource-for-binary-editing"></a>İkili düzenleme için bir Windows Masaüstü kaynağını açmak için  
   
 1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), düzenlemek istediğiniz belirli bir kaynak dosyasını seçin.  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Kaynak sağ tıklatın ve **açık ikili veri** kısayol menüsünden.  
+2.  Kaynak sağ tıklatıp **açık ikili veri** kısayol menüsünden.  
   
     > [!NOTE]
-    >  Kullanırsanız [kaynak görünümü](../windows/resource-view-window.md) Visual Studio (RCDATA veya özel bir kaynak gibi), kaynak tanımadığı biçimiyle kaynak penceresini İkili Düzenleyicisi'nde otomatik olarak açılır.  
+    >  Kullanırsanız [kaynak görünümü](../windows/resource-view-window.md) penceresini Visual Studio (RCDATA veya özel bir kaynak gibi), kaynak tanımıyor, biçimiyle bir kaynağı otomatik olarak ikili düzenleyicide açılır.  
   
-### <a name="to-open-a-managed-resource-for-binary-editing"></a>İkili düzenleme için yönetilen bir kaynağın açmak için  
+### <a name="to-open-a-managed-resource-for-binary-editing"></a>İkili düzenleme için bir yönetilen kaynak açmak için  
   
-1.  Çözüm Gezgini'nde, düzenlemek istediğiniz belirli bir kaynak dosyası seçin.  
+1.  İçinde **Çözüm Gezgini**, düzenlemek istediğiniz belirli bir kaynak dosyasını seçin.  
   
 2.  Kaynak sağ tıklatın ve seçin **birlikte Aç** kısayol menüsünden.  
   
-3.  İçinde **birlikte Aç** iletişim kutusunda, seçin **İkili Düzenleyicisi**.  
+3.  İçinde **birlikte Aç** iletişim kutusunda **ikili düzenleyici**.  
   
     > [!NOTE]
-    >  Kullanabileceğiniz [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md) ve [İkili Düzenleyicisi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.  
+    >  Kullanabileceğiniz [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) ve [ikili düzenleyiciyi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.  
   
     > [!NOTE]
-    >  Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).   
+    >  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).   
   
- ![İkili Düzenleyicisi](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")  
-İkili Düzenleyicisi'nde görüntülenen bir iletişim kutusu için ikili veriler  
+ ![İkili Düzenleyici](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")  
+İkili veriler için ikili dosya Düzenleyicisi'nde görüntülenen iletişim kutusu  
   
- Yalnızca belirli ASCII değerleri (0x20 0x7E aracılığıyla) İkili Düzenleyicisi'nde gösterilir. Genişletilmiş karakterler, nokta İkili Düzenleyicisi (sağ panelde) ASCII değeri bölümünde görüntülenir. "Yazdırılabilir" karakterleri ASCII 32 126 aracılığıyla değerlerdir.  
+ Yalnızca belirli ASCII değerleri (0x20 0x7E aracılığıyla) ikili düzenleyicide temsil edilir. Genişletilmiş karakterler, nokta İkili Düzenleyicisi (sağ panelde) ASCII değeri bölümünde görüntülenir. "Yazdırılabilir" karakterleri ASCII 32 126-değerlerdir.  
   
 > [!NOTE]
->  Zaten başka bir Düzenleyicisi penceresinde düzenlenen bir kaynakta İkili Düzenleyicisi kullanmak istiyorsanız, önce diğer Düzenleyicisi penceresini kapatın.  
+>  İkili Düzenleyici zaten başka bir düzenleyici penceresinde düzenlenmekte olan kaynak kullanmak istiyorsanız, diğer düzenleyici penceresini kapatın.  
   
- **Gereksinimler**  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili Düzenleyicisi](binary-editor.md)
-

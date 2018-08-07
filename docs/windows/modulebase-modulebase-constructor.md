@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b18d33b962c277347e74819e5ff34f3562821f45
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c9d82f38e44f1d0c9562982da109a8deffa4fbff
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875896"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608936"
 ---
 # <a name="modulebasemodulebase-constructor"></a>ModuleBase::ModuleBase Oluşturucusu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,7 +34,7 @@ ModuleBase();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Modül sınıfının bir örneğini başlatır.  
+ Bir örneğini başlatır `Module` sınıfı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

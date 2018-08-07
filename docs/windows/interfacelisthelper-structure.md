@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8ad091114d6be6f35f1a0341961dc5122840ace8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 91012112cebf6fe33858df8904691944a810f69a
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878053"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608137"
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -50,49 +50,49 @@ template <
 struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T0`  
- Gerekli olan şablon parametresi 0 '.  
+### <a name="parameters"></a>Parametreler  
+ *T0*  
+ Gerekli şablon parametresi, 0.  
   
- `T1`  
+ *T1*  
  Belirtilmezse, varsayılan şablon parametresi 1.  
   
- `T2`  
+ *T2*  
  Belirtilmezse, varsayılan şablon parametresi 2 '. Üçüncü şablon parametresi.  
   
- `T3`  
- Belirtilmezse, varsayılan şablon parametresi 3 '.  
+ *T3*  
+ Belirtilmezse, varsayılan şablon parametresi, 3.  
   
- `T4`  
- Belirtilmezse, varsayılan şablon parametresi 4 '.  
+ *T4*  
+ Belirtilmezse, varsayılan şablon parametresi, 4.  
   
- `T5`  
+ *T5*  
  Belirtilmezse, varsayılan şablon parametresi, 5.  
   
- `T6`  
- Belirtilmezse, varsayılan şablon parametresi 6.  
+ *T6*  
+ Belirtilmezse, varsayılan şablon parametresi, 6.  
   
- `T7`  
- Belirtilmezse, varsayılan şablon parametresi 7.  
+ *T7*  
+ Belirtilmezse, varsayılan şablon parametresi, 7.  
   
- `T8`  
+ *T8*  
  Belirtilmezse, varsayılan şablon parametresi 8.  
   
- `T9`  
- Belirtilmezse, varsayılan şablon parametresi 9 '.  
+ *T9*  
+ Belirtilmezse, varsayılan şablon parametresi 9.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Interfacelist türü tarafından belirtilen şablonu parametre bağımsız değişkenlerini uygulama yinelemeli olarak oluşturur.  
+ Oluşturur bir `InterfaceList` yinelemeli olarak belirtilen şablon parametre bağımsız uygulama tarafından türü.  
   
- Şablon parametresi Interfacelisthelper şablonunu kullanan `T0` üye bir Interfacelist yapısı ve ardından yinelemeli olarak ilk veri tanımlamak için tüm kalan şablon parametreleri Interfacelisthelper şablonunu uygular. Kalan şablon parametre bulunmadığında Interfacelisthelper durdurur.  
+ **Interfacelisthelper** şablon parametresi şablonu kullanan *T0* ilk veri üyesi tanımlamak için bir `InterfaceList` yapısı ve yinelemeli olarak geçerlidir  **Interfacelisthelper** kalan herhangi bir şablon parametre şablonu. **Interfacelisthelper** kalan şablon parametre bulunmadığında durdurur.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`TypeT`|Interfacelist türü eşanlamlısı.|  
+|`TypeT`|Interfacelist türe ilişkin bir eşanlam.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `InterfaceListHelper`  

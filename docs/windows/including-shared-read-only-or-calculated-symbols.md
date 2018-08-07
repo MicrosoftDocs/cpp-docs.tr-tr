@@ -1,5 +1,5 @@
 ---
-title: Dahil olmak üzere paylaşılan (salt okunur) veya hesaplanan sembolleri ekleme | Microsoft Docs
+title: Paylaşılan (salt okunur) veya hesaplanan sembolleri ekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -23,61 +23,59 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c56e8af65d27bda8ef04655f40bdd2e335067d3c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 436ceb757f9cce5e1436b13f2d32a331295f4bf6
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879233"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608618"
 ---
 # <a name="including-shared-read-only-or-calculated-symbols"></a>Paylaşılan (Salt Okunur) veya Hesaplanan Sembolleri Ekleme
-Geliştirme ortamı başka bir uygulama tarafından oluşturulan bir kaynak dosyasını okur ilk kez tüm eklenen üst bilgi dosyaları salt okunur olarak işaretler. Sonuç olarak, kullanabileceğiniz [kaynağını içeren iletişim kutusu](../windows/resource-includes-dialog-box.md) ek salt okunur sembol üstbilgi dosyaları eklemek için.  
+Geliştirme ortamını başka bir uygulama tarafından oluşturulan bir kaynak dosyasını okur ilk kez tüm bulunan üst bilgi dosyaları salt okunur olarak işaretler. Daha sonra kullanabileceğiniz [kaynak içerikleri iletişim kutusu](../windows/resource-includes-dialog-box.md) ek salt okunur sembol üst bilgi dosyaları eklemek için.  
   
- Salt okunur sembol tanımlarını kullanmak isteyebilirsiniz nedenlerinden biri, birkaç projeler arasında paylaşmak simge dosyaları içindir.  
+ Çeşitli projeler arasında paylaşmak sembol dosyaları salt okunur sembol tanımlarını kullanmak isteyebilirsiniz nedenlerinden biri içindir.  
   
- Sembol değeri tanımlamak için basit tamsayılar yerine ifadeleri kullanmak sembol tanımlarını mevcut kaynaklarla olduğunda dahil simge dosyaları de kullanabilirsiniz. Örneğin:  
+ Sembol değeri tanımlamak için basit bir tamsayı yerine ifadeler kullanan sembol tanımlarını ile mevcut kaynaklar varsa, dahil edilen sembol dosyalarını da kullanabilirsiniz. Örneğin:  
   
 ```  
 #define   IDC_CONTROL1 2100  
 #define   IDC_CONTROL2 (IDC_CONTROL1+1)  
 ```  
   
- Ortam doğru olduğu sürece bu hesaplanan sembolleri yorumlar:  
+ Ortamı doğru olduğu sürece bu hesaplanan semboller yorumlar:  
   
--   Hesaplanan semboller bir salt okunur semboller dosyasında yerleştirilir.  
+-   Hesaplanan semboller salt okunur semboller dosyasındaki yerleştirilir.  
   
--   Kaynak dosyanızı Bu hesaplanan sembolleri zaten atanmış kaynaklar içeriyor.  
+-   Kaynak dosyanız bu hesaplanan semboller zaten atanmış kaynaklar içeriyor.  
   
--   Sayısal ifade bekleniyor.  
+-   Bir sayısal ifade bekleniyor.  
   
 > [!NOTE]
->  Bir dize veya sayısal ifade bekleniyorsa, ifade değerlendirilmez.  
+>  Bir dize veya sayısal bir ifadenin bekleniyorsa, ifade değerlendirilmez.  
   
-### <a name="to-include-shared-read-only-symbols-in-your-resource-file"></a>Kaynak dosyanızı paylaşılan (salt okunur) simgeleri eklemek için  
+### <a name="to-include-shared-read-only-symbols-in-your-resource-file"></a>Paylaşılan (salt okunur) semboller kaynak dosyanıza eklemek için  
   
-1.  İçinde [kaynak görünümü](../windows/resource-view-window.md).rc dosyasını sağ tıklatın ve seçin [kaynağını içeren](../windows/resource-includes-dialog-box.md) kısayol menüsünden.  
-  
-    > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
-  
-2.  İçinde **salt okunur sembol yönergeleri** kutusunda, kullanmak **#include** derleyici yönergesi tutulması için salt okunur semboller istediğiniz dosyayı belirtin.  
-  
-     Normalde ana sembol üstbilgi dosyası tarafından kullanılan dosya adı olduğundan Resource.h, dosya çağırmayın.  
+1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), .rc dosyasını sağ tıklatın ve seçin [kaynak içerikleri](../windows/resource-includes-dialog-box.md) kısayol menüsünden.  
   
     > [!NOTE]
-    >  **Önemli** salt okunur sembol yönergeleri kutuya yazın tam olarak yazarken kaynak dosyasında bulunur. Ne tür emin yazım veya sözdizimi hataları içermiyor.  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-     Kullanım **salt okunur sembol yönergeleri** yalnızca sembol tanımlarını dosyalarıyla dahil etmek için kutusunu. Kaynak tanımları içermez; Aksi takdirde, yinelenen kaynak tanımları dosyası kaydedildiğinde oluşturulur.  
+2.  İçinde **salt okunur sembol yönergeleri** kutusunda, kullanmak **#include** salt okunur semboller tutmak istediğiniz dosyayı belirtmek için derleyici yönergesi.  
   
-3.  Simgeler belirttiğiniz dosyasına yerleştirin.  
+     Bu normalde ana sembol başlık dosyası tarafından kullanılan dosya adı olduğundan ' % s'dosyası Resource.H'yi çağırmayın.  
   
-     Bu şekilde bulunan dosyalar sembolleri kaynak dosyayı her açtığınızda değerlendirilir, ancak dosyanızı kaydettiğinizde oldukları diskte değiştirilmez.  
+    > [!NOTE]
+    >  **Önemli** tam olarak yazdığınız sırada, salt okunur sembol yönergeleri kutusuna yazdığınız kaynak dosyasına dahil edilir. Ne tür emin yazım veya söz dizimi hataları içermiyor.  
+  
+     Kullanım **salt okunur sembol yönergeleri** sembol tanımlarını yalnızca dosyalarla kutusuna. Kaynak tanımları eklemeyin; Aksi takdirde, yinelenen kaynak tanımları dosyası kaydedildiğinde oluşturulur.  
+  
+3.  Simgeler, belirtilen dosyada yerleştirin.  
+  
+     Bu şekilde dahil dosyalarındaki semboller kaynak dosyanızı açın her zaman değerlendirilir, ancak dosyanızı her kaydettiğinizde, diskte değiştirilmez.  
   
 4.  **Tamam**'ı tıklatın.  
   
-
-  
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   

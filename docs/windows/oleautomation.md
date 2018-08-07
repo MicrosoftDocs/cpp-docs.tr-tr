@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8093a36199eeddf2a96ae0830c56ac0acde51cfe
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3e8c7ea92e914543d80b199ef9d52435eb7116d9
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882296"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608013"
 ---
 # <a name="oleautomation"></a>oleautomation
-Arabirim otomasyon ile uyumlu olup olmadığını gösterir.  
+Bir arabirim otomasyon ile uyumlu olduğunu gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [oleautomation]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Oleautomation** C++ özniteliğine sahip ile aynı işlevselliği [oleautomation](http://msdn.microsoft.com/library/windows/desktop/aa367129) MIDL özniteliği.  
+ **Oleautomation** C++ özniteliği ile aynı işlevlere sahip [oleautomation](http://msdn.microsoft.com/library/windows/desktop/aa367129) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örnekler için bkz: [defaultvalue](../windows/defaultvalue.md) ve [nonextensible](../windows/nonextensible.md) bir örnek kullanım için **oleautomation**.  
+ Örnekler için bkz: [defaultvalue](../windows/defaultvalue.md) ve [nonextensible](../windows/nonextensible.md) örnek kullanımı için **oleautomation**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,9 +45,9 @@ Arabirim otomasyon ile uyumlu olup olmadığını gösterir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**interface**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|**dispinterface**|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

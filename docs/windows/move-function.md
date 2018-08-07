@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8da1a3c839add5d056674896b5a3c6a32145924f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d058919d0906b458c6c4e81d65c9438c95a22b85
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876777"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607309"
 ---
 # <a name="move-function"></a>Move İşlevi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,20 +36,20 @@ inline typename RemoveReference<T>::Type&& Move(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
+### <a name="parameters"></a>Parametreler  
+ *T*  
  Bağımsız değişken türü.  
   
- `arg`  
- Taşımak için bağımsız değişken.  
+ *bağımsız değişken*  
+ Taşımak için bir bağımsız değişken.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Parametre `arg` varsa, başvuru veya rvalue başvuru nitelikler sonra kaldırıldı.  
+ Parametre *arg* başvurusunu veya rvalue başvurusunu nitelikler sonra varsa kaldırıldı.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Belirtilen bağımsız değişken bir konumdan diğerine taşır.  
   
- Daha fazla bilgi için bkz: **taşıma semantiği** bölümünü [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
+ Daha fazla bilgi için **taşıma semantiği** bölümünü [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** internal.h  

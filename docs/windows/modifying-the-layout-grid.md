@@ -19,37 +19,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5f73b1b2e2982d02fae1de67d4e5e2947f728f02
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9817c1f24490d333f1596292f3b9ea1aa3ba40ae
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880325"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606942"
 ---
 # <a name="modifying-the-layout-grid"></a>Düzen Kılavuzunu Değiştirme
-Yerleştirme veya bir iletişim kutusu denetimleri düzenleme, Düzen kılavuzuna daha kesin konumlandırma için kullanabilirsiniz. Kılavuz açıldığında denetimleri "için ızgaranın noktalı çizgiler manyetik hale getirme gibi ek" görünür. Bu "ek kılavuza" özelliği üzerinde ve devre dışı bırakma ve Düzen kılavuz hücreleri boyutunu değiştirin.  
+Yerleştirme veya düzenleme iletişim kutusunda denetimleri için daha kesin konumlandırma Düzen kılavuzunu kullanabilirsiniz. Kılavuz açıldığında, "için kılavuz noktalı satırlarını manyetik hale getirme gibi ek bileşen için" denetimleri görünür. Bu "kılavuz çizgilerinde" özelliğini açıp kapatmak ve Düzen kılavuz hücreleri boyutunu değiştirin.  
   
-### <a name="to-turn-the-layout-grid-on-or-off"></a>Düzen kılavuzuna açmak veya kapatmak için  
+### <a name="to-turn-the-layout-grid-on-or-off"></a>Düzen kılavuzunu açıp kapatmak için  
   
-1.  Gelen **biçimi** menüsünde seçin **Kılavuzu ayarları**.  
+1.  Gelen **biçimi** menüsünde seçin **Kılavuz ayarları**.  
   
 2.  İçinde [kılavuz Ayarları iletişim kutusu](../windows/guide-settings-dialog-box.md)seçin veya temizleyin **kılavuz** düğmesi.  
   
-     Kullanarak tek tek iletişim kutusu Düzenleyicisi windows kılavuzunda hala denetleyebilirsiniz **Kılavuzu Değiştir** düğmesini [iletişim kutusu Düzenleyicisi araç](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  
+     Kılavuz kullanarak ayrı iletişim kutusu Düzenleyicisi windows yine de denetleyebilirsiniz **Kılavuzu Aç/Kapat** düğmesini [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  
   
-### <a name="to-change-the-size-of-the-layout-grid"></a>Düzen kılavuzuna boyutunu değiştirmek için  
+### <a name="to-change-the-size-of-the-layout-grid"></a>Düzen kılavuzunu boyutunu değiştirmek için  
   
-1.  Gelen **biçimi** menüsünde seçin **Kılavuzu ayarları**.  
+1.  Gelen **biçimi** menüsünde seçin **Kılavuz ayarları**.  
   
-2.  İçinde [kılavuz Ayarları iletişim kutusu](../windows/guide-settings-dialog-box.md), genişliği ve yüksekliği için kılavuz hücreleri içinde Dlu'lar yazın. En küçük yükseklik veya genişliği 4 Dlu'lar değil. Dlu'lar hakkında daha fazla bilgi için bkz: [iletişim kutuları, düzenleme denetimleri](../windows/arrangement-of-controls-on-dialog-boxes.md).  
+2.  İçinde [kılavuz Ayarları iletişim kutusu](../windows/guide-settings-dialog-box.md), yükseklik ve genişlik kılavuzdaki hücreleri Dlu'lar içinde yazın. Minimum yükseklik veya genişlik 4 Dlu'lar ' dir. Dlu'lar hakkında daha fazla bilgi için bkz. [iletişim kutuları, düzenleme denetimlerini](../windows/arrangement-of-controls-on-dialog-boxes.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutusu Düzenleyicisi durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)   
  [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)
-

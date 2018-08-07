@@ -1,5 +1,5 @@
 ---
-title: ProgID | Microsoft Docs
+title: progid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,44 +17,43 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f2b2d2168b568c74c5404cc83bab1e5f77570773
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 98057773d6cbb51fe5aacc3ac814af89532bd887
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880439"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607991"
 ---
 # <a name="progid"></a>progid
-Bir COM nesnesi ProgID belirtir.  
+Bir COM nesnesi için ProgID belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ progid(  
+[ progid(  
    name  
 ) ];  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *Adı*  
- Nesnesini temsil eden ProgID.  
+ ProgID temsil eden nesne.  
   
- ProgID COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) okunabilir bir sürümü var.  
+ Progid'ler COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) kullanıcı tarafından okunabilen bir sürümü var.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **ProgID** C++ öznitelik bir COM nesnesi ProgID belirtmenize olanak sağlar. Formun bir ProgID sahip *name1.name2.version*. Belirtmezseniz, bir *sürüm* bir ProgID için varsayılan sürüm 1'dir. Belirtmezseniz, *name1.name2*, varsayılan ad *classname.classname*. Belirtmezseniz, **ProgID** ve belirttiğiniz **vi_progid**, *name1.name2* runbook'undan alınan **vi_progid** ve (bir sonraki sıralı sürüm numarası) eklenir.  
+ **ProgID** C++ özniteliği için bir COM nesnesi ProgID belirtmenize olanak sağlar. Bir ProgID formundadır *name1.name2.version*. Belirtmezseniz, bir *sürüm* bir program kimliği için varsayılan sürüm 1'dir. Siz belirtmezseniz *name1.name2*, varsayılan ad *classname.classname*. Siz belirtmezseniz **ProgID** ve belirttiğiniz `vi_progid`, *name1.name2* alınmıştır `vi_progid` ve (bir sonraki sıralı numara) sürüm eklenir.  
   
- Kullanan bir öznitelik bloğu varsa **ProgID** da kullanmayan `uuid`, derleyici kayıt olup olmadığını kontrol eder bir `uuid` için belirtilen var. **ProgID**. Varsa **ProgID** belirtilmezse, oluşturmak için sürüm (ve bir coclass'ı oluşturuyorsanız coclass'ı adı) kullanılacak bir **ProgID**.  
+ Kullanan bir öznitelik bloğuna, **ProgID** ayrıca kullanmaz **UUID**, derleyici olmadığını görmek için kayıt defteri denetleyecek bir **UUID** belirtilen mevcut **program kimliği** . Varsa **ProgID** belirtilmezse, oluşturulacak sürümü (ve coclass'ı oluşturuyorsanız coclass'ı adı) kullanılacak bir **ProgID**.  
   
- **ProgID** gelir **coclass** belirtirseniz, diğer bir deyişle, öznitelik **ProgID**, belirtme olarak aynı şeydir **coclass** ve  **ProgID** öznitelikleri.  
+ **progid** gelir `coclass` belirtirseniz, diğer bir deyişle, öznitelik **ProgID**, belirtmekle aynı şeydir `coclass` ve **ProgID** öznitelikleri.  
   
- **ProgID** özniteliği belirtilen adla otomatik olarak kaydedilmesi için bir sınıf neden olur. Oluşturulan .idl dosya görüntülenmez **ProgID** değeri.  
+ **ProgID** özniteliği bir sınıf belirtilen adla otomatik olarak kaydedilecek neden olur. Oluşturulan .idl dosyasının görüntülenmez **ProgID** değeri.  
   
- Bu öznitelik, ATL kullanan bir proje içinde kullanıldığında, öznitelik davranışını değiştirir. Yukarıdaki davranışa ek olarak, bu öznitelik ile belirtilen bilgileri kullanılan **GetProgID** tarafından eklenen işlev, **coclass** özniteliği. Daha fazla bilgi için bkz: [coclass](../windows/coclass.md) özniteliği.  
+ Bu öznitelik ATL kullanan bir proje içinde kullanıldığında, öznitelik davranışını değiştirir. Yukarıdaki davranışa ek olarak, bu öznitelik ile belirtilen bilgileri kullanılan `GetProgID` işlevi tarafından eklenen `coclass` özniteliği. Daha fazla bilgi için [coclass'ı](../windows/coclass.md) özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [coclass](../windows/coclass.md) bir örnek kullanım için **ProgID**.  
+ Örneğin bakın [coclass'ı](../windows/coclass.md) örnek kullanımı için **ProgID**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -62,9 +61,9 @@ Bir COM nesnesi ProgID belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

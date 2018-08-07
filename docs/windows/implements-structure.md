@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1ecbf0b77feef7abeb67f8d0dc300da067d1f2da
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0dc23a9c90fc2112d67180ceae86ebde0e057b06
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880927"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607812"
 ---
 # <a name="implements-structure"></a>Implements Yapısı
-QueryInterface ve GetIid için belirtilen arabirimlerini uygular.  
+Implements `QueryInterface` ve `GetIid` belirtilen arabirimleri için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -58,66 +58,66 @@ template <
 struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3, I4, I5, I6, I7, I8> : Details::ImplementsHelper<RuntimeClassFlags<flags>, typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8>::TypeT>, Details::ImplementsBase;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `I0`  
- Sıfırıncı arabirimi kimliği (Zorunlu)  
+### <a name="parameters"></a>Parametreler  
+ *I0*  
+ Sıfırıncı arabirim kimliği. (Zorunlu)  
   
- `I1`  
- İlk arabirimi kimliği. (İsteğe bağlı)  
+ *I1*  
+ İlk arabirim kimliği. (İsteğe bağlı)  
   
- `I2`  
- İkinci arabirimi kimliği. (İsteğe bağlı)  
+ *I2*  
+ İkinci arabirim kimliği. (İsteğe bağlı)  
   
- `I3`  
- Üçüncü arabirimi kimliği. (İsteğe bağlı)  
+ *I3*  
+ Üçüncü arabirim kimliği. (İsteğe bağlı)  
   
- `I4`  
- Dördüncü arabirimi kimliği. (İsteğe bağlı)  
+ *I4*  
+ Dördüncü arabirim kimliği. (İsteğe bağlı)  
   
- `I5`  
- Beşinci arabirimi kimliği. (İsteğe bağlı)  
+ *I5*  
+ Beşinci arabirim kimliği. (İsteğe bağlı)  
   
- `I6`  
- Altıncı arabirimi kimliği. (İsteğe bağlı)  
+ *I6*  
+ Altıncı arabirim kimliği. (İsteğe bağlı)  
   
- `I7`  
- Yedinci arabirimi kimliği. (İsteğe bağlı)  
+ *I7*  
+ Yedinci arabirim kimliği. (İsteğe bağlı)  
   
- `I8`  
- Alt arabirimi kimliği (İsteğe bağlı)  
+ *I8*  
+ Sekizinci arabirim kimliği. (İsteğe bağlı)  
   
- `I9`  
- Dokuzuncu arabirimi kimliği. (İsteğe bağlı)  
+ *I9*  
+ Dokuzuncu arabirim kimliği. (İsteğe bağlı)  
   
- `flags`  
- Sınıfı için yapılandırma bayraklar. Bir veya daha fazla [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) belirtilen numaralandırmalar bir [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) yapısı.  
+ *bayrakları*  
+ Sınıfı için yapılandırma bayraklar. Bir veya daha fazla [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) belirtilmiş numaralandırmalar bir [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) yapısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirtilen arabirimleri listesinden türetilen ve QueryInterface ve GetIid için yardımcı şablonları uygular.  
+ Belirtilen arabirimleri listesinden türetilen ve için şablonları yardımcı uygulayan `QueryInterface` ve `GetIid`.  
   
- Her `I0` aracılığıyla `I9` arabirimi parametresi ya da IUnknown, Iınspectable, türetilmesi gerekir veya [Chainınterfaces](../windows/chaininterfaces-structure.md) şablonu. `flags` Parametre, destek IUnknown veya Iınspectable oluşturulup oluşturulmayacağını belirler.  
+ Her *I0* aracılığıyla *I9* arabirimi parametresi öğesinden türetilmelidir `IUnknown`, `IInspectable`, veya [Chainınterfaces](../windows/chaininterfaces-structure.md) şablonu. *Bayrakları* parametre desteği için oluşturulup oluşturulmayacağını belirler `IUnknown` veya `IInspectable`.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`ClassFlags`|Eşanlamlısı `RuntimeClassFlags<WinRt>`.|  
+|`ClassFlags`|İçin bir eşanlamlı `RuntimeClassFlags<WinRt>`.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Implements::CanCastTo Metodu](../windows/implements-cancastto-method.md)|Bir işaretçi belirtilen arabirime alır.|  
-|[Implements::CastToUnknown Metodu](../windows/implements-casttounknown-method.md)|İşaretçi arka plandaki IUnknown arabirimini alır.|  
-|[Implements::FillArrayWithIid Metodu](../windows/implements-fillarraywithiid-method.md)|Belirtilen dizi öğesi içinde geçerli sıfırıncı şablon parametresi tarafından belirtilen arabirim kimliği ekler.|  
+|[Implements::CanCastTo Metodu](../windows/implements-cancastto-method.md)|Belirtilen arabirim için bir işaretçi alır.|  
+|[Implements::CastToUnknown Metodu](../windows/implements-casttounknown-method.md)|Temel alınan bir işaretçi alır `IUnknown` arabirimi.|  
+|[Implements::FillArrayWithIid Metodu](../windows/implements-fillarraywithiid-method.md)|Belirtilen bir dizi öğesine geçerli sıfırıncı şablon parametresi tarafından belirtilen arabirim kimliği ekler.|  
   
 ### <a name="protected-constants"></a>Korumalı sabitleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Implements::IidCount Sabiti](../windows/implements-iidcount-constant.md)|Uygulanan arabirimi kimlikleri sayısı tutar.|  
+|[Implements::IidCount Sabiti](../windows/implements-iidcount-constant.md)|Uygulanan arabirimi kimlikleri sayısını tutar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `I0`  

@@ -1,5 +1,5 @@
 ---
-title: Kaynak dosyalar (Visual Studio) | Microsoft Docs
+title: Kaynak dosyaları (Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -27,46 +27,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b4b56d1f329aee29c37b15590729074d305f04d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: dc9a9f35793b010f4cea227ed629543c82b2ce87
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879880"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605288"
 ---
 # <a name="resource-files-visual-studio"></a>Kaynak Dosyalar (Visual Studio)
 > [!NOTE]
->  Bu yazıda Windows Masaüstü uygulamaları için geçerlidir. Evrensel Windows platformu uygulamaları kaynakları hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynakları](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
+>  Bu yazıda, Windows Masaüstü uygulamaları için geçerlidir. Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](http://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).  
 >   
-> Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+> Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
 >  
-> .NET programlama dilleri projelerde kaynak betik dosyaları kullanmayın beri kaynaklarınızdan açmalısınız **Çözüm Gezgini**. Kullanabileceğiniz [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md) ve [İkili Düzenleyicisi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.  
+> Bu yana .NET programlama dillerinin projelerde kaynak betik dosyalarına kullanmayın kaynaklarınızdan açmalısınız **Çözüm Gezgini**. Kullanabileceğiniz [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) ve [ikili düzenleyiciyi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.  
   
- "Kaynak dosyası" terimini de dahil olmak üzere dosya türlerinin bir sayıya başvurabilir:  
+ "Kaynak dosyası" terimi, bir dizi gibi çeşitli dosya türleri için başvurabilir:  
   
--   Bir programın kaynak komut dosyası (.rc) dosyası.  
+-   Bir programın kaynak betiği (.rc) dosyası.  
   
--   Bir kaynak şablonu (.rct) dosyası.  
+-   Kaynak şablonu (.rct) dosyası.  
   
--   Tek başına bir dosya olarak var olan tek bir kaynağın bir bit eşlem, simgesi veya imleci dosyası gibi bir .rc dosyasından bilinir.  
+-   Mevcut tek başına bir dosya ayrı bir kaynak bit eşlemi, simgesi veya imleci dosyası gibi bir .rc dosyasından adlandırılır.  
   
--   Örneğin bir .rc dosyasından başvurulan Resource.h, geliştirme ortamı tarafından oluşturulan bir üstbilgi dosyası.  
+-   Örneğin bir .rc dosyasından adlandırılır Resource.h, geliştirme ortamı tarafından oluşturulan bir üst bilgi dosyası.  
   
- Kaynaklar ayrıca bulunabilir [diğer dosya türleri](../windows/editable-file-types-for-resources.md) .exe, .dll ve .res dosyaları gibi. Kaynaklar ve kaynak dosyalarına projenizi ve geçerli projenin bir parçası olmayan dosyalarla çalışabilirsiniz. Visual Studio geliştirme ortamında oluşturulmayan kaynak dosyalarla çalışabilirsiniz. Örneğin, şunları yapabilirsiniz:  
+ Kaynakları da bulunabilir [diğer dosya türleri](../windows/editable-file-types-for-resources.md) .res .exe ve .dll dosyaları gibi. Kaynaklar ve projeniz içindeki kaynak dosyaları ve, geçerli projenin parçası olmayan dosyalarla çalışabilirsiniz. Visual Studio geliştirme ortamında oluşturulmayan kaynak dosyalarla çalışabilirsiniz. Örneğin, şunları yapabilirsiniz:  
   
--   İç içe geçmiş ve koşullu dahil kaynak dosyalarıyla birlikte çalışır.  
+-   İç içe geçmiş ve koşullu olarak dahil edilen kaynak dosyalarıyla birlikte çalışır.  
   
 -   Var olan kaynakları güncelleştirme veya Visual C++ biçimine dönüştürebilirsiniz.  
   
--   İçeri aktarma veya için veya geçerli kaynak dosyadan grafik kaynakları verebilirsiniz.  
+-   Grafik kaynakları için veya geçerli kaynak dosyanızı dışarı veya içeri aktarın.  
   
 -   Geliştirme ortamı tarafından değiştirilemez paylaşılan veya salt okunur tanımlayıcıları (simge) içerir.  
   
--   Birkaç projeleri arasında paylaşılan kaynakları gibi geçerli projenize sırasında düzenleme gerektiren yok (veya düzenlenebilir istemediğiniz) kaynaklar yürütülebilir dosyanın (.exe) dosyası içerir.  
+-   Geçerli projeyi, çeşitli projeler arasında paylaşılan kaynakları gibi sırasında yürütülebilir (.exe) dosya düzenleme gerektirmeyen (veya düzenlenecek istemediğiniz) kaynakları içerir.  
   
 -   Geliştirme ortamı tarafından desteklenmeyen kaynak türleri içerir.  
   
- Bu bölümde ele alınmaktadır:  
+ Bu bölüm kapsamaktadır:  
   
 -   [Yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md)  
   
@@ -78,7 +78,7 @@ ms.locfileid: "33879880"
   
 -   [Derleme zamanı dahil olmak üzere kaynakları](../windows/how-to-include-resources-at-compile-time.md)  
   
--   [Kaynakları kopyalama](../windows/how-to-copy-resources.md)  
+-   [Kaynaklarını kopyalama](../windows/how-to-copy-resources.md)  
   
 -   [Kaynak şablonları (.rct) kullanma](../windows/how-to-use-resource-templates.md)  
   
@@ -93,6 +93,5 @@ ms.locfileid: "33879880"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak düzenleyicileri](../windows/resource-editors.md)   
- [Kaynak dosyaları ile çalışma](../windows/working-with-resource-files.md)   
+ [Kaynak dosyalarıyla çalışma](../windows/working-with-resource-files.md)   
  [Menüler ve diğer kaynaklar](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
-

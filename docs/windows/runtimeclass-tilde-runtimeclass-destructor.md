@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4b48ead21adc8b641840727af236c3c6e58efee9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 13f537a9f5f6a66107a381324ccef1a6bef2ff32
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892195"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608035"
 ---
 # <a name="runtimeclassruntimeclass-destructor"></a>RuntimeClass::~RuntimeClass Yok Edicisi
-RuntimeClass sınıfı, geçerli örneğini deinitializes.  
+Geçerli örneğinin başlatmasını geri alır **RuntimeClass** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

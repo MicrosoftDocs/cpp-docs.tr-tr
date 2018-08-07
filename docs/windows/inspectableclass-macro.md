@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 922f7f74771125aed0122c408ef902da2569e5c7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a02e20f2b87afc312c24683417f808d636c2757f
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873777"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608962"
 ---
 # <a name="inspectableclass-macro"></a>InspectableClass Makrosu
-Çalışma zamanı sınıf adı ve güven düzeyinde ayarlar.  
+Çalışma zamanı sınıf adı ve güven düzeyini ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,15 +33,15 @@ InspectableClass(
    trustLevel)  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `runtimeClassName`  
- Çalışma zamanı sınıf tam metin adı.  
+### <a name="parameters"></a>Parametreler  
+ *runtimeClassName*  
+ Çalışma zamanı sınıfının tam metin adı.  
   
- `trustLevel`  
- Aşağıdakilerden birini [TrustLevel](http://msdn.microsoft.com/library/br224625.aspx) değerleri numaralandırılır.  
+ *trustLevel*  
+ Aşağıdakilerden birini [TrustLevel](http://msdn.microsoft.com/library/br224625.aspx) numaralandırılmış değerlerinin.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `InspectableClass` Makrosu yalnızca Windows çalışma zamanı türleriyle kullanılabilir.  
+ **Inspectableclass** makrosu, yalnızca Windows çalışma zamanı türleri ile kullanılabilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

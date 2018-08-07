@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 27d3ab799f9a71e6386d63106d72b72b7eec24ed
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 719522a37c989b388a811348759d1fff34c373a9
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882595"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605365"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator== İşleç (Microsoft::WRL)
 Eşitlik işleci için [ComPtr](../windows/comptr-class.md) ve [ComPtrRef](../windows/comptrref-class.md) nesneleri.  
@@ -62,15 +62,15 @@ WRL_NOTHROW bool operator==(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `a`  
- Sol nesnesi.  
+### <a name="parameters"></a>Parametreler  
+ *a*  
+ Sol nesne.  
   
- `b`  
+ *b*  
  Doğru nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` nesneleri eşitse; Aksi takdirde `false`.  
+ **doğru** nesneler eşit; Aksi takdirde, **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

@@ -22,89 +22,83 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 19200e3c3c4ed67960905b697187dbb6b37a65e9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6503898f492fb3b16b0c6b4381075fabee530152
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881009"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608582"
 ---
 # <a name="overview-of-generics-in-visual-c"></a>Visual C++'de Genel Türlere Genel Bakış
-Genel türler, ortak dil çalışma zamanı tarafından desteklenen parametreli türleridir. Genel kullanıldığında, belirttiğiniz bir bilinmeyen tür parametresi ile tanımlanan bir türü bir parametreli türüdür.  
+Genel türler, ortak dil çalışma zamanı tarafından desteklenen parametreli türleridir. Parametreli bir tür genel kullanıldığında, belirttiğiniz bir bilinmeyen tür parametresi ile tanımlanan bir türdür.  
   
 ## <a name="why-generics"></a>Neden genel türler?  
- C++ şablonları ve her iki şablonları destekler ve genel türler yazılan koleksiyon sınıfları oluşturmak için parametreli türler destekler. Ancak, şablonları, derleme zamanı parametrelemeyi sağlar. Bir şablon tanımını içeren bir derleme başvurusu ve şablonun yeni özelleştirmeleri oluşturun. Derlenmiş sonra özel bir şablon herhangi diğer sınıf veya yöntemin gibi görünüyor. Buna karşılık, genel türler içinde MSIL parametreli bir tür olması için çalışma zamanı tarafından bilinen parametreli bir türü gösterilen; Genel bir tür içeren bir derlemenin başvurduğu kaynak kodu özelleştirmeleri genel türü oluşturabilirsiniz. Visual C++ şablonları ve genel türler karşılaştırması hakkında daha fazla bilgi için bkz: [genel türler ve temsilciler (Visual C++)](../windows/generics-and-templates-visual-cpp.md).  
+ C++ şablonları ve her iki şablonları destekler ve genel türler parametreli türler belirlenmiş koleksiyon sınıfları oluşturmak için destek. Ancak, derleme zamanı Parametreleştirme şablonları sağlar. Bir şablon tanımı içeren bir derleme başvurusu olamaz ve yeni şablon uzmanlıkları oluşturun. Derlenmiş sonra özel bir şablon hiçbir diğer sınıf veya yöntemi gibi görünüyor. Buna karşılık, genel türler, parametreli tür olacak şekilde çalışma zamanı tarafından bilinen parametreli bir tür MSIL'de gönderilir; genel tür içeren bir derlemeye başvuran kaynak kodu, genel tür uzmanlıklar oluşturabilirsiniz. Visual C++ şablonları ve genel türler karşılaştırma hakkında daha fazla bilgi için bkz. [genel türler ve temsilciler (Visual C++)](../windows/generics-and-templates-visual-cpp.md).  
   
 ## <a name="generic-functions-and-types"></a>Genel işlevler ve türleri  
- Yönetilen türler oldukları sürece sınıf türleri, genel olabilir. Bunun bir örneği olabilir bir `List` sınıfı. Listedeki bir nesne türü tür parametresi olacaktır. Gerekirse bir `List` birçok farklı türde kullanmış genel türler önce nesne için sınıf bir `List` alan **System::Object** öğe türü. Ancak (yanlış türde nesneler dahil) herhangi bir nesne, listeden kullanılacak olanak tanır. Böyle bir liste türü belirsiz koleksiyon sınıfı çağrılması. En iyi çalışma zamanında tür denetleyin ve bir özel durum. Veya, bir kez bütünleştirilmiş koda derlenmemiş genel kalitesini kaybeder bir şablon kullanmış olabilirsiniz. Derlemenizi tüketicileri kendi özelleştirmeleri şablonu oluşturulamadı. Genel türler yazılan koleksiyon sınıfları deyin oluşturmanıza izin `List<int>` ("İnt listesi olarak" okunur) ve `List<double>` ("listesi çift") koleksiyon türü almaya çalıştığında, derleme zamanı hatasıyla karşılaşırsınız yazılan kabul etmek için tasarlanmamış koleksiyonu. Buna ek olarak, bunlar derlenen sonra bu tür genel kalır.  
+ Yönetilen türler oldukları sürece genel sınıf türleri de olabilir. Bunun bir örneği olabilir bir `List` sınıfı. Listedeki bir nesnenin türü, tür parametresi olacaktır. Gerekirse, bir `List` birçok farklı türde kullandıysanız genel türler önce nesne için sınıf bir `List` alan `System::Object` öğe türü. Ancak, herhangi bir nesne (yanlış türde nesneler dahil) listede kullanılacak çalıştırmasına olanak tanır. Böyle bir liste yazılmamış koleksiyon sınıfı çağrılır. En iyi şekilde çalışma zamanında tür denetimi ve bir özel durum. Veya bir kez bütünleştirilmiş kod içine derlenmiş genel kalitesini kaybeder bir şablon kullanmış olabilirsiniz. Derlemenizin Tüketiciler, kendi şablon uzmanlıkları oluşturulamadı. Genel türler belirlenmiş koleksiyon sınıfları, örneğin oluşturmanıza izin `List<int>` ("İnt listesi olarak" olarak okunur) ve `List<double>` ("listesi çift") koleksiyonu olan bir tür put çalıştıysanız, bir derleme zamanı hatasıyla karşılaşırsınız yazılı kabul etmek için tasarlanmamış koleksiyonu. Ayrıca, bunlar derlendikten sonra bu tür genel kalır.  
   
- Genel sınıflar sözdizimi açıklamasını bulunabilir [Genel sınıflar (C + +/ CLI)](../windows/generic-classes-cpp-cli.md) `.` yeni bir ad alanı <xref:System.Collections.Generic>, parametreli koleksiyon türleri dahil olmak üzere bir dizi tanıtır <xref:System.Collections.Generic.Dictionary%602>, <xref:System.Collections.Generic.List%601>ve <xref:System.Collections.Generic.LinkedList%601>.  
+ Genel sınıflar söz diziminin bir açıklama bulunabilir [Genel sınıflar (C + +/ CLI)](../windows/generic-classes-cpp-cli.md). Yeni bir ad alanı <xref:System.Collections.Generic>, parametreli koleksiyon türleri dahil olmak üzere bir dizi tanıtır <xref:System.Collections.Generic.Dictionary%602>, <xref:System.Collections.Generic.List%601> ve <xref:System.Collections.Generic.LinkedList%601>.  
   
- Hem örneği ve statik sınıf üyesi işlevleri, temsilciler ve genel işlevler de genel olabilir. Genel işlevler işlev parametreleri bilinmeyen türde ise ya da işlevi ile genel türleri çalışması gereken gerekli olabilir. Çoğu durumda burada **System::Object** kullanılmış olan bir bilinmeyen nesne türü için bir parametre olarak geçmişte genel tür parametresi bunun yerine, daha fazla tür kullanımı uyumlu kod için kullanılabilir. İşlevi için tasarlanmamıştır bir türdeki geçirmek için her türlü girişim derleme zamanında hata olarak işaretlenmiş. Kullanarak **System::Object** yanlışlıkla geçirme işlevi parametre olarak bir nesnenin işlevi uğraşmanız hedeflenen değildi algılanmayacağı ve belirli bir tür bilinmeyen bir nesneye türe etmesi gerekir işlev gövdesi ve bir InvalidCastException olasılığını hesabı. İşlev gövdesi doğru türde olması garanti şekilde bir genel ile türü çakışma işlevi için bir nesne geçirme girişiminde kod neden olur.  
+ Hem örneği ve statik sınıf üyesi işlevleri, temsilciler ve genel işlevler ayrıca genel olabilir. İşlevin parametreleri bir bilinmeyen türde ise veya işlevin kendisi ile genel türleri çalışmanız gerekiyorsa, genel işlevler gerekli olabilir. Çoğu durumda burada `System::Object` kullanılmamış bir bilinmeyen nesne türü için bir parametre olarak geçmişte, genel tür parametresi bunun yerine, daha fazla tür kullanımı uyumlu kod için kullanılabilir. Her türlü girişim işlevi için tasarlanmamıştır bir türü geçirin derleme zamanında hata olarak işaretlenmiş. Kullanarak `System::Object` yanlışlıkla geçirme işlevi parametre olarak bir nesnenin işlev uğraşmanız hedeflenen değildi değil algılanır ve bilinmeyen nesne belirli bir türü işlev gövdesinde türüne ve hesabı olması gerekir bir InvalidCastException olasılığını. İşlev gövdesi doğru türde olması garanti edilir şekilde ile genel, bir nesne işlevine geçirebileceğimiz çalışılırken kod türü çakışma neden olur.  
   
- Genel türler üzerinde yerleşik koleksiyon sınıfları için aynı avantajları uygulayın. Koleksiyon sınıfları geçmişte kullandığınız **System::Object** bir koleksiyondaki öğelerin depolamak için. Nesneleri bile eklendiği zaman nesne koleksiyonu için tasarlanmamıştır türü ekleme derleme zamanında ve genellikle işaretlenmez. Koleksiyonda erişildiğinde genellikle, bir nesnenin bazı diğer türe. Yalnızca dönüştürme başarısız olduğunda beklenmeyen türü algılandı. Genel türler bu sorunu çözer derleme zamanında değil eşleşen (veya örtük olarak dönüştürmek) bir türü ekler herhangi bir kod algılayarak genel koleksiyon tür parametresi.  
+ Genel türler üzerinde yerleşik koleksiyon sınıfları aynı avantajlar geçerlidir. Koleksiyon sınıfları geçmişte kullandığınız `System::Object` bir koleksiyondaki öğeleri depolamak için. Nesneleri bile eklendiği zaman ekleme nesne koleksiyonu için tasarlanmamıştır bir türü derleme zamanında ve genellikle işaretlenmez. Genellikle, koleksiyonda erişildiğinde bir nesne başka bir türe yayınlanması. Beklenmeyen tür cast yalnızca başarısız olduğunda algılanır. Genel türler bu sorunu çözer derleme zamanında değil aynı (veya örtük dönüştürme) bir tür ekler herhangi bir kod algılayarak genel koleksiyon tür parametresi.  
   
- Sözdizimi açıklaması için bkz: [genel işlevler (C + +/ CLI)](../windows/generic-functions-cpp-cli.md).  
+ Söz dizimi açıklaması için bkz: [genel işlevler (C + +/ CLI)](../windows/generic-functions-cpp-cli.md).  
   
-## <a name="terminology-used-with-generics"></a>Genel türler ile kullanılan terminolojisi  
+## <a name="terminology-used-with-generics"></a>Genel türler ile kullanılan terimler  
   
-##### <a name="type-parameters"></a>Tür ParameTReleri  
- Bir veya daha fazla bilinmeyen tür olarak bilinen bir genel bildirimini içerir *tür parametrelerindeki*. Tür parametreleri genel bildirimi gövdesi içinde türünün temsil eden bir ad verilir. Tür parametresi genel bildirimi gövdesi içinde bir tür olarak kullanılır. Genel bildirimi listesi için < T\> t parametresi içerir  
+### <a name="type-parameters"></a>Tür ParameTReleri  
+ Bir veya daha fazla bilinmeyen türleri bilinen genel bir bildirimine içeren *tür parametrelerindeki*. Tür parametreleri türü genel bildirimi gövdesi içinden için temsil eden bir ad verilir. Tür parametresi, genel bildirimi gövdesi içinde bir tür olarak kullanılır. Genel bildirimi `List<T>` t türü parametresi içerir  
   
-##### <a name="type-arguments"></a>Tür bağımsız değişkenleri  
- *Tür bağımsız değişkeni* genel belirli bir türü veya türleri için özel tür parametresi yerine kullanılan gerçek türüdür. Örneğin, `int` türü değişkeninde `List<int>`. Değer türleri ve tanıtıcı türleri izin genel tür bağımsız değişkeni olarak yalnızca türleridir.  
+### <a name="type-arguments"></a>Tür bağımsız değişkenleri  
+ *Tür bağımsız değişkeni* genel belirli bir türü veya türleri için özel tür parametresi yerine kullanılan gerçek türüdür. Örneğin, **int** bağımsız değişken türü olarak `List<int>`. Değer türleri ve tanıtıcı türlerine izin bir genel tür bağımsız değişkeni yalnızca türleridir.  
   
-##### <a name="constructed-type"></a>Oluşturulan türü  
- Genel bir türden oluşturulan bir türü olarak adlandırılır bir *oluşturulan türü*. Tam olarak gibi belirtilen bir türü `List<T>` olan bir *oluşturulan türünü açmak*; bir tam olarak gibi belirtilen tür `List<double>,` olan bir *oluşturulan türü kapalı* veya *özelleştirilmiş türü* . Açık oluşturulan türler diğer genel türleri veya yöntemleri tanımı içinde kullanılabilir ve genel kapsayan kendisini belirtilen olana kadar tam olarak belirtilemez. Örneğin, bir kullanıma açık oluşturulan türünün temel sınıf olarak genel verilmiştir:  
+### <a name="constructed-type"></a>Oluşturulan tür  
+ Genel bir türden oluşturulan bir tür olarak adlandırılır bir *oluşturulan türü*. Tamamen gibi belirtilen bir tür `List<T>` olduğu bir *oluşturulan tür açın*; tam olarak gibi belirtilen tür bir `List<double>,` olduğu bir *oluşturulan tür kapalı* veya *özelleştirilmiş türü* . Açık oluşturulan türler, diğer genel türleri veya yöntemleri tanımı içinde kullanılabilir ve genel kapsayan kendi belirtilen olana kadar tam olarak belirtilemez. Örneğin, aşağıdaki bir açık bir oluşturulmuş tür bir temel sınıf olarak genel amaçlıdır:  
   
- `// generics_overview.cpp`  
+```cpp
+// generics_overview.cpp
+// compile with: /clr /c
+generic <typename T>  
   
- `// compile with: /clr /c`  
+ref class List {}; 
   
- `generic <typename T>`  
+generic <typename T>
   
- `ref class List {};`  
+ref class Queue : public List<T> {};  
+```
   
- `generic <typename T>`  
-  
- `ref class Queue : public List<T> {};`  
-  
-##### <a name="constraint"></a>Kısıtlama  
- Bir kısıtlaması, bir tür parametresi kullanılabilir türleri üzerinde bir kısıtlamadır. Örneğin, verilen genel bir sınıf yalnızca belirtilen sınıftan sınıfları kabul edin veya belirtilen arabirimi uygulamalıdır. Daha fazla bilgi için bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
+### <a name="constraint"></a>Kısıtlama  
+ Bir tür parametresi kullanılan türler bir kısıtlama sınırlamadır. Örneğin, belirli bir genel sınıfın, belirtilen bir sınıftan devralınan sınıflar kabul edin veya belirtilen bir arabirim. Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
   
 ## <a name="reference-types-and-value-types"></a>Başvuru türleri ve değer türleri  
- Tür bağımsız değişkenleri tanıtıcıları türleri ve değer türleri kullanılabilir. İçinde her iki türü kullanılabilir, genel tanımında sözdizimi referans tür olmasıdır. Örneğin, **->** işleci sonunda kullanılan türü bir başvuru türü ya da bir değer türü olup olmadığını tür parametresi türü üyelerine erişmek için kullanılır. Tür bağımsız değişkeni olarak bir değer türü kullanıldığında, çalışma zamanı doğrudan değer türleri kutulama olmadan değer türleri kullanan kodu oluşturur.  
+ Tanıtıcıları türleri ve değer türleri, tür bağımsız değişkeni olarak kullanılabilir. İçinde her iki türü kullanılabilir, genel tanımında sözdizimi başvuru türlerinin olmasıdır. Örneğin, `->` işleci bir başvuru türü veya değer türü sonunda kullanılan türü olup olmadığını tür parametresi tür üyelerine erişmek için kullanılır. Tür bağımsız değişkeni bir değer türü kullanıldığında, çalışma zamanı doğrudan değer türleri kutulama olmayan değer türleri kullanan kodu oluşturur.  
   
- Genel tür bağımsız değişkeni olarak bir başvuru türü kullanırken, tanıtıcı sözdizimini kullanın. Genel tür bağımsız değişkeni olarak bir değer türü kullanırken, doğrudan türünün adını kullanın.  
+ Bir genel tür bağımsız değişkeni bir başvuru türü kullanarak, tanıtıcı söz dizimi kullanın. Bir genel tür bağımsız değişkeni bir değer türü kullanarak, doğrudan türünün adını kullanın.  
   
- `// generics_overview_2.cpp`  
+```cpp
+// generics_overview_2.cpp  
+// compile with: /clr  
+generic <typename T>  
   
- `// compile with: /clr`  
+ref class GenericType {};  
+ref class ReferenceType {};  
   
- `generic <typename T>`  
+value struct ValueType {};  
   
- `ref class GenericType {};`  
-  
- `ref class ReferenceType {};`  
-  
- `value struct ValueType {};`  
-  
- `int main() {`  
-  
- `GenericType<ReferenceType^> x;`  
-  
- `GenericType<ValueType> y;`  
-  
- `}`  
+int main() {  
+    GenericType<ReferenceType^> x;  
+    GenericType<ValueType> y;  
+}  
+```
   
 ## <a name="type-parameters"></a>Tür ParameTReleri  
- Genel bir sınıf tür parametrelerinde gibi diğer tanımlayıcıları kabul edilir. Ancak, türü bilinmediğinden kullanımlarını kısıtlamalar vardır. Örneğin, bu üyeler desteklemek için tür parametresi bilinen sürece üyeleri ve tür parametresi sınıfı yöntemlerinin kullanamazsınız. Diğer bir deyişle, üye türü parametresi üzerinden erişmek için üye türü parametrenin kısıtlama listesine içeren tür eklemeniz gerekir.  
+ Genel bir sınıf türü parametreleri gibi diğer tanımlayıcılar kabul edilir. Ancak, türü bilinmediğinden, bunların kullanılması kısıtlamalar vardır. Örneğin, bu üyeleri desteklemek için tür parametresi bilinen sürece üyeleri ve tür parametresi sınıfının yöntemlerini kullanamazsınız. Diğer bir deyişle, tür parametresi aracılığıyla bir üyesine erişmek için tür parametre kısıtlaması listeye üye içeren tür eklemeniz gerekir.  
   
- `// generics_overview_3.cpp`  
-  
- `// compile with: /clr`  
-  
-```  
+```cpp  
+// generics_overview_3.cpp  
+// compile with: /clr
 interface class I {  
    void f1();  
    void f2();  
@@ -129,13 +123,13 @@ int main() {
 }  
 ```  
   
- Bu kısıtlamaları da işleçleri için geçerlidir. Kısıtlanmamış genel tür parametresi kullanmaz `==` ve `!=` türü bu operatörlerini desteklemez durumunda tür parametresi iki örneğini karşılaştırmak için işleçler. Bu denetimler, genel türler için gereklidir, ancak olmayan şablonlar için herhangi bir sınıf ile çalışma zamanında genel türler özelleştirilmiş çünkü kısıtlamaları karşılayan olduğu zaman çok geç için geçersiz üyeleri kullanımını denetlemek için.  
+ Bu kısıtlama işleçleri de uygulanır. Sınırlandırılmamış genel tür parametresi kullanamaz `==` ve `!=` türü bu işleçleri desteklemez durumunda iki tür parametresi örneklerini karşılaştırmak için işleçler. Bu denetimler, genel türler için gereklidir, ancak genel türler, herhangi bir sınıf ile çalışma zamanında özel çünkü değil şablonları için kısıtlamalar karşılayan olduğunda çok geç için geçersiz üye kullanımını denetlemek için.  
   
- Tür parametresi varsayılan örneği kullanarak oluşturulabilir `()` işleci. Örneğin:  
+ Tür parametresinin varsayılan bir örnek kullanılarak oluşturulabilir. `()` işleci. Örneğin:  
   
  `T t = T();`  
   
- Burada `T` türü parametresi genel bir sınıf veya yöntemin tanımı'nda, varsayılan değeri değişkenine başlatır. Varsa `T` null işaretçi; olacaktır ref sınıfı ise `T` değer sınıfı nesne sıfır olarak başlatılır. Bu adlı bir *Başlatıcı varsayılan*.  
+ Burada `T` genel bir sınıf veya yöntemin tanımındaki bir tür parametresi olduğundan, varsayılan değerine değişkenini ayarlar. Varsa `T` ise bir başvuru sınıfının bir null işaretçi; olacaktır `T` bir değer sınıfı, nesne sıfır olarak başlatılır. Bu adlı bir *Başlatıcı varsayılan*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel Türler](../windows/generics-cpp-component-extensions.md)

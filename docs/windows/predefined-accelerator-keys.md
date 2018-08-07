@@ -19,71 +19,71 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa5b42fc846f3b4f21dc8045e67d8ebc347601ea
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 42f1151f90fa6a418564f30b9ec6570645a91b42
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880806"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608423"
 ---
 # <a name="predefined-accelerator-keys"></a>Önceden Tanımlanmış Hızlandırıcı Tuşları
-Windows uygulaması projesi parçası olabilir önceden tanımlanmış Hızlandırıcı tuşları mevcuttur. Bu sanal anahtarlar Windows ortamını bazılarıdır. Diğer destek tarayıcılar ve Unicode uygulamaları. Bu anahtarları herhangi Hızlandırıcı kullanabilirsiniz.  
+Bir Windows uygulaması projesi parçası olabilecek önceden tanımlanmış Hızlandırıcı tuşları vardır. Bu sanal anahtarları bazıları Windows ortamınız için değişir. Diğer destek tarayıcılar veya Unicode uygulamalar. Bu anahtarları bir Hızlandırıcı kullanabilirsiniz.  
   
 |Anahtar|Açıklama|  
 |---------|-----------------|  
-|VK_ACCEPT|IME kabul et|  
+|VK_ACCEPT|IME kabul edin|  
 |VK_BROWSER_BACK|Windows: Tarayıcı geri anahtarı|  
 |VK_BROWSER_FAVORITES|Windows: Tarayıcı sık kullanılanları anahtarı|  
-|VK_BROWSER_FORWARD|Windows: Tarayıcı iletme anahtarı|  
-|VK_BROWSER_HOME|Windows: Tarayıcı başlangıç ve giriş anahtarı|  
-|VK_BROWSER_REFRESH|Windows: Tarayıcı yenileme anahtarı|  
+|VK_BROWSER_FORWARD|Windows: Tarayıcı İleri anahtarı|  
+|VK_BROWSER_HOME|Windows: Tarayıcı başlangıç ve ana anahtarı|  
+|VK_BROWSER_REFRESH|Windows: Tarayıcı Yenile anahtarı|  
 |VK_BROWSER_SEARCH|Windows: Tarayıcı arama anahtarı|  
-|VK_BROWSER_STOP|Windows: Tarayıcı Dur anahtarı|  
+|VK_BROWSER_STOP|Windows: Tarayıcı Durdur anahtarı|  
 |VK_CONVERT|IME dönüştürme|  
-|VK_FINAL|IME son modu|  
+|VK_FINAL|Son IME modu|  
 |VK_HANGUEL|IME Hanguel modu (uyumluluk için; tutulan VK_HANGUL kullanın)|  
 |VK_HANGUL|IME Hangul modu|  
 |VK_HANJA|IME Hanja modu|  
 |VK_JUNJA|IME Junja modu|  
 |VK_KANA|IME Kana modu|  
-|VK_KANJI|IME Kanji modu|  
-|VK_LAUNCH_APP1|Windows: 1 başlangıç uygulaması anahtarı|  
+|VK_KANJI|Kanji IME modu|  
+|VK_LAUNCH_APP1|Windows: Başlangıç uygulama 1 anahtarı|  
 |VK_LAUNCH_APP2|Windows: Başlangıç uygulaması 2 anahtarı|  
 |VK_LAUNCH_MAIL|Windows: Başlangıç posta anahtarı|  
 |VK_LAUNCH_MEDIA_SELECT|Windows: Ortam anahtarı seçin|  
-|VK_LCONTROL|Sol denetim anahtarı|  
-|VK_LMENU|Sol menü tuşu|  
-|VK_LSHIFT|Sola kaydırma anahtarı|  
+|VK_LCONTROL|Sola denetim anahtarı|  
+|VK_LMENU|Sol menü anahtarı|  
+|VK_LSHIFT|Sol SHIFT tuşunu|  
 |VK_MEDIA_NEXT_TRACK|Windows: Sonraki izleme anahtarı|  
-|VK_MEDIA_PLAY_PAUSE|Windows: Yürüt/Duraklat ortam anahtarı|  
+|VK_MEDIA_PLAY_PAUSE|Windows: Yürütme/duraklatma ortam anahtarı|  
 |VK_MEDIA_PREV_TRACK|Windows: Önceki izleme anahtarı|  
-|VK_MEDIA_STOP|Windows: Dur ortam anahtarı|  
+|VK_MEDIA_STOP|Windows: Stop ortam anahtarı|  
 |VK_MODECHANGE|IME modu değişiklik isteği|  
 |VK_NONCONVERT|IME dönüştürme yok|  
-|VK_OEM_1|Windows: için ABD Standart klavye, ';:' anahtarı|  
-|VK_OEM_102|Windows: Ya da açılı ayraç anahtar veya ters eğik çizgi tuş RT 102 tuş bileşimini|  
-|VK_OEM_2|Windows: için ABD Standart klavye, '/?' anahtar|  
-|VK_OEM_3|Windows: için ABD Standart klavye '' ~' anahtarı|  
+|VK_OEM_1|Windows: ABD Standart klavye için ';:' anahtarı|  
+|VK_OEM_102|Windows: Ya da açılı ayraç veya ters eğik çizgi tuşuna RT 102 tuşlu klavye|  
+|VK_OEM_2|Windows: ABD Standart klavye için '/?' anahtar|  
+|VK_OEM_3|Windows: ABD Standart klavye için '' ~' anahtarı|  
 |VK_OEM_4|Windows: ABD Standart klavye için ' [{' anahtarı|  
-|VK_OEM_5|Windows: için ABD Standart klavye '\\&#124;' anahtarı|  
-|VK_OEM_6|Windows: ABD Standart klavye için ']}' anahtar|  
-|VK_OEM_7|Windows: ABD Standart klavyeyi için 'tek-teklif/çift-quote' anahtarı|  
+|VK_OEM_5|Windows: ABD Standart klavye için '\\&#124;' anahtarı|  
+|VK_OEM_6|Windows: ABD Standart klavye için ']}' anahtarı|  
+|VK_OEM_7|Windows: ABD Standart klavye için 'tek-teklif/çift tırnak' anahtarı|  
 |VK_OEM_COMMA|Windows: tüm ülke/bölge için ',' anahtarı|  
-|VK_OEM_MINUS|Windows: için tüm ülke/bölge, '-' anahtarı|  
-|VK_OEM_PERIOD|Windows: için tüm ülke/bölge, '.' anahtarı|  
+|VK_OEM_MINUS|Windows: tüm ülke/bölge için '-' anahtarı|  
+|VK_OEM_PERIOD|Windows: tüm ülke/bölge için '.' anahtarı|  
 |VK_OEM_PLUS|Windows: tüm ülke/bölge için '+' anahtarı|  
 |VK_PACKET|Windows: tuş vuruşları değilmiş gibi Unicode karakterler geçirmek için kullanılır.|  
-|VK_RCONTROL|Sağ denetim anahtarı|  
-|VK_RMENU|Sağ menü tuşu|  
-|VK_RSHIFT|Sağa kaydırma anahtarı|  
+|VK_RCONTROL|Doğru denetim anahtarı|  
+|VK_RMENU|Sağ menü anahtarı|  
+|VK_RSHIFT|Sağ SHIFT tuşunu|  
 |VK_SLEEP|Bilgisayar uyku anahtarı|  
 |VK_VOLUME_DOWN|Windows: Birim tuşunu|  
 |VK_VOLUME_MUTE|Windows: Birim sessiz anahtarı|  
-|VK_VOLUME_UP|Windows: Birimi anahtarı|  
+|VK_VOLUME_UP|Windows: Birim anahtarı|  
 |VK_XBUTTON1|Windows: Düğme X1 fare|  
 |VK_XBUTTON2|Windows: Düğme X2 fare|  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

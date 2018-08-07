@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e020bd725d0c0f5c65ab1cfb38b45e2b8fbca62e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6797c274402578cfecb522c86745fb5b257e213d
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875727"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608864"
 ---
 # <a name="implementsfillarraywithiid-method"></a>Implements::FillArrayWithIid Yöntemi
-Belirtilen dizi öğesi içinde geçerli sıfırıncı şablon parametresi tarafından belirtilen arabirim kimliği ekler.  
+Belirtilen bir dizi öğesine geçerli sıfırıncı şablon parametresi tarafından belirtilen arabirim kimliği ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ __forceinline static void FillArrayWithIid(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `index`  
- Bu işlem için başlangıç dizi öğesi gösteren sıfır tabanlı dizini. Bu işlem tamamlandığında `index` 1 artırılır.  
+### <a name="parameters"></a>Parametreler  
+ *Dizin*  
+ Bu işlem için başlangıç dizi öğesini gösteren sıfır tabanlı dizini. Bu işlem tamamlandığında *dizin* 1 azaltılır.  
   
- `iids`  
+ *IID'leri*  
  IID türünde bir dizi.  
   
 ## <a name="remarks"></a>Açıklamalar  

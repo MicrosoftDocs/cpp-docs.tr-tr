@@ -17,21 +17,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 11547a3fb1bd46a1e2edb8ce9dd0a6547464f796
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bfda47ced14d7c112d27d0036b4d636e32c91907
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882530"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607566"
 ---
 # <a name="idlmodule"></a>idl_module
-Bir giriş noktası bir .dll dosyasını belirtir.  
+Bir .dll dosyasına bir giriş noktası belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ idl_module (   
+[ idl_module (   
    name=module_name,   
    dllname=dll,   
    uuid="uuid",   
@@ -44,47 +43,47 @@ Bir giriş noktası bir .dll dosyasını belirtir.
 function declaration  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- **Adı**  
- Kullanıcı tanımlı için bir ad .idl dosyasında görünür kod bloğu.  
+### <a name="parameters"></a>Parametreler  
+ *Adı*  
+ Kullanıcı tanımlı bir ad .idl dosyasında görünür kod bloğu için.  
   
- **dll** (isteğe bağlı)  
+ *dll* (isteğe bağlı)  
  Dışarı aktarma içeren .dll dosyası.  
   
- `uuid` (isteğe bağlı)  
+ *uuid* (isteğe bağlı)  
  Benzersiz kimliği  
   
- **HelpString** (isteğe bağlı)  
- Tür kitaplığı tanımlamak için kullanılan bir karakter dizesi.  
+ *HelpString* (isteğe bağlı)  
+ Tür kitaplığını açıklamak için kullanılan bir karakter dizesi.  
   
- **helpstringcontext** (isteğe bağlı)  
- Yardım konusunun .hlp veya .chm dosyasındaki kimliği.  
+ *helpstringcontext* (isteğe bağlı)  
+ Bir Yardım konusu .hlp veya .chm dosyasındaki kimliği.  
   
- **HelpContext** (isteğe bağlı)  
+ *HelpContext* (isteğe bağlı)  
  Bu tür kitaplığı Yardım kimliği.  
   
- **Gizli** (isteğe bağlı)  
- Kitaplık görüntülenmesini engeller parametresi. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) daha fazla bilgi için MIDL özniteliği.  
+ *Gizli* (isteğe bağlı)  
+ Kitaplık görüntülenmesini engeller. bir parametre. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) daha fazla bilgi için MIDL özniteliği.  
   
- ***kısıtlı*** (isteğe bağlı)  
+ *kısıtlı* (isteğe bağlı)  
  Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) daha fazla bilgi için MIDL özniteliği.  
   
  *işlev bildirimi*  
- Tanımlayacaksınız işlev.  
+ Tanımladığınız bir işlev.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `idl_module` C++ öznitelik bir .dll dosyası içeri olanak tanıyan bir .dll dosyasına giriş noktası belirtmenize olanak sağlar.  
+ **İdl_module** C++ özniteliği bir .dll dosyasından almanızı sağlayan bir .dll dosyası içinde giriş noktasını belirtmenize olanak sağlar.  
   
  **İdl_module** özniteliğine sahip benzer işlevselliği [Modülü](http://msdn.microsoft.com/library/windows/desktop/aa367099) MIDL özniteliği.  
   
- Herhangi bir şey .idl dosya kitaplığını bloğunu DLL giriş noktası koyarak bir .dll dosyasından verebilirsiniz bir COM nesnesinden verebilirsiniz.  
+ Herhangi bir COM nesnesinden bir .idl dosyası kitaplığı bloğu içinde bir DLL giriş noktası koyarak bir .dll dosyasından dışarı aktarabilirsiniz verebilirsiniz.  
   
- Kullanmalısınız `idl_module` iki adımda. İlk olarak, bir ad/DLL çifti tanımlamanız gerekir. Ardından, kullandığınızda `idl_module` bir giriş noktası belirtmek için adı ve diğer ek öznitelikleri belirtin.  
+ Kullanmalısınız **idl_module** iki adımda. İlk olarak, bir ad/DLL çifti tanımlamanız gerekir. Ardından kullandığınızda **idl_module** bir giriş noktası belirtmek için adı ve diğer ek öznitelikleri belirtin.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodu nasıl kullanılacağını gösterir `idl_module` özniteliği:  
+ Aşağıdaki kod nasıl kullanılacağını gösterir **idl_module** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_idl_module.cpp  
 // compile with: /LD  
 [idl_quote("midl_pragma warning(disable:2461)")];  
@@ -99,12 +98,12 @@ void FuncName(int i);
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Her yerden|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Her yerde|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

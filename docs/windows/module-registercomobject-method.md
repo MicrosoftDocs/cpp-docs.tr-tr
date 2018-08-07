@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c002dd64049006c8ee74c709c585a3a9d0f253a5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8c997b4221dee913a6eaad55f6f114b0ad9d820e
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873985"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606546"
 ---
 # <a name="moduleregistercomobject-method"></a>Module::RegisterCOMObject Yöntemi
 Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla COM nesneleri kaydeder.  
@@ -39,29 +39,29 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
   
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `serverName`  
+### <a name="parameters"></a>Parametreler  
+ *SunucuAdı*  
  Bir sunucunun tam adı.  
   
- `clsids`  
+ *CLSID*  
  CLSID kaydetmek için bir dizi.  
   
- `factories`  
- IUnknown arabirimi olan kullanılabilirlik yayımlanan sınıfı nesnelerinin bir dizisi.  
+ *fabrikaları*  
+ IUnknown arabirimi olan kullanılabilirlik yayımlanan sınıf nesnelerinin dizisi.  
   
- `cookies`  
- İşlem tamamlandığında, kaydedilen sınıfı değerleri işaretçiler bir dizi nesneleri. Daha sonra bu değerler kullanılır kaydını iptal etme.  
+ *Tanımlama bilgileri*  
+ İşlem tamamlandığında, kayıtlı olan bir sınıfı değerleri için işaretçiler dizisi nesneleri. Bu değerler daha sonra kullanılır kaydını iptal etme.  
   
- `count`  
- CLSID kayıt sayısı.  
+ *Sayısı*  
+ Kaydedilecek CLSID sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- S_OK, saldırgan; Aksi takdirde, HRESULT nedenini gösterir CO_E_OBJISREG gibi işlem başarısız oldu.  
+ S_OK varsa saldırgan; Aksi takdirde, bir HRESULT nedenini belirten CO_E_OBJISREG gibi işlem başarısız oldu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- COM nesneleri CLSCTX numaralandırma CLSCTX_LOCAL_SERVER Numaralandırıcı ile kaydedilir.  
+ COM nesnelerinin CLSCTX numaralandırma CLSCTX_LOCAL_SERVER Numaralandırıcı ile kaydedilir.  
   
- Kayıtlı nesnelere bağlantı türü geçerli bir birleşimi tarafından belirtilen `comflag` şablon parametresi ve REGCLS numaralandırma REGCLS_SUSPENDED Numaralandırıcı.  
+ Kayıtlı nesneler için bağlantı türü, geçerli bir birleşimi tarafından belirtilen *comflag* şablon parametresi ile REGCLS numaralandırma REGCLS_SUSPENDED Numaralandırıcı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

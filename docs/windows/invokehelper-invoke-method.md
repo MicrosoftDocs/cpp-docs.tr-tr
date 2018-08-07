@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d3fc5ac67d6c03cef7f096f898db0e2f29d125c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8db9d9b44a2646d69dfbbd423d712f0d1c92d6cd
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882309"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607978"
 ---
 # <a name="invokehelperinvoke-method"></a>InvokeHelper::Invoke Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -62,39 +62,39 @@ STDMETHOD(
 )( typename Traits;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `arg1`  
+### <a name="parameters"></a>Parametreler  
+ *arg1*  
  Bağımsız değişkeni 1.  
   
- `arg2`  
- 2. bağımsız.  
+ *arg2*  
+ Bağımsız değişken 2.  
   
- `arg3`  
+ *Arg3*  
  Bağımsız değişken 3.  
   
- `arg4`  
- Bağımsız değişken 4.  
+ *Arg4*  
+ 4 bağımsız değişkeni.  
   
- `arg5`  
+ *arg5*  
  Bağımsız değişken 5.  
   
- `arg6`  
+ *arg6*  
  Bağımsız değişken 6.  
   
- `arg7`  
+ *arg7*  
  Bağımsız değişken 7.  
   
- `arg8`  
- Bağımsız değişken 8.  
+ *arg8*  
+ 8 bağımsız değişkeni.  
   
- `arg9`  
+ *arg9*  
  Bağımsız değişken 9.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
+ Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirtilen bağımsız değişken sayısı, imzası içeren olay işleyicisini çağırır.  
+ İmzası olan, belirtilen sayıda bağımsız değişken içeren olay işleyicisini çağırır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

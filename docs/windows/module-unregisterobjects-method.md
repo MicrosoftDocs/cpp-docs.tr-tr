@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7b711338c436eda3e64d9b51ef0d3137975d834a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bb477b2d5c0a6eabf1e3304c0cadcb34d3910fe5
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874125"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607446"
 ---
 # <a name="moduleunregisterobjects-method"></a>Module::UnregisterObjects Yöntemi
-Böylece diğer uygulamalar için bağlanamıyor Belirtilen modül nesneleri kaydını siler.  
+Diğer uygulamalar için bağlantı nesneleri belirtilen modüldeki kaydını siler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,15 +35,15 @@ HRESULT UnregisterObjects(
    const wchar_t* serverName);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `module`  
- Bir modül işaretçi.  
+### <a name="parameters"></a>Parametreler  
+ *Modülü*  
+ Bir modül için işaretçi.  
   
- `serverName`  
- Bu işlem tarafından etkilenen nesneler kümesinin belirtir belirleme adı.  
+ *SunucuAdı*  
+ Bu işlemden etkilenen nesneler kümesini belirtir uygun bir ad.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini gösterir HRESULT bu işlemi başarısız oldu.  
+ Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini belirten HRESULT bu işlemi başarısız oldu.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

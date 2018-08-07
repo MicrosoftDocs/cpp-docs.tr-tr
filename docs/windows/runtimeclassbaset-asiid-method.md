@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 35d218666f785685e95d737574ff44e276ce84b3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1174db6702fc68b01f60491ef203265bbd6f4c14
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892136"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607433"
 ---
 # <a name="runtimeclassbasetasiid-method"></a>RuntimeClassBaseT::AsIID Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -38,24 +38,24 @@ __forceinline static HRESULT AsIID(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Parametresi tarafından belirtilen arabirim kimliği uygulayan bir tür `riid`.  
+### <a name="parameters"></a>Parametreler  
+ *T*  
+ Parametresi tarafından belirtilen arabirim kimliği uygulayan bir tür *riid*.  
   
- `implements`  
- Şablon parametresi tarafından belirtilen türde bir değişken `T`.  
+ *Uygulayan*  
+ Şablon parametresi tarafından belirtilen türde bir değişken *T*.  
   
- `riid`  
- Alınacak arabirimi kimliği.  
+ *riid*  
+ Alınacak arabirim kimliği.  
   
- `ppvObject`  
- Bu işlem başarılı olursa, parametresi tarafından belirtilen bir işaretçi bir-işaretçiye arabirimine `riid`.  
+ *ppvObject*  
+ Bu işlem başarılı olursa, bir işaretçi bir-işaretçiye arabirimi için belirtilen parametre tarafından *riid*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
+ Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirtilen arabirim kimliği için bir işaretçi alır.  
+ Belirtilen arabirim kimliği. bir işaretçi alır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

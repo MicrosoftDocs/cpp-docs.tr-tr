@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 601d67fb48f0ae826474d33e7dca0fbffff9478c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2c0705c5d841b63cd3f537ab39dbbe9122fea869
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879714"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607916"
 ---
 # <a name="object-c"></a>nesne (C++)
 Özel bir arabirim tanımlar.  
@@ -30,15 +30,13 @@ ms.locfileid: "33879714"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [object]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Arabirim tanımı, önceki zaman **nesne** C++ öznitelik .idl dosyası özel bir arabirim olarak yerleştirilecek arabirimi neden olur.  
+ Bir arabirim tanımı önce geldiği zaman **nesne** C++ özniteliği arabirimi .idl dosyası özel bir arabirim olarak yerleştirilmesini neden olur.  
   
- Nesnesi ile işaretlenen herhangi bir arabirim öğesinden devralmalıdır **IUnknown**. Bu koşul herhangi temel arabirimlerin devralınmalıdır varsa sağlanırsa **IUnknown**. Temel arabirim devralması durumunda **IUnknown**, derleyici ile işaretlenen arabirimi neden olacak **nesne** türetmek **IUnknown**.  
+ Nesne ile işaretlenen herhangi bir arabirimde devralmalıdır `IUnknown`. Devralınan taban arabirimlerin herhangi, bu koşul sağlanana `IUnknown`. Temel arabirim devralır, `IUnknown`, derleyici ile işaretlenen arabirim neden olacak **nesne** türetmek için `IUnknown`.  
   
 ## <a name="example"></a>Örnek  
  Bkz: [nonbrowsable](../windows/nonbrowsable.md) nasıl kullanılacağına ilişkin bir örnek **nesne**.  
@@ -49,9 +47,9 @@ ms.locfileid: "33879714"
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**interface**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
@@ -60,6 +58,6 @@ ms.locfileid: "33879714"
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Arabirim öznitelikleri](../windows/interface-attributes.md)   
  [Çift](../windows/dual.md)   
- [Görüntüleme arabirimi](../windows/dispinterface.md)   
+ [Dispinterface](../windows/dispinterface.md)   
  [Özel](../windows/custom-cpp.md)   
  [__interface](../cpp/interface.md)   

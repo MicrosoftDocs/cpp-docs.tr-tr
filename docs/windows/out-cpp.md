@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b23ff91a67962ec36cf6a9c2f5ebbf8122ab73c1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f9a3d102050da84f7dcbc8714a4c04b46cf3f5a1
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876819"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606130"
 ---
 # <a name="out-c"></a>out (C++)
-Çağrılan yordamdan (sunucudan istemciye) arama yordamı döndürülürsünüz işaretçi parametreleri tanımlar.  
+Çağrılan yordamdan çağıran yordama (sunucudan istemciye) döndürülen işaretçi parametrelerini tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [out]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Çıkışı** C++ özniteliğine sahip ile aynı işlevselliği [çıkışı](http://msdn.microsoft.com/library/windows/desktop/aa367136) MIDL özniteliği.  
+ **Kullanıma** C++ özniteliği ile aynı işlevlere sahip [kullanıma](http://msdn.microsoft.com/library/windows/desktop/aa367136) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) bir örnek kullanım için **çıkışı**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) örnek kullanımı için **kullanıma**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,9 +45,9 @@ ms.locfileid: "33876819"
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Parametre arabirimi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Parametre arabirimi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

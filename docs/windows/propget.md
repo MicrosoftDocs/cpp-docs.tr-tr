@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 339cb03b645e3aff0a6bb806e431c7be274340d8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3552a8c64260345b6a956878c459182089e1af0f
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881872"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607553"
 ---
 # <a name="propget"></a>propget
-Özellik erişimcisi işlevi belirtir.  
+Bir özelliği erişimci işlevi belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [propget]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Propget** C++ özniteliğine sahip ile aynı işlevselliği [propget](http://msdn.microsoft.com/library/windows/desktop/aa367145) MIDL özniteliği.  
+ **Propget** C++ özniteliği ile aynı işlevlere sahip [propget](http://msdn.microsoft.com/library/windows/desktop/aa367145) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) bir örnek kullanım için **propget**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) örnek kullanımı için **propget**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,10 +45,10 @@ ms.locfileid: "33881872"
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Yöntem|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**propput**, **propputref**|  
+|**İçin geçerlidir**|Yöntem|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
+|**Geçersiz öznitelikler**|`propput`, `propputref`|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   

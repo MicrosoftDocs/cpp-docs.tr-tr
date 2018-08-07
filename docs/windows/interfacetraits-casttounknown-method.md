@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a2fdc46f57f834c3e8217049574ea504aae16f03
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ad2c0a438eee870ac86301f0a56ef525eb53d8c8
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878131"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608657"
 ---
 # <a name="interfacetraitscasttounknown-method"></a>InterfaceTraits::CastToUnknown Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,18 +36,18 @@ static __forceinline IUnknown* CastToUnknown(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Parametrenin türü `ptr`.  
+### <a name="parameters"></a>Parametreler  
+ *T*  
+ Parametresinin türü *ptr*.  
   
- `ptr`  
- İşaretçi türü `T`.  
+ *ptr*  
+ İşaretçi türüne *T*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  IUnknown işaretçisi içinden `Base` türetilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- IUnknown işaretçisi belirtilen işaretçisine çevirir.  
+ Belirtilen bir işaretçi işaretçisi bıraktığı `IUnknown`.  
   
  Hakkında daha fazla bilgi için `Base`, genel tür tanımları bölümüne bakın [Interfacetraits yapısı](../windows/interfacetraits-structure.md).  
   

@@ -17,15 +17,15 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ed6f114d13b006425cd3e94e898b2fe924ec732d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0188d3f08f0d4a06fb174163dc0a837e3dc9c041
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888439"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605785"
 ---
 # <a name="safelessthan"></a>SafeLessThan
-Bir sayı başka bir değerden olup olmadığını belirler.  
+Bir sayı daha az olup olmadığını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,25 +37,25 @@ inline bool SafeLessThan (
 ) throw ();  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- [in] `t`  
- İlk sayı. Bu t türünde olmalıdır  
+### <a name="parameters"></a>Parametreler  
+ [in] *t*  
+ İlk sayı. Bu tür olmalıdır `T`.  
   
- [in] `u`  
- İkinci numarası. Bu türü u olmalıdır  
+ [in] *u*  
+ İkinci numarası. Bu tür olmalıdır `U`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` varsa `t` olan değerinden `u`; Aksi halde `false`.  
+ **doğru** varsa *t* olduğu küçüktür *u*; Aksi takdirde **false**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem standart karşılaştırma işleci çünkü geliştirir `SafeLessThan` numarasını iki farklı türde karşılaştırmanıza olanak sağlar.  
+ Bu yöntem standart karşılaştırma işleci, çünkü geliştirir. **SafeLessThan** numarası iki farklı türde karşılaştırmanızı sağlar.  
   
- Bu yöntem parçası olan [SafeInt Kitaplığı](../windows/safeint-library.md) ve bir örneğini oluşturmak zorunda kalmadan tek karşılaştırma işlemi için tasarlanmış [SafeInt sınıfı](../windows/safeint-class.md).  
+ Bu yöntem, parçasıdır [SafeInt Kitaplığı](../windows/safeint-library.md) örneği oluşturmaya gerek kalmadan tek bir karşılaştırma işlemi için tasarlanmış ve [SafeInt sınıfı](../windows/safeint-class.md).  
   
 > [!NOTE]
->  Bu yöntem yalnızca tek bir matematik işlemi korunmalıdır zaman kullanılmalıdır. Birden çok işlemi varsa, kullanması gereken `SafeInt` tek tek tek başına işlevleri çağırmak yerine sınıfı.  
+>  Bu yöntem, yalnızca tek bir matematiksel işlem korunması gereken durumlarda kullanılmalıdır. Birden çok işlem varsa, kullanması gereken `SafeInt` tek tek başına işlevleri çağırmak yerine sınıfı.  
   
- T ve U şablonu türleri hakkında daha fazla bilgi için bkz: [SafeInt işlevleri](../windows/safeint-functions.md).  
+ Şablon türleri hakkında daha fazla bilgi için `T` ve `U`, bkz: [SafeInt işlevleri](../windows/safeint-functions.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** safeint.h  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4b9095daa4ff1dca77c78c11ac41d8747d889d32
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 06e12754594fe2f155be9502c2059fb6ba5f84e7
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874947"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608215"
 ---
 # <a name="makeallocatormakeallocator-constructor"></a>MakeAllocator::MakeAllocator Oluşturucusu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,7 +34,7 @@ MakeAllocator();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- MakeAllocator sınıfı yeni bir örneğini başlatır.  
+ Yeni bir örneğini başlatır **MakeAllocator** sınıfı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

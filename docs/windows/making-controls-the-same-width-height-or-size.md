@@ -1,5 +1,5 @@
 ---
-title: Genişlik, yükseklik veya boyutu denetimleri yapma | Microsoft Docs
+title: Denetimleri aynı genişliğe, yüksekliğe veya boyuta getirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,37 +16,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3d8c475e42a490b68f6a50e071f2479748039186
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ffbc9f7f6a242f119fd0cd164242883e904d7114
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874804"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607325"
 ---
 # <a name="making-controls-the-same-width-height-or-size"></a>Denetimleri Aynı Genişliğe, Yüksekliğe veya Boyuta Getirme
-Baskın denetimi boyutuna göre denetimlerin bir grubu yeniden boyutlandırabilirsiniz. Ayrıca [alt başlık metni boyutlara dayanan denetimi yeniden boyutlandırma](../windows/sizing-individual-controls.md).  
+Baskın denetimi boyutuna göre Denetim grubunun yeniden boyutlandırabilirsiniz. Ayrıca [kendi açıklamalı alt yazı metni boyutlarına göre denetimi yeniden boyutlandırma](../windows/sizing-individual-controls.md).  
   
-### <a name="to-make-controls-the-same-width-height-or-size"></a>Yapmak için aynı genişlik, yükseklik veya boyutunu denetler  
+### <a name="to-make-controls-the-same-width-height-or-size"></a>Aynı genişliğe, yüksekliğe veya boyuta denetimleri yapma  
   
-1.  [Denetimleri seçme](../windows/selecting-multiple-controls.md) yeniden boyutlandırmak istiyor.  
+1.  [Denetimleri seçin](../windows/selecting-multiple-controls.md) yeniden boyutlandırmak istediğiniz.  
   
-     Serideki ilk seçili baskın denetimi denetimdir. Grup denetimleri son boyutunu baskın denetimi boyutuna bağlıdır. Baskın denetimi seçme konusunda daha fazla bilgi için bkz: [baskın denetimi belirtme](../windows/specifying-the-dominant-control.md).  
+     Bu serideki ilk Seçili denetim baskın bir denetimdir. Grup denetimleri son boyutu baskın denetimi boyutuna bağlıdır. Baskın denetimi seçme hakkında daha fazla bilgi için bkz. [baskın denetimi belirtme](../windows/specifying-the-dominant-control.md).  
   
-2.  Gelen **biçimi** menüsünde seçin **olun aynı boyutta**, ardından aşağıdaki komutlardan birini seçin:  
+2.  Gelen **biçimi** menüsünde seçin **aynı boyutta yapın**, ardından aşağıdaki komutlardan birini seçin:  
   
-    -   **Her ikisi**  
+    -   **Her ikisi de**  
   
     -   **Yükseklik**  
   
     -   **Genişlik**  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
  [Denetimler](../mfc/controls-mfc.md)
-

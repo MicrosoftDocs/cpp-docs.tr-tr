@@ -1,5 +1,5 @@
 ---
-title: Kimliği | Microsoft Docs
+title: kimlik | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,34 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6c674765a0dfc06648d64a2b3b4e820bb467e700
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b36a45dad71f2144c3e3d0990ab7715d00e8ff21
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882453"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605714"
 ---
 # <a name="id"></a>kimlik
-Belirten bir `dispid` parametresi için bir üye işlevi (bir özellik veya bir arabirim veya görüntüleme arabirimi bir yöntemi).  
+Belirtir bir *DISPID* (bir özellik veya bir arabirim veya dispinterface bir yöntem), bir üye işlev için parametre.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ id(  
+[ id(  
    dispid  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `dispid`  
- Arabirim yöntemini gönderme kimliği.  
+### <a name="parameters"></a>Parametreler  
+ *DISPID*  
+ Arabirim yöntemi için gönderme kimliği.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Kimliği** C++ özniteliğine sahip ile aynı işlevselliği [kimliği](http://msdn.microsoft.com/library/windows/desktop/aa367040) MIDL özniteliği.  
+ **Kimliği** C++ özniteliği ile aynı işlevlere sahip [kimliği](http://msdn.microsoft.com/library/windows/desktop/aa367040) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **kimliği**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **kimliği**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -52,12 +51,12 @@ Belirten bir `dispid` parametresi için bir üye işlevi (bir özellik veya bir 
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

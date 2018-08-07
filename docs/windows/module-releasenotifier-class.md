@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 76edb403fae12dd8b6221d8bd6ec82424bc5a4f7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1deeb3076d3f1bfc2243ec333f258f543a37fceb
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878398"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608397"
 ---
 # <a name="modulereleasenotifier-class"></a>Module::ReleaseNotifier Sınıfı
-Bir modül son nesnesinde yayımlandığında, bir olay işleyiciyi çağırır.  
+Modül içindeki son nesnenin yayımlandığında bir olay işleyici çağırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,15 +39,15 @@ class ReleaseNotifier;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::ReleaseNotifier::~ReleaseNotifier Yıkıcısı](../windows/module-releasenotifier-tilde-releasenotifier-destructor.md)|Module::ReleaseNotifier sınıfının geçerli örneği deinitializes.|  
-|[Module::ReleaseNotifier::ReleaseNotifier Oluşturucusu](../windows/module-releasenotifier-releasenotifier-constructor.md)|Module::ReleaseNotifier sınıfının yeni bir örneğini başlatır.|  
+|[Module::ReleaseNotifier::~ReleaseNotifier Yıkıcısı](../windows/module-releasenotifier-tilde-releasenotifier-destructor.md)|Geçerli örneğinin başlatmasını geri alır **Module::ReleaseNotifier** sınıfı.|  
+|[Module::ReleaseNotifier::ReleaseNotifier Oluşturucusu](../windows/module-releasenotifier-releasenotifier-constructor.md)|Yeni bir örneğini başlatır **Module::ReleaseNotifier** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::ReleaseNotifier::Invoke Metodu](../windows/module-releasenotifier-invoke-method.md)|Bir modül son nesnesinde serbest bırakıldığında uygulandığında, olay işleyici çağırır.|  
-|[Module::ReleaseNotifier::Release](../windows/module-releasenotifier-release.md)|Nesne bir parametre oluşturulan geçerli Module::ReleaseNotifier nesneyi siler `true`.|  
+|[Module::ReleaseNotifier::Invoke Metodu](../windows/module-releasenotifier-invoke-method.md)|Modül içindeki son nesnenin serbest bırakıldığında uygulandığında, bir olay işleyici çağırır.|  
+|[Module::ReleaseNotifier::Release](../windows/module-releasenotifier-release.md)|Geçerli siler **Module::ReleaseNotifier** nesnesi bir parametre ile oluşturulmuş nesne **true**.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ReleaseNotifier`  

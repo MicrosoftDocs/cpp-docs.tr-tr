@@ -17,31 +17,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 697eff3264c7e4a627086b072ae45b3c7ffedac2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3fae7ee95255d72d2799a5913821606f770e2b3b
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878976"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608436"
 ---
 # <a name="maxis"></a>max_is
-Geçerli dizi dizini için maksimum değeri belirler.  
+Geçerli dizi dizini için maksimum değeri atar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ max_is(  
+[ max_is(  
    "expression"  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *ifade*  
- C dili ifadeleri bir veya daha fazla. Boş bağımsız değişkeni yuvaları izin verilir.  
+ *İfade*  
+ Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin verilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Max_is** C++ özniteliğine sahip ile aynı işlevselliği [max_is](http://msdn.microsoft.com/library/windows/desktop/aa367074) MIDL özniteliği.  
+ **Max_is** C++ özniteliği ile aynı işlevlere sahip [max_is](http://msdn.microsoft.com/library/windows/desktop/aa367074) MIDL özniteliği.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -49,15 +48,15 @@ Geçerli dizi dizini için maksimum değeri belirler.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|İçinde alan `struct` veya **UNION**, parametre arabirim, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|**size_is**|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="example"></a>Örnek  
- Bkz: [first_is](../windows/first-is.md) bir dizi bir bölümünü belirleme konusunda bir örneği.  
+ Bkz: [first_is](../windows/first-is.md) örneği nasıl bir dizinin bir bölümünü belirtin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

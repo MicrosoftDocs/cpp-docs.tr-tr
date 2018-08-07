@@ -18,36 +18,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b207bfa9236b4e0de1f01f98cc7e83124048a3a8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bf2c5cb434b07c9323594448a25da7251010bbad
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877390"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608315"
 ---
 # <a name="resource-view-window"></a>Kaynak Görünümü Penceresi
 > [!NOTE]
->  Express sürümleri desteklenmez.  
+>  Express sürümlerinde desteklenmez.  
   
- Kaynak Görünümü projelerinizde dahil kaynak dosyaları görüntüler. En üst düzey klasör (örneğin, Project1.rc) genişleterek kaynak türleri bu .rc dosyanın içindeki gösterir. Her kaynak türü genişleterek bu türdeki tek tek kaynakları gösterir.  
+ Kaynak Görünümü projelerinizde içerdiği kaynak dosyaları görüntüler. En üst düzey klasör (örneğin, Project1.rc) genişleterek, .rc dosyası içine kaynak türlerini gösterir. Her kaynak türünün genişleterek o türün tek tek kaynakları gösterir.  
   
 > [!NOTE]
->  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+>  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
 > [!TIP]
->  Bir kısayol menü komutları başlatmak için Kaynak Görünümü penceresi sağ tıklayabilirsiniz. Ayrıca, yerleştirme veya pencere çıkarmak için başlık çubuğunda çift tıklatabilirsiniz. Başlık çubuğunda sağ penceresi davranışını denetlemenize izin ek komutlar verir. Daha fazla bilgi için bkz: [Windows Yönetim](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
+>  Bir kısayol menü komutlarının başlatmak için Kaynak Görünümü penceresi üzerinde sağ tıklayabilirsiniz. Ayrıca, sabitleme veya pencerenin çıkarmak için başlık çubuğunu çift tıklatabilirsiniz. Başlık çubuğunun sağ pencereyi davranışını denetlemenize izin ek komutlar verir. Daha fazla bilgi için [Windows Yönetim](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
   
 #### <a name="to-open-the-resource-view-window"></a>Kaynak Görünümü penceresi açmak için  
   
-1.  Tıklatın **kaynak görünümü** üzerinde **Görünüm** menüsü.  
+1.  Tıklayın **kaynak görünümü** üzerinde **görünümü** menüsü.  
   
      \- veya -  
   
-2.  Tuşuna **CTRL + SHIFT + E**.  
+2.  Tuşuna **Ctrl**+**Shift**+**E**.  
   
-
-  
-### <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

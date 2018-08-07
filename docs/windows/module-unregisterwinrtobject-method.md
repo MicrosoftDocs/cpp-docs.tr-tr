@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aab0ec29dbda428a1173d57e2671f1e4b609e085
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5bf681acc485b08448fcb4e936ca1096a8137384
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882608"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607478"
 ---
 # <a name="moduleunregisterwinrtobject-method"></a>Module::UnregisterWinRTObject Yöntemi
-Diğer uygulamalar için bağlanamıyor böylece bir veya daha fazla Windows çalışma zamanı nesneleri kaydını siler.  
+Böylece diğer uygulamalar için bağlanılamıyor veya daha fazla Windows çalışma zamanı nesne kaydını siler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,12 +34,11 @@ virtual HRESULT UnregisterWinRTObject(
    unsigned int,  
    _Inout_ WINRT_REGISTRATION_COOKIE* cookie  
 );  
-  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `cookie`  
- Kaydını iptal edilmesini sınıf nesnesi tanımlayan bir değer için bir işaretçi.  
+ *Tanımlama bilgisi*  
+ Kaydını iptal edilmesine izin sınıfı nesne tanımlayan bir değer için bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   

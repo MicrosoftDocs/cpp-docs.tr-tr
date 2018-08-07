@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 38724e6371f5c0ae508fc18e4bc75dc2287dbe19
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c87f1191bc90cd2aec9207f3a4657349c9859bf4
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878066"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605925"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -30,7 +30,6 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 template<  
    typename T,  
    bool hasWeakReferenceSupport =   
@@ -44,19 +43,19 @@ template<typename T>
 class MakeAllocator<T, true>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `T`  
+### <a name="parameters"></a>Parametreler  
+ *T*  
  Tür adı.  
   
- `hasWeakReferenceSupport`  
- `true` zayıf başvurular destekleyen bir nesne için bellek ayrılamadı; `false` zayıf başvurular desteklemeyen bir nesne için bellek ayrılamadı.  
+ *hasWeakReferenceSupport*  
+ **doğru** zayıf başvurular; destekleyen bir nesne için bellek ayrılamadı **false** zayıf başvuru desteği olmayan bir nesne için bellek ayrılamadı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Zayıf başvuru desteği olmadan veya ile bir activatable sınıfı için bellek ayırır.  
+ İle veya zayıf başvuru desteği olmayan bir etkinleştirilebilir sınıf için bellek ayırır.  
   
- MakeAllocator sınıfı, bir kullanıcı tarafından tanımlanan bellek ayırma modeli uygulamak için geçersiz kılar.  
+ Geçersiz kılma **MakeAllocator** bir kullanıcı tarafından tanımlanan bellek ayırma modeli uygulamak için sınıfı.  
   
- MakeAllocator genellikle bir nesne oluşturma sırasında oluşturursa bellek sızıntıları önlemek için kullanılır.  
+ **MakeAllocator** genellikle bir nesne oluşturma sırasında oluşturursa bellek sızıntılarını önlemek için kullanılır.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -64,15 +63,15 @@ class MakeAllocator<T, true>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[MakeAllocator::MakeAllocator Oluşturucusu](../windows/makeallocator-makeallocator-constructor.md)|MakeAllocator sınıfı yeni bir örneğini başlatır.|  
-|[MakeAllocator::~MakeAllocator Yıkıcısı](../windows/makeallocator-tilde-makeallocator-destructor.md)|MakeAllocator sınıfı, geçerli örneğini deinitializes.|  
+|[MakeAllocator::MakeAllocator Oluşturucusu](../windows/makeallocator-makeallocator-constructor.md)|Yeni bir örneğini başlatır **MakeAllocator** sınıfı.|  
+|[MakeAllocator::~MakeAllocator Yıkıcısı](../windows/makeallocator-tilde-makeallocator-destructor.md)|Geçerli örneğinin başlatmasını geri alır **MakeAllocator** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[MakeAllocator::Allocate Metodu](../windows/makeallocator-allocate-method.md)|Bellek ayırır ve geçerli MakeAllocator nesnesi ile ilişkilendirir.|  
-|[MakeAllocator::Detach Metodu](../windows/makeallocator-detach-method.md)|Tarafından ayrılan bellek keser [ayırma](../windows/makeallocator-allocate-method.md) geçerli MakeAllocator nesnesinden yöntemi.|  
+|[MakeAllocator::Allocate Metodu](../windows/makeallocator-allocate-method.md)|Bellek ayırır ve geçerli ilişkilendirir **MakeAllocator** nesne.|  
+|[MakeAllocator::Detach Metodu](../windows/makeallocator-detach-method.md)|Tarafından ayrılan bellek ayırır [ayırma](../windows/makeallocator-allocate-method.md) yöntemi geçerli **MakeAllocator** nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `MakeAllocator`  

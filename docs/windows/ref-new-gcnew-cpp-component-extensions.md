@@ -20,41 +20,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9533675d2894b3c3d99e3fb57abded8ea4e99d7a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 51aec80ee24d96cf08d55778e108492d16ecfcc9
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879067"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606191"
 ---
 # <a name="ref-new-gcnew--c-component-extensions"></a>yeni başvuru, gcnew (C++ Bileşen Uzantıları)
-`ref new` Birleşik anahtar sözcüğü ayırır nesne erişilemez duruma ve bir işleyici döner toplanacak olan bir türü örneği ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) ayrılmış nesnesine.  
+**Yeni başvuru** toplama anahtar sözcüğü ayırır nesne erişilemez duruma gelir ve bir tanıtıcı döndürür atık bir türün örneğini ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) ayrılmış nesneyi.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- Tarafından ayrılmış bir türünün bir örneği için bellek `ref new` otomatik olarak serbest bırakıldı.  
+ Tarafından ayrılan bir türün bir örneği için bellek **yeni başvuru** otomatik olarak serbest bırakılır.  
   
- A `ref new` işlemi atar `OutOfMemoryException` bellek ayıramıyor ise.  
+ A **yeni başvuru** işlemi oluşturur `OutOfMemoryException` bellek ayıramıyor ise.  
   
- Yerel C++ türleri için bellek tahsis ve serbest hakkında daha fazla bilgi için bkz: [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).  
+ Yerel C++ türler için bellek tahsis ve serbest hakkında daha fazla bilgi için bkz. [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- Kullanım `ref new` ömrü otomatik olarak yönetmek istediğiniz Windows çalışma zamanı nesneler için bellek ayrılamadı. Başvuru sayısı başvuru son kopyasını fazlası kapsam dışında sonra oluşan sıfır gittiğinde nesne otomatik olarak serbest. Daha fazla bilgi için bkz: [Ref sınıflar ve yapılar](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
+ Kullanım **yeni başvuru** ömrü otomatik olarak yönetmek istediğiniz Windows çalışma zamanı nesneler için bellek ayrılamadı. Nesne, başvuru sayısı başvuru son kopyasını kapsam dışına geçti sonra oluşan sıfıra gittiğinde otomatik olarak serbest bırakıldı. Daha fazla bilgi için [başvuru sınıfları ve yapıları](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- Tarafından yönetilen türü (başvuru veya değer türü) için bellek tahsis `gcnew`ve atık toplama kullanarak serbest bırakıldı.  
+ Tarafından yönetilen bir türe (başvuru veya değer türü) için bellek ayrıldığını **gcnew**ve çöp toplama kullanarak serbest bırakıldı.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
- Aşağıdaki örnek kullanır `gcnew` ileti nesnesi ayrılamadı.  
+ Aşağıdaki örnekte **gcnew** ileti nesne ayrılamadı.  
   
-```  
+```cpp  
 // mcppv2_gcnew_1.cpp  
 // compile with: /clr  
 ref struct Message {  
@@ -69,11 +68,9 @@ int main() {
 }  
 ```  
   
- **Örnek**  
+ Aşağıdaki örnekte **gcnew** gibi bir başvuru türü kullanmak için bir kutulanmış değer türü oluşturmak için.  
   
- Aşağıdaki örnek kullanır `gcnew` bir başvuru türü gibi kullanım için paketlenmiş değer türü oluşturun.  
-  
-```  
+```cpp  
 // example2.cpp : main project file.  
 // compile with /clr  
 using namespace System;  

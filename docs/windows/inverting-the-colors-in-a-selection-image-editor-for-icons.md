@@ -1,5 +1,5 @@
 ---
-title: (Simgeler için görüntü Düzenleyicisi) seçimdeki renkleri ters çevirme | Microsoft Docs
+title: Bir seçme (simgeler için görüntü Düzenleyicisi) renkleri ters çevirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,23 +20,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9f29c9698a14d5cd8773d12a1719614e19ca67c0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c187f0fac784bdd0c162334abcfdc23f8a6c1804
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874086"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608923"
 ---
 # <a name="inverting-the-colors-in-a-selection-image-editor-for-icons"></a>Seçimdeki Renkleri Ters Çevirme (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi görüntüyü ters renklerle nasıl görüneceği anlayabilirsiniz şekilde görüntünün seçili bölümündeki renkleri ters çevirme için kullanışlı bir yol sağlar.  
+Resim Düzenleyicisi görüntü ters renklerle nasıl görüneceği söyleyebilirsiniz. böylece, seçili bir görüntünün parçası olarak renkleri ters çevir için kullanışlı bir yol sağlar.  
   
-### <a name="to-invert-colors-in-the-current-selection"></a>Geçerli seçimdeki renkleri ters çevirmek için  
+### <a name="to-invert-colors-in-the-current-selection"></a>Geçerli seçimdeki renkleri ters çevir için  
   
-1.  Üzerinde **görüntü** menüsünde tıklatın **renkleri ters çevir**.  
+1.  Üzerinde **görüntü** menüsünde tıklatın **renkleri**.  
   
-
-  
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   

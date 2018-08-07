@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dc88ea32d4384b36559a4a10da0a5975345bf0d7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7dce8c6fca14ad26665bf4868681234374c20f85
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876013"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608150"
 ---
 # <a name="hstringreferencehstringreference-constructor"></a>HStringReference::HStringReference Oluşturucusu
-HStringReference sınıfı yeni bir örneğini başlatır.  
+Yeni bir örneğini başlatır **HStringReference** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,25 +38,25 @@ HStringReference(wchar_t const (&str)[ sizeDest],
 HStringReference(HStringReference&& other) throw();  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `sizeDest`  
- Şablon parametresi hedef HStringReference arabellek boyutunu belirtir.  
+### <a name="parameters"></a>Parametreler  
+ *sizeDest*  
+ Hedef boyutunu belirten bir şablon parametresi **HStringReference** arabellek.  
   
- `str`  
- Bir joker karakter dizesi referansı.  
+ *str*  
+ Bir geniş karakter dizesi bir başvuru.  
   
- `len`  
- En büyük uzunluğu `str` bu işlemde kullanılacak parametre arabelleği. Varsa `len` değil parametresi belirtilmezse, tüm `str` parametresi kullanılır. Varsa `len` değerinden daha büyük `sizeDest`, `len` ayarlanır `sizeDest`-1.  
+ *Len*  
+ En büyük uzunluğunu *str* parametre arabelleği bu işlemi kullanmak için. Varsa *len* parametresi belirtilmediyse, tüm *str* parametresi kullanılır. Varsa *len* büyüktür *sizeDest*, *len* ayarlanır *sizeDest*-1.  
   
- `other`  
- Başka bir HStringReference nesnesi.  
+ *Diğer*  
+ Başka bir **HStringReference** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucusu aynı parametre olarak boyut yeni bir HStringReference nesnesini başlatır `str`.  
+ İlk Oluşturucu, yeni bir başlatır **HStringReference** aynı boyuttaki parametre olarak nesne *str*.  
   
- İkinci oluşturucu başlatır yeni HStringReference nesne boyutu specifeid parametresi tarafından `len`.  
+ İkinci Oluşturucu, yeni bir başlatır **HStringReference** nesnesinin boyutu specifeid parametresi tarafından *len*.  
   
- Üçüncü Oluşturucu değerini yeni HStringReference nesnesine başlatır `other` parametresi ve ardından bozar `other` parametresi.  
+ Üçüncü Oluşturucu, yeni bir başlatır **HStringReference** değerini nesnesine *diğer* parametresi ve ardından yok eder *diğer* parametresi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

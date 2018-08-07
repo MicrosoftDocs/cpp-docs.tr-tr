@@ -17,36 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a8844a4770d0a4746c9d9de32a593d0770dcc9a9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 96e316add17ff45425bd51a7e32b276b234c6906
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878518"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606520"
 ---
 # <a name="idlquote"></a>idl_quote
-Visual C++ geçerli sürümde desteklenmez IDL yapıları kullanmanıza olanak sağlar ve bunları oluşturulan .idl dosyasına geçirir.  
+Visual C++'ın geçerli sürümünde desteklenmeyen IDL yapıları kullanmanıza olanak tanır ve bunları oluşturulan .idl dosyasına geçirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ idl_quote(  
+[ idl_quote(  
    text  
 ) ]  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *Metin*  
- Oluşturulan .idl dosyasına derleyici hatası dönmeden geçmesine Visual C++ Derleyici düşündüğünüz öznitelik adı.  
+ Visual C++ derleyicisi aracılığıyla oluşturulan .idl dosyasına bir derleyici hatası dönmeden iletmek için istediğinize öznitelik adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsa **idl_quote** C++ özniteliği kullanılır (noktalı virgül ile ayraç sonra), tek başına bir özniteliği olarak sonra *metin* birleştirilmiş .idl dosya olarak yerleştirilir. Varsa **idl_quote** bir simge üzerinde kullanılan *metin* bu simge için öznitelik bloğu içinde yerleştirilir.  
+ Varsa **idl_quote** C++ özniteliği kullanılır (noktalı sağ köşeli ayraç sonra), bir tek başına öznitelik olarak ardından *metin* olduğu gibi birleştirilmiş bir .idl dosyasında yer alır. Varsa **idl_quote** üzerinde bir sembol, kullanılan *metin* sembolün için öznitelik bloğu içinde yer alır.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod nasıl desteklenmeyen bir öznitelik belirtebilirsiniz gösterir (kullanarak **içinde**, desteklendiği) nasıl tanımlamak ve bir tanımsız .idl yapısıyla kullanın:  
+ Aşağıdaki kod nasıl desteklenmeyen bir öznitelik belirtebilirsiniz gösterir (kullanarak **içinde**, desteklendiği) ve nasıl tanımlanacağını ve bir tanımsız .idl yapısı kullanın:  
   
-```  
+```cpp  
 // cpp_attr_ref_idl_quote.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -79,7 +78,7 @@ __interface IStatic{
 };  
 ```  
   
- Bu kod MYFLOT ve MYDUB neden olur ve *metin* oluşturulan .idl dosyasında yerleştirilecek girişi. *Adı* parametresi zorlar *metin* başvuruda bulunan her şeyi önce yerleştirilecek *adı* oluşturulan .idl dosyasındaki. *Bağımlılıkları* parametre zorlar önce yerleştirilecek bağımlılık liste tanımları *metin* oluşturulan .idl dosyasındaki.  
+ Bu kod MYFLOT ve MYDUB neden olur ve *metin* oluşturulan .idl dosyasında yerleştirilecek girişi. *Adı* parametresi zorlar *metin* başvuran hiçbir şey önce yerleştirilecek *adı* oluşturulan .idl dosyasındaki. *Bağımlılıkları* parametre zorlar önce yerleştirilecek bağımlılık liste tanımları *metin* oluşturulan .idl dosyasındaki.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -87,12 +86,12 @@ __interface IStatic{
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Her yerden|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Her yerde|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

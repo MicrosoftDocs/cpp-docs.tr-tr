@@ -1,5 +1,5 @@
 ---
-title: Module::GetActivationFactory yöntemi | Microsoft Docs
+title: Module::GetActivationFactory metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 837cb68173ca1994de6bc560882d617bb3aa03e0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e41b90ea56f65665ccdaff0fe4dceff292d1cdcf
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33887019"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608111"
 ---
 # <a name="modulegetactivationfactory-method"></a>Module::GetActivationFactory Metodu
-Modül için bir etkinleştirme üreteci alır.  
+Etkinleştirme fabrikası için modülü alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,18 +37,18 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `pActivatibleClassId`  
- Bir çalışma zamanı sınıf IID.  
+### <a name="parameters"></a>Parametreler  
+ *pActivatibleClassId*  
+ Laboratuvardaki bir çalışma zamanı sınıf.  
   
- `ppIFactory`  
- Belirtilen çalışma zamanı sınıf için IActivationFactory.  
+ *ppIFactory*  
+ Belirtilen çalışma zamanı sınıfının IActivationFactory.  
   
- `serverName`  
- Sınıf oluşturucuları geçerli modülünde bir kısmı adı. Kullanılan sunucu adını belirtmek [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) makro veya belirtin `nullptr` varsayılan sunucu adı alınamıyor.  
+ *SunucuAdı*  
+ Sınıf üreteçlerini geçerli modüldeki bir alt kümesi adı. Kullanılan sunucu adını belirtmek [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) makro veya belirtin **nullptr** varsayılan sunucu adı alınamıyor.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, GetActivationFactory tarafından döndürülen HRESULT.  
+ Başarılıysa S_OK; Aksi takdirde GetActivationFactory tarafından döndürülen HRESULT.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  
@@ -56,4 +56,5 @@ WRL_NOTHROW HRESULT GetActivationFactory(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Modül sınıfı](../windows/module-class.md) [ActivatableClass makroları](../windows/activatableclass-macros.md)
+ [Modül Sınıfı](../windows/module-class.md)  
+ [ActivatableClass Makroları](../windows/activatableclass-macros.md)

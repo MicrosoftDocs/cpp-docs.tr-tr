@@ -17,18 +17,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0cef979ae284a303b120df7d14ae71f311498423
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 508c9a5d34fa8e9c4fa339e9917ae069874159ad
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882348"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608384"
 ---
 # <a name="iidppvargshelper-function"></a>IID_PPV_ARGS_Helper İşlevi
 Belirtilen bağımsız değişken türü öğesinden türetilen doğrular `IUnknown` arabirimi.  
   
 > [!IMPORTANT]
->  Bu şablon uzmanlık WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir. Kullanım [IID_PPV_ARGS](http://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) yerine.  
+>  Bu şablon uzmanlığı WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir. Kullanım [IID_PPV_ARGS](http://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) yerine.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,20 +40,20 @@ void** IID_PPV_ARGS_Helper(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Bağımsız değişken türü `pp`.  
+ *T*  
+ Bağımsız değişken türünü *pp*.  
   
- `pp`  
+ *PP*  
  Karakteriyle dolaylı bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bağımsız değişken `pp` gösteren bir işaretçi-için-a-işaretçi cast `void`.  
+ Bağımsız değişken *pp* işaretçi-için-a-işaretçisine dönüştürme **void**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Derleme zamanı hatası ise oluşturulur şablon parametresi `T` öğesinden türetilen değil `IUnknown`.  
+ Bir derleme zamanı hatası oluşturulur şablon parametresi *T* öğesinden türetilen değil `IUnknown`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başvuru (Windows çalışma zamanı kitaplığı)](http://msdn.microsoft.com/en-us/00000000-0000-0000-0000-000000000000)
+ [Başvuru (Windows çalışma zamanı kitaplığı)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)

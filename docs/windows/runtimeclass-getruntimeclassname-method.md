@@ -1,5 +1,5 @@
 ---
-title: RuntimeClass::GetRuntimeClassName yöntemi | Microsoft Docs
+title: RuntimeClass::GetRuntimeClassName metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3cfe3cc4a8a304bbd04fde9e6c38e2b9170e2e73
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7706a16a860cf554068dd3416e7c1f8b1fcea311
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892445"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39608780"
 ---
 # <a name="runtimeclassgetruntimeclassname-method"></a>RuntimeClass::GetRuntimeClassName Metodu
 
-Geçerli RuntimeClass nesne çalışma zamanı sınıf adını alır.
+Geçerli çalışma zamanı sınıf adını alır **RuntimeClass** nesne.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,11 +43,11 @@ Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Assert hata durumunda yayılan &#95; &#95;WRL_STRICT&#95; &#95; veya &#95; &#95;WRL_FORCE_INSPECTABLE_CLASS_MACRO&#95; &#95; tanımlı değil.
+Assert hata durumunda yayıldığını &#95; &#95;WRL_STRICT&#95; &#95; veya &#95; &#95;WRL_FORCE_INSPECTABLE_CLASS_MACRO&#95; &#95; tanımlanmadı.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -56,5 +56,4 @@ Assert hata durumunda yayılan &#95; &#95;WRL_STRICT&#95; &#95; veya &#95; &#95;
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-
-[RuntimeClass Sınıfı](../windows/runtimeclass-class.md)
+ [RuntimeClass Sınıfı](../windows/runtimeclass-class.md)

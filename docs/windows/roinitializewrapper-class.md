@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cac71857e6b472f11d1c9eaba48d181ea78fb456
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9fab2ecd259e75767728a46448c06df4c4729ef3
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705598"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606728"
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper Sınıfı
-Windows çalışma zamanı başlatır.  
+Windows çalışma zamanı'nı başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,7 +32,7 @@ class RoInitializeWrapper
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Roınitializewrapper Windows çalışma zamanı başlatır ve işlemin başarılı olup olmadığını belirten bir HRESULT döndüren kullanışlı olur. Sınıf yıkıcı çağrıları çünkü `::Windows::Foundation::Uninitialize`, örneklerini `RoInitializeWrapper` genel ya da üst düzey kapsamında bildirilmelidir.  
+ **Roınitializewrapper** Windows çalışma zamanı başlatır ve işlemin başarılı olup olmadığını belirten bir HRESULT döndüren bir kolaylık. Sınıf yok edicisini çağırır çünkü `::Windows::Foundation::Uninitialize`, örneklerini **Roınitializewrapper** genel veya üst düzey kapsamda bildirilmelidir.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -40,14 +40,14 @@ class RoInitializeWrapper
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[RoInitializeWrapper::RoInitializeWrapper Oluşturucusu](../windows/roinitializewrapper-roinitializewrapper-constructor.md)|Roınitializewrapper sınıfının yeni bir örneğini başlatır.|  
-|[RoInitializeWrapper::~RoInitializeWrapper Yıkıcısı](../windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md)|Roınitializewrapper sınıfının geçerli örneği yok eder.|  
+|[RoInitializeWrapper::RoInitializeWrapper Oluşturucusu](../windows/roinitializewrapper-roinitializewrapper-constructor.md)|Yeni bir örneğini başlatır **Roınitializewrapper** sınıfı.|  
+|[RoInitializeWrapper::~RoInitializeWrapper Yıkıcısı](../windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md)|Geçerli örneğini yok eder **Roınitializewrapper** sınıfı.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[RoInitializeWrapper::HRESULT() İşleci](../windows/roinitializewrapper-hresult-parens-operator.md)|Roınitializewrapper oluşturucusu tarafından üretilen HRESULT alır.|  
+|[RoInitializeWrapper::HRESULT() İşleci](../windows/roinitializewrapper-hresult-parens-operator.md)|Tarafından üretilen HRESULT alır **Roınitializewrapper** Oluşturucusu.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `RoInitializeWrapper`  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 58f27e418946987633f771bc8d2c3224bc2cd7fd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5e5da95e6cfb276704b5cd6150e4abc2921a5701
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875945"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605623"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -38,20 +38,20 @@ template <
 friend struct Details::ImplementsHelper;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `RuntimeClassFlagsT`  
- Bir veya daha fazla belirten bayrakları alanı [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırıcılar.  
+### <a name="parameters"></a>Parametreler  
+ *RuntimeClassFlagsT*  
+ Bir veya daha fazla belirten bayraklar alanı [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırıcılar.  
   
- `ILst`  
+ *ILst*  
  Arabirim kimlikleri listesi.  
   
- `IsDelegateToClass`  
- Belirtin `true` uygular, geçerli örneğini bir taban sınıf içinde ilk arabirimi kimliğinin ise `ILst`; Aksi halde, `false`.  
+ *IsDelegateToClass*  
+ Belirtin **true** varsa geçerli örneğini `Implements` ilk arabirim kimliği taban sınıfıdır *ILst*; Aksi takdirde **false**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Uygulama yardımcı [uygulayan](../windows/implements-structure.md) yapısı.  
+ Uygulama yardımcı [uygular](../windows/implements-structure.md) yapısı.  
   
- Bu şablon arabirimleri listesine erişir ve temel sınıflar ve QueryInterface etkinleştirmek gerekli olan bilgileri olarak ekler.  
+ Bu şablon, arabirimin bir listeyi dikkatle inceler ve temel sınıflar ve QueryInterface etkinleştirmek gereken bilgileri olarak ekler.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -64,5 +64,5 @@ friend struct Details::ImplementsHelper;
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başvuru (Windows çalışma zamanı kitaplığı)](http://msdn.microsoft.com/en-us/00000000-0000-0000-0000-000000000000)   
+ [Başvuru (Windows çalışma zamanı kitaplığı)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)   
  [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

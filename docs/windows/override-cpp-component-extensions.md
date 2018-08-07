@@ -16,29 +16,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6818256aafc64702e5423a5560c251e6d46750fa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 855f2c18423fd6c1ca708034214e6f5c7048d6d8
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878885"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39605567"
 ---
 # <a name="override--c-component-extensions"></a>geçersiz kılma (C++ Bileşen Uzantıları)
-`override` Bağlama duyarlı anahtar sözcüğü bir türünün bir üyesi bir taban sınıf veya temel arabirim üye kıldığını gösterir.  
+**Geçersiz kılma** bağlama duyarlı anahtar sözcüğü bir tür üyesi bir temel sınıf veya temel arabirim üyesi kıldığını gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `override` (Varsayılan derleyici seçeneği), yerel hedefler için derlerken anahtar sözcüğü geçerli Windows çalışma zamanı hedefleri (**/ZW** derleyici seçeneği), ya da ortak dil çalışma zamanı hedefleri (**/CLR** derleyici seçenek).  
+ **Geçersiz kılma** (varsayılan derleyici seçeneği), yerel hedefler için derleme yaparken anahtar sözcüğü geçerli Windows çalışma zamanı hedefleri (`/ZW` derleyici seçeneği), veya ortak dil çalışma zamanı hedefleri (`/clr` derleyici seçeneği).  
   
- Geçersiz kılma tanımlayıcıları hakkında daha fazla bilgi için bkz: [override tanımlayıcısı](../cpp/override-specifier.md) ve [geçersiz kılma tanımlayıcıları ve yerel derleme](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
+ Geçersiz kılma tanımlayıcıları hakkında daha fazla bilgi için bkz. [geçersiz kılma belirticisi](../cpp/override-specifier.md) ve [geçersiz kılma tanımlayıcıları ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
   
- Bağlama duyarlı anahtar sözcükler hakkında daha fazla bilgi için bkz: [Context-Sensitive anahtar sözcükleri](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
+ Bağlama duyarlı anahtar sözcükler hakkında daha fazla bilgi için bkz. [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
 ## <a name="examples"></a>Örnekler  
- **Örnek**  
   
- Aşağıdaki kod örneğinde gösterir `override` içinde yerel derlemeleri de kullanılabilir.  
+ Aşağıdaki kod örneği gösteren **geçersiz kılma** yerel derlemelerde de kullanılabilir.  
   
-```cpp#  
+```cpp  
 // override_keyword_1.cpp  
 // compile with: /c  
 struct I1 {  
@@ -50,11 +49,11 @@ struct X : public I1 {
 };  
 ```  
   
- **Örnek**  
+### <a name="example"></a>Örnek
+
+ Aşağıdaki kod örneği gösteren **geçersiz kılma** Windows çalışma zamanı derlemeleri kullanılabilir.  
   
- Aşağıdaki kod örneğinde gösterir `override` Windows çalışma zamanı derlemeleri içinde kullanılabilir.  
-  
-```cpp#  
+```cpp 
 // override_keyword_2.cpp  
 // compile with: /ZW /c  
 ref struct I1 {  
@@ -66,15 +65,15 @@ ref struct X : public I1 {
 };  
 ```  
   
- **Gereksinimler**  
+#### <a name="requirements"></a>Gereksinimler  
   
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
+    
+### <a name="example"></a>Örnek
+
+ Aşağıdaki kod örneği gösteren **geçersiz kılma** ortak dil çalışma zamanı derlemeleri kullanılabilir.  
   
- **Örnek**  
-  
- Aşağıdaki kod örneğinde gösterir `override` ortak dil çalışma zamanı derlemeleri kullanılabilir.  
-  
-```cpp#  
+```cpp  
 // override_keyword_3.cpp  
 // compile with: /clr /c  
 ref struct I1 {  
@@ -86,10 +85,10 @@ ref struct X : public I1 {
 };  
 ```  
   
- **Gereksinimler**  
+#### <a name="requirements"></a>Gereksinimler  
   
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [override tanımlayıcısı](../cpp/override-specifier.md)   
+ [geçersiz kılma belirticisi](../cpp/override-specifier.md)   
  [Geçersiz kılma tanımlayıcıları](../windows/override-specifiers-cpp-component-extensions.md)

@@ -1,5 +1,5 @@
 ---
-title: Renk paletleri (simgeler için görüntü Düzenleyicisi) kaydetme ve farklı yükleme | Microsoft Docs
+title: Kaydetme ve yükleme farklı renk paletlerini (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,20 +21,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8b96411341baeb6abb75c44063072b94fae3ac6a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 14cad19c53e8cd741bf16bab49420169e93f6af6
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892325"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606978"
 ---
 # <a name="saving-and-loading-different-color-palettes-image-editor-for-icons"></a>Farklı Renk Paletlerini Kaydetme ve Yükleme (Simgeler İçin Görüntü Düzenleyicisi)
-Kaydetme ve içeren bir renk paleti yükleme [renkleri özelleştirilmiş](../windows/customizing-or-changing-colors-image-editor-for-icons.md). (Visual Studio başlattığınızda varsayılan olarak, en son kullanılan renk paleti otomatik olarak yüklenir.)  
+Kaydet ve içeren renkler paleti yük [renkleri özelleştirilmiş](../windows/customizing-or-changing-colors-image-editor-for-icons.md). (Visual Studio'yu başlattığınızda varsayılan olarak, en son kullanılan renkler paleti otomatik olarak yüklenir.)  
   
 > [!TIP]
->  Görüntü Düzenleyicisi varsayılan renk paleti geri yüklemek için bir yol olduğundan, böylece kolayca varsayılan ayarları geri varsayılan renk paleti standard.pal veya default.pal gibi bir ad altında kaydetmeniz gerekir.  
+>  Resim Düzenleyicisi'ni varsayılan renkler paleti geri yüklemek için hiçbir yol olduğundan, böylece bir kolayca varsayılan ayarları geri standard.pal veya default.pal gibi bir ad altında varsayılan renkler paleti kaydetmeniz gerekir.  
   
-### <a name="to-save-a-custom-colors-palette"></a>Özel renk paleti kaydetmek için  
+### <a name="to-save-a-custom-colors-palette"></a>Özel renkler paleti kaydetmek için  
   
 1.  Gelen **görüntü** menüsünde seçin **Kaydet palet**.  
   
@@ -42,15 +42,13 @@ Kaydetme ve içeren bir renk paleti yükleme [renkleri özelleştirilmiş](../wi
   
 3.  **Kaydet**'e tıklayın.  
   
-### <a name="to-load-a-custom-colors-palette"></a>Özel renk paleti yüklemek için  
+### <a name="to-load-a-custom-colors-palette"></a>Özel renkler paleti yüklemek için  
   
-1.  Gelen **görüntü** menüsünde seçin **yük palet**.  
+1.  Gelen **görüntü** menüsünde seçin **palet Yükle**.  
   
-2.  İçinde [renk paletini Yükle iletişim kutusu](../windows/load-palette-colors-dialog-box-image-editor-for-icons.md), doğru dizine gidin ve yüklemek istediğiniz paleti seçin. Renk paletleri .pal dosya uzantısıyla kaydedilir.  
+2.  İçinde [renk paletini Yükle iletişim kutusu](../windows/load-palette-colors-dialog-box-image-editor-for-icons.md)doğru dizine gidin ve yüklemek istediğiniz paleti seçin. Renk paletleri .pal dosya uzantısıyla kaydedilir.  
   
-
-  
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   

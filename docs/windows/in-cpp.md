@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0cb730163b9048005d3af64bb42ae9113681d52b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6c09ae7e750a6372dd622f251a3b512e4ea67ef4
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874024"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39606442"
 ---
 # <a name="in-c"></a>in (C++)
-Bir parametre çağrılan yordamı çağırma yordamdan geçirilecek olduğunu gösterir.  
+Bir parametrenin çağıran yordamdan çağrılan yordama geçirileceğini gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [in]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **İçinde** C++ özniteliğine sahip ile aynı işlevselliği [içinde](http://msdn.microsoft.com/library/windows/desktop/aa367051) MIDL özniteliği.  
+ **İçinde** C++ özniteliği ile aynı işlevlere sahip [içinde](http://msdn.microsoft.com/library/windows/desktop/aa367051) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [bağlanabilirse](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **içinde**.  
+ Bkz: [bağlanabilir](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **içinde**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,9 +45,9 @@ Bir parametre çağrılan yordamı çağırma yordamdan geçirilecek olduğunu g
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim parametresi, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|**retval**|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
