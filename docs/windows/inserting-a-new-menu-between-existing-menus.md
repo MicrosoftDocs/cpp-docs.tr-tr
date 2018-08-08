@@ -1,5 +1,5 @@
 ---
-title: Varolan menülerin arasına yeni menü ekleme | Microsoft Docs
+title: Mevcut menülerin arasına yeni menü ekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,25 +16,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 73a4b243823d14cd3015a7d92f7ba52a08dc68d7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b7b3fefbbe402babcb5291a2c9073a311a2e6451
+ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876338"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39607114"
 ---
 # <a name="inserting-a-new-menu-between-existing-menus"></a>Varolan Menülerin Arasına Yeni Menü Ekleme
-### <a name="to-insert-a-new-menu-between-existing-menus"></a>Varolan menülerin arasına yeni menü eklemek için  
+### <a name="to-insert-a-new-menu-between-existing-menus"></a>Mevcut menülerin arasına yeni menü eklemek için  
   
-1.  Var olan bir menü adı ve tuşuna seçin **Ekle** anahtarı. **Yeni öğe** kutusunda, seçili öğe önce eklenir.  
+1.  Var olan bir menü adı ve ENTER tuşuna seçin **Ekle** anahtarı. **Yeni öğe** kutusu önce seçilen öğe eklenir.  
   
      \- veya -  
   
 2.  Menü çubuğunda sağ tıklatın ve seçin **yeni Ekle** kısayol menüsünden.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   
