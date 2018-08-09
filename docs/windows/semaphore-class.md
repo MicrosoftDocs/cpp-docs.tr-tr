@@ -17,54 +17,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1219c2118f9cde18fe1909a2edd02d58a4be2341
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5101aba24cd8a0ed4f44587ffc4ad9e973099b8a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889475"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652642"
 ---
 # <a name="semaphore-class"></a>Semafor Sınıfı
-Kullanıcılar, sınırlı sayıda destekleyebilir paylaşılan bir kaynak denetleyen eşitleme nesnesi temsil eder.  
+Sınırlı sayıda kullanıcıları destekleyen bir paylaşılan kaynak denetleyen bir eşitleme nesnesi temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>  
 ```  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`SyncLock`|Zaman uyumlu kilitleri destekleyen bir sınıf eşanlamlısı.|  
+|`SyncLock`|Zaman uyumlu kilitleri destekleyen bir sınıf için bir eşanlamlı.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Semaphore::Semaphore Oluşturucusu](../windows/semaphore-semaphore-constructor.md)|Semafor sınıfı yeni bir örneğini başlatır.|  
+|[Semaphore::Semaphore Oluşturucusu](../windows/semaphore-semaphore-constructor.md)|Yeni bir örneğini başlatır **semafor** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[InvokeHelper::Invoke Metodu](../windows/invokehelper-invoke-method.md)|Belirtilen bağımsız değişken sayısı, imzası içeren olay işleyicisini çağırır.|  
+|[InvokeHelper::Invoke Metodu](../windows/invokehelper-invoke-method.md)|İmzası olan, belirtilen sayıda bağımsız değişken içeren olay işleyicisini çağırır.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Semaphore::Lock Metodu](../windows/semaphore-lock-method.md)|Geçerli nesne ya da belirtilen tanıtıcı ile ilişkili nesne kadar bekler ve iş durumundaki ya da belirtilen zaman aşımı aralığı geçti.|  
+|[Semaphore::Lock Metodu](../windows/semaphore-lock-method.md)|Geçerli nesne ya da belirtilen işleyici ile ilişkili nesne kadar bekler sinyal verilmiş duruma dönmesine ya da belirtilen zaman aşımı aralığı geçti.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Semaphore::operator= İşleci](../windows/semaphore-operator-assign-operator.md)|Belirtilen tanıtıcı geçerli semafor nesnesine bir semafor nesneden taşır.|  
+|[Semaphore::operator= İşleci](../windows/semaphore-operator-assign-operator.md)|Belirtilen tanıtıcıdan taşır bir **semafor** geçerli nesneye **semafor** nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Semaphore`  

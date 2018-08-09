@@ -17,29 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1aae09030ff6cad518028833ce5d4f7b06300a69
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3f722745b1283f25bd284adb3b55dcb340d78f07
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876654"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649919"
 ---
 # <a name="handletraits-structure"></a>HANDLETraits Yapısı
 Bir tanıtıcı genel özelliklerini tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 struct HANDLETraits;  
 ```  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`Type`|TANITICI eşanlamlısı.|  
+|`Type`|İŞLEYİCİ için bir eşanlamlı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   

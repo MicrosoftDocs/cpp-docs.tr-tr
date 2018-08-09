@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7308651726abd03f9bd4c9a32550644bec156432
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: dfa3b7222a25ed56d014cc90dbffa5f57a2c9436
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859907"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651914"
 ---
 # <a name="asyncbasecheckvalidstateforresultscall-method"></a>AsyncBase::CheckValidStateForResultsCall Yöntemi
-Zaman uyumsuz bir işlem sonuçlarını geçerli zaman uyumsuz durumunda toplanabilir olup olmadığını sınar.  
+Geçerli zaman uyumsuz durumda zaman uyumsuz bir işlemin sonuçları toplanabilir olup olmadığını sınar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 inline HRESULT CheckValidStateForResultsCall();  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- S_OK sonuçları toplanabilir; Aksi takdirde E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.  
+ S_OK sonuçları toplanabilir; Aksi takdirde, E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

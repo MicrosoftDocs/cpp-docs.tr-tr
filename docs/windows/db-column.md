@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 20c651c6e671c7c4895fc7dba85d16fdeb998ad5
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: e5aa4c7279fcee6ffd7ca17bcf788bbef7737a9c
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570707"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647524"
 ---
 # <a name="dbcolumn"></a>db_column
 Belirtilen sütun, satır kümesindeki bir değişkene bağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ db_column(   
    ordinal,   
    dbtype,   
@@ -44,7 +44,7 @@ Belirtilen sütun, satır kümesindeki bir değişkene bağlar.
  *Sıra*  
  Sıralı sütun sayısı (`DBCOLUMNINFO` sıralı) veya satır kümesi veri bağlanacak bir alana karşılık gelen sütun adı (ANSI veya Unicode dize). Sayı kullanıyorsanız, ardışık sıra sayıları atlayabilirsiniz (örneğin: 1, 2, 3, 5). OLE DB sağlayıcı destekliyorsa ad boşluk içeremez. Örneğin, aşağıdaki biçimlerden birini kullanabilirsiniz:  
   
-```  
+```cpp  
 [db_column("2")] TCHAR szCity[30];  
 [db_column(L"city_name")] TCHAR szCity[30];  
 ```  

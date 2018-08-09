@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ac37f1b5b5df8f39e584b8e5476af81a4b09ecff
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 10f97f1ce98bbc3de81e1888aad7c36f237f6396
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464343"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650355"
 ---
 # <a name="array-attributes"></a>Dizi Öznitelikleri
 Diziler için aşağıdaki öznitelikleri uygulanır veya `SAFEARRAY`s.  
@@ -28,8 +28,8 @@ Diziler için aşağıdaki öznitelikleri uygulanır veya `SAFEARRAY`s.
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |[library_block](../windows/library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|  
-|[satype](../windows/satype.md)|SAFEARRAY yapısı sütununun veri türünü belirtir.|  
-|[string](../windows/string-cpp.md)|Bildiren tek boyutlu **char**, **wchar_t**, **bayt** (veya eşdeğer) dizi ya da böyle bir dizinin işaretçisi gerekir kabul bir dize.|  
+|[satype](../windows/satype.md)|Veri türü belirtir `SAFEARRAY` yapısı.|  
+|[string](../windows/string-cpp.md)|Bildiren tek boyutlu **char**, **wchar_t**, `byte` (veya eşdeğer) dizi ya da böyle bir dizinin işaretçisi gerekir kabul bir dize.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

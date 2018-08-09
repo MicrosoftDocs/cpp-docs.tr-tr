@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 293c95bb95feb1fa021fa742a90939c6680e7b0d
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 313492990113ad1a1d6037c4c08e1baa464676d8
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39460647"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651044"
 ---
 # <a name="classfactoryrelease-method"></a>ClassFactory::Release Yöntemi
 Başvuru için geçerli sayısını azaltır **ClassFactory** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 STDMETHOD_(  
    ULONG,  
    Release  

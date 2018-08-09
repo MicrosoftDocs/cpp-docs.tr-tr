@@ -17,25 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 654ef60c924a14e861971c651899c8baea0300ef
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: ee858346fdb70e136edfbc562c2dfffb1f63e462
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462712"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652381"
 ---
 # <a name="classfactorylockserver-method"></a>ClassFactory::LockServer Yöntemi
 Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen **ClassFactory** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 STDMETHOD(  
    LockServer  
 )(BOOL fLock);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *fLock*  
  **doğru** izlenen nesne sayısını artırmak için. **false** izlenen nesnelerin sayısını azaltmak için.  
   
@@ -43,7 +43,7 @@ STDMETHOD(
  Başarılıysa S_OK; Aksi takdirde, E_FAIL.  
   
 ## <a name="remarks"></a>Açıklamalar  
- ClassFactory temel örneği nesneleri izler [Modülü](../windows/module-class.md) sınıfı.  
+ **ClassFactory** temel örneği nesneleri izler [Modülü](../windows/module-class.md) sınıfı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

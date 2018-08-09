@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 18ce213d6c4bedd0bcaa2be1af33281ae69f6ad1
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 43e4932f93c4b9954343df2aecd4db3b13ebc147
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461511"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649211"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory Sınıfı
 Windows çalışma zamanı tarafından etkinleştirilmesi bir veya daha fazla sınıflar sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template <  
    typename I0 = Details::Nil,  
    typename I1 = Details::Nil,  
@@ -38,7 +38,7 @@ template <
 class ActivationFactory : public Details::RuntimeClass<typename Details::InterfaceListHelper<IActivationFactory, I0, I1, I2, Details::Nil>::TypeT, RuntimeClassFlags<WinRt | InhibitWeakReference>, false>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *I0*  
  Sıfırıncı arabirim.  
   
@@ -74,7 +74,7 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
 |[ActivationFactory::AddRef Metodu](../windows/activationfactory-addref-method.md)|Geçerli başvuru sayısını artırır **ActivationFactory** nesne.|  
 |[ActivationFactory::GetIids Metodu](../windows/activationfactory-getiids-method.md)|Uygulanan arabirimi kimlikleri dizisini alır.|  
 |[ActivationFactory::GetRuntimeClassName Metodu](../windows/activationfactory-getruntimeclassname-method.md)|Nesnenin çalışma zamanı sınıf adını alır Geçerli **ActivationFactory** başlatır.|  
-|[ActivationFactory::GetTrustLevel Metodu](../windows/activationfactory-gettrustlevel-method.md)|Geçerli ActivationFactory başlatan nesne güven düzeyini alır.|  
+|[ActivationFactory::GetTrustLevel Metodu](../windows/activationfactory-gettrustlevel-method.md)|Nesne güven düzeyini alır Geçerli **ActivationFactory** başlatır.|  
 |[ActivationFactory::QueryInterface Metodu](../windows/activationfactory-queryinterface-method.md)|Belirtilen arabirim işaretçisi alır.|  
 |[ActivationFactory::Release Metodu](../windows/activationfactory-release-method.md)|Başvuru sayma geçerli azaltır **ActivationFactory** nesne.|  
   

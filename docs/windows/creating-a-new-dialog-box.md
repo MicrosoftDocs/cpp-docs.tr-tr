@@ -1,5 +1,5 @@
 ---
-title: Yeni bir iletişim kutusu oluşturma | Microsoft Docs
+title: Yeni iletişim kutusu oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,37 +18,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 49e0fe5ddf8b54078e8578396d2ed41ebd15da66
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 101c135a5ebf4d188a1e241c9d343580c13b247a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872150"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653033"
 ---
 # <a name="creating-a-new-dialog-box"></a>Yeni İletişim Kutusu Oluşturma
-### <a name="to-create-a-new-dialog-box"></a>Yeni bir iletişim kutusu oluşturmak için  
+### <a name="to-create-a-new-dialog-box"></a>Yeni iletişim kutusu oluşturmak için  
   
-1.  İçinde [kaynak görünümü](../windows/resource-view-window.md).rc dosyanızı sağ tıklayın ve ardından seçin **kaynak ekleme** kısayol menüsünden.  
+1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), .rc dosyasına sağ tıklayın ve ardından seçin **kaynak Ekle** kısayol menüsünden.  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  İçinde **kaynak ekleme** iletişim kutusunda **iletişim** içinde **kaynak türü** listeleyin ve ardından **yeni**.  
+2.  İçinde **kaynak Ekle** iletişim kutusunda **iletişim** içinde **kaynak türü** listesinde'a tıklayın **yeni**.  
   
-     Artı işareti (+) iletişim kaynak türü yanındaki görünürse, iletişim kutusu şablonları kullanılabilir olduğunu gösterir. Şablonları listesini genişletin, bir şablon seçin ve yeni için artı işaretine tıklayın.  
+     Bir artı işareti (**+**) yanında görünen **iletişim** kaynak türü geldiğini iletişim kutusu şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin ve tıklayın artı işaretine tıklayın **yeni**.  
   
-     İletişim kutusu Düzenleyicisi'nde yeni iletişim kutusu açılır.  
+     Yeni iletişim kutusu açılır **iletişim** Düzenleyici.  
   
-     Ayrıca [düzenleme için iletişim kutusu Düzenleyicisi'nde mevcut iletişim kutuları açma](../windows/viewing-and-editing-resources-in-a-resource-editor.md).  
+     Ayrıca [mevcut iletişim kutuları iletişim kutusu düzenleyicisinde düzenlemek üzere açın](../windows/viewing-and-editing-resources-in-a-resource-editor.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource.md)   
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   
  [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
-

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 107d721e4603fc1f22a5ff793a867b290472f10c
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 6b3ee48394eede37873ce074c275290307215815
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570408"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649142"
 ---
 # <a name="event--c-component-extensions"></a>olay (C++ Bileşen Uzantıları)
 **Olay** anahtar sözcüğü bildiren bir *olay*, kayıtlı aboneleri için bir bildirim olduğu (*olay işleyicileri*), ilgilendiğiniz bir sorun oluştu.  
@@ -31,9 +31,9 @@ ms.locfileid: "39570408"
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
  C + +/ CX destekler bildirme bir *olay üyesi* veya *olay blok*. Bir olay üyesi bir olay bloğu bildirmek için toplu özelliktir. Varsayılan olarak, bir olay üyesi bildirir `add()`, `remove()`, ve `raise()` açıkça bir olay blokta bildirilen işlevler. Bir olay üyesi işlevleri özelleştirmek için bir olay bloğu yerine bildirme ve ihtiyacınız olan işlevleri geçersiz kılın.  
   
- **Söz dizimi**  
+### <a name="syntax"></a>Sözdizimi
   
-```  
+```cpp  
 // event data member  
 modifiereventdelegate^ event_name;     
   
@@ -46,8 +46,7 @@ modifiereventdelegate^ event_name
 }  
 ```  
   
- **Parametreler**  
-  
+### <a name="parameters"></a>Parametreler
  *Değiştiricisi*  
  Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.  
   
@@ -63,7 +62,7 @@ modifiereventdelegate^ event_name
  *Parametreleri*  
  (isteğe bağlı) Parametreler için `raise` imzası eşleşen yöntemi *temsilci* parametresi.  
   
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar
   
  Bir olay bir temsilci olayı harekete yanıt verir ve imza ile uyumlu ve dönüş türü temel temsilci yöntemleri kaydetmek, istemcilerin herhangi bir sınıftan bir üye işlevi (olay işleyicisi) arasındaki ilişkidir.  
   
@@ -87,14 +86,14 @@ modifiereventdelegate^ event_name
  Ekle ve Kaldır'ı bir olay işleyicisi yapmak istiyorsanız, ekleme işlemi tarafından döndürülen EventRegistrationToken yapısı kaydetmeniz gerekir. Ardından kaldırma işleminde kaldırılacak olay işleyicisi tanımlamak için kaydedilen EventRegistrationToken yapısı kullanmalısınız.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
  **Olay** anahtar sözcüğü, bir olay bildirin olanak sağlar. Olay bildirimleri şeyler olduğunda ilgi sağlamak bir sınıf için bir yol olur.  
   
- **Söz dizimi**  
+### <a name="syntax"></a>Sözdizimi
   
-```  
+```cpp  
 // event data member  
 modifiereventdelegate^ event_name;   
   
@@ -107,8 +106,7 @@ modifiereventdelegate^ event_name
 }  
 ```  
   
- **Parametreler**  
-  
+### <a name="parameters"></a>Parametreler
  *Değiştiricisi*  
  Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.  
   
@@ -124,8 +122,7 @@ modifiereventdelegate^ event_name
  *Parametreleri*  
  (isteğe bağlı) Parametreler için `raise` imzası eşleşen yöntemi *temsilci* parametresi.  
   
- **Açıklamalar**  
-  
+### <a name="remarks"></a>Açıklamalar
  Bir olay bir temsilci olayı harekete yanıt verir ve imza ile uyumlu ve dönüş türü temel temsilci yöntemleri kaydetmek, istemcilerin herhangi bir sınıftan bir üye işlevi (olay işleyicisi) arasındaki ilişkidir.  
   
  Temsilci, kodunuzu olayın oluştuğunu gösteriyorsa, çağrılacak bir veya daha fazla ilişkili yöntemi olabilir. Bir programda bir olay .NET Framework ortak dil çalışma zamanını hedefleyen diğer programlar için kullanılabilir hale getirilebilir.  
@@ -171,11 +168,10 @@ modifiereventdelegate^ event_name
 -   [Arabirim içindeki olaylar](../dotnet/how-to-use-events-in-cpp-cli.md)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
-  
+
  Aşağıdaki kod örneği, bildirim çiftlerini Temsilciler, olayları ve olay işleyicileri gösterilmektedir; (eklemek) abone; olay işleyicileri olay işleyicilerini çağırma; ve ardından aboneliği (kaldırma) olay işleyicileri.  
   
 ```cpp  
@@ -229,15 +225,11 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 OnClick: 7, 3.14159  
   
 OnDblClick: Hello  
 ```  
-  
- **Örnek**  
   
  Aşağıdaki kod örneği oluşturmak için kullanılan mantıksal gösterir `raise` önemsiz bir olayın yöntemi: olay bir veya daha fazla üyeye sahipse, çağırma `raise` yöntemini açıkça veya örtük olarak temsilci çağırır. Temsilcinin dönüş türü değilse **void** ve sıfır etkinlik abonelerinden varsa `raise` yöntemi temsilci türü için varsayılan değeri döndürür. Hiçbir etkinlik abonelerinden varsa, çağırma `raise` yöntemi yalnızca döndürür ve hiçbir özel durum oluşturulur. Temsilci türü değil dönerseniz **void**, temsilci türü döndürülür.  
   
@@ -272,8 +264,6 @@ int main() {
    Console::WriteLine(c.i);     
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 0  

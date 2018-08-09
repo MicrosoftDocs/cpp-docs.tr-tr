@@ -1,5 +1,5 @@
 ---
-title: SyncLockWithStatusT::GetStatus yöntemi | Microsoft Docs
+title: SyncLockWithStatusT::GetStatus metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 03addd8d89c54eddb5deb721ab47d46e8b945edd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4677239bbcaff0c72eb11ade259f47531a616f19
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889768"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649642"
 ---
 # <a name="synclockwithstatustgetstatus-method"></a>SyncLockWithStatusT::GetStatus Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,12 +34,12 @@ DWORD GetStatus() const;
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- SyncLockWithStatusT sınıfı üzerinde gibi temel nesne üzerinde bir bekleme işleminin sonucu bir [Mutex](../windows/mutex-class1.md) veya [semafor](../windows/semaphore-class.md). Sıfır (0) bekleme işlem iş durumu döndüren gösterir; zaman aşımı değerini geçen gibi Aksi halde, başka bir durumu, oluştu.  
+ Temel alan bir nesne üzerinde bir bekleme işlemini sonucunu **SyncLockWithStatusT** gibi sınıfı bir [Mutex](../windows/mutex-class1.md) veya [semafor](../windows/semaphore-class.md). Sinyal verilmiş duruma dönmesine bekleme işlemi döndürülen sıfır (0) gösterir. geçen zaman aşımı değeri gibi Aksi takdirde, başka bir durum, oluştu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli SyncLockWithStatusT nesnesinin bekleme durumunu alır.  
+ Geçerli bekleme durumunu alır **SyncLockWithStatusT** nesne.  
   
- Arka plandaki değeri GetStatus() işlevi alır [status_](../windows/synclockwithstatust-status-data-member.md) veri üyesi. SyncLockWithStatusT sınıfı tabanlı bir nesne bir kilit işlemi gerçekleştirdiğinde, nesnenin ilk nesnenin kullanılabilir olması için bekler. Bu bekleme işleminin sonucu depolanan `status_` veri üyesi. Olası değerlerini `status_` veri üyesi bekleme işlemin dönüş değerlerdir. Dönüş değerleri daha fazla bilgi için bkz: **WaitForSingleObjectEx()** MSDN Kitaplığı'nda işlevi.  
+ GetStatus() işlevi, temel alınan değeri alır. [status_](../windows/synclockwithstatust-status-data-member.md) veri üyesi. Bir nesne, temel alarak **SyncLockWithStatusT** sınıfı bir kilit işlemi gerçekleştirir, nesne ilk nesne kullanılabilir olana kadar bekler. Bu bekleme işleminin sonucu depolanan `status_` veri üyesi. Olası değerleri `status_` veri üyesi olan dönüş değerlerini bekleme işlemi. Daha fazla bilgi için bkz: dönüş değerlerini `WaitForSingleObjectEx()` MSDN Kitaplığı'nda işlevi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

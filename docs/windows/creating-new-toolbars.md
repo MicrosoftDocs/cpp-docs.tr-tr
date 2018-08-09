@@ -19,34 +19,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b61d1c530272ecaba2cbeb36c21e158bd5a6b401
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c805fa46b47db5600dad153ffa51ba4f0b25442b
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888086"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652301"
 ---
 # <a name="creating-new-toolbars"></a>Yeni Araç Çubukları Oluşturma
 ### <a name="to-create-a-new-toolbar"></a>Yeni bir araç çubuğu oluşturmak için  
   
-1.  İçinde **kaynak** görüntülemek, .rc dosyasını sağ tıklatın ve ardından **kaynak ekleme** kısayol menüsünden. (Varolan araç .rc dosyanız varsa, sadece sağ tıklayarak **araç** klasörü ve select **Ekle araç** kısayol menüsünden.)  
+1.  İçinde **kaynak** görüntüleyebilir, .rc dosyasına sağ tıklayın ve ardından **kaynak Ekle** kısayol menüsünden. (Var olan bir araç çubuğu, bir .rc dosyasında varsa, sadece ne sağ tıklayarak **araç** klasörü ve select **araç çubuğu ekleme** kısayol menüsünden.)  
   
-     **Not** projeniz zaten bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+     > [!NOTE]
+     > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  İçinde **kaynak ekleme** iletişim kutusunda **araç** içinde **kaynak türü** listeleyin ve ardından **yeni**.  
+2.  İçinde **kaynak Ekle** iletişim kutusunda **araç** içinde **kaynak türü** listesinde'a tıklayın **yeni**.  
   
-     Artı işareti (+) yanındaki görünüp görünmeyeceğini **araç** kaynak türü, geldiğini araç şablonları kullanılabilir. Şablonları'nı genişletin, bir şablon seçin ve'artı işaretini tıklatın **yeni**.  
+     Bir artı işareti (**+**) yanında görünen **araç** kaynak türü geldiğini araç şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin ve tıklayın artı işaretine tıklayın **yeni**.  
   
      \- veya -  
   
-3.  [Varolan bir bit eşlemi araç çubuğuna Dönüştür](../windows/converting-bitmaps-to-toolbars.md).  
+3.  [Bir araç çubuğu için mevcut bir bit eşlemi dönüştürme](../windows/converting-bitmaps-to-toolbars.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
- MFC ya da ATL  
+## <a name="requirements"></a>Gereksinimler  
+ MFC veya ATL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
-

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6a18edef3fa658608459244143a5e48738f0c3a9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c606a1a7d32a02442e767a31543a76a4dccf295e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889653"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652480"
 ---
 # <a name="srwlocksharedtraits-structure"></a>SRWLockSharedTraits Yapısı
-Paylaşılan kilit modu SRWLock sınıfında genel özelliklerini açıklar.  
+Genel özelliklerini açıklayan `SRWLock` paylaşılan kilit modu sınıfta.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,18 +35,18 @@ struct SRWLockSharedTraits;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`Type`|Bir işaretçi için eş anlamlı [SRWLOCK](../windows/srwlock-class.md) sınıfı.|  
+|`Type`|İşaretçisi için eş anlamlı [SRWLOCK](../windows/srwlock-class.md) sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SRWLockSharedTraits::GetInvalidValue Metodu](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Her zaman geçersiz SRWLockSharedTraits nesneyi alır.|  
-|[SRWLockSharedTraits::Unlock Metodu](../windows/srwlocksharedtraits-unlock-method.md)|Belirtilen SRWLock nesnenin özel denetim serbest bırakır.|  
+|[SRWLockSharedTraits::GetInvalidValue Metodu](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Alır bir **SRWLockSharedTraits** her zaman geçersiz bir nesne.|  
+|[SRWLockSharedTraits::Unlock Metodu](../windows/srwlocksharedtraits-unlock-method.md)|Belirtilen özel denetim serbest `SRWLock` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `SRWLockSharedTraits`  

@@ -19,19 +19,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e68e2b729f8120a33b296fa485d145101b3d6e5b
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: a9fa20fc180d9b77f5d909ea06d12d69c1ef89d1
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466715"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652691"
 ---
 # <a name="component-extensions-for-runtime-platforms"></a>Çalışma Zamanı Platformları için Bileşen Uzantıları
 Visual C++ çalışma zamanı platformları karşı programlama yardımcı olmak için dil uzantıları sağlar. Kullanarak C + +/ CX, program Evrensel Windows platformu uygulamaları ve yerel kod olarak derlemek bileşenleri. C + kullanarak doğrudan Windows çalışma zamanı COM arabirimleri için programlama ile Evrensel Windows platformu uygulamaları oluşturabilirsiniz ancak +/ CX, Oluşturucular, özel durumlar ve diğer modern C++ programlama deyimlerini ile çalışabilir. Yönetilen yürütme ortamında .NET platformu, C++ programlama etkinleştirmek için C + kullanabileceğiniz +/ CLI.  
   
- **İki çalışma zamanları, bir uzantı kümesi**  
+### <a name="two-runtimes-one-set-of-extensions"></a>İki çalışma zamanları, bir uzantı kümesi  
   
- C + +/ CX olan bir alt kümesini C + +/ CLI. C + için ortak olan uzantıları için +/ CX ve C + +/ CLI, semantiği bağlıdır, ortak dil çalışma zamanı (CLR) veya Windows çalışma zamanını hedefleyen üzerinde. Uygulamanızı Windows çalışma zamanı üzerinde çalıştırılacak derlemeye belirtin **/ZW** derleyici seçeneği. CLR üzerinde çalıştırmak için derleme için belirtme **/CLR** derleyici seçeneği. Bir proje oluşturmak için Visual Studio kullandığınızda bu anahtarları otomatik olarak ayarlanır.  
+ C + +/ CX olan bir alt kümesini C + +/ CLI. C + için ortak olan uzantıları için +/ CX ve C + +/ CLI, semantiği bağlıdır, ortak dil çalışma zamanı (CLR) veya Windows çalışma zamanını hedefleyen üzerinde. Uygulamanızı Windows çalışma zamanı üzerinde çalıştırılacak derlemeye belirtin `/ZW` derleyici seçeneği. CLR üzerinde çalıştırmak için derleme için belirtme `/clr` derleyici seçeneği. Bir proje oluşturmak için Visual Studio kullandığınızda bu anahtarları otomatik olarak ayarlanır.  
   
  C++ ile Evrensel Windows platformu uygulamaları oluşturma hakkında daha fazla bilgi için bkz. [C++ kullanan Windows Runtime için yol haritası uygulamaları](http://msdn.microsoft.com/library/windows/apps/hh700360.aspx).  
   
@@ -86,7 +86,7 @@ Visual C++ çalışma zamanı platformları karşı programlama yardımcı olmak
 |**nullptr**|Hayır|Tanıtıcı veya işaretçi bir nesne göstermiyor gösterir.|[nullptr](../windows/nullptr-cpp-component-extensions.md)|  
   
 ## <a name="template-constructs"></a>Şablon yapıları  
- Aşağıdaki dil yapıları olarak anahtar sözcükler yerine şablon olarak uygulanır. Belirtirseniz **/ZW** derleyici seçeneği, bunlar tanımlanır `lang` ad alanı. Belirtirseniz **/CLR** derleyici seçeneği, bunlar tanımlanır `cli` ad alanı.  
+ Aşağıdaki dil yapıları olarak anahtar sözcükler yerine şablon olarak uygulanır. Belirtirseniz `/ZW` derleyici seçeneği, bunlar tanımlanır `lang` ad alanı. Belirtirseniz `/clr` derleyici seçeneği, bunlar tanımlanır `cli` ad alanı.  
   
 |Anahtar sözcüğü|Amaç|Başvuru|  
 |-------------|-------------|---------------|  

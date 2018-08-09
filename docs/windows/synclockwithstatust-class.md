@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 51e5a66358890fc20731fb5cb657616484e19db4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 66fd02ff9af4f7a5c1cb85b58e966622bed0060a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890986"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648697"
 ---
 # <a name="synclockwithstatust-class"></a>SyncLockWithStatusT Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,14 +36,14 @@ template <
 class SyncLockWithStatusT : public SyncLockT<SyncTraits>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `SyncTraits`  
- Özel gerçekleştirebileceğiniz bir tür veya bir kaynak sahipliğini paylaşılan.  
+### <a name="parameters"></a>Parametreler  
+ *SyncTraits*  
+ Özel alan bir türü veya bir kaynağa ilişkin paylaşılan sahipliğiniz.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Özel gerçekleştirebileceğiniz bir türü temsil eder veya bir kaynak sahipliğini paylaşılan.  
+ Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.  
   
- SyncLockWithStatusT sınıfı uygulamak için kullanılan [Mutex](../windows/mutex-class1.md) ve [semafor](../windows/semaphore-class.md) sınıfları.  
+ **SyncLockWithStatusT** sınıfı uygulamak için kullanılan [Mutex](../windows/mutex-class1.md) ve [semafor](../windows/semaphore-class.md) sınıfları.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -51,26 +51,26 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::SyncLockWithStatusT Oluşturucusu](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|SyncLockWithStatusT sınıfı yeni bir örneğini başlatır.|  
+|[SyncLockWithStatusT::SyncLockWithStatusT Oluşturucusu](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Yeni bir örneğini başlatır **SyncLockWithStatusT** sınıfı.|  
   
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::SyncLockWithStatusT Oluşturucusu](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|SyncLockWithStatusT sınıfı yeni bir örneğini başlatır.|  
+|[SyncLockWithStatusT::SyncLockWithStatusT Oluşturucusu](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Yeni bir örneğini başlatır **SyncLockWithStatusT** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::GetStatus Metodu](../windows/synclockwithstatust-getstatus-method.md)|Geçerli SyncLockWithStatusT nesnesinin bekleme durumunu alır.|  
-|[SyncLockWithStatusT::IsLocked Metodu](../windows/synclockwithstatust-islocked-method.md)|Geçerli SyncLockWithStatusT nesne bir kaynağa sahip olup olmadığını gösterir; diğer bir deyişle, SyncLockWithStatusT nesnesidir *kilitli*.|  
+|[SyncLockWithStatusT::GetStatus Metodu](../windows/synclockwithstatust-getstatus-method.md)|Geçerli bekleme durumunu alır **SyncLockWithStatusT** nesne.|  
+|[SyncLockWithStatusT::IsLocked Metodu](../windows/synclockwithstatust-islocked-method.md)|Belirtir olup olmadığını geçerli **SyncLockWithStatusT** nesnesi bir kaynağa sahiptir; diğer bir deyişle, **SyncLockWithStatusT** nesnedir *kilitli*.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::status_ Veri Üyesi](../windows/synclockwithstatust-status-data-member.md)|Arka plandaki sonucu üzerinde bir kilit işlemi sonra işlemi bekleyin ayrı tutma bir nesne geçerli SyncLockWithStatusT nesnesine bağlı.|  
+|[SyncLockWithStatusT::status_ Veri Üyesi](../windows/synclockwithstatust-status-data-member.md)|Geçerli bir nesne üzerinde bir kilit işlemi temel sonra alttaki bekleme işleminin sonucu tutan **SyncLockWithStatusT** nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `SyncLockT`  

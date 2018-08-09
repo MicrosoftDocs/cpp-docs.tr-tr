@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c0171c8cf836c95afecb74cf1909688bbbe030db
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 78cc02c4f4d39b2bcba4c79a07ec84b9657cb66b
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466377"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651203"
 ---
 # <a name="appobject"></a>appobject
 Bir tam .exe uygulamayla ilişkili olan ve coclass'ı özellikleri ve işlevleri bu küresel olarak kullanılabilir olduğunu gösterir bir uygulama nesnesi olarak coclass'ı tanımlayan [tür kitaplığı](../mfc/automation-clients-using-type-libraries.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [appobject]  
 ```  
   

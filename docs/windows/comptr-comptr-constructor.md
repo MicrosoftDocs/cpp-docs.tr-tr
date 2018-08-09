@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d08eb264ff3b4fc2f0170d6aee742ff29611613e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 86b55d8288f44b04ac1afc30a0afd67fce4edf81
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465376"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646779"
 ---
 # <a name="comptrcomptr-constructor"></a>ComPtr::ComPtr Oluşturucusu
 Yeni bir örneğini başlatır **ComPtr** sınıfı. Varsayılan, kopyalama, taşıma ve dönüştürme oluşturucuları aşırı yüklemeler sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 WRL_NOTHROW ComPtr();  
 WRL_NOTHROW ComPtr(  
    decltype(__nullptr)  
@@ -58,7 +58,7 @@ WRL_NOTHROW ComPtr(
    void *>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *U*  
  Türünü *diğer* parametresi.  
   

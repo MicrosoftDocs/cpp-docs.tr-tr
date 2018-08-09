@@ -1,5 +1,5 @@
 ---
-title: ActiveX denetimi özelliklerini düzenleme | Microsoft Docs
+title: Bir ActiveX denetimi özelliklerini düzenleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,38 +16,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0f99caed2b0ce78635f89d884599ee6d40fc86f4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f64fd94eca03b132d0448147085b04e3ff6c1097
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33885158"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648067"
 ---
 # <a name="editing-properties-for-an-activex-control"></a>ActiveX Denetimi Özelliklerini Düzenleme
-ActiveX denetimleri bağımsız satıcıları tarafından sağlanan kendi özellikleri ve özelliklere donanımlı gelebilir. ActiveX denetimleri için özellikleri Özellikler penceresinde görüntülenir. ActiveX denetimi yazarlar tarafından oluşturulan tüm özellik sayfalarını ek olarak, görüntülenen **özellikler sayfalarına** iletişim kutusu (belirli bir ActiveX denetimi özellik sayfasını görüntülemek için özellik sayfası düğmesini[Özellikler penceresini](/visualstudio/ide/reference/properties-window)).  
+ActiveX denetimleri bağımsız satıcıları tarafından sağlanan kendi özellikleri ve özellikleri ile donatıldı gelebilir. ActiveX denetimleri için özellikleri görüntülenir **özellikleri** penceresi. ActiveX denetiminin yazarlar tarafından oluşturulan tüm özellik sayfaları ek olarak, görüntülenen **özellikler sayfaları** iletişim kutusu (görüntülemek için **özellik sayfası** belirlibirActiveXdenetimiiçintıklayın **Özellik sayfası** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window)).  
   
- Çeşitli sekmelere ActiveX denetimini bir parçası olarak gelen özellik sayfalarını bağlı olarak bir ActiveX denetimi için özellik sayfası görüntülenir.  
+ Çeşitli sekmelere ActiveX denetiminin bir parçası olarak gelen özellik sayfalarını bağlı olarak bir ActiveX denetimi için özellik sayfası görüntülenir.  
   
 > [!NOTE]
->  Aşağıdaki yordam, ActiveX denetimlerini düzenlemek için özellik sayfası kullanılarak için geçerlidir. Ayrıca gidin ve yeni özellikleri penceresinde ActiveX özelliklerini düzenleyin.  
+>  Aşağıdaki yordam, özellik sayfasını kullanarak ActiveX denetimlerini düzenlemek için geçerlidir. Ayrıca göz atabilir ve ActiveX özellikleri yeni Düzenle **özellikleri** penceresi.  
   
 ### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX denetimi özelliklerini düzenlemek için  
   
-1.  Seçin **ActiveX** denetim.  
+1.  Seçin **ActiveX** denetimi.  
   
-2.  Üzerinde **Görünüm** menüsünde tıklatın **özellik sayfası** özelliklerini görüntüleyin.  
+2.  Üzerinde **görünümü** menüsünde tıklatın **özellik sayfası** ve özelliklerini görüntüleyin.  
   
 3.  Özellik sayfasında gerekli değişiklikleri yapın.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Görüntüleme ve iletişim kutusuna ActiveX denetimleri ekleme](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)   
+ [İletişim kutusuna ActiveX denetimleri ekleme ve görüntüleme](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)   
  [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
  [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
-

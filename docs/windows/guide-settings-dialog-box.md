@@ -23,37 +23,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 265c6c1931b0e48399039e507be45c73c710142d
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 271a56881f2710a7fb7c18dadeb7c36d4d6a3232
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39568897"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648002"
 ---
 # <a name="guide-settings-dialog-box"></a>Kılavuz Ayarları İletişim Kutusu
 ## <a name="layout-guides"></a>Düzen kılavuzları  
  Düzen kılavuzları ayarlarını görüntüler.  
   
- **Yok**  
+### <a name="none"></a>Yok.  
   
  Düzen Araçları gizler.  
   
- **Cetveller ve Kılavuzlar**  
+### <a name="rulers-and-guides"></a>Cetveller ve Kılavuzlar  
   
  Etkin olduğunda, düzeni araçları Cetveller ekler; kılavuzları cetvellerin yerleştirilebilir. Varsayılan sürükleyerek taşınabilir kenar boşluklarını kılavuzlardır. Cetvellerin bir kılavuz yerleştirmek için tıklayın. "Denetimleri üzerinden veya bunların yanındaki taşındığında denetimleri Kılavuzlara Daya". Kendisine eklenmiş bir kez denetimleri ile bir kılavuz da taşıyın. Her iki taraftaki bir kılavuz bir denetimin ekli olduğu ve bir kılavuz taşınır, denetimin boyutlandırılır.  
   
- **Kılavuz**  
+### <a name="grid"></a>Kılavuz  
   
  Düzen kılavuzunu oluşturur. Yeni denetimler kılavuza otomatik olarak uyum sağlar.  
   
 ## <a name="grid-spacing"></a>Kılavuz aralığı  
  Kılavuz aralığı Ayarları iletişim kutusu birimleri (Dlu'lar) görüntüler.  
   
- **Genişlik: Dlu'lar**  
+### <a name="width-dlus"></a>Genişlik: Dlu'lar  
   
  Düzen kılavuzunu genişliğini Dlu'lar ayarlar. Yatay DLU dört tarafından ayrılmış iletişim kutusu yazı tipinin ortalama genişliğidir.  
   
- **Yükseklik: Dlu'lar**  
+### <a name="height-dlus"></a>Yükseklik: Dlu'lar 
   
  Düzen kılavuzunu yüksekliğini Dlu'lar ayarlar. Dikey DLU sekiz tarafından ayrılmış iletişim kutusu yazı tipi ortalama yüksekliği olur.  
   

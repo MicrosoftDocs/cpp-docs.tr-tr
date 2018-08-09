@@ -17,25 +17,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 947249b4a0a9bd2233d76671b1b5bf05c70337db
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 93de27e028d0665cccc3ba373b26524d911607a0
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882946"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648203"
 ---
 # <a name="deleting-unassigned-symbols"></a>Atanmamış Sembolleri Silme
-### <a name="to-delete-an-unassigned-unused-symbol"></a>Atanmamış (kullanılmayan) simgesi silmek için  
+### <a name="to-delete-an-unassigned-unused-symbol"></a>Atanmamış bir (kullanılmayan) sembolü silmek için  
   
-1.  İçinde [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), silin ve tıklatın istediğiniz simgeyi seçin **silmek**.  
+1.  İçinde [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), silme ve istediğiniz simgeyi seçin **Sil**.  
   
     > [!NOTE]
-    >  Kaynak dosya kullanılmayan bir simge silmeden önce bunu başka bir program veya kaynak dosyaları derleme zamanında dahil tarafından kullanılmadığından emin olun.  
+    >  Kullanılmayan bir sembol kaynak dosya silinmeden önce başka bir program veya kaynak dosyaları derleme zamanında dahil tarafından kullanılmadığından emin olun.  
   
-
-  
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

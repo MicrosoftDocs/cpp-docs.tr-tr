@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cc11d6be992584adb1ce2075e73d080cc3a43f47
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 7bf4a6fab735708295a0ae229e7b47101ecc115b
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569485"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648398"
 ---
 # <a name="handletdetach-method"></a>HandleT::Detach Yöntemi
 Geçerli ayırır **HandleT** , temel alınan tanıtıcısını nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 typename HandleTraits::Type Detach();  
 ```  
   

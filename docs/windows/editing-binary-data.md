@@ -18,33 +18,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5259adc079381ce37da704a67a69b51758cb2aef
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 24b2a5eeeaa0d07ebfc1cf1a7fcdb1b2b7274f03
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884482"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651722"
 ---
 # <a name="editing-binary-data"></a>İkili Verileri Düzenleme
 ### <a name="to-edit-a-resource-in-the-binary-editor"></a>İkili Düzenleyicisi'nde kaynak düzenlemek için  
   
 1.  Düzenlemek istediğiniz bayt seçin.  
   
-     SEKME tuşu odağı onaltılık ve İkili Düzenleyicisi ASCII bölümleri arasında taşır. Kaynak bir ekran aynı anda taşımak için PAGE UP ve PAGE DOWN tuşlarını kullanabilirsiniz.  
+     **Sekmesini** anahtar onaltılık ve ASCII bölümleri arasında odağı taşır **ikili** Düzenleyici. Kullanabileceğiniz **Page Up** ve **Page Down** anahtarları kaynak bir ekran ilerlemek için.  
   
 2.  Yeni bir değer girin.  
   
-     Onaltılık ve ASCII bölümleri değeri hemen değiştirir ve satır sonraki değerine odağını kaydırır.  
+     Hem onaltılık hem de ASCII bölümleri hemen değeri değiştirir ve sonraki satır değeri kaydırır.  
   
     > [!NOTE]
-    >  İkili Düzenleyicisi değişiklikleri editor'ı kapattığınızda otomatik olarak kabul eder.  
+    >  **İkili** Düzenleyicisi, düzenleyicisini kapatırken değişiklikleri otomatik olarak kabul eder.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
-### <a name="requirements"></a>Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler   
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili Düzenleyicisi](binary-editor.md)
-

@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 04356316b67f3c341fe1dd1821750fcd3136aa40
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8a09128bd334fc6e0987e39eaf51c19aadce34ea
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874037"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647553"
 ---
 # <a name="factorycache-structure"></a>FactoryCache Yapısı
 Windows çalışma zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 struct FactoryCache;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir sınıf fabrikası wrt kayıtlı tanımlayan bir değer veya COM sınıf nesnesi konumunu içerir.  
+ Bir sınıf üreteci ve wrt kayıtlı tanımlayan değer veya COM sınıfı nesne konumunu içerir.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -42,8 +42,8 @@ struct FactoryCache;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[FactoryCache::cookie Veri Üyesi](../windows/factorycache-cookie-data-member.md)|Kayıtlı Windows çalışma zamanı veya COM sınıf nesnesi tanımlar ve daha sonra nesne kaydını silmek için kullanılan bir değer içeriyor.|  
-|[FactoryCache::factory Veri Üyesi](../windows/factorycache-factory-data-member.md)|Windows çalışma zamanı veya COM üreteci noktalarına.|  
+|[FactoryCache::cookie Veri Üyesi](../windows/factorycache-cookie-data-member.md)|Kayıtlı bir Windows çalışma zamanı veya COM sınıfı nesnesini tanımlayan ve daha sonra nesnenin kaydını silmek için kullanılan bir değer içerir.|  
+|[FactoryCache::factory Veri Üyesi](../windows/factorycache-factory-data-member.md)|Bir Windows çalışma zamanı veya COM sınıf üreteci işaret eder.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `FactoryCache`  

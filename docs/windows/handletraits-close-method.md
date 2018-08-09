@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 581c7b8447b800d9a3401cd76f3adc5ada25994d
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 561862427238a86dbb23ee05044c1d01558abab5
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569836"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647605"
 ---
 # <a name="handletraitsclose-method"></a>HANDLETraits::Close Yöntemi
 Belirtilen tanıtıcı kapatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 inline static bool Close(  
    _In_ Type h  
 );  

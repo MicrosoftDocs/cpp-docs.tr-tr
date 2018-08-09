@@ -17,37 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 11ee58fb2d500a7194fb08ee18b1af5cc7897830
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 07f9c9f93b213b13694f2741b5210614626d82f9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889868"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651528"
 ---
 # <a name="source-c"></a>kaynak (C++)
-Bir sınıf üzerinde bağlantı noktaları için COM nesnesinin kaynak arabirimleri belirtir. Özellik veya yöntem üye nesne veya olay kaynağı değişken döndürdüğünü gösterir.  
+Sınıfta, COM nesnesinin kaynak arabirimleri için bağlantı noktalarını belirtir. Özellik veya yöntem üyesi bir nesne veya bir olay kaynağı olan Değişken döndürür gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ source(  
+[ source(  
    interfaces  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `interfaces`  
- Kaynak uyguladığınızda belirttiğiniz bir veya daha fazla arabirimleri bir sınıfa öznitelik. Kaynak bir özellik veya yöntem uygulandığında, bu parametre kullanılmaz.  
+### <a name="parameters"></a>Parametreler  
+ *Arabirimleri*  
+ Kaynak uyguladığınızda belirttiğiniz bir veya daha fazla arabirim bir sınıfa öznitelik. Kaynak bir özellik veya yöntem uygulandığında, bu parametre kullanılmaz.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Kaynak** C++ özniteliğine sahip ile aynı işlevselliği [kaynak](http://msdn.microsoft.com/library/windows/desktop/aa367166) MIDL özniteliği.  
+ **Kaynak** C++ özniteliği ile aynı işlevlere sahip [kaynak](http://msdn.microsoft.com/library/windows/desktop/aa367166) MIDL özniteliği.  
   
- Kullanabileceğiniz [varsayılan](../windows/default-cpp.md) bir nesne için varsayılan kaynak arabirimi belirtmek için özniteliği.  
+ Kullanabileceğiniz [varsayılan](../windows/default-cpp.md) nesnenin varsayılan kaynak arabirimi belirtmek için özniteliği.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // cpp_attr_ref_source.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -85,9 +84,9 @@ class NN : public b
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`, `interface`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass'ı** (sınıfta veya yapı uygulandığında)|  
+|**İçin geçerlidir**|**sınıf**, **yapı**, **arabirimi**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|`coclass` (sınıf veya yapı için uygulandığında)|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

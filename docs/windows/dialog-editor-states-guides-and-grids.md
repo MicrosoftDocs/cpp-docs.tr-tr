@@ -15,23 +15,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: efce034d681fc13d59020619af4731e36cd30674
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b1405597e933e36e6a080c5c1defd98006a1064f
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872841"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649324"
 ---
 # <a name="dialog-editor-states-guides-and-grids"></a>İletişim Kutusu Düzenleyicisi Durumları (Kılavuzlar ve Izgaralar)
-Üç farklı durumlara biriyle iletişim kutusu Düzenleyicisi ile iletişim kutularındaki denetimlerin düzenleyebilirsiniz:  
+Denetimler ile iletişim kutularında düzenleyebilirsiniz **iletişim** farklı üç durumdan birine düzenleyicisinde:  
   
--   Kılavuzlar ve kenar boşlukları (varsayılan ayar) üzerinde  
+-   Kılavuzlar ve kenar boşlukları (varsayılan ayar) ile  
   
--   İle Düzen kılavuzu  
+-   İçeren düzen kılavuz  
   
--   Herhangi bir tutturma veya hizalama özelliği  
+-   Herhangi bir yaslama veya hizalama özellik  
   
- [İletişim kutusu Düzenleyicisi araç](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) durumunu denetle düğmelerini içerir. Durumu değiştirmek için uygun simgeye tıklayın. Kullanarak durumları değiştirebilirsiniz **Kılavuzu ayarları** komutunu **biçimi** menüsü.  
+ [İletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) durumunu denetle düğmeleri içerir. Durumu değiştirmek için ilgili simgeye tıklayın. Durumları kullanarak da değiştirebilirsiniz **Kılavuz ayarları** komutunu **biçimi** menüsü.  
   
 -   [Kılavuzlar ve Kenar Boşlukları Oluşturma ve Ayarlama](creating-and-setting-guides-and-margins.md)  
   
@@ -41,7 +41,7 @@ ms.locfileid: "33872841"
   
 -   [Düzen Kılavuzunu Değiştirme](../windows/modifying-the-layout-grid.md)  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
@@ -50,4 +50,3 @@ ms.locfileid: "33872841"
  [İletişim kutularındaki denetimlerin düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)   
  [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
  [Denetimler (MFC)](../mfc/controls-mfc.md)
-

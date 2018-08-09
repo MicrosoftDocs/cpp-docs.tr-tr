@@ -15,40 +15,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1f689255af653e5dfdf69250e4988aa809393461
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 05a0d83de045ed29b20ff14acc7fc81fb684a93e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861363"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650628"
 ---
 # <a name="boxing--c-component-extensions"></a>Kutulama (C++ Bileşen Uzantıları)
-Visual C++ derleyicisi değer türleri adlı bir işlem nesneleri dönüştürebilir *kutulama*ve Dönüştür nesneleri değer türleri olarak adlandırılan bir işlemde *kutudan çıkarma*.  
+Visual C++ derleyicisi değer türleri olarak adlandırılan bir işlem nesneleri dönüştürebilirsiniz *kutulama*ve nesneler olarak adlandırılan bir işlem içindeki değer türleri için dönüştürme *kutudan çıkarma*.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- (Tüm çalışma zamanları için geçerli hiçbir açıklamalar için bu dil özelliği vardır.)  
+ (Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- C + +/ CX değer türleri kutulama ve kutudan çıkarma başvuru türleri için toplu değer sözdizimi destekler. Türündeki bir değişkene atandığında bir değer türü Kutulu `Object`. Bir `Object` değişkenidir sarmalanmamış ne zaman bir değer türü değişkene atanır ve parantez içinde belirtilen sarmalanmamış türü; diğer bir deyişle, nesne değişkeni için bir değer türü zaman dönüştürün.  
+ C + +/ CX değer türleri kutulama ve kutudan çıkarma başvuru türleri için toplu değer sözdizimi destekler. Türünde bir değişkene atandığında bir değer türü kutulanmaz `Object`. Bir `Object` değişkendir kutulanmamış ne zaman bir değer türü değişkenine atanır ve kutulanmamış türü, parantez içinde belirtilir; diğer bir deyişle, nesne değişkeni için bir değer türü olduğunda cast.  
   
-```  
-  
+```cpp  
   Platform::Object^  
   object_variable  = value_variable;  
 value_variable = (value_type) object_variable;  
-  
 ```  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ### <a name="examples"></a>Örnekler  
- Aşağıdaki kod örneği kutuları ve sarmadan çıkarır bir `DateTime` değeri. İlk olarak, örnek bir DateTime değişkenine atar ve geçerli tarih ve saati temsil eden bir DateTime değeri alır. Ardından DateTime bir nesne değişkeni atayarak Kutulu. Son olarak, paketlenmiş değer başka bir DateTime değişkene atayarak sarmalanmamış.  
+ Aşağıdaki kod örneği kutuları ve sarmadan çıkarır bir `DateTime` değeri. İlk olarak, örnek alır bir `DateTime` değeri geçerli tarih ve saati temsil eder ve buna atayan bir `DateTime` değişkeni. Ardından `DateTime` atayarak o Kutulu bir `Object` değişkeni. Paketlenmiş değer diğerine atayarak son olarak, kutudan `DateTime` değişkeni.  
   
- Örneği test etmek için bir BlankApplication projesi oluşturun, BlankPage::OnNavigatedTo() yöntemini değiştirin ve kapanış ayracı ve değişken str1 atamayı kesme noktaları belirtin. Örnek kapanış ayracı ulaştığında str1 inceleyin.  
+ Örnek test etmek için oluşturma bir `BlankApplication` değiştirin, proje `BlankPage::OnNavigatedTo()` yöntemi ve ardından sağ köşeli ayraç ve atama değişkeni için kesme noktaları belirtin `str1`. Örnek sağ köşeli ayraç ulaştığında inceleyin `str1`.  
   
-```  
-  
+```cpp  
 void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)  
 {  
     using namespace Windows::Globalization::DateTimeFormatting;  
@@ -78,15 +75,14 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
     String^ str2 = dtf->Format(dtAnother);  
     OutputDebugString(str2->Data());  
 }  
-  
 ```  
   
- Daha fazla bilgi için bkz: [kutulama (C + +/ CX)](http://msdn.microsoft.com/library/windows/apps/hh969554.aspx).  
+ Daha fazla bilgi için [kutulama (C + +/ CX)](http://msdn.microsoft.com/library/windows/apps/hh969554.aspx).  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
- Visual C++ Derleyici kutuları türleri için değer şimdi <xref:System.Object>.  Değer türleri için dönüştürmek için derleyici tanımlı bir dönüştürme nedeniyle olası <xref:System.Object>.  
+ Değer türleri için kutuları artık Visual C++ derleyicisi <xref:System.Object>. Değer türlerine dönüştürmek için derleyici tarafından tanımlanan bir dönüştürme nedeniyle olası <xref:System.Object>.  
   
- Nesneler olarak kabul edilmesi için kutulama ve kutudan çıkarma etkinleştir değer türleri. Struct türleri ve int gibi yerleşik türleri dahil olmak üzere, değer türleri için ve türünden dönüştürülebilir <xref:System.Object>.  
+ Nesne olarak kabul edilmesi için kutulama ve kutudan çıkarma etkinleştir değer türleri. Hem yapı türleri hem de Int gibi yerleşik türler dahil olmak üzere, değer türleri için ve türünden dönüştürülebilir <xref:System.Object>.  
   
  Daha fazla bilgi için bkz.:  
   
@@ -99,12 +95,11 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
 -   [Standart Dönüştürmeler ve Örtük Kutulama](../dotnet/standard-conversions-and-implicit-boxing.md)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
- Aşağıdaki örnek gösterilmektedir nasıl örtük kutulama çalışır.  
+ Aşağıdaki örnek gösterildiği nasıl örtük kutulama çalışır.  
   
 ```cpp  
 // vcmcppv2_explicit_boxing2.cpp  
@@ -175,8 +170,6 @@ int main() {
    func2((V2^)v2);   // Using explicit boxing: calls func2(System::ValueType^)  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 1  

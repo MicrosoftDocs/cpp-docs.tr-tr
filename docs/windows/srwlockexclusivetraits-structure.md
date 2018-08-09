@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6b5d56c4e0c31b56e5bdc92a9d209b58cd15ffb1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 49f1f50b3fa9e34da8831c1cec138b6aefec27a5
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889283"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649279"
 ---
 # <a name="srwlockexclusivetraits-structure"></a>SRWLockExclusiveTraits Yapısı
-SRWLock sınıfı özel kullanım kilidi modunda genel özelliklerini açıklar.  
+Genel özelliklerini açıklayan `SRWLock` sınıfında özel bir kilit modu.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,18 +35,18 @@ struct SRWLockExclusiveTraits;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`Type`|Bir işaretçi için eş anlamlı [SRWLOCK](../windows/srwlock-class.md) sınıfı.|  
+|`Type`|İşaretçisi için eş anlamlı [SRWLOCK](../windows/srwlock-class.md) sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SRWLockExclusiveTraits::GetInvalidValue Metodu](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|Her zaman geçersiz SRWLockExclusiveTraits nesneyi alır.|  
-|[SRWLockExclusiveTraits::Unlock Metodu](../windows/srwlockexclusivetraits-unlock-method.md)|Belirtilen SRWLock nesnenin özel denetim serbest bırakır.|  
+|[SRWLockExclusiveTraits::GetInvalidValue Metodu](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|Alır bir **SRWLockExclusiveTraits** her zaman geçersiz bir nesne.|  
+|[SRWLockExclusiveTraits::Unlock Metodu](../windows/srwlockexclusivetraits-unlock-method.md)|Belirtilen özel denetim serbest `SRWLock` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `SRWLockExclusiveTraits`  

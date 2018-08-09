@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 99a8924776249a3a919a03ca76b4562c39994d4f
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 2043ca568f36d7fc0eaaffbf940cabb423de5620
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463124"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647846"
 ---
 # <a name="coclass"></a>coclass
 COM arabirimi uygulayan bir COM nesnesi oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [coclass]  
 ```  
   
@@ -78,7 +78,7 @@ COM arabirimi uygulayan bir COM nesnesi oluşturur.
   
 -   Bir [OBJECT_ENTRY_AUTO](../atl/reference/object-map-macros.md#object_entry_auto) makrosu, COM eşlemesine eklenir.
   
- Oluşturulan sınıf için .idl dosyasındaki coclass adı, sınıfı aynı ada sahip.  Örneğin ve aşağıdaki örneğe başvuran CLSID_CMyClass sınıf kimliği için bir ' % s'coclass CMyClass, MIDL tarafından oluşturulan üstbilgi dosyası aracılığıyla istemcisinde erişmek için kullanın.  
+ Oluşturulan sınıf için .idl dosyasındaki coclass adı, sınıfı aynı ada sahip.  Örneğin ve sınıf kimliği için bir coclass'ı erişmek için aşağıdaki örnek, söz konusu `CMyClass`, MIDL tarafından oluşturulan üstbilgi dosyası aracılığıyla bir istemci kullanın `CLSID_CMyClass`.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod nasıl kullanılacağını gösterir **coclass'ı** özniteliği:  
@@ -99,7 +99,7 @@ appobject, uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")]
 class CMyClass : public I {};  
 ```  
   
- Aşağıdaki örnek, varsayılan uygulama tarafından eklenen kodda görüntülenen bir işlevin geçersiz kılmak gösterilir **coclass'ı** özniteliği. Bkz: [/Fx](../build/reference/fx-merge-injected-code.md) eklenen kodu görüntüleme hakkında daha fazla bilgi. Tüm temel sınıflar veya bir sınıf için kullandığınız arabirimlerini olması görünür eklenen kodun.   Ayrıca, bir sınıf, varsayılan olarak eklenen kodu bulunur ve açıkça bu sınıf bir temel olarak, coclass'ı için belirttiğiniz, öznitelik sağlayıcısı kodunuzda belirtilen formu kullanın.  
+ Aşağıdaki örnek, varsayılan uygulama tarafından eklenen kodda görüntülenen bir işlevin geçersiz kılmak gösterilir **coclass'ı** özniteliği. Bkz: [/Fx](../build/reference/fx-merge-injected-code.md) eklenen kodu görüntüleme hakkında daha fazla bilgi. Tüm temel sınıflar veya bir sınıf için kullandığınız arabirimlerini olması görünür eklenen kodun. Ayrıca, bir sınıf, varsayılan olarak eklenen kodu bulunur ve açıkça bu sınıf bir temel olarak, coclass'ı için belirttiğiniz, öznitelik sağlayıcısı kodunuzda belirtilen formu kullanın.  
   
 ```cpp  
 // cpp_attr_ref_coclass2.cpp  

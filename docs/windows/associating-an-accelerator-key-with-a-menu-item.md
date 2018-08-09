@@ -16,17 +16,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f3d55fc13cb8fd989188c5796709c952903ce83d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8ad3914fb5cd98b09d3b0bdfa5c4385106312d73
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854817"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651157"
 ---
 # <a name="associating-an-accelerator-key-with-a-menu-item"></a>Hızlandırıcı Tuşunu Menü Öğesiyle İlişkilendirme
-Çoğu zaman, menü öğesi ile aynı program komutu vermek için bir tuş birleşimine istiyor. Menü öğesi ve uygulamanızın Hızlandırıcı tablosunda bir giriş için aynı kaynak tanımlayıcısını (ID) atayarak bunu yapabilirsiniz. Hızlandırıcı adını göstermek için menü öğesinin resim yazısı Düzenle. Menü öğeleri ve Hızlandırıcı tuşları hakkında daha fazla bilgi için bkz: [menü öğesi Hızlandırıcı tuşuyla ilişkilendirme](../windows/associating-a-menu-command-with-an-accelerator-key.md).  
-  
-
+Çoğu zaman, bir menü öğesi ve aynı programı komutu vermek için bir tuş bileşimini istersiniz. Menü öğesi ve uygulamanızın Hızlandırıcı tablosunda bir giriş için aynı kaynak tanımlayıcısını (ID) atayarak bunu yapabilirsiniz. Hızlandırıcı adını göstermek için menü öğesinin resim yazısı Düzenle. Menü öğeleri ve kısayol tuşları hakkında daha fazla bilgi için bkz. [menü öğesi, bir Hızlandırıcı tuşuyla ilişkilendirme](../windows/associating-a-menu-command-with-an-accelerator-key.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

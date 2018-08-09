@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c29316305983ac09714292bce20e992970cca4f5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a3bfd80e8c6f970fb55b681f193b4ce7c2c0df5a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890739"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648613"
 ---
 # <a name="weakreferenceweakreference-destructor"></a>WeakReference::~WeakReference Yok Edicisi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,7 +36,7 @@ virtual ~WeakReference();
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- WeakReference sınıfı, geçerli örneğini deinitializes.  
+ Geçerli örneğinin başlatmasını geri alır **WeakReference** sınıfı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

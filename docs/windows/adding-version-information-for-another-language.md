@@ -21,34 +21,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 897dc9291c17e916be824915a467ec85a7770548
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 93682f1a12e2fe2d5dfaf715a718563c35ecddde
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857577"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650462"
 ---
 # <a name="adding-version-information-for-another-language"></a>Başka Dil İçin Sürüm Bilgileri Ekleme
-### <a name="to-add-version-information-for-another-language-new-info-block"></a>Başka bir dilde (yeni bilgi bloğu) için sürüm bilgileri eklemek için  
+### <a name="to-add-version-information-for-another-language-new-info-block"></a>(Yeni bilgi bloğu) başka bir dil için sürüm bilgileri ekleme  
   
-1.  Sürüm bilgileri kaynağında çift tıklatarak açın [kaynak görünümü](../windows/resource-view-window.md).  
+1.  Sürüm bilgileri kaynağında çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Sürüm bilgileri tablo içinde sağ tıklatın ve seçin **yeni sürüm bilgi bloğu** kısayol menüsünden.  
+2.  İçinde sürüm bilgileri tabloya sağ tıklayıp seçin **yeni sürüm bilgi bloğu** kısayol menüsünden.  
   
-     Bu komut bir ek bilgi bloğu geçerli sürüm bilgi kaynağı ekler ve karşılık gelen özelliklerini açar [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  
+     Bu komut bir ek bilgi bloğu geçerli sürüm bilgileri kaynağında için ekler ve karşılık gelen özelliklerini açar [Özellikler penceresi](/visualstudio/ide/reference/properties-window).  
   
-3.  İçinde **özellikleri** penceresinde, ilgili dili seçin ve karakter kümesi, yeni bloğu.  
+3.  İçinde **özellikleri** penceresinde ilgili dili seçin ve karakter kümesi için yeni bir blok.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler 
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sürüm bilgileri Düzenleyicisi](../windows/version-information-editor.md)   
  [Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)
-

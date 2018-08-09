@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95be5ae4c9db7bff4ecbfb4705904f4e48c160e0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c0a42d1e1010f63436951beeadbd833e2a9d445d
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889364"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650530"
 ---
 # <a name="srwlocksharedtraitsunlock-method"></a>SRWLockSharedTraits::Unlock Yöntemi
-Belirtilen SRWLock nesnenin özel denetim serbest bırakır.  
+Belirtilen özel denetim serbest `SRWLock` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,9 +35,9 @@ inline static void Unlock(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `srwlock`  
- SRWLock nesnesi için bir tanıtıcı.  
+### <a name="parameters"></a>Parametreler  
+ *srwlock*  
+ İçin bir tanıtıcı bir `SRWLock` nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   

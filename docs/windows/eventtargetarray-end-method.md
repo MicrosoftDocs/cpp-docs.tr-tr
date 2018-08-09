@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 00827d42bb01263d6b4fd9b5aea3b0fc7f7c76e1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5e64cfcd0ad8a71a67815b592908d57725fef9f1
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874271"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648652"
 ---
 # <a name="eventtargetarrayend-method"></a>EventTargetArray::End Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 ComPtr<IUnknown>* End();  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Olay işleyicileri iç dizisi son öğesi adresi.  
+ Olay işleyicilerini iç dizi içindeki son öğeden adresi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Olay işleyicileri iç dizide son öğe adresini alır.  
+ Son öğenin adresi olay işleyicileri içinde iç dizisini alır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

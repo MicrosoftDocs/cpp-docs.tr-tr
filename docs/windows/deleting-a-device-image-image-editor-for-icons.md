@@ -20,29 +20,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2922526827a4a812f31ebde209f118bd726f5b73
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: dd35697e6a46ae681286fd9601f7d8cdc022948e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881750"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649841"
 ---
 # <a name="deleting-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsünü Silme (Simgeler İçin Görüntü Düzenleyicisi)
-### <a name="to-delete-a-device-image"></a>Cihaz görüntüsü silmek için  
+### <a name="to-delete-a-device-image"></a>Cihaz görüntüsünü silme  
   
-1.  Simge görüntüsü görüntülenirken **görüntü** Düzenleyicisi, select **cihaz görüntüsünü silme** gelen **görüntü** menüsü. Kaynak son simgesi görüntüyü sildiğinizde, kaynak de silinir.  
+1.  Simge görüntüsü görüntülenirken **görüntü** Düzenleyicisi'ni seçin **cihaz görüntüsünü silme** gelen **görüntü** menüsü. Kaynak son simge görüntüsü sildiğinizde, kaynak da silinir.  
   
     > [!NOTE]
-    >  DEL tuşuna bastığınızda görüntüler ve bir simge çizilmiş renkleri silindi ancak simge kalır; Ayrıca, bunu şimdi tasarlayabilirsiniz. DEL yanlışlıkla basarsanız, eylemi geri almak için CTRL + Z tuşlarına basabilirsiniz.  
+    >  Bastığınızda **Del** anahtar, bir simge çizilmiş renkleri ve görüntüleri silinir ancak simge kalır; artık bunu tasarlayabilirsiniz. Basarsanız **Del** yanlışlıkla basabilirsiniz **Ctrl**+**Z** eylemi geri alamazsınız.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
-

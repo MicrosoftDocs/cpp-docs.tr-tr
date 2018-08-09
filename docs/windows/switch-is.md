@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 05805bff0044838aaea2af2013fa951c5d3be9a1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e77c29df5fa86ccdf88a6962577cd8c70e45e2ee
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892806"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651372"
 ---
 # <a name="switchis"></a>switch_is
-İfade veya bileşim üyesi seçer birleşim discriminant işlev gören tanımlayıcısını belirtir.  
+İfade veya birleşim üyesi seçer birleşim discriminant davranan tanımlayıcısını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [switch_is]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Switch_is** C++ özniteliğine sahip ile aynı işlevselliği [switch_is](http://msdn.microsoft.com/library/windows/desktop/aa367275) MIDL özniteliği.  
+ **Switch_is** C++ özniteliği ile aynı işlevlere sahip [switch_is](http://msdn.microsoft.com/library/windows/desktop/aa367275) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [durum](../windows/case-cpp.md) bir örnek kullanımı, örneğin **switch_is**.  
+ Bkz: [çalışması](../windows/case-cpp.md) örnek kullanımını örneğin **switch_is**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,9 +45,9 @@ ms.locfileid: "33892806"
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`typedef`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**tür tanımı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

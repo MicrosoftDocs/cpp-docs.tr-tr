@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 27daf229da4c6707afcbf97f7ab8ce08cd8ce900
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f3636cdb2c30d08547fd9085141aa9283bdc85c7
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874453"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652389"
 ---
 # <a name="factorycachecookie-data-member"></a>FactoryCache::cookie Veri Üyesi
 Windows çalışma zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 union {   
    WINRT_REGISTRATION_COOKIE winrt;  
    DWORD com;   
@@ -37,7 +37,7 @@ union {
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kayıtlı Windows çalışma zamanı veya COM sınıf nesnesi tanımlar ve daha sonra nesne kaydını silmek için kullanılan bir değer içeriyor.  
+ Kayıtlı bir Windows çalışma zamanı veya COM sınıfı nesnesini tanımlayan ve daha sonra nesnenin kaydını silmek için kullanılan bir değer içerir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

@@ -1,5 +1,5 @@
 ---
-title: Sürüm bilgileri bloğunu silme | Microsoft Docs
+title: Sürüm bilgi bloğunu silme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,32 +19,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a374382e47e9623e041dd500730244b7fe205aa7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f083364f839f963867234a4d3548ac1c00258cc8
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871864"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649965"
 ---
 # <a name="deleting-a-version-information-block"></a>Sürüm Bilgileri Bloğunu Silme
-### <a name="to-delete-a-version-information-block"></a>Sürüm bilgileri bloğunu silmek için  
+### <a name="to-delete-a-version-information-block"></a>Sürüm bilgi bloğu silmek için  
   
-1.  Sürüm bilgileri kaynağında simgesini çift tıklatarak açın [kaynak görünümü](../windows/resource-view-window.md).  
+1.  Sürüm bilgileri kaynağında simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Delete sonra seçmek istediğiniz blok başlığını sağ **sürüm bilgileri bloğunu silme** kısayol menüsünden.  
+2.  Ardından silmek istediğiniz blok başlığına sağ tıklayarak **sürüm bilgi bloğunu silme** kısayol menüsünden.  
   
-     Bu komut, seçili üstbilgiyi siler ve kalan sürüm bilgilerini dokunmaz. Eylemi geri alamazsınız unutmayın.  
+     Bu komut, seçilen üst bilgi siler ve kalan sürüm bilgilerini dokunmaz. Lütfen eylemi geri alamazsınız unutmayın.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sürüm bilgileri Düzenleyicisi](../windows/version-information-editor.md)   
  [Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)
-

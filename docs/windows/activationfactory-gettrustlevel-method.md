@@ -17,30 +17,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: af3ec58afd69f3fde6e2eb67969f1dad8848c5de
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 4bddc5a453e1c3aac43fe58d105ccef863c67808
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466728"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652275"
 ---
 # <a name="activationfactorygettrustlevel-method"></a>ActivationFactory::GetTrustLevel Metodu
 Nesne güven düzeyini alır Geçerli **ActivationFactory** başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 STDMETHOD(  
    GetTrustLevel  
 )(_Out_ TrustLevel* trustLvl);  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *trustLvl*  
  Bu işlem tamamlandığında, çalışma zamanı güven düzeyini sınıfı, **ActivationFactory** başlatır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, bir onaylama işlemi hatası yayılır ve *trustLvl* FullTrust için ayarlanır.  
+ Başarılıysa S_OK; Aksi takdirde, bir onaylama işlemi hatası yayılır ve *trustLvl* ayarlanır `FullTrust`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

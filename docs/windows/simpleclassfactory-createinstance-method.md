@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8a31d364a6464962b8243cfaced03131a20f9324
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f25e85e59769f822a6c732cc0911c564c0104f96
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892754"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651086"
 ---
 # <a name="simpleclassfactorycreateinstance-method"></a>SimpleClassFactory::CreateInstance Yöntemi
 
-Belirtilen arabiriminin bir örneğini oluşturur.
+Belirtilen arabirim bir örneğini oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,23 +41,23 @@ STDMETHOD( CreateInstance )(
 ### <a name="parameters"></a>Parametreler
 
 *pUnkOuter*  
-Olmalıdır `nullptr`; Aksi halde, dönüş değeri CLASS_E_NOAGGREGATION değeridir.
+Olmalıdır **nullptr**; Aksi takdirde CLASS_E_NOAGGREGATION dönüş değeridir.
 
-SimpleClassFactory toplama desteklemiyor. Toplama desteklenen ve oluşturulan nesne bir toplama parçası olan `pUnkOuter` toplama denetleme IUnknown arabirimi için bir işaretçi olabilir.
+SimpleClassFactory toplama desteklemiyor. Oluşturulan nesne bir toplamanın parçası toplama desteklenen ve *pUnkOuter* denetlemek için bir işaretçi olabilir `IUnknown` toplamanın arabirimi.
 
-*nRIID*  
+*riid*  
 Nesnenin kimliği oluşturmak için arabirim.
 
 *ppvObject*  
-Bu işlem tamamlandığında, işaretçi tarafından belirtilen nesne örneği `riid` parametresi.
+Bu işlem tamamlandığında, işaretçi tarafından belirtilen nesnede örneğine *riid* parametresi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa &#95; &#95;WRL_STRICT&#95; &#95; olduğu sınıfı şablonu parametresinde belirtilen taban sınıfı türetilmiş değil, tanımlanmış bir assert hata yayılan [RuntimeClass](../windows/runtimeclass-class.md), ya da ClassicCom ile yapılandırılmamış veya WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
+Varsa &#95; &#95;WRL_STRICT&#95; &#95; olan tanımlanan, türetilen sınıf şablonu parametresinde belirtilen temel sınıf değil, bir onay hata yayıldığını [RuntimeClass](../windows/runtimeclass-class.md), ya da ClassicCom ile yapılandırılmamış veya WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -66,5 +66,4 @@ Varsa &#95; &#95;WRL_STRICT&#95; &#95; olduğu sınıfı şablonu parametresinde
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-
-[SimpleClassFactory Sınıfı](../windows/simpleclassfactory-class.md)
+ [SimpleClassFactory Sınıfı](../windows/simpleclassfactory-class.md)

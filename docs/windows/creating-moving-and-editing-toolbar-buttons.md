@@ -18,17 +18,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 69d2ba11978a68cd49513c5d115cc87068e6c5ca
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f6cf110357b7b58424e0fd2a23ce04ba0bfacb0e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871347"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651459"
 ---
 # <a name="creating-moving-and-editing-toolbar-buttons"></a>Araç Çubuğu Düğmelerini Oluşturma, Taşıma ve Düzenleme
-Kolayca oluşturma, taşıma kopyalayın ve araç çubuğu düğmeleri düzenleyin.  
+Kolayca oluşturun, taşıma kopyalayın ve araç çubuğu düğmeleri Düzenle.  
   
- Varsayılan olarak, araç çubuğunun sağ sonunda yeni ya da boş bir düğme görüntülenir. Düzeltmeden önce bu düğme taşıyabilirsiniz. Yeni bir düğme oluşturduğunuzda, başka bir boş düğmesi düzenlenen düğmesinin sağında görünür. Araç çubuğu kaydettiğinizde, boş düğme kaydedilmez.  
+ Varsayılan olarak, araç çubuğunun sağ ucuna yeni ya da boş bir düğme görüntülenir. Bu düğme düzenlemeden önce taşıyabilirsiniz. Yeni bir düğme oluşturduğunuzda, başka bir boş düğme düzenlenen düğmesinin sağında görüntülenir. Araç çubuğu kaydettiğinizde, boş düğme kaydedilmez.  
   
 -   [Yeni araç çubuğu düğmesi oluşturma](creating-a-new-toolbar-button.md)  
   
@@ -38,17 +38,16 @@ Kolayca oluşturma, taşıma kopyalayın ve araç çubuğu düğmeleri düzenley
   
 -   [Araç çubuğu düğmesi silme](deleting-a-toolbar-button.md)  
   
--   [Araç çubuğu kaynak üzerinde düğmeler arasındaki boşluk Ekle](../windows/inserting-a-space-between-buttons-on-a-toolbar.md)  
+-   [Araç çubuğu kaynağını çubuğundaki düğmeler arasına boşluk Ekle](../windows/inserting-a-space-between-buttons-on-a-toolbar.md)  
   
--   [Araç çubuğundaki düğmeler arasına boşluk kapatın](../windows/removing-space-between-buttons-on-a-toolbar.md)  
+-   [Araç çubuğundaki düğmeler arasına boşluk'kurmak kapatın](../windows/removing-space-between-buttons-on-a-toolbar.md)  
   
--   [Araç çubuğu özellik sayfasını Düzenle](../windows/changing-the-properties-of-a-toolbar-button.md)  
+-   [Özellik sayfası araç Düzenle](../windows/changing-the-properties-of-a-toolbar-button.md)  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
- MFC ya da ATL  
+ MFC veya ATL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
-

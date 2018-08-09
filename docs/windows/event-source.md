@@ -22,19 +22,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e44b5757ea7b9e469275688443ba7ed1e3810571
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: bd38dcf02de661a063df356b7d915eed9814f192
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571395"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652412"
 ---
 # <a name="eventsource"></a>event_source
 Olay kaynağı oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ event_source(  
    type,  
    optimize=[speed | size],  
@@ -50,7 +50,7 @@ Olay kaynağı oluşturur.
   
 -   `com` COM kodu için. Kullanmalısınız `coclass` olduğunda `type` = `com`. Bu değer, aşağıdaki üst bilgi dosyaları eklemenizi gerektirir:  
   
-    ```  
+    ```cpp  
     #define _ATL_ATTRIBUTES  
     #include <atlbase.h>  
     #include <atlcom.h>  

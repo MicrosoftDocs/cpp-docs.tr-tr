@@ -13,19 +13,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6edbe333ddb634d8657712695250ec627a171780
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 74f26f520be276de863c612718de8520bffc1219
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461090"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649711"
 ---
 # <a name="comptrreset"></a>ComPtr::Reset
 Bununla ilişkili arabirim işaretçisi için tüm başvurularını serbest **ComPtr**.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 unsigned long Reset();  
 ```  
   

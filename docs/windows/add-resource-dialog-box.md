@@ -18,34 +18,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c420a1d72aa4ceca7d71840fcccb451b6e0aba0f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: dc7826b10e822b833b7a0a9361d55f74da46342a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857525"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651697"
 ---
 # <a name="add-resource-dialog-box"></a>Kaynak Ekle İletişim Kutusu
-Kaynaklar için C++ Windows masaüstü uygulaması projesi eklemek için bu iletişim kutusunu kullanın.  
+Kaynakları bir C++ Windows masaüstü uygulaması projesine eklemek için bu iletişim kutusunu kullanın.  
   
 > [!NOTE]
->  Bu bilgiler, Evrensel Windows platformu uygulamaları kaynaklar için geçerli değildir. Hakkında daha fazla bilgi için bkz: [uygulama kaynakları ve kaynak yönetim sistemi](/windows/uwp/app-resources/).  
+>  Bu bilgiler, Evrensel Windows platformu uygulamalarında kaynakları için geçerli değildir. Hakkında daha fazla bilgi için bkz: [uygulama kaynaklarını ve kaynak yönetim sistemi](/windows/uwp/app-resources/).  
   
- **Kaynak türü**  
+### <a name="resource-type"></a>Kaynak türü 
  Oluşturmak istediğiniz kaynak türünü belirtir.  
   
- Ek kaynaklar ortaya çıkarmak için imleci ve iletişim kutusunu kaynak kategorileri genişletebilirsiniz. Bu kaynaklar ...\Microsoft Visual Studio bulunan `version`\VC\VCResourceTemplates\\< LCID\>\mfc.rct. .Rct dosyaları eklerseniz, bu dizinde konulmalıdır veya belirtmeniz gerekir bir [yolunu](../windows/how-to-specify-include-directories-for-resources.md) bunlar için. Bu dosyaları kaynaklarında uygun kategorisi altında ikinci düzeyde sonra görünür. .Rct dosyaları ekleyebileceğiniz sayısı için önceden belirlenmiş bir sınır yoktur.  
+ Ek kaynaklar ortaya çıkarmak için imleç ve iletişim kutusunu kaynak kategorileri genişletebilirsiniz. Bu kaynaklar ...\Microsoft Visual Studio içinde bulunan `version`\VC\VCResourceTemplates\\< LCID\>\mfc.rct. .Rct dosyaları ekleme, bu dizine koymanız gerekir ya da belirtmeniz gerekir bir [yolunu](../windows/how-to-specify-include-directories-for-resources.md) bunlar için. Daha sonra bu dosyalarındaki kaynaklar ikinci düzeyde uygun kategorisi altında görünür. Ekleyebileceğiniz .rct dosyaları sayısı önceden belirlenmiş bir sınır yoktur.  
   
- Ağaç denetimi üst düzeydeki gösterilen Visual Studio tarafından sağlanan varsayılan kaynakları kaynaklardır.  
+ Ağaç denetimi üst düzeyde gösterilen kaynağı Visual Studio tarafından sağlanan varsayılan kaynaklardır.  
   
- **Yeni**  
- Seçtiğiniz türüne göre bir kaynak oluşturur **kaynak türü** kutusu. Kaynak uygun Düzenleyicisi'nde açar. Bir iletişim kutusu kaynağı oluşturursanız, örneğin, açılır [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md).  
+### <a name="new"></a>Yeni
+ Seçtiğiniz türüne göre bir kaynak oluşturur **kaynak türü** kutusu. Kaynak uygun Düzenleyicisi'nde açılır. Bir iletişim kutusu kaynağı oluşturursanız, örneğin, açılır [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md).  
   
- **İçeri Aktar**  
- Açılır **alma** içinde gezinmenizi bir kaynağa, iletişim kutusu geçerli projenize içeri aktarmak isteyeceğiniz. Bir bit eşlem, simge, imleç, HTML kaynak dosyasını, ses alabilirsiniz (. WAV) kaynak dosyası veya özel kaynak dosyası.  
+### <a name="import"></a>{1&gt;İçeri Aktar&lt;1}
+ Açılır **alma** içinde gidebilirsiniz bir kaynağa, iletişim kutusu geçerli projenize aktarmak istediğiniz. Bir bit eşlem simgesi, imleç, HTML kaynak dosyası, ses alabilirsiniz (. WAV) kaynak dosyası veya özel kaynak dosyası.  
   
- **Özel**  
- Açılır [yeni özel kaynak iletişim kutusu](../windows/new-custom-resource-dialog-box.md) içinde özel bir kaynak oluşturabilirsiniz. Özel kaynaklar yalnızca ikili Düzenleyicisi'nde düzenlenebilir.  
+### <a name="custom"></a>Özel
+ Açılır [yeni özel kaynak iletişim kutusu](../windows/new-custom-resource-dialog-box.md) içinde özel bir kaynak oluşturabilirsiniz. Özel kaynaklar yalnızca ikili düzenleyicide düzenleyebilirsiniz.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  

@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 57f6e841326339f78d24fa8affea5e74ae5b8d74
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 29a88c34502404de13bd3b93d13c60470e2882ea
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465389"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650722"
 ---
 # <a name="creatormapfactorycreator-data-member"></a>CreatorMap::factoryCreator Veri Üyesi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 HRESULT (*factoryCreator)(  
    unsigned int* currentflags,  
    const CreatorMap* entry,  
@@ -37,7 +37,7 @@ HRESULT (*factoryCreator)(
  IUnknown** factory);  
 ```  
   
-## <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *currentflags*  
  Aşağıdakilerden birini [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırıcılar.  
   

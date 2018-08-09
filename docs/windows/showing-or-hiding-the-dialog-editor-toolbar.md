@@ -1,5 +1,5 @@
 ---
-title: Gösterme veya gizleme iletişim kutusu Düzenleyicisi araç | Microsoft Docs
+title: Gösterme veya gizleme iletişim kutusu araç çubuğunu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,43 +18,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ad456d37252b40be72217e6cbc40a2a399bb34ef
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 862498b012955c3b77a13b37ae07bbee66dd8dfa
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891600"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651411"
 ---
 # <a name="showing-or-hiding-the-dialog-editor-toolbar"></a>İletişim Kutusu Araç Çubuğunu Gösterme veya Gizleme
-İletişim kutusu Düzenleyicisi'ni açtığınızda, iletişim kutusu Düzenleyicisi araç otomatik olarak çözümünüzü üstünde görünür.  
+İletişim kutusu düzenleyicisini açtığınızda, iletişim kutusu Düzenleyicisi araç otomatik olarak çözümünüzü üst kısmında görünür.  
   
 ### <a name="dialog-editor-toolbar"></a>İletişim kutusu Düzenleyicisi araç çubuğu  
   
 |Simge|Açıklama|Simge|Açıklama|  
 |----------|-------------|----------|-------------|  
-|![Test iletişim kutusu düğmesini](../mfc/media/vcdialogeditortestdialog.png "vcDialogEditorTestDialog")|Test iletişim kutusu|![Alanı arasında düğmesi](../mfc/media/vcdialogeditoracross.png "vcDialogEditorAcross")|Arasında|  
-|![Sola düğmesi Hizala](../mfc/media/vcdialogeditoralignlefts.png "vcDialogEditorAlignLefts")|Sola hizalayın|![Alanı aşağı düğmesi](../mfc/media/vcdialogeditordown.png "vcDialogEditorDown")|Aşağı|  
-|![Hakları düğmesi Hizala](../mfc/media/vcdialogeditoralignrights.png "vcDialogEditorAlignRights")|Sağa Hizala|![Yapma aynı genişliği düğmesi](../mfc/media/vcdialogeditorsamewidth.png "vcDialogEditorSameWidth")|Aynı genişliğe olun|  
-|![Dows masaüstleri düğmesi Hizala](../mfc/media/vcdialogeditoraligntops.png "vcDialogEditorAlignTops")|Üste hizalama|![Yapma aynı yükseklik düğmesi](../mfc/media/vcdialogeditormakesameheight.png "vcDialogEditorMakeSameHeight")|Aynı yükseklikte yapma|  
-|![Düğme Alta Hizala](../mfc/media/vcdialogeditoralignbottoms.png "vcDialogEditorAlignBottoms")|Alta Hizala|![Yapma aynı boyutta düğmesi](../mfc/media/vcdialogeditorsamesize.png "vcDialogEditorSameSize")|Aynı boyuta getirme|  
-|![Merkezi dikey düğmesini](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|Dikey|![İki durumlu kılavuz düğme](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|Kılavuzu Aç/Kapat|  
-|![Merkezi yatay düğmesini](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|Yatay|![Geçiş kılavuzlarını düğmesi](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|Geçiş kılavuzları|  
+|![Test iletişim kutusu düğmesini](../mfc/media/vcdialogeditortestdialog.png "vcDialogEditorTestDialog")|Test iletişim kutusu|![Alanı arasında düğme](../mfc/media/vcdialogeditoracross.png "vcDialogEditorAcross")|Arasında|  
+|![Hizalama sola düğmesi](../mfc/media/vcdialogeditoralignlefts.png "vcDialogEditorAlignLefts")|Sola Hizala|![Alanı aşağı düğmesi](../mfc/media/vcdialogeditordown.png "vcDialogEditorDown")|Aşağı|  
+|![Hizalama hakları düğmesi](../mfc/media/vcdialogeditoralignrights.png "vcDialogEditorAlignRights")|Sağa Hizala|![Yapma aynı genişliği düğmesi](../mfc/media/vcdialogeditorsamewidth.png "vcDialogEditorSameWidth")|Aynı genişliğe Getir|  
+|![Hizalama kırpın düğmesi](../mfc/media/vcdialogeditoraligntops.png "vcDialogEditorAlignTops")|Üste hizalama|![Yapma aynı yükseklikte düğmesi](../mfc/media/vcdialogeditormakesameheight.png "vcDialogEditorMakeSameHeight")|Aynı yüksekliğe Getir|  
+|![Hizalama alta düğmesi](../mfc/media/vcdialogeditoralignbottoms.png "vcDialogEditorAlignBottoms")|Alta Hizala|![Yapma aynı boyutu düğmesi](../mfc/media/vcdialogeditorsamesize.png "vcDialogEditorSameSize")|Aynı Boyuta Getir|  
+|![Dikey Orta düğmesi](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|Dikey|![İki durumlu kılavuz düğmesi](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|Kılavuzu Aç/Kapat|  
+|![Yatay Orta düğmesi](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|Yatay|![Geçiş kılavuzlarını düğmesi](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|Rehberi Aç/Kapat|  
   
- İletişim kutusu Düzenleyicisi araç çubuğu denetimleri iletişim kutusunda, örneğin boyutu ve hizalama düzenini düzenleme için düğmeler içerir. İletişim kutusu Düzenleyicisi araç çubuğu düğmeleri biçimi menüsündeki komutlar karşılık gelir. Ayrıntılar için bkz [kısayol tuşları için iletişim kutusu Düzenleyicisi](../windows/accelerator-keys-for-the-dialog-editor.md).  
+ İletişim kutusu Düzenleyicisi araç çubuğu düğmeleri denetimler iletişim kutusunda, örneğin boyutu ve hizalama düzenini yerleştirme içerir. İletişim kutusu Düzenleyicisi araç çubuğu düğmeleri komutları Biçim menüsünden karşılık gelir. Ayrıntılar için bkz [iletişim kutusu Düzenleyicisi için hızlandırma tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
- İletişim kutusu Düzenleyicisi'nde olduğunda kullanılabilir araç çubukları ve windows listeden seçerek iletişim kutusu Düzenleyicisi araç çubuğu görünümünü geçiş yapabilirsiniz.  
+ İletişim kutusu Düzenleyicisi'nde işiniz kullanılabilir araç çubukları ve windows listesinden seçerek iletişim kutusu Düzenleyicisi araç çubuğu görünümünü geçiş yapabilirsiniz.  
   
-### <a name="to-show-or-hide-the-dialog-editor-toolbar"></a>Göster veya gizle iletişim kutusu Düzenleyicisi araç için  
+### <a name="to-show-or-hide-the-dialog-editor-toolbar"></a>İletişim kutusu Düzenleyicisi araç çubuğunu gizlemek veya göstermek için  
   
-1.  Üzerinde **Görünüm** menüsünü tıklatın **araç çubukları** ardından **iletişim kutusu Düzenleyicisi** menüden.  
+1.  Üzerinde **görünümü** menüsünü tıklatın **araç çubukları** ardından **iletişim kutusu Düzenleyicisi** alt.  
   
     > [!NOTE]
-    >  İletişim kutusu Düzenleyicisi iletişim kutusu kaynağı iletişim kutusu Düzenleyicisi araç varsayılan olarak görüntülenir; Ancak, araç açıkça kapatırsanız, bir iletişim kutusu kaynağı bir sonraki açışınızda çağırma gerekir.  
+    >  **İletişim kutusu Düzenleyicisi** bir iletişim kutusu kaynağı iletişim kutusu Düzenleyicisi'nde açtığınız zaman, araç varsayılan olarak görüntülenir; ancak, araç açıkça kapatırsanız, bir iletişim kutusu kaynağına sonraki açışınızda çağırma gerekecektir.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
@@ -62,4 +61,3 @@ ms.locfileid: "33891600"
  [Nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource.md)   
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   
  [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
-

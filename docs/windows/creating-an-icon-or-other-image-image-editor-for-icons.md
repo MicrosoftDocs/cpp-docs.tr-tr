@@ -23,46 +23,45 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2138e32b18f2e15de027e3cc04fb1bd7ee46ecd5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b708d701bee433857f8d5f8379d74b92375340de
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33874739"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651927"
 ---
 # <a name="creating-an-icon-or-other-image-image-editor-for-icons"></a>Simge veya Başka Görüntü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
-Yeni bir görüntü (bit eşlem, simge, imleç veya araç) oluşturmak, sonra görünümünü özelleştirmek için görüntü Düzenleyicisi'ni kullanın. Sonra desenleri yeni bir bit eşlem oluşturabilirsiniz bir [şablon](../windows/how-to-use-resource-templates.md).  
+Yeni bir görüntü (bit eşlemi, simge, imleç veya araç) oluşturmak ve görünümünü özelleştirmek için görüntü Düzenleyicisi'ni kullanın. Desenli sonra yeni bir bit eşlem oluşturabilirsiniz bir [şablon](../windows/how-to-use-resource-templates.md).  
   
-### <a name="to-add-a-new-image-resource-to-an-unmanaged-c-project"></a>Yeni bir görüntü kaynağı yönetilmeyen bir C++ projeye eklemek için  
+### <a name="to-add-a-new-image-resource-to-an-unmanaged-c-project"></a>Yönetilmeyen C++ projesinde yeni bir görüntü kaynağı eklemek için  
   
-1.  İçinde [kaynak görünümü](../windows/resource-view-window.md).rc dosyanızı sağ tıklayın ve ardından seçin **Ekle kaynak** kısayol menüsünden. (.Rc dosyanızda, bir imleç gibi varolan bir görüntü kaynağı zaten varsa yalnızca sağ tıklayarak **imleç** klasörü ve select **Ekle imleci** kısayol menüsünden.)  
+1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), .rc dosyasına sağ tıklayın ve ardından seçin **kaynak Ekle** kısayol menüsünden. (Bir imleç gibi bir .rc dosyasında var olan bir görüntü kaynağı zaten varsa, yalnızca sağ tıklayabilirsiniz **imleç** klasörü ve select **imleci yerleştirin** kısayol menüsünden.)  
   
     > [!NOTE]
-    >  **Not** projeniz zaten bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
 2.  İçinde [kaynak Ekle iletişim kutusu](../windows/add-resource-dialog-box.md), oluşturmak istediğiniz görüntü kaynak türünü seçin (**bit eşlem**, örneğin) ardından **yeni**.  
   
-     Bir artı işareti (**+**) yanındaki görüntü kaynak türü görünen **Ekle kaynak** iletişim kutusu, geldiğini araç şablonları kullanılabilir. Şablonları'nı genişletin, bir şablon seçin ve'artı işaretini tıklatın **yeni**.  
+     Bir artı işareti (**+**) görüntü kaynak türünü yanında **kaynak Ekle** iletişim kutusu, geldiğini araç şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin ve tıklayın artı işaretine tıklayın **yeni**.  
   
-### <a name="to-add-a-new-image-resource-to-a-project-in-a-net-programming-language"></a>Bir .NET programlama dili projede yeni bir görüntü kaynağı eklemek için  
+### <a name="to-add-a-new-image-resource-to-a-project-in-a-net-programming-language"></a>Yeni bir görüntü kaynağı bir programlama dilinde bir .NET projesine eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, proje klasörüne sağ tıklayın (örneğin, **WindowsApplication1**).  
+1.  İçinde **Çözüm Gezgini**, proje klasörüne sağ tıklayın (örneğin, `WindowsApplication1`).  
   
-2.  Kısayol menüsünden tıklatın **Ekle**, ardından **Yeni Öğe Ekle**.  
+2.  Kısayol menüsünden tıklayın **Ekle**, ardından **Yeni Öğe Ekle**.  
   
-3.  İçinde **kategorileri** bölmesinde genişletin **yerel proje öğeleri** klasörünü seçin **kaynakları**.  
+3.  İçinde **kategorileri** bölmesini genişletin **yerel proje öğeleri** klasörü seçin **kaynakları**.  
   
-4.  İçinde **şablonları** bölmesinde projenize eklemek istediğiniz kaynak türünü seçin.  
+4.  İçinde **şablonları** bölmesinde, projenize eklemek istediğiniz kaynak türünü seçin.  
   
-     Çözüm Gezgini'nde projenize kaynak eklenir ve kaynak açılır [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md). Şimdi, görüntünüzü değiştirmek için görüntü Düzenleyicisi'nde kullanılabilir tüm araçları da kullanabilirsiniz. Bir yönetilen projenin görüntüler ekleme ile ilgili daha fazla bilgi için bkz: [tasarım zamanında resim yükleme](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).  
+     Projenizde kaynağa eklenir **Çözüm Gezgini** ve kaynak açılır [Resim Düzenleyicisi](../windows/image-editor-for-icons.md). Artık, görüntünüzü değiştirmek için görüntü Düzenleyicisi'nde kullanılabilir olan tüm araçları da kullanabilirsiniz. Görüntüleri yönetilen bir projeye ekleme ile ilgili daha fazla bilgi için bkz: [tasarım zamanında bir resim yükleme](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).  
   
     > [!NOTE]
-    >  Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez. Daha fazla bilgi için bkz: [oluşturma kaynak dosyaları](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) içinde *.NET Framework Geliştirici Kılavuzu*.  
+    >  Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez. Daha fazla bilgi için [Creating Resource Files](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
@@ -71,4 +70,3 @@ Yeni bir görüntü (bit eşlem, simge, imleç veya araç) oluşturmak, sonra g�
  [Yeni araç çubukları oluşturma](../windows/creating-new-toolbars.md)   
  [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)   
  [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
-

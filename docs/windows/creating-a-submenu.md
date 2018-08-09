@@ -17,26 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1383e12761bc9d5cb0558072061bddac4da42d67
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 54e429281acedb716ba9a0253dabfd8754ab63d9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883387"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647481"
 ---
 # <a name="creating-a-submenu"></a>Alt Menü Oluşturma
-### <a name="to-create-a-submenu"></a>Alt menü oluşturmak için  
+### <a name="to-create-a-submenu"></a>Alt menü oluşturma  
   
-1.  Alt menü oluşturmak istediğiniz menü komutunu tıklatın.  
+1.  Alt menü oluşturmak istediğiniz menü komutunu tıklayın.  
   
-2.  İçinde **yeni öğe** sağa görüntülenen kutusunda yeni menü komutu adını yazın. Bu yeni bir komut alt menüsünde ilk görünür.  
+2.  İçinde **yeni öğe** sağda açılan kutusunda yeni menü komutunu adını yazın. Bu yeni komut ilk alt menüsünde görüntülenir.  
   
-3.  Ek menü komutları alt menüsüne ekleyin.  
+3.  Ek menü komutları, alt menüyü ekleyin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

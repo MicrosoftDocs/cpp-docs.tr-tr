@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 91eea8bd751e4e8e843fb2d052f2b4a71f9bdc38
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 81379a6da96b084239a083bc930cf8e792d518a2
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570343"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649757"
 ---
 # <a name="dbtable"></a>db_table
 Bir OLE DB tablosu açılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ db_table(   
    db_table,   
    name,   

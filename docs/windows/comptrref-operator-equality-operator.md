@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 606059712e60ba181998155b55ae02ba8b27c4da
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: a36e3068bd5211f37e6fe1f0f2a82c923b4511a6
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463960"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650709"
 ---
 # <a name="comptrrefoperator-operator"></a>ComPtrRef::operator== İşleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -54,12 +54,12 @@ bool operator==(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *a*  
- ComPtrRef nesnesine bir başvuru.  
+ Bir başvuru bir **ComPtrRef** nesne.  
   
  *b*  
- ComPtrRef başka bir nesne veya anonim bir tür için bir işaretçi başvuru (`void*`).  
+ Başka bir başvuru **ComPtrRef** nesne veya anonim bir tür için bir işaretçi (`void*`).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  İlk işleç sayıları **true** , nesne *bir* nesneye eşit olup *b*; Aksi takdirde **false**.  
@@ -69,7 +69,7 @@ bool operator==(
  Dördüncü ve beşinci işleçleri yield **true** , nesne *bir* nesneye eşit olup *b*; Aksi takdirde **false**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- ComPtrRef iki nesnenin eşit olup olmadığını gösterir.  
+ Belirtir olup iki **ComPtrRef** nesneler.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

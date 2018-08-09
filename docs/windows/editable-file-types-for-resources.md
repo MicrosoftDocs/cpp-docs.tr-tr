@@ -19,27 +19,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 11d3229341ece1bbee0820a7e2320b8ef6b0381b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e17bada862cf2d7c5b86815ae140e298060ecb40
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870256"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648437"
 ---
 # <a name="editable-file-types-for-resources"></a>Kaynaklar İçin Düzenlenebilir Dosya Türleri
 Aşağıdaki dosya türlerini açın ve içerdikleri kaynaklara düzenleyin.  
   
 |Dosya adı|Açıklama|  
 |---------------|-----------------|  
-|.rc|Kaynak betik dosyaları.|  
-|.rct|Kaynak şablon dosyalarını.|  
+|.rc|Kaynak betik dosyalarına.|  
+|.rct|Kaynak şablon dosyaları.|  
 |.res|Kaynak dosyaları.|  
-|.resx|Yönetilen kaynak dosyalarını.|  
+|.resx|Yönetilen kaynak dosyaları.|  
 |.exe|Yürütülebilir dosyalar.|  
-|.dll|Dinamik bağlantı kitaplık dosyaları.|  
-|.bmp, .ico, .dib ve .cur|Bit eşlem, simge, araç ve imleci dosyalar.|  
-  
-
+|.dll|Dinamik bağlantı kitaplığı dosyaları.|  
+|.bmp, .ico, .dib ve .cur|Bit eşlem ve simge, araç ve imleç dosyaları.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

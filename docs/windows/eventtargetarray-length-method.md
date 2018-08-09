@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eab14d842935e99f8e5f8a96b24b5675d61e418d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 30386120492bcabd7ec1fc07f82e5e1ffd9c1821
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33886096"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653111"
 ---
 # <a name="eventtargetarraylength-method"></a>EventTargetArray::Length Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 size_t Length();  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Olay işleyicileri iç dizisi öğelerinde geçerli sayısı.  
+ Olay işleyicileri iç dizideki öğelerin sayısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Olay işleyicileri iç dizisinde geçerli öğe sayısını alır.  
+ Olay işleyicilerini iç dizisinde geçerli öğe sayısını alır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

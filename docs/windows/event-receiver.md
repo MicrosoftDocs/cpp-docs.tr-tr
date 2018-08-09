@@ -23,26 +23,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0b13acb5d637b4a733f2a2b9c66c8ded977c7847
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 2b1b285437170c4059d5cd0d66d19188c99badd9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569940"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646792"
 ---
 # <a name="eventreceiver"></a>event_receiver
 Bir olay alıcısı (havuz) oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ event_receiver(  
    type   
    [, layout_dependent=false]   
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Türü*  
  Sabit listesi aşağıdaki değerlerden biri:  
   
@@ -50,13 +50,13 @@ Bir olay alıcısı (havuz) oluşturur.
   
 -   `com` COM kodu için. Bu değer, aşağıdaki üst bilgi dosyaları eklemenizi gerektirir:  
   
-    ```  
+    ```cpp  
     #define _ATL_ATTRIBUTES  
     #include <atlbase.h>  
     #include <atlcom.h>  
     ```  
   
- **layout_dependent**  
+ *layout_dependent*  
  Belirtin *layout_dependent* yalnızca `type` = **com**. *layout_dependent* bir Boole değeri:  
   
 -   **doğru** alıcı olanlar için bunlar kancalandı olay kaynağı tam olarak eşleşmelidir olay temsilci imzası anlamına gelir. Olay alıcısı işleyici adları, ilgili olay kaynak arabiriminde belirtilen adlarının eşleşmesi gerekmektedir. Kullanmalısınız `coclass` olduğunda *layout_dependent* olduğu **true**. Belirtmek için biraz daha verimlidir **true**.  
@@ -81,7 +81,7 @@ Bir olay alıcısı (havuz) oluşturur.
 |-|-|  
 |**İçin geçerlidir**|**sınıf**, **yapısı**|  
 |**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|**coclass'ı** olduğunda *layout_dependent*=**true**|  
+|**Gerekli öznitelikleri**|`coclass` zaman *layout_dependent*=**true**|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  

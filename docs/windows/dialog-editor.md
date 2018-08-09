@@ -21,25 +21,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7b8cb99b2002dab3fb04ffa8c5b117a49d23adc1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8c2f5339237bec053df6bf26fb161854f83f572a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875864"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651856"
 ---
 # <a name="dialog-editor"></a>İletişim Kutusu Düzenleyicisi
-İletişim kutusu Düzenleyicisi oluşturma veya düzenleme iletişim kutusu kaynakları sağlar. Kaynak Görünümü penceresi bir iletişim kutusu .rc dosyasına çift tıklayarak iletişim kutusu Düzenleyicisi'ni açın (**Görünüm &#124; kaynak görünümü**). Kaynak Görünümü Express sürümlerinde kullanılabilir olmadığını unutmayın.  
+**İletişim** Düzenleyicisi oluşturma veya düzenleme iletişim kutusu kaynakları sağlar. İletişim kutusu Düzenleyicisi iletişim kutusu .rc dosyasına çift tıklayarak açın **kaynak görünümü** penceresi (**görünümü** > **kaynak görünümü**). Unutmayın **kaynak görünümü** Express sürümlerinde kullanılamaz.  
   
- Yeni iletişim kutusu (veya iletişim kutusu şablonu) alımında ilk adımlarından biri denetimleri için iletişim kutusu ekliyor. İletişim kutusu Düzenleyicisi denetimleri belirli bir boyut, Şekil veya hizalama sığacak şekilde düzenleyebilirsiniz veya, bunları iletişim kutusu içinde çalışmak için taşıyabilirsiniz. Denetimi silme kolaydır.  
+ Yeni iletişim kutusu (veya iletişim kutusu şablonu) yapma, ilk adımlarından biri, denetimleri iletişim kutusuna eklemektir. İçinde **iletişim** Düzenleyicisi, belirli bir boyut, Şekil veya hizalama sığması için denetimleri düzenlemek ya da bunları yaklaşık iletişim kutusu içinde çalışacak şekilde taşıyabilirsiniz. Bir denetimi silmek kolaydır.  
   
- Yeniden kullanabileceğiniz şekilde bir iletişim kutusu şablon olarak depolayabilirsiniz. Ayrıca kolayca iletişim kutusu tasarlama ve bunu uygulayan kod düzenleme arasında geçiş yapabilirsiniz.  
+ Onu tekrar kullanabilirsiniz, böylece şablon olarak bir iletişim kutusu depolayabilirsiniz. Ayrıca bir kolayca iletişim kutusu tasarlama ve onu uygulayan kod düzenleme arasında geçiş yapabilirsiniz.  
   
- İletişim kutusu Düzenleyicisi tek veya birden çok denetim özelliklerini düzenlemek mümkündür. Sekme sırası, diğer bir deyişle, SEKME tuşuna basıldığında içinde denetimleri odak elde sipariş değiştirebilir veya klavyeyi kullanarak denetim seçmek kullanıcılara bir erişim anahtarı (anahtar birleşimi) tanımlayabilirsiniz. Önceden ayarlanmış erişim tuşları listesi için bkz: [kısayol tuşları için iletişim kutusu Düzenleyicisi](../windows/accelerator-keys-for-the-dialog-editor.md).  
+ İletişim kutusu düzenleyicisinde tek veya birden çok denetim özelliklerini düzenlemek mümkündür. Sekme sırasını değiştirebilirsiniz, diğer bir deyişle, hangi denetimlerin elde sırasını Odaklan ne zaman **sekmesini** tuşuna basıldığında veya klavyeyi kullanarak denetim seçmelerini sağlar bir erişim anahtarı (bir tuş bileşimi) tanımlayabilirsiniz. Önceden oluşturulmuş erişim anahtarları listesi için bkz. [iletişim kutusu Düzenleyicisi için hızlandırma tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
- İletişim kutusu Düzenleyicisi ActiveX denetimlerini dahil olmak üzere özel denetimleri kullanmanızı sağlar. Ayrıca, düzenleyebileceğiniz bir [form görünümü](../mfc/reference/cformview-class.md), [kayıt görünümleri](../data/record-views-mfc-data-access.md), veya [iletişim kutusu çubukları](../mfc/dialog-bars.md).  
+ **İletişim** Düzenleyicisi de ActiveX denetimleri de dahil olmak üzere özel denetimler kullanmanızı sağlar. Ayrıca, düzenleyebileceğiniz bir [form görünümü](../mfc/reference/cformview-class.md), [kayıt görünümleri](../data/record-views-mfc-data-access.md), veya [iletişim kutusu çubukları](../mfc/dialog-bars.md).  
   
- Visual Studio 2015 ile başlayarak, nasıl denetimleri taşıyın ve kullanıcı bir iletişim kutusu yeniden boyutlandırır yeniden boyutlandırılmasını belirtin dinamik düzenleri tanımlamak için iletişim kutusu Düzenleyicisi'ni kullanabilirsiniz. Daha fazla bilgi için bkz: [dinamik düzen](../mfc/dynamic-layout.md).  
+ Visual Studio 2015 ile başlayarak, iletişim kutusu Düzenleyicisi nasıl denetimleri taşımak kullanıcının bir iletişim kutusu boyutlandırdığında yeniden boyutlandırma belirtin ve dinamik düzenleri tanımlamak için kullanabilirsiniz. Daha fazla bilgi için [dinamik düzen](../mfc/dynamic-layout.md).  
   
 -   [Yeni İletişim Kutusu Oluşturma](../windows/creating-a-new-dialog-box.md)  
   
@@ -60,17 +60,16 @@ ms.locfileid: "33875864"
 -   [İletişim Kutusu Düzenleyicisinde Sorun Giderme](../windows/troubleshooting-the-dialog-editor.md)  
   
     > [!TIP]
-    >  Çoğu durumda iletişim kutusu Düzenleyicisi ' ni kullanırken, sık kullanılan komutlar kısayol menüsünü görüntülemek için sağ fare düğmesini tıklatabilirsiniz.  
+    >  Kullanırken **iletişim** düzenleyicisinde birçok örneği, sık kullanılan komutlar kısayol menüsünü görüntülemek için sağ fare düğmesine tıklayabilirsiniz.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak düzenleyicileri](../windows/resource-editors.md)   
- [denetimleri](../mfc/controls-mfc.md)   
+ [Denetimleri](../mfc/controls-mfc.md)   
  [Denetim sınıfları](../mfc/control-classes.md)   
  [İletişim kutusu sınıfları](../mfc/dialog-box-classes.md)   
  [İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)
-

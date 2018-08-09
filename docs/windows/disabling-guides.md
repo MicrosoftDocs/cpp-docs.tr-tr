@@ -18,44 +18,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7f828fee32e8794589d5f79e0b31ede74f6dfcd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f04a2e3c483c17a83cb5ab388c19dd9a2d0adf13
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882095"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651963"
 ---
 # <a name="disabling-guides"></a>Kılavuzları Devre Dışı Bırakma
-Özel anahtarları kılavuzları tutturma etkisini devre dışı bırakmak için fare ile birlikte kullanabilirsiniz. ALT tuşunu kullanarak seçili kılavuzu tutturma etkilerini devre dışı bırakır. Taşıma Kılavuzu SHIFT tuşunu ile açıldı denetimleri kılavuzla geçmesini önler.  
+Özel anahtarları Yaslanma etkisini kılavuzları devre dışı bırakmak için fare ile birlikte kullanabilirsiniz. Kullanarak **Alt** anahtarı, seçilen Kılavuzu Yaslanma etkilerini devre dışı bırakır. Taşıma Kılavuzu ile **Shift** anahtar yaslanan denetimlerin kılavuzla taşınmasını engeller.  
   
-### <a name="to-disable-the-snapping-effect-of-the-guides"></a>Kılavuzlar tutturma etkisini devre dışı bırakmak için  
+### <a name="to-disable-the-snapping-effect-of-the-guides"></a>Yaslanma etkisini kılavuzları devre dışı bırakmak için  
   
-1.  Tutarken denetimi sürükleyin **ALT** anahtarı.  
+1.  Tutarken denetimi sürükleyin **Alt** anahtarı.  
   
-### <a name="to-move-guides-without-moving-the-snapped-controls"></a>Kılavuzları açıldı denetimleri taşımadan taşımak için  
+### <a name="to-move-guides-without-moving-the-snapped-controls"></a>Yaslanan denetimlerin taşımadan kılavuzları taşımak için  
   
-1.  Tutarken kılavuzu sürükleyin **SHIFT** anahtarı.  
+1.  Tutarken kılavuzu sürükleyin **Shift** anahtarı.  
   
-### <a name="to-turn-off-the-guides"></a>Kılavuzları devre dışı bırakma  
+### <a name="to-turn-off-the-guides"></a>Kılavuzları için  
   
-1.  Gelen **biçimi** menüsünde seçin **Kılavuzu ayarları**.  
+1.  Gelen **biçimi** menüsünde seçin **Kılavuz ayarları**.  
   
-2.  İçinde [kılavuz Ayarları iletişim kutusu](../windows/guide-settings-dialog-box.md)altında **Düzen kılavuzları**seçin **hiçbiri**.  
+2.  İçinde [kılavuz Ayarları iletişim kutusu](../windows/guide-settings-dialog-box.md)altında **düzeni kılavuzları**seçin **hiçbiri**.  
   
     > [!NOTE]
-    >  Ayrıca erişmek için cetvel çubuğu çift **Kılavuzu ayarları** iletişim kutusu.  
+    >  Ayrıca cetvel çubuğuna erişmek için çift **Kılavuz ayarları** iletişim kutusu.  
   
  \- veya -  
   
--   Üzerinde **biçimi** menüsünde tıklatın **geçiş kılavuzları**.  
+-   Üzerinde **biçimi** menüsünü tıklatın **rehberi Aç/Kapat**.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutusu Düzenleyicisi durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)   
  [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)
-

@@ -17,40 +17,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c4f1aa4b80aec2e7c16485c08d2505695b21f4d5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8e4b1665e54a03bf7d5f4705aaa3d76962ed16a0
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858094"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649978"
 ---
 # <a name="associating-a-menu-command-with-an-accelerator-key"></a>Menü Komutunu Hızlandırıcı Tuşuyla İlişkilendirme
-Çoğunlukla menü komutu ve tuş bileşimini aynı program komutu vermek istediğiniz saatleri vardır. Bunun için aynı kaynak tanımlayıcısı menü komutu ve uygulamanızın Hızlandırıcı tablosunda bir giriş atamak için menü Düzenleyicisi'ni kullanarak. Daha sonra Düzenle [resim yazısı](../windows/menu-command-properties.md) Hızlandırıcı anahtarın adını göstermek için menü komutu.  
+Genellikle bir menü komutu ve klavye birleşimi aynı program komutu vermek istediğiniz durumlar da vardır. Kullanarak bunu **menü** aynı kaynak tanımlayıcısı menü komutunu ve uygulamanızın Hızlandırıcı tablosunda bir giriş atamak için düzenleyici. Ardından Düzenle [açıklamalı alt yazı](../windows/menu-command-properties.md) kısayol tuşunu adını göstermek için menü komutu.  
   
-### <a name="to-associate-a-menu-command-with-an-accelerator-key"></a>Menü komutunu Hızlandırıcı tuşuyla ilişkilendirme  
+### <a name="to-associate-a-menu-command-with-an-accelerator-key"></a>Bir menü komutunu Hızlandırıcı tuşuyla ilişkilendirme  
   
-1.  İçinde **menü** Düzenleyicisi, seçmek istediğiniz menü komutu.  
+1.  İçinde **menü** Düzenleyicisi, istediğiniz komutu seçin.  
   
-2.  İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window), Hızlandırıcı anahtarın adını eklemek **resim yazısı** özelliği:  
+2.  İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), hızlandırıcı anahtarı adını eklemek **açıklamalı alt yazı** özelliği:  
   
-    -   Böylece tüm menünün Hızlandırıcı tuşları sola hizalı menü başlığı kaçış sırası bir sekme (\t) yazın.  
+    -   Menü başlığı tüm menünün kısayol tuşları sola hizalanmış bir sekme (\t) kaçış sırası yazın.  
   
-    -   Değiştirici tuşa adını yazın (**CTRL**, **ALT**, veya **SHIFT**) ve ardından bir artı işareti (**+**) ve ad, harf, veya İlave bir anahtar simgesi.  
+    -   Değiştirici tuş adını yazın (**Ctrl**, **Alt**, veya **Shift**) ve ardından bir artı işareti (**+**) ve ad, harf, veya İlave bir anahtar simgesi.  
   
-         Örneğin, atamak için **CTRL + O** için **açık** komutunu **dosya** menüsünde menü komutuna değiştirme **resim yazısı** böylece gibi görünüyor Bu:  
+         Örneğin, atama için **Ctrl**+**O** için **açık** komutunu **dosya** menüsünde, menü komutunun değiştirme **Açıklamalı alt yazı** böylece şöyle görünür:  
   
         ```  
         &Open...\tCtrl+O   
         ```  
   
-         Menü Düzenleyicisi'nde menü komutu, siz yazarken yeni resim yazısını yansıtacak şekilde güncelleştirilir.  
+         Menü komutunu **menü** Düzenleyici siz yazarken yeni başlığı yansıtacak şekilde güncelleştirilir.  
   
-3.  [Hızlandırıcı tablosu girişi oluşturmak](../windows/adding-an-entry-to-an-accelerator-table.md) içinde **hızlandırıcı** Düzenleyicisi ve menü komutu aynı kimliğe atayın. Anımsaması kolay olacağını düşündüğünüz bir tuş bileşimini kullanın.  
+3.  [Hızlandırıcı tablosu girişi oluşturmak](../windows/adding-an-entry-to-an-accelerator-table.md) içinde **hızlandırıcı** Düzenleyicisi ve menü komutunu aynı tanımlayıcıyı atayın. Kolay olacağını düşündüğünüz bir tuş bileşimini kullanın.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

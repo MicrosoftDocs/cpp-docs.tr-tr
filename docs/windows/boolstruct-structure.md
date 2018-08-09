@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: af2827d85a1df647dca2c02c5c6ee5a12a416d51
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 14e3d81ca273bf96b4812f08a46904c9d521c5cf
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860128"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650488"
 ---
 # <a name="boolstruct-structure"></a>BoolStruct Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 struct BoolStruct;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- BoolStruct yapısı bir ComPtr bir arabirim nesne ömrü yönetme olup olmadığını tanımlar. BoolStruct tarafından dahili olarak kullanılan [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) işleci.  
+ **BoolStruct** yapısını tanımlar olup olmadığını bir `ComPtr` bir arabirimin nesne ömrü yönetimi. **BoolStruct** tarafından dahili olarak kullanılan [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) işleci.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -42,7 +42,7 @@ struct BoolStruct;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[BoolStruct::Member Veri Üyesi](../windows/boolstruct-member-data-member.md)|Belirleyen bir [ComPtr](../windows/comptr-class.md) , veya bir arabirim nesne ömrü yönetme değil,.|  
+|[BoolStruct::Member Veri Üyesi](../windows/boolstruct-member-data-member.md)|Belirten bir [ComPtr](../windows/comptr-class.md) ya da bir arabirimin nesnenin ömrünü yönetmek değildir.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `BoolStruct`  

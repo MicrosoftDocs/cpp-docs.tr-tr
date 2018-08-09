@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 817d984e995e7ac33ba80f978a282a8c0bac3e4f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 90756dc8ff515a8c956778bf8c6392332a8f9ca9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890641"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652753"
 ---
 # <a name="weakrefcopyto-method"></a>WeakRef::CopyTo Yöntemi
-Bir işaretçi bir arabirim için mevcut ise, belirtilen işaretçi değişkenine atar.  
+Bir işaretçi bir arabirim için kullanılabiliyorsa, belirtilen bir işaretçi değişkenine atar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,23 +45,23 @@ HRESULT CopyTo(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `U`  
- İşaretçi Iınspectable arabirim. Bir hata durumunda yayılan `U` Iınspectable türetilmemiş.  
+### <a name="parameters"></a>Parametreler  
+ *U*  
+ İşaretçi bir `IInspectable` arabirimi. Bir hata varsa yayıldığını *U* türünden türetilmediğinden `IInspectable`.  
   
- `riid`  
- Bir arabirim kimliği Bir hata durumunda yayılan `riid` türetilmedi **IWeakReference**.  
+ *riid*  
+ Bir arabirim kimliği. Bir hata varsa yayıldığını *riid* türünden türetilmediğinden `IWeakReference`.  
   
- `ptr`  
- Iınspectable veya IWeakReference karakteriyle dolaylı bir işaretçi.  
+ *ptr*  
+ Karakteriyle dolaylı bir işaretçiye `IInspectable` veya `IWeakReference`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa S_OK; Aksi takdirde, HRESULT hata açıklar. Daha fazla bilgi için açıklamalar bakın.  
+ Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT. Daha fazla bilgi için **açıklamalar**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- S_OK dönüş değeri, bu işlemi başarılı oldu ancak zayıf başvuru güçlü bir başvuru çözümlendiği göstermez anlamına gelir. Bu parametrenin S_OK döndürülürse, test `p` güçlü bir başvuru; diğer bir deyişle, parametre `p` eşit değil `nullptr`.  
+ S_OK dönüş değeri, bu işlem başarılı oldu, ancak güçlü bir başvuru zayıf başvuru çözümlendiği olup olmadığını göstermez anlamına gelir. S_OK döndürülürse, bu parametrenin test *p* güçlü bir başvuru; diğer bir deyişle, parametre *p* değerine eşit değildir **nullptr**.  
   
- Windows 10 SDK'sı başlayarak, bu yöntem WeakRef örneği ayarlanmamışsa `nullptr` zayıf başvuru edinilemedi, bu nedenle, kaçının için WeakRef denetler kod denetlenirken hata `nullptr`. Bunun yerine, denetleme `ptr` için `nullptr`.  
+ Windows 10 SDK'SINDAN başlayarak, bu yöntem ayarlı değil **WeakRef** için örnek **nullptr** zayıf başvuru elde edilemedi, bu nedenle, kaçının için WeakRef denetleyen kod denetlenirken hata oluştu **nullptr**. Bunun yerine, kontrol *ptr* için **nullptr**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

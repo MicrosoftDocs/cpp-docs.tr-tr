@@ -18,17 +18,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d6d2cd31306baaa0d9c8f137122fed1d4ae97295
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 948b720df6094ddd4124bb496cabb3c83a3cacf0
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464697"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652994"
 ---
 # <a name="application-settings-win-32-project-wizard"></a>Uygulama Ayarları, Win 32 Proje Sihirbazı
 Win32 Proje seçeneklerini ayarlamak için sihirbazın bu sayfayı kullanın.  
   
- **Uygulama türü**  
+## <a name="application-type"></a>Uygulama türü  
  Belirtilen uygulama türünü oluşturur.  
   
 |Seçenek|Açıklama|  
@@ -38,7 +38,7 @@ Win32 Proje seçeneklerini ayarlamak için sihirbazın bu sayfayı kullanın.
 |**DLL**|Bir Win32 dinamik bağlantı kitaplığı (DLL) oluşturur. Bir Win32 DLL C veya C++, MFC sınıfları yerine Win32 API çağrılarını kullanır ve, paylaşılan bir kitaplık aynı anda birden çok uygulama tarafından kullanılabilecek işlevleri gibi davranır, ikili bir dosyadır.<br /><br /> MFC eklenemiyor veya bir DLL uygulaması için ATL desteği. DLL sembolleri dışa aktarır belirtebilirsiniz.|  
 |**Statik kitaplık**|Statik kitaplık oluşturur. Statik kitaplık nesneleri ve işlevleri ve yürütülebilir dosya oluşturulduğunda, programınız bağlanan veri içeren bir dosyadır. Bu konu başlangıç dosyalarının nasıl oluşturulacağını açıklar ve [proje özellikleri](../ide/property-pages-visual-cpp.md) statik kitaplığı. Statik kitaplık dosyası aşağıdaki avantajları sağlar:<br /><br /> -Bir Win32 statik kitaplık, üzerinde çalıştığınız uygulama Win32 API yerine MFC sınıfları çağrılar yaparsa yararlıdır.<br />-Windows uygulamanızı geri kalanını c veya C++ yazılmış bağlama işlemi aynıdır.<br />MFC tabanlı bir program veya MFC olmayan programı-statik kitaplık bağlayabilirsiniz.|  
   
- **Ek Seçenekler**  
+## <a name="additional-options"></a>Ek Seçenekler  
  Destek ve kendi türüne bağlı olarak bir uygulama için seçenekleri tanımlar.  
   
 |Seçenek|Açıklama|  
@@ -48,7 +48,7 @@ Win32 Proje seçeneklerini ayarlamak için sihirbazın bu sayfayı kullanın.
 |**Önceden derlenmiş üst bilgi**|Statik kitaplık proje önceden derlenmiş üst bilgi kullandığını belirtir.|  
 |Güvenlik geliştirme yaşam döngüsü (SDL) denetimleri|SDL hakkında daha fazla bilgi için bkz: [Microsoft Security Development Lifecycle (SDL) işlem kılavuzu](../build/reference/sdl-enable-additional-security-checks.md)|  
   
- **İçin destek eklendi**  
+## <a name="add-support-for"></a>İçin destek eklendi  
  Visual C++'da sağlanan kitaplıkları biri için destek eklendi.  
   
 |Seçenek|Açıklama|  

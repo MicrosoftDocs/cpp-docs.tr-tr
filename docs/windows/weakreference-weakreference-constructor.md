@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8e60b23a0c63ce1415765dd1f94863540849f975
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c872b311e6fa7aa16d7118a13bc69ef2c7ef9cc4
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891067"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652655"
 ---
 # <a name="weakreferenceweakreference-constructor"></a>WeakReference::WeakReference Oluşturucusu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,7 +36,7 @@ WeakReference();
 ## <a name="remarks"></a>Açıklamalar  
  Yeni bir örneğini başlatır [WeakReference sınıfı](../windows/weakreference-class1.md).  
   
- WeakReference nesnesi için güçlü bir başvuru işaretçisi başlatılıp başlatılmadığı `nullptr`, ve güçlü başvuru sayısı 1 olarak başlatıldı.  
+ Güçlü başvuru işaretçisi **WeakReference** nesne için başlatılan **nullptr**, ve güçlü başvuru sayısı 1 olarak başlatılır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  
@@ -44,5 +44,4 @@ WeakReference();
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-    
  [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

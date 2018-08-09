@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8eade0c6a77e70fe156f80c2809a8cca0ed89b38
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 532f3714bc48db545a33b76eb07b641b8e3e5490
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571444"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650095"
 ---
 # <a name="dbcommand"></a>db_command
 OLE DB komut oluşturur.  
@@ -41,7 +41,6 @@ OLE DB komut oluşturur.
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-
 *Komutu*  
 Bir komutu bir OLE DB komut metnini içeren dize. Basit bir örnektir:  
   
@@ -112,12 +111,12 @@ Satır kümesi ile çalışmak için kullandığınız işleyici adı. Belirtirs
 **db_command** denetimler için kullanılan değişkeni emin olmak için *source_name* belirtilen değişkeni işlevi veya genel kapsamlı bu nedenle geçerlidir.  
   
 *HRESULT* (isteğe bağlı)  
-Alacak değişkeni tanımlar `HRESULT` bu veritabanı komutunun. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.  
+Bu veritabanı komutunun HRESULT alacak değişkeni tanımlar. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.  
   
 *bağlamaları* (isteğe bağlı)  
 Bağlama parametrelerinde, OLE DB komutu ayrı sağlar.  
   
-İçin bir değer belirtirseniz *bağlamaları*, **db_command** ilişkili değer ayrıştırır ve değil ayrıştırmaz \[ *bindtype*] parametresi. Bu kullanım OLE DB sağlayıcısı sözdizimi kullanmanıza olanak tanır. Ayrıştırma, parametreleri, bağlama olmadan devre dışı bırakmak için belirtin **bağlamaları = ""**.  
+İçin bir değer belirtirseniz *bağlamaları*, **db_command** ilişkili değer ayrıştırır ve değil ayrıştırmaz \[ *bindtype*] parametresi. Bu kullanım OLE DB sağlayıcısı sözdizimi kullanmanıza olanak tanır. Ayrıştırma, parametreleri, bağlama olmadan devre dışı bırakmak için belirtin `Bindings=""`.  
   
 İçin bir değer belirtmezseniz *bağlamaları*, **db_command** aranırken bağlama parametresi blok ayrıştırmaz '**(**' çizgidir **\[** _bindtype_**]** tarafından izlenen bir veya daha fazla önceden tanımlanmış C++ üye değişkenlerine tarafından izlenen parantez içine '**)**'. Ayraçlar arasındaki tüm metni ortaya çıkan komuttan kaldırılır ve bu parametreler, bu komut için sütun ve parametre bağlamaları oluşturmak için kullanılacak.  
   
@@ -133,7 +132,7 @@ Varsa *bulk_fetch* değerden daha az `SetRows` sıfır döndürür.
 ## <a name="remarks"></a>Açıklamalar  
 **db_command** oluşturur bir [CCommand](../data/oledb/ccommand-class.md) bir komutu çalıştırmak için bir OLE DB Tüketicisi tarafından kullanılan nesne.  
   
-Kullanabileceğiniz **db_command** kapsamıyla; sınıf veya işlev temel fark kapsamındaysa `CCommand` nesne. İşlev kapsamı ile veri bağlamaları gibi işlevi sonunda sona erer. Sınıfı hem de işlev kapsamı kullanımları içeren OLE DB tüketici şablonu sınıfı `CCommand<>`, ancak şablon değişkenlerini işlevi ve sınıf çalışmaları için farklı. İşlev durumda bağlamaları yapılmaz bir **erişimci** , anımsatıcıyı yerel değişkenler sınıfı kullanım çıkarımlar sırada bir `CAccessor`-türetilmiş sınıf için bağımsız değişken olarak. Bir sınıf özniteliği kullanıldığında **db_command** ile birlikte çalışır **db_column**.  
+Kullanabileceğiniz **db_command** kapsamıyla; sınıf veya işlev temel fark kapsamındaysa `CCommand` nesne. İşlev kapsamı ile veri bağlamaları gibi işlevi sonunda sona erer. Sınıfı hem de işlev kapsamı kullanımları içeren OLE DB tüketici şablonu sınıfı `CCommand<>`, ancak şablon değişkenlerini işlevi ve sınıf çalışmaları için farklı. İşlev durumda bağlamaları yapılmaz bir `Accessor` , anımsatıcıyı yerel değişkenler sınıfı kullanım çıkarımlar sırada bir `CAccessor`-türetilmiş sınıf için bağımsız değişken olarak. Bir sınıf özniteliği kullanıldığında **db_command** ile birlikte çalışır **db_column**.  
   
 **db_command** bir sonuç kümesi döndürmüyor komutları yürütmek için kullanılabilir.  
   

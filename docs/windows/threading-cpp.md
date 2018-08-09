@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f21ea8c16b4e09a5ad1845a10797be00f91b0d8f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0e0e8b13a74c5b232e2662f80fc1cc8f80a1ffc9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891330"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653007"
 ---
 # <a name="threading-c"></a>iş parçacığı oluşturma (C++)
 Bir COM nesnesi için iş parçacığı modelini belirtir.  
@@ -30,37 +30,36 @@ Bir COM nesnesi için iş parçacığı modelini belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ threading(  
+[ threading(  
    model=enumeration  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- ***Model*** (isteğe bağlı)  
+### <a name="parameters"></a>Parametreler  
+ *Model* (isteğe bağlı)  
  Aşağıdaki iş parçacığı oluşturma modelleri biri:  
   
--   **Grup** (Grup iş parçacığı oluşturma)  
+-   `apartment` (Grup iş parçacığı)  
   
--   **dilden bağımsız** (.NET Framework bileşenlerini kullanıcı arabirimi olmadan)  
+-   `neutral` (.NET framework bileşenlerini kullanıcı arabirimi olmadan)  
   
--   **tek** (basit iş parçacığı oluşturma)  
+-   `single` (basit iş parçacığı)  
   
--   **Ücretsiz** (iş parçacığı oluşturma boş)  
+-   `free` (iş parçacığı ücretsiz)  
   
--   **her ikisi de** (Grup ve boş iş parçacığı oluşturma)  
+-   `both` (Grup ve serbest iş parçacığı oluşturma)  
   
- Varsayılan değer **grup**.  
+ Varsayılan değer `apartment` şeklindedir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **İş parçacığı oluşturma** C++ öznitelik oluşturulan .idl dosyasında görünmez ancak COM nesnesi uygulamasında kullanılır.  
+ **İş parçacığı** C++ özniteliği oluşturulmuş bir .idl dosyasında görünmez ancak, COM nesnesinin uygulamasında kullanılır.  
   
- ATL projelerinde varsa [coclass](../windows/coclass.md) özniteliği varsa, aynı zamanda tarafından belirtilen iş parçacığı modelini *modeli* şablon parametre olarak geçirilen [in uygulamasına](../atl/reference/ccomobjectrootex-class.md) sınıfı , tarafından eklenen **coclass** özniteliği.  
+ ATL projelerinde, [coclass'ı](../windows/coclass.md) özniteliği varsa, ayrıca tarafından belirtilen iş parçacığı modeli *modeli* şablon parametresi olarak geçirilir [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) sınıfı , tarafından eklenen `coclass` özniteliği.  
   
- **İş parçacığı oluşturma** özniteliği de erişimi korur bir [event_source](../windows/event-source.md).  
+ **İş parçacığı** özniteliği erişimi de korur bir [event_source](../windows/event-source.md).  
   
 ## <a name="example"></a>Örnek  
- Bkz: [lisanslı](../windows/licensed.md) bir örnek kullanımı, örneğin **iş parçacığı oluşturma**.  
+ Bkz: [lisanslı](../windows/licensed.md) örnek kullanımını örneğin **iş parçacığı**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -68,9 +67,9 @@ Bir COM nesnesi için iş parçacığı modelini belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass**|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|**coclass**|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
@@ -80,4 +79,4 @@ Bir COM nesnesi için iş parçacığı modelini belirtir.
  [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
  [Sınıf öznitelikleri](../windows/class-attributes.md)   
  [Eski kod (Visual C++) için çoklu iş parçacığı desteği](../parallel/multithreading-support-for-older-code-visual-cpp.md)   
- [Dilden bağımsız grupların](http://msdn.microsoft.com/library/windows/desktop/ms681813)   
+ [Nötr apartmanlar](http://msdn.microsoft.com/library/windows/desktop/ms681813)   

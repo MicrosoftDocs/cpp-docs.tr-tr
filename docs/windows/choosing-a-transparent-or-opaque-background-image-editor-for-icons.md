@@ -24,39 +24,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 244e6a63bc16b5e83bb8419dbe1b53741d566e56
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7c8a809e7cd7ed7a461149707cc9e0b2a4a62158
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857918"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649526"
 ---
 # <a name="choosing-a-transparent-or-opaque-background-image-editor-for-icons"></a>Saydam veya Donuk Arka Plan Seçme (Simgeler İçin Görüntü Düzenleyicisi)
-Taşıdığınızda veya bir görüntüden Seçimi kopyalama geçerli arka plan rengi eşleşen tüm seçimi, varsayılan olarak, saydam pikseldir; Hedef konumda piksel soyutlamaması değil.  
+Taşıdığınızda veya bir görüntüden bir seçimi Kopyala Geçerli arka plan rengiyle uyuşan pikselleri seçimdeki, varsayılan olarak, saydam olan; Hedef konumda piksel gizlememeniz değil.  
   
- Saydam arka plan (varsayılan) donuk arka plana geçin ve yeniden. Bir seçim aracını kullandığınızda **saydam arka plan** ve **donuk arka plan** seçenekleri görünmez seçeneği seçicide **görüntü Düzenleyicisi** (aşağıda görüldüğü gibi) araç.  
+ Donuk bir arka plan için saydam bir arka planından (varsayılan) geçin ve yeniden. Bir seçim aracını kullandığınızda **saydam arka plan** ve **donuk arka plan** seçenekleri görünür **seçeneği** seçicisinde **GörüntüDüzenleyicisi** (aşağıda görüldüğü gibi) araç çubuğu.  
   
- ![Arka plan seçenekleri &#45; donuk veya saydam](../windows/media/vcimageeditoropaqtranspback.gif "vcImageEditorOpaqTranspBack")  
-Görüntü Düzenleyicisi araç çubuğundaki saydam ve donuk seçenekleri  
+ ![Arka plan seçeneklerini &#45; opak ya da şeffaf](../windows/media/vcimageeditoropaqtranspback.gif "vcImageEditorOpaqTranspBack")  
+**Saydam ve donuk seçenekleri** üzerinde **Resim Düzenleyicisi araç çubuğu**  
   
 ### <a name="to-switch-between-a-transparent-and-opaque-background"></a>Saydam ve donuk arka plan arasında geçiş yapmak için  
   
-1.  İçinde **görüntü Düzenleyicisi** araç tıklatın **seçeneği** Seçici ve ardından uygun arka plan:  
+1.  İçinde **görüntü Düzenleyicisi** araç tıklayın **seçeneği** Seçici ve ardından uygun arka plan tıklayın:  
   
-    -   **Donuk arka plan (O)**: Mevcut görüntü seçimi tüm bölümleri tarafından getirilmemeli.  
+    -   `Opaque Background (O)`: Varolan bir görüntü seçimi tüm bölümleri tarafından engellenmesidir.  
   
-    -   **Saydam arka plan (T)**: Mevcut görüntü geçerli arka plan rengini eşleştirme seçimi bölümlerini gösterir.  
+    -   `Transparent Background (T)`: Var olan Yansıma geçerli arka plan rengiyle uyuşan parçaları seçimin gösterilmektedir.  
   
  \- veya -  
   
--   Üzerinde **görüntü** menüsünde seçin veya temizleyin **Donuk Çiz**.  
+-   Üzerinde **görüntü** menüsünü seçin veya temizleyin **çizmek opak**.  
   
- Bir seçim hangi bölümlerinin resminin saydam değiştirmek için etkin durumdayken, arka plan rengini değiştirebilirsiniz.  
+ Bir seçim hangi parçalarının resminin saydam değiştirmek için etkin durumdayken arka plan rengini değiştirebilirsiniz.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

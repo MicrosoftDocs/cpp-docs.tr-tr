@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95a0cce7f51ef7974d0520f0bdfd2f025a09ecaf
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3c1b888b9d3e3f3c80c3aff40f5fd545ece9cca6
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859611"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650644"
 ---
 # <a name="asyncbaseonclose-method"></a>AsyncBase::OnClose Yöntemi
 Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem kapatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 virtual void OnClose(  
    void  
 ) = 0;  

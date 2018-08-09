@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 68c7d70c6d1192e1b80253cf1fb3cfc3040d8fce
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 727e67ad5bceb396da98463b77fb75f2f99154b3
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570665"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650017"
 ---
 # <a name="dbaccessor"></a>db_accessor
 Grupları `db_column` katılmak öznitelikleri `IAccessor`-bağlama dayalı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ db_accessor(   
    num,   
    auto   

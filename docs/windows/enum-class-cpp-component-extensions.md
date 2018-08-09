@@ -13,25 +13,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: af936151b221b11c88f6dd054779b1a74fa50571
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 54c4e97458e1a7322d84e012ea5609d3e29bfb0a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570554"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647319"
 ---
 # <a name="enum-class--c-component-extensions"></a>enum sınıfı (C++ Bileşen Uzantıları)
 Numaralandırıcı olarak adlandırılan sabitler kümesinden oluşan kullanıcı tanımlı türü olan ad alanı kapsamında bir sabit listesi bildirir.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar
   
  C + +/ CX ve C + +/ CLI desteği **genel sabit listesi sınıfı** ve **özel enum sınıfı** olduğu için standart C++ benzer **sabit listesi sınıfı** ancak ek olarak erişilebilirlik tanımlayıcı. Altında **/CLR**, C ++ 11 **sabit listesi sınıfı** tür izin verilir, ancak gerçekten ISO sabit listesi türü ve değil C + istediğinizden emin olmak için tasarlanmıştır C4472 uyarı oluşturacak +/ CX ve C + +/ CLI türü. ISO Standard C++ hakkında daha fazla bilgi için **enum** anahtar sözcüğü, bkz: [numaralandırmalar](../cpp/enumerations-cpp.md).  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- **Söz dizimi**  
+### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
       access  
       enum class  
       enumeration-identifier  
@@ -39,8 +39,7 @@ Numaralandırıcı olarak adlandırılan sabitler kümesinden oluşan kullanıc�
 accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [var];  
 ```  
   
- **Parametreler**  
-  
+### <a name="parameters"></a>Parametreler  
  *Erişim*  
  Erişilebilirlik olabilir numaralandırma **genel** veya **özel**.  
   
@@ -60,7 +59,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
  *var*  
  (İsteğe bağlı) Sabit listesi türünde bir değişken adı.  
   
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar 
   
  Daha fazla bilgi ve örnekler için bkz. [numaralandırmalar](http://msdn.microsoft.com/%20library/windows/apps/hh755820.aspx).  
   
@@ -73,19 +72,19 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 -   Varsa *temel alınan türü* olduğu `char16`ve sabit listesi değeri 0xD800 ile 0xDFFF aralıkları, değeri temsil edilebilir. Ancak, bir Unicode yarım temsil ettiğinden mantıksal olarak yanlış değer vekil çifti ve yalıtım modunda görünmemelidir.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- **Söz dizimi**  
+### <a name="syntax"></a>Sözdizimi
   
-```  
+```cpp  
       access  
       enum class  
       name [:type] { enumerator-list } var;  
 accessenum structname [:type] { enumerator-list } var;  
 ```  
   
- **Parametreler**  
+ ### <a name="parameters"></a>Parametreler  
   
  *Erişim*  
  Sabit listesinin erişilebilirlik. Olabilir **genel** veya **özel**.  
@@ -102,7 +101,7 @@ accessenum structname [:type] { enumerator-list } var;
  *Varyasyon* (isteğe bağlı)  
  Sabit listesi türünde bir değişken adı.  
   
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar 
   
  **sabit listesi sınıfı** ve **enum struct** eşdeğer bildirimlerdir.  
   
@@ -163,13 +162,13 @@ int main() {
   
  işlev imzası için MSIL aşağıdaki yayması:  
   
-```  
+```cpp  
 void f(int32);  
 ```  
   
  Ancak, geçerli derleyici sürümlerinde, standart sabit listesi [NativeEnumAttribute] ve işlev imzası için MSIL aşağıdaki ile yönetilen bir sabit listesi olarak yayılır:  
   
-```  
+```cpp  
 void f(E)  
 ```  
   
@@ -180,12 +179,9 @@ void f(E)
 -   [Bir sabit listesinin temel alınan türü](../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
-  
- desc  
   
 ```cpp  
 // mcppv2_enum_2.cpp  
@@ -215,8 +211,6 @@ int main()
    System::Console::WriteLine(o);  
 }   
 ```  
-  
- **Output**  
   
 ```Output  
 no automatic conversion to int: b  

@@ -19,25 +19,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e899729e70db089c1c55f00aa9c4196a22c67060
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a38341f6c6bcbcdec6bb4e6f5e5820fa759e6dab
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892845"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652031"
 ---
 # <a name="window-panes-image-editor-for-icons"></a>Pencere Bölmeleri (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi penceresinde bir ayırıcı çubukla ayrılan iki bölme görüntü genellikle görüntüler. Bir görünümdür gerçek boyut ve diğer genişletilir (varsayılan büyütme faktörü 6'dır). Bu iki bölme görünümlerinde otomatik olarak güncelleştirilir: bir bölmesinde yaptığınız değişiklikler hemen gösterilen diğer. İki bölmeleri, tek tek piksel ayırt etmek ve kullanabilirsiniz, görüntü boyutu gerçek görünümünü iş etkisi aynı anda gözlemlemek görüntünüzün büyütülmüş bir görünüm üzerinde çalışmak kolaylaştırır.  
+**Resim Düzenleyicisi** penceresi genellikle görüntüler görüntüyü bir ayırıcı çubukla ayırarak iki bölme. Bir görünümdür gerçek boyut ve diğer genişletilir (varsayılan büyütme faktörü 6'dır). Bu iki bölme görünümlerde otomatik olarak güncelleştirilir: bir bölmesinde yaptığınız değişiklikler hemen gösterilen diğer. İki bölme içinde tek tek her piksel ayırmak ve kullanabilirsiniz, aynı zamanda, görüntünün boyutu gerçek görünümünü iş etkisi gözlemleyin görüntünüzü genişletilmiş bir görünüm üzerinde çalışmayı kolaylaştırır.  
   
- Sol bölmede 1:1 büyütme (varsayılan), resmin görünümünü görüntülemek için gerekli olduğu kadar alan (en fazla yarısı görüntü penceresini) kullanır. Sağ bölmeden yakınlaştırılmış görüntünün (varsayılan olarak 6:1 büyütme) görüntüler. Yapabilecekleriniz [büyütme değiştirmek](../windows/changing-the-magnification-factor-image-editor-for-icons.md) her bölmesini kullanarak **Magnıfy** aracındaki [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md) veya kısayol tuşları kullanarak.  
+ Sol bölmede gerektiği kadar bu alanı kullanır (en fazla yarısını **görüntü** pencere) görüntünüzü 1:1 büyütme görünümünü (varsayılan) görüntülemek için. Sağ bölmede, yakınlaştırılmış görüntü (varsayılan olarak 6:1 büyütme) görüntüler. Yapabilecekleriniz [büyütme değiştirme](../windows/changing-the-magnification-factor-image-editor-for-icons.md) her bölmesini kullanarak **Magnıfy** aracındaki [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md) veya kısayol tuşları kullanarak.  
   
- Görüntü Düzenleyicisi penceresinde küçük bölmesini genişletmek ve büyük bir görüntü farklı bölümlerinin göstermek için iki bölme kullanabilirsiniz. Bölmesinde seçmek için tıklatın.  
+ Daha küçük bölmesinde genişletebilirsiniz **Resim Düzenleyicisi** penceresi ve büyük bir görüntü, farklı bölgelerde göstermek için iki bölme kullanın. Bölmesinde seçmek için tıklayın.  
   
- İşaretçinin bölünmüş çubuğunda konumlandırma ve bölme çubuğunu sağa veya sola taşıyarak bölmelerin göreli boyutunu değiştirebilirsiniz. Yalnızca bir bölmesinde çalışmak isterseniz bölme çubuğunu taraflardan tüm taşıyabilirsiniz.  
+ İşaretçinin bölünmüş çubuğunda konumlandırma ve bölme çubuğunu sağa veya sola taşıyarak bölmelerin göreli boyutlarını değiştirebilirsiniz. Yalnızca bir bölmesinde çalışmak istiyorsanız bölme çubuğunu taraflardan tüm taşıyabilirsiniz.  
   
- Görüntü Düzenleyicisi bölmesinde 4 veya daha büyük bir faktörüyle genişletilirse, şunları yapabilirsiniz [piksel kılavuzunu görüntüleme](../windows/displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md) tek tek piksel cinsinden görüntü sınırlandırır.  
+ Varsa **görüntü Düzenleyicisi** bölmesi faktörü olarak 4 ile genişletilmiş veya daha büyük, yapabilecekleriniz [piksel kılavuzunu görüntüleme](../windows/displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md) , tek tek her piksel görüntüde sınırlandırır.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  
@@ -45,4 +45,3 @@ Görüntü Düzenleyicisi penceresinde bir ayırıcı çubukla ayrılan iki böl
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
-

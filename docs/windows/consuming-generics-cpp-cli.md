@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d8282079099b0b67b144f768a69f724e39305385
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: cf1c7c0894eacc828a011c8c5f9fef8c2d78fba8
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39460497"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652519"
 ---
 # <a name="consuming-generics-ccli"></a>Genel Türleri Kullanma (C++/CLI)
 Bir .NET dilinde yazılan genel türler, diğer .NET dillerinde kullanılabilir. Şablonları, derlenmiş derlemede genel hala genel kalır. Bu nedenle, bir genel tür farklı bir derleme ve hatta genel tür içinde tanımlanan derleme farklı bir dilde örneği.  
@@ -114,9 +114,7 @@ int main() {
 }  
 ```  
   
-### <a name="output"></a>Çıkış  
-  
-```  
+```Output  
 90  
 80  
 70  

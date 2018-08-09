@@ -1,5 +1,5 @@
 ---
-title: Araç çubuğu düğmesi için araç ipucu oluşturma | Microsoft Docs
+title: Toolbar düğmesi için araç ipucu oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,44 +19,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 41c2fa538a7888a2f14ae34fde9133b2872d13ba
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 27f4c5e3da313352358223de1499ef379db02bd7
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871773"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647784"
 ---
 # <a name="creating-a-tool-tip-for-a-toolbar-button"></a>Araç Çubuğu Düğmesi İçin Araç İpucu Oluşturma
-### <a name="to-create-a-tool-tip"></a>Araç İpucu oluşturmak için  
+### <a name="to-create-a-tool-tip"></a>Bir araç ipucu oluşturmak için  
   
 1.  Araç çubuğu düğmesini seçin.  
   
-2.  İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window), **komut istemi** özellik alanı düğmesinin ileti sonra; durum çubuğu için bir açıklama ekleyin, \n ve araç ipucu adı ekleyin.  
+2.  İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **istemi** özellik alanı, ileti sonra; durum çubuğunu düğmenin bir açıklama ekleyin, ekleme `\n` ve araç ipucu adı.  
   
- Bir ortak bir araç ipucu WordPad bulunan Yazdır düğmesine örneğidir:  
+ Ortak bir araç ipucu örneğidir **yazdırma** düğmesine **WordPad**:  
   
- 1. WordPad'i açmak.  
+ 1. Açık **WordPad**.  
   
- 2. Fare işaretçisini üzerine gelerek **yazdırma** araç çubuğu düğmesi.  
+ 2. Fare işaretçinizi üzerine **yazdırma** araç çubuğu düğmesi.  
   
- 3. Word 'yazdırma' artık bildirim altında fare işaretçisini kayan.  
+ 3. Dikkat word `Print` fare işaretçinizi altında artık kayan noktalı.  
   
- 4. Durum çubuğu (en altında WordPad penceresinin) bakmak - bunu şimdi metni "etkin belgeyi yazdırır" gösterdiğine dikkat edin.  
+ 4. Durum çubuğu Ara (çok altındaki **WordPad** pencere)-bu artık metin gösterdiğine dikkat edin `Prints the active document`.  
   
- "Araç ipucu adı" Adım 3 'yazdırma', 'yazdırır etkin belgeyi' adım 4'ten ise "açıklaması durum çubuğu düğmesini."  
+ `Print` İçinde **3. adım** "araç ipucu" adıdır ve `Prints the active document` gelen **4. adım** "açıklama için durum çubuğu düğmesinin."  
   
- Bu efekti kullanarak istiyorsanız **araç** Düzenleyicisi, ayarladığınız **komut istemi** özelliğine **etkin document\nPrint yazdırır**.  
+ Efekt kullanarak bu istiyorsanız **araç** Düzenleyicisi, ayarladığınız **istemi** özelliğini `Prints the active document\nPrint`.  
   
 > [!NOTE]
->  Komut istemi metni kullanarak düzenleyebilirsiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  
+>  İstem metnini kullanarak düzenleyebileceğiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
- MFC ya da ATL  
+## <a name="requirements"></a>Gereksinimler  
+ MFC veya ATL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Oluşturma, taşıma ve düzenleme araç çubuğu düğmeleri](../windows/creating-moving-and-editing-toolbar-buttons.md)   
  [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
-

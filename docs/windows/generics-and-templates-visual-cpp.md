@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3ebb476b0a8c384759c9d44101e7bac7083103b2
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: fbe4837a347c78bb3b7c05094adf442b69fa2f39
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570772"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649497"
 ---
 # <a name="generics-and-templates-visual-c"></a>Genel Türler ve Temsilciler (Visual C++)
 Genel türler ve temsilciler parametreli türler için destek sağlayan her iki dil özellikleridir. Ancak, farklıdır ve farklı kullanır sahip. Bu konu, pek çok fark genel bir bakış sağlar.  
@@ -51,7 +51,7 @@ Genel türler ve temsilciler parametreli türler için destek sağlayan her iki 
   
 ## <a name="combining-templates-and-generics"></a>Birleştirme şablonları ve genel türler  
   
--   Genel türler temel fark, şablonları ve genel türler birleştiren uygulamalar oluşturmaya yönelik etkilere sahiptir. Örneğin, diğer diller için o şablon genel olarak kullanıma sunmak için genel bir sarmalayıcı oluşturmak istediğiniz bir şablon sınıfı olduğunu varsayalım. Genel sınav zamanı şablonu, derleme zamanında bu tür parametresi olması gerekiyorsa bu yana, daha sonra şablona rağmen geçirir bir tür parametresine sahip olamaz, ancak genel tür parametresi çalışma zamanına kadar çözmez. Çalışma zamanında oluşturulabilir rastgele genel türler için derleme zamanında şablonları genişletmek için hiçbir yolu olmadığından bir şablon genel içinde iç içe ya da işe yaramaz.  
+Genel türler temel fark, şablonları ve genel türler birleştiren uygulamalar oluşturmaya yönelik etkilere sahiptir. Örneğin, diğer diller için o şablon genel olarak kullanıma sunmak için genel bir sarmalayıcı oluşturmak istediğiniz bir şablon sınıfı olduğunu varsayalım. Genel sınav zamanı şablonu, derleme zamanında bu tür parametresi olması gerekiyorsa bu yana, daha sonra şablona rağmen geçirir bir tür parametresine sahip olamaz, ancak genel tür parametresi çalışma zamanına kadar çözmez. Çalışma zamanında oluşturulabilir rastgele genel türler için derleme zamanında şablonları genişletmek için hiçbir yolu olmadığından bir şablon genel içinde iç içe ya da işe yaramaz.  
   
 ## <a name="example"></a>Örnek  
   
@@ -94,8 +94,6 @@ int main() {
    MyRef<int>^ mref = gcnew MyRef<int>(11);  
 }  
 ```  
-  
-### <a name="output"></a>Çıkış  
   
 ```Output  
 F  

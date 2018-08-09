@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 25287e642bd368470b207ed237f44ca70773064e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: eee563a52a24d2b78157b640ae6e84217c03af64
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892533"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651284"
 ---
 # <a name="semaphoreoperator-operator"></a>Semaphore::operator= İşleci
-Belirtilen tanıtıcı geçerli semafor nesnesine bir semafor nesneden taşır.  
+Belirtilen tanıtıcıdan taşır bir **semafor** geçerli nesneye **semafor** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,12 +35,12 @@ Semaphore& operator=(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `h`  
- Rvalue başvuru semafor nesnesine.  
+### <a name="parameters"></a>Parametreler  
+ *h*  
+ Rvalue başvuru için bir **semafor** nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli semafor nesneye başvuru.  
+ Geçerli bir başvuru **semafor** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

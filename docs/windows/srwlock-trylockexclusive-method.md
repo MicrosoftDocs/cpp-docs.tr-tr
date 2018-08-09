@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1cc9ee8a63d7403c3de408c924eeab07f1d0efa1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 993031604469aa09608f936f260869a3b53dbc9c
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892663"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652776"
 ---
 # <a name="srwlocktrylockexclusive-method"></a>SRWLock::TryLockExclusive Yöntemi
-Geçerli veya belirtilen SRWLock nesnesi özel kullanım modu SRWLock nesnesinde almaya çalışır. Çağrı başarılı olursa, çağıran iş parçacığı kilit aittir.  
+Almaya çalışır bir **SRWLock** nesne için geçerli veya belirtilen özel modda **SRWLock** nesne. Çağrı başarılı olursa, çağıran iş parçacığını kilidi sahipliğini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,12 +37,12 @@ static SyncLockExclusive TryLockExclusive(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `lock`  
- SRWLock nesnesine işaretçi.  
+### <a name="parameters"></a>Parametreler  
+ *lock*  
+ İşaretçi bir **SRWLock** nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, özel kullanım modu ve çağıran iş parçacığı SRWLock nesnesinde kilit aittir. Aksi halde, bir SRWLock nesne durumu geçersiz.  
+ Başarılı olursa, bir **SRWLock** Dışlayıcı ve çağıran iş parçacığını nesne kilidi sahipliğini alır. Aksi takdirde, bir **SRWLock** nesne durumu geçersiz.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

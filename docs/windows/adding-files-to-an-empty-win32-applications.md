@@ -18,28 +18,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 625b75a81773b45483c8b70c12530acfc9f75994
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e3ed2559457a7fd3231c625b285dea44f81da877
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856898"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646848"
 ---
 # <a name="adding-files-to-an-empty-win32-applications"></a>Boş Win32 Uygulamalarına Dosya Ekleme
 ### <a name="to-add-your-files-to-an-empty-windows-desktop-application"></a>Boş bir Windows Masaüstü uygulama dosyalarınızı eklemek için  
   
-1.  Dizinde **Çözüm Gezgini**.  
+1.  Dizindeki **Çözüm Gezgini**.  
   
-2.  Dizin adını sağ tıklayın, **Ekle** kısayol menüsünden ve ardından **varolan öğeyi**.  
+2.  Dizin adını sağ tıklayın, **Ekle** kısayol menüsünü ve ardından **var olan öğe**.  
   
-3.  İçinde **varolan öğeyi Ekle iletişim**, projenize eklemek istediğiniz dosyaları gidin.  
+3.  İçinde **Varolan Öğe Ekle iletişim**, projenize eklemek istediğiniz dosyaları gidin.  
   
 4.  **Tamam**'ı tıklatın.  
   
- Ne kaynak, üst bilgi veya kaynak dosyalarını projenize olan dosyaları eklemek için Çözüm Gezgini'nde çözüm düğümünü sağ tıklatın ve dosyaları aynı şekilde projeye ekleyin. Projenizdeki diğer dosyalar tutmak için çeşitli klasörü oluşturulur.  
+ Kaynak, üst bilgi veya kaynak dosyaları projenize ne dosyaları eklemek için sağ **çözüm** düğümünde **Çözüm Gezgini** ve dosyaları aynı şekilde projeye ekleyin. A **çeşitli** projenizdeki diğer dosyaları tutmak için klasör oluşturulur.  
   
 > [!NOTE]
->  Projenizi oluşturmadan önce böylece doğru tamamlanmış uygulamanızda dahil bu dosyaları yapı seçeneklerini belirtmek gerekir. Daha fazla bilgi için bkz: [özellik sayfalarıyla proje ayarlarını belirtme](../ide/property-pages-visual-cpp.md) ve [C/C++ programı oluşturma](../build/building-c-cpp-programs.md).  
+>  Projenizi oluşturmadan önce böylece doğru şekilde tamamlanmış uygulamanıza dahil, bu dosyaları derleme seçeneklerini belirtmek gerekir. Daha fazla bilgi için [özellik sayfalarıyla proje ayarlarını belirtme](../ide/property-pages-visual-cpp.md) ve [C/C++ programı oluşturma](../build/building-c-cpp-programs.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Boş Windows masaüstü uygulaması oluşturma](../windows/creating-an-empty-windows-desktop-application.md)   

@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1590d07a7b37e7dd3abf09377a03734299cb124c
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: b49e7cbd30445250bdf0710973ba65e47823b36c
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39460964"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652259"
 ---
 # <a name="asyncbasegetstatus-method"></a>AsyncBase::get_Status Metodu
 Zaman uyumsuz işlemin durumunu gösteren bir değer alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 STDMETHOD(  
    get_Status  
 )(AsyncStatus *status) override;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Durumu*  
- Durum depolanacak bulunduğu konumu. Daha fazla bilgi için bkz: Windows::Foundation::AsyncStatus sabit listesi.  
+ Durum depolanacak bulunduğu konumu. Daha fazla bilgi için `Windows::Foundation::AsyncStatus` sabit listesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.  

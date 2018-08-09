@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2de377bc31898c91bb6db63e160b536428ae8d0e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f842d27f6b0dfc72a48f1bc7fbcb8fcccb0c26e3
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890973"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650410"
 ---
 # <a name="vararg"></a>vararg
-İşlev değişken sayıda bağımsız değişken aldığını belirtir.  
+İşlev, değişken sayıda bağımsız değişken aldığını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [vararg]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Vararg** C++ özniteliğine sahip ile aynı işlevselliği [vararg](http://msdn.microsoft.com/library/windows/desktop/aa367304) MIDL özniteliği.  
+ **Vararg** C++ özniteliği ile aynı işlevlere sahip [vararg](http://msdn.microsoft.com/library/windows/desktop/aa367304) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod bir kullanımını gösterir **vararg**:  
+ Aşağıdaki kod, bir kullanımını göstermektedir. **vararg**:  
   
-```  
+```cpp  
 // cpp_attr_ref_vararg.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -61,9 +59,9 @@ __interface X : public IUnknown
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

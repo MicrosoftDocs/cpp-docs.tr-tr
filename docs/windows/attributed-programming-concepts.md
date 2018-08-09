@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8ba7084ea10cc502eea0e0e0f62709467750a99d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2d04c877fb018d1ee16a3c4643c634d2fd3961b7
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33860196"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651252"
 ---
 # <a name="attributed-programming-concepts"></a>Öznitelikli Programlama Kavramları
-Visual C++ öznitelikleri programlarınıza kullanmanıza yardımcı olacak malzemeler çeşitli içerir. Öznitelikler, Visual C++ ' ta yeni bir özellik COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme kolaylaştırmak için tasarlanmıştır. Kaynak dosyalarınız öznitelikleri eklediğinizde derleyici sağlayıcısı dinamik bağlantı kitaplığı (DLL) kod ekleme veya oluşturulan nesne dosyaları kodda değiştirmek için birlikte çalışır. .İdl dosyaları, arabirimler, tür kitaplıklarını ve diğer COM öğelerin oluşturulmasında yardımcı özniteliği vardır. Tümleşik geliştirme ortamı (IDE), öznitelikleri ve Özellikler penceresini sihirbazları tarafından desteklenir.  
+Visual C++ öznitelikleri programlarınızda kullanmanıza yardımcı olacak çeşitli içerir. Öznitelikler, Visual c++'da yeni bir özellik, COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme sürecini basitleştirmek üzere tasarlanmıştır. Derleyici öznitelikleri, kaynak dosyaları eklediğinizde, sağlayıcı dinamik bağlantı kitaplıklarını (DLL) kod ekleyin veya oluşturulan nesne dosyaları kodu değiştirmek için çalışır. .İdl dosyaları, arabirimler, tür kitaplıklarını ve diğer COM öğeleri oluşturmaya yardımcı öznitelikleri vardır. Tümleşik geliştirme ortamında (IDE), öznitelikler ve Özellikler penceresinde sihirbazlar tarafından desteklenir.  
   
- COM nesneleri yazmak için gereken ayrıntılı kodlama bazıları öznitelikleri ortadan olsa da, bir arka planda gerekir [COM Temelleri](http://msdn.microsoft.com/library/windows/desktop/ms694363) en iyi şekilde kullanmak için.  
+ Öznitelikleri COM nesneleri yazmak için gerekli ayrıntılı kodlama bazılarını ortadan kaldırır, ancak arka planda ihtiyacınız [COM Temelleri](http://msdn.microsoft.com/library/windows/desktop/ms694363) en iyi şekilde kullanmak için.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Özniteliklerin Amacı](../windows/purpose-of-attributes.md)  
  Öznitelikli Programlama genel bir bakış sunar.  
   
  [Özniteliklerin Temel Mekanikleri](../windows/basic-mechanics-of-attributes.md)  
- Öznitelikleri projenizde nasıl çalıştığını açıklar.  
+ Öznitelikleri projenize nasıl çalıştığını açıklar.  
   
  [Öznitelikli Program Derleme](../windows/building-an-attributed-program.md)  
  Projenizde C++ derleyici seçenekleri kullanma hakkında bilgi sağlar.  
@@ -47,11 +47,10 @@ Visual C++ öznitelikleri programlarınıza kullanmanıza yardımcı olacak malz
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Öznitelik başvurusu](../windows/cpp-attributes-reference.md)  
- Tek tek öznitelikleri ve bunların kullanımını açıklayan başvuru konularına bağlantılar sağlar.  
+ Tek tek öznitelikler ve bunların kullanımını açıklayan başvuru konularına bağlantılar sağlar.  
   
- [Eklenen kod hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code)  
+ [Eklenen kodu hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code)  
  Hata ayıklama öznitelikli programları açıklar.  
   
  [__super](../cpp/super.md)ve [__interface](../cpp/interface.md)  
- Öznitelikli Programlama ilgili yeni C++ anahtar sözcükleri bağlantılar.  
-  
+ Öznitelikli Programlama için ilgili yeni C++ anahtar sözcükleri bağlar.  

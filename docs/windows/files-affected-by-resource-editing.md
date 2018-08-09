@@ -16,23 +16,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b165dca13e30e12e1a4fdc85056920b7c10ee586
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: acdf7a2915fe17cba393d14d9d287a89515695fc
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238662"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650589"
 ---
 # <a name="files-affected-by-resource-editing"></a>Kaynak Düzenlemesinden Etkilenen Dosyalar
-Visual Studio ortamında kaynak düzenleme oturumunuz sırasında aşağıdaki tabloda gösterilen dosyalar çalışır.  
+Kaynak düzenleme oturumu sırasında aşağıdaki tabloda gösterilen dosyaları ile Visual Studio ortamında çalışır.  
   
 |Dosya adı|Açıklama|  
 |---------------|-----------------|  
-|Kaynak.h|Geliştirme ortamı tarafından oluşturulan üstbilgi dosyası; simge tanımlarını içerir. (Bu dosya kaynak denetiminde ekleyin.)|  
-|Filename.APS|Geçerli kaynak betik dosyasını ikili sürümü; Hızlı yükleme için kullanılır.<br /><br /> Kaynak düzenleyicileri .rc veya resource.h dosyaları doğrudan okuyamadı. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derler. Bu dosyayı bir derleme adımdır ve yalnızca simgesel verileri depolar. İşlem ile normal bir derleme gibi bilgileri (örneğin, Yorumlar) sembolik değil derleme işlemi sırasında göz ardı edilir. .Aps dosya .rc dosyasıyla out eşitlenmiş alır her .rc dosyasını yeniden oluşturur (kaydettiğinizde, örneğin, Kaynak Düzenleyici .rc dosyası ve resource.h dosyası geçersiz kılar). Kaynaklardaki değişiklikleri .rc dosyasında eklenen kalır ancak .rc dosyanın üzerine sonra açıklamaları her zaman kaybolur. Açıklamaları koruma hakkında daha fazla bilgi için bkz: [derleme zamanında dahil olmak üzere kaynakları](../windows/how-to-include-resources-at-compile-time.md). (Tipik olarak sizin .aps dosya kaynak denetiminde içermemesi gerekir.)|  
-|.rc|Komut dosyası için geçerli projenize kaynaklarında içeren kaynak komut dosyası. Bu dosya, kaydettiğiniz zaman tarafından .aps dosyanın üzerine yazılır. (Bu dosya kaynak denetiminde ekleyin.)|  
-  
-
+|Kaynak.h|Geliştirme ortamı tarafından oluşturulan üst bilgi dosyası Sembol tanımlarını içerir. (Bu dosya kaynak denetimine dahil).|  
+|Filename.APS|Geçerli kaynak betik dosyasını ikili sürümü; Hızlı yükleme için kullanılır.<br /><br /> Kaynak düzenleyicileri .rc veya resource.h dosyaları doğrudan okunmaz. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derlenir. Bu dosya, bir derleme adımdır ve yalnızca sembolik verileri depolar. (Örneğin, açıklamalar) sembolik değil bilgi işlem ile normal bir derleme olarak derleme işlemi sırasında göz ardı edilir. .Rc dosyasıyla .aps dosyası zaman uyumsuz olarak alır her .rc dosyası yeniden oluşturuldu (kaydettiğinizde, örneğin, kaynak düzenleyicisini .rc dosyasını ve resource.h dosyasını geçersiz kılar). Herhangi bir değişiklik kaynaklardaki .rc dosyasına eklenen kalır ancak .rc dosyasının üzerine sonra açıklamalar her zaman kaybolacak. Açıklamaları koruma hakkında daha fazla bilgi için bkz: [derleme zamanında dahil olmak üzere kaynakları](../windows/how-to-include-resources-at-compile-time.md). (Genellikle, .aps dosya kaynak denetimine eklememelisiniz.)|  
+|.rc|Komut dosyası için geçerli projenizdeki kaynakları içeren kaynak komut dosyası. Bu dosya, kaydettiğiniz her .aps dosyası tarafından üzerine yazılır. (Bu dosya kaynak denetimine dahil).|  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

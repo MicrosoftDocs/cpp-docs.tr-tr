@@ -21,17 +21,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eb7da9e08d44435570180859c1614f7817595833
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 40e0a13f9379200ee01e0279f9d069f1d58f3a60
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882582"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649428"
 ---
 # <a name="dialog-editor-tab-toolbox"></a>İletişim Kutusu Düzenleyicisi Sekmesi, Araç Kutusu
-İletişim kutusu Düzenleyicisi sekmesi görünür [araç penceresi](/visualstudio/ide/reference/toolbox) iletişim kutusu Düzenleyicisi'nde çalışırken. Denetimleri, yeni bir iletişim kutusu denetimleri eklemek için iletişim kutusuna oluşturmakta Araç Kutusu'ndan sürükleyin (daha fazla bilgi için bkz: [iletişim kutusuna denetim ekleme](adding-a-control-to-a-dialog-box.md)). Ardından, denetimleri hareket ettirin veya kendi boyutu ve şekli değiştirin.  
+**İletişim kutusu Düzenleyicisi** sekme görünür [araç penceresi](/visualstudio/ide/reference/toolbox) çalışırken **iletişim** Düzenleyici. Yeni, iletişim kutusuna denetimler ekleme, denetimleri sürükleyin **araç kutusu** da iletişim kutusuna oluşturmakta olduğunuz (daha fazla bilgi için bkz. [iletişim kutusuna denetim ekleme](adding-a-control-to-a-dialog-box.md)). Ardından, denetimleri yerleri veya kendi boyutu ve şekli değiştirin.  
   
- Araç kutusunda kullanılabilir standart denetimleri şunlardır:  
+ Standart denetimler bulunan **araç kutusu** şunlardır:  
   
 -   [Düğme denetimi](../mfc/reference/cbutton-class.md)  
   
@@ -45,7 +45,7 @@ ms.locfileid: "33882582"
   
 -   [Liste kutusu denetimi](../mfc/reference/clistbox-class.md)  
   
--   [Radyo düğmesi denetimi](../mfc/reference/styles-used-by-mfc.md#button-styles)  
+-   [Radyo düğmesi denetimini](../mfc/reference/styles-used-by-mfc.md#button-styles)  
   
 -   [Statik metin denetimi](../mfc/reference/cstatic-class.md)  
   
@@ -55,7 +55,7 @@ ms.locfileid: "33882582"
   
 -   [Kaydırma çubuğu denetimi](../mfc/reference/cscrollbar-class.md)  
   
- [Windows ortak denetimleri](../mfc/controls-mfc.md) araç bulunan uygulamanızda artırılmış işlevsellik sağlar. Bunlara aşağıdakiler dahildir:  
+ [Windows ortak denetimleri](../mfc/controls-mfc.md) bulunan **araç kutusu** uygulamanızdaki işlevsellik sağlar. Bunlara aşağıdakiler dahildir:  
   
 -   [Kaydırıcı denetimi](../mfc/slider-control-styles.md)  
   
@@ -75,7 +75,7 @@ ms.locfileid: "33882582"
   
 -   [Tarih Saat Seçici denetimi](../mfc/creating-the-date-and-time-picker-control.md)  
   
--   [Ay takvim denetleme](../mfc/month-calendar-control-examples.md)  
+-   [Ay takvim denetimi](../mfc/month-calendar-control-examples.md)  
   
 -   [IP adresi denetimi](../mfc/reference/cipaddressctrl-class.md)  
   
@@ -83,25 +83,24 @@ ms.locfileid: "33882582"
   
 -   [Özel Denetim](custom-controls-in-the-dialog-editor.md)  
   
- Seçerek iletişim kutusuna özel denetimler ekleyebilirsiniz **özel denetim** araç ve iletişim kutusuna sürükleyerek simgesi. Syslink denetim eklemek için özel bir denetim ekleyin, sonra denetimin değiştirme **sınıfı** özelliğine **Syslink**. Bu yenileme ve Syslink denetim özelliklerini göstermek özellikler neden olur. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz: [CLinkCtrl](../mfc/reference/clinkctrl-class.md).  
+ Seçerek iletişim kutusuna özel denetimleri ekleyebilirsiniz **özel denetim** simgesini **araç kutusu** ve, iletişim kutusuna sürükleyerek. Eklemek için bir **Syslink** denetimi, bir özel denetim eklemek ve ardından denetimin değiştirme **sınıfı** özelliğini **Syslink**. Bu özellikleri yenileyin ve göstermek neden **Syslink** denetim özellikleri. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).  
   
- Ayrıca olabilir [, iletişim kutusuna ActiveX denetimleri ekleme](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).  
+ Ayrıca [, iletişim kutusuna ActiveX denetimleri ekleme](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).  
   
- Araç penceresi daha kolay kullanım için de özelleştirebilirsiniz. Daha fazla bilgi için bkz: [araç kutusunu kullanarak](/visualstudio/ide/using-the-toolbox).  
+ Ayrıca özelleştirebilirsiniz **araç kutusu** penceresi daha kolay kullanım için. Daha fazla bilgi için [araç kutusunu kullanma](/visualstudio/ide/using-the-toolbox).  
 
- MFC ile RichEdit 1.0 denetimini kullanma hakkında daha fazla bilgi için bkz: [MFC ile RichEdit 1.0 denetimini kullanma](../windows/using-the-richedit-1-0-control-with-mfc.md)  
+ Kullanma hakkında daha fazla bilgi için **RichEdit 1.0** MFC ile denetlemek için bkz: [MFC ile RichEdit 1.0 denetimini kullanma](../windows/using-the-richedit-1-0-control-with-mfc.md)  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [denetimleri](../mfc/controls-mfc.md)   
+ [Denetimleri](../mfc/controls-mfc.md)   
  [Denetim sınıfları](../mfc/control-classes.md)   
  [İletişim kutusu sınıfları](../mfc/dialog-box-classes.md)   
  [Kaydırma çubuğu stilleri](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)   
  [Zengin düzenleme denetimine örnekler](../mfc/rich-edit-control-examples.md)   
  [İletişim kutusu denetimleri için olay işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)
-

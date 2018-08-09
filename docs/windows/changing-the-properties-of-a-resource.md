@@ -16,32 +16,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 237eea6a468e983072ed300ff2a13f1cbc6ba363
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5a0b58e5adf95de44bbecb51cf56dbbfeaccacad
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861798"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648931"
 ---
 # <a name="changing-the-properties-of-a-resource"></a>Kaynağın Özelliklerini Değiştirme
 ### <a name="to-edit-the-properties-of-a-resource"></a>Kaynağın özelliklerini düzenlemek için  
   
-1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), düzenlemek ve seçmek istediğiniz kaynak sağ **özellikleri** kısayol menüsünden.  
+1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), seçin ve düzenlemek istediğiniz kaynağa sağ **özellikleri** kısayol menüsünden.  
   
-     **Not** projeniz zaten bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+     > [!NOTE] 
+     > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window), kaynağınızın özelliklerini değiştirin.  
+2.  İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), kaynak özelliklerini değiştirin.  
   
-### <a name="to-undo-a-change-youve-made-to-the-properties-of-a-resource"></a>Kaynağın özelliklerini yapmış olduğunuz bir değişikliği geri almak için  
+### <a name="to-undo-a-change-youve-made-to-the-properties-of-a-resource"></a>Bir kaynak özelliklerine yaptığınız bir değişikliği geri almak için  
   
-1.  Kaynak Görünümü'nde, kaynak odaklı emin olun.  
+1.  Kaynak odak olduğundan emin olun **kaynak görünümü**.  
   
 2.  Seçin **geri** gelen **Düzenle** menüsü.  
   
-
-  
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

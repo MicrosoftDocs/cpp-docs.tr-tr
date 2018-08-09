@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0681a5e0c88f44d5616724f5564660ecb05fbdc3
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: b3ad3ef6acb06eaef04197dc4ecffe27c2d7656d
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570502"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650221"
 ---
 # <a name="how-to-change-the-language-or-condition-of-a-resource-while-copying"></a>Nasıl Yapılır: Kopyalarken Kaynağın Dilini veya Koşulunu Değiştirme
 Bir kaynak olarak kopyalarken, kendi dil özelliği veya koşul özelliğini veya her ikisi de değiştirebilirsiniz.  
@@ -34,7 +34,7 @@ Bir kaynak olarak kopyalarken, kendi dil özelliği veya koşul özelliğini vey
   
  Dil ve kaynak durumunu çalışma alanı penceresini kaynak adından sonra parantez içinde gösterilmektedir. Bu örnekte, dil Fince IDD_AboutBox adlı kaynağın kullanıyor ve XX33 kendi durumdur.  
   
-```  
+```cpp  
 IDD_AboutBox (Finnish - XX33)  
 ```  
   
@@ -51,7 +51,6 @@ IDD_AboutBox (Finnish - XX33)
     -   İçinde **koşul** koşul yazın.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

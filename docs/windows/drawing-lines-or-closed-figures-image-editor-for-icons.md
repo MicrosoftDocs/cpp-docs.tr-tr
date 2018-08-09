@@ -19,48 +19,47 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6e2defbde7963c6e58cdfe3f4a25ea550ad88e5f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1ca853e5dd44cd91edbae99cc51f88a41bdd4130
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882781"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648382"
 ---
 # <a name="drawing-lines-or-closed-figures-image-editor-for-icons"></a>Çizgi veya Kapalı Şekiller Çizme (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi araçlarını satırlar çizme ve kapalı şekiller tüm aynı şekilde çalışır: bir noktada ekleme noktasını yerleştirin ve diğerine sürükleyin. Satırlar için bu noktalarını noktalarıdır. Kapalı şekiller için bu, Şekil sınırlayıcı dikdörtgen ters köşelerinde noktalarıdır.  
+Resim Düzenleyicisi araçları için satırlar çizme ve tüm kapalı şekiller aynı şekilde çalışır: bir noktada ekleme noktasını yerleştirin ve diğerine sürükleyin. Satırlar için bu uç noktalardır. Kapalı şekiller için bu, Şekil sınırlayıcı bir dikdörtgen zıt köşe noktalarıdır.  
   
- Satırları geçerli fırça seçim tarafından belirlenen bir genişliği çizilir ve Çerçeveli rakamları geçerli genişliği seçim tarafından belirlenen bir genişliği çizilir. Farenin sağ düğmesiyle basarsanız satırları ve Çerçeveli hem doldurulmuş, tüm şekil, sol fare düğmesine basın, geçerli bir ön plan rengini veya geçerli arka plan rengi çizilir.  
+ Geçerli fırça seçim tarafından belirlenen bir genişliği çizgileri çizilir ve Çerçeveli rakamları genişliği seçilen tarafından belirlenen bir genişliği çizilir. Sağ fare düğmesine basarsanız satırları ve Çerçeveli hem doludur ve tüm şekilleri, farenin sol düğmesine basarsanız geçerli ön plan rengini veya arka plan rengi geçerli çizilir.  
   
 ### <a name="to-draw-a-line"></a>Bir çizgi çizmek için  
   
-1.  Üzerinde [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md) (veya **görüntü** menüsünde **Araçları** komutu), tıklatın **satır** aracı.  
+1.  Üzerinde [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md) (veya **görüntü** menüsünde **Araçları** komut), tıklayın **satırı** aracı.  
   
 2.  Gerekirse, renk ve fırça seçin:  
   
-    -   İçinde [renk paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengini seçmek için sol fare düğmesini veya bir arka plan rengi seçmek için fareyi sağ tıklatın.  
+    -   İçinde [renkler paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengi seçmesini farenin sol düğmesine veya arka plan rengi seçmesini sağ fare düğmesine tıklayın.  
   
-    -   İçinde [seçenekleri Seçici](../windows/toolbar-image-editor-for-icons.md), kullanmak istediğiniz fırça temsil eden bir şekli tıklatın.  
+    -   İçinde [seçenekleri Seçici](../windows/toolbar-image-editor-for-icons.md), kullanmak istediğiniz fırça temsil eden bir şekle tıklayın.  
   
-3.  İşaretçinin satırın başlangıç noktasına yerleştirin.  
+3.  İşaretçiyi çizginin başlangıç noktasına yerleştirin.  
   
-4.  Satırın uç noktasına sürükleyin.  
+4.  Çizginin bitiş noktasına sürükleyin.  
   
-### <a name="to-draw-a-closed-figure"></a>Kapalı bir şekil çizmek için  
+### <a name="to-draw-a-closed-figure"></a>Kapalı şekle çizmek için  
   
-1.  Üzerinde **görüntü Düzenleyicisi** araç çubuğu (veya **görüntü** menüsünde **Araçları** komutu), tıklatın bir **kapalı şekil çizme** aracı.  
+1.  Üzerinde **görüntü Düzenleyicisi** araç çubuğu (veya **görüntü** menüsünde **Araçları** komut),'a tıklayın bir **kapalı şekil çizme** aracı.  
   
-     **Kapalı şekil çizme** araçları kendi ilgili düğmeleri belirtildiği gibi şekiller oluşturma.  
+     **Kapalı şekil çizme** araçları ilgili kendi düğmelerini belirtildiği gibi şekiller oluşturun.  
   
-2.  Gerekirse, renk ve çizgi genişliğini seçin.  
+2.  Gerekirse, renk ve çizgi genişliği seçin.  
   
-3.  İşaretçinin şekil çizme istediğiniz dikdörtgen bir köşesine taşıyın.  
+3.  İşaretçiyi bir şekil Çiz istediğiniz Dikdörtgen alanı köşeye taşıyın.  
   
-4.  İşaretçi çapraz karşı köşeye sürükleyin.  
+4.  Çapraz zıt köşe için işaretçiyi sürükleyin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
@@ -68,4 +67,3 @@ Görüntü Düzenleyicisi araçlarını satırlar çizme ve kapalı şekiller t�
  [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)   
  [Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)   
  [Renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md)
-

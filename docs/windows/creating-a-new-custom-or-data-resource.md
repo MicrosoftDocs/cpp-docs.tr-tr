@@ -19,42 +19,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c82e41544bde9cdd945e23f4ea5884e4e76ae22b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 82d68ec7c9580cf1b95d4c678c491c4e33d12e10
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871838"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650852"
 ---
 # <a name="creating-a-new-custom-or-data-resource"></a>Yeni Özel veya Veri Kaynağı Oluşturma
-Yeni bir özel veya veri kaynağı kaynak normal kaynak komut dosyası (.rc) dosya sözdizimi kullanılarak ayrı bir dosyada ve bu dosyayı dahil Çözüm Gezgini'nde projenize sağ tıklatıp koyarak oluşturabileceğiniz **kaynak içerir**  kısayol menüsünde.  
+Kaynak normal kaynak betiği (.rc) dosyası sözdizimi kullanılarak ayrı bir dosyada ve bu dosyayı içeren projenize sağ tıklayarak girerek yeni bir özel veya veri kaynağı oluşturabilirsiniz **Çözüm Gezgini** tıklayıp **Kaynak içeren** kısayol menüsünde.  
   
 ### <a name="to-create-a-new-custom-or-data-resource"></a>Yeni bir özel veya veri kaynağı oluşturmak için  
   
-1. [.Rc dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md) özel veya veri kaynağı içeriyor.  
+1. [Bir .rc dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md) , özel veya veri kaynağı içeriyor.  
   
-     Null ile sonlandırılmış tırnak içine alınmış dizeler veya ondalık, onaltılık veya sekizlik biçiminde tamsayı olarak .rc dosyasında özel veri türü.  
+     Null ile sonlandırılmış tırnak içine alınmış dizeler veya ondalık, onaltılık veya sekizlik biçimde tamsayılar olarak bir .rc dosyasında özel veri yazabilirsiniz.  
   
-2.  İçinde **Çözüm Gezgini**, projenizin .rc dosyasını sağ tıklatın ve ardından **kaynağını içeren** kısayol menüsünde.  
+2.  İçinde **Çözüm Gezgini**, projenizin .rc dosyasını sağ tıklatın ve ardından **kaynak içerikleri** kısayol menüsünde.  
   
-3.  İçinde **derleme zamanı yönergeleri** kutusuna bir **#include** özel kaynağınızın içeren dosyanın adını veren ifade. Örneğin:  
+3.  İçinde **derleme zamanı yönergeleri** kutusuna bir `#include` özel kaynağınızı içeren dosyanın adını verir deyimi. Örneğin:  
   
- ```  
+ ```cpp  
     #include mydata.rc  
  ```  
   
-     Sözdizimi ve ne tür, yazım doğru olduğundan emin olun. İçeriğini **derleme zamanı yönergeleri** kutusuna yazdığınız tam olarak kaynak betik dosyasına eklenir.  
+     Ne tür, yazım ve söz dizimi doğru olduğundan emin olun. İçeriğini **derleme zamanı yönergeleri** kutusunu tam olarak yazdığınız şekilde kaynak betik dosyasına eklenir.  
   
-4.  Tıklatın **Tamam** yaptığınız değişiklikleri kaydetmek için.  
+4.  Tıklayın **Tamam** yaptığınız değişiklikleri kaydetmek için.  
   
- Özel bir kaynak oluşturmak için başka bir harici dosya özel kaynak olarak almak için yoludur. Daha fazla bilgi için bkz: [alma ve verme kaynakları](../windows/how-to-import-and-export-resources.md).  
+ Özel bir kaynak oluşturmak için başka bir özel kaynak olarak bir dış dosya aktarmak için yoludur. Daha fazla bilgi için [alma ve verme kaynakları](../windows/how-to-import-and-export-resources.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili Düzenleyicisi](binary-editor.md)
-

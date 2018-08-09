@@ -1,5 +1,5 @@
 ---
-title: Küçültme veya uzatma (simgeler için görüntü Düzenleyicisi) görüntünün tümünü | Microsoft Docs
+title: Tümünü küçültme veya uzatma (simgeler için görüntü Düzenleyicisi) görüntünün | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 41019945e6ad585b20cba81ea611d575b11e02a4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 22d504966fbc162dfe695156a98c0dec86155a9f
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889924"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647004"
 ---
 # <a name="shrinking-or-stretching-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Küçültme veya Uzatma (Simgeler İçin Görüntü Düzenleyicisi)
-### <a name="to-shrink-or-stretch-an-entire-image"></a>Daraltma veya görüntünün Tümünü Genişlet  
+### <a name="to-shrink-or-stretch-an-entire-image"></a>Görüntünün Tümünü Genişlet veya Daralt  
   
-1.  Görüntünün tümünü seçin.  
+1.  Görüntünün tamamını seçin.  
   
-     Görüntünün bir parçasını seçilmiş ve görüntünün tamamını seçmek istiyorsanız, resimdeki geçerli seçimin kenarlık dışında herhangi bir yere tıklayın.  
+     Görüntünün bir parçasını seçili ve görüntünün tamamını seçmek istediğiniz görüntüye geçerli seçim kenarlığı dışında herhangi bir yere tıklayın.  
   
-2.  Basılı **SHIFT** anahtarı ve istenen boyuta görüntüdür kadar boyutlandırma tutamacını sürükleyin.  
+2.  Basılı **Shift** anahtar ve görüntünün istediğiniz boyuta kadar boyutlandırma tutamacı sürükleyin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)
-

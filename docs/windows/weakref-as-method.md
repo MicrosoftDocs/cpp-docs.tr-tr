@@ -17,20 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70e694b4c86194402f48d335aac353e48c3de79a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 938c7c796bf88d4ea1e49f1f59d274b5017aa7de
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890709"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649308"
 ---
 # <a name="weakrefas-method"></a>WeakRef::As Yöntemi
-Belirtilen ComPtr işaretçi parametresini belirtilen arabirimi temsil edecek şekilde ayarlar.  
+Belirtilen ayarlar `ComPtr` belirtilen arabirim temsil etmek için işaretçi parametresi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* ptr  
@@ -42,27 +41,27 @@ HRESULT As(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `U`  
- Bir arabirim kimliği  
+### <a name="parameters"></a>Parametreler  
+ *U*  
+ Bir arabirim kimliği.  
   
- `ptr`  
- Bu işlem tamamlandığında, parametre temsil eden bir nesne `U`.  
+ *ptr*  
+ Bu işlem tamamlandığında, parametre temsil eden bir nesne *U*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
--   Bu işlem başarılı olursa S_OK; Aksi takdirde, nedenini belirten bir HRESULT işlemi başarısız oldu, ve `ptr` ayarlanır `nullptr`.  
+-   Bu işlem başarılı olursa S_OK; Aksi takdirde, nedenini belirten bir HRESULT, işlem başarısız oldu, ve *ptr* ayarlanır **nullptr**.  
   
--   Bu işlem başarılı olur, ancak geçerli WeakRef nesne zaten yayımlandı S_OK. Parametre `ptr` ayarlanır `nullptr`.  
+-   Geçerli bu işlem başarılı olursa S_OK **WeakRef** nesne zaten yayımlandı. Parametre *ptr* ayarlanır **nullptr**.  
   
--   Bu işlem başarılı olur, ancak geçerli WeakRef nesne parametresinden türetilmemiş S_OK `U`. Parametre `ptr` ayarlanır `nullptr`.  
+-   Geçerli bu işlem başarılı olursa S_OK **WeakRef** nesne parametresinden türetilmemiş *U*. Parametre *ptr* ayarlanır **nullptr**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir hata durumunda yayılan parametresi `U` IWeakReference ya da Iınspectable türetilmemiş.  
+ Bir hata varsa yayıldığını parametresi *U* olduğu `IWeakReference`, veya türünden türetilmediğinden `IInspectable`.  
   
- İlk şablon kodunuzda kullanması gereken biçimidir. C++ dil özellikleri gibi destekleyen bir iç, yardımcı uzmanlık ikinci şablonudur [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü yazın.  
+ İlk şablon kodunuzda kullanması gereken biçimidir. İkinci şablonu olduğu gibi C++ dil özellikleri destekleyen bir iç, Yardımcısı özelleştirmesi [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü yazın.  
   
- Windows 10 SDK'sı başlayarak, bu yöntem WeakRef örneği ayarlanmamışsa `nullptr` zayıf başvuru edinilemedi, bu nedenle, kaçının için WeakRef denetler ve hata denetimi kodu `nullptr`. Bunun yerine, denetleme `ptr` için `nullptr`.  
+ Windows 10 SDK'SINDAN başlayarak, bu yöntem ayarlı değil **WeakRef** için örnek **nullptr** zayıf başvuru elde edilemedi, bu nedenle, kaçının için WeakRef denetler ve hata denetimi kod **nullptr**. Bunun yerine, kontrol *ptr* için **nullptr**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

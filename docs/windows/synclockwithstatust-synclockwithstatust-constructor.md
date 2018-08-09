@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8f665866a43e45d6526aa33f17c05eacebdd84aa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 21ce2054cabf257594cb3fa376236b9a1e504a59
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891356"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647761"
 ---
 # <a name="synclockwithstatustsynclockwithstatust-constructor"></a>SyncLockWithStatusT::SyncLockWithStatusT Oluşturucusu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -40,20 +40,20 @@ explicit SyncLockWithStatusT(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `other`  
- Bir rvalue-başka bir SyncLockWithStatusT nesnesine başvuru.  
+### <a name="parameters"></a>Parametreler  
+ *Diğer*  
+ Diğer bir rvalue başvurusuna **SyncLockWithStatusT** nesne.  
   
- `sync`  
- SyncLockWithStatusT başka bir nesneye başvuru.  
+ *Eşitleme*  
+ Başka bir başvuru **SyncLockWithStatusT** nesne.  
   
- `status`  
- Değeri [status_](../windows/synclockwithstatust-status-data-member.md) veri üyesi `other` parametresi veya `sync` parametresi.  
+ *Durumu*  
+ Değerini [status_](../windows/synclockwithstatust-status-data-member.md) veri üyesi *diğer* parametresi veya *eşitleme* parametresi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- SyncLockWithStatusT sınıfı yeni bir örneğini başlatır.  
+ Yeni bir örneğini başlatır **SyncLockWithStatusT** sınıfı.  
   
- İlk Oluşturucu parametresi tarafından belirtilen başka bir SyncLockWithStatusT geçerli SyncLockWithStatusT nesnesinden başlatır `other`ve diğer SyncLockWithStatusT Nesne geçersiz kılar. İkinci oluşturucu olan `protected`ve geçersiz bir durum için geçerli SyncLockWithStatusT nesnesini başlatır.  
+ İlk Oluşturucu geçerli başlatır **SyncLockWithStatusT** başka bir nesne **SyncLockWithStatusT** parametresi tarafından belirtilen *diğer*ve ardından diğer geçersiz kılar **SyncLockWithStatusT** nesne. İkinci oluşturucu **korumalı**ve geçerli başlatır **SyncLockWithStatusT** nesnesi için geçersiz bir durumda.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

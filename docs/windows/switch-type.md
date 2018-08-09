@@ -17,36 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1870e1ee623d8495e9f19dd8f32ea9382070bc14
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f79aa2683948d54f900c92304cdff29647819a74
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890190"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650602"
 ---
 # <a name="switchtype"></a>switch_type
-Birleşim discriminant kullanılan değişken türünü tanımlar.  
+Birleşim discriminant kullanılan değişkenin türünü tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [switch_type(  
 type  
 }]  
-  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `type`  
- Anahtar türü tamsayı, karakter, Boole veya numaralandırma türü olabilir.  
+### <a name="parameters"></a>Parametreler  
+ *Türü*  
+ Anahtar türü, bir tamsayı, karakter, Boole veya numaralandırma türü olabilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Switch_type** C++ özniteliğine sahip ile aynı işlevselliği [switch_type](http://msdn.microsoft.com/library/windows/desktop/aa367276) MIDL özniteliği.  
+ **Switch_type** C++ özniteliği ile aynı işlevlere sahip [switch_type](http://msdn.microsoft.com/library/windows/desktop/aa367276) MIDL özniteliği.  
   
- C++ öznitelikleri desteklemez [birleşimler kapsüllenmiş](http://msdn.microsoft.com/library/windows/desktop/aa366811). [Nonencapsulated birleşimler](http://msdn.microsoft.com/library/windows/desktop/aa367119) yalnızca şu biçimde desteklenir:  
+ C++ öznitelikleri desteklemiyor [birleşimler kapsüllenmiş](http://msdn.microsoft.com/library/windows/desktop/aa366811). [Nonencapsulated birleşimler](http://msdn.microsoft.com/library/windows/desktop/aa367119) yalnızca şu biçimde desteklenir:  
   
-```  
+```cpp  
 // cpp_attr_ref_switch_type.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -64,7 +62,7 @@ struct SizedValue2 {
 ```  
   
 ## <a name="example"></a>Örnek  
- Bkz: [durum](../windows/case-cpp.md) bir örnek kullanımı, örneğin **switch_type**.  
+ Bkz: [çalışması](../windows/case-cpp.md) örnek kullanımını örneğin **switch_type**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -72,9 +70,9 @@ struct SizedValue2 {
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`typedef`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**tür tanımı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

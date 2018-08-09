@@ -1,5 +1,5 @@
 ---
-title: Bir imleç ayarı&#39;s etkin nokta (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+title: Bir imleç ayarlama&#39;s etkin nokta (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,34 +18,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 527cdeabb6f45601641fcc64d3b82bb36652e002
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5d4c00ef825274fc9db6c71522cdb789e07c3b05
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889413"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648671"
 ---
-# <a name="setting-a-cursor39s-hot-spot-image-editor-for-icons"></a>Bir imleç ayarı&#39;s etkin nokta (simgeler için görüntü Düzenleyicisi)
-Etkin nokta, bir [imleç](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md) noktasıdır imlecin konumu izlemek için Windows başvurduğu için. Varsayılan olarak etkin nokta imleci (koordinatları 0,0) sol üst köşe olarak ayarlanır. Etkin nokta özelliğinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window) etkin nokta koordinatları gösterir.  
+# <a name="setting-a-cursor39s-hot-spot-image-editor-for-icons"></a>Bir imleç ayarlama&#39;s etkin nokta (simgeler için görüntü Düzenleyicisi)
+Etkin nokta, bir [imleç](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md) noktasıdır imlecinizin konumunu izlemek için Windows başvurduğu için. Varsayılan olarak etkin nokta imleci (koordinatları 0,0) sol üst köşesinde ayarlanır. Etkin nokta özelliğinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window) etkin nokta koordinatları gösterir.  
   
-### <a name="to-set-a-cursors-hot-spot"></a>İmlecin etkin noktasını ayarlamak için  
+### <a name="to-set-a-cursors-hot-spot"></a>İmlecin etkin noktasını ayarlama  
   
-1.  Üzerinde [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md), tıklatın **ayarlamak etkin nokta** aracı.  
+1.  Üzerinde [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md), tıklayın **etkin nokta Ayarla** aracı.  
   
-2.  İmlecin etkin noktasını atamak istediğiniz piksel'ı tıklatın.  
+2.  İmlecin etkin noktasını belirtmek istediğiniz piksel tıklayın.  
   
-     **Etkin nokta** özelliğinde **özellikleri** penceresi, yeni koordinatlar görüntüler.  
+     **Etkin nokta** özelliğinde **özellikleri** penceresi yeni koordinatları görüntüler.  
   
     > [!TIP]
-    >  İmlecinizi bir araç çubuğu düğmesi geldiğinizde araç ipuçları görüntülenir. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
+    >  İmlecinizi bir araç çubuğu düğmenin üzerine geldiğinizde araç ipuçlarında görünür. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
   
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
-

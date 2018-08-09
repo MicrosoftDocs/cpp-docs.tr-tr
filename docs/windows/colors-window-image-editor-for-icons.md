@@ -26,12 +26,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0ee53735c84d586aa41cd4a1c5d3e8a70051c88e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 23befed8800027553f69032a5f5cc32816396951
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39460977"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648216"
 ---
 # <a name="colors-window-image-editor-for-icons"></a>Renkler Penceresi (Simgeler İçin Görüntü Düzenleyicisi)
 **Renkleri** penceresinde iki bölümü vardır:  
@@ -46,7 +46,7 @@ Renkler Penceresi
 > [!NOTE]
 >  **Ekran rengi** ve **ters renk** araçlardır yalnızca simgeler ve İmleçler için kullanılabilir.  
   
- Renkler penceresi ile kullanabileceğiniz [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md).  
+ Kullanabileceğiniz **renkleri** penceresiyle [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  

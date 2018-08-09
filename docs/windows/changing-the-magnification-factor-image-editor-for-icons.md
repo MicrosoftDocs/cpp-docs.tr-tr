@@ -1,5 +1,5 @@
 ---
-title: Büyütme katsayısını (simgeler için görüntü Düzenleyicisi) değiştirme | Microsoft Docs
+title: (Simgeler için görüntü Düzenleyicisi) katsayısını değiştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,32 +17,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7cb78eb93a5817656b6d576a7ee5f88b7aa9e9c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 310e26d4814b621cf9c3338857dfc9f97cd42b96
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857005"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650169"
 ---
 # <a name="changing-the-magnification-factor-image-editor-for-icons"></a>Büyütme Katsayısını Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi, varsayılan olarak, gerçek boyut ve görünüm 6 kereye gerçek boyutta sağ bölmede, soldaki bölmede görünüm görüntüler. (Çalışma alanının alttaki durum çubuğunda görülen) büyütme katsayısını görüntünün gerçek boyutunu görüntülenen boyut arasındaki orandır. Varsayılan faktörü 6 ve aralık 1'den 10'a.  
+Varsayılan olarak, gerçek boyut ve sağ taraftaki bölmede 6 kez gerçek boyutta görünümü sol bölmesinde görünümü Resim Düzenleyicisi'ni görüntüler. Büyütme katsayısını (çalışma alanı altındaki durum çubuğunda görülen) resmi gerçek boyutuna ve görüntülenen boyut arasındaki oran ' dir. Varsayılan faktörü 6 ve aralık 1 ile 10.  
   
 ### <a name="to-change-the-magnification-factor"></a>Büyütme katsayısını değiştirmek için  
   
-1.  Seçin **görüntü Düzenleyicisi** büyütme katsayısını değiştirmek istediğiniz bölmesi.  
+1.  Seçin **Resim Düzenleyicisi** Büyütme katsayısı değiştirmek istediğiniz bölmesi.  
   
-2.  Üzerinde [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md), sağındaki oku [Magnıfy aracı](../windows/toolbar-image-editor-for-icons.md) ve büyütme katsayısını menüden seçin: **1 X**, **2 X**, **6 X**, veya **8 X**.  
+2.  Üzerinde [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md), sağındaki oku [Büyüteç aracına](../windows/toolbar-image-editor-for-icons.md) katsayısını menüden seçin: **1 X**, **2 X**, **6 X**, veya **8 X**.  
   
     > [!NOTE]
-    >  Büyütme katsayısını listelenenler dışında seçmek için **Magnıfy** aracı, kısayol tuşlarını kullanın.  
+    >  Katsayısını listelenenler dışında seçilecek **Magnıfy** aracı, kısayol tuşlarını kullanın.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Pencere bölmeleri](../windows/window-panes-image-editor-for-icons.md)
-

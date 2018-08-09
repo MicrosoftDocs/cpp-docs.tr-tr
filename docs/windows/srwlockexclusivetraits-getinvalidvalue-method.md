@@ -1,5 +1,5 @@
 ---
-title: Srwlockexclusivetraits::getınvalidvalue yöntemi | Microsoft Docs
+title: Srwlockexclusivetraits::getınvalidvalue metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 599fb1d4b204e170a01f01c60e03959a30075c1f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 963c3cbc09a9ed7f56d8ec25c35af0868eeae326
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888961"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649240"
 ---
 # <a name="srwlockexclusivetraitsgetinvalidvalue-method"></a>SRWLockExclusiveTraits::GetInvalidValue Metodu
-Her zaman geçersiz SRWLockExclusiveTraits nesneyi alır.  
+Alır bir **SRWLockExclusiveTraits** her zaman geçersiz bir nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,7 +34,7 @@ inline static Type GetInvalidValue();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Boş bir SRWLockExclusiveTraits nesne.  
+ Boş bir **SRWLockExclusiveTraits** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

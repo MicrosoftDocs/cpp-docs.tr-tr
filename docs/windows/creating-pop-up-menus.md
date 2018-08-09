@@ -20,37 +20,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 218ed28a8b44100beead46ab13e04ad07d86c7e5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4e58951fe214efda0002f3ea864e67d0ea35423c
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871503"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648080"
 ---
 # <a name="creating-pop-up-menus"></a>Açılır Menüler Oluşturma
-[Açılır menüler](../mfc/menus-mfc.md) görüntü sık kullanılan komutlar. Bağlama duyarlı işaretçinin konuma olabilirler. Açılır menüler uygulamanızda kullanarak menü oluşturma ve uygulama kodu bağlanmayı gerektirir.  
+[Açılır menüler](../mfc/menus-mfc.md) görüntü sık kullanılan komutları. Bağlama duyarlı işaretçisi konumunu olabilirler. Uygulamanıza açılır menüleri kullanarak menü oluşturmak ve ardından uygulama koduna bağlanmayı gerektirir.  
   
- Menü kaynağı oluşturduktan sonra uygulama kodunuz menüsü kaynak yüklemek ve kullanmak gerek duyduğu [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) menüsünün görünmesini neden olacak. Kullanıcı açılır menüyü dışında tıklayarak kapatıldığında veya bir komut tıklamıştır sonra bu işlevi döndürür. Kullanıcı bir komut seçerse, tanıtıcı geçirildi penceresine komutu ileti gönderilir.  
+ Menü kaynağı oluşturulduktan sonra uygulama kodunuz menü kaynağı yüklemek ve kullanmak gereken [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) menüsünün görünmesi neden olacak. Kullanıcı açılır menüyü dışında tıklayarak kapatıldı veya komutu tıkladıktan sonra bu işlevi döndürür. Kullanıcı komut seçerse, tanıtıcı geçirildi penceresine komut ileti gönderilir.  
   
 ### <a name="to-create-a-pop-up-menu"></a>Açılır menü oluşturmak için  
   
-1.  [Menü oluşturmak](../windows/creating-a-menu.md) boş bir başlıkla (sağlamıyorsa bir **resim yazısı**).  
+1.  [Menü oluşturmak](../windows/creating-a-menu.md) boş bir başlığa sahip (sağlamayan bir **açıklamalı alt yazı**).  
   
-2.  [Menü komutu için yeni menü ekleme](../windows/adding-commands-to-a-menu.md). (Geçici resim yazısı buraya türü yazan) ilk menü komutu için boş menü başlığı altına taşıyın. Tür a **resim yazısı** ve diğer bilgileri.  
+2.  [Yeni menüsüne bir menü komutu eklemek](../windows/adding-commands-to-a-menu.md). Boş Menü başlığının altında ilk menü Komut çubuğuna Taşı (geçici açıklamalı alt yazı yazan `Type Here`). Tür a **açıklamalı alt yazı** ve diğer bilgiler.  
   
-     Açılır menüde diğer menü komutları için bu işlemi yineleyin.  
+     Diğer bir menü komutları açılır menüde için bu işlemi yineleyin.  
   
 3.  Menü kaynağı kaydedin.  
   
     > [!TIP]
-    >  Açılır menüyü görüntüleme hakkında daha fazla bilgi için bkz: [menü açılır menü olarak görüntüleme](../windows/viewing-a-menu-as-a-pop-up-menu.md).  
+    >  Açılır menü görüntüleme ile ilgili daha fazla bilgi için bkz: [menüyü açılır menü olarak görüntüleme](../windows/viewing-a-menu-as-a-pop-up-menu.md).  
   
-
-  
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulamanıza açılır menü bağlanma](../windows/connecting-a-pop-up-menu-to-your-application.md)   
+ [Uygulamanıza açılır menü bağlantısı](../windows/connecting-a-pop-up-menu-to-your-application.md)   
  [Menü Düzenleyicisi](../windows/menu-editor.md)

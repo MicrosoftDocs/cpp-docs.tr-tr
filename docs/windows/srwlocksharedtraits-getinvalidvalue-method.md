@@ -1,5 +1,5 @@
 ---
-title: Srwlocksharedtraits::getınvalidvalue yöntemi | Microsoft Docs
+title: Srwlocksharedtraits::getınvalidvalue metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e8738d537aaa7cf4c257b95d1093e28441e828c9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7ab88d2853f62932177858adb6bea3c991059f6f
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890782"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650237"
 ---
 # <a name="srwlocksharedtraitsgetinvalidvalue-method"></a>SRWLockSharedTraits::GetInvalidValue Metodu
-Her zaman geçersiz SRWLockSharedTraits nesneyi alır.  
+Alır bir **SRWLockSharedTraits** her zaman geçersiz bir nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,7 +34,7 @@ inline static Type GetInvalidValue();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- SRWLockSharedTraits nesnesi için bir tanıtıcı.  
+ İçin bir tanıtıcı bir **SRWLockSharedTraits** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

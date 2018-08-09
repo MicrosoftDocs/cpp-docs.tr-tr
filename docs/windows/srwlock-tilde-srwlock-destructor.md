@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6ed3bd38024d279d8f478a6ff4525122e66c47f2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f1a1f8a2b9e7a8f63acdb9ec156282f09df75a01
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889085"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647618"
 ---
 # <a name="srwlocksrwlock-destructor"></a>SRWLock::~SRWLock Yok Edicisi
-SRWLock sınıfı örneği deinitializes.  
+Örneği başlatılmasını geri alır **SRWLock** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

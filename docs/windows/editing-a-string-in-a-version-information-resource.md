@@ -1,5 +1,5 @@
 ---
-title: Sürüm bilgileri kaynağında dizesinde düzenleme | Microsoft Docs
+title: Sürüm bilgileri kaynağında dize düzenleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,33 +18,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 80795f912ab41809b19e77bd33f56243541d4de1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 306359c1479c8c67d6edc08414f601a4b560496e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882890"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648109"
 ---
 # <a name="editing-a-string-in-a-version-information-resource"></a>Sürüm Bilgileri Kaynağında Dize Düzenleme
-### <a name="to-edit-a-string-in-a-version-information-resource"></a>Sürüm bilgileri kaynağında dizesinde düzenlemek için  
+### <a name="to-edit-a-string-in-a-version-information-resource"></a>Sürüm bilgileri kaynağında dize düzenleme  
   
-1.  Öğeyi kez düzenlemeye başlamak için daha sonra tekrar seçmek için tıklatın. Sürüm bilgileri tablosundaki doğrudan ya da buna değişiklik [Özellikler penceresini](/visualstudio/ide/reference/properties-window). Yaptığınız değişiklikler, her iki yerde de yansıtılır.  
+1.  Öğe bir kez düzenlemeye başlamak için daha sonra tekrar seçmek için tıklayın. Doğrudan bir değişiklik **sürüm bilgisi** tablo veya [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Her iki yerde de yaptığınız değişiklikler yansıtılır.  
   
-     **Not** düzenlerken **FILEFLAGS** anahtar sürüm bilgileri Düzenleyicisi, siz ayarlanamaz fark edeceksiniz **hata ayıklama**, **özel yapı**, veya **Özel yapı** .rc dosyaları (Özellikler penceresinde) özellikleri:  
+     > [!NOTE] 
+     > Düzenleme yaparken `FILEFLAGS` anahtarını **sürüm bilgisi** Düzenleyicisi seçeneğinde, ayarlayamıyor **hata ayıklama**, **özel derleme**, veya **özel Derleme** özellikleri (içinde **özellikleri** pencere) .rc dosyası için:  
   
-    -   Sürüm bilgileri Düzenleyicisi kümeleri **hata ayıklama** #ifdef kaynak kodda özelliğiyle temel alarak **_DEBUG** bayrağı oluşturun.  
+    -   **Sürüm bilgisi** Düzenleyicisi kümeleri **hata ayıklama** özelliğiyle bir `#ifdef` kaynak kodda temel alarak `_DEBUG` bayrağı oluşturun.  
   
-    -   Varsa **özel yapı** anahtara sahip bir **değeri** karşılık gelen sürüm bilgilerini tablo **özel yapı** özelliği (özellik penceresi) için**FILEFLAGS** anahtar olacaktır **doğru**. Varsa **değeri** olan özelliği boş olacaktır **False**. Benzer şekilde, **özel yapı** için (sürüm bilgileri tablosunda) anahtar bağlı **özel yapı** özelliği için **FILEFLAGS** anahtarı.  
+    -   Varsa `Private Build` anahtara sahip bir **değer** kümesinde **sürüm bilgisi** tablosundaki karşılık gelen **özel derleme** özelliği (içinde **özellikleri**  pencere) için `FILEFLAGS` anahtar olacaktır **True**. Varsa **değer** olan özelliği boş olacaktır **False**. Benzer şekilde, **özel yapı** anahtarı (içinde **sürüm bilgisi** tablo) bağlıdır **özel yapı** özelliği `FILEFLAGS` anahtarı.  
   
- Anahtar veya değer sütun başlıkları tıklatarak dize blok bilgi dizisini sıralayabilirsiniz. Bu başlıkları bilgileri seçili sıra içine otomatik olarak yeniden düzenleyin.  
+ Bir anahtar veya değer sütun başlıklarını tıklayarak dize blok bilgi dizisini sıralayabilirsiniz. Bu başlıkları seçili sıra bilgilerini otomatik olarak yeniden düzenleyin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sürüm bilgileri Düzenleyicisi](../windows/version-information-editor.md)   
  [Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)
-

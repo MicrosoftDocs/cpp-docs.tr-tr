@@ -19,32 +19,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: adc8738f35e3018513355275b2dda43b745b011f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 31a43e205ad2993f2b70188300800eb8f11fe8c8
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882933"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647940"
 ---
 # <a name="displaying-or-hiding-the-pixel-grid-image-editor-for-icons"></a>Piksel Kılavuzunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
-Büyütme katsayısını 4 veya daha büyük olan tüm görüntü Düzenleyicisi bölmeleri için tek tek piksel cinsinden görüntü sınırlandıran bir kılavuz görüntüleyebilirsiniz.  
+Tüm **Resim Düzenleyicisi** bölmeleri katsayısını 4 veya daha büyük ile tek tek her piksel görüntüde sınırlandıran bir kılavuz görüntüleyebilirsiniz.  
   
 > [!TIP]
->  İmlecinizi bir araç çubuğu düğmesi geldiğinizde araç ipuçları görüntülenir. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
+>  İmlecinizi bir araç çubuğu düğmenin üzerine geldiğinizde araç ipuçlarında görünür. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
   
-### <a name="to-display-or-hide-the-pixel-grid"></a>Piksel kılavuzunu gizleyin veya gösterin için  
+### <a name="to-display-or-hide-the-pixel-grid"></a>Görüntülenecek veya piksel kılavuzunu Gizle  
   
-1.  Üzerinde **görüntü** menüsünde tıklatın **Kılavuz ayarları**.  
+1.  Üzerinde **görüntü** menüsünü tıklatın **Kılavuz ayarları**.  
   
-2.  Seçin **piksel kılavuzunu** onay kutusunu kılavuz görüntülemek veya kılavuz gizlemek için kutusunun işaretini kaldırın.  
+2.  Seçin **piksel kılavuzunu** onay kutusunu kılavuz görüntülemek veya ızgarasını için onay kutusunu temizleyin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Pencere bölmeleri](../windows/window-panes-image-editor-for-icons.md)
-

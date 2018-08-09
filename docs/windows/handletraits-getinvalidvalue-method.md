@@ -1,5 +1,5 @@
 ---
-title: Handletraits::getınvalidvalue yöntemi | Microsoft Docs
+title: Handletraits::getınvalidvalue metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 190c327a404d19da86fdb86c32411a8ffeb06e7c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c4690daabd84b8127913af0a96d5b929ee986e77
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873504"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651239"
 ---
 # <a name="handletraitsgetinvalidvalue-method"></a>HANDLETraits::GetInvalidValue Metodu
 Geçersiz bir tanıtıcı temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 inline static HANDLE GetInvalidValue();  
 ```  
   

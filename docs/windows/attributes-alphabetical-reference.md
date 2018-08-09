@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1bbb461fe4e8cdabf7da9925323d9271a1047440
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: cb7c8dc889a37ca52c527a65f68a84d81e9553cc
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464895"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648184"
 ---
 # <a name="attributes-alphabetical-reference"></a>Öznitelikler Alfabetik Başvurusu
 Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.  
@@ -118,7 +118,7 @@ Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.
 |[satype](../windows/satype.md)|Veri türü belirtir `SAFEARRAY`.|  
 |[size_is](../windows/size-is.md)|Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaretçiler ve tek veya çok boyutlu diziler işaretçilere boyutu belirtir.|  
 |[Kaynak](../windows/source-cpp.md)|Bir sınıf, özelliği veya yöntemi üyesi bir olay kaynağı olduğunu gösterir.|  
-|[string](../windows/string-cpp.md)|Bildiren tek boyutlu **char**, **wchar_t**, **bayt**, ya da eşdeğer bir dizi veya işaretçiyi gibi bir dizi gerekir kabul bir dize.|  
+|[string](../windows/string-cpp.md)|Bildiren tek boyutlu **char**, **wchar_t**, `byte`, ya da eşdeğer bir dizi veya işaretçiyi gibi bir dizi gerekir kabul bir dize.|  
 |[support_error_info](../windows/support-error-info.md)|Hata raporlama için hedef nesne destekler.|  
 |[switch_is](../windows/switch-is.md)|İfade veya birleşim üyesi seçer birleşim discriminant davranan tanımlayıcısını belirtir.|  
 |[switch_type](../windows/switch-type.md)|Birleşim discriminant kullanılan değişkenin türünü tanımlar.|  

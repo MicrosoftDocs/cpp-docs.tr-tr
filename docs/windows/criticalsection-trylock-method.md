@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e1b9d238d4f5475475e5dc367aae196937630a0e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 12d823cdefa90cad1e454996be274135d9e68fa9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465428"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647634"
 ---
 # <a name="criticalsectiontrylock-method"></a>CriticalSection::TryLock Yöntemi
 Engelleme olmadan kritik bir bölüm girin dener. Çağrı başarılı olursa, çağıran iş parçacığı, kritik bölüm sahipliğini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 SyncLock TryLock();  
   
 static SyncLock TryLock(  
@@ -37,7 +37,7 @@ static SyncLock TryLock(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *cs*  
  Bir kullanıcı tarafından belirtilen kritik bölüm nesnesi.  
   

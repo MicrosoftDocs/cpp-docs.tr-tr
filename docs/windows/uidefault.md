@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ad24d6e874b1c2efd9b57118e20fe78bfa037bd3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ef4cfba786bd5c310a24727b59575b9eb45bd183
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890157"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651619"
 ---
 # <a name="uidefault"></a>uidefault
-Tür bilgileri üye kullanıcı arabiriminde görünen varsayılan üye olduğunu gösterir.  
+Tür bilgileri üyesi kullanıcı arabiriminde görüntülemek için varsayılan üye olduğunu gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [uidefault]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Uidefault** C++ özniteliğine sahip ile aynı işlevselliği [uidefault](http://msdn.microsoft.com/library/windows/desktop/aa367292) MIDL özniteliği.  
+ **Uidefault** C++ özniteliği ile aynı işlevlere sahip [uidefault](http://msdn.microsoft.com/library/windows/desktop/aa367292) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği gösterir **uidefault**:  
+ Aşağıdaki kod, bir örneği gösterilmektedir. **uidefault**:  
   
-```  
+```cpp  
 // cpp_attr_ref_uidefault.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -64,9 +62,9 @@ __interface ICustom{
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

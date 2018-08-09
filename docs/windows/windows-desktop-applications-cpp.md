@@ -20,20 +20,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f9e24921a2a33ab31a9a5e6b7c3a33dbfec6c47e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f78fa02b991fbdf7c18457a8018ea46b0c240585
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890716"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647963"
 ---
 # <a name="windows-desktop-applications-c"></a>Windows Masaüstü uygulamaları (C++)
-Bu bölümde bir penceresinde çalıştırın C++ masaüstü uygulamalarının nasıl oluşturulacağını açıklar.  
+Bu bölümde bir penceresinde çalıştırın, C++ masaüstü uygulamalarının nasıl oluşturulacağını açıklar.  
+
 > [!TIP]  
-> Windows 10 için Microsoft Store aracılığıyla dağıtımı için varolan Masaüstü uygulamanız paketlemek için masaüstü uygulaması dönüştürücü kullanabilirsiniz. Daha fazla bilgi için bkz: [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) ve [Masaüstü uygulamanız için evrensel Windows Platformu (UWP) Masaüstü Köprüsü ile Getir](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root).
+> Windows 10 için Microsoft Store aracılığıyla dağıtımı için var olan masaüstü uygulamanızı paketlemek için Masaüstü uygulamasını dönüştürücüyü kullanabilirsiniz. Daha fazla bilgi için [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) ve [için evrensel Windows Platformu (UWP) Masaüstü Köprüsü ile masaüstü uygulamanızı taşıyın](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-root).
   
 ## <a name="prerequisites"></a>Önkoşullar  
- Bu konular, C++ dili ile ilgili temel bilgileri anladığınızdan varsayalım.  
+ Bu konular, C++ dili temellerini anladığınızı varsayar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
@@ -47,4 +48,3 @@ Bu bölümde bir penceresinde çalıştırın C++ masaüstü uygulamalarının n
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da Visual C++](../visual-cpp-in-visual-studio.md)
-

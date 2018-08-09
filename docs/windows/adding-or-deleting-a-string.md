@@ -20,17 +20,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 90a470aa5bb1b24ab2fe549f098a83c29e5d0828
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 93cf3eba3301b0ae000b9f461851b46be592a119
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464155"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650289"
 ---
 # <a name="adding-or-deleting-a-string"></a>Dize Ekleme veya Silme
-Dize Düzenleyicisi'ni kullanarak dize tablosuna yeni girişler kolayca ekleyebilirsiniz. Yeni dizeler tablonun sonuna yerleştirilir ve sonraki kullanılabilir tanımlayıcı verilir. Ardından kimliği, değer veya resim yazısı özelliklerinde düzenleyebileceğiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window) gerektiğinde.  
+Dize tablosu kullanarak yeni girişler hızla ekleyebilirsiniz **dize** Düzenleyici. Yeni dizeler tablonun sonuna yerleştirilir ve sonraki kullanılabilir tanımlayıcı verilir. Daha sonra düzenleyebilirsiniz **kimliği**, **değer**, veya **açıklamalı alt yazı** özelliklerinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window) gerektiğinde.  
   
- Dize Düzenleyicisi'ni zaten kullanımda bir kimliği kullanmayın emin olur. Bir kimliği zaten kullanımda seçerseniz, Dize Düzenleyicisi bunu size bildirir ve ardından genel benzersiz bir kimliği olan örneğin IDS_STRING58113 atayın.  
+ **Dize** Düzenleyicisi sağlar zaten kullanımda bir kimliği kullanmayın. Bir kimliği kullanımda, zaten seçerseniz **dize** Düzenleyicisi bunu size bildirir ve ardından genel benzersiz kimliği örneğin Ata `IDS_STRING58113`.  
   
 ### <a name="to-add-a-string-table-entry"></a>Dize tablo girdisi eklemek için  
   
@@ -64,10 +64,9 @@ Dize Düzenleyicisi'ni kullanarak dize tablosuna yeni girişler kolayca ekleyebi
   
 -   Tuşuna **Sil** anahtarı.  
   
- Yönetilen projelere kaynak (Bu ortak dil çalışma zamanını hedefleyen) ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows formlarını yerelleştirme](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme için kaynakların kullanarak](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ Yönetilen projelere kaynak (Bu ortak dil çalışma zamanını hedefleyen) ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows formlarını yerelleştirme](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme için kaynakların kullanarak](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 48c4a645456e3b3c0556dfed268ce911e5799fc3
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: ad5f886c4d475cb51b370ae25549387f191ab4b6
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569423"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653137"
 ---
 # <a name="export"></a>dışarı aktar
 Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [export]  
 ```  
   

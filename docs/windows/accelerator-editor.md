@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: feece642928db70a2b78dd3a4117b695b19f4af9
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 0aed7c8ef617152144bbe211f83f442fe93d525e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466078"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648291"
 ---
 # <a name="accelerator-editor"></a>Hızlandırıcı Düzenleyicisi
 Hızlandırıcı tablosunu hızlandırma tuşları (kısayol tuşları olarak da bilinir) bir listesini içeren bir Windows kaynağı ve bunlarla ilişkili komut tanımlayıcıları ' dir. Bir program, birden fazla Hızlandırıcı tablosu olabilir.  
@@ -36,7 +36,7 @@ Hızlandırıcı tablosunu hızlandırma tuşları (kısayol tuşları olarak da
   
  Kullanabileceğiniz [sınıf görünümü](http://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) kod anahtar komutlarını Hızlandırıcı yeteneklerinizi.  
   
- Hızlandırıcı Düzenleyicisi ile şunları yapabilirsiniz:  
+ İle **hızlandırıcı** Düzenleyicisi, şunları yapabilirsiniz:  
   
 -   [Hızlandırıcı özelliklerini ayarlama](../windows/setting-accelerator-properties.md)  
   
@@ -47,12 +47,12 @@ Hızlandırıcı tablosunu hızlandırma tuşları (kısayol tuşları olarak da
 -   [Önceden tanımlanmış Hızlandırıcı tuşları kullanın](../windows/predefined-accelerator-keys.md)  
   
     > [!TIP]
-    >  Hızlandırıcı Düzenleyicisi'ni kullanırken, sık kullanılan komutlar bir kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Kullanılabilir komutlar ne işaretçinin işaret ettiği üzerinde bağlıdır.  
+    >  Kullanırken **hızlandırıcı** Düzenleyicisi sağ sık kullanılan komutlar bir kısayol menüsünü görüntülemek için. Kullanılabilir komutlar ne işaretçinin işaret ettiği üzerinde bağlıdır.  
   
     > [!NOTE]
     >  Windows, boş bir Hızlandırıcı tabloları oluşturmak izin vermez. Hızlandırıcı tablosunu giriş yok oluşturursanız, tabloyu kaydettiğinizde otomatik olarak silinir.  
   
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

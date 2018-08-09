@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 428004d3390b95c700c53fd157b62a1b3fbe3d0b
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 4efe507011d70df689162b52f72d730f0ae99f58
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571181"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650059"
 ---
 # <a name="generic-interfaces-visual-c"></a>Genel Arabirimler (Visual C++)
 Sınıflarında tür parametreleri için kısıtlamalar arabirimleri üzerinde tür parametreleri için geçerli aynıdır (bkz [Genel sınıflar (C + +/ CLI)](../windows/generic-classes-cpp-cli.md)).  
@@ -34,14 +34,14 @@ Sınıflarında tür parametreleri için kısıtlamalar arabirimleri üzerinde t
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [attributes] generic <class-key type-parameter-identifier[, ...]>  
 [type-parameter-constraints-clauses][accesibility-modifiers] interface class identifier [: base-list] {   interface-body} [declarators] ;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
  *öznitelikleri* (isteğe bağlı)  
- Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
+ Ek bildirim temelli bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikleri**.  
   
  *sınıf anahtarı*  
  **sınıf** veya **typename**  

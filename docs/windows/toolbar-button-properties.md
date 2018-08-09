@@ -20,31 +20,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3e61ba7e8720c755ce26408826c56a5c1fc9d51e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a37e15c4235886eef1dbee958ec5c3da29caab0e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890694"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39650124"
 ---
 # <a name="toolbar-button-properties"></a>Araç Çubuğu Düğmesi Özellikleri
 Araç çubuğu düğmesi özellikleri şunlardır:  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|**ID**|Düğme için kimliği tanımlar. Aşağı açılan liste ortak sağlar **kimliği** adları.|  
-|**Genişlik**|Düğme genişliğini ayarlar. 16 piksel önerilir.|  
-|**Yükseklik**|Düğme yüksekliğini ayarlar. Bir düğme yüksekliğini araç çubuğundaki tüm düğmeleri yüksekliğini değiştiğine dikkat edin. 15 piksel önerilir.|  
-|**istemi**|Durum çubuğunda görüntülenen ileti tanımlar. \N ve bir ad ekleme Bu araç çubuğu düğmesi için araç ipucu ekler. Daha fazla bilgi için bkz: [araç ipucu oluşturma](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|  
+|**ID**|Düğme için kimliği tanımlar. Açılır listede ortak sağlar **kimliği** adları.|  
+|**Genişlik**|Düğmesinin genişliğini belirler. 16 piksel önerilir.|  
+|**Yükseklik**|Düğmenin yüksekliğini belirler. Bir düğmenin yüksekliğini araç çubuğundaki tüm düğmeler yüksekliğini değiştiğine dikkat edin. 15 piksel önerilir.|  
+|**istemi**|Durum çubuğunda görüntülenen ileti tanımlar. Bir araç ipucu \n ve bir ad eklemek için bu araç çubuğu düğmesini ekler. Daha fazla bilgi için [bir araç ipucu oluşturmanın](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|  
   
- **Genişlik** ve **yükseklik** tüm düğmelere uygulayın. Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048 en büyük genişliği vardır. Bu nedenle düğmesi genişlik 512'e ayarlayın, yalnızca dört düğme olabilir ve 513 için genişliği ayarlarsanız, yalnızca üç düğme olabilir.  
+ **Genişlik** ve **yükseklik** tüm düğmeler için geçerlidir. Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048 maksimum genişliği sahiptir. Bu nedenle düğme genişliği 512 ayarlarsanız, yalnızca dört düğme olabilir ve genişliği için 513 ayarlarsanız, yalnızca üç düğme olabilir.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
- MFC ya da ATL  
+ MFC veya ATL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç çubuğu düğmesi özelliklerini değiştirme](../windows/changing-the-properties-of-a-toolbar-button.md)   
  [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
-

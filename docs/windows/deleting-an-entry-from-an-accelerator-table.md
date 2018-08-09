@@ -16,33 +16,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 68f6c7e9383527e3ba77d87d6d08ce5a3e1bcc8a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a8f3a72f8f9a71f54a997c4ba76d51aad6fb200a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880504"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39648327"
 ---
 # <a name="deleting-an-entry-from-an-accelerator-table"></a>Hızlandırıcı Tablosundan Giriş Silme
-### <a name="to-delete-an-entry-from-an-accelerator-table"></a>Hızlandırıcı tablosundan bir girişi silmek için  
+### <a name="to-delete-an-entry-from-an-accelerator-table"></a>Hızlandırıcı tablosundan giriş silme  
   
-1.  Hızlandırıcı tablosunu simgesini çift tıklatarak açın [kaynak görünümü](../windows/resource-view-window.md).  
+1.  Hızlandırıcı tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Silmek istediğiniz girişi seçin. (Basılı **CTRL** veya **SHIFT** birden çok girişi seçmek için anahtar tıklarken.)  
+2.  Silmek istediğiniz girişini seçin. (Basılı **Ctrl** veya **Shift** birden çok girişi seçmek için anahtar tıklatırken.)  
   
-3.  Sağ tıklatın ve seçin **silmek** kısayol menüsünden (veya seçin **silmek** gelen **Düzenle** menüsü).  
+3.  Sağ tıklatın ve seçin **Sil** kısayol menüsünden (veya **Sil** gelen **Düzenle** menü).  
   
  \- veya -  
   
--   Delete tuşuna basın.  
+-   Tuşuna **Sil** anahtarı.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

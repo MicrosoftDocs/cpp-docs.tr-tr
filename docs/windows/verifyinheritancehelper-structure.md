@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d758f4b44990d1f03ff698f0740c2aa8491367a5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a67e63748ee7650b2e99a6112f9725daf6cf13c6
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889709"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652942"
 ---
 # <a name="verifyinheritancehelper-structure"></a>VerifyInheritanceHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -41,15 +41,15 @@ template <
 struct VerifyInheritanceHelper<I, Nil>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `I`  
+### <a name="parameters"></a>Parametreler  
+ *I*  
  Bir tür.  
   
- `Base`  
+ *temel*  
  Başka bir tür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Başka bir arabiriminden bir arabirim türetilmiş olup olmadığını sınar.  
+ Başka bir arabirimden türetilmiş bir arabirim olup olmadığını sınar.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -57,7 +57,7 @@ struct VerifyInheritanceHelper<I, Nil>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[VerifyInheritanceHelper::Verify Metodu](../windows/verifyinheritancehelper-verify-method.md)|Geçerli şablon parametrelerle belirtilen iki arabirim sınar ve bir arabirim diğer türetilmiş olup olmadığını belirler.|  
+|[VerifyInheritanceHelper::Verify Metodu](../windows/verifyinheritancehelper-verify-method.md)|Geçerli şablon parametreler ile belirtilen iki arabirim test eder ve bir arabirimin diğer türetilip türetilmediğini belirler.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `VerifyInheritanceHelper`  

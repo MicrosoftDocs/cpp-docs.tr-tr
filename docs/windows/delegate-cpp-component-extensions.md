@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4c2a1297fff3c4604ffb181a907b982f9d2e1de4
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: dd35674b61e61eead6118fdcc0aacccbafa6f3b4
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570369"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649513"
 ---
 # <a name="delegate--c-component-extensions"></a>temsilci (C++ Bileşen Uzantıları)
 Bir işlev işaretçisi temsil eden bir tür bildirir.  
@@ -68,7 +68,7 @@ delegate-type-identifier
  Kullanım *temsilci türü tanımlayıcısı* temsilci olarak aynı prototipe sahip bir olay bildirmek için. Daha fazla bilgi için [temsilciler (C + +/ CX)](../cppcx/delegates-c-cx.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
  Ortak dil çalışma zamanı, aşağıdaki sözdizimi ile temsilciler destekler.  
@@ -124,10 +124,9 @@ function_declaration
 -   [Genel Temsilciler (Visual C++)](../windows/generic-delegates-visual-cpp.md)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
  Aşağıdaki örnek, temsilciler çağırma bildirmek ve başlatmak gösterilmektedir.  
   
@@ -187,8 +186,6 @@ int main () {
    StaticDelInst(11);  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 in func1 8  

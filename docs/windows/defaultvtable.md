@@ -17,25 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 83949616f204ae37b42b91b03d69d8d803a1582f
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 34850646e40ffa9cbd3185b13fdaa93d7c873787
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569676"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39651446"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 Varsayılan vtable arabirim bir COM nesnesi için bir arabirim tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ defaultvtable(  
    interface  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *interface*  
  COM nesnesi için varsayılan vtable olmasını istediğiniz belirtilen arabirim.  
   

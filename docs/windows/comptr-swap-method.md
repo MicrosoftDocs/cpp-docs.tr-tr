@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fff9e812a6946dd15de5b2d33f57358d02246dab
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 38fee8186d19d38075abab3bb16e2fcaac59a362
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462485"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649883"
 ---
 # <a name="comptrswap-method"></a>ComPtr::Swap Yöntemi
 Geçerli tarafından yönetilen arabirimi birbiriyle değiştirir **ComPtr** tarafından belirtilen yönetilen arabirimi ile **ComPtr**.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void Swap(  
    _Inout_ ComPtr&& r  
 );  
@@ -39,7 +39,7 @@ void Swap(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *r*  
  A **ComPtr**.  
   

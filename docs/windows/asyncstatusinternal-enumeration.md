@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a68189c461453dc72585ff4034df5ba69bb41bd5
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: eeaef23178829163725b78685b3460913f53f2c2
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464882"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652805"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal Numaralandırması
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 enum AsyncStatusInternal;  
 ```  
   
@@ -37,20 +37,20 @@ enum AsyncStatusInternal;
  Zaman uyumsuz işlemler durumu için iç sabit listeleri arasındaki eşlemeyi belirtir ve `Windows::Foundation::AsyncStatus` sabit listesi.  
   
 ## <a name="members"></a>Üyeler  
- *_Created*  
- Eşdeğer:: Windows::Foundation::AsyncStatus:: oluşturuldu  
+ `_Created`  
+ Eşdeğerdir `::Windows::Foundation::AsyncStatus::Created`  
   
- *_Started*  
- Eşdeğer:: Windows::Foundation::AsyncStatus:: başlatıldı  
+ `_Started`  
+ Eşdeğerdir `::Windows::Foundation::AsyncStatus::Started`  
   
- *_Completed*  
- Eşdeğer:: Windows::Foundation::AsyncStatus:: tamamlandı  
+ `_Completed`  
+ Eşdeğerdir `::Windows::Foundation::AsyncStatus::Completed`  
   
- *_Cancelled*  
- Eşdeğer:: Windows::Foundation::AsyncStatus:: iptal edildi  
+ `_Cancelled`  
+ Eşdeğerdir `::Windows::Foundation::AsyncStatus::Cancelled`  
   
- *_Hata*  
- Eşdeğer:: Windows::Foundation::AsyncStatus::Error  
+ `_Error`  
+ Eşdeğerdir `::Windows::Foundation::AsyncStatus::Error`  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

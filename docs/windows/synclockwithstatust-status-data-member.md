@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0a6d8fb587ed86063e19a44cd391ea04d75b2a68
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d1dc6cbab11a41707aa60aa37d63ae0e5042ba5a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888458"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39652854"
 ---
 # <a name="synclockwithstatuststatus-data-member"></a>SyncLockWithStatusT::status_ Veri Üyesi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,7 +34,7 @@ DWORD status_;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Arka plandaki sonucu üzerinde bir kilit işlemi sonra işlemi bekleyin ayrı tutma bir nesne geçerli SyncLockWithStatusT nesnesine bağlı.  
+ Geçerli bir nesne üzerinde bir kilit işlemi temel sonra alttaki bekleme işleminin sonucu tutan **SyncLockWithStatusT** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c8221b405618b1879f4e4c865115a227eb09857
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 125ffe998e7c3f225f72e3fb47df4ef3525c37f9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890127"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649054"
 ---
 # <a name="weakrefoperatoramp-operator"></a>WeakRef::operator&amp; işleci
-Geçerli WeakRef nesnesini temsil eden bir ComPtrRef nesnesi döndürür.  
+Döndürür bir `ComPtrRef` geçerli temsil eden nesne **WeakRef** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,10 +34,10 @@ Details::ComPtrRef<WeakRef> operator&() throw()
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli WeakRef nesnesini temsil eden bir ComPtrRef nesnesi.  
+ A `ComPtrRef` geçerli temsil eden nesne **WeakRef** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kodunuzda kullanılmak üzere tasarlanmamıştır iç yardımcı operatörün budur.  
+ Kodunuzda kullanılmak üzere tasarlanmamıştır iç Yardımcısı operatörün budur.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

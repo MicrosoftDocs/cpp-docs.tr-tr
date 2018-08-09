@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 33829d868eb90cde7259a482b8fc80f9cd6fd677
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: bee7bf263e3537811be1b992f463b7f1269863ff
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465304"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649789"
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)
 Genel tür veya yöntem bildirimi bir tür parametresi kısıtlamalarına sahip kazanabilir. Kısıtlama türü bağımsız değişken olarak kullanılan türler karşılaması gereken bir gereksinimdir. Örneğin, bir kısıtlaması tür bağımsız değişkeni belirli bir arabirim gerekir veya belirli bir sınıftan olabilir.  
@@ -32,11 +32,11 @@ Genel tür veya yöntem bildirimi bir tür parametresi kısıtlamalarına sahip 
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 where type-parameter: constraint list  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *tür-parametresi*  
  Kısıtlı için tür parametrelerinden biri.  
   
@@ -45,7 +45,7 @@ where type-parameter: constraint list
   
  Listeden bir sınıf de içerebilir. Bir taban sınıfı kısıtlamasını karşılamak tür bağımsız değişkeni, kısıtlama aynı sınıfta olması veya kısıtlamasından türetilen olmalıdır.  
   
- Belirtebilirsiniz `gcnew()` tür bağımsız değişkeni, genel bir parametresiz oluşturucusu; olmalıdır belirtmek için veya **başvuru sınıfı** türü belirtmek için bağımsız değişken sınıf, arabirim, temsilci veya dizi dahil olmak üzere bir başvuru türü olmalıdır parolayı yazın. veya **değer sınıfının** türü belirtmek için bağımsız değişken bir değer türü olması gerekir. Herhangi bir değer türü boş değer dışında\<T > belirtilebilir.  
+ Ayrıca belirtebileceğiniz **gcnew()** tür bağımsız değişkeni, genel bir parametresiz oluşturucusu; olmalıdır belirtmek için veya **başvuru sınıfı** tür bağımsız değişkeni, herhangi bir sınıf içeren bir başvuru türü olmalıdır belirtmek için arabirim, temsilci veya dizi türü; veya **değer sınıfının** türü belirtmek için bağımsız değişken bir değer türü olması gerekir. Herhangi bir değer türü boş değer dışında\<T > belirtilebilir.  
   
  Genel parametre kısıtlama olarak belirtebilirsiniz. Sınırlama türü için sağlanan tür bağımsız değişkeni olması veya kısıtlama türünden türetilmesi gerekir. Bu, bir çıplak tür kısıtlaması olarak adlandırılır.  
   

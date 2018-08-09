@@ -16,26 +16,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 17326bdb8fe01c9ad329db0a6c7e8178fdbb25e7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d868c9270e23e2ee1fa0dcdc1845d9762cefb16c
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864248"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39649408"
 ---
 # <a name="associating-menu-commands-with-status-bar-text-in-mfc-applications"></a>MFC Uygulamalarında Menü Komutlarını Durum Çubuğu Metniyle İlişkilendirme
-Uygulamanızı her bir kullanıcı seçebilirsiniz menü komutları için açıklayıcı metin görüntüleyebilirsiniz. Her menü komutunu kullanarak için bir metin dizesi atayarak bunu **komut istemi** Özellikleri penceresinde özelliği. Bir dize varsa [dize tablosu](../windows/string-editor.md) Kimliğine komutu ile aynıdır, bir kullanıcı bir menü öğesi geldiğinde MFC uygulaması otomatik olarak bu dize kaynağı çalışan uygulama durum çubuğunda görüntülenir.  
+Uygulamanızı her bir kullanıcı seçebilir menü komutları için açıklayıcı metni görüntüleyebilirsiniz. Bir metin dizesi kullanarak her menü komut atayarak bunu **istemi** özelliğinde **özellikleri** penceresi. Bir dize varsa [dize tablosu](../windows/string-editor.md) Kimliğine komutu ile aynıdır, bir kullanıcı bir menü öğesi geldiğinde bir MFC uygulaması otomatik olarak bu dize kaynağı çalışan uygulama durum çubuğunda görüntülenir.  
   
-### <a name="to-associate-a-menu-command-with-a-status-bar-text-string"></a>Bir durum çubuğu metin dizesi menü komutu ilişkilendirmek için  
+### <a name="to-associate-a-menu-command-with-a-status-bar-text-string"></a>Bir menü komutu bir durum çubuğunda metin dizesi ile ilişkilendirmek için  
   
 1.  İçinde **menü** Düzenleyicisi, menü komutunu seçin.  
   
-2.  İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window), ilgili durum çubuğu metni yazın **komut istemi** kutusu.  
+2.  İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), ilgili durum çubuğu metni yazın **istemi** kutusu.  
   
-
-  
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  MFC  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
