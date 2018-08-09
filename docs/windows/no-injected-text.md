@@ -17,25 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c1b629f805cf07736dd7988cac6afb857a23b5e5
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: fc0dcba6597b6b8a3b37c240bf1c4a58f30b6b23
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603426"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020349"
 ---
 # <a name="noinjectedtext"></a>no_injected_text
 Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ no_injected_text(  
    boolean  
 ) ];  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Boole* (isteğe bağlı)  
  **doğru** eklenen, herhangi bir kod isterseniz **false** eklenmesi için kod izin vermek için. **doğru** varsayılandır.  
   

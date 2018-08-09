@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: db09d29f0049152f734ada8a78c510e4424d8dd3
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: b7444ccf4f3a03036a5363024d0794f67b6a1ad6
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569546"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018864"
 ---
 # <a name="how-to-specify-include-directories-for-resources"></a>Nasıl Yapılır: Kaynaklar İçin Dizin Eklemeyi Belirtme
 ### <a name="to-specify-include-directories-for-a-specific-rc-file"></a>Belirli bir .rc dosyası için ekleme kodu dizinlerini belirtme  
@@ -34,7 +34,6 @@ ms.locfileid: "39569546"
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) .NET Framework Geliştirici Kılavuzu'nda. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz [Walkthrough: Using Resources for LocalizationASP.NETile](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

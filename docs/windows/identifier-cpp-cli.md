@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6eac892da91c5f3640bdd243a0b3c6525faa5c2a
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 14b68f573452d9ab8894027fd4d83c0b89f2ddf1
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603351"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018367"
 ---
 # <a name="identifier-ccli"></a>__tanımlayıcı (C++/CLI)
 Tanımlayıcı olarak Visual C++ anahtar sözcükleri kullanımını etkinleştirir.  
@@ -31,7 +31,7 @@ Tanımlayıcı olarak Visual C++ anahtar sözcükleri kullanımını etkinleşti
 ## <a name="all-platforms"></a>Tüm Platformlar  
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 __identifier(  
 Visual_C++_keyword  
 )  
@@ -49,7 +49,7 @@ Kullanım **__tanımlayıcı** anahtar sözcüğü olmayan anahtar sözcükler t
 ### <a name="examples"></a>Örnekler  
  **Örnek**  
   
- Aşağıdaki örnekte, bir sınıf adlı `template` C# içinde oluşturulan ve bir DLL olarak dağıtılmış. Visual C++ programında kullanan `template` sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standart bir C++ anahtar sözcüğüdür.  
+ Aşağıdaki örnekte, bir sınıf adlı **şablon** C# içinde oluşturulan ve bir DLL olarak dağıtılmış. Kullanan Visual C++ programında **şablon** sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standart bir C++ anahtar sözcüğüdür.  
   
 ```cs  
 // identifier_template.cs  
@@ -79,7 +79,7 @@ int main() {
   
 ### <a name="examples"></a>Örnekler  
   
- Aşağıdaki örnekte, bir sınıf adlı `template` C# içinde oluşturulan ve bir DLL olarak dağıtılmış. Visual C++ programında kullanan `template` sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standart bir C++ anahtar sözcüğüdür.  
+ Aşağıdaki örnekte, bir sınıf adlı **şablon** C# içinde oluşturulan ve bir DLL olarak dağıtılmış. Kullanan Visual C++ programında **şablon** sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standart bir C++ anahtar sözcüğüdür.  
   
 ```cs  
 // identifier_template.cs  

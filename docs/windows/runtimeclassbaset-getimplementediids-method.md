@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf29b5db15f88528012914476572cb1ccb21a07c
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 2a5c63a3b2dbbac934162f74abb8e742cc4418a7
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603257"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018997"
 ---
 # <a name="runtimeclassbasetgetimplementediids-method"></a>RuntimeClassBaseT::GetImplementedIIDS Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename T>  
 __forceinline static HRESULT GetImplementedIIDS(  
    _In_ T* implements,  

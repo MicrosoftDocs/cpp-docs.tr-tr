@@ -15,25 +15,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 20a05bf603b874d260c95c010e6f0e8312b35649
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 157512ee556126291427c3db6578788a477505a6
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570995"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016385"
 ---
 # <a name="hstringattach-method"></a>HString::Attach Yöntemi
 Belirtilen ilişkilendirir **Hstrıng** geçerli nesneyle **Hstrıng** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void Attach(  
        HSTRING hstr  
        ) throw()  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *HSTR*  
  Mevcut bir **Hstrıng** nesne.  
   

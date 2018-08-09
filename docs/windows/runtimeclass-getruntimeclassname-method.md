@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7706a16a860cf554068dd3416e7c1f8b1fcea311
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 126133c5e542414f1fb38635e1cb14314bc55d52
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608780"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020401"
 ---
 # <a name="runtimeclassgetruntimeclassname-method"></a>RuntimeClass::GetRuntimeClassName Metodu
 
@@ -37,7 +37,6 @@ STDMETHOD( GetRuntimeClassName )(
 ```
 
 ### <a name="parameters"></a>Parametreler
-
 *runtimeName*  
 Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
 
@@ -47,7 +46,7 @@ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Assert hata durumunda yayıldığını &#95; &#95;WRL_STRICT&#95; &#95; veya &#95; &#95;WRL_FORCE_INSPECTABLE_CLASS_MACRO&#95; &#95; tanımlanmadı.
+Assert hata durumunda yayıldığını `__WRL_STRICT__` veya `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` tanımlanmadı.
 
 ## <a name="requirements"></a>Gereksinimler
 

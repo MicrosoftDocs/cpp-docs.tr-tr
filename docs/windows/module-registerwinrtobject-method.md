@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 42ec736126e2381b00542bf71afca0b9db187df7
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 5b5605b68c569d4579324b51eaad42b1e9532011
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603763"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017421"
 ---
 # <a name="moduleregisterwinrtobject-method"></a>Module::RegisterWinRTObject Yöntemi
 Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla Windows çalışma zamanı nesneleri kaydeder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 HRESULT RegisterWinRTObject(const wchar_t* serverName,  
    wchar_t** activatableClassIds,  
    WINRT_REGISTRATION_COOKIE* cookie,  

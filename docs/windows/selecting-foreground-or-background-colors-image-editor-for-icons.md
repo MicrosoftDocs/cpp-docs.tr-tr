@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 108447dc3e18be84bf2875c49adb600ed9636dc4
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: e9dc6b75cfa408ececeb533fcd75dbad0f124fda
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39605554"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018835"
 ---
 # <a name="selecting-foreground-or-background-colors-image-editor-for-icons"></a>Ön Plan veya Arka Plan Renklerini Seçme (Simgeler İçin Görüntü Düzenleyicisi)
 Dışında **Silgi**, Araçlar **Resim Düzenleyicisi** araç çubuğu çizim sırasıyla sol veya sağ fare düğmesine bastığınızda geçerli ön plan veya arka plan rengi.  
@@ -39,7 +39,6 @@ Dışında **Silgi**, Araçlar **Resim Düzenleyicisi** araç çubuğu çizim s�
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

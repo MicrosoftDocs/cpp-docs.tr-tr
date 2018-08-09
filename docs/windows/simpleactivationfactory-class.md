@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97ad430bc0ab5a268ff428189da5987b6c45907d
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: adbc7b6bbeafff277f32170627d6804526900049
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39650797"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019023"
 ---
 # <a name="simpleactivationfactory-class"></a>SimpleActivationFactory Sınıfı
 Bir Windows çalışma zamanı veya klasik COM temel sınıfı oluşturmak için temel bir mekanizma sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename Base>  
 class SimpleActivationFactory : public ActivationFactory<>;  
 ```  

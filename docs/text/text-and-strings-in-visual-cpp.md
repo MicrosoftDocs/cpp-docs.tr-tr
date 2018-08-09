@@ -1,5 +1,5 @@
 ---
-title: Metin ve dizeler Visual C++'ta | Microsoft Docs
+title: Visual C++'da metin ve dizeler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -34,38 +34,38 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e16c44993f3cd9598bc42f9151264e09ac3b7a53
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8eaf5425bab79d31391e6ccd82e03c667de1271c
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856039"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016632"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++'da Metin ve Dizeler
-Uluslararası pazarda uygulama geliştirmenin önemli bir yönü, yerel karakter kümeleri yeterli gösterimidir. ASCII karakter kümesi 0x00-0x7F aralıktaki karakterleri tanımlar. ASCII karakter kümesi için 0x00-0x7F aralıktaki karakterleri aynı tanımlayan ve ayrıca genişletilmiş bir karakter 0x80 0xFF değerine kümesini tanımlamak öncelikle Avrupa, diğer karakter kümesi vardır. Bu nedenle, bir 8 bit, tek bayt karakter kümesi (SBCS) ASCII karakter kümesi gibi birçok Avrupa dilleri için karakter kümesi temsil etmek yeterli olur. Ancak, Japonca Kanji gibi bazı Avrupa dışı karakter kümesi tek baytlı kodlama düzeni temsil eder ve bu nedenle çok baytlı karakter kümesi (MBCS) kodlaması gerektiren daha çok daha fazla karakter içerir.  
+Uluslararası pazarlar için uygulama geliştirmenin önemli bir yönüdür yerel karakter kümeleri yeterli gösterimidir. ASCII karakter kümesi aralığı için 0x00 0x7F karakter tanımlar. Karakterler için 0x00 0x7F aralık içinde aynı şekilde ASCII karakter kümesi tanımlayan ve ayrıca genişletilmiş bir karakter 0x80 için 0xFF kümesini tanımlamak öncelikle Avrupa, diğer karakter kümesi vardır. Bu nedenle, 8-bit, tek baytlı karakter kümesi (SBCS) birçok Avrupa dilleri için karakter kümesi yanı sıra ASCII karakter kümesi temsil etmek yeterli olur. Ancak, bazı Avrupa dışı karakter kümeleri, Japonca Kanji gibi tek bayt kodlama düzenini temsil eden ve çok baytlı karakter kodlaması (MBCS) ayarlayın. Bu nedenle gerekli olandan çok daha fazla karakter içerir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Unicode ve MBCS](../text/unicode-and-mbcs.md)  
- Unicode ve MBCS programlama için Visual C++ desteğini açıklar.  
+ Unicode ve MBCS programlama için Visual C++ desteği açıklanmaktadır.  
   
  [Unicode Desteği](../text/support-for-unicode.md)  
- Unicode, tek bir bayt ile temsil edilemez karakter kümeleri dahil olmak üzere tüm karakter kümelerini desteklemek için bir belirtimi açıklar.  
+ Unicode olarak temsil edilemeyen bir karakter kümesi tek bir bayt dahil olmak üzere, tüm karakter kümeleri destekleyen bir belirtim açıklar.  
   
- [Çok baytlı karakter kümeleri (MBCS) desteği](../text/support-for-multibyte-character-sets-mbcss.md)  
- MBCS, Unicode karakter kümeleri, Japonca ve tek bir bayt ile temsil edilemez Çince gibi desteklemek için bir alternatif açıklanır.  
+ [Çok baytlı karakter kümesi (MBCS) için destek](../text/support-for-multibyte-character-sets-mbcss.md)  
+ MBCS, Unicode karakter kümesi, Japonca ve Çince tek bir bayt ile gösterilemez gibi destekleyici alternatif açıklanır.  
   
  [Tchar.h'de Genel Metin Eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)  
  Microsoft'a özgü genel metin eşlemeleri birçok veri türleri, yordamlar ve diğer nesneleri sağlar.  
   
  [Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma](../text/how-to-convert-between-various-string-types.md)  
- Visual C++ dize çeşitli diğer dizeleri dönüştürülmesi gösterilmektedir.  
+ Çeşitli Visual C++ dize türlerinin diğer dizelere dönüştürülebileceği gösterilmektedir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)  
- C Çalışma Zamanı Kitaplığı'nda uluslararası destek açıklanır.  
+ Uluslararası Destek C Çalışma Zamanı Kitaplığı'nda açıklanır.  
   
- [Uluslararası örnekler](http://msdn.microsoft.com/en-us/aa8d390c-cf4c-4dd8-9dea-74d81f93f2f8)  
- Visual c++ uluslararası gösteren örnekleri içeren bağlantılar sağlar.  
+ [Uluslararası örnekler](http://msdn.microsoft.com/aa8d390c-cf4c-4dd8-9dea-74d81f93f2f8)  
+ Visual c++ uluslararası gösteren örneklere bağlantılar sağlar.  
   
  [Dil ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md)  
- C Çalışma Zamanı Kitaplığı'nda dili ve ülke/bölge dizeleri sağlar.
+ C çalışma zamanı kitaplığı dil ve ülke/bölge dizeleri sağlar.

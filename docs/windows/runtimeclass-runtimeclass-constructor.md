@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 91e8242d028d25e9e6783506db014e3dceda32ec
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 29ea5b440885d914b7b933ca0761a1e5f50a2503
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39605743"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015111"
 ---
 # <a name="runtimeclassruntimeclass-constructor"></a>RuntimeClass::RuntimeClass Oluşturucusu
 Geçerli örneğinin başlatır **RuntimeClass** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 RuntimeClass();  
 ```  
   

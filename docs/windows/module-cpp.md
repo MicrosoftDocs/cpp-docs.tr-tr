@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3dc93b6dc6d6a5fbf6bcd8899793e07bd6446de1
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 3e7354dc422027207bc1dab357487ffcce48a4ca
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604362"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018600"
 ---
 # <a name="module-c"></a>modül (C++)
 Kitaplık blok .idl dosyasında tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ module (  
    type=dll,  
    name=string,  
@@ -50,8 +50,8 @@ Kitaplık blok .idl dosyasında tanımlar.
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *tür* (isteğe bağlı)  
- Aşağıdakilerden biri olabilir:  
+*tür* (isteğe bağlı)  
+Aşağıdakilerden biri olabilir:  
   
 -   `dll` İşlevleri ve işlemde COM sunucusu olarak çalışabilmesi ortaya çıkan DLL'yi izin sınıflar ekler. Varsayılan değer budur.  
   
@@ -61,51 +61,51 @@ Kitaplık blok .idl dosyasında tanımlar.
   
 -   `unspecified` Modül özniteliği için ilgili ATL kod ekleme devre dışı bırakır: ekleme ATL modül sınıfı, genel örnek _AtlModule ve giriş noktası işlevleri. ATL kod projesinde diğer öznitelikleri nedeniyle ekleme devre dışı bırakmaz.  
   
- *Ad* (isteğe bağlı)  
- Kitaplık blok adı.  
+*Ad* (isteğe bağlı)  
+Kitaplık blok adı.  
   
- *Sürüm* (isteğe bağlı)  
- Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan değerdir.  
+*Sürüm* (isteğe bağlı)  
+Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan değerdir.  
   
- *uuid*  
- Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için bir kimliği otomatik olarak oluşturulur. Almanız gerekebilir *UUID* tanımlayıcısını kullanarak bunu yapabilirsiniz, kitaplık bloğunun **__uuidof (***libraryname***)**.  
+*uuid*  
+Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için bir kimliği otomatik olarak oluşturulur. Almanız gerekebilir *UUID* tanımlayıcısını kullanarak bunu yapabilirsiniz, kitaplık bloğunun **__uuidof (***libraryname***)**.  
   
- *lcid*  
- Yerelleştirme parametre. Bkz: [LCID](http://msdn.microsoft.com/library/windows/desktop/aa367067) daha fazla bilgi için.  
+*lcid*  
+Yerelleştirme parametre. Bkz: [LCID](http://msdn.microsoft.com/library/windows/desktop/aa367067) daha fazla bilgi için.  
   
- *Denetim* (isteğe bağlı)  
- Kitaplığı'nda, tüm coclass'ları denetimleri olduğunu belirtir.  
+*Denetim* (isteğe bağlı)  
+Kitaplığı'nda, tüm coclass'ları denetimleri olduğunu belirtir.  
   
- *helpstring*  
- Tür kitaplığını belirtir.  
+*helpstring*  
+Tür kitaplığını belirtir.  
   
- *helpstringdll* (isteğe bağlı)  
- Bir belge dize araması gerçekleştirmek için kullanılacak .dll dosyasının adını ayarlar. Bkz: [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) daha fazla bilgi için.  
+*helpstringdll* (isteğe bağlı)  
+Bir belge dize araması gerçekleştirmek için kullanılacak .dll dosyasının adını ayarlar. Bkz: [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) daha fazla bilgi için.  
   
- *HelpFile* (isteğe bağlı)  
- Tür kitaplığı için Yardım dosyasının adı.  
+*HelpFile* (isteğe bağlı)  
+Adını **yardımcı** tür kitaplığı dosyası.  
   
- *HelpContext* (isteğe bağlı)  
- Bu tür kitaplığı Yardım kimliği.  
+*HelpContext* (isteğe bağlı)  
+**Yardımcı kimliği** bu tür kitaplığı için.  
   
- *helpstringcontext* (isteğe bağlı)  
- Bkz: [helpstringcontext](../windows/helpstringcontext.md) daha fazla bilgi için.  
+*helpstringcontext* (isteğe bağlı)  
+Bkz: [helpstringcontext](../windows/helpstringcontext.md) daha fazla bilgi için.  
   
- *Gizli* (isteğe bağlı)  
- Tüm Kitaplığı görüntülenmesini engeller. Bu kullanım denetimleri ile kullanıma yöneliktir. Genişletilmiş özelliklere sahip bir denetim sarmalayan yeni bir tür kitaplığı oluşturmak konakları gerekir. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) daha fazla bilgi için MIDL özniteliği.  
+*Gizli* (isteğe bağlı)  
+Tüm Kitaplığı görüntülenmesini engeller. Bu kullanım denetimleri ile kullanıma yöneliktir. Genişletilmiş özelliklere sahip bir denetim sarmalayan yeni bir tür kitaplığı oluşturmak konakları gerekir. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) daha fazla bilgi için MIDL özniteliği.  
   
- *kısıtlı* (isteğe bağlı)  
- Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) daha fazla bilgi için MIDL özniteliği.  
+*kısıtlı* (isteğe bağlı)  
+Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) daha fazla bilgi için MIDL özniteliği.  
   
- *özel* (isteğe bağlı)  
- Bir veya daha fazla öznitelik varsa Bu benzer [özel](../windows/custom-cpp.md) özniteliği. İlk parametre olarak *özel* özniteliğinin GUID'dir. Örneğin:  
+*özel* (isteğe bağlı)  
+Bir veya daha fazla öznitelik varsa Bu benzer [özel](../windows/custom-cpp.md) özniteliği. İlk parametre olarak *özel* özniteliğinin GUID'dir. Örneğin:  
   
 ```  
 [module(custom={guid,1}, custom={guid1,2})]  
 ```  
   
- *resource_name*  
- Uygulama Kimliği dll, yürütülebilir veya hizmet kaydetmek için kullanılan .rgs dosya dize kaynak kimliği. Modül türü hizmetidir, bu bağımsız değişken hizmet adını içeren dize Kimliğini almak için de kullanılır.  
+*resource_name*  
+Uygulama Kimliği dll, yürütülebilir veya hizmet kaydetmek için kullanılan .rgs dosya dize kaynak kimliği. Modül türü hizmetidir, bu bağımsız değişken hizmet adını içeren dize Kimliğini almak için de kullanılır.  
   
 > [!NOTE]
 >  Aynı sayısal değere .rgs dosya hem de hizmet adını içeren dize içermelidir.  

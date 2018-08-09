@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8fd2160a2e9eef9165aea835d093978fec35e5fd
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 42629df8eeda1bbd2bda2057dfee619b52928cba
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608273"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015594"
 ---
 # <a name="selecting-multiple-controls"></a>Birden Çok Denetim Seçme
 ### <a name="to-select-multiple-controls"></a>Birden çok denetim seçin  
@@ -47,7 +47,7 @@ ms.locfileid: "39608273"
 1.  Seçili denetimleri grubuyla basılı **Shift** basıp kaldırın veya mevcut seçime eklemek istediğiniz denetim tıklayın.  
   
     > [!NOTE]
-    >  CTRL tuşunu basılı tutarak ve seçim denetimine tıklayarak, bu seçimdeki baskın denetim hale getirir. Daha fazla bilgi için [baskın denetimi belirtme](../windows/specifying-the-dominant-control.md).  
+    >  Basılı **Ctrl** anahtarı ve bir seçim denetimine tıklayarak hale getirir, bu seçimdeki baskın denetim. Daha fazla bilgi için [baskın denetimi belirtme](../windows/specifying-the-dominant-control.md).  
   
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   

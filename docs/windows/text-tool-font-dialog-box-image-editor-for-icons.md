@@ -17,40 +17,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aa7f1a88627cc3547e6d6f4028de4abef73bf181
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8a197be0032c4ad42574418a153bba079366e396
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890444"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015917"
 ---
 # <a name="text-tool-font-dialog-box-image-editor-for-icons"></a>Metin Aracı Yazı Tipi İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
-Kullandığınızda yazı tipi ayarlarını belirtir [metin aracı iletişim kutusu](../windows/text-tool-dialog-box-image-editor-for-icons.md) , [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md).  
+Kullanırken yazı tipi ayarlarını belirtir [metin aracı iletişim kutusu](../windows/text-tool-dialog-box-image-editor-for-icons.md) , [Resim Düzenleyicisi](../windows/image-editor-for-icons.md).  
   
  Bu iletişim kutusunu kullanın:  
   
 -   [Görüntüdeki metnin yazı tipini değiştirme](../windows/changing-the-font-of-text-on-an-image-image-editor-for-icons.md)  
   
- Bu iletişim kutusunu erişmek için tıklatın **yazı tipi** metin aracı iletişim kutusunda düğme.  
+ Bu iletişim kutusuna erişmek için tıklayın **yazı tipi** düğmesine **metin aracı** iletişim kutusu.  
   
  **Yazı tipi**  
- Kullanılabilir yazı tiplerini listeler.  
+ Yazı tiplerini listeler.  
   
  **Yazı tipi stili**  
- Belirtilen yazı tipi için kullanılabilir stiller listeler.  
+ Belirtilen yazı tipi için kullanılabilir stilleri listeler.  
   
  **Boyutu**  
- Belirtilen yazı tipi için kullanılabilir nokta boyutlarını listeler.  
+ Belirtilen yazı tipi noktası kullanılabilir boyutları listeler.  
   
  **Örnek**  
- Metnin belirtilen yazı tipi ayarlarıyla nasıl görüneceğini bir örnek göstermektedir.  
+ Metnin belirtilen yazı tipi ayarlarını ile nasıl görüneceğini gösterir.  
   
  **Komut Dosyası**  
- Belirtilen yazı tipi için kullanılabilen dil komut dosyalarını listeler. Farklı dil komut dosyası seçtiğinizde, karakteri için dil çok dilde belgeler oluşturmak için kullanılabilir hale ayarlayın.  
+ Belirtilen yazı tipi kullanılabilir dil kodları listeler. Farklı dil komut dosyasını seçin, karakter için dil, çok dilli belgeleri oluşturmak için kullanılabilir duruma ayarlanır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)
-

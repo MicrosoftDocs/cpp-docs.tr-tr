@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 371a974742975cec9fab9c2f822fe0540dc57ab0
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 583f05e3496ea6308dac8c7fa37c7e350165e74b
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39643504"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020059"
 ---
 # <a name="synchronize"></a>eşitle
 Hedef yöntemin erişimi eşitler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [synchronize]  
 ```  
   

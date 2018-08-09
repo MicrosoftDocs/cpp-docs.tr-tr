@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d2acc2e24b1030dc09529fdcad444e29f83ae11e
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 2ae538b66e4e8de7611f7b2f276c354a87dad2ef
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651671"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017904"
 ---
 # <a name="weakrefweakref-destructor"></a>WeakRef::~WeakRef Yok Edicisi
 Geçerli örneğinin başlatmasını geri alır **WeakRef** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 ~WeakRef();  
 ```  
   

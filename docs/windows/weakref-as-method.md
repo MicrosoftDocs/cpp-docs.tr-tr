@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 938c7c796bf88d4ea1e49f1f59d274b5017aa7de
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 7dd0dca806c1568d88c20eec6a7ac63e5fb242fb
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39649308"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020362"
 ---
 # <a name="weakrefas-method"></a>WeakRef::As Yöntemi
 Belirtilen ayarlar `ComPtr` belirtilen arabirim temsil etmek için işaretçi parametresi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* ptr  

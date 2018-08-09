@@ -20,22 +20,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c187f0fac784bdd0c162334abcfdc23f8a6c1804
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: b86fe4b06298f75321e8cd5aeae551b9d6fa368b
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608923"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016398"
 ---
 # <a name="inverting-the-colors-in-a-selection-image-editor-for-icons"></a>Seçimdeki Renkleri Ters Çevirme (Simgeler İçin Görüntü Düzenleyicisi)
-Resim Düzenleyicisi görüntü ters renklerle nasıl görüneceği söyleyebilirsiniz. böylece, seçili bir görüntünün parçası olarak renkleri ters çevir için kullanışlı bir yol sağlar.  
+**Görüntü** Düzenleyicisi görüntü ters renklerle nasıl görüneceği söyleyebilirsiniz. böylece, seçili bir görüntünün parçası olarak renkleri ters çevir için kullanışlı bir yol sağlar.  
   
 ### <a name="to-invert-colors-in-the-current-selection"></a>Geçerli seçimdeki renkleri ters çevir için  
   
 1.  Üzerinde **görüntü** menüsünde tıklatın **renkleri**.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -16,15 +16,15 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13d01460e7ed9cb95d92303d82ea136803737331
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9bb362be360986371200c8cde292b3fff5acd7cd
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854658"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020193"
 ---
 # <a name="buffer-overflow"></a>Arabellek Taşması
-Karakter boyutları değişen bir arabelleğe karakter geçirdiğinizde sorunlara neden olabilir. Bir dizeden karakterleri kopyalar, aşağıdaki kodu düşünün `sz`, arabellek içine, `rgch`:  
+Karakter boyutları değişen bir arabelleğe karakter yerleştirdiğinizde sorunlara neden olabilir. Karakterleri bir dizeden kopyalar, aşağıdaki kodu düşünün `sz`, bir arabelleğine `rgch`:  
   
 ```  
 cb = 0;  
@@ -32,7 +32,7 @@ while( cb < sizeof( rgch ) )
     rgch[ cb++ ] = *sz++;  
 ```  
   
- Soru: olan son bayta kalan baytı kopyalanır? Olası Arabellek Taşması çünkü aşağıdaki sorunu çözmez:  
+ Soru: olan son bayt bir ön bayt kopyalanır? Olası Arabellek Taşması çünkü aşağıdaki sorunu çözmez:  
   
 ```  
 cb = 0;  
@@ -44,7 +44,7 @@ while( cb < sizeof( rgch ) )
 }  
 ```  
   
- `_mbccpy` Çağrısı çalışır doğru olanı yapmak: 1 veya 2 bayt olsun tam karakter kopyalayın. Ancak karakter 2 bayt genişliğinde ise kopyalanan son karakterin arabellek uyduğundan değil dikkate almaz. Doğru çözümdür:  
+ `_mbccpy` Çağrı çalışır doğru şeyi yapmak: 1 veya 2 bayt olup tam karakter kopyalayın. Ancak, 2 bayt genişliğinde karakter değilse kopyalanan son karakter arabelleği uymayabilir dikkate almaz. Doğru çözümdür:  
   
 ```  
 cb = 0;  
@@ -56,7 +56,7 @@ while( (cb + _mbclen( sz )) <= sizeof( rgch ) )
 }  
 ```  
   
- Bu kod testleri olası arabellek taşması döngüsünde kullanarak test `_mbclen` gösterdiği geçerli karakteri boyutunu test etmek için `sz`. Çağrı yaparak `_mbsnbcpy` işlevi, kodda değiştirilebilir `while` döngü tek satırlık bir kod ile. Örneğin:  
+ Bu kodu test döngüsünde olası arabellek taşması kullanmadan test `_mbclen` işaret ettiği geçerli karakter boyutunu test etmek için `sz`. Bir çağrı yaparak `_mbsnbcpy` işlevi, kodda değiştirebilirsiniz **sırada** tek satırlık bir kod ile döngüsü. Örneğin:  
   
 ```  
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );  

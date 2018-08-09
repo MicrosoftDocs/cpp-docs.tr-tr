@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e3ed2559457a7fd3231c625b285dea44f81da877
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 1efde876cadd5a8620bef83c37a61b8b471dba8b
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646848"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019244"
 ---
 # <a name="adding-files-to-an-empty-win32-applications"></a>Boş Win32 Uygulamalarına Dosya Ekleme
 ### <a name="to-add-your-files-to-an-empty-windows-desktop-application"></a>Boş bir Windows Masaüstü uygulama dosyalarınızı eklemek için  
@@ -43,4 +43,4 @@ ms.locfileid: "39646848"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Boş Windows masaüstü uygulaması oluşturma](../windows/creating-an-empty-windows-desktop-application.md)   
- [Uygulamaları dağıtma](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Uygulamaları dağıtma](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

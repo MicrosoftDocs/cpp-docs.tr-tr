@@ -26,22 +26,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 384db46d495b342d40dd4f7588583c5b6048810c
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 9c00d4da36df4672c8e701c0a41c88e5014eeae8
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604622"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017840"
 ---
 # <a name="icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons"></a>Simgeler ve İmleçler: Görüntüleme Cihazları için Görüntü Kaynakları (Simgeler İçin Görüntü Düzenleyicisi)
-Simgeler ve İmleçler, farklı boyutlarda birden fazla görüntüler içerir ve düzenleri görüntüleme cihazları farklı türleri için renk grafik kaynaklardır. Ayrıca, bir imleç "etkin nokta," Windows konumuna izlemek için kullandığı konumun sahiptir. Simgeler ve İmleçler hem oluşturulur ve Resim Düzenleyicisi'ni kullanarak, bit eşlemler ve diğer görüntüleri olarak düzenlenebilir.  
+Simgeler ve İmleçler, farklı boyutlarda birden fazla görüntüler içerir ve düzenleri görüntüleme cihazları farklı türleri için renk grafik kaynaklardır. Ayrıca, bir imleç "etkin nokta," Windows konumuna izlemek için kullandığı konumun sahiptir. Simgeler ve İmleçler hem oluşturulur ve düzenlenebilir **görüntü** Düzenleyicisi, bit eşlemler ve diğer görüntüler.  
   
- Yeni simgesi veya imleci oluşturduğunuzda, görüntü Düzenleyicisi, ilk standart türünde bir görüntü oluşturur. Görüntü başlangıçta ekran (saydam) renkle doldurulur. Görüntünün bir imleç etkin nokta başlangıçta sol üst köşesinin (koordinatları 0,0) ise.  
+ Yeni simgesi veya imleci, oluşturduğunuzda **görüntü** Düzenleyicisi ilk standart türünde bir görüntü oluşturur. Görüntü başlangıçta ekran (saydam) renkle doldurulur. Görüntünün bir imleç etkin nokta başlangıçta sol üst köşesinin (koordinatları 0,0) ise.  
   
- Varsayılan olarak, görüntü Düzenleyicisi aşağıdaki tabloda gösterilen cihazlar için ek görüntü oluşturmayı destekler. Genişlik, yükseklik ve renk sayısı parametreleri içine yazarak diğer cihazları için görüntü oluşturabilirsiniz [özel görüntü iletişim kutusu](custom-image-dialog-box-image-editor-for-icons.md).  
+ Varsayılan olarak, **görüntü** Düzenleyicisi aşağıdaki tabloda gösterilen cihazlar için ek görüntüleri oluşturulmasını destekler. Genişlik, yükseklik ve renk sayısı parametreleri içine yazarak diğer cihazları için görüntü oluşturabilirsiniz [özel görüntü iletişim kutusu](custom-image-dialog-box-image-editor-for-icons.md).  
   
 > [!NOTE]
->  Resim Düzenleyicisi'ni kullanarak 32 bitlik resimleri görüntüleyebilirsiniz, ancak onları düzenleyemezsiniz.  
+>  Kullanarak **Resim Düzenleyicisi**, 32 bitlik resimleri görüntüleyebilirsiniz, ancak onları düzenleyemezsiniz.  
   
 |Renk|Genişlik (piksel cinsinden)|Yükseklik (piksel cinsinden)|  
 |-----------|----------------------|-----------------------|  

@@ -21,18 +21,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 14cad19c53e8cd741bf16bab49420169e93f6af6
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: b990046e4f43e70218fc1a7f6eb885638c2051bf
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606978"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015949"
 ---
 # <a name="saving-and-loading-different-color-palettes-image-editor-for-icons"></a>Farklı Renk Paletlerini Kaydetme ve Yükleme (Simgeler İçin Görüntü Düzenleyicisi)
-Kaydet ve içeren renkler paleti yük [renkleri özelleştirilmiş](../windows/customizing-or-changing-colors-image-editor-for-icons.md). (Visual Studio'yu başlattığınızda varsayılan olarak, en son kullanılan renkler paleti otomatik olarak yüklenir.)  
+Kaydet ve yük bir **renkleri** içeren palet [renkleri özelleştirilmiş](../windows/customizing-or-changing-colors-image-editor-for-icons.md). (Varsayılan olarak, **renkleri** en son kullanılan palet Visual Studio'yu başlattığınızda otomatik olarak yüklenir.)  
   
 > [!TIP]
->  Resim Düzenleyicisi'ni varsayılan renkler paleti geri yüklemek için hiçbir yol olduğundan, böylece bir kolayca varsayılan ayarları geri standard.pal veya default.pal gibi bir ad altında varsayılan renkler paleti kaydetmeniz gerekir.  
+>  Bu yana **görüntü** Düzenleyicisi olan varsayılan geri yüklemek için anlamına gelir **renkleri** paleti varsayılan kaydetmelisiniz **renkleri** palet gibi bir ad altında  *Standard.PAL* veya *default.pal* böylece bir kolayca varsayılan ayarları geri yükleyebilirsiniz.  
   
 ### <a name="to-save-a-custom-colors-palette"></a>Özel renkler paleti kaydetmek için  
   
@@ -46,10 +46,9 @@ Kaydet ve içeren renkler paleti yük [renkleri özelleştirilmiş](../windows/c
   
 1.  Gelen **görüntü** menüsünde seçin **palet Yükle**.  
   
-2.  İçinde [renk paletini Yükle iletişim kutusu](../windows/load-palette-colors-dialog-box-image-editor-for-icons.md)doğru dizine gidin ve yüklemek istediğiniz paleti seçin. Renk paletleri .pal dosya uzantısıyla kaydedilir.  
+2.  İçinde [renk paletini Yükle iletişim kutusu](../windows/load-palette-colors-dialog-box-image-editor-for-icons.md)doğru dizine gidin ve yüklemek istediğiniz paleti seçin. **Renk** paletleri .pal dosya uzantısıyla kaydedilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

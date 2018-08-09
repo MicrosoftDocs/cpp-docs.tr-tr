@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e975ab71e4556c236ecd2e92f2d11a949a68ba5a
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: eb15dbd56656c72bc0f96491d24fc43fb96de84c
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608058"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017818"
 ---
 # <a name="moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı Tablosu Girişini Başka Bir Kaynak Betik Dosyasına Taşıma veya Kopyalama
 ### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına taşınacak veya kopyalanacak  
@@ -45,7 +45,6 @@ ms.locfileid: "39608058"
     >  Ayrıca, kopyalama ve yapıştırma için kısayol tuşlarını kullanabilirsiniz.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

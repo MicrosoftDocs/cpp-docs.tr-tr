@@ -17,19 +17,19 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c1e4ac8898b48c4b64d0b12b945ab45b1c5f1436
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: a575538d2527aba25d62dff1a8ba4d89402f5cfb
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606162"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019338"
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 Tamsayı taşması önlemek için tamsayı temelleri genişletir ve farklı tamsayı türleri karşılaştırmanıza olanak tanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename T, typename E = _SAFEINT_DEFAULT_ERROR_POLICY>  
 class SafeInt;  
 ```  
@@ -193,19 +193,19 @@ class SafeInt;
   
  Kullanırken dikkatli olun **SafeInt** ile birlikte sınıfı `?:` Üçlü işleci. Aşağıdaki kod satırını göz önünde bulundurun.  
   
-```  
+```cpp  
 Int x = flag ? SafeInt<unsigned int>(y) : -1;  
 ```  
   
  Derleyici için dönüştürür:  
   
-```  
+```cpp  
 Int x = flag ? SafeInt<unsigned int>(y) : SafeInt<unsigned int>(-1);  
 ```  
   
  Varsa `flag` olduğu **false**, derleyici için -1 değerini atamak yerine bir özel durum oluşturduğunda `x`. Bu nedenle bu davranışı önlemek için aşağıdaki satırı kullanmak için doğru kodu gereklidir.  
   
-```  
+```cpp  
 Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;  
 ```  
   

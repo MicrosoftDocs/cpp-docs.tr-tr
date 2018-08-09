@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ad2c0a438eee870ac86301f0a56ef525eb53d8c8
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: bdb87fe43b5cc6a5d2c141ac534e3b5e781f91e8
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608657"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019923"
 ---
 # <a name="interfacetraitscasttounknown-method"></a>InterfaceTraits::CastToUnknown Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename T>  
 static __forceinline IUnknown* CastToUnknown(  
    _In_ T* ptr  

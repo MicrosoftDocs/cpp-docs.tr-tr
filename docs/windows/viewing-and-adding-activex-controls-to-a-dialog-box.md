@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ad663760efb5f969a7b7cf1b14d187b0382197b7
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 2939d5d99c0657e6caa68e8cc6fbb9e6361fcaf7
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39643984"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017048"
 ---
 # <a name="viewing-and-adding-activex-controls-to-a-dialog-box"></a>İletişim Kutusuna ActiveX Denetimleri Ekleme ve Görüntüleme
 Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak tanır.  
@@ -51,7 +51,7 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak tanır.
     > [!CAUTION]
     >  ActiveX denetimleri, sisteminizdeki tüm dağıtmak için geçerli olmayabilir. Lütfen denetimleri yüklü yazılımlar için lisans sözleşmesi bakın veya yazılım şirketine başvurun.  
   
-     Kolay erişim için araç kutusu penceresini denetimleri yerleştirebilirsiniz. Daha fazla bilgi için [özelleştirme araç kutusu iletişim kutusunda](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb).  
+     Denetimlerinde yerleştirebilirsiniz **araç kutusu** penceresi kolay erişim için. Daha fazla bilgi için [özelleştirme araç kutusu iletişim kutusunda](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb).  
   
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   

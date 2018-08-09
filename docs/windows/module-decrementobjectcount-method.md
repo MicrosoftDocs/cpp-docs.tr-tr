@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: adcd964f07426fcdcd3b0d68f946e3d8af6f389f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 075c1ae368df59e735d90d8d98d9e8fd23ac8ad9
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875961"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017350"
 ---
 # <a name="moduledecrementobjectcount-method"></a>Module::DecrementObjectCount Yöntemi
-Nesne sayısı modül tarafından izlenen azaltır.  
+Nesne sayısını modülü tarafından izlenen azaltır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 virtual long DecrementObjectCount();  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Azaltma işlemi önce sayısı.  
+ Azaltma işleminden önce sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

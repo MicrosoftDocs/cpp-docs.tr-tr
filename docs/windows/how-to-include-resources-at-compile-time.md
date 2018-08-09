@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 856d448b096910c322750eccc7447689b08b328e
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 28374482abd5d2e039c92adbd34f261bdc259b9d
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571350"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018922"
 ---
 # <a name="how-to-include-resources-at-compile-time"></a>Nasıl Yapılır: Derleme Sırasında Kaynak Ekleme
 Normalde tüm kaynaklar bir kaynak betiği (.rc) dosyasında varsayılan düzenini çalışmak daha kolay olur. Ancak, kaynaklar diğer dosyalar geçerli projenizi derleme zamanında bunları listeleyerek ekleyebilirsiniz **derleme zamanı yönergeleri** kutusunda [kaynak içerikleri iletişim kutusu](../windows/resource-includes-dialog-box.md).  
@@ -37,7 +37,7 @@ Normalde tüm kaynaklar bir kaynak betiği (.rc) dosyasında varsayılan düzeni
   
 -   .Rc dosyasını kaydederken, silinecek değil kaynak deyimleri için yorum eklemek için.  
   
-     Kaynak düzenleyicileri .rc veya resource.h dosyaları doğrudan okunmaz. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derlenir. Bu dosya, bir derleme adımdır ve yalnızca sembolik verileri depolar. (Örneğin, açıklamalar) sembolik değil bilgi işlem ile normal bir derleme olarak derleme işlemi sırasında göz ardı edilir. .Rc dosyasıyla .aps dosyası zaman uyumsuz olarak alır her .rc dosyası yeniden oluşturuldu (kaydettiğinizde, örneğin, kaynak düzenleyicisini .rc dosyasını ve resource.h dosyasını geçersiz kılar). Herhangi bir değişiklik kaynaklardaki .rc dosyasına eklenen kalır ancak .rc dosyasının üzerine sonra açıklamalar her zaman kaybolacak.  
+     Kaynak düzenleyicileri .rc doğrudan okunmaz veya `resource.h` dosyaları. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derlenir. Bu dosya, bir derleme adımdır ve yalnızca sembolik verileri depolar. (Örneğin, açıklamalar) sembolik değil bilgi işlem ile normal bir derleme olarak derleme işlemi sırasında göz ardı edilir. .Rc dosyasıyla .aps dosyası zaman uyumsuz olarak alır her .rc dosyası yeniden oluşturuldu (kaydettiğinizde, örneğin, kaynak düzenleyicisini .rc dosyasının üzerine yazar ve `resource.h` dosyası). Herhangi bir değişiklik kaynaklardaki .rc dosyasına eklenen kalır ancak .rc dosyasının üzerine sonra açıklamalar her zaman kaybolacak.  
   
 -   Zaten geliştirdiğinizde ve test kaynakları içerecek şekilde ve daha fazla değişiklik gerekmez. (Dahil edilir, ancak bir .rc uzantısı yoksa tüm dosyaları kaynak düzenleyicileri tarafından düzenlenebilir olmayacaktır.)  
   
@@ -58,7 +58,6 @@ Normalde tüm kaynaklar bir kaynak betiği (.rc) dosyasında varsayılan düzeni
      Bu şekilde dahil dosyalarındaki kaynaklar, yürütülebilir dosya, derleme zamanında yapılır. Projenizin ana .rc dosyası üzerinde çalışırken bunlar doğrudan düzenlemek veya değişiklik için kullanılabilir değildir. Ayrı olarak eklenen .rc dosyası açmanız gerekir. Dahil edilir, ancak bir .rc uzantısı yoksa tüm dosyaları kaynak düzenleyicileri tarafından düzenlenebilir olmayacaktır.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

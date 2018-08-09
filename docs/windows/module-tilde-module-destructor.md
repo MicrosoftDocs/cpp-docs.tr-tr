@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6f6c27924788be435a9388c1f8e3d24560a4279e
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 11b91d10ec71e83b89f7523224f6b87ddd427872
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604323"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019434"
 ---
 # <a name="modulemodule-destructor"></a>Module::~Module Yok Edicisi
 Geçerli örneğinin başlatmasını geri alır **Modülü** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 virtual ~Module();  
 ```  
   

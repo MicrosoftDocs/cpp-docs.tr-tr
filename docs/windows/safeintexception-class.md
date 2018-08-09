@@ -17,19 +17,19 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cbcb04229ea0d60c7bc5abfeb1db3f671c92c6b8
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: a08db707afa2c307eab1dabdd0b20dad81e1a03e
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604986"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016346"
 ---
 # <a name="safeintexception-class"></a>SafeIntException Sınıfı
 `SafeInt` Sınıfının kullandığı **Safeıntexception** matematiksel işlem tamamlanamıyor nedenini belirlemek için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 class SafeIntException;  
 ```  
   

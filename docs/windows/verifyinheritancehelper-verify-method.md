@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 879f5fa117f0f2bc444243f540925d64a2b824b0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 04bf01b5fad5a9fec579e347497a28b5e8abb861
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889881"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018822"
 ---
 # <a name="verifyinheritancehelperverify-method"></a>VerifyInheritanceHelper::Verify Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 static void Verify();  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli şablon parametrelerle belirtilen iki arabirim sınar ve bir arabirim diğer türetilmiş olup olmadığını belirler.  
+ Geçerli şablon parametreler ile belirtilen iki arabirim test eder ve bir arabirimin diğer türetilip türetilmediğini belirler.  
   
- Bir arabirim diğer alınmadığından, bir hata yayınlanır.  
+ Bir arabirim diğerinden türetilmiş değil, bir hata yayılır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

@@ -18,34 +18,34 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f4edcae610f17409c319c7b4bd39dc137e1211e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5afb7bd027fca215e1c10c111132ee881ad49548
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858708"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018071"
 ---
 # <a name="international-enabling"></a>Uluslararası Etkinleştirme
-Çoğu geleneksel C ve C++ kodu uluslararası uygulamalarda düzgün çalışmayan varsayımlarda karakter ve dize hakkında bulunur. MFC ve çalışma zamanı kitaplığı Unicode ya da MBCS desteklerken, da hala yapmanız gereken iş yok. Size yol göstermesi için bu bölümde Visual c++'ta "uluslararası etkinleştirme" anlamı açıklanmaktadır:  
+Uluslararası uygulamalar için düzgün çalışmayan karakter ve dize hakkında varsayımlar çoğu geleneksel C ve C++ kodu sağlar. MFC ve çalışma zamanı kitaplığı Unicode veya MBCS desteklese de da hala yapmanız iş yok. Size yol göstermesi için bu bölümde Visual C++'da "uluslararası etkinleştirme" ne anlama geldiğini açıklanmaktadır:  
   
--   Unicode ve MBCS MFC işlevi parametresi listelerinde taşınabilir veri türleri yoluyla etkin ve dönüş türleri. Bu tür koşullu simgenin olup tanımladığına bağlı olarak uygun şekilde tanımlanır **_UNICODE** veya sembol **_MBCS** (yani DBCS). MFC kitaplıkları farklı türevleri, bu iki simgeleri bağlı olarak tanımladığına uygulamanızla birlikte otomatik olarak bağlanır.  
+-   Unicode ve MBCS MFC işlev parametre listeleri taşınabilir veri türleri yoluyla etkin ve dönüş türleri. Bu tür simge olup tanımladığına bağlı olarak uygun şekilde koşullu olarak tanımlanmıştır `_UNICODE` veya sembol `_MBCS` (yani DBCS). MFC kitaplıkları farklı çeşitlerini bağlı olarak, bu iki simge tanımladığına uygulamanızla birlikte otomatik olarak bağlanır.  
   
--   Sınıf kitaplığı kodu, doğru Unicode ya da MBCS davranışını sağlamak için taşınabilir çalışma zamanı işlevleri ve diğer yolları kullanır.  
+-   Sınıf kitaplığı kodunu Unicode veya MBCS doğru davranışı sağlamak açısından taşınabilir çalışma zamanı işlevleri ve diğer yolları kullanır.  
   
 -   Kodunuzda belirli duruma getirme görevlerini hala işlemesi gerekir:  
   
     -   MFC altında herhangi bir ortamda taşınabilir hale aynı taşınabilir çalışma zamanı işlevleri kullanın.  
   
-    -   Değişmez değer dizeleri ve karakterleri herhangi bir ortamda altında taşınabilir hale kullanarak **_T** makrosu. Daha fazla bilgi için bkz: [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).  
+    -   Değişmez değer dizeleri ve karakter herhangi bir ortamda altında taşınabilir hale kullanarak `_T` makrosu. Daha fazla bilgi için [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).  
   
-    -   MBCS altında dizeleri ayrıştırırken önlemleri alın. Unicode altında şunlara gerekli değildir. Daha fazla bilgi için bkz: [MBCS programlama ipuçları](../text/mbcs-programming-tips.md).  
+    -   MBCS altında dizelere ayrıştırılırken önlemleri alın. Unicode altında şunlara gerekli değildir. Daha fazla bilgi için [MBCS programlama ipuçları](../text/mbcs-programming-tips.md).  
   
-    -   Uygulamanızda ANSI (8-bit) ve Unicode (16-bit) karakterleri karıştırmak istiyorsanız dikkatli olun. Bazı bölümleri programınızın ANSI karakter ve diğerleri Unicode karakterler kullanmak da mümkündür, ancak aynı dizede karıştıramazsınız.  
+    -   Uygulamanızda ANSI (8-bit) ve Unicode (16-bit) karakter karışımı varsa ilgileniriz. ANSI programınızın bazı bölümlerinde, Unicode karakter diğerleri kullanmak da mümkündür, ancak aynı dizesinde karıştırılamaz.  
   
-    -   Uygulamanızda olmayan sabit kod dizeleri yapın. Bunun yerine, bunları uygulamanın .rc dosyasına ekleyerek STRINGTABLE kaynakları yapın. Uygulamanızın kaynak kodunu değişiklikleri ya da yeniden derleme gerektirmeden sonra yerelleştirilmiş olmalıdır. STRINGTABLE kaynakları hakkında daha fazla bilgi için bkz: [Dize Düzenleyicisi](../windows/string-editor.md).  
+    -   Uygulamanızı sabit dizelerde yapın. Bunun yerine, bunları STRINGTABLE kaynakları uygulamanın .rc dosyasına ekleyerek olun. Uygulamanızın kaynak kodu değişiklikleri veya yeniden derleme gerek kalmadan ardından yerelleştirilmiş olmalıdır. STRINGTABLE kaynakları hakkında daha fazla bilgi için bkz. [Dize Düzenleyicisi](../windows/string-editor.md).  
   
 > [!NOTE]
->  Karakter kodları 0x80'den büyük olan aksanlı harfler gibi bazı karakterler Avrupa ve MBCS karakter kümesi vardır. Çoğu kod işaretli karakterler kullandığından, 0x80'den büyük bu karakterler için dönüştürüldüğünde oturum Genişletilmiş `int`. Negatif olan oturum genişletilmiş karakterler dizinler dizinin dışına dizi dizin oluşturma için bir sorun olmasıdır. Japonca gibi MBCS kullanan diller de benzersizdir. 1 veya 2 bayt karakter oluşabilir olduğundan her zaman aynı anda hem bayt değiştirmelisiniz.  
+>  Bazı karakterler, aksanlı harfler, 0x80'den büyük olan karakter kodlarını gibi Avrupa ve MBCS karakter kümesi vardır. Çoğu kod imzalı karakterler kullandığından, 0x80'den büyük bu karakterler için dönüştürüldüğünde işaret Genişletilmiş **int**. Negatif olan işaret Genişletilmiş karakter dizinini oluşturan dizinin dışında dizi dizini oluşturma için bir sorun olmasıdır. Japonca gibi bir MBCS kullanan diller de benzersizdir. Bir karakter, 1 veya 2 bayt oluşabilir olduğundan her zaman aynı anda iki bayt değiştirmelisiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Unicode ve MBCS](../text/unicode-and-mbcs.md)   

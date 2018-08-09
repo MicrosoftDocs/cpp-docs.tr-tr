@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07258b2f7416b0747be81075f4c037a6be54e7a6
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 3ed96762429aa0d4a442fb7a82db310146a3424d
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647079"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019975"
 ---
 # <a name="uuid-c-attributes"></a>uuid (C++ Öznitelikleri)
 Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ uuid(  
    "uuid"  
 ) ]  

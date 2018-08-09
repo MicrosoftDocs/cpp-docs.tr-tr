@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3552a8c64260345b6a956878c459182089e1af0f
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 32170ca02a9d36667ae4d718362774afa0711c60
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39607553"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019949"
 ---
 # <a name="propget"></a>propget
 Bir özelliği erişimci işlevi belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [propget]  
 ```  
   

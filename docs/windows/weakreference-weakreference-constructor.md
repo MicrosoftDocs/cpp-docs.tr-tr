@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c872b311e6fa7aa16d7118a13bc69ef2c7ef9cc4
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 04f09f98148a54ac87add3d52bcba1cffa0c1c14
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652655"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016427"
 ---
 # <a name="weakreferenceweakreference-constructor"></a>WeakReference::WeakReference Oluşturucusu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 WeakReference();  
 ```  
   

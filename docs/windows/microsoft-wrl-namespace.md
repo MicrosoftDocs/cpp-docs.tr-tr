@@ -24,19 +24,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 37d4d5391da4dfb6e25754eb1350224acb97e972
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b3b1f5d0472fbe9ceb997460b525153a9ad87a69
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881656"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020258"
 ---
 # <a name="microsoftwrl-namespace"></a>Microsoft::WRL Ad Alanı
-Windows çalışma zamanı C++ Şablon kitaplığı yapmak temel türlerini tanımlar.  
+Windows çalışma zamanı C++ Şablon Kitaplığı ' olun temel türleri tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 namespace Microsoft::WRL;  
 ```  
   
@@ -52,45 +52,45 @@ namespace Microsoft::WRL;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ActivationFactory Sınıfı](../windows/activationfactory-class.md)|Windows çalışma zamanı tarafından etkinleştirilecek bir veya daha fazla sınıfları sağlar.|  
-|[AsyncBase Sınıfı](../windows/asyncbase-class.md)|Windows çalışma zamanı zaman uyumsuz durum makinesinin uygular.|  
-|[ClassFactory Sınıfı](../windows/classfactory-class.md)|Temel işlevselliğini uygulayan `IClassFactory` arabirimi.|  
-|[ComPtr Sınıfı](../windows/comptr-class.md)|Oluşturur bir *akıllı işaretçi* şablon parametresi tarafından belirtilen arabirimi temsil eden tür. ComPtr otomatik olarak bir başvuru sayısı için temel arabirim işaretçisi tutar ve başvuru sayısı sıfır olarak gittiğinde arabirimi serbest bırakır.|  
-|[DeferrableEventArgs Sınıfı](../windows/deferrableeventargs-class.md)|Deferrals için olay bağımsız değişken türleri için kullanılan bir şablon sınıfı.|  
-|[EventSource Sınıfı](../windows/eventsource-class.md)|Bir olayı temsil eder. `EventSource` üye işlevleri eklemek, kaldırmak ve olay işleyicilerini çağırma.|  
-|[FtmBase Sınıfı](../windows/ftmbase-class.md)|Ücretsiz iş parçacıklı Sıralayıcı nesneyi temsil eder.|  
+|[ActivationFactory Sınıfı](../windows/activationfactory-class.md)|Windows çalışma zamanı tarafından etkinleştirilmesi bir veya daha fazla sınıflar sağlar.|  
+|[AsyncBase Sınıfı](../windows/asyncbase-class.md)|Windows çalışma zamanı zaman uyumsuz Durum makinesi uygular.|  
+|[ClassFactory Sınıfı](../windows/classfactory-class.md)|Temel işlevselliğini uygular `IClassFactory` arabirimi.|  
+|[ComPtr Sınıfı](../windows/comptr-class.md)|Oluşturur bir *akıllı işaretçi* şablon parametresi tarafından belirlenen arabirimi temsil eden tür. ComPtr otomatik olarak, temel arabirim işaretçisi için bir başvuru sayısını tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.|  
+|[DeferrableEventArgs Sınıfı](../windows/deferrableeventargs-class.md)|Gönderilemeyenler için olay bağımsız değişken türleri için kullanılan bir şablon sınıfı.|  
+|[EventSource Sınıfı](../windows/eventsource-class.md)|Bir olayı temsil eder. `EventSource` üye işlevleri ekleme, kaldırma ve olay işleyicilerini çağırır.|  
+|[FtmBase Sınıfı](../windows/ftmbase-class.md)|Ücretsiz iş parçacıklı bir Sıralayıcı nesnesini temsil eder.|  
 |[Modül Sınıfı](../windows/module-class.md)|İlgili nesneler koleksiyonunu temsil eder.|  
-|[RuntimeClass Sınıfı](../windows/runtimeclass-class.md)|Belirtilen sayıda arabirimleri devralır ve belirtilen Windows çalışma zamanı, klasik COM ve zayıf başvuru desteği sağlar başlatılan bir sınıfı temsil eder.|  
-|[SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)|Windows çalışma zamanı veya klasik COM temel sınıf oluşturmak için temel bir mekanizma sağlar.|  
-|[SimpleClassFactory Sınıfı](../windows/simpleclassfactory-class.md)|Bir taban sınıf oluşturmak için temel bir mekanizma sağlar.|  
-|[WeakRef Sınıfı](../windows/weakref-class.md)|Temsil eden bir *zayıf başvuru* yalnızca Windows çalışma zamanı tarafından değil klasik COM kullanılabilir Zayıf başvuru olabilir ya da erişilebilir olmayabilir bir nesneyi temsil eder.|  
+|[RuntimeClass Sınıfı](../windows/runtimeclass-class.md)|Belirtilen sayıda arabirimleri devralan ve belirtilen Windows çalışma zamanı klasik COM ve zayıf başvuru desteği sağlayan örneklenmiş bir sınıfı temsil eder.|  
+|[SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)|Bir Windows çalışma zamanı veya klasik COM temel sınıfı oluşturmak için temel bir mekanizma sağlar.|  
+|[SimpleClassFactory Sınıfı](../windows/simpleclassfactory-class.md)|Bir temel sınıf oluşturmak için temel bir mekanizma sağlar.|  
+|[WeakRef Sınıfı](../windows/weakref-class.md)|Temsil eden bir *zayıf başvuru* yalnızca Windows çalışma zamanı tarafından değil klasik COM kullanılabilir Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.|  
   
 ### <a name="structures"></a>Yapılar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[ChainInterfaces Yapısı](../windows/chaininterfaces-structure.md)|Arabirim kimlikleri kümesine uygulanabilir doğrulama ve başlatma işlevleri belirtir.|  
-|[CloakedIid Yapısı](../windows/cloakediid-structure.md)|RuntimeClass, uygular ve Chainınterfaces şablonların belirtilen arabirim IID listesinde erişilebilir değil gösterir.|  
-|[Implements Yapısı](../windows/implements-structure.md)|QueryInterface ve GetIid için belirtilen arabirimlerini uygular.|  
-|[MixIn Yapısı](../windows/mixin-structure.md)|Bir çalışma zamanı sınıf Windows Çalışma Zamanı Modülü arabirimler, varsa ve daha sonra klasik COM arabirimleri türetilen sağlar.|  
-|[RuntimeClassFlags Yapısı](../windows/runtimeclassflags-structure.md)|Öğesinin bir örneği için türünü içeren bir [RuntimeClass](../windows/runtimeclass-class.md).|  
+|[CloakedIid Yapısı](../windows/cloakediid-structure.md)|Gösterir `RuntimeClass`, `Implements` ve `ChainInterfaces` şablonları belirtilen arabirim IID'si listesinde erişilebilir değil.|  
+|[Implements Yapısı](../windows/implements-structure.md)|Implements `QueryInterface` ve `GetIid` belirtilen arabirimleri için.|  
+|[MixIn Yapısı](../windows/mixin-structure.md)|Bir çalışma zamanı sınıf varsa Windows çalışma zamanı arabirimleri ve ardından klasik COM arabirimleri türetilen sağlar.|  
+|[RuntimeClassFlags Yapısı](../windows/runtimeclassflags-structure.md)|Örneğinin türünü içeren bir [RuntimeClass](../windows/runtimeclass-class.md).|  
   
 ### <a name="enumerations"></a>Numaralandırmalar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[AsyncResultType Sabit Listesi](../windows/asyncresulttype-enumeration.md)|GetResults() yöntemi tarafından döndürülen sonuç türü belirtir.|  
-|[ModuleType Sabit Listesi](../windows/moduletype-enumeration.md)|Bir modülü bir işlem sunucusuna veya bir işlem dışı sunucusuna desteklemesi gerekip gerekmediğini belirtir.|  
-|[RuntimeClassType Sabit Listesi](../windows/runtimeclasstype-enumeration.md)|Türünü belirtir. [RuntimeClass](../windows/runtimeclass-class.md) desteklenen örneği.|  
+|[AsyncResultType Sabit Listesi](../windows/asyncresulttype-enumeration.md)|Tarafından döndürülen sonuç türü belirtir `GetResults()` yöntemi.|  
+|[ModuleType Sabit Listesi](../windows/moduletype-enumeration.md)|Bir modülü bir işlem sunucusu veya bir işlem dışı sunucu desteklemesi gerekip gerekmediğini belirtir.|  
+|[RuntimeClassType Sabit Listesi](../windows/runtimeclasstype-enumeration.md)|Türünü belirten [RuntimeClass](../windows/runtimeclass-class.md) desteklenen örneği.|  
   
 ### <a name="functions"></a>İşlevler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[AsWeak İşlevi](../windows/asweak-function.md)|Belirtilen bir örneğine zayıf başvuru alır.|  
-|[Geri çağırma işlevi](../windows/callback-function-windows-runtime-cpp-template-library.md)|Bir geri çağırma yöntemi, üye işlevi olan bir nesne oluşturur.|  
-|[CreateActivationFactory İşlevi](../windows/createactivationfactory-function.md)|Windows çalışma zamanı tarafından etkinleştirilebilir belirtilen sınıfının örnekleri oluşturan bir Üreteç oluşturur.|  
-|[CreateClassFactory İşlevi](../windows/createclassfactory-function.md)|Belirtilen sınıf örnekleri oluşturan bir Üreteç oluşturur.|  
+|[AsWeak İşlevi](../windows/asweak-function.md)|Belirtilen bir örneğe zayıf bir başvuru alır.|  
+|[Geri çağırma işlevi](../windows/callback-function-windows-runtime-cpp-template-library.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|  
+|[CreateActivationFactory İşlevi](../windows/createactivationfactory-function.md)|Windows çalışma zamanı tarafından etkinleştirilebilen belirtilen sınıf örneklerini oluşturan bir Üreteç oluşturur.|  
+|[CreateClassFactory İşlevi](../windows/createclassfactory-function.md)|Belirtilen sınıfın örneklerini oluşturan bir Üreteç oluşturur.|  
 |[Make İşlevi](../windows/make-function.md)|Belirtilen Windows çalışma zamanı sınıf başlatır.|  
   
 ## <a name="requirements"></a>Gereksinimler  

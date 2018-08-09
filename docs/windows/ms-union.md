@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c20b795231cad936f30ef329f015b6ff691aa0d3
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 52e91e8084b1f055002aba7c2f544002d31feffc
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606705"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020245"
 ---
 # <a name="msunion"></a>ms_union
 Nonencapsulated birleşimler ağ veri gösterimi hizalamasını denetler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ms_union]  
 ```  
   

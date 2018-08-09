@@ -19,41 +19,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 486d4c6c89a43c9d91c655911fa7fee8a31ebd32
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2bbd7a6048e47f1f2958a438c79b828f5aca5b66
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880198"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020020"
 ---
 # <a name="resource-symbols-dialog-box"></a>Kaynak Sembolleri İletişim Kutusu
-**Kaynak semboller** iletişim kutusu, yeni kaynak semboller eklemek için görüntülenen veya kaynak kodu konumda bir simge kullanımda olduğu için Atla sembolleri değiştirme sağlar.  
+**Kaynak sembolleri** iletişim kutusu, yeni kaynak sembolleri eklemek için görüntülenen ya da sembol kullanımda olduğu konumda kaynak kodu atlamak simgeleri değiştirme tanır.  
   
  **Ad**  
- Simgenin adını görüntüler. Daha fazla bilgi için bkz: [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md).  
+ Simgenin adını görüntüler. Daha fazla bilgi için [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md).  
   
  **Değer**  
- Sembolün sayısal değerini görüntüler. Daha fazla bilgi için bkz: [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).  
+ Sembolün sayısal değerini görüntüler. Daha fazla bilgi için [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).  
   
  **Kullanımda**  
- Seçildiğinde, simge bir veya daha fazla kaynak tarafından kullanılmakta olduğunu belirtir. Kaynak veya kaynaklardan kutusu tarafından kullanılan listelenir.  
+ Bu onay kutusu seçildiğinde, simge bir veya daha fazla kaynak tarafından kullanılmakta olduğunu belirtir. Kaynak veya kaynak kutusu tarafından kullanılan listelenir.  
   
- **Salt okunur simgelerini göster**  
- Seçili olduğunda, salt okunur kaynakları görüntüler. Varsayılan olarak, kaynak komut dosyanızda yalnızca değiştirilebilir kaynakları kaynak sembol iletişim kutusu görüntüler, ancak bu seçenek ile değiştirilebilir kaynakları kalın metin olarak görünür ve salt okunur kaynakları düz metin olarak görünür.  
+ **Salt okunur sembolleri Göster**  
+ Bu onay kutusu seçildiğinde, salt okunur kaynakları görüntüler. Varsayılan olarak, **kaynak sembolü** iletişim kutusu, kaynak kod dosyanıza yalnızca değiştirilebilir kaynakları görüntüler ancak bu seçenek belirtilmişse, değiştirilebilir kaynakları kalın metin olarak görüntülenir ve salt okunur kaynaklar düz metin olarak görünür.  
   
  **Tarafından kullanılan**  
- Kaynak veya sembolleri listede seçilen simgesini kullanarak kaynakları görüntüler. Belirli bir kaynak için Düzenleyici'ye taşımak için kaynak seçin **kullanılan tarafından** kutusuna ve tıklatın **görünüm kullanım**. Daha fazla bilgi için bkz: [verilen bir sembol için kaynak Düzenleyicisini açma](../windows/opening-the-resource-editor-for-a-given-symbol.md).  
+ Kaynak veya kaynak sembolleri listede seçilen sembolünü kullanarak görüntüler. Belirli bir kaynak için düzenleyici taşımak için kaynağı seçin **kullanılan tarafından** kutusuna ve tıklatın **görünüm kullanımı**. Daha fazla bilgi için [verilen bir sembol için kaynak Düzenleyicisini açma](../windows/opening-the-resource-editor-for-a-given-symbol.md).  
   
  **Yeni**  
- Adı tanımlamak yeni sembol iletişim kutusu açılır ve gerekirse, yeni bir simgesel kaynak tanımlayıcısı için bir değer. Daha fazla bilgi için bkz: [yeni semboller oluşturma](../windows/creating-new-symbols.md).  
+ Açılır **yeni sembol** iletişim kutusunda, ad tanımlamanıza olanak sağlar ve gerekirse, yeni bir sembolik kaynak tanımlayıcısı için bir değer. Daha fazla bilgi için [yeni semboller oluşturma](../windows/creating-new-symbols.md).  
   
- **değiştirme**  
- Adı veya bir simge değerini değiştirmenize izin verir sembolü Değiştir iletişim kutusu açılır. Simgenin bir denetim veya kaynak kullanımda ise, simge yalnızca karşılık gelen kaynak Düzenleyicisi'nden değiştirilebilir. Daha fazla bilgi için bkz: [atanmamış sembolleri değiştirme](../windows/changing-unassigned-symbols.md).  
+ **Değişiklik**  
+ Açılır **sembol değiştirme** adı ya da bir sembolün değerini değiştirmek izin veren iletişim kutusu. Simge bir denetim veya kaynağı için ise, simge yalnızca ilgili kaynak Düzenleyicisi'nden değiştirilebilir. Daha fazla bilgi için [atanmamış sembolleri değiştirme](../windows/changing-unassigned-symbols.md).  
   
- **Görünüm kullanın**  
- Simgenin karşılık gelen kaynak düzenleyicisinde içeren kaynak açar. Daha fazla bilgi için bkz: [verilen bir sembol için kaynak Düzenleyicisini açma](../windows/opening-the-resource-editor-for-a-given-symbol.md).  
-  
-
+ **Görünüm kullanımı**  
+ Karşılık gelen kaynak Düzenleyicisi sembolü içeren kaynak açılır. Daha fazla bilgi için [verilen bir sembol için kaynak Düzenleyicisini açma](../windows/opening-the-resource-editor-for-a-given-symbol.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

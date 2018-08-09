@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07f9c9f93b213b13694f2741b5210614626d82f9
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: a30598e617a4c68559d6932e20dadaf7f83dc2eb
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651528"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015526"
 ---
 # <a name="source-c"></a>kaynak (C++)
 Sınıfta, COM nesnesinin kaynak arabirimleri için bağlantı noktalarını belirtir. Özellik veya yöntem üyesi bir nesne veya bir olay kaynağı olan Değişken döndürür gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ source(  
    interfaces  
 ) ]  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f25e85e59769f822a6c732cc0911c564c0104f96
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: aa0d48ba96c550ff6ee1248dccd0b4c8e3021212
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651086"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020310"
 ---
 # <a name="simpleclassfactorycreateinstance-method"></a>SimpleClassFactory::CreateInstance Yöntemi
 
@@ -39,7 +39,6 @@ STDMETHOD( CreateInstance )(
 ```
 
 ### <a name="parameters"></a>Parametreler
-
 *pUnkOuter*  
 Olmalıdır **nullptr**; Aksi takdirde CLASS_E_NOAGGREGATION dönüş değeridir.
 
@@ -57,7 +56,7 @@ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa &#95; &#95;WRL_STRICT&#95; &#95; olan tanımlanan, türetilen sınıf şablonu parametresinde belirtilen temel sınıf değil, bir onay hata yayıldığını [RuntimeClass](../windows/runtimeclass-class.md), ya da ClassicCom ile yapılandırılmamış veya WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
+Varsa `__WRL_STRICT__` olan tanımlanan, türetilen sınıf şablonu parametresinde belirtilen temel sınıf değil, bir onay hata yayıldığını [RuntimeClass](../windows/runtimeclass-class.md), ya da ClassicCom veya WinRtClassicComMix ile yapılandırılmamış [ RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 

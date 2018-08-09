@@ -17,19 +17,19 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a5b1c5fed776e5e9312843160a740fd3d801b196
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 07311e916fa78f1ba946ad4631905968912f8195
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608553"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019072"
 ---
 # <a name="safecast"></a>SafeCast
 Bir başka bir türe sayı türü çevirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeCast (  
    const T From,  

@@ -20,17 +20,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6aae190e20776c252b7f40651d5c0bdb13111dab
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 21e6d35a555ecff327bcd4b68318c17da194cb41
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606256"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018341"
 ---
 # <a name="menu-editor"></a>Menü Düzenleyicisi
-Menü komutları mantıksal ve bulma kolay bir şekilde Yerleştir olanak sağlar. Menü düzenleyicisi ile oluşturabilir ve menüler doğrudan tamamlanmış uygulamanızdaki bir çok benzeyen bir menü çubuğu birlikte çalışarak Düzenle.  
+Menü komutları mantıksal ve bulma kolay bir şekilde Yerleştir olanak sağlar. İle **menü** Düzenleyicisi, oluşturabilir ve menüler doğrudan tamamlanmış uygulamanızdaki bir çok benzeyen bir menü çubuğu birlikte çalışarak düzenleyebilirsiniz.  
   
-Visual C++ projeleri için menü düzenleyici için kullanabilirsiniz:  
+Visual C++ projeleri için kullanabileceğiniz **menü** Düzenleyici:  
   
 -   [Menüler oluşturma](../windows/creating-a-menu.md)  
   
@@ -59,10 +59,10 @@ Visual C++ projeleri için menü düzenleyici için kullanabilirsiniz:
 -   [Menü komut özellikleri değiştirme](../windows/menu-command-properties.md)  
   
     > [!TIP]
-    >  Çoğu durumda, menü düzenleyicisini kullanırken, sık kullanılan komutlar açılan menüsünü görüntülemek için sağ fare düğmesine tıklayabilirsiniz. Kullanılabilir komutlar ne işaretçinin işaret ettiği üzerinde bağlıdır.  
+    >  Kullanırken **menü** düzenleyicisinde birçok örneği, sık kullanılan komutlar açılan menüsünü görüntülemek için sağ fare düğmesine tıklayabilirsiniz. Kullanılabilir komutlar ne işaretçinin işaret ettiği üzerinde bağlıdır.  
   
     > [!NOTE]
-    >  Microsoft Foundation Class Kitaplığı'nı (MFC) programları ve ATL programları için kod menü komutlarına yeteneklerinizi kod sihirbazlarını kullanabilirsiniz. Daha fazla bilgi için [olay ekleme](../ide/adding-an-event-visual-cpp.md).  
+    >  Microsoft Foundation Class Kitaplığı'nı (MFC) programları ve ATL programları için kullanabileceğiniz **kod sihirbazları** kod menü komutlarına yeteneklerinizi. Daha fazla bilgi için [olay ekleme](../ide/adding-an-event-visual-cpp.md).  
   
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   

@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 679b019c15d72586b5ca186e0b54c9a9172db53a
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: af96a6825c88fb479709b2b6138f3fe6286b8b17
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608462"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016817"
 ---
 # <a name="propput"></a>propput
 Bir özellik ayarı işlevi belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [propput]  
 ```  
   

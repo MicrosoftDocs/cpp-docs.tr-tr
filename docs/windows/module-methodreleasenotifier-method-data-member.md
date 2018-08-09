@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0929ac466a5f09a0ee2401111b40a969aaf7193d
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 5a59f1d677a3412f8f3edd016a9c719a8e221d6f
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606819"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015579"
 ---
 # <a name="modulemethodreleasenotifiermethod-data-member"></a>Module::MethodReleaseNotifier::method_ Veri Üyesi
 İçin geçerli olay işleyicisine bir işaretçiyi tuttuğu **Module::MethodReleaseNotifier** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void (T::* method_)();  
 ```  
   

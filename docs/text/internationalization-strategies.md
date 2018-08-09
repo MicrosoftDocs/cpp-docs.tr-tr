@@ -21,29 +21,29 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20e4d7b067daedcbc5ce065c096e561dbf932ac1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1a3b8a47e70efa3268ae9b36eda311d267be2ded
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856602"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018935"
 ---
 # <a name="internationalization-strategies"></a>Uluslararası Duruma Getirme Stratejileri
-Hedef işletim sistemi ve pazarlara bağlı olarak birkaç uluslararası duruma getirme stratejileri vardır:  
+Hedef işletim sistemleri ve pazarlara bağlı olarak birkaç uluslararası duruma getirme stratejileri vardır:  
   
--   Uygulamanız Unicode kullanır.  
+-   Uygulamanız, Unicode kullanır.  
   
-     Tüm karakterleri, 16 bit uzunluğunda (ANSI karakter programınızın bazı bölümlerinde özel amaçlarla kullanabilirsiniz ancak) ve Unicode özgü işlevsellik kullanın. C çalışma zamanı kitaplığı işlevleri, makroları ve veri türleri için yalnızca Unicode programlama sağlar. MFC tam Unicode etkindir.  
+     Unicode özgü işlevini kullanın ve (ANSI karakterlerini programınızın bazı bölümlerinde özel amaçlar için kullanabilirsiniz, ancak) tüm karakterlerin 16 bit genişliğinde olan. C çalışma zamanı kitaplığı işlevleri, makroları ve veri türleri için salt Unicode programlama sağlar. MFC tam Unicode etkindir.  
   
--   Uygulamanızın MBCS kullanır ve herhangi bir Win32 platformda çalışabilir.  
+-   Uygulamanız MBCS kullanır ve Win32 herhangi bir platform üzerinde çalıştırılabilir.  
   
-     MBCS özgü işlevini kullanın. Dizeleri tek baytlık karakterler, çift baytlık karakterler ya da her ikisini de içerebilir. C çalışma zamanı kitaplığı işlevleri, makroları ve veri türleri için sadece MBCS programlama sağlar. MFC tam MBCS etkindir.  
+     MBCS özgü işlevleri kullanırsınız. Dizeleri tek baytlık karakteri, çift baytlık karakterler veya her ikisi de içerebilir. C çalışma zamanı kitaplığı işlevleri, makroları ve veri türleri için yalnızca MBCS programlama sağlar. MFC tam MBCS etkindir.  
   
--   Uygulamanız için kaynak kodu tam taşınabilirlik için yazılmıştır — simgesiyle yeniden derlenmesi tarafından **_UNICODE** veya sembol **_MBCS** tanımlanan kullanın ya da sürümleri üretebilir. Daha fazla bilgi için bkz: [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).  
+-   Uygulamanız için kaynak kodu tam taşınabilirlik için yazılan — simgesiyle yeniden derlemeden tarafından `_UNICODE` veya sembol `_MBCS` tanımlanan, hangisini sürümlerini oluşturabilir. Daha fazla bilgi için [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).  
   
-     Tümüyle taşınabilir C çalışma zamanı işlevleri, makroları ve veri türlerini kullanın. MFC'nin esnekliği bu stratejileri destekler.  
+     Tam olarak taşınabilir C çalışma zamanı işlevleri, makroları ve veri türleri kullanırsınız. MFC'nin esneklik herhangi birini bu stratejiler destekler.  
   
- Bu konularda geri kalanı Unicode veya MBCS olarak yapı tümüyle taşınabilir kod yazmaya odaklanır.  
+ Bu konu başlıkları geri kalanında Unicode veya MBCS olarak oluşturabileceğiniz tamamen taşınabilir kod yazmaya odaklanmasına.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Unicode ve MBCS](../text/unicode-and-mbcs.md)   

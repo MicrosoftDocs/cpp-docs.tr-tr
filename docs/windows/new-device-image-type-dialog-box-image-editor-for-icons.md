@@ -1,5 +1,5 @@
 ---
-title: Yeni &lt;aygıt&gt; görüntü türü iletişim kutusu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+title: Yeni &lt;cihaz&gt; görüntü türü iletişim kutusu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,33 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 966066be4dbbce5586860dd3bb6c99893094b6ef
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 579a74e24f0abb2af13f96a0e5171dada249c0cf
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879626"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019292"
 ---
-# <a name="new-ltdevicegt-image-type-dialog-box-image-editor-for-icons"></a>Yeni &lt;aygıt&gt; görüntü türü iletişim kutusu (simgeler için görüntü Düzenleyicisi)
-Belirtilen bir türün yeni cihaz görüntüsü oluşturmanıza olanak sağlar. Açmak için **yeni \<aygıt > Görüntü** iletişim kutusu, tıklatın **yeni görüntü türü** üzerinde **görüntü** menüsü.  
+# <a name="new-ltdevicegt-image-type-dialog-box-image-editor-for-icons"></a>Yeni &lt;cihaz&gt; görüntü türü iletişim kutusu (simgeler için görüntü Düzenleyicisi)
+Belirtilen bir türün yeni cihaz görüntüsü oluşturmanıza olanak sağlar. Açmak için **yeni \<cihaz > Görüntü** iletişim kutusu, tıklayın **yeni görüntü tipi** üzerinde **görüntü** menüsü.  
   
- **Hedef görüntü türü**  
- Kullanılabilir resim türleri listelenmektedir. Açmak istediğiniz resim türünü seçin:  
+### <a name="target-image-type"></a>Hedef görüntü türü  
+ Mevcut görüntü türlerini listeler. Açmak istediğiniz görüntü türünü seçin:  
   
 ||||  
 |-|-|-|  
-|-16 x 16, 16 renkleri|-48 x 48, 16 renkleri|-96 96, x 16 renkleri|  
-|-16 x 16, 256 renk|-48 x 48, 256 renk|-96, x 96 256 renk|  
-|-16 x 16, tek renkli|-48 x 48, tek renkli|-96 96, tek renkli x|  
-|-32 x 32, 16 renkleri|-64, x 64 16 renkleri||  
-|-32 x 32, 256 renk|-64, x 64 256 renk||  
-|-32 x 32, tek renkli|-x 64, tek renkli 64||  
+|-16 16 x 16 renk|-48 x 48, 16 renk|-96 x 96 16 renk|  
+|-16 x 16, 256 renkleri|-48 x 48, 256 renkleri|-96 x 96, 256 renkleri|  
+|-16 x 16, tek renkli|-48 x 48, tek renkli|-96 x 96, tek renkli|  
+|-32 x 32 16 renk|-64, x 64 16 renk||  
+|-32 x 32, 256 renkleri|-64 x 64, 256 renkleri||  
+|-32 x 32, tek renkli|-64 x 64, tek renkli||  
   
 > [!NOTE]
->  Var olan tüm görüntüleri bu listede görüntülenmez.  
+>  Bu listede herhangi bir mevcut görüntü görüntülenmez.  
   
- **Özel**  
- Açılır [özel görüntü iletişim kutusu](custom-image-dialog-box-image-editor-for-icons.md) , yeni bir görüntü Özel boyut ve renk sayısı ile oluşturabileceğiniz içinde.  
+### <a name="custom"></a>Özel  
+ Açılır [özel görüntü iletişim kutusu](custom-image-dialog-box-image-editor-for-icons.md) içinde yeni bir görüntü özel boyutu ve renklerin sayısı ile oluşturabilirsiniz.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  

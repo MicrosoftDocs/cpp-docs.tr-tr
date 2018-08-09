@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07cd0d02edc586697e42e4733df478a7ae394e0f
-ms.sourcegitcommit: 9ad287c88bdccee2747832659fe50c2e5d682a0b
+ms.openlocfilehash: 937afdb400fff6f0944d8690412257cb66a9c25c
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39034786"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018003"
 ---
 # <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>Nasıl yapılır: Windows 10 kullanan Windows Masaüstü uygulama SDK'sı
 Visual Studio 2017'de bir Klasik Windows Masaüstü projesi oluşturduğunuzda, bu varsayılan olarak C++ Masaüstü iş yükü yüklendiğinde veya son güncelleştirme, yüklü Windows 10 SDK sürümünü oluşturmak için ayarlanır. Windows SDK'ın bu sürümü Windows 7 ve sonraki sürümlerle uyumludur. Bkz: [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers) belirli Windows sürümlerini hedefleme hakkında daha fazla bilgi.
@@ -31,7 +31,6 @@ SDK'sının önceki bir sürümü hedeflemek istiyorsanız, açabileceğiniz **p
   
 1.  Windows 10 SDK'sı yüklü olduğundan emin olun. Windows 10 SDK'sı bir parçası olarak yüklü **C++ ile masaüstü geliştirme** iş yükü. Bağımsız bir sürümü kullanılabilir [Windows 10 için indirmeler ve Araçlar](https://developer.microsoft.com/windows/downloads).
 
-  
 2.  Proje düğümü için kısayol menüsünü açın ve **SDK sürümü yeniden hedefle**.  
   
      ![SDK sürümü için hedefi yeniden](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")  
@@ -52,7 +51,7 @@ SDK'sının önceki bir sürümü hedeflemek istiyorsanız, açabileceğiniz **p
   
      ![Hedef Platform sürümü](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")  
   
-     Bu eylem, üst bilgi dosyaları ve kitaplık dosyaları için yol eklemeyi proje makrolarını değerlerini değiştirir. Ne Proje Özellikleri iletişim kutusunda, Visual C++ dizinleri bölümünde değiştiğini görmek için ekleme dizinleri gibi özelliklerden birini seçin, açılan listeyi açın ve \<Düzenle >. **Ekleme dizinleri** iletişim kutusu görüntülenir.  
+     Bu eylem, üst bilgi dosyaları ve kitaplık dosyaları için yol eklemeyi proje makrolarını değerlerini değiştirir. Nelerin, buna değiştiğini görmek için **Visual C++ dizinleri** bölümünü **proje özellikleri** iletişim kutusunda, özelliklerden biri gibi seçin **ekleme dizinleri**, seçin açılan listeyi açın ve \<Düzenle >. **Ekleme dizinleri** iletişim kutusu görüntülenir.  
   
      ![Dizinleri iletişim kutusu içeren](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")  
   
@@ -66,7 +65,7 @@ SDK'sının önceki bir sürümü hedeflemek istiyorsanız, açabileceğiniz **p
   
 1.  Proje düğümü için kısayol menüsünü açın ve **SDK sürümü yeniden hedefle**.  
   
-2.  Hedef Platform sürümü açılan listede 8.1 seçin.  
+2.  İçinde **hedef Platform sürümü** açılan listesinde **8.1**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Masaüstü uygulamaları (Visual C++)](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)

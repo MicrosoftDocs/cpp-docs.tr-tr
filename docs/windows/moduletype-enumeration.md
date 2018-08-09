@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d36355c9f64f9f5c827ef8c4d5b3cb6a77d17b65
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 831f1fbcb2da205fa08286a1fbbbf414e66075d4
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876842"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019936"
 ---
 # <a name="moduletype-enumeration"></a>ModuleType Numaralandırması
-Bir modülü bir işlem sunucusuna veya bir işlem dışı sunucusuna desteklemesi gerekip gerekmediğini belirtir.  
+Bir modülü bir işlem sunucusu veya bir işlem dışı sunucu desteklemesi gerekip gerekmediğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 enum ModuleType;  
 ```  
   
@@ -40,7 +40,7 @@ enum ModuleType;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |`InProc`|Bir işlem sunucusu.|  
-|`OutOfProc`|Bir işlem dışı sunucusu.|  
+|`OutOfProc`|Bir işlem dışı sunucu.|  
 |`DisableCaching`|Önbelleğe alma mekanizması modül devre dışı bırakın.|  
 |`InProcDisableCaching`|Birleşimi `InProc` ve `DisableCaching`.|  
 |`OutOfProcDisableCaching`|Birleşimi `OutOfProc` ve `DisableCaching`.|  

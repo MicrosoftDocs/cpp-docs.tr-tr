@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ffbc9f7f6a242f119fd0cd164242883e904d7114
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 6ce5b1740d09f9d4eb0f90d96cc5a0f6fd70379b
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39607325"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020206"
 ---
 # <a name="making-controls-the-same-width-height-or-size"></a>Denetimleri Aynı Genişliğe, Yüksekliğe veya Boyuta Getirme
 Baskın denetimi boyutuna göre Denetim grubunun yeniden boyutlandırabilirsiniz. Ayrıca [kendi açıklamalı alt yazı metni boyutlarına göre denetimi yeniden boyutlandırma](../windows/sizing-individual-controls.md).  
@@ -43,7 +43,6 @@ Baskın denetimi boyutuna göre Denetim grubunun yeniden boyutlandırabilirsiniz
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

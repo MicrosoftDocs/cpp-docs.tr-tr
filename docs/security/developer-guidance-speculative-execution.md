@@ -18,20 +18,20 @@ author: mamillmsft
 ms.author: mikeblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c355924ce1f264ce63e02f5fda948a62675e675
-ms.sourcegitcommit: 894b3b3a91fcd8894b582747b03135c0be450c1f
+ms.openlocfilehash: abf51432e5803de001610da07d97d5bad1796085
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38102471"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018851"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme yan kanal için C++ Geliştirici Kılavuzu
 
-Bu makalede, tanımlamak ve C++ yazılım kurgusal yürütme yan kanal donanım güvenlik açıklarını azaltmaya yardımcı olmak üzere, geliştiriciler için kılavuz içerir. Bu güvenlik açıklarına güven sınırları boyunca hassas bilgileri açığa çıkarabileceği ve yönergeleri kurgusal, sırası yürütülmesini destekleyen işlemcilerde çalışan yazılımları etkileyebilir. Bu sınıf güvenlik açıklarının Ocak 2018 ' açıklanan first ve ek arka plan olan ve yönergeler bulunabilir [Microsoft'un güvenlik danışma belgesi](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002).
+Bu makalede, tanımlamak ve C++ yazılım kurgusal yürütme yan kanal donanım güvenlik açıklarını azaltmaya yardımcı olmak üzere, geliştiriciler için kılavuz içerir. Bu güvenlik açıklarına güven sınırları boyunca hassas bilgileri açığa çıkarabileceği ve yönergeleri kurgusal, sırası yürütülmesini destekleyen işlemcilerde çalışan yazılımları etkileyebilir. Bu sınıf güvenlik açıklarının Ocak 2018 ' açıklanan first ve ek arka plan olan ve yönergeler bulunabilir [Microsoft'un güvenlik danışma belgesi](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002).
 
 Bu makalede tarafından sağlanan yönergeleri sınıfları tarafından temsil edilen güvenlik açıklarının ilişkilidir:
 
-1. CVE-2017-5753, Spectre değişkeni 1 olarak da bilinir. Bu donanım güvenlik açığı sınıfı bir koşullu dalı misprediction sonucu olarak ortaya çıkan kurgusal yürütmeyi nedeniyle ortaya çıkabilecek yan kanal ilişkilidir. Visual Studio 2017 (sürüm 15.5.5 ile başlayarak) Visual C++ derleyicisi için destek içerir `/Qspectre` savunmasız kodlama desenleri sınırlı bir dizi için bir derleme zamanı azaltma sağlayan anahtar CVE-2017-5753 için ilgili. Belgelerine [/qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) bayrağı kullanım ve etkileri hakkında daha fazla bilgi sağlar. 
+1. CVE-2017-5753, Spectre değişkeni 1 olarak da bilinir. Bu donanım güvenlik açığı sınıfı bir koşullu dalı misprediction sonucu olarak ortaya çıkan kurgusal yürütmeyi nedeniyle ortaya çıkabilecek yan kanal ilişkilidir. Visual Studio 2017 (sürüm 15.5.5 ile başlayarak) Visual C++ derleyicisi için destek içerir `/Qspectre` savunmasız kodlama desenleri sınırlı bir dizi için bir derleme zamanı azaltma sağlayan anahtar CVE-2017-5753 için ilgili. Belgelerine [/qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağı kullanım ve etkileri hakkında daha fazla bilgi sağlar. 
 
 2. CVE-2018-olarak da bilinen 3639, [kurgusal Store atlama (SSB)](https://aka.ms/sescsrdssb). Bu donanım güvenlik açığı sınıfı, bir iş yükünün bellek erişim misprediction sonucunda bağımlı bir deposu önceden kurgusal yürütmeyi nedeniyle ortaya çıkabilecek yan kanal ilgilidir.
 
@@ -184,7 +184,7 @@ unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
 }
 ```
 
-Bu örneklerin her ikisi kurgusal değişikliği yığın ayırma dolaylı dal işaretçiler içeren unutulmamalıdır. Genel değişkenler, yığın tarafından ayrılan bellek ve hatta salt okunur bellek üzerinde bazı CPU'yu kurgusal değişikliği de meydana gelebilir mümkündür. Yığın tarafından ayrılan bellek için Visual C++ derleyicisi zaten speculatively yığın ayırma dolaylı dal hedefi gibi yerel değişkenler arabellekler için bir güvenlik tanımlama bilgisi bitişik yerleştirilir olacak şekilde yeniden sıralayarak değiştirmek daha zor hale getirmek için gerekli adımları gerçekleştirir. parçası [/GS](https://docs.microsoft.com/en-us/cpp/build/reference/gs-buffer-security-check) derleyici güvenlik özelliği.
+Bu örneklerin her ikisi kurgusal değişikliği yığın ayırma dolaylı dal işaretçiler içeren unutulmamalıdır. Genel değişkenler, yığın tarafından ayrılan bellek ve hatta salt okunur bellek üzerinde bazı CPU'yu kurgusal değişikliği de meydana gelebilir mümkündür. Yığın tarafından ayrılan bellek için Visual C++ derleyicisi zaten speculatively yığın ayırma dolaylı dal hedefi gibi yerel değişkenler arabellekler için bir güvenlik tanımlama bilgisi bitişik yerleştirilir olacak şekilde yeniden sıralayarak değiştirmek daha zor hale getirmek için gerekli adımları gerçekleştirir. parçası [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) derleyici güvenlik özelliği.
 
 ## <a name="speculative-type-confusion"></a>Kurgusal türü karışıklığı
 
@@ -368,6 +368,6 @@ Kurgusal yürütme yan kanal güvenlik açıklarına azaltmak için kullanılabi
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kurgusal yürütme yan kanal güvenlik açıklarını azaltmaya yönelik kılavuz](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002)
+[Kurgusal yürütme yan kanal güvenlik açıklarını azaltmaya yönelik kılavuz](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)
 
 [Kurgusal yürütme yan kanal donanım güvenlik açıkları azaltma](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)

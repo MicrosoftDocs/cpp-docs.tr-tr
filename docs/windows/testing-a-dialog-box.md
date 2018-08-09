@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cf9e5e24e77a14b3baf86c1b83d653dd833ebbbb
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 307b5ffeeaa21b4cb90779a9d516229bf2ab3167
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652077"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019684"
 ---
 # <a name="testing-a-dialog-box"></a>İletişim Kutusunu Test Etme
 Bir iletişim kutusu tasarlarken benzetimini gerçekleştirmek ve programınızı derlemeden çalışma zamanı davranışını sınama. Bu modda şunları yapabilirsiniz:  
@@ -42,7 +42,7 @@ Bir iletişim kutusu tasarlarken benzetimini gerçekleştirmek ve programınız�
   
 ### <a name="to-test-a-dialog-box"></a>Bir iletişim kutusu test etmek için  
   
-1.  İletişim kutusu Düzenleyicisi etkin pencere menü çubuğunda, olduğunda seçin **biçimi**, **Test iletişim**.  
+1.  Zaman **iletişim** Düzenleyicisi etkin pencere menü çubuğunda, seçin **biçimi** > **Test iletişim**.  
   
 2.  Benzetimi bitirmek için basın **Esc**, veya yalnızca seçin **Kapat** test ettiğiniz iletişim kutusundaki düğmesi.  
   

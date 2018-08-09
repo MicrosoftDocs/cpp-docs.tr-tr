@@ -16,15 +16,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 05695e834ae244d276141185a913e8f35ef45922
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: ef77de72a9120a774e3676d649adb267074e1a72
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652207"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015617"
 ---
 # <a name="viewing-a-menu-as-a-pop-up-menu"></a>Menüyü Açılır Menü Olarak Görüntüleme
-Normalde, Menü Düzenleyici'de çalışırken, bir menü kaynağı bir menü çubuğu görüntülenir. Ancak, program çalışırken uygulamanın menü çubuğuna eklediğiniz menü kaynaklarınız olabilir.  
+Normalde, zaman içinde çalışmakta olduğunuz **menü** Düzenleyicisi, bir menü kaynağı bir menü çubuğu görüntülenir. Ancak, program çalışırken uygulamanın menü çubuğuna eklediğiniz menü kaynaklarınız olabilir.  
   
 ### <a name="to-view-a-menu-resource-as-a-pop-up-menu"></a>Açılır menü olarak menü kaynağı görüntülemek için  
   

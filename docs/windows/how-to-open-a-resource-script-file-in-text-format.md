@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 170d688988576d3cbc9c454eb84603f9660120a8
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 345171742f979e488c6a4bb48cf1b57e4bb2f164
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571226"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018116"
 ---
 # <a name="how-to-open-a-resource-script-file-in-text-format"></a>Nasıl Yapılır: Kaynak Betik Dosyasını Metin Biçiminde Açma
 Belirli kaynak düzenleyicisinin içinde bir iletişim kutusu gibi bir kaynak açmaya gerek kalmadan proje kaynak betiği (.rc) dosyasının içeriğini görüntülemek istediğinizde zamanlar olabilir. Örneğin, her biri ayrı olarak açmak zorunda kalmadan kaynak dosyasındaki tüm iletişim kutuları arasında bir dize aramak isteyebilirsiniz.  
@@ -35,7 +35,7 @@ Belirli kaynak düzenleyicisinin içinde bir iletişim kutusu gibi bir kaynak a�
  Kaynak dosyası içerdiği tüm kaynakları görüntüleme ve tarafından desteklenen genel işlemleri gerçekleştirmek için metin biçiminde kolayca açabilirsiniz [metin düzenleyici](http://msdn.microsoft.com/508e1f18-99d5-48ad-b5ad-d011b21c6ab1).  
   
 > [!NOTE]
->  Kaynak düzenleyicileri .rc veya resource.h dosyaları doğrudan okunmaz. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derlenir. Bu dosya, bir derleme adımdır ve yalnızca sembolik verileri depolar. (Örneğin, açıklamalar) sembolik değil bilgi işlem ile normal bir derleme olarak derleme işlemi sırasında göz ardı edilir. .Rc dosyasıyla .aps dosyası zaman uyumsuz olarak alır her .rc dosyası yeniden oluşturuldu (kaydettiğinizde, örneğin, kaynak düzenleyicisini .rc dosyasını ve resource.h dosyasını geçersiz kılar). Herhangi bir değişiklik kaynaklardaki .rc dosyasına eklenen kalır ancak .rc dosyasının üzerine sonra açıklamalar her zaman kaybolacak. Açıklamaları koruma hakkında daha fazla bilgi için bkz: [derleme zamanında dahil olmak üzere kaynakları](../windows/how-to-include-resources-at-compile-time.md).  
+>  Kaynak düzenleyicileri .rc doğrudan okunmaz veya `resource.h` dosyaları. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derlenir. Bu dosya, bir derleme adımdır ve yalnızca sembolik verileri depolar. (Örneğin, açıklamalar) sembolik değil bilgi işlem ile normal bir derleme olarak derleme işlemi sırasında göz ardı edilir. .Rc dosyasıyla .aps dosyası zaman uyumsuz olarak alır her .rc dosyası yeniden oluşturuldu (kaydettiğinizde, örneğin, kaynak düzenleyicisini .rc dosyasını ve resource.h dosyasını geçersiz kılar). Herhangi bir değişiklik kaynaklardaki .rc dosyasına eklenen kalır ancak .rc dosyasının üzerine sonra açıklamalar her zaman kaybolacak. Açıklamaları koruma hakkında daha fazla bilgi için bkz: [derleme zamanında dahil olmak üzere kaynakları](../windows/how-to-include-resources-at-compile-time.md).  
   
 ### <a name="to-open-a-resource-script-file-as-text"></a>Kaynak betik dosyasını metin olarak açmak için  
   
@@ -51,7 +51,7 @@ Belirli kaynak düzenleyicisinin içinde bir iletişim kutusu gibi bir kaynak a�
   
 6.  Gelen **açık olarak** aşağı açılan listesinden **metin**.  
   
-     Kaynak, Kaynak Kod Düzenleyicisi'nde açılır.  
+     Kaynak açılır **kaynak kodu** Düzenleyici.  
   
  \- veya -  
   
@@ -60,7 +60,6 @@ Belirli kaynak düzenleyicisinin içinde bir iletişim kutusu gibi bir kaynak a�
 2.  Kısayol menüsünden **birlikte Aç...** , ardından **kaynak kodu (metin) Düzenleyicisi**.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

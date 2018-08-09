@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e93b7281b079918641bf36ebcd72968a98eb95ec
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 5426d639ffb8655466239232da7672b89564bfae
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39602672"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020115"
 ---
 # <a name="raiseexception-function"></a>RaiseException İşlevi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 inline void __declspec(noreturn)   RaiseException(  
       HRESULT hr,   
       DWORD dwExceptionFlags = EXCEPTION_NONCONTINUABLE);  

@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4f284514472796f22d176325a0223848a827c85c
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 32c45c5445b6258f1ed2e1da220b2899a76aa9c9
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606455"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017077"
 ---
 # <a name="interfacetraitscasttobase-method"></a>InterfaceTraits::CastToBase Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename T>  
 static __forceinline Base* CastToBase(  
    _In_ T* ptr  

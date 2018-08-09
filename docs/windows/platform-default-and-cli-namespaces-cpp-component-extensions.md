@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6bf7219b4e57c82beeace1545c10b643470c9aca
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: c63ce7dc5dcd326de426c4e4738a11e24f93161c
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603556"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015539"
 ---
 # <a name="platform-default-and-cli-namespaces--c-component-extensions"></a>Platform, varsayılan ve cli Ad Alanları (C++ Bileşen Uzantıları)
 Bir ad alanı dil öğelerinin adlarını kaynak kod içindeki başka bir yerde benzer adlarla çakışmamaları için örtük olarak nitelendirir. Bir ad çakışması derleyicinin tanımasını gibi engelleyebilir [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md). Ad alanları derleyici tarafından kullanılır, ancak oluşturulmuş derlemede korunmaz.  
@@ -41,7 +41,7 @@ Bir ad alanı dil öğelerinin adlarını kaynak kod içindeki başka bir yerde 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 using namespace cli;  
 ```  
   

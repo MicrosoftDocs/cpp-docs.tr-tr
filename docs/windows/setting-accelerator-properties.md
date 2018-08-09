@@ -19,22 +19,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5337378b54c2109d05e28cb9d1bfed82f81913f3
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 7d329d902014b3dff6f66fd6e3f1877a3bc70822
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652704"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016267"
 ---
 # <a name="setting-accelerator-properties"></a>Hızlandırıcı Özelliklerini Ayarlama
-Hızlandırıcı özelliklerini ayarlayabileceğiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window) dilediğiniz zaman. Hızlandırıcı tablosunda Hızlandırıcı özelliklerini değiştirmek için Hızlandırıcı Düzenleyicisi'ni de kullanabilirsiniz. Özellikler penceresinde veya Hızlandırıcı Düzenleyicisi'ni kullanarak yapılan değişiklikler, aynı sonucu vardır: düzenleme Hızlandırıcı tablosunda anında yansıtılır.  
+Hızlandırıcı özelliklerini ayarlayabileceğiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window) dilediğiniz zaman. Ayrıca **hızlandırıcı** Hızlandırıcı tablosunda Hızlandırıcı özelliklerini değiştirmek için düzenleyici. Kullanılarak yapılan değişiklikleri **özellikleri** penceresi veya **hızlandırıcı** Düzenleyicisi sahip aynı sonucu: düzenlemeleri Hızlandırıcı tablosunda anında yansıtılır.  
   
- Her hızlandırıcının için üç özellik [kimliği](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/3487f185-de96-4b1d-87db-034a52223160/locales/en-US):  
+ Her hızlandırıcının için üç özellik [kimliği](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/3487f185-de96-4b1d-87db-034a52223160):  
   
 -   [Değiştirme özelliği](../windows/accelerator-modifier-property.md) denetimi için kısayol tuş birleşimleri ayarlar.  
   
     > [!NOTE]
-    >  Özellikler penceresinde bu özellik görünür üç ayrı Boolean özelliği, her biri denetlenebilir bağımsız olarak: **Alt**, **Ctrl**, ve **Shift**.  
+    >  İçinde **özellikleri** penceresi, bu özellik görünür üç ayrı Boolean özelliği, her biri denetlenebilir bağımsız olarak: **Alt**, **Ctrl**ve **Shift**.  
   
 -   [Anahtar özellik](../windows/accelerator-key-property.md) Hızlandırıcı olarak kullanılacak gerçek anahtarı ayarlar.  
   

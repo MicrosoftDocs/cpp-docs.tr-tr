@@ -23,19 +23,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 752989b33bd0b017233ea4a105d2ad36ca2290f4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3f74f8fe3e5b637869af7b03bb2eaf5e13df9550
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33875558"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020174"
 ---
 # <a name="microsoftwrlwrappersdetails-namespace"></a>Microsoft::WRL::Wrappers::Details Ad Alanı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 namespace Microsoft::WRL::Wrappers::Details;  
 ```  
   
@@ -45,14 +45,14 @@ namespace Microsoft::WRL::Wrappers::Details;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockT Sınıfı](../windows/synclockt-class.md)|Özel gerçekleştirebileceğiniz bir türü temsil eder veya bir kaynak sahipliğini paylaşılan.|  
-|[SyncLockWithStatusT Sınıfı](../windows/synclockwithstatust-class.md)|Özel gerçekleştirebileceğiniz bir türü temsil eder veya bir kaynak sahipliğini paylaşılan.|  
+|[SyncLockT Sınıfı](../windows/synclockt-class.md)|Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.|  
+|[SyncLockWithStatusT Sınıfı](../windows/synclockwithstatust-class.md)|Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.|  
   
 ### <a name="methods"></a>Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CompareStringOrdinal Metodu](../windows/comparestringordinal-method.md)|İki belirtilen karşılaştırır `HSTRING` nesneleri ve bir sıralama düzeni göreli konumlarını gösteren bir tamsayı döndürür.|  
+|[CompareStringOrdinal Metodu](../windows/comparestringordinal-method.md)|Belirtilen iki karşılaştırır `HSTRING` nesneleri ve bir sıralama düzeni kendi göreli konumunu belirten bir tamsayı döndürür.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

@@ -16,17 +16,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dd65b4294443de9f367ecc5a4ea64b524aabb4a2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 068fcf9e4cfb45bb3d20d54df69d5b4bceb7cd53
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882066"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018500"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
-MFC projeleri her zaman windows destek birkaç üstbilgi dosyaları içerir. Bunlar aracılığıyla eklenen # deyimleri StdAfx.h dosyasında include:  
+MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları içerir. Bunlar aracılığıyla eklenen `#include` deyimlerinde `StdAfx.h` dosyası:  
   
-```  
+```cpp  
 #include <afxwin.h>      //MFC core and standard components  
 #include <afxext.h>      //MFC extensions  
 #include <afxdisp.h      //MFC automation classes  
@@ -34,7 +34,7 @@ MFC projeleri her zaman windows destek birkaç üstbilgi dosyaları içerir. Bun
 #include <afxcmn.h>      //MFC support for Windows common controls.  
 ```  
   
- Üstbilgi dosyaları MFC ortak değerleri için simge kimliği değerleri içerir. MFC projesinde çalışırken bu simgeleri yalnızca kullanılabilir. Not AFX_ önek standart simge adı önekleri tarafından izlenir.  
+ Üst bilgi dosyaları, MFC ortak değerleri için Sembol kimliği değerlerini içerir. Bu simgeleri, yalnızca bir MFC projesinde çalışırken kullanılabilir. Not AFX_ önek standart sembol adı önekleri tarafından izlenir.  
   
 |||  
 |-|-|  
@@ -158,7 +158,7 @@ MFC projeleri her zaman windows destek birkaç üstbilgi dosyaları içerir. Bun
 |AFX_IDS_BOLD|AFX_IDS_BOLDITALIC|  
 |AFX_IDS_BORDERSTYLE_0|AFX_IDS_BORDERSTYLE_1|  
 |AFX_IDS_CHANGE_LINK|AFX_IDS_CHECKLISTBOX_CHECK|  
-|AFX_IDS_CHECKLISTBOX_MIXED|AFX_IDS_CHECKLISTBOX_ SEÇENEĞİNİN İŞARETİNİ KALDIRIN|  
+|AFX_IDS_CHECKLISTBOX_MIXED|AFX_IDS_CHECKLISTBOX_ İŞARETİNİ KALDIRIN|  
 |AFX_IDS_COLOR_ACTIVEBAR|AFX_IDS_COLOR_ACTIVEBORDER|  
 |AFX_IDS_COLOR_ACTIVETEXT|AFX_IDS_COLOR_APPWORKSPACE|  
 |AFX_IDS_COLOR_BTNFACE|AFX_IDS_COLOR_BTNHIGHLIGHT|  

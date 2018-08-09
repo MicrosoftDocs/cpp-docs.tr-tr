@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c19e7b5388438b8c3c2359672360e4a2ee3001a3
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 240ab47099b9e97e9a6bb794083858fe042605d2
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39602636"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018702"
 ---
 # <a name="moduleunregistercomobject-method"></a>Module::UnregisterCOMObject Yöntemi
 Bir veya daha fazla COM nesneleri, diğer uygulamalar için bağlanmasını engelleyen kaydını siler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 virtual HRESULT UnregisterCOMObject(  
    const wchar_t* serverName,  
    DWORD* cookies,  

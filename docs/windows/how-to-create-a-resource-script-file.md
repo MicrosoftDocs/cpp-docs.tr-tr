@@ -17,25 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ed35392180d0531133413a54ca2190ed65519546
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 8da6d316050120e6eaac31b12998e5dbf0f3a012
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570580"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020271"
 ---
 # <a name="how-to-create-a-resource-script-file"></a>Nasıl Yapılır: Kaynak Betik Dosyası Oluşturma
 > [!NOTE]
->  Kaynak Düzenleyicisi Express sürümlerinde kullanılamaz.  
+>  **Kaynak Düzenleyicisi** Express sürümlerinde kullanılamaz.  
 >   
 >  Bu yazıda, Windows Masaüstü uygulamaları için geçerlidir. .NET dilleri projelerde kaynak betik dosyalarına kullanmayın. Bkz: [kaynak dosyaları](../windows/resource-files-visual-studio.md), daha fazla bilgi için.  
   
 ### <a name="to-create-a-new-resource-script-rc-file"></a>Yeni bir kaynak betiği (.rc) dosyası oluşturmak için  
   
-1.  Mevcut proje klasörünüzde odak yerleştirin **Çözüm Gezgini**, örneğin, "MyProject."  
+1.  Mevcut proje klasörünüzde odak yerleştirin **Çözüm Gezgini**, örneğin, `MyProject`.  
   
     > [!NOTE]
-    >  Çözüm Gezgini'nde Çözüm klasörü proje klasörüne karıştırmayın. Odak moduna geçirirseniz **çözüm** klasörü, seçimlerinize **Yeni Öğe Ekle** iletişim kutusunda (3. adım) farklı olacaktır.  
+    >  Proje klasörü çözüm klasöründe ile karıştırmayın **Çözüm Gezgini**. Odak moduna geçirirseniz **çözüm** klasörü, seçimlerinize **Yeni Öğe Ekle** iletişim kutusunda (3. adım) farklı olacaktır.  
   
 2.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
   
@@ -48,10 +48,8 @@ ms.locfileid: "39570580"
 > [!NOTE]
 >  Kaynak betiği (.rc dosyası) yalnızca Visual Studio IDE'ye yüklenir, varolan bir projeye de ekleyebilirsiniz. Bir tek başına .rc dosyasını (projenin dışında bir tane) oluşturulamıyor. [Kaynak şablonları](../windows/how-to-use-resource-templates.md) (.rct dosyaları) dilediğiniz zaman oluşturulabilir.
 
-
-## <a name="requirements"></a>Gereksinimler  
-  
-Win32  
+## <a name="requirements"></a>Gereksinimler    
+ Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   

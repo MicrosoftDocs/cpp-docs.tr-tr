@@ -17,19 +17,19 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a33fd059b90248a53d355f09f074c9b52bd93ccf
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 9ecde83ecf83108e4890dd351af92f090111c9ee
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606562"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020375"
 ---
 # <a name="safegreaterthanequals"></a>SafeGreaterThanEquals
 İki sayıyı karşılaştırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template <typename T, typename U>  
 inline bool SafeGreaterThanEquals (  
    const T t,  

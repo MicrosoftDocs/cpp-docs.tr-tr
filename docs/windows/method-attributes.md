@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1850507b9d00ab717a2602d4e230968f5222f077
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: fd5f7bb72e1107fe561acef4d6cc3f3ecb87ed59
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604287"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016862"
 ---
 # <a name="method-attributes"></a>Yöntem Öznitelikleri
 Bir sınıf, coclass'ı veya arabirim yöntemleri aşağıdaki özniteliklere uygulanır.  
@@ -39,8 +39,8 @@ Bir sınıf, coclass'ı veya arabirim yöntemleri aşağıdaki özniteliklere uy
 |[defaultbind](../windows/defaultbind.md)|En iyi nesneyi temsil eden tek ve bağlanabilir özelliği belirtir.|  
 |[defaultcollelem](../windows/defaultcollelem.md)|Visual Basic kod iyileştirme için kullanılır.|  
 |[displaybind](../windows/displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir.|  
-|[helpcontext](../windows/helpcontext.md)|Kullanıcı Yardım dosyasında bu öğe hakkındaki bilgileri görüntüleme sağlayan bir bağlam kimliği belirtir.|  
-|[helpfile](../windows/helpfile.md)|Bir tür kitaplığı için Yardım dosyasına adını ayarlar.|  
+|[helpcontext](../windows/helpcontext.md)|Bu öğe ile ilgili kullanıcı bilgilerini görüntüle sağlayan bir bağlam kimliği belirtir **yardımcı** dosya.|  
+|[helpfile](../windows/helpfile.md)|Adını ayarlar **yardımcı** bir tür kitaplığı dosyası.|  
 |[helpstring](../windows/helpstring.md)|Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.|  
 |[helpstringcontext](../windows/helpstringcontext.md)|Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.|  
 |[helpstringdll](../windows/helpstringdll.md)|Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in adını belirtir.|  

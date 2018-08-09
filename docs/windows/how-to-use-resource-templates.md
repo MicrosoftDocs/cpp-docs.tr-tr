@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: da0d33c51fa50c7291eaa6421e9b857cd6f82d36
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: b0a123c336df3f47550f8bb825a621eff53a8cb5
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569462"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015561"
 ---
 # <a name="how-to-use-resource-templates"></a>Nasıl Yapılır: Kaynak Şablonlarını Kullanma
 Kaynak şablon bir .rct dosyası olarak kaydettiğiniz bir özelleştirilmiş bir kaynaktır. Kaynak şablonu diğer kaynakları oluşturmak için bir başlangıç noktası olarak hizmet verebilir. Kaynak şablonları, ek kaynaklar ya da standart denetimler gibi özellikleri ve diğer yinelenen öğeleri paylaşan kaynakların grupları geliştirmede zamandan tasarruf edin. Örneğin, Yardım düğmesi ve bir şirket logosu simgesi birkaç iletişim kutularında eklemek isteyebilirsiniz. Kadar hızlı bir şekilde yapmak için yeni bir iletişim kutusu şablonu oluşturma ve Yardım düğmesini logosu ile özelleştirebilir.  
@@ -46,7 +46,7 @@ Kaynak şablon bir .rct dosyası olarak kaydettiğiniz bir özelleştirilmiş bi
   
 4.  Bir ad ve yeni .rct dosyanız için bir konum girin ve tıklatın **açık**.  
   
-5.  Yeni .rct dosyası projenize eklenir ve altında Çözüm Gezgini'nde görünür **kaynakları** klasör.  
+5.  Yeni .rct dosyası projenize eklenir ve görünür **Çözüm Gezgini** altında **kaynakları** klasör.  
   
      Artık, bir belge penceresi açın .rct dosyasına çift tıklayarak sonra kaynakları ekleyin (belge penceresinde dosyasını sağ tıklatın ve seçin **kaynak Ekle** kısayol menüsünden). Ardından, bu kaynakları özelleştirebilir ve .rct dosyayı kaydedin.  
   
@@ -76,7 +76,6 @@ Kaynak şablon bir .rct dosyası olarak kaydettiğiniz bir özelleştirilmiş bi
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

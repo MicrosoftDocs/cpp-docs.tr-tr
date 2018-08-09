@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: daf27930261c0350c1e48b851fe989decd52dde2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 65dc4dbca2e152a62bb79ed104f9533d2fa20569
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876299"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019988"
 ---
 # <a name="modulebasedecrementobjectcount-method"></a>ModuleBase::DecrementObjectCount Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 virtual long DecrementObjectCount() = 0;  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Azaltma işlemi önce sayısı.  
+ Azaltma işleminden önce sayısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Uygulandığında, azaltır nesnelerin sayısı modül tarafından izlenir.  
+ Uygulandığında, azaltır nesne sayısını modülü tarafından izlenir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

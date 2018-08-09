@@ -17,19 +17,19 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 190b93fc9b3cfb299784d0c352c2f7e5bff25db4
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: a82281f1078acd5e3ed0662964a0171ccd72c336
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606149"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40018380"
 ---
 # <a name="safesubtract"></a>SafeSubtract
 İki sayıyı taşmasına karşı koruyan bir şekilde çıkarır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeSubtract (  
    T t,  

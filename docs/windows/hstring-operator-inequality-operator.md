@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e35c0b9c448ce9b7aeb6e5f14627e82274a72a41
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: e3fabc0dcbbc31a1707d1823fb1ec49a53aca6d3
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604479"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015881"
 ---
 # <a name="hstringoperator-operator"></a>HString::Operator!= İşleci
 İki parametrenin eşit olup olmadığını gösterir.  
@@ -44,7 +44,7 @@ inline bool operator!=( const HString& lhs,
                         const HSTRING& rhs) throw()  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *lhs*  
  Karşılaştırılacak ilk parametre. *lhs* olabilir bir **Hstrıng** veya `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.  
   

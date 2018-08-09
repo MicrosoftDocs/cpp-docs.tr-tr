@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 071aed04c73702bdb63f19154353794bae34f8fd
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 01e8a2874dd756d3f6977730e5463b3089755108
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603612"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40016658"
 ---
 # <a name="public-c-attributes"></a>genel (C++ Öznitelikleri)
 Bu gelen .idl dosyasında başvurulmuyor olsa bile bir typedef tür kitaplığına geçer sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [public]  
 ```  
   

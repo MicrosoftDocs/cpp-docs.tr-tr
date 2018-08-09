@@ -22,15 +22,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 03922c8ca9ba767991b3440e14e4928ab6c3b0ec
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 2d1a59befd405e1412c2815694c40c8d24a99cec
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604466"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017002"
 ---
 # <a name="resource-editors"></a>Kaynak Düzenleyicileri
-Kaynak Düzenleyicisi oluştururken veya değiştirirken bir Visual Studio projesinde bulunan kaynaklar için özel bir ortamdır. Visual Studio kaynak düzenleyicileri teknikleri ve arabirimleri oluşturma ve uygulama kaynaklarını hızla ve kolayca değiştirme yardımcı olacak paylaşın. Kaynak düzenleyicileri etkinleştirmek için [görüntüleyin ve kaynaklarını uygun düzenleyicisinde düzenleme](../windows/viewing-and-editing-resources-in-a-resource-editor.md) ve [Önizleme kaynakları](../windows/previewing-resources.md).  
+A **kaynak** oluştururken veya değiştirirken bir Visual Studio projesinde bulunan kaynaklar için özel bir ortam düzenleyicisidir. Visual Studio kaynak düzenleyicileri teknikleri ve arabirimleri oluşturma ve uygulama kaynaklarını hızla ve kolayca değiştirme yardımcı olacak paylaşın. Kaynak düzenleyicileri etkinleştirmek için [görüntüleyin ve kaynaklarını uygun düzenleyicisinde düzenleme](../windows/viewing-and-editing-resources-in-a-resource-editor.md) ve [Önizleme kaynakları](../windows/previewing-resources.md).  
   
  Bir kaynak oluşturduğunuzda veya açtığınızda uygun Düzenleyicisi'ni otomatik olarak açılır.  
   

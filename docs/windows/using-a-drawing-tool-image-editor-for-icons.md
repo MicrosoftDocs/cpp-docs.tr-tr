@@ -19,15 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8345829e5d561ead3be0052770e022f704eabc3b
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: fde195d465116f2fa3055d5981c2c465c4bf31ba
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646130"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019470"
 ---
 # <a name="using-a-drawing-tool-image-editor-for-icons"></a>Çizim Aracı Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
-Resim Düzenleyicisi çizim ve aynı şekilde tüm iş araçları silme serbest: Aracı'nı seçin ve gerekirse [ön plan ve arka plan renklerini seçin](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) , boyutu ve şekli seçenekleri. Ardından görüntüyü işaretçiyi ve tıklar veya çizmek ve silmek için sürükleyin.  
+**Görüntü** Düzenleyicisi çizim ve aynı şekilde tüm iş araçları silme serbest: Aracı'nı seçin ve gerekirse [ön plan ve arka plan renklerini seçin](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) , boyutu ve şekli seçenekleri. Ardından görüntüyü işaretçiyi ve tıklar veya çizmek ve silmek için sürükleyin.  
   
  Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçenek belirleyici, Aracı'nın seçenekleri görüntüler.  
   

@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 862498b012955c3b77a13b37ae07bbee66dd8dfa
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: a8a19de393e7451f045d840552127743f87e00ba
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651411"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019179"
 ---
 # <a name="showing-or-hiding-the-dialog-editor-toolbar"></a>İletişim Kutusu Araç Çubuğunu Gösterme veya Gizleme
-İletişim kutusu düzenleyicisini açtığınızda, iletişim kutusu Düzenleyicisi araç otomatik olarak çözümünüzü üst kısmında görünür.  
+Açtığınızda **iletişim** Düzenleyicisi **iletişim kutusu Düzenleyicisi** araç otomatik olarak çözümünüzü üst kısmında görünür.  
   
 ### <a name="dialog-editor-toolbar"></a>İletişim kutusu Düzenleyicisi araç çubuğu  
   
@@ -40,9 +40,9 @@ ms.locfileid: "39651411"
 |![Dikey Orta düğmesi](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|Dikey|![İki durumlu kılavuz düğmesi](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|Kılavuzu Aç/Kapat|  
 |![Yatay Orta düğmesi](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|Yatay|![Geçiş kılavuzlarını düğmesi](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|Rehberi Aç/Kapat|  
   
- İletişim kutusu Düzenleyicisi araç çubuğu düğmeleri denetimler iletişim kutusunda, örneğin boyutu ve hizalama düzenini yerleştirme içerir. İletişim kutusu Düzenleyicisi araç çubuğu düğmeleri komutları Biçim menüsünden karşılık gelir. Ayrıntılar için bkz [iletişim kutusu Düzenleyicisi için hızlandırma tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).  
+ **İletişim kutusu Düzenleyicisi** araç çubuğu düğmeleri düzenleme iletişim kutusunda, örneğin boyutu ve hizalama denetim düzeni için içerir. **İletişim kutusu Düzenleyicisi** araç çubuğu düğmeleri üzerinde komutları karşılık **biçimi** menüsü. Ayrıntılar için bkz [iletişim kutusu Düzenleyicisi için hızlandırma tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
- İletişim kutusu Düzenleyicisi'nde işiniz kullanılabilir araç çubukları ve windows listesinden seçerek iletişim kutusu Düzenleyicisi araç çubuğu görünümünü geçiş yapabilirsiniz.  
+ Uygulamasındayken **iletişim** Düzenleyicisi görüntülenmesini geçiş yapabileceğiniz **iletişim kutusu Düzenleyicisi** kullanılabilir araç çubukları ve windows listesinden seçerek araç çubuğu.  
   
 ### <a name="to-show-or-hide-the-dialog-editor-toolbar"></a>İletişim kutusu Düzenleyicisi araç çubuğunu gizlemek veya göstermek için  
   

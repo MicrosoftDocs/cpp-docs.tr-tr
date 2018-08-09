@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3e09d3c285c64f049cc8e1bb8aea1c5debe88932
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: e265824d912d05bd68edcaf8637fc391d69869cd
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39644134"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017714"
 ---
 # <a name="user-defined-attributes--c-component-extensions"></a>Kullanıcı Tanımlı Öznitelikler (C++ Bileşen Uzantıları)
 Özel öznitelik meta verileri bir arabirimi, sınıf veya yapı, yöntemi, parametre veya sabit listesi genişletmenizi sağlar.  
@@ -151,8 +151,6 @@ int main() {
    }  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 Service Priority = 0  

@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7a7549371ba4648f8fcce03a98a021c8027c676e
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: d87c07f7fa4f1dfa6cbb34545d74d75e8a867583
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39605200"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40017090"
 ---
 # <a name="mutexmutex-constructor"></a>Mutex::Mutex Oluşturucusu
 Yeni bir örneğini başlatır **Mutex** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 explicit Mutex(  
    HANDLE h  
 );  

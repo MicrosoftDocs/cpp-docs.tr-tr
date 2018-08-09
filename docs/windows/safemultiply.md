@@ -17,19 +17,19 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 662f43d34494850f230723f57163383df99e4848
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 9c0c78a8c17c47ea91d89b3dc7451d60ed0a567b
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603322"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40019098"
 ---
 # <a name="safemultiply"></a>SafeMultiply
 Birlikte taşmasına karşı koruyan bir şekilde iki sayıyı çarpar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeMultiply (  
    T t,  

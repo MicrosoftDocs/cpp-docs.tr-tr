@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 30656ca7271b91adf50fed5bbc4f8dfd3c6c6acb
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 8d4573dfddd8287bb52f919f5fbceb0485b0911d
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608819"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015124"
 ---
 # <a name="picking-up-a-color-from-an-image-to-use-elsewhere-image-editor-for-icons"></a>Başka Yerde Kullanmak Üzere Görüntüden Renk Alma (Simgeler İçin Görüntü Düzenleyicisi)
 **Rengi seçin**, veya geçerli ön plan rengini veya arka plan rengi, sol veya sağ fare düğmesine basın olup olmadığına bağlı olarak, aracı-alma, renk görüntünün üzerinde herhangi bir renk yapar. İptal etmek için **rengi seçin** aracı, başka bir aracı seçin.  
@@ -41,14 +41,13 @@ ms.locfileid: "39608819"
 2.  Görüntüyü almak istediğiniz rengi seçin.  
   
     > [!NOTE]
-    >  Resim Düzenleyicisi renk seçin sonra en son kullanılan Aracı'nı yeniden etkinleştirir.  
+    >  Renk, seçin sonra **görüntü** Düzenleyicisi yeniden etkinleştirir en son kullanılan araç.  
   
 3.  Ön plan rengini veya arka plan rengi sağ fare düğmesi için sol fare düğmesini kullanarak çizin.  
   
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
