@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa03dd41b66bb36d5dc7059863e13267e5dd77bd
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 01df0ea356d2c7a8b495d4c304d11a32377cd3ff
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642129"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013908"
 ---
 # <a name="synclocktunlock-method"></a>SyncLockT::Unlock Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 void Unlock();  
 ```  
   

@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c4091853274d04d27eb060655650a071ea64d4c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7f91622e4d795b7c85cdf6f304ed6a76dd5a9364
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882699"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40012787"
 ---
 # <a name="mfc-windows-programming-symbols"></a>MFC Windows Programlama Sembolleri
-Bu simgeleri de MFC destek dosyalarını parçası olan, ancak standart Windows uygulama işlevleri ve eylemlerini destekler. Bu simgeleri çoğunlukla menülerle kullanılır. Menü Düzenleyicisi'nde menülerle çalışırken, bu simgeleri ortak menü komutları ile ilişkili özellik penceresi görünür. Dosya menüsü çıkış komutu ile uygulamanız varsa, örneği için bu komutu ıd_app_exıt simgesiyle ilişkilendirilecek içinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  
+Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler, menüleri ağırlıklı olarak kullanılır. Menülerde ile çalışırken **Menü Düzenleyici**, bu simgeler görünür **özellik penceresi** ortak menü komutları ile ilişkili. Örneği için uygulamanızın varsa bir **dosya** menüsüyle bir **çıkış** komutu komut ıd_app_exıt sembolü ile ilişkilendirilecek içinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window).  
   
 ||||  
 |-|-|-|  

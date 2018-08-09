@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70cba5145f64fd88d1d6f1c4a68ac4c0730968cc
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 4a976e4b6c6b2fb89dfab362b13000d2e7d4327b
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570390"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013420"
 ---
 # <a name="how-to-open-a-resource-script-file-outside-of-a-project-standalone"></a>Nasıl Yapılır: Proje Dışındaki Kaynak Betik Dosyasını Açma (Tek Başına)
 Bir proje açmak zorunda kalmadan bir .rc dosyasındaki kaynakları görüntüleyebilirsiniz. .Rc dosyasının'te açılmasını aksine bir belge penceresi açılır [kaynak görünümü](../windows/resource-view-window.md) penceresi (dosya içinde bir proje açıkken çalıştığı gibi).  
@@ -46,13 +46,13 @@ Bir proje açmak zorunda kalmadan bir .rc dosyasındaki kaynakları görüntüle
   
 ### <a name="to-open-multiple-rc-files-outside-a-project"></a>Birden çok .rc dosyası bir proje dışında açmak için  
   
-1.  Tek başına hem de kaynak dosyalarını açın. Örneğin, Source1.rc ve Source2.rc açın.  
+1.  Tek başına hem de kaynak dosyalarını açın. Örneğin, açmak `Source1.rc` ve `Source2.rc`.  
   
     1.  Gelen **dosya** menüsünde seçin **açık**, ardından **dosya**.  
   
-    2.  İçinde **Dosya Aç** iletişim kutusunda, istediğiniz (Source1.rc) açın, dosyayı vurgulayın ve'ilk kaynak betik dosyasına gidin **açın**.  
+    2.  İçinde **Dosya Aç** iletişim kutusunda, açmak istediğiniz ilk kaynak betik dosyasına gidin (`Source1.rc`), dosyayı vurgulayın ve tıklayın **açın**.  
   
-    3.  İkinci .rc dosyasına (Source2.rc) açmak için önceki adımı yineleyin.  
+    3.  İkinci .rc dosyasını açmak için önceki adımı yineleyin (`Source2.rc`).  
   
          .Rc dosyaları artık ayrı bir belge pencerelerinde açıktır.  
   

@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: effe435a7dc036d5169c1fbde748b88e158bd355
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: c854f11f64d8ec66d9c00ea8b4833f28f7bf6cdc
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604973"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011480"
 ---
 # <a name="modulereleasenotifierreleasenotifier-destructor"></a>Module::ReleaseNotifier::~ReleaseNotifier Yok Edicisi
 Geçerli örneğinin başlatmasını geri alır **Module::ReleaseNotifier** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 WRL_NOTHROW virtual ~ReleaseNotifier();  
 ```  
   

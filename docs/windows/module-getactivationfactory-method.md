@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e41b90ea56f65665ccdaff0fe4dceff292d1cdcf
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: f6fda1c514b6cb3e60a55d35323bf8b116f850ac
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608111"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011874"
 ---
 # <a name="modulegetactivationfactory-method"></a>Module::GetActivationFactory Metodu
 Etkinleştirme fabrikası için modülü alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 WRL_NOTHROW HRESULT GetActivationFactory(  
    _In_ HSTRING pActivatibleClassId,  
    _Deref_out_ IActivationFactory **ppIFactory,  

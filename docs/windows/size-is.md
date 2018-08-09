@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c6b5309d62db094bf706fe7d3d1bcec99c3ec9a9
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 8dbb3bfbf61c4ad7303c6cee272e14fc91bc9656
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39645457"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011861"
 ---
 # <a name="sizeis"></a>size_is
 Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaretçiler ve tek veya çok boyutlu diziler işaretçilere boyutu belirtin.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ size_is(  
    "expression"  
 ) ]  

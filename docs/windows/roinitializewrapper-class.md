@@ -15,19 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9fab2ecd259e75767728a46448c06df4c4729ef3
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 41eb5e79ca1471fb8c12ffca420a134115fbfcc1
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606728"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40014045"
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper Sınıfı
 Windows çalışma zamanı'nı başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 class RoInitializeWrapper  
 ```  
   

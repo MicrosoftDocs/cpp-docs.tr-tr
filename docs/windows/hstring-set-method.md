@@ -15,19 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aecdafe81dcebc7867d30c46be1fee271e60154c
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 18ea9eafe3786d0a0df543cde654e1f0270dc8c7
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606403"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011773"
 ---
 # <a name="hstringset-method"></a>HString::Set Yöntemi
 Geçerli değerini ayarlar **Hstrıng** belirtilen geniş karakter dizesini bir nesneye veya **Hstrıng** parametresi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 HRESULT Set(  
           const wchar_t* str) throw();  
 HRESULT Set(   

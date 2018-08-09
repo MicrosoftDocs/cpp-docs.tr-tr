@@ -19,41 +19,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 59ee6ce257609c4761e43630a66de9cb9b996269
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 30852b22c9ff4cc74c8f0c57b3a5ed9d79a34838
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892341"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011454"
 ---
 # <a name="symbol-name-restrictions"></a>Sembol Adı Kısıtlamaları
-Sembol adları sınırlamalar aşağıdaki gibidir:  
+Sembol adı kısıtlamaları aşağıdaki gibidir:  
   
--   Tüm [simgeleri](../windows/symbols-resource-identifiers.md) uygulama kapsamında benzersiz olmalıdır. Sembol üstbilgi dosyaları tanımlarında çakışan engeller.  
+-   Tüm [sembolleri](../windows/symbols-resource-identifiers.md) uygulama kapsamında benzersiz olmalıdır. Bu, üstbilgi dosyalarında çakışan sembol tanımlarını engeller.  
   
 -   Sembol adı için geçerli karakterler, A-Z, a-z, 0-9 ve alt çizgi (_) içerir.  
   
--   Sembol adları bir rakamla başlayamaz ve 247 karakterle sınırlıdır.  
+-   Sembol adları bir sayı ile başlayamaz ve 247 karakter ile sınırlıdır.  
   
 -   Sembol adları boşluk içeremez.  
   
--   Sembol adları büyük küçük harfe duyarlı değildir, ancak ilk simge tanım durumunun korunur. Simgeler tanımlayan üstbilgi dosyası, bir kaynak dosyasında tanımlanan kaynaklara başvurmak için kaynak derleyici/Düzenleyicisi ve C++ edinin tarafından kullanılır. Kaynak Derleyicisi/Düzenleyicisi için tek bir simge başvuran olarak hem adlar görünür C++ programı iki ayrı simge yalnızca görürsünüz durumunda, iki sembol adları için farklı.  
+-   Sembol adları büyük/küçük harfe duyarlı değildir, ancak ilk sembol tanımı durumu korunur. Sembolleri tanımlar üstbilgi dosyası, kaynaklar bir kaynak dosyasında tanımlanan başvurmak için hem kaynak derleyici/Düzenleyicisi hem de C++ programlarının tarafından kullanılır. Yalnızca kaynak derleyici/Düzenleyici tek bir sembole başvuru olarak her iki adlarını görür ancak C++ program iki ayrı sembolleri görür durumunda, iki sembol adları için farklı.  
   
     > [!NOTE]
-    >  Standart simge adı düzeni izlemeyin varsa (ID*_[keyword]) özetlenen aşağıda ve kaynak betik dosyasını oluşturmaya çalışırken kaynak kod derleyici için bilinen bir anahtar sözcük rasgele gibi görünen hatayla sonuçlanır aynı olması için simge adınızı olur Tanılama zordur oluşturma. Bunu önlemek için standart adlandırma şeması uyması.  
+    >  Standart sembol adı düzeni izlemeyin varsa (ID*_[keyword]) özetlenen aşağıda ve kaynak kod dosyasını derlenmeye çalışılıyor, kaynak kod derleyici bilinen bir anahtar sözcük görünüşte rastgele hatayla sonuçlanır. aynı olacak şekilde, sembol adı olur. tanı koymak güç oluşturma. Bunu önlemek için standart adlandırma şeması izliyor.  
   
- Sembol adları kaynak ya da bunlar temsil eden nesne türünü belirtmek açıklayıcı önekleri sahip. Bu açıklayıcı önekleri metin birleşimi kimliği ile başlayın Microsoft Foundation Class Kitaplığı (MFC) aşağıdaki tabloda gösterilen simgesi adlandırma kuralları kullanır.  
+ Sembol adları, kaynak veya temsil ettikleri nesne türünü belirten açıklayıcı önekleri vardır. Açıklayıcı bu ön ekler metin birleşim kimliği ile başlayın Microsoft Foundation Class Kitaplığı'nı (MFC) aşağıdaki tabloda gösterilen simge adlandırma kurallarını kullanır.  
   
-|Kategori|önek|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
+|Kategori|Ön eki|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
 |--------------|------------|---------|  
-|Kaynaklar|IDR_ IDD_ IDC_ IDI_ IDB_|Hızlandırıcı veya menü (ve ilişkili ya da özel kaynaklar) iletişim kutusu imleç simgesi bit eşlem|  
+|Kaynaklar|IDR_ IDD_ IDC_ IDI_ IDB_|Hızlandırıcı veya menü (ve ilişkili ya da özel kaynaklar) imleç simgesi bit eşlem iletişim kutusu|  
 |Menü öğeleri|ID_|Menü öğesi|  
 |Komutlar|ID_|Komut|  
 |Denetimleri ve alt pencereler|IDC_|Denetim|  
-|Dizeler|IDS_|Dize tablosu dizesinde|  
+|Dizeler|IDS_|Dize tablosunda dize|  
 |MFC|AFX_|Önceden tanımlanmış MFC sembolleri için ayrılmış|  
-  
-
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

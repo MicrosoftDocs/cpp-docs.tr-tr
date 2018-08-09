@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ef4cfba786bd5c310a24727b59575b9eb45bd183
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 68a23210a8f3d9f561a667f82b395da7ac46da01
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651619"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011467"
 ---
 # <a name="uidefault"></a>uidefault
 Tür bilgileri üyesi kullanıcı arabiriminde görüntülemek için varsayılan üye olduğunu gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [uidefault]  
 ```  
   

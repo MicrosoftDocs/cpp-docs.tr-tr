@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 93ced38ca30a2fd4a61bb3a3664967416fcaf599
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: c21bb7cf58c3c397237768942d60f79958f3278a
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603494"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013567"
 ---
 # <a name="include-c"></a>include (C++)
 Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ include(  
    header_file  
 ) ];  
@@ -45,7 +45,7 @@ Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları
  **Dahil** C++ özniteliği ile aynı işlevlere sahip [dahil](http://msdn.microsoft.com/library/windows/desktop/aa367052) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği nasıl kullanılacağını gösterir **dahil**. Bu örnekte, yalnızca dosya include.h içeren bir #include deyimi.  
+ Aşağıdaki kod örneği nasıl kullanılacağını gösterir **dahil**. Bu örnekte, yalnızca dosya include.h içeren bir `#include` deyimi.  
   
 ```cpp  
 // cpp_attr_ref_include.cpp  

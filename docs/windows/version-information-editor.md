@@ -19,22 +19,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0e57e550527bc906d3c1170e410719c57a877eec
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: a8ea040d5a549c61ba17f059260cb399d82bc430
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647387"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013973"
 ---
 # <a name="version-information-editor"></a>Sürüm Bilgileri Düzenleyicisi
-Sürüm bilgileri, şirket ve ürün kimliği, bir ürün sürüm numarasını ve telif hakkı ve ticari marka bildirimini oluşur. Sürüm bilgileri Düzenleyicisi ile oluşturun ve sürüm bilgileri kaynağında depolanan bu verileri korumak. Sürüm bilgileri kaynağında bir uygulama tarafından gerekli değildir, ancak uygulamayı tanımlayan bilgileri toplamak için kullanışlı bir yerdir. Sürüm bilgileri de API'leri kurulum tarafından kullanılır.  
+Sürüm bilgileri, şirket ve ürün kimliği, bir ürün sürüm numarasını ve telif hakkı ve ticari marka bildirimini oluşur. İle **sürüm bilgisi** Düzenleyicisi, oluşturduğunuz ve sürüm bilgileri kaynağında depolanan bu verileri korumak. Sürüm bilgileri kaynağında bir uygulama tarafından gerekli değildir, ancak uygulamayı tanımlayan bilgileri toplamak için kullanışlı bir yerdir. Sürüm bilgileri de API'leri kurulum tarafından kullanılır.  
   
  Sürüm bilgileri kaynağında bir üst bloğu ve bir veya daha fazla alt blokları vardır: tek bir sabit bilgi bloğu üst ve alt (diğer diller ve/veya karakter kümesi için) bir veya daha fazla sürüm bilgi bloğu. Üst blok düzenlenebilir bir sayısal kutusu hem seçilebilir aşağı açılan listesi vardır. Alt bloklar yalnızca düzenlenebilir metin kutuları sahip.  
   
 > [!NOTE]
 >  Windows standart VS_VERSION_INFO adlı yalnızca bir sürümü kaynak sağlamaktır.  
   
- Sürüm bilgileri Düzenleyicisi ile yapabilecekleriniz:  
+ **Sürüm bilgisi** Düzenleyicisi olanak sağlar:  
   
 -   [Sürüm bilgileri kaynağında dize düzenleme](../windows/editing-a-string-in-a-version-information-resource.md)  
   
@@ -45,7 +45,7 @@ Sürüm bilgileri, şirket ve ürün kimliği, bir ürün sürüm numarasını v
 -   [Programınızdan erişim sürüm bilgileri](../windows/accessing-version-information-from-within-your-program.md)  
   
     > [!NOTE]
-    >  Sürüm bilgileri Düzenleyicisi'ni kullanırken, çoğu durumda, kaynağa özgü komutların kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Örneğin, bir blok üstbilgisi girişine işaret ederken tıklarsanız, yeni sürüm blok bilgisi ve sürüm blok bilgisi silme komutları kısayol menüsünü gösterir.  
+    >  Kullanırken **sürüm bilgisi** düzenleyicisinde birçok örneği sağ kaynağa özgü komutların kısayol menüsünü görüntüleyin. Örneğin, bir blok üstbilgisi girişine işaret ederken tıklarsanız, kısayol menüsünü gösterir **yeni sürüm blok bilgisi** ve **sürüm blok bilgisi silme** komutları.  
   
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   

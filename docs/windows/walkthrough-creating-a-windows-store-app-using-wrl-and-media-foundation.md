@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 480baaf12c332f0a293374fe2317110eb186cbdf
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 6db5f5eb080f9d802090dda61afd296bc4e6dc3b
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39648990"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40015049"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma
 Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel Windows Platformu (UWP) uygulaması oluşturmak için kullanmayı öğrenin [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
@@ -59,17 +59,17 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel 
   
 ### <a name="to-use-the-wrl-to-create-the-media-foundation-grayscale-transform-component"></a>WRL Media Foundation gri tonlamalı oluşturmak için kullanılacak bileşen dönüştürme  
   
-1.  Visual Studio'da oluşturma bir **boş çözüm** proje. Örneğin, proje adını `MediaCapture`.  
+1.  Visual Studio'da oluşturma bir **boş çözüm** proje. Örneğin, proje adını *MediaCapture*.  
   
-2.  Ekleme bir **DLL (Evrensel Windows)** çözüme bir proje. Örneğin, proje adını `GrayscaleTransform`.  
+2.  Ekleme bir **DLL (Evrensel Windows)** çözüme bir proje. Örneğin, proje adını *GrayscaleTransform*.  
   
-3.  Ekleme bir **Midl dosyası (.idl)** projeye dosya. Örneğin, dosya adını `GrayscaleTransform.idl`.  
+3.  Ekleme bir **Midl dosyası (.idl)** projeye dosya. Örneğin, dosya adını *GrayscaleTransform.idl*.  
   
 4.  Bu kod için GrayscaleTransform.idl ekleyin.  
   
      [!code-cpp[wrl-media-capture#1](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_1.idl)]  
   
-5.  Pch.h içeriğini değiştirmek için aşağıdaki kodu kullanın.  
+5.  İçeriğini değiştirmek için aşağıdaki kodu kullanın `pch.h`.  
   
      [!code-cpp[wrl-media-capture#2](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_2.h)]  
   
@@ -77,9 +77,9 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel 
   
      [!code-cpp[wrl-media-capture#3](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_3.h)]  
   
-7.  Bu örnekte GrayscaleTransform.h kullanılmaz. İsterseniz projeden kaldırın.  
+7.  `GrayscaleTransform.h` Bu örnekte kullanılmaz. İsterseniz projeden kaldırın.  
   
-8.  GrayscaleTransform.cpp içeriğini değiştirmek için aşağıdaki kodu kullanın.  
+8.  İçeriğini değiştirmek için aşağıdaki kodu kullanın `GrayscaleTransform.cpp`.  
   
      [!code-cpp[wrl-media-capture#4](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_4.cpp)]  
   
@@ -92,7 +92,7 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel 
        DllGetClassObject                   PRIVATE
    ```   
   
-10. Dllmain.cpp içeriğini değiştirmek için aşağıdaki kodu kullanın.  
+10. İçeriğini değiştirmek için aşağıdaki kodu kullanın `dllmain.cpp`.  
   
      [!code-cpp[wrl-media-capture#6](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_6.cpp)]  
   
@@ -106,21 +106,21 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel 
   
 ### <a name="to-use-the-wrl-the-custom-media-foundation-component-from-a-c-app"></a>Bir C# uygulamasından özel Media Foundation bileşen WRL kullanmak için  
   
-1.  Yeni bir **C# boş uygulama (XAML)** için proje `MediaCapture` çözüm. Örneğin, proje adını `MediaCapture`.  
+1.  Yeni bir **C# boş uygulama (XAML)** için proje `MediaCapture` çözüm. Örneğin, proje adını *MediaCapture*.  
   
 2.  İçinde **MediaCapture** projesi, bir başvuru ekleyin `GrayscaleTransform` proje. Bilgi edinmek için bkz. nasıl [nasıl yapılır: başvurular ekleme veya kaldırma başvuru Yöneticisi'ni kullanarak](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).  
   
-3.  Package.appxmanifest, üzerinde **özellikleri** sekmesinde **mikrofon** ve **Web kamerası**. Her iki özelliği, Web kamerası gelen fotoğraf yakalamak için gereklidir.  
+3.  İçinde `Package.appxmanifest`, **özellikleri** sekmesinde **mikrofon** ve **Web kamerası**. Her iki özelliği, Web kamerası gelen fotoğraf yakalamak için gereklidir.  
   
-4.  MainPage.xaml içinde kök bu kodu ekleyin [kılavuz](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) öğesi:  
+4.  İçinde `MainPage.xaml`, kök bu kodu ekleyin [kılavuz](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) öğesi:  
   
      [!code-xml[wrl-media-capture#7](../windows/codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]  
   
-5.  MainPage.xaml.cs içeriğini değiştirmek için aşağıdaki kodu kullanın.  
+5.  İçeriğini değiştirmek için aşağıdaki kodu kullanın `MainPage.xaml.cs`.  
   
      [!code-cs[wrl-media-capture#8](../windows/codesnippet/CSharp/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_8.cs)]  
   
- Aşağıdaki çizim MediaCapture uygulamayı gösterir.  
+ Aşağıdaki çizimde gösterildiği `MediaCapture app`.  
   
  ![Fotoğraf yakalama MediaCapture uygulama](../windows/media/wrl_media_capture.png "WRL_Media_Capture")  
   

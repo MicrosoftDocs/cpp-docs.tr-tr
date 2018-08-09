@@ -17,20 +17,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e9d1ae2b4ea4ad4769a770d503ff8bd82c91a53a
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: c16d16fe1965e5e3c6fa69a78dabf9be615daee1
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608793"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013232"
 ---
 # <a name="issamevalue-constant"></a>IsSame::value Sabiti
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  template <typename T1, typename T2>  
+```cpp  
+template <typename T1, typename T2>  
 struct IsSame  
 {  
     static const bool value = false;  
@@ -46,7 +46,7 @@ struct IsSame<T1, T1>
 ## <a name="remarks"></a>Açıklamalar  
  Bir türden diğerine aynı olup olmadığını belirtir.  
   
- `value` olan **true** şablon parametreleri aynı ise ve **false** şablon parametreleri farklıysa.  
+ **değer** olduğu **true** şablon parametreleri aynı ise ve **false** şablon parametreleri farklıysa.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** internal.h  

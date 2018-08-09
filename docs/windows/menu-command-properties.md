@@ -15,32 +15,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 343c1ce255a26753c2b125d2a0a53e04808a0233
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 665bc76998750f32e7de03e2fdd75fcec835774c
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878869"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40014532"
 ---
 # <a name="menu-command-properties"></a>Menü Komut Özellikleri
-Aşağıdaki bilgiler görüntülenir Menüsü Özellikleri göre düzenlenmiş [Özellikler penceresini](/visualstudio/ide/reference/properties-window) seçtiğinizde menü komutu. Özellikler penceresini ayrıca, bu özellikleri görüntülemenize olanak sağlar, ancak bu kategoriye göre alfabetik olarak listelenir.  
+Aşağıdaki bilgilere göre düzenlenmiş **menü** görünen Özellikler [Özellikler penceresi](/visualstudio/ide/reference/properties-window) seçtiğinizde bir menü komutu. Bu rağmen alfabetik olarak listelenen **özellikleri** pencere Ayrıca bu özellikleri kategoriye göre görüntüle olanak sağlar.  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|**Sonu**|Şu değerlerden biri olabilir:<br /><br /> -   **Hiçbiri** (varsayılan): kesme yok.<br />-   **Sütun**: statik menüleri için bu değer menü komutunu yeni bir satıra yerleştirir. Açılır menüler için bu değer sütunları arasındaki hiçbir çizgi ile yeni bir sütun menü komutu yerleştirir. Bu özelliği ayarlamak menü görünümünü yalnızca çalışma zamanında, menü Düzenleyicisi'nde etkiler.<br />-   **Çubuk**: aynı sütun dışında açılır menüler için bu değer yeni bir sütun dikey çizgi eski sütunla ayırır. Bu özelliği ayarlamak menü görünümünü yalnızca çalışma zamanında, menü Düzenleyicisi'nde etkiler.|  
-|**Açıklamalı alt yazı**|Menü komutu (menüsü adı) etiket metni. Aşağıdakilerden birini menü resim yazısını harflerle kısayol tuşu komutu, ve işareti ile koyun yapmak için (&).|  
-|**İşaretli**|TRUE ise, menü komutu başlangıçta denetlenir. Tür: Bool. Varsayılan: False.|  
-|**Etkin**|Varsa **yanlış**, menü öğesini devre dışı bırakılır.|  
-|**Gri**|TRUE ise, başlangıçta gri ve etkin olmayan menü komutu. Tür: Bool. Varsayılan: False.|  
-|**Yardım**|Menü öğesi sağa hizalar. Örneğin, **yardımcı** menü komutu olduğu her zaman açık tüm Windows uygulamalarını sağdaki. Bu özellik menü öğesini ayarlarsanız, bu öğeyi sağ uçta çok ile menüsünün en sonunda görüntülenir. Üst düzey öğelerine uygulanır. Varsayılan: **False**.|  
-|**ID**|Üstbilgi dosyasında tanımlanan bir simge. Tür: Simge, tamsayı veya tırnak içine alınmış dize. Bile genellikle, düzenleyiciler hiçbirinde kullanılabilir herhangi bir simge kullanabilir [Özellikler penceresini](/visualstudio/ide/reference/properties-window) , seçmek aşağı açılan liste sağlamaz.|  
-|**Açılan Pencere**|TRUE ise, menüsü açılır menü komuttur. Tür: Bool. Varsayılan: menü çubuğundaki en üst düzey menü True; Aksi takdirde False.|  
-|**istemi**|Bu komutu vurgulanmış durum çubuğunda görüntülenecek metni içerir. Metin dizesi tablosuna menü komutu ile aynı tanımlayıcıyla yerleştirilir. Bu özellik, herhangi bir proje türü için kullanılabilir, ancak çalışma zamanında MFC belirli bir işlevdir.|  
-|**Sağdan Sola Hizala**|Sağa hizalar çalışma zamanında menü çubuğundaki menü komutu. Tür: Bool. Varsayılan: False.|  
-|**Sağ sol sırası**|Arabirimi sağ İbranice veya Arapça gibi sola, okuyan herhangi bir dil için yerelleştirilmiş sağdan sola görüntülemek menü komutlarını sağlar.|  
-|**Ayıraç**|TRUE ise, komutu bir ayırıcı ' dir. Tür: Bool. Varsayılan: False.|  
-  
-
+|**sonu**|Şu değerlerden biri olabilir:<br /><br /> -   **Hiçbiri** (varsayılan): kesme yok.<br />-   **Sütun**: statik menüleri için bu değer menü komutu yeni bir satıra yerleştirir. Açılır menüler için bu değeri hiçbir sütunları arasındaki çizgi ile yeni bir sütun menü komutunu yerleştirir. Bu özelliğin ayarlanması menü görünümünü yalnızca çalışma zamanında, menü Düzenleyicisi'nde etkiler.<br />-   **Çubuk**: aynı **sütun** dışında açılır menüler için bu değeri yeni bir sütun içeren bir dikey çizgi eski sütunu ayırır. Bu özelliğin ayarlanması etkiler menü görünümünü yalnızca çalışma zamanında değil **menü** Düzenleyici.|  
+|**Resim yazısı**|Menü komutunu (menü adı) etiket metni. Bir harf menüsünün açıklamasındaki kısayol tuşu komutu, bir ampersan ile önünde olmak için (&).|  
+|**İşaretli**|Varsa **True**, menü komutunu başlangıçta denetlenir. Türü: **Bool**. Varsayılan: **False**.|  
+|**Etkin**|Varsa **False**, menü öğesi devre dışı bırakıldı.|  
+|**Gri**|Varsa **True**, başlangıçta gri ve etkin olmayan menü komutu. Türü: **Bool**. Varsayılan: **False**.|  
+|**Yardım**|Menü öğesi sağa hizalar. Örneğin, **yardımcı** menü komutu olduğundan her zaman, tüm Windows uygulamalarını sağdaki. Bir menü öğesi bu özelliği ayarlarsanız, bu öğe en çok sağdaki ve menüsünün en sonunda görünür. Üst düzey öğeleri için geçerlidir. Varsayılan: **False**.|  
+|**ID**|Üst bilgi dosyasında tanımlanan bir simge. Türü: **sembol**, **tamsayı**, veya **sınırlandırılmış**. Yaygın olarak kullanılabilen düzenleyicileri hiçbirinde olsa bile herhangi bir simge kullanabilir [Özellikler penceresi](/visualstudio/ide/reference/properties-window) arasından seçim yapabileceğiniz bir açılan liste sağlamaz.|  
+|**Açılan Pencere**|Varsa **True**, açılır menü menü komutudur. Türü: **Bool**. Varsayılan: **True** için menü çubuğundan; Aksi halde üst düzey menülere **False**.|  
+|**istemi**|Bu menü komutu vurgulandığında durum çubuğunda görüntülenecek metni içerir. Menü komutu ile aynı tanımlayıcıyla dize tablosunda metin yerleştirilir. Bu özellik, her türden proje için kullanılabilir, ancak MFC belirli çalışma zamanı işlevdir.|  
+|**Sağdan Sola Yasla**|Sağa hizalar çalışma zamanında menü çubuğundaki menü komutu. Türü: **Bool**. Varsayılan: **False**.|  
+|**Sağa sola düzeni için**|Sağ İbranice ve Arapça gibi sola, okuyan herhangi bir dil için yerelleştirilmiş arabirim sağdan sola görüntülemek, menü komutlarını sağlar.|  
+|**Ayıraç**|Varsa **True**, menü komutunu olduğu bir ayırıcı. Türü: **Bool**. Varsayılan: **False**.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

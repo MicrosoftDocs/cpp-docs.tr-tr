@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ec064bc8ea40fd4835c4f779e0120e1daa445d7e
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 6fe449842cc019520a3d73528db05a26b17dcd99
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641466"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011568"
 ---
 # <a name="windows-runtime-and-managed-templates-c-component-extensions"></a>Windows Çalışma Zamanı ve Yönetilen Şablonlar (C++ Bileşen Uzantıları)
 Şablonları, bir Windows çalışma zamanı veya ortak dil çalışma zamanı türü prototipin tanımlamanıza olanak sağlar ve ardından farklı bir şablon türü parametreleri kullanarak bu tür çeşidi örneği.  
@@ -44,7 +44,7 @@ ms.locfileid: "39641466"
   
 ### <a name="examples"></a>Örnekler  
   
- Yönetilen tür şablonu parametresi olan bir genel tipi örneklemeli mümkündür, ancak bir genel tür şablonu parametresi ile yönetilen bir şablon örneği oluşturulamıyor.  Genel türler çalışma zamanında çözümlenir olmasıdır.  Daha fazla bilgi için [genel türler ve temsilciler (Visual C++)](../windows/generics-and-templates-visual-cpp.md).  
+ Yönetilen tür şablonu parametresi olan bir genel tipi örneklemeli mümkündür, ancak bir genel tür şablonu parametresi ile yönetilen bir şablon örneği oluşturulamıyor. Genel türler çalışma zamanında çözümlenir olmasıdır. Daha fazla bilgi için [genel türler ve temsilciler (Visual C++)](../windows/generics-and-templates-visual-cpp.md).  
   
 ```cpp  
 // managed_templates.cpp  
@@ -77,7 +77,7 @@ template<class T> public ref class R {
 };  
 ```  
   
- C + ile başvurulan bir derlemede tanımlanan şablonları erişemiyor +/ CLI dili söz dizimi, ancak yansıma kullanabilirsiniz.  Bir şablon örneği değil, meta verilerde yayıldığını değil.  Bir şablon örneği varsa, yalnızca başvurulan üye işlevleri meta verilerde görüntülenir.  
+ C + ile başvurulan bir derlemede tanımlanan şablonları erişemiyor +/ CLI dili söz dizimi, ancak yansıma kullanabilirsiniz. Bir şablon örneği değil, meta verilerde yayıldığını değil. Bir şablon örneği varsa, yalnızca başvurulan üye işlevleri meta verilerde görüntülenir.  
   
 ```cpp  
 // managed_templates_3.cpp  

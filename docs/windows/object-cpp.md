@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2c0705c5d841b63cd3f537ab39dbbe9122fea869
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 2667c8ecb14e31388737366c4de6c527bdc40f9d
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39607916"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40012758"
 ---
 # <a name="object-c"></a>nesne (C++)
 Özel bir arabirim tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [object]  
 ```  
   

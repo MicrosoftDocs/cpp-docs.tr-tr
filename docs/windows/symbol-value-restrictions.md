@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3432ca82d9557fbcb47da65be148bedb0f47f8b8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1e6b594ad7fe1d805511d5e2cd1b67bd0d791e8e
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889562"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013409"
 ---
 # <a name="symbol-value-restrictions"></a>Sembol Değeri Kısıtlamaları
-Sembol değeri için normal şekilde ifade tamsayı olabilir # önişlemci yönergeleri define. Sembol değerleri bazı örnekleri şunlardır:  
+Sembol değeri için normal şekilde ifade edilen herhangi bir tamsayı olabilir # önişlemci yönergeleri define. Sembol değerlerinin bazı örnekleri aşağıda verilmiştir:  
   
 ```  
 18  
@@ -35,33 +35,31 @@ Sembol değeri için normal şekilde ifade tamsayı olabilir # önişlemci yöne
 -3456  
 ```  
   
- Sembol değerleri kaynaklar (Hızlandırıcıları, bit eşlemler, imleçler, iletişim kutuları, simgeler, menüler, dize tabloları ve sürüm bilgileri) için ondalık sayı 0 ile 32.767 aralığında olması gerekir (ancak onaltılık olamaz). İletişim kutusu denetimleri veya bireysel dizelerini dize tablosunda gibi kaynaklar bölümlerinin sembol değerleri 0 ile 65,534 veya ile 32.767 32,768 olabilir.  
+ Kaynaklar (Hızlandırıcıları, bit eşlemler, işaretçiler, iletişim kutuları, simgeler, menüler, dize tabloları ve sürüm bilgileri) için Sembol değerlerini ondalık sayı 0 ile 32.767 aralığında olmalıdır (ancak onaltılık olamaz). İletişim kutusu denetimleri veya dize tablosunda, tek tek dizeler gibi kaynaklar bölümleri için Sembol değerlerini 65,534 0 veya -32.768 ile 32.767 olabilir.  
   
- Kaynak semboller 16 bit numaralarıdır. Bunları işaretli veya işaretsiz olarak girebilirsiniz, ancak bunlar dahili olarak imzalanmamış tamsayı olarak kullanılır. Bu nedenle negatif sayılar, karşılık gelen pozitif değerlerine cast.  
+ Kaynak sembolleri 16 bit sayılardır. Bunları işaretli veya işaretsiz girebilirsiniz, ancak bunlar dahili olarak işaretsiz tamsayılar kullanılır. Bu nedenle negatif sayılar, karşılık gelen pozitif değerlerine dönüştürme.  
   
- Sembol değerleri bazı kısıtlamalar şunlardır:  
+ Sembol değerlerinin bazı kısıtlamalar şunlardır:  
   
--   MFC ve Visual Studio geliştirme ortamı bazı aralık sayısı özel amaçlar için kullanın. MFC tarafından numaraların en önemli biti ayarlanmış (-32.768 -1 veya 32.768 için 65,534, oturum bağlı olarak) ile ayrılmıştır.  
+-   Visual Studio geliştirme ortamını ve MFC bazı aralık sayısı, özel amaçlar için kullanın. MFC tarafından tüm sayılar en anlamlı biti ayarlanmış (-32.768 -1 veya 32.768 için 65,534, oturum bağlı olarak) ile ayrılmıştır.  
   
--   Diğer simge dizeleri kullanarak bir sembol değeri tanımlayamazsınız. Örneğin, aşağıdaki simge tanımını desteklenmiyor:  
+-   Diğer sembol dizeleri kullanan bir sembol değer tanımlayamazsınız. Örneğin, aşağıdaki simge tanımı desteklenmez:  
   
-    ```  
+    ```cpp  
     #define IDC_MYEDIT  IDC_OTHEREDIT  //not supported  
     ```  
   
--   Önişlemci makroları değeri tanımlarla bağımsız değişkenlerle birlikte kullanamazsınız. Örneğin:  
+-   Önişlemci makroları değer tanımlarla bağımsız değişkenlerle birlikte kullanamazsınız. Örneğin:  
   
-    ```  
+    ```cpp  
     #define   IDD_ABOUT  ID(7) //not supported  
     ```  
   
-     ne bağımsız olarak geçerli bir ifade değil `ID` için derleme zamanında değerlendirir.  
+     ne bağımsız olarak geçerli bir ifade değil `ID` derleme zamanında değerlendirilir.  
   
--   Uygulamanızı ifadelerle tanımlanan sembolleri içeren varolan bir dosyanın olabilir. Salt okunur semboller symbols eklemek hakkında daha fazla bilgi için bkz: [kullanarak paylaşılan (salt okunur) veya hesaplanan sembolleri](../windows/including-shared-read-only-or-calculated-symbols.md).  
+-   Uygulamanızın ifadeleri ile tanımlanan sembolleri içeren mevcut bir dosya olabilir. Salt okunur semboller symbols ekleme hakkında daha fazla bilgi için bkz. [kullanılarak paylaşılan (salt okunur) veya hesaplanan sembolleri](../windows/including-shared-read-only-or-calculated-symbols.md).  
   
- Aralık sayısı hakkında daha fazla bilgi için bkz: [TN023: standart MFC kaynakları](../mfc/tn023-standard-mfc-resources.md).  
-  
-
+ Aralık sayısı hakkında daha fazla bilgi için bkz. [TN023: standart MFC kaynakları](../mfc/tn023-standard-mfc-resources.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

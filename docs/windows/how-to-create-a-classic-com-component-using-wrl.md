@@ -13,41 +13,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 00f00b265128ca388a3e9d4eb77631a320fbda81
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3fc09c75c4667ee3dd0c186f5ca465047adb1023
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880091"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013173"
 ---
 # <a name="how-to-create-a-classic-com-component-using-wrl"></a>Nasıl yapılır: WRL Kullanarak Klasik COM Bileşeni Oluşturma
-Windows çalışma zamanı C++ Şablon kitaplığı (WRL), Evrensel Windows Platformu (UWP) uygulamaları için kullanmanın yanı sıra masaüstü uygulamalarında kullanmak için temel klasik COM bileşenlerini oluşturmak için kullanabilirsiniz. COM bileşenlerini oluşturulmasında Windows çalışma zamanı C++ Şablon kitaplığı ATL daha az kod gerektirebilir Windows çalışma zamanı C++ Şablon kitaplığı destekleyen COM alt hakkında daha fazla bilgi için bkz: [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
+Windows çalışma zamanı C++ Şablon kitaplığı (WRL), Evrensel Windows Platformu (UWP) uygulamaları için kullanmanın yanı sıra masaüstü uygulamalarında kullanmak için temel klasik COM bileşenleri oluşturmak için kullanabilirsiniz. COM bileşenleri oluşturmak için Windows çalışma zamanı C++ Şablon Kitaplığı daha az kod ATL gerektirebilir. Windows çalışma zamanı C++ Şablon kitaplığı destekleyen COM alt hakkında daha fazla bilgi için bkz [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
- Bu belge Windows çalışma zamanı C++ Şablon kitaplığı temel bir COM bileşeni oluşturma için nasıl kullanılacağını gösterir. Gereksinimlerine en uygun dağıtım mekanizması kullanabilmenize karşın, bu belgede ayrıca kaydetme ve COM bileşeninin düzgün bir masaüstü uygulaması'ndan kullanmak için temel bir yolunu gösterir.  
+ Bu belge, temel bir COM bileşeni oluşturmak için Windows çalışma zamanı C++ Şablon kitaplığı kullanma işlemi gösterilmektedir. Gereksinimlerinize en uygun dağıtım mekanizması kullanabilirsiniz, ancak bu belge ayrıca kaydetme ve bir masaüstü uygulamasından COM bileşeni kullanmak için basit bir yol gösterir.  
   
-### <a name="to-use-the-windows-runtime-c-template-library-to-create-a-basic-classic-com-component"></a>Windows çalışma zamanı C++ Şablon kitaplığı temel klasik COM bileşeni oluşturmak üzere kullanmak için  
+### <a name="to-use-the-windows-runtime-c-template-library-to-create-a-basic-classic-com-component"></a>Temel klasik COM bileşeni oluşturmak için Windows çalışma zamanı C++ Şablon kitaplığı kullanmak için  
   
-1.  Visual Studio'da oluşturma bir **boş çözüm** projesi. Örneğin, proje adı `WRLClassicCOM`.  
+1.  Visual Studio'da oluşturma bir **boş çözüm** proje. Örneğin, proje adını `WRLClassicCOM`.  
   
-2.  Ekleme bir **Win32 Proje** çözüme. Örneğin, proje adı `CalculatorComponent`. Üzerinde **uygulama ayarları** sekmesine **DLL**.  
+2.  Ekleme bir **Win32 projesi** çözüm. Örneğin, proje adını `CalculatorComponent`. Üzerinde **uygulama ayarları** sekmesinde **DLL**.  
   
-3.  Ekleme bir **MIDL dosya (.idl)** projesine dosyasını. Örneğin, dosya adı `CalculatorComponent.idl`.  
+3.  Ekleme bir **Midl dosyası (.idl)** projeye dosya. Örneğin, dosya adını `CalculatorComponent.idl`.  
   
-4.  CalculatorComponent.idl için bu kodu ekleyin:  
+4.  CalculatorComponent.idl için şu kodu ekleyin:  
   
      [!code-cpp[wrl-classic-com-component#1](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]  
   
-5.  CalculatorComponent.cpp içinde tanımlayın `CalculatorComponent` sınıfı. `CalculatorComponent` Sınıfının devraldığı [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom >](../windows/runtimeclassflags-structure.md) sınıfı öğesinden türetilen belirtir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509\(v=vs.85\).aspx) ve [Iınspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` yalnızca Windows çalışma zamanı uygulama bileşenleri için kullanılabilir.) `CoCreatableClass` işlevleriyle gibi kullanılabilir sınıfı için bir üreteci oluşturur [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615\(v=vs.85\).aspx).  
+5.  İçinde `CalculatorComponent.cpp`, tanımlama `CalculatorComponent` sınıfı. `CalculatorComponent` Sınıfının devraldığı [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom >](../windows/runtimeclassflags-structure.md) öğesinden türetilen sınıfın belirtir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509\(v=vs.85\).aspx) değil [Iınspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` yalnızca Windows çalışma zamanı uygulama bileşenleri için kullanılabilir.) `CoCreatableClass` işlevlerinde aşağıdaki gibi kullanılabilir sınıf için bir Üreteç oluşturur [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615\(v=vs.85\).aspx).  
   
      [!code-cpp[wrl-classic-com-component#2](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]  
   
-6.  DllMain.cpp'yi kodda değiştirmek için aşağıdaki kodu kullanın. Bu dosya, DLL dışarı aktarma işlevleri tanımlar. Bu işlevleri kullanma [Microsoft::WRL::Module](../windows/module-class.md) modülü için sınıf oluşturucuları yönetmek için sınıf.  
+6.  Kodu değiştirmek için aşağıdaki kodu kullanın `dllmain.cpp`. Bu dosya, DLL dışarı aktarma işlevleri tanımlar. Bu işlevleri [Microsoft::WRL::Module](../windows/module-class.md) sınıf üreteçlerini modülüyle ilgili yönetmek için sınıf.  
   
      [!code-cpp[wrl-classic-com-component#3](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_3.cpp)]  
   
-7.  Ekleme bir **modül tanım dosyasını (.def)** projesine dosyasını. Örneğin, dosya adı `CalculatorComponent.def`. Bu dosya dışarı aktarılacak olan işlevlerin adlarını bağlayıcı sağlar.  
+7.  Ekleme bir **modül tanım dosyasını (.def)** projeye dosya. Örneğin, dosya adını `CalculatorComponent.def`. Bu dosya, bağlayıcı dışarı aktarılacak işlevlerin adlarını sağlar.  
   
-8.  CalculatorComponent.def için bu kodu ekleyin:  
+8.  CalculatorComponent.def için şu kodu ekleyin:  
   
     ```
     LIBRARY
@@ -58,11 +58,11 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL), Evrensel Windows Plat
         DllCanUnloadNow         PRIVATE  
     ```
 
-9. Runtimeobject.lib bağlayıcı satırı ekleyin. Bilgi edinmek için bkz. nasıl [. Bağlayıcı girişi dosyaları lib](../build/reference/dot-lib-files-as-linker-input.md).  
+9. Runtimeobject.lib bağlayıcı satırına ekleyin. Bilgi edinmek için bkz. nasıl [. Bağlayıcı girişi dosyaları lib](../build/reference/dot-lib-files-as-linker-input.md).  
   
-### <a name="to-consume-the-com-component-from-a-desktop-app"></a>Bir masaüstü uygulamasının COM bileşeni kullanmak için  
+### <a name="to-consume-the-com-component-from-a-desktop-app"></a>Bir masaüstü uygulamasından COM bileşeni kullanma  
   
-1.  COM bileşeninin Windows kayıt defteri ile kaydedin. Bunu yapmak için bir kayıt girdileri dosyası oluşturun, adlandırın `RegScript.reg`ve aşağıdaki metni ekleyin. Değiştir  *\<dll yolu >* DLL yolu ile — Örneğin, `C:\\temp\\WRLClassicCOM\\Debug\\CalculatorComponent.dll`.  
+1.  COM bileşeni, Windows kayıt defteri ile kaydedin. Bunu yapmak için bir kayıt girdileri dosyası oluşturun, adlandırın `RegScript.reg`, aşağıdaki metni ekleyin. Değiştirin  *\<dll yolu >* dll yolu ile — Örneğin, `C:\temp\WRLClassicCOM\Debug\CalculatorComponent.dll`.  
   
     ```
     Windows Registry Editor Version 5.00
@@ -83,16 +83,16 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL), Evrensel Windows Plat
     @="1.0"
     ```  
   
-2.  RegScript.reg çalıştırabilir veya, projenizin ekleyebilirsiniz **oluşturma sonrası olay**. Daha fazla bilgi için bkz: [oluşturma öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).  
+2.  RegScript.reg çalıştırın veya projenizin ekleme **derleme sonrası olay**. Daha fazla bilgi için [derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).  
   
-3.  Ekleme bir **Win32 konsol uygulaması** çözüme proje. Örneğin, proje adı `Calculator`.  
+3.  Ekleme bir **Win32 konsol uygulaması** çözüme bir proje. Örneğin, proje adını `Calculator`.  
   
-4.  Calculator.cpp içeriğini değiştirmek için bu kodu kullanın:  
+4.  İçeriğini değiştirmek için bu kodu kullanın `Calculator.cpp`:  
   
      [!code-cpp[wrl-classic-com-component#6](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_6.cpp)]  
   
 ## <a name="robust-programming"></a>Güçlü Programlama  
- Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı bir COM bileşeni yazmak ve tüm COM etkin teknoloji kullanılabilir hale getirmek için kullanabileceğiniz göstermek için standart COM işlevleri kullanır. Windows çalışma zamanı C++ Şablon kitaplığı türleri gibi kullanabilir [Microsoft::wrl:: comptr](../windows/comptr-class.md) COM ve diğer nesneleri ömrünü yönetmek için Masaüstü uygulamanızda. Aşağıdaki kod ömrünü yönetmek için Windows çalışma zamanı C++ Şablon kitaplığı kullanır `ICalculatorComponent` işaretçi. `CoInitializeWrapper` COM kitaplığı serbest bırakılmaz ve COM kitaplığı ömrü outlives garanti eder garanti RAII sarmalayıcı sınıftır `ComPtr` akıllı işaretçi nesnesi.  
+ Bu belge, bir COM bileşeni yazmak ve herhangi bir COM özellikli teknoloji kullanılabilir hale getirmek için Windows çalışma zamanı C++ Şablon kitaplığı kullanabileceğini göstermeyi standart COM işlevleri kullanır. Windows çalışma zamanı C++ Şablon kitaplığı türleri gibi kullanabilirsiniz [Microsoft::wrl:: comptr](../windows/comptr-class.md) COM ve diğer nesnelerin ömrünü yönetmek için Masaüstü uygulamanızda. Aşağıdaki kod, ömrünü yönetmek için Windows çalışma zamanı C++ Şablon kitaplığı kullanan `ICalculatorComponent` işaretçi. `CoInitializeWrapper` COM kitaplığı serbest bırakılır ve de COM kitaplığının kullanım ömrü outlives olduğunu garanti garanti eden bir RAII sarmalayıcı bir sınıftır `ComPtr` akıllı işaretçi nesnesinin.  
   
  [!code-cpp[wrl-classic-com-component#7](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_7.cpp)]  
   

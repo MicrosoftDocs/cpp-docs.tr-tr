@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf2c5cb434b07c9323594448a25da7251010bbad
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 8b936b1014c2dd6640f64ca929628f6f0a74dc79
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608315"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40012335"
 ---
 # <a name="resource-view-window"></a>Kaynak Görünümü Penceresi
 > [!NOTE]
@@ -35,9 +35,9 @@ ms.locfileid: "39608315"
 >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
 > [!TIP]
->  Bir kısayol menü komutlarının başlatmak için Kaynak Görünümü penceresi üzerinde sağ tıklayabilirsiniz. Ayrıca, sabitleme veya pencerenin çıkarmak için başlık çubuğunu çift tıklatabilirsiniz. Başlık çubuğunun sağ pencereyi davranışını denetlemenize izin ek komutlar verir. Daha fazla bilgi için [Windows Yönetim](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
+>  Sağ tıklayabilirsiniz **kaynak görünümü** penceresi kısayol menüsü komutları başlatmak için. Ayrıca, sabitleme veya pencerenin çıkarmak için başlık çubuğunu çift tıklatabilirsiniz. Başlık çubuğunun sağ pencereyi davranışını denetlemenize izin ek komutlar verir. Daha fazla bilgi için [Windows Yönetim](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
   
-#### <a name="to-open-the-resource-view-window"></a>Kaynak Görünümü penceresi açmak için  
+### <a name="to-open-the-resource-view-window"></a>Kaynak Görünümü penceresi açmak için  
   
 1.  Tıklayın **kaynak görünümü** üzerinde **görünümü** menüsü.  
   

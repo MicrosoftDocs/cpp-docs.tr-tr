@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2f08564088d00df332db43f207284dae9fc99109
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 3ea871f2c3b75ac8f4e316b3dc680e8821ac789f
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604261"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40010678"
 ---
 # <a name="implementshelperiidcount-constant"></a>ImplementsHelper::IidCount Sabiti
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 static const unsigned long IidCount;  
 ```  
   

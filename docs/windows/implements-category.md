@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 11fecff2336163fa4f2e773244bc1ab132a15329
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 28df44096f3b61eb4ada17ec824292281edee602
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39603724"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013720"
 ---
 # <a name="implementscategory"></a>implements_category
 Hedef sınıf tarafından uygulanan bileşen kategorilerini belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ implements_category(  
    implements_category="uuid"  
 ) ]  
@@ -45,7 +45,7 @@ Hedef sınıf tarafından uygulanan bileşen kategorilerini belirler.
  Bu öznitelik gerektiren [coclass'ı](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod, şu nesne denetim kategorisi uyguladığını belirtir.  
+ Aşağıdaki kod, aşağıdaki uygulayan nesne belirtir `Control` kategorisi.  
   
 ```cpp  
 // cpp_attr_ref_implements_category.cpp  

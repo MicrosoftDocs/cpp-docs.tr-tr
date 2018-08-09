@@ -32,40 +32,40 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41d075edb01fc139660d8e72a7fe53f03ee9e80b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1d00495f95b3c67e4a6fc3613b949b8ae2946bd6
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33865842"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40010392"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++'ta MBCS Desteği
-Bir MBCS etkinleştirilmiş Windows sürümünde çalıştırdığınızda (tümleşik kaynak kod düzenleyicisini, hata ayıklayıcı ve komut satırı araçları dahil) Visual C++ geliştirme MBCS etkinleştirilmiş, bellek penceresi dışında sistemidir.  
+Bir MBCS etkinleştirilmiş Windows sürümünde çalıştırdığınızda (tümleşik Kaynak Kod Düzenleyicisi, hata ayıklayıcı ve komut satırı araçları dahil) Visual C++ geliştirme MBCS özellikli, bellek penceresi dışında sistemidir.  
   
- ANSI veya Unicode karakter olarak bunlara çevirebilir olsa bile bellek penceresi bayt veri MBCS karakter olarak yorumlayın değil. ANSI karakter her zaman 1 bayt boyutunda ve Unicode karakterler 2 bayt cinsinden boyutu. MBCS ile karakterler 1 veya 2 bayt boyutunda olabilir ve kendi yorum hangi kod sayfası kullanımda olduğuna bağlıdır. Bu nedenle, güvenilir bir şekilde MBCS karakterleri görüntülemek bellek penceresi zor olabilir. Bellek penceresi hangi bayt karakter başlangıcıdır bilemezsiniz. Geliştirici bayt değerlerini bellek penceresinde görüntüleyebilir ve karakter gösterimi belirlemek için tabloları değeri bakın. Başlangıç adresi kaynak koduna göre bir dize olarak Geliştirici bildiği için bu mümkün olur.  
+ Bellek penceresi, ANSI veya Unicode karakteri yorumlayabilir olsa bile verileri baytlık MBCS karakter olarak yorumlamaz. ANSI karakterler her zaman boyutu 1 bayt ve Unicode karakterleri 2 bayt cinsinden boyutu. MBCS ile karakter, 1 veya 2 bayt boyutunda olabilir ve kendi yorumu hangi kod sayfası kullanımda olduğuna bağlıdır. Bu nedenle, güvenilir bir şekilde MBCS karakter görüntülemek bellek penceresi zordur. Bellek penceresi bir karakter başlangıcı hangi baytı olup olmadığını bilemezsiniz. Geliştirici bellek penceresinde bayt değerleri görüntüleyebilir ve karakter gösterimi belirlemek için tabloları değerini arayın. Geliştirici kaynak koduna göre bir dizenin başlangıç adresini bilmesi için bu olasıdır.  
   
- Bunu yapmak uygun olduğu yerlerde visual C++ çift baytlık karakterler kabul eder. Bu yol adlarını ve dosya adlarını iletişim kutularında ve metin girişleri Visual C++ kaynak düzenleyicisinde (örneğin, statik metin iletişim kutusu Düzenleyicisi) ve simge düzenleyicideki statik metin girişleri içerir. Ayrıca, bazı çift baytlık yönergeleri önişlemci tanır — Örneğin, dosya adları `#include` deyimleri ve bağımsız değişkenleri olarak **code_seg** ve **data_seg** pragmaları. Kaynak Kodu Düzenleyicisi'nde, açıklamalar ve dize değişmez değerleri çift baytlık karakterler, C/C++ dil öğeleri olsa da (örneğin, değişken adları) içinde değil kabul edilir.  
+ Bunu yapmak uygun olduğu yerlerde visual C++ çift baytlık karakterler kabul eder. Bu yol adları ve dosya adlarını iletişim kutuları ve Visual C++ kaynak Düzenleyicisi (örneğin, statik metin iletişim kutusu düzenleyicisinde) ve simge Düzenleyicisi statik metin girişleri metin girişleri içerir. Ayrıca, önişlemci bazı çift bayt yönergeleri tanır; Örneğin, dosya adları `#include` deyimleri ve bağımsız değişkenleri olarak `code_seg` ve `data_seg` pragmaları. Kaynak Kod Düzenleyicisi'nde çift baytlık karakterler yorumlar ve dize değişmez değerleri, olmayan C/C++ Dil öğelerini rağmen (örneğin, değişken adları) olarak kabul edilir.  
   
 ##  <a name="_core_support_for_the_input_method_editor_.28.ime.29"></a> Giriş Yöntemi Düzenleyicisi (IME) için destek  
- Hem tek ve çift baytlık karakterler girmek için Windows IME MBCS (örneğin, Japonya) normalde kullandığınız Doğu Asya pazarda desteği için yazılmış uygulamalar. Visual C++ geliştirme ortamı IME için tam destek içerir. Daha fazla bilgi için bkz: [IME örnek: denetim IME modu ve uygulama IME düzeyi 3'ü nasıl gösteren](http://msdn.microsoft.com/en-us/87ebdf65-cef0-451d-a6fc-d5fb64178b14).  
+ MBCS (örneğin, Japonya) normalde kullandığınız Doğu Asya pazarları için hem tek ve çift baytlık karakterler girerek Windows IME desteği için yazılmış uygulamalar. Visual C++ geliştirme ortamına IME için tam destek içerir. Daha fazla bilgi için [IME örnek: denetim IME modu ve uygulama IME Düzey 3'ü nasıl gösterir](http://msdn.microsoft.com/87ebdf65-cef0-451d-a6fc-d5fb64178b14).  
   
- Japonca klavye Kanji karakter doğrudan desteklemez. IME diğer Japonca alfabesinde (Romaji, Katakana veya Hiragana) birine kendi olası Kanji Beyanları girdiğiniz bir ses dizesi dönüştürür. Belirsizliği ise, birkaç alternatif arasından seçebilirsiniz. Hedeflenen Kanji karakter seçildiğinde IME iki geçirir `WM_CHAR` denetleyen uygulama iletileri.  
+ Japonca klavye Kanji karakter doğrudan desteklemez. IME diğer Japonca alfabelere (Romaji, Katakana veya Hiragana) birinde, olası Kanji gösterimleri girilen bir ses dizesi dönüştürür. Belirsizlik varsa, birkaç alternatif arasından seçebilirsiniz. Hedeflenen Kanji karakter seçtikten sonra iki IME geçirir `WM_CHAR` iletileri denetleme uygulama.  
   
- ALT + tarafından etkinleştirilmiş IME\` tuş bileşimi, bir dizi düğmeler (bir gösterge) ve bir dönüştürme pencere görünür. Uygulama penceresi metin ekleme noktasına yerleştirir. Uygulama işlemelidir `WM_MOVE` ve `WM_SIZE` yeni konumu veya hedef penceresi boyutunu uyacak şekilde dönüştürme penceresini yeniden konumlandırma tarafından iletileri.  
+ ALT + tarafından etkinleştirilmiş IME\` tuş bileşimi, bir dizi düğmeler (bir göstergesi) ve bir dönüştürme pencere görüntülenir. Uygulama penceresi metin ekleme noktasından yerleştirir. Uygulama işlemelidir `WM_MOVE` ve `WM_SIZE` yeni konumu veya hedef penceresinin boyutunu uyacak şekilde dönüştürme penceresi yeniden konumlandırma tarafından iletileri.  
   
- Kanji karakter girin olanağı sağlamak için uygulamanızın kullanıcılarının istiyorsanız, uygulamanın Windows IME iletilerini işlemesi gerekir. IME programlama hakkında daha fazla bilgi için bkz: [Giriş Yöntemi Düzenleyicisi](https://msdn.microsoft.com/en-us/library/ms776145.aspx).  
+ Kullanıcıların uygulamanızın Kanji karakter girmeniz becerisine sahip olmak istiyorsanız, uygulamanın Windows IME iletileri işlemesi gerekir. IME programlama hakkında daha fazla bilgi için bkz. [Giriş Yöntemi Düzenleyicisi](https://msdn.microsoft.com/library/ms776145.aspx).  
   
 ## <a name="visual-c-debugger"></a>Visual C++ hata ayıklayıcı  
- Visual C++ hata ayıklayıcı IME iletileri üzerindeki kesme noktaları ayarlamanıza olanak sağlar. Ayrıca, bellek penceresi çift baytlık karakterler görüntüleyebilirsiniz.  
+ Visual C++ hata ayıklayıcı, kesme noktaları IME iletileri ayarlamanıza olanak sağlar. Ayrıca, bellek penceresini çift baytlık karakterler görüntüleyebilirsiniz.  
   
 ## <a name="command-line-tools"></a>Komut Satırı Araçları  
- Derleyici, NMAKE ve kaynak derleyicisi (RC. dahil olmak üzere Visual C++ komut satırı araçları EXE) MBCS etkinleştirilmiştir. Varsayılan kod sayfası, uygulamanızın kaynakları derlerken değiştirmek için kaynak derleyicinin /c seçeneğini kullanabilirsiniz.  
+ Derleyici, NMAKE ve kaynak derleyicisi (RC. dahil olmak üzere Visual C++ komut satırı araçları EXE) MBCS etkinleştirilmiştir. Kaynak derleyicinin /c seçeneği, varsayılan kod sayfası, uygulamanızın kaynakları derlenirken değiştirmek için kullanabilirsiniz.  
   
- Kaynak kodu derleme zamanında varsayılan yerel ayar değiştirmek için kullanın [#pragma setlocale](../preprocessor/setlocale.md).  
+ Kaynak kodu derleme zamanında varsayılan yerel ayarı değiştirmek için kullanın [#pragma setlocale](../preprocessor/setlocale.md).  
   
 ## <a name="graphical-tools"></a>Grafik araçları  
- Spy ++ ve düzenleme araçları, kaynak gibi Visual C++ Windows tabanlı araçlar IME dizelerini tümüyle destekler.  
+ Visual C++ Windows tabanlı araçlar Spy ++ ve düzenleme araçları, kaynak gibi IME dizeleri tam olarak destekler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çok baytlı karakter kümeleri (MBCS'ler) desteği](../text/support-for-multibyte-character-sets-mbcss.md)   
+ [Çok baytlı karakter kümesi desteği (MBCS'ler)](../text/support-for-multibyte-character-sets-mbcss.md)   
  [MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)

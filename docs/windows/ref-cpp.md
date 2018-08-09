@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 197ee3b30c257b98e2147bd030000db8dd192067
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 04eb49d0b0f5cb78f0dcd893ca97586e9a16e9cb
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39607598"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40010765"
 ---
 # <a name="ref-c"></a>ref (C++)
 Bir başvuru işaretçi tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ref]  
 ```  
   

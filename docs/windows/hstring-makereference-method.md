@@ -15,19 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 673d5b10706580303f179ee453495b581d96eda3
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 0c9a77a8a943dcefdf9db9d43121f2b00bde1568
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608341"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011016"
 ---
 # <a name="hstringmakereference-method"></a>HString::MakeReference Yöntemi
 Oluşturur bir `HStringReference` nesnesinden belirtilen dize parametresi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<unsigned int sizeDest>  
     static HStringReference MakeReference(  
               wchar_t const (&str)[ sizeDest]);  

@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 77a6049216137da56cc79cc6f28f1f7591015a33
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 7a8705f6c1ed1030f1beeb7c2302f0d629c5d17d
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604524"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40012199"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -39,7 +39,7 @@ UWP uygulamaları C + yazabileceğiniz +/ CX, C++, bir SQL diyalektiği kullanab
 
    Bu kategori, C++ temel bileşenleri ve sunucu ve bulut programlama bağlamındaki hesaplama kodu kullanarak da içerir. Bazen yoğun performans kod merkezinde bulunan bir sunucu veya Bulut uygulama performansını en üst düzeye c++'ta yazılır. Bu kod bir DLL içine derleyin ve C# veya Visual Basic kullanın.
 
-- **.NET framework uygulamaları**. Çoğu .NET Framework uygulamaları, C# veya Visual Basic'te yazılır, ancak ayrıca C + +/ CLI (Visual c++/CLR derleyici seçeneği). Öneririz kullanarak C + +/ CLI yönetilen ve yerel kodu içeren büyük bir uygulamanın en az bir birlikte çalışma katmanı için.
+- **.NET framework uygulamaları**. Çoğu .NET Framework uygulamaları, C# veya Visual Basic'te yazılır, ancak ayrıca C + +/ CLI ( `/clr` Visual c++ derleyici seçeneği). Öneririz kullanarak C + +/ CLI yönetilen ve yerel kodu içeren büyük bir uygulamanın en az bir birlikte çalışma katmanı için.
 
 ##  <a name="BK_WindowsUniversal"></a> Evrensel Windows uygulamaları
 

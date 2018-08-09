@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: be817ac4bddcc169ab2ecb3a9106e9594642e2f0
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 0287d27d975ce93e88a7a4b70a683188901ca958
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39645158"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011822"
 ---
 # <a name="using-the-256-color-palette-image-editor-for-icons"></a>256-Renk Paletini Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
-256-renk paletinden bir seçimle çizmek için renk paletindeki açık griyi renkleri seçmek gereken [renkler penceresini](../windows/colors-window-image-editor-for-icons.md).  
+256-renk paletinden bir seçimle çizmek için renk seçmeniz gerekir **renkleri** palette [renkler penceresini](../windows/colors-window-image-editor-for-icons.md).  
   
 ### <a name="to-choose-a-color-from-the-256-color-palette-for-large-icons"></a>Büyük simgeler için 256-renk paletinden bir renk seçmek için  
   
@@ -36,7 +36,7 @@ ms.locfileid: "39645158"
   
 2.  Görüntülenen 256 renkten bir renk seçin **renkleri** palette **renkleri** penceresi.  
   
-     Seçili renk renk paletindeki açık griyi geçerli rengi olur **renkleri** penceresi.  
+     Seçili renk geçerli rengi olur **renkleri** palette **renkleri** penceresi.  
   
     > [!NOTE]
     >  256-renk görüntüler için kullanılan ilk paleti tarafından döndürülen palet eşleşen `CreateHalftonePalette` Windows API. Windows Kabuğu için hedeflenen tüm simgeleri palet gerçekleştirme sırasında titreşimini önlemek için bu paletin kullanmanız gerekir.  

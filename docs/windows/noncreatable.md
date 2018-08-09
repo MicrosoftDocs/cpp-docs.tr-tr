@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4881d0e2bc1379f5c4cafa17f485707bca315783
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 79791c2bbfd927d26ef70d50d225d8eff95bd674
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39607949"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40014279"
 ---
 # <a name="noncreatable"></a>noncreatable
 Tek başına oluşturulamaz bir nesneyi tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [noncreatable]  
 ```  
   

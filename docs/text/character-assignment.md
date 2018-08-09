@@ -15,15 +15,15 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e403a619fc4c900aca51503862ff8f9dc315c2a3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 084cfd69a3742db10e09e9d97974a0666fa31a47
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856703"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40010418"
 ---
 # <a name="character-assignment"></a>Karakter Atama
-Aşağıdaki örneğe göz önünde bulundurun `while` döngü tarar 'X' dışındaki tüm karakterleri başka bir dizeye kopyalama bir dize:  
+Aşağıdaki örnekte göz önünde bulundurun **sırada** döngü 'X' dışındaki tüm karakterlerle başka bir dizeye kopyalama, bir dize tarar:  
   
 ```  
 while( *sz2 )  
@@ -35,7 +35,7 @@ while( *sz2 )
 }  
 ```  
   
- Kodu baytta kopyalar `sz2` gösterdiği konuma `sz1`, ardından artırır `sz1` sonraki baytı almak için. Ancak sonraki karakteri `sz2` atamayı bir çift bayt karakter `sz1` yalnızca ilk baytı kopyalar. Aşağıdaki kod karakteri güvenle kopyalamak için taşınabilir bir işlev ve için başka bir tanesini kullanır `sz1` ve `sz2` doğru:  
+ Kod bayt kopyalar `sz2` konumuna işaret ettiği `sz1`, ardından artırır `sz1` sonraki baytı almanın. Ancak sonraki karakteri `sz2` atama için bir çift bayt karakter `sz1` yalnızca ilk bayt kopyalar. Karakter güvenli bir şekilde kopyalamak için bir taşınabilir işlevi ve başka artırmak için aşağıdaki kodu kullanan `sz1` ve `sz2` doğru:  
   
 ```  
 while( *sz2 )  

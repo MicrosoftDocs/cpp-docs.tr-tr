@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4c437035713634736a02afbce1325d14ba18229
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 2d097c5c1193b74aa3e4d6ecea755390b0885a8d
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604417"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013066"
 ---
 # <a name="module-class"></a>Modül Sınıfı
 İlgili nesneler koleksiyonunu temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<ModuleType moduleType>  
 class Module;  
   
@@ -96,7 +96,7 @@ class Module<OutOfProc> : public Module<InProc>;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Module::objectCount_ Veri Üyesi](../windows/module-objectcount-data-member.md)|Kaç tane sınıfları ile oluşturulmuş izler [olun](../windows/make-function.md) işlevi.|  
-|[Module::releaseNotifier_ Veri Üyesi](../windows/module-releasenotifier-data-member.md)|ReleaseNotifier nesnesine bir işaretçi tutar.|  
+|[Module::releaseNotifier_ Veri Üyesi](../windows/module-releasenotifier-data-member.md)|Bir işaretçi tutan bir `ReleaseNotifier` nesne.|  
   
 ### <a name="macros"></a>Makrolar  
   

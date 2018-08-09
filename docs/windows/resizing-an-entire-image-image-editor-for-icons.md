@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f9104feac603819b9420d315e619182722c87474
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 75c4558f0d783152cee2eeb53f06ee341b785994
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606224"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40012173"
 ---
 # <a name="resizing-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Yeniden Boyutlandırma (Simgeler İçin Görüntü Düzenleyicisi)
 ### <a name="to-resize-an-entire-image-using-the-properties-window"></a>Özellikler penceresini kullanarak görüntünün tümünü yeniden boyutlandırma  
@@ -32,17 +32,16 @@ ms.locfileid: "39606224"
   
 2.  İçinde **genişliği** ve **yükseklik** kutularındaki [Özellikler penceresi](/visualstudio/ide/reference/properties-window), istediğiniz boyutları yazın.  
   
-     Resmin boyutu artırıyorsunuz, Resim Düzenleyicisi resmi sağa, aşağı, veya her ikisi de genişletir ve yeni bölge geçerli arka plan rengi ile doldurur. Görüntü uzatılabilir değil.  
+     Resmin boyutu artırıyorsanız **görüntü** Düzenleyicisi resmi sağa, aşağı, veya her ikisi de genişletir ve yeni bölge geçerli arka plan rengi ile doldurur. Görüntü uzatılabilir değil.  
   
-     Görüntü boyutunu azaltarak, Resim Düzenleyicisi'ni sağ alt kenarı veya her ikisi de resmi kırpar.  
+     Görüntü boyutunu azaltarak, **görüntü** Düzenleyicisi sağ veya alt kenarı veya her ikisi de resmi kırpar.  
   
     > [!NOTE]
-    >  Genişlik ve yükseklik özellikleriyle, kısmi bir seçim değil yeniden boyutlandırmak için tüm görüntü yalnızca yeniden boyutlandırmak için kullanabilirsiniz.  
+    >  Kullanabileceğiniz **genişliği** ve **yükseklik** kısmi bir seçim değil yeniden boyutlandırmak için tüm görüntü yalnızca yeniden boyutlandırmak için özellikleri.  
   
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

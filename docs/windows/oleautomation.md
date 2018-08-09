@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3e8c7ea92e914543d80b199ef9d52435eb7116d9
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 63ffeedd172df74419ef28fa72dca2bd9927779e
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608013"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40012618"
 ---
 # <a name="oleautomation"></a>oleautomation
 Bir arabirim otomasyon ile uyumlu olduğunu gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [oleautomation]  
 ```  
   

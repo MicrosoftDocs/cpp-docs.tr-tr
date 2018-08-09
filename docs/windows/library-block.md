@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 806dcb96916b2e92bffc2d217e318a8853672ae8
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 7e8f1788b8af2c563e89f9a05643298a8b06d860
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39605077"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40014769"
 ---
 # <a name="libraryblock"></a>library_block
 IDL kitaplığı bloğu içinde bir yapısı yerleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [library_block]  
 ```  
   

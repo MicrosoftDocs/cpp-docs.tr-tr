@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d6f17f44e520018f82dc82abe88427a2410d68e7
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: e4364f60012cb4571edbf195a02b77f500a2dc86
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606357"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40010337"
 ---
 # <a name="retval"></a>retval
 Üyenin dönüş değerini alan parametreyi belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [retval]  
 ```  
   

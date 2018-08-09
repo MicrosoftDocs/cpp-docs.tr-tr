@@ -18,21 +18,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a5474ff56c5a0a10842e090dc05b7c3515046dac
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 420f5a6db7c537b8ccfa4d6b6ffbb86242a44299
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876130"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40012969"
 ---
 # <a name="new-custom-resource-dialog-box"></a>Yeni Özel Araç Çubuğu Kaynak İletişim Kutusu
 Yeni bir özel kaynak oluşturmanıza olanak sağlar.  
   
- **Kaynak türü**  
- Özel kaynak türü adını girmek metin kutusu sağlar. Visual C++ otomatik olarak büyük harfe adı, çıktığınızda **yeni özel kaynak** iletişim kutusu.  
+### <a name="resource-type"></a>Kaynak türü  
+ Özel kaynak türü adını girmek metin kutusu sağlar. Visual C++, çıktığınızda adı otomatik olarak büyük **yeni özel kaynak** iletişim kutusu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir kaynak adı veya tarafından ayrılan kimliği belirtmezseniz [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. Ayrılmış adlar DESIGNINFO, HWB, ve TEXTINCLUDE ve ayrılmış kimliği 255.  
+ Bir kaynak adı ya da tarafından ayrılmış kimliği belirtmezseniz [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. Ayrılmış adları DESIGNINFO, HWB, ve TEXTINCLUDE ve ayırtılmış ID 255tir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Ekle İletişim Kutusu](../windows/add-resource-dialog-box.md)

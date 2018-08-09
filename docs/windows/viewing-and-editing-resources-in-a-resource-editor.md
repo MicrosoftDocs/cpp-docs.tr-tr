@@ -24,15 +24,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97816db8075d04b6d05950bb65c25aa12382b728
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 5fca755c46d3fc5628adc2c724b9307a346d1fe7
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646936"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40014009"
 ---
 # <a name="viewing-and-editing-resources-in-a-resource-editor"></a>Kaynakları, Kaynak Düzenleyicisinde Görüntüleme ve Düzenleme
-Her kaynak türü bu kaynak türü için belirli bir kaynak Düzenleyicisi sahiptir. Yeniden düzenleme, yeniden boyutlandırma, denetimleri ve Özellik Ekle veya aksi ilişkili Düzenleyicisi'ni kullanarak bir kaynak özelliklerini değiştirin. Bir kaynak olarak da düzenleyebilirsiniz [metin biçimi](../windows/how-to-open-a-resource-script-file-in-text-format.md) ve [ikili biçimi](../windows/opening-a-resource-for-binary-editing.md).  
+Her kaynak türüne sahip bir **kaynak** bu kaynak türü için belirli bir düzenleyici. Yeniden düzenleme, yeniden boyutlandırma, denetimleri ve Özellik Ekle veya aksi ilişkili Düzenleyicisi'ni kullanarak bir kaynak özelliklerini değiştirin. Bir kaynak olarak da düzenleyebilirsiniz [metin biçimi](../windows/how-to-open-a-resource-script-file-in-text-format.md) ve [ikili biçimi](../windows/opening-a-resource-for-binary-editing.md).  
   
  Bazı kaynak türleri içeri aktarıldı ve çeşitli şekillerde kullanılan tek dosyalardır; Bunlar, bit eşlemler, simgeler, işaretçiler, araç çubukları ve html dosyaları içerir. Dosya adları gibi kaynaklara sahip olarak [kaynak tanımlayıcıları](../windows/symbols-resource-identifiers.md). Diğer iletişim kutuları, menüler ve Win32 projeleri, dize tablolarında gibi yalnızca bir kaynak betiği (.rc) veya kaynak şablonu (.rct) dosyasının parçası olarak mevcut.  
   
@@ -46,16 +46,16 @@ Her kaynak türü bu kaynak türü için belirli bir kaynak Düzenleyicisi sahip
   
 1.  Seçin **kaynak görünümü** gelen **görünümü** menüsü.  
   
-2.  Kaynak Görünümü penceresi en üst pencere değilse **kaynak görünümü** dön getirmek için sekmesinde.  
+2.  Varsa **kaynak görünümü** penceresinin en üstünde pencere değil, tıklayın **kaynak görünümü** dön getirmek için sekmesinde.  
   
-3.  Kaynak görünümünde görüntülemek istediğiniz kaynakları içeren proje klasörünü genişletin. Örneğin, bir iletişim kutusu kaynağı görüntülemek istiyorsanız, iletişim kutusu klasörünü genişletin.  
+3.  Gelen **kaynak görünümü**, görüntülemek istediğiniz kaynakları içeren proje klasörünü genişletin. Örneğin, bir iletişim kutusu kaynağı görüntülemek istiyorsanız, genişletme **iletişim** klasör.  
   
     > [!NOTE]
     >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-4.  Örneğin, IDD_ABOUTBOX kaynak çift tıklayın.  
+4.  Örneğin, kaynağa çift tıklatın **IDD_ABOUTBOX**.  
   
-     Kaynak uygun Düzenleyicisi'nde açılır. Örneğin, iletişim kutusu kaynakları için kaynak iletişim kutusu Düzenleyicisi içinde açılır.  
+     Kaynak uygun Düzenleyicisi'nde açılır. Örneğin, iç kaynak iletişim kutusu kaynakları için açılır **iletişim** Düzenleyici.  
   
      Ayrıca [görüntülemek kaynakları bir (kaynak betiği) .rc dosyasındaki açık bir projeniz zorunda kalmadan](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).  
   
@@ -75,7 +75,7 @@ Her kaynak türü bu kaynak türü için belirli bir kaynak Düzenleyicisi sahip
   
 ### <a name="to-view-a-managed-resource-in-a-resource-editor"></a>Yönetilen kaynak bir kaynak Düzenleyicisi'nde görüntülemek için  
   
-1.  İçinde **Çözüm Gezgini**, örneğin, Bitmap1.bmp kaynağa çift tıklayın.  
+1.  İçinde **Çözüm Gezgini**, kaynak, örneğin, çift **Bitmap1.bmp**.  
   
      Kaynak uygun Düzenleyicisi'nde açılır.  
   
@@ -83,7 +83,7 @@ Her kaynak türü bu kaynak türü için belirli bir kaynak Düzenleyicisi sahip
   
 1.  İçinde **Çözüm Gezgini**, seçin ve silmek istediğiniz kaynağa sağ **Sil** kısayol menüsünden.  
   
-### <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

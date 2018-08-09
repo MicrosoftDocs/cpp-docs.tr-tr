@@ -18,26 +18,26 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8b82b9f13da1b7c4884001fed5afce832147714
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 390f2a11b98a851b5f33b4e0a941a515421d5836
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856494"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011623"
 ---
 # <a name="support-for-using-wmain"></a>wmain Kullanma Desteği
-Visual C++ destekler tanımlayan bir **wmain** işlevi ve Unicode uygulamanıza joker karakter bağımsız değişkenleri geçirme. Biçimsel parametresi bildirme **wmain**, benzer bir biçimde kullanarak **ana**. Ardından, joker karakter bağımsız değişkenlerini ve isteğe bağlı olarak bir joker karakter ortamı işaretçisi program geçirebilirsiniz. `argv` Ve `envp` parametreleri **wmain** türü `wchar_t*`. Örneğin:  
+Visual C++ destekler tanımlayan bir **wmain** işlevi ve Unicode uygulamanızı geniş karakter bağımsız değişkenleri geçirme. Biçimsel parametre bildirirsiniz **wmain**, benzer bir biçimde kullanarak `main`. Ardından, geniş karakter bağımsız değişkenlerini ve isteğe bağlı olarak bir geniş karakter ortamında işaretçi programa geçirebilirsiniz. `argv` Ve `envp` parametreleri **wmain** türü `wchar_t*`. Örneğin:  
   
 ```  
 wmain( int argc, wchar_t *argv[ ], wchar_t *envp[ ] )  
 ```  
   
 > [!NOTE]
->  MFC Unicode uygulamaları **wWinMain** giriş noktası olarak. Bu durumda, `CWinApp::m_lpCmdLine` bir UNICODE dizesi. Ayarladığınızdan emin olun **wWinMainCRTStartup** ile [/Entry](../build/reference/entry-entry-point-symbol.md) bağlayıcı seçeneği.  
+>  MFC Unicode uygulamaları `wWinMain` giriş noktası olarak. Bu durumda, `CWinApp::m_lpCmdLine` bir UNICODE dizesi. Ayarladığınızdan emin olun `wWinMainCRTStartup` ile [/Entry](../build/reference/entry-entry-point-symbol.md) bağlayıcı seçeneği.  
   
- Programınızı kullanıyorsa, bir **ana** işlevi, çok baytlı karakter ortamı program başlatma sırasında çalışma zamanı kitaplığı tarafından oluşturulur. Ortam geniş karakter kopyası yalnızca gerekli olduğunda oluşturulur (örneğin, bir çağrı tarafından `_wgetenv` veya `_wputenv` işlevleri). İlk çağrıda `_wputenv`, ya da ilk çağrıda `_wgetenv` MBCS ortam zaten varsa, karşılık gelen bir joker karakter dizesi ortam oluşturulur. Ortam sonra işaret ediyor `_wenviron` bir joker karakter sürümü genel değişkeni, `_environ` genel değişkeni. Bu noktada, iki kopyasını ortam (MBCS ve Unicode) aynı anda mevcut ve program ömrü boyunca çalışma zamanı sistemi tarafından korunur.  
+ Programınızı kullanıyorsa bir `main` işlevi çok baytlı karakterli ortam program başlangıcında çalışma zamanı kitaplığı tarafından oluşturulur. Ortamın geniş karakterli kopyası yalnızca gerektiğinde oluşturulur (örneğin, bir çağrı tarafından `_wgetenv` veya `_wputenv` işlevler). Yapılan ilk çağrıda `_wputenv`, veya yapılan ilk çağrıda `_wgetenv` bir MBCS ortamı zaten varsa, karşılık gelen bir geniş karakterli dize ortamı oluşturulur. Ortam ardından tarafından işaret edilen `_wenviron` genel değişkeninin geniş karakterli sürümüdür, `_environ` genel değişkeni. Bu noktada, ortamın (MBCS ve Unicode) iki kopyasını aynı anda mevcut ve program ömrü boyunca çalışma zamanı sistemi tarafından korunur.  
   
- Benzer şekilde, program kullanıyorsa, bir **wmain** işlevi, bir joker karakter ortamı program başlangıcında oluşturulur ve işaret ediyor `_wenviron` genel değişkeni. MBCS (ASCII) ortamı ilk çağrıda oluşturulur `_putenv` veya `getenv` ve işaret ediyor `_environ` genel değişkeni.  
+ Benzer şekilde, programınız kullanıyorsa bir **wmain** işlevi, bir geniş karakter ortamında program başlangıcında oluşturulur ve tarafından işaret edilen `_wenviron` genel değişkeni. İlk çağrıda bir MBCS (ASCII) ortamı oluşturulur `_putenv` veya `getenv` ve tarafından işaret edilen `_environ` genel değişkeni.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Unicode desteği](../text/support-for-unicode.md)   

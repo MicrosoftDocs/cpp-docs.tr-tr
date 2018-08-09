@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e4a9c624f6f9e06108aa25930a2b035cbed685ef
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0d6d767a77b68ad8585da711861d942abbe6b686
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876351"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013499"
 ---
 # <a name="invokehelpercallback-data-member"></a>InvokeHelper::callback_ Veri Üyesi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 TCallback callback_;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir olay gerçekleştiğinde çağırmak için olay işleyicisini temsil eder.  
+ Bir olay oluştuğunda çağrılacak olay işleyicisini temsil eder.  
   
- `TCallback` Şablon parametresi olay işleyicisi türünü belirtir.  
+ `TCallback` Şablon parametresi, olay işleyicisi türünü belirtir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

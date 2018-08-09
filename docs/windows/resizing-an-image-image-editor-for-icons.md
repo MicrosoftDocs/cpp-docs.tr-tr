@@ -20,27 +20,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 41494e8b88f41c4c842e95e9f8a9f5da0247739f
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 9c972f4038da4b4ed1d52fee0b8029b6f48ff3bb
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39605649"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013879"
 ---
 # <a name="resizing-an-image-image-editor-for-icons"></a>Görüntüyü Yeniden Boyutlandırma (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntüyü yeniden boyutlandırma sırasında Resim Düzenleyicisi davranışını olup seçtiğiniz bağlıdır [seçili](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) görüntünün tamamını veya yalnızca bir bölümü.  
+Davranışını **görüntü** görüntüyü yeniden boyutlandırma sırasında Düzenleyicisi bağlı olup seçtiğiniz [seçili](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) görüntünün tamamını veya yalnızca bir bölümü.  
   
- Seçimi görüntüsü yalnızca bir bölümünü içerdiğinde, Resim Düzenleyicisi satırları silerek seçimi küçültür veya piksel ve geçerli arka plan rengi veya ile boşaltılmış bölgeleri doldurma sütunlarının satırlar veya sütunlar piksel çoğaltarak seçimi genişletir.  
+ Seçimi görüntüsü yalnızca bir bölümünü içerdiğinde **görüntü** Düzenleyicisi satırları veya sütunları piksel silme ve arka plan rengiyle boşaltılmış bölgeleri girerek seçim daraltır ya da seçimi uzatır Satırlar veya sütunlar piksel çoğaltma.  
   
- Seçimi görüntünün içerdiğinde, Resim Düzenleyicisi'ni ya da daraltır ve resmi uzatır veya kırpar ve genişletir.  
+ Seçimi görüntünün tamamını içerdiği durumlarda **görüntü** Düzenleyici ya da daraltır ve resmi uzatır veya kırpar ve genişletir.  
   
- Görüntüyü yeniden boyutlandırma için iki mekanizma vardır: boyutlandırma ve [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Görüntünün bir parçasını ve tüm boyutunu değiştirmek için boyutlandırma tutamaçlarını sürükleyebilirsiniz. Sürükleyebilirsiniz boyutlandırma tutamaçlarını dolu. Boş tanıtıcıları sürükleyemezsiniz. Yalnızca tüm görüntüyü yeniden boyutlandırmak için Özellikler penceresini seçilen bir bölümünü kullanabilirsiniz.  
+ Görüntüyü yeniden boyutlandırma için iki mekanizma vardır: boyutlandırma ve [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Görüntünün bir parçasını ve tüm boyutunu değiştirmek için boyutlandırma tutamaçlarını sürükleyebilirsiniz. Sürükleyebilirsiniz boyutlandırma tutamaçlarını dolu. Boş tanıtıcıları sürükleyemezsiniz. Kullanabileceğiniz **özellikleri** tamamını yeniden boyutlandırmak için pencere görüntü yalnızca seçili bir parçası değil.  
   
  ![Boyutlandırma tutamaçları üzerinde bir bit eşlem](../mfc/media/vcimageeditorsizinghandles.gif "vcImageEditorSizingHandles")  
 Boyutlandırma  
   
 > [!NOTE]
->  Seçilen kılavuz Döşe seçeneği varsa [kılavuz Ayarları iletişim kutusu](../windows/grid-settings-dialog-box-image-editor-for-icons.md), ardından sonraki kutucuğu kılavuz çizgisi yapışır yeniden boyutlandırma. Yalnızca bir seçenektir piksel kılavuzunu (varsayılan ayar), seçili sonraki kullanılabilir piksel yapışır yeniden boyutlandırma.  
+>  Varsa **döşeme Kılavuzu** seçeneğe [kılavuz Ayarları iletişim kutusu](../windows/grid-settings-dialog-box-image-editor-for-icons.md), ardından sonraki kutucuğu kılavuz çizgisi yapışır yeniden boyutlandırma. Yalnızca **piksel kılavuzunu** seçeneği (varsayılan ayar) seçili, sonraki kullanılabilir piksel yapışır yeniden boyutlandırma.  
   
 -   [Görüntünün tümünü yeniden boyutlandırma](../windows/resizing-an-entire-image-image-editor-for-icons.md)  
   

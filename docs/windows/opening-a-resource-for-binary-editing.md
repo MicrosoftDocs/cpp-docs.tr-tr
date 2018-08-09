@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 428c62db8f1444f497d6fede7affea34560b4b0e
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 26d1b0ae8923835b0ce06c7312fa185693c6586e
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39605961"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40014513"
 ---
 # <a name="opening-a-resource-for-binary-editing"></a>Kaynağı İkili Düzenleme İçin Açma
 ### <a name="to-open-a-windows-desktop-resource-for-binary-editing"></a>İkili düzenleme için bir Windows Masaüstü kaynağını açmak için  
@@ -36,7 +36,7 @@ ms.locfileid: "39605961"
 2.  Kaynak sağ tıklatıp **açık ikili veri** kısayol menüsünden.  
   
     > [!NOTE]
-    >  Kullanırsanız [kaynak görünümü](../windows/resource-view-window.md) penceresini Visual Studio (RCDATA veya özel bir kaynak gibi), kaynak tanımıyor, biçimiyle bir kaynağı otomatik olarak ikili düzenleyicide açılır.  
+    >  Kullanırsanız [kaynak görünümü](../windows/resource-view-window.md) Visual Studio (RCDATA veya özel bir kaynak gibi), kaynak tanımıyor, biçimi ile bir kaynak penceresini açık otomatik olarak **ikili** Düzenleyici.  
   
 ### <a name="to-open-a-managed-resource-for-binary-editing"></a>İkili düzenleme için bir yönetilen kaynak açmak için  
   
@@ -58,10 +58,9 @@ ms.locfileid: "39605961"
  Yalnızca belirli ASCII değerleri (0x20 0x7E aracılığıyla) ikili düzenleyicide temsil edilir. Genişletilmiş karakterler, nokta İkili Düzenleyicisi (sağ panelde) ASCII değeri bölümünde görüntülenir. "Yazdırılabilir" karakterleri ASCII 32 126-değerlerdir.  
   
 > [!NOTE]
->  İkili Düzenleyici zaten başka bir düzenleyici penceresinde düzenlenmekte olan kaynak kullanmak istiyorsanız, diğer düzenleyici penceresini kapatın.  
+>  Kullanmak istiyorsanız **ikili** zaten başka bir düzenleyici penceresinde düzenlenmekte olan bir kaynak düzenleyicisini diğer düzenleyici penceresini önce kapatın.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

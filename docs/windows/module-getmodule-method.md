@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 79809a6c9f779e8323f78f3cda91850246350ff2
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: ddfd9008a89834c17642d8b83bb9f33405a342a0
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606923"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40010804"
 ---
 # <a name="modulegetmodule-method"></a>Module::GetModule Metodu
 Bir modülün örneği oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 static Module& GetModule();  
 WRL_NOTHROW static Module& GetModule();  
 ```  

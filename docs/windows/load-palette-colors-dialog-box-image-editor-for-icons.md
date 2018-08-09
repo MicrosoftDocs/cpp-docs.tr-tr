@@ -1,5 +1,5 @@
 ---
-title: Yük palet renklerini iletişim kutusu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+title: Palet Yükle iletişim kutusu (simgeler için görüntü Düzenleyicisi) renkler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,25 +18,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95e5235a792301f3742bc576da607d7433f2e4b0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3b88f13d0073c47d5c43908d4fea38c4337a5e1a
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33878180"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011412"
 ---
 # <a name="load-palette-colors-dialog-box-image-editor-for-icons"></a>Palet Renkleri Yükle İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
-Projenizde kullanmak için özel renk paletlerini yüklemek için bu iletişim kutusunu kullanın. Daha fazla bilgi için bkz: [kaydetme ve yükleme farklı renk paletlerini](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  
+Projenizde kullanılacak özel renk paletlerini yüklemek için bu iletişim kutusunu kullanın. Daha fazla bilgi için [kaydetme ve yükleme farklı renk paletlerini](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  
   
- **Bakılacak yer**  
- Bir dosyayı veya klasörü bulmak istediğiniz konumu belirtir. Başka bir konum seçmek için oka tıklayın veya düzeyleri yukarı taşımak için araç çubuğunda klasör simgesine tıklayın.  
+### <a name="look-in"></a>İçine bak  
+ Bir dosya veya klasörü bulmak için istediğiniz konumu belirtir. Başka bir konum seçmek için oka tıklayın veya düzeyleri yukarı taşımak için araç çubuğundaki klasör simgesine tıklayın.  
   
- **Dosya adı**  
- Açmak istediğiniz dosyanın adını yazmanız için bir alan sağlar. Daha önce açtığınız bir dosyayı hızla bulmak için varsa, aşağı açılan listesinde, dosya adı'ı tıklatın.  
+### <a name="file-name"></a>Dosya adı  
+ Açmak istediğiniz dosyanın adını yazmanız için bir alan sağlar. Hızlıca önceden açmış olduğunuz bir dosyayı bulmak için aşağı açılan listede, dosya adı varsa tıklayın.  
   
  Bir dosya için arıyorsanız, joker karakter olarak yıldız işareti (*) kullanabilirsiniz. Örneğin, yazabilirsiniz \*.\* tüm dosyaların listesini görmek için. Ayrıca, örneğin, C:\My Documents\MyColorPalette.pal dosyasının tam yolunu yazın veya \\\NetworkServer\MyFolder\MyColorPalette.pal.  
   
- **Dosya türü**  
+### <a name="files-of-type"></a>Dosya türü  
  Görüntülenecek dosya türlerini listeler. Palet (* .pal) renk paletlerini için varsayılan dosya türüdür.  
   
 ## <a name="requirements"></a>Gereksinimler  

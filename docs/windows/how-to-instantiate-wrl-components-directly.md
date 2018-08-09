@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 40904f8379d1a11d26c29af2340fa4adb24f12e0
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 133f0f4ee4efed71c530c7e9e8c367c7d2031433
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39568822"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013281"
 ---
 # <a name="how-to-instantiate-wrl-components-directly"></a>Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma
 Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanmayı öğrenin[Microsoft::wrl:: Make](../windows/make-function.md) ve [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md) işlevleri modülden bir bileşen örneği oluşturmak için Bu tanımlar.  
@@ -34,13 +34,13 @@ Klasik COM bileşeni oluşturma ve dış bir masaüstü uygulaması oluşturmak 
   
 ### <a name="to-create-and-instantiate-a-basic-logger-component"></a>Oluşturmak ve temel bir Günlükçü bileşeni oluşturmak için  
   
-1.  Visual Studio'da oluşturma bir **Win32 konsol uygulaması** proje. Örneğin, proje adını `WRLLogger`.  
+1.  Visual Studio'da oluşturma bir **Win32 konsol uygulaması** proje. Örneğin, proje adını *WRLLogger*.  
   
 2.  Ekleme bir **Midl dosyası (.idl)** projeye dosya, dosya adı `ILogger.idl`ve ardından bu kodu ekleyin:  
   
      [!code-cpp[wrl-logger-make#1](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_1.idl)]  
   
-3.  WRLLogger.cpp içeriğini değiştirmek için aşağıdaki kodu kullanın.  
+3.  İçeriğini değiştirmek için aşağıdaki kodu kullanın `WRLLogger.cpp`.  
   
      [!code-cpp[wrl-logger-make#2](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_2.cpp)]  
   
@@ -50,7 +50,7 @@ Klasik COM bileşeni oluşturma ve dış bir masaüstü uygulaması oluşturmak 
   
      [!code-cpp[wrl-logger-makeandinitialize#1](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_3.cpp)]  
   
-2.  Tanımı değiştirmek için aşağıdaki kodu kullanın `wmain`. Bu sürümü kullanan `MakeAndInitialize` örneklemek için `CConsoleWriter` nesne ve denetimleri `HRESULT` sonucu.  
+2.  Tanımı değiştirmek için aşağıdaki kodu kullanın `wmain`. Bu sürümü kullanan `MakeAndInitialize` örneklemek için `CConsoleWriter` nesne ve HRESULT sonucu denetler.  
   
      [!code-cpp[wrl-logger-makeandinitialize#2](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_4.cpp)]  
   

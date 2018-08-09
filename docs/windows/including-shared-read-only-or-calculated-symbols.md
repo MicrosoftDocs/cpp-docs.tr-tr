@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 436ceb757f9cce5e1436b13f2d32a331295f4bf6
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 9eeaacf95040f0f7e2ee435a7fbed2c173076315
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608618"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40014919"
 ---
 # <a name="including-shared-read-only-or-calculated-symbols"></a>Paylaşılan (Salt Okunur) veya Hesaplanan Sembolleri Ekleme
 Geliştirme ortamını başka bir uygulama tarafından oluşturulan bir kaynak dosyasını okur ilk kez tüm bulunan üst bilgi dosyaları salt okunur olarak işaretler. Daha sonra kullanabileceğiniz [kaynak içerikleri iletişim kutusu](../windows/resource-includes-dialog-box.md) ek salt okunur sembol üst bilgi dosyaları eklemek için.  
@@ -37,7 +37,7 @@ Geliştirme ortamını başka bir uygulama tarafından oluşturulan bir kaynak d
   
  Sembol değeri tanımlamak için basit bir tamsayı yerine ifadeler kullanan sembol tanımlarını ile mevcut kaynaklar varsa, dahil edilen sembol dosyalarını da kullanabilirsiniz. Örneğin:  
   
-```  
+```cpp  
 #define   IDC_CONTROL1 2100  
 #define   IDC_CONTROL2 (IDC_CONTROL1+1)  
 ```  
@@ -60,9 +60,9 @@ Geliştirme ortamını başka bir uygulama tarafından oluşturulan bir kaynak d
     > [!NOTE]
     >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  İçinde **salt okunur sembol yönergeleri** kutusunda, kullanmak **#include** salt okunur semboller tutmak istediğiniz dosyayı belirtmek için derleyici yönergesi.  
+2.  İçinde **salt okunur sembol yönergeleri** kutusunda, kullanmak `#include` salt okunur semboller tutmak istediğiniz dosyayı belirtmek için derleyici yönergesi.  
   
-     Bu normalde ana sembol başlık dosyası tarafından kullanılan dosya adı olduğundan ' % s'dosyası Resource.H'yi çağırmayın.  
+     Dosya çağırmayın `Resource.h`, normalde ana sembol başlık dosyası tarafından kullanılan dosya adı olduğundan.  
   
     > [!NOTE]
     >  **Önemli** tam olarak yazdığınız sırada, salt okunur sembol yönergeleri kutusuna yazdığınız kaynak dosyasına dahil edilir. Ne tür emin yazım veya söz dizimi hataları içermiyor.  
@@ -76,7 +76,6 @@ Geliştirme ortamını başka bir uygulama tarafından oluşturulan bir kaynak d
 4.  **Tamam**'ı tıklatın.  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

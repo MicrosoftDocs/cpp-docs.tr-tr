@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 63725d5d3e0edaea328d5753640aa74bdf35c7e0
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 6cb96b90a069c12e65c53158717d9a89fb0aed3d
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606754"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40014106"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<  
    typename I0  
 >  
@@ -69,7 +69,7 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
 |[InterfaceTraits::CastToBase Metodu](../windows/interfacetraits-casttobase-method.md)|Belirtilen bir işaretçi işaretçisi bıraktığı `Base`.|  
 |[InterfaceTraits::CastToUnknown Metodu](../windows/interfacetraits-casttounknown-method.md)|Belirtilen bir işaretçi işaretçisi bıraktığı `IUnknown`.|  
 |[InterfaceTraits::FillArrayWithIid Metodu](../windows/interfacetraits-fillarraywithiid-method.md)|Arabirim kimliği atar `Base` dizini bağımsız değişkeni tarafından belirtilen dizi öğesi için.|  
-|[InterfaceTraits::Verify Metodu](../windows/interfacetraits-verify-method.md)|Temeli düzgün bir şekilde türetilen doğrular.|  
+|[InterfaceTraits::Verify Metodu](../windows/interfacetraits-verify-method.md)|Doğrular `Base` düzgün şekilde türetilir.|  
   
 ### <a name="public-constants"></a>Genel sabitler  
   

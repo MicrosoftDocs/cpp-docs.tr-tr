@@ -1,5 +1,5 @@
 ---
-title: Kullanıcı Hesabı Denetimi (UAC) uygulamanızı nasıl etkiler | Microsoft Docs
+title: Kullanıcı Hesabı Denetimi (UAC) uygulamanızı nasıl etkiler? | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,33 +17,33 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 020a7a16e38ee40c99a7a5b77c88002e3135bfa1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 91c5af565ac7de14d947f2376ae408caa0f890fe
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840924"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40013583"
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler
-Kullanıcı Hesabı Denetimi (UAC), Windows Vista'nın kullanıcı hesapları sınırlı ayrıcalıklarına sahip bir özelliktir. Aşağıdaki sitelerde UAC hakkında ayrıntılı bilgi bulabilirsiniz:  
+Kullanıcı Hesabı Denetimi (UAC), Windows Vista'nın, kullanıcı hesaplarının ayrıcalıkları sınırlı bir özelliktir. Bu sitelerdeki UAC hakkında ayrıntılı bilgi bulabilirsiniz:  
   
 -   [Windows Vista kullanıcı hesabı denetimi adım adım kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=53781)  
   
--   [Geliştirici en iyi yöntemler ve en az ayrıcalıklı ortamındaki uygulamalar için yönergeler](http://go.microsoft.com/fwlink/p/?linkid=82444)  
+-   [Geliştirici en iyi ve en az ayrıcalıklı bir ortamda uygulamalar için yönergeler](http://go.microsoft.com/fwlink/p/?linkid=82444)  
   
--   [Anlama ve Windows Vista'da kullanıcı hesabı denetimi yapılandırma](http://go.microsoft.com/fwlink/p/?linkid=82445)  
+-   [Anlama ve Windows Vista kullanıcı hesabı denetimi yapılandırma](http://go.microsoft.com/fwlink/p/?linkid=82445)  
   
 ## <a name="building-projects-after-enabling-uac"></a>UAC etkinleştirdikten sonra proje oluşturma  
- Windows Vista UAC devre dışıyken Visual C++ projesi oluşturun ve daha sonra UAC etkinleştirirseniz, temizleyin ve doğru çalışması için projeyi yeniden derleyin.  
+ Windows Vista'da UAC devre dışıyken Visual C++ projesi oluşturun ve daha sonra UAC'yi etkinleştirmek, temizleme ve bunun düzgün çalışması projeyi yeniden derleyin.  
   
 ## <a name="applications-that-require-administrative-privileges"></a>Yönetici ayrıcalıkları gerektiren uygulamalar  
- Varsayılan olması, Visual C++ bağlayıcı UAC parçası bir uygulama bildirimi yürütme düzeyi ile katıştırır `asInvoker`. Uygulamanız doğru bir şekilde (örneğin, kayıt defteri HKLM düğümünün değiştirir veya Windows dizini gibi disk korumalı alanlarına yazıyorsa) çalıştırmak için yönetici ayrıcalıkları gerektiriyorsa, uygulamanızın değiştirmeniz gerekir.  
+ Varsayılan olması, Visual C++ bağlayıcı UAC parçası yürütme düzeyi uygulama bildirimine katıştırır `asInvoker`. Uygulamanıza (örneğin, kayıt defteri HKLM düğümünün değiştiriyorsa veya Windows dizini gibi diskin korumalı alanlarına yazıyorsa) doğru bir şekilde çalıştırmak için yönetici ayrıcalıkları gerekiyorsa, uygulamanızı değiştirmeniz gerekir.  
   
- İlk seçenek bildirimin UAC parçasında yürütme düzeyini değiştirmek değiştirmektir *requireAdministrator'a*. Çalıştırılmadan önce uygulamayı daha sonra kullanıcı için yönetici kimlik bilgilerini ister. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz: [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](../build/reference/manifestuac-embeds-uac-information-in-manifest.md).  
+ İlk seçenek yürütme düzeyini değiştirmek için UAC parçasında değiştirmektir *requireAdministrator'a*. Çalıştırılmadan önce uygulamayı daha sonra kullanıcıdan yönetimsel kimlik bilgilerini ister. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](../build/reference/manifestuac-embeds-uac-information-in-manifest.md).  
   
- İkinci seçenek UAC parçası bildirimine belirterek katıştırmak değil, **/MANIFESTUAC:NO** bağlayıcı seçeneği. Bu durumda, uygulamanızın sanallaştırılmış çalışır. Uygulamanızı sona erdikten sonra kayıt defterine veya dosya sistemine yaptığınız tüm değişiklikler kalıcı olmaz.  
+ İkinci seçenek UAC parçası bildirime belirterek ekleme değil, `/MANIFESTUAC:NO` bağlayıcı seçeneği. Bu durumda, uygulamanızı sanallaştırılmış çalıştırılır. Uygulamanızı sona erdikten sonra kayıt defteri veya dosya sistemine yaptığınız tüm değişiklikler kalıcı olmaz.  
   
- Aşağıdaki akış çizelgesi, uygulamanızın nasıl çalışacağını tanımlar UAC etkinleştirilip etkinleştirilmediği ve uygulama UAC bildirim olup bağlı olarak:  
+ Aşağıdaki akış çizelgesi, uygulamanızın nasıl çalışacağını tanımlar UAC etkin olup olmadığını ve uygulama UAC bildirim olup bağlı olarak:  
   
  ![Windows Vista yükleyici davranışı](media/uacflowchart.png "UACflowchart")  
   

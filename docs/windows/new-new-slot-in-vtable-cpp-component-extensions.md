@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 32452b4fd44aed2bc399165b3184d974f22d90b6
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 7ef754c380353716c923f6d5f404106cebc163c9
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39607017"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40011887"
 ---
 # <a name="new-new-slot-in-vtable--c-component-extensions"></a>yeni (vtable'da yeni yuva) (C++ Bileşen Uzantıları)
 **Yeni** anahtar sözcüğü, sanal üyenin vtable'da yeni yuva aldığını gösterir.  
@@ -95,8 +95,6 @@ int main() {
    e->f();   // calls E::f  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 C::f() called  

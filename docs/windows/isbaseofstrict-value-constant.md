@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5d8e5cbbcbbdf3cefe5211eb4f2274ce3b2b79db
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 5ac49319dca429dcc0351393f73d711266cf764a
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608806"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40010778"
 ---
 # <a name="isbaseofstrictvalue-constant"></a>IsBaseOfStrict::value Sabiti
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 static const bool value = __is_base_of(Base, Derived);  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
  Başka bir taban bir türü olup olmadığını gösterir.  
   
- `value` olan **true** , türü `Base` bir temel sınıf türünün `Derived`, aksi halde kalır **false**.  
+ **değer** olduğu **true** , türü `Base` bir temel sınıf türünün `Derived`, aksi halde kalır **false**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** internal.h  

@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 287fe57868f1550e2f778bd9122d0d350011084e
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: eada53c74c967c4df093e094a611a726ef79d99d
+ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570639"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40012540"
 ---
 # <a name="how-to-handle-events-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Olayları İşleme
 Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olup bir Windows çalışma zamanı nesnesi olaylarını işlemek için nasıl kullanılacağını gösterir.  
@@ -35,7 +35,7 @@ Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olup b
   
      [!code-cpp[wrl-consume-event#2](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_1.cpp)]  
   
-     Windows.Devices.Enumeration.h cihazları listelemek için gerekli türleri bildirir.  
+     `Windows.Devices.Enumeration.h` cihazları listelemek için gerekli türleri bildirir.  
   
      Öneririz, makineler'den `using namespace` kod daha okunabilir yapmak için .cpp dosyanızdaki yönergesi.  
   
@@ -90,7 +90,7 @@ Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olup b
  [!code-cpp[wrl-consume-event#1](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_10.cpp)]  
   
 ## <a name="compiling-the-code"></a>Kod Derleniyor  
- Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-events.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
+ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-events.cpp` ve ardından aşağıdaki komutu çalıştırın bir **Visual Studio komut istemi** penceresi.  
   
  `cl.exe wrl-consume-events.cpp runtimeobject.lib`  
   
