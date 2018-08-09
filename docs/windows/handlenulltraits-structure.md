@@ -17,29 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c4b7daa319b927d168d39f0981c00b5fbe92063c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e009b31f95f2cdf80231021c38848fbc30ce20d3
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33877884"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645444"
 ---
 # <a name="handlenulltraits-structure"></a>HANDLENullTraits Yapısı
 Başlatılmamış bir tanıtıcı genel özelliklerini tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 struct HANDLENullTraits;  
 ```  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`Type`|TANITICI eşanlamlısı.|  
+|`Type`|İŞLEYİCİ için bir eşanlamlı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   

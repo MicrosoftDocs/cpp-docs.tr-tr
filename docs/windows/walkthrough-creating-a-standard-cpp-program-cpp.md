@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir standart C++ programı (C++) oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: standart bir C++ programını (C++) oluşturma | Microsoft Docs'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 ms.technology:
@@ -19,59 +19,59 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ac1fac3c7f96c9f8d718efa54810f4155b1ddac5
-ms.sourcegitcommit: c0ffdff538eb961f786809eb547b35846190ee48
+ms.openlocfilehash: 0915f6f506b942a7ee52eec637c9ea6631339e79
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34800092"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643289"
 ---
-# <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: bir standart C++ programı (C++) oluşturma
-Visual C++, Visual Studio tümleşik geliştirme ortamı (IDE) standart C++ programları oluşturmak için kullanabilirsiniz. Bu izlenecek adımları izleyerek, bir proje oluşturun, projeye yeni bir dosya ekleyin, C++ kodu ekleyin ve ardından derlemek ve program kullanarak çalıştırmak için dosyasını değiştirmek [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
+# <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: standart bir C++ programını (C++) oluşturma
+Standart C++ programlar oluşturmak için Visual Studio tümleşik geliştirme ortamında (IDE) Visual C++ kullanabilirsiniz. Bu kılavuzda açıklanan adımları izleyerek, bir proje oluşturun, projeye yeni bir dosya ekleyin, C++ kodu eklemek ve ardından derleyin ve program kullanarak çalıştırmak için dosyasını değiştirin [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
- Kendi C++ programı yazın veya örnek programlar birini kullanın. Bu kılavuzda örnek bir konsol uygulaması programdır. Bu uygulamanın kullandığı `set` C++ Standart Kitaplığı kapsayıcısında.  
+ Kendi C++ programınızı yazabilir veya örnek programlardan birini kullanın. Bu kılavuzda örnek program bir konsol uygulamasıdır. Bu uygulamanın kullandığı `set` C++ Standart Kitaplığı'nda kapsayıcı.  
   
- Visual C++ uyumlu 2003 C++ standart ana bu özel durumları ile birlikte: iki aşamalı ad arama, özel durum belirtimleri ve dışarı aktarma. Ayrıca, Visual C++, örneğin, Lambda'lar, otomatik, static_assert, rvalue başvuru ve extern şablonları birkaç C ++ 0 x özelliklerini destekler.  
+ Uygun Visual C++ 2003 C++ standardı ile şu büyük özel durumlar: iki aşamalı ad arama, özel durum belirtimleri ve dışarı aktarma. Ayrıca, Visual C++ birkaç C ++ 0 x özelliklerini, örneğin, lambdas, otomatik, static_assert, rvalue başvuruları ve extern şablonları destekler.  
   
 > [!NOTE]
->  Standart uyumluluk gerekiyorsa kullanın **/Za** standart için Microsoft uzantıları devre dışı bırakma derleyici seçeneği. Daha fazla bilgi için bkz: [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md).  
+>  Standart ile uyumluluk gerekliyse kullanın `/Za` Microsoft uzantılarını standart devre dışı bırakma derleyici seçeneği. Daha fazla bilgi için [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu adım adım öğreticiyi tamamlamak için C++ dilinin temellerini anlamanız gerekir.  
   
-### <a name="to-create-a-project-and-add-a-source-file"></a>Proje oluşturma ve kaynak dosyası eklemek için  
+### <a name="to-create-a-project-and-add-a-source-file"></a>Bir proje oluşturun ve bir kaynak dosyası eklemek için  
   
-1.  Proje göstererek oluşturma **yeni** üzerinde **dosya** menüsüne ve ardından **proje**.  
+1.  İşaret ederek bir proje oluşturma **yeni** üzerinde **dosya** menüsüne ve ardından **proje**.  
   
-2.  İçinde **Visual C++** Proje Türleri bölmesinde, tıklatın **Windows Masaüstü**ve ardından **Windows konsol uygulaması**.  
+2.  İçinde **Visual C++** Proje Türleri bölmesinde ye **Windows Masaüstü**ve ardından **Windows konsol uygulaması**.  
   
 3.  Proje için bir ad yazın.  
   
-     Varsayılan olarak, projeyi içeren çözümü projesi olarak aynı ada sahip, ancak farklı bir ad yazın. Proje için farklı bir konum da yazabilirsiniz.  
+     Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir ancak farklı bir ad yazabilirsiniz. Proje için farklı bir konum da yazabilirsiniz.  
   
-     Tıklatın **Tamam** projesi oluşturmak için.  
+     Tıklayın **Tamam** projeyi oluşturmak için.  
   
-4.  Varsa **Çözüm Gezgini** üzerinde görüntülenmiyorsa **Görünüm** menüsünde tıklatın **Çözüm Gezgini**.  
+4.  Varsa **Çözüm Gezgini** , görüntülenmiyorsa **görünümü** menüsünde tıklatın **Çözüm Gezgini**.  
   
 5.  Yeni bir kaynak dosyası projeye aşağıdaki şekilde ekleyin.  
   
     1.  İçinde **Çözüm Gezgini**, sağ **kaynak dosyaları** klasörünü **Ekle**ve ardından **yeni öğe**.  
   
-    2.  İçinde **kod** düğümü tıklatın **C++ dosyasına (.cpp)**, dosya için bir ad yazın ve ardından **Ekle**.  
+    2.  İçinde **kod** düğümünü tıklatın **C++ dosyası (.cpp)** dosyası için bir ad yazın ve ardından **Ekle**.  
   
-     Kaynak dosyaları klasöründe .cpp dosya görünür **Çözüm Gezgini**, ve dosya Visual Studio düzenleyicisinde açılır.  
+     .Cpp dosyası kaynak dosyalar klasöründe görünür **Çözüm Gezgini**, ve dosya Visual Studio Düzenleyicisi'nde açılır.  
   
-6.  Dosyayı düzenleyicide C++ Standart Kitaplığı kullanan geçerli bir C++ programı yazın veya örnek programlar birini kopyalayın ve dosyaya yapıştırın.  
+6.  Düzenleyicideki dosyada, C++ Standart Kitaplığı'nı kullanan geçerli bir C++ programınızı yazabilir veya örnek programlardan birini kopyalayın ve dosyaya yapıştırın.  
   
 7.  Dosyayı kaydedin.  
   
-8. Üzerinde **yapı** menüsünde tıklatın **yapı çözümü**.  
+8. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
-     **Çıkış** penceresi derleme ilerleme durumu, örneğin, derleme günlüğünde ve yapı durumu bildiren bir ileti konumu ile ilgili bilgileri görüntüler.  
+     **Çıkış** penceresi, örneğin, konumunu yapı günlüğüne ve yapı durumunu belirten bir ileti gibi derleme ilerlemesi hakkında bilgileri görüntüler.  
   
-9. Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat hata ayıklama olmadan**.  
+9. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.  
   
-     Örnek program kullandıysanız, bir komut penceresi görüntülenir ve belirli tamsayılar kümesinde bulunan olup olmadığını gösterir.  
+     Örnek programı kullandıysanız bir komut penceresi görüntülenir ve kümede belirli tamsayılar bulunup bulunmadığını gösterir.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  **Önceki:** [konsol uygulamaları Visual C++'ta](../windows/console-applications-in-visual-cpp.md). **Sonraki:**[izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  

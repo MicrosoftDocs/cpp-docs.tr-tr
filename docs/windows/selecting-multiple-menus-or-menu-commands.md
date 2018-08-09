@@ -17,23 +17,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e261227c5c34d203cdeda20a8d1409319f63be97
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 53225576941afff3a94c3dd276feb980e2bd6562
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891915"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644862"
 ---
 # <a name="selecting-multiple-menus-or-menu-commands"></a>Birden Çok Menü veya Menü Komutu Seçme
-Birden çok menü adları veya menü komutlarını silme veya özelliklerini değiştirme gibi toplu işlemler gerçekleştirmek için seçebilirsiniz.  
+Birden çok menü adları ya da menü komutlarını silme veya özelliklerini değiştirme gibi toplu işlemleri gerçekleştirmek için seçebilirsiniz.  
   
-### <a name="to-select-multiple-menu-commands"></a>Birden çok menü komutlarını seçmek için  
+### <a name="to-select-multiple-menu-commands"></a>Birden çok menü komutları seçmek için  
   
-1.  CTRL tuşunu basılı tutarak menüleri veya istediğiniz alt menü komutları'ı tıklatın.  
+1.  Tutarken **Ctrl** anahtar, menüler ya da alt menü komutları, istediğiniz tıklayın.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- **Gereksinimler**  
+## <a name="requirements"></a>Gereksinimler  
   
  Win32  
   

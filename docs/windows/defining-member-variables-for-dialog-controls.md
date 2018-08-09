@@ -18,40 +18,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8ba8fc95290ecb90557203be2b6ab4cce18b91e3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e1f5cee3bf827effc7c99dd66d7dc2898c9ad55f
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873842"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645470"
 ---
 # <a name="defining-member-variables-for-dialog-controls"></a>İletişim Kutusu Denetimleri İçin Üye Değişkenleri Tanımlama
-Düğmeler dışındaki herhangi bir iletişim kutusu denetimi için bir üye değişkeni tanımlamak için aşağıdaki yöntemi kullanabilirsiniz.  
+Düğmeleri dışında herhangi bir iletişim kutusu denetimi için bir üye değişkeni tanımlamak için aşağıdaki yöntemi kullanabilirsiniz.  
   
 > [!NOTE]
->  Bu makale, yalnızca bir MFC projesine içinde iletişim kutusu denetimleri için geçerlidir. ATL projeleri kullanması gereken **yeni Windows iletileri ve olay işleyicileri** iletişim kutusu.  
+>  Bu makale, yalnızca bir MFC projesi içinde iletişim kutusu denetimleri için geçerlidir. ATL projeleri kullanması gereken **yeni Windows iletileri ve olay işleyicileri** iletişim kutusu.  
   
 ### <a name="to-define-a-member-variable-for-a-non-button-dialog-box-control"></a>(Düğme olmayan) iletişim kutusu denetimi için bir üye değişkeni tanımlamak için  
   
 1.  İçinde [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), bir denetim seçin.  
   
-2.  Tuşlarına basarak sırasında **CTRL** anahtar, iletişim kutusu denetimi çift tıklatın.  
+2.  Tuşlarına basarak çalışırken **Ctrl** anahtar, iletişim kutusu denetimini çift tıklayın.  
   
-     [Üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md) görüntülenir.  
+     [Üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md) görünür.  
   
-3.  Uygun bilgileri yazın **üye değişkeni ekleme** Sihirbazı. Daha fazla bilgi için bkz: [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md).  
+3.  İlgili bilgileri yazın **üye değişkeni ekleme** Sihirbazı. Daha fazla bilgi için [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md).  
   
-4.  Tıklatın **Tamam** iletişim kutusu Düzenleyicisi dönün.  
+4.  Tıklayın **Tamam** dönmek için **iletişim** Düzenleyici.  
   
     > [!TIP]
-    >  Hiçbir iletişim kutusu denetiminden varolan işleyicisine atlamak için denetimi çift tıklatın.  
+    >  Herhangi bir iletişim kutusu denetiminden mevcut işleyicisine atlamak için denetimi çift tıklatın.  
   
-
+ Ayrıca **üye değişkenleri** sekmesinde **MFC Sınıf Sihirbazı** belirli bir sınıf için yeni üye değişkenlerini ekleyin ve önceden tanımlanmış görüntüleyin.  
   
- Aynı zamanda **üye değişkenleri** sekmesinde **MFC Sınıf Sihirbazı** belirli bir sınıf için yeni üye değişkenleri eklemek ve ve önceden tanımlanmış görüntülemek için.  
-  
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  MFC  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
@@ -61,6 +58,5 @@ Düğmeler dışındaki herhangi bir iletişim kutusu denetimi için bir üye de
  [Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)   
  [Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)   
  [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)   
- [Sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)   
+ [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)   
  [MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)
-

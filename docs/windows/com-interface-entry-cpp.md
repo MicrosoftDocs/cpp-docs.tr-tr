@@ -17,25 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cd6cc88ba01d7cfc5d7d5712ddeaaef0418bb12a
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: d79c371b98e0dd1091fc5db2280efdee3abbf6e9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462790"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646195"
 ---
 # <a name="cominterfaceentry-c"></a>com_interface_entry (C++)
 COM eşlemesi hedef sınıfın arabirim giriş ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ com_interface_entry(   
   com_interface_entry  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *com_interface_entry*  
  Girişinin gerçek metni içeren bir dize. Olası değerler listesi için bkz. [COM_INTERFACE_ENTRY makroları](../atl/reference/com-interface-entry-macros.md).  
   
@@ -58,7 +58,7 @@ COM eşlemesi hedef sınıfın arabirim giriş ekler.
   
  ATL ilk giriş kimliği olarak arabirim eşlemesine kullandığından bu kısıtlama gereklidir `IUnknown`; bu nedenle, giriş geçerli bir arabirimi olmalıdır. Örneğin, aşağıdaki kod örneği arabirim eşlemesi ilk giriş gerçek bir COM arabirimi belirtmediğinden geçersiz.  
   
-```  
+```cpp  
 [ coclass, com_interface_entry =  
     "COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)"  
 ]  
@@ -100,7 +100,7 @@ class CMyClass: public IMyClass, public IDebugTest
   
  Elde edilen COM Nesne eşleme için `CMyBaseClass` aşağıdaki gibidir:  
   
-```  
+```cpp  
 BEGIN_COM_MAP(CMyClass)  
     COM_INTERFACE_ENTRY (IMyClass)  
     COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)  
@@ -119,7 +119,7 @@ END_COM_MAP()
 |-|-|  
 |**İçin geçerlidir**|**sınıf**, **yapısı**|  
 |**Tekrarlanabilir**|Evet|  
-|**Gerekli öznitelikleri**|Bir veya daha fazlasını: **coclass'ı**, **ProgID**, veya **vi_progid**.|  
+|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

@@ -19,23 +19,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 40f79bc6afe47bfed92d096dace59ef97eed68e1
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 2429b86ad872ea310d690187c7283b8498ece3f5
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39568884"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645132"
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 Genel bir işlev tür parametreleri ile bildirilen bir işlevdir. Gerçek türler, çağrıldığında, tür parametreleri yerine kullanılır.  
   
 ## <a name="all-platforms"></a>Tüm Platformlar  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar
   
  Bu özellik, tüm platformlar için geçerli değildir.  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar
   
  Bu özellik, Windows çalışma zamanı'nda desteklenmiyor.  
   
@@ -47,7 +47,7 @@ Genel bir işlev tür parametreleri ile bildirilen bir işlevdir. Gerçek türle
   
 ### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [attributes] [modifiers]  
 return-type identifier<type-parameter identifier(s)>  
 [type-parameter-constraints clauses]  
@@ -94,7 +94,6 @@ return-type identifier<type-parameter identifier(s)>
  Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
  Aşağıdaki kod örneği, genel bir işlev gösterir.  
   
@@ -129,8 +128,6 @@ int main() {
 }  
 ```  
   
- **Örnek**  
-  
  Genel İşlevler, imza veya parametre, üzerinde bir işlev türü parametre sayısı bazında aşırı yüklenebilir. Ayrıca, bazı tür parametrelerinde işlevleri farklı olduğu sürece genel işlevleri ile genel olmayan işlevler aynı ada sahip aşırı yüklenebilir. Örneğin, aşağıdaki işlevleri aşırı yüklenebilir:  
   
 ```cpp  
@@ -146,8 +143,6 @@ ref struct MyClass {
    void MyMythod(int i) {}  
 };  
 ```  
-  
- **Örnek**  
   
  Aşağıdaki örnek, bir dizideki ilk öğeyi bulmak için genel bir işlev kullanır. Bunu bildirir `MyClass`, taban sınıfından devralan `MyBaseClass`. `MyClass` Genel bir işlev içeriyor `MyFunction`, başka bir genel işlev çağrıları `MyBaseClassFunction`, temel sınıf içerisinde. İçinde `main`, alan genel işlevin `MyFunction`, farklı tür bağımsız değişkeni kullanılarak çağrılır.  
   
@@ -184,8 +179,6 @@ int main() {
    myObj->MyFunction<String^>("Hello generic functions!"));  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 My function returned an int: 2003  

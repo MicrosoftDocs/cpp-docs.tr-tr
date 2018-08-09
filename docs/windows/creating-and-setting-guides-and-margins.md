@@ -1,5 +1,5 @@
 ---
-title: Size rehberlik eder ve kenar boşlukları oluşturma ve ayarlama | Microsoft Docs
+title: Oluşturma ve ayarlama kılavuzlarını ve kenar boşlukları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,48 +22,47 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0b548f48fc079fe26ae43c0553bef27f2348bad6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 11631a2ac6a2c83cd667d14a490c57b1a191c1a7
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873517"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642564"
 ---
 # <a name="creating-and-setting-guides-and-margins"></a>Kılavuzlar ve Kenar Boşlukları Oluşturma ve Ayarlama
-Denetimler ekleme denetimlerini taşıyor ya da geçerli bir düzen yeniden düzenleme, kılavuzları yardımcı olabilecek denetimleri doğru bir şekilde bir iletişim kutusu içinde hizalayın. Kılavuzlar, düzenleyici ve bunlara Cetveller (üst ve sol tarafında iletişim kutusu Düzenleyicisi) karşılık gelen okları görüntülenen bir iletişim kutusu üzerinden mavi noktalı çizgiler olarak görünür.  
+Denetimleri ekleme denetimleri taşıyor ister geçerli düzenini yeniden düzenleme, kılavuzları yardımcı olabilir denetimleri bir iletişim kutusu içinde doğru bir şekilde hizalayın. Kılavuzlar arasında Düzenleyicisi'ni ve karşılık gelen okları Cetveller görüntülenen iletişim kutusu olarak mavi noktalı çizgilerin görüntülenir (üst ve sol tarafında **iletişim** Düzenleyici).  
   
- Bir iletişim kutusu oluşturduğunuzda, dört kenar boşluklarını sağlanır. Kenar boşlukları değiştirilmiş kılavuzları, mavi noktalı çizgiler olarak görünen olur.  
+ Bir iletişim kutusu oluşturduğunuzda, dört kenar boşlukları sağlanır. Kenar boşlukları, mavi noktalı çizgiler olarak görünen, değiştirilen kılavuzlardır.  
   
 ### <a name="to-create-a-guide"></a>Bir kılavuz oluşturmak için  
   
-1.  Cetvel içinde bir kez bir kılavuz oluşturmak için tıklatın. (Tek bir tıklatmayla oluşturur Yeni bir kılavuzu; başlatır çift [kılavuz Ayarları iletişim kutusu](../windows/guide-settings-dialog-box.md) içinde belirtebilirsiniz Kılavuzu ayarlarını.)  
+1.  Cetvel içinde bir kılavuz oluşturmak için bir kez tıklayın. (Tek bir tıklamayla oluşturur, yeni bir kılavuzu; başlatır çift [kılavuz Ayarları iletişim kutusu](../windows/guide-settings-dialog-box.md) Kılavuz ayarları belirttiğiniz.)  
   
 ### <a name="to-set-a-guide"></a>Bir kılavuz ayarlamak için  
   
-1.  İletişim kutusundaki Kılavuzu'nu tıklatın ve yeni bir konuma sürükleyin. (Ayrıca ilişkili kılavuzu sürükleyin cetveldeki oku de tıklatabilirsiniz.)  
+1.  İletişim kutusunda, Kılavuzu'nu tıklatın ve yeni bir konuma sürükleyin. (Ayrıca ilişkili Kılavuzu sürüklemek için cetvelin oka tıklayabilirsiniz.)  
   
-     Kılavuzun koordinatları pencerenin altındaki durum çubuğu ve cetvel görüntülenir. Kılavuzun tam konumu görüntülenecek cetveldeki oku üzerine getirin.  
+     Kılavuzu koordinatlarını cetvel ve pencerenin altındaki durum çubuğunda görüntülenir. Tam Kılavuzu konumunu görüntülemek için cetvelin oka üzerine getirin.  
   
-### <a name="to-delete-a-guide"></a>Bir kılavuzu silmek için  
+### <a name="to-delete-a-guide"></a>Bir kılavuz silmek için  
   
-1.  Kılavuzu iletişim kutusunu sürükleyin.  
+1.  İletişim kutusunu kılavuzu sürükleyin.  
   
  \- veya -  
   
--   Cetvel kapalı karşılık gelen oku sürükleyin.  
+-   Cetvelin karşılık gelen oku sürükleyin.  
   
-#### <a name="to-move-margins"></a>Kenar boşlukları taşımak için  
+### <a name="to-move-margins"></a>Kenar boşlukları taşımak için  
   
-1.  Kenar yeni bir konuma sürükleyin.  
+1.  Kenar boşluğu yeni konumuna sürükleyin.  
   
-     Kayboluyor kenar boşluğu yapmak için kenar sıfır bir konuma taşıyın. Kenar boşluğu geri getirmek için işaretçiyi kenar 's sıfır konuma yerleştirin ve kenar konumda taşıyın.  
+     Bir kenar boşluğu kaybolmasını sağlamak için kenar sıfır bir konuma taşıyın. Kenar boşluğu geri getirmek için işaretçiyi kenar ait sıfır konumuna getirin ve kenar boşluğu konumuna taşıyın.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
-### <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutusu Düzenleyicisi durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)   
  [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)
-

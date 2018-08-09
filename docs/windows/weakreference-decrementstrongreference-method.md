@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7d5605670e05f91f9f1293c8bff0f4d74e458d25
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5c7e2161c5451fe82e12918f00e8cb2cde37d336
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890342"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642321"
 ---
 # <a name="weakreferencedecrementstrongreference-method"></a>WeakReference::DecrementStrongReference Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,12 +34,12 @@ ULONG DecrementStrongReference();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Güçlü Başvuru azaltır geçerli WeakReference nesne sayısı.  
+ Güçlü Başvuru geçerli sayısını azaltır **WeakReference** nesne.  
   
- Güçlü Başvuru sayısı sıfır olduğunda, güçlü başvuru kümesine `nullptr`.  
+ Güçlü Başvuru sayısı sıfır olduğunda, güçlü başvuru kümesine **nullptr**.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Azaltılan güçlü başvuru sayısı.  
+ İndirildiği güçlü başvuru sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  
@@ -47,5 +47,5 @@ ULONG DecrementStrongReference();
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[WeakReference sınıfı](../windows/weakreference-class1.md)  
+ [WeakReference sınıfı](../windows/weakreference-class1.md)  
  [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

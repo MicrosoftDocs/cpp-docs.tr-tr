@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 351b38a002c470dcd3f53e8336e393f845fdb3cf
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 32418b163cb31f5eaf20c9d2b3ff3a4b585850dd
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569576"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644105"
 ---
 # <a name="dontusenewusemake-class"></a>DontUseNewUseMake Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 class DontUseNewUseMake;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- İşleç engel **yeni** RuntimeClass içinde. Sonuç olarak, kullanmanız gereken [olun işlevi](../windows/make-function.md) yerine.  
+ İşleç engel **yeni** içinde `RuntimeClass`. Sonuç olarak, kullanmanız gereken [olun işlevi](../windows/make-function.md) yerine.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -42,7 +42,7 @@ class DontUseNewUseMake;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[DontUseNewUseMake::operator new İşleci](../windows/dontusenewusemake-operator-new-operator.md)|İşleç aşırı **yeni** ve içinde RuntimeClass kullanılmasını engeller.|  
+|[DontUseNewUseMake::operator new İşleci](../windows/dontusenewusemake-operator-new-operator.md)|İşleç aşırı **yeni** ve içinde kullanılmasını engeller `RuntimeClass`.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `DontUseNewUseMake`  

@@ -1,5 +1,5 @@
 ---
-title: Cihaz görüntüsü (simgeler için görüntü Düzenleyicisi) kopyalama | Microsoft Docs
+title: (Simgeler için görüntü Düzenleyicisi) cihaz görüntüsü kopyalama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b48691dde50c1f0829d5393c9023509c863ed39c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e842dcb70e6f4a4ec4751ed7f4f231b41af2d288
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883987"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645665"
 ---
 # <a name="copying-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Kopyalama (Simgeler İçin Görüntü Düzenleyicisi)
-### <a name="to-copy-a-device-image"></a>Cihaz görüntüsü kopyalamak için  
+### <a name="to-copy-a-device-image"></a>Cihaz görüntüsü kopyalama  
   
-1.  Üzerinde **görüntü** menüsünde tıklatın **açık cihaz görüntüsü** ve geçerli görüntüleri listesinden bir görüntü seçin. Örneğin, 32 x 32, simge 16 renkli sürümünü seçin.  
+1.  Üzerinde **görüntü** menüsünde tıklatın **açık cihaz görüntüsü** ve geçerli görüntüleri listesinden görüntü seçin. Örneğin, 32 × 32 bir simge 16 renk sürümünü seçin.  
   
-2.  Şu anda görüntülenen simge görüntüsü kopyalama (**CTRL + C**).  
+2.  Şu anda görüntülenen simge görüntüsü kopyalama (**Ctrl**+**C**).  
   
-3.  Farklı bir resim simgesinin başka bir programda açık **görüntü Düzenleyicisi** penceresi. Örneğin, 16 × 16, 16-renk simgesi sürümünü açın.  
+3.  Farklı bir simge görüntüsü başka bir programda açık **Resim Düzenleyicisi** penceresi. Örneğin, 16 x 16, simgenin 16 renk sürümü açın.  
   
-4.  Simge görüntüsü yapıştırın (**CTRL + V**) birinden **görüntü Düzenleyicisi** diğer penceresi. Daha büyük bir boyutu daha küçük bir boyuta yapıştırıyorsanız, görüntüyü yeniden boyutlandırmak için simge tanıtıcıları kullanabilirsiniz.  
+4.  Simge görüntüsü yapıştırın (**Ctrl**+**V**) birinden **Resim Düzenleyicisi** diğer pencere. Daha büyük bir boyutu daha küçük bir boyuta yapıştırıyorsanız, görüntüyü yeniden boyutlandırmak için simge tutamaçlarını kullanabilirsiniz.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)
-

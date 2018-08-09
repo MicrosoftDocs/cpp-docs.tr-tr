@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ee53e068c13f52c01e997680b57915051a8efad8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f564f5d6197a640ef311cda8b2133ed583eec91e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890628"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642700"
 ---
 # <a name="weakreferenceincrementstrongreference-method"></a>WeakReference::IncrementStrongReference Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -37,7 +37,7 @@ ULONG IncrementStrongReference();
  Artan güçlü başvuru sayısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli WeakReference nesnesinin güçlü başvuru sayısını artırır.  
+ Geçerli güçlü başvuru sayısını artırır **WeakReference** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  
@@ -45,5 +45,5 @@ ULONG IncrementStrongReference();
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[WeakReference sınıfı](../windows/weakreference-class1.md)  
+ [WeakReference sınıfı](../windows/weakreference-class1.md)  
  [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

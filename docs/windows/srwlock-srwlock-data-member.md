@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 77b6d10e4343fd17c8bd65e232d29923214eff0c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cf6e43c6e8672e8bd3b1f895658a1c16dbe77faa
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889114"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647498"
 ---
 # <a name="srwlocksrwlock-data-member"></a>SRWLock::SRWLock_ Veri Üyesi
-Geçerli SRWLock nesnesi için temel alınan kilidi değişken içeriyor.  
+Temel alınan kilidi değişken için geçerli içeren **SRWLock** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

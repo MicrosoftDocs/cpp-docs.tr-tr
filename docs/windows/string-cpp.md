@@ -17,31 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6bdcdc6557253f8be9c6ecb20300f2338ab35d07
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ef5a4453e0b7742a385815b5285b2aa04575eb75
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889026"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645415"
 ---
 # <a name="string-c"></a>string (C++)
-Belirten tek boyutlu `char`, `wchar_t`, **bayt** (veya eşdeğer) dizi ya da böyle bir dizi işaretçisine gerekir kabul olarak bir dize.  
+Bildiren tek boyutlu **char**, **wchar_t**, `byte` (veya eşdeğer) dizi ya da böyle bir dizinin işaretçisi gerekir kabul bir dize.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [string]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Dize** C++ özniteliğine sahip ile aynı işlevselliği [dize](http://msdn.microsoft.com/library/windows/desktop/aa367270) MIDL özniteliği.  
+ **Dize** C++ özniteliği ile aynı işlevlere sahip [dize](http://msdn.microsoft.com/library/windows/desktop/aa367270) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodu nasıl kullanılacağını gösterir **dize** bir arabirim ve bir typedef:  
+ Aşağıdaki kod nasıl kullanılacağını gösterir **dize** bir arabirimde ve bir tür tanımı:  
   
-```  
+```cpp  
 // cpp_attr_ref_string.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -60,9 +58,9 @@ __interface IFireTabCtrl
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Dizi veya işaretçi bir dizi, arabirim parametresi, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Dizi veya işaretçiyi bir dizi, arabirimi parametreyi, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

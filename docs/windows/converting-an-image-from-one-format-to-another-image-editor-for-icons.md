@@ -1,5 +1,5 @@
 ---
-title: Görüntüyü bir biçimden diğerine için başka bir (simgeler için görüntü Düzenleyicisi) dönüştürme | Microsoft Docs
+title: Görüntüyü bir biçimden için başka bir (simgeler için görüntü Düzenleyicisi) dönüştürme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,33 +18,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f415b0b2b6efca6eda9ecd131cc047b8c5cec83e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c3f16f09a42961a2bfd6093f6f2dd72b0fdcc382
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871046"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645626"
 ---
 # <a name="converting-an-image-from-one-format-to-another-image-editor-for-icons"></a>Görüntüyü Bir Biçimden Diğerine Dönüştürme (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi'nde GIF veya JPEG görüntüleri açın ve bit eşlemleri kaydetme. Ayrıca, bir bit eşlem dosyasını açın ve bir GIF veya JPEG olarak kaydedin. Görüntüler ile çalışırsınız olması gerekmez, geliştirme ortamında düzenlemek için projesinin bir parçası (bkz [tek başına görüntüyü düzenleme](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).  
+GIF veya JPEG resimleri açabileceğiniz **görüntü** Düzenleyicisi ve bit eşlemler kaydedebilirsiniz. Ayrıca, bir bit eşlem dosyası açın ve bir GIF veya JPEG olarak kaydetme. İş görüntüleri olması gerekmez geliştirme ortamında düzenlemek için bir projenin parçası (bkz [tek başına resim düzenleme](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).  
   
-### <a name="to-convert-an-image-from-one-format-to-another"></a>Görüntüyü bir biçimden diğerine dönüştürme  
+### <a name="to-convert-an-image-from-one-format-to-another"></a>Görüntüyü bir biçimden diğerine dönüştürmek için  
   
 1.  Görüntüde açın **görüntü** Düzenleyici.  
   
-2.  Gelen **dosya** menüsünde seçin **kaydetmek *filename* olarak**.  
+2.  Gelen **dosya** menüsünde seçin **Kaydet *filename* olarak**.  
   
-3.  İçinde **dosyasını Farklı Kaydet** iletişim kutusunda **dosya adı** kutusuna, dosya adı ve istediğiniz biçimi gösterir uzantısını yazın.  
+3.  İçinde **dosyayı farklı Kaydet** iletişim kutusundaki **dosya adı** dosya adı ve biçimini gösteren uzantısını yazın.  
   
 4.  **Kaydet**'e tıklayın.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)   
  [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
-

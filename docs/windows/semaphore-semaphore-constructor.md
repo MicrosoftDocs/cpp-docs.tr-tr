@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc7ddd6279dbdf177c8e478b7c1350647ac4a7c3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3646e13818297b636a888e1ad00c998a120e8379
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888665"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643666"
 ---
 # <a name="semaphoresemaphore-constructor"></a>Semaphore::Semaphore Oluşturucusu
-Semafor sınıfı yeni bir örneğini başlatır.  
+Yeni bir örneğini başlatır **semafor** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,9 +39,9 @@ WRL_NOTHROW Semaphore(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `h`  
- Bir tanıtıcı veya rvalue başvuru semafor nesnesine.  
+### <a name="parameters"></a>Parametreler  
+ *h*  
+ Tanıtıcı ya da bir rvalue başvurusuna bir **semafor** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

@@ -16,37 +16,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5defa8cdd2e2fb96ceff0d333f06698154baf977
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b0844ab8a4233e2204c42a8d165309c89026fb01
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871734"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646234"
 ---
 # <a name="editing-in-an-accelerator-table"></a>Hızlandırıcı Tablosunu Düzenleme
-### <a name="to-edit-in-an-accelerator-table"></a>Hızlandırıcı tablosunu düzenlemek için  
+### <a name="to-edit-in-an-accelerator-table"></a>Hızlandırıcı tablosunu düzenleme  
   
-1.  Hızlandırıcı tablosunu simgesini çift tıklatarak açın [kaynak görünümü](../windows/resource-view-window.md).  
+1.  Hızlandırıcı tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Tabloda bir girişi seçin ve yerinde düzenleme etkinleştirmek için tıklayın.  
+2.  Bir giriş tablosunda seçin ve yerinde düzenlemeyi etkinleştirmek için tıklayın.  
   
-3.  Açılan kutusundan seçin veya değişiklik yerinde yazın.  
+3.  Açılan birleşik giriş kutusundan seçin veya değişiklik yerinde yazın.  
   
-    -   İçin [kimliği](id-property.md)listesinden veya düzenlemek için tür seçin.  
+    -   İçin [kimliği](id-property.md)listesinden veya düzenlemek için türü seçin.  
   
-    -   İçin [değiştiricisi](../windows/accelerator-modifier-property.md), listeden seçin.  
+    -   İçin [değiştiricisi](../windows/accelerator-modifier-property.md)listeden seçin.  
   
-    -   İçin [anahtar](../windows/accelerator-key-property.md)listesinden veya düzenlemek için tür seçin.  
+    -   İçin [anahtar](../windows/accelerator-key-property.md)listesinden veya düzenlemek için türü seçin.  
   
-    -   İçin [türü](../windows/accelerator-type-property.md), ASCII veya VIRTKEY listeden seçin.  
+    -   İçin [türü](../windows/accelerator-type-property.md)seçin **ASCII** veya **VIRTKEY'e** listeden.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

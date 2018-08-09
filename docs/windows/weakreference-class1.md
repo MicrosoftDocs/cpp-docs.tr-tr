@@ -1,5 +1,5 @@
 ---
-title: WeakReference Class1 | Microsoft Docs
+title: WeakReference sınıfı1 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a44b992138371ff33a9059990a5ec3e93689c679
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 71de341be0cb482a49cbf35ddd34e414be8afde4
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891652"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645548"
 ---
-# <a name="weakreference-class1"></a>WeakReference Class1
+# <a name="weakreference-class1"></a>WeakReference sınıfı1
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -34,13 +34,13 @@ class WeakReference;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Temsil eden bir *zayıf başvuru* kullanılabilecek Windows çalışma zamanı veya klasik COM Zayıf başvuru olabilir ya da erişilebilir olmayabilir bir nesneyi temsil eder.  
+ Temsil eden bir *zayıf başvuru* kullanılabilen Windows çalışma zamanı veya klasik COM ile Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.  
   
- A `WeakReference` nesne tutan bir *güçlü başvuru*, bir nesne için bir işaretçi olduğu ve *güçlü başvuru sayısı*, tarafından dağıtılan güçlü başvuru kopya sayısını olduğu Resolve() yöntemi. Güçlü Başvuru sayısı sıfır olsa da, güçlü başvurunun geçerli olduğundan ve erişilebilir bir nesnedir. Güçlü Başvuru sayısı sıfır olduğunda, güçlü başvuru geçersiz ve nesne erişilemez.  
+ A **WeakReference** nesne tutar bir *güçlü başvuru*, bir nesneye bir işaretçi olduğu ve bir *güçlü başvuru sayısı*, güçlü kopya sayısını olduğu tarafından dağıtılan başvuru `Resolve()` yöntemi. Güçlü Başvuru sayısı sıfır dışında olsa da, güçlü başvuru geçerli olduğundan ve erişilebilir bir nesnedir. Güçlü Başvuru sayısı sıfır olduğunda, güçlü başvuru geçersiz ve nesne erişilemez.  
   
- WeakReference nesne, genellikle, varlığı bir dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil etmek için kullanılır. Örneğin, bir dosya nesnesine başvuru WeakReference nesnesinden oluşturun. Dosya açıkken güçlü başvurusu geçerli değil. Ancak dosyayı kapattıysanız, güçlü başvuru geçersiz hale gelir.  
+ A **WeakReference** nesne genellikle, varlığı harici bir iş parçacığı ya da uygulama tarafından denetlenen bir nesneyi göstermek için kullanılır. Örneğin, oluşturun bir **WeakReference** nesneden bir dosya nesnesine bir başvuru. Dosya açıkken, güçlü başvuru geçerli değil. Ancak, dosya kapalıysa, güçlü başvuru geçersiz hale gelir.  
   
- İş parçacığı içinde korumalı WeakReference yöntemleridir.  
+ **WeakReference** yöntemlerdir iş parçacığı açısından güvenlidir.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -48,17 +48,17 @@ class WeakReference;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[WeakReference::WeakReference Oluşturucusu](../windows/weakreference-weakreference-constructor.md)|WeakReference sınıfı yeni bir örneğini başlatır.|  
-|[WeakReference::~WeakReference Yıkıcısı](../windows/weakreference-tilde-weakreference-destructor.md)|Deinitializes (bozar) WeakReference sınıfının geçerli örneği.|  
+|[WeakReference::WeakReference Oluşturucusu](../windows/weakreference-weakreference-constructor.md)|Yeni bir örneğini başlatır **WeakReference** sınıfı.|  
+|[WeakReference::~WeakReference Yıkıcısı](../windows/weakreference-tilde-weakreference-destructor.md)|Başlatılmasını geri alır (yok eder), geçerli örneğini **WeakReference** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[WeakReference::DecrementStrongReference Metodu](../windows/weakreference-decrementstrongreference-method.md)|Güçlü Başvuru azaltır geçerli WeakReference nesne sayısı.|  
-|[WeakReference::IncrementStrongReference Metodu](../windows/weakreference-incrementstrongreference-method.md)|Geçerli WeakReference nesnesinin güçlü başvuru sayısını artırır.|  
+|[WeakReference::DecrementStrongReference Metodu](../windows/weakreference-decrementstrongreference-method.md)|Güçlü Başvuru geçerli sayısını azaltır **WeakReference** nesne.|  
+|[WeakReference::IncrementStrongReference Metodu](../windows/weakreference-incrementstrongreference-method.md)|Geçerli güçlü başvuru sayısını artırır **WeakReference** nesne.|  
 |[WeakReference::Resolve Metodu](../windows/weakreference-resolve-method.md)|Güçlü Başvuru sayısı sıfır değilse belirtilen işaretçi geçerli güçlü başvuru değerine ayarlar.|  
-|[WeakReference::SetUnknown Metodu](../windows/weakreference-setunknown-method.md)|Güçlü Başvuru geçerli WeakReference nesnenin belirtilen arabirimi işaretçisi ayarlar.|  
+|[WeakReference::SetUnknown Metodu](../windows/weakreference-setunknown-method.md)|Güçlü Başvuru geçerli ayarlar **WeakReference** belirtilen arabirim işaretçisini için nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `WeakReference`  

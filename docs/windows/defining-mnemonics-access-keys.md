@@ -1,5 +1,5 @@
 ---
-title: Anımsatıcıları (erişim tuşları) tanımlama | Microsoft Docs
+title: Anımsatıcıları tanımlama (erişim tuşları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -25,46 +25,45 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a60cf597a88fcf7038848be6c9e2d31269f6a906
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 960dcd17a1ff581db540aecfd536e9d2f2e98539
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873699"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645103"
 ---
 # <a name="defining-mnemonics-access-keys"></a>Anımsatıcıları Tanımlama (Erişim Tuşları)
-Normalde, klavye kullanıcıların giriş odağını bir denetimden başka bir iletişim kutusu ile sekme veya ok tuşları taşıyın. Ancak, tek bir tuşuna basarak bir denetim seçmek kullanıcılara bir erişim anahtarı (anımsatıcı veya unutmayın kolay adı) tanımlayabilirsiniz.  
+Normalde, klavye kullanıcıları içeren bir iletişim kutusu alanındaki başka bir denetimden giriş odağı Taşı **sekmesini** ve **ok** anahtarları. Ancak, tek bir tuşa basarak bir denetim seçmelerini sağlar bir erişim anahtarı (bir anımsatıcı ya da unutmayacağınızdan kolay ad) tanımlayabilirsiniz.  
   
-### <a name="to-define-an-access-key-for-a-control-with-a-visible-caption-push-buttons-check-boxes-and-radio-buttons"></a>Görünür resim yazısı (düğmeler, onay kutularını ve radyo düğmeleri) olan bir denetim için erişim anahtarı tanımlamak için  
+### <a name="to-define-an-access-key-for-a-control-with-a-visible-caption-push-buttons-check-boxes-and-radio-buttons"></a>Bir denetimin görünür başlığı (düğmeler, onay kutularını ve radyo düğmeleri) olan bir erişim tuşunu tanımlamak için  
   
-1.  İletişim kutusu üzerinde denetimi seçin.  
+1.  İletişim kutusunda bir denetimi seçin.  
   
-2.  İçinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window), **resim yazısı** özelliği, ve işareti yazarak denetim için yeni bir ad yazın (**&**) olarak istediğiniz harfini önünde Bu denetim için erişim anahtarı. Örneğin, `&Radio1`.  
+2.  İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **açıklamalı alt yazı** özelliği, ve işareti yazarak denetim için yeni bir ad yazın (`&`) Bu denetim için erişim anahtarı olarak istediğiniz harfi önünde. Örneğin, `&Radio1`.  
   
 3.  Tuşuna **girin**.  
   
-     Örneğin, erişim anahtarı belirtmek için görüntülenen başlıkta altı çizili görünen **R**adio1.  
+     Örneğin, erişim anahtarı belirtmek için görüntülenen resim bir çizgi görünür **R**adio1.  
   
-### <a name="to-define-an-access-key-for-a-control-without-a-visible-caption"></a>Görünür resim yazısı olmadan bir denetim için erişim anahtarı tanımlamak için  
+### <a name="to-define-an-access-key-for-a-control-without-a-visible-caption"></a>Resim yazısı görünür olmayan bir denetim için bir erişim tuşunu tanımlamak için  
   
-1.  Denetim için bir başlığı kullanarak yapmak bir **statik metin** denetim [araç](/visualstudio/ide/reference/toolbox).  
+1.  Denetim için bir başlık kullanarak yapmak bir **statik metin** denetim [araç kutusu](/visualstudio/ide/reference/toolbox).  
   
-2.  Statik metin resim yazısı ampersan yazın (**&**) erişim tuşu olarak istediğiniz harfini önünde.  
+2.  Statik metin başlığı ve işareti yazın (`&`) erişim anahtarı olarak istediğiniz harfi önünde.  
   
-3.  Statik metin denetimini hemen sekme sırası etiketler denetim önündeki emin olun.  
+3.  Statik metin denetimi sekme sırasının etiket denetimi karaktere emin olun.  
   
- Tüm erişim anahtarları bir iletişim kutusu içinde benzersiz olmalıdır.  
+ Bir iletişim kutusu içindeki tüm erişim anahtarları benzersiz olmalıdır.  
   
-#### <a name="to-check-for-duplicate-access-keys"></a>Yinelenen erişim anahtarlarını denetlemek için  
+### <a name="to-check-for-duplicate-access-keys"></a>Yinelenen erişim tuşları denetlemek için  
   
 1.  Üzerinde **biçimi** menüsünde tıklatın **anımsatıcıları kontrol**.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
-### <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
  [Denetimler](../mfc/controls-mfc.md)
-

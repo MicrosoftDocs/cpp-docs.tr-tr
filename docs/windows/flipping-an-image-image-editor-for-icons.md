@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0cb6c655bdc8da5341a28449a25796ad59e453b4
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 582a46d35d0fe5327fa15aa0eb235ae8aa8a4cb2
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569436"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645512"
 ---
 # <a name="flipping-an-image-image-editor-for-icons"></a>Görüntüyü Çevirme (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntüye Döndür ya da ters çevirin:  
@@ -51,7 +51,6 @@ Görüntüye Döndür ya da ters çevirin:
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -18,17 +18,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2dd895f130161174d457b974e822b02b5ed7e8e2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 76dec37ec908b40ed5cc6f32dd3d0c6bd3c149e4
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872302"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642630"
 ---
 # <a name="creating-new-symbols"></a>Yeni Semboller Oluşturma
-Yeni bir proje başlangıç olduğunda, bunlar atanacak kaynaklar oluşturmadan önce gereken sembol adları çıkışı eşleştirmek kullanışlı bulabilirsiniz.  
+Yeni bir proje başlıyor, ihtiyacınız olduğu bunlar atanacak kaynakları oluşturmadan önce sembol adları kullanıma eşleştirmek kullanışlı bulabilirsiniz.  
   
-### <a name="to-create-a-new-symbol-using-the-resource-symbols-dialog-box"></a>Kaynak sembolleri iletişim kutusu kullanılarak yeni bir simge oluşturmak için  
+### <a name="to-create-a-new-symbol-using-the-resource-symbols-dialog-box"></a>Kaynak sembolleri iletişim kutusu kullanarak yeni bir sembolü oluşturmak için  
   
 1.  İçinde [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), seçin **yeni**.  
   
@@ -36,18 +36,17 @@ Yeni bir proje başlangıç olduğunda, bunlar atanacak kaynaklar oluşturmadan 
   
 3.  Atanan sembol değeri kabul edin.  
   
-     -veya-  
+     veya  
   
-     İçinde **değeri** kutusuna, yeni bir değer yazın.  
+     İçinde **değer** yeni bir değer yazın.  
   
-4.  Tıklatın **Tamam** yeni sembol simgesi listesine eklemek için.  
+4.  Tıklayın **Tamam** yeni sembolü sembol listesine eklenecek.  
   
- Zaten bir sembol adını yazarsanız, bu ada sahip bir sembolü zaten tanımlandı belirten bir ileti kutusu görüntülenir. Aynı ada sahip iki veya daha fazla simgeleri tanımlayamazsınız ancak farklı simgeleri aynı sayısal değer ile tanımlayabilirsiniz. Daha fazla bilgi için bkz: [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md) ve [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).  
+ Zaten bir sembol adı yazarsanız, bu ada sahip bir simge zaten tanımlandı belirten bir ileti kutusu görünür. Aynı ada sahip iki veya daha fazla sembolleri tanımlanamaz, ancak aynı sayısal değere sahip farklı bir simge tanımlayabilirsiniz. Daha fazla bilgi için [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md) ve [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında bilgi için ve [izlenecek yol: kullanarak kaynakları yerelleştirme ASP.NETile](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere, atama hakkında bilgi ve [Walkthrough: Using Resources for LocalizationASP.NETile](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

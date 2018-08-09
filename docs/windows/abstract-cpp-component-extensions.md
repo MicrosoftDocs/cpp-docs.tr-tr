@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ac043a76ab70c77bd8cdb3a2dd0c66498e409171
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 6474b659070793ddfa4e21d15e65be30f16a49bb
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463248"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641814"
 ---
 # <a name="abstract--c-component-extensions"></a>soyut (C++ Bileşen Uzantıları)
 **Soyut** anahtar sözcüğü ya da bildirir:  
@@ -33,16 +33,16 @@ ms.locfileid: "39463248"
 -   Tür üye işlevi, yalnızca türetilmiş bir tür içinde tanımlanabilir.  
   
 ## <a name="all-platforms"></a>Tüm Platformlar  
- **Söz dizimi**  
+### <a name="syntax"></a>Sözdizimi 
   
-```  
+```cpp  
       class-declaration  
       class-identifier  
       abstract {}  
 virtualreturn-typemember-function-identifier() abstract ;  
 ```  
   
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar
   
  İlk örnek söz dizimi bir sınıf, soyut olarak bildirir. *Sınıf-bildirimi* bileşeni, bir ya da bir yerel C++ bildirimi olabilir (**sınıfı** veya **yapı**), ya da bir C++ uzantı bildiriminde (**başvurusınıfı** veya **ref struct**) varsa `/ZW` veya `/clr` derleyici seçeneği belirtildi.  
   
@@ -58,17 +58,16 @@ virtualreturn-typemember-function-identifier() abstract ;
  Daha fazla bilgi için [başvuru sınıfları ve yapıları](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
- Aşağıdaki kod örneği bir hata oluşturur çünkü sınıfı `X` işaretlenmiş `abstract`.  
+ Aşağıdaki kod örneği bir hata oluşturur çünkü sınıfı `X` işaretlenmiş **soyut**.  
   
 ```cpp  
 // abstract_keyword.cpp  
@@ -83,9 +82,7 @@ int main() {
 }  
 ```  
   
- **Örnek**  
-  
- Aşağıdaki kod örneği, bir hata oluşturur, çünkü işaretlenmiş bir yerel sınıf örneğini oluşturduğunda `abstract`. Bu hata ile veya olmadan oluşur `/clr` derleyici seçeneği.  
+ Aşağıdaki kod örneği, bir hata oluşturur, çünkü işaretlenmiş bir yerel sınıf örneğini oluşturduğunda **soyut**. Bu hata ile veya olmadan oluşur `/clr` derleyici seçeneği.  
   
 ```cpp  
 // abstract_keyword_2.cpp  
@@ -99,9 +96,7 @@ int main() {
                     // cannot be instantiated. See declaration of 'X'}  
 ```  
   
- **Örnek**  
-  
- Aşağıdaki kod örneği bir hata oluşturur çünkü işlevi `f` bir tanım içerir, ancak işaretlenen `abstract`. Örnekteki son deyim, soyut bir sanal işlev bildirme saf sanal işlevi bildirmek için eşdeğer olduğunu gösterir.  
+ Aşağıdaki kod örneği bir hata oluşturur çünkü işlevi `f` bir tanım içerir, ancak işaretlenen **soyut**. Örnekteki son deyim, soyut bir sanal işlev bildirme saf sanal işlevi bildirmek için eşdeğer olduğunu gösterir.  
   
 ```cpp  
 // abstract_keyword_3.cpp  

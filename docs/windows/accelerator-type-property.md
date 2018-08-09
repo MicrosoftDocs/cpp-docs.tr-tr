@@ -16,22 +16,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cb1ba8f117fadab7cccb835ba8889d57bcc9f184
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: da825a4f2052f05b24ff724d709c7c8a4b6a3db3
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856507"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645691"
 ---
 # <a name="accelerator-type-property"></a>Hızlandırıcı Türü Özelliği
-Hızlandırıcı **türü** özelliği Hızlandırıcı Kimliğiyle ilişkilendirilmiş kısayol tuş bileşimini sanal bir tuş bileşimini veya ASCII/ANSI anahtar değeri olup olmadığını belirler:  
+Hızlandırıcı **türü** özelliği, Hızlandırıcı kimliği ile ilişkili kısayol tuş bileşimi bir sanal anahtar bileşimi veya ASCII/ANSI anahtar değeri olup olmadığını belirler:  
   
--   Varsa **türü** özelliği **ASCII**, [değiştiricisi](../windows/accelerator-modifier-property.md) yalnızca hiçbiri olabilir veya Alt ya da CTRL tuşunu kullanan bir kısayol olabilir (anahtarla koyarak belirtilen bir ^).  
+-   Varsa **türü** özelliğidir, ASCII [değiştiricisi](../windows/accelerator-modifier-property.md) yalnızca `None` veya `Alt`, veya kullanan bir Hızlandırıcı olabilir **Ctrl** (tarafından belirtilen anahtar anahtar ile önceki bir `^`).  
   
--   Varsa **türü** özelliği **VIRTKEY**, herhangi bir bileşimini değiştirici ve anahtar değerleri geçerlidir.  
+-   Varsa **türü** özelliktir VIRTKEY'e, herhangi bir birleşimini `Modifier` ve `Key` değerleri geçerlidir.  
   
     > [!NOTE]
-    >  Hızlandırıcı tabloya bir değer girin ve ASCII/ANSI kabul değeri istiyorsanız, tablo girişi için türü ve açılır listeden seçin ASCII tıklamanız yeterlidir. Ancak, kullanırsanız **sonraki anahtar yazılan** komutu (**Düzenle** menüsü) anahtarını belirtmek için değiştirmeniz gerekir **türü** VIRTKEY özelliğine ASCII *önce* anahtar kodunu girerek.  
+    >  Hızlandırıcı tablosu içine bir değer girin ve ASCII/ANSI, yalnızca tıklatın değerlendirilmesi bir değere sahip istiyorsanız **türü** açılır listeden seçin ASCII ve tablo girişi. Ancak, kullanırsanız **sonraki anahtarı yazılan** komut (**Düzenle** menüsü) belirtmek için `Key`, değiştirmeniz gerekir **türü** VIRTKEY'e özelliğine ASCII *önce* girme `Key` kod.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

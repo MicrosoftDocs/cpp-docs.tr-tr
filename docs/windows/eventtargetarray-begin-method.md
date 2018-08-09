@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ef0c9726b089c798ff8b9a98a04da40099cf888a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b5dc081a24495fc8939f3069dc68bed4f75beaaf
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871594"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642831"
 ---
 # <a name="eventtargetarraybegin-method"></a>EventTargetArray::Begin Yöntemi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 ComPtr<IUnknown>* Begin();  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Olay işleyicileri iç dizisi ilk öğe adresi.  
+ Olay işleyicileri iç dizideki ilk öğe adresi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Olay işleyicileri iç dizisinde ilk öğe adresini alır.  
+ Olay işleyicilerini iç dizideki ilk öğenin adresi alır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

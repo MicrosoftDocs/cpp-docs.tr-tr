@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7f01f2c642686c1cf7c01fe9322e06f165d5ada9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 14c78a92ac66ee998e11f7101a6a8306be73862a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859819"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641121"
 ---
 # <a name="boolstructmember-data-member"></a>BoolStruct::Member Veri Üyesi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 int Member;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirleyen bir [ComPtr](../windows/comptr-class.md) , veya bir arabirim nesne ömrü yönetme değil,.  
+ Belirten bir [ComPtr](../windows/comptr-class.md) ya da bir arabirimin nesnenin ömrünü yönetmek değildir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** internal.h  

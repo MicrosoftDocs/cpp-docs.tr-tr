@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a98d8997ebfb5b21b3e469b2aacca15cde4a5319
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 0f740cbfb8aea1a0e2378d1d2ab42d3c88c77137
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570541"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644774"
 ---
 # <a name="eventsource-class"></a>EventSource Sınıfı
 Çevik olmayan bir olayı temsil eder. **EventSource** üye işlevleri ekleme, kaldırma ve olay işleyicilerini çağırır. Çevik olaylar için kullanın [AgileEventSource](agileeventsource-class.md). 
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename TDelegateInterface>  
 class EventSource;  
 ```  

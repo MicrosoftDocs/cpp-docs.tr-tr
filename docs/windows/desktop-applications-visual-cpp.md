@@ -13,12 +13,12 @@ ms.author: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4cd8e8c6e3b9626000a8bef3d86a89f5e122d611
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 22f90be7d89a006ccbfdfde2f4c2580a7b2a13de
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571535"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643851"
 ---
 # <a name="desktop-applications-visual-c"></a>Masaüstü uygulamaları (Visual C++)
 A *masaüstü uygulaması* c++'ta Windows API'leri ve ya da çalışan bir pencerede veya sistem konsolu tam kümesini erişebilmeniz için yerel bir uygulamadır. C++ Masaüstü uygulamaları, Windows XP ile Windows 10 (Windows XP artık resmi olarak desteklenir ve bu tarihten sonra sunulan çok sayıda Windows API vardır ancak) çalıştırabilirsiniz.
@@ -26,11 +26,12 @@ A *masaüstü uygulaması* c++'ta Windows API'leri ve ya da çalışan bir pence
 Windows 10 çalıştıran bilgisayarlara ve XBox, Windows Phone, Surface Hub ve diğer cihazlar üzerinde çalışabilen bir evrensel Windows Platformu (UWP) uygulamasını ayrı, bir masaüstü uygulamasıdır. Masaüstü vs hakkında daha fazla bilgi için. UWP uygulamaları [teknolojinizi seçin](https://msdn.microsoft.com/library/windows/desktop/dn614993\(v=vs.85\).aspx).  
 
 
-**Masaüstü köprüsü** Windows API olarak Windows mevcut masaüstü uygulamasını veya COM nesnesi bir UWP uygulaması olarak paketleme ve UWP touch veya modern API'leri çağırmak gibi özellikleri eklemek 10 ayarlayın. Visual Studio ve bunları tek bir birlikte paketlemek ve bunlar arasında iletişim kurmak için Windows API'leri kullanan paket masaüstü bir çözüme UWP uygulaması da ekleyebilirsiniz.  
+### <a name="desktop-bridge"></a>Masaüstü köprüsü
+Windows 10'da mevcut masaüstü uygulamasını veya COM nesnesi bir UWP uygulaması olarak paketleme ve dokunma gibi UWP özellikleri ekleyebilir veya API'leri çağırmak modern Windows API kümesi. Visual Studio ve bunları tek bir birlikte paketlemek ve bunlar arasında iletişim kurmak için Windows API'leri kullanan paket masaüstü bir çözüme UWP uygulaması da ekleyebilirsiniz.  
    
 Visual Studio 2017 sürüm 15.4 ve daha sonra mevcut masaüstü uygulamanızı paketleme işini büyük ölçüde kolaylaştıran bir Windows uygulama paketi projesi oluşturabilirsiniz. Hangi kayıt defteri çağrıları ile ilgili bazı sınırlamalar veya Masaüstü uygulamanızı API'lerini kullanır, ancak çoğu durumda, bir uygulama paketi çalıştırılırken benzer işlevselliği elde etmek için başka bir kod yolları oluşturabilirsiniz. Daha fazla bilgi için [Masaüstü köprüsü](/windows-uwp/porting/desktop-to-uwp-root).  
   
- **Terminolojisi**  
+### <a name="terminology"></a>Terminoloji  
   
 -   A *Win32* yapabileceğiniz c++ Masaüstü uygulamasını kullanın yerel bir Windows uygulamasıdır [Windows C API'leri ve/veya COM API'leri](https://msdn.microsoft.com/library/windows/desktop/ff818516\(v=vs.85\).aspx) CRT ve standart kitaplığı API'leri ve 3. taraf kitaplıkları. Bir pencere içinde çalışan bir Win32 uygulaması, Windows iletileri Windows yordamı işlevi içinde açıkça çalışmak Geliştirici gerektirir. Adını rağmen bir Win32 uygulaması bir 32-bit (x86) veya 64-bit (x64) ikili olarak derlenebilir. Visual Studio IDE'de x86 hüküm ve Win32 eşanlamlıdır.  
   

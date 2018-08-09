@@ -1,5 +1,5 @@
 ---
-title: Kırpma veya genişletme (simgeler için görüntü Düzenleyicisi) görüntünün tümünü | Microsoft Docs
+title: Kırpma veya genişletme (simgeler için görüntü Düzenleyicisi) görüntünün | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,33 +17,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c22655434bc36c707bb96c3c7977c9247c1535bf
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 41a54713c562e522c3161b2f3def3afdc210e927
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871620"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645678"
 ---
 # <a name="cropping-or-extending-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Kırpma veya Genişletme (Simgeler İçin Görüntü Düzenleyicisi)
-Aşağıdaki yordamlar, görüntünün tümünü kırpma veya nasıl gösterilir.  
+Aşağıdaki yordamlar, görüntünün tümünü kırpma veya nasıl gösterir.  
   
 ### <a name="to-crop-or-extend-an-entire-image"></a>Görüntünün tümünü kırpma veya  
   
-1.  Görüntünün tümünü seçin.  
+1.  Görüntünün tamamını seçin.  
   
-     Görüntünün seçili ve görüntünün tamamını seçmek istediğiniz, resimdeki geçerli seçimin kenarlık dışında herhangi bir yere tıklayın.  
+     Görüntünün seçili ve görüntünün tamamını seçmek istediğiniz görüntüye geçerli seçim kenarlığı dışında herhangi bir yere tıklayın.  
   
-2.  Görüntü istenen boyutu kadar boyutlandırma tutamacını sürükleyin.  
+2.  Görüntünün istediğiniz boyuta kadar boyutlandırma tutamacı sürükleyin.  
   
- Normalde, görüntü Düzenleyicisi kırpar veya boyutlandırma tutamacını taşıyarak boyutlandırdığınızda görüntüyü büyütür. Görüntü Düzenleyicisi bir boyutlandırma tutamacını taşırken SHIFT tuşunu basılı tutun, [küçültür veya uzatır](../windows/shrinking-or-stretching-an-entire-image-image-editor-for-icons.md) görüntü.  
+ Normalde, Resim Düzenleyicisi kırpar veya yeniden boyutlandırma tutamacı hareket ettirerek boyutlandırma sırasında bir görüntü büyütür. Basılı tutun, **Shift** anahtar Resim Düzenleyicisi gibi boyutlandırma tutamacı hareket ettikçe [genişletir veya daraltır](../windows/shrinking-or-stretching-an-entire-image-image-editor-for-icons.md) görüntü.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)
-

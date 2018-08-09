@@ -17,41 +17,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dc416561b36566235ed422cd8989b4218f34da81
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a009c8e1d9a3db682a81e1f054ef999cffaf266d
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891616"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641450"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 > [!WARNING]
->  Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++'da yazılmış Evrensel Windows platformu uygulamaları kaynakları hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynakları](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
+>  Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](http://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).  
 >   
->  Kaynakları C + ekleme hakkında bilgi için +/ CLI projeleri, lütfen bkz. [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+>  C + için kaynak ekleme hakkında bilgi için +/ CLI projeleri için bkz. Lütfen [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- Öğeleri (örneğin bir bit eşlem, simgesi veya imleci); kullanıcıya bilgi sağlamak arabirim öğeleri dahil olmak üzere, geniş bir dizi kaynakları oluşur bir uygulama gerekli verileri içeren özel kaynaklar; Kurulum programı API tarafından kullanılan sürüm kaynakları; ve menü ve iletişim kutusu kaynakları.  
+ Kaynakları sunduğu geniş kapsamlı bilgilerini (örneğin bir bit eşlem, simgesi veya imleci); kullanıcı arabirimi öğeleri içeren öğelerin oluşabilir bir uygulamanın gereken verileri içeren özel kaynakları Kurulum API'leri tarafından kullanılan kaynakları sürümü; ve menü ve iletişim kutusu kaynakları.  
   
- Yeni kaynakları projenize ekleyin ve uygun kaynak Düzenleyicisi'ni kullanarak bu kaynakları değiştirin. Çoğu Visual C++ sihirbazları projeniz için bir .rc dosyası otomatik olarak oluşturur.  
+ Yeni kaynakları projenize ekleyin ve kaynaklarla ilgili kaynak Düzenleyicisi'ni kullanarak değiştirin. Çoğu Visual C++ sihirbazları, projeniz için bir .rc dosyasını otomatik olarak oluşturur.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
- Kaynak dosyaları ve bunların Windows masaüstü uygulamalarında nasıl kullanıldığı açıklanmaktadır. Kaynak dosyalar nasıl kullanılacağını açıklayan konulara bağlantılar da sağlanmıştır.  
+ Kaynak dosyaları ve Windows masaüstü uygulamalarında nasıl kullanılacağını açıklar. Ayrıca, kaynak dosyalar nasıl kullanılacağını açıklayan konulara bağlantılar sağlar.  
   
  [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)  
- Simgeler açıklar ve kullanma hakkında bilgi sağlar **kaynak semboller** projelerinizi sembolleri yönetmek için iletişim kutusu.  
+ Sembolleri tanımlar ve kullanma hakkında bilgi sağlar **kaynak sembolleri** sembolleri projelerinizde yönetmek için iletişim kutusu.  
   
  [Kaynak Düzenleyicileri](../windows/resource-editors.md)  
- Visual Studio'da sağlanan kaynak düzenleyicileri açıklar kaynak türleri, her düzenleyicisiyle değiştirebilir ve her Düzenleyicisi'ni kullanma hakkında ayrıntılı bilgi için bağlantılar sağlar.  
+ Visual Studio'da sağlanan kaynak düzenleyicileri açıklar kaynak türleri, her bir düzenleyiciyle değiştirebilirsiniz ve her Düzenleyicisi'ı kullanma hakkında ayrıntılı bilgi için bağlantılar sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Visual C++](../visual-cpp-in-visual-studio.md)  
  Visual C++ belgelerine ilişkin bağlantıları sağlar.  
   
- [Visual Studio Tanıtımı](http://msdn.microsoft.com/en-us/99997089-56ff-4d60-81a9-447062dc98ac)  
- Karışık dil çözümleri oluşturulmasında kolaylaştırır ve tüm araçlar paylaşmasına olanak veren aynı tümleşik geliştirme ortamı (IDE) kullanan geliştirme araçları tamamını açıklar.  
+ [Visual Studio ile tanışın](http://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
+ Eksiksiz karma dil çözümlerini oluşturulmasını kolaylaştırır ve tüm araçları paylaşmasına olanak sağlayan aynı tümleşik geliştirme ortamı (IDE) kullanabileceğiniz geliştirme araçlarını açıklar.  
   
  [Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)  
  Belge kümesini kullanarak, ürün desteği ile iletişime ve erişilebilirlik özelliklerini kullanan bilgilere bağlantılar sağlar.  
@@ -59,4 +59,3 @@ ms.locfileid: "33891616"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)   
  [Menüler ve diğer kaynaklar](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
-

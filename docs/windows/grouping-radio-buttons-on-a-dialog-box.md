@@ -21,15 +21,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7712927a10fa34c5b6436aecd002c9621546638b
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: c3d0e20d8b2b88a7141672117d4c0b036682953e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571509"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641424"
 ---
 # <a name="grouping-radio-buttons-on-a-dialog-box"></a>İletişim Kutusundaki Radyo Düğmelerini Gruplama
-Radyo düğmeleri iletişim kutusuna eklediğinizde, bunları bir grup olarak grubundaki ilk düğme için Özellikler penceresindeki bir grubu özelliğini ayarlayarak değerlendirin. Denetim Kimliği bu radyo düğmesi için daha sonra yer [üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md), radyo düğmesi grubunu için bir üye değişkeni ekleme etmenize imkan sağlar.  
+Radyo düğmeleri iletişim kutusuna eklediğinizde, bunları bir grup olarak ayarlayarak ele almanız bir **grubu** özelliğinde **özellikleri** gruptaki ilk düğmenin penceresi. Denetim Kimliği bu radyo düğmesi için daha sonra yer [üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md), radyo düğmesi grubunu için bir üye değişkeni ekleme etmenize imkan sağlar.  
   
  İletişim kutusundaki radyo düğmelerini birden fazla grup olabilir ve her grup, aşağıdaki yordamı kullanarak eklenmelidir.  
   
@@ -44,7 +44,7 @@ Radyo düğmeleri iletişim kutusuna eklediğinizde, bunları bir grup olarak gr
      Değiştirme **grubu** özelliğini **True** WS_GROUP stili kaynak betiği iletişim nesnesinin düğmenin girişi ekler ve bir kullanıcı yalnızca bir radyo düğmesi birer birer düğmesinde seçebilirsiniz, sağlar Grup (kullanıcı bir radyo düğmesine tıkladığında, gruptaki diğer temizlenir).  
   
     > [!NOTE]
-    >  Yalnızca ilk radyo düğmesi grubunda olmalıdır **grubu** özelliğini **True**. Düğmesi grubunun parçası olmayan ek denetimleri varsa Ayarla **grubu** ilk denetiminin özelliği *grubun dışına olan* için **True** de. Sekme sırasını görüntülemek için CTRL + D tuşlarına basarak ilk denetim grubu dışında hızlı bir şekilde tespit edebilirsiniz.  
+    >  Yalnızca ilk radyo düğmesi grubunda olmalıdır **grubu** özelliğini **True**. Düğmesi grubunun parçası olmayan ek denetimleri varsa Ayarla **grubu** ilk denetiminin özelliği *grubun dışına olan* için **True** de. İlk denetim grubu dışında tuşlarına basarak hızlıca tanımlayabilirsiniz **Ctrl**+**D** sekme sırasını görüntülemek için.  
   
 ### <a name="to-add-a-member-variable-for-the-radio-button-group"></a>Radyo düğmesi grubunda için üye değişkeni eklemek için  
   
@@ -56,14 +56,13 @@ Radyo düğmeleri iletişim kutusuna eklediğinizde, bunları bir grup olarak gr
   
 4.  İçinde **değişken adı** yeni bir üye değişkeni için bir ad yazın.  
   
-5.  İçinde **değişken türü** liste kutusu, select **int** veya türü **int**.  
+5.  İçinde **değişken türü** liste kutusu, select **int** veya türü `int`.  
   
-6.  Şimdi, kodunuzun hangi radyo düğmesini seçili görünmesi gerektiğini belirten değiştirebilirsiniz. Örneğin, m_radioBox1 = 0; ilk radyo düğmesi grubunda seçer.  
+6.  Şimdi, kodunuzun hangi radyo düğmesini seçili görünmesi gerektiğini belirten değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.  
   
  Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
-  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

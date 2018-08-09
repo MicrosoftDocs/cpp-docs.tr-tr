@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f16a10ef5119730fb492c4adb890aedcc09d3174
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 7765ab5159f7cfd604f67b79a05fde8eaf57fad8
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461539"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646711"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
 Arabirim kimlikleri kümesine uygulanabilir doğrulama ve başlatma işlevleri belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template <  
    typename I0,  
    typename I1,  
@@ -60,7 +60,7 @@ template <
 struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, I4, I5, I6, I7, I8, I9>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *I0*  
  (Gerekli) Arabirim Kimliği: 0.  
   
@@ -106,8 +106,8 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ChainInterfaces::CanCastTo Metodu](../windows/chaininterfaces-cancastto-method.md)|Her ChainInterface şablon parametreleri tarafından tanımlanan uzmanlıkları belirtilen arabirim kimliği içerip içermeyeceğini belirtir.|  
-|[ChainInterfaces::CastToUnknown Metodu](../windows/chaininterfaces-casttounknown-method.md)|Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi IUnknown işaretçisi.|  
+|[ChainInterfaces::CanCastTo Metodu](../windows/chaininterfaces-cancastto-method.md)|Her tarafından tanımlanan uzmanlıkları belirtilen arabirim kimliği içerip içermeyeceğini belirten **ChainInterface** şablon parametreleri.|  
+|[ChainInterfaces::CastToUnknown Metodu](../windows/chaininterfaces-casttounknown-method.md)|Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi için bir işaretçi olarak `IUnknown`.|  
 |[ChainInterfaces::FillArrayWithIid Metodu](../windows/chaininterfaces-fillarraywithiid-method.md)|Arabirim kimliği tarafından tanımlanan depoları *I0* şablon parametresi belirtilen bir dizisinde belirtilen bir konuma arabiriminin kimlikleri.|  
 |[ChainInterfaces::Verify Metodu](../windows/chaininterfaces-verify-method.md)|Her arabirim şablon parametreleri tarafından tanımlanan doğrular *I0* aracılığıyla *I9* devraldığı `IUnknown` ve/veya `IInspectable`ve *I0* devralır *I1* aracılığıyla *I9*.|  
   

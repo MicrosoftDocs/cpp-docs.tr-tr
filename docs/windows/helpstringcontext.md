@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 16f113610beb4c6427af5627ea8dfd725e02600d
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: b71d8183921e0df66d6b9a82ff79faf24ccb41d3
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570005"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642340"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ helpstringcontext(  
    contextID  
 ) ]  
@@ -37,7 +37,7 @@ Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.
   
 ### <a name="parameters"></a>Parametreler  
  *Contextıd*  
- Yardım dosyasında 32-bit bir Yardım içerik tanımlayıcısı.  
+ Bir 32-bit Yardım bağlamı tanımlayıcıda **yardımcı** dosya.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **Helpstringcontext** C++ özniteliği ile aynı işlevlere sahip [helpstringcontext](http://msdn.microsoft.com/library/windows/desktop/aa366858) ODL özniteliği.  

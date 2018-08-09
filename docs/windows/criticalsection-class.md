@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0b8aa37f6ac12cad91fa02a2387c95911227319d
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: b65ded3ae56eb1d57bad771a8875cce4948d2953
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466143"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642103"
 ---
 # <a name="criticalsection-class"></a>CriticalSection Sınıfı
 Kritik bölüm nesneyi temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 class CriticalSection;  
 ```  
   

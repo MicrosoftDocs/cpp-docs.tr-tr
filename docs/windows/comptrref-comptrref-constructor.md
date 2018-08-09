@@ -17,25 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 24844588a18f269ee6f3a19286e6755b11b1c6bf
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 621f852728cb40ea88a916b37147c28d8bb0db38
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463638"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644468"
 ---
 # <a name="comptrrefcomptrref-constructor"></a>ComPtrRef::ComPtrRef Oluşturucusu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 ComPtrRef(  
    _In_opt_ T* ptr  
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *ptr*  
  Temeldeki değeri başka bir **ComPtrRef** nesne.  
   

@@ -1,5 +1,5 @@
 ---
-title: İletişim kutularındaki denetimlerin düzenlenmesi | Microsoft Docs
+title: İletişim kutularındaki denetimlerin | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a449fef82b536cdea484a49a52fece86fac21604
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3414c6856619f602ec21297ebb330e060e98906b
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858493"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645779"
 ---
 # <a name="arrangement-of-controls-on-dialog-boxes"></a>İletişim Kutularındaki Denetimlerin Düzenlenmesi
-İletişim kutusu Düzenleyicisi hizalama ve denetimleri otomatik olarak boyut düzeni araçlar sağlar. Çoğu görevler için kullanabileceğiniz [iletişim kutusu Düzenleyicisi araç](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). Tüm iletişim kutusu Düzenleyicisi araç komutları Biçim menüsünde de mevcuttur ve çoğu [kısayol tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).  
+**İletişim** Düzenleyicisi, hizalama ve denetimleri boyut otomatik düzeni araçlar sağlar. Çoğu görevler için kullanabileceğiniz [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). Tüm **iletişim kutusu Düzenleyicisi** araç çubuğu komutlarını kullanılabilir ayrıca **biçimi** menü ve çoğu [kısayol tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
- İletişim kutuları için birçok düzeni komutlar, yalnızca birden fazla denetim seçildiğinde kullanılabilir. Tek bir denetim veya birden çok denetim seçebilirsiniz ve birden fazla denetim seçildiğinde, seçtiğiniz ilk varsayılan olarak "baskın" denetimi sağlayıcıdır. Ve baskın denetimi seçme konusunda daha fazla bilgi için bkz: [seçerek denetimleri](../windows/selecting-controls.md).  
+ İletişim kutuları için Düzen komutların çoğu yalnızca birden fazla denetim seçildiğinde kullanılabilir. Tek bir denetim veya birden çok denetim seçin ve birden fazla denetim seçildiğinde, seçtiğiniz birinci varsayılan olarak "baskın" denetimidir. Denetimleri ve baskın denetimi seçme hakkında daha fazla bilgi için bkz: [seçerek denetimleri](../windows/selecting-controls.md).  
   
- Konum, yükseklik ve genişliğine geçerli denetimi durum çubuğu sağ alt köşesinde görüntülenir. Tüm iletişim kutusu seçili olduğunda, durum çubuğu bir bütün ve yüksekliğini ve genişliğini iletişim kutusunun konumunu görüntüler.  
+ Konum, yükseklik ve genişlik geçerli denetimin durum çubuğunun sağ alt köşesinde görüntülenir. Tüm iletişim kutusu seçildiğinde durum çubuğunda bir bütün ve yüksekliğini ve genişliğini iletişim kutusunun konumunu görüntüler.  
   
 -   [İletişim Kutusu Düzenleyicisi Durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)  
   
@@ -45,7 +45,7 @@ ms.locfileid: "33858493"
   
 -   [Denetimlerin Sekme Sırasını Değiştirme](../windows/changing-the-tab-order-of-controls.md)  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
@@ -53,4 +53,3 @@ ms.locfileid: "33858493"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
  [Denetimler](../mfc/controls-mfc.md)
-

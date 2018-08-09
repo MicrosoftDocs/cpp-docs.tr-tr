@@ -1,5 +1,5 @@
 ---
-title: SimpleActivationFactory::GetRuntimeClassName yöntemi | Microsoft Docs
+title: SimpleActivationFactory::GetRuntimeClassName metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e001d0269c21026bdd00abcdd4d257f11d601cf6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1c6c6731c4c7787f3d81a4e67eac2861a46bfe1a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889039"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644414"
 ---
 # <a name="simpleactivationfactorygetruntimeclassname-method"></a>SimpleActivationFactory::GetRuntimeClassName Metodu
 
-Tarafından belirtilen sınıfının bir örneğini çalışma zamanı sınıf adını alır `Base` sınıfı şablon parametresi.
+Çalışma zamanı sınıf adı tarafından belirtilen sınıfın örneğini alır `Base` sınıfı şablon parametresi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,11 +41,11 @@ Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa &#95; &#95;WRL_STRICT&#95; &#95; olduğu sınıfı tarafından belirtilmişse tanımlanan assert hata yayılan `Base` değil sınıfı şablon parametresi türetilen [RuntimeClass](../windows/runtimeclass-class.md), ya da ile yapılandırılmamış WinRt veya WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
+Varsa &#95; &#95;WRL_STRICT&#95; &#95; olan sınıfın belirtilen tanımlanan, bir onay hatası yayılır `Base` olmayan şablon parametresi sınıf türetilmiş [RuntimeClass](../windows/runtimeclass-class.md), ya da ile yapılandırılmamış WinRt veya WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -54,5 +54,4 @@ Varsa &#95; &#95;WRL_STRICT&#95; &#95; olduğu sınıfı tarafından belirtilmi�
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-
-[SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)
+ [SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)

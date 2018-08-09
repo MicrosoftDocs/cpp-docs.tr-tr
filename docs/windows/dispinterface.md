@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6497d6da630095f4d7691edb076fc354b87e5a13
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 18308cc66e2a01aa5e0396f098096ee9d49416bf
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569220"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644336"
 ---
 # <a name="dispinterface"></a>dispinterface
 Bir arabirim gönderme arabirimi olarak .idl dosyasına yerleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [dispinterface]  
 ```  
   
@@ -40,7 +40,7 @@ Bir arabirim gönderme arabirimi olarak .idl dosyasına yerleştirir.
   
  Kullanım örneği için [dispinterface](http://msdn.microsoft.com/library/windows/desktop/aa366802) MIDL belgelerinde:  
   
-```  
+```cpp  
 dispinterface helloPro   
    { interface hello; };   
 ```  
@@ -59,7 +59,7 @@ dispinterface helloPro
 |**İçin geçerlidir**|**interface**|  
 |**Tekrarlanabilir**|Hayır|  
 |**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|**çift**, **nesne**, **oleautomation**, `local`, **ms_union**|  
+|**Geçersiz öznitelikler**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|  
   
  Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   

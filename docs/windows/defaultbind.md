@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a92d4a7b617b8963c3ffbd78638a7a97515d8509
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2c9930fefabd6fb12aaad64f07c078e5e422d827
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871467"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644092"
 ---
 # <a name="defaultbind"></a>defaultbind
-En iyi nesneyi temsil eden tek, bağlanabilirse özelliği gösterir.  
+En iyi nesneyi temsil eden tek ve bağlanabilir özelliği belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
+```cpp  
 [defaultbind]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Defaultbind** C++ özniteliğine sahip ile aynı işlevselliği [defaultbind](http://msdn.microsoft.com/library/windows/desktop/aa366790) MIDL özniteliği.  
+ **Defaultbind** C++ özniteliği ile aynı işlevlere sahip [defaultbind](http://msdn.microsoft.com/library/windows/desktop/aa366790) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **defaultbind**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **defaultbind**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,12 +45,12 @@ En iyi nesneyi temsil eden tek, bağlanabilirse özelliği gösterir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

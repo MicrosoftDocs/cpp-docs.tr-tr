@@ -21,29 +21,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 34545a01c01146992c7d88ecabec1a29a7b438f2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 54b68ec8f780fc8022543813b412eaff2045cbdf
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892805"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645610"
 ---
 # <a name="setting-the-width-of-a-horizontal-scroll-bar"></a>Yatay Kaydırma Çubuğunun Genişliğini Ayarlama
-MFC sınıfları kullanarak iletişim kutusuna yatay kaydırma çubuğu içeren bir liste kutusu eklediğinizde, kaydırma çubuğu uygulamanızda otomatik olarak görünmez.  
+MFC sınıfları kullanarak iletişim kutusuna bir yatay kaydırma çubuğu içeren bir liste kutusu eklediğinizde, kaydırma çubuğu uygulamanızı otomatik olarak görünmez.  
   
-### <a name="to-make-the-scroll-bar-appear"></a>Kaydırma çubuğu görünmesi yapma  
+### <a name="to-make-the-scroll-bar-appear"></a>Kaydırma çubuğunun görünmesi için  
   
-1.  Geniş öğesi için en büyük genişliği aranarak [CListBox::SetHorizontalExtent](../mfc/reference/clistbox-class.md#sethorizontalextent) kodunuzda.  
+1.  Çağırarak geniş öğesi için bir maksimum genişliğini ayarlamak [CListBox::SetHorizontalExtent](../mfc/reference/clistbox-class.md#sethorizontalextent) kodunuzda.  
   
-     Bu değer kümesi kaydırma çubuğu görünmez, hatta liste kutusunda öğeleri kutudan daha geniş olduğunda.  
+     Bu değer kümesi kaydırma çubuğu görünmez, hatta öğeleri liste kutusunda kutudan daha geniş olduğunda.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  MFC  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
  [Denetimler](../mfc/controls-mfc.md)
-

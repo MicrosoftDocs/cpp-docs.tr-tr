@@ -71,18 +71,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fe1173b122e64f9b75af2f8186bf52b50003e5ab
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: a88994133b65432566254fb77ddc35d5f2aab47b
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463622"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644875"
 ---
 # <a name="compiler-support-for-type-traits-c-component-extensions"></a>Tür Özellikleri için Derleyici Desteği (C++ Bileşen Uzantıları)
 Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli özelliklerini gösterir.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
  Tür özellikleri kitaplıkları yazma programcıları için özellikle yararlıdır.  
   
@@ -92,9 +92,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_assign(` `type` `)`  
   
-     Kopya atama işleci bir platform veya yerel türe sahipse true değerini döndürür.  
+     Döndürür **true** kopya atama işleci bir platform veya yerel bir tür varsa.  
   
-    ```  
+    ```cpp  
     ref struct R {  
     void operator=(R% r) {}  
     };  
@@ -106,9 +106,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_copy(` `type` `)`  
   
-     Bir kopya Oluşturucu platform veya yerel türe sahipse true değerini döndürür.  
+     Döndürür **true** platform veya yerel bir tür bir kopya Oluşturucusu varsa.  
   
-    ```  
+    ```cpp  
     ref struct R {  
     R(R% r) {}  
     };  
@@ -120,9 +120,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_finalizer(` `type` `)`  
   
-     (Desteklenmez [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)].) CLR türü bir sonlandırıcı sahipse true değerini döndürür. Bkz: [yok ediciler ve sonlandırıcılar, nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) daha fazla bilgi için.  
+     (Desteklenmez [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)].) Döndürür **true** CLR türü bir sonlandırıcı varsa. Bkz: [yok ediciler ve sonlandırıcılar, nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) daha fazla bilgi için.  
   
-    ```  
+    ```cpp  
     using namespace System;  
     ref struct R {  
     ~R() {}  
@@ -137,9 +137,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_nothrow_assign(` `type` `)`  
   
-     Kopya atama işleci bir boş özel durum belirtimi sahipse true değerini döndürür.  
+     Döndürür **true** kopya atama işleci bir boş özel durum belirtimi varsa.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     void operator=(S& r) throw() {}  
@@ -153,9 +153,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_nothrow_constructor(` `type` `)`  
   
-     Varsayılan Oluşturucu bir boş özel durum belirtimi sahipse true değerini döndürür.  
+     Döndürür **true** varsayılan oluşturucu bir boş özel durum belirtimi varsa.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     S() throw() {}  
@@ -169,9 +169,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_nothrow_copy(` `type` `)`  
   
-     Kopya Oluşturucu boş bir özel durum belirtimi sahipse true değerini döndürür.  
+     Döndürür **true** kopya Oluşturucu boş bir özel durum belirtimi varsa.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     S(S& r) throw() {}  
@@ -185,9 +185,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_trivial_assign(` `type` `)`  
   
-     Türü bir basit, derleyici tarafından üretilen atama işleci sahipse true değerini döndürür.  
+     Döndürür **true** Önemsiz, derleyici tarafından üretilen atama işleci türündeyse.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
   
@@ -199,9 +199,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_trivial_constructor(` `type` `)`  
   
-     Önemsiz, derleyici tarafından oluşturulan bir oluşturucu türüne sahipse true değerini döndürür.  
+     Döndürür **true** türü, önemsiz, derleyicinin ürettiği Oluşturucusu varsa.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
   
@@ -213,9 +213,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_trivial_copy(` `type` `)`  
   
-     Önemsiz, derleyici tarafından oluşturulan kopya Oluşturucu türüne sahipse true değerini döndürür.  
+     Döndürür **true** türü, önemsiz, derleyicinin ürettiği kopyalama Oluşturucusu varsa.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
   
@@ -227,7 +227,7 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_trivial_destructor(` `type` `)`  
   
-     Türü bir basit, derleyicinin ürettiği yok Edicisi varsa true değerini döndürür.  
+     Döndürür **true** türü bir basit, derleyicinin ürettiği yok Edicisi varsa.  
   
     ``` cpp 
     // has_trivial_destructor.cpp  
@@ -242,7 +242,7 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_user_destructor(` `type` `)`  
   
-     Bir platform veya yerel bir tür bir kullanıcı olarak bildirilen yok Edicisi varsa true değerini döndürür.  
+     Döndürür **true** platform veya yerel bir tür bir kullanıcı olarak bildirilen yok Edicisi varsa.  
   
     ```cpp
     // has_user_destructor.cpp  
@@ -259,7 +259,7 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__has_virtual_destructor(` `type` `)`  
   
-     Türü sanal bir yok Edicisi varsa true değerini döndürür.  
+     Döndürür **true** türü sanal bir yok Edicisi varsa.  
   
      `__has_virtual_destructor` Ayrıca platform türleri ve herhangi bir platform türü kullanıcı tanımlı yıkıcı üzerinde çalışır, sanal bir yıkıcı olur.  
   
@@ -278,7 +278,7 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_abstract(` `type` `)`  
   
-     Türü soyut bir tür ise true döndürür. Yerel soyut türler hakkında daha fazla bilgi için bkz. [soyut](../windows/abstract-cpp-component-extensions.md).  
+     Döndürür **true** türü soyut bir tür ise. Yerel soyut türler hakkında daha fazla bilgi için bkz. [soyut](../windows/abstract-cpp-component-extensions.md).  
   
      `__is_abstract` platform türleri için de kullanılabilir. En az bir soyut üye bir başvuru türüyle en az bir üye arabirimiyle soyut bir tür olduğundan. Soyut platform türleri hakkında daha fazla bilgi için bkz. [soyut sınıflar](../cpp/abstract-classes-cpp.md)  
   
@@ -297,9 +297,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_base_of(` `base` `,` `derived` `)`  
   
-     Her iki türü de aynıysa, ilk türü bir temel sınıf ikinci türü ise true döndürür.  
+     Döndürür **true** ikinci türü temel bir sınıfı ilk türü ise if iki türü de aynıdır.  
   
-     `__is_base_of` platform türleri üzerinde de çalışır. Örneğin, ilk türü ise true döndürür bir [arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md) ve ikinci tür arabirimini uygular.  
+     `__is_base_of` platform türleri üzerinde de çalışır. Örneğin, döndürür **true** ilk türü ise bir [arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md) ve ikinci tür arabirimini uygular.  
   
     ```cpp
     // is_base_of.cpp  
@@ -318,9 +318,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_class(` `type` `)`  
   
-     Bir yerel sınıf veya yapı türü ise, true döndürür.  
+     Döndürür **true** türü bir yerel sınıf veya yapı ise.  
   
-    ```
+    ```cpp
     #include <stdio.h>  
     struct S {};  
   
@@ -332,9 +332,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_convertible_to(` `from` `,`  `to` `)`  
   
-     İlk tür ikinci türe dönüştürülebilir ise true döndürür.  
+     Döndürür **true** ilk tür ikinci türe dönüştürülebilir ise.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
     struct T : public S {};  
@@ -350,9 +350,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_delegate(` `type` `)`  
   
-     Gerekirse true döndürür `type` bir temsilci. Daha fazla bilgi için [temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md).  
+     Döndürür **true** varsa `type` bir temsilci. Daha fazla bilgi için [temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     delegate void MyDel();  
     int main() {  
     System::Console::WriteLine(__is_delegate(MyDel));  
@@ -361,9 +361,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_empty(` `type` `)`  
   
-     Örnek veri üye türü sahipse true değerini döndürür.  
+     Döndürür **true** örnek veri üye türü varsa.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     int Test() {}  
@@ -377,7 +377,7 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_enum(` `type` `)`  
   
-     Yerel bir numaralandırma türü ise true, aksi durumda değeri döndürür.  
+     Döndürür **true** yerel bir numaralandırma türü ise.  
   
     ```cpp
     // is_enum.cpp  
@@ -399,7 +399,7 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_interface_class(` `type` `)`  
   
-     Bir platform arabirimi aktarılırsa true döndürür. Daha fazla bilgi için [arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md).  
+     Döndürür **true** platform Interface geçirilmiş. Daha fazla bilgi için [arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md).  
   
     ```cpp
     // is_interface_class.cpp  
@@ -413,11 +413,11 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_pod(` `type` `)`  
   
-     Tür bir sınıf veya birleşim hiçbir oluşturucu veya özel veya korumalı statik olmayan üye, temel olmayan sınıflar ve sanal işlev yok ise true döndürür. Pod'ları üzerinde C++ standardı bölümleri 8.5.1/1, 9/4 ve 3.9/10 daha fazla bilgi için bkz.  
+     Döndürür **true** türü bir sınıf veya birleşim hiçbir oluşturucu veya özel veya korumalı statik olmayan üye, temel olmayan sınıflar ve sanal işlev yok ise. Pod'ları üzerinde C++ standardı bölümleri 8.5.1/1, 9/4 ve 3.9/10 daha fazla bilgi için bkz.  
   
      `__is_pod` temel türler üzerinde false döndürür.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
   
@@ -429,9 +429,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_polymorphic(` `type` `)`  
   
-     Yerel bir tür sanal işleve sahipse true değerini döndürür.  
+     Döndürür **true** yerel bir tür sanal işlevler varsa.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     virtual void Test(){}  
@@ -445,9 +445,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_ref_array(` `type` `)`  
   
-     Bir platform dizi aktarılırsa true döndürür. Daha fazla bilgi için [diziler](../windows/arrays-cpp-component-extensions.md).  
+     Döndürür **true** platform dizi geçirilmiş. Daha fazla bilgi için [diziler](../windows/arrays-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     using namespace System;  
     int main() {  
     array<int>^ x = gcnew array<int>(10);  
@@ -457,9 +457,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_ref_class(` `type` `)`  
   
-     Başvuru sınıfı aktarılırsa true döndürür. Kullanıcı tarafından tanımlanan başvuru türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).  
+     Döndürür **true** başvuru sınıfı geçirilmiş. Kullanıcı tarafından tanımlanan başvuru türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     using namespace System;  
     ref class R {};  
     int main() {  
@@ -470,9 +470,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_sealed(` `type` `)`  
   
-     Bir platform veya yerel tür geçirilen true değeri döndürür, korumalı olarak işaretlenmiş. Daha fazla bilgi için [korumalı](../windows/sealed-cpp-component-extensions.md).  
+     Döndürür **true** bir platform veya yerel türü sealed olarak işaretlenmiş geçirilmiş. Daha fazla bilgi için [korumalı](../windows/sealed-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     ref class R sealed{};  
     int main() {  
     System::Console::WriteLine(__is_sealed(R));  
@@ -481,9 +481,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_simple_value_class(` `type` `)`  
   
-     Atık olarak toplanmış yığınla başvuru içeren bir değer türüne geçirilen true değerini döndürür. Kullanıcı tanımlı değer türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).  
+     Döndürür **true** atık olarak toplanmış yığınla başvuru içeren bir değer türü geçirilmiş. Kullanıcı tanımlı değer türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     using namespace System;  
     ref class R {};  
     value struct V {};  
@@ -499,9 +499,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_union(` `type` `)`  
   
-     Bir birleşim türü ise true, aksi durumda değeri döndürür.  
+     Döndürür **true** bir türü UNION ise.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     union A {  
     int i;  
@@ -516,9 +516,9 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
   
 -   `__is_value_class(` `type` `)`  
   
-     Bir değer türüne geçirilen true değerini döndürür. Kullanıcı tanımlı değer türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).  
+     Döndürür **true** geçirilmiş bir değer türü. Kullanıcı tanımlı değer türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     value struct V {};  
   
     int main() {  
@@ -527,25 +527,25 @@ Derleyici destekler *türü nitelikler*, derleme zamanında bir tür çeşitli �
     ```  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
  `__has_finalizer(` *Türü* `)` türü niteliğine bu platform sonlandırıcılar desteklemediğinden desteklenmiyor.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
  (Bu özelliğin platforma özel açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
  **Örnek**  
   
- Aşağıdaki kod örneği için bir derleme türü niteliğine kullanıma sunmak için bir sınıf şablonu kullanmayı gösterir. bir **/CLR** derleme. Daha fazla bilgi için [Windows çalışma zamanı ve yönetilen şablonlar](../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md).  
+ Aşağıdaki kod örneği için bir derleme türü niteliğine kullanıma sunmak için bir sınıf şablonu kullanmayı gösterir. bir `/clr` derleme. Daha fazla bilgi için [Windows çalışma zamanı ve yönetilen şablonlar](../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md).  
   
 ```cpp  
 // compiler_type_traits.cpp  
@@ -566,8 +566,6 @@ int main () {
       Console::WriteLine("R is not a ref class");  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 R is a ref class  

@@ -19,29 +19,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7510d8bb9f356620e77d862edab71d852fdec65b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8ee2b3a437f2b36d34fe9232356b171757643509
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855389"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644992"
 ---
 # <a name="changing-unassigned-symbols"></a>Atanmamış Sembolleri Değiştirme
-İçinde iken [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), düzenlemek veya bir kaynak veya nesne zaten atanmamış varolan sembolleri silin.  
+İçinde çalışırken [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), düzenlemek veya bir kaynak veya nesne zaten atanmamış varolan sembolleri Sil.  
   
-### <a name="to-change-an-unassigned-symbol"></a>Atanmamış bir simge değiştirmek için  
+### <a name="to-change-an-unassigned-symbol"></a>Atanmamış bir sembol değiştirmek için  
   
-1.  İçinde **adı** kutusuna atanmamış simgeyi seçin ve tıklatın **değişiklik**.  
+1.  İçinde **adı** kutusuna atanmamış simgesini seçin ve tıklayın **değişiklik**.  
   
-2.  Simgenin adını veya sağlanan kutularında değerini Düzenle **değişiklik simgesi** iletişim kutusu.  
+2.  Simgenin adı veya değeri, verilen kutulara Düzenle **sembolü Değiştir** iletişim kutusu.  
   
     > [!NOTE]
-    >  Bir simge değiştirmek için *olan* bir kaynak veya nesne atanan, Kaynak Düzenleyici ya da Özellikler penceresini kullanmanız gerekir. Daha fazla bilgi için bkz: [sembolü veya sembol adını değiştirme](../windows/changing-a-symbol-or-symbol-name-id.md).  
+    >  Bir sembol değiştirmek için *olduğu* bir kaynağa veya nesne atanan kaynak düzenleyicisini kullanmanız gerekir veya **özellikleri** penceresi. Daha fazla bilgi için [sembolü veya sembol adını değiştirme](../windows/changing-a-symbol-or-symbol-name-id.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

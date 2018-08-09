@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9caa2e18a1ec851967857eb068797e092835f587
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 627b0a881795a963e3739accc351ee684b7b8232
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891100"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644940"
 ---
 # <a name="type-forwarding-ccli"></a>Tür İletme (C++/CLI)
-*Tür iletme* derleme A. kullanan istemcilerin yeniden derleyin gerekli değildir sağlayacak şekilde, bir tür bir derlemeye (a derlemesi) başka bir derlemeye (derleme B) taşımanızı sağlar  
+*Tür iletme* şekilde derleme A'ya kullanan istemcileri yeniden derlemenize gerek yoktur, bir tür başka bir derlemeye (derleme B), bir derlemeye (a derlemesi) taşımanızı sağlar  
   
 ## <a name="all-platforms"></a>Tüm Platformlar  
  Bu özellik tüm çalışma zamanları desteklenmiyor.  
@@ -32,10 +32,10 @@ ms.locfileid: "33891100"
  Bu özellik, Windows çalışma zamanı'nda desteklenmiyor.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
- Aşağıdaki kod örneği, tür iletme kullanımı gösterilmiştir.  
+ Aşağıdaki kod örneği, tür iletme kullanma işlemini gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -45,26 +45,26 @@ ms.locfileid: "33891100"
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `new`  
- Tür tanımı taşıdığınız derleme.  
+ *new*  
+ Tür tanımını taşıdığınız derleme.  
   
- `type`  
- Tür tanımı başka bir derlemeye taşıyor.  
+ *Türü*  
+ Türü tanımı başka bir derlemeye taşıyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir bileşen (derleme) gelir ve sonra istemci uygulamalar tarafından kullanılan, iletme türü bileşeni (derleme) başka bir derlemeye taşımak için güncelleştirilen bileşenin (ve gerekli ek derlemeleri) sevk türü ve istemci kullanabilirsiniz uygulamalar, yeniden derlenmesi olmadan çalışmaya devam edecektir.  
+ Bir bileşen (derleme) gelir ve sonra istemci uygulamalar tarafından kullanılan, tür iletme türü başka bir derlemeye (derleme) bileşeninden taşımak, güncelleştirilen bileşenin (ve gereken ek bütünleştirilmiş kodları) gönderin ve istemci kullanabilirsiniz uygulamaları yeniden derlenen olmadan çalışmaya devam eder.  
   
- Tür iletme yalnızca var olan uygulamalar tarafından başvurulan bileşen için çalışır. Bir uygulamayı yeniden oluşturduğunuzda uygulamada kullanılan türleri için uygun derleme başvurularını olmalıdır.  
+ Tür iletme yalnızca var olan uygulamalar tarafından başvurulan bileşen için çalışır. Bir uygulamayı yeniden derlediğinizde, uygulamada kullanılan türler için uygun derleme başvurularını olmalıdır.  
   
- Bir türü (A) bir derlemeye ait iletirken eklemelisiniz `TypeForwardedTo` özniteliği bir derleme başvurusu yanı sıra, bu tür için. Başvuru derleme aşağıdakilerden birini içermelidir:  
+ Bir derlemeden bir tür (tür A) iletirken eklemelisiniz `TypeForwardedTo` bir bütünleştirilmiş kod başvurusu yanı sıra, bu tür için özniteliği. Başvuru bütünleştirilmiş kod, aşağıdakilerden birini içermelidir:  
   
--   Türü A. tanımı  
+-   Tür a tanımı  
   
--   A `TypeForwardedTo` bir derleme başvurusu yanı sıra bir özniteliği.  
+-   A `TypeForwardedTo` özniteliği için bir bütünleştirilmiş kod başvurusu yanı sıra yazın.  
   
- İletilebilir türleri örnekleri şunlardır:  
+ İletilebilir türleri şunlardır:  
   
--   ref sınıfları  
+-   başvuru sınıfları  
   
 -   değer sınıfları  
   
@@ -72,32 +72,32 @@ ms.locfileid: "33891100"
   
 -   arabirimler  
   
- Aşağıdaki türlerden iletemez:  
+ Aşağıdaki türleri iletilemiyor:  
   
 -   Genel türler  
   
 -   Yerel türler  
   
--   İç içe geçmiş türler (iç içe geçmiş tür iletmek istiyorsanız, kendilerini kapsayan türle iletmek)  
+-   İç içe türleri (iç içe geçmiş bir tür iletmek istiyorsanız, kapsayan tür iletme)  
   
- Ortak dil çalışma zamanı hedefleme herhangi bir dilde yazılan bir derleme bir türü iletebilirsiniz.  
+ Bir tür, ortak dil çalışma zamanını hedefleyen herhangi bir dilde yazılmış bir derlemeye iletebilirsiniz.  
   
- Bunu, derleme A.dll oluşturmak için kullanılan bir kaynak kodu dosyasının bir tür tanımı içeriyorsa (`ref class MyClass`), ve bu tür taşımak istediğiniz tanımı derleme B.dll musunuz:  
+ Bunu, bir tür tanımı A.dll derlemesi oluşturmak için kullanılan bir kaynak kodu dosyası içeriyorsa (`ref class MyClass`), ve bu tür taşımak istiyordu B.dll derleme tanımına yaptığınız:  
   
-1.  Taşıma `MyClass` B.dll oluşturmak için kullanılan bir kaynak kodu dosyasının tanımını yazın.  
+1.  Taşıma `MyClass` B.dll oluşturmak için kullanılan bir kaynak kodu dosyası için tanım yazın.  
   
-2.  Derleme B.dll oluşturma  
+2.  B.dll derleme  
   
-3.  Silme `MyClass` A.dll oluşturmak ve şununla değiştirin için kullanılan kaynak kodu tanımından yazın:  
+3.  Silme `MyClass` tanımından A.dll oluşturup aşağıdakiyle değiştirin kullanılan kaynak kodu yazın:  
   
     ```  
     #using "B.dll"  
     [assembly:TypeForwardedTo(MyClass::typeid)];  
     ```  
   
-4.  Derleme A.dll oluşturma.  
+4.  Bütünleştirilmiş kod A.dll oluşturun.  
   
-5.  İstemci uygulamaları derlemeden A.dll kullanın.  
+5.  İstemci uygulamalarını yeniden derlemeye gerek kalmadan A.dll kullanın.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**
+ Derleyici seçeneği: `/clr`

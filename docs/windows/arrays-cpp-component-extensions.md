@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 21a1dd4f26db41f7e32f3f76fd3b4c82e513397a
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 58ba6d598223e63f5b28adcaedad653ffc6f386a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461695"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645574"
 ---
 # <a name="arrays-c-component-extensions"></a>Dizeler (C++ Bileşen Uzantıları)
 `Platform::Array<T>` Türü C + +/ CX, veya **dizi** anahtar sözcüğü C + +/ CLI, belirtilen tür ve ilk değer dizisi bildirir.  
@@ -52,7 +52,7 @@ ms.locfileid: "39461695"
   
  Sözdiziminin ilk örnekte **yeni başvuru** bir dizi ayırmak için toplam anahtar sözcüğü. İkinci örnek, yerel bir diziyi bildirir.  
   
-```  
+```cpp  
 [qualifiers] [Platform::]Array<[qualifiers] array-type [,rank]>^ identifier = 
     ref new[Platform::]Array<initialization-type> [{initialization-list [,...]}]  
   
@@ -83,7 +83,7 @@ ms.locfileid: "39461695"
  Başvuru sayılan bir dizi içeren bir tür olup olmadığını derleme zamanında algılayabilir `__is_ref_array(type)`. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ### <a name="examples"></a>Örnekler  
  Aşağıdaki örnek, 100 öğeleri olan tek boyutlu dizi oluşturur.  
@@ -106,7 +106,7 @@ int main() {
   
  Sözdiziminin ilk örnekte **gcnew** anahtar sözcüğü, bir dizi ayırmak için. İkinci örnek, yerel bir diziyi bildirir.  
   
-```  
+```cpp  
 [qualifiers] [cli::]array<[qualifiers] array-type [,rank]>^ identifier = 
     gcnew [cli::]array<initialization-type[,rank]>(rank-size-list[,...]) [{initialization-list [,...]}]  
   
@@ -139,7 +139,7 @@ int main() {
   
 ### <a name="remarks"></a>Açıklamalar  
   
- `array` içinde [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) ad alanı.  
+ **dizi** bulunduğu [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) ad alanı.  
   
  Standart C++ gibi bir dizi dizinleri sıfır tabanlıdır ve bir dizi köşeli ayraç ([]) kullanarak alt simgeli. Standart C++, çok boyutlu bir dizi dizinleri her boyut için köşeli ayraç ([]) işleçleri kümesini yerine her boyut için dizin listesinde belirtilir. Örneğin, *tanımlayıcı*[*index1*, *index2*] yerine *tanımlayıcı*[*index1*] [ *index2*].  
   
@@ -152,7 +152,7 @@ int main() {
  Derleme zamanında bir türde bir ortak dil çalışma zamanı (CLR) diziyle olup algılayabilir `__is_ref_array(type)`. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
  Aşağıdaki örnek, 100 öğeleri olan tek boyutlu bir dizi ve ilk boyutunun 3 öğe, 5 öğeleri ikinci ve üçüncü 6 öğe içeren üç boyutlu bir dizi oluşturur.  

@@ -18,20 +18,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 22f8dc4dfc3268930c80caece85b06b9a1a25d58
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 9e9f044a7aebdb96162edc0dcd4c33ed3c89e3b2
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461029"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644888"
 ---
 # <a name="classes-and-structs--c-component-extensions"></a>Sınıflar ve Yapılar (C++ Bileşen Uzantıları)
 Bir sınıf veya yapı bildirir, *nesne yaşam süresi* otomatik olarak yönetilir. Nesnenin artık erişilebilir değil veya kapsam dışına gider, Visual C++ nesne için ayrılan bellek otomatik olarak atar.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- **Söz dizimi**  
+### <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
       class_access  
       ref class  
       name  
@@ -42,7 +42,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
 ```  
   
- **Parametreler**  
+### <a name="parameters"></a>Parametreler  
   
  *class_access* (isteğe bağlı)  
  Sınıfın veya yapının derleme dışından erişilebilirlik. Olası değerler **genel** ve **özel** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapılar sahip bir *class_access* tanımlayıcısı.  
@@ -54,14 +54,14 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
  [soyut](../windows/abstract-cpp-component-extensions.md) ve [korumalı](../windows/sealed-cpp-component-extensions.md) geçerli değiştiricilerdir.  
   
  *inherit_access* (isteğe bağlı)  
- Erişilebilirliğini `base_type`. Yalnızca izin verilen erişilebilirlik, **genel** (**genel** varsayılandır).  
+ Erişilebilirliğini *taban_türü*. Yalnızca izin verilen erişilebilirlik, **genel** (**genel** varsayılandır).  
   
  *taban_türü* (isteğe bağlı)  
  Bir taban türü. Ancak, bir değer türü temel tür olarak davranamaz.  
   
  Daha fazla bilgi için bu parametre Windows çalışma zamanı ve ortak dil Runtimesections dile özgü açıklamaları bakın.  
   
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
  Bir nesnenin varsayılan üye erişilebilirliği ile bildirilen **başvuru sınıfı** veya **değer sınıfının** olduğu **özel**. Ve bir nesnenin varsayılan üye erişilebilirliği ile bildirilen **ref struct** veya **değeri yapı** olduğu **genel**.  
   
@@ -88,29 +88,27 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 -   [Genel Sınıflar (C++/CLI)](../windows/generic-classes-cpp-cli.md)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
  Bkz: [başvuru sınıfları ve yapıları](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx) ve [değer sınıfları ve yapıları](http://msdn.microsoft.com/library/windows/apps/hh699861.aspx).  
   
- **Parametreler**  
-  
+### <a name="parameters"></a>Parametreler  
  *taban_türü* (isteğe bağlı)  
- Bir taban türü. A **başvuru sınıfı** veya **ref struct** sıfır veya daha fazla arabirimi ve sıfır veya bir devralabilir `ref` türleri. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla ara birimden devralınabilir.  
+ Bir taban türü. A **başvuru sınıfı** veya **ref struct** sıfır veya daha fazla arabirimi ve sıfır veya bir devralabilir **ref** türleri. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla ara birimden devralınabilir.  
   
  Kullanarak bir nesne bildirdiğinizde **başvuru sınıfı** veya **ref struct** anahtar sözcükler, nesne tarafından erişildiğinde bir nesne için bir tanıtıcı; diğer bir deyişle, bir nesneye başvuru sayaç işaretçi. Bildirilmiş bir değişken kapsam dışına çıktığında, derleyici, temel alınan nesnede otomatik olarak siler. Nesne bir arama parametresi olarak kullanılan veya bir değişkende depolanan nesnesi için bir tanıtıcı gerçekten aktarılan veya depolanan.  
   
  Kullanarak bir nesne bildirdiğinizde **değer sınıfının** veya **değeri yapı** anahtar sözcükler, bildirilen nesnenin nesne ömrü denetlenmiyor. Herhangi diğer standart C++ sınıf veya yapı gibi nesnedir.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
  Aşağıdaki tabloda gösterilen söz dizimi farklılıklarını **tüm çalışma zamanları** C + belirli bir bölüm +/ CLI.  
   
- **Parametreler**  
-  
+### <a name="parameters"></a>Parametreler  
  *taban_türü* (isteğe bağlı)  
  Bir taban türü. A **başvuru sınıfı** veya **ref struct** arabirimleri ve sıfır veya bir başvuru türlerinde birden fazla yönetilen ya da sıfırdan devralabilir. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla yönetilen Ara birimden devralınabilir.  
   
@@ -119,7 +117,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
  **Değer sınıfının** ve **değeri yapı** anahtar sözcükler derleyiciye ayrılmış sınıf veya yapı değerini işlevlerine geçirilen veya üyeleri depolanmış.  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ec31b1469f437ff2776ed9da52fbcd7557fca8e2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 23881f2065276aa7ae7b6ee95b5449abb07dd2de
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891759"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641959"
 ---
 # <a name="srwlock-class"></a>SRWLock Sınıfı
 Bir ince Okuyucu/Yazıcı kilidi temsil eder.  
@@ -34,38 +34,38 @@ class SRWLock;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir ince Okuyucu/Yazıcı kilit bir nesneye veya kaynak iş parçacıkları arasında erişimi eşitlemek için kullanılır. Daha fazla bilgi için bkz: [eşitleme işlevleri](http://msdn.microsoft.com/en-us/9b6359c2-0113-49b6-83d0-316ad95aba1b).  
+ Bir ince Okuyucu/Yazıcı kilidi, bir nesneye veya kaynak iş parçacıkları arasında erişimi eşitlemek için kullanılır. Daha fazla bilgi için [eşitleme işlevleri](http://msdn.microsoft.com/9b6359c2-0113-49b6-83d0-316ad95aba1b).  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |||  
 |-|-|  
-|**SyncLockExclusive**|Eş anlamlı SRWLock nesnenin özel modda alınır.|  
-|**SyncLockShared**|Paylaşılan modda alınan SRWLock nesne için eş anlamlı.|  
+|`SyncLockExclusive`|İçin eş anlamlı bir **SRWLock** özel modda alınan nesne.|  
+|`SyncLockShared`|İçin eş anlamlı bir **SRWLock** paylaşılan modda alınan nesne.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SRWLock::SRWLock Oluşturucusu](../windows/srwlock-srwlock-constructor.md)|SRWLock sınıfı yeni bir örneğini başlatır.|  
-|[SRWLock::~SRWLock Yıkıcısı](../windows/srwlock-tilde-srwlock-destructor.md)|SRWLock sınıfı örneği deinitializes.|  
+|[SRWLock::SRWLock Oluşturucusu](../windows/srwlock-srwlock-constructor.md)|Yeni bir örneğini başlatır **SRWLock** sınıfı.|  
+|[SRWLock::~SRWLock Yıkıcısı](../windows/srwlock-tilde-srwlock-destructor.md)|Örneği başlatılmasını geri alır **SRWLock** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SRWLock::LockExclusive Metodu](../windows/srwlock-lockexclusive-method.md)|Özel modda SRWLock nesneyi alır.|  
-|[SRWLock::LockShared Metodu](../windows/srwlock-lockshared-method.md)|Paylaşılan modda SRWLock nesneyi alır.|  
-|[SRWLock::TryLockExclusive Metodu](../windows/srwlock-trylockexclusive-method.md)|Geçerli veya belirtilen SRWLock nesnesi özel kullanım modu SRWLock nesnesinde almaya çalışır.|  
-|[SRWLock::TryLockShared Metodu](../windows/srwlock-trylockshared-method.md)|SRWLock nesne geçerli veya belirtilen SRWLock nesnesi paylaşılan modda almaya çalışır.|  
+|[SRWLock::LockExclusive Metodu](../windows/srwlock-lockexclusive-method.md)|Alması bir **SRWLock** özel modda nesne.|  
+|[SRWLock::LockShared Metodu](../windows/srwlock-lockshared-method.md)|Alması bir **SRWLock** paylaşılan modda nesne.|  
+|[SRWLock::TryLockExclusive Metodu](../windows/srwlock-trylockexclusive-method.md)|Almaya çalışır bir **SRWLock** nesne için geçerli veya belirtilen özel modda **SRWLock** nesne.|  
+|[SRWLock::TryLockShared Metodu](../windows/srwlock-trylockshared-method.md)|Almaya çalışır bir **SRWLock** nesne için geçerli veya belirtilen paylaşılan modda **SRWLock** nesne.|  
   
 ### <a name="protected-data-member"></a>Korumalı veri üyesi  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SRWLock::SRWLock_ Veri Üyesi](../windows/srwlock-srwlock-data-member.md)|Geçerli SRWLock nesnesi için temel alınan kilidi değişken içeriyor.|  
+|[SRWLock::SRWLock_ Veri Üyesi](../windows/srwlock-srwlock-data-member.md)|Temel alınan kilidi değişken için geçerli içeren **SRWLock** nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `SRWLock`  

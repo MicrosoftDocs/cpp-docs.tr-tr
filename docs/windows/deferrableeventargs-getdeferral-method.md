@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 13cd6b361fccc49de6142a0640ff96dbab3cb92c
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 38958be32b03d0fe4a65a0dfe732d4a15c4ce633
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571210"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645090"
 ---
 # <a name="deferrableeventargsgetdeferral-method"></a>DeferrableEventArgs::GetDeferral Metodu
 Bir başvuru edinir [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) ertelenmiş bir olayı temsil eden nesne.  
@@ -29,7 +29,7 @@ Bir başvuru edinir [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) 
 HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Sonuç*  
  Bakacağınız bir işaretçi [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) çağrısı tamamlandığında nesne.  
   

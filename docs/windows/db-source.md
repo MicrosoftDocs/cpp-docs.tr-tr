@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f7c1f02c3791e75d3f42db6a942f5b2055234517
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 7d15c4cd43dd74b6c699027be9841f5f4a610518
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570616"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646117"
 ---
 # <a name="dbsource"></a>db_source
 Bir veri kaynağı için bir bağlantı oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ db_source(   
    db_source,   
    name,   
@@ -45,7 +45,7 @@ Bir veri kaynağı için bir bağlantı oluşturur.
  Kullanırken **db_source** bir sınıfta *adı* sahip bir veri kaynağı nesnesinin bir örneğini **db_source** (bkz. örnek 1) uygulanan bir öznitelik. Kullanırken **db_source** satır bir yöntem uygulaması içinde *adı* verilere erişmek için kullanılan bir değişken (yöntemi yerel) (2 örneğe bakın) kaynak. Bu geçirdiğiniz *adı* için *source_name* parametresinin `db_command` veri kaynağı bir komut ile ilişkilendirilecek.  
   
  *HRESULT* (isteğe bağlı)  
- Alacak değişkeni tanımlar `HRESULT` bu veritabanı komutunun. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.  
+ Bu veritabanı komutunun HRESULT alacak değişkeni tanımlar. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **db_source** oluşturur bir [CDataSource](../data/oledb/cdatasource-class.md) ve [CSession](../data/oledb/csession-class.md) birlikte bir OLE DB Tüketici veri kaynağı ile bağlantı temsil eden nesne.  

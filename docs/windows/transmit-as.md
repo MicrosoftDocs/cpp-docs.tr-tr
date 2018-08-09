@@ -17,36 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d0c4d5fc3101e7eb0e09f33c95cb0f73dd0d2b3d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c1e1ecfb118fb391cf392b411a4664513972ed42
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890418"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642531"
 ---
 # <a name="transmitas"></a>transmit_as
-İstemci ve sunucu uygulamaları işlemek, sunulan bir türü iletilen türüyle ilişkilendirmek için derleyicisi bildirir.  
+İstemci ve sunucu uygulamaları işlemek, sunulan bir türü iletilen türüyle ilişkilendirmek için derleyicinin sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ transmit_as(  
+[ transmit_as(  
    type  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `type`  
+### <a name="parameters"></a>Parametreler  
+ *Türü*  
  İstemci ve sunucu arasında aktarılan veri türünü belirtir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Transmit_as** C++ özniteliğine sahip ile aynı işlevselliği [transmit_as](http://msdn.microsoft.com/library/windows/desktop/aa367286) MIDL özniteliği.  
+ **Transmit_as** C++ özniteliği ile aynı işlevlere sahip [transmit_as](http://msdn.microsoft.com/library/windows/desktop/aa367286) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod bir kullanımını gösterir **transmit_as** özniteliği:  
+ Aşağıdaki kod, bir kullanımını göstermektedir. **transmit_as** özniteliği:  
   
-```  
+```cpp  
 // cpp_attr_ref_transmit_as.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -80,9 +79,9 @@ struct _TREE_NODE_TYPE * right;
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`typedef`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**tür tanımı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

@@ -17,27 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d45181e5db5fe16b6eada23ba8d6c72193fe3ae
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5ff52245f518158c3ca5c44c6af88307d9a55ab4
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883573"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644849"
 ---
 # <a name="comptrrefbaseptr-data-member"></a>ComPtrRefBase::ptr_ Veri Üyesi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 T* ptr_;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli şablon parametresi tarafından belirtilen tür için işaretçi.  
+ Geçerli bir şablon parametresi tarafından belirtilen tür işaretçisi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ptr_` korunan verilerin üyesidir.  
+ **ptr_** korunan verilerin üyesidir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

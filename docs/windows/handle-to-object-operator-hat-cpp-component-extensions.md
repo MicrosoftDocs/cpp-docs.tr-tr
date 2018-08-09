@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc55ab1dad4ee9ba088aaae92f76e58b29683b29
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: b74f4ca4ab2940dde9dfc567b8fa45ea8f03279e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569810"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642776"
 ---
 # <a name="handle-to-object-operator---c-component-extensions"></a>İşlenecek Nesne İşleci (^) (C++ Bileşen Uzantıları)
 *Tanıtıcı Bildiricisi* (`^`, "hat" olarak okunur), tür [belirticisi](../cpp/overview-of-declarators.md) sistem bir nesne olduğunu belirlediğinde, bildirilen nesnenin otomatik olarak silinmesi gerektiğini ifade etmek için artık erişilebilir.  
@@ -36,7 +36,7 @@ ms.locfileid: "39569810"
  Bir nesnenin örneğini hakkında daha fazla bilgi için bkz. [yeni başvuru](../windows/ref-new-gcnew-cpp-component-extensions.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
  CLR sisteminin kullandığı *çöp toplayıcı* nesnenin artık kullanılıp kullanılmadığını ve silinebileceğini belirlemek için bir mekanizma. Ortak dil çalışma zamanı nesneleri ayırdığı bir yığını korur ve yığındaki nesnelerin konumunu programınızdaki kullanan yönetilen başvuruları (değişken) belirtin. Bir nesne artık kullanılmadığında yığın üzerinde kapladığı bellek serbest bırakılır. Düzenli olarak, atık toplayıcı, Boşaltılan belleği daha iyi kullanmak için yığın sıkıştırır. Yığın sıkıştırma yönetilen başvurular tarafından başvurulan konumları geçersiz kılar yığındaki nesneler taşıyabilirsiniz. Bununla birlikte, çöp toplayıcı yönetilen tüm başvuruların konumunu farkındadır ve yığındaki nesnelerin geçerli konumunu göstermek için bunları otomatik olarak güncelleştirir.  
@@ -48,7 +48,6 @@ ms.locfileid: "39569810"
  Daha fazla bilgi için [nasıl yapılır: yerel türlerde bildirimini işleme](../dotnet/how-to-declare-handles-in-native-types.md).  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
  Bu örnek yönetilen yığında başvuru türünün örneğini oluşturma işlemini gösterir.  Ayrıca bu örnek yönetilen, atık toplama yığınındaki aynı nesneye iki başvuru sonuçta bir tanıtıcıyı bir diğeriyle başlatabilirsiniz gösterir. İşaretlemediğine dikkat edin [nullptr](../windows/nullptr-cpp-component-extensions.md) için bir tanıtıcı çöp toplama için nesneyi işaretlemez.  
   
@@ -77,14 +76,10 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 1  
 2  
 ```  
-  
- **Örnek**  
   
  Aşağıdaki örnek, kutulanmış bir değer türü nesne türü olduğu yönetilen yığındaki bir nesne için bir tanıtıcı bildirmek gösterilmektedir. Örnek ayrıca kutulanmış nesneden değer türünün nasıl gösterir.  
   
@@ -109,18 +104,14 @@ int main() {
    int n = 100;  
    Test(n);  
 }  
-```  
-  
- **Output**  
+```   
   
 ```Output  
 Not a boxed int  
 100  
 ```  
   
- **Örnek**  
-  
- Bu örnek, rastgele bir nesneye işaret edecek bir void * işaretçi kullanmanın yaygın C++ deyim nesnesi tarafından yerini aldığını gösterir. ^, hangi tutabilir bir tanıtıcı her başvuru sınıfı için. Ayrıca, diziler ve temsilciler gibi tüm türleri bir nesne tanıtıcısına dönüştürülebildiğini de gösterir.  
+ Bu örnek, kullanmanın yaygın C++ deyim gösterir bir `void*` rastgele bir nesneye işaret edecek şekilde işaretçi tarafından değiştirilir `Object^`, hangi tutabilir bir tanıtıcı her başvuru sınıfı için. Ayrıca, diziler ve temsilciler gibi tüm türleri bir nesne tanıtıcısına dönüştürülebildiğini de gösterir.  
   
 ```cpp  
 // mcppv2_handle_3.cpp  
@@ -157,8 +148,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 Type is System.Collections.ArrayList  
   
@@ -166,8 +155,6 @@ Type is System.Int32
   
 Type is MyDel  
 ```  
-  
- **Örnek**  
   
  Bu örnek, bir tanıtıcı başvurusunun nasıl kaldırılacağını olduğunu ve üye tanıtıcıyla erişilebilir olduğunu gösterir.  
   
@@ -209,17 +196,13 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 Array value: 7  
   
 Cannot access array element 11, size is 10  
 ```  
   
- **Örnek**  
-  
- Bu örnek, yerel bir başvurunun (`&`) öğesine bağlanamaz bir `int` bir yönetilen türün üye olarak `int` atık toplanan yığında depolanmış olabilir ve yerel başvurular Yönetilen yığın içindeki nesne hareketini izlemez. Yerel bir değişken kullanılmalı veya değiştirmek için düzeltmesidir `&` için `%`, bir izleme başvurusu yapılmalıdır.  
+ Bu örnek, yerel bir başvurunun (`&`) öğesine bağlanamaz bir **int** bir yönetilen türün üye olarak **int** atık toplanan yığında depolanmış olabilir ve yerel başvurular izlemez Yönetilen yığın içindeki nesne hareketini. Yerel bir değişken kullanılmalı veya değiştirmek için düzeltmesidir `&` için `%`, bir izleme başvurusu yapılmalıdır.  
   
 ```cpp  
 // mcppv2_handle_5.cpp  

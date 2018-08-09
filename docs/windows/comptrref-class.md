@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7f7f392df62892ea0e053e9d243f85772fa0605d
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 9c45aa289b4b41ddfaf141dcaf790734284af7c8
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463086"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643556"
 ---
 # <a name="comptrref-class"></a>ComPtrRef Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template <  
    typename T  
 >  
@@ -55,7 +55,7 @@ class ComPtrRef : public ComPtrRefBase<T>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtrRef::GetAddressOf Metodu](../windows/comptrref-getaddressof-method.md)|Adresi geçerli ComPtrRef nesnesiyle temsil edilen arabirimi için bir işaretçi alır.|  
+|[ComPtrRef::GetAddressOf Metodu](../windows/comptrref-getaddressof-method.md)|Adresi geçerli tarafından temsil edilen arabirimi için bir işaretçi alır **ComPtrRef** nesne.|  
 |[ComPtrRef::ReleaseAndGetAddressOf Metodu](../windows/comptrref-releaseandgetaddressof-method.md)|Geçerli siler **ComPtrRef** nesnesi ve bir işaretçi-için-a-işaretçi tarafından temsil arabirimi döndürür **ComPtrRef** nesne.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  

@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 25c394b069b85056256d405b4dce8804d84cb2e9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9d47c3b8513883b3b9ee27457fa3a0d670acac13
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857249"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646221"
 ---
 # <a name="classfactoryclassfactory-constructor"></a>ClassFactory::ClassFactory Oluşturucusu
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 WRL_NOTHROW ClassFactory();  
 ```  
   

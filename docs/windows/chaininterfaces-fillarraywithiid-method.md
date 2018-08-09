@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6bd9f899457c3a6045d7a5525c9fb560e23f10d3
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: c795a3a80c48e7fa976807ab3e261fc927d7e104
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461042"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644277"
 ---
 # <a name="chaininterfacesfillarraywithiid-method"></a>ChainInterfaces::FillArrayWithIid Yöntemi
 Arabirim kimliği tarafından tanımlanan depoları *I0* şablon parametresi belirtilen bir dizisinde belirtilen bir konuma arabiriminin kimlikleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 __forceinline static void FillArrayWithIid(  
    _Inout_ unsigned long &index,  
    _In_ IID* iids  
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Dizin*  
  Bir dizin değeri işaretçisine *IID'leri* dizisi.  
   

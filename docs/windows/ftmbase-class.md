@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ed3e9b9e66f673a3d86ded7b3d576e1203db9595
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 662e40dd7e111b976be105129861b8ea26e5d0d9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570567"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646182"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 Ücretsiz iş parçacıklı bir Sıralayıcı nesnesini temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 class FtmBase : public Microsoft::WRL::Implements<  
    Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,   
    Microsoft::WRL::CloakedIid<IMarshal> >;  

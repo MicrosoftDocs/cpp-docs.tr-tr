@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 399b9fbbcf4b449f5f91beaea89c403d120d0a21
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3e5d7144f7e2a6fa3bf6937a377ccad0a711f746
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890281"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647066"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
-Bu işlev çağrılırken bir hata varsa sonra çağıran sonra arayabileceğiniz çağıran söyler `GetLastError` hata kodu alınamadı.  
+Bu işlev çağrılırken bir hata ise sonra çağıran ardından çağırabileceğiniz çağıran söyler `GetLastError` hata kodu alınamıyor.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [usesgetlasterror]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Usesgetlasterror** C++ özniteliğine sahip ile aynı işlevselliği [usesgetlasterror](http://msdn.microsoft.com/library/windows/desktop/aa367297) MIDL özniteliği.  
+ **Usesgetlasterror** C++ özniteliği ile aynı işlevlere sahip [usesgetlasterror](http://msdn.microsoft.com/library/windows/desktop/aa367297) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [idl_module](../windows/idl-module.md) nasıl kullanılacağını gösteren örnek bir örnek için **usesgetlasterror**.  
+ Bkz: [idl_module](../windows/idl-module.md) nasıl kullanılacağına ilişkin bir örnek için örnek **usesgetlasterror**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,9 +45,9 @@ Bu işlev çağrılırken bir hata varsa sonra çağıran sonra arayabileceğini
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**Modül** özniteliği|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**Modül** özniteliği|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5af4bfd22302b7694b9bafbc1452d636b19cb3c7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fe1342c3927183ae5eec30c8dd0a40ee95f37277
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889429"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646568"
 ---
 # <a name="simpleactivationfactoryactivateinstance-method"></a>SimpleActivationFactory::ActivateInstance Yöntemi
 
-Belirtilen arabiriminin bir örneğini oluşturur.
+Belirtilen arabirim bir örneğini oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,15 +39,15 @@ STDMETHOD( ActivateInstance )(
 ### <a name="parameters"></a>Parametreler
 
 *ppvObject*  
-Bu işlem tamamlandığında, işaretçi tarafından belirtilen nesne örneği `Base` sınıfı şablon parametresi.
+Bu işlem tamamlandığında, işaretçi tarafından belirtilen nesnede örneğine `Base` sınıfı şablon parametresi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa S_OK; Aksi takdirde, HRESULT hata gösterir.
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa &#95; &#95;WRL_STRICT&#95; &#95; olduğu sınıfı şablonu parametresinde belirtilen taban sınıfı türetilmiş değil, tanımlanmış bir assert hata yayılan [RuntimeClass](../windows/runtimeclass-class.md), ya da WinRt ile yapılandırılmamış veya WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
+Varsa &#95; &#95;WRL_STRICT&#95; &#95; olan tanımlanan, türetilen sınıf şablonu parametresinde belirtilen temel sınıf değil, bir onay hata yayıldığını [RuntimeClass](../windows/runtimeclass-class.md), ya da WinRt ile yapılandırılmamış veya WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -56,5 +56,4 @@ Varsa &#95; &#95;WRL_STRICT&#95; &#95; olduğu sınıfı şablonu parametresinde
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-
-[SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)
+ [SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)

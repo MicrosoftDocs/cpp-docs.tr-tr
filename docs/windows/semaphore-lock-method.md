@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 80b4db212236da6c9fb320ff5a5e04f4e9f4a4c6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 39f2fe48b1e7a1a7c6b875b988d861d5fb48698a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892481"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642152"
 ---
 # <a name="semaphorelock-method"></a>Semaphore::Lock Yöntemi
-Geçerli nesne ya da belirtilen tanıtıcı ile ilişkili semafor nesne kadar bekler ve iş durumundaki ya da belirtilen zaman aşımı aralığı geçti.  
+Geçerli nesne kadar bekler veya **semafor** nesne ile ilişkili belirtilen işleyici içinde sinyal verilmiş duruma dönmesine ya da belirtilen zaman aşımı aralığı geçti.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,15 +40,15 @@ static SyncLock Lock(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `milliseconds`  
- Milisaniye cinsinden zaman aşımı aralığı. Sonsuza kadar bekler SONSUZ varsayılan değerdir.  
+### <a name="parameters"></a>Parametreler  
+ *Milisaniye*  
+ Milisaniye cinsinden zaman aşımı aralığı. Varsayılan değer süresiz olarak bekler sonsuzdur.  
   
- `h`  
- Semafor nesnesi için bir tanıtıcı.  
+ *h*  
+ İçin bir tanıtıcı bir **semafor** nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bir Details::SyncLockWithStatusT\<HandleTraits::SemaphoreTraits >  
+ A `Details::SyncLockWithStatusT<HandleTraits::SemaphoreTraits>`  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  
@@ -56,5 +56,4 @@ static SyncLock Lock(
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Semafor Sınıfı](../windows/semaphore-class.md)
- 
+ [Semafor Sınıfı](../windows/semaphore-class.md)

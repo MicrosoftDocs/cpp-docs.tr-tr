@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f03dfeb75d11ffabe7ab9e29c29474b392dc8bda
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 472cdaeec78c30d49f3160ac4d632eb95ef8e71a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466806"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641879"
 ---
 # <a name="comptrrefoperator-t-operator"></a>ComPtrRef::operator T* İşleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 operator T*();  
 ```  
   

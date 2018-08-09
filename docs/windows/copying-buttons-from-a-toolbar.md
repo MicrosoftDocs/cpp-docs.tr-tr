@@ -17,27 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5c006d243af78ea7f642ec36f49ce46fcfc732c9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bc7ea145b76f17ccd8b29b287faa3ef921e7dc73
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880237"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646286"
 ---
 # <a name="copying-buttons-from-a-toolbar"></a>Araç Çubuğundan Düğme Kopyalama
-### <a name="to-copy-buttons-from-a-toolbar"></a>Araç çubuğundaki düğmeler kopyalamak için  
+### <a name="to-copy-buttons-from-a-toolbar"></a>Araç çubuğundan düğme kopyalama  
   
-1.  Basılı **CTRL** anahtarı.  
+1.  Basılı **Ctrl** anahtarı.  
   
-2.  İçinde **araç çubuğu görünümü** bölmesinde düğmeyi ya da yeni konumunda araç çubuğunda veya bir konuma başka bir araç çubuğunda sürükleyin.  
+2.  İçinde **araç çubuğu görünümü** bölmesi, düğmeyi ya da yeni konumuna araç çubuğunda veya bir konuma başka bir araç sürükleyin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
- MFC ya da ATL  
+## <a name="requirements"></a>Gereksinimler  
+ MFC veya ATL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Oluşturma, taşıma ve düzenleme araç çubuğu düğmeleri](../windows/creating-moving-and-editing-toolbar-buttons.md)   
  [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
-

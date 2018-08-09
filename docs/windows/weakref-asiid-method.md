@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 69108681b181d0b2fce20f9e30a009b6b93c2180
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9e5ff6510463a6fed06534236612feb460919e37
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891304"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643491"
 ---
 # <a name="weakrefasiid-method"></a>WeakRef::AsIID Yöntemi
-Belirtilen ComPtr işaretçi parametresi belirtilen arabirimi kimliğini temsil etmek için ayarlar  
+Belirtilen ayarlar `ComPtr` belirtilen arabirim kimliği. temsil etmek için işaretçi parametresi  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,27 +36,27 @@ HRESULT AsIID(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `riid`  
- Bir arabirim kimliği  
+### <a name="parameters"></a>Parametreler  
+ *riid*  
+ Bir arabirim kimliği.  
   
- `ptr`  
- Bu işlem tamamlandığında, parametre temsil eden bir nesne `riid`.  
+ *ptr*  
+ Bu işlem tamamlandığında, parametre temsil eden bir nesne *riid*.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
--   Bu işlem başarılı olursa S_OK; Aksi takdirde, nedenini belirten bir HRESULT işlemi başarısız oldu, ve `ptr` ayarlanır `nullptr`.  
+-   Bu işlem başarılı olursa S_OK; Aksi takdirde, nedenini belirten bir HRESULT, işlem başarısız oldu, ve *ptr* ayarlanır **nullptr**.  
   
--   Bu işlem başarılı olur, ancak geçerli WeakRef nesne zaten yayımlandı S_OK. Parametre `ptr` ayarlanır `nullptr`.  
+-   Geçerli bu işlem başarılı olursa S_OK **WeakRef** nesne zaten yayımlandı. Parametre *ptr* ayarlanır **nullptr**.  
   
--   Bu işlem başarılı olur, ancak geçerli WeakRef nesne parametresinden türetilmemiş S_OK `riid`. Parametre `ptr` ayarlanır `nullptr`. (Açıklamalar daha fazla bilgi için bkz.)  
+-   Geçerli bu işlem başarılı olursa S_OK **WeakRef** nesne parametresinden türetilmemiş *riid*. Parametre *ptr* ayarlanır **nullptr**. (Daha fazla bilgi için açıklamalara bakın.)  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir hata durumunda yayılan parametresi `riid` Iınspectable türetilmemiş. Bu hata, dönüş değeri yerini alır.  
+ Bir hata varsa yayıldığını parametresi *riid* türünden türetilmediğinden `IInspectable`. Bu hata, dönüş değeri yerine geçer.  
   
- İlk şablon kodunuzda kullanması gereken biçimidir. (Değil burada gösterilen, ancak üstbilgi dosyasında bildirilen) ikinci C++ dil özellikleri gibi destekleyen bir iç, yardımcı uzmanlık şablonudur [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü yazın.  
+ İlk şablon kodunuzda kullanması gereken biçimidir. (Burada gösterilen olmasa üst bilgi dosyasında bildirilen) ikinci gibi C++ dil özellikleri destekleyen bir iç, Yardımcısı özelleştirmesi şablonudur [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü yazın.  
   
- Windows 10 SDK'sı başlayarak, bu yöntem WeakRef örneği ayarlanmamışsa `nullptr` zayıf başvuru edinilemedi, bu nedenle, kaçının için WeakRef denetler ve hata denetimi kodu `nullptr`. Bunun yerine, denetleme `ptr` için `nullptr`.  
+ Windows 10 SDK'SINDAN başlayarak, bu yöntem ayarlı değil **WeakRef** için örnek **nullptr** zayıf başvuru elde edilemedi, bu nedenle, kaçının denetlervehatadenetimikod**WeakRef** için **nullptr**. Bunun yerine, kontrol *ptr* için **nullptr**.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

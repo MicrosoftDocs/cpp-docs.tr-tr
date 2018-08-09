@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0342500fc41c650967e17919ebdc9605d4261cb5
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 18f7f08362c14ab0d09019a5b9348750c96ddbd7
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464249"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643416"
 ---
 # <a name="comptrrefbase-class"></a>ComPtrRefBase Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template <  
    typename T  
 >  
 class ComPtrRefBase;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *T*  
  A [ComPtr\<T >](../windows/comptr-class.md) türü veya tür, kesmenin tarafından temsil edilen arabirim sınıfından türetilen **ComPtr**.  
   
@@ -55,8 +55,8 @@ class ComPtrRefBase;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ComPtrRefBase::operator IInspectable** İşleci](../windows/comptrrefbase-operator-iinspectable-star-star-operator.md)|Geçerli bıraktığı [ptr_](../windows/comptrrefbase-ptr-data-member.md) veri üyesi için bir işaretçi-için-a-işaretçi-Iınspectable arabirimi.|  
-|[ComPtrRefBase::operator IUnknown** İşleci](../windows/comptrrefbase-operator-iunknown-star-star-operator.md)|Geçerli bıraktığı [ptr_](../windows/comptrrefbase-ptr-data-member.md) veri üyesi için bir işaretçi-için-a-işaretçi-IUnknown arabirimi.|  
+|[ComPtrRefBase::operator IInspectable** İşleci](../windows/comptrrefbase-operator-iinspectable-star-star-operator.md)|Geçerli bıraktığı [ptr_](../windows/comptrrefbase-ptr-data-member.md) veri üyesi için bir işaretçi-için-a-işaretçi- `IInspectable` arabirimi.|  
+|[ComPtrRefBase::operator IUnknown** İşleci](../windows/comptrrefbase-operator-iunknown-star-star-operator.md)|Geçerli bıraktığı [ptr_](../windows/comptrrefbase-ptr-data-member.md) veri üyesi için bir işaretçi-için-a-işaretçi- `IUnknown` arabirimi.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   

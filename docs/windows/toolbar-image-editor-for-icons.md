@@ -22,33 +22,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3dd53a92168724748940ca2def17a359f1f23e80
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bac4c71ee2efe1b52ba1d88ead784dd57f678f83
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890560"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644209"
 ---
 # <a name="toolbar-image-editor-for-icons"></a>Araç Çubuğu (Simgeler İçin Görüntü Düzenleyicisi)
-**Görüntü Düzenleyicisi** araç çubuğu çizim, boyama, metin girerek, silme ve görünümler düzenleme araçları içerir. Ayrıca, her aracı kullanma seçeneklerini seçim yapabileceğiniz bir seçenek belirleyici içerir. Örneğin, çeşitli fırça genişlikleri, büyütme Etkenler ve çizgi stillerini seçebilirsiniz.  
+**Resim Düzenleyicisi** araç çubuğu çizim, boyama, metin girme, silme ve görünüm işlemek için araçları içerir. Ayrıca, her aracını kullanma seçenekleri seçebilirsiniz bir seçenek belirleyici içerir. Örneğin, çeşitli fırça genişlikleri, büyütme faktörleri ve satır stilleri seçebilirsiniz.  
   
 > [!NOTE]
->  Kullanılabilir tüm Araçlar **görüntü Düzenleyicisi** araç web'da de **görüntü** menü (altında **Araçları** komutu).  
+>  Kullanılabilir olan tüm araçları **Resim Düzenleyicisi** araç web'da ayrıca **görüntü** menü (altında **Araçları** komutu).  
   
- ![Görüntü Düzenleyicisi araç](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")  
-Görüntü Düzenleyicisi araç çubuğu  
+ ![Resim Düzenleyicisi araç çubuğu](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")  
+Resim Düzenleyicisi araç çubuğu  
   
- Kullanılacak **görüntü Düzenleyicisi** araç ve **seçeneği** Seçici, aracı tıklatın veya istediğiniz seçeneği.  
+ Kullanılacak **Resim Düzenleyicisi** araç ve **seçeneği** Seçici, Aracı'nı tıklatın veya istediğiniz seçeneği.  
   
 > [!TIP]
->  İmlecinizi bir araç çubuğu düğmesi geldiğinizde araç ipuçları görüntülenir. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
+>  İmlecinizi bir araç çubuğu düğmenin üzerine geldiğinizde araç ipuçlarında görünür. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
   
- İle **seçeneği** seçici bir satır, fırça vb. genişliğini belirtebilirsiniz. Simgesine **seçeneği** Seçici düğmesini değişiklikleri seçtiğiniz bağlı olarak hangi aracı.  
+ İle **seçeneği** seçici bir satır, bir fırça vuruşu vb. genişliği belirtebilirsiniz. Simgeye **seçeneği** seçtiğiniz bağlı olarak hangi aracın Seçici düğmesi değişiklikler.  
   
- ![Çizim&#45;görüntü Düzenleyicisi araç çubuğunda şekli Seçici](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")  
-Görüntü Düzenleyicisi araç çubuğunda seçenek belirleyici  
+ ![Çizim&#45;şekli Seçici görüntü düzenleyici araç çubuğunda](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")  
+Görüntü düzenleyici araç çubuğunda seçenek belirleyici  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  
@@ -57,4 +57,3 @@ Görüntü Düzenleyicisi araç çubuğunda seçenek belirleyici
  [Görüntüleme veya gizleme araç çubuğu](displaying-or-hiding-the-toolbar-image-editor-for-icons.md)   
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
-

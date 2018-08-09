@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5cdc7bb8a97be6fbc8c77c06caaddf95a3095323
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: cd89a2a46535c145e4ef6f84cee0b5604346f4b2
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463749"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645207"
 ---
 # <a name="attribute-programming-faq"></a>Öznitelik Programlama SSS
 Bu konuda aşağıdaki sık sorulan sorular yanıtlanmaktadır:  
@@ -46,7 +46,7 @@ Bu konuda aşağıdaki sık sorulan sorular yanıtlanmaktadır:
 -   [Öznitelikleri kullanan bir sınıftan türetilen bir sınıfta öznitelikleri kullanabilir miyim?](#vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor)  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor1"></a> HRESULT nedir?  
- Bir `HRESULT` çoğunlukla bir dönüş değeri olarak öznitelikleri ve ATL tarafından genel olarak kullanılan bir basit veri türü. Aşağıdaki tabloda, çeşitli değerleri açıklanmaktadır. Daha fazla değer üst bilgi dosyası wınerror içinde yer alır.  
+ HRESULT dönüş değeri olarak öznitelikleri ve ATL tarafından genel olarak kullanılan bir basit veri türüdür. Aşağıdaki tabloda, çeşitli değerleri açıklanmaktadır. Daha fazla değer üst bilgi dosyası wınerror içinde yer alır.  
   
 |Ad|Açıklama|Değer|  
 |----------|-----------------|-----------|  
@@ -65,7 +65,7 @@ Bu konuda aşağıdaki sık sorulan sorular yanıtlanmaktadır:
 ##  <a name="vcconattributeprogrammmingfaqanchor2"></a> Bir öznitelik parametresi adını belirtmek ne zaman sahip?  
  Tek bir parametre özniteliğine sahipse, çoğu durumda, bu parametre olarak adlandırılır. Bu ad, öznitelik kodunuzda eklerken gerekli değildir. Örneğin, aşağıdaki kullanımı [toplanabilir](../windows/aggregatable.md) özniteliği:  
   
-```  
+```cpp  
 [coclass, aggregatable(value=allowed)]  
 class CMyClass  
 {  
@@ -75,7 +75,7 @@ class CMyClass
   
  tam olarak aynı sonucu verir:  
   
-```  
+```cpp  
 [coclass, aggregatable(allowed)]  
 class CMyClass  
 {  
@@ -104,7 +104,7 @@ class CMyClass
   
  Aşağıdaki izin verilir:  
   
-```  
+```cpp  
 [ coclass,  
    progid("MyClass.CMyClass.1"), /* Multiple-line  
                                        comment */  
@@ -114,7 +114,7 @@ class CMyClass
   
  Aşağıdaki izin verilmez:  
   
-```  
+```cpp  
 [ coclass,  
    progid("MyClass.CMyClass.1" /* Multiple-line comment */ ),  
    threading("both" // Single-line comment)  
@@ -125,10 +125,10 @@ class CMyClass
  Öznitelikli ve unattributed sınıfları kendileri veya kaynağı diğer sınıflardan devralabilir. Öznitelikli bir sınıftan türetme sonucu özniteliği sağlayıcısı kodunu dönüştürdü sonra bu sınıftan türetme aynıdır. Öznitelikler için türetilmiş sınıfları C++ devralma yoluyla iletilmez. Bir öznitelik sağlayıcısı, yalnızca kod kapsamına özniteliklerini dönüştürür.  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor5"></a> Öznitelikleri nonattributed bir ATL projesinde nasıl kullanabilirim?  
- Bir .idl dosyası olan nonattributed bir ATL projesine sahip olabilir ve öznitelikli nesne eklemeye başlamak isteyebilirsiniz. Bu durumda, kod sağlamak için sınıf Ekleme Sihirbazı'nı kullanın.  
+ Bir .idl dosyası olan nonattributed bir ATL projesine sahip olabilir ve öznitelikli nesne eklemeye başlamak isteyebilirsiniz. Bu durumda **sınıf Ekleme Sihirbazı'nı** kodu sağlayabilir.  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor6"></a> Öznitelik atanmış projede bir .idl dosyası nasıl kullanabilirim?  
- Öznitelikli ATL projenizde kullanmak istediğiniz bir .idl dosyası olabilir. Bu durumda, kullanacağınız [importidl](../windows/importidl.md) öznitelik, bir .h dosyası .idl dosyasına derlemek (bkz [MIDL özellik sayfaları](../ide/midl-property-pages.md) proje özellik sayfaları iletişim kutusunda) ve ardından .h dosyası projenize ekleyin .  
+ Öznitelikli ATL projenizde kullanmak istediğiniz bir .idl dosyası olabilir. Bu durumda, kullanacağınız [importidl](../windows/importidl.md) öznitelik, bir .h dosyası .idl dosyasına derlemek (bkz [MIDL özellik sayfaları](../ide/midl-property-pages.md) projenin **özellik sayfaları** iletişim kutusu), ve ardından .h dosyasını projenize ekleyin.  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Bir öznitelik tarafından eklenen kod değiştirebiliyorum?  
  Bazı öznitelikler kod projenize ekleyin. Eklenen kodu kullanarak gördüğünüz [/Fx](../build/reference/fx-merge-injected-code.md) derleyici seçeneği. Eklenen dosyanın kodu kopyalayın ve kaynak kodunuza yapıştırmak mümkündür. Bu öznitelik davranışını değiştirmenizi sağlar. Ancak, diğer bölümlerinde de kodunuzu değiştirmeniz gerekebilir.  

@@ -1,5 +1,5 @@
 ---
-title: Uygulamanıza açılır menü bağlanma | Microsoft Docs
+title: Uygulamanıza açılır menü bağlantısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,21 +18,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 533fc4eea9299d51183a91febb371ff8142e0a7b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5bfe5c4dba3dc8e86eb9a47a6e163af94872b933
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879535"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641268"
 ---
 # <a name="connecting-a-pop-up-menu-to-your-application"></a>Uygulamanıza Açılır Menü Bağlantısı Yapma
-### <a name="to-connect-a-pop-up-menu-to-your-application"></a>Uygulamanıza açılır menü bağlanmak için  
+### <a name="to-connect-a-pop-up-menu-to-your-application"></a>Açılır menü, uygulamanızı bağlamak için  
   
-1.  Bir ileti işleyicisini WM_CONTEXTMENU için (örneğin) ekleyin. Daha fazla bilgi için bkz: [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).  
+1.  Bir ileti işleyicisi WM_CONTEXTMENU için (örneğin) ekleyin. Daha fazla bilgi için [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).  
   
-2.  İleti işleyicisi için aşağıdaki kodu ekleyin:  
+2.  Aşağıdaki kodu için ileti işleyicisi ekleyin:  
   
-    ```  
+    ```cpp  
     CMenu menu;  
     VERIFY(menu.LoadMenu(IDR_MENU1));  
     CMenu* pPopup = menu.GetSubMenu(0);  
@@ -41,12 +41,9 @@ ms.locfileid: "33879535"
     ```  
   
     > [!NOTE]
-    >  [CPoint](../atl-mfc-shared/reference/cpoint-class.md) **geçirilen ekran koordinatları olarak ileti işleyicisidir.**  
+    >  [CPoint](../atl-mfc-shared/reference/cpoint-class.md) geçirilen ekran koordinatlarında ileti işleyicisidir.  
   
-
-  
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  MFC  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

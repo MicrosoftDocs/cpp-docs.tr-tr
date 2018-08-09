@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 19ff9324f946f48f201678f9c9e7403ba774b2c0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 289fa1fbec61140e213bef7219e440c8177e19e5
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892289"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645818"
 ---
 # <a name="srwlocktrylockshared-method"></a>SRWLock::TryLockShared Yöntemi
-SRWLock nesne geçerli veya belirtilen SRWLock nesnesi paylaşılan modda almaya çalışır.  
+Almaya çalışır bir **SRWLock** nesne için geçerli veya belirtilen paylaşılan modda **SRWLock** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,12 +36,12 @@ WRL_NOTHROW static SyncLockShared TryLockShared(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `lock`  
- SRWLock nesnesine işaretçi.  
+### <a name="parameters"></a>Parametreler  
+ *lock*  
+ İşaretçi bir **SRWLock** nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, paylaşılan modda ve çağıran iş parçacığı SRWLock nesnesinde kilit aittir. Aksi halde, bir SRWLock nesne durumu geçersiz.  
+ Başarılı olursa, bir **SRWLock** paylaşılan modda ve çağıran iş parçacığını nesne kilidi sahipliğini alır. Aksi takdirde, bir **SRWLock** nesne durumu geçersiz.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

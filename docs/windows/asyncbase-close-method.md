@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d0798a6ef593e388ce7867ee9a55763be9ae890
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 3ce391e95aa9e08ae7d99e3cbdf064721ce21dbe
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463365"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643543"
 ---
 # <a name="asyncbaseclose-method"></a>AsyncBase::Close Yöntemi
 Zaman uyumsuz işlemi kapatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 STDMETHOD(  
    Close  
 )(void) override;  

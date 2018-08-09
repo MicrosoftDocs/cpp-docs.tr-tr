@@ -17,38 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e80bee7ef9bfe52abf63ac959475c5d8dbcf0ece
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 74829769644c28cf13a6a6a2631f9bbef1e602a9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872633"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645525"
 ---
 # <a name="converting-bitmaps-to-toolbars"></a>Bit Eşlemleri Araç Çubuklarına Dönüştürme
-Bir bit eşlem dönüştürerek yeni bir araç çubuğu oluşturabilirsiniz. Bit eşlem grafikten bir araç çubuğu düğmesi görüntülerde dönüştürür. Genellikle bit eşlem her düğme için bir görüntü ile tek bir bit eşlem üzerindeki birkaç düğmesi görüntülerini içerir. Görüntüleri herhangi bir boyutta olabilir; 16 piksel genişliğinde ve resmin yüksekliğini varsayılandır. Düğme resimlerini boyutunu belirtebilirsiniz [yeni araç çubuğu kaynağı iletişim kutusu](../windows/new-toolbar-resource-dialog-box.md) araç çubuğu Düzenleyicisi'nden seçtiğinizde **görüntü** sırada görüntü düzenleyicisinde menüsü.  
+Yeni bir araç çubuğu bit eşlem dönüştürerek oluşturabilirsiniz. Bit eşlem Grafik araç çubuğu düğmesi görüntülerde dönüştürür. Genellikle her düğme için bir görüntü ile birkaç düğme resimlerini üzerinde tek bir bit eşlem bit eşlem içerir. Görüntüleri, herhangi bir boyutta olabilir; 16 piksel genişliğinde ve resmin yüksekliğini varsayılan değerdir. Düğme görüntüleri boyutunu belirtebilirsiniz [yeni araç çubuğu kaynağı iletişim kutusu](../windows/new-toolbar-resource-dialog-box.md) seçtiğinizde **araç çubuğu Düzenleyicisi** gelen **görüntü** Resim Düzenleyicisi sırada menüsünde.  
   
 ### <a name="to-convert-bitmaps-to-a-toolbar"></a>Bit eşlemleri araç çubuğuna dönüştürmek için  
   
-1.  Varolan bir bit eşlem kaynağında açmak [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md). (Bit eşlem .rc dosyanızda değilse, .rc dosyaya sağ tıklayın, seçin **alma** kısayol menüsünden .rc dosyasına eklemek istediğiniz bit eşlem gidin ve ardından **açık**.)  
+1.  Mevcut bir bit eşlem kaynağındaki açın [Resim Düzenleyicisi](../windows/image-editor-for-icons.md). (Bit eşlem .rc dosyanız yoksa, .rc dosyasına sağ tıklayın, seçin **alma** kısayol menüsünden, .rc dosyasına eklemek istediğiniz bit eşlem gidin ve ardından **açık**.)  
   
 2.  Gelen **görüntü** menüsünde seçin **araç çubuğu Düzenleyicisi**.  
   
-     [Yeni araç çubuğu kaynağı iletişim kutusu](../windows/new-toolbar-resource-dialog-box.md) görüntülenir. Genişlik ve yükseklik bit eşlem eşleşecek şekilde simgesi görüntülerinin değiştirebilirsiniz. Araç çubuğu görüntüsünü sonra araç çubuğu Düzenleyicisi'nde görüntülenir.  
+     [Yeni araç çubuğu kaynağı iletişim kutusu](../windows/new-toolbar-resource-dialog-box.md) görünür. Genişlik ve yükseklik simgesi görüntülerin bit eşlem eşleşecek şekilde değiştirebilirsiniz. Araç çubuğu görüntüsü, ardından araç çubuğu Düzenleyicisi'nde görüntülenir.  
   
-3.  Dönüştürme işlemini tamamlamak için komut değiştirme **kimliği** düğmesini kullanarak, [Özellikler penceresini](/visualstudio/ide/reference/properties-window). Yeni yazın **kimliği** veya bir **kimliği** aşağı açılan listeden.  
+3.  Dönüştürme işlemini tamamlamak için komutu değiştirmek **kimliği** düğmesini kullanarak [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Yeni tür **kimliği** veya bir **kimliği** aşağı açılan listeden.  
   
     > [!TIP]
-    >  Özellikler penceresini başlık çubuğunda Raptiye düğmesi içerir. Bu düğmeye tıkladığınızda etkinleştirir veya penceresi otomatik gizle devre dışı bırakır. Özellikler penceresini sabit kalması hızla tüm araç çubuğu düğmesi özellikleri, tek tek özellik windows yeniden gerek kalmadan geçiş yapmak için Otomatik Gizle kapatın.  
+    >  **Özellikleri** pencere bir başlık çubuğundaki Raptiye düğme içerir. Bu düğmeye tıklandığında etkinleştirir veya devre dışı bırakır **Otomatik Gizle** penceresi. Tek tek özellik windows yeniden gerek kalmadan hızla tüm araç çubuğu düğmesi özellikleri geçiş yapmak için kapatma **Otomatik Gizle** kapalı böylece **özellikleri** penceresi sabit kalır.  
   
- Kullanarak yeni araç çubuğundaki düğmeler komut kimliklerini değiştirebilirsiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window). Yeni araç çubuğu düzenleme hakkında daha fazla bilgi için bkz: [oluşturma, taşıma ve düzenleme araç çubuğu düğmeleri](../windows/creating-moving-and-editing-toolbar-buttons.md).  
+ Yeni araç çubuğundaki düğmeler komut kimlikleri kullanarak da değiştirebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Yeni araç çubuğu düzenleme hakkında daha fazla bilgi için bkz. [oluşturma, taşıma ve düzenleme araç çubuğu düğmeleri](../windows/creating-moving-and-editing-toolbar-buttons.md).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
- MFC ya da ATL  
+## <a name="requirements"></a>Gereksinimler  
+ MFC veya ATL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yeni araç çubukları oluşturma](../windows/creating-new-toolbars.md)   
  [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
-

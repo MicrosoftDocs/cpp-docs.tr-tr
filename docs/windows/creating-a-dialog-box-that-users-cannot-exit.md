@@ -17,32 +17,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc04c9ccfb0fdc74e57142bf746681411bbba495
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b176fbc4e420c08a2262b532cf1310ada56c978a
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884469"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644186"
 ---
 # <a name="creating-a-dialog-box-that-users-cannot-exit"></a>Kullanıcıların Çıkamayacağı İletişim Kutusu Oluşturma
-Bir kullanıcı çıkamayacağı bir çalışma zamanı iletişim kutusu oluşturabilirsiniz. Bu tür bir iletişim kutusu için oturum ve uygulama veya belge kilitleri için yararlıdır.  
+Bir kullanıcı çıkamayacağı bir çalışma zamanı iletişim kutusu oluşturabilirsiniz. Bu tür bir iletişim kutusu, oturum açma ve uygulama veya belge kilit için kullanışlıdır.  
   
 ### <a name="to-create-a-dialog-box-that-a-user-cannot-exit"></a>Bir kullanıcı çıkamayacağı iletişim kutusu oluşturmak için  
   
-1.  İçinde **özellikleri** kümesi bölmesi iletişim kutusu için **sistem menüsü** özelliğine **false**.  
+1.  İçinde **özellikleri** iletişim kutusu için bölmesinde **sistem menüsü** özelliğini **false**.  
   
-     Bu iletişim kutusunu Sistem menüsünü devre dışı bırakır ve **Kapat** düğmesi.  
+     Bu iletişim kutusunu sistem menüsü devre dışı bırakır ve **Kapat** düğmesi.  
   
-2.  İletişim kutusu formu silme **iptal** ve **Tamam** düğmeler.  
+2.  İletişim kutusu formda Sil **iptal** ve **Tamam** düğmeleri.  
   
      Çalışma zamanında, bir kullanıcı bu özelliklere sahip bir modal iletişim kutusu çıkamayacağı.  
   
- Bu tür iletişim kutusunun testlerini etkinleştirmek için ESC tuşuna bastığınızda, test iletişim kutusu işlevi algılar. (ESC olarak da bilinen VK_ESCAPE sanal anahtardır.) Nasıl iletişim kutusu çalışma zamanında davranacak şekilde tasarlanmış olsun, bu sınama modunda ESC tuşuna basarak sonlandırabilir.  
+ İletişim kutusunun bu tür bir testi etkinleştirmek için test iletişim kutusu işlevi zaman algılar **Esc** basıldığında. (**Esc** de VK_ESCAPE sanal anahtar denir.) Nasıl iletişim kutusunda çalışma zamanında davranacak şekilde tasarlanmış ne olursa olsun, bu test modunda tuşlarına basarak sonlandırabilirsiniz **Esc**.  
   
 > [!NOTE]
->  MFC uygulamaları için kullanıcıların çıkamayacağı, bir iletişim kutusu oluşturmak için varsayılan davranışı geçersiz kılmanız gerekir `OnOK` ve `OnCancel` ilişkili düğmeleri silme olsa bile, iletişim kutusu hala ENTER veya ESC tuşuna basarak kapatılabilir olduğundan.  
+>  MFC uygulamaları için kullanıcıların çıkamayacağı, bir iletişim kutusu oluşturmak için varsayılan davranışı geçersiz kılmanız gerekir `OnOK` ve `OnCancel` ilişkili düğmeleri silseniz bile iletişim kutusunun hala tuşlarına basarak kapatılabilir çünkü  **Girin** veya **Esc**.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
@@ -51,4 +51,3 @@ Bir kullanıcı çıkamayacağı bir çalışma zamanı iletişim kutusu oluştu
  [Nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource.md)   
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   
  [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
-

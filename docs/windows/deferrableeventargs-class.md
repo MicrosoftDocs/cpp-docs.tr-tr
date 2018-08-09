@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 72f5ee2beca3a3985258b12cea9091665eb74cfa
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 8dd9452133267021effd307734b5c5cf55922720
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39571268"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642308"
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs Sınıfı
 Gönderilemeyenler için olay bağımsız değişken türleri için kullanılan bir şablon sınıfı.  
@@ -33,7 +33,7 @@ typename TEventArgsClass
 class DeferrableEventArgs : public TEventArgsInterface  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *TEventArgsInterface*  
  Ertelenmiş olay bağımsız değişkenleri bildirir arabirim türü.  
   

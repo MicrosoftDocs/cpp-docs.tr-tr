@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ebb492d576e82c276aeb1cb464a39b558040fdc5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 826d296e4c11571151ff0cd3265465b4307d2d92
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890142"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643971"
 ---
 # <a name="unique-c"></a>benzersiz (C++)
-Benzersiz bir işaretçi belirtir.  
+Bir benzersiz işaretçi belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 [unique]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Benzersiz** C++ özniteliğine sahip ile aynı işlevselliği [benzersiz](http://msdn.microsoft.com/library/windows/desktop/aa367294) MIDL özniteliği.  
+ **Benzersiz** C++ özniteliği ile aynı işlevlere sahip [benzersiz](http://msdn.microsoft.com/library/windows/desktop/aa367294) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [ref](../windows/ref-cpp.md) bir örnek kullanımı, örneğin **benzersiz**.  
+ Bkz: [ref](../windows/ref-cpp.md) örnek kullanımını örneğin **benzersiz**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,9 +45,9 @@ Benzersiz bir işaretçi belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|`typedef`, `struct`, **UNION**, parametre arabirim, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**TypeDef**, **yapı**, **birleşim**, parametre arabirim, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

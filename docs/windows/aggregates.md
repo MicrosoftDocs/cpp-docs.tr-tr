@@ -20,26 +20,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6f931c6930a2c7e4a71e73b7998564432bcbd967
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: eb77d43dabe223308ae3eb0c34ec22d0c1624e2e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466936"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646674"
 ---
 # <a name="aggregates"></a>toplamlar
 Nesne CLSID değeri tarafından belirtilen nesnede toplayan gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ aggregates(  
    clsid,  
    variable_name  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *CLSID*  
  Toplanabilir nesne CLSID değeri belirtir.  
   
@@ -51,7 +51,7 @@ Nesne CLSID değeri tarafından belirtilen nesnede toplayan gösterir.
   
  Bu öznitelik gerektiren [coclass'ı](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.  
   
- **ATL projeleri**  
+### <a name="atl-projects"></a>ATL projeleri  
   
  Bu öznitelik ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davranışını değiştirir. İlk olarak, şu girişi hedef nesnenin COM eşlemesine eklenir:  
   

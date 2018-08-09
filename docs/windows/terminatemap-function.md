@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b4787fec0a6b4b9f55c500b66786372945d9a523
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d33cbd46903a37bf42e417a100d26c9b706058c0
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890355"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645944"
 ---
 # <a name="terminatemap-function"></a>TerminateMap İşlevi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,21 +36,21 @@ inline bool TerminateMap(
     bool forceTerminate) throw()  
 ```  
   
-## <a name="parameters"></a>Parametreler  
- `module`  
+### <a name="parameters"></a>Parametreler  
+ *Modülü*  
  A [Modülü](../windows/module-class.md).  
   
- `serverName`  
- Sınıf oluşturucuları parametresi tarafından belirtilen modüldeki bir kısmı adını `module`.  
+ *SunucuAdı*  
+ Sınıf üreteçlerini parametresi tarafından belirtilen modüldeki bir alt kümesi adını *Modülü*.  
   
- `forceTerminate`  
- `true` sınıf sonlandırmak için oluşturucuları bunlar bağımsız olarak etkindir; `false` herhangi Fabrika etkinse sınıfı Fabrikalar sona erdirmek.  
+ *forceTerminate*  
+ **doğru** sınıfı sonlandırmak için bunlar bağımsız olarak fabrikaları; etkindir **false** herhangi bir Fabrika etkinse sınıf üreteçlerini sona erdirmek.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` tüm sınıf oluşturucuları sonlandırılmış Aksi takdirde `false`.  
+ **doğru** tüm sınıf üreteçlerini, sonlandırılmış; Aksi takdirde **false**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıf oluşturucuları belirtilen modülde kapatır.  
+ Belirtilen modül sınıfı Fabrikalar kapatır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** module.h  

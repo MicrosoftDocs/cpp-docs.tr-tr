@@ -18,32 +18,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0aed218fb12a1d115bbcd92f058ec72182864677
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a6300b02fccad672eef19b387d595a42e4b94ef2
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872048"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645116"
 ---
 # <a name="displaying-or-hiding-the-colors-window-image-editor-for-icons"></a>Renkler Penceresini Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 ### <a name="to-display-colors-window"></a>Renkler penceresini görüntülemek için  
   
-1.  Sağ tıklatın, bir **görüntü Düzenleyicisi** bölmesinde ve **renkler penceresini göster** kısayol menüsünden.  
+1.  Sağ tıklatın, bir **Resim Düzenleyicisi** bölmesi ve **renkler penceresini göster** kısayol menüsünden.  
   
      \- veya -  
   
-2.  Tıklatın **renkler penceresini göster** üzerinde [Görüntü menüsü](../windows/image-menu-image-editor-for-icons.md).  
+2.  Tıklayın **renkler penceresini göster** üzerinde [Görüntü menüsü](../windows/image-menu-image-editor-for-icons.md).  
   
 ### <a name="to-hide-the-colors-window"></a>Renkler penceresini gizlemek için  
   
-1.  Pencerenin kaldırın. Kullanımda olmadığında bu otomatik gizle penceresine olanak tanır.  
+1.  Pencerenin kaldırın. Kullanımda olmadığında bu pencereyi otomatik gizle olanak tanır.  
   
  \- veya -  
   
--   Tıklatın **Kapat** düğmesi.  
+-   Tıklayın **Kapat** düğmesi.  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

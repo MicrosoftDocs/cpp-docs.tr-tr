@@ -18,42 +18,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 76a278ad0a1ba67c7c8f9fb86d20ca842b92b1e2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e2d32083194efc81fdfe2be1c38eec4ce9ce175d
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880263"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642818"
 ---
 # <a name="custom-color-selector-dialog-box-image-editor-for-icons"></a>Özel Renk Seçici İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
-Bu iletişim kutusu görüntünüzü için kullandığınız renkleri özelleştirmenize olanak sağlar. Daha fazla bilgi için bkz: [özelleştirme veya değiştirme renkleri](../windows/customizing-or-changing-colors-image-editor-for-icons.md).  
+Bu iletişim kutusu, görüntünüzü kullanmak renkleri özelleştirmek sağlar. Daha fazla bilgi için [özelleştirme veya değiştirme renklerini](../windows/customizing-or-changing-colors-image-editor-for-icons.md).  
   
- **Gradyan Rengi görüntüleme**  
- Seçili renk değerleri değiştirir. Renk üzerindeki artı işaretine değişiklik yapmak istediğiniz konum. Sonra kaydırıcıyı parlaklığını veya RGB renk değerleri yukarı veya aşağı değişiklik taşıyın.  
+ **Gradyan renk görüntüleme**  
+ Seçili renk değerlerini değiştirir. Değiştirmek istediğiniz konumu artı işaretinin rengi. Ardından kaydırıcıyı parlaklık veya rengin RGB değerleri yukarı veya aşağı değişiklik taşıyın.  
   
- **Parlaklığını çubuğu**  
- Gradyan Rengi görüntü kutusunda seçtiğiniz renk parlaklığını ayarlar. Sürükleyip bırakın beyaz ok büyük parlaklığını çubuğu yukarı veya aşağı daha az. Renk kutusunu seçtiğiniz renk ve ayarladığınız parlaklığını etkilerini görüntüleyeceğini unutmayın.  
+ **Parlaklık Çubuğu**  
+ Seçtiğiniz renk parlaklığını ayarlar **gradyan renkli görüntüyü** kutusu. Büyük parlaklık için çıtayı yukarı beyaz oku sürükleyin ya da daha az aşağı. Unutmayın **renk** kutusu seçtiğiniz rengi ve ayarladığınız parlaklık etkisini gösterir.  
   
  **Renk**  
- Tanımladığınız renk ton (renk tekerleği değer) listeler. 0 değeri burada 0 kırmızıdır, 60 sarı, 120 yeşil, mavi 180 olduğundan, 200 macenta ve 240 mavi 240 aralığındadır.  
+ Tanımladığınız renk tonunu (renk tekerleği değer) listeler. Burada 0 kırmızı, 60 sarı, 120 yeşil, mavi 180 olduğundan, 200 Eflatun ve 240 mavi 240 değerler aralığı 0.  
   
  **Hue**  
- Tanımladığınız renk ton (renk tekerleği değer) listeler. 0 değeri burada 0 kırmızıdır, 60 sarı, 120 yeşil, mavi 180 olduğundan, 200 macenta ve 240 mavi 240 aralığındadır.  
+ Tanımladığınız renk tonunu (renk tekerleği değer) listeler. Burada 0 kırmızı, 60 sarı, 120 yeşil, mavi 180 olduğundan, 200 Eflatun ve 240 mavi 240 değerler aralığı 0.  
   
- **Sat**  
- Tanımladığınız renk doygunluk değerini belirtir. Doygunluk belirtilen ton rengi miktarıdır. 0 değeri 240 aralığındadır.  
+ **CTS**  
+ Tanımladığınız renk doygunluğu değerini belirtir. Doygunluk belirtilen bir renk tonu rengi miktarıdır. Değerler aralığı 0-240.  
   
  **Par**  
- Tanımladığınız renk parlaklığını (parlaklığını) listeler. 0 değeri 240 aralığındadır.  
+ Tanımladığınız renk parlaklığını (Parlaklık) listeler. Değerler aralığı 0-240.  
   
- **kırmızı**  
- Tanımladığınız rengi kırmızı değerini belirtir. 0 ile 255 arasında değerleri.  
+ **Kırmızı**  
+ Tanımladığınız rengin kırmızı değerini belirtir. Değerler aralığı 0-255.  
   
  **Yeşil**  
- Tanımladığınız renk yeşil değerini belirtir. 0 ile 255 arasında değerleri.  
+ Tanımladığınız rengini yeşil değerini belirtir. Değerler aralığı 0-255.  
   
  **Mavi**  
- Tanımladığınız renk mavi değerini belirtir. 0 ile 255 arasında değerleri.  
+ Tanımladığınız rengini Mavi değerini belirtir. Değerler aralığı 0-255.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  

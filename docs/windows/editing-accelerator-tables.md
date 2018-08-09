@@ -18,17 +18,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7e1f20e6e50fad1f77e495fb47c62b162524cc72
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 761a5eefb80d47da0194e9c718f67bfe2d7b69de
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872945"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641540"
 ---
 # <a name="editing-accelerator-tables"></a>Hızlandırıcı Tablolarını Düzenleme
-Visual C++'da, yerinde'nın Hızlandırıcı Düzenleyicisi'nde doğrudan düzenleyerek Hızlandırıcı tablosunu düzenleyebilirsiniz.  
+Visual C++'da, doğrudan yerinde düzenlemedeki ile Hızlandırıcı tablosunu düzenleyebilirsiniz **hızlandırıcı** Düzenleyici.  
   
- Aşağıdaki yordamlar standart özellik sayfalarının kullanımını bakın, ancak aynı sonucu yerinde düzenleme ve özellik sayfası yöntemi gerekir. Özellik sayfaları veya yerinde düzenleme kullanılarak yapılan değişiklikler hemen Hızlandırıcı tablosunda yansıtılır.  
+ Standart özellik sayfalarının kullanımı için aşağıdaki yordamlara bakın, ancak aynı sonucu yerinde düzenleme ve özellik sayfası yöntemi vardır. Özellik sayfaları veya yerinde düzenlemeyi kullanarak yapılan değişiklikler hemen Hızlandırıcı tablosunda yansıtılır.  
   
 -   [Hızlandırıcı tablosunu düzenleme](../windows/editing-in-an-accelerator-table.md)  
   
@@ -38,11 +38,11 @@ Visual C++'da, yerinde'nın Hızlandırıcı Düzenleyicisi'nde doğrudan düzen
   
 -   [Hızlandırıcı tablosundan giriş silme](../windows/deleting-an-entry-from-an-accelerator-table.md)  
   
--   [Hızlandırıcı tablosu girişini taşıma veya kopyalama](../windows/moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file.md)  
+-   [Bir Hızlandırıcı tablosu girişini taşıma veya kopyalama](../windows/moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file.md)  
   
 -   [Birden çok hızlandırma tuşunun özelliklerini değiştirme](../windows/changing-the-properties-of-multiple-accelerator-keys.md)  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

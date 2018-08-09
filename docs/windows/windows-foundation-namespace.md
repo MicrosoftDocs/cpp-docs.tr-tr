@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 439746381b0b5d4932edd5c8717b2d3555005416
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 60eb32017e824397af6e4535efa5ec55f314c4b8
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891230"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646737"
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation Ad Alanı
 Nesne ve Fabrika oluşturma gibi temel Windows çalışma zamanı işlevleri sağlar.  
@@ -40,8 +40,8 @@ namespace Windows::Foundation;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ActivateInstance İşlevi](../windows/activateinstance-function.md)|Kaydeder ve bir belirtilen sınıf kimliği tanımlanan belirtilen bir türün bir örneğini alır.|  
-|[GetActivationFactory İşlevi](../windows/getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üreteci alır.|  
+|[ActivateInstance İşlevi](../windows/activateinstance-function.md)|Kaydeder ve belirtilen sınıf kimliğinde tanımlanan belirli bir türün bir örneğini alır.|  
+|[GetActivationFactory İşlevi](../windows/getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üretecini alır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  
@@ -49,4 +49,4 @@ namespace Windows::Foundation;
  **Namespace:** Windows  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Namespace](http://msdn.microsoft.com/en-us/45b08650-69cd-4f7f-a959-b7361476865c)
+ [Windows Namespace](http://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)

@@ -17,34 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c7f97bb82f3387e82be5bbf120db4fed9aaa092f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c6b5309d62db094bf706fe7d3d1bcec99c3ec9a9
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889679"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645457"
 ---
 # <a name="sizeis"></a>size_is
-Bellek boyutu boyutlu işaretçileri ayrılmış, boyutlu işaretçiler ve tek veya çok boyutlu diziler işaretçileri boyutta belirtin.  
+Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaretçiler ve tek veya çok boyutlu diziler işaretçilere boyutu belirtin.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ size_is(  
+[ size_is(  
    "expression"  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- *ifade*  
- İçin ayrılan bellek boyutunu işaretçileri büyüklükteki.  
+### <a name="parameters"></a>Parametreler  
+ *İfade*  
+ Boyutlandırılmış işaretçiler için ayrılan bellek boyutu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Size_is** C++ özniteliğine sahip ile aynı işlevselliği [size_is](http://msdn.microsoft.com/library/windows/desktop/aa367164) MIDL özniteliği.  
+ **Size_is** C++ özniteliği ile aynı işlevlere sahip [size_is](http://msdn.microsoft.com/library/windows/desktop/aa367164) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [first_is](../windows/first-is.md) bir dizi bir bölümünü belirleme konusunda bir örnek için.  
+ Örneğin bakın [first_is](../windows/first-is.md) örneği için nasıl bir dizinin bir bölümünü belirtin.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -52,10 +51,10 @@ Bellek boyutu boyutlu işaretçileri ayrılmış, boyutlu işaretçiler ve tek v
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|İçinde alan `struct` veya **UNION**, parametre arabirim, arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**max_is**|  
+|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
+|**Geçersiz öznitelikler**|`max_is`|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   

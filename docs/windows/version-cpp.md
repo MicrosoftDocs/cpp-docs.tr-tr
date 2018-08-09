@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 43da63d75d3541915eba3e561ee08fe1048fa579
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2c2d0c72ffbb805b526429562a5f39a09285b70f
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890615"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642285"
 ---
 # <a name="version-c"></a>sürüm (C++)
 Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.  
@@ -31,21 +31,20 @@ Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımla
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ version(  
+[ version(  
    "version"  
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *Sürüm*  
- Coclass'ı sürüm numarası. Belirtilmezse, 1.0 .idl dosyasında yer alır.  
+ Sürüm numarasını `coclass`. Belirtilmezse, 1.0 .idl dosyasında yer alır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Sürüm** C++ özniteliğine sahip ile aynı işlevselliği [sürüm](http://msdn.microsoft.com/library/windows/desktop/aa367306) MIDL özniteliği ve oluşturulan .idl dosyasına geçirilir.  
+ **Sürüm** C++ özniteliği ile aynı işlevlere sahip [sürüm](http://msdn.microsoft.com/library/windows/desktop/aa367306) MIDL özniteliği ve oluşturulan .idl dosyasına üzerinden geçirilir.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [bağlanabilirse](../windows/bindable.md) bir örnek kullanımı, örneğin **sürüm**.  
+ Bkz: [bağlanabilir](../windows/bindable.md) örnek kullanımını örneğin **sürüm**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -53,9 +52,9 @@ Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımla
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass**|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|**coclass**|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

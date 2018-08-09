@@ -15,99 +15,86 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0de383c6d97f12a1caecbc8fbc7063513a898f50
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f89eb3fcc48d8341190ceb5fe74a25570543e0cd
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862029"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645597"
 ---
 # <a name="attribute-targets-c-component-extensions"></a>Öznitelik Hedefleri (C++ Bileşen Uzantıları)
-Öznitelik kullanım tanımlayıcıları öznitelik hedefleri belirtmenizi sağlar.  Her öznitelik belirli dil öğelerine uygulamak için tanımlanır. Örneğin, bir öznitelik yalnızca sınıflar ve yapılar uygulamak için tanımlanabilir.  Aşağıdaki liste, özel bir öznitelik kullanılabilmesi için olası söz dizimi öğeleri gösterir. Bu değerleri birleşimlerini (mantıksal kullanarak veya) kullanılabilir.  
+Öznitelik kullanımı tanımlayıcıları öznitelik hedefleri belirtmenizi sağlar.  Her öznitelik için belirli dil öğelerini uygulamak için tanımlanır. Örneğin, yalnızca sınıflar ve yapılar için uygulanacak bir öznitelik tanımlanabilir.  Aşağıdaki liste, özel bir öznitelik kullanılabilir olası söz dizimi öğeleri gösterir. Bu değerleri birleşimlerini (kullanarak mantıksal veya) kullanılabilir.  
   
- Bir veya daha fazla geçirmek için öznitelik hedef belirtmek için <xref:System.AttributeTargets> numaralandırmalar için <xref:System.AttributeUsageAttribute> öznitelik tanımlarken.  
+ Öznitelik hedefi, bir veya daha fazla geçirilecek belirtmek için <xref:System.AttributeTargets> numaralandırıcılar için <xref:System.AttributeUsageAttribute> öznitelik tanımlarken.  
   
- Geçerli öznitelik hedefleri listesi aşağıdadır:  
+ Geçerli bir öznitelik hedefleri listesi verilmiştir:  
   
 -   `All` (tüm yapıları için geçerlidir)  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::All)]  
     ref class Attr : public Attribute {};  
   
     [assembly:Attr];  
-  
     ```  
   
--   `Assembly` (derleme bir bütün olarak uygulanır)  
+-   `Assembly` (derleme bir bütün olarak geçerlidir)  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Assembly)]  
     ref class Attr : public Attribute {};  
   
     [assembly:Attr];  
-  
     ```  
   
--   `Module` (bir modül için bir bütün olarak uygulanır)  
+-   `Module` (bir modül için bir bütün olarak uygular)  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Module)]  
     ref class Attr : public Attribute {};  
   
     [module:Attr];  
-  
     ```  
   
 -   `Class`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Class)]  
     ref class Attr : public System::Attribute {};  
   
     [Attr]   // same as [class:Attr]  
     ref class MyClass {};  
-  
     ```  
   
 -   `Struct`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Struct)]  
     ref class Attr : public Attribute {};  
   
     [Attr]   // same as [struct:Attr]  
     value struct MyStruct{};  
-  
     ```  
   
 -   `enum`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Enum)]  
     ref class Attr : public Attribute {};  
   
     [Attr]   // same as [enum:Attr]  
     enum struct MyEnum{e, d};  
-  
     ```  
   
 -   `Constructor`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Constructor)]  
     ref class Attr : public Attribute {};  
@@ -115,13 +102,11 @@ ms.locfileid: "33862029"
     ref struct MyStruct{  
     [Attr] MyStruct(){}   // same as [constructor:Attr]  
     };  
-  
     ```  
   
 -   `Method`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Method)]  
     ref class Attr : public Attribute {};  
@@ -129,13 +114,11 @@ ms.locfileid: "33862029"
     ref struct MyStruct{  
     [Attr] void Test(){}   // same as [method:Attr]  
     };  
-  
     ```  
   
 -   `Property`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Property)]  
     ref class Attr : public Attribute {};  
@@ -143,13 +126,11 @@ ms.locfileid: "33862029"
     ref struct MyStruct{  
     [Attr] property int Test;   // same as [property:Attr]  
     };  
-  
     ```  
   
 -   `Field`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Field)]  
     ref class Attr : public Attribute {};  
@@ -157,13 +138,11 @@ ms.locfileid: "33862029"
     ref struct MyStruct{  
     [Attr] int Test;   // same as [field:Attr]  
     };  
-  
     ```  
   
 -   `Event`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Event)]  
     ref class Attr : public Attribute {};  
@@ -173,26 +152,22 @@ ms.locfileid: "33862029"
     ref struct MyStruct{  
     [Attr] event ClickEventHandler^ OnClick;   // same as [event:Attr]  
     };  
-  
     ```  
   
 -   `Interface`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Interface)]  
     ref class Attr : public Attribute {};  
   
     [Attr]   // same as [event:Attr]  
     interface struct MyStruct{};  
-  
     ```  
   
 -   `Parameter`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Parameter)]  
     ref class Attr : public Attribute {};  
@@ -201,26 +176,22 @@ ms.locfileid: "33862029"
     void Test([Attr] int i);  
     void Test2([parameter:Attr] int i);  
     };  
-  
     ```  
   
 -   `Delegate`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::Delegate)]  
     ref class Attr : public Attribute {};  
   
     [Attr] delegate void Test();  
     [delegate:Attr] delegate void Test2();  
-  
     ```  
   
 -   `ReturnValue`  
   
-    ```  
-  
+    ```cpp  
     using namespace System;  
     [AttributeUsage(AttributeTargets::ReturnValue)]  
     ref class Attr : public Attribute {};  
@@ -229,36 +200,35 @@ ms.locfileid: "33862029"
     // Note required specifier  
     [returnvalue:Attr] int Test() { return 0; }  
     };  
-  
     ```  
   
- Genellikle, bir öznitelik doğrudan geçerli olduğu language öğesi önce gelir. Bazı durumlarda, ancak özniteliğin konumunu özniteliğin hedef belirlemek yeterli değil. Bu örneği göz önünde bulundurun:  
+ Genellikle, bir öznitelik doğrudan uygulandığı dil öğesi önce gelir. Bazı durumlarda, ancak bir öznitelik konumu özniteliğin hedef belirlemek yeterli değil. Bu örneği göz önünde bulundurun:  
   
-```  
+```cpp  
 [Attr] int MyFn(double x)...  
 ```  
   
- Sözdizimsel olarak, öznitelik yöntemi veya yöntemin dönüş değeri uygulamak için tasarlanmıştır olmadığını bildirmek için bir yolu yoktur (Bu durumda, bu yönteme varsayılan olarak). Böyle durumlarda, bir öznitelik kullanım belirticisi kullanılabilir. Örneğin, dönüş değeri için geçerli özniteliği yapmak için kullanın `returnvalue` şekilde tanımlayıcısı:  
+ Sözdizimi, öznitelik yönteme ve yöntemin dönüş değerini uygulamak için tasarlanmıştır, anlaşılır bir yolu yoktur (Bu durumda, yönteme Varsayılanları). Bu gibi durumlarda, bir öznitelik kullanım tanımlayıcısı kullanılabilir. Örneğin, dönüş değeri için geçerli öznitelik yapmak için kullanın `returnvalue` aşağıdaki gibi belirticisi:  
   
-```  
+```cpp  
 [returnvalue:Attr] int MyFn(double x)... // applies to return value  
 ```  
   
- Öznitelik kullanım tanımlayıcıları aşağıdaki durumlarda gereklidir:  
+ Öznitelik kullanımı tanımlayıcıları aşağıdaki durumlarda gereklidir:  
   
--   Bir derleme veya modül düzeyi özniteliği belirtmek için.  
+-   Bir derleme veya modül düzeyi özniteliğini belirtmek için.  
   
--   Öznitelik bir yöntemin dönüş değerini, yöntemi geçerli olduğunu belirtmek için:  
+-   Bir öznitelik, bir yöntemin dönüş değeri için yöntem geçerli olduğunu belirtmek için:  
   
-    ```  
+    ```cpp  
     [method:Attr] int MyFn(double x)...     // Attr applies to method  
     [returnvalue:Attr] int MyFn(double x)...// Attr applies to return value  
     [Attr] int MyFn(double x)...            // default: method  
     ```  
   
--   Bir öznitelik özelliği bir özellik erişimcisi için geçerli olduğunu belirtmek için:  
+-   Öznitelik bir özelliğin erişimci özelliği için geçerli olduğunu belirtmek için:  
   
-    ```  
+    ```cpp  
     [method:MyAttr(123)] property int Property()    
     [property:MyAttr(123)] property int Property()  
     [MyAttr(123)] property int get_MyPropy() // default: property  
@@ -266,7 +236,7 @@ ms.locfileid: "33862029"
   
 -   Bir öznitelik olay olay erişimcisi için geçerli olduğunu belirtmek için:  
   
-    ```  
+    ```cpp  
     delegate void MyDel();  
     ref struct X {  
        [field:MyAttr(123)] event MyDel* MyEvent;   //field  
@@ -275,27 +245,26 @@ ms.locfileid: "33862029"
     }  
     ```  
   
- Bir öznitelik kullanım belirticisi hemen aşağıdaki öznitelik uygulanır; Yani  
+ Hemen takip eden özniteliği bir öznitelik kullanım belirticisi geçerlidir; Yani  
   
-```  
+```cpp  
 [returnvalue:Attr1, Attr2]  
 ```  
   
  farklıdır  
   
-```  
+```cpp  
 [returnvalue:Attr1, returnvalue:Attr2]  
 ```  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Bu örnek, birden çok hedefi belirtin gösterilmektedir.  
+ Bu örnek, birden çok hedef belirtmek gösterilmektedir.  
   
 ### <a name="code"></a>Kod  
   
-```  
-  
+```cpp  
 using namespace System;  
 [AttributeUsage(AttributeTargets::Class | AttributeTargets::Struct, AllowMultiple = true )]  
 ref struct Attr : public Attribute {  

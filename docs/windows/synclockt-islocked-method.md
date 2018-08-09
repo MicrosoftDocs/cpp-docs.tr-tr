@@ -1,5 +1,5 @@
 ---
-title: Synclockt::IsLocked yöntemi | Microsoft Docs
+title: Synclockt::IsLocked metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 067b3763e10b2bbb310b213f7d748e953ba2a902
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5bfbd3418af731edf826debd9d6663095be706b8
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33888481"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641525"
 ---
 # <a name="synclocktislocked-method"></a>SyncLockT::IsLocked Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,10 +34,10 @@ bool IsLocked() const;
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- **doğru** SyncLockT nesne kilitli; Aksi takdirde ise **false**.  
+ **doğru** varsa **SyncLockT** nesnedir kilitli; Aksi takdirde **false**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli SyncLockT nesne bir kaynağa sahip olup olmadığını gösterir; diğer bir deyişle, SyncLockT nesnesidir *kilitli*.  
+ Belirtir olup olmadığını geçerli **SyncLockT** nesnesi bir kaynağa sahiptir; diğer bir deyişle, **SyncLockT** nesnedir *kilitli*.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

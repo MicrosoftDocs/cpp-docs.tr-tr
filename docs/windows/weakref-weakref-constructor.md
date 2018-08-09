@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ae70dabdd86fedf82c26c0c7d9a09d842e2310e7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: eafbddea6ae651d74d8f33be8efa58c25a8a0d3d
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891054"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641479"
 ---
 # <a name="weakrefweakref-constructor"></a>WeakRef::WeakRef Oluşturucusu
-WeakRef sınıfı yeni bir örneğini başlatır.  
+Yeni bir örneğini başlatır **WeakRef** sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,12 +52,12 @@ WeakRef(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `ptr`  
- İşaretçi, başvuru veya rvalue başvuru var olan nesneye geçerli WeakRef nesnesini başlatır.  
+### <a name="parameters"></a>Parametreler  
+ *ptr*  
+ Bir işaretçi, başvuru veya rvalue başvurusunu geçerli başlatır, varolan bir nesneye **WeakRef** nesne.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucu boş WeakRef nesneyi başlatır. İkinci Oluşturucu, bir işaretçi bir WeakRef nesnesi IWeakReference arabirimine başlatır. Bir ComPtr başvuru WeakRef nesnesinden üçüncü Oluşturucu başlatır\<IWeakReference > nesne. Dördüncü ve beşinci oluşturucular başka bir WeakRef nesne WeakRef nesnesinden başlatır.  
+ İlk Oluşturucu boş bir başlatır **WeakRef** nesne. İkinci oluşturucu başlatan bir **WeakRef** işaretçisi nesneden `IWeakReference` arabirimi. Üçüncü Oluşturucu başlatan bir **WeakRef** başvuru nesneden bir `ComPtr<IWeakReference>` nesne. Dördüncü ve beşinci oluşturucular başlatan bir **WeakRef** başka bir nesne **WeakRef** nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** client.h  

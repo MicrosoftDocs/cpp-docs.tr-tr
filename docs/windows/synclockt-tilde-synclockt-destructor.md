@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c91c677a18c66c875107f48c2e04ba45be88fb48
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 87f32ce0583154deb2e3e5cd0afc77ce8728695d
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892741"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646724"
 ---
 # <a name="synclocktsynclockt-destructor"></a>SyncLockT::~SyncLockT Yok Edicisi
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,9 +34,9 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- SyncLockT sınıfı örneği deinitializes.  
+ Örneği başlatılmasını geri alır **SyncLockT** sınıfı.  
   
- Bu yıkıcı de geçerli SyncLockT örnek kilidini açar.  
+ Bu yok Edicisi de geçerli kilidini açarak **SyncLockT** örneği.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  

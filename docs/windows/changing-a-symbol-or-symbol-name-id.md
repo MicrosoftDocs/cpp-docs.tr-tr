@@ -18,33 +18,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 28d31fc27fdc51a3a5b05dba96ab9decf4fc7e00
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cd9d2429f1257711d766d8e51b890e2e8a59b8d1
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857720"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642262"
 ---
 # <a name="changing-a-symbol-or-symbol-name-id"></a>Sembolü veya Sembol Adını (ID) Değiştirme
-Yeni bir kaynak veya kaynak nesne oluşturduğunuzda, geliştirme ortamı gibi IDD_DIALOG1 varsayılan bir simge adı atar. Kullanabileceğiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window) varsayılan sembol adını değiştirmek veya zaten bir kaynakla ilişkili herhangi bir sembol adını değiştirmek için.  
+Yeni bir kaynak veya kaynak nesnesi oluşturduğunuzda, geliştirme ortamı varsayılan sembol adı, örneğin, IDD_DIALOG1 atar. Kullanabileceğiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window) varsayılan sembol adı değiştirmek veya zaten bir kaynakla ilişkilendirilmiş herhangi bir sembol adını değiştirmek için.  
   
 ### <a name="to-change-a-resources-symbol-name"></a>Bir kaynağın sembol adını değiştirmek için  
   
 1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), kaynağı seçin.  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  İçinde **özellikleri** penceresinde, yeni bir sembol adı yazın veya varolan sembolleri listesinden seçip **kimliği** kutusu.  
+2.  İçinde **özellikleri** penceresinde, yeni bir sembol adı yazın veya mevcut simgeler listesinden **kimliği** kutusu.  
   
-     Yeni sembol adını yazarsanız, değer otomatik olarak atanır.  
+     Yeni bir sembol adı yazdığınızda, değer otomatik olarak atanır.  
   
- Kullanabileceğiniz [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md) bir kaynağa atanmış simgelerin adlarını değiştirmek için. Daha fazla bilgi için bkz: [atanmamış sembolleri değiştirme](../windows/changing-unassigned-symbols.md).  
+ Kullanabileceğiniz [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md) bir kaynağa atanmış sembol adlarını değiştirmek için. Daha fazla bilgi için [atanmamış sembolleri değiştirme](../windows/changing-unassigned-symbols.md).  
   
-
-  
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

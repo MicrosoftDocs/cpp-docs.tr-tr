@@ -17,27 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 62074a586c336bf78280548eb12699b06abdd6f6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9ae62b4c16c30be5384b94053ea66aa127974a81
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33871386"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642353"
 ---
 # <a name="deleting-menus-and-menu-commands"></a>Menüleri ve Menü Komutlarını Silme
-### <a name="to-delete-a-menu-or-menu-command"></a>Menü veya menü komutu silmek için  
+### <a name="to-delete-a-menu-or-menu-command"></a>Bir menü veya menü komutu silmek için  
   
 1.  Menü adına veya komuta sağ tıklayın.  
   
-2.  Seçin **silmek** kısayol menüsünden.  
+2.  Seçin **Sil** kısayol menüsünden.  
   
     > [!NOTE]
-    >  Benzer şekilde, kopyalama, kesme, yapıştırma, yeni, Ekle ayırıcı, kimlikleri, düzenleme görünümü açılır pencere, anımsatıcıları kontrol vb. olarak Ekle gibi diğer eylemleri gerçekleştirmek için kısayol menüsünü kullanabilirsiniz.  
+    >  Benzer şekilde, kopyalama, kesme, yapıştırma, yeni, Ekle ayırıcı, kimlikleri, düzenleme görünümü açılır, anımsatıcıları kontrol edin, vb. olarak Ekle gibi diğer eylemleri gerçekleştirmek için kısayol menüsünü kullanabilirsiniz.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.*  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

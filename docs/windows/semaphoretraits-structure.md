@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c5bdb20a765b56fd90a46389eba2a869890e4fd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6bcbb520ba92bdf15245b2401c74c3b271111034
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892611"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645730"
 ---
 # <a name="semaphoretraits-structure"></a>SemaphoreTraits Yapısı
-Semafor nesnesinin ortak özelliklerini tanımlar.  
+Ortak özelliklerini tanımlayan bir **semafor** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,7 +39,7 @@ struct SemaphoreTraits : HANDLENullTraits;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SemaphoreTraits::Unlock Metodu](../windows/semaphoretraits-unlock-method.md)|Paylaşılan bir kaynak denetim serbest bırakır.|  
+|[SemaphoreTraits::Unlock Metodu](../windows/semaphoretraits-unlock-method.md)|Paylaşılan bir kaynak denetim yayınlar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HANDLENullTraits`  

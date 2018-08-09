@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ee338d4e90f94ed7cb7f9158235c66b72e9f2e52
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 439a118bbea5adce4c306298e573bed85da26291
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464752"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641910"
 ---
 # <a name="asyncbasecancel-method"></a>AsyncBase::Cancel Yöntemi
 Zaman uyumsuz bir işlem iptal eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 STDMETHOD(  
    Cancel  
 )(void);  
@@ -39,7 +39,7 @@ STDMETHOD(
  Varsayılan olarak, her zaman S_OK döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Cancel()` bir varsayılan uygulamasıdır `IAsyncInfo::Cancel`, ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten iptal etmek için geçersiz kılma `OnCancel()` saf sanal yöntemi.  
+ **Cancel()** varsayılan uygulamasıdır `IAsyncInfo::Cancel`, ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten iptal etmek için geçersiz kılma `OnCancel()` saf sanal yöntemi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** async.h  

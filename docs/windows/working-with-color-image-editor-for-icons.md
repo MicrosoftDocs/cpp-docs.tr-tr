@@ -23,32 +23,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1f9016e36ce6b081446a00136445fd7ebdd5a341
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 37e469b18af727bea29681b284fd123bcce64c93
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891665"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39647426"
 ---
 # <a name="working-with-color-image-editor-for-icons"></a>Renklerle Çalışma (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi özellikle işleyen ve renkleri özelleştirmek birçok özellik içerir. Ön plan veya arka plan rengini ayarlamak, sınırlanmış alanları renkle doldurma veya geçerli ön plan veya arka plan rengi olarak kullanılacak bir görüntü üzerinde bir renk seçin. Araçlarını kullanabileceğiniz [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md) renk paleti birlikte [renkler penceresi](../windows/colors-window-image-editor-for-icons.md) görüntüleri oluşturmak için.  
+**Resim Düzenleyicisi** özellikle işleyen ve renk özelleştirme birçok özellik içerir. Bir ön plan veya arka plan rengini ayarlamak, sınırlanmış alanları rengi ile doldurmak veya bir rengi geçerli bir ön plan veya arka plan rengi olarak kullanılacak bir görüntü seçin. Araçlarını kullanabileceğiniz [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md) renk paletindeki açık griyi birlikte [renkler penceresini](../windows/colors-window-image-editor-for-icons.md) görüntüleri oluşturmak için.  
   
- Tüm renkleri tek renkli ve 16 renkli görüntüleri için renk paleti renkleri penceresinde gösterilir. Ek olarak 16 standart renkler, kendi özel renkler oluşturabilirsiniz. Palet renkleri hiçbirini değiştirilmesi görüntüdeki karşılık gelen renk hemen değiştirir.  
+ Tek renkli ve 16 renk görüntülerini tüm renkleri gösterilen **renkleri** palette **renkleri** penceresi. Ek olarak 16 standart renkler, kendi özel renkler oluşturabilirsiniz. Herhangi bir palet renkleri değiştirme, görüntü içinde karşılık gelen renk hemen değişir.  
   
- Ne zaman 256-renk simgesi ve imleci ile çalışma görüntüleri, renkler özelliğinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window) kullanılır. Daha fazla bilgi için bkz: [256-renk simgesi veya imleci oluşturma](creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).  
+ 256-renk simgesi ve imleç görüntü ile çalışırken **renkleri** özelliğinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window) kullanılır. Daha fazla bilgi için [256-renk simgesi veya imleci oluşturma](creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).  
   
 > [!NOTE]
->  Resim Düzenleyicisi'ni kullanarak 32 bitlik resimleri görüntüleyebilirsiniz, ancak onları düzenleyemezsiniz.  
+>  Kullanarak **Resim Düzenleyicisi**, 32 bitlik resimleri görüntüleyebilirsiniz, ancak onları düzenleyemezsiniz.  
   
- TRUE renk görüntüleri de oluşturulabilir. Ancak, gerçek renk örnekleri tam palet renkleri penceresinde görüntülenmez; Bunlar yalnızca ön plan veya arka plan rengi göstergesi alanında görüntülenir. Doğru renkleri kullanarak oluşturulur [Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md). Daha fazla bilgi için bkz: [özelleştirme veya renklerini değiştirme](../windows/customizing-or-changing-colors-image-editor-for-icons.md).  
+ TRUE-Renk görüntülerini de oluşturulabilir. Ancak gerçek renk örnekleri tam palette görünmez **renkleri** penceresi; bunlar yalnızca ön plan veya arka plan renk göstergesi alanında görüntülenir. Doğru renk kullanılarak oluşturulur [Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md). Daha fazla bilgi için [özelleştirme veya renklerini değiştirme](../windows/customizing-or-changing-colors-image-editor-for-icons.md).  
   
- Disk üzerinde özelleştirilmiş renk paletlerini kaydetme ve bunları gerektiği gibi yeniden yükleyin. En son kullanılan renk paletini kayıt defterinde kaydedilir ve Visual Studio'nun bir sonraki başlatışınızda otomatik olarak yüklenir.  
+ Disk üzerinde özelleştirilmiş renk paletlerini kaydetme ve bunları gerektiği şekilde yeniden yükleyin. En son kullanılan renk paletini kayıt defterine kaydedilen ve Visual Studio'yu yeniden başlattığınızda otomatik olarak yüklenir.  
   
 -   [Ön plan veya arka plan renklerini seçme](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md)  
   
--   [Sınırlı bir alanını renkle görüntünün doldurma](../windows/filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons.md)  
+-   [Sınırlı bir alanını görüntü renk ile doldurma](../windows/filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons.md)  
   
--   [Başka yerde kullanmak üzere görüntüden renk alma](../windows/picking-up-a-color-from-an-image-to-use-elsewhere-image-editor-for-icons.md)  
+-   [Renk başka yerde kullanmak üzere görüntüden](../windows/picking-up-a-color-from-an-image-to-use-elsewhere-image-editor-for-icons.md)  
   
 -   [Saydam veya donuk arka plan seçme](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md)  
   
@@ -56,15 +56,14 @@ Görüntü Düzenleyicisi özellikle işleyen ve renkleri özelleştirmek birço
   
 -   [Renkleri özelleştirme veya değiştirme](../windows/customizing-or-changing-colors-image-editor-for-icons.md)  
   
--   [Renk paletlerini kaydetme ve farklı yükleme](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md)  
+-   [Renk paletlerini kaydetme ve farklı yükleniyor](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md)  
   
 -   [Renkler penceresi](../windows/colors-window-image-editor-for-icons.md)  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
-

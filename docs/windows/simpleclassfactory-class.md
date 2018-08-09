@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: debb78ba4be2731b8cffce1133518b0b4a04f63d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 21b52876cb2a6c7bbf110a06cdfb29abdf1930d6
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892767"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641838"
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory Sınıfı
-Bir taban sınıf oluşturmak için temel bir mekanizma sağlar.  
+Bir temel sınıf oluşturmak için temel bir mekanizma sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,14 +34,14 @@ template<typename Base>
 class SimpleClassFactory : public ClassFactory<>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `Base`  
- Bir temel sınıf.  
+### <a name="parameters"></a>Parametreler  
+ *temel*  
+ Temel sınıf.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Taban sınıf, varsayılan bir oluşturucu sağlamanız gerekir.  
+ Temel sınıfın varsayılan bir oluşturucu sağlamanız gerekir.  
   
- Aşağıdaki kod örneğinde SimpleClassFactory ile kullanımı gösterilmiştir [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) makrosu.  
+ Aşağıdaki kod örneğinde nasıl kullanılacağını gösterir **SimpleClassFactory** ile [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) makrosu.  
   
  `ActivatableClassWithFactoryEx(MyClass, SimpleClassFactory, MyServerName);`  
   
@@ -51,7 +51,7 @@ class SimpleClassFactory : public ClassFactory<>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SimpleClassFactory::CreateInstance Metodu](../windows/simpleclassfactory-createinstance-method.md)|Belirtilen arabiriminin bir örneğini oluşturur.|  
+|[SimpleClassFactory::CreateInstance Metodu](../windows/simpleclassfactory-createinstance-method.md)|Belirtilen arabirim bir örneğini oluşturur.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `I0`  

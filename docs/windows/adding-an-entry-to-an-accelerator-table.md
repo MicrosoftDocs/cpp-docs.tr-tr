@@ -16,38 +16,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 22f3e00c8ba6523f6cc615e4a766ad9206560b5e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e0c5e94913a705ac97407f82075ff9c83a12dd6b
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855376"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642795"
 ---
 # <a name="adding-an-entry-to-an-accelerator-table"></a>Hızlandırıcı Tablosunu Giriş Ekleme
-### <a name="to-add-an-entry-to-an-accelerator-table"></a>Hızlandırıcı tablosunu giriş eklemek için  
+### <a name="to-add-an-entry-to-an-accelerator-table"></a>Hızlandırıcı tablosunu giriş ekleme  
   
-1.  Hızlandırıcı tablosunu simgesini çift tıklatarak açın [kaynak görünümü](../windows/resource-view-window.md).  
+1.  Hızlandırıcı tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Hızlandırıcı tablo içinde sağ tıklatın ve seçin **yeni hızlandırıcı** kısayol menüsünden veya tablonun sonuna boş satır girişi'ı tıklatın.  
+2.  Hızlandırıcı tablosu içinde sağ tıklatın ve seçin **yeni hızlandırıcı** kısayol menüsünden veya tablonun alt kısmındaki boş satır girdiye tıklayın.  
   
-3.  Seçin bir [kimliği](id-property.md) kimliği aşağı açılan listeden kutusu veya yeni bir kimliği yazın **kimliği** kutusu.  
+3.  Seçin bir [kimliği](id-property.md) kimliği aşağı açılan listeden kutusuna veya yeni bir kimliği yazın **kimliği** kutusu.  
   
-4.  Türü [anahtar](../windows/accelerator-key-property.md) Hızlandırıcı veya sağ olarak kullanın ve seçmek istediğiniz **sonraki anahtar yazılan** bir tuş bileşimini ayarlamak için kısayol menüsünden ( **sonraki anahtar yazılan** komutu Ayrıca kullanılabilir **Düzenle** menüsü).  
+4.  Türü [anahtarı](../windows/accelerator-key-property.md) bir Hızlandırıcı veya sağ tıklayarak kullanın ve isteyip **sonraki anahtarı yazılan** bir tuş bileşimi ayarlamak için kısayol menüsünden ( **sonraki anahtarı yazılan** komutu Ayrıca kullanılabilir **Düzenle** menü).  
   
-5.  Değişiklik [değiştiricisi](../windows/accelerator-modifier-property.md) ve [türü](../windows/accelerator-type-property.md)gerekirse,.  
+5.  Değişiklik [değiştiricisi](../windows/accelerator-modifier-property.md) ve [türü](../windows/accelerator-type-property.md), gerekirse.  
   
 6.  Tuşuna **ENTER**.  
   
     > [!NOTE]
-    >  Tanımladığınız tüm Hızlandırıcıları benzersiz olduğundan emin olun. Aynı kimliği hatalı hiçbir etkisi olmadan atanan birkaç tuş bileşimlerini olabilir, örneğin, CTRL + P ve F8 her ikisi için ID_PRINT atanabilir. Ancak, bir tuş bileşimini sahip birden fazla kimliği de, örneğin, işe yaramaz atanmış CTRL + Z ID_SPELL_CHECK ve ID_THESAURUS atanmış.  
+    >  Tanımladığınız tüm Hızlandırıcıları benzersiz olduğundan emin olun. Birkaç tuş bileşimleri aynı Kimliğine sahip hiçbir olumsuz etkisi, örneğin, atanan olabilir **Ctrl** + **P** ve **F8** ID_PRINT için her ikisi de atanabilir. Ancak, birden fazla kimliği çalışmaz, örneğin, atanan bir tuş bileşimi sahip **Ctrl** + **Z** ID_SPELL_CHECK ve ID_THESAURUS atanmış.  
   
-
-  
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

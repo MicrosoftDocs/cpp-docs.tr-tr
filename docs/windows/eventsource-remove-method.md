@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9dd026158a2bbc76e7a3e195bc5346f65821f2b7
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 36a057bbad39e61576828c5a02f6863248b235cf
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39569501"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641411"
 ---
 # <a name="eventsourceremove-method"></a>EventSource::Remove Yöntemi
 Olay işleyicisi geçerli ile ilişkili olay işleyicileri kümesinden tarafından belirtilen olay kaydı belirtecini temsil siler **EventSource** nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 HRESULT Remove(  
    EventRegistrationToken token  
 );  
@@ -43,7 +43,7 @@ HRESULT Remove(
  Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- EventRegistrationToken yapısı hakkında daha fazla bilgi için bkz. `Windows::Foundation::EventRegistrationToken` yapısı konuda Windows Runtime başvuru belgeleri.  
+ Hakkında daha fazla bilgi için `EventRegistrationToken` yapısı için bkz: **:: eventregistrationtoken yapısı** konudaki **Windows çalışma zamanı** başvuru belgeleri.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  

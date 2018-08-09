@@ -1,5 +1,5 @@
 ---
-title: Görüntüleme ve iletişim kutusuna ActiveX denetimleri ekleme | Microsoft Docs
+title: İletişim kutusuna ActiveX denetimleri ekleme ve görüntüleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,48 +19,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 61448cba890c03feaf2d9fcbda5cdb93478f4c04
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ad663760efb5f969a7b7cf1b14d187b0382197b7
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891172"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643984"
 ---
 # <a name="viewing-and-adding-activex-controls-to-a-dialog-box"></a>İletişim Kutusuna ActiveX Denetimleri Ekleme ve Görüntüleme
-Visual Studio iletişim kutusuna ActiveX denetimlerini eklemenize olanak tanır.  
+Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak tanır.  
   
-### <a name="to-see-the-activex-controls-you-have-available"></a>ActiveX denetimlerini görmek için sahip olduğunuz kullanılabilir  
+### <a name="to-see-the-activex-controls-you-have-available"></a>ActiveX denetimlerini görmek için elinizde  
   
-1.  İletişim kutusu Düzenleyicisi'nde bir iletişim kutusunu açın.  
+1.  Bir iletişim kutusu, iletişim kutusu Düzenleyicisi'nde açın.  
   
 2.  Sağ iletişim kutusunun gövdesinde herhangi bir yere tıklayın.  
   
 3.  Kısayol menüsünde **ActiveX denetimi Ekle**.  
   
-     [ActiveX denetimi Ekle iletişim kutusu](../windows/insert-activex-control-dialog-box.md) , sisteminizdeki tüm ActiveX denetimlerini gösteren görünür. ActiveX denetimi dosyasının yolunu iletişim kutusunun altında görüntülenir.  
+     [ActiveX denetimi Ekle iletişim kutusu](../windows/insert-activex-control-dialog-box.md) görünür, sisteminizdeki tüm ActiveX denetimlerini gösterme. ActiveX denetimi dosyasının yolu iletişim kutusunun en altında görünür.  
   
-### <a name="to-add-an-activex-control-to-a-dialog-box"></a>Bir iletişim kutusu için bir ActiveX denetimini eklemek için  
+### <a name="to-add-an-activex-control-to-a-dialog-box"></a>İletişim kutusuna ActiveX denetimi eklemek için  
   
-1.  İçinde [ActiveX denetimi Ekle iletişim kutusu](../windows/insert-activex-control-dialog-box.md), önce iletişim kutusuna eklemek istediğiniz denetimi seçin **Tamam**.  
+1.  İçinde [ActiveX denetimi Ekle iletişim kutusu](../windows/insert-activex-control-dialog-box.md), tıklatıp, iletişim kutusuna eklemek istediğiniz denetimi seçin **Tamam**.  
   
-     Denetimi, düzenlemek veya diğer herhangi bir denetimi gibi işleyicileri oluşturmak iletişim kutusunda görüntülenir.  
+     Denetim, düzenlemek veya başka bir denetimde olduğu gibi işleyicileri için oluşturma iletişim kutusunda görüntülenir.  
   
     > [!NOTE]
-    >  ActiveX denetimlerine ekleme [araç penceresi](/visualstudio/ide/reference/toolbox). Daha fazla bilgi için bkz: [yönetme öğeleri ve araç sekmeleri](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+    >  ActiveX denetimlerine ekleyebilirsiniz [araç penceresi](/visualstudio/ide/reference/toolbox). Daha fazla bilgi için [yönetmeye öğeler ve araç kutusu sekmeleri](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
     > [!CAUTION]
-    >  Tüm sisteminizdeki ActiveX denetimlerinin dağıtmak için geçerli olmayabilir. Lütfen denetimleri yüklü yazılımı için lisans sözleşmesi bakın veya yazılım şirketine başvurun.  
+    >  ActiveX denetimleri, sisteminizdeki tüm dağıtmak için geçerli olmayabilir. Lütfen denetimleri yüklü yazılımlar için lisans sözleşmesi bakın veya yazılım şirketine başvurun.  
   
-     Kolay erişim için araç penceresinde denetimleri yerleştirebilirsiniz. Daha fazla bilgi için bkz: [araç Özelleştir iletişim kutusu](http://msdn.microsoft.com/en-us/bd07835f-18a8-433e-bccc-7141f65263bb).  
+     Kolay erişim için araç kutusu penceresini denetimleri yerleştirebilirsiniz. Daha fazla bilgi için [özelleştirme araç kutusu iletişim kutusunda](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb).  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
  [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
-

@@ -17,18 +17,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 75476fec3dcabda2990d3ca3f5dcf017688a176d
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: e362ec513cb7cb14f5fd3abb8a028c6e0eab616b
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466130"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644235"
 ---
 # <a name="context-sensitive-keywords--c-component-extensions"></a>Bağlama Duyarlı Anahtar Sözcükler (C++ Bileşen Uzantıları)
 *Bağlama duyarlı anahtar sözcükler* yalnızca belirli bağlamlarda tanınan dil öğeleridir. Belirli bağlamı dışında bağlama duyarlı anahtar sözcük kullanıcı tanımlı bir sembol olabilir.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar
   
  Bağlama duyarlı anahtar sözcüklerin listesi aşağıdadır:  
   
@@ -59,23 +59,22 @@ ms.locfileid: "39466130"
  Okunabilirlik için içeriğe duyarlı anahtar sözcükler kullanıcı tanımlı simgeler olarak kullanımını sınırlamak isteyebilirsiniz.  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
  (Bu özelliğin platforma özel açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
- **Açıklamalar**  
+### <a name="remarks"></a>Açıklamalar  
   
  (Bu özelliğin platforma özel açıklaması yoktur.)  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
  Aşağıdaki kod örneği uygun içerikte gösteren **özelliği** bağlama duyarlı anahtar sözcüğü, bir özellik ve bir değişkeni tanımlamak için kullanılabilir.  
   
@@ -99,8 +98,6 @@ int main() {
    System::Console::WriteLine(++property);  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 100  

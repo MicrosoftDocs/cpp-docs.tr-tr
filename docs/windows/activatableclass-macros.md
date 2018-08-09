@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e46063bc94fae25d414d25ae67b5418ee5aa8c27
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: aa178126b3a749e3af67b9dae3711c0a5cf9f408
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465863"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645792"
 ---
 # <a name="activatableclass-macros"></a>ActivatableClass Makroları
 
@@ -64,7 +64,7 @@ Modülde üreteçleri kümesini belirten bir ad.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullandığınız sürece bu makrolar ile klasik COM kullanmayın `#undef` emin olmak için yönergesi **&#95; &#95;WRL_WINRT_STRICT&#95; &#95;** Makro tanımında kaldırılır.
+Kullandığınız sürece bu makrolar ile klasik COM kullanmayın `#undef` emin olmak için yönergesi `__WRL_WINRT_STRICT__` Makro tanımında kaldırılır.
 
 ## <a name="requirements"></a>Gereksinimler
 

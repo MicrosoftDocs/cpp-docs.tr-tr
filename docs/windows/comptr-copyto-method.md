@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 724803fbbf04bd697dfc85f6576ed5706d708eae
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 5b387d52c9ab7b1d9033ce70d36e9f0aa5e5b33e
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464447"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642935"
 ---
 # <a name="comptrcopyto-method"></a>ComPtr::CopyTo Yöntemi
 Şununla ilişkili geçerli ya da belirtilen arabirim kopyalar **ComPtr** belirtilen işaretçi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 HRESULT CopyTo(  
    _Deref_out_ InterfaceType** ptr  
 );  
@@ -45,7 +45,7 @@ HRESULT CopyTo(
 ) const;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *U*  
  Tür adı.  
   

@@ -17,25 +17,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c76aee3ce1e56f60e966094bb2d634269cd5e3a9
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 0596b15daff5567e2572bf8c1f2b401cdf300a49
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466754"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642418"
 ---
 # <a name="asyncuuid"></a>async_uuid
 COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyicisi yönergelerinin sağlandığı UUID belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [async_uuid (  
    uuid  
 )]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *uuid*  
  Arabirimi sürümünü tanımlar UUID'si.  
   

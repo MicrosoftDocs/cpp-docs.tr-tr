@@ -15,19 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 12c9e5bfe01de0a9864ff1e94364e0c42178ad11
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c07d58f244bf2e7e6c9329196bae7b5bb323ce12
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33872932"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644170"
 ---
 # <a name="event-class-windows-runtime-c-template-library"></a>Olay Sınıfı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)
 Bir olayı temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 class Event : public HandleT<HandleTraits::EventTraits>;  
 ```  
   
@@ -37,13 +37,13 @@ class Event : public HandleT<HandleTraits::EventTraits>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Event::Event Yapıcı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Olay sınıfının yeni bir örneğini başlatır.|  
+|[Event::Event Yapıcı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Yeni bir örneğini başlatır **olay** sınıfı.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Event::operator= İşleci](../windows/event-operator-assign-operator.md)|Geçerli olay örneği belirtilen olay referansı atar.|  
+|[Event::operator= İşleci](../windows/event-operator-assign-operator.md)|Belirtilen atar **olay** geçerli başvuru **olay** örneği.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HandleT`  

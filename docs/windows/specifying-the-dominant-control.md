@@ -17,36 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07bf73fdcd69866a811cd37af6ef59aef062c01c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4c1988e05bbdf8f700688bb4b989cf5576cb86f4
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889659"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642922"
 ---
 # <a name="specifying-the-dominant-control"></a>Baskın Denetimi Belirtme
-Seçilen ilk baskın denetimi denetimdir.  
+Seçili denetim ilk baskın denetimi bulunur.  
   
 ### <a name="to-specify-the-dominant-control"></a>Baskın denetimi belirtmek için  
   
-1.  Basılı **CTRL** anahtar ve boyut ve diğer denetimlerin konum etkilemek için kullanmak istediğiniz denetimi tıklatın *ilk*.  
+1.  Basılı **Ctrl** anahtar ve diğer denetimleri konumunu ve boyutunu etkilemek için kullanmak istediğiniz denetimi *ilk*.  
   
-     **Not** bağımlı denetimlerin tanıtıcıları boş durumdayken baskın denetimi boyutlandırma dolu. Tüm ek yeniden boyutlandırma veya hizalama baskın denetimi temel alır.  
+     **Not** bağımlı denetimler tutamaçlarını boş baskın denetimi boyutlandırma tutamaçlarını düz bağlıdır. Baskın denetimi tüm daha fazla yeniden boyutlandırma veya hizalama temel alır.  
   
 ### <a name="to-change-the-dominant-control"></a>Baskın denetimi değiştirmek için  
   
-1.  Geçerli seçim dışında tüm seçili denetimleri tıklayarak temizleyin.  
+1.  Şu anda seçili tüm denetimlerin dışındaki tıklayarak geçerli seçimi temizleyin.  
   
-2.  Farklı bir denetimi ilk seçip önceki yordamı yineleyin.  
+2.  Farklı bir denetim ilk seçerek önceki yordamı yineleyin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler 
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birden çok denetim seçme](../windows/selecting-multiple-controls.md)   
  [Denetimleri seçme](../windows/selecting-controls.md)   
  [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)
-

@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 30e408d127e73b111e6ff464ea7530ba01beece3
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: 29b892f3e120db183082d6af97f9374f89e9e647
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570749"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643062"
 ---
 # <a name="how-to-complete-asynchronous-operations-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Zaman Uyumsuz İşlemleri Tamamlama
 Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsuz işlemler başlatmak ve işlemler tamamlandığında iş gerçekleştirmek için nasıl kullanılacağını gösterir.  
@@ -40,7 +40,7 @@ Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsu
   
      [!code-cpp[wrl-consume-async#2](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_1.cpp)]  
   
-     Zaman uyumsuz bir zamanlayıcı kullanmak için gerekli türleri Windows.System.Threading.h bildirir.  
+     `Windows.System.Threading.h` zaman uyumsuz bir zamanlayıcı kullanmak için gerekli türleri bildirir.  
   
      Öneririz, makineler'den `using namespace` kod daha okunabilir yapmak için .cpp dosyanızdaki yönergesi.  
   
@@ -122,7 +122,7 @@ Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsu
  [!code-cpp[wrl-consume-asyncOp#1](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_14.cpp)]  
   
 ### <a name="compiling-the-code"></a>Kod Derleniyor  
- Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-asyncOp.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
+ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-asyncOp.cpp` ve ardından aşağıdaki komutu çalıştırın bir **Visual Studio komut istemi** penceresi.  
   
  `cl.exe wrl-consume-asyncOp.cpp runtimeobject.lib`  
   

@@ -23,38 +23,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 23211293313135cb0341ac234014ae3c144b7fec
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6e8e7bcfef2b8ea9b908c949c9def24ebe0eba31
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891382"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641437"
 ---
 # <a name="string-editor"></a>Dize Düzenleyicisi
-Bir dize tablo kimlikleri, değerler ve uygulamanızın tüm dizeleri için resim yazıları listesini içeren bir Windows kaynaktır. Örneğin, durum çubuğu istemleri dize tabloda bulunur.  
+Dize tablosu kimlikleri, değerleri ve açıklamalı alt yazılar, uygulamanızın tüm dizeleri listesini içeren bir Windows kaynaktır. Örneğin, durum çubuğu komut istemlerini dize tablosunda yer alır.  
   
- Bir uygulama geliştirirken, birkaç dize tabloları olabilir — her bir dil veya koşul için bir tane. Ancak, yürütülebilir bir modülü yalnızca bir dize tablosu vardır. Farklı DLL'lere tabloları yerleştirirseniz çalışan bir uygulama çeşitli dize tablolara başvuruda bulunabilir.  
+ Bir uygulama geliştirirken birden çok dize tabloları olabilir — her dilini veya koşulunu biri. Ancak, yalnızca bir dize tablosu bir çalıştırılabilir modüle sahiptir. Tabloları farklı dll koyarsanız çalışan bir uygulama birden çok dize tabloları başvurabilirsiniz.  
   
- Dize tabloları uygulamanız farklı dillere yerelleştirme kolay hale getirir. Bir dize tabloda tüm dizeleri varsa dizeleri (ve diğer kaynaklar) kaynak kodunu değiştirmeden çevirerek uygulama yerelleştirebilirsiniz. Bu elle bulma ve kaynak dosyaları çeşitli dizelerde değiştirme daha genellikle daha iyi bir şeydir.  
+ Dize tabloları uygulamanızın farklı dillere yerelleştirilmesi kolaylaştırır. Tüm dizeler dize tablosunda, dizeleri (ve diğer kaynakları) kaynak kodunda değişiklik yapmadan çevirerek uygulama yerelleştirebilirsiniz. Bu el ile dizeleri bulma ve çeşitli kaynak dosyalarında değiştirme daha genellikle daha tercih edilir.  
   
  Dize Düzenleyicisi'ni kullanarak şunları yapabilirsiniz:  
   
--   [Bir veya daha fazla Ara](../windows/finding-a-string.md).  
+-   [Bir veya daha fazla dizeleri arama](../windows/finding-a-string.md).  
   
--   Hızlı bir şekilde [yeni girdileri eklemek](../windows/adding-or-deleting-a-string.md) dize tabloya.  
+-   Hızlı bir şekilde [yeni girişler ekleyin](../windows/adding-or-deleting-a-string.md) dize tablosu.  
   
 -   [Bir dizeyi bir kaynak dosyasından diğerine taşıma](../windows/moving-a-string-from-one-resource-file-to-another.md)  
   
--   [Yerinde kimliği, değer ve resim yazısı özelliklerini düzenleme kullanmak](../windows/changing-the-properties-of-a-string.md) ve hemen değişiklikleri görüntüleyin.  
+-   [Yerinde düzenleme kimliği, değer ve açıklamalı alt yazı özelliklerini kullanmak](../windows/changing-the-properties-of-a-string.md) ve hemen değişiklikleri görüntüleyin.  
   
 -   [Birden çok dizenin resim yazısı özelliğini değiştirme](../windows/changing-the-caption-property-of-multiple-strings.md)  
   
 -   [Dizeye biçimlendirme veya özel karakterler ekleme](../windows/adding-formatting-or-special-characters-to-a-string.md)  
   
     > [!NOTE]
-    >  Windows boş dize tabloları oluşturulmasına izin vermiyor. Bir dize tablosu ile hiçbir girdi oluşturursanız, kaynak dosyasını kaydettiğinizde, otomatik olarak silinir.  
+    >  Windows, boş dize tabloları oluşturulmasına izin vermiyor. Dize tablosu giriş yok oluşturursanız, kaynak dosyasını kaydettiğinizde, otomatik olarak silinir.  
   
- Kaynakları yönetilen projelere (olanlar ortak dil çalışma zamanı hedef) ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynakları dizeleri özelliklerine atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows Formları yerelleştirme](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme kaynaklarını kullanan](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ Yönetilen projelere kaynak (Bu ortak dil çalışma zamanını hedefleyen) ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows formlarını yerelleştirme](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme için kaynakların kullanarak](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
@@ -62,5 +62,4 @@ Bir dize tablo kimlikleri, değerler ve uygulamanızın tüm dizeleri için resi
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak düzenleyicileri](../windows/resource-editors.md)   
  [Dizeleri](http://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)   
- [Dizeler hakkında](http://msdn.microsoft.com/library/windows/desktop/ms647465.aspx)
-
+ [Dizeleri hakkında](http://msdn.microsoft.com/library/windows/desktop/ms647465.aspx)

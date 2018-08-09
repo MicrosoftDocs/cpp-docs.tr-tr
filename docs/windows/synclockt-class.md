@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e05a1be5d84db52573d3c3235936ecf82dde5894
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f6b27f45d3a9b9b308a56e1ac8f945969f8c49e2
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33892858"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643432"
 ---
 # <a name="synclockt-class"></a>SyncLockT Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -36,14 +36,14 @@ template <
 class SyncLockT;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `SyncTraits`  
- Bir kaynak sahipliğini alabilir türü.  
+### <a name="parameters"></a>Parametreler  
+ *SyncTraits*  
+ Bir kaynağın sahipliğini türü.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Özel gerçekleştirebileceğiniz bir türü temsil eder veya bir kaynak sahipliğini paylaşılan.  
+ Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.  
   
- SyncLockT sınıfı, örneğin, uygulamaya yardımcı olmak için kullanılan [SRWLock](../windows/srwlock-class.md) sınıfı.  
+ **SyncLockT** sınıfı kullanılır, örneğin, uygulamak için [SRWLock](../windows/srwlock-class.md) sınıfı.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -51,27 +51,27 @@ class SyncLockT;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockT::SyncLockT Oluşturucusu](../windows/synclockt-synclockt-constructor.md)|SyncLockT sınıfı yeni bir örneğini başlatır.|  
-|[SyncLockT::~SyncLockT Yıkıcısı](../windows/synclockt-tilde-synclockt-destructor.md)|SyncLockT sınıfı örneği deinitializes.|  
+|[SyncLockT::SyncLockT Oluşturucusu](../windows/synclockt-synclockt-constructor.md)|Yeni bir örneğini başlatır **SyncLockT** sınıfı.|  
+|[SyncLockT::~SyncLockT Yıkıcısı](../windows/synclockt-tilde-synclockt-destructor.md)|Örneği başlatılmasını geri alır **SyncLockT** sınıfı.|  
   
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockT::SyncLockT Oluşturucusu](../windows/synclockt-synclockt-constructor.md)|SyncLockT sınıfı yeni bir örneğini başlatır.|  
+|[SyncLockT::SyncLockT Oluşturucusu](../windows/synclockt-synclockt-constructor.md)|Yeni bir örneğini başlatır **SyncLockT** sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockT::IsLocked Metodu](../windows/synclockt-islocked-method.md)|Geçerli SyncLockT nesne bir kaynağa sahip olup olmadığını gösterir; diğer bir deyişle, SyncLockT nesnesidir *kilitli*.|  
-|[SyncLockT::Unlock Metodu](../windows/synclockt-unlock-method.md)|Varsa geçerli SyncLockT nesne tarafından tutulan kaynak denetimini serbest bırakır.|  
+|[SyncLockT::IsLocked Metodu](../windows/synclockt-islocked-method.md)|Belirtir olup olmadığını geçerli **SyncLockT** nesnesi bir kaynağa sahiptir; diğer bir deyişle, **SyncLockT** nesnedir *kilitli*.|  
+|[SyncLockT::Unlock Metodu](../windows/synclockt-unlock-method.md)|Serbest geçerli tarafından tutulan kaynak denetimi **SyncLockT** varsa, nesne.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SyncLockT::sync_ Veri Üyesi](../windows/synclockt-sync-data-member.md)|SyncLockT sınıfı tarafından temsil edilen temel alınan kaynak tutar.|  
+|[SyncLockT::sync_ Veri Üyesi](../windows/synclockt-sync-data-member.md)|Temel alınan kaynak tarafından temsil edilen tutar **SyncLockT** sınıfı.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `SyncLockT`  

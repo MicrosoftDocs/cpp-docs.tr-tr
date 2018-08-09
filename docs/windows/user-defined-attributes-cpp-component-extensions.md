@@ -1,5 +1,5 @@
 ---
-title: Kullanıcı tanımlı öznitelikleri (C++ bileşen uzantıları) | Microsoft Docs
+title: Kullanıcı tanımlı öznitelikler (C++ bileşen uzantıları) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,36 +16,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 22f8dfa7e78568f100b0c58c881b9e84cb47a149
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3e09d3c285c64f049cc8e1bb8aea1c5debe88932
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891772"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644134"
 ---
 # <a name="user-defined-attributes--c-component-extensions"></a>Kullanıcı Tanımlı Öznitelikler (C++ Bileşen Uzantıları)
-Özel öznitelikler bir arabirimi, sınıf veya yapı, yöntemi, parametresi veya numaralandırması meta genişletmenizi sağlar.  
+Özel öznitelik meta verileri bir arabirimi, sınıf veya yapı, yöntemi, parametre veya sabit listesi genişletmenizi sağlar.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- Tüm çalışma zamanları özel öznitelikler destekler.  
+ Tüm çalışma zamanları, özel öznitelikler destekler.  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- C + +/ CX öznitelikler yalnızca özellikleri destekler, ancak özniteliği oluşturucular ya da yöntemleri değil.  
+ C + +/ CX öznitelikleri yalnızca özellikleri destekler, ancak oluşturucular veya yöntemleri öznitelik değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
+ Derleyici seçeneği: `/ZW`  
   
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
- Özel öznitelikler yönetilen öğesinin meta verisi genişletmenizi sağlar. Daha fazla bilgi için bkz: [öznitelikleri](/dotnet/standard/attributes/index).  
+ Özel öznitelikler, bir yönetilen öğenin meta verileri genişletme sağlar. Daha fazla bilgi için [öznitelikleri](/dotnet/standard/attributes/index).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu konuda sunulan sözdizimi ve bilgi içinde sunulan bilgiler geçirileceği yöneliktir [özniteliği](../windows/attribute.md).  
+ İçinde sunulan bilgileri değiştirmek için bu konuda gösterilen sözdizimi ve bilgi yöneliktir [özniteliği](../windows/attribute.md).  
   
- Özel bir öznitelik türü tanımlama ve yaparak tanımlayabilirsiniz <xref:System.Attribute> bir taban sınıf türü için ve isteğe bağlı olarak uygulama <xref:System.AttributeUsageAttribute> özniteliği.  
+ Özel bir öznitelik türü tanımlama ve yaparak tanımlayabilirsiniz <xref:System.Attribute> bir temel sınıf türü için ve isteğe bağlı olarak uygulama <xref:System.AttributeUsageAttribute> özniteliği.  
   
- Örneğin, içinde Microsoft işlem Server (MTS) 1.0, işlemler, eşitleme, göre davranışı Yük Dengeleme ve benzeri ODL özel özniteliğini kullanarak türü kitaplığa eklenen özel GUID'ler aracılığıyla belirtildi. Bu nedenle, bir istemci bir MTS sunucusunun tür kitaplığını okuyarak onun özelliklerini belirlenemedi. .NET Framework'te tür kitaplığı analog meta verileri ve ODL özel öznitelik analog özel öznitelikler. Ayrıca, tür kitaplığı okuma türlerinde yansıma kullanarak benzerdir.  
+ Örneğin, içinde Microsoft işlem sunucusu (MTS) 1.0, işlemler, eşitleme ile ilgili davranışı Yük Dengeleme ve benzeri ODL özel özniteliğini kullanarak tür kitaplığına eklenen özel GUID'leri aracılığıyla belirtildi. Bu nedenle, bir istemci bir MTS sunucusunun, tür kitaplığı okuyarak özelliklerini belirleyebilir. .NET Framework tür kitaplığının analog meta verileri ve analog ODL özel özniteliğinin özel öznitelikler. Ayrıca, tür kitaplığı okuma, yansıma türlerini kullanarak benzerdir.  
   
  Daha fazla bilgi için bkz:  
   
@@ -53,15 +53,14 @@ ms.locfileid: "33891772"
   
 -   [Öznitelik parametre türleri](../windows/attribute-parameter-types-cpp-component-extensions.md)  
   
- Visual C++'ta imzalama derlemeler hakkında daha fazla bilgi için bkz: [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).  
+ Visual C++'ta imzalama derlemeler hakkında daha fazla bilgi için bkz. [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği:   **/CLR**  
+ Derleyici seçeneği: `/clr`  
   
 ### <a name="examples"></a>Örnekler  
- **Örnek**  
   
- Aşağıdaki örnek, özel bir öznitelik tanımlamak gösterilmektedir.  
+ Aşağıdaki örnek, özel bir öznitelik tanımlayın işlemi gösterilmektedir.  
   
 ```cpp  
 // user_defined_attributes.cpp  
@@ -78,9 +77,7 @@ ref struct Attr : public Attribute {
 ref class MyClass {};  
 ```  
   
- **Örnek**  
-  
- Aşağıdaki örnek, özel öznitelikler önemli özelliklerinden bazıları gösterilmektedir. Örneğin, bu örnek özel özniteliklerin ortak kullanım gösterir: tam olarak kendisine istemcilere açıklayabilirsiniz bir sunucu örneği.  
+ Aşağıdaki örnekte, özel öznitelikler önemli özelliklerinden bazıları gösterilmektedir. Örneğin, bu örnek özel özniteliklerin bir ortak kullanımı gösterilmektedir: tam olarak kendini istemcilere açıklamak bir sunucu örneği.  
   
 ```cpp  
 // extending_metadata_b.cpp  
@@ -171,13 +168,11 @@ Service Priority = 1
 Service Access = Read  
 ```  
   
- **Örnek**  
+ `Object^` Tür değişken veri türü yerine geçer. Aşağıdaki örnek, bir dizi alan özel bir öznitelik tanımlar `Object^` parametre olarak.  
   
- Nesne ^ türü variant veri türü yerine geçer. Aşağıdaki örnek, bir dizi nesnesinin alır özel bir öznitelik tanımlar ^ parametre olarak.  
+ Öznitelik bağımsız değişkenleri derleme zamanı sabit olması gerekir; Çoğu durumda, bunlar sabit değişmez değerleri olmalıdır.  
   
- Öznitelik bağımsız değişkenleri, derleme zamanı sabitleri olmalıdır; Çoğu durumda, bunlar sabit değişmez değerleri olmalıdır.  
-  
- Bkz: [TypeID](../windows/typeid-cpp-component-extensions.md) bir özel öznitelik bloğundan System::Type değerini döndürmek hakkında bilgi için.  
+ Bkz: [TypeID](../windows/typeid-cpp-component-extensions.md) özel öznitelik bloğundan System::Type değerini döndürmek hakkında bilgi için.  
   
 ```cpp  
 // extending_metadata_e.cpp  
@@ -195,9 +190,7 @@ public:
 public ref class SomeClass {};  
 ```  
   
- **Örnek**  
-  
- Çalışma zamanı özel öznitelik sınıfı ortak parçasını seri hale getirilebilir olmasını gerektirir.  Özel öznitelikler yazarken, özel özniteliğinin adlandırılmış bağımsız değişkenler için derleme zamanı sabitleri sınırlıdır.  (Bunu BITS sınıfı düzeninizi meta verilerde eklenen bir dizi olarak düşünün.)  
+ Çalışma zamanı özel öznitelik sınıfı ortak bölümünü seri hale getirilebilir olması gerekir.  Özel öznitelikler yazma, derleme zamanı sabitleri, özel öznitelik adlandırılmış bağımsız değişkenler sınırlıdır.  (Bunu meta sınıf düzeninizi eklenen BITS öğesinin bir dizisi olarak düşünün.)  
   
 ```cpp  
 // extending_metadata_f.cpp  

@@ -17,24 +17,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c9479180134e8a873e1d79f91deb3d29700d40a2
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 45cc86c873e7c45a7352f0035b2fd16e312e7c6c
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467176"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644452"
 ---
 # <a name="chaininterfacescasttounknown-method"></a>ChainInterfaces::CastToUnknown Yöntemi
-Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi IUnknown işaretçisi.  
+Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi için bir işaretçi olarak `IUnknown`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 __forceinline IUnknown* CastToUnknown();  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- IUnknown işaretçisi.  
+ Bir işaretçi `IUnknown`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** implements.h  

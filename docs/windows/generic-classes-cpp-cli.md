@@ -19,19 +19,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 751c7f9efe4f5db612419d5837cc2d6f304f43da
-ms.sourcegitcommit: d5d6bb9945c3550b8e8864b22b3a565de3691fde
+ms.openlocfilehash: deeb40e54c0324874d9c99a42a98e7e852394dc4
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39570678"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643195"
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 Genel bir sınıf, aşağıdaki biçimi kullanarak bildirilir:  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [attributes]  
 generic <class-key type-parameter-identifier(s)>  
 [constraint-clauses]  
@@ -45,7 +45,7 @@ class-body
 ## <a name="remarks"></a>Açıklamalar  
  Yukarıdaki söz diziminde aşağıdaki terimler kullanılır:  
   
- `attributes` (isteğe bağlı)  
+ *öznitelikleri* (isteğe bağlı)  
  Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
   
  *sınıf anahtarı*  
@@ -57,7 +57,7 @@ class-body
  *kısıtlama yan tümceleri*  
  (Değil virgülle ayrılmış) listesi **burada** yan tümceleri tür parametreleri için kısıtlamalar belirtme. Şu biçimi alır:  
   
- `where`  *türü parametre tanımlayıcısı*`:`*sınırlama listesi*   `...`  
+ `where`  *türü parametre tanımlayıcısı*`:`*sınırlama listesi*  `...`  
   
  *sınırlama listesi*  
  *sınıf veya arabirim*[`,` *...* ]  
@@ -429,7 +429,7 @@ ref struct Outer {
 };  
 ```  
   
- Dış tür\<int >:: iç dış tür ile aynı değil\<çift >:: iç.  
+ Türü `Outer<int>::Inner` türü ile aynı değil `Outer<double>::Inner`.  
   
  Gibi genel yöntemler genel sınıflardaki ek tür parametreleri için iç içe türü tanımlanabilir. İç ve dış sınıfında aynı tür parametresi adlarına kullanırsanız, iç tür parametresi dış tür parametresi gizler.  
   
@@ -449,7 +449,7 @@ ref class Outer {
   
  Derleyici, dış tür parametresine başvuran mümkün olduğundan, bu durumda bir uyarı üretecektir.  
   
- Oluşturulan iç içe geçmiş genel türler adlı, iç türü örtük olarak dış türün tür parametresi ile parametreli olsa bile dış türün tür parametresi iç türü için tür parametre listesinde bulunmaz. Yukarıdaki durumda, dış oluşturulan tür adını olacaktır\<int >:: iç\<dizesi >.  
+ Oluşturulan iç içe geçmiş genel türler adlı, iç türü örtük olarak dış türün tür parametresi ile parametreli olsa bile dış türün tür parametresi iç türü için tür parametre listesinde bulunmaz. Yukarıdaki durumda oluşturulan tür adını olacaktır `Outer<int>::Inner<string>`.  
   
  Aşağıdaki örnek, oluşturma ve iç içe geçmiş türler genel sınıfları kullanarak bağlantılı liste okuma gösterir.  
   
@@ -548,7 +548,7 @@ Reading nodes:
   
 -   Özellikleri, olayları, dizin oluşturucular ve işleçler kullanabileceğiniz kapsayan sınıfa genel tür parametrelerini dönüş değerleri, parametre veya ne zaman gibi yerel değişkenler olarak `ItemType` bir sınıfın bir tür parametresi:  
   
-    ```  
+    ```cpp  
     public ItemType MyProperty {}  
     ```  
   

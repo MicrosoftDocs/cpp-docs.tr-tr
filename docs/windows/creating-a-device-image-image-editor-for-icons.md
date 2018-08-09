@@ -22,33 +22,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d8fc1ce4bd5a6e125ece7461d100950f255dee44
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bbdc52cca73d568cb365deb345ec6465488e3b40
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873231"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641349"
 ---
 # <a name="creating-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
-Düzenleyici yeni simgesi veya imleci kaynak, görüntü oluştururken ilk görüntü (32 × 32, simgeler için 16 renk ve 32 x 32, imleçler için tek renkli) belirli bir stil oluşturur. Ardından ilk simgesi veya imleci görüntüleri farklı boyut ve stil ekleyin ve her ek görüntü, farklı görüntüleme cihazları için gerektiği gibi düzenleyin. Varolan bir görüntü türü ya da bir grafik programında oluşturulan bir bit eşlem kesme ve yapıştırma işlemi gerçekleştirerek görüntüyü da düzenleyebilirsiniz.  
+Yeni simgesi veya imleci kaynak oluşturduğunuzda **görüntü** Düzenleyicisi ilk oluşturur görüntü özel bir stili (32 x 32, 16 renk simgelerinin ve 32 x 32, tek renkli işaretçiler için). Ardından, ilk simgesi veya imleci için görüntüleri farklı boyut ve stil ekleyin ve ek her görüntü, farklı ekran cihazları için gerektiği gibi düzenleyin. Bir görüntü var olan bir görüntü türü veya bir grafik programında oluşturulan bir bit eşlem kesme ve yapıştırma işlemi gerçekleştirerek de düzenleyebilirsiniz.  
   
- Simgesi veya imleci kaynak açtığınızda [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md), resmin en yakın geçerli görüntü aygıtı eşleşen varsayılan olarak açılır.  
+ Simgesi veya imleci kaynak açtığınızda [Resim Düzenleyicisi](../windows/image-editor-for-icons.md), görüntünün en yakın geçerli görüntü cihazı eşleşen varsayılan olarak açılır.  
   
-### <a name="to-create-a-new-icon-or-cursor"></a>Yeni simgesi veya imleci oluşturmak için  
+### <a name="to-create-a-new-icon-or-cursor"></a>Yeni simgesi veya imleci oluşturma  
   
-1.  İçinde [kaynak görünümü](../windows/resource-view-window.md).rc dosyanızı sağ tıklayın ve ardından seçin **Ekle kaynak** kısayol menüsünden. (.Rc dosyanızda, bir imleç gibi varolan bir görüntü kaynağı zaten varsa yalnızca sağ tıklayarak **imleç** klasörü ve select **Ekle imleci** kısayol menüsünden.)  
+1.  İçinde [kaynak görünümü](../windows/resource-view-window.md), .rc dosyasına sağ tıklayın ve ardından seçin **kaynak Ekle** kısayol menüsünden. (Bir imleç gibi bir .rc dosyasında var olan bir görüntü kaynağı zaten varsa, yalnızca sağ tıklayabilirsiniz **imleç** klasörü ve select **imleci yerleştirin** kısayol menüsünden.)  
   
     > [!NOTE]
-    >  Projenizi bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
+    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  İçinde [kaynak Ekle iletişim kutusu](../windows/add-resource-dialog-box.md)seçin **simgesi** veya **imleç** tıklatıp **yeni**. Simgeler için bu simge kaynak, bir 32 x 32 ile 16-renk simgesi oluşturur. İmleçler, bir 32 x 32, tek renkli (2-color) görüntüsü oluşturulur.  
+2.  İçinde [kaynak Ekle iletişim kutusu](../windows/add-resource-dialog-box.md)seçin **simgesi** veya **imleç** tıklatıp **yeni**. Simgeler için bu bir 32 x 32 ile 16-renk simgesi bir simge kaynağı oluşturur. İmleçler, bir 32 x 32, tek renkli (2-color) görüntü oluşturulur.  
   
-     Bir artı işareti (**+**) yanındaki görüntü kaynak türü görünen **Ekle kaynak** iletişim kutusu, geldiğini araç şablonları kullanılabilir. Şablonları'nı genişletin, bir şablon seçin ve'artı işaretini tıklatın **yeni**.  
+     Bir artı işareti (**+**) görüntü kaynak türünü yanında **kaynak Ekle** iletişim kutusu, geldiğini araç şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin ve tıklayın artı işaretine tıklayın **yeni**.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

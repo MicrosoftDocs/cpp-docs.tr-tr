@@ -18,27 +18,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f8e3a1aba4040ce4e9f36cf15438cfd1c44492e4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 46c08686d2586801aea46c23e7105dc1b6ead639
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33873582"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643140"
 ---
 # <a name="grid-settings-dialog-box-image-editor-for-icons"></a>Kılavuz Ayarları İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntünüzü Kılavuz ayarları belirtmenize olanak tanır ve kılavuz çizgileri düzenlenen görüntü görüntüler. Satırlar görüntüyü düzenleme için yararlıdır, ancak görüntü bir parçası olarak kaydedilmez.  
+Görüntünüzü için kılavuz ayarları belirtmenize olanak tanır ve düzenlenen görüntüsünden kılavuz çizgilerini görüntüler. Satırları düzenleme görüntüsü için yararlıdır, ancak görüntünün kendisi bir parçası olarak kaydedilmez.  
   
  **Piksel Kılavuzu**  
- İşaretlendiğinde, her piksel geçici bir kılavuz görüntü Düzenleyicisi'nde görüntüler. Kılavuz yalnızca 4 × ve daha yüksek çözünürlüklerde görünür.  
+ Bu onay kutusu işaretlendiğinde, her pikselin çevresindeki bir kılavuz Resim Düzenleyicisi'nde görüntüler. Kılavuz, yalnızca 4 × ve daha yüksek çözünürlüklerde görünür.  
   
  **Döşeme**  
- Seçili olduğunda, görüntü düzenleyicisinde kılavuz aralığı değerleri tarafından belirtilen piksel bloklarını geçici bir kılavuz görüntüler.  
+ Seçili olduğunda, görüntü düzenleyicisinde kılavuz aralık değerleri tarafından belirtilen blokları piksel etrafında bir kılavuz görüntüler.  
   
  **Genişlik**  
- Her döşeme bloğunun genişliğini belirtir. Bit eşlemler düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren çizim durumunda faydalı olur.  
+ Her kutucuk bloğunun genişliğini belirtir. Bu, düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren bir bit eşlem yeniden çizilirken kullanışlıdır.  
   
  **Yükseklik**  
- Her döşeme bloğu yüksekliğini belirtir. Bit eşlemler düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren çizim durumunda faydalı olur.  
+ Her kutucuk blok yüksekliğini belirtir. Bu, düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren bir bit eşlem yeniden çizilirken kullanışlıdır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Yok.  
@@ -46,4 +46,3 @@ Görüntünüzü Kılavuz ayarları belirtmenize olanak tanır ve kılavuz çizg
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)   
  [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
-

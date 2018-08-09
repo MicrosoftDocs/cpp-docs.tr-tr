@@ -17,29 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8fcb46d4eeb4cede778aefc4210a022b08a22ca9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8fdd9efe3b60fa9dc53d1c63191e19657cb70d75
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33879893"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39641746"
 ---
 # <a name="displaybind"></a>displaybind
-Kullanıcıya bağlanabilir olarak görüntülenmelidir bir özelliği belirtir.  
+Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
+```cpp  
 [displaybind]  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Displaybind** C++ özniteliğine sahip ile aynı işlevselliği [displaybind](http://msdn.microsoft.com/library/windows/desktop/aa366804) MIDL özniteliği.  
+ **Displaybind** C++ özniteliği ile aynı işlevlere sahip [displaybind](http://msdn.microsoft.com/library/windows/desktop/aa366804) MIDL özniteliği.  
   
 ## <a name="example"></a>Örnek  
- Örneğin bkz [bağlanabilirse](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **displaybind**.  
+ Örneğin bakın [bağlanabilir](../windows/bindable.md) nasıl kullanılacağına ilişkin bir örnek **displaybind**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -47,12 +45,12 @@ Kullanıcıya bağlanabilir olarak görüntülenmelidir bir özelliği belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|Arabirim yöntemi|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|Arabirim yöntemi|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
- Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
+ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   

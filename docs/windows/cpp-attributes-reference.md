@@ -15,17 +15,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 29c3aacf63396e96b4520fc849e082c6781e5d64
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 24ca39b307decbf88338295ba2650b935eca2d4f
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39460912"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39645505"
 ---
 # <a name="c-attributes-reference"></a>C++ Öznitelikleri Başvurusu
 Microsoft, bir COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme basitleştiren bir öznitelik kümesini tanımlar. Öznitelikler, kaynak dosyaları eklediğinizde, derleyici sağlayıcısı kod ekleyin veya oluşturulan nesne dosyaları kodu değiştirmek için DLL'ler ile çalışır.  
   
- **Not:** C++ standart özniteliklerini arıyorsanız bkz [öznitelikleri](../cpp/attributes.md).  
+ > [!NOTE] 
+ > C++ standart özniteliklerini arıyorsanız bkz [öznitelikleri](../cpp/attributes.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Kavramları](../windows/attributed-programming-concepts.md)  

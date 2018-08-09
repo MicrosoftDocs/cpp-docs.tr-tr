@@ -19,42 +19,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95d9051e44216de9a64b68fc112fe8f17de112e3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8b220f51b0c5bf8bc139b3c7ccdb1953de310ec4
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882082"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644063"
 ---
 # <a name="creating-a-menu"></a>Menü Oluşturma
 > [!NOTE]
->  Kaynak penceresi Express sürümlerinde kullanılabilir değil.  
+>  **Kaynak penceresi** Express sürümlerinde kullanılamaz.  
   
 ### <a name="to-create-a-standard-menu"></a>Standart menü oluşturmak için  
   
-1.  Gelen **Görünüm** menüsünde tıklatın **kaynak görünümü** ve ardından sağ tıklayın **menü** başlık ve seçin **kaynak ekleme**. Seçin **menü**.  
+1.  Gelen **görünümü** menüsünde tıklatın **kaynak görünümü** ve ardından sağ tıklayarak **menü** başlık ve seçin **kaynak Ekle**. Seçin **menü**.  
   
-2.  Seçin **yeni öğe** menü çubuğunda kutusuna ("Buraya türü" içeren dikdörtgen).  
+2.  Seçin **yeni öğe** menü çubuğundaki kutusuna ("Buraya türü" içeren dikdörtgen).  
   
-     ![Menü düzenleyicisi yeni öğe kutusunda](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")  
+     ![Menü Düzenleyicisi'nde yeni bir öğe kutusu](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")  
 Yeni öğe kutusu  
   
-3.  Yeni menünüze, örneğin, "Dosyası" için bir ad yazın.  
+3.  Yeni menünüzde, örneğin, "File" için bir ad yazın.  
   
-     Yazdığınız metin görünür **menü** Düzenleyicisi ve **resim yazısı** kutusunda [Özellikler penceresini](/visualstudio/ide/reference/properties-window). Her iki konumda yeni menünüze için özelliklerini düzenleyin.  
+     Her ikisinde de, yazdığınız metni görünür **menü** Düzenleyicisi ve **açıklamalı alt yazı** kutusunda [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Her iki konumda yeni menünüzde özelliklerini düzenleyebilirsiniz.  
   
-     Menü çubuğunda, yeni menü bir adı verilen sonra yeni öğe kutusunda (başka bir menü eklemenize izin vermek için) sağa kaydırır ve menü komutlarını ekleyebilmek için ilk menüsünün altında başka bir yeni öğe kutusu açılır.  
+     Menü çubuğunda yeni menünüzde bir adı verilen sonra yeni öğe kutusunu (başka bir menü eklemenize izin vermek için) sağa kaydırır ve menü komutları ekleyebilmek için ilk menünüzün başka bir yeni öğe kutusu açılır.  
   
      ![Genişletilmiş yeni öğe kutusunda](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")  
-Menü adını yazdıktan sonra gölgeye odaklanılan yeni öğe kutusu  
+Menü adını yazdıktan sonra yeni öğe kutusu odaklanılan kaydırılacağı uzaklık.  
   
     > [!NOTE]
-    >  Menü çubuğunda tek öğesi menüsü oluşturmak için açılan özelliğini False olarak ayarlayın.  
+    >  Menü çubuğunda bir tek öğesi menüsü oluşturmak için **açılan** özelliğini **False**.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

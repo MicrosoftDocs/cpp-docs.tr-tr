@@ -20,19 +20,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d72506e3f384a784bce4d159e8e76e88098c79f7
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: e7b1f849aff584da6f575bc822a71acc683520e6
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461815"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646325"
 ---
 # <a name="attribute"></a>özniteliği
 Özel bir öznitelik oluşturmanıza olanak sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 [ attribute(  
    AllowOn,  
    AllowMultiple=boolean,  
@@ -40,7 +40,7 @@ ms.locfileid: "39461815"
 ) ]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *AllowOn*  
  Özel öznitelik uygulanabilir dil öğelerini belirtir. Varsayılan değer `System::AttributeTargets::All` (bkz [System::AttributeTargets](https://msdn.microsoft.com/library/system.attributetargets.aspx)).  
   
@@ -48,16 +48,16 @@ ms.locfileid: "39461815"
  Özel öznitelik için bir yapı art arda uygulanabilir olup olmadığını belirtir. FALSE varsayılan değerdir.  
   
  *Devralınan*  
- Öznitelik alt sınıflar tarafından devralınmaz olup olmadığını gösterir. Derleyici, bu işlev için hiçbir özel destek sağlar; Bu öznitelik Tüketici (örneğin, yansıma) bu bilgileri dikkate iş. Varsa *devralınan* doğru ise, öznitelik devralınır. Varsa *AttributeUsage* doğru ise, öznitelik ise türetilen üyesinde; birikir *AttributeUsage* yanlış, öznitelik geçersiz kılma (Değiştir Devralmada veya). Varsa *devralınan* yanlış, öznitelik devralınmaz. Varsayılan değer True'dur.  
+ Öznitelik alt sınıflar tarafından devralınmaz olup olmadığını gösterir. Derleyici, bu işlev için hiçbir özel destek sağlar; öznitelik tüketici iş (`Reflection`, örneğin) bu bilgileri uygular. Varsa *devralınan* doğru ise, öznitelik devralınır. Varsa *AttributeUsage* doğru ise, öznitelik ise türetilen üyesinde; birikir *AttributeUsage* yanlış, öznitelik geçersiz kılma (Değiştir Devralmada veya). Varsa *devralınan* yanlış, öznitelik devralınmaz. Varsayılan değer True'dur.  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  `attribute` Özniteliği artık kullanım dışı.  Kullanıcı tanımlı attirbutes oluşturmak için doğrudan ortak dil çalışma zamanı öznitelik System.Attribute'ı kullanın.  Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../windows/user-defined-attributes-cpp-component-extensions.md).  
+>  **Özniteliği** özniteliği artık kullanım dışı.  Ortak dil çalışma zamanı özniteliğini kullan `System.Attribute` için doğrudan kullanıcı tanımlı attirbutes oluşturmak için. Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../windows/user-defined-attributes-cpp-component-extensions.md).  
   
- Tanımladığınız bir [özel öznitelik](../windows/custom-attributes-cpp.md) yerleştirerek `attribute` yönetilen bir sınıf veya yapı tanımı özniteliği. Sınıf özel öznitelik adıdır. Örneğin:  
+ Tanımladığınız bir [özel öznitelik](../windows/custom-attributes-cpp.md) yerleştirerek **özniteliği** yönetilen bir sınıf veya yapı tanımı özniteliği. Sınıf özel öznitelik adıdır. Örneğin:  
   
-```  
+```cpp  
 [ attribute(Parameter) ]  
 public ref class MyAttr {};  
 ```  
@@ -115,7 +115,7 @@ ref class ClassC {};
   
  Bkz: [kullanıcı tanımlı öznitelikler](../windows/user-defined-attributes-cpp-component-extensions.md) öznitelik hedefleri hakkındaki bir tartışmaya.  
   
- `attribute` Özniteliğine sahip bir *AttributeUsage* özel özniteliği tek kullanılıp kullanılmadığını belirten bir parametre veya multiuse (görünebilir birden çok kez aynı varlığa).  
+ **Özniteliği** özniteliğine sahip bir *AttributeUsage* özel özniteliği tek kullanılıp kullanılmadığını belirten bir parametre veya multiuse (görünebilir birden çok kez aynı varlığa).  
   
 ```cpp  
 // cpp_attr_ref_attribute_3.cpp  
@@ -130,21 +130,21 @@ ref struct MyAttr {
 ref class ClassA {};  
 ```  
   
- Özel öznitelik sınıfları türetilir doğrudan veya dolaylı olarak <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>, hızlı ve kolay meta veri özniteliği tanımlarını tanımlayan hale getirir. `attribute` Özniteliği gelir System::Attribute, içinden devralma açık türetme gerekli değildir:  
+ Özel öznitelik sınıfları türetilir doğrudan veya dolaylı olarak <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>, hızlı ve kolay meta veri özniteliği tanımlarını tanımlayan hale getirir. **Özniteliği** özniteliği gelir içinden devralma `System::Attribute`, açık türetme gerekli değildir:  
   
-```  
+```cpp  
 [ attribute(Class) ]  
 ref class MyAttr  
 ```  
   
  eşdeğerdir  
   
-```  
+```cpp  
 [ attribute(Class) ]  
 ref class MyAttr : System::Attribute   // OK, but redundant.  
 ```  
   
- `attribute` için bir diğer addır <xref:System.AttributeUsageAttribute?displayProperty=fullName> (değil AttributeAttribute; özniteliği adlandırma kuralı için bir özel durum budur).  
+ **öznitelik** için bir diğer addır <xref:System.AttributeUsageAttribute?displayProperty=fullName> (değil AttributeAttribute; özniteliği adlandırma kuralı için bir özel durum budur).  
   
 ## <a name="requirements"></a>Gereksinimler  
   

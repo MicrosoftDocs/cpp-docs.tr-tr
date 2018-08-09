@@ -17,42 +17,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 687a8a70d7f0a5381160a6515c80f6940cc0a434
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 96843c9d977b15d7fe2c645c8f655cd59a42e401
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891291"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39642055"
 ---
 # <a name="viprogid"></a>vi_progid
-Sürüm bağımsız form ProgID belirtir.  
+ProgID sürümden bağımsız biçimi belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      [ vi_progid(  
+[ vi_progid(  
    name  
 ) ];  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  *Adı*  
- Nesnesini temsil eden sürüm bağımsız ProgID.  
+ Sürüm bağımsız ProgID temsil eden nesne.  
   
- ProgID COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) okunabilir bir sürümü var.  
+ Progid'ler COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) kullanıcı tarafından okunabilen bir sürümü var.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Vi_progid** C++ öznitelik bir COM nesnesi için sürüm bağımsız bir ProgID belirtmenize olanak sağlar. Formun bir ProgID sahip *name1.name2.version*. Sürüm bağımsız bir ProgID sahip olmayan bir *sürüm*. Her ikisi de belirlemek mümkündür **ProgID** ve **vi_progid** bir coclass'ı öznitelikleri. Belirtmezseniz, **vi_progid**, sürüm bağımsız ProgID tarafından belirtilen değerdir [ProgID](../windows/progid.md) özniteliği.  
+ **Vi_progid** C++ özniteliği sürümden bağımsız bir COM nesnesi için bir ProgID belirtmenize olanak sağlar. Bir ProgID formundadır *name1.name2.version*. Sürümden bağımsız bir ProgID bulunmayan bir *sürüm*. Her ikisini de belirtmek mümkündür `progid` ve **vi_progid** üzerinde öznitelikleri bir `coclass`. Siz belirtmezseniz **vi_progid**, sürüm bağımsız ProgID tarafından belirtilen değerdir [ProgID](../windows/progid.md) özniteliği.  
   
- **vi_progid** gelir **coclass** belirtirseniz, diğer bir deyişle, öznitelik **vi_progid**, belirtme olarak aynı şeydir **coclass'ı** ve **vi_progid** öznitelikleri.  
+ **vi_progid** gelir `coclass` belirtirseniz, diğer bir deyişle, öznitelik **vi_progid**, belirtmekle aynı şeydir `coclass` ve **vi_progid** öznitelikleri.  
   
- **Vi_progid** özniteliği belirtilen adla otomatik olarak kaydedilmesi için bir sınıf neden olur. Oluşturulan .idl dosya ProgID değeri görüntülenmez.  
+ **Vi_progid** özniteliği bir sınıf belirtilen adla otomatik olarak kaydedilecek neden olur. Oluşturulan .idl dosyasının ProgID değeri görüntülemez.  
   
- ATL projelerinde varsa [coclass](../windows/coclass.md) özniteliği de mevcut, belirtilen ProgID tarafından kullanılan **GetVersionIndependentProgID** işlevi (tarafından eklenen **coclass'ı** özniteliği).  
+ ATL projelerinde, [coclass'ı](../windows/coclass.md) öznitelik varsa Ayrıca, belirtilen ProgID tarafından kullanılan `GetVersionIndependentProgID` işlevi (tarafından eklenen `coclass` özniteliği).  
   
 ## <a name="example"></a>Örnek  
- Bkz: [coclass](../windows/coclass.md) bir örnek kullanımı, örneğin **vi_progid**.  
+ Bkz: [coclass'ı](../windows/coclass.md) örnek kullanımını örneğin **vi_progid**.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -60,9 +59,9 @@ Sürüm bağımsız form ProgID belirtir.
   
 |||  
 |-|-|  
-|**Uygulandığı öğe:**|**sınıf**, `struct`|  
-|**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|Yok.|  
+|**İçin geçerlidir**|**sınıf**, **yapısı**|  
+|**Tekrarlanabilir**|Hayır|  
+|**Gerekli öznitelikleri**|Yok.|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  

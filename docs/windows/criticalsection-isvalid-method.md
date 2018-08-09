@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: add94320728ad21d07a1953f14ac911883580982
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 9e89d7aa8bd35af3fa78d773b84276d560101942
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461242"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644823"
 ---
 # <a name="criticalsectionisvalid-method"></a>CriticalSection::IsValid Yöntemi
 Geçerli kritik bölüm geçerli olup olmadığını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 bool IsValid() const;  
 ```  
   

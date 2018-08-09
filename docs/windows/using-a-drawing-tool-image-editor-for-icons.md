@@ -19,58 +19,57 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 17211518789113c11194314b57b741ab2b274ddc
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8345829e5d561ead3be0052770e022f704eabc3b
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33891678"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39646130"
 ---
 # <a name="using-a-drawing-tool-image-editor-for-icons"></a>Çizim Aracı Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
-Görüntü Düzenleyicisi çizim ve tüm çalışacak şekilde araçları silme serbest: Aracı'nı seçin ve gerekirse, [ön ve arka plan renklerini seçin](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) , boyutu ve şekli seçenekleri. Ardından işaretçiyi görüntüye taşıyın ve tıklatın veya çizme ve silmek için sürükleyin.  
+Resim Düzenleyicisi çizim ve aynı şekilde tüm iş araçları silme serbest: Aracı'nı seçin ve gerekirse [ön plan ve arka plan renklerini seçin](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) , boyutu ve şekli seçenekleri. Ardından görüntüyü işaretçiyi ve tıklar veya çizmek ve silmek için sürükleyin.  
   
- Seçtiğinizde, **silme** aracı **fırça** aracı veya **havalı fırça** aracı, seçenek belirleyici bu aracın seçeneklerini görüntüler.  
+ Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçenek belirleyici, Aracı'nın seçenekleri görüntüler.  
   
 > [!TIP]
->  Yerine **silme** aracı bulduğunuz, arka plan rengiyle çizim araçlarından birini çizmek daha kolay.  
+>  Yerine **Silgi** aracı bulduğunuz, çizim araçlarından birini arka plan rengiyle çizme daha kolay.  
   
- Çizim Araçları herhangi birinden seçebilirsiniz **görüntü Düzenleyicisi** araç veya **görüntü** menüsü.  
+ Çizim araçlarından herhangi birinden seçebilirsiniz **Resim Düzenleyicisi** araç veya **görüntü** menüsü.  
   
-### <a name="to-select-and-use-a-drawing-tool-from-the-image-editor-toolbar"></a>Seçin ve görüntü Düzenleyicisi araç çubuğundan çizim aracı kullanma  
+### <a name="to-select-and-use-a-drawing-tool-from-the-image-editor-toolbar"></a>Seçin ve Resim Düzenleyicisi araç çubuğundan bir çizim aracı kullanma  
   
-1.  Düğme tıklatıldığında **görüntü Düzenleyicisi** araç.  
+1.  Bir düğmeye tıklayarak **Resim Düzenleyicisi** araç çubuğu.  
   
-    -   **Silme** aracı paints görüntünün geçerli arka plan rengiyle üzerinden sol fare düğmesine bastığınızda.  
+    -   **Silgi** aracı paints geçerli arka plan rengiyle görüntü üzerinden farenin sol düğmesine bastığınızda.  
   
-    -   **Kalem** aracı çizer freehand bir piksel cinsinden bir sabit genişliği.  
+    -   **Kalem** aracı bir piksel cinsinden bir sabit genişliği freehand çizer.  
   
-    -   **Seçenek belirleyici belirler fırça aracın şekli ve boyutu**.  
+    -   **Seçenek belirleyici belirler Fırça Aracı'nın şekil ve boyut**.  
   
-    -   **Havalı fırça** aracı renk piksel fırça merkezi çevresinde rastgele dağıtır.  
+    -   **Kabı** aracı fırçanın merkezi etrafındaki renk piksel rastgele dağıtır.  
   
         > [!TIP]
-        >  Araç ipuçları görünür üzerinde düğmelerin üzerine imleci getirdiğinizde, [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md). Bu ipuçları, burada sözü edilen belirli düğmeleri belirlemenize yardımcı olur.  
+        >  Araç ipuçları, üzerinde düğmelerin üzerine imleci fareyle geldiğinizde görünür [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md). Bu ipuçlarını burada bahsedilen belirli düğmelerin belirlemenize yardımcı olur.  
   
 2.  Gerekirse, renk ve fırça seçin:  
   
-    -   İçinde [renk paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengini seçmek için sol fare düğmesini veya bir arka plan rengi seçmek için fareyi sağ tıklatın.  
+    -   İçinde [renkler paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengi seçmesini farenin sol düğmesine veya arka plan rengi seçmesini sağ fare düğmesine tıklayın.  
   
-    -   İçinde [seçenekleri Seçici](../windows/toolbar-image-editor-for-icons.md), kullanmak istediğiniz fırça temsil eden bir şekli tıklatın.  
+    -   İçinde [seçenekleri Seçici](../windows/toolbar-image-editor-for-icons.md), kullanmak istediğiniz fırça temsil eden bir şekle tıklayın.  
   
-3.  Boyama ve resim çizim başlatmak istediğiniz yeri işaret eder. İşaretçi şekli seçtiğiniz aracı göre değişir.  
+3.  Çizim başlamak istediğiniz görüntüyü veya boyama konumunda gelin. İşaretçi şekli seçtiğiniz aracı göre değişir.  
   
-4.  Sol fare düğmesini (ön plan rengini) veya (için arka plan rengi) farenin sağ düğmesine basın ve bunu siz çizim basılı tutun.  
+4.  Farenin sol düğmesine (için ön plan rengini) veya (için arka plan rengi) sağ fare düğmesine basın ve bu gibi çizim basılı tutun.  
   
-### <a name="to-select-and-use-a-drawing-tool-from-the-image-menu"></a>Seçin ve görüntü menüsünde bir çizim aracı kullanma  
+### <a name="to-select-and-use-a-drawing-tool-from-the-image-menu"></a>Seçin ve Görüntü menüsü'nden bir çizim aracı kullanma  
   
-1.  Tıklatın **görüntü** menü ve select **Araçları** komutu.  
+1.  Tıklayın **görüntü** menü ve select **Araçları** komutu.  
   
-2.  Geçişli alt menüsünde kullanmak istediğiniz aracı seçin.  
+2.  Basamaklı alt menüsünde kullanmak istediğiniz aracı seçin.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
+ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
- Gereksinimler  
-  
+## <a name="requirements"></a>Gereksinimler  
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
@@ -78,4 +77,3 @@ Görüntü Düzenleyicisi çizim ve tüm çalışacak şekilde araçları silme 
  [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)   
  [Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)   
  [Renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md)
-

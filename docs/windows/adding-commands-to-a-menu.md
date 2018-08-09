@@ -21,47 +21,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e3564a808d39aa81ed3b45a1bc5812b285199e04
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c0c744e920c71b74d9296e6961add704435658fe
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856325"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39644735"
 ---
 # <a name="adding-commands-to-a-menu"></a>Menüye Komut Ekleme
-### <a name="to-add-commands-to-a-menu"></a>Menüye komut eklemek için  
+### <a name="to-add-commands-to-a-menu"></a>Bir menü komutları eklemek için  
   
 1.  [Menü oluşturmak](../windows/creating-a-menu.md).  
   
-2.  Örneğin, dosya bir menü adına tıklayın.  
+2.  Örneğin, menü adları tıklayın **dosya**.  
   
-     Her menüye genişletin ve komutlar için yeni bir öğe kutusu kullanıma sunar. Örneğin, komutları yeni Ekle açın ve bir dosya menüsüne kapatın.  
+     Her menüsünü genişletin ve komutlar için yeni bir öğe kutusu kullanıma sunar. Örneğin, komutlar ekleyebilirsiniz **yeni**, **açık**, ve **Kapat** için bir **dosya** menüsü.  
   
-3.  Yeni öğe kutusunda, yeni menü komutu için bir ad yazın.  
+3.  Yeni öğe kutuya yeni bir menü komutu için bir ad yazın.  
   
     > [!NOTE]
-    >  Menü Düzenleyici hem de yazdığınız metin görünür **resim yazısı** kutusunda [Özellikler penceresini](/visualstudio/ide/reference/properties-window). Her iki konumda yeni menünüze için özelliklerini düzenleyin.  
+    >  Her ikisinde de, yazdığınız metni görünür **menü** Düzenleyicisi ve **açıklamalı alt yazı** kutusunda [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Her iki konumda yeni menünüzde özelliklerini düzenleyebilirsiniz.  
   
     > [!TIP]
-    >  Menü komutunu seçmek kullanıcının sağlayan bir kısayol tuşu (sık kullanılan tuş) tanımlayabilirsiniz. Yazın ve işareti (&) anımsatıcı belirtmek için bir harf önünde. Kullanıcı, o harfi yazarak menü komutu seçebilirsiniz.  
+    >  Menü komutunu seçmesini sağlayan bir kısayol tuşu (kısayol tuşu) tanımlayabilirsiniz. Ve işareti yazın (`&`) anımsatıcı belirtmek için bir harf önünde. Kullanıcı, harf yazarak menü komutunu seçebilir.  
   
-4.  Özellikler penceresinde uygulamak menü komut özellikleri seçin. Ayrıntılar için bkz [menü komut özellikleri](../windows/menu-command-properties.md).  
+4.  İçinde **özellikleri** menü uygulanan özellikleri komut penceresinde, seçin. Ayrıntılar için bkz [menü komut özellikleri](../windows/menu-command-properties.md).  
   
-5.  İçinde **istemi** Özellikler penceresinde kutusuna, uygulamanızın durum çubuğunda görünmesini istem dizesi yazın.  
+5.  İçinde **istemi** kutusunda **özellikleri** penceresinde, uygulamanızın durum çubuğunda görüntülenmesini istediğiniz istem dizesi yazın.  
   
-     Bu, oluşturduğunuz menü komutu ile aynı kaynak tanımlayıcıyla dize tablosunda bir giriş oluşturur.  
+     Bu, aynı kaynak tanımlayıcısı olarak oluşturduğunuz menü komutu ile dize tablosunda bir giriş oluşturur.  
   
     > [!NOTE]
-    >  Komut istemlerini ile menü öğesi için yalnızca uygulayabileceğiniz bir **açılan** özelliği **doğru**. Örneğin, alt menü öğeleri varsa en üst düzey menü öğeleri istemleri olabilir. Ne olacağını belirtmek için bir istem amacı olan bir kullanıcı menü öğesi tıklarsa.  
+    >  Komut istemlerini ile menü öğesi için yalnızca uygulayabileceğiniz bir **açılan** özelliği **True**. Örneğin, bunlar alt menü öğeleri varsa en üst düzey menü öğeleri istemleri olabilir. Amacı, bir **istemi** ne olacağını belirtmek için bir kullanıcı menü öğesini tıklatırsa.  
   
-6.  Tuşuna **ENTER** menü komut tamamlanamadı.  
+6.  Tuşuna **Enter** menü komutu tamamlamak için.  
   
-     Ek menü komutlarını oluşturabilmesi için yeni öğe kutusu seçilidir.  
+     Ek menü komutlarını oluşturmak için yeni bir öğe kutusunda seçilir.  
   
-
-  
- **Gereksinimler**  
-  
+## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

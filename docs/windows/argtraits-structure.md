@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 667aa3d2d29e4ce541d957b20b2246380e237a6b
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: df5f341382b7f9594d740b7e47fbb53b53188d75
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462049"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643127"
 ---
 # <a name="argtraits-structure"></a>ArgTraits Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp  
 template<typename TMemberFunction>  
 struct ArgTraits;  
 template<typename TDelegateInterface>  
@@ -117,7 +117,7 @@ template<
 struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)>;  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
+### <a name="parameters"></a>Parametreler  
  *TMemberFunction*  
  TypeName parametresi herhangi eşleşemez bir ArgTraits yapısı için `Invoke` metodu imzası.  
   
@@ -152,7 +152,7 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
  Dokuzuncu bağımsız değişkeninin türü `Invoke` yöntemi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ArgTraits` Yapıyı, arabirimi ve belirtilen bir dizi parametre içeren bir anonim üye işlevi belirtilen temsilci bildirir.  
+ **ArgTraits** yapıyı, arabirimi ve belirtilen bir dizi parametre içeren bir anonim üye işlevi belirtilen temsilci bildirir.  
   
 ## <a name="members"></a>Üyeler  
   

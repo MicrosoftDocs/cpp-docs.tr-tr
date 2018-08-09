@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 36ae694365b58cb10666e5d8af67269b2c4f125c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a32fe0e66a8f61bc17e4512f63705635cd8b5263
+ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33889377"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39643682"
 ---
 # <a name="srwlocklockexclusive-method"></a>SRWLock::LockExclusive Yöntemi
-Özel modda SRWLock nesneyi alır.  
+Alması bir **SRWLock** özel modda nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,12 +37,12 @@ static SyncLockExclusive LockExclusive(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `lock`  
- SRWLock nesnesine işaretçi.  
+### <a name="parameters"></a>Parametreler  
+ *lock*  
+ İşaretçi bir **SRWLock** nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- SRWLock nesne özel modda.  
+ Bir **SRWLock** özel modda nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** corewrappers.h  
