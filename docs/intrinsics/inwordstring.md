@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 073c1303661aece3340f9ac84d37ccf23e29d556
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb3f563d94d2e7685c1a83e497b1db082f131842
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333368"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465179"
 ---
 # <a name="inwordstring"></a>__inwordstring
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Belirtilen bağlantı noktası kullanımından veri okuyan `rep insw` yönergesi.  
+ Belirtilen bağlantı noktası kullanarak verileri okuyan `rep insw` yönergesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,20 +48,20 @@ void __inwordstring(
  Bağlantı noktasından okunan veriler burada yazılır.  
   
  [in] `Count`  
- Okunacak veri sözcükleri sayısı.  
+ Veri okumak için sözcük sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__inwordstring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__inwordstring`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

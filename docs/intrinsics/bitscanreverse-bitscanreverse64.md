@@ -21,17 +21,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35d51f3e7eaf0daeca006ff669398c9a3727a098
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9fe9fc90556c15cdab13f68647f07b877aa15abf
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323657"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465283"
 ---
 # <a name="bitscanreverse-bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- En önemli bit (MSB) maskesi verilerden kümesi bit (1) için en az önemli bit (LSB'si) arayın.  
+ En az önemli bit (LSB'si) belirlenen bitin (1) için en anlamlı bit (MSB) maskesi verileri arayın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,20 +48,20 @@ unsigned char _BitScanReverse64(
   
 #### <a name="parameters"></a>Parametreler  
  [out] `Index`  
- Bulunan bit konumunu bit ayarlamak ilk (1) ile yüklenir.  
+ Bulunan bit konumunu ilk set bit (1) ile yüklendi.  
   
  [in] `Mask`  
- Arama için 32 bit veya 64-bit değer.  
+ Aranacak 32 bit veya 64-bit değeri.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Sıfır olmayan IF `Index` kümesi BITS bulunursa kümesi veya 0 oluştu.  
+ Gösterimiyse `Index` kümesi veya 0 biri ise hiçbir belirlenmiş bitleri bulunamadı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_BitScanReverse`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
-|`_BitScanReverse64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]||  
+|`_BitScanReverse`|x86, ARM, x64|\<intrin.h >|  
+|`_BitScanReverse64`|ARM, x64||  
   
 ## <a name="example"></a>Örnek  
   
@@ -107,7 +107,7 @@ Enter a positive integer as the mask:
 Mask: 12 Index: 3  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

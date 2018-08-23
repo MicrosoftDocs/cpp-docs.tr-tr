@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a9f73b401d953c026c60d504fbb016838720b7c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bf41c1c91d8c0b5d2d7626d1fc0eee67aa96ff32
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329351"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465828"
 ---
 # <a name="stosw"></a>__stosw
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Bir depolama dize yönergesi oluşturur (`rep stosw`).  
   
@@ -48,20 +48,20 @@ void __stosw(
  Depolamak için veriler.  
   
  [in] `Count`  
- Yazılacak sözcükler Blok uzunluğu.  
+ Yazılacak sözcük Blok uzunluğu.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__stosw`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__stosw`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonuç word olan `Data` bloğunun yazılan `Count` içinde sözcükleri `Dest` dize.  
+ Sonuç, sözcüktür `Data` bloğu yazılmış `Count` içinde sözcükleri `Dest` dize.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -87,7 +87,7 @@ int main()
 0 128 128 0  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

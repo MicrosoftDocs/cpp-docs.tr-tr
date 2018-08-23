@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4fd8aebb3f9a4f0078c8174aa25b9abb9378f1b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f70588ca17a2bde34de6a16b62b18fa6125b08c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333635"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464508"
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Genişletilmiş x64 yayar sürüm numarasıyla kesilmesi tek duyarlıklı Floating-Point 64-Bit tamsayı Convert (`cvttss2si`) yönerge.  
+ Genişletilmiş x64 yayan kesilmesi tek duyarlıklı Floating-Point numarası 64-Bit tamsayıya dönüştürme sürümünü (`cvttss2si`) yönerge.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,23 +39,23 @@ __int64 _mm_cvttss_si64x(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `value`  
- Bir `__m128` tek duyarlıklı kayan nokta değerlerini içeren yapısı.  
+ Bir `__m128` tek duyarlıklı kayan nokta değerleri içeren yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bir 64-bit tamsayı ilk kayan nokta değeri dönüştürülmesi sonucu.  
+ Dönüştürme ilk kayan nokta değeri bir 64-bit tamsayı sonucu.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_mm_cvttss_si64x`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_mm_cvttss_si64x`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- İç farklıdır `_mm_cvtss_si64x` içeren filtresinin dönüşümleri sıfır yalnızca kesilir. Çünkü `__m128` yapısını temsil eden bir XMM kaydı, oluşturulan yönerge verileri XMM kaydından sistem belleğe taşır.  
+ İç farklıdır `_mm_cvtss_si64x` içeren filtresinin dönüştürmeler sıfıra yakınsayarak yalnızca kesilir. Çünkü `__m128` yapısını temsil eden bir XMM kaydı, oluşturulan yönerge verileri bir XMM yazmacından sistem belleğine taşır.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -91,7 +91,7 @@ int main()
 101  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__m128](../cpp/m128.md)   

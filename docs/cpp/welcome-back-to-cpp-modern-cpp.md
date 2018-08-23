@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4426f3d25681e3ee46bf4d5da615d185babb0f0
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: d626385523cb957b44589784c2e69539b5ed8fca
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462368"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465289"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 C++ dünyada en yaygın olarak kullanılan programlama dilleri biridir. İyi yazılmış C++ programları hızlı ve verimlidir. Çok çeşitli uygulamalar oluşturmak için kullanın dil diğer dillerden daha esnektir çünkü — eğlenceli ve heyecan verici oyunlardan yüksek performanslı bilimsel yazılımlara, cihaz sürücüleri, katıştırılmış programlara ve Windows istemci uygulamaları için. 20 yıldan fazla, C++ ve diğer birçok gibi sorunları çözmek için kullanıldı. Değil bilmeniz, artan sayıda C++ programcıları dün belki C stili programlamada yukarı Katlanmış ve modern C++ yerine donned olmasıdır.  
@@ -107,7 +107,7 @@ void f()
   
  Güç yeniden revaçta olduğundan, C++ bir Rönesans devri yaşıyor. Java ve C# gibi diller Programcı verimliliğinin önemli olduğu, ancak güç ve performans en önemli olduğunda bazı sınırlamalara gösterdikleri iyidir. Yüksek verimlilik ve güç, özellikle sınırlı donanımı olan cihazlarda için hiçbir şey modern C++ programlamadan daha iyi değildir.  
   
- Yalnızca dil, geliştirme araçları da moderndir. [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Geliştirme döngüsünün tüm bölümlerini sağlam ve verimli hale getirir. Uygulama Yaşam Döngüsü Yönetimi (ALM) araçları, IntelliSense gibi IDE geliştirmelerini, XAML ve hata ayıklama, oluşturma, gibi araç dostu mekanizmaları içerdiğinden ve birçok diğer aracı.  
+ Yalnızca dil, geliştirme araçları da moderndir. Visual Studio geliştirme döngüsünün tüm bölümlerini sağlam ve verimli hale getirir. Uygulama Yaşam Döngüsü Yönetimi (ALM) araçları, IntelliSense gibi IDE geliştirmelerini, XAML ve hata ayıklama, oluşturma, gibi araç dostu mekanizmaları içerdiğinden ve birçok diğer aracı.  
   
  Belgelerin bu bölümündeki makaleler, üst düzey yönergeler ve en önemli özellikleri için en iyi uygulamalar ve modern C++ programları yazmak için teknikleri sağlar.  
   

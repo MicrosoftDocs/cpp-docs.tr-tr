@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e086339c41f789323cb4aab386a96dae27a0eeb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd8189f15f38d5d3008c1f20959573ca9d2337c9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324934"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466373"
 ---
 # <a name="llrshift"></a>__ll_rshift
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İkinci parametresi tarafından belirtilen bit sayısı tarafından sağındaki ilk parametresi tarafından belirtilen bir 64-bit değeri kaydırır.  
+ İkinci parametre tarafından belirtilen bit sayısı sağa ilk parametre tarafından belirtilen 64-bit bir değer kaydırılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,24 +41,24 @@ __int64 __ll_rshift(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `Mask`  
- Sağa kaydırma için 64-bit tamsayı değeri.  
+ Sağa kaydırmak için 64-bit tamsayı değeri.  
   
  [in] `nBit`  
- BITS, x64 64 modulo ve 32 x86 üzerinde modulo kaydırma sayısı.  
+ 64 x64 modül ve 32 x86 modül kaydırılacak bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Maske gölgeye tarafından `nBit` BITS.  
+ Maske kaydırılacak tarafından `nBit` bitleri.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__ll_rshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ll_rshift`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- İkinci parametre x64 (32 x86 üzerinde) 64'den büyükse, bu numara 64 (32 x86 üzerinde) modulo kaydırılacak bit sayısını belirlemek için alınır. `ll` Önek bu üzerinde bir işlem olduğunu gösterir `long long`, başka bir adı `__int64`, 64-bit imzalı tam sayı türü.  
+ İkinci parametre numarası kaydırılacak bit sayısını belirlemek için 64 (32 x86) modül alınır (32) x86 x64 64'ten büyükse. `ll` Ön eki bu üzerinde bir işlem olduğunu gösterir `long long`, başka bir adı `__int64`, 64-bit imzalı tamsayı türü.  
   
 ## <a name="example"></a>Örnek  
   
@@ -93,9 +93,9 @@ fffffffffffffff0
  - 10  
 ```  
   
- **Not** varsa `_ull_rshift` bırakıldı istenen sonucu negatif bir değer olması durumunda alındıktan olmayan şekilde kullanılan, Tamamlama sağ gölgeye değerin sıfır olacaktı.  
+ **Not** varsa `_ull_rshift` olmuştur istenen sonuç negatif bir değer söz konusu olduğunda alındıktan değil şekilde kullanılan, Tamamlama sağa kaydırılacak değerin sıfır olacaktı.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

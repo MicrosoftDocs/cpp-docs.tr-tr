@@ -28,15 +28,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7728df79bf2ab842910b580b1404f109034e55b7
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: f3dfe9f728b01b175e897f1182c95e954969aaec
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37037252"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466173"
 ---
 # <a name="cmfcacceleratorkeyassignctrl-class"></a>CMFCAcceleratorKeyAssignCtrl sınıfı
-`CMFCAcceleratorKeyAssignCtrl` Sınıfını genişleten [CEdit sınıfı](../../mfc/reference/cedit-class.md) ALT, Denetim ve kaydırma gibi ek sistem düğmeleri desteklemek için.  
+`CMFCAcceleratorKeyAssignCtrl` Sınıfını genişleten [CEdit sınıfı](../../mfc/reference/cedit-class.md) ALT, CONTROL ve SHIFT gibi ek sistem düğmelerini desteklemek için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,25 +50,25 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl](#cmfcacceleratorkeyassignctrl)|Oluşturan bir `CMFCAcceleratorKeyAssignCtrl` nesnesi.|  
+|[CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl](#cmfcacceleratorkeyassignctrl)|Oluşturur bir `CMFCAcceleratorKeyAssignCtrl` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel)|Alır `ACCEL` bir kısayol tuşuna basılı için yapı `CMFCAcceleratorKeyAssignCtrl` nesnesi.|  
+|[CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel)|Alır `ACCEL` bir kısayol tuşu basılı için yapı `CMFCAcceleratorKeyAssignCtrl` nesne.|  
 |[CMFCAcceleratorKeyAssignCtrl::IsFocused](#isfocused)||  
 |[CMFCAcceleratorKeyAssignCtrl::IsKeyDefined](#iskeydefined)|Bir kısayol tuşu tanımlı olup olmadığını belirler.|  
-|[CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage](#pretranslatemessage)|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için gönderilen önce pencere iletileri çevirmek için [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows çalışır. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|[CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage](#pretranslatemessage)|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CMFCAcceleratorKeyAssignCtrl::ResetKey](#resetkey)|Kısayol tuşu sıfırlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf işlevselliğini genişleten `CEdit` kısayol tuşları, olarak da bilinen Hızlandırıcı tuşları destekleme tarafından sınıfı. `CMFCAcceleratorKeyAssignCtrl` Sınıf olarak işlev bir [CEdit sınıfı](../../mfc/reference/cedit-class.md) ve sistem düğmeleri tanıyabilirsiniz.  
+ Bu sınıf işlevselliğini genişletir `CEdit` kısayol tuşları, olarak da bilinen hızlandırma tuşları destekleyerek sınıfı. `CMFCAcceleratorKeyAssignCtrl` Sınıf işlevler olarak bir [CEdit sınıfı](../../mfc/reference/cedit-class.md) ve sistem düğmelerini tanıyabilir.  
   
- Bu sınıf fiziksel kısayol tuş birleşimleri dize değerine eşler. Örneğin, ALT anahtar birleşimi varsayın + B "Alt + B" dizeye eşlendi. Kullanıcı, bu tuş bileşimini bastığında bir `CMFCAcceleratorKeyAssignCtrl` nesnesi, "Alt + B", kullanıcıya görüntülenir. Kısayol tuşları ve dize biçimi arasında eşleme hakkında daha fazla bilgi için bkz: [CMFCAcceleratorKey sınıfı](../../mfc/reference/cmfcacceleratorkey-class.md).  
+ Bu sınıf, fiziksel kısayol tuş birleşimleri için dize değerlerini eşler. Örneğin, ALT tuş bileşimi varsayın + B "Alt + B" dizesine eşlenir. Bu tuş bileşimi, kullanıcının bastığında bir `CMFCAcceleratorKeyAssignCtrl` nesne "Alt + B", kullanıcıya görüntülenir. Kısayol tuşları ve dize biçimi arasındaki eşleme hakkında daha fazla bilgi için bkz: [CMFCAcceleratorKey sınıfı](../../mfc/reference/cmfcacceleratorkey-class.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCAcceleratorKeyAssignCtrl` nesne ve kullanmak kendi `ResetKey` kısayol tuşu sıfırlama yöntemi.  
+ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCAcceleratorKeyAssignCtrl` nesne ve kullanmak, `ResetKey` kısayol tuşunu sıfırlamak için yöntemi.  
   
  [!code-cpp[NVC_MFC_RibbonApp#31](../../mfc/reference/codesnippet/cpp/cmfcacceleratorkeyassignctrl-class_1.cpp)]  
   
@@ -87,27 +87,27 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
  **Başlık:** afxacceleratorkeyassignctrl.h  
   
 ##  <a name="cmfcacceleratorkeyassignctrl"></a>  CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl  
- Oluşturan bir [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) nesnesi.  
+ Oluşturur bir [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) nesne.  
   
 ```  
 CMFCAcceleratorKeyAssignCtrl();
 ```  
   
 ##  <a name="getaccel"></a>  CMFCAcceleratorKeyAssignCtrl::GetAccel  
- Alır `ACCEL` bir kısayol tuşuna basılı için yapı [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) nesnesi.  
+ Alır `ACCEL` bir kısayol tuşu basılı için yapı [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) nesne.  
   
 ```  
 ACCEL const* GetAccel() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir `ACCEL` kısayol tuşu açıklar yapısı.  
+ Bir `ACCEL` kısayol tuşunu açıklayan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Almak için bu işlevi kullanın `ACCEL` kullanıcı girilen bir kısayol tuşu için yapısı, `CMFCAcceleratorKeyAssignCtrl` nesnesi.  
+ Almak için bu işlevi kullanın `ACCEL` yapısı için girilen kullanıcı bir kısayol tuşu, `CMFCAcceleratorKeyAssignCtrl` nesne.  
   
 ##  <a name="isfocused"></a>  CMFCAcceleratorKeyAssignCtrl::IsFocused  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ```  
 BOOL IsFocused() const;  
@@ -118,20 +118,20 @@ BOOL IsFocused() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="iskeydefined"></a>  CMFCAcceleratorKeyAssignCtrl::IsKeyDefined  
- Bir kısayol tuşu içinde tanımlanmış olup olmadığını belirler [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) nesnesi.  
+ Bir kısayol tuşu içinde tanımlanmış olup olmadığını belirler [CMFCAcceleratorKeyAssignCtrl](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) nesne.  
   
 ```  
 BOOL IsKeyDefined() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kullanıcı zaten bir kısayol tuşu tanımlamak anahtarları geçerli bir birleşimi basıldıysa sıfır olmayan; Aksi takdirde 0.  
+ Kullanıcı zaten bir kısayol tuşu tanımlayan anahtar geçerli bir bileşim bastığını olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı bir geçerli kısayol tuşu girilen olup olmadığını belirlemek için bu işlevi kullanın, `CMFCAcceleratorKeyAssignCtrl` nesnesi. Bir kısayol tuşu varsa, kullanabileceğiniz [CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel) elde etmek için yöntemi `ACCEL` bu kısayol anahtar ile ilişkili yapısı.  
+ Geçerli bir kısayol tuşu, kullanıcı tarafından girilen olup olmadığını belirlemek için bu işlevi kullanın, `CMFCAcceleratorKeyAssignCtrl` nesne. Bir kısayol tuşu varsa, kullanabileceğiniz [CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel) elde etmek için yöntemi `ACCEL` yapısı bu kısayol tuşu ile ilişkili.  
   
 ##  <a name="pretranslatemessage"></a>  CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -152,7 +152,7 @@ void ResetKey();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlev Düzenle denetim metni temizler. Bu kullanıcı basılı herhangi bir kısayol tuşları içerir.  
+ İşlev düzenleme denetimi metni temizler. Bu kullanıcı basılan tüm kısayol tuşları içerir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

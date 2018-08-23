@@ -33,15 +33,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 37d53932a283ea047d748985a1da348d9346ce1e
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 604b28147c6881c7b2d62c388c5402f12bb71c78
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336972"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464678"
 ---
 # <a name="cenumerator-class"></a>CEnumerator Sınıfı
-Kullanıma sunan bir OLE DB sabit listesi nesnesi kullanan [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için arabirim.  
+Kullanıma sunan bir OLE DB sabit listesi nesnesi kullanan [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için arabirim.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,7 +83,7 @@ bool Find(TCHAR* szSearchName) throw();
  **doğru** adı bulunursa. Aksi takdirde, **false**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu ad eşlendiği `SOURCES_NAME` üyesi [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) arabirimi.  
+ Bu ad eşlendiği `SOURCES_NAME` üyesi [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) arabirimi.  
   
 ## <a name="getmoniker"></a> CEnumerator::GetMoniker
 Görünen ad, bilinen adı dönüştürülebilir dize bileşeninin ayıklanacağı ayrıştırır.  
@@ -108,7 +108,7 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker,
  Standart bir HRESULT.  
 
 ## <a name="open"></a> CEnumerator::Open
-Bir belirtilir ve ardından çağırarak satır kümesi için bir numaralandırıcı alır, numaralandırıcı için bilinen ad bağlar [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx).  
+Bir belirtilir ve ardından çağırarak satır kümesi için bir numaralandırıcı alır, numaralandırıcı için bilinen ad bağlar [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)).  
   
 ### <a name="syntax"></a>Sözdizimi  
   

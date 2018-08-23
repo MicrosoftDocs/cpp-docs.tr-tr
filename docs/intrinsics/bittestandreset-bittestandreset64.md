@@ -21,17 +21,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14d97ddf2d9267f647644fbcc9d10f6072dffc75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f55be256ec7b400be6c46f928a2f2309d047ca2c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331642"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465171"
 ---
 # <a name="bittestandreset-bittestandreset64"></a>_bittestandreset, _bittestandreset64
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bit arabirimini inceleyen yönerge oluşturmak `b` adresinin `a`geçerli değerini döndürür ve bit 0 olarak sıfırlar.  
+ Bit inceler yönerge oluşturmak `b` adresinin `a`geçerli değerini döndürür ve 0 olarak bit sıfırlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,8 +47,8 @@ unsigned char _bittestandreset64(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out] `a`  
- İncelemek için bellek için bir işaretçi.  
+ [out içinde] `a`  
+ İncelemek için bellek işaretçisi.  
   
  [in] `b`  
  Test etmek için bit konumu.  
@@ -60,13 +60,13 @@ unsigned char _bittestandreset64(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_bittestandreset`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_bittestandreset64`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_bittestandreset`|x86, ARM, x64|  
+|`_bittestandreset64`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -105,7 +105,7 @@ int main()
 The number was negative.  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

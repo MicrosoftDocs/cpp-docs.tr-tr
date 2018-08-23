@@ -116,16 +116,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7c988f062fc870359a8f1ae1265fb91d02dbb3d
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: a3a0372d5892ec4b563275d0a5bb8f309cf6fc47
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079383"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465456"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager sınıfı
-`CPaneContainerManager` Sınıfı, depolama ve geçerli yerleştirme düzeni görüntüsünü yönetir.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+`CPaneContainerManager` Sınıfı, depolama ve geçerli yerleştirme düzeni görünümünü yönetir.  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -184,19 +184,19 @@ class CPaneContainerManager : public CObject
 |[CPaneContainerManager::RemovePaneFromPaneContainer](#removepanefrompanecontainer)||  
 |[CPaneContainerManager::ReplacePane](#replacepane)||  
 |[CPaneContainerManager::ResizePaneContainers](#resizepanecontainers)||  
-|[CPaneContainerManager::Serialize](#serialize)|Okur veya bir arşiv değiştirilmesine veya bu nesneyi yazar. (Geçersiz kılmaları [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|  
+|[CPaneContainerManager::Serialize](#serialize)|Okur veya ya da bir arşivden bu nesneyi yazar. (Geçersiz kılmaları [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|  
 |[CPaneContainerManager::SetDefaultPaneDividerForPanes](#setdefaultpanedividerforpanes)||  
 |[CPaneContainerManager::SetPaneContainerRTC](#setpanecontainerrtc)||  
 |[CPaneContainerManager::SetResizeMode](#setresizemode)||  
 |[CPaneContainerManager::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework örneklerini otomatik olarak oluşturur `CPaneContainerManager` nesneleri ve ya da katıştırır içine [CPaneDivider sınıfı](../../mfc/reference/cpanedivider-class.md) nesneleri veya [CMultiPaneFrameWnd sınıfı](../../mfc/reference/cmultipaneframewnd-class.md) nesneleri.  
+ Framework örneklerini otomatik olarak oluşturur. `CPaneContainerManager` nesneleri ve ya da katıştırır içine [CPaneDivider sınıfı](../../mfc/reference/cpanedivider-class.md) nesneleri veya [CMultiPaneFrameWnd sınıfı](../../mfc/reference/cmultipaneframewnd-class.md) nesneleri.  
   
- `CPaneContainerManager` Sınıfı depolar oluşturulur bir ikili ağacı kök gösteren bir işaretçi [CPaneContainer](../../mfc/reference/cpanecontainer-class.md) nesneleri.  
+ `CPaneContainerManager` Sınıfı oluşturulur bir ikili ağaç kökünde bir işaretçi depolar [CPaneContainer](../../mfc/reference/cpanecontainer-class.md) nesneleri.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl başvuru alındığını anlatan bir `CPaneContainerManager` nesnesi. Bu kod parçacığını parçası olan [bölmesinin boyutunu Ayarla örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir başvuru almak gösterilmiştir bir `CPaneContainerManager` nesne. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/cpp/cpanecontainermanager-class_1.cpp)]  
   
@@ -467,7 +467,7 @@ virtual void GetAvailableSpace(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -609,7 +609,7 @@ virtual void GetWindowRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -839,7 +839,7 @@ virtual void ResizePaneContainers(
  [in] *bExpand*  
  [in] *nOffset*  
  [in] *hdwp*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

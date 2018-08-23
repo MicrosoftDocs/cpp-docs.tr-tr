@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2f8e085f414134a11572063e5bd27ed830e1d95
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bd645adc3ab37c2838a9abeadf4ee6eb62cc96dc
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33913011"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465158"
 ---
 # <a name="highmethodprefix"></a>high_method_prefix
-**C++ özel**  
+**C++ özgü**  
   
- Üst düzey özellikleri ve yöntemleri adlandırmada kullanılacak öneki belirtir.  
+Üst düzey özelliklere ve yöntemlere adlandırma olarak kullanılacak bir ön ekini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,15 +34,17 @@ ms.locfileid: "33913011"
 high_method_prefix("Prefix")  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `Prefix`  
- Kullanılacak önek.  
+### <a name="parameters"></a>Parametreler  
+*Ön eki*  
+Kullanılacak önek.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, üst düzey hata işleme özellikleri ve yöntemleri bir önek adlı üye işlevleri tarafından sunulur. Tür kitaplığından adlardır.  
+ 
+Varsayılan olarak, üst düzey hata işleme özelliklerine ve yöntemlerine bir ön eki adlı üye işlevleri tarafından sunulur. Tür kitaplığından adlarıdır.  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

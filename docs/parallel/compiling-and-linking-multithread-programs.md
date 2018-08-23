@@ -20,37 +20,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c77cb217fe841e15f4c7470340bd3fbb502f6a9
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5df81fa3d47005fc80bdb3b1c78cba050775cda6
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695739"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465535"
 ---
 # <a name="compiling-and-linking-multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programları Derleme ve Bağlama
 Bounce.c programı sunulan [örnek çoklu iş parçacığı kullanan C programı](../parallel/sample-multithread-c-program.md).  
   
- Programları derlenen varsayılan olarak birden çok iş parçacıklı.  
+Programları derlenen varsayılan olarak birden çok iş parçacıklı.  
   
-#### <a name="to-compile-and-link-the-multithread-program-bouncec-from-within-the-development-environment"></a>Çoklu iş parçacığı Bounce.c programını geliştirme ortamında derlemek ve bağlamak için  
+### <a name="to-compile-and-link-the-multithread-program-bouncec-from-within-the-development-environment"></a>Derleme ve geliştirme ortamını çoklu iş parçacığı kullanan programda Bounce.c bağlamak için  
   
 1.  Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
-2.  İçinde **proje türleri** bölmesinde tıklatın **Win32**.  
+2.  İçinde **proje türleri** bölmesinde tıklayın **Win32**.  
   
-3.  İçinde **şablonları** bölmesinde tıklatın **Win32 konsol uygulaması**ve projeyi adlandırın.  
+3.  İçinde **şablonları** bölmesinde tıklayın **Win32 konsol uygulaması**ve ardından Projeyi adlandırın.  
   
-4.  Projeye C kaynak kodunu içeren dosyayı ekleyin.  
+4.  Projeyi C kaynak kodu içeren bir dosya ekleyin.  
   
-5.  Üzerinde **yapı** menüsünde tıklayarak Projeyi derlemek **yapı** komutu.  
+5.  Üzerinde **derleme** menüsünde tıklayarak projeyi derleyin **derleme** komutu.  
   
-#### <a name="to-compile-and-link-the-multithread-program-bouncec-from-the-command-line"></a>Çoklu iş parçacığı Bounce.c programını komut satırından derlemek ve bağlamak için  
+### <a name="to-compile-and-link-the-multithread-program-bouncec-from-the-command-line"></a>Derlemek ve komut satırından çoklu iş parçacığı programına Bounce.c bağlamak için  
   
-1.  Derleme ve program Bağla:  
+1.  Derleme ve programa Bağla:  
   
     ```  
     CL BOUNCE.C  
     ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)

@@ -17,23 +17,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 496f22bcdc87a6772d0e0d9fc76d26f25d47adb2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cd5b996f4a44ef0a310b2a8d76560f6123929472
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912985"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464860"
 ---
 # <a name="null-directive"></a>Null Yönergesi
-Tek sayı işareti null önişlemci yönergesi olup (**#**) tek başına bir satırda. Hiçbir etkisi yoktur.  
+Boş ön işlemci yönergesi bir tek sayı işaretidir (**#**) tek başına bir satırdaki. Hiçbir etkisi yoktur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #  
-  
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)
+ 
+[Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

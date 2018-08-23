@@ -18,62 +18,63 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8d113c10ea8370a46560ba8668546c74b19c6f8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d7601913b3940de8e6ade2c76100f4d773281db7
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849948"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464960"
 ---
 # <a name="section"></a>section
-Bir bölümün bir .obj dosyasında oluşturur.  
+Bir .obj dosyasında bölüm oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma section( "section-name" [, attributes] )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Koşulları anlamını *segment* ve *bölüm* bu konudaki birbirinin yerine kullanılabilir.  
+ 
+Koşulları anlamını *segment* ve *bölümü* bu konudaki birbirinin yerine kullanılabilir.  
   
- Bir bölüm tanımlandıktan sonra derleme geri kalanı için geçerli kalır. Ancak, kullanmalıdır [__declspec(allocate)](../cpp/allocate.md) veya hiçbir şey bölümünde yer alır.  
+Bir bölüm tanımlandıktan sonra derleme geri kalanı için geçerli kalır. Ancak, kullanmalısınız [__declspec(allocate)](../cpp/allocate.md) veya hiçbir şey bölümünde yer alır.  
   
- *Bölüm adı* bölümünün adı gerekli bir parametredir. Adı herhangi bir standart bölüm adları ile çakışmaması gerekir. Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) değil kullanmanız gereken bir bölüm oluştururken adları listesi.  
+*Bölüm adı* bölümün adı gerekli bir parametredir. Adı herhangi bir standart bölüm adı ile çakışmaması gerekir. Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) kullanmamanız bölüm oluştururken adları listesi.  
   
- `attributes` bölümüne atamak istediğiniz bir veya daha fazla virgülle ayrılmış özniteliklerin oluşan isteğe bağlı bir parametre. Olası `attributes` şunlardır:  
+*öznitelikleri* bölümüne atamak istediğiniz bir veya daha fazla virgülle ayrılmış özniteliklerin oluşan isteğe bağlı bir parametre. Olası *öznitelikleri* şunlardır:  
   
- **read**  
- Verileri okuma işlemlerine izin verir.  
+**read**  
+Verileri okuma işlemleri sağlar.  
   
- **write**  
- Veri yazma işlemlerine izin verir.  
+**write**  
+Veri yazma işlemleri sağlar.  
   
- **Yürütme**  
- Yürütülen kod sağlar.  
+**Yürütme**  
+Yürütülecek kodu sağlar.  
   
- **Paylaşılan**  
- Görüntü yükleme tüm işlemler arasında bölüm paylaşır.  
+**Paylaşılan**  
+Resmi yüklemek tüm işlemler arasında bölümü paylaşır.  
   
- **nopage**  
- Bölüm disk belleğine alınabilir değil olarak işaretler; Win32 aygıt sürücüleri için kullanışlıdır.  
+**nopage**  
+Bölüm alınabilir değil olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.  
   
- **NoCache**  
- Bölüm değil alınabilir olarak işaretler; Win32 aygıt sürücüleri için kullanışlıdır.  
+**NoCache**  
+Bölüm önbelleğe alınabilir değil olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.  
   
- **atma**  
- Bölüm discardable olarak işaretler; Win32 aygıt sürücüleri için kullanışlıdır.  
+**Atma**  
+Bölüm discardable olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.  
   
- **remove**  
- Bölüm değil bellekte olarak işaretler; Sanal cihaz sürücüleri (V*x*D) yalnızca.  
+**remove**  
+Bölüm değil bellekte olarak işaretler; Sanal cihaz sürücüleri (V*x*D) yalnızca.  
   
- Öznitelikler belirtmezseniz, bölümünü okuyun ve yazma öznitelikleri.  
+Öznitelikleri belirtmezseniz, bölümü okuyun ve yazma öznitelikleri.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, ilk yönerge bölümü ve öznitelikleri tanımlar. Tamsayı `j` içine koyun değil `mysec` ile bildirilmedi çünkü `__declspec(allocate)`; `j` veri bölüme gider. Tamsayı `i` yerleştirilmesini `mysec` sonucu olarak kendi `__declspec(allocate)` depolama sınıfı öznitelik.  
+ 
+Aşağıdaki örnekte, ilk yönergesinin bölümü ve özniteliklerini tanımlar. Tamsayı `j` içine yerleştirin değil `mysec` ile bildirilmedi çünkü `__declspec(allocate)`; `j` veri bölüme gider. Tamsayı `i` kısımlarda `mysec` sonucu olarak, `__declspec(allocate)` depolama sınıfı özniteliği.  
   
-```  
+```cpp  
 // pragma_section.cpp  
 #pragma section("mysec",read,write)  
 int j = 0;  
@@ -85,4 +86,5 @@ int main(){}
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

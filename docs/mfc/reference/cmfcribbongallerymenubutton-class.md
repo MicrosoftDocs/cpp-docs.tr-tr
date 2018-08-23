@@ -28,16 +28,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2dd3d47b2175a64be605ac8db9fdb1502ce2755
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: a63d72d9744928ca0871ed251cfaea254d0acb14
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041266"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465824"
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton sınıfı
-Şerit galerileri içeren Şerit menü düğmesi uygular.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+Şerit galerilerini içeren bir Şerit menüsü düğmesi uygular.  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
    
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -51,7 +51,7 @@ class CMFCRibbonGalleryMenuButton : public CMFCToolBarMenuButton
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton](#cmfcribbongallerymenubutton)|Oluşturur ve başlatır bir `CMFCRibbonGalleryMenuButton` nesnesi.|  
+|[CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton](#cmfcribbongallerymenubutton)|Oluşturur ve başlatır bir `CMFCRibbonGalleryMenuButton` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -64,10 +64,10 @@ class CMFCRibbonGalleryMenuButton : public CMFCToolBarMenuButton
 |[CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|(Geçersiz kılmaları [CMFCToolBarMenuButton::IsEmptyMenuAllowed](../../mfc/reference/cmfctoolbarmenubutton-class.md#isemptymenuallowed).)|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Galeri menü düğmesi, bir ok ile açılır menü olarak görüntülenir. Kullanıcı bu düğmesine tıkladığında, bir galeri görüntülerinin görüntülenir. Bir galeri menü düğmesi yapısı oluştururken bu görüntüleri içeren bir görüntü listesi belirtmelisiniz.  
+ Galeri menü düğmesine bir ok ile bir açılır menü olarak görüntülenir. Galeri görüntüleri, kullanıcı bu düğmeyi tıkladığında görüntülenir. Bir galeri menü düğmesi oluştururken, bu görüntüleri içeren bir görüntü listesini belirtmeniz gerekir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir menü düğmesi madde işaretleri Galerisi görüntülenecek gösterilmiştir:  
+ Aşağıdaki örnek, bir menü düğmesine madde işaretleri galeri görüntülenecek gösterilmektedir:  
   
 ```  
 BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)  
@@ -113,7 +113,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="cmfcribbongallerymenubutton"></a>  CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton  
- Oluşturur ve başlatır bir [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) nesnesi.  
+ Oluşturur ve başlatır bir [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) nesne.  
   
 ```  
 CMFCRibbonGalleryMenuButton(
@@ -133,28 +133,28 @@ CMFCRibbonGalleryMenuButton(
   
 ### <a name="parameters"></a>Parametreler  
  *uiID*  
- Düğmenin komut kimliği. Bu, kullanıcı bu düğmesini tıklattığında WM_COMMAND iletisinde gönderilen değerdir.  
+ Düğme komut kimliği. Bu, kullanıcı bu düğmeyi tıkladığında WM_COMMAND ileti içinde gönderilen değerdir.  
   
  *iImage*  
- Galeri menü düğmesi ile görüntülenecek resim dizini. Görüntüleri depolanmış *imagesPalette* parametresi.  
+ Galeri menü düğmesine ile görüntüyü dizini. Bu görüntüler şuraya kaydedilir *imagesPalette* parametresi.  
   
  *lpszText*  
- Menü çubuğunda görüntülenecek metin.  
+ Menü düğmesine görüntülenecek metin.  
   
  *imagesPalette*  
- Galeride görüntülemek için görüntüleri listesini içerir.  
+ Galeride görüntülenecek görüntü listesini içerir.  
   
  *uiImagesPaletteResID*  
- Galeride görüntülemek için kaynak kimliği görüntüleri için resim listesi.  
+ Galeride görüntülenecek kaynak kimliği görüntüleri için resim listesi.  
   
  *cxPaletteImage*  
- Galeride görüntülenecek görüntüsünün piksel cinsinden genişliğini belirtir.  
+ Galeride görüntülenecek resmin piksel cinsinden genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Galeri menü düğmesi bir ok olan bir açılır menü görüntülenir. Kullanıcı bu düğmesine tıkladığında, bir galeri görüntülerinin görüntülenir.  
+ Galeri menü düğmesine bir ok olan bir açılır menü olarak görüntülenir. Galeri görüntüleri, kullanıcı bu düğmeyi tıkladığında görüntülenir.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnek oluşturucusunun kullanımı gösterilmiştir `CMFCRibbonGalleryMenuButton` sınıfı. Bu kod parçacığını parçası olan [MS Office 2007 Demo örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek oluşturucusuna kullanımı gösterilmiştir `CMFCRibbonGalleryMenuButton` sınıfı. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]  
   

@@ -16,22 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0a21847bb9363099fa64825b45a90003de053da
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 52c9440a0320bbc59e5d2552a53e13fae5e29f05
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369766"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466179"
 ---
 # <a name="predefined-rules"></a>Önceden Tanımlanmış Kurallar
-Önceden tanımlanmış çıkarım kuralları NMAKE sağlanan komutu ve Seçenekler makroları kullanın.  
+Önceden tanımlanmış çıkarım kuralları NMAKE sağlanan komutlar ve Seçenekler makroları kullanın.  
   
-|Kural|Komut|Varsayılan<br /><br /> Eylem|Toplu işlem<br /><br /> Kural|Platform nmake çalışır|  
+|Kural|Komut|Varsayılan<br /><br /> Eylem|Batch<br /><br /> Kural|Üzerinde çalıştığı platforma nmake|  
 |----------|-------------|------------------------|--------------------|----------------------------|  
 |. asm.exe|$(AS) $(AFLAGS) $&LT;|ML $<|Yok|x86|  
 |. asm.obj|$(AS) $(AFLAGS) /c $<|ML /c $<|Evet|x86|  
-|. asm.exe|$(AS) $(AFLAGS) $&LT;|ml64 $<|Yok|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|. asm.obj|$(AS) $(AFLAGS) /c $<|ml64 /c $<|Evet|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|. asm.exe|$(AS) $(AFLAGS) $&LT;|ml64 $<|Yok|X64|  
+|. asm.obj|$(AS) $(AFLAGS) /c $<|ml64 /c $<|Evet|X64|  
 |. c.exe|$(CC) $(CFLAGS) $&LT;|cl $<|Yok|tüm|  
 |. c.obj|$(CC) $(CFLAGS) /c $<|cl /c $<|Evet|tüm|  
 |. cc.exe|$(CC) $(CFLAGS) $&LT;|cl $<|Yok|tüm|  

@@ -37,15 +37,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f1f726459e72d57aa8e855df4f4f3ec5d566f687
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: d07c0e64e969e599393a657d4c41a8dd544901c9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337079"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465079"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl Sınıfı
-Bir uygulamasını sağlar [IRowsetInfo](https://msdn.microsoft.com/library/ms724541.aspx) arabirimi.  
+Bir uygulamasını sağlar [IRowsetInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -92,7 +92,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetInfo::GetProperties](https://msdn.microsoft.com/library/ms719611.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Bkz: [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="getreferencedrowset"></a> Irowsetınfoımpl::getreferencedrowset
 Bir yer işareti uygulandığı satır kümesi için bir arabirim işaretçisini döndürür.  
@@ -106,7 +106,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetInfo::GetReferencedRowset](https://msdn.microsoft.com/library/ms721145.aspx) içinde *OLE DB Programcının Başvurusu*. *İOrdinal* parametresi, bir yer işareti sütunu olmalıdır. 
+ Bkz: [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. *İOrdinal* parametresi, bir yer işareti sütunu olmalıdır. 
 
 ## <a name="getspecification"></a> Irowsetınfoımpl::getspecification
 Bu satır kümesini oluşturan nesnede (komut veya oturumu) bir arabirim işaretçisini döndürür.  
@@ -119,7 +119,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetInfo::GetSpecification](https://msdn.microsoft.com/library/ms716746.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi kullanmak [Igetdatasourceımpl](../../data/oledb/igetdatasourceimpl-class.md) veri kaynağı nesnesinden özellikleri alınamadı.  

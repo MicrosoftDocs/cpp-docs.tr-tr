@@ -20,20 +20,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46d116ad1efde9ae144e17eb9a4ac2ad996add13
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4858fe41db5e9a5ac6208881a045e7915b9bdfee
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372662"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465457"
 ---
 # <a name="dumpbin-reference"></a>DUMPBIN Başvurusu
-Microsoft COFF ikili dosya Dumper (DUMPBIN. EXE) ortak nesne dosyası biçimi (COFF) ikili dosyaları hakkındaki bilgileri görüntüler. DUMPBIN COFF nesne dosyaları, COFF nesneleri, yürütülebilir dosyaları ve dinamik bağlantı kitaplıklarını (DLL'ler) standart kitaplıkları incelemek için kullanabilirsiniz.  
+Microsoft COFF ikili dosya Dumper (DUMPBIN. Exe dosyası) ikili dosyaları ortak nesne dosyası biçimi (COFF) ilgili bilgileri görüntüler. COFF nesnesi dosyaları, standart kitaplıkları COFF nesneleri, yürütülebilir dosyalar ve dinamik bağlantı kitaplıklarını (DLL'ler) incelemek için DUMPBIN kullanabilirsiniz.  
   
 > [!NOTE]
->  Bu araç yalnızca başlatabilirsiniz [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] komut istemi. Bir sistem komut istemi veya dosya Gezgini başlatılamıyor.  
+>  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.  
   
- Yalnızca [/HEADERS](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalarda kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.  
+ Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.  
   
 -   [DUMPBIN komut satırı](../../build/reference/dumpbin-command-line.md)  
   

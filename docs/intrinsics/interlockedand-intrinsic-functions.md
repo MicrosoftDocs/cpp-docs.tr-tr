@@ -1,5 +1,5 @@
 ---
-title: _InterlockedAnd iç işlevler | Microsoft Docs
+title: _Interlockedand iç işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -66,17 +66,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 009c3dd2fd7e7ce123f760ae832c2c4e25fedd92
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b991d4d0546ea20e26f2896bc78032e2fb1c6136
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334931"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466090"
 ---
-# <a name="interlockedand-intrinsic-functions"></a>_InterlockedAnd iç işlevler
-**Microsoft özel**  
+# <a name="interlockedand-intrinsic-functions"></a>_Interlockedand iç işlevleri
+**Microsoft'a özgü**  
   
- Birden çok iş parçacığı tarafından paylaşılan bir değişken üzerinde atomik bit düzeyinde AND işlemi gerçekleştirmek için kullanılır.  
+ Birden çok iş parçacığı tarafından paylaşılan bir değişken üzerinde atomik bir bit düzeyinde AND işlemi gerçekleştirmek için kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -180,32 +180,32 @@ __int64 _InterlockedAnd64_rel(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out] `value`  
- Sonuç değiştirilecek ilk işlenen bir işaretçi.  
+ [out içinde] `value`  
+ Sonucu değiştirilecek ilk işlenen bir işaretçi.  
   
  [in] `mask`  
  İkinci işlenen.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İlk işlenen özgün değeri.  
+ Birinci işlenenin özgün değer.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`, `_InterlockedAnd64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`, `_InterlockedAnd64`|x86, ARM, x64|\<intrin.h >|  
 |`_InterlockedAnd_acq`, `_InterlockedAnd_nf`, `_InterlockedAnd_rel`, `_InterlockedAnd8_acq`, `_InterlockedAnd8_nf`, `_InterlockedAnd8_rel`, `_InterlockedAnd16_acq`, `_InterlockedAnd16_nf`, `_InterlockedAnd16_rel`, `_InterlockedAnd64_acq`, `_InterlockedAnd64_nf`, `_InterlockedAnd64_rel`|ARM|\<intrin.h >|  
-|`_InterlockedAnd_np`, `_InterlockedAnd8_np`, `_InterlockedAnd16_np`, `_InterlockedAnd64_np`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
-|`_InterlockedAnd_HLEAcquire`, `_InterlockedAnd_HLERelease`, `_InterlockedAnd64_HLEAcquire`, `_InterlockedAnd64_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
+|`_InterlockedAnd_np`, `_InterlockedAnd8_np`, `_InterlockedAnd16_np`, `_InterlockedAnd64_np`|X64|\<intrin.h >|  
+|`_InterlockedAnd_HLEAcquire`, `_InterlockedAnd_HLERelease`, `_InterlockedAnd64_HLEAcquire`, `_InterlockedAnd64_HLERelease`|x86, x64|\<immintrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Her işlev adına bağımsız bit boyutunu belirtir.  
+ Her işlevin adını bağımsız bit boyutunu belirtir.  
   
- İç bilgiler ile ARM platformlarda kullanın `_acq` ve `_rel` sonekleri edinme ve yayın anlamları gibi önemli bir bölümü başında ve sonunda. İç bilgiler ile bir `_nf` ("hiçbir dilimi") soneki bir bellek engeli hareket değil.  
+ ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` sonekleri edinme ve sürüm semantiği gibi kritik bir bölüm başında ve sonunda. Yapı içleri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.  
   
- İç bilgiler ile bir `_np` ("hiçbir hazırlık") soneki derleyici tarafından eklenen bir olası hazırlık işlemin engelleme.  
+ Yapı içleri ile bir `_np` ("hiçbir hazırlık") soneki, derleyici tarafından eklenen bir olası önceden getirme işleminin engelle.  
   
- Donanım kilidi Elision (HLE) yönergeleri, iç bilgileri ile destek Intel platformlarda `_HLEAcquire` ve `_HLERelease` son ekleri kapsayacak performans donanım kilidi yazma adımda ortadan kaldırarak hızlandırabilir işlemci ipucu. Bu yapı HLE desteklemeyen platformlarda çağrıldıklarında ipucu yoksayıldı.  
+ Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel platformlarında `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen platformları üzerinde çağrılırsa ipucu yoksayıldı.  
   
 ## <a name="example"></a>Örnek  
   
@@ -231,7 +231,7 @@ int main()
 0xff00 0xffff00 0xff00ff00  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

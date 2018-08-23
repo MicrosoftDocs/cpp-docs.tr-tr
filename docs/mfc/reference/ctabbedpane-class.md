@@ -38,17 +38,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9da7016e98d9bd84e62c3b05cae32346827142f
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: b4bb740f445d65c37d1bee8c1e777dbd8984e1c2
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121844"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465539"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane sınıfı
-Çıkarılabilir sekmeleri bölmesiyle işlevlerini uygular.  
+Çıkarılabilir sekmeler içeren bölme işlevselliğini uygular.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -69,31 +69,31 @@ class CTabbedPane : public CBaseTabbedPane
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CTabbedPane::DetachPane](#detachpane)|(Geçersiz kılmaları [CBaseTabbedPane::DetachPane](../../mfc/reference/cbasetabbedpane-class.md#detachpane).)|  
-|[CTabbedPane::EnableTabAutoColor](#enabletabautocolor)|Etkinleştirir veya sekmelerinin otomatik renklendirme devre dışı bırakır.|  
-|[CTabbedPane::FloatTab](#floattab)|Bölmesinde şu anda çıkarılabilir bir sekmede bulunuyorsa ancak yalnızca bir bölme kayar. (Geçersiz kılmaları [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).)|  
-|[CTabbedPane::GetTabArea](#gettabarea)|Sekmeli penceresinde sekme alanı konumu ve boyutu döndürür.|  
+|[CTabbedPane::EnableTabAutoColor](#enabletabautocolor)|Etkinleştirir veya sekme otomatik renklendirme devre dışı bırakır.|  
+|[CTabbedPane::FloatTab](#floattab)|Bölmeyi şu anda çıkarılabilir bir sekmede yer alıyorsa ancak yalnızca bir bölme kaydırır. (Geçersiz kılmaları [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).)|  
+|[CTabbedPane::GetTabArea](#gettabarea)|Boyutunu ve sekmeli pencere içinde sekme alanının konumunu döndürür.|  
 |[CTabbedPane::GetTabWnd](#gettabwnd)||  
-|[CTabbedPane::HasAutoHideMode](#hasautohidemode)|Sekmeli bölmesinde autohide moduna geçiş olup olmadığını belirler. (Geçersiz kılmaları [CBaseTabbedPane::HasAutoHideMode](../../mfc/reference/cbasetabbedpane-class.md#hasautohidemode).)|  
-|[CTabbedPane::IsTabLocationBottom](#istablocationbottom)|Sekmeleri penceresinin alt kısmında bulunan olup olmadığını belirler.|  
-|[CTabbedPane::ResetTabs](#resettabs)|Tüm sekmeli bölmeleri varsayılan durumuna sıfırlar.|  
-|[CTabbedPane::SetTabAutoColors](#settabautocolors)|Otomatik Renk özelliği etkinleştirilmişse, kullanılabilen özel renk listesi ayarlar.|  
+|[CTabbedPane::HasAutoHideMode](#hasautohidemode)|Sekmeli bölme autohide moduna geçiş olup olmadığını belirler. (Geçersiz kılmaları [CBaseTabbedPane::HasAutoHideMode](../../mfc/reference/cbasetabbedpane-class.md#hasautohidemode).)|  
+|[CTabbedPane::IsTabLocationBottom](#istablocationbottom)|Sekmeleri pencerenin alt kısmında bulunan olup olmadığını belirler.|  
+|[CTabbedPane::ResetTabs](#resettabs)|Tüm sekmeli bölmelerde varsayılan duruma sıfırlanır.|  
+|[CTabbedPane::SetTabAutoColors](#settabautocolors)|Otomatik Renk özelliği etkinleştirilmişse kullanılabilecek özel renk listesi ayarlar.|  
   
 ### <a name="data-members"></a>Veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CTabbedPane::m_bTabsAlwaysTop](#m_btabsalwaystop)|Uygulamadaki sekmeler için varsayılan konum.|  
-|[CTabbedPane::m_pTabWndRTC](#m_ptabwndrtc)|Özel bir çalışma zamanı sınıf bilgileri `CMFCTabCtrl`-türetilmiş bir nesne içermelidir.|  
+|[CTabbedPane::m_bTabsAlwaysTop](#m_btabsalwaystop)|Uygulama sekmelerde varsayılan konumu.|  
+|[CTabbedPane::m_pTabWndRTC](#m_ptabwndrtc)|Özel bir çalışma zamanı sınıf bilgileri `CMFCTabCtrl`-türetilmiş bir nesneye.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İkinci bölümde resim yazısı işaret eden bir kullanıcı bir bölme iliştirir framework otomatik olarak bu sınıfının bir örneğini oluşturur. Tüm çerçevesi tarafından oluşturulan sekmeli bölmeleri-1 bir Kimliğe sahip.  
+ İkinci bölümde açıklamalı alt yazı işaret ederek bir kullanıcı bir bölme ekler framework otomatik olarak bu sınıfın bir örneğini oluşturur. Tüm framework tarafından oluşturulan sekmeli bölmelerde,-1 bir Kimliğe sahip.  
   
- Outlook stil sekmeleri yerine normal sekme belirtmek için AFX_CBRS_REGULAR_TABS stiline geçirmek [CDockablePane::CreateEx](../../mfc/reference/cdockablepane-class.md#createex) yöntemi.  
+ Outlook stilinde sekmeler yerine normal sekmeleri belirtmek için AFX_CBRS_REGULAR_TABS stil geçirmek [CDockablePane::CreateEx](../../mfc/reference/cdockablepane-class.md#createex) yöntemi.  
   
- Sekmeli bölmesinde çıkarılabilir sekmelerle oluşturursanız, işaretçi depolamamayı şekilde bölmesinde otomatik olarak çerçevesi tarafından yok edilmesi. Sekmeli bölmesine bir işaretçi almak için arama `CBasePane::GetParentTabbedPane` yöntemi.  
+ Çıkarılabilir sekmeler ile sekmeli bir bölmeye oluşturursanız, işaretçi depolanmamalıdır şekilde bölmesinde otomatik olarak çerçeve tarafından yok. Sekmeli bölme için bir işaretçi alma çağrısı `CBasePane::GetParentTabbedPane` yöntemi.  
   
 ## <a name="example"></a>Örnek  
- Bu örnekte oluşturuyoruz bir `CTabbedPane` nesnesi. Ardından, kullandığımız [CBaseTabbedPane::AddTab](../../mfc/reference/cbasetabbedpane-class.md#addtab) ek sekmeler eklemek için.  
+ Bu örnekte oluşturduğumuz bir `CTabbedPane` nesne. Ardından, [CBaseTabbedPane::AddTab](../../mfc/reference/cbasetabbedpane-class.md#addtab) ek sekme eklemek için.  
   
 ```  
 CTabbedPane* pTabbededBar = new CTabbedPane (TRUE);
@@ -125,9 +125,9 @@ DockPane(pTabbededBar);
 ```  
   
 ## <a name="example"></a>Örnek  
- Sekmeli denetim çubuğu nesnesi oluşturmak için başka bir yolu kullanmaktır [CDockablePane::AttachToTabWnd](../../mfc/reference/cdockablepane-class.md#attachtotabwnd). `AttachToTabWnd` Yöntemi tarafından belirlenen çalışma zamanı sınıf bilgileri kullanarak bir sekmeli bölmesinde nesnesi dinamik olarak oluşturur [CDockablePane::SetTabbedPaneRTC](../../mfc/reference/cdockablepane-class.md#settabbedpanertc).  
+ Sekmeli denetim çubuğu nesnesi oluşturmak için başka bir yolu [CDockablePane::AttachToTabWnd](../../mfc/reference/cdockablepane-class.md#attachtotabwnd). `AttachToTabWnd` Yöntemi dinamik olarak belirlenen çalışma zamanı sınıf bilgileri kullanarak bir sekmeli bölme nesnesi [CDockablePane::SetTabbedPaneRTC](../../mfc/reference/cdockablepane-class.md#settabbedpanertc).  
   
- Bu örnekte, dinamik olarak oluşturuyoruz sekmeli bölmesi iki sekme ekleme ve ikinci sekmesinde çıkarılabilir olmayan olun.  
+ Bu örnekte, dinamik olarak oluştururuz sekmeli bir bölmeye iki sekme ekleme ve ikinci sekme çıkarılabilir olmayan olun.  
   
 ```  
 DockPane(&m_wndClassView);
@@ -185,7 +185,7 @@ virtual BOOL DetachPane(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="enabletabautocolor"></a>  CTabbedPane::EnableTabAutoColor  
- Etkinleştirir veya sekmelerinin otomatik renklendirme devre dışı bırakır.  
+ Etkinleştirir veya sekme otomatik renklendirme devre dışı bırakır.  
   
 ```  
 static void EnableTabAutoColor(BOOL bEnable = TRUE);
@@ -196,9 +196,9 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
  Sekme otomatik renklendirme etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Etkinleştirmek veya uygulamadaki tüm sekmeli bölmelerinde sekmelerinin otomatik renklendirme devre dışı bırakmak için statik bu yöntemi kullanın. Bu özellik etkinleştirildiğinde, her sekme kendi renge göre doldurulur. Sekmeleri çağırarak renk için kullanılan renk listesi bulabilirsiniz [CMFCBaseTabCtrl::GetAutoColors](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors) yöntemi.  
+ Etkinleştirme veya devre dışı otomatik renklendirme, uygulamadaki tüm sekmeli bölmelerde sekmelerde statik bu yöntemi kullanın. Her sekme, bu özellik etkinleştirildiğinde, kendi renge göre doldurulur. Sekmeleri çağırarak renk için kullanılan renkleri listesini bulabilirsiniz [CMFCBaseTabCtrl::GetAutoColors](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors) yöntemi.  
   
- Sekmeleri çağırarak kullanılacak renk listesi belirtebilirsiniz [CTabbedPane::SetTabAutoColors](#settabautocolors).  
+ Çağırarak sekmeler için kullanılacak olan renk listesi belirtebilirsiniz [CTabbedPane::SetTabAutoColors](#settabautocolors).  
   
  Varsayılan olarak, bu seçenek devre dışıdır.  
   
@@ -224,7 +224,7 @@ virtual BOOL FloatTab(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="gettabarea"></a>  CTabbedPane::GetTabArea  
- Sekmeli penceresinde sekme alanı konumu ve boyutu döndürür.  
+ Sekmeli penceresinde sekme alanı konumunu ve boyutunu döndürür.  
   
 ```  
 virtual void GetTabArea(
@@ -234,15 +234,15 @@ virtual void GetTabArea(
   
 ### <a name="parameters"></a>Parametreler  
  [out] *rectTabAreaTop*  
- Boyutunu ve konumunu, ekran koordinatları üst sekme alanı içerir.  
+ Boyut ve konum, ekran koordinatlarında üst sekme alanının içerir.  
   
  [out] *rectTabAreaBottom*  
- Boyutunu ve konumunu, ekran koordinatları alt sekme alanı içerir.  
+ Boyut ve konum, ekran koordinatlarında alt sekme alanının içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework'te kullanıcı sürükleyerek bir bölme sabitlemek nasıl belirlemek için bu yöntemi çağırır. Kullanıcı hedef bölmesinde sekme alanı bir bölme sürüklendiğinde framework hedef bölmesinde yeni bir sekme eklemeyi dener. Aksi takdirde, yeni bir bölmesinde kapsayıcı iki bölmeyi ayıran bir bölmesinde ayırıcı oluşturursunuz hedef bölmesinde tarafına bölmesinde sabitlemek çalışır.  
+ Framework, bir kullanıcı sürükleyerek bir bölme sabitlemek nasıl belirlemek için bu yöntemi çağırır. Kullanıcı hedef bölmesinin sekme alanı bir bölmeyi sürüklediğinde, çerçeve, hedef bölmesinde yeni bir sekme eklemeyi dener. Aksi takdirde iki bölmeyi ayırır bölmesinde ayırıcı ile yeni bir bölmesinde kapsayıcı oluşturmayı içerir hedef bölmesinde tarafına bölmesinde sabitlemek çalışır.  
   
- Bu yöntemi geçersiz kılın bir `CTabbedPane`-türetilmiş sınıf bu davranışı değiştirmek için.  
+ Bu yöntemin bir `CTabbedPane`-türetilmiş sınıf bu davranışı değiştirmek için.  
   
 ##  <a name="gettabwnd"></a>  CTabbedPane::GetTabWnd  
 
@@ -267,53 +267,53 @@ virtual BOOL HasAutoHideMode() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="istablocationbottom"></a>  CTabbedPane::IsTabLocationBottom  
- Sekmeleri penceresinin alt kısmında bulunan olup olmadığını belirler.  
+ Sekmeleri pencerenin alt kısmında bulunan olup olmadığını belirler.  
   
 ```  
 virtual BOOL IsTabLocationBottom() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sekme alanı sekmeli penceresinin alt kısmında bulunan ise TRUE; Aksi takdirde FALSE.  
+ Sekme alanı sekmeli penceresinin en altında yer alıyorsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_btabsalwaystop"></a>  CTabbedPane::m_bTabsAlwaysTop  
- Uygulamadaki sekmeler için varsayılan konum.  
+ Uygulama sekmelerde varsayılan konumu.  
   
 ```  
 AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sekmeli bölmenin en üstünde görüntülenecek uygulamadaki tüm sekmeler zorla true statik bu üyeye ayarlayın.  
+ Sekmeli bölmesinin en üstünde görüntülenecek uygulamadaki tüm sekmeler zorla True Bu statik üyeye ayarlayın.  
   
- Sekmeli bölmesinde oluşturulmadan önce bu değer ayarlamanız gerekir.  
+ Sekmeli bir bölmeye oluşturmadan önce bu değeri ayarlamanız gerekir.  
   
  Varsayılan değer FALSE olur.  
   
 ##  <a name="m_ptabwndrtc"></a>  CTabbedPane::m_pTabWndRTC  
- Özel bir çalışma zamanı sınıf bilgileri `CMFCTabCtrl`-türetilmiş bir nesne içermelidir.  
+ Özel bir çalışma zamanı sınıf bilgileri `CMFCTabCtrl`-türetilmiş bir nesneye.  
   
 ```  
 AFX_IMPORT_DATA static CRuntimeClass* m_pTabWndRTC;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çalışma zamanı sınıf bilgileri için bir işaretçi bu statik üye değişkeni koymak bir `CMFCTabCtrl`-sekmeli bölmesinde özel sekmeli penceresine kullanıyorsanız, nesne türetilmiş.  
+ Bu statik üye değişkeninin çalışma zamanı sınıf bilgilerini işaretçisi ayarlama bir `CMFCTabCtrl`-özel bir sekmeli pencere sekmeli bir bölmeye içinde kullanıyorsanız, türetilmiş bir nesneye.  
   
 ##  <a name="resettabs"></a>  CTabbedPane::ResetTabs  
- Tüm sekmeli bölmeleri varsayılan durumuna sıfırlar.  
+ Tüm sekmeli bölmelerde varsayılan duruma sıfırlanır.  
   
 ```  
 static void ResetTabs();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm sekmeli bölmeleri varsayılan durumlarına döndürmek için bu yöntemi çağırın. Çağrıldığında, bu yöntem kenarlık boyutları ve otomatik renk tüm sekmeli bölmeleri durumunu sıfırlar.  
+ Tüm sekmeli bölmelerde varsayılan durumlarına geri dönmek için bu yöntemi çağırın. Bu yöntem, çağrıldığında, kenarlık boyutları ve tüm sekmeli bölmelerde otomatik renk durumunu sıfırlar.  
   
 ##  <a name="settabautocolors"></a>  CTabbedPane::SetTabAutoColors  
- Otomatik Renk özelliği etkinleştirilmişse, kullanılan özel renk listesi ayarlar.  
+ Otomatik Renk özelliği etkinleştirilmişse kullanılan özel renk listesi ayarlar.  
   
 ```  
 static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
@@ -321,12 +321,12 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *arColors*  
- Ayarlamak için renk dizisi içerir.  
+ Ayarlanacak renkleri dizisini içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Otomatik Renk özelliği etkinleştirilmişse, kullanılan renk listesi özelleştirmek için bu yöntemi kullanın. Bu statik işlev ve uygulamanızdaki tüm sekmeli bölmeleri etkiler.  
+ Listeyi otomatik renk özelliği etkinleştirilmişse kullanılan renkleri özelleştirmek için bu yöntemi kullanın. Bu statik işlev ve uygulamanızı tüm sekmeli bölmelerde etkiler.  
   
- Kullanım [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) etkinleştirmek veya otomatik renk özelliğini devre dışı bırakmak için.  
+ Kullanım [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) etkinleştirme veya otomatik renk özelliğini devre dışı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

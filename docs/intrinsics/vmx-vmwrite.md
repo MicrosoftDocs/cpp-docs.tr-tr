@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b87aeafd1b9c0c1a35e3f5d99ab5b9d76410b4d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec022fe2d317ec38bc1d9b06f459b9efc7818c92
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337723"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465174"
 ---
 # <a name="vmxvmwrite"></a>__vmx_vmwrite
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Geçerli sanal makine denetim yapısı (Windows VMCS) belirtilen alan için belirtilen değer yazar.  
+ Belirtilen değer geçerli bir sanal makine denetim yapısı (Windows VMCS) belirtilen alan yazar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,12 +42,12 @@ unsigned char __vmx_vmwrite(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `Field`|Yazılacak Windows VMCS alan.|  
-|[in] `FieldValue`|Windows VMCS alana yazılacak değer.|  
+|[in] `Field`|Yazmak için Windows VMCS alan.|  
+|[in] `FieldValue`|Windows VMCS alanına yazılacak değer.|  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  0  
- İşlemi başarılı oldu.  
+ İşlem başarılı oldu.  
   
  1.  
  İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.  
@@ -56,17 +56,17 @@ unsigned char __vmx_vmwrite(
  İşlem durumu olmadan başarısız oldu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__vmx_vmwrite` İşlevi eşdeğerdir `VMWRITE` makine yönergesi. Değeri `Field` parametredir Intel belgelerinde açıklanan bir kodlanmış alan dizini. Daha fazla bilgi için belge, "Intel Sanallaştırma teknik belirtim IA-32 Intel mimarisi," için arama sırasında numara C97063-002, belge [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site ve ardından o ek C bakın Belge.  
+ `__vmx_vmwrite` İşlev, eşdeğer `VMWRITE` makine yönergesi. Değerini `Field` Intel belgelerinde açıklanan bir kodlanmış alan dizini parametredir. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site ve ardından, söz konusu ek C başvurun Belge.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__vmx_vmwrite`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmwrite`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

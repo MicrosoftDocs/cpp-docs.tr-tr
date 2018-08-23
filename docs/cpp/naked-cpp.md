@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3366995105f6295fd1d4d89ad85896fbb625519d
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 0b74c08ee2130e9742884eacfa93d6fc55110291
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402502"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465553"
 ---
 # <a name="naked-c"></a>naked (C++)
 **Microsoft'a özgü**  
   
- Bildirilen işlevler **naked** özniteliği, derleyici giriş ve sonuç kodu olmadan kod oluşturur. Satır içi derleyici kodunu kullanarak kendi giriş/sonuç kodu dizilerinizi yazmak için bu özelliği kullanabilirsiniz. Çıplak işlevler, özellikle sanal cihaz sürücülerinin yazılmasında yararlıdır.  Unutmayın **naked** özniteliği yalnızca x86 ve ARM geçerli olduğundan ve mevcut değildir [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  
+ Bildirilen işlevler **naked** özniteliği, derleyici giriş ve sonuç kodu olmadan kod oluşturur. Satır içi derleyici kodunu kullanarak kendi giriş/sonuç kodu dizilerinizi yazmak için bu özelliği kullanabilirsiniz. Çıplak işlevler, özellikle sanal cihaz sürücülerinin yazılmasında yararlıdır.  Unutmayın **naked** özniteliği yalnızca x86 ve ARM geçerlidir ve x64 üzerinde kullanılabilir değil.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

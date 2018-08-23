@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e0b594952e8e5be0a9be9c843877c8c4bb95eca
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b41af8375249a48ac3a866af224370b19f071d28
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842722"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466051"
 ---
 # <a name="embeddedidl"></a>embedded_idl
-**C++ özel**  
+**C++ özgü**  
   
- Tür kitaplığı, öznitelik oluşturulan kod korunur .tlh dosyasına yazılır belirtir.  
+Tür kitaplığı .tlh dosyasına, öznitelik tarafından oluşturulan kod korunarak yazıldığını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,17 +34,17 @@ ms.locfileid: "33842722"
 embedded_idl[("param")]  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `param`  
- İki değerden biri olabilir:  
+### <a name="parameters"></a>Parametreler  
+*param*  
+İki değerden biri olabilir:  
   
--   emitidl: Tür Kitaplığı ' alınan tür bilgileri öznitelikli projesi için oluşturulan IDL de mevcut olacaktır.  Bu varsayılandır ve parametresi belirtmezseniz uygulanmaz `embedded_idl`.  
+- emitidl: Tür Kitaplığı ' alınan tür bilgileri öznitelikli proje için üretilen IDL mevcut olacaktır.  Bu varsayılan ve geçerli bir parametre belirtmezseniz `embedded_idl`.  
   
--   no_emitidl: Tür Kitaplığı ' alınan tür bilgileri öznitelikli projesi için oluşturulan IDL mevcut olmaz.  
+- no_emitidl: Tür Kitaplığı ' alınan tür bilgileri öznitelikli proje için üretilen IDL mevcut olmayacaktır.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // import_embedded_idl.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -53,8 +53,10 @@ embedded_idl[("param")]
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Son C++ özel**  
+ 
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

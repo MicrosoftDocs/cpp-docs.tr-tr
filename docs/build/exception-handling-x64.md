@@ -15,15 +15,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7ae44d84ed8a0e04f93513db3a5431ebfd80abf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: acfcf5f37e0b679faf0e35549cc705ccee216c02
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367192"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464773"
 ---
 # <a name="exception-handling-x64"></a>Özel Durum İşleme (x64)
-Bu bölümde, yapılandırılmış özel durum işleme ve C++ özel durum üzerinde işleme anlatılmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  
+Bu bölümde, yapılandırılmış özel durum işleme ve C++ özel durum işleme davranışını x64 açıklanmaktadır.  
   
 -   [Özel Durum İşleme için Veri Bırakma, Hata Ayıklayıcı Desteği](../build/unwind-data-for-exception-handling-debugger-support.md)  
   
@@ -35,7 +35,7 @@ Bu bölümde, yapılandırılmış özel durum işleme ve C++ özel durum üzeri
   
 -   [C'de Veri Bırakma Tanımları](../build/unwind-data-definitions-in-c.md)  
   
- Daha fazla bilgi için bkz: [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md).  
+ Daha fazla bilgi için [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [x64 Yazılım Kuralları](../build/x64-software-conventions.md)

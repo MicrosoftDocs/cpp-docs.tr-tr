@@ -43,12 +43,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f94e1100398b3f338fdc34839aee9a1e8f67871c
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 59bc14040e9dfc7ba69d95525bae7ad795de43b8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338382"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465544"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor Sınıfı
 Gelişmiş kullanım için tasarlanmış bir erişimci türünü temsil eder.  
@@ -90,7 +90,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Sütun numarası.  
@@ -128,7 +128,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Parametre numarası.  

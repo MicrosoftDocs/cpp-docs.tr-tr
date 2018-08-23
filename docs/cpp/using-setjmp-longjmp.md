@@ -1,7 +1,7 @@
 ---
-title: Setjmp-longjmp kullanma | Microsoft Docs
+title: Setjmp ve longjmp kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/14/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -22,22 +22,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2073729fc5445fc36e3d8a6f52c4f69b079c8b47
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: a83253fb98506bb586af2b52ef3321bada7ca01f
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462137"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466291"
 ---
-# <a name="using-setjmplongjmp"></a>setjmp/longjmp Kullanma
-Zaman [setjmp](../c-runtime-library/reference/setjmp.md) ve [longjmp](../c-runtime-library/reference/longjmp.md) olan birlikte kullanıldığında, yerel olmayan yürütmek için bir yol sağlarlar **goto**. Bunlar, genellikle standart çağırma kullanmadan daha önce çağrılmış bir yordam hata işleme veya kurtarma koduna yürütme denetimi geçirmek için kullanılan veya dönüş kuralları.  
-  
+# <a name="using-setjmp-and-longjmp"></a>Setjmp ve longjmp kullanma
+
+Zaman [setjmp](../c-runtime-library/reference/setjmp.md) ve [longjmp](../c-runtime-library/reference/longjmp.md) olan birlikte kullanıldığında, yerel olmayan yürütmek için bir yol sağlarlar **goto**. Bunlar, genellikle standart çağırma kullanmadan daha önce çağrılmış bir yordam hata işleme veya kurtarma koduna yürütme denetimi geçirmek için C kodunda kullanılan veya dönüş kuralları.
+
 > [!CAUTION]
->  Ancak, çünkü **setjmp** ve **longjmp** C++ nesnesi semantiğini desteklemediğinden ve yerel değişkenlerde iyileştirmeyi engelleyerek performansı düşebilir gerektiğinden, kullanmanızı öneririz bunları C++ programlarında. Kullanmanızı öneririz **deneyin**/**catch** yerine oluşturur.  
-  
- Kullanmaya karar verirseniz **setjmp**/**longjmp** bir C++ programında de \<setjmp.h > veya \<setjmpex.h > arasında doğru etkileşimi sağlamak için İşlevler ve C++ özel durum işleme. Kullanırsanız [/EH](../build/reference/eh-exception-handling-model.md) derlemek için yerel nesneleri yok ediciler yığın bırakma sırasında çağrılır. Kullanırsanız **EHS** derleme ve biri, işlev çağrıları kullanan bir işlevi [nothrow](../cpp/nothrow-cpp.md) ve kullanan işlev **nothrow** çağrıları **longjmp**, sonra da yok edici, iyileştiriciye bağlı değil.  
-  
- Taşınabilir kodda, yerel olmayan **goto** çağrılarının **longjmp** yürütüldüğünde, doğru çerçeve tabanlı nesnelerin yok edilmesini güvensiz olabilir.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)
+> Çünkü `setjmp` ve `longjmp` yığın çerçevesi nesneleri C++ Derleyicileri temelinizi arasında doğru yok edilmesini desteklemez ve yerel değişkenlerde iyileştirmeyi engelleyerek performansı düşebilir olduğundan, C++, bunların kullanılması önerilmemektedir programları. Kullanmanızı öneririz **deneyin** ve **catch** yerine oluşturur.
+
+Kullanmaya karar verirseniz `setjmp` ve `longjmp` bir C++ programında de \<setjmp.h > veya \<setjmpex.h > yapılandırılmış özel durum işleme (SEH) ya da C++ özel durum ve işlevler arasında doğru etkileşimi sağlamak için işleme.
+
+**Microsoft'a özgü**
+
+Kullanıyorsanız bir [/EH](../build/reference/eh-exception-handling-model.md) C++ kodu derlemek için seçeneğinde, yerel nesneleri yok ediciler yığın bırakma sırasında çağrılır. Ancak, kullanırsanız **EHS** veya **/ehsc** derleme ve işlevlerinizi kullanan bir [noexcept](../cpp/noexcept-cpp.md) çağrıları `longjmp`, yok edici bırakma sonra bu işlev için , iyileştirici durumuna bağlı olarak gerçekleşmeyebilir.
+
+Taşınabilir kodda olduğunda bir `longjmp` çağrı yürütüldüğünde, doğru çerçeve tabanlı nesnelerin yok edilmesini standardına göre garanti açıkça ve diğer derleyiciler tarafından desteklenmiyor olabilir. Bildiren, 4, uyarı düzeyinde bir çağrı `setjmp` uyarı C4611 neden: '_setjmp' ile C++ nesne yok etme arasındaki etkileşim taşınabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)  

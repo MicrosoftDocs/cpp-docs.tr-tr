@@ -24,17 +24,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f162a8da230177509ebe67741580ef224b20ba19
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 1ea72c42f1c10e8d5cd27537db13c7b7baafef5d
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040801"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466086"
 ---
 # <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog sınıfı
-`CMFCDesktopAlertDialog` Sınıfı ile birlikte kullanılır [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md) özel bir iletişim kutusu açılır penceresinde görüntülenecek.  
+`CMFCDesktopAlertDialog` Sınıfı ile birlikte kullanılır [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md) açılır pencerede özel bir iletişim kutusu görüntülenecek.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,15 +54,15 @@ class CMFCDesktopAlertDialog : public CDialogEx
 |[CMFCDesktopAlertDialog::PreTranslateMessage](#pretranslatemessage)|(Geçersiz kılmaları `CDialogEx::PreTranslateMessage`.)|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özel bir iletişim kutusu açılır penceresinde görüntülemek için aşağıdaki adımları gerçekleştirin:  
+ Açılır pencerede özel bir iletişim kutusu görüntülemek için aşağıdaki adımları gerçekleştirin:  
   
 1.  Öğesinden bir sınıf türetin `CMFCDesktopAlertDialog`.  
   
-2.  Bir alt iletişim şablonu Proje kaynaklarında oluşturun.  
+2.  Bir alt iletişim şablonu projesinin kaynakları oluşturun.  
   
-3.  Çağrı [CMFCDesktopAlertWnd::Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) iletişim şablonu ve parametre olarak, türetilmiş sınıf çalışma zamanı sınıf bilgileri için bir işaretçi kaynak kimliği.  
+3.  Çağrı [CMFCDesktopAlertWnd::Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) iletişim şablonu ve parametre olarak çalışma zamanı sınıf bilgileri türetilmiş sınıfın bir işaretçisi kaynak kimliği.  
   
-4.  Bu bildirimler doğrudan işlemek için barındırılan denetimlerin program veya barındırılan denetimlerden gelen tüm bildirimleri işlemek için özel iletişim program.  
+4.  Bu bildirimleri doğrudan işlemek için barındırılan denetimleri program veya program barındırılan denetimlerden gönderilen tüm bildirimler işlemek için özel iletişim.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -90,7 +90,7 @@ BOOL CreateFromParams(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *parametreleri*  
+ [in] *params*  
  [in] *pParent*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -137,5 +137,5 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md)   
- [CMFCDesktopAlertWndInfo sınıfı](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)   
+ [Cmfcdesktopalertwndınfo sınıfı](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)   
  [CDialogEx Sınıfı](../../mfc/reference/cdialogex-class.md)

@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 599e15414a944602ee196f3910a1c5dd561c906d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f12ff4f0f109ac97f9e9e2e4f8d800455159a10b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324856"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466456"
 ---
 # <a name="vmxvmptrld"></a>__vmx_vmptrld
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İşaretçinin belirtilen adres geçerli sanal makine denetim yapısı (Windows VMCS) yükler.  
+ İmleci belirtilen adres geçerli sanal makine denetim yapısı (Windows VMCS) yükler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,12 +38,12 @@ int __vmx_vmptrld(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [,] *`VmcsPhysicalAddress`  
- Windows VMCS işaretçi depolandığı adresi.  
+ [in] *`VmcsPhysicalAddress`  
+ Windows VMCS işaretçinin depolandığı adresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  0  
- İşlemi başarılı oldu.  
+ İşlem başarılı oldu.  
   
  1.  
  İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.  
@@ -52,19 +52,19 @@ int __vmx_vmptrld(
  İşlem durumu olmadan başarısız oldu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- 64 bit fiziksel adres Windows VMCS işaretçidir.  
+ Bir 64 bit fiziksel adresi Windows VMCS işaretçisidir.  
   
- `__vmx_vmptrld` İşlevi eşdeğerdir `VMPTRLD` makine yönergesi. Bu işlev bir ana bilgisayarın sanal makine İzleyici etkileşiminin bir konuk işletim sistemi ve uygulamaları destekler. Daha fazla bilgi için belge, "Intel Sanallaştırma teknik belirtim IA-32 Intel mimarisi," için arama sırasında numara C97063-002, belge [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__vmx_vmptrld` İşlev, eşdeğer `VMPTRLD` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__vmx_vmptrld`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmptrld`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

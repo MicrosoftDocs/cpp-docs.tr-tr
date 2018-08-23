@@ -14,64 +14,64 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f05d7d3d3d3fd6b40a5477b7765b89409747d3ce
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d5789e353a6e15d4da3f5754d9d4d91821359d14
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845872"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465458"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX Kullanıcıları için Visual C++'a Giriş
 
-Bu konu, Visual Studio için yenidir ve C++ ve Visual Studio tümleşik geliştirme ortamı (IDE) ile üretken isteyen UNIX kullanıcıları için bilgi sağlar.
+Bu konuda, C++ ve Visual Studio tümleşik geliştirme ortamı (IDE) ile üretken olmak ve Visual Studio'yu ilk kez UNIX kullanıcıları için bilgiler sağlar.
   
-## <a name="getting-started-on-the-command-line"></a>Komut satırında Başlarken  
+## <a name="getting-started-on-the-command-line"></a>Komut satırında kullanmaya başlama  
 
-C++ derleyicisi komut satırından UNIX komut satırı ortamı kullanacağınız benzer şekilde kullanabilirsiniz. Komut satırı C ve C++ derleyicisi (CL. kullanarak komut satırından derleme EXE), bağlayıcı (bağlantı. EXE) ve diğer NMAKE,. EXE, UNIX Microsoft sürümü yardımcı olun.  
+C++ derleyicisi komut satırından UNIX komut satırı ortamını kullanacağınız benzer şekilde kullanabilirsiniz. Komut satırı C ve C++ derleyicisi (CL. kullanarak komut satırından derleme EXE), bağlayıcı (bağlantı. EXE) ve diğer NMAKE,. EXE UNIX Microsoft sürümünü yardımcı olun.  
   
-UNIX komutları/usr/bin gibi bir ortak klasöre yüklenir. Visual Studio'da komut satırı araçları, Visual Studio yükleme dizininde VC\bin alt ve alt dizinlerinde yüklenir. UNIX farklı olarak bu araçlar düz bir komut istemi penceresinde kullanılabilir değil. Komut satırı araçları, bir geliştirici komut istemi kısayol kullanma veya Çalıştır kullanmak için geliştirici komut dosyası vcvarsall.bat gibi. Bu yolu ve C++ programları komut satırından derlemek için gerekli olan diğer ortam değişkenlerini ayarlar. Daha fazla bilgi için bkz: [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  
+UNIX, komutları, / usr/bin gibi bir ortak klasöre yüklenir. Visual Studio komut satırı araçları, Visual Studio yükleme dizininde VC\bin alt ve alt dizinlerinde yüklenir. UNIX, bu araçlar düz bir komut istemi penceresinde kullanılamaz. Komut satırı araçları, bir geliştirici komut istemi kısayolunun kullanın veya çalışma kullanmak için bir geliştirici komut dosyası vcvarsall.bat gibi. Bu yolu ve C++ programları komut satırından derleme için gerekli olan diğer ortam değişkenlerini ayarlar. Daha fazla bilgi için [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  
   
-Bir geliştirici komut istemi kısayoluna açmak için girin *Geliştirici komut istemi* masaüstünde denetimi arayın ve seçin **Geliştirici komut istemi** Visual Studio sürümünüze sonucu. Belirli bir konağa ve hedef mimari için önceden yapılandırılmış bir geliştirici komut istemi seçmek için açık **Başlat** menüsü (Windows simgesi Masaüstü köşesinde) ve Visual Studio sürümünüze klasöre kaydırma yapın , aşağıdaki gibi **Visual Studio 2017**. Klasörü açın ve tercih edilen konak ve hedef Mimarinizi komut istemi kısayoluna seçin.
+Bir geliştirici komut istemi kısayolunun açmak için girin *Geliştirici komut istemi* Desktop denetimini arayın ve seçin **Geliştirici komut istemi** Visual Studio sürümünüz için sonuç. Belirli konak ve hedef mimari için önceden yapılandırılmış bir geliştirici Komut İstemi'ni seçmek için açık **Başlat** menü (Windows simge Masaüstü üst köşesinde) ve Visual Studio sürümünüz için klasörüne kaydırma yapın , aşağıdaki gibi **Visual Studio 2017**. Klasörü açmak ve tercih edilen konak ve hedef mimari için komut istemi kısayolunun seçin.
   
-Daha güçlü avantajlarından yararlanmak için Visual Studio hata ayıklayıcısı, IntelliSense kod arama ve deyim tamamlama, görsel tasarımcılar gibi özellikleri proje yönetimine ve vb., Visual Studio IDE kullanmanız gerekir.  
+Daha güçlü yararlanmak için Visual Studio hata ayıklayıcısı, IntelliSense kod arama ve deyim tamamlama, görsel tasarımcılar gibi özellikleri proje yönetimi ve bu şekilde, Visual Studio IDE kullanmanız gerekir.  
   
 ## <a name="debugging-your-code"></a>Kodunuzun hatalarını ayıklama  
 
-Komut satırını kullanın ve uygulamalarınızı geliştirme iş istasyonunuza çalıştırmak, göreceksiniz çalıştırmak için bir iletişim kutusu [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] hata ayıklayıcı kodunuzu bellek erişim ihlali, işlenmeyen bir özel durum veya diğer kurtarılamaz karşılaştığında görüntülenir hatalar. Tıklatırsanız **Tamam**, Visual Studio geliştirme ortamında başlatılır ve hata ayıklayıcısı hata noktasına açılacaktır. Bu şekilde uygulamalarınızda hata ayıklamak mümkündür ve bu durumda, kaynak kodunuz yalnızca ile derlenmiş ise kullanılabilir olur [/Z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../build/reference/z7-zi-zi-debug-information-format.md) geçin. Daha fazla bilgi için bkz: [yerel kod hata ayıklama](/visualstudio/debugger/debugging-native-code) ve [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
+Komut satırını kullanın ve uygulamalarınızı geliştirme iş istasyonunuzda çalıştırmak, kodunuzu bir erişim ihlali, İşlenmeyen özel durum veya kurtarılamaz diğer karşılaştığında Visual Studio hata ayıklayıcıyı çalıştırmak için bir iletişim kutusu görüntülenir görürsünüz hataları. Tıklarsanız **Tamam**, Visual Studio geliştirme ortamını başlatılır ve hata ayıklayıcı hata noktasını için açılır. Bu şekilde uygulamalarınızda hata ayıklamak mümkündür ve bu durumda, kaynak kodunuzu yalnızca ile derlenmişse kullanılabilirdi [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../build/reference/z7-zi-zi-debug-information-format.md) geçin. Daha fazla bilgi için [yerel kodda hata ayıklama](/visualstudio/debugger/debugging-native-code) ve [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   
 ## <a name="using-the-development-environment"></a>Geliştirme ortamını kullanma  
 
-Geliştirme ortamı düzenleyin ve kaynak kodunuzu yapı içinde kullanmak daha kolay bir *proje*. Proje, kaynak ve bir kitaplık veya yürütülebilir dosya gibi tek bir birime derlenmiş ilişkili dosyaları koleksiyonudur. Bir proje nasıl oluşturulacak dosyalardır hakkında bilgiler de içerir. Projeler hakkında bilgi uzantısı .prj bir proje dosyasında depolanır.  
+Geliştirme ortamı düzenleyin ve kaynak kodunuzu yapı içinde kullanımı daha kolay bir *proje*. Bir proje, kaynak ve bir kitaplık veya yürütülebilir dosya gibi tek bir birim içine derlenmiş ilişkili dosyaları koleksiyonudur. Bir proje, ayrıca dosyaların oluşturulacak şeklini hakkında bilgi içerir. Projeler hakkında bilgi uzantısı .prj ile bir proje dosyasında depolanır.  
   
-Birden çok kitaplıkları ve yürütülebilir dosyaları, her olası derleyici seçenekleri ya da farklı bir dilde farklı bir kümesiyle yerleşik oluşan bir uygulama, tek bir parçası olan birden çok proje depolanır *çözüm*. Birden çok proje gruplamak için bir kapsayıcı için bir Özet bir çözümdür. Çözümleri hakkında bilgi .sln uzantılı bir çözüm dosyasında depolanır. Daha fazla bilgi için bkz: [çözümler ve projeler Visual Studio'da](/visualstudio/ide/solutions-and-projects-in-visual-studio) ve [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
+Birden çok kitaplıkları ve her olabilecek birtakım farklı derleyici seçenekleri veya hatta farklı bir dil ile oluşturulmuş yürütülebilir dosyaları içeren bir uygulama, tek bir parçası olan birden çok proje depolanan *çözüm*. Bir çözüm, birden çok proje gruplamak bir kapsayıcı için bir soyutlamadır. Çözümleri hakkında bilgi, bir çözüm uzantısı .sln dosyasında depolanır. Daha fazla bilgi için [Visual Studio'da projeler ve çözümler](/visualstudio/ide/solutions-and-projects-in-visual-studio) ve [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   
-## <a name="importing-your-existing-code"></a>Varolan kod içeri aktarma 
+## <a name="importing-your-existing-code"></a>Mevcut kod alma 
  
-C++ derleyicisi ile veya bir derleme görevleri dosyası olmadan derlemek ve içine yerleştirmek için ayarlanmış var olan kodu oluşturmak için kullanabileceğiniz bir [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] projesi. Daha fazla bilgi için bkz: [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md).  
+C++ derleyicisi ile veya bir derleme görevleri dosyası olmadan derleyin ve Visual Studio projesi yerleştirmek için ayarlanmış mevcut bir kod oluşturmak için kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md).  
   
 ## <a name="creating-a-new-project"></a>Yeni proje oluşturma  
 
-Geliştirme ortamında yeni projeler oluşturabilir. Visual Studio çeşitli ortak görevler için standart kod sağlayan çok sayıda şablonları sağlar. Uygulama sihirbazları çeşitli uygulama türleri için kod anahatlarıyla projeler oluşturmak için kullanabilirsiniz.  
+Geliştirme ortamında yeni projeler oluşturabilirsiniz. Visual Studio standart kod sağlayan çeşitli ortak görevler için çeşitli şablonları sağlar. Uygulama sihirbazları, çeşitli uygulama türleri için kod anahatlarıyla projeler oluşturmak için kullanabilirsiniz.  
   
-Boş bir proje ile kullanarak başlatabilirsiniz **konsol uygulaması (Win32) Sihirbazı**. Seçin **boş proje** onay kutusu. Daha sonra yeni ve mevcut dosyaları projeye sonra ekleyebilirsiniz.  
+Boş bir proje ile kullanarak başlatabilirsiniz **konsol uygulaması (Win32) Sihirbazı**. Seçin **boş proje** onay kutusu. Ardından yeni ve mevcut dosyalar projeye daha sonra ekleyebilirsiniz.  
   
-Bir proje oluşturduğunuzda, projeyi adlandırmanız gerekir. Varsayılan olarak, dinamik bağlantı kitaplığı (DLL) adını proje adı eşittir veya projeden olan yürütülebilir. Daha fazla bilgi için bkz: [oluşturma çözümler ve projeler](/visualstudio/ide/creating-solutions-and-projects).  
+Bir proje oluşturduğunuzda, projeyi adlandırın gerekir. Varsayılan olarak dinamik bağlantı kitaplığı (DLL) adı proje adı'değerine eşit veya projeden olan yürütülebilir. Daha fazla bilgi için [projeler ve çözümler oluşturma](/visualstudio/ide/creating-solutions-and-projects).  
   
 ## <a name="microsoft-specific-modifiers"></a>Microsoft'a Özgü Değiştiriciler  
 
-Microsoft Visual C++ Derleyici programlama Windows işletim sistemlerinde desteklemek için programlama dili standart C++ için birkaç uzantıları uygular. Bu uzantılar çağırma kurallarına işlev depolama sınıfı öznitelikler belirtmek için kullanılır ve tabanlı adresleme, diğerlerinin yanında. Tüm desteklenen C++ uzantılarının tam listesi için bkz: [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md).  
+Microsoft Visual C++ derleyicisi, Windows işletim sistemleri için programlamayı desteklemek için programlama dili standart C++ birkaç uzantı uygular. Bu uzantılar, çağırma kuralları işlev depolama sınıfı öznitelikleri belirtmek için kullanılır ve tabanlı adresleme, diğerlerinin yanında. Desteklenen tüm C++ uzantıları tam bir listesi için bkz. [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).  
   
-Kullanarak tüm Microsoft özgü uzantılar c++ devre dışı bırakabilirsiniz **/Za** derleyici seçeneği. Birden çok platformu üzerinde çalıştırmak için kod yazmak istiyorsanız bu seçeneği önerilir. Daha fazla bilgi için **/Za** derleyici seçeneği bkz [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md). C++ Derleyici uyumluluğu hakkında daha fazla bilgi için bkz: [Visual C++ dili uygunluk](../visual-cpp-language-conformance.md) ve [standart dışı davranış](../cpp/nonstandard-behavior.md).  
+Kullanarak tüm Microsoft özel C++ uzantılarını devre dışı bırakabilirsiniz `/Za` derleyici seçeneği. Birden çok platformda çalışacak kod yazmak istiyorsanız, bu seçenek önerilir. Daha fazla bilgi için `/Za` derleyici seçeneği bkz [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md). C++ Derleyici uyumluluğu hakkında daha fazla bilgi için bkz. [Visual C++ dil uyumluluğu](../visual-cpp-language-conformance.md) ve [standart dışı davranış](../cpp/nonstandard-behavior.md).  
   
-## <a name="precompiled-headers"></a>Önceden derlenmiş üst bilgileri  
+## <a name="precompiled-headers"></a>Önceden derlenmiş üst bilgiler  
 
-Microsoft C ve C++ Derleyicileri satır içi kod dahil olmak üzere tüm C veya C++ kodu önceden derlemek için seçenekler sağlar. Bu performans özelliğini kullanarak, kod kararlı gövdesi, kod derlenmiş durumu bir dosyada saklayabilir ve, sonraki derlemeler sırasında önceden derlenmiş kod halen geliştirilme aşamasındadır kodu ile birleştirin. Sonraki her derleme daha hızlı çünkü tutarlı kodun derlenmesi gerekmez.  
+Microsoft C and C++ Derleyicileri, satır içi kod dahil olmak üzere tüm C veya C++ kodu önceden derlemek için seçenekler sağlar. Bu performans özelliği kullanarak, kod kararlı gövdesi, kodun derlenmiş hali bir dosyada depolar ve, sonraki derleme sırasında önceden derlenmiş kod hala geliştirilmekte olan kod ile birleştirin. Tutarlı kodun derlenmesi gerekmez çünkü her sonraki derleme daha hızlıdır.  
   
-Varsayılan olarak, tüm önceden derlenmiş kod dosyalarında belirtilir **stdafx.h** ve **stdafx.cpp**. **Yeni proje** Sihirbazı otomatik olarak oluşturacak bu dosyaları sizin için kaldırmadıysanız **önceden derlenmiş üstbilgi** seçeneği. Önceden derlenmiş üst bilgileri hakkında daha fazla bilgi için bkz: [önceden derlenmiş üst bilgi dosyaları oluşturma](../build/reference/creating-precompiled-header-files.md).  
+Varsayılan olarak, tüm önceden derlenmiş kod dosyaları stdafx.h ve stdafx.cpp belirtilir. **Yeni proje** Sihirbazı otomatik olarak oluşturur bu dosyaları sizin için kaldırmadıysanız **önceden derlenmiş üst bilgi** seçeneği. Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları oluşturma](../build/reference/creating-precompiled-header-files.md).  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
 
-Daha fazla bilgi için bkz: [UNIX'ten Win32'ye taşıma](../porting/porting-from-unix-to-win32.md).  
+Daha fazla bilgi için [UNIX'ten Win32'ye taşıma](../porting/porting-from-unix-to-win32.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

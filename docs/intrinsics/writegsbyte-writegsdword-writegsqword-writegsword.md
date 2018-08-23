@@ -22,17 +22,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c9eec7bb0da65bfd327726078766ab1befacbde
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e5ae6f47009600c87cb260246fca474592a5e9c6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328282"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465638"
 ---
 # <a name="writegsbyte-writegsdword-writegsqword-writegsword"></a>__writegsbyte, __writegsdword, __writegsqword, __writegsword
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bellek GS kesim başına göreli bir uzaklık tarafından belirtilen bir konuma yazma.  
+ GS kesim başlangıcına göre bir uzaklık tarafından belirtilen bir konuma bellek yazın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -57,7 +57,7 @@ void __writegsqword(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `Offset`  
- Yazılacak GS başından uzaklık.  
+ Yazılacak GS başından uzaklığı.  
   
  [in] `Data`  
  Yazılacak değer.  
@@ -66,17 +66,17 @@ void __writegsqword(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__writegsbyte`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsdword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsqword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writegsbyte`|X64|  
+|`__writegsdword`|X64|  
+|`__writegsqword`|X64|  
+|`__writegsword`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yapı yalnızca çekirdek modunda kullanılabilir ve bu yordamlar yalnızca iç bilgileri kullanılabilir.  
+ Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve bu yordamlar yalnızca iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)   

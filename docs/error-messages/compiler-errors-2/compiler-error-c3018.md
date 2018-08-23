@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71695816672fa0f806accc32ac4f5a373557bdd9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54436aab9ebb7821e33037bc7ec14a43aa20dda8
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254339"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465534"
 ---
 # <a name="compiler-error-c3018"></a>Derleyici Hatası C3018
-'var1': OpenMP 'için' test veya artan kullanmalısınız değişken 'var2' dizin  
+'var1': OpenMP 'for' sınama veya artırma kullanmalısınız değişken 'var2' dizin  
   
- A `for` döngü OpenMP deyimi içinde kullanmalıdır aynı değişkeni artırma ve test için kendi dizini için kullanır.  
+ A `for` OpenMP deyimi bir döngüde kullanmalıdır aynı değişkeni, test ve artırma için alt dizini kullanır.  
   
- Aşağıdaki örnek C3018 oluşturur:  
+ Aşağıdaki örnek, C3018 oluşturur:  
   
 ```  
 // C3018.cpp  
@@ -41,13 +41,13 @@ int main()
    {  
       #pragma omp for  
       for (i = 0; j < 10; ++i)   // C3018  
-      // try the the following line instead  
+      // try the following line instead  
       // for (i = 0; i < 10; ++i)  
          j *= 2;  
   
       #pragma omp for  
       for (i = 0; i < 10; j = j + i)   // C3018  
-      // try the the following line instead  
+      // try the following line instead  
       // for (i = 0; i < 10; i = j + i)  
          j *= 2;  
    }  

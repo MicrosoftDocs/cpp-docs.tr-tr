@@ -27,15 +27,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71ca69f645e548b1913904f692eb1c5fae167a9a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2893644dc4dbec2d1ebc25be42ba4b30fbd19cb1
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693763"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465271"
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler Sınıfı
-Bir Özet arama bağlamla ilişkili geçerli Zamanlayıcı temsil eder.  
+Arama bağlamı ile ilişkili geçerli Zamanlayıcı için bir soyutlamayı temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,19 +49,19 @@ class CurrentScheduler;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Oluşturma](#create)|Tarafından davranışı açıklanan yeni bir zamanlayıcı oluşturur `_Policy` parametre ve arama bağlamına ekler. Yeni oluşturulan Zamanlayıcı arama bağlamı için geçerli Zamanlayıcı olur.|  
-|[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Arama bağlamla ilişkili Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresi alan sürüm `_Placement` görevleri bu parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı için yeni oluşturulan zamanlama grubundaki neden olur.|  
-|[Detach](#detach)|Arama bağlamından geçerli Zamanlayıcı ayırır ve varsa, daha önce eklenen Zamanlayıcısı geçerli Zamanlayıcı olarak geri yükler. Bu yöntem döndükten sonra çağıran bağlamını sonra kullanarak içeriği önceden iliştirilmiş zamanlayıcısı tarafından yönetilen `CurrentScheduler::Create` veya `Scheduler::Attach` yöntemi.|  
-|[Al](#get)|Bir işaretçi geçerli Zamanlayıcı da adlandırılan çağıran bağlamını ilişkili Zamanlayıcı döndürür.|  
-|[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Arama bağlamla ilişkili Zamanlayıcı için geçerli sanal işlemci sayısını döndürür.|  
-|[GetPolicy](#getpolicy)|Geçerli Zamanlayıcı ile oluşturulduğundan İlkesi kopyasını döndürür.|  
+|[Oluşturma](#create)|Davranışı, tarafından açıklanmıştır yeni bir zamanlayıcı oluşturur `_Policy` parametresi ve çağrı bağlamına ekler. Yeni oluşturulan Zamanlayıcı arama bağlamı için geçerli Zamanlayıcı olur.|  
+|[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Arama bağlamı ile ilişkili Zamanlayıcı içindeki yeni bir zamanlama grubu oluşturur. Parametre sürüm `_Placement` görevleri bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle için yeni oluşturulan aynı zamanlama grubundaki neden olur.|  
+|[Detach](#detach)|Arama bağlamı geçerli Zamanlayıcı ayırır ve varsa geçerli Zamanlayıcı olarak daha önce eklenen Zamanlayıcı geri yükler. Bu yöntemin dönüşünün ardından çağıran bağlamını ardından kullanarak bağlamı için daha önce eklendi Zamanlayıcı tarafından yönetilir `CurrentScheduler::Create` veya `Scheduler::Attach` yöntemi.|  
+|[Al](#get)|Geçerli bir zamanlayıcı da bilinir arama bağlamı ilişkili Zamanlayıcı bir işaretçi döndürür.|  
+|[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Geçerli sanal işlemci sayısını, çağrı bağlamla ilişkili Zamanlayıcı döndürür.|  
+|[GetPolicy](#getpolicy)|Geçerli Zamanlayıcı ile oluşturulan ilkeyi bir kopyasını döndürür.|  
 |[Kimliği](#id)|Geçerli Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|  
-|[Isavailablelocation](#isavailablelocation)|Belirtilen konum geçerli Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|  
-|[RegisterShutdownEvent](#registershutdownevent)|Windows olay işleyici geçirilen nedenler `_ShutdownEvent` geçerli bağlamla ilişkili Zamanlayıcı kapanır ve kendisini bozar bildirilmesini parametresi. Olay işaret zamanında Zamanlayıcı için zamanlanan tüm iş tamamlanır. Birden fazla kapatma olayları bu yöntemle kaydedilebilir.|  
-|[ScheduleTask](#scheduletask)|Fazla Yüklendi. Arama bağlamla ilişkili Zamanlayıcı içinde hafif görev zamanlar. Hafif görev çalışma zamanı tarafından belirlenen bir zamanlama grubunda yer alır. Parametresi alan sürüm `_Placement` görev belirtilen konumda yürütme doğrultusunda ağırlıklı neden olur.|  
+|[Isavailablelocation](#isavailablelocation)|Belirli bir konuma geçerli Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|  
+|[RegisterShutdownEvent](#registershutdownevent)|Windows olay işleyici geçirilen nedenleri `_ShutdownEvent` parametresi geçerli bağlam ile ilişkili Zamanlayıcı kapanır ve kendisini yok eder, sinyal. Olay sinyalini zaman, Zamanlayıcı için zamanlanan tüm iş tamamlanmıştır. Birden fazla kapatma olayları, bu yöntem kullanılarak kaydedilebilir.|  
+|[ScheduleTask](#scheduletask)|Fazla Yüklendi. Çağrı bağlamla ilişkili Zamanlayıcı hafif bir görevi zamanlar. Çalışma zamanı tarafından belirlenen bir zamanlama grubundaki hafif görev yerleştirilir. Parametre sürüm `_Placement` görevi belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Hiçbir Zamanlayıcı ise (bkz [Zamanlayıcı](scheduler-class.md)) içinde birçok yöntemlerini çağıran bağlamını ilişkili `CurrentScheduler` sınıfı, işlem varsayılan Zamanlayıcı ekinde sonuçlanır. Bu işlem varsayılan Zamanlayıcı böyle bir çağrı sırasında oluşturduğunuz ayrıca olabileceğidir.  
+ Hiçbir Zamanlayıcı ise (bkz [Zamanlayıcı](scheduler-class.md)) içinde birçok yöntem çağrı bağlamla ilişkili `CurrentScheduler` sınıf ek işlem varsayılan Zamanlayıcı neden olur. Bu işlem varsayılan Zamanlayıcı böyle bir çağrı sırasında oluşturduğunuz ayrıca olabileceğidir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CurrentScheduler`  
@@ -73,7 +73,7 @@ class CurrentScheduler;
   
 ##  <a name="create"></a> Oluşturma 
 
- Tarafından davranışı açıklanan yeni bir zamanlayıcı oluşturur `_Policy` parametre ve arama bağlamına ekler. Yeni oluşturulan Zamanlayıcı arama bağlamı için geçerli Zamanlayıcı olur.  
+ Davranışı, tarafından açıklanmıştır yeni bir zamanlayıcı oluşturur `_Policy` parametresi ve çağrı bağlamına ekler. Yeni oluşturulan Zamanlayıcı arama bağlamı için geçerli Zamanlayıcı olur.  
   
 ```
 static void __cdecl Create(const SchedulerPolicy& _Policy);
@@ -86,15 +86,15 @@ static void __cdecl Create(const SchedulerPolicy& _Policy);
 ### <a name="remarks"></a>Açıklamalar  
  Zamanlayıcı ek arama bağlamı için bir başvuru sayısı zamanlayıcıda örtük olarak yerleştirir.  
   
- Bir Zamanlayıcı ile oluşturulduktan sonra `Create` yöntemi, çağırmalıdır [CurrentScheduler::Detach](#detach) , gelecekte Zamanlayıcısı'nı kapatmak izin vermek üzere belirli bir noktada yöntemi.  
+ Bir Zamanlayıcı ile oluşturulduktan sonra `Create` yöntemini çağırmalıdır [CurrentScheduler::Detach](#detach) gelecekte Zamanlayıcısı'nı kapatmak izin vermek üzere belirli bir noktada yöntemi.  
   
- Bu yöntem için farklı bir zamanlayıcı zaten eklenmiş bir bağlamından çağrılırsa, varolan Zamanlayıcı önceki Zamanlayıcı hatırlanan ve yeni oluşturulan Zamanlayıcı geçerli Zamanlayıcı olur. Çağırdığınızda `CurrentScheduler::Detach` önceki Zamanlayıcı sonraki bir zamanda yöntemi geçerli Zamanlayıcı geri.  
+ Bu yöntem için farklı bir zamanlayıcı zaten eklenmiş bir bağlamdan çağrılırsa, var olan bir zamanlayıcı önceki Zamanlayıcı hatırlanır ve yeni oluşturulan Zamanlayıcı geçerli Zamanlayıcı olur. Çağırdığınızda `CurrentScheduler::Detach` önceki Zamanlayıcı daha sonraki bir noktada yöntemi geçerli Zamanlayıcı geri yüklenir.  
   
- Bu yöntemi özel durumlar dahil olmak üzere, çeşitli atabilirsiniz [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) ve [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).  
+ Bu yöntem, özel durumlar dahil olmak üzere, çeşitli oluşturabilecek [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) ve [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).  
   
 ##  <a name="createschedulegroup"></a> CreateScheduleGroup 
 
- Arama bağlamla ilişkili Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresi alan sürüm `_Placement` görevleri bu parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı için yeni oluşturulan zamanlama grubundaki neden olur.  
+ Arama bağlamı ile ilişkili Zamanlayıcı içindeki yeni bir zamanlama grubu oluşturur. Parametre sürüm `_Placement` görevleri bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle için yeni oluşturulan aynı zamanlama grubundaki neden olur.  
   
 ```
 static ScheduleGroup* __cdecl CreateScheduleGroup();
@@ -104,76 +104,76 @@ static ScheduleGroup* __cdecl CreateScheduleGroup(location& _Placement);
   
 ### <a name="parameters"></a>Parametreler  
  `_Placement`  
- Burada zamanlama grup içindeki görevleri adresindeki yürütme doğrultusunda ağırlıklı bir konuma başvuru.  
+ Burada aynı zamanlama grubundaki görevlerin sırasında yürütülen doğru güçlü eğilimi nedeniyle bir konuma başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni oluşturulan zamanlama grup için bir işaretçi. Bu `ScheduleGroup` nesnesi üzerinde yerleştirilen bir ilk başvuru sayısı sahiptir.  
+ Yeni oluşturulan zamanlama grubu için bir işaretçi. Bu `ScheduleGroup` nesnesi üzerinde yerleştirilen bir ilk başvuru sayısını sahiptir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem oluşturulan ve/veya şu anda arama bağlamla ilişkili hiçbir Zamanlayıcı ise arama bağlamına bağlı işlem varsayılan Zamanlayıcı neden olur.  
+ Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.  
   
- Çağırmanız gerekir [sürüm](schedulegroup-class.md#release) zamanlama işi bittiğinde zamanlama grubunda yöntemi. Zamanlayıcı zamanlama silecektir tüm iş kuyruğa sırasında grubu tamamlandı.  
+ Çağırmanız gerekir [yayın](schedulegroup-class.md#release) zamanlama iş tamamlandığında bir zamanlama grubu yöntemi. Zamanlayıcı zamanlamasını yok etmek için tüm işi kuyruğa atılmış grubu tamamlandı.  
   
- Bu zamanlayıcı açıkça oluşturduysanız, geçerli bağlamdan ayırma tarafından başvuru Zamanlayıcı üzerinde bırakmadan önce içinde gruplar zamanlamak için tüm başvurularını serbest bırakmalısınız unutmayın.  
+ Bu zamanlayıcı açıkça oluşturduysanız, geçerli bağlamdan ayırıp başvurunuz Zamanlayıcı üzerinde yayımlamadan önce içinde gruplar zamanlamak için tüm başvurularını serbest bırakmalısınız unutmayın.  
   
 ##  <a name="detach"></a> Ayırma 
 
- Arama bağlamından geçerli Zamanlayıcı ayırır ve varsa, daha önce eklenen Zamanlayıcısı geçerli Zamanlayıcı olarak geri yükler. Bu yöntem döndükten sonra çağıran bağlamını sonra kullanarak içeriği önceden iliştirilmiş zamanlayıcısı tarafından yönetilen `CurrentScheduler::Create` veya `Scheduler::Attach` yöntemi.  
+ Arama bağlamı geçerli Zamanlayıcı ayırır ve varsa geçerli Zamanlayıcı olarak daha önce eklenen Zamanlayıcı geri yükler. Bu yöntemin dönüşünün ardından çağıran bağlamını ardından kullanarak bağlamı için daha önce eklendi Zamanlayıcı tarafından yönetilir `CurrentScheduler::Create` veya `Scheduler::Attach` yöntemi.  
   
 ```
 static void __cdecl Detach();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Detach` Yöntemi dolaylı bir başvuru sayısı Zamanlayıcısı'ndan kaldırır.  
+ `Detach` Yöntemi Zamanlayıcıdan örtük bir başvuru sayısı kaldırır.  
   
- Arama bağlamına bağlı hiçbir Zamanlayıcı varsa, bu yöntemi çağırmadan sonuçlanır bir [scheduler_not_attached](scheduler-not-attached-class.md) oluşturulan özel durum.  
+ Çağrı bağlamına iliştirilemez hiçbir Zamanlayıcı ise, bu yöntemin çağrılması sonuçlanır bir [scheduler_not_attached](scheduler-not-attached-class.md) oluşturulan özel durum.  
   
- İç ağa ve bir zamanlayıcı veya başka bir yöntem kullanarak iliştirilmiş bir bağlam tarafından yönetilen bir bağlamından bu yöntemi çağırmadan [Scheduler::Attach](scheduler-class.md#attach) veya [CurrentScheduler::Create](#create) yöntemleri sonuçlanır bir [improper_scheduler_detach](improper-scheduler-detach-class.md) oluşturulan özel durum.  
+ Bir bağlamından bu yöntemi çağırmak için iç ve yönetilen bir zamanlayıcı ya da başka bir yöntem kullanılarak bağlı bir bağlam [Scheduler::Attach](scheduler-class.md#attach) veya [CurrentScheduler::Create](#create) yöntemleri sonuçlanır bir [improper_scheduler_detach](improper-scheduler-detach-class.md) oluşturulan özel durum.  
   
 ##  <a name="get"></a> Al 
 
- Bir işaretçi geçerli Zamanlayıcı da adlandırılan çağıran bağlamını ilişkili Zamanlayıcı döndürür.  
+ Geçerli bir zamanlayıcı da bilinir arama bağlamı ilişkili Zamanlayıcı bir işaretçi döndürür.  
   
 ```
 static Scheduler* __cdecl Get();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Çağıran bağlamını (geçerli Zamanlayıcı) ile ilişkili Zamanlayıcı için bir işaretçi.  
+ (Geçerli Zamanlayıcı) çağrı bağlamla ilişkili Zamanlayıcı işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem oluşturulan ve/veya şu anda arama bağlamla ilişkili hiçbir Zamanlayıcı ise arama bağlamına bağlı işlem varsayılan Zamanlayıcı neden olur. Hiçbir ek başvurusu yerleştirildiği `Scheduler` bu yöntem tarafından döndürülen nesne.  
+ Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur. Ek başvuru yerleştirildiği `Scheduler` bu yöntem tarafından döndürülen nesne.  
   
 ##  <a name="getnumberofvirtualprocessors"></a> GetNumberOfVirtualProcessors 
 
- Arama bağlamla ilişkili Zamanlayıcı için geçerli sanal işlemci sayısını döndürür.  
+ Geçerli sanal işlemci sayısını, çağrı bağlamla ilişkili Zamanlayıcı döndürür.  
   
 ```
 static unsigned int __cdecl GetNumberOfVirtualProcessors();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir zamanlayıcı çağıran bağlamını, bu Zamanlayıcı için sanal işlemcilerin sayısı ile ilişkili ise; Aksi takdirde, değer `-1`.  
+ Bir zamanlayıcı geçerli için zamanlayıcıda sanal işlemcilerin sayısı arama bağlamı ile ilişkili ise; Aksi takdirde, değeri `-1`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağıran bağlamını zaten bir Zamanlayıcı ile ilişkili değilse bu yöntem Zamanlayıcı ek yol açmaz.  
+ Arama bağlamı zaten bir Zamanlayıcı ile ilişkili değilse, bu yöntem Zamanlayıcı ek neden olmaz.  
   
- Bu yöntemden dönüş değeri arama bağlamla ilişkili Zamanlayıcı için sanal işlemci sayısının anlık bir örnekleme değeridir. Bu değer, döndürülmeden şu anda eski olabilir.  
+ Bu yöntemin dönüş değeri bir anlık örnekleme çağrı bağlamla ilişkili Zamanlayıcı için sanal işlemcilerin sayısı, ' dir. Bu değer, döndürülen şu eski olabilir.  
   
-##  <a name="getpolicy"></a> GetPolicy 
+##  <a name="getpolicy"></a> İlke alma 
 
- Geçerli Zamanlayıcı ile oluşturulduğundan İlkesi kopyasını döndürür.  
+ Geçerli Zamanlayıcı ile oluşturulan ilkeyi bir kopyasını döndürür.  
   
 ```
 static SchedulerPolicy __cdecl GetPolicy();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlkeyi bir kopyasını, geçerli Zamanlayıcı ile oluşturuldu.  
+ Geçerli Zamanlayıcı ile oluşturulan ilkeyi bir kopyası.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem oluşturulan ve/veya şu anda arama bağlamla ilişkili hiçbir Zamanlayıcı ise arama bağlamına bağlı işlem varsayılan Zamanlayıcı neden olur.  
+ Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.  
   
 ##  <a name="id"></a> Kimliği 
 
@@ -184,14 +184,14 @@ static unsigned int __cdecl Id();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir zamanlayıcı çağıran bağlamını, bu Zamanlayıcı için benzersiz bir tanımlayıcı ile ilişkili ise; Aksi takdirde, değer `-1`.  
+ Bir zamanlayıcı çağıran bağlamını, bu Zamanlayıcı için benzersiz bir tanımlayıcı ile ilişkili ise; Aksi takdirde, değeri `-1`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağıran bağlamını zaten bir Zamanlayıcı ile ilişkili değilse bu yöntem Zamanlayıcı ek yol açmaz.  
+ Arama bağlamı zaten bir Zamanlayıcı ile ilişkili değilse, bu yöntem Zamanlayıcı ek neden olmaz.  
   
 ##  <a name="isavailablelocation"></a> Isavailablelocation 
 
- Belirtilen konum geçerli Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.  
+ Belirli bir konuma geçerli Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.  
   
 ```
 static bool __cdecl IsAvailableLocation(const location& _Placement);
@@ -199,19 +199,19 @@ static bool __cdecl IsAvailableLocation(const location& _Placement);
   
 ### <a name="parameters"></a>Parametreler  
  `_Placement`  
- Konumun hakkında geçerli Zamanlayıcı sorgulamak için bir başvuru.  
+ Konumun geçerli Zamanlayıcı hakkında sorgulamak için bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Konumun belirttiği olup olmadığına ilişkin bir gösterge `_Placement` bağımsız değişkeni geçerli Zamanlayıcı üzerinde kullanılabilir.  
+ Bir gösterge olup olmadığına göre konumu belirtilen `_Placement` bağımsız değişkeni geçerli bir zamanlayıcı üzerinde kullanılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağıran bağlamını zaten bir Zamanlayıcı ile ilişkili değilse bu yöntem Zamanlayıcı ek yol açmaz.  
+ Arama bağlamı zaten bir Zamanlayıcı ile ilişkili değilse, bu yöntem Zamanlayıcı ek neden olmaz.  
   
- Dönüş değeri bir anlık örnekleme belirtilen konum kullanılabilir olup olmadığını unutmayın. Birden çok zamanlayıcılar varlığında dinamik kaynak yönetimi ekleyebilir veya kaynakları herhangi bir noktada zamanlayıcılar gelen çıkardığınız. Bu olacağını, belirtilen konum kullanılabilirlik değiştirebilirsiniz.  
+ Dönüş değeri, belirtilen konuma olup anlık bir örnekleme olduğuna dikkat edin. Birden çok zamanlayıcılar saklanacaktır dinamik kaynak yönetimi ekleyebilir veya herhangi bir noktada zamanlayıcılar gelen kaynakları çıkardığınız. Bu olacağını, belirtilen konuma kullanılabilirlik değiştirebilirsiniz.  
   
 ##  <a name="registershutdownevent"></a> RegisterShutdownEvent 
 
- Windows olay işleyici geçirilen nedenler `_ShutdownEvent` geçerli bağlamla ilişkili Zamanlayıcı kapanır ve kendisini bozar bildirilmesini parametresi. Olay işaret zamanında Zamanlayıcı için zamanlanan tüm iş tamamlanır. Birden fazla kapatma olayları bu yöntemle kaydedilebilir.  
+ Windows olay işleyici geçirilen nedenleri `_ShutdownEvent` parametresi geçerli bağlam ile ilişkili Zamanlayıcı kapanır ve kendisini yok eder, sinyal. Olay sinyalini zaman, Zamanlayıcı için zamanlanan tüm iş tamamlanmıştır. Birden fazla kapatma olayları, bu yöntem kullanılarak kaydedilebilir.  
   
 ```
 static void __cdecl RegisterShutdownEvent(HANDLE _ShutdownEvent);
@@ -219,14 +219,14 @@ static void __cdecl RegisterShutdownEvent(HANDLE _ShutdownEvent);
   
 ### <a name="parameters"></a>Parametreler  
  `_ShutdownEvent`  
- Geçerli bağlamla ilişkili Zamanlayıcı kapanır ve kendisini bozar bağlandığınızda çalışma zamanı tarafından işaret Windows olay nesnesi için bir tanıtıcı.  
+ Geçerli bağlam ile ilişkili Zamanlayıcı kapanır ve kendisini yok eder bağlandığınızda çalışma zamanı tarafından sinyal Windows olay nesnesi için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Arama bağlamına bağlı hiçbir Zamanlayıcı varsa, bu yöntemi çağırmadan sonuçlanır bir [scheduler_not_attached](scheduler-not-attached-class.md) oluşturulan özel durum.  
+ Çağrı bağlamına iliştirilemez hiçbir Zamanlayıcı ise, bu yöntemin çağrılması sonuçlanır bir [scheduler_not_attached](scheduler-not-attached-class.md) oluşturulan özel durum.  
   
 ##  <a name="scheduletask"></a> ScheduleTask 
 
- Arama bağlamla ilişkili Zamanlayıcı içinde hafif görev zamanlar. Hafif görev çalışma zamanı tarafından belirlenen bir zamanlama grubunda yer alır. Parametresi alan sürüm `_Placement` görev belirtilen konumda yürütme doğrultusunda ağırlıklı neden olur.  
+ Çağrı bağlamla ilişkili Zamanlayıcı hafif bir görevi zamanlar. Çalışma zamanı tarafından belirlenen bir zamanlama grubundaki hafif görev yerleştirilir. Parametre sürüm `_Placement` görevi belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.  
   
 ```
 static void __cdecl ScheduleTask(
@@ -241,16 +241,16 @@ static void __cdecl ScheduleTask(
   
 ### <a name="parameters"></a>Parametreler  
  `_Proc`  
- İşlev gövdesi hafif görev gerçekleştirmek için bir işaretçi.  
+ İşlev gövdesi basit görev gerçekleştirmek için yürütmek için bir işaretçi.  
   
  `_Data`  
- Görev gövdesi için parametre olarak geçirilen verileri void işaretçi.  
+ Void bir işaretçi verilere gövdesi bir görev için bir parametre olarak geçirilir.  
   
  `_Placement`  
- Burada hafif görev, yürütme doğru ağırlıklı bir konuma başvuru.  
+ Burada basit görev sırasında yürütülen doğru güçlü eğilimi nedeniyle bir konuma başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem oluşturulan ve/veya şu anda arama bağlamla ilişkili hiçbir Zamanlayıcı ise arama bağlamına bağlı işlem varsayılan Zamanlayıcı neden olur.  
+ Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

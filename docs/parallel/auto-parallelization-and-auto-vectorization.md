@@ -12,18 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b1ec19065647f78b4d9b2665003c0aa3a2795ba
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 240cd4588cb36125b571462b26fcee3853412218
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688472"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466341"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>Otomatik Paralelleştirme ve Otomatik Vektörleştirme
-Otomatik paralel hale getirici ve otomatik vektör hale getirici otomatik performans artışı kodunuzda döngüler sağlamak için tasarlanmıştır.  
+Otomatik paralel hale getirici ve otomatik vektör hale getirici, kodunuzda döngüler için otomatik performans artışı sağlamak üzere tasarlanmıştır.  
   
 ## <a name="auto-parallelizer"></a>Otomatik paralel hale getirici  
- [/Qpar](../build/reference/qpar-auto-parallelizer.md) derleyici anahtarı sağlar *otomatik paralelleştirme* döngüsü kodunuzda. Bu bayrak, var olan kodu değiştirmeden belirttiğinizde, derleyici paralelleştirme yararlanabilir döngüler bulmak için kodu değerlendirir. Bul çünkü çok yapmayın döngüler çalışma ve bu nedenle paralelleştirme yararlı olmaz ve her gereksiz paralelleştirme bir iş parçacığı havuzu oluşturma neden olabileceğini çünkü ek eşitleme ya da diğer işleme yavaş eğilimindedir geliştirecek yerine performans, derleyici, parallelizes döngüler seçilmesinde koruyucu. Örneğin, döngü üst sınırının derleme zamanında bilinmiyor aşağıdaki örneği göz önünde bulundurun:  
+
+[/Qpar](../build/reference/qpar-auto-parallelizer.md) derleyici anahtarı sağlayan *otomatik paralelleştirme* kodunuzda döngüsü. Bu bayrak, mevcut kodları değiştirmeden belirttiğinizde, derleyicinin paralelleştirme ' yararlanabilir döngüler bulmak için kodu değerlendirir. Fark edebilirsiniz çünkü çok yapan döngüler çalışır ve bu nedenle paralelleştirme yararlı olmaz ve gereksiz paralelleştirme her iş parçacığı havuzu UNICODE neden olabileceğini çünkü ek eşitleme veya diğer işleme yavaş eğilimindedir performansı geliştirecek yerine derleyici bunu parallelizes döngüler seçme içinde koruyucu. Örneğin, üst sınır döngü derleme zamanında bilinmiyor aşağıdaki örneği göz önünde bulundurun:  
   
 ```cpp  
 void loop_test(int u) {  
@@ -32,7 +33,7 @@ void loop_test(int u) {
 }  
 ```  
   
- Çünkü `u` küçük bir değer olabilir, derleyici otomatik olarak bu döngü paralel hale olmaz. Ancak, yine, paralel birkaç ölçeklendirin, bildiğiniz için isteyebilirsiniz `u` her zaman büyük olacaktır. Otomatik paralelleştirme etkinleştirmek üzere belirtin [#pragma loop(hint_parallel(n))](../preprocessor/loop.md), burada `n` arasında paralel hale iş parçacıklarının sayısıdır. Aşağıdaki örnekte, derleyici döngü 8 iş parçacıkları arasında paralel hale dener.  
+Çünkü `u` küçük bir değer olabilir, derleyici otomatik olarak bu döngüyü paralel hale olmaz. Ancak, yine de paralel, bildiğiniz isteyebileceğiniz `u` her zaman büyük olacaktır. Otomatik paralelleştirme etkinleştirmek üzere belirtin [#pragma loop(hint_parallel(n))](../preprocessor/loop.md)burada `n` arasında paralel hale getirmek için iş parçacığı sayısıdır. Aşağıdaki örnekte, derleyici, 8 iş parçacığı arasında döngüyü paralel hale dener.  
   
 ```cpp  
 void loop_test(int u) {  
@@ -42,9 +43,9 @@ void loop_test(int u) {
 }  
 ```  
   
- Tümü olduğu gibi [pragma yönergeleri](../preprocessor/pragma-directives-and-the-pragma-keyword.md), alternatif pragma sözdizimi `__pragma(loop(hint_parallel(n)))` da desteklenir.  
+Tüm olduğu gibi [pragma yönergeleri](../preprocessor/pragma-directives-and-the-pragma-keyword.md), alternatif pragma söz dizimi `__pragma(loop(hint_parallel(n)))` de desteklenir.  
   
- İstediğiniz olsa bile, derleyici paralel hale olamaz bazı döngüleri vardır. Örnek buradadır:  
+İstediğiniz olsa bile, derleyici paralel hale getirmek olamaz bazı döngüleri vardır. Örnek buradadır:  
   
 ```cpp  
 #pragma loop(hint_parallel(8))  
@@ -52,7 +53,7 @@ for (int i=0; i<upper_bound(); ++i)
     A[i] = B[i] * C[i];  
 ```  
   
- İşlev `upper_bound()` her çağrıldığında değişebilir. Üst sınır bilinen çünkü derleyici Bu döngü neden paralel hale olamaz açıklayan bir tanılama iletisi yayma. Aşağıdaki örnek, paralel birkaç ölçeklendirin bir döngü, paralel birkaç ölçeklendirin olamaz bir döngü, komut istemini ve Derleyici çıktısı her komut satırı seçeneği için kullanılacak derleyici sözdizimini gösterir:  
+İşlev `upper_bound()` her çağrıldığında değişebilir. Üst sınır bilinen olduğundan derleyici neden bunu bu döngüyü paralel hale olamaz açıklayan bir tanılama iletisi gönderebilir. Aşağıdaki örnek, bir döngüyü paralel hale, bir döngüyü paralel hale, komut istemini ve derleyici çıkışını her komut satırı seçeneği için kullanılacak derleyici sözdizimini gösterir:  
   
 ```cpp  
 int A[1000];  
@@ -66,59 +67,58 @@ void test() {
         A[i] = A[i] + 1;  
     }  
 }  
-  
 ```  
   
- Bu komutu kullanarak derleme:  
+Bu komutu kullanarak derleme:  
   
- **cl d:\myproject\mylooptest.cpp O2 /Qpar /Qpar-raporu: 1**  
+`cl d:\myproject\mylooptest.cpp /O2 /Qpar /Qpar-report:1`  
   
- Bu çıktı üretir:  
+ Bu çıktıyı oluşturur:  
   
- **---İşlevi çözümleme: __cdecl test(void) geçersiz kıl**   
- **d:\myproject\mytest.cpp(4): döngü paralel birkaç ölçeklendirin**  
+**---İşlev analiz ediliyor: __cdecl test(void) geçersiz**   
+**d:\myproject\mytest.cpp(4): döngü paralelleştirildi**  
   
- Bu komutu kullanarak derleme:  
+Bu komutu kullanarak derleme:  
   
- **cl d:\myproject\mylooptest.cpp O2 /Qpar /Qpar-raporu: 2**  
+`cl d:\myproject\mylooptest.cpp /O2 /Qpar /Qpar-report:2`  
   
- Bu çıktı üretir:  
+Bu çıktıyı oluşturur:  
   
- **---İşlevi çözümleme: __cdecl test(void) geçersiz kıl**   
- **d:\myproject\mytest.cpp(4): döngü paralel birkaç ölçeklendirin**   
- **d:\myproject\mytest.cpp(4): döngü '1008' nedenden dolayı paralel birkaç ölçeklendirin değil**  
+**---İşlev analiz ediliyor: __cdecl test(void) geçersiz**   
+**d:\myproject\mytest.cpp(4): döngü paralelleştirildi**   
+**d:\myproject\mytest.cpp(4): döngü neden '1008' nedeniyle paralelleştirilmedi**  
   
- Çıktı farklı ikisi arasındaki fark [/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md) seçenekleri. **/ Qpar-Rapor: 1** başarıyla paralel birkaç ölçeklendirin döngüler için paralel hale getirici iletileri çıkarır. **/ Qpar-Rapor: 2** hem başarılı ve başarısız döngü parallelizations paralel hale getirici iletileri çıkarır.  
+Farklı ikisi arasındaki fark çıkışında [/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md) seçenekleri. `/Qpar-report:1` yalnızca başarıyla paralel döngüler için paralel hale getirici iletileri çıkarır. `/Qpar-report:2` hem başarılı ve başarısız döngü parallelizations için paralel hale getirici iletileri çıkarır.  
   
- Neden kodları ve iletileri hakkında daha fazla bilgi için bkz: [vektör yapıcı ve paralel hale getirici iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
+Neden kodları ve iletiler hakkında daha fazla bilgi için bkz. [vektör yapıcı ve paralel hale getirici iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
   
 ## <a name="auto-vectorizer"></a>Otomatik vektör hale getirici  
- Otomatik vektör hale getirici, kodunuzda döngüler analiz eder ve kullanılabiliyorsa vektör kaydeder ve yönergeleri hedef bilgisayar üzerinde bunları yürütmek için kullanır. Bu, kodunuzu performansını artırabilir. Intel ya da AMD işlemcileri SSE2, AVX ve AVX2 yönergeleri veya ARM işlemcileri NEON yönergeler derleyici hedefler göre [/arch](../build/reference/arch-minimum-cpu-architecture.md) geçin.  
+ 
+Otomatik vektör hale getirici Döngülerde kodunuzu analiz eder ve mümkünse, yönergeleri ve vektör kayıt hedef bilgisayarda, yürütülecek kullanır. Bu, kodunuzun performansını artırabilir. Derleyici, SSE2 AVX ve AVX2 yönergeleri Intel ya da AMD işlemcileri veya ARM işlemcileri NEON yönergeler hedefleyen göre [/arch](../build/reference/arch-minimum-cpu-architecture.md) geçin.  
   
- Otomatik vektör hale getirici tarafından belirtilenden farklı yönergeleri verebilir **/arch** geçin. Bu yönergeler, kod hala düzgün çalıştığından emin olmak için bir çalışma zamanı denetimi tarafından korumalı. Ne zaman derleme, örneğin, **/arch:SSE2**, SSE4.2 yönergeleri yayılan. Bir çalışma zamanı denetim SSE4.2 hedef işlemci kullanılabilir olduğunu ve işlemci bu yönergeleri desteklemiyorsa, döngü SSE4.2 olmayan sürümüne atlar olduğunu doğrular.  
+Otomatik vektör hale getirici tarafından belirtilenden farklı yönergeleri oluşturabilir `/arch` geçin. Bu yönergeler, kod hala düzgün çalıştığından emin olmak için çalışma zamanı denetimi tarafından korunan. Örneğin, derleme yaptığınızda `/arch:SSE2`, SSE4.2 yönerge yayılır. Bir çalışma zamanı denetimi SSE4.2 hedef işlemci üzerinde kullanılabilir olduğunu ve bir döngünün SSE4.2 olmayan sürümüne işlemci bu yönergeleri desteklemiyorsa atlar olduğunu doğrular.  
   
- Varsayılan olarak otomatik vektör hale getirici etkindir. Kodunuzu vectorization altında performans karşılaştırma yapmak isterseniz, kullanabileceğiniz [#pragma loop(no_vector)](../preprocessor/loop.md) vectorization herhangi verilen döngüsü devre dışı bırakmak için.  
+Varsayılan olarak, otomatik vektör hale getirici etkinleştirilir. Vektörleştirme altındaki kodunuzun performansını karşılaştırmak istiyorsanız, kullanabileceğiniz [#pragma loop(no_vector)](../preprocessor/loop.md) herhangi belirli bir döngü vektörleştirme devre dışı bırakmak için.  
   
-```  
-  
-      #pragma loop(no_vector)  
+```cpp
+#pragma loop(no_vector)  
 for (int i = 0; i < 1000; ++i)  
    A[i] = B[i] + C[i];  
-  
 ```  
   
- Tümü olduğu gibi [pragma yönergeleri](../preprocessor/pragma-directives-and-the-pragma-keyword.md), alternatif pragma sözdizimi `__pragma(loop(no_vector))` da desteklenir.  
+Tüm olduğu gibi [pragma yönergeleri](../preprocessor/pragma-directives-and-the-pragma-keyword.md), alternatif pragma söz dizimi `__pragma(loop(no_vector))` de desteklenir.  
   
- Otomatik paralel hale getirici ile belirttiğiniz gibi [/Qvec-report (otomatik vektör hale getirici raporlama düzeyi)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ya da başarılı bir şekilde bildirmek için komut satırı seçeneği yalnızca döngüler vectorized —**/Qvec-raporu: 1**— veya başarılı ve başarısız vectorized döngüler —**/Qvec-raporu: 2**).  
+Otomatik paralel hale getirici ile belirttiğiniz [/Qvec-report (otomatik vektör hale getirici raporlama düzeyi)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md) başarıyla bildirmek için komut satırı seçeneği yalnızca döngü vektörleştirildi —`/Qvec-report:1`— veya her ikisi de başarıyla ve başarısız, döngü vektörleştirildi —`/Qvec-report:2`).  
   
- Neden kodları ve iletileri hakkında daha fazla bilgi için bkz: [vektör yapıcı ve paralel hale getirici iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
+Neden kodları ve iletiler hakkında daha fazla bilgi için bkz. [vektör yapıcı ve paralel hale getirici iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
   
- Vektör yapıcı uygulamada nasıl çalıştığını gösteren bir örnek için bkz: [proje Ankara'da Kısım 2 / 6: sayfa Curling](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)  
+Vektör hale getirici uygulamada nasıl çalıştığını gösteren bir örnek için bkz [proje Austin Kısım 2 / 6: sayfa Curling](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Döngü](../preprocessor/loop.md)   
- [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)   
- [/ Qpar (otomatik paralel hale getirici)](../build/reference/qpar-auto-parallelizer.md)   
- [/ Qpar (otomatik paralel hale getirici düzeyi raporlama) raporu](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
- [/ Qvec-(Raporlama düzeyi otomatik vektör hale getirici) raporu](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)   
- [Vektör Yapıcı ve Paralel Hale Getirici İletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)
+ 
+[döngü](../preprocessor/loop.md)   
+[Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)   
+[/ Qpar (otomatik paralel hale getirici)](../build/reference/qpar-auto-parallelizer.md)   
+[/ Qpar-(otomatik paralel hale getirici report raporlama düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
+[/ Qvec-(otomatik vektör hale getirici report raporlama düzeyi)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)   
+[Vektör Yapıcı ve Paralel Hale Getirici İletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)

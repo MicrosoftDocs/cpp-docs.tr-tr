@@ -21,17 +21,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad785bb7789156a2f5105e89a493877fb30c2f3e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4720ca4a65a543ca09412ac0c1eb1e65bf6cdd23
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331903"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464871"
 ---
 # <a name="bitscanforward-bitscanforward64"></a>_BitScanForward, _BitScanForward64
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- En az önemli bit (LSB'si) maskesi veri kümesi bit (1) için en önemli bit (MSB) arayın.  
+ Belirlenen bitin (1) için en önemli bite (MSB) (LSB'si) en az önemli bit maskesi verileri arayın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,25 +48,25 @@ unsigned char _BitScanForward64(
   
 #### <a name="parameters"></a>Parametreler  
  [out] `Index`  
- Bulunan bit konumunu bit ayarlamak ilk (1) ile yüklenir.  
+ Bulunan bit konumunu ilk set bit (1) ile yüklendi.  
   
  [in] `Mask`  
- Arama için 32 bit veya 64-bit değer.  
+ Aranacak 32 bit veya 64-bit değeri.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Maske sıfırsa 0; sıfır olmayan Aksi takdirde.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Set bit bulunursa, bulunan ilk kümesi bit bit konumunu ilk parametreyi döndürülür. Hiçbir kümesi bit bulunursa, 0 döndürülür; Aksi takdirde, 1 döndürülür.  
+ Bit kümesinin bulunursa bit bulunan ilk belirlenen bitin konumunu ilk parametre olarak döndürülür. Bit kümesinin bulunması durumunda 0 döndürülür; Aksi takdirde, 1 döndürülür.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_BitScanForward`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_BitScanForward64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_BitScanForward`|x86, ARM, x64|  
+|`_BitScanForward64`|ARM, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="example"></a>Örnek  
   
@@ -112,7 +112,7 @@ Enter a positive integer as the mask:
 Mask: 12 Index: 2  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

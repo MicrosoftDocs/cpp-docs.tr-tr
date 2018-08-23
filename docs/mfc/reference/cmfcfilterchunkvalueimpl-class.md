@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c11e50755097176b276c82877c7a636be149756
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: fdce28feddfca0789306a16f8dc6d047dc375120
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852581"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42464473"
 ---
 # <a name="cmfcfilterchunkvalueimpl-class"></a>Cmfcfilterchunkvalueımpl sınıfı
 Bu, öbek hem özellik değeri çiftinin mantığını basitleştirir bir sınıftır.  
@@ -91,7 +91,7 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 |[CMFCFilterChunkValueImpl::GetChunkGUID](#getchunkguid)|GUID öbeğin alır.|  
 |[CMFCFilterChunkValueImpl::GetChunkPID](#getchunkpid)|(Özellik kimliği) PID öbeğin alır.|  
 |[CMFCFilterChunkValueImpl::GetChunkType](#getchunktype)|Alır türü öbek.|  
-|[CMFCFilterChunkValueImpl::GetString](#getstring)|Alır dize değeri.|  
+|[CMFCFilterChunkValueImpl::GetString](#getstring)|Dize değerini alır.|  
 |[CMFCFilterChunkValueImpl::GetValue](#getvalue)|Değeri, ayrılmış bir propvariant alır.|  
 |[CMFCFilterChunkValueImpl::GetValueNoAlloc](#getvaluenoalloc)|Değeri ayrılmamış döndürür (iç değer).|  
 |[CMFCFilterChunkValueImpl::IsValid](#isvalid)|Bu özellik değeri geçerli olup olmadığını denetler.|  

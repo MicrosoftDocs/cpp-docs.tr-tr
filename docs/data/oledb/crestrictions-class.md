@@ -24,12 +24,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4d93d1042f48ae877e61692b095be9442f9a7917
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: b9dc35df928d53d7d5ca5d833db8e87c96e1c7f4
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337183"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465182"
 ---
 # <a name="crestrictions-class"></a>CRestrictions Sınıfı
 Şema satır kümeleri için kısıtlamaları belirlemenizi sağlayan genel bir sınıf.  
@@ -96,7 +96,7 @@ HRESULT Open(const CSession& session,
 ### <a name="remarks"></a>Açıklamalar  
  Şema satır kümesinde en fazla yedi kısıtlamaları belirtebilirsiniz.  
   
- Bkz: [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) her şeması satır kümesi tanımlanmış kısıtlamalar hakkında bilgi için.  
+ Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) her şeması satır kümesi tanımlanmış kısıtlamalar hakkında bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   

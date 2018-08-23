@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: babc490d63f6c7e1692877e53b4971fc85ec4c24
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 0a8ec3a7898f846af85614dec75c10c5a0393e24
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850897"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465640"
 ---
 # <a name="cmfctooltipinfo-class"></a>Cmfctooltipınfo sınıfı
 Araç ipuçlarının görsel görünümünü hakkındaki bilgileri depolar.  
@@ -222,7 +222,7 @@ BOOL m_bVislManagerTheme;
  Varsa `m_bVislManagerTheme` doğru ise, her araç ipucu yeni bir istek [Cmfctooltipınfo](../../mfc/reference/cmfctooltipinfo-class.md) ekrana gelen ve değerleri o nesnenin görünümlerini belirlemek için kullanır. önce uygulamanın visual Yöneticisi'nden. Diğer üyeleri, [Cmfctooltipınfo](../../mfc/reference/cmfctooltipinfo-class.md) göz ardı edilir.  
   
 ##  <a name="operator_eq"></a>  CMFCToolTipInfo::operator =  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ```  
 CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);

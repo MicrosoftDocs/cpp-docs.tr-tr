@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 663ee462bf03e76ab15cbac05790c89dcaf07dca
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: ae6f41c2e8e8d142ee143d7ba0829751e1c230a3
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884860"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464591"
 ---
 # <a name="cmessagemap-class"></a>CMessageMap sınıfı
 Bu sınıf, başka bir nesneye erişimi olacak şekilde bir nesnenin ileti eşlemeleri sağlar.  
@@ -50,7 +50,7 @@ class ATL_NO_VTABLE CMessageMap
 ## <a name="remarks"></a>Açıklamalar  
  `CMessageMap` başka bir nesne tarafından erişilecek bir nesnenin ileti sağlayan soyut bir temel sınıf eşler olur. Kendi ileti eşlemeleri kullanıma sunmak bir nesne için sırayla sınıfıyla öğesinden türetilmelidir `CMessageMap`.  
   
- ATL kullanan `CMessageMap` yer alan Destek windows ve dinamik ileti eşlemesi zincirleme. Örneğin, bir sınıf içeren bir [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) nesne öğesinden türetilmelidir `CMessageMap`. Aşağıdaki kod alınır [SUBEDIT](../../visual-cpp-samples.md) örnek. Aracılığıyla [CComControl](../../atl/reference/ccomcontrol-class.md), `CAtlEdit` otomatik olarak sınıf türetilir `CMessageMap`.  
+ ATL kullanan `CMessageMap` yer alan Destek windows ve dinamik ileti eşlemesi zincirleme. Örneğin, bir sınıf içeren bir [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) nesne öğesinden türetilmelidir `CMessageMap`. Aşağıdaki kod alınır [SUBEDIT](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) örnek. Aracılığıyla [CComControl](../../atl/reference/ccomcontrol-class.md), `CAtlEdit` otomatik olarak sınıf türetilir `CMessageMap`.  
   
  [!code-cpp[NVC_ATL_Windowing#90](../../atl/codesnippet/cpp/cmessagemap-class_1.h)]  
   

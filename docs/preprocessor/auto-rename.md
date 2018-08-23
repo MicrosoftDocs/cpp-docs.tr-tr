@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7561e9d9b49f9af885299a6b94d3edbcf8f2a74
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 70049daf514659a9ae525e1fca40152df4ab382a
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912816"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466156"
 ---
 # <a name="autorename"></a>auto_rename
-**C++ özel**  
+**C++ özgü**  
   
- Olası ad çakışmalarını çözmek için değişken adına iki alt çizgi (__) ekleyerek C++ ayrılmış sözcüklerini yeniden adlandırır.  
+Olası ad çakışmalarını çözmek için değişken adına iki alt çizgi (__) ekleyerek C++ ayrılmış sözcüklerini yeniden adlandırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,11 +34,13 @@ ms.locfileid: "33912816"
 auto_rename  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Bu öznitelik, değişken adı olarak bir veya daha fazla C++ ayrılmış sözcüğünü (anahtar sözcükler veya makrolar) kullanan bir tür kitaplığı içeri aktarılırken kullanılır.  
+## <a name="remarks"></a>Açıklamalar 
+
+Bu öznitelik, değişken adı olarak bir veya daha fazla C++ ayrılmış sözcüğünü (anahtar sözcükler veya makrolar) kullanan bir tür kitaplığı içeri aktarılırken kullanılır.  
   
- **Son C++ özel**  
+ **END C++ özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+## <a name="see-also"></a>Ayrıca Bkz. 
+
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

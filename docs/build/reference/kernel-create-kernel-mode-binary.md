@@ -1,5 +1,5 @@
 ---
-title: -Çekirdek (çekirdek oluşturma modu ikili) | Microsoft Docs
+title: -kernel (çekirdek oluşturma modu ikili) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbbae275e751287464e4bf1637ee21aff77fb697
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 20ea3423acd19a70c5b7b759b9923b0132e04af0
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379607"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466342"
 ---
 # <a name="kernel-create-kernel-mode-binary"></a>/kernel (Çekirdek Modu İkilisi Oluştur)
-Windows Çekirdeği'nde yürütülebilir bir ikili oluşturur.  
+Windows çekirdeğinde yürütülebilecek bir ikili oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,29 +33,29 @@ Windows Çekirdeği'nde yürütülebilir bir ikili oluşturur.
   
 ## <a name="arguments"></a>Arguments  
  **/ Kernel**  
- Geçerli projenin kod derlenmiş ve çekirdek modunda çalışacak kodu özgü C++ dili kuralları kümesi kullanarak bağlanır.  
+ Geçerli projede kod derlenmiş ve çekirdek modunda çalışacak kodu özgü C++ dil kuralları kümesi kullanarak bağlı.  
   
  **/Kernel-**  
- Geçerli projenin kod derlenmiş ve çekirdek modunda çalışacak kodu özgü C++ dili kuralları kullanmadan bağlanır.  
+ Geçerli projede kod derlenmiş ve çekirdek modunda çalışacak kodu özgü C++ dil kuralları kullanmadan bağlı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yoktur hiçbir `#pragma` bu seçenek denetim eşdeğerdir.  
+ Var olan hiçbir `#pragma` eşdeğer bu seçimi denetlemek için.  
   
- Belirtme **/Kernel** seçenek söyler derleyici ve bağlayıcı hangi dil özellikleri çekirdek modunda izin verilen sürdüremezse ve olduğu çalışma zamanı kararsızlığı engellemek için yeterli ifade gücüyle sahip olduğundan emin olun Çekirdek modu C++ benzersiz. Bu, çekirdek modunda dağıtıldığından C++ dil özellikleri kullanımını yasaklanması tarafından ve potansiyel olarak dağıtıldığından ancak devre dışı bırakılamaz C++ dil özellikleri için uyarılar sağlayarak gerçekleştirilir.  
+ Belirtme **/Kernel** seçeneği söyler derleyicide ve bağlayıcıda hangi dil özellikleri çekirdek modunda izin verilen yönetmeye kalkarsa ve için benzersiz olan çalışma zamanı kararsızlığı engellemek için yeterli etkileyici gücüyle sahip olduğunuzdan emin olun Çekirdek modu C++. Bu, çekirdek modunda kesintiye uğratıp C++ dil özelliklerinin kullanımını yasaklanması ve Uyarılar için olası kesintiye ancak devre dışı bırakılamaz, C++ dil özellikleri sağlayarak gerçekleştirilir.  
   
- **/Kernel** seçeneği proje düzeyinde ayarlanır ve bir yapı derleyici ve bağlayıcı aşamaları için geçerlidir. Geçirmek **/Kernel** elde edilen ikili bağladıktan sonra Windows çekirdeğe yükleneceğini derleyiciye göstermek için anahtar. Derleyici C++ dil özellikleri çekirdek ile uyumlu olan bir alt yelpazesini daraltmak.  
+ **/Kernel** seçeneği bir derleme derleyici ve bağlayıcı aşamaları için geçerlidir ve proje düzeyinde ayarlanır. Geçirmek **/Kernel** derleyiciye elde edilen ikili bağladıktan sonra Windows çekirdeğe yükleneceğini göstermek için anahtar. Derleyici, çekirdek ile uyumlu olan bir alt kümesi için C++ dil özelliklerinin spektrumun sınırlar.  
   
- Derleyici davranışı değişiklikleri aşağıdaki tabloda, **/Kernel** belirtilir.  
+ Aşağıdaki tabloda derleyici davranışında değişiklik olduğunda **/Kernel** belirtilir.  
   
 |Davranış türü|**/ Kernel** davranışı|  
 |-------------------|---------------------------|  
-|C++ Özel Durum İşleme|Devre dışı. Tüm örneklerini `throw` ve `try` anahtar sözcükleri yayma derleyici hatası (özel durum belirtimi dışında `throw()`). Hayır **/EH** seçenekleri ile uyumlu **/Kernel**, dışında **/EH-**.|  
-|RTTI|Devre dışı. Tüm örneklerini `dynamic_cast` ve `typeid` anahtar sözcükleri yayma derleyici hatası sürece `dynamic_cast` statik olarak kullanılır.|  
-|`new` Ve `delete`|Açıkça tanımlamalısınız `new()` veya `delete()` işleci; derleyici ne çalışma zamanı varsayılan tanımı tedarik.|  
+|C++ Özel Durum İşleme|Devre dışı. Tüm örneklerini `throw` ve `try` anahtar sözcükler, bir derleyici hatası yayma (özel durum belirtimi dışında `throw()`). Hayır **/EH** seçenekleri ile uyumludur **/Kernel**, dışında **/EH-**.|  
+|RTTI|Devre dışı. Tüm örneklerini `dynamic_cast` ve `typeid` anahtar sözcükler, bir derleyici hatası sürece yayma `dynamic_cast` statik olarak kullanılır.|  
+|`new` ve `delete`|Açıkça tanımlamanız gerekir `new()` veya `delete()` işleci; derleyici ne çalışma zamanı varsayılan bir tanım sağlamanız.|  
   
- Çağırma kuralları, özel [/GS](../../build/reference/gs-buffer-security-check.md) derleme seçeneği ve tüm iyileştirmeler kullandığınızda verilen **/Kernel** seçeneği. Satır içi kullanım büyük ölçüde etkilenmez tarafından **/Kernel**, derleyici tarafından dikkate alınır aynı semantiği ile. Emin olmak istiyorsanız `__forceinline` satır içi kullanım niteleyicisi dikkate alınır, bu uyarı emin olun [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) belirli bir zaman bilmesi etkin `__forceinline` işlev satır içi değil.  
+ Çağırma kuralları, özel [/GS](../../build/reference/gs-buffer-security-check.md) derleme seçeneği ve tüm iyileştirmeler kullandığınızda verilen **/Kernel** seçeneği. Satır içi kullanım büyük ölçüde etkilenmez tarafından **/Kernel**, derleyici tarafından kabul aynı semantiğe sahip. Emin olmak istiyorsanız `__forceinline` inlining'i niteleyicisi dikkate alınır, bu uyarı emin olun [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) belirli bir zaman öğrenmek için etkin `__forceinline` işlevi satır içine alınmış değil.  
   
- Derleyici geçirilen zaman **/Kernel** anahtarı, bunu önceden belirler adlı bir önişlemci makrosu `_KERNEL_MODE` ve değerine sahip **1**. Koşullu yürütme ortamı kullanıcı modunda veya çekirdek modunda olduğuna bağlı olarak kod derlemek için bunu kullanabilirsiniz. Örneğin, aşağıdaki kod sınıfı için çekirdek modu yürütme derlendiğinde bir disk belleğine alınamayan bellek kesimdeki olması gerektiğini belirtir.  
+ Derleyici geçirilen zaman **/Kernel** anahtarı, bunu önceden belirler adlı önişlemci makrosu `_KERNEL_MODE` ve değere sahip **1**. Kod yürütme ortamı kullanıcı modunda veya çekirdek modunda olduğuna göre koşullu olarak derlemek için bunu kullanabilirsiniz. Örneğin, aşağıdaki kodu, çekirdek modu yürütme için derlendiğinde sınıfı alınamayan bellek segmentinde olması gerektiğini belirtir.  
   
 ```cpp  
 #ifdef _KERNEL_MODE  
@@ -70,38 +70,38 @@ class NONPAGESECTION MyNonPagedClass
 };  
 ```  
   
- Bazı hedef mimari aşağıdaki birleşimlerini ve **/arch** seçeneği ile kullanıldığında bir hata üretmek **/Kernel**:  
+ Bazı hedef mimarisinin aşağıdaki birleşimler ve **/arch** seçeneği ile kullanıldığında bir hata oluşturmak **/Kernel**:  
   
--   **/ arch: {SSE&#124;SSE2&#124;AVX}** x86 üzerinde desteklenmez. Yalnızca **/arch:IA32** ile desteklenen **/Kernel** x86 üzerinde.  
+-   **/ arch: {SSE&#124;SSE2&#124;AVX}** x86 üzerinde desteklenmez. Yalnızca **/arch:IA32** ile desteklenen **/Kernel** x86.  
   
--   **/arch:AVX** desteklenmeyen **/Kernel** x64 üzerinde.  
+-   **/ arch:** desteklenmeyen **/Kernel** x64.  
   
- İle derleme **/Kernel** de geçirir **/Kernel** bağlayıcı için. Her bunun bağlayıcı davranışı nasıl etkilediği şöyledir:  
+ İle oluşturma **/Kernel** ayrıca geçirir **/Kernel** bağlayıcıya. Her bağlayıcı davranışı bunun nasıl etkilediği şöyledir:  
   
--   Artımlı bağlantılandırma devre dışı bırakılır. Eklerseniz **/ artımlı** komut satırına bağlayıcı bu önemli hatası yayar:  
+-   Artımlı bağlamayı devre dışı bırakıldı. Eklerseniz **/ Incremental** komut satırına, bağlayıcı bu önemli bir hata verir:  
   
-     **BAĞLANTI: önemli bir hata LNK1295: '/ ARTIMLI' ile uyumlu değil ' / çekirdek ' belirtimi; Bağlantı '/ ARTIMLI' olmadan**  
+     **BAĞLANTI: önemli hata LNK1295: '/ INCREMENTAL' ile uyumlu değil ' / çekirdek ' belirtimi; '/ INCREMENTAL' olmadan bağlayın**  
   
--   Bunu kullanarak derlenmiştir olup olmadığını görmek için her nesne dosyası (veya herhangi bir statik kitaplıklarından birlikte arşiv üyesi) bağlayıcı inceler **/Kernel** seçeneği ancak değildi. Tüm örnekleri bu ölçüte uyan, bağlayıcı, yine de başarıyla bağlar ancak bir uyarı aşağıdaki tabloda gösterildiği gibi sorun.  
+-   Bunu kullanarak derlenen olup olmadığını görmek için her nesne dosyası (veya herhangi bir eklenen arşiv üyesi statik kitaplıklarından) bağlayıcı inceler **/Kernel** seçeneği ancak değildi. Herhangi bir örneği, bu ölçütü karşılaması durumunda bağlayıcı yine de başarılı bir şekilde bağlar ancak aşağıdaki tabloda gösterildiği gibi bir uyarı, sorunu.  
   
     ||**/ Kernel** obj|**/Kernel-** obj, MASM obj veya cvtresed|Karışık **/Kernel** ve **/kernel-** objs|  
     |-|----------------------|-----------------------------------------------|-------------------------------------------------|  
-    |**bağlantı/Kernel**|Evet|Evet|LNK4257 uyarıyla Evet|  
+    |**bağlantı/Kernel**|Evet|Evet|Uyarıyla LNK4257 Evet|  
     |**Bağlantı**|Evet|Evet|Evet|  
   
-     **/ Kernel ile derlenmemiş LNK4257 nesne; Görüntü çalışmayabilir**  
+     **LNK4257 bağlama nesnesi/Kernel ile derlenmemiş; Görüntü çalışmayabilir**  
   
- **/Kernel** seçeneği ve **/sürücü** seçeneği bağımsız olarak çalışır ve ikisi diğer etkiler.  
+ **/Kernel** seçeneği ve **Driver/Driver** seçeneği bağımsız olarak çalışır ve diğer ne etkiler.  
   
-### <a name="to-set-the-kernel-compiler-option-in-visual-studio"></a>/ Kernel derleyici seçeneği Visual Studio'da ayarlamak için  
+### <a name="to-set-the-kernel-compiler-option-in-visual-studio"></a>/ Kernel derleyici seçeneğini Visual Studio'da ayarlamak için  
   
-1.  Açık **özellik sayfaları** projesi için iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Seçin **C/C++** klasör.  
   
 3.  Seçin **komut satırı** özellik sayfası.  
   
-4.  İçinde **ek seçenekler** kutusunda, eklemek `/kernel` veya `/kernel-`.  
+4.  İçinde **ek seçenekler** kutusunda `/kernel` veya `/kernel-`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   

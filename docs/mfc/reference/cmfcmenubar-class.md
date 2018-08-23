@@ -116,16 +116,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fb3c0295b56f394fae97be7d14e3dccb5cd46b3
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a4d8961cc929196c21838fd21132146deddabcc1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853783"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466282"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar sınıfı
 Yerleştirme uygulayan bir menü çubuğu.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -439,7 +439,7 @@ void EnableHelpCombobox(
  Birleşik giriş kutusu piksel cinsinden düğmenin genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Yardımcı** birleşik giriş kutusu benzer **yardımcı** menü çubuğunda birleşik giriş kutusu [!INCLUDE[ofprword](../../mfc/reference/includes/ofprword_md.md)].  
+ **Yardımcı** birleşik giriş kutusu benzer **yardımcı** Microsoft Word'ün menü çubuğundaki birleşik giriş kutusu.  
   
  Bu yöntemi çağırdığınızda *uiID* 0 olarak ayarlanırsa, bu yöntem birleşik giriş kutusu gizler. Aksi takdirde, bu yöntem birleşik giriş kutusu menü çubuğunun sağ tarafında otomatik olarak görüntüler. Bu yöntem çağrısından sonra çağrı [CMFCMenuBar::GetHelpCombobox](#gethelpcombobox) eklenen bir işaretçi alma için [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) nesne.  
   

@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d2dee6c5157858fef2bd26101ac128ff3d53d23
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 991b8c55c02272613ce329be9a053ff0110f1926
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337388"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464682"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 Windows tek Belgeli Arabirim (SDI) çakışan veya açılır çerçeve penceresinde ve pencereyi yönetmek için üye işlevlerini sağlar.  
@@ -1010,7 +1010,7 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
 ### <a name="remarks"></a>Açıklamalar  
  Varsa değerini *nStyle* parametresi geçerli değil, bu yöntem başlatır ve hata ayıklama modu ile onaylar [Cınvalidargexception](../../mfc/reference/cinvalidargexception-class.md) yayın modunda. Diğer çalışma zamanı hataları durumunda, bu yöntemi hata ayıklama modunda onaylar ve türetilen özel durum harekete [CException](../../mfc/reference/cexception-class.md) sınıfı.  
   
- Bu yöntem için yazılmış uygulamalar menülerde durumunu etkileyen [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ve daha sonra.  
+ Bu yöntem, Windows Vista ve üzeri için yazılmış uygulamalar menülerde durumunu etkiler.  
   
 ##  <a name="setmessagetext"></a>  CFrameWnd::SetMessageText  
  0 Kimliğine sahip durum çubuğu bölmesinde bir dizeyi yerleştirmek için bu işlevi çağırın.  

@@ -17,15 +17,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f9cf2a0991b17cb980e60550f445b45c992fcbb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6a22777479dc3653b2c4170f7621dc466b4eabef
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330290"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465459"
 ---
 # <a name="getcallerseflags"></a>__getcallerseflags
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Arayanın bağlamından EFLAGS değeri döndürür.  
   
@@ -36,18 +36,18 @@ unsigned int __getcallerseflags(void);
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Çağıranın içeriği EFLAGS değeri.  
+ Arayanın bağlam EFLAGS değeri.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__getcallerseflags`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__getcallerseflags`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -85,7 +85,7 @@ EFLAGS 0x202
 EFLAGS 0x206  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

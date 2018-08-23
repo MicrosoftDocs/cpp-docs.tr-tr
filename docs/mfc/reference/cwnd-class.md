@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97d8e923d89085161feb7dcec38d3b0e3972b96e
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 317eae9ee404e603eaf37b2d512724c6b3d0c9f9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028427"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466376"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 Microsoft Foundation Class Kitaplığı'ndaki tüm pencere sınıflarının temel işlevlerini sağlar.  
@@ -2258,7 +2258,7 @@ virtual BOOL DestroyWindow();
   
  `DestroyWindow` Üye işlevini de kalıcı olmayan iletişim kutuları tarafından oluşturulan yok eder [CDialog::Create](../../mfc/reference/cdialog-class.md#create).  
   
- Varsa `CWnd` yok ediliyor ve bir alt penceredir olmayan [ws_ex_noparentnotıfy](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) stil kümesi, ardından [wm_parentnotıfy ](https://msdn.microsoft.com/library/ms632638.aspx) üst gönderilen ileti.  
+ Varsa `CWnd` yok ediliyor ve bir alt penceredir olmayan [ws_ex_noparentnotıfy](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) stil kümesi, ardından [wm_parentnotıfy ](/previous-versions/windows/desktop/inputmsg/wm-parentnotify) üst gönderilen ileti.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#87](../../mfc/reference/codesnippet/cpp/cwnd-class_26.cpp)]  
@@ -6613,7 +6613,7 @@ afx_msg void OnKeyDown(
   
 ### <a name="parameters"></a>Parametreler  
  *nChar*  
- Verilen anahtara sanal tuş kodunu belirtir. Winuser.h bir standart sanal anahtar kodlarının listesi için bkz.  
+ Verilen anahtara sanal tuş kodunu belirtir. Winuser.h standart sanal anahtar kodlarının listesi için bkz.  
   
  *nRepCnt*  
  Tekrar sayısı (sayısı tuş vuruşu tuşunu basılı tutarak kullanıcı sonucunda yinelenir).  
@@ -6655,7 +6655,7 @@ afx_msg void OnKeyUp(
   
 ### <a name="parameters"></a>Parametreler  
  *nChar*  
- Verilen anahtara sanal tuş kodunu belirtir. Winuser.h bir standart sanal anahtar kodlarının listesi için bkz.  
+ Verilen anahtara sanal tuş kodunu belirtir. Winuser.h standart sanal anahtar kodlarının listesi için bkz.  
   
  *nRepCnt*  
  Tekrar sayısı (sayısı tuş vuruşu tuşunu basılı tutarak kullanıcı sonucunda yinelenir).  
@@ -7780,7 +7780,7 @@ afx_msg void OnNcXButtonUp(
 >  Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.  
   
 ##  <a name="onnextmenu"></a>  CWnd::OnNextMenu  
- Bu üye işlevi framework çağırır zaman zaman sağ veya sol ok tuşunu menü çubuğu ve sistem menüsü arasında geçiş yapmak için kullanılır.  
+ Menü çubuğu ve sistem menüsü arasında geçiş yapmak için sağ veya sol ok tuşu kullanıldığında framework bu üye işlevini çağırır.  
   
 ```  
 afx_msg void OnNextMenu(
@@ -8561,7 +8561,7 @@ afx_msg void OnSysChar(
 |31|Geçiş durumu belirtir. Anahtar çıkarılmıştır veya tuşuna basıldığında, 0 ise, 1 değeri değildir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu sanal tuş kodunu denetim menüsünden belirtir. (Bir standart sanal anahtar kodlarının listesi için Winuser.h bakın)  
+ Bu sanal tuş kodunu denetim menüsünden belirtir. (Winuser.h standart sanal anahtar kodlarının listesi için bkz:)  
   
  Bağlam kod 0 olduğunda WM_SYSCHAR geçirebilirsiniz [WM_SYSCHAR](http://msdn.microsoft.com/library/windows/desktop/ms646357) için ileti [TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms646373) işlevmiş gibi bir sistem yerine normal bir anahtar iletisini işleyeceği Windows işlevi karakter-anahtar. Bu, etkin pencere giriş odağını yoksa bile etkin pencere ile kullanılması için kullanılan kısayol tuşları sağlar.  
   
@@ -8694,7 +8694,7 @@ afx_msg void OnSysKeyDown(
   
 ### <a name="parameters"></a>Parametreler  
  *nChar*  
- Sanal tuş kodunu basıldığında belirtir. Winuser.h bir standart sanal anahtar kodlarının listesi için bkz.  
+ Sanal tuş kodunu basıldığında belirtir. Winuser.h standart sanal anahtar kodlarının listesi için bkz.  
   
  *nRepCnt*  
  Yineleme sayısını belirtir.  
@@ -8738,7 +8738,7 @@ afx_msg void OnSysKeyUp(
   
 ### <a name="parameters"></a>Parametreler  
  *nChar*  
- Sanal tuş kodunu basıldığında belirtir. Winuser.h bir standart sanal anahtar kodlarının listesi için bkz.  
+ Sanal tuş kodunu basıldığında belirtir. Winuser.h standart sanal anahtar kodlarının listesi için bkz.  
   
  *nRepCnt*  
  Yineleme sayısını belirtir.  
@@ -8983,7 +8983,7 @@ afx_msg void OnUnInitMenuPopup(
 >  Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.  
   
 ##  <a name="onupdateuistate"></a>  CWnd::OnUpdateUIState  
- Belirtilen pencere ve tüm alt pencereler için kullanıcı arabirimi (UI) durumunu değiştirme için çağrılır.  
+ Belirtilen pencere ve tüm alt pencereler için kullanıcı arabirimi (UI) durumunu değiştirmek için çağrılır.  
   
 ```  
 afx_msg void OnUpdateUIState(
@@ -9038,7 +9038,7 @@ afx_msg int OnVKeyToItem(
   
 ### <a name="parameters"></a>Parametreler  
  *nKey*  
- Sanal tuş kodunu kullanıcının basılan belirtir. Winuser.h bir standart sanal anahtar kodlarının listesi için bkz.  
+ Sanal tuş kodunu kullanıcının basılan belirtir. Winuser.h standart sanal anahtar kodlarının listesi için bkz.  
   
  *pListBox*  
  Liste kutusu için bir işaretçi belirtir. İşaretçi geçici olabilir ve daha sonra kullanmak üzere saklanmalıdır değil.  

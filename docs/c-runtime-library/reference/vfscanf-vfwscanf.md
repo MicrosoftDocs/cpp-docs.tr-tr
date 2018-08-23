@@ -31,16 +31,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b7194aa5b7c60b03e3701567ffdb236f32f0b3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4e4a9c2d36ef8b60eed7b8277c39a8ca7ab998d9
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413277"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466165"
 ---
 # <a name="vfscanf-vfwscanf"></a>vfscanf, vfwscanf
 
-Okuma akışı verilerden biçimlendirilmiş. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [vfscanf_s, vfwscanf_s](vfscanf-s-vfwscanf-s.md).
+Biçimlendirilmiş verileri bir akıştan okur. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [vfscanf_s, vfwscanf_s](vfscanf-s-vfwscanf-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,10 +59,10 @@ int vfwscanf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *arglist*<br/>
@@ -70,15 +70,15 @@ Değişken bağımsız değişken listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri başarıyla dönüştürülür ve atanmış olan alan sayısını döndürür; dönüş değerini okumak ancak atanmamış alanları içermez. Dönüş değeri 0, hiçbir alan atandığını belirtir. Bir hata oluşursa veya dosya akışı sonuna ilk dönüştürmeden önce dönüş değeri **EOF** için **vfscanf** ve **vfwscanf**.
+Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, Okunmuş ancak atanmamış alanları içermez. 0 değeri hiçbir alan atanmamış belirtir. Bir hata oluşursa veya dosya akışı sonuna ilk dönüştürmeden önce ulaşılırsa, dönüş değeri olduğu **EOF** için **vfscanf** ve **vfwscanf**.
 
-Bu işlevler kendi parametreleri doğrulayın. Varsa *akış* veya *biçimi* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EOF** ve **errno** için **EINVAL**.
+Bu işlevler kendi parametrelerini doğrular. Varsa *stream* veya *biçimi* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** ayarlayıp **errno** için **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Vfscanf** işlevi geçerli konumunu veri okuyan *akış* tarafından verilen konumları içine *arglist* bağımsız değişken listesi. Listedeki her bir bağımsız değişkeni bir tür belirteci karşılık gelen bir türde bir değişken için bir işaretçi olmalıdır *biçimi*. *Biçim* giriş yorumu alanları ve aynı denetimleri form ve olarak işlev *biçimi* bağımsız değişkeni için **scanf**; bkz [scanf](scanf-scanf-l-wscanf-wscanf-l.md) için bir Açıklama *biçimi*.
+**Vfscanf** işlevi, geçerli konumundan verileri okur *stream* tarafından verilen konumlara *arglist* bağımsız değişken listesi. Listedeki her bağımsız değişken içinde bir tür belirleyiciye karşılık gelen bir tür bir değişken, bir işaretçi olmalıdır *biçimi*. *Biçim* giriş alanlarının yorumunu aynı denetler ve form ve işleve *biçimi* için bağımsız değişken **scanf**; bkz [scanf](scanf-scanf-l-wscanf-wscanf-l.md) için bir açıklamasını *biçimi*.
 
-**vfwscanf** bir joker karakter sürümü **vfscanf**; biçim bağımsız değişkeni **vfwscanf** bir joker karakter dizesidir. Akış ANSI modunda açtıysanız bu işlevler aynı aynı şekilde davranır. **vfscanf** UNICODE akışı girişten desteklemiyor.
+**vfwscanf** geniş karakterli sürümüdür **vfscanf**; biçim bağımsız değişkenler **vfwscanf** geniş karakterli bir dizedir. Bu işlevler, akış ANSI modunda açıldığında aynı şekilde davranır. **vfscanf** UNICODE akışından girişi desteklemez.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -86,7 +86,7 @@ Bu işlevler kendi parametreleri doğrulayın. Varsa *akış* veya *biçimi* nul
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vftscanf**|**vfscanf**|**vfscanf**|**vfwscanf**|
 
-Daha fazla bilgi için bkz: [biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+Daha fazla bilgi için [biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -95,7 +95,7 @@ Daha fazla bilgi için bkz: [biçim belirtimi alanları: scanf ve wscanf işlevl
 |**vfscanf**|\<stdio.h >|
 |**vfwscanf**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -167,7 +167,7 @@ x
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>

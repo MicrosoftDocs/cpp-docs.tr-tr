@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5248792d04efca518fc425a144c692cd88cf8d1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c834b3b2284a7a5ae660870b840d3275c985dc9e
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333124"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465450"
 ---
 # <a name="ullrshift"></a>__ull_rshift
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- x64 üzerinde sağındaki ilk parametresi tarafından belirtilen bir 64-bit değeri ikinci parametresi tarafından belirtilen bit sayısı tarafından kaydırır.  
+ x64 üzerinde ikinci parametre tarafından belirtilen bit sayısı sağa ilk parametre tarafından belirtilen 64-bit bir değer geçirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,24 +40,24 @@ unsigned __int64 __ull_rshift(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `mask`  
- Sağa kaydırma için 64-bit tamsayı değeri.  
+ Sağa kaydırmak için 64-bit tamsayı değeri.  
   
  [in] `nBit`  
- BITS, 32 x86 üzerinde modulo ve x64 64 modulo kaydırma sayısı.  
+ Modül x86 32 ve 64 x64 modül kaydırmak için bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Maske gölgeye tarafından `nBit` BITS.  
+ Maske kaydırılacak tarafından `nBit` bitleri.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__ull_rshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ull_rshift`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- İkinci parametre 31 x86 (63 x64 üzerinde) üzerinde daha büyükse, numara 32 (x64 64) modulo kaydırılacak bit sayısını belirlemek için alınır. `ull` Adlarında gösterir `unsigned long long (unsigned __int64)`.  
+ İkinci parametre x86 (x64 63) 31 daha büyükse, numara 32 (64 x64) modül kaydırılacak bit sayısını belirlemek için alınır. `ull` Adlarında gösterir `unsigned long long (unsigned __int64)`.  
   
 ## <a name="example"></a>Örnek  
   
@@ -86,7 +86,7 @@ int main()
 1  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__ll_lshift](../intrinsics/ll-lshift.md)   

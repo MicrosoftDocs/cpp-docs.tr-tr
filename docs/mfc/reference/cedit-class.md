@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e1521c73f92bbb941b1060cb5cf2051ead88ffb
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 45632fb870f1586453c2c591ef8edce23e625002
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339598"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465918"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 Windows düzenleme denetimi işlevlerini sağlar.  
@@ -798,7 +798,7 @@ int LineLength(int nLine = -1) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Tek satırlı düzenleme denetimleri için dönüş değeri olarak TCHARs, metin düzenleme denetiminde uzunluğudur.  
   
- Çok satırlı düzenleme denetimleri için dönüş değeri, TCHARs içinde da tarafından belirtilen satır uzunluğunda *evrimçi* parametresi. İçin [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] metin uzunluğu satırında bayt sayısı; Unicode metni için uzunluğu satırın karakter sayısı. Uzunluğu, satır başı karakteri içermez.  
+ Çok satırlı düzenleme denetimleri için dönüş değeri, TCHARs içinde da tarafından belirtilen satır uzunluğunda *evrimçi* parametresi. ANSI metin için uzunluğu satırında bayt sayısıdır; Unicode metin için satır karakter sayısı uzunluğudur. Uzunluğu, satır başı karakteri içermez.  
   
  Varsa *evrimçi* parametre denetimi karakter sayısından daha fazla ise, döndürülen değer sıfırdır.  
   

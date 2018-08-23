@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79ca2afc7270a69c443447d1b294ee7ec8bbe5a7
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: e08e8dae82675d9503575d543edfcaa2c96275e9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705003"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465548"
 ---
 # <a name="linker-tools-error-lnk1112"></a>Bağlayıcı Araçları Hatası LNK1112
 
@@ -29,15 +29,15 @@ ms.locfileid: "34705003"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Girdi olarak belirtilen nesneyi dosyalar için farklı bir bilgisayara türleri derlendi.
+Girdi olarak belirtilen nesne dosyaları için farklı bir bilgisayara türleri derlendi.
 
-Bağlantı çalışırsanız, örneğin, bir nesne ile derlenmiş dosyası **/CLR** ve bir nesne dosyası ile derlenmiş **/CLR: Saf** (makine türü CEE), bağlayıcı hatası LNK1112 oluşturacaktır. **/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+Bağlantı çalışırsanız, örneğin, bir nesne dosyası ile derlenmiş **/CLR** ve bir nesne dosyası ile derlenmiş **/CLR: pure** (makine türü CEE), bağlayıcı hatası LNK1112 oluşturur. **/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Benzer şekilde, bir modülü ile oluşturursanız [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] derleyici ve x86 sahip başka bir modül derleyici ve bunları bağlamak için try bağlayıcı LNK1112 oluşturur.
+Benzer şekilde, x64 ile bir modül oluşturursanız, derleyici ve başka bir modül x86 ile derleyici ve bunları bağlamak için try bağlayıcı LNK1112 oluşturur.
 
-Bu hatanın olası bir neden, 64 bitlik bir uygulama geliştirme ancak Visual C++ 64 bit derleyicileri birini yüklemediyseniz ' dir. Bu durumda, 64-bit yapılandırmaları kullanılabilir olmaz. Bu sorunu düzeltmek için Visual Studio için yükleyiciyi çalıştırın ve eksik C++ bileşenlerini yükleyin.
+Bu hata için olası neden, 64 bitlik bir uygulama geliştiriyorsanız ancak Visual C++ 64-bit derleyiciler birini yüklemediyseniz ' dir. Bu durumda, 64-bit yapılandırmaları kullanılabilir olmayacak. Bu sorunu düzeltmek için Visual Studio için yükleyiciyi çalıştırın ve eksik C++ bileşenleri yükleyin.
 
-Değiştirirseniz bu hata ayrıca oluşabilir **etkin çözüm yapılandırması** içinde **Configuration Manager** ve Ara proje dosyalarını silmeden önce projeyi derlemek deneyin. Bu hatayı gidermek için seçin **çözümü yeniden derle** gelen **yapı** menüsü. Öğesini de seçebilirsiniz **temiz çözüm** gelen **yapı** menüsüne ve ardından yapı çözümü.
+Değiştirirseniz bu hatayı da meydana gelebilir **etkin çözüm yapılandırması** içinde **Configuration Manager** ve Ara proje dosyalarını silmeden önce projeyi oluşturmayı deneyin. Bu hatayı gidermek için seçin **çözümü yeniden derle** gelen **derleme** menüsü. Belirleyebilirsiniz **çözümü Temizle** gelen **derleme** menüsünü ve sonra yapı çözümü.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

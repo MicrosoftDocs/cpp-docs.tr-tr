@@ -12,32 +12,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e0f86467de8256eaecbfbf42765de551a1e2f6e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d2c53ceb50057e789856aa8e7f67c9f788aa5a0a
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690617"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42464968"
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
-Kullanabileceğiniz [hızlandırıcı](../../parallel/amp/reference/accelerator-class.md) ve [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) sınıfları cihaz veya öykünücü C++ AMP kodunuzu çalıştırmak için belirtin. Bir sistem birkaç aygıtları veya bellek, paylaşılan bellek desteğini, hata ayıklama desteği veya çift duyarlıklı destek miktarına göre farklılık Öykünücüler olabilir. C++ hızlandırılmış yoğun paralellik (C++ AMP) kullanılabilir Hızlandırıcıları inceleyin, varsayılan olarak ayarlayın, birden çok çağrılar parallel_for_each için birden çok accelerator_views belirtin ve özel hata ayıklama görevleri gerçekleştirmek için kullanabileceğiniz API'ler sağlar.  
+Kullanabileceğiniz [hızlandırıcı](../../parallel/amp/reference/accelerator-class.md) ve [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) cihazda veya öykünücüde C++ AMP kodunuzu çalıştırmak için belirtmek için sınıflar. Bir sistem, birkaç cihaz ya da bellek, paylaşılan bellek desteği, hata ayıklama desteği veya çifte duyarlılık desteği miktarına göre farklılık gösteren öykünücüleri olabilir. C++ Accelerated Massive Parallelism (C++ AMP) uygun Hızlandırıcıları incelemek, birini varsayılan olarak ayarlamak, çoklu çağrı görünümlerinin belirtin ve özel hata ayıklama görevlerini gerçekleştirmek için kullanabileceğiniz API'ler sağlar.  
   
-## <a name="using-the-default-accelerator"></a>Varsayılan Hızlandırıcı kullanma  
- Belirli bir seçmek için kod yazma sürece C++ AMP çalışma zamanı varsayılan Hızlandırıcı seçer. Çalışma zamanı gibi varsayılan Hızlandırıcı seçti:  
+## <a name="using-the-default-accelerator"></a>Varsayılan hızlandırıcıyı kullanma  
+ 
+Belirli bir kod yazmadığınız sürece, C++ AMP çalışma zamanı varsayılan hızlandırıcıyı seçer. Çalışma zamanı varsayılan hızlandırıcıyı aşağıdaki gibi seçer:  
   
-1.  Uygulama hata ayıklama modunda çalışıyorsa, Hızlandırıcı, hata ayıklama destekler.  
+1. Uygulamayı hata ayıklama modunda çalışıyorsa, Hızlandırıcı hata ayıklamayı destekler.  
   
-2.  Aksi takdirde, bu ayarlanırsa CPPAMP_DEFAULT_ACCELERATOR ortam değişkeni tarafından belirtilen Hızlandırıcı.  
+2. Aksi takdirde, bu ayarlanırsa, CPPAMP_DEFAULT_ACCELERATOR ortam değişkeni tarafından belirtilen Hızlandırıcı.  
   
-3.  Aksi takdirde benzetilmiş olmayan bir aygıt.  
+3. Aksi durumda, benzetilmemiş cihaz.  
   
-4.  Aksi takdirde, en fazla kullanılabilir bellek miktarına sahip bir aygıt.  
+4. Aksi takdirde, kullanılabilir bellek miktarı en yüksek olan cihaz.  
   
-5.  Aksi takdirde, görüntüye bağlı olmayan bir aygıt.  
+5. Aksi takdirde, görüntüye bağlı olmayan bir cihaz.  
   
- Ayrıca, çalışma zamanı belirten bir `access_type` , `access_type_auto` varsayılan Hızlandırıcı için. Başka bir deyişle, varsayılan Hızlandırıcı desteklenir ve kendi performans özellikleri (bant genişliği ve gecikme) adanmış (paylaşılmayan) bellek ile aynı olduğu bilinen paylaşılan bellek kullanır.  
+Ayrıca, çalışma zamanı belirtir bir `access_type` , `access_type_auto` varsayılan Hızlandırıcı için. Başka bir deyişle, destekleniyorsa ve performans özelliklerinin (bant genişliği ve gecikme) adanmış (paylaştırılmamış) bellek ile aynı olduğu bilinen varsayılan hızlandırıcının paylaşılan belleği kullanır.  
   
- Varsayılan Hızlandırıcı özelliklerini varsayılan Hızlandırıcı oluşturma ve özelliklerini inceleyerek belirleyebilirsiniz. Aşağıdaki kod örneğinde Hızlandırıcı bellek, paylaşılan bellek desteği, çift duyarlıklı desteği ve varsayılan Hızlandırıcı sınırlı duyarlıklı destek miktarını yolun yazdırır.  
+Varsayılan hızlandırıcıyı oluşturarak ve özelliklerini araştırarak özelliklerini varsayılan hızlandırıcının belirleyebilirsiniz. Aşağıdaki kod örneği, yolu, Hızlandırıcı bellek, paylaşılan bellek desteğini, çift duyarlıklı desteği ve varsayılan hızlandırıcının sınırlı çift duyarlıklı destek miktarı yazdırır.  
   
 ```cpp  
 void default_properties() {  
@@ -51,11 +52,10 @@ void default_properties() {
     std::wcout << (accs[i].supports_limited_double_precision ?   
         "limited double precision: true" : "limited double precision: false") << "\n";  
 }  
- 
 ```  
   
-### <a name="cppampdefaultaccelerator-environment-variable"></a>CPPAMP_DEFAULT_ACCELERATOR ortam değişkeni  
- Belirtmek için CPPAMP_DEFAULT_ACCELERATOR ortam değişkeni ayarlayabilirsiniz `accelerator::device_path` varsayılan Hızlandırıcı. Yolun donanım bağımlıdır. Aşağıdaki kod `accelerator::get_all` kullanılabilir Hızlandırıcıları listesini almak için çalışır ve her Hızlandırıcı özelliklerini ve yolunu görüntüler.  
+### <a name="cppampdefaultaccelerator-environment-variable"></a>CPPAMP_DEFAULT_ACCELERATOR çevre değişkeni  
+Belirlemek için CPPAMP_DEFAULT_ACCELERATOR çevre değişkenini ayarlayabilirsiniz `accelerator::device_path` varsayılan hızlandırıcının. Yol donanıma bağımlıdır. Aşağıdaki kod `accelerator::get_all` işlevini Hızlandırıcıların listesini almak için ve her hızlandırıcının özelliklerini ve yolunu görüntüler.  
   
 ```cpp  
 void list_all_accelerators()  
@@ -76,7 +76,8 @@ void list_all_accelerators()
 ```  
   
 ## <a name="selecting-an-accelerator"></a>Hızlandırıcı seçme  
- Hızlandırıcı seçmek için kullanın `accelerator::get_all` kullanılabilir Hızlandırıcıları listesini almak ve bir seçmek için yöntemine temel özelliklerini üzerinde. Bu örnek, çoğu belleği Hızlandırıcı çekme gösterilmektedir:  
+ 
+Bir Hızlandırıcı seçmek için kullanın `accelerator::get_all` birini seçin ve Hızlandırıcıların listesini almak için yöntem tabanlı özelliklerine göre. Bu örnek, en fazla belleği olan hızlandırıcının nasıl seçileceğini gösterir:  
   
 ```cpp  
 void pick_with_most_memory()  
@@ -97,14 +98,15 @@ void pick_with_most_memory()
 ```  
   
 > [!NOTE]
->  Tarafından döndürülen Hızlandırıcıları birini `accelerator::get_all` CPU hızlandırıcısıdır. Kod CPU Hızlandırıcı yürütülemiyor. CPU accelerator filtrelemek için değerini karşılaştırın [device_path](reference/accelerator-class.md#device_path) tarafından döndürülen Hızlandırıcı özelliğinin `accelerator::get_all` değeriyle [accelerator::cpu_accelerator](reference/accelerator-class.md#cpu_accelerator). Daha fazla bilgi için bu makaledeki "Özel Hızlandırıcıları" bölümüne bakın.  
+> Tarafından döndürülen hızlandırıcılardan biri `accelerator::get_all` CPU hızlandırıcısıdır. Kodu CPU Hızlandırıcısı üzerinde yürütülemiyor. CPU hızlandırıcılarını süzmek için değeri ile karşılaştırmak [device_path](reference/accelerator-class.md#device_path) tarafından döndürülen hızlandırıcının özellik `accelerator::get_all` değeriyle [accelerator::cpu_accelerator](reference/accelerator-class.md#cpu_accelerator). Daha fazla bilgi için bu makaledeki "Özel Hızlandırıcılar" bölümüne bakın.  
   
 ## <a name="shared-memory"></a>Paylaşılan bellek  
- Paylaşılan bellek hem CPU hem de Hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımını ortadan kaldırır veya CPU ve Hızlandırıcı arasında veri kopyalama yükünü önemli ölçüde azaltır. Bellek paylaşılmasına karşın, hem CPU hem de Hızlandırıcı tarafından eşzamanlı olarak erişilemez ve bunun nedenle tanımsız davranışlara neden olur. Hızlandırıcı özelliği [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) döndürür `true` Hızlandırıcı paylaşılan bellek destekliyorsa ve [default_cpu_access_type](reference/accelerator-class.md#default_cpu_access_type) özelliğini alır varsayılan[access_type](reference/concurrency-namespace-enums-amp.md#access_type) üzerinde ayrılan bellek `accelerator`— Örneğin, `array`ilişkili s `accelerator`, veya `array_view` üzerinde erişilen nesneler `accelerator`. 
+ 
+Paylaşılan bellek, CPU ve Hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımı ortadan kaldırır veya CPU ve Hızlandırıcı arasında veri kopyalama yükünü önemli ölçüde azaltır. Belleğin paylaşılmasına rağmen CPU ve Hızlandırıcı tarafından aynı anda erişilemez ve bunu yaparsanız, bu nedenle tanımsız davranışa neden olur. Hızlandırıcı özelliği [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) döndürür **true** Hızlandırıcı paylaşılan bellek destekliyorsa ve [default_cpu_access_type](reference/accelerator-class.md#default_cpu_access_type) özellik alımları Varsayılan [access_type](reference/concurrency-namespace-enums-amp.md#access_type) üzerinde ayrılmış bellek `accelerator`— Örneğin, **dizi**s ile ilişkili `accelerator`, veya `array_view` üzerinden erişilen nesneler `accelerator`. 
   
- C++ AMP çalışma zamanı en iyi varsayılan otomatik olarak seçer `access_type` her `accelerator`, ancak paylaşılan bellek performans özellikleri (bant genişliği ve gecikme) okunurken olanlar adanmış (paylaşılmayan) Hızlandırıcı bellek kötü olabilir CPU veya her ikisi de yazma İşlemcisinden. Paylaşılan bellek, okuma ve yazma CPU için ayrılmış bellek yanı sıra gerçekleştirirse, çalışma zamanı varsayılan olarak `access_type_read_write`; Aksi halde çalışma zamanı daha pasif varsayılan seçer `access_type`ve uygulamanın bellek erişirseniz onu geçersiz kılmanıza izin verir Hesaplama tekrar desenlerini farklı bir fayda `access_type`.  
+C++ AMP çalışma zamanı en iyi varsayılan otomatik olarak seçer `access_type` her `accelerator`, ancak paylaşılan belleğin performans özellikleri (bant genişliği ve gecikme) okurken belleğinkinden ayrılmış (paylaşılmayan) Hızlandırıcı bellek olabilir CPU veya hem de yazma CPU'dan. Paylaşılan bellek, okuma ve yazma CPU'dan için ayrılmış bellek gerçekleştiriyorsa, çalışma zamanı için varsayılan olarak `access_type_read_write`; Aksi takdirde çalışma zamanı daha pasif bir varsayılan seçer `access_type`ve bellek erişim bunu geçersiz kılmasına izin verir Hesaplama çekirdeklerinin desenleri farklı bir avantaj `access_type`.  
   
- Aşağıdaki kod örneği, varsayılan Hızlandırıcı paylaşılan bellek destekler ve daha sonra varsayılan erişim türü için geçersiz kılar ve oluşturur olup olmadığını belirlemek gösterilmiştir bir `accelerator_view` almaktır.  
+Aşağıdaki kod örneği, varsayılan hızlandırıcının paylaşılan belleği destekleyip ve ardından varsayılan erişim türünü geçersiz kılar ve oluşturur olup olmadığını belirlemek gösterilmiştir bir `accelerator_view` almaktır.  
   
 ```cpp  
 #include <amp.h>  
@@ -133,10 +135,11 @@ int main()
 }  
 ```  
   
- Bir `accelerator_view` her zaman yansıtır `default_cpu_access_type` , `accelerator` geçersiz kılma veya değiştirmek için arabirim sağlar ve ilişkili olduğu kendi `access_type`.  
+Bir `accelerator_view` her zaman yansıtır `default_cpu_access_type` , `accelerator` ilişkili olduğu ve geçersiz kılmak veya değiştirmek için herhangi bir arabirim sağlar, `access_type`.  
   
-## <a name="changing-the-default-accelerator"></a>Varsayılan Hızlandırıcı değiştirme  
- Varsayılan Hızlandırıcı çağırarak değiştirebileceğiniz `accelerator::set_default` yöntemi. Herhangi bir kod üzerinde GPU yürütülmeden önce yalnızca uygulama yürütme ve değiştirmelisiniz sonra varsayılan Hızlandırıcı değiştirebilirsiniz. Hızlandırıcı değiştirmek için tüm sonraki işlev çağrılarını dönmek `false`. Çağrıda farklı Hızlandırıcı kullanmak isteyip istemediğinizi `parallel_for_each`, bu makalede "Birden çok Hızlandırıcıları kullanma" bölümüne bakın. Aşağıdaki kod örneğinde varsayılan Hızlandırıcı değil benzetilmiş, bir görüntüye bağlı değil ve çift duyarlıklı destekleyen bir ayarlar.  
+## <a name="changing-the-default-accelerator"></a>Varsayılan hızlandırıcıyı değiştirme  
+ 
+Çağırarak varsayılan hızlandırıcıyı değiştirebilirsiniz `accelerator::set_default` yöntemi. Herhangi bir kod GPU üzerinde yürütülmeden önce yalnızca uygulama yürütme ve bu defa varsayılan hızlandırıcıyı değiştirebilirsiniz. Hızlandırıcıyı değiştirmek için bir sonraki işlev çağrılarının dönüş **false**. Bir çağrıda farklı bir Hızlandırıcı kullanmak istiyorsanız `parallel_for_each`, bu makaledeki "Çoklu Hızlandırıcılar'ı kullanma" bölümüne bakın. Aşağıdaki kod örneği varsayılan hızlandırıcıyı benzetilmemiş, bir görüntüye bağlı olmayan ve çift-duyarlı destekli bir ayarlar.  
   
 ```cpp  
 bool pick_accelerator()  
@@ -161,26 +164,30 @@ bool pick_accelerator()
 }  
 ```  
   
-## <a name="using-multiple-accelerators"></a>Birden çok Hızlandırıcıları  
- Birden çok Hızlandırıcıları uygulamanızda kullanmanın iki yolu vardır:  
+## <a name="using-multiple-accelerators"></a>Çoklu Hızlandırıcı kullanma  
+ 
+Uygulamanızda çoklu Hızlandırıcı kullanmak için iki yolu vardır:  
 
--   Geçirebilirsiniz `accelerator_view` çağrıları nesnelere [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) yöntemi.  
+- Geçirebilirsiniz `accelerator_view` çağrıları nesnelere [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) yöntemi.  
   
--   Oluşturabileceğiniz bir `array` kullanarak belirli bir nesne `accelerator_view` nesne. C + AMP çalışma zamanı alacağı `accelerator_view` yakalanan nesnesinden `array` lambda ifadesi nesne.  
+- Oluşturulabilir bir **dizi** nesnesi `accelerator_view` nesne. C + AMP çalışma zamanı alacağı `accelerator_view` yakalanan nesneden **dizi** lambda ifadesindeki nesne.  
   
-## <a name="special-accelerators"></a>Özel Hızlandırıcıları  
- Üç özel Hızlandırıcıları aygıt yollarını özellikleri olarak kullanılabilir `accelerator` sınıfı:  
+## <a name="special-accelerators"></a>Özel Hızlandırıcılar  
+ 
+Üç özel hızlandırıcının cihaz yolları özellikleri olarak kullanılabilir `accelerator` sınıfı:  
   
-- [Accelerator::direct3d_ref veri üyesi](reference/accelerator-class.md#direct3d_ref): Bu tek iş parçacıklı Hızlandırıcı yazılım genel grafik kartı benzetmek için CPU kullanır. Varsayılan olarak hata ayıklama için kullanılır, ancak donanım Hızlandırıcıları yavaş olduğundan, üretimde kullanışlı değildir. Ayrıca, yalnızca DirectX SDK ve Windows SDK'sı kullanılabilir ve müşterilerinizin bilgisayarlarda yüklü olması beklenmez. Daha fazla bilgi için bkz: [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code).  
+- [Accelerator::direct3d_ref veri üyesi](reference/accelerator-class.md#direct3d_ref): bir genel grafik kartını benzetmede CPU üzerinde bu tek iş parçacıklı Hızlandırıcı yazılım kullanır. Hata ayıklama için varsayılan olarak kullanılır, ancak donanım hızlandırıcılardan yavaş olduğundan üretimde kullanışlı olduğu değil. Ayrıca, yalnızca DirectX SDK ve Windows SDK'sı bulunur ve müşterilerinizin bilgisayarlarında yüklü beklenmez. Daha fazla bilgi için [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code).  
   
-- [Accelerator::direct3d_warp veri üyesi](reference/accelerator-class.md#direct3d_warp): Bu Hızlandırıcı Streaming SIMD Uzantıları (SSE) kullanan çok çekirdekli CPU C++ AMP kod yürütmek için bir geri dönüş çözümü sağlar.  
+- [Accelerator::direct3d_warp veri üyesi](reference/accelerator-class.md#direct3d_warp): Bu Hızlandırıcı, Streaming SIMD uzantılarını (SSE) kullanan çok çekirdekli CPU üzerinde C++ AMP kodunu yürütmek için bir geri dönüş çözümü sağlar.  
   
-- [Accelerator::cpu_accelerator veri üyesi](reference/accelerator-class.md#cpu_accelerator): diziler hazırlama yukarı ayarlamak için bu Hızlandırıcı kullanabilirsiniz. C++ AMP kod yürütülemiyor. Daha fazla bilgi için bkz: [C++ AMP hazırlama dizilerde](http://go.microsoft.com/fwlink/p/?linkId=248485) sonrası paralel programlama yerel kod günlüğündeki.  
+- [Accelerator::cpu_accelerator veri üyesi](reference/accelerator-class.md#cpu_accelerator): Bu Hızlandırıcı diziler hazırlık ayarlamak için kullanabilirsiniz. Bu, C++ AMP kod yürütemez. Daha fazla bilgi için [dizileri C++ amp'de](http://go.microsoft.com/fwlink/p/?linkId=248485) paralel programlama yerel kod blog içinde gönderin.  
   
 ## <a name="interoperability"></a>Birlikte Çalışabilirlik  
- C++ AMP çalışma zamanı arasında birlikte çalışabilirlik destekleyen `accelerator_view` sınıfı ve Direct3D [ID3D11Device arabirimi](http://go.microsoft.com/fwlink/p/?linkId=248488). [Create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) metodu bir `IUnknown` arabirimi ve döndürür bir `accelerator_view` nesnesi. [Get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) metodu bir `accelerator_view` nesne ve döndürür bir `IUknown` arabirimi.  
+ 
+C++ AMP çalışma zamanı çalıştırılabilirliği Desteler `accelerator_view` sınıfı ile Direct3D [ıd3d11device arabirimi](http://go.microsoft.com/fwlink/p/?linkId=248488). [Create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) yöntemi bir `IUnknown` arabirimi ve döndürür bir `accelerator_view` nesne. [Get_device](http://msdn.microsoft.com/8194125e-8396-4d62-aa8a-65831dea8439) yöntemi bir `accelerator_view` nesne ve döndürür bir `IUknown` arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
- [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code)   
- [accelerator_view Sınıfı](../../parallel/amp/reference/accelerator-view-class.md)
+ 
+[C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
+[GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code)   
+[accelerator_view Sınıfı](../../parallel/amp/reference/accelerator-view-class.md)

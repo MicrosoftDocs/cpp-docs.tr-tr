@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2022f979205fed461f02e5886698d9455021a855
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8fe616785c63602b5de9702cd3e6c7d80f9872fc
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912855"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465415"
 ---
 # <a name="namedguids"></a>named_guids
-**C++ özel**  
+**C++ özgü**  
   
- Formun eski stildeki GUID değişkenlerini başlatmak ve tanımlamak için derleyici söyler **LIBID_MyLib**, **CLSID_MyCoClass**, **IID_MyInterface**, ve **DIID _MyDispInterface**.  
+Tanımlamak ve formun eski stilde GUID değişkenlerini başlatmak için derleyiciye `LIBID_MyLib`, `CLSID_MyCoClass`, `IID_MyInterface`, ve `DIID_MyDispInterface`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,8 +35,10 @@ named_guids
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Son C++ özel**  
+
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -20,18 +20,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a77056c6a3d0427c865658cd945e74e29d672b0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4b6eb6e9a1b7be12d125a68d3873401ccdeb7be3
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371947"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466372"
 ---
 # <a name="lib-reference"></a>LIB Başvurusu
-Microsoft Kitaplığı Yöneticisi'ni (LIB.exe) oluşturur ve ortak nesne dosyası biçimi (COFF) nesne dosyaları içeren bir kitaplık yönetir. LIB dışarı aktarma dosyaları oluşturmak ve referans verilen tanımlarını kitaplıkları içeri aktarma için de kullanılabilir.  
+Microsoft Kitaplığı Yöneticisi'ni (LIB.exe) oluşturur ve ortak nesne dosyası biçimi (COFF) nesne dosyası kitaplığı yönetir. LIB, dışarı aktarma dosyaları oluşturma ve dışarı aktarılan başvuru tanımları kitaplıkları içeri aktarma için de kullanılabilir.  
   
 > [!NOTE]
->  Bu araç yalnızca başlatabilirsiniz [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] komut istemi. Bir sistem komut istemi veya dosya Gezgini başlatılamıyor.  
+>  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.  
   
 -   [LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)  
   

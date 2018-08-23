@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f39a609e1621dab404ff79e49ade56a88277aa80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 25b1c3f83b770dc7b346e83e9675afe423af2516
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199359"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466177"
 ---
 # <a name="fatal-error-c1510"></a>Önemli hata C1510
-Dil kaynak clui.dll açılamıyor  
+Clui.dll dil kaynağı açılamıyor  
   
- Derleyici dil kaynak DLL yüklenemiyor.  
+ Derleyici dil kaynağı DLL yüklenemiyor.  
   
-Bu sorunun iki ortak nedenleri vardır. Araçlar ve 32-bit derleyici kullanırken, bu hata bağlantı sırasında 2 GB'den fazla bellek kullanır büyük projeler için görebilirsiniz. 64-bit Windows sistemlerinde olası bir çözüm 64-bit yerel kullanın veya derleyici ve kodunuzu oluşturmak için Araçlar arası şeklindedir. Bu, 64-bit uygulamaları için kullanılabilir olan daha büyük bellek alanını yararlanır. Bazı durumlarda bir 32 bit sistemde çalıştırdığınız için 32-bit derleyici kullanmanız gerekiyorsa, bağlayıcı 3 GB kullanılabilir bellek miktarını artırabilir. Daha fazla bilgi için bkz: [4 gigabaytlık ayarlama: BCDEdit ve Boot.ini](https://msdn.microsoft.com/library/vs/alm/bb613473(v=vs.85).aspx) ve [BCDEdit/set increaseuserva](https://msdn.microsoft.com/library/ff542202.aspx) komutu.  
+Bu sorunun iki yaygın nedenleri vardır. 32-bit derleyici ve araçları kullanarak, bağlantı sırasında 2 GB'den fazla bellek kullanan büyük projeler için bu hatayı görebilirsiniz. 64-bit Windows sistemlerinde olası bir çözüm, 64 bit yerel kullanın veya çapraz derleyici ve araçları, kod üretmek için sağlamaktır. Bu, 64-bit uygulamalar için mevcut olan daha büyük bellek alanı avantajlarından yararlanır. Bazı durumlarda bir 32-bit sistem üzerinde çalıştığından 32 bit derleyiciyi kullanmak zorundaysanız, bağlayıcı 3 GB kullanılabilir bellek miktarını artırabilir. Daha fazla bilgi için [4 gigabaytlık ayarlama: BCDEdit ve Boot.ini](https://msdn.microsoft.com/library/vs/alm/bb613473\(v=vs.85\).aspx) ve [BCDEdit/kümesi increaseuserva](https://msdn.microsoft.com/library/ff542202.aspx) komutu.  
 
-Ortak bir nedeni bozuk veya eksik bir Visual Studio yükleme oluşturur. Bu durumda, yeniden onarmak veya Visual Studio yeniden yüklemek için yükleyiciyi çalıştırın.  
+Yaygın bir nedeni, bozuk veya eksik bir Visual Studio Yükleme ' dir. Bu durumda, Visual Studio'yu yeniden yükleyin veya yeniden onarmak için yükleyiciyi çalıştırın.  
   

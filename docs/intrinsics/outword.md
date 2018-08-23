@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f0e827b16b9743cb6bc7fe6906b4c74c3006864
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d118c26e79a462723f87e76672b2d9b9c1a76cb2
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331142"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465722"
 ---
 # <a name="outword"></a>__outword
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur `out` word gönderir yönerge `Data` tarafından belirtilen g/ç bağlantı noktası çıkışı `Port`.  
+ Oluşturur `out` sağlayan sözcüğü gönderir yönergesinin `Data` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,14 +49,14 @@ void __outword(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__outword`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outword`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

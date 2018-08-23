@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8c79981b41bf7b74cb1aa44b98b44e0b5acbc90
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: e1c3ccdba1de9191079630989facf154ccf62d7f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337927"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466065"
 ---
 # <a name="cdbvariant-class"></a>CDBVariant sınıfı
 MFC ODBC sınıfları için bir değişken veri türünü temsil eder.  
@@ -200,7 +200,7 @@ void Clear();
 ### <a name="remarks"></a>Açıklamalar  
  `m_pdate` Veri üyesine ait bir birleşime. Erişmeden önce `m_pdate`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_DATE için sonra ayarlanır `m_pdate` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pdate` güvenilir olmayan sonuçlar oluşturabilir.  
   
- TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için Ek Yardım konusuna [C veri türleri](https://msdn.microsoft.com/library/ms714556.aspx) ek d *ODBC Programcının Başvurusu* Windows SDK.  
+ TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için Ek Yardım konusuna [C veri türleri](/previous-versions/windows/desktop/ms714556\(v=vs.85\)) ek d *ODBC Programcının Başvurusu* Windows SDK.  
   
 ##  <a name="m_pstring"></a>  CDBVariant::m_pstring  
  Türü bir nesneye bir işaretçi depolayan [CString](../../atl-mfc-shared/reference/cstringt-class.md).  

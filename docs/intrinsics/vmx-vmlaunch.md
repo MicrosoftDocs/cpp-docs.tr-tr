@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 926195aa8dc612d3972634f8140ce3fff753a48f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 463a0ef679250aec9489c539ef11a6e1288b3a6f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33335029"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466174"
 ---
 # <a name="vmxvmlaunch"></a>__vmx_vmlaunch
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Geçerli sanal makine denetim yapısı (Windows VMCS) kullanarak VMX kök olmayan işlemi durumu (VM girin) arama uygulamasında yerleştirir.  
+ Geçerli sanal makine denetim yapısı (Windows VMCS) kullanarak VMX kök olmayan işlem durumu (VM girin) arama uygulamada yerleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,24 +40,24 @@ unsigned char __vmx_vmlaunch(
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|0|İşlemi başarılı oldu.|  
+|0|İşlem başarılı oldu.|  
 |1.|İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.|  
 |2|İşlem durumu olmadan başarısız oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) veya [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Clear`ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Launched`. Sonuç olarak, kullanmak [__vmx_vmclear](../intrinsics/vmx-vmclear.md) Windows VMCS için başlatma durumunu ayarlamak için işlevi `Clear`ve ardından [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) ilk VM girin işleminizi ve işlevini[__vmx_vmresume](../intrinsics/vmx-vmresume.md) sonraki VM girin işlemleri için işlevi.  
+ Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) veya [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Clear`ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Launched`. Sonuç olarak, kullanmanız [__vmx_vmclear](../intrinsics/vmx-vmclear.md) işlevi için bir Windows VMCS başlatma durumunu ayarlamak için `Clear`ve ardından [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi ilk VM girin işleminizi ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi için sonraki işlemleri VM girin.  
   
- `__vmx_vmlaunch` İşlevi eşdeğerdir `VMLAUNCH` makine yönergesi. Bu işlev bir ana bilgisayarın sanal makine İzleyici etkileşiminin bir konuk işletim sistemi ve uygulamaları destekler. Daha fazla bilgi için belge, "Intel Sanallaştırma teknik belirtim IA-32 Intel mimarisi," için arama sırasında numara C97063-002, belge [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__vmx_vmlaunch` İşlev, eşdeğer `VMLAUNCH` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__vmx_vmlaunch`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmlaunch`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

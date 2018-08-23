@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c282456f74fa86940e3d1ffc77d0226a28ed0b80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eeb63aa411278c2ca6b2217d9243331b57cd7624
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326169"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466060"
 ---
 # <a name="ud2"></a>__ud2
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Tanımlanmamış bir yönerge oluşturur.  
+ Tanımlanmayan bir yönerge oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,22 +36,22 @@ void __ud2();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tanımlanmamış bir yönerge yürütüyorsa işlemci geçersiz opcode özel durumu tetikler.  
+ İşlemci, tanımlanmayan bir yönerge yürütmeyi bir geçersiz işlem kodu özel durum başlatır.  
   
- `__ud2` İşlevi eşdeğerdir `UD2` makine yönerge ve yalnızca çekirdek modunda kullanılabilir. Daha fazla bilgi için belge için arama "Intel mimarisi yazılım geliştirici el ile 2 birimi: yönerge kümesi başvurusu" konumundaki [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__ud2` İşlev, eşdeğer `UD2` makine yönerge ve yalnızca çekirdek modunda kullanılabilir. Belge için daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: yönerge kümesi başvurusu" konumunda [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__ud2`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ud2`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir özel durum oluşturur tanımlanmamış bir yönerge yürütür. Özel durum işleyici dönüş kodu bir sıfırdan sonra değiştirir.  
+ Aşağıdaki örnek, özel durum harekete tanımlanmayan bir yönerge yürütür. Özel durum işleyicisi, sıfırdan bir dönüş kodu sonra değişir.  
   
 ```  
 // __ud2_intrinsic.cpp  

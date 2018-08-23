@@ -18,35 +18,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cfabfa3c83fe2ff90a6f7dbe07d5205f7a6f9a9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fa6ba2bec5c862bb336d4b9bea0f47aad91fe0c1
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847422"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464544"
 ---
 # <a name="setlocale"></a>setlocale
-(Ülke/bölge ve dil) joker karakter sabitleri ve dize değişmez değerleri çevirirken kullanılacak yerel tanımlar.  
+Yerel (ülke/bölge ve dil) geniş karakter sabitleri ve dize değişmez değerleri çevirirken kullanılacak tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma setlocale( "[locale-string]" )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geniş karakterler birden çok baytlı karakterleri dönüştürme algoritma bölgeye göre farklılık gösterebilir veya derleme yürütülebilir bir dosyanın çalıştırılacağı öğesinden farklı bir yerel olarak yer alabilir olduğundan bu pragma hedef yerel derleme zamanında belirtmek için bir yol sağlar. Başka bir garanti joker karakter dizelerini doğru biçimde depolanır.  
+ 
+Geniş karakterler için çok baytlı karakterleri dönüştürme algoritması bölgeye göre değişiklik gösterebilir veya derleme yürütülebilir bir dosya çalıştıracağınız öğesinden farklı bir yerel ayar yer alabilir içerdiğinden, bu pragmayı derleme zamanında hedef yerel ayar belirtmek için bir yol sağlar. Başka bir garanti, geniş karakterli dizeler doğru biçimde depolanır.  
   
- Varsayılan *yerel ayar-dize* olan "".  
+Varsayılan *yerel ayar dizesine* olan "".  
   
- "C" yerel değer olarak dizedeki her karakter eşlendiği bir `wchar_t` (kısa imzalanmamış). İçin geçerli olan diğer değerleri `setlocale` bulunan bu girdiler [dil dizeleri](../c-runtime-library/language-strings.md) listesi. Örneğin, size verebilir:  
+Değer olarak "C" yerel dizesindeki her karakterle eşleyen bir **wchar_t** (işaretsiz). İçin geçerli olan diğer değerleri `setlocale` bulunan bu girişler [dil dizeleri](../c-runtime-library/language-strings.md) listesi. Örneğin, size verebilir:  
   
 ```  
 #pragma setlocale("dutch")  
 ```  
   
- Bir dil dize verme özelliği kod sayfası ve dil kimliği ile ilgili destek bilgisayarınızda bağlıdır.  
+Bir dil dizesi oluşturabilme olanağı, kod sayfası ve dil kimliği desteği bilgisayarınızda bağlıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

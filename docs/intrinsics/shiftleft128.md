@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfc63cdd252e2acb23d8a6e842138d91e6c9b9c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e3ca2c389b00126ff477b8e184d690afce07c484
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340001"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465637"
 ---
 # <a name="shiftleft128"></a>__shiftleft128
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İki 64-bit miktarlar olarak temsil 128 bitlik bir miktar, kaydırır `LowPart` ve `HighPart`, sol tarafından belirtilen bit sayısı tarafından `Shift` ve yüksek 64 bit sonucunun döndürür.  
+ İki 64-bit miktarlar olarak temsil edilen bir 128-bit miktarı kaydırır `LowPart` ve `HighPart`, sol tarafından belirtilen bit sayısı `Shift` ve yüksek 64 bit sonuç döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ unsigned __int64 __shiftleft128(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `LowPart`  
- Düşük 64 bit kaydırmak için 128-bit miktarı.  
+ Kaydırmak için 128 bit miktarı düşük 64 bit.  
   
  [in] `HighPart`  
- Yüksek 64 bit kaydırmak için 128-bit miktarı.  
+ Yüksek 64 bit kaydırmak için 128 bit miktarı.  
   
  [in] `Shift`  
  Kaydırılacak bit sayısı.  
@@ -55,12 +55,12 @@ unsigned __int64 __shiftleft128(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__shiftleft128`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__shiftleft128`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Shift` Değerdir her zaman 64 modulo bu nedenle, örneğin, çağırırsanız `__shiftleft128(1, 0, 64)`, işlevi düşük bölümü kayar `0` BITS sol ve yüksek bir parçası dönmek `0` ve `1` aksi beklenen şekilde.  
+ `Shift` Değerdir her zaman 64 bu nedenle, örneğin, çağırırsanız `__shiftleft128(1, 0, 64)`, işlev düşük bölümü kayar `0` BITS yüksek bir parçası olarak döndürmek ve sola `0` ve `1` aksi beklenebilir gibi.  
   
 ## <a name="example"></a>Örnek  
   
@@ -100,7 +100,7 @@ int main()
 0x100000000000000001 >> 1 = 0x080000000000000000  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__shiftright128](../intrinsics/shiftright128.md)   

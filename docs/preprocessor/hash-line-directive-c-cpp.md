@@ -1,5 +1,5 @@
 ---
-title: '#Yönergesi (C/C++) satır | Microsoft Docs'
+title: '#Yönergesi (C/C++) satırı | Microsoft Docs'
 ms.custom: ''
 ms.date: 10/18/2017
 ms.technology:
@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ebbcea7432b27e9269b5041d90d14534a77b812
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0994c8266828ab8bff8d43171c275d9058a3b7ce
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839760"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464470"
 ---
 # <a name="line-directive-cc"></a>#line Yönergesi (C/C++)
 
-`#line` yönergesi, önişlemciye derleyicinin dahili olarak depolanan satır numarasını ve dosya adını belirli bir satır numarası ve dosya adıyla değiştirmesini bildirir.
+**#Line** yönergesi, önişlemciye derleyicinin dahili olarak depolanan satır numarasını ve dosya adını bir satır numarasını ve dosya adını değiştirmek söyler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,23 +37,23 @@ ms.locfileid: "33839760"
 
 Derleyici, derleme sırasında bulduğu hatalara başvurmak için satır numarası ve isteğe bağlı dosya adını kullanır. Satır numarası genellikle geçerli giriş satırına başvurur ve dosya adı geçerli giriş dosyasına başvurur. Her satır işlendikten sonra satır numarası artırılır.
 
-*Basamak dizisi* değeri bir tamsayı sabiti olabilir. Makro değiştirme, ön işleme belirteçleri üzerinde gerçekleştirilebilir, ancak sonuç doğru sözdizimini değerlendirmelidir. *Filename* karakterlerin herhangi bir bileşimi olabilir ve çift tırnak içine alınmalıdır (**""**). Varsa *filename* olan atlanırsa, önceki filename değişmeden kalır.
+*Basamak dizisi* değeri herhangi bir tamsayı sabiti olabilir. Makro değiştirme, ön işleme belirteçleri üzerinde gerçekleştirilebilir, ancak sonuç doğru sözdizimini değerlendirmelidir. *Filename* karakter herhangi bir birleşimi olabilir ve çift tırnak içine alınmalıdır (**""**). Varsa *filename* olan atlanırsa, önceki dosya değişmeden kalır.
 
-Kaynak satır numarasını ve dosya adını bir `#line` yönergesi yazarak değiştirebilirsiniz. Önceden tanımlı makrolar değerleri belirlemek için satır numarasını ve dosya adı Çeviricisi kullanır **&#95; &#95;dosya&#95; &#95;** ve **&#95; &#95;satır&#95; &#95;**. Bu makroları, kendini açıklayıcı hata iletilerini program metnine eklemek için kullanabilirsiniz. Bu önceden tanımlanmış makrolar hakkında daha fazla bilgi için bkz: [önceden tanımlı makrolar](../preprocessor/predefined-macros.md).
+Kaynak satır numarasını ve dosya adını yazarak değiştirebilirsiniz bir **#line** yönergesi. Önceden tanımlanmış makrolar değerlerini belirlemek için satır numarasını ve dosya adı translator kullanır `__FILE__` ve `__LINE__`. Bu makroları, kendini açıklayıcı hata iletilerini program metnine eklemek için kullanabilirsiniz. Bu önceden tanımlanmış makrolar hakkında daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md).
 
-**&#95; &#95;Dosya&#95; &#95;** makro genişler içeriği çift tırnak işaretleri dosya bir dize için (**""**).
+`__FILE__` Makro genişler çift tırnak işareti içine alınmış dosya adı olan bir dize (**""**).
 
-Satır numarasını ve dosya adını değiştirirseniz, derleyici önceki değerleri yok sayar ve yeni değerleri işlemeye devam eder. `#line` yönergesi, hata iletilerinin oluşturulan program yerine orijinal kaynak dosyasına başvurmasını sağlamak için genellikle program oluşturucuları tarafından kullanılır.
+Satır numarasını ve dosya adını değiştirirseniz, derleyici önceki değerleri yok sayar ve yeni değerleri işlemeye devam eder. **#Line** yönergesi genellikle program Oluşturucuları tarafından hata iletilerinin oluşturulan program orijinal kaynak dosyasına yerine neden için kullanılır.
 
-Aşağıdaki örnekler göstermeye `#line` ve **&#95; &#95;satır&#95; &#95;** ve **&#95; &#95;dosya&#95; &#95;** makroları.
+Aşağıdaki örnekler gösterir **#line** ve `__LINE__` ve `__FILE__` makroları.
 
-Bu bildirimde dahili olarak depolanan satır numarası 151 için ayarlanır ve dosya adı için copy.c değiştirilir.
+Bu bildirimde dahili olarak depolanan satır numarası 151 olarak ayarlanır ve dosya adı için copy.c değiştirilir.
 
 ```cpp
 #line 151 "copy.c"
 ```
 
- Bu örnekte, makrosu `ASSERT` önceden tanımlı makrolar kullanan **&#95; &#95;satır&#95; &#95;** ve **&#95; &#95;dosya&#95; &#95;** yazdırmak için bir belirli bir onaylama doğru değilse, kaynak dosya ile ilgili hata iletisi.
+Bu örnekte, makro `ASSERT` önceden tanımlanmış makrolar kullanan `__LINE__` ve `__FILE__` belirli bir onaylama işlemi doğru değilse kaynak dosyası hakkında bir hata iletisi yazdırmak için.
 
 ```cpp
 #define ASSERT(cond) if( !(cond) )\

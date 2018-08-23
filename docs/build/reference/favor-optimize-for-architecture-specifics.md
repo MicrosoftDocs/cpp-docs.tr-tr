@@ -17,15 +17,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91f91373eef29adcb9a632e80520ed6713d3e39b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 75081c3a2e8918bfe8abf43373d755ca258f2595
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376227"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464987"
 ---
 # <a name="favor-optimize-for-architecture-specifics"></a>/favor (Mimari Özellikleri için İyileştirme)
-**/ favor:** `option` belirli bir mimari için veya AMD ve Intel mimarileri mikro mimari özellikleri için iyileştirilmiş kod oluşturur.  
+**/ favor:** `option` belirli bir mimari için ya da AMD ve Intel mimarileri mikro mimariler için iyileştirilmiş kod üretir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,31 +35,31 @@ ms.locfileid: "32376227"
   
 ## <a name="remarks"></a>Açıklamalar  
  **/favor:Blend**  
- (x86 hem x64) AMD ve Intel mimarileri mikro mimari özellikleri için optimize edilmiştir kodu oluşturur. Sırada **/favor:blend** en iyi performans vermeyebilir, çok çeşitli x86 hem x64 işlemciler arasında en iyi performansı sağlamak üzere tasarlanmıştır olası belirli bir işlemci üzerinde. Varsayılan olarak, **/favor:blend** etkili olur.  
+ (x86 ve x64) özellikleri mikro mimariler AMD ve Intel mimarileri için iyileştirilmiş kod üretir. Sırada **/favor:blend** en iyi performans verebilir, çok çeşitli x86 ve x64 işlemciler arasında en iyi performans sunmak üzere tasarlanmıştır belirli bir işlemci üzerinde mümkün. Varsayılan olarak, **/favor:blend** etkindir.  
   
  **/favor:Atom**  
- (x86 hem x64) Intel Atom işlemci ve Intel Centrino Atom işlemci teknolojisi ayrıntılarını için en iyi duruma getirilmiş kodu oluşturur. Kullanılarak oluşturulan kod **/favor:ATOM** Intel SSSE3, SSE3, SSE2 ve SSE yönergeler Intel işlemcileri için de üretebilir.  
+ (x86 ve x64) Intel Centrino Atom işlemci teknolojisi ve Intel Atom işlemci özellikleri için en iyi duruma getirilmiş kodu üretir. Kullanılarak oluşturulan kodu **/favor:ATOM** Intel işlemcileri için Intel SSSE3, SSE3, SSE2 ve SSE yönergeleri oluşturulmasına neden olabilir.  
   
  **/favor:AMD64**  
- (yalnızca x64) AMD Opteron ve 64-bit uzantıları desteği Athlon işlemcileri için oluşturulan kodu en iyi duruma getirir. İyileştirilmiş kod uyumlu platformlar üzerinde tüm x64 çalıştırabilirsiniz. Kullanılarak oluşturulan kod **/favor:AMD64** kötü performans Intel64 destekleyen Intel işlemcileri neden olabilir.  
+ (yalnızca x64) AMD Opteron ve 64-bit uzantıları destekleyen Athlon işlemcileri için oluşturulan kodu en iyi duruma getirir. En iyi duruma getirilmiş kod, uyumlu bir platform tüm x64 çalıştırabilirsiniz. Kullanılarak oluşturulan kodu **/favor:AMD64** daha zayıf performans ıntel64 destekleyen Intel işlemci üzerinde neden olabilir.  
   
  **/favor:INTEL64**  
- (yalnızca x64) genellikle, platform için daha iyi bir performans verir Intel64 destekleyen Intel işlemcileri için oluşturulan kodu en iyi duruma getirir. Sonuçta elde edilen kod üzerinde hiçbir x64 çalıştırabilir platform. İle oluşturulan kodu **/favor:INTEL64** kötü performans AMD Opteron ve 64-bit uzantıları desteği Athlon işlemciler üzerinde neden olabilir.  
+ (yalnızca x64) desteği genellikle, platform için daha iyi performans verir ıntel64, Intel işlemcileri için oluşturulan kodu en iyi duruma getirir. Sonuçta elde edilen kod üzerinde herhangi bir x64 çalıştırabilirsiniz platform. İle oluşturulan kodu **/favor:INTEL64** daha zayıf performans AMD Opteron ve 64-bit uzantıları destekleyen Athlon işlemciler üzerinde neden olabilir.  
   
 > [!NOTE]
->  Intel64 mimarisi daha önce genişletilmiş bellek 64 teknoloji olarak biliniyordu ve karşılık gelen derleyici seçeneği **/favor:EM64T**.  
+>  Intel64 mimarisi daha önce Extended Memory 64 Technology biliniyordu ve karşılık gelen derleyici seçeneği olan **/favor:EM64T**.  
   
- Program hakkında bilgi için [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] mimarisi, bkz: [x64 yazılım kuralları](../../build/x64-software-conventions.md).  
+ X64 programı hakkında bilgi için Mimari bkz [x64 yazılım kuralları](../../build/x64-software-conventions.md).  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Seçin **C/C++** klasör.  
   
 3.  Seçin **komut satırı** özellik sayfası.  
   
-4.  Derleyici seçeneği girin **ek seçenekler** kutusu.  
+4.  Derleyici seçeneğini girin **ek seçenekler** kutusu.  
   
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
   

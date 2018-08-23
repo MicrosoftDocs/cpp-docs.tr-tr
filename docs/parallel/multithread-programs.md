@@ -15,19 +15,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ece834bd6bf85daacbbaf50110e6e278da1ae099
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c87d6e6a308b4e5a4cc2b38599e13f59a414361b
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686938"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466269"
 ---
 # <a name="multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programlar
-Bir iş parçacığı bir program aracılığıyla yürütmenin temel bir yoludur. Bu ayrıca en küçük Win32 zamanlar yürütme birimidir. Bir iş parçacığı bir yığın CPU kaydeder ve sistem Zamanlayıcı yürütme listesinde bir girişi durumu oluşur. Her iş parçacığı tüm işlem kaynaklarını paylaşır.  
+Bir iş parçacığı bir program aracılığıyla yürütmenin temel bir yoludur. Bu ayrıca en küçük Win32 zamanlayan birimidir. Bir iş parçacığı yığını, CPU kayıtlar ve sistem Zamanlayıcı yürütme listesindeki bir girdinin durumu oluşur. Her iş parçacığının tüm işlem kaynaklarını paylaşır.  
   
- Bir veya daha fazla iş parçacığı ve kodu, veri ve diğer kaynakları bellekte bir programın, bir işlem oluşur. Programın normal açık dosyalar, semafor ve dinamik olarak ayrılan bellek kaynaklardır. Sistem Zamanlayıcı parçacıklarından birine yürütme denetimi verdiğinde bir program çalıştırır. Zamanlayıcı iş parçacıklarının hangilerinin ve ne zaman çalıştırılması gerektiğini belirler. İş parçacıkları daha düşük bir öncelik yüksek öncelikli iş parçacıklarının işlerini tamamlamalarını beklemeniz gerekebilir. Çok işlemcili makinelerde Zamanlayıcı CPU yükünü dengelemek için farklı işlemcilere tek tek iş parçacığı taşıyabilirsiniz.  
+Bir işlem bir veya daha fazla iş parçacığı ve kod, veri ve diğer kaynakları bellekte bir programın oluşur. Programın normal dinamik olarak ayrılan bellek açık dosyalar ve semaforları kaynaklardır. Bir program, sistem Zamanlayıcı bir iş parçacıklarını yürütme denetimi verdiğinde yürütür. Zamanlayıcı iş parçacıklarının hangilerinin ve ne zaman çalışması gerektiğini belirler. Düşük öncelikli iş parçacıklarının yüksek öncelikli iş parçacıklarının görevlerini tamamlamak bekleyin gerekebilir. Çok işlemcili makinelerde Zamanlayıcı, tek tek iş parçacığı CPU yükü dengelemek için farklı işlemcilere taşıyabilirsiniz.  
   
- Bir işlemdeki her bir iş parçacığı bağımsız olarak çalışır. Birbirlerine görünür yapmanız sürece, iş parçacıklarının ayrı ayrı yürütün ve diğer iş parçacığı bir işlemde farkında değildir. Ortak kaynakları paylaşma iş parçacığı işlemler arası iletişim semaforları veya diğer kullanarak işlerine ancak koordine gerekir. İş parçacıklarını eşitleme hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanan Win32 programı yazma](../parallel/writing-a-multithreaded-win32-program.md).  
+Bir işlemdeki her iş parçacığı bağımsız olarak çalışır. Bunları birbirine görünür yaptığınız sürece, iş parçacıkları tek tek yürütün ve diğer iş parçacığı bir işlemdeki farkında değildir. Ortak kaynakları paylaşma iş parçacıkları ancak iş parçacıklarıyla veya işlemler arası iletişim başka bir yöntem kullanılarak koordine etmeleri gerekir. İş parçacıklarını eşitleme hakkında daha fazla bilgi için bkz. [bir çoklu iş parçacığı kullanan Win32 programı yazma](../parallel/writing-a-multithreaded-win32-program.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)
+
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)

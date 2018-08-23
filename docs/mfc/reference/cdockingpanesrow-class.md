@@ -100,17 +100,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42680d4cd79c5079703a94361403efd858ef80f2
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 128334398b268c91ec7e6b938bcbd0d2e6e37dd0
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955273"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464599"
 ---
 # <a name="cdockingpanesrow-class"></a>CDockingPanesRow sınıfı
-Aynı yatay veya dikey satır yerleştirme sitenin (sütun) bulunan bölmeleri bir listesini yönetir.  
+Aynı yatay veya dikey satırda dock sitesiyle (sütun) bulunan bölmeleri listesini yönetir.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -132,7 +132,7 @@ class CDockingPanesRow : public CObject
 |----------|-----------------|  
 |[CDockingPanesRow::AddPane](#addpane)||  
 |[CDockingPanesRow::AddPaneFromRow](#addpanefromrow)||  
-|[CDockingPanesRow::ArrangePanes](#arrangepanes)|Belirtilen kenar boşluğu ve aralık parametreleri göre bir satır bölmelerinde düzenler.|  
+|[CDockingPanesRow::ArrangePanes](#arrangepanes)|Bir satır aralığı parametreleri ve belirtilen kenar boşluğu göre bölmelerinde düzenler.|  
 |[CDockingPanesRow::CalcFixedLayout](#calcfixedlayout)||  
 |[CDockingPanesRow::Create](#create)||  
 |[CDockingPanesRow::ExpandStretchedPanes](#expandstretchedpanes)||  
@@ -174,10 +174,10 @@ class CDockingPanesRow : public CObject
 |[CDockingPanesRow::UpdateVisibleState](#updatevisiblestate)||  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CDockingPanesRow` nesneleri yerleştirme site nesneleri tarafından dahili olarak oluşturulur.  
+ `CDockingPanesRow` nesneler, dock sitesine nesneler tarafından dahili olarak oluşturulur.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl alındığını anlatan bir `CDockingPanesRow` nesnesinin bir `CMFCAutoHideBar` nesnesi.  
+ Aşağıdaki örnek nasıl alındığını anlatan bir `CDockingPanesRow` nesnesinden bir `CMFCAutoHideBar` nesne.  
   
  [!code-cpp[NVC_MFC_RibbonApp#26](../../mfc/reference/codesnippet/cpp/cdockingpanesrow-class_1.cpp)]  
   
@@ -224,7 +224,7 @@ virtual void AddPaneFromRow(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="arrangepanes"></a>  CDockingPanesRow::ArrangePanes  
- Belirtilen kenar boşluğu göre bir satır bölmelerinde yerleştirme ve parametreleri aralık düzenler.  
+ Belirtilen kenar boşluğuna göre bir satır bölmelerinde yerleştirme ve parametreleri aralık düzenler.  
   
 ```  
 virtual void ArrangePanes(
@@ -234,13 +234,13 @@ virtual void ArrangePanes(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nMargin*  
- Piksel cinsinden sol üst köşenin satırın ilk bölmesinden uzaklığını belirtir.  
+ İlk bölmesinin sol üst köşedeki satırın piksel cinsinden uzaklığı belirtir.  
   
  [in] *nSpacing*  
  Piksel cinsinden bölmeleri arasındaki boşluğu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Nereye sabitlemek satır bölmelerinde düzenlemek için bu yöntemi çağırın. Bu yöntemi çağrıldıktan sonra çağırmalısınız `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)`.  
+ Nereye sabitleneceğini sıradaki bölmeleri düzenlemek için bu yöntemi çağırın. Bu yöntemi çağrıldıktan sonra çağırmanız gerekir `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)`.  
   
 ##  <a name="calcfixedlayout"></a>  CDockingPanesRow::CalcFixedLayout  
 
@@ -342,7 +342,7 @@ virtual void GetAvailableSpace(CRect& rect);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -354,7 +354,7 @@ void GetClientRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -494,7 +494,7 @@ void GetWindowRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -715,7 +715,7 @@ void ScreenToClient(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

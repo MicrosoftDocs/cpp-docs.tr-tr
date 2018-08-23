@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir veri akışı Aracısı oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: veri akışı Aracısı oluşturma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33f7c7cf5e64d2ddf751bb97ee1b617d09df6af3
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: f94692b6762e1dc24a7af910d2cfd52abc516598
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693100"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466162"
 ---
 # <a name="walkthrough-creating-a-dataflow-agent"></a>İzlenecek Yol: Veri Akışı Aracısı Oluşturma
-Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulamalarının nasıl oluşturulacağını gösterir.  
+Bu belgede denetim akışı yerine veri akışı temel alan aracı tabanlı uygulamalarının nasıl oluşturulacağını gösterir.  
   
- *Denetim akışı* işlem bir program yürütme sırasını başvuruyor. Denetim akışı denetim yapıları koşullu deyimler, döngüler vb. gibi kullanılarak düzenlenir. Alternatif olarak, *veri akışı* içinde hesaplamalar yapılma yalnızca gerekli tüm verileri kullanılabilir olmadığında bir programlama modeli başvuruyor. Veri akışı programlama modeli ileti geçirme, kavramı, bağımsız bir program bileşenlerinin iletileri göndererek birbirleriyle ilişkilidir.  
+ *Denetim akışı* işlemleri bir programda uygulanma sırası ifade eder. Denetim akışı koşullu deyimleri, döngüler ve benzeri gibi denetim yapıları kullanarak düzenlenir. Alternatif olarak, *veri akışı* içinde hesaplamalar yapılan yalnızca, tüm gerekli veriler kullanılabilir bir programlama modeli ifade eder. Veri akışı programlama modeli içinde bir program bağımsız bileşenlerinin birbirleriyle iletiler göndererek iletişim kurması kavramı, ileti geçirme, ilişkilidir.  
   
- Zaman uyumsuz aracılar akış denetimi ve veri akışı modellerini programlama destekler. Denetim akışı modeli çoğu durumda uygun olsa da, bir aracı verileri alır ve bu verileri yükü üzerinde temel bir eylem gerçekleştirir veri akışı bazı durumlarda, örneğin, uygun modelidir.  
+ Zaman uyumsuz aracılar denetim akışı ve veri akışı programlama modellerini destekler. Denetim akışı modeli çoğu durumda uygun olsa da, bir aracı verileri alır ve bu verilerin yükünü bağlı bir eylem gerçekleştiren veri akışı modelini bazı durumlarda, örneğin, uygundur.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuza başlamadan önce aşağıdaki belgeleri okuyun:  
@@ -38,77 +38,77 @@ Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulam
   
 - [Nasıl yapılır: İleti Bloğu Filtresini Kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
   
-##  <a name="top"></a> Bölümler  
- Bu kılavuz aşağıdaki bölümleri içerir:  
+##  <a name="top"></a> Bölümleri  
+ Bu izlenecek yol aşağıdaki bölümleri içerir:  
   
 - [Temel denetim akışı Aracısı oluşturma](#control-flow)  
   
-- [Temel veri akışı Aracısı oluşturma](#dataflow)  
+- [Temel bir veri akışı Aracısı oluşturma](#dataflow)  
   
-- [İleti günlüğe kaydetme aracı oluşturma](#logging)  
+- [İleti günlüğü Aracısı oluşturma](#logging)  
   
 ##  <a name="control-flow"></a> Temel denetim akışı Aracısı oluşturma  
- Tanımlar aşağıdaki örneği göz önünde bulundurun `control_flow_agent` sınıfı. `control_flow_agent` Üç ileti arabellek sınıfı davranır: bir giriş arabelleği ve iki arabellekleri çıktı. `run` Yöntemi döngü kaynak ileti arabelleği okur ve program yürütme akışını yönlendirmek için bir koşullu ifade kullanır. Aracı sıfır, negatif değerleri için bir sayaç artırılır ve sıfır olmayan pozitif değerler için başka bir sayaç artırılır. Aracı sentinel değerin sıfır aldıktan sonra çıktı ileti arabelleklerinin sayaçların değerleri gönderir. `negatives` Ve `positives` yöntemleri pozitif ve negatif değerleri sayar Aracıdan okumak uygulama etkinleştir.  
+ Tanımlar aşağıdaki örneği inceleyin `control_flow_agent` sınıfı. `control_flow_agent` Üç ileti arabellek sınıfı davranır: bir giriş arabellek ve iki arabellek çıktı. `run` Yöntemi döngü içinde kaynak ileti arabelleği okur ve, program yürütmenin akışını yönlendirmek için bir koşullu ifade kullanır. Aracı, sıfır olmayan, negatif değerler için bir sayaç artırılır ve sıfır olmayan pozitif değerler için başka bir sayaç artırılır. Aracısı sentinel değeri sıfır aldıktan sonra çıkış ileti arabellekleri için sayaç değerlerini gönderir. `negatives` Ve `positives` yöntemleri aracı sayısı negatif ve pozitif değerleri okumak uygulamayı etkinleştirin.  
   
  [!code-cpp[concrt-dataflow-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_1.cpp)]  
   
- Bu örnek bir aracıyı denetim akışı temel kullanımını yapar ancak denetim akış tabanlı programlama seri yapısını gösterir. Birden çok ileti giriş iletisi arabellekte kullanılabilir olsa bile her ileti ardışık olarak işlenmesi gerekir. Veri akışı modelini hem dalları eşzamanlı olarak değerlendirmek için koşullu deyiminin sağlar. Veri akışı modelini kullanılabilir hale geldiğinde, verilerde işlem yapmak daha karmaşık Mesajlaşma ağlar oluşturmanızı sağlar.  
+ Bu örnek bir aracıyı denetim akışı temel kullanımını yapar ancak denetim akış tabanlı programlama seri yapısını gösterir. Birden çok ileti giriş iletisi arabellekteki kullanılabilir olsa bile her ileti ardışık olarak işlenmesi gerekir. Veri akışı modelini, her iki dalda eşzamanlı olarak değerlendirmek için koşullu deyimin sağlar. Veri akışı modelini, kullanılabilir olduğunda, veri üzerinde oynama yapmak daha karmaşık bir Mesajlaşma ağlar oluşturmanıza olanak sağlar.  
   
  [[Üst](#top)]  
   
-##  <a name="dataflow"></a> Temel veri akışı Aracısı oluşturma  
+##  <a name="dataflow"></a> Temel bir veri akışı Aracısı oluşturma  
  Bu bölümde nasıl dönüştürüleceğini gösterir `control_flow_agent` aynı görevi gerçekleştirmek için veri akışı modelini kullanmak için sınıf.  
   
- Veri akışı Aracısı her biri belirli bir amaca hizmet eder ağ ileti arabelleklerinin oluşturarak çalışır. Belirli ileti blokları kabul edin veya reddedin yük temel alınarak bir ileti için bir filtre işlevini kullanın. Filter işlevi bir ileti bloğu yalnızca belirli değerlerin almasını sağlar.  
+ Veri akışı Aracısı, her biri belirli bir amaca hizmet veren bir ağ ileti arabelleklerinin oluşturarak çalışır. Belirli bir ileti blokları, kabul etme veya reddetme yük boyutuna göre bir ileti için bir filtre işlevi kullanın. Bir filtre işlevi, bir ileti bloğu yalnızca belirli değerleri almasını sağlar.  
   
 #### <a name="to-convert-the-control-flow-agent-to-a-dataflow-agent"></a>Denetim akışı aracısını bir veri akışı aracısına dönüştürmek için  
   
-1.  Gövdesini kopyalama `control_flow_agent` başka bir sınıf sınıfına `dataflow_agent`. Alternatif olarak, adlandırabilirsiniz `control_flow_agent` sınıfı.  
+1.  Gövdesi kopyalama `control_flow_agent` başka bir sınıf sınıfına `dataflow_agent`. Alternatif olarak, adlandırabilirsiniz `control_flow_agent` sınıfı.  
   
-2.  Çağıran döngü gövdesine kaldırmak `receive` gelen `run` yöntemi.  
+2.  Çağıran döngünün gövdesini kaldırın `receive` gelen `run` yöntemi.  
   
  [!code-cpp[concrt-dataflow-agent#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_2.cpp)]  
   
-3.  İçinde `run` değişkenleri başlatma sonrasında yöntemi `negative_count` ve `positive_count`, ekleme bir `countdown_event` etkin işlemleri sayısını izler nesnesi.  
+3.  İçinde `run` değişkenlerin başlatmadan sonra bir yöntem `negative_count` ve `positive_count`, ekleme bir `countdown_event` etkin işlemleri sayısı izleyen bir nesne.  
   
  [!code-cpp[concrt-dataflow-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_3.cpp)]  
   
-     `countdown_event` Sınıfı, bu konunun devamında gösterilir.  
+     `countdown_event` Sınıfı bu konunun ilerleyen bölümlerinde gösterilmektedir.  
   
-4.  İleti alacak arabellek nesneleri veri akışı ağ oluşturun.  
+4.  İleti veri akışı ağdaki katılacak olan bir arabellek nesneleri oluşturun.  
   
  [!code-cpp[concrt-dataflow-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_4.cpp)]  
   
-5.  Bir ağ oluşturmak için ileti arabelleklerinin bağlayın.  
+5.  Bir ağ oluşturmak için mesaj arabellekleri bağlanın.  
   
  [!code-cpp[concrt-dataflow-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_5.cpp)]  
   
-6.  Bekle `event` ve `countdown event` ayarlanacak nesneleri. Bu olaylar, aracı sentinel değer aldı ve tüm işlemlerin tamamlandığından emin işaret eder.  
+6.  Bekle `event` ve `countdown event` nesneleri ayarlanmalıdır. Bu olaylar Aracısı sentinel değeri aldığını ve tüm işlemlerini tamamladıktan sinyal.  
   
  [!code-cpp[concrt-dataflow-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_6.cpp)]  
   
- Aşağıdaki diyagramda tam veri akışı ağ gösterilmektedir `dataflow_agent` sınıfı:  
+ Eksiksiz bir veri akışı ağı için aşağıdaki diyagramda gösterilmiştir `dataflow_agent` sınıfı:  
   
  ![Veri akışı ağ](../../parallel/concrt/media/concrt_dataflow.png "concrt_dataflow")  
   
- Aşağıdaki tabloda ağ üyeleri açıklanmaktadır.  
+ Aşağıdaki tabloda, ağ üyelerini açıklar.  
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|`increment_active`|A [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) etkin olay sayaç artırılır ve ağın geri kalanı için giriş değeri aktaran nesnesi.|  
-|`negatives`, `positives`|[CONCURRENCY::call](../../parallel/concrt/reference/call-class.md) etkin olay sayaç numaraları ve azaltır sayısı Artır nesneleri. Negatif sayılar veya pozitif sayıları kabul etmek için bir filtre her nesneleri kullanın.|  
-|`sentinel`|A [concurrency::call](../../parallel/concrt/reference/call-class.md) yalnızca sentinel değeri sıfır azaltır ve etkin olay sayaç kabul eden nesne.|  
-|`connector`|A [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) kaynak ileti arabelleği iç ağa bağlanır nesnesi.|  
+|`increment_active`|A [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) nesnesini active olay sayacını artırır ve ağın geri kalanı için giriş değeri geçirir.|  
+|`negatives`, `positives`|[CONCURRENCY::call](../../parallel/concrt/reference/call-class.md) etkin olay sayaç numaraları ve azaltır sayısı artan nesneleri. Her nesne bir filtre negatif sayılar ya da pozitif sayıları kabul etmek için kullanın.|  
+|`sentinel`|A [concurrency::call](../../parallel/concrt/reference/call-class.md) sentinel değeri sıfır azaltır ve yalnızca bir etkin olay sayacı kabul eden bir nesne.|  
+|`connector`|A [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) kaynak ileti arabelleği iç ağa bağlanan bir nesne.|  
   
- Çünkü `run` yöntemi, ayrı bir iş parçacığı üzerinde çağrılır, ağın tam olarak bağlı önce başka bir iş parçacığı ağa iletileri gönderebilir. `_source` Veri üyesi olan bir `unbounded_buffer` aracı uygulamaya gönderilen tüm giriş arabelleği nesnesi. Tüm giriş iletileri ağ işler, aracı öncelikle iç ağ düğümlerinin bağlar ve o ağ başlangıcı bağlar emin olmak için `connector`, `_source` veri üyesi. Bu ağ biçimlendirilmiş olarak iletileri işlenmedi olduğunu güvence altına alır.  
+ Çünkü `run` yöntemi, ayrı bir iş parçacığında çağrıldığında, tam olarak bir ağa bağlı önce diğer iş parçacıklarını ağa iletileri gönderebilir. `_source` Veri üyesi olan bir `unbounded_buffer` aracıya bir uygulamadan gönderilen tüm giriş arabelleği nesne. Ağ giriş tüm iletileri işlediğinden, aracı öncelikle iç ağ düğümlerine bağlantılar ve daha sonra bu ağ başlangıcını bağlar emin olmak için `connector`, `_source` veri üyesi. Bu, ağ biçimlendirilmiş olarak'ın iletileri işlenmez garanti eder.  
   
- Bu örnekte ağ üzerinde veri akışı dayandığından, yerine denetim akışı üzerinde ağ aracıya her giriş değeri işleme sona erdi ve sentinel düğüm değerini aldı iletişim kurması gerekir. Bu örnekte bir `countdown_event` tüm giriş değerlerini işlenen sinyal nesnesine ve [concurrency::event](../../parallel/concrt/reference/event-class.md) sentinel düğüm değerini aldığını gösteren nesne. `countdown_event` Sınıfını kullanan bir `event` bir sayaç değeri sıfır ulaştığında sinyal nesnesi. Olan bir değer alışında veri akışı ağ head sayaç artırılır. Ağ azaltır terminal her düğümünün giriş değeri işledikten sonra sayacı. Veri akışı ağ aracısı oluşturur sonra ayarlamak sentinel düğümü için bekleyeceği `event` nesne ve `countdown_event` kendi sayaç sıfır ulaştı sinyal nesne.  
+ Bu örnekte ağ veri akışı üzerinde olduğundan, yerine denetim akışı üzerinde ağ aracıya her giriş değeri işlem sona erdi ve sentinel düğümün değerini aldığını iletişim kurması gerekir. Bu örnekte bir `countdown_event` tüm giriş değerlerini işlendikten sinyal nesnesine ve [concurrency::event](../../parallel/concrt/reference/event-class.md) sentinel düğümün değerini aldığını gösteren nesne. `countdown_event` Sınıfını kullanan bir `event` sayaç değeri sıfır ulaştığında göstermek için nesne. BT'nin bir değer alır. her zaman veri akışı ağ Başkanı sayaç artırılır. Terminal her düğüm ağ azaltır, giriş değeri işledikten sonra sayacı. Aracı veri akışı ağ forms sonra ayarlanacak sentinel düğümünü bekler `event` nesne ve `countdown_event` kendi sayaç sıfır ulaştı göstermek için nesne.  
   
- Aşağıdaki örnekte gösterildiği `control_flow_agent`, `dataflow_agent`, ve `countdown_event` sınıfları. `wmain` İşlev oluşturur bir `control_flow_agent` ve `dataflow_agent` nesne ve kullandığı `send_values` aracılara rastgele değerler dizisini göndermek için işlevi.  
+ Aşağıdaki örnekte gösterildiği `control_flow_agent`, `dataflow_agent`, ve `countdown_event` sınıfları. `wmain` İşlevi oluşturur bir `control_flow_agent` ve `dataflow_agent` nesne ve kullandığı `send_values` aracıları için rastgele değerler bir dizi göndermek için işlevi.  
   
  [!code-cpp[concrt-dataflow-agent#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_7.cpp)]  
   
- Bu örnekte aşağıdaki örnek çıkışı üretir:  
+ Bu örnek, örnek aşağıdaki çıktıyı üretir:  
   
 ```Output  
 Control-flow agent:  
@@ -120,24 +120,24 @@ There are 499477 positive numbers.
 ```  
   
 ### <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `dataflow-agent.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
+ Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `dataflow-agent.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe /EHsc veri akışı-agent.cpp**  
+ **cl.exe/ehsc veri akışı-agent.cpp**  
   
  [[Üst](#top)]  
   
-##  <a name="logging"></a> İleti günlüğe kaydetme aracı oluşturma  
- Aşağıdaki örnekte gösterildiği `log_agent` benzer sınıfı `dataflow_agent` sınıfı. `log_agent` Sınıfı zaman uyumsuz günlük aracıyı yazma iletiler bir dosyaya ve konsola oturum uygular. `log_agent` Sınıfı olarak bilgi, uyarı veya hata kategorilere ayırmak uygulama sağlar. Ayrıca, her günlük kategori bir dosya, konsol veya her ikisini de mi yazılacağını belirtmek uygulama sağlar. Bu örnekte tüm günlük iletileri bir dosyaya ve yalnızca hata iletilerini konsola yazar.  
+##  <a name="logging"></a> İleti günlüğü Aracısı oluşturma  
+ Aşağıdaki örnekte gösterildiği `log_agent` benzer sınıfı `dataflow_agent` sınıfı. `log_agent` Sınıfı zaman uyumsuz günlük kaydı aracıyı, bir dosyaya ve konsola yazar iletileri günlüğe uygular. `log_agent` Sınıfı olarak bilgilendirme iletileri, uyarı veya hata kategorilere ayırmak bir uygulama sağlar. Ayrıca, her günlük kategorisi bir dosya, konsolu veya her ikisi de yazılmış belirtmek bir uygulama sağlar. Bu örnekte, tüm günlük iletileri bir dosyaya ve yalnızca hata iletileri konsola yazar.  
   
  [!code-cpp[concrt-log-filter#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_8.cpp)]  
   
- Bu örnekte aşağıdaki çıktıyı konsola yazar.  
+ Bu örnek aşağıdaki çıktıyı konsola yazar.  
   
 ```Output  
 error: This is a sample error message.  
 ```  
   
- Bu örnek ayrıca aşağıdaki metni içeren log.txt dosyasını üretir.  
+ Bu örnek ayrıca şu metni içeren log.txt dosyası üretir.  
   
 ```Output  
 info: ===Logging started.=== 
@@ -147,9 +147,9 @@ info: ===Logging finished.===
 ```  
   
 ### <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `log-filter.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
+ Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `log-filter.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe /EHsc günlük-filter.cpp**  
+ **cl.exe/ehsc log-filter.cpp**  
   
  [[Üst](#top)]  
   

@@ -16,21 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19a43fb9d79c63637b2bff9a27661a9f848ef6dc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 23e86de5ebab3f99c7d98e502e280b5defb51e10
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33284205"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464498"
 ---
 # <a name="compiler-warning-level-1-c4788"></a>Derleyici Uyarısı (düzey 1) C4788
-'tanımlayıcısı': tanımlayıcısı 'numara' karakter kesildi  
+'identifier': tanımlayıcı 'number' karakter olarak kesildi  
   
- Derleyici bir işlev adı için izin verilen uzunluk sınırını kısıtlar. Derleyici funclets EH/SEH kodu oluşturduğunda, bazı metinleri işlevi adıyla eklenerek funclet adı oluşturur, örneğin "__catch", "\__unwind", veya başka bir dize.  
+ Derleyici, bir işlev adı için izin verilen uzunluk sınırını kısıtlar. Derleyici funclets EH/SEH kodu oluşturduğunda, bazı metinleri işlevi adıyla eklenerek funclet'inde adı oluşturur, örneğin "__catch", "\__unwind", veya başka bir dize.  
   
- Sonuçta elde edilen funclet adı çok uzun olabilir ve derleyici kesme ve C4788 oluşturur.  
+ Sonuçta elde edilen funclet'inde adı çok uzun olabilir ve derleyici kesme ve C4788 oluşturur.  
   
- Bu uyarıyı çözmek için özgün işlevi adını kısaltın. İşlevi C++ şablonu işlev veya yöntem ise, bir typedef adının bir kısmını için kullanın. Örneğin:  
+ Bu uyarıyı çözmek için orijinal işlev adını kısaltın. İşlevi, bir C++ şablon işlevi veya yöntemi ise, adın bir bölümü için bir typedef kullanın. Örneğin:  
   
 ```  
 C1<x, y, z<T>>::C2<a,b,c>::f  
@@ -43,4 +43,4 @@ typedef C1<x, y, z<T>>::C2<a,b,c> new_class ;
 new_class::f  
 ```  
   
- Bu uyarı yalnızca oluşan [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] derleyici.
+ Bu uyarı yalnızca içinde x64 oluşur derleyici.

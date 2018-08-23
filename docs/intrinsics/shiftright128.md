@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 393138916bf29fd9adb5dceb0b8612b576b84e76
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0aa5b4028863ff31084e8d01892a86b990de51fb
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339728"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464877"
 ---
 # <a name="shiftright128"></a>__shiftright128
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İki 64-bit miktarlar olarak temsil 128 bitlik bir miktar, kaydırır `LowPart` ve `HighPart`, sağ tarafından belirtilen bit sayısı tarafından `Shift` ve düşük 64 bit sonucunun döndürür.  
+ İki 64-bit miktarlar olarak temsil edilen bir 128-bit miktarı kaydırır `LowPart` ve `HighPart`, sağ tarafından belirtilen bit sayısı `Shift` ve düşük 64 bit sonuç döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,32 +40,32 @@ unsigned __int64 __shiftright128(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `LowPart`  
- Düşük 64 bit kaydırmak için 128-bit miktarı.  
+ Kaydırmak için 128 bit miktarı düşük 64 bit.  
   
  [in] `HighPart`  
- Yüksek 64 bit kaydırmak için 128-bit miktarı.  
+ Yüksek 64 bit kaydırmak için 128 bit miktarı.  
   
  [in] `Shift`  
  Kaydırılacak bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Sonucun düşük 64 bit.  
+ Düşük 64 bit sonuç.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__shiftright128`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__shiftright128`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Shift` Değerdir her zaman 64 modulo bu nedenle, örneğin, çağırırsanız `__shiftright128(0, 1, 64)`, işlevi üst kısım kayar `0` BITS sağ ve düşük bir parçası dönmek `0` ve `1` aksi beklenen şekilde.  
+ `Shift` Değerdir her zaman 64 bu nedenle, örneğin, çağırırsanız `__shiftright128(0, 1, 64)`, işlev yüksek bölümü kayar `0` BITS sağ ve düşük bir kısmını döndürür `0` ve `1` aksi beklenebilir gibi.  
   
 ## <a name="example"></a>Örnek  
- Bir örnek için bkz: [__shiftleft128](../intrinsics/shiftleft128.md).  
+ Bir örnek için bkz. [__shiftleft128](../intrinsics/shiftleft128.md).  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__shiftleft128](../intrinsics/shiftleft128.md)   

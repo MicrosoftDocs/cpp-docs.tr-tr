@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 802e3845e72516e6dd0f09fd2a350a65565cd502
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 659da66ea74088247a9eb46ae25f9920050719a1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326930"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464677"
 ---
 # <a name="movsd"></a>__movsd
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Taşıma bir dize oluşturur (`rep movsd`) yönerge.  
   
@@ -45,23 +45,23 @@ void __movsd(
  İşlemin hedefi.  
   
  [in] `Source`  
- İşlemi kaynak.  
+ İşlem kaynağı.  
   
  [in] `Count`  
- Kopyalamak için doublewords sayısı.  
+ Kopyalanacak doublewords sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__movsd`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsd`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonuç ilk `Count` tarafından doublewords işaret için `Source` kopyalanır `Dest` dize.  
+ Sonuç ilk `Count` doublewords tarafından işaret edilen `Source` kopyalanır `Dest` dize.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -90,7 +90,7 @@ int main()
 950 850 750 650 550 450 350 250 150 50   
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

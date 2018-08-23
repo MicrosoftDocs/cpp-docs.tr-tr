@@ -19,36 +19,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 01d08fb35a1e954aad07153f63ad3ed34282570d
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 8208a372989fac5fa7c7b0c13b83eb27a4d1444b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337852"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464676"
 ---
 # <a name="session-object-interfaces"></a>Oturum Nesnesi Arabirimleri
 Aşağıdaki tabloda, bir oturum nesnesi için OLE DB tarafından tanımlanan zorunlu ve isteğe bağlı arabirimler gösterilir.  
   
 |Arabirim|Gerekli mi?|OLE DB Şablonları tarafından uygulanır?|  
 |---------------|---------------|--------------------------------------|  
-|[IGetDataSource](https://msdn.microsoft.com/library/ms709721.aspx)|Zorunlu|Evet|  
-|[IOpenRowset](https://msdn.microsoft.com/library/ms716946.aspx)|Zorunlu|Evet|  
-|[ISessionProperties](https://msdn.microsoft.com/library/ms713721.aspx)|Zorunlu|Evet|  
-|[IAlterIndex](https://msdn.microsoft.com/library/ms714943.aspx)|İsteğe Bağlı|Hayır|  
-|[IAlterTable](https://msdn.microsoft.com/library/ms719764.aspx)|İsteğe Bağlı|Hayır|  
-|[IBindResource](https://msdn.microsoft.com/library/ms714936.aspx)|İsteğe Bağlı|Hayır|  
-|[ICreateRow](https://msdn.microsoft.com/library/ms716832.aspx)|İsteğe Bağlı|Hayır|  
-|[IDBCreateCommand](https://msdn.microsoft.com/library/ms711625.aspx)|İsteğe Bağlı|Evet|  
-|[IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx)|İsteğe Bağlı|Evet|  
-|[IIndexDefinition](https://msdn.microsoft.com/library/ms711593.aspx)|İsteğe Bağlı|Hayır|  
-|[ISupportErrorInfo](https://msdn.microsoft.com/library/ms715816.aspx)|İsteğe Bağlı|Evet|  
-|[ITableCreation](https://msdn.microsoft.com/library/ms713639.aspx)|İsteğe Bağlı|Hayır|  
-|[ITableDefinition](https://msdn.microsoft.com/library/ms714277.aspx)|İsteğe Bağlı|Hayır|  
-|[ITableDefinitionWithConstraints](https://msdn.microsoft.com/library/ms720947.aspx)|İsteğe Bağlı|Hayır|  
-|[ITransaction](https://msdn.microsoft.com/library/ms723053.aspx)|İsteğe Bağlı|Hayır|  
-|[ITransactionJoin](https://msdn.microsoft.com/library/ms718071.aspx)|İsteğe Bağlı|Hayır|  
-|[ITransactionLocal](https://msdn.microsoft.com/library/ms714893.aspx)|İsteğe Bağlı|Hayır|  
-|[ITransactionObject](https://msdn.microsoft.com/library/ms713659.aspx)|İsteğe Bağlı|Hayır|  
+|[IGetDataSource](/previous-versions/windows/desktop/ms709721\(v=vs.85\))|Zorunlu|Evet|  
+|[IOpenRowset](/previous-versions/windows/desktop/ms716946\(v=vs.85\))|Zorunlu|Evet|  
+|[ISessionProperties](/previous-versions/windows/desktop/ms713721\(v=vs.85\))|Zorunlu|Evet|  
+|[IAlterIndex](/previous-versions/windows/desktop/ms714943\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[IAlterTable](/previous-versions/windows/desktop/ms719764\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[IBindResource](/previous-versions/windows/desktop/ms714936\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[ICreateRow](/previous-versions/windows/desktop/ms716832\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[IDBCreateCommand](/previous-versions/windows/desktop/ms711625\(v=vs.85\))|İsteğe Bağlı|Evet|  
+|[IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\))|İsteğe Bağlı|Evet|  
+|[IIndexDefinition](/previous-versions/windows/desktop/ms711593\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|İsteğe Bağlı|Evet|  
+|[ITableCreation](/previous-versions/windows/desktop/ms713639\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[ITableDefinition](/previous-versions/windows/desktop/ms714277\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[ITableDefinitionWithConstraints](/previous-versions/windows/desktop/ms720947\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[ITransaction](/previous-versions/windows/desktop/ms723053\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[ITransactionJoin](/previous-versions/windows/desktop/ms718071\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[ITransactionLocal](/previous-versions/windows/desktop/ms714893\(v=vs.85\))|İsteğe Bağlı|Hayır|  
+|[ITransactionObject](/previous-versions/windows/desktop/ms713659\(v=vs.85\))|İsteğe Bağlı|Hayır|  
   
  Oturum nesnesi bir satır kümesi nesnesi oluşturur. Oturum Sağlayıcı komutları destekliyorsa, ayrıca bir komut nesnesi oluşturur. (`CCommand`, OLE DB uygulama `TCommand`). Komut nesnesi uygulayan `ICommand` arabirimi ve kullanımları `ICommand::Execute` satır kümesinde, aşağıdaki resimde gösterildiği gibi komutları yürütmek için yöntemi.  
   

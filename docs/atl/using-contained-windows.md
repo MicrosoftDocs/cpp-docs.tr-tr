@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc17925e36e0e224a657177d0aa18912c564efed
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 64a2f9d5d296e28b4b773e072edc90e1b339feae
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850806"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466168"
 ---
 # <a name="using-contained-windows"></a>Kapsanan bir Windows kullanma
 ATL ile kapsanan pencereler uygulayan [CContainedWindowT](../atl/reference/ccontainedwindowt-class.md). Bir kapsanan pencere iletilerini bunları kendi sınıfında işleme yerine bir kapsayıcı nesnesi için temsilci bir pencereyi temsil eder.  
@@ -40,7 +40,7 @@ ATL ile kapsanan pencereler uygulayan [CContainedWindowT](../atl/reference/ccont
   
  [!code-cpp[NVC_ATL_Windowing#67](../atl/codesnippet/cpp/using-contained-windows_1.h)]  
   
- Kapsanan pencereler hakkında daha fazla bilgi için bkz: [SUBEDIT](../visual-cpp-samples.md) örnek.  
+ Kapsanan pencereler hakkında daha fazla bilgi için bkz: [SUBEDIT](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) örnek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Pencere sınıfları](../atl/atl-window-classes.md)

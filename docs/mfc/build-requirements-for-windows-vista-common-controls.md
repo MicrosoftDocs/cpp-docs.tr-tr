@@ -15,36 +15,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8f167ac560fd8e2109c149f30841ecbe3c44fc8
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: d8d3e5c8cd6b4a0876d0cac8e1fb3c7e87eed9cc
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930982"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466009"
 ---
 # <a name="build-requirements-for-windows-vista-common-controls"></a>Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
-Microsoft Foundation Class (MFC) kitaplığı Windows ortak denetimleri sürüm 6.1 destekler. Ortak Denetimler içinde yer alan [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ve kitaplık dahil [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)]. Kitaplığı, mevcut sınıfları ve yeni sınıflar geliştiren yeni ve destekleyen yöntemleri sağlar [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ortak denetimler. Uygulamanızı oluşturma sırasında aşağıdaki bölümlerde açıklanan derleme ve Geçiş gereksinimleri karşılamalıdır.  
+Microsoft Foundation Class (MFC) kitaplığı, Windows ortak denetimleri sürüm 6.1 destekler. Windows Vista ortak denetimleri dahildir ve Kitaplığı Visual Studio SDK içinde dahil edilir. Kitaplığı, mevcut sınıfları ve yeni sınıflar geliştiren yeni ve Windows Vista ortak denetimleri destekleyen yöntemleri sağlar. Uygulamanızı oluştururken, aşağıdaki bölümlerde açıklanan derleme ve Geçiş gereksinimleri karşılamalıdır.  
   
 ## <a name="compilation-requirements"></a>Derleme gereksinimleri  
   
-### <a name="supported-versions"></a>Desteklenen sürümleri  
- Bazı yeni sınıflar ve yöntemler yalnızca Destek [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ve daha sonra başka yöntemler de önceki işletim sistemlerinde desteklerken. Bir notta `Requirements` her yöntemi konu bölümü belirtir, en düşük işletim sistemi gereklidir [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)].  
+### <a name="supported-versions"></a>Desteklenen sürümler  
+ Bazı yeni sınıflar ve yöntemler yalnızca Windows Vista desteği ve daha sonra while diğer yöntemleri, önceki işletim sistemlerini de destekler. Bir Not `Requirements` her yöntemi konudaki zaman gereken en düşük işletim sistemi Windows Vista belirtir.  
   
- Bilgisayarınızı çalışmaz olsa bile [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)], üzerinde çalışacağı bir MFC uygulaması derleme [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] sürüm 6.1 MFC üstbilgi dosyaları bilgisayarınıza varsa. Ancak, ortak için özel tasarlanmış denetimleri [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] yalnızca bu sistemde çalıştırmak ve önceki işletim sistemleri tarafından göz ardı edilir.  
+ Bilgisayarınızı Windows Vista çalışmıyor olsa bile bilgisayarınızda sürüm 6.1 MFC üstbilgi dosyalarındaki varsa, Windows Vista üzerinde çalışacak bir MFC uygulaması oluşturabilirsiniz. Ancak, Windows Vista için özellikle tasarlanmış ortak denetimleri, yalnızca bu sistemde çalışan ve önceki işletim sistemleri tarafından göz ardı edilir.  
   
 ### <a name="supported-character-sets"></a>Desteklenen karakter kümeleri  
- Yeni Windows ortak denetimleri yalnızca Unicode karakter kümesini ve ANSI karakter kümesini destekler. Komut satırında uygulamanızı, aşağıdaki tanımla her ikisi de kullanın (/ D) Unicode temel olarak belirtmek için derleyici seçenekleri karakter kümesi:  
+ Yeni Windows ortak denetimleri, yalnızca Unicode karakter kümesi ve ANSI karakter kümesini destekler. Uygulamanızı komut satırında, aşağıdaki tanımla her ikisi de kullanın (/ D) derleyici seçenekleri Unicode temel olarak belirtmek için karakter kümesi:  
   
 ```  
 /D_UNICODE /DUNICODE  
 ```  
   
- Visual Studio tümleşik geliştirme ortamı (IDE) içinde uygulamanızı belirtebilmeniz **Unicode karakter kümesi** seçeneği **karakter kümesi** özelliğinde **genel**  Proje Özellikleri'nin düğümü.  
+ Visual Studio tümleşik geliştirme ortamında (IDE) uygulamanızı belirtebilmeniz **Unicode karakter kümesi** seçeneği **karakter kümesi** özelliğinde **genel**  Proje Özellikleri'nin düğümü.  
   
- MFC için bazı yöntemler ANSI sürümü kullanımdan kaldırıldı Windows ortak denetimleri sürüm 6.1 başlatılıyor. Daha fazla bilgi için bkz: [kullanım dışı ANSI API'ları](../mfc/deprecated-ansi-apis.md).  
+ Çeşitli MFC yöntemler ANSI sürümü kullanımdan kaldırıldı Windows ortak denetimleri sürüm 6.1 başlatılıyor. Daha fazla bilgi için [kullanım dışı ANSI API'ları](../mfc/deprecated-ansi-apis.md).  
   
 ## <a name="migration-requirements"></a>Geçiş gereksinimleri  
- Windows ortak denetimleri sürüm 6.1 kullanan yeni bir MFC uygulaması oluşturmak için Visual Studio IDE kullanırsanız, IDE uygun bildiriminde otomatik olarak bildirir. Ancak, Visual Studio'nun önceki bir sürümünün varolan bir MFC uygulamasına geçirmek ve yeni ortak denetimleri kullanmak istiyorsanız, IDE otomatik olarak uygulamanızı yükseltmek için bildirim bilgi sağlamaz. Bunun yerine, el ile aşağıdaki kaynak kodunda eklemeniz gerekir, **stdafx.h** dosyası:  
+ Windows ortak denetimleri sürüm 6.1 kullanan yeni bir MFC uygulaması oluşturmak için Visual Studio IDE kullanırsanız, IDE uygun bir bildirimi otomatik olarak bildirir. Ancak, Visual Studio'nun önceki bir sürümden varolan bir MFC uygulamasına geçirme ve yeni ortak denetimleri kullanmak istediğiniz, IDE otomatik olarak uygulamanızı yükseltmek için bildirim bilgileri sağlamaz. Bunun yerine, el ile aşağıdaki kaynak kodunda eklemeniz gerekir, **stdafx.h** dosyası:  
   
 ```  
 #ifdef UNICODE  

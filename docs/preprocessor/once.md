@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b0e0b2b3667d4a33709caa643e4d26ed70b2990
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b3ce387b4b9748c7fb46a419cbc8738e2598c5ab
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912933"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466157"
 ---
 # <a name="once"></a>once
 Bir kaynak kodu dosyasını derlerken dosyanın (açık) yalnızca bir kez derleyici tarafından dahil olacağını belirtir.  
@@ -31,26 +31,24 @@ Bir kaynak kodu dosyasını derlerken dosyanın (açık) yalnızca bir kez derle
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma once  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanımını `#pragma once` derleyici değil açın ve sonra ilk dosyayı okuma gibi yapı kez azaltabilirsiniz # çeviri biriminde dosyasının include. Bu olarak adlandırılır *en iyi duruma getirme birden çok dahil*. Benzer bir etkiye sahiptir *# koruma include* dosyasının içeriğini birden çok dahil edilmesi önlemek için önişlemci makrosu tanımları kullanır deyim. Bu ayrıca ihlalleri önlemeye yardımcı olur *bir tanım kuralını*— tüm şablonları, türü, İşlevler ve nesneler birden fazla tanım kodunuzda sahip gereksinimi.  
+ 
+Kullanımını `#pragma once` derleyici değil açın ve sonra ilk dosyayı okuma gibi derleme zamanlarını azaltabilir `#include` çeviri biriminin dosya. Bu olarak adlandırılır *iyileştirme birden çok dahil*. Benzer şekilde etkiye sahiptir `#include guard` birden çok eklenmesi, dosyanın içeriğini engellemek için makro önişlemci tanımları kullanan deyimidir. Bu ayrıca ihlallerini önlemeye yardımcı olur *tek tanım kuralı*— tüm şablonları, türler, İşlevler ve nesneler, kodunuzda birden fazla tanıma sahip gereksinim.  
   
- Örneğin:  
+Örneğin:  
   
 ```  
 // header.h  
 #pragma once  
-// Code placed here is included only once per translation unit  
-  
+// Code placed here is included only once per translation unit    
 ```  
   
- Öneririz `#pragma once` önişlemci sembolü ile genel ad alanı pollute değil çünkü yönergesi için yeni kod. Daha az yazarak gerektirir, daha az dağıtıyor ve sembol çakışmalarına neden olamaz — farklı üstbilgi dosyaları koruma değeri olarak aynı önişlemci sembolü kullandığınızda hatalardır. C++ standart bir parçası değil, ancak birçok ortak derleyicileri tarafından temelinizi uygulanır.  
+Öneririz `#pragma once` yeni kod için yönerge önişlemci sembolü ile genel ad pollute değil çünkü. Daha az yazarak gerektirir, daha az dağıtıyor ve sembol çakışması neden — farklı bir üst bilgi dosyaları koruma değeri olarak aynı önişlemci sembolü kullandığınızda ortaya çıkan hatalar. C++ standardının bir parçası değildir, ancak temelinizi birkaç ortak derleyiciler tarafından uygulanır.  
   
- Her ikisi de kullanmak için herhangi bir avantaj sağlamaz # koruma deyim include ve `#pragma once` aynı dosyada. Derleyicisi tanır # koruma deyim ve birden çok dahil en iyi duruma getirme aynı şekilde uygular include `#pragma once` açıklama olmayan kod veya önişlemci yönergesi önce veya sonra deyim standart biçiminde geliyorsa yönergesi:  
+Her ikisi de kullanmak için herhangi bir avantaj sağlamaz # guard deyim include ve `#pragma once` aynı dosyada. Derleyici tanır # guard deyimidir ve birden çok dahil en iyi duruma getirme aynı şekilde uygular include `#pragma once` açıklaması olmayan kod veya önişlemci yönergesi önce veya sonra deyim standart biçiminde geliyorsa yönergesi:  
   
 ```  
 // header.h  
@@ -59,13 +57,13 @@ Bir kaynak kodu dosyasını derlerken dosyanın (açık) yalnızca bir kez derle
 #ifndef HEADER_H_     // equivalently, #if !defined HEADER_H_  
 #define HEADER_H_  
 // Code placed here is included only once per translation unit  
-#endif // HEADER_H_  
-  
+#endif // HEADER_H_    
 ```  
   
- Öneririz # kod uygulamayan derleyicileri taşınabilir koruma deyim include `#pragma once` varolan koduyla tutarlılığını korumak için yönergesi veya birden çok dahil en iyi duruma getirme imkansızdır. Dosya sistemi yumuşatma ya da diğer eklediğinizde bu yollar önlemek tanımlayan gelen aynı derleyici karmaşık projelerinde oluşabilir kurallı yoluyla dosyaları içerir.  
+Öneririz `#include guard` kod uygulamayan derleyicileri için taşınabilir olması gerektiğinde deyim `#pragma once` yönergesi, mevcut kodu ile tutarlılık sağlamak için veya birden çok dahil en iyi duruma getirme imkansızdır. Dosya sistemi yumuşatma ya da diğer adlı eklediğinizde bu yolları önlemek tanımlayan derleyicinin aynı karmaşık projeler içinde oluşabilir kurallı yoluyla dosyaları içerir.  
   
- Kullanma konusunda dikkatli olun `#pragma once` veya # önişlemci sembolleri etkilerini kontrol kullanmayı tasarlanmış birden çok kez dahil edilmek üzere üstbilgi dosyalarına koruma deyim include. Bu tasarım örneği için bkz: \<assert.h > Üstbilgi dosyası. Ayrıca yönetmek dikkatli olun boşa çıkarabilir eklenen dosyalar için birden fazla yol oluşturmamak için yol eklemeyi iyileştirme için her ikisini birden çok dahil # koruyucuları include ve `#pragma once`.  
+Kullanmamaya özen `#pragma once` veya `#include guard` ifadede etkilerini kontrol etmek için önişlemci sembolleri kullanarak tasarlanmış birden çok kez eklenmesi üst bilgi dosyaları. Bu tasarım örneği için bkz: \<assert.h > üst bilgi dosyası. Ayrıca yönetmek dikkatli olun yenmek eklenen dosyalar, çoklu yolları oluşturmaktan kaçınmak için yol eklemeyi iyileştirme her ikisi için de birden çok dahil `#include guard`s ve `#pragma once`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -18,29 +18,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f81347c8286dfa1f0651af43bd3134565a22aade
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 222cb7151d975219d0e92bd1270778586e89b4d3
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849502"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464639"
 ---
 # <a name="inlinerecursion"></a>inline_recursion
-Satır içi genişletme doğrudan veya karşılıklı özyinelemeli işlev çağrıları denetler.  
+Doğrudan veya karşılıklı özyinelemeli işlev çağrıları satır içi genişlemeyi denetler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma inline_recursion( [{on | off}] )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu pragma denetim işlevleri için işaretlenen kullanım [satır içi](../cpp/inline-functions-cpp.md) ve [__inline](../cpp/inline-functions-cpp.md) veya derleyici /Ob2 seçeneği altında otomatik olarak genişleyen işlevlerinin. Bu pragma kullanılmasını gerektiren bir [/Ob](../build/reference/ob-inline-function-expansion.md) derleyici seçeneği ayarı olarak 1 veya 2. İçin varsayılan duruma `inline_recursion` kapalıdır. Pragma görülen ve işlevinin tanımı etkilemez sonra bu pragma konumundaki ilk işlev çağrısı etkinleşir.  
+ 
+Olarak işaretlenmiş denetim işlevleri bu pragmayı kullanmak [satır içi](../cpp/inline-functions-cpp.md) ve [__inline](../cpp/inline-functions-cpp.md) veya derleyici altında otomatik olarak genişleyen işlevleri `/Ob2` seçeneği. Bu pragma kullanılmasını gerektiren bir [/Ob](../build/reference/ob-inline-function-expansion.md) derleyici seçeneği ayarıyla 1 veya 2. İçin varsayılan duruma **inline_recursion** kapalıdır. Pragma görüldüğünde ve işlev tanımını etkilemez sonra bu pragmayı ilk işlev çağrısında etkili olur.  
   
- `inline_recursion` Pragma denetimleri özyinelemeli işlevler nasıl genişletilir. Varsa `inline_recursion` kapalıdır ve genişletilmiş yalnızca bir kez ise satır içi işlev kendisini (doğrudan veya dolaylı olarak), işlevi çağırır. Varsa `inline_recursion` açıktır, işlevi, birden çok kez genişletildiğinde, kümesiyle değere ulaşana kadar [inline_depth](../preprocessor/inline-depth.md) pragma, tarafından tanımlanan özyinelemeli işlevler için varsayılan değer `inline_depth` pragma ya da bir kapasite sınırla .  
+**İnline_recursion** pragma denetimleri nasıl özyinelemeli işlevler genişletilir. Varsa **inline_recursion** kapalıdır ve satır içi işlev kendisi (doğrudan veya dolaylı olarak), işlev çağrıları, genişletilmiş yalnızca bir kez yapılır. Varsa **inline_recursion** açıktır, işlevi, birden çok kez genişletilir, ile ayarlanan değere ulaşana kadar [inline_depth](../preprocessor/inline-depth.md) pragması, özyinelemeli işlevler için tarafındantanımlananvarsayılandeğer`inline_depth` pragma veya bir kapasite sınırlayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
- [inline_depth](../preprocessor/inline-depth.md)   
- [/Ob (Satır İçi İşlev Genişletmesi)](../build/reference/ob-inline-function-expansion.md)
+ 
+[Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
+[inline_depth](../preprocessor/inline-depth.md)   
+[/Ob (Satır İçi İşlev Genişletmesi)](../build/reference/ob-inline-function-expansion.md)

@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62a775457d6da763a5c8426146d421a4cc958454
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: bfc64617002db0536dc3d62e70082c27b260802f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955654"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466290"
 ---
 # <a name="canimationmanagereventhandler-class"></a>CAnimationManagerEventHandler sınıfı
-Bir animasyon Yöneticisi'nin bir durum değiştiğinde animasyon API tarafından çağrılan bir geri çağırma uygular.  
+Animasyon yöneticisinin durumu değiştirildiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,18 +46,18 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAnimationManagerEventHandler::CAnimationManagerEventHandler](#canimationmanagereventhandler)|Oluşturan bir `CAnimationManagerEventHandler` nesnesi.|  
+|[CAnimationManagerEventHandler::CAnimationManagerEventHandler](#canimationmanagereventhandler)|Oluşturur bir `CAnimationManagerEventHandler` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAnimationManagerEventHandler::CreateInstance](#createinstance)|Bir örneğini oluşturur `CAnimationManagerEventHandler` nesnesi.|  
-|[CAnimationManagerEventHandler::OnManagerStatusChanged](#onmanagerstatuschanged)|Animasyon Yöneticisi durumu değiştiğinde çağrılır. (Geçersiz kılmaları `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`.)|  
-|[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|Animasyon denetleyicisi rota olayları gösteren bir işaretçi depolar.|  
+|[CAnimationManagerEventHandler::CreateInstance](#createinstance)|Örneği oluşturur `CAnimationManagerEventHandler` nesne.|  
+|[CAnimationManagerEventHandler::OnManagerStatusChanged](#onmanagerstatuschanged)|Animasyon yöneticisinin durumu değiştirildiğinde çağrılır. (Geçersiz kılmaları `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`.)|  
+|[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu olay işleyicisi oluşturulur ve CAnimationController::EnableAnimationManagerEvent çağırdığınızda IUIAnimationManager::SetManagerEventHandler yönteme geçirilen.  
+ Bu olay işleyicisi oluşturulur ve CAnimationController::EnableAnimationManagerEvent çağırdığınızda IUIAnimationManager::SetManagerEventHandler yöntemine geçirilen.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CUIAnimationCallbackBase`  
@@ -70,18 +70,18 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="canimationmanagereventhandler"></a>  CAnimationManagerEventHandler::CAnimationManagerEventHandler  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 gereklidir.  
   
- CAnimationManagerEventHandler nesnesi oluşturur.  
+ CAnimationManagerEventHandler bir nesne oluşturur.  
   
 ```  
 CAnimationManagerEventHandler();
 ```  
   
 ##  <a name="createinstance"></a>  CAnimationManagerEventHandler::CreateInstance  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 gereklidir.  
   
- CAnimationManagerEventHandler nesnesinin bir örneğini oluşturur.  
+ CAnimationManagerEventHandler nesnesinin örneğini oluşturur.  
   
 ```  
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -91,18 +91,18 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
   
 ### <a name="parameters"></a>Parametreler  
  *pAnimationController*  
- Olayları alacak animasyon denetleyici için bir işaretçi.  
+ Olayları alacaksınız animasyon denetleyicisini bir işaretçi.  
   
  *ppManagerEventHandler*  
- Çıktı. Yöntem başarılı olursa bir animasyon Yöneticisi için durum güncelleştirmeleri işleyecek COM nesnesi için bir işaretçi içeriyor.  
+ Çıktı. Yöntem başarılı olursa durum güncelleştirmeleri için animasyon yöneticisinin işleyecek bir COM nesnesine bir işaretçi içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
+ Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.  
   
 ##  <a name="onmanagerstatuschanged"></a>  CAnimationManagerEventHandler::OnManagerStatusChanged  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 gereklidir.  
   
- Animasyon Yöneticisi durumu değiştiğinde çağrılır.  
+ Animasyon yöneticisinin durumu değiştirildiğinde çağrılır.  
   
 ```  
 IFACEMETHOD(OnManagerStatusChanged)(
@@ -112,7 +112,7 @@ IFACEMETHOD(OnManagerStatusChanged)(
   
 ### <a name="parameters"></a>Parametreler  
  *newStatus*  
- Yeni durumu.  
+ Yeni durum.  
   
  *previousStatus*  
  Önceki durumu.  
@@ -121,9 +121,9 @@ IFACEMETHOD(OnManagerStatusChanged)(
  Her zaman geçerli uygulama S_OK döndürür;  
   
 ##  <a name="setanimationcontroller"></a>  CAnimationManagerEventHandler::SetAnimationController  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 gereklidir.  
   
- Animasyon denetleyicisi rota olayları gösteren bir işaretçi depolar.  
+ Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.  
   
 ```  
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -131,7 +131,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
   
 ### <a name="parameters"></a>Parametreler  
  *pAnimationController*  
- Olayları alacak animasyon denetleyici için bir işaretçi.  
+ Olayları alacaksınız animasyon denetleyicisini bir işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıflar](../../mfc/reference/mfc-classes.md)

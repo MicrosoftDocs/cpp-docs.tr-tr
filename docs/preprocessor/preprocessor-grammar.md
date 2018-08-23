@@ -1,5 +1,5 @@
 ---
-title: Ön İşlemci dil bilgisi | Microsoft Docs
+title: Ön İşlemci dilbilgisi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,97 +16,98 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d14a3e00e18a2d3ac69dd472ac4056a379ada224
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1871d1b8281f4dd74733133ede70ed80430246b3
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843372"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464471"
 ---
 # <a name="preprocessor-grammar"></a>Ön işlemci Dil Bilgisi
-**#define***tanımlayıcısı* *belirteci dize*iptal et  
+**#define***tanımlayıcı* *belirteç dizesinde*iyileştirilmiş    
   
- *#* **tanımlamak***tanımlayıcısı*[**(** *tanımlayıcısı*kabul **,** *...*  **,** *tanımlayıcısı*kabul **)**] *belirteci dize*iptal et  
+*#* **tanımlama***tanımlayıcı*[**(** *tanımlayıcı*iyileştirilmiş **,** *...*  **,** *tanımlayıcı*iyileştirilmiş **)**] *belirteç dizesinde*iyileştirilmiş    
   
- **tanımlı (***tanımlayıcısı* **)**  
+**tanımlanan (***tanımlayıcı* **)**   
   
- **tanımlanan***tanımlayıcısı*  
+**tanımlanan***tanımlayıcısı*   
   
- `#include` **"***yolu spec***"**  
+`#include` **"***path-spec***"**  
   
- `#include` **\<***yol belirtimi***>**  
+`#include` **\<***PATH-spec***>**  
   
- **#line***basamak dizisi***"** *filename* **"** iptal et      
+**#line***basamak dizisi***"** *filename* **"** iyileştirilmiş      
   
- *#* **undef***tanımlayıcısı*  
+*#* **undef***tanımlayıcısı*   
   
- **#error***belirteci dize*  
+**#error***belirteci dizesi*   
   
- **#pragma***belirteci dize*   
+**#pragma***belirteci dizesi*   
   
- *Koşullu* :  
- *IF-bölümü elif parçaları*kabul*else bölümünü*kabul*endif satır*  
+*Koşullu* :  
+*Eğer bölümü elif-parts*iyileştirilmiş*else bölümünü*iyileştirilmiş*endif satır*  
   
- *IF-bölümü* :  
- *IF-linetext*  
+*Eğer bölümü* :  
+*Eğer linetext*  
   
- *IF-line* :  
- **#if**  *constant-expression*  
+*Eğer satır içi* :  
+**#if**  *constant-expression*  
   
- **#ifdef***tanımlayıcısı*   
+**#ifdef***tanımlayıcısı*   
   
- **#ifndef***tanımlayıcısı*   
+**#ifndef***tanımlayıcısı*   
   
- *elif bölümleri* :  
- *elif satırlı metin*  
+*elif-parts* :  
+*elif-line metni*  
   
- *elif bölümleri elif satırlı metin*  
+*elif-parts elif-line metni*  
   
- *elif satır* :  
- **#elif**  *constant-expression*  
+*elif-satırı* :  
+**#elif**  *constant-expression*  
   
- *else bölümünü* :  
- *linetext başka*  
+*else bölümünü* :  
+*linetext else*  
   
- *satırı başka* :  
- `#else`  
+*başka satır* :  
+`#else`  
   
- *Satır içi endif* :  
- `#endif`  
+*Satır içi endif* :  
+`#endif`  
   
- *basamak dizisi* :  
- *Basamak*  
+*basamak dizisi* :  
+*basamak*  
   
- *basamak dizisi basamak*  
+*basamak dizisi basamak*  
   
- *basamak* : biri  
- **0 1 2 3 4 5 6 7 8 9**  
+*basamak* : biri  
+**0 1 2 3 4 5 6 7 8 9**  
   
- *belirteç dizesini* :  
- Belirteçleri dizesi  
+*belirteç dizesinde* :  
+Dize belirteçleri  
   
- *belirteç* :  
- *Anahtar sözcüğü*  
+*belirteç* :  
+*Anahtar sözcüğü*  
   
- *Tanımlayıcı*  
+*tanımlayıcı*  
   
- *sabiti*  
+*Sabit*  
   
- *operator*  
+*operator*  
   
- `punctuator`  
+`punctuator`  
   
- *Dosya adı* :  
- Geçerli işletim sistemi dosya adı  
+*filename* :  
+Geçerli işletim sistemi dosya adı  
   
- *yol spec* :  
- Yasal dosya yolu  
+*PATH-spec* :  
+Geçerli dosya yolu  
   
- *metin* :  
- Herhangi bir dizi metin  
+*metin* :  
+Metin dizisi  
   
 > [!NOTE]
->  İçinde aşağıdaki Terminal dışı Genişletilmiş [sözcük kuralları](../cpp/lexical-conventions.md) bölümünü *C++ dil başvurusu*: `constant`, `constant` - *ifadesi* , *tanımlayıcısı*, *anahtar sözcüğü*, `operator`, ve `punctuator`.  
+> İçinde aşağıdaki Terminal olmayanları Genişletilmiş [sözcük kuralları](../cpp/lexical-conventions.md) bölümünü *C++ dil başvurusu*: `constant`, `constant` - *ifadesi* , *tanımlayıcı*, *anahtar sözcüğü*, `operator`, ve `punctuator`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dilbilgisi Özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+ 
+[Dilbilgisi Özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

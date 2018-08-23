@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2280d5245292625bfc29815475eaca63d4d500bd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d51ee23ab4e4be9cf24b913cb0c4ffa325a9bbf5
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839825"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465501"
 ---
 # <a name="deprecated-cc"></a>deprecated (C/C++)
-**Kullanım dışı** gösteren bir işlev, tür veya başka bir tanımlayıcı artık bir gelecekte desteklenebilir olduğunu pragma sağlar serbest bırakma veya artık kullanılmalıdır.  
+**Kullanım dışı** pragma sağlar bir işlev, tür veya başka bir tanımlayıcı artık gelecek sürümlerde desteklenebilir olduğunu belirtmek için yayın veya artık kullanılmalıdır.  
 > [!NOTE]
-> C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman, kullanılacağı hakkında yönergeler vs Microsoft declspec veya pragma özniteliği için bkz: [C++ Standart öznitelikleri](../cpp/attributes.md) özniteliği.
+> C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman kullanan yönergeler vs özniteliği Microsoft declspec ya da pragması, bkz: [C++ Standart öznitelikleri](../cpp/attributes.md) özniteliği.
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,17 +37,17 @@ ms.locfileid: "33839825"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Derleyici tarafından belirtilen tanımlayıcı karşılaştığında bir **kullanım dışı** pragma, derleyici uyarısı sorunları [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md).   
+Derleyici tarafından belirtilen tanımlayıcı karşılaştığında bir **kullanım dışı** pragması, derleyici uyarısı verdiği [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md).   
   
- Makro adları alanı onaylanamadı. Yerleştir makrosu genişletme yoksa teklifleri makrosu adlarında meydana gelir.  
+Makro adları kullanımdan. Makro adı tırnak işaretleri; Aksi takdirde makro genişletme içinde yer meydana gelir.  
   
- Çünkü **kullanım dışı** pragma tüm eşleşen tanımlayıcılarını çalışır ve imzalar dikkate almaz, aşırı yüklenen işlevler belirli sürümlerini onaysız kılınmadan için en iyi seçenek değildir. Kapsam içine getirilene eşleşen hiçbir işlev adı uyarı tetikler.
+Çünkü **kullanım dışı** pragması, tüm eşleşen tanımlayıcılarına çalışır ve imzalar dikkate almaz, aşırı yüklenmiş işlevlerin belirli sürümler kullanım dışı bırakıldığında için en iyi seçenek değildir. Kapsama alınır tüm eşleşen işlev adı, bir uyarı tetikler.
 
-  C ++ 14 kullanmanızı öneririz `[[deprecated]]` yerine, mümkün olduğunda, öznitelik **kullanım dışı** pragması. Microsoft'a özgü [__declspec(deprecated)](../cpp/deprecated-cpp.md) bildirimi değiştiricisi değil de birçok durumda daha iyi bir seçim **kullanım dışı** pragması. `[[deprecated]]` Özniteliği ve `__declspec(deprecated)` değiştiricisi aşırı yüklenmiş işlevlerin belirli formları için kullanım dışı durum belirtmenize olanak tanır. Tanılama uyarı yalnızca belirli bir aşırı yüklenmiş işlev başvuruları öznitelik görüntülenir veya değiştiricisi uygular.  
+C ++ 14 kullanmanızı öneririz `[[deprecated]]` yerine, mümkün olduğunda, öznitelik **kullanım dışı** pragması. Microsoft'a özgü [__declspec(deprecated)](../cpp/deprecated-cpp.md) bildirim değiştirici olan ayrıca birçok durumda daha iyi bir seçenek **kullanım dışı** pragması. `[[deprecated]]` Özniteliği ve `__declspec(deprecated)` değiştiricisi belirli forms aşırı yüklenmiş işlevlerin kullanım dışı durumunun belirtmenize olanak tanır. Tanılama uyarı yalnızca belirli bir aşırı yüklenmiş işlev başvuruları öznitelik görüntülenir veya değiştiricisi geçerlidir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // pragma_directive_deprecated.cpp  
 // compile with: /W3  
 #include <stdio.h>  
@@ -66,9 +66,9 @@ int main() {
 }  
 ```  
   
- Aşağıdaki örnek, bir sınıf alanı onaylanamadı gösterilmektedir:  
+Aşağıdaki örnek, bir sınıf kullanımdan kaldırmaya gösterilmektedir:  
   
-```  
+```cpp  
 // pragma_directive_deprecated2.cpp  
 // compile with: /W3  
 #pragma deprecated(X)  
@@ -83,4 +83,5 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

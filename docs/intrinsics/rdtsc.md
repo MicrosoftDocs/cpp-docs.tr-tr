@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81b47a76b3045465d8c3c5c21a87020ee1e74a69
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7888f00b1b95a18e839ab61fc8ff28a2646f9875
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337086"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465368"
 ---
 # <a name="rdtsc"></a>__rdtsc
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur `rdtsc` işlemci zaman damgasını döndürür yönerge. İşlemci zaman damgası, son sıfırlamadan sonraki saat döngüsü sayısını kaydeder.  
+ Oluşturur `rdtsc` form veya yönerge işlemcisi zaman damgasını döndürür. İşlemci zaman damgası, son sıfırlamadan sonraki saat döngüsü sayısını kaydeder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,20 +37,20 @@ unsigned __int64 __rdtsc();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Değer çizgisi sayısını temsil eden bir 64-bit işaretsiz tamsayı.  
+ İşaret sayısını temsil eden bir 64-bit işaretsiz tamsayı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__rdtsc`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__rdtsc`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe kullanılabilir.  
   
- ' In önceki sürümlerinde TSC değeri yorumu donanım bu oluşturmada farklı [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]. Donanım kılavuzlarına daha fazla bilgi için bkz.  
+ Bu nesil donanım TSC değerin yorumu, x64 önceki sürümlerinde farklılık gösterir. Daha fazla bilgi için donanım kılavuzlarına bakın.  
   
 ## <a name="example"></a>Örnek  
   
@@ -74,7 +74,7 @@ int main()
 3363423610155519 ticks  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

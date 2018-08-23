@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d16c9ede6d815c2c697c1ed03dc10476f6dd3bac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c8e5cefd7ba2b4816bf7e204cd4b3f97ee86974a
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324580"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465462"
 ---
 # <a name="stosb"></a>__stosb
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Bir depolama dize yönergesi oluşturur (`rep stosb`).  
   
@@ -54,14 +54,14 @@ void __stosb(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__stosb`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__stosb`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonuç karakter olan `Data` bloğunun yazılan `Count` bayt cinsinden `Dest` dize.  
+ Sonuç karakter olan `Data` bloğu yazılmış `Count` bayt cinsinden `Dest` dize.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -90,7 +90,7 @@ int main()
 *@@@@@@**************************  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

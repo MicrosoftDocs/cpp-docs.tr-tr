@@ -1,5 +1,5 @@
 ---
-title: _interlockedbittestandreset iç işlevler | Microsoft Docs
+title: _interlockedbittestandreset iç işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -28,15 +28,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c292d344727f2cc473dc444853a2c46d94150dd0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 433d4ba23cbf4ed7e2819a3752cd2155b7c20371
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340456"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464970"
 ---
-# <a name="interlockedbittestandreset-intrinsic-functions"></a>_interlockedbittestandreset iç işlevler
-**Microsoft özel**  
+# <a name="interlockedbittestandreset-intrinsic-functions"></a>_interlockedbittestandreset iç işlevleri
+**Microsoft'a özgü**  
   
  Bit ayarlayan bir yönerge oluşturur `b` adresinin `a` sıfır ve özgün değeri döndürür.  
   
@@ -83,7 +83,7 @@ unsigned char _interlockedbittestandreset64_HLERelease(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `a`  
- İncelemek için bellek için bir işaretçi.  
+ İncelemek için bellek işaretçisi.  
   
  [in] `b`  
  Test etmek için bit konumu.  
@@ -95,22 +95,22 @@ unsigned char _interlockedbittestandreset64_HLERelease(
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_interlockedbittestandreset`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_interlockedbittestandreset`|x86, ARM, x64|\<intrin.h >|  
 |`_interlockedbittestandreset_acq`, `_interlockedbittestandreset_nf`, `_interlockedbittestandreset_rel`|ARM|\<intrin.h >|  
-|`_interlockedbittestandreset_HLEAcquire`, `_interlockedbittestandreset_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
-|`_interlockedbittestandreset64`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
-|`_interlockedbittestandreset64_HLEAcquire`, `_interlockedbittestandreset64_HLERelease`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
+|`_interlockedbittestandreset_HLEAcquire`, `_interlockedbittestandreset_HLERelease`|x86, x64|\<immintrin.h >|  
+|`_interlockedbittestandreset64`|X64|\<intrin.h >|  
+|`_interlockedbittestandreset64_HLEAcquire`, `_interlockedbittestandreset64_HLERelease`|X64|\<immintrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
- X86 üzerinde ve [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] işlemciler, bu ön tanımlı kullanan `lock btr` okuyan ve sıfır olarak belirtilen atomik bir işlem bitini yönerge.  
+ Bu iç x86 ve x64 işlemci üzerinde kullanan `lock btr` yönerge okuyan ve atomik işlem belirtilen bit sıfır olarak ayarlar.  
   
- ARM işlemci ile iç bilgileri kullanmak `_acq` ve `_rel` sonekleri edinme ve yayın anlamları gibi önemli bir bölümü başında ve sonunda. ARM iç bilgileri ile bir `_nf` ("hiçbir dilimi") soneki bir bellek engeli hareket değil.  
+ ARM işlemci üzerinde yapı içleri ile kullanan `_acq` ve `_rel` sonekleri edinme ve sürüm semantiği gibi kritik bir bölüm başında ve sonunda. ARM iç bilgileri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.  
   
- Donanım kilidi Elision (HLE) yönergeleri, iç bilgileri ile destekleyen Intel işlemcileri üzerinde `_HLEAcquire` ve `_HLERelease` son ekleri kapsayacak performans donanım kilidi yazma adımda ortadan kaldırarak hızlandırabilir işlemci ipucu. Bu yapı HLE desteklemeyen işlemci çağrıldıklarında ipucu yoksayıldı.  
+ Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel işlemci üzerinde `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen işlemciler üzerinde çağrılırsa ipucu yoksayıldı.  
   
- Bu yordamlar, yalnızca iç bilgileri kullanılabilir.  
+ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

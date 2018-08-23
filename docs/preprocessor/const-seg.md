@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 984dc392b6ffa51d662d3ab56b1c0dc0dbc92233
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a3081837cc4516750f8c2c0d75cfc37eef208f9d
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839161"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464762"
 ---
 # <a name="constseg"></a>const_seg
-Kesimini belirtir nerede [const](../cpp/const-cpp.md) değişkenleri .obj dosyasında depolanır.  
+Segmenti belirtir burada [const](../cpp/const-cpp.md) değişkenlerin .obj dosyasında depolanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,34 +35,35 @@ Kesimini belirtir nerede [const](../cpp/const-cpp.md) değişkenleri .obj dosyas
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Koşulları anlamını *segment* ve *bölüm* bu konudaki birbirinin yerine kullanılabilir.  
+ 
+Koşulları anlamını *segment* ve *bölümü* bu konudaki birbirinin yerine kullanılabilir.  
   
- OBJ dosyaları ile görüntülenebilir [DUMPBIN](../build/reference/dumpbin-command-line.md) uygulama. .Obj dosyasında varsayılan kesimi `const` değişkenleri olan .rdata. Bazı `const` skalerler gibi değişkenleri otomatik olarak kod akışa içermesinden. Satır içine alınan kod .rdata'da görünmez.  
+OBJ dosyaları görüntülenebilir [dumpbin](../build/reference/dumpbin-command-line.md) uygulama. .Obj dosyasındaki varsayılan segment `const` değişkenleri .rdata'dır. Bazı `const` skalerler gibi değişkenleri otomatik olarak satır içi kod akışı. Satır içine alınan kod .rdata'da görünmez.  
   
- Dinamik başlatma gerektiren bir nesneyi tanımlayan bir `const_seg` tanımsız davranışa neden olur.  
+İçinde dinamik başlatma gerektiren bir nesne tanımlayan bir `const_seg` tanımsız davranışlara neden olur.  
   
- `#pragma const_seg` Parametresiz kesim için .rdata sıfırlar.  
+`#pragma const_seg` Hiçbir parametre olmadan, segmenti .rdata olarak sıfırlar.  
   
- `push` (isteğe bağlı)  
- İç derleyici yığınına bir kayıt yerleştirir. A `push` olabilir bir `identifier` ve `segment-name`.  
+*anında iletme* (isteğe bağlı)  
+İç derleyici yığınına bir kayıt yerleştirir. A *anında iletme* olabilir bir *tanımlayıcı* ve *segment-name*.  
   
- `pop` (isteğe bağlı)  
- Derleyici iç yığının en üstünden bir kayıt kaldırır.  
+*POP* (isteğe bağlı)  
+Derleyici iç yığının en üstünden bir kayıt kaldırır.  
   
- `identifier` (isteğe bağlı)  
- İle kullanıldığında `push`, iç derleyici yığında kaydı bir adı atar. İle kullanıldığında `pop`, POP kadar iç yığından kayıtları `identifier` ; kaldırılır `identifier` bulunamadı iç yığında bir şey Sil'i.  
+*tanımlayıcı* (isteğe bağlı)  
+İle kullanıldığında *anında iletme*, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında *pop*, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
   
- Kullanarak `identifier` tek bir tıklatmayla Sil'i birden çok kayıt etkinleştirir `pop` komutu.  
+Kullanarak *tanımlayıcı* tek bir POP birden çok kayıt getirir *pop* komutu.  
   
- "`segment-name`" (isteğe bağlı)  
- Bir segmentin adı. İle kullanıldığında `pop`, yığın Sil'i ve `segment-name` etkin kesimi adı olur.  
+"*segment-name*" (isteğe bağlı)  
+Bir segmentin adı. İle kullanıldığında *pop*, yığın silinir ve *segment-name* etkin segment adı haline gelir.  
   
- "`segment-class`" (isteğe bağlı)  
- Sürüm 2.0'dan önceki C++ ile uyumluluk sağlamak için dahil edilir. Yoksayılır.  
+"*segment sınıfı*" (isteğe bağlı)  
+Sürüm 2.0'dan önceki C++ ile uyumluluk sağlamak için dahil edilir. Yoksayılır.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // pragma_directive_const_seg.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -97,9 +98,11 @@ test4
 ```  
   
 ## <a name="comments"></a>Açıklamalar  
- Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) değil kullanmanız gereken bir bölüm oluştururken adları listesi.  
+ 
+Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) kullanmamanız bölüm oluştururken adları listesi.  
   
- Bölümler başlatılmış veriler için de belirtebilirsiniz ([data_seg](../preprocessor/data-seg.md)), veri başlatılmadı ([bss_seg](../preprocessor/bss-seg.md)) ve işlevleri ([code_seg](../preprocessor/code-seg.md)).  
+Başlatılmış veriler için bölümler belirtebilirsiniz ([data_seg](../preprocessor/data-seg.md)), başlatılmamış veriler ([bss_seg](../preprocessor/bss-seg.md)) ve işlevleri ([code_seg](../preprocessor/code-seg.md)).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -23,34 +23,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b20a476e1701f58782b97f986ee6c3d4b310b566
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 76a29a7ae4734e5d1f1930d5309163d1e1519aa4
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846239"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466257"
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
-Pragma yönergeleri makine veya işletim özgü derleyicisi özelliklerini belirtin. `__pragma` Microsoft derleyici özel anahtar sözcüğü makrosu tanımları içindeki kod pragma yönergeleri için sağlar.  
+Pragma yönergeleri makine veya işletim özgü derleyici özelliklerini belirtir. **__Pragma** Microsoft derleyiciye özgü anahtar sözcüğü için kod pragma yönergelerini makro tanımları içinde size sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      #pragma token-string  
+#pragma token-string  
 __pragma(token-string)  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- C ve C++ her uygulama bazı özellikler, konak makine ya da işletim sistemi benzersiz destekler. Örneğin, bazı programlar kesin bir denetim verileri nerede yerleştirme bellek alanları üzerinden veya İşlevler alma parametrelerini belirli şeklini denetlemek için çalışma gerekir. `#pragma` Yönergeleri C ve C++ dilleri ile genel uyumluluk korurken makine ve işletim sistemine özgü özellikleri sunmak her derleyici için bir yol sunar.  
+ 
+Her C ve C++ uygulaması, kendi ana makinesine veya işletim sistemi benzersiz bazı özellikler destekler. Örneğin, bazı programların verilerin eklendiği bellek alanları üzerinde veya işlevlerin parametre alma belirli denetlenmesine kesin denetim yollarını denetlemesi gerekir. **#Pragma** yönergeleri her derleyiciye C ve C++ dilleri ile genel uyumluluğu muhafaza ederken, makineye ve işletim sistemine özgü özellikler sunmak için bir yol sunar.  
   
- Pragmaları makine veya işletim sistemi-tanımı tarafından özgüdür ve her derleyici için genellikle farklıdır. Pragmaları koşullu deyimlerinde yeni önişlemci işlevselliği sağlamak için veya uygulama tarafından tanımlanan bilgileri derleyici sağlamak için kullanılabilir.  
+Pragmalar makine veya işletim sistemi-tanımına göre özgüdür ve genelde her derleyici için farklıdır. Pragmalar, yeni önişlemci işlevselliğini sunmak veya derleyiciye uygulama tanımlı bilgileri sağlamak için koşullu ifadelerde kullanılabilir.  
   
- `token-string` Belirli derleyici yönerge ve bağımsız değişkenler, veren karakterleri varsa dizisidir. Sayı işareti (**#**) ilk boşluk olmayan karakter pragma içeren satırı; boşluk karakterleri sayı işareti ve "pragma" word ayırabilirsiniz. Aşağıdaki `#pragma`, Çevirici belirteçleri ön işleme olarak ayrıştıramıyor herhangi bir metin yazın. Bağımsız değişkeni `#pragma` makrosu genişletme tabi değil.  
+`token-string` Belirli bir derleyici yönergesi ve bağımsız değişkenler veren bir karakterler varsa dizisidir. Numara işareti (**#**) ilk boşluk olmayan karakter pragmayı içeren satırda; beyaz boşluk karakterleri numara işaretleri ile "pragma" sözcüğünü ayırabilirsiniz. Aşağıdaki **#pragma**, translator ön işleme belirteci olarak ayrıştırabilirsiniz herhangi bir metni yazın. Bağımsız değişkeni **#pragma** makro genişletmeye tabidir.  
   
- Derleyici tarafından tanınmayan bir pragma bulursa, bir uyarı verir ve derleme devam eder.  
+Derleyici tanımadığı bir pragma bulursa, bir uyarı verir ve derlemeye devam eder.  
   
- Microsoft C ve C++ Derleyicileri aşağıdaki pragmaları algılar:  
+Microsoft C and C++ Derleyicileri aşağıdaki pragmaları tanır:  
   
 ||||  
 |-|-|-|  
@@ -70,10 +70,11 @@ __pragma(token-string)
 |[strict_gs_check](../preprocessor/strict-gs-check.md)|[Yönetilmeyen](../preprocessor/managed-unmanaged.md)|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|  
 |[warning](../preprocessor/warning.md)|||  
   
- 1. Yalnızca C++ derleyicisi tarafından desteklenir.  
+ 1. Yalnızca C++ Derleyici tarafından desteklenmiyor.  
   
-## <a name="pragmas-and-compiler-options"></a>Pragmaları ve derleyici seçenekleri  
- Bazı pragmaları derleyici seçenekleri ile aynı işlevselliği sağlar. Pragma kaynak kodunda karşılaşıldığında, derleyici seçeneği tarafından belirtilen davranışı geçersiz kılar. Örneğin, belirttiğiniz [/Zp8](../build/reference/zp-struct-member-alignment.md), kodla belirli bölümlerine için bu derleyici ayarı geçersiz kılabilirsiniz [paketi](../preprocessor/pack.md):  
+## <a name="pragmas-and-compiler-options"></a>Pragmalar ve derleyici seçenekleri  
+ 
+Bazı pragmalar derleyici seçenekleriyle aynı işlevleri sağlar. Kaynak kodunda bir pragma ile karşılaşıldığında, derleyici seçeneği tarafından belirtilen davranışı geçersiz kılar. Örneğin, belirttiğiniz [/zp8](../build/reference/zp-struct-member-alignment.md), ile kodun belirli bölümleri için bu derleyici ayarını geçersiz kılabilirsiniz [paketi](../preprocessor/pack.md):  
   
 ```  
 cl /Zp8 ...  
@@ -87,11 +88,12 @@ cl /Zp8 ...
 ```  
   
 ## <a name="the-pragma-keyword"></a>__Pragma() anahtar sözcüğü  
- **Belirli Microsoft**  
+ 
+**Microsoft'a özgü**  
   
- Ayrıca, derleyicinin destekler `__pragma` aynı işlevselliğe sahip anahtar sözcüğü olarak `#pragma` yönergesi, ancak kullanılan satır bir makro tanımı içinde olabilir. `#pragma` Yönergesi çünkü derleyici numara işareti karakteri ('#') olmasını yönergesinde yorumlar makrosu tanımında kullanılamaz [dizeleyen işleç (#)](../preprocessor/stringizing-operator-hash.md).  
+Derleyici ayrıca destekler **__pragma** anahtar sözcüğü ile aynı işlevlere sahiptir olarak **#pragma** yönergesi, ancak bir Makro tanımında kullanılan satır içi olabilir. **#Pragma** yönergesi çünkü derleyici yönergedeki içinde sayı işareti karakterini ('#') yorumlar bir makro tanımda kullanılamaz [dize haline getirme işleci (#)](../preprocessor/stringizing-operator-hash.md).  
   
- Aşağıdaki kod örneğinde gösterilmektedir nasıl `__pragma` anahtar sözcüğü bir makro içinde kullanılabilir. Bu kod, "Derleyici COM destek örnekleri" içinde ACDUAL örneği mfcdual.h başlığından alınmıştır:  
+Aşağıdaki kod örneğinde nasıl **__pragma** anahtar sözcüğü bir makroda kullanılabilir. Bu kod, "Derleyici COM destek örnekleri" içindeki ACDUAL örneğinde bulunan mfcdual.h başlığından alınmıştır:  
   
 ```  
 #define CATCH_ALL_DUAL \  
@@ -111,9 +113,10 @@ END_CATCH_ALL \
 return _hr; \  
 ```  
   
- **Microsoft özel bitiş**  
+**End Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)   
- [C pragmaları](../c-language/c-pragmas.md)   
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+ 
+[C/C++ önişlemci başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)   
+[C pragmaları](../c-language/c-pragmas.md)   
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

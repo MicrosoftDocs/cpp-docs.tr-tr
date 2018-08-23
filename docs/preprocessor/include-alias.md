@@ -18,25 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84e09b51d6f234bdc17353c358e378f18e153567
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 26e59888a26b5f71b697e398e81b16012dd35e3a
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33838936"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465066"
 ---
 # <a name="includealias"></a>include_alias
 
-Belirleyen *short_filename* için diğer ad olarak kullanılacak *long_filename*.
+Belirten *short_filename* için bir diğer ad olarak kullanılacak *long_filename*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias ("*long_filename*","*short_filename*")  
-> #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias (*long_filename*, *short_filename*)
+> #<a name="pragma-includealiaslongfilename-shortfilename"></a>include_alias pragması ("*long_filename*","*short_filename*")  
+> #<a name="pragma-includealiaslongfilename-shortfilename"></a>include_alias pragması (*long_filename*, *short_filename*)
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bazı dosya sistemleri, 8.3 FAT dosya sistemi sınırından daha uzun üstbilgi dosya adlarına izin verir. Derleyici, uzun üstbilgi dosya adlarının ilk sekiz karakteri benzersiz olmayabileceği için uzun adları 8.3'e kesemez. Her derleyici karşılaştığında *long_filename* dize, onu değiştirir *short_filename*ve üst bilgi dosyasını arar *short_filename* yerine. Bu pragma ilgili `#include` yönergelerinden önce görünmelidir. Örneğin:
+Bazı dosya sistemleri, 8.3 FAT dosya sistemi sınırından daha uzun üstbilgi dosya adlarına izin verir. Derleyici, uzun üstbilgi dosya adlarının ilk sekiz karakteri benzersiz olmayabileceği için uzun adları 8.3'e kesemez. Her derleyici karşılaştığında *long_filename* dizesiyle *short_filename*ve üstbilgi dosyasını arar *short_filename* yerine. Bu pragma ilgili `#include` yönergelerinden önce görünmelidir. Örneğin:
 
 ```cpp
 // First eight characters of these two files not unique.
@@ -50,7 +50,7 @@ Bazı dosya sistemleri, 8.3 FAT dosya sistemi sınırından daha uzun üstbilgi 
 #include "GraphicsMenu.h"
 ```
 
-Aranan diğer ad belirtimle büyük/küçük harf kullanımı, yazım ve çift tırnak işareti veya açılı ayraç bakımından tamamen eşleşmelidir. **İnclude_alias** pragma gerçekleştirir üzerinde dosya adları eşleşen basit bir dize; başka bir dosya adı doğrulama gerçekleştirilir. Örneğin, aşağıdaki yönergeler göz önünde bulundurulduğunda,
+Aranan diğer ad belirtimle büyük/küçük harf kullanımı, yazım ve çift tırnak işareti veya açılı ayraç bakımından tamamen eşleşmelidir. **İnclude_alias** pragma eşleşen dosya adları üzerinde basit dize gerçekleştirir; başka bir dosya adı doğrulama gerçekleştirilir. Örneğin, aşağıdaki yönergeler göz önünde bulundurulduğunda,
 
 ```cpp
 #pragma include_alias("mymath.h", "math.h")
@@ -58,7 +58,7 @@ Aranan diğer ad belirtimle büyük/küçük harf kullanımı, yazım ve çift t
 #include "sys/mymath.h"
 ```
 
-üstbilgi dosya dizeleri tam olarak eşleşmediğinden hiçbir diğer ad (değiştirme) oluşturma işlemi gerçekleştirilmez. Ayrıca, üstbilgi dosya adları /Yu ve /Yc derleyici seçenekleri bağımsız değişken olarak kullanılan veya **hdrstop** pragma, değil değiştirdi. Örneğin, kaynak dosyanız aşağıdaki yönergeyi içeriyorsa,
+üstbilgi dosya dizeleri tam olarak eşleşmediğinden hiçbir diğer ad (değiştirme) oluşturma işlemi gerçekleştirilmez. Ayrıca, bağımsız değişkenleri olarak kullanılan üstbilgi dosya `/Yu` ve `/Yc` derleyici seçenekleri veya `hdrstop` pragması değiştirilmez. Örneğin, kaynak dosyanız aşağıdaki yönergeyi içeriyorsa,
   
 ```cpp
 #include <AppleSystemHeaderStop.h>
@@ -68,7 +68,7 @@ ilgili derleyici seçeneği şöyle olmalıdır:
 
 > /YcAppleSystemHeaderStop.h
 
-Kullanabileceğiniz **include_alias** üstbilgi dosya diğerine eşlemek için pragması. Örneğin:
+Kullanabileceğiniz **include_alias** diğerine üstbilgi dosya adını eşleştirmek için pragması. Örneğin:
 
 ```cpp
 #pragma include_alias( "api.h", "c:\version1.0\api.h" )
@@ -77,7 +77,7 @@ Kullanabileceğiniz **include_alias** üstbilgi dosya diğerine eşlemek için p
 #include <stdio.h>
 ```
 
-Çift tırnak işaretlerinin içine alınmış dosya adlarını, açılı ayraçlar içine alınmış dosya adlarıyla karıştırmayın. Örneğin, yukarıdaki iki verilen **#pragma include_alias** yönergeleri, derleyici hiçbir değiştirme aşağıdakileri gerçekleştirir `#include` yönergeleri:
+Çift tırnak işaretlerinin içine alınmış dosya adlarını, açılı ayraçlar içine alınmış dosya adlarıyla karıştırmayın. Örneğin, yukarıdaki iki verilen `#pragma include_alias` yönergeleri, derleyici aşağıdaki hiçbir değişim gerçekleştirir `#include` yönergeleri:
 
 ```cpp
 #include <api.h>
@@ -90,7 +90,7 @@ Ayrıca, aşağıdaki yönerge bir hata oluşturur:
 #pragma include_alias(<header.h>, "header.h")  // Error
 ```
 
-Dosya adı hata iletileri veya önceden tanımlanmış değeri olarak rapor Not **&#95; &#95;dosya&#95; &#95;** makro değiştirme gerçekleştirildikten sonra dosyasının adı olduğunu. Örneğin, çıktı sonra aşağıdaki yönergeleri bakın:
+Dosya adında hata iletilerinde veya önceden tanımlanmış değer olarak bildirilen Not `__FILE__` makro gerçekleştirildikten sonra dosyanın adı olan. Örneğin, aşağıdaki yönergelerden sonra çıktıyı görürsünüz:
 
 ```cpp
 #pragma include_alias( "VeryLongFileName.H", "myfile.h" )

@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7cdd8f527b8df8ae80896bbb17fab1b15684180
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 56af7861daab87106904ca04422938f87c34c941
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36953577"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466163"
 ---
 # <a name="cbasetransition-class"></a>CBaseTransition sınıfı
 Temel bir geçişi temsil eder.  
@@ -72,49 +72,49 @@ class CBaseTransition : public CObject;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-enumerations"></a>Ortak numaralandırmaları  
+### <a name="public-enumerations"></a>Ortak numaralandırmalar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CBaseTransition::TRANSITION_TYPE numaralandırması](#transition_type_enumeration)|Şu anda Windows animasyon API MFC uygulaması tarafından desteklenen geçiş türleri tanımlar.|  
+|[CBaseTransition::TRANSITION_TYPE numaralandırması](#transition_type_enumeration)|Şu anda Windows animasyon API'sı MFC uygulaması tarafından desteklenen geçiş türleri tanımlar.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CBaseTransition::CBaseTransition](#cbasetransition)|Temel transtion nesnesi oluşturur.|  
-|[CBaseTransition:: ~ CBaseTransition](#cbasetransition__~cbasetransition)|Yok Edicisi. Bir geçiş nesnesi yok çağrılır.|  
+|[CBaseTransition::CBaseTransition](#cbasetransition)|Temel transtion bir nesne oluşturur.|  
+|[CBaseTransition:: ~ CBaseTransition](#cbasetransition__~cbasetransition)|Yıkıcı. Bir geçiş nesnesi yok ediliyorken çağırılır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CBaseTransition::AddToStoryboard](#addtostoryboard)|Bir geçiş için film şeridi ekler.|  
-|[CBaseTransition::AddToStoryboardAtKeyframes](#addtostoryboardatkeyframes)|Bir geçiş için film şeridi ekler.|  
-|[CBaseTransition::Clear](#clear)|Sürümler IUIAnimationTransition COM nesnesi kapsüllenir.|  
-|[CBaseTransition::Create](#create)|Bir COM geçiş oluşturur.|  
-|[CBaseTransition::GetEndKeyframe](#getendkeyframe)|Döndürür ana kare başlatın.|  
-|[CBaseTransition::GetRelatedVariable](#getrelatedvariable)|Bir işaretçi ilgili değişkeni döndürür.|  
-|[CBaseTransition::GetStartKeyframe](#getstartkeyframe)|Döndürür ana kare başlatın.|  
-|[CBaseTransition::GetTransition](#gettransition)|Fazla Yüklendi. Bir işaretçi temel alınan COM geçiş nesnesi döndürür.|  
+|[CBaseTransition::AddToStoryboard](#addtostoryboard)|Geçiş için görsel taslak ekler.|  
+|[CBaseTransition::AddToStoryboardAtKeyframes](#addtostoryboardatkeyframes)|Geçiş için görsel taslak ekler.|  
+|[CBaseTransition::Clear](#clear)|Yayınları IUIAnimationTransition COM nesnesi kapsüllenir.|  
+|[CBaseTransition::Create](#create)|COM geçişi oluşturur.|  
+|[CBaseTransition::GetEndKeyframe](#getendkeyframe)|Ana kare döndürür başlatın.|  
+|[CBaseTransition::GetRelatedVariable](#getrelatedvariable)|İlgili değişkenine bir işaretçi döndürür.|  
+|[CBaseTransition::GetStartKeyframe](#getstartkeyframe)|Ana kare döndürür başlatın.|  
+|[CBaseTransition::GetTransition](#gettransition)|Fazla Yüklendi. Temel alınan COM geçiş nesnesine bir işaretçi döndürür.|  
 |[CBaseTransition::GetType](#gettype)|Geçiş türü döndürür.|  
-|[CBaseTransition::IsAdded](#isadded)|Bir geçiş için film şeridi eklenmiş olup olmadığını bildirir.|  
-|[CBaseTransition::SetKeyframes](#setkeyframes)|Bir geçiş için ana kare ayarlar.|  
-|[CBaseTransition::SetRelatedVariable](#setrelatedvariable)|Animasyon değişkeni ve geçiş arasında bir ilişki kurar.|  
+|[CBaseTransition::IsAdded](#isadded)|Geçiş için görsel taslak eklenip eklenmediğini belirtir.|  
+|[CBaseTransition::SetKeyframes](#setkeyframes)|Ana kareleri geçiş ayarlar.|  
+|[CBaseTransition::SetRelatedVariable](#setrelatedvariable)|Animasyon değişkenin ve geçiş arasında bir ilişki kurar.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CBaseTransition::m_bAdded](#m_badded)|Bir geçiş için film şeridi eklenmiş olup olmadığını belirtir.|  
-|[CBaseTransition::m_pEndKeyframe](#m_pendkeyframe)|Geçiş işleminin sonunda belirtir kareyi gösteren bir işaretçi depolar.|  
-|[CBaseTransition::m_pRelatedVariable](#m_prelatedvariable)|M_transition içinde depolanan geçiş ile Animasyonlu bir animasyon değişkeni için bir işaretçi.|  
-|[CBaseTransition::m_pStartKeyframe](#m_pstartkeyframe)|Geçişin başlangıcını belirtir kareyi gösteren bir işaretçi depolar.|  
-|[CBaseTransition::m_transition](#m_transition)|Bir işaretçi IUIAnimationTransition depolar. Bir COM geçiş nesnesi oluşturulmadı yoksa NULL.|  
+|[CBaseTransition::m_bAdded](#m_badded)|Geçiş için görsel taslak eklenip eklenmediğini belirtir.|  
+|[CBaseTransition::m_pEndKeyframe](#m_pendkeyframe)|Geçiş sonuna belirten bir anahtar kare işaretçi depolar.|  
+|[CBaseTransition::m_pRelatedVariable](#m_prelatedvariable)|M_transition içinde depolanan geçişte hareketli animasyon değişkenin bir işaretçi.|  
+|[CBaseTransition::m_pStartKeyframe](#m_pstartkeyframe)|Geçiş başlangıcını belirtir ana kare işaretçi depolar.|  
+|[CBaseTransition::m_transition](#m_transition)|IUIAnimationTransition bir işaretçi depolar. Bir COM Nesne geçiş yoksa NULL oluşturulmadı.|  
 |[CBaseTransition::m_type](#m_type)|Geçiş türü depolar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf IUIAnimationTransition arabirimi yalıtır ve tüm geçişler için bir taban sınıf görevi görür.  
+ Bu sınıf IUIAnimationTransition arabirimini kapsüller ve tüm geçişler için temel sınıf olarak görev yapar.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -125,14 +125,14 @@ class CBaseTransition : public CObject;
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="_dtorcbasetransition"></a>  CBaseTransition:: ~ CBaseTransition  
- Yok Edicisi. Bir geçiş nesnesi yok çağrılır.  
+ Yıkıcı. Bir geçiş nesnesi yok ediliyorken çağırılır.  
   
 ```  
 virtual ~CBaseTransition();
 ```  
   
 ##  <a name="addtostoryboard"></a>  CBaseTransition::AddToStoryboard  
- Bir geçiş için film şeridi ekler.  
+ Geçiş için görsel taslak ekler.  
   
 ```  
 BOOL AddToStoryboard(IUIAnimationStoryboard* pStoryboard);
@@ -140,16 +140,16 @@ BOOL AddToStoryboard(IUIAnimationStoryboard* pStoryboard);
   
 ### <a name="parameters"></a>Parametreler  
  *pStoryboard*  
- İlgili değişken animasyon film şeridi için bir işaretçi.  
+ İlgili değişkeni animasyon uygular, film şeridi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE, geçiş için film şeridi başarıyla eklendi.  
+ TRUE, geçiş için görsel taslak başarıyla eklendi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Film şeridi ilgili değişken geçiş uygulanır. Bu değişken bu film şeridi uygulanan ilk geçiş varsa geçişi film şeridi başlangıcında başlar. Aksi takdirde, geçiş değişkenine eklenen en son geçiş eklenir.  
+ Görsel taslak ilgili değişkeninde geçişi uygular. Bu film şeridini bu değişkende uygulanan ilk geçiş buysa, geçiş film şeridi başlangıcında başlar. Aksi takdirde, geçiş değişkenine en son eklenen geçiş eklenir.  
   
 ##  <a name="addtostoryboardatkeyframes"></a>  CBaseTransition::AddToStoryboardAtKeyframes  
- Bir geçiş için film şeridi ekler.  
+ Geçiş için görsel taslak ekler.  
   
 ```  
 BOOL AddToStoryboardAtKeyframes(IUIAnimationStoryboard* pStoryboard);
@@ -157,33 +157,33 @@ BOOL AddToStoryboardAtKeyframes(IUIAnimationStoryboard* pStoryboard);
   
 ### <a name="parameters"></a>Parametreler  
  *pStoryboard*  
- İlgili değişken animasyon film şeridi için bir işaretçi.  
+ İlgili değişkeni animasyon uygular, film şeridi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE, geçiş için film şeridi başarıyla eklendi.  
+ TRUE, geçiş için görsel taslak başarıyla eklendi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Film şeridi ilgili değişken geçiş uygulanır. Başlangıç ana kareyi belirtildiyse, geçiş sırasında bu anahtar kare başlar. Son ana kareyi belirtilmişse başlangıç ana kareyi geçiş başlar ve ve son kareyi durdurur. Geçiş belirtilen bir süre parametresi ile oluşturulmuşsa, sürenin başlangıç ve bitiş ana kareler arasındaki süreyi üzerine yazılır. Hiçbir anahtar kare belirtilmişse geçişi değişkenine eklenen en son geçiş eklenir.  
+ Görsel taslak ilgili değişkeninde geçişi uygular. Başlangıç ana kare belirtilmemişse, geçiş sırasında ana kare başlar. Son ana kare belirtilmemişse, geçiş başlangıç kareden başlar ve son ana kareyi durdurur. Geçiş belirtilen bir süre parametresini ile oluşturulmuş olsa bile, bu süre başlangıç ve bitiş ana kareler arasındaki süre üzerine yazılır. Bir ana kareye belirtilmemişse, geçiş değişkenine en son eklenen geçiş eklenir.  
   
 ##  <a name="cbasetransition"></a>  CBaseTransition::CBaseTransition  
- Temel transtion nesnesi oluşturur.  
+ Temel transtion bir nesne oluşturur.  
   
 ```  
 CBaseTransition();
 ```  
   
 ##  <a name="clear"></a>  CBaseTransition::Clear  
- Sürümler IUIAnimationTransition COM nesnesi kapsüllenir.  
+ Yayınları IUIAnimationTransition COM nesnesi kapsüllenir.  
   
 ```  
 void Clear();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, IUITransition arabirimi sızıntısını önlemek için türetilmiş sınıf oluşturma yöntemi çağrılmalıdır.  
+ Bu yöntem, türetilmiş bir sınıfın oluşturma yöntemi IUITransition arabirimi sızıntısını önlemek için çağrılmalıdır.  
   
 ##  <a name="create"></a>  CBaseTransition::Create  
- Bir COM geçiş oluşturur.  
+ COM geçişi oluşturur.  
   
 ```  
 virtual BOOL Create(
@@ -193,58 +193,58 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *pLibrary*  
- Standart geçişleri oluşturur geçiş kitaplığı için bir işaretçi. Bu özel geçişler için NULL olabilir.  
+ Standart geçişleri oluşturan geçiş kitaplığı için bir işaretçi. Özel geçişleri için NULL olabilir.  
   
  *pFactory*  
- Özel geçişler oluşturur geçiş üreteci için bir işaretçi. Bu, standart geçişler için NULL olabilir.  
+ Özel geçişleri oluşturan geçiş fabrikası için bir işaretçi. Standart geçişleri için NULL olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir geçiş COM Nesne başarıyla oluşturuldu, TRUE; Aksi takdirde FALSE.  
+ Bir geçiş COM nesnesi başarılı bir şekilde oluşturulduysa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Türetilen bir sınıfta geçersiz kılınmalıdır saf bir sanal işlev budur. COM geçiş nesnesini örneği oluşturmak için çerçevesi tarafından çağrılır.  
+ Türetilen bir sınıfta geçersiz kılınması saf bir sanal işlev budur. COM geçiş nesnesini oluşturmak için framework tarafından çağırılır.  
   
 ##  <a name="getendkeyframe"></a>  CBaseTransition::GetEndKeyframe  
- Döndürür ana kare başlatın.  
+ Ana kare döndürür başlatın.  
   
 ```  
 CBaseKeyFrame* GetEndKeyframe();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir işaretçi bir ana kare ya da bir geçiş anahtar kare arasında eklenmez yoksa NULL.  
+ Geçerli bir işaretçi bir ana kare veya bir geçiş ana kareler arasında eklenmesi gereken değil yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından SetKeyframes önceden ayarlanmış bir ana kare nesneye erişmek için kullanılabilir. Geçişler film şeridi eklenirken üst düzey kod tarafından çağrılır.  
+ Bu yöntem tarafından SetKeyframes önceden ayarlanmış bir ana kare nesneye erişmek için kullanılabilir. Görsel taslağa dönüştürme geçişleri eklenirken, üst düzey kod tarafından çağrılır.  
   
 ##  <a name="getrelatedvariable"></a>  CBaseTransition::GetRelatedVariable  
- Bir işaretçi ilgili değişkeni döndürür.  
+ İlgili değişkenine bir işaretçi döndürür.  
   
 ```  
 CAnimationVariable* GetRelatedVariable();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir işaretçi animasyon değişkeni ya da bir animasyon değişkeni tarafından SetRelatedVariable ayarlı değil yoksa NULL.  
+ Geçerli bir işaretçi animasyon değişkenine veya bir animasyon değişkenini SetRelatedVariable tarafından ayarlanmadı yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlgili animasyon değişkeni için bir erişimci budur.  
+ Erişimci ilgili animasyon değişkenin budur.  
   
 ##  <a name="getstartkeyframe"></a>  CBaseTransition::GetStartKeyframe  
- Döndürür ana kare başlatın.  
+ Ana kare döndürür başlatın.  
   
 ```  
 CBaseKeyFrame* GetStartKeyframe();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir işaretçi bir ana kare ya da bir geçiş bir ana kare başlamamalıdır yoksa NULL.  
+ Geçerli bir işaretçi bir ana kare veya bir geçiş bir anahtar kare başlamamalıdır yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından SetKeyframes önceden ayarlanmış bir ana kare nesneye erişmek için kullanılabilir. Geçişler film şeridi eklenirken üst düzey kod tarafından çağrılır.  
+ Bu yöntem tarafından SetKeyframes önceden ayarlanmış bir ana kare nesneye erişmek için kullanılabilir. Görsel taslağa dönüştürme geçişleri eklenirken, üst düzey kod tarafından çağrılır.  
   
 ##  <a name="gettransition"></a>  CBaseTransition::GetTransition  
- Bir işaretçi temel alınan COM geçiş nesnesi döndürür.  
+ Temel alınan COM geçiş nesnesine bir işaretçi döndürür.  
   
 ```  
 IUIAnimationTransition* GetTransition(
@@ -256,10 +256,10 @@ IUIAnimationTransition* GetTransition();
   
 ### <a name="parameters"></a>Parametreler  
  *pLibrary*  
- Standart geçişleri oluşturur geçiş kitaplığı için bir işaretçi. Bu özel geçişler için NULL olabilir.  
+ Standart geçişleri oluşturan geçiş kitaplığı için bir işaretçi. Özel geçişleri için NULL olabilir.  
   
  *pFactory*  
- Özel geçişler oluşturur geçiş üreteci için bir işaretçi. Bu, standart geçişler için NULL olabilir.  
+ Özel geçişleri oluşturan geçiş fabrikası için bir işaretçi. Standart geçişleri için NULL olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli bir işaretçi IUIAnimationTransition veya geçiş temel oluşturulamıyorsa boş.  
@@ -275,54 +275,54 @@ TRANSITION_TYPE GetType() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRANSITION_TYPE birini değerleri numaralandırılır.  
+ TRANSITION_TYPE birini numaralandırılmış değerlerinin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, türü tarafından geçiş nesneyi tanımlamak için kullanılabilir. Tür oluşturucu türetilmiş bir sınıf içinde ayarlanır.  
+ Bu yöntem, türü tarafından geçiş nesneyi tanımlamak için kullanılabilir. Türetilmiş bir sınıftaki bir oluşturucunun türü ayarlayın.  
   
 ##  <a name="isadded"></a>  CBaseTransition::IsAdded  
- Bir geçiş için film şeridi eklenmiş olup olmadığını bildirir.  
+ Geçiş için görsel taslak eklenip eklenmediğini belirtir.  
   
 ```  
 BOOL IsAdded();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir geçiş bir film şeridi Aksi takdirde FALSE eklenip eklenmediğini TRUE döndürür.  
+ Bir görsel taslak Aksi takdirde FALSE geçiş eklenmişse TRUE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu bayrak, üst düzey kod film şeridi geçişleri eklediğinde dahili olarak ayarlanır.  
+ Bu bayrak, üst düzey kod görsel taslağa dönüştürme geçişleri eklediğinde dahili olarak ayarlanır.  
   
 ##  <a name="m_badded"></a>  CBaseTransition::m_bAdded  
- Bir geçiş için film şeridi eklenmiş olup olmadığını belirtir.  
+ Geçiş için görsel taslak eklenip eklenmediğini belirtir.  
   
 ```  
 BOOL m_bAdded;  
 ```  
   
 ##  <a name="m_pendkeyframe"></a>  CBaseTransition::m_pEndKeyframe  
- Geçiş işleminin sonunda belirtir kareyi gösteren bir işaretçi depolar.  
+ Geçiş sonuna belirten bir anahtar kare işaretçi depolar.  
   
 ```  
 CBaseKeyFrame* m_pEndKeyframe;  
 ```  
   
 ##  <a name="m_prelatedvariable"></a>  CBaseTransition::m_pRelatedVariable  
- M_transition içinde depolanan geçiş ile Animasyonlu bir animasyon değişkeni için bir işaretçi.  
+ M_transition içinde depolanan geçişte hareketli animasyon değişkenin bir işaretçi.  
   
 ```  
 CAnimationVariable* m_pRelatedVariable;  
 ```  
   
 ##  <a name="m_pstartkeyframe"></a>  CBaseTransition::m_pStartKeyframe  
- Geçişin başlangıcını belirtir kareyi gösteren bir işaretçi depolar.  
+ Geçiş başlangıcını belirtir ana kare işaretçi depolar.  
   
 ```  
 CBaseKeyFrame* m_pStartKeyframe;  
 ```  
   
 ##  <a name="m_transition"></a>  CBaseTransition::m_transition  
- Bir işaretçi IUIAnimationTransition depolar. Bir COM geçiş nesnesi oluşturulmadı yoksa NULL.  
+ IUIAnimationTransition bir işaretçi depolar. Bir COM Nesne geçiş yoksa NULL oluşturulmadı.  
   
 ```  
 ATL::CComPtr<IUIAnimationTransition> m_transition;  
@@ -336,7 +336,7 @@ TRANSITION_TYPE m_type;
 ```  
   
 ##  <a name="setkeyframes"></a>  CBaseTransition::SetKeyframes  
- Bir geçiş için ana kare ayarlar.  
+ Ana kareleri geçiş ayarlar.  
   
 ```  
 void SetKeyframes(
@@ -346,16 +346,16 @@ void SetKeyframes(
   
 ### <a name="parameters"></a>Parametreler  
  *pStart*  
- Geçişin başlangıcını belirtir ana kare.  
+ Geçiş başlangıcını belirtir bir ana kare.  
   
  *Bekleme*  
- Geçiş işleminin sonunda belirtir ana kare.  
+ Geçiş sonuna belirten bir anahtar kare.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem sonra belirtilen ana kare başlatmak ve isteğe bağlı olarak, bekleme NULL değilse sonlandırmak için geçiş söyler belirtilen kareyi önce. Geçiş belirtilen bir süre parametresi ile oluşturulmuşsa, sürenin başlangıç ve bitiş ana kareler arasındaki süreyi üzerine yazılır.  
+ Geçiş bekleme NULL değilse belirtilen ana kare sonra başlamalı ve isteğe bağlı olarak, bu yöntem söyler belirtilen ana kare önce. Geçiş belirtilen bir süre parametresini ile oluşturulmuş olsa bile, bu süre başlangıç ve bitiş ana kareler arasındaki süre üzerine yazılır.  
   
 ##  <a name="setrelatedvariable"></a>  CBaseTransition::SetRelatedVariable  
- Animasyon değişkeni ve geçiş arasında bir ilişki kurar.  
+ Animasyon değişkenin ve geçiş arasında bir ilişki kurar.  
   
 ```  
 void SetRelatedVariable(CAnimationVariable* pVariable);
@@ -363,20 +363,20 @@ void SetRelatedVariable(CAnimationVariable* pVariable);
   
 ### <a name="parameters"></a>Parametreler  
  *pVariable*  
- İlgili animasyon değişkeni için bir işaretçi.  
+ İlgili animasyon değişkeninin bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Animasyon değişkeni ve geçiş arasında bir ilişki kurar. Yalnızca bir değişken için bir geçiş uygulanabilir.  
+ Animasyon değişkenin ve geçiş arasında bir ilişki kurar. Geçiş yalnızca bir değişkene uygulanabilir.  
   
 ##  <a name="transition_type_enumeration"></a>  CBaseTransition::TRANSITION_TYPE numaralandırması  
- Şu anda Windows animasyon API MFC uygulaması tarafından desteklenen geçiş türleri tanımlar.  
+ Şu anda Windows animasyon API'sı MFC uygulaması tarafından desteklenen geçiş türleri tanımlar.  
   
 ```  
 enum TRANSITION_TYPE;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir geçiş türü belirli geçiş oluşturucuda ayarlanır. Örneğin, CSinusoidalTransitionFromRange için SINUSOIDAL_FROM_RANGE türünü ayarlar.  
+ Bir geçiş türü, belirli bir geçiş oluşturucuda ayarlanır. Örneğin, CSinusoidalTransitionFromRange için SINUSOIDAL_FROM_RANGE türünü ayarlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48a3cfe51f79f0d6068509a5e42693417524417d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0c8dc98e679de6255ae5762777fd51cbe3554a32
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328818"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464772"
 ---
 # <a name="rotl8-rotl16"></a>_rotl8, _rotl16
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bit konumları belirtilen sayısına göre en önemli bit (MSB) sol giriş değerleri döndürür.  
+ Giriş değerleri bit konumları belirtilen sayıda (MSB) en önemli bite Sola Döndür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,7 +48,7 @@ unsigned short _rotl16(
  Döndürülecek değer.  
   
  [in] `shift`  
- Döndürmek için BITS sayısı.  
+ Döndürmek için bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Döndürülen değer.  
@@ -57,13 +57,13 @@ unsigned short _rotl16(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_rotl8`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_rotl16`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_rotl8`|x86, ARM, x64|  
+|`_rotl16`|x86, ARM, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sola kaydırma işlemi, sol döndürme yürütürken, devre dışı yüksek son kalan yüksek sıra bitleri en az önemli bit konumlara taşınır.  
+ Sola kaydırma işleminin aksine, sol döndürme yürütülürken, yüksek sona kalan yüksek sıra bitleri en az önemli bit konumlarına taşınır.  
   
 ## <a name="example"></a>Örnek  
   
@@ -104,7 +104,7 @@ Rotating 0x41 left by 7 bits gives 0xa0
 Rotating unsigned short 0x12 left by 10 bits gives 0x4800  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)   

@@ -15,12 +15,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 743f15cdb9fe8b0233f5b59ca399c0f47704d441
-ms.sourcegitcommit: b0d6777cf4b580d093eaf6104d80a888706e7578
+ms.openlocfilehash: 8e9f5527917dcab663670d59f7a4ce0f51948bfb
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39269546"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466055"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
@@ -30,7 +30,7 @@ Linux CMake desteği, Visual Studio için Linux C++ iş yükünü yüklediğiniz
 Bu konuda, Visual Studio'da CMake desteği temel olarak bilindiğini sahip olduğunuz varsayılır. Daha fazla bilgi için [Visual C++ için CMake araçlarını](../ide/cmake-tools-for-visual-cpp.md). CMake kendisi hakkında daha fazla bilgi için bkz: [derleme, Test ve paket Your yazılım CMake ile](https://cmake.org/).
 
 > [!NOTE]  
-> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Paket Yöneticisi'ni CMake daha eski bir sürümünü sağlıyorsa, geçici bir çözüm olarak çalışabilir [kaynağından CMake oluşturma](#build-a-supported-cmake release-from-source) veya resmi indirme [CMake indirme sayfası](https://cmake.org/download/). Destekleyen bir Microsoft tarafından sağlanan CMake değişken için [CMake hedefleri görünümü](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) bölmesinde Visual Studio, en son önceden oluşturulmuş ikili karşıdan [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases).
+> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Destekleyen bir Microsoft tarafından sağlanan CMake değişken için [CMake hedefleri görünümü](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) bölmesinde Visual Studio, en son önceden oluşturulmuş ikili karşıdan [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases). Paket Yöneticisi'ni CMake 3.8 daha eski bir sürüm sağlıyorsa, geçici bir çözüm olarak çalışabilir [kaynağından CMake oluşturma](#build-a-supported-cmake-release-from-source), veya standart CMake kullanmayı tercih, resmi indirebilirsiniz [CMake indirme sayfası](https://cmake.org/download/). 
 
 ## <a name="open-a-folder"></a>Klasör Aç
 

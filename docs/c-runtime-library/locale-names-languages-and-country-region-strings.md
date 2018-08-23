@@ -1,7 +1,7 @@
 ---
 title: Yerel ayar adları, diller ve ülke / bölge dizeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/13/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: conceptual
@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f28262a1402d81bd5dcd0933f943b420a37f044
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: c072074c24466458ebd19e1335f49169c5c22bd5
+ms.sourcegitcommit: 3b78ddea5fd3e22b7c5cd2d787ec71a518a52223
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606741"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465446"
 ---
 # <a name="locale-names-languages-and-countryregion-strings"></a>Yerel Ayar Adları, Diller ve Ülke/Bölge Dizeleri
 
@@ -44,9 +44,9 @@ Yerel ayar adı biçimi tercih edilir; Örneğin, `en-US` İngilizce (ABD) veya 
 
 Kod sayfası, yerel ayarla ilişkili ANSI/OEM kod sayfasıdır. Bir yerel ayarı yalnızca dile veya dile ve ülkeye/bölgeye göre belirttiğinizde kod sayfası sizin için belirlenir. Özel değeri `.ACP` ülke/bölge için ANSI kod sayfasını belirtir. Özel değeri `.OCP` ülke/bölge için OEM kod sayfasını belirtir. Örneğin, belirtirseniz `"Greek_Greece.ACP"` yerel ayar olarak, yerel olarak depolanan `Greek_Greece.1253` (ANSI kod sayfası Yunanca için), ve belirtirseniz `"Greek_Greece.OCP"` olarak depolanan yerel ayar `Greek_Greece.737` (Yunanca için OEM kod sayfası). Kod sayfaları hakkında daha fazla bilgi için bkz. [kod sayfaları](../c-runtime-library/code-pages.md). Windows üzerinde desteklenen kod sayfalarının listesi için bkz. [kod sayfası tanımlayıcıları](/windows/desktop/Intl/code-page-identifiers).
 
-Yerel ayarı belirlemek için yalnızca kod sayfası kullanırsanız, sistem varsayılan dili ve ülkesi/bölgesi kullanılır. Örneğin, belirtirseniz `".1254"` (ANSI Türkçe), İngilizce (ABD) için yapılandırılmış bir sistemde yerel ayar, depolanan yerel ayar olan `English_United States.1254`. Tutarsız davranışa neden olabileceğinden, bu biçim önerilmez.
+Yerel ayar, kullanıcının varsayılan dil ve ülke/bölge tarafından raporlandığı şekilde belirlemek için yalnızca kod sayfası kullanırsanız [GetUserDefaultLocaleName](/windows/desktop/api/winnls/nf-winnls-getuserdefaultlocalename) kullanılır. Örneğin, belirtirseniz `".1254"` (ANSI Türkçe) İngilizce (ABD) için yapılandırılmış bir kullanıcı için yerel depolanan yerel ayar olan `English_United States.1254`. Tutarsız davranışa neden olabileceğinden, bu biçim önerilmez.
 
-A *yerel* bağımsız değişken değerini `C` C çeviri için en az ANSI uyumlu ortamı belirtir. `C` Yerel varsayar, her `char` veri türünün 1 bayt ve değerinin her zaman 256'dan az olduğu. Varsa *yerel ayar* noktasıdır boş bir dize, yerel ayar uygulama tarafından tanımlanan doğal ortamdır.
+A *yerel* bağımsız değişken değerini `C` C çeviri için en az ANSI uyumlu ortamı belirtir. `C` Yerel varsayar, her **char** veri türünün 1 bayt ve değerinin her zaman 256'dan az olduğu. Varsa *yerel ayar* noktasıdır boş bir dize, yerel ayar uygulama tarafından tanımlanan doğal ortamdır.
 
 İçin aynı anda yerel ayar kategorilerinin tümünü belirtebilirsiniz `setlocale` ve `_wsetlocale` işlevleri kullanarak `LC_ALL` kategorisi. Kategorilerin tümü aynı yerel ayara ayarlanabilir veya bu biçime sahip bir yerel bağımsız değişken kullanarak her kategoriyi ayrı ayrı ayarlayabilirsiniz:
 

@@ -18,30 +18,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81e41ef7bf7b93e4b2a533dddcb82fee904cb428
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 70b472ba11445cdc5aa2a192d02d82c51d724b8c
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912998"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465598"
 ---
 # <a name="pushmacro"></a>push_macro
-Değerini kaydeder *macro_name* yığının bu makrosu için makro.  
+Değerini kaydeder *macro_name* bu makroya yönelik yığının en üstündeki makrosu.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma push_macro("  
 macro_name  
 ")  
-  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Değeri alabilir *macro_name* ile **pop_macro**.  
+ 
+Değerini alabilir *macro_name* ile `pop_macro`.  
   
- Bkz: [pop_macro](../preprocessor/pop-macro.md) bir örnek için.  
+Bkz: [pop_macro](../preprocessor/pop-macro.md) örneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5699f4c8c49bd35e85479572e1b49f8080415e65
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 9ea5da8b98c528eb6832c850e41b0a42c386f901
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884999"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466172"
 ---
 # <a name="ccomaggobject-class"></a>CComAggObject sınıfı
 Bu sınıfın uyguladığı [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanan nesne için arabirim. Tanımı gereği, toplanan nesne bir dış nesne içinde yer alır. `CComAggObject` Sınıfı benzer [CComObject sınıfı](../../atl/reference/ccomobject-class.md)dışında dış istemcilere doğrudan erişilebilen bir arabirim sunar.  
@@ -63,7 +63,7 @@ class CComAggObject : public IUnknown,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComAggObject::AddRef](#addref)|Toplanan nesne başvuru sayısını artırır.|  
-|[CComAggObject::CreateInstance](#createinstance)|Bu statik işlev yeni bir oluşturmanıza olanak tanır **CComAggObject <** `contained` **>** yükü olmadan nesne [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
+|[CComAggObject::CreateInstance](#createinstance)|Bu statik işlev yeni bir oluşturmanıza olanak tanır **CComAggObject <** `contained` **>** yükü olmadan nesne [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).|  
 |[CComAggObject::FinalConstruct](#finalconstruct)|Öğesinin son başlatılmasını gerçekleştirir `m_contained`.|  
 |[CComAggObject::FinalRelease](#finalrelease)|Son yok edilmesini gerçekleştirir `m_contained`.|  
 |[CComAggObject::QueryInterface](#queryinterface)|İstenen arabirim için bir işaretçi alır.|  
@@ -129,7 +129,7 @@ CComAggObject(void* pv);
  Çağrıları ayrılan tüm kaynakları serbest bırakan [FinalRelease](#finalrelease), ve modül kilit sayısını azaltır.  
   
 ##  <a name="createinstance"></a>  CComAggObject::CreateInstance  
- Bu statik işlev yeni bir oluşturmanıza olanak tanır **CComAggObject <** `contained` **>** yükü olmadan nesne [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
+ Bu statik işlev yeni bir oluşturmanıza olanak tanır **CComAggObject <** `contained` **>** yükü olmadan nesne [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ```
 static HRESULT WINAPI CreateInstance(

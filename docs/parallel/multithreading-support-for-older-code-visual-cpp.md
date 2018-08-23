@@ -20,47 +20,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4ecd5f210aa01c41b3806ce15e19e77b8c93324
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c911ff2f0dcd43a6f07144f893b91f3a97c6708b
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687731"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465605"
 ---
 # <a name="multithreading-support-for-older-code-visual-c"></a>Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)
-Visual C++ yürütme eşzamanlı çalışan birden çok eşzamanlı iş parçacığına sahip olmanızı sağlar. İle çoklu iş parçacığı kullanımı, arkaplan görevleri, eşzamanlı girdi akışları ile yönetme, bir kullanıcı arabirimi ve daha fazlasını yapabilirsiniz.  
+Visual C++ birden çok eşzamanlı iş parçacığı aynı anda çalışan yürütme sahip olmanızı sağlar. İle çoklu iş parçacığı, arka plan görevleri, eşzamanlı giriş akışları yönetme, bir kullanıcı arabirimi ve daha fazlasını yönetin.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)  
- Microsoft Windows ile çoklu iş parçacığı kullanan uygulamalar oluşturmak için destek sağlar  
+ 
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)  
+Microsoft Windows ile çoklu iş parçacığı kullanan uygulamalar oluşturmak için destek sağlar.  
   
- [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)  
- İşlemler ve iş parçacıkları nedir ve ne MFC yaklaşımının açıklar çoklu iş parçacığı kullanımı değil.  
+[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)  
+İşlemler ve iş parçacıklarının ne olduğunu ve MFC yaklaşımının ne açıklar çoklu iş parçacığı kullanımı olan.  
   
- [Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar](../parallel/multithreading-and-locales.md)  
- C çalışma zamanı kitaplığı ve birden çok iş parçacıklı uygulamada C++ Standart Kitaplığı yerel ayar işlevselliğini kullanırken çıkabilecek sorunlar açıklanır.  
+[Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar](../parallel/multithreading-and-locales.md)  
+Hem C çalışma zamanı kitaplığı, hem de C++ Standart Kitaplığı çok iş parçacıklı bir uygulamada bulunan yerel ayar işlevselliği kullanıldığında ortaya çıkan sorunları açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [CWinThread](../mfc/reference/cwinthread-class.md)  
- Bir uygulama içinde yürütme iş parçacığı temsil eder.  
+ 
+[CWinThread](../mfc/reference/cwinthread-class.md)  
+Uygulamadaki bir iş parçacığını temsil eder.  
   
- [CSyncObject](../mfc/reference/csyncobject-class.md)  
- Win32 eşitleme nesneleri için ortak işlevselliği sağlayan saf sanal bir sınıfı tanımlar.  
+[CSyncObject](../mfc/reference/csyncobject-class.md)  
+Win32'de eşitleme nesneleriyle ortak işlevselliği sağlayan saf sanal sınıfı açıklar.  
   
- [CSemaphore](../mfc/reference/csemaphore-class.md)  
- Bir kaynağa erişmek için bir veya daha fazla işlemde sınırlı sayıda iş parçacığına izin veren bir eşitleme nesnesi olan bir semafor temsil eder.  
+[CSemaphore](../mfc/reference/csemaphore-class.md)  
+Bir kaynağa erişmek için bir veya daha fazla işlemde sınırlı sayıda iş parçacığına izin veren bir eşitleme nesnesi olan bir semaforu temsil eder.  
   
- [CMutex](../mfc/reference/cmutex-class.md)  
- Bir iş parçacığı birbirini dışlayan bir kaynağa erişim izni veren bir eşitleme nesnesi olan bir mutex temsil eder.  
+[CMutex](../mfc/reference/cmutex-class.md)  
+Bir iş parçacığı bir kaynağa karşılıklı olarak dışlama erişimine izin veren bir eşitleme nesnesi olan mutex'i temsil eder.  
   
- [CCriticalSection](../mfc/reference/ccriticalsection-class.md)  
- Bir kaynak veya kod bölümüne erişmek için aynı anda tek bir iş parçacığı veren bir eşitleme nesnesi olan önemli bir bölümünü temsil eder.  
+[CCriticalSection](../mfc/reference/ccriticalsection-class.md)  
+Bir kaynağa veya kod bölümüne erişmek için bir seferde bir iş parçacığına izin veren bir eşitleme nesnesi olan kritik bölümü temsil eder.  
   
- [CEvent](../mfc/reference/cevent-class.md)  
- Başka bir olayın oluştuğunu bildirmek bir iş parçacığı veren bir eşitleme nesnesi olan bir olayı temsil eder.  
+[CEvent](../mfc/reference/cevent-class.md)  
+Başka bir olayın oluştuğunu bildirmek bir iş parçacığına izin veren bir eşitleme nesnesi olan bir olayı temsil eder.  
   
- [CMultiLock](../mfc/reference/cmultilock-class.md)  
- Birden çok iş parçacıklı programda kaynaklara erişimi denetlemek kullanılan erişim denetim mekanizmasını temsil eder.  
+[CMultiLock](../mfc/reference/cmultilock-class.md)  
+Çoklu iş parçacığı kullanan programda kaynaklara erişimi denetlemek için kullanılan erişim denetim mekanizmasını temsil eder.  
   
- [CSingleLock](../mfc/reference/csinglelock-class.md)  
- Birden çok iş parçacıklı programda bir kaynağa erişimi denetlemek kullanılan erişim denetim mekanizmasını temsil eder.  
+[CSingleLock](../mfc/reference/csinglelock-class.md)  
+Çoklu iş parçacığı kullanan programda bir kaynağa erişimi denetlemek için kullanılan erişim denetim mekanizmasını temsil eder.  

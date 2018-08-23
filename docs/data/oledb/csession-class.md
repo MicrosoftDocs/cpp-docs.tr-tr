@@ -51,12 +51,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 72ac1a5be4f2e114e5b90b65542b09733c43d174
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 1ca0d5a4dfd8139c0941dffd22397f296b7b4354
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338869"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466181"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 Bir tek veritabanı erişim oturumu temsil eder.  
@@ -98,7 +98,7 @@ HRESULT Abort(BOID* pboidReason = NULL,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [Iİşlem::Durdur](https://msdn.microsoft.com/library/ms709833.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT. 
@@ -127,13 +127,13 @@ HRESULT Commit(BOOL bRetaining = FALSE,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ITransaction::Commit](https://msdn.microsoft.com/library/ms713008.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [ITransaction::Commit](https://msdn.microsoft.com/library/ms713008.aspx).  
+ Daha fazla bilgi için [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\)).  
 
 ## <a name="gettransactioninfo"></a> CSession::gettransactionınfo
 Bir işlem ile ilgili bilgileri döndürür.  
@@ -145,13 +145,13 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ITransaction::GetTransactionInfo](https://msdn.microsoft.com/library/ms714975.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [ITransaction::GetTransactionInfo](https://msdn.microsoft.com/library/ms714975.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Daha fazla bilgi için [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="open"></a> CSession::Open
 Veri kaynağı nesnesi için yeni bir oturum açar.  
@@ -169,10 +169,10 @@ HRESULT Open(const CDataSource& ds,
  [in] Oturum açılacak olan veri kaynağı.  
   
  *pPropSet*  
- [in] Bir dizi işaretçi [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://msdn.microsoft.com/library/ms713696.aspx) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
+ [in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
   
  *ulPropSets*  
- [in] Sayısını [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) yapıları geçirilen *pPropSet* bağımsız değişken.  
+ [in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  
@@ -193,13 +193,13 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ITransactionLocal::StartTransaction](https://msdn.microsoft.com/library/ms709786.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [ITransactionLocal::StartTransaction](https://msdn.microsoft.com/library/ms709786.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Daha fazla bilgi için [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CatDB](../../visual-cpp-samples.md)   

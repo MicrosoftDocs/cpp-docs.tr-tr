@@ -354,17 +354,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 021b66393b37cdc83a514ca194baef8049f5c62f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: e9ac21e909c8286ef6a7d1973837b0caf69b711c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853569"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464786"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager sınıfı
 Genel düzeyde, uygulamanızın görünümünü değiştirmek için destek sağlar. `CMFCVisualManager` Sınıfı, tutarlı bir stil kullanarak uygulamanızın GUI denetimlerini çizmek amacıyla yönergeler sağlayan bir sınıf birlikte çalışır. Bu diğer sınıflara görsel Yöneticiler denir ve bunlar devralınacak `CMFCBaseVisualManager`.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

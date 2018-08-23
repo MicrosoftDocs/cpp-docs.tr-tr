@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dc15e9eaf7068756aa4d945cf494156498af6f9
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 2a03e29ed5197d27b421135b1561f3edc88af596
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025990"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466000"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE DB sağlayıcısı belirtilen veri kaynağına erişmek için gereken ayarlar.  
@@ -33,7 +33,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
   
 ## <a name="uielement-list"></a>UIElement Listesi  
 **Veri kaynağı**  
-**Veri kaynağı** düğmesi belirtilen OLE DB sağlayıcısı kullanılarak belirtilen veri kaynağını ayarlamanıza imkan sağlar. Bu düğmeye tıkladığınızda **veri bağlantı özellikleri** iletişim kutusu görüntülenir. Bağlantı dizeleri derleme hakkında daha fazla bilgi ve **veri bağlantı özellikleri** iletişim kutusu, bkz: [veri bağlantısı API'sine genel bakış](https://msdn.microsoft.com/library/ms718102.aspx) Windows SDK belgelerinde.  
+**Veri kaynağı** düğmesi belirtilen OLE DB sağlayıcısı kullanılarak belirtilen veri kaynağını ayarlamanıza imkan sağlar. Bu düğmeye tıkladığınızda **veri bağlantı özellikleri** iletişim kutusu görüntülenir. Bağlantı dizeleri derleme hakkında daha fazla bilgi ve **veri bağlantı özellikleri** iletişim kutusu, bkz: [veri bağlantısı API'sine genel bakış](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) Windows SDK belgelerinde.  
   
 > [!NOTE]
 >  Önceki sürümlerde, SHIFT tuşunu **veri kaynağı** düğmesi, bir veri bağlantısı (UDL) dosyasını seçmek izin vermek için bir dosya Aç iletişim kutusu açılır. Bu işlev artık desteklenmemektedir.  
@@ -176,7 +176,7 @@ Tıklayın **Tamam** tamamlanması. **Veritabanı nesnesini Seç** iletişim kut
  Kullanmak istiyorsanız bu seçeneği `CCommand` veya `db_command` komut ve komut erişimci sınıf bildirimleri oluşturmak için. Varsayılan seçenek budur.  
   
  **Destek**  
- (Varsayılan, Yok'tur) tüketicide desteklenmesi için güncelleştirmeleri türlerini belirtmek için onay kutularını seçin. Aşağıdakilerin her biri ayarlayacak [DBPROP_IRowsetChange](https://msdn.microsoft.com/library/ms715892.aspx) ve uygun girişleri [DBPROP_UPDATABILITY](https://msdn.microsoft.com/library/ms722676.aspx) eşleme özelliğini ayarlayın.  
+ (Varsayılan, Yok'tur) tüketicide desteklenmesi için güncelleştirmeleri türlerini belirtmek için onay kutularını seçin. Aşağıdakilerin her biri ayarlayacak [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892\(v=vs.85\)) ve uygun girişleri [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676\(v=vs.85\)) eşleme özelliğini ayarlayın.  
   
  **Değişiklik**  
  Tüketici satır kümesinde satır veri güncelleştirmelerini desteklediğini belirtir.  
@@ -190,4 +190,4 @@ Tıklayın **Tamam** tamamlanması. **Veritabanı nesnesini Seç** iletişim kut
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL OLE DB Tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)   
  [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)   
- [Bağlantı dizelerini ve veri bağlantıları (OLE DB)](https://msdn.microsoft.com/library/ms718376.aspx)
+ [Bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

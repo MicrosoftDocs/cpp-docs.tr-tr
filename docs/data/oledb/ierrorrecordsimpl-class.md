@@ -76,15 +76,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7339b345ad63f59a2db24251c06b80774305ab00
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 149508ee799ab2802dd2a106b503376851ac31cd
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338125"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464885"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl Sınıfı
-OLE DB uygulayan [IErrorRecords](https://msdn.microsoft.com/library/ms718112.aspx) kayıtları ekleme ve veri üyesi kayıtlar alınırken arabirimi ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) türü **CAtlArray <** `RecordClass`**>**.  
+OLE DB uygulayan [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) kayıtları ekleme ve veri üyesi kayıtlar alınırken arabirimi ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) türü **CAtlArray <** `RecordClass`**>**.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -122,7 +122,7 @@ class IErrorRecordsImpl : public IErrorRecords
 |[AddErrorRecord](#adderrorrecord)|OLE DB hatası nesnesine bir kayıt ekler.|  
 |[GetBasicErrorInfo](#getbasicerrorinfo)|Dönüş kodu ve sağlayıcıya özgü hata numarası gibi bir hata ile ilgili temel bilgileri döndürür.|  
 |[GetCustomErrorObject](#getcustomerrorobject)|Bir işaretçi, bir özel hata nesnesi üzerinde bir arabirim döndürür.|  
-|[GetErrorInfo](#geterrorinfo)|Döndürür bir [IErrorInfo](https://msdn.microsoft.com/library/ms718112.aspx) belirtilen kayıt arabirim işaretçisi.|  
+|[GetErrorInfo](#geterrorinfo)|Döndürür bir [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) belirtilen kayıt arabirim işaretçisi.|  
 |[GetErrorParameters](#geterrorparameters)|Hata parametrelerini döndürür.|  
 |[GetRecordCount](#getrecordcount)|OLE DB kayıt nesnesinde kayıt sayısını döndürür.|  
   
@@ -226,7 +226,7 @@ STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::AddErrorRecord](https://msdn.microsoft.com/library/ms725362.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="getbasicerrorinfo"></a> Ierrorrecordsımpl::getbasicerrorınfo
 Dönüş kodu ve sağlayıcıya özgü hata numarası gibi bir hata ile ilgili temel bilgileri döndürür.  
@@ -239,7 +239,7 @@ STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetBasicErrorInfo](https://msdn.microsoft.com/library/ms723907.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Bkz: [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="getcustomerrorobject"></a> Ierrorrecordsımpl::getcustomerrorobject
 Bir işaretçi, bir özel hata nesnesi üzerinde bir arabirim döndürür.  
@@ -253,10 +253,10 @@ STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/library/ms725417.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="geterrorinfo"></a> Ierrorrecordsımpl::geterrorınfo
-Döndürür bir [IErrorInfo](https://msdn.microsoft.com/library/ms718112.aspx) belirtilen kayıt arabirim işaretçisi.  
+Döndürür bir [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) belirtilen kayıt arabirim işaretçisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -267,7 +267,7 @@ STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/library/ms711230.aspx) içinde *OLE DB Programcının Başvurusu*.
+ Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="geterrorparameters"></a> Ierrorrecordsımpl::geterrorparameters
 Hata parametrelerini döndürür.  
@@ -280,7 +280,7 @@ STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/library/ms715793.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="getrecordcount"></a> Ierrorrecordsımpl::getrecordcount
 OLE DB kayıt nesnesinde kayıt sayısını döndürür.  
@@ -292,7 +292,7 @@ STDMETHOD(GetRecordCount )(ULONG *pcRecords);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetRecordCount](https://msdn.microsoft.com/library/ms722724.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="rgerrors"></a> Ierrorrecordsımpl::m_rgerrors
 Hata kayıt dizisi.  

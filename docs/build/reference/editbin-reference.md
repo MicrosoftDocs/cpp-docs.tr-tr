@@ -19,20 +19,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c20191fdb133fe09ed4f6a462cd777098acd5f05
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6e1e9963328d328767d97b3af34e20b1d2a1840b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372314"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465081"
 ---
 # <a name="editbin-reference"></a>EDITBIN Başvurusu
-Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. EXE) ortak nesne dosyası biçimi (COFF) ikili dosyalarını değiştirir. Nesne dosyaları, yürütülebilir dosyaları ve dinamik bağlantı kitaplığı (DLL) değiştirmek için EDITBIN kullanabilirsiniz.  
+Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. Exe dosyası) ikili dosyaları ortak nesne dosyası biçimi (COFF) değiştirir. Nesne dosyaları, yürütülebilir dosyalar ve dinamik bağlantı kitaplıklarını (DLL) değiştirileceğini EDITBIN kullanabilirsiniz.  
   
 > [!NOTE]
->  Bu araç yalnızca başlatabilirsiniz [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] komut istemi. Bir sistem komut istemi veya dosya Gezgini başlatılamıyor.  
+>  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.  
   
- EDITBIN ile üretilen dosyalar üzerinde kullanılabilir değil [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği. /GL ile üretilen ikili dosyaları yapılan tüm değişiklikleri yeniden derlenmesi ve bağlama kazanılması gerekecektir.  
+ EDITBIN ile üretilen dosyaları kullanmak için erişilebilir değil [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği. /GL ile üretilen ikili dosyalara yapılan tüm değişiklikler, yeniden derlemeden ve bağlama elde gerekecektir.  
   
 -   [EDITBIN komut satırı](../../build/reference/editbin-command-line.md)  
   

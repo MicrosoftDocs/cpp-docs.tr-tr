@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8287f96f80748272e29b22ed5c43c364f4353b86
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b2bc1a0bbf56623feccd4d3bd96f1e719e192d48
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691683"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42464577"
 ---
 # <a name="shared-openmp"></a>shared (OpenMP)
-Bir veya daha fazla değişken tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.  
+Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,10 +36,10 @@ shared(var)
  Burada,  
   
  `var`  
- Paylaşmak için daha fazla değişken bir. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.  
+ Paylaşmak için bir veya daha fazla değişken. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Değişkenleri iş parçacıkları arasında paylaşmak için başka bir yolu [copyprivate](../../../parallel/openmp/reference/copyprivate.md) yan tümcesi.  
+ Değişkenleri iş parçacıkları arasında paylaşmak için başka bir yöntem, [copyprivate](../../../parallel/openmp/reference/copyprivate.md) yan tümcesi.  
   
  `shared` Aşağıdaki yönergeleri için geçerlidir:  
   
@@ -47,9 +47,9 @@ shared(var)
   
 -   [parallel](../../../parallel/openmp/reference/parallel.md)  
   
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
+-   [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)  
   
- Daha fazla bilgi için bkz: [paylaşılan 2.7.2.4](../../../parallel/openmp/2-7-2-4-shared.md).  
+ Daha fazla bilgi için [paylaşılan 2.7.2.4](../../../parallel/openmp/2-7-2-4-shared.md).  
   
 ## <a name="example"></a>Örnek  
  Bkz: [özel](../../../parallel/openmp/reference/private-openmp.md) kullanma örneği için `shared`.  

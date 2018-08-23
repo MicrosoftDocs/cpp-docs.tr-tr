@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47b9fd580d1ebabf4352104fe49f1d3c982a49e7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a3ce9091fe380f7d255dd321dbb9eb5ca7134b8d
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846369"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465361"
 ---
 # <a name="message"></a>iletisi
 Derlemeyi sonlandırmadan standart çıktıya bir dize sabiti gönderir.  
@@ -31,20 +31,20 @@ Derlemeyi sonlandırmadan standart çıktıya bir dize sabiti gönderir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma message( messagestring )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tipik bir kullanımını **ileti** pragma olan derleme zamanında bilgilendirici iletileri görüntülemek için.  
+
+Tipik bir kullanımı, **ileti** pragması, derleme zamanında bilgi iletileri görüntülemek için.  
   
- *Messagestring* parametresi bir dize sabit değeri genişletir makrosu olabilir ve bu tür makroları herhangi bir arada dize değişmez değerleri ile birleştirme.  
+*Messagestring* parametresi bir dize sabiti olarak genişleyen bir makro olabilir ve bu tür makroları dize herhangi bir birleşimini bitiştirebilirsiniz.  
   
- Önceden tanımlanmış makro kullanırsanız **ileti** pragma, makrosu bir dize döndürmelidir, başka bir dizeye makrosu çıktısını dönüştürmeniz gerekir.  
+Önceden tanımlanmış bir makro kullanırsanız **ileti** pragması, makro bir dize döndürmelidir, aksi takdirde makronun çıktısını bir dizeye dönüştürmek gerekir.  
   
- Aşağıdaki kod parçası kullanan **ileti** pragma derleme sırasında iletileri görüntülemek için:  
+Aşağıdaki kod parçası kullanan **ileti** pragması, derleme sırasında iletileri görüntülemek için:  
   
-```  
+```cpp  
 // pragma_directives_message1.cpp  
 // compile with: /LD  
 #if _M_IX86 >= 500  
@@ -68,4 +68,5 @@ Derlemeyi sonlandırmadan standart çıktıya bir dize sabiti gönderir.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

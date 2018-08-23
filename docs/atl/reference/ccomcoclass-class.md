@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33caa14a0a406b380ba53eb8ed92cf939581f862
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 6043277eff17340cd57d0a6ee1bb8e84625f45b9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026964"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464589"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass sınıfı
 Bu sınıf, bir sınıfın örneklerini oluşturmak ve özelliklerini almak için yöntemler sağlar.  
@@ -95,7 +95,7 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
  [out] Oluşturma başarılı olursa, istenen arabirim işaretçisi alır bir işaretçi değişkeninin adresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini. Bkz: [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) olası dönüş değerlerinin bir açıklaması için Windows SDK.  
+ Standart bir HRESULT değerini. Bkz: [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) olası dönüş değerlerinin bir açıklaması için Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevin ilk aşırı yükleme, tipik bir nesne oluşturmak için kullanın. İkinci aşırı yükleme, oluşturulan nesne toplamak, ihtiyacınız olduğunda kullanın.  
@@ -107,7 +107,7 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
  Unutmayın arabirimi *Q* kullanarak alınabilmesi için bir IID ilişkili olmalıdır [__uuidof](../../cpp/uuidof-operator.md) işleci.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte, `CDocument` ATL Sihirbazı tarafından oluşturulan sınıf türetilir `CComCoClass` uygulayan `IDocument` arabirimi. İstemcileri kullanarak belge örnekleri oluşturmasının OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO makro nesne eşlemesindeki sınıf kaydettirildikten [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615). `CApplication` bir yöntem bir belge sınıfı örneğini oluşturmak için kendi COM arabirimleri sağlar. bir CoClass ' dir. Ne kadar kolay olduğunu gösterir aşağıdaki kod örnekleri kullanarak belge sınıfı oluşturmak için `CreateInstance` öğesinden devralınan üye `CComCoClass` temel sınıfı.  
+ Aşağıdaki örnekte, `CDocument` ATL Sihirbazı tarafından oluşturulan sınıf türetilir `CComCoClass` uygulayan `IDocument` arabirimi. İstemcileri kullanarak belge örnekleri oluşturmasının OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO makro nesne eşlemesindeki sınıf kaydettirildikten [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance). `CApplication` bir yöntem bir belge sınıfı örneğini oluşturmak için kendi COM arabirimleri sağlar. bir CoClass ' dir. Ne kadar kolay olduğunu gösterir aşağıdaki kod örnekleri kullanarak belge sınıfı oluşturmak için `CreateInstance` öğesinden devralınan üye `CComCoClass` temel sınıfı.  
   
  [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]  
   

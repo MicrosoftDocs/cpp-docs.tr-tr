@@ -8,12 +8,14 @@ f1_keywords:
 - exception/std::terminate_handler
 - exception/std::unexpected_handler
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
-ms.openlocfilehash: a1c32311109ee19056c0a73d922ab1a965e3fbbb
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+author: corob-msft
+ms.author: corob
+ms.openlocfilehash: 35cc0d25d16831ae5de61f04c4e66763278c10d8
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954131"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464510"
 ---
 # <a name="ltexceptiongt-typedefs"></a>&lt;özel durum&gt; tür tanımları
 

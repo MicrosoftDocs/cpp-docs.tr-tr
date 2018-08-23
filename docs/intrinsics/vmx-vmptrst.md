@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad1b6587f4386565ae7de84a7b6a170da98b6df8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2997ed93de7291c22ae4f147bdd2392b71385e6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328600"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465547"
 ---
 # <a name="vmxvmptrst"></a>__vmx_vmptrst
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Belirtilen adresteki geçerli sanal makine denetim yapısı (Windows VMCS) işaretçisine depolar.  
+ Belirtilen adresteki geçerli sanal makine denetim yapısı (Windows VMCS) işaretçi depolar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,23 +38,23 @@ void __vmx_vmptrst(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [,] *`VmcsPhysicalAddress`  
- Geçerli Windows VMCS işaretçisi depolandığı adresi.  
+ [in] *`VmcsPhysicalAddress`  
+ Geçerli Windows VMCS işaretçinin depolandığı adresi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- 64 bit fiziksel adres Windows VMCS işaretçidir.  
+ Bir 64 bit fiziksel adresi Windows VMCS işaretçisidir.  
   
- `__vmx_vmptrst` İşlevi eşdeğerdir `VMPTRST` makine yönergesi. Bu işlev bir ana bilgisayarın sanal makine İzleyici etkileşiminin bir konuk işletim sistemi ve uygulamaları destekler. Daha fazla bilgi için belge, "Intel Sanallaştırma teknik belirtim IA-32 Intel mimarisi," için arama sırasında numara C97063-002, belge [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__vmx_vmptrst` İşlev, eşdeğer `VMPTRST` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__vmx_vmptrst`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmptrst`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

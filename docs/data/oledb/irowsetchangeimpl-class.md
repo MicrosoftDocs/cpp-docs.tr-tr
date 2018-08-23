@@ -43,15 +43,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0f77f9a33b0cf51ea54d16f89e86ea914640f627
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: c64d6cc460d068a5d0acf90795cb405a920b867f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339604"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465731"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl Sınıfı
-OLE DB Şablonları uygulamasının [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx) arabirimi OLE DB belirtimi.  
+OLE DB Şablonları uygulamasının [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) arabirimi OLE DB belirtimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -114,7 +114,7 @@ class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
   
 -   Bölüm 6 *OLE DB Programcının Başvurusu*  
   
--   Ayrıca bkz: nasıl `RUpdateRowset` UpdatePV örnekte kullanılan sınıf  
+-   Ayrıca bkz: nasıl `RUpdateRowset` sınıfı kullanılan [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örnek.  
   
 ## <a name="deleterows"></a> IRowsetChangeImpl::DeleteRows
 Satır satır kümesinden siler.  
@@ -129,7 +129,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetChange::DeleteRows](https://msdn.microsoft.com/library/ms724362.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Bkz: [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::ınsertrow
 Oluşturur ve yeni bir satır kümesinde başlatır.  
@@ -144,7 +144,7 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetChange::InsertRow](https://msdn.microsoft.com/library/ms716921.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Bkz: [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="setdata"></a> IRowsetChangeImpl::SetData
 Bir veya daha fazla sütun veri değerlerini ayarlar.  
@@ -158,7 +158,7 @@ STDMETHOD (SetData )(HROW hRow,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetChange::SetData](https://msdn.microsoft.com/library/ms721232.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Bkz: [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::flushdata
 Veri, depolama alanına kaydetmeye sağlayıcısı tarafından Overidden.  

@@ -94,17 +94,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7315adc855b0bfbe1cc4ffae87c416fbaa584d57
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: d19ede21d90353f9741a5a1250eddf049de71aa6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079370"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466276"
 ---
 # <a name="cpanedivider-class"></a>CPaneDivider sınıfı
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
- `CPaneDivider` Sınıfı iki bölme böler, bölmeleri iki grupları böler veya bir grup ana çerçeve penceresi istemci alanından bölmeleri ayırır.  
+ `CPaneDivider` Sınıfı iki bölmeyi ayırır, iki bölme grubunu ayırır veya bir grup bölmeleri ana çerçeve penceresinin istemci alanından ayırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -163,27 +163,27 @@ class CPaneDivider : public CBasePane
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPaneDivider::GetPanes](#getpanes)|Bulunan bölmeleri listesini döndürür [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md). Bu yöntem yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır.|  
-|[CPaneDivider::GetPaneDividers](#getpanedividers)|Bulunan bölmesinde Bölücü listesini döndürür [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md). Bu yöntem yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır.|  
+|[CPaneDivider::GetPanes](#getpanes)|Bulunan bölmeleri listesini döndürür [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md). Bu yöntem, yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır.|  
+|[CPaneDivider::GetPaneDividers](#getpanedividers)|Bulunan bölmesinde Bölücü listesini döndürür [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md). Bu yöntem, yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır.|  
   
 ### <a name="data-members"></a>Veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CPaneDivider::m_nDefaultWidth](#m_ndefaultwidth)|Uygulamadaki tüm bölmesinde Bölücü piksel varsayılan genişliğini belirtir.|  
-|[CPaneDivider::m_pSliderRTC](#m_psliderrtc)|Bir işaretçi hakkında çalışma zamanı sınıf bilgileri tutan bir `CPaneDivider`-türetilmiş bir nesne içermelidir.|  
+|[CPaneDivider::m_pSliderRTC](#m_psliderrtc)|İlgili çalışma zamanı sınıf bilgileri bir işaretçi tutan bir `CPaneDivider`-türetilmiş bir nesneye.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Framework oluşturur `CPaneDivider` bölme yerleştirildiğinde otomatik olarak nesneleri.  
+ Framework oluşturur `CPaneDivider` otomatik olarak bir bölme yerleştirildiğinde nesneleri.  
   
  Bölmesinde Bölücü iki tür vardır:  
   
--   bir grup bölmeleri ana çerçeve penceresi tarafına yerleştirildiğinde varsayılan bölmesinde ayırıcı oluşturulur. Bir işaretçi varsayılan bölmesinde ayırıcı tutan [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) ve bölmeleri grubunda işlemlerinin çoğu yönlendirir (bir bölmesini yeniden boyutlandırmak veya başka bir yerleştirme gibi bölmesi veya kapsayıcı) kapsayıcı Manager. Her takma bölmesinde kendi varsayılan bölmesinde ayırıcı gösteren bir işaretçi tutar.  
+-   bir grubunu ana çerçeve penceresinin tarafına yerleştirildiğinde varsayılan bölmesinde ayırıcı oluşturulur. Varsayılan bölmesinde bölme için bir işaretçi tutar [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) ve grubunu ilgili işlemlerin çoğu yönlendirir (gibi bir bölmesini yeniden boyutlandırma veya başka bir yerleştirme bölmesi veya kapsayıcı) kapsayıcı Yöneticisi. Her bir yerleştirme bölmesi, varsayılan bölmesinde bölme için bir işaretçi tutar.  
   
--   Normal bölmesinde ayırıcı yalnızca bir kapsayıcıda iki bölme böler. Daha fazla bilgi için bkz: [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md).  
+-   Normal bölmesinde bölme yalnızca bir kapsayıcıdaki iki bölme böler. Daha fazla bilgi için [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl alındığını anlatan bir `CPaneDivider` nesnesinin bir `CWorkspaceBar` nesnesi. Bu kod parçacığını parçası olan [MDI sekmeleri gösterim örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek nasıl alındığını anlatan bir `CPaneDivider` nesnesinden bir `CWorkspaceBar` nesne. Bu kod parçacığı parçasıdır [MDI sekmeleri gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_MDITabsDemo#5](../../mfc/reference/codesnippet/cpp/cpanedivider-class_1.cpp)]  
   
@@ -355,7 +355,7 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler  
  [in] *dwStyleEx*  
  [in] *dwStyle*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pParentWnd*  
  [in] *nID*  
  [in] *pContext*  
@@ -440,7 +440,7 @@ const CBasePane* GetFirstPane() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getpanedividers"></a>  CPaneDivider::GetPaneDividers  
- Bulunan bölmesinde Bölücü listesini döndürür [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md). Bu yöntem yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır.  
+ Bulunan bölmesinde Bölücü listesini döndürür [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md). Bu yöntem, yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır.  
   
 ```  
 void GetPaneDividers(CObList& lstSliders);
@@ -448,10 +448,10 @@ void GetPaneDividers(CObList& lstSliders);
   
 ### <a name="parameters"></a>Parametreler  
  [out] *lstSliders*  
- Bölmesinde kapsayıcıda yer bölmesinde Bölücü listesini içerir.  
+ Bölmesinde kapsayıcısında bulunan bölmesinde Bölücü listesini içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır. Varsayılan bölmesinde ayırıcı tüm bölmesinde kapsayıcı yeniden boyutlandırır bir ayırıcı ' dir.  
+ Bu yöntem, yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır. Varsayılan bölmesinde ayırıcı tüm bölmesinde kapsayıcıyı yeniden boyutlandırır bir ayırıcı ' dir.  
   
 ##  <a name="getpanedividerstyle"></a>  CPaneDivider::GetPaneDividerStyle  
 
@@ -465,7 +465,7 @@ DWORD GetPaneDividerStyle() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getpanes"></a>  CPaneDivider::GetPanes  
- Bulunan bölmeleri listesini döndürür [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md). Bu yöntem, yalnızca varsayılan bölmesinde Bölücü almak için çağrılmalıdır.  
+ Bulunan bölmeleri listesini döndürür [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md). Yalnızca varsayılan bölmesinde Bölücü almak için bu yöntem çağrılmalıdır.  
   
 ```  
 void GetPanes(CObList& lstBars);
@@ -473,10 +473,10 @@ void GetPanes(CObList& lstBars);
   
 ### <a name="parameters"></a>Parametreler  
  [out] *lstBars*  
- Bölmesinde kapsayıcıda yer bölmeleri listesini içerir.  
+ Bölmesinde kapsayıcısında bulunan bölmeleri listesini içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır. Varsayılan bölmesinde ayırıcı tüm bölmesinde kapsayıcı yeniden boyutlandırır bir ayırıcı ' dir.  
+ Bu yöntem, yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır. Varsayılan bölmesinde ayırıcı tüm bölmesinde kapsayıcıyı yeniden boyutlandırır bir ayırıcı ' dir.  
   
 ##  <a name="getrootcontainerrect"></a>  CPaneDivider::GetRootContainerRect  
 
@@ -570,7 +570,7 @@ BOOL IsHorizontal() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_ndefaultwidth"></a>  CPaneDivider::m_nDefaultWidth  
- Piksel cinsinden uygulamadaki tüm bölmesinde Bölücü varsayılan genişliğini belirtir.  
+ Piksel, uygulamadaki tüm bölmesinde Bölücü varsayılan genişliğini belirtir.  
   
 ```  
 AFX_IMPORT_DATA static int m_nDefaultWidth;  
@@ -592,17 +592,17 @@ virtual void Move(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="m_psliderrtc"></a>  CPaneDivider::m_pSliderRTC  
- Bir işaretçi hakkında çalışma zamanı sınıf bilgileri tutan bir `CPaneDivider`-türetilmiş bir nesne içermelidir.  
+ İlgili çalışma zamanı sınıf bilgileri için bir işaretçi tutan bir `CPaneDivider`-türetilmiş bir nesneye.  
   
 ```  
 AFX_IMPORT_DATA static CRuntimeClass* m_pSliderRTC;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özel bölmesi ayırıcı oluşturursanız, bu üye değişkeni ayarlayın. Bu bölmesinde çizildiğinde bölmesinde bölme oluşturmak çerçeve sağlar.  
+ Özel bölmesi ayırıcı oluşturmak istiyorsanız bu üye değişkeni ayarlayın. Bu bölmeyi çizildiğinde, bölmesinde ayırıcı oluşturmak çerçeve sağlar.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl ayarlanacağını gösterir `m_pSliderRTC` üye değişkeni:  
+ Aşağıdaki örnek nasıl ayarlanacağını gösterir `m_pSliderRTC` üye değişkeni:  
   
 ```  
 class CMySplitter : public CPaneDivider  

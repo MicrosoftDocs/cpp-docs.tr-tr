@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 204abfb28ed58051f27f62b522ed0b02a0a78585
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 4983234cdbc64f4ca8364c5afcc2d8e735ba2d01
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339581"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465724"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB Sağlayıcı Şablonları (C++)
 OLE DB, Microsoft evrensel veri erişimi stratejisinin önemli bir parçasıdır. OLE DB tasarım herhangi bir veri kaynağından yüksek performanslı veri erişimi sağlar. Hiç tablo verisi, bir veritabanından gelen bağımsız olarak OLE DB aracılığıyla görüntülenebilir. Esneklik, İnanılmaz derecede güç sağlar.  
@@ -63,7 +63,7 @@ OLE DB, Microsoft evrensel veri erişimi stratejisinin önemli bir parçasıdır
  Sağlayıcıları, karmaşıklığı ve işlevselliği önemli ölçüde farklılık gösterebilir. Sağlayıcıları salt okunur sağlayıcılar ve güncelleştirilebilir sağlayıcılar kategorilere ayırma kullanışlıdır:  
   
 -   Visual C++ 6.0 yalnızca salt okunur sağlayıcılar desteklenmiyor. [OLE DB sağlayıcısı oluşturma](../../data/oledb/creating-an-ole-db-provider.md) salt okunur sağlayıcıyı oluşturma anlatılmaktadır.  
--   Visual C++ güncelleştirebilirsiniz güncelleştirilebilir sağlayıcılar destekler (yazma) veri deposu. Güncelleştirilebilir sağlayıcılar hakkında daha fazla bilgi için bkz: [güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md); [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek güncelleştirilebilir sağlayıcı örneği verilmiştir.  
+-   Visual C++ güncelleştirebilirsiniz güncelleştirilebilir sağlayıcılar destekler (yazma) veri deposu. Güncelleştirilebilir sağlayıcılar hakkında daha fazla bilgi için bkz: [güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md); [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örnek güncelleştirilebilir sağlayıcı örneği verilmiştir.  
   
  Daha fazla bilgi için bkz.:  
   
@@ -75,5 +75,5 @@ OLE DB, Microsoft evrensel veri erişimi stratejisinin önemli bir parçasıdır
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri erişimi](../data-access-in-cpp.md)   
- [OLE DB SDK Belgeleri](https://msdn.microsoft.com/library/ms722784.aspx)   
- [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/library/ms713643.aspx)
+ [OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
+ [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\))

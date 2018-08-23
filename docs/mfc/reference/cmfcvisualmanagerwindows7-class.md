@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17ec3560e7faf8c49f410437c79609bfb871a9c9
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 58772f3690a68dc3a0d22c2db863fc7ad4904a1c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849955"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465725"
 ---
 # <a name="cmfcvisualmanagerwindows7-class"></a>CMFCVisualManagerWindows7 sınıfı
-`CMFCVisualManagerWindows7` Uygulamaya görünümünü verir bir [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama.  
+`CMFCVisualManagerWindows7` Uygulamanın bir Windows 7 uygulaması görünümü verir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -103,7 +103,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |`CMFCVisualManagerWindows7::SetStyle`|Renk düzenini ayarlar `CMFCVisualManagerWindows7` GUI.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım `CMFCVisualManagerWindows7` varsayılan taklit etmek için uygulamanın görünümünü değiştirmek için sınıf [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama. Bu sınıf, uygulamanızın bir Windows sürümünde çalışıyorsa geçerli olmayabilir öncesi [!INCLUDE[win7](../../build/includes/win7_md.md)]. Bu senaryoda uygulamanın tanımlanan varsayılan görsel yöneticiyi kullandığı [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
+ Kullanım `CMFCVisualManagerWindows7` varsayılan Windows 7 uygulama taklit etmek için uygulamanın görünümünü değiştirmek için sınıf. Bu sınıf, uygulamanızı Windows 7'den önceki bir Windows sürümünde çalışıyorsa geçerli olmayabilir. Bu senaryoda uygulamanın tanımlanan varsayılan görsel yöneticiyi kullandığı [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
   
  CMFCVisualManagerWindows7 birden çok yöntem hem de devralan [CMFCVisualManagerWindows sınıfı](../../mfc/reference/cmfcvisualmanagerwindows-class.md) ve `CMFCVisualManager` sınıfı. Önceki bölümde listelenen yöntemlerden istediğinizi yeni yöntemlerdir `CMFCVisualManagerWindows7` sınıfı.  
   

@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6998b51be8fd11092c4266fa7eee7434be8e5b1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e996a83cfc2a79d4bf5cc458ccc5bdd586355b64
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331538"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464872"
 ---
 # <a name="umul128"></a>_umul128
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İlk iki bağımsız değişken olarak geçirilen iki 64-bit işaretsiz tamsayı çarpar ve ürünün yüksek 64 bit gösterdiği 64 bit işaretsiz tamsayıyı koyan `HighProduct` ve ürünün düşük 64 bit döndürür.  
+ İlk iki bağımsız değişken olarak geçirilen iki 64-bit işaretsiz tam sayı ile çarpar ve ürünün yüksek 64 bit işaret ettiği 64-bit işaretsiz tamsayı koyar `HighProduct` ve ürünün düşük 64 bit döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ unsigned __int64 _umul128(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `Multiplier`  
- Çarpılacağı ilk 64-bit tam sayı.  
+ Çarpılacak ilk 64-bit tamsayı.  
   
  [in] `Multiplicand`  
- Çarpılacağı ikinci 64-bit tam sayı.  
+ Çarpılacak ikinci 64-bit tamsayı.  
   
  [out] `HighProduct`  
  Ürünün yüksek 64 bit.  
@@ -55,7 +55,7 @@ unsigned __int64 _umul128(
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_umul128`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_umul128`|ARM, x64|\<intrin.h >|  
   
 ## <a name="example"></a>Örnek  
   
@@ -84,7 +84,7 @@ int main()
 0xfffffffffffffff * 0xf0000000 = 0xeffffffffffffff10000000  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

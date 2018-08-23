@@ -19,59 +19,60 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27e8e3a84d425966908bc1be37268c91cbbd34d8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 172c7d755f0e7a7b8f2eb198d19775ffb0f2cc53
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842774"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465064"
 ---
 # <a name="phases-of-translation"></a>Çeviri Aşamaları
-C ve C++ programlarında her biri bazı program metin içeren bir veya daha fazla kaynak dosyaları oluşur. INCLUDE dosyalarından birlikte bir kaynak dosyası (kullanarak dahil olan dosyaları `#include` önişlemci yönergesi), ancak koşullu derleme yönergeleri tarafından gibi kaldırılan kodun bölümlerini dahil değil `#if`, "çeviri birim." olarak adlandırılır  
+C ve C++ programları, her biri bazı program metni içeren bir veya daha fazla kaynak dosyadan oluşur. İçerme dosyaları ile birlikte bir kaynak dosyası (kullanarak dahil olan dosyaları `#include` önişlemci yönergesi) ancak gibi koşullu derleme yönergeleri tarafından kaldırılan kod bölümlerini dahil değil `#if`, bir "çeviri birimini." olarak adlandırılır  
   
- Kaynak dosyaları farklı zamanlarda çevrilmiş — aslında, yalnızca güncel dosyaları çevirmek için yaygın bir sorundur. Çevrilen çeviri birimleri ayrı nesne dosyaları ya da nesne kodu kitaplıkları işlenebilir. Bu ayrı, çevrilmiş çeviri birimleri yürütülebilir bir program veya bir dinamik bağlantı kitaplığı (DLL) form bağlanır.  Bağlayıcı girişi olarak kullanılan dosyaları hakkında daha fazla bilgi için bkz: [LINK giriş dosyaları](../build/reference/link-input-files.md).  
+Kaynak dosyaları farklı zamanlarda çevrilmiş — aslında, yalnızca güncel olmayan dosyaları çevirmek için yaygındır. Çevrilmiş çeviri birimleri ayrı nesne dosyaları ya da nesne kodu kitaplıkları işlenebilir. Bu ayrı, çevrilmiş çeviri birimleri yürütülebilir bir program veya bir dinamik bağlantı kitaplığı (DLL) form bağlanır.  Bağlayıcı girişi olarak kullanılabilir dosya hakkında daha fazla bilgi için bkz. [LINK giriş dosyaları](../build/reference/link-input-files.md).  
   
- Çeviri birimleri kullanarak iletişim kurabilir:  
+Çeviri birimleri kullanarak iletişim kurabilir:  
   
--   Dış bağlantı olan işlevler çağrıları.  
+- Dış bağlantıya sahip işlevlerin çağrıları.  
   
--   Dış bağlantı sınıf üyesi işlevleri çağrıları.  
+- Dış bağlantıya sahip bir sınıf üyesi işlevleri için çağırır.  
   
--   Dış bağlantı nesneleri doğrudan değiştirilmesine.  
+- Doğrudan değiştirilmesine nesnelerin dış bağlantısı vardır.  
   
--   Dosyaları doğrudan değiştirilmesine.  
+- Dosyaların doğrudan değiştirilmesi.  
   
--   İşlemler arası iletişim (Microsoft Windows tabanlı uygulamalar için yalnızca).  
+- İşlemler arası iletişim (Microsoft Windows tabanlı uygulamalar için yalnızca).  
   
- Aşağıdaki listede derleyici dosyalarını çevirir aşamaları açıklanmaktadır:  
+Aşağıdaki listede, derleyicinin dosyalarını çevirir aşamaları açıklanmaktadır:  
   
- *Karakter Eşleme*  
- Kaynak dosyanın karakter iç kaynak gösterimine eşlenir. Trigrafı dizileri tek karakterli iç gösterimi bu aşamasında dönüştürülür.  
+*Karakter Eşleme*  
+Kaynak dosyadaki karakter, iç kaynak gösterimine eşlenir. Trigraf dizileri tek karakterli iç gösterimi bu aşamasında dönüştürülür.  
   
- *Satır boşluklarına ayıran*  
- Bir ters eğik çizgiyi bitiş tüm satırları (**\\**) ve hemen ardından tarafından yeni satır karakteri fiziksel satırlarından mantıksal satırları oluşturan kaynak dosyasında sonraki satıra ile birleştirilir. Boş olmadığı sürece, bir kaynak dosya bir eğik öncesinde yeni satır karakteri bitmelidir.  
+*Satır birleştirme*  
+Tüm satırların bitiş ters eğik çizgi (**\\**) ve hemen ardından tarafından bir yeni satır karakteri fiziksel satırlar mantıksal satırlarından oluşturan kaynak dosyadaki sonraki satır ile birleştirilir. Boş değilse bir kaynak dosyası içinde bir ters eğik çizgi öncesinde bir yeni satır karakteri bitmelidir.  
   
- *Simgeleştirme*  
- Kaynak dosya önişlem belirteçleri ve boşluk karakterleri ayrılır. Kaynak dosya yorumlar bir boşluk karakteri ile her değiştirilir. Satırbaşı karakterlerini korunur.  
+*Simgeleştirme*  
+Kaynak dosyası ön işleme belirteçleri ve boşluk karakterleri olarak ayrılır. Bir boşluk karakteri ile her kaynak dosyasındaki yorumlar değiştirilir. Yeni satır karakterleri korunur.  
   
- *Ön işleme*  
- Önişleme yönergeleri yürütülür ve makrolar kaynak dosyasına genişletilir. `#include` Deyimi dahil herhangi bir metin önceki üç çeviri adımları başlayarak çeviri çağırır.  
+*Ön işleme*  
+Ön işleme yönergeleri yürütülür ve makroları kaynak dosyasına genişletilir. `#include` Deyimi önceki üç çeviri adımları dahil herhangi bir metin ile başlayan çeviri çağırır.  
   
- *Karakter kümesi eşleme*  
- Tüm kaynak karakter kümesi üyeleri ve çıkış sıraları eşdeğerlerine yürütme karakter kümesi dönüştürülür. Microsoft C ve C++, hem kaynak hem de yürütme karakter kümesi ASCII içindir.  
+*Karakter kümesi eşleme*  
+Tüm kaynak karakter kümesi üyeleri ve kaçış dizileri yürütme karakter kümesindeki eşdeğerlerine dönüştürülür. Microsoft C ve C++ için hem kaynak hem de yürütme karakter kümesi ASCII'dir.  
   
- *Dize birleştirme*  
- Tüm bitişik dize ve geniş dize değişmez değerleri birleşir. Örneğin, `"String " "concatenation"` hale `"String concatenation"`.  
+*Dize birleştirme*  
+Tüm bitişik dize ve geniş dize değişmez değerleri sıralanır. Örneğin, `"String " "concatenation"` olur `"String concatenation"`.  
   
- *Çeviri*  
- Tüm belirteçleri sözdizimsel olarak ve anlam olarak analiz edilir; Bu belirteçler nesne koda dönüştürülür.  
+*Çeviri*  
+Tüm belirteçlerin sözdizimsel olarak ve anlamsal olarak analiz edilir; Bu belirteçler, nesne koda dönüştürülür.  
   
- *Bağlantı*  
- Tüm dış başvuruları yürütülebilir bir program veya bir dinamik bağlantı kitaplığı oluşturmak çözümlenir.  
+*Bağlantı*  
+Tüm dış başvuruları, yürütülebilir bir program veya bir dinamik bağlantı kitaplığı oluşturmaya çözümlenir.  
   
- Derleyici sözdizimi hataları bulduğu çeviri aşamaları sırasında uyarı veya hata verir.  
+Derleyici, sözdizimi hataları bulduğu çeviri aşamaları sırasında bir uyarı veya hata verir.  
   
- Bağlayıcı tüm dış başvuruları çözümler ve bir araya getirerek bir yürütülebilir program ya da DLL oluşturur veya daha fazla çeviri birimleri standart kitaplıkları ile birlikte ayrı ayrı işlenir.  
+Bağlayıcının dış başvuruları çözümleniyor ve bir araya getirerek bir yürütülebilir programı veya DLL oluşturur veya daha fazla standart kitaplıkları birlikte çeviri birimleri ayrı olarak işlenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön İşlemci](../preprocessor/preprocessor.md)
+ 
+[Ön İşlemci](../preprocessor/preprocessor.md)

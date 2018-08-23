@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bb529e8aab204df85de2da0a2fdf4c820964239
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ae300569c4aa04a313f44a23fe988f1de7b826a1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340612"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464983"
 ---
 # <a name="mmcvtsi64xss"></a>_mm_cvtsi64x_ss
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] genişletilmiş sürümü skaler tek duyarlıklı Floating-Point değerine dönüştürmek 64 Bit tamsayı (`cvtsi2ss`) yönerge.  
+ Genişletilmiş x64 oluşturur sürüm skaler tek duyarlık Floating-Point değerine dönüştürme 64-Bit tamsayı (`cvtsi2ss`) yönerge.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,13 +40,13 @@ __m128 _mm_cvtsi64x_ss(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `a`  
- Bir `__m128` dört tek duyarlıklı kayan nokta değerlerini içeren yapısı.  
+ Bir `__m128` dört tek duyarlıklı kayan nokta değerleri içeren yapısı.  
   
  [in] `b`  
- Kayan noktalı bir sayıyı dönüştürülecek bir 64-bit tamsayı.  
+ Bir kayan nokta değerine dönüştürülmesi 64-bit tamsayı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bir `__m128` yapısı ilk kayan nokta değeri olan dönüştürme işleminin sonucu. Diğer üç değerleri gelen değişmeden kopyalanır `a`.  
+ Bir `__m128` yapısı ilk kayan nokta değeri olan dönüştürme işleminin sonucu. Diğer üç değerden gelen değişmeden kopyalanır `a`.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -54,12 +54,12 @@ __m128 _mm_cvtsi64x_ss(
 |---------------|------------------|  
 |`_mm_cvtsi64x_ss`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__m128` Yapısını temsil eden bir XMM kaydı, bu nedenle bu iç değeri verir `b` bir XMM taşınması için sistem belleğinden kaydedin.  
+ `__m128` Yapısını temsil eden bir XMM kaydı, bu nedenle bu iç değer verir `b` bir XMM taşınacak sistem belleğinden kaydedin.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -93,7 +93,7 @@ int main()
 54.000000 0.000000 0.000000 0.000000  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__m128](../cpp/m128.md)   

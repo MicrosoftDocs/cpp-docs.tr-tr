@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d15bf00432cab6900c252d85cd642c414bdbbb22
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 608702deb1ebaed9bab56fe8d08ca3102d5c5d89
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199437"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466463"
 ---
 # <a name="fatal-error-c1905"></a>Önemli hata C1905
-Ön uç ve arka uç uyumlu değil (aynı işlemci hedeflemesi gerekir)  
+Ön uç ve arka uç uyumlu değil (aynı işlemci hedeflenmelidir)  
   
- .Obj dosya x86, ARM, gibi bir işlemci hedefleyen bir derleyici ön uç (C1.dll) tarafından oluşturulan bu hata oluşur veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], ancak farklı bir işlemci hedefleyen bir arka uç tarafından (C2.dll) okuyun.  
+ Bir .obj dosyası, bir derleyici ön ucu (C1.dll) bu hedefleri bir işlemci x86 gibi ARM veya x64 tarafından oluşturulur, ancak farklı bir işlemciyi hedefliyor bir arka uç tarafından (C2.dll) okuyun, bu hata oluşur.  
   
- Bu sorunu gidermek için eşleşen ön uç ve arka uç kullandığınızdan emin olun. Visual Studio'da oluşturulan projeleri için varsayılan değer budur. Bu hata, proje dosyası düzenlenmesi ve derleyici araçları için farklı yollar kullanılan ortaya çıkabilir. Yolun derleyici araçları için özellikle ayarlamadıysanız, Visual Studio yüklemenizin bozuk olduğunda bu hata oluşabilir. Örneğin, derleyici .dll dosyaları bir konumdan diğerine kopyaladığınız. Kullanım **programlar ve Özellikler** onarmak veya Visual Studio yeniden yüklemek için Windows Denetim Masası'nda.
+ Bu sorunu düzeltmek için eşleşen bir ön uç ve arka uç kullandığınızdan emin olun. Visual Studio'da oluşturulan projeleri için varsayılan değer budur. Bu hata, proje dosyası düzenleme ve derleme araçları için farklı yollar kullanılan ortaya çıkabilir. Derleyici araçları yolunu özellikle ayarlamadıysanız, Visual Studio yüklemenizin bozuk olduğunda bu hata oluşabilir. Örneğin, derleyici .dll dosyaları bir konumdan diğerine kopyaladığınız. Kullanım **programlar ve Özellikler** Visual Studio'yu yeniden yükleyin veya onarmak için Windows Denetim Masası'nda.

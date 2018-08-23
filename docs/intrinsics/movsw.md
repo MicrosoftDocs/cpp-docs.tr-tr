@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1b1bb1b877c0816650b78d5c6132e526afd5586
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f25cea28d18f8377def35959be573c1a41f9098b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334447"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465545"
 ---
 # <a name="movsw"></a>__movsw
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Taşıma bir dize oluşturur (`rep movsw`) yönerge.  
   
@@ -45,23 +45,23 @@ void __movsw(
  İşlemin hedefi.  
   
  [in] `Source`  
- İşlemi kaynak.  
+ İşlem kaynağı.  
   
  [in] `Count`  
- Kopyalamak için sözcükler sayısı.  
+ Kopyalamak için sözcük sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__movsw`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsw`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonuç ilk `Count` tarafından sözcükler işaret için `Source` kopyalanır `Dest` dize.  
+ Sonuç ilk `Count` sözcükleri tarafından işaret edilen `Source` kopyalanır `Dest` dize.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -89,7 +89,7 @@ int main()
 0 1 2 3 4 5 6 7 8 9   
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

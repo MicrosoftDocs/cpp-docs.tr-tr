@@ -248,16 +248,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 825c761f920e48f31bab667790981e5c422f3612
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 6a629f372058e3e6688a57043d73e29717f3601d
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337497"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466287"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl sınıfı
 Sekmeli pencereler için temel işlevselliğini uygular.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -401,7 +401,7 @@ class CMFCBaseTabCtrl : public CWnd
 ## <a name="remarks"></a>Açıklamalar  
  `CMFCBaseTabCtrl` Bir soyut sınıfı. Bu nedenle, oluşturulamıyor. Sekmeli pencere oluşturmak için bir sınıftan türetilmelidir `CMFCBaseTabCtrl`. MFC Kitaplığı iki biri bazı türetilmiş sınıf örnekleri içeren [CMFCTabCtrl sınıfı](../../mfc/reference/cmfctabctrl-class.md) ve [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md).  
   
- İle başlayarak [!INCLUDE[vs_dev14](../../ide/includes/vs_dev14_md.md)], bu sınıf Microsoft Active Accessibility destekler.  
+ Bu sınıf, Visual Studio 2015 ile başlayarak, Microsoft Active Accessibility destekler.  
   
 ## <a name="customization-tips"></a>Özelleştirme ipuçları  
  Aşağıdaki ipuçları ilgilidir `CMFCBaseTabCtrl Class` ve ondan devralınan herhangi sınıflar:  

@@ -1,5 +1,5 @@
 ---
-title: Kitaplık iç üzerinde bağımlılıklarınızı düzeltme | Microsoft Docs
+title: Kitaplık içeriklerindeki bağımlılıklarınızı düzeltme | Microsoft Docs
 ms.custom: ''
 ms.date: 05/24/2017
 ms.technology:
@@ -15,28 +15,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 148db60c7a3b1ae3f71269feec8024f6ff22a118
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c80bad11a13c454d8b4025e5cc0745514696a0f7
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839066"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465602"
 ---
-# <a name="fix-your-dependencies-on-library-internals"></a>Kitaplık iç üzerinde bağımlılıklarınızı Düzelt
+# <a name="fix-your-dependencies-on-library-internals"></a>Kitaplık içeriklerindeki bağımlılıklarınızı düzeltme
 
-Microsoft, standart kitaplığı, C çalışma zamanı kitaplığı ve diğer Microsoft kitaplıkları birçok Visual Studio sürümlerinde çoğu için kaynak kodunu yayımladı. Amaç kitaplığı davranışı anlamanıza yardımcı olması için ve kodunuzun hatalarını ayıklamak için ' dir. Bunlar kitaplık arabiriminin parçası olmasa da bir yan-kitaplık kaynak kodu yayımlama bazı iç değerleri, veri yapılarını ve İşlevler sunulur olduğunu, etkisidir. Genellikle sahip oldukları iki alt çizgi ile başlayan adları veya alt çizgi uygulamaları için C++ Standart ayırır adları bir büyük harf ve ardından. Bu değerleri, yapılar ve işlevleri kitaplıklar zaman içerisinde geliştikçe ve bağımlılıkları üzerlerinde alma karşı önerilir şekilde değişebilir uygulama ayrıntılarını verilebilir. Bunu yaparsanız, kodunuzu kitaplıklarının yeni sürümlerini geçirmek çalıştığınızda, taşınabilir olmayan kod ve sorunları riski oluşur.  
+Microsoft, standart kitaplık, C çalışma zamanı kitaplığı ve diğer birçok Visual Studio sürümlerinde Microsoft kitaplıkları çoğu için kaynak kodu yayımladı. Amaç, kitaplığı davranışı anlamanıza yardımcı olması için ve kodunuzda hata ayıklamayı ' dir. Bunlar kitaplık arabiriminin bir parçası değildir ancak bir yan-kitaplığı kaynak kodunu yayımlama bazı iç değerler, veri yapılarını ve işlevleri gösterildiğinden emin, etkisidir. Bunlar genellikle iki alt çizgi ile başlayan adları vardır ve bir büyük harf, uygulamaları için C++ standardındaki ayırır adları alt çizgi ardından. Bu değerler, yapılar ve İşlevler kitaplıkları zamanla değiştikçe ve tüm bağımlılıklar üzerinde alma karşı önerilir değiştirebilir uygulamasını ayrıntıları var. Bunu yaparsanız, kitaplıklarının yeni sürümleri için kodunuzu geçirme çalıştığınızda, taşınabilir olmayan kod ve sorunları riski oluşur.  
 
-Çoğu durumda, yenilikler veya Visual Studio her sürüm için yeni değişiklikler belge kitaplığı iç değişiklikler Bahsediyor değil. Sonuçta, bu uygulama ayrıntılarını tarafından etkilenen olması olduğunuz değil. Ancak, bazen gördüğünüz bazı kod kitaplığı içinde kullanmak için buradaki eðilim çok fazla olabilir. Bu konu, üzerinde dayanıyordu CRT veya standart kitaplığı iç Ayrıntılar ve daha taşınabilir olmasını ya da kitaplık yeni sürümlerini geçirmek bu bağımlılıkları kaldırmak için kodunuzu güncelleştirin nasıl bağımlılıklarını açıklamaktadır.
+Çoğu durumda, yenilikleri veya değişiklikleri kitaplığı iç işlevleri için Visual Studio'nun her sürümü için bozucu değişiklikler belge bahsetmek değil. Sonuçta, bu uygulama ayrıntılarını tarafından etkilendiği geç olduğunuz değil. Ancak, bazen dürtüsüne gördüğünüz bazı kod kitaplığı içinde kullanmak için çok büyük olabilir. Bu konu, CRT veya standart kitaplığı iç üzerinde yararlandı ve kodunuzun daha taşınabilir yapmak veya Kitaplığı'nın yeni sürümüne geçirmek üzere bu bağımlılıkları kaldırmak için güncelleştirme bağımlılıklarını açıklar.
 
 ## <a name="hashseq"></a>_Hash_seq  
 
-İç karma işlevi `std::_Hash_seq(const unsigned char *, size_t)`uygulamak için kullanılan `std::hash` bazı dize türleri üzerinde standart kitaplığı en güncel sürümlerini görünür oluştu. Uygulanan bu işlev bir [FNV 1a karma]( https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) üzerinde bir karakter dizisi.  
+İç karma işlevi `std::_Hash_seq(const unsigned char *, size_t)`uygulamak için kullanılan `std::hash` bazı dize türleri üzerinde standart Kitaplığı'nın en son sürümlerde görünür oldu. Bu işlev, uygulanan bir [FNV 1a karma]( https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) üzerinde bir karakter dizisi.  
   
-Bu bağımlılığı kaldırmak için birkaç seçeneğiniz vardır.  
+Bu bağımlılığı kaldırmak için birkaç seçenek vardır.  
 
--   Maksadınızı koymak için ise bir `const char *` dizisi olarak aynı karma kodu makineler kullanarak sırasız bir kapsayıcı halinde `basic_string`, bunu kullanarak yapabilirsiniz `std::hash` geçen şablon aşırı bir `std::string_view`, bu karma kodu döndürür bir Taşınabilir yolu. Dize kitaplık kodu olabilir veya belirli karma algoritma bir bağımlılığı önlemek için en iyi yolu budur şekilde FNV 1a karma kullanımı gelecekte kalmamanız. 
+- Amacınız koymak için ise bir `const char *` dizisi olarak aynı karma kodu makineler kullanarak bir sırasız kapsayıcısına `basic_string`, kullanarak bunu yapabilirsiniz `std::hash` alan şablon aşırı yüklemesini bir `std::string_view`, bu karma kodu döndürür bir Taşınabilir yolu. Dize kitaplık kodu olabilir veya bu belirli karma algoritması bir bağımlılığı önlemek için en iyi yolu, bu nedenle FNV 1a karma kullanımını gelecekte ihtiyaç duyabilir değil. 
   
--   Maksadınızı rasgele bellek bir FNV 1a karma değeri üretmek için ise, bu kodu kullanılabilir Github'da üzerinde yaptık [VCSamples]( https://github.com/Microsoft/vcsamples) bir tek başına üstbilgi dosyası deposunda [fnv1a.hpp](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/_Hash_seq), bir altında[MIT lisansı](https://github.com/Microsoft/VCSamples/blob/master/license.txt). Biz de bir kopyasını burada size kolaylık sağlamak için dahil ettiğiniz. Etkilenen tüm kodu eklemek üstbilgi üstbilgi dosyası bu kodu kopyalayabilir ve sonra bulma ve değiştirme `_Hash_seq` tarafından `fnv1a_hash_bytes`. İç uygulamasında aynı davranışı elde edersiniz `_Hash_seq`. 
+- Amacınız, rastgele bir bellek FNV 1a karma oluşturmak için ise, bu kodu kullanılabilir içinde github'daki yaptık [VCSamples]( https://github.com/Microsoft/vcsamples) tek başına bir başlık dosyası, depoda [fnv1a.hpp](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/_Hash_seq), altında bir [MIT lisansı](https://github.com/Microsoft/VCSamples/blob/master/license.txt). Bir kopyasını buradan size kolaylık sağlamak için de ekledik. Bu kod bir üstbilgi dosyasına kopyalayabilir, etkilenen herhangi bir kod için üst bilgi Ekle Bul ve Değiştir `_Hash_seq` tarafından `fnv1a_hash_bytes`. İçinde iç uygulama için aynı davranışı elde edecekleriniz `_Hash_seq`. 
 
 ```cpp  
 /*

@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87dd737b1bbe9263af5ef6416e7d6b8d287feb53
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 15491517ad95973d7eabf2998741dbcc89ca602b
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849476"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466052"
 ---
 # <a name="omp"></a>omp
 Bir veya daha fazla OpenMP yönergelerini, isteğe bağlı bir yönerge yan tümceleri ile birlikte alır.  
@@ -31,12 +31,13 @@ Bir veya daha fazla OpenMP yönergelerini, isteğe bağlı bir yönerge yan tüm
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma omp directive  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bkz: [OpenMP yönergeleri](../parallel/openmp/reference/openmp-directives.md) daha fazla bilgi için.  
+ 
+Bkz: [OpenMP yönergeleri](../parallel/openmp/reference/openmp-directives.md) daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

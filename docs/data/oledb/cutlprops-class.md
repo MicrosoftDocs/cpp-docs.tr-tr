@@ -41,12 +41,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 661ac13acd1d8eac0ecde9af9fa08875b99153e3
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 0179bbc68bb6ed60f6fadf26f98be492c2eeb4c1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336986"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466068"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 OLE DB özelliği arabirimleri çeşitli özelliklerini uygular (örneğin, `IDBProperties`, `IDBProperties`, ve `IRowsetInfo`).  
@@ -123,7 +123,7 @@ virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
  Özellik kümesi dizi dizine; yalnızca bir özellik kümesi ise sıfır.  
   
  *pDBProp*  
- Özellik kimliği ve yeni değer bir [DBPROP](https://msdn.microsoft.com/library/ms717970.aspx) yapısı.  
+ Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970\(v=vs.85\)) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT. Varsayılan dönüş S_OK değeridir.  
@@ -178,7 +178,7 @@ virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
  Özellik kümesi dizi dizine; yalnızca bir özellik kümesi ise sıfır.  
   
  *pDBProp*  
- Özellik kimliği ve yeni değer bir [DBPROP](https://msdn.microsoft.com/library/ms717970.aspx) yapısı.  
+ Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970\(v=vs.85\)) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT. Varsayılan dönüş S_OK değeridir.  

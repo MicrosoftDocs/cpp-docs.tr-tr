@@ -16,54 +16,54 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f21ec9d205e009438fac97914ec4b684713102a3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c53960b7ef972d605902a260de9e7ef344a31274
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371908"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466178"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme
-Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedefleyen ve farklı platform toolsets kullanacak şekilde değiştirebilirsiniz. Varsayılan olarak, .NET Framework sürümünü ve projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen araç takımının sürüm proje sistemi kullanır. Hedef platform araç takımı, proje özelliklerini değiştirerek değiştirebilirsiniz. Hedef Framework projesi (.vcxproj) dosyasını değiştirerek değiştirebilirsiniz. Ayrı bir kod her derleme hedefi için temel sağlamak zorunda değildir.  
+Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedeflemek için ve farklı platform araç takımları kullanacak şekilde değiştirebilirsiniz. Varsayılan olarak, proje sistemi .NET Framework sürümünü ve projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen araç kümesi sürümünü kullanır. Proje özelliklerini değiştirerek hedef platform araç takımını değiştirebilirsiniz. Proje (.vcxproj) dosyasını değiştirerek hedef Framework'ü değiştirebilirsiniz. Ayrı bir kod tabanı her derleme hedefi korumak zorunda değildir.  
   
 > [!IMPORTANT]
->  Bazı sürümlerinde değiştirilmiş hedef çerçeveyi veya platform toolsets desteklemeyebilir. Uyumluluk bilgileri için bkz: [bağlantı noktası, geçirme ve yükseltme Visual Studio projeleri](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).  
+>  Bazı sürümler değiştirilmiş hedef Framework'leri veya platform araç takımlarını desteklemiyor olabilir. Uyumluluk bilgileri için bkz. [bağlantı noktası, geçirme ve yükseltme Visual Studio projeleri](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).  
   
- Ayrıca hedef Framework değiştirdiğinizde, platform araç takımı, Framework destekleyen bir sürüm olarak değiştirin. Örneğin, .NET Framework 4.5 hedeflemek için Visual Studio 2015 (v140), Visual Studio 2013 (v120) veya Visual Studio 2012 (v110) gibi bir uyumlu platform araç takımı kullanmanız gerekir. Kullanabileceğiniz **Windows7.1SDK** .NET Framework 2.0, 3.0, 3.5 ve 4 ve Itanium, x86 hedeflemek için platform araç takımı ve x64 platformlar.  
+ Ayrıca, hedef Framework'ü değiştirdiğinizde, platform araç takımını, Framework destekleyen bir sürüm olarak değiştirin. Örneğin, .NET Framework 4.5 hedeflemek için Visual Studio 2015 (v140), Visual Studio 2013 (v120) veya Visual Studio 2012 (v110) gibi uyumlu bir platform araç takımını kullanmanız gerekir. Kullanabileceğiniz **Windows7.1SDK** .NET Framework 2.0, 3.0, 3.5 ve 4 ve x86, Itanium, hedef platform araç setini ve x64 platformlar.  
   
 > [!NOTE]
->  Hedef platform araç takımı değiştirmek için ilgili sürümü Visual Studio ya da Windows Platform SDK yüklü olması gerekir. Örneğin, Itanium platformuyla hedeflemek için **Windows7.1SDK** platform araç takımı, olmalıdır [Windows 7 için Microsoft Windows SDK ve .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) yüklü; ancak, kullanabilirsiniz Visual Studio geliştirme işinizi doğru Framework sürümü ve platform araç takımı hedef koşuluyla yapmak için başka bir uyumlu sürümü.  
+>  Hedef platform araç takımını değiştirmek için Visual Studio veya Windows Platform SDK ilişkili sürümü olması gerekir. Örneğin, Itanium platformunu hedeflemek için **Windows7.1SDK** platform araç olmalıdır [Windows 7 için Microsoft Windows SDK ve .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) yüklü; ancak kullanabilirsiniz doğru Framework sürümünü ve platform araç kümesini hedeflemek koşuluyla geliştirme çalışmalarınızı yapmak için Visual Studio'nun uyumlu başka bir sürümü.  
   
- Daha fazla hedef platformu özel platform araç takımı oluşturarak genişletebilirsiniz. Daha fazla bilgi için bkz: [C++ yerel çoklu sürüm desteği](http://go.microsoft.com/fwlink/p/?linkid=196619) Visual C++ blogunda.  
+ Özel platform araç takımı oluşturarak hedef platformu genişletebilirsiniz. Daha fazla bilgi için [yerel C++ çoklu sürüm desteğinin](http://go.microsoft.com/fwlink/p/?linkid=196619) Visual C++ blogundaki.  
   
-### <a name="to-change-the-target-framework"></a>Hedef Framework değiştirmek için  
+### <a name="to-change-the-target-framework"></a>Hedef Framework'ü değiştirmek için  
   
-1.  Visual Studio içinde **Çözüm Gezgini**, projenizi seçin. Menü çubuğunda açmak **proje** menü ve **projeyi**. Projeniz için proje (.vcxproj) dosyası kaldırır.  
+1.  Visual Studio içinde **Çözüm Gezgini**, projenizi seçin. Menü çubuğunda açın **proje** menüsünü seçip **projeyi**. Bu, projeniz için proje (.vcxproj) dosyasını kaldırır.  
   
     > [!NOTE]
-    >  Visual Studio Proje dosyası değiştirilirken C++ projesi yüklenemiyor. Ancak, Visual Studio Proje yüklenirken proje dosyasını değiştirmek için Not Defteri gibi başka bir Düzenleyicisi kullanabilirsiniz. Visual Studio Proje dosyası değişti ve projeyi yeniden yüklemek ister algılar.  
+    >  Bir C++ projesi, proje dosyası Visual Studio içinde değiştirilirken yüklenemez. Ancak, proje Visual Studio'ya yüklendiğinde proje dosyasını değiştirmek için Not Defteri gibi bir düzenleyici kullanabilirsiniz. Visual Studio, proje dosyası değiştirildi ve projeyi yeniden yüklemenizi ister algılar.  
   
-2.  Menü çubuğunda seçin **dosya**, **açık**, **dosya**. İçinde **Dosya Aç** iletişim kutusunda, proje klasörüne gidin ve proje (.vcxproj) dosyasını açın.  
+2.  Menü çubuğunda, seçin **dosya**, **açık**, **dosya**. İçinde **Dosya Aç** iletişim kutusunda proje klasörüne gidin ve ardından Proje (.vcxproj) dosyasını açın.  
   
-3.  Proje dosyasında hedef Framework sürümü girişini bulun. Projeniz .NET Framework 4.5 kullanmak üzere tasarlanmış, örneğin, bulun `<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>` içinde `<PropertyGroup Label="Globals">` öğesinin `<Project>` öğesi. Varsa `<TargetFrameworkVersion>` öğesi mevcut değilse, projeniz .NET Framework kullanmayan ve hiçbir değişiklik gereklidir.  
+3.  Proje dosyasında hedef Framework sürümü girişini bulun. Örneğin, projeniz .NET Framework 4.5 kullanmak üzere tasarlanmışsa, bulun `<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>` içinde `<PropertyGroup Label="Globals">` öğesinin `<Project>` öğesi. Varsa `<TargetFrameworkVersion>` öğesi hazır değilse projeniz .NET Framework'ü kullanmaz ve değişiklik gerekli değil.  
   
-4.  Değeri, v3.5 veya v4.6 gibi istediğiniz Framework sürüm olarak değiştirin.  
+4.  V3.5 veya v4.6 gibi istediğiniz Framework sürümüne değerini değiştirin.  
   
-5.  Değişiklikleri kaydetmek ve Düzenleyicisi'ni kapatın.  
+5.  Değişiklikleri kaydedin ve düzenleyiciyi kapatın.  
   
-6.  İçinde **Çözüm Gezgini**, projeniz için kısayol menüsünü açın ve ardından **projeyi yeniden yükle**.  
+6.  İçinde **Çözüm Gezgini**, projeniz için kısayol menüsünü açın ve ardından **projeyi**.  
   
-7.  Değişikliği doğrulamak için **Çözüm Gezgini**, projenizin (değil, çözümünüz için) için kısayol menüsünü açın ve ardından sağ **özellikleri** projenizi açmak için **özelliği Sayfaları** iletişim kutusu. İletişim kutusunun sol bölmesinde, **yapılandırma özellikleri** ve ardından **genel**. Doğrulayın **.NET hedef Framework sürümü** yeni Framework sürümünü gösterir.  
+7.  Değişikliği doğrulamak için **Çözüm Gezgini**, (için değil, çözümünüzün), projeniz için kısayol menüsünü açın ve ardından sağ tıklama **özellikleri** projenizi **özelliği Sayfaları** iletişim kutusu. İletişim kutusunun sol bölmesinde **yapılandırma özellikleri** seçip **genel**. Doğrulayın **.NET hedef Framework sürümü** alanında yeni Framework sürümünün gösterir.  
   
-### <a name="to-change-the-project-toolset"></a>Proje araç takımı değiştirmek için  
+### <a name="to-change-the-project-toolset"></a>Proje araç takımını değiştirmek için  
   
-1.  Visual Studio içinde **Çözüm Gezgini**, projenizin (değil, çözümünüz için) için kısayol menüsünü açın ve ardından **özellikleri** projenizi açmak için **özellik sayfaları**iletişim kutusu.  
+1.  Visual Studio içinde **Çözüm Gezgini**, (için değil, çözümünüzün), projeniz için kısayol menüsünü açın ve ardından **özellikleri** projenizi **özellik sayfaları**iletişim kutusu.  
   
-2.  İçinde **özellik sayfaları** açık iletişim kutusunu **yapılandırma** aşağı açılan listeyi ve ardından **tüm yapılandırmaları**.  
+2.  İçinde **özellik sayfaları** açık iletişim kutusunu **yapılandırma** aşağı açılan liste ve ardından **yapılandırmalarında**.  
   
-3.  İletişim kutusunun sol bölmesinde, **yapılandırma özellikleri** ve ardından **genel**.  
+3.  İletişim kutusunun sol bölmesinde **yapılandırma özellikleri** seçip **genel**.  
   
-4.  Sağ bölmede seçin **Platform araç takımı** ve ardından istediğiniz araç takımı aşağı açılan listeden seçin. Örneğin, yüklediyseniz [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)] araç takımı, select **Visual Studio 2010 (nı v100)** projeniz için kullanılacak.  
+4.  Sağ bölmede seçin **Platform araç takımını** ve ardından açılır listeden istediğiniz araç setini'ı seçin. Örneğin, Visual Studio 2010 araç takımı yüklediyseniz seçin **Visual Studio 2010 (v100)** projeniz için kullanılacak.  
   
 5.  Seçin **Tamam** düğmesi.  
   

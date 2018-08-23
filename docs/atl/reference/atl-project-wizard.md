@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80556b31650cc04e66b2ad6681d60eff2fa72d5f
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: d138f65e447594059dba5b536378ee004be77036
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025824"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464483"
 ---
 # <a name="atl-project-wizard"></a>ATL projesi Sihirbazı
 Etkin Şablon kitaplığı (ATL), küçük ve hızlı COM nesneleri yazma kolaylaştıran şablon tabanlı C++ sınıfları kümesidir. ATL projesi Sihirbazı, COM nesneleri içerecek şekilde yapılarıyla bir proje oluşturur.  
@@ -52,7 +52,7 @@ Etkin Şablon kitaplığı (ATL), küçük ve hızlı COM nesneleri yazma kolayl
   
 -   [ATL projesinde derleyici en iyi duruma getirme](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)  
   
- Proje özellikleri belirtebilirsiniz (örneğin, [CRT için kitaplıklarla statik bağlantılar oluşturabilir verilip verilmeyeceğini](../../atl/programming-with-atl-and-c-run-time-code.md)) içinde [proje özellikleri](../../ide/general-property-page-project.md) sayfası ve ayarlayabilirsiniz [derleme yapılandırmaları](/visualstudio/ide/understanding-build-configurations) için bir ATL projesi. Bkz: [kullanarak projeleri için yapı uygulamaları](http://msdn.microsoft.com/3339fa90-bac2-4b95-8361-662a2e0e7dfe) daha fazla bilgi için.  
+ Proje özellikleri belirtebilirsiniz (örneğin, [CRT için kitaplıklarla statik bağlantılar oluşturabilir verilip verilmeyeceğini](../../atl/programming-with-atl-and-c-run-time-code.md)) içinde [proje özellikleri](../../ide/general-property-page-project.md) sayfası ve ayarlayabilirsiniz [derleme yapılandırmaları](/visualstudio/ide/understanding-build-configurations) için bir ATL projesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ proje oluşturma ve yönetme](../../ide/creating-and-managing-visual-cpp-projects.md)   

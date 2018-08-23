@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 42909a9ddc24131c759886c4d169c4fd7484ca98
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 7832985c6095aecae5098461d36947ff4268d262
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340423"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465072"
 ---
 # <a name="ole-db-provider-templates-reference"></a>OLE DB Sağlayıcı Şablonları Başvurusu
 Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki kategoride gruplandırılabilir. Başvuru malzemesi hakkında bilgiler de içerir. [OLE DB sağlayıcı şablonları için makrolar](../../data/oledb/macros-for-ole-db-provider-templates.md).  
@@ -60,7 +60,7 @@ Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki ka
  Açar ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür. Bir oturum nesnesi için zorunlu arabirim.  
   
  [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md)  
- OLE DB uygulayan [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx) var olan satır, satırları silme ve yeni satır ekleyerek sütunların değerlerinin güncelleştirme sağlayan arabirim.  
+ OLE DB uygulayan [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) var olan satır, satırları silme ve yeni satır ekleyerek sütunların değerlerinin güncelleştirme sağlayan arabirim.  
   
  [Irowsetcreatorımpl](../../data/oledb/irowsetcreatorimpl-class.md)  
  Bu sınıf devraldığı [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) ve geçersiz kılmaları [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869). `IRowsetCreatorImpl` aynı işlevleri gerçekleştiren `IObjectWithSite` ancak OLE DB özelliklerini de etkinleştirir `DBPROPCANSCROLLBACKWARDS` ve `DBPROPCANFETCHBACKWARDS`.  
@@ -75,13 +75,13 @@ Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki ka
  Implements özelliğini kullanarak satır kümesi özelliklerini komut Sınıfınız içinde tanımlanan eşlemesi ayarlayın. Satır kümeleri zorunlu arabirimde.  
   
  [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md)  
- OLE DB uygulayan [IRowsetLocate](https://msdn.microsoft.com/library/ms721190.aspx) arabirimi, bir satır kümesinden rastgele satırları getirir. OLE DB yer işaretleri bir satır kümesinde desteklemek için bu sınıftan devralınan satır kümesi olun.  
+ OLE DB uygulayan [IRowsetLocate](/previous-versions/windows/desktop/ms721190\(v=vs.85\)) arabirimi, bir satır kümesinden rastgele satırları getirir. OLE DB yer işaretleri bir satır kümesinde desteklemek için bu sınıftan devralınan satır kümesi olun.  
   
  [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md)  
- Uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği. Bildirimleri işleme tüketiciler uygulamak [IRowsetNotify](https://msdn.microsoft.com/library/ms712959.aspx) ve bu bağlantı noktasında kaydedin.  
+ Uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği. Bildirimleri işleme tüketiciler uygulamak [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\)) ve bu bağlantı noktasında kaydedin.  
   
  [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md)  
- OLE DB uygulayan [IRowsetUpdate](https://msdn.microsoft.com/library/ms714401.aspx) yapılan değişikliklerle iletimini gecikme tüketiciler sağlayan arabirimi [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx) için veri kaynağını seçin ve iletimden önce değişiklikleri geri al.  
+ OLE DB uygulayan [IRowsetUpdate](/previous-versions/windows/desktop/ms714401\(v=vs.85\)) yapılan değişikliklerle iletimini gecikme tüketiciler sağlayan arabirimi [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) için veri kaynağını seçin ve iletimden önce değişiklikleri geri al.  
   
 ## <a name="command-classes"></a>Komut sınıfları  
  [Icommandımpl](../../data/oledb/icommandimpl-class.md)  
@@ -114,7 +114,7 @@ Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki ka
   
  [Ierrorrecordsımpl](../../data/oledb/ierrorrecordsimpl-class.md)  
   
- OLE DB uygulayan [IErrorRecords](https://msdn.microsoft.com/library/ms718112.aspx) kayıtları ekleme ve veri üyesi kayıtlar alınırken arabirimi.  
+ OLE DB uygulayan [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) kayıtları ekleme ve veri üyesi kayıtlar alınırken arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)   

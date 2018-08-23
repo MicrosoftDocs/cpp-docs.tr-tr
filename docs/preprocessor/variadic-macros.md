@@ -15,20 +15,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5918c7d91a3568799f361fcb42edb2e9c7b1445e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 16549d6b7a80a8aa0f3f98cf9c7cd89c74058959
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850541"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466158"
 ---
 # <a name="variadic-macros"></a>Variadic Makrolar
 Değişen sayıda bağımsız değişken içeren makrolar, değişken sayıda bağımsız değişken içeren işlev benzeri makrolardır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Variadic makrolar kullanmak için üç nokta son biçimsel bağımsız değişken olarak bir makro tanımı ve değiştirme tanımlayıcısı belirtilebilir `__VA_ARGS__` tanımında ek bağımsız değişkenleri eklemek için kullanılabilir.  `__VA_ARGS__` Tüm bunlar arasında virgül dahil olmak üzere üç nokta eşleşen bağımsız değişkenleri ile değiştirilir.  
+ 
+Bağımsız değişken içeren makroları kullanmak için üç nokta değiştirme tanımlayıcısı yanı sıra bir Makro tanımında son biçimsel bağımsız değişken olarak belirtilebilir `__VA_ARGS__` tanımında, ek bağımsız değişkenleri eklemek için kullanılabilir.  `__VA_ARGS__` Tüm aralarındaki virgüller de dahil olmak üzere üç nokta eşleşmesi bağımsız değişkenleri ile değiştirilir.  
   
- C Standardı, makronun arkasından virgül gelen bir ifadeye çözümlenmemesini sağlamak için üç noktaya en az bir bağımsız değişkenin geçirilmesi gerektiğini belirtir.  Üç noktaya hiçbir bağımsız değişken geçirilmezse, Visual C++ uygulaması sondaki virgülü gizler.  
+C Standardı, makronun arkasından virgül gelen bir ifadeye çözümlenmemesini sağlamak için üç noktaya en az bir bağımsız değişkenin geçirilmesi gerektiğini belirtir.  Üç noktaya hiçbir bağımsız değişken geçirilmezse, Visual C++ uygulaması sondaki virgülü gizler.  
   
 ## <a name="example"></a>Örnek  
   
@@ -58,10 +59,8 @@ int main() {
                              // suppresses the trailing comma  
 }  
 ```  
-  
-## <a name="output"></a>Çıkış  
-  
-```  
+    
+```Output  
 here are some varargs1(1)  
 here are some varargs2(4)  
 here are some varargs3(5)  
@@ -70,4 +69,5 @@ error
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Makrolar (C/C++)](../preprocessor/macros-c-cpp.md)
+ 
+[Makrolar (C/C++)](../preprocessor/macros-c-cpp.md)

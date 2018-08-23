@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f2a0d91d0f0dd3d23886ade75072526e6c895f7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 093c994de24b947c53bfc19d33213e77f3ec2593
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849460"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466053"
 ---
 # <a name="rawdispinterfaces"></a>raw_dispinterfaces
-**C++ özel**  
+**C++ özgü**  
   
- Alt düzey sarmalayıcı işlevleri görüntüleme arabirimi yöntemleri ve arama özellikleri için oluşturulacak derleyici söyler **IDispatch::Invoke** ve geri dönüp `HRESULT` hata kodu.  
+Dispinterface yöntemleri ve arama özellikleri için alt düzey sarmalayıcı işlevleri oluşturmak üzere derleyiciye `IDispatch::Invoke` ve HRESULT hata kodunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,10 +35,12 @@ raw_dispinterfaces
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu öznitelik değilse belirtilirse, yalnızca üst düzey, C++ özel durum hatası durumunda throw sarmalayıcıları üretilir.  
+ 
+Bu öznitelik değil ise, belirtilen, yalnızca üst düzey, C++ özel durumlarını başarısız olması durumunda throw sarmalayıcıları oluşturulur.  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b61fcd7875fd98e73c2d4cbd6502a98624daed5a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 55dc6492faea101df40c2901ced24321822f36e8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334629"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466281"
 ---
 # <a name="outbytestring"></a>__outbytestring
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur `rep outsb` ilk gönderir yönerge `Count` tarafından bayt veri işaret için `Buffer` tarafından belirtilen bağlantı noktası için `Port`.  
+ Oluşturur `rep outsb` gönderen ilk yönerge `Count` verileri baytlık tarafından işaret edilen `Buffer` tarafından belirtilen bağlantı noktasına `Port`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,23 +45,23 @@ void __outbytestring(
  Veri göndermek için bağlantı noktası.  
   
  [in] `Buffer`  
- Belirtilen bağlantı noktasına gönderilecek verileri.  
+ Belirtilen bağlantı noktasına gönderilecek veri.  
   
  [in] `Count`  
- Gönderilecek veri baytı sayısı.  
+ Veri gönderilecek bayt sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__outbytestring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outbytestring`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -50,15 +50,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81087eb5f611edd5ad41725177226c2c2b7a9c2d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 394cd0da74171e517086886a5c0c915fc77ba49c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851356"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466470"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane sınıfı
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
  Öğesinden türetilen denetim [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) Outlook çubuğuna eklenebilir ( [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)). Outlook Çubuğu bölmesi büyük düğmeler bir sütun içerir. Bölmeden daha büyük olması durumunda kullanıcı düğme listesinin yukarı ve aşağı kaydırma yapabilir. Kullanıcı bir Outlook Çubuğu bölmesini Outlook çubuğundan ayırdığında kayan veya ana çerçeve penceresine yerleştirilebilir yükleyebilir.  
   
@@ -222,7 +222,7 @@ BOOL AddButton(
  Belirtilen dizin *iInsertAt* -1, sayfanın sonunda düğme eklenir.  
   
 ##  <a name="canbeattached"></a>  CMFCOutlookBarPane::CanBeAttached  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ```  
 virtual BOOL CanBeAttached() const;  

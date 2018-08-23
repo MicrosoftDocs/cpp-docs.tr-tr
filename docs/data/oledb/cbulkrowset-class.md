@@ -113,12 +113,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2fa455bbe4a5aa902232b502e129f6c8e21463a9
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: e741055950449ea07c719cf6cd4c33a34d6f43b3
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337728"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465169"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 Getirir ve tek bir çağrı ile birden çok satır işleyicilerini alarak, toplu veriler üzerinde çalışmaya satırları yönetir.  
@@ -160,7 +160,7 @@ class CBulkRowset : public CRowset<TAccessor>
  [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]  
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
-Çağrıları [IRowset::AddRefRows](https://msdn.microsoft.com/library/ms719619.aspx) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.  
+Çağrıları [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -246,7 +246,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
  [in] Yer işareti hedef satır satır numarası sayısı. Varsa *lSkip* sıfırsa, getirilen ilk satır işaretli bir satırdır. Varsa *lSkip* 1, getirilen ilk satırın sonuna işaretli satır satırdır. Varsa *lSkip* -1, ilk satırın getirilen işaretli satır önce satırdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bkz: ['yı](https://msdn.microsoft.com/library/ms716988.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Bkz: ['yı](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 Satır kümesindeki kesirli bir konumdan başlayan satırları getirir.  
@@ -273,10 +273,10 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
   
  `(nNumerator *  RowsetSize ) / nDenominator`  
   
- Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](https://msdn.microsoft.com/library/ms709602.aspx) içinde *OLE DB Programcının Başvurusu*.   
+ Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.   
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
-Çağrıları [IRowset::ReleaseRows](https://msdn.microsoft.com/library/ms719771.aspx) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.  
+Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.  
   
 ### <a name="syntax"></a>Sözdizimi  
   

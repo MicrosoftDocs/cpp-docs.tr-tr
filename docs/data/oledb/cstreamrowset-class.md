@@ -38,12 +38,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8b9f1c7aef4116ae057d771e66b5027c5783f64e
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 2a8e4af6e85dbfa3b617471b592f806ae1ef5548
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338018"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465554"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset Sınıfı
 Kullanılan bir `CCommand` veya `CTable` bildirimi.  
@@ -69,7 +69,7 @@ class CStreamRowset
 |||  
 |-|-|  
 |[CStreamRowset](#cstreamrowset)|Oluşturucu. Oluşturur ve başlatır `CStreamRowset` nesne.|  
-|[Kapat](#close)|Yayınları [ISequentialStream](https://msdn.microsoft.com/library/ms718035.aspx) sınıfında arabirim işaretçisi.|  
+|[Kapat](#close)|Yayınları [ISequentialStream](/previous-versions/windows/desktop/ms718035\(v=vs.85\)) sınıfında arabirim işaretçisi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Kullanım `CStreamRowset` içinde `CCommand` veya `CTable` bildirimi, örneğin:  
@@ -99,7 +99,7 @@ CStreamRowset();
 ```  
 
 ## <a name="close"></a> CStreamRowset::Close
-Yayınları [ISequentialStream](https://msdn.microsoft.com/library/ms718035.aspx) sınıfında arabirim işaretçisi.  
+Yayınları [ISequentialStream](/previous-versions/windows/desktop/ms718035\(v=vs.85\)) sınıfında arabirim işaretçisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   

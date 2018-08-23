@@ -17,15 +17,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8da1e3d2c5b1a2018df0e46f085fede9b923fff8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7d93cff5c1be0847a6c88f0d60b89527388e4d8b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332416"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465288"
 ---
 # <a name="vmxvmclear"></a>__vmx_vmclear
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Belirtilen sanal makine denetim yapısı (Windows VMCS) başlatır ve başlatma durumuna ayarlar `Clear`.  
   
@@ -41,30 +41,30 @@ unsigned char __vmx_vmclear(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `VmcsPhysicalAddress`|Bir işaretçi bir 64-bit bellek konumuna temizlemek için Windows VMCS fiziksel adresini içerir.|  
+|[in] `VmcsPhysicalAddress`|Temizlenecek Windows VMCS fiziksel adresini içeren bir 64-bit bellek konumu için bir işaretçi.|  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|0|İşlemi başarılı oldu.|  
+|0|İşlem başarılı oldu.|  
 |1.|İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.|  
 |2|İşlem durumu olmadan başarısız oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) veya [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Clear`ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Launched`. Sonuç olarak, kullanmak [__vmx_vmclear](../intrinsics/vmx-vmclear.md) Windows VMCS için başlatma durumunu ayarlamak için işlevi `Clear`. Kullanım [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi ilk VM girin işleminiz ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) sonraki VM girin işlemleri için işlevi.  
+ Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) veya [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Clear`ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Launched`. Sonuç olarak, kullanmanız [__vmx_vmclear](../intrinsics/vmx-vmclear.md) işlevi için bir Windows VMCS başlatma durumunu ayarlamak için `Clear`. Kullanım [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) ilk VM girin işlemi için işlevi ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) VM girin sonraki işlemleri için işlevi.  
   
- `__vmx_vmclear` İşlevi eşdeğerdir `VMCLEAR` makine yönergesi. Bu işlev bir ana bilgisayarın sanal makine İzleyici etkileşiminin bir konuk işletim sistemi ve uygulamaları destekler. Daha fazla bilgi için belge, "Intel Sanallaştırma teknik belirtim IA-32 Intel mimarisi," için arama sırasında numara C97063-002, belge [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__vmx_vmclear` İşlev, eşdeğer `VMCLEAR` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__vmx_vmclear`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmclear`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

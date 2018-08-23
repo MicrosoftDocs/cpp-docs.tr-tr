@@ -1,5 +1,5 @@
 ---
-title: _InterlockedExchangePointer iç işlevler | Microsoft Docs
+title: _Interlockedexchangepointer iç işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -30,17 +30,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8482b7d5b21c113001b702e00f406b9a3fcfd9c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dfeb1453cffac6cfe338f42da8b8efe60e18c9f8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334944"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466285"
 ---
-# <a name="interlockedexchangepointer-intrinsic-functions"></a>_InterlockedExchangePointer iç işlevler
-**Microsoft özel**  
+# <a name="interlockedexchangepointer-intrinsic-functions"></a>_Interlockedexchangepointer iç işlevleri
+**Microsoft'a özgü**  
   
- İkinci bağımsız değişken olarak geçirilen ilk adresi kopyalar ve ilk özgün adresini döndüren bir atomik exchange işlemi gerçekleştirin.  
+ İkinci bağımsız değişken olarak geçirilen ilk adresi kopyalar ve ilk özgün adresini döndüren bir atomik değiştirme işlemi gerçekleştirin.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -72,35 +72,35 @@ void * _InterlockedExchangePointer_HLERelease(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out] `Target`  
- Exchange için değeri işaretçisine işaretçi. İşlevin değeri ayarlar `Value` ve önceki değerine döndürür.  
+ [out içinde] `Target`  
+ Exchange değere işaretçi işaretçisi. İşlev bir değer ayarlar `Value` ve önceki değerini döndürür.  
   
  [in] `Value`  
- Tarafından değeriyle değiştirilebilmesi için değer işaret için `Target`.  
+ Değeri ile değiştirilecek değeri tarafından işaret edilen `Target`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İşlevi gösterdiği ilk değerini döndürür `Target`.  
+ İşlevi tarafından işaret ilk değerini döndürür `Target`.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_InterlockedExchangePointer`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_InterlockedExchangePointer`|x86, ARM, x64|\<intrin.h >|  
 |`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM|\<intrin.h >|  
-|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] HLE desteği|\<immintrin.h >|  
+|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|x64 HLE desteği|\<immintrin.h >|  
   
- X86 üzerinde mimarisi, `_InterlockedExchangePointer` çağıran makro `_InterlockedExchange`.  
+ X86 mimari `_InterlockedExchangePointer` çağıran bir makro `_InterlockedExchange`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir 64-bit sistemde parametreler 64 bit ve 64-bit sınırları hizalanması gerekir; Aksi takdirde, işlev başarısız olur. Bir 32 bit sistemdeki parametreler 32 bit ve 32-bit sınırları hizalanması gerekir. Daha fazla bilgi için bkz: [Hizala](../cpp/align-cpp.md).  
+ Bir 64-bit sistemde parametreleri 64 bit ve 64-bit sınırlardaki hizalanması gerekir; Aksi takdirde işlev başarısız olur. Bir 32-bit sistemde parametreleri 32 bit ve 32-bit sınırlardaki hizalanması gerekir. Daha fazla bilgi için [hizalama](../cpp/align-cpp.md).  
   
- İç bilgiler ile ARM platformlarda kullanın `_acq` ve `_rel` edinmeli ve yayın semantiği, gibi önemli bir bölümü başında ve sonunda varsa sonekleri. İç ile bir `_nf` ("hiçbir dilimi") soneki bir bellek engeli hareket değil.  
+ ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` almak ve yayın semantiğini gibi kritik bir bölüm başında ve sonunda sonekleri. İç bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel davranmaz.  
   
- Donanım kilidi Elision (HLE) yönergeleri, iç bilgileri ile destek Intel platformlarda `_HLEAcquire` ve `_HLERelease` son ekleri kapsayacak performans donanım kilidi yazma adımda ortadan kaldırarak hızlandırabilir işlemci ipucu. Bu yapı HLE desteklemeyen platformlarda çağrıldıklarında ipucu yoksayıldı.  
+ Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel platformlarında `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen platformları üzerinde çağrılırsa ipucu yoksayıldı.  
   
- Bu yordamlar, yalnızca iç bilgileri kullanılabilir.  
+ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

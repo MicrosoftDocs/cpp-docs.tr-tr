@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 115f5b3d7012ae3e9073d81e0c1005dcb513e045
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: eb4142b742ae6c2a758c2a2fb5e09c604959433f
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849346"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464859"
 ---
 # <a name="injectstatement"></a>inject_statement
-**C++ özel**  
+**C++ özgü**  
   
- Bağımsız değişkenini tür kitaplığı üstbilgisine kaynak metin olarak ekler.  
+Bağımsız değişkenini tür kitaplığı üstbilgisine kaynak metin olarak ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,15 +34,17 @@ ms.locfileid: "33849346"
 inject_statement("source_text")  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `source_text`  
- Tür kitaplığı üstbilgi dosyasına eklenecek kaynak metin.  
+### <a name="parameters"></a>Parametreler  
+*source_text*  
+Tür kitaplığı üstbilgi dosyasına eklenecek kaynak metin.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Metin, üstbilgi dosyasında tür kitaplığı içeriğini saran ad alanı bildiriminin başına yerleştirilir.  
+ 
+Metin, üstbilgi dosyasında tür kitaplığı içeriğini saran ad alanı bildiriminin başına yerleştirilir.  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -15,23 +15,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d6c84354332b4d01ca07f672024fe9b488cd0a2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0ac3b742406f1e8be955921a9ee238f3b35d3bdf
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840073"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466337"
 ---
 # <a name="definitions-for-the-grammar-summary"></a>Dil Bilgisi Özeti Tanımları
-Terminal sözdizimi tanımında noktalarıdır. Herhangi bir çözüm mümkündür. Terminal ayrılmış sözcükler ve kullanıcı tanımlı tanımlayıcıları kümesi içerir.  
+Terminaller bir söz dizimi tanımı noktalarıdır. Herhangi bir çözüm mümkündür. Terminaller ayrılmış sözcükler ve kullanıcı tanımlı tanımlayıcıları kümesi içerir.  
   
-Terminal dışı sözdizimi yer tutucuları ' dir. Çoğu bu Özet sözdiziminde başka bir yerde tanımlanır. Tanımları özyinelemeli olabilir. Aşağıdaki Terminal dışı tanımlanan [sözcük kuralları](../cpp/lexical-conventions.md) bölümünü *C++ dil başvurusu*:  
+Terminal dışı söz diziminde tutuculardır. Çoğu Bu sözdizimi özeti başka bir yerde tanımlanır. Tanımları özyinelemeli olabilir. Aşağıdaki Terminal olmayanları tanımlanan [sözcük kuralları](../cpp/lexical-conventions.md) bölümünü *C++ dil başvurusu*:  
   
-`constant`, *sabit ifadesi*, *tanımlayıcısı*, *anahtar sözcüğü*, `operator`, `punctuator`  
+`constant`, *sabit-ifade*, *tanımlayıcı*, *anahtar sözcüğü*, `operator`, `punctuator`  
   
-İsteğe bağlı bir bileşen tarafından alt opt belirtilir. Örneğin, aşağıdaki isteğe bağlı bir ifade süslü ayraçlar içindeki gösterir:  
+İsteğe bağlı bir bileşen tarafından simgeli opt gösterilir. Örneğin, aşağıdaki küme ayraçları içine alınmış bir isteğe bağlı ifade gösterir:  
   
-**{** *ifade*kabul **}**  
+**{** *ifade*iyileştirilmiş **}**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca Bkz. 
+ 
 [Dilbilgisi Özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

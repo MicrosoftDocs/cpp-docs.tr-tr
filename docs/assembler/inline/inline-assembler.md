@@ -1,5 +1,5 @@
 ---
-title: Satır içi derleyicisi | Microsoft Docs
+title: Satır içi Assembler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,22 +18,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5236bebdeef2db519556d3dace4c20d9529d0e23
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 4b45c55fbba37d27aa005480789cb490b891b103
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055046"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464771"
 ---
 # <a name="inline-assembler"></a>Satır İçi Derleyicisi
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Derleme dili; program hızını geliştirmek, bellek ihtiyaçlarını azaltmak ve donanımı denetlemek gibi pek çok amaca hizmet eder. Derleme dili talimatlarını ek derleme ve bağlama adımı olmadan doğrudan C ve C++ kaynaklı programlarınıza katıştırmak için satır içi derleyiciyi kullanabilirsiniz. Satır içi assembler derleyici içinde yerleşik olarak bulunur, böylece, Microsoft Makro Çevirici (MASM) gibi ayrı bir derleyici gerekmez.  
   
 > [!NOTE]
 >  Satır içi derleme kodu içeren programlar diğer donanım platformlarına tamamen taşınamaz. Taşınabilirlik için tasarlıyorsanız, satır içi derleyici kullanmaktan kaçının.  
   
- Satır içi derleme ARM üzerinde desteklenmiyor ve [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] işlemci.  Aşağıdaki konular, Visual C/C++ satır içi birleştirici/ayırıcı ile x86 işlemcilerin nasıl kullanıldığını açıklar:  
+ Satır içi derleme ARM ve x64 desteklenmiyor işlemci.  Aşağıdaki konular, Visual C/C++ satır içi birleştirici/ayırıcı ile x86 işlemcilerin nasıl kullanıldığını açıklar:  
   
 -   [Satır İçi Assembler’a Genel Bakış](../../assembler/inline/inline-assembler-overview.md)  
   
@@ -57,7 +57,7 @@ ms.locfileid: "32055046"
   
 -   [Satır İçi Bütünleştirilmiş Kodu En İyi Duruma Getirme](../../assembler/inline/optimizing-inline-assembly.md)  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri ve derleme dili](../../intrinsics/compiler-intrinsics-and-assembly-language.md)   

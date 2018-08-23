@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bb3337ffa82bf65ba0d4ff010d0b70afd7a99d7
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 00204e283feb14e6b8e831a12e8bd9ad3e352adc
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848216"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465833"
 ---
 # <a name="introduction-to-com-and-atl"></a>COM ve ATL'ye giriş
 Bu bölüm, COM ve ATL kısa bir giriş sağlar.  
@@ -35,7 +35,7 @@ Bu bölüm, COM ve ATL kısa bir giriş sağlar.
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Bileşen Nesne modeli](http://msdn.microsoft.com/library/windows/desktop/ms694363)  
- [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] Com şirket malzeme  
+ Windows SDK'sı malzeme com'a  
   
  [ATL](../atl/active-template-library-atl-concepts.md)  
  Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.  

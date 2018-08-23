@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7ac671c938b80fc69b8214456efecf798e1e5f6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b9b94e5b8eccdc63735c7cb25faa7eacb1e23670
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840361"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464761"
 ---
 # <a name="floatcontrol"></a>float_control
 Bir işlev için kayan nokta davranışını belirtir.  
@@ -35,21 +35,23 @@ float_control( value,setting [push] | push | pop )
 ```  
   
 ## <a name="flags"></a>Bayraklar  
- `value`, `setting` **[itme]**  
- Kayan nokta davranışını belirtir. `value` olabilir **kesin** veya **dışında**. Daha fazla bilgi için bkz: [/fp (Floating-Point davranış belirtin)](../build/reference/fp-specify-floating-point-behavior.md). `setting` ya da olabilir **üzerinde** veya **devre dışı**.  
+ 
+*değer*, *ayarı* *[anında iletme]*  
+Kayan nokta davranışını belirtir. *değer* olabilir `precise` veya `except`. Daha fazla bilgi için [FP (Floating-Point davranışını belirtin)](../build/reference/fp-specify-floating-point-behavior.md). *ayarı* olabilir `on` veya `off`.  
   
- Varsa `value` olan **kesin**, ayarlarını **kesin** ve **dışında** belirtilir. **dışında** yalnızca ayarlanabilir **üzerinde** zaman **kesin** de ayarlamak **üzerinde**.  
+Varsa *değer* olduğu `precise`, ayarlarını `precise` ve `except` belirtilir. `except` yalnızca ayarlanabilir `on` olduğunda `precise` ayrıca ayarlanır `on`.  
   
- Varsa isteğe bağlı **anında iletme** belirteci eklenir, geçerli ayarını `value` derleyici iç yığına gönderilir.  
+İsteğe bağlı *anında iletme* belirteci eklenir, geçerli ayarını *değer* iç derleyici yığınına gönderilir.  
   
- **push**  
- Geçerli anında `float_control` açın iç derleyici yığını ayarlama  
+*push*  
+Geçerli anında iletme **float_control** açın iç derleyici yığınındaki ayarlama  
   
- **POP**  
- Kaldırır `float_control` iç derleyici yığını üstten ayarlama ve yapıyorsa yeni `float_control` ayarı.  
+*POP*  
+Kaldırır **float_control** derleyici iç yığının en üstünden ayarlama ve ilgili yeni **float_control** ayarı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Dışı bırakamazsınız `float_control precise` kapalı olduğunda **dışında** açıktır. Benzer şekilde, **kesin** devre dışı açılamaz `fenv_access` açıktır. Hızlı bir modelle katı modelden gitmek `float_control` pragma, aşağıdaki kodu kullanın:  
+ 
+Dışı bırakamazsınız `float_control precise` kapalı olduğunda `except` açıktır. Benzer şekilde, `precise` kapalı olduğunda açılamaz `fenv_access` açıktır. İle hızlı bir Modeli'ne katı modelden Git **float_control** pragması, aşağıdaki kodu kullanın:  
   
 ```  
 #pragma float_control(except, off)  
@@ -57,7 +59,7 @@ float_control( value,setting [push] | push | pop )
 #pragma float_control(precise, off)  
 ```  
   
- Hızlı modelden ile sıkı bir model gitmek için `float_control` pragma, aşağıdaki kodu kullanın:  
+Katı bir modeli hızlı modelden gitmek **float_control** pragması, aşağıdaki kodu kullanın:  
   
 ```  
 #pragma float_control(precise, on)  
@@ -65,16 +67,17 @@ float_control( value,setting [push] | push | pop )
 #pragma float_control(except, on)  
 ```  
   
- Diğer kayan nokta pragmaları şunlardır:  
+Diğer kayan nokta pragmaları şunlardır:  
   
--   [fenv_access](../preprocessor/fenv-access.md)  
+- [fenv_access](../preprocessor/fenv-access.md)  
   
--   [fp_contract](../preprocessor/fp-contract.md)  
+- [fp_contract](../preprocessor/fp-contract.md)  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek pragma kullanarak taşma kayan nokta özel durumu yakalayın gösterilmektedir `float_control`.  
+ 
+Aşağıdaki örnek, pragması kullanılarak taşma kayan nokta özel durumu yakalamak gösterilmektedir **float_control**.  
   
-```  
+```cpp  
 // pragma_directive_float_control.cpp  
 // compile with: /EHa  
 #include <stdio.h>  
@@ -113,4 +116,5 @@ Pass
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  

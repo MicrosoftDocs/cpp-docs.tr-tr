@@ -48,17 +48,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3278824e565f34a61943b466ccc6ffef9c4f0be0
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 263667b96c052025550f4d366cd236d256e7f7a8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337029"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464481"
 ---
 # <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar sınıfı
 `CMFCAutoHideBar` Otomatik gizleme özelliğini uygulayan bir özel araç sınıfı.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.    
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  

@@ -240,17 +240,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fd70adb821724a476a66ad21157eb8506ffaa40
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: fd52e1437146c5584fa6240b4423462401921b44
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039595"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464600"
 ---
 # <a name="cmfcvisualmanageroffice2007-class"></a>CMFCVisualManagerOffice2007 sınıfı
-`CMFCVisualManagerOffice2007` bir uygulama bir Microsoft Office 2007 çalışmasıdır. 
+`CMFCVisualManagerOffice2007` Uygulamaya bir Microsoft Office 2007 görünümü verir. 
 
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -279,7 +279,7 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerOffice2007::GetRibbonStatusBarTextColor](#getribbonstatusbartextcolor)||  
 |[CMFCVisualManagerOffice2007::GetShowAllMenuItemsHeight](#getshowallmenuitemsheight)||  
 |[CMFCVisualManagerOffice2007::GetStatusBarPaneTextColor](#getstatusbarpanetextcolor)||  
-|`CMFCVisualManagerOffice2007::GetStyle`|Geçerli renk düzenini döndürür `CMFCVisualManagerOffice2007` hangi sırayla, Microsoft Office 2007 GUI taklit eder GUI.|  
+|`CMFCVisualManagerOffice2007::GetStyle`|Geçerli renk düzenini döndürür `CMFCVisualManagerOffice2007` GUI hangi sırayla, Microsoft Office 2007 GUI taklit eder.|  
 |[CMFCVisualManagerOffice2007::GetTabFrameColors](#gettabframecolors)||  
 |[CMFCVisualManagerOffice2007::GetTabHorzMargin](#gettabhorzmargin)||  
 |[CMFCVisualManagerOffice2007::GetTabTextColor](#gettabtextcolor)||  
@@ -380,10 +380,10 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 |`CMFCVisualManagerOffice2007::SetStyle`|Renk düzenini ayarlar `CMFCVisualManagerOffice2007` GUI.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım `CMFCVisualManagerOffice2007` , Microsoft Office 2007 benzeyecek şekilde uygulamanızı görsel görünümünü değiştirmek için. Bu görsel Yöneticisi'ni kullanmadan önce stili ayarlamanızı gerektirir. Bu görsel yöneticisine geçirmeden önce `CMFCVisualManager::SetDefaultManager`, statik işlevini çağırmanız gerekir `CMFCVisualManagerOffice2007::SetStyle`.  
+ Kullanım `CMFCVisualManagerOffice2007` , Microsoft Office 2007'in benzer şekilde, uygulamanızın görünümünü değiştirmek için. Bu görsel yöneticiyi kullanmadan önce stil ayarlamanızı gerektirir. Bu görsel yöneticiyi için geçirmeden önce `CMFCVisualManager::SetDefaultManager`, statik işlev çağırmalıdır `CMFCVisualManagerOffice2007::SetStyle`.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek visual Yöneticisi Office 2007 kullanımı gösterilmiştir. Bu kod parçacığını parçası olan [Masaüstü uyarı demosu örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, Office 2007 visual manager'nin nasıl kullanılacağını gösterir. Bu kod parçacığı parçasıdır [Masaüstü uyarı gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#7](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2007-class_1.cpp)]  
   
@@ -710,7 +710,7 @@ virtual BOOL GetToolTipInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *parametreleri*  
+ [in] *params*  
  [in] *nTür*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -808,7 +808,7 @@ virtual void OnDrawButtonBorder(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *durumu*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -828,7 +828,7 @@ virtual void OnDrawButtonSeparator(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *durumu*  
  [in] *bHorz*  
   
@@ -847,7 +847,7 @@ virtual void OnDrawCaptionBarInfoArea(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pBar*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -866,7 +866,7 @@ virtual void OnDrawCheckBoxEx(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *nDurum*  
  [in] *bHighlighted*  
  [in] *bPressed*  
@@ -889,7 +889,7 @@ virtual void OnDrawComboBorder(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bDevre Dışı*  
  [in] *bIsDropped*  
  [in] *bIsHighlighted*  
@@ -912,7 +912,7 @@ virtual void OnDrawComboDropButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bDevre Dışı*  
  [in] *bIsDropped*  
  [in] *bIsHighlighted*  
@@ -955,7 +955,7 @@ virtual void OnDrawEditBorder(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bDevre Dışı*  
  [in] *bIsHighlighted*  
  [in] *pButton*  
@@ -996,7 +996,7 @@ virtual void OnDrawHeaderCtrlBorder(
 ### <a name="parameters"></a>Parametreler  
  [in] *pCtrl*  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsPressed*  
  [in] *bIsHighlighted*  
   
@@ -1015,7 +1015,7 @@ virtual void OnDrawMenuBorder(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pMenu*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1034,7 +1034,7 @@ virtual void OnDrawMenuCheck(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bHighlight*  
  [in] *bIsRadio*  
   
@@ -1072,7 +1072,7 @@ virtual COLORREF OnDrawMenuLabel(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1090,7 +1090,7 @@ virtual void OnDrawMenuResizeBar(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *nResizeFlags*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1110,7 +1110,7 @@ virtual void OnDrawMenuScrollButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsScrollDown*  
  [in] *bIsHighlited*  
  [in] *bIsPressed*  
@@ -1132,7 +1132,7 @@ virtual void OnDrawMenuSystemButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *uiSystemCommand*  
  [in] *nStyle*  
  [in] *bHighlight*  
@@ -1249,7 +1249,7 @@ virtual COLORREF OnDrawPropertySheetListItem(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pParent*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsHighlihted*  
  [in] *bIsSelected*  
   
@@ -1423,7 +1423,7 @@ virtual void OnDrawRibbonCheckBoxOnList(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pCheckBox*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsSelected*  
  [in] *bHighlighted*  
   
@@ -1459,7 +1459,7 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsSelected*  
  [in] *bHighlighted*  
   
@@ -1511,7 +1511,7 @@ virtual void OnDrawRibbonKeyTip(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pElement*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *str*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1544,7 +1544,7 @@ virtual void OnDrawRibbonMainPanelFrame(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pPanel*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1561,7 +1561,7 @@ virtual void OnDrawRibbonMenuCheckFrame(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1637,7 +1637,7 @@ virtual void OnDrawRibbonRecentFilesFrame(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pPanel*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1654,7 +1654,7 @@ virtual void OnDrawRibbonSliderChannel(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pSlider*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1674,7 +1674,7 @@ virtual void OnDrawRibbonSliderThumb(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pSlider*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsHighlighted*  
  [in] *bIsPressed*  
  [in] *bIsDisabled*  
@@ -1698,7 +1698,7 @@ virtual void OnDrawRibbonSliderZoomButton(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pSlider*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsZoomOut*  
  [in] *bIsHighlighted*  
  [in] *bIsPressed*  
@@ -1758,7 +1758,7 @@ virtual void OnDrawScrollButtons(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *nBorderSize*  
  [in] *iImage*  
  [in] *bHilited*  
@@ -1779,7 +1779,7 @@ virtual void OnDrawSeparator(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pBar*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsHoriz*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1796,7 +1796,7 @@ virtual void OnDrawShowAllMenuItems(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *durumu*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1874,7 +1874,7 @@ virtual void OnDrawTabsButtonBorder(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pButton*  
  [in] *uiState*  
  [in] *pWndTab*  
@@ -1935,7 +1935,7 @@ virtual void OnDrawTearOffCaption(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsActive*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1969,7 +1969,7 @@ virtual void OnEraseTabsArea(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pTabWnd*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1987,7 +1987,7 @@ virtual void OnEraseTabsButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pButton*  
  [in] *pWndTab*  
   
@@ -2005,7 +2005,7 @@ virtual BOOL OnEraseTabsFrame(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pTabWnd*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -2047,7 +2047,7 @@ virtual void OnFillButtonInterior(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *durumu*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -2070,7 +2070,7 @@ virtual COLORREF OnFillCaptionBarButton(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pBar*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsPressed*  
  [in] *bIsHighlighted*  
  [in] *bIsDisabled*  
@@ -2094,7 +2094,7 @@ virtual void OnFillHighlightedArea(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pBrush*  
  [in] *pButton*  
   
@@ -2152,7 +2152,7 @@ virtual void OnFillOutlookPageButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsHighlighted*  
  [in] *bIsPressed*  
  [in] *clrText*  
@@ -2170,7 +2170,7 @@ virtual void OnFillPopupWindowBackground(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2210,7 +2210,7 @@ virtual void OnFillRibbonEdit(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pEdit*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsHighlighted*  
  [in] *bIsPaneHighlighted*  
  [in] *bIsDisabled*  
@@ -2250,7 +2250,7 @@ virtual void OnFillRibbonMenuFrame(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pPanel*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2267,7 +2267,7 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pMenuBar*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -2308,7 +2308,7 @@ virtual void OnHighlightMenuItem(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *clrText*  
   
 ### <a name="remarks"></a>Açıklamalar  

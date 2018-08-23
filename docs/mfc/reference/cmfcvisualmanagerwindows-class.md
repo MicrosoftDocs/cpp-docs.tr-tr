@@ -150,17 +150,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5582c634428290086393791ae23d551726bff7ab
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: fd7ebc32fa76165e35aa3ea23cf3acda61b80189
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040668"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466011"
 ---
 # <a name="cmfcvisualmanagerwindows-class"></a>CMFCVisualManagerWindows sınıfı
-`CMFCVisualManagerWindows` Kullanıcı bir Windows XP veya Vista tema seçtiğinde Microsoft Windows XP veya Microsoft Vista görünümünü taklit eder.  
+`CMFCVisualManagerWindows` Kullanıcı bir Windows XP veya Vista teması seçtiğinde Microsoft Windows XP veya Microsoft Vista görünümünü taklit eder.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -180,11 +180,11 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCVisualManagerWindows::AlwaysHighlight3DTabs](#alwayshighlight3dtabs)|Framework 3B sekmelerin her zaman vurgulanmasını olup olmadığını uygulamada belirlemek için bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::AlwaysHighlight3DTabs](../../mfc/reference/cmfcvisualmanager-class.md#alwayshighlight3dtabs).)|  
+|[CMFCVisualManagerWindows::AlwaysHighlight3DTabs](#alwayshighlight3dtabs)|Framework 3B sekmelerin her zaman vurgulanmasını olmadığını uygulamada belirlemek için bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::AlwaysHighlight3DTabs](../../mfc/reference/cmfcvisualmanager-class.md#alwayshighlight3dtabs).)|  
 |[CMFCVisualManagerWindows::DrawComboBorderWinXP](#drawcomboborderwinxp)|(Geçersiz kılmaları `CMFCVisualManager::DrawComboBorderWinXP`.)|  
 |[CMFCVisualManagerWindows::DrawComboDropButtonWinXP](#drawcombodropbuttonwinxp)|(Geçersiz kılmaları [CMFCVisualManager::DrawComboDropButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#drawcombodropbuttonwinxp).)|  
 |[CMFCVisualManagerWindows::DrawPushButtonWinXP](#drawpushbuttonwinxp)|(Geçersiz kılmaları [CMFCVisualManager::DrawPushButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#drawpushbuttonwinxp).)|  
-|[CMFCVisualManagerWindows::GetButtonExtraBorder](#getbuttonextraborder)|Araç çubuğu düğmesi çizer zaman çerçevesi bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::GetButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#getbuttonextraborder).)|  
+|[CMFCVisualManagerWindows::GetButtonExtraBorder](#getbuttonextraborder)|Araç çubuğu düğmesi çizdiğinde framework bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::GetButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#getbuttonextraborder).)|  
 |[CMFCVisualManagerWindows::GetCaptionButtonExtraBorder](#getcaptionbuttonextraborder)|(Geçersiz kılmaları [CMFCVisualManager::GetCaptionButtonExtraBorder](../../mfc/reference/cmfcvisualmanager-class.md#getcaptionbuttonextraborder).)|  
 |[CMFCVisualManagerWindows::GetDockingPaneCaptionExtraHeight](#getdockingpanecaptionextraheight)|(Geçersiz kılmaları `CMFCVisualManager::GetDockingPaneCaptionExtraHeight`.)|  
 |[CMFCVisualManagerWindows::GetHighlightedMenuItemTextColor](#gethighlightedmenuitemtextcolor)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::GetHighlightedMenuItemTextColor`.)|  
@@ -193,9 +193,9 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerWindows::IsDefaultWinXPPopupButton](#isdefaultwinxppopupbutton)|(Geçersiz kılmaları [CMFCVisualManager::IsDefaultWinXPPopupButton](../../mfc/reference/cmfcvisualmanager-class.md#isdefaultwinxppopupbutton).)|  
 |[CMFCVisualManagerWindows::IsHighlightWholeMenuItem](#ishighlightwholemenuitem)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::IsHighlightWholeMenuItem`.)|  
 |[CMFCVisualManagerWindows::IsOfficeStyleMenus](#isofficestylemenus)||  
-|[CMFCVisualManagerWindows::IsOfficeXPStyleMenus](#isofficexpstylemenus)|Görsel Yöneticisi Office XP stili menüleri uygulayan olup olmadığını gösterir. (Geçersiz kılmaları [CMFCVisualManager::IsOfficeXPStyleMenus](../../mfc/reference/cmfcvisualmanager-class.md#isofficexpstylemenus).)|  
+|[CMFCVisualManagerWindows::IsOfficeXPStyleMenus](#isofficexpstylemenus)|Görsel yöneticiyi Office XP stili menüleri uygulayıp uygulamadığını gösterir. (Geçersiz kılmaları [CMFCVisualManager::IsOfficeXPStyleMenus](../../mfc/reference/cmfcvisualmanager-class.md#isofficexpstylemenus).)|  
 |[CMFCVisualManagerWindows::IsWindowsThemingSupported](#iswindowsthemingsupported)|(Geçersiz kılmaları `CMFCVisualManager::IsWindowsThemingSupported`.)|  
-|[CMFCVisualManagerWindows::IsWinXPThemeAvailable](#iswinxpthemeavailable)|Bir Windows teması kullanılabilir olup olmadığını gösterir.|  
+|[CMFCVisualManagerWindows::IsWinXPThemeAvailable](#iswinxpthemeavailable)|Bir Windows teması kullanılabilir olup olmadığını belirtir.|  
 |[CMFCVisualManagerWindows::OnDrawBarGripper](#ondrawbargripper)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawBarGripper`.)|  
 |[CMFCVisualManagerWindows::OnDrawBrowseButton](#ondrawbrowsebutton)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawBrowseButton`.)|  
 |[CMFCVisualManagerWindows::OnDrawButtonBorder](#ondrawbuttonborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawButtonBorder`.)|  
@@ -209,12 +209,12 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerWindows::OnDrawEditBorder](#ondraweditborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawEditBorder`.)|  
 |[CMFCVisualManagerWindows::OnDrawExpandingBox](#ondrawexpandingbox)|(Geçersiz kılmaları [CMFCVisualManager::OnDrawExpandingBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawexpandingbox).)|  
 |[CMFCVisualManagerWindows::OnDrawFloatingToolbarBorder](#ondrawfloatingtoolbarborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawFloatingToolbarBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder](#ondrawheaderctrlborder)|Örneği çevresinde kenarlık çizer zaman çerçevesi bu yöntemi çağırır [CMFCHeaderCtrl sınıfı](../../mfc/reference/cmfcheaderctrl-class.md). (Geçersiz kılmaları [CMFCVisualManager::OnDrawHeaderCtrlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlborder).)|  
-|[CMFCVisualManagerWindows::OnDrawHeaderCtrlSortArrow](#ondrawheaderctrlsortarrow)|Üstbilgi denetimi sıralama okunu çizer zaman çerçevesi bu işlevi çağırır. (Geçersiz kılmaları [CMFCVisualManager::OnDrawHeaderCtrlSortArrow](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlsortarrow).)|  
+|[CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder](#ondrawheaderctrlborder)|Örneği çevresinde kenarlık çizdiğinde framework bu yöntemi çağırır [CMFCHeaderCtrl sınıfı](../../mfc/reference/cmfcheaderctrl-class.md). (Geçersiz kılmaları [CMFCVisualManager::OnDrawHeaderCtrlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlborder).)|  
+|[CMFCVisualManagerWindows::OnDrawHeaderCtrlSortArrow](#ondrawheaderctrlsortarrow)|Bir üst bilgi denetiminin sıralama oku çizdiğinde framework bu işlevi çağırır. (Geçersiz kılmaları [CMFCVisualManager::OnDrawHeaderCtrlSortArrow](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlsortarrow).)|  
 |[CMFCVisualManagerWindows::OnDrawMenuBorder](#ondrawmenuborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawMenuBorder`.)|  
 |[CMFCVisualManagerWindows::OnDrawMenuSystemButton](#ondrawmenusystembutton)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawMenuSystemButton`.)|  
 |[CMFCVisualManagerWindows::OnDrawMiniFrameBorder](#ondrawminiframeborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawMiniFrameBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawOutlookPageButtonBorder](#ondrawoutlookpagebuttonborder)|Bir Outlook sayfa düğmesinin kenarlık çizer çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CMFCVisualManager::OnDrawOutlookPageButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawoutlookpagebuttonborder).)|  
+|[CMFCVisualManagerWindows::OnDrawOutlookPageButtonBorder](#ondrawoutlookpagebuttonborder)|Bir Outlook sayfa düğmenin kenarlığı çizdiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCVisualManager::OnDrawOutlookPageButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawoutlookpagebuttonborder).)|  
 |[CMFCVisualManagerWindows::OnDrawPaneBorder](#ondrawpaneborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawPaneBorder`.)|  
 |[CMFCVisualManagerWindows::OnDrawPaneCaption](#ondrawpanecaption)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawPaneCaption`.)|  
 |[CMFCVisualManagerWindows::OnDrawPopupWindowButtonBorder](#ondrawpopupwindowbuttonborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawPopupWindowButtonBorder`.)|  
@@ -222,8 +222,8 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerWindows::OnDrawSeparator](#ondrawseparator)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawSeparator`.)|  
 |[CMFCVisualManagerWindows::OnDrawSpinButtons](#ondrawspinbuttons)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawSpinButtons`.)|  
 |[CMFCVisualManagerWindows::OnDrawStatusBarPaneBorder](#ondrawstatusbarpaneborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawStatusBarPaneBorder`.)|  
-|[CMFCVisualManagerWindows::OnDrawStatusBarProgress](#ondrawstatusbarprogress)|İlerleme göstergesi çizer olduğunda framework bu yöntemi çağırır [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) nesnesi. (Geçersiz kılmaları [CMFCVisualManager::OnDrawStatusBarProgress](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarprogress).)|  
-|[CMFCVisualManagerWindows::OnDrawStatusBarSizeBox](#ondrawstatusbarsizebox)|İçin boyut kutusu çizer zaman çerçevesi bu metodu çağıran bir [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md). (Geçersiz kılmaları [CMFCVisualManager::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarsizebox).)|  
+|[CMFCVisualManagerWindows::OnDrawStatusBarProgress](#ondrawstatusbarprogress)|İlerleme göstergesi çizer framework bu yöntemi çağırır [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) nesne. (Geçersiz kılmaları [CMFCVisualManager::OnDrawStatusBarProgress](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarprogress).)|  
+|[CMFCVisualManagerWindows::OnDrawStatusBarSizeBox](#ondrawstatusbarsizebox)|Boyut kutusu için çizdiğinde framework bu yöntemi çağırır. bir [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md). (Geçersiz kılmaları [CMFCVisualManager::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarsizebox).)|  
 |[CMFCVisualManagerWindows::OnDrawTab](#ondrawtab)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawTab`.)|  
 |[CMFCVisualManagerWindows::OnDrawTabCloseButton](#ondrawtabclosebutton)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawTabCloseButton`.)|  
 |[CMFCVisualManagerWindows::OnDrawTabsButtonBorder](#ondrawtabsbuttonborder)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawTabsButtonBorder`.)|  
@@ -234,14 +234,14 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerWindows::OnErasePopupWindowButton](#onerasepopupwindowbutton)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnErasePopupWindowButton`.)|  
 |[CMFCVisualManagerWindows::OnEraseTabsArea](#onerasetabsarea)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnEraseTabsArea`.)|  
 |[CMFCVisualManagerWindows::OnEraseTabsButton](#onerasetabsbutton)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnEraseTabsButton`.)|  
-|[CMFCVisualManagerWindows::OnEraseTabsFrame](#onerasetabsframe)|Üzerinde bir çerçeve sildiği zaman çerçevesi bu metodu çağıran bir [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md). (Geçersiz kılmaları [CMFCVisualManager::OnEraseTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#onerasetabsframe).)|  
+|[CMFCVisualManagerWindows::OnEraseTabsFrame](#onerasetabsframe)|Üzerinde bir çerçeve vuruşunu sildiğinde framework bu yöntemi çağırır. bir [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md). (Geçersiz kılmaları [CMFCVisualManager::OnEraseTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#onerasetabsframe).)|  
 |[CMFCVisualManagerWindows::OnFillBarBackground](#onfillbarbackground)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnFillBarBackground`.)|  
 |[CMFCVisualManagerWindows::OnFillButtonInterior](#onfillbuttoninterior)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnFillButtonInterior`.)|  
 |[CMFCVisualManagerWindows::OnFillCommandsListBackground](#onfillcommandslistbackground)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnFillCommandsListBackground`.)|  
 |[CMFCVisualManagerWindows::OnFillMiniFrameCaption](#onfillminiframecaption)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`.)|  
-|[CMFCVisualManagerWindows::OnFillOutlookPageButton](#onfilloutlookpagebutton)|Bir Outlook sayfa düğmesi iç doldurduğunda framework bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::OnFillOutlookPageButton](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookpagebutton).)|  
+|[CMFCVisualManagerWindows::OnFillOutlookPageButton](#onfilloutlookpagebutton)|Bir Outlook sayfa düğmesinin iç doldururken framework bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::OnFillOutlookPageButton](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookpagebutton).)|  
 |[CMFCVisualManagerWindows::OnFillTasksGroupInterior](#onfilltasksgroupinterior)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnFillTasksGroupInterior`.)|  
-|[CMFCVisualManagerWindows::OnFillTasksPaneBackground](#onfilltaskspanebackground)|Arka planını doldurduğunda framework bu metodu çağıran bir [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) denetim. (Geçersiz kılmaları [CMFCVisualManager::OnFillTasksPaneBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfilltaskspanebackground).)|  
+|[CMFCVisualManagerWindows::OnFillTasksPaneBackground](#onfilltaskspanebackground)|Arka planı doldururken framework bu yöntemi çağırır. bir [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) denetimi. (Geçersiz kılmaları [CMFCVisualManager::OnFillTasksPaneBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfilltaskspanebackground).)|  
 |[CMFCVisualManagerWindows::OnHighlightMenuItem](#onhighlightmenuitem)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnHighlightMenuItem`.)|  
 |[CMFCVisualManagerWindows::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`.)|  
 |[CMFCVisualManagerWindows::OnUpdateSystemColors](#onupdatesystemcolors)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`.)|  
@@ -251,15 +251,15 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCVisualManagerWindows::m_b3DTabsXPTheme](#m_b3dtabsxptheme)|Windows XP teması 3B sekmeleri görüntülenip görüntülenmeyeceğini belirtir.|  
+|[CMFCVisualManagerWindows::m_b3DTabsXPTheme](#m_b3dtabsxptheme)|Windows XP tema 3B sekmeleri görüntülenip görüntülenmeyeceğini belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım `CMFCVisualManagerWindows` uygulamanın çalıştığı bilgisayarda geçerli tema taklit etmek için uygulamanızın görünümünü değiştirmek için sınıf.  
+ Kullanım `CMFCVisualManagerWindows` uygulamanın çalıştığı bilgisayarda geçerli temayı taklit etmek için uygulamanın görünümünü değiştirmek için sınıf.  
   
- Ancak, bir Windows teması uygulamanızı Windows XP öncesi bir Windows sürümünde çalışıyorsa veya kullanıcı tarafından kullanıldığından temaları devre dışı bırakılmışsa kullanılamayabilir **Klasik** görünümü. Tema yok kullanılabilir ise, uygulama içinde tanımlanan varsayılan visual Yöneticisi kullanır [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
+ Ancak, bir Windows teması uygulamanızı Windows XP'den önceki bir Windows sürümünde çalışıyorsa ya da kullanıcı kullandığından temaları devre dışıysa kullanılamayabilir **Klasik** görünümü. Tema varsa, tanımlanan varsayılan görsel yöneticiyi uygulamanın kullandığı [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl kullanılacağı ortaya `CMFCVisualManagerWindows`. Bu kod parçacığını parçası olan [Masaüstü uyarı demosu örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek nasıl kullanılacağını gösterir `CMFCVisualManagerWindows`. Bu kod parçacığı parçasıdır [Masaüstü uyarı gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#10](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerwindows-class_1.cpp)]  
   
@@ -314,7 +314,7 @@ virtual BOOL DrawComboBorderWinXP(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bDevre Dışı*  
  [in] *bIsDropped*  
  [in] *bIsHighlighted*  
@@ -337,7 +337,7 @@ virtual BOOL DrawComboDropButtonWinXP(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bDevre Dışı*  
  [in] *bIsDropped*  
  [in] *bIsHighlighted*  
@@ -359,7 +359,7 @@ virtual BOOL DrawPushButtonWinXP(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pButton*  
  [in] *uiState*  
   
@@ -508,17 +508,17 @@ static BOOL IsWinXPThemeAvailible();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir tema kullanılabiliyorsa, sıfır olmayan; Aksi takdirde 0.  
+ Bir tema kullanılabilir olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, tüm Windows XP ve üstü temaları için geçerlidir.  
   
- `IsWinXPThemeAvailable` aynıdır `CMFCVisualManagerWindows::IsWindowsThemingAvailable` dışında `IsWinXPThemeAvailable` statik bir yöntemdir. Bu nedenle, bir yoksa, geçici bir görsel Yöneticisi oluşturur.  
+ `IsWinXPThemeAvailable` aynı `CMFCVisualManagerWindows::IsWindowsThemingAvailable` dışında `IsWinXPThemeAvailable` statik bir yöntemdir. Biri yoksa, bu nedenle, geçici bir görsel yöneticiyi oluşturun.  
   
  `IsWinXPThemeAvailable` her zaman Windows XP'den önceki Windows sürümleri için 0 döndürür.  
   
 ##  <a name="m_b3dtabsxptheme"></a>  CMFCVisualManagerWindows::m_b3DTabsXPTheme  
- Görsel Yöneticisi 3B sekmeleri görüntülenip görüntülenmeyeceğini belirler Boole parametresi.  
+ Görsel yöneticiyi 3B sekmeleri görüntüler olup olmadığını belirleyen bir Boole parametresi.  
   
 ```  
 AFX_IMPORT_DATA static BOOL m_b3DTabsXPTheme;  
@@ -557,7 +557,7 @@ virtual BOOL OnDrawBrowseButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pEdit*  
  [in] *durumu*  
  [in] *clrText*  
@@ -580,7 +580,7 @@ virtual void OnDrawButtonBorder(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *durumu*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -600,7 +600,7 @@ virtual void OnDrawButtonSeparator(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *durumu*  
  [in] *bHorz*  
   
@@ -669,7 +669,7 @@ virtual void OnDrawCheckBoxEx(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *nDurum*  
  [in] *bHighlighted*  
  [in] *bPressed*  
@@ -692,7 +692,7 @@ virtual void OnDrawComboBorder(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bDevre Dışı*  
  [in] *bIsDropped*  
  [in] *bIsHighlighted*  
@@ -715,7 +715,7 @@ virtual void OnDrawComboDropButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bDevre Dışı*  
  [in] *bIsDropped*  
  [in] *bIsHighlighted*  
@@ -749,7 +749,7 @@ virtual void OnDrawEditBorder(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bDevre Dışı*  
  [in] *bIsHighlighted*  
  [in] *pButton*  
@@ -769,7 +769,7 @@ virtual void OnDrawExpandingBox(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsOpened*  
  [in] *colorBox*  
   
@@ -809,7 +809,7 @@ virtual void OnDrawHeaderCtrlBorder(
 ### <a name="parameters"></a>Parametreler  
  [in] *pCtrl*  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsPressed*  
  [in] *bIsHighlighted*  
   
@@ -829,7 +829,7 @@ virtual void OnDrawHeaderCtrlSortArrow(
 ### <a name="parameters"></a>Parametreler  
  [in] *pCtrl*  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsUp*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -847,7 +847,7 @@ virtual void OnDrawMenuBorder(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pMenu*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -865,7 +865,7 @@ virtual void OnDrawMenuSystemButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *uiSystemCommand*  
  [in] *nStyle*  
  [in] *bHighlight*  
@@ -923,7 +923,7 @@ virtual void OnDrawPaneBorder(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pBar*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -981,7 +981,7 @@ virtual void OnDrawScrollButtons(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *nBorderSize*  
  [in] *iImage*  
  [in] *bHilited*  
@@ -1002,7 +1002,7 @@ virtual void OnDrawSeparator(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pBar*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsHoriz*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1131,7 +1131,7 @@ virtual void OnDrawTabCloseButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pTabWnd*  
  [in] *bIsHighlighted*  
  [in] *bIsPressed*  
@@ -1153,7 +1153,7 @@ virtual void OnDrawTabsButtonBorder(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pButton*  
  [in] *uiState*  
  [in] *pWndTab*  
@@ -1194,7 +1194,7 @@ virtual void OnDrawTasksGroupAreaBorder(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bÖzel*  
  [in] *bNoTitle*  
   
@@ -1233,7 +1233,7 @@ virtual void OnDrawTearOffCaption(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsActive*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1267,7 +1267,7 @@ virtual void OnEraseTabsArea(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pTabWnd*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1285,7 +1285,7 @@ virtual void OnEraseTabsButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pButton*  
  [in] *pWndTab*  
   
@@ -1303,7 +1303,7 @@ virtual BOOL OnEraseTabsFrame(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pTabWnd*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1345,7 +1345,7 @@ virtual void OnFillButtonInterior(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *durumu*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1362,7 +1362,7 @@ virtual COLORREF OnFillCommandsListBackground(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsSelected*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1404,7 +1404,7 @@ virtual void OnFillOutlookPageButton(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsHighlighted*  
  [in] *bIsPressed*  
  [in] *clrText*  
@@ -1423,7 +1423,7 @@ virtual void OnFillTasksGroupInterior(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bÖzel*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1457,7 +1457,7 @@ virtual void OnHighlightMenuItem(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pButton*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *clrText*  
   
 ### <a name="remarks"></a>Açıklamalar  

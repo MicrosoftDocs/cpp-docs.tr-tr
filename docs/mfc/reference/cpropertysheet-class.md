@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d265b2547f35e0c8c25ee5e3aad1135945e346b
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 994e9f8c48bb6d6db2a9af06613abca895b09f51
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853210"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464687"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 Özellik sayfaları iletişim kutusu olarak da bilinen temsil eder.  
@@ -121,7 +121,7 @@ class CPropertySheet : public CWnd
 ## <a name="remarks"></a>Açıklamalar  
  Bir özellik sayfası oluşan bir `CPropertySheet` nesnesi ve bir veya daha fazla [CPropertyPage](../../mfc/reference/cpropertypage-class.md) nesneleri. Framework bir özellik sayfası bir dizi sekme dizinlerini ve şu anda seçili sayfasını içeren bir alan içeren bir pencere olarak görüntülenir. Kullanıcı uygun sekmesini kullanarak belirli bir sayfaya götürür.  
   
- `CPropertySheet` Genişletilmiş için destek sağlayan [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) yapısı sunulan [!INCLUDE[Win98](../../mfc/reference/includes/win98_md.md)] ve Windows NT 2000. Yapısı, ek bayrakları ve "Filigran" arka plan bit eşlem kullanma desteği üyeleri içerir.  
+ `CPropertySheet` Genişletilmiş için destek sağlayan [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) Windows 98 ve Windows NT 2000'de kullanıma sunulan yapısı. Yapısı, ek bayrakları ve "Filigran" arka plan bit eşlem kullanma desteği üyeleri içerir.  
   
  Bu yeni görüntüleri otomatik olarak, özellik sayfası nesnesi içinde görüntülemek için yapılan çağrıda bit eşlem ve palet görüntüleri için geçerli değerler geçirmek [CPropertySheet::Construct](#construct) veya [CPropertySheet::CPropertySheet](#cpropertysheet).  
   

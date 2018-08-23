@@ -18,47 +18,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bff0e4cc40bfa0e355f348c02f01cb0c7445b596
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8222d909ad23157b4e3ed32a6920abadd77709b6
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849255"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465967"
 ---
 # <a name="optimize"></a>optimize
-Bir işlev tarafından işlevi temelinde gerçekleştirilecek iyileştirmelerini belirtir.  
+İşlev tarafından işlevi olarak gerçekleştirilecek iyileştirmeleri belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma optimize( "[optimization-list]", {on | off} )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **En iyi duruma getirme** pragma dışında bir işlev görünmesi gerekir ve pragma görülen sonra tanımlanan ilk işlevi etkili olur. **Üzerinde** ve **kapalı** bağımsız değişkenleri kapatma belirtilen seçenekler *en iyi duruma getirme listesi* açmak veya kapatmak.  
+
+**En iyi duruma getirme** pragma işlevin dışında görünmelidir ve pragma görüldüğünde sonra tanımlanmış konumundaki ilk işlev etkinleşir. *Üzerinde* ve *kapalı* bağımsız değişkenleri kapatma seçenekleri belirtilen *iyileştirme listesi* açıp kapatabilir.  
   
- *En iyi duruma getirme listesi* sıfır veya daha çok parametrelerden biri aşağıdaki tabloda gösterilen olabilir.  
+*İyileştirme listesi* sıfır veya daha fazla parametre aşağıdaki tabloda gösterilen olabilir.  
   
-### <a name="parameters-of-the-optimize-pragma"></a>Pragma İyileştir parametreleri  
+### <a name="parameters-of-the-optimize-pragma"></a>Optimize Pragması parametreleri  
   
-|Parametre|En iyi duruma getirme türü|  
+|Parametre|İyileştirme türü|  
 |--------------------|--------------------------|  
-|**g**|Global iyileştirmeler sağlar.|  
-|**s** veya **t**|Makine kodu kısa veya hızlı dizisi belirtin.|  
-|**Y**|Çerçeve işaretçisi program yığında oluşturur.|  
+|*g*|Genel iyileştirmeler sağlar.|  
+|*s* veya *t*|Makine kodu kısa veya hızlı dizisi belirtin.|  
+|*Y*|Programın yığınında çerçeve işaretçileri oluşturur.|  
   
- İle kullanılan aynı harf bunlar [/O](../build/reference/o-options-optimize-code.md) derleyici seçenekleri. Örneğin, aşağıdaki pragma eşdeğerdir **/Os** derleyici seçeneği:  
+İle kullanılan aynı harflerini bunlar [/O](../build/reference/o-options-optimize-code.md) derleyici seçenekleri. Örneğin, aşağıdaki pragma değerine eşdeğer olan `/Os` derleyici seçeneği:  
   
 ```  
 #pragma optimize( "ts", on )  
 ```  
   
- Kullanarak **en iyi duruma getirme** boş dize ile pragma (**""**) yönergesi özel şekildedir:  
+Kullanarak **en iyi duruma getirme** pragma ile boş bir dize (**""**) özel bir formu yönergesi:  
   
- Kullandığınızda **kapalı** parametresi, Kapat, bu konunun önceki kısımlarında tabloda listelenen en iyi duruma getirme, açar.  
+Kullanırken *kapalı* parametresi, kapalı, bu konunun önceki kısımlarında tabloda listelenen iyileştirmeleri etkinleştirir.  
   
- Kullandığınızda **üzerinde** parametresi ile belirtilen olanlar için en iyi duruma getirme sıfırlar, [/O](../build/reference/o-options-optimize-code.md) derleyici seçeneği.  
+Kullanırken *üzerinde* parametresi ile belirtilen bu iyileştirmeler sıfırlar, [/O](../build/reference/o-options-optimize-code.md) derleyici seçeneği.  
   
 ```  
 #pragma optimize( "", off )  
@@ -69,4 +69,5 @@ Bir işlev tarafından işlevi temelinde gerçekleştirilecek iyileştirmelerini
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 367294991b9cbb07ee7c852d757842a20c51cc30
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 20072a5196ce476cf178f7c6e1071bd495202062
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850261"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466445"
 ---
 # <a name="renamesearchnamespace"></a>rename_search_namespace
-**C++ özel**  
+**C++ özgü**  
   
- Aynı işlevselliğe sahip [rename_namespace](../preprocessor/rename-namespace.md) özniteliği ancak #import yönergesi ile kullandığınız tür kitaplıklarının kullanılan [auto_search](../preprocessor/auto-search.md) özniteliği.  
+Aynı işlevlere sahip [rename_namespace](../preprocessor/rename-namespace.md) özniteliği ancak kullandığınız tür kitaplıklarını kullanılan `#import` yönergesi ile [auto_search](../preprocessor/auto-search.md) özniteliği.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,13 +34,15 @@ ms.locfileid: "33850261"
 rename_search_namespace("NewName")  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `NewName`  
- Yeni ad alanı adı.  
+### <a name="parameters"></a>Parametreler  
+*Yeni ad*  
+Yeni ad alanı adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **Son C++ özel**  
+ 
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

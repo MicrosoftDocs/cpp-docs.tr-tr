@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16b8c937ad62ddc6738c626543dab2d4e5453bc5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c98c6559e04f0e89fa4c3501f30cd88d449de306
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839786"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465509"
 ---
 # <a name="undef-directive-cc"></a>#undef Yönergesi (C/C++)
 Daha önce `#define` ile oluşturulmuş bir adı kaldırır (tanımsız hale getirir).  
@@ -31,20 +31,19 @@ Daha önce `#define` ile oluşturulmuş bir adı kaldırır (tanımsız hale get
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #undef   
 identifier  
-  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- `#undef` Yönergesi kaldırır geçerli tanımı *tanımlayıcısı*. Sonuç olarak, sonraki oluşumları *tanımlayıcısı* önişlemci tarafından göz ardı edilir. Makro tanımı kullanarak kaldırmak için `#undef`, yalnızca makrosu vermek *tanımlayıcısı* ; parametre listesi vermeyin.  
+## <a name="remarks"></a>Açıklamalar 
+
+**#Undef** yönergesi, geçerli tanımı kaldırır *tanımlayıcı*. Sonuç olarak, sonraki tekrarı *tanımlayıcı* önişlemci tarafından göz ardı edilir. Makro tanımı kullanarak kaldırmak için **#undef**, yalnızca makronun vermek *tanımlayıcı* ; parametre listesi vermeyin.  
   
- Ayrıca `#undef` yönergesini daha önce bir tanımı bulunmayan tanımlayıcılar için de uygulayabilirsiniz. Bu tanımlayıcının tanımsız hale gelmesini sağlar. `#undef` deyimleri içinde makro değişikliği gerçekleştirilmez.  
+Ayrıca uygulayabilirsiniz **#undef** yönerge için önce bir tanımı olan bir tanımlayıcı. Bu tanımlayıcının tanımsız hale gelmesini sağlar. İçinde Makro değişikliği gerçekleştirilmez **#undef** deyimleri.  
   
- Bir kaynak programda, bir tanımlayıcının özel anlama sahip olduğu bir bölge oluşturmak için `#undef` yönergesi genellikle bir `#define` yönergesi ile eşleştirilir. Örneğin, kaynak programın belirli bir işlevi, programın geri kalanını etkilemeyen ortama özgü değerler tanımlamak için bildirim sabitleri kullanabilir. `#undef` yönergesi, kaynak programın koşullu derlemesini denetlemek için `#if` yönergesi ile de çalışır. Bkz: [#if, #elif, #else ve #endif yönergeleri](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md) daha fazla bilgi için.  
+**#Undef** yönergesi ile eşleştirilir genellikle bir `#define` yönergesi bir tanımlayıcının özel anlama sahip bir kaynak programda bir bölge oluşturmak için. Örneğin, kaynak programın belirli bir işlevi, programın geri kalanını etkilemeyen ortama özgü değerler tanımlamak için bildirim sabitleri kullanabilir. **#Undef** yönergesi ile de çalışır `#if` yönergesi kaynak programın koşullu derlemesini denetlemek için. Bkz: [#if, #elif, #else ve #endif yönergeleri](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md) daha fazla bilgi için.  
   
- Aşağıdaki örnekte, `#undef` yönergesi sembolik bir sabitin ve bir makronun tanımlarını kaldırır. Yalnızca makronun tanımlayıcısının belirtildiğine dikkat edin.  
+Aşağıdaki örnekte, **#undef** yönergesi sembolik bir sabitin ve bir makronun tanımlarını kaldırır. Yalnızca makronun tanımlayıcısının belirtildiğine dikkat edin.  
   
 ```  
 #define WIDTH 80  
@@ -56,11 +55,12 @@ identifier
 #undef ADD  
 ```  
   
- **Microsoft özel**  
+**Microsoft'a özgü**  
   
- Makroların tanımlarını kaldırmak için komut satırında /U seçeneğini kullanın ve ardından tanımı kaldırılacak makro adlarını belirtin. Bu komutu gönderdikten etkisini için bir dizi eşdeğerdir `#undef` *makro adını* dosyasının başında deyimleri.  
+Makrolar kullanılarak komut satırından tanımsız olabilir `/U` kaldırılacak makro adlarını ardından seçeneği. Bu komutu çalıştırmanın etkisi dizisi ile eşdeğerdir `#undef` *makro adı* dosyasının başında deyimleri.  
   
- **SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)
+ 
+[Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

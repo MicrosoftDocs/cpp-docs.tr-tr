@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5bd2a384af6e73ae0c113bf8c27ae9d0c7529a8
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 2b5cff88aab5a4b069d96808755ce92d61f32fff
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881106"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464883"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject sınıfı
 Bu sınıfın uyguladığı `IUnknown` toplanmış veya toplanmayan bir nesne için.  
@@ -63,7 +63,7 @@ class CComPolyObject : public IUnknown,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComPolyObject::AddRef](#addref)|Nesnenin başvuru sayısını artırır.|  
-|[CComPolyObject::CreateInstance](#createinstance)|(Statik) Yeni bir oluşturmanıza olanak tanır **CComPolyObject <** `contained` **>** yükü olmadan nesne [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
+|[CComPolyObject::CreateInstance](#createinstance)|(Statik) Yeni bir oluşturmanıza olanak tanır **CComPolyObject <** `contained` **>** yükü olmadan nesne [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).|  
 |[CComPolyObject::FinalConstruct](#finalconstruct)|Öğesinin son başlatılmasını gerçekleştirir `m_contained`.|  
 |[CComPolyObject::FinalRelease](#finalrelease)|Son yok edilmesini gerçekleştirir `m_contained`.|  
 |[CComPolyObject::QueryInterface](#queryinterface)|İstenen arabirim için bir işaretçi alır.|  
@@ -137,7 +137,7 @@ CComPolyObject(void* pv);
  Çağrıları ayrılan tüm kaynakları serbest bırakan [FinalRelease](#finalrelease), ve modül kilit sayısını azaltır.  
   
 ##  <a name="createinstance"></a>  CComPolyObject::CreateInstance  
- Yeni bir oluşturmanıza olanak tanır **CComPolyObject <** `contained` **>** yükü olmadan nesne [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
+ Yeni bir oluşturmanıza olanak tanır **CComPolyObject <** `contained` **>** yükü olmadan nesne [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ```
 static HRESULT WINAPI CreateInstance(  

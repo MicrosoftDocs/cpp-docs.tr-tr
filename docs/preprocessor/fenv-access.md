@@ -18,16 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2f6f379e61ea84c1142bd94be49b55a50b28753
-ms.sourcegitcommit: 1ac8f983eeaacd09135a249dea00f10e1c94e0e3
+ms.openlocfilehash: eeb138a8b2598c209005031a3ccd3104fead48dc
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36963329"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465907"
 ---
 # <a name="fenvaccess"></a>fenv_access
-
-Devre dışı bırakır (**üzerinde**) veya sağlar (**kapalı**) kayan nokta ortamı değişebilir iyileştirmeler bayrak testleri ve mod değişiklikleri.
+Devre dışı bırakır (**üzerinde**) ya da etkinleştirir (**kapalı**) kayan nokta ortam değişebilir iyileştirmeleri, testleri ve modu değişiklikleri bayrak.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,17 +34,17 @@ Devre dışı bırakır (**üzerinde**) veya sağlar (**kapalı**) kayan nokta o
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **fenv_access** olan **devre dışı**. Derleyici varsayımında kodunuzu erişemedi veya kayan nokta ortamı işlemek, sonra birçok kayan nokta kodu en iyi duruma getirme işlemi gerçekleştirebilirsiniz. Ayarlama **fenv_access** için **üzerinde** kodunuzu durumu bayrakları, özel durumlar, test veya Denetim modu bayrakları ayarlamak için kayan nokta ortamı erişen derleyici bilgilendirmek için. Kodunuzu kayan nokta ortamı tutarlı bir şekilde erişebilmesi için bu iyileştirmeler derleyici devre dışı bırakır. 
+Varsayılan olarak, **fenv_access** olduğu **kapalı**. Derleyici, kabul edilebilir değilse kodunuzu erişemeyebilir veya kayan nokta ortamını işleyin ve ardından birçok kayan nokta kodu en iyi duruma getirme gerçekleştirebilirsiniz. Ayarlama **fenv_access** için **üzerinde** derleyici kodunuzu kayan nokta ortamın durumu bayrakları, özel durumlar, test etmek için ya da Denetim modu bayrakları ayarlamanızı erişimi olduğunu bildirmek için. Böylece kodunuzu kayan nokta ortam tutarlı bir şekilde erişebilir, derleyici bu iyileştirmeler devre dışı bırakır. 
 
-Kayan nokta davranışını hakkında daha fazla bilgi için bkz: [/fp (Floating-Point davranış belirtin)](../build/reference/fp-specify-floating-point-behavior.md).
+Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [FP (Floating-Point davranışını belirtin)](../build/reference/fp-specify-floating-point-behavior.md).
 
 Tabi olan en iyi duruma getirme türlerini **fenv_access** şunlardır:
 
 - Genel Genel alt ifade ortadan kaldırma
 
-- Kod hareket
+- Kod Ara
 
-- Sabit Katlama
+- Sabit bir Katlama
 
 Diğer kayan nokta pragmaları şunlardır:
 
@@ -55,7 +54,7 @@ Diğer kayan nokta pragmaları şunlardır:
 
 ## <a name="examples"></a>Örnekler
 
-Bu örnek ayarlar **fenv_access** için **üzerinde** 24 bit duyarlık kayan nokta denetim kaydolun ayarlamak için:
+Bu örnekte ayarlar **fenv_access** için **üzerinde** 24 bit duyarlık kayan nokta denetim kaydı ayarlamak için:
 
 ```cpp
 // pragma_directive_fenv_access_x86.cpp
@@ -85,7 +84,7 @@ int main() {
 out=9.999999776482582e-003
 ```
 
-Çıkarırsanız `#pragma fenv_access (on)` önceki örnekten derleyici denetim modunu kullanmaz derleme zamanı değerlendirme yaptığından çıkış farklı olduğuna dikkat edin.
+Çıkarırsanız `#pragma fenv_access (on)` önceki örnekten derleyici denetim modunu kullanmaz derleme zamanı değerlendirmesi, çünkü çıkış farklı olduğunu unutmayın.
 
 ```cpp
 // pragma_directive_fenv_access_2.cpp

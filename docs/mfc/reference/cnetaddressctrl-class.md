@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c58090351829f6a12ae90d56e8985bf615966f65
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 731229f8aca9d564e418382a54e097ff61316586
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852288"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466277"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 `CNetAddressCtrl` Sınıfı, giriş ve IPv4, IPv6 ve adlandırılmış DNS adreslerinin biçimini doğrulamak için kullanabileceğiniz ağ adresi denetimini temsil eder.  
@@ -72,7 +72,7 @@ class CNetAddressCtrl : public CEdit
   
  Aşağıdaki şekil, bir ağ adresi denetimi içeren bir iletişim kutusu gösterir. Metin kutusunu (1) ağ adresi denetimi için bir geçersiz ağ adresi içeriyor. Ağ adresi geçersiz (2) bilgi ipucu iletisi görüntülenir.  
   
- ![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ] (../../mfc/reference/media/cnetaddctrl.png "cnetaddctrl")  
+ ![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ](../../mfc/reference/media/cnetaddctrl.png "cnetaddctrl")  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği, bir ağ adresi doğrulayan bir iletişim kutusu bölümüdür. Üç radyo düğmesi için olay işleyicileri, üç adresi türlerden biri olabilir ağ adresi belirtin. Kullanıcı ağ denetimi metin kutusuna bir adresi girer ve sonra adresinizi doğrulamak için bir düğmeye bastığında. Adresi geçerli bir başarı iletisi görüntülenir; Aksi takdirde, önceden tanımlı bilgi ipucu hata iletisi görüntülenir.  
@@ -98,7 +98,7 @@ class CNetAddressCtrl : public CEdit
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcmn.h  
   
- Bu sınıfın desteklenen [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ve daha sonra.  
+ Bu sınıf, Windows Vista ve sonraki sürümlerde desteklenir.  
   
  Bu sınıf için ek gereksinimler açıklanmıştır [yapı gereksinimleri için Windows Vista ortak denetimleri](../../mfc/build-requirements-for-windows-vista-common-controls.md).  
   

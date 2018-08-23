@@ -23,15 +23,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 756cc7ba203a1655bf5112d9c03e84707644f1e5
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: d934e9ae5494b934acb0779665ba4471dfc4c2b7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337576"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466070"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl Sınıfı
-Bir uygulamasını sağlar [IDBCreateSession](https://msdn.microsoft.com/library/ms724076.aspx) arabirimi.  
+Bir uygulamasını sağlar [IDBCreateSession](/previous-versions/windows/desktop/ms724076\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,7 +74,7 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IDBCreateSession::CreateSession](https://msdn.microsoft.com/library/ms714942.aspx) içinde *OLE DB Programcının Başvurusu*.   
+ Bkz: [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   

@@ -44,12 +44,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 15a1506980519880652abc637549ec2c7bf17e1d
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 1b94898cbe4a041ac1bb9a5d01c55380ee496106
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337603"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465372"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 Devralınan `DBPROPSET` yapısı ve anahtar alanları başlatan bir oluşturucu ekler ve `AddProperty` erişim yöntemi.  
@@ -131,7 +131,7 @@ bool AddProperty(DWORD dwPropertyID,
  **doğru** varsa özelliği başarıyla eklendi. Aksi takdirde, **false**. 
 
 ## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
-Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alanlarının [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) yapısı.  
+Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alanlarının [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapısı.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -161,7 +161,7 @@ void SetGUID(const GUID& guid) throw();
   
 #### <a name="parameters"></a>Parametreler  
  *GUID*  
- [in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) yapısı.  
+ [in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu alan ayarlanabilir [Oluşturucusu](../../data/oledb/cdbpropset-cdbpropset.md) de.  
@@ -179,5 +179,5 @@ CDBPropSet& operator =(CDBPropSet& propset) throw();
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Tüketici Şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)   
  [Cdbpropıdset sınıfı](../../data/oledb/cdbpropidset-class.md)   
- [DBPROPSET yapısı](https://msdn.microsoft.com/library/ms714367.aspx)   
- [DBPROP yapısı](https://msdn.microsoft.com/library/ms717970.aspx)
+ [DBPROPSET yapısı](/previous-versions/windows/desktop/ms714367\(v=vs.85\))   
+ [DBPROP yapısı](/previous-versions/windows/desktop/ms717970\(v=vs.85\))

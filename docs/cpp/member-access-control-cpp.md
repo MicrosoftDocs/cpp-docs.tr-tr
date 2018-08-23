@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28f0cedbe20ebea21b3b10e5016605c1bce51383
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 0b2cff8470ad11270d2f40abf3d03c708a9d6e87
+ms.sourcegitcommit: 9035b4df448583c195f54318e941284b632dc308
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407393"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464868"
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 Erişim denetimleri birbirinden ayırmak etkinleştirme [genel](../cpp/public-cpp.md) bir sınıfın arabirim [özel](../cpp/private-cpp.md) uygulama ayrıntılarını ve [korumalı](../cpp/protected-cpp.md) tarafından yalnızca olan üyeleri kullanın türetilmiş sınıflar. Erişim belirticisi sonraki erişim belirticisi karşılaşılanaa kadar sonra bildirilen tüm üyeleri için geçerlidir.  
@@ -80,28 +80,44 @@ protected:      // Declare protected function for derived classes only.
   
 ```cpp 
 // access_specifiers_for_base_classes.cpp  
-class BaseClass  
-{  
-public:  
-    int PublicFunc();    // Declare a public member.  
-protected:  
+class BaseClass
+{
+public:
+    int PublicFunc(); // Declare a public member.  
+protected:
     int ProtectedFunc(); // Declare a protected member.  
-private:  
-    int PrivateFunc();   // Declare a private member.  
-};  
-  
+private:
+    int PrivateFunc(); // Declare a private member.  
+};
+
 // Declare two classes derived from BaseClass.  
-class DerivedClass1 : public BaseClass  
-{  
-};  
-  
-class DerivedClass2 : private BaseClass  
-{  
-};  
-  
-int main()  
-{  
-}  
+class DerivedClass1 : public BaseClass
+{
+    void foo()
+    {
+        PublicFunc();
+        ProtectedFunc();
+        PrivateFunc(); // function is inaccessible
+    }
+};
+
+class DerivedClass2 : private BaseClass
+{
+    void foo()
+    {
+        PublicFunc();
+        ProtectedFunc();
+        PrivateFunc(); // function is inaccessible
+    }
+};
+
+int main()
+{
+    DerivedClass1 derived_class1;
+    DerivedClass2 derived_class2;
+    derived_class1.PublicFunc();
+    derived_class2.PublicFunc(); // function is inaccessible
+}
 ```  
   
  İçinde `DerivedClass1`, üye işlevi `PublicFunc` genel bir üyesidir ve `ProtectedFunc` korumalı bir üye olduğundan `BaseClass` genel bir temel sınıf. `PrivateFunc` özel olduğu `BaseClass`, ve tüm türetilen sınıflar için erişilebilir değil.  
@@ -228,5 +244,6 @@ Devralma Grafiğinin Yolları Üzerinde Erişim
   
  Şekilde `VBase` sınıfında bildirilen bir ada her zaman `RightPath` sınıfıyla ulaşılır. `RightPath``VBase`'i özel olarak bildirirken, `LeftPath``VBase`'i genel bir temel sınıf olarak bildirdiği için sağdaki yol daha fazla erişilebilirdir.  
   
-## <a name="see-also"></a>Ayrıca bkz.  
+
+## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

@@ -16,15 +16,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 106d1991f5312065aa78330888e55383d1f9506a
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 5e54a44be0ad5b7b07311d102871e584770fc441
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337024"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465178"
 ---
 # <a name="overriding-provider-service-defaults"></a>Sağlayıcı Hizmet Varsayılanlarını Geçersiz Kılma
-Sağlayıcının OLEDB_SERVICES için kayıt defteri değeri için varsayılan değer olarak döndürülen [DBPROP_INIT_OLEDBSERVICES](https://msdn.microsoft.com/library/ms716898.aspx) başlatma özelliği veri kaynağı nesnesi.  
+Sağlayıcının OLEDB_SERVICES için kayıt defteri değeri için varsayılan değer olarak döndürülen [DBPROP_INIT_OLEDBSERVICES](/previous-versions/windows/desktop/ms716898\(v=vs.85\)) başlatma özelliği veri kaynağı nesnesi.  
   
  Kayıt defteri girişi var olduğu sürece, sağlayıcının nesneleri toplanır ve kullanıcı için etkin hizmetler ayarlayarak sağlayıcının Varsayılanı geçersiz kılabilirsiniz `DBPROP_INIT_OLEDBSERVICES` başlatmadan önce özelliği. Etkinleştirmek ya da belirli bir hizmet devre dışı bırakmak için kullanıcının genellikle geçerli değerini alır `DBPROP_INIT_OLEDBSERVICES` özelliğini ayarlar veya etkin veya devre dışı belirli bir özellik için bit temizler ve özelliği sıfırlar. `DBPROP_INIT_OLEDBSERVICES` OLE DB veya ADO için geçirilen bağlantı dizesinde doğrudan ayarlanabilir veya `IDataInitialize::GetDatasource`. Tek başına hizmetlerinden etkinleştirmek/devre dışı karşılık gelen değerler aşağıdaki tabloda listelenmiştir.  
   
@@ -39,7 +39,7 @@ Sağlayıcının OLEDB_SERVICES için kayıt defteri değeri için varsayılan d
  Sağlayıcı için kayıt defteri girdisi yok, bileşen yöneticilerinin sağlayıcının nesneleri toplama değil ve hizmet, kullanıcı tarafından açıkça istenen bile çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak havuzu oluşturma](https://msdn.microsoft.com/library/ms713655.aspx)   
- [Kaynak havuzu tüketiciler kullanma](https://msdn.microsoft.com/library/ms715907.aspx)   
- [Nasıl sağlayıcıları etkili bir şekilde kaynak havuzu ile çalışma](https://msdn.microsoft.com/library/ms714906.aspx)   
+ [Kaynak havuzu oluşturma](/previous-versions/windows/desktop/ms713655\(v=vs.85\))   
+ [Kaynak havuzu tüketiciler kullanma](/previous-versions/windows/desktop/ms715907\(v=vs.85\))   
+ [Nasıl sağlayıcıları etkili bir şekilde kaynak havuzu ile çalışma](/previous-versions/windows/desktop/ms714906\(v=vs.85\))   
  [OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma](../../data/oledb/enabling-and-disabling-ole-db-services.md)

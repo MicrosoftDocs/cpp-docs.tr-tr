@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47fb619a3fbc38925f2d91ae344b00bf1be34db5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f31ea898462fee04d94f379e8fffd323667eda1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327869"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465449"
 ---
 # <a name="inbytestring"></a>__inbytestring
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Belirtilen bağlantı noktası kullanımından veri okuyan `rep insb` yönergesi.  
+ Belirtilen bağlantı noktası kullanarak verileri okuyan `rep insb` yönergesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,14 +54,14 @@ void __inbytestring(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__inbytestring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__inbytestring`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

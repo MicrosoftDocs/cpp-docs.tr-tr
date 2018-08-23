@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 756aea4400d98b2bf061a54955b3df4b4eddd993
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ebadd9e453e8a34e92acee363d0dd6b6ff765910
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849281"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464864"
 ---
 # <a name="include"></a>include()
-**C++ özel**  
+**C++ özgü**  
   
- Otomatik dışlama devre dışı bırakır.  
+Otomatik dışlama devre dışı bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,18 +34,20 @@ ms.locfileid: "33849281"
 include("Name1"[,"Name2", ...])  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `Name1`  
- Zorla dahil edilecek ilk öğe.  
+### <a name="parameters"></a>Parametreler  
+*Name1*  
+Zorla dahil edilecek ilk öğe.  
   
- `Name2`  
- (Gerekiyorsa) zorla dahil edilmek üzere ikinci öğe.  
+*Name2*  
+(Gerekirse) zorla dahil edilecek ikinci öğe.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. `#import` otomatik olarak gibi öğeler hariç tutarak birden çok tanım hataları önlemek için çalışır. Öğe, belirtilen şekilde tutulan varsa [Derleyici Uyarısı (Düzey 3) C4192](../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md), ve sahip olmamalıdır olup, bu öznitelik, otomatik dışlama devre dışı bırakmak için kullanılabilir. Bu öznitelik her dahil edilmesi için tür kitaplığı öğesinin adı olan herhangi bir sayıda bağımsız değişken alabilir.  
+ 
+Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. `#import` otomatik olarak gibi öğeler hariç tutarak birden çok tanım hatalarını önlemek çalışır. Öğeleri, gösterildiği gibi tutulan varsa [Derleyici Uyarısı (Düzey 3) C4192](../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md), ve bunlar olmaması gereken olup, bu öznitelik, otomatik dışlama devre dışı bırakmak için kullanılabilir. Bu öznitelik her dahil edilmek üzere tür kitaplığı öğesi adı olan herhangi bir sayıda bağımsız değişken alabilir.  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

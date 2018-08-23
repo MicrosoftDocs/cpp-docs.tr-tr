@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba4f0e06798bc6419f8db0471f19588039eb679a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d2da939fe52e41e122ecd4926e34fb9c4be735ae
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33905578"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466443"
 ---
 # <a name="error-directive-cc"></a>#error Yönergesi (C/C++)
-`#error` yönergesi kullanıcı tarafından tanımlanan bir hata iletisini derleme zamanında yayar ve derlemeyi sona erdirir.  
+**#Error** yönergesi, bir kullanıcı tarafından belirtilen hata iletisini derleme zamanında yayar ve derlemeyi sona erdirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,7 +35,8 @@ ms.locfileid: "33905578"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yönerge yayar gelen hata mesajında *belirteci dize* parametresi. `token-string` parametresi için makro genişletme uygulanmaz. Bu yönerge, programdaki tutarsızlıkları ya da bir kısıtlamanın ihlalini geliştiriciye bildirmek için ön işleme sırasında en çok yararlı yönergedir. Aşağıdaki örnek, ön işleme sırasında hatanın işleyişini gösterir:  
+ 
+Bu yönergenin yaydığı hata iletisi içerir *belirteç dizesinde* parametresi. *Belirteç dizesinde* parametresi makro genişletme uygulanmaz değil. Bu yönerge, programdaki tutarsızlıkları ya da bir kısıtlamanın ihlalini geliştiriciye bildirmek için ön işleme sırasında en çok yararlı yönergedir. Aşağıdaki örnek, ön işleme sırasında hatanın işleyişini gösterir:  
   
 ```  
 #if !defined(__cplusplus)  
@@ -44,4 +45,5 @@ ms.locfileid: "33905578"
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)
+ 
+[Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

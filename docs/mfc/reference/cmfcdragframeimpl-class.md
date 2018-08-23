@@ -1,5 +1,5 @@
 ---
-title: CMFCDragFrameImpl sınıfı | Microsoft Docs
+title: Cmfcdragframeımpl sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,16 +16,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 458288ecff0b457205ba1735494ad8106c3feae7
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: aee2c58d8763581987fec40b0cb486c67363697b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040954"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465071"
 ---
-# <a name="cmfcdragframeimpl-class"></a>CMFCDragFrameImpl sınıfı
-`CMFCDragFrameImpl` Sınıfı kullanıcı bir bölme standart yerleştirme modunda sürüklendiğinde görüntülenen Sürükle dikdörtgen çizer.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+# <a name="cmfcdragframeimpl-class"></a>Cmfcdragframeımpl sınıfı
+`CMFCDragFrameImpl` Sınıfı, kullanıcı standart dock modunda bir bölmeyi sürüklediğinde görünen sürükleme dikdörtgenini çizer.  
+   Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
    
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,9 +34,9 @@ class CMFCDragFrameImpl
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıfın bir nesnesi her katıştırılmış [CPane sınıfı](../../mfc/reference/cpane-class.md) nesnesi. Bu nedenle, kullanan her bölme `CanFloat` yöntemi kullanıcı sürüklendiğinde sürükleyin dikdörtgen görüntüler.  
+ Bu sınıfın bir nesnesi her katıştırılmış [CPane sınıfı](../../mfc/reference/cpane-class.md) nesne. Bu nedenle, kullanan her bölmede `CanFloat` kullanıcı nesneyi sürüklediğinde sürükleme dikdörtgenini yöntemini görüntüler.  
   
- Sürükleme dikdörtgen kalınlığı kullanarak denetleyebilirsiniz [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](afx-global-data-structure.md#m_ndragframethicknessfloat) ve [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](afx-global-data-structure.md#m_ndragframethicknessdock).  
+ Sürükleme dikdörtgenini kalınlığı kullanarak denetleyebilirsiniz [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](afx-global-data-structure.md#m_ndragframethicknessfloat) ve [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](afx-global-data-structure.md#m_ndragframethicknessdock).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CMFCDragFrameImpl](../../mfc/reference/cmfcdragframeimpl-class.md)  

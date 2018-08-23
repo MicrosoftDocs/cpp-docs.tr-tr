@@ -1,5 +1,5 @@
 ---
-title: Evrensel Windows Platformu (C++) için bağlantı noktası oluşturma | Microsoft Docs
+title: Evrensel Windows Platformu (C++) taşıma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,60 +12,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55fbe59128aef6fbc7df20dd14afd102b493f2fd
-ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
+ms.openlocfilehash: eefb2347cfe3a46dabbf72a46fd46fcb16f57d38
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36322504"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466451"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 
-Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması platformunuz için bağlantı noktası hakkında bilgi bulabilirsiniz. Terim tarafından anlamına gelir *Evrensel* kodunuzu herhangi bir Windows 10 Masaüstü, telefon, Tablet ve Windows 10 çalıştıran gelecekteki cihazlar dahil olmak üzere, çalıştıran aygıtlar üzerinde çalıştırılabilir. Tek bir proje ve Windows 10 çalıştıran iyi herhangi bir cihazda çalışan tek bir XAML tabanlı kullanıcı arabirimi oluşturun. Farklı ekran boyutlarına uyarlamak uygulamanın UI izin vermek için XAML içinde dinamik düzen özelliklerini kullanabilirsiniz.
+Bu konuda, Windows 10 uygulama platformu, Evrensel Windows platformu için mevcut C++ kodunu bağlantı noktası hakkında bilgi bulabilirsiniz. Terime göre tutulmamıştır *Evrensel* kodunuzu herhangi bir masaüstü, telefon, Tablet ve gelecekteki Windows 10 çalıştıran cihazlar dahil olmak üzere Windows 10 çalıştıran cihazlar üzerinde çalıştırılabilir. Tek bir proje ve de Windows 10 çalıştıran tüm cihazlarda çalışan tek bir XAML tabanlı kullanıcı arabirimi oluşturun. Farklı ekran boyutlarına uyum sağlamak uygulamanın UI izin vermek için XAML içinde dinamik düzen özelliklerini kullanabilirsiniz.
 
-Windows Geliştirme Merkezi belgeler, Windows 8.1 uygulamaları Evrensel Windows platformu için taşıma için kılavuz içerir. Bkz: [UWP'ye Windows çalışma zamanı 8 ' Taşı](/windows/uwp/porting/w8x-to-uwp-root). Kılavuzu genellikle C# kodu odaklanıyor olsa da, çoğu kılavuzunun C++ için geçerli olur. Aşağıdaki yordamlar daha ayrıntılı bilgiler içerir.
+Windows Geliştirme Merkezi belgelerini, Windows 8.1 Evrensel Windows platformu uygulamaları taşıma için kılavuz içerir. Bkz: [UWP için Windows 8 çalışma zamanını şuradan Taşı](/windows/uwp/porting/w8x-to-uwp-root). Kılavuzu genellikle C# kod üzerinde odaklanıyor olsa da, yönergeleri çoğu C++ için geçerlidir. Aşağıdaki yordamlar, daha ayrıntılı bilgiler içerir.
 
-Bu konu, UWP kodu bağlantı noktası oluşturma için aşağıdaki yordamları içerir.
+Bu konu, UWP için kod taşımak için aşağıdaki yordamları içerir.
 
-1. [Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası oluşturma](#BK_81StoreApp)
+- [UWP için Windows 8.1 bir Store uygulaması taşıma](#BK_81StoreApp)
 
-2. [Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası oluşturma](#BK_81Component)
+- [UWP için Windows 8.1 bir çalışma zamanı bileşeni taşıma](#BK_81Component)
 
-Klasik Masaüstü Win32 DLL varsa ve bir UWP uygulamasından aramak istediğiniz, bu da yapabilirsiniz. Bu yordamları kullanarak, varolan Klasik Windows Masaüstü C++ uygulaması için bir UWP kullanıcı arabirimi katman ya da platformlar arası standart C++ kodunuzu oluşturabilirsiniz. Bkz: [nasıl yapılır: mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
+Klasik Masaüstü bir Win32 DLL varsa ve bir UWP uygulamasında aramak istediğiniz bunu da yapabilirsiniz. Bu yordamları kullanarak, varolan Klasik Windows Masaüstü C++ uygulaması için bir UWP kullanıcı arabirimi katman veya platformlar arası standart C++ kod oluşturabilirsiniz. Bkz: [nasıl yapılır: mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
 
-## <a name="BK_81StoreApp"></a> Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası oluşturma
+## <a name="BK_81StoreApp"></a> UWP için Windows 8.1 bir Store uygulaması taşıma
 
-Windows 8.1 mağazası uygulaması varsa, bunu UWP ve Windows 10 çalıştıran herhangi bir aygıt üzerinde çalıştırmak için bu yordamı kullanabilirsiniz.  İlk derleyici ve kitaplıkları yapılan değişiklikleri ortaya çıkabilecek sorunları ortadan kaldırmak için bir Windows 8.1 proje ilk yapı Visual Studio 2017 projeyle için iyi bir fikir gibidir. Bunu yaptıktan sonra bu bir Windows 10 UWP projesi dönüştürmek için iki yolu vardır. (Aşağıdaki yordamda açıklandığı gibi) en kolay yolu, bir evrensel Windows projesi oluşturun ve mevcut kodunuzu buraya kopyalayın olmaktır. Windows 8.1 Masaüstü ve Windows 8.1 Phone için evrensel projesi kullanıyorsanız, projeniz için görüntü boyutu ayarlar tek bir dinamik düzen XAML ancak son iki farklı düzenlerle ile başlar.
+Bir Windows 8.1 Store uygulaması varsa, bunu UWP ve Windows 10 çalıştıran herhangi bir CİHAZDAN çalıştırmak için bu yordamı kullanabilirsiniz.  Öncelikle derleyici ve kitaplıkları değişiklikleri ortaya çıkabilecek sorunları ortadan kaldırmak için ek olarak, Windows 8.1 proje ilk derleme proje Visual Studio 2017 için iyi bir fikir gibidir. Bunu yaptıktan sonra bu bir Windows 10 UWP projesine dönüştürmek için iki yolu vardır. (Aşağıdaki yordamda açıklandığı gibi) en kolay yolu, bir evrensel Windows projesi oluşturun ve içine varolan kodunuzu kopyalayın sağlamaktır. Windows 8.1 Masaüstü ve Windows 8.1 Phone için evrensel bir proje kullanıyorsanız, projenize XAML ancak son iki farklı düzenleriyle görüntü boyutuna ayarlar tek bir dinamik düzeni ile birlikte başlar.
 
-### <a name="to-port-a-windows-81-store-app-to-the-uwp"></a>Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası
+### <a name="to-port-a-windows-81-store-app-to-the-uwp"></a>UWP için Windows 8.1 bir Store uygulaması bağlantı noktası
 
-1. Zaten yapmadıysanız, Visual Studio 2017 Windows 8.1 uygulamasını projenizi açın ve proje dosyası yükseltmek için yönergeleri izleyin.
+1. Zaten yapmadıysanız, Visual Studio 2017'de, Windows 8.1 uygulama projenizi açın ve proje dosyası yükseltmek için yönergeleri izleyin.
 
-   Windows 8.1 araçları Visual Studio kurulumunda yüklü gerekir. Bu araçları yüklü yoksa, Visual Studio Kurulumu programlar ve Özellikler penceresinden başlatmak, Visual Studio 2017'ı seçin ve Kurulumu penceresinde seçin **Değiştir**. Windows 8.1 araçları bulun, seçili olduğundan emin olun ve Tamam'ı seçin.
+   Yüklü gereken **Visual Studio'daki araçları Windows 8.1** kurulumu. Bu araçları yüklü yoksa, başlangıç **Visual Studio** Kurulumu'nu **programlar ve Özellikler** penceresinde seçin **Visual Studio 2017**, Kurulumu penceresinde seçin **Değiştirme**. Bulun **Windows 8.1 Araçları**seçildiğinden emin olun ve seçin **Tamam**.
 
-2. Proje Özellikleri penceresini açın ve C++ altında genel, Platform araç takımı v141, Visual Studio 2017 için araç kümesi ayarlayın.
+2. Açık **proje özellikleri** penceresinin altında **C++** > **genel**ayarlayın **Platform araç takımını** için**v141**, Visual Studio 2017 için araç kümesi.
 
-3. Windows 8.1 projesi olarak proje derleme ve yapı hataları çözün. Bu aşamada herhangi bir hata nedeniyle yeni kitaplıkları ve derleme Araçları'ndaki değişiklikler olabilirsiniz. Bkz: [Visual C++ değişiklik geçmişini 2003 2015](../porting/visual-cpp-change-history-2003-2015.md) kodunuzu etkileyebilecek değişiklikler ayrıntılı bir açıklaması için.
+3. Windows 8.1 proje olarak projeyi oluşturun ve derleme hatalarını çözün. Bu aşamada herhangi bir hata derleme araçları ve kitaplıkları değişiklikler nedeniyle olabilirsiniz. Bkz: [Visual C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md) kodunuzu etkileyebilecek değişikliklerin ayrıntılı bir açıklama.
 
-   Projenizi düzgün bir şekilde oluşturur sonra Evrensel Windows (Windows 10) için bağlantı noktası için hazır olursunuz.
+   Projenizi düzgün bir şekilde oluşturur sonra bu bağlantı noktasına Evrensel Windows (Windows 10) hazır olursunuz.
 
-4. Boş şablon kullanarak yeni bir evrensel Windows uygulaması projesi oluşturun. Projeleri Bunu yapmak için farklı dizinlerde olması gerekse de mevcut projenizi aynı adı vermek isteyebilirsiniz.
+4. Boş şablonu kullanarak yeni bir evrensel Windows uygulaması projesi oluşturun. Projeler bunu yapmanın farklı dizinlerde olması gerekse de mevcut projenizi aynı adı vermek isteyebilirsiniz.
 
-5. Kapat çözüm ve ardından Windows Gezgini veya komut satırı kullanarak (uzantıları .cpp, .h ve .xaml) birlikte kod dosyaları Windows 8.1 projenizden 1. adımda oluşturduğunuz proje için proje dosyası (.vcxproj) aynı klasöre kopyalayın. Değil Package.appxmanifest dosyasını kopyalayın ve Windows 8.1 Masaüstü ve telefon ayrı kodu varsa, bağlantı noktası için bunlardan birini seçin (olması daha sonra diğer uyarlamak için biraz çalışmanız) ilk. Kopyalama ve alt klasörleri ve içeriklerini emin olun. İstenirse, yinelenen adları olan tüm dosyaları değiştirmek seçin.
+5. Çözümü kapatın ve ardından kullanarak **Windows Explorer** veya komut satırı, kopyalama, Windows 8.1 (uzantıları .cpp, .h ve .xaml ile) kod dosyalarından proje için proje dosyasını (.vcxproj) ile aynı klasöre, proje 1. adımda oluşturduğunuz. Değil Package.appxmanifest dosyasını kopyalayın ve Windows 8.1 Masaüstü ve telefon için ayrı bir kod varsa, bağlantı noktası için bunlardan birini seçin (sahip olacaksınız daha sonra diğer uyarlamak için biraz çalışmanız gerekir) ilk. Kopyalama ve alt klasörler ve bunların içeriğini emin olun. İstenirse, yinelenen adları olan dosyaları değiştirmek seçin.
 
-6. Çözümü yeniden açın ve seçin **Ekle, var olan öğeyi** proje düğümünün kısayol menüsünden. Zaten projenin bir parçası olan tüm dışında kopyaladığınız tüm dosyalar'ı seçin.
+6. Çözümü yeniden açın ve seçin **Ekle** > **var olan öğe** proje düğümü için kısayol menüsünden. Projenin bir parçası olan tüm dışında kopyaladığınız tüm dosyaları seçin.
 
-   Tüm alt denetleyin ve dosyaları bunları da eklediğinizden emin olun.
+   Tüm alt klasörlerde denetleyin ve dosyaları bunları de eklediğinizden emin olun.
 
-7. Eski projesi olarak aynı proje adı kullanmıyorsanız Package.appxmanifest dosyasını açın ve giriş noktası uygulama sınıfı için ad alanı adı yansıtacak şekilde güncelleştirin.
+7. Aynı proje adı eski projenizi kullanmıyorsanız, Package.appx bildirim dosyasını güncelleştirme açıp **giriş noktası** ad alanı adını yansıtacak şekilde `App` sınıfı.
 
-   **Giriş noktası** Package.appxmanifest dosyasını alanında, uygulama sınıfı içeren ad içeren uygulama sınıfı için kapsamlı bir adı içeriyor. Evrensel Windows projesi oluşturduğunuzda, ad alanı proje adına ayarlanır. Bu, eski projenizden kopyaladığınız dosyalar nedir öğesinden farklı ise, aşağıdakilerden birini veya bunların eşleşen sağlamak için diğer güncelleştirmeniz gerekir.
+   **Giriş noktası** Package.appxmanifest dosyasını alanında için kapsamlı bir ad içeren `App` içeren ad uzayı içeren sınıf `App` sınıfı. Ad alanı, bir evrensel Windows projesi oluşturduğunuzda, proje adına ayarlanır. Bu, eski projenizden kopyalanan dosyaların nedir öğesinden farklı ise, birini veya diğerini aynı olacak şekilde güncelleştirmeniz gerekir.
 
-8. Projeyi oluşturmak ve Windows SDK'sı farklı sürümleri arasında önemli değişiklikler nedeniyle derleme hataları çözün.
+8. Projeyi oluşturmak ve Windows SDK'sı farklı sürümleri arasında önemli değişiklikler nedeniyle derleme hatalarını çözün.
 
-9. Projeyi yerel masaüstü bilgisayarlarda çalıştırın. Hiçbir dağıtım hataları vardır ve uygulama yerleşimini mantıklı arar ve, doğru masaüstünde çalıştığından doğrulayın.
+9. Projeyi yerel masaüstüne çalıştırın. Hiçbir dağıtım hata uygulama düzenini makul arar ve onu doğru masaüstünde işlevleri doğrulayın.
 
-10. Ayrı kod dosyaları ve Windows Phone 8.1 gibi başka bir aygıt için .xaml sahipse, bu kod inceleyin ve burada standart aygıttan farklı tanımlayın. Fark yalnızca düzende ise, bir görsel durum Yöneticisi ekran boyutuna bağlı olarak görüntüsünü özelleştirmek için XAML'de kullanabilmek için olabilir. Diğer farklar için aşağıdaki #if bildirimleri kullanan kodunuzda koşullar bölümleri kullanabilirsiniz.
+10. Ayrı kod dosyaları ve Windows Phone 8.1 gibi başka bir cihaz için .xaml tablonuz varsa bu kodu inceleyin ve standart CİHAZDAN farklılık belirleyin. Yalnızca düzende fark ise kullanmanız mümkün olabilir bir **görsel durum Yöneticisi** ekran boyutuna bağlı olarak görüntüsünü özelleştirmek için xaml içinde. Diğer farklılıklar için aşağıdaki #if ifadeleri kullanarak kodunuzda koşullar bölümleri kullanabilirsiniz.
 
     ```cpp
     #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PC_APP)
@@ -74,27 +74,27 @@ Windows 8.1 mağazası uygulaması varsa, bunu UWP ve Windows 10 çalıştıran 
     #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
     ```
 
-     Bu deyimler sırasıyla UWP uygulamaları, Windows Phone mağazası uygulamaları, hem veya hiçbiri (Klasik Win32 yalnızca Masaüstü) geçerli. Bu makroları yalnızca Windows 8.1 SDK ve daha sonra de durum, bunların hiçbiri dikkate almalısınız sonra Windows SDK veya diğer platformlar yanı sıra Windows, önceki sürümleriyle derlemek kodunuzu gerekiyorsa tanımlanan şekilde kullanılabilir.
+     Bu deyimler, uygulamalar, her iki ya da hiçbiri (Klasik Win32 yalnızca Masaüstü) UWP uygulamaları, Windows Phone Store sırasıyla uygulanır. Bu makrolar yalnızca Windows 8.1 SDK ve daha sonra durum, bunların hiçbiri göz önünde bulundurabileceğiniz sonra kodunuzu önceki sürümleriyle Windows SDK'yı veya Windows, yanı sıra diğer platformlar için derleme gerekiyorsa tanımlanan şekilde kullanılabilir.
 
-11. Bir öykünücü veya uygulamanızın destekleyen aygıt her tür için fiziksel cihaz üzerindeki uygulama hata ayıklama ve çalıştırın. Bir öykünücü çalıştırmak için Visual Studio fiziksel bir bilgisayarda, sanal makine çalıştırmanız gerekir.
+11. Uygulamasında bir öykünücü veya cihaz uygulamanızın desteklediği her türü için fiziksel bir cihaz üzerinde hata ayıklama ve çalıştırın. Bir öykünücüyü çalıştırmak için bir sanal makineye bir fiziksel bilgisayar Visual Studio çalıştırmanız gerekir.
 
-## <a name="BK_81Component"></a> Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası oluşturma
+## <a name="BK_81Component"></a> UWP için Windows 8.1 bir çalışma zamanı bileşeni taşıma
 
-DLL ya da Windows 8.1 mağazası uygulamaları ile zaten çalışan bir Windows çalışma zamanı bileşeni varsa, bileşen veya UWP ve Windows 10 Çalışma DLL almak için bu yordamı kullanabilirsiniz. Temel yordam, yeni bir proje oluşturun ve kodunuzu içine kopyalamak için kullanılır.
+Bir DLL veya Windows 8.1 Store uygulamaları ile zaten çalışan bir Windows çalışma zamanı bileşeni varsa, bileşen veya UWP ve Windows 10 ile çalışma DLL almak için bu yordamı kullanabilirsiniz. Yeni bir proje oluşturmak ve kodunuzun içine kopyalamak için temel yordam aynıdır.
 
-### <a name="to-port-a-windows-81-runtime-component-to-the-uwp"></a>Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası
+### <a name="to-port-a-windows-81-runtime-component-to-the-uwp"></a>Bağlantı noktası bir UWP için Windows 8.1 çalışma zamanı bileşeni
 
-1. İçinde **yeni proje** iletişim Visual Studio 2017 içinde bulun **Windows Evrensel** düğümü. Bu düğüm görmüyorsanız, yüklemek [Windows 10 için Araçlar](http://go.microsoft.com/fwlink/p/?LinkID=617903) ilk. Seçin **Windows çalışma zamanı bileşeni** şablonu, bileşeniniz için bir ad verin ve seçin **Tamam** düğmesi. Eski projelerinizi ad alanı olarak aynı adı kullanmak isteyebilirsiniz şekilde bileşen adı ad alanı adı olarak kullanılacaktır. Bu, eski olandan farklı bir klasörde projeyi oluşturmanızı gerektirir. Farklı bir ad seçin, oluşturulan kodda ad alanı adı güncelleştirebilirsiniz.
+1. İçinde **yeni proje** iletişim Visual Studio 2017'de bulun **Windows Evrensel** düğümü. Bu düğüm görmüyorsanız, yüklemek [Windows 10 için Araçları](http://go.microsoft.com/fwlink/p/?LinkID=617903) ilk. Seçin **Windows çalışma zamanı bileşeni** şablon bileşeniniz için bir ad verin ve seçin **Tamam** düğmesi. Aynı adı kullanın, eski projelerinizi ad alanı isteyebilirsiniz, bileşen adı ad alanı adı olarak kullanılacaktır. Bu, eski hesaptan farklı bir klasörde proje oluşturmanız gerekir. Farklı bir ad seçerseniz, oluşturulan kodda ad alanı adı güncelleştirebilirsiniz.
 
 2. Projeyi kapatın.
 
 3. Tüm kod dosyaları (.cpp, .h, .xaml, vb.), Windows 8.1 bileşeninden yeni oluşturulan projenize kopyalayın. Package.appxmanifest dosyasını kopyalamayın.
 
-4. Derleme ve Windows SDK'sı farklı sürümleri arasında önemli değişiklikler nedeniyle varsa hataları çözümleyin.
+4. Derleme ve Windows SDK'sı farklı sürümleri arasında önemli değişiklikler nedeniyle hataları çözün.
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
-UWP kodu bağlantı noktası oluşturma işlemi sırasında çeşitli hatalarla karşılaşabilirsiniz. Karşılaşabileceğiniz olası sorunlar bazıları aşağıda verilmiştir.
+UWP için kod bağlantı noktası oluşturma işlemi sırasında çeşitli hatalar karşılaşabilirsiniz. Karşılaşabileceğiniz olası sorunlar bazıları aşağıda verilmiştir.
 
 ### <a name="project-configuration-issues"></a>Proje yapılandırma sorunları
 
@@ -104,7 +104,7 @@ Hatayı alabilirsiniz:
 could not find assembly 'platform.winmd': please specify the assembly search path using /AI or by setting the LIBPATH environment variable
 ```
 
-Bu durumda, bir evrensel Windows projesi olarak proje derleme değil. Proje dosyasını denetleyin ve proje Evrensel Windows projesi olarak tanımlamak doğru XML öğeleri olduğundan emin olun. Aşağıdaki öğeler mevcut olması (hedef platformu sürüm numarasını farklı olabilir):
+Proje Windows Evrensel bir proje olarak oluşturuyor böyle bir durumda değil. Proje dosyasını kontrol edin ve bir proje Windows Evrensel bir proje olarak tanımlayan XML öğeleri doğru olduğundan emin olun. Aşağıdaki öğeleri mevcut olmalıdır. (hedef platformu sürüm numarası farklı olabilir):
 
 ```xml
 <AppContainerApplication>true</AppContainerApplication>
@@ -114,7 +114,7 @@ Bu durumda, bir evrensel Windows projesi olarak proje derleme değil. Proje dosy
 <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
 ```
 
-Visual Studio kullanarak yeni bir UWP projesini oluşturduysanız, bu hata görülmemelidir.
+Visual Studio kullanarak yeni bir UWP projesi oluşturduysanız, bu hata görmemeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

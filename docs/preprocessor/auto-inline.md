@@ -18,25 +18,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de012a31fe68c68d4e64df2d3fa10b44d9112735
-ms.sourcegitcommit: 96cdc2da0d8c3783cc2ce03bd280a5430e1ac01d
+ms.openlocfilehash: dc1b8a3b8539fb4871e4a28f4635c8012b9f80a2
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33954027"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466161"
 ---
 # <a name="autoinline"></a>auto_inline
-Aralık içinde tanımlanan tüm işlevler dışlar nerede **kapalı** otomatik satır içi genişletme için aday olarak kabul belirtilir.  
+Aralık içinde tanımlanan tüm işlevleri hariç burada **kapalı** otomatik satır içi genişletme için aday olarak kabul belirtilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma auto_inline( [{on | off}] )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanılacak **auto_inline** pragma, önce ve sonra hemen getirin (içinde değil) bir işlev tanımı. Pragma görülen sonra pragma ilk işlev tanımını etkinleşir.  
+
+Kullanılacak **auto_inline** pragması, öncesinde ve sonrasında hemen getirin (içinde değil) bir işlev tanımı. Pragma görüldüğünde sonra pragma ilk fonksiyon tanımında etkili olur.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

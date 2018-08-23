@@ -21,17 +21,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71b2259e7eecd820d35527a6ab8908f274e3e287
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 623077695731b88285769c5b887b1f64f5263855
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334259"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464777"
 ---
 # <a name="bittest-bittest64"></a>_bittest, _bittest64
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
-Oluşturur `bt` konumda bit inceler yönerge `b` adresinin `a`ve bu bit değerini döndürür.  
+Oluşturur `bt` konumda bit inceler yönerge `b` adresinin `a`ve söz konusu bit değerini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,7 +48,7 @@ unsigned char _bittest64(
   
 ### <a name="parameters"></a>Parametreler  
 [in] `a`  
-İncelemek için bellek için bir işaretçi.  
+İncelemek için bellek işaretçisi.  
   
 [in] `b`  
 Test etmek için bit konumu.  
@@ -60,11 +60,11 @@ Belirtilen konumdaki bit.
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_bittest`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
-|`_bittest64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_bittest`|x86, ARM, x64|\<intrin.h >|  
+|`_bittest64`|ARM, x64|\<intrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
-Bu yordam yalnızca bir iç kullanılabilir.  
+Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -106,7 +106,7 @@ Binary representation:
 0000000000000010011000010110010  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

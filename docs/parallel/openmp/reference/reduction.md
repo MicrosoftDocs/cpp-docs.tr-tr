@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e20ae1ad9c549aed176d26667d9bdc62a32b8dc7
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d2b90ef2eeca60a305cd8836e09dc81940392d2c
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692541"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465719"
 ---
 # <a name="reduction"></a>reduction
-Her iş parçacığı için özel bir veya daha fazla değişken azaltma işlemi paralel bölge sonundaki konu olduğunu belirtir.  
+Her iş parçacığı için özel bir veya daha fazla değişken bir paralel bölgenin sonunda azaltma işlemi konusunu olduğunu belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,10 +36,10 @@ reduction(operation:var)
  Burada,  
   
  `operation`  
- Değişkenleri esas gerçekleştirmek için işlemi için işleci (`var`) paralel bölge sonunda.  
+ Değişkenlerde gerçekleştirilecek işlem için işleç (`var`) bir paralel bölgenin sonunda.  
   
  `var`  
- Daha fazla değişken bir skaler azaltma gerçekleştirileceği. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.  
+ Bir veya daha fazla değişken skalar azalma gerçekleştirileceği. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `reduction` Aşağıdaki yönergeleri için geçerlidir:  
@@ -48,9 +48,9 @@ reduction(operation:var)
   
 -   [parallel](../../../parallel/openmp/reference/parallel.md)  
   
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
+-   [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)  
   
- Daha fazla bilgi için bkz: [2.7.2.6 azaltma](../../../parallel/openmp/2-7-2-6-reduction.md).  
+ Daha fazla bilgi için [2.7.2.6 azaltma](../../../parallel/openmp/2-7-2-6-reduction.md).  
   
 ## <a name="example"></a>Örnek  
   
@@ -127,10 +127,10 @@ int main( )
              "%d to %d, is %d\n", 1, 10, nSum);  
   
     if (bSucceed)  
-        printf_s("All of the the functions, func1 through "  
+        printf_s("All of the functions, func1 through "  
                  "func5 succeeded!\n");  
     else  
-        printf_s("One or more of the the functions, func1 "  
+        printf_s("One or more of the functions, func1 "  
                  "through func5 failed!\n");  
   
     if (nCount != NUM_THREADS)   
@@ -162,7 +162,7 @@ int main( )
 ```Output  
 The parallel section was executed 4 times in parallel.  
 The sum of the consecutive integers from 1 to 10, is 55  
-All of the the functions, func1 through func5 succeeded!  
+All of the functions, func1 through func5 succeeded!  
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

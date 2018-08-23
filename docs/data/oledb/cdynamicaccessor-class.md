@@ -138,12 +138,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a4a1b08d82e915780817a47abddcf417fe5ab715
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: c1934c7857e8c7813f653b6f12be0ba523ec63fb
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338252"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465639"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor Sınıfı
 Veritabanı şeması (veritabanı yapılarını) hiçbir bilgiye sahip olduğunda bir veri kaynağına erişim sağlar.  
@@ -165,7 +165,7 @@ class CDynamicAccessor : public CAccessorBase
 |-|-|  
 |[AddBindEntry](#addbindentry)|Çıktı sütunları için varsayılan erişimciyi geçersiz kılma bir bağlama girişi ekler.|  
 |[CDynamicAccessor](#cdynamicaccessor)|Oluşturur ve başlatır `CDynamicAccessor` nesne.|  
-|[Kapat](#close)|Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](https://msdn.microsoft.com/library/ms719672.aspx) sınıfında arabirim işaretçisi.|  
+|[Kapat](#close)|Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) sınıfında arabirim işaretçisi.|  
 |[GetBlobHandling](#getblobhandling)|Geçerli satırı için değer işleme BLOB alır.|  
 |[GetBlobSizeLimit](#getblobsizelimit)|En yüksek BLOB boyutu bayt cinsinden alır.|  
 |[GetBookmark](#getbookmark)|Geçerli satır için yer alır.|  
@@ -202,7 +202,7 @@ HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
   
 #### <a name="parameters"></a>Parametreler  
  *Bilgileri*  
- [in] A `DBCOLUMNINFO` sütun bilgileri içeren yapısı. "DBCOLUMNINFO yapıları" bakın [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ [in] A `DBCOLUMNINFO` sütun bilgileri içeren yapısı. "DBCOLUMNINFO yapıları" bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart HRESULT değerlerinden biri.  
@@ -233,7 +233,7 @@ CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
  Belirtebilirsiniz nasıl `CDynamicAccessor` niteleyen BLOB veri sütunu veri işleme: varsayılan şekilde BLOB verilerini işleyebilir; bunu atlayabilirsiniz (bağlama) veya BLOB verilerini; bağlayabilirsiniz BLOB veri sağlayıcısı tarafından ayrılan bellek.  
 
 ## <a name="close"></a> CDynamicAccessor::Close
-Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](https://msdn.microsoft.com/library/ms719672.aspx) sınıfında arabirim işaretçisi.  
+Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) sınıfında arabirim işaretçisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -311,7 +311,7 @@ bool GetColumnFlags(DBORDINAL nColumn,
  [in] Sütun numarası. Sütun numaraları 1 ile başlayın. 0 değeri, varsa, yer işareti sütunu, ifade eder.  
   
  *pFlags*  
- [out] Sütun özelliklerini açıklayan bir bit maskesi için bir işaretçi. "DBCOLUMNFLAGS numaralandırılmış tür" bölümüne bakın [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ [out] Sütun özelliklerini açıklayan bir bit maskesi için bir işaretçi. "DBCOLUMNFLAGS numaralandırılmış tür" bölümüne bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **true** sütun özelliklerini başarıyla almışsa. Aksi halde **false**.  
@@ -333,13 +333,13 @@ HRESULT GetColumnInfo(IRowset* pRowset,
   
 #### <a name="parameters"></a>Parametreler  
  *pRowset*  
- [in] Bir işaretçi [IRowset](https://msdn.microsoft.com/library/ms720986.aspx) arabirimi.  
+ [in] Bir işaretçi [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) arabirimi.  
   
  *pColumns*  
  [out] Hangi sütunların satır kümesi döndürmek bellekte bir işaretçi; varsa, bu sayı yer işareti sütunu içerir.  
   
  *ppColumnInfo*  
- [out] Bir dizi döndürülecek bellekte bir işaretçiye `DBCOLUMNINFO` yapıları. "DBCOLUMNINFO yapıları" bakın [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ [out] Bir dizi döndürülecek bellekte bir işaretçiye `DBCOLUMNINFO` yapıları. "DBCOLUMNINFO yapıları" bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *ppStringsBuffer*  
  [out] Bellek, depolama, tüm dize değerleri için bir işaretçiyi döndürmek bir işaretçi (ya da içinde kullanılan adları *ColumnID* veya *pwszName*) tek bir ayırma bloğu içinde.  
@@ -348,7 +348,7 @@ HRESULT GetColumnInfo(IRowset* pRowset,
  Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) içinde *OLE DB Programcının Başvurusu* veri türleri hakkında bilgi için `DBORDINAL`, `DBCOLUMNINFO`, ve `OLECHAR`.  
+ Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* veri türleri hakkında bilgi için `DBORDINAL`, `DBCOLUMNINFO`, ve `OLECHAR`.  
 
 ## <a name="getcolumnname"></a> CDynamicAccessor::GetColumnName
 Belirtilen sütunun adını alır.  
@@ -465,7 +465,7 @@ bool GetStatus(const WCHAR* pColumnName,
  [in] Sütun adı içeren bir karakter dizesine bir işaretçi.  
   
  *pStatus*  
- [out] Sütun durumu içeren değişken bir işaretçi. Bkz: [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
+ [out] Sütun durumu içeren değişken bir işaretçi. Bkz: [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **true** belirtilen sütun bulunursa. Aksi takdirde, bu işlevi döndürür **false**.  
@@ -607,7 +607,7 @@ bool SetStatus(const WCHAR* pColumnName,
  [in] Sütun numarası. Sütun numaraları 1 ile başlayın. 0 değeri, varsa, yer işareti sütunu, ifade eder.  
   
  *Durumu*  
- [in] Sütun durumu. Bkz: [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
+ [in] Sütun durumu. Bkz: [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
   
  *pColumnName*  
  [in] Sütun adı içeren bir karakter dizesine bir işaretçi.  

@@ -48,15 +48,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9ec9e30112a9f0f5b54b84ccbbb61268e56d70d2
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 73e0b7646da57af679e7b3cbec3b0bb72d4ea8b8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338785"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466085"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl Sınıfı
-Bir uygulamasını sağlar [IAccessor](https://msdn.microsoft.com/library/ms719672.aspx) arabirimi.  
+Bir uygulamasını sağlar [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -98,7 +98,7 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 |[ReleaseAccessor](#releaseaccessor)|Erişimci serbest bırakır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu satır kümeleri ve komutları zorunludur. OLE DB sağlayıcıları bir HACCESSOR uygulamak gerektiren bir dizi için bir etiket olduğu [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) yapıları. Tarafından sağlanan HACCESSORs `IAccessorImpl` adresleri olan `BindType` yapıları. Varsayılan olarak, `BindType` olarak tanımlanan bir `ATLBINDINGS` içinde `IAccessorImpl`'s şablon tanımı. `BindType` tarafından kullanılan bir mekanizma sağlar `IAccessorImpl` içindeki öğelerin sayısını izlemek için kendi `DBBINDING` dizi yanı sıra bir başvuru sayısı ve erişimci bayrakları.  
+ Bu satır kümeleri ve komutları zorunludur. OLE DB sağlayıcıları bir HACCESSOR uygulamak gerektiren bir dizi için bir etiket olduğu [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) yapıları. Tarafından sağlanan HACCESSORs `IAccessorImpl` adresleri olan `BindType` yapıları. Varsayılan olarak, `BindType` olarak tanımlanan bir `ATLBINDINGS` içinde `IAccessorImpl`'s şablon tanımı. `BindType` tarafından kullanılan bir mekanizma sağlar `IAccessorImpl` içindeki öğelerin sayısını izlemek için kendi `DBBINDING` dizi yanı sıra bir başvuru sayısı ve erişimci bayrakları.  
 
 ## <a name="iaccessorimpl"></a> IAccessorImpl::IAccessorImpl
 Oluşturucu.  
@@ -120,7 +120,7 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::AddRefAccessor](https://msdn.microsoft.com/library/ms714978.aspx) içinde *OLE DB Programcının Başvurusu*.
+ Bkz: [IAccessor::AddRefAccessor](/previous-versions/windows/desktop/ms714978\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="createaccessor"></a> IAccessorImpl::CreateAccessor
 Erişimci bağlamaları kümesinden oluşturur.  
@@ -137,7 +137,7 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [DBBINDING](https://msdn.microsoft.com/library/ms720969.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [DBBINDING](/previous-versions/windows/desktop/ms720969\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="getbindings"></a> IAccessorImpl::getbindings
 Temel sütunları bağlamaları erişimci tüketicide döndürür.  
@@ -152,7 +152,7 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::GetBindings](https://msdn.microsoft.com/library/ms721253.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Bkz: [IAccessor::GetBindings](/previous-versions/windows/desktop/ms721253\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="releaseaccessor"></a> IAccessorImpl::releaseaccessor
 Erişimci serbest bırakır.  
@@ -165,7 +165,7 @@ STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::ReleaseAccessor](https://msdn.microsoft.com/library/ms719717.aspx) içinde *OLE DB Programcının Başvurusu*.
+ Bkz: [IAccessor::ReleaseAccessor](/previous-versions/windows/desktop/ms719717\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   

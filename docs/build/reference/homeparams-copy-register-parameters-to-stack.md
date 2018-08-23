@@ -17,15 +17,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ffc9b37ebdcbb380186c7840f5ebd956708a2dc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bfd6b8c77d972eb4606e7095bc5f733e7db16ea6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374404"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465546"
 ---
 # <a name="homeparams-copy-register-parameters-to-stack"></a>/homeparams (Kayıt Parametrelerini Yığına Kopyala)
-İşlevi girişte yığında konumlarına yazılacak yazmaçlar zorlar parametre geçirildi.  
+Yazmaçlarında işlev girişi ile birlikte kendi konumlarına yazılmasını zorlar parametreler geçildi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,23 +34,23 @@ ms.locfileid: "32374404"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yalnızca Bu derleyici seçeneği olan [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] derleyicileri (yerel ve derleme).  
+ Bu derleyici seçeneğini yalnızca x64 için olan derleyicileri (yerel ve çapraz derleme).  
   
- Ne zaman parametreleri geçirilen bir [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] derleme çağırma kurallarını iste stackspace bile Yazmaçları geçirilen parametreler için parametreler. Daha fazla bilgi için bkz: [parametre geçirme](../../build/parameter-passing.md). Ancak, bir sürümde yapıdaki varsayılan olarak, kayıt parametrelerini yığına parametreleri için zaten sağlanan alanına yazılmayacak. Bu, bir en iyi duruma getirilmiş (sürüm) programınızın hata ayıklama derlemesine zorlaştırır.  
+ Parametreleri bir x64 içinde geçirilir, derleme, çağırma kuralları iste stackspace bile kayıtlara geçirilen parametreler için parametreleri. Daha fazla bilgi için [parametre geçirerek](../../build/parameter-passing.md). Ancak, derleme varsayılan olarak, kayıt parametrelerini yığına, parametreler için zaten sağlanan alana yazılmaz. Bu, bir en iyi duruma getirilmiş (sürüm) programınızın hata ayıklama derlemesine zorlaştırır.  
   
- Yayın derleme için kullanma **/homeparams** uygulamanızı ayıklayabilirsiniz emin olmak için. **/ homeparams** kayıt parametrelerini yığına açın yüklemek için bir döngü gerektiğinden performansı olumsuz anlamına gelmez.  
+ Bir yayın yapısı için kullanmak **/homeparams** uygulamanızın hatalarını emin olmak için. **/ homeparams** kayıt parametrelerini yığına açın yüklemek için bir döngü gerektiğinden bir performans olumsuz anlamına gelmez.  
   
- Bir hata ayıklama derlemesi yığın her zaman Yazmaçları geçirilen parametre ile doldurulur.  
+ Hata ayıklama yapısında, her zaman kayıtlara geçirilen parametreleri yığına doldurulur.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **C/C++** klasör.  
+2.  Tıklayın **C/C++** klasör.  
   
-3.  Tıklatın **komut satırı** özellik sayfası.  
+3.  Tıklayın **komut satırı** özellik sayfası.  
   
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
+4.  Derleyici seçeneğini yazın **ek seçenekler** kutusu.  
   
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
   

@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f8c4a343126a14e1aea931b1e154714af280904
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc3086a59fe3995fcb5b4fff34891faa6a630f63
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327804"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466274"
 ---
 # <a name="faststorefence"></a>__faststorefence
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Her ikisi de dahil olmak üzere her önceki bellek başvurusu yük ve bellek başvurularını depolamak garantileri önce herhangi bir sonraki bellek referans genel olarak görünür.  
+ Her ikisi de dahil olmak üzere her önceki bellek başvuru yüklemek ve bellek başvuruları depolamak garantileri önce herhangi bir sonraki bellek başvurusu genel olarak görünür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,18 +40,18 @@ void __faststorefence();
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__faststorefence`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__faststorefence`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Garanti yüklemek ve işlemleri depolamak bir tam bellek engeli yönerge sırası oluşturur önce iç bu öğeler genel verilen yürütmeden önce görünür devam eder. Etkisi karşılaştırılabilir ancak daha hızlı bir şekilde `_mm_mfence` tüm x64 üzerinde iç platformlar.  
+ Garanti yükleyin ve depolama işlemleri bir tam bellek barrier yönergesi bir sıra üretir önce bu iç olan genel olarak yayımlanan yürütmeden önce görünür devam eder. Efekt için karşılaştırılabilir ancak daha hızlı bir şekilde `_mm_mfence` tüm x64 iç platformlar.  
   
- AMD64 platformunda, bu yordamı daha hızlı bir depolama sınırı olan bir yönerge oluşturur `sfence` yönergesi. Zaman açısından kritik kod için yerine bu iç kullanmak `_mm_sfence` yalnızca AMD64 platformlarda. Intel x64 platformlarda `_mm_sfence` yönerge daha hızlı olması.  
+ AMD64 platformunda, bu yordam daha hızlı bir depolama sınırı olan bir yönerge oluşturur `sfence` yönergesi. Zaman açısından kritik kod için bu iç yerine kullanmak `_mm_sfence` AMD64 platformlarına çağırmasıdır. Intel x64 platformlarda `_mm_sfence` yönergedir daha hızlı.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

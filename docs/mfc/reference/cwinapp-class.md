@@ -202,15 +202,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aab01b0f55d19ef3c9d39fed38b42471f559ba8d
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 037314c8c3a1449dff195052a2fb8a60fa72ff9f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37123207"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466183"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
-Bir Windows uygulama nesnesi türetilen temel sınıf.  
+Bir Windows uygulama nesnesi türettiğiniz taban sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -224,148 +224,148 @@ class CWinApp : public CWinThread
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CWinApp::CWinApp](#cwinapp)|Oluşturan bir `CWinApp` nesnesi.|  
+|[CWinApp::CWinApp](#cwinapp)|Oluşturur bir `CWinApp` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CWinApp::AddDocTemplate](#adddoctemplate)|Belge şablonu uygulamanın kullanılabilir şablonların listesine ekler.|  
+|[CWinApp::AddDocTemplate](#adddoctemplate)|Bir belge şablonu, uygulamanın kullanılabilir şablonların listesine ekler.|  
 |[CWinApp::AddToRecentFileList](#addtorecentfilelist)|Bir dosya adı en son kullanılan (MRU) dosya listesine ekler.|  
-|[CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback)|Uygulama beklenmedik şekilde çıktığında çerçevesi tarafından çağrılır.|  
-|[CWinApp::CloseAllDocuments](#closealldocuments)|Tüm açık belgeleri kapatır.|  
+|[CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback)|Uygulama beklenmedik bir şekilde çıktığında framework tarafından çağırılır.|  
+|[CWinApp::CloseAllDocuments](#closealldocuments)|Bütün açık belgeleri kapatır.|  
 |[CWinApp::CreatePrinterDC](#createprinterdc)|Bir yazıcı cihaz bağlamı oluşturur.|  
 |[CWinApp::DelRegTree](#delregtree)|Belirtilen anahtar ve tüm alt anahtarlarını siler.|  
 |[CWinApp::DoMessageBox](#domessagebox)|Implements [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox) uygulama için.|  
-|[CWinApp::DoWaitCursor](#dowaitcursor)|Bekleme imleci açar ve kapatır.|  
-|[CWinApp::EnableD2DSupport](#enabled2dsupport)|Uygulama D2D desteği sağlar. Ana pencerede başlatılmadan önce bu yöntemi çağırın.|  
+|[CWinApp::DoWaitCursor](#dowaitcursor)|Bekleme imleci açıp kapatır.|  
+|[CWinApp::EnableD2DSupport](#enabled2dsupport)|Uygulama D2D desteği sağlar. Ana pencereyi başlatılmadan önce bu yöntemi çağırın.|  
 |[CWinApp::EnableHtmlHelp](#enablehtmlhelp)|WinHelp yerine uygulama için HTMLHelp uygular.|  
 |[CWinApp::EnableTaskbarInteraction](#enabletaskbarinteraction)|Görev etkileşim sağlar.|  
 |[CWinApp::ExitInstance](#exitinstance)|Uygulamanızı sonlandırıldığında temizlemek için geçersiz kılın.|  
-|[CWinApp::GetApplicationRecoveryParameter](#getapplicationrecoveryparameter)|Uygulama kurtarma yöntemi için giriş parametresi alır.|  
-|[CWinApp::GetApplicationRecoveryPingInterval](#getapplicationrecoverypinginterval)|Kurtarma için dönmek geri çağırma işlevi yeniden başlatma Yöneticisi bekleyeceği süreyi döndürür.|  
+|[CWinApp::GetApplicationRecoveryParameter](#getapplicationrecoveryparameter)|Uygulama kurtarma yöntemi giriş parametresi alır.|  
+|[CWinApp::GetApplicationRecoveryPingInterval](#getapplicationrecoverypinginterval)|Kurtarma için geri dönmek geri çağırma işlevi yeniden başlatma Yöneticisi bekleyeceği sürenin uzunluğunu döndürür.|  
 |[CWinApp::GetApplicationRestartFlags](#getapplicationrestartflags)|Bayrakları için yeniden başlatma Yöneticisi döndürür.|  
-|[CWinApp::GetAppRegistryKey](#getappregistrykey)|HKEY_CURRENT_USER döndürür anahtar\\"Yazılım" \RegistryKey\ProfileName.|  
-|[CWinApp::GetDataRecoveryHandler](#getdatarecoveryhandler)|Veri kurtarma işleyicisi uygulamanın bu örneğini alır.|  
-|[CWinApp::GetFirstDocTemplatePosition](#getfirstdoctemplateposition)|İlk belge şablonu konumunu alır.|  
+|[CWinApp::GetAppRegistryKey](#getappregistrykey)|HKEY_CURRENT_USER anahtarı döndürür\\"Yazılım" \RegistryKey\ProfileName.|  
+|[CWinApp::GetDataRecoveryHandler](#getdatarecoveryhandler)|Uygulamanın bu örneği için veri kurtarma işleyici alır.|  
+|[CWinApp::GetFirstDocTemplatePosition](#getfirstdoctemplateposition)|Belge şablonu ilk konumunu alır.|  
 |[CWinApp::GetHelpMode](#gethelpmode)|Uygulama tarafından kullanılan Yardım türünü alır.|  
-|[CWinApp::GetNextDocTemplate](#getnextdoctemplate)|Belge şablonu konumunu alır. Kullanılan yinelemeli olabilir.|  
-|[CWinApp::GetPrinterDeviceDefaults](#getprinterdevicedefaults)|Yazıcı aygıt varsayılanlarını alır.|  
-|[CWinApp::GetProfileBinary](#getprofilebinary)|İkili veriler uygulamanın bir girdi alır. INI dosyası.|  
-|[CWinApp::GetProfileInt](#getprofileint)|Tamsayı uygulamanın bir girdi alır. INI dosyası.|  
-|[CWinApp::GetProfileString](#getprofilestring)|Uygulamanın bir girişe bir dize alır. INI dosyası.|  
-|[CWinApp::GetSectionKey](#getsectionkey)|HKEY_CURRENT_USER döndürür anahtar\\"Yazılım" \RegistryKey\AppName\lpszSection.|  
-|[CWinApp::HideApplication](#hideapplication)|Tüm belgeler kapatmadan önce uygulamayı gizler.|  
+|[CWinApp::GetNextDocTemplate](#getnextdoctemplate)|Bir belge şablonu konumunu alır. Kullanılan yinelemeli olarak olabilir.|  
+|[CWinApp::GetPrinterDeviceDefaults](#getprinterdevicedefaults)|Yazıcı cihazı varsayılanlarını alır.|  
+|[CWinApp::GetProfileBinary](#getprofilebinary)|Bir uygulamanın girişinde ikili verileri alır. INI dosyası.|  
+|[CWinApp::GetProfileInt](#getprofileint)|Bir tamsayı uygulamanın bir girdi alır. INI dosyası.|  
+|[CWinApp::GetProfileString](#getprofilestring)|Bir uygulamanın girişinde bir dize alır. INI dosyası.|  
+|[CWinApp::GetSectionKey](#getsectionkey)|HKEY_CURRENT_USER anahtarı döndürür\\"Yazılım" \RegistryKey\AppName\lpszSection.|  
+|[CWinApp::HideApplication](#hideapplication)|Tüm belgeleri kapatmadan önce uygulamayı gizler.|  
 |[CWinApp::HtmlHelp](#htmlhelp)|Çağrıları `HTMLHelp` Windows işlevi.|  
-|[CWinApp::InitInstance](#initinstance)|Pencere nesneleri oluşturma gibi Windows örneği başlatma gerçekleştirmek için geçersiz kılın.|  
-|[CWinApp::IsTaskbarInteractionEnabled](#istaskbarinteractionenabled)|Windows 7 görev etkileşim etkin olup olmadığını bildirir.|  
+|[Afxenablecontrolcontainer](#initinstance)|Pencere nesnelerinizi oluşturma gibi Windows örneği başlatma gerçekleştirmek için geçersiz kılın.|  
+|[CWinApp::IsTaskbarInteractionEnabled](#istaskbarinteractionenabled)|Windows 7 görev etkileşim etkinleştirilip etkinleştirilmeyeceğini belirtir.|  
 |[CWinApp::LoadCursor](#loadcursor)|İmleç kaynak yükler.|  
-|[CWinApp::LoadIcon](#loadicon)|Bir simge kaynak yükler.|  
-|[CWinApp::LoadOEMCursor](#loadoemcursor)|Yükleri Windows OEM imleç önceden tanımlanmış, **OCR_** sabitleri WINDOWS belirtin. H.|  
-|[CWinApp::LoadOEMIcon](#loadoemicon)|Windows OEM önceden tanımlanmış simge yükler, **OIC_** sabitleri WINDOWS belirtin. H.|  
-|[CWinApp::LoadStandardCursor](#loadstandardcursor)|Yükleri Windows imleç önceden tanımlanmış, **IDC_** sabitleri WINDOWS belirtin. H.|  
-|[CWinApp::LoadStandardIcon](#loadstandardicon)|Windows önceden tanımlanmış simge yükler, **IDI_** sabitleri WINDOWS belirtin. H.|  
-|[CWinApp::OnDDECommand](#onddecommand)|Adlı Değişimi (DDE) yanıt olarak dinamik bir veri framework tarafından komutu yürütün.|  
-|[CWinApp::OnIdle](#onidle)|Uygulamaya özgü boşta kalma süresi işlemini gerçekleştirmek için geçersiz kılın.|  
-|[CWinApp::OpenDocumentFile](#opendocumentfile)|Bir dosyadan bir belgeyi açmaya çerçevesi tarafından çağrılır.|  
-|[CWinApp::ParseCommandLine](#parsecommandline)|Tek tek parametreleri ve komut satırı bayrakları ayrıştırır.|  
-|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows işlevleri gönderilir önce iletileri filtreler [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934).|  
-|[CWinApp::ProcessMessageFilter](#processmessagefilter)|Uygulama düşmeden önce belirli iletileri kesintiye uğratır.|  
+|[CWinApp::LoadIcon](#loadicon)|Bir simge kaynağı yükler.|  
+|[CWinApp::LoadOEMCursor](#loadoemcursor)|Yükleri Windows OEM imleç önceden tanımlanmış, **OCR_** sabitleri WINDOWS belirtin. H|  
+|[CWinApp::LoadOEMIcon](#loadoemicon)|Bir Windows OEM önceden tanımlanmış simge yükler, **OIC_** sabitleri WINDOWS belirtin. H|  
+|[CWinApp::LoadStandardCursor](#loadstandardcursor)|Yükleri bir Windows imleç önceden tanımlanmış, **IDC_** sabitleri WINDOWS belirtin. H|  
+|[CWinApp::LoadStandardIcon](#loadstandardicon)|Bir Windows önceden tanımlanmış simge yükler, **IDI_** sabitleri WINDOWS belirtin. H|  
+|[CWinApp::OnDDECommand](#onddecommand)|Adlı Değişimi (DDE) yanıt olarak dinamik bir veri çerçevesi tarafından komutu yürütün.|  
+|[CWinApp::OnIdle](#onidle)|Uygulamaya özgü boşta kalma süresi işleme gerçekleştirmek için geçersiz kılın.|  
+|[CWinApp::OpenDocumentFile](#opendocumentfile)|Bir dosyadan bir belgeyi açmak için framework tarafından çağırılır.|  
+|[CWinApp::ParseCommandLine](#parsecommandline)|Bağımsız parametreleri ve komut satırı bayrakları ayrıştırır.|  
+|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows işlevleri için dağıtılmadan önce iletileri filtreler [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934).|  
+|[CWinApp::ProcessMessageFilter](#processmessagefilter)|Uygulamaya ulaşmadan önce belirli iletileri kesintiye uğratır.|  
 |[CWinApp::ProcessShellCommand](#processshellcommand)|Komut satırı bağımsız değişkenleri ve bayrakları işler.|  
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|Uygulamanın iletiyi ve komut işleyicileri tarafından oluşturulan tüm işlenmeyen özel durumları yakalar.|  
 |[CWinApp::Register](#register)|Özelleştirilmiş kayıt gerçekleştirir.|  
 |[CWinApp::RegisterWithRestartManager](#registerwithrestartmanager)|Uygulama yeniden başlatma Yöneticisi ile kaydeder.|  
-|[CWinApp::ReopenPreviousFilesAtRestart](#reopenpreviousfilesatrestart)|Yeniden başlatma Yöneticisi uygulama beklenmedik biçimde çıktı zaman açık olan dosyaları açana olup olmadığını belirler.|  
-|[CWinApp::RestartInstance](#restartinstance)|Yeniden başlatma Yöneticisi tarafından başlatılan bir uygulama yeniden başlatma işler.|  
+|[CWinApp::ReopenPreviousFilesAtRestart](#reopenpreviousfilesatrestart)|Yeniden başlatma Yöneticisi uygulama beklenmedik bir şekilde çıkıldı açık dosyalar açana olup olmadığını belirler.|  
+|[CWinApp::RestartInstance](#restartinstance)|Bir uygulama yeniden başlatma yeniden başlatma Yöneticisi tarafından başlatılan işler.|  
 |[CWinApp::RestoreAutosavedFilesAtRestart](#restoreautosavedfilesatrestart)|Uygulama yeniden başlatıldığında yeniden başlatma Yöneticisi'ni otomatik olarak kaydedilmiş dosyaları geri yükler olup olmadığını belirler.|  
-|[CWinApp::Run](#run)|Varsayılan ileti döngüsü çalışır. İleti döngüsü özelleştirmek için geçersiz kılın.|  
-|[CWinApp::RunAutomated](#runautomated)|Uygulamanın komut satırı testleri **/Automation** seçeneği. Kullanımdan kalktı. Bunun yerine, değeri kullanın [CCommandLineInfo::m_bRunAutomated](../../mfc/reference/ccommandlineinfo-class.md#m_brunautomated) çağırdıktan sonra [ParseCommandLine](#parsecommandline).|  
-|[CWinApp::RunEmbedded](#runembedded)|Uygulamanın komut satırı testleri **/katıştırma** seçeneği. Kullanımdan kalktı. Bunun yerine, değeri kullanın [CCommandLineInfo::m_bRunEmbedded](../../mfc/reference/ccommandlineinfo-class.md#m_brunembedded) çağırdıktan sonra [ParseCommandLine](#parsecommandline).|  
+|[CWinApp::Run](#run)|Varsayılan mesaj döngüsünü çalıştırır. İleti döngüsünden özelleştirmek için geçersiz kılın.|  
+|[CWinApp::RunAutomated](#runautomated)|Uygulamanın komut satırı testleri **/Automation** seçeneği. Kullanımdan kalktı. Bunun yerine, değeri kullandığınızdan [CCommandLineInfo::m_bRunAutomated](../../mfc/reference/ccommandlineinfo-class.md#m_brunautomated) arama sonra [ParseCommandLine](#parsecommandline).|  
+|[CWinApp::RunEmbedded](#runembedded)|Uygulamanın komut satırı testleri **/Embedding** seçeneği. Kullanımdan kalktı. Bunun yerine, değeri kullandığınızdan [CCommandLineInfo::m_bRunEmbedded](../../mfc/reference/ccommandlineinfo-class.md#m_brunembedded) arama sonra [ParseCommandLine](#parsecommandline).|  
 |[CWinApp::SaveAllModified](#saveallmodified)|Değiştirilen tüm belgeleri kaydetmek için kullanıcıya sorar.|  
-|[CWinApp::SelectPrinter](#selectprinter)|Yazdır iletişim kutusu üzerinden bir kullanıcı tarafından daha önce belirtilen yazıcı seçer.|  
-|[CWinApp::SetHelpMode](#sethelpmode)|Ayarlar ve uygulama tarafından kullanılan Yardım türü başlatır.|  
-|[CWinApp::SupportsApplicationRecovery](#supportsapplicationrecovery)|Yeniden başlatma Yöneticisi beklenmedik biçimde çıktı uygulamanın kurtarır olup olmadığını belirler.|  
-|[CWinApp::SupportsAutosaveAtInterval](#supportsautosaveatinterval)|Yeniden başlatma Yöneticisi autosaves düzenli aralıklarla belgeleri Aç olup olmadığını belirler.|  
-|[CWinApp::SupportsAutosaveAtRestart](#supportsautosaveatrestart)|Belirler olup olmadığını yeniden başlatma Yöneticisi autosaves tüm açık belgeleri uygulama yeniden başlatıldığında.|  
-|[CWinApp::SupportsRestartManager](#supportsrestartmanager)|Uygulama yeniden başlatma Yöneticisi'ni destekleyip desteklemediğini belirler.|  
-|[CWinApp::Unregister](#unregister)|Her şeyi tarafından kayıtlı olduğu bilinen kaydını siler `CWinApp` nesnesi.|  
+|[CWinApp::SelectPrinter](#selectprinter)|Daha önce bir yazdırma iletişim kutusu ile bir kullanıcı tarafından belirtilen yazıcı seçer.|  
+|[CWinApp::SetHelpMode](#sethelpmode)|Ayarlar ve bu tür bir uygulama tarafından kullanılan Yardım başlatır.|  
+|[CWinApp::SupportsApplicationRecovery](#supportsapplicationrecovery)|Yeniden başlatma Yöneticisi beklenmedik şekilde çıkıldı uygulamanın kurtarır olup olmadığını belirler.|  
+|[CWinApp::SupportsAutosaveAtInterval](#supportsautosaveatinterval)|Yeniden başlatma Yöneticisi kapanıyorsa düzenli aralıklarla belgeler açık olup olmadığını belirler.|  
+|[CWinApp::SupportsAutosaveAtRestart](#supportsautosaveatrestart)|Belirler olmadığını yeniden başlatma Yöneticisi kapanıyorsa tüm açık belgeleri uygulama yeniden başlatıldığında.|  
+|[CWinApp::SupportsRestartManager](#supportsrestartmanager)|Uygulama yeniden başlatma Yöneticisi destekleyip desteklemediğini belirler.|  
+|[CWinApp::Unregister](#unregister)|Her şeyi tarafından kayıtlı olduğu bilinen kaydını siler `CWinApp` nesne.|  
 |[CWinApp::WinHelp](#winhelp)|Çağrıları `WinHelp` Windows işlevi.|  
 |[CWinApp::WriteProfileBinary](#writeprofilebinary)|Uygulamanın içindeki bir girdiye ikili verileri yazar. INI dosyası.|  
-|[CWinApp::WriteProfileInt](#writeprofileint)|Uygulamanın içindeki bir girdiye tamsayı yazar. INI dosyası.|  
-|[CWinApp::WriteProfileString](#writeprofilestring)|Uygulamanın içindeki bir girdiye bir dize yazar. INI dosyası.|  
+|[CWinApp::WriteProfileInt](#writeprofileint)|İçinde uygulamanın bir giriş için bir tamsayı yazar. INI dosyası.|  
+|[CWinApp::WriteProfileString](#writeprofilestring)|İçinde uygulamanın bir giriş için bir dize yazar. INI dosyası.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CWinApp::EnableShellOpen](#enableshellopen)|Windows Dosya Yöneticisi'nden veri dosyalarını açmasına olanak tanır.|  
-|[CWinApp::LoadStdProfileSettings](#loadstdprofilesettings)|Yükleri standart. Liste özelliğini dosya INİ dosyası ayarları ve MRU etkinleştirir.|  
-|[CWinApp::OnContextHelp](#oncontexthelp)|SHIFT + F1 Yardımı uygulama içinde işler.|  
+|[CWinApp::EnableShellOpen](#enableshellopen)|Windows Dosya Yöneticisi'nden veri dosyalarını açmak kullanıcının sağlar.|  
+|[CWinApp::LoadStdProfileSettings](#loadstdprofilesettings)|Standart yükler. INI dosyası ayarlarının ve etkinleştirir MRU Listesi özelliği dosya.|  
+|[CWinApp::OnContextHelp](#oncontexthelp)|SHIFT + F1 Yardım uygulama içinde işler.|  
 |[CWinApp::OnFileNew](#onfilenew)|Id_fıle_new komutu uygular.|  
 |[CWinApp::OnFileOpen](#onfileopen)|Id_fıle_open komutu uygular.|  
 |[CWinApp::OnFilePrintSetup](#onfileprintsetup)|Id_fıle_prınt_setup komutu uygular.|  
 |[CWinApp::OnHelp](#onhelp)|F1 Yardımı (geçerli bağlamı kullanarak) uygulama içinde işler.|  
 |[CWinApp::OnHelpFinder](#onhelpfinder)|ID_HELP_FINDER ve ıd_default_help komutları işler.|  
-|[CWinApp::OnHelpIndex](#onhelpindex)|Id_help_ındex komutu işler ve varsayılan Yardım konusunun sağlar.|  
+|[CWinApp::OnHelpIndex](#onhelpindex)|Id_help_ındex komutu işleyen ve varsayılan Yardım konusunun sağlar.|  
 |[CWinApp::OnHelpUsing](#onhelpusing)|Id_help_usıng komutu işler.|  
-|[CWinApp::RegisterShellFileTypes](#registershellfiletypes)|Uygulamanın tüm belge türü Windows Dosya Yöneticisi ile kaydeder.|  
-|[CWinApp::SetAppID](#setappid)|Açıkça uygulama kullanıcısı Model kimliği için uygulama ayarlar. Bu yöntem, herhangi bir kullanıcı arabirimi (en iyi uygulama Oluşturucusu yerdir) kullanıcıya görüntülenmeden önce çağrılmalıdır.|  
-|[CWinApp::SetRegistryKey](#setregistrykey)|Uygulama ayarları yerine kayıt defterinde depolanan neden olur. INİ dosyaları.|  
-|[CWinApp::UnregisterShellFileTypes](#unregistershellfiletypes)|Uygulamanın tüm belge türü ile Windows Dosya Yöneticisi kaydını siler.|  
+|[Otomatik olarak InitInstance](#registershellfiletypes)|Uygulamanın tüm belge türü Windows Dosya Yöneticisi ile kaydeder.|  
+|[CWinApp::SetAppID](#setappid)|Açıkça uygulama kullanıcı modeli kimliği, uygulama için ayarlar. Herhangi bir kullanıcı arabirimi (en iyi uygulama Oluşturucu yerdir) kullanıcıya görüntülenmeden önce bu yöntem çağrılmalıdır.|  
+|[CWinApp::SetRegistryKey](#setregistrykey)|Uygulama ayarları yerine kayıt defterinde depolanmış neden olur. INİ dosyaları.|  
+|[CWinApp::UnregisterShellFileTypes](#unregistershellfiletypes)|Uygulamanın tüm belge türleri ile Windows Dosya Yöneticisi kaydını siler.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CWinApp::m_bHelpMode](#m_bhelpmode)|Kullanıcı (genellikle SHIFT + F1'e çağrılan) Yardım bağlamı modunda olup olmadığını gösterir.|  
+|[CWinApp::m_bHelpMode](#m_bhelpmode)|Yardım içeriği modu (SHIFT + F1'e genellikle çağrılır) kullanıcının olup olmadığını gösterir.|  
 |[CWinApp::m_eHelpType](#m_ehelptype)|Uygulama tarafından kullanılan Yardım türünü belirtir.|  
 |[CWinApp::m_hInstance](#m_hinstance)|Uygulamanın geçerli örneğini tanımlar.|  
-|[CWinApp::m_lpCmdLine](#m_lpcmdline)|Noktaları null ile sonlandırılmış dizeye uygulama için komut satırını belirtir.|  
-|[CWinApp::m_nCmdShow](#m_ncmdshow)|Nasıl penceresi başlangıçta gösterilecek belirtir.|  
-|[CWinApp::m_pActiveWnd](#m_pactivewnd)|OLE sunucu yerinde etkin olduğunda kapsayıcı uygulamanın ana penceresi işaretçi.|  
+|[CWinApp::m_lpCmdLine](#m_lpcmdline)|Uygulama için komut satırını belirtir. boş sonlandırılmış dizeye işaret eder.|  
+|[CWinApp::m_nCmdShow](#m_ncmdshow)|Nasıl pencere ilk başta gösterilecek belirtir.|  
+|[CWinApp::m_pActiveWnd](#m_pactivewnd)|OLE sunucusu yerinde etkin olduğunda kapsayıcı uygulamanın ana pencere işaretçisi.|  
 |[CWinApp::m_pszAppID](#m_pszappid)|Uygulama kullanıcı modeli kimliği|  
 |[CWinApp::m_pszAppName](#m_pszappname)|Uygulamanın adını belirtir.|  
 |[CWinApp::m_pszExeName](#m_pszexename)|Uygulama modülü adı.|  
 |[CWinApp::m_pszHelpFilePath](#m_pszhelpfilepath)|Uygulamanın Yardım dosyasının yolu.|  
-|[CWinApp::m_pszProfileName](#m_pszprofilename)|Uygulamanın. INI dosyası adı.|  
-|[CWinApp::m_pszRegistryKey](#m_pszregistrykey)|Uygulama profili ayarlarını depolamak için tam kayıt defteri anahtarı belirlemek için kullanılır.|  
+|[CWinApp::m_pszProfileName](#m_pszprofilename)|Uygulamanın. INI dosya adı.|  
+|[CWinApp::m_pszRegistryKey](#m_pszregistrykey)|Uygulama profili ayarları depolamak için tam kayıt defteri anahtarı belirlemek için kullanılır.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CWinApp::m_dwRestartManagerSupportFlags](#m_dwrestartmanagersupportflags)|Yeniden başlatma Yöneticisi'ni nasıl davranacağını belirleyen bayrak.|  
-|[CWinApp::m_nAutosaveInterval](#m_nautosaveinterval)|Autosaves arasındaki milisaniye cinsinden süre uzunluğu.|  
-|[CWinApp::m_pDataRecoveryHandler](#m_pdatarecoveryhandler)|Uygulama için veri kurtarma işleyicisi işaretçi.|  
+|[CWinApp::m_nAutosaveInterval](#m_nautosaveinterval)|Kapanıyorsa arasındaki milisaniye cinsinden süre uzunluğu.|  
+|[CWinApp::m_pDataRecoveryHandler](#m_pdatarecoveryhandler)|Uygulama için veri kurtarma işleyicisi işaretçisi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Uygulama nesnesi, uygulamanız (ve her örneği) başlatma ve uygulamayı çalıştırmak için üye işlevleri sağlar.  
+ Uygulama nesnesi, uygulamanızın (ve her örneğini) başlatma ve uygulamayı çalıştıran üye işlevleri sağlar.  
   
- Microsoft Foundation sınıfları kullanan her bir uygulama yalnızca türetilmiş bir nesne içerebilir `CWinApp`. Bu nesne diğer C++ genel nesneler oluşturulan zaman oluşturulur ve Windows çağırdığında zaten kullanılabilir `WinMain` Microsoft Foundation Class Kitaplığı tarafından sağlanan işlev. Türetilmiş bildirme `CWinApp` genel düzeyde nesne.  
+ Microsoft Foundation sınıfları kullanan her bir uygulamanın yalnızca türetilen bir nesne içerebilir `CWinApp`. Bu nesne diğer C++ genel nesneler oluşturulduğunda oluşturulur ve zaten Windows çağırdığında kullanılabilir `WinMain` Microsoft Foundation Class Kitaplığı tarafından sağlanan işlev. Türetilmiş bildirmek `CWinApp` genel düzeyde nesne.  
   
- Bir uygulama sınıfından türetilen zaman `CWinApp`, geçersiz kılma [InitInstance](#initinstance) uygulamanızın ana pencere nesnesi oluşturmak için üye işlevi.  
+ Bir uygulama sınıfından türetilen zaman `CWinApp`, geçersiz kılma [InitInstance](#initinstance) uygulamanın ana pencere nesnesi oluşturmak için üye işlevi.  
   
- Ek olarak `CWinApp` üye işlevleri Microsoft Foundation Class Kitaplığı erişmek için aşağıdaki genel işlevler sağlar, `CWinApp` nesne ve diğer genel bilgileri:  
+ Ek olarak `CWinApp` üye işlevleri, Microsoft Foundation Class Kitaplığı erişmek için aşağıdaki genel işlevler sağlar, `CWinApp` nesne ve diğer genel bilgiler:  
   
-- [AfxGetApp](application-information-and-management.md#afxgetapp) gösteren bir işaretçi alır `CWinApp` nesnesi.  
+- [AfxGetApp](application-information-and-management.md#afxgetapp) bir işaretçi sağlar `CWinApp` nesne.  
   
-- [Afxgetınstancehandle](application-information-and-management.md#afxgetinstancehandle) geçerli uygulama örneği için bir tanıtıcı alır.  
+- [Afxgetınstancehandle](application-information-and-management.md#afxgetinstancehandle) geçerli uygulama örneği için bir tanıtıcı elde eder.  
   
-- [AfxGetResourceHandle](application-information-and-management.md#afxgetresourcehandle) uygulamanın kaynakları için bir tanıtıcı alır.  
+- [AfxGetResourceHandle](application-information-and-management.md#afxgetresourcehandle) uygulamanın kaynaklarına yönelik bir tanıtıcı elde eder.  
   
-- [AfxGetAppName](application-information-and-management.md#afxgetappname) uygulamanın adını içeren bir dize için bir işaretçi alır. Alternatif olarak, bir işaretçi varsa `CWinApp` nesne, kullanın `m_pszExeName` uygulamanın adını almak için.  
+- [AfxGetAppName](application-information-and-management.md#afxgetappname) uygulamanın adını içeren bir dize için bir işaretçi alır. Alternatif olarak, bir işaretçi varsa `CWinApp` nesnesi `m_pszExeName` uygulamanın adı.  
   
- Bkz: [CWinApp: uygulama sınıfı](../../mfc/cwinapp-the-application-class.md) hakkında daha fazla bilgi için `CWinApp` sınıfı, aşağıdaki genel bir bakış da dahil olmak üzere:  
+ Bkz: [CWinApp: uygulama sınıfı](../../mfc/cwinapp-the-application-class.md) hakkında daha fazla bilgi `CWinApp` sınıfı, aşağıdaki genel bir bakış da dahil olmak üzere:  
   
 - `CWinApp`-Uygulama Sihirbazı tarafından yazılan kodu türetilmiş.  
   
-- `CWinApp`Kullanıcının, uygulamanızın yürütme sırası rolünde.  
+- `CWinApp`kullanıcının rolde uygulamanızın yürütme sırası.  
   
-- `CWinApp`varsayılan üye fonksiyonu uygulamaları kullanıcının.  
+- `CWinApp`varsayılan üye işlev uygulamaları güçlendirin.  
   
-- `CWinApp`ın anahtar geçersiz kılınabilir.  
+- `CWinApp`ın anahtar geçersiz kılınabilen öğelerle ilgili.  
   
- `m_hPrevInstance` Veri üyesi artık yok. Önceki bir örneği algılama hakkında bilgi için `CWinApp`, Bilgi Bankası makalesi "Nasıl tanımlamak bir önceki örnek, bir uygulamaya" (KB106385) bkz: [ http://support.microsoft.com/default.aspxscid=kb; en-us; 106385](http://support.microsoft.com/default.aspxscid=kb;en-us;106385).  
+ `m_hPrevInstance` Veri üyesi artık yok. Önceki örneği algılama hakkında bilgi `CWinApp`, no'lu Bilgi Bankası makalesi "Nasıl tanımlamak bir önceki örnek, bir uygulamaya" (KB106385) bakın [ http://support.microsoft.com/default.aspxscid=kb; en-us; 106385](http://support.microsoft.com/default.aspxscid=kb;en-us;106385).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -380,7 +380,7 @@ class CWinApp : public CWinThread
  **Başlık:** afxwin.h  
   
 ##  <a name="adddoctemplate"></a>  CWinApp::AddDocTemplate  
- Belge şablonu uygulama tutan kullanılabilir şablonların listesine eklemek için bu üye işlevini çağırın.  
+ Bir belge şablonu uygulama tutan kullanılabilir şablonların listesini eklemek için bu üye işlevini çağırın.  
   
 ```  
 void AddDocTemplate(CDocTemplate* pTemplate);
@@ -391,13 +391,13 @@ void AddDocTemplate(CDocTemplate* pTemplate);
  Bir işaretçi `CDocTemplate` eklenecek.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm belge şablonları bir uygulamaya çağırmadan önce eklemelisiniz [RegisterShellFileTypes](#registershellfiletypes).  
+ Tüm belge şablonları uygulamaya çağırmadan önce eklemelisiniz [RegisterShellFileTypes](#registershellfiletypes).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#35](../../mfc/reference/codesnippet/cpp/cwinapp-class_1.cpp)]  
   
 ##  <a name="addtorecentfilelist"></a>  CWinApp::AddToRecentFileList  
- Bu üye işlevi ekleme çağrısı *lpszPathName* MRU dosya listesi.  
+ Eklemek için bu üye işlevi çağrısı *lpszPathName* MRU dosya listesi.  
   
 ```  
 virtual void AddToRecentFileList(LPCTSTR lpszPathName);
@@ -408,15 +408,15 @@ virtual void AddToRecentFileList(LPCTSTR lpszPathName);
  Dosya yolu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırmalısınız [LoadStdProfileSettings](#loadstdprofilesettings) üye işlevi bu üye işlevi kullanmadan önce geçerli MRU dosya listesi yüklenemedi.  
+ Çağırmalısınız [LoadStdProfileSettings](#loadstdprofilesettings) üye işlevi, bu üye işlevini kullanmadan önce geçerli MRU dosya listesi yüklenemedi.  
   
- Bir dosyayı açtığında veya yeni bir adla bir dosya kaydetmek için Kaydet komutunu yürütür framework bu üye işlevi çağırır.  
+ Bir dosya açar veya bir dosyayı yeni bir adla kaydetmek için Kaydet komutunu yürütür framework bu üye işlevini çağırır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#36](../../mfc/reference/codesnippet/cpp/cwinapp-class_2.cpp)]  
   
 ##  <a name="applicationrecoverycallback"></a>  CWinApp::ApplicationRecoveryCallback  
- Uygulama beklenmedik şekilde çıktığında çerçevesi tarafından çağrılır.  
+ Uygulama beklenmedik bir şekilde çıktığında framework tarafından çağırılır.  
   
 ```  
 virtual DWORD ApplicationRecoveryCallback(LPVOID lpvParam);
@@ -427,14 +427,14 @@ virtual DWORD ApplicationRecoveryCallback(LPVOID lpvParam);
  Daha sonraki kullanımlar için ayrılmıştır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem başarılı olursa 0; bir hata oluşursa, sıfır olmayan.  
+ Bu yöntem başarılı olursa 0; bir hata oluşursa sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulamanızı yeniden başlatma Yöneticisi'ni destekliyorsa, uygulamanızın beklenmedik şekilde çıktığında framework bu işlevi çağırır.  
+ Uygulamanızı yeniden başlatma Yöneticisi destekliyorsa, framework beklenmedik bir şekilde uygulamanız çıkış yaptığında bu işlevi çağırır.  
   
- Varsayılan uygulaması `ApplicationRecoveryCallback` kullanan `CDataRecoveryHandler` geçerli açık belgelerden listesi kayıt defterine kaydetmek için. Bu yöntem herhangi bir dosya değil otomatik kaydetme yapar.  
+ Varsayılan uygulaması `ApplicationRecoveryCallback` kullanan `CDataRecoveryHandler` açık belgelerin listesini kayıt defterine kaydetmek için. Bu yöntem herhangi bir dosya değil otomatik kaydetme yapar.  
   
- Davranışını özelleştirmek için bu işleve türetilmiş bir geçersiz kılma [CWinApp sınıfı](../../mfc/reference/cwinapp-class.md) veya kendi uygulama kurtarma yöntemi için parametre olarak geçirmek [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager).  
+ Davranışını özelleştirmek için bu işlev türetilen bir geçersiz kılma [CWinApp sınıfı](../../mfc/reference/cwinapp-class.md) veya kendi uygulama kurtarma yöntemi için parametre olarak geçirmek [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager).  
   
 ##  <a name="closealldocuments"></a>  CWinApp::CloseAllDocuments  
  Çıkmadan önce tüm açık belgeleri kapatmak için bu üye işlevini çağırın.  
@@ -445,7 +445,7 @@ void CloseAllDocuments(BOOL bEndSession);
   
 ### <a name="parameters"></a>Parametreler  
  *bEndSession*  
- Windows oturumu sona erer olup olmadığını belirtir. Oturum sona erdi, TRUE ise; Aksi takdirde FALSE.  
+ Windows oturum sona olup olmadığını belirtir. Oturum sona erdi, TRUE ise. Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [HideApplication](#hideapplication) çağırmadan önce `CloseAllDocuments`.  
@@ -459,18 +459,18 @@ BOOL CreatePrinterDC(CDC& dc);
   
 ### <a name="parameters"></a>Parametreler  
  *DC*  
- Bir yazıcı cihaz bağlamı referansı.  
+ Bir yazıcı cihaz bağlamına başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yazıcı cihaz bağlamı başarıyla oluşturulduysa sıfır olmayan; Aksi takdirde 0.  
+ Yazıcı cihaz bağlamı başarıyla oluşturulursa, sıfır olmayan; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CreatePrinterDC` yazdırmak için kullanabilirsiniz, böylece, başvuruya göre geçirdiğiniz aygıt bağlamını başlatır.  
+ `CreatePrinterDC` yazdırmak üzere kullanabilmeniz için başvuru ile geçirdiğiniz cihaz bağlamını başlatır.  
   
- Yazdırma tamamlandığında işlevi başarılı olursa, cihaz bağlamı destroy gerekir. Yıkıcısı sağlayabilirsiniz [CDC](../../mfc/reference/cdc-class.md) nesne yapın ya da açıkça çağırarak bunu yapabilirsiniz [CDC::DeleteDC](../../mfc/reference/cdc-class.md#deletedc).  
+ İşlev başarılı ise, yazdırma tamamladıktan sonra cihaz bağlamı imha etmeniz gerekir. Yok edicisinde sağlayabilirsiniz [CDC](../../mfc/reference/cdc-class.md) nesne yapmak veya bunu açıkça çağırarak yapabilirsiniz [CDC::DeleteDC](../../mfc/reference/cdc-class.md#deletedc).  
   
 ##  <a name="cwinapp"></a>  CWinApp::CWinApp  
- Oluşturan bir `CWinApp` nesne ve geçişleri *lpszAppName* uygulama adı olarak depolanacak.  
+ Oluşturur bir `CWinApp` nesne ve geçişleri *lpszAppName* uygulama adı olarak depolanacak.  
   
 ```  
 CWinApp(LPCTSTR lpszAppName = NULL);
@@ -478,13 +478,13 @@ CWinApp(LPCTSTR lpszAppName = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszAppName*  
- Windows kullanan uygulama adı içeren bir null ile sonlandırılmış bir dize. Bu bağımsız değişken sağlanmadığında ya da NULL ise `CWinApp` kaynak dizesi AFX_IDS_APP_TITLE veya yürütülebilir dosyanın kullanır.  
+ Windows kullanan uygulama adını içeren bir null ile sonlandırılmış dize. Bu bağımsız değişken sağlanmazsa veya NULL ise `CWinApp` AFX_IDS_APP_TITLE kaynak dizesi veya yürütülebilir dosyasının dosya adını kullanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir genel nesnesinin oluşturmalısınız, `CWinApp`-türetilmiş sınıf. Yalnızca bir bulunabilir `CWinApp` uygulamanızda nesnesi. Bir işaretçi Oluşturucusu depolar `CWinApp` nesne böylece `WinMain` nesnenin üye başlatın ve uygulamayı çalıştırmak için işlevleri çağırabilir.  
+ Genel bir nesne oluşturmak, `CWinApp`-türetilmiş sınıf. Tek sahip `CWinApp` uygulamanızdaki bir nesne. Oluşturucuya yönelik bir işaretçi depolayan `CWinApp` nesne böylece `WinMain` nesnenin üyesi başlatmak ve uygulamayı çalıştırmak için işlevleri çağırabilir.  
   
 ##  <a name="delregtree"></a>  CWinApp::DelRegTree  
- Belirli kayıt defteri anahtarının ve tüm alt anahtarlarını siler.  
+ Belirli kayıt defteri anahtarını ve tüm alt anahtarlarını siler.  
   
 ```  
 LONG DelRegTree(
@@ -506,16 +506,16 @@ LONG DelRegTree(
  Silinecek kayıt defteri anahtarı adı.  
   
  *pTM*  
- CAtlTransactionManager nesnesine işaretçi.  
+ CAtlTransactionManager nesne işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olursa, dönüş değeri ERROR_SUCCESS ' dir. İşlev başarısız olursa, dönüş değeri Winerror.h'de içinde tanımlanan bir sıfır olmayan hata kodudur.  
+ İşlev başarılı olursa, döndürülen değer ERROR_SUCCESS olur. İşlev başarısız olursa, döndürülen değer wınerror içinde tanımlanan bir sıfır olmayan hata kodudur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen anahtar ve alt anahtarlarından silmek için bu işlevini çağırın.  
+ Belirtilen anahtarı ve onun alt anahtarlarında silmek için bu işlevi çağırın.  
   
 ##  <a name="domessagebox"></a>  CWinApp::DoMessageBox  
- Framework genel işlevi için bir ileti kutusu uygulamak için bu üye işlevini çağırması [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox).  
+ Framework genel işlevine yönelik bir ileti kutusu uygulamak için bu üye işlevi çağıran [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox).  
   
 ```  
 virtual int DoMessageBox(
@@ -526,24 +526,24 @@ virtual int DoMessageBox(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszPrompt*  
- İleti kutusu metinde adresidir.  
+ İleti kutusu metni adresi.  
   
  *nTür*  
- İleti kutusu [stili](../../mfc/reference/styles-used-by-mfc.md#message-box-styles).  
+ İleti kutusu [stil](../../mfc/reference/styles-used-by-mfc.md#message-box-styles).  
   
  *nIDPrompt*  
  Yardım içerik dizesi için bir dizin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Aynı değerlere döner `AfxMessageBox`.  
+ Aynı değerleri döndürür `AfxMessageBox`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir ileti kutusu açmak için bu üye işlevini çağırmanız gerekmez; kullanmak `AfxMessageBox` yerine.  
+ Bir ileti kutusu açmak için bu üye işlevini çağırmayın; kullanma `AfxMessageBox` yerine.  
   
- Bu üye işlevi, uygulama genelinde işlenmesini özelleştirmek için geçersiz kılma `AfxMessageBox` çağrıları.  
+ Bu üye işlevi, birçok farklı uygulama işlenmesini özelleştirmek için geçersiz kılma `AfxMessageBox` çağırır.  
   
 ##  <a name="dowaitcursor"></a>  CWinApp::DoWaitCursor  
- Bu üye işlev uygulamak için çerçevesi tarafından çağrılır [CWaitCursor](../../mfc/reference/cwaitcursor-class.md), [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor), [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor), ve [ CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor).  
+ Bu üye işlevi uygulamak için framework tarafından çağrılan [CWaitCursor](../../mfc/reference/cwaitcursor-class.md), [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor), [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor), ve [ CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor).  
   
 ```  
 virtual void DoWaitCursor(int nCode);
@@ -551,22 +551,22 @@ virtual void DoWaitCursor(int nCode);
   
 ### <a name="parameters"></a>Parametreler  
  *nCode*  
- Bu parametre 1 ise, bir bekleme imleç görünür. 0 ise, bekleme imleci başvuru sayısı artırmadan geri yüklendi. -1, bekleme imleci sona erer.  
+ Bu parametre, 1 ise, bekleme imlecini görünür. 0 ise, bekleme imleci başvuru sayısını artırmadan geri yüklenir. -1, bekleme imleci sona erer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan bir Kum Saati İmleci uygular. `DoWaitCursor` bir başvuru sayımı tutar. Pozitif kum saati imleci görüntülenir.  
+ Varsayılan bir kum saati imleç uygular. `DoWaitCursor` bir başvuru sayısını tutar. Pozitif, imleci kum saati gösterilir.  
   
- Değil normalde çağırırdı sırada `DoWaitCursor` doğrudan bu üye işlevi bekleme imleci değiştirmek için ya da bekleme imleci görüntülenirken ek işlem yapmak için geçersiz.  
+ Değil normalde çağırırsınız sırada `DoWaitCursor` doğrudan bekleme imleci değiştirmek için ya da bekleme imleci görüntülenirken ek işleme yapmak için bu üye işlevi geçersiz.  
   
- Bekleme imleç uygulamak için daha kolay ve daha kolay bir yol için kullanmak `CWaitCursor`.  
+ Bekleme imlecini uygulamak bir kolay, daha kolay şekilde için kullanmak `CWaitCursor`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#37](../../mfc/reference/codesnippet/cpp/cwinapp-class_3.cpp)]  
   
 ##  <a name="enabled2dsupport"></a>  CWinApp::EnableD2DSupport  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 gereklidir.  
   
- Uygulama D2D desteği sağlar. Ana pencerede başlatılmadan önce bu yöntemi çağırın.  
+ Uygulama D2D desteği sağlar. Ana pencereyi başlatılmadan önce bu yöntemi çağırın.  
   
 ```  
 BOOL EnableD2DSupport(
@@ -579,13 +579,13 @@ DWRITE_FACTORY_TYPE writeFactoryType = DWRITE_FACTORY_TYPE_SHARED);
  D2D Fabrika ve kaynakları iş parçacığı modeli oluşturur.  
   
  *writeFactoryType*  
- Yazma üretecini paylaşılan veya ayrılmış belirten bir değer  
+ Yazma üretecini paylaşılan veya yalıtılmış olup olmadığını belirten bir değeri  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  D2D destek aksi etkinleştirilmişse, FALSE - ise TRUE döndürür  
   
 ##  <a name="enablehtmlhelp"></a>  CWinApp::EnableHtmlHelp  
- Oluşturucusunun içinde bu üye işlevini çağırın, `CWinApp`-türetilmiş sınıf HTMLHelp uygulamanızın yardım almak için kullanın.  
+ Oluşturucusunun içinde bu üye işlevini çağırın, `CWinApp`-türetilmiş sınıf HTMLHelp uygulamanızın yardım için kullanılacak.  
   
 ```  
 void EnableHtmlHelp();
@@ -594,14 +594,14 @@ void EnableHtmlHelp();
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="enableshellopen"></a>  CWinApp::EnableShellOpen  
- Çağırmanıza genellikle bu işlev, `InitInstance` dosyaları içinde Windows Dosya Yöneticisi'ni çift tıkladığınızda veri dosyalarını açmak, uygulamanızın kullanıcılarıyla etkinleştirmek için geçersiz kılın.  
+ Bu işlev, genellikle çağırmanıza, `InitInstance` bunlar içinde Windows Dosya Yöneticisi dosyalarından çift tıkladığınızda, veri dosyalarını açmak, uygulamanızın kullanıcıları etkinleştirmek için geçersiz kılma.  
   
 ```  
 void EnableShellOpen();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrı `RegisterShellFileTypes` üyesi bu işleviyle birlikte işlev veya sağlayan bir. Belge türü el ile kayıt için kayıt defteri dosyası uygulamanız ile.  
+ Çağrı `RegisterShellFileTypes` üye bu işlevle birlikte çalışması veya sağlayan bir. Belge türü el ile kayıt için REG dosyası uygulamanızla.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#38](../../mfc/reference/codesnippet/cpp/cwinapp-class_4.cpp)]  
@@ -615,34 +615,34 @@ BOOL EnableTaskbarInteraction(BOOL bEnable = TRUE);
   
 ### <a name="parameters"></a>Parametreler  
  *bSistemlerde*  
- Windows 7 görev etkileşim (TRUE) etkinleştirilmiş olmalıdır veya (FALSE) devre dışı olup olmadığını belirtir.  
+ Windows 7 görev etkileşim (TRUE) etkinleştirilmesi gerekir veya devre dışı (FALSE) olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Görev etkileşim etkin veya devre dışı varsa TRUE değerini döndürür.  
+ Görev etkileşim etkin veya devre dışı, TRUE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ana penceresi oluşturması işleminden önce bu yöntemin çağrılması gerekir, aksi takdirde, onaylar ve FALSE değerini döndürür.  
+ Bu yöntem, ana pencereyi oluşturulmasını önce çağrılmalıdır, aksi takdirde, onaylar ve false değerini döndürür.  
   
 ##  <a name="exitinstance"></a>  CWinApp::ExitInstance  
- İçinden çerçevesi tarafından çağrılır `Run` uygulama'nın bu örneğinin çıkmak için üye işlevi.  
+ İçinden framework tarafından çağırılır `Run` uygulamanın bu örneği çıkmak için üye işlevi.  
   
 ```  
 virtual int ExitInstance();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Uygulamanın çıkış kodu; 0 hata olmadığını gösterir ve değerler 0'dan büyük bir hata gösterir. Gelen bir dönüş değeri olarak kullanılan bu değer `WinMain`.  
+ Uygulamanın çıkış kodu; 0 hata olduğunu gösterir ve değerleri 0'dan büyük bir hata gösterir. Bu değer, dönüş değeri olarak kullanılır `WinMain`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi ancak içinde herhangi bir yerden çağırmayın `Run` üye işlevi.  
+ Bu üye işlevi ancak içinde her yerden çağırmayın `Run` üye işlevi.  
   
- Bu işlev varsayılan uygulaması framework seçenekleri uygulamanın yazar. INI dosyası. Bu işlev, uygulamanızın sonlandırıldığında temizlemek için geçersiz kılar.  
+ Bu işlev varsayılan uygulamasını framework seçenekleri uygulamanın yazar. INI dosyası. Bu işlev uygulamanızı sonlandırıldığında temizlemek için geçersiz kılın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#39](../../mfc/reference/codesnippet/cpp/cwinapp-class_5.cpp)]  
   
 ##  <a name="getapplicationrecoveryparameter"></a>  CWinApp::GetApplicationRecoveryParameter  
- Uygulama kurtarma yöntemi için giriş parametresi alır.  
+ Uygulama kurtarma yöntemi giriş parametresi alır.  
   
 ```  
 virtual LPVOID GetApplicationRecoveryParameter();
@@ -654,10 +654,10 @@ virtual LPVOID GetApplicationRecoveryParameter();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev varsayılan davranışını NULL döndürür.  
   
- Daha fazla bilgi için bkz: [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).  
+ Daha fazla bilgi için [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).  
   
 ##  <a name="getapplicationrecoverypinginterval"></a>  CWinApp::GetApplicationRecoveryPingInterval  
- Kurtarma için dönmek geri çağırma işlevi yeniden başlatma Yöneticisi bekleyeceği süreyi döndürür.  
+ Kurtarma için geri dönmek geri çağırma işlevi yeniden başlatma Yöneticisi bekleyeceği sürenin uzunluğunu döndürür.  
   
 ```  
 virtual DWORD GetApplicationRecoveryPingInterval();
@@ -667,9 +667,9 @@ virtual DWORD GetApplicationRecoveryPingInterval();
  Sürenin milisaniye cinsinden uzunluğu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeniden başlatma Yöneticisi çıkar ile beklenmedik bir şekilde kayıtlı bir uygulama, uygulama açık belgeleri kaydetmek çalışır ve Kurtarma geri çağırma işlevini çağırır. Varsayılan kurtarma geri çağırma işlevidir [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).  
+ İle yeniden başlatma Yöneticisi çıkar beklenmedik bir şekilde kayıtlı bir uygulama, uygulama açık belgeleri kaydetmek çalışır ve Kurtarma geri çağırma işlevini çağırır. Varsayılan kurtarma geri çağırma işlevidir [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).  
   
- Kurtarma için dönmek geri çağırma işlevi framework bekleyeceği süreyi ping aralığıdır. Geçersiz kılarak ping aralığını özelleştirebilirsiniz `CWinApp::GetApplicationRecoveryPingInterval` veya özel bir değer sağlayarak `RegisterWithRestartManager`.  
+ Kurtarma için geri dönmek geri çağırma işlevi framework bekleyeceği sürenin uzunluğunu ping aralığıdır. Ping aralığı geçersiz kılarak özelleştirebileceğiniz `CWinApp::GetApplicationRecoveryPingInterval` veya özel bir değere sağlayarak `RegisterWithRestartManager`.  
   
 ##  <a name="getapplicationrestartflags"></a>  CWinApp::GetApplicationRestartFlags  
  Bayrakları için yeniden başlatma Yöneticisi döndürür.  
@@ -679,14 +679,14 @@ virtual DWORD GetApplicationRestartFlags();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeniden başlatma Yöneticisi işaretler. Varsayılan uygulama 0 döndürür.  
+ Yeniden başlatma Yöneticisi işaretler. Varsayılan uygulama, 0 döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeniden başlatma Yöneticisi bayrakları varsayılan uygulaması ile herhangi bir etkisi yoktur. Bunlar, gelecekte kullanılmak üzere sağlanır.  
+ Yeniden başlatma Yöneticisi bayrakları bir varsayılan uygulama etkisi yoktur. Bunlar, gelecekte kullanılmak üzere sağlanır.  
   
- Kullanarak uygulama yeniden başlatma Yöneticisi ile kaydettiğinizde bayraklarını ayarlayın [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager).  
+ Kullanarak uygulama yeniden başlatma Yöneticisi ile kaydettiğinizde bayrakları ayarlanmış [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager).  
   
- Yeniden başlatma Yöneticisi bayrakları için olası değerler şunlardır:  
+ Yeniden başlatma Yöneticisi bayrakları için olası değerler aşağıdaki gibidir:  
   
 - RESTART_NO_CRASH  
   
@@ -697,7 +697,7 @@ virtual DWORD GetApplicationRestartFlags();
 - RESTART_NO_REBOOT  
   
 ##  <a name="getappregistrykey"></a>  CWinApp::GetAppRegistryKey  
- HKEY_CURRENT_USER anahtarını döner\\"Yazılım" \RegistryKey\ProfileName.  
+ HKEY_CURRENT_USER anahtarı döndürür\\"Yazılım" \RegistryKey\ProfileName.  
   
 ```  
 HKEY GetAppRegistryKey(CAtlTransactionManager* pTM = NULL);
@@ -705,42 +705,42 @@ HKEY GetAppRegistryKey(CAtlTransactionManager* pTM = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  *pTM*  
- İşaretçi bir `CAtlTransactionManager` nesnesi.  
+ İşaretçi bir `CAtlTransactionManager` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olursa uygulama anahtarı; bulunmazsa null değerini DÖNDÜRÜR.  
+ İşlev başarılı olursa uygulama anahtarı bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getdatarecoveryhandler"></a>  CWinApp::GetDataRecoveryHandler  
- Veri kurtarma işleyicisi uygulamanın bu örneğini alır.  
+ Uygulamanın bu örneği için veri kurtarma işleyici alır.  
   
 ```  
 virtual CDataRecoveryHandler *GetDataRecoveryHandler();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu örnek uygulama için veri kurtarma işleyici.  
+ Uygulamanın bu örneği için veri kurtarma işleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeniden başlatma Yöneticisi'ni kullanan her uygulamanın bir örneği olmalıdır [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md). Bu sınıf, açık belgeler veya otomatik kaydetmeyi dosyaları izlemekten sorumludur. Davranışını `CDataRecoveryHandler` yeniden başlatma Yöneticisi yapılandırmasına bağlıdır. Daha fazla bilgi için bkz: [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md).  
+ Yeniden başlatma Yöneticisi'ni kullanan her bir uygulamanın bir örneğine sahip olması [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md). Bu sınıf, açık belgeler veya otomatik kaydetmeyi dosyaları izlemekten sorumludur. Davranışını `CDataRecoveryHandler` yeniden başlatma yöneticisinin yapılandırmasına bağlıdır. Daha fazla bilgi için [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md).  
   
- Bu yöntem NULL Windows Vista'dan önceki işletim sistemlerinde döndürür. Yeniden başlatma Yöneticisi Windows Vista'dan önceki işletim sistemlerinde desteklenmiyor.  
+ Bu yöntem, Windows Vista öncesi işletim sistemlerinde NULL değer döndürür. Yeniden başlatma Yöneticisi Windows Vista öncesi işletim sistemlerinde desteklenmiyor.  
   
- Uygulama şu anda bir veri kurtarma işleyicisi yoksa, bu yöntem tane oluşturur ve bir işaretçi döndürür.  
+ Uygulama şu anda veri kurtarma işleyicisi sahip değilse bu yöntem bir tane oluşturur ve bir işaretçi döndürür.  
   
 ##  <a name="getfirstdoctemplateposition"></a>  CWinApp::GetFirstDocTemplatePosition  
- Uygulamayı ilk belge şablonu konumunu alır.  
+ Uygulama ilk belge şablonu konumunu alır.  
   
 ```  
 POSITION GetFirstDocTemplatePosition() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yineleme veya nesne işaretçi alma için kullanılan bir konum değeri; Liste boş ise NULL.  
+ Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; Liste boş ise NULL değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Konum değerini döndürülen çağrıda kullanım [GetNextDocTemplate](#getnextdoctemplate) ilk almak için [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) nesnesi.  
+ Bir çağrıda döndürülen konum değer kullanım [GetNextDocTemplate](#getnextdoctemplate) ilk almak için [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) nesne.  
   
 ##  <a name="gethelpmode"></a>  CWinApp::GetHelpMode  
  Uygulama tarafından kullanılan Yardım türünü alır.  
@@ -753,7 +753,7 @@ AFX_HELP_TYPE GetHelpMode();
  Uygulama tarafından kullanılan Yardım türü. Bkz: [CWinApp::m_eHelpType](#m_ehelptype) daha fazla bilgi için.  
   
 ##  <a name="getnextdoctemplate"></a>  CWinApp::GetNextDocTemplate  
- Belge şablonu tarafından tanımlanan alır *pos*, ardından ayarlar *pos* konum değeri.  
+ Tarafından tanımlanan belge şablonunu alır *pos*, ardından ayarlar *pos* konum değeri.  
   
 ```  
 CDocTemplate* GetNextDocTemplate(POSITION& pos) const;  
@@ -761,17 +761,17 @@ CDocTemplate* GetNextDocTemplate(POSITION& pos) const;
   
 ### <a name="parameters"></a>Parametreler  
  *POS*  
- Önceki bir çağrı tarafından döndürülen bir konum değeri başvuru `GetNextDocTemplate` veya [GetFirstDocTemplatePosition](#getfirstdoctemplateposition). Değer sonraki konumuna bu çağrısı tarafından güncelleştirilir.  
+ Önceki bir çağrı tarafından döndürülen bir konum değeri başvurusu `GetNextDocTemplate` veya [GetFirstDocTemplatePosition](#getfirstdoctemplateposition). Değer, bu çağrı tarafından sonraki konumuna güncelleştirilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) nesnesi.  
+ Bir işaretçi bir [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanabileceğiniz `GetNextDocTemplate` çağrısıyla ilk konum kurarsanız ileriye doğru yineleme döngü `GetFirstDocTemplatePosition`.  
+ Kullanabileceğiniz `GetNextDocTemplate` çağrısıyla ilk konumunu kurarsanız ileriye doğru yineleme döngüsünde `GetFirstDocTemplatePosition`.  
   
- Konum değerini geçerli olduğundan emin olmalısınız. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.  
+ KONUM değeri, geçerli olduğundan emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.  
   
- Alınan belge şablonu son ise kullanılabilir, ardından yeni değeri *pos* NULL olarak ayarlandı.  
+ En son alınan belge şablonunu ise kullanılabilir, ardından yeni değeri *pos* NULL olarak ayarlandı.  
   
 ##  <a name="getprinterdevicedefaults"></a>  CWinApp::GetPrinterDeviceDefaults  
  Bir yazıcıya yazdırma için cihaz bağlamı hazırlamak için bu üye işlevini çağırın.  
@@ -785,16 +785,16 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
  Bir işaretçi bir [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli yazıcı Varsayılanları Windows'dan alır. INI gerektiğinde dosya veya yazdırma kurulumunda kullanıcı tarafından ayarlanan son yazıcı yapılandırmayı kullanır.  
+ Geçerli bir yazıcı varsayılan Windows alır. INI gerektiğinde dosya veya yazdırma kurulumunda bir kullanıcı tarafından ayarlanan son yazıcı yapılandırmasını kullanır.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#40](../../mfc/reference/codesnippet/cpp/cwinapp-class_6.cpp)]  
   
 ##  <a name="getprofilebinary"></a>  CWinApp::GetProfileBinary  
- Uygulamanın kayıt defteri belirtilen bölümü içindeki bir giriş ikili veri almak için bu üye işlevini çağırın veya. INI dosyası.  
+ Uygulamanın kayıt defteri belirtilen bölümü içindeki bir giriş ikili verileri almak için bu üye işlevini çağırın veya. INI dosyası.  
   
 ```  
 BOOL GetProfileBinary(
@@ -806,36 +806,36 @@ BOOL GetProfileBinary(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszSection*  
- Noktaları null ile sonlandırılmış dizeye giriş içeren bölüm belirtir.  
+ Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder.  
   
  *lpszEntry*  
- Değeri alınacak girdisi içeren null ile sonlandırılmış bir dize noktalarına.  
+ Değeri alınacak girdisi içeren bir boş sonlandırılmış dizeye işaret eder.  
   
  *ppData*  
- Veri adresi alacağı bir işaretçi işaret.  
+ Verilerin adresi alacak bir işaretçi işaret eder.  
   
  *pBytes*  
- Verilerin boyutunu (bayt) alacak bir UINT noktalarına.  
+ Veri (bayt cinsinden) boyutunu alacak bir UINT işaret eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye fonksiyonu büyük küçük harfe duyarlı, bu nedenle değil dizelerde *lpszSection* ve *lpszEntry* parametreleri durumda farklı olabilir.  
+ Bu üye işlevi büyük/küçük harfe duyarlı, bu nedenle değil dizelerde *lpszSection* ve *lpszEntry* parametreleri durumda farklı olabilir.  
   
 > [!NOTE]
-> `GetProfileBinary` bir arabellek ayırır ve onun adresini döndürür \* *ppData*. Arabellek kullanarak boşaltma çağıran sorumludur **delete []**.  
+> `GetProfileBinary` bir arabelleği ayırır ve onun adresini döndürür \* *ppData*. Arabellek kullanarak boşaltma için çağıran sorumludur **delete []**.  
   
 > [!IMPORTANT]
->  Bu işlev tarafından döndürülen veri sonlandırıldı mutlaka NULL olmayan ve arayan doğrulama gerçekleştirmeniz gerekir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
+>  Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#41](../../mfc/reference/codesnippet/cpp/cwinapp-class_7.cpp)]  
   
- Ek bir örnek için bkz: [CWinApp::WriteProfileBinary](#writeprofilebinary).  
+ Ek bir örnek için bkz. [CWinApp::WriteProfileBinary](#writeprofilebinary).  
   
 ##  <a name="getprofileint"></a>  CWinApp::GetProfileInt  
- Bir giriş uygulamanın kayıt defteri belirtilen bölümü içindeki tamsayı değerini almak için bu üye işlevini çağırın veya. INI dosyası.  
+ Uygulamanın kayıt defteri belirtilen bölümü içindeki bir giriş bir tamsayı değerini almak için bu üye işlevini çağırın veya. INI dosyası.  
   
 ```  
 UINT GetProfileInt(
@@ -846,32 +846,32 @@ UINT GetProfileInt(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszSection*  
- Noktaları null ile sonlandırılmış dizeye giriş içeren bölüm belirtir.  
+ Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder.  
   
  *lpszEntry*  
- Değeri alınacak girdisi içeren null ile sonlandırılmış bir dize noktalarına.  
+ Değeri alınacak girdisi içeren bir boş sonlandırılmış dizeye işaret eder.  
   
- *nDefault*  
+ *Nvarsayılan*  
  Framework giriş bulamazsanız, döndürülecek varsayılan bir değer belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olursa, belirtilen giriş izleyen dizesinin tamsayı değeri. Dönüş değeri değeri *nDefault* işlevi giriş bulamazsa parametresi. Belirtilen girdiye karşılık gelen değer bir tamsayı değilse dönüş değeri 0'dır.  
+ İşlev başarılı olursa izleyen belirtilen giriş dizesini bir tamsayı değeri. Dönüş değeri değeri *Nvarsayılan* işlev giriş bulamazsa parametresi. Belirtilen girişe karşılık gelen değer bir tamsayı değilse, dönüş değeri 0'dır.  
   
- Bu üye işlevi değeri için onaltılık gösterimini destekler. INI dosyası. İmzalı bir tamsayı aldığınızda değerine atamalısınız bir **int**.  
+ Bu üye işlevi onaltılık gösterim değeri destekler. INI dosyası. İmzalı bir tamsayı aldığınızda, değerde atamalısınız bir **int**.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye fonksiyonu büyük küçük harfe duyarlı, bu nedenle değil dizelerde *lpszSection* ve *lpszEntry* parametreleri durumda farklı olabilir.  
+ Bu üye işlevi büyük/küçük harfe duyarlı, bu nedenle değil dizelerde *lpszSection* ve *lpszEntry* parametreleri durumda farklı olabilir.  
   
 > [!IMPORTANT]
->  Bu işlev tarafından döndürülen veri sonlandırıldı mutlaka NULL olmayan ve arayan doğrulama gerçekleştirmeniz gerekir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
+>  Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#42](../../mfc/reference/codesnippet/cpp/cwinapp-class_8.cpp)]  
   
- Ek bir örnek için bkz: [CWinApp::WriteProfileInt](#writeprofileint).  
+ Ek bir örnek için bkz. [CWinApp::WriteProfileInt](#writeprofileint).  
   
 ##  <a name="getprofilestring"></a>  CWinApp::GetProfileString  
- Uygulamanın kayıt defterinde belirtilen bölüm içerisinde bir girdi ile ilişkili dizesini almak için bu üye işlevini çağırın veya. INI dosyası.  
+ Uygulamanın kayıt defterinde belirtilen bölüm içinde bir girişi ile ilişkili dizeyi almak için bu üye işlevi çağrısı veya. INI dosyası.  
   
 ```  
 CString GetProfileString(
@@ -882,29 +882,29 @@ CString GetProfileString(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszSection*  
- Noktaları null ile sonlandırılmış dizeye giriş içeren bölüm belirtir.  
+ Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder.  
   
  *lpszEntry*  
- İşaret eder, dize alınmasına izin girdisi içeren null ile sonlandırılmış bir dize. Bu değer NULL olmamalıdır.  
+ Alınacak olan dize girdisi içeren bir boş sonlandırılmış dizeye işaret eder. Bu değer NULL olmamalıdır.  
   
  *lpszDefault*  
- Giriş başlatma dosyasında bulunursa belirtilen giriş için varsayılan dize değeri noktalarına.  
+ Giriş başlatma dosyası bulunamazsa belirtilen giriş için varsayılan dize değerini işaret eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dönüş değeri uygulamanın dizesi değeridir. INI dosyası veya *lpszDefault* dize bulunursa. Çerçeve tarafından desteklenen en çok dize uzunluğu _MAX_PATH ' dir. Varsa *lpszDefault* null, dönüş değeri boş bir dizedir.  
+ Uygulamanın dizeden dönüş değeridir. INI dosyası veya *lpszDefault* dize bulunamazsa. Framework tarafından desteklenen maksimum dize uzunluğu _MAX_PATH ' dir. Varsa *lpszDefault* , Null dönüş değeri boş bir dizedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!IMPORTANT]
->  Bu işlev tarafından döndürülen veri sonlandırıldı mutlaka NULL olmayan ve arayan doğrulama gerçekleştirmeniz gerekir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
+>  Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/cpp/cwinapp-class_9.cpp)]  
   
- Örneğin başka bir örnek için bkz [CWinApp::GetProfileInt](#getprofileint).  
+ Başka bir örnek için örneğin bakın [CWinApp::GetProfileInt](#getprofileint).  
   
 ##  <a name="getsectionkey"></a>  CWinApp::GetSectionKey  
- HKEY_CURRENT_USER anahtarını döner\\"Yazılım" \RegistryKey\AppName\lpszSection.  
+ HKEY_CURRENT_USER anahtarı döndürür\\"Yazılım" \RegistryKey\AppName\lpszSection.  
   
 ```  
 HKEY GetSectionKey(
@@ -914,25 +914,25 @@ CAtlTransactionManager* pTM = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszSection*  
- Alınması anahtarın adı.  
+ Alınacağı anahtarın adı.  
   
  *pTM*  
- İşaretçi bir `CAtlTransactionManager` nesnesi.  
+ İşaretçi bir `CAtlTransactionManager` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olursa bölüm anahtarı; bulunmazsa null değerini DÖNDÜRÜR.  
+ İşlev başarılı olursa bölüm anahtarı bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="hideapplication"></a>  CWinApp::HideApplication  
- Açık belgeleri kapatmadan önce bir uygulama gizlemek için bu üye işlevini çağırın.  
+ Açık belgeler kapatmadan önce uygulamanın gizlemek için bu üye işlevini çağırın.  
   
 ```  
 void HideApplication();
 ```  
   
 ##  <a name="htmlhelp"></a>  CWinApp::HtmlHelp  
- HTMLHelp uygulama çağırmak için bu üye işlevini çağırın.  
+ HTMLHelp uygulamasını çağırmak için bu üye işlevini çağırın.  
   
 ```  
 virtual void HtmlHelp(
@@ -945,49 +945,49 @@ virtual void HtmlHelp(
  Ek veri belirtir. Kullanılan değer değerine bağlıdır *nCmd* parametresi.  
   
  *nCmd*  
- İstenen Yardım türünü belirtir. Olası değerler ve nasıl etkilediklerini listesi *dwData* parametresi bkz *uCommand* hakkında HTMLHelp API işlevi Windows SDK'sındaki açıklanan parametresi.  
+ Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz *uCommand* hakkında HTMLHelp API işlevi Windows SDK'sındaki açıklanan parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework de HTMLHelp uygulama çağırmak için bu işlevi çağırır.  
+ Framework de HTMLHelp uygulamasını çağırmak için bu işlevi çağırır.  
   
- Uygulamanızı sonlandırıldığında framework HTMLHelp uygulama otomatik olarak kapatılır.  
+ Uygulamanızı sonlandırıldığında framework HTMLHelp uygulama otomatik olarak kapatılacak.  
   
-##  <a name="initinstance"></a>  CWinApp::InitInstance  
- Windows aynı programın aynı anda çalıştırmak için çok sayıda kopyasını sağlar.  
+##  <a name="initinstance"></a>  Afxenablecontrolcontainer  
+ Windows, birden çok kopyasını aynı anda çalıştırmak için aynı programın sağlar.  
   
 ```  
 virtual BOOL InitInstance();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başlatma başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başlatma başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulama başlatma kavramsal olarak iki bölüme ayrılmıştır: ilk yapılır tek seferlik uygulama başlatma zaman program çalıştırılır ve her çalışan örneği başlatma zaman bir kopyasını ilk kez dahil olmak üzere programı çalıştırır. Framework'ün uyarlamasını `WinMain` bu işlevi çağırır.  
+ Uygulama başlatma kavramsal olarak iki bölümlere ayrılmıştır: ilk işiniz tek seferlik uygulama başlatma süresi program çalıştırılır ve her çalışan örneği başlatma süresi bir kopyasını ilk kez dahil olmak üzere programı çalıştırır. Framework'ün uygulamasını `WinMain` bu işlevi çağırır.  
   
- Geçersiz kılma `InitInstance` her Windows altında çalışan, uygulamanızın yeni bir örneğini başlatılamadı. Genellikle, kılmanız `InitInstance` ana penceresi nesnenizi oluşturduktan ve ayarlamak için `CWinThread::m_pMainWnd` pencereye işaret edecek şekilde veri üyesi. Bu üye işlevi geçersiz kılma ile ilgili daha fazla bilgi için bkz: [CWinApp: uygulama sınıfı](../../mfc/cwinapp-the-application-class.md).  
+ Geçersiz kılma `InitInstance` uygulamanızın altında Windows çalıştıran her yeni örneği başlatmak için. Genellikle, geçersiz kılmanız `InitInstance` , ana pencere nesnesi oluşturmak ve ayarlamak için `CWinThread::m_pMainWnd` pencereye işaret edecek şekilde veri üyesi. Bu üye işlevi geçersiz kılma hakkında daha fazla bilgi için bkz: [CWinApp: uygulama sınıfı](../../mfc/cwinapp-the-application-class.md).  
   
 > [!NOTE]
->  MFC uygulamaları tek iş parçacıklı (STA) başlatılması gerekir. Çağırırsanız [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) içinde `InitInstance` geçersiz kılma, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin. Daha fazla bilgi için bkz: MFC uygulaması olarak bir birden çok iş parçacıklı grup (828643) uygulama başlattığınızda yanıt vermiyor [ http://support.microsoft.com/default.aspxscid=kb; en-us; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).  
+>  MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin. Daha fazla bilgi için bkz: MFC uygulaması olarak bir çok iş parçacıklı grup (828643) uygulamayı başlattığınızda yanıt vermeyi durduran [ http://support.microsoft.com/default.aspxscid=kb; en-us; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCListView#9](../../atl/reference/codesnippet/cpp/cwinapp-class_10.cpp)]  
   
 ##  <a name="istaskbarinteractionenabled"></a>  CWinApp::IsTaskbarInteractionEnabled  
- Windows 7 görev etkileşim etkin olup olmadığını bildirir.  
+ Windows 7 görev etkileşim etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
 ```  
 virtual BOOL IsTaskbarInteractionEnabled();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE değeri döndürür, `EnableTaskbarInteraction` çağrıldı ve Windows 7 veya üstü işletim sistemidir.  
+ Gerekirse TRUE döndürür `EnableTaskbarInteraction` çağrıldıktan ve Windows 7 veya üzeri işletim sistemidir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görev etkileşim MDI uygulama fare işaretçisini uygulama görev çubuğu düğmesi olduğunda görüntülenen ayrı sekmeli küçük resimlerdeki MDI içeriğini görüntüler anlamına gelir.  
+ Görev etkileşim MDI uygulaması resimlerde uygulama görev düğmenin üzerine fare işaretçisi olduğunda görüntülenen ayrı sekmeli MDI içeriğini görüntüler anlamına gelir.  
   
 ##  <a name="loadcursor"></a>  CWinApp::LoadCursor  
- Tarafından adlı imleç kaynak yükler *lpszResourceName* veya tarafından belirtilen *nIDResource* geçerli yürütülebilir dosya.  
+ İmleç kaynak tarafından adlandırılan yükler *lpszResourceName* ya da tarafından belirtilen *nIDResource* geçerli bir yürütülebilir dosya.  
   
 ```  
 HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nIDResource) const;  
@@ -995,24 +995,24 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
   
 ### <a name="parameters"></a>Parametreler  
  *lpszResourceName*  
- İmleç kaynağın adını içeren null ile sonlandırılmış bir dize noktalarına. Kullanabileceğiniz bir `CString` bu bağımsız değişken için.  
+ İmleç kaynağının adını içeren bir boş sonlandırılmış dizeye işaret eder. Kullanabileceğiniz bir `CString` bu bağımsız değişkeni.  
   
  *nIDResource*  
- İmleç kaynak kimliği. Kaynakların listesi için bkz: [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) Windows SDK'sındaki.  
+ İmleç kaynağının kimliği. Kaynakların listesi için bkz. [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa bir imleç için bir tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `LoadCursor` yalnızca, daha önce yüklenmemiş varsa imleci belleğe yükler; Aksi takdirde, mevcut kaynak tanıtıcısı alır.  
+ `LoadCursor` yalnızca, daha önce yüklenmemiş olan, imleç belleğe; Aksi takdirde, mevcut kaynağı işleyicisini alır.  
   
- Kullanım [LoadStandardCursor](#loadstandardcursor) veya [LoadOEMCursor](#loadoemcursor) önceden tanımlanmış Windows imleçler erişmek için üye işlevi.  
+ Kullanım [LoadStandardCursor](#loadstandardcursor) veya [LoadOEMCursor](#loadoemcursor) önceden tanımlanmış bir Windows imleç erişmek için üye işlevi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#44](../../mfc/reference/codesnippet/cpp/cwinapp-class_11.cpp)]  
   
 ##  <a name="loadicon"></a>  CWinApp::LoadIcon  
- Tarafından adlı simgesi Kaynak yükler *lpszResourceName* veya tarafından belirtilen *nIDResource* yürütülebilir dosya.  
+ Tarafından adlandırılan simge kaynağı yükler *lpszResourceName* ya da tarafından belirtilen *nIDResource* yürütülebilir dosya.  
   
 ```  
 HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource) const;  
@@ -1020,21 +1020,21 @@ HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource
   
 ### <a name="parameters"></a>Parametreler  
  *lpszResourceName*  
- Simge kaynağın adını içeren null ile sonlandırılmış bir dize noktalarına. Aynı zamanda bir `CString` bu bağımsız değişken için.  
+ Simge kaynağının adını içeren bir boş sonlandırılmış dizeye işaret eder. Ayrıca bir `CString` bu bağımsız değişkeni.  
   
  *nIDResource*  
- Simge kaynak kimliği sayısı.  
+ Simge kaynağı kimliği sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa bir simge için bir tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
+ Başarılı olursa simge tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `LoadIcon` yalnızca, daha önce yüklenmemiş simgesi yükler; Aksi takdirde, mevcut kaynak tanıtıcısı alır.  
+ `LoadIcon` yalnızca, daha önce yüklenmemiş olan simge yükler; Aksi takdirde, mevcut kaynağı işleyicisini alır.  
   
  Kullanabileceğiniz [LoadStandardIcon](#loadstandardicon) veya [LoadOEMIcon](#loadoemicon) önceden tanımlanmış Windows simgeleri erişmek için üye işlevi.  
   
 > [!NOTE]
->  Bu üye işlevi Win32 API işlev çağrılarını [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), hangi yalnızca yükleyebilirsiniz büyüklüğü uyumlu SM_CXICON ve SM_CYICON sistem ölçüm değerleri için bir simge.  
+>  Bu üye işlevi Win32 API işlevini çağırır [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), hangi yalnızca yükleyebilirsiniz simge boyutu SM_CXICON ve SM_CYICON sistem ölçüm değerleri için uyar.  
   
 ##  <a name="loadoemcursor"></a>  CWinApp::LoadOEMCursor  
  Yükleri Windows imleç kaynak tarafından belirtilen önceden tanımlanmış *nIDCursor*.  
@@ -1045,13 +1045,13 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
   
 ### <a name="parameters"></a>Parametreler  
  *nIDCursor*  
- Bir **OCR_** önceden tanımlanmış bir Windows imleç belirtir sabit tanımlayıcı bildirimi. Bilmeniz gereken `#define OEMRESOURCE` önce `#include \<afxwin.h>` erişmek için **OCR_** WINDOWS sabitler. H.  
+ Bir **OCR_** önceden tanımlanmış bir Windows imleç belirten sabit tanımlayıcısı bildirim. Olmalıdır `#define OEMRESOURCE` önce `#include \<afxwin.h>` erişim kazanmak için **OCR_** Windows sabitler. H  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa bir imleç için bir tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `LoadOEMCursor` veya [LoadStandardCursor](#loadstandardcursor) önceden tanımlanmış Windows imleçler erişmek için üye işlevi.  
+ Kullanım `LoadOEMCursor` veya [LoadStandardCursor](#loadstandardcursor) önceden tanımlanmış bir Windows imleç erişmek için üye işlevi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#45](../../mfc/reference/codesnippet/cpp/cwinapp-class_12.h)]  
@@ -1059,7 +1059,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
  [!code-cpp[NVC_MFCWindowing#46](../../mfc/reference/codesnippet/cpp/cwinapp-class_13.cpp)]  
   
 ##  <a name="loadoemicon"></a>  CWinApp::LoadOEMIcon  
- Yükleri Windows önceden tanımlanmış simge kaynak tarafından belirtilen *nIDIcon*.  
+ Yükleri Windows önceden tanımlanmış simge kaynağı tarafından belirtilen *nIDIcon*.  
   
 ```  
 HICON LoadOEMIcon(UINT nIDIcon) const;  
@@ -1067,10 +1067,10 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
   
 ### <a name="parameters"></a>Parametreler  
  *nIDIcon*  
- Bir **OIC_** önceden tanımlanmış bir Windows simgesi belirtir sabit tanımlayıcı bildirimi. Bilmeniz gereken `#define OEMRESOURCE` önce `#include \<afxwin.h>` erişmek için **OIC_** Windows sabitleri. H.  
+ Bir **OIC_** önceden tanımlanmış bir Windows simge belirten sabit tanımlayıcısı bildirim. Olmalıdır `#define OEMRESOURCE` önce `#include \<afxwin.h>` erişimi **OIC_** Windows sabitler. H  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa bir simge için bir tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
+ Başarılı olursa simge tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `LoadOEMIcon` veya [LoadStandardIcon](#loadstandardicon) önceden tanımlanmış Windows simgeleri erişmek için üye işlevi.  
@@ -1084,43 +1084,43 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
   
 ### <a name="parameters"></a>Parametreler  
  *lpszCursorName*  
- Bir **IDC_** önceden tanımlanmış bir Windows imleç belirtir sabit tanımlayıcı bildirimi. Bu tanımlayıcı, WİNDOWS'da tanımlanır. H. Aşağıdaki liste olası önceden tanımlanmış değerler ve anlamı gösterir *lpszCursorName*:  
+ Bir **IDC_** önceden tanımlanmış bir Windows imleç belirten sabit tanımlayıcısı bildirim. Bu tanımlayıcılar, WİNDOWS'da tanımlanır. H Aşağıdaki liste önceden tanımlanmış değerlerden ve anlamı gösterir *lpszCursorName*:  
   
-- IDC_ARROW standart ok imleç  
+- IDC_ARROW standart ok imleci  
   
-- IDC_IBEAM standart metin ekleme imleç  
+- IDC_IBEAM standart metin ekleme imleci  
   
-- Windows zaman alan bir görevi gerçekleştirirken kullanılan IDC_WAIT kum saati imleç  
+- Windows zaman alan bir görev gerçekleştirdiğinde kullanılan IDC_WAIT kum saati imleç  
   
-- Seçim için IDC_CROSS artı şeklindeki imleci  
+- IDC_CROSS artı imleç seçimi  
   
-- IDC_UPARROW işaret düz yukarı ok  
+- Doğrudan yukarı bakan IDC_UPARROW oku  
   
-- IDC_SIZE artık kullanılmayan ve desteklenmeyen; IDC_SIZEALL kullanın  
+- IDC_SIZE eski ve desteklenmeyen; IDC_SIZEALL kullanın  
   
-- Dört yönlü IDC_SIZEALL A oka. Bir pencereyi yeniden boyutlandırmak için imleç.  
+- IDC_SIZEALL bir dört yönlü oka. Bir pencereyi yeniden boyutlandırmak için imleç.  
   
-- IDC_ICON artık kullanılmayan ve desteklenmeyen. IDC_ARROW kullanın.  
+- IDC_ICON eski ve desteklenmeyen. IDC_ARROW kullanın.  
   
-- Sol üst ve alt sağ uçta olan IDC_SIZENWSE iki başlı ok  
+- Sol ve sağ alt ucu ile IDC_SIZENWSE iki başlı oka  
   
-- Sağ ve alt sol üst uçta olan IDC_SIZENESW iki başlı ok  
+- Sol üst köşedeki sağ ve alt ucu ile IDC_SIZENESW iki başlı oka  
   
-- IDC_SIZEWE yatay iki başlı ok  
+- İki başlı oka IDC_SIZEWE yatay  
   
-- IDC_SIZENS dikey iki başlı ok  
+- İki başlı oka IDC_SIZENS dikey  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa bir imleç için bir tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `LoadStandardCursor` veya [LoadOEMCursor](#loadoemcursor) önceden tanımlanmış Windows imleçler erişmek için üye işlevi.  
+ Kullanım `LoadStandardCursor` veya [LoadOEMCursor](#loadoemcursor) önceden tanımlanmış bir Windows imleç erişmek için üye işlevi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#47](../../mfc/reference/codesnippet/cpp/cwinapp-class_14.cpp)]  
   
 ##  <a name="loadstandardicon"></a>  CWinApp::LoadStandardIcon  
- Yükleri Windows önceden tanımlanmış simge kaynak, *lpszIconName* belirtir.  
+ Yükleri Windows önceden tanımlanmış simge kaynağı, *lpszIconName* belirtir.  
   
 ```  
 HICON LoadStandardIcon(LPCTSTR lpszIconName) const;  
@@ -1128,16 +1128,16 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
   
 ### <a name="parameters"></a>Parametreler  
  *lpszIconName*  
- Önceden tanımlanmış bir Windows simgesi belirten bir bildirim sabit tanımlayıcısı. Bu tanımlayıcı, WİNDOWS'da tanımlanır. H. Olası önceden tanımlanmış değerler ve açıklamalarının listesi için bkz: *lpIconName* parametresinde [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) Windows SDK'sındaki.  
+ Önceden tanımlanmış bir Windows simge belirten bir bildirim sabit tanımlayıcısı. Bu tanımlayıcılar, WİNDOWS'da tanımlanır. H Önceden tanımlanmış değerlerden ve açıklamalarının listesi için bkz. *lpIconName* parametresinde [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa bir simge için bir tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
+ Başarılı olursa simge tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `LoadStandardIcon` veya [LoadOEMIcon](#loadoemicon) önceden tanımlanmış Windows simgeleri erişmek için üye işlevi.  
   
 ##  <a name="loadstdprofilesettings"></a>  CWinApp::LoadStdProfileSettings  
- Bu üye işlevi içinden çağrısı [InitInstance](#initinstance) etkinleştirmek ve en son kullanılan (MRU) dosya listesini yüklemek ve en son durum önizlemek için üye işlevi.  
+ Bu üye işlev içinden çağırmak [InitInstance](#initinstance) etkinleştirmek ve en son kullanılan (MRU) dosya listesi ve en son durumu Önizleme için üye işlevi.  
   
 ```  
 void LoadStdProfileSettings(UINT nMaxMRU = _AFX_MRU_COUNT);
@@ -1148,17 +1148,17 @@ void LoadStdProfileSettings(UINT nMaxMRU = _AFX_MRU_COUNT);
  İzlemek için son kullanılan dosya sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *nMaxMRU* 0 olduğundan, hiçbir MRU Listesi korunur.  
+ Varsa *nMaxMRU* 0 ise, hiçbir MRU Listesi korunur.  
   
 ##  <a name="m_bhelpmode"></a>  CWinApp::m_bHelpMode  
- Uygulama (standart olarak çağrılan SHIFT + F1); Yardım bağlamı modda ise TRUE Aksi takdirde FALSE.  
+ Uygulama (standart olarak çağrılan olan üst karakter + F1); Yardım içeriğini modunda ise TRUE Aksi durumda FALSE.  
   
 ```  
 BOOL m_bHelpMode;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yardım içeriği modunda, imleci bir soru işareti haline gelir ve kullanıcı hakkında ekranı taşıyabilirsiniz. Özel işleme Yardım modundayken uygulamak istiyorsanız, bu bayrak inceleyin. `m_bHelpMode` BOOL türü genel bir değişkendir.  
+ Yardım içeriği modunda, bir soru işareti imleç haline gelir ve kullanıcı hakkında ekranı taşıyabilirsiniz. Özel işleme Yardım modundayken uygulamak istiyorsanız, bu bayrak inceleyin. `m_bHelpMode` BOOL türü genel bir değişkendir.  
   
 ##  <a name="m_dwrestartmanagersupportflags"></a>  CWinApp::m_dwRestartManagerSupportFlags  
  Yeniden başlatma Yöneticisi'ni nasıl davranacağını belirleyen bayrak.  
@@ -1168,24 +1168,24 @@ DWORD m_dwRestartManagerSupportFlags;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeniden başlatma Yöneticisi'ni etkinleştirmek için ayarlanmış `m_dwRestartManagerSupportFlags` istediğiniz davranışı. Aşağıdaki tabloda kullanılabilir bayrakları gösterir.  
+ Yeniden başlatma Yöneticisi'ni etkinleştirmek için `m_dwRestartManagerSupportFlags` istediğiniz davranışı. Aşağıdaki tabloda kullanılabilir bayrakları gösterilmektedir.  
   
 |||  
 |-|-|  
 |Bayrağı|Açıklama|  
-|AFX_RESTART_MANAGER_SUPPORT_RESTART|Uygulamayı kullanarak kayıtlı [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager). Yeniden başlatma Yöneticisi beklenmedik şekilde bulunup bulunmadığını uygulamayı yeniden başlatma için sorumludur.|  
-|-AFX_RESTART_MANAGER_SUPPORT_RECOVERY|Uygulama yeniden başlatma Yöneticisi ile kaydedilir ve uygulama yeniden başlatıldığında yeniden başlatma Yöneticisi Kurtarma geri çağırma işlevini çağırır. Varsayılan kurtarma geri çağırma işlevidir [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|  
-|-AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|Otomatik kaydetme etkinleştirildiğinde ve yeniden başlatma Yöneticisi autosaves tüm açık belgeleri uygulama yeniden başlatıldığında.|  
-|-AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL|Otomatik kaydetme etkinleştirildiğinde ve yeniden başlatma Yöneticisi autosaves düzenli aralıklarla tüm açık belgeleri. Aralık tarafından tanımlanan [CWinApp::m_nAutosaveInterval](#m_nautosaveinterval).|  
-|-AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES|Yeniden başlatma Yöneticisi beklenmeyen bir çıkış uygulamadan yeniden başlatıldıktan sonra önceden açık belgeler açılır. [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md) açık belgelerin listesini depolamak ve bunları geri işler.|  
-|-AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES|Yeniden başlatma Yöneticisi uygulama yeniden başlatıldıktan sonra otomatik olarak kaydedilmiş dosyaların geri yüklemek için kullanıcıya sorar. `CDataRecoveryHandler` Sınıfı kullanıcı sorgular.|  
-|-AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_SUPPORT_RECOVER ve AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES birleşimi.|  
-|-AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES birleşimi.|  
-|-AFX_RESTART_MANAGER_SUPPORT_RESTART_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES birleşimi.|  
+|AFX_RESTART_MANAGER_SUPPORT_RESTART|Uygulamayı kullanarak kayıtlı [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager). Beklenmedik bir şekilde çıkarsa, bir uygulamayı yeniden başlatma için yeniden başlatma Yöneticisi sorumludur.|  
+|-AFX_RESTART_MANAGER_SUPPORT_RECOVERY|Uygulama yeniden başlatma Yöneticisi ile kaydedilir ve uygulama yeniden başlatıldığında, yeniden başlatma Yöneticisi Kurtarma geri çağırma işlevini çağırır. Varsayılan kurtarma geri çağırma işlevidir [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|  
+|-AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|Otomatik kaydetme etkinleştirilmişse ve yeniden başlatma Yöneticisi kapanıyorsa tüm açık belgeleri uygulama yeniden başlatıldığında.|  
+|-AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL|Otomatik kaydetme etkinleştirilmişse ve yeniden başlatma Yöneticisi kapanıyorsa düzenli aralıklarla tüm açık belgeleri. Aralığı tarafından tanımlanan [CWinApp::m_nAutosaveInterval](#m_nautosaveinterval).|  
+|-AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES|Yeniden başlatma Yöneticisi, daha önce açık belgeler beklenmeyen bir çıkış uygulamadan yeniden başlattıktan sonra açılır. [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md) açık belgelerin listesini depolamak ve bunları geri işler.|  
+|-AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES|Yeniden başlatma Yöneticisi uygulama yeniden başlatıldıktan sonra otomatik olarak kaydedilmiş dosyaları geri yükleme için kullanıcıya sorar. `CDataRecoveryHandler` Sınıfı kullanıcı sorgular.|  
+|-AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE|AFX_RESTART_MANAGER_SUPPORT_RESTART AFX_RESTART_MANAGER_SUPPORT_RECOVER ve AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES birleşimi.|  
+|-AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES birleşimi.|  
+|-AFX_RESTART_MANAGER_SUPPORT_RESTART_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES birleşimi.|  
 |-AFX_RESTART_MANAGER_SUPPORT_RECOVERY_ASPECTS|Birleşim ofAFX_RESTART_MANAGER_SUPPORT_RECOVERY, AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES.|  
   
 ##  <a name="m_ehelptype"></a>  CWinApp::m_eHelpType  
- Bu veri üyesi numaralandırılmış türü içinde tanımlanan AFX_HELP_TYPE türüdür `CWinApp` sınıfı.  
+ Bu veri üyesi numaralandırılmış tür içinde tanımlanan AFX_HELP_TYPE türüdür `CWinApp` sınıfı.  
   
 ```  
 AFX_HELP_TYPE m_eHelpType;  
@@ -1201,76 +1201,76 @@ enum AFX_HELP_TYPE {
     };  
 ```  
   
--   HTML Yardımı için uygulamanın Yardım ayarlamak için arama [SetHelpMode](#sethelpmode) ve belirtin `afxHTMLHelp`.  
+-   HTML Yardımı için uygulamanın Yardım ayarlamak için çağrı [SetHelpMode](#sethelpmode) belirtin `afxHTMLHelp`.  
   
--   WinHelp uygulamanın Yardım ayarlamak için arama `SetHelpMode` ve belirtin `afxWinHelp`.  
+-   WinHelp uygulamanın Yardım ayarlamak için çağrı `SetHelpMode` belirtin `afxWinHelp`.  
   
 ##  <a name="m_hinstance"></a>  CWinApp::m_hInstance  
- Karşılık gelen *HINSTANCE* parametresine geçirilen Windows tarafından `WinMain`.  
+ Karşılık gelen *HINSTANCE* parametresi geçirilmesi için Windows tarafından `WinMain`.  
   
 ```  
 HINSTANCE m_hInstance;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_hInstance` Veri üyesi olan Windows altında çalışan uygulamanın geçerli örneği için bir tanıtıcı. Bu genel işlevi tarafından döndürülen [Afxgetınstancehandle](application-information-and-management.md#afxgetinstancehandle). `m_hInstance` tür HINSTANCE genel bir değişkendir.  
+ `m_hInstance` Veri üyesi olan Windows altında çalışan uygulamanın geçerli örneği için bir tanıtıcı. Bu genel işlevin döndürdüğü [Afxgetınstancehandle](application-information-and-management.md#afxgetinstancehandle). `m_hInstance` HINSTANCE türünde genel bir değişkendir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#55](../../mfc/reference/codesnippet/cpp/cwinapp-class_15.cpp)]  
   
 ##  <a name="m_lpcmdline"></a>  CWinApp::m_lpCmdLine  
- Karşılık gelen *lpCmdLine* parametresine geçirilen Windows tarafından `WinMain`.  
+ Karşılık gelen *lpCmdLine* parametresi geçirilmesi için Windows tarafından `WinMain`.  
   
 ```  
 LPTSTR m_lpCmdLine;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Noktaları null ile sonlandırılmış dizeye uygulama için komut satırını belirtir. Kullanım `m_lpCmdLine` uygulama başlatıldığında girilen kullanıcı herhangi bir komut satırı bağımsız değişkeni erişmek için. `m_lpCmdLine` tür LPTSTR genel bir değişkendir.  
+ Uygulama için komut satırını belirtir. boş sonlandırılmış dizeye işaret eder. Kullanım `m_lpCmdLine` herhangi bir komut satırı bağımsız değişkeni, uygulama başlatıldığında girilen kullanıcı erişmek için. `m_lpCmdLine` tür LPTSTR genel bir değişkendir.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#52](../../mfc/reference/codesnippet/cpp/cwinapp-class_16.cpp)]  
   
 ##  <a name="m_nautosaveinterval"></a>  CWinApp::m_nAutosaveInterval  
- Autosaves arasındaki milisaniye cinsinden süre uzunluğu.  
+ Kapanıyorsa arasındaki milisaniye cinsinden süre uzunluğu.  
   
 ```  
 int m_nAutosaveInterval;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirlenen aralıklarla otomatik kaydetme açık belgeler için yeniden başlatma Yöneticisi'ni yapılandırabilirsiniz. Uygulamanızın otomatik kaydetme dosyaları değil varsa, bu parametre bir etkisi yoktur.  
+ Belirli aralıklarla otomatik kaydetme açık belgeler için yeniden başlatma Yöneticisi'ni yapılandırabilirsiniz. Uygulamanız otomatik kaydetme dosyaları değil varsa, bu parametre bir etkisi yoktur.  
   
 ##  <a name="m_ncmdshow"></a>  CWinApp::m_nCmdShow  
- Karşılık gelen *nCmdShow* parametresine geçirilen Windows tarafından `WinMain`.  
+ Karşılık gelen *nCmdShow* parametresi geçirilmesi için Windows tarafından `WinMain`.  
   
 ```  
 int m_nCmdShow;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçmesi `m_nCmdShow` çağırdığınızda bağımsız değişken olarak [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) uygulamanızın ana penceresi. `m_nCmdShow` tür genel bir değişkendir **int**.  
+ Geçirmeniz `m_nCmdShow` çağırdığınızda bir bağımsız değişken olarak [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) uygulamanızın ana penceresi için. `m_nCmdShow` türü genel değişkenidir **int**.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#56](../../mfc/reference/codesnippet/cpp/cwinapp-class_17.cpp)]  
   
 ##  <a name="m_pactivewnd"></a>  CWinApp::m_pActiveWnd  
- Bu veri üyesi, OLE sunucu uygulama etkinleştirilmiş yerinde OLE kapsayıcı uygulamanın ana penceresinde gösteren bir işaretçi depolamak için kullanın.  
+ Bu veri üyesi, OLE sunucusu uygulama etkinleştirildi yerinde OLE kapsayıcı uygulamanın ana penceresi için bir işaretçi depolamak için kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu veri üyesi NULL ise, uygulama yerinde etkin değil.  
   
- Çerçeve penceresi yerinde bir OLE kapsayıcı uygulama tarafından etkinleştirilmiş olduğunda bu üye değişkeni framework ayarlar.  
+ Çerçeve penceresi yerinde bir OLE kapsayıcı uygulama tarafından etkinleştirilmiş olduğunda framework bu üye değişkenini ayarlar.  
   
 ##  <a name="m_pdatarecoveryhandler"></a>  CWinApp::m_pDataRecoveryHandler  
- Uygulama için veri kurtarma işleyicisi işaretçi.  
+ Uygulama için veri kurtarma işleyicisi işaretçisi.  
   
 ```  
 CDataRecoveryHandler* m_pDataRecoveryHandler;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Veri kurtarma işleyicisi uygulamanın izler açık belgeler veya autosaves bunları. Çerçeve veri kurtarma işleyicisi beklenmedik biçimde çıktıktan sonra bir uygulama başlatıldığında otomatik olarak kaydedilmiş dosyaların geri yüklemek için kullanır. Daha fazla bilgi için bkz: [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md).  
+ Bir uygulamanın veri kurtarma işleyicisi izler açık belgeler veya kapanıyorsa bunları. Çerçeve, beklenmedik bir şekilde çıktıktan sonra bir uygulama başlatıldığında otomatik olarak kaydedilmiş dosyaları geri yüklemek için veri kurtarma işleyicisi kullanır. Daha fazla bilgi için [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md).  
   
 ##  <a name="m_pszappname"></a>  CWinApp::m_pszAppName  
  Uygulamanın adını belirtir.  
@@ -1280,12 +1280,12 @@ LPCTSTR m_pszAppName;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulama adı için geçirilen parametre gelebilir [CWinApp](#cwinapp) oluşturucusu, veya için kaynak dizesine, kimliği AFX_IDS_APP_TITLE ile belirtilmezse. Uygulama adı kaynak bulunmazsa, programın gelir. EXE dosya adı.  
+ Uygulama adı için geçirilen parametre gelebilir [CWinApp](#cwinapp) Oluşturucusu veya kaynak dizesi, kimliği AFX_IDS_APP_TITLE ile belirtilmezse. Uygulama adı, kaynak bulunmazsa, programın gelir. EXE dosya adı.  
   
- Genel işlevi tarafından döndürülen [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` tür genel bir değişkendir **const char\***.  
+ Genel işlevin döndürdüğü [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` türü genel değişkenidir **const char\***.  
   
 > [!NOTE]
->  Bir değere atarsanız `m_pszAppName`, dinamik olarak öbek üzerinde ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Birçok kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli işaretçisi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
+>  Bir değer atamanız durumunda `m_pszAppName`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
   
  [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/cpp/cwinapp-class_18.cpp)]  
   
@@ -1293,17 +1293,17 @@ LPCTSTR m_pszAppName;
  [!code-cpp[NVC_MFCWindowing#65](../../mfc/reference/codesnippet/cpp/cwinapp-class_19.cpp)]  
   
 ##  <a name="m_pszexename"></a>  CWinApp::m_pszExeName  
- Uygulamanın uzantısı olmayan bir yürütülebilir dosya adını içerir.  
+ Uzantısız uygulamanın yürütülebilir dosya adını içerir.  
   
 ```  
 LPCTSTR m_pszExeName;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Farklı [m_pszAppName](#m_pszappname), bu ad boşluk içeremez. `m_pszExeName` tür genel bir değişkendir **const char\***.  
+ Farklı [m_pszAppName](#m_pszappname), bu adı boşluk içeremez. `m_pszExeName` türü genel değişkenidir **const char\***.  
   
 > [!NOTE]
->  Bir değere atarsanız `m_pszExeName`, dinamik olarak öbek üzerinde ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Birçok kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli işaretçisi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
+>  Bir değer atamanız durumunda `m_pszExeName`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
   
  [!code-cpp[NVC_MFCWindowing#58](../../mfc/reference/codesnippet/cpp/cwinapp-class_20.cpp)]  
   
@@ -1315,10 +1315,10 @@ LPCTSTR m_pszHelpFilePath;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, framework başlatır `m_pszHelpFilePath` uygulamayla adına ". HLP"eklenir. Yardım dosyasının adını değiştirmek için ayarlayın `m_pszHelpFilePath` istenen Yardım dosyasının tam adını içeren bir dize yönlendirin. Bunu yapmak için uygun bir uygulamanın içinde yerdir [InitInstance](#initinstance) işlevi. `m_pszHelpFilePath` tür genel bir değişkendir **const char\***.  
+ Varsayılan olarak, çerçeve başlatır `m_pszHelpFilePath` uygulama adına ". HLP"eklenir. Yardım dosyası adını değiştirmek için Ayarla `m_pszHelpFilePath` istenen Yardım dosyasının tam adı içeren bir dize için yönlendirin. Bunu yapmak için kullanışlı bir uygulamanın yerdir [InitInstance](#initinstance) işlevi. `m_pszHelpFilePath` türü genel değişkenidir **const char\***.  
   
 > [!NOTE]
->  Bir değere atarsanız `m_pszHelpFilePath`, dinamik olarak öbek üzerinde ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Birçok kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli işaretçisi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
+>  Bir değer atamanız durumunda `m_pszHelpFilePath`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
   
  [!code-cpp[NVC_MFCWindowing#59](../../mfc/reference/codesnippet/cpp/cwinapp-class_21.cpp)]  
   
@@ -1330,26 +1330,26 @@ LPCTSTR m_pszProfileName;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_pszProfileName` tür genel bir değişkendir **const char\***.  
+ `m_pszProfileName` türü genel değişkenidir **const char\***.  
   
 > [!NOTE]
->  Bir değere atarsanız `m_pszProfileName`, dinamik olarak öbek üzerinde ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Birçok kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli işaretçisi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
+>  Bir değer atamanız durumunda `m_pszProfileName`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
   
  [!code-cpp[NVC_MFCWindowing#60](../../mfc/reference/codesnippet/cpp/cwinapp-class_22.cpp)]  
   
 ##  <a name="m_pszregistrykey"></a>  CWinApp::m_pszRegistryKey  
- Kayıt defteri veya INI dosyası uygulama profili ayarları depolandığı belirlemek için kullanılır.  
+ Kayıt defteri veya INI dosyası, uygulama profili ayarları, depolanan belirlemek için kullanılır.  
   
 ```  
 LPCTSTR m_pszRegistryKey;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Normalde, bu veri üyesi salt okunur olarak kabul edilir.  
+ Normalde, bu veri üyesi, salt okunur olarak kabul edilir.  
   
--   Değer bir kayıt defteri anahtarında depolanır. Uygulama profili ayarının adını aşağıdaki kayıt defteri anahtarına eklenir: HKEY_CURRENT_USER/Software/LocalAppWizard-oluşturulan /.  
+-   Değer bir kayıt defteri anahtarında depolanır. Uygulama profili ayarının adını aşağıdaki kayıt defteri anahtarı eklenir: HKEY_CURRENT_USER/yazılım/LocalAppWizard tarafından üretilen /.  
   
- Bir değere atarsanız `m_pszRegistryKey`, dinamik olarak öbek üzerinde ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Birçok kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli işaretçisi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
+ Bir değer atamanız durumunda `m_pszRegistryKey`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:  
   
  [!code-cpp[NVC_MFCWindowing#61](../../mfc/reference/codesnippet/cpp/cwinapp-class_23.cpp)]  
   
@@ -1363,19 +1363,19 @@ LPCTSTR m_pszAppID;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="oncontexthelp"></a>  CWinApp::OnContextHelp  
- SHIFT + F1 Yardımı uygulama içinde işler.  
+ SHIFT + F1 Yardım uygulama içinde işler.  
   
 ```  
 afx_msg void OnContextHelp();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eklemelisiniz bir `ON_COMMAND( ID_CONTEXT_HELP, OnContextHelp )` deyimi, `CWinApp` sınıfı ileti eşlemesi ve ayrıca Hızlandırıcı tablosu girişini, genellikle SHIFT + bu üye işlevini etkinleştirmek için F1, ekleyin.  
+ Eklemelisiniz bir `ON_COMMAND( ID_CONTEXT_HELP, OnContextHelp )` deyimi, `CWinApp` sınıf ileti eşlemesi ve Hızlandırıcı tablosu girişini, genellikle üst karakter + bu üye işlevini etkinleştirmek için F1, ayrıca ekleyin.  
   
- `OnContextHelp` Yardım modu uygulamaya koyar. İmleç değişiklikleri bir ok ve soru işareti ve kullanıcı fare işaretçisini ve iletişim kutusu, pencere, menü veya komut düğmesi seçmek için sol fare düğmesine basın. Bu üye işlevi imleç altındaki Nesne Yardım bağlamını alır ve bu Yardım bağlam Windows işleviyle WinHelp çağırır.  
+ `OnContextHelp` Yardım modu uygulamaya koyar. İmleç değişiklikleri bir ok, soru işareti ve kullanıcının fare işaretçisini ve bir iletişim kutusu, pencere, menü ya da komut düğmesi seçmek için farenin sol düğmesine basın. Bu üye işlevi, imleç altındaki Nesne Yardım içeriğini alır ve bu Yardım bağlamı ile Windows WinHelp işlevini çağırır.  
   
 ##  <a name="onddecommand"></a>  CWinApp::OnDDECommand  
- Ana çerçeve penceresi bir DDE aldığında çerçevesi tarafından çağrılır ileti yürütün.  
+ Ana çerçeve penceresine DDE aldığında framework tarafından çağırılır. ileti yürütün.  
   
 ```  
 virtual BOOL OnDDECommand(LPTSTR lpszCommand);
@@ -1383,13 +1383,13 @@ virtual BOOL OnDDECommand(LPTSTR lpszCommand);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszCommand*  
- Uygulama tarafından alınan DDE komut dizesi noktalarına.  
+ Uygulama tarafından alınan DDE komut dizesi işaret eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Komut işleniyorsa sıfır olmayan; Aksi takdirde 0.  
+ Komut işlenen olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama komutu bir belgeyi açmak için bir istek varsa, belirtilen belge açılır olup olmadığını denetler ve. Kullanıcı bir veri dosyası tıklattığında Windows Dosya Yöneticisi gibi DDE komutu dizeleri genellikle gönderir. Geçersiz kılma diğer DDE işlemek için bu işlev yazdırmak için komutu gibi komutları yürütün.  
+ Varsayılan uygulama, komutu bir belgeyi açmak için bir istek ve bu durumda, belirtilen belge açılır olup olmadığını denetler. Kullanıcı bir veri dosyası tıkladığında Windows Dosya Yöneticisi gibi DDE komut dizeleri genellikle gönderir. Geçersiz kılma diğer DDE işlemek için bu işlevi yazdırmak için komutu gibi komutları yürütün.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#48](../../mfc/reference/codesnippet/cpp/cwinapp-class_24.cpp)]  
@@ -1402,9 +1402,9 @@ afx_msg void OnFileNew();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eklemelisiniz bir `ON_COMMAND( ID_FILE_NEW, OnFileNew )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Etkinleştirilirse, bu işlev dosya yeni komutu yürütme işler.  
+ Eklemelisiniz bir `ON_COMMAND( ID_FILE_NEW, OnFileNew )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Etkinleştirilirse, bu işlev, dosya yeni komutunun yürütülmesi işler.  
   
- Bkz: [Teknik Not 22](../../mfc/tn022-standard-commands-implementation.md) varsayılan davranışını ve bu üye işlevi geçersiz kılma konusunda rehberlik hakkında bilgi için.  
+ Bkz: [Teknik Not 22](../../mfc/tn022-standard-commands-implementation.md) varsayılan davranışı ve bu üye işlevi geçersiz kılma hakkında yönergeler hakkında bilgi için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]  
@@ -1419,9 +1419,9 @@ afx_msg void OnFileOpen();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eklemelisiniz bir `ON_COMMAND( ID_FILE_OPEN, OnFileOpen )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Etkinleştirilirse, bu işlev Dosya Aç komutu yürütme işler.  
+ Eklemelisiniz bir `ON_COMMAND( ID_FILE_OPEN, OnFileOpen )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Etkinleştirilirse, bu işlev, Dosya Aç komutunun yürütülmesi işler.  
   
- Varsayılan davranışı hakkında bilgi ve bu üye işlevi geçersiz kılmak nasıl hakkında yönergeler için bkz: [Teknik Not 22](../../mfc/tn022-standard-commands-implementation.md).  
+ Varsayılan davranış hakkında bilgi ve bu üye işlevi geçersiz kılma hakkında yönergeler için bkz: [Teknik Not 22](../../mfc/tn022-standard-commands-implementation.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]  
@@ -1436,9 +1436,9 @@ afx_msg void OnFilePrintSetup();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eklemelisiniz bir `ON_COMMAND( ID_FILE_PRINT_SETUP, OnFilePrintSetup )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Etkinleştirilirse, bu işlev dosya Yazdır komutu yürütme işler.  
+ Eklemelisiniz bir `ON_COMMAND( ID_FILE_PRINT_SETUP, OnFilePrintSetup )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Etkinleştirilirse, bu işlev dosya yazdırma komutun yürütülmesi işler.  
   
- Varsayılan davranışı hakkında bilgi ve bu üye işlevi geçersiz kılmak nasıl hakkında yönergeler için bkz: [Teknik Not 22](../../mfc/tn022-standard-commands-implementation.md).  
+ Varsayılan davranış hakkında bilgi ve bu üye işlevi geçersiz kılma hakkında yönergeler için bkz: [Teknik Not 22](../../mfc/tn022-standard-commands-implementation.md).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]  
@@ -1455,11 +1455,11 @@ afx_msg void OnHelp();
 ### <a name="remarks"></a>Açıklamalar  
  Genellikle bir kısayol tuşu giriş için F1 tuşuna ekleyeceksiniz. Yalnızca bir kural, bir gereksinim F1 tuşuna etkinleştirmektir.  
   
- Eklemelisiniz bir `ON_COMMAND( ID_HELP, OnHelp )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Kullanıcı F1 tuşuna bastığında etkinleştirilirse, çerçevesi tarafından çağrılır.  
+ Eklemelisiniz bir `ON_COMMAND( ID_HELP, OnHelp )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Kullanıcı F1 tuşuna bastığında etkinleştirildiğinde framework tarafından çağırılır.  
   
- Bu ileti işleyicisi işlevi varsayılan uygulaması geçerli pencere, iletişim kutusu veya menü öğesi karşılık gelir ve WINHELP çağrıları Yardım bağlamı belirler. EXE. Bağlam şu anda kullanılabilir durumdaysa, işlevi varsayılan bağlamını kullanır.  
+ Bu ileti işleyicisi işlevin varsayılan uygulama, Yardım bağlamında geçerli pencere, iletişim kutusu veya menü öğesi için karşılık gelen ve ardından WINHELP çağıran belirler. EXE. Şu anda kullanılabilir içeriği yok ise, işlev varsayılan bağlamı kullanır.  
   
- Pencere, iletişim kutusu, menü öğesi veya odağa sahip araç çubuğu düğmesi dışında Yardım bağlamı için bir şeyler ayarlamak için bu üye işlevi geçersiz kılar. Çağrı `WinHelp` istenen ile içerik kimliğini Yardım  
+ Pencere, iletişim kutusu, menü öğesi veya o anda odağı içeren bir araç çubuğu düğmesi dışında Yardım bağlamı için bir şey ayarlamak için bu üye işlevi geçersiz kılar. Çağrı `WinHelp` istenen Yardım içerik kimliği  
   
 ##  <a name="onhelpfinder"></a>  CWinApp::OnHelpFinder  
  ID_HELP_FINDER ve ıd_default_help komutları işler.  
@@ -1469,17 +1469,17 @@ afx_msg void OnHelpFinder();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eklemelisiniz bir `ON_COMMAND( ID_HELP_FINDER, OnHelpFinder )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Kullanıcı, uygulamanızın çağrılacak Yardım Bulucu komutu seçtiğinde etkinleştirilirse, framework bu ileti işleyicisi işlevi çağırır `WinHelp` standart **HELP_FINDER** konu.  
+ Eklemelisiniz bir `ON_COMMAND( ID_HELP_FINDER, OnHelpFinder )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Uygulamanızın kullanıcı çağrılacak yardımcı Bulucu komutu seçtiğinde etkinleştirilirse, framework bu ileti işleyicisi işlevini çağıran `WinHelp` standart **HELP_FINDER** konu.  
   
 ##  <a name="onhelpindex"></a>  CWinApp::OnHelpIndex  
- Id_help_ındex komutu işler ve varsayılan Yardım konusunun sağlar.  
+ Id_help_ındex komutu işleyen ve varsayılan Yardım konusunun sağlar.  
   
 ```  
 afx_msg void OnHelpIndex();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eklemelisiniz bir `ON_COMMAND( ID_HELP_INDEX, OnHelpIndex )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Kullanıcı, uygulamanızın çağrılacak Yardım dizini komutu seçtiğinde etkinleştirilirse, framework bu ileti işleyicisi işlevi çağırır `WinHelp` standart **HELP_INDEX** konu.  
+ Eklemelisiniz bir `ON_COMMAND( ID_HELP_INDEX, OnHelpIndex )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Uygulamanızın kullanıcı çağrılacak Yardım dizin komutu seçtiğinde etkinleştirilirse, framework bu ileti işleyicisi işlevini çağıran `WinHelp` standart **HELP_INDEX** konu.  
   
 ##  <a name="onhelpusing"></a>  CWinApp::OnHelpUsing  
  Id_help_usıng komutu işler.  
@@ -1489,10 +1489,10 @@ afx_msg void OnHelpUsing();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Eklemelisiniz bir `ON_COMMAND( ID_HELP_USING, OnHelpUsing )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Kullanıcı, uygulamanızın çağırmak için Yardım'ı kullanarak komutunu seçtiğinde framework bu ileti işleyicisi işlevi çağırır `WinHelp` standart uygulama **HELP_HELPONHELP** konu.  
+ Eklemelisiniz bir `ON_COMMAND( ID_HELP_USING, OnHelpUsing )` deyimi, `CWinApp` bu üye işlevini etkinleştirmek için ileti eşlemesi sınıfı. Uygulamanızın kullanıcı çağırmak için Yardım'ı kullanarak komutu seçtiğinde framework bu ileti işleyicisi işlevini çağıran `WinHelp` standart uygulama **HELP_HELPONHELP** konu.  
   
 ##  <a name="onidle"></a>  CWinApp::OnIdle  
- Boşta kalma süresi işlemini gerçekleştirmek için bu üye işlevi geçersiz kılar.  
+ Boşta kalma süresi işleme gerçekleştirmek için bu üye işlevini geçersiz kılar.  
   
 ```  
 virtual BOOL OnIdle(LONG lCount);
@@ -1500,35 +1500,35 @@ virtual BOOL OnIdle(LONG lCount);
   
 ### <a name="parameters"></a>Parametreler  
  *lCount*  
- Bir sayaç artırılır her zaman `OnIdle` uygulamanın ileti sırası boş olduğunda çağrılır. Bu sayı, yeni bir ileti işlenen her zaman 0 olarak sıfırlanır. Kullanabileceğiniz *lCount* uygulama işlenirken boşta bir ileti olmadan göreli süreyi belirlemek için parametre.  
+ Her bir sayaç artırılır `OnIdle` uygulamanın ileti kuyruğu boş olduğunda çağrılır. Bu sayı, yeni bir ileti işlendiği her zaman 0 olarak sıfırlanır. Kullanabileceğiniz *lCount* göreli uygulama işlenirken boş bir ileti olmadan sürenin uzunluğunu belirlemek için parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Daha fazla boşta işleme süresi almak için sıfır olmayan; Daha fazla boşta kalma süresi gerekirse 0.  
+ Daha fazla boşta işleme süresi almak için sıfır olmayan; Daha fazla boşta kalma süresi gerekliyse 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `OnIdle` uygulamanın ileti sırası boş olduğunda varsayılan ileti döngüde adı verilir. Boşta işleyici görevler kendi arka plan çağırmak için geçersiz kılma kullanın.  
+ `OnIdle` Varsayılan ileti döngüsü içinde uygulamanın ileti kuyruğu boş olduğunda çağrılır. Boşta işleyici görevler kendi arka plan çağırmak için geçersiz kılma kullanın.  
   
- `OnIdle` Boşta işleme zaman gerekli olduğunu göstermek için 0 değerini döndürmelidir. *LCount* parametresi, her zaman artırılır `OnIdle` ileti sırası boş ve yeni bir ileti işlenir her zaman 0 olarak sıfırlar olduğunda çağrılır. Bu sayısına göre farklı boşta yordamları çağırabilirsiniz.  
+ `OnIdle` boş kalma işleme süresi gerekli olduğunu belirtmek için 0 döndürmelidir. *LCount* parametresi her zaman artırılır `OnIdle` ileti kuyruğu boş ve yeni bir ileti işlendiği her zaman 0 değerine Sıfırlanan çağrılır. Bu sayısına göre farklı boşta yordamları çağırabilirsiniz.  
   
- Boşta döngü işleme özetlenmektedir:  
+ Boşta çevrim işleme özetlenmektedir:  
   
-1.  Microsoft Foundation Class Kitaplığı ileti döngüde ileti sırası denetler ve bekleyen iletiler Hayır bulur, çağıran `OnIdle` kaynakları 0 olarak ve uygulama nesnesi için *lCount* bağımsız değişkeni.  
+1.  Microsoft Foundation Class Kitaplığı'ndaki ileti döngüsü ileti sırasını denetler ve iletileri yok bulur, çağrı `OnIdle` uygulama nesnesi ve kaynakları 0 olarak *lCount* bağımsız değişken.  
   
-2. `OnIdle` bir işlem gerçekleştirir ve belirtmek için sıfır olmayan bir değer çağrılabilir yeniden yapmak için döndürür başka bir işleme.  
+2. `OnIdle` Bazı işleme gerçekleştirir ve belirtmek için sıfır olmayan bir değer çağrılabilir yeniden yapmak için döndürür. daha fazla işleme.  
   
-3.  İleti döngüsü ileti sırası yeniden denetler. Hiçbir ileti bekleyen yoksa çağırır `OnIdle` yeniden artırma *lCount* bağımsız değişkeni.  
+3.  İleti kuyruğuna bir ileti döngüsü yeniden denetler. İleti bekleyen ise çağırdığı `OnIdle` yeniden artan *lCount* bağımsız değişken.  
   
-4.  Sonuç olarak, `OnIdle` tüm boşta görevlerinin işlemeyi tamamladıktan ve 0 döndürür. Bu arama durdurmak için ileti döngüsü söyler `OnIdle` sonraki iletiyi ileti kuyruğundan alınana kadar bu noktada boşta döngü 0 olarak ayarlayın bağımsız değişkeni ile yeniden başlatır.  
+4.  Sonuç olarak, `OnIdle` boşta tüm görevleri işlemeyi tamamladığında ve 0 döndürür. Bu çağırma durdurmak için ileti döngüsü bildirir `OnIdle` sonraki iletiyi ileti sırasından alınana kadar bu noktada boşta döngü bağımsız değişkeni 0 olarak belirlenmiş ile yeniden başlatır.  
   
- Uzun görevleri sırasında gerçekleştirmeyin `OnIdle` uygulamanızı kadar kullanıcı girişi işleyemediği için `OnIdle` döndürür.  
+ Uzun süren görevleri sırasında gerçekleştirmeyin `OnIdle` uygulamanızın kullanıcı girişi kadar işleyemediği `OnIdle` döndürür.  
   
 > [!NOTE]
->  Varsayılan uygulaması `OnIdle` güncelleştirmeleri komutu menü öğeleri ve araç çubuğu düğmeleri gibi kullanıcı arabirimi nesneleri ve iç veri yapısına cleanup gerçekleştirir. Bu nedenle, geçersiz kılarsanız `OnIdle`, çağırmalısınız `CWinApp::OnIdle` ile `lCount` geçersiz kılınan sürümünüzde. Tüm temel sınıf boşta işleme ilk çağrı (diğer bir deyişle, temel sınıf kadar `OnIdle` 0 döndürür). Taban sınıfı işlem tamamlanmadan önce iş gerçekleştirmeniz gerekiyorsa, uygun seçmek için temel sınıf uygulamasını gözden *lCount* işleriniz için sırasında.  
+>  Varsayılan uygulaması `OnIdle` güncelleştirmeleri komutunu menü öğeleri ve araç çubuğu düğmeleri gibi kullanıcı arabirimi nesneleri ve iç veri yapısı temizleme gerçekleştirir. Bu nedenle, kılarsanız `OnIdle`, çağırmalısınız `CWinApp::OnIdle` ile `lCount` geçersiz kılınan sürümünüzde. Tüm taban sınıfı boşta işleme çağırın (diğer bir deyişle, temel sınıf kadar `OnIdle` 0 döndürür). Temel sınıf işlem tamamlanmadan önce iş gerçekleştirmeniz gerekiyorsa, uygun seçmek için temel sınıf uygulamasını gözden *lCount* sırasında iş yapmak.  
   
- İstemiyorsanız, `OnIdle` ileti kuyruğundan alınan bir ileti olduğunda çağrılacak, kılabilirsiniz [CWinThreadIsIdleMessage](../../mfc/reference/cwinthread-class.md#isidlemessage). Bir uygulama çok kısa bir süre ölçer ayarladıysanız ya da sistem WM_SYSTIMER ileti sonra gönderiyorsa `OnIdle` sürekli olarak adlandırılır ve performansı düşebilir.  
+ İstemiyorsanız, `OnIdle` ileti kuyruğundan alınan bir ileti olduğunda çağrılacak, kılabilirsiniz [CWinThreadIsIdleMessage](../../mfc/reference/cwinthread-class.md#isidlemessage). Uygulamanın çok kısa bir zamanlayıcı ayarlarsanız ya da sistem sonra WM_SYSTIMER iletisi göndererek `OnIdle` sürekli olarak adlandırılır ve performansı düşebilir.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki iki nasıl kullanılacağını örnekler `OnIdle`. İlk örnek kullanarak iki boşta görevleri işler *lCount* görevleri önceliğini belirlemek için bağımsız değişken. Yüksek öncelikli ilk görevdir ve mümkün olduğunca yapmalısınız. İkinci görev daha az önemlidir ve yalnızca kullanıcı girişi uzun bir duraklama olduğunda yapılması gerekir. Temel sınıf sürümü çağrısı Not `OnIdle`. İkinci örnek boşta görevlerinin farklı önceliklere sahip bir grup yönetir.  
+ Aşağıdaki iki örnek nasıl kullanılacağını göstermek `OnIdle`. İlk örnek kullanarak iki boşta görevleri işler *lCount* görevleri önceliğini belirlemek için bağımsız değişken. Yüksek öncelikli ilk görevdir ve mümkün olduğunca yapmanız gerekir. İkinci görev, daha az önemlidir ve yalnızca kullanıcı girişi, uzun bir duraklama olduğunda yapılması gerekir. Temel sınıf sürümü çağrısı Not `OnIdle`. İkinci örnek birtakım farklı önceliklere sahip boşta görevlerini yönetir.  
   
  [!code-cpp[NVC_MFCWindowing#51](../../mfc/reference/codesnippet/cpp/cwinapp-class_27.cpp)]  
   
@@ -1546,19 +1546,19 @@ BOOL bAddToMRU = TRUE);
  Açılması için dosyanın adı.  
   
  [in] *bAddToMRU*  
- TRUE, belgenin en son dosyalardan biri olduğunu gösterir; FALSE belgenin en son dosyalardan biri olmadığını gösterir.  
+ Belgenin en son dosyaları biri TRUE gösterir; FALSE, belge en son dosyalardan biri değil gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir `CDocument` başarılı; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu ada sahip bir belge zaten açıksa, bu belgede ilk çerçeve penceresi odağı alır. Bir uygulama birden çok belge şablonu destekliyorsa, çerçeve dosya adı uzantısı belge yüklemeye için uygun belge şablonu bulmak için kullanır. Başarılı olursa, belge şablonu sonra bir çerçeve penceresi ve belge için görünüm oluşturur.  
+ Bu ada sahip bir belge zaten açıksa, bu belgeyi içeren ilk çerçeve penceresinde odağı alırsınız. Bir uygulama birden çok belge şablonu destekliyorsa, framework belge denemek için uygun bir belge şablonu bulmak için dosya adı uzantısını kullanır. Başarılı olursa, belge şablonunu sonra bir çerçeve penceresi ve belge görünümü oluşturur.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#52](../../mfc/reference/codesnippet/cpp/cwinapp-class_16.cpp)]  
   
 ##  <a name="parsecommandline"></a>  CWinApp::ParseCommandLine  
- Komut satırında ayrıştırma ve parametreleri bir seferde bir çok göndermek için bu üye işlevini çağırın [CCommandLineInfo::ParseParam](../../mfc/reference/ccommandlineinfo-class.md#parseparam).  
+ Komut satırını Ayrıştır ve parametreleri teker teker çok göndermek için bu üye işlevi çağrısı [CCommandLineInfo::ParseParam](../../mfc/reference/ccommandlineinfo-class.md#parseparam).  
   
 ```  
 void ParseCommandLine(CCommandLineInfo& rCmdInfo);
@@ -1566,25 +1566,25 @@ void ParseCommandLine(CCommandLineInfo& rCmdInfo);
   
 ### <a name="parameters"></a>Parametreler  
  *rCmdInfo*  
- Bir başvuru bir [CCommandLineInfo](../../mfc/reference/ccommandlineinfo-class.md) nesnesi.  
+ Bir başvuru bir [Ccommandlineınfo](../../mfc/reference/ccommandlineinfo-class.md) nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulama Sihirbazı'nı kullanarak yeni bir MFC projesine başlattığınızda, Uygulama Sihirbazı'nı yerel bir örneğini oluşturacak `CCommandLineInfo`ve ardından arama `ProcessShellCommand` ve `ParseCommandLine` içinde [InitInstance](#initinstance) üye işlevi. Bir komut satırı aşağıda açıklanan yol aşağıdaki gibidir:  
+ Uygulama Sihirbazı'nı kullanarak yeni bir MFC projesi başlattığınızda, Uygulama Sihirbazı'nı yerel bir örneğini oluşturur `CCommandLineInfo`ve sonra çağrı `ProcessShellCommand` ve `ParseCommandLine` içinde [InitInstance](#initinstance) üye işlevi. Bir komut satırı aşağıda açıklanan yol aşağıdaki gibidir:  
   
-1.  Oluşturulmakta sonra `InitInstance`, `CCommandLineInfo` nesne iletilir `ParseCommandLine`.  
+1.  Oluşturulmakta sonra `InitInstance`, `CCommandLineInfo` nesnesi `ParseCommandLine`.  
   
-2. `ParseCommandLine` Daha sonra çağırır `CCommandLineInfo::ParseParam` sürekli olarak, her parametre için bir kez.  
+2. `ParseCommandLine` Daha sonra çağırır `CCommandLineInfo::ParseParam` art arda, her parametre için bir kez.  
   
-3. `ParseParam` doldurur `CCommandLineInfo` sonra geçirilen nesne [ProcessShellCommand](#processshellcommand).  
+3. `ParseParam` doldurur `CCommandLineInfo` ardından geçirilen nesne [ProcessShellCommand](#processshellcommand).  
   
 4. `ProcessShellCommand` komut satırı bağımsız değişkenleri ve bayrakları işler.  
   
- Çağırabilirsiniz Not `ParseCommandLine` gerektiği gibi doğrudan.  
+ Çağırabilirsiniz Not `ParseCommandLine` doğrudan gerektiğinde.  
   
  Komut satırı bayrakları açıklaması için bkz: [CCommandLineInfo::m_nShellCommand](../../mfc/reference/ccommandlineinfo-class.md#m_nshellcommand).  
   
 ##  <a name="pretranslatemessage"></a>  CWinApp::PreTranslateMessage  
- Windows işlevleri gönderilir önce penceresi iletilerine filtre uygulamak için bu işlevi geçersiz kılma [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) varsayılan uygulama Hızlandırıcı tuşu gerçekleştirir çağırmanız gerekir böylece çeviri `CWinApp::PreTranslateMessage` geçersiz kılınan sürümünüzde üye işlevi.  
+ Windows işlevleri için dağıtılmadan önce Filtre pencere iletileri için bu işlevi geçersiz kılma [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) kısayol tuşu varsayılan uygulama gerçekleştirir çağırmanız gerekir böylece çeviri `CWinApp::PreTranslateMessage` geçersiz kılınan sürümünüzde üye işlevi.  
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1592,13 +1592,13 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
   
 ### <a name="parameters"></a>Parametreler  
  *pMsg*  
- Bir işaretçi bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için ileti içeren yapısı.  
+ Bir işaretçi bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için bir ileti içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İleti tam işlenmiş, sıfır olmayan `PreTranslateMessage` ve daha fazla işlenmesi gerektiğini değil. İleti normal şekilde işlenmesi, sıfır.  
+ İleti tam olarak işlendiği olursa sıfır dışı `PreTranslateMessage` ve daha fazla işlenmemesi. İleti normal yolla işleneceğini olursa sıfır.  
   
 ##  <a name="processmessagefilter"></a>  CWinApp::ProcessMessageFilter  
- Framework'ün kanca işlevini filtre ve belirli Windows iletilerini yanıtlamak için bu üye işlevi çağırır.  
+ Bu üye işlevi, belirli Windows iletilere yanıt verir ve filtre framework'ün kanca işlevini çağırır.  
   
 ```  
 virtual BOOL ProcessMessageFilter(
@@ -1608,21 +1608,21 @@ virtual BOOL ProcessMessageFilter(
   
 ### <a name="parameters"></a>Parametreler  
  *Kod*  
- Kanca kod belirtir. Bu üye işlev kodunu nasıl işleneceğini belirlemek üzere kullanır. *lpMsg.*  
+ Kanca kodu belirtir. Bu üye işlevi kod nasıl işleneceğini belirlemek için kullanır. *lpMsg.*  
   
  *lpMsg*  
- Windows için bir işaretçi [MSG](../../mfc/reference/msg-structure1.md) yapısı.  
+ Bir Windows işaretçisi [MSG](../../mfc/reference/msg-structure1.md) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İleti işleniyorsa sıfır olmayan; Aksi takdirde 0.  
+ İleti işleme olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulamanın normal ileti gönderilmeden önce olayları kanca işlevini işler işleniyor.  
+ Uygulamanın normal ileti gönderilmeden önce olayları bir kanca işlevini işler işleme.  
   
- Bu gelişmiş özellik geçersiz kılarsanız framework'ün korumak için temel sınıf sürüm çağırdığınızdan emin olun işleme bağlayın.  
+ Bu gelişmiş özellik geçersiz kılarsanız, temel sınıf sürümü, framework'ün korumak için çağrılacak emin olun. işlem bağlama.  
   
 ##  <a name="processshellcommand"></a>  CWinApp::ProcessShellCommand  
- Bu üye fonksiyonu tarafından çağrılır [InitInstance](#initinstance) gelen geçirilen parametreler kabul etmek için `CCommandLineInfo` tarafından tanımlanan nesnesi *rCmdInfo*ve belirtilen eylemi gerçekleştirir.  
+ Bu üye işlevi çağıran [InitInstance](#initinstance) gelen geçirilen parametreler kabul etmek için `CCommandLineInfo` tarafından tanımlanan nesne *rCmdInfo*ve belirtilen eylemi gerçekleştirir.  
   
 ```  
 BOOL ProcessShellCommand(CCommandLineInfo& rCmdInfo);
@@ -1630,23 +1630,23 @@ BOOL ProcessShellCommand(CCommandLineInfo& rCmdInfo);
   
 ### <a name="parameters"></a>Parametreler  
  *rCmdInfo*  
- Bir başvuru bir [CCommandLineInfo](../../mfc/reference/ccommandlineinfo-class.md) nesnesi.  
+ Bir başvuru bir [Ccommandlineınfo](../../mfc/reference/ccommandlineinfo-class.md) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Kabuk komutu başarılı bir şekilde işlediğinde sıfır olmayan. 0, FALSE iken dönerseniz [InitInstance](#initinstance).  
+ Kabuk komutu başarıyla işlenen olursa sıfır dışı. 0, FALSE döndürürse [InitInstance](#initinstance).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulama Sihirbazı'nı kullanarak yeni bir MFC projesine başlattığınızda, Uygulama Sihirbazı'nı yerel bir örneğini oluşturacak `CCommandLineInfo`ve ardından arama `ProcessShellCommand` ve [ParseCommandLine](#parsecommandline) içinde `InitInstance` üye işlevi. Bir komut satırı aşağıda açıklanan yol aşağıdaki gibidir:  
+ Uygulama Sihirbazı'nı kullanarak yeni bir MFC projesi başlattığınızda, Uygulama Sihirbazı'nı yerel bir örneğini oluşturur `CCommandLineInfo`ve sonra çağrı `ProcessShellCommand` ve [ParseCommandLine](#parsecommandline) içinde `InitInstance` üye işlevi. Bir komut satırı aşağıda açıklanan yol aşağıdaki gibidir:  
   
-1.  Oluşturulmakta sonra `InitInstance`, `CCommandLineInfo` nesne iletilir `ParseCommandLine`.  
+1.  Oluşturulmakta sonra `InitInstance`, `CCommandLineInfo` nesnesi `ParseCommandLine`.  
   
-2. `ParseCommandLine` Daha sonra çağırır [CCommandLineInfo::ParseParam](../../mfc/reference/ccommandlineinfo-class.md#parseparam) sürekli olarak, her parametre için bir kez.  
+2. `ParseCommandLine` Daha sonra çağırır [CCommandLineInfo::ParseParam](../../mfc/reference/ccommandlineinfo-class.md#parseparam) art arda, her parametre için bir kez.  
   
-3. `ParseParam` doldurur `CCommandLineInfo` sonra geçirilen nesne `ProcessShellCommand`.  
+3. `ParseParam` doldurur `CCommandLineInfo` ardından geçirilen nesne `ProcessShellCommand`.  
   
 4. `ProcessShellCommand` komut satırı bağımsız değişkenleri ve bayrakları işler.  
   
- Veri üyeleri `CCommandLineInfo` tarafından tanımlanan nesnesi [CCommandLineInfo::m_nShellCommand](../../mfc/reference/ccommandlineinfo-class.md#m_nshellcommand), içinde tanımlanan aşağıdaki numaralandırılmış türde olan `CCommandLineInfo` sınıfı.  
+ Veri üyeleri `CCommandLineInfo` tarafından tanımlanan nesnesi [CCommandLineInfo::m_nShellCommand](../../mfc/reference/ccommandlineinfo-class.md#m_nshellcommand), içinde tanımlanan aşağıdaki listeden seçimli türü olan `CCommandLineInfo` sınıfı.  
   
 ```  
 enum {
@@ -1658,10 +1658,10 @@ enum {
     };  
 ```
   
- Bu değerlerin her birini, kısa bir açıklama için bkz: `CCommandLineInfo::m_nShellCommand`.  
+ Bu değerlerin her birinin kısa bir açıklaması için bkz `CCommandLineInfo::m_nShellCommand`.  
   
 ##  <a name="processwndprocexception"></a>  CWinApp::ProcessWndProcException  
- İşleyici, uygulamanızın iletisi ya da komut işleyicileri birinde oluşturulan bir özel yakalamaz her framework bu üye işlevi çağırır.  
+ Her birinde, uygulamanızın ileti veya komut işleyicisi bir özel durum işleyici yakalamaz framework bu üye işlevini çağırır.  
   
 ```  
 virtual LRESULT ProcessWndProcException(
@@ -1671,35 +1671,35 @@ virtual LRESULT ProcessWndProcException(
   
 ### <a name="parameters"></a>Parametreler  
  *e*  
- Yakalanmayan bir özel durum için bir işaretçi.  
+ Yakalanmayan bir özel durum işaretçisi.  
   
  *pMsg*  
- A [MSG](../../mfc/reference/msg-structure1.md) framework bir özel durum nedeniyle windows iletisi hakkında bilgi içeren yapısı.  
+ A [MSG](../../mfc/reference/msg-structure1.md) bir özel durum için framework neden windows iletisi hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Windows için döndürülen değer. Normalde bu 0 L windows iletilerini 1 M (TRUE) için komut iletileri olur.  
+ Windows için döndürülen değer. Normalde 0 L windows iletilerini 1 L (TRUE) için komut iletilerini budur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi doğrudan çağırmayın.  
+ Bu üye işlevini doğrudan çağırmanız gerekmez.  
   
- Bu üye işlevi varsayılan uygulaması bir ileti kutusu oluşturur. Yakalanmayan Özel durum menü, araç veya Hızlandırıcı komutu hatasının kaynaklanıyorsa "Komutu başarısız oldu" iletisini ileti kutusu görüntüler; Aksi halde, bir "İç uygulama hatası" iletisi görüntüler.  
+ Bu üye işlevini varsayılan uygulaması bir ileti kutusu oluşturur. Yakalanmayan Özel durum menü, araç veya Hızlandırıcı komut hatası kaynaklanıyorsa, bir "Komutu başarısız oldu" iletisi ileti kutusunu görüntüler; Aksi takdirde, bir "İç uygulama hatası" iletisi görüntüler.  
   
- Bu üye işlevi, özel durumların genel işleme sağlamak için geçersiz kılar. Görüntülenecek ileti kutusu isterseniz, yalnızca temel işlevselliğini çağırın.  
+ Bu üye işlevi, özel durumlar genel işlenmesini sağlamak için geçersiz kılın. Görüntülenecek ileti kutusu isterseniz, yalnızca temel işlevlerini çağırın.  
   
 ##  <a name="register"></a>  CWinApp::Register  
- Tarafından işlenmemiş herhangi bir kayıt görevi gerçekleştirir `RegisterShellFileTypes`.  
+ Tarafından işlenmemiş herhangi bir kayıt görevi gerçekleştiren `RegisterShellFileTypes`.  
   
 ```  
 virtual BOOL Register();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı sıfır olmayan; Aksi takdirde 0.  
+ Başarılıysa sıfır; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama, sadece TRUE değerini döndürür. Tüm özelleştirilmiş kayıt adımları sağlamak için bu işlevi geçersiz kılar.  
+ Varsayılan uygulama yalnızca, TRUE döndürür. Tüm özelleştirilmiş kayıt adımları sağlamak için bu işlevi geçersiz kılar.  
   
-##  <a name="registershellfiletypes"></a>  CWinApp::RegisterShellFileTypes  
+##  <a name="registershellfiletypes"></a>  Otomatik olarak InitInstance  
  Uygulamanızın belge türlerinin tümü Windows Dosya Yöneticisi ile kaydetmek için bu üye işlevini çağırın.  
   
 ```  
@@ -1708,17 +1708,17 @@ void RegisterShellFileTypes(BOOL bCompat = FALSE);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *bCompat*  
- TRUE Kabuk komutları yazdırma ve yazdırma dosyaları doğrudan Kabuk veya dosyayı bir yazıcı nesnesi sürükleyerek yazdırmak bir kullanıcı izin vermek için kayıt defteri girdileri ekler. Ayrıca, bir defaultIcon anahtar ekler. Varsayılan olarak, bu parametre FALSE olur. geriye dönük uyumluluk için.  
+ TRUE, yazdırma ve yazdırma dosyaları doğrudan kabuğundan veya dosya için bir yazıcı nesnesi sürükleyerek yazdırmak bir kullanıcı izin vermek için Kabuk komutları için kayıt defteri girdileri ekler. Ayrıca, bir defaultIcon anahtar ekler. Varsayılan olarak, bu parametre FALSE olduğunda geriye dönük uyumluluk için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu, ondan içinde Dosya Yöneticisi'ni çift tıklatarak, uygulamanız tarafından oluşturulan bir veri dosyası açmak kullanıcının sağlar. Çağrı `RegisterShellFileTypes` çağırdıktan sonra [AddDocTemplate](#adddoctemplate) her uygulamanızda belge şablonları. Ayrıca [EnableShellOpen](#enableshellopen) çağırdığınızda üye işlevi `RegisterShellFileTypes`.  
+ Bu dosya Yöneticisi içinde çift tıklayarak buradan, uygulamanız tarafından oluşturulan bir veri dosyasını açmak kullanıcının sağlar. Çağrı `RegisterShellFileTypes` çağırdıktan sonra [AddDocTemplate](#adddoctemplate) uygulamanızdaki belge şablonlarının her biri için. Ayrıca [EnableShellOpen](#enableshellopen) üye işlevini çağırdığınızda `RegisterShellFileTypes`.  
   
- `RegisterShellFileTypes` listesini tarar [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) uygulamayı tutar ve her belge şablonu için girişleri için dosya ilişkilendirmeleri Windows korur kayıt veritabanına ekler, nesneleri. Dosya Yöneticisi kullanıcı tıklattığında veri dosyasını açmak için bu girişleri kullanır. Bu dağıtmayı ihtiyacını ortadan kaldıran bir. Uygulamanız ile REG dosyası.  
+ `RegisterShellFileTypes` listesi üzerinden yinelenir [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) uygulama tutar ve her bir belge şablonu için girişler için dosya ilişkilendirmeleri Windows tutan kayıt veritabanına ekler, nesneleri. Dosya Yöneticisi bu girişleri kullanıcı tıkladığında bir veri dosyasını açmak için kullanır. Bu göndermeye ihtiyacını ortadan kaldıran bir. Uygulamanızla REG dosyası.  
   
 > [!NOTE]
-> `RegisterShellFileTypes` kullanıcının yönetici haklarına sahip program çalışıyorsa yalnızca çalışır. Program yönetici haklarına sahip değilse, kayıt defteri anahtarlarını değiştirilemiyor.  
+> `RegisterShellFileTypes` kullanıcının yönetici haklarıyla program çalışıyorsa yalnızca çalışır. Program yönetici haklarına sahip değilse, kayıt defteri anahtarlarını değiştirilemiyor.  
   
- Kayıt veritabanı, belirtilen dosya adı uzantısı zaten başka bir dosya türü ile ilişkilendirir. varsa, yeni bir ilişki oluşturulur. Bkz: `CDocTemplate` biçimi için bir sınıf dizeleri bu bilgileri kaydetmek gerekli.  
+ Kayıt defteri veritabanında, belirtilen dosya adı uzantısı zaten başka bir dosya türü ile ilişkilendirir. yeni bir ilişki oluşturulur. Bkz: `CDocTemplate` bu bilgileri kaydetmek gerekli olan dize biçimi için sınıf.  
   
 ##  <a name="registerwithrestartmanager"></a>  CWinApp::RegisterWithRestartManager  
  Uygulama yeniden başlatma Yöneticisi ile kaydeder.  
@@ -1743,28 +1743,28 @@ DWORD dwCallbackFlags);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *bRegisterRecoveryCallback*|Bu örnek uygulamanın bir kurtarma geri çağırma işlevini kullanan TRUE gösterir; FALSE yok olduğunu gösterir. Uygulama beklenmedik şekilde çıktığında framework Kurtarma geri çağırma işlevini çağırır. Daha fazla bilgi için bkz: [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|  
-|[in] *strRestartIdentifier*|Bu örneği yeniden başlatma Yöneticisi'ni tanımlayan benzersiz bir dize. Yeniden başlatma Yöneticisi bir uygulama her örneği için benzersiz tanımlayıcısıdır.|  
-|[in] *pwzCommandLineArgs*|Komut satırından herhangi bir ek bağımsız değişkeni içeren bir dize.|  
+|[in] *bRegisterRecoveryCallback*|TRUE, uygulamanın bu örneği bir kurtarma geri çağırma işlevini kullandığını gösterir; FALSE, mevcut olduğunu gösterir. Uygulama beklenmedik bir şekilde çıktığında framework Kurtarma geri çağırma işlevini çağırır. Daha fazla bilgi için [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|  
+|[in] *strRestartIdentifier*|Bu örneği yeniden başlatma Yöneticisi'ni tanımlayan benzersiz dize. Yeniden başlatma Yöneticisi uygulamanın her örneği için benzersiz tanımlayıcısıdır.|  
+|[in] *pwzCommandLineArgs*|Komut satırından herhangi bir ek bağımsız değişken içeren bir dize.|  
 |[in] *dwRestartFlags*|Yeniden başlatma Yöneticisi için isteğe bağlı bayraklar. Daha fazla bilgi için Açıklamalar bölümüne bakın.|  
-|[in] *pRecoveryCallback*|Kurtarma geri çağırma işlevi. Bu işlev, LPVOID parametresi giriş olarak alır ve bir DWORD döndürür. Varsayılan kurtarma geri çağırma işlevidir `CWinApp::ApplicationRecoveryCallback`.|  
-|[in] *lpvParam*|Giriş parametresi için Kurtarma geri çağırma işlevi. Daha fazla bilgi için bkz: [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|  
-|[in] *dwPingInterval*|Kurtarma için dönmek geri çağırma işlevi yeniden başlatma Yöneticisi bekleyeceği süreyi. Bu parametre milisaniye cinsindendir.|  
-|[in] *dwCallbackFlags*|Bayrakları Kurtarma geri çağırma işlevine geçirildi. Daha sonraki kullanımlar için ayrılmıştır.|  
+|[in] *pRecoveryCallback*|Kurtarma geri çağırma işlevi. Bu işlev, giriş olarak LPVOID parametre almaz ve bir DWORD döndürür. Varsayılan kurtarma geri çağırma işlevidir `CWinApp::ApplicationRecoveryCallback`.|  
+|[in] *lpvParam*|Kurtarma geri çağırma işlevi için giriş parametresi. Daha fazla bilgi için [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|  
+|[in] *dwPingInterval*|Kurtarma için geri dönmek geri çağırma işlevi yeniden başlatma Yöneticisi bekleyeceği sürenin uzunluğunu. Bu parametre, milisaniye cinsindendir.|  
+|[in] *dwCallbackFlags*|Bayrakları Kurtarma geri çağırma işlevine geçirilen. Daha sonraki kullanımlar için ayrılmıştır.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa S_OK; Aksi takdirde bir hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Uygulamanızın otomatik kaydetmeyi dosyaları için varsayılan MFC uygulaması kullanıyorsa, basit sürümünü kullanmalısınız `RegisterWithRestartManager`. Karmaşık sürümünü kullanmanız `RegisterWithRestartManager` uygulamanızın otomatik kaydetme davranışını özelleştirmek istiyorsanız.  
+ Uygulamanızı otomatik kaydetmeyi dosyaları için varsayılan MFC uygulaması kullanıyorsa, basit bir sürümü kullanmalısınız `RegisterWithRestartManager`. Karmaşık kullanmanız `RegisterWithRestartManager` uygulamanız otomatik kaydetme davranışını özelleştirmek istiyorsanız.  
   
- Bu yöntem boş bir dize ile çağrısı yaparsanız *strRestartIdentifier*, `RegisterWithRestartManager` Yöneticisi yeniden, bu örneği için benzersiz kimlik dizesi oluşturur.  
+ Bu yöntem boş bir dize ile çağrı ise *strRestartIdentifier*, `RegisterWithRestartManager` Yöneticisi bu örneğini yeniden başlatmak için bir benzersiz tanımlayıcı dizesi oluşturur.  
   
- Bir uygulama beklenmedik şekilde çıktığında, yeniden başlatma Yöneticisi'ni komut satırından uygulamasını yeniden başlatır ve benzersiz tanımlayıcı isteğe bağlı bir bağımsız değişken olarak yeniden sağlar. Bu senaryoda, framework çağırması `RegisterWithRestartManager` iki kez. İlk çağrıda geldiği [CWinApp::InitInstance](#initinstance) ile dize tanımlayıcısı için boş bir dize. Ardından, yöntem [CWinApp::ProcessShellCommand](#processshellcommand) çağrıları `RegisterWithRestartManager` benzersiz yeniden tanımlayıcısına sahip.  
+ Bir uygulama beklenmedik bir şekilde çıktığında, yeniden başlatma Yöneticisi'ni komut satırından uygulamayı yeniden başlatır ve benzersiz tanımlayıcı isteğe bağlı bağımsız değişken olarak yeniden sağlar. Bu senaryoda, framework çağırır `RegisterWithRestartManager` iki kez. İlk çağrı geldiği [CWinApp::InitInstance](#initinstance) ile dize tanımlayıcısı için boş bir dize. Ardından, yöntem [CWinApp::ProcessShellCommand](#processshellcommand) çağrıları `RegisterWithRestartManager` yeniden benzersiz tanımlayıcısına sahip.  
   
- Bir uygulamayı yeniden başlatma Yöneticisi ile kaydetme sonra uygulamayı yeniden başlatma Yöneticisi'ni izler. Uygulama beklenmedik şekilde bulunup bulunmadığını yeniden başlatma Yöneticisi kapatma işlemi sırasında kurtarma geri çağırma işlevini çağırır. Yeniden başlatma Yöneticisi bekler *dwPingInterval* yanıt Kurtarma geri çağırma işlevi. Kurtarma geri çağırma işlevi bu süre içinde yanıt vermezse, Kurtarma geri çağırma işlevi çalıştırmadan uygulamadan çıkar.  
+ Yeniden başlatma Yöneticisi ile bir uygulamayı kaydettikten sonra uygulama yeniden başlatma Yöneticisi izler. Beklenmedik şekilde uygulamadan çıkar, yeniden başlatma Yöneticisi kapatma işlemi sırasında kurtarma geri çağırma işlevini çağırır. Yeniden başlatma Yöneticisi bekler *dwPingInterval* yanıt Kurtarma geri çağırma işlevi. Kurtarma geri çağırma işlevine bu süre içinde yanıt vermezse, Kurtarma geri çağırma işlevi çalıştırmadan uygulama kapanır.  
   
- Varsayılan olarak, dwRestartFlags desteklenmez, ancak gelecekte kullanılmak üzere sağlanır. Olası değerler için *dwRestartFlags* aşağıdaki gibidir:  
+ Varsayılan olarak, dwRestartFlags desteklenmez ancak gelecekte kullanılmak üzere sağlanır. Olası değerler için *dwRestartFlags* aşağıdaki gibidir:  
   
 - RESTART_NO_CRASH  
   
@@ -1775,29 +1775,29 @@ DWORD dwCallbackFlags);
 - RESTART_NO_REBOOT  
   
 ##  <a name="reopenpreviousfilesatrestart"></a>  CWinApp::ReopenPreviousFilesAtRestart  
- Yeniden başlatma Yöneticisi uygulama beklenmedik biçimde çıktı zaman açık olan dosyaları açana olup olmadığını belirler.  
+ Yeniden başlatma Yöneticisi uygulama beklenmedik bir şekilde çıkıldı açık dosyalar açana olup olmadığını belirler.  
   
 ```  
 virtual BOOL ReopenPreviousFilesAtRestart() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE, yeniden başlatma Yöneticisi önceden açık dosyaların açana gösterir; Yeniden başlatma Yöneticisi'ni desteklemez FALSE gösterir.  
+ TRUE, yeniden başlatma Yöneticisi'ni daha önce açık olan dosyaları açana gösterir; FALSE, yeniden başlatma Yöneticisi yok gösterir.  
   
 ##  <a name="restartinstance"></a>  CWinApp::RestartInstance  
- Yeniden başlatma Yöneticisi tarafından başlatılan bir uygulama yeniden başlatma işler.  
+ Bir uygulama yeniden başlatma yeniden başlatma Yöneticisi tarafından başlatılan işler.  
   
 ```  
 virtual BOOL CWinApp::RestartInstance();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Veri kurtarma işleyicisi daha önce açık belgeleri açarsa TRUE; Veri kurtarma işleyicisi bir hata varsa veya önceden açık belge yok ise FALSE.  
+ Veri kurtarma işleyicisi daha önce açık belgeler açarsa TRUE; Veri kurtarma işleyicisi bir hata varsa veya daha önce açık belge yoksa FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir uygulama yeniden başlatma Yöneticisi yeniden başlatıldığında, framework bu yöntemi çağırır. Bu yöntem, veri kurtarma işleyici alır ve otomatik olarak kaydedilmiş dosyaları geri yükler. Bu yöntemi çağırır [CDataRecoveryHandler::RestoreAutosavedDocuments](../../mfc/reference/cdatarecoveryhandler-class.md#restoreautosaveddocuments) kullanıcı otomatik olarak kaydedilmiş dosyaları geri istediği olup olmadığını belirlemek için.  
+ Bir uygulama yeniden başlatma Yöneticisi yeniden başlatıldığında framework bu yöntemi çağırır. Bu yöntem, veri kurtarma işleyiciyi alır ve otomatik kaydedilmiş dosyaları geri yükler. Bu yöntemin çağırdığı [CDataRecoveryHandler::RestoreAutosavedDocuments](../../mfc/reference/cdatarecoveryhandler-class.md#restoreautosaveddocuments) kullanıcı otomatik kaydedilmiş dosyaları geri yüklemek isteyip istemediğini belirlemek için.  
   
- Bu yöntem ise FALSE değerini döndürür [CDataRecoveryHandler](../../mfc/reference/cdatarecoveryhandler-class.md) hiçbir açık belgeler olduğunu belirler. Hiçbir açık belgeler olsaydı, uygulama genellikle başlar.  
+ Bu yöntem FALSE döndürür [CDataRecoveryHandler](../../mfc/reference/cdatarecoveryhandler-class.md) hiçbir açık belgeler olduğunu belirler. Hiçbir açık belgeleri varsa, uygulama normal şekilde başlar.  
   
 ##  <a name="restoreautosavedfilesatrestart"></a>  CWinApp::RestoreAutosavedFilesAtRestart  
  Uygulama yeniden başlatıldığında yeniden başlatma Yöneticisi'ni otomatik olarak kaydedilmiş dosyaları geri yükler olup olmadığını belirler.  
@@ -1807,10 +1807,10 @@ virtual BOOL RestoreAutosavedFilesAtRestart() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE, yeniden başlatma Yöneticisi'ni otomatik olarak kaydedilmiş dosyaları geri yükler gösterir; Yeniden başlatma Yöneticisi'ni desteklemez FALSE gösterir.  
+ TRUE, yeniden başlatma Yöneticisi'ni otomatik olarak kaydedilmiş dosyaları geri yükler gösterir; FALSE, yeniden başlatma Yöneticisi yok gösterir.  
   
 ##  <a name="run"></a>  CWinApp::Run  
- Varsayılan ileti döngüsü sağlar.  
+ Bir varsayılan mesaj döngüsünü sağlar.  
   
 ```  
 virtual int Run();
@@ -1820,51 +1820,51 @@ virtual int Run();
  Bir **int** tarafından döndürülen değer `WinMain`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Run` edinme ve uygulama WM_QUIT ileti alıncaya kadar Windows iletileri gönderir. Uygulamanın ileti sırası şu anda hiçbir ileti içeriyorsa `Run` çağrıları [ONIDLE](#onidle) boşta kalma süresi işlemini gerçekleştirmek için. Gelen iletileri Git [PreTranslateMessage](#pretranslatemessage) üye işlevi özel işleme ve ardından Windows işlevi için `TranslateMessage` standart klavye çeviri; son olarak, `DispatchMessage` Windows işlevi çağrılır.  
+ `Run` edinme ve uygulama WM_QUIT ileti alıncaya kadar Windows iletileri gönderir. Uygulamanın ileti kuyruğu şu anda hiçbir ileti içeriyorsa `Run` çağrıları [ONIDLE](#onidle) boşta kalma süresi işlemini gerçekleştirmek için. Gelen iletiler Git [PreTranslateMessage](#pretranslatemessage) üye işlevi özel işleme ve ardından Windows işleve `TranslateMessage` standart klavye çevirisi; son olarak, `DispatchMessage` Windows işlevi çağrılır.  
   
- `Run` nadiren geçersiz kılınır, ancak özel davranışı sağlamak üzere geçersiz kılabilirsiniz.  
+ `Run` nadiren geçersiz kılınır, ancak özel davranış sağlamak üzere geçersiz kılabilirsiniz.  
   
 ##  <a name="runautomated"></a>  CWinApp::RunAutomated  
- Belirlemek için bu işlevi çağırmak olup olmadığını " **/Automation**"veya" **-Otomasyon**" seçeneği varsa, sunucu uygulaması istemci uygulaması tarafından başlatılan olup olmadığını gösterir.  
+ Belirlemek için bu işlevi çağırın olup olmadığını " **/Automation**"veya" **-Otomasyon**" seçeneği varsa, sunucu uygulaması istemci uygulama tarafından başlatılan olup olmadığını gösterir.  
   
 ```  
 BOOL RunAutomated();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçenek bulunduysa sıfır olmayan; Aksi takdirde 0.  
+ Seçenek bulunamadı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa, komut satırından seçeneği kaldırılır. OLE Otomasyonu hakkında daha fazla bilgi için bkz: [otomasyon sunucuları](../../mfc/automation-servers.md).  
+ Varsa, seçeneğin komut satırından kaldırıldı. OLE Otomasyonu hakkında daha fazla bilgi için bkz [otomasyon sunucuları](../../mfc/automation-servers.md).  
   
 ##  <a name="runembedded"></a>  CWinApp::RunEmbedded  
- Belirlemek için bu işlevi çağırmak olup olmadığını " **/katıştırma**"veya" **-katıştırma**" seçeneği varsa, sunucu uygulaması istemci uygulaması tarafından başlatılan olup olmadığını gösterir.  
+ Belirlemek için bu işlevi çağırın olup olmadığını " **/Embedding**"veya" **-katıştırma**" seçeneği varsa, sunucu uygulaması istemci uygulama tarafından başlatılan olup olmadığını gösterir.  
   
 ```  
 BOOL RunEmbedded();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Seçenek bulunduysa sıfır olmayan; Aksi takdirde 0.  
+ Seçenek bulunamadı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa, komut satırından seçeneği kaldırılır. Makaleyi katıştırma daha fazla bilgi için bkz: [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).  
+ Varsa, seçeneğin komut satırından kaldırıldı. Ekleme ile ilgili daha fazla bilgi için bkz [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).  
   
 ##  <a name="saveallmodified"></a>  CWinApp::SaveAllModified  
- Uygulamanın ana çerçeve penceresi kapatıldığında olduğunda tüm belgeleri kaydetmek için framework tarafından veya bir WM_QUERYENDSESSION ileti aracılığıyla çağrılır.  
+ WM_QUERYENDSESSION ileti veya uygulamanın ana çerçeve penceresinin kapatılması olduğunda tüm belgeleri kaydetmek için framework tarafından çağırılır.  
   
 ```  
 virtual BOOL SaveAllModified();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Güvenli, sonlandırmak sıfır olmayan; 0 güvenli sonlandırmak.  
+ Uygulamayı sonlandırmak güvenli olursa sıfır dışı; Uygulamayı sonlandırmak güvenli değilse 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi varsayılan uygulamasını çağıran [CDocument::SaveModified](../../mfc/reference/cdocument-class.md#savemodified) sırayla uygulamadaki tüm değiştirilmiş belgeleri için üye işlevi.  
+ Bu üye işlevini varsayılan uygulamasını çağırır [CDocument::SaveModified](../../mfc/reference/cdocument-class.md#savemodified) sırayla uygulamadaki tüm değiştirilen belgeler için üye işlevi.  
   
 ##  <a name="selectprinter"></a>  CWinApp::SelectPrinter  
- Belirli bir yazıcı seçmek için bu üye işlevini çağırın ve yazdırma iletişim kutusunda önceden seçilmiş olan yazıcı bırakın.  
+ Belirli bir yazıcı seçmek için bu üye işlevini çağırın ve yazdırma iletişim kutusundaki önceden seçilmiş olan yazıcı bırakın.  
   
 ```  
 void SelectPrinter(
@@ -1875,16 +1875,16 @@ void SelectPrinter(
   
 ### <a name="parameters"></a>Parametreler  
  *hDevNames*  
- İçin bir tanıtıcı bir [DEVNAMES](../../mfc/reference/devnames-structure.md) sürücü, cihaz ve belirli bir yazıcı çıkış bağlantı noktası adlarını tanımlayan yapısı.  
+ İçin bir tanıtıcı bir [DEVNAMES](../../mfc/reference/devnames-structure.md) sürücü, cihaz ve çıkış bağlantı noktası adları belirli bir yazıcı tanımlayan yapısı.  
   
  *hDevMode*  
- İçin bir tanıtıcı bir [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) aygıt başlatma ve yazıcı ortamı hakkında bilgi belirten yapısı.  
+ İçin bir tanıtıcı bir [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) cihaz başlatma ve yazıcı ortamı hakkında bilgi belirten yapısı.  
   
  *bFreeOld*  
- Daha önce seçilen yazıcı boşaltır.  
+ Önceden seçilen yazıcı serbest bırakır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Her iki *hDevMode* ve *hDevNames* NULL, olan `SelectPrinter` geçerli varsayılan yazıcı kullanır.  
+ Her iki *hDevMode* ve *hDevNames* NULL olan `SelectPrinter` geçerli varsayılan yazıcıyı kullanır.  
   
 ##  <a name="sethelpmode"></a>  CWinApp::SetHelpMode  
  Uygulamanın Yardım türünü ayarlar.  
@@ -1900,10 +1900,10 @@ void SetHelpMode(AFX_HELP_TYPE eHelpType);
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanın Yardım türünü ayarlar.  
   
- Uygulamanızın Yardım türü HTMLHelp için ayarlanacak çağırabilirsiniz [EnableHTMLHelp](#enablehtmlhelp). Çağırmanız sonra `EnableHTMLHelp`, uygulamanız kendi Yardım uygulaması olarak HTMLHelp kullanmanız gerekir. WinHelp kullanacak şekilde değiştirmek istiyorsanız, çağırabilirsiniz `SetHelpMode` ve *eHelpType* için `afxWinHelp`.  
+ Uygulamanızın Yardım türü HTMLHelp için ayarlanacak çağırabilirsiniz [EnableHTMLHelp](#enablehtmlhelp). Bir kez çağırmanız `EnableHTMLHelp`, uygulamanızı kendi Yardım uygulaması HTMLHelp kullanmanız gerekir. WinHelp kullanmak için değiştirmek istiyorsanız, çağırabilirsiniz `SetHelpMode` ayarlayıp *eHelpType* için `afxWinHelp`.  
   
 ##  <a name="setregistrykey"></a>  CWinApp::SetRegistryKey  
- INİ dosyaları yerine kayıt defterinde depolanan uygulama ayarları neden olur.  
+ INİ dosyaları yerine kayıt defterinde saklanan uygulama ayarları neden olur.  
   
 ```  
 void SetRegistryKey(LPCTSTR lpszRegistryKey);  
@@ -1912,78 +1912,78 @@ void SetRegistryKey(UINT nIDRegistryKey);
   
 ### <a name="parameters"></a>Parametreler  
  *lpszRegistryKey*  
- İşaretçi anahtar adını içeren dize.  
+ Anahtar adını içeren bir dize işaretçisi.  
   
  *nIDRegistryKey*  
- Kayıt defteri anahtarı adını içeren bir dize kaynak kimliği.  
+ Kayıt defteri anahtarı adını içeren dize kaynağının kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev ayarlar *m_pszRegistryKey*, ardından kullanılan tarafından `GetProfileInt`, `GetProfileString`, `WriteProfileInt`, ve `WriteProfileString` üye işlevlerini `CWinApp`. Bu işlev çağrıldığında, en son kullanılan (MRU) dosyaların listesini de kayıt defterinde depolanır. Kayıt defteri anahtarı genellikle bir şirket adıdır. Aşağıdaki biçimde anahtarında depolanır: HKEY_CURRENT_USER\Software\\< şirket adı\>\\< Uygulama adı\>\\< bölüm adı\>\\< değeri ad\>.  
+ Bu işlev ayarlar *m_pszRegistryKey*, ardından kullanılan tarafından `GetProfileInt`, `GetProfileString`, `WriteProfileInt`, ve `WriteProfileString` üye işlevlerinin `CWinApp`. Bu işlev çağrılırsa, en son kullanılan (MRU) dosya listesi de kayıt defterinde depolanır. Kayıt defteri anahtarı genellikle bir şirketin adıdır. Aşağıdaki biçimde bir anahtarında depolanır: HKEY_CURRENT_USER\Software\\< şirket adı\>\\< Uygulama adı\>\\< bölüm adı\>\\< değer ad\>.  
   
 ##  <a name="supportsapplicationrecovery"></a>  CWinApp::SupportsApplicationRecovery  
- Yeniden başlatma Yöneticisi beklenmedik biçimde çıktı uygulamanın kurtarır olup olmadığını belirler.  
+ Yeniden başlatma Yöneticisi beklenmedik şekilde çıkıldı uygulamanın kurtarır olup olmadığını belirler.  
   
 ```  
 virtual BOOL SupportsApplicationRecovery() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Uygulama yeniden başlatma Yöneticisi kurtarır TRUE gösterir; Yeniden başlatma Yöneticisi'ni desteklemez FALSE gösterir.  
+ TRUE, uygulama yeniden başlatma Yöneticisi kurtarır gösterir; FALSE, yeniden başlatma Yöneticisi yok gösterir.  
   
 ##  <a name="supportsautosaveatinterval"></a>  CWinApp::SupportsAutosaveAtInterval  
- Yeniden başlatma Yöneticisi autosaves düzenli aralıklarla belgeleri Aç olup olmadığını belirler.  
+ Yeniden başlatma Yöneticisi kapanıyorsa düzenli aralıklarla belgeler açık olup olmadığını belirler.  
   
 ```  
 virtual BOOL SupportsAutosaveAtInterval() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE, yeniden başlatma Yöneticisi autosaves belgeleri Aç gösterir; Yeniden başlatma Yöneticisi'ni desteklemez FALSE gösterir.  
+ TRUE, yeniden başlatma Yöneticisi kapanıyorsa açık belgeleri gösterir; FALSE, yeniden başlatma Yöneticisi yok gösterir.  
   
 ##  <a name="supportsautosaveatrestart"></a>  CWinApp::SupportsAutosaveAtRestart  
- Belirler olup olmadığını yeniden başlatma Yöneticisi autosaves tüm açık belgeleri uygulama yeniden başlatıldığında.  
+ Belirler olmadığını yeniden başlatma Yöneticisi kapanıyorsa tüm açık belgeleri uygulama yeniden başlatıldığında.  
   
 ```  
 virtual BOOL SupportsAutosaveAtRestart() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Uygulama yeniden başlatıldığında yeniden başlatma Yöneticisi autosaves belgeleri Aç TRUE gösterir; Yeniden başlatma Yöneticisi'ni desteklemez FALSE gösterir.  
+ TRUE, uygulama yeniden başlatıldığında, yeniden başlatma Yöneticisi kapanıyorsa belgeleri Aç gösterir; FALSE, yeniden başlatma Yöneticisi yok gösterir.  
   
 ##  <a name="supportsrestartmanager"></a>  CWinApp::SupportsRestartManager  
- Uygulama yeniden başlatma Yöneticisi'ni destekleyip desteklemediğini belirler.  
+ Uygulama yeniden başlatma Yöneticisi destekleyip desteklemediğini belirler.  
   
 ```  
 virtual BOOL SupportsRestartManager() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE, uygulama yeniden başlatma Yöneticisi'ni desteklediğini gösterir; YANLIŞ uygulama desteklemez gösterir.  
+ TRUE, yeniden başlatma Yöneticisi uygulamanın desteklediği gösterir; FALSE, uygulama daha önceden gösterir.  
   
 ##  <a name="unregister"></a>  CWinApp::Unregister  
- Uygulama nesnesi tarafından kaydedilen tüm dosyaları kaydını siler.  
+ Uygulama nesnesi tarafından kayıtlı tüm dosyaları kaydını siler.  
   
 ```  
 virtual BOOL Unregister();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarı sıfır olmayan; Aksi takdirde 0.  
+ Başarılıysa sıfır; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Unregister` İşlevi uygulama nesnesi tarafından gerçekleştirilen kaydı geri alır ve [kaydetmek](#register) işlevi. Normalde, her iki işlevleri MFC tarafından dolaylı olarak adlandırılır ve bu nedenle, kodunuzda görünmez.  
+ `Unregister` İşlevi uygulama nesnesi tarafından gerçekleştirilen kaydı alır ve [kaydetme](#register) işlevi. Normalde, her iki işlev MFC tarafından örtük olarak çağırılamaz ve bu nedenle kodunuzda görünmez.  
   
- Özel kayıt silme adımları gerçekleştirmek için bu işlevi geçersiz kılar.  
+ Özel kayıt silme adımları için bu işlevi geçersiz kılar.  
   
 ##  <a name="unregistershellfiletypes"></a>  CWinApp::UnregisterShellFileTypes  
- Windows Dosya Yöneticisi ile uygulamanızın belge türlerinin tümü kaydını kaldırmak için bu üye işlevini çağırın.  
+ Tüm Windows Dosya Yöneticisi ile uygulamanızın belge türlerinin kaydını kaldırmak için bu üye işlevini çağırın.  
   
 ```  
 void UnregisterShellFileTypes();
 ```  
   
 ##  <a name="winhelp"></a>  CWinApp::WinHelp  
- WinHelp uygulama çağırmak için bu üye işlevini çağırın.  
+ WinHelp uygulamasını çağırmak için bu üye işlevini çağırın.  
   
 ```  
 virtual void WinHelp(
@@ -1996,12 +1996,12 @@ virtual void WinHelp(
  Ek veri belirtir. Kullanılan değer değerine bağlıdır *nCmd* parametresi.  
   
  *nCmd*  
- İstenen Yardım türünü belirtir. Olası değerler ve nasıl etkilediklerini listesi *dwData* parametresi bkz [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows işlevi.  
+ Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows işlevi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework de WinHelp uygulama çağırmak için bu işlevi çağırır.  
+ Framework de WinHelp uygulamasını çağırmak için bu işlevi çağırır.  
   
- Uygulamanızı sonlandırıldığında framework WinHelp uygulama otomatik olarak kapatılır.  
+ Uygulamanızı sonlandırıldığında framework otomatik olarak WinHelp uygulamasını kapatın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#53](../../mfc/reference/codesnippet/cpp/cwinapp-class_28.cpp)]  
@@ -2019,29 +2019,29 @@ BOOL WriteProfileBinary(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszSection*  
- Noktaları null ile sonlandırılmış dizeye giriş içeren bölüm belirtir. Bölüm mevcut değilse oluşturulur. Bölümün adını bağımsız durumdur; dize, herhangi bir bileşimini büyük ve küçük harfleri olabilir.  
+ Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder. Bölüm yoksa, oluşturulur. Bölüm çalışması bağımsız adıdır; dize, herhangi bir bileşimini büyük ve küçük harf olabilir.  
   
  *lpszEntry*  
- Değeri yazılacak girdisi içeren null ile sonlandırılmış bir dize noktalarına. Giriş belirtilen bölümünde mevcut değilse oluşturulur.  
+ Değeri yazılacak giriş içeren null ile sonlandırılmış bir dize işaret eder. Giriş belirtilen bölümde yoksa, oluşturulur.  
   
  *pData*  
- Yazılacak veri noktalarına.  
+ Yazılacak veri işaret eder.  
   
  *nBytes*  
  Yazılacak bayt sayısını içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
- Bu örnekte `CWinApp* pApp = AfxGetApp();` şekilde gösteren CWinApp sınıfta almak için `WriteProfileBinary` ve `GetProfileBinary` bir MFC uygulamasında herhangi bir işlevden kullanılabilir.  
+ Bu örnekte `CWinApp* pApp = AfxGetApp();` CWinApp sınıfı bir yol gösteren almak için `WriteProfileBinary` ve `GetProfileBinary` MFC uygulamasında herhangi bir işlevden kullanılabilir.  
   
  [!code-cpp[NVC_MFCWindowing#54](../../mfc/reference/codesnippet/cpp/cwinapp-class_29.cpp)]  
   
- Örneğin başka bir örnek için bkz [CWinApp::GetProfileBinary](#getprofilebinary).  
+ Başka bir örnek için örneğin bakın [CWinApp::GetProfileBinary](#getprofilebinary).  
   
 ##  <a name="writeprofileint"></a>  CWinApp::WriteProfileInt  
- Belirtilen değer uygulamanın kayıt defteri belirtilen bölüme yazmak için bu üye işlevini çağırın veya. INI dosyası.  
+ Uygulamanın kayıt defteri belirtilen bölüme belirtilen değeri yazmak için bu üye işlevini çağırın veya. INI dosyası.  
   
 ```  
 BOOL WriteProfileInt(
@@ -2052,26 +2052,26 @@ BOOL WriteProfileInt(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszSection*  
- Noktaları null ile sonlandırılmış dizeye giriş içeren bölüm belirtir. Bölüm mevcut değilse oluşturulur. Bölümün adını bağımsız durumdur; dize, herhangi bir bileşimini büyük ve küçük harfleri olabilir.  
+ Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder. Bölüm yoksa, oluşturulur. Bölüm çalışması bağımsız adıdır; dize, herhangi bir bileşimini büyük ve küçük harf olabilir.  
   
  *lpszEntry*  
- Değeri yazılacak girdisi içeren null ile sonlandırılmış bir dize noktalarına. Giriş belirtilen bölümünde mevcut değilse oluşturulur.  
+ Değeri yazılacak giriş içeren null ile sonlandırılmış bir dize işaret eder. Giriş belirtilen bölümde yoksa, oluşturulur.  
   
  *nDeğer*  
  Yazılacak değer içeriyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
- Bu örnekte `CWinApp* pApp = AfxGetApp();` şekilde gösteren CWinApp sınıfta almak için `WriteProfileString`, `WriteProfileInt`, `GetProfileString`, ve `GetProfileInt` bir MFC uygulamasında herhangi bir işlevden kullanılabilir.  
+ Bu örnekte `CWinApp* pApp = AfxGetApp();` CWinApp sınıfı bir yol gösteren almak için `WriteProfileString`, `WriteProfileInt`, `GetProfileString`, ve `GetProfileInt` MFC uygulamasında herhangi bir işlevden kullanılabilir.  
   
  [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/cpp/cwinapp-class_9.cpp)]  
   
- Örneğin başka bir örnek için bkz [CWinApp::GetProfileInt](#getprofileint).  
+ Başka bir örnek için örneğin bakın [CWinApp::GetProfileInt](#getprofileint).  
   
 ##  <a name="writeprofilestring"></a>  CWinApp::WriteProfileString  
- Belirtilen dize uygulamanın kayıt defteri belirtilen bölüme yazmak için bu üye işlevini çağırın veya. INI dosyası.  
+ Uygulamanın kayıt defteri belirtilen bölüm içinde belirtilen dize yazmak için bu üye işlevini çağırın veya. INI dosyası.  
   
 ```  
 BOOL WriteProfileString(
@@ -2082,24 +2082,24 @@ BOOL WriteProfileString(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszSection*  
- Noktaları null ile sonlandırılmış dizeye giriş içeren bölüm belirtir. Bölüm mevcut değilse oluşturulur. Bölümün adını bağımsız durumdur; dize, herhangi bir bileşimini büyük ve küçük harfleri olabilir.  
+ Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder. Bölüm yoksa, oluşturulur. Bölüm çalışması bağımsız adıdır; dize, herhangi bir bileşimini büyük ve küçük harf olabilir.  
   
  *lpszEntry*  
- Değeri yazılacak girdisi içeren null ile sonlandırılmış bir dize noktalarına. Giriş belirtilen bölümünde mevcut değilse oluşturulur. Bu parametre NULL ise, bölüm tarafından belirtilen *lpszSection* silinir.  
+ Değeri yazılacak giriş içeren null ile sonlandırılmış bir dize işaret eder. Giriş belirtilen bölümde yoksa, oluşturulur. Bu parametre NULL ise, bölümü tarafından belirtilen *lpszSection* silinir.  
   
  *lpszValue*  
- Yazılacak dizeye noktaları. Bu parametre NULL ise, giriş tarafından belirtilen *lpszEntry* parametresi silinir.  
+ Yazılacak dize işaret eder. Bu parametre NULL ise, giriş tarafından belirtilen *lpszEntry* parametresi silinir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/cpp/cwinapp-class_9.cpp)]  
   
- Örneğin başka bir örnek için bkz [CWinApp::GetProfileInt](#getprofileint).  
+ Başka bir örnek için örneğin bakın [CWinApp::GetProfileInt](#getprofileint).  
   
 ##  <a name="setappid"></a>  CWinApp::SetAppID  
- Açıkça uygulama kullanıcısı Model kimliği için uygulama ayarlar. Bu yöntem, herhangi bir kullanıcı arabirimi (en iyi uygulama Oluşturucusu yerdir) kullanıcıya sunulan önce çağrılmalıdır.  
+ Açıkça uygulama kullanıcı modeli kimliği, uygulama için ayarlar. Herhangi bir kullanıcı arabirimi (en iyi uygulama Oluşturucu yerdir) kullanıcıya görüntülenmeden önce bu yöntem çağrılmalıdır.  
   
 ```  
 void SetAppID(LPCTSTR lpcszAppID);

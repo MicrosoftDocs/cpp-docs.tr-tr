@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ffd955400b1b27efc192a7fe0df4ef31164cda
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 00113372d86e488882c687afb56bd5e52bb74c21
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372685"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464683"
 ---
 # <a name="nmake-reference"></a>NMAKE Başvurusu
-Microsoft Program Bakımı yardımcı programı'nı (NMAKE. EXE) ile birlikte gelen bir komut satırı aracıdır [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] bir açıklama dosyasında yer alan komutları göre projeleri oluşturur.  
+Microsoft Program Bakımı yardımcı programı'nı (NMAKE. EXE) bir açıklama dosyasında bulunan komutları göre projeleri derler Visual Studio ile sunulan bir komut satırı aracıdır.  
   
- NMAKE kullanmak için bir geliştirici komut istemi penceresinde çalıştırmanız gerekir. Bir geliştirici komut istemi penceresi araçları kitaplıkları, ayarlayın ve komut satırında oluşturmak için gereken dosya yolları dahil ortam değişkeni yok. Bir geliştirici komut istemi penceresi açın hakkında ayrıntılar için bkz: [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md).  
+ NMAKE kullanmak için bir geliştirici komut istemi penceresinde çalıştırmanız gerekir. Bir geliştirici komut istemi penceresi ortam değişkenlerini ayarlamak için Araçlar, kitaplıklar ve komut satırından oluşturmak için gereken dosya yolları dahil etme sahiptir. Bir geliştirici komut istemi penceresi açmak hakkında ayrıntılı bilgi için bkz. [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md).  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
  [NMAKE Çalıştırma](../build/running-nmake.md)  
@@ -44,7 +44,7 @@ Microsoft Program Bakımı yardımcı programı'nı (NMAKE. EXE) ile birlikte ge
   
  [Nokta yönergeleri](../build/dot-directives.md)  
   
- [Makefile ön işlemesi](../build/makefile-preprocessing.md)  
+ [Derleme görevleri dosyası önişlemesi](../build/makefile-preprocessing.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komut satırında C/C++ kodu derleme](../build/building-on-the-command-line.md)   

@@ -1,5 +1,5 @@
 ---
-title: Hata ayıklayıcı özellikleri (Linux C++) | Microsoft Docs
+title: Özellikleri (Linux C++) hata ayıklayıcı | Microsoft Docs
 ms.custom: ''
 ms.date: 9/26/2017
 ms.technology:
@@ -12,27 +12,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 55f07d8903d8110410648e352d364151bf6d2a73
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df57a884186fe33d91de78647cc225f3a63a6f9f
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331106"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42464475"
 ---
 # <a name="c-debugging-properties-linux-c"></a>C++ hata ayıklama özellikleri (Linux C++)
 
-Özellik | Açıklama | Seçenekler
+Özellik | Açıklama | Seçenekleri
 --- | ---| ---
-Önceden başlatma komutu | Hata ayıklama başlatır ve hata ayıklayıcısı önce Kabuk çalıştırılan bir komut çalıştırıyor ve hata ayıklama ortamı etkilemek için kullanılır.
-Program | Uzak sistemde hata ayıklamak için program tam yolu. Uzak sistem üzerindeki bir yolu budur. Boş sol ya da değiştirmeden geçerli proje çıktısı varsayılan olarak ayarlanır.
-Program değişkenleri | Ayıklanacak programın geçirmek için komut satırı bağımsız değişkenleri.
-Çalışma dizini | Uzak uygulamanın çalışma dizini. Varsayılan olarak, kullanıcı giriş dizini.
-Ek hata ayıklayıcı komutlarını | Hata ayıklama başlatmadan önce çalıştırmak hata ayıklayıcı için ek gdb komutları.
-Hata ayıklayıcı bağlantı noktası numarası | Uzaktan hata ayıklayıcı ile hata ayıklayıcı iletişim için bağlantı noktası numarası. Bağlantı noktası, yerel olarak kullanımda olmamalıdır. Bu değer 1 ile 65535 arasında pozitif olmalıdır. Serbest bağlantı noktası numarası sağlanmadı kullanılıp kullanılmayacağını.
-Uzaktan hata ayıklayıcı bağlantı noktası numarası | Uzaktan hata ayıklayıcı sunucunun (gdbserver) üzerinde uzak sistemde dinlediği bağlantı noktası numarası. Bağlantı noktası kullanımda olan uzak sistem olmamalıdır. Bu değer 1 ile 65535 arasında pozitif olmalıdır. 4444 başlayarak bir serbest bağlantı noktası numarası sağlanmazsa kullanılır.
-Hata ayıklama modu | Hata ayıklayıcı ile gdb arabirimi nasıl belirtir. Hata ayıklayıcı gdb modunda uzak sistemde gdb Kabuk sürücüleri. Gdbserver modunda gdb yerel olarak çalıştığı ve Uzaktan çalıştıran gdbserver bağlanır. | **gdbserver**<br>**GDB**<br>
-Ek sembol arama yolları | Hata ayıklama simgeleri (solib arama yolu) için ek arama yolu.
-Hata ayıklama alt işlemleri | Alt işlemleri hata ayıklama etkinleştirilip etkinleştirilmeyeceğini belirtir.
-Python etkinleştirmek oldukça yazdırma | İfade değerlerini oldukça yazdırma etkinleştirin. Yalnızca hata ayıklama modu gdb içinde desteklenir.
+Başlatma öncesi komut | Hata ayıklama başlatılmadan ve hata ayıklayıcı önce kabukta çalıştırılan bir komut çalışıyor ve hata ayıklama ortamını etkilemek için kullanılabilir.
+Program | Uzak sistemde ayıklanacak programın tam yolu. Bu, uzak sistemdeki bir yoldur. Geçerli proje çıkışı için varsayılan olarak, boş ya da bunu değişmeden.
+Program bağımsız değişkenleri | Ayıklanan programa geçirilecek komut satırı bağımsız değişkenleri.
+Çalışma dizini | Uzak uygulamanın çalışma dizini. Varsayılan olarak, kullanıcının giriş dizinidir.
+Ek hata ayıklayıcı komutları | Hata ayıklayıcının ayıklamaya başlamadan önce çalıştırması ek gdb komutları.
+Hata ayıklayıcı bağlantı noktası numarası | Uzaktan hata ayıklayıcı ile hata ayıklayıcı iletişimi için bağlantı noktası numarası. Bağlantı noktası, yerel olarak kullanımda olmamalıdır. Bu değer 1 ile 65535 arasında pozitif olmalıdır. Bir ücretsiz bağlantı noktası numarası sağlanmazsa kullanılacaktır.
+Uzaktan hata ayıklayıcı bağlantı noktası numarası | Uzaktan hata ayıklayıcı sunucusunun (gdbserver) uzak sistemde dinlediği bağlantı noktası numarası. Bağlantı noktası uzak sistemde kullanımda olmamalıdır. Bu değer 1 ile 65535 arasında pozitif olmalıdır. 4444'ten bir ücretsiz bağlantı noktası numarası sağlanmazsa kullanılır.
+Hata ayıklama modu | Hata ayıklayıcının gdb ile nasıl arabirimleri belirtir. Gdb modunda hata ayıklayıcının gdb shell uzak sistemde sürücüler. Gdbserver modunda, gdb yerel olarak çalışır ve uzakta çalışan gdbserver'a bağlanır. | **gdbserver**<br>**GDB**<br>
+Ek sembol arama yolları | (Solib-search-path) hata ayıklama sembolleri için ek arama yolu.
+Alt işlemlerde hata ayıklama | Alt işlemlerde hata ayıklamanın etkinleştirilip etkinleştirilmeyeceğini belirtir.
+Etkinleştirme Python düzgün yazdırma | Düzgün ifade değerlerini yazdırma etkinleştirin. Yalnızca gdb hata ayıklama modunda desteklenir.
 Görselleştirme dosyası | SLT türleri için görselleştirme yönergelerini içeren varsayılan yerel görselleştirme dosyası (.natvis). Geçerli çözüme ait diğer .natvis dosyaları otomatik olarak yüklenir.
-Ek kaynaklar dosya yol haritası | Windows eşlemek için kullanılacak hata ayıklayıcı için ek yol eşitliğini Linux kaynak dosya adları için dosya adları kaynağı. Biçim "\<windows yolu > =\<linux yolu >;...". Windows yolu altında bulunan bir kaynak dosya adı başvurulacak gibi olduğu aynı göreli konumda yer alan Linux yolu altında bulundu. Yerel projesinde bulunan dosyaları, ek eşleme gerekmez.
+Ek kaynaklar dosya yolu eşlemesi | Windows eşleştirmek için kullanılacak hata ayıklayıcı için ek yol denklikleri dosya adlarını Linux kaynak dosya adlarına kaynağı. Biçim "\<windows-path > =\<linux-path >;...". Windows yolu altında bulunan bir kaynak dosya adı başvurulan gibi olan Linux yolu altında aynı göreli konumda bulunamadı. Yerel projede bulunan dosyalar ek eşleme gerekmez.

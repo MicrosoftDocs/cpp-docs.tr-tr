@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d890afe9e19782f19442e8d95709b91a8680278
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a98f1e84f3ef09d3cef5d45028374b93887fc6d4
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329809"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464596"
 ---
 # <a name="rdtscp"></a>__rdtscp
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur `rdtscp` yönerge Yazar `TSC_AUX[31:0`] bellek ve 64-bit zaman damgası sayacı döndürür (`TSC)` sonucu.  
+ Oluşturur `rdtscp` yönergesi, Yazar `TSC_AUX[31:0`] bellek ve 64-bit zaman damgası sayacı döndürür (`TSC)` sonucu.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ unsigned __int64 __rdtscp(
   
 #### <a name="parameters"></a>Parametreler  
  [out] `Aux`  
- İşaretçi makineye özgü kayıt içeriğini içeren bir konuma `TSC_AUX[31:0]`.  
+ İşaretçi makineye özgü kaydının içeriğini içeren bir konuma `TSC_AUX[31:0]`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bir 64-bit işaretsiz tamsayı değer sayısı.  
+ Bir 64-bit işaretsiz tamsayı onay sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -51,15 +51,15 @@ unsigned __int64 __rdtscp(
 |---------------|------------------|  
 |`__rdtscp`|AMD NPT ailesi ten 0Fh veya sonraki sürümler|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu iç oluşturur `rdtscp` yönergesi. Bu yönerge donanım desteğini belirlemek için arama `__cpuid` ile iç `InfoType=0x80000001` ve biti 27 denetleyin `CPUInfo[3] (EDX)`. Bu yönerge destekleniyorsa 1 ve 0 aksi bitidir.  Kullanan kodu bu iç desteklemediği donanımda çalıştırırsanız `rdtscp` yönerge, sonuçlar tahmin edilemez.  
+ Bu iç oluşturur `rdtscp` yönergesi. Bu yönerge için donanım desteği belirlemek için çağrı `__cpuid` ile iç `InfoType=0x80000001` ve bit 27 `CPUInfo[3] (EDX)`. Bu bit Aksi takdirde yönerge destekleniyorsa 1 ve 0 olur.  Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `rdtscp` yönergesi, sonuçların tahmin edilemeyeceğine.  
   
 > [!CAUTION]
->  Farklı `rdtsc`, `rdtscp` biçimlendiricisi yönerge; olması yine de, bu geçici kod derleyici taşıyabilirsiniz iç.  
+>  Farklı `rdtsc`, `rdtscp` serileştirmek bir yönergesi; Bununla birlikte, derleyici Bu kod taşıyabilirsiniz iç.  
   
- ' In önceki sürümlerinde TSC değeri yorumu donanım bu oluşturmada farklı [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  Donanım kılavuzlarına daha fazla bilgi için bkz.  
+ Bu nesil donanım TSC değerin yorumu, x64 önceki sürümlerinde farklılık gösterir.  Daha fazla bilgi için donanım kılavuzlarına bakın.  
   
  Değer anlamını `TSC_AUX[31:0]` işletim sistemine bağlıdır.  
   
@@ -83,8 +83,8 @@ int main()
 TSC_AUX was 0  
 ```  
   
-**SON Microsoft özel**  
- Gelişmiş Mikro Aygıtlar, Inc. Telif Hakkı 2007 Tüm hakları saklıdır. Gelişmiş Mikro Aygıtlar, Inc. izinle çoğaltılamaz  
+**END Microsoft özgü**  
+ Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__rdtsc](../intrinsics/rdtsc.md)   

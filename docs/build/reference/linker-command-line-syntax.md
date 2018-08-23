@@ -16,30 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd5b1b809bfbbb01bca91f3677774d396515f56e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dab367a7bcb03030f807c8f24ecab088308036bd
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376172"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465076"
 ---
 # <a name="linker-command-line-syntax"></a>Bağlayıcı Komut Satırı Sözdizimi
-BAĞLANTI çalıştırmak için. EXE, aşağıdaki komut söz dizimini kullanın:  
+BAĞLANTI çalıştırılacak. EXE, aşağıdaki komut söz dizimini kullanın:  
   
 ```  
 LINK arguments  
 ```  
   
- `arguments` Seçenekleri ve dosya adları içerir ve herhangi bir sırada belirtilebilir. Seçenekler şunlardır: işlenen ilk sonra da dosyaları. Bağımsız değişkenler ayırmak için bir veya daha fazla boşluk ya da sekme kullanın.  
+ `arguments` Seçenekleri ve dosya adları içerir ve herhangi bir sırada belirtilebilen. Seçenekler şunlardır: ilk işlenen, sonra da dosyaları. Bir veya daha fazla boşluk veya sekme bağımsız değişkenleri ayırmak için kullanın.  
   
 > [!NOTE]
->  Bu araç yalnızca başlatabilirsiniz [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] komut istemi. Bir sistem komut istemi veya dosya Gezgini başlatılamıyor.  
+>  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.  
   
- Komut satırında bir seçenek bir seçenek belirticisi oluşan bir tire (-) veya eğik çizgi (/) ve ardından seçeneği adına göre. Seçenek adları kısaltılmış olamaz. Bazı seçenekler iki nokta (:) sonra belirtilen bir bağımsız değişken alın. Hiçbir boşluk ya da sekme bir seçenek belirtimi içinde dışında/Comment seçeneğinde tırnak içine alınmış dize içinde izin verilir. Sayısal bağımsız ondalık veya dil C gösterimi belirtin. Seçenek adlarının ve kendi anahtar sözcüğü ya da dosya bağımsız değişkenler büyük küçük harfe duyarlı değildir, ancak bağımsız değişken olarak büyük küçük harfe duyarlı tanımlayıcılardır.  
+ Komut satırında bir seçenek bir seçenek belirleyicisinden oluşur. bir tire (-) veya eğik çizgi (/) seçeneğinin adı tarafından izlenen. Seçenek adları kısaltılmış olamaz. Bazı seçenekler bir iki nokta (:) sonra belirtilen bir bağımsız değişken alan. Boşluk veya sekme bir seçenek belirtimi içinde dışında/Comment seçeneğinde alıntılanmış dize içinde izin verilir. Ondalık veya C dili gösterimi sayısal bağımsız değişkenleri belirtin. Seçenek adları ve anahtar sözcüğü veya dosya adı bağımsız değişkenler büyük küçük harfe duyarlı değildir, ancak bağımsız değişken olarak tanımlayıcıları büyük küçük harf duyarlıdır.  
   
- Bağlayıcı için bir dosya geçirmek için bağlantı komutundan sonra komut satırında dosya adını belirtin. Mutlak veya göreli bir yol adıyla belirtebilirsiniz ve dosya adını joker karakterleri kullanabilirsiniz. Nokta (.) ve dosya adı uzantısı atlarsanız, bağlantı dosyasının bulma amacıyla .obj varsayar. BAĞLANTI olmaması veya dosya adı uzantıları dosyaları içeriği hakkında varsayımlarda için kullanmaz; Dosya türü, inceleyerek belirler ve buna göre işler.  
+ Bağlayıcı için bir dosya geçirmek için dosya adı bağlantı komutundan sonra komut satırında belirtin. Mutlak veya göreli bir yol ile dosya adını belirtin ve dosya adında joker karakterler kullanabilirsiniz. Nokta (.) ve dosya adı uzantısı atlarsanız, bağlantı .obj dosyası bulma amacıyla varsayar. BAĞLANTI eksikliği veya dosya adı uzantıları dosyaların içeriği hakkında varsayımlar yapmak kullanmaz; Dosya türü, inceleyerek belirler ve buna göre işler.  
   
- Link.exe (hata) başarı için sıfır değerini döndürür.  Aksi takdirde bağlayıcı bağlantıya durdurulmuş hata sayısını döndürür.  Örneğin, bağlayıcı LNK1104 oluşturursa, bağlayıcı 1104 döndürür.  Buna uygun olarak, bağlayıcı tarafından bir hata döndürdü en düşük hata numarasına 1000'dir.  128 dönüş değeri, işletim sistemi veya .config dosyası bir yapılandırma sorunu temsil eder; Yükleyici link.exe veya c2.dll yüklenmeyen.  
+ Link.exe başarı durumunda (hatasız) sıfır döndürür.  Aksi takdirde bağlayıcı bağlantı durduruldu hata numarasını döndürür.  Örneğin, bağlayıcı LNK1104 oluşturursa, bağlayıcı 1104 döndürür.  Buna göre bir hatada bağlayıcı tarafından döndürülen en düşük hata sayısı 1000'dir.  128 dönüş değeri bir yapılandırma sorunu işletim sisteminde veya .config dosyasını temsil eder; Yükleyici link.exe ya da c2.dll yüklenmedi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   

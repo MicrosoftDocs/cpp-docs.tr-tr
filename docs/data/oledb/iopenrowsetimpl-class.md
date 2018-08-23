@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e2212a10269b852d0df6f10a87e08370c1d27cf8
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 4de30a1abdf111f171ad49a028a25cc2683cbef4
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340631"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465078"
 ---
 # <a name="iopenrowsetimpl-class"></a>IOpenRowsetImpl Sınıfı
 Uygulamasını sağlar `IOpenRowset` arabirimi.  
@@ -59,10 +59,10 @@ class IOpenRowsetImpl : public IOpenRowset
 |[OpenRowset](#openrowset)|Açar ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür. (ATLDB içinde değil. H)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IOpenRowset](https://msdn.microsoft.com/library/ms716946.aspx) arabirimi için bir oturum nesnesi zorunludur. Bu açılır ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür.  
+ [IOpenRowset](/previous-versions/windows/desktop/ms716946\(v=vs.85\)) arabirimi için bir oturum nesnesi zorunludur. Bu açılır ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür.  
   
 ## <a name="createrowset"></a> Iopenrowsetımpl::createrowset
-Bir satır kümesi nesnesi oluşturur. Doğrudan kullanıcı tarafından çağrılır değil. Bkz: [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) içinde *OLE DB Programcının Başvurusu.*  
+Bir satır kümesi nesnesi oluşturur. Doğrudan kullanıcı tarafından çağrılır değil. Bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu.*  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -85,7 +85,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
  *pRowsetObj*  
  [out] Bir satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak, daha fazla iş satır kümesinde bir COM nesnesine iletmeden önce gerçekleştirmeniz gerekirse kullanılabilir. Ömrünü *pRowsetObj* bağlı olan *ppRowset*.  
   
- Diğer parametreler için bkz: [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) içinde *OLE DB Programcının Başvurusu.*  
+ Diğer parametreler için bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu.*  
 
 ## <a name="openrowset"></a> Iopenrowsetımpl::OPENROWSET
 Açar ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür.  
@@ -103,7 +103,7 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem ATLDB içinde bulunamadı. H Sağlayıcı oluşturduğunuzda ATL nesnesi Sihirbazı tarafından oluşturulur.  

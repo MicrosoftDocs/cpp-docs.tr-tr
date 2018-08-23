@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05d7897bf7b18d804d787f865b80b615b7564919
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: a2ce93a17dd2666469b8e6d56e1a106d508855f7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028297"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465284"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane sınıfı
 Bir dock sitesine yerleştirilebilen veya sekmeli bir bölmeye eklenebilen bir bölme uygular.  
@@ -927,7 +927,7 @@ virtual AFX_CS_STATUS GetDockingStatus(
 ### <a name="remarks"></a>Açıklamalar  
  Framework, bir kayan bölmesinde yerleştirme işlemek için bu yöntemi çağırır.  
   
- Kayan araç çubukları veya yerleştirme DT_IMMEDIATE yerleştirme modunu kullanmak bölmeler için yerleştirme gerçekleşmeden önce pencereyi üst çerçevenin istemci alanının dışına taşımak kullanıcı sağlamak için yerleştirme komutu framework geciktirir. Bekleme süresini milisaniye cinsinden ölçülür ve denetlenen [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) veri üyesi... Varsayılan değer olan [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) 200'dür. Bu davranışı yerleştirme davranışını öykünür [!INCLUDE[ofprword](../../mfc/reference/includes/ofprword_md.md)] 2007.  
+ Kayan araç çubukları veya yerleştirme DT_IMMEDIATE yerleştirme modunu kullanmak bölmeler için yerleştirme gerçekleşmeden önce pencereyi üst çerçevenin istemci alanının dışına taşımak kullanıcı sağlamak için yerleştirme komutu framework geciktirir. Bekleme süresini milisaniye cinsinden ölçülür ve denetlenen [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) veri üyesi... Varsayılan değer olan [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) 200'dür. Bu davranışı, yerleştirme davranışını Microsoft Word 2007 öykünür.  
   
  Gecikmeli yerleştirme durumlar için (CS_DELAY_DOCK ve CS_DELAY_DOCK_TO_TAB), kullanıcının fare düğmesini bırakmadan yerleştirme framework gerçekleştirmez. Bir bölme DT_STANDARD yerleştirme modu kullanıyorsa, framework öngörülen yerleşik konumda bir dikdörtgen görüntüler. Bir bölme DT_SMART yerleştirme modu kullanıyorsa, framework öngörülen yerleşik konumda akıllı yerleştirme işaretçilerinin ve yarı saydam dikdörtgenler görüntüler. Bölmenize yerleştirme modunu belirtmek için çağrı [CBasePane::SetDockingMode](../../mfc/reference/cbasepane-class.md#setdockingmode) yöntemi. Akıllı yerleştirme hakkında daha fazla bilgi için bkz. [CDockingManager::GetSmartDockingParams](../../mfc/reference/cdockingmanager-class.md#getsmartdockingparams).  
   
@@ -1186,7 +1186,7 @@ AFX_IMPORT_DATA static int m_nSlideSteps;
  Daha hızlı bir animasyon efekt için bu değeri azaltın. Bu değer daha yavaş bir animasyon efekti artırın.  
   
 ##  <a name="onafterchangeparent"></a>  CDockablePane::OnAfterChangeParent  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ```  
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);

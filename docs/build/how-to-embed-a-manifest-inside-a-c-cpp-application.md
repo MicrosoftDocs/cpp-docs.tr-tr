@@ -16,41 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a759533a8e88ef05e3660e0e9b36525df378334
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7dec5377bca1cc56e2444d7466fc5107d594205a
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369058"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465166"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma
-C/C++ uygulamasına (veya kitaplığa) bu çoğu senaryoda doğru çalışma zamanı davranışı güvence altına alır çünkü içinde son ikili katıştırılmış kendi bildirimi olması önerilir. Varsayılan olarak, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] kaynak dosyalarından proje oluşturduğunda bildirimi katıştırmak çalışır; bkz [Visual Studio'da bildirim oluşturma](../build/manifest-generation-in-visual-studio.md) daha fazla bilgi için. Ancak uygulama nmake kullanarak oluşturulursa, bazı değişiklikler mevcut derleme görevleri dosyası gereklidir. Bu bölümde, otomatik olarak son ikili içinde bildirimi katıştırmak için varolan derleme görevleri dosyaları değiştirmek gösterilmiştir.  
+C/C++ uygulamasına (veya kitaplık) sahip olduğundan bu doğru çalışma zamanı davranışı Çoğu senaryoda garanti eder içinde son ikili dosyada gömülü bildirimi önerilir. Varsayılan olarak, Visual Studio kaynak dosyalarından bir proje oluştururken bildirimi katıştırmak çalışır; bkz: [Visual Studio'da bildirim oluşturma](../build/manifest-generation-in-visual-studio.md) daha fazla bilgi için. Nmake kullanarak bir uygulama oluşturulursa, ancak bazı değişiklikler mevcut derleme görevleri dosyası gereklidir. Bu bölüm, nasıl otomatik olarak son ikili bildirim katıştırma için mevcut derleme görevleri dosyalarını değiştirileceğini gösterir.  
   
 ## <a name="two-approaches"></a>İki yaklaşım  
- Bir uygulama ya da kitaplık içine bildirimi katıştırmak için iki yolu vardır.  
+ Bir uygulama veya kitaplık bildirim katıştırma iki yolu vardır.  
   
--   Bir artımlı derleme yapıyorlarsa değil, doğrudan oluşturma sonrası bir adım aşağıdakine benzer bir komut satırını kullanarak bildirimi katıştırmak:  
+-   Artımlı derleme uygulamıyorsanız doğrudan oluşturma sonrası adımı aşağıdakine benzer bir komut satırı kullanarak bildirimi ekleyebilirsiniz:  
   
-     **MT.exe-MyApp.exe.manifest bildirimi-outputresource:MyApp.exe;1**  
+     **MT.exe-MyApp.exe.manifest bildirim-outputresource:MyApp.exe;1**  
   
      veya  
   
-     **MT.exe-MyLibrary.dll.manifest bildirimi-outputresource:MyLibrary.dll;2**  
+     **MT.exe-MyLibrary.dll.manifest bildirim-outputresource:MyLibrary.dll;2**  
   
-     bir EXE, DLL için 2 için (1.)  
+     (1 için bir EXE, DLL için 2.)  
   
--   Bir artımlı derleme yapıyorsanız, aşağıda gösterildiği gibi kaynak doğrudan düzenleyerek artımlı yapı devre dışı bırakın ve tam bir yeniden oluşturma neden; Bu nedenle farklı bir yaklaşım gerçekleştirilmelidir:  
+-   Artımlı derleme yapıyorsanız, doğrudan kaynak burada gösterildiği şekilde düzenleyerek artımlı oluşturmayı devre dışı bırakmak ve tam yeniden derleme neden; Bu nedenle, farklı bir yaklaşım gerçekleştirilmelidir:  
   
     -   MyApp.exe.manifest dosyası oluşturmak için ikili bağlayın.  
   
-    -   Bildirim kaynak dosyasına dönüştürün.  
+    -   Bildirim, bir kaynak dosyasına dönüştürün.  
   
     -   (Artımlı) bildirim kaynağı ikili olarak eklemek için yeniden bağlayın.  
   
- Aşağıdaki örnekler, her iki tekniği de içerecek şekilde derleme görevleri dosyaları değiştirmek nasıl gösterir.  
+ Aşağıdaki örnekler, her iki tekniği birleştirmek için derleme görevleri dosyalarını değiştirme gösterir.  
   
-## <a name="makefiles-before"></a>Derleme görevleri dosyaları (önce)  
- Nmake betik MyApp.exe, bir dosyadan yerleşik basit bir uygulama için göz önünde bulundurun:  
+## <a name="makefiles-before"></a>Derleme görevleri dosyalarını (önce)  
+ Nmake komut, MyApp.exe, bir dosyadaki oluşturulmuş basit bir uygulama için göz önünde bulundurun:  
   
 ```  
 # build MyApp.exe  
@@ -70,9 +70,9 @@ clean :
     del MyApp.obj MyApp.exe  
 ```  
   
- Bu komut dosyasını Visual C++ ile değişmeden çalıştırılırsa başarıyla MyApp.exe oluşturur. Ayrıca, çalışma zamanında bağımlı derlemeleri yüklemek için işletim sistemi tarafından kullanılacak dış bildirim dosyası MyApp.exe.manifest, oluşturur.  
+ Bu betik, Visual C++ ile değişmeden çalıştırılırsa başarıyla MyApp.exe oluşturur. Ayrıca, çalışma zamanında bağımlı derlemeleri yüklemek için işletim sistemi tarafından kullanılacak dış bildirim dosyası MyApp.exe.manifest, oluşturur.  
   
- Nmake betik MyLibrary.dll için çok benzer:  
+ Nmake betik MyLibrary.dll için çok benzer görünür:  
   
 ```  
 # build MyLibrary.dll  
@@ -95,8 +95,8 @@ clean :
     del MyLibrary.obj MyLibrary.dll  
 ```  
   
-## <a name="makefiles-after"></a>Derleme görevleri dosyaları (sonra)  
- İle oluşturmak için özgün makefile dört küçük değişiklikler yapmak zorunda bildirimleri katıştırılmış. MyApp.exe derleme görevleri dosyası için:  
+## <a name="makefiles-after"></a>Derleme görevleri dosyalarını (sonra)  
+ İle derlemek için orijinal derleme görevleri dosyaları için dört küçük değişiklikler yapmanız bildirimleri katıştırılmış. MyApp.exe için derleme görevleri dosyası:  
   
 ```  
 # build MyApp.exe  
@@ -126,7 +126,7 @@ clean :
 #^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)  
 ```  
   
- MyLibrary.dll derleme görevleri dosyası için:  
+ MyLibrary.dll için derleme görevleri dosyası:  
   
 ```  
 # build MyLibrary.dll  
@@ -159,9 +159,9 @@ clean :
 #^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)  
 ```  
   
- Derleme görevleri dosyaları artık gerçek iş, makefile.inc ve makefile.targ.inc iki dosya içerir.  
+ Derleme görevleri dosyası artık gerçek iş, makefile.inc ve makefile.targ.inc iki dosya içerir.  
   
- Makefile.inc oluşturun ve aşağıdaki bu dosyaya kopyalayın:  
+ Makefile.inc oluşturun ve içine aşağıdaki kopyalayın:  
   
 ```  
 # makefile.inc -- Include this file into existing makefile at the very top.  
@@ -232,7 +232,7 @@ _VC_MANIFEST_CLEAN=
 ####################################################  
 ```  
   
- Şimdi makefile.targ.inc oluşturun ve aşağıdaki bu dosyaya kopyalayın:  
+ Artık makefile.targ.inc oluşturun ve içine aşağıdaki kopyalayın:  
   
 ```  
 # makefile.targ.inc - include this at the very bottom of the existing makefile  

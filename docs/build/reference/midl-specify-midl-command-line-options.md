@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d125042041af1e20b6dfc4a02197c2124adbeb9a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7b3f20fddd657d1e5e57caf65ecc8e2c52afbf12
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375194"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465364"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)
 ```  
@@ -37,20 +37,20 @@ ms.locfileid: "32375194"
  burada:  
   
  `file`  
- İçeren dosyanın adını [MIDL komut satırı seçenekleri](http://msdn.microsoft.com/library/windows/desktop/aa366839).  
+ İçeren dosyanın adını [MIDL komut satırı seçeneklerini](http://msdn.microsoft.com/library/windows/desktop/aa366839).  
   
 ## <a name="remarks"></a>Açıklamalar  
- IDL dosya dönüştürme TLB dosyası için tüm seçenekleri verilmelidir `file`; MIDL komut satırı seçenekleri bağlayıcı'nın komut satırında belirtilemez. /MIDL belirtilmezse, yalnızca IDL dosya adı ve başka hiçbir seçenek MIDL derleyici çağrılır.  
+ TLB dosya bir IDL dosyası dönüştürülmesi için tüm seçenekleri verilmelidir `file`; MIDL komut satırı seçenekleri, bağlayıcı'nın komut satırında belirtilemez. /MIDL belirtilmezse, MIDL Derleyici yalnızca IDL dosyası adı ve diğer bir seçenek ile çağrılır.  
   
- Dosya her satırda bir MIDL komut satırı seçeneği içermelidir.  
+ Bu dosya her satırda bir MIDL komut satırı seçeneği içermelidir.  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **bağlayıcı** klasör.  
+2.  Tıklayın **bağlayıcı** klasör.  
   
-3.  Tıklatın **katıştırılmış IDL** özellik sayfası.  
+3.  Tıklayın **katıştırılmış IDL** özellik sayfası.  
   
 4.  Değiştirme **MIDL komutları** özelliği.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "32375194"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
  [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)   
- [/ IDLOUT (MIDL çıktı dosyalarını Adlandır)](../../build/reference/idlout-name-midl-output-files.md)   
+ [/ IDLOUT (MIDL çıktı dosyalarının adı)](../../build/reference/idlout-name-midl-output-files.md)   
  [/ IGNOREIDL (öznitelikleri Mıdl'ye işleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
  [/ TLBOUT (adı. TLB dosyası)](../../build/reference/tlbout-name-dot-tlb-file.md)   
  [Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)

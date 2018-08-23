@@ -321,17 +321,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec349041ff51441d49b5de39968417bdd071cad6
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 0f2d01de9d2ee8fe585a55d89808bb76250c242b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027985"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465834"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar sınıfı
 `CMFCToolBar` Sınıfına benzer [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md), ancak kullanıcı arabirimi özellikleri için ek destek sağlar. Bunlar düz araç çubuklarını, sık erişimli görüntüleri, büyük simgeleri, sayfa düğmelerini, kilitli araç çubuklarını, çubuk barınağı denetimleri, resim altında metinleri, arka plan görüntüleri, Resimli araç çubuklarını içerir ve sekmeli araç çubuklarını. `CMFCToolBar` Sınıfı ayrıca araç çubuğu kullanıcı tarafından özelleştirilmesi için yerleşik destek içerir ve menüler, sürükle ve bırak arasında araç çubukları ve menüler, birleşik giriş kutusu düğmeleri, düzenleme kutusu düğmeleri, renk seçiciler ve toplama düğmelerinin.
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.    
   
 ## <a name="syntax"></a>Sözdizimi  
   

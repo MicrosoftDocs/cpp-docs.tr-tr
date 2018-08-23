@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76131f4d07dec1713c80b4cd4f98f729b9ecf07b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9a3fdc9b094ebb81db1bfe841d7974c5df89ca0
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323530"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464775"
 ---
 # <a name="writemsr"></a>__writemsr
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Model belirli kaydetmek için yazma oluşturur (`wrmsr`) yönerge.  
+ Yazma modeli belirli kaydetmeyi oluşturur (`wrmsr`) yönerge.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,7 +41,7 @@ void __writemsr(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `Register`  
- Model belirli kaydedin.  
+ Model belirli kaydolun.  
   
  [in] `Value`  
  Yazılacak değer.  
@@ -50,14 +50,14 @@ void __writemsr(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__writemsr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writemsr`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir ve bu işlev yalnızca çekirdek modunda kullanılır.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir ve bu işlevi yalnızca çekirdek modunda kullanılır.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

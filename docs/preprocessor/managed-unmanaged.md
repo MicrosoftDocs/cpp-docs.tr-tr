@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 316866ac047b607ec4c92d7c6d4f8ff233ed9a3f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 908ed745e82b17dd688f062ac7021c6adf3f4851
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846382"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465596"
 ---
 # <a name="managed-unmanaged"></a>managed, unmanaged
 Derleme yönetilen veya yönetilmeyen olarak işlevler için işlev düzeyi denetimi etkinleştirin.  
@@ -35,31 +35,31 @@ Derleme yönetilen veya yönetilmeyen olarak işlevler için işlev düzeyi dene
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      #pragma managed  
+#pragma managed  
 #pragma unmanaged  
 #pragma managed([push,] on | off)  
 #pragma managed(pop)  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği işlevleri yönetilen veya yönetilmeyen olarak derlemek için modülü düzey denetim sağlar.  
+
+[/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği, yönetilen veya yönetilmeyen olarak işlevleri derlemek için Modül düzeyinde denetim sağlar.  
   
- Yönetilmeyen bir işleve yerel platformu derlenir ve söz konusu bölümü programın yürütülmesi için yerel platform ortak dil çalışma zamanı tarafından geçirilir.  
+Yönetilmeyen bir işlev için yerel platform derlenir ve söz konusu bölümü programın yürütülmesini ortak dil çalışma zamanı tarafından yerel platformuna geçirilecektir.  
   
- İşlevler, varsayılan olarak yönetilen olarak derlenen zaman **/CLR** kullanılır.  
+İşlevler, varsayılan olarak yönetilen olarak derlenir, `/clr` kullanılır.  
   
- Bu pragmaları uygularken:  
+Bu pragmaları uygularken:  
   
--   Bir işlev önceki pragma eklemek ancak işlev gövdesi içinde değil.  
+- Önceki bir işlev pragması ekleyin, ancak bir işlev gövdesinin içinde değil.  
   
--   Pragma sonra Ekle `#include` deyimleri. Önce bu pragmaları kullanmayın `#include` deyimleri.  
+- Ekleme pragmadan sonraki `#include` deyimleri. Önce bu pragmaları kullanmayın `#include` deyimleri.  
   
- Derleyici yoksayar `managed` ve `unmanaged` pragmaları varsa **/CLR** derlemede kullanılmaz.  
+Derleyicinin yoksaydığı **yönetilen** ve **yönetilmeyen** pragmalar, `/clr` derlemede kullanılmaz.  
   
- Bir şablon işlevi örneği oluşturulduğunda tanımı şablonu için zaman pragma durumunu, yönetilen yönetilmeyen mi olduğunu belirler.  
+Bir şablonu işlev örneği oluşturulduğunda şablon tanımlarında zaman pragma durumunu, yönetilen yönetilmeyen mi olduğunu belirler.  
   
- Daha fazla bilgi için bkz: [karışık derlemeleri başlatma](../dotnet/initialization-of-mixed-assemblies.md).  
+Daha fazla bilgi için [karışık derlemeleri başlatma](../dotnet/initialization-of-mixed-assemblies.md).  
   
 ## <a name="example"></a>Örnek  
   
@@ -98,4 +98,5 @@ In unmanaged function.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

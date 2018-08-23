@@ -27,15 +27,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b360b56066ecbb5cc605012b234c0ac11afb2a11
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: c2f3f4c32e2e87fdd905949ffd6cebac89a5023a
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339418"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465453"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
-Bir uygulamasını sağlar [ICommandProperties](https://msdn.microsoft.com/library/ms723044.aspx) arabirimi.  
+Bir uygulamasını sağlar [ICommandProperties](/previous-versions/windows/desktop/ms723044\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,7 +80,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ICommandProperties::GetProperties](https://msdn.microsoft.com/library/ms723119.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
@@ -96,7 +96,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ICommandProperties::SetProperties](https://msdn.microsoft.com/library/ms711497.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   

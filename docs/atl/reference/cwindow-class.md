@@ -163,12 +163,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a725ee9eb8d35ec947d21799c577243223f59ed4
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: a4f29cefa626928cb87ce7d72904a4b189113f05
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881272"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465163"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 Bu sınıf, bir pencere yönlendirmeye yönelik yöntemleri sağlar.  
@@ -976,7 +976,7 @@ DWORD GetHotKey() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sanal anahtar kod ve pencere ile ilgili sık kullanılan tuş için değiştiriciler. Olası değiştiriciler listesi için bkz. [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) Windows SDK. Winuser.h bir standart sanal anahtar kodlarının listesi için bkz.  
+ Sanal anahtar kod ve pencere ile ilgili sık kullanılan tuş için değiştiriciler. Olası değiştiriciler listesi için bkz. [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) Windows SDK. Winuser.h standart sanal anahtar kodlarının listesi için bkz.  
   
 ##  <a name="geticon"></a>  CWindow::GetIcon  
  Pencerenin büyük veya küçük simge tanıtıcısını alır.  
@@ -2091,7 +2091,7 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *wVirtualKeyCode*  
- [in] Kısayol tuşu sanal anahtar kodu. Winuser.h bir standart sanal anahtar kodlarının listesi için bkz.  
+ [in] Kısayol tuşu sanal anahtar kodu. Winuser.h standart sanal anahtar kodlarının listesi için bkz.  
   
  *wModifiers*  
  [in] Kısayol tuşu değiştiriciler. Olası değerler listesi için Windows SDK'sındaki WM_SETHOTKEY bakın.  

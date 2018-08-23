@@ -46,12 +46,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 94f90e4c60e5669789caadaaa827b4c12f1f157f
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: d5d824529e80319d95e00b6a3831af90a9506a03
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339789"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464882"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow Sınıfı
 Satır tanıtıcısı kullanılan bir varsayılan uygulamasını sağlar [Irowsetımpl](../../data/oledb/irowsetimpl-class.md) sınıfı.  
@@ -109,7 +109,7 @@ HRESULT Compare(CSimpleRow* pRow);
  Bir işaretçi bir `CSimpleRow` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Genellikle S_OK HRESULT değerini, iki satır aynı satır örneği mı S_FALSE, iki satır belirten farklı belirten. Bkz: [IRowsetIdentity::IsSameRow](https://msdn.microsoft.com/library/ms719629.aspx) içinde *OLE DB Programcının Başvurusu* diğer olası dönüş değerleri için. 
+ Genellikle S_OK HRESULT değerini, iki satır aynı satır örneği mı S_FALSE, iki satır belirten farklı belirten. Bkz: [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* diğer olası dönüş değerleri için. 
 
 ## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
 Oluşturucu.  

@@ -18,37 +18,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9e0c0d140d937b7359ff3abf9c0eae145a89210
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c6aa18936497f0415da331697aceb26f26345500
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912738"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466338"
 ---
 # <a name="charizing-operator-"></a>Karakterleştirme İşleci (#@)
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Charizing işleci yalnızca makroları bağımsız değişkenlerle kullanılabilir. Varsa **#@** biçimsel parametresi önündeki makrosu tanımında gerçek bağımsız değişkeni tek tırnak işaretleri içine ve makrosu genişletildiğinde karakteri olarak işlem görür. Örneğin:  
+Karakter haline getirme işleci yalnızca makrolar bağımsız değişkenlerle kullanılabilir. Varsa `#@` biçimsel parametre önündeki Makro tanımında gerçek bağımsız değişkeni tek tırnak işareti içine alınmış ve makro genişletildiğinde bir karakter olarak kabul edilir. Örneğin:  
   
 ```  
 #define makechar(x)  #@x  
 ```  
   
- deyim neden olur.  
+deyim neden olur  
   
 ```  
 a = makechar(b);  
 ```  
   
- için genişletilecek  
+değerine genişletilmesi  
   
 ```  
 a = 'b';  
 ```  
   
- Tek tırnak karakteri ile charizing işleci kullanılamaz.  
+Tek tırnak karakteri karakter haline getirme işleci ile kullanılamaz.  
   
- **SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)
+ 
+[Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)

@@ -1,5 +1,5 @@
 ---
-title: -SAFESEH (görüntüde güvenli özel durum işleyicileri vardır) | Microsoft Docs
+title: -SAFESEH (görüntüde güvenli özel durum işleyicileri var) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,33 +18,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54d13e6922650f0193d4bbc3469d4acf25904234
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9156fd0d4d0433cfb975c242bc87008471bc4723
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377915"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466071"
 ---
 # <a name="safeseh-image-has-safe-exception-handlers"></a>/SAFESEH (Görüntüde Güvenli Özel Durum İşleyicileri Var)
 ```  
 /SAFESEH[:NO]  
 ```  
   
- Zaman **SAFESEH** belirtilirse, bağlayıcı yalnızca oluşturacak bir görüntü, görüntünün güvenli özel durum işleyicileri oluşan bir tablo oluşturabilir. Bu tablo hangi özel durum işleyicileri yansıma için geçerli işletim sistemini belirtir.  
+ Zaman **SAFESEH** belirtildiğinde, bağlayıcı yalnızca ilişkilendiren bir görüntü, görüntünün güvenli özel durum işleyicileri tablosu oluşturabilir. Bu tabloda görüntüye ait geçerli özel durum işleyicilerine işletim sistemini belirtir.  
   
- **/ SAFESEH** için x86 bağlanırken yalnızca geçerli olan hedefler. **/ SAFESEH** not ettiğiniz özel durum işleyicileri zaten platformlar için desteklenmiyor. Örneğin, [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] ve ARM, tüm özel durum işleyicileri PDATA belirtilmiştir. ML64.exe aracılığıyla ml64 işlevleri bırakma olanak tanıyan görüntüye SEH bilgileri (XDATA ve PDATA) yayma ek açıklamaları eklemek için desteğe sahiptir. Bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md) daha fazla bilgi için.  
+ **/ SAFESEH** x86 için bağlanırken yalnızca geçerli olan hedefler. **/ SAFESEH** zaten belirtilen özel durum işleyicileri var platformlar için desteklenmiyor. Örneğin, x64 ve ARM, tüm özel durum işleyicileri PDATA içinde belirtilmiştir. ML64.exe ml64 işlevleri aracılığıyla geriye doğru izleme olanak tanıyan, görüntüye (XDATA ve PDATA) SEH bilgileri yayma ek açıklamaları ekleme desteği vardır. Bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md) daha fazla bilgi için.  
   
- Varsa **SAFESEH** belirtilmezse, tüm modüllerin güvenli özel durum işleme özelliğiyle uyumlu olup olmadıklarını bağlayıcı güvenli özel durum işleyicileri tablosu görüntüyle oluşturacak. Hiçbir modül özelliği güvenli özel durum işleme ile uyumlu değil, elde edilen görüntü güvenli özel durum işleyicileri tablosu içermez. Varsa [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) WINDOWSCE veya EFI_ * seçeneklerden birini belirtir bağlayıcı güvenli özel durum işleyicileri olarak bir tablo olan bir görüntü oluşturmak çalışmaz bu alt sistemleri hiçbiri yapabilirsiniz gibi bilgileri kullanın.  
+ Varsa **SAFESEH** belirtilmezse, tüm modüller güvenli özel durum işleme özelliği ile uyumlu değilse, bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretir. Modüllerin özellik Güvenli özel durum işleme ile uyumlu değilse, elde edilen görüntü güvenli özel durum işleyicileri tablosu içermez. Varsa [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) WINDOWSCE veya EFI_ * seçeneklerden birini belirtir bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretmek yazılmayacak söz konusu alt sistemlerde hiçbirine değişiklik bilgilerini kullanın.  
   
- Varsa **/SAFESEH:NO** belirtilirse, bağlayıcı olmayan oluşturacak güvenli özel durum işleyicileri tablosu görüntüyle özelliği güvenli özel durum işleme ile uyumlu olan tüm modülleri olsa bile.  
+ Varsa **/SAFESEH:NO** belirtildiğinde, bağlayıcı olmayan ilişkilendiren görüntünün güvenli özel durum işleyicileri tablosu ile özellik Güvenli özel durum işleme ile uyumlu olan tüm modülleri olsa bile.  
   
- Bir veya daha fazla bağlayıcı için girdi dosyaları (modüller) güvenli özel durum işleyicileri özelliği ile uyumlu olmadığı için bir görüntü oluşturmak mümkün olmaması bağlayıcı en yaygın nedeni. Önceki sürümünden Visual C++ derleyicisi ile oluşturulduğundan güvenli özel durum işleyicileri ile uyumlu olmadığı bir modül ortak bir nedeni.  
+ Görüntü üretmek yükleyemeyecektir bağlayıcı en yaygın nedeni, bir veya daha fazla bağlayıcı giriş dosyaları (modülleri) güvenli özel durum işleyicileri özelliği ile uyumlu olmadığından olmasıdır. Visual C++'ın önceki bir sürümden bir derleyici ile oluşturulduğundan bir modül, güvenli özel durum işleyicileri ile uyumlu olmaması için yaygın bir nedeni var.  
   
- Kullanarak yapılandırılmış özel durum işleyici olarak bir işlev kaydedebilirsiniz [. SAFESEH](../../assembler/masm/dot-safeseh.md).  
+ Kullanarak bir yapılandırılmış özel durum işleyici bir işlev kaydedebilirsiniz [. SAFESEH](../../assembler/masm/dot-safeseh.md).  
   
- Var olan işaretlemek mümkün değil ikili olarak güvenli özel durum işleyicileri (veya hiçbir özel durum işleyicileri); derleme zamanında güvenli özel durum işleme hakkında bilgi eklenmesi gerekir.  
+ Mevcut bir işaretlemek mümkün değildir ikili olarak güvenli özel durum işleyicileri (veya hiçbir özel durum işleyicileri); oluşturma zamanında güvenli özel durum işleme hakkında bilgi eklenmesi gerekir.  
   
- Bağlayıcı'nın Güvenli özel durum işleyicileri tablosunu yeteneği C çalışma zamanı kitaplığını kullanarak uygulamaya bağlıdır. İle bağlantı varsa [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) ve güvenli özel durum işleyicileri tablosu istediğiniz, yük config yapı (loadcfg.c CRT kaynak dosyasında bulunan gibi) sağlamanız gereken Visual C++ için tanımlanan tüm girişleri içerir. Örneğin:  
+ Bağlayıcı'nın Güvenli özel durum işleyicileri tablosu oluşturma olanağı, C çalışma zamanı kitaplığı kullanarak uygulamaya bağlıdır. İle bağlarsanız [/nodefaultlıb](../../build/reference/nodefaultlib-ignore-libraries.md) ve, güvenli özel durum işleyicileri tablosu istiyorsanız, bir yük yapılandırma yapısı (loadcfg.c CRT kaynak dosyasında bulunan gibi) sağlamak gereken Visual C++ için tanımlanmış olan tüm girişleri içerir. Örneğin:  
   
 ```  
 #include <windows.h>  
@@ -107,7 +107,7 @@ const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
   
 2.  Seçin **bağlayıcı** klasör.  
   

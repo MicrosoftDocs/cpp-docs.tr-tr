@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a3dcead3129c87b2d02f8822019af763c0fe8b8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 71b7dfca165e76880370368282bdbd7728315cfa
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340183"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464587"
 ---
 # <a name="debugbreak"></a>__debugbreak
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bir kesme noktası hata ayıklayıcı çalıştırmak için kullanıcı burada istenir kodunuzda neden olur.  
+ Bir kesme noktası, kullanıcı hata ayıklayıcıyı çalıştırmak için burada istenir kodunuzda neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,13 +40,13 @@ void __debugbreak();
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`__debugbreak`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`__debugbreak`|x86, ARM, x64|\<intrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__debugbreak` Derleyici iç, benzer [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), bir kesme noktası neden taşınabilir Win32 yoludur.  
+ `__debugbreak` Derleyici iç, benzer [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), bir kesme noktası neden taşınabilir bir Win32 yolu.  
   
 > [!NOTE]
->  İle derleme yapılırken **/CLR**, içeren bir işlev `__debugbreak` MSIL için derlenmiş. `asm int 3` bir işlev için yerel derlenecek neden olur. Daha fazla bilgi için bkz: [__asm](../assembler/inline/asm.md).  
+>  İle derlerken **/CLR**, işlevi içeren `__debugbreak` MSIL olarak derlenmiş. `asm int 3` bir işlev için yerel olarak derlenmesine neden olur. Daha fazla bilgi için [__asm](../assembler/inline/asm.md).  
   
  Örneğin:  
   
@@ -66,11 +66,11 @@ main() {
 }  
 ```  
   
- bir x86 üzerinde bilgisayar.  
+ x x86 bilgisayar.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3d4558b0fd6a4014bc9601d5260882af444f87e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6eded6b4d543248cc7bf53a0e4ba622b2b74c8b3
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912751"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464861"
 ---
 # <a name="nonamespace"></a>no_namespace
-**C++ özel**  
+**C++ özgü**  
   
- Ad alanı adı derleyici tarafından oluşturulmayan belirtir.  
+Ad alanı adı derleyici tarafından oluşturulmayan belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,12 +35,14 @@ no_namespace
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tür kitaplığı içeriği `#import` üstbilgi dosyası normalde bir ad alanında tanımlı. Ad alanı adı belirtilen **Kitaplığı** özgün IDL dosyasının deyimi. Varsa `no_namespace` özniteliği belirtilmediyse, ardından bu ad alanı derleyici tarafından oluşturulmaz.  
+ 
+Tür kitaplığı içeriğini içinde `#import` üstbilgi dosyası normalde bir ad alanında tanımlı. Ad alanı adı belirtilen `library` özgün IDL dosyası ifadesi. Varsa **no_namespace** özniteliği belirtilmediyse, sonra bu ad alanı, derleyici tarafından oluşturulmaz.  
   
- Farklı bir ad kullanmak istiyorsanız, daha sonra kullanmak [rename_namespace](../preprocessor/rename-namespace.md) yerine özniteliği.  
+Farklı bir ad kullanmak istiyorsanız, ardından kullanmak [rename_namespace](../preprocessor/rename-namespace.md) yerine özniteliği.  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

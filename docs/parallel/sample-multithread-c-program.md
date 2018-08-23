@@ -12,21 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1584d52f9ea543c95363a0f7f03cdad80442ee1c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1899187bd1ff8315300a1d60b24dbfb04f77a15a
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687998"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465162"
 ---
 # <a name="sample-multithread-c-program"></a>Örnek Çoklu İş Parçacığı Kullanan C Programı
-Bounce.c olan yeni bir örnek çoklu iş parçacığı programı harfi her iş parçacığı **bir** veya **A** yazılır. Her iş parçacığı Mutlu Yüz ekran çevresinde farklı bir renk, geri dönmeler. En fazla 32 iş parçacığı oluşturulamıyor. Programın normal sonlandırma gerçekleşir zaman `q` veya **Q** yazılır. Derleme ve Bounce.c bağlama hakkında daha fazla bilgi için bkz: [derleme ve bağlama çoklu iş parçacığı kullanan programları](../parallel/compiling-and-linking-multithread-programs.md).  
+Bounce.c olan oluşturan yeni bir örnek çoklu iş parçacığı programı harfi her iş parçacığı `a` veya `A` yazılır. Her iş parçacığı bir ekranın etrafında farklı bir renkte gülen yüz geri dönmeler. En fazla 32 iş parçacığı oluşturulabilir. Programın normal sonlandırması gerçekleşir, `q` veya `Q` yazılır. Derleme ve Bounce.c bağlama hakkında daha fazla bilgi için bkz: [derleme ve bağlama](../parallel/compiling-and-linking-multithread-programs.md).  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="code"></a>Kod  
   
-```  
+```c  
 // sample_multithread_c_program.c  
 // compile with: /c  
 //  
@@ -219,4 +219,5 @@ q
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)
+
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)

@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 386bc03234ccb29b293a413944f221189f466c80
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: c0bd8ade91e2e543e8ccf1c0a9b04525b8d81b43
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336601"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465919"
 ---
 # <a name="odbc-calling-odbc-api-functions-directly"></a>ODBC: ODBC API İşlevlerini Doğrudan Çağırma
 Veritabanı sınıfları için basit bir arabirim sağlayan bir [veri kaynağı](../../data/odbc/data-source-odbc.md) ODBC gerçekleşti. Sonuç olarak, sınıfları ODBC API'larını içermez. Denk sınıfların yeteneklerini dışında herhangi bir işlevsellik için ODBC API işlevlerini doğrudan çağırmanız gerekir. Örneğin, ODBC katalog işlevleri çağırmanız gerekir (`::SQLColumns`, `::SQLProcedures`, `::SQLTables`ve diğerleri) doğrudan.  
@@ -48,7 +48,7 @@ Veritabanı sınıfları için basit bir arabirim sağlayan bir [veri kaynağı]
   
 -   İşiniz bittiğinde, depolama serbest bırakın.  
   
- Bu adımlar hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](https://msdn.microsoft.com/library/ms710252.aspx) SDK'sı MSDN belgelerinde.  
+ Bu adımlar hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/previous-versions/windows/desktop/ms710252\(v=vs.85\)) SDK'sı MSDN belgelerinde.  
   
  Bu adımlar ek olarak, işlev dönüş değerlerini denetlemek, programınızı bitirmek ve benzeri zaman uyumsuz bir çağrı için beklenmiyor emin olmak için ek adımlar uygulaması gerekir. Son adımları AFX_SQL_ASYNC ve AFX_SQL_SYNC makroları kullanarak basitleştirebilirsiniz. Daha fazla bilgi için [makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md) içinde *MFC başvurusu*.  
 

@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b6cb84ae6ffebda3dd335bc001463e2d8579f99
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3f6851813172c39cd3c8c5dfe19b4d12ba81d090
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850300"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464575"
 ---
 # <a name="executioncharacterset"></a>execution_character_set
-Dize ve karakter değişmez değerleri için kullanılan yürütme karakter kümesini belirtir. Bu yönerge u8 öneki ile işaretlenmiş değişmez değerleri için gerekli değildir.  
+Dize ve karakter değişmez değerleri için kullanılan yürütme karakter kümesini belirtir. Bu yönerge u8 öneki ile işaretlenmiş bir sabit değerleri için gerekli değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,20 +34,22 @@ Dize ve karakter değişmez değerleri için kullanılan yürütme karakter küm
 #pragma execution_character_set("target")  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `target`  
- Hedef yürütme karakter kümesini belirtir. Şu anda desteklenen ayarlamak yalnızca hedef yürütmesi "utf-8" dir.  
+### <a name="parameters"></a>Parametreler  
+*Hedef*  
+Hedef yürütme karakter kümesini belirtir. Şu anda desteklenen ayarlama yalnızca hedef yürütme "utf-8" dir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu derleme yönergesi, Visual Studio 2015 güncelleştirme 2'de başlangıç kullanılmıyor. Kullanmanızı öneririz **/execution-charset:utf-8** veya **/utf-8** derleyici seçenekleri kullanarak birlikte `u8` ön ekini temel genişletilmiş içeren dar karakter ve dize değişmez değerleri karakter. Hakkında daha fazla bilgi için `u8` önek, bkz: [dize ve karakter değişmez değerleri](../cpp/string-and-character-literals-cpp.md). Derleyici seçenekleri hakkında daha fazla bilgi için bkz: [/execution-charset (ayarlamak yürütme karakter kümesi)](../build/reference/execution-charset-set-execution-character-set.md) ve [/utf-8 (kaynağı Ayarla ve UTF-8 kümelerine karakter yürütülebilir)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md).  
+ 
+Bu derleyici yönergesi Visual Studio 2015 güncelleştirme 2'de başlayarak kullanımdan kalkmıştır. Kullanmanızı öneririz `/execution-charset:utf-8` veya `/utf-8` derleyici seçeneklerini kullanarak birlikte `u8` genişletilmiş karakterler içeren dar karakter ve dize değişmez değerleri öneki. Hakkında daha fazla bilgi için `u8` önek, bkz: [dize ve karakter değişmez değerleri](../cpp/string-and-character-literals-cpp.md). Derleyici seçenekleri hakkında daha fazla bilgi için bkz. [/Execution-Charset (yürütme karakter kümesini Ayarla)](../build/reference/execution-charset-set-execution-character-set.md) ve [/UTF-8 (kaynak ayarlayın ve yürütülebilir karakter kümelerini UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md).  
   
- `#pragma execution_character_set("utf-8")` Yönergesi dar karakter ve kaynak kodunuzdaki dar dize değişmez değerleri yürütülebilir dosya UTF-8 olarak kodlanacak derleyici söyler. Bu çıktı kodlama, kaynak dosya kullanılan kodlama bağımsızdır.  
+`#pragma execution_character_set("utf-8")` Dar karakter ve dar dize değişmez değerleri, kaynak kodunuzdaki UTF-8 yürütülebilir dosya kodlamak için derleyici yönergesi söyler. Bu çıkış kodlama, kaynak dosya kullanılan kodlama bağımsızdır.  
   
- Varsayılan olarak, yürütme karakter kümesi geçerli kod sayfasını kullanarak dar karakterler ve dar dizeleri derleyici kodlar. Bu, geçerli kod sayfası aralığın dışında olan Unicode DBCS karakter veya bir hazır değer çıktıda varsayılan değiştirme karakteri dönüştürülür anlamına gelir. Unicode ve DBCS karakterler kendi düşük düzey bayt kesiliyor. Neredeyse kesinlikle değil ne düşündüğünüz budur. Kullanarak kaynak dosyasında değişmez değerleri için UTF-8 kodlaması belirtebilirsiniz bir `u8` öneki. Derleyici bu UTF-8 ile kodlanmış dize değişmeden çıkış geçirir. Bir bayt U8 kullanarak önekli dar karakter değişmez değerleri sığması gerekir veya Çıkışta kesilir.  
+Varsayılan olarak, yürütme karakter kümesi geçerli kod sayfasını kullanarak dar karakter ve dar dizeleri derleyici kodlar. Bu, geçerli kod sayfası aralığın dışında kalan Unicode veya DBCS karakter değişmez değer olarak çıktı varsayılan değiştirme karakteri dönüştürülür anlamına gelir. Unicode ve DBCS karakterler, düşük düzey bayta kesilir. Neredeyse kesindir değil ne düşündüğünüz budur. Kullanarak kaynak dosyadaki sabit değerleri için UTF-8 kodlamasını belirtebilirsiniz bir `u8` önek. Derleyici bu UTF-8 olarak kodlanmış dizeler değiştirilmemiş çıkışı geçirir. Bir bayt U8 kullanılarak öneklenmemiştir dar karakter değişmez değerleri uygun olmalıdır veya çıktı kesirli kısmı.  
   
- Varsayılan olarak, Visual Studio çıktı için kaynak kodu yorumlamak için kullanılan kaynak karakter kümesi olarak geçerli kod sayfası kullanır. İçinde bir dosyayı okurken Visual Studio, geçerli kod sayfasına göre dosya kod sayfası ayarlamadıysanız veya UTF-16 karakter veya bir bayt sırası işareti (BOM) dosyasının başında algılanan sürece yorumlar. Otomatik algılama UTF-8 bir ürün reçetesi olmadan olarak kodlanmış kaynak dosyalarını karşılaştığında, geçerli kod sayfası UTF-8 ayarlanamıyor çünkü bunlar geçerli kod sayfası kullanılarak kodlanır Visual Studio varsayar. Kod sayfası derleyici uyarıları ve hataları neden olabilir aralığın dışında belirtilen ya da otomatik olarak algılanan karakter kaynak dosya.  
+Varsayılan olarak, Visual Studio, kaynak kodunuz için çıkış yorumlamak için kullanılan kaynak karakter kümesi olarak geçerli kod sayfası kullanır. Bir dosya içinde okunduğunda, Visual Studio, geçerli kod sayfasına göre dosya kod sayfası ayarlamadıysanız veya dosyanın başında bayt sırası işareti (BOM) ya da UTF-16 karakter algılanan sürece yorumlar. Otomatik algılama kaynak dosyaları içermeyen bir ürün reçetesi UTF-8 olarak kodlanmış karşılaştığında geçerli kod sayfası UTF-8 olarak ayarlanamıyor çünkü Visual Studio, geçerli kod sayfası kullanılarak kodlanır varsayar. Kod sayfası Derleyici uyarılarını ve hataları neden aralığı dışında belirtilen veya otomatik olarak algılanan karakter kaynak dosyası.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
- [/Execution-Charset (ayarlamak yürütme karakter kümesi)](../build/reference/execution-charset-set-execution-character-set.md)   
- [/utf-8 (Kaynak ve Yürütülebilir karakter kümelerini UTF-8 olarak ayarla)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
+ 
+[Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
+[/ Execution-Charset (yürütme karakter kümesini Ayarla)](../build/reference/execution-charset-set-execution-character-set.md)   
+[/utf-8 (Kaynak ve Yürütülebilir karakter kümelerini UTF-8 olarak ayarla)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

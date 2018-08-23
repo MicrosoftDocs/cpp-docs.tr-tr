@@ -17,15 +17,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 713e11262a660bcd42aea27bcb0da9e5f7f0c956
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: edf1289b20d710ff6b579a56150d01568fb21fbd
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052833"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465172"
 ---
 # <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler Başvurusu
-Microsoft makro derleyici (MASM), satır içi derleme birkaç avantaj sağlar. MASM döngü, aritmetik ve metin dizesi işleme gibi özellikleri olan bir makro dili içerir. 386, 486 ve Pentium işlemcilerini yönerge kümesi desteklediğinden MASM, ayrıca donanım üzerinde daha fazla denetim sağlar. MASM kullanarak, aynı zamanda süresi ve bellek ek yükü azaltabilir.  
+Microsoft Macro Assembler (MASM), satır içi derleme kıyasla çeşitli avantajlar sağlar. Döngü aritmetik ve metin dizesi işleme gibi özelliklere sahip bir makro dili MASM içerir. 386 486 ve Pentium İşlemci yönerge kümesini desteklediğinden MASM, ayrıca donanım üzerinde daha fazla denetim sağlar. MASM kullanarak, süresi ve bellek ek yükü de azaltabilir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [ML ve ML64 komut satırı seçeneği](../../assembler/masm/ml-and-ml64-command-line-reference.md)  
@@ -35,25 +35,25 @@ Microsoft makro derleyici (MASM), satır içi derleme birkaç avantaj sağlar. M
  ML.exe önemli ve önemli olmayan hata iletileri ve uyarılar açıklar.  
   
  [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)  
- MASM yönergeleri kullanımını ele makalelerinin bağlantıları sağlar.  
+ MASM yönergeleri kullanımını açıklayan makalelerin bağlantıları sağlar.  
   
  [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)  
- MASM sembolleri kullanımını ele makalelerinin bağlantıları sağlar.  
+ MASM sembolleri kullanımını açıklayan makalelerin bağlantıları sağlar.  
   
  [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)  
- MASM işleçleri kullanımını ele makalelerinin bağlantıları sağlar.  
+ MASM işleçleri kullanımını açıklayan makalelerin bağlantıları sağlar.  
   
  [İşlemci Üreticisi Programlama Kılavuzları](../../assembler/masm/processor-manufacturer-programming-manuals.md)  
- Üretilen, satışı, veya Microsoft tarafından desteklenen işlemciler programlama bilgilerini içerebilir Web sitelerine bağlantılar sağlar.  
+ Üretilen, satılan, veya Microsoft tarafından desteklenen işlemciler programlama bilgileri içerebilen Web sitelerinin bağlantılarını sağlar.  
   
  [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md)  
- Çıktı oluşturma hakkında bilgi dosyalarını [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)].  
+ X64 için çıktı dosyaları oluşturmak hakkında bilgi.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Visual C++](../../visual-cpp-in-visual-studio.md)  
- Visual Studio ve Visual C++ Belgeleri farklı bölümlerine ait bağlantılar sağlanmıştır.  
+ Visual Studio ve Visual C++ belgelerinin farklı alanlarına bağlantılar sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../../intrinsics/compiler-intrinsics.md)   
  [x86Intrinsics](../../intrinsics/x86-intrinsics-list.md)   
- [x64 (amd64) iç bilgileri](../../intrinsics/x64-amd64-intrinsics-list.md)
+ [x64 (amd64) Yapısalları](../../intrinsics/x64-amd64-intrinsics-list.md)

@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bad195e0885c18748ddd39d2ed6e7a565606398
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2930ab9cbc5b847252e20f185b335a547317fa5b
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840439"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464760"
 ---
 # <a name="rename-import"></a>rename (#import)
-**C++ özel**  
+**C++ özgü**  
   
- Ad çakışma sorunlarını çözmek çalışır.  
+Ad çakışması sorunlarını geçici olarak çalışır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,37 +34,39 @@ ms.locfileid: "33840439"
 rename("OldName","NewName")  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `OldName`  
- Tür kitaplığı eski adı.  
+### <a name="parameters"></a>Parametreler  
+*OldName*  
+Eski tür kitaplığı adı.  
   
- `NewName`  
- Eski adı yerine kullanılacak adı.  
+*Yeni ad*  
+Eski adı yerine kullanılacak adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu öznitelik belirtilirse, derleyicinin tüm oluşumlarını değiştirir *EskiAd* kullanıcı tarafından sağlanan ile bir tür kitaplığı'nda *NewName* elde edilen üstbilgi dosyalarında.  
+ 
+Bu öznitelik belirtilmezse, derleyici tüm oluşumlarını değiştirir *OldName* kullanıcı tarafından sağlanan ile bir tür kitaplığındaki *NewName* elde edilen üstbilgi dosyalarında.  
   
- Bu öznitelik, bir tür kitaplığı adı Sistem üstbilgi dosyaları makrosu tanımında ile örtüşür olduğunda kullanılabilir. Bu durum güvenilmedi sonra çeşitli sözdizimi hataları, gibi oluşturulmayacak [derleyici hatası C2059](../error-messages/compiler-errors-1/compiler-error-c2059.md) ve [derleyici hatası C2061](../error-messages/compiler-errors-1/compiler-error-c2061.md).  
+Bu öznitelik, bir tür kitaplığı adı bir sistem üst bilgi dosyaları Makro tanımında ile örtüşür olduğunda kullanılabilir. Bu durum çözümlenmedi sonra çeşitli söz dizimi hatalarını, gibi oluşturulacak [derleyici hatası C2059](../error-messages/compiler-errors-1/compiler-error-c2059.md) ve [derleyici hatası C2061](../error-messages/compiler-errors-1/compiler-error-c2061.md).  
   
 > [!NOTE]
->  Tür Kitaplığı'nda, sonuçta elde edilen üstbilgi dosyasında kullanılan bir ad değil için adı için kullanılan bir yerini alır.  
+> Sonuçta elde edilen üstbilgi dosyasında kullanılan bir ad tür kitaplığındaki kullanılan adı yerini almaktadır.  
   
- Örneğin, adında bir özellik varsayalım `MyParent` bir tür kitaplığı ve makro bulunmaktadır `GetMyParent` üstbilgi dosyasında tanımlanan ve önce kullanılan `#import`. Bu yana `GetMyParent` sarmalayıcı işlevi hata işleme için varsayılan ad olan **almak** özelliği, bir ad çakışması gerçekleşir. Sorunu çözmek için şu özniteliği kullanın `#import` deyimi:  
+Örneğin, adında bir özellik varsayalım `MyParent` bir tür kitaplığı ve makro var. `GetMyParent` üstbilgi dosyasında tanımlanır ve önce kullanılan `#import`. Bu yana `GetMyParent` bir sarmalayıcı işlevi hata işleme için varsayılan adı `get` özelliği, bir ad çakışması gerçekleşir. Sorunu çözmek için şu özniteliği kullanın. `#import` deyimi:  
   
 ```  
 rename("MyParent","MyParentX")  
 ```  
   
- ad yeniden adlandırır `MyParent` Tür Kitaplığı'nda. Yeniden adlandırma girişimi `GetMyParent` sarmalayıcı adı başarısız olur:  
+adı yeniden adlandırır `MyParent` tür kitaplığında. Yeniden adlandırma denemesi `GetMyParent` sarmalayıcı adı başarısız olur:  
   
 ```  
 rename("GetMyParent","GetMyParentX")  
 ```  
   
- Bunun nedeni, ad `GetMyParent` elde edilen tür kitaplığı üstbilgi dosyası, yalnızca oluşur.  
+Bunun nedeni, adı `GetMyParent` yalnızca elde edilen tür kitaplığı üstbilgi dosyası oluşur.  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

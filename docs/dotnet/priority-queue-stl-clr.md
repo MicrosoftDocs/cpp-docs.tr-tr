@@ -61,12 +61,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: cb2ee3fa52612ee3c6abae7a57046564c10c8afb
-ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
+ms.openlocfilehash: 573b365e0ca0d1c5b607144b1d143796e1ce927c
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39376043"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465272"
 ---
 # <a name="priorityqueue-stlclr"></a>priority_queue (STL/CLR)
 Şablon sınıfı bir değişen sınırlı erişimi öğe dizisi sıralı uzunluktaki denetleyen bir nesneyi tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `priority_queue` temel alınan bir kapsayıcı öncelikli bir kuyruk olarak yönetilecek.  
@@ -855,7 +855,7 @@ void push(value_type val);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevi değere sahip bir öğe ekler `val` içine denetlenen dizideki ve yığın uzmanlık alanı korumak için denetlenen dizideki yeniden sıralar. Kuyruğa başka bir öğe eklemek için kullanın.  
+ Üye işlevi değere sahip bir öğe ekler `val` denetlenen bir dizi içine ve yığın uzmanlık alanı korumak için denetlenen dizideki yeniden sıralar. Kuyruğa başka bir öğe eklemek için kullanın.  
   
 ### <a name="example"></a>Örnek  
   

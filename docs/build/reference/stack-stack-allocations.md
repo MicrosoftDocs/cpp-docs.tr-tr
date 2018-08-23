@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8ee3fac90bcbb972278d9b3e2cf7cebd62fedf4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 29ed2efa73d3ec1014bf0a65e7b4b1b1b85cf879
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377882"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464499"
 ---
 # <a name="stack-stack-allocations"></a>/STACK (Yığın Ayırmaları)
 ```  
@@ -35,19 +35,19 @@ ms.locfileid: "32377882"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- /STACK seçeneği yığın boyutunu bayt cinsinden ayarlar. Yalnızca bir .exe dosyası oluşturduğunuzda bu seçeneği kullanın.  
+ /STACK seçeneği, yığın boyunu bayt cinsinden ayarlar. Bir .exe dosyası oluşturduğunuzda bu seçeneği kullanın.  
   
- `reserve` Değeri sanal bellek toplam yığın ayırma belirtir. ARM, x86 için ve [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] makineler, varsayılan yığın boyutu 1 MB olduğu.  
+ `reserve` Değeri sanal bellekte toplam yığın ayırma belirtir. ARM için x86 ve x64 makineler, varsayılan yığın boyutu 1 MB olan.  
   
- `commit` işletim sistemi tarafından tercüme tabidir. Windows WindowsRT aynı anda ayırmak için fiziksel bellek miktarını belirtir. Kaydedilebilen sanal bellek disk belleği dosyasında ayrılacak alanı neden olur. Yüksek bir `commit` zaman uygulama daha fazla yığın alanı gerekiyor, ancak bellek gereksinimlerini ve büyük olasılıkla başlangıç zamanını artırır zaman kaydeder. ARM, x86 için ve [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] makineler, varsayılan yürütme değer olan 4 KB.  
+ `commit` işletim sistemi tarafından yorumu tabidir. Windows WindowsRT içinde aynı anda ayrılacak fiziksel bellek miktarını belirtir. Yürütülen sanal bellek disk belleği dosyasında ayrılacak alanı neden olur. Daha yüksek bir `commit` değeri kaydeder zaman zaman uygulama daha fazla yığın alanı gerekiyor, ancak bellek gereksinimleri ve büyük olasılıkla başlangıç süresini artırır. ARM için 4 KB x86 ve x64 makineler, varsayılan işleme değer olur.  
   
- Belirtin `reserve` ve `commit` değerleri ondalık veya dil C gösterimi.  
+ Belirtin `reserve` ve `commit` değerleri ondalık ya da C dili gösterimi.  
   
- Yığın boyutunu ayarlamak için başka bir yolu [STACKSIZE](../../build/reference/stacksize.md) bir modül-tanımlama (.def) dosyası deyiminde. **STACKSIZE** yığın ayırmaları geçersiz kılar (/ yığın) her ikisi de belirtilirse seçeneği. .Exe dosyasını kullanarak oluşturulduktan sonra yığın boyutunu değiştirebilirsiniz [EDITBIN](../../build/reference/editbin-reference.md) aracı.  
+ Yığın boyutunu ayarlamak için başka bir yöntem, [STACKSIZE](../../build/reference/stacksize.md) deyiminde bir modül-tanımlama (.def) dosyası. **STACKSIZE** yığın ayırmaları geçersiz kılar. (/ yığın) her ikisi de belirtilirse seçeneği. .Exe dosyasını kullanarak oluşturulduktan sonra yığın boyutu değiştirebilirsiniz [EDITBIN](../../build/reference/editbin-reference.md) aracı.  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
   
 2.  Seçin **bağlayıcı** klasör.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "32377882"
   
 4.  Aşağıdaki özelliklerden birini değiştirin:  
   
-    -   **Yığın ayırma boyutu**  
+    -   **Yığın işleme boyutu**  
   
     -   **Yığın ayırma boyutu**  
   

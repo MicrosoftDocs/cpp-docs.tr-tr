@@ -170,16 +170,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b80dbc4383b18f3e8183ae06d2259398b5e1223
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 04217a03defcecf990a943d5d99f8370a966a5f7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852555"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465922"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu sınıfı
 Windows açılır menü işlevselliğini uygular ve etiket menüler ve araç ipuçları gibi özellikleri ekleyerek genişletir.
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.    
   
 ## <a name="syntax"></a>Sözdizimi  
   

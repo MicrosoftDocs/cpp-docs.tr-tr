@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b58b02781f266b24fa321b3849f42b2e090b860
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9a5e9ce2480612cdc84982cd1474e003d9151557
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842982"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465268"
 ---
 # <a name="strictgscheck"></a>strict_gs_check
 Bu pragma artırılmış güvenlik denetimi sağlar.  
@@ -36,16 +36,18 @@ Bu pragma artırılmış güvenlik denetimi sağlar.
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yığın tabanlı arabellek taşmasının bazı kategorilerini algılamaya yardımcı olması için, derleyiciye işlev yığınına rasgele bir tanımlama bilgisi eklemesini bildirir. Varsayılan olarak, /GS (Arabellek Güvenlik Denetimi) derleyici seçeneği tüm işlevler için bir tanımlama bilgisi eklemez. Daha fazla bilgi için bkz: [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md).  
+ 
+Yığın tabanlı arabellek taşmasının bazı kategorilerini algılamaya yardımcı olması için, derleyiciye işlev yığınına rasgele bir tanımlama bilgisi eklemesini bildirir. Varsayılan olarak, `/GS` (arabellek güvenlik denetimi) derleyici seçeneği tüm işlevler için bir tanımlama bilgisi eklenmez. Daha fazla bilgi için [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md).  
   
- Strict_gs_check 'i etkinleştirmek için /GS (Arabellek Güvenlik Denetimi) ile derlemeniz gerekir.  
+İle derleme `/GS` (arabellek güvenlik etkinleştirmek için işaretleyin) **strict_gs_check**.  
   
- Bu pragmayı, zarar verme olasılığı bulunan verilerin gördüğü kod modüllerinde kullanın. Bu pragma çok agresiftir ve bu savunmayı gerektirmeyen işlevlere uygulanır. Ancak sonuç uygulamasının performansı üzerindeki etkisini en aza indirmek için optimize edilmiştir.  
+Bu pragmayı, zarar verme olasılığı bulunan verilerin gördüğü kod modüllerinde kullanın. Bu pragma çok agresiftir ve bu savunmayı gerektirmeyen işlevlere uygulanır. Ancak sonuç uygulamasının performansı üzerindeki etkisini en aza indirmek için optimize edilmiştir.  
   
- Bu pragmayı kullansanız bile, güvenli kod yazmak için çaba göstermelisiniz. Diğer bir deyişle, kodunuzu hiçbir arabellek taşmaları sahip olduğundan emin olun. strict_gs_check, uygulama kodunuzda kalır arabellek taşmaları korunmasına.  
+Bu pragmayı kullansanız bile, güvenli kod yazmak için çaba göstermelisiniz. Diğer bir deyişle, kodunuzu hiçbir arabellek taşması olduğundan emin olun. **strict_gs_check** uygulama kodunuzda kalan arabellek taşmalarına korunmasına.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kodda, bir diziyi yerel bir diziye kopyaladığımızda arabellek taşması oluşur. Bu kodu /GS ile derlerseniz, dizi veri türü bir işaretçi olduğu için yığına hiçbir tanımlama bilgisi eklenmez. Strict_gs_check pragmasını eklemek, yığın tanımlama bilgisini işlev yığınına zorlar.  
+ 
+Aşağıdaki kodda, bir diziyi yerel bir diziye kopyaladığımızda arabellek taşması oluşur. Bu kod ile derleme yaparken `/GS`, dizi veri türü bir işaretçi olduğu için yığına tanımlama bilgisi eklenir. Ekleme **strict_gs_check** pragması, yığın tanımlama bilgisini işlev yığınına zorlar.  
   
 ```cpp  
 // pragma_strict_gs_check.cpp  
@@ -70,9 +72,9 @@ void ** ReverseArray(void **pData,
   
     return pData;  
 }  
-  
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
- [/GS (Arabellek Güvenlik Denetimi)](../build/reference/gs-buffer-security-check.md)
+ 
+[Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
+[/GS (Arabellek Güvenlik Denetimi)](../build/reference/gs-buffer-security-check.md)

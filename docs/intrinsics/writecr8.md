@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26c8b474c8b2c37e082c8c49f0d232f3f91d6a2c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e3fa5bda2af8d6d6d95474743725c399d3ef5269
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324635"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465183"
 ---
 # <a name="writecr8"></a>__writecr8
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Değer Yazar `Data` CR8 kaydı.  
+ Değeri Yazar `Data` CR8 kaydı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,14 +44,14 @@ void writecr8(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__writecr8`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writecr8`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç kullanılabilir.  
+ Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

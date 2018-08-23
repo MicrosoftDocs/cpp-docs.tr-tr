@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf756a411404d2ebb821d5b226818844acfca75b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bbf715e2cbd19d139904438e722e4d0b72e29f29
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849554"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465969"
 ---
 # <a name="noimplementation"></a>no_implementation
-**C++ özel**  
+**C++ özgü**  
   
- Sarmalayıcı üye işlevleri uygulamaları içeren .tli üstbilgi nesil gizler.  
+Kapsayıcı üye işlevleri uygulamalarını içeren .tli başlık oluşturulmasını bastırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,12 +35,14 @@ no_implementation
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu öznitelik belirtilirse, .tlh üstbilgiyle türü kitaplık öğelerini göstermek için bildirimleri olmadan oluşturulması bir `#include` .tli üstbilgi dosyası bildirimini.  
+ 
+Bu öznitelik belirtilmezse, .tlh üstbilgiyle türü kitaplık öğelerini göstermek için bildirimleri olmadan oluşturulan bir `#include` deyimini .tli üstbilgi dosyasını dahil edin.  
   
- Bu öznitelik ile birlikte kullanılan [implementation_only](../preprocessor/implementation-only.md).  
+Bu öznitelik ile birlikte kullanılan [implementation_only](../preprocessor/implementation-only.md).  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

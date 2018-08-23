@@ -21,17 +21,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 928391912d325faaf2e70a27519fdf969539fbca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 02051010741ff1f70f1be8d94dff0179b4d2aee2
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337645"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465180"
 ---
 # <a name="bittestandset-bittestandset64"></a>_bittestandset, _bittestandset64
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bit arabirimini inceleyen bir yönerge oluşturmak `b` adresinin `a`, geçerli değerini döndürür ve bit 1'e ayarlar.  
+ Bit arabirimini inceleyen bir yönerge oluşturur `b` adresinin `a`geçerli değerini döndürür ve 1 bit ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,8 +47,8 @@ unsigned char _bittestandset64(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out] `a`  
- İncelemek için bellek için bir işaretçi.  
+ [out içinde] `a`  
+ İncelemek için bellek işaretçisi.  
   
  [in] `b`  
  Test etmek için bit konumu.  
@@ -60,13 +60,13 @@ unsigned char _bittestandset64(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_bittestandset`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_bittestandset64`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_bittestandset`|x86, ARM, x64|  
+|`_bittestandset64`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -153,7 +153,7 @@ Flags: 0x4
 Flags: 0x0  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

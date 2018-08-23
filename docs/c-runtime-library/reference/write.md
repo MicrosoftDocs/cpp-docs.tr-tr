@@ -18,6 +18,7 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - _write
@@ -32,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f800c42480b6518c7482c15bfa18646b1988dc8a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 917309717d72048650d2b3975fefd74a1db50949
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414802"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42464584"
 ---
 # <a name="write"></a>_write
 
@@ -56,7 +57,7 @@ int _write(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Dosya tanımlayıcısı dosyasının içine veriler yazılır.
+Verilerin üzerine yazılacağını dosyasının dosya tanımlayıcısı.
 
 *Arabellek*<br/>
 Yazılacak veriler.
@@ -66,19 +67,19 @@ Bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_write** gerçekte yazılan bayt sayısını döndürür. Diskte kalan gerçek alan işlevi diske yazmak için çalışıyor arabellek boyutu küçükse **_write** başarısız olur ve herhangi bir arabellek İçindekiler diske temizleme değil. Dönüş değeri-1 hata gösterir. Geçersiz parametreler aktarılırsa, bu işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevi -1 döndürür ve **errno** üç değerlerden birine ayarlayın: **EBADF**, yani dosya tanımlayıcısı geçersiz veya dosya yazma için; açılmadı **ENOSPC**, cihazda; işlemi için yeterli alan yok. anlamına sol veya **EINVAL**, anlamına *arabellek* null işaretçinin veya, bir tek *sayısı* bayt Unicode modda bir dosyaya yazılacak geçirildi.
+Başarılı olursa, **_write** gerçekte yazılan bayt sayısını döndürür. Diskte kalan gerçek alan işlev diske yazmak için çalışıyor arabellek boyutu altındaysa **_write** başarısız olur ve herhangi bir arabellek içeriği diske temizleme değil. -1 dönüş değeri bir hata olduğunu gösterir. Geçersiz parametreler, bu işlev geçersiz parametre işleyicisi açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev -1 döndürür ve **errno** üç değerlerden birine ayarlanır: **EBADF**, yani dosya tanımlayıcısı geçersiz veya dosya; yazma için açılmadı **ENOSPC**, operation;'için cihazda yeterli alan yok anlamına gelen sol veya **EINVAL**, anlamına *arabellek* null bir işaretçi ya da, bir tek *sayısı* bayt Unicode modunda bir dosyaya yazılacak geçirildi.
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Dosya metin modunda açılırsa, her bir satır besleme karakteri bir satır başı - çıktıda satır besleme çifti ile değiştirilir. Değiştirme dönüş değeri etkilemez.
+Dosyayı metin modunda açıldıysa, her bir satır besleme karakteri bir satır başı - Çıkışta satır besleme çifti ile değiştirilir. Bu değişiklik, dönüş değeri etkilemez.
 
-Dosya Unicode çeviri modunda açılır olduğunda — Örneğin, varsa *fd* kullanılarak açılmaktadır **_kurulum Aç** veya **_sopen** ve içeren bir mod parametresi **_O_ WTEXT**, **_O_U16TEXT**, veya **_O_U8TEXT**, veya kullanarak açılırsa **fopen** ve içeren bir mod parametresi **ccs = UNICODE**, **ccs UTF-16LE =**, veya **ccs = UTF-8**, veya modunu kullanarak bir Unicode çeviri modu değiştirilirse **_setmode**—*arabellek* bir dizi için bir işaretçi olarak yorumlanır **wchar_t** içeren **UTF-16** veri. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+Dosya Unicode çeviri modunda açılır olduğunda — Örneğin, varsa *fd* kullanılarak açılmaktadır **_aç** veya **_sopen** ve içeren bir mode parametresi **_O_ WTEXT**, **_O_U16TEXT**, veya **_O_U8TEXT**, ya da kullanarak açıldığında **fopen** ve içeren bir mode parametresi **ccs = UNICODE**, **ccs UTF-16LE =**, veya **ccs = UTF-8**, veya modu kullanılarak bir Unicode çeviri moduna değiştirilirse **_setmode**—*arabellek* bir dizi için bir işaretçi olarak yorumlanır **wchar_t** içeren **UTF-16** veri. Bu modda tek sayıda bayt yazma girişimi, bir parametre doğrulama hatasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Write** işlev yazma *sayısı* baytlar *arabellek* ilişkili dosyasına *fd*. Dosya işaretçisini (varsa) geçerli konumunu verilen dosyayla ilişkili yazma işlemi başlar. Dosya ekleme için açık olduğunda, dosyanın geçerli sonunda işlemi başlar. Yazma işleminden sonra dosya işaretçisini tarafından gerçekten yazılan bayt sayısı artar.
+**_Write** işlevi *sayısı* bayt *arabellek* ilişkili dosyasına *fd*. Belirtilen dosya ile ilgili dosya işaretçisini (varsa) geçerli konumu yazma işlemi başlar. Dosya ekleme için açık değilse, geçerli dosyanın sonunda işlemi başlar. Sonra yazma işlemi, dosya işaretçisini gerçekte yazılan bayt sayısına göre artar.
 
-Dosyalara metin modunda açılmış yazılırken **_write** CTRL + Z karakteri mantıksal son dosya değerlendirir. Bir cihaza yazılırken **_write** bir çıktı Sonlandırıcı olarak arabelleği CTRL + Z karakteri değerlendirir.
+Metin modunda açılan dosyalar için yazarken **_write** CTRL + Z karakterini mantıksal-dosya sonu değerlendirir. Bir cihaz için yazarken **_write** CTRL + Z karakterini arabelleğindeki çıkış Sonlandırıcı olarak değerlendirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -86,7 +87,7 @@ Dosyalara metin modunda açılmış yazılırken **_write** CTRL + Z karakteri m
 |-------------|---------------------|
 |**_write**|\<io.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

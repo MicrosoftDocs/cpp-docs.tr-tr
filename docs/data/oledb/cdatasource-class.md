@@ -68,12 +68,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5c3bd275c189e7c99bbc275caf31436b5f5a1d5e
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 69a96cf199e7ce131e91f750cdd83ebc915c38d8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340091"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466460"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 Bir veri kaynağına bağlantı sağlayıcısı üzerinden temsil eden bir OLE DB veri kaynağı nesnesi karşılık gelir.  
@@ -153,7 +153,7 @@ HRESULT GetProperties(ULONG ulPropIDSets,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IDBProperties::GetProperties](https://msdn.microsoft.com/library/ms714344.aspx) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
+ Bkz: [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  
@@ -238,10 +238,10 @@ HRESULT Open(LPCSTR szProgID,
  [in] `CLSID` Veri sağlayıcısı.  
   
  *pPropSet*  
- [in] Bir dizi işaretçi [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://msdn.microsoft.com/library/ms713696.aspx) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
+ [in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
   
  *nPropertySets*  
- [in] Sayısını [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) yapıları geçirilen *pPropSet* bağımsız değişken.  
+ [in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken.  
   
  *Sağlayıcı adı*  
  [in] Bağlanılacak veritabanının adı.  
@@ -253,7 +253,7 @@ HRESULT Open(LPCSTR szProgID,
  [in] Kullanıcının parolası.  
   
  *nInitMode*  
- [in] Veritabanı başlatma modu. Bkz: [başlatma özellikleri](https://msdn.microsoft.com/library/ms723127.aspx)içinde *OLE DB Programcının Başvurusu* geçerli başlatma modlarının bir listesi için Windows SDK. Varsa *nInitMode* sıfır, hiçbir başlatma işlemi modu bağlantıyı açmak için kullanılan özellik kümesine eklenir.  
+ [in] Veritabanı başlatma modu. Bkz: [başlatma özellikleri](/previous-versions/windows/desktop/ms723127\(v=vs.85\))içinde *OLE DB Programcının Başvurusu* geçerli başlatma modlarının bir listesi için Windows SDK. Varsa *nInitMode* sıfır, hiçbir başlatma işlemi modu bağlantıyı açmak için kullanılan özellik kümesine eklenir.  
   
  *szProgID*  
  [in] Bir program tanımlayıcısı.  
@@ -293,7 +293,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
  *szFileName*  
  [in] Bir dosya, genellikle bir veri kaynağı bağlantısı adı (. UDL) dosyası.  
   
- Veri bağlantısı dosyalarını (UDL dosyaları) hakkında daha fazla bilgi için bkz: [veri bağlantısı API'sine genel bakış](https://msdn.microsoft.com/library/ms718102.aspx) Windows SDK.  
+ Veri bağlantısı dosyalarını (UDL dosyaları) hakkında daha fazla bilgi için bkz: [veri bağlantısı API'sine genel bakış](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  
@@ -376,10 +376,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
  [in] Program Kimliği bir veri sağlayıcısı.  
   
  *pPropset*  
- [in] Bir dizi işaretçi [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://msdn.microsoft.com/library/ms713696.aspx) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Veri kaynağı nesnesi başlatılırsa, özellikleri veri kaynağı özelliği grubuna ait olmalıdır. Aynı özellik birden çok kez belirtilmişse *pPropset*, hangi değerin kullanıldığını sağlayıcıya özgü kaldırılır. Varsa *ulPropSets* sıfırsa, bu parametre yoksayılır.  
+ [in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Veri kaynağı nesnesi başlatılırsa, özellikleri veri kaynağı özelliği grubuna ait olmalıdır. Aynı özellik birden çok kez belirtilmişse *pPropset*, hangi değerin kullanıldığını sağlayıcıya özgü kaldırılır. Varsa *ulPropSets* sıfırsa, bu parametre yoksayılır.  
   
  *ulPropSets*  
- [in] Sayısını [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) yapıları geçirilen *pPropSet* bağımsız değişken. Sağlayıcı bu sıfırsa yoksayar *pPropset*.  
+ [in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken. Sağlayıcı bu sıfırsa yoksayar *pPropset*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  

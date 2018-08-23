@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b0c8d28e1e9c7306c1a74db90177caf76ca95b0
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5cae3a52c3434317ee26292de13d3e0471d78998
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839528"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464959"
 ---
 # <a name="noautoexclude"></a>no_auto_exclude
-**C++ özel**  
+**C++ özgü**  
   
- Otomatik dışlama devre dışı bırakır.  
+Otomatik dışlama devre dışı bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,10 +35,12 @@ no_auto_exclude
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. `#import` otomatik olarak gibi öğeler hariç tutarak birden çok tanım hataları önlemek için çalışır. Bu yapıldığında, [Derleyici Uyarısı (Düzey 3) C4192](../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md) çıkarılacak her öğe için verilir. Bu öznitelik kullanarak bu otomatik dışlama devre dışı bırakabilirsiniz.  
+ 
+Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. `#import` otomatik olarak gibi öğeler hariç tutarak birden çok tanım hatalarını önlemek çalışır. Bu yapıldığında, [Derleyici Uyarısı (Düzey 3) C4192](../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md) çıkarılacak her öğe için verilir. Bu özniteliği kullanarak bu otomatik dışlama devre dışı bırakabilirsiniz.  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

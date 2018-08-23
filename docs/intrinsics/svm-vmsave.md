@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36b1a76d4dca7a7177a44c56fc7c25832ace89c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54cc51ee320c6b942c3ff0563f293cf48d1c34db
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329671"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466345"
 ---
 # <a name="svmvmsave"></a>__svm_vmsave
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bir alt kümesini işlemci durumu belirtilen sanal makine denetim bloğu (VMCB) depolar.  
+ İşlemci durumu kümesini, belirtilen sanal makine denetim bloğu (VMCB) depolar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,17 +44,17 @@ void __svm_vmsave(
 |[in] `VmcbPhysicalAddress`|VMCB fiziksel adresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__svm_vmsave` İşlevi eşdeğerdir `VMSAVE` makine yönergesi. Bu işlev bir ana bilgisayarın sanal makine İzleyici etkileşiminin bir konuk işletim sistemi ve uygulamaları destekler. Daha fazla bilgi için belge için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" belge numarası 24593, düzeltme 3.11 ya da daha sonra [AMD Corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
+ `__svm_vmsave` İşlev, eşdeğer `VMSAVE` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" belge numarasını 24593, düzeltme 3.11 ya da en üstü [AMD Corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__svm_vmsave`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_vmsave`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

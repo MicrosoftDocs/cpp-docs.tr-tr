@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 665c52fc0dd0645e25d3014cc28f9fdfba344e2d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 947c9bf0892da52b44a99486b3ff0f1d59bc6fee
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332110"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464673"
 ---
 # <a name="mmcvtsssi64x"></a>_mm_cvtss_si64x
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] genişletilmiş sürümü Dönüştür skaler tek duyarlıklı kayan nokta sayısı 64-bit tamsayı (`cvtss2si`) yönerge.  
+ Genişletilmiş x64 oluşturur Dönüştür skaler tek duyarlıklı kayan nokta sayısı 64-bit tamsayıya sürümünü (`cvtss2si`) yönerge.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,23 +39,23 @@ __int64 _mm_cvtss_si64x(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `value`  
- Bir `__m128` kayan nokta değerlerine içeren yapısı.  
+ Bir `__m128` kayan nokta değerleri içeren yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bir 64-bit tamsayı, ilk kayan nokta değeri bir tamsayı değerine dönüştürme sonucu.  
+ Bir 64-bit tamsayı, ilk kayan nokta değeri bir tamsayıya dönüştürme işleminin sonucu.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_mm_cvtss_si64x`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_mm_cvtss_si64x`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- İlk öğe yapısı değeri bir tamsayıya dönüştürülüp ve döndürdü. MXCSR yuvarlama denetim bitleri yuvarlama davranışını belirlemek için kullanılır. Yuvarlama modu yuvarlak ondalık kısmı 0,5 ise bile sayıya yuvarlama en yakın, varsayılandır. Çünkü `__m128` yapısı bir XMM kaydı iç bu alır XMM kasadan bir değeri temsil eder ve sistem belleğinin yazar.  
+ Yapı değerinin ilk öğe bir tamsayıya dönüştürülüp ve döndürdü. MXCSR yuvarlama denetimi bitler, yuvarlama davranışlarını belirlemek için kullanılır. Yuvarlama modu için çift sayı ondalık 0,5 parçasıysa yuvarlama en yakın, yuvarlak varsayılandır. Çünkü `__m128` yapısı bir XMM kaydı, bu iç alır, XMM kasadan bir değeri temsil eder ve sistem belleği yazar.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -91,7 +91,7 @@ int main()
 101  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__m128d](../cpp/m128d.md)   

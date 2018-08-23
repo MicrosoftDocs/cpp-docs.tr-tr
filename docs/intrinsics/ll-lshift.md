@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94cf50287c28fe530df939488c4e707d17aede03
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 364ad39bfe47ff04c4a1eefb52b32ed4bddb7809
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327378"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465463"
 ---
 # <a name="lllshift"></a>__ll_lshift
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Sağlanan 64-bit değer belirtilen bit sayısı kadar sola kaydırır.  
+ Sağlanan 64-bit değeri belirtilen bit sayısı kadar sola kaydırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,26 +41,26 @@ unsigned __int64 __ll_lshift(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `Mask`  
- Sola kaydırma için 64-bit tamsayı değeri.  
+ Sola kaydırılacak 64-bit tamsayı değeri.  
   
  [in] `nBit`  
  Kaydırılacak bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Maske gölgeye sol tarafından `nBit` BITS.  
+ Maskesi tarafından sola kaydırılacak `nBit` bitleri.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__ll_lshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ll_lshift`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- 64 bitlik bir mimari kullanarak programınızı derleme varsa ve `nBit` 63 büyük bitler kaydırılacak sayısı `nBit` 64 modül. 32 bitlik bir mimari kullanarak programınızı derleme varsa ve `nBit` 31'den büyük bitler kaydırılacak sayısı `nBit` 32 modül.  
+ 64 bit mimari kullanarak programınızı derlerseniz ve `nBit` 63 büyük kaydırılacak bit sayıdır `nBit` 64 modül. 32 bit mimari kullanarak programınızı derlerseniz ve `nBit` 31'den büyük kaydırılacak bit sayıdır `nBit` 32 modül.  
   
- `ll` Adlarında bunun üzerinde bir işlem olduğunu gösterir `long long` (`__int64`).  
+ `ll` Adlarında bunun üzerinde bir işlem olduğunu gösteren `long long` (`__int64`).  
   
 ## <a name="example"></a>Örnek  
   
@@ -89,9 +89,9 @@ int main()
 10000  
 ```  
   
- **Not** sola kaydırma işlemi imzasız hiçbir sürümü yok. Bunun nedeni, `__ll_lshift` imzasız bir giriş parametresi zaten kullanıyor. Sağa kaydırma var. hiçbir oturum bağımlılığı sola kaydırma için en az önemli bit sonuç her zaman gölgeye değeri oturum bağımsız olarak sıfır olarak ayarlanmış olduğundan  
+ **Not** sola kaydırma işleminin işaretsiz sürümü yoktur. Bunun nedeni, `__ll_lshift` işaretsiz bir giriş parametresi zaten kullanıyor. Sağa kaydırma yoktur hiçbir oturum bağımlılığı sola kaydırma için en az önemli bit sonuçta her zaman kaydırılacağı uzaklık değeri ne olursa olsun işaretini sıfır olarak ayarlanmış olduğundan.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__ll_rshift](../intrinsics/ll-rshift.md)   

@@ -68,12 +68,12 @@ helpviewer_keywords:
 - std::kill_dependency [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df0c7ea332cda65aa3621de581eb39419ee9b9d4
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: b70f4df63b5a885403b91c1470c3066c33f5f123
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028323"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42466343"
 ---
 # <a name="ltatomicgt-functions"></a>&lt;atomik&gt; işlevleri
 
@@ -164,7 +164,7 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir *atomik karşılaştırma ve değişim işlemi* tarafından işaret edilen nesnede depolanan değeri karşılaştırır *Atom* tarafından işaret edilen değere karşı *Exp*. Değerler eşitse, tarafından işaret edilen nesnede depolanan değeri *atom* ile değiştirilir `Val` kullanarak bir `read-modify-write` işlem ve bellek uygulama sipariş tarafındanbelirtilenkısıtlamaları*Order1*. Değerler eşit değilse işlem tarafından işaret edilen değerin yerini alır *Exp* tarafından işaret edilen nesnede depolanan değeri *Atom* olan bellek sırası kısıtlamalarını uygular. tarafından belirtilen *Order2*.
+Bir *atomik karşılaştırma ve değişim işlemi* tarafından işaret edilen nesnede depolanan değeri karşılaştırır *Atom* tarafından işaret edilen değere karşı *Exp*. Değerler eşit, tarafından işaret edilen nesnede depolanan değeri *atom* ile değiştirilir *değer* kullanarak bir `read-modify-write` işlemi ve olan bellek sırası kısıtlamalarını uygulayarak tarafından belirtilen *Order1*. Değerler eşit değilse işlem tarafından işaret edilen değerin yerini alır *Exp* tarafından işaret edilen nesnede depolanan değeri *Atom* olan bellek sırası kısıtlamalarını uygular. tarafından belirtilen *Order2*.
 
 ## <a name="atomic_compare_exchange_weak"></a>  atomic_compare_exchange_weak
 

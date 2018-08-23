@@ -24,12 +24,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 723d4f1e8f44c3ce376b4f39f34a191265ca4eab
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 34eb8cb8a6b839f8a4dcd8d699c7fcb4851d57f6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336732"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466006"
 ---
 # <a name="ctable-class"></a>CTable Sınıfı
 Bir basit satır kümesine (parametresi olmayan) doğrudan erişim için bir yol sağlar.  
@@ -100,16 +100,16 @@ HRESULT Open(const CSession& session,
  [in] `DBID` Açmak için tablo.  
   
  *pPropSet*  
- [in] Bir dizi işaretçi [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://msdn.microsoft.com/library/ms713696.aspx) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Varsayılan değeri NULL özellik belirtir.  
+ [in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Varsayılan değeri NULL özellik belirtir.  
   
  *ulPropSets*  
- [in] Sayısını [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) yapıları geçirilen *pPropSet* bağımsız değişken.  
+ [in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla ayrıntı için [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Daha fazla ayrıntı için [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   

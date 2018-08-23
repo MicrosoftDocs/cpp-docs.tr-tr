@@ -19,17 +19,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e163eabd802fdd33d9f90d3a3a111017188dd89e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 23727ed40b12506ddd47a03055eaf8514d5685c5
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329413"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465543"
 ---
 # <a name="int2c"></a>__int2c
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur `int 2c` tetikler yönerge `2c` kesme.  
+ Oluşturur `int 2c` tetikleyen bir yönerge, `2c` kesme.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,11 +41,11 @@ void __int2c(void);
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__int2c`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__int2c`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -25,15 +25,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0c6e304547af06d5de6d81bae2ceace119e4681d
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: aee6122e8dbcf85f882e5b78475a2c332b855721
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339802"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465074"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl Sınıfı
-Bir uygulamasını sağlar [IGetDataSource](https://msdn.microsoft.com/library/ms709721.aspx) nesne.  
+Bir uygulamasını sağlar [IGetDataSource](/previous-versions/windows/desktop/ms709721\(v=vs.85\)) nesne.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,7 +71,7 @@ STDMETHOD(GetDataSource)(REFIID riid,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IGetDataSource::GetDataSource](https://msdn.microsoft.com/library/ms725443.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Veri kaynağı nesnesinin özelliklerine erişmek istiyorsanız kullanışlıdır.  

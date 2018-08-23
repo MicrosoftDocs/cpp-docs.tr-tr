@@ -15,15 +15,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2115b353f269ff59c107737eeb4fdb590ffd71b6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 971f1fae3fe2d6733b0819f3a6e88db07612bce7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380894"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465073"
 ---
 # <a name="x64-software-conventions"></a>x64 Yazılım Kuralları
-Bu bölümde Visual C++ kuralı yöntemi çağırma açıklanmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)], x86 64-bit uzantısı mimarisi.  
+Bu bölümde, Visual C++ çağırma kuralı yöntemi x64, 64-bit uzantısı x86 açıklanmaktadır mimarisi.  
   
 -   [x64 Çağırma Kurallarına Genel Bakış](../build/overview-of-x64-calling-conventions.md)  
   
@@ -43,7 +43,7 @@ Bu bölümde Visual C++ kuralı yöntemi çağırma açıklanmaktadır [!INCLUDE
   
 -   [Görüntü Biçimi](../build/image-format.md)  
   
- Aşağıdaki derleyici seçeneği, uygulamanız için en iyi hale getirmenize yardımcı [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]:  
+ Aşağıdaki derleyici seçeneği, uygulamanız için x64 iyileştirmenize yardımcı olur:  
   
 -   [/favor (Mimari Özellikleri için İyileştirme)](../build/reference/favor-optimize-for-architecture-specifics.md)  
   

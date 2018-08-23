@@ -24,30 +24,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d88add7830316ae192a728f9c9ff10320657eaf
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 266bb7aa664489ee23c39554ebc91d1f99336f7e
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689980"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42464650"
 ---
 # <a name="writing-a-multithreaded-win32-program"></a>Çoklu İş Parçacığı Kullanan Win32 Programı Yazma
-Birden çok iş parçacığı sahip bir program yazdığınızda, davranışlarını koordine gerekir ve [programın kaynaklarının kullanımını](#_core_sharing_common_resources_between_threads). Ayrıca her iş parçacığı aldığından emin olmak gerekir [kendi yığını](#_core_thread_stacks).  
+Birden çok iş parçacığı bir programla yazdığınızda, davranışları koordine ve [programın kaynaklarının kullanımını](#_core_sharing_common_resources_between_threads). Ayrıca her bir iş parçacığı aldığından emin olmak gerekir [kendi yığın](#_core_thread_stacks).  
   
 ##  <a name="_core_sharing_common_resources_between_threads"></a> İş parçacıkları arasında ortak kaynakları paylaşma  
   
 > [!NOTE]
->  MFC açısından benzer hakkında bilgi için bkz [çoklu iş parçacığı kullanımı: programlama ipuçları](../parallel/multithreading-programming-tips.md) ve [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](../parallel/multithreading-when-to-use-the-synchronization-classes.md).  
+>  MFC açısından benzer bir tartışma için bkz: [çoklu iş parçacığı kullanımı: programlama ipuçları](../parallel/multithreading-programming-tips.md) ve [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](../parallel/multithreading-when-to-use-the-synchronization-classes.md).  
   
- Her iş parçacığı kendi yığınına sahiptir ve CPU kopyasını kaydeder. Dosyaları, statik verileri ve yığın bellek gibi başka kaynaklar işlemin tüm iş parçacıkları tarafından paylaşılır. Bu ortak kaynakları kullanarak iş parçacıklarını eşitlenmelidir. Win32 semafor, kritik bölümler, olayları ve zaman uyumu sağlayıcılar dahil kaynakları eşitlemek için çeşitli yöntemler sağlar.  
+Her iş parçacığı kendi yığınını vardır ve kendi CPU kopyasını kaydeder. Dosyaları ve statik veri yığın bellek gibi diğer kaynaklar işlemdeki tüm iş parçacıkları tarafından paylaşılır. Bu ortak kaynakları kullanarak iş parçacıkları eşitlenmelidir. Win32 kaynakları semafor, kritik bölüm, olayları ve mutex'leri dahil olmak üzere, eşitleme için birçok yol sağlar.  
   
- Birden çok iş parçacığı statik verilere erişirken programınız için olası kaynak çakışması sağlamanız gerekir. Burada bir iş parçacığı güncelleştirmeleri içeren bir statik veri yapısı bir program dikkate *x*,*y* başka bir iş parçacığı tarafından görüntülenecek öğeleri koordinatları. Güncelleştirme iş parçacığı değiştirirse *x* koordine etmek ve değiştirebilmek için önce etkisiz *y* koordinat, görüntüleme iş parçacığı önce zamanlanmış olabileceğinden *y* koordinat değil güncelleştirildi. Öğe yanlış konumunda görüntülenir. Bu sorunu yapısı erişimi denetlemek için semafor kullanarak önleyebilirsiniz.  
+Birden çok iş parçacığı statik verilere erişirken, programınız için olası kaynak çakışması sağlamanız gerekir. Bir iş parçacığı burada güncelleştirmeleri içeren bir statik veri yapısı bir program dikkate *x*,*y* başka bir iş parçacığı tarafından görüntülenecek öğeleri koordinatları. Güncelleştirme iş parçacığı değiştirirse *x* koordine etmek ve değiştirmeden önce etkisiz *y* koordinat, görüntü iş parçacığının önce zamanlanmış olabilmesidir *y* koordinatı güncelleştirildi. Yanlış konumunda öğe görüntülenir. Yapıya erişimi denetlemesi için semafor kullanarak bu sorunu önleyebilirsiniz.  
   
- Bir mutex (kısaltması *mut*ual *ex*clusion) iş parçacıkları veya başka zaman uyumsuz olarak yürütülen işlemler arasında iletişim kurulurken bir yoludur. Bu iletişim, genellikle bir paylaşılan kaynağa erişim kilitleme ve kaynağın kilidini açma denetleyerek etkinlikleri, birden çok iş parçacığı veya işlemler, genellikle koordine etmek için kullanılır. Bunu çözmek için *x*,*y* koordinat güncelleme sorununu, güncelleştirme iş parçacığı veri yapısı güncelleştirme gerçekleştirmeden önce kullanımda olduğunu belirten bir mutex ayarlar. Her iki koordinatları işlenmiş sonra onu mutex'i temizler. Görüntüleme iş parçacığı görüntülemeyi güncellemeden önce temizlenmesini mutex beklemeniz gerekir. Bu işlem için bir mutex bekleniyor, çoğunlukla işlemi engellenir ve mutex temizlenene kadar devam edemez çünkü dışlamada engelleme adı verilir.  
+Bir mutex (kısaltması *mut*ual *ex*clusion), iş parçacıkları veya başka birine zaman uyumsuz olarak yürütülen işlemler arasında iletişim kurulurken bir yoludur. Bu iletişim, genellikle paylaşılan bir kaynağa erişimi kilitleme ve kaynak kilidi denetleyerek etkinliklerini birden çok iş parçacıkları veya işlemlerdeki, genellikle koordine etmek için kullanılır. Bunu çözmek için *x*,*y* koordinat güncelleştirme sorunu güncelleştirme iş parçacığı veri yapısı güncelleştirmeyi uygulamadan önce kullanımda olduğunu belirten bir mutex ayarlar. Her iki koordinat işlendikten sonra bu mutex'i temizler. Görüntü iş parçacığının görünen güncelleştirmeden önce temizlenmesini mutex beklemelisiniz. Bekleyen bir mutex için bu işlemi, çoğunlukla işlem engellenir ve mutex temizlenene kadar devam edemez çünkü dışlamada engelleme adı verilir.  
   
- Gösterilen Bounce.c programı [örnek çoklu iş parçacığı kullanan C programı](../parallel/sample-multithread-c-program.md) adlı bir mutex kullanır `ScreenMutex` ekran güncelleştirmelerini koordine etmek için. Görüntü iş parçacığı birini hazır ekranına yazmak her zaman çağırır **WaitForSingleObject** tanıtıcısını ile `ScreenMutex` ve sabit **SONSUZ** belirtmek için  **WaitForSingleObject** çağrısı bloğu mutex ve zaman aşımına üzerinde. Varsa `ScreenMutex` bekleme işlevi başka bir iş parçacığı ekranıyla böylece mutex ayarlar ve iş parçacığının devam ettirir. Aksi takdirde mutex temizlenene kadar iş parçacığı engeller. İş parçacığı görünen güncelleştirme tamamlandığında çağırarak mutex serbest **ReleaseMutex**.  
+Bounce.c programın gösterilen [örnek çoklu iş parçacığı kullanan C programı](../parallel/sample-multithread-c-program.md) adlandırılmış bir mutex kullanan `ScreenMutex` ekran güncelleştirmelerini koordine etmek için. Görüntü iş parçacıklarından ekrana yazmak için hazır olduğu her zaman çağırır `WaitForSingleObject` tanıtıcısını ile `ScreenMutex` ve göstermek için sabit SONSUZ `WaitForSingleObject` çağrı block mutex ve zaman aşımına uğramaz. Varsa `ScreenMutex` bekleme işlevi dışlamayı ayarlar, böylece görüntü ile diğer iş parçacıkları ve iş parçacığını yürütmeye devam ettirir. Mutex temizlenene kadar Aksi takdirde, iş parçacığını engeller. İş parçacığı görüntü güncelleştirme tamamlandığında çağırarak mutex serbest `ReleaseMutex`.  
   
- Ekran görüntüleri ve statik verileri yalnızca dikkatli yönetim gerektiren kaynaklara ikisidir. Örneğin, programınızı aynı dosyaya erişen birden çok iş parçacığı sayısı olabilir. Başka bir iş parçacığı dosya işaretçisini taşınmış çünkü her iş parçacığı dosya işaretçisini okunurken veya yazılırken önce sıfırlamanız gerekir. Ayrıca, her iş parçacığı, işaretçi konumlandırır zaman ve dosyaya eriştiği zaman arasında geçersiz kılınırsa değil, emin olmanız gerekir. Bu iş parçacıkları ile her dosya erişimi köşeli ayraç kullanarak dosyaya erişim koordine etmek için semafor kullanması gereken **WaitForSingleObject** ve **ReleaseMutex** çağrıları. Aşağıdaki kod örneği, bu teknik gösterilmektedir:  
+Ekran görüntüleri ve statik veriler yalnızca dikkatli yönetim gerektiren kaynaklara ikisidir. Örneğin, programınız aynı dosyaya erişen birden çok iş parçacığı sayısı olabilir. Dosya işaretçisini başka bir iş parçacığı taşınmış olduğundan, her iş parçacığı okuma veya yazma önce dosya işaretçisini sıfırlamanız gerekir. Ayrıca, her iş parçacığı, işaretçiyi vakit dosyasına erişir arasında etkisiz hale değil, emin olmanız gerekir. Bu iş parçacıkları ile her dosya erişimi köşeli ayraç kullanarak dosyaya erişim koordine etmek için semafor kullanmalısınız `WaitForSingleObject` ve `ReleaseMutex` çağırır. Aşağıdaki kod örneği, bu teknik gösterilmektedir:  
   
 ```  
 HANDLE    hIOMutex= CreateMutex (NULL, FALSE, NULL);  
@@ -59,15 +59,17 @@ ReleaseMutex( hIOMutex);
 ```  
   
 ##  <a name="_core_thread_stacks"></a> İş parçacığı yığınları  
- Bir uygulamanın varsayılan yığın alanı tümünün ilk iş parçacığı 1 olarak bilinen yürütme iş parçacığı için ayrılır. Sonuç olarak, her ek iş parçacığı için ayrı bir yığın programınızı ayırmak için ne kadar bellek gerektiriyor belirtmeniz gerekir. Gerekirse ek yığın alanı işletim sistemi için iş parçacığı, ayırır, ancak varsayılan bir değer belirtmeniz gerekir.  
+ 
+Bir uygulamanın varsayılan yığın alanı tümünün ilk iş parçacığında 1 iş parçacığı da bilinen, yürütme için ayrılır. Sonuç olarak, her ek iş parçacığı için ayrı bir yığın programınızı ayırmak için ne kadar bellek gerektiriyor belirtmeniz gerekir. Gerekirse ek yığın alanı işletim sistemi iş parçacığı için ayırır, ancak varsayılan bir değer belirtmeniz gerekir.  
   
- İlk bağımsız değişkeninde `_beginthread` çağrıdır gösteren bir işaretçi **BounceProc** iş parçacığını yürüten işlev. İkinci bağımsız değişkeni iş parçacığı için varsayılan yığın boyutunu belirtir. Son bağımsız değişken için geçirilen bir kimlik numarasıdır **BounceProc**. **BounceProc** rastgele sayı üreticisinin çekirdek ve iş parçacığının renk özniteliği seçin ve karakter görüntülemek için kimlik numarasını kullanır.  
+Birinci bağımsız değişkende `_beginthread` çağrıdır işaretçisi `BounceProc` iş parçacığını yürüten işlev. İkinci bağımsız değişkeni, iş parçacığı için varsayılan yığın boyutu belirtir. Son bağımsız değişken geçirilir bir kimlik numarasıdır `BounceProc`. `BounceProc` Rastgele sayı üreticisinin çekirdeğini ve iş parçacığının color özniteliği seçin ve karakter görüntülemek için kimlik numarasını kullanır.  
   
- C çalışma zamanı kitaplığı veya Win32 API çağrıları yapma iş parçacığı kitaplığı ve bunlar çağrı API işlevleri için yeterli yığın alanı izin vermeniz gerekir. C `printf` işlevi 500 bayttan fazla yığın alanı gerektirir ve Win32 API yordamları çağrılırken 2 K yığın alanı kullanılabilir olması gerekir.  
+C çalışma zamanı kitaplığı veya Win32 API çağrılarını iş parçacıkları, kitaplık ve bunlar çağrı API işlevleri için yeterli yığın alanı izin vermeniz gerekir. C `printf` işlevi, 500 bayttan daha fazla yığın alanı gerektirir ve kullanılabilir yığın alanı 2 K Win32 API yordamları ararken olması gerekir.  
   
- Her iş parçacığının kendi yığını olduğundan, mümkün olduğunca az statik veri kullanarak veri öğeleri üzerindeki olası çakışmaları önleyebilirsiniz. Bir iş parçacığı özel olabilecek tüm veriler için otomatik yığın değişkenlerini kullanmak için program tasarlayın. Yalnızca genel Bounce.c programındaki zaman uyumu sağlayıcılar ya da başlatıldıktan sonra hiçbir zaman değişiklik değişkenleri değişkenlerdir.  
+Her iş parçacığı kendi yığınını olduğundan, veri öğeleri üzerinde olası çakışmaları mümkün olduğunca az statik veri kullanarak önleyebilirsiniz. Programınızı otomatik yığın değişkenleri bir iş parçacığına özel tüm veriler için kullanılacak tasarlayın. Yalnızca genel Bounce.c programındaki mutex'leri ya da başlatıldıktan sonra hiçbir zaman değiştirme değişkenleri değişkenlerdir.  
   
- Win32 ayrıca iş parçacığı yerel depolaması (iş parçacığı başına verileri depolamak için TLS) sağlar. Daha fazla bilgi için bkz: [iş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md).  
+Win32 iş parçacığı yerel depolama (iş parçacığı başına verileri depolamak için TLS) de sağlar. Daha fazla bilgi için [iş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)
+ 
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)

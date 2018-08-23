@@ -1,5 +1,5 @@
 ---
-title: Üçüncü taraf kitaplıklar taşıma | Microsoft Docs
+title: Üçüncü taraf kitaplıklarını taşıma | Microsoft Docs
 ms.custom: ''
 ms.date: 01/10/2017
 ms.technology:
@@ -15,26 +15,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e831f5441d62a4430fe036be70f1bec5ac99c98
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3e1edc9e4a6172b3ac55e7a8bc9b21cdc571774d
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849723"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465363"
 ---
-# <a name="porting-third-party-libraries"></a>Üçüncü taraf kitaplıklar bağlantı noktası oluşturma
+# <a name="porting-third-party-libraries"></a>Üçüncü taraf kitaplıklarını taşıma
 
-Bir projesini Visual C++ geçerli sürüme yükselttiğinizde, ayrıca kitaplığı ve projenizin aynı sürümü ve derleyici örneğinizin yerleşik böylece proje kullanan tüm kitaplıkları yükseltmeniz gerekir. (Daha fazla bilgi için bkz: [olası yükseltme sorunlarını genel bakış](overview-of-potential-upgrade-issues-visual-cpp.md)). 
+Bir projeyi Visual C++'ın geçerli sürümüne yükselttiğinizde, aynı zamanda kitaplık ve projenize öğesinin aynı sürümünü ve derleyici örneğinizin yerleşiktir, böylece proje kullanan tüm kitaplıkları sürümüne yükseltmeniz gerekir. (Daha fazla bilgi için [olası yükseltme sorunlarına genel bakış](overview-of-potential-upgrade-issues-visual-cpp.md)). 
 
-## <a name="introducing-vcpkg"></a>Vcpkg Tanıtımı
-Geçmişte, bulma ve 3 taraf kitaplıklar yükseltme bazen Önemsiz olmayan bir görev olmuştur. Edinmeli ve C++ yeniden 3 kolaylaştırmak için taraf açık kaynak kitaplıkları, Visual C++ ekip oluşturdu adlı bir komut satırı aracı **VC ++ paketleme aracı** veya **vcpkg**. Vcpkg birçok popüler C++ açık kaynak kitaplıkları aranabilir kataloğunu sahiptir. Tüm kitaplık kataloğu doğrudan vcpkg komut satırından yükleyebilirsiniz. Bir kitaplığı yüklediğinizde Vcpkg makinenizde bir dizin ağacında oluşturur ve ikili dosyaları bu klasörde ve .lib .h ekler. Derleme komut satırında, bu klasörü kullanın veya Visual Studio 2015 tümleştirmek veya daha sonra vcpkg kullanarak yükleme komut tümleştirin. Bir kitaplık konumu tümleştirdiğinizde, Visual Studio bulmak ve oluşturduğunuz tüm yeni projeye ekleyin. Sadece bir kitaplık kullanmak için #include ve Visual Studio otomatik olarak proje ayarlarınızı .lib yolu ekleyin ve dll çözüm klasörünüze kopyalayın. Daha fazla bilgi için bkz: [vcpkg: C++ için bir paket Yöneticisi](../vcpkg.md).
+## <a name="introducing-vcpkg"></a>Vcpkg ile tanışın
 
+Geçmişte, bulma ve 3. taraf kitaplıkları yükseltme bazen Önemsiz olmayan bir görev olmuştur. Almak ve C++'ı yeniden 3 kolaylaştırmak için taraf açık kaynak kitaplıkları, Visual C++ ekibine oluşturduğu adlı bir komut satırı aracı **VC ++ paketleme aracı** veya **vcpkg**. Vcpkg birçok popüler C++ açık kaynak kitaplıkları aranabilir kataloğunu sahiptir. Kitaplık Kataloğu vcpkg komut satırından doğrudan yükleyebilirsiniz. Bir kitaplık yükleme sırasında Vcpkg dizin ağacı makinenizde oluşturur ve ikili dosyaları bu klasörde ve .lib .h ekler. Bu klasör, derleme komut satırında kullanın veya Visual Studio 2015 ile tümleştirin veya daha sonra yükleme komutu vcpkg kullanarak tümleştirin. Bir kitaplık konumuna tümleştirdikten sonra Visual Studio bulmak ve oluşturduğunuz tüm yeni projeye ekleyin. Bir kitaplık kullanmak üzere yeni `#include` ve Visual Studio otomatik olarak proje ayarlarınızın .lib yolunu ekleyin ve dll, çözüm klasörüne kopyalayın. Daha fazla bilgi için [vcpkg: C++ için Paket Yöneticisi](../vcpkg.md).
 
 ## <a name="reporting-issues"></a>Raporlama konuları
-Kitaplığınızı vcpkg Kataloğu'nda mevcut değilse, üzerinde bir sorun açabilirsiniz [GitHub deposuna](https://github.com/Microsoft/vcpkg/issues) burada topluluk ve Visual C++ ekip onu görebilir ve büyük olasılıkla bu kitaplık için bağlantı noktası dosyası oluşturun.
 
-Özel için öneririz kitaplık sağlayıcısına başvurun 3 taraf kitaplıkları (açık olmayan kaynak). Ancak, biz herhangi özel kitaplıklar kullanmakta olduğunuz ve engellediğiniz bilmeniz, size bağlıdır hangisinin bize bildirin ilgilendiğiniz (adresinden bize başvurun vcupgrade@microsoft.com).
+Kitaplığınızı mevcut değilse **vcpkg** katalog, üzerinde bir sorunu açabilirsiniz [GitHub deposunu](https://github.com/Microsoft/vcpkg/issues) burada community ve Visual C++ ekibine görebilir ve büyük olasılıkla bu kitaplığa yönelik bağlantı noktası dosyasını oluşturun.
 
+Özel için kitaplık sağlayıcı başvurmanızı öneririz 3 şahıs kitaplıklardaki (açık olmayan kaynak). Ancak, özel tüm kitaplıkların kullanıyorsanız ve engellediğiniz bilmeniz, bağlı olduğu hangisinin bize ilgilenen duyuyoruz (adresinden bize başvurun vcupgrade@microsoft.com).
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)
+
+[Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)

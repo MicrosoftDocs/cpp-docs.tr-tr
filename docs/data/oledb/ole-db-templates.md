@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: af146c37490d86a839f717d387c4072fbd649a87
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 425d404272ad21ad5c732a4db210379eedc7515f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339446"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464869"
 ---
 # <a name="ole-db-templates"></a>OLE DB Şablonları
 OLE DB Şablonları, OLE DB veri erişimini kolaylaştırın. Visual C++ birçok yaygın olarak kullanılan bir OLE DB arabirimleri uygulayan bir şablon sınıflar sağlar. Bir OLE DB (tüketici) istemci uygulaması yazma için Visual C++ Tüketici Şablonları ve bir sunucu (sağlayıcı) uygulama yazmak için sağlayıcı şablonları kullanabilirsiniz.  
@@ -38,7 +38,7 @@ OLE DB Şablonları, OLE DB veri erişimini kolaylaştırın. Visual C++ birçok
  [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)  
  OLE DB yenilikler açıklanır ve OLE DB evrensel veri erişimi ele almaktadır.  
   
- [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/library/ms713643.aspx)  
+ [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\))  
  OLE DB için Windows SDK belgelerine bağlantılar sağlar.  
   
  [OLE DB Şablon örnekleri](../../visual-cpp-samples.md)  

@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c681cc5f79d0c9d876da522666565e5a43c8e145
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: d758bcc700180781c899f2263fe04c29ee0e6409
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028011"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465374"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 Açık bir dosya veya dosya kaydetme işlemi için kullanılan yaygın bir iletişim kutusunu kapsüller.  
@@ -561,7 +561,7 @@ explicit CFileDialog(
   
  *LpszFilter* parametresi, dosya adı bir dosya, dosya listesinde görüntülenecek olmalıdır türünü belirlemek için kullanılır. Filtre dizesi çiftindeki ilk dize açıklar; İkinci dize kullanılacak dosya adı uzantısını belirtir. Sınırlayıcı noktalı virgül (';' karakter) kullanarak birden fazla uzantı belirtilebilir. Dize iki ile sona erer '&#124;' karakter, bir NULL karakter. Ayrıca bir [CString](../../atl-mfc-shared/using-cstring.md) Bu parametre için bir nesne.  
   
- Örneğin, [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] diğerlerinin yanı sıra kullanıcıların uzantıları .xlc (grafik) veya .xls (çalışma sayfası), dosyaları açma olanak sağlar. Excel için filtre olarak yazılabilir:  
+ Örneğin, Microsoft Excel uzantıları .xlc (grafik) veya .xls (çalışma sayfası), diğerlerinin yanı sıra dosyaları açmasına izin verir. Excel için filtre olarak yazılabilir:  
   
  [!code-cpp[NVC_MFCFiles#24](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_2.cpp)]  
   
@@ -1353,7 +1353,7 @@ void SetControlText(
  Denetim için ayarlanacak metni içeren dize işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev her iki sürümü de Unicode kullanan uygulamalar için geçerlidir. Ancak, yalnızca sürüm LPCSTR türüyle kullanan uygulamalar için geçerli [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)].  
+ Bu işlev her iki sürümü de Unicode kullanan uygulamalar için geçerlidir. Ancak, yalnızca sürüm LPCSTR türüyle ANSI kullanan uygulamalar için geçerlidir.  
   
  Bu yöntemi kullanmak için iletişim kutusu OFN_EXPLORER stiliyle oluşturmanız gerekir. Aksi takdirde işlev bir onaylama işlemi başarısız olur.  
   
@@ -1439,16 +1439,16 @@ void SetTemplate(
  Şablon kaynağı olmayan-Explorer kimliği sayısını içeren `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.  
   
  [in] *nWin4ID*  
- Şablon kaynağı kimliği numarasını Gezgini içerir `CFileDialog` nesne. Bu şablon yalnızca kullanılan [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] ve sonraki sürümlerinde, Windows 95 ve sonraki sürümleri ya da OFN_EXPLORER stili olduğunda mevcut.  
+ Şablon kaynağı kimliği numarasını Gezgini içerir `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 4.0 ve üzeri sürümleri, Windows 95 ve sonraki sürümler üzerinde veya OFN_EXPLORER stili olduğunda kullanılır.  
   
  [in] *lpWin3ID*  
  Şablon kaynağı olmayan-Explorer adında `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.  
   
  [in] *lpWin4ID*  
- Şablon kaynağı Explorer'ın adını içeren `CFileDialog` nesne. Bu şablon yalnızca kullanılan [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] ve sonraki sürümlerinde, Windows 95 ve sonraki sürümleri ya da OFN_EXPLORER stili olduğunda mevcut.  
+ Şablon kaynağı Explorer'ın adını içeren `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 4.0 ve üzeri sürümleri, Windows 95 ve sonraki sürümler üzerinde veya OFN_EXPLORER stili olduğunda kullanılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sistem, belirtilen şablonları yalnızca birini kullanın. Sistem OFN_EXPLORER stil ve uygulamanın üzerinde çalıştığı işletim sistemi olup olmamasına hangi şablonun kullanılacağını belirler. Explorer olmayan ve Gezgin stili şablonu belirterek, Windows NT 3.51 desteklemek için kolaydır [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] ve sonraki sürümleri ve Windows 95 ve sonraki sürümler.  
+ Sistem, belirtilen şablonları yalnızca birini kullanın. Sistem OFN_EXPLORER stil ve uygulamanın üzerinde çalıştığı işletim sistemi olup olmamasına hangi şablonun kullanılacağını belirler. Explorer olmayan ve Gezgin stili şablonu belirterek, Windows NT 3.51, Windows NT 4.0 ve üzeri sürümler ve Windows 95 ve sonraki sürümleri desteklemek kolaydır.  
   
 > [!NOTE]
 > Windows Vista veya sonraki stil dosya iletişim kutularında bu işlevi desteklemiyor. Bu işlev bir Windows Vista veya sonraki stili dosya iletişim kutusu kullanılmaya çalışılıyor oluşturur [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md). Özelleştirilmiş bir iletişim kutusunu kullanmaya alternatiftir. Özel bir kullanma hakkında daha fazla bilgi için `CFileDialog`, bkz: [IFileDialogCustomize](http://msdn.microsoft.com/library/windows/desktop/bb775912).  

@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be74b466ed641474283e26217ae728c57f28edd8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ccee7703550bff7980e1cf07b30f29d284e2a3a5
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326351"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466369"
 ---
 # <a name="wbinvd"></a>__wbinvd
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Geri yazma ve geçersiz önbelleği oluşturur (`wbinvd`) yönerge.  
+ Geri yazma ve geçersiz bir önbellek oluşturur (`wbinvd`) yönerge.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,14 +39,14 @@ void __wbinvd(void);
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__wbinvd`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__wbinvd`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca çekirdek modunda 0 ayrıcalık düzeyi (CPL) ile kullanılabilir ve yordam yalnızca bir iç kullanılabilir.  
+ Bu işlev yalnızca 0 ayrıcalık düzeyi (CPL) ile çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

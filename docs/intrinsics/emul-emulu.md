@@ -20,17 +20,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddc98119f6174f299b8de72383610aac72032d42
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6e9e7ee594f2587334d93173daa147d81dcebb2
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331041"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464977"
 ---
 # <a name="emul-emulu"></a>__emul, __emulu
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bir 32 bit tamsayı basılı tutabilirsiniz taşması multiplications gerçekleştirir.  
+ Bir 32 bit tamsayı basılı tutabilirsiniz overflow multiplications gerçekleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,10 +47,10 @@ unsigned __int64 __emulu(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `a`  
- Çarpma ilk tamsayı işleneni.  
+ Çarpma işleminin ilk tamsayı işlenen.  
   
  [in] `b`  
- Çarpma ikinci tamsayı işleneni.  
+ Çarpma işleminin tamsayı ikinci işlenen.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Çarpma işleminin sonucu.  
@@ -59,15 +59,15 @@ unsigned __int64 __emulu(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__emul`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__emulu`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__emul`|x86, x64|  
+|`__emulu`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__emul` iki 32-bit imzalı değerlerini alır ve 64 bit işaretli tamsayıyı değeri olarak Çarpım sonucunu döndürür.  
+ `__emul` iki 32-bit imzalı değerlerini alır ve 64-bit imzalı bir tamsayı değeri olarak çarpma işleminin sonucunu döndürür.  
   
- `__emulu` iki 32-bit işaretsiz tamsayı değerlerini alır ve bir 64-bit işaretsiz tamsayı değeri olarak Çarpım sonucunu döndürür.  
+ `__emulu` iki 32-bit işaretsiz tamsayı değerleri alır ve 64-bit işaretsiz tamsayı değeri olarak çarpma işleminin sonucunu döndürür.  
   
 ## <a name="example"></a>Örnek  
   
@@ -108,7 +108,7 @@ int main()
 4294967295 * 251658240 = 1080863910317260800  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

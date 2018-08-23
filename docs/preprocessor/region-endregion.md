@@ -22,15 +22,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5590d2b251d86a9d20b62bfdb3d5bf929e3d92d4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9e6ec22be873dcec06f224913eb905a2779e4efd
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839453"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465360"
 ---
 # <a name="region-endregion"></a>region, endregion
-**#pragma bölge** Genişlet veya daralt kullanırken kod bloğu belirtmenizi sağlar [özelliği anahat oluşturma](/visualstudio/ide/outlining) Visual Studio Kod Düzenleyicisi'nin.  
+`#pragma region` Genişlet veya daralt kullanarak bir kod bloğunu belirtmenizi sağlar [anahat oluşturma özelliği](/visualstudio/ide/outlining) Visual Studio Kod Düzenleyicisi'nin.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,21 +39,22 @@ ms.locfileid: "33839453"
 #pragma endregion comment  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `comment`(isteğe bağlı)  
- Kod Düzenleyicisi'nde görüntüler açıklama.  
+### <a name="parameters"></a>Parametreler  
+*Yorum* (isteğe bağlı)  
+Kod Düzenleyicisi'nde görüntüleyen bir açıklama.  
   
- *ad*(isteğe bağlı)  
- Bölge adı.  Bu adı Kod Düzenleyicisi'nde görüntülenir.  
+*Ad* (isteğe bağlı)  
+Bölge adı.  Bu ad, Kod Düzenleyicisi'nde görüntülenir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- **#pragma endregion** sonunu işaretler bir **#pragma bölge** bloğu.  
+ 
+`#pragma endregion` sonunu işaretleyen bir `#pragma region` blok.  
   
- A `#region` blok sonlandırıldı, ile **#pragma endregion**.  
+A `#region` blok sonlandırıldı, ile `#pragma endregion`.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // pragma_directives_region.cpp  
 #pragma region Region_1  
 void Test() {}  
@@ -65,4 +66,5 @@ int main() {}
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

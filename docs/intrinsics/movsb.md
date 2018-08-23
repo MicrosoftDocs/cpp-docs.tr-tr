@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9c72910a6b8084d015f151d7e701f6b63ffd1d2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61d37405a9853fda79c8717f16abbd931ed947e7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328233"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464975"
 ---
 # <a name="movsb"></a>__movsb
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Taşıma bir dize oluşturur (`rep movsb`) yönerge.  
   
@@ -45,7 +45,7 @@ void __movsb(
  Kopyalama hedefi için bir işaretçi.  
   
  [in] `Source`  
- Kopyalama kaynağı için bir işaretçi.  
+ Kopyasının kaynağı olan bir işaretçi.  
   
  [in] `Count`  
  Kopyalanacak bayt sayısı.  
@@ -54,14 +54,14 @@ void __movsb(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__movsb`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsb`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonuç ilk `Count` tarafından bayt işaret için `Source` kopyalanır `Destination` dize.  
+ Sonuç ilk `Count` bayt tarafından işaret edilen `Source` kopyalanır `Destination` dize.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -87,7 +87,7 @@ int main()
 A big black dog. A big black dog.  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

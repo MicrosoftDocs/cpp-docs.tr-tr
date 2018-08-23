@@ -23,15 +23,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6a2457ed01214750091bd9ec5a59c9aeac819357
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 8b67fc55a8af2bed554254732832cbd6486d2420
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337000"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464588"
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl Sınıfı
-Bir uygulamasını sağlar [IDBCreateCommand](https://msdn.microsoft.com/library/ms711625.aspx) arabirimi.  
+Bir uygulamasını sağlar [IDBCreateCommand](/previous-versions/windows/desktop/ms711625\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,7 +74,7 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IDBCreateCommand::CreateCommand](https://msdn.microsoft.com/library/ms709772.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBCreateCommand::CreateCommand`:  
   

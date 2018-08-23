@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 502425728fcd97d2ae8d2efe406dc73370de1272
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5d0b28c855ab8a6f6da814ee17521a5ad7799993
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841778"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466444"
 ---
 # <a name="vtordisp"></a>vtordisp
-**C++ özel**  
+**C++ özgü**  
   
- Gizli vtordisp oluşturma/yıkma yer değiştirme üyesinin eklenmesini denetler.  
+Gizli vtordisp oluşturma/yıkma yer değiştirme üyesinin eklenmesini denetler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,32 +39,33 @@ ms.locfileid: "33841778"
 #pragma vtordisp([push,] {on | off})  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `push`  
- İç derleyici yığınındaki geçerli vtordisp ayarını gönderir ve yeni vtordisp ayarını `n` olarak ayarlar.  `n` belirtilmezse, geçerli vtordisp ayarı değiştirilmez.  
+### <a name="parameters"></a>Parametreler  
+*push*  
+İç derleyici yığınındaki geçerli vtordisp ayarını gönderir ve yeni vtordisp ayarını ayarlar *n*.  Varsa *n* belirtilmezse, geçerli vtordisp ayarı değiştirilmez.  
   
- `pop`  
- İç derleyici yığınından en üst kaydı kaldırır ve vtordisp ayarını kaldırılan değere geri yükler.  
+*POP*  
+İç derleyici yığınından en üst kaydı kaldırır ve vtordisp ayarını kaldırılan değere geri yükler.  
   
- `n`  
- vtordisp ayarı için yeni değeri belirtir. Olası değerler /vd0, /vd1 ve /vd2 derleyici seçeneklerine karşılık gelen 0, 1 veya 2'dir. Daha fazla bilgi için bkz: [/VD (yapı yer devre dışı bırak) değiştirmelerini](../build/reference/vd-disable-construction-displacements.md).  
+*n*  
+vtordisp ayarı için yeni değeri belirtir. Olası değerler: 0, 1 veya 2, karşılık gelen `/vd0`, `/vd1`, ve `/vd2` derleyici seçenekleri. Daha fazla bilgi için [/vd (oluşturma yer değiştirmelerini devre dışı bırak)](../build/reference/vd-disable-construction-displacements.md).  
   
- `on`  
- Eşdeğer `#pragma vtordisp(1)`.  
+*on*  
+Eşdeğer `#pragma vtordisp(1)`.  
   
- `off`  
- Eşdeğer `#pragma vtordisp(0)`.  
+*Kapalı*  
+Eşdeğer `#pragma vtordisp(0)`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `vtordisp` pragması, yalnızca sanal temeller kullanan koda uygulanabilir. Türetilmiş bir sınıf sanal temel sınıftan devraldığı sanal bir işlevi geçersiz kılarsa ve türetilmiş sınıfın oluşturucusu veya yıkıcısı sanal temel sınıfın işaretçisini kullanarak bu işlevi çağırırsa, derleyici sanal temelleri olan sınırlara ek gizli `vtordisp` alanları sunabilir.  
+ 
+**Vtordisp** pragması, yalnızca sanal temeller kullanan koda uygulanabilir. Türetilmiş bir sınıf sanal temel sınıftan devraldığı sanal bir işlev geçersiz kılar ve bir oluşturucu veya yıkıcı için türetilmiş bir sınıf sanal temel sınıfın işaretçisi kullanarak bu işlevi çağırırsa, derleyici ek gizli yapabilecek**vtordisp** sanal temellere sahip sınıflara alanlarına.  
   
- `vtordisp` pragması, onu izleyen sınıfların düzenini etkiler. /vd0, /vd1 ve /vd2 seçenekleri, tam modüller için aynı davranışı belirtir. `0` veya `off` belirtilirse, gizli `vtordisp` üyeleri engellenir. `vtordisp` öğesini yalnızca sınıfın oluşturucularının ve yıkıcılarının `this` işaretçisi tarafından işaret edilen nesne üzerindeki sanal işlevleri çağırma olasılığı yoksa kapatın.  
+**Vtordisp** pragması, onu izleyen sınıfların düzenini etkiler. `/vd0`, `/vd1`, Ve `/vd2` seçenekleri, tam modüller için aynı davranışı belirtin. 0 belirtme veya *kapalı* gizli bastırır **vtordisp** üyeleri. Devre dışı **vtordisp** işaret ettiği nesne üzerinde işlevler sınıfın oluşturucularının ve yıkıcılarının sanal çağıran olasılığı varsa yalnızca **bu** işaretçi.  
   
- Varsayılan olan `1` veya `on` değerlerinin belirtilmesi, gizli `vtordisp` üyelerini gerektiklerinde etkinleştirir.  
+1 belirtme veya *üzerinde*, varsayılan olarak etkinleştirir gizli **vtordisp** gerekli nerede üyeleri.  
   
- Belirtme `2` gizli etkinleştirir `vtordisp` sanal işlevlere sahip tüm sanal temelleri için üyeleri.  `vtordisp(2)` doğru performansını sağlamak gerekli olabilir `dynamic_cast` kısmen oluşturulan bir nesne üzerinde. Daha fazla bilgi için bkz: [Derleyici Uyarısı (düzey 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md).  
+2 sağlayan gizli belirtme **vtordisp** üyeleri sanal işlevleri olan tüm sanal temeller için.  `vtordisp(2)` doğru performansını sağlamak gerekli olabilir **dynamic_cast** üzerinde oluşturulmuş bir nesne. Daha fazla bilgi için [Derleyici Uyarısı (düzey 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md).  
   
- Bağımsız değişkeni olmayan `#pragma vtordisp()`, vtordisp ayarını başlangıç ayarına geri yükler.  
+Bağımsız değişkeni olmayan `#pragma vtordisp()`, vtordisp ayarını başlangıç ayarına geri yükler.  
   
 ```  
 #pragma vtordisp(push, 2)  
@@ -72,7 +73,8 @@ class GetReal : virtual public VBase { ... };
 #pragma vtordisp(pop)  
 ```  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

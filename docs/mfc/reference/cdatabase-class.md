@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b28dc721b3131fc413248f6ba4a0b0612176cb67
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 6cb88decfd69fd7fb81667164f651e934ee08775
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337586"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464505"
 ---
 # <a name="cdatabase-class"></a>CDatabase sınıfı
 Veri kaynağı üzerinde çalışabileceğiniz bir veri kaynağı bağlantısını temsil eder.  
@@ -189,7 +189,7 @@ void Cancel();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- MFC ODBC sınıfları artık zaman uyumsuz işleme kullandığını unutmayın. bir Aracıdan işlemi gerçekleştirmek için doğrudan ODBC API işlevini çağırmanız gerekir [SQLSetConnectOption](https://msdn.microsoft.com/library/ms713564.aspx). Daha fazla bilgi için [zaman uyumsuz yürütme](https://msdn.microsoft.com/library/ms713563.aspx) Windows SDK.  
+ MFC ODBC sınıfları artık zaman uyumsuz işleme kullandığını unutmayın. bir Aracıdan işlemi gerçekleştirmek için doğrudan ODBC API işlevini çağırmanız gerekir [SQLSetConnectOption](/previous-versions/windows/desktop/ms713564\(v=vs.85\)). Daha fazla bilgi için [zaman uyumsuz yürütme](/previous-versions/windows/desktop/ms713563\(v=vs.85\)) Windows SDK.  
   
 ##  <a name="cantransact"></a>  CDatabase::CanTransact  
  Veritabanı işlemleri izin verip vermeyeceğini belirlemek için bu üye işlevini çağırın.  

@@ -18,48 +18,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b82027066e66cc51be8982a19ab6209ff236ef2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 08304a42b961f93b7d9e4e6e644e1514e34eb335
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849814"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464468"
 ---
 # <a name="bssseg"></a>bss_seg
-Başlatılmamış değişkenleri .obj dosyasında depolandığı kesimini belirtir.  
+Başlatılmamış değişkenler .obj dosyasında depolandığı segmenti belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma bss_seg( [ [ { push | pop }, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Obj dosyaları ile görüntülenebilir [DUMPBIN](../build/reference/dumpbin-command-line.md) uygulama. Başlatılmamış veriler için .obj dosyasında varsayılan kesimi .bss ' dir. Bazı durumlarda kullanımını **bss_seg** hızlandırabilir yükleme süreleri bir bölüme başlatılmamış veri gruplandırarak.  
+ 
+Obj dosyaları görüntülenebilir [dumpbin](../build/reference/dumpbin-command-line.md) uygulama. Başlatılmamış veriler için .obj dosyasındaki varsayılan segment .bss ' dir. Bazı durumlarda kullanımını **bss_seg** hızlandırabilirsiniz yükleme sürelerini bir bölüme başlatılmamış veri gruplandırarak.  
   
- **bss_seg** parametresiz kesim için .bss sıfırlar.  
+**bss_seg** hiçbir parametre olmadan için .bss kesimi sıfırlar.  
   
- **anında iletme**(isteğe bağlı)  
- İç derleyici yığınına bir kayıt yerleştirir. A **itme** olabilir bir *tanımlayıcısı* ve *segment adı*.  
+*anında iletme* (isteğe bağlı)  
+İç derleyici yığınına bir kayıt yerleştirir. A *anında iletme* olabilir bir *tanımlayıcı* ve *segment-name*.  
   
- **POP** (isteğe bağlı)  
- Derleyici iç yığının en üstünden bir kayıt kaldırır.  
+*POP* (isteğe bağlı)  
+Derleyici iç yığının en üstünden bir kayıt kaldırır.  
   
- *tanımlayıcı* (isteğe bağlı)  
- İle kullanıldığında **itme**, iç derleyici yığında kaydı bir adı atar. İle kullanıldığında **pop**, POP kadar iç yığından kayıtları *tanımlayıcısı* ; kaldırılır *tanımlayıcısı* bulunamadı iç yığında bir şey Sil'i.  
+*tanımlayıcı* (isteğe bağlı)  
+İle kullanıldığında *anında iletme*, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında *pop*, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
   
- *tanımlayıcı* tek bir tıklatmayla Sil'i birden çok kayıt etkinleştirir **pop** komutu.  
+*tanımlayıcı* tek bir POP birden çok kayıt getirir *pop* komutu.  
   
- *"segment-name"*(isteğe bağlı)  
- Bir segmentin adı. İle kullanıldığında **pop**, yığın Sil'i ve *segment adı* etkin kesimi adı olur.  
+*"segment-name"*(isteğe bağlı)  
+Bir segmentin adı. İle kullanıldığında *pop*, yığın silinir ve *segment-name* etkin segment adı haline gelir.  
   
- *"sınıf segment"* (isteğe bağlı)  
- Sürüm 2.0'dan önceki C++ ile uyumluluk sağlamak için dahil edilir. Yoksayılır.  
+*"segment-class"* (isteğe bağlı)  
+Sürüm 2.0'dan önceki C++ ile uyumluluk sağlamak için dahil edilir. Yoksayılır.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // pragma_directive_bss_seg.cpp  
 int i;                     // stored in .bss  
 #pragma bss_seg(".my_data1")  
@@ -75,11 +75,12 @@ int main() {
 }  
 ```  
   
- Bölümler başlatılmış veriler için de belirtebilirsiniz ([data_seg](../preprocessor/data-seg.md)), işlevleri ([code_seg](../preprocessor/code-seg.md)) ve const değişkenler ([const_seg](../preprocessor/const-seg.md)).  
+Başlatılmış veriler için bölümler belirtebilirsiniz ([data_seg](../preprocessor/data-seg.md)), İşlevler ([code_seg](../preprocessor/code-seg.md)) ve const değişkenleri ([const_seg](../preprocessor/const-seg.md)).  
   
- Kullanılarak ayrılmış veri **bss_seg** pragma konumuna hakkında hiçbir bilgi korumak değil.  
+Kullanılarak yer ayrılmış veri **bss_seg** pragma konumuna hakkındaki tüm bilgileri korumak değil.  
   
- Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) değil kullanmanız gereken bir bölüm oluştururken adları listesi.  
+Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) kullanmamanız bölüm oluştururken adları listesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

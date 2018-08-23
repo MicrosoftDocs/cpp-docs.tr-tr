@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70d6f047cf18b8b768d40533e2acc6cb2f649327
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a40cf81d0b00123692c9ea8b0e2f3111fb914fbb
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379009"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466368"
 ---
 # <a name="subsystem-specify-subsystem"></a>/SUBSYSTEM (Alt Sistemi Belirt)
 ```  
@@ -37,46 +37,46 @@ ms.locfileid: "32379009"
 ```  
   
  BOOT_APPLICATION  
- Windows Önyükleme Ortamı'çalışan bir uygulama. Önyükleme uygulamalar hakkında daha fazla bilgi için bkz: [hakkında BCD](http://msdn.microsoft.com/library/windows/desktop/aa362639).  
+ Windows önyükleme ortamında çalışan bir uygulama. Önyükleme uygulamaları hakkında daha fazla bilgi için bkz. [hakkında BCD](http://msdn.microsoft.com/library/windows/desktop/aa362639).  
   
- KONSOL  
- Win32 karakter modu uygulama. İşletim sistemi konsol uygulamaları için bir konsol sağlar. Varsa `main` veya `wmain` yerel kod için tanımlanan `int main(array<String ^> ^)` yönetilen kod için tanımlanan veya uygulamanın tamamen yapı `/clr:safe`, KONSOL varsayılan değerdir.  
+ KONSOLU  
+ Win32 karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bir konsol sağlar. Varsa `main` veya `wmain` yerel kod için tanımlanır `int main(array<String ^> ^)` yönetilen kod için tanımlanır veya uygulamanın tamamen yapı `/clr:safe`, KONSOL varsayılandır.  
   
  Genişletilebilir Bellenim Arabirimi  
- EFI_ * alt sistemleri. EFI belirtimi daha fazla bilgi için bkz. Örneğin, Intel Web sitesine bakın. En düşük sürümü ve varsayılan sürüm 1.0 ' dir.  
+ EFI_ * alt sistemler. EFI belirtimi daha fazla bilgi için bkz. Örneğin, Intel Web sitesine bakın. En düşük sürümü ve varsayılan sürüm 1.0 ' dir.  
   
  YEREL  
- Windows NT Çekirdek modu sürücüleri. Bu seçenek, genellikle Windows sistemi bileşenleri için ayrılmıştır. Varsa [/DRIVER:WDM](../../build/reference/driver-windows-nt-kernel-mode-driver.md) belirtilmemişse, yerel varsayılan değerdir.  
+ Windows NT Çekirdek modu sürücüleri. Bu seçenek genelde Windows sistem bileşenleri için ayrılmıştır. Varsa [/DRIVER: WDM](../../build/reference/driver-windows-nt-kernel-mode-driver.md) belirtilirse, yerel varsayılandır.  
   
  POSIX  
- POSIX alt sisteminde Windows NT ile çalıştırır uygulama.  
+ Windows NT'de POSIX alt sistemi ile çalışan uygulama.  
   
  WINDOWS  
- Uygulama kullanıcı etkileşimi için kendi windows oluşturduğundan bir konsol büyük olasılıkla gerektirmez. Varsa `WinMain` veya `wWinMain` yerel kod için tanımlanan veya `WinMain(HISTANCE *, HINSTANCE *, char *, int)` veya `wWinMain(HINSTANCE *, HINSTANCE *, wchar_t *, int)` tanımlanmış yönetilen kod için WINDOWS varsayılandır.  
+ Uygulama kullanıcı etkileşimi için kendi pencerelerini oluşturduğundan konsol, büyük olasılıkla gerektirmez. Varsa `WinMain` veya `wWinMain` yerel kod için tanımlanır veya `WinMain(HISTANCE *, HINSTANCE *, char *, int)` veya `wWinMain(HINSTANCE *, HINSTANCE *, wchar_t *, int)` tanımlanan yönetilen kod için WINDOWS varsayılandır.  
   
  `Major` ve `minor` (isteğe bağlı)  
- Alt sistemi gerekli en düşük sürümü belirtin. 0 ile 65.535 aralıktaki ondalık sayılar bağımsız değişkenler. Açıklamalar daha fazla bilgi için bkz. Sürüm numaraları için hiçbir üst sınırları vardır.  
+ Alt sistemin gerekli en düşük sürümü belirtin. Bağımsız değişkenler, 0 ile 65.535 aralığındaki ondalık sayılardır. Daha fazla bilgi için açıklamalara bakın. Sürüm numaraları için hiçbir üst sınırları vardır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- /SUBSYSTEM seçeneği yürütülebilir ortamını belirtir.  
+ / Subsystem seçeneği, yürütülebilir dosya için ortamı belirtir.  
   
- Giriş Noktası simgesi (veya giriş noktası işlevi) alt sistemi seçimi etkiler, bağlayıcı seçer.  
+ Alt sistem seçimi giriş noktası sembolünü (veya giriş noktası işlevini) etkiler, bağlayıcı seçer.  
   
- İsteğe bağlı minimum ve varsayılan `major` ve `minor` alt sistemleri için sürüm numaraları aşağıdaki gibidir.  
+ Varsayılan ve isteğe bağlı en az `major` ve `minor` alt sistemler için sürüm numaraları aşağıdaki gibidir.  
   
-|Alt sistemi|Minimum|Varsayılan|  
+|Alt sistem|Minimum|Varsayılan|  
 |---------------|-------------|-------------|  
 |BOOT_APPLICATION|1.0|1.0|  
-|KONSOL|(x 86) 5.01 5.02 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|6,00 (x86, [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|  
-|WINDOWS|(x 86) 5.01 5.02 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|6,00 (x86, [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|  
-|Yerel (ile sürücü: WDM)|(x 86) 1.00 1.10 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], ARM)|(x 86) 1.00 1.10 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], ARM)|  
-|Yerel (olmadan /DRIVER:WDM)|(x 86) 4.00 5.02 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|(x 86) 4.00 5.02 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|  
+|KONSOLU|(x 86) 5.01 (x 64) 5.02 6.02 (ARM)|(x86, x64) 6.00 6.02 (ARM)|  
+|WINDOWS|(x 86) 5.01 (x 64) 5.02 6.02 (ARM)|(x86, x64) 6.00 6.02 (ARM)|  
+|Yerel (ile sürücü: WDM)|(x 86) 1,00 1.10 (x64, ARM)|(x 86) 1,00 1.10 (x64, ARM)|  
+|Yerel (olmadan/DRIVER: WDM)|(x 86) 4.00 (x 64) 5.02 6.02 (ARM)|(x 86) 4.00 (x 64) 5.02 6.02 (ARM)|  
 |POSIX|1.0|19.90|  
 |EFI_APPLICATION, EFI_BOOT_SERVICE_DRIVER, EFI_ROM, EFI_RUNTIME_DRIVER|1.0|1.0|  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
   
 2.  Bağlayıcı klasörü seçin.  
   

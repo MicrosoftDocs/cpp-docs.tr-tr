@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52d1727018fd2ad214e031229945daa4d843f115
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 3f60ba71a82bf09361e55f8c6b7cab82f49d47bd
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403069"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42464474"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -157,9 +157,9 @@ Varsayılan olmayan bir oluşturucu bildirilirse, derleyici varsayılan bir olu�
 
 ```cpp
 class Box {
+public:
     Box(int width, int length, int height)
         : m_width(width), m_length(length), m_height(height){}
-};
 private:
     int m_width;
     int m_length;

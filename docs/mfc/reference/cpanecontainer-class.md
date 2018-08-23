@@ -130,17 +130,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6de7cf11b6f328819a677d248647934619153fb7
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: d69a5cefa1cb43ad4f6c585b3cb7f7e021ae9183
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079481"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465080"
 ---
 # <a name="cpanecontainer-class"></a>CPaneContainer sınıfı
-`CPaneContainer` Sınıftır MFC tarafından uygulanan takma modeline temel bir bileşenidir. Bu sınıfın bir nesnesi işaretçileri iki yerleşik bölmeler veya iki örneğini depolar `CPaneContainer.` bölmeleri (veya kapsayıcıları) ayıran ayırıcı gösteren bir işaretçi de depolar. Kapsayıcılar içinde iç içe geçmiş kapsayıcılar tarafından framework karmaşık takma düzenleri temsil eden bir ikili ağacı oluşturabilirsiniz. İkili ağacının kök dizininde depolanmış bir [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) nesnesi.  
+`CPaneContainer` Sınıfı, temel bir MFC tarafından uygulanan yerleştirme modelinin ana bileşenidir. Bu sınıfın bir nesnesi işaretçileri iki yerleştirme bölmesine veya iki örneğini depolar `CPaneContainer.` ayrıca bölmeleri (veya kapsayıcıları) ayıran ayırıcıya bir işaretçi depolar. Kapsayıcıları iç içe geçirerek kapsayıcılar, karmaşık yerleştirme düzenlerini temsil eden bir ikili ağacı framework oluşturabilirsiniz. İkili ağacın kökünde depolanan bir [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) nesne.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
  
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -207,7 +207,7 @@ class CPaneContainer : public CObject
 |[CPaneContainer::Resize](#resize)||  
 |[CPaneContainer::ResizePane](#resizepane)||  
 |[CPaneContainer::ResizePartOfPaneContainer](#resizepartofpanecontainer)||  
-|[CPaneContainer::Serialize](#serialize)|Okur veya bir arşiv değiştirilmesine veya bu nesneyi yazar. (Geçersiz kılmaları [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|  
+|[CPaneContainer::Serialize](#serialize)|Okur veya ya da bir arşivden bu nesneyi yazar. (Geçersiz kılmaları [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|  
 |[CPaneContainer::SetPane](#setpane)||  
 |[CPaneContainer::SetPaneContainer](#setpanecontainer)||  
 |[CPaneContainer::SetPaneDivider](#setpanedivider)||  
@@ -218,10 +218,10 @@ class CPaneContainer : public CObject
 |[CPaneContainer::StretchPaneContainer](#stretchpanecontainer)||  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CPaneContainer` nesneleri çerçevesi tarafından otomatik olarak oluşturulur.  
+ `CPaneContainer` nesneleri framework tarafından otomatik olarak oluşturulur.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir örneğini oluşturmak gösterilmiştir `CPaneContainer` sınıfı. Bu kod parçacığını parçası olan [bölmesinin boyutunu Ayarla örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, bir örneğini oluşturmak gösterilmiştir `CPaneContainer` sınıfı. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_1.h)]  
 [!code-cpp[NVC_MFC_SetPaneSize#1](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_2.cpp)]  
@@ -267,7 +267,7 @@ BOOL AddSubPaneContainer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pContainer*  
+ [in] *Implement_serıalıze*  
  [in] *bRightNodeNew*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -288,7 +288,7 @@ virtual int CalcAvailablePaneSpace(
 ### <a name="parameters"></a>Parametreler  
  [in] *nRequiredOffset*  
  [in] *pBar*  
- [in] *pContainer*  
+ [in] *Implement_serıalıze*  
  [in] *bLeftBar*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -612,7 +612,7 @@ virtual void GetWindowRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIgnoreVisibility*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -814,7 +814,7 @@ virtual void Resize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *hdwp*  
  [in] *bRedraw*  
   
@@ -836,7 +836,7 @@ virtual void ResizePane(
 ### <a name="parameters"></a>Parametreler  
  [in] *nOffset*  
  [in] *pBar*  
- [in] *pContainer*  
+ [in] *Implement_serıalıze*  
  [in] *bHorz*  
  [in] *bLeftBar*  
  [in] *hdwp*  
@@ -897,7 +897,7 @@ void SetPaneContainer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pContainer*  
+ [in] *Implement_serıalıze*  
  [in] *bLeft*  
   
 ### <a name="remarks"></a>Açıklamalar  

@@ -114,12 +114,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 219f0bc1f5b9959a424a8c3a63ec0c4e3505eb55
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: d843b3b491973c32d8fb5ff3160327a9e82223c8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852594"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464590"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
 `CMFCTabCtrl` Sınıfı bir sekme denetimi için işlevsellik sağlar. Sekme denetimi, üstünde veya altında düz veya üç boyutlu sekmeler içeren bir yerleştirilebilir pencere görüntüler. Sekmeler metin ve resim görüntüleyebilir ve etkin olduğunda rengi değiştirebilirsiniz.  
@@ -221,7 +221,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
   
 -   Sekmeli pencerelerin çıkarılabilir.  
   
- `CMFCTabCtrl` Sınıfı içeren bir iletişim kutusu, kullanılabilir ancak gibi çubukları yerleştirme kullanan uygulamaları denetlemek için tasarlanmıştır [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] ve [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)]. Daha fazla bilgi için [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md).  
+ `CMFCTabCtrl` Sınıfı içeren bir iletişim kutusu, kullanılabilir ancak Microsoft Excel ve Visual Studio gibi çubukları yerleştirme kullanan uygulamaları denetlemek için tasarlanmıştır. Daha fazla bilgi için [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md).  
   
  Sekme denetimi uygulamanızda yerleştirme yeniden boyutlandırılabilir, eklemek için bu adımları izleyin:  
   
@@ -269,7 +269,7 @@ void ActivateMDITab(int nTab = -1);
  Bir sekmeye görüntülemek ya da şu anda etkin sekmede belirtmek için -1 sıfır tabanlı dizini.  
   
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ```  
 virtual BOOL AllowDestroyEmptyTabbedPane() const;  

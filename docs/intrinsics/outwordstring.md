@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc25fdc4d43b7454761787264583b5e4f8fa47e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7abc221b81b6ace3afb165585b7e24655d348c2b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333700"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464680"
 ---
 # <a name="outwordstring"></a>__outwordstring
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur `rep outsw` gönderir yönerge `Count` başlayan sözcükleri `Buffer` tarafından belirtilen g/ç bağlantı noktası çıkışı `Port`.  
+ Oluşturur `rep outsw` gönderen yönerge `Count` başlayan sözcükleri `Buffer` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,20 +48,20 @@ void __outwordstring(
  Belirtilen bağlantı noktasına gönderilecek verileri için bir işaretçi.  
   
  [in] `Count`  
- Gönderilecek sözcükler sayısı.  
+ Gönderilecek sözcük sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__outwordstring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outwordstring`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

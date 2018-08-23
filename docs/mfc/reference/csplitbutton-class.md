@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbced65aa76206d040ff1c13267fe9b7d3c69eca
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: d7fd35c351639d4b7b5f3b9dbbbce1c5e7cbcb79
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122793"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466371"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton sınıfı
-`CSplitButton` Sınıfı, Bölünmüş düğme denetimi temsil eder. Kullanıcı düğmesi ana bölümü tıkladığında ve bir kullanıcı düğmesinin aşağı açılan okunu tıkladığında açılır menü görüntüler varsayılan davranışı Bölünmüş düğme denetimi gerçekleştirir.  
+`CSplitButton` Sınıfı, Bölünmüş düğme denetimini temsil eder. Bir kullanıcı düğmenin ana bölümünü tıkladığında ve kullanıcı düğmenin aşağı açılan oka tıkladığında bir açılan menü görüntüler varsayılan davranışı Bölünmüş düğme denetimi gerçekleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,27 +46,27 @@ class CSplitButton : public CButton
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSplitButton::CSplitButton](#csplitbutton)|Oluşturan bir `CSplitButton` nesnesi.|  
+|[CSplitButton::CSplitButton](#csplitbutton)|Oluşturur bir `CSplitButton` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSplitButton::Create](#create)|Bölünmüş düğme denetimi ile belirtilen stilleri oluşturur ve geçerli iliştirir `CSplitButton` nesnesi.|  
-|[CSplitButton::SetDropDownMenu](#setdropdownmenu)|Kullanıcı aşağı açılan okunu geçerli Bölünmüş düğme denetimi tıklattığında görüntülenen açılır menü ayarlar.|  
+|[CSplitButton::Create](#create)|Belirtilen stilleriyle bir Bölünmüş düğme denetimi oluşturur ve bunu geçerli ekler `CSplitButton` nesne.|  
+|[CSplitButton::SetDropDownMenu](#setdropdownmenu)|Kullanıcı geçerli Bölünmüş düğme denetimi aşağı açılan okunu tıkladığında görüntülenen açılan menüden ayarlar.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSplitButton::OnDropDown](#ondropdown)|Sistem bir kullanıcı aşağı açılan okunu geçerli Bölünmüş düğme denetiminin tıkladığında göndereceğini BCN_DROPDOWN bildirim işler.|  
+|[CSplitButton::OnDropDown](#ondropdown)|Sistem kullanıcı geçerli Bölünmüş düğme denetimi aşağı açılan okunu tıkladığında gönderdiği BCN_DROPDOWN bildirimleri işler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CSplitButton` Sınıfı türetilir [CButton](../../mfc/reference/cbutton-class.md) sınıfı. Bölünmüş düğme denetim stilini BS_SPLITBUTTON olan bir düğme denetimdir. Kullanıcı aşağı açılan okunu tıklattığında özel menü görüntüler. Daha fazla bilgi için bkz: BS_SPLITBUTTON ve BS_DEFSPLITBUTTON stillerde [düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775951).  
+ `CSplitButton` Sınıfı türetilen [CButton](../../mfc/reference/cbutton-class.md) sınıfı. Bölünmüş düğme denetimi BS_SPLITBUTTON stilini olan bir düğme denetimi ' dir. Kullanıcı aşağı açılan okunu tıkladığında bir özel menü görüntüler. Daha fazla bilgi için bkz: BS_SPLITBUTTON ve BS_DEFSPLITBUTTON stilleri [düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775951).  
   
- Aşağıdaki şekilde bir çağrı ve (1) Bölünmüş düğme denetimi içeren bir iletişim kutusu gösterilmektedir. (2) aşağı açılan okunu zaten tıklamıştır ve (3) alt görüntülenir.  
+ Aşağıdaki şekil, çağrı cihazı denetimi ve (1) Bölünmüş düğme denetimini içeren bir iletişim kutusu gösterir. (2) açılan liste okunu zaten tıklanan ve (3) alt görüntülenir.  
   
- ![Ve çağrı cihazı denetimiyle denetimi ile iletişim. ] (../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
+ ![Splitbutton ve çağrı cihazı denetimi ile iletişim. ](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -82,12 +82,12 @@ class CSplitButton : public CButton
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxcmn.h  
   
- Bu sınıf desteklenir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ve daha sonra.  
+ Bu sınıf, Windows Vista ve sonraki sürümlerde desteklenir.  
   
  Bu sınıf için ek gereksinimler açıklanmıştır [yapı gereksinimleri için Windows Vista ortak denetimleri](../../mfc/build-requirements-for-windows-vista-common-controls.md).  
   
 ##  <a name="create"></a>  CSplitButton::Create  
- Bölünmüş düğme denetimi ile belirtilen stilleri oluşturur ve geçerli iliştirir `CSplitButton` nesnesi.  
+ Belirtilen stilleriyle bir Bölünmüş düğme denetimi oluşturur ve bunu geçerli ekler `CSplitButton` nesne.  
   
 ```  
 virtual BOOL Create(
@@ -101,16 +101,16 @@ virtual BOOL Create(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwStyle*|Bitsel bir birleşimi (veya) denetime uygulanacak stilleri. Daha fazla bilgi için bkz: [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).|  
-|[in] *rect*|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|  
-|[in] *pParentWnd*|Null olmayan gösteren bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst pencere nesnesi.|  
+|[in] *dwStyle*|Bitsel bir birleşimi (veya) denetime uygulanacak stilleri. Daha fazla bilgi için [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).|  
+|[in] *dikdörtgen*|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|  
+|[in] *pParentWnd*|Null olmayan bir işaretçiye bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne.|  
 |[in] *nID*|Denetimin kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ##  <a name="csplitbutton"></a>  CSplitButton::CSplitButton  
- Oluşturan bir `CSplitButton` nesnesi. Kullanıcı aşağı açılan okunu Bölünmüş düğme denetimi tıklattığında görüntülenen bir alt Oluşturucusu ait parametreleri belirtin.  
+ Oluşturur bir `CSplitButton` nesne. Kullanıcı Bölünmüş düğme denetimi aşağı açılan okunu tıkladığında görüntülenen bir alt oluşturucunun parametreleri belirtin.  
   
 ```  
 CSplitButton();
@@ -128,13 +128,13 @@ CSplitButton(CMenu* pMenu)
 |---------------|-----------------|  
 |[in] *nMenuId*|Menü çubuğu kaynak kimliği.|  
 |[in] *nSubMenuId*|Bir alt kaynak kimliği.|  
-|[in] *pMenu*|Bir işaretçi bir [CMenu](../../mfc/reference/cmenu-class.md) belirten bir alt nesne. `CSplitButton` Nesne siler `CMenu` nesne ve onun ilişkili HMENU zaman `CSplitButton` nesne kapsam dışında gider.|  
+|[in] *pMenu*|Bir işaretçi bir [CMenu](../../mfc/reference/cmenu-class.md) belirten bir alt nesne. `CSplitButton` Nesne silme `CMenu` nesne ve onun ilişkili HMENU olduğunda `CSplitButton` nesne kapsam dışına gider.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CSplitButton::Create](#create) Bölünmüş düğme denetimi oluşturmak ve ona eklemek için yöntem `CSplitButton` nesnesi.  
+ Kullanım [CSplitButton::Create](#create) ekleyebilir ve Bölünmüş düğme denetimi oluşturmak için yöntem `CSplitButton` nesne.  
   
 ##  <a name="ondropdown"></a>  CSplitButton::OnDropDown  
- Sistem bir kullanıcı aşağı açılan okunu geçerli Bölünmüş düğme denetiminin tıkladığında göndereceğini BCN_DROPDOWN bildirim işler.  
+ Sistem kullanıcı geçerli Bölünmüş düğme denetimi aşağı açılan okunu tıkladığında gönderdiği BCN_DROPDOWN bildirimleri işler.  
   
 ```  
 afx_msg void OnDropDown(
@@ -147,14 +147,14 @@ afx_msg void OnDropDown(
 |Parametre|Açıklama|  
 |---------------|-----------------|  
 |[in] *pNMHDR*|İşaretçi bir [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) hakkında bilgi içeren yapısı [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) bildirim.|  
-|[out] *pResult*|(Kullanılmaz; herhangi bir değer döndürdü.) Değerini döndürmek [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) bildirim.|  
+|[out] *pResult*|(Kullanılmaz; hiçbir değer döndürülmez.) Dönüş değeri [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) bildirim.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı aşağı açılan okunu Bölünmüş düğme denetimi tıklattığında sistem BCN_DROPDOWN bildirim gönderir. ileti, hangi `OnDropDown` yöntemi işler. Ancak, `CSplitButton` nesne Bölünmüş düğme denetimi içeren denetimi için BCN_DROPDOWN bildirim iletme değil. Sonuç olarak, içeren denetimi, özel bir eylem bildirime yanıt destekleyemez.  
+ Kullanıcı Bölünmüş düğme denetimini bulunan aşağı açılan oka tıkladığında, sistemi BCN_DROPDOWN bildirim gönderir. ileti, hangi `OnDropDown` yöntemi işler. Ancak, `CSplitButton` nesne, Bölünmüş düğme denetimi içeren denetimi BCN_DROPDOWN bildirim iletme değil. Sonuç olarak, denetimi içeren özel bir eylem bildirime yanıt destekleyemez.  
   
- İçeren denetimi destekler özel bir eylemi uygulamak için kullandığınız bir [CButton](../../mfc/reference/cbutton-class.md) yerine BS_SPLITBUTTON stili nesnesiyle bir `CSplitButton` nesnesi. BCN_DROPDOWN bildirim için bir işleyici uygulamak `CButton` nesnesi. Daha fazla bilgi için bkz: [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).  
+ İçeren denetim destekleyen özel bir eylem uygulamak için kullanmak bir [CButton](../../mfc/reference/cbutton-class.md) yerine BS_SPLITBUTTON stilini nesneyle bir `CSplitButton` nesne. Ardından BCN_DROPDOWN bildiriminde için bir işleyici uygulamak `CButton` nesne. Daha fazla bilgi için [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).  
   
- Bölünmüş düğme destekler kendisini kontrol özel bir eylemi uygulamak için kullandığınız [ileti yansıma](../../mfc/tn062-message-reflection-for-windows-controls.md). Kendi sınıfından türetilen `CSplitButton` sınıfı ve bu, örneğin, CMySplitButton olarak adlandırın. Daha sonra aşağıdaki ileti eşlemesi BCN_DROPDOWN bildirimini işlemek için uygulamanıza ekleyin:  
+ Bölünmüş düğme kendisini destekleyen denetim özel bir eylemi uygulamak için kullanma [ileti yansıma](../../mfc/tn062-message-reflection-for-windows-controls.md). Kendi sınıfından türetilir `CSplitButton` sınıfı ve, örneğin, CMySplitButton adlandırın. Ardından aşağıdaki ileti eşlemesi BCN_DROPDOWN bildirimini işlemek için uygulamanıza ekleyin:  
   
 ```  
 BEGIN_MESSAGE_MAP(CMySplitButton,
@@ -164,7 +164,7 @@ END_MESSAGE_MAP()
 ```  
   
 ##  <a name="setdropdownmenu"></a>  CSplitButton::SetDropDownMenu  
- Kullanıcı aşağı açılan okunu geçerli Bölünmüş düğme denetimi tıklattığında görüntülenen açılır menü ayarlar.  
+ Kullanıcı geçerli Bölünmüş düğme denetimi aşağı açılan okunu tıkladığında görüntülenen açılan menüden ayarlar.  
   
 ```  
 void SetDropDownMenu(
@@ -180,17 +180,17 @@ void SetDropDownMenu(CMenu* pMenu);
 |---------------|-----------------|  
 |[in] *nMenuId*|Menü çubuğu kaynak kimliği.|  
 |[in] *nSubMenuId*|Bir alt kaynak kimliği.|  
-|[in] *pMenu*|İşaretçi bir [CMenu](../../mfc/reference/cmenu-class.md) belirten bir alt nesne. `CSplitButton` Nesne siler `CMenu` nesne ve onun ilişkili HMENU zaman `CSplitButton` nesne kapsam dışında gider.|  
+|[in] *pMenu*|İşaretçi bir [CMenu](../../mfc/reference/cmenu-class.md) belirten bir alt nesne. `CSplitButton` Nesne silme `CMenu` nesne ve onun ilişkili HMENU olduğunda `CSplitButton` nesne kapsam dışına gider.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- *NMenuId* parametre yatay menü çubuğu öğeleri listesini bir menü çubuğu tanımlar. *NSubMenuId* her menü çubuğu öğesiyle ilişkili menü öğelerinin açılan listesi olan bir alt tanımlayan sıfır tabanlı bir dizin numarasını parametresidir. Örneğin, bir genel uygulama "Düzenle" ve "Help." "Dosyası," menü çubuğu öğeleri içeren bir menüsünde vardır Menü öğelerini içeren bir alt "Dosyası" menü çubuğu öğesi olan "Açın," "Kapat" ve "Çıkın." Bölünmüş düğme denetim aşağı açılan okunu tıklandığında, belirtilen alt menü çubuğu denetim görüntüler.  
+ *NMenuId* menü çubuğu öğelerini yatay bir listesi olan bir menü çubuğu parametresi tanımlar. *NSubMenuId* parametresi, her bir menü çubuğu öğesi ile ilişkili menü öğelerinin açılan listenin bir alt menüye tanımlayan bir sıfır tabanlı dizin numarası. Örneğin, "Düzenle" ve "Help", "File" menü çubuğu öğelerini içeren bir menü tipik bir uygulaması vardır "Dosya" menü çubuğu öğesini menü öğeleri içeren bir alt menüye sahip "Açın," "Kapat" ve "Çıkın." Bölünmüş düğme denetimi aşağı açılan oka tıklandığında denetimin belirtilen alt menü çubuğu görüntüler.  
   
- Aşağıdaki şekilde bir çağrı ve (1) Bölünmüş düğme denetimi içeren bir iletişim kutusu gösterilmektedir. (2) aşağı açılan okunu zaten tıklamıştır ve (3) alt görüntülenir.  
+ Aşağıdaki şekil, çağrı cihazı denetimi ve (1) Bölünmüş düğme denetimini içeren bir iletişim kutusu gösterir. (2) açılan liste okunu zaten tıklanan ve (3) alt görüntülenir.  
   
- ![Ve çağrı cihazı denetimiyle denetimi ile iletişim. ] (../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
+ ![Splitbutton ve çağrı cihazı denetimi ile iletişim. ](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki kod örneği işlemindeki ilk deyim gösteren [CSplitButton::SetDropDownMenu](#setdropdownmenu) yöntemi. Menü ile Visual Studio kaynak otomatik olarak IDR_MENU1 menü çubuğu kimliği adlı Düzenleyicisi oluşturduk. *NSubMenuId* sıfır olan parametre, menü çubuğundaki yalnızca menüye başvuruyor.  
+ Aşağıdaki kod örneğinde ilk deyimde gösterir [CSplitButton::SetDropDownMenu](#setdropdownmenu) yöntemi. Menü ile Visual Studio kaynak IDR_MENU1 menü çubuğu kimliği otomatik olarak adlandırılan Düzenleyicisi oluşturduk. *NSubMenuId* sıfır olan parametre menü çubuğu için yalnızca alt ifade eder.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/csplitbutton-class_1.cpp)]  
   

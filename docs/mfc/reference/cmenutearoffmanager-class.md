@@ -34,17 +34,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 105c933ee36c9bbeb634d85963d9254f3b68ebe4
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: b05c93bbdfd09bc28288b27a55520c5ac664b723
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041019"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465732"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager sınıfı
-Etiketleri menüleri yönetir. Etiketleri menü menü çubuğu menüsünde bulunur. Kullanıcı bir etiketleri menü menü çubuğu, etiketleri menü float neden kaldırabilirsiniz.  
+Etiket menülerini yönetir. Bir etiket menü menü çubuğunda bir menü ' dir. Kullanıcının bir etiket menü menü çubuğundan kaydırmak ayrılabilir menüyü menü neden kaldırabilirsiniz.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
    
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -58,7 +58,7 @@ class CMenuTearOffManager : public CObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMenuTearOffManager::CMenuTearOffManager](#cmenutearoffmanager)|Oluşturan bir `CMenuTearOffManager` nesnesi.|  
+|[CMenuTearOffManager::CMenuTearOffManager](#cmenutearoffmanager)|Oluşturur bir `CMenuTearOffManager` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -66,7 +66,7 @@ class CMenuTearOffManager : public CObject
 |----------|-----------------|  
 |[CMenuTearOffManager::Build](#build)||  
 |[CMenuTearOffManager::GetRegPath](#getregpath)||  
-|[CMenuTearOffManager::Initialize](#initialize)|Başlatır bir `CMenuTearOffManager` nesnesi.|  
+|[CMenuTearOffManager::Initialize](#initialize)|Başlatan bir `CMenuTearOffManager` nesne.|  
 |[CMenuTearOffManager::IsDynamicID](#isdynamicid)||  
 |[CMenuTearOffManager::Parse](#parse)||  
 |[CMenuTearOffManager::Reset](#reset)||  
@@ -74,10 +74,10 @@ class CMenuTearOffManager : public CObject
 |[CMenuTearOffManager::SetupTearOffMenus](#setuptearoffmenus)||  
   
 ## <a name="remarks"></a>Açıklamalar  
- Etiketleri menüleri, uygulamanızda kullanmak için bilmeniz gereken bir `CMenuTearOffManager` nesnesi. Çoğu durumda, oluşturduğunuz başlatmak veya olmaz bir `CMenuTearOffManager` doğrudan nesne. Çağırdığınızda bu sizin için işlenir [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) işlevi.  
+ Etiket menülerini kullanmak için olmalıdır bir `CMenuTearOffManager` nesne. Çoğu durumda, oluşturduğunuz başlatmak veya olmaz bir `CMenuTearOffManager` doğrudan nesne. Çağırdığınızda bu sizin için işlenir [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) işlevi.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek oluşturmak ve başlatma yapmayı gösteren bir `CMenuTearOffManager` çağırarak nesne `CWinAppEX::EnableTearOffMenus` yöntemi. Bu kod parçacığını parçası olan [Word paneli örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek, oluşturmak ve başlatmak gösterilmiştir bir `CMenuTearOffManager` çağırarak `CWinAppEX::EnableTearOffMenus` yöntemi. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]  
   
@@ -105,14 +105,14 @@ void Build(
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager  
- Oluşturan bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesnesi.  
+ Oluşturur bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesne.  
   
 ```  
 CMenuTearOffManager();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çoğu durumda, değil oluşturmalısınız bir `CMenuTearOffManager` el ile. Uygulamanızı çerçevesini oluşturur `CMenuTearOffManager` nesne çağırdığınızda [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).  
+ Çoğu durumda, değil oluşturmalısınız bir `CMenuTearOffManager` el ile. Uygulama Framework'ü oluşturur `CMenuTearOffManager` nesne çağırdığınızda [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).  
   
 ##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath  
 
@@ -126,7 +126,7 @@ LPCTSTR GetRegPath() const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="initialize"></a>  CMenuTearOffManager::Initialize  
- Başlatır bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesnesi.  
+ Başlatan bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesne.  
   
 ```  
 BOOL Initialize(
@@ -137,19 +137,19 @@ BOOL Initialize(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszRegEntry*  
- Bir kayıt defteri girdisi yolunu içeren bir dize. Uygulamalarınız, bu kayıt defteri girdisi etiketleri çubukları ayarlarını depolar.  
+ Bir kayıt defteri girişi yolunu içeren bir dize. Uygulamalarınız bu kayıt defteri girdisi etkinleştiriliyorken çubukları için ayarları depolar.  
   
  [in] *uiTearOffMenuFirst*  
- Etiketleri menü ilk menü kimliği.  
+ Bir etiket menü ilk menü kimliği.  
   
  [in] *uiTearOffMenuLast*  
- Etiketleri menü son menü kimliği.  
+ Bir etiket menü son menü kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Menü kimlikleri aralığını *uiTearOffMenuFirst* için *uiTearOffMenuLast* sürekli bir aralık olmalıdır. Aralık uygulamada aynı anda görünebilir etiketleri menüleri sayısını tanımlar.  
+ Menü kimlikleri aralığını *uiTearOffMenuFirst* için *uiTearOffMenuLast* sürekli aralığı olmalıdır. Aralık, uygulamanın aynı anda görünen etiket menülerini sayısını tanımlar.  
   
 ##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
 

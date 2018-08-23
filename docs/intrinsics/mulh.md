@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae312de1311bfe068ac48838f2720bd8a2a83e53
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6bf4cc0ce245b6b80165ced5a9649586f9214639
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339546"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464507"
 ---
 # <a name="mulh"></a>__mulh
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İki 64-bit işaretli tamsayının ürünün yüksek 64 bit döndürür.  
+ Yüksek 64 bit ürünün iki 64-bit imzalı tamsayı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,10 +39,10 @@ __int64 __mulh(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `a`  
- Çarpılacağı ilk sayı.  
+ Çarpılacak ilk sayı.  
   
  [in] `b`  
- Çarpılacağı ikinci sayı.  
+ Çarpılacak ikinci sayı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Çarpma 128-bit sonucunu yüksek 64 bit.  
@@ -51,12 +51,12 @@ __int64 __mulh(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__mulh`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__mulh`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -85,7 +85,7 @@ int main()
 0xfffffffffffffff * 0xf0000000 = 0xeffffffffffffff10000000  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

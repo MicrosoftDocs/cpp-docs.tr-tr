@@ -1,5 +1,5 @@
 ---
-title: tlbid | Microsoft Docs
+title: tlbıd | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d651546733f42b1a714ac7a39992fa2d392c8fa
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1ec0150e63209728cf2f02c854fe03702b8a45b4
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839874"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465504"
 ---
 # <a name="tlbid"></a>tlbid
-**C++ özel**  
+**C++ özgü**  
   
- Birincil tür kitaplığı dışında kitaplıkları yüklenmesini sağlar.  
+Birincil tür kitaplığı dışında kitaplıklarını yüklemek için sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,27 +34,29 @@ ms.locfileid: "33839874"
 tlbid(number)  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `number`  
- Tür Kitaplığı'nda sayısı `filename`.  
+### <a name="parameters"></a>Parametreler  
+*Sayı*  
+Tür Kitaplığı'nda sayısını `filename`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birden çok tür kitaplıklarının tek DLL, birincil tür kitaplığı dışında kitaplıklarını kullanarak yük mümkün içinde yerleşik varsa `tlbid`.  
+ 
+Birden çok tür kitaplıklarının tek bir DLL'nin, birincil tür kitaplığı dışında kitaplıkları kullanarak yüklemek mümkün içinde yerleşik olan, **tlbıd**.  
   
- Örneğin:  
+Örneğin:  
   
 ```  
 #import <MyResource.dll> tlbid(2)  
 ```  
   
- eşdeğerdir:  
+eşdeğerdir:  
   
 ```  
 LoadTypeLib("MyResource.dll\\2");  
 ```  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

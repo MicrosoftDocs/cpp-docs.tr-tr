@@ -48,15 +48,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ffd681a589f9e8cc1c9cc56139f7b155773038f
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 6c92ccfe9dbf25fa1355885a5f6dd3570df4884b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952091"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464685"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils sınıfı
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -104,7 +104,7 @@ void AdjustRectToworkArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] *rect*  
+ [out içinde] *dikdörtgen*  
  [in] *pRectDelta*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -233,7 +233,7 @@ void FlipRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] *rect*  
+ [out içinde] *dikdörtgen*  
  [in] *nDegrees*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -249,7 +249,7 @@ void ForceAdjustLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [içinde out] *pDockManager*  
+ [out içinde] *pDockManager*  
  [in] *bForce*  
  [in] *bForceInvisible*  
   

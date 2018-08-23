@@ -41,18 +41,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e1eed6fdbf5f676e5a7177affb7c38cd016fa4c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 98e385f965ab3036d6ccf2383fd4ae6f420eb548
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695230"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42464581"
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 ||||  
 |-|-|-|  
 |[Ayırma](#alloc)|[CreateResourceManager](#createresourcemanager)|[DisableTracing](#disabletracing)|  
-|[EnableTracing](#enabletracing)|[Boş](#free)|[GetExecutionContextId](#getexecutioncontextid)|  
+|[EnableTracing](#enabletracing)|[Ücretsiz](#free)|[GetExecutionContextId](#getexecutioncontextid)|  
 |[GetOSVersion](#getosversion)|[GetProcessorCount](#getprocessorcount)|[GetProcessorNodeCount](#getprocessornodecount)|  
 |[GetSchedulerId](#getschedulerid)|[Trace_agents_register_name](#trace_agents_register_name)|[asend](#asend)|  
 |[cancel_current_task](#cancel_current_task)|[Temizle](#clear)|[create_async](#create_async)|  
@@ -63,12 +63,12 @@ ms.locfileid: "33695230"
 |[parallel_invoke](#parallel_invoke)|[parallel_radixsort](#parallel_radixsort)|[parallel_reduce](#parallel_reduce)|  
 |[parallel_sort](#parallel_sort)|[parallel_transform](#parallel_transform)|[Alma](#receive)|  
 |[run_with_cancellation_token](#run_with_cancellation_token)|[Gönder](#send)|[set_ambient_scheduler](#set_ambient_scheduler)|  
-|[set_task_execution_resources](#set_task_execution_resources)|[Değiştirme](#swap)|[task_from_exception](#task_from_exception)|  
+|[set_task_execution_resources](#set_task_execution_resources)|[değiştirme](#swap)|[task_from_exception](#task_from_exception)|  
 |[task_from_result](#task_from_result)|[try_receive](#try_receive)|[bekleme](#wait)|  
 |[when_all](#when_all)|[when_any](#when_any)|  
   
 ##  <a name="alloc"></a>  Ayırma  
- Bir eşzamanlılık çalışma zamanı önbelleğe alma Suballocator ' belirtilen boyut, bellek bloğu ayırır.  
+ Eşzamanlılık Çalışma zamanı önbelleğe alma ayırıcısını ' belirtilen boyut, bellek bloğu ayırır.  
   
 ```
 void* __cdecl Alloc(size_t _NumBytes);
@@ -79,13 +79,13 @@ void* __cdecl Alloc(size_t _NumBytes);
  Ayrılacak bellek bayt sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni ayrılan bellek için bir işaretçi.  
+ Yeni ayrılan bellek işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- , Uygulamanızda senaryoları hakkında yararlı önbelleğe alma Suballocator kullanarak daha fazla bilgi için bkz: [Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
+ Uygulamanızdaki senaryoları hakkında yararlı önbelleğe alma ayırıcısını kullanarak daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
 ##  <a name="asend"></a>  asend  
- Zaman uyumsuz bir hedef blok verileri yaymak için bir görev zamanlar işlemi gönderin.  
+ Hedef blok verileri yaymak için bir görevi zamanlar bir zaman uyumsuz gönderme işlemi.  
   
 ```
 template <class T>
@@ -104,28 +104,28 @@ bool asend(
  Gönderilecek veri türü.  
   
  `_Trg`  
- Bir işaretçi veya veri gönderildiği hedefine başvuru.  
+ Bir işaretçi veya başvuru veri gönderildiği hedef.  
   
  `_Data`  
- Gönderilecek verileri referansı.  
+ Gönderilecek verileri bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` yöntem döndürmeden önce iletiyi kabul edildiyse `false` Aksi takdirde.  
+ `true` yöntem döndürülen önce iletiyi kabul edilirse `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).  
+ Daha fazla bilgi için [ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).  
   
 ##  <a name="cancel_current_task"></a>  cancel_current_task  
- Şu anda yürütülen görev iptal eder. Bu işlev Görev Yürütme iptal etmek ve girmek neden görevi gövdesi içinde çağrılabilir `canceled` durumu.  
+ Şu anda yürütülmekte olan görevi iptal eder. Bu işlev görevin yürütülmesini durdurmak ve girmesine neden bir görevin gövdesinden çağrılabilir `canceled` durumu.  
   
- Gövdesi içinde değilse bu işlevi çağırmak için desteklenen bir senaryo değildir bir `task`. Bunun yapılması bir kilitlenme veya yanıt vermemesine uygulamanızda gibi tanımsız davranış neden olur.  
+ Gövdesinde değilseniz bu işlevin çağrılmasında desteklenen bir senaryo değil bir `task`. Bunun yapılması bir kilitlenme veya uygulamanızdaki bir takılma gibi tanımsız davranışa neden olur.  
   
 ```
 inline __declspec(noreturn) void __cdecl cancel_current_task();
 ```  
   
 ##  <a name="clear"></a>  Temizle  
- Herhangi bir yok etme sıranın eşzamanlı temizler şu anda sıradaki öğeleri. Bu yöntem eşzamanlılık uyumlu değil.  
+ Tüm yok etme eşzamanlı kuyruk temizler şu anda sıradaki öğeleri. Bu yöntem eşzamanlı güvenli değil.  
   
 ```
 template<typename T, class _Ax>
@@ -137,7 +137,7 @@ void concurrent_queue<T, _Ax>::clear();
  `_Ax`  
   
 ##  <a name="create_async"></a>  create_async  
- Bir kullanıcı tarafından sağlanan lambda veya işlev nesnesine bağlı bir Windows çalışma zamanı zaman uyumsuz yapısı oluşturur. Dönüş türü `create_async` aşağıdakilerden biri `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, veya `IAsyncOperationWithProgress<TResult, TProgress>^` yönteme geçirilen lambda imza göre.  
+ Bir kullanıcı tarafından sağlanan lambda veya işlev nesnesine bağlı bir Windows çalışma zamanı zaman uyumsuz bir yapı oluşturur. Dönüş türünü `create_async` herhangi biri `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, veya `IAsyncOperationWithProgress<TResult, TProgress>^` yönteme geçirilen lambda'nın imzası göre.  
   
 ```
 template<typename _Function>
@@ -148,28 +148,28 @@ __declspec(noinline) auto create_async(const _Function& _Func)
 ### <a name="parameters"></a>Parametreler  
  `_Function`  
  `_Func`  
- Windows çalışma zamanı zaman uyumsuz yapı oluşturulacağı lambda veya işlev nesnesi.  
+ Windows çalışma zamanı zaman uyumsuz bir yapı oluşturulacağı lambda veya işlev nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir IAsyncAction tarafından temsil edilen bir zaman uyumsuz yapısıyla ^, IAsyncActionWithProgress\<TProgress > ^, IAsyncOperation\<TResult > ^, veya bir IAsyncOperationWithProgress\<TResult, TProgress > ^. Döndürülen arabirimi işlevdeki geçirilen lambda imza bağlıdır.  
+ Iasyncaction tarafından temsil edilen zaman uyumsuz bir yapı ^, Iasyncactionwithprogress\<TProgress > ^, Iasyncoperation\<TResult > ^, veya Iasyncoperationwithprogress\<TResult, TProgress > ^. Döndürülen arabirim işleve geçirilen lambda imzası bağlıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Lambda dönüş türü yapısı bir eylemi veya işlemi olup olmadığını belirler.  
+ Lambda dönüş türü, yapı eylemi veya bir işlem olup olmadığını belirler.  
   
- Boş döndürmeleri lambdas Eylemler oluşturulmasına neden. Bir sonuç türü Lambda'lar `TResult` TResult işlemlerini oluşturulmasına neden.  
+ Boş dönüş veren Lambda'lar Eylemler oluşturulmasına neden. Türünün bir sonucu veren Lambda'lar `TResult` TResult işlemlerini oluşturulmasına neden olur.  
   
- Lambda aynı zamanda döndürebilir bir `task<TResult>` kendi içinde uyumsuz iş yalıtır veya zaman uyumsuz iş temsil eden görevi zinciri devamıdır. Bu durumda, zaman uyumsuz yürütme olanlar görevleridir yürütülen satır içi lambda olduğu ve lambda dönüş türü tarafından döndürülen zaman uyumsuz yapı üretmek için sarılmamış `create_async`. Bu bir lambda, bir görev döndürür gelir\<void > eylemleri ve bir görev döndürür bir lambda oluşturulmasına neden olacak\<TResult > TResult işlemlerini oluşturulmasına neden olur.  
+ Lambda döndürebilir bir `task<TResult>` , uyumsuz işi kendi içinde saklayan veya zaman uyumsuz işi temsil eden görev zincirinin devamı niteliğindedir. Bu durumda, görevler zaman uyumsuz olarak yürütülen olduğundan lambdanın kendisi satır içinde olduğundan ve lambdanın dönüş türü tarafından döndürülen zaman uyumsuz bir yapı oluşturmak için sarmalanmamış olur `create_async`. Bu bir lambda, bir görev döndürür gelir\<void > Eylemler ve bir görev döndüren bir lambda oluşturulmasına neden olacak\<TResult > TResult işlemlerini oluşturulmasına neden olur.  
   
- Lambda ya da sıfır, bir veya iki bağımsız değişken sürebilir. Geçerli bağımsız değişkenler `progress_reporter<TProgress>` ve `cancellation_token`sipariş her iki kullanılır bu. Bağımsız değişkenler olmadan bir lambda ilerleme durumu raporlama özelliği olmadan zaman uyumsuz bir yapı oluşturulmasına neden olur. Bir progress_reporter geçen lambda\<TProgress > neden olacak `create_async` türü TProgress ilerlemesi her zaman raporları bir zaman uyumsuz yapısıyla döndürülecek `report` progress_reporter nesnesinin yöntemi çağrılır. Bir cancellation_token geçen lambda iptalleri denetlemek için bu belirteci kullanın veya oluşturur ve böylece bu görevleri iptali zaman uyumsuz yapı iptaline neden görevlere geçirin.  
+ Lambda ya da sıfır, bir veya iki bağımsız değişken alabilir. Geçerli bağımsız değişkenler `progress_reporter<TProgress>` ve `cancellation_token`, sipariş hem de kullanılıyorsa bu. Bağımsız değişkenler olmadan bir lambda, ilerleme durumunu raporlama yeteneği olmadan zaman uyumsuz bir yapı oluşturulmasına neden olur. Progress_reporter alan bir lambda\<TProgress > neden olacak `create_async` , TProgress türünde ilerleme raporları her zaman uyumsuz bir yapı döndürmesine `report` progress_reporter nesnesinin yöntemi çağrılır. Cancellation_token alan bir lambda iptalleri denetlemek için bu belirteci kullanın veya zaman uyumsuz yapının iptalinin, bu görevlerin iptaline neden oluşturduğu görevlere iletin.  
   
- Lambda veya işlev nesnesi gövdesi bir sonuç döndürürse (ve bir görev\<TResult >), lamdba zaman uyumsuz olarak bir görevin çalışma bağlamında MTA örtük olarak oluşturur için işlemi içinde yürütülür. `IAsyncInfo::Cancel` Yöntemi örtük görev iptali neden olur.  
+ Lambda veya işlev nesnesi gövdesi bir sonuç döndürürse (ve bir görev\<TResult >), sı MTA bağlamında bir görev çalışma zamanı, örtük olarak oluşturur için işlem içinde zaman uyumsuz olarak yürütülür. `IAsyncInfo::Cancel` Yöntemi örtülü görevin iptali neden olur.  
   
- Gövdesi bir görevin, lamba lambda döndürür, satır içi yürütülürse ve türünde bir bağımsız değişken yapılacak lambda bildirme tarafından `cancellation_token` oluşturduğunuz lambda içinde oluşturduğunuz zaman içinde belirtecini geçirerek herhangi bir görevi iptali tetikleyebilir. De kullanabilirsiniz `register_callback` yöntemi çağırdığınızda bir geri çağırma çalışma zamanı neden belirtecine `IAsyncInfo::Cancel` üzerinde zaman uyumsuz işlemi veya eylem üretilen...  
+ Gövdesi lambda döndürür bir görev, lamba satır içi yürütülür ve türünde bir bağımsız değişken almak için lambda bildirmek `cancellation_token` oluştururken de bu belirteci ileterek lambda içinde oluşturma herhangi bir görevi iptal etme işlemini tetikleyebilir. Ayrıca `register_callback` yöntemi çağırdığınızda, bir geri çağırma çalışma zamanı için belirteçte `IAsyncInfo::Cancel` zaman uyumsuz işlem veya eylem üretilen...  
   
- Bu işlev yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.  
+ Bu işlev, yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.  
   
 ##  <a name="createresourcemanager"></a>  CreateResourceManager  
- Eşzamanlılık Çalışma zamanı Kaynak Yöneticisi'nin singleton örneği temsil eden bir arabirim döndürür. Resource Manager kaynakları birbirleri ile işbirliği yapmak istediğiniz zamanlayıcılar atamak için sorumludur.  
+ Eşzamanlılık Çalışma zamanı Kaynak Yöneticisi'nin tekil örneğini temsil eden bir arabirim döndürür. Kaynak Yöneticisi birbirleriyle işbirliği istediğiniz planlayıcılar için kaynakları atamak ile sorumludur.  
   
 ```
 IResourceManager* __cdecl CreateResourceManager();
@@ -179,12 +179,12 @@ IResourceManager* __cdecl CreateResourceManager();
  Bir `IResourceManager` arabirimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem için birden çok sonraki çağrılar Kaynak Yöneticisi'nin aynı örneği döndürür. Her çağrı yöntemi artışlarla Başvuru Kaynağı Yöneticisi sayısı ve çağrısıyla eşlenmesi gerekir [Iresourcemanager::Release](http://msdn.microsoft.com/en-us/5d1356ec-fbd3-4284-a361-1e9e20bbb522) , Zamanlayıcı yapıldığında yöntemi Resource Manager ile iletişim.  
+ Bu yöntemi izleyen birden çok çağrı Kaynak Yöneticisi'nin aynı örneğini döndürür. Yöntemine yapılan her çağrı bir başvuru Kaynak Yöneticisi'nde saymak ve çağrısı ile eşleştirilmesi gerekir [Iresourcemanager::Release](http://msdn.microsoft.com/en-us/5d1356ec-fbd3-4284-a361-1e9e20bbb522) yöntemi zamanlayıcınız Kaynak Yöneticisi ile iletişim kurulurken.  
   
- [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa atılır.  
+ [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa oluşturulur.  
   
 ##  <a name="create_task"></a>  create_task  
- Bir PPL oluşturur [görev](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f) nesnesi. `create_task` kullanılabilir herhangi bir yere görev Oluşturucusu kullanıldığını. Kullanılmasına izin verdiği için çoğunlukla kolaylık sağlamak için sağlanmıştır `auto` görevleri oluşturulurken anahtar sözcüğü.  
+ Oluşturur [görev](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f) nesne. `create_task` kullanılabilir herhangi bir görev oluşturucuyu kullandığınız. Kullanılmasına izin verdiğinden çok uygunluk açısından sağlanır `auto` görevler oluşturulurken anahtar sözcüğü.  
   
 ```
 template<typename T>
@@ -197,49 +197,49 @@ __declspec( noinline) task<_ReturnType> create_task(const task<_ReturnType>& _Ta
   
 ### <a name="parameters"></a>Parametreler  
  `T`  
- Görev oluşturulması için parametre türü.  
+ Görevin kendisinden oluşturulacağı parametre türü.  
   
  `_ReturnType`  
  `_Param`  
- İçinden görevi oluşturulması, parametre. Bu bir lambda veya işlev nesnesi olabilir bir `task_completion_event` nesnesi, farklı bir `task` nesne veya UWP uygulamanızda görevleri kullanıyorsanız Windows::Foundation::IAsyncInfo arabirim.  
+ İçinden görevin kendisinden oluşturulacağı parametre. Bu bir lambda veya işlev nesnesi olabilir bir `task_completion_event` nesnesi, farklı `task` nesnesi veya bir Windows::Foundation:: ıasyncınfo arabirimi UWP uygulamanızda görevler kullanıyorsanız.  
   
  `_TaskOptions`  
  `_Task`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni bir görev türü `T`, yani gelen çıkarımı yapılan `_Param`.  
+ Yeni bir görev türü `T`, yani içinden gösterilen `_Param`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk aşırı tek bir parametre alan bir görev Oluşturucu gibi davranır.  
+ İlk aşırı yükleme, tek bir parametre alan bir görev Oluşturucusu gibi çalışır.  
   
- İkinci aşırı yüklemesi olan yeni oluşturulan görev sağlanan iptal belirteci ilişkilendirir. Bu aşırı kullanırsanız, farklı bir geçmesine izin verilmez `task` nesnesi ilk parametre olarak.  
+ İkinci aşırı yükleme, yeni oluşturulan görevle sağlanan iptal belirtecini ilişkilendirir. Bu aşırı yüklemesini kullanıyorsanız, farklı bir geçmesine izin verilmez `task` ilk parametre olarak nesne.  
   
- Döndürülen görev türü, işlev için ilk parametresinden algılanır. Varsa `_Param` olan bir `task_completion_event<T>`, `task<T>`, veya her iki tür döndüren bir functor `T` veya `task<T>`, oluşturulan görev türü `task<T>`.  
+ Döndürülen görevin türü işlevin ilk parametresinden algılanır. Varsa `_Param` olduğu bir `task_completion_event<T>`, `task<T>`, veya her iki türü döndüren bir işlevse `T` veya `task<T>`, oluşturulan görev türü `task<T>`.  
   
- Bir UWP uygulamasında varsa `_Param` Windows::Foundation::IAsyncOperation türünde\<T > ^ veya Windows::Foundation:: ıasyncoperationwithprogress\<T, P > ^, ya da bu türlerinden birini döndürür functor, oluşturulan görev olacaktır türü `task<T>`. Varsa `_Param` Windows::Foundation::IAsyncAction türünde ^ veya Windows::Foundation::IAsyncActionWithProgress\<P > ^, ya da bu türlerinden birini döndürür functor, oluşturulan görev yazın sahip `task<void>`.  
+ Bir UWP uygulamasında, `_Param` ıasyncoperation türünde\<T > ^ veya Windows::Foundation:: ıasyncoperationwithprogress\<T, P > ^, ya da bu türlerin birini döndüren bir işlevse, oluşturulan görev olacak tür `task<T>`. Varsa `_Param` ıasyncoperation ^ veya Windows::Foundation:: ıasyncactionwithprogress\<P > ^, ya da bu türlerin birini döndüren bir işlevse, oluşturulan görev türüdür `task<void>`.  
   
 ##  <a name="disabletracing"></a>  DisableTracing  
- Eşzamanlılık Çalışma Zamanı'nda izleme devre dışı bırakır. ETW İzleme varsayılan olarak kaydı olmadığından bu işlev kullanım dışıdır.  
+ Eşzamanlılık Çalışma zamanında izleme devre dışı bırakır. ETW İzleme, varsayılan olarak kaydı olduğundan, bu işlev kullanım dışı bırakılmıştır.  
   
 ```
 __declspec(deprecated("Concurrency::DisableTracing is a deprecated function.")) _CRTIMP HRESULT __cdecl DisableTracing();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İzleme doğru devre dışı bırakılmışsa `S_OK` döndürülür. İzleme önceden başlatılmadı, `E_NOT_STARTED` döndürülür  
+ İzleme doğru bir şekilde devre dışı bırakılmışsa `S_OK` döndürülür. İzleme daha önce başlatılmadı ise `E_NOT_STARTED` döndürülür  
   
 ##  <a name="enabletracing"></a>  EnableTracing  
- Eşzamanlılık Çalışma Zamanı'nda izlemeyi etkinleştirir. ETW İzleme artık varsayılan olarak açık olduğundan bu işlev kullanım dışıdır.  
+ Eşzamanlılık Çalışma zamanında izleme sağlar. ETW İzleme şu anda varsayılan olarak etkin olduğundan, bu işlev kullanım dışı bırakılmıştır.  
   
 ```
 __declspec(deprecated("Concurrency::EnableTracing is a deprecated function.")) _CRTIMP HRESULT __cdecl EnableTracing();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İzleme doğru başlatılmışsa `S_OK` döndürülen; Aksi takdirde, `E_NOT_STARTED` döndürülür.  
+ İzleme doğru başlatılmışsa `S_OK` döndürülmüştür; Aksi takdirde `E_NOT_STARTED` döndürülür.  
   
-##  <a name="free"></a>  Boş  
- Tarafından önceden ayrılmış bellek bloğu serbest `Alloc` eşzamanlılık çalışma zamanı Suballocator önbelleğe alma yöntemi.  
+##  <a name="free"></a>  Ücretsiz  
+ Tarafından önceden ayrılan bellek bloğunu serbest bırakır `Alloc` eşzamanlılık çalışma zamanı önbelleğe alma ayırıcısını için yöntemi.  
   
 ```
 void __cdecl Free(_Pre_maybenull_ _Post_invalid_ void* _PAllocation);
@@ -247,10 +247,10 @@ void __cdecl Free(_Pre_maybenull_ _Post_invalid_ void* _PAllocation);
   
 ### <a name="parameters"></a>Parametreler  
  `_PAllocation`  
- Tarafından önceden ayrılmış bellek için bir işaretçi `Alloc` boşaltılacak olan yöntemi. Varsa parametresi `_PAllocation` değerine ayarlayın `NULL`, bu yöntemi yok sayın ve hemen döndürür.  
+ Tarafından önceden ayrılan bellek işaretçisi `Alloc` serbest bırakılacak olan yöntem. Parametre `_PAllocation` değere ayarlanmış `NULL`, bu yöntem bunu yok sayıp hemen geri döner.  
   
 ### <a name="remarks"></a>Açıklamalar  
- , Uygulamanızda senaryoları hakkında yararlı önbelleğe alma Suballocator kullanarak daha fazla bilgi için bkz: [Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
+ Uygulamanızdaki senaryoları hakkında yararlı önbelleğe alma ayırıcısını kullanarak daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
 ##  <a name="get_ambient_scheduler"></a>  get_ambient_scheduler  
   
@@ -261,17 +261,17 @@ inline std::shared_ptr<::Concurrency::scheduler_interface> get_ambient_scheduler
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ##  <a name="getexecutioncontextid"></a>  GetExecutionContextId  
- Arabirimini uygulayan bir yürütme bağlamı atanmış benzersiz bir tanımlayıcı döndürür `IExecutionContext` arabirimi.  
+ Uygulayan bir yürütme bağlamına atanmış benzersiz bir tanımlayıcı döndürür `IExecutionContext` arabirimi.  
   
 ```
 unsigned int __cdecl GetExecutionContextId();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yürütme bağlamı için benzersiz bir tanımlayıcı.  
+ Bir yürütme bağlamı için benzersiz bir tanımlayıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçirdiğiniz önce yürütme bağlamı için bir tanımlayıcı elde etmek için bu yöntemi kullanın bir `IExecutionContext` kaynak yöneticisi tarafından sunulan yöntemlerden herhangi birini bir parametre olarak arabirimi.  
+ Geçirdiğiniz önce yürütme bağlamı için bir tanıtıcı elde etmek için bu yöntemi kullanın. bir `IExecutionContext` kaynak yöneticisi tarafından sağlanan yöntemlerden birini bir parametre olarak.  
   
 ##  <a name="getosversion"></a>  GetOSVersion  
  İşletim sistemi sürümünü döndürür.  
@@ -281,41 +281,41 @@ IResourceManager::OSVersion __cdecl GetOSVersion();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşletim sistemini temsil eden bir Enum değeri.  
+ İşletim sistemini temsil eden numaralandırılmış değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa atılır.  
+ [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa oluşturulur.  
   
 ##  <a name="getprocessorcount"></a>  GetProcessorCount  
- Temel alınan sistemdeki donanım iş parçacığı sayısını döndürür.  
+ Temel sistemdeki donanım iş parçacıklarının sayısını döndürür.  
   
 ```
 unsigned int __cdecl GetProcessorCount();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Donanım iş parçacığı sayısı.  
+ Donanım iş parçacıklarının sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa atılır.  
+ [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa oluşturulur.  
   
 ##  <a name="getprocessornodecount"></a>  GetProcessorNodeCount  
- Temel alınan sistemdeki NUMA düğümlerinin veya işlemci paketleri sayısını döndürür.  
+ Temel sistemdeki NUMA düğümlerinin veya işlemci paketlerinin sayısını döndürür.  
   
 ```
 unsigned int __cdecl GetProcessorNodeCount();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- NUMA düğümleri veya işlemci paket sayısı.  
+ NUMA düğümlerinin veya işlemci paketlerinin sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sistem daha fazla NUMA düğümlerinden daha işlemci paketler içeriyorsa, NUMA düğüm sayısını döndürülür, aksi takdirde, işlemci paket sayısı döndürülür.  
+ Sistem İşlemci paketine göre birden fazla NUMA düşümü içeriyorsa, NUMA düğümü sayısı döndürülür, aksi halde işlemci paketleri sayısı döndürülür.  
   
- [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa atılır.  
+ [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa oluşturulur.  
   
 ##  <a name="getschedulerid"></a>  GetSchedulerId  
- Arabirimini uygulayan bir zamanlayıcı atanmış benzersiz bir tanımlayıcı döndürür `IScheduler` arabirimi.  
+ Uygulayan bir zamanlayıcı atanmış benzersiz bir tanımlayıcı döndürür `IScheduler` arabirimi.  
   
 ```
 unsigned int __cdecl GetSchedulerId();
@@ -325,7 +325,7 @@ unsigned int __cdecl GetSchedulerId();
  Bir zamanlayıcı için benzersiz bir tanımlayıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçirdiğiniz önce bir tanımlayıcı, Zamanlayıcısı elde etmek için bu yöntemi kullanın bir `IScheduler` kaynak yöneticisi tarafından sunulan yöntemlerden herhangi birini bir parametre olarak arabirimi.  
+ Scheduler için geçirdiğiniz önce bir tanımlayıcı elde etmek için bu yöntemi kullanın. bir `IScheduler` kaynak yöneticisi tarafından sağlanan yöntemlerden birini bir parametre olarak.  
   
 ##  <a name="internal_assign_iterators"></a>  internal_assign_iterators  
   
@@ -345,30 +345,30 @@ void concurrent_vector<T, _Ax>::internal_assign_iterators(
  `last`  
   
 ##  <a name="interruption_point"></a>  interruption_point  
- İptal için bir kesinti noktası oluşturur. Burada bu işlev çağrılır bağlamda iptal ediyor, bu şu anda yürütülen paralel iş yürütme durdurur dahili bir özel durum atar. İptal ediyor değilse işlev hiçbir şey yapmaz.  
+ İptali için bir kesinti noktası oluşturur. Bu durum, iptal burada bu işlev çağrılır bağlamında devam ediyorsa, o anda yürütülen paralel iş yürütülmesini durdurur bir iç özel durum oluşturur. İptal ediyor değil ise, işlev hiçbir şey yapmaz.  
   
 ```
 inline void interruption_point();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tarafından oluşturulan iç iptal özel durum catch değil `interruption_point()` işlevi. Özel durum yakalandı ve çalışma zamanı tarafından işlenen ve onu yakalama anormal olarak davranacak şekilde programınızı neden olabilir.  
+ Tarafından oluşturulan iç iptal özel durum yakalamalısınız değil `interruption_point()` işlevi. Özel durum yakalandı ve çalışma zamanı tarafından işlenir ve bu yakalama programınızı anormal bir şekilde davranmasına neden olabilir.  
   
 ##  <a name="is_current_task_group_canceling"></a>  is_current_task_group_canceling  
- Görev olup olmadığını grubu, şu anda geçerli bağlamda satır içi yürütüyor, ilişkin bir gösterge ortasında etkin bir iptal (ya da kısa süre içinde olacaktır) döndürür. Satır içi geçerli bağlama göre şu anda yürütülmekte olan hiçbir görev grubu ise unutmayın `false` döndürülür.  
+ Bir gösterge olup görev grubu, şu anda geçerli bağlamda satır içi yürütüyor etkin bir iptalin ortasında (veya kısa süre içinde olacaktır) döndürür. Satır içi geçerli bağlam üzerinde şu anda yürütülen görev grubu ise unutmayın `false` döndürülür.  
   
 ```
 bool __cdecl is_current_task_group_canceling();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` şu anda yürütülmekte olan görev grubunun iptal ediliyor, `false` Aksi takdirde.  
+ `true` şu anda yürütülmekte olan görev grubunu iptal ediliyor durumunda `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [iptal](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
+ Daha fazla bilgi için [iptal](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
 ##  <a name="make_choice"></a>  make_choice  
- Oluşturan bir `choice` isteğe bağlı bir Mesajlaşma bloğundan `Scheduler` veya `ScheduleGroup` ve iki veya daha fazla giriş kaynağı.  
+ Oluşturur bir `choice` isteğe bağlı bir Mesajlaşma bloğundan `Scheduler` veya `ScheduleGroup` ve iki veya daha fazla giriş kaynağı.  
   
 ```
 template<typename T1, typename T2, typename... Ts>
@@ -394,31 +394,31 @@ choice<std::tuple<T1, T2, Ts...>> make_choice(
   
 ### <a name="parameters"></a>Parametreler  
  `T1`  
- İlk kaynak ileti blok türü.  
+ İlk kaynağın mesaj engelleme türü.  
   
  `T2`  
- İkinci kaynağı ileti blok türü.  
+ İkinci kaynağın mesaj engelleme türü.  
   
  `_PScheduler`  
- `Scheduler` İçinde yayma görev için nesne `choice` ileti bloğu zamanlandı.  
+ `Scheduler` İçinde Yayma görevi için nesne `choice` ileti bloğu zamanlandı.  
   
  `_Item1`  
  İlk kaynak.  
   
  `_Item2`  
- İkinci kaynağı.  
+ İkinci kaynak.  
   
  `_Items`  
  Ek kaynaklar.  
   
  `_PScheduleGroup`  
- `ScheduleGroup` İçinde yayma görev için nesne `choice` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından kapsanan.  
+ `ScheduleGroup` İçinde Yayma görevi için nesne `choice` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `choice` iki veya daha fazla giriş kaynaklarıyla ileti bloğu.  
+ A `choice` iki veya daha fazla giriş kaynağı ile ileti bloğu.  
   
 ##  <a name="make_greedy_join"></a>  make_greedy_join  
- Oluşturan bir `greedy multitype_join` isteğe bağlı bir Mesajlaşma bloğundan `Scheduler` veya `ScheduleGroup` ve iki veya daha fazla giriş kaynağı.  
+ Oluşturur bir `greedy multitype_join` isteğe bağlı bir Mesajlaşma bloğundan `Scheduler` veya `ScheduleGroup` ve iki veya daha fazla giriş kaynağı.  
   
 ```
 template<typename T1, typename T2, typename... Ts>
@@ -444,31 +444,31 @@ multitype_join<std::tuple<T1, T2, Ts...>, greedy> make_greedy_join(
   
 ### <a name="parameters"></a>Parametreler  
  `T1`  
- İlk kaynak ileti blok türü.  
+ İlk kaynağın mesaj engelleme türü.  
   
  `T2`  
- İkinci kaynağı ileti blok türü.  
+ İkinci kaynağın mesaj engelleme türü.  
   
  `_PScheduler`  
- `Scheduler` İçinde yayma görev için nesne `multitype_join` ileti bloğu zamanlandı.  
+ `Scheduler` İçinde Yayma görevi için nesne `multitype_join` ileti bloğu zamanlandı.  
   
  `_Item1`  
  İlk kaynak.  
   
  `_Item2`  
- İkinci kaynağı.  
+ İkinci kaynak.  
   
  `_Items`  
  Ek kaynaklar.  
   
  `_PScheduleGroup`  
- `ScheduleGroup` İçinde yayma görev için nesne `multitype_join` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından kapsanan.  
+ `ScheduleGroup` İçinde Yayma görevi için nesne `multitype_join` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `greedy multitype_join` iki veya daha fazla giriş kaynaklarıyla ileti bloğu.  
+ A `greedy multitype_join` iki veya daha fazla giriş kaynağı ile ileti bloğu.  
   
 ##  <a name="make_join"></a>  make_join  
- Oluşturan bir `non_greedy multitype_join` isteğe bağlı bir Mesajlaşma bloğundan `Scheduler` veya `ScheduleGroup` ve iki veya daha fazla giriş kaynağı.  
+ Oluşturur bir `non_greedy multitype_join` isteğe bağlı bir Mesajlaşma bloğundan `Scheduler` veya `ScheduleGroup` ve iki veya daha fazla giriş kaynağı.  
   
 ```
 template<typename T1, typename T2, typename... Ts>
@@ -495,31 +495,31 @@ multitype_join<std::tuple<T1, T2, Ts...>> make_join(
   
 ### <a name="parameters"></a>Parametreler  
  `T1`  
- İlk kaynak ileti blok türü.  
+ İlk kaynağın mesaj engelleme türü.  
   
  `T2`  
- İkinci kaynağı ileti blok türü.  
+ İkinci kaynağın mesaj engelleme türü.  
   
  `_PScheduler`  
- `Scheduler` İçinde yayma görev için nesne `multitype_join` ileti bloğu zamanlandı.  
+ `Scheduler` İçinde Yayma görevi için nesne `multitype_join` ileti bloğu zamanlandı.  
   
  `_Item1`  
  İlk kaynak.  
   
  `_Item2`  
- İkinci kaynağı.  
+ İkinci kaynak.  
   
  `_Items`  
  Ek kaynaklar.  
   
  `_PScheduleGroup`  
- `ScheduleGroup` İçinde yayma görev için nesne `multitype_join` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından kapsanan.  
+ `ScheduleGroup` İçinde Yayma görevi için nesne `multitype_join` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `non_greedy multitype_join` iki veya daha fazla giriş kaynaklarıyla ileti bloğu.  
+ A `non_greedy multitype_join` iki veya daha fazla giriş kaynağı ile ileti bloğu.  
   
 ##  <a name="make_task"></a>  make_task  
- Oluşturmak için Üreteç yöntemi bir `task_handle` nesnesi.  
+ Oluşturmak için Üreteç yöntemi bir `task_handle` nesne.  
   
 ```
 template <class _Function>
@@ -528,19 +528,19 @@ task_handle<_Function> make_task(const _Function& _Func);
   
 ### <a name="parameters"></a>Parametreler  
  `_Function`  
- Tarafından temsil edilen çalışma yürütmek için çağrılan işlev nesnesinin türü `task_handle` nesnesi.  
+ Tarafından temsil edilen iş yürütme için çağrılacak işlev nesnesinin türü `task_handle` nesne.  
   
  `_Func`  
- Tarafından temsil edilen çalışma yürütmek için çağrılan işlev `task_handle` nesnesi. Bu, bir işlev için bir işaretçi bir lambda functor olabilir veya herhangi bir işlev çağırma işleci imzalı sürümünü destekleyen nesne `void operator()()`.  
+ Tarafından temsil edilen iş yürütme için çağrılacak işlev `task_handle` nesne. Bu bir lambda işlevse, bir işlev işaretçisine olabilir veya herhangi bir işlev çağrısı işleci imzalı sürümünü destekleyen nesne `void operator()()`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `task_handle` nesnesi.  
+ A `task_handle` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmanız gerektiğinde bu işlevi kullanışlı bir `task_handle` lambda functor true türü bilmeden nesnesi oluşturmak izin verdiğinden lambda ifadesi ile nesne.  
+ Bu işlev oluşturmak ihtiyacınız olduğunda yararlıdır bir `task_handle` lambda functor true türünü bilmeden nesne oluşturmanıza izin verdiğinden sahip bir lambda ifadesi, nesne.  
   
 ##  <a name="parallel_buffered_sort"></a>  parallel_buffered_sort  
- Belirli bir aralık içinde öğeleri nondescending sırada ya da bir ikili karşılaştırma paralel tarafından belirtilen bir sıralama ölçütü göre düzenler. Bu işlev anlamsal olarak benzer `std::sort` gereksinim duyduğu dışında bir karşılaştırma tabanlı kararsız, yerinde sıralama aynıdır, `O(n)` ek alan ve varsayılan olarak başlatılması için sıralanan öğeleri gerektirir.  
+ Belirtilen bir aralıktaki öğeleri azalmayan veya paralel bir ikili koşula göre belirtilen bir sıralama ölçütüne göre düzenler. Bu işlev anlam olarak benzerdir, `std::sort` ihtiyacı, tek farkı, karşılaştırma tabanlı kararsız, yerinde bir sıralama, `O(n)` ek alan ve varsayılan olarak başlatılması için sıralanan öğeleri gerektirir.  
   
 ```
 template<typename _Random_iterator>
@@ -591,40 +591,40 @@ inline void parallel_buffered_sort(
   
 ### <a name="parameters"></a>Parametreler  
  `_Random_iterator`  
- Giriş aralığı yineleyici türü.  
+ Olan giriş aralığındaki yineleyici türü.  
   
  `_Allocator`  
- C++ Standart Kitaplığı uyumlu bellek ayırıcısı türü.  
+ C++ Standart Kitaplığı uyumlu bellek ayırıcı türü.  
   
  `_Function`  
  İkili karşılaştırıcı türü.  
   
  `_Begin`  
- Sıralanacak ilk öğe konumu aralığında adresleme bir rastgele erişim yineleyici.  
+ Sıralanacak aralıktaki ilk öğenin konumunu bulan bir rasgele erişim yineleyicisi.  
   
  `_End`  
- Sıralanacak konumu bir aralıkta son öğesi geçmiş adresleme bir rastgele erişim yineleyici.  
+ Sıralanacak aralığın son öğesinde geçmiş konumu ele alan bir rasgele erişim yineleyicisi.  
   
  `_Alloc`  
- C++ Standart Kitaplığı uyumlu bellek ayırıcısı örneği.  
+ Bir C++ Standart Kitaplığı uyumlu bellek ayırıcısı örneği.  
   
  `_Func`  
- Sıralama, art arda gelen öğeler tarafından karşılanması karşılaştırma ölçütü tanımlayan bir kullanıcı tanımlı koşul işlevinin nesnesi. İkili karşılaştırma iki bağımsız değişken alıp döndüren `true` yerine getirdiğinizde ve `false` uyulmadığını olduğunda. Bu karşılaştırıcı işlevi bir katı zayıf çiftleri dizisi diziden sıralama zorunlu tuttukları gerekir.  
+ Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür `true` karşılanmazsa ve `false` koşullar karşılanırsa. Bu bir karşılaştırıcı işlevi, katı bir zayıf çiftlerini dizisindeki öğelerin sıralama dayatır gerekir.  
   
  `_Chunk_size`  
- Paralel yürütme için iki şekilde bölmeniz bir öbek minimum boyutu.  
+ Paralel yürütme için iki halinde bölme bir öbek depolayabilmek boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm aşırı gerektiren `n * sizeof(T)` ek alan nerede `n` sıralanacak, öğe sayısı ve `T` öğe türü. Çoğu durumda, üzerinde bir geliştirme performans parallel_buffered_sort gösterecektir [parallel_sort](concurrency-namespace-functions.md), ve kullanılabilir bellek varsa parallel_sort kullanmanız gerekir.  
+ Tüm aşırı yüklemeler gerektiren `n * sizeof(T)` ek alan burada `n` sıralanacak, öğe sayısı ve `T` öğe türü. Çoğu durumda, üzerinde performansında bir gelişme parallel_buffered_sort gösterecektir [parallel_sort](concurrency-namespace-functions.md), ve kullanılabilir bellek varsa parallel_sort kullanmanız gerekir.  
   
- İkili karşılaştırıcı belirtmezseniz `std::less` işleci sağlamak öğe türü gerektiren varsayılan olarak kullanılan `operator<()`.  
+ İkili bir karşılaştırıcı sağlamazsanız `std::less` işleci sağlamak öğe türü gerektiren varsayılan olarak kullanılan `operator<()`.  
   
- Bir ayırıcı türü veya örnek, C++ Standart Kitaplığı bellek ayırıcısı belirtmezseniz `std::allocator<T>` arabellek ayırmak için kullanılır.  
+ Bir ayırıcı türü veya örnek, C++ Standart Kitaplığı bellek ayırıcısı sağlamazsanız `std::allocator<T>` arabellek ayırmak için kullanılır.  
   
- Algoritma giriş aralığı iki parçalara ayırır ve iki alt öbekleri Paralel yürütme için sırayla her bir öbeğin böler. İsteğe bağlı bağımsız değişkeni `_Chunk_size` algoritması, işleme öbek boyutunu belirtmek için kullanılan < `_Chunk_size` seri olarak.  
+ Algoritma olan giriş aralığındaki iki öbeklere böler ve sırayla her bir öbeği Paralel yürütme için iki alt öbeklere böler. İsteğe bağlı bağımsız değişkeni `_Chunk_size` algoritmaya, işleme öbek boyutunu belirtmek için kullanılan < `_Chunk_size` seri olarak.  
   
 ##  <a name="parallel_for"></a>  parallel_for  
- `parallel_for` dizinler aralığında tekrarlanan ve kullanıcı tarafından sağlanan bir işlev her yinelemesinde paralel olarak yürütür.  
+ `parallel_for` bir dizi dizinleri üzerinden yinelenir ve her yineleme sırasında bir kullanıcı tarafından sağlanan işlev paralel olarak yürütür.  
   
 ```
 template <typename _Index_type, typename _Function, typename _Partitioner>
@@ -676,31 +676,31 @@ void parallel_for(
  Yineleme için kullanılan dizin türü.  
   
  `_Function`  
- Her bir yineleme yürütülecek işlevi türü.  
+ Her yinelemede, yürütülecek işlev türü.  
   
  `_Partitioner`  
- Sağlanan aralığı bölümlemek için kullanılan bölümleyici türü.  
+ Sağlanan aralık bölümlemek için kullanılan bölümleyici türü.  
   
  `first`  
- Yineleme dahil edilecek ilk dizin.  
+ Yinelemede dahil edilecek ilk dizini.  
   
  `last`  
- Dizini bir yinelemede dahil edilecek son dizin geçti.  
+ Dizin bir önceki yinelemede eklenecek son dizini.  
   
  `_Step`  
- Gelen dolaşırken adım değeri `first` için `last`. Adım pozitif olmalıdır. [invalid_argument](../../../standard-library/invalid-argument-class.md) adım 1'den az ise oluşturulur.  
+ Gelen yineleme adım adım değeri `first` için `last`. Adım pozitif olmalıdır. [invalid_argument](../../../standard-library/invalid-argument-class.md) adım 1'den az ise oluşturulur.  
   
  `_Func`  
- Her bir yineleme yürütülecek işlev. Bu lambda ifadesi, bir işlev işaretçisi olabilir veya herhangi bir işlev çağırma işleci imzalı sürümünü destekleyen nesne `void operator()(_Index_type)`.  
+ Her yinelemede, yürütülecek işlev. Bu bir lambda ifadesi bir işlev işaretçisi olabilir veya herhangi bir işlev çağrısı işleci imzalı sürümünü destekleyen nesne `void operator()(_Index_type)`.  
   
  `_Part`  
- Bölümleyici nesneye başvuru. Bağımsız değişkeni şunlardan biri olabilir `const` [auto_partitioner](auto-partitioner-class.md)`&`, `const` [static_partitioner](static-partitioner-class.md)`&`, `const` [simple_ bölümleyici](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) `&` varsa bir [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılır, başvuru bir const olmayan l-değeri olmalıdır algoritma yeniden kullanmayı gelecekteki döngüler durumu depolayabileceğiniz başvuru.  
+ Bölümleyici nesnesine bir başvuru. Bağımsız değişken şunlardan biri olabilir `const` [auto_partitioner](auto-partitioner-class.md)`&`, `const` [static_partitioner](static-partitioner-class.md)`&`, `const` [simple_ bölümleyici](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) `&` varsa bir [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılır, başvurusu const olmayan bir l-değeri olmalıdır algoritma durumu yeniden kullanmak gelecekteki döngüler için depolayabileceğiniz başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [paralel algoritmalar](../../../parallel/concrt/parallel-algorithms.md).  
+ Daha fazla bilgi için [paralel algoritmalar](../../../parallel/concrt/parallel-algorithms.md).  
   
 ##  <a name="parallel_for_each"></a>  parallel_for_each  
- `parallel_for_each` Belirtilen işlev paralel bir aralıkta her öğesine uygular. Anlam olarak eşdeğerdir `for_each` işlevi `std` öğeleri üzerinden bu yineleme paralel olarak gerçekleştirilir ve yineleme sırasını belirtilmezse dışında ad. Bağımsız değişkeni `_Func` işlev çağırma işleci formun desteklemelidir `operator()(T)` burada parametresi `T` üzerinden yinelendiğinde kapsayıcı öğe türü değil.  
+ `parallel_for_each` paralel bir aralıktaki her öğeye belirtilen işlevi uygular. Anlamsal olarak eşdeğer olan `for_each` işlevi `std` ad alanı, bu yineleme öğeleri üzerinde paralel olarak gerçekleştirilir ve yineleme sırası belirtilmezse dışında. Bağımsız değişken `_Func` biçiminde bir işlev çağrısı işleci desteklemelidir `operator()(T)` burada parametre `T` üzerinden yinelenir kapsayıcı öğe türü.  
   
 ```
 template <typename _Iterator, typename _Function>
@@ -719,33 +719,33 @@ void parallel_for_each(
   
 ### <a name="parameters"></a>Parametreler  
  `_Iterator`  
- Kapsayıcı yinelemek için kullanılan yineleyici türü.  
+ Kapsayıcı yineleme yapmak için kullanılan yineleyici türü.  
   
  `_Function`  
- Aralık içinde her öğeye uygulanan işlev türü.  
+ Aralıktaki her öğeye uygulanacak işlev türü.  
   
  `_Partitioner`  
  `first`  
- Paralel yineleme dahil edilecek ilk öğenin konumunu adresleme yineleyici.  
+ Paralel yineleme dahil edilecek ilk öğenin konumunu ele alan bir yineleyici.  
   
  `last`  
- Paralel yineleme dahil edilecek konumunu bir aşan son öğeden adresleme yineleyici.  
+ Paralel yineleme dahil edilecek bir son öğeden önceki öğenin konumunu ele alan bir yineleyici.  
   
  `_Func`  
- Aralığın her bir öğesinde uygulanan bir kullanıcı tanımlı işlev nesnesi.  
+ Aralıktaki her öğeye uygulanan kullanıcı tanımlı işlev nesnesi.  
   
  `_Part`  
- Bölümleyici nesneye başvuru. Bağımsız değişkeni şunlardan biri olabilir `const` [auto_partitioner](auto-partitioner-class.md)`&`, `const` [static_partitioner](static-partitioner-class.md)`&`, `const` [simple_ bölümleyici](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) `&` varsa bir [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılır, başvuru bir const olmayan l-değeri olmalıdır algoritma yeniden kullanmayı gelecekteki döngüler durumu depolayabileceğiniz başvuru.  
+ Bölümleyici nesnesine bir başvuru. Bağımsız değişken şunlardan biri olabilir `const` [auto_partitioner](auto-partitioner-class.md)`&`, `const` [static_partitioner](static-partitioner-class.md)`&`, `const` [simple_ bölümleyici](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) `&` varsa bir [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılır, başvurusu const olmayan bir l-değeri olmalıdır algoritma durumu yeniden kullanmak gelecekteki döngüler için depolayabileceğiniz başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [auto_partitioner](auto-partitioner-class.md) açık bir bölümleyici olmadan aşırı kullanılır.  
+ [auto_partitioner](auto-partitioner-class.md) açık bir bölümleyici olmadan aşırı yüklemesi kullanılır.  
   
  Rastgele desteklemeyen yineleyiciler erişim, yalnızca [auto_partitioner](auto-partitioner-class.md) desteklenir.  
   
- Daha fazla bilgi için bkz: [paralel algoritmalar](../../../parallel/concrt/parallel-algorithms.md).  
+ Daha fazla bilgi için [paralel algoritmalar](../../../parallel/concrt/parallel-algorithms.md).  
   
 ##  <a name="parallel_invoke"></a>  parallel_invoke  
- Yürütme bitinceye kadar paralel ve blokları parametre olarak sağlanan işlev nesneleri yürütür. Her işlev nesnesi bir lambda ifadesi işlevi için bir işaretçi olabilir veya herhangi bir işlev çağırma işleci imzalı destekleyen nesne `void operator()()`.  
+ Paralel ve blokları parametreler olarak yürütülen bitinceye kadar sağlanan işlev nesneleri yürütür. Her işlev nesnesi bir lambda ifadesi bir işlev işaretçisine olabilir veya imzaya sahip işlev çağrısı işleci destekleyen herhangi nesne `void operator()()`.  
   
 ```
 template <typename _Function1, typename _Function2>
@@ -874,37 +874,37 @@ void parallel_invoke(
   
 ### <a name="parameters"></a>Parametreler  
  `_Function1`  
- Paralel olarak yürütülecek ilk işlevi nesnenin türü.  
+ Paralel olarak yürütülecek ilk işlev nesnesinin türü.  
   
  `_Function2`  
- Paralel olarak yürütülecek ikinci işlevi nesnenin türü.  
+ Paralel olarak yürütülecek ikinci işlev nesnesinin türü.  
   
  `_Function3`  
- Paralel olarak yürütülecek üçüncü işlevi nesnenin türü.  
+ Paralel olarak yürütülecek üçüncü işlev nesnesinin türü.  
   
  `_Function4`  
- Paralel olarak yürütülecek dördüncü işlevi nesnenin türü.  
+ Paralel olarak yürütülecek dördüncü işlev nesnesinin türü.  
   
  `_Function5`  
- Paralel olarak yürütülecek beşinci işlevi nesnenin türü.  
+ Paralel olarak yürütülecek beşinci işlev nesnesinin türü.  
   
  `_Function6`  
- Paralel olarak yürütülecek altıncı işlevi nesnenin türü.  
+ Paralel olarak yürütülecek altıncı işlev nesnesinin türü.  
   
  `_Function7`  
- Paralel olarak yürütülecek yedinci işlevi nesnenin türü.  
+ Paralel olarak yürütülecek yedinci işlev nesnesinin türü.  
   
  `_Function8`  
- Paralel olarak yürütülecek sekizinci işlevi nesnenin türü.  
+ Paralel olarak yürütülecek sekizinci işlev nesnesinin türü.  
   
  `_Function9`  
- Paralel olarak yürütülecek dokuzuncu işlevi nesnenin türü.  
+ Paralel olarak yürütülecek dokuzuncu işlev nesnesinin türü.  
   
  `_Function10`  
- Paralel olarak yürütülecek onuncu işlevi nesnenin türü.  
+ Paralel olarak yürütülecek onuncu işlev nesnesinin türü.  
   
  `_Func1`  
- Paralel olarak yürütülecek ilk işlevi nesne.  
+ Paralel olarak yürütülecek ilk işlev nesnesi.  
   
  `_Func2`  
  Paralel olarak yürütülecek ikinci işlev nesnesi.  
@@ -934,14 +934,14 @@ void parallel_invoke(
  Paralel olarak yürütülecek onuncu işlev nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Parametreleri satır içi üzerinde çağıran bağlamını yürütür gibi bir veya daha fazla işlevi nesnelerin sağlanan unutmayın.  
+ Parametreleri, satır içi arama bağlamda yürütebilir gibi bir veya daha fazla işlev nesneleri, sağlanan unutmayın.  
   
- Bir veya daha fazla parametre olarak bu işleve işlev nesneleri bir özel durum oluşturursa, çalışma zamanı kendi seçme bir tür özel durumu seçin ve çağrısı dışında yayılması `parallel_invoke`.  
+ Bir veya daha fazla parametre olarak bu işleve geçirilen işlev nesneleri bir özel durum oluşturursa, çalışma zamanı kendi seçtiğiniz bir tür özel durumu seçin ve çağrı dışına yayan `parallel_invoke`.  
   
- Daha fazla bilgi için bkz: [paralel algoritmalar](../../../parallel/concrt/parallel-algorithms.md).  
+ Daha fazla bilgi için [paralel algoritmalar](../../../parallel/concrt/parallel-algorithms.md).  
   
 ##  <a name="parallel_radixsort"></a>  parallel_radixsort  
- Belirli bir aralık içinde öğeleri algoritması sıralama sayı tabanını kullanarak bir olmayan azalan düzenler. İmzasız tamsayı benzeri anahtarlara sıralanacak öğeleri yansıtabilirsiniz projeksiyon işlevi gerektiren bir tutarlı sıralama işlevi budur. Varsayılan olarak başlatılması için sıralanan öğeleri gereklidir.  
+ Belirtilen bir aralıktaki öğeleri, bir taban Sıralama algoritması kullanarak bir olmayan azalan düzenler. Bu öğeleri işaretsiz tamsayı benzeri anahtarlara sıralanacak yansıtabilirsiniz bir projeksiyon işlevi gerektiren tutarlı bir sıralama işlevdir. Varsayılan olarak başlatılması için sıralanan öğeleri gereklidir.  
   
 ```
 template<typename _Random_iterator>
@@ -988,40 +988,40 @@ inline void parallel_radixsort(
   
 ### <a name="parameters"></a>Parametreler  
  `_Random_iterator`  
- Giriş aralığı yineleyici türü.  
+ Olan giriş aralığındaki yineleyici türü.  
   
  `_Allocator`  
- C++ Standart Kitaplığı uyumlu bellek ayırıcısı türü.  
+ C++ Standart Kitaplığı uyumlu bellek ayırıcı türü.  
   
  `_Function`  
- Projeksiyon işlevi türü.  
+ Projeksiyon işlev türü.  
   
  `_Begin`  
- Sıralanacak ilk öğe konumu aralığında adresleme bir rastgele erişim yineleyici.  
+ Sıralanacak aralıktaki ilk öğenin konumunu bulan bir rasgele erişim yineleyicisi.  
   
  `_End`  
- Sıralanacak konumu bir aralıkta son öğesi geçmiş adresleme bir rastgele erişim yineleyici.  
+ Sıralanacak aralığın son öğesinde geçmiş konumu ele alan bir rasgele erişim yineleyicisi.  
   
  `_Alloc`  
- C++ Standart Kitaplığı uyumlu bellek ayırıcısı örneği.  
+ Bir C++ Standart Kitaplığı uyumlu bellek ayırıcısı örneği.  
   
  `_Proj_func`  
- Bir öğenin bir tam sayı değerine dönüştürür projeksiyon kullanıcı tanımlı işlev nesnesi.  
+ Bir öğe bir tamsayı değerine dönüştürür bir projeksiyon kullanıcı tanımlı işlev nesnesi.  
   
  `_Chunk_size`  
- Paralel yürütme için iki şekilde bölmeniz bir öbek minimum boyutu.  
+ Paralel yürütme için iki halinde bölme bir öbek depolayabilmek boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm aşırı gerektiren `n * sizeof(T)` ek alan nerede `n` sıralanacak, öğe sayısı ve `T` öğe türü. Birli projeksiyon functor imzalı `I _Proj_func(T)` bir öğe verildiğinde bir anahtar döndürmek için gerekli olduğu `T` öğe türü ve `I` bir işaretsiz tamsayı benzeri türüdür.  
+ Tüm aşırı yüklemeler gerektiren `n * sizeof(T)` ek alan burada `n` sıralanacak, öğe sayısı ve `T` öğe türü. İmzalı bir birli projeksiyon functor `I _Proj_func(T)` bir öğe verildiğinde bir anahtarı döndürmek için gerekli burada `T` öğe türü ve `I` işaretsiz bir tamsayı benzeri türüdür.  
   
- Projeksiyon işlevi belirtmezseniz, yalnızca öğe döndüren bir varsayılan projeksiyon işlevi tam sayı türleri için kullanılır. İşlev öğesi bir tamsayı türünde olmadığında projeksiyon işlevi değilse derlemek başarısız olur.  
+ Bir projeksiyon işlevi sağlamazsanız, yalnızca öğe döndüren bir varsayılan yansıtma işlevi tam sayı türleri için kullanılır. İşlev öğesi bir tamsayı türü olmadığında bir projeksiyon işlevi değil. derlemeniz başarısız olur.  
   
- Bir ayırıcı türü veya örnek, C++ Standart Kitaplığı bellek ayırıcısı belirtmezseniz `std::allocator<T>` arabellek ayırmak için kullanılır.  
+ Bir ayırıcı türü veya örnek, C++ Standart Kitaplığı bellek ayırıcısı sağlamazsanız `std::allocator<T>` arabellek ayırmak için kullanılır.  
   
- Algoritma giriş aralığı iki parçalara ayırır ve iki alt öbekleri Paralel yürütme için sırayla her bir öbeğin böler. İsteğe bağlı bağımsız değişkeni `_Chunk_size` algoritması, işleme öbek boyutunu belirtmek için kullanılan < `_Chunk_size` seri olarak.  
+ Algoritma olan giriş aralığındaki iki öbeklere böler ve sırayla her bir öbeği Paralel yürütme için iki alt öbeklere böler. İsteğe bağlı bağımsız değişkeni `_Chunk_size` algoritmaya, işleme öbek boyutunu belirtmek için kullanılan < `_Chunk_size` seri olarak.  
   
 ##  <a name="parallel_reduce"></a>  parallel_reduce  
- Belirtilen aralıktaki tüm öğelerin toplamı, art arda kısmi toplamlarını bilgi işlem tarafından hesaplar veya benzer şekilde paralel olarak belirtilen bir ikili işlem toplam dışında kullanılarak elde edilen art arda kısmi sonuçlar sonucunu hesaplar. `parallel_reduce` anlam olarak benzer `std::accumulate`, ikili işlem ilişkilendirilebilir olmasını gerektirir ve bir başlangıç değeri yerine bir kimlik değeri gerektirir.  
+ Art arda gelen kısmi toplamları tarafından belirtilen bir aralıktaki tüm öğelerin toplamını hesaplar veya benzer şekilde paralel olarak belirtilen bir ikili işlem toplam, dışındaki kullanımından elde edilen art arda gelen kısmi sonuçların sonucunu hesaplar. `parallel_reduce` anlamsal olarak benzer `std::accumulate`, ikili işlem ilişkilendirilebilir olmasını gerektirir ve bir başlangıç değeri yerine bir kimlik değeri gerektirir.  
   
 ```
 template<typename _Forward_iterator>
@@ -1051,46 +1051,46 @@ inline _Reduce_type parallel_reduce(
   
 ### <a name="parameters"></a>Parametreler  
  `_Forward_iterator`  
- Giriş aralığı yineleyici türü.  
+ Giriş aralığındaki yineleyici türü.  
   
  `_Sym_reduce_fun`  
- Simetrik azaltma işlevi türü. Bu işlev türü imzalı olmalıdır `_Reduce_type _Sym_fun(_Reduce_type, _Reduce_type)`, burada _Reduce_type kimlik türü ve azaltma sonuç türü aynıdır. Üçüncü aşırı yüklemesi için bu, çıktı türü ile tutarlı olmalıdır `_Range_reduce_fun`.  
+ Simetrik azaltma işlevi türü. Bu imzaya sahip bir işlev türü olmalıdır `_Reduce_type _Sym_fun(_Reduce_type, _Reduce_type)`burada _Reduce_type kimlik türü ve azaltma sonuç türü aynıdır. Üçüncü aşırı yükleme için bu çıkış türü ile tutarlı olmalıdır `_Range_reduce_fun`.  
   
  `_Reduce_type`  
- İnput öğesi türünden farklı olabilir için azaltır. giriş türü. Dönüş değeri ve kimlik değeri bu tür sahip.  
+ İnput öğesi türünden farklı olabilen, giriş için azaltacak türü. Kimlik değeri ve dönüş değeri bu türüne sahip.  
   
  `_Range_reduce_fun`  
- Aralık azaltma işlevi türü. Bu işlev türü imzalı olmalıdır `_Reduce_type _Range_fun(_Forward_iterator, _Forward_iterator, _Reduce_type)`, _Reduce_type aynıdır kimlik türü ve azaltma sonuç türü.  
+ Aralık azaltma işlevi türü. Bu imzaya sahip bir işlev türü olmalıdır `_Reduce_type _Range_fun(_Forward_iterator, _Forward_iterator, _Reduce_type)`, _Reduce_type aynıdır kimlik türü ve azaltma sonuç türü.  
   
  `_Begin`  
- Azaltılmasına aralığın ilk öğe adresleme giriş yineleyici.  
+ Azaltılmasına aralıktaki ilk öğeyi ele alan bir giriş yineleyici.  
   
  `_End`  
- Azaltılmasına aralıktaki son öğenin ötesinde bir konuma öğeyi adresleme giriş yineleyici.  
+ Azaltılmasına aralığındaki son öğenin ötesinde bir konumu öğeyi ele alan giriş yineleyici.  
   
  `_Identity`  
- Kimlik değerini `_Identity` azaltma sonuç türü ile aynı türde olduğundan ve ayrıca `value_type` birinci ve ikinci aşırı yineleyici. Üçüncü aşırı kimlik değeri azaltma sonuç türü aynı türde olması gerekir, ancak farklı olabilir `value_type` yineleyici. Uygun bir değere sahip olmalıdır şekilde aralık azaltma işleci `_Range_fun`, tek bir öğesi türü bir dizi uygulandığında `value_type` ve kimlik değeri davranır bir cast türünü türünden değerinin gibi `value_type` kimlik türü.  
+ Kimlik değeri `_Identity` azaltma sonuç türü ile aynı türde ve aynı zamanda `value_type` birinci ve ikinci aşırı yüklemeleri için bir yineleyici. Üçüncü aşırı yükleme için kimlik değeri azaltma sonuç türünü aynı türe sahip olmalıdır, ancak farklı olabilir `value_type` yineleyici. Uygun bir değer olmalıdır şekilde aralık azaltma işleci `_Range_fun`, bir dizi türünde tek bir öğe için uygulandığında `value_type` ve kimlik değeri, davranacağını gibi bir cast türünü değerin türünden `value_type` kimlik türü.  
   
  `_Sym_fun`  
- Azaltma saniye içinde kullanılan simetrik işlev. Açıklamalar için daha fazla bilgi için bkz.  
+ Azaltma ikincide kullanılacak simetrik işlev. Açıklamalar için daha fazla bilgi için bkz.  
   
  `_Range_fun`  
- Azaltma, ilk aşamasında kullanılan işlev. Açıklamalar için daha fazla bilgi için bkz.  
+ Azaltma ilk aşamasında kullanılacak işlev. Açıklamalar için daha fazla bilgi için bkz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Azaltma sonuç.  
+ Azaltma sonucu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Paralel azaltma gerçekleştirmek için temel alınan Zamanlayıcı kullanılabilir çalışanları sayısına dayalı parçalara aralığı işlevi böler. Azaltma iki aşamada gerçekleşir, azaltma her öbek içinde ilk aşamayı gerçekleştirir ve her bir öbeğin kısmi sonuçlarından arasında azaltma İkinci aşama gerçekleştirir.  
+ Paralel azaltma gerçekleştirmek için temel alınan Zamanlayıcı için kullanılabilir olan çalışanların sayısını göre parçalara aralığı işlevi böler. Azaltma iki aşamada gerçekleşir, her bir öbeği içinde bir azaltma ilk aşamada gerçekleştirir ve her bir öbeği kısmi sonuçları arasında bir azalma ikinci aşaması gerçekleştirir.  
   
- İlk aşırı gerektiren yineleyici 's `value_type`, `T`, aynı kimlik değeri türü olarak azaltma sonuç türü. Öğe türü T işleci sağlamalısınız `T T::operator + (T)` her bir öbeğin öğelerinde azaltmak için. Aynı işleci ikinci aşamasında kullanılır.  
+ İlk aşırı yükleme gerektiren yineleyicinin `value_type`, `T`, aynı kimlik değer türü olarak azaltma sonuç türü. Öğe türü T işleci sağlamalısınız `T T::operator + (T)` her öbek öğelerinde azaltmak için. İşleç ikinci aşamasında kullanılır.  
   
- İkinci aşırı ayrıca gerektiren yineleyici 's `value_type` azaltma sonuç türü yanı sıra kimlik değeri türü aynı olmalıdır. Sağlanan ikili işleç `_Sym_fun` ilk aşaması için ilk değer olarak kimlik değeriyle hem azaltma aşamaları kullanılır.  
+ İkinci aşırı yükleme de gerektiren yineleyicinin `value_type` azaltma sonuç türü yanı sıra kimlik değer türü olarak aynı olmalıdır. Sağlanan ikili işleç `_Sym_fun` ilk aşaması için başlangıç değeri kimlik değerine sahip iki azaltma aşamaları kullanılır.  
   
- Üçüncü aşırı yüklemesi için kimlik değeri türü aynı azaltma sonuç türü, ancak yineleyici'nın olmalıdır `value_type` hem de farklı olabilir. Aralık azaltma işlevi `_Range_fun` kimlik değeri ile ilk aşamada ilk değer ve ikili işlevi kullanılan `_Sym_reduce_fun` sonuçları ikinci aşamasında sub uygulanır.  
+ Üçüncü aşırı yükleme için kimlik değeri türü aynı azaltma sonuç türü, ancak yineleyicinin olmalıdır `value_type` hem de farklı olabilir. Aralık azaltma işlevi `_Range_fun` kimlik değerine sahip ilk aşamada başlangıç değeri ve ikili fonksiyon kullanılan `_Sym_reduce_fun` sonuçları ikinci aşamasında sub uygulanır.  
   
 ##  <a name="parallel_sort"></a>  parallel_sort  
- Belirli bir aralık içinde öğeleri nondescending sırada ya da bir ikili karşılaştırma paralel tarafından belirtilen bir sıralama ölçütü göre düzenler. Bu işlev anlamsal olarak benzer `std::sort` karşılaştırma tabanlı kararsız, yerinde bir sıralama olması.  
+ Belirtilen bir aralıktaki öğeleri azalmayan veya paralel bir ikili koşula göre belirtilen bir sıralama ölçütüne göre düzenler. Bu işlev anlam olarak benzerdir, `std::sort` karşılaştırma tabanlı kararsız, yerinde bir sıralama olması.  
   
 ```
 template<typename _Random_iterator>
@@ -1108,32 +1108,32 @@ inline void parallel_sort(
   
 ### <a name="parameters"></a>Parametreler  
  `_Random_iterator`  
- Giriş aralığı yineleyici türü.  
+ Olan giriş aralığındaki yineleyici türü.  
   
  `_Function`  
  İkili karşılaştırma functor türü.  
   
  `_Begin`  
- Sıralanacak ilk öğe konumu aralığında adresleme bir rastgele erişim yineleyici.  
+ Sıralanacak aralıktaki ilk öğenin konumunu bulan bir rasgele erişim yineleyicisi.  
   
  `_End`  
- Sıralanacak konumu bir aralıkta son öğesi geçmiş adresleme bir rastgele erişim yineleyici.  
+ Sıralanacak aralığın son öğesinde geçmiş konumu ele alan bir rasgele erişim yineleyicisi.  
   
  `_Func`  
- Sıralama, art arda gelen öğeler tarafından karşılanması karşılaştırma ölçütü tanımlayan bir kullanıcı tanımlı koşul işlevinin nesnesi. İkili karşılaştırma iki bağımsız değişken alıp döndüren `true` yerine getirdiğinizde ve `false` uyulmadığını olduğunda. Bu karşılaştırıcı işlevi bir katı zayıf çiftleri dizisi diziden sıralama zorunlu tuttukları gerekir.  
+ Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür `true` karşılanmazsa ve `false` koşullar karşılanırsa. Bu bir karşılaştırıcı işlevi, katı bir zayıf çiftlerini dizisindeki öğelerin sıralama dayatır gerekir.  
   
  `_Chunk_size`  
- Paralel yürütme için iki şekilde bölmeniz bir öbek minimum boyutu.  
+ Paralel yürütme için iki halinde bölme bir öbek depolayabilmek boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk aşırı kullanır ikili karşılaştırıcı `std::less`.  
+ İlk aşırı yükleme ikili karşılaştırıcı kullanan `std::less`.  
   
- İkinci kullanan aşırı imza olmalıdır sağlanan ikili karşılaştırıcı `bool _Func(T, T)` burada `T` giriş aralığındaki öğelerin türü.  
+ İkinci aşırı kullanan imza olması gereken sağlanan ikili karşılaştırıcı `bool _Func(T, T)` burada `T` olan giriş aralığındaki öğelerin türü.  
   
- Algoritma giriş aralığı iki parçalara ayırır ve iki alt öbekleri Paralel yürütme için sırayla her bir öbeğin böler. İsteğe bağlı bağımsız değişkeni `_Chunk_size` algoritması, işleme öbek boyutunu belirtmek için kullanılan < `_Chunk_size` seri olarak.  
+ Algoritma olan giriş aralığındaki iki öbeklere böler ve sırayla her bir öbeği Paralel yürütme için iki alt öbeklere böler. İsteğe bağlı bağımsız değişkeni `_Chunk_size` algoritmaya, işleme öbek boyutunu belirtmek için kullanılan < `_Chunk_size` seri olarak.  
   
 ##  <a name="parallel_transform"></a>  parallel_transform  
- Belirtilen işlev nesnesi kaynak aralığı her bir öğe veya çiftlerini iki kaynak aralıklarından geçerlidir ve paralel bir hedef aralığı içine işlev nesnesinin dönüş değerleri kopyalar. Bu işlev anlam olarak eşdeğerdir `std::transform`.  
+ Belirtilen işlev nesnesini bir kaynak aralıktaki her öğeye veya iki kaynak aralıktaki bir öğe çiftinin uygular ve işlev nesnenin dönüş değerlerini paralel bir hedef aralığına kopyalar. Bu işlev için anlamsal olarak eşdeğer `std::transform`.  
   
 ```
 template <typename _Input_iterator1,
@@ -1205,58 +1205,58 @@ _Output_iterator parallel_transform(
   
 ### <a name="parameters"></a>Parametreler  
  `_Input_iterator1`  
- İlk ya da yalnızca giriş yineleyici türü.  
+ Birinci veya yalnızca bir giriş yineleyici türü.  
   
  `_Output_iterator`  
- Çıktı yineleyici türü.  
+ Çıkış yineleyici türü.  
   
  `_Unary_operator`  
- Her öğe giriş aralığındaki üzerinde yürütülecek birli functor türü.  
+ Giriş aralığındaki her öğeyi yürütülecek birli functor türü.  
   
  `_Input_iterator2`  
- İkinci giriş yineleyici türü.  
+ İkinci bir giriş yineleyici türü.  
   
  `_Binary_operator`  
- İki kaynak aralıklarından öğelerde Eşli yürütülen ikili functor türü.  
+ İkili iki kaynak aralıktaki öğeleri üzerinde yürütülen ikili functor türü.  
   
  `_Partitioner`  
  `first1`  
- İlk ya da yalnızca kaynak aralığı üzerinde çalıştırılan ilk öğe konumu adresleme giriş yineleyici.  
+ Birinci veya yalnızca kaynak aralığı üzerinde yapılacak ilk öğenin konumu ele alan giriş yineleyici.  
   
  `last1`  
- Konumunda bir son öğeden geçmiş ilk ya da yalnızca kaynak aralığı üzerinde çalıştırılan adresleme giriş yineleyici.  
+ Bir önceki öğenin konumunu son öğesi ilk ya da yalnızca kaynak aralığı üzerinde yapılacak ele alan giriş yineleyici.  
   
  `_Result`  
- İlk öğesi Hedef aralık konumu adresleme çıkış yineleyici.  
+ Hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.  
   
  `_Unary_op`  
- Kaynak aralığındaki her öğeye uygulanan birli kullanıcı tanımlı işlev nesnesi.  
+ Kaynak aralıktaki her öğeye uygulanan kullanıcı tanımlı tekli işlev nesnesi.  
   
  `_Part`  
- Bölümleyici nesneye başvuru. Bağımsız değişkeni şunlardan biri olabilir `const` [auto_partitioner](auto-partitioner-class.md)`&`, `const` [static_partitioner](static-partitioner-class.md)`&`, `const` [simple_ bölümleyici](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) `&` varsa bir [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılır, başvuru bir const olmayan l-değeri olmalıdır algoritma yeniden kullanmayı gelecekteki döngüler durumu depolayabileceğiniz başvuru.  
+ Bölümleyici nesnesine bir başvuru. Bağımsız değişken şunlardan biri olabilir `const` [auto_partitioner](auto-partitioner-class.md)`&`, `const` [static_partitioner](static-partitioner-class.md)`&`, `const` [simple_ bölümleyici](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) `&` varsa bir [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılır, başvurusu const olmayan bir l-değeri olmalıdır algoritma durumu yeniden kullanmak gelecekteki döngüler için depolayabileceğiniz başvuru.  
   
  `first2`  
- İlk öğe konumu ikinci kaynak aralıktaki üzerinde çalıştırılan adresleme giriş yineleyici.  
+ Üzerinde yapılacak ikinci kaynak aralıktaki ilk öğenin konumunu ele alan giriş yineleyici.  
   
  `_Binary_op`  
- İkili, iki kaynak aralıkları bir ileriye doğru sırada uygulanan bir kullanıcı tanımlı ikili işlev nesnesi.  
+ İkili, için iki kaynak aralıktaki bir ileriye doğru sırada uygulanan kullanıcı tanımlı ikili fonksiyon nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev nesnesi tarafından dönüştürülmüş çıktı öğeleri alıyor Hedef aralık son öğe geçmiş konumu adresleme çıkış yineleyici.  
+ İşlev nesnesi tarafından dönüştürülmüş çıktı öğeleri alan hedef aralığın son öğesinde geçmiş konumu ele alan çıkış yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
  [auto_partitioner](auto-partitioner-class.md) açık bölümleyici bağımsız değişken olmadan aşırı yüklemeleri için kullanılır.  
   
  Rastgele desteklemeyen yineleyiciler erişim, yalnızca [auto_partitioner](auto-partitioner-class.md) desteklenir.  
   
- Bağımsız değişken almayan aşırı `_Unary_op` birli functor giriş aralığındaki her öğeye uygulayarak giriş aralığı çıktı aralığına dönüştürün. `_Unary_op` İşlev çağırma işleci imzayla desteklemelidir `operator()(T)` burada `T` üzerinden yinelendiğinde aralık değeri türü değil.  
+ Bağımsız değişken aşırı `_Unary_op` olan giriş aralığındaki her öğenin birli functor uygulayarak çıkış aralığına olan giriş aralığındaki dönüştürün. `_Unary_op` işlev çağrısı işleci imzayla desteklemelidir `operator()(T)` burada `T` üzerinden yinelenir aralığın değer türüdür.  
   
- Bağımsız değişken almayan aşırı `_Binary_op` ilk giriş aralığı ve ikinci giriş aralığından bir öğe için bir öğe ikili functor uygulayarak iki giriş aralığı çıktı aralığına dönüştürün. `_Binary_op` İşlev çağırma işleci imzayla desteklemelidir `operator()(T, U)` nerede `T`, `U` iki giriş yineleyiciler değer türleridir.  
+ Bağımsız değişken aşırı `_Binary_op` ilk olan giriş aralığındaki ve ikinci olan giriş aralığındaki bir öğeden bir öğe için ikili functor uygulayarak iki giriş aralık çıkış aralığına dönüştürün. `_Binary_op` işlev çağrısı işleci imzayla desteklemelidir `operator()(T, U)` burada `T`, `U` iki giriş Yineleyicilerin değer türleridir.  
   
- Daha fazla bilgi için bkz: [paralel algoritmalar](../../../parallel/concrt/parallel-algorithms.md).  
+ Daha fazla bilgi için [paralel algoritmalar](../../../parallel/concrt/parallel-algorithms.md).  
   
 ##  <a name="receive"></a>  Alma  
- Bir genel uygulama, tam olarak bir kaynaktan veri bekleyin ve kabul edilen değerlerin filtrelemek bir bağlam izin vererek alırsınız.  
+ Genel Uygulama, tam olarak bir kaynaktan gelen veriler için bekleyin ve kabul edilen değerler filtrelemek bir bağlam izin vererek alırsınız.  
   
 ```
 template <class T>
@@ -1287,24 +1287,24 @@ T receive(
  Yük türü.  
   
  `_Src`  
- Bir işaretçi veya veri beklenen kaynağına başvuru.  
+ Bir işaretçi veya başvuru, beklenen veri kaynağı.  
   
  `_Timeout`  
- Yöntemi için gereken en uzun süreyi milisaniye cinsinden veriler için.  
+ Yöntemi için gereken en uzun süre, milisaniye cinsinden veriler için.  
   
  `_Filter_proc`  
- İletileri kabul edilip edilmeyeceğini belirler bir filtre işlevi.  
+ İletileri kabul edilip edilmeyeceğini belirleyen bir filtre işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir değer kaynağından, yük türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa parametresi `_Timeout` sabiti dışında bir değere sahip `COOPERATIVE_TIMEOUT_INFINITE`, özel durum [operation_timed_out](operation-timed-out-class.md) bir ileti alındığında önce belirtilen sürede sona ererse atılır. Sıfır uzunluk zaman aşımı istiyorsanız, kullanması gereken [try_receive](concurrency-namespace-functions.md) arama aksine işlevi `receive` bir zaman aşımı süresi ile `0` (sıfır), daha verimlidir ve zaman aşımlarını özel durumlar oluşturmadığını.  
+ Parametre `_Timeout` sabiti dışında bir değere sahip `COOPERATIVE_TIMEOUT_INFINITE`, özel durum [operation_timed_out](operation-timed-out-class.md) bir ileti alındığında önce belirtilen sürede sona ererse oluşturulur. Sıfır uzunluk zaman aşımı istiyorsanız kullanmanız gerekir [try_receive](concurrency-namespace-functions.md) işlevi çağırmak yerine `receive` bir zaman aşımı ile `0` (sıfır), daha verimli olur ve zaman aşımları özel durumları oluşturmaz.  
   
- Daha fazla bilgi için bkz: [ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).  
+ Daha fazla bilgi için [ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).  
   
 ##  <a name="run_with_cancellation_token"></a>  run_with_cancellation_token  
- İşlev nesnesi, verilen iptal belirteci bağlamında hemen ve eşzamanlı olarak yürütür.  
+ Bir işlev nesnesi, belirli bir iptal belirteci bağlamında hemen ve eşzamanlı olarak yürütür.  
   
 ```
 template<typename _Function>
@@ -1315,19 +1315,19 @@ void run_with_cancellation_token(
   
 ### <a name="parameters"></a>Parametreler  
  `_Function`  
- Çağrılan işlev nesnesi türü.  
+ Çağrılacak işlev nesnesinin türü.  
   
  `_Func`  
- Yürütülecek işlev nesnesi. Bu nesne void(void) imzası ile işlev çağırma işleci desteklemesi gerekir.  
+ Yürütülecek işlev nesnesi. Bu nesne, işlev çağrısı işleci void(void) imzası ile desteklemesi gerekir.  
   
  `_Ct`  
- İşlev nesnesi örtük iptaline kontrol edecek iptal belirteci. Kullanım `cancellation_token::none()` işlevi yürütme iptal ediliyor üst görev grubundan örtük iptal olasılığını olmadan istiyorsanız.  
+ İşlev nesnesi örtük iptalini denetleyen iptal belirteci. Kullanım `cancellation_token::none()` işlevi yürütme iptal ediliyor bir üst görev grubu örtük iptalden olasılığını olmadan istiyorsanız.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlev nesnesi herhangi kesinti noktaları olacaktır ayarlandığında tetiklenen `cancellation_token` iptal edilir. Açık belirteci `_Ct` bu yalıtmak `_Func` üst belirteci yok ya da farklı bir belirteci varsa üst iptal gelen.  
+ İşlev nesnesi herhangi bir kesinti noktası olur olduğunda tetiklenen `cancellation_token` iptal edilir. Açık belirteç `_Ct` bu yalıtmak `_Func` üst farklı bir belirteç veya hiçbir belirteç varsa üst iptal öğesinden.  
   
 ##  <a name="send"></a>  Gönder  
- Zaman uyumlu bir hedef kabul eder ya da ileti reddettiğinde kadar bekler işlemi gönderin.  
+ Hedef kabul eder veya iletiyi reddettiğinde kadar bekler, bir eş zamanlı gönderme işlemi.  
   
 ```
 template <class T>
@@ -1342,16 +1342,16 @@ bool send(ITarget<T>& _Trg, const T& _Data);
  Yük türü.  
   
  `_Trg`  
- Bir işaretçi veya veri gönderildiği hedefine başvuru.  
+ Bir işaretçi veya başvuru veri gönderildiği hedef.  
   
  `_Data`  
- Gönderilecek verileri referansı.  
+ Gönderilecek verileri bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` ileti kabul edildiyse `false` Aksi takdirde.  
+ `true` iletiyi kabul edildiyse `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).  
+ Daha fazla bilgi için [ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).  
   
 ##  <a name="set_ambient_scheduler"></a>  set_ambient_scheduler  
   
@@ -1363,11 +1363,11 @@ inline void set_ambient_scheduler(std::shared_ptr<::Concurrency::scheduler_inter
  `_Scheduler`  
   
 ##  <a name="set_task_execution_resources"></a>  set_task_execution_resources  
- Belirtilen benzeşim için eşzamanlılık çalışma zamanı iç çalışan iş parçacıkları tarafından kullanılan yürütme kaynakları kısıtlar.  
+ Eşzamanlılık Çalışma zamanı iç çalışan iş parçacığı için belirtilen benzeşim tarafından kullanılan yürütme kaynakları kısıtlar.  
   
- Bu yöntemi yalnızca Resource Manager oluşturulmadan önce arasında veya iki Resource Manager yaşam süreleri çağırmak için geçerlidir. Kaynak Yöneticisi'ni çağırma aynı anda yok sürece birden çok kez çağrılabilir. Bir benzeşim sınırı ayarladıktan sonra onu sonraki geçerli çağrısı kadar sürdürür `set_task_execution_resources` yöntemi.  
+ Yalnızca Resource Manager oluşturulmadan önce arasında veya iki Resource Manager yaşam süreleri bu yöntemi çağırmak için geçerlidir. Kaynak Yöneticisi'ni çağırma sırasındaki yok sürece birden çok kez çağrılabilir. Benzeşim sınırı ayarladıktan sonra sonraki geçerli çağrı kadar devam eder `set_task_execution_resources` yöntemi.  
   
- Sağlanan benzeşim maskesi bir alt işlem benzeşim maskesi olması gerekmez. İşlem benzeşimi gerekiyorsa güncelleştirilir.  
+ Belirtilen benzeşim maskesi işlem benzeşim maskesi bir alt kümesi olması gerekmez. Gerekirse, process affınıty güncelleştirilecektir.  
   
 ```
 void __cdecl set_task_execution_resources(
@@ -1380,23 +1380,23 @@ void __cdecl set_task_execution_resources(
   
 ### <a name="parameters"></a>Parametreler  
  `_ProcessAffinityMask`  
- Eşzamanlılık Çalışma zamanı çalışan iş parçacığı için kısıtlı olacak benzeşim maskesi. Eşzamanlılık Çalışma zamanı geçerli işlemci grubunun bir alt sınırlamak istiyorsanız 64 donanım iş parçacığı daha büyük bir sistemde bu yöntemi kullanın. Genel olarak, Grup benzeşimleri dizisi makinelerde benzeşimi değerinden 64 donanım iş parçacığı ile kısıtlamak için bir parametre olarak kabul yöntemi sürümünü kullanmanız gerekir.  
+ Eşzamanlılık Çalışma zamanı çalışan iş parçacıkları sınırlı olacak benzeşim maskesi. Geçerli İşlemci grubu bir alt kümesi için eşzamanlılık çalışma zamanı sınırlamak isterseniz 64 donanım iş parçacıklarının daha büyük bir sistemde bu yöntemi kullanın. Genel olarak, 64 donanım iş parçacıklarının daha büyük makinelere benzeşim kısıtlamak için bir parametre olarak bir dizi grubu benzeşimleri kabul eden yöntemi sürümünü kullanmanız gerekir.  
   
  `count`  
- Sayısı `GROUP_AFFINITY` parametresi tarafından belirtilen dizi giriş `_PGroupAffinity`.  
+ Sayısını `GROUP_AFFINITY` parametresi tarafından belirtilen dizideki girişler `_PGroupAffinity`.  
   
  `_PGroupAffinity`  
- Bir dizi `GROUP_AFFINITY` girişleri.  
+ Bir dizi `GROUP_AFFINITY` girdileri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntemi özel durum oluşturacak bir [invalid_operation](invalid-operation-class.md) Resource Manager bunu çağrıldığında, aynı anda varsa, özel durum ve bir [invalid_argument](../../../standard-library/invalid-argument-class.md) benzeşimi bir boş kümesinde sonuçları belirtilmişse özel durumu kaynaklar.  
+ Yöntemi bir [invalid_operation](invalid-operation-class.md) bir Resource Manager çağrıldığında, zamanda mevcut değilse bir özel durum ve [invalid_argument](../../../standard-library/invalid-argument-class.md) benzeşim sonuç boş bir kümesi belirtilen özel durum kaynaklar.  
   
- Grup benzeşim bir dizi parametre olarak alır yöntemi sürümü yalnızca kullanılan işletim sistemi sürümü Windows 7 veya üzeri olmalıdır. Aksi halde, bir [invalid_operation](invalid-operation-class.md) özel durumu oluşur.  
+ Grup benzeşimleri bir dizi parametre olarak alan yöntemi sürümü, yalnızca kullanılan işletim sistemi sürümü Windows 7 veya üzeri olmalıdır. Aksi takdirde, bir [invalid_operation](invalid-operation-class.md) özel durumu oluşturulur.  
   
- Bu yöntemi çağrıldıktan sonra işlem benzeşimi programlı şekilde değiştirmek için sınırlı benzeşim yeniden değerlendirmek için Kaynak Yöneticisi'ni neden olmaz. Bu nedenle, bu yöntemi çağırmadan önce benzeşim işlemek için tüm değişiklikler yapılmalıdır.  
+ Kaynak Yöneticisi için kısıtlı benzeşim yeniden değerlendirmek için bu yöntemi çağrıldıktan sonra process affınıty programlı şekilde değiştirme neden olmaz. Bu nedenle, tüm değişiklikleri benzeşim işlemek için bu yöntemi çağırmadan önce yapılmalıdır.  
   
-##  <a name="swap"></a>  Değiştirme  
- İki öğelerini alış verişleri `concurrent_vector` nesneleri.  
+##  <a name="swap"></a>  değiştirme  
+ İki öğeleri birbiriyle değiştirir `concurrent_vector` nesneleri.  
   
 ```
 template<typename T, class _Ax>
@@ -1407,21 +1407,21 @@ inline void swap(
   
 ### <a name="parameters"></a>Parametreler  
  `T`  
- Eşzamanlı vektörler depolanan öğelerin veri türü.  
+ Eşzamanlı vektör içinde depolanan öğelerin veri türü.  
   
  `_Ax`  
- Eşzamanlı vektörlerinin ayırıcı türü.  
+ Eşzamanlı vektör ayırıcı türü.  
   
  `_A`  
- Öğeleri olan eşzamanlı vektör olanlar değiştirilebilmesi için eş zamanlı vektör `_B`.  
+ Öğeleri olan eş zamanlı vektör öğelerle için eş zamanlı vektör `_B`.  
   
  `_B`  
- Öğeleri takas için sağlama eşzamanlı vektör veya öğeleri olan eşzamanlı vektör olanlar değiştirilebilmesi için vektör `_A`.  
+ Değiştirilecek öğeleri sağlayan eş zamanlı vektör veya öğeleri eş zamanlı vektör öğelerle ilişkili vektör `_A`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir algoritma özelleştirilmiş kapsayıcı sınıfını şablon işlevi olan `concurrent_vector` üye işlevini yürütmek için `_A`. [concurrent_vector::Swap](concurrent-vector-class.md#swap)( `_B`). İşlev şablonlarının kısmi derleyici tarafından sıralaması örneğine bunlar. Şablon işlevleri işlev çağrısı şablonla eşleşmesi benzersiz değil şekilde aşırı zaman derleyici şablon işlevi en özelleştirilmiş sürümünü seçin. Genel bir şablon işlevi sürümü `template <class T> void swap(T&, T&)`, algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özel sürüm kapsayıcı sınıfı iç gösterimi ile çalışabilirsiniz gibi daha hızlıdır.  
+ Özel kapsayıcı sınıfı üzerinde bir algoritma şablon işlevi olan `concurrent_vector` üye işlevini yürütmek için `_A`. [concurrent_vector::Swap](concurrent-vector-class.md#swap)( `_B`). İşlev şablonlarının kısmi derleyici tarafından sıralanması, örnekleri şunlardır. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Şablon işlevinin genel bir sürümü `template <class T> void swap(T&, T&)`, algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.  
   
- Bu yöntem eşzamanlılık uyumlu değil. Bu yöntemi çağırdığınızda başka bir iş parçacığı eşzamanlı vektörlerinin birini işlemleri gerçekleştirme emin olmalısınız.  
+ Bu yöntem eşzamanlı güvenli değil. Bu yöntemi çağırdığınızda başka bir iş parçacıklarının eş zamanlı vektör birini üzerinde işlem gerçekleştirme emin olmanız gerekir.  
   
 ##  <a name="task_from_exception"></a>  task_from_exception  
   
@@ -1462,7 +1462,7 @@ inline task<void> task_from_result(
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ##  <a name="trace_agents_register_name"></a>  Trace_agents_register_name  
- Verilen ada ileti bloğu veya ETW İzleme Aracısı ilişkilendirir.  
+ Ad ileti bloğu veya ETW İzleme Aracısı ile ilişkilendirir.  
   
 ```
 template <class T>
@@ -1473,16 +1473,16 @@ void Trace_agents_register_name(
   
 ### <a name="parameters"></a>Parametreler  
  `T`  
- Nesnenin türü. Bu genellikle bir ileti bloğu ya da bir aracı olur.  
+ Nesne türü. Genellikle bir ileti bloğu ya da aracı budur.  
   
  `_PObject`  
- İleti bloğu veya izlemede adlı aracısı için bir işaretçi.  
+ İzlemede adlı aracısı ve ileti bloğu için bir işaretçi.  
   
  `_Name`  
- Belirtilen nesnenin adı.  
+ Verilen nesne adı.  
   
 ##  <a name="try_receive"></a>  try_receive  
- Genel try-alma uygulaması, tam olarak bir kaynaktan veriler arayabilir ve kabul edilen değerlerin filtrelemek bir bağlam sağlar. Veri hazır değilse yöntemi false döndürür.  
+ Genel deneyin-alma uygulaması, tam olarak bir kaynaktan gelen veriler arayabilir ve kabul edilen değerler filtrelemek bir bağlam sağlar. Veriler hazır değilse, yöntem false döndürür.  
   
 ``` 
 template <class T>
@@ -1509,22 +1509,22 @@ bool try_receive(
  Yük türü  
   
  `_Src`  
- Bir işaretçi veya veri beklenen kaynağına başvuru.  
+ Bir işaretçi veya başvuru, beklenen veri kaynağı.  
   
  `_value`  
- Bir başvuru sonucu yerleştirileceği bir konuma.  
+ Sonuç yerleştirileceği bir konuma başvuru.  
   
  `_Filter_proc`  
- İletileri kabul edilip edilmeyeceğini belirler bir filtre işlevi.  
+ İletileri kabul edilip edilmeyeceğini belirleyen bir filtre işlevi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `bool` değerini gösteren bir yük içinde yerleştirilen olup olmadığına bakılmaksızın `_value`.  
+ A `bool` değeri belirten bir yük yerleştirilir olup olmadığını `_value`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).  
+ Daha fazla bilgi için [ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).  
   
 ##  <a name="wait"></a>  bekleme  
- Belirtilen bir süre için geçerli bağlam duraklatır.  
+ Belirtilen bir zaman miktarı için geçerli bağlam duraklatır.  
   
 ```
 void __cdecl wait(unsigned int _Milliseconds);
@@ -1532,13 +1532,13 @@ void __cdecl wait(unsigned int _Milliseconds);
   
 ### <a name="parameters"></a>Parametreler  
  `_Milliseconds`  
- Geçerli bağlam için duraklatılması milisaniye sayısı. Varsa `_Milliseconds` parametre değerine ayarlanmış `0`, geçerli bağlam devam etmeden önce diğer runnable bağlamları yürütülmesine verim.  
+ Geçerli bağlam için Duraklatılacak milisaniye sayısı. Varsa `_Milliseconds` parametresi değerine ayarlanırsa `0`, diğer çalıştırılabilir bağlamları yürütülmesine devam etmeden önce geçerli bağlam yield.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir eşzamanlılık çalışma zamanı Zamanlayıcı bağlamda çağrılırsa, Zamanlayıcı temel alınan kaynak üzerinde çalıştırmak için farklı bir bağlam bulur. Zamanlayıcı doğası gereği işbirlikçi olduğundan bu bağlamda tam olarak belirtilen milisaniye sayısını sonra devam edilemiyor. Zamanlayıcı işlevinizde Zamanlayıcı verim olmayan diğer görevleri çalıştırmakla meşgul ise, bekleme süresi belirsiz olabilir.  
+ Eşzamanlılık Çalışma zamanı Zamanlayıcısı bağlam'da bu yöntemi çağrılırsa, temel alınan kaynakta çalıştırmak için farklı bir bağlama Zamanlayıcı bulabilirsiniz. Zamanlayıcı doğası gereği işbirliği yapan olduğundan, bu bağlamda tam olarak belirtilen milisaniye sayısını sonra devam edilemiyor. Zamanlayıcı Zamanlayıcı işbirliği içerisinde devamlılığı yield değil diğer görevleri çalıştırmakla meşgul ise, bekleme dönemi belirsiz olabilir.  
   
 ##  <a name="when_all"></a>  when_all  
- Tüm bağımsız değişkenler olarak verilen görevleri başarıyla tamamlandığında, başarılı bir şekilde tamamlanır bir görev oluşturur.  
+ Tüm bağımsız değişken olarak sağlanan görevleri başarıyla tamamladığında başarıyla tamamlanacak bir görev oluşturur.  
   
 ```
 template <typename _Iterator>
@@ -1552,28 +1552,28 @@ auto when_all(
   
 ### <a name="parameters"></a>Parametreler  
  `_Iterator`  
- Giriş yineleyici türü.  
+ Giriş yineleyicisinin türü.  
   
  `_Begin`  
- Sonuçta elde edilen göreve birleştirilecek öğeleri aralığını ilk öğe konumu.  
+ Elde edilen görevle birleştirilecek öğe aralığındaki ilk öğenin konumu.  
   
  `_End`  
- Sonuçta elde edilen göreve birleştirilecek öğeleri aralık ötesinde ilk öğe konumu.  
+ Elde edilen görevle birleştirilecek öğe aralığı dışındaki ilk öğenin konumu.  
   
  `_TaskOptions`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tüm giriş görevleri başarıyla tamamlandığında başarıyla tamamlanan bir görev. Giriş görevleri türdeyse `T`, bu işlevin çıktı bir `task<std::vector<T>>`. Giriş görevleri türdeyse `void` çıkışı da bu durumda görev bir `task<void>`.  
+ Tüm giriş görevleri başarıyla tamamladığında başarıyla tamamlanan bir görev. Giriş görevleri türündeyse `T`, bu işlevin çıktısı olacak bir `task<std::vector<T>>`. Giriş görevleri türündeyse `void` çıktı görevi de olacak bir `task<void>`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `when_all` üreten engelleyici olmayan bir işlev bir `task` sonuç olarak. Farklı [task::wait](task-class.md#wait), ASTA (uygulama STA) iş parçacığı üzerinde bir UWP uygulamasında bu işlevi çağırmak güvenlidir.  
+ `when_all` üretir engelleyici olmayan bir işlev, bir `task` sonuç olarak. Farklı [task::wait](task-class.md#wait), ASTA (ASTA uygulaması) iş parçacığında bir UWP uygulamasında bu işlevi çağırmak güvenlidir.  
   
- Görevlerden birini iptal veya bir özel durum oluşturur, döndürülen görevi erken, iptal edilmiş durumda tamamlayacak ve encoutered, ise çağırırsanız özel durum oluşturulacak [task::get](task-class.md#get) veya `task::wait` bu görevde.  
+ Görevlerden birini iptal edilir ya da bir özel durum oluşturur, döndürülen görev iptal edildi durumunda erkenden tamamlanır ve çağırırsanız, karşılaşıldıysa özel durum oluşturulur [task::get](task-class.md#get) veya `task::wait` o görevde.  
   
- Daha fazla bilgi için bkz: [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
+ Daha fazla bilgi için [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
 ##  <a name="when_any"></a>  when_any  
- Bağımsız değişkenler tamamladıkça başarıyla görevlerden herhangi birini ne zaman sağlanan başarıyla tamamlanır bir görev oluşturur.  
+ Ne zaman görevlerden herhangi birini sağlanan bağımsız değişkenler tamamladıkça başarıyla başarıyla tamamlanacak bir görev oluşturur.  
   
 ```
 template<typename _Iterator>
@@ -1599,25 +1599,25 @@ auto when_any(
   
 ### <a name="parameters"></a>Parametreler  
  `_Iterator`  
- Giriş yineleyici türü.  
+ Giriş yineleyicisinin türü.  
   
  `_Begin`  
- Sonuçta elde edilen göreve birleştirilecek öğeleri aralığını ilk öğe konumu.  
+ Elde edilen görevle birleştirilecek öğe aralığındaki ilk öğenin konumu.  
   
  `_End`  
- Sonuçta elde edilen göreve birleştirilecek öğeleri aralık ötesinde ilk öğe konumu.  
+ Elde edilen görevle birleştirilecek öğe aralığı dışındaki ilk öğenin konumu.  
   
  `_TaskOptions`  
  `_CancellationToken`  
- Döndürülen görev iptali denetimleri iptal belirteci. Bir iptal belirteci belirtmezseniz, elde edilen görevi tamamlamak için neden olan görev iptal belirtecini alır.  
+ Döndürülen görevin iptalini denetleyen iptal belirteci. Bir iptal belirteci sağlamazsanız, sonuçta elde edilen görev tamamlanmasına neden olan görevin iptal belirtecini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ne zaman giriş görevlerden biri tamamlandı başarıyla tamamlanan bir görev. Giriş görevleri türdeyse `T`, bu işlevin çıktı bir `task<std::pair<T, size_t>>>`, burada çiftinin ilk öğe tamamlayan görev sonucunu ve tamamlandı görev dizinini ikinci öğedir. Giriş görevleri türdeyse `void` çıktısı bir `task<size_t>`sonucu tamamlayan görev dizinini eder.  
+ Giriş görevleri herhangi biri başarıyla tamamlandığında başarıyla tamamlanan bir görev. Giriş görevleri türündeyse `T`, bu işlevin çıktısı olacak bir `task<std::pair<T, size_t>>>`, burada çiftin ilk öğesi Tamamlanan görevin sonucu ve ikinci öğe biten görevin dizinidir. Giriş görevleri türündeyse `void` çıkış bir `task<size_t>`, burada sonuç Tamamlanan görevin dizinidir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `when_any` üreten engelleyici olmayan bir işlev bir `task` sonuç olarak. Farklı [task::wait](task-class.md#wait), ASTA (uygulama STA) iş parçacığı üzerinde bir UWP uygulamasında bu işlevi çağırmak güvenlidir.  
+ `when_any` üretir engelleyici olmayan bir işlev, bir `task` sonuç olarak. Farklı [task::wait](task-class.md#wait), ASTA (ASTA uygulaması) iş parçacığında bir UWP uygulamasında bu işlevi çağırmak güvenlidir.  
   
- Daha fazla bilgi için bkz: [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
+ Daha fazla bilgi için [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

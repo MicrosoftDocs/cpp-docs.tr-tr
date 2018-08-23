@@ -62,12 +62,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a5c9132325af7c05980aac0d7b6b7d53958e4a2b
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 747f54e4ae37fe31eeea7540c1531b988d692427
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338050"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464781"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonları için Makrolar
 OLE DB Şablonları sağlayıcısı makroları işlevselliğini Aşağıdaki kategorilerde sunulur:  
@@ -159,11 +159,11 @@ BEGIN_PROPSET_MAP(Class)
  *Sınıfı*  
  [in] Bu özelliği ayarlamak, sınıfın belirtilir. Bir özellik kümesi, OLE DB nesneleri belirtilebilir:  
   
--   [Veri kaynağı nesneleri](https://msdn.microsoft.com/library/ms721278.aspx)  
+-   [Veri kaynağı nesneleri](/previous-versions/windows/desktop/ms721278\(v=vs.85\))  
   
--   [Oturum nesneleri](https://msdn.microsoft.com/library/ms711572.aspx)  
+-   [Oturum nesneleri](/previous-versions/windows/desktop/ms711572\(v=vs.85\))  
   
--   [Komutları](https://msdn.microsoft.com/library/ms724608.aspx)  
+-   [Komutları](/previous-versions/windows/desktop/ms724608\(v=vs.85\))  
   
 #### <a name="example"></a>Örnek  
  Örnek özellik kümesi eşlemesi şu şekildedir:  
@@ -228,10 +228,10 @@ PROPERTY_INFO_ENTRY(dwPropID)
   
 #### <a name="parameters"></a>Parametreler  
  *dwPropID*  
- [in] A [DBPROPID](https://msdn.microsoft.com/library/ms723882.aspx) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.  
+ [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.  
   
 #### <a name="remarks"></a>Açıklamalar  
- Bu makro türü özellik değerini ayarlar `DWORD` ATLDB içinde tanımlanmış bir varsayılan değer. H Bir değerine özellik ayarlamak için kullanın [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). Ayarlanacak [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) ve [DBPROPFLAGS](https://msdn.microsoft.com/library/ms724342.aspx) özelliği için aynı anda kullanmak [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
+ Bu makro türü özellik değerini ayarlar `DWORD` ATLDB içinde tanımlanmış bir varsayılan değer. H Bir değerine özellik ayarlamak için kullanın [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). Ayarlanacak [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) ve [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) özelliği için aynı anda kullanmak [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
   
 #### <a name="example"></a>Örnek  
  Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
@@ -247,13 +247,13 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
   
 #### <a name="parameters"></a>Parametreler  
  *dwPropID*  
- [in] A [DBPROPID](https://msdn.microsoft.com/library/ms723882.aspx) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.  
+ [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.  
   
  *vt*  
  [in] [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) bu özelliği giriş.  
   
  *CertOpenStore*  
- [in] A [DBPROPFLAGS](https://msdn.microsoft.com/library/ms724342.aspx) bu özellik girdisini tanımlayan değer.  
+ [in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) bu özellik girdisini tanımlayan değer.  
   
  *value*  
  [in] Özellik değeri türü `DWORD`.  
@@ -278,7 +278,7 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
   
 #### <a name="parameters"></a>Parametreler  
  *dwPropID*  
- [in] A [DBPROPID](https://msdn.microsoft.com/library/ms723882.aspx) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.  
+ [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.  
   
  *value*  
  [in] Özellik değeri türü `DWORD`.  
@@ -355,7 +355,7 @@ PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
  [in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.  
   
  *DbType*  
- [in] Veri türü olarak [DBTYPE](https://msdn.microsoft.com/library/ms711251.aspx).  
+ [in] Veri türü olarak [DBTYPE](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
   
  *Üyesi*  
  [in] Üye değişkeni `dataClass` , verileri depolar.  
@@ -383,22 +383,22 @@ PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scal
  [in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.  
   
  *bayrakları*  
- [in] Veriler nasıl döndürülür belirtir. Bkz: `dwFlags` açıklamasında [IAccessor::CreateAccessor'ı yapıları](https://msdn.microsoft.com/library/ms716845.aspx).  
+ [in] Veriler nasıl döndürülür belirtir. Bkz: `dwFlags` açıklamasında [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
   
  *colSize*  
  [in] Sütun boyutu.  
   
  *DbType*  
- [in] Değeri veri türünü belirtir. Bkz: `wType` açıklamasında [IAccessor::CreateAccessor'ı yapıları](https://msdn.microsoft.com/library/ms716845.aspx).  
+ [in] Değeri veri türünü belirtir. Bkz: `wType` açıklamasında [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
   
  *Duyarlık*  
- [in] Veri alma sırasında kullanılacak duyarlık gösterir *dbType* DBTYPE_NUMERIC veya DBTYPE_DECIMAL. Bkz: `bPrecision` açıklamasında [IAccessor::CreateAccessor'ı yapıları](https://msdn.microsoft.com/library/ms716845.aspx).  
+ [in] Veri alma sırasında kullanılacak duyarlık gösterir *dbType* DBTYPE_NUMERIC veya DBTYPE_DECIMAL. Bkz: `bPrecision` açıklamasında [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
   
  *Ölçek*  
- [in] DbType DBTYPE_NUMERIC veya DBTYPE_DECIMAL ise veri alınırken kullanılacak ölçek gösterir. Bkz: `bScale` açıklamasında [IAccessor::CreateAccessor'ı yapıları](https://msdn.microsoft.com/library/ms716845.aspx).  
+ [in] DbType DBTYPE_NUMERIC veya DBTYPE_DECIMAL ise veri alınırken kullanılacak ölçek gösterir. Bkz: `bScale` açıklamasında [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
   
  *GUID*  
- Bir şema satır kümesi GUID'si. Bkz: [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) içinde *OLE DB Programcının Başvurusu* şema satır kümeleri ve GUID'ler listesi.  
+ Bir şema satır kümesi GUID'si. Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* şema satır kümeleri ve GUID'ler listesi.  
   
 #### <a name="remarks"></a>Açıklamalar  
  Sütun boyutu, veri türü, kesinlik, ölçek ve şeması satır kümesi GUID'si belirtmenizi sağlar.  
@@ -451,7 +451,7 @@ PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
  [in] Veri depolayan veri sınıfı üye değişkeni.  
   
 #### <a name="remarks"></a>Açıklamalar  
- Sütun verileri varsayılır Bu makroyu kullanın [DBTYPE_STR](https://msdn.microsoft.com/library/ms711251.aspx).  
+ Sütun verileri varsayılır Bu makroyu kullanın [DBTYPE_STR](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
   
 #### <a name="example"></a>Örnek  
  Bkz: [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).   
@@ -473,7 +473,7 @@ PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
  [in] Sütun numarası. Bir yer işareti sütunu bir sütun olmadığı sürece, sütun numarası 0 olmalıdır.  
   
  *DbType*  
- [in] Veri türü olarak [DBTYPE](https://msdn.microsoft.com/library/ms711251.aspx).  
+ [in] Veri türü olarak [DBTYPE](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
   
  *Boyutu*  
  [in] Sütun boyutu bayt cinsinden.  
@@ -504,7 +504,7 @@ PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)
  [in] Veri depolayan veri sınıfı üye değişkeni.  
   
 #### <a name="remarks"></a>Açıklamalar  
- Sütun verileri bir null sonlandırılmış Unicode karakter dizesi olduğunda bu makroyu kullanın [DBTYPE_WSTR](https://msdn.microsoft.com/library/ms711251.aspx).  
+ Sütun verileri bir null sonlandırılmış Unicode karakter dizesi olduğunda bu makroyu kullanın [DBTYPE_WSTR](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
 
 ### <a name="begin_schema_map"></a> BEGIN_SCHEMA_MAP
 Şema eşleme başına gösterir.  
@@ -520,7 +520,7 @@ BEGIN_SCHEMA_MAP(SchemaClass);
  Harita içeren sınıf. Genellikle bu oturum sınıfının olacaktır.  
   
 #### <a name="remarks"></a>Açıklamalar  
- Bkz: [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) şema satır kümeleri hakkında daha fazla bilgi için Windows SDK.  
+ Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) şema satır kümeleri hakkında daha fazla bilgi için Windows SDK.  
 
 ### <a name="end_schema_map"></a> END_SCHEMA_MAP
 Şema eşleme sonuna gösterir.  
@@ -546,7 +546,7 @@ SCHEMA_ENTRY(guid,
   
 #### <a name="parameters"></a>Parametreler  
  *GUID*  
- Bir şema satır kümesi GUID'si. Bkz: [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) içinde *OLE DB Programcının Başvurusu* şema satır kümeleri ve GUID'ler listesi.  
+ Bir şema satır kümesi GUID'si. Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* şema satır kümeleri ve GUID'ler listesi.  
   
  *RowsetClass*  
  Şema satır kümesi temsil etmek için oluşturulan sınıf.  
@@ -560,7 +560,7 @@ HRESULT Execute (LONG* pcRowsAffected,
     const VARIANT* rgRestrictions);  
 ```  
   
- Bu `Execute` işlevi satır kümesinin veri doldurur. ATL projesi Sihirbazı oluşturur açıklandığı [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) içinde *OLE DB Programcının Başvurusu*, üç ilk şema satır kümeleri projedeki her üç zorunlu OLE DB şemaları için:  
+ Bu `Execute` işlevi satır kümesinin veri doldurur. ATL projesi Sihirbazı oluşturur açıklandığı [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*, üç ilk şema satır kümeleri projedeki her üç zorunlu OLE DB şemaları için:  
   
 -   DBSCHEMA_TABLES  
   

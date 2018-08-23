@@ -111,12 +111,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a915a581a574193918f86f80083d3202c9949674
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 533891a3bc7517df7570e0c976d05ed8b3b20579
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338154"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466278"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 OLE DB Tüketici şablonları aşağıdaki makroları ve genel işlevler şunlardır:  
@@ -354,7 +354,7 @@ BEGIN_COLUMN_MAP(x)
  <!--[!CODE [NVC_OLEDB_Consumer#16](../codesnippet/vs_snippets_cpp/nvc_oledb_consumer#16)]  -->
 
 ### <a name="blob_entry"></a> BLOB_ENTRY
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)).  
+BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))).  
   
 #### <a name="syntax"></a>Sözdizimi  
   
@@ -379,7 +379,7 @@ BLOB_ENTRY(nOrdinal, IID, flags, data)
  Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_entry_length"></a> BLOB_ENTRY_LENGTH
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu ayrıca BLOB sütun bayt cinsinden uzunluğu alır.  
+BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu ayrıca BLOB sütun bayt cinsinden uzunluğu alır.  
   
 #### <a name="syntax"></a>Sözdizimi  
   
@@ -407,7 +407,7 @@ BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)
  Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_entry_length_status"></a> BLOB_ENTRY_LENGTH_STATUS
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makro uzunluğu ve BLOB sütununu durumunu alır.  
+BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makro uzunluğu ve BLOB sütununu durumunu alır.  
   
 #### <a name="syntax"></a>Sözdizimi  
   
@@ -444,7 +444,7 @@ BLOB_ENTRY_LENGTH_STATUS(
  Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_entry_status"></a> BLOB_ENTRY_STATUS
-BEGIN_COLUMN_MAP veya BEGIN_ACCESSOR_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu BLOB sütununu durumunu da alır.  
+BEGIN_COLUMN_MAP veya BEGIN_ACCESSOR_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu BLOB sütununu durumunu da alır.  
   
 #### <a name="syntax"></a>Sözdizimi  
   
@@ -472,7 +472,7 @@ BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)
  Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_name"></a> BLOB_NAME
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu bir sütun numarası yerine sütun adını alır.  
+BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makroyu bir sütun numarası yerine sütun adını alır.  
   
 #### <a name="syntax"></a>Sözdizimi  
   
@@ -497,7 +497,7 @@ BLOB_NAME(pszName, IID, flags, data )
  Bkz: [nasıl miyim alabilir BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_name_length"></a> BLOB_NAME_LENGTH
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makroyu ayrıca BLOB veri sütununun bayt cinsinden uzunluğu alır.  
+BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makroyu ayrıca BLOB veri sütununun bayt cinsinden uzunluğu alır.  
   
 #### <a name="syntax"></a>Sözdizimi  
   
@@ -522,7 +522,7 @@ BLOB_NAME_LENGTH(pszName, IID, flags, data, length )
  [out] Bayt cinsinden BLOB sütun (gerçek) uzunluğu.  
 
 ### <a name="blob_name_length_status"></a> BLOB_NAME_LENGTH_STATUS
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makro uzunluğu ve BLOB veri sütununu durumunu alır.  
+BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makro uzunluğu ve BLOB veri sütununu durumunu alır.  
   
 #### <a name="syntax"></a>Sözdizimi  
   
@@ -550,7 +550,7 @@ BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length, status )
  [out] BLOB alan durumu.  
 
 ### <a name="blob_name_status"></a> BLOB_NAME_STATUS
-BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makroyu BLOB veri sütununu durumunu da alır.  
+BEGIN_COLUMN_MAP ve END_COLUMN_MAP ikili büyük nesne bağlamak için kullanılan ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Benzer şekilde [BLOB_NAME](../../data/oledb/blob-name.md)dışında bu makroyu BLOB veri sütununu durumunu da alır.  
   
 #### <a name="syntax"></a>Sözdizimi  
   
@@ -637,7 +637,7 @@ END_COLUMN_MAP()
   
 #### <a name="see-also"></a>Ayrıca Bkz.  
  [CBookmark sınıfı](../../data/oledb/cbookmark-class.md)   
- [DBPROP_BOOKMARKS](https://msdn.microsoft.com/library/ms709728.aspx)
+ [DBPROP_BOOKMARKS](/previous-versions/windows/desktop/ms709728\(v=vs.85\))
 
 ### <a name="column_entry"></a> COLUMN_ENTRY
 Satır kümesi üzerindeki bir bağlamaya satır kümesindeki belirli bir sütunu temsil eder.  
@@ -649,7 +649,7 @@ COLUMN_ENTRY(nOrdinal, data)
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Sütun numarası.  
@@ -679,7 +679,7 @@ COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, stat
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Sütun numarası.  
@@ -727,7 +727,7 @@ COLUMN_ENTRY_LENGTH(nOrdinal, data, length)
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] İle başlayarak sütun numarası. Yer işareti sıfır sütununa karşılık gelir.  
@@ -757,7 +757,7 @@ COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Sütun numarası.  
@@ -790,7 +790,7 @@ COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Sütun numarası.  
@@ -823,7 +823,7 @@ COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] İle başlayarak sütun numarası. Yer işareti sıfır sütununa karşılık gelir.  
@@ -859,7 +859,7 @@ COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Sütun numarası.  
@@ -898,7 +898,7 @@ COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Sütun numarası.  
@@ -934,7 +934,7 @@ COLUMN_ENTRY_STATUS(nOrdinal, data, status)
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  *nOrdinal*  
  [in] Sütun numarası.  
@@ -1424,7 +1424,7 @@ BEGIN_PARAM_MAP(x)
  [in] Kullanıcı kayıt sınıfı adı.  
   
 #### <a name="remarks"></a>Açıklamalar  
- Tarafından kullanılan parametreleri [komutları](https://msdn.microsoft.com/library/ms724608.aspx).  
+ Tarafından kullanılan parametreleri [komutları](/previous-versions/windows/desktop/ms724608\(v=vs.85\)).  
   
 #### <a name="example"></a>Örnek  
  Örneğin bakın [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) makrosu.  
@@ -1455,7 +1455,7 @@ SET_PARAM_TYPE(type)
  [in] İçin parametre türü.  
   
 #### <a name="remarks"></a>Açıklamalar  
- Sağlayıcılar, temel alınan veri kaynağı tarafından desteklenen parametre giriş/çıkış türleri destekler. Bir veya daha fazla tür birleşimidir `DBPARAMIO` değerleri (bkz [IAccessor::CreateAccessor'ı yapıları](https://msdn.microsoft.com/library/ms716845.aspx) içinde *OLE DB Programcının Başvurusu*):  
+ Sağlayıcılar, temel alınan veri kaynağı tarafından desteklenen parametre giriş/çıkış türleri destekler. Bir veya daha fazla tür birleşimidir `DBPARAMIO` değerleri (bkz [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*):  
   
 -   `DBPARAMIO_NOTPARAM` Erişimci hiç parametre yok. Genellikle, ayarladığınız `eParamIO` şu değer satır Erişimcilerde parametreleri göz ardı edilir, kullanıcıyı şu aralıklarla uyar.  
   

@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64fffacbaebc99d3298b5463a014db1e9117cd7b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eacffcd5e66d73cd7594207f58356a4a8a0ecb47
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330758"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465558"
 ---
 # <a name="segmentlimit"></a>__segmentlimit
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Oluşturur `lsl` (yük kesimi sınırı) yönerge.  
+ Oluşturur `lsl` (yük kesimi sınırını) yönerge.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,23 +39,23 @@ unsigned long __segmentlimit(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `a`  
- Segment Seçici belirtir sabiti.  
+ Segment Seçici belirten sabit.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Belirtilen kesim Seçici kesimi sınırını `a`, koşuluyla Seçici geçerli izin düzeyinde geçerli ve görünür.  
+ Belirtilen kesim Seçici kesimi sınırını `a`, seçici geçerli izin düzeyinde geçerli ve görünür olması şartıyla.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__segmentlimit`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__segmentlimit`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kesimi sınırını alınamıyor bu yönergeyi başarısız olur. Hata durumunda, bu yönerge ZF bayrağını temizler ve dönüş değeri tanımlanmamış.  
+ Kesimi sınırını alınamaz bu yönerge başarısız olur. Hata durumunda, bu yönerge ZF bayrağını temizler ve dönüş değeri tanımsızdır.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -111,7 +111,7 @@ Success!
 sl was changed  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

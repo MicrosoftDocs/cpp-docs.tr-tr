@@ -56,21 +56,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8746666c4b1eb48e4c54822f76328579b7ce8584
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 968a8560447b0bf8f74e94f8b492e1de7192df76
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928204"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464593"
 ---
 # <a name="reflected-window-message-ids"></a>Yansımış Pencere İletisi Kimlikleri
-ActiveX denetimi veya diğer özel denetimi oluşturmak için hızlı bir şekilde bir alt kümesi için bir penceredir. Daha fazla bilgi için bkz: [MFC ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).  
+ActiveX denetimi veya başka özel denetim oluşturmak için hızlı bir şekilde alt sınıfı için bir penceredir. Daha fazla bilgi için [MFC ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).  
   
- Denetimin kapsayıcı altsınıflanmış Windows Denetim tarafından gönderilen pencere iletileri almasını önlemek için [COleControl](../mfc/reference/colecontrol-class.md) belirli pencere iletileri izlemesine ve bunları denetime geri göndermek için bir "reflector" pencere oluşturur. Alt pencere yordamı, denetimi bu yansımış iletiler işleyebilir ve bir ActiveX denetimi için uygun eylemleri gerçekleştirerek.  
+ Denetimin kapsayıcı sınıflandırılmış bir Windows Denetim tarafından gönderilen pencere iletilerini almasını önlemek için [COleControl](../mfc/reference/colecontrol-class.md) belirli pencere iletilerini kesebilir ve bunları denetime geri göndermek için bir "reflector" pencere oluşturur. Denetimi alt pencere yordamı, bir ActiveX denetimi için uygun eylemleri gerçekleştirerek bu yansımış iletiler ardından işleyebilir.  
   
- Aşağıdaki tabloda, yakalanan iletiler ve reflector penceresi gönderir karşılık gelen iletileri gösterir.  
+ Aşağıdaki tabloda, yakalanan iletiler ve reflector pencerenin gönderen karşılık gelen iletileri gösterir.  
   
-|Denetim tarafından gönderilen ileti|Denetime yansıtılan iletisi|  
+|Denetim tarafından gönderilen ileti|İleti denetimine yansıtılır|  
 |---------------------------------|--------------------------------------|  
 |[WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591)|OCM_COMMAND|  
 |[WM_CTLCOLORBTN](http://msdn.microsoft.com/library/windows/desktop/bb761849)|OCM_CTLCOLORBTN|  
@@ -87,11 +87,11 @@ ActiveX denetimi veya diğer özel denetimi oluşturmak için hızlı bir şekil
 |[WM_COMPAREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775921)|OCM_COMPAREITEM|  
 |[WM_HSCROLL](http://msdn.microsoft.com/library/windows/desktop/bb787575)|OCM_HSCROLL|  
 |[WM_VSCROLL](http://msdn.microsoft.com/library/windows/desktop/bb787577)|OCM_VSCROLL|  
-|[WM_PARENTNOTIFY](https://msdn.microsoft.com/library/ms632638.aspx)|OCM_PARENTNOTIFY|  
+|[WM_PARENTNOTIFY](/previous-versions/windows/desktop/inputmsg/wm-parentnotify)|OCM_PARENTNOTIFY|  
 |[WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)|OCM_NOTIFY|  
   
 > [!NOTE]
->  Denetim Win32 sistem üzerinde çalışıyorsa, çeşitli WM_CTLCOLOR vardır\* iletileri da alabilirsiniz. Daha fazla bilgi için bkz: WM_CTLCOLORBTN, WM_CTLCOLORDLG, WM_CTLCOLOREDIT, WM_CTLCOLORLISTBOX, WM_CTLCOLORMSGBOX, WM_CTLCOLORSCROLLBAR, WM_CTLCOLORSTATIC.  
+>  Denetim bir Win32 sistemde çalıştırıyorsa, birden fazla WM_CTLCOLOR vardır\* iletileri da alabilirsiniz. Daha fazla bilgi için bkz: WM_CTLCOLORBTN, WM_CTLCOLORDLG, WM_CTLCOLOREDIT, WM_CTLCOLORLISTBOX, WM_CTLCOLORMSGBOX, WM_CTLCOLORSCROLLBAR, WM_CTLCOLORSTATIC.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)   

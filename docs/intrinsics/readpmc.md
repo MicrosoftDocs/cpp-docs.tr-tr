@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73d98db19be60bd038965763a24b83ddd0016c9f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d5072f49728a4ea9b7a323d3837997dd3d767358
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333797"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465735"
 ---
 # <a name="readpmc"></a>__readpmc
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Oluşturur `rdpmc` performans sayacı tarafından belirtilen izleme okur yönerge `counter`.  
   
@@ -40,7 +40,7 @@ unsigned __int64 __readpmc(
   
 #### <a name="parameters"></a>Parametreler  
  [in] `counter`  
- Okumak için performans sayacı.  
+ Okunacak performans sayacı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Belirtilen performans sayacı değeri.  
@@ -49,14 +49,14 @@ unsigned __int64 __readpmc(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__readpmc`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readpmc`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç kullanılabilir.  
+ Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

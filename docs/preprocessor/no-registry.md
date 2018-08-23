@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 416663592f4362c110637fb4d4b4b418d9776cde
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 105c2b0ee4d2648a1cc43d0baca9f30146184e78
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849671"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42466054"
 ---
 # <a name="noregistry"></a>no_registry
-`no_registry` Tür kitaplıkları ile içeri aktarılan kayıt defteri aramak için değil derleyici söyler `#import`.  
+**no_registry** derleyiciye tür kitaplıklarını içeri için kayıt defterini aranmayacak `#import`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #import filename no_registry  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- *Dosya adı*  
- Tür kitaplığı.  
+### <a name="parameters"></a>Parametreler  
+*Dosya adı*  
+Bir tür kitaplığı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Başvurulan tür kitaplığını INCLUDE dizinlerde bulunmazsa, kayıt defterinde tür kitaplığı olsa bile, derleme başarısız olur.  `no_registry` ile örtük olarak alınan diğer tür kitaplıklarına yayar `auto_search`.  
+ 
+Başvurulan tür kitaplığının dizinleri bulunmazsa, tür kitaplığının kayıt defterinde olsa bile, derleme başarısız olur.  **no_registry** için örtük olarak içeri diğer tür kitaplıklarında yayar `auto_search`.  
   
- Derleyici hiçbir zaman dosya adıyla belirtilen ve doğrudan geçirilen tür kitaplıkları için kayıt defterini arayacaktır `#import`.  
+Derleyici, hiçbir zaman doğrudan geçirilen ve dosya adıyla belirtilen tür kitaplıkları için kayıt defterini arar `#import`.  
   
- Zaman `auto_search` belirtilirse, ek `#import`s ile oluşturulmayacak `no_registry` ilk harfini ayarı `#import` (durumunda ilk `#import` yönergesi edildi `no_registry`, bir `auto_search`- oluşturulan`#import`de `no_registry`.)  
+Zaman `auto_search` belirtilirse, ek `#import`s ile oluşturulacak **no_registry** ilk harfini ayarlama `#import` (durumunda ilk `#import` yönergesi olduğu **no_registry** e `auto_search`-oluşturulan `#import` de **no_registry**.)  
   
- `no_registry` Kayıt defterinde dosyanın daha eski bir sürümü bulma derleyici riski olmadan çapraz başvurulan tür kitaplıklarının almak istiyorsanız kullanışlıdır.  `no_registry` Ayrıca tür kitaplığı kayıtlı değilse faydalı olur.  
+**no_registry** çapraz başvurulan tür kitaplıkları dosyanın daha eski bir sürümünü kayıt defterinde bulma derleyici riski olmadan içeri aktarmak istediğiniz durumlarda kullanışlıdır. **no_registry** tür kitaplığı kayıtlı değil de kullanışlıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

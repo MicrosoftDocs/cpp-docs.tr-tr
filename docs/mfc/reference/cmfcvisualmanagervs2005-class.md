@@ -48,15 +48,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7282730779360ecc0bb93f0ae827b46ddff19d0
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: e3ce4384ebce3140f8d3ccadf781f3d45b92340b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37038067"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466058"
 ---
 # <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 sınıfı
-`CMFCVisualManagerVS2005` bir uygulama Microsoft Visual Studio 2005 çalışmasıdır.  
+`CMFCVisualManagerVS2005` Uygulamaya Microsoft Visual Studio 2005 görünümü verir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -70,11 +70,11 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCVisualManagerVS2005::GetDockingTabsBordersSize](#getdockingtabsborderssize)|Yerleşik ve sekmeli bölme çizer zaman çerçevesi bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::GetDockingTabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getdockingtabsborderssize).)|  
-|[CMFCVisualManagerVS2005::GetMDITabsBordersSize](#getmditabsborderssize)|Çerçeve penceresi çizer önce MDITabs penceresinin kenarlık boyutunu belirlemek için bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize).)|  
+|[CMFCVisualManagerVS2005::GetDockingTabsBordersSize](#getdockingtabsborderssize)|Yerleşik ve sekmeli bölme çizdiğinde framework bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::GetDockingTabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getdockingtabsborderssize).)|  
+|[CMFCVisualManagerVS2005::GetMDITabsBordersSize](#getmditabsborderssize)|Çerçeve penceresi çizer önce MDITabs pencerenin kenarlık boyutunu belirlemek için bu yöntemi çağırır. (Geçersiz kılmaları [CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize).)|  
 |[CMFCVisualManagerVS2005::GetPropertyGridGroupColor](#getpropertygridgroupcolor)|(Geçersiz kılmaları [CMFCVisualManagerOffice2003::GetPropertyGridGroupColor](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#getpropertygridgroupcolor).)|  
 |[CMFCVisualManagerVS2005::GetTabFrameColors](#gettabframecolors)|(Geçersiz kılmaları [CMFCVisualManagerOffice2003::GetTabFrameColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#gettabframecolors).)|  
-|[CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons](#hasoverlappedautohidebuttons)|Otomatik olarak gizle düğmeleri geçerli visual Yöneticisi'nde geçersiz kılıp kılmadığını döndürür. (Geçersiz kılmaları [CMFCVisualManager::HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#hasoverlappedautohidebuttons).)|  
+|[CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons](#hasoverlappedautohidebuttons)|Otomatik gizleme düğmeler geçerli visual Yöneticisi'nde geçersiz kılıp kılmadığını döndürür. (Geçersiz kılmaları [CMFCVisualManager::HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#hasoverlappedautohidebuttons).)|  
 |[CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder](#ondrawautohidebuttonborder)|(Geçersiz kılmaları [CMFCVisualManagerOffice2003::OnDrawAutoHideButtonBorder](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawautohidebuttonborder).)|  
 |[CMFCVisualManagerVS2005::OnDrawCaptionButton](#ondrawcaptionbutton)|(Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`.)|  
 |[CMFCVisualManagerVS2005::OnDrawPaneCaption](#ondrawpanecaption)|(Geçersiz kılmaları [CMFCVisualManagerOffice2003::OnDrawPaneCaption](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawpanecaption).)|  
@@ -88,12 +88,12 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerVS2005::OnUpdateSystemColors](#onupdatesystemcolors)|(Geçersiz kılmaları [CMFCVisualManagerOffice2003::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onupdatesystemcolors).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- CMFCVisualManagerVS2005 sınıfı, benzeyecek şekilde uygulamanızı görsel görünümünü değiştirmek için kullandığınız [!INCLUDE[vsprvsext](../../mfc/reference/includes/vsprvsext_md.md)].  
+ CMFCVisualManagerVS2005 sınıfı, Microsoft Visual Studio 2005 benzeyecek şekilde uygulamanızı görsel görünümünü değiştirmek için kullanın.  
   
- Bu sınıf üyeleri bu sınıfın üst türetilen sanal işlevler tümü [CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md).  
+ Bu sınıfın üst türetilmiştir sanal işlevler Bu sınıf üyelerinin tümü [CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek visual Yöneticisi VS 2005 kullanımı gösterilmiştir. Bu kod parçacığını parçası olan [Masaüstü uyarı demosu örnek](../../visual-cpp-samples.md).  
+ Aşağıdaki örnekte, VS 2005 visual manager'nin nasıl kullanılacağını gösterir. Bu kod parçacığı parçasıdır [Masaüstü uyarı gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#9](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagervs2005-class_1.cpp)]  
   
@@ -270,7 +270,7 @@ virtual void OnDrawSeparator(
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
  [in] *pBar*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *bIsHoriz*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -307,7 +307,7 @@ virtual void OnDrawToolBoxFrame(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -323,7 +323,7 @@ virtual void OnEraseTabsArea(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pTabWnd*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -340,7 +340,7 @@ virtual void OnFillAutoHideButtonBackground(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -358,7 +358,7 @@ virtual void OnFillHighlightedArea(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *pDC*  
- [in] *rect*  
+ [in] *dikdörtgen*  
  [in] *pBrush*  
  [in] *pButton*  
   

@@ -16,15 +16,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7fedb77b6ede8d9fa843e7e7cdd344e03efecede
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 50f428fa16fee8e1ea545953598fd3f27578310c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337904"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42465370"
 ---
 # <a name="setting-properties-in-your-provider"></a>Sağlayıcınızdaki Özellikleri Ayarlama
-Özellik kimliği ve özellik grubu istediğiniz özelliği bulun. Daha fazla bilgi için [OLE DB özellikleri](https://msdn.microsoft.com/library/ms722734.aspx) içinde *OLE DB Programcının Başvurusu*.  
+Özellik kimliği ve özellik grubu istediğiniz özelliği bulun. Daha fazla bilgi için [OLE DB özellikleri](/previous-versions/windows/desktop/ms722734\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
  Sihirbaz tarafından oluşturulan sağlayıcısı, özellik grubuna karşılık gelen özellik eşlemesi bulun. Özellik grubu adını, genellikle nesnenin adına karşılık gelir. Komut ve satır kümesi özellikleri, komut veya satır kümesi bulunabilir. veri kaynağı ve başlatma özellikleri veri kaynağı nesnesi içinde bulunabilir.  
   
@@ -32,7 +32,7 @@ ms.locfileid: "39337904"
   
 -   Özelliğine karşılık gelen özellik kimliği. Özellik adı önünden önce yedi karakterini ("DBPROP_") kaldırmanız gerekir. Örneğin, eklemek istediğiniz `DBPROP_MAXROWS`, geçmesi `MAXROWS` ilk öğesi olarak. Özel bir özellik varsa, GUID tam adını geçirin (örneğin, `DBMYPROP_MYPROPERTY`).  
   
--   Değişken türü özelliğinin (içinde [OLE DB özellikleri](https://msdn.microsoft.com/library/ms722734.aspx) içinde *OLE DB Programcının Başvurusu*). VT_ türlerinin (örneğin, VT_BOOL veya VT_I2) veri türüne ilişkin girin.  
+-   Değişken türü özelliğinin (içinde [OLE DB özellikleri](/previous-versions/windows/desktop/ms722734\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*). VT_ türlerinin (örneğin, VT_BOOL veya VT_I2) veri türüne ilişkin girin.  
   
 -   Özelliği okunabilir ve yazılabilir olup olmadığı ve ait olduğu grubu belirtmek için bayrakları. Örneğin, aşağıdaki kod satır grubuna ait bir okuma/yazma özelliği gösterir:  
   

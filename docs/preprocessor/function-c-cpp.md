@@ -18,31 +18,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e24dac191e05cc3b47192cb6ec7fb0fc48dd447
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 76ab5b2911d349c62ff18967e7a660cdc3589ddd
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849489"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464543"
 ---
 # <a name="function-cc"></a>function (C/C++)
-Pragma ait bağımsız değişken listesinde belirtilen işlevler çağrıları oluşturulabilir belirtir.  
+Pragmanın bağımsız değişken listesinde belirtilen işlevlere çağrıları oluşturulacağını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma function( function1 [, function2, ...] )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanırsanız **iç** pragma (veya /Oi) iç işlevler (işlev çağrılarını olarak değil, satır içi kod olarak iç işlevler oluşturulur) oluşturmak için derleyici bildirmek için kullanabileceğiniz **işlevi** pragması bir işlev çağrısı açıkça zorlamak için. İşlev pragması görülen sonra belirtilen bir iç işlevi içeren ilk işlev tanımı etkili olur. Kaynak dosyanın sonuna veya görünümünü etkisi devam bir **iç** pragma aynı iç işlevi belirtme. **İşlevi** pragma yalnızca bir işlevi dışında kullanılabilir — genel düzeyde.  
+
+Kullanırsanız `intrinsic` pragması (veya /Oi) derleyici iç işlevleri (işlev çağrıları olarak değil, satır içi kod olarak iç işlevleri oluşturulur) bildirmek için kullanabileceğiniz **işlevi** açıkça pragma bir işlev çağrısı. Bir kez bir işlev pragma görüldüğünde, belirtilen bir iç işlevi içeren ilk fonksiyon tanımında etkili olur. Kaynak dosyanın sonuna veya görünümünü etkisi devam bir `intrinsic` aynı iç işlevi belirten pragması. **İşlevi** pragması, yalnızca bir işlev dışında kullanılabilir — genel düzeyde.  
   
- İç formları işlevleri bir listesi için bkz: [#pragma iç](../preprocessor/intrinsic.md).  
+İç biçimlere sahip işlevlerin bir listesi için bkz. [#pragma iç](../preprocessor/intrinsic.md).  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // pragma_directive_function.cpp  
 #include <ctype.h>  
 #include <stdio.h>  
@@ -92,5 +92,6 @@ str is 'Now************'
 str is '!!!!!!!!!!!!!!!'  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

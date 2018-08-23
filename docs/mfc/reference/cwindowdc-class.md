@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b757da27f2b4ae79a0192df0598f833b3d1e7b9
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: b692d974b5397d73f7e328330f71d8f9688be3e2
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121548"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464787"
 ---
 # <a name="cwindowdc-class"></a>CWindowDC sınıfı
 Türetilmiş `CDC`.  
@@ -42,7 +42,7 @@ class CWindowDC : public CDC
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CWindowDC::CWindowDC](#cwindowdc)|Oluşturan bir `CWindowDC` nesnesi.|  
+|[CWindowDC::CWindowDC](#cwindowdc)|Oluşturur bir `CWindowDC` nesne.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
@@ -51,7 +51,7 @@ class CWindowDC : public CDC
 |[CWindowDC::m_hWnd](#m_hwnd)|Bu HWND `CWindowDC` eklenir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Windows işlev çağrılarını [GetWindowDC](http://msdn.microsoft.com/library/windows/desktop/dd144947\(v=vs.85\).aspx)oluşturma zamanında ve [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920\(v=vs.85\).aspx) yok etme zaman. Bunun anlamı bir `CWindowDC` nesne erişen tüm ekran alanını bir [CWnd](../../mfc/reference/cwnd-class.md) (hem istemci hem de nonclient alanlar).  
+ Windows işlevini çağıran [GetWindowDC](/windows/desktop/api/winuser/nf-winuser-getwindowdc)oluşturma zamanında ve [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) yok etme. Diğer bir deyişle bir `CWindowDC` nesne tüm ekran alanına eriştiği bir [CWnd](../../mfc/reference/cwnd-class.md) (hem istemci hem de istemci dışı alanlar).  
   
  Kullanma hakkında daha fazla bilgi için `CWindowDC`, bkz: [cihaz bağlamları](../../mfc/device-contexts.md).  
   
@@ -63,10 +63,10 @@ class CWindowDC : public CDC
  `CWindowDC`  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: afxwin.h  
+ Üstbilgi: afxwin.h  
   
 ##  <a name="cwindowdc"></a>  CWindowDC::CWindowDC  
- Oluşturan bir `CWindowDC` (hem istemci hem de nonclient) tüm ekran alanını erişen nesne `CWnd` tarafından için nesne işaret *pWnd*.  
+ Oluşturur bir `CWindowDC` erişen tüm ekran alanına (hem istemci hem de istemci olmayan) nesne `CWnd` nesne tarafından işaret edilen *pWnd*.  
   
 ```  
 explicit CWindowDC(CWnd* pWnd);
@@ -74,18 +74,18 @@ explicit CWindowDC(CWnd* pWnd);
   
 ### <a name="parameters"></a>Parametreler  
  *pWnd*  
- Pencere istemci alanını cihaz bağlamı nesne erişim sağlar.  
+ Penceresinin istemci alanını cihaz bağlamındaki nesne erişim sağlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturucu Windows işlevini çağırır [GetWindowDC](http://msdn.microsoft.com/library/windows/desktop/dd144947).  
+ Windows işlevi oluşturucuyu çağırır [GetWindowDC](http://msdn.microsoft.com/library/windows/desktop/dd144947).  
   
- Bir özel durum (tür `CResourceException`), oluşturulan Windows `GetWindowDC` çağrısı başarısız. Windows zaten tüm kullanılabilir cihaz bağlamları ayrılmış sahip değilse, bir cihaz bağlamı kullanılamayabilir. Görüntü bağlamları beş ortak herhangi bir zamanda Windows altında bulunabilir için uygulamanızı rekabet.  
+ Bir özel durum (tür `CResourceException`) oluşturulur Windows `GetWindowDC` çağrısı başarısız olur. Bir cihaz bağlamı Windows zaten tüm kendi kullanılabilir cihaz bağlamları ayırdığı kullanılabilir olmayabilir. Uygulamanız için beş ortak görüntü bağlamlarında kullanılabilir Windows altında herhangi bir belirli zamanda rekabet.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#188](../../mfc/codesnippet/cpp/cwindowdc-class_1.cpp)]  
   
 ##  <a name="m_hwnd"></a>  CWindowDC::m_hWnd  
- HWND, `CWnd` işaretçi oluşturmak için kullanılan `CWindowDC` nesnesi.  
+ HWND, `CWnd` işaretçi oluşturmak için kullanılan `CWindowDC` nesne.  
   
 ```  
 HWND m_hWnd;  
@@ -95,7 +95,7 @@ HWND m_hWnd;
  `m_hWnd` HWND türündeki korumalı bir değişkendir.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [CWindowDC::CWindowDC](#cwindowdc).  
+  Örneğin bakın [CWindowDC::CWindowDC](#cwindowdc).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDC sınıfı](../../mfc/reference/cdc-class.md)   

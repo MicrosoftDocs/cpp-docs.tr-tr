@@ -14,17 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d612cca5d0c95b411f5278fe92404166d26b53b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 95eed7834e46f6a42a363e8a8f8134945beb54fc
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342065"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464597"
 ---
 # <a name="deprecated-ansi-apis"></a>Kullanım Dışı ANSI API'ları
-Microsoft Foundation Class (MFC) kitaplığı, sınıflar ve Unicode karakter kümesine bağlı yöntemler doğru geçiriyor. Sonuç olarak, çeşitli MFC yöntemler ANSI sürümlerini kullanım dışı bırakılmıştır. Bu yöntemler Unicode sürümleri gelecekteki uygulamalarınızda kullanır.  
+Microsoft Foundation Class (MFC) kitaplığı, sınıflar ve Unicode karakter kümesini alarak yöntemler doğru geçiriliyor. Sonuç olarak, çeşitli MFC yöntemler ANSI sürümleri kullanım dışı bırakılmıştır. Bu yöntemlerin Unicode sürümleri gelecek uygulamalarınızda kullanın.  
   
- Windows ortak denetimleri sürüm 6.1, içinde gelir başlayarak [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)], aşağıdaki ANSI yöntemleri kullanım dışı bırakılmıştır.  
+ Windows Vista ile birlikte gelen Windows ortak denetimleri sürüm 6.1, aşağıdaki yöntemlerden ANSI kullanım dışı bırakılmıştır.  
   
 ## <a name="cbutton-class"></a>CButton sınıfı  
   
@@ -61,7 +61,7 @@ AFX_ANSI_DEPRECATED BOOL SetCueBanner(LPCWSTR lpszText,
 ```  
   
 ## <a name="clinkctrl-class"></a>CLinkCtrl sınıfı  
- Tüm sınıf kullanım dışıdır.  
+ Sınıfın tamamı kullanım dışı bırakılmıştır.  
   
 ## <a name="clistctrl-class"></a>CListCtrl sınıfı  
   

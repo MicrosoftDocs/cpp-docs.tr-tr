@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7269301fed3892fbf4b7cf6427bacb82d9712ef7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2ce21958dbb928a29debe21fb7cfaed4b9036141
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849395"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465420"
 ---
 # <a name="highpropertyprefixes"></a>high_property_prefixes
-**C++ özel**  
+**C++ özgü**  
   
- Diğer özellik yöntemi için alternatif önekler belirtir.  
+Diğer özellik yöntemi için alternatif önekler belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,21 +34,23 @@ ms.locfileid: "33849395"
 high_property_prefixes("GetPrefix","PutPrefix","PutRefPrefix")  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- `GetPrefix`  
- Kullanılacak önek **propget** yöntemleri.  
+### <a name="parameters"></a>Parametreler  
+*GetPrefix*  
+İçin kullanılacak önek `propget` yöntemleri.  
   
- `PutPrefix`  
- Kullanılacak önek **propput** yöntemleri.  
+*PutPrefix*  
+İçin kullanılacak önek `propput` yöntemleri.  
   
- `PutRefPrefix`  
- Kullanılacak önek **propputref** yöntemleri.  
+*PutRefPrefix*  
+İçin kullanılacak önek `propputref` yöntemleri.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, üst düzey hata işleme **propget**, **propput**, ve **propputref** yöntemleri öneklerle adlı üye işlevleri tarafından açığa **Al** , `Put`, ve **PutRef**sırasıyla.  
+ 
+Varsayılan olarak, üst düzey hata işleme `propget`, `propput`, ve `propputref` yöntemleri önekleriyle adlandırılan üye işlevleri tarafından sunulur `Get`, `Put`, ve `PutRef`sırasıyla.  
   
- **Son C++ özel**  
+**END C++ özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -18,62 +18,63 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c29c31cae2b7de59d4db5ed6546ad4eda6baecf
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 39d19749f44645d30d9a3826758f54737d3e68af
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843632"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42464467"
 ---
 # <a name="pack"></a>pack
-Yapısı, union ve sınıf üyeleri için paket hizalamasını belirtir.  
+Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
 #pragma pack( [ show ] | [ push | pop ] [, identifier ] , n  )  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir sınıf paketlemek için üyeleri doğrudan diğer bazı veya tüm üyeleri varsayılan hizalama hedef mimari küçük bir sınırında hizalanabilir anlamına gelebilir bellekte sonra yerleştirmektir. `pack` veri bildirimi düzeyinde denetim sağlar. Bu derleyici seçeneği farklıdır [/Zp](../build/reference/zp-struct-member-alignment.md), hangi yalnızca modülü düzey denetim sağlar. `pack` ilk başta etkisi alır `struct`, `union`, veya `class` pragma görülen sonra bildirimi. `pack` tanımları üzerinde hiçbir etkisi yoktur. Çağırma `pack` hiçbir bağımsız değişkenleri kümeleriyle `n` derleyici seçeneğinde ayarlı değerine **/Zp**. Derleyici seçeneği ayarlanmazsa, varsayılan değer 8'dir.  
+
+Bir sınıf paketlenecek üyelerini doğrudan diğer bazı veya tüm üyeleri varsayılan hizalama hedef mimari daha küçük bir sınır üzerinde hizalanabilir gelebilir bellekte sonra yerleştirmektir. **Paketi** veri bildirimi düzeyinde denetim sağlar. Bu derleyici seçeneğini farklıdır [/ZP](../build/reference/zp-struct-member-alignment.md), modül düzeyi denetimi yalnızca sağlar. **Paketi** etkinleşir ilk **yapı**, **birleşim**, veya **sınıfı** pragma görüldüğünde sonra bildirimi. **Paketi** tanımları üzerinde hiçbir etkisi olmaz. Çağırma **paketi** hiçbir bağımsız değişken kümeleriyle *n* derleyici seçeneğini ayarlamak değerine `/Zp`. Derleyici seçeneği ayarlanmamışsa varsayılan değer 8'dir.  
   
- Bir yapı hizalama değiştirirseniz, bellek, ancak kadar alan performans düşüklüğü bakın veya donanım tarafından oluşturulan bir özel durum hizalanmamış erişim için bile almak olarak kullanamazsınız.  Kullanarak bu özel durum davranışını değiştirebilirsiniz [SetErrorMode](http://msdn.microsoft.com/library/windows/desktop/ms680621).  
+Bir yapının hizalanması değiştirirseniz, bellek, ancak kadar alan performans bakın veya donanım tarafından oluşturulan bir özel durum hizalanmamış erişim için bile almak kullanamazsınız.  Bu özel durum davranışını kullanarak değiştirebileceğiniz [SetErrorMode](http://msdn.microsoft.com/library/windows/desktop/ms680621).  
   
- **Göster** (isteğe bağlı)  
- Hizalama sevk geçerli bayt değeri görüntüler. Değer, bir uyarı iletisi görüntülenir.  
+*Göster* (isteğe bağlı)  
+Hizalama sevk geçerli bayt değeri görüntüler. Değer, bir uyarı iletisi görüntülenir.  
   
- **anında iletme** (isteğe bağlı)  
- Geçerli paket hizalama iter değer iç derleyici yığını ve geçerli paket hizalama değerini için ayarlar `n`. Varsa `n` belirtilmezse, geçerli hizalama değeri sevk gönderilir.  
+*anında iletme* (isteğe bağlı)  
+Bildirim geçerli paketleme hizalama değeri iç derleyici yığınındaki ve geçerli paketleme hizalama değeri için kümeleri *n*. Varsa *n* belirtilmezse, geçerli hizalama değeri paketleme gönderildi.  
   
- **POP** (isteğe bağlı)  
- Derleyici iç yığını üstten kaydını kaldırır. Varsa `n` ile belirtilmemiş **pop**, sonuçta elde edilen kayıt yığının üst kısmında ilişkili paketleme değer yeni ise hizalama değeri paket. Varsa `n` , örneğin, belirtilen `#pragma pack(pop, 16)`, `n` yeni hale hizalama değeri paket. İle pop varsa `identifier`, örneğin, `#pragma pack(pop, r1)`, tüm kayıtları yığında olan kaydını kadar Sil'i sonra `identifier` bulunur. Kayıt Sil'i ve sonuç kaydının üzerinde üst ile ilişkili paketleme yeni paket yığını değerdir hizalama değeri. İle pop varsa bir `identifier` bulunmayan yığında herhangi bir kayıttaki sonra **pop** göz ardı edilir.  
+*POP* (isteğe bağlı)  
+Kayıt, derleyici iç yığının üst kısmından kaldırır. Varsa *n* ile belirtilmemiş *pop*, yığının en üstündeki sonuç kaydıyla ilişkili paketleme değer yeni ise hizalama değeri paketleme. Varsa *n* , örneğin, belirtilen `#pragma pack(pop, 16)`, *n* yeni olur paketleme hizalama değeri. İle pop, *tanımlayıcı*, örneğin, `#pragma pack(pop, r1)`, yığında tüm kayıtları sahip kaydının kadar POP sonra *tanımlayıcı* bulunur. Kaydı silinmez ve yeni paketleme yığını üzerindeki bir sonuç kaydıyla ilişkili paket değeri olduğunu hizalama değeri. İle pop varsa bir *tanımlayıcı* bulunmayan yığını üzerinde herhangi bir kayıttaki sonra *pop* göz ardı edilir.  
   
- `identifier` (isteğe bağlı)  
- İle kullanıldığında **itme**, iç derleyici yığında kaydı bir adı atar. İle kullanıldığında **pop**, POP kadar iç yığından kayıtları `identifier` ; kaldırılır `identifier` bulunamadı iç yığında bir şey Sil'i.  
+*tanımlayıcı* (isteğe bağlı)  
+İle kullanıldığında *anında iletme*, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında *pop*, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
   
- `n` (isteğe bağlı)  
- Değer paketleme için kullanılacak bayt cinsinden belirtir. Varsa derleyici seçeneği [/Zp](../build/reference/zp-struct-member-alignment.md) modül için varsayılan değeri ayarlı değil `n` 8'dir. Geçerli değerler 1, 2, 4, 8 ve 16 ' dir. Üye hizalamasını olduğunu veya bir sınır birden fazla olacaktır `n` veya daha çok üye boyutunun hangisi daha küçüktür.  
+*n* (isteğe bağlı)  
+Bayt cinsinden paketleme için kullanılacak değeri belirtir. Varsa derleyici seçeneği [/ZP](../build/reference/zp-struct-member-alignment.md) modülü için varsayılan değer ayarlanmadı *n* 8'dir. Geçerli değerler 1, 2, 4, 8 ve 16:. Bir üyenin hizalaması olduğunu veya bir sınır üzerinde katlarından biri olacak *n* veya üye boyutunun bir katı hangisi daha küçükse.  
   
- `#pragma pack(pop, identifier, n)` tanımlı değil.  
+`#pragma pack(pop, identifier, n)` tanımlı değil.  
   
- Hizalama değiştirme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
+Hizalama değiştirme hakkında daha fazla bilgi için şu konulara bakın:  
   
--   [__alignof](../cpp/alignof-operator.md)  
+- [__alignof](../cpp/alignof-operator.md)  
   
--   [align](../cpp/align-cpp.md)  
+- [align](../cpp/align-cpp.md)  
   
--   [__unaligned](../cpp/unaligned.md)  
+- [__unaligned](../cpp/unaligned.md)  
   
--   [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md) (x64 belirli)  
+- [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md) (x64 belirli)  
   
     > [!WARNING]
-    >  Visual Studio 2015 ve sonraki alignof işleçler ve standart alignas kullanabileceğinizi unutmayın, öğesinden farklı olarak `__alignof` ve `declspec( align )` arasında derleyicileri taşınabilen. Hala kullanmalısınız C++ Standart paketleme, adresi değil `pack` (veya diğer derleyiciler üzerinde karşılık gelen uzantısı) hizalamaları hedef mimari 's word boyutundan daha küçük belirtmek için.  
+    > Visual Studio 2015 ve sonraki işleçleri alignof ve alignas standart kullanabileceğinizi unutmayın, aksine `__alignof` ve `declspec( align )` derleyiciler arasında taşınabilen. Yine de kullanmalısınız C++ Standart paketleme, adres değil **paketi** (veya diğer derleyiciler karşılık gelen uzantının) hedef mimarisinin word boyuttan küçük hizalamaları belirtmek için.  
   
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek nasıl kullanılacağını gösterir `pack` pragma bir yapı hizalamasını değiştirme.  
+## <a name="examples"></a>Örnekler
+
+Aşağıdaki örnek nasıl kullanılacağını gösterir **paketi** pragması, bir yapının hizalanması değiştirmek için.  
   
-```  
+```cpp  
 // pragma_directives_pack.cpp  
 #include <stddef.h>  
 #include <stdio.h>  
@@ -102,15 +103,14 @@ int main() {
 }  
 ```  
   
-```  
+```Output  
 0 4 8  
 0 4 6  
 ```  
   
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek nasıl kullanılacağını gösterir **itme**, **pop**, ve **Göster** sözdizimi.  
+Aşağıdaki örnek nasıl kullanılacağını gösterir *anında iletme*, *pop*, ve *Göster* söz dizimi.  
   
-```  
+```cpp  
 // pragma_directives_pack_2.cpp  
 // compile with: /W1 /c  
 #pragma pack()   // n defaults to 8; equivalent to /Zp8  
@@ -124,4 +124,5 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

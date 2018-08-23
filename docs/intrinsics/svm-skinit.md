@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95e47608b7ec58e433d9be5e2f2178a825b6be2e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d0912b7a1ff41bf7a21da198268dbd4b8dc920a9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338110"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466182"
 ---
 # <a name="svmskinit"></a>__svm_skinit
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bir sanal makine izleme gibi doğrulanabilir şekilde güvenli yazılım yüklemesini başlatır.  
+ Bir sanal makine İzleyici gibi doğrulanabilir şekilde güvenli yazılım yüklemesini başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,24 +41,24 @@ void __svm_skinit(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|`SLB`|Bir 64K bayt 32-bit fiziksel adresini güvenli yükleyicisi blok (SLB).|  
+|`SLB`|Bir 64K bayt 32-bit fiziksel adresiyle yükleyici blok (SLB).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__svm_skinit` İşlevi eşdeğerdir `SKINIT` makine yönergesi. Bu işleve doğrulayın ve güvenlik çekirdek (SK) adı verilen güvenilir yazılım yüklemek için işlemci ve Güvenilir Platform Modülü (TPM) kullanan bir güvenlik sistemi bir parçasıdır. Bir sanal makine izleme, güvenlik çekirdek örneğidir. Güvenlik sistemi program bileşenleri başlatma işlemi sırasında yüklenen ve bir çok işlemcili bilgisayarsa kesmeleri, cihaz erişimi veya başka bir program tarafından müdahale etmesini bileşenleri korur doğrular.  
+ `__svm_skinit` İşlev, eşdeğer `SKINIT` makine yönergesi. Bu işlev, doğrulama ve güvenlik çekirdek (SK) adlı güvenilir yazılımları yüklemek için işlemci ve Güvenilir Platform Modülü (TPM) kullanan bir güvenlik sistemi bir parçasıdır. Bir sanal makine izleme, güvenlik çekirdek örneğidir. Güvenlik sistemi program bileşenleri başlatma sırasında yüklenen ve bileşenleri çok işlemcili bilgisayar ise kesme, cihaz erişim veya başka bir program tarafından izinsiz kullanıma karşı korur doğrular.  
   
- `SLB` Parametresi olarak adlandırılan bellek 64K bloğunu fiziksel adresini belirtir *güvenli yükleyicisi blok* (SLB). SLB bilgisayarı işletim ortamını oluşturan ve daha sonra güvenlik çekirdek yükler güvenli yükleyicisi adlı bir programı içerir.  
+ `SLB` Parametresi, bir 64K olarak adlandırılan bellek bloğu fiziksel adresini belirtir *güvenli yükleyici blok* (SLB). SLB bilgisayarın işletim sistemi ortamında oluşturur ve daha sonra güvenlik çekirdek yükler güvenli yükleyici adlı bir programı içerir.  
   
- Bu işlev bir ana bilgisayarın sanal makine İzleyici etkileşiminin bir konuk işletim sistemi ve uygulamaları destekler. Daha fazla bilgi için belge için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
+ Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__svm_skinit`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_skinit`|x86, x64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

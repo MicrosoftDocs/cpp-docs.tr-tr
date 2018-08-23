@@ -16,47 +16,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f5645270cbc8fbb71dd841cb4f1affa6bef1295
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 56fc61fa7dd7973a6ee1cc4c5a20311bf43b056f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390697"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466289"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
-C/C++ uygulama yükleme başarısız olabilir bağımlı kitaplıkları bulunamazsa. Bu makalede bir C/C++ uygulaması neden başarısız yüklemek için bazı genel nedenleri ve sorunlarını gidermeye yönelik adımlar önerir.  
+C/C++ uygulamasına yükleme başarısız olabilir bağımlı kitaplıkları bulunamazsa. Bu makalede, C/C++ uygulamasına neden başarısız yüklemek için bazı yaygın nedenleri açıklanır ve sorunları gidermek için adımları önerir.  
   
- Yan yana derleme üzerinde bir bağımlılık belirten bir bildirim içerdiğinden yüklemek bir uygulama başarısız olursa ve derleme yürütülebilir dosya ile aynı klasörde %WINDIR%\WinSxS\ klasöründeki yerel Derleme Önbelleği'ndeki ya da özel bir derleme olarak yüklü değil , aşağıdaki hata iletilerinden birini görüntülenebilir, üzerinde aşağıdakileri uygulamayı çalıştırmak Windows sürümüne bağlı olarak.  
+ Bir uygulamanın yüklenmemesi bir yan yana derlemeye bağımlılık belirten bir bildirimi sahip olduğundan ve derleme yürütülebilir dosya ile aynı klasörde %WINDIR%\WinSxS\ klasöründeki yerel derleme önbelleğindeki ya da özel bir derleme olarak yüklü değil , aşağıdaki hata iletilerinden birini görüntülenebilir, üzerinde aşağıdakileri uygulamayı çalıştırmak Windows sürümüne bağlı olarak.  
   
--   Uygulama doğru şekilde başlatılamadı (0xc0000135).  
+-   Uygulama düzgün şekilde başlatılamadı (0xc0000135).  
   
--   Bu uygulama, uygulama yapılandırması hatalı olduğu için başlatmak başarısız oldu. Uygulamayı yeniden yüklemeyi bu sorunu çözebilir.  
+-   Bu uygulama, uygulama yapılandırması yanlış olduğundan dolayı başarısız oldu. Uygulamayı tekrar yüklemek bu sorunu çözebilir.  
   
--   Sistem belirtilen programı çalıştıramıyor.  
+-   Sistem, belirtilen program yürütülemiyor.  
   
- Uygulamanızı hiçbir bildirim varsa ve Windows tipik arama konumlarda bulamıyor DLL bağlıdır, buna benzer bir hata iletisi görüntülenebilir:  
+ Buna benzer bir hata iletisi görüntülenebilir, uygulamanızı hiçbir bildirim varsa, ve Windows tipik arama konumlarda bulunamıyor bir DLL bağlıdır:  
   
--   Bu uygulama başarısız oldu *gerekli bir DLL* bulunamadı. Uygulamanın yeniden yüklenmesi, bu sorunu çözebilir.  
+-   Bu uygulama başlatılamadı çünkü başaramadı *gerekli bir DLL* bulunamadı. Uygulamanın yeniden yüklenmesi bu sorunu çözebilir.  
   
- Uygulamanızı Visual Studio sahip olmayan bir bilgisayarda dağıtılır ve öncekinin benzer hata iletileri ile çöküyor bunlardan kontrol edin:  
+ Uygulamanızı Visual Studio'su olmayan bir bilgisayarda dağıtılır ve öncekinin benzer hata iletileri ile çöküyor, bunları denetleyin:  
   
-1.  Açıklanan adımları [bir Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). Bağımlılık bekçisi bir uygulama veya DLL çoğu bağımlılıkları gösterebilirsiniz. Bazı DLL'lerin eksik gözlemlerseniz, bunları uygulamanızı çalıştırmaya çalıştığınız bilgisayara yükleyin.  
+1.  Açıklanan adımları [Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). Bir uygulama veya DLL için çoğu bağımlılıkları bağımlılık Denetçisi'ni gösterebilirsiniz. Bazı DLL'lerin eksik olduğunu gözlemlerseniz, uygulamanızı çalıştırmak çalıştığınız bilgisayarda yükleyin.  
   
-2.  İşletim sistemi yükleyicisi uygulama bildirimi uygulamanın bağımlı derlemeleri yüklemek için kullanır. Bildirim ikili bir kaynak olarak katıştırılmış veya uygulama klasöründe ayrı bir dosya olarak yüklenir. Bildirim ikili ekli olup olmadığını denetlemek için ikili açmak [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] ve kaynak listesinde için RT_MANIFEST bakın. < Binary_name > şöyle adlandırılmış bir dosya için uygulama klasöründe gömülü bir bildirim bulamazsa, bakın. \<uzantısı > .manifest.  
+2.  İşletim sistemi yükleyicisi uygulama bağımlı derlemeler yüklemek için uygulama bildirimini kullanır. Bildirim ikili bir kaynak olarak gömülü, veya ayrı bir dosya uygulama klasöründe olarak yüklenir. Bildirim ikili dosyada gömülü olup olmadığını denetlemek için ikili Visual Studio'da açın ve rt_manıfest için kaynakları listesinde arayın. < Binary_name > gibi bir şey adlı bir dosya için uygulama klasöründe bir gömülü bildirim bulamazsa, bakın. \<uzantısı > .manifest.  
   
-3.  Yan yana derlemelerini uygulamanızı bağlıdır ve bir bildirim yok, bağlayıcı projeniz için bir bildirim oluşturur olmanız gerekir. Bağlayıcı seçeneği işaretleyin **Generate bildirimi** içinde **proje özelliklerini** projesi için iletişim kutusu.  
+3.  Yan yana derlemelerini uygulamanızın bağımlı ve bir bildirim mevcut değilse, bağlayıcı projeniz için bir bildirim üretir emin olmak sahip. Bağlayıcı seçeneği işaretleyin **oluşturma bildirimi** içinde **proje özellikleri** iletişim kutusu için proje.  
   
-4.  Bildirim ikili eklendiyse, bu kimliği RT_MANIFEST bu ikili dosya türü için doğru olduğundan emin olun. Kullanmak için hangi kaynak kimliği hakkında daha fazla bilgi için bkz: [kullanarak yan yana derlemeler bir kaynak (Windows) olarak](http://msdn.microsoft.com/library/windows/desktop/aa376617.aspx). Bildirim ayrı bir dosyaya ise, bir XML Düzenleyicisi'ni veya metin düzenleyicide açın. Bildirimler ve dağıtım için kuralları hakkında daha fazla bilgi için bkz: [bildirimleri](http://msdn.microsoft.com/library/aa375365).  
+4.  İkili dosyada bildirim katıştırılır, kimliği rt_manıfest, bu ikili türü için doğru olduğundan emin olun. Hangi kaynak Kimliğinde kullanılacak hakkında daha fazla bilgi için bkz: [bir kaynak (Windows) kullanarak yan yana derlemeler](http://msdn.microsoft.com/library/windows/desktop/aa376617.aspx). Ayrı bir dosyada bildirime ise bir XML Düzenleyicisi'ni veya metin düzenleyicide açın. Bildirimler ve dağıtım için kuralları hakkında daha fazla bilgi için bkz. [bildirimlerini](http://msdn.microsoft.com/library/aa375365).  
   
     > [!NOTE]
-    >  Gömülü bir bildirim ve ayrı bir bildirim dosyası varsa, işletim sistemi yükleyicisi katıştırılmış bildirimini kullanır ve ayrı bir dosya yok sayar. Ancak, Windows XP'de, bunun tersi geçerlidir — ayrı bildirim dosyası kullanılır ve katıştırılmış bildirimi göz ardı edilir.  
+    >  Gömülü bir bildirim hem de ayrı bir bildirim dosyası varsa, işletim sistemi yükleyicisi gömülü bildirimi kullanır ve ayrı bir dosya yok sayar. Ancak, Windows XP'de, bunun tersini geçerlidir — ayrı bildirim dosyası kullanılır ve katıştırılmış bildirime göz ardı edilir.  
   
-5.  Ancak bir DLL yüklendiğinde, dış bildirimleri göz ardı edilir çünkü her DLL'de bir bildirimi katıştırmak öneririz bir `LoadLibrary` çağırın. Daha fazla bilgi için bkz: [derleme bildirimleri](http://msdn.microsoft.com/library/aa374219).  
+5.  Dış bildirimler, ancak bir DLL yüklendiğinde göz ardı edilir çünkü her DLL içinde bildirim katıştırma öneririz bir `LoadLibrary` çağırın. Daha fazla bilgi için [derleme bildirimleri](http://msdn.microsoft.com/library/aa374219).  
   
-6.  Bildirimde numaralandırılır tüm derlemelerde bilgisayara düzgün yüklendiğini denetleyin. Her derleme bildiriminde ad, sürüm numarasını ve işlemci mimarisi tarafından belirtilir. Yan yana derlemelerini uygulamanızı bağımlı olması durumunda, işletim sistemi yükleyicisi bunları bulabilmesi için bu derlemeler doğru bilgisayarda açıklandığı gibi yüklü olup olmadığını denetleyin [derleme arama sırası](http://msdn.microsoft.com/library/aa374224). 64-bit derlemeleri 32 bit işlemde yüklenemiyor ve 32-bit işletim sistemlerinde yürütülemez unutmayın.  
+6.  Bildirimde numaralandırılır tüm derlemelerin bilgisayarda düzgün yüklendiğini kontrol edin. Her derleme bildiriminde adı, sürüm numarasını ve işlemci mimarisi tarafından belirtilir. Yan yana derlemelerini, uygulamanızın bağlı olduğu durumlarda işletim sistemi yükleyicisi bunları bulabilmesi için bu bütünleştirilmiş kodları doğru bilgisayarda açıklandığı gibi yüklü olup olmadığını denetleyin [derleme arama sırası](http://msdn.microsoft.com/library/aa374224). 64 bit derlemelerin 32-bit işlemde yüklenemez ve 32-bit işletim sistemlerinde yürütülemez unutmayın.  
   
 ## <a name="example"></a>Örnek  
- Bir uygulama, Visual C++ kullanarak yerleşik appl.exe sahibiz varsayalım. Uygulama bildirimini ikili kaynak 1 kimliği eşit olan veya ayrı bir dosya appl.exe.manifest depolanan RT_MANIFEST appl.exe içinde ya da katıştırılır. Bu bildirimi içeriğini bu benzer:  
+ Bir uygulama, Visual C++ kullanılarak oluşturulan appl.exe, sahip olduğumuz varsayılır. Uygulama bildirimini ya da ikili kaynak 1'e bir kimliği eşit olan veya ayrı bir dosya appl.exe.manifest depolanan rt_manıfest olarak appl.exe eklenir. Bu bildirim içeriğini bunu yeniden birleştirir:  
   
 ```  
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
@@ -68,9 +68,9 @@ C/C++ uygulama yükleme başarısız olabilir bağımlı kitaplıkları bulunama
 </assembly>  
 ```  
   
- Bu appl.exe bağlı olan bir 32 bit x86 için yerleşik Fabrikam.SxS.Library, sürüm 2.0.20121.0, adlı bir derleme, işletim sistemi yükleyicisi için bu bildirimi diyor İşlemci mimarisi. Bağımlı yan yana derleme, paylaşılan bir derleme veya özel bir derleme olarak yüklenebilir.  
+ İşletim sistemi yükleyicisi için bu bildirimi bir 32-bit x86 için yerleşik Fabrikam.SxS.Library, sürüm 2.0.20121.0, adında bir derleme söz konusu appl.exe bağlıdır diyor İşlemci mimarisi. Bağımlı yan yana derleme, paylaşılan bir derleme veya özel bir derleme olarak yüklenebilir.  
   
- Paylaşılan bir derleme için derleme bildirimi %WINDIR%\WinSxS\Manifests\ klasörüne yüklenir. Derleme tanımlar ve içeriğini listeler — diğer bir deyişle, derleme parçası olan DLL'leri:  
+ Paylaşılan bir derleme için derleme bildirimi %WINDIR%\WinSxS\Manifests\ klasörüne yüklenir. Derleme tanımlar ve içeriğini listeler — diğer bir deyişle, derlemenin parçası olan DLL'leri:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -82,7 +82,7 @@ C/C++ uygulama yükleme başarısız olabilir bağımlı kitaplıkları bulunama
 </assembly>  
 ```  
   
- Yan yana derlemeler de kullanabilir [yayımcı yapılandırma dosyalarını](http://msdn.microsoft.com/library/aa375682)— ilke dosyaları olarak da bilinir — genel olarak uygulamalar ve derlemeler başka bir sürümü aynı yerine bir yan yana derleme bir sürümünü kullanmak üzere yeniden yönlendirmek için derleme. Paylaşılan bir derleme %WINDIR%\WinSxS\Policies\ klasöründeki ilkeleri kontrol edebilirsiniz. Aşağıda, bir ilke dosyası örneği verilmiştir:  
+ Yan yana derlemeler de kullanabilir [yayımcı yapılandırma dosyaları](http://msdn.microsoft.com/library/aa375682)— ilkesi dosyaları olarak da bilinir — uygulamaları ve derlemeleri aynı başka bir sürümü yerine bir yan yana derlemenin bir sürümünü kullanmak için genel olarak yönlendirmek için derleme. Paylaşılan bir derleme %WINDIR%\WinSxS\Policies\ klasöründe ilkelerini denetleyebilirsiniz. Bir ilke dosyası örneği aşağıdadır:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -98,16 +98,16 @@ C/C++ uygulama yükleme başarısız olabilir bağımlı kitaplıkları bulunama
 </assembly>  
 ```  
   
- Bu ilke dosyası herhangi bir uygulama veya bu derleme 2.0.10000.0 sürümü ister derleme yerine sürüm 2.0.20121.0, sistemde yüklü geçerli sürümünün olduğu kullanması gerektiğini belirtir. Uygulama bildiriminde belirtilen derleme sürümü ilke dosyasında belirtilmediği takdirde, yükleyici %WINDIR%\WinSxS\ klasöründeki bildiriminde belirtilen bu derleme sürümü arar ve bu sürümü yüklü değilse, yükleme başarısız olur. Ve derleme sürümü 2.0.20121.0 yüklü değilse, yükleme derleme sürümü 2.0.10000.0 isteyin uygulamalar için başarısız olur.  
+ Bu ilke dosyası herhangi bir uygulama veya bu derlemeye 2.0.10000.0 sürümünü ister derleme yerine sürüm 2.0.20121.0, sistemde yüklü geçerli sürüm olduğu kullanması gerektiğini belirtir. Uygulama bildiriminde belirtilen derlemenin bir sürümünü ilke dosyasında belirtilmediği takdirde, yükleyici %WINDIR%\WinSxS\ klasöründe bildiriminde belirtilen Bu derlemenin bir sürümünü arar ve bu sürüm yüklü değilse, yükleme başarısız olur. Ve derleme sürümü 2.0.20121.0 yüklü değilse, yükleme için derleme sürümünü 2.0.10000.0 isteyen uygulamalar için başarısız olur.  
   
- Ancak, derleme yüklü uygulama klasöründe özel bir yan yana derleme olarak da yüklenebilir. Derleme paylaşılan bir derlemede olarak bulmak işletim sistemi başarısız olursa, bunun için aşağıdaki sırayla özel bir derleme olarak görünüyor:  
+ Ancak, derleme yüklü uygulama klasöründe özel bir yan yana derleme olarak da yüklenebilir. Paylaşılan bir derleme olarak derlemeyi bulmak işletim sisteminin başarısız olursa, bunun için aşağıdaki sırayla özel bir derleme olarak görünüyor:  
   
-1.  Adına sahip bir bildirim dosyası için uygulama klasörünü denetleyin \<assemblyName > .manifest. Bu örnekte, yükleyici appl.exe içeren klasöre Fabrikam.SxS.Library.manifest bulmaya çalışır. Bildirim bulursa yükleyicisi uygulama klasöründen derleme yükler. Derleme bulunmazsa yükleme başarısız olur.  
+1.  Denetleyin ada sahip bir bildirim dosyası için uygulama klasörü \<assemblyName > .manifest. Bu örnekte, yükleyici appl.exe içeren klasöre Fabrikam.SxS.Library.manifest bulmayı dener. Bildirim bulursa, yükleyici uygulama klasöründen derlemeyi yükler. Derleme bulunmazsa yükleme başarısız olur.  
   
-2.  Açmaya \\< assemblyName\>\ klasöründe appl.exe, içeren ve \\< assemblyName\>\ yoksa, adına sahip bir bildirim dosyası yüklenmeye \<assemblyName >. Bu klasörden bildirimi. Bildirim bulunursa, yükleyicisi derlemeden yükler \\< assemblyName\>\ klasör. Derleme bulunmazsa yükleme başarısız olur.  
+2.  Açmaya \\< assemblyName\>\ appl.exe, içeren klasörü klasöründe ve \\< assemblyName\>\ var, ada sahip bir bildirim dosyası yüklemeye \<assemblyName >. Bu klasörden bildirimi. Bildirim bulunursa, yükleyici bütünleştirilmiş koddan yükler \\< assemblyName\>\ klasör. Derleme bulunmazsa yükleme başarısız olur.  
   
- Yükleyici için bağımlı derlemeleri nasıl arayacağını hakkında daha fazla bilgi için bkz: [derleme arama sırası](http://msdn.microsoft.com/library/aa374224). Özel derleme olarak bağımlı bir derleme bulmak yükleyici başarısız olursa, yükleme başarısız olur ve "Sistem belirtilen programı çalıştıramıyor" iletisi görüntülenir. Bu hatayı gidermek için emin olun bağımlı derlemeleri — ve bunları parçası olan DLL'ler — bilgisayarda özel veya paylaşılan derlemeler yüklenir.  
+ Yükleyici bağımlı derlemeleri nasıl arama hakkında daha fazla bilgi için bkz. [derleme arama sırası](http://msdn.microsoft.com/library/aa374224). Bağımlı bir derleme özel bir derleme olarak bulmak yükleyici başarısız olursa, yükleme başarısız olur ve "Sistem belirtilen program yürütülemiyor" iletisi görüntülenir. Bu hatayı gidermek için emin bağımlı derlemeleri — ve bunları bir parçası olan DLL'ler — bilgisayarda özel veya paylaşılan derlemeler yüklenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yalıtılmış uygulamalar ve yan yana derlemeler kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   
+ [Yalıtılmış uygulamalar ve yan yana derleme kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   
  [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

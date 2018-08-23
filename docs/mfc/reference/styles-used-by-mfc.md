@@ -206,12 +206,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8c8868f83cb2e05a364b8977b014db5c02689c5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 318951b5216513c20cdb21ac4a4fcfff9c3e0ac7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886069"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466459"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller  
   
@@ -232,15 +232,15 @@ Aşağıdaki tablo düğme türlerini listeler. İsteğe bağlı olarak aşağı
 |BS_AUTOCHECKBOX|İki durum içeren bir onay kutusu düğmesi oluşturur: BST_CHECKED ve BST_UNCHECKED. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirimi gönderilir ve düğmenin durumu değişir. Varsayılan olarak, ilişkili metin onay kutusunun sağında görüntülenir. Metni onay kutusunun solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
 |BS_AUTORADIOBUTTON|İki durum içeren bir radyo düğmesi oluşturur: BST_CHECKED ve BST_UNCHECKED. Radyo düğmeleri genelde gruplar olarak her grupta en fazla bir işaretli seçenek birer birer kullanılır. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirim gönderir, tıklanan radyo düğmesinin durumu BST_CHECKED için ayarlar ve BST_UNCHECKED için ve düğme grubundaki diğer tüm düğmelerin durumlarını ayarlar. Varsayılan olarak, ilişkili metin radyo düğmesinin sağında görüntülenir. Metni radyo düğmesinin solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
 |BS_CHECKBOX|İki durum içeren bir onay kutusu düğmesi oluşturur: BST_CHECKED ve BST_UNCHECKED. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirimi gönderilir ancak düğmenin durumu değişmez. Varsayılan olarak, ilişkili metin onay kutusunun sağında görüntülenir. Metni onay kutusunun solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
-|BS_COMMANDLINK|Bir komut bağlantı düğmesi oluşturur. Bir komut bağlantı düğmesi bir özgü komut düğmesidir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ana metni ve ana metnin altında bir not solundaki yeşil bir ok görüntüler. Not metnini kullanarak ayarlayabilirsiniz [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote).|  
-|BS_DEFCOMMANDLINK|Bir komut bağlantı düğmesi oluşturur. Bir komut bağlantı düğmesi bir özgü komut düğmesidir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] ana metni ve ana metnin altında bir not solundaki yeşil bir ok görüntüler. Not metnini kullanarak ayarlayabilirsiniz [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote). Düğme bir iletişim kutusunda, düğme giriş odağında olmasa olduğunda ENTER tuşuna basmak BN_CLICKED bildirim iletişim kutusuna gönderir.|  
+|BS_COMMANDLINK|Bir komut bağlantı düğmesi oluşturur. Bir komut bağlantı düğmesi ana metni ve ana metnin altında bir not solundaki yeşil bir ok görüntüler Windows Vista için belirli bir komut düğmesidir. Not metnini kullanarak ayarlayabilirsiniz [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote).|  
+|BS_DEFCOMMANDLINK|Bir komut bağlantı düğmesi oluşturur. Bir komut bağlantı düğmesi ana metni ve ana metnin altında bir not solundaki yeşil bir ok görüntüler Windows Vista için belirli bir komut düğmesidir. Not metnini kullanarak ayarlayabilirsiniz [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote). Düğme bir iletişim kutusunda, düğme giriş odağında olmasa olduğunda ENTER tuşuna basmak BN_CLICKED bildirim iletişim kutusuna gönderir.|  
 |BS_DEFPUSHBUTTON|Koyu siyah kenarlığa sahip bir komut düğmesi oluşturur. Düğme bir iletişim kutusunda, düğme giriş odağında olmasa olduğunda ENTER tuşuna basmak BN_CLICKED bildirim iletişim kutusuna gönderir.|  
-|BS_DEFSPLITBUTTON|Bölünmüş düğme oluşturur. Bölünmüş düğme bir özgü komut düğmesidir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] açılır oka bitişik bir düğmeyi içeren. Düğmeyi tıkladığınızda varsayılan komut yürütülür. Aşağı açılır oku tıkladığınızda ek komutlar içeren bir menü görünür. Bölünmüş düğme bir iletişim kutusunda, düğme giriş odağında olmasa ENTER tuşuna basmak BN_CLICKED bildirim iletişim kutusuna gönderir|  
+|BS_DEFSPLITBUTTON|Bölünmüş düğme oluşturur. Bölünmüş düğme açılır oka bitişik bir düğmeyi içeren Windows Vista için belirli bir komut düğmesidir. Düğmeyi tıkladığınızda varsayılan komut yürütülür. Aşağı açılır oku tıkladığınızda ek komutlar içeren bir menü görünür. Bölünmüş düğme bir iletişim kutusunda, düğme giriş odağında olmasa ENTER tuşuna basmak BN_CLICKED bildirim iletişim kutusuna gönderir|  
 |BS_GROUPBOX|Diğer düğmelerin gruplandırılabilir bir dikdörtgen oluşturur. Bu stil ile ilişkili metin dikdörtgenin sol üst köşesinde görüntülenir.|  
 |BS_OWNERDRAW|Bir kullanıcı çizimli düğmesi oluşturur. Framework çağrıları `DrawItem` düğmenin görsel bir özelliği olduğunda yöntemi değişti. Bu stil kullanırken ayarlanmalıdır `CBitmapButton` sınıfı.|  
 |BS_PUSHBUTTON|Kullanıcı düğmeye tıkladığında sahip penceresine bir BN_CLICKED bildirim gönderen bir komut düğmesi oluşturur.|  
 |BS_RADIOBUTTON|İki durum içeren bir radyo düğmesi oluşturur: BST_CHECKED ve BST_UNCHECKED. Radyo düğmeleri genelde gruplar olarak her grupta en fazla bir işaretli seçenek birer birer kullanılır. Düğmenin tıklanmasıyla sahip penceresine bir BN_CLICKED bildirim gönderir, ancak otomatik olarak gruptaki herhangi bir düğmenin durumu değişmez. Varsayılan olarak, ilişkili metin radyo düğmesinin sağında görüntülenir. Metni radyo düğmesinin solunda görüntülemek için BS_LEFTTEXT veya bs_rıghtbutton stili kullanın.|  
-|BS_SPLITBUTTON|Bölünmüş düğme oluşturur. Bölünmüş düğme bir özgü komut düğmesidir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] açılır oka bitişik bir düğmeyi içeren. Düğmeyi tıkladığınızda varsayılan komut yürütülür. Aşağı açılır oku tıkladığınızda ek komutlar içeren bir menü görünür.|  
+|BS_SPLITBUTTON|Bölünmüş düğme oluşturur. Bölünmüş düğme açılır oka bitişik bir düğmeyi içeren Windows Vista için belirli bir komut düğmesidir. Düğmeyi tıkladığınızda varsayılan komut yürütülür. Aşağı açılır oku tıkladığınızda ek komutlar içeren bir menü görünür.|  
 |BS_USERBUTTON|Windows 16-bit sürümleriyle uyumluluk için sağlanmıştır ancak Kullanımdan kalktı. Win32 tabanlı uygulamalar BS_OWNERDRAW kullanmalısınız.|  
   
 ### <a name="radio-button-and-check-box-styles"></a>Radyo düğmesi ve onay kutusu stilleri  
@@ -498,7 +498,7 @@ Genişletilmiş pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/refe
 |WS_EX_CONTEXTHELP|Pencerenin başlık çubuğundaki bir soru işareti içerir. Kullanıcı, soru işareti, imleç değişiklikleri bir işaretçiyle soru işaretine tıkladığında. Kullanıcı daha sonra bir alt pencere tıklarsa, alt WM_HELP iletisini alır.|  
 |WS_EX_CONTROLPARENT|Sekme tuşunu kullanarak penceresinin alt pencereleri arasında gezinmek kullanıcının sağlar.|  
 |WS_EX_DLGMODALFRAME|Bir pencere bir başlık çubuğu ws_captıon stili bayrağı belirtirseniz ile oluşturulabilir (isteğe bağlı olarak) çift kenarlıklı atayan *dwStyle* parametresi.|  
-|WS_EX_LAYERED|Pencere bir [katmanlı pencere](http://msdn.microsoft.com/library/ms632599.aspx#layered). Bu stil penceresi olup olmadığını kullanılamaz bir [sınıfı stili](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) CS_OWNDC ya da CS_CLASSDC. Ancak, [!INCLUDE[win8_first](../../mfc/reference/includes/win8_first_md.md)] WS_EX_LAYERED stili alt pencereler, burada önceki Windows sürümlerinde, yalnızca üst düzey windows desteği için desteklememektedir.|  
+|WS_EX_LAYERED|Pencere bir [katmanlı pencere](http://msdn.microsoft.com/library/ms632599.aspx#layered). Bu stil penceresi olup olmadığını kullanılamaz bir [sınıfı stili](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) CS_OWNDC ya da CS_CLASSDC. Ancak, Microsoft Windows 8, burada önceki Windows sürümleri için yalnızca üst düzey pencerelere destekliyorsa, alt pencereler için WS_EX_LAYERED stili destekler.|  
 |WS_EX_LEFT|Pencere genel sola hizalanmış özellikleri sunar. Bu varsayılandır.|  
 |WS_EX_LEFTSCROLLBAR|Dikey kaydırma çubuğu istemci alanını soluna yerleştirir.|  
 |WS_EX_LTRREADING|Soldan sağa kullanarak pencere metni görüntüler sırası özellikleri okunurken. Bu varsayılandır.|  

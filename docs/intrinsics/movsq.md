@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60e0eacba00f9c0fb397b1fe37d2be8b108b6a59
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0231c2514805479c0ec999698ebd027ab51e3119
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33336979"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466064"
 ---
 # <a name="movsq"></a>__movsq
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Yinelenen bir taşıma dizesi oluşturur (`rep movsq`) yönerge.  
+ Taşıma yinelenen bir dize oluşturur (`rep movsq`) yönerge.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,23 +45,23 @@ void __movsq(
  İşlemin hedefi.  
   
  [in] `Source`  
- İşlemi kaynak.  
+ İşlem kaynağı.  
   
  [in] `Count`  
- Kopyalamak için quadwords sayısı.  
+ Kopyalanacak quadwords sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__movsq`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsq`|X64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonuç ilk `Count` tarafından quadwords işaret için `Source` kopyalanır `Dest` dize.  
+ Sonuç ilk `Count` quadwords tarafından işaret edilen `Source` kopyalanır `Dest` dize.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -90,7 +90,7 @@ int main()
 950 850 750 650 550 450 350 250 150 50   
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

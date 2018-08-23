@@ -19,17 +19,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b145225cfed3131b406d15827b589aed718d16bb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8c6204349731222df99683ddb20b2b2d827b3fcd
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843749"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465418"
 ---
 # <a name="conform"></a>conform
-**C++ özel**  
+**C++ özgü**  
   
- Çalışma zamanı davranışını belirtir [/ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği.  
+Çalışma zamanı davranışını belirtir [/ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,28 +37,28 @@ ms.locfileid: "33843749"
 #pragma conform(name [, show ] [, on | off ] [ [, push | pop ] [, identifier ] ] )  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- *Adı*  
- Değiştirilecek derleyici seçeneği adını belirtir. Yalnızca geçerli *adı* olan `forScope`.  
+### <a name="parameters"></a>Parametreler  
+*Adı*  
+Değiştirilecek derleyici seçeneğinin adı belirtir. Yalnızca geçerli *adı* olduğu `forScope`.  
   
- **Göster** (isteğe bağlı)  
- Geçerli ayarını neden *adı* (true veya false) derleme sırasında yoluyla bir uyarı iletisi görüntülenecek. Örneğin, `#pragma conform(forScope, show)`.  
+*Göster* (isteğe bağlı)  
+Geçerli ayarını neden *adı* (true veya false) derleme sırasında bir uyarı iletisi yoluyla görüntülenecek. Örneğin, `#pragma conform(forScope, show)`.  
   
- **açık, kapalı**(isteğe bağlı)  
- Ayarı *adı* için **üzerinde** sağlayan [/ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği. Varsayılan değer **devre dışı**.  
+*açık, kapalı*(isteğe bağlı)  
+Ayarı *adı* için *üzerinde* sağlayan [/ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği. Varsayılan değer *kapalı*.  
   
- **anında iletme** (isteğe bağlı)  
- Geçerli değeri iter *adı* derleyici iç yığına. Belirtirseniz *tanımlayıcısı*, belirleyebileceğiniz **üzerinde** veya **kapalı** değerini *adı* yığına edilmesini. Örneğin, `#pragma conform(forScope, push, myname, on)`.  
+*anında iletme* (isteğe bağlı)  
+Geçerli değerini gönderim *adı* iç derleyici yığınına sürükleyin. Belirtirseniz *tanımlayıcı*, belirtebileceğiniz *üzerinde* veya *kapalı* değerini *adı* da yığına itilecek. Örneğin, `#pragma conform(forScope, push, myname, on)`.  
   
- **POP** (isteğe bağlı)  
- Değerini ayarlar *adı* derleyici iç yığını ve ardından POP yığın üstündeki değerine. Tanımlayıcı belirtilirse **pop**, geri kayıtla bulana kadar yığın Sil'i *tanımlayıcısı*, hangi ayrıca Sil'i; için geçerli değer *adı* içinde Yığında sonraki kaydı için yeni değer haline *adı*. Pop ile belirtirseniz bir *tanımlayıcısı* olmayan yığında kaydındaki **pop** göz ardı edilir.  
+*POP* (isteğe bağlı)  
+Ayarlar *adı* değere iç derleyici yığınındaki ve ardından POP yığının üstünde. Tanımlayıcı belirtilirse *pop*, geri kayıtla buluncaya yığın POP *tanımlayıcısı*, hangi ayrıca POP; için geçerli değer *adı* içinde Yığında sonraki kaydı için yeni değer olur *adı*. Pop ile belirtirseniz bir *tanımlayıcı* olmayan yığında kaydındaki *pop* göz ardı edilir.  
   
- *tanımlayıcı*(isteğe bağlı)  
- İle dahil edilebilir bir **itme** veya **pop** komutu. Varsa *tanımlayıcısı* kullanılır, sonra bir **üzerinde** veya **kapalı** belirticisi de kullanılabilir.  
+*tanımlayıcı*(isteğe bağlı)  
+İle dahil edilebilir bir *anında iletme* veya *pop* komutu. Varsa *tanımlayıcı* kullanılır, sonra bir *üzerinde* veya *kapalı* tanımlayıcısı de kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // pragma_directive_conform.cpp  
 // compile with: /W1  
 // C4811 expected  
@@ -75,4 +75,5 @@ int main() {}
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

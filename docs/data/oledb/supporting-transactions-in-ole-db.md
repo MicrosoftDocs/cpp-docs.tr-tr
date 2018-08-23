@@ -20,23 +20,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 932185002032ab86ca80b2b3384bfe6cbb69f8b1
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 59e890e9d38ff0a37114f2f15217a748c21fff44
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338716"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42464501"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB'de İşlemleri Destekleme
 A [işlem](../../data/transactions-mfc-data-access.md) grubu ya da toplu işlem, bir dizi veri kaynağına güncelleştirmeleri böylece tüm başarılı ve aynı anda taahhüt ya da (herhangi biri başarısız olursa) hiçbiri tamamlanmadığı için bir yoldur ve işlemin tümü geri alınır. Bu işlem veri kaynağında sonucun bütünlüğü sağlar.  
   
  OLE DB, aşağıdaki üç yöntemi ile işlemleri destekler:  
   
--   [ITransactionLocal::StartTransaction](https://msdn.microsoft.com/library/ms709786.aspx)  
+-   [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\))  
   
--   [ITransaction::Commit](https://msdn.microsoft.com/library/ms713008.aspx)  
+-   [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\))  
   
--   [Iİşlem::Durdur](https://msdn.microsoft.com/library/ms709833.aspx)  
+-   [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833\(v=vs.85\))  
   
 ## <a name="relationship-of-sessions-and-transactions"></a>Oturumlar ve işlemler arasındaki ilişki  
  Bir tek veri kaynağı nesnesi, her biri içinde veya belirli bir zamanda bir işlem kapsamı dışında olabilir, bir veya daha fazla oturum nesneleri oluşturabilirsiniz.  
@@ -55,7 +55,7 @@ A [işlem](../../data/transactions-mfc-data-access.md) grubu ya da toplu işlem,
  Çağırma `ITransaction::Commit` veya `ITransaction::Abort` işlemi sonlandırır. `Commit` Veri deposuna uygulanması için işlem kapsamında tüm değişiklikleri neden olur. `Abort` işlem başlatmadan önce işlemin iptal edilmesine ve veri deposu kapsamındaki tüm değişiklikleri bırakılmış durumda bunu neden vardı.  
   
 ## <a name="nested-transactions"></a>İç içe işlemler  
- A [işlem iç içe geçmiş](https://msdn.microsoft.com/library/ms716985.aspx) oturum etkin bir işlem zaten mevcut olduğunda yeni bir yerel işlem başlatıldığında gerçekleşir. Yeni işlem geçerli işlemin altında iç içe geçmiş bir işlem olarak başlatıldı. İç içe işlem sağlayıcısı desteklemiyorsa, çağırma `StartTransaction` zaten oturum etkin bir işlem XACT_E_XTIONEXISTS döndürür.  
+ A [işlem iç içe geçmiş](/previous-versions/windows/desktop/ms716985\(v=vs.85\)) oturum etkin bir işlem zaten mevcut olduğunda yeni bir yerel işlem başlatıldığında gerçekleşir. Yeni işlem geçerli işlemin altında iç içe geçmiş bir işlem olarak başlatıldı. İç içe işlem sağlayıcısı desteklemiyorsa, çağırma `StartTransaction` zaten oturum etkin bir işlem XACT_E_XTIONEXISTS döndürür.  
   
 ## <a name="distributed-transactions"></a>Dağıtılmış işlemler  
  Dağıtılmış işlem dağıtılmış verileri güncelleştiren bir işlemdir; diğer bir deyişle, veriler üzerinde birden fazla ağa bağlı bilgisayar sistemi. Dağıtılmış bir sistemde işlemleri desteklemek istiyorsanız, OLE DB transaction desteği yerine .NET Framework kullanmanız gerekir.  
