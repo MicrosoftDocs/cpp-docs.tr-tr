@@ -35,121 +35,121 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba98f7d9ed14df1e017f8b83e73cf5d318610f9f
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: a33c6c41b2a9567ef8ed156901b8d04405b6eb46
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "33336498"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465908"
 ---
 # <a name="general-property-page-project"></a>Genel Özellik Sayfası (Proje)
 
-Ne zaman, Çözüm Gezgini'nde proje düğümüne sağ tıklatın ve seçin **özellikleri**, **genel** altında özellik sayfası **yapılandırma özellikleri** düğümünde Sol bölmede iki bölüm özellikleri görüntüler:
+Ne zaman, Çözüm Gezgini'nde bir proje düğümünü sağ tıklatın ve seçin **özellikleri**, **genel** altında özellik sayfası **yapılandırma özellikleri** düğümü sol bölmesinde, özelliklerin iki bölümü görüntülenir:
 
 - Genel
 
 - Proje Varsayılanları
 
-Windows olmayan projeleri için bkz: [Linux C++ özellik sayfası başvurusu](../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md)-->.
+Windows olmayan projeler için bkz: [Linux C++ özellik Sayfa başvurusu](../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md)-->.
 
 ## <a name="general"></a>Genel
 
-Genel bölümünde özellikleri yapı işleminde oluşturulur ve ne zaman silineceğini dosyaları dosyalarının konumunu etkileyen **temiz** seçeneği (**yapı** menüsü) seçilidir.
+Genel bölümündeki özellikler yapı işlemi sırasında oluşturulan ve hangi dosyaların silineceğini dosyalarının konumunu etkileyen **temiz** seçeneği (**derleme** menüsü) seçilir.
 
-**Hedef platformu**  
-Proje üzerinde çalışacağı platformu belirtir. Örneğin, Windows, Android veya iOS. Değer **Windows 10** Proje hedefleri Evrensel Windows platformu anlamına gelir. Windows'un önceki sürümlerini hedefleyen, sürüm listelenmeyen ve bu alan değeri olarak yalnızca görünüyorsa **Windows**. Bu bir proje oluşturduğunuzda, ayarlanmış salt okunur bir alandır.
+**Hedef Platform**  
+Projenin çalışacağını platformu belirtir. Örneğin, Windows, Android veya iOS. Değer **Windows 10** Evrensel Windows platformu projenizin hedeflediği anlamına gelir. Önceki Windows sürümlerinde hedefleniyorsa, sürüm listelenmeyen ve bu alandaki değer olarak yalnızca görünür **Windows**. Bu, bir proje oluşturduğunuzda, ayarlanan salt okunur bir alandır.
 
 **Windows SDK sürümü**  
-Windows hedef platformu için bu projenizin gerektirdiği Windows SDK sürümünü belirtir. Visual Studio Yükleyicisi'ni kullanarak bir C++ iş yükü yüklediğinizde Windows SDK'ın gerekli bölümleri de yüklenir. Diğer Windows SDK sürümü bilgisayarınızda yüklüyse, yüklediğiniz SDK Araçları her sürümü açılır listede görüntülenir.
+Windows hedef platformu için bu, projenizin gerektirdiği Windows SDK sürümünü belirtir. Visual Studio Yükleyicisi'ni kullanarak bir C++ iş yükünü yüklediğinizde Windows SDK'sı gerekli bölümlerini de yüklenir. Bilgisayarınızda başka Windows SDK sürümleri varsa, her bir sürümünü yüklemiş olduğunuz SDK Araçları açılır listede görüntülenir.
 
-Windows 7 veya Windows Vista'yı hedefleyecek şekilde değeri kullanmak **8.1**, Windows 8.1 SDK bu platformlar için geriye dönük olarak uyumlu olduğundan. Ayrıca, için uygun değer tanımlamanız gerekir **_WIN32_WINNT** targetver.h içinde. Windows 7, 0x0601'i olmasıdır. Bkz: [WINVER ve _WIN32_WINNT değiştirme](../porting/modifying-winver-and-win32-winnt.md).
+Windows 7 veya Windows Vista'yı hedeflemek için değerini kullanın. **8.1**, Windows 8.1 SDK'sı, o platformlar için geriye dönük uyumlu olduğundan. Ayrıca, uygun değeri tanımlamalıdır **_WIN32_WINNT** targetver.h içinde. Windows 7 için 0x0601'i olmasıdır. Bkz: [WINVER ve _WIN32_WINNT'de değişiklik yapma](../porting/modifying-winver-and-win32-winnt.md).
 
-Windows XP ve Windows Server 2003 projeler derlemek için kitaplıkları'nın geçerli sürümü kullanmak için Visual Studio'da bulunan Windows XP platform araç takımı yükleyebilirsiniz. Edinme ve bu platform araç takımı kullanma hakkında daha fazla bilgi için bkz: [yapılandırma programlar için Windows XP](../build/configuring-programs-for-windows-xp.md). Platform araç kümesini değiştirme hakkında ek bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md).
+Windows XP ve Windows 2003 Server projeleri derlemek için kitaplıkları'nın geçerli sürümü kullanmak için Visual Studio içinde Windows XP platform araç takımını yükleyebilirsiniz. Edinmek ve bu platform araç takımını kullanmanız konusunda daha fazla bilgi için bkz: [yapılandırma programlar için Windows XP](../build/configuring-programs-for-windows-xp.md). Platform araç kümesini değiştirme hakkında ek bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
 **Hedef Platform Min. Sürüm**  
-Proje üzerinde çalışabilir platform en düşük sürümünü belirtir. Bu özellik yalnızca proje türü gibi Windows Evrensel projelerinde destekliyorsa, görüntülenir. Uygulamanızı özelliklerinin daha yeni bir Windows SDK sürümünde yararlanabilirsiniz, ancak yine de bu özellikler olmadan önceki sürümlerinde çalıştırılabilir, belki de işlevsellik, bazı kaybı sonra bu iki özellik değerini farklı olabilir. Bu nedenle, kodunuzu platform sürümü işaretlerseniz karşı çalışma zamanında çalışıyor ve eski platform sürümünde kullanılamaz özelliklerini kullanmaya çalışın değil.
+Projeyi çalıştırmak platformun en düşük sürümünü belirtir. Bu özellik yalnızca proje türü gibi Evrensel Windows projeleri destekliyorsa görünür. Uygulamanızı özelliklerinin daha yeni bir Windows SDK sürümünde yararlanabilirsiniz, ancak yine de bu özellikler olmadan önceki sürümlere çalıştırabilirsiniz, belki de işlevsellik kaybı ile daha sonra bu iki özellik değerini farklı olabilir. Bu nedenle, kodunuzu platformun sürümü onay çalışma zamanında karşı çalışan ve eski platform sürümünde kullanılamayan özelliklerini kullanmayı deneyin değil.
 
-Visual C++ bu seçenek zorlamaz unutmayın. Projenizi kullanan herkes için bir kılavuz olarak ve C# ve JavaScript gibi diğer dilleri ile tutarlılık için dahil edilmiştir. En düşük sürüm kullanılabilir olmayan bir özelliğini kullanırsanız, visual C++ hataya neden olmaz.
+Visual C++ bu seçeneği zorlamaz unutmayın. Diğer diller, C# ve JavaScript gibi ve projenizi kullanan herkes için bir kılavuz olarak tutarlılık dahildir. En düşük sürümde değil bir özellik kullanırsanız visual C++ hataya neden olmaz.
 
-**Çıktı dizini**  
-Bağlayıcı gibi araçlar oluşturma işlemi sırasında oluşturulan tüm son çıktı dosyaları nerede yerleştirir dizini belirtir. Genellikle, bu bağlayıcı, kitaplığı veya BSCMake gibi araçlar çıktısını içerir. Varsayılan olarak, bu özellik, belirtilen makroları (SolutionDir) $ tarafından (yapılandırma) dizindir \.
+**Çıkış dizini**  
+Bağlayıcı gibi araçların derleme işlemi sırasında oluşturulan tüm son çıktı dosyalarını koyacağı dizini belirtir. Genellikle bu bağlayıcı, kitaplıkçı veya BSCMake gibi araçların çıktısını içerir. Varsayılan olarak, bu özellik, belirtilen makroları (SolutionDir) $$ (yapılandırma) dizindir \.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory%2A>.
 
-**Ara dizini**  
-Derleyici gibi araçlar oluşturma işlemi sırasında oluşturulan tüm ara dosyaları nerede yerleştirir dizini belirtir. Genellikle, bu C/C++ derleyicisi, MIDL ve kaynak derleyicisi gibi araçları çıktısını içerir. Varsayılan olarak, bu özellik, belirtilen makrosu $(yapılandırma) göre dizindir \.
+**Ara dizin**  
+Derleyici gibi araçların derleme işlemi sırasında oluşturulan tüm ara dosyaları koyacağı dizini belirtir. Genellikle bu C/C++ Derleyici, MIDL ve kaynak derleyicisi gibi araçların çıktısını içerir. Varsayılan olarak, bu özellik, belirtilen makro $(yapılandırma) dizindir \.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory%2A>.
 
 **Hedef adı**  
-Bu proje oluşturur dosya adını belirtir. Varsayılan olarak, bu özellik makrosu $(ProjectName) tarafından belirtilen dosya adıdır.
+Bu projenin oluşturduğu dosya adını belirtir. Varsayılan olarak, bu özellik makrosu $(ProjectName) tarafından belirtilen dosya adıdır.
 
 **Hedef uzantısı**  
-Bu proje oluşturur dosya adı uzantısını belirtir; Örneğin, .exe veya .dll.
+Bu projenin oluşturduğu dosya adı uzantısını belirtir; Örneğin, .exe veya .dll.
 
-**Temiz üzerinde silme uzantıları**  
-**Temiz** seçeneği (**yapı** menüsü) bir projenin yapılandırma oluşturulan Burada Ara dizinden dosyaları siler. Bu özellik ile belirtilen uzantılara sahip dosyaları olacaktır ne zaman silinmiş **temiz** çalıştırıldığında veya bir yeniden oluşturma gerçekleştirdiğinizde. Bu uzantılar Ara dizindeki dosyaların yanı sıra, yapı sistem yapı (de dahil olmak üzere ara çıktıların .obj dosyaları gibi) bulunduğu bağımsız olarak bilinen herhangi bir çıktı de silinecek. Joker karakterler belirtebilirsiniz unutmayın.
+**Temizlemede silinecek uzantılar**  
+**Temiz** seçeneği (**derleme** menüsü) bir projenin yapılandırmasının oluşturulan Burada Ara dizinden dosya siler. Bu özellik ile belirtilmiş uzantılara sahip dosyalar olacaktır ne zaman silinmiş **temiz** çalıştırıldığında veya yeniden derleme yaptığınızda. Ara dizindeki bu uzantılara ait dosyaların yanı sıra, derleme sistemi de (dahil .obj dosyaları gibi ara çıkışlar) bulunduğu yeri bağımsız olarak yapının bilinen çıkışlarını siler. Joker karakterleri belirtebileceğinizi unutmayın.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>.
 
-**Günlük dosyası oluşturma**  
-Bir projeyi derleme her oluşturulan günlük dosyası için bir varsayılan olmayan konum belirtmenize olanak tanır. Varsayılan konumu makroları (IntDir) $$ (MSBuildProjectName) .log tarafından belirtilir.
+**Derleme günlüğü dosyası**  
+Bir proje oluşturduğunuzda oluşturulan günlük dosyası için bir varsayılan olmayan konum belirtmenizi sağlar. Varsayılan konumu makroları $(IntDir) $(MSBuildProjectName) .log tarafından belirtilir.
 
-Proje makroları dizin konumunu değiştirmek için kullanabilirsiniz. Bkz: [derleme komutları ve özellikler için ortak makrolar](../ide/common-macros-for-build-commands-and-properties.md).
+Proje makrolarını, dizin konumunu değiştirmek için kullanabilirsiniz. Bkz: [genel derleme komutları ve Özellikler makroları](../ide/common-macros-for-build-commands-and-properties.md).
 
 **Platform araç takımı**  
-Visual C++ kitaplıkları ve derleyici farklı bir sürümünü hedeflemek için projeyi sağlar. Visual C++ projeleri, Visual Studio veya Visual Studio, Windowx XP'de çalıştırabilirsiniz yürütülebilir dosyalar oluşturma toolsets dahil olmak üzere birkaç önceki sürümlerini tarafından yüklenen toolsets biri tarafından yüklenen varsayılan toolset hedefleyebilirsiniz. Platform araç kümesini değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md).
+Visual C++ kitaplıklarının ve derleyicinin farklı bir sürümü hedeflemek projeye izin verir. Visual C++ projelerini Visual Studio veya Windowx XP'de çalışabilen yürütülebilir dosyalar oluşturan araç takımları dahil olmak üzere Visual Studio birkaç önceki sürümü yüklüdür araç takımları biri tarafından yüklenen varsayılan araç hedefleyebilirsiniz. Platform araç kümesini değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
-**Yönetilen Artımlı derleme etkinleştir**  
-Derlemeleri oluşturduğunuzda yönetilen projeleri için bu algılama dış görünürlüğü sağlar. Bir yönetilen projenin değişiklik diğer projelerine görünür durumda değilse, ardından bağımlı projeleri yeniden oluşturulur değil. Bu yönetilen projeleri dahil et çözümleri derleme sürelerini önemli ölçüde artırabilir.
+**Yönetilen Artımlı derlemeyi etkinleştir**  
+Derlemeleri oluştururken yönetilen projelerde, bu algılama dış görünürlüğü sağlar. Yönetilen bir projeye bir değişiklik diğer projeleri görünür değilse, ardından bağımlı projeleri yeniden oluşturulur değil. Bu, yönetilen projeleri içeren çözümler derleme sürelerini önemli ölçüde artırabilir.
 
 ## <a name="project-defaults"></a>Proje Varsayılanları
 
-Proje varsayılan Bölümü özelliklerinde değiştirebileceğiniz varsayılan özelliklerini temsil eder. Bu özellikleri tanımı .props dosyalarında bulunabilir *yükleme dizini*\VC\VCProjectDefaults.
+Proje varsayılanı bölümündeki özellikler değiştirebileceğiniz varsayılan özellikleri temsil eder. Bu özelliklerin tanımı .props dosyalarında bulunabilir *yükleme dizini*\VC\VCProjectDefaults.
 
 **Yapılandırma türü**  
-Aralarından seçim yapabileceğiniz çeşitli yapılandırma türleri şunlardır:
+Aralarından seçim yapılabilecek birkaç yapılandırma türü vardır:
 
-- **Uygulama (.exe)**, bağlayıcı araç takımı (C/C++ derleyicisi MIDL, kaynak derleyici, bağlayıcı, BSCMake, XML Web Hizmeti Proxy üreticisi, özel derleme, prebuild, prelink, postbuild olayları) görüntüler.
+- **Uygulama (.exe)**, bağlayıcı araç takımını (C/C++ Derleyici, MIDL, kaynak derleyici, bağlayıcı, BSCMake, XML Web Hizmeti Proxy üreticisi, özel yapı, prebuild, prelink, postbuild olayları) görüntüler.
 
-- **Dinamik kitaplığı (.dll)**, bağlayıcı araç takımı görüntüler, / DLL bağlayıcı seçeneği belirtir ve _WINDLL tanımlamak için CL ekler.
+- **Dinamik kitaplık (.dll)**, bağlayıcı araç takımını görüntüler, / DLL bağlayıcı seçeneğini belirtir ve _wındll öğesini CL öğesine ekler.
 
-- **Derleme görevleri dosyası**, derleme görevleri dosyası araç takımı (NMake) görüntüler.
+- **Derleme görevleri dosyası**, makefile araç takımını (NMake) görüntüler.
 
-- **Statik kitaplık (.lib)**, kitaplığı araç takımı (kitaplığı bağlayıcı için yedek ve XML Web Hizmeti Proxy Oluşturucu atlayın dışında bağlayıcı araç takımı ile aynı) görüntüler.
+- **Statik kitaplık (.lib)**, kitaplıkçı araç kümesini (bağlayıcı araç takımını, kitaplıkçı bağlayıcı için yedek ve XML Web Hizmeti Proxy üreticisi çıkarın dışında aynı) görüntüler.
 
-- **Yardımcı programı**, yardımcı programı araç takımı (MIDL, özel derleme, prebuild postbuild olaylar) görüntüler.
+- **Yardımcı programı**, yardımcı araç takımını (MIDL, özel yapı, prebuild, postbuild olayları) görüntüler.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.
 
-**MFC kullanımı**  
-MFC projesine statik veya dinamik olarak MFC DLL bağlayacaksınız olup olmadığını belirtir. MFC olmayan projeleri seçebilirsiniz **kullanmak standart Windows kitaplıkları** MFC kullandığınızda dahil çeşitli Win32 kitaplıkları için bağlamak için.
+**MFC'nin kullanımı**  
+MFC projesinin statik veya dinamik olarak MFC DLL'sine mı bağlanacağını belirtir. MFC olmayan projeler seçebilirsiniz **standart Windows kitaplıkları kullanın** MFC kullandığınızda, içerdiği çeşitli Win32 kitaplıklarına bağlanması için.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>.
 
-**ATL Kullanımı**  
-ATL Proje statik veya dinamik olarak ATL bağlayacaksınız olup olmadığını belirtir. DLL. Herhangi bir şey dışında belirtirseniz, **değil kullanarak ATL**, tanımlayın derleyicinin eklenecek **komut satırı** özellik sayfası.
+**ATL'nin kullanımı**  
+ATL projesini statik veya dinamik olarak için ATL mı bağlanacağını belirtir. DLL. Dışında herhangi bir şey belirtirseniz, **ATL kullanılmıyor**, tanımlama derleyicinin eklenecek **komut satırı** özellik sayfası.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfATL%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfATL%2A>.
 
 **Karakter kümesi**  
-_UNICODE veya _MBCS ayarlanmış olup olmadığını tanımlar. Ayrıca bağlayıcı giriş noktası uygun olan yerlerde etkiler.
+_UNICODE veya _MBCS öğesinin ayarlanmış olup olmadığını tanımlar. Ayrıca uygun yerlerde bağlayıcı giriş noktasını etkiler.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>.
 
 **Ortak dil çalışma zamanı desteği**  
-Neden [/CLR](../build/reference/clr-common-language-runtime-compilation.md) kullanılacak derleyici seçeneği.
+Neden [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği kullanılacak.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>.
 
 **.NET hedef Framework sürümü**  
-Yönetilen projelerinde hedef .NET framework sürümünü belirtir.
+Yönetilen projelerde, hedef .NET framework sürümünü belirtir.
 
 **Bütün Program iyileştirmesi**  
-Belirtir [/GL](../build/reference/gl-whole-program-optimization.md) derleyici seçeneği ve [/LTCG](../build/reference/ltcg-link-time-code-generation.md) bağlayıcı seçeneği. Varsayılan olarak, bu hata ayıklama yapılandırmaları için devre dışı ve perakende yapılandırmaları için etkinleştirilmiş.
+Belirtir [/GL](../build/reference/gl-whole-program-optimization.md) derleyici seçeneği ve [/LTCG](../build/reference/ltcg-link-time-code-generation.md) bağlayıcı seçeneği. Varsayılan olarak, bu hata ayıklama yapılandırmaları için devre dışı ve perakende yapılandırmaları için etkin.
 
-**Windows mağazası uygulama desteği**  
-Bu proje Windows çalışma zamanı (Evrensel Windows platformu) uygulamaları destekleyip desteklemediğini belirtir. Daha fazla bilgi için bkz: [/ZW (Windows çalışma zamanı derlemesi)](../build/reference/zw-windows-runtime-compilation.md)ve Windows Developer Center'da.
+**Windows Store uygulaması desteği**  
+Bu projenin Windows çalışma zamanı (Evrensel Windows platformu) uygulamalarını destekleyip desteklemediğini belirtir. Daha fazla bilgi için [/ZW (Windows çalışma zamanı derlemesi)](../build/reference/zw-windows-runtime-compilation.md)ve Windows Geliştirici Merkezi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
