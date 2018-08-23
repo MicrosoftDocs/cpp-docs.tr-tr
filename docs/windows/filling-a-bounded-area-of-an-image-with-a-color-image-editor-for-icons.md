@@ -18,34 +18,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dc632f251e618e5816b1b8d8ea8280cba3d7b217
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 47b8837cafaab2501e201a747fd9463e1e00639e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652496"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42580975"
 ---
 # <a name="filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons"></a>Görüntünün Sınırlı Bir Alanını Renkle Doldurma (Simgeler İçin Görüntü Düzenleyicisi)
-Resim Düzenleyicisi sağlar **dolgu** herhangi doldurma aracı geçerli çizim rengini veya arka plan rengi geçerli görüntü alanını alınmış.  
-  
+
+Resim Düzenleyicisi sağlar **dolgu** herhangi doldurma aracı geçerli çizim rengini veya arka plan rengi geçerli görüntü alanını alınmış.
+
 > [!TIP]
->  İmlecinizi bir araç çubuğu düğmenin üzerine geldiğinizde araç ipuçlarında görünür. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.  
-  
-### <a name="to-use-the-fill-tool"></a>Dolgu aracı kullanmak için  
-  
-1.  Üzerinde **görüntü Düzenleyicisi** araç çubuğu (veya **görüntü** menüsünde **Araçları** komut), tıklayın **dolgu** aracı.  
-  
-2.  Gerekirse, renkler çizim seçin: içinde [renkler paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengi seçmesini farenin sol düğmesine veya arka plan rengi seçmesini sağ fare düğmesine tıklayın.  
-  
-3.  Taşıma **dolgu** doldurmak istediğiniz alanı için aracı.  
-  
-4.  Sırasıyla ön plan rengini veya arka plan rengi ile doldurmak için sol veya sağ fare düğmesine tıklayın.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
- [Renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md)
+> İmlecinizi bir araç çubuğu düğmenin üzerine geldiğinizde araç ipuçlarında görünür. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.
+
+### <a name="to-use-the-fill-tool"></a>Dolgu aracı kullanmak için
+
+1. Üzerinde **görüntü Düzenleyicisi** araç çubuğu (veya **görüntü** menüsünde **Araçları** komut), tıklayın **dolgu** aracı.
+
+2. Gerekirse, renkler çizim seçin: içinde [renkler paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengi seçmesini farenin sol düğmesine veya arka plan rengi seçmesini sağ fare düğmesine tıklayın.
+
+3. Taşıma **dolgu** doldurmak istediğiniz alanı için aracı.
+
+4. Sırasıyla ön plan rengini veya arka plan rengi ile doldurmak için sol veya sağ fare düğmesine tıklayın.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md)

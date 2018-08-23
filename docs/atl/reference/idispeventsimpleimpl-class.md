@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cea7c17b61f3576ed2a8f1a4daa894f5a30c8b4e
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 7793262b60adbbacb2cf7b10245340790b26e805
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027293"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465562"
 ---
 # <a name="idispeventsimpleimpl-class"></a>Idispeventsimpleımpl sınıfı
 Bu sınıf uygulamalarını sağlar `IDispatch` yöntemleri olmadan bir tür kitaplığından türü bilgileri alınıyor.  
@@ -189,7 +189,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IDispatch::getıdsofnames](http://msdn.microsoft.com/6f6cf233-3481-436e-8d6a-51f93bf91619) Windows SDK içinde.  
+ Bkz: [IDispatch::getıdsofnames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) Windows SDK içinde.  
   
 ##  <a name="gettypeinfo"></a>  IDispEventSimpleImpl::GetTypeInfo  
  Bu uygulaması `IDispatch::GetTypeInfo` E_NOTIMPL döndürür.  
@@ -202,7 +202,7 @@ STDMETHOD(GetTypeInfo)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IDispatch::GetTypeInfo](http://msdn.microsoft.com/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) Windows SDK içinde.  
+ Bkz: [IDispatch::GetTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) Windows SDK içinde.  
   
 ##  <a name="gettypeinfocount"></a>  IDispEventSimpleImpl::GetTypeInfoCount  
  Bu uygulaması `IDispatch::GetTypeInfoCount` E_NOTIMPL döndürür.  
@@ -212,7 +212,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/da876d53-cb8a-465c-a43e-c0eb272e2a12) Windows SDK içinde.  
+ Bkz: [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) Windows SDK içinde.  
   
 ##  <a name="invoke"></a>  IDispEventSimpleImpl::Invoke  
  Bu uygulaması `IDispatch::Invoke` olay işleyicileri listelenen olay havuzu harita çağırır.  
@@ -230,7 +230,7 @@ STDMETHOD(Invoke)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IDispatch::Invoke](http://msdn.microsoft.com/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
+ Bkz: [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).  
   
 ##  <a name="unadvise"></a>  IDispEventSimpleImpl::Unadvise  
  Tarafından temsil edilen olay kaynağı ile bağlantıyı keser *pUnk*.  

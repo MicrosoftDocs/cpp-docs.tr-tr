@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c12df1a2166c9ef5a1af8a33a5764a8899909edb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 75e0086f96f39814bd1a7e77df2adccc47d698fc
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377629"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466016"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
-Yürütülebilir görüntü tarafından gerekli yürütme ortamı belirtir.  
+Yürütülebilir görüntü için gereken yürütme ortamını belirtir.  
   
 ```  
 /SUBSYSTEM:{BOOT_APPLICATION|CONSOLE|EFI_APPLICATION|  
@@ -35,42 +35,42 @@ Yürütülebilir görüntü tarafından gerekli yürütme ortamı belirtir.
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu seçenek, işletim sistemi için yürütme çağırmanız gerekir hangi alt sistemi belirtmek için görüntü düzenler.  
+ Bu seçenek, işletim sistemi yürütme için çağrılacak alt sistemini belirtmek için görüntü düzenler.  
   
- Aşağıdaki alt sistemleri birini belirtebilirsiniz:  
+ Aşağıdaki alt sistemlerden istediğinizi belirleyebilirsiniz:  
   
  BOOT_APPLICATION  
- Windows Önyükleme Ortamı'çalışan bir uygulama. Önyükleme uygulamalar hakkında daha fazla bilgi için bkz: [BCD WMI sağlayıcısını hakkında](http://msdn.microsoft.com/library/aa362639.aspx).  
+ Windows önyükleme ortamında çalışan bir uygulama. Önyükleme uygulamaları hakkında daha fazla bilgi için bkz. [BCD WMI sağlayıcısı hakkında](/previous-versions/windows/desktop/bcd/about-bcd).  
   
- KONSOL  
- Bir Windows karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bir konsol sağlar.  
+ KONSOLU  
+ Windows karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bir konsol sağlar.  
   
  Genişletilebilir Bellenim Arabirimi (EFI) görüntüsü  
- EFI alt sistemi seçenekleri ve Genişletilebilir Bellenim Arabirimi ortamında çalışan yürütülebilir görüntüler açıklanmaktadır. Bu ortam genellikle donanım ile sağlanan ve işletim sistemi yüklenmeden önce yürütür. EFI resim türleri arasındaki temel farklar görüntü yüklenen bellek konumuna ve görüntünün çağrısı döndürüldüğünde alınmış eylemi ' dir. Denetim döndürdüğünde EFI_APPLICATION görüntüyü kaldırılır. Yalnızca denetim hata koduyla döndürürse EFI_BOOT_SERVICE_DRIVER veya EFI_RUNTIME_DRIVER kaldırılır. EFI_ROM görüntüyü ROM'dan yürütülür Üzerinde belirtimleri daha fazla bilgi için bkz [birleşik EFI Forumu](http://www.uefi.org/) Web sitesi.  
+ EFI alt seçenekleri, Genişletilebilir Bellenim Arabirimi ortamında çalışan yürütülebilir resimleri açıklar. Bu ortam genellikle donanımla birlikte sağlanır ve işletim sistemi yüklenmeden önce yürütülür. EFI resim türleri arasındaki başlıca farklar şunlardır: görüntünün yüklendiği bellek konumu ve resim çağrısı döndüğünde alınmış eylemi. Denetimi geri döndüğünde, efı_applıcatıon görüntüsü kaldırılır. Efı_boot_servıce_drıver veya efı_runtıme_drıver yalnızca denetim bir hata koduyla döndüğünde kaldırılır. Efı_rom görüntüsü ROM'dan yürütülür. Daha fazla bilgi için bakın [birleşik EFI Forumu](http://www.uefi.org/) Web sitesi.  
   
  YEREL  
- Bir alt sistemi ortamı çalışan kod — Örneğin, çekirdek modu aygıt sürücüleri ve yerel sistem işlemleri. Bu seçenek, genellikle Windows Sistem özellikleri için ayrılmıştır.  
+ Bir alt sistem ortamı olmadan çalışan kod — Örneğin, kernel modlu cihaz sürücüleri ve yerel sistem işlemleri. Bu seçenek genelde Windows Sistem özellikleri için ayrılmıştır.  
   
  POSIX  
- Windows POSIX alt sisteminde çalışan bir uygulama.  
+ Windows, POSIX alt sisteminde çalışan bir uygulama.  
   
  WINDOWS  
- Windows grafiksel ortamda çalışan bir uygulama. Bu Masaüstü uygulamaları ve evrensel Windows Platformu (UWP) uygulamaları içerir.  
+ Windows grafik ortamında çalışan bir uygulama. Bu, hem Masaüstü uygulamaları hem de Evrensel Windows Platformu (UWP) uygulamaları içerir.  
   
  WINDOWSCE  
- Uygulamayı Windows CE çekirdek sürümü bir cihazda çalıştırma amaçlanmıştır WINDOWSCE alt sistemi gösterir. Çekirdek sürümleri PocketPC, Windows Mobile, Windows Phone 7, Windows CE V1.0-6.0R3 ve Windows Embedded Compact 7 içerir.  
+ WINDOWSCE alt sistemi, uygulamanın Windows CE çekirdeği sürümüne sahip bir cihazda çalıştırılacak amaçlandığını gösterir. Çekirdek sürümleri PocketPC, Windows Mobile, Windows Phone 7, Windows CE V1.0-6.0R3 ve Windows Embedded Compact 7 içerir.  
   
- İsteğe bağlı `major` ve `minor` değerleri belirtilen alt sistemi gerekli en düşük sürümü belirtin:  
+ İsteğe bağlı `major` ve `minor` değerleri belirtilen alt sistemin gerekli en düşük sürümü belirtin:  
   
--   Sürüm numarasını tamsayı kısmını — Ondalık ayırıcının sol tarafındaki bölümüne — tarafından temsil edilen `major`.  
+-   Sürüm numarasının tam sayı bölümü — bölümü Ondalık ayırıcının solundaki — tarafından temsil edilen `major`.  
   
--   Sürüm numarasını kesirli kısmını — ondalık konumun sağında bölümü — tarafından temsil edilen `minor`.  
+-   Sürüm numarasının kesirli bölümü — bölümü ondalık noktanın sağındaki — tarafından temsil edilen `minor`.  
   
 -   Değerlerini `major` ve `minor` 0 ile 65.535 arasında olmalıdır.  
   
- Alt sistemi seçimi başlangıç adresi program için varsayılan etkiler. Daha fazla bilgi için bkz: [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md), / Entry bağlayıcı:*işlevi* seçeneği.  
+ Başlangıç adresi program için varsayılan alt sistem seçimi etkiler. Daha fazla bilgi için [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md), bağlayıcı/Entry:*işlevi* seçeneği.  
   
- Her alt birincil ve ikincil sürüm numaraları için minimum ve varsayılan değerler dahil olmak üzere daha fazla bilgi için bkz: [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) bağlayıcı seçeneği.  
+ Her alt sistemin büyük ve küçük sürüm numaraları için minimum ve varsayılan değerler dahil olmak üzere daha fazla bilgi için bkz. [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) bağlayıcı seçeneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 840ca90b2f704fc3340c67a830856e006123867a
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: bc862ee708239878229825c9aa050c2835222b95
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027820"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466015"
 ---
 # <a name="mfc-classes"></a>MFC Sınıfları
 Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nda dahil edilir.  
@@ -852,7 +852,7 @@ Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nd
  Kullanıcı bir Windows XP veya Vista teması seçtiğinde Microsoft Windows XP veya Microsoft Vista görünümünü taklit eder.  
   
  [CMFCVisualManagerWindows7 Sınıfı](../../mfc/reference/cmfcvisualmanagerwindows7-class.md)  
- Bir uygulama görünümü verir. bir [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama.  
+ Uygulamanın bir Windows 7 uygulaması görünümü verir.  
   
  [CMFCWindowsManagerDialog Sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)  
  Bir MDI uygulamasında MDI alt öğe pencerelerini yönetme olanağı sağlar.  
@@ -1020,7 +1020,7 @@ Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nd
  Kullanılması gereken OLE Edit Links iletişim kutusu için bir özel durum kullanılan yalnızca mevcut güncelleştirme gerektiğinde, bağlantılı veya katıştırılmış bir belgede nesneleri.  
   
  [COleVariant Sınıfı](../../mfc/reference/colevariant-class.md)  
- Kapsülleyen [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) veri türü.  
+ Kapsülleyen [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) veri türü.  
   
  [CPagerCtrl Sınıfı](../../mfc/reference/cpagerctrl-class.md)  
  `CPagerCtrl` Sınıfı, kapsayan pencereye uymayan bir kapsanan pencere görünümüne kaydırabilirsiniz Windows sayfalama denetimini sarar.  

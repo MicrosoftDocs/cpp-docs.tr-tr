@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31968e27c46cb5ea220a4cfe19c36820c4cf8444
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a0bff9ec6502aab5787c492a15e008bc29926163
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369646"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465643"
 ---
 # <a name="allowbind-prevent-dll-binding"></a>/ALLOWBIND (DLL Bağlamayı Önle)
 ```  
@@ -35,15 +35,15 @@ ms.locfileid: "32369646"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- /ALLOWBIND:No biraz Bind.exe için görüntüyü bağlanması için izin verilmiyor gösteren bir DLL'in üstbilgisinde ayarlar. Dijital olarak imzalı olup olmadığını bağlanması için bir DLL istemeyebilirsiniz (bağlama imza geçersiz kılar).  
+ /ALLOWBIND:No görüntü bağlanması için izin verilmiyor Bind.exe'yi gösteren DLL üst bilgisinde bir bit ayarlar. Bir DLL dijital olarak imzalanmışsa bağlı olmasını istemeyebilirsiniz (bağlama imzayı).  
   
- Varolan bir DLL için /ALLOWBIND işlevselliği ile düzenleyebilirsiniz [/ALLOWBIND](../../build/reference/allowbind.md) EDITBIN yardımcı programının seçeneği.  
+ Mevcut bir DLL ile /ALLOWBIND işlevselliği için düzenleyebilirsiniz [/ALLOWBIND](../../build/reference/allowbind.md) yardımcı programının EDITBIN seçeneği.  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Genişletme **yapılandırma özellikleri**, **bağlayıcı**seçip **komut satırı**.  
+2.  Genişletin **yapılandırma özellikleri**, **bağlayıcı**seçip **komut satırı**.  
   
 3.  Girin `/ALLOWBIND:NO` içine **ek seçenekler**.  
   
@@ -54,5 +54,5 @@ ms.locfileid: "32369646"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
  [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)   
- [BindImage işlevi](http://msdn.microsoft.com/library/windows/desktop/ms679278.aspx)   
- [BindImageEx işlevi](http://msdn.microsoft.com/library/windows/desktop/ms679279.aspx)
+ [BindImage işlevi](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)   
+ [BindImageEx işlevi](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)

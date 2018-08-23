@@ -40,16 +40,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4588829b3ec1d348405be925a75c493f4e8594b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 898281e0652345f22c63076cf4b0a73294faaf04
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397759"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464991"
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 
-Bir iş parçacığını sonlandırır; **_endthread** tarafından oluşturulan bir iş parçacığını sonlandırır **_beginthread** ve **_endthreadex** tarafından oluşturulan bir iş parçacığını sonlandırır **_beginthreadex**.
+Bir iş parçacığı sona erer; **_endthread** tarafından oluşturulan bir iş parçacığı sonlandırıldığında **_beginthread** ve **_endthreadex** tarafından oluşturulan bir iş parçacığı sonlandırıldığında **_beginthreadex**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,17 +66,17 @@ void _endthreadex(
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağırabilirsiniz **_endthread** veya **_endthreadex** açıkça bir iş parçacığı; sonlandırmak için ancak **_endthread** veya **_endthreadex** çağrılır iş parçacığı yordamından döndüğünde otomatik olarak geçirilen parametre olarak **_beginthread** veya **_beginthreadex**. Bir iş parçacığı çağrısıyla sonlandırma **endthread** veya **_endthreadex** iş parçacığı için ayrılan kaynakların doğru kurtarma sağlamaya yardımcı olur.
+Çağırabilirsiniz **_endthread** veya **_endthreadex** açıkça bir iş parçacığını sonlandırmak için ancak **_endthread** veya **_endthreadex** çağrılır iş parçacığı yordamdan döndüğünde otomatik olarak geçirilen bir parametre olarak **_beginthread** veya **_beginthreadex**. Çağrısıyla bir iş parçacığı sonlandırma **endthread** veya **_endthreadex** iş parçacığına ayrılan kaynakların doğru kurtarma sağlamaya yardımcı olur.
 
 > [!NOTE]
-> Libcmt.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659.aspx) API; Bu, ayrılan kaynakları geri kazanma çalışma zamanı sistem engeller. **_endthread** ve **_endthreadex** ayrılmış iş parçacığı kaynaklarını geri kazanmak ve ardından arama **ExitThread**.
+> LIBCMT.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API; Bu, ayrılan kaynakları tekrar kullanılabilir hale çalışma zamanı sistemi engeller. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri kazanır ve sonra çağrı **ExitThread**.
 
-**_endthread** iş parçacığı tutamacı otomatik olarak kapanır. (Bu davranış Win32 farklıdır **ExitThread** API.) Bu nedenle, kullandığınızda **_beginthread** ve **_endthread**, açıkça iş parçacığı tutamacı Win32 çağırarak kapatmayın [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API.
+**_endthread** iş parçacığı işleyicisini otomatik olarak kapanır. (Bu davranış, Win32 farklıdır **ExitThread** API.) Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API.
 
-Win32 gibi **ExitThread** API, **_endthreadex** iş parçacığı tutamacı kapatmaz. Bu nedenle, kullandığınızda **_beginthreadex** ve **_endthreadex**, Win32 çağırarak iş parçacığı tutamacı kapatmalısınız **CloseHandle** API.
+Win32 gibi **ExitThread** API **_endthreadex** iş parçacığı işleyicisini kapatmaz. Bu nedenle, kullandığınız zaman **_beginthreadex** ve **_endthreadex**, iş parçacığı işleyicisini Win32 çağırarak kapatmalısınız **CloseHandle** API.
 
 > [!NOTE]
-> **_endthread** ve **_endthreadex** C++ Yıkıcılar bekleyen değil çağrılacak parçacığında neden.
+> **_endthread** ve **_endthreadex** değil çağrılacak iş parçacığında C++ yıkıcıları bekleyen neden.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -85,15 +85,15 @@ Win32 gibi **ExitThread** API, **_endthreadex** iş parçacığı tutamacı kapa
 |**_endthread**|\<Process.h >|
 |**_endthreadex**|\<Process.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Birden çok iş parçacıklı sürümlerini [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Çoklu iş parçacığı sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [_beginthread](beginthread-beginthreadex.md).
+Örneğin bakın [_beginthread](beginthread-beginthreadex.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -412,12 +412,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 317e953d4c1a4e2637c71891fabde542ca751c8e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 791b27e9ff5648a2616c92852a1d4f824d43127b
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339715"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466189"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 Bir cihaz bağlamı nesnesinin sınıfını tanımlar.  
@@ -2537,16 +2537,16 @@ DWORD GetCharacterPlacement(
  İşlenecek karakter dizesine bir işaretçi.  
   
  *nCount*  
- Dizenin uzunluğunu belirtir. ANSI sürümü için bunu bir BYTE sayımıdır ve Unicode işlevi için bir WORD sayımıdır. Daha fazla bilgi için [GetCharacterPlacement](http://msdn.microsoft.com/library/windows/desktop/dd144860\(v=vs.85\).aspx).  
+ Dizenin uzunluğunu belirtir. ANSI sürümü için bunu bir BYTE sayımıdır ve Unicode işlevi için bir WORD sayımıdır. Daha fazla bilgi için [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa).  
   
  *nMaxExtent*  
  Dize işlenme azami ölçüyü (mantıksal birimler cinsinden) cinsinden belirtir. İşlenirse bu kapsamı aşacak karakterler dikkate alınmaz. Gerekli sıralama veya karakter dizileri için hesaplamalar yalnızca dahil edilen karakterlere uygulanır. Bu parametre yalnızca GCP_MAXEXTENT değeri belirtilmişse kullanılır *CertOpenStore* parametresi. İşlev girdi dizesini işlediğinde, her bir karakter ve kapsamı eklenir çıktı, kapsam ve diğer diziler için yalnızca toplam kapsam maksimumu henüz üst sınırını aştı değil ise. Sınıra ulaşıldığında, işlem durdurulur.  
   
  lpResults  
- İşaretçi bir [GCP_Results](http://msdn.microsoft.com/library/windows/desktop/dd144842\(v=vs.85\).aspx) işlevin sonuçlarını alan yapısı.  
+ İşaretçi bir [GCP_Results](/windows/desktop/api/wingdi/ns-wingdi-taggcp_resultsa) işlevin sonuçlarını alan yapısı.  
   
  *CertOpenStore*  
- Dizinin gerekli dizi içine dize işleme belirtir. Bu parametre biri veya daha fazla değer listelenen *CertOpenStore* bölümünü [GetCharacterPlacement](http://msdn.microsoft.com/library/windows/desktop/dd144860\(v=vs.85\).aspx) konu.  
+ Dizinin gerekli dizi içine dize işleme belirtir. Bu parametre biri veya daha fazla değer listelenen *CertOpenStore* bölümünü [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa) konu.  
   
  *str*  
  Bir işaretçi bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) işlenecek nesne.  
@@ -2557,7 +2557,7 @@ DWORD GetCharacterPlacement(
  İşlev başarısız olursa, dönüş değeri sıfırdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi işlevinin işlevselliğine öykünür [GetCharacterPlacement](http://msdn.microsoft.com/library/windows/desktop/dd144860\(v=vs.85\).aspx)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi işlevinin işlevselliğine öykünür [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="getcharabcwidths"></a>  CDC::GetCharABCWidths  
  Belirtilen bir aralıktaki ardışık karakter genişliği geçerli TrueType yazı tipinden alır.  

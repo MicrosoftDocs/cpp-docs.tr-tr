@@ -100,12 +100,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd7160f2998eee18439baa67a93a73fcd73b5c0f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 61fc3d0ddf07887af2f565fd338b337eacd130ef
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853556"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465378"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 Aylık takvim denetiminin işlevselliğini kapsüller.  
@@ -736,7 +736,7 @@ void SetCalendarBorder(int cxyBorder);
 |[in] *cxyBorder*|Kenarlığın piksel cinsinden genişliği.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem başarılı olursa kenarlık genişliği kümesine *cxyBorder* parametresi. Kenarlık genişliği Aksi takdirde, geçerli belirtilen varsayılan değere sıfırlanır [tema](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), veya Temalar kullanılmazsa sıfır.  
+ Bu yöntem başarılı olursa kenarlık genişliği kümesine *cxyBorder* parametresi. Kenarlık genişliği Aksi takdirde, geçerli belirtilen varsayılan değere sıfırlanır [tema](/windows/desktop/Controls/visual-styles-overview), veya Temalar kullanılmazsa sıfır.  
   
  Bu yöntem gönderir [MCM_SETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760993) Windows SDK'da açıklanan ileti.  
   
@@ -758,7 +758,7 @@ void SetCalendarBorderDefault();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kenarlık genişliği geçerli belirtilen varsayılan değere ayarlanır [tema](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), veya Temalar kullanılmazsa sıfır.  
+ Kenarlık genişliği geçerli belirtilen varsayılan değere ayarlanır [tema](/windows/desktop/Controls/visual-styles-overview), veya Temalar kullanılmazsa sıfır.  
   
  Bu yöntem gönderir [MCM_SETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760993) Windows SDK'da açıklanan ileti.  
   

@@ -17,43 +17,48 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b0f4645a6008b954833bf282971a0d3912e1d598
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: dea10165e920c6b0bbd3856fc04e9ec9661e60c4
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39653150"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42571340"
 ---
 # <a name="asweak-function"></a>AsWeak İşlevi
-Belirtilen bir örneğe zayıf bir başvuru alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template<typename T>  
-HRESULT AsWeak(  
-   _In_ T* p,  
-   _Out_ WeakRef* pWeak  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *T*  
- Parametresinin türü için bir işaretçi *p*.  
-  
- *p*  
- Bir tür örneği.  
-  
- *pWeak*  
- Bu işlem tamamlandığında, zayıf bir başvuru parametresi için bir işaretçiye *p*.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu işlem başarılı olursa S_OK; Aksi takdirde, hatanın nedenini gösteren HRESULT hatası.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+
+Belirtilen bir örneğe zayıf bir başvuru alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template<typename T>
+HRESULT AsWeak(
+   _In_ T* p,
+   _Out_ WeakRef* pWeak
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*T*  
+Parametresinin türü için bir işaretçi *p*.
+
+*p*  
+Bir tür örneği.
+
+*pWeak*  
+Bu işlem tamamlandığında, zayıf bir başvuru parametresi için bir işaretçiye *p*.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bu işlem başarılı olursa S_OK; Aksi takdirde, hatanın nedenini gösteren HRESULT hatası.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

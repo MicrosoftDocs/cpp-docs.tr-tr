@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4626e6cfa17b4cc050d10bb74fad0d791a8ceef
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: be23f0f053c6f78225a323abf4c52f15d2ebbe21
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013658"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42580944"
 ---
 # <a name="verifyinterfacehelperverify-method"></a>VerifyInterfaceHelper::Verify Yöntemi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-static void Verify();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Geçerli bir şablon parametresi tarafından belirtilen arabirim belirli gereksinimleri karşıladığını doğrular.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Verifyınterfacehelper yapısı](../windows/verifyinterfacehelper-structure.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+static void Verify();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Geçerli bir şablon parametresi tarafından belirtilen arabirim belirli gereksinimleri karşıladığını doğrular.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[VerifyInterfaceHelper Yapısı](../windows/verifyinterfacehelper-structure.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d00488a7e9a87116317aec35c82b73b40077d8c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ec3bfc550843675673782ea92ff7fad6eae2967b
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37854014"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465375"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
 `CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir Gözat düğmesi içeren düzenlenebilir metin kutusu olan düzenleme Gözat denetimini destekler. Kullanıcı gözatma düğmesini tıkladığında denetim özel bir eylem gerçekleştirir veya dosya Gezgini veya klasör Gezgini içeren standart iletişim kutusunu görüntüler.  
@@ -174,7 +174,7 @@ void EnableFileBrowseButton(
 ### <a name="remarks"></a>Açıklamalar  
  Düzenleme Gözat denetimini dosya gözatma modunda olduğunda ve kullanıcı gözatma düğmesini tıkladığında denetim standart dosya seçimi iletişim kutusunu görüntüler.  
   
- Kullanılabilir bayrakları tam bir listesi için bkz. [LPSTRFİLE yapısı](https://msdn.microsoft.com/library/ms646839.aspx).  
+ Kullanılabilir bayrakları tam bir listesi için bkz. [LPSTRFİLE yapısı](/windows/desktop/api/commdlg/ns-commdlg-tagofna).  
   
 ##  <a name="enablefolderbrowsebutton"></a>  CMFCEditBrowseCtrl::EnableFolderBrowseButton  
  Geçerli düzenleme Gözat denetimini Gözat düğmesini görüntüler ve denetim koyar *klasör tarayıcısı* modu.  

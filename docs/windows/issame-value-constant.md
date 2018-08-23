@@ -17,42 +17,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c16d16fe1965e5e3c6fa69a78dabf9be615daee1
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 299ee0f1c2a892a3219c2337e01d629eadec8a82
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013232"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42581000"
 ---
 # <a name="issamevalue-constant"></a>IsSame::value Sabiti
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template <typename T1, typename T2>  
-struct IsSame  
-{  
-    static const bool value = false;  
-};  
-  
-template <typename T1>  
-struct IsSame<T1, T1>  
-{  
-    static const bool value = true;  
-};  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir türden diğerine aynı olup olmadığını belirtir.  
-  
- **değer** olduğu **true** şablon parametreleri aynı ise ve **false** şablon parametreleri farklıysa.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** internal.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Issame yapısı](../windows/issame-structure.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template <typename T1, typename T2>
+struct IsSame
+{
+    static const bool value = false;
+};
+
+template <typename T1>
+struct IsSame<T1, T1>
+{
+    static const bool value = true;
+};
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir türden diğerine aynı olup olmadığını belirtir.
+
+**değer** olduğu **true** şablon parametreleri aynı ise ve **false** şablon parametreleri farklıysa.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** internal.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IsSame Yapısı](../windows/issame-structure.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

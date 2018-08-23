@@ -1,7 +1,7 @@
 ---
 title: C (yapılandırılmış) ile C++ özel durumlarını karıştırma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/14/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -18,33 +18,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e632faddb3b4f59733710a915ed121a12f4e0c6
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 580fb4c96db70b612135ac48e30bd9c0d45c4d1c
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404869"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466017"
 ---
-# <a name="mixing-c-structured-and-c-exceptions"></a>C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma
-Daha taşınabilir kod yazmak istiyorsanız, yapılandırılmış özel durum işlemeyi C++ programında kullanılması önerilmez. Ancak, bazen ile derleme isteyebileceğiniz **/eha** yapılandırılmış özel durumları ve C++ kaynak kodunu karışımı ve her iki tür özel durumları işlemek için bazı özellik gerekir. Yapılandırılmış özel durum işleyicisi nesneleri veya belirlenmiş özel durumlar kavramı olduğundan, C++ kodu tarafından oluşturulan özel durumları işlemek olamaz; Bununla birlikte, C++ **catch** işleyicileri, yapılandırılmış özel durumları işleyebilir. Bu, C++ özel durum işleme sözdizimini olarak (**deneyin**, **throw**, **catch**) C derleyicisi ancak yapılandırılmış özel durum işleme sözdizimini tarafından kabul edilmiyor (**__try** , **__except**, **__finally**) C++ Derleyici tarafından desteklenir.  
-  
- Bkz: [_set_se_translator](../c-runtime-library/reference/set-se-translator.md) yapılandırılmış özel durumları C++ özel durum işleme hakkında bilgi.  
-  
- Karışık, yapılandırılmış ve C++ özel durumlarını, aşağıdakileri unutmayın:  
-  
-1.  C++ özel durumlarını ve yapılandırılmış özel durumları aynı işlevin içinde karıştırılamaz.  
-  
-2.  Sonlandırma işleyicileri (**__finally** blokları) her zaman, bir özel durum oluştuktan sonra bile geriye doğru izleme sırasında yürütülür.  
-  
-3.  C++ özel durum işleme yakalayabilir ve koruma geriye doğru izleme semantiği ile derlenmiş tüm modüllerin [/EH](../build/reference/eh-exception-handling-model.md) derleyici seçeneği (Bu seçenek geriye doğru izleme semantiği sağlar).  
-  
-4.  Hangi yıkıcı işlevleri tüm nesneleri için çağrılmaz bazı durumlar olabilir. Örneğin, işlev çağrısı bir başlatılmamış işlev işaretçisi yapmaya çalışırken bir yapılandırılmış özel durum oluşur ve bu işlev çağrısından önce oluşturulmuş parametreleri nesneleri alır, nesneleri, Yıkıcılar olmaz yığın bırakma sırasında çağrılır.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [C++ programlarında setjmp veya longjmp kullanma](../cpp/using-setjmp-longjmp.md)  
-  
--   [SEH ve C++ EH arasındaki farklar](../cpp/exception-handling-differences.md)  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)
+# <a name="mixing-c-structured-and-c-exceptions"></a>C (yapılandırılmış) ile C++ özel durumlarını karıştırma
+
+Taşınabilir kod yazmak istiyorsanız, yapılandırılmış özel durum (SEH) C++ programında işleme kullanımı önerilmez. Ancak, bazen kullanarak derleme isteyebileceğiniz [/eha](../build/reference/eh-exception-handling-model.md) yapılandırılmış özel durumları ve C++ kaynak kodunu karışımı ve her iki tür özel durumları işlemek için bazı özellik gerekir. Yapılandırılmış özel durum işleyicisi nesneleri veya belirlenmiş özel durumlar kavramı olduğundan, C++ kodu tarafından oluşturulan özel durumları işleyemez. Bununla birlikte, C++ **catch** işleyicileri, yapılandırılmış özel durumları işleyebilir. C++ özel durum işleme sözdizimini (**deneyin**, **throw**, **catch**) C derleyicisi ancak yapılandırılmış özel durum işleme sözdizimini tarafından kabul (**__try**, **__except**, **__finally**) C++ Derleyici tarafından desteklenir.
+
+Bkz: [_set_se_translator](../c-runtime-library/reference/set-se-translator.md) yapılandırılmış özel durumları C++ özel durum işleme hakkında bilgi için.
+
+Yapılandırılmış karışımı varsa ve C++ özel durumlarını, bu olası sorunlarından haberdar olmalı:
+
+- C++ özel durumlarını ve yapılandırılmış özel durumları aynı işlevin içinde karıştırılamaz.
+
+- Sonlandırma işleyicileri (**__finally** blokları) her zaman, bir özel durum oluştuktan sonra bile geriye doğru izleme sırasında yürütülür.
+
+- C++ özel durum işleme yakalayabilir ve koruma geriye doğru izleme semantiği ile derlenmiş tüm modüllerin [/EH](../build/reference/eh-exception-handling-model.md) derleyici seçenekleri, geriye doğru izleme semantiği hangi etkinleştir.
+
+- Hangi yıkıcı işlevleri tüm nesneleri için çağrılmaz bazı durumlar olabilir. Örneğin, işlev bir başlatılmamış işlev işaretçisi çağrısı yapmaya çalışırken bir yapılandırılmış özel durum oluşursa ve bu işlev çağrısından önce oluşturulmuş parametreleri nesneleri alır söz konusu nesnelerin yok ediciler çağrılır değil yığın bırakma sırasında.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+- [C++ programlarında setjmp veya longjmp kullanma](../cpp/using-setjmp-longjmp.md)
+
+  Kullanımı hakkında daha fazla bilgi `setjmp` ve `longjmp` C++ programlarında.
+
+- [C++'ta yapılandırılmış özel durumları işleme](../cpp/exception-handling-differences.md)
+
+  C++ için tanıtıcı yapısal özel durumlar kullanma yollarına örneklere bakın.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)  

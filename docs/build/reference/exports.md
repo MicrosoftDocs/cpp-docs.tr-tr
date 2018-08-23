@@ -1,7 +1,7 @@
 ---
 title: DIŞARI AKTARMALAR | Microsoft Docs
 ms.custom: ''
-ms.date: 07/11/2018
+ms.date: 08/20/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c642a623e76a9e1344a90efd4f0a47ad195c553e
-ms.sourcegitcommit: e5792fcb89b9ba64c401f90f4f26a8e45d4a2359
+ms.openlocfilehash: f6645ee4c890dab65cde8eab5dc18df1c31082c1
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39322195"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42464605"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -49,11 +49,18 @@ EXPORTS
    func2=func1
 ```
 
-Başka bir modül vermek istediğiniz adı ise dışarı aktarma'nın adı DLL'deki kullanarak belirtin *other_module.exported_name*. Örneğin, bir işlev, DLL dışarı aktarmaları `other_module.func1` ve çağrı yapanların olarak kullanmak istediğiniz `func2`, şunu belirtmeniz gerekir:
+Diğer bazı modülünden dışarı adı ise dışarı aktarma'nın adı DLL'deki kullanarak belirtin *other_module.exported_name*. Örneğin, bir işlev, DLL dışarı aktarmaları `other_module.func1` ve çağrı yapanların olarak kullanmak istediğiniz `func2`, şunu belirtmeniz gerekir:
 
 ```DEF
 EXPORTS
    func2=other_module.func1
+```
+
+Dışarı aktarma DLL'de sıralı kullanarak dışarı aktarmak istediğiniz adı, sıralı olarak dışarı aktarır, başka bir modülden ise belirtin *other_module. #ordinal_number*. Örneğin, burada, sıralı 42 ve çağrı yapanların olarak kullanmak istediğiniz diğer modülünde DLL'niz işlevi dışarı aktarır `func2`, şunu belirtmeniz gerekir:
+
+```DEF
+EXPORTS
+   func2=other_module.#42
 ```
 
 Visual C++ derleyicisi için C++ işlevlerini bir düzenlemeyi Adlandır kullandığından, düzenlenmiş adı internal_name kullanın veya extern "C" kaynak kodunda kullanarak dışarı aktarılan işlevleri tanımlar. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (_) öneki ve soneki oluşan at işareti (@) bağımsız değişken listesinde (ondalık) bayt sayısı ardından.  

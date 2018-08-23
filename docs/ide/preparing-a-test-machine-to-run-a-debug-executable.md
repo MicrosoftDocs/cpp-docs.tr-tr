@@ -1,5 +1,5 @@
 ---
-title: Hata ayıklama yürütülebilir dosyayı çalıştırmak için Test Makinesi hazırlama | Microsoft Docs
+title: Yürütülebilir hata ayıklamayı çalıştırmak için Test Makinesi hazırlama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,34 +14,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33683ebe349fbfdcb3fd51179ed6bc3140510c00
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 3600e5541c095b3879fe60404c9a5994c2a91088
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330303"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464788"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama
-Visual C++ ile yerleşik bir uygulamanın hata ayıklama sürümü test etmek için bir bilgisayarı hazırlamak için uygulamanın bağımlı Visual C++ Kitaplık DLL'lerde hata ayıklama sürümleri dağıtmak zorunda. DLL'leri dağıtılacak olan belirlemek için adımları [bir Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). Genellikle, Visual C++ Kitaplık DLL'lerde hata ayıklama sürümleri "d"; bitiş adlara sahip Örneğin, msvcr100.dll hata ayıklama sürümü msvcr100d.dll olarak adlandırılır.  
+Visual C++ ile oluşturulan bir uygulamanın hata ayıklama sürümü test etmek için bir bilgisayarı hazırlamak için uygulamanın bağımlı Visual C++ Kitaplık DLL'lerin hata ayıklama sürümlerini dağıtmak zorunda. DLL'leri dağıtılacak olan belirlemek için adımları izleyin. [Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). Genellikle, biten "d"; Visual C++ Kitaplık DLL'lerin hata ayıklama sürümlerine sahip Örneğin, hata ayıklama sürümünü msvcr100.DLL'i tekrar msvcr100d.dll olarak adlandırılır.  
   
 > [!NOTE]
->  Bir uygulamanın hata ayıklama sürümleri dağıtılamaz ve Visual C++ Kitaplık DLL'lerde hata ayıklama sürümleri dağıtılamaz. Hata ayıklama ve Visual Studio yüklü olmayan bir bilgisayarda uygulamaları test etme amacına yalnızca, diğer bilgisayarlar için hata ayıklama sürümleri uygulamalar ve Visual C++ DLL'ler dağıtabilirsiniz. Daha fazla bilgi için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
+>  Uygulama hata ayıklama sürümleri yeniden dağıtılamaz ve Visual C++ Kitaplık DLL'lerin hata ayıklama sürümleri yeniden dağıtılamaz. Uygulamalar ve Visual C++ DLL'lerini hata ayıklama sürümleri, hata ayıklama ve Visual Studio yüklü olmayan bir bilgisayarda test etme amacına yalnızca, diğer bilgisayarlara dağıtabilir. Daha fazla bilgi için [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
   
- Bir uygulamanın hata ayıklama sürümü ile birlikte Visual C++ Kitaplık DLL'lerde hata ayıklama sürümleri dağıtmak için üç yolu vardır.  
+ Bir uygulamanın hata ayıklama sürümü ile birlikte Visual C++ Kitaplık DLL'lerin hata ayıklama sürümleri dağıtmanın üç yolu vardır.  
   
--   Birleştirme modülleri için doğru kitaplık sürümü ve uygulamanızın mimarisini içeren bir kurulum projesi kullanarak %windir%\system32\ dizine belirli Visual C++ DLL hata ayıklama sürümü yüklemek için merkezi dağıtım kullanın. Birleştirme modüllerini Program Files veya \Common Files\Merge modülleri (x86) Program Files dizini içinde bulunan\\. Bir birleştirme modülü hata ayıklama sürümü hata ayıklama namefor örnekte Microsoft_VC110_DebugCRT_x86.msm sahiptir. Bu dağıtım örneği bulunabilir [izlenecek yol: bir Visual C++ uygulamasını kullanarak bir kurulum projesi dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).  
+-   Merkezi dağıtım, birleştirme modülleri için doğru kitaplık sürümünü ve uygulamanızın mimarisini içeren bir kurulum projesi kullanarak belirli bir Visual C++ DLL'ye hata ayıklama sürümü %windir%\system32\ dizinine yüklemek için kullanın. Birleştirme modülleri, Program dosyaları veya Program dosyaları (x86) \Common modülleri dizinde bulunur\\. Birleştirme modülü hata ayıklama sürümünü hata ayıklama namefor örnekte, Microsoft_VC110_DebugCRT_x86.msm vardır. Bu dağıtım örneği bulunabilir [izlenecek yol: Kurulum projesi dağıtma bir Visual C++ Application By Using](../ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).  
   
--   Belirli Visual C++ DLL hata ayıklama sürümü uygulamanın yükleme dizininde Program dosyaları veya Program dosyaları (x86) directory \Microsoft Visual Studio içinde sağlanan dosyalarını kullanarak yüklemek için yerel dağıtım kullanmak \<sürüm > \VC\redist\Debug_NonRedist\\.  
+-   Program dosyaları veya Program dosyaları (x86) \Microsoft Visual Studio dizininde sağlanan dosyalarını kullanarak uygulama yükleme dizininde belirli bir Visual C++ DLL'ye hata ayıklama sürümünü yüklemek için yerel dağıtım kullanan \<sürüm > \VC\redist\Debug_NonRedist\\.  
   
     > [!NOTE]
-    >  Visual C++ Kitaplık DLL'ler paylaşılan yan yana derlemeler olarak hata ayıklama sürümleri dağıtmak zorunda uzak başka bir bilgisayara Visual C++ 2005 veya Visual C++ 2008 kullanılarak oluşturulmuş uygulamanızın, hata ayıklama için. Karşılık gelen birleştirme modüllerini yüklemek için Kurulum projesi veya Windows Installer'ı kullanabilirsiniz.  
+    >  Visual C++ Kitaplığı'nı DLL'ler paylaşılan yan yana derlemeler olarak hata ayıklama sürümlerini dağıtmak zorunda uzak başka bir bilgisayarda Visual C++ 2005 ya da Visual C++ 2008 kullanılarak oluşturulmuş uygulamanızın hata ayıklama için. Karşılık gelen birleştirme modüllerini yüklemek için bir kurulum projesi veya Windows Installer'ı kullanabilirsiniz.  
   
--   The_ kullanmak**dağıtma** seçeneğini **Configuration Manager** proje çıktı ve diğer dosyaları uzak bilgisayara kopyalamak için Visual Studio'da iletişim kutusu. 
+-   The_ kullanın**Dağıt** seçeneğini **Configuration Manager** proje çıktısı ve diğer dosyaları uzak bilgisayara kopyalamak üzere Visual Studio'da iletişim kutusu. 
   
- Visual C++ DLL'leri yüklendikten sonra bir ağ paylaşımına uzaktan hata ayıklayıcı çalıştırabilirsiniz. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz: [uzaktan hata ayıklama](/visualstudio/debugger/remote-debugging.md).  
+ Visual C++ DLL'leri yüklendikten sonra uzaktan hata ayıklayıcı bir ağ paylaşımı üzerinde çalıştırabilirsiniz. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz. [uzaktan hata ayıklama](/visualstudio/debugger/remote-debugging.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
  [Visual C++ üzerinde dağıtım](../ide/deployment-in-visual-cpp.md)   
- [Windows Installer komut satırı seçenekleri](http://msdn.microsoft.com/library/windows/desktop/aa367988.aspx)   
+ [Windows Installer komut satırı seçenekleri](/windows/desktop/Msi/command-line-options)   
  [Dağıtım örnekleri](../ide/deployment-examples.md) [uzaktan hata ayıklama](/visualstudio/debugger/remote-debugging.md)

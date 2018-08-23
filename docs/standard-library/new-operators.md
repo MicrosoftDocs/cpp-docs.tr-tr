@@ -7,12 +7,14 @@ f1_keywords:
 - new/std::operator delete
 - new/std::operator new
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
-ms.openlocfilehash: 5f21ec03bd36d889c6fbd8d24a2726fb7f18024f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+author: corob-msft
+ms.author: corob
+ms.openlocfilehash: 327e37d1f13691eca049c98e8b1ab314b393a608
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956120"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464993"
 ---
 # <a name="ltnewgt-operators"></a>&lt;Yeni&gt; işleçleri
 

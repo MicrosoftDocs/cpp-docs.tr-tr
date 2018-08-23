@@ -27,12 +27,16 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-ms.openlocfilehash: 35f9d91164eccc5fc65d60050957a494993a4f11
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+author: mikeblome
+ms.author: mblome
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9162c515f4fd451f3e663895953e106bb4e65135
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885539"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42465089"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama işlevleri
 Bu işlevler, kodlama ve kodunu çözme metin destekler.

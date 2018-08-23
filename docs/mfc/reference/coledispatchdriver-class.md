@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 927ac1c73bee38257396a98a7f7ce1487d0c134d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 61e4a36db71809dab5603211dce91fad3eedd082
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026951"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465381"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver sınıfı
 OLE Otomasyonu nesnesi etkin tarafını uygular.  
@@ -106,7 +106,7 @@ class COleDispatchDriver
  **Başlık:** afxdisp.h  
   
 ##  <a name="attachdispatch"></a>  COleDispatchDriver::AttachDispatch  
- Çağrı `AttachDispatch` üye işlevini eklemek için bir `IDispatch` işaretçisine `COleDispatchDriver` nesne. Daha fazla bilgi için [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+ Çağrı `AttachDispatch` üye işlevini eklemek için bir `IDispatch` işaretçisine `COleDispatchDriver` nesne. Daha fazla bilgi için [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).  
   
 ```  
 void AttachDispatch(
@@ -147,17 +147,17 @@ COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);
  Mevcut bir başvuru `COleDispatchDriver` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Form `COleDispatchDriver`( `LPDISPATCH lpDispatch`, **BOOL**`bAutoRelease` = **TRUE**) bağlanan [IDispatch](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945) arabirimi.  
+ Form `COleDispatchDriver`( `LPDISPATCH lpDispatch`, **BOOL**`bAutoRelease` = **TRUE**) bağlanan [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) arabirimi.  
   
  Form `COleDispatchDriver`( **const**`COleDispatchDriver`& `dispatchSrc`) varolan kopyalar `COleDispatchDriver` nesne ve başvuru sayısını artırır.  
   
- Form `COleDispatchDriver`oluşturur () bir `COleDispatchDriver` nesnesi ancak bağlanamıyor `IDispatch` arabirimi. Kullanmadan önce `COleDispatchDriver`bağlanma (bağımsız değişkenler olmadan), bir `IDispatch` kullanarak kendisine [COleDispatchDriver::CreateDispatch](#createdispatch) veya [COleDispatchDriver::AttachDispatch](#attachdispatch). Daha fazla bilgi için [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+ Form `COleDispatchDriver`oluşturur () bir `COleDispatchDriver` nesnesi ancak bağlanamıyor `IDispatch` arabirimi. Kullanmadan önce `COleDispatchDriver`bağlanma (bağımsız değişkenler olmadan), bir `IDispatch` kullanarak kendisine [COleDispatchDriver::CreateDispatch](#createdispatch) veya [COleDispatchDriver::AttachDispatch](#attachdispatch). Daha fazla bilgi için [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [COleDispatchDriver::CreateDispatch](#createdispatch).  
   
 ##  <a name="createdispatch"></a>  COleDispatchDriver::CreateDispatch  
- Oluşturur bir [IDispatch](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945) arabirimi nesnesi ve ekler `COleDispatchDriver` nesne.  
+ Oluşturur bir [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) arabirimi nesnesi ve ekler `COleDispatchDriver` nesne.  
   
 ```  
 BOOL CreateDispatch(
@@ -199,7 +199,7 @@ LPDISPATCH DetachDispatch();
 ### <a name="remarks"></a>Açıklamalar  
  `IDispatch` Serbest bırakılmaz.  
   
- LPDISPATCH türü hakkında daha fazla bilgi için bkz. [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945) Windows SDK.  
+ LPDISPATCH türü hakkında daha fazla bilgi için bkz. [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/cpp/coledispatchdriver-class_3.cpp)]  
@@ -244,7 +244,7 @@ void AFX_CDECL InvokeHelper(
  Yöntem veya özellik çağrılacak tanımlar.  
   
  *wFlags*  
- Çağrı bağlamını tanımlayan bayraklar `IDispatch::Invoke`. biçimindeki telefon numarasıdır. Olası değerler listesi için bkz. *wFlags* parametresinde [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) Windows SDK.  
+ Çağrı bağlamını tanımlayan bayraklar `IDispatch::Invoke`. biçimindeki telefon numarasıdır. Olası değerler listesi için bkz. *wFlags* parametresinde [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK.  
   
  *vtRet*  
  Dönüş değerinin türünü belirtir. Olası değerler için Açıklamalar bölümüne bakın.  
@@ -281,9 +281,9 @@ void AFX_CDECL InvokeHelper(
   
  *PbParamInfo* bağımsız değişkeni, boşlukla ayrılmış bir listesi **VTS_** sabitler. Bir veya daha fazla (değil virgüller), boşluk ile ayırarak, bu değerleri işlevin parametre listesi belirtir. Olası değerler ile listelenen [EVENT_CUSTOM](event-maps.md#event_custom) makrosu.  
   
- Bu işlev parametreleri VARIANTARG değerlerine dönüştürür ve ardından çağırır [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) yöntemi. Çağrı `Invoke` başarısız olursa, bu işlev bir özel durum oluşturur. ' % S'SCODE (durum kodu) tarafından döndürülen, `IDispatch::Invoke` DISP_E_EXCEPTION, olan bu işlevin bir [COleException](../../mfc/reference/coleexception-class.md) nesne; Aksi takdirde oluşturur bir [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
+ Bu işlev parametreleri VARIANTARG değerlerine dönüştürür ve ardından çağırır [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) yöntemi. Çağrı `Invoke` başarısız olursa, bu işlev bir özel durum oluşturur. ' % S'SCODE (durum kodu) tarafından döndürülen, `IDispatch::Invoke` DISP_E_EXCEPTION, olan bu işlevin bir [COleException](../../mfc/reference/coleexception-class.md) nesne; Aksi takdirde oluşturur bir [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
   
- Daha fazla bilgi için [VARIANTARG](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118), [IDispatch arabirimi uygulama](http://msdn.microsoft.com/library/windows/desktop/ms221037\(v=vs.85\).aspx), [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx), ve [yapısı, COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK içinde.  
+ Daha fazla bilgi için [VARIANTARG](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), ve [yapısı, COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK içinde.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [COleDispatchDriver::CreateDispatch](#createdispatch).  
@@ -313,7 +313,7 @@ LPDISPATCH m_lpDispatch;
 ### <a name="remarks"></a>Açıklamalar  
  `m_lpDispatch` Veri üyesi LPDISPATCH türü genel değişkenidir.  
   
- Daha fazla bilgi için [IDispatch](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945) Windows SDK.  
+ Daha fazla bilgi için [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [COleDispatchDriver::AttachDispatch](#attachdispatch).  
@@ -340,7 +340,7 @@ operator LPDISPATCH();
  [!code-cpp[NVC_MFCOleContainer#8](../../mfc/codesnippet/cpp/coledispatchdriver-class_6.cpp)]  
   
 ##  <a name="releasedispatch"></a>  COleDispatchDriver::ReleaseDispatch  
- Yayınları `IDispatch` bağlantı. Daha fazla bilgi için [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945)  
+ Yayınları `IDispatch` bağlantı. Daha fazla bilgi için [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)  
   
 ```  
 void ReleaseDispatch();

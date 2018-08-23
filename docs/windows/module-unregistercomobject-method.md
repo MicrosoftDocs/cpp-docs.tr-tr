@@ -17,42 +17,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 240ab47099b9e97e9a6bb794083858fe042605d2
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 3409e0e2c1cac5f3934902523edd2653839989ed
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018702"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42575764"
 ---
 # <a name="moduleunregistercomobject-method"></a>Module::UnregisterCOMObject Yöntemi
-Bir veya daha fazla COM nesneleri, diğer uygulamalar için bağlanmasını engelleyen kaydını siler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-virtual HRESULT UnregisterCOMObject(  
-   const wchar_t* serverName,  
-   DWORD* cookies,  
-   unsigned int count  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *SunucuAdı*  
- (Kullanılmayan)  
-  
- *Tanımlama bilgileri*  
- Sınıf nesneleri silinmesine izin değerleri için işaretçiler dizisi. Dizi tarafından oluşturulan [RegisterCOMObject](../windows/module-registercomobject-method.md) yöntemi.  
-  
- *Sayısı*  
- Sınıfların kaydını sayısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini belirten HRESULT işlemi başarısız oldu.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## <a name="see-also"></a>Ayrıca Bkz.
- [Modül Sınıfı](../windows/module-class.md)
+
+Bir veya daha fazla COM nesneleri, diğer uygulamalar için bağlanmasını engelleyen kaydını siler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+virtual HRESULT UnregisterCOMObject(
+   const wchar_t* serverName,
+   DWORD* cookies,
+   unsigned int count
+```
+
+### <a name="parameters"></a>Parametreler
+
+*SunucuAdı*  
+(Kullanılmayan)
+
+*Tanımlama bilgileri*  
+Sınıf nesneleri silinmesine izin değerleri için işaretçiler dizisi. Dizi tarafından oluşturulan [RegisterCOMObject](../windows/module-registercomobject-method.md) yöntemi.
+
+*Sayısı*  
+Sınıfların kaydını sayısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini belirten HRESULT işlemi başarısız oldu.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Modül Sınıfı](../windows/module-class.md)

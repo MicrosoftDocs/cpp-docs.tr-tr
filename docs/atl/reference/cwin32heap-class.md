@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c45a9ab0e709366d5f391e574c9b8b3a5db4a53a
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 5cc725907c93955777cd09b5745651855892e4cd
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881733"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465563"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap sınıfı
 Bu sınıfın uyguladığı [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) Win32 yığın ayırma işlevleri kullanarak.  
@@ -162,7 +162,7 @@ CWin32Heap(
   
  ' % S'parametre heap_no_serıalıze, yığın işlevleri bellek, performans artış ile ayırıp olduğunda'nın karşılıklı dışlama kullanılmayacak belirtir.  
   
- Üçüncü parametre varsayılan olarak 0'a ayarlanır ve bu da yığının istenen şekilde büyümesine izin verir. Bkz: [HeapCreate](http://msdn.microsoft.com/library/windows/desktop/aa366599\(v=vs.85\).aspx) bellek boyutlarının ve bayraklarının açıklaması için.  
+ Üçüncü parametre varsayılan olarak 0'a ayarlanır ve bu da yığının istenen şekilde büyümesine izin verir. Bkz: [HeapCreate](/windows/desktop/api/heapapi/nf-heapapi-heapcreate) bellek boyutlarının ve bayraklarının açıklaması için.  
   
 ##  <a name="dtor"></a>  CWin32Heap:: ~ CWin32Heap  
  Yıkıcı.  

@@ -1,7 +1,7 @@
 ---
 title: Güncelleştirilebilir sağlayıcı oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/16/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e9ee36d2300ed1e86c1f867012ed54c85692f5bd
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: fffc1ceef1f67dadde61190ccb12ce1cd5b7ba9b
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340644"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42464892"
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 
@@ -33,7 +33,7 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
  Ardından, sağlayıcınız tüketici isteyebileceği desteklemek için tüm işlevselliklerini içerir emin olmanız gerekir. Tüketici veri deposunu güncelleştirin isterse, sağlayıcı veri deposunda veri devam kodu içermesi gerekir. Örneğin, veri kaynağı gibi işlemleri gerçekleştirmek için MFC ve C çalışma zamanı kitaplığı kullanabilirsiniz. Bölüm "[veri kaynağına yazma](#vchowwritingtothedatasource)" veri kaynağına yazmak için NULL ve varsayılan değerlerle Dağıt ve sütun bayraklarını ayarlayın açıklar.  
   
 > [!NOTE]
->  UpdatePV güncelleştirilebilir sağlayıcı örneğidir. UpdatePV MyProv ancak güncelleştirilebilir destekle aynıdır.  
+>  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) güncelleştirilebilir sağlayıcı örneğidir. UpdatePV MyProv ancak güncelleştirilebilir destekle aynıdır.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> Güncelleştirilebilir sağlayıcılar hale getirme  
 
@@ -147,3 +147,298 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
 ##  <a name="vchowwritingtothedatasource"></a> Veri kaynağına yazma  
  Veri kaynağından okumak için çağrı `Execute` işlevi. Veri kaynağına yazmak için çağrı `FlushData` işlevi. (Genel olarak, bir tablo veya dizini diske yaptığınız değişiklikleri kaydetmek için yol temizler.)  
 
+```cpp
+
+FlushData(HROW, HACCESSOR);  
+
+```
+
+Erişimci tanıtıcısı (HACCESSOR) bağımsız değişkenleri ve satır tanıtıcısı (HROW) yazmak için belirtmesine olanak sağlar. Genellikle, bir kerede tek bir veri alanının yazın.
+
+`FlushData` Yöntemi içinde başlangıçta depolandığı biçiminde veri yazar. Bu işlev geçersiz kılmayacak sağlayıcınızın düzgün biçimde çalışmayacağıdır ancak değişiklikleri veri deposuna kullanılmaz.
+
+### <a name="when-to-flush"></a>Ne zaman temizleme
+Verileri veri deposuna yazılması her sağlayıcı şablonları FlushData çağırın. Bu genellikle (ama her zaman kullanılmaz) aşağıdaki işlevlere çağrı sonucunda oluşur:
+
+- `IRowsetChange::DeleteRows`
+
+- `IRowsetChange::SetData`
+
+- `IRowsetChange::InsertRows` (satır eklemek için yeni veri yoksa)
+
+- `IRowsetUpdate::Update`
+
+### <a name="how-it-works"></a>Nasıl çalışır?
+
+Tüketici temizleme (örneğin, güncelleştirme) gerektiren bir çağrıda bulunur ve bu çağrı, her zaman şunları yapar sağlayıcıya geçirilir:
+
+- Çağrıları `SetDBStatus` bağlı bir durum değerine sahip olduğunuzda.
+
+- Sütun bayrakları denetler.
+
+- Çağrıları `IsUpdateAllowed`.
+
+Bu üç adımı güvenliğini sağlamak. Ardından sağlayıcısı çağrıları `FlushData`.
+
+### <a name="how-to-implement-flushdata"></a>FlushData gerçekleştirme
+
+Uygulamak için `FlushData`, çeşitli sorunlar dikkate almanız gerekir:
+
+Veri deposu değişiklikleri işleyebildiğinden emin olun.
+
+NULL değerleri işleme.
+
+### <a name="handling-default-values"></a>Varsayılan değerleri işleme.
+
+Kendi FlushData yöntemi uygulamak için gerekir:
+
+- Satır kümesi sınıfı gidin.
+
+- Satır kümesinde, sınıf bildirimi yerleştirin:
+
+   ```cpp
+   HRESULT FlushData(HROW, HACCESSOR)  
+   {  
+      // Insert your implementation here and return an HRESULT.  
+   }  
+   ```
+
+- Bir uygulamasını sağlamak `FlushData`.
+
+FlushData iyi bir uygulaması, yalnızca satır ve gerçekten güncelleştirilir sütunları depolar. Geçerli satır ve sütunları için iyileştirme depolanmakta olan belirlemek için HROW ve HACCESSOR parametreleri kullanabilirsiniz.
+
+Genellikle, en büyük güçlük, kendi yerel veri deposu ile çalışmaktadır. Mümkünse, deneyin:
+
+- Veri deponuz olarak basit yazma yöntemi tutun.
+
+- (İsteğe bağlı, ancak tavsiye edilir) NULL değerleri işleyin.
+
+- (İsteğe bağlı, ancak tavsiye edilir) varsayılan değerlerini işler.
+
+Yapılacak en iyi şey data Store NULL ve varsayılan değerleri için gerçek belirtilen değerlere sahip olmaktır. Bu veriler tahmin edebilmek en iyisidir. Aksi durumda, boş ve varsayılan değerlere izin vermeyecek şekilde önerilir.
+
+Aşağıdaki örnekte gösterildiği nasıl `FlushData` oluşturma RUpdateRowset sınıfında uygulanır (satır örnek koda bakın):
+
+```cpp
+///////////////////////////////////////////////////////////////////////////  
+// class RUpdateRowset (in rowset.h)  
+...  
+HRESULT FlushData(HROW, HACCESSOR)  
+{  
+    ATLTRACE2(atlTraceDBProvider, 0, "RUpdateRowset::FlushData\n");  
+  
+    USES_CONVERSION;  
+    enum {  
+        sizeOfString = 256,  
+        sizeOfFileName = MAX_PATH  
+    };  
+    FILE*    pFile = NULL;  
+    TCHAR    szString[sizeOfString];  
+    TCHAR    szFile[sizeOfFileName];  
+    errcode  err = 0;  
+  
+    ObjectLock lock(this);  
+  
+    // From a filename, passed in as a command text,   
+    // scan the file placing data in the data array.  
+    if (m_strCommandText == (BSTR)NULL)  
+    {  
+        ATLTRACE( "RRowsetUpdate::FlushData -- "  
+                  "No filename specified\n");  
+        return E_FAIL;  
+    }  
+  
+    // Open the file  
+    _tcscpy_s(szFile, sizeOfFileName, OLE2T(m_strCommandText));  
+    if ((szFile[0] == _T('\0')) ||   
+        ((err = _tfopen_s(&pFile, &szFile[0], _T("w"))) != 0))  
+    {  
+        ATLTRACE("RUpdateRowset::FlushData -- Could not open file\n");  
+        return DB_E_NOTABLE;  
+    }  
+  
+    // Iterate through the row data and store it.  
+    for (long l=0; l<m_rgRowData.GetSize(); l++)  
+    {  
+        CAgentMan am = m_rgRowData[l];  
+  
+        _putw((int)am.dwFixed, pFile);  
+  
+        if (_tcscmp(&am.szCommand[0], _T("")) != 0)  
+            _stprintf_s(&szString[0], _T("%s\n"), am.szCommand);  
+        else  
+            _stprintf_s(&szString[0], _T("%s\n"), _T("NULL"));  
+        _fputts(szString, pFile);  
+  
+        if (_tcscmp(&am.szText[0], _T("")) != 0)  
+            _stprintf_s(&szString[0], _T("%s\n"), am.szText);  
+        else  
+            _stprintf_s(&szString[0], _T("%s\n"), _T("NULL"));  
+        _fputts(szString, pFile);  
+  
+        if (_tcscmp(&am.szCommand2[0], _T("")) != 0)  
+            _stprintf_s(&szString[0], _T("%s\n"), am.szCommand2);  
+        else  
+            _stprintf_s(&szString[0], _T("%s\n"), _T("NULL"));  
+        _fputts(szString, pFile);  
+  
+        if (_tcscmp(&am.szText2[0], _T("")) != 0)  
+            _stprintf_s(&szString[0], _T("%s\n"), am.szText2);  
+        else  
+            _stprintf_s(&szString[0], _T("%s\n"), _T("NULL"));  
+        _fputts(szString, pFile);  
+    }  
+  
+    if (fflush(pFile) == EOF || fclose(pFile) == EOF)  
+    {  
+        ATLTRACE("RRowsetUpdate::FlushData -- "  
+                 "Couldn't flush or close file\n");  
+    }  
+  
+    return S_OK;  
+}  
+```
+
+### <a name="handling-changes"></a>Değişiklikleri işleme
+
+Sağlayıcınız değişiklikleri işlemek önce data store (örneğin, bir metin dosyası veya video dosyası) üzerinde değişiklik yapmanızı sağlayan olanaklara sahip olduğundan emin olmak gerekir. Kullanmıyorsa, kod sağlayıcısı projeden ayrı olarak oluşturmalısınız.
+
+### <a name="handling-null-data"></a>BOŞ verileri işleme
+
+Son kullanıcı NULL veri göndermesi mümkündür. Veri kaynağı alanları için NULL değerler yazma, olası sorunları olabilir. Şehir ve posta kodu için değerleri kabul eden bir sipariş alma uygulama düşünün; Bu durumda, teslim imkansız olur çünkü her ikisi de değerler, ancak değil ne kabul edemedi. Bu nedenle, belirli bir uygulama için anlamlı alanlarındaki NULL değerleri birleşimlerini sınırlamak zorunda.
+
+Sağlayıcı geliştiricisi olarak, bu verileri nasıl depolar, nasıl bu verileri veri deposundan okur ve nasıl kullanıcıya belirlersiniz düşünmeniz gerekir. Satır kümesi veri veri kaynağındaki verileri durumunu değiştirmek nasıl özellikle dikkate almanız gereken (örneğin, DataStatus = NULL). Bir NULL değer içeren bir alanda bir tüketici eriştiğinde, dönüş değeri karar verin.
+
+Kod oluşturma bakın; Bu, NULL veri sağlayıcı nasıl işleyebileceğini gösterir. UpdatePV öğesinde sağlayıcı NULL veri dizesi "NULL" yazarak veri deposunda saklar. NULL veri veri deposundan okur, o dizeyi görür ve ardından boş bir dize oluşturma arabellek boşaltır. Ayrıca, bir geçersiz kılma sahip `IRowsetImpl::GetDBStatus` , veri değeri boşsa, BT DBSTATUS_S_ISNULL döndürür.
+
+### <a name="marking-nullable-columns"></a>Boş değer atanabilir sütun işaretleme
+Şema satır kümeleri uygularsanız (bkz `IDBSchemaRowsetImpl`), uygulamanızın (genellikle sağlayıcınız tarafından CxxxSchemaColSchemaRowset işaretlenmiştir) DBSCHEMA_COLUMNS satır kümesindeki sütunu boş değer atanabilir belirtmeniz gerekir.
+
+Tüm null yapılabilir sütunlar sürümünüz DBCOLUMNFLAGS_ISNULLABLE değeri içerdiğini belirtmeniz gerekir `GetColumnInfo`.
+
+Sütun null yapılabilir, olarak işaretlemek başarısız olursa OLE DB Şablonları uygulamasında, bir değer içermelidir ve tüketici null değerler göndermesine izin vermez sağlayıcı varsayar.
+
+Aşağıdaki örnekte gösterildiği nasıl `CommonGetColInfo` işlevi CUpdateCommand gerçekleştirilir (bkz. öğesinde) UpdatePV. Sütun null yapılabilir sütunlar için bu DBCOLUMNFLAGS_ISNULLABLE şeklinize unutmayın.
+
+```cpp
+/////////////////////////////////////////////////////////////////////////////  
+// CUpdateCommand (in UpProvRS.cpp)  
+  
+ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols, bool bBookmark)  
+{  
+    static ATLCOLUMNINFO _rgColumns[6];  
+    ULONG ulCols = 0;  
+  
+    if (bBookmark)  
+    {  
+        ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0,  
+                            sizeof(DWORD), DBTYPE_BYTES,  
+                            0, 0, GUID_NULL, CAgentMan, dwBookmark,  
+                            DBCOLUMNFLAGS_ISBOOKMARK)  
+        ulCols++;  
+    }  
+  
+    // Next set the other columns up.  
+    // Add a fixed length entry for OLE DB conformance testing purposes  
+    ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Fixed"), 1, 4, DBTYPE_UI4,  
+                        10, 255, GUID_NULL, CAgentMan, dwFixed,   
+                        DBCOLUMNFLAGS_WRITE |   
+                        DBCOLUMNFLAGS_ISFIXEDLENGTH)  
+    ulCols++;  
+  
+    ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Command"), 2, 16, DBTYPE_STR,  
+                        255, 255, GUID_NULL, CAgentMan, szCommand,  
+                        DBCOLUMNFLAGS_WRITE | DBCOLUMNFLAGS_ISNULLABLE)  
+    ulCols++;  
+    ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Text"), 3, 16, DBTYPE_STR,   
+                        255, 255, GUID_NULL, CAgentMan, szText,   
+                        DBCOLUMNFLAGS_WRITE | DBCOLUMNFLAGS_ISNULLABLE)  
+    ulCols++;  
+  
+    ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Command2"), 4, 16, DBTYPE_STR,  
+                        255, 255, GUID_NULL, CAgentMan, szCommand2,   
+                        DBCOLUMNFLAGS_WRITE | DBCOLUMNFLAGS_ISNULLABLE)  
+    ulCols++;  
+    ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Text2"), 5, 16, DBTYPE_STR,  
+                        255, 255, GUID_NULL, CAgentMan, szText2,   
+                        DBCOLUMNFLAGS_WRITE | DBCOLUMNFLAGS_ISNULLABLE)  
+    ulCols++;  
+  
+    if (pcCols != NULL)  
+    {  
+        *pcCols = ulCols;  
+    }  
+  
+    return _rgColumns;  
+}  
+
+```
+
+### <a name="default-values"></a>Varsayılan değerler
+
+BOŞ verilerle gibi varsayılan değerleri değiştirme ile ilgili sorumluluğu sahip.
+
+FlushData ve yürütme S_OK döndürmek için varsayılandır. Bu işlev geçersiz ise, bu nedenle, değişiklikleri başarılı olması için görünür (S_OK döndürülür), ancak veri deposuna iletilmez.
+
+(Satır) UpdatePV örneğindeki `SetDBStatus` yöntemi varsayılan değerleri şu şekilde işler:
+
+```cpp
+virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,  
+                            ATLCOLUMNINFO* pColInfo)  
+{  
+    ATLASSERT(pRow != NULL && pColInfo != NULL && pdbStatus != NULL);  
+  
+    void* pData = NULL;  
+    char* pDefaultData = NULL;  
+    DWORD* pFixedData = NULL;  
+  
+    switch (*pdbStatus)  
+    {  
+        case DBSTATUS_S_DEFAULT:  
+            pData = (void*)&m_rgRowData[pRow->m_iRowset];  
+            if (pColInfo->wType == DBTYPE_STR)  
+            {  
+                pDefaultData = (char*)pData + pColInfo->cbOffset;  
+                strcpy_s(pDefaultData, "Default");  
+            }  
+            else  
+            {  
+                pFixedData = (DWORD*)((BYTE*)pData +   
+                                          pColInfo->cbOffset);  
+                *pFixedData = 0;  
+                return S_OK;  
+            }  
+            break;  
+        case DBSTATUS_S_ISNULL:  
+        default:  
+            break;  
+    }  
+    return S_OK;  
+}  
+```
+
+### <a name="column-flags"></a>Sütun bayrakları
+
+Varsayılan değerleri sütunlar üzerinde destekliyorsa, meta verileri kullanarak ayarlamanız gerekir \<sağlayıcı sınıfı\>SchemaRowset sınıfı. Ayarlama `m_bColumnHasDefault` VARIANT_TRUE =.
+
+Ayrıca DBCOLUMNFLAGS kullanarak listelenmiş türü belirtilen sütun bayrakları ayarlamanızı sorumluluğu vardır. Sütun bayrakları sütun özelliklerini açıklar.
+
+Örneğin, `CUpdateSessionColSchemaRowset` sınıfı (içinde Session.h'deki) UpdatePV içinde ilk sütun bu şekilde ayarlanır:
+
+```cpp
+// Set up column 1  
+trData[0].m_ulOrdinalPosition = 1;  
+trData[0].m_bIsNullable = VARIANT_FALSE;  
+trData[0].m_bColumnHasDefault = VARIANT_TRUE;  
+trData[0].m_nDataType = DBTYPE_UI4;  
+trData[0].m_nNumericPrecision = 10;  
+trData[0].m_ulColumnFlags = DBCOLUMNFLAGS_WRITE |  
+                            DBCOLUMNFLAGS_ISFIXEDLENGTH;  
+lstrcpyW(trData[0].m_szColumnDefault, OLESTR("0"));  
+m_rgRowData.Add(trData[0]);  
+```
+
+Bu kod, diğerlerinin yanı sıra sütunu yazılabilir, 0, varsayılan değeri destekler ve sütundaki tüm verilerin aynı uzunluğa sahip olduğunu belirtir. Değişken uzunluğa sahip bir sütun verileri istiyorsanız, bu bayrağı ayarlamazsınız.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[OLE DB Sağlayıcısı Oluşturma](creating-an-ole-db-provider.md)

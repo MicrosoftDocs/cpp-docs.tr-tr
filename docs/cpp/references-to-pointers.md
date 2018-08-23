@@ -1,7 +1,7 @@
 ---
 title: İşaretçi başvuruları | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/20/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3de0974608f313a497dfb93d357995e7cc578e4d
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 1aff9718d36757e67e5c7e47a1470b4f9e428bf7
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467496"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42465296"
 ---
 # <a name="references-to-pointers"></a>İşaretçi Başvuruları
 İşaretçilerin başvuruları, nesne başvurularıyla hemen hemen aynı şekilde bildirilebilir. Bir işaretçi başvurusunun bildirilmesi, normal bir işaretçi gibi kullanılan değiştirilebilir bir değer oluşturur.  
@@ -76,7 +76,7 @@ int main( int argc, char *argv[] ) {
   
    // Read a text file from the standard input device and  
    //  build a binary tree.  
-   //while( !cin.eof() )   
+   while( !cin.eof() )   
    {  
       cin.get( szBuf, sizeOfBuffer, '\n' );  
       cin.get();  

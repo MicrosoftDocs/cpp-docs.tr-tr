@@ -1,20 +1,22 @@
 ---
 layout: LandingPage
-author: jasongroce
-ms.author: apexprodleads
 ms.topic: landing-page
 title: C++ belgeleri ile Linux geliştirme
-description: Oluşturun ve Linux üzerinde çalışan uygulamalarda hata ayıklama.
-ms.openlocfilehash: c4794dbeb7e5a1d356e251686653c6c0aa0a023a
-ms.sourcegitcommit: c770a343def04ae77522708387c3f7c470e49969
+description: Oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklayın.
+author: mikeblome
+ms.author: mblome
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d93ad1fd32003444c9ddd991e1810fbc5bec79d5
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29794186"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42465842"
 ---
 # <a name="linux-development-with-c-documentation"></a>C++ belgeleri ile Linux geliştirme
 
-Oluşturun ve Linux üzerinde çalışan uygulamalarda hata ayıklama.
+Oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklayın.
 
 <ul class="panelContent cardsF">
     <li>
@@ -28,8 +30,8 @@ Oluşturun ve Linux üzerinde çalışan uygulamalarda hata ayıklama.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Yükleme ve Linux iş yükü yapılandırma</h3>
-                        <p>C++'ta Linux uygulamaları geliştirmek için Visual Studio Kurulumu öğrenin.</p>
+                        <h3>Yükleme ve Linux iş yükünü yapılandırma</h3>
+                        <p>C++ Linux uygulamalarında oluşturmak için Visual Studio ayarlamayı öğrenin.</p>
                     </div>
                 </div>
             </div>
@@ -48,7 +50,7 @@ Oluşturun ve Linux üzerinde çalışan uygulamalarda hata ayıklama.
                     </div>
                     <div class="cardText">
                         <h3>Visual C++ için Linux blogu</h3>
-                        <p>Linux iş yükü için Visual C++'ye eklenen yeni özellikler ile güncel tutun.</p>
+                        <p>Visual C++ için Linux iş yükü için eklenen yeni özellikler ile güncel tutun.</p>
                     </div>
                 </div>
             </div>

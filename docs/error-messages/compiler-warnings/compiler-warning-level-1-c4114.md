@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78402d4487eecde00c55ea5e0aad913d97226325
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9969f58b24defdb3dfa8a96437769d0b19e4569e
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283929"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465293"
 ---
 # <a name="compiler-warning-level-1-c4114"></a>Derleyici Uyarısı (düzey 1) C4114
-birden çok kez kullanılan aynı tür niteleyicisi  
+aynı tür niteleyicisi birden fazla kez kullanıldı  
   
- Tür niteleyicisi türü bildirimi veya tanımı kullanır (**const**, `volatile`, **imzalı**, veya `unsigned`) birden çok kez. Bu Microsoft Uzantıları (/Ze) içeren bir uyarı ve ANSI uyumluluğu (/Za) altında bir hata neden olur.  
+ Tür niteleyicisine türü bildirim veya tanım kullanır (**const**, **geçici**, **imzalı**, veya **işaretsiz**) birden çok kez. Bu, bir uyarı ile Microsoft Uzatmaları (/Ze) ve ANSI uyumluluğu (/Za) altında bir hata neden olur.  
   
- Aşağıdaki örnek C4114 oluşturur:  
+ Aşağıdaki örnek, C4114 oluşturur:  
   
 ```  
 // C4114.cpp  
@@ -36,7 +36,7 @@ birden çok kez kullanılan aynı tür niteleyicisi
 volatile volatile int i;   // C4114  
 ```  
   
- Aşağıdaki örnek C4114 oluşturur:  
+ Aşağıdaki örnek, C4114 oluşturur:  
   
 ```  
 // C4114_b.cpp  

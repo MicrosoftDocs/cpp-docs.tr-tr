@@ -1,5 +1,5 @@
 ---
-title: İşlevleri geçersiz | Microsoft Docs
+title: Kullanılmayan işlevler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -36,33 +36,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6fcb14a91aadb01d3962758b19ce636fddfbe13
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3d04265e27cd569b8b390bb19377a3111fbb9c8c
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391541"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465464"
 ---
-# <a name="obsolete-functions"></a>Artık kullanılmayan işlevleri
-Belirli kitaplık işlevleri geçersizdir ve daha yeni eşdeğerleri. Bu güncelleştirilmiş sürümleri için değiştirme öneririz. Artık kullanılmayan diğer işlevleri CRT kaldırıldı. Bu konu, kullanılmayan olarak kullanım dışı işlevler ve belirli bir Visual Studio sürümünde kaldırılmıştır işlevleri listeler.  
+# <a name="obsolete-functions"></a>Kullanılmayan işlevler
+Belirli bir kitaplığı işlevleri artık kullanılmayan ve daha yeni eşdeğerleri vardır. Bu hizmetin güncel sürümleriyle değiştirmeniz önerilir. Eski diğer işlevleri CRT kaldırılmıştır. Bu konu, kullanılmayan olarak kullanım dışı işlevleri ve Visual Studio'nun belirli bir sürümde kaldırılan işlevleri listeler.  
   
 ## <a name="deprecated-as-obsolete-in-visual-studio-2015"></a>Visual Studio 2015'te eski olarak kullanım dışı  
   
-|Artık kullanılmayan işlevi|Alternatifi|  
+|Eski işlevi|Alternatif|  
 |-----------------------|-----------------|  
 |`is_wctype`|[iswctype](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|  
-|`_loaddll`|[LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187), [LoadLibraryEx](http://go.microsoft.com/fwlink/p/?LinkID=236091), veya [LoadPackagedLibrary](https://msdn.microsoft.com/library/windows/desktop/hh447159\(v=vs.85\).aspx)|  
+|`_loaddll`|[LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187), [LoadLibraryEx](http://go.microsoft.com/fwlink/p/?LinkID=236091), veya [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)|  
 |`_unloaddll`|[FreeLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259188)|  
 |`_getdllprocaddr`|[GetProcAddress](../build/getprocaddress.md)|  
 |`_seterrormode`|[SetErrorMode](http://go.microsoft.com/fwlink/p/?LinkID=255242)|  
-|`_beep`|[Bip](https://msdn.microsoft.com/library/windows/desktop/ms679277\(v=vs.85\).aspx)|  
-|`_sleep`|[Uyku](https://msdn.microsoft.com/library/windows/desktop/ms686298\(v=vs.85\).aspx)|  
+|`_beep`|[Bip sesi](https://msdn.microsoft.com/library/windows/desktop/ms679277\(v=vs.85\).aspx)|  
+|`_sleep`|[Uyku](/windows/desktop/api/synchapi/nf-synchapi-sleep)|  
 |`_getsystime`|[GetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724338\(v=vs.85\).aspx)|  
 |`_setsystime`|[SetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724936\(v=vs.85\).aspx)|  
   
 ## <a name="removed-from-the-crt-in-visual-studio-2015"></a>Visual Studio 2015'te CRT kaldırıldı  
   
-|Artık kullanılmayan işlevi|Alternatifi|  
+|Eski işlevi|Alternatif|  
 |-----------------------|-----------------|  
 |[_cgets, _cgetws](../c-runtime-library/cgets-cgetws.md)|[_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md)|  
 |[gets, _getws](../c-runtime-library/gets-getws.md)|[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|  
@@ -75,7 +75,7 @@ Belirli kitaplık işlevleri geçersizdir ve daha yeni eşdeğerleri. Bu güncel
 |[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|Yok.|  
 |[_set_output_format](../c-runtime-library/set-output-format.md)|Yok.|  
   
-## <a name="removed-from-the-crt-in-earlier-versions-of-visual-studio"></a>Visual Studio'nun önceki sürümlerindeki CRT kaldırıldı  
+## <a name="removed-from-the-crt-in-earlier-versions-of-visual-studio"></a>Visual Studio'nun önceki sürümlerinde CRT kaldırıldı  
  [_lock](../c-runtime-library/lock.md)  
   
  [_unlock](../c-runtime-library/unlock.md)

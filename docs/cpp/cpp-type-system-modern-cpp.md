@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b5a91caab06f4d03beeea8ba542e1ebc12a8ecb
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 394136ccd11b4efd9f312c82acad7e9258309551
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407867"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465561"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 Kavramını *türü* C++'da çok önemlidir. Her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri; derlenebilmeleri için bir türe sahip olmalıdır. Ayrıca, her ifadeye (değişmez değerler dahil), değerlendirilmeden önce derleyicisi tarafından dolaylı olarak bir tür tanımlanır. Bazı tür örnekleri, **int** tamsayı değerlerini saklamak için **çift** kayan nokta değerini (olarak da bilinen *skaler* veri türleri), veya standart kitaplık sınıfı [std::basic_string](../standard-library/basic-string-class.md) metin depolamak için. Tanımlayarak kendi türünüzü oluşturabilirsiniz bir **sınıfı** veya **yapı**. Tür, değişken (veya ifade sonucu) için atanacak bellek miktarını, bu değişkende depolanabilecek değer türlerini, bu değerlerin (bit modelleri olarak) nasıl yorumlanacağını ve gerçekleştirilebilecek işlemleri belirtir. Bu makale, C++ tür sistemiyle ilgili önemli özellikleri basit bir şekilde inceler.  
@@ -157,7 +157,7 @@ void someFunction() {
  Genel olarak, işaretçiler hakkında daha fazla bilgi için bkz [işaretçileri](../cpp/pointers-cpp.md).  
   
 ## <a name="windows-data-types"></a>Windows veri türleri  
- C ve C++ için Klasik Win32 programlamada çoğu işlev Windows özgü tür tanımlarını kullanın ve #define makroları (tanımlanan `windef.h`) dönüş değerleri ve parametre türlerini belirtmek için. Bu Windows veri türleri, genellikle C/C++ yerleşik türlerine verilmiş olan özel adlardır (takma adlardır) var. Bu tür tanımlarının ve önişlemci tanımlarının eksiksiz listesi için bkz [Windows veri türleri](http://msdn.microsoft.com/4553cafc-450e-4493-a4d4-cb6e2f274d46). HRESULT ve LCID gibi bu tür tanımlarından bazıları kullanışlı ve açıklayıcıdır. INT gibi diğerlerinin özel bir anlamı yoktur ve bunlar yalnızca temel C++ türlerinin diğer adlarıdır. Diğer Windows veri türleri C programlama ve 16-bit işlemci günlerinden kalma adlara sahiptir ve bu adların modern donanım veya işletim sistemlerinde herhangi bir amacı ya da anlamı yoktur. Olarak listelenen Windows Runtime library ile ilişkilendirilmiş özel veri türleri de vardır [Windows çalışma zamanı temel veri türlerini](http://msdn.microsoft.com/b5735851-ec07-48c1-92b4-ca9f768096f6). Modern C++ programlamada, Windows türü değerin nasıl yorumlanacağına ilişkin ek anlamlar iletmedikçe C++ temel türlerinin tercih edilmesi genel bir yönergedir.  
+ C ve C++ için Klasik Win32 programlamada çoğu işlev Windows özgü tür tanımlarını kullanın ve #define makroları (tanımlanan `windef.h`) dönüş değerleri ve parametre türlerini belirtmek için. Bu Windows veri türleri, genellikle C/C++ yerleşik türlerine verilmiş olan özel adlardır (takma adlardır) var. Bu tür tanımlarının ve önişlemci tanımlarının eksiksiz listesi için bkz [Windows veri türleri](/windows/desktop/WinProg/windows-data-types). HRESULT ve LCID gibi bu tür tanımlarından bazıları kullanışlı ve açıklayıcıdır. INT gibi diğerlerinin özel bir anlamı yoktur ve bunlar yalnızca temel C++ türlerinin diğer adlarıdır. Diğer Windows veri türleri C programlama ve 16-bit işlemci günlerinden kalma adlara sahiptir ve bu adların modern donanım veya işletim sistemlerinde herhangi bir amacı ya da anlamı yoktur. Olarak listelenen Windows Runtime library ile ilişkilendirilmiş özel veri türleri de vardır [Windows çalışma zamanı temel veri türlerini](/windows/desktop/WinRT/base-data-types). Modern C++ programlamada, Windows türü değerin nasıl yorumlanacağına ilişkin ek anlamlar iletmedikçe C++ temel türlerinin tercih edilmesi genel bir yönergedir.  
   
 ## <a name="more-information"></a>Daha fazla bilgi  
  C++ tür sistemi hakkında daha fazla bilgi için aşağıdaki konulara bakın.  

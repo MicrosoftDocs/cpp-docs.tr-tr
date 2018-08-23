@@ -4,12 +4,16 @@ ms.custom: ''
 ms.date: 03/28/2017
 ms.topic: language-reference
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: 89da1bbfc89496f54c829093c2c0ccf17d2f9123
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+author: mikeblome
+ms.author: mblome
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 459663eca36110209445ad20c4a10a258d43733f
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401980"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42466481"
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 

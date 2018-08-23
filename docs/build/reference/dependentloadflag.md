@@ -1,6 +1,6 @@
 ---
-title: / DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük flags)
-description: /DEPENDENTLOADFLAG seçeneği varsayılan bayrakları LoadLibrary kullanılarak yüklenen DLL'ler için ayarlar
+title: / DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük bayrakları)
+description: /DEPENDENTLOADFLAG seçeneği varsayılan bayrakları LoadLibrary kullanılarak yüklenen DLL'ler için ayarlar.
 ms.custom: ''
 ms.date: 05/18/2018
 ms.technology:
@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a171f3c2edbbbf614a986ff78dd2405e734a1d1
-ms.sourcegitcommit: d1f576a0f59678edc3d93508cf46485138332178
+ms.openlocfilehash: 94f7667d7da8d8e9cd7ef38cb01d0f03b0da82e3
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753725"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466379"
 ---
-# <a name="dependentloadflag-set-default-dependent-load-flags"></a>/ DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük flags)
+# <a name="dependentloadflag-set-default-dependent-load-flags"></a>/ DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük bayrakları)
 
-Ayarlar varsayılan yük bayrakları kullanılan `LoadLibrary` DLL'leri yüklemek için kullanılır.
+Kullanılan ayarlar varsayılan yük bayrakları `LoadLibrary` DLL'lerini yüklemek için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,25 +39,25 @@ Ayarlar varsayılan yük bayrakları kullanılan `LoadLibrary` DLL'leri yükleme
 
 |||
 |-|-|
-*loadflags*|İsteğe bağlı "C" Stili 16 bit tam sayı değeri ondalık, sıfır sekizli veya başında onaltılık `0x`, tümüne uygulamak için bağımlı yük bayrakları belirtir [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187) çağrıları. Varsayılan değer 0’dır.
+*loadflags*|İsteğe bağlı "C"-style 16 bit tam sayı değeri ondalık, önüne sıfır getirilmiş sekizlik veya onaltılık bir lider olan `0x`, Tümüne Uygula için bağımlı yük bayrakları belirtir [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187) çağırır. Varsayılan değer 0’dır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek Visual Studio 2017 yenidir ve yalnızca Windows 10 RS1 ve sonraki sürümleri çalıştıran uygulamaları için geçerlidir. Bu seçenek, uygulama çalıştırma diğer işletim sistemleri tarafından göz ardı edilir.
+Bu seçenek, Visual Studio 2017'de yenidir ve yalnızca Windows 10 RS1 ve üzeri sürümlerde çalışan uygulamalar için geçerlidir. Bu seçenek, uygulamayı çalıştıran diğer işletim sistemleri tarafından göz ardı edilir.
 
-Desteklenen işletim sistemlerinde, bu seçeneğin çağrıları değiştirmenin etkisi `LoadLibrary("dependent.dll")` denk için `LoadLibraryEx("dependent.dll", 0, loadflags)`. Çağrılar [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091) etkilenmez. Bu seçenek, uygulamanız tarafından yüklenen DLL'ler için yinelemeli olarak uygulanmaz.
+Desteklenen işletim sistemlerinde bu seçeneğin çağrıları değiştirmenin etkisi `LoadLibrary("dependent.dll")` denk için `LoadLibraryEx("dependent.dll", 0, loadflags)`. Çağrılar [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091) etkilenmez. Bu seçenek, uygulamanız tarafından yüklenen DLL'ler için yinelemeli olarak uygulanmaz.
 
-Bu bayrak, DLL yerleştirmeyi saldırıları önlemek için kullanılabilir. Örneğin, bir uygulama kullanıyorsa `LoadLibrary` bağımlı DLL yüklemek için bir saldırganın aynı ada sahip bir DLL tarafından kullanılan arama yolu planlayın `LoadLibrary`, geçerli dizin gibi denetleneceği önce sistem dizinleri güvenli DLL arama modu ise devre dışı. Güvenli DLL arama modu daha sonra arama sırada kullanıcının geçerli dizinine yerleştirir ve Windows XP SP2 ve sonraki sürümlerinde varsayılan olarak etkindir. Daha fazla bilgi için bkz: [dinamik bağlantı kitaplığı arama sırası](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx).
+Bu bayrak, DLL saldırıları yerleştirmeyi önlemek için kullanılabilir. Örneğin, bir uygulama kullanıyorsa `LoadLibrary` bağımlı DLL yüklemek için bir saldırganın aynı ada sahip bir DLL tarafından kullanılan arama yolu bitki `LoadLibrary`, geçerli dizini gibi hangi işaretli önce sistem dizinleri güvenli DLL arama modu ise devre dışı. Güvenli DLL arama modu, kullanıcının geçerli dizin daha sonra arama sırada yerleştirir ve Windows XP SP2 ve sonraki sürümlerde varsayılan olarak etkindir. Daha fazla bilgi için [dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order).
 
-Bağlantı seçeneği belirtirseniz, `/DEPENDENTLOADFLAG:0xA00` (Birleşik bayrakları değerini `LOAD_LIBRARY_SEARCH_APPLICATION_DIR | LOAD_LIBRARY_SEARCH_SYSTEM32`), DLL arama yolu güvenli DLL arama modu kullanıcının bilgisayarda devre dışı olsa bile, bir saldırganın daha zor olduğu korunan dizinler sınırlı ise değiştirin. Kullanılabilir bayrakları hakkında bilgi ve simgesel ve sayısal değerleri için bkz: *dwFlags* parametresi açıklamasında [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091).
+Bağlantı seçeneğini belirtirseniz `/DEPENDENTLOADFLAG:0xA00` (Birleşik bayrak değerini `LOAD_LIBRARY_SEARCH_APPLICATION_DIR | LOAD_LIBRARY_SEARCH_SYSTEM32`), sonra güvenli DLL arama modu, kullanıcının bilgisayarında devre dışı bırakılmış olsa bile, DLL arama yolu için bir saldırganın daha zor olan korunan dizinler sınırlıdır. değiştirin. Kullanılabilir bayrakları hakkında bilgi ve sembolik ve sayısal değerleri için bkz: *CertOpenStore* parametresi açıklamasında [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091).
 
-### <a name="to-set-the-dependentloadflag-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamında DEPENDENTLOADFLAG bağlayıcı seçeneği ayarlamak için
+### <a name="to-set-the-dependentloadflag-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamında DEPENDENTLOADFLAG bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
-1. Seçenek girin **ek seçenekler**.
+1. De seçeneği girin **ek seçenekler**.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -67,8 +67,8 @@ Bağlantı seçeneği belirtirseniz, `/DEPENDENTLOADFLAG:0xA00` (Birleşik bayra
 
 - [Bağlayıcı Seçeneklerini Ayarlama](setting-linker-options.md)
 - [Bağlayıcı Seçenekleri](linker-options.md)
-- [Bir DLL'e örtük olarak bağlanma](../linking-an-executable-to-a-dll.md#linking-implicitly)
-- [Hangi bağlama yöntemini kullanacağınızı belirleme](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [DLL'ye örtük olarak bağlama](../linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Hangi bağlama yönteminin kullanılacağını belirleme](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 - [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187)
 - [LoadLibraryEx](https://go.microsoft.com/fwlink/p/?LinkID=236091)
-- [Dinamik bağlantı kitaplığı arama sırası](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx)
+- [Dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order)

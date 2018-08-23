@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca1c4d1d2a7c37838a57a55189330465cd0700e8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 93a637c1374e77127a5bf71c6fa736d2857928f1
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850163"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466473"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 Windows ortak ilerleme çubuğu denetimi işlevlerini sağlar.  
@@ -350,10 +350,12 @@ COLORREF SetBarColor(COLORREF clrBar);
 |[in] *clrBar*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) İlerleme göstergesi yeni rengini belirten bir değer. Varsayılan rengini kullanılacak ilerleme çubuğu neden CLR_DEFAULT belirtin.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlerleme göstergesi önceki rengi temsil olarak bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri ya da İlerleme göstergesi rengini varsayılan rengi ise CLR_DEFAULT.  
+
+İlerleme göstergesi önceki rengi temsil olarak bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri ya da İlerleme göstergesi rengini varsayılan rengi ise CLR_DEFAULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SetBarColor` Yöntemini ayarlar ilerleme çubuğu renk yalnızca şu durumlarda bir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] [tema](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx) etkili değildir.  
+
+`SetBarColor` Yöntemini ayarlar ilerleme çubuğu renk yalnızca şu durumlarda bir Windows Vista [tema](/windows/desktop/Controls/visual-styles-overview) etkili değildir.  
   
  Bu yöntem gönderir [PBM_SETBARCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760838) Windows SDK'da açıklanan ileti.  
   

@@ -17,40 +17,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 12d823cdefa90cad1e454996be274135d9e68fa9
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 382dbdd2d0816d6ab0846acd0f8c164cd542114f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647634"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42575847"
 ---
 # <a name="criticalsectiontrylock-method"></a>CriticalSection::TryLock Yöntemi
-Engelleme olmadan kritik bir bölüm girin dener. Çağrı başarılı olursa, çağıran iş parçacığı, kritik bölüm sahipliğini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-SyncLock TryLock();  
-  
-static SyncLock TryLock(  
-   _In_ CRITICAL_SECTION* cs  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *cs*  
- Bir kullanıcı tarafından belirtilen kritik bölüm nesnesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Kritik bölüm başarıyla girdiyseniz sıfır olmayan bir değer veya geçerli iş parçacığı, kritik bölüm zaten sahip. Başka bir iş parçacığı kritik bölüm sahipse sıfır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- İlk **TryLock** işlevi, geçerli kritik bölüm nesnesini etkiler. İkinci **TryLock** işlevi kullanıcı tanımlı bir kritik bölüm etkiler.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CriticalSection Sınıfı](../windows/criticalsection-class.md)
+
+Engelleme olmadan kritik bir bölüm girin dener. Çağrı başarılı olursa, çağıran iş parçacığı, kritik bölüm sahipliğini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+SyncLock TryLock();
+
+static SyncLock TryLock(
+   _In_ CRITICAL_SECTION* cs
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*cs*  
+Bir kullanıcı tarafından belirtilen kritik bölüm nesnesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Kritik bölüm başarıyla girdiyseniz sıfır olmayan bir değer veya geçerli iş parçacığı, kritik bölüm zaten sahip. Başka bir iş parçacığı kritik bölüm sahipse sıfır.
+
+## <a name="remarks"></a>Açıklamalar
+
+İlk **TryLock** işlevi, geçerli kritik bölüm nesnesini etkiler. İkinci **TryLock** işlevi kullanıcı tanımlı bir kritik bölüm etkiler.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CriticalSection Sınıfı](../windows/criticalsection-class.md)

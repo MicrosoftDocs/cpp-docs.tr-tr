@@ -17,45 +17,45 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b43f9ac9edb0d19af4002bb839f857ae71ad4a11
-ms.sourcegitcommit: 0bc67d40aa283be42f3e1c7190d6a5d9250ecb9b
+ms.openlocfilehash: d0eac210ba9c002e91752d51cf9d58a35be855ed
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762081"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613825"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
-Microsoft Visual Visual C++ ya da MSVC, genellikle kısaltılmış C++ adıdır C++, C ve derleme dili geliştirme araçları ve kullanılabilir kitaplıkları için Windows Visual Studio bir parçası olarak. Bu araçlar ve kitaplıkları, Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıkları ve Windows, Linux, Android ve iOS, hem de yönetilen uygulamaları ve .NET kullanımı kitaplıkları çalışan uygulamalar oluşturmanıza olanak verir Çerçeve. Herhangi bir şey basit konsol uygulamalardan en karmaşık ve karmaşık Windows Masaüstü için aygıt sürücüleri ve uygulamaları platformlar arası oyunlara mobil cihazları ve işletim sistemi bileşenleri için en küçük IOT aygıtlardan yazmak için Visual C++ kullanın çok sunuculu yüksek performanslı Azure bulut bilgi işlem.
+Microsoft Visual Visual C++ ya da MSVC, genellikle kısalttık C++, C++, C ve derleme dili geliştirme araçları ve kitaplıkları kullanılabilir adıdır, Windows üzerinde Visual Studio'nun bir parçası olarak. Bu araçlar ve kitaplıklar, Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıklar ve Windows, Linux, Android ve iOS, hem de yönetilen uygulamaları ve .NET kullanma kitaplıkları çalışan uygulamalar oluşturmanızı sağlar Çerçeve. Her şeyi basit bir konsol uygulamalardan en karmaşık ve karmaşık uygulamalar Windows Masaüstü için cihaz sürücüleri ve platformlar arası oyunlar mobil cihazları ve işletim sistemi bileşenleri için en küçük IOT cihazlarından yazmak için Visual C++ kullanabilirsiniz çok sunuculu yüksek performanslı Azure bulutta bilgi işlem.
 
 ## <a name="general-information-about-visual-c"></a>Visual C++ hakkında genel bilgiler
 
-[Visual C++ için Yenilikler](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[İçin Visual C++ yenilikleri](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 Visual C++ içindeki yenilikleri öğrenin.
 
 [Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md)<br/>
-Visual Studio 2017 C++ uygunluk geliştirmeler hakkında bilgi edinin.
+Visual Studio 2017'deki C++ uyumluluk geliştirmeleri hakkında bilgi edinin.
 
-[Visual C++ dili uyumluluğu](visual-cpp-language-conformance.md)<br/>
-Uyumluluk durumuna göre MSVC C++ derleyicisi özelliğinde listesi.
+[Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md)<br/>
+MSVC C++ derleyicisinde özelliğiyle uygunluk durumu listesi.
 
 [Visual C++ değişiklik geçmişi 2003 - 2015](porting/visual-cpp-change-history-2003-2015.md)<br/>
-Önceki sürümlerde önemli değişiklikler hakkında bilgi edinin.
+Önceki sürümler, bozucu değişiklikler hakkında bilgi edinin.
 
-[C++ için yeniden Hoş Geldiniz](cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-Güvenli kod modern C++ programlama C ++ 11 ve hızlı yazmanıza olanak tanıyan C ++ 14 göre teknikleri hakkında daha fazla bilgi ve C tarzı programlama Tuzaklar çoğunu kaçının.
+[C++ tekrar Hoş Geldiniz](cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+C stili programlama düşebileceğiniz tuzakları birçoğu önlemek ve daha hızlı yazmanıza olanak tanıyan C ++ 14 ve C ++ 11 dayalı programlama modern C++ hakkında güvenli kod öğrenin.
 
 [Visual C++ Araç Takımıyla İlgili Bir Sorunu Bildirme](how-to-report-a-problem-with-the-visual-cpp-toolset.md)<br/>
-Visual C++ araç takımı (Derleyici, bağlayıcı ve başka araçlar) ve raporunuzu gönderme yolları karşı etkin hata raporlarını oluşturmayı öğrenin.
+Visual C++ araç takımı (Derleyici, bağlayıcı ve diğer araçları) ve raporunuzun göndermenin yolu karşı etkin hata raporlarını oluşturmayı öğrenin.
 
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
-Kod bağlantı noktası oluşturma ve Windows 10 ve evrensel Windows platformu C++ kodu bağlantı noktası oluşturma dahil olmak üzere Visual Studio 2017 için projeleri yükseltme için kılavuz.
+Kod taşıma ve Windows 10 ve evrensel Windows platformu için C++ kodunu taşıma dahil olmak üzere Visual Studio 2017 için proje Yükseltme Kılavuzu.
 
 [Visual C++ ekip blogu](http://blogs.msdn.com/b/vcblog/)<br/>
-Yeni özellikler ve geliştiricileri en son bilgileri hakkında daha fazla bilgi [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)].
+Yeni özellikler ve Visual C++'ın geliştiricilerinden en son bilgiler hakkında daha fazla bilgi edinin.
 
-[Visual Studio indirmeleri](http://go.microsoft.com/fwlink/p/?linkid=235233)<br/>
-Visual Studio indirin.
+[Visual Studio'ya C++ desteği yükleme](build/vscpp-step-0-installation.md)<br/>
+Visual Studio'yu indirin ve Visual C++ Araç Takımı'nı yükleyin.
 
 [Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
 Farklı Visual Studio sürümleri hakkında bilgi edinin.
@@ -69,10 +69,10 @@ Hangi platformların desteklendiğini öğrenin.
 [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/)<br/>
 Visual Studio hakkında yardım almayı, hataları dosyalamayı ve öneride bulunmayı öğrenin.
 
-## <a name="writing-applications-in-c"></a>C++ uygulamaları yazma
+## <a name="writing-applications-in-c"></a>C++ ortamında uygulama yazma
 
 [Evrensel Windows uygulamaları](windows/universal-windows-apps-cpp.md)<br/>
-Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsiniz. UWP uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu giriş](/windows/uwp/get-started/universal-application-platform-guide) ve [C++ kullanarak ilk UWP uygulamanızı oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
+Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsiniz. UWP uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu giriş](/windows/uwp/get-started/universal-application-platform-guide) ve [C++ kullanarak ilk UWP uygulamanızı oluşturmak](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
 [Masaüstü uygulamaları (C++)](windows/desktop-applications-visual-cpp.md)<br/>
 İleti döngüsü ve geri aramalar içeren masaüstü uygulamaları oluşturmayı öğrenin.
@@ -87,27 +87,27 @@ Paralel Desenler Kitaplığı, C++ AMP, OpenMP ve Windows'ta çoklu iş parçac�
 Uygulamaları kötü amaçlı kod ve yetkisiz kullanıma karşı nasıl koruyacağınızı öğrenin.
 
 [Bulut ve Web programlama](cloud/cloud-and-web-programming-in-visual-cpp.md)<br/>
-C++'da, web ve bulut bağlamak için birkaç seçeneğiniz vardır.
+C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 
 [Veri Erişimi](data/data-access-in-cpp.md)<br/>
-ODBC ve diğer veritabanı erişim teknolojilerini kullanarak veritabanlarına bağlanın.
+ODBC ve diğer veritabanı erişim teknolojileri kullanan veritabanlarına bağlanın.
 
 [Metin ve Dizeler](text/text-and-strings-in-visual-cpp.md)<br/>
-Farklı bir metin ve dize biçimleri ve yerel ve uluslararası geliştirme Kodlamalar ile çalışma hakkında bilgi edinin.
+Farklı metin ve dize biçimleri ve yerel ve uluslararası geliştirme için Kodlamalar ile çalışma hakkında bilgi edinin.
 
 ## <a name="c-development-tools"></a>C++ geliştirme araçları
 
-Projeleri oluşturma, kaynak kodu dosyaları ile çalışma, kitaplıklara, derleme, hata ayıklama, profil, dağıtmak ve daha fazlası hakkında bilgi almak için bkz: [IDE ve geliştirme araçları](ide/ide-and-tools-for-visual-cpp-development.md).
+Projeler oluşturabilir, kaynak kodu dosyaları ile çalışma, kitaplıklarına bağlanması, derleme, hata ayıklama, profil, dağıtma ve daha hakkında öğrenmek için bkz: [geliştirme araçları ve IDE](ide/ide-and-tools-for-visual-cpp-development.md).
 
 ## <a name="c-language-reference"></a>C++ Dil Başvurusu
 
 C++ dili hakkında daha fazla bilgi için bkz: [C++ dil başvurusu](cpp/cpp-language-reference.md).
 
-C++ önişlemci hakkında daha fazla bilgi için bkz: [C/C++ ön işlemci başvurusu](preprocessor/c-cpp-preprocessor-reference.md).
+C++ önişlemcisi hakkında daha fazla bilgi için bkz: [C/C++ önişlemci başvurusu](preprocessor/c-cpp-preprocessor-reference.md).
 
 ## <a name="c-libraries-in-visual-studio"></a>Visual Studio'da C++ kitaplıkları
 
-Aşağıdaki bölümler, Visual Studio'da bulunan farklı C ve C++ kitaplıkları hakkında bilgi sağlar.
+Aşağıdaki bölümlerde, Visual Studio'ya dahil farklı C ve C++ kitaplıkları hakkında bilgi sağlar.
 
 [C Çalışma Zamanı Kitaplığı Başvurusu](c-runtime-library/c-run-time-library-reference.md)<br/>
 Güvenlik sorunlarına neden olduğu bilinen işlevlere alternatif olarak güvenliği artırılmış seçenekleri içerir.
@@ -116,7 +116,7 @@ Güvenlik sorunlarına neden olduğu bilinen işlevlere alternatif olarak güven
 C++ Standart Kitaplığı.
 
 [Etkin Şablon Kitaplığı (ATL)](atl/atl-com-desktop-components.md)<br/>
-COM bileşenlerini ve uygulamalar için destek.
+COM bileşenleri ve uygulamaları için destek.
 
 [Microsoft Foundation Class (MFC) kitaplıkları](mfc/mfc-desktop-applications.md)<br/>
 Geleneksel veya Office stili kullanıcı arabirimleri olan masaüstü uygulamaları oluşturma desteği.
@@ -137,7 +137,7 @@ Ayrıca belgelerine bakın [STL/CLR](dotnet/stl-clr-library-reference.md) ve [C+
 
 ## <a name="other-c-libraries"></a>Diğer C++ kitaplıkları
 
-Bulma ve yükleme 600'den fazla C++ açık kaynak kitaplıkları'nın büyük ölçüde kolaylaştırma vcpkg komut satırı aracını kullanabilirsiniz. Bkz: [vcpkg: Windows için C++ Paket Yöneticisi](vcpkg.md).
+Vcpkg komut satırı aracı, bulma ve yükleme 600'den fazla C++ açık kaynak kitaplıkların büyük ölçüde basitleştirmek için kullanabilirsiniz. Bkz: [vcpkg: C++ Windows için Paket Yöneticisi](vcpkg.md).
 
 ## <a name="more-resources"></a>Daha fazla kaynak
 

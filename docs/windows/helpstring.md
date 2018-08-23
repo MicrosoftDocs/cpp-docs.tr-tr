@@ -17,52 +17,57 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: df452614bfd5ee95a810300809678e28abfbf8ef
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 928f4fe5200d9ea03541976664d472d9e99e1147
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39643166"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42575696"
 ---
 # <a name="helpstring"></a>helpstring
-Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ helpstring(  
-   "string"  
-) ]  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *string*  
- Yardım dizesi metni.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Helpstring** C++ özniteliği ile aynı işlevlere sahip [helpstring](http://msdn.microsoft.com/library/windows/desktop/aa366856) MIDL özniteliği.  
-  
-## <a name="example"></a>Örnek  
- Örneğin bakın [defaultvalue](../windows/defaultvalue.md) nasıl kullanılacağına ilişkin bir örnek **helpstring**.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Arabirim öznitelikleri](../windows/interface-attributes.md)   
- [Sınıf öznitelikleri](../windows/class-attributes.md)   
- [Yöntem öznitelikleri](../windows/method-attributes.md)   
- [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
- [HelpFile](../windows/helpfile.md)   
- [helpcontext](../windows/helpcontext.md)   
+
+Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ helpstring(
+   "string"
+) ]
+```
+
+### <a name="parameters"></a>Parametreler
+
+*string*  
+Yardım dizesi metni.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Helpstring** C++ özniteliği ile aynı işlevlere sahip [helpstring](http://msdn.microsoft.com/library/windows/desktop/aa366856) MIDL özniteliği.
+
+## <a name="example"></a>Örnek
+
+Örneğin bakın [defaultvalue](../windows/defaultvalue.md) nasıl kullanılacağına ilişkin bir örnek **helpstring**.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  
+[Arabirim Öznitelikleri](../windows/interface-attributes.md)  
+[Sınıf Öznitelikleri](../windows/class-attributes.md)  
+[Yöntem Öznitelikleri](../windows/method-attributes.md)  
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
+[helpfile](../windows/helpfile.md)  
+[helpcontext](../windows/helpcontext.md)  

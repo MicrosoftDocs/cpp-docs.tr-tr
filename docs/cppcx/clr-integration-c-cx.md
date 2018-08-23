@@ -5,32 +5,32 @@ ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50b455bd3b6fd4a96c3181b60904cb7a3250e866
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 527ce8beaf5fb08d0642026336be193e3b39d73b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086902"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42581130"
 ---
 # <a name="clr-integration-ccx"></a>CLR tümleştirme (C + +/ CX)
-Bazı Windows çalışma zamanı türleri özel işleme C + alma +/ CX ve (CLR) ortak dil çalışma zamanı tabanlı diller. Bu makalede, başka bir dil için bir dil nasıl birkaç türü harita anlatılmaktadır. Örneğin, CLR Windows.Foundation.IVector eşlendiğini System.Collections.IList, Windows.Foundation.IMap System.Collections.IDictionary ve benzeri. Benzer şekilde, C + +/ CX özel türleri Platform::Delegate ve Platform::String gibi eşler.  
+Bazı Windows çalışma zamanı türleri özel işlem C + alma +/ CX ve dilleri (CLR) ortak dil çalışma zamanı temel alır. Bu makalede, başka bir dil için nasıl birden fazla dilde harita açıklanmaktadır. Örneğin, CLR Windows.Foundation.IVector eşlendiğini System.Collections.IList, Windows.Foundation.IMap System.Collections.IDictionary ve benzeri. Benzer şekilde, C + +/ CX türleri Platform::Delegate ve Platform::String gibi özel haritaları.  
   
-## <a name="mapping-the-windows-runtime-to-ccx"></a>Windows çalışma zamanı eşleme C + +/ CX  
- C + zaman +/ CX Windows (.winmd) meta veri dosyasını okur, derleyici otomatik olarak ortak Windows çalışma zamanı ad alanları ve türler C + eşler +/ CX ad alanları ve türler. Örneğin, sayısal Windows çalışma zamanı tür `UInt32` otomatik olarak eşlenmiş `default::uint32`.  
+## <a name="mapping-the-windows-runtime-to-ccx"></a>Windows çalışma zamanı eşlemesi C + +/ CX  
+ C + olduğunda +/ CX okuyan bir Windows meta veri (.winmd) dosyası, derleyici otomatik olarak ortak Windows çalışma zamanı ad alanları ve türler C + eşler +/ CX ad alanları ve türler. Örneğin, sayısal Windows çalışma zamanı türü `UInt32` otomatik olarak eşlenir `default::uint32`.  
   
- C + +/ CX eşlemeleri diğer çeşitli Windows çalışma zamanı türlerine **Platform** ad alanı. Örneğin, **Windows::Foundation** salt okunur bir Unicode metin dizesini temsil eder, HSTRING tanıtıcı eşlendiği C + +/ CX `Platform::String` sınıfı. Windows çalışma zamanı işlemi HRESULT hata döndürdüğünde, onu bir C + eşlenmiş +/ CX `Platform::Exception`. Daha fazla bilgi için bkz: [yerleşik türleri](http://msdn.microsoft.com/en-us/acc196fd-09da-4882-b554-6c94685ec75f).  
+ C + +/ CX çeşitli diğer Windows çalışma zamanı türlerine eşlenir **Platform** ad alanı. Örneğin, **Windows::Foundation** salt Unicode metin dizesini temsil eden HSTRING tanıtıcısına eşlendi C + +/ CX `Platform::String` sınıfı. Bir Windows çalışma zamanı işlemi HRESULT hatası döndürdüğünde, C + eşlenmiş +/ CX `Platform::Exception`. Daha fazla bilgi için [yerleşik türler](http://msdn.microsoft.com/en-us/acc196fd-09da-4882-b554-6c94685ec75f).  
   
- C + +/ CX türü işlevselliğini geliştirmek için Windows çalışma zamanı ad alanlarında belirli türleri de eşler. Bu tür, C + +/ CX Yardımcısı oluşturucular ve C++ için özeldir ve tür standart .winmd dosyasında kullanılabilir değil yöntemleri sağlar.  
+ C + +/ CX türünün işlevselliğini geliştirmek için belirli Windows çalışma zamanı ad alanlarında türleri de eşler. Bu tür için C + +/ CX Yardımcısı oluşturucular ve C++ için özeldir ve tür standart .winmd dosyasında kullanılamaz yöntemleri sağlar.  
   
- Aşağıdaki listeler, yeni oluşturucular ve yardımcı yöntemler desteği değeri yapılar gösterir. Yapı başlatma listeleri kullanan kodu daha önceden yazılmış varsa, yeni eklenen oluşturucular kullanacak şekilde değiştirin.  
+ Aşağıdaki listelerde, yeni oluşturucular ve yardımcı yöntemler destekleyen değeri yapılar gösterilir. Başlatma listeleri yapı kullanan kod daha önce yazmış, yeni eklenen oluşturucular kullanacak şekilde değiştirin.  
   
  **Windows::Foundation**  
   
--   noktası  
+-   Noktası  
   
 -   Rect  
   
@@ -44,7 +44,7 @@ Bazı Windows çalışma zamanı türleri özel işleme C + alma +/ CX ve (CLR) 
   
 -   CornerRadius  
   
--   Süre  
+-   Süresi  
   
 -   GridLength  
   
@@ -69,9 +69,9 @@ Bazı Windows çalışma zamanı türleri özel işleme C + alma +/ CX ve (CLR) 
 -   Matrix3D  
   
 ## <a name="mapping-the-clr-to-ccx"></a>CLR eşleme C + +/ CX  
- Visual C++ veya C# Derleyicileri .winmd dosyasını okumak, bunlar otomatik olarak belirli türleri meta veri dosyasında uygun C + eşleyin +/ CX veya CLR türü. Örneğin, CLR IVector içinde\<T > arabirimini IList için eşlenen\<T >. Ancak C + +/ CX, IVector\<T > başka bir türüne arabirimi eşlenen değil.  
+ Visual C++ ya da C# Derleyicileri bir .winmd dosyası okunamıyor, bunlar otomatik olarak belirli türlerini meta veri dosyasında uygun C + harita +/ CX veya CLR türü. Örneğin, CLR Ivector içinde\<T > arabirimi için IList eşlenen\<T >. Ancak C + +/ CX, Ivector\<T > arabirimini başka bir türe eşlenmedi.  
   
- IReference\<T > Windows çalışma zamanı'nda eşler için null atanabilir\<T > .NET içinde.  
+ IReference\<T > Windows çalışma zamanı'nda eşler için Nullable\<T > .NET içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Diğer dilleri ile birlikte çalışma](../cppcx/interoperating-with-other-languages-c-cx.md)
+ [Diğer dillerle birlikte çalışma](../cppcx/interoperating-with-other-languages-c-cx.md)

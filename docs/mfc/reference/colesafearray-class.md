@@ -70,12 +70,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff18423aa981fc453850084bb2f315a5600cf6fd
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 68f2e8e199fb22295ebd1fd25bbd3332c63e03b6
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027644"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466184"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray sınıfı
 Rastgele tür ve boyut dizilerle çalışırken bir sınıf.  
@@ -379,7 +379,7 @@ VARIANT Detach();
  Arka plandaki `VARIANT` değerini `COleSafeArray` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İşlev ayarlayarak verileri güvenli bir dizi ayırır [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) VT_EMPTY nesnesi. Bu dizi Windows işlevi çağrılarak serbest arayanın sorumluluğundadır [VariantClear](http://msdn.microsoft.com/28741d81-8404-4f85-95d3-5c209ec13835).  
+ İşlev ayarlayarak verileri güvenli bir dizi ayırır [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) VT_EMPTY nesnesi. Bu dizi Windows işlevi çağrılarak serbest arayanın sorumluluğundadır [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear).  
   
  İşlevi, hata oluşturur bir [COleException](../../mfc/reference/coleexception-class.md).  
   
@@ -607,7 +607,7 @@ void PutElement(
  Diziye atamak için veri işaretçisi. Gt; vt_dıspatch & gt; VT_UNKNOWN & ve VT_BSTR değişken türleri işaretçileri ve başka bir yöneltme düzeyi gerektirmez.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev otomatik olarak Windows işlevlerini çağıran [SafeArrayLock](https://msdn.microsoft.com/library/windows/desktop/ms221492.aspx) ve [SafeArrayUnlock](https://msdn.microsoft.com/library/windows/desktop/ms221246.aspx) önce ve sonra öğe atanıyor. Veri öğesi, bir dize, nesne veya değişken ise, işlev, doğru kopyalar ve var olan bir dize, nesne veya değişken öğeyse, doğru temizlenir.  
+ Bu işlev otomatik olarak Windows işlevlerini çağıran [SafeArrayLock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraylock) ve [SafeArrayUnlock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearrayunlock) önce ve sonra öğe atanıyor. Veri öğesi, bir dize, nesne veya değişken ise, işlev, doğru kopyalar ve var olan bir dize, nesne veya değişken öğeyse, doğru temizlenir.  
   
  Dizi diğer işlemler tarafından kilitliyken öğeleri bir dizi içine koyabilirsiniz için bir dizi üzerinde birden çok kilit sahip olabileceğini unutmayın.  
   

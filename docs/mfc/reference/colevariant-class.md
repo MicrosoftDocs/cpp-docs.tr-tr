@@ -30,15 +30,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41a93a89ed0ace158a0864d7987cafd838eed304
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 8b7501adf2f424f2232df05e26f5d0ac4a35158c
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853747"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465837"
 ---
 # <a name="colevariant-class"></a>COleVariant sınıfı
-Kapsülleyen [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) veri türü.  
+Kapsülleyen [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) veri türü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -76,14 +76,14 @@ class COleVariant : public tagVARIANT
 |[COleVariant::operator &lt; &lt;, &gt;&gt;](#operator_lt_lt__gt_gt)|Çıkış bir `COleVariant` değerini `CArchive` veya `CDumpContext` ve girdi bir `COleVariant` nesnesinden `CArchive`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu veri türü OLE Otomasyonu nesnesi etkin kullanılır. Özellikle, [DISPPARAMS](http://msdn.microsoft.com/a16e5a21-766e-4287-b039-13429aa78f8b) yapısı, bir dizi değişken yapıları işaretçi içerir. A `DISPPARAMS` yapısı için parametreleri geçirmek için kullanılan [IDispatch::Invoke](http://msdn.microsoft.com/964ade8e-9d8a-4d32-bd47-aa678912a54d).  
+ Bu veri türü OLE Otomasyonu nesnesi etkin kullanılır. Özellikle, [DISPPARAMS](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagdispparams) yapısı, bir dizi değişken yapıları işaretçi içerir. A `DISPPARAMS` yapısı için parametreleri geçirmek için kullanılan [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).  
   
 > [!NOTE]
 >  Bu sınıf türetilir `VARIANT` yapısı. Bu, geçirebilirsiniz anlamına gelir. bir `COleVariant` için çağıran bir parametreye bir `VARIANT` ve veri üyeleri `VARIANT` yapısı erişilebilir veri üyeleri olan `COleVariant`.  
   
  İki ilgili MFC sınıfları [COleCurrency](../../mfc/reference/colecurrency-class.md) ve [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) değişken veri türleri para birimi kapsülle ( `VT_CY`) ve tarih ( `VT_DATE`). `COleVariant` Sınıfı DAO sınıfları yaygın olarak kullanılır; örneğin tipik kullanım için bu sınıflar bu sınıfın bkz [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
   
- Daha fazla bilgi için [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118), [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e), [DISPPARAMS](http://msdn.microsoft.com/a16e5a21-766e-4287-b039-13429aa78f8b), ve [IDispatch::Invoke](http://msdn.microsoft.com/964ade8e-9d8a-4d32-bd47-aa678912a54d) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e), [DISPPARAMS](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagdispparams), ve [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK'sı girdileri.  
   
  Daha fazla bilgi için `COleVariant` sınıfı ve OLE Otomasyonu, kullanım "Geçirme parametreleri olarak OLE Otomasyonu" makalesine bakın [Otomasyon](../../mfc/automation.md).  
   
@@ -96,7 +96,7 @@ class COleVariant : public tagVARIANT
  **Başlık:** afxdisp.h  
   
 ##  <a name="attach"></a>  COleVariant::Attach  
- Eklemek için bu işlevi çağırın verilen [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) geçerli nesneye `COleVariant` nesne.  
+ Eklemek için bu işlevi çağırın verilen [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) geçerli nesneye `COleVariant` nesne.  
   
 ```  
 void Attach(VARIANT& varSrc);
@@ -109,7 +109,7 @@ void Attach(VARIANT& varSrc);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev ayarlar [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) , *varSrc* VT_EMPTY için.  
   
- Daha fazla bilgi için [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) ve [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) ve [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı girdileri.  
   
 ##  <a name="colevariant"></a>  COleVariant::COleVariant  
  Oluşturur bir `COleVariant` nesne.  
@@ -221,10 +221,10 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
  [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) bu `COleVariant` nesne.  
   
  *pSrc*  
- Bir işaretçi [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) dönüştürülecek nesne. Bu değer NULL ise bu `COleVariant` nesnesi dönüştürme için kaynak olarak kullanılır.  
+ Bir işaretçi [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) dönüştürülecek nesne. Bu değer NULL ise bu `COleVariant` nesnesi dönüştürme için kaynak olarak kullanılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantChangeType](http://msdn.microsoft.com/48a51e32-95d7-4eeb-8106-f5043ffa2fd1) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantChangeType](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantchangetype) Windows SDK'sı girdileri.  
   
 ##  <a name="clear"></a>  COleVariant::Clear  
  Temizler `VARIANT`.  
@@ -239,7 +239,7 @@ void Clear();
  Daha fazla bilgi için `VARIANT`, VARTYPE, ve `VariantClear` Windows SDK'sı girdileri.  
   
 ##  <a name="detach"></a>  COleVariant::Detach  
- Arka plandaki ayırır [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) bu nesneden `COleVariant` nesne.  
+ Arka plandaki ayırır [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) bu nesneden `COleVariant` nesne.  
   
 ```  
 VARIANT Detach();
@@ -251,7 +251,7 @@ VARIANT Detach();
 > [!NOTE]
 >  Arama sonra `Detach`, bu çağrı çağıranın sorumluluğundadır `VariantClear` sonuç üzerinde `VARIANT` yapısı.  
   
- Daha fazla bilgi için [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantClear](http://msdn.microsoft.com/28741d81-8404-4f85-95d3-5c209ec13835) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4), ve [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear) Windows SDK'sı girdileri.  
   
 ##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray  
  Mevcut bir değişken dizisinden bir bayt dizisi alır.  
@@ -332,7 +332,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
   
 - **operator = (** `lbSrc` **)** kopya bir [CLongBinary](../../mfc/reference/clongbinary-class.md) bu nesnede `COleVariant` nesne.  
   
- Daha fazla bilgi için [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) ve [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) ve [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) Windows SDK'sı girdileri.  
   
 ##  <a name="operator_eq_eq"></a>  COleVariant::operator ==  
  Bu işleç, iki değişken değerlerini karşılaştırır ve eşitlerse sıfır döndürür; Aksi durumda 0.  

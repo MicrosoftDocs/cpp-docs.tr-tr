@@ -1,5 +1,5 @@
 ---
-title: _InterlockedDecrement iç işlevler | Microsoft Docs
+title: _Interlockeddecrement iç işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -54,17 +54,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eacca8241bc32965d3f22fcb3e4d5ed8b72a1651
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a30a09b9feae0d5c7e0d24967c133f076286f2fc
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338994"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464692"
 ---
-# <a name="interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement iç işlevler
-**Microsoft özel**  
+# <a name="interlockeddecrement-intrinsic-functions"></a>_Interlockeddecrement iç işlevleri
+**Microsoft'a özgü**  
   
- Derleyici iç Win32 desteği sağlar [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] [InterlockedDecrement](http://msdn.microsoft.com/library/ms683580.aspx) işlevi.  
+Win32 Windows SDK'sı için derleyici iç desteği sağlayan [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement) işlevi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -108,8 +108,8 @@ __int64 _InterlockedDecrement64_nf(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out] `lpAddend`  
- İşaretçi değişken azaltılır.  
+ [out içinde] `lpAddend`  
+ Azaltılacak değişken işaretçisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Dönüş değeri elde edilen indirildiği değerdir.  
@@ -118,21 +118,21 @@ __int64 _InterlockedDecrement64_nf(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, x64|  
 |`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birkaç Çeşitlemeler vardır `_InterlockedDecrement` , bunlar içeren veri türleri ve işlemci özgü olup elde göre farklılık veya yayın semantiği kullanılır.  
+ Bazı farklılıklar vardır `_InterlockedDecrement` , bunlar içeren veri türleri ve olup işlemciye özgü alma göre farklılık veya release semantikleri kullanılır.  
   
- Sırada `_InterlockedDecrement` işlev 32 bit tamsayı değerleri üzerinde çalışır `_InterlockedDecrement16` 16 bit tam sayı değerleri üzerinde çalışır ve `_InterlockedDecrement64` 64 bit tam sayı değerleri üzerinde çalışır.  
+ Sırada `_InterlockedDecrement` işlevi 32-bit tamsayı değerleri üzerinde çalışır `_InterlockedDecrement16` 16 bit tam sayı değerler üzerinde çalışır ve `_InterlockedDecrement64` 64-bit tamsayı değerler üzerinde çalışır.  
   
- İç bilgiler ile ARM platformlarda kullanın `_acq` ve `_rel` edinmeli ve yayın semantiği, gibi önemli bir bölümü başında ve sonunda varsa sonekleri. İç bilgiler ile bir `_nf` ("hiçbir dilimi") soneki bir bellek engeli hareket değil.  
+ ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` almak ve yayın semantiğini gibi kritik bir bölüm başında ve sonunda sonekleri. Yapı içleri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.  
   
- Tarafından için değişkenin işaret `lpAddend` 32-bit sınırında parametre hizalı; Aksi takdirde, bu işlev üzerinde çok işlemcili x86 başarısız olur sistemleri ve x86 olmayan sistemler. Daha fazla bilgi için bkz: [Hizala](../cpp/align-cpp.md).  
+ Değişkeni tarafından işaret edilen `lpAddend` parametresi bir 32-bit sınırında hizalanmış olmalıdır; aksi takdirde, bu işlev üzerinde çok işlemcili x86 başarısız sistemleri ve x86 olmayan sistemler. Daha fazla bilgi için [hizalama](../cpp/align-cpp.md).  
   
- Bu yordamlar, yalnızca iç bilgileri kullanılabilir.  
+ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -204,5 +204,5 @@ void __cdecl SimpleThread(void* pParam) {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)

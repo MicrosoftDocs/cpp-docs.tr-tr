@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Boolean Struct
 ms.assetid: 8518a1db-7139-4187-9c7a-1ae3943373f2
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ccfa6b6dd6a8cde68dfd1c3bbecc1325189110f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b368794aa9137144213e3ad485068ea5a9e6b10f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086531"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42575657"
 ---
 # <a name="platformboolean-value-class"></a>Platform::Boolean değer sınıfı
-Bir Boole değeri temsil eder. Denk `bool`.  
+Bir Boolean değeri temsil eder. Denk `bool`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,16 +32,16 @@ public value struct Boolean
 ```  
   
 ### <a name="members"></a>Üyeler  
- Boolean GetHashCode(), Equals() sahiptir ve ToString() yöntemleri türetilen [Platform::Object sınıfı](../cppcx/platform-object-class.md), ve GetTypeCode() yöntemi türetilmiş [Platform::Type sınıfı](../cppcx/platform-type-class.md).  
+ Boolean GetHashCode(), üzerine yaz sahiptir ve ToString() yöntemleri türetilen [Platform::Object sınıfı](../cppcx/platform-object-class.md), ve GetTypeCode() yöntemi türetilmiş [Platform::Type sınıfı](../cppcx/platform-type-class.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

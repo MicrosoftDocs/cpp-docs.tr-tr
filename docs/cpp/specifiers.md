@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d9898dc6b918643aa8ca4ace34ce2e716344c57
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 8c1fb739d5e6206297e52fd9103cbba98c5eef01
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463495"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42465295"
 ---
 # <a name="specifiers"></a>Tanımlayıcılar
 Bu konu başlığı altında açıklanır *belirticileri* (bildirim tanımlayıcıları) bileşeni bir [bildirimi](declarations-and-definitions-cpp.md).  
@@ -34,9 +34,11 @@ Bu konu başlığı altında açıklanır *belirticileri* (bildirim tanımlayıc
   
  *işlev tanımlayıcısı*  
   
- [friend](../cpp/friend-cpp.md)  
-  
- [typedef] ( [typedef](http://msdn.microsod) `(` *genişletilmiş-decl-değiştirici-seq* `)`  
+ [friend](friend-cpp.md)  
+ 
+ [TypeDef](aliases-and-typedefs-cpp.md) `(` *genişletilmiş-decl-değiştirici-seq* `)`  
+
+ [__declspec](declspec.md) `(` *genişletilmiş-decl-değiştirici-seq* `)`  
   
 ## <a name="remarks"></a>Açıklamalar  
  *Belirticileri* parçasıdır bir bildirimin en uzun dizi *belirticileri* işaretçi içermeden bir tür adını veya başvuru değiştiricilerini alınabilmesini. Bildirimin geri kalanı olan *bildirimci*, sunulan adı içeren.  

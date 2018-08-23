@@ -1,5 +1,5 @@
 ---
-title: Visual C++'ta DLL'leri | Microsoft Docs
+title: Visual C++'ta DLL'ler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,53 +18,54 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: facb085ae134c3ecea635ab68dd73f98e55488a0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4554ae6aab9a6d8d488607ab22c26460116c751d
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466475"
 ---
 # <a name="dlls-in-visual-c"></a>Visual C++'da DLL'ler  
   
-Windows, bir dinamik bağlantı kitaplığı (DLL) paylaşılan bir kitaplık işlevleri ve kaynakların çalışır yürütülebilir dosya türüdür. Dinamik bağlantılandırma işlevleri çağırmak ya da ayrı bir dosyada depolanan kaynakları kullanmak için yürütülebilir bir dosya sağlayan bir işletim sistemi özelliğidir. Bu işlevler ve kaynakları derlenmiş ve bunları yürütülebilir dosyalar ayrı olarak dağıtılabilir. DLL tek başına yürütülebilir dosya değildir; çağıran bir uygulama bağlamında çalışır. Uygulama yüklendiğinde işletim sisteminin bir uygulamanın bellek alanına DLL yükleyebilirsiniz (*örtük bağlantılandırma*), ya da çalışma zamanında isteğe bağlı (*açıkça bağlama*). DLL'leri de işlevleri ve kaynakları yürütülebilir dosyalar arasında paylaşmak kolaylaştırır. Birden çok uygulama bellek DLL'de tek bir kopyasını içeriği aynı anda erişebilir.  
+Windows bir dinamik bağlantı kitaplığı (DLL) paylaşılan bir kitaplık işlevleri ve kaynak davranır yürütülebilir dosya türüdür. Dinamik bağlama işlevlerini veya ayrı bir dosyada depolanan kaynakları kullanmak bir yürütülebilir dosya sağlayan bir işletim sistemi özelliğidir. Bu işlevler ve kaynakları derlenmiş ve bunları yürütülebilir dosyaları ayrı ayrı dağıtılsa. Bir DLL tek başına yürütülebilir dosya değil; Bu işlem, onu çağıran bir uygulama bağlamında çalışır. Uygulama yüklendiğinde işletim sisteminin bir uygulamanın bellek alanına DLL yükleyebilirsiniz (*örtük bağlama*), ya da isteğe bağlı çalışma zamanında (*açık bağlama*). DLL'leri da işlevleri ve kaynakları yürütülebilir dosyalar arasında paylaşmak kolaylaştırır. Birden çok uygulama içeriğini DLL bellek içinde tek bir kopyasını aynı anda erişebilir.  
   
-## <a name="differences-between-dynamic-linking-and-static-linking"></a>Dinamik olarak bağlama ve statik bağlama arasındaki farklar  
+## <a name="differences-between-dynamic-linking-and-static-linking"></a>Dinamik bağlama statik bağlamadan arasındaki farklar  
   
-Statik bağlama tüm nesne kodu oluşturulduklarında kullanan yürütülebilir dosyalar statik kitaplığa kopyalar. Dinamik bağlantılandırma yalnızca Windows tarafından bulmak ve bir veri öğesi veya işlevi içeren DLL yüklemek için çalışma zamanında gereken bilgileri içerir. DLL oluşturduğunuzda, ayrıca bu bilgileri içeren bir içeri aktarma kitaplığı oluşturun. DLL çağıran yürütülebilir yapılandırdığınızda, bağlayıcı dışarı aktarılan sembolleri içeri aktarma kitaplığı'nda Windows Yükleyicisi için bu bilgileri depolamak için kullanır. Yükleyici bir DLL yüklendiğinde, DLL, uygulamanızın bellek alanına eşlenir. Varsa, özel bir işlev DLL'de `DllMain`, DLL gerektirir başlatma gerçekleştirmek üzere çağırılır.  
+Statik bağlama tüm nesne kodu statik kitaplıkta oluşturulduklarında, onu kullanan yürütülebilir dosyaları kopyalar. Dinamik bağlama, yalnızca Windows tarafından bulmak ve bir veri öğesi ya da işlev içeren DLL yüklemek için çalışma zamanında gereken bilgileri içerir. Bir DLL oluşturduğunuzda, bu bilgileri içeren bir içeri aktarma kitaplığı oluşturabilir. DLL'yi çağıran bir yürütülebilir dosya oluştururken, bağlayıcı dışarı aktarılan simgeleri içeri aktarma kitaplığı'nda Windows Yükleyicisi için bu bilgileri depolamak için kullanır. Yükleyici bir DLL yüklendiğinde, DLL uygulamanızın bellek alanı eşlenir. Varsa, özel bir işlev DLL'deki `DllMain`, DLL gerektiren herhangi bir başlatma gerçekleştirmek üzere çağırılır.  
   
 <a name="differences-between-applications-and-dlls"></a>  
   
 ## <a name="differences-between-applications-and-dlls"></a>Uygulamalar ve DLL'ler arasındaki farklılıklar  
   
-DLL'ler ve uygulamalar hem yürütülebilir modülleri olsa da, çeşitli yollarla farklılık gösterir. Son kullanıcı için en bariz fark DLL'leri doğrudan yürütülebilir uygulamaları olmamasıdır. Sistemin açısından bakıldığında, uygulamalar ve DLL'ler arasındaki iki temel farklar vardır:  
+DLL'ler ve uygulamalar her iki yürütülebilir modüllerin olsa da, çeşitli yollarla farklılık gösterir. Son kullanıcıya, DLL doğrudan yürütülebilecek uygulamalar olmayan en belirgin farktır. Sistemin açısından bakıldığında, iki, uygulamalar ve DLL'ler arasındaki temel farklar vardır:  
   
--   DLL yalnızca bir örneği olabilir ancak bir uygulama kendisini eşzamanlı olarak çalışan birden çok örneği olabilir.  
+-   Bir DLL yalnızca bir örneğine sahip olabilir ancak bir uygulamanın kendisini sistemde eşzamanlı olarak çalışan birden çok örneğini olabilir.  
   
--   Bir yığın, iş parçacıklarının yürütülmesine, genel bellek, dosya tanıtıcıları ve bir ileti sırası gibi şeyler sahip bir işlem olarak bir uygulama yüklenebilir, ancak bir DLL'in olamaz.  
+-   Bir yığın, iş parçacığı yürütme, genel bellek, dosya tanıtıcıları ve bir ileti kuyruğu gibi şeyler sahip bir işlem olarak bir uygulama yüklenebilir, ancak bir DLL olamaz.  
   
 <a name="advantages-of-using-dlls"></a>  
   
 ## <a name="advantages-of-using-dlls"></a>DLL'leri kullanmanın yararları  
   
-Kod ve kaynaklara statik bağlama yerine dinamik bağlantılandırma birkaç avantaj sunar. DLL'leri kullandığınızda, bellek alanı kaydedin ve değiştirmeyi azaltır. Birden çok uygulama DLL tek bir kopyasını kullandığınızda disk alanından tasarruf ve bant genişliği indirin. DLL'leri dağıtılabilir ve yeniden oluşturun ve tüm kodunuzu sevk gerek kalmadan Pazar sonrası desteği ve yazılım güncelleştirmeleri sağlamak sağlayan ayrı olarak güncelleştirilir. DLL'leri çok dilli programları destekler ve uygulamalarınızın uluslararası sürüm oluşturma kolaylaştırır yerel ayarlara özgü kaynakları sağlamak için kullanışlı bir yoldur. Açıkça bağlantılandırma bulmak ve yeni özellikleri sağlıyor uzantıları gibi çalışma zamanında DLL'leri yüklemek, uygulamanızın izin verebilirsiniz.  
+Kod ve kaynaklar için statik bağlama yerine dinamik bağlama, çeşitli avantajlar sunar. DLL'leri kullandığınızda, bellek alanı kaydedebilir ve değiştirmeyi azaltır. Çoklu uygulamaları tek bir DLL kopyasının kullandığınızda disk alanını kaydetmek ve bant genişliği'ni indirin. DLL'ler dağıtılabilir ve yeniden oluşturun ve tüm kodlar göndermek zorunda kalmadan kolayca desteği ve yazılım güncelleştirmeleri sağlamak olanak sağlayan ayrı olarak güncelleştirildi. DLL'leri, çok dilli programları destekler ve uluslararası uygulamalarınızın sürümlerini oluşturma sürecini kolaylaştırır, yerel ayara özgü kaynaklar sağlamak için kullanışlı bir yoludur. Açık bağlama uygulamanızı keşfedip çalışma zamanında, yeni özellikler sağlayan uzantıları gibi DLL'leri yükleme izin verebilirsiniz.  
   
-Dinamik bağlantılandırma aşağıdaki avantajlara sahiptir:  
+Dinamik bağlama, aşağıdaki avantajlara sahiptir:  
   
--   Dinamik bağlantılandırma bellek kaydeder ve değiştirmeyi azaltır. Birçok işlemler DLL bellek DLL'de salt okunur bölümlerini tek bir kopyasını paylaşımı aynı anda kullanabilir. Buna karşılık, statik olarak bağlantılı bir kitaplık kullanılarak oluşturulmuş her uygulama Windows belleğe gerekir kitaplık kodu tam bir kopyasını sahiptir.  
+-   Dinamik bağlama, bellek kaydeder ve değiştirmeyi azaltır. Pek bir DLL bellekte bir DLL salt okunur bölümlerini tek bir kopyasını paylaşımı eşzamanlı olarak kullanabilirsiniz. Buna karşılık, bir statik olarak bağlı kitaplığı kullanılarak derlenen her bir uygulama Windows belleğe gerekir kitaplık kodu tam bir kopyasına sahip olur.  
   
--   Dinamik bağlantılandırma disk alanı ve bant genişliği kaydeder. Birçok uygulama, DLL diskteki tek bir kopyasını paylaşabilirsiniz. Buna karşılık, statik bağlantı kitaplığı kullanılarak oluşturulmuş her uygulamanın daha fazla disk alanı kullanır ve aktarmak için daha fazla bant genişliği alır, yürütülebilir görüntü bağlantılı kitaplık kodu vardır.  
+-   Dinamik bağlama, disk alanı ve bant genişliği kaydeder. Birçok uygulama, tek bir DLL disk üzerindeki kopyasını paylaşabilirsiniz. Buna karşılık, bir statik bağlantı kitaplığı kullanılarak derlenen her bir uygulama, daha fazla disk alanı kullanır ve aktarmak için daha fazla bant genişliği alır, yürütülebilir görüntü bağlı kitaplık kodu var.  
   
--   Bakım, güvenlik düzeltmelerini ve yükseltmeleri daha kolay olabilir. Uygulamalarınızı DLL'de ortak işlevler kullandığınızda, sonra işlev bağımsız değişkenleri ve dönüş değerleri değiştirmeyin sürece, hata düzeltmeleri uygulamak ve güncelleştirmeleri DLL'e dağıtabilirsiniz. DLL'leri güncelleştirildiğinde, bunları kullanan uygulamaları yeniden derlenmesi veya yeniden gerekmez ve yaptıkları dağıtıldıktan hemen sonra yeni DLL'SİNİN kullanın. Buna karşılık, statik olarak bağlantılı nesne kodunda yaptığınız düzeltmeleri yeniden bağlamak ve onu kullanan her uygulamayı yeniden gerektirir.  
+-   Bakım, güvenlik düzeltmeleri ve yükseltmeleri daha kolay olabilir. Uygulamalarınızı bir DLL içinde ortak işlevlerini kullandığınızda, ardından işlev bağımsız değişkenleri ve dönüş değerlerini değiştirmeyin sürece, hata düzeltmeleri hazırlayın ve güncelleştirmeleri DLL'ye dağıtın. DLL'leri güncelleştirildiğinde, bunları kullanan uygulamaları yeniden derlenen ya da yeniden gerekmez ve dağıtıldıktan sürede yeni DLL'SİNİN kullanırlar. Buna karşılık, statik olarak bağlı nesne kodunda yaptığınız düzeltmeleri yeniden bağlayın ve onu kullanan her uygulamanın yeniden yapmanız gerekir.  
   
--   DLL'leri Pazar sonrası desteği sağlamak için kullanabilirsiniz. Örneğin, bir görüntü sürücüsü DLL uygulama gönderildiğinde, kullanılabilir olmayan bir görüntüyü destekleyecek şekilde değiştirilebilir. Açıkça bağlantılandırma uygulama uzantıları DLL'ler olarak yüklemek için kullanın ve yeniden oluşturma veya dağıtarak, uygulamanızın yeni işlevsellik ekleyin.  
+-   DLL'leri, kolayca destek sağlamak için kullanabilirsiniz. Örneğin, bir ekran sürücüsü DLL uygulama gönderildiğinde, derlenen bir görüntüyü destekleyecek şekilde değiştirilebilir. Açık bağlama uygulama uzantıları dll olarak yüklemek için kullanın ve yeniden oluşturma veya yeniden dağıtmaya gerek olmadan yeni işlevleri uygulamanıza ekleyin.  
   
--   Dinamik bağlantılandırma farklı programlama dilinde yazılmış uygulamalar desteklemeyi kolaylaştırır. İşlev çağırma programları izlediğiniz sürece farklı programlama dilinde yazılmış programları aynı DLL işlevini çağırabilir. Programları ve DLL işlevi aşağıdaki yollarla uyumlu olmalıdır: hangi sırayla işlevi yığına edilmesini bağımsız değişkenleri bekler, işlevin veya uygulamanın yığını temizleme işlemi için sorumlu olup, ve olup olmadığı herhangi bir bağımsız değişken geçirilen kaydeder.  
+-   Dinamik bağlama, farklı programlama dillerinde yazılan uygulamalar desteklemeyi kolaylaştırır. İşlev çağırma program uyduğu sürece farklı programlama dillerinde yazılan programlar aynı DLL işlevinin çağırabilirsiniz. Programlar ve DLL işlevini aşağıdaki yollarla uyumlu olmalıdır: işlev bağımsız değişkenleri bu da yığına itilecek bekleyen, işlev veya uygulama yığını temizleme işlemi için sorumlu olmasına ve herhangi bir bağımsız değişken olup sırası kayıtlara geçirilen.  
   
--   Dinamik bağlantılandırma MFC kitaplık sınıflarını genişletmek için bir mekanizma sağlar. Sınıfları varolan MFC sınıflarından ve MFC uygulamaları tarafından kullanım için MFC uzantı DLL'de yerleştirin.  
+-   Dinamik bağlama, MFC Kitaplığı sınıflarını genişletecek bir mekanizma sağlar. Sınıfları varolan MFC sınıflarından ve MFC uygulamaları tarafından kullanılacak bir MFC uzantılı DLL yerleştirin.  
   
--   Dinamik bağlantılandırma uygulamanızın uluslararası sürümlerin oluşturulmasını kolaylaştırır. DLL'de yerel ayarlara özgü kaynakları koyarak uluslararası sürümlerini bir uygulama oluşturmak çok daha kolay olur. Uygulamanızın birçok yerelleştirilmiş sürümleri sevkiyat, yerine ayrı kaynak DLL dizeler ve görüntüleri her dil için yerleştirin ve uygulamanızı yerel çalışma zamanında uygun kaynaklara sonra yükleyebilirsiniz.   
+-   Dinamik bağlama, uygulamanızın uluslararası sürümlerin oluşturulmasını kolaylaştırır. Bir DLL içinde yerel ayara özgü kaynaklar yerleştirerek bir uygulamanın uluslararası sürümleri oluşturmak çok daha kolay olur. Uygulamanızı birçok yerelleştirilmiş sürümlerini aktarma yerine ayrı bir kaynak DLL içinde dizeleri ve her bir dilin görüntüleri yerleştirin ve ardından uygulamanızın çalışma zamanında, yerel ayar için uygun kaynakların yükleyebilirsiniz.   
   
- DLL'leri kullanmanın olası bir dezavantajı, uygulama kendi içinde değil olan; dağıtma veya kendiniz yüklemenizin bir parçası doğrulamak ayrı bir DLL modülü varlığını bağlıdır.  
+ DLL'leri kullanmanın olası bir dezavantajı, uygulama kendi içinde değil olduğunu; Bu, dağıtmak veya kendiniz yüklemenizin bir parçası doğrulayın ayrı bir DLL modülü varlığını bağlıdır.  
   
   
 ## <a name="more-information-on-how-to-create-and-use-dlls"></a>Oluşturma ve DLL'leri kullanma hakkında daha fazla bilgi  
@@ -83,26 +84,26 @@ Aşağıdaki konular, Visual c++ programı DLL'leri hakkında ayrıntılı bilgi
  [Bir yürütülebilir dosyayı DLL’ye bağlama](../build/linking-an-executable-to-a-dll.md)  
  DLL'ye olan açık ve örtük bağlantıları açıklar.  
   
- [DLL başlatma](../build/run-time-library-behavior.md#initializing-a-dll)  
- DLL yüklendiğinde yürütülmelidir DLL başlatma kodu açıklanır.  
+ [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)  
+ DLL dosyanız yüklendiğinde yürütülmesi gereken DLL başlatma kodunu açıklanır.  
   
  [DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)  
  Çalışma zamanı kitaplığının DLL başlangıç dizisini nasıl gerçekleştirdiğini açıklar.  
   
  [LoadLibrary ve AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)  
- Kullanarak anlatılmaktadır **LoadLibrary** ve `AfxLoadLibrary` çalışma zamanında bir DLL için açıkça bağlanmak için.  
+ Kullanımını açıklar **LoadLibrary** ve `AfxLoadLibrary` çalışma zamanında bir DLL'ye açıkça bağlanmak için.  
   
  [GetProcAddress](../build/getprocaddress.md)  
- Kullanarak anlatılmaktadır **GetProcAddress** DLL dışarı aktarılan bir işlevin adresini elde edin.  
+ Kullanımını açıklar **GetProcAddress** DLL'de dışa aktarılan bir işlevin adresini almak için.  
   
  [FreeLibrary ve AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)  
- Kullanarak anlatılmaktadır **FreeLibrary** ve `AfxFreeLibrary` zaman DLL modülü artık gerekli.  
+ Kullanımını açıklar **FreeLibrary** ve `AfxFreeLibrary` zaman DLL Modulü artık gerekli.  
   
- [DLL Bulmak için Windows Tarafından Kullanılan Arama Yolu](../build/search-path-used-by-windows-to-locate-a-dll.md)  
- Windows işletim sisteminin sistemde DLL bulmak için kullandığı arama yolu açıklar.  
+ [Dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order)  
+ Windows işletim sisteminin sistemde DLL bulmak için kullandığı arama yolunu açıklar.  
   
  [MFC'ye Dinamik Olarak Bağlı Normal MFC DLL'sinin Modül Durumları](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)  
- MFC DLL dinamik olarak MFC'ye bağlı normal modül durumları açıklar.  
+ MFC DLL dinamik olarak MFC'ye bağlı normal modül durumunu açıklar.  
   
  [MFC uzantısı DLL’leri](../build/extension-dlls-overview.md)  
  Genel olarak varolan Microsoft Foundation Sınıf Kitaplığı sınıflarından türetilen yeniden kullanılabilir sınıfları uygulayan DLL'leri açıklar.  
@@ -117,7 +118,7 @@ Aşağıdaki konular, Visual c++ programı DLL'leri hakkında ayrıntılı bilgi
  Bir uygulamaya genel simgelerin nasıl içe aktarılacağını veya işlevlerin DLL'den nasıl dışa aktarılacağını açıklar  
   
  [Etkin Teknoloji ve DLL'ler](../build/active-technology-and-dlls.md)  
- Nesne sunucularının DLL içinde uygulanmasına izin verir.  
+ Nesne sunucularının DLL içinde uygulanacak şekilde sağlar.  
   
  [DLL'de Otomasyon](../build/automation-in-a-dll.md)  
  MFC DLL Sihirbazı'ndaki Otomasyon seçeneğinin ne sağladığını açıklar.  
@@ -125,13 +126,13 @@ Aşağıdaki konular, Visual c++ programı DLL'leri hakkında ayrıntılı bilgi
  [MFC DLL'leri İçin Adlandırma Kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)  
  MFC'de bulunan DLL dosyalarının ve kitaplıkların nasıl bir yapılandırılmış adlandırma kuralı izlediğini açıklar.  
   
- [Visual Basic uygulamasından DLL işlevi çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)  
+ [Visual Basic uygulamalarından DLL işlevleri çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)  
  Visual Basic uygulamalarından DLL işlevlerinin nasıl çağrılacağını açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
   
  [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
- MFC kitaplığını Windows dinamik bağlantı kitaplığı bir parçası olarak kullanmanıza olanak tanır Normal MFC DLL'leri açıklar.  
+ MFC kitaplığını Windows dinamik bağlantı kitaplığının bir parçası olarak kullanmanıza olanak Normal MFC DLL'leri açıklar.  
   
  [MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)  
- MFCxx.dll kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri ile dinamik bağlantı kitaplıkları (x MFC sürüm numarası olduğu yer) MFCxxD.dll paylaşılan nasıl açıklanmaktadır.  
+ MFCxx.dll kullanabilirsiniz ve (burada x MFC sürüm numarasıdır) paylaşılan dinamik bağlantı kitaplıkları paylaşılan MFC uygulamaları ve MFC uzantısı DLL'leri ile nasıl açıklanmaktadır.  

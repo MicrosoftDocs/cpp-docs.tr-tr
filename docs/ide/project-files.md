@@ -1,5 +1,5 @@
 ---
-title: Proje dosyaları | Microsoft Docs
+title: Soubory projektu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,18 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e66d6e94e4938c72adc5aea1a478ce6c0658e56e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9aa8994ebbb9f00afa6858597fce17554f3c3dfc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327235"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42578622"
 ---
 # <a name="project-files"></a>Proje Dosyaları
-Visual C++ proje dosyası .vcxproj dosya adı uzantısına sahip ve bir Visual C++ projesi oluşturmak için gerekli bilgileri içeren bir XML tabanlı bir dosyadır.  
+Visual C++ proje dosyası .vcxproj dosya adı uzantısına sahiptir ve Visual C++ projesi oluşturmak için gereken bilgileri içeren bir XML tabanlı bir dosyadır.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek .vcxproj dosyası belirterek üretilmiş bir **Win32 konsol uygulaması** içinde **yeni proje** iletişim kutusu. Dosya bir proje işlemek için komut satırında msbuild.exe aracını kullanın ya da **yapı** komutunu [!INCLUDE[TLA2#tla_ide](../build/includes/tla2sharptla_ide_md.md)]. (Gerekli kaynağı ve başlık dosyaları sağlanmadığı için bu örnek işlenemiyor.) Bir proje dosyasındaki XML öğeleri hakkında daha fazla bilgi için bkz: [proje dosyası şema başvurusu](/visualstudio/msbuild/msbuild-project-file-schema-reference).  
+ Aşağıdaki örnek .vcxproj dosyası belirterek üretilmiş bir **Win32 konsol uygulaması** içinde **yeni proje** iletişim kutusu. Dosya bir proje işlemek için komut satırında msbuild.exe aracını kullanın veya **derleme** IDE'de komutu. (Bu örnekte gerekli kaynak ve üstbilgi dosyaları sağlanmadığı için işlenemiyor.) Bir proje dosyasındaki XML öğeleri hakkında daha fazla bilgi için bkz: [proje dosyası şema başvurusu](/visualstudio/msbuild/msbuild-project-file-schema-reference).  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

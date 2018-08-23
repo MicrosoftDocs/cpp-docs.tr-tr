@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05bae03a94eac7a783f4ccb7248c8699729a006d
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: b6630ad9721b7a58e7da2660337660cc7916db01
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208695"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466293"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 Microsoft Foundation Class Kitaplığı ileti eşleme mimarisi için temel sınıf.  
@@ -301,7 +301,7 @@ virtual UINT GetTypeInfoCount();
  Tür bilgisi arabirimlerinin sayısını.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi temelde uygulayan [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
+ Bu üye işlevi temelde uygulayan [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount).  
   
  Türetilen sınıflar (0 veya 1) sağlanan türü bilgisi arabirimlerinin sayısını döndürmek için bu işlevi geçersiz kılmalıdır. Kılınmazsa, `GetTypeInfoCount` 0 döndürür. Geçersiz kılmak için kullanın [ımplement_oletypelıb](../../mfc/reference/type-library-access.md#implement_oletypelib) ayrıca uygulayan makrosu `GetTypeLib` ve `GetTypeLibCache`.  
   

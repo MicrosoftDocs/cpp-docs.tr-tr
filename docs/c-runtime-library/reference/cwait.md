@@ -32,19 +32,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 878c1c08dabe52a31a2bdf377c3e0bb167a9ae5d
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 64d312c75dcbebd968760c5f7d09d8458e68e4b0
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450954"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42466377"
 ---
 # <a name="cwait"></a>_cwait
 
 Başka bir işlem sonlanana kadar bekler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,39 +62,39 @@ intptr_t _cwait(
 Belirtilen işlem Sonuç kodu depolanacağı, arabellek için işaretçi veya **NULL**.
 
 *procHandle*<br/>
-İşlemin beklemesi tanıtıcısını (diğer bir deyişle, önce sonlandırmak için olan işlem **_cwait** dönebilirsiniz).
+Üzerinde beklenilen bir işlem tanıtıcısı (diğer bir deyişle, önce sonlandırmak için olan işlem **_cwait** dönebilirsiniz).
 
 *Eylem*<br/>
-NULL: Windows işletim sistemi uygulamaları tarafından göz ardı; diğer uygulamalar için: gerçekleştirmek için eylem kodu *procHandle*.
+NULL: Windows işletim sistemi uygulamalar tarafından yok sayılır; diğer uygulamalar için: üzerinde gerçekleştirmek için eylem kod *procHandle*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen işlem başarıyla tamamlandığında, belirtilen işlem işleyicisini döndürür ve ayarlar *termstat* için belirtilen işlem tarafından döndürülen sonuç kodu. Aksi takdirde, -1 döndürür ve ayarlar **errno** gibi.
+Belirtilen işlem başarıyla tamamlandığında, belirtilen işlem tanıtıcısını döndürür ve ayarlar *termstat* için belirtilen işlem tarafından döndürülen sonuç kodu. Aksi takdirde, -1 döndürür ve ayarlar **errno** gibi.
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|**ECHILD**|Belirtilen işlem var, *procHandle* geçersiz veya çağrısı [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx) veya [WaitForSingleObject](http://msdn.microsoft.com/library/windows/desktop/ms687032.aspx) API başarısız oldu.|
+|**ECHILD**|Belirtilen işlem mevcut, *procHandle* geçersiz veya çağrı [GetExitCodeProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) veya [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) API'si başarısız oldu.|
 |**EINVAL**|*Eylem* geçersiz.|
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cwait** işlevi bekler tarafından sağlanan işlem kimliği belirtilen işlemin sonlandırılması için *procHandle*. Değeri *procHandle* için geçirilen **_cwait** çağrısı tarafından döndürülen değer olmalıdır [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) belirtilen işlem oluşturulan işlevi. İşlem kimliği önce ererse **_cwait** olarak adlandırılır, **_cwait** hemen döndürür. **_cwait** kendisi için diğer bilinen işlemin tamamlanmasını beklemek için herhangi bir işlem tarafından kullanılan geçerli bir tanıtıcı (*procHandle*) bulunmaktadır.
+**_Cwait** işlevi tarafından sağlanan işlem kimliği belirtilen işlemin sonlandırılmasını bekler *procHandle*. Değerini *procHandle* yapan **_cwait** çağrısı tarafından döndürülen değer olmalıdır [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) belirtilen işlemi oluşturan bir işlev. İşlem kimliği önce sona ererse **_cwait** çağrıldığında **_cwait** hemen döndürür. **_cwait** kendisi için başka bilinen işlem için beklenecek herhangi bir işlem tarafından kullanılan geçerli bir tanıtıcı (*procHandle*) bulunmaktadır.
 
-*termstat* belirtilen işlemin dönüş kodu depolanacağı bir arabellek işaret eder. Değeri *termstat* belirtilen işlem normalde Windows çağırarak sonlandırıldı olup olmadığını gösteren [ExitProcess](http://msdn.microsoft.com/library/windows/desktop/ms682658.aspx) API. **ExitProcess** belirtilen işlem çağırırsa dahili olarak çağrılır **çıkmak** veya **_exit**, döndürür **ana**, veya sonuna ulaştığında **ana** . Geri geçirilir değeri hakkında daha fazla bilgi için *termstat*, bkz: [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx). Varsa **_cwait** kullanarak adında bir **NULL** değerini *termstat*, belirtilen işlemin dönüş kodu saklanmaz.
+*termstat* belirtilen işlemin dönüş kodu depolanacağı bir arabelleğe işaret eder. Değerini *termstat* belirtilen işlemi normalde Windows çağırarak sonlandırıldı olup olmadığını gösteren [ExitProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitprocess) API. **ExitProcess** belirtilen işlem çağırırsa dahili olarak adlandırılır **çıkmak** veya **_exit**, döndürür **ana**, veya sonuna ulaştığında **ana** . Geriye doğru geçirilen değeri hakkında daha fazla bilgi için *termstat*, bkz: [GetExitCodeProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess). Varsa **_cwait** kullanılarak çağrılan bir **NULL** değerini *termstat*, belirli bir işlemin dönüş kodu depolanmaz.
 
-*Eylem* parametresi, Windows işletim sistemi tarafından yoksayıldığından, çünkü üst-alt ilişkisi bu ortamlarda uygulanmaz.
+*Eylem* parametresi, Windows işletim sistemi tarafından alınmaz, çünkü bu ortamlarda üst-alt ilişkileri uygulanmaz.
 
-Sürece *procHandle* -1 -2 mi (geçerli işlem ya da iş parçacığı işleme), tanıtıcı kapatılacak. Bu nedenle, bu durumda, döndürülen tanıtıcı kullanmayın.
+Sürece *procHandle* -1 -2 mi (geçerli işlem ya da iş parçacığı işliyor), tanıtıcı kapatılacak. Bu nedenle, bu durumda, döndürülen tanıtıcının kullanmayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_cwait**|\<Process.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

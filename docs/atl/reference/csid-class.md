@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da9e69cd7ea5e7eabdd826e021e57dac3ba8e6aa
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: d6aa313252d2ba06cf0a912f31564dec3d65e0e8
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208864"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464693"
 ---
 # <a name="csid-class"></a>CSid sınıfı
 Bu sınıf için bir sarmalayıcı olan bir `SID` (güvenlik kimliği) yapısı.  
@@ -332,13 +332,13 @@ bool LoadAccount(
  Sistem adı. Bu dize bir uzak bilgisayar adı olabilir. Yerel Sistem, bu dize NULL ise, bunun yerine kullanılır.  
   
  *Psıd*  
- Bir işaretçi bir [SID](http://msdn.microsoft.com/library/windows/desktop/aa379594\(v=vs.85\).aspx) yapısı.  
+ Bir işaretçi bir [SID](/windows/desktop/api/winnt/ns-winnt-_sid) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE. Genişletilmiş hata bilgilerini almak için arama `GetLastError`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `LoadAccount` Belirtilen ad için bir güvenlik tanımlayıcısı bulmaya çalışır. Bkz: [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166\(v=vs.85\).aspx) daha fazla ayrıntı için.  
+ `LoadAccount` Belirtilen ad için bir güvenlik tanımlayıcısı bulmaya çalışır. Bkz: [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) daha fazla ayrıntı için.  
   
 ##  <a name="operator_eq"></a>  CSid::operator =  
  Atama işleci.  

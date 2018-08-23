@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0dd70e67769d35bf50e52b7be4b2c8848c089cb0
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 79089a7457d1a3f08c58c374ae2501a48feca79d
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851608"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465746"
 ---
 # <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty sınıfı
 `CMFCPropertyGridFileProperty` Sınıfı, bir dosya seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.  
@@ -105,7 +105,7 @@ CMFCPropertyGridFileProperty(
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılabilir bayrakları tam bir listesi için bkz. [LPSTRFİLE yapısı](https://msdn.microsoft.com/library/ms646839.aspx).  
+ Kullanılabilir bayrakları tam bir listesi için bkz. [LPSTRFİLE yapısı](/windows/desktop/api/commdlg/ns-commdlg-tagofna).  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek Oluşturucusu kullanarak bir nesne oluşturma işlemini gösterir `CMFCPropertyGridFileProperty` sınıfı. Bu örneğin parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).  

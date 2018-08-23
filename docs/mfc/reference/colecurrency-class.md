@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20e24c5286afbe20b1f5b71a67b0d10385f80874
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 1077a9567509d98b68a864d7478ab84b94d11054
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208802"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464602"
 ---
 # <a name="colecurrency-class"></a>COleCurrency sınıfı
 Kapsülleyen `CURRENCY` OLE Otomasyonu nesnesi etkin veri türü.  
@@ -137,11 +137,11 @@ COleCurrency(
   
 - COleCurrency (`curSrc`) oluşturan bir `COleCurrency` mevcut bir nesne `COleCurrency` nesne. Yeni nesne kaynak nesne ile aynı duruma sahip.  
   
-- COleCurrency (`varSrc`) oluşturan bir `COleCurrency` nesne. Dönüştürmeye çalışır bir [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) yapısı veya `COleVariant` nesne bir para birimi (VT_CY) değeri. Bu dönüştürmenin başarılı olursa, dönüştürülen değer yeni kopyalanan `COleCurrency` nesne. Değerini, değilse `COleCurrency` nesne sıfır (0) ve kendi geçersiz durumuna ayarlanır.  
+- COleCurrency (`varSrc`) oluşturan bir `COleCurrency` nesne. Dönüştürmeye çalışır bir [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) yapısı veya `COleVariant` nesne bir para birimi (VT_CY) değeri. Bu dönüştürmenin başarılı olursa, dönüştürülen değer yeni kopyalanan `COleCurrency` nesne. Değerini, değilse `COleCurrency` nesne sıfır (0) ve kendi geçersiz durumuna ayarlanır.  
   
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' belirtilen sayısal bileşenlerinden nesne. Kesirli bölümü mutlak değerini 10. 000 ' büyükse, uygun düzeltme birimleri için yapılır. Not, birimleri ve kesirli bölümü tarafından imzalanmış uzun değerler belirtilir.  
   
- Daha fazla bilgi için [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekler, sıfır parametresi ve iki parametre oluşturucular etkilerini gösterir:  
@@ -304,7 +304,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **işleç = (** *varSrc* **)** varsa dönüştürülmesi `VARIANT` değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) para birimine ( `VT_CY`) olan başarılı, dönüştürülen değer bu kopyalanır `COleCurrency` nesne ve durumuna ayarlanır için geçerli. Dönüştürme başarılı ise değerini `COleCurrency` nesnesi, 0'geçersiz durumu ayarlanır.  
   
- Daha fazla bilgi için [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [para birimi](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
@@ -450,7 +450,7 @@ throw(COleException*);
 ### <a name="remarks"></a>Açıklamalar  
  Yerel dil özellikleri (yerel ayar kimlikleri), sayısal karakter kaynak dizesi anlamını için kullanır.  
   
- Yerel ayar kimliği değerlerin bir açıklaması için bkz. [birden fazla dili destekleyen](http://msdn.microsoft.com/47dc5add-232c-4268-b977-43e12da81ede).  
+ Yerel ayar kimliği değerlerin bir açıklaması için bkz. [birden fazla dili destekleyen](/previous-versions/windows/desktop/automat/supporting-multiple-national-languages).  
   
  Dize, bir para birimi başarıyla dönüştürüldü değeri, bu değeri `COleCurrency` nesne ayarlandığından bu değeri ve durumu için geçerli.  
   

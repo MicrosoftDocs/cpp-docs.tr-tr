@@ -2,13 +2,17 @@
 layout: HubPage
 ms.topic: hub-page
 title: Visual C++ belgeleri | Microsoft Docs
-description: C++ uygulamaları, hizmetleri ve platformlar ve aygıtlar için Araçlar geliştirmek için nasıl kullanılacağını öğrenin.
-ms.openlocfilehash: 7a0b3bb00f43157b6f1d3a7a64999beb59f9a06f
-ms.sourcegitcommit: c770a343def04ae77522708387c3f7c470e49969
+description: C++ uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için geliştirmek için kullanmayı öğrenin.
+author: mikeblome
+ms.author: mblome
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c4ae5b3f4ffed0c41c3d519a99b7608893813872
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29794202"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42466482"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -24,7 +28,7 @@ ms.locfileid: "29794202"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Visual Studio yükleme ve C++ iş yüklerinizi seçin</h3>
+                                    <h3>Visual Studio'yu yükleyin ve C++ iş yüklerinizi seçin</h3>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +64,7 @@ ms.locfileid: "29794202"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>C++ Visual Studio 2017'yenilikler</h3>
+                                    <h3>Visual Studio 2017'de C++ için Yenilikler</h3>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +94,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Evrensel Windows platformu geliştirme</h3>
-                                                    <p>Evrensel Windows Platformu (C++ kullanarak UWP için) uygulamalar geliştirin.</p>
+                                                    <p>Evrensel Windows Platformu (C++ kullanarak UWP için) uygulamaları geliştirin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +113,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>C++ ile Windows geliştirme</h3>
-                                                    <p>Klasik Windows Masaüstü uygulamaları, statik kitaplıklar ve Win32, MFC, ATL, COM ve/veya C + kullanarak DLL'leri oluşturmak +/ CLI.</p>
+                                                    <p>Klasik Windows Masaüstü uygulamaları, statik kitaplıklar ve Win32, MFC, ATL, COM ve/veya C + kullanarak DLL'leri oluşturma +/ CLI.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,8 +131,8 @@ ms.locfileid: "29794202"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Linux geliştirmesi</h3>
-                                                    <p>Uygulamalar için çeşitli Linux distro'lar oluşturun.</p>
+                                                    <h3>Linux geliştirme</h3>
+                                                    <p>Çeşitli Linux dağıtımları için uygulamalar oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -166,7 +170,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>C++ ile oyun geliştirme</h3>
-                                                    <p>DirectX, gerçekleşmemiş hesabı, Cocos2D ve daha fazlasını kullanarak oyunları ve grafik uygulamaları oluşturun.</p>
+                                                    <p>DirectX, Unreal, Cocos2D ve daha fazlasını kullanarak oyunlar ve grafik uygulamaları oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -185,7 +189,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Python</h3>
-                                                    <p>C++ programları ile etkileşim Python uygulamaları oluşturmak için Visual Studio için Python araçları kullanın.</p>
+                                                    <p>C++ programları ile etkileşim kuran Python uygulamaları oluşturmak için Visual Studio için Python Araçları'nı kullanın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -214,7 +218,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Geliştirme</h3>
-                                                    <p>Yazma, yeniden düzenleyin, keşfetmek ve kod düzenleyicisini kullanarak kodunuzu anlama.</p>
+                                                    <p>Yazma, yeniden düzenleyin, keşfedin ve Kod Düzenleyicisi'ni kullanarak kodunuzu anlayın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -233,7 +237,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Derleme</h3>
-                                                    <p>Derleme ve kodunuzu bağlayın ve en fazla üretilen için en iyi duruma getirme.</p>
+                                                    <p>Derleme ve kodunuzu bağlayın ve en fazla işleme için en iyi duruma getirme.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -252,7 +256,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Hata ayıklama</h3>
-                                                    <p>C++ kodu ile Visual Studio hata ayıklayıcısı hata ayıklama.</p>
+                                                    <p>C++ kodunuzu Visual Studio hata ayıklayıcıyla hata ayıklayın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -290,7 +294,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Dağıt</h3>
-                                                    <p>Tamamlanmış programınızı son kullanıcılara dağıtın.</p>
+                                                    <p>Son kullanıcılara tamamlandı, program dağıtın.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -309,7 +313,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Performansı Artırma</h3>
-                                                    <p>Performans sorunlarını tanımlamak ve tanılama araçlarını kullanarak kod performansı en iyi duruma getirme.</p>
+                                                    <p>Performans sorunlarını belirleme ve tanılama araçları ile kod performansını iyileştirin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -328,7 +332,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Taşıma ve Yükseltme</h3>
-                                                    <p>Visual Studio en son sürüme yükseltin ve modern platformları için eski uygulamaları geçirme.</p>
+                                                    <p>Visual Studio'nun en son sürüme yükseltmek ve eski uygulamaları modern platformlara geçirin.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -340,10 +344,10 @@ ms.locfileid: "29794202"
                 </ul>
             </li>
             <li>
-                <a href="#langlib">Diller ve kitaplıklar</a>
+                <a href="#langlib">Dil ve kitaplıklar</a>
                 <ul id="langlib">
                     <li>
-                        <a href="#langlib1">Diller ve kitaplıklar</a>
+                        <a href="#langlib1">Dil ve kitaplıklar</a>
                         <ul id="langlib1" class="cardsC">
                             <li>
                                 <a href="/cpp/cpp/c-cpp-language-and-standard-libraries">
@@ -356,7 +360,7 @@ ms.locfileid: "29794202"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Standart C/C++ dil ve kitaplıklar</h3>
+                                                    <h3>Standart C/C++ dili ve kitaplıklar</h3>
                                                     <p>C/C++ programlama dilleri ve kitaplıkları Microsoft uygulamasıdır.</p>
                                                 </div>
                                             </div>
@@ -395,7 +399,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Windows Masaüstü kitaplıkları</h3>
-                                                    <p>Microsoft temel sınıfları (MFC) ve Etkin Şablon kitaplığı (ATL)</p>
+                                                    <p>Microsoft Foundation sınıfları (MFC) ve Etkin Şablon kitaplığı (ATL)</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -414,7 +418,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Paralel Programlama kitaplıkları</h3>
-                                                    <p>Paralel programlama için Concrt, AMP ve OpenMP kitaplıkları.</p>
+                                                    <p>Concrt, AMP ve OpenMP kitaplıklarının paralel programlama için.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -433,7 +437,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Ağ kitaplıkları</h3>
-                                                    <p>C++ REST SDK (kod adı Casablanca) açık kaynak kitaplığı web programlama için.</p>
+                                                    <p>Web programlama için C++ REST SDK (kod adı Kazablanka) açık kaynak kitaplığı.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -452,7 +456,7 @@ ms.locfileid: "29794202"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Evrensel Windows Platform kitaplıkları</h3>
-                                                    <p>Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çalışma zamanı bileşenleri kullanmak için alt düzey bir yol sağlayan bir şablon kitaplıktır.</p>
+                                                    <p>Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazıp Windows çalışma zamanı bileşenlerini kullanmanın alt düzey bir yolunu sağlayan bir şablon kitaplığıdır.</p>
                                                 </div>
                                             </div>
                                         </div>

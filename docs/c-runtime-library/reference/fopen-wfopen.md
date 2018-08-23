@@ -42,16 +42,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b606f168448f833a8e244ad35e52faf4f0afd75
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1633f846d1e3b6300463ef1cd3b9a6dd8c1446a7
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405412"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465749"
 ---
 # <a name="fopen-wfopen"></a>fopen, _wfopen
 
-Bir dosyayı açar. Ek parametre doğrulama ve return hata kodları gerçekleştirmek bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [fopen_s, _wfopen_s](fopen-s-wfopen-s.md).
+Bir dosya açar. Ek parametre doğrulama ve dönüş hata kodları gerçekleştirmek bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [fopen_s, _wfopen_s](fopen-s-wfopen-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,50 +72,50 @@ FILE *_wfopen(
 Dosya adı.
 
 *Modu*<br/>
-Etkin bir erişim türü.
+Etkinleştirilmiş erişim türü.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, açık olan dosyaya bir işaretçi döndürür. Null işaretçinin değeri bir hata gösterir. Varsa *filename* veya *modu* olan **NULL** veya boş bir dize bu işlevler açıklanan geçersiz parametre işleyicisi tetikleyicisi [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **NULL** ve **errno** için **EINVAL**.
+Bu işlevlerin her biri açık dosyaya bir işaretçi döndürür. Bir null işaretçi değeri bir hata olduğunu gösterir. Varsa *filename* veya *modu* olduğu **NULL** ya da boş bir dize bu işlevleri açıklanan geçersiz parametre işleyicisi'ni tetikleme [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **NULL** ayarlayıp **errno** için **EINVAL**.
 
-Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fopen** işlev tarafından belirtilen dosyayı açar *filename*. Varsayılan olarak, bir dar *filename* dize ANSI kod sayfası (CP_ACP) kullanarak yorumlanır. Windows masaüstü uygulamalarında bu OEM codepage (CP_OEMCP) kullanarak değiştirilebilir [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534\(v=vs.85\).aspx) işlevi. Kullanabileceğiniz [AreFileApisANSI](https://msdn.microsoft.com/library/windows/desktop/aa363781\(v=vs.85\).aspx) belirlemek için işlev olup olmadığını *filename* ANSI ya da sistem varsayılan OEM kod sayfası kullanılarak yorumlanır. **_wfopen** bir joker karakter sürümü **fopen**; bağımsız değişkenleri **_wfopen** joker karakter dizelerdir. Aksi takdirde, **_wfopen** ve **fopen** aynı şekilde davranır. Yalnızca kullanmak **_wfopen** dosya akışı kullanılan kodlanmış karakter kümesi etkilemez.
+**Fopen** işlevi tarafından belirtilen dosyayı açar *filename*. Varsayılan olarak, bir dar *filename* dize ANSI kod sayfasını (CP_ACP) kullanılarak yorumlanır. Windows masaüstü uygulamalarında bu OEM kod sayfasına (CP_OEMCP) kullanarak değiştirilebilir [SetFileApisToOEM](/windows/desktop/api/fileapi/nf-fileapi-setfileapistooem) işlevi. Kullanabileceğiniz [AreFileApisANSI](/windows/desktop/api/fileapi/nf-fileapi-arefileapisansi) belirlemek için işlev olup olmadığını *filename* ANSI veya sistem varsayılan OEM kod sayfası kullanılarak yorumlanır. **_wfopen** geniş karakterli sürümüdür **fopen**; bağımsız değişkenler **_wfopen** geniş karakterli dizelerdir. Aksi takdirde, **_wfopen** ve **fopen** aynı şekilde davranır. Yalnızca kullanarak **_wfopen** dosya akışında kullanılan kodlanan karakter kümesi etkilemez.
 
-**fopen** geçerli yürütme; noktasında dosya sistemi yolları kabul eder **fopen** UNC yollarını ve ilgili yolları kodu yürütür sistem paylaşımına erişimi olduğu sürece eşlenen ağ sürücülerini veya sürücü, yürütme sırasında eşlenmiş kabul eder. İçin yollar oluşturmak zaman **fopen**, sürücüler, yolları veya ağ paylaşımlarına yürütme ortamında kullanılabilir olacağından emin olun. Eğik çizgi (/) veya ters eğik çizgi kullanabilirsiniz (\\) yolu dizin ayırıcı olarak.
+**fopen** geçerli; yürütme noktasında dosya sistemindeki yolları kabul eder **fopen** UNC yollarını ve içeren yolları paylaşımına erişimi kodu yürüten sistemin sahip olduğu sürece eşlenen ağ sürücülerini veya sürücü, yürütme sırasında eşlenen kabul eder. İşlevi için yol olduğunda **fopen**, sürücüler, yolların veya ağ paylaşımlarının yürütme ortamında kullanılabilir olacağından emin olun. Eğik çizgi (/) veya ters eğik çizgi kullanın (\\) bir yolda dizin ayırıcı olarak.
 
-Her zaman dosyanın herhangi bir ek işlemi gerçekleştirmeden önce işaretçisi NULL olup olmadığını görmek için dönüş değerini denetleyin. Bir hata oluşursa, genel değişkeni **errno** ayarlanır ve belirli hata bilgilerini elde etmek için kullanılabilir. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Her zaman dosya çubuğunda herhangi bir ek işlem gerçekleştirmeden önce işaretçinin NULL olup olmadığını görmek için dönüş değeri denetleyin. Bir hata oluşursa, genel değişken **errno** ayarlanır ve özel hata bilgisini almak için kullanılabilir. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="unicode-support"></a>Unicode Desteği
 
-**fopen** Unicode dosya akışları destekler. Geçişi bir Unicode dosyası açmak için bir **ccs** için istenen kodlamayı belirten bayrak **fopen**gibi.
+**fopen** Unicode dosya akışlarını destekler. Bir Unicode dosyasını açmak için başarılı bir **ccs** istenen kodlamayı belirten bayrak **fopen**aşağıdaki gibi.
 
 > **Dosya *fp fopen = ("newfile.txt", "ccs rt +, =**_kodlama_**");**
 
-İzin verilen değerler, *kodlama* olan **UNICODE**, **UTF-8**, ve **UTF-16LE**.
+İzin verilen değerler *kodlama* olan **UNICODE**, **UTF-8**, ve **UTF-16LE**.
 
-Unicode modda bir dosya açıldığında, giriş işlevleri UTF-16 veri türü olarak depolanan dosyadan okunan veriler çevir **wchar_t**. Unicode modunda açılmış bir dosyaya yazma işlevleri beklediğiniz UTF-16 veri türü olarak depolanan içeren arabellekleri **wchar_t**. Dosyanın UTF-8 olarak kodlanmıştır, sonra UTF-16 verileri UTF-8 yazılması ve onu okunduğunda dosyanın içeriğini UTF-8 kodlu UTF-16 çevrilir çevrilir. Okuma veya tek sayıda bayt Unicode modu nedenler yazma girişiminde bir [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) hata. Okumak veya programınız UTF-8 olarak depolanan veri yazmak için bir metin veya ikili dosya modu yerine Unicode modunu kullanın. Tüm gerekli kodlama çeviri sorumlu.
+Bir dosya Unicode modunda açıldığında, UTF-16 veri türü olarak depolanan içine dosyadan okunan veri giriş işlevleri çevir **wchar_t**. Unicode modunda açılan bir dosyaya yazma işlevleri beklediğiniz UTF-16 veri türü olarak depolanan içeren arabellek **wchar_t**. UTF-8 kodlanmış dosyası, ardından UTF-16 verileri UTF-8 yazılması ve okunduğunda, bu dosyanın içeriğini UTF-8 olarak kodlanmış UTF-16 çevrilir çevrilir. Okuma veya tek sayıda bayt Unicode modunda nedenlerdeki yazma girişiminde bir [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) hata. Programınız UTF-8 olarak depolanan verileri okuma veya yazma için bir Unicode modunda yerine bir metin veya ikili dosya modu kullanın. Tüm gerekli kodlama çeviri için sorumlu olursunuz.
 
-Dosya zaten var ve okuma veya ekleme açıldığında, bayt sırası işareti (dosyasında sunmak, BOM), kodlama belirler. Ürün reçetesi kodlama tarafından belirtilen kodlama üzerinden önceliklidir **ccs** bayrağı. **Ccs** kodlaması yalnızca kullanılan hiçbir BOM mevcut olduğunda veya dosyanın yeni bir dosyadır.
+Dosya zaten varsa ve okuma ya da ekleme için açıldığında, bayt sırası işareti (dosyasında varsa BOM), kodlamayı belirler. BOM kodlaması tarafından belirtilen kodlama üzerinde önceliklidir **ccs** bayrağı. **Ccs** kodlaması yalnızca kullanılır hiçbir BOM olmadığında veya dosya yeni bir dosyadır.
 
 > [!NOTE]
-> Ürün reçetesi algılama yalnızca uygulanır Unicode modunda açılan dosyaları (diğer bir deyişle, göre geçirme **ccs** bayrağı).
+> BOM saptama yalnızca geçerli Unicode modunda açılan dosyalar için (diğer bir deyişle, geçirilerek **ccs** bayrağı).
 
-Aşağıdaki tabloda çeşitli için kullanılan modları özetler **ccs** verilen bayrakları **fopen** ve bayt sırası işaretleri dosyasında.
+Aşağıdaki tabloda çeşitli için kullanılan modları özetlenmektedir **ccs** verilen bayrakları **fopen** ve dosyadaki bayt sırası işaretleri.
 
-### <a name="encodings-used-based-on-ccs-flag-and-bom"></a>Kodlamalar kullanılan temel alarak bayrağı ve ürün reçetesi ccs
+### <a name="encodings-used-based-on-ccs-flag-and-bom"></a>Ccs bayrağı ve BOM temelinde kullanılan Kodlamalar
 
-|Bayrak ccs|Hiçbir ürün reçetesi (veya yeni dosyası)|BOM: UTF-8|BOM: UTF-16|
+|ccs bayrağı|Hiçbir BOM (ya da yeni dosya)|BOM: UTF-8|BOM: UTF-16|
 |----------------|----------------------------|-----------------|------------------|
 |**UNICODE**|**UTF-16LE**|**UTF-8**|**UTF-16LE**|
 |**UTF-8**|**UTF-8**|**UTF-8**|**UTF-16LE**|
 |**UTF-16LE**|**UTF-16LE**|**UTF-8**|**UTF-16LE**|
 
-Unicode modda yazmak için açılan dosyaları otomatik olarak yazılmış bir ürün reçetesi vardır.
+Unicode modunda yazmak için açılan dosyalarda, kendilerine otomatik yazılan bir BOM vardır.
 
-Varsa *modu* olan **"ccs =**_kodlama_**"**, **fopen** ilk hem de okuma kullanarak dosyayı açmayı denediğinde ve yazma erişimi. Bu işlem başarılı olursa işlevi için dosya kodlamasını belirlemek için ürün reçetesi okur; Bu başarısız olursa, dosya için varsayılan kodlamayı işlevini kullanır. Her iki durumda da **fopen** sonra dosya salt yazılır erişimi kullanarak yeniden açılır. (Bu uygulandığı **"a"** modu değil yalnızca **"bir +"** modu.)
+Varsa *modu* olduğu **"ccs =**_kodlama_**"**, **fopen** hem okuma hem de'ı kullanarak dosyayı açmak ilk olarak çalışır hem de yazma erişimi. Bu işlem başarılı olursa, işlev dosyanın kodlamasını belirlemek için BOM'u okur; Bu başarısız olursa, işlev dosya için varsayılan kodlamayı kullanır. Her iki durumda da **fopen** ardından dosyayı salt yazılır erişim kullanarak yeniden açılır. (Bu durum geçerlidir **"a"** modu için değil, yalnızca **"a +"** modu.)
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -123,60 +123,60 @@ Varsa *modu* olan **"ccs =**_kodlama_**"**, **fopen** ilk hem de okuma kullanara
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tfopen**|**fopen**|**fopen**|**_wfopen**|
 
-Karakter dizesi *modu* dosya için aşağıdaki gibi istenen erişim türünü belirtir.
+Karakter dizesi *modu* dosya için şu şekilde istenen erişim türünü belirtir.
 
 |*Modu*|Access|
 |-|-|
-**"r"**|Okuma için açılır. Dosya yok veya bulunamadı, **fopen** çağrısı başarısız olur.
-**"w"**|Boş bir dosya yazma için açılır. Verilen dosya varsa, içeriği yok.
-**"a"**|Yazma (yeni veriler dosyaya yazılmadan önce dosya sonu (EOF) işaret kaldırmadan ekleyerek) dosya sonunda açar. Henüz yoksa dosyası oluşturur.
-**"r +"**|Hem okuma ve yazma için açılır. Dosyanın mevcut olması gerekir.
-**"w +"**|Hem okumak ve yazmak için boş bir dosya açar. Dosya varsa, içeriği yok.
-**"bir +"**|Okuma ve sonuna ekleme için açılır. Yeni veri dosyasına yazılmadan önce ekleme işlemi EOF işaret kaldırılmasını içerir. EOF işaret yazma tamamlandıktan sonra geri yüklenmez. Henüz yoksa dosyası oluşturur.
+**"r"**|Okuma için açar. Dosya mevcut değil ya da bulunamıyorsa **fopen** çağrısı başarısız olur.
+**"w"**|Yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.
+**"a"**|(Ekleme dosyaya yeni veri yazılmadan önce dosya sonu (EOF) işaretçisini kaldırmadan) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur.
+**"r +"**|Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir.
+**"w +"**|Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir.
+**"a +"**|Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur.
 
-Ne zaman bir dosya açıldığında kullanarak **"a"** erişim türüne veya **"bir +"** erişim türüne, tüm işlemleri ortaya dosyanın sonunda yazma. Dosya işaretçisini kullanarak konumlandırılmasına [fseek](fseek-fseeki64.md) veya [geri sarma](rewind.md), ancak herhangi bir işlemi gerçekleştirildi yazmadan önce her zaman geri dosyanın sonuna taşınır. Bu nedenle, varolan verilerin üzerine yazılamıyor.
+Ne zaman bir dosya açıldığında kullanarak **"a"** erişim türü veya **"a +"** erişim türü, tüm yazma işlemleri dosyanın sonunda gerçekleşir. Dosya işaretçisini kullanarak konumlandırılabilir [fseek](fseek-fseeki64.md) veya [rewind](rewind.md), ancak herhangi bir işlemi gerçekleştirildi yazma önce her zaman geri dosyanın sonuna kadar taşınır. Bu nedenle, var olan verilerin üzerine yazılamaz.
 
-**"A"** modu dosyasına ekler önce EOF işaret kaldırmaz. Sonuna ekleme gerçekleştikten sonra MS-DOS türü komutu yalnızca özgün EOF işaret kadar veri ve dosyanın sonuna hiçbir veri gösterir. Dosyaya ekler önce **"bir +"** modunu EOF işaret kaldırabilirsiniz. Sonuna ekleme sonra MS-DOS türü komut dosyasında tüm verileri gösterir. **"Bir +"** modu CTRL + Z EOF işaretçisi ile sonlandırılan bir akış dosyasına ekleme için gereklidir.
+**"A"** modu, dosyaya ekleme yapmadan önce EOF işaretçisi kaldırmaz. Ekleme oluştuktan sonra MS-DOS TYPE komutu özgün EOF işaretçisi verileri ve dosyaya eklenen herhangi bir veriyi değil yalnızca gösterir. Dosyaya eklemeden önce **"a +"** modu EOF işaret metnini kaldırır. Ekleme işleminde sonra MS-DOS TYPE komutu dosyasında tüm verileri gösterir. **"A +"** modu CTRL + Z EOF işaretiyle biten bir akış dosyasına ekleme için gereklidir.
 
-Zaman **"r +"**, **"w +"**, veya **"bir +"** erişim türü belirtildi, hem okuma ve yazma etkin (dosya "güncelleştirmesi" açık olarak kabul edilir). Ancak, yazma için veri okuma geçiş yaptığınızda, giriş işlemi EOF işaret karşılaştığınız gerekir. Hiçbir EOF ise, müdahalede bulunan bir çağrı işlevi konumlandırma dosyaya kullanmanız gerekir. Dosya konumlandırma işlevlerdir **fsetpos**, [fseek](fseek-fseeki64.md), ve [geri sarma](rewind.md). Okunurken yazma geçiş yaptığınızda, müdahalede bulunan bir arama ya da kullanmalıdır **fflush** veya işlevi konumlandırma dosyası.
+Zaman **"r +"**, **"w +"**, veya **"a +"** erişim türü belirtildiğinde, hem okumaya hem yazmaya etkinleştirilir (dosyanın "güncelleştirme" açık olarak kabul edilir). Ancak, yazma okumaya geçtiğinizde giriş işlemi bir EOF işaretçisi ile karşılaşmalıdır. EOF yoksa, bir dosyaya işlevi bulan bir çağrı göndermelisiniz kullanmanız gerekir. Dosya konumlama işlevleri **fsetpos**, [fseek](fseek-fseeki64.md), ve [rewind](rewind.md). Yazmadan okumaya geçtiğinizde, bir çağrı göndermelisiniz kullanmalısınız **fflush** veya bir dosyaya işlevi bulan.
 
-Önceki değerlerin yanı sıra için şu karakterleri eklenebilen *modu* satırbaşı karakterlerini çeviri modu belirtmek için.
+Daha önceki değerlere ek olarak, şu karakterlerden eklenerek *modu* yeni satır karakterlerinin çeviri modu belirtmek için.
 
-|*mod* değiştiricisi|Çeviri modu|
+|*modu* değiştiricisi|Çeviri modu|
 |-|-|
-**T**|Açık metin (modu çevrilmiş).
-**b**|İkili (untranslated) modunda; aç satır başı ve satır besleme karakterler içeren çevirileri görüntülenmez.
+**T**|Açık metin (çevrilmiş) modunda.
+**b**|İkili (çevrilmemiş) modda; açık satır başı ve satır besleme karakterlerini içeren Çeviriler bastırılır.
 
-Metin modunda CTRL + Z EOF karakter girişleri olarak yorumlanır. Açık olan dosyalardaki kullanarak okuma/yazma **"bir +"**, **fopen** CTRL + Z dosya sonunda olup olmadığını denetler ve mümkünse kaldırır. Bu kullanılarak yapılır, çünkü [fseek](fseek-fseeki64.md) ve **ftell** CTRL + Z ile biter neden olabilecek bir dosyanın içinde taşımak için [fseek](fseek-fseeki64.md) yanlış dosyanın sonuna yakın davranır.
+Metin modunda, CTRL + Z girişteki bir EOF karakteri olarak yorumlanır. Kullanarak okuma/yazma için açılmadı dosyalarında **"a +"**, **fopen** CTRL + Z dosya sonunda olup olmadığını denetler ve mümkünse bunu kaldırır. Kullanıldığından yapıldığını [fseek](fseek-fseeki64.md) ve **ftell** CTRL + Z ile biter neden olabilecek bir dosya içinde hareket etmek [fseek](fseek-fseeki64.md) dosyanın sonuna yakın yanlış davranmasına.
 
-Metin modunda, satır başı satır besleme birleşimleri giriş üzerinde tek satır beslemeleri uygulamasına dönüştürülür ve satır besleme karakterler satır başı satır besleme birleşimleri çıktıyı dönüştürülür. Ne zaman bir Unicode akışı-g/Ç işlevi metin modunda (varsayılan), kaynak çalışır veya hedef akışı birden çok baytlı karakter dizisi olarak kabul edilir. Bu nedenle, Unicode akışı giriş işlevleri birden çok baytlı karakterler geniş karakter dönüştürme (olarak varsa çağrısı ile **mbtowc** işlevi). Aynı nedenden dolayı Unicode akışı çıkış işlevleri geniş karakterler birden çok baytlı karakterleri dönüştürme (olarak varsa çağrısı ile **wctomb** işlevi).
+Metin modunda, satır başı satır besleme kombinasyonları girişte karakterlerine çevrilir ve satır başı besleme karakterleri için çıkış satır başı satır besleme kombinasyonlarına çevrilir. Ne zaman bir Unicode akışı g/Ç işlevi metin modunda (varsayılan), kaynak çalışır veya hedef akışın bir dizi çok baytlı karakter olduğu varsayılır. Bu nedenle Unicode akışı girdi işlevleri çok baytlı karakter geniş karakterlere dönüştürür (bir çağrıda olduğu gibi **mbtowc** işlevi). Aynı nedenden dolayı Unicode akış çıkışı işlevleri geniş karakterleri çok baytlı karakterlere dönüştürür (bir çağrıda olduğu gibi **wctomb** işlevi).
 
-Varsa **t** veya **b** verilmemiştir *modu*, varsayılan çeviri modu genel değişkeni tarafından tanımlanan [_fmode](../../c-runtime-library/fmode.md). Varsa **t** veya **b** bağımsız değişkeni, işlev başarısız olur ve döndürür önekli **NULL**.
+Varsa **t** veya **b** verilmez *modu*, varsayılan çeviri modu genel değişkeni tarafından tanımlanan [_fmode](../../c-runtime-library/fmode.md). Varsa **t** veya **b** bağımsız değişken, işlev başarısız olur ve döndürür önekli **NULL**.
 
-Metin ve ikili modlarda Unicode ve çok baytlı akış-g/Ç nasıl kullanılacağı hakkında daha fazla bilgi için bkz: [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [metin ve ikili modlarda Unicode akışı g/ç](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
+Metin ve ikili modlarda Unicode ve çok baytlı akış g/Ç kullanma hakkında daha fazla bilgi için bkz. [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [metin ve ikili modlarda Unicode Stream g/ç](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
 
-Aşağıdaki seçenekler için eklenecek *modu* ek davranışları belirtmek için.
+Aşağıdaki seçenekler eklenerek *modu* ek davranışları belirtmek için.
 
-|*mod* değiştiricisi|Davranış|
+|*modu* değiştiricisi|Davranış|
 |-|-|
-**c**|İle ilişkili yürütme bayrağı etkinleştirmek *filename* böylece dosya arabellek içeriğini doğrudan ya da diske yazılan **fflush** veya **_flushall** olarak adlandırılır.
-**n**|İle ilişkili yürütme bayrağını sıfırlama *filename* "no-uygulanmak." Bu varsayılandır. Ayrıca COMMODE.OBJ programınızla bağlarsanız genel tamamlama bayrağı geçersiz kılar. Açıkça COMMODE programınızla bağlantı sürece genel tamamlama bayrağı "no-commit" varsayılandır. OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
-**N**|Dosya alt işlemler tarafından devralınan değil belirtir.
-**S**|Önbelleğe alma için en iyi duruma getirilmiş olmakla birlikte, sıralı erişim için diskten sınırlı gerekmez olduğunu belirtir.
-**R**|Önbelleğe alma için en iyi duruma getirilmiş olmakla birlikte, için rasgele erişim diskten sınırlı gerekmez olduğunu belirtir.
-**T**|Dosya geçici belirtir. Mümkünse, bu değil temizlenip diske.
-**D**|Dosya geçici belirtir. Son dosya işaretçisini kapatıldığında silinir.
-**ccs =**_kodlama_|Kodlanmış karakter kümesini belirtir (birini **UTF-8**, **UTF-16LE**, veya **UNICODE**) Bu dosya için. ANSI kodlamasını istiyorsanız belirtilmeyen bırakın.
+**c**|İlişkili için bayrak kaydetmeyi etkinleştir *filename* dosya tamponunun içeriği doğrudan diske yazılır, böylece **fflush** veya **_flushall** çağrılır.
+**n**|İlişkili tamamlama bayrağı sıfırlar *filename* için "no-commit." Bu varsayılandır. Ayrıca programınızı COMMODE.OBJ ile bağlarsanız genel tamamlama bayrağını geçersiz kılar. Programınızı COMMODE ile açıkça bağlantı sürece, küresel kaydetme bayrağı varsayılan "no-commit". OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
+**N**|Dosyanın alt işlemler tarafından devralınmadığını belirtir.
+**S**|Önbelleğe alma iyileştirildiğini, ancak sıralı erişim için diskten sınırlı olduğunu belirtir.
+**R**|Önbelleğe alma iyileştirildiğini, ancak rastgele erişim için diskten sınırlı olduğunu belirtir.
+**T**|Bir dosyayı geçici olarak belirtir. Mümkünse, boşaltılmaz diske.
+**D**|Bir dosyayı geçici olarak belirtir. Son dosya işaretçisi kapatıldığında silinir.
+**ccs =**_kodlama_|Kodlanmış karakter kümesini belirtir (biri **UTF-8**, **UTF-16LE**, veya **UNICODE**) Bu dosya için. Bırakın, ANSI kodlaması isterseniz belirtmeden.
 
-Geçerli karakterleri *modu* kullanılan dize **fopen** ve **_fdopen** karşılık *oflag* içindekullanılanbağımsızdeğişkenler[_kurulum Aç](open-wopen.md) ve [_sopen](sopen-wsopen.md)gibi.
+Geçerli karakterler için *modu* kullanılan dize **fopen** ve **_fdopen** karşılık *oflag* içindekullanılanbağımsızdeğişkenler[_aç](open-wopen.md) ve [_sopen](sopen-wsopen.md)aşağıdaki gibi.
 
-|İçindeki karakterleri *modu* dize|Eşdeğer *oflag* _kurulum Aç/_sopen için değer|
+|Öğesindeki karakterler *modu* dize|Eşdeğer *oflag* _aç/_sopen değeri|
 |-------------------------------|----------------------------------------------------|
 |**a**|**_O_WRONLY** &#124; **_O_APPEND** (genellikle **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_APPEND **)|
 |**bir +**|**_O_RDWR** &#124; **_O_APPEND** (genellikle **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
 |**r**|**_O_RDONLY**|
 |**r +**|**_O_RDWR**|
-|**W**|**_O_WRONLY** (genellikle **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC **)|
+|**w**|**_O_WRONLY** (genellikle **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC **)|
 |**w +**|**_O_RDWR** (genellikle **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
 |**b**|**_O_BINARY**|
 |**T**|**_O_TEXT**|
@@ -190,7 +190,7 @@ Geçerli karakterleri *modu* kullanılan dize **fopen** ve **_fdopen** karşıl�
 |**ccs = UTF-8**|**_O_UTF8**|
 |**ccs UTF-16LE =**|**_O_UTF16**|
 
-Kullanıyorsanız **rb** modu, sahip olmadığınız kodunuzu bağlantı noktasına ve en büyük bir dosyanın okumayı veya ağ performansı hakkında önemsemiyorsanız, de bellek kullanmak için Win32 dosya isteğe bağlı olarak eşlenen olup olmadığını dikkate alabilirsiniz.
+Kullanıyorsanız **rb** modu sahip olmadığınız kodunuzu bağlantı noktasına ve çoğu büyük dosyaları okumayı bekleyen ya da ağ performansını önemsemiyorsanız, ayrıca bellek kullanmak için Win32 dosya bir seçenek olarak eşlemli düşünebilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -199,13 +199,13 @@ Kullanıyorsanız **rb** modu, sahip olmadığınız kodunuzu bağlantı noktas�
 |**fopen**|\<stdio.h >|
 |**_wfopen**|\<stdio.h > veya \<wchar.h >|
 
-**_wfopen** bir Microsoft uzantısıdır. Uyumluluğu hakkında daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_wfopen** bir Microsoft uzantısıdır. Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**c**, **n**, **t**, **S**, **R**, **T**, ve **D**  *modu* seçenekleri için Microsoft uzantıları olan **fopen** ve **_fdopen** ve burada ANSI taşınabilirlik istenen kullanılmamalıdır.
+**c**, **n**, **t**, **S**, **R**, **T**, ve **D**  *modu* seçenekleri için Microsoft genişletmeleridir **fopen** ve **_fdopen** ve ANSI taşınabilirliğinin istendiği durumlarda kullanılmamalıdır.
 
 ## <a name="example-1"></a>Örnek 1
 
-Aşağıdaki programı iki dosyaları açar.  Kullandığı **fclose** ilk dosyayı kapatın ve **_fcloseall** tüm kalan dosyaları kapatın.
+Aşağıdaki program iki dosya açmaktadır.  Kullandığı **fclose** birinci dosyayı kapatmak için ve **_fcloseall** kalan dosyaları kapatmak için.
 
 ```C
 // crt_fopen.c
@@ -258,7 +258,7 @@ Number of files closed by _fcloseall: 1
 
 ## <a name="example-2"></a>Örnek 2
 
-Aşağıdaki programı bir dosya oluşturur (veya varsa bir üzerine yazar), metin modunda Unicode kodlama sahip.  İki dizeyi dosyasına yazar ve dosyayı kapatır. Çıkış, çıktı bölümünden verileri içeren _wfopen_test.xml adlı bir dosyadır.
+Aşağıdaki program bir dosya oluşturur (veya varsa üzerine yazmaktadır), kodlaması Unicode olan metin modunda.  İki dizeyi alana yazar ve dosyayı kapatır. Çıktı çıktı bölümünden veri içeren _wfopen_test.xml adlı bir dosyadır.
 
 ```C
 // crt__wfopen.c
@@ -316,7 +316,7 @@ int main(int argc, char** argv)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>

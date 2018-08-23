@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9c8bc1962e946a48b6ebebaf072e4cb32559a6de
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e66c6791a55debeb411fd6058d4bbe44cb6637e7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40014714"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42575878"
 ---
 # <a name="simpleactivationfactorygetruntimeclassname-method"></a>SimpleActivationFactory::GetRuntimeClassName Metodu
 
@@ -35,6 +35,7 @@ STDMETHOD( GetRuntimeClassName )(
 ```
 
 ### <a name="parameters"></a>Parametreler
+
 *runtimeName*  
 Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
 
@@ -53,4 +54,5 @@ Varsa `__WRL_STRICT__` olan sınıfın belirtilen tanımlanan, bir onay hatası 
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)
+
+[SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)

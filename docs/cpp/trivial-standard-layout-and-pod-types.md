@@ -4,12 +4,16 @@ ms.custom: ''
 ms.date: 04/05/2018
 ms.topic: language-reference
 ms.assetid: 2b23a7be-9bad-49fc-8298-31a9a7c556b0
-ms.openlocfilehash: 33b24c20c93f9bf0160536f5d6149c073c6ca7a5
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+author: mikeblome
+ms.author: mblome
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 824beed4c49556f564ff933575d1bbd0d844e2d7
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464019"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42465934"
 ---
 # <a name="trivial-standard-layout-pod-and-literal-types"></a>Önemsiz, Standart Düzen ve POD değişmez değer türleri
 

@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7804513c45de1951935e0fdf2fd485b9457e2a5e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: b2f295b6bf54077ad131176092b06dbeca7a2201
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885305"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465194"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 Bu sınıf girişleri sistem kayıt defterinde yönlendirmeye yönelik yöntemleri sağlar.  
@@ -876,7 +876,7 @@ LONG SetStringValue(
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemde [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923\(v=vs.85\).aspx) değeri kayıt defterine yazmak için.  
+ Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.  
   
 ##  <a name="setvalue"></a>  CRegKey::SetValue  
  Belirtilen değer alanında verileri depolamak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir.  

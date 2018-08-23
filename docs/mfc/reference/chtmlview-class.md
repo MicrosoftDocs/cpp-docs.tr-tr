@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58a336ef74a3fdcb787dee5feeef2b76e45706bf
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: c3c291c7eb9b6a9cd87330f4af5135037a1f31de
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027865"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42464603"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 MFC'nin belge/görünüm mimarisi bağlamında WebBrowser denetimi işlevlerini sağlar.  
@@ -243,7 +243,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::GetLocationURL](#getlocationurl)|WebBrowser şu anda görüntüleme kaynak URL'sini alır.|  
 |[CHtmlView::GetMenuBar](#getmenubar)|Menü çubuğu görünür olup olmadığını belirleyen bir değer alır.|  
 |[CHtmlView::GetOffline](#getoffline)|Denetimin çevrimdışı olup olmadığını belirleyen bir değer alır.|  
-|[CHtmlView::GetParentBrowser](#getparentbrowser)|Bir işaretçi alır `IDispatch` arabirimi. Daha fazla bilgi için [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).|  
+|[CHtmlView::GetParentBrowser](#getparentbrowser)|Bir işaretçi alır `IDispatch` arabirimi. Daha fazla bilgi için [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).|  
 |[CHtmlView::GetProperty](#getproperty)|Verilen nesneyle ilişkili bir özelliğin geçerli değerini alır.|  
 |[CHtmlView::GetReadyState](#getreadystate)|Web tarayıcı nesne hazır durumunu alır.|  
 |[CHtmlView::GetRegisterAsBrowser](#getregisterasbrowser)|WebBrowser denetimi hedef ad çözümlemesi için üst düzey bir tarayıcı olarak kayıtlı olup olmadığını belirtir.|  
@@ -508,7 +508,7 @@ LPDISPATCH GetApplication() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `IDispatch` arabirimi etkin belge nesnesi. Daha fazla bilgi için [IDispatch arabirimi uygulama](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+ Bir işaretçi `IDispatch` arabirimi etkin belge nesnesi. Daha fazla bilgi için [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Internet Explorer ve WebBrowser için geçerlidir.  

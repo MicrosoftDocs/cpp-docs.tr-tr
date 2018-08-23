@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cb92a7f31d48dad4a7fb608703c71ccc661e176
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b9511ce2d94a426756581b87d863051da25a627b
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368980"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465644"
 ---
 # <a name="allowisolation"></a>/ALLOWISOLATION
 Bildirim arama davranışını belirtir.  
@@ -36,15 +36,15 @@ Bildirim arama davranışını belirtir.
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **/ ALLOWISOLATION** işletim sisteminin aramaları ve yükleri bildirim neden olur.  
+ **/ ALLOWISOLATION** aramalar ve yükleri bildirim işletim sisteminin neden olur.  
   
  **/ ALLOWISOLATION** varsayılandır.  
   
- **/ALLOWISOLATION:No** gibi varsa hiçbir bildirimi ve nedenleri yürütülebilir dosyalar yüklenir gösterir [EDITBIN başvurusu](../../build/reference/editbin-reference.md) ayarlamak için `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` isteğe bağlı başlığının içinde bit `DllCharacteristics` alan.  
+ **/ALLOWISOLATION:No** yokmuş gibi hiçbir bildirim ve nedenleri yürütülebilir dosyaları yüklendiğini gösteren [EDITBIN başvurusu](../../build/reference/editbin-reference.md) ayarlanacak `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` isteğe bağlı üst bilgisinde ait bit `DllCharacteristics` alan.  
   
- Yalıtım için yürütülebilir bir dosya devre dışı bırakıldığında, Windows Yükleyici yeni oluşturulan işlemi için bir uygulama bildirimi Bul dener. Yeni işlem yürütülebilir bildiriminde yok ya da adına sahip bir bildirim ise olsa bile varsayılan etkinleştirme bağlamı yok *yürütülebilir dosya adı*. exe.manifest.  
+ Bir yürütülebilir dosya için yalıtım devre dışı bırakıldığında, Windows Yükleyicisi için yeni oluşturulan işlemi bir uygulama bildirimi bulmak dener. Yeni işlem yürütülebilir bildiriminde yok ya da bir bildirim yoksa, adına sahip olsa bile varsayılan etkinleştirme bağlamı yok *yürütülebilir dosya adı*. exe.manifest.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [EDITBIN seçenekleri](../../build/reference/editbin-options.md)   
  [/ ALLOWISOLATION (bildirim arama)](../../build/reference/allowisolation-manifest-lookup.md)   
- [Dosyaları başvuru bildirimi](http://msdn.microsoft.com/library/aa375632.aspx)
+ [Bildirim dosyaları başvurusu](/windows/desktop/SbsCs/manifest-files-reference)
